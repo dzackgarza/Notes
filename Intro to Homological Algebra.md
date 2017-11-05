@@ -49,14 +49,14 @@
 - Derived Functors
 - $\tor$
   - Generalize the tensor product: $\text{Tor}^R_0(A,B) \cong A \otimes_R B$.
-  - Formally: Derived functor of $M \tensor_R \placeholder$
+  - Formally: For a fixed module $M$ over a ring $R$, derived functor of $M \tensor_R \placeholder$
   - Measures failure of tensor product to preserve exact sequences
 - Projective Resolutions
   - Exists for any module $M$, yielding an exact sequence 
     $\cdots \to Pn \to \cdots \to P_1 \to P_0 \surjects  M \to 0$
   - Projective resolution of $M$ can be used to calculate $\text{Tor}_n^R(M,N)$ for all $n$.
 - $\ext$
-  - Derived functor of $\hom (\placeholder, B)$
+  - Derived functor of $\hom_R(M, \placeholder)$
   - Measures failure of $\hom$ to preserve exactness
 - Spectral Sequences
 - Snake Lemma
