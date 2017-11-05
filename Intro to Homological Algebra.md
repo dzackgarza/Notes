@@ -51,7 +51,7 @@
   - Exists for any module $M$, yielding an exact sequence 
     $\cdots \to Pn \to \cdots \to P_1 \to P_0 \surjects  M \to 0$
   - Projective resolution of $M$ can be used to calculate $\text{Tor}_n^R(M,N)$ for all $n$.
-- ​
 - Ext
+  - Derived functor of $\hom (\placeholder, B)$
 - Spectral Sequences
 - Snake Lemma
