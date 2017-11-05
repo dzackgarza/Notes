@@ -32,10 +32,13 @@
     - $b_2$ is the number of "2-dimensional" holes, i.e. an empty volume.
       - Number of plugs you'd need to blow air into to inflate the object!
 - Modules
-  - Free
-  - Projective
-  - Flat
-  - Graded
+  - Most important classes
+    - Projective
+    - Injective 
+    - Flat
+  - Other nifty types (not mutually exclusive)
+    - Free
+    - Graded
 - Short Exact Sequences
   - Splitting of sequences
     - Realize as an isomorphism
@@ -44,14 +47,16 @@
 - Tensor Product and Hom
   - As an adjoint pair
 - Derived Functors
-- Tor
+- $\tor$
   - Generalize the tensor product: $\text{Tor}^R_0(A,B) \cong A \otimes_R B$.
-  - Formally: Derived functor of $~\cdot~ \tensor_R B$
+  - Formally: Derived functor of $M \tensor_R \placeholder$
+  - Measures failure of tensor product to preserve exact sequences
 - Projective Resolutions
   - Exists for any module $M$, yielding an exact sequence 
     $\cdots \to Pn \to \cdots \to P_1 \to P_0 \surjects  M \to 0$
   - Projective resolution of $M$ can be used to calculate $\text{Tor}_n^R(M,N)$ for all $n$.
-- Ext
+- $\ext$
   - Derived functor of $\hom (\placeholder, B)$
+  - Measures failure of $\hom$ to preserve exactness
 - Spectral Sequences
 - Snake Lemma
