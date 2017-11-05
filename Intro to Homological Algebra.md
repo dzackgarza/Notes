@@ -46,7 +46,7 @@
 - Derived Functors
 - Tor
   - Generalize the tensor product: $\text{Tor}^R_0(A,B) \cong A \otimes_R B$.
-  - Formally: Derived functor of $\placeholder \tensor_R B$
+  - Formally: Derived functor of $~\cdot~ \tensor_R B$
 - Projective Resolutions
   - Exists for any module $M$, yielding an exact sequence 
     $\cdots \to Pn \to \cdots \to P_1 \to P_0 \surjects  M \to 0$
