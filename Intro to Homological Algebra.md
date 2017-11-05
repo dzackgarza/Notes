@@ -17,7 +17,15 @@
     - A *boundary* is a cycle which is also the boundary of another cycle
     - A *homology class* is an equivalence of cycles modulo boundaries
   - If such a class is nontrivial, this represents a cycle that is *not* the boundary of any submanifold - i.e. a hole.
-  - Easy example: all paths on $S^2$ are homotopic to a point, not the case for $T^2$.
+  - Easy example: all paths on $S^2$ are homotopic to a point, not the case for $S^1 \times S^1$.
+    - Note: $S^n \neq \prod_{i=1}^n S^1$
+  - Construction: a generalization of the Euler characteristic computation
+  - Index by the integers, $H_i$. We can look at the Betti numbers, $b_i = \text{dim}_{\QQ}H_i(X: \QQ)$
+    - $b_0$ is the number of connected components
+    - $b_1$ is the number of holes 
+      - $H_1(S^1\times S^1) = \ZZ \oplus \ZZ$
+    - $b_2$ is the number of "2-dimensional" holes, i.e. an empty volume.
+      - Number of plugs you'd need to blow air into to inflate the object!
 - Modules
   - Free
   - Projective
