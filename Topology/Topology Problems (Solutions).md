@@ -2,4 +2,6 @@
 
 ## Homotopy
 
-1. Let $f: X \to S^n \subset R^{n+1}$ be an arbitrary map that fails to be surjective. Then, by definition, $\exists s_0 \in S^n \suchthat \not\exists x \suchthat f(x) = s_0$, so $s_0 \not\in f(X)$. Without loss of generality, let $s_0$ be the analog of a "north pole" of $S^n$, given by $s_0 = \thevector{0,1,1,\cdots}$
+1. Let $f: X \to S^n \subset \RR^{n+1}$ be an arbitrary map that fails to be surjective. Then, by definition, there is at least one point $s \in S^n - f(X)$. 
+
+   Then there exists a continuous rotation of $S^n$, say $R$, such that $s_0 \mathrel{:=} R(s)  = \thevector{1,0,0,\cdots}$.
