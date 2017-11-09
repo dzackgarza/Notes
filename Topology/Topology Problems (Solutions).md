@@ -11,7 +11,7 @@
    **Alternative proof**: Since $s_0 \not\in f(X)$, perform spherical projection through $s_0$. This yields a homeomorphism $p$ and its continuous inverse $p^{-1}$ (which is known to exist since $S^n - \theset{\text{pt}}$ is homeomorphic to $R^n$). Then a map $p \circ f: X \into \RR^n$ is obtained.
 
    However, $\RR^n$ is convex, so pick any constant $c\in \RR^n$ and let $g_c: X \into \RR^n$ be a constant map given by $g(x) = c$ for all $x\in X$.
-    
+
    Then define $H: X\cross I \into \RR^n$ by $H(x,t) = tc + (1-x)(p\circ f)(x)$, the linear homotopy between a constant and $p \circ f$. Then $H(x, 0) = (p\circ f)(x)$ and $H(x,1) = c = g_c(x)$, so $p\circ f \homotopic g_c$.
    ​
    So then define $F: X\times I \into S^n$ by $F(x,t) = (p^{-1} \circ H)(x,t)$. Then 
@@ -24,4 +24,5 @@
 
    Then $g'$ is a constant map, and $F$ is a homotopy between $g'$ and $f$, so $f \homotopic g'$ as desired.
 
-2. Let $f,g: X \into S^n$ such that $\forall x, f(x) \neq -g(x)$.
+2. Let $f,g: X \into S^n$ such that $\forall x, f(x) \neq -g(x)$. Since $S^n \subset \RR^{n+1}$, both $f,g$ lift to maps $\tilde{f}, \tilde{g}: X \into \RR^{n+1}$ where $f = \restrictionof{\tilde{f}}{S^n}$
+   define a map $H: X\cross I \into S^n$ by $H(x,t) = tf(x) + (1-t)g(x)$. Then $H$ is a linear homotopy 
