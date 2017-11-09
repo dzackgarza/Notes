@@ -28,6 +28,10 @@ If such an $f$ exists, we write $X \homotopic Y$.
 
 A topological space $X$ is *contractible* if $X$ is homotopy equivalent to a point, i.e. $X \homotopic \theset{x_0}$.
 
+# Definition: Deformation Retract
+
+Let $X$ be a topological space and $A \subset X$ be a subspace, then $A$ is said to be a *deformation retract* of $X$ if there is a map $r: X \to A$ such that $\iota_{A\injects X} \circ r \homotopic \id_X$. Such an $r$ is said to be a *retraction* of $X$ onto $A$.
+
 ## Definition: Homotopic rel $A$
 
 ## Definition: Linear Homotopy
