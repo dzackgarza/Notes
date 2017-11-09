@@ -2,9 +2,31 @@
 
 ## Definition: Homotopy
 
+Let $X, Y$ be topological spaces and $f,g: X \to Y$ continuous maps. Then a *homotopy* from $f$ to $g$ is a continuous function $F: X \cross I \into Y$ such that $F(x, 0) = f(x), F(x,1) = g(x)$ for all $x\in X$. 
+
+If such a homotopy exists, we write $f\homotopic g$.
+
+If $f$ is homotopic to a constant map, say $g_c: x \mapsto x$, then $f$ is said to be *nullhomotopic*.
+
+This is an equivalence relation on $\text{Hom}(X,Y)$, and the set of such classes is denoted $[X,Y] \definedas \hom (X,Y)/\homotopic$.
+
+# Theorem: Any two continuous functions on a convex set are homotopic.
+
+Proof: Use linear homotopy and definition of convexity.
+
 ## Definition: Homotopy Equivalence
 
+Let $f: X \to Y$ be a continuous map, then $f$ is said to be a *homotopy equivalence* if there exists a continuous map $g: X \to Y$ such that
+
+$$ f\circ g \homotopic \id_Y$$ and $$g\circ f \homotopic \id_X$
+
+If such an $f$ exists, we write $X \homotopic Y$.
+
+(If $X\cong_{\text{Top}} Y$ (homeomorphically), then $X \homotopic Y$)
+
 ## Definition: Contractible
+
+A topological space $X$ is *contractible* if $X$ is homotopy equivalent to a point, i.e. $X \homotopic \theset{x_0}$.
 
 ## Definition: Homotopic rel $A$
 
