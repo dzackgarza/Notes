@@ -45,10 +45,8 @@
    Let $n$ be odd, so $n = 2m+1$ for some $m \geq 0 \in \NN$, and consider $S^n = S^{2m+1}\subset \RR^{2m+2} \cong \CC^m$, so that $\bar{z}\in S^n$ can be written as $\bar{z} = \thevector{z_1, z_2, \cdots , z_m}, z_i \in \CC,$ with $\norm{\bar{z}} = 1$. 
    Note that if we proceed as in the previous problem to construct the linear homotopy $H: \RR^{2m+2}\cross I \into \RR^{2m+2}$ given by $H(\bar{x}, t) = t\bar{x} + (1-t)(-\bar{x}) = (2t-1)\bar{x}$, we find that $H(x, \frac{1}{2}) = 0$ and so $\tilde{H} = \frac{H}{\norm{H}}$ will fail to be continuous at $t=\frac{1}{2}$.
    Instead, define $H: \CC^m \cross I \into \CC^m$ by $H(\bar{z}, t) = e^{i\pi t}\bar{z}$. Then, if $\bar{z} \in S^n$, we have $\norm{\bar{z}} = 1$ and since $\norm{e^{i\pi t}} = 1$, we obtain a homotopy on $S^n$ given be the restriction of $H$,  $\restrictionof{H}{S^{2m+1}}: S^{2m+1} \cross I \into S^{2m+1}$.
-   We then have $H(\bar{z}, 0) = e^{0}\bar{z} = \bar{z}​$, the identity function, and
+   We then have $H(\bar{z}, 0) = e^{0}\bar{z} = \bar{z}$, the identity function, and
    $H(\bar{z}, 1) = e^{i \pi}\bar{z} = -\bar{z}$ the antipodal function. Thus these two maps are homotopic, as desired. $\qed$
 
-4. $\Rightarrow$
-   Suppose $X$ is contractible. Then, unpacking definitions, $X$ is homotopy equivalent to a point, say $p \in X$. So there exists maps $f: X \to \theset{p}, g: \theset{p} \to X$ such that $f\circ g\homotopic \id_{\theset{p}}$ and $g\circ f \homotopic \id_X$.
-   This means that $(f \circ g)(p) = p$ and $(g\circ f)(x) = x$ for all $x\in X$. But since $\theset{p}$ is a one point set, we must have $f(x) = p$ for every $x$. So $(g\circ f)(x) = g(f(x)) = g(p) = x$
-   We want to show that there exists a homotopy $H: X \cross I \into X$ such that $H(x, 0) = x$ and $H(x,1) = c$ for some constant $c\in X$.
+4. $\Leftarrow$
+   Suppose $\id_X$ is nullhomotopic.
