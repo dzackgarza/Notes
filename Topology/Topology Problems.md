@@ -3,13 +3,13 @@
 ## Homotopy
 
 1.  Show that any non-surjective map $f: X \rightarrow S^n$ is homotopic to the constant map.
-2. Let $f,g \rightarrow S^n$ be such that $\forall x\in X, f(x) \neq -g(x)$. Show that $f \simeq g$.
-3. Given $f: x\mapsto -x$ the antipodal map, show that $n = 1\mod 2 \implies f \simeq \text{id}$.
-4. Show that $X$ is contractible $\iff$ $\text{id}_X \simeq g$ for some constant map $g$. 
-5. Show that $S^1 \times I \simeq M$, the Mobius strip.
-6. Show that $\mathbb{R}^3 - S^1 \simeq S^1 \vee S^2$.
-7. Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
-8. Let $f,g : S^1 \rightarrow X$,
+2.  Let $f,g \rightarrow S^n$ be such that $\forall x\in X, f(x) \neq -g(x)$. Show that $f \simeq g$.
+3.  Given $f: S^n \to S^n, p\mapsto -p$ the antipodal map on $S^n$, show that $n = 1\mod 2 \implies f \simeq \text{id}$.
+4.  Show that $X$ is homotopy-equivalent to a point $\iff$ $\text{id}_X \simeq g$ for some constant map $g$. 
+5.  Show that $S^1 \times I \simeq M$, the Mobius strip.
+6.  Show that $\mathbb{R}^3 - S^1 \simeq S^1 \vee S^2$.
+7.  Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
+8.  Let $f,g : S^1 \rightarrow X$,
    $P = X \cup_f B^2 \cong X \coprod B^2 / \sim$, where $x \sim f(x)$,
    $Q = X \cup_g B^2$.
    Show that $f\simeq g \implies P\simeq Q$.
@@ -67,14 +67,14 @@
    3. Multiplication rule
 9. Given a group $G = <A : R>$, show how to construct a CW-complex $X$ such that $\pi_1(X) = G$.
 10. Write down the fundamental group of the following spaces:
-    1. $\mathbb{R}^2 - \{0, 1\}$
-    2. $\mathbb{R}^2 - I$
-    3. The symbol $\oplus \in \mathbb{R}^2$
-    4. $S^2 - \{p_i\}_{i=1}^4$
-    5. $T - \{p_0\}$
-    6. $S^2 / \mathbb{Z}_2$ via the antipodal map
-    7. $S^2/\mathbb{Z}_3$ via a $2\pi/3$ rotation about the $z$-axis.
-    8. $S_2 \cup \{(0,0,z) \mid -1 \leq z \leq 1 \}$
-    9. $\mathbb{R}^3 - \{ (x,y,0) \mid x^2 + y^2 = 1\}$
-    10. $\mathbb{R}^2 - H$, the Hopf link
+   1. $\mathbb{R}^2 - \{0, 1\}$
+   2. $\mathbb{R}^2 - I$
+   3. The symbol $\oplus \in \mathbb{R}^2$
+   4. $S^2 - \{p_i\}_{i=1}^4$
+   5. $T - \{p_0\}$
+   6. $S^2 / \mathbb{Z}_2$ via the antipodal map
+   7. $S^2/\mathbb{Z}_3$ via a $2\pi/3$ rotation about the $z$-axis.
+   8. $S_2 \cup \{(0,0,z) \mid -1 \leq z \leq 1 \}$
+   9. $\mathbb{R}^3 - \{ (x,y,0) \mid x^2 + y^2 = 1\}$
+   10. $\mathbb{R}^2 - H$, the Hopf link
 11. Prove that the homophony group is trivial.
