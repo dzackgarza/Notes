@@ -49,4 +49,10 @@
    $H(\bar{z}, 1) = e^{i \pi}\bar{z} = -\bar{z}$ the antipodal function. Thus these two maps are homotopic, as desired. $\qed$
 
 4. $\Leftarrow$
-   Suppose $\id_X$ is nullhomotopic.
+   Suppose $\id_X$ is nullhomotopic. Then there exists some constant map $g_c: X \into X$ such that $\forall x, g_c(x) = c$ for some $c \in X$, and $\id_X \homotopic g_c$. Thus there is a homotopy $F: X \cross I \into X$ such that $F(x,0) = x$ and $F(x,1) = c$ for all $x \in X$.
+
+   So define $C = \theset{c}$, then there is exactly one map $f: X \to C$, which is given by $f(x) = c$. Then, since $c\in X$, let $\iota_C: C \into X$ be the inclusion of $C = \theset{c}$ into $X$.
+
+   Then consider the map $(f\circ \iota_C): C \into C$. It need only be defined for $c$, so we compute $(f\compose \iota_c)(c) = f(c) = c$, so $(f\circ \iota_C) = \id_C$.
+
+   Similarly, consider $(\iota_C \compose f): X \into X$. We compute $(\iota_C \compose f)(x)$
