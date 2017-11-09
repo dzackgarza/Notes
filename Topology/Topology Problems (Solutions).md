@@ -24,5 +24,8 @@
 
    Then $g'$ is a constant map, and $F$ is a homotopy between $g'$ and $f$, so $f \homotopic g'$ as desired.
 
-2. Let $f,g: X \into S^n$ such that $\forall x, f(x) \neq -g(x)$. Since $S^n \subset \RR^{n+1}$, both $f,g$ lift to maps $\tilde{f}, \tilde{g}: X \into \RR^{n+1}$ where $f = \restrictionof{\tilde{f}}{S^n}$
-   define a map $H: X\cross I \into S^n$ by $H(x,t) = tf(x) + (1-t)g(x)$. Then $H$ is a linear homotopy 
+2. Let $f,g: X \into S^n$ such that $\forall x, f(x) \neq -g(x)$. Since $S^n \subset \RR^{n+1}$, both $f,g$ extend to maps $X \into \RR^{n+1}$.
+   So define a map $H: X\cross I \into \RR^{n+1}$ by $H(x,t) = tf(x) + (1-t)g(x)$. Then $H$ is a linear homotopy, since $\RR^{n+1}$ is convex. 
+   Then $\tilde{H}: X\cross I \into S^n$ by $\tilde{H}(x,t) = \frac{H(x,t)}{\norm{H(x,t)}}$ is the desired homotopy between $f$ and $g$. (Continuity follows since $H$ is continuous as an affine combination of continuous functions, $p: \RR^{n+1} \into S^{n}$ given by $p(x) = \frac{x}{\norm{x}}$ is continuous, and $\tilde{H} = p \circ H$.)
+
+3. Let $n$ be odd, so $n = 2m+1$ for some $m \geq 0 \in \NN$.
