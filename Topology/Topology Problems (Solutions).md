@@ -48,11 +48,23 @@
    We then have $H(\bar{z}, 0) = e^{0}\bar{z} = \bar{z}$, the identity function, and
    $H(\bar{z}, 1) = e^{i \pi}\bar{z} = -\bar{z}$ the antipodal function. Thus these two maps are homotopic, as desired. $\qed$
 
-4. $\Leftarrow$
-   Suppose $\id_X$ is nullhomotopic. Then there exists some constant map $g_c: X \into X$ such that $\forall x, g_c(x) = c$ for some $c \in X$, and $\id_X \homotopic g_c$. Thus there is a homotopy $F: X \cross I \into X$ such that $F(x,0) = x$ and $F(x,1) = c$ for all $x \in X$.
+4. $\Leftarrow$: **Main Idea**: Projection and inclusion are homotopy inverses. One composition is equality, the other is just equality *up to homotopy*, but that's all we need!
 
-   So define $C = \theset{c}$, then there is exactly one map $f: X \to C$, which is given by $f(x) = c$. Then, since $c\in X$, let $\iota_C: C \into X$ be the inclusion of $C = \theset{c}$ into $X$.
+   Suppose $\id_X$ is nullhomotopic. Then there exists some constant map $g_c: X \into \theset{c}$ for some $c\in X$ (that is. $\forall x, g_c(x) = c$ ), and $\id_X \homotopic g_c$. 
+   Thus there is a homotopy $F: X \cross I \into X$ such that $F(x,0) = \id_X(x) = x$ and $F(x,1) = g_c(x) = c$ for all $x \in X$.
 
-   Then consider the map $(f\circ \iota_C): C \into C$. It need only be defined for $c$, so we compute $(f\compose \iota_c)(c) = f(c) = c$, so $(f\circ \iota_C) = \id_C$.
+   Then there is exactly one map $\pi: X \to \theset{c}$, (projection onto $c$) which is given by $\pi(x) = c$. 
 
-   Similarly, consider $(\iota_C \compose f): X \into X$. We compute $(\iota_C \compose f)(x)$
+   Then, since $c\in X$, let $\iota_c: \theset{c} \into X$ be the inclusion of $\theset{c}$ into $X$, so that $\iota_c(c) = c$.
+
+   Then consider the map $(\pi\circ \iota_c): \theset{c} \into \theset{c}$. It need only be defined for $c$, so we compute $(\pi\compose\iota_c)(c) = \pi(c) = c$, so $(\pi\compose\iota_c) = \id_C$.
+
+   Similarly, consider $(\iota_c \compose \pi): X \into X$. We compute $(\iota_c \compose \pi)(x) = \iota_c(c) = c$, so $\iota_c\circ \pi$ is the constant map $g_c:X \to \theset{c},  x \mapsto c$ for all $x\in X$. By assumption, $g_c \homotopic \id_X$, and so $\iota_c\circ \pi \homotopic \id_X$. Thus $\pi$ and $\iota$ are homotopy inverses, and we have $X \homotopic \theset{c}$, meaning $X$ is contractible.
+
+   $\Rightarrow$: **Main Idea**: Post-composing with a constant function is still constant.
+
+   Suppose $X \homotopic \theset{p}$, so that there exists a pair of homotopy inverses $f: X \into \theset{p}$ and $g: \theset{p} \into X$ such that $f\compose g \homotopic \id_{\theset{p}}$ and $g\compose f \homotopic \id_X$.
+
+   But since $\theset{p}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = p$ for every $x\in X$.) But then for any $x\in X, (g\circ f)(x) = g(f(x)) = g(p) = p'$ for some fixed $p' \in X$, which means that $\pi \definedas (g\circ f): X \to X$ is given by $x\mapsto p'$, making this a constant map on $X$. Finally, by assumption, we have $\pi \homotopic \id_X$, which is what we wanted to show. $\qed$
+
+   ​
