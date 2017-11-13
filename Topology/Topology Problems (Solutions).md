@@ -139,3 +139,4 @@
        1. $y \homotopic v \homotopic *$
    26. $Z \homotopic *$
        1. $z \homotopic Z \homotopic *$
+
