@@ -85,7 +85,7 @@
 
    Then take a geodesic between the endpoints of the diameter on $S^2$, pick any point $p$ on the geodesic, and move both diameter points towards it. This yields $S^2 \vee S^1$ at the point $p$.
 
-7. **Main Idea**: Nothing to it
+7. **Main Idea**: Nothing to it. Homotopy:
 
    1. $A \homotopic \Delta \homotopic S^1$
       1. $a \homotopic d \homotopic o \homotopic S^1$
@@ -106,7 +106,7 @@
    9. $I \homotopic *$
       1. $i \homotopic \theset{*_1, *_2}$
    10. $J \homotopic *$
-      1. $j \homotopic i \homotopic \theset{*_1, *_2}$
+     1. $j \homotopic i \homotopic \theset{*_1, *_2}$
    11. $K \homotopic *$
        1. $k \homotopic K \homotopic *$
    12. $L \homotopic *$
@@ -139,4 +139,22 @@
        1. $y \homotopic v \homotopic *$
    26. $Z \homotopic *$
        1. $z \homotopic Z \homotopic *$
+
+   This results in a partition of the alphabet into the following homotopy types:
+
+    - $\theset{A,D, O, P, Q, R, S^1} $
+      $\union \theset{a,b,d,e,g,o,p,q}$
+    - $\theset{C, E, F, G, H, I, J, K, L, M, N, S, T, U, V, W, X ,Y, Z, *}$
+      $\union \theset{c,f,h,k,l,m,n,r,s,t,u,v,w,x,y,z}$
+    - $\theset{B, S^1 \vee S^1}$
+    - $\theset{i, j, \theset{*, *}}$
+
+   Homeomorphisms:
+
+    	1. $\theset{A}$
+         	1. $\theset{D, O, S^1}$
+    	2. $\theset{B}$
+    	3. $\theset{C, I, J, L, M, N, S, U, V, W, Z}$
+
+8. **Main Idea:** ?
 
