@@ -1,6 +1,6 @@
 # What is Homological Algebra
 
-
+Notes for an upcoming talk.
 
 - Why was it invented?
 - What is it used for?
