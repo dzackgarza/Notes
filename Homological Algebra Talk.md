@@ -76,7 +76,7 @@ Another benefit is that if we have a diagram where an $h$ exists such as this
 
 $0 \injective A \xrightarrow{f} B \xtofrom[h]{g} C \surjective 0$ 
 
-where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in, or $C \cong B /A$
+where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in, or $C \cong B /A$.
 
 This says that somehow $B$ is a composite object, with $A$ and $C$ sitting naturally inside of it (think of this like the rank-nullity theorem in linear algebra, where)
 
