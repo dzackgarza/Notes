@@ -110,9 +110,11 @@ Another benefit is that if we have a diagram where an $h$ exists such as this
 
 $0 \injective A \xrightarrow{f} B \xtofrom[h]{g} C \surjective 0$ 
 
-where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in, or $C \cong B /A$. (In other words, this is a generalization of the first isomorphism theorem.)
+where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $C \cong B /A$. In other words, this is a generalization of the first isomorphism theorem.
 
-Informally, when the sequence splits, this says that $B$ is somehow a composite object, inside of which $A$ and $C$ naturally embed.
+In some instances, this also gives $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in.
+
+Informally, when the sequence splits, this says that $B$ is somehow a composite object, inside of which $A$ and $C$ are embedded.
 
 
 
@@ -148,7 +150,7 @@ This is exact, since $x \mapsto nx \mapsto 0$, so the composite is the zero map.
 
 
 
-# Commutative Diagrams
+## Commutative Diagrams
 
 This one is easy - we say a diagram involving maps between objects if it doesn't matter which path you take between two nodes - the composition of maps yields the same thing in the destination.
 
@@ -180,7 +182,7 @@ What this says is that there is *another* exact sequence that you get for free, 
 
 $\ker a \into \ker b \into \ker c \xrightarrow{d} \coker a \into \coker b \into \coker c$.
 
-#Chain Complexes
+## Chain Complexes
 
 When we have a sequence that is exact everywhere, we say it is a *long exact sequence*
 
@@ -202,9 +204,9 @@ For some "nice enough" topological spaces $X$, we can construct a set of buildin
 
 So for spaces that can be decomposed (or built, depending on your viewpoint) in this way, we can let $C_n$ be the collection of all of the $n$ simplexes. Moreover, some $n$-simplexes have $n-1$ simplexes as boundaries, so we can define the map $\del_n: C_n \into C_{n-1}$ that takes a simplex to its boundary. Since "boundaries don't have boundaries", it turns out that this defines a differential as defined above, and thus $\theset{(C_i, \del_i)}_{i=1}^n$ forms a chain complex.
 
-We can then take the $n$-th homology of $X$ to be the generalization of "cycles mod boundaries", and define $H_n(X) = \ker \del_n / \text{im} ~\del_{n+1}$.4
+We can then take the $n$-th homology of $X$ to be the generalization of "cycles mod boundaries", and define $H_n(X) = \ker \del_n / \text{im} ~\del_{n+1}$.4. Given a short exact sequence of chain complexes, we can always "pass to homology" in this way.
 
-# Applying the Snake Lemma
+## Applying the Snake Lemma
 
 Theorem: Any short exact sequence of chain complexes induces a long exact sequence of homology modules. 
 
@@ -219,3 +221,9 @@ $\into \cdots H_k(A) \xrightarrow{f^*} H_k(B) \xrightarrow{g^*} H_k(C) \xrightar
 A critical part of this is the fact that we get a map $\delta: H_k(C) \into H_{k-1}(A)$, so we can work our way towards lower dimensions. (It also helps if $A$ is somehow an easier object to work with)
 
 Thinking of $B$ as an "extension of $A$ by $C$", if we can find choices of $B$ that fit the extension and make the sequence exact, we can glean information about all three objects together.
+
+How is this used? In topology, the idea is that if we know how to glue a space together from small parts, and we understand the gluing maps well enough, then we have an avenue to understand the entire space (via its homology $H_k(X)$ for all $k$). 
+
+One way this is explicitly used is to build the Mayer-Vietoris sequence, which allows us to compute the homology of two spaces whenever we know the homologies of both their union and intersection. (One usually takes these two spaces to be subspaces of a larger space we are interested in).
+
+For example, take the torus $T$ and cut it with a plane through the center into $T = U \coprod V$. Then both $U, V$ are cylinders ($S^1 \times I$), and $U \intersect V = S^1 \coprod S^1$, two disjoint circles. As seen earlier, we can compute homologies for spheres, and this gives us a way of combining that information to compute the homology of something a bit more complicated.
