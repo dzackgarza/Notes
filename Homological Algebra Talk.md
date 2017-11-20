@@ -60,13 +60,21 @@ You might remember this from linear algebra, so let's work in the category of ve
 
 If $V,W$ are finite dimensional, then after picking a basis there is a matrix $A$ associated to $T$, and so this is the set of all solutions to the homogeneous equation $Ax = 0$. 
 
-We refer to this set as the **kernel** of $T$. In the finite dimensional setting, this is equivalent to the nullspace of $A$.
+We refer to this set as the **kernel** of $T$. In the finite dimensional setting, this is equivalent to the nullspace of $A$. Notice that $T$ is injective (i.e. one-to-one) if and only if $Ax = 0$ implies $x = 0$, so the kernel is trivial. This holds in many categories!
 
 Staying in the finite setting, we know that $Ax$ lives somewhere in $W$, and it is in fact a subspace. In a general setting, it's not *all* of $W$ - this would require that $W$ and $V$ had the same dimension (so $A$ was square), and also that $A$ had full rank (so $A$ is not singular).
 
 Note that if we were looking at groups, there is an entirely analogous procedure - $T$ would instead be a homomorphism, and the image $\text{im}~T$ would be a normal subgroup in $W$.
 
 In either case, we can always form the quotient $W / \text{im}~T$, and this is what we'll refer to as the **cokernel**.
+
+
+
+Intuitively, both the kernel and cokernel carry a lot of information about the map. 
+
+The kernel measures how far the map is from an injection - this is because if the kernel is trivial, then the map is injective, so kernel size somehow measures "distance" from injectivity - larger kernels correspond less injectivity.
+
+The cokernel measures how far the map is from a surjection. This is because if the cokernel is trivial, then $\text{im}~ T$ is the entire target space, and thus $T$ is surjective.
 
 
 
