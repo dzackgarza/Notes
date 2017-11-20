@@ -134,15 +134,13 @@ $0 \into A \into * \into C \into 0$,
 
 what can be filled in for $*$ to generate an exact sequence? Any such $*$ yields an "extension of $A$ by $C$". In the category of groups, we have a classification of all finite *simple* groups, so a general solution to this problem would yield a classification of **all** finite groups (!!!)
 
-
-
-#### Nifty application: In vector spaces, every short exact sequence splits.
+### Nifty application: In vector spaces, every short exact sequence splits.
 
 Let $T: U \into V$ be a linear operator between vector spaces, let $A = \text{nullspace}~T$, $B=V$, $C = \text{range}~T$, then take $f = \id_V$ and $g = T$. Then we recover the rank-nullity theorem from linear algebra, $V \cong \ker T \oplus \text{im} T$ where $\oplus$ is the orthogonal direct sum. (Note that this can also be interpreted as the fact that the map $T$ *factors* into two other maps, one injective and one surjective).
 
 
 
-#### Example: A SES that doesn't split.
+### Example: A SES that doesn't split.
 
 Take $\ZZ \xrightarrow{\times n}\ZZ \xrightarrow{\mod n} \ZZ/n\ZZ$, where $n > 1$.
 
