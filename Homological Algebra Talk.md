@@ -1,8 +1,8 @@
 # Homological Algebra
 
+Goal: provide some background for this movie scene! https://www.youtube.com/watch?v=etbcKWEKnvg
 
-
-## What is it?
+# What is homology?
 
 "Homology" as a word just denotes some kind of study of "sameness", which depends on what context you're in.
 
@@ -46,11 +46,11 @@ So we have one connected component, no one-dimensional holes, and one two-dimens
 $H_k(S^n) = \mathbf{1}[k = 0, n]$
 In general, the $n$-sphere has one connected component and one $n$-dimensional hole.
 
-## The Algebraic Formulation
+# Some Algebraic Background
 
 In order to generalize and apply homology to other areas, we need to pull in a little bit of algebra. First, we need to talk about chain complexes. These can generally be formulated in what are called *abelian categories*, but we'll stay a little more concrete than that for now.
 
-### Kernels, Cokernels, and Abelian Categories
+## Kernels, Cokernels, and Abelian Categories
 
 Let's get some terminology out of the way first, starting with something you may be familiar with: kernels.
 
@@ -150,13 +150,23 @@ This is exact, since $x \mapsto nx \mapsto 0$, so the composite is the zero map.
 
 
 
+# Commutative Diagrams
+
+This one is easy - we say a diagram involving maps between objects if it doesn't matter which path you take between two nodes - the composition of maps yields the same thing in the destination.
+
+![SnakeLemma](http://mathworld.wolfram.com/images/eps-gif/SnakeLemma_1000.gif)
+
+
+
 # The Snake Lemma
 
-So now we can describe what is happening in the movie scene!
+So now we can describe what is happening in the movie scene! (Note: this is probably the most advanced mathematics ever displayed in a movie.)
 
 In any abelian category, we can consider things like commutative diagrams and exact sequences - so let's do just this.
 
-What this lemma does, in essence, is give you some information about what happens when you "transform" an exact sequence. So the setup is this - you have one exact sequence $A,B,C,f,g$ and some transformation $F = (a,b,c)$ that has three maps as its components, and the image of these happens to land on another exact sequence $A', B', C', f', g'$.
+What this lemma does, in essence, is give you some information about what happens when you "transform" an exact sequence, or alternatively gives you a way to go back and forth between short and long exact sequences by a "connecting homomorphism". The point of this is that the connecting map you obtain actually tells you about the *existence* of the related kernels and cokernels, providing valuable information about the intermediate maps.
+
+So the setup is this - you have one exact sequence $A,B,C,f,g$ and some transformation $F = (a,b,c)$ that has three maps as its components, and the image of these happens to land on another exact sequence $A', B', C', f', g'$.
 
 
 
@@ -165,6 +175,8 @@ What this lemma does, in essence, is give you some information about what happen
 As is almost always the case in algebra, we glean a lot of information from the kernels of maps, so one might ask about what's going on with the kernels of $a,b,c$, and it turns out they're given by something like this:
 
 ![Snake lemma complete.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Snake_lemma_complete.svg/500px-Snake_lemma_complete.svg.png)
+
+![SnakeLemma2](http://mathworld.wolfram.com/images/eps-gif/SnakeLemma2_1201.gif)
 
 What this says is that there is *another* exact sequence that you get for free, of the form
 
@@ -192,4 +204,20 @@ For some "nice enough" topological spaces $X$, we can construct a set of buildin
 
 So for spaces that can be decomposed (or built, depending on your viewpoint) in this way, we can let $C_n$ be the collection of all of the $n$ simplexes. Moreover, some $n$-simplexes have $n-1$ simplexes as boundaries, so we can define the map $\del_n: C_n \into C_{n-1}$ that takes a simplex to its boundary. Since "boundaries don't have boundaries", it turns out that this defines a differential as defined above, and thus $\theset{(C_i, \del_i)}_{i=1}^n$ forms a chain complex.
 
-We can then take the $n$-th homology of $X$ to be the generalization of "cycles mod boundaries", and define $H_n(X) = \ker \del_n / \text{im} ~\del_{n+1}$.
+We can then take the $n$-th homology of $X$ to be the generalization of "cycles mod boundaries", and define $H_n(X) = \ker \del_n / \text{im} ~\del_{n+1}$.4
+
+# Applying the Snake Lemma
+
+Theorem: Any short exact sequence of chain complexes induces a long exact sequence of homology modules. 
+
+Let 
+
+$0 \into A \xrightarrow{f} B \xrightarrow{g} C \into 0$ 
+
+be a short exact sequence of modules. Then there is a long exact sequence in homology,
+
+$\into \cdots H_k(A) \xrightarrow{f^*} H_k(B) \xrightarrow{g^*} H_k(C) \xrightarrow{\delta} H_{k-1} (A) \into \cdots$
+
+A critical part of this is the fact that we get a map $\delta: H_k(C) \into H_{k-1}(A)$, so we can work our way towards lower dimensions. (It also helps if $A$ is somehow an easier object to work with)
+
+Thinking of $B$ as an "extension of $A$ by $C$", if we can find choices of $B$ that fit the extension and make the sequence exact, we can glean information about all three objects together.
