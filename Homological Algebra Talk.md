@@ -116,7 +116,7 @@ Informally, when the sequence splits, this says that $B$ is somehow a composite 
 
 
 
-#### Prototypes
+## Prototypes
 
 Here are some places exact sequences naturally arise:
 
