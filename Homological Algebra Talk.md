@@ -58,11 +58,27 @@ $0 \injective A \xrightarrow{f} B \xrightarrow{g} C \surjective 0$
 
 where $A,B,C$ are modules (or groups or rings or even vector spaces if you prefer), $f, g$ maps between them as indicated, where left end of the sequence is the inclusion of the trivial module into $A$ and the right end is a map sending every element to the single element of the trivial module.
 
-We say this sequence is **exact** if $\text{im} f = \ker g$. What does this mean for elements? Well, if $a\in A$, then $f(a) \in B$. But if $g$ is defined everywhere on $B$, then it's certainly defined for $f(a)$, and $f(a) \in \ker g$ means that $g(f(a)) = 0$ in $C$.
+We say this kind of sequence is **exact** if $\text{im} f = \ker g$. What does this mean for elements? Well, if $a\in A$, then $f(a) \in B$. But if $g$ is defined everywhere on $B$, then it's certainly defined for $f(a)$, and $f(a) \in \ker g$ means that $g(f(a)) = 0$ in $C$.
 
 Equivalently, this just means that $(g\circ f)(a) = 0$ for every element in $A$, or that $g\circ f$ is the zero map.
 
 
+
+One concrete benefit of this abstraction is that if we have
+
+$0 \injective A \xrightarrow{f} B \surjective 0$,
+
+then $f$ is an isomorphism, and $A \cong B$.
+
+
+
+Another benefit is that if we have a diagram where an $h$ exists such as this
+
+$0 \injective A \xrightarrow{f} B \xtofrom[h]{g} C \surjective 0$ 
+
+where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in, or $C \cong B /A$
+
+This says that somehow $B$ is a composite object, with $A$ and $C$ sitting naturally inside of it (think of this like the rank-nullity theorem in linear algebra, where)
 
 ### Chain Complexes
 
