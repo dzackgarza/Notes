@@ -56,7 +56,11 @@ In order to generalize and apply homology to other areas, we need to pull in a l
 
 Let's get some terminology out of the way first, starting with something you may be familiar with: kernels.
 
-You might remember this from linear algebra, so let's work in the category of vector spaces for a moment. Given a linear map $T: V \into W$, one interesting thing to look at is $\ker T = \theset{v\in V \mid T(V) =0 \in W}$. If $V,W$ are finite dimensional, then after picking a basis there is a matrix $A$ associated to $T$, and then $\ker T = \text{nullspace}~A$, or all solutions to $Ax = 0$.
+You might remember this from linear algebra, so let's work in the category of vector spaces for a moment. Given a linear map $T: V \into W$, one interesting thing to look at is $\theset{v\in V \mid T(V) =0 \in W}$. 
+
+If $V,W$ are finite dimensional, then after picking a basis there is a matrix $A$ associated to $T$, and so this is the set of all solutions to the homogeneous equation $Ax = 0$. 
+
+We refer to this set as the **kernel** of $T$. In the finite dimensional setting, this is equivalent to the nullspace of $A$.
 
 Staying in the finite setting, we know that $Ax$ lives somewhere in $W$, and it is in fact a subspace. In a general setting, it's not *all* of $W$ - this would require that $W$ and $V$ had the same dimension (so $A$ was square), and also that $A$ had full rank (so $A$ is not singular).
 
