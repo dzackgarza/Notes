@@ -76,9 +76,9 @@ Another benefit is that if we have a diagram where an $h$ exists such as this
 
 $0 \injective A \xrightarrow{f} B \xtofrom[h]{g} C \surjective 0$ 
 
-where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in, or $C \cong B /A$.
+where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in, or $C \cong B /A$. Informally, this says that $B$ is somehow a composite object, inside of which $A$ and $C$ naturally embed. In other words, this is a generalization of the first isomorphism theorem.
 
-This says that somehow $B$ is a composite object, with $A$ and $C$ sitting naturally inside of it (think of this like the rank-nullity theorem in linear algebra, where)
+Nifty application: Let $T: U \into V$ be a linear operator between vector spaces, let $A = \text{nullspace}~T$, $B=V$, $C = \text{range}~T$, then take $f = \id_V$ and $g = T$. Then we recover the rank-nullity theorem from linear algebra, $V \cong \ker T \oplus \text{im} T$ where $\oplus$ is the orthogonal direct sum.
 
 ### Chain Complexes
 
