@@ -84,7 +84,7 @@ The cokernel measures how far the map is from a surjection. This is because if t
 
 (Advanced note: in full generality, the kernel is defined in terms of a universal property. The cokernel is the categorical dual of the kernel, and satisfies a similar universal property. Duality is important!)
 
-### Exactness
+## Exactness
 
 Next let's talk a little bit about exactness. Consider a diagram such as this:
 
