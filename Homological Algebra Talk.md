@@ -50,6 +50,22 @@ In general, the $n$-sphere has one connected component and one $n$-dimensional h
 
 In order to generalize and apply homology to other areas, we need to pull in a little bit of algebra. First, we need to talk about chain complexes. These can generally be formulated in what are called *abelian categories*, but we'll stay a little more concrete than that for now.
 
+
+
+### Kernels, Cokernels, and Abelian Categories
+
+Let's get some terminology out of the way first, starting with something you may be familiar with: kernels.
+
+You might remember this from linear algebra, so let's work in the category of vector spaces for a moment. Given a linear map $T: V \into W$, one interesting thing to look at is $\ker T = \theset{v\in V \mid T(V) =0 \in W}$. If $V,W$ are finite dimensional, then after picking a basis there is a matrix $A$ associated to $T$, and then $\ker T = \text{nullspace}~A$, or all solutions to $Ax = 0$.
+
+Staying in the finite setting, we know that $Ax$ lives somewhere in $W$, and it is in fact a subspace. In a general setting, it's not *all* of $W$ - this would require that $W$ and $V$ had the same dimension (so $A$ was square), and also that $A$ had full rank (so $A$ is not singular).
+
+Note that if we were looking at groups, there is an entirely analogous procedure - $T$ would instead be a homomorphism, and the image $\text{im}~T$ would be a normal subgroup in $W$.
+
+In either case, we can always form the quotient $W / \text{im}~T$, and this is what we'll refer to as the **cokernel**.
+
+
+
 ### Exactness
 
 First let's talk a little bit about exactness. Consider a diagram such as this:
@@ -113,9 +129,25 @@ This is exact, since $x \mapsto nx \mapsto 0$, so the composite is the zero map.
 
 
 
-#The Snake Lemma
+# The Snake Lemma
+
+So now we can describe what is happening in the movie scene!
+
+In any abelian category, we can consider things like commutative diagrams and exact sequences - so let's do just this.
+
+What this lemma does, in essence, is give you some information about what happens when you "transform" an exact sequence. So the setup is this - you have one exact sequence $A,B,C,f,g$ and some transformation $F = (a,b,c)$ that has three maps as its components, and the image of these happens to land on another exact sequence $A', B', C', f', g'$.
 
 
+
+![Snake lemma origin.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Snake_lemma_origin.svg/375px-Snake_lemma_origin.svg.png)
+
+As is almost always the case in algebra, we glean a lot of information from the kernels of maps, so one might ask about what's going on with the kernels of $a,b,c$, and it turns out they're given by something like this:
+
+![Snake lemma complete.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Snake_lemma_complete.svg/500px-Snake_lemma_complete.svg.png)
+
+What this says is that there is *another* exact sequence that you get for free, of the form
+
+$\ker a \into \ker b \into \ker c \xrightarrow{d} \coker a \into \coker b \into \coker c$.
 
 #Chain Complexes
 
