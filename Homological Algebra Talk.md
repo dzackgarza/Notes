@@ -66,8 +66,6 @@ Note that if we were looking at groups, there is an entirely analogous procedure
 
 In either case, we can always form the quotient $W / \text{im}~T$, and this is what we'll refer to as the **cokernel**.
 
-
-
 In matrices, we just have
 
 $\ker A = \theset{x \mid Ax = 0}$
