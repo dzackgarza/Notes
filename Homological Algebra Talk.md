@@ -76,15 +76,67 @@ Another benefit is that if we have a diagram where an $h$ exists such as this
 
 $0 \injective A \xrightarrow{f} B \xtofrom[h]{g} C \surjective 0$ 
 
-where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in, or $C \cong B /A$. Informally, this says that $B$ is somehow a composite object, inside of which $A$ and $C$ naturally embed. In other words, this is a generalization of the first isomorphism theorem.
+where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $B \cong A \oplus C$ for some notion of "direct sum" appropriate to the category you're working in, or $C \cong B /A$. (In other words, this is a generalization of the first isomorphism theorem.)
 
-Nifty application: Let $T: U \into V$ be a linear operator between vector spaces, let $A = \text{nullspace}~T$, $B=V$, $C = \text{range}~T$, then take $f = \id_V$ and $g = T$. Then we recover the rank-nullity theorem from linear algebra, $V \cong \ker T \oplus \text{im} T$ where $\oplus$ is the orthogonal direct sum.
+Informally, when the sequence splits, this says that $B$ is somehow a composite object, inside of which $A$ and $C$ naturally embed.
 
-### Chain Complexes
 
-A *chain complex* $\theset{(C_i, \del_i}$ is an exact sequence, where each $C_i$ is a module (or a group, if you want) and each $\del_i$ is a morphism (or homomorphism), which are usually denoted the *boundary maps* or *differentials*, satisfying the condition $\del_{n+1} \circ \del_{n} = 0$.
+
+#### Prototypes
+
+For $N \unlhd G$ a group, 
+$0 \into N \into G \into G/N \into 0$
+
+For two distinct groups $H, K$, 
+$0 \into H \into H\times K \into K \into 0$.
+
+For two "related" groups, $H, K$, where $\phi: K \into \text{Aut}(K)$:
+$0 \into H \into H \rtimes_\phi K \into K \into 0$
+
+
+
+#### Nifty application: In vector spaces, every short exact sequence splits.
+
+Let $T: U \into V$ be a linear operator between vector spaces, let $A = \text{nullspace}~T$, $B=V$, $C = \text{range}~T$, then take $f = \id_V$ and $g = T$. Then we recover the rank-nullity theorem from linear algebra, $V \cong \ker T \oplus \text{im} T$ where $\oplus$ is the orthogonal direct sum. (Note that this can also be interpreted as the fact that the map $T$ *factors* into two other maps, one injective and one surjective).
+
+
+
+#### Another nifty application: semidirect products.
+
+
+
+#### Example: A SES that doesn't split.
+
+Take $\ZZ \xrightarrow{\times n}\ZZ \xrightarrow{\mod n} \ZZ/n\ZZ$, where $n > 1$.
+
+This is exact, since $x \mapsto nx \mapsto 0$, so the composite is the zero map. But there is no map $g$ that can invert the $f(x) = x\mod n$ map, since $x\in \ZZ \mapsto f(x) \in [0, n-1]$ means that $\abs{(g\circ f)(x)} \leq n < \abs \ZZ$, and the composite can't be surjective. (E.g. this sequence throws away too much information to split!)
+
+
+
+#The Snake Lemma
+
+
+
+#Chain Complexes
+
+When we have a sequence that is exact everywhere, we say it is a *long exact sequence*
+
+A *chain complex* $\theset{(C_i, \del_i}$ is a sequence, where each $C_i$ is a module (or a group or vector space, if you want) and each $\del_i$ is a morphism (or homomorphism), which are usually denoted the *boundary maps* or *differentials*, satisfying the condition $\del_{n+1} \circ \del_{n} = 0$ (so it is exact everywhere).
 
 Diagrammatically, we have something like this:
 
 $\cdots \xrightarrow{\del_{n+1}} A_{n+1} \xrightarrow{\del_{n}} A_n \into\xrightarrow{\del_{n-1}} A_{n-1} \cdots \xrightarrow{\del_{2}} A_1 \xrightarrow{\del_{1}} A_0 \xrightarrow{\del_{0}} A_{-1} \xrightarrow{\del_{-1}} \cdots$
 
+Every exact sequence is a chain complex, so this can be thought of as a generalization of exact sequences.
+
+Often, you'll see notation abused here, and people will refer to "the" boundary map $\del$. Then the relevant condition is that $\del^2 = 0$.
+
+
+
+## Homology From Chain Complexes
+
+For some "nice enough" topological spaces $X$, we can construct a set of building blocks in each dimension $d$, usually referred to as $d$-simplexes, and build $X$ as some combination of those. In fact, if $X$ in an $n$-dimensional manifold, you only need simplexes of degree $n$ or lower.
+
+So for spaces that can be decomposed (or built, depending on your viewpoint) in this way, we can let $C_n$ be the collection of all of the $n$ simplexes. Moreover, some $n$-simplexes have $n-1$ simplexes as boundaries, so we can define the map $\del_n: C_n \into C_{n-1}$ that takes a simplex to its boundary. Since "boundaries don't have boundaries", it turns out that this defines a differential as defined above, and thus $\theset{(C_i, \del_i)}_{i=1}^n$ forms a chain complex.
+
+We can then take the $n$-th homology of $X$ to be the generalization of "cycles mod boundaries", and define $H_n(X) = \ker \del_n / \text{im} ~\del_{n+1}$.
