@@ -50,7 +50,25 @@ In general, the $n$-sphere has one connected component and one $n$-dimensional h
 
 In order to generalize and apply homology to other areas, we need to pull in a little bit of algebra. First, we need to talk about chain complexes. These can generally be formulated in what are called *abelian categories*, but we'll stay a little more concrete than that for now.
 
-A *chain complex* $\theset{(C_i, \del_i}$ is a graded structure, where each $C_i$ is a module (or a group, if you want) and each $\del_i$ is a morphism (or homomorphism), which are usually denoted the *boundary maps* or *differentials*. Diagrammatically, we have something like this:
+### Exactness
+
+First let's talk a little bit about exactness. Consider a diagram such as this:
+
+$0 \injective A \xrightarrow{f} B \xrightarrow{g} C \surjective 0$  
+
+where $A,B,C$ are modules (or groups or rings or even vector spaces if you prefer), $f, g$ maps between them as indicated, where left end of the sequence is the inclusion of the trivial module into $A$ and the right end is a map sending every element to the single element of the trivial module.
+
+We say this sequence is **exact** if $\text{im} f = \ker g$. What does this mean for elements? Well, if $a\in A$, then $f(a) \in B$. But if $g$ is defined everywhere on $B$, then it's certainly defined for $f(a)$, and $f(a) \in \ker g$ means that $g(f(a)) = 0$ in $C$.
+
+Equivalently, this just means that $(g\circ f)(a) = 0$ for every element in $A$, or that $g\circ f$ is the zero map.
+
+
+
+### Chain Complexes
+
+A *chain complex* $\theset{(C_i, \del_i}$ is an exact sequence, where each $C_i$ is a module (or a group, if you want) and each $\del_i$ is a morphism (or homomorphism), which are usually denoted the *boundary maps* or *differentials*, satisfying the condition $\del_{n+1} \circ \del_{n} = 0$.
+
+Diagrammatically, we have something like this:
 
 $\cdots \xrightarrow{\del_{n+1}} A_{n+1} \xrightarrow{\del_{n}} A_n \into\xrightarrow{\del_{n-1}} A_{n-1} \cdots \xrightarrow{\del_{2}} A_1 \xrightarrow{\del_{1}} A_0 \xrightarrow{\del_{0}} A_{-1} \xrightarrow{\del_{-1}} \cdots$
 
