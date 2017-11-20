@@ -70,6 +70,16 @@ In either case, we can always form the quotient $W / \text{im}~T$, and this is w
 
 
 
+In matrices, we just have
+
+$\ker A = \theset{x \mid Ax = 0}$
+
+and
+
+$\text{coker}~A = \theset{y \mid y^T A = 0}$
+
+
+
 Intuitively, both the kernel and cokernel carry a lot of information about the map. 
 
 The kernel measures how far the map is from an injection - this is because if the kernel is trivial, then the map is injective, so kernel size somehow measures "distance" from injectivity - larger kernels correspond less injectivity.
@@ -112,6 +122,8 @@ Informally, when the sequence splits, this says that $B$ is somehow a composite 
 
 #### Prototypes
 
+Here are some places exact sequences naturally arise:
+
 For $N \unlhd G$ a group, 
 $0 \into N \into G \into G/N \into 0$
 
@@ -121,15 +133,16 @@ $0 \into H \into H\times K \into K \into 0$.
 For two "related" groups, $H, K$, where $\phi: K \into \text{Aut}(K)$:
 $0 \into H \into H \rtimes_\phi K \into K \into 0$
 
+The "extension" problem: given $A, C$, and 
+$0 \into A \into * \into C \into 0$,
+
+what can be filled in for $*$ to generate an exact sequence? Any such $*$ yields an "extension of $A$ by $C$". In the category of groups, we have a classification of all finite *simple* groups, so a general solution to this problem would yield a classification of **all** finite groups (!!!)
+
 
 
 #### Nifty application: In vector spaces, every short exact sequence splits.
 
 Let $T: U \into V$ be a linear operator between vector spaces, let $A = \text{nullspace}~T$, $B=V$, $C = \text{range}~T$, then take $f = \id_V$ and $g = T$. Then we recover the rank-nullity theorem from linear algebra, $V \cong \ker T \oplus \text{im} T$ where $\oplus$ is the orthogonal direct sum. (Note that this can also be interpreted as the fact that the map $T$ *factors* into two other maps, one injective and one surjective).
-
-
-
-#### Another nifty application: semidirect products.
 
 
 
