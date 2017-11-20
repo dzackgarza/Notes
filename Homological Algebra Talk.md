@@ -18,14 +18,13 @@ We have this intuitive notion, but since we are mathematicians, we need to make 
 
 ## How is homology formulated?
 
-I'll take for granted that you know what a manifold is - if you don't, you can just picture the surface of some kind of blob sitting inside of $\RR^3$. What's important for us is that if you zoom in far enough on a manifold, looking at it under a powerful enough microscope, it looks like $\RR^n$ for some $n$. 
+There are many different ways to formulate the original homology, but they all roughly follow the same motto: "cycles mod boundaries". 
 
-For example, the sphere $S^1$ is a 2-dimensional manifold - just imagine sitting on the earth. Since you're small enough (compared to the size of the Earth), a slab of pavement looks flat, like $\RR^2$ even! 
+This originates from the world of manifolds, which are distinguished as topological spaces by their number of holes. One way to measure $n$-dimensional holes is to consider *k-cycles* on the manifold for $1\leq k \leq n$, which are a bit like cutting instructions. A 1-cycle is a set of points to remove, puncturing the manifold. A 2-cycle is a loop you could take scissors to, and in general a $d$-cycle is a $d$-dimensional submanifold. 
 
-In fact, if you wanted to, you could draw a little cartesian coordinate system on the sidewalk, and then extend it and start denoting places by their coordinates relative to what you drew. Of course, this doesn't quite work everywhere - what are the coordinates on the exact other side of the Earth? Unfortunately, they're not unique, and moreover someone else could have chosen a coordinate system in front of *their* house, and you wouldn't be able to agree on what the actual, exact coordinates of the local grocery store should be.
+Manifolds may or may not have boundaries (**picture: manifold with boundary**), which means that cycles may have boundaries. So to measure the holes, we "mod out" by  those cycles that are actually just the boundary of higher-dimensional cycles. (**picture: quotienting as collapsing to a point**)
 
-In general, we can define $n$-dimensional manifolds for any $n$. Since they can be embedded in $\RR^m$ for a big enough $m$, we can talk about closed manifolds (and also manifolds with boundary).
+## The Big Picture
 
-But most importantly for us, we can define $n$-dimensional *cycles* on manifolds. Formally, these are closed submanifolds, but for example a 1-cycle on $S^2$ is just a path on the surface.
 
-We can also define *boundaries* of cycles, by just taking those cycles that are also the boundary of any submanifold.
+
