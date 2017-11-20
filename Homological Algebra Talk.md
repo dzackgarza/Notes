@@ -50,8 +50,6 @@ In general, the $n$-sphere has one connected component and one $n$-dimensional h
 
 In order to generalize and apply homology to other areas, we need to pull in a little bit of algebra. First, we need to talk about chain complexes. These can generally be formulated in what are called *abelian categories*, but we'll stay a little more concrete than that for now.
 
-
-
 ### Kernels, Cokernels, and Abelian Categories
 
 Let's get some terminology out of the way first, starting with something you may be familiar with: kernels.
