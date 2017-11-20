@@ -50,7 +50,7 @@ In general, the $n$-sphere has one connected component and one $n$-dimensional h
 
 In order to generalize and apply homology to other areas, we need to pull in a little bit of algebra. First, we need to talk about chain complexes. These can generally be formulated in what are called *abelian categories*, but we'll stay a little more concrete than that for now.
 
-A *chain complex* $\theset{(C_i, \del_i}$ is a graded structure, where each $C_i$ is a module (or a group, if you want) and each $\del_i$ is a morphism (or homomorphism), which are usually denoted the *boundary maps* or *differentials*. Diagrammatically, we have something like this:\
+A *chain complex* $\theset{(C_i, \del_i}$ is a graded structure, where each $C_i$ is a module (or a group, if you want) and each $\del_i$ is a morphism (or homomorphism), which are usually denoted the *boundary maps* or *differentials*. Diagrammatically, we have something like this:
 
 $\cdots \xrightarrow{\del_{n+1}} A_{n+1} \xrightarrow{\del_{n}} A_n \into\xrightarrow{\del_{n-1}} A_{n-1} \cdots \xrightarrow{\del_{2}} A_1 \xrightarrow{\del_{1}} A_0 \xrightarrow{\del_{0}} A_{-1} \xrightarrow{\del_{-1}} \cdots$
 
