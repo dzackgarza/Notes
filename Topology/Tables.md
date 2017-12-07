@@ -1,26 +1,27 @@
-| Space $X$                             | $\pi_1(X)$               | $H_0(X)$ | $H_1(X)$                    | $H_2(X)$ | $H_3(X)$ |
-| ------------------------------------- | ------------------------ | :------- | :-------------------------- | -------- | -------- |
-| $\RR^n$                               | 0                        | $\ZZ$    | 0                           |          |          |
-| $\RR^n - \theset{k~\text{pts}}$       |                          |          |                             |          |          |
-| $B^n$                                 | 0                        |          | 0                           |          |          |
-| $S^0$                                 | 0                        | 0        | 0                           | 0        | 0        |
-| $S^1$                                 | $\ZZ$                    | $\ZZ$    | $\ZZ$                       | 0        | 0        |
-| $S^2$                                 | 0                        | $\ZZ$    | 0                           | $\ZZ$    | 0        |
-| $S^3$                                 | 0                        | $\ZZ$    | 0                           | 0        | ?        |
-| $S^n, n \geq 4$                       | 0                        | $\ZZ$    | 0                           | 0        | 0        |
-| $S^n - \theset{k~\text{pts}}$         |                          |          |                             |          |          |
-| $T^2 = S^1 \cross S^1$                | $\ZZ \cross \ZZ$         | $\ZZ$    | $Z\oplus Z$                 |          |          |
-| $\prod_n S^1$                         | $F_n \cong \times_n \ZZ$ | $\ZZ$    | $F_n^{(ab)} = \oplus_n \ZZ$ |          |          |
-| $\prod_n S^1 - \theset{k~\text{pts}}$ |                          |          |                             |          |          |
-| $\bigvee_n S^1$                       | $\ast_n \ZZ$             | $\ZZ$    |                             |          |          |
-| $\mathbb{RP}^1$                       | $\ZZ$                    |          | $\ZZ$?                      |          |          |
-| $\mathbb{RP}^n, n \geq 2$             | $\ZZ_2$                  |          | $\ZZ$?                      |          |          |
-| $\mathbb{CP}^1$                       | 0                        |          | 0                           |          |          |
-| $\mathbb{CP}^n, n \geq 2$             | 0                        |          | 0                           |          |          |
-| Mobius Band                           |                          |          |                             |          |          |
-| Klein Bottle                          |                          |          | $\ZZ \cross \ZZ_2$          |          |          |
-| $Gr(n, k)$                            |                          |          |                             |          |          |
-| $n$-fold dunce cap                    |                          |          |                             |          |          |
+| Space $X$                             | $\pi_1(X)$               | $H_0(X)$ | $H_1(X)$                       | $H_2(X)$ | $H_3(X)$ |
+| ------------------------------------- | ------------------------ | :------- | :----------------------------- | -------- | -------- |
+| $\RR^n$                               | 0                        | $\ZZ$    | 0                              |          |          |
+| $\RR^n - \theset{k~\text{pts}}$       |                          |          |                                |          |          |
+| $B^n$                                 | 0                        |          | 0                              |          |          |
+| $S^0$                                 | 0                        | 0        | 0                              | 0        | 0        |
+| $S^1$                                 | $\ZZ$                    | $\ZZ$    | $\ZZ$                          | 0        | 0        |
+| $S^2$                                 | 0                        | $\ZZ$    | 0                              | $\ZZ$    | 0        |
+| $S^3$                                 | 0                        | $\ZZ$    | 0                              | 0        | ?        |
+| $S^n, n \geq 4$                       | 0                        | $\ZZ$    | 0                              | 0        | 0        |
+| $S^n - \theset{k~\text{pts}}$         |                          |          |                                |          |          |
+| $T^2 = S^1 \cross S^1$                | $\ZZ \cross \ZZ$         | $\ZZ$    | $Z\oplus Z$                    |          |          |
+| $\prod_n S^1$                         | $F_n \cong \times_n \ZZ$ | $\ZZ$    | $F_n^{(ab)} = \bigoplus_n \ZZ$ |          |          |
+| $\prod_n S^1 - \theset{k~\text{pts}}$ |                          |          |                                |          |          |
+| $\bigvee_n S^1$                       | $\ast_n \ZZ$             | $\ZZ$    |                                |          |          |
+| $\mathbb{RP}^1$                       | $\ZZ$                    |          | $\ZZ$?                         |          |          |
+| $\mathbb{RP}^2$                       | $\ZZ_2$                  |          |                                |          |          |
+| $\mathbb{RP}^n, n \geq 2$             | $\ZZ_2$                  |          | $\ZZ$?                         |          |          |
+| $\mathbb{CP}^1$                       | 0                        |          | 0                              |          |          |
+| $\mathbb{CP}^n, n \geq 2$             | 0                        |          | 0                              |          |          |
+| Mobius Band                           |                          |          |                                |          |          |
+| Klein Bottle                          |                          |          | $\ZZ \cross \ZZ_2$             |          |          |
+| $Gr(n, k)$                            |                          |          |                                |          |          |
+| $n$-fold dunce cap                    |                          |          |                                |          |          |
 
 
 
@@ -69,15 +70,19 @@
   - Fundamental group:
     - Van Kampen
     - Covering space actions?
+      - $\pi_1(X/ \Gamma) = \Gamma$ when $\pi_1(X) = 0$ and $\Gamma$ acts freely
   - Homotopy Groups
     - Hurewicz
   - Homology Groups
     - Mayer-Vietoris
     - Excision?
+- $\pi_k(X)$ for $k\geq 2$ is always abelian.
 - Rank $\pi_0 /H_0$ = number of connected components.
-- $\pi_1 = \ZZ$ when simple connected.
-- $H_1(X) = \mathbf{Ab}(\pi_1(X))$, the abelianization
-- $\pi_k(A\cross B) \cong \pi_k(A) \cross \pi_k(B)$
+- $\pi_1(X) = \ZZ$ iff $X$ is simply connected.
+- $H_1(X) = \mathbf{Ab}(\pi_1(X))$
+  (the abelianization of the fundamental group.)
+- $\pi_k(\prod X_i) \cong \prod \pi_k(X_i)$ 
+  (homotopy groups commute with products)
 - $X$ simply connected implies $\pi_k(X)  \cong H_k(X)$ for first nonvanishing $H_k$
 - $X$ an $n-1$ connected space implies $\pi_k(X) \cong H_k(X)$ for all $2 < k \leq n$.
   ($k=1$ case is abelianization)
