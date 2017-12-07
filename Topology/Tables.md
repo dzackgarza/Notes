@@ -13,7 +13,7 @@
 | $\prod_n S^1$                         | $F_n \cong \times_n \ZZ$ | $\ZZ$                                | $F_n^{(ab)} = \oplus_n \ZZ$           |          |          |
 | $\prod_n S^1 - \theset{k~\text{pts}}$ |                          |                                      |                                       |          |          |
 | $\bigvee_n S^1$                       | $\ast_n \ZZ$             | $\ZZ$                                |                                       |          |          |
-| $\mathbb{RP}^1$                       |                          |                                      |                                       |          |          |
+| $\mathbb{RP}^1$                       | $\ZZ$                    |                                      |                                       |          |          |
 | $\mathbb{RP}^n, n \geq 2$             | $\ZZ_2$                  |                                      |                                       |          |          |
 | $\mathbb{CP}^1$                       | 0                        |                                      |                                       |          |          |
 | $\mathbb{CP}^n, n \geq 2$             | 0                        |                                      |                                       |          |          |
@@ -21,8 +21,6 @@
 | Klein Bottle                          |                          |                                      | $\ZZ \cross \ZZ_2$                    |          |          |
 | $Gr(n, k)$                            |                          |                                      |                                       |          |          |
 | $n$-fold dunce cap                    |                          |                                      |                                       |          |          |
-| $GL(n, k)$                            |                          |                                      |                                       |          |          |
-| $SO(n, k)$                            |                          |                                      |                                       |          |          |
 
 
 
@@ -47,10 +45,30 @@
 
 # Torii
 
+- $\pi_k(\times_n S^1) = 0$ for $k \geq 2$.
 - $H_k(\times_n S^1) = \bigoplus_{n\choose k}\ZZ$
+
+# Projective Spaces
+
+- $\pi_k(\mathbb{RP}^n) = \pi_k(S^n)$ for $k \geq 2$
+
+- $\pi_k(\mathbb{CP}^n) = \pi_k(S^{2n+1})$ for $k\geq 3$
+
+  ​
+
+  ![rpn homotopy groups](C:\Users\Zack\SparkleShare\Notes\Topology\rpn homotopy groups.png)
 
 # Theorems
 
+- Techniques:
+  - Fundamental group:
+    - Van Kampen
+    - Covering space actions?
+  - Homotopy Groups
+    - Hurewicz
+  - Homology Groups
+    - Mayer-Vietoris
+    - Excision?
 - $\pi_k(A\cross B) \cong \pi_k(A) \cross \pi_k(B)$
 - $X$ simply connected implies $\pi_k(X)  \cong H_k(X)$ for first nonvanishing $H_k$
 - $X$ an $n-1$ connected space implies $\pi_k(X) \cong H_k(X)$ for all $2 < k \leq n$.
@@ -59,3 +77,13 @@
   i.e., Homotopy groups stabilize. Diagonals show where diagonals become constant:
 
 ![homotopy groups of spheres](C:\Users\Zack\SparkleShare\Notes\Topology\homotopy groups stabilize.png)
+
+# Matrix Groups
+
+- $\pi_k(U_n) = \ZZ\cdot\mathbf{1}[k~\text{odd}]$
+  $\pi_1(U_n) = 1$
+- $\pi_k(SU_n) = \ZZ\cdot\mathbf{1}[k~\text{odd}]$
+  $\pi_1(SU_n) = 0$
+- $\pi_k(U_n) = \ZZ_2\cdot\mathbf{1}[k = 0,1\mod 8] + \ZZ\cdot\mathbb{1}[k = 3,7 \mod 8]$
+- $\pi_k(SP_n) = \ZZ_2\cdot\mathbf{1}[k = 4,5\mod 8] + \ZZ\cdot\mathbb{1}[k = 3,7 \mod 8]$
+- ​
