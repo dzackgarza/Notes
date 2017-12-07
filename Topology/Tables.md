@@ -24,7 +24,7 @@
 | $GL(n, k)$                            |                          |                                      |                                       |          |          |
 | $SO(n, k)$                            |                          |                                      |                                       |          |          |
 
-![homotopy groups of spheres](C:\Users\Zack\SparkleShare\Notes\Topology\homotopy groups of spheres.PNG)
+
 
 
 
@@ -55,3 +55,7 @@
 - $X$ simply connected implies $\pi_k(X)  \cong H_k(X)$ for first nonvanishing $H_k$
 - $X$ an $n-1$ connected space implies $\pi_k(X) \cong H_k(X)$ for all $2 < k \leq n$.
   ($k=1$ case is abelianization)
+- For $n\geq k+2$,  $\pi_{n+k}(S^n)$ does not depend on $n$.
+  i.e., Homotopy groups stabilize. Diagonals show where diagonals become constant:
+
+![homotopy groups of spheres](C:\Users\Zack\SparkleShare\Notes\Topology\homotopy groups stabilize.png)
