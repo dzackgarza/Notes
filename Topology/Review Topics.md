@@ -2,6 +2,10 @@
 
 
 
+## Definitions
+
+Need to get these down cold and fast. Flashcards.
+
 ## Covering Spaces of Graphs
 
 See section 1.3 of Hatcher, around page 58. 
