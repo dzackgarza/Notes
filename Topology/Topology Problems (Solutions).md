@@ -61,11 +61,15 @@
 
    Similarly, consider $(\iota_c \compose \pi): X \into X$. We compute $(\iota_c \compose \pi)(x) = \iota_c(c) = c$, so $\iota_c\circ \pi$ is the constant map $g_c:X \to \theset{c},  x \mapsto c$ for all $x\in X$. By assumption, $g_c \homotopic \id_X$, and so $\iota_c\circ \pi \homotopic \id_X$. Thus $\pi$ and $\iota$ are homotopy inverses, and we have $X \homotopic \theset{c}$, meaning $X$ is contractible.
 
-   $\Rightarrow$: **Main Idea**: Post-composing with a constant function is still constant.
+   $\Rightarrow$: **Main Idea**: Post-composing with a constant function is still constant, so just build a constant map out of the supplied homotopy inverses (since you already get something homotopic to the identity from this!)
 
-   Suppose $X \homotopic \theset{p}$, so that there exists a pair of homotopy inverses $f: X \into \theset{p}$ and $g: \theset{p} \into X$ such that $f\compose g \homotopic \id_{\theset{p}}$ and $g\compose f \homotopic \id_X$.
+   Suppose $X \homotopic \theset{x_0}$, then there exist a pair of homotopy inverses $f: X \into \theset{x_0}$ and $g: \theset{x_0} \into X$ such that $f\compose g \homotopic \id_{\theset{x_0}}$ and $g\compose f \homotopic \id_X$.
 
-   But since $\theset{p}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = p$ for every $x\in X$.) But then for any $x\in X, (g\circ f)(x) = g(f(x)) = g(p) = p'$ for some fixed $p' \in X$, which means that $\pi \definedas (g\circ f): X \to X$ is given by $x\mapsto p'$, making this a constant map on $X$. Finally, by assumption, we have $\pi \homotopic \id_X$, which is what we wanted to show. $\qed$
+   Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = x_0$ for every $x\in X$.) 
+
+   Then for any $x\in X, (g\circ f)(x) = g(f(x)) = g(x_0) = x_1$ for some fixed $x_1 \in X$, so we can define a constant map $\pi \definedas (g\circ f): X \to X$ given by $x\mapsto x_1$, making this a constant map on $X$. 
+
+   But by assumption, we have $\pi = g\circ f \homotopic \id_X$, which shows that the identity is homotopic to a constant map - namely, the one that maps every point to $g(x_0)$, where $g:\theset{x_0} \to X$ is whatever is supplied by the homotopy equivalence. $\qed$
 
 5. **Main Idea**: Deformation retract $M$ onto its center circle
    Claim: $S^1 \cross I \homotopic S^1 \cross \theset{*}$
@@ -153,18 +157,25 @@
 
   8. $\theset{A, R}$
       Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
+
   9. $\theset{D, O, S^1}$
       These all have no single point that can be removed to disconnect the space.
+
   10. $\theset{B,S^1 \vee S^1}$
-    Remove point at junction
+   Remove point at junction
+
   11. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
        These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
+
   12. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
        These all have a point that can be removed to yield 3 connected components homeomorphic to $I$. This is the "pasting" point in the vee.
+
   13. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
        Can remove **two** points to disconnect each into **five** components.
+
   14. $\theset{P, Q, S^1 \vee [0,1]}$
        Both contain a nontrivial loop.
+
   15. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
        Can remove **one** point to separate into **four** components.
 
