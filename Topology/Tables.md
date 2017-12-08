@@ -1,27 +1,29 @@
-| Space $X$                             | $\pi_1(X)$              | $H_0(X)$ | $H_1(X)$                       | $H_2(X)$ | $H_3(X)$ |
-| ------------------------------------- | ----------------------- | :------- | :----------------------------- | -------- | -------- |
-| $\RR^n$                               | 0                       | $\ZZ$    | 0                              |          |          |
-| $\RR^n - \theset{k~\text{pts}}$       |                         |          |                                |          |          |
-| $B^n$                                 | 0                       |          | 0                              |          |          |
-| $S^0$                                 | 0                       | 0        | 0                              | 0        | 0        |
-| $S^1$                                 | $\ZZ$                   | $\ZZ$    | $\ZZ$                          | 0        | 0        |
-| $S^2$                                 | 0                       | $\ZZ$    | 0                              | $\ZZ$    | 0        |
-| $S^3$                                 | 0                       | $\ZZ$    | 0                              | 0        | ?        |
-| $S^n, n \geq 4$                       | 0                       | $\ZZ$    | 0                              | 0        | 0        |
-| $S^n - \theset{k~\text{pts}}$         |                         |          |                                |          |          |
-| $T^2 = S^1 \cross S^1$                | $\ZZ \cross \ZZ$        | $\ZZ$    | $Z\oplus Z$                    |          |          |
-| $\prod_n S^1$                         | $F_n \cong \prod_n \ZZ$ | $\ZZ$    | $F_n^{(ab)} = \bigoplus_n \ZZ$ |          |          |
-| $\prod_n S^1 - \theset{k~\text{pts}}$ |                         |          |                                |          |          |
-| $\bigvee_n S^1$                       | $\ast_n \ZZ$            | $\ZZ$    |                                |          |          |
-| $\mathbb{RP}^1$                       | $\ZZ$                   |          | $\ZZ$?                         |          |          |
-| $\mathbb{RP}^2$                       | $\ZZ_2$                 |          |                                |          |          |
-| $\mathbb{RP}^n, n \geq 2$             | $\ZZ_2$                 |          | $\ZZ$?                         |          |          |
-| $\mathbb{CP}^1$                       | 0                       |          | 0                              |          |          |
-| $\mathbb{CP}^n, n \geq 2$             | 0                       |          | 0                              |          |          |
-| Mobius Band                           |                         |          |                                |          |          |
-| Klein Bottle                          |                         |          | $\ZZ \cross \ZZ_2$             |          |          |
-| $Gr(n, k)$                            |                         |          |                                |          |          |
-| $n$-fold dunce cap                    |                         |          |                                |          |          |
+| Space $X$                             | $\pi_0(X)$ | $\pi_1(X)$              | $H_0(X)$ | $H_1(X)$                       | $H_2(X)$ | $H_3(X)$ |
+| ------------------------------------- | ---------- | ----------------------- | :------- | :----------------------------- | -------- | -------- |
+| $\RR^n$                               |            | 0                       | $\ZZ$    | 0                              |          |          |
+| $\RR^n - \theset{k~\text{pts}}$       |            |                         |          |                                |          |          |
+| $B^n$                                 |            | 0                       |          | 0                              |          |          |
+| $S^0$                                 |            | 0                       | 0        | 0                              | 0        | 0        |
+| $S^1$                                 |            | $\ZZ$                   | $\ZZ$    | $\ZZ$                          | 0        | 0        |
+| $S^2$                                 |            | 0                       | $\ZZ$    | 0                              | $\ZZ$    | 0        |
+| $S^3$                                 |            | 0                       | $\ZZ$    | 0                              | 0        | ?        |
+| $S^n, n \geq 4$                       |            | 0                       | $\ZZ$    | 0                              | 0        | 0        |
+| $S^n - \theset{k~\text{pts}}$         |            |                         |          |                                |          |          |
+| $T^2 = S^1 \cross S^1$                |            | $\ZZ \cross \ZZ$        | $\ZZ$    | $Z\oplus Z$                    |          |          |
+| $\prod_n S^1$                         |            | $F_n \cong \prod_n \ZZ$ | $\ZZ$    | $F_n^{(ab)} = \bigoplus_n \ZZ$ |          |          |
+| $\prod_n S^1 - \theset{k~\text{pts}}$ |            |                         |          |                                |          |          |
+| $\bigvee_n S^1$                       | 0          | $\ast_n \ZZ$            | $\ZZ$    |                                |          |          |
+| $\mathbb{RP}^1$                       | 0          | $\ZZ$                   | $\ZZ$    | $\ZZ$                          |          | 0        |
+| $\mathbb{RP}^2$                       | 0          | $\ZZ_2$                 | $\ZZ$    | $\ZZ_2$                        | $\ZZ$    | 0        |
+| $\mathbb{RP}^3$                       | 0          | $\ZZ_2$                 | $\ZZ$    | $\ZZ_2$                        | 0        | $\ZZ$    |
+| $\mathbb{RP}^n, n \geq 4$             | 0          | $\ZZ_2$                 | $\ZZ$    | $\ZZ_2$                        | 0        | $\ZZ_2$  |
+| $\mathbb{CP}^1$                       | 0          | 0                       |          | 0                              |          |          |
+| $\mathbb{CP}^n, n \geq 2$             | 0          | 0                       |          | 0                              |          |          |
+| Mobius Band                           |            |                         |          |                                |          |          |
+| Klein Bottle                          |            |                         |          | $\ZZ \cross \ZZ_2$             |          |          |
+| $Gr(n, k)$                            |            |                         |          |                                |          |          |
+| $S^3 - $ Hopf Link                    |            |                         |          |                                |          |          |
+| $n$-fold dunce cap                    |            |                         |          |                                |          |          |
 
 
 
@@ -46,6 +48,10 @@
     - E.g. $\pi_3(S^2) = \ZZ$ by Hopf fibration
 - $H_i(S^n) = \mathbf{1}[i \in \theset{0, n}]$
 - $H_n(\bigvee_i X_i) \cong \bigoplus_i H_n(X_i)$ for "good pairs"
+  - Corollary:  $H_n(\bigvee_k S^n) = \ZZ^k$
+- $S^n / S^k \homotopic S^n \vee \Sigma S^{k}$
+  - $\Sigma S^n = S^{n+1}$
+- $S^n$ has the CW complex structure of 2 $k$-cells for each $0\leq k \leq n$.
 
 # Torii
 
@@ -54,9 +60,14 @@
 
 # Projective Spaces
 
+- $\mathbb{RP}^n = S^n /\ZZ_2$, an antipodal action.
+
 - $\pi_k(\mathbb{RP}^n) = \pi_k(S^n)$ for $k \geq 2$
+  $\pi_1(\mathbb{RP}^n) = \ZZ_2$ for $n > 1$.
 
 - $\pi_k(\mathbb{CP}^n) = \pi_k(S^{2n+1})$ for $k\geq 3$
+
+- $H_i(\mathbb{RP}^n) = \ZZ \cdot \mathbb{1}[i=0] + \ZZ \cdot \mathbb{1}[i=n, n~\text{odd})] + \ZZ_2\cdot\mathbb{1}[1\leq i<n,i~\text{odd}]$
 
   ​
 
@@ -75,6 +86,7 @@
     - Hurewicz
   - Homology Groups
     - Mayer-Vietoris
+      $\cdots \to H_i(A\intersect B) \to H_i(A)\oplus H_i(B) \to H_i(A\union B) \to H_{i-1}(A\intersect B) \to \cdots$
     - Excision?
 - $\pi_k(X)$ for $k\geq 2$ is always abelian.
 - Rank $\pi_0 /H_0$ = number of connected components.
