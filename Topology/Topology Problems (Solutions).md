@@ -1,85 +1,88 @@
+---
+typora-copy-images-to:  .
+---
+
 # Topology Problems: Solutions
 
 ## Homotopy
 
-1. **Main Idea**: "Linear" homotopy along the geodesic to any point not in the image of $f$ will work. Alternatively, $\RR^n$ is convex, so linear homotopy will always work there, and $S^n - \theset{\text{pt}} \cong \RR^n$. 
+1. **Main Idea**: A linear homotopy projected onto the sphere works.
    ​
    Let $f: X \to S^n \subset \RR^{n+1}$ be an arbitrary map that fails to be surjective. Then, by definition, there is at least one point $s_0 \in S^n - f(X)$. 
 
-   Then, $\forall x\in X$, since $f(x) \neq s_0$, there is a unique geodesic $C$ connecting $f(x)$ and $s_0$. So a  variant of the straight line homotopy will work, by interpolating between $f(x)$ and $s_0$ along $C$. 
+   Then, $\forall x\in X$, since $f(x) \neq s_0$, there is a unique geodesic $C$ connecting $f(x)$ and $s_0$. So a  variant of the straight line homotopy will work, by interpolating between $f(x)$ and $s_0$ along $C$.
 
-   Let $S: X \into S^n$ be the map given by $S(x) = s_0$ for all $x\in X$. Then $S$ is a constant map, and the above construction yields a homotopy $H: X \cross I \into S^n$ such that $H(x,1) = S(x)$.
+   So let $H:X \cross I \to S^n$ be defined by $H(x, t) = P(ts_0  + (1-t)f(x))$, where $P: \mathbb{R}^{n+1} \to S^n$ is given by $P(x) = x/\norm{x}$. 
+   This is well defined, since the denominator is zero iff $f(x) = s_0$, which by assumption is not the case.
+   This is a homotopy, since $H(x, 0) =P(f(x)) = f(x)$ (since $P$ fixes $S^n$) and $H(x, 1) = P(s_0) = s_0$ (since $s_0 \in S^n$).
 
-   **Alternative proof**: Since $s_0 \not\in f(X)$, perform spherical projection through $s_0$. This yields a homeomorphism $p$ and its continuous inverse $p^{-1}$ (which is known to exist since $S^n - \theset{\text{pt}}$ is homeomorphic to $R^n$). Then a map $p \circ f: X \into \RR^n$ is obtained.
+2. **Main Idea**: Exact same idea as 1, just a more complicated check.
 
-   However, $\RR^n$ is convex, so pick any constant $c\in \RR^n$ and let $g_c: X \into \RR^n$ be a constant map given by $g(x) = c$ for all $x\in X$.
+   Take $H(x, t) = P(tf(x) + (1-t)g(x))$.
+   This is well defined; the only case to check is when the denominator is zero. But $\norm{x} = 0$ iff $x =0$, which would imply $tf(x) +(1-t)g(x) = 0$ and so $tf(x) = -(1-t)g(x)$. 
 
-   Then define $H: X\cross I \into \RR^n$ by $H(x,t) = tc + (1-x)(p\circ f)(x)$, the linear homotopy between a constant and $p \circ f$. Then $H(x, 0) = (p\circ f)(x)$ and $H(x,1) = c = g_c(x)$, so $p\circ f \homotopic g_c$.
-   ​
-   So then define $F: X\times I \into S^n$ by $F(x,t) = (p^{-1} \circ H)(x,t)$. Then 
+   Taking norms and observing that since $f,g \in S^n \implies \norm{f} = \norm{g} = 1$, this forces $t = 1-t$ and thus $t=1/2$. But this would force $(1/2)f(x) = (-1/2)g(x)$ and thus $f(x) = -g(x)$, which we assumed was not the case.
 
-   $F(x, 0) = (p^{-1} \circ H)(x, 0) = (p^{-1} \circ p \circ f)(x) = f(x)$, and 
+3. **Main Idea**: Linear homotopy fails continuity without the condition from (2), so use complex embedding to avoid the origin at $t=1/2$.
 
-   $F(x, 1) = (p^{-1} \circ H)(x,1) = (p^{-1}\circ g_c)(x) = p^{-1}(c) = c'$ 
+   Suppose $n$ is odd and define $f:S^n \to S^n$ to be the antipodal map. Since $n+1$ is even, we have $n+1 =2m$ for some $m\in \NN$, so identify $S^n = S^{2m-1} \subset \RR^{2m} \cong\CC^m$
 
-   for some $c' \in S^n$, so define $g':X \into S^n$ by $g'(x) = c'$. 
+   Then $z\in S^n$ can be written as a vector $z \in \CC^m$ such that $\norm{z} = 1$.
 
-   Then $g'$ is a constant map, and $F$ is a homotopy between $g'$ and $f$, so $f \homotopic g'$ as desired. $\qed$
+   Then define $P: \CC^m \to \CC^m$ by $P(z) = z/\abs{z}$, the projection onto the complex unit sphere, and define $H: \CC^m \cross I \to \CC^m$ by $H(z, t) = P(e^{i\pi t}z)$.
 
-2. **Main Idea**: Use linear homotopy in ambient $\RR^{n+1}$ and normalize/project onto $S^n$.
-   Let $f,g: X \into S^n$ such that $\forall x, f(x) \neq -g(x)$. Since $S^n \subset \RR^{n+1}$, both $f,g$ extend to maps $X \into \RR^{n+1}$.
-   ​
-   So define a map $H: X\cross I \into \RR^{n+1}$ by $H(x,t) = tf(x) + (1-t)g(x)$. Then $H$ is a linear homotopy, since $\RR^{n+1}$ is convex. 
-   Then $\tilde{H}: X\cross I \into S^n$ by $\tilde{H}(x,t) = \frac{H(x,t)}{\norm{H(x,t)}}$ is a candidate homotopy between $f$ and $g$, provided it is continuous and well-defined. 
+   This is a homotopy, since $H(z, 0) = P(z) = z$ (since $\norm{z} = 1$), so this is the identity map. We also have $H(z, 1) = P(-z) = -z$, the antipodal map.
 
-   1. Continuity follows since $H$ is an affine combination of continuous functions (and thus itself continuous), the spherical projection $p: \RR^{n+1} \into S^{n}$ given by $p(x) = \frac{x}{\norm{x}}$ is continuous, and $\tilde{H} = p \circ H$ is a composition of continuous functions.
-
-   2. This is well-defined, since $\norm{H(x,t)}$ is never zero. Why? If it were, we would then have$\norm{tf(x) + (1-t)g(x)} = \norm{t} + \norm{1-t} = 0$, since $\norm{f(x)} = \norm{g(x)} = 1 ~\forall x\in X$. 
-
-      This implies that $\norm{t} = \norm{t-1}$, which is only satisfied when $t = \frac{1}{2}$. 
-
-      But since a vector's norm is zero iff the vector itself is zero, this would force $tf(x) + (1-t)g(x) = 0$ as well, and so $\frac{1}{2}f(x) + \frac{1}{2}g(x) = 0$, implying that $f(x) = -g(x)$, contradicting the initial assumptions on $f$ and $g$. $\qed$
-
-3. **Main Idea**: Embed in $\CC$, use complex rotation. (Homotopy from 2 fails continuity)
-   ​
-   Let $n$ be odd, so $n = 2m+1$ for some $m \geq 0 \in \NN$, and consider $S^n = S^{2m+1}\subset \RR^{2m+2} \cong \CC^m$, so that $\bar{z}\in S^n$ can be written as $\bar{z} = \thevector{z_1, z_2, \cdots , z_m}, z_i \in \CC,$ with $\norm{\bar{z}} = 1$. 
-   Note that if we proceed as in the previous problem to construct the linear homotopy $H: \RR^{2m+2}\cross I \into \RR^{2m+2}$ given by $H(\bar{x}, t) = t\bar{x} + (1-t)(-\bar{x}) = (2t-1)\bar{x}$, we find that $H(x, \frac{1}{2}) = 0$ and so $\tilde{H} = \frac{H}{\norm{H}}$ will fail to be continuous at $t=\frac{1}{2}$.
-   Instead, define $H: \CC^m \cross I \into \CC^m$ by $H(\bar{z}, t) = e^{i\pi t}\bar{z}$. Then, if $\bar{z} \in S^n$, we have $\norm{\bar{z}} = 1$ and since $\norm{e^{i\pi t}} = 1$, we obtain a homotopy on $S^n$ given be the restriction of $H$,  $\restrictionof{H}{S^{2m+1}}: S^{2m+1} \cross I \into S^{2m+1}$.
-   We then have $H(\bar{z}, 0) = e^{0}\bar{z} = \bar{z}$, the identity function, and
-   $H(\bar{z}, 1) = e^{i \pi}\bar{z} = -\bar{z}$ the antipodal function. Thus these two maps are homotopic, as desired. $\qed$
+   This is well-defined, since $e^{i\pi t} > 0$ and $z \neq 0$, so the linear homotopy in ambient $\CC^m$ avoids the origin and thus the denominator when taking the projection is never zero.
 
 4. $\Leftarrow$: **Main Idea**: Projection and inclusion are homotopy inverses. One composition is equality, the other is just equality *up to homotopy*, but that's all we need!
 
-   Suppose $\id_X$ is nullhomotopic. Then there exists some constant map $g_c: X \into \theset{c}$ for some $c\in X$ (that is. $\forall x, g_c(x) = c$ ), and $\id_X \homotopic g_c$. 
-   Thus there is a homotopy $F: X \cross I \into X$ such that $F(x,0) = \id_X(x) = x$ and $F(x,1) = g_c(x) = c$ for all $x \in X$.
+   Suppose $\id_X$ is nullhomotopic. 
 
-   Then there is exactly one map $\pi: X \to \theset{c}$, (projection onto $c$) which is given by $\pi(x) = c$. 
+   Then there exists some constant map $g: X \into \theset{x_0}$ for some $x_0 \in X$ where $g(x) = x_0$ and $g \homotopic \id_X$.
 
-   Then, since $c\in X$, let $\iota_c: \theset{c} \into X$ be the inclusion of $\theset{c}$ into $X$, so that $\iota_c(c) = c$.
+   This means there is some homotopy $F: X \cross I \into X$ such that $F(x,0) = \id_X(x) = x$ and $F(x,1) = g(x) = x_0$ for all $x \in X$.
 
-   Then consider the map $(\pi\circ \iota_c): \theset{c} \into \theset{c}$. It need only be defined for $c$, so we compute $(\pi\compose\iota_c)(c) = \pi(c) = c$, so $(\pi\compose\iota_c) = \id_C$.
+   So let $p:X \into \theset{x_0}$ be the projection map sending every point to $x_0$, and $\iota: \theset{x_0} \into X$ be the inclusion. We will show that the two compositions are homotopy inverses, from which it follows that $X \homotopic \theset{x_0}$.  This means that $X$ is homotopy-equivalent to a point, and thus by definition contractible.
 
-   Similarly, consider $(\iota_c \compose \pi): X \into X$. We compute $(\iota_c \compose \pi)(x) = \iota_c(c) = c$, so $\iota_c\circ \pi$ is the constant map $g_c:X \to \theset{c},  x \mapsto c$ for all $x\in X$. By assumption, $g_c \homotopic \id_X$, and so $\iota_c\circ \pi \homotopic \id_X$. Thus $\pi$ and $\iota$ are homotopy inverses, and we have $X \homotopic \theset{c}$, meaning $X$ is contractible.
+   Then $(p\circ \iota): \theset{x_0} \to \theset{x_0}$ is given by $p(\iota(x_0)) = p(x_0) = x_0$, so this is the identity on the target space $\theset{x_0}$.
 
-   $\Rightarrow$: **Main Idea**: Post-composing with a constant function is still constant, so just build a constant map out of the supplied homotopy inverses (since you already get something homotopic to the identity from this!)
+   Similarly, $(\iota \circ p): X \to X$ is given by $\iota(p(x)) = \iota(x_0) = x_0$, so this is the constant map on $X$ mapping every point from $X$ to $x_0$. But then this map is exactly $g$, and by assumption this is homotopic to the identity on $X$
 
-   Suppose $X \homotopic \theset{x_0}$, then there exist a pair of homotopy inverses $f: X \into \theset{x_0}$ and $g: \theset{x_0} \into X$ such that $f\compose g \homotopic \id_{\theset{x_0}}$ and $g\compose f \homotopic \id_X$.
+   But then we have $p\circ \iota \homotopic \id_{\theset{x_0}}$ and $\iota \circ p \homotopic \id_X$, so they are homotopy inverses.
 
-   Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = x_0$ for every $x\in X$.) 
+   $\Rightarrow$: **Main Idea**: One of the homotopy inverses *is* just a constant map.
 
-   Then for any $x\in X, (g\circ f)(x) = g(f(x)) = g(x_0) = x_1$ for some fixed $x_1 \in X$, so we can define a constant map $\pi \definedas (g\circ f): X \to X$ given by $x\mapsto x_1$, making this a constant map on $X$. 
+   Suppose $X \homotopic \theset{x_0}$, then there exist a pair of homotopy inverses 
 
-   But by assumption, we have $\pi = g\circ f \homotopic \id_X$, which shows that the identity is homotopic to a constant map - namely, the one that maps every point to $g(x_0)$, where $g:\theset{x_0} \to X$ is whatever is supplied by the homotopy equivalence. $\qed$
+   $f: X \into \theset{x_0}$ and $g: \theset{x_0} \into X$ 
+   such that 
+   $f\compose g \homotopic \id_{\theset{x_0}}$ and $g\compose f \homotopic \id_X$.
 
-5. **Main Idea**: Deformation retract $M$ onto its center circle
+   Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = x_0$ for every $x\in X$.)  But then $(g\circ f)(x) = g(x_0) = y_0$ for some constant $y_0 \in X$, so $g\circ f$ is a constant map. By assumption, $g\circ f \homotopic \id_X$, so the identity is homotopic to a constant map.
+
+5. **Main Idea**: Deformation retract $M$ onto its center circle; two spaces that deformation retract onto a common space are themselves homotopy equivalent.
+
    Claim: $S^1 \cross I \homotopic S^1 \cross \theset{*}$
-   This is because $I$ is contractible, so $I \homotopic \theset{*}$.
+   This is because $I$ is contractible, so $I \homotopic \theset{*}$. (Maybe needs further proof)
 
-   Claim: $M \homotopic S^1 \cross \theset{*}$
-   Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$. Then consider the subspace $U = \theset{(1/2, y) \mid y \in [0,1]} \subset M$. Then $U$ can be written $\theset{1/2} \cross (I/\sim)$, and since $(1/2, 0) \sim (1/2,1)$, we have $I/ \sim =  I /\boundary I \cong S^1$, so $U \cong \theset{1/2}\cross S^1$ as desired.
-   (taking $* = \frac{1}{2}$).
+   Claim: $M \homotopic S^1 \cross \theset{*}$.
+   ​
 
-   However, we can define a homotopy from $M$ onto $U$, in the form of a deformation retract. Let $F: M \cross I \into M$ be defined by $F((x,y), t) = ((1-t)x + \frac{1}{2}t, y)$. Then $F((x,y), 0) = (x,y) = \id_M$, and $F((x,y), 1) = (\frac{1}{2}, y) \subseteq U$. Moreover, if $(x,y) \in U$, then $(x,y) = (\frac{1}{2}, y)$ and $F((x,y), t) = ((1-t)\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2} - t\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2}, y) = (x,y)$, so $F = \id_U$. This makes $F$ a deformation retract from $M$ onto $U$, and so $M \homotopic U$. 
+   If both of these claims hold, then we will have $M \homotopic S^1 \cross I$ as two spaces that deformation retract onto a common space.
+   Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$. 
+
+   Then consider the subspace $U = \theset{(1/2, y) \mid y \in [0,1]} \subset M$. Claim: $U \cong \theset{*} \cross S^1$ for some point $*$.
+
+   ![Ink DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk Drawings](file:///C:/Users/Zack/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
+
+   ​
+
+   $U$ can be written $\theset{1/2} \cross (I/\sim)$, and since $(1/2, 0) \sim (1/2,1)$, we have $I/ \sim =  I /\boundary I \cong S^1$, so $U \cong \theset{1/2}\cross S^1$ as desired (taking $* = \frac{1}{2}$).
+
+   However, we can define a homotopy from $M$ onto $U$, in the form of a deformation retract. 
+
+   Let $F: M \cross I \into M$ be defined by $F((x,y), t) = ((1-t)x + \frac{1}{2}t, y)$. Then $F((x,y), 0) = (x,y) = \id_M$, and $F((x,y), 1) = (\frac{1}{2}, y) \subseteq U$. Moreover, if $(x,y) \in U$, then $(x,y) = (\frac{1}{2}, y)$ and $F((x,y), t) = ((1-t)\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2} - t\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2}, y) = (x,y)$, so $F = \id_U$. This makes $F$ a deformation retract from $M$ onto $U$, and so $M \homotopic U$. 
 
    But then, summarizing our results, we have $S^1 \cross I \homotopic S^1 \cross \theset{*} \cong S^1 \cross \theset{\frac{1}{2}} = U \homotopic M$, and so $S^1 \cross I \homotopic M$ as desired.
 
@@ -326,3 +329,52 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
 # Group Actions
 
 1. ​
+
+# Covering Spaces
+
+1. Any covering map $p: S^1\cross S^1 \into \RP^2$ would induce an injection on fundamental groups, but $\pi_1(T) = \ZZ^2$ and $\pi_1(\ZZ_2)$ - but there are no homomorphisms between these groups. Why? One of them has an element of order 2, the other does not.
+
+2. Theorem: if $M_g \surjective M_h$ is an $n-$sheeted covering space, then $g = n(h-1) +1$.
+
+   ![Ink DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk Drawings](file:///C:/Users/Zack/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
+
+3. Draw CW square for $T$ and cut down the center to see two copies of $K$.
+
+4. Let $p: \tilde G \surjective G$ be such a covering, $a,b\in \tilde G$, we then want to show that $p(a)p(b) = p(a\star b)$ for some group operation $\star$ which we need to construct.
+   ​
+
+   Pick a basepoint $x\in G$ and any point $\tilde x \in p^{-1}(x)$. Since $\tilde G$ is path connected, pick two paths $\alpha, \beta$ from $\tilde x$ to $a,b$ respectively.
+
+   Now define a path $f: I \into G$ by $f(t) = (p\circ \alpha)(t) \cdot (p\circ \beta)(t)$, that is, evaluating $f, g$ at a given time in $\tilde G$, projecting the results down into $G$, and multiplying them there. By uniqueness of path lifting, this yields a lift $\tilde f: I \into \tilde G$
+
+   Then define $a\star b = \tilde f(1)$, the endpoint of $\tilde f$ in $\tilde G$. Then by construction, 
+
+   $p(a\star b) = p(\tilde f(1)) = f(1) = (p\circ\alpha)(1)\cdot (p\circ\beta)(1) = p(a)p(b)$.
+   (Need to show this is continuous, and doesn't depend on $\alpha,\beta$?)
+
+5. Since $T^n = \prod_nS^1$, we have $\pi_1(T^n) = \prod_n \pi_1(S^1) = \ZZ^n$. We can also construct a cover $p:\RR^n \into T^n$ by just taking $\RR \surjective S^1$ the usual cover in each coordinate, yielding the covering space $\tilde X = \RR^n$ over $X = T^n$. 
+
+   By Hatcher (prop 4.1), the induced maps $p_*^i: \pi_i(\tilde X) \into \pi_i(X)$ is an isomorphism for $i \geq 2$. But $\pi_i(\RR^n) = 0$ for $i \neq 0$, so by this isomorphism $\pi_i(T^n) = i \geq 2$.
+
+6. General construction: construct a tree $T$ by picking a basepoint in $G$ and adding a vertex for every non-backtracking walk in $G$.
+
+   In this case, it's the infinite 3-valent graph (also called the infinite $k-$regular tree)
+
+   This is the universal cover, because $T$ is connected and acyclic (i.e. a tree). This means that $\pi_1(T) = 0$, so $T$ is simply connected. Since universal covers are simply connected and unique up to isomorphism, this is it.
+
+7. Generators of the subgroups:
+
+   1. $\left< ab^{-1}, aba^{-2}, a^3b^{-1}a^{-2}, a^3\right>$
+   2. $\left< b, aba^{-1}, a^2ba^{-2},a^3\right>$
+   3. $\left<b^2, ba, a^3, aba^{-1}\right>$
+   4. $\left<b\right>$
+   5. $\left<ba, b^{-1}a\right>$
+
+   Relevant covers:
+
+   1. ![1512964258737](1512964258737.png)
+   2. ![1512964650272](1512964650272.png)
+   3. asdsa
+   4. asdsa
+   5. asdas
+
