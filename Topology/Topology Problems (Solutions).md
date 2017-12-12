@@ -165,7 +165,7 @@ typora-copy-images-to:  .
       These all have no single point that can be removed to disconnect the space.
 
   10. $\theset{B,S^1 \vee S^1}$
-   Remove point at junction
+    Remove point at junction
 
   11. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
        These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
@@ -374,7 +374,73 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
 
    1. ![1512964258737](1512964258737.png)
    2. ![1512964650272](1512964650272.png)
-   3. asdsa
-   4. asdsa
-   5. asdas
+   3. ![1512965253808](1512965253808.png)
+   4. ![1512965792844](1512965792844.png)
+   5. Let $T$ be a copy of the Cayley Tree on two on the two generators $a, b$, then:
+      ![1512966232873](1512966232873.png)
 
+8. This is just the Cayley graph over $\ZZ \cross \ZZ$, or essentially the integer lattice:![1512966445331](1512966445331.png)
+
+9. It's helpful to note that $\left< (1,0), (0, p) \right> \subset \left< (1,0), (0,1) \right> \cong \ZZ \cross \ZZ \subset \RR \cross \RR$ is an index $p$ subgroup.
+
+
+
+
+## Simplicial Homology
+
+1. asdas
+
+   1. Figure 8
+      ![1513072050945](1513072050945.png)
+      Here we have:
+      $C_3 = \emptyset$
+      $C_1 = [12], [23], [13], [34], [35], [45] \cong \ZZ^6$
+      $C_0 = [1], [2], [3],[4], [5] \cong \ZZ^5$
+
+      So we have $C_2 \into C_1 \into C_0 \cong 0\xrightarrow{\del_2} \ZZ^6 \xrightarrow{\del_1} \ZZ^5\xrightarrow{{\del_0}} 0$
+
+      Computing boundary operators, we have
+
+      $\del_1([12]) = [2] - [1]$
+      $\del_1([23]) = [3] - [2]$
+      $\del_1([13]) = [3] - [1]$
+      $\del_1([34]) = [4] - [3]$
+      $\del_1([35]) = [5] - [3]$
+      $\del_1([45]) = [5] - [4]$
+
+      $\del_0 = 0$
+
+      And so
+      $H_0 = \ker \del_0/\image\del_1 = \frac{C_0}{<\del_1([ij])>}$, but from the above calculation we have $[5] = [4] = [3] = [2] = [1]$ in the quotient, so there is just one generator and $H_0  \cong \ZZ$.
+
+      Note that $\del_2$ is an injection from 0 into $C_1$, since there are no 2-simplices. Moreover, one can generate two 1-cycles, so we have $H_1 = \frac{\ker \del_1}{\image \del_2} =\frac{<[23]-[31] + [12],~[45] - [35] + [34]>}{0} \cong \ZZ^2$.
+
+      One way to see that these are the generators is to pretend there are two 2-simplices, $[123], [345]$ and compute $\del_2$ of both of them. Since $\del_1\del_2 = 0$, anything in the image of $\del_2$ would have to go to zero anyways, and would thus be in the kernel of $\del_1$. Since it's not actually the boundary of any 2-chain, it doesn't become trivial in homology.
+
+      So we have $H_2 \into H_1 \into H_0 = 0 \into \ZZ^2 \into \ZZ$.
+
+   2. $S^2$
+      ![1513072379449](1513072379449.png)
+      So we have
+      $C_0 = 1,2,3,4,5,6$
+      $C_1 = 12,14,15,16,23,25,26,34,35,36,45,46$
+      $C_2 = 126, 236, 346, 146, 125, 235, 345, 145$
+
+      $C_3 = \emptyset$
+
+      And $0 \xrightarrow{\del_3} C_2 \xrightarrow{\del_2} C_1 \xrightarrow{\del_1} C_0 \xrightarrow{\del_0} 0 \cong 0 \xrightarrow{\del_3} \ZZ^{8} \xrightarrow{\del_2} \ZZ^{12} \xrightarrow{\del_1} \ZZ^{6} \xrightarrow{\del_0} 0$
+      We have $\del_1([ij]) = j-i$ and $\del_2([ijk]) = jk -ik +ij$.
+
+      We know in advance we should have $\prod H_n = (\cdots,0, \ZZ, 0, \ZZ)$.
+      ​
+      For $H_0 = \frac{\ker \del_0}{\image \del_1} = \frac{C_0}{\left<\theset{j-i \mid i < j}\right>}$. In the quotient, we see $1=6=3=2=5=4$ by just taking the indicated walk on the graph, so there is one generator in the quotient and $H_0 \cong \ZZ$.
+
+      For $H_1 = \frac{\ker \del_1}{\image \del_2}$, we just note that there are 6 2-cycles, so each are in the kernel of $\del_1$, but each of them comes from a 2-cell, so is in the image of $\del_2$. So both groups in question are $\ZZ^8$, and the quotient is zero.
+      For $H_3 = \frac{\ker\del_2}{\image\del_3}$, since $\image\del_3 = 0$, we can just look at $\del_3([123456]) = 23456 - 13456 + 12456 - 12356 +12346 - 12345$. This is an element (and the only one) that goes to zero under $\del_2$, it generates $\ker\del_2$. So there is one generator, and $H_3 =\ZZ$.
+
+   3. $\RP^2$
+      ​
+
+   4. $S^2 \union_f D^2$, where $f$ attaches to the equator
+
+   5. $T\union_f D^2$, where $f$ attaches inside the torus
