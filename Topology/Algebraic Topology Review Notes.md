@@ -259,3 +259,10 @@ This fails, for example, the simplex $[1,2,1]$ does not uniquely determine a tri
 You can always triangulate a space by triangulating something homeomorphic, so for common spaces you can work with these fundamental domains:
 
 ![1513064067523](1513064067523.png)
+
+## Mayer-Vietoris
+
+There is a long exact sequence
+
+$$ a $$
+
