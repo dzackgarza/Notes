@@ -284,8 +284,10 @@ The connecting homomorphism $\delta:H^n(X) \to H^{n-1}(X)$ is defined by taking 
 
 ### Useful Properties of Exact Sequences
 
-1. $0 \to A \too{\del}$
-
+1. $0 \to A \xrightarrow{\del} B \to 0$ iff $\del:A \to B$ is an isomorphism.
+2. $0 \to A \xrightarrow{\del} B$ iff $\del$ is an injection.
+3. $A \xrightarrow{\del} B \to 0$ iff $\del$ is a surjection.
+4. $0 \to A \xrightarrow{f} B \xrightarrow{g} C \to 0$ iff $\ker g = \im f$ and $C \cong B/\im f$
 
 
 ### Example: $H^i(S^n) \cong H^{i-1}(S^{n-1})$.
@@ -296,6 +298,6 @@ $H^{i+1}(S^n) \xrightarrow{} H^i(S^{n-1}) \xrightarrow{} H^iA \oplus H^i B \xrig
 
 But $A, B$ are contractible, so $H^iA= H^iB = 0$, so we have
 
-$H^{i+1}(S^n) \xrightarrow{} H^{i}(S^{n-1}) \xrightarrow{} 0 \xrightarrow{}H^i(S^n) \xrightarrow{} H^{i-1}(S^{n-1}) \xrightarrow{} 0$
+$H^{i+1}(S^n) \xrightarrow{} H^{i}(S^{n-1}) \xrightarrow{} 0 \oplus 0 \xrightarrow{}H^i(S^n) \xrightarrow{} H^{i-1}(S^{n-1}) \xrightarrow{} 0$
 
-And in particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence, which is always an isomorphism.
+And in particular, we have the shape $0 \to A \to B \to 0​$ in an exact sequence, which is always an isomorphism.
