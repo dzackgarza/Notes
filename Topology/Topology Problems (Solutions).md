@@ -72,17 +72,17 @@ typora-copy-images-to:  .
    If both of these claims hold, then we will have $M \homotopic S^1 \cross I$ as two spaces that deformation retract onto a common space.
    Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$. 
 
-   Then consider the subspace $U = \theset{(1/2, y) \mid y \in [0,1]} \subset M$. Claim: $U \cong \theset{*} \cross S^1$ for some point $*$.​
+   Then consider the subspace $U = \theset{(1/2, y) \mid y \in [0,1]} \subset M$. Claim: $U \cong \theset{*} \cross S^1$ for some point $*$.
 
    $U$ can be written $\theset{1/2} \cross (I/\sim)$, and since $(1/2, 0) \sim (1/2,1)$, we have $I/ \sim =  I /\boundary I \cong S^1$, so $U \cong \theset{1/2}\cross S^1$ as desired (taking $* = \frac{1}{2}$).
 
    However, we can define a homotopy from $M$ onto $U$, in the form of a deformation retract. 
 
-   Let $F: M \cross I \into M$ be defined by $F((x,y), t) = ((1-t)x + \frac{1}{2}t, y)$. Then $F((x,y), 0) = (x,y) = \id_M$, and $F((x,y), 1) = (\frac{1}{2}, y) \subseteq U$. Moreover, if $(x,y) \in U$, then $(x,y) = (\frac{1}{2}, y)$ and $F((x,y), t) = ((1-t)\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2} - t\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2}, y) = (x,y)$, so $F = \id_U$. This makes $F$ a deformation retract from $M$ onto $U$, and so $M \homotopic U$. 
+   Let $F: M \cross I \into M$ be defined by $F((x,y), t) = F_t(x,y) = ((1-t)x + \frac{1}{2}t, y)$. Then $F((x,y), 0) = (x,y) = \id_M$, and $F((x,y), 1) = (\frac{1}{2}, y) \subseteq U$. Moreover, if $(x,y) \in U$, then $(x,y) = (\frac{1}{2}, y)$ and $F((x,y), t) = ((1-t)\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2} - t\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2}, y) = (x,y)$, so $F = \id_U$. This makes $F$ a deformation retract from $M$ onto $U$, and so $M \homotopic U$. 
 
    But then, summarizing our results, we have $S^1 \cross I \homotopic S^1 \cross \theset{*} \cong S^1 \cross \theset{\frac{1}{2}} = U \homotopic M$, and so $S^1 \cross I \homotopic M$ as desired.
 
-6. **Main Idea**: Using a funky deformation retract. See Hatcher, PDF page 55, Example 1.23.
+6. **Main Idea**: Using a funky deformation retract. See Hatcher, PDF page 55, Example 1.23. Add picture!!
 
    Deformation retract $\\R^3 - S^1$ onto $S^2 - U$, where $U$ is a diameter inside $S^2$ also passing through the middle of $S^1$ in the interior. This can be done by moving points outside of $S^2$ towards the surface, and points inside $S^2$ just move away from the $S^1$ inside (either towards $U$ or towards the surface of $S^2$, so they don't hit $S^1$).
 
@@ -154,61 +154,61 @@ typora-copy-images-to:  .
 
    Homeomorphisms: ignore ligatures!!
 
-  8. $\theset{A, R}$
-      Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
+     1. $\theset{A, R}$
+         Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
 
-  9. $\theset{D, O, S^1}$
-      These all have no single point that can be removed to disconnect the space.
+     2. $\theset{D, O, S^1}$
+         These all have no single point that can be removed to disconnect the space.
 
-  10. $\theset{B,S^1 \vee S^1}$
-   Remove point at junction
+     3. $\theset{B,S^1 \vee S^1}$
+      Remove point at junction
 
-  11. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
-       These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
+     4. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
+         These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
 
-  12. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
-       These all have a point that can be removed to yield 3 connected components homeomorphic to $I$. This is the "pasting" point in the vee.
+     5. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
+         These all have a point that can be removed to yield 3 connected components homeomorphic to $I$. This is the "pasting" point in the vee.
 
-  13. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
-       Can remove **two** points to disconnect each into **five** components.
+     6. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
+         Can remove **two** points to disconnect each into **five** components.
 
-  14. $\theset{P, Q, S^1 \vee [0,1]}$
-       Both contain a nontrivial loop.
+     7. $\theset{P, Q, S^1 \vee [0,1]}$
+         Both contain a nontrivial loop.
 
-  15. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
-       Can remove **one** point to separate into **four** components.
+     8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
+         Can remove **one** point to separate into **four** components.
 
-16. **Main Idea**: Show that both spaces are a deformation retract of the same space. (See Hatcher, Proposition 0.18, p. 25)
+8. **Main Idea**: Show that both spaces are a deformation retract of the same space. (See Hatcher, Proposition 0.18, p. 25)
 
-    Suppose we have the following maps
+   Suppose we have the following maps
 
-    $f: S^1 \into X$
+   $f: S^1 \into X$
 
-    $g: S^1 \into X$
+   $g: S^1 \into X​$
 
-    where $f \homotopic g$. Then there exists a homotopy
+   where $f \homotopic g$. Then there exists a homotopy
 
-    $H: S^1 \cross I \into X$
+   $H: S^1 \cross I \into X$
 
-    such that $H(z, 0) = f(z)$ and $H(z,1) = g(z)$.
+   such that $H(z, 0) = f(z)$ and $H(z,1) = g(z)$.
 
-    Then define 
-    $P \definedas X \coprod_f B^2$ and
+   Then define 
+   $P \definedas X \coprod_f B^2$ and
 
-    $Q \definedas X \coprod_g B^2$
+   $Q \definedas X \coprod_g B^2$
 
-    We want to that $P$ and $Q$ are homotopy-equivalent. In order to do so, we will construct a larger space which deformation retracts onto both $P$ and $Q$, which is a homotopy equivalence.
+   We want to that $P$ and $Q$ are homotopy-equivalent. In order to do so, we will construct a larger space which deformation retracts onto both $P$ and $Q$, which is a homotopy equivalence.
 
-    With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \boundary B^2$. In particular, $S^1$ is a subspace of $B^2$.
+   With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \boundary B^2$. In particular, $S^1$ is a subspace of $B^2$.
 
-    Claim: Both $P$ and $Q$ are subspaces of $R$.
-    Since $H(z, 0) = f(z)$. So considering $X \coprod_H B^2 \times \theset{0} \cong X \coprod_f B^2 = P$. A similar argument holds at the point $1\in I$. (*Not a strong argument*)
+   Claim: Both $P​$ and $Q​$ are subspaces of $R​$.
+   Since $H(z, 0) = f(z)$. So considering $X \coprod_H B^2 \times \theset{0} \cong X \coprod_f B^2 = P$. A similar argument holds at the point $1\in I$. (*Not a strong argument*)
 
-    But note that $B^2 \cross I$ is a solid cylinder, and so can be deformation retracted onto the outer shell plus one of the "lids". Formally, this would be given by $S^1 \times I \cup B^2 \cross \theset{p}$ for some $p\in [0,1]. 
+   But note that $B^2 \cross I$ is a solid cylinder, and so can be deformation retracted onto the outer shell plus one of the "lids". Formally, this would be given by $S^1 \times I \cup B^2 \cross \theset{p}$ for some $p\in [0,1]. 
 
-    Claim: choosing $p=0$ induces a deformation retract of $R$ onto $P$, and choosing $p=1$ induces a deformation retract of $R$ onto $Q$.
+   Claim: choosing $p=0$ induces a deformation retract of $R$ onto $P$, and choosing $p=1$ induces a deformation retract of $R$ onto $Q$.
 
-    Proof: ?
+   Proof: ?
 
 
 
