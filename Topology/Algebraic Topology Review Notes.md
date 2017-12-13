@@ -284,7 +284,7 @@ The connecting homomorphism $\delta:H^n(X) \to H^{n-1}(X)$ is defined by taking 
 
 ### Useful Properties of Exact Sequences
 
-1.
+1. $0 \to A \too{\del}$
 
 
 
