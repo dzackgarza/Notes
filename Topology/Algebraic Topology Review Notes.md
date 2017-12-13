@@ -279,3 +279,23 @@ $r: B \hookrightarrow X$
 And the stars denote the induced maps on homology.
 
 The connecting homomorphism $\delta:H^n(X) \to H^{n-1}(X)$ is defined by taking a class $[\alpha] \in H^n(X)$, writing it as an $n$-cycle $z$, then decomposing $z = \sum c_i$ where each $c_i$ is an $x+y$ chain. Then $\del(c_i) = \del(x+y) = 0$, since the boundary of a cycle is zero, so $\del(x) = -\del(y)$. So then just define $\delta([\alpha]) = [\del x] = [-\del y]$.
+
+
+
+### Useful Properties of Exact Sequences
+
+1.
+
+
+
+### Example: $H^i(S^n) \cong H^{i-1}(S^{n-1})$.
+
+Write $X = A \cup B$, the northern and southern hemispheres, so that $A \cap B = S^{n-1}$, the equator. In the LES, we have:
+
+$H^{i+1}(S^n) \xrightarrow{} H^i(S^{n-1}) \xrightarrow{} H^iA \oplus H^i B \xrightarrow{} H^i S^n \xrightarrow{} H^{i-1}(S^{n-1}) \xrightarrow{} H^{i-1}A \oplus H^{i-1}B$
+
+But $A, B$ are contractible, so $H^iA= H^iB = 0$, so we have
+
+$H^{i+1}(S^n) \xrightarrow{} H^{i}(S^{n-1}) \xrightarrow{} 0 \xrightarrow{}H^i(S^n) \xrightarrow{} H^{i-1}(S^{n-1}) \xrightarrow{} 0$
+
+And in particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence, which is always an isomorphism.
