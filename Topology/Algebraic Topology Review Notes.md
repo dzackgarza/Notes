@@ -30,7 +30,7 @@ Note that constant maps (or anything homotopic) induce zero homomorphisms.
 
 # Theorem: Any two continuous functions into a convex set are homotopic.
 
-Proof: Supposing $X$ is convex, for any two points $x,y\in X$, the line $tx + (1-t)y$ is contained in $X$ for every $t\in[0,1]$. 
+Proof: The linear homotopy. Supposing $X$ is convex, for any two points $x,y\in X$, the line $tx + (1-t)y$ is contained in $X$ for every $t\in[0,1]$. 
 So let $f, g: Z \into X$ be any continuous functions into $X$. Then define $H: Z \cross I \into X$ by $H(z,t) = tf(z) + (1-t)g(z)$, the linear homotopy between $f,g$. By convexity, the image is contained in $X$ for every $t,z$, so this is a homotopy between $f,g$.
 
 ## Definition: Homotopy Equivalence
@@ -217,15 +217,14 @@ Claim: If $X = U \cup V$, then $\pi_1(X) = \pi_1(U) \ast \pi_1(V)$.
 
 # Definition: The Degree of  Map $S^n \into S^n$
 
-Given any $f: S^n \into S^n$, there are induced maps on homotopy and homology groups. Taking $f^*: H_n(S^n) \into H^n(S^n)$ and identifying $H^n(S^n) \cong \ZZ$, we have $f^*: \ZZ \into \ZZ$. But homomorphisms of this type are entirely determined by their action on generators. So if $f^*(1) = n$, define $n$ to be the degree of $f$.
+Given any $f: S^n \into S^n$, there are induced maps on homotopy and homology groups. Taking $f^*: H^n(S^n) \into H^n(S^n)$ and identifying $H^n(S^n) \cong \ZZ$, we have $f^*: \ZZ \into \ZZ$. But homomorphisms of this type are entirely determined by their action on generators. So if $f^*(1) = n$, define $n$ to be the degree of $f$.
 
 Properties and examples:
 
 - $\text{deg}~\id_{S^n} = 1$
 - $\text{deg} (f\circ g) = \text{deg}~f \cdot \text{deg}~g$
 - $\text{deg}~r = -1$ where $r$ is any rotation about a hyperplane, i.e. $r(\thevector{x_1 \cdots x_i \cdots x_n}) = \thevector{x_1 \cdots -x_i \cdots x_n}$.
-- The antipodal map on $S^n\subset \RR^{n+1}$ is the composition of $n+1$ reflections, so $\text{deg}~\alpha = (-1)^{n+1}$.
-- ​
+- The antipodal map on $S^n\subset \RR^{n+1}$ is the composition of $n+1$ reflections, so $\text{deg}~\alpha = (-1)^{n+1}$.​
 
 # Definition: Simplicial Complex
 
