@@ -154,28 +154,28 @@ typora-copy-images-to:  .
 
    Homeomorphisms: ignore ligatures!!
 
-     1. $\theset{A, R}$
+       1. $\theset{A, R}$
          Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
 
-     2. $\theset{D, O, S^1}$
+       2. $\theset{D, O, S^1}$
          These all have no single point that can be removed to disconnect the space.
 
-     3. $\theset{B,S^1 \vee S^1}$
-      Remove point at junction
+       3. $\theset{B,S^1 \vee S^1}$
+          Remove point at junction
 
-     4. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
+       4. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
          These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
 
-     5. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
+       5. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
          These all have a point that can be removed to yield 3 connected components homeomorphic to $I$. This is the "pasting" point in the vee.
 
-     6. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
+       6. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
          Can remove **two** points to disconnect each into **five** components.
 
-     7. $\theset{P, Q, S^1 \vee [0,1]}$
+       7. $\theset{P, Q, S^1 \vee [0,1]}$
          Both contain a nontrivial loop.
 
-     8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
+       8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
          Can remove **one** point to separate into **four** components.
 
 8. **Main Idea**: Show that both spaces are a deformation retract of the same space. (See Hatcher, Proposition 0.18, p. 25)
@@ -234,7 +234,7 @@ typora-copy-images-to:  .
 
    So let $H:S^1 \cross I \into X$ be this homotopy. We know that $H(z, 0) = f(z)$ and $H(z, 1) = c_{x_0}(z) = x_0$.
 
-   Claim: Consider quotient $\frac{S^1\cross I}{S^1 \cross \theset{1}}$ with the projection map $p: S^1 \cross I \into S^1 \cross \theset{1}$. Then $H$ factors through the quotient uniquely, and there exists a unique $\hat H$ making this diagram commute:
+   Claim: Consider quotient $\frac{S^1\cross I}{S^1 \cross \theset{1}}$ with the projection map $p: S^1 \cross I \into S^1 \cross \theset{1}$. Then $H$ factors through the quotient uniquely (why?), and there exists a unique $\hat H$ making this diagram commute:
 
    ![universal1](C:\Users\Zack\SparkleShare\Notes\Topology\universal1.png)
 
