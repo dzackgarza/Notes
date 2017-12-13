@@ -262,7 +262,21 @@ You can always triangulate a space by triangulating something homeomorphic, so f
 
 ## Mayer-Vietoris
 
-There is a long exact sequence
+Given $A,B \subset X$ such that $A^\circ \cup B^\circ = X$, there is a long exact sequence in homology:
 
-$$ a $$
+$$ \cdots H^{n+1}(X) \xrightarrow{\delta} H^n(A \cap B) \xrightarrow{(i^*,~ j^*)} H^n(A) \oplus H^n(B) \xrightarrow{l^* - r^*}   H^n(X) \xrightarrow{\delta} H^{n-1}(A\cap B)\cdots$$
+
+Where
+
+$i: A\cap B \hookrightarrow A$
+
+$j: A\cap B \hookrightarrow B$
+
+$l: A \hookrightarrow X$
+
+$r: B \hookrightarrow X$
+
+And the stars denote the induced maps on homology.
+
+The connecting homomorphism $\delta:H^n(X) \to H^{n-1}(X)$ is defined by taking a class $[\alpha] \in H^n(X)$, writing it as an $n$-cycle $z$, then decomposing $z = \sum c_i$ where each $c_i$ is an $x+y$ chain. Then $\del(c_i) = \del(x+y) = 0$
 
