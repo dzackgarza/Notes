@@ -278,5 +278,4 @@ $r: B \hookrightarrow X$
 
 And the stars denote the induced maps on homology.
 
-The connecting homomorphism $\delta:H^n(X) \to H^{n-1}(X)$ is defined by taking a class $[\alpha] \in H^n(X)$, writing it as an $n$-cycle $z$, then decomposing $z = \sum c_i$ where each $c_i$ is an $x+y$ chain. Then $\del(c_i) = \del(x+y) = 0$
-
+The connecting homomorphism $\delta:H^n(X) \to H^{n-1}(X)$ is defined by taking a class $[\alpha] \in H^n(X)$, writing it as an $n$-cycle $z$, then decomposing $z = \sum c_i$ where each $c_i$ is an $x+y$ chain. Then $\del(c_i) = \del(x+y) = 0$, since the boundary of a cycle is zero, so $\del(x) = -\del(y)$. So then just define $\delta([\alpha]) = [\del x] = [-\del y]$.
