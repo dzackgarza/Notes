@@ -72,11 +72,7 @@ typora-copy-images-to:  .
    If both of these claims hold, then we will have $M \homotopic S^1 \cross I$ as two spaces that deformation retract onto a common space.
    Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$. 
 
-   Then consider the subspace $U = \theset{(1/2, y) \mid y \in [0,1]} \subset M$. Claim: $U \cong \theset{*} \cross S^1$ for some point $*$.
-
-   ![Ink DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk Drawings](file:///C:/Users/Zack/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
-
-   ​
+   Then consider the subspace $U = \theset{(1/2, y) \mid y \in [0,1]} \subset M$. Claim: $U \cong \theset{*} \cross S^1$ for some point $*$.​
 
    $U$ can be written $\theset{1/2} \cross (I/\sim)$, and since $(1/2, 0) \sim (1/2,1)$, we have $I/ \sim =  I /\boundary I \cong S^1$, so $U \cong \theset{1/2}\cross S^1$ as desired (taking $* = \frac{1}{2}$).
 
@@ -165,7 +161,7 @@ typora-copy-images-to:  .
       These all have no single point that can be removed to disconnect the space.
 
   10. $\theset{B,S^1 \vee S^1}$
-    Remove point at junction
+   Remove point at junction
 
   11. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
        These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
