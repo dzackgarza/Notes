@@ -10,6 +10,12 @@ Proof: there is an element of finite order in the former, and no element of fini
 
 This is especially useful if you have some $f: A\into B$ and you look at the induced homomorphism $f_*: \pi_1(A) \into \pi_1(B)$. If the former is finite and the latter contains a copy of $\ZZ$, then $f_*$ has to be the trivial map $f_*([\alpha]) = e \in \pi_1(B)$ for every $[\alpha] \in \pi_1(A)$.
 
+
+
+## Lemma: $\pi_1(X)$ for a CW-complex only depends on the 1-skeleton, and $H^k(X)$ only depends on the $k$-skeleton.
+
+
+
 ## Definition: Homotopy
 
 Let $X, Y$ be topological spaces and $f,g: X \to Y$ continuous maps. Then a *homotopy* from $f$ to $g$ is a continuous function 
@@ -224,7 +230,7 @@ Properties and examples:
 - $\text{deg}~\id_{S^n} = 1$
 - $\text{deg} (f\circ g) = \text{deg}~f \cdot \text{deg}~g$
 - $\text{deg}~r = -1$ where $r$ is any rotation about a hyperplane, i.e. $r(\thevector{x_1 \cdots x_i \cdots x_n}) = \thevector{x_1 \cdots -x_i \cdots x_n}$.
-- The antipodal map on $S^n\subset \RR^{n+1}$ is the composition of $n+1$ reflections, so $\text{deg}~\alpha = (-1)^{n+1}$.​
+- The antipodal map on $S^n\subset \RR^{n+1}$ is the composition of $n+1$ reflections, so $\text{deg}~\alpha = (-1)^{n+1}$.
 
 # Definition: Simplicial Complex
 
