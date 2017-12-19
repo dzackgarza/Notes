@@ -88,7 +88,7 @@ The cokernel measures how far the map is from a surjection. This is because if t
 
 Next let's talk a little bit about exactness. Consider a diagram such as this:
 
-$0 \injective A \xrightarrow{f} B \xrightarrow{g} C \surjective 0$  
+$0 \injects A \xrightarrow{f} B \xrightarrow{g} C \surjects 0$  
 
 where $A,B,C$ are modules (or groups or rings or even vector spaces if you prefer), $f, g$ maps between them as indicated, where left end of the sequence is the inclusion of the trivial module into $A$ and the right end is a map sending every element to the single element of the trivial module.
 
@@ -100,7 +100,7 @@ Equivalently, this just means that $(g\circ f)(a) = 0$ for every element in $A$,
 
 One concrete benefit of this abstraction is that if we have
 
-$0 \injective A \xrightarrow{f} B \surjective 0$,
+$0 \injects A \xrightarrow{f} B \surjects 0$,
 
 then $f$ is an isomorphism, and $A \cong B$.
 
@@ -108,7 +108,7 @@ then $f$ is an isomorphism, and $A \cong B$.
 
 Another benefit is that if we have a diagram where an $h$ exists such as this
 
-$0 \injective A \xrightarrow{f} B \xtofrom[h]{g} C \surjective 0$ 
+$0 \injects A \xrightarrow{f} B \xtofrom[h]{g} C \surjects 0$ 
 
 where $g \circ h = \id_C$ then (in an *abelian category*) this sequence is said to *split*, and $C \cong B /A$. In other words, this is a generalization of the first isomorphism theorem.
 
@@ -181,6 +181,8 @@ As is almost always the case in algebra, we glean a lot of information from the 
 What this says is that there is *another* exact sequence that you get for free, of the form
 
 $\ker a \into \ker b \into \ker c \xrightarrow{d} \coker a \into \coker b \into \coker c$.
+
+
 
 ## Chain Complexes
 
