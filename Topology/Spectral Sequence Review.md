@@ -34,3 +34,16 @@ This yields the following procedure for computing $H_i(A_*)$:
 
 
 
+## Filtrations
+
+A *filtered $R$-module* is an $R$-module $A$ with a sequence of submodules $\theset{A_i}_{i\in \ZZ}$ such that $A_i \subset A_{i+1}$ and $\union_\ZZ A_i = A$. Due to onerous index juggling, we write $A_i = F_i A$.
+
+A good example of this is a CW-complex $X$, where $F_iX$ is the $i$-skeleton of $X$.
+
+Given such a filtration, we can define an *associated graded module* $B$ where $B_i = A_{i}/ A_{i-1}$. This can yield a short exact sequence
+$0 \mapsvia{} A_{i-1} \mapsvia{} A_i \mapsvia{} B_i \mapsvia{} 0$
+
+A *filtered chain complex* is a chain complex $(C_*, \del)$ along with a filtration on each $n$-chain, $\theset{F_iC_n}_{i\in\ZZ}$, such that $\del (F_i C_n) \subseteq F_iC_{n-1}$ (i.e. the differential preserves the filtration).
+
+Possible example: Compute Serre spectral sequences with $\FF_p$ coefficients.
+
