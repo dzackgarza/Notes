@@ -1,5 +1,7 @@
 # Spectral Sequence Review
 
+Roughly speaking, a spectral sequence is a system for keeping tracking of collections of exact sequences with maps between them.
+
 Recall the Snake Lemma: given $A,B,C$ chain complexes fitting into a short exact sequence
 $$ 0 \mapsvia{} A \mapsvia{i} B \mapsvia{p} C \mapsvia{} 0$$
 
@@ -47,3 +49,30 @@ A *filtered chain complex* is a chain complex $(C_*, \del)$ along with a filtrat
 
 Possible example: Compute Serre spectral sequences with $\FF_p$ coefficients.
 
+
+
+
+
+# Example
+
+The most basic example is a spectral sequence is $E^r_{p,q}$, where $r$ denotes the page of the spectral sequence and the $E_{p,q}$ is a bigraded collection of abelian groups. Furthermore, we can take a "first quadrant" sequence, where only the $p>0, q>0$ terms are nontrivial. The differentials are then defined on any given page as a "shift map" that translates $p+r$ horizontal indices and $q-(r-1)$ vertical indices (direction depends on indexing vs. "coindexing"). Here is an example of an $r=2$ page:
+
+![SpectralSequence](http://mathworld.wolfram.com/images/eps-gif/SpectralSequence_1000.gif)
+
+In this case (any case?), $\lim_{r\rightarrow \infty} E^r_{p,q}$ stabilizes for any given $(p,q)$ term, so we define it as $E^\infty_{p,q}$.
+
+In certain cases
+
+
+
+# Common Types
+
+- Serre
+  - Cohomology groups of spaces in a fibration
+- Leray-Serre
+  - "Cohomology" of complexes of sheaves
+  - Special case of Grothendieck
+- Grothendieck
+  - The resulting derived functor from a composition of two known derived functors
+- Adams
+  - Higher homotopy groups of spheres
