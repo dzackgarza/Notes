@@ -1,5 +1,6 @@
 ---
 typora-copy-images-to: .
+typora-root-url: ./
 ---
 
 I met with Prof. Roberts for about an hour and a half today. At our last meeting, we had a bit of a discussion about what the research topic might be. 
@@ -84,14 +85,3 @@ For the initial data, we'll have $H^n(\frac{F^p C^*}{F^{p+1}C^*})$ where we'll r
 One potential issue here is that a priori, there's no particular reason this should be related to or yield the homology of the original complex - but in nice enough cases, there is a connection.
 
 The reindexing is done so that this becomes a *first quadrant spectral sequence*, i.e. everything in the other three quadrants becomes zero.
-
-
-
-
-
-
-
-
-
-
-
