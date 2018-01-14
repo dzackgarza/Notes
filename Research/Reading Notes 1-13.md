@@ -49,3 +49,27 @@ then we can define $H_*(X; G)$ via
 
 $\mapsvia{\del_{n+1}\otimes 1} C_n(X)\otimes G \mapsvia{\del_n\otimes 1} C_{n-1}(X) \otimes G \cdots \mapsvia{\del_1\otimes 1} C_0(X) \otimes G$
 
+Note that homology has the structure of a graded group, while cohomology has the structure of a graded commutative ring.
+
+Axioms of homology:
+
+- $X \mapsvia{f} Y$ always induces a map on homology $H_*(X) \mapsvia{f_*}H_*(Y)$
+- An orientation on $S^n$ induces an isomorphism $H_n(S^n) \cong \ZZ$; reversing orientation induces the map $\ZZ \mapsvia{\phi}\ZZ: \phi(1) = -1$
+- $Y\subseteq X$ yields the definition of relative homology $H_*(X, Y)$, and mayer vietoris holds; i.e. there is a long exact sequence
+  $\cdots H_n(Y) \into H_n(X) \into H_n(X, Y) \into H_{n-1}(Y) \cdots$
+- Excision: $U \subset Y \subset X$ and $\bar U \subset Y^\circ$ implies $H_*(X-U, Y-U) \cong H_*(X,Y)$.
+
+Any homology theory satisfying these properties is equivalent to singular homology.
+
+Use notation $[X, Y]$ for homotopy classes of maps $X\into Y$, then $\pi_1(X) = [S^1, X]$ and we can define $\pi_n(X) = [S^n, X]$. Homotopy groups fail excision.
+
+Whitehead theorem: for CW complexes, if $X \mapsvia{f} Y$ induces $\pi_n(X) \mapsvia{f_*} \pi_n(Y)$ and $f_*$ is an isomorphism (and $Y$ is connected), then $f$ is a homotopy equivalence. For spaces that aren't CW complexes, this may fail, and we say $f$ is a *weak homotopy equivalence* instead.
+
+Hurewicz theorem: the bottom homology and homotopy groups are isomorphic, and homology below the bottom homology is zero.
+
+General note: there are equivalent "relative versions" of most of these theorems.
+
+**Spectral Sequence:** Page 45
+
+For any fibration $F \mapsvia{} E \mapsvia{\pi} B$, we get a LES in homotopy
+$\pi_n(F) \into \pi_n(E) \into \pi_n(B) \mapsvia{\del} \pi_{n-1}(F)$
