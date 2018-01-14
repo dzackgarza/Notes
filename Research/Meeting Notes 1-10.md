@@ -86,4 +86,5 @@ One potential issue here is that a priori, there's no particular reason this sho
 
 The reindexing is done so that this becomes a *first quadrant spectral sequence*, i.e. everything in the other three quadrants becomes zero.
 
-![Ink DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk Drawings](file:///C:/Users/Zack/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
+![clip_image001](/clip_image001.png)
+
