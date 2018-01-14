@@ -33,6 +33,7 @@ A few items that came up in conversation:
 - Syzygies: for general modules, we can look at relations. The relations themselves form a submodule, so we can repeat the process of looking at "relations among relations". Eventually one arrives at the zero module
 - Cohomological Dimension
 - Differential forms
+  - A bit like a measure, gives areas and volumes without the analytical cruft
 - Rational homology, i.e. doing homology over based fields like $\QQ$, or taking a $p$-adic viewpoint by taking it over $\FF_p$ for various $p$.
 - Dual spaces in the category of modules
   - Interesting note: Let $M = \bigoplus \ZZ$, then $M^* = \prod \ZZ$ essentially because of the way one specifies a linear map - on each coordinate. But then does $M^{**} \cong M$?
