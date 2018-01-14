@@ -86,5 +86,13 @@ One potential issue here is that a priori, there's no particular reason this sho
 
 The reindexing is done so that this becomes a *first quadrant spectral sequence*, i.e. everything in the other three quadrants becomes zero.
 
+Here we list out a sample $E_1$ page:
+
 ![clip_image001](/clip_image001.png)
+
+The blue diagonal here is $H^2(\text{stuff})$, corresponding to all of the $E_1^{i,j}$ where $i+j = 2$. The differentials here move you one column to the right, and are actually the $\delta$ from the long exact sequence in homology.
+
+Look at the **filtration degree**.
+
+We then move on to define $E_2^{p,q}$ as $\frac{\ker d_1: E_1^{p,1} \into~\cdot }{\im d_1: \cdot ~\into E_1^{p,q}}$. This leads to a "knights move" for the differentials on the second page, moving up one and down-right two. Note that on the first page, moving right was the same as moving up one and down-right one.
 
