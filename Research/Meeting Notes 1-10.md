@@ -13,4 +13,32 @@ I mentioned that I thought this would be a good topic for me because 1) it seeme
 On Wednesday, we started into covering the content. He provided two references up front: 
 
 - **Rational Homotopy Theory and Differential Forms** by Griffiths and Morgan
+  - This provides some Algebraic Topology background, things like
+    - Fibrations
+    - Obstructions
+    - Postnikov towers
+  - This also covers a bit about the Serre spectral sequence
 - **Differential Forms in Algebraic Topology** by Bott and Tu
+  - Essentially need the middle section, which focuses on spectral sequences in general
+  - The examples are mostly related to sheaf/Cech (co)homology, which aren't as helpful in algebraic topology
+  - The end section is good - reviews homotopy theory, path and loop fibrations, and the Serre spectral sequence
+
+A few items that came up in conversation:
+
+- Syzygies: for general modules, we can look at relations. The relations themselves form a submodule, so we can repeat the process of looking at "relations among relations". Eventually one arrives at the zero module
+- Cohomological Dimension
+- Differential forms
+- Rational homology, i.e. doing homology over based fields like $\QQ$, or taking a $p$-adic viewpoint by taking it over $\FF_p$ for various $p$.
+- Dual spaces in the category of modules
+  - Interesting note: Let $M = \bigoplus \ZZ$, then $M^* = \prod \ZZ$ essentially because of the way one specifies a linear map - on each coordinate. But then does $M^{**} \cong M$?
+
+I asked a bit about fibrations - these seem to be a generalization of the way covering space theory works, and also generalize homotopy lifting. The general situation is like
+
+$$
+\begin{CD} 
+F @>>> 	E\\
+@. 		@VV{\pi}V \\
+ 		@. B
+\end{CD}
+$$
+
