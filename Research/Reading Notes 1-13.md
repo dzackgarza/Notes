@@ -6,8 +6,16 @@
 - **Comprehensive Introduction to DIfferential Geometry** by Spivak
 - **Topology from the Differentiable Viewpoint** by Milnor
 - **Topology and Geometry** by Bredon
+- **User's Guide to Spectral Sequences** by Mcleary
+  - View [Here](http://www.math.hcmuns.edu.vn/~nvdong/DoiDongDieuNhom/McCleary%20J.%20User%20s%20guide%20to%20spectral%20sequences%20(2ed.,%20CUP,%202001)(575s).pdf)
+  - Apparently lots of technical details
 
 
+# General Notes
+
+The standard Serre fibration: $\Omega X \into PX \mapsvia{f} X$ where $\Omega X$ is the loop space, $PX$ is the path space, and $f$ is the "evaluation at the endpoint" map. Note that $PX$ is contractible!
+
+Consider a SES $0 \into A \into B \into C \into C$, then look at it as a 2-step filtration of $B$ so $F^0B = B, F^1B = A, F^2B = 0$. The graded pieces are $G_0 = C, G_1 = A$. Can use this to obtain LES from SS
 
 # Griffiths and Morgan
 

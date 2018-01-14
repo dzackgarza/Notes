@@ -36,6 +36,10 @@ A few items that came up in conversation:
 - Rational homology, i.e. doing homology over based fields like $\QQ$, or taking a $p$-adic viewpoint by taking it over $\FF_p$ for various $p$.
 - Dual spaces in the category of modules
   - Interesting note: Let $M = \bigoplus \ZZ$, then $M^* = \prod \ZZ$ essentially because of the way one specifies a linear map - on each coordinate. But then does $M^{**} \cong M$?
+- Abelian categories
+  - Essentially work like the category of modules over a ring, can usually choose elements for homological proofs rather than relying on "arrow-theoretic" arguments
+- Modules
+  - In vector spaces, every exact sequence splits - you can just take orthogonal complements. This doesn't work for arbitrary modules
 
 I asked a bit about fibrations - these seem to be a generalization of the way covering space theory works, and also generalize homotopy lifting. 
 
@@ -96,3 +100,4 @@ Look at the **filtration degree**.
 
 We then move on to define $E_2^{p,q}$ as $\frac{\ker d_1: E_1^{p,1} \into~\cdot }{\im d_1: \cdot ~\into E_1^{p,q}}$. This leads to a "knights move" for the differentials on the second page, moving up one and down-right two. Note that on the first page, moving right was the same as moving up one and down-right one.
 
+Introduced how long exact sequences are sort of degenerate cases of spectral sequences, with only a few columns (?)
