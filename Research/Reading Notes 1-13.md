@@ -79,7 +79,64 @@ Hurewicz theorem: the bottom homology and homotopy groups are isomorphic, and ho
 
 General note: there are equivalent "relative versions" of most of these theorems.
 
-**Spectral Sequence:** Page 45
+**Spectral Sequence:** Page 45. 
 
 For any fibration $F \mapsvia{} E \mapsvia{\pi} B$, we get a LES in homotopy
 $\pi_n(F) \into \pi_n(E) \into \pi_n(B) \mapsvia{\del} \pi_{n-1}(F)$
+
+Basic question: How are the cohomologies of $F,E,B$ related? An easy case is when $E=F\cross B$, but even then $\pi_n(F\cross B) \neq \pi_n(F) \oplus \pi_n(B)$. Need the Kunneth theorem, formula is more complicated.
+
+For CW complexes and a fibration, the relationship is nice - look at the total space of the fibration. It is filtered by increasing $n$-skeleta, and we use the LES. More general filtrations need a spectral sequence.
+
+*Note: use LES as trivial example of spectral sequence! Write out the pages, differentials, etc*
+
+The spectral sequence relates the cohomology of *successive pairs* in the filtration to the cohomology of the total space. 
+
+**Theorem**: If $B$ is path-connected and $\pi_1(B, b_0)$ acts trivially on $H^*(F)$, then there are isomorphisms
+$$
+H^n(E^p, E^{p-1}) \cong \prod_{\text{$p$-cells in $B$}} H^n(\pi^{-1}e^p, \pi^{-1}\del e^p) \\ \cong C^p(B; H^{n-p}(F))
+$$
+
+
+In other words, for any $k$, we can think of $H^*(E^p, E^{p-k})$ as a $k$-th approximation to $H^*(E^p)$.
+
+(Should probably review results about polynomial and exterior algebras. And what does it mean for $\pi_1$ to act trivially on a fiber?)
+
+**EXAMPLES OF COMPUTATION: Page 54**
+
+- Cohomology of $\CP^n$ using $S^1 \into S^{2n+1} \into \CP^n$
+  - ​
+- Cohmology of the infinite Grassmanian $\lim_n G(k, n)$
+  - Answer: $H^*(G(k)) = \ZZ[x_1, x_2, \cdots x_k]$
+
+## Postnikov Towers
+
+A decomposition dual to cell decomposition, the atoms of the space are Eilenberg-Maclane spaces $K(\pi, n)$. (Note the spheres are atomic in homology, while the $K$ are atomic in homotopy.)
+
+Homotopy and homology commute with direct limits
+
+Homotopy theory over $\QQ$ is much easier than over $\ZZ$. Samples results:
+$$
+\pi_i(S^{2n-1}) \otimes \QQ = \begin{cases} 
+\QQ & i=2n-1 \\ 
+0 & \text{otherwise} 
+\end{cases}
+$$
+
+
+Then using the fact that $\pi_i(S^{2n-1})$ is always finitely generated, we can conclude
+$$
+\pi_i(S^{2n-1}) = \begin{cases} 
+\ZZ & i=2n-1 \\ 
+\text{a finite group}  ~G & \text{otherwise} 
+\end{cases}
+$$
+This yields 
+$$
+\pi_i(S^{n})  = \begin{cases} 
+\ZZ & i=2n \\ 
+\ZZ \oplus G & i=4n-1 \\
+H & \text{otherwise} 
+\end{cases}
+$$
+for some finite groups $G,H$.
