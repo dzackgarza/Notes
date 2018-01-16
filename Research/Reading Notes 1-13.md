@@ -113,7 +113,20 @@ In other words, for any $k$, we can think of $H^*(E^p, E^{p-k})$ as a $k$-th app
 
 A decomposition dual to cell decomposition, the atoms of the space are Eilenberg-Maclane spaces $K(\pi, n)$. (Note the spheres are atomic in homology, while the $K$ are atomic in homotopy.)
 
-Homotopy and homology commute with direct limits
+Gives a way of going back and forth between $X$ and $\pi_*(X)$: defined as a tower of spaces $X_0 \leftarrow X_1 \leftarrow \cdots$
+
+- $X_{i-1} \leftarrow X_i$ is a fibration
+- $\pi_k(X_n) = \mathbb{1}[k \leq n]\cdot\pi_k(X) + \mathbb{1}[k > n]\cdot 0$
+  - So all lower homotopy groups agree at the $n$-th spot
+- (Probably) $X_i \injects X$
+
+Unique up to homotopy, $X = \lim_n X_n$ (an inverse limit). Essentially constructs $X$ out of $K(\pi_n(X), n)$.
+
+*Note: revisit and draw diagrams for Postnikov Towers*
+
+Homotopy and homology commute with direct limits.
+
+$\cdot \tensor \QQ$ is a right-exact functor, most results in this section are about how terms in exact sequences all become $\QQ$-vector spaces. In particular, $H^*(X; \QQ), H_*(X;\QQ)$ are.
 
 Homotopy theory over $\QQ$ is much easier than over $\ZZ$. Samples results:
 $$
@@ -131,12 +144,14 @@ $$
 \text{a finite group}  ~G & \text{otherwise} 
 \end{cases}
 $$
-This yields 
+This yields for even $n$:
 $$
 \pi_i(S^{n})  = \begin{cases} 
-\ZZ & i=2n \\ 
-\ZZ \oplus G & i=4n-1 \\
+\ZZ & i=n \\ 
+\ZZ \oplus G & i=2n-1 \\
 H & \text{otherwise} 
 \end{cases}
 $$
-for some finite groups $G,H$.
+for some finite groups $G,H$!
+
+Can also obtain Bott Periodicity this way.
