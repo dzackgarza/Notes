@@ -9,6 +9,7 @@
   - Hopf Fibration?
   - Serre Fibration? $\Omega X \into PX \mapsvia{f} X$
 - Fibrations: should I spend time relating these to fiber bundles, vector bundles, etc?
+- How much should I review polynomial and exterior algebras?
 - Is the LES in homotopy is useful as it sounds?
 - How to come up with some "trivial" examples where an SS degenerates into LES, how to see Mayer Vietoris in the SS
 - How/when does the (co)homology of the associated graded complex relate back to the (co)homology of the original space? Does this depend on when exact sequences split?
