@@ -4,6 +4,7 @@
   - App due Feb 1st, 5k stipend for student if selected.
   - Just have to submit a project proposal - end result is only a 5 page paper
   - Plus rec letter
+- Fill out 199
 - Get some clarification on path and loop spaces
 - Potential starting points for calculations
   - Hopf Fibration?
