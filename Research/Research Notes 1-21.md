@@ -40,11 +40,26 @@ Next simplest example: a three step filtration $F_2 \subset F_1 \subset F_0 = K$
 
 Template: 
 
+### The $E_0$ page
+
 | $\mapsvia{d_0^{-2,2}} E_0^{-1,2} \mapsvia{d_0^{-1,2}}$ | $E_0^{0,2} \mapsvia{d_0^{0,2}}$ | $E_0^{1,2}\mapsvia{d_0^{1,2}}$  | $E_0^{2,2}\mapsvia{d_0^{2,2}}$  | $E_0^{3,2}\mapsvia{d_0^{3,2}}$ | $E_0^{4,2} \mapsvia{d_0^{4,2}}$ | $E_0^{5,2} \mapsvia{d_0^{5,2}}$ |
 | ---------------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------ | ------------------------------- | ------------------------------- |
 | $\mapsvia{d_0^{-2,1}} E_0^{-1,1}\mapsvia{d_0^{-1,1}}$ | $E_0^{0,1} \mapsvia{d_0^{0,1}}$ | $E_0^{1,1}\mapsvia{d_0^{1,1}}$  | $E_0^{2,1}\mapsvia{d_0^{2,1}}$  | $E_0^{3,1}\mapsvia{d_0^{3,1}}$ | $E_0^{4,1}\mapsvia{d_0^{4,1}}$  | $E_0^{5,1} \mapsvia{d_0^{5,1}}$ |
 | $\mapsvia{d_0^{-2,0}}E_0^{-1,0} \mapsvia{d_0^{-1,0}}$ | $E_0^{0,0} \mapsvia{d_0^{0,0}}$ | $E_0^{1,0} \mapsvia{d_0^{1,0}}$ | $E_0^{2,0} \mapsvia{d_0^{2,0}}$ | $E_0^{3,0}\mapsvia{d_0^{3,0}}$ | $E_0^{4,0}\mapsvia{d_0^{4,0}}$  | $E_0^{5,0} \mapsvia{d_0^{5,0}}$ |
 | $\mapsvia{d_1^{-2,2}} E_1^{-1,2} \mapsvia{d_1^{-1,2}}$ | $E_1^{0,2} \mapsvia{d_1^{0,2}}$ | $E_1^{1,2}\mapsvia{d_1^{1,2}}$  | $E_1^{2,2}\mapsvia{d_1^{2,2}}$  | $E_1^{3,2}\mapsvia{d_1^{3,2}}$ | $E_1^{4,2} \mapsvia{d_1^{4,2}}$ | $E_1^{5,2} \mapsvia{d_1^{5,2}}$ |
+
+
+### The $E_1$ page
+
+| $\mapsvia{d_1^{-2,2}} E_1^{-1,2} \mapsvia{d_1^{-1,2}}$ | $E_1^{0,2} \mapsvia{d_1^{0,2}}$ | $E_1^{1,2}\mapsvia{d_1^{1,2}}$  | $E_1^{2,2}\mapsvia{d_1^{2,2}}$  | $E_1^{3,2}\mapsvia{d_1^{3,2}}$ | $E_1^{4,2} \mapsvia{d_1^{4,2}}$ | $E_1^{5,2} \mapsvia{d_1^{5,2}}$ |
+| ---------------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------ | ------------------------------- | ------------------------------- |
+| $\mapsvia{d_1^{-2,1}} E_1^{-1,1}\mapsvia{d_1^{-1,1}}$ | $E_1^{0,1} \mapsvia{d_1^{0,1}}$ | $E_1^{1,1}\mapsvia{d_1^{1,1}}$  | $E_1^{2,1}\mapsvia{d_1^{2,1}}$  | $E_1^{3,1}\mapsvia{d_1^{3,1}}$ | $E_1^{4,1}\mapsvia{d_1^{4,1}}$  | $E_1^{5,1} \mapsvia{d_1^{5,1}}$ |
+| $\mapsvia{d_1^{-2,0}}E_1^{-1,0} \mapsvia{d_1^{-1,0}}$ | $E_1^{0,0} \mapsvia{d_1^{0,0}}$ | $E_1^{1,0} \mapsvia{d_1^{1,0}}$ | $E_1^{2,0} \mapsvia{d_1^{2,0}}$ | $E_1^{3,0}\mapsvia{d_1^{3,0}}$ | $E_1^{4,0}\mapsvia{d_1^{4,0}}$  | $E_1^{5,0} \mapsvia{d_1^{5,0}}$ |
+
+| $\frac{\ker d_0^{-1,2}}{\im d_0^{-2,2}}$ | $\frac{\ker d_0^{0,2}}{\im d_0^{-1,2}}$ | $\frac{\ker d_0^{1,2}}{\im d_0^{0,2}}$ | $\frac{\ker d_0^{2,2}}{\im d_0^{1,2}}$ | $\frac{\ker d_0^{3,2}}{\im d_0^{2,2}}$ | $\frac{\ker d_0^{4,2}}{\im d_0^{3,2}}$ | $\frac{\ker d_0^{5,2}}{\im d_0^{4,2}}$ |
+| ---------------------------------------- | --------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
+| $\frac{\ker d_0^{-1,1}}{\im d_0^{-2,1}}$ | $\frac{\ker d_0^{0,1}}{\im d_0^{-1,1}}$ | $\frac{\ker d_0^{1,1}}{\im d_0^{0,1}}$ | $\frac{\ker d_0^{2,1}}{\im d_0^{1,1}}$ | $\frac{\ker d_0^{3,1}}{\im d_0^{2,1}}$ | $\frac{\ker d_0^{4,1}}{\im d_0^{3,1}}$ | $\frac{\ker d_0^{5,1}}{\im d_0^{4,1}}$ |
+| $\frac{\ker d_0^{-1,0}}{\im d_0^{-2,0}}$ | $\frac{\ker d_0^{0,0}}{\im d_0^{-1,0}}$ | $\frac{\ker d_0^{1,0}}{\im d_0^{0,0}}$ | $\frac{\ker d_0^{2,0}}{\im d_0^{1,0}}$ | $\frac{\ker d_0^{3,0}}{\im d_0^{2,0}}$ | $\frac{\ker d_0^{4,0}}{\im d_0^{3,0}}$ | $\frac{\ker d_0^{5,0}}{\im d_0^{4,0}}$ |
 
 
 
@@ -55,3 +70,41 @@ Given the following diagram, with exact rows and commuting squares:![Capture](Ca
 We want to show that this sequence34w is exact:
 
 $$ 0 \mapsvia{} \ker \alpha \mapsvia{} \ker \beta \mapsvia{} \ker\gamma \mapsvia{\delta} \im\alpha \mapsvia{} \im\beta \mapsvia{}\im\gamma \mapsvia{} 0$$
+
+
+
+### Example: Proving the 5 lemma
+
+Expand the usual diagram into a double complex by filling in zeros:
+$$
+\begin{CD}
+0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 \\
+@VVV @VVV @VVV @VVV @VVV @VVV @VVV \\
+0 @<<< E @<<< D @<<< C @<<< B @<<< A @<<< 0 \\
+@VVV @VkVV @V-jVV @VhVV @V-gVV @VfVV @VVV \\
+0 @<<< E' @<<< D' @<<< C' @<<< B' @<<< A' @<<< 0 \\
+@VVV @VVV @VVV @VVV @VVV @VVV @VVV \\
+0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 \\
+\end{CD}
+$$
+Here we assume that $k, -j,  -g, f$ are all isomorphisms. Since this is the $E_0$ page, we first take homology starting with the vertical arrows as differentials, this yields the $E_1$ page
+$$
+\begin{CD}
+0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 \\
+@. @. @. @. @. @. @. \\
+0 @<<< 0 @<<< 0 @<<< \text{Ker } h @<<< 0 @<<< 0 @<<< 0 \\
+@. @. @. @. @. @. @. \\
+0 @<<< 0 @<<< 0 @<<< \text{Coker } h @<<< 0 @<<< 0 @<<< 0 \\
+@. @. @. @. @. @. @. \\
+0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 @<<< 0 \\
+\end{CD}
+$$
+
+
+The differentials on this page are now all horizontal arrows - but these are all zero maps, so the spectral sequence has collapsed at this page. We now know this page is the complex that the spectral sequence converges to, even if we don't know what $\ker k$
+
+
+
+### Recovering the homology
+
+If a spectral sequence collapses, say $E_\infty^{p,q} = E_N^{p,q}$, then $H_n(X)$ is the unique $E_N^{p,q}$ where $p+q=n$. In general, the homology can be read off as the single nonzero element on the diagonal when this happens.
