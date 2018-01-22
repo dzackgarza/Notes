@@ -38,3 +38,8 @@ Next simplest example: a three step filtration $F_2 \subset F_1 \subset F_0 = K$
 
 ## Example: Proving the Snake Lemma without chasing elements
 
+Given the following diagram, with exact rows and commuting squares:![Capture](Capture.PNG)
+
+We want to show that this sequence is exact:
+
+$$ 0 \mapsvia{} \ker \alpha \mapsvia{} \ker \beta \mapsvia{} \ker\gamma \mapsvia{\delta} \im\alpha \mapsvia{} \im\beta \mapsvia{}\im\gamma \mapsvia{} 0$$
