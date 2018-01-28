@@ -1,33 +1,78 @@
-| Space $X$                             | $\pi_0(X)$ | $\pi_1(X)$              | $H_0(X)$ | $H_1(X)$                       | $H_2(X)$ | $H_3(X)$ |
-| ------------------------------------- | ---------- | ----------------------- | :------- | :----------------------------- | -------- | -------- |
-| $\RR^n$                               |            | 0                       | $\ZZ$    | 0                              |          |          |
-| $\RR^n - \theset{k~\text{pts}}$       |            |                         |          |                                |          |          |
-| $B^n$                                 |            | 0                       |          | 0                              |          |          |
-| $S^0$                                 |            | 0                       | 0        | 0                              | 0        | 0        |
-| $S^1$                                 |            | $\ZZ$                   | $\ZZ$    | $\ZZ$                          | 0        | 0        |
-| $S^2$                                 |            | 0                       | $\ZZ$    | 0                              | $\ZZ$    | 0        |
-| $S^3$                                 |            | 0                       | $\ZZ$    | 0                              | 0        | ?        |
-| $S^n, n \geq 4$                       |            | 0                       | $\ZZ$    | 0                              | 0        | 0        |
-| $S^n - \theset{k~\text{pts}}$         |            |                         |          |                                |          |          |
-| $T^2 = S^1 \cross S^1$                |            | $\ZZ \cross \ZZ$        | $\ZZ$    | $Z\oplus Z$                    |          |          |
-| $\prod_n S^1$                         |            | $F_n \cong \prod_n \ZZ$ | $\ZZ$    | $F_n^{(ab)} = \bigoplus_n \ZZ$ |          |          |
-| $\prod_n S^1 - \theset{k~\text{pts}}$ |            |                         |          |                                |          |          |
-| $\bigvee_n S^1$                       | 0          | $\ast_n \ZZ$            | $\ZZ$    |                                |          |          |
-| $\mathbb{RP}^1$                       | 0          | $\ZZ$                   | $\ZZ$    | $\ZZ$                          |          | 0        |
-| $\mathbb{RP}^2$                       | 0          | $\ZZ_2$                 | $\ZZ$    | $\ZZ_2$                        | $\ZZ$    | 0        |
-| $\mathbb{RP}^3$                       | 0          | $\ZZ_2$                 | $\ZZ$    | $\ZZ_2$                        | 0        | $\ZZ$    |
-| $\mathbb{RP}^n, n \geq 4$             | 0          | $\ZZ_2$                 | $\ZZ$    | $\ZZ_2$                        | 0        | $\ZZ_2$  |
-| $\mathbb{CP}^1$                       | 0          | 0                       |          | 0                              |          |          |
-| $\mathbb{CP}^n, n \geq 2$             | 0          | 0                       |          | 0                              |          |          |
-| Mobius Band                           |            |                         |          |                                |          |          |
-| Klein Bottle                          |            |                         |          | $\ZZ \cross \ZZ_2$             |          |          |
-| $Gr(n, k)$                            |            |                         |          |                                |          |          |
-| $S^3 - $ Hopf Link                    |            |                         |          |                                |          |          |
-| $n$-fold dunce cap                    |            |                         |          |                                |          |          |
+| Space $X$                             | $\pi_0(X)$ | $\pi_1(X)$              | $\pi_2(X)$ | $\pi_3(X)$ | $H_0(X)$ | $H_1(X)$                       | $H_2(X)$ | $H_3(X)$ |
+| ------------------------------------- | ---------- | ----------------------- | ---------- | ---------- | :------- | :----------------------------- | -------- | -------- |
+| $\RR^n$                               | 0          | 0                       | 0          | 0          | $\ZZ$    | 0                              |          |          |
+| $\RR^n - \theset{k~\text{pts}}$       |            |                         |            |            |          |                                |          |          |
+| $B^n$                                 |            | 0                       |            |            |          | 0                              |          |          |
+| $S^0$                                 |            | 0                       |            |            | 0        | 0                              | 0        | 0        |
+| $S^1$                                 |            | $\ZZ$                   |            |            | $\ZZ$    | $\ZZ$                          | 0        | 0        |
+| $S^2$                                 |            | 0                       |            |            | $\ZZ$    | 0                              | $\ZZ$    | 0        |
+| $S^3$                                 |            | 0                       |            |            | $\ZZ$    | 0                              | 0        | ?        |
+| $S^n, n \geq 4$                       |            | 0                       |            |            | $\ZZ$    | 0                              | 0        | 0        |
+| $S^n - \theset{k~\text{pts}}$         |            |                         |            |            |          |                                |          |          |
+| $T^2 = S^1 \cross S^1$                |            | $\ZZ \cross \ZZ$        |            |            | $\ZZ$    | $Z\oplus Z$                    |          |          |
+| $\prod_n S^1$                         |            | $F_n \cong \prod_n \ZZ$ |            |            | $\ZZ$    | $F_n^{(ab)} = \bigoplus_n \ZZ$ |          |          |
+| $\prod_n S^1 - \theset{k~\text{pts}}$ |            |                         |            |            |          |                                |          |          |
+| $\bigvee_n S^1$                       | 0          | $\ast_n \ZZ$            |            |            | $\ZZ$    |                                |          |          |
+| $\mathbb{RP}^1$                       | 0          | $\ZZ$                   |            |            | $\ZZ$    | $\ZZ$                          |          | 0        |
+| $\mathbb{RP}^2$                       | 0          | $\ZZ_2$                 |            |            | $\ZZ$    | $\ZZ_2$                        | $\ZZ$    | 0        |
+| $\mathbb{RP}^3$                       | 0          | $\ZZ_2$                 |            |            | $\ZZ$    | $\ZZ_2$                        | 0        | $\ZZ$    |
+| $\mathbb{RP}^n, n \geq 4$             | 0          | $\ZZ_2$                 |            |            | $\ZZ$    | $\ZZ_2$                        | 0        | $\ZZ_2$  |
+| $\mathbb{CP}^1$                       | 0          | 0                       |            |            |          | 0                              |          |          |
+| $\mathbb{CP}^n, n \geq 2$             | 0          | 0                       |            |            |          | 0                              |          |          |
+| Mobius Band                           |            |                         |            |            |          |                                |          |          |
+| Klein Bottle                          |            |                         |            |            |          | $\ZZ \cross \ZZ_2$             |          |          |
+| $Gr(n, k)$                            |            |                         |            |            |          |                                |          |          |
+| $S^3 - $ Hopf Link                    |            |                         |            |            |          |                                |          |          |
+| $n$-fold dunce cap                    |            |                         |            |            |          |                                |          |          |
+
+
+
+Definition: let $X$ be a topological space, then for any $k\geq 1 \in \NN$ define the *punctured $k$-space* $P(X, k) \definedas X - \union_k \pt$ to be $X$ with $k$ arbitrary distinct points removed.
+
+# Classes of Spaces
+
+- The Standards
+  - $\RR^n$
+  - $\CC^n$
+  - $S^n$
+  - The $n$-torus, $T^n \definedas \prod_{i=1}^n S^1$
+    - The "generalized" torus? $T^n(m) = \prod_{i=1}^n S^m$
+  - The bouquet $\mathcal{B}^n = \bigvee_{i=1}^n S_1$
+    - The "generalized uniform bouquet"? $\mathcal{B}^n(m) = \bigvee_{i=1}^n S^m$
+- Projective Spaces
+  - $\RP^n$
+  - $\CP^n$
+- Lie Groups
+  - The real general linear group, $GL_n(\RR)$
+    - The real special linear group $SL_n(\RR)$
+    - The real orthogonal group, $O_n(\RR)$
+      - The real special orthogonal group, $SO_n(\RR)$
+    - The real unitary group, $U_n(\RR)$
+      - The real special unitary group, $SU_n(\RR)$
+    - The real symplectic group $Sp(n)$
+- "Geometric" Stuff
+  - Affine $n$-space over a field $\AA^n(k) = k^n \semidirect GL_n(k)$
+  - The projective space $\PP^n(k)$
+    - The projective linear group over a ring $R$, $PGL_n(R)$
+    - The projective special linear group over a ring $R$, $PSL_n(R)$
+    - The modular groups $PSL_n(\ZZ)$
+      - Specifically $PSL_2(\ZZ)$
+- The real Grassmanian, $Gr(n, k, \RR)$
+- The mobius strip
+- The klein bottle
+- $P(X, k)$ for all spaces $X$ in this list.
 
 
 
 
+Modifications that can be made:
+
+- Remove $k$ points
+- Remove a line segment
+- Remove an entire line/axis
+- Remove a hole
+- Quotient by a group action (e.g. antipodal map, or rotation)
+- Remove a knot
 
 # Notation
 

@@ -48,7 +48,7 @@ How does this work in 3 dimensions? Take $(a,b,c,d)$ be an orientation on a tetr
 
 Definition: If $K$ is a simplicial complex, let $C_n(K)$ be the free abelian group on oriented $n$-simplexes in $K$ quotiented by $\bar\sigma \sim -\sigma$. Add twice as many simplexes then quotient out..? Avoids making choices of orientation everywhere! Then each oriented $n$-simplex maps into $C_n(K)$ in a natural way.
 
-Definition: A boundary map $\boundary: C_n K \into C_{n-1} K$ by linearly extending the formula $\boundary(a_0 \cdots a_n) = \sum_{i=1}^n (-1)^i (a_0, \cdots \hat{a_i} \cdots a_n)$, where the summand denotes the face spanned by all vertices except $a_i$.
+Definition: A boundary map $\bd: C_n K \into C_{n-1} K$ by linearly extending the formula $\bd(a_0 \cdots a_n) = \sum_{i=1}^n (-1)^i (a_0, \cdots \hat{a_i} \cdots a_n)$, where the summand denotes the face spanned by all vertices except $a_i$.
 
 Example: $\del (a,b) = (b) - (a)$, $\del(a,b,c) = (b,c) - (a,c) -+(a,b)$.
 
@@ -56,11 +56,11 @@ So a line segment $a \mapsto b$ goes to $-a$ and $+b$.
 
 An oriented triangle $abc$ goes to the three line segments oriented in the same way.
 
-Need to check that $\boundary$ is well defined - check that applying a transposition, e.g. $(a_0 a_1)$. What happens?
+Need to check that $\bd​$ is well defined - check that applying a transposition, e.g. $(a_0 a_1)​$. What happens?
 
-$\boundary (a_1, a_0, a_2, \cdots a_n) = (a_0, a_2, \cdots a_n) - (a_1, a_2, \cdots a_n) + \sum \text{stuff} = -\boundary (a_0, a_1, a_2, \cdots a_n)$, so equality is preserved under even permutations.
+$\bd (a_1, a_0, a_2, \cdots a_n) = (a_0, a_2, \cdots a_n) - (a_1, a_2, \cdots a_n) + \sum \text{stuff} = -\bd (a_0, a_1, a_2, \cdots a_n)$, so equality is preserved under even permutations.
 
-Lemma: $\boundary^2 = 0$
+Lemma: $\bd^2 = 0$
 
 Consider $C_n K \into_{\del_n} C_{n-1} K \into_{\del_{n-1}} C_{n-2} \into \cdots$
 

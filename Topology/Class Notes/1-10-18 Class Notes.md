@@ -6,7 +6,7 @@ When axiomatized, generally relies on property of **excision**, which relates to
 
 If $U \subseteq A \subseteq X$ and $cl(U) \subseteq int(A)$, then $H(X, A) \cong H(X-U, A-U)$ or equivalently setting $X = A \union B$ where $X = int(A) \union int(B)$, then $H(X,A) \cong H(B, A\intersect B)$
 
-Proof: Recall from proof of Mayer Vietoris we used $C_*(A+B) \leq C_* X = $<singular simplexes from $A$ or $B$>.
+Proof: Recall from proof of Mayer Vietoris we used $C_*(A+B) \leq C_* X = $\<singular simplexes from $A$ or $B$\>.
 
 Yields SES $0 \mapsvia{} C_*(A) \mapsvia{} C_*(A+B) \mapsvia{} C_*(B, A\intersect B)\mapsvia{} 0$. Look at inclusion $C_*(A+B) \mapsvia{\iota} C_*(X)$ and its placement in the SES $0\mapsvia{} C_*(A) \mapsvia{} C_*(X) \mapsvia{} C_*(X,A)\mapsvia{} 0$. These yield commuting long exact sequences:
 

@@ -12,6 +12,17 @@ This is especially useful if you have some $f: A\into B$ and you look at the ind
 
 
 
+## Different Types of Product/Sum Structures
+
+- Cartesian Product $X\cross Y, \prod_i X_i$
+- Direct Sum $X \oplus Y, \bigoplus_i X_i$
+- Direct Product $X \ast Y, \ast_i X_i$
+  - Element-wise multiplication, allows infinitely many entries
+  - $\ast_i X_i= \oplus_i X_i$ for $i < \infty$
+- Tensor Product $X \tensor Y, \bigotimes_i X_i, X^{\otimes_i}$
+
+
+
 ## Lemma: $\pi_1(X)$ for a CW-complex only depends on the 1-skeleton, and $H^k(X)$ only depends on the $k$-skeleton.
 
 
@@ -122,14 +133,14 @@ The universal cover of $T = S^1 \cross S^1$ is $\tilde X =\RR \cross \RR$. The f
 
 ## Theorem: Homotopy Lifting
 
-The setup: given $p: \tilde X \surjective X$ a covering space of $X$, a map $f: Y \into X$, and a homotopy $H: Y\cross I \into X$ such that $f_0 \definedas H(y, 0)$ has a lift $\tilde f_0: Y\into \tilde X$.
+The setup: given $p: \tilde X \surjects X$ a covering space of $X$, a map $f: Y \into X$, and a homotopy $H: Y\cross I \into X$ such that $f_0 \definedas H(y, 0)$ has a lift $\tilde f_0: Y\into \tilde X$.
 
 Then there is a unique homotopy $\tilde H: Y \cross I \into \tilde X$ satisfying $p\circ \tilde H = H$
 In other words, if the $t=0$ portion of a homotopy can be lifted to a cover, the entire homotopy can.
 
 ## Theorem: Lifting Criterion
 
-Let $p:\tilde X \surjective X$ be a covering of $X$, and let $f:Y \into X$ be a map. Then there is an induced homomorphism $f^*: \pi_1(Y) \into \pi_1(X)$. There is also an induced map $p^*: \pi_1(\tilde X) \into \pi_1(X)$. We then have the following condition:
+Let $p:\tilde X \surjects X$ be a covering of $X$, and let $f:Y \into X$ be a map. Then there is an induced homomorphism $f^*: \pi_1(Y) \into \pi_1(X)$. There is also an induced map $p^*: \pi_1(\tilde X) \into \pi_1(X)$. We then have the following condition:
 
 There exists a lift $\tilde f: Y \into \tilde X$ satisfying $p\circ\tilde f = f$ iff $f^*(\pi_1(Y)) \subseteq p^*(\pi_1(\tilde X))$, i.e. when the fundamental group of $Y$ injects into the projected fundamental group of the cover.
 
@@ -305,4 +316,9 @@ But $A, B$ are contractible, so $H^iA= H^iB = 0$, so we have
 
 $H^{i+1}(S^n) \xrightarrow{} H^{i}(S^{n-1}) \xrightarrow{} 0 \oplus 0 \xrightarrow{}H^i(S^n) \xrightarrow{} H^{i-1}(S^{n-1}) \xrightarrow{} 0$
 
-And in particular, we have the shape $0 \to A \to B \to 0​$ in an exact sequence, which is always an isomorphism.
+And in particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence, which is always an isomorphism.
+
+
+
+### Long exact sequence of a triple
+
