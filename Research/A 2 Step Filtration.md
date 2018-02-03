@@ -63,17 +63,17 @@ $E_1^{p,q} = H(E_0^{p,q}, d_0)$
 
 Not standard usage, here I consider the "$E_{-1}$ page" to be simply a presentation of the double complex itself.
 $$
-\begin{array}{lc@{200pt}|cccc}
-n & 0 & F_2C_n(X) &  F_1C_n(X) &  F_0C_n(X) \\
+\begin{array}{c@{\hspace{2em}}c|cccc}
+n  & 0 & F_2C_n(X) &  F_1C_n(X) &  F_0C_n(X) \\
 \vdots & \vdots & \vdots & \vdots \\
-0 &0 & 0 & 0 & 0 \\
-0 &0 & 0 & 0 & 0 \\
-0 &0 & 0 & 0 & 0 \\
+3 &0 & 0 & 0 & 0 \\
+2 &0 & 0 & 0 & 0 \\
+1 &0 & 0 & 0 & 0 \\
 0 &0 & 0 & 0 & 0 \\
 \hline
-0 &0 & 0 & 0 & 0 \\
-0 &0 & 0 & 0 & 0 \\
-0 &0 & 0 & 0 & 0 \\
+-1 &0 & 0 & 0 & 0 \\
+-2 &0 & 0 & 0 & 0 \\
+-3 &0 & 0 & 0 & 0 \\
 \end{array}
 $$
 
