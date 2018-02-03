@@ -9,10 +9,7 @@ We want to explicitly consider all of the objects, maps, and differentials in a 
 - $0 \injects \RP^n \injects S^n$
   - Using $S^n$ as a double cover of $\RP^n$
 
-This should hopefully make it easier to look at similar fibrations and/or fibre bundles:
 
-- $S^0 \into S^n \into \RP^n$
-- ​
 
 ## Setup
 
