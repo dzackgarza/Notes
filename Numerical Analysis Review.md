@@ -122,7 +122,6 @@ General setup: we are given $y'(t) = f(t,y)​$ and $y(t_0) = y_0​$.
   - $$y_{k+1} = y_k + \pfrac{h}{2}\quantity{f(t_k, y_k) + f(t_{k+1}, y_{k+1})}$$
 - **Midpoint Method:**
   - $\tilde y_{k+1} = y_k + \frac{h}{2}f(t_k, y_k)$
-  - $y_{k+1} = y_k + hf\left( t_k + \frac{h}{2},~ \tilde y_{k+1} \right)$
 - **Euler's Method:**
   - Set $\omega_0 =y_0$, $t_i = y_0 + ih$.
   - Let $w_{i+1} = w_i + hf(t_i, w_i)$
