@@ -51,9 +51,9 @@ typora-copy-images-to:  .
 
 ## Chapter 3: Interpolation and Polynomial Approximation
 
-- Lagrange polynomial: 
+- Lagrange polynomial:
 
-  - $$L_{n,k}(x) = \prod_{i=0, i\neq k}^n \frac{x-x_i}{x_k - x_i}$$. 
+  - $$L_{n,k}(x) = \prod_{i=0, i\neq k}^n \frac{x-x_i}{x_k - x_i}$$.
   - Can then express $$P_n(x) = \sum_{k=0}^n f(x_k)L_{n,k}(x)$$ for a set of $n+1$ nodes $\theset{x_i}_{i=0}^n$.
   - Error: $f(x) = P_n(x) + \frac{1}{(n+1)!}f^{(n+1)}(\xi(x))\prod_{i=0}^n(x-x_i)$.
 
@@ -65,7 +65,7 @@ typora-copy-images-to:  .
     Then $$P_n(x) = f[x_0] + \sum_{i=1}^n f[x_0 \cdots x_n]\prod_{k=0}^i (x-x_i)$$
   - I.e. $P_n(x) = f[x_0] + f[x_0 x_1](x-x_0) + f[x_0 x_1 x_2](x-x_0)(x-x_1) + \cdots$
 
-- Hermite polynomial: 
+- Hermite polynomial:
 
   - Just take $x_i$ and defined $z_{2i} = z_{2i+1} = x_i$, and replace differences having zero denominators with derivative.
 
@@ -85,7 +85,7 @@ typora-copy-images-to:  .
 - Differentiation
   - $f''(x) \approx \frac{1}{h^2}(f(x-h) - 2f(x) + f(x+h))$
 
-- **Richardson's Extrapolation:** 
+- **Richardson's Extrapolation:**
 
   - Combine $O(h)$ approximations into $O(h^2)$ or better.
   - Let $M = N_1(h) + \sum K_i h^i$
@@ -95,16 +95,16 @@ typora-copy-images-to:  .
 - **Midpoint rule:**
   - $$\int_a^b f \approx (b-a)f\pfrac{a+b}{2}$$
 
-- **Trapezoidal Rule:** 
+- **Trapezoidal Rule:**
   - $$\int_a^b f \approx \frac{h}{2} (f(a) + f(b)) + O(h^3)$$.
   - Can derive by integrating 1st Lagrange interpolating polynomial.
 
-- **Simpson's Rule:** 
+- **Simpson's Rule:**
   - $$\int_a^b f \approx \frac{b-a}{6}\left(f(a) + 4f(\frac{a+b}{2}) + f(b)\right) + O(h^5)$$
   - Can derive by integrating 2nd Lagrange polynomial
 
 - Composite: break up into piecewise approximations
-  - **Composite trapezoidal rule:** 
+  - **Composite trapezoidal rule:**
 
     - Take nodes $a=x_0 < \cdots < x_n = b$
     - $$ \int_a^b f \approx \sum_{k=1}^n \frac{h}{2}(f(x_{k-1}) + f(x_k)) = \frac{h}{2}\left(f(x_0) + f(x_n) + 2\sum_{i=1}^{n-1}f(x_i)\right)$$
@@ -122,11 +122,11 @@ General setup: we are given $y'(t) = f(t,y)​$ and $y(t_0) = y_0​$.
   - $$y_{k+1} = y_k + \pfrac{h}{2}\quantity{f(t_k, y_k) + f(t_{k+1}, y_{k+1})}$$
 - **Midpoint Method:**
   - $\tilde y_{k+1} = y_k + \frac{h}{2}f(t_k, y_k)$
-  - $$ y_{k+1} = y_k + hf\left( t_k + \frac{h}{2},~ \tilde y_{k+1} \right)$$
+  - $y_{k+1} = y_k + hf\left( t_k + \frac{h}{2},~ \tilde y_{k+1} \right)$
 - **Euler's Method:**
   - Set $\omega_0 =y_0$, $t_i = y_0 + ih$.
   - Let $w_{i+1} = w_i + hf(t_i, w_i)$
-- **Modified Euler's Method:** 
+- **Modified Euler's Method:**
   - Predictor/Corrector with Euler's Method / Trapezoidal Rule
   - Let $w_0 = y_0$
   - Let $\tilde w_{i+1} = w_i + hf(t_i, w_i)$
