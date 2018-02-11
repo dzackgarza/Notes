@@ -72,12 +72,12 @@ typora-copy-images-to:  .
    Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = x_0$ for every $x\in X$.)  But then $(g\circ f)(x) = g(x_0) = y_0$ for some constant $y_0 \in X$, so $g\circ f$ is a constant map. By assumption, $g\circ f \homotopic \id_X$, so the identity is homotopic to a constant map.
 
 5. **Main Idea**: Deformation retract $M$ onto its center circle; two spaces that deformation retract onto a common space are themselves homotopy equivalent.
+   $S^1 \cross I \rightarrow S^1 \leftarrow M$
 
    Claim: $S^1 \cross I \homotopic S^1 \cross \theset{*}$
    This is because $I$ is contractible, so $I \homotopic \theset{*}$. (Maybe needs further proof)
 
-   Claim: $M \homotopic S^1 \cross \theset{*}$.
-   ​
+   Claim: $M \homotopic S^1 \cross \theset{*}$.​
 
    If both of these claims hold, then we will have $M \homotopic S^1 \cross I$ as two spaces that deformation retract onto a common space.
    Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$. 
