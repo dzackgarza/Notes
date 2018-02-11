@@ -7,6 +7,7 @@ typora-copy-images-to:  .
 ## Homotopy
 
 1. **Main Idea**: A linear homotopy projected onto the sphere works.
+   $H(x,t) = \operatorname{normalize}(tx_0 + (1-t) f(x))$
    ​
    Let $f: X \to S^n \subset \RR^{n+1}$ be an arbitrary map that fails to be surjective. Then, by definition, there is at least one point $s_0 \in S^n - f(X)$. 
 
@@ -17,13 +18,15 @@ typora-copy-images-to:  .
    This is a homotopy, since $H(x, 0) =P(f(x)) = f(x)$ (since $P$ fixes $S^n$) and $H(x, 1) = P(s_0) = s_0$ (since $s_0 \in S^n$).
 
 2. **Main Idea**: Exact same idea as 1, just a more complicated check.
+   $H(x,t) = \operatorname{normalize}(tg(x) + (1-t) f(x))$
 
    Take $H(x, t) = P(tf(x) + (1-t)g(x))$.
    This is well defined; the only case to check is when the denominator is zero. But $\norm{x} = 0$ iff $x =0$, which would imply $tf(x) +(1-t)g(x) = 0$ and so $tf(x) = -(1-t)g(x)$. 
 
    Taking norms and observing that since $f,g \in S^n \implies \norm{f} = \norm{g} = 1$, this forces $t = 1-t$ and thus $t=1/2$. But this would force $(1/2)f(x) = (-1/2)g(x)$ and thus $f(x) = -g(x)$, which we assumed was not the case.
 
-3. **Main Idea**: Linear homotopy fails continuity without the condition from (2), so use complex embedding to avoid the origin at $t=1/2$.
+3. **Main Idea**: Linear homotopy fails continuity without the condition from (2), so use complex embedding to avoid the origin at $t=1/2​$.
+   $H(\mathbf{x}, t) = \operatorname{normalize}(e^{i\pi t}\alpha(\mathbf{x}))$
 
    Suppose $n$ is odd and define $f:S^n \to S^n$ to be the antipodal map. Since $n+1$ is even, we have $n+1 =2m$ for some $m\in \NN$, so identify $S^n = S^{2m-1} \subset \RR^{2m} \cong\CC^m$
 
@@ -156,25 +159,25 @@ typora-copy-images-to:  .
 
        1. $\theset{A, R}$
          Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
-
+       
        2. $\theset{D, O, S^1}$
          These all have no single point that can be removed to disconnect the space.
-
+       
        3. $\theset{B,S^1 \vee S^1}$
           Remove point at junction
-
+       
        4. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
          These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
-
+       
        5. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
          These all have a point that can be removed to yield 3 connected components homeomorphic to $I$. This is the "pasting" point in the vee.
-
+       
        6. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
          Can remove **two** points to disconnect each into **five** components.
-
+       
        7. $\theset{P, Q, S^1 \vee [0,1]}$
          Both contain a nontrivial loop.
-
+       
        8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
          Can remove **one** point to separate into **four** components.
 
