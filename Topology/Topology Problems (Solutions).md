@@ -350,7 +350,7 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
 
 1. Any covering map $p: S^1\cross S^1 \into \RP^2$ would induce an injection on fundamental groups, but $\pi_1(T) = \ZZ^2$ and $\pi_1(\ZZ_2)$ - but there are no homomorphisms between these groups. Why? One of them has an element of order 2, the other does not.
 
-2. Theorem: if $M_g \surjective M_h$ is an $n-$sheeted covering space, then $g = n(h-1) +1$
+2. Theorem: if $M_g \surjective M_h$ is an $n-$sheeted covering space, then $g = n(h-1) +1$.
 
 3. Draw CW square for $T$ and cut down the center to see two copies of $K$.
 
