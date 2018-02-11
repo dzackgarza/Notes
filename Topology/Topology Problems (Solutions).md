@@ -25,8 +25,11 @@ typora-copy-images-to:  .
 
    Taking norms and observing that since $f,g \in S^n \implies \norm{f} = \norm{g} = 1$, this forces $t = 1-t$ and thus $t=1/2$. But this would force $(1/2)f(x) = (-1/2)g(x)$ and thus $f(x) = -g(x)$, which we assumed was not the case.
 
-3. **Main Idea**: Linear homotopy fails continuity without the condition from (2), so use complex embedding to avoid the origin at $t=1/2​$.
-   $H(\mathbf{x}, t) = \operatorname{normalize}(e^{i\pi t}\alpha(\mathbf{x}))$
+3. **Main Idea**: Linear homotopy fails continuity without the condition from (2), so use complex embedding to avoid the origin at $t=1/2$.
+   $H(\mathbf{x}, t) = e^{i\pi t}\mathbf{x}$
+   Check:
+   $H(\mathbf{x}, 0) = \mathbf{x} = \id_{S^n}$
+   $H(\bf{x}, 1) = -\bf{x} = \alpha(\bf{x})$
 
    Suppose $n$ is odd and define $f:S^n \to S^n$ to be the antipodal map. Since $n+1$ is even, we have $n+1 =2m$ for some $m\in \NN$, so identify $S^n = S^{2m-1} \subset \RR^{2m} \cong\CC^m$
 
@@ -38,7 +41,11 @@ typora-copy-images-to:  .
 
    This is well-defined, since $e^{i\pi t} > 0$ and $z \neq 0$, so the linear homotopy in ambient $\CC^m$ avoids the origin and thus the denominator when taking the projection is never zero.
 
-4. $\Leftarrow$: **Main Idea**: Projection and inclusion are homotopy inverses. One composition is equality, the other is just equality *up to homotopy*, but that's all we need!
+4. $\Leftarrow$: **Main Idea**: Use projection and inclusion as homotopy inverses. One composition is equality, the other is just equality *up to homotopy*, but that's all that's needed.
+   $H(x,t) \mid H(x, 0) = x, H(x, 1) = \pt$
+   $X \mapsvia{\pi} \pt \mapsvia{\iota} X \mapsvia{\pi} \pt$
+   $\pi \circ \iota: \pt \into \pt = \id_{\pt}$
+   $\iota \circ \pi: X \into X,$ $(\iota\circ\pi)(x) = \pt = g(x) \stackrel{\tiny\text{assumption}}{\homotopic} \id_X$
 
    Suppose $\id_X$ is nullhomotopic. 
 
@@ -60,7 +67,7 @@ typora-copy-images-to:  .
 
    $f: X \into \theset{x_0}$ and $g: \theset{x_0} \into X$ 
    such that 
-   $f\compose g \homotopic \id_{\theset{x_0}}$ and $g\compose f \homotopic \id_X$.
+   $f\circ g \homotopic \id_{\theset{x_0}}$ and $g\circ f \homotopic \id_X$.
 
    Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = x_0$ for every $x\in X$.)  But then $(g\circ f)(x) = g(x_0) = y_0$ for some constant $y_0 \in X$, so $g\circ f$ is a constant map. By assumption, $g\circ f \homotopic \id_X$, so the identity is homotopic to a constant map.
 
