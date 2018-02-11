@@ -9,7 +9,8 @@
 5.  Show that $S^1 \times I \simeq M$, the Mobius strip.
 6.  Show that $\mathbb{R}^3 - S^1 \simeq S^1 \vee S^2$.
 7.  Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
-8.  Let $f,g : S^1 \rightarrow X$,
+8.  **REVISIT**
+   Let $f,g : S^1 \rightarrow X$,
    $P = X \cup_f B^2 \cong X \coprod B^2 / \sim$, where $x \sim f(x)$,
    $Q = X \cup_g B^2$.
    Show that $f\simeq g \implies P\simeq Q$.

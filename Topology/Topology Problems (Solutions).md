@@ -77,7 +77,7 @@ typora-copy-images-to:  .
    Claim: $S^1 \cross I \homotopic S^1 \cross \theset{*}$
    This is because $I$ is contractible, so $I \homotopic \theset{*}$. (Maybe needs further proof)
 
-   Claim: $M \homotopic S^1 \cross \theset{*}$.​
+   Claim: $M \homotopic S^1 \cross \theset{*}$.
 
    If both of these claims hold, then we will have $M \homotopic S^1 \cross I$ as two spaces that deformation retract onto a common space.
    Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$. 
@@ -93,6 +93,7 @@ typora-copy-images-to:  .
    But then, summarizing our results, we have $S^1 \cross I \homotopic S^1 \cross \theset{*} \cong S^1 \cross \theset{\frac{1}{2}} = U \homotopic M$, and so $S^1 \cross I \homotopic M$ as desired.
 
 6. **Main Idea**: Using a funky deformation retract. See Hatcher, PDF page 55, Example 1.23. Add picture!!
+   Deform $\RR^3\into S^3$, and expand the circle of empty space by blowing it up like a balloon. This yields $S^3 - \mathcal{l}$, a line/diameter, then pull $l$ into an $S^1$.
 
    Deformation retract $\\R^3 - S^1$ onto $S^2 - U$, where $U$ is a diameter inside $S^2$ also passing through the middle of $S^1$ in the interior. This can be done by moving points outside of $S^2$ towards the surface, and points inside $S^2$ just move away from the $S^1$ inside (either towards $U$ or towards the surface of $S^2$, so they don't hit $S^1$).
 
@@ -189,6 +190,9 @@ typora-copy-images-to:  .
          Can remove **one** point to separate into **four** components.
 
 8. **Main Idea**: Show that both spaces are a deformation retract of the same space. (See Hatcher, Proposition 0.18, p. 25)
+   Given the homotopy $H: f\ \to g$,
+   $X \union_f B^2 \rightarrow X\union_H (B^2 \cross I) \leftarrow X \union_g B^2$
+   $(X, A): X\cross I \surjects (X\cross \theset{0}) \union (A\cross I)$
 
    Suppose we have the following maps
 
@@ -209,7 +213,7 @@ typora-copy-images-to:  .
 
    We want to that $P$ and $Q$ are homotopy-equivalent. In order to do so, we will construct a larger space which deformation retracts onto both $P$ and $Q$, which is a homotopy equivalence.
 
-   With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \boundary B^2$. In particular, $S^1$ is a subspace of $B^2$.
+   With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \bd B^2$. In particular, $S^1$ is a subspace of $B^2$.
 
    Claim: Both $P​$ and $Q​$ are subspaces of $R​$.
    Since $H(z, 0) = f(z)$. So considering $X \coprod_H B^2 \times \theset{0} \cong X \coprod_f B^2 = P$. A similar argument holds at the point $1\in I$. (*Not a strong argument*)
@@ -225,9 +229,15 @@ typora-copy-images-to:  .
 
 ## Fundamental Group
 
-1. **Main idea**: just algebraic manipulations using the $\pi_1$ functor and unravelling definitions. 
+1. **Main idea**: just algebraic manipulations using the $\pi_1$ functor and unravelling definitions. (Don't need path-connectedness..?)
+   Simply connected $\implies \pi_1(X, x) = 0$ so any $\circlearrowleft_x\homotopic \id_x$
+   $\gamma\bar\alpha: \circlearrowleft_x$
+   $\alpha\bar\gamma: \circlearrowleft_x$
+
+   $[\gamma \bar\alpha] = [\alpha\bar\gamma] = 0 \in \pi_1(X) \implies \gamma\bar\alpha \homotopic \id_x \homotopic \alpha\bar\gamma$ 
+   $\gamma\homotopic \gamma\bar\alpha\alpha \homotopic\id_x\alpha\homotopic\alpha.$
    ​
-   Let $X$ be path connected and simply connected, and let $x,y \in X$ be two arbitrary points. Then consider two paths,
+   Let $X$ be path connected and simply connected, and let $x,y \in X$ be two arbitrary points. Then consider two arbitrary paths from $x$ to $y$,
    $\gamma: I \into X, \gamma(0) = x, \gamma(1) = y$
    $\alpha: I \into X, \alpha(0) = x, \alpha(1) = y$.
 
