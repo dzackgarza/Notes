@@ -49,6 +49,7 @@ typora-copy-images-to: ./
 
 
 
+
 # Cellular Homology (Sheet 8)
 
 Compute the homology of these spaces
@@ -79,7 +80,29 @@ Compute the homology of these spaces
 
 # Universal Coefficient Theorem (Sheet 10)
 
-
+1. Identify the following groups up to isomorphism
+   1. $\ZZ_m \tensor \ZZ_n$
+   2. $\ZZ_{60}^4 \tensor (\ZZ_{24}^3 \oplus \ZZ_8^4 \oplus \ZZ_{120})$
+   3. $\ZZ_n \tensor \QQ$
+   4. $(\ZZ \oplus \ZZ_n) \tensor (\QQ/\ZZ)$
+2. Compute:
+   1. $\tor(\ZZ \oplus \ZZ_2 \oplus \ZZ_8, \ZZ \oplus \ZZ_4 \oplus \ZZ_4)$
+   2. $\ext(\ZZ \oplus \ZZ_2 \oplus \ZZ_3, \ZZ \oplus \ZZ_4 \oplus \ZZ_5)$
+3. Compute the following directly from chain complexes and check using UCT:
+   1. $H_*(\RP^n; \ZZ_2)$
+   2. $H_*(\RP^n, \ZZ_3)$
+   3. $H^*(\RP^n, \ZZ_6)$
+4. For any space $X$, show that $H^1(X)$ is free abelian
+5. Show that
+   $H_*(X; \QQ) = H_*(X;\ZZ)\tensor \QQ$
+   $H^*(X; \ZZ) = \hom(H_*(X; \ZZ), \QQ)$
+6. Construct a space $X$ such that 
+   $H_*(X; \ZZ) = (\ZZ, \ZZ_6, \ZZ_{12}, \ZZ \oplus \ZZ_4, 0 \cdots)$
+   Compute $H^*(X; \ZZ)$
+7. Compute $H_*(\RP^2 \cross \RP^2; \ZZ_2)$
+8. Compute $H_*(\Sigma\RP^2 \cross \RP^2; \ZZ)$
+9. Compute $H_*(\RP^2\cross \RP^3; \ZZ)$
+10. Let $G$ be a topological group. Show that $H_*(G)$ is an algebra. Show that $G\actson H_*(G)$, which factors through the homomorphism $G \into \pi_0(G)$ yielding a trivial action if $G$ is path-connected.
 
 # Homological Algebra (Sheet 11)
 
