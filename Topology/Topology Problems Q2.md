@@ -66,4 +66,10 @@ Compute the homology of these spaces
    ![1518395440173](1518395440173.png)
 8. This identification space:
    ![1518395458668](1518395458668.png)
-9. Describe a CW complex structure for the lens space $L(p, 1)$ and compute $\pi_1$
+9. Describe a CW complex structure for the lens space $L(p, 1)$ and compute $\pi_1, H_*$ for it.
+
+
+
+# Degree
+
+1. Let $p(x) = \sum_i^na_ix^i$, view $p: \CC \union \infty \selfmap$
