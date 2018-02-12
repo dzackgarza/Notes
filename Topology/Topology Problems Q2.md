@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ./
+---
+
 # Topology Problems Q2
 
 # Mayer Vietoris (Sheet 7)
@@ -53,4 +57,13 @@ Compute the homology of these spaces
 2. A hexagon with the identifications $a+b+c-a-b-c$
 3. Orientable surface of genus $g$
    1. $g=2$ is given by $a+b-a-b+c+d-c-d$
-4. Nonorientable surface of genus
+4. Nonorientable surface of genus $g$
+   Obtain by removing $g$ discs from $S^2$ and attaching $g$ mobius strips
+5. $S_1 \vee S_1$ with two discs attached via $(ab)^3$ and $(ab)^6$
+6. This identification space:
+   ![2018-02-11 16_28_51-290.pdf](2018-02-11 16_28_51-290.pdf.png)
+7. This identification space:
+   ![1518395440173](1518395440173.png)
+8. This identification space:
+   ![1518395458668](1518395458668.png)
+9. Describe a CW complex structure for the lens space $L(p, 1)$ and compute $\pi_1$
