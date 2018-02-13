@@ -21,5 +21,13 @@ Use the above theorem with the fibration $S^1 \into S^5 \into \CP^2$, as well as
 By the theorem, the $E_2$ page of the spectral sequence looks like this:
 
 ```latex {cmd:true, hide:false, run_on_save:true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usetikzlibrary{matrix}
+\newcommand*\Z{\mathds{Z}}
+\newcommand*\ZZ{|[draw,circle]| \Z_2}
+\begin{document}
 placeholder
+\end{document}
 ```
