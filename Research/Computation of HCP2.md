@@ -1,0 +1,20 @@
+# Computation of $H^*(\CP^2)$
+
+## Theorem
+
+Suppose $F \to E \to B $ is a fibration satisfying (conditions).
+
+Then there exists a spectral sequence $E_*$ such that 
+
+1. $E_2^{p,q} = H^p(B, H^q(F;\ZZ)) = H^p(B;\ZZ) \tensor H^q(F;\ZZ)$
+2. $E_\infty^{p,q} \Rightarrow H^{p+q}(E)$
+
+## Computation
+
+Use the above theorem with the fibration $S^1 \into S^5 \into \CP^2$, as well as the following facts:
+
+1. $H^*(S^1) = \ZZ\delta_0 + \ZZ\delta_1$
+2. $H^*(S^5) = \ZZ\delta_0 + \ZZ\delta_5$
+3. $H^0(\CP^2) = \ZZ$ (i.e. it is simply connected)
+
+By the theorem, the $E_2$ page of the spectral sequence looks like this:
