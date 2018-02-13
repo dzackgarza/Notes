@@ -9,6 +9,22 @@
   $E_2^{p,q} = H^p(B, H^q(F; G)) = H^p(B;G) \tensor H^q(F; G)$ 
   for nice enough spaces $X$ and groups $G$
   - Corollary: $H^n(X\cross Y) = \displaystyle\bigoplus_{p+q=n} H^p(X, H^q(Y))$
+- Facts about tensor products
+  - $(rm)\tensor n = r(m\tensor n) =m \tensor(rn)$
+  - $(r+s)(m\tensor n) = rm\tensor n + sm\tensor n$
+  - $\ZZ_p \tensor_\ZZ \ZZ_q = \ZZ/\gcd(p,q)$ and $\gcd(p,q) = 1$ yields 0.
+  - Some computations:
+    - $\ZZ_n \tensor_\ZZ \QQ = 0$
+    - $\ZZ_n \tensor_\ZZ \QQ/\ZZ = 0$
+    - $\QQ \tensor_\ZZ \QQ = \QQ$
+    - $(\QQ/\ZZ)\tensor_\ZZ \QQ = 0$
+    - $\QQ/\ZZ \tensor_\ZZ \QQ/\ZZ = 0$
+    - $R[x]\tensor_R S \cong S[x]$
+    - $k \into K$ a field extension: $k[x]/(f) \tensor_k K \cong K[x]/(f)$
+  - Symmetric, Associative
+  - $(\oplus A_i )\tensor B = \oplus(A_i \tensor B)$
+  - $\ZZ \tensor A = A$
+  - $\ZZ_n \tensor A = \frac{A}{nA}$
 
 ##List of Results
 
