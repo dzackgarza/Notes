@@ -16,5 +16,6 @@ Use the above theorem with the fibration $S^1 \into S^5 \into \CP^2$, as well as
 1. $H^*(S^1) = \ZZ\delta_0 + \ZZ\delta_1$
 2. $H^*(S^5) = \ZZ\delta_0 + \ZZ\delta_5$
 3. $H^0(\CP^2) = \ZZ$ (i.e. it is simply connected)
+4. $d_2: E_2^{p,q} \to E_2^{p-2, q+1}$
 
 By the theorem, the $E_2$ page of the spectral sequence looks like this:
