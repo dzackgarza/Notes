@@ -20,7 +20,7 @@ Use the above theorem with the fibration $S^1 \into S^5 \into \CP^2$, as well as
 
 By the theorem, the $E_2$ page of the spectral sequence looks like this:
 
-```latex {cmd=true, show=false}
+```latex {cmd=true, hide=true}
 \documentclass{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
