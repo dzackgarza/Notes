@@ -6,7 +6,7 @@
 - For $R$ a ring $R\delta_i$ denotes a copy of $R$ appearing in the $i$th (co)homological degree
 - $S^n \subset \RR^{n+1}$ and $S^{2n-1} \subset \CC^n$
 - Theorem: $F \to E \to B$ a fibration results in 
-  $E_2^{p,q} = H^p(X, H^q(F; G)) = H^p(X;G) \tensor H^q(X; G)​$ 
+  $E_2^{p,q} = H^p(B, H^q(F; G)) = H^p(B;G) \tensor H^q(F; G)$ 
   for nice enough spaces $X$ and groups $G$
   - Corollary: $H^n(X\cross Y) = \displaystyle\bigoplus_{p+q=n} H^p(X, H^q(Y))$
 
