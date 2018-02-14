@@ -103,7 +103,7 @@ Now recalling two useful properties of the tensor product:
 1. $A \tensor_\ZZ 0 = 0$, and
 2. $A \tensor_\ZZ \ZZ = A$,
 
-we obtain the following simplifed version of the $E_2$ page, with the indicated differentials:
+we obtain the following simplifed version of the $E_2$ page, with several potentially non-trivial differentials indicated:
 
 ```latex {cmd:true, hide:false, run_on_save:true}
 \documentclass{standalone}
@@ -118,6 +118,7 @@ we obtain the following simplifed version of the $E_2$ page, with the indicated 
 \newcommand*\HT[2]{H^{#1}(\CP^2) \otimes_{\Z} #2}
 \newcommand*\HCP[1]{H^{#1}(\CP^2)}
 \begin{document}
+
 \begin{tikzpicture}
 \matrix (m) [matrix of math nodes,
   nodes in empty cells,nodes={minimum width=5ex,
@@ -130,13 +131,17 @@ S^1& 	&   &  	& 	& 	&	&	&	\\
 0&	0&		0&	0&	0&	0&	0&	&\\
 0&	0&		0&	0&	0&	0&	0&	&\\
 0&	0&		0&	0&	0&	0&	0&	&\\
-0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	&\\
-0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	&\\ \quad\strut
+0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	\cdots&\\
+0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	\cdots&\\ \quad\strut
 %
 &	0&	1&	2&	3&	4&	5&	\CP_2& \strut \\};
 %
 \draw[thick] (m-8-1.east) -- (m-1-1.east) ;
 \draw[thick] (m-8-1.north) -- (m-8-9.north) ;
-\end{tikzpicture}
+\draw[-stealth] (m-6-2.south east) -- (m-7-4.north west);
+\draw[-stealth] (m-6-3.south east) -- (m-7-5.north west);
+\draw[-stealth] (m-6-4.south east) -- (m-7-6.north west);
+\draw[-stealth] (m-6-5.south east) -- (m-7-7.north west);
+\draw[-stealth] (m-6-6.south east) -- (m-7-8.north west);
 \end{document}
 ```
