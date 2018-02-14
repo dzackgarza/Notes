@@ -18,7 +18,35 @@ Use the above theorem with the fibration $S^1 \into S^5 \into \CP^2$, as well as
 3. $H^0(\CP^2) = \ZZ$ (i.e. it is simply connected)
 4. $d_2: E_2^{p,q} \to E_2^{p-2, q+1}$
 
-By the theorem, the $E_2$ page of the spectral sequence looks like this:
+By the theorem, we have
+
+$$E_2^{p,q} = H^p(\CP^2) \tensor H^q(S^1)$$
+
+Thus the $E_2$ page of the spectral sequence looks like this:
+
+```latex {cmd:true, hide:false, run_on_save:true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usetikzlibrary{matrix}
+\newcommand*\Z{\mathds{Z}}
+\newcommand*\ZZ{|[draw,circle]| \Z_2}
+\begin{document}
+placeholder
+\end{document}
+```
+
+```latex {cmd:true, hide:false, run_on_save:true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usetikzlibrary{matrix}
+\newcommand*\Z{\mathds{Z}}
+\newcommand*\ZZ{|[draw,circle]| \Z_2}
+\begin{document}
+placeholder
+\end{document}
+```
 
 ```latex {cmd:true, hide:false, run_on_save:true}
 \documentclass{standalone}
