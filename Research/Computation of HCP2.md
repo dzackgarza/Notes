@@ -126,11 +126,11 @@ we obtain the following simplified version of the $E_2$ page, with several of th
 %
 S^1& 	&   &  	& 	& 	&	&	&	\\
 %
-0&	0&		0&	0&	0&	0&	0&	&\\
-0&	0&		0&	0&	0&	0&	0&	&\\
-0&	0&		0&	0&	0&	0&	0&	&\\
-0&	0&		0&	0&	0&	0&	0&	&\\
-0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	\cdots&\\
+5&	0&		0&	0&	0&	0&	0&	&\\
+4&	0&		0&	0&	0&	0&	0&	&\\
+3&	0&		0&	0&	0&	0&	0&	&\\
+2&	0&		0&	0&	0&	0&	0&	&\\
+1&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	\cdots&\\
 0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	\cdots&\\ \quad\strut
 %
 &	0&	1&	2&	3&	4&	5&	\CP_2& \strut \\};
@@ -146,3 +146,32 @@ S^1& 	&   &  	& 	& 	&	&	&	\\
 \end{tikzpicture}
 \end{document}
 ```
+
+Now we use the fact that the spectral sequence converges to make several deductions:
+
+## Claim:
+$$H^1(S^5) = 0 \implies H^2(\CP^2) \cong \ZZ~\text{and}~H_1(\CP^2) = 0$$
+
+(This will be a template argument for most of the rest, so I will spell out more details here and gloss over them later.)
+
+- This means that $E_\infty^{0,1} \oplus E_\infty^{1,0} = 0$.
+- Consider the process of obtaining the $E_3$ page:
+  - $E_3^{0,1}$ is obtained from the homology of the complex $0 \into \ZZ \mapsvia{\del_1} H^2(\CP^2) \into 0$, i.e. we have $E_3^{0,1} = \frac{\ker \del_1}{\im 0} = \ker \del_1$
+    - Note that all differentials after the $E_3$ page extend into the $p<0$ and $q<0$ quadrants, so there is stabiization here and $E_3^{0,1} = E_\infty^{0,1}$
+      - But if the homology of this sequence is not zero, then $E_3^{1,0} \neq 0$, so $E_\infty^{0,1} \neq 0$ and $E_\infty^{0,1} \oplus E_\infty^{1,0} \neq 0$, a contradiction.
+    - So this is an acyclic complex, and thus an exact sequence.
+    - **So $\del_1$ is an isomorphism, and $H^2(\CP^2) \cong \ZZ$**
+  - $E_3^{1,0}$ is obtained from the homology of $0 \into H^1(\CP^2) \into 0$
+    - By the same argument, this spot stabilizes at $E_3$ and so this complex must have trivial homology.
+    - **But this can only happen if $H_1(\CP^2) = 0$**
+
+
+## Claim:
+
+$$H^2(S^5) = 0 \implies H^1(\CP^2) \cong H^3(\CP^2)$$
+
+We have $H^2(S^5) = E_\infty^{0,2} \oplus E_\infty^{1,1} \oplus E_\infty^{2,0}$.
+
+Note that $E_2^{0,2} = 0$, so $E_\infty^{0,2} = 0$ there are only two contributing terms to consider.
+
+$E_\infty^{1,1}$: This involves looking at the complex
