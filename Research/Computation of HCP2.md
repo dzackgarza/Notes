@@ -150,7 +150,7 @@ S^1& 	&   &  	& 	& 	&	&	&	\\
 Now we use the fact that the spectral sequence converges to make several deductions:
 
 ## Claim:
-$$H^1(S^5) = 0 \implies H^2(\CP^2) \cong \ZZ~\text{and}~H_1(\CP^2) = 0$$
+$$H^1(S^5) = 0 \implies H^2(\CP^2) \cong \ZZ~\text{and}~H^1(\CP^2) = 0$$
 
 (This will be a template argument for most of the rest, so I will spell out more details here and gloss over them later.)
 
@@ -163,7 +163,7 @@ $$H^1(S^5) = 0 \implies H^2(\CP^2) \cong \ZZ~\text{and}~H_1(\CP^2) = 0$$
     - **So $\del_1$ is an isomorphism, and $H^2(\CP^2) \cong \ZZ$**
   - $E_3^{1,0}$ is obtained from the homology of $0 \into H^1(\CP^2) \into 0$
     - By the same argument, this spot stabilizes at $E_3$ and so this complex must have trivial homology.
-    - **But this can only happen if $H_1(\CP^2) = 0$**
+    - **But this can only happen if $H^1(\CP^2) = 0$**
 
 
 ## Claim:
@@ -181,7 +181,7 @@ $E_\infty^{2,0}$: This involves $0 \into \ZZ \mapsvia{f} H^2(\CP^2) \into 0$, wh
 ## Claim:
 
 $$H^3(S^5) = 0 \implies H^2(\CP^4) \cong H^4(\CP^2) \cong
-H^6(\CP^2),~ H^3(\CP^2) \cong H^5(\CP^2)$$
+H^6(\CP^2),~ H^1(\CP^2) \cong H^3(\CP^2) \cong H^5(\CP^2)$$
 
 Note: this is the first spot where the differentials may not extend into zero quadrants, but since the total homology is zero, this is not a real issue yet.
 
@@ -189,8 +189,29 @@ We have $H^3(S^5) = \displaystyle\bigoplus_{p+q = n}E_\infty^{p,q} = E_\infty^{0
 
 $E_\infty^{0,3}$: We have $E_2^{0,3} = 0$ and is involved in a complex of the form $0 \into E_2^{0,3} \into E_2^{2,2} \into E_2^{4,1} \into E_2^{6,0} \into 0$, which we can identify as $0 \into 0 \into 0 \into H^4(\CP^2) \into H^6(\CP^2) \into 0$, which must be exact, so we have $H^4(\CP^2) \cong H^6(\CP^2)$.
 
-$E_\infty^{1,2}$: We have the complex $0 \into E_2^{1,2} \into E_2^{3,1} \into E_2^{5, 0} \into 0$ which equals $0 \into 0 \into H^3(\CP^2) \mapsvia{f} H^5(\CP^2) \into 0$, which must be exact and so $f$ is an isomorphism.
+$E_\infty^{1,2}$: We have the complex $0 \into E_2^{1,2} \into E_2^{3,1} \into E_2^{5, 0} \into 0$ which equals $0 \into 0 \into H^3(\CP^2) \mapsvia{f} H^5(\CP^2) \into 0$, which must be exact and so $f$ is an isomorphism yielding $H^3(\CP^2) \cong H^5(\CP^2)$.
 
-$E_\infty^{2,1}$: We have the complex $0 \into E_2^{0, 2} \into E_2^{2, 1} \into E_2^{4, 0} \into 0$ which equals $0 \into 0 \into H^2(\CP^2) \into H^4(\CP^2) \into 0$.
+$E_\infty^{2,1}$: We have the complex $0 \into E_2^{0, 2} \into E_2^{2, 1} \into E_2^{4, 0} \into 0$ which equals $0 \into 0 \into H^2(\CP^2) \into H^4(\CP^2) \into 0$, so $H^2(\CP^2) \cong H^4(\CP^2)$.
 
 (Here we are using the fact that $E_2^{0,2} = H^2(S^1) = 0$ instead of the automatic zeros from the differentials extending into zero quadrants.)
+
+$E_\infty^{3,0}$: We have $0 \into E_2^{1,1} \into E_2^{3,0} \into 0$ which equals $0 \into H^1(\CP^2) \into H^3(\CP^2) \into 0$ which must be exact and so $H^1(\CP^2) \cong H^3(\CP^2)$
+
+Note that $H^4(S^5) = 0$ doesn't give any new information at this point.
+
+## Claim
+$$H^5(S^5) = \ZZ \implies H^6(\CP^2) = 0$$
+
+We have $H^5(S^5) = \displaystyle\bigoplus_{p+q=n}E_2^{p,q}$, and so there must now be a nonzero term in this sum.
+
+Since $q > 1$ stabilizes to zero on $E_2$, the nonzero term must come from $E_2^{5,0}$ or $E_2^{4,1}$.
+
+$E_2^{5,0}$: The complex is $0 \into H^3(\CP^2) \into H^5(\CP^2) \into 0$
+
+$E_2^{4,1}$: The complex is $0 \into H^4(\CP^2) \into H^6(\CP^2) \into 0$
+
+In order for an $E_3$ term to be nonzero, one of these complexes must have nonzero homology. But by the previous claim, $0 \into H^3(\CP^2) \into H^5(\CP^2) \into 0$ does have zero homology, so we consider the second complex instead.
+
+We know from our current results that  $0 \into H^4(\CP^2) \into H^6(\CP^2) \into 0$ is equal to $0 \into \ZZ \mapsvia{f} H^6(\CP^2) \into 0$, and we know that $\frac{\ker f}{\im 0} = \ker f \cong H^5(S^5) = \ZZ$, since this is the only possible nonzero term in the above sum.
+
+(Not sure how to use $\ker f = 0$ to show $H^6(\CP^2) = 0$, or how to inductively continue.)
