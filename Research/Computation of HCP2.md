@@ -98,10 +98,12 @@ S^1& 	&   &  	& 	& 	&	&	&	\\
 \end{document}
 ```
 
-We can now use two properties of the tensor product:
+Now recalling two useful properties of the tensor product:
 
-1. $A \tensor_\ZZ 0 = 0$
-2. $A \tensor_\ZZ \ZZ = A$
+1. $A \tensor_\ZZ 0 = 0$, and
+2. $A \tensor_\ZZ \ZZ = A$,
+
+we obtain the following simplifed version of the $E_2$ page, with the indicated differentials:
 
 ```latex {cmd:true, hide:false, run_on_save:true}
 \documentclass{standalone}
