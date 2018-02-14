@@ -168,10 +168,29 @@ $$H^1(S^5) = 0 \implies H^2(\CP^2) \cong \ZZ~\text{and}~H_1(\CP^2) = 0$$
 
 ## Claim:
 
-$$H^2(S^5) = 0 \implies H^1(\CP^2) \cong H^3(\CP^2)$$
+$$H^2(S^5) = 0 \implies H^1(\CP^2) \cong H^3(\CP^2) ~\text{and}~ H^2(\CP^2) = \ZZ$$
 
 We have $H^2(S^5) = E_\infty^{0,2} \oplus E_\infty^{1,1} \oplus E_\infty^{2,0}$.
 
 Note that $E_2^{0,2} = 0$, so $E_\infty^{0,2} = 0$ there are only two contributing terms to consider.
 
-$E_\infty^{1,1}$: This involves looking at the complex
+$E_\infty^{1,1}$: This involves looking at the complex $0 \into H^1(\CP^2) \mapsvia{\del_2} H^3(\CP^2) \into 0$. All differentials extend into zero quadrants starting at $E_3$, so this entry stabilizes at $E_3$. But any homology in this complex would contribute a nonzero contribution to $H^2(S^5)$, so this complex is acyclic/exact and $\del_2$ is an isomorphism.
+
+$E_\infty^{2,0}$: This involves $0 \into \ZZ \mapsvia{f} H^2(\CP^2) \into 0$, where the $E^3$ differentials extend into zero quadrants and thus this entry stabilizes at $E^3$. Any nonzero homology here yields a nonzero contribution to $H^2(S^5)$, so this complex is acyclic/exact and thus $f$ is an isomorphism.
+
+## Claim:
+
+$$H^3(S^5) = 0 \implies H^2(\CP^4) \cong H^4(\CP^2) \cong
+H^6(\CP^2),~ H^3(\CP^2) \cong H^5(\CP^2)$$
+
+Note: this is the first spot where the differentials may not extend into zero quadrants, but since the total homology is zero, this is not a real issue yet.
+
+We have $H^3(S^5) = \displaystyle\bigoplus_{p+q = n}E_\infty^{p,q} = E_\infty^{0,3} \oplus E_\infty^{1,2} \oplus E_\infty^{2,1} \oplus E_\infty^{3,0}$. Every summand must be zero, so we examine them individually.
+
+$E_\infty^{0,3}$: We have $E_2^{0,3} = 0$ and is involved in a complex of the form $0 \into E_2^{0,3} \into E_2^{2,2} \into E_2^{4,1} \into E_2^{6,0} \into 0$, which we can identify as $0 \into 0 \into 0 \into H^4(\CP^2) \into H^6(\CP^2) \into 0$, which must be exact, so we have $H^4(\CP^2) \cong H^6(\CP^2)$.
+
+$E_\infty^{1,2}$: We have the complex $0 \into E_2^{1,2} \into E_2^{3,1} \into E_2^{5, 0} \into 0$ which equals $0 \into 0 \into H^3(\CP^2) \mapsvia{f} H^5(\CP^2) \into 0$, which must be exact and so $f$ is an isomorphism.
+
+$E_\infty^{2,1}$: We have the complex $0 \into E_2^{0, 2} \into E_2^{2, 1} \into E_2^{4, 0} \into 0$ which equals $0 \into 0 \into H^2(\CP^2) \into H^4(\CP^2) \into 0$.
+
+(Here we are using the fact that $E_2^{0,2} = H^2(S^1) = 0$ instead of the automatic zeros from the differentials extending into zero quadrants.)
