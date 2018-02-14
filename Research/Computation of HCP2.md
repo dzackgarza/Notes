@@ -130,13 +130,19 @@ S^1& 	&   &  	& 	& 	&	&	&	\\
 0&	0&		0&	0&	0&	0&	0&	&\\
 0&	0&		0&	0&	0&	0&	0&	&\\
 0&	0&		0&	0&	0&	0&	0&	&\\
-0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	&\\
-0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	&\\ \quad\strut
+0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	\cdots&\\
+0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	\cdots&\\ \quad\strut
 %
 &	0&	1&	2&	3&	4&	5&	\CP_2& \strut \\};
 %
 \draw[thick] (m-8-1.east) -- (m-1-1.east) ;
 \draw[thick] (m-8-1.north) -- (m-8-9.north) ;
+\draw[-stealth] (m-6-2.south east) -- (m-7-4.north west);
+\draw[-stealth] (m-6-3.south east) -- (m-7-5.north west);
+\draw[-stealth] (m-6-4.south east) -- (m-7-6.north west);
+\draw[-stealth] (m-6-5.south east) -- (m-7-7.north west);
+\draw[-stealth] (m-6-6.south east) -- (m-7-8.north west);
+
 \end{tikzpicture}
 \end{document}
 ```
