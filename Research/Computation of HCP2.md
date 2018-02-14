@@ -98,6 +98,11 @@ S^1& 	&   &  	& 	& 	&	&	&	\\
 \end{document}
 ```
 
+We can now use two properties of the tensor product:
+
+1. $A \tensor_\ZZ 0 = 0$
+2. $A \tensor_\ZZ \ZZ = A$
+
 ```latex {cmd:true, hide:false, run_on_save:true}
 \documentclass{standalone}
 \usepackage{tikz}
@@ -111,6 +116,25 @@ S^1& 	&   &  	& 	& 	&	&	&	\\
 \newcommand*\HT[2]{H^{#1}(\CP^2) \otimes_{\Z} #2}
 \newcommand*\HCP[1]{H^{#1}(\CP^2)}
 \begin{document}
-placeholder
+\begin{tikzpicture}
+\matrix (m) [matrix of math nodes,
+  nodes in empty cells,nodes={minimum width=5ex,
+  minimum height=5ex,outer sep=-5pt},
+  column sep=1ex,row sep=1ex]{
+%
+S^1& 	&   &  	& 	& 	&	&	&	\\
+%
+0&	0&		0&	0&	0&	0&	0&	&\\
+0&	0&		0&	0&	0&	0&	0&	&\\
+0&	0&		0&	0&	0&	0&	0&	&\\
+0&	0&		0&	0&	0&	0&	0&	&\\
+0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	&\\
+0&	\Z&	\HCP{1}&	\HCP{2}&	\HCP{3}&	\HCP{4}&	\HCP{5}&	&\\ \quad\strut
+%
+&	0&	1&	2&	3&	4&	5&	\CP_2& \strut \\};
+%
+\draw[thick] (m-8-1.east) -- (m-1-1.east) ;
+\draw[thick] (m-8-1.north) -- (m-8-9.north) ;
+\end{tikzpicture}
 \end{document}
 ```
