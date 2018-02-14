@@ -64,9 +64,14 @@ S^1& 	&   &  	& 	& 	&	&	&	\\
 \documentclass{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
 \usetikzlibrary{matrix}
 \newcommand*\Z{\mathds{Z}}
-\newcommand*\ZZ{|[draw,circle]| \Z_2}
+\newcommand*\CP{\mathbb{CP}}
+\newcommand*\ee[2]{H^{#1}(\CP^2) \otimes_{\Z} H^{#2}(S^1)}
+\newcommand*\zt[2]{#1 \otimes_{\Z} #2}
+\newcommand*\HT[2]{H^{#1}(\CP^2) \otimes_{\Z} #2}
+\newcommand*\HCP[1]{H^{#1}(\CP^2)}
 \begin{document}
 placeholder
 \end{document}
@@ -76,9 +81,14 @@ placeholder
 \documentclass{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
 \usetikzlibrary{matrix}
 \newcommand*\Z{\mathds{Z}}
-\newcommand*\ZZ{|[draw,circle]| \Z_2}
+\newcommand*\CP{\mathbb{CP}}
+\newcommand*\ee[2]{H^{#1}(\CP^2) \otimes_{\Z} H^{#2}(S^1)}
+\newcommand*\zt[2]{#1 \otimes_{\Z} #2}
+\newcommand*\HT[2]{H^{#1}(\CP^2) \otimes_{\Z} #2}
+\newcommand*\HCP[1]{H^{#1}(\CP^2)}
 \begin{document}
 placeholder
 \end{document}
