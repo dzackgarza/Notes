@@ -103,7 +103,7 @@ Now recalling two useful properties of the tensor product:
 1. $A \tensor_\ZZ 0 = 0$, and
 2. $A \tensor_\ZZ \ZZ = A$,
 
-we obtain the following simplifed version of the $E_2$ page, with the indicated differentials:
+we obtain the following simplified version of the $E_2$ page, with several of the potentially non-trivial differentials indicated:
 
 ```latex {cmd:true, hide:false, run_on_save:true}
 \documentclass{standalone}
