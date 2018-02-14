@@ -1,3 +1,7 @@
+---
+output: pdf_document
+---
+
 # Computation of $H^*(\CP^2)$
 
 ## Theorem
