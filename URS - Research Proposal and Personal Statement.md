@@ -8,13 +8,13 @@ Improving the Accessibility of Homotopy and Homology Data
 
 ## Abstract (250 Words)
 
-Homology is a relatively recent mathematical tool, developed in the early to mid 20th century to distinguish and classify mathematical spaces. It has proved to be a widely successful tool across a variety of Mathematical disciplines, spawning the study "homological algebra", an entirely new branch of mathematics that generalizes these tools and theories to work in various other settings as well. 
+Homology is a relatively recent mathematical tool, developed in the early to mid 20th century to distinguish and classify mathematical spaces. It has proved to be a widely successful tool, spawning the study "homological algebra", an entirely new branch of Mathematics that generalizes these tools and theories to work in a variety of settings. 
 
-One application is in the emerging field of topological data analysis, which uses these tools to detect gaps or "holes" in data sets - in 2008, this technique was applied to study a large image dataset, which was found to have characteristics related to a well-known and well-studied mathematical object, the Klein Bottle. Another paper applied this technique to discover underlying structures in the visual cortex in a group of primates that were previously thought to be random. Other applications include the study of fluid flows, time series data, signal processing, and electrodynamics.
+One application is in the emerging field of data analysis, which uses these tools to detect gaps or "holes" in data sets - in 2008, this technique was applied to study a large image dataset, which was found to have characteristics related to a well-known and well-studied mathematical object, the Klein Bottle. Another paper applied this technique to discover underlying structures in the visual cortex in a group of primates that were previously thought to be random. Other applications include the study of fluids, time series data, signal processing, and electrodynamics.
 
-While it is possible to compute homology (as well as its closely related cousin, homotopy) groups for many types of objects and spaces, this information currently is scattered throughout textbooks, manuscripts, theses, and academic papers. Moreover, computations of these objects often involves the use of specialized techniques, and are the subject of active and ongoing research.
+While it is possible to compute homology (as well as its closely related cousin, homotopy) groups for many types of objects and spaces, this information currently is scattered throughout textbooks, unpublished notes, doctoral theses, and academic papers. Moreover, while the results are relatively easy to describe, computation of these groups often require specialized technique, and is the object of ongoing research.
 
-Thus, the goal of this project is to assemble a list of commonly encountered mathematical spaces, and to provide a unified and easily accessible reference to their properties and the computations of their known homology and homotopy groups.
+Thus, the goal of this project is to assemble a list of commonly encountered mathematical spaces, to reach an understanding of what is currently known about them, and to provide a unified and easily accessible reference to their properties and what is known about their homology and homotopy groups.
 
 ## Description (1000 Words)
 
