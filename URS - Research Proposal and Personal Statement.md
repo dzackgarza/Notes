@@ -6,7 +6,7 @@
 
 Improving the Accessibility of Homotopy and Homology Data
 
-## Abstract (250 Words)
+## Abstract
 
 Homology is a relatively recent mathematical tool, developed in the early to mid 20th century to distinguish and classify mathematical spaces. It has proved to be a widely successful tool, spawning the study "homological algebra", an entirely new branch of Mathematics that generalizes these tools and theories to work in a variety of settings. 
 
