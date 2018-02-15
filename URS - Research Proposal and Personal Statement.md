@@ -8,11 +8,13 @@ Improving the Accessibility of Homotopy and Homology Data
 
 ## Abstract (250 Words)
 
-Homology is a relatively recent mathematical tool, developed in the early to mid 20th century to distinguish and classify mathematical spaceshas proved to be a widely successful tool in these areas.  has resulted in the creation of "homological algebra", an entirely new branch of mathematics that generalizes these tools and theories to work in various other settings as well. 
+Homology is a relatively recent mathematical tool, developed in the early to mid 20th century to distinguish and classify mathematical spaces. It has proved to be a widely successful tool across a variety of Mathematical disciplines, spawning the study "homological algebra", an entirely new branch of mathematics that generalizes these tools and theories to work in various other settings as well. 
 
-One application is in the emerging field of topological data analysis, which uses homological tools to detect gaps or "holes" in data sets - in 2008, this technique was applied to study a large image dataset, which was found to have characteristics related to a well-known and well-studied mathematical object, the Klein Bottle. Another paper applied this technique to discover underlying structures in the visual cortex in a group of primates that were previously thought to be random. Other applications include the study of fluid flows, time series data, signal processing, and electrodynamics.
+One application is in the emerging field of topological data analysis, which uses these tools to detect gaps or "holes" in data sets - in 2008, this technique was applied to study a large image dataset, which was found to have characteristics related to a well-known and well-studied mathematical object, the Klein Bottle. Another paper applied this technique to discover underlying structures in the visual cortex in a group of primates that were previously thought to be random. Other applications include the study of fluid flows, time series data, signal processing, and electrodynamics.
 
-Recent breakthroughs include the use of a related tool, "Persistent Homology", to analyze large collections of images which were found to have the homological characteristics of a well-known and well-studied mathematical object, the Klein bottle. A similar recent paper applied this tool to experimental data concerning the neural responses in the visual cortex of a group of primates, unearthing new underlying structures that were previously thought ot be random. 
+While it is possible to compute homology (as well as its closely related cousin, homotopy) groups for many types of objects and spaces, this information currently is scattered throughout textbooks, manuscripts, theses, and academic papers, and the study of these groups is the source of ongoing current research. Moreover, many computations of these groups require specialized te
+
+
 
 While it is possible to compute homology for many types of objects and spaces, this information is scattered throughout textbooks and research papers. The goal of this project is to collect data for a wide variety of these spaces, including the computations of their homology, and to collect them together into a single, easily accessible reference.
 
