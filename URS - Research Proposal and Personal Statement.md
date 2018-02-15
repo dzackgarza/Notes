@@ -1,8 +1,8 @@
 # URS Research Proposal
 
-# Improving the Accessibility of Homotopy and Homology Data
+# Title: Improving the Accessibility of Homotopy and Homology Data
 
-## Abstract
+## Overview / Abstract
 
 Homology is a relatively recent mathematical tool, developed in the early to mid 20th century to distinguish and classify mathematical spaces. It has proved to be a widely successful tool, spawning the study "homological algebra", an entirely new branch of Mathematics that generalizes these tools and theories to work in a variety of settings. 
 
@@ -14,7 +14,7 @@ Thus, the goal of this project is to assemble a list of commonly encountered mat
 
 
 
-# Project Description
+# Description of Project
 
 ### Introduction
 
@@ -28,8 +28,6 @@ However, in the early 1930s, what is now called the "Hopf Fibration" was discove
 
 Since then, the computation of higher homotopy groups of the spheres and investigations of the complex behavior that occurs has been one of the central problems in Topology and a driving force behind the research and development of new tools and techniques. One of these tools is homology, as referenced in the introduction, which is a similar type of computation one can carry out for spaces that has become of central importance in its own right as well.
 
-
-
 ### Research Question / Goal of the Work
 
 As such, the motivating goal of this work is to study what is currently known about the higher homotopy groups of spheres - great strides have been made over the past 90 years, but there is also still much that is unknown about these groups and many open questions. In the process, it will be necessary to examine a multitude of other closely-related spaces, as well as closely-related tools such as homology. 
@@ -38,13 +36,11 @@ The primary goal will then be to summarize what is known (and unknown) about the
 
 Further work will then be done to apply the techniques and tools discovered along  the way to any unknown homotopy or homology groups, potentially yielding new information about their associated spaces.
 
-
-
 ### Potential Significance
 
 The significance of this project is two-fold: of primary significance is making this information available in a single place, in an easily accessible and searchable format. Fields outside Mathematics are increasingly finding themselves faced with these kinds of "spaces", and computer software is being made available that can algorithmically compute things such as homology. With this information in hand, however, it can still be quite a leap for researchers outside of Mathematics to compare information about their space with properties of spaces that are well-known to the Mathematical research community.
 
-Of secondary significance is the fact that these objects and tools have become a cornerstone of modern Mathematics, and their properties have proved to be pivotal in many disparate fields of both pure and applied Mathematics. They are also the subject of current and active research - for example, a 2015 paper detailed the adaptation of several tools to compute a large number of previously unknown higher homotopy groups for spheres, not only yielding interesting patterns within these objects, but utilizing new techniques that might be adapted to make progress on other open problems. It is often said that our knowledge of these groups is a "measuring stick" for our general knowledge of Topology and Mathematics in general.
+Of secondary significance is the fact that these objects and tools have become a cornerstone of modern Mathematics, and their properties have proved to be pivotal in many disparate fields of both pure and applied Mathematics. They are also the subject of current and active research - for example, a 2015 paper detailed the adaptation of several tools to compute a large number of previously unknown higher homotopy groups for spheres, not only yielding interesting patterns within these objects, but utilizing new techniques that might be adapted to make progress on other open problems.
 
 ### Preliminary Work and Methods
 
@@ -52,7 +48,7 @@ The preliminary work for this project is primarily being carried out during the 
 
 ## Timeline
 
-Over the course of 3 months, we hope to cover enough relevant material for me to understand a number of relevant papers written in this area - this may end up being equivalent to the content that might be covered over the span of several advanced graduate courses. Some relevant results appeared papers from the 1950s and 60s, which may be approachable early in the project, while papers published after 1990 may require more research into modern development. A sample timeline is as follows:
+Over the course of 3 months, we hope to cover enough material for me to understand a number of relevant papers written in this area - this may end up being equivalent to the content that might be covered over the span of several advanced second-year graduate courses. Some relevant results appeared in papers from the 1950s and 60s, which may be approachable early in the project, while papers published after 1990 may require more reading and research into modern developments. A tentative timeline is as follows:
 
 - 6/25
 
@@ -146,12 +142,10 @@ Over the course of 3 months, we hope to cover enough relevant material for me to
 - 9/10 (Last Week)
 
   - (If applicable) Finalize website, add any new data found
-  - Finalize typesetting paper (for potential paper submission)
+  - Finalize typesetting paper (for potential journal submission)
   - Finalize typesetting final report (for URS submission)
 
   ​
-
-### 
 
 ### References
 
@@ -164,12 +158,18 @@ Over the course of 3 months, we hope to cover enough relevant material for me to
 
 ## Personal Statement (600 Words)
 
-*Describe how carrying out this summer research project would advance your academic and professional goals*
+I have been interested in this particular research area since first taking a Topology course here at UCSD during my first year, where I was introduced to the basics of the subject. I went on to take a second class and sit in on a graduate level course during my first year, and am now enrolled in the graduate Topology sequence and simultaneously working with the same professor during the FMP. 
 
-- Academic and personal achievements
-- Talents, experiences, interests related to field
-- Academic and professional goals
-  - Contributions you would like to make
-  - How this research will advance these goals
-- Role models and influences
-- Special circumstances, challenges overcome
+This is an area I have quite enjoyed learning about for the past year or two, and I have taken many relevant classes as well as explored the field in my free time. As the president of our campus Math club, I have given a number of talks and workshops 
+
+so I will be applying to graduate school later this year to continue studying it at a deeper level in a Ph.D. program. 
+
+In Mathematics, I feel like it is quite difficult to get any research experience as an undergraduate at all, much less in an area you are actively interested in, so this program would be an amazing opportunity for me to prepare myself for graduate studies while learning even more about a topic I love.
+
+I am the first person in my immediate family to really go through with a college education, so my current goal is to graduate and obtain my undergraduate degree in Mathematics. After that, my goal is to get into a good graduate program so that I may continue my studies and hopefully reach a level where I can make meaningful contributions to help advance the field. Ideally, I would then like to continue on to work as a research professor at a university, but would also enjoy a position teaching introductions to these topics to the next generation of mathematicians.
+
+I am also a returning student, having left college in my early years in order to support myself and my family. I returned to school full-time at a junior college a few years ago, after which I transferred here to UCSD. Since transferring, I have worked part-time in order to support myself while attending school full-time. 
+
+This, combined with the fact that I am slightly older than most other students, has put a slight damper in how much I have time I have been able to invest in forming relationships with professors and potentially getting involved in any undergraduate research. As such, this program would allow me to take some time to fully focus on research, which would do wonders for my preparedness for graduate school and really give me a chance to do significant work with my mentor. But perhaps most importantly, this would be an amazing opportunity for me to really experience a little bit of the life and career I am ultimately aiming for.
+
+However, 
