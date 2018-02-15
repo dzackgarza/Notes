@@ -12,11 +12,9 @@ Homology is a relatively recent mathematical tool, developed in the early to mid
 
 One application is in the emerging field of topological data analysis, which uses these tools to detect gaps or "holes" in data sets - in 2008, this technique was applied to study a large image dataset, which was found to have characteristics related to a well-known and well-studied mathematical object, the Klein Bottle. Another paper applied this technique to discover underlying structures in the visual cortex in a group of primates that were previously thought to be random. Other applications include the study of fluid flows, time series data, signal processing, and electrodynamics.
 
-While it is possible to compute homology (as well as its closely related cousin, homotopy) groups for many types of objects and spaces, this information currently is scattered throughout textbooks, manuscripts, theses, and academic papers, and the study of these groups is the source of ongoing current research. Moreover, many computations of these groups require specialized te
+While it is possible to compute homology (as well as its closely related cousin, homotopy) groups for many types of objects and spaces, this information currently is scattered throughout textbooks, manuscripts, theses, and academic papers. Moreover, computations of these objects often involves the use of specialized techniques, and are the subject of active and ongoing research.
 
-
-
-While it is possible to compute homology for many types of objects and spaces, this information is scattered throughout textbooks and research papers. The goal of this project is to collect data for a wide variety of these spaces, including the computations of their homology, and to collect them together into a single, easily accessible reference.
+Thus, the goal of this project is to assemble a list of commonly encountered mathematical spaces, and to provide a unified and easily accessible reference to their properties and the computations of their known homology and homotopy groups.
 
 ## Description (1000 Words)
 
