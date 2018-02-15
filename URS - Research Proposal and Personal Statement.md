@@ -1,10 +1,6 @@
-# URS - Research Proposal and Personal Statement
+# URS Research Proposal
 
-
-
-## Title of Project
-
-Improving the Accessibility of Homotopy and Homology Data
+# Improving the Accessibility of Homotopy and Homology Data
 
 ## Abstract
 
@@ -16,19 +12,146 @@ While it is possible to compute homology (as well as its closely related cousin,
 
 Thus, the goal of this project is to assemble a list of commonly encountered mathematical spaces, to reach an understanding of what is currently known about them, and to provide a unified and easily accessible reference to their properties and what is known about their homology and homotopy groups.
 
-## Description (1000 Words)
+
+
+# Project Description
+
+### Introduction
 
 The field of Topology was built around the study of mathematical "spaces", things such as spheres and our 3-dimensional world, and it is within this subfield of Mathematics that this project will be centered. 
 
-Perhaps the most central tool in this field is the idea of "homotopy" and the computation of "homotopy groups". For any space, one can compute these groups, and these can be used to mathematically distinguish different spaces - for example, if two spaces have different homotopy groups, then they are different spaces.
+Perhaps the most central tool in this field is the idea of "homotopy" and the computation of "homotopy groups". For any space, one can compute these groups, and these can be used as a systematic way to study and distinguish different spaces. For example, if two spaces have different homotopy groups, then they are different spaces. Alternatively, if a space arises in some context and its homotopy groups match that of a known space, this is strong evidence that these spaces are potentially related or even the same.
 
-Additionally, perhaps the most simple space one can study in Topology is the n-dimensional sphere, and since this is a space, one can compute its homotopy groups. 
+One motivating theme in topology is the study of what are perhaps the simplest spaces: spheres of different dimensions. A 1-dimensional sphere is a circle, for example, while a 2-dimensional sphere would be the surface of an inflatable ball. Since this is a "space", one can compute its homotopy groups, and when these ideas were first introduced in the early 1990s, it was thought that these groups would be relatively simple to understand.
 
-When these ideas were first introduced in the early 1900s, only a small number of these groups were computed, but it was generally thought that homotopy groups of spheres were relatively simple objects. 
+However, in the early 1930s, what is now called the "Hopf Fibration" was discovered, which showed the existence of "higher homotopy groups" of the sphere. Up until this point, only a small number of these computations had been carried out, all of which exhibited relatively simple behavior, so this came has a surprise. 
 
-However, in the early 1930s, what is now called the "Hopf Fibration" was discovered, which showed the existence of "higher homotopy groups" of the sphere. This came as a surprise to many people, as it meant even simple objects such as the sphere could exhibit complex behavior. 
+Since then, the computation of higher homotopy groups of the spheres and investigations of the complex behavior that occurs has been one of the central problems in Topology and a driving force behind the research and development of new tools and techniques. One of these tools is homology, as referenced in the introduction, which is a similar type of computation one can carry out for spaces that has become of central importance in its own right as well.
 
-Since then, the study of higher homotopy groups and ways to compute them has remained a central problem within topology, and has driven the development of new tools and techniques - one of which 
+
+
+### Research Question / Goal of the Work
+
+As such, the motivating goal of this work is to study what is currently known about the higher homotopy groups of spheres - great strides have been made over the past 90 years, but there is also still much that is unknown about these groups and many open questions. In the process, it will be necessary to examine a multitude of other closely-related spaces, as well as closely-related tools such as homology. 
+
+The primary goal will then be to summarize what is known (and unknown) about these spaces, in terms of both homotopy and homology, to collect this information and make an easily accessible reference. This will involve creating either a publication-quality survey paper, or a small website hosted through the Math department with a web-based tool to search and display relevant information.
+
+Further work will then be done to apply the techniques and tools discovered along  the way to any unknown homotopy or homology groups, potentially yielding new information about their associated spaces.
+
+
+
+### Potential Significance
+
+The significance of this project is two-fold: of primary significance is making this information available in a single place, in an easily accessible and searchable format. Fields outside Mathematics are increasingly finding themselves faced with these kinds of "spaces", and computer software is being made available that can algorithmically compute things such as homology. With this information in hand, however, it can still be quite a leap for researchers outside of Mathematics to compare information about their space with properties of spaces that are well-known to the Mathematical research community.
+
+Of secondary significance is the fact that these objects and tools have become a cornerstone of modern Mathematics, and their properties have proved to be pivotal in many disparate fields of both pure and applied Mathematics. They are also the subject of current and active research - for example, a 2015 paper detailed the adaptation of several tools to compute a large number of previously unknown higher homotopy groups for spheres, not only yielding interesting patterns within these objects, but utilizing new techniques that might be adapted to make progress on other open problems. It is often said that our knowledge of these groups is a "measuring stick" for our general knowledge of Topology and Mathematics in general.
+
+### Preliminary Work and Methods
+
+The preliminary work for this project is primarily being carried out during the 2017-2018 school year. I am currently in the middle of a year-long sequence of Algebraic Topology, which is the subject that lays out the mathematical framework in which these research questions are posed. I am additionally working with this professor through the Faculty Mentor Program throughout Winter and Spring quarters, where we are going much more in-depth into the material. In particular, we are studying a particular computational tool known as a "spectral sequence", which is a powerful and widely used computational framework that has been used with great success to study both homotopy and homology for a large variety of spaces. Thus the Summer project I am proposing would be a continuation of the work I am doing through this program, and would start by applying the tools and techniques I am currently learning to these particular spaces.
+
+## Timeline
+
+Over the course of 3 months, we hope to cover enough relevant material for me to understand a number of relevant papers written in this area - this may end up being equivalent to the content that might be covered over the span of several advanced graduate courses. Some relevant results appeared papers from the 1950s and 60s, which may be approachable early in the project, while papers published after 1990 may require more research into modern development. A sample timeline is as follows:
+
+- 6/25
+
+  - Set up regular meetings with advisor
+  - Work out detailed research plan and schedule with advisor
+  - Review Spring/Winter content: fibrations, fibre/vector bundles, classifying spaces, and spectral sequences (primarily reading and working problems)
+
+- 7/2
+
+  - Build a list of references and a reading plan with advisor
+  - Work through details of seminal calculation with the Hopf fibration to show higher homotopy groups exist
+  - Verify standard and known low-dimensional examples
+  - Read and research. Potential topics:
+    - Obstruction theory
+    - Postnikov towers
+    - Simplicial sets
+
+- 7/9
+
+  - Begin verifying known results about low dimensional homotopy groups of spheres using spectral sequences.
+  - Produce small table of known homotopy groups of spheres, dimensions up to 3 and groups up to 5 should be approachable with current techniques
+  - Read and research. Potential topics:
+    - Spectra
+    - K-theory
+    - Extraordinary cohomology theories
+
+- 7/16
+
+  - Compute tables of homotopy and homology for projective spaces
+  - Read and research. Potential topics
+    - Differential topology
+    - Morse theory
+
+- 7/23
+
+  - Begin looking at early papers in the field (1930s-1950)
+  - Continue computing tables of homotopy and homology for projective spaces
+  - Read and research. Potential Topics:
+    - Stable homotopy
+    - Handle theory
+    - H-cobordism
+
+- 7/30
+
+  - Continue reading early papers
+  - Compute tables of homotopy and homology for spaces of Lie Type
+  - Read and research. Potential topics
+    - 3 and 4 dimensional manifolds
+    - The Poincare conjecture
+
+- 8/6
+
+  - Read newer papers (1950 - 1990)
+  - Compute homotopy/homology tables for Lens spaces, Eilenberg-MacLane spaces (where possible, many are not known)
+  - Read and research. Potential topics
+    - Differential graded algebras
+    - Rational homotopy theory
+
+- 8/13
+
+  - Begin reading recent papers (post 2000)
+  - Compute homotopy/homology tables for Lens spaces, Eilenberg-MacLane spaces (where possible, many are not known)
+  - Read and research. Potential topics
+    - Derived categories
+
+- 8/20
+
+  - Begin collecting, summarizing, and organizing results
+  - Compute homotopy/homology tables for Lens spaces, Eilenberg-MacLane spaces (where possible, many are not known)
+  - Read and research. Potential topics
+    - Model categories
+    - Infinity algebras
+
+- 8/27
+
+  - Begin discussing project deliverables with advisor
+  - Begin either:
+    - Typesetting survey paper, or
+    - Creating database and web tool to access information
+  - Read and research. Potential topics
+    - Homotopical algebra
+    - Homotopical geometry
+
+- 9/3
+
+  - Begin typesetting preliminary results in Latex
+    - Create figures, tables, bibliography, etc.
+  - (If applicable) Work with Wilson Cheung in UCSD Math department to get permanent web page up to host web tool
+  - Begin identifying potential publishing outlets: journals, conferences, etc.
+
+- 9/10 (Last Week)
+
+  - (If applicable) Finalize website, add any new data found
+  - Finalize typesetting paper (for potential paper submission)
+  - Finalize typesetting final report (for URS submission)
+
+  ​
+
+
 
 
 
