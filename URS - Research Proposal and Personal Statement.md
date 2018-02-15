@@ -4,7 +4,7 @@
 
 ## Title of Project
 
-Improving the Accessibility of Homological Computations
+
 
 ## Abstract (250 Words)
 
