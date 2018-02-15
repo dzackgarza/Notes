@@ -151,20 +151,7 @@ Over the course of 3 months, we hope to cover enough relevant material for me to
 
   ​
 
-
-
-
-
-### Research Question
-
-- Goal of work
-- Significant of project
-
-### Preliminary Work
-
-### Methods
-
-### Timeline
+### 
 
 ### References
 
