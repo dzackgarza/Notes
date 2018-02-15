@@ -18,7 +18,19 @@ Thus, the goal of this project is to assemble a list of commonly encountered mat
 
 ## Description (1000 Words)
 
-The primary goal of this work is to investigate what is known about the homotopy and homology groups of a variety of common mathematical spaces. One of the most core 
+The field of Topology was built around the study of mathematical "spaces", things such as spheres and our 3-dimensional world, and it is within this subfield of Mathematics that this project will be centered. 
+
+Perhaps the most central tool in this field is the idea of "homotopy" and the computation of "homotopy groups". For any space, one can compute these groups, and these can be used to mathematically distinguish different spaces - for example, if two spaces have different homotopy groups, then they are different spaces.
+
+Additionally, perhaps the most simple space one can study in Topology is the n-dimensional sphere, and since this is a space, one can compute its homotopy groups. 
+
+When these ideas were first introduced in the early 1900s, only a small number of these groups were computed, but it was generally thought that homotopy groups of spheres were relatively simple objects. 
+
+However, in the early 1930s, what is now called the "Hopf Fibration" was discovered, which showed the existence of "higher homotopy groups" of the sphere. This came as a surprise to many people, as it meant even simple objects such as the sphere could exhibit complex behavior. 
+
+Since then, the study of higher homotopy groups and ways to compute them has remained a central problem within topology, and has driven the development of new tools and techniques - one of which 
+
+
 
 ### Research Question
 
