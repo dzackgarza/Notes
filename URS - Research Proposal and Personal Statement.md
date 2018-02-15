@@ -18,7 +18,7 @@ Thus, the goal of this project is to assemble a list of commonly encountered mat
 
 ## Description (1000 Words)
 
-
+The primary goal of this work is to investigate what is known about the homotopy and homology groups of a variety of common mathematical spaces. One of the most core 
 
 ### Research Question
 
