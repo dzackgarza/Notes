@@ -7,7 +7,6 @@ typora-copy-images-to:  .
 ## Homotopy
 
 1. **Main Idea**: A linear homotopy projected onto the sphere works.
-   $H(x,t) = \operatorname{normalize}(tx_0 + (1-t) f(x))$
    ​
    Let $f: X \to S^n \subset \RR^{n+1}$ be an arbitrary map that fails to be surjective. Then, by definition, there is at least one point $s_0 \in S^n - f(X)$. 
 
@@ -18,7 +17,6 @@ typora-copy-images-to:  .
    This is a homotopy, since $H(x, 0) =P(f(x)) = f(x)$ (since $P$ fixes $S^n$) and $H(x, 1) = P(s_0) = s_0$ (since $s_0 \in S^n$).
 
 2. **Main Idea**: Exact same idea as 1, just a more complicated check.
-   $H(x,t) = \operatorname{normalize}(tg(x) + (1-t) f(x))$
 
    Take $H(x, t) = P(tf(x) + (1-t)g(x))$.
    This is well defined; the only case to check is when the denominator is zero. But $\norm{x} = 0$ iff $x =0$, which would imply $tf(x) +(1-t)g(x) = 0$ and so $tf(x) = -(1-t)g(x)$. 
@@ -26,10 +24,6 @@ typora-copy-images-to:  .
    Taking norms and observing that since $f,g \in S^n \implies \norm{f} = \norm{g} = 1$, this forces $t = 1-t$ and thus $t=1/2$. But this would force $(1/2)f(x) = (-1/2)g(x)$ and thus $f(x) = -g(x)$, which we assumed was not the case.
 
 3. **Main Idea**: Linear homotopy fails continuity without the condition from (2), so use complex embedding to avoid the origin at $t=1/2$.
-   $H(\mathbf{x}, t) = e^{i\pi t}\mathbf{x}$
-   Check:
-   $H(\mathbf{x}, 0) = \mathbf{x} = \id_{S^n}$
-   $H(\bf{x}, 1) = -\bf{x} = \alpha(\bf{x})$
 
    Suppose $n$ is odd and define $f:S^n \to S^n$ to be the antipodal map. Since $n+1$ is even, we have $n+1 =2m$ for some $m\in \NN$, so identify $S^n = S^{2m-1} \subset \RR^{2m} \cong\CC^m$
 
@@ -41,11 +35,7 @@ typora-copy-images-to:  .
 
    This is well-defined, since $e^{i\pi t} > 0$ and $z \neq 0$, so the linear homotopy in ambient $\CC^m$ avoids the origin and thus the denominator when taking the projection is never zero.
 
-4. $\Leftarrow$: **Main Idea**: Use projection and inclusion as homotopy inverses. One composition is equality, the other is just equality *up to homotopy*, but that's all that's needed.
-   $H(x,t) \mid H(x, 0) = x, H(x, 1) = \pt$
-   $X \mapsvia{\pi} \pt \mapsvia{\iota} X \mapsvia{\pi} \pt$
-   $\pi \circ \iota: \pt \into \pt = \id_{\pt}$
-   $\iota \circ \pi: X \into X,$ $(\iota\circ\pi)(x) = \pt = g(x) \stackrel{\tiny\text{assumption}}{\homotopic} \id_X$
+4. $\Leftarrow$: **Main Idea**: Projection and inclusion are homotopy inverses. One composition is equality, the other is just equality *up to homotopy*, but that's all we need!
 
    Suppose $\id_X$ is nullhomotopic. 
 
@@ -67,17 +57,17 @@ typora-copy-images-to:  .
 
    $f: X \into \theset{x_0}$ and $g: \theset{x_0} \into X$ 
    such that 
-   $f\circ g \homotopic \id_{\theset{x_0}}$ and $g\circ f \homotopic \id_X$.
+   $f\compose g \homotopic \id_{\theset{x_0}}$ and $g\compose f \homotopic \id_X$.
 
    Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = x_0$ for every $x\in X$.)  But then $(g\circ f)(x) = g(x_0) = y_0$ for some constant $y_0 \in X$, so $g\circ f$ is a constant map. By assumption, $g\circ f \homotopic \id_X$, so the identity is homotopic to a constant map.
 
 5. **Main Idea**: Deformation retract $M$ onto its center circle; two spaces that deformation retract onto a common space are themselves homotopy equivalent.
-   $S^1 \cross I \rightarrow S^1 \leftarrow M$
 
    Claim: $S^1 \cross I \homotopic S^1 \cross \theset{*}$
    This is because $I$ is contractible, so $I \homotopic \theset{*}$. (Maybe needs further proof)
 
    Claim: $M \homotopic S^1 \cross \theset{*}$.
+   ​
 
    If both of these claims hold, then we will have $M \homotopic S^1 \cross I$ as two spaces that deformation retract onto a common space.
    Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$. 
@@ -93,7 +83,6 @@ typora-copy-images-to:  .
    But then, summarizing our results, we have $S^1 \cross I \homotopic S^1 \cross \theset{*} \cong S^1 \cross \theset{\frac{1}{2}} = U \homotopic M$, and so $S^1 \cross I \homotopic M$ as desired.
 
 6. **Main Idea**: Using a funky deformation retract. See Hatcher, PDF page 55, Example 1.23. Add picture!!
-   Deform $\RR^3\into S^3$, and expand the circle of empty space by blowing it up like a balloon. This yields $S^3 - \mathcal{l}$, a line/diameter, then pull $l$ into an $S^1$.
 
    Deformation retract $\\R^3 - S^1$ onto $S^2 - U$, where $U$ is a diameter inside $S^2$ also passing through the middle of $S^1$ in the interior. This can be done by moving points outside of $S^2$ towards the surface, and points inside $S^2$ just move away from the $S^1$ inside (either towards $U$ or towards the surface of $S^2$, so they don't hit $S^1$).
 
@@ -167,32 +156,29 @@ typora-copy-images-to:  .
 
        1. $\theset{A, R}$
          Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
-       
+
        2. $\theset{D, O, S^1}$
          These all have no single point that can be removed to disconnect the space.
-       
+
        3. $\theset{B,S^1 \vee S^1}$
           Remove point at junction
-       
+
        4. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
          These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
-       
+
        5. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
          These all have a point that can be removed to yield 3 connected components homeomorphic to $I$. This is the "pasting" point in the vee.
-       
+
        6. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
          Can remove **two** points to disconnect each into **five** components.
-       
+
        7. $\theset{P, Q, S^1 \vee [0,1]}$
          Both contain a nontrivial loop.
-       
+
        8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
          Can remove **one** point to separate into **four** components.
 
 8. **Main Idea**: Show that both spaces are a deformation retract of the same space. (See Hatcher, Proposition 0.18, p. 25)
-   Given the homotopy $H: f\ \to g$,
-   $X \union_f B^2 \rightarrow X\union_H (B^2 \cross I) \leftarrow X \union_g B^2$
-   $(X, A): X\cross I \surjects (X\cross \theset{0}) \union (A\cross I)$
 
    Suppose we have the following maps
 
@@ -213,7 +199,7 @@ typora-copy-images-to:  .
 
    We want to that $P$ and $Q$ are homotopy-equivalent. In order to do so, we will construct a larger space which deformation retracts onto both $P$ and $Q$, which is a homotopy equivalence.
 
-   With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \bd B^2$. In particular, $S^1$ is a subspace of $B^2$.
+   With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \boundary B^2$. In particular, $S^1$ is a subspace of $B^2$.
 
    Claim: Both $P​$ and $Q​$ are subspaces of $R​$.
    Since $H(z, 0) = f(z)$. So considering $X \coprod_H B^2 \times \theset{0} \cong X \coprod_f B^2 = P$. A similar argument holds at the point $1\in I$. (*Not a strong argument*)
@@ -229,15 +215,9 @@ typora-copy-images-to:  .
 
 ## Fundamental Group
 
-1. **Main idea**: just algebraic manipulations using the $\pi_1$ functor and unravelling definitions. (Don't need path-connectedness..?)
-   Simply connected $\implies \pi_1(X, x) = 0$ so any $\circlearrowleft_x\homotopic \id_x$
-   $\gamma\bar\alpha: \circlearrowleft_x$
-   $\alpha\bar\gamma: \circlearrowleft_x$
-
-   $[\gamma \bar\alpha] = [\alpha\bar\gamma] = 0 \in \pi_1(X) \implies \gamma\bar\alpha \homotopic \id_x \homotopic \alpha\bar\gamma$ 
-   $\gamma\homotopic \gamma\bar\alpha\alpha \homotopic\id_x\alpha\homotopic\alpha.$
+1. **Main idea**: just algebraic manipulations using the $\pi_1$ functor and unravelling definitions. 
    ​
-   Let $X$ be path connected and simply connected, and let $x,y \in X$ be two arbitrary points. Then consider two arbitrary paths from $x$ to $y$,
+   Let $X$ be path connected and simply connected, and let $x,y \in X$ be two arbitrary points. Then consider two paths,
    $\gamma: I \into X, \gamma(0) = x, \gamma(1) = y$
    $\alpha: I \into X, \alpha(0) = x, \alpha(1) = y$.
 
@@ -351,6 +331,8 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
 1. Any covering map $p: S^1\cross S^1 \into \RP^2$ would induce an injection on fundamental groups, but $\pi_1(T) = \ZZ^2$ and $\pi_1(\ZZ_2)$ - but there are no homomorphisms between these groups. Why? One of them has an element of order 2, the other does not.
 
 2. Theorem: if $M_g \surjective M_h$ is an $n-$sheeted covering space, then $g = n(h-1) +1$.
+
+   ![Ink DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk Drawings](file:///C:/Users/Zack/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
 
 3. Draw CW square for $T$ and cut down the center to see two copies of $K$.
 
