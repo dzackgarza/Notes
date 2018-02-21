@@ -352,4 +352,14 @@ A concrete example of this is $BS^1 = \CP^\infty = K(\ZZ, 2)$. This is related t
 
 $$ H \to G \mapsvia{g\mapsto g.p} G/H$$
 
-for a chosen basepoint $p\in G/H$ such that $H$ is the stabilizer of $p$.
+for a chosen basepoint $p\in G/H$ such that $H$ stabilizes $p$.
+
+----
+
+On a different note, it is worth mentioning some of the fibrations to which a spectral sequence might apply. For one, we have
+
+$$
+U_{n-k} \cross U_k \to U_n \to Gr_\CC(n, k)
+$$
+
+where $Gr_\CC(n, k)$ is the set of $k$-planes in $\CC^n$. From this, it can be concluded that $G_\CC(k, n) = \frac{U_n}{U_{n-k} \cross U_k}$, and further that if we take $\lim_{n\to \infty}$ we obtain $Gr_\CC(k, \infty) = \frac{X}{U_k}$, where $X$ is some contractible space, and we thus find that $Gr_\CC(k, \infty) = BU_k$, the classifying space for $U_k$.
