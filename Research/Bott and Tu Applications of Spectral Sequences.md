@@ -5,8 +5,8 @@
 - For $M$ a manifold, $T(M)$ is the unit tangent bundle of $M$
 - For $R$ a ring $R\delta_i$ denotes a copy of $R$ appearing in the $i$th (co)homological degree
 - $S^n \subset \RR^{n+1}$ and $S^{2n-1} \subset \CC^n$
-- Theorem: $F \to E \to B$ a fibration results in 
-  $E_2^{p,q} = H^p(B, H^q(F; G)) = H^p(B;G) \tensor H^q(F; G)$ 
+- Theorem: $F \to E \to B$ a fibration results in
+  $E_2^{p,q} = H^p(B, H^q(F; G)) = H^p(B;G) \tensor H^q(F; G)$
   for nice enough spaces $X$ and groups $G$
   - Corollary: $H^n(X\cross Y) = \displaystyle\bigoplus_{p+q=n} H^p(X, H^q(Y))$
 - Facts about tensor products
@@ -77,3 +77,6 @@
   - $\Omega S^3 \to PS^3 \to S^3$:
     - Can compute $H^*(\Omega S^n)$
 - $Y \into X\cross Y \into X$ (not used here)
+
+## Intersting Spaces to Look At:
+$O, SO, Spin, U, or Sp$
