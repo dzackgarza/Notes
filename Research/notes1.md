@@ -356,7 +356,7 @@ for a chosen basepoint $p\in G/H$ such that $H$ stabilizes $p$.
 
 ----
 
-On a different note, it is worth mentioning some of the fibrations to which a spectral sequence might apply. For one, we have
+On a different note, it is worth mentioning some of the fibrations to which a spectral sequence might apply. One that comes up is
 
 $$
 U_{n-k} \cross U_k \to U_n \to Gr_\CC(n, k)
