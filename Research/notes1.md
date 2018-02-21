@@ -362,4 +362,13 @@ $$
 U_{n-k} \cross U_k \to U_n \to Gr_\CC(n, k)
 $$
 
-where $Gr_\CC(n, k)$ is the set of $k$-planes in $\CC^n$. From this, it can be concluded that $G_\CC(k, n) = \frac{U_n}{U_{n-k} \cross U_k}$, and further that if we take $\lim_{n\to \infty}$ we obtain $Gr_\CC(k, \infty) = \frac{X}{U_k}$, where $X$ is some contractible space, and we thus find that $Gr_\CC(k, \infty) = BU_k$, the classifying space for $U_k$.
+where $Gr_\CC(n, k)$ is the set of $k$-planes in $\CC^n$. Here, it is worth noting that $U_n \homotopic GL_n(\CC)$ and $O_n \homotopic GL_n(\RR)$.
+
+From this, it can be concluded that $G_\CC(k, n) = \frac{U_n}{U_{n-k} \cross U_k}$, and further that if we take $\lim_{n\to \infty}$ we obtain $Gr_\CC(k, \infty) = \frac{X}{U_k}$, where $X$ is some contractible space, and we thus find that $Gr_\CC(k, \infty) = BU_k$, the classifying space for $U_k$.
+
+It can further be shown that there is another fibration
+$$
+U_k \to EU_k \to BU_k
+$$
+
+where $EU_k$ is a contractible space on which $U_k$ acts and $BU_k$ is the above quotient. We can then find interesting structure here arising from the fact that $H^*(Gr_\CC(k, \infty)) = H^*(BU_k)$.
