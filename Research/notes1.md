@@ -304,7 +304,7 @@ with the interior space filled in similarly.
 
 - And so on, etc.
 
-This produces a CW complex, and hence a topological space out of the input category.
+This produces a CW complex, and hence a topological space, from the input category.
 
 **Example**: Let $G$ be a discrete group of order $n$ -- it is equivalently a category with one object and $n$ morphisms.
 
