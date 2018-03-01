@@ -219,3 +219,6 @@ In order for an $E_3$ term to be nonzero, one of these complexes must have nonze
 We know from our current results that  $0 \into H^4(\CP^2) \into H^6(\CP^2) \into 0$ is equal to $0 \into \ZZ \mapsvia{f} H^6(\CP^2) \into 0$, and we know that $\frac{\ker f}{\im 0} = \ker f \cong H^5(S^5) = \ZZ$, since this is the only possible nonzero term in the above sum.
 
 (Not sure how to use $\ker f = 0$ to show $H^6(\CP^2) = 0$, or how to inductively compute $H^*(\CP^n)$.)
+
+
+![Sphere mapping to a point](assets/ComputationofHCP2-5236f.png)
