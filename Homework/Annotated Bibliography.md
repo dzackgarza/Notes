@@ -1,6 +1,8 @@
-Zack Garza
-DOC 100D
-Ms. Pass
+####  Name: Zack Garza
+
+#### DOC 100D
+
+#### Ms. Pass
 
 # Annotated Bibliography: Contemporary Social Issues
 
