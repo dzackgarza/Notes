@@ -1,0 +1,35 @@
+- Major Issues
+  - For profit colleges
+  - Non-completion 
+    - Accessibility is way up
+    - 36% graduate within 4 years, 40% don't graduate within 6 years, but this doesn't affect accreditation
+  - Link between Bachelors degree and white collar careers
+    - College prepares you for your fifth job, not your first
+    - Credential inflation
+  - Jobs for graduates
+    - Reasons students enroll: 91% employment opportunities, 90% make more money, 89% get a good job
+  - Accountability for return on investment
+  - Focus on outputs, not difference between inputs and outputs
+    - Eg. Harvard, incoming student talent is already high
+  - Exodus from liberal arts into professional degrees
+  - Huge increase in cost
+    - Roughly 3-fold increase since 1990
+    - Tuition was about 25% of the total uni funds in 1990 - now closer to 50%
+    - More than half of students in US attend a school where tuition+fees are over 9k per year, average is around 8k, 17k once room/board/books are included
+    - Most federal aid just goes into increased university fees
+    - High room and board, fees to support extraneous activities like athletics
+    - State funding for UCs decreased by almost half between 1990 and 2010
+    - Creates vaccuum that can be filled by private business interests
+  - `Freedom of opinions
+    - Protestors are put down by police (see Davis)
+    - While simultaneously university execs often give in to demands
+  - Efficiency of Uni System
+    - 1960: Higher education was 1% of natl budget, now 3% (around \$200b) but results haven't increased proportionally
+    - Goes towards research grants, student grants, appropriations (like land or real estate), other business activities
+  - Focus on things that aren't education
+    - Sports activities (takes advantage of student athletes, very low pay, charges everyone in the school)
+    - Selling a lifestyle, the college experience
+    - Investment in auxiliary things: infrastructure, administration, scholarships, sports teams. Rarely classrooms or professors
+  - Elitism
+    - Less along racial or gender lines anymore, more along social/class lines
+    - In top 10 unis, 74% come from top 1/4 wealthiest households in the US, 3% from the poorest 1/4
