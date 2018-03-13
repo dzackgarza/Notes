@@ -8,6 +8,8 @@ For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\p
 
 ## Examples
 
+Note that $EG$ is always a contractible space upon which $G$ acts freely.
+
 - $G \to EG \to BG = EG/G$
 - $\ZZ \to \RR \to S^1$
 - $\ZZ^n \to \RR^n \to T^n$
@@ -17,6 +19,8 @@ For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\p
 - $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
 - $S^1 \to S^\infty ? \to \CP^\infty$
 - $O_n \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
+- $SO_n \to ? \to ?$
+- $Gr_n(\RR^\infty) \to ? \to Gr_n(\RR^\infty)$
 
 
 Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
