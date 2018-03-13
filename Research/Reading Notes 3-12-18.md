@@ -10,7 +10,7 @@ For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\p
 
 Note that $EG$ is always a contractible space upon which $G$ acts freely.
 
-We also have $BG \homotopic \Omega G$
+We also have $BX \homotopic \Omega X$
 
 - $G \to EG \to BG = EG/G$
 - $\ZZ \to \RR \to S^1$
@@ -19,11 +19,15 @@ We also have $BG \homotopic \Omega G$
 - $\ZZ_2 \to S^\infty \to \RP^\infty$
 - $\ZZ_n \to S^\infty \to ``S^\infty/\ZZ_n"$
 - $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
-- $S^1 \to S^\infty ? \to \CP^\infty$
+- $S^0 \to S^\infty \to \RP^\infty$
+- $S^1 \to S^\infty \to \CP^\infty$
+- $S^3 \to S^\infty \to \HP^\infty$
+- NOT TRUE: $S^7 \to S^\infty \to \OP^\infty$
 - $T^n \to ? \to (\CP^\infty)^n$
 - $O_n \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
 - $SO_n \to ? \to ?$
 - $Gr_n(\RR^\infty) \to ? \to Gr_n(\RR^\infty)$
+- $S_n \to Conf([n], \RR^\infty) \to$
 
 
 Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
@@ -51,3 +55,7 @@ Chow rings have not been computed for $PGL_n$. Need to know about Chern classes,
 $A_*$ known for all $O_n$ and $SO_n$ for $n$ odd in 80s, general result for $SO_n$ 2004. $PGL_n$ case is much harder. Understood for $n=2$, since $PGL_2 \cong SO_3$. Other bits that have been computed: $H^*(BPGL_3, \ZZ_3), H^*(BPGL_n, \ZZ_2)$ for $n = 2 \mod 4$ in 70s/80s, incomplete results for $H^*(BPGL_p, \ZZ_p)$ in 2003.
 
 *Term "equivariant" pops up a lot, symplectic forms, schemes, stacks*
+
+# Further Reading
+
+Characteristic classes are elements of $H^*(BG)$.
