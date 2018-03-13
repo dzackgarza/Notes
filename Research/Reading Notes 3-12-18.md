@@ -7,12 +7,18 @@ For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\p
 *Question: what is a principal bundle? According to wikipedia, any G-principal bundle is a pullback of $EG \to BG$.*
 
 ## Examples
-- $G = \ZZ$
-  - $BG = S^1$
-  - $EG = \RR$
-- $G = \prod_n \ZZ$
-  - $BG = T^n$
-  - $EG = \RR^n$
-- $G = \freeprod_n \ZZ$
-  - $BG = $
-  - $EG = $
+
+- $G \to EG \to BG = EG/G$
+- $\ZZ \to \RR \to S^1$
+- $\ZZ^n \to \RR^n \to T^n$
+- $\ZZ^{\ast n} \to ? \to \bigvee_n S^1$
+- $\ZZ_2 \to S^\infty \to \RP^\infty$
+- $\ZZ_n \to S^\infty \to ``S^\infty/\ZZ_n"$
+- $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
+- $S^1 \to S^\infty ? \to \CP^\infty$
+- $O_n \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
+
+
+Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
+
+A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of $G$-bundles over $X$}} \cong [X, BG]$, maps from $X$ into the classifying space.
