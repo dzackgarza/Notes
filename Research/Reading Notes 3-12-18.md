@@ -67,3 +67,8 @@ $A_*$ known for all $O_n$ and $SO_n$ for $n$ odd in 80s, general result for $SO_
 Characteristic classes are elements of $H^*(BG)$, can be used to define char. classes for bundles.
 
 Connected covers can kill higher homotopy?
+
+Claim: $\pi_{i+k}B^kG = \pi_i G$.
+If $G$ is a topological group, there is a universal principal $G\dash$bundle $EG \to BG$ which induces a LES in homotopy. Since $EG$ is contractible, $\pi_i EG = \pi_{i+1}EG = 0$, so $\pi_{i+1}BG \cong \pi_i G$. When $G$ is an $E_2$ space, $BG$ is a topological group, and so $\pi_{i+2}(B^2G) = \pi_{i+2}(B(BG)) = \pi_{i+1}(BG) = \pi_i(G)$ and we conclude the result.
+
+Corollary: If $G$ is a discrete group, $B^kG = K(G, n)$.
