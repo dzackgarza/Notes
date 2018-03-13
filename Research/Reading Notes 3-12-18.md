@@ -6,6 +6,8 @@ For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\p
 
 *Question: what is a principal bundle? According to wikipedia, any G-principal bundle is a pullback of $EG \to BG$.*
 
+Given
+
 ## Examples
 
 Note that $EG$ is always a contractible space upon which $G$ acts freely.
@@ -32,7 +34,9 @@ We also have $BX \homotopic \Omega X$
 
 Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
 
-A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of $G$-bundles over $X$}} \cong [X, BG]$, maps from $X$ into the classifying space.
+A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of $G$-bundles over $X$}} \cong [X, BG]$, i.e. bundles of $G$'s over $X$ are equivalent to maps from $X$ into the classifying space, i.e. $\hom(X, BG) \cong \theset{G\dash\text{bundles over } X}$
+
+It is useful to think of $BG$ as a space whose points are copies of $G$, so the classifying map $X \mapsvia{f} BG$ assigns each $x \in X$ to the fiber above $x$, which is a $G$.
 
 Conjecture: $B(G \cross H) = BG \cross BH$
 Proof outline: $EG \cross EH$ is contractible, and $G \cross H$ acts freely on it with quotient equal to the RHS.
