@@ -19,7 +19,7 @@ We also have $BX \homotopic \Omega X$
 - $\ZZ^n \to \RR^n \to T^n$
 - $\ZZ^{\ast n} \to ? \to \bigvee_n S^1$
 - $\ZZ_2 \to S^\infty \to \RP^\infty$
-- $\ZZ_n \to S^\infty \to ``S^\infty/\ZZ_n"$
+- $\ZZ_n \to S^\infty \to L_n^\infty$
 - $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
 - $S^0 \to S^\infty \to \RP^\infty$
 - $S^1 \to S^\infty \to \CP^\infty$
