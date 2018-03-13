@@ -28,7 +28,8 @@ Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames i
 
 A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of $G$-bundles over $X$}} \cong [X, BG]$, maps from $X$ into the classifying space.
 
-Conjecture: $B(G_1 \cross G_2) = BG_1 \cross BG_2$
+Conjecture: $B(G \cross H) = BG \cross BH$
+Proof outline: $EG \cross EH$ is contractible, and $G \cross H$ acts freely on it with quotient equal to the RHS.
 
 Conjecture: $B(G \ast H) = BG \vee BH$
 
