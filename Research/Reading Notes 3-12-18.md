@@ -18,6 +18,7 @@ Note that $EG$ is always a contractible space upon which $G$ acts freely.
 - $\ZZ_n \to S^\infty \to ``S^\infty/\ZZ_n"$
 - $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
 - $S^1 \to S^\infty ? \to \CP^\infty$
+- $T^n \to ? \to (\CP^\infty)^n$
 - $O_n \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
 - $SO_n \to ? \to ?$
 - $Gr_n(\RR^\infty) \to ? \to Gr_n(\RR^\infty)$
@@ -26,3 +27,7 @@ Note that $EG$ is always a contractible space upon which $G$ acts freely.
 Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
 
 A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of $G$-bundles over $X$}} \cong [X, BG]$, maps from $X$ into the classifying space.
+
+Conjecture: $B(G_1 \cross G_2) = BG_1 \cross BG_2$
+
+Unknown: $B(G \ast H) = ?$
