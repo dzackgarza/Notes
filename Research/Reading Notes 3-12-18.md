@@ -30,8 +30,8 @@ A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$.
 
 Conjecture: $B(G_1 \cross G_2) = BG_1 \cross BG_2$
 
-Unknown: $B(G \ast H) = ?$
+Conjecture: $B(G \ast H) = BG \vee BH$
 
-Unknown: $B(G \tensor H) = ?$
+Unknown: $B(G \tensor H) = BG \tensor BH$
 
-Unknown: $B(G \semidirect H) = ?$
+Unknown: $B(G \semidirect_\phi H) = ?$
