@@ -46,4 +46,4 @@ There is a map from the Chow ring back into cohomology, which in general fails s
 
 Chow rings have not been computed for $PGL_n$. Need to know about Chern classes, Euler classes,
 
-$A_*$ known for all $O_n$ and $SO_n$ for $n$ odd in 80s, general result for $SO_n$ 2004. $PGL_n$ case is much harder. Understood for $n=2$, since $PGL_2 \cong SO_3$. Other bits that have been computed: $H^*(BPGL_3, \ZZ_3), H^*(BPGL_n, \ZZ_2)$ for $n = 2 \mod 4$, incomplete results for $H^*(BPGL_p, \ZZ_p)$.
+$A_*$ known for all $O_n$ and $SO_n$ for $n$ odd in 80s, general result for $SO_n$ 2004. $PGL_n$ case is much harder. Understood for $n=2$, since $PGL_2 \cong SO_3$. Other bits that have been computed: $H^*(BPGL_3, \ZZ_3), H^*(BPGL_n, \ZZ_2)$ for $n = 2 \mod 4$ in 70s/80s, incomplete results for $H^*(BPGL_p, \ZZ_p)$ in 2003.
