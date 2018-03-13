@@ -5,3 +5,14 @@ Usually look at this in the context of a topological group $G$, and denote $BG$ 
 For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\pi_k(BG) = 0$ for $k \neq 1$.
 
 *Question: what is a principal bundle? According to wikipedia, any G-principal bundle is a pullback of $EG \to BG$.*
+
+## Examples
+- $G = \ZZ$
+  - $BG = S^1$
+  - $EG = \RR$
+- $G = \prod_n \ZZ$
+  - $BG = T^n$
+  - $EG = \RR^n$
+- $G = \freeprod_n \ZZ$
+  - $BG = $
+  - $EG = $
