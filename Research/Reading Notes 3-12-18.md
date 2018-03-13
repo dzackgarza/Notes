@@ -26,13 +26,16 @@ We also have $BX \homotopic \Omega X$
 - NOT TRUE: $S^7 \to S^\infty \to \OP^\infty$
 - $T^n \to ? \to (\CP^\infty)^n$
 - $O_n \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
+- $GL_n(\RR) \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
 - $SO_n \to ? \to ?$
 - $Gr_n(\RR^\infty) \to ? \to Gr_n(\RR^\infty)$
-- $S_n \to Conf([n], \RR^\infty) \to ?$
-- $\pi_1(\Sigma_g) \to ? \to \Sigma_g ?$
+- $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
+- $S_n \to ??? \to \theset{U \subset \RR^\infty,~ |U| = n}$
 
 
 Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
+
+Also, $\pi_1(\Sigma_g) = <\theset{a_i, b_i}_i^n> \mid \prod_i^g [a_i, b_i]>$
 
 A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of $G$-bundles over $X$}} \cong [X, BG]$, i.e. bundles of $G$'s over $X$ are equivalent to maps from $X$ into the classifying space, i.e. $\hom(X, BG) \cong \theset{G\dash\text{bundles over } X}$
 
