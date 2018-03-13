@@ -36,3 +36,6 @@ Conjecture: $B(G \ast H) = BG \vee BH$
 Unknown: $B(G \tensor H) = BG \tensor BH$
 
 Unknown: $B(G \semidirect_\phi H) = ?$
+
+Recent result: [Chow Rings computed in 2005 for $BGL_n, BSL_n, BSp_n, BO_n, BSO_n$](https://arxiv.org/pdf/math/0505560.pdf)
+Cohomology for classifying spaces of linear algebraic groups (equivalently compact Lie Groups) have an algebraic analog: Chow rings of the classifying spaces. For a finite abelian group, the chow ring is the symmetric algebra on the group of characters. There is a map from the Chow ring back into cohomology, which in general fails surjectivity and injectivity. Tensoring this map with $\QQ$ creates an isomorphism, though.
