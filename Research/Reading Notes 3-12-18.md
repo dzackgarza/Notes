@@ -6,7 +6,7 @@ For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\p
 
 *Question: what is a principal bundle? According to wikipedia, any G-principal bundle is a pullback of $EG \to BG$.*
 
-Given
+Note that contractibility of $EG$ shows that $BG$ is $K(G, 1)$.
 
 ## Examples
 
@@ -80,3 +80,5 @@ Proof: Then $\pi_0 G = G$ and $\pi_i G = 0$ for $i > 0$, so $\pi_k B^k G = G$.
 It's possible to take classifying spaces of stacks. E.g. there is a stack that classifies principal bundles *with connections*, but it has issues: it is not a presentable stack, i.e. not covered by a manifold, so an associated sheaf is not representable.
 
 Stable homotopy of $BG$: same sort of techniques as in $S^n$, break into components.
+
+$EG$ can be constructed as $\bigcup_n G \ast G \ast \cdots \ast G$, where $\ast$ is join of two spaces: the suspension of the smash product. For example, $G = \ZZ_2$ implies $EG = \
