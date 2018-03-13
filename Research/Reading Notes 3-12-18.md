@@ -17,7 +17,7 @@ We also have $BX \homotopic \Omega X$
 - $G \to EG \to BG = EG/G$
 - $\ZZ \to \RR \to S^1$
 - $\ZZ^n \to \RR^n \to T^n$
-- $\ZZ^{\ast n} \to ? \to \bigvee_n S^1$
+- $\ZZ^{\ast n} \to ??? \to \bigvee_n S^1$
 - $\ZZ_2 \to S^\infty \to \RP^\infty$
 - $\ZZ_n \to S^\infty \to L_n^\infty$
 - $S^0 \to S^\infty \to \RP^\infty$
