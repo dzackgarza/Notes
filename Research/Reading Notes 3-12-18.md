@@ -20,7 +20,6 @@ We also have $BX \homotopic \Omega X$
 - $\ZZ^{\ast n} \to ? \to \bigvee_n S^1$
 - $\ZZ_2 \to S^\infty \to \RP^\infty$
 - $\ZZ_n \to S^\infty \to L_n^\infty$
-- $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
 - $S^0 \to S^\infty \to \RP^\infty$
 - $S^1 \to S^\infty \to \CP^\infty$
 - $S^3 \to S^\infty \to \HP^\infty$
@@ -30,6 +29,7 @@ We also have $BX \homotopic \Omega X$
 - $SO_n \to ? \to ?$
 - $Gr_n(\RR^\infty) \to ? \to Gr_n(\RR^\infty)$
 - $S_n \to Conf([n], \RR^\infty) \to$
+- $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
 
 
 Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
