@@ -69,9 +69,12 @@ Characteristic classes are elements of $H^*(BG)$, can be used to define char. cl
 Connected covers can kill higher homotopy?
 
 You can realize any Eilenberg-MacLane space as a classifying space.
+
 Claim: $\pi_{i+k}B^kG = \pi_i G$.
 
 Proof: If $G$ is a topological group, there is a universal principal $G\dash$bundle $EG \to BG$ which induces a LES in homotopy. Since $EG$ is contractible, $\pi_i EG = \pi_{i+1}EG = 0$, so $\pi_{i+1}BG \cong \pi_i G$. When $G$ is an $E_2$ space, $BG$ is a topological group, and so $\pi_{i+2}(B^2G) = \pi_{i+2}(B(BG)) = \pi_{i+1}(BG) = \pi_i(G)$ and we conclude the result.
 
 Corollary: If $G$ is a discrete group, $B^kG = K(G, n)$.
 Proof: Then $\pi_0 G = G$ and $\pi_i G = 0$ for $i > 0$, so $\pi_k B^k G = G$.
+
+It's possible to take classifying spaces of stacks. E.g. there is a stack that classifies principal bundles *with connections*, but it has issues: it is not a presentable stack, i.e. not covered by a manifold, so an associated sheaf is not representable.
