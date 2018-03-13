@@ -38,6 +38,8 @@ A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$.
 
 It is useful to think of $BG$ as a space whose points are copies of $G$, so the classifying map $X \mapsvia{f} BG$ assigns each $x \in X$ to the fiber above $x$, which is a $G$.
 
+There is a standard procedure in homotopy theory for constructing a classifying space for every group. One starts by constructing a 2-complex with the given fundamental group, and then one inductively attaches higher dimensional cells to kill all higher homotopy groups.
+
 Conjecture: $B(G \cross H) = BG \cross BH$
 Proof outline: $EG \cross EH$ is contractible, and $G \cross H$ acts freely on it with quotient equal to the RHS.
 
