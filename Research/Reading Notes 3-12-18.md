@@ -28,8 +28,8 @@ We also have $BX \homotopic \Omega X$
 - $O_n \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
 - $SO_n \to ? \to ?$
 - $Gr_n(\RR^\infty) \to ? \to Gr_n(\RR^\infty)$
-- $S_n \to Conf([n], \RR^\infty) \to$
-- $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
+- $S_n \to Conf([n], \RR^\infty) \to ?$
+- $\pi_1(\Sigma_g) \to ? \to \Sigma_g ?$
 
 
 Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
@@ -78,3 +78,5 @@ Corollary: If $G$ is a discrete group, $B^kG = K(G, n)$.
 Proof: Then $\pi_0 G = G$ and $\pi_i G = 0$ for $i > 0$, so $\pi_k B^k G = G$.
 
 It's possible to take classifying spaces of stacks. E.g. there is a stack that classifies principal bundles *with connections*, but it has issues: it is not a presentable stack, i.e. not covered by a manifold, so an associated sheaf is not representable.
+
+Stable homotopy of $BG$: same sort of techniques as in $S^n$, break into components.
