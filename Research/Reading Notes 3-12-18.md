@@ -10,6 +10,8 @@ For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\p
 
 Note that $EG$ is always a contractible space upon which $G$ acts freely.
 
+We also have $BG \homotopic \Omega G$
+
 - $G \to EG \to BG = EG/G$
 - $\ZZ \to \RR \to S^1$
 - $\ZZ^n \to \RR^n \to T^n$
