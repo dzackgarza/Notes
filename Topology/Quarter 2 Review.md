@@ -1,10 +1,10 @@
 # Quarter 2 Review
 
-Lemma: $\QQ \tensor A \cong (\ZZ-\theset{0})^{-1}A$
+Lemma: Let $S = \ZZ-\theset{0}$, then $\QQ \tensor A \cong S^{-1}A$
 
-Use $\QQ \cross A \to (\ZZ-\theset{0})^{-1}A$ where $(d, a) \to (da, 1)$ and factor through tensor product.
+Use $\QQ \cross A \to S^{-1}A$ where $(d, a) \to (da, 1)$ and factor through tensor product.
 
-Then use $(\ZZ-\theset{0})^{-1}A \to \QQ \tensor A$ where $(d,a) \to \frac{1}{d} \tensor a$.
+Then use $S^{-1}A \to \QQ \tensor A$ where $(d,a) \to \frac{1}{d} \tensor a$.
 
 1. Let $A$ be an abelian group, and $A \mapsvia{f} A\tensor \QQ$. Show that $\ker f \cong A_\text{Tor}$.
   - $f(a) = 0 \implies \exists n \mid na = 0$
