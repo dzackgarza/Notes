@@ -46,7 +46,7 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 ## Properties of Tor
 
 - $\tor(A,B) = 0$ if $A$ or $B$ are torsion-free
-- $\tor(\bigoplus A_i, B) = \bigoplus_i \tor(A_i, B)$
+- $\tor(\bigoplus A_i, B) = \bigoplus \tor(A_i, B)$
 - $\tor(\ZZ_n, G) = \ker (g \mapsto ng)$
 - $\tor(A, B) = \tor(B, A)$
 
