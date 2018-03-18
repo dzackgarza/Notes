@@ -190,3 +190,4 @@ How to compute:
 - $T^2 \mapsvia{\times 2} \KK$
 - $L_{p/q} \mapsvia{\pi} S^3 \leftarrow \ZZ_q$
 - $\CC^* \mapsvia{z^n} \CC \leftarrow \ZZ_n$
+- 
