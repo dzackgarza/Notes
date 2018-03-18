@@ -185,4 +185,4 @@ How to compute:
 - $\RR \mapsvia{\pi} S^1 \leftarrow \ZZ$
 - $\RR^n \mapsvia{\pi} T^n \leftarrow \ZZ^n$
 - $\RP^n \mapsvia{\pi} S^n \leftarrow \ZZ_2$
-- $\vee S^1 \mapsvia{\pi} C \leftarrow \ZZ^{\ast n}$
+- $\vee_n S^1 \mapsvia{\pi} C^n \leftarrow \ZZ^{\ast n}$ where $C^n$ is the $n\dash$valent Cayley Graph.
