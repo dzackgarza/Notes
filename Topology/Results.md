@@ -115,8 +115,8 @@ $$
 $$
 
 # Low Dimensional Equivalences
-- $\RP^1 \cong S^1$
-- $\CP^1 \cong S^2$
+- $\RP^1 \cong \SS^1$
+- $\CP^1 \cong \SS^2$
 
 # Homology Results
 - $H_n M^n = \ZZ \iff M^n$ is orientable.
