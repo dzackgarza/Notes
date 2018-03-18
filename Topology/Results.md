@@ -7,13 +7,22 @@
 ## Free Resolutions
 - $0 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{\mod m} \ZZ_m \to 0$
 
-# Computing Ext/Tor
-$$\tor(G, H) = h(\cdots \to G_n \tensor H \to G_{n-1}\tensor H \to \cdots G_1\tensor H \to 0)$$ where $G_*$ is a free resolution of $G$.
+## Computing Tor
+
+$$\tor(A, B) = h[\cdots \to A_n \tensor B \to A_{n-1}\tensor B \to \cdots A_1\tensor B \to 0]$$ where $A_*$ is a free resolution of $A$.
+
+Shorthand: $\tor: \mathcal{F}(A) \to (\wait \tensor B) \to H_*$
+
+## Computing Ext
+$$\ext(A, B) = h[\cdots \hom(A, B_n) \to \hom(A, B_{n-1}) \to \cdots \to \hom(A, B_1) \to 0 ]$$ where $B_*$ is a free resolution of $B$.
+
+Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 
 # Properties of Ext/Tor
 
-- $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
+- $\ext_0(A, B) = \hom(A, B)$
 - $\ext(F, \wait) = 0$ for $F$ free
+- $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
 - $\ext(\ZZ_n, G) \cong G/nG$
 - $\tor(\ZZ_n, G) \cong \ker (g \mapsto ng)$
 
