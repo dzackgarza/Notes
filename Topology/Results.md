@@ -121,6 +121,7 @@ $$
 - $\RP^1 \cong \SS^1$
 - $\CP^1 \cong \SS^2$
 - $\MM \homotopic \SS^1$
+- $\CP^n = \CC^n \coprod \CP^{n-1} = \coprod_{i=0}^n \CC^i$
 
 # Homology Results
 - $H_n M^n = \ZZ \iff M^n$ is orientable.
@@ -179,3 +180,8 @@ How to compute:
 ![$\RP^2$](assets/Results-bfc77.png)
 
 ![$\mathbb{M}$](assets/Results-f9d55.png)
+
+# Useful Covering Spaces
+- $\RR \mapsvia{\pi} S^1 \leftarrow \ZZ$
+- $\RR^n \mapsvia{\pi} T^n \leftarrow \ZZ^n$
+- $\RP^n \mapsvia{\pi} S^n \leftarrow \ZZ_2$
