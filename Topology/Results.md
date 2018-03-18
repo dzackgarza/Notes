@@ -27,6 +27,9 @@ $$
 ## Free Resolutions
 - $0 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{\mod m} \ZZ_m \to 0$
 
+## Tensoring
+- $(\wait) \tensor_\ZZ \ZZ = \id$
+
 ## Computing Tor
 
 $$\tor(A, B) = h[\cdots \to A_n \tensor B \to A_{n-1}\tensor B \to \cdots A_1\tensor B \to 0]$$ where $A_*$ is a free resolution of $A$.
