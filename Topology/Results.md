@@ -8,6 +8,7 @@
 - $0 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{\mod m} \ZZ_m \to 0$
 
 # Computing Ext/Tor
+$$\tor_i(G, H) = h_i(\cdots \to G_n \tensor H \to G_{n-1}\tensor H \to \cdots G_1\tensor H \to 0)$$ where $G_*$ is a free resolution of $G$.
 
 # Properties of Ext/Tor
 
