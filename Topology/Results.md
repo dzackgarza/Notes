@@ -70,3 +70,13 @@ How to compute:
   - $S^n, T^n, \RP^\text{odd}$
 - Nonorientable:
   - $\RP^\text{even}, \mathbb{M}, \mathbb{K}$
+
+# Pasting Diagrams
+
+![$T^2$](assets/Results-86857.png)
+
+![$\mathbb{K}$](assets/Results-f9260.png)
+
+![$\RP^2$](assets/Results-bfc77.png)
+
+![$\mathbb{M}$](assets/Results-f9d55.png)
