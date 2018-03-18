@@ -26,7 +26,7 @@ $\QQ$     | $0$      | $0$    | $\QQ$
 $\tor$    | $\ZZ_m$ | $\ZZ$ | $\QQ$
 --|---|---|--
 $\ZZ_n$   | $\ZZ_d$ | $0$   | $0$  
-$\ZZ$     | $0$     | $0$   | $0$ 
+$\ZZ$     | $0$     | $0$   | $0$
 $\QQ$     | $0$     | $0$   | $0$
 
 $\ext$    | $\ZZ_m$   | $\ZZ$                 | $\QQ$
@@ -34,6 +34,8 @@ $\ext$    | $\ZZ_m$   | $\ZZ$                 | $\QQ$
 $\ZZ_n$   | $\ZZ_d$   | $\ZZ_n$               | $0$  
 $\ZZ$     | $0$       | $0$                   | $0$
 $\QQ$     | $0$       | $\mathcal{A_p}/\QQ$   | $0$
+
+For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/torext.pdf).
 
 # The Universal Coefficient Theorems
 $$
