@@ -21,6 +21,7 @@
 - Exact Sequence
 - Euler Characteristic
 - Lefshetz Number
+- Local Homology
 
 # Structure
 - Free product with amalgamation
