@@ -8,8 +8,8 @@
 
 # The Universal Coefficient Theorems
 $$
-0 \to H_i(X) \tensor G \to H_i(X; G) \to \tor_1^\ZZ(H_{i-1}X, G) \to 0\\
-0 \to \ext^1_\ZZ (H_{i-1} X, G) \to H^i(X;G) \to \hom(H_i X, G) \to 0
+0 \to H_i X \tensor G \to H_i(X; G) \to \tor_1^\ZZ(H_{i-1}X, G) \to 0\\
+0 \to \ext (H_{i-1} X, G) \to H^i(X;G) \to \hom(H_i X, G) \to 0
 $$
 
 # The Kunneth Formula
