@@ -103,17 +103,17 @@ For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/tor
 
 $$
 \begin{array}{}
-\SS^1 &=  &[&\ZZ, &\ZZ,               &0,    &0, &0,    &0\rightarrow & ]\\
-\MM   &=  &[&\ZZ, &\ZZ,               &0,    &0, &0,    &0\rightarrow & ]\\
-\RP^1 &=  &[&\ZZ, &\ZZ,               &0,    &0, &0,    &0\rightarrow & ]\\
-\RP^2 &=  &[&\ZZ, &\ZZ_2,             &0,    &0, &0,    &0\rightarrow & ]\\
-\RP^3 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ, &0,    &0\rightarrow & ]\\
-\RP^4 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ_2, &0,    &0\rightarrow & ]\\
-\SS^2 &=  &[&\ZZ, &0,                 &\ZZ,  &0, &0,    &0\rightarrow & ]\\
-\TT^2 &=  &[&\ZZ, &\ZZ^2,             &\ZZ,  &0, &0,    &0\rightarrow & ]\\
-\KK &=    &[&\ZZ, &\ZZ \oplus \ZZ_2,  &0,    &0, &0,    &0\rightarrow & ]\\
-\CP^1 &=  &[&\ZZ, &0,                 &\ZZ,  &0, &0,    &0\rightarrow & ]\\
-\CP^2 &=  &[&\ZZ, &0,                 &\ZZ,  &0, &\ZZ,  &0\rightarrow & ]\\
+\SS^1 &=  &[&\ZZ, &\ZZ,               &0,    &0,      &0,    &0\rightarrow & ]\\
+\MM   &=  &[&\ZZ, &\ZZ,               &0,    &0,      &0,    &0\rightarrow & ]\\
+\RP^1 &=  &[&\ZZ, &\ZZ,               &0,    &0,      &0,    &0\rightarrow & ]\\
+\RP^2 &=  &[&\ZZ, &\ZZ_2,             &0,    &0,      &0,    &0\rightarrow & ]\\
+\RP^3 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ,    &0,    &0\rightarrow & ]\\
+\RP^4 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ_2,  &0,    &0\rightarrow & ]\\
+\SS^2 &=  &[&\ZZ, &0,                 &\ZZ,  &0,      &0,    &0\rightarrow & ]\\
+\TT^2 &=  &[&\ZZ, &\ZZ^2,             &\ZZ,  &0,      &0,    &0\rightarrow & ]\\
+\KK &=    &[&\ZZ, &\ZZ \oplus \ZZ_2,  &0,    &0,      &0,    &0\rightarrow & ]\\
+\CP^1 &=  &[&\ZZ, &0,                 &\ZZ,  &0,      &0,    &0\rightarrow & ]\\
+\CP^2 &=  &[&\ZZ, &0,                 &\ZZ,  &0,      &\ZZ,  &0\rightarrow & ]\\
 \end{array}
 $$
 
