@@ -9,7 +9,8 @@ $$
 
 - Splits unnaturally:
 $$
-H_i(X;G) = (H_iX\tensor G) \oplus \tor(H_{i-1}X; G)
+H_i(X;G) = (H_iX\tensor G) \oplus \tor(H_{i-1}X; G)\\
+H^i(X; G) = \hom(H_iX, G) \oplus \ext(H_{i-1}X; G)
 $$
 
 - For nice enough spaces:
@@ -47,15 +48,17 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 
 - $\tor(A,B) = 0$ if $A$ or $B$ are torsion-free
 - $\tor(\bigoplus A_i, B) = \bigoplus \tor(A_i, B)$
-- $\tor(\ZZ_n, G) = \ker (g \mapsto ng)$
+- $\tor(\ZZ_n, G) = \ker (g \mapsto ng) = \theset{g\in G\mid ng = 0}$
+- $\tor_0(A, B) = A \tensor B$
 - $\tor(A, B) = \tor(B, A)$
 
 ## Properties of Ext
 
 - $\ext(F, G) = 0$ if $F$ is free
 - $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
-- $\ext_0(A, B) = \hom(A, B)$
 - $\ext(\ZZ_n, G) \cong G/nG$
+- $\ext_0(A, B) = \hom(A, B)$
+- $\ext(A,B) = \ext(A_T, B)$ where $A_T$ is the torsion subgroup.
 
 ## Hom/Ext/Tor Tables
 $\hom$    | $\ZZ_m$  | $\ZZ$  | $\QQ$
