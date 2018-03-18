@@ -12,6 +12,8 @@ $$
 0 \to \ext (H_{i-1} X, G) \to H^i(X;G) \to \hom(H_i X, G) \to 0
 $$
 
+- For nice enough spaces: $H_i(X) = \ZZ^{\beta_i} \oplus T_i \implies H^i(X) = \ZZ^{\beta_i} \oplus T_{i-1}$
+
 # The Kunneth Formula
 $$
 0 \to \bigoplus_j H_j(X; R) \tensor_R H_{i-j}(Y; R) \to H_i(X\cross Y; R) \to \bigoplus_j \tor_1^R(H_j(X; R), H_{i-j-1}(Y; R))
