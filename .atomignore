@@ -1,3 +1,5 @@
 .empty
 *.pdf
 *.png
+*.aux
+*.log
