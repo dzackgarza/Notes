@@ -14,7 +14,7 @@ H_i(X;G) = (H_iX\tensor G) \oplus \tor(H_{i-1}X; G)\\
 H^i(X; G) = \hom(H_iX, G) \oplus \ext(H_{i-1}X; G)
 $$
 
-- When $H_iX$ are all finitely generated, write $H_i(X; \ZZ) = \ZZ^{\beta_i} \oplus T_i$. Then $H_iX/T_n = \ZZ^{\beta_i}$, and
+- When $H_iX$ are all finitely generated, write $H_i(X; \ZZ) = \ZZ^{\beta_i} \oplus T_i$. Then
 $$
 H^i(X; \ZZ) = \ZZ^{\beta_i} \oplus T_{i-1}
 $$
