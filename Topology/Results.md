@@ -105,6 +105,7 @@ $$
 \begin{array}{}
 \SS^1 &=  &[&\ZZ, &\ZZ,               &0,    &0, &0,    &0\rightarrow & ]\\
 \MM &=    &[&\ZZ, &\ZZ,               &0,    &0, &0,    &0\rightarrow & ]\\
+\RP^1 &=    &[&\ZZ, &\ZZ,               &0,    &0, &0,    &0\rightarrow & ]\\
 \RP^2 &=  &[&\ZZ, &\ZZ_2,             &0,    &0, &0,    &0\rightarrow & ]\\
 \RP^3 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ, &0,    &0\rightarrow & ]\\
 \RP^4 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ_2, &0,    &0\rightarrow & ]\\
@@ -119,6 +120,7 @@ $$
 # Low Dimensional Equivalences
 - $\RP^1 \cong \SS^1$
 - $\CP^1 \cong \SS^2$
+- $\MM \homotopic \SS^1$
 
 # Homology Results
 - $H_n M^n = \ZZ \iff M^n$ is orientable.
