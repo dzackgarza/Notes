@@ -3,6 +3,9 @@
 
 # Ext/Tor Tables
 
+# Free Resolutions
+- $0 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{\mod m} \ZZ_m \to 0$
+
 # The Universal Coefficient Theorems
 $$
 0 \to H_i(X) \tensor G \to H_i(X; G) \to \tor_1^\ZZ(H_{i-1}X, G) \to 0\\
