@@ -59,7 +59,7 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 ## Properties of Ext
 
 - $\ext(F, G) = 0$ if $F$ is free
-- $\ext(A,B) = \ext(A_T, B)$ where $A_T$ is the torsion subgroup.
+- $\ext(A,B) = \ext(A_T, B_T)$ where $G_T$ is the torsion subgroup of $G$.
 - $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
 - $\ext(\ZZ_n, G) \cong G/nG$
 - $\ext_0(A, B) = \hom(A, B)$
