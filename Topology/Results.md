@@ -30,6 +30,7 @@ $$
 ## Tensoring
 - $(\wait) \tensor_\ZZ \ZZ = \id$
 - $\ZZ_m \tensor \ZZ_n = \ZZ_d$
+- $A\tensor B = 0 \implies A = 0 ~\or~ B = 0$
 
 ## Computing Tor
 
