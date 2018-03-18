@@ -1,4 +1,7 @@
-- Ext/Tor Tables
+# Homotopy
+- $f\homotopic g \implies f_* = g_*$ in homology.
+
+# Ext/Tor Tables
 
 # The Universal Coefficient Theorems
 $$
@@ -27,8 +30,10 @@ $$
 - $\RP^2 = [\ZZ, \ZZ_2, 0, \rightarrow]$
 
 # Homology Results
-- $H^n M^n = \ZZ \iff M^n$ is orientable.
-- 
+- $H_n M^n = \ZZ \iff M^n$ is orientable.
+- $H_n(\bigvee_\alpha X_\alpha) = \bigoplus_\alpha H_n X_\alpha$
+- $H_n(X, A) \cong H_n(X/A)$
+- $H_n(X) = 0 \iff X$ has no $n\dash$cells.
 
 # Long Exact Sequences
 $$
