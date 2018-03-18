@@ -58,8 +58,9 @@ Definition: let $X$ be a topological space, then for any $k\geq 1 \in \NN$ defin
     - The modular groups $PSL_n(\ZZ)$
       - Specifically $PSL_2(\ZZ)$
 - The real Grassmanian, $Gr(n, k, \RR)$
-- The mobius strip
-- The klein bottle
+- The Stiefel manifold $V_n(k)$
+- The mobius strip $\mathbb{M}$
+- The klein bottle $\mathbb{K}$
 - $P(X, k)$ for all spaces $X$ in this list.
 
 
@@ -73,10 +74,11 @@ Modifications that can be made:
 - Remove a hole
 - Quotient by a group action (e.g. antipodal map, or rotation)
 - Remove a knot
+- Take complement in ambient space
 
 # Notation
 
-- $A \times B$ and $\prod X_i$ are direct products of groups, $A \oplus B$ and $\bigoplus X_i$ are direct sums. These are equivalent when there are finitely many terms involved; the latter is a subspace of the former when there are infinitely many terms. 
+- $A \times B$ and $\prod X_i$ are direct products of groups, $A \oplus B$ and $\bigoplus X_i$ are direct sums. These are equivalent when there are finitely many terms involved; the latter is a subspace of the former when there are infinitely many terms.
 - $A \ast B$ is a free product, $\ast_n \ZZ$ is the **free group** on $n$ generators
 - $\bigoplus_n \ZZ$ is the **free abelian group** on $n$ generators
   - Every free abelian group is $\bigoplus_{i\in I} \ZZ$ for some set $I$.
@@ -138,7 +140,7 @@ Modifications that can be made:
 - $\pi_1(X) = \ZZ$ iff $X$ is simply connected.
 - $H_1(X) = \mathbf{Ab}(\pi_1(X))$
   (the abelianization of the fundamental group.)
-- $\pi_k(\prod X_i) \cong \prod \pi_k(X_i)$ 
+- $\pi_k(\prod X_i) \cong \prod \pi_k(X_i)$
   (homotopy groups commute with products)
 - $\pi_1(\bigvee_n X_i) = \ast_n \pi_1(X_i)$
   (fundamental groups of wedges split into free products)
