@@ -186,3 +186,4 @@ How to compute:
 - $\RR^n \mapsvia{\pi} T^n \leftarrow \ZZ^n$
 - $\RP^n \mapsvia{\pi} S^n \leftarrow \ZZ_2$
 - $\vee_n S^1 \mapsvia{\pi} C^n \leftarrow \ZZ^{\ast n}$ where $C^n$ is the $n\dash$valent Cayley Graph.
+- 
