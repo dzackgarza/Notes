@@ -26,8 +26,22 @@ $$
 - $T^2 = [\ZZ, \ZZ^2, \ZZ, 0, \rightarrow]$
 - $\RP^2 = [\ZZ, \ZZ_2, 0, \rightarrow]$
 
-# Long Exact Sequences
+# Homology Results
+- $H^n M^n = \ZZ \iff M^n$ is orientable.
+- 
 
-- $A \subseteq X \implies A \to X \to X/A \mapsvia{\delta} \cdots$
-- $X = A\cup B \implies A\cap B \to A \oplus B \to A \cup B \mapsvia{\delta} \cdots$
-- $(X,A) \implies A \to X \to X,A \mapsvia{\delta} \cdots$
+# Long Exact Sequences
+$$
+\begin{align}
+%
+A \subseteq X \implies
+&A \to X \to X/A \mapsvia{\delta} \cdots \\
+%
+X = A\cup B \implies
+&A\cap B \to A \oplus B \to A \cup B \mapsvia{\delta} \cdots\\
+%
+(X,A) \implies
+&A \to X \to X,A \mapsvia{\delta} \cdots
+%
+\end{align}
+$$
