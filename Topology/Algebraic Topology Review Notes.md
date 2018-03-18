@@ -6,7 +6,7 @@ typora-copy-images-to:  .
 
 ## Lemma: There are no nontrivial homomorphisms from $\ZZ_n$ to $\ZZ$.
 
-Proof: there is an element of finite order in the former, and no element of finite order in the latter. In other words, $\ZZ$ has no finite subgroups! 
+Proof: homomorphisms send torsion to torsion; the former has $n\dash$torsion while the latter does not.
 
 This is especially useful if you have some $f: A\into B$ and you look at the induced homomorphism $f_*: \pi_1(A) \into \pi_1(B)$. If the former is finite and the latter contains a copy of $\ZZ$, then $f_*$ has to be the trivial map $f_*([\alpha]) = e \in \pi_1(B)$ for every $[\alpha] \in \pi_1(A)$.
 
@@ -29,13 +29,13 @@ This is especially useful if you have some $f: A\into B$ and you look at the ind
 
 ## Definition: Homotopy
 
-Let $X, Y$ be topological spaces and $f,g: X \to Y$ continuous maps. Then a *homotopy* from $f$ to $g$ is a continuous function 
+Let $X, Y$ be topological spaces and $f,g: X \to Y$ continuous maps. Then a *homotopy* from $f$ to $g$ is a continuous function
 
-$F: X \cross I \into Y$ 
+$F: X \cross I \into Y$
 
-such that 
+such that
 
-$F(x, 0) = f(x)$ and  $F(x,1) = g(x)$ 
+$F(x, 0) = f(x)$ and  $F(x,1) = g(x)$
 
 for all $x\in X$. If such a homotopy exists, we write $f\homotopic g$. This is an equivalence relation on $\text{Hom}(X,Y)$, and the set of such classes is denoted $[X,Y] \definedas \hom (X,Y)/\homotopic$.
 
@@ -47,7 +47,7 @@ Note that constant maps (or anything homotopic) induce zero homomorphisms.
 
 # Theorem: Any two continuous functions into a convex set are homotopic.
 
-Proof: The linear homotopy. Supposing $X$ is convex, for any two points $x,y\in X$, the line $tx + (1-t)y$ is contained in $X$ for every $t\in[0,1]$. 
+Proof: The linear homotopy. Supposing $X$ is convex, for any two points $x,y\in X$, the line $tx + (1-t)y$ is contained in $X$ for every $t\in[0,1]$.
 So let $f, g: Z \into X$ be any continuous functions into $X$. Then define $H: Z \cross I \into X$ by $H(z,t) = tf(z) + (1-t)g(z)$, the linear homotopy between $f,g$. By convexity, the image is contained in $X$ for every $t,z$, so this is a homotopy between $f,g$.
 
 ## Definition: Homotopy Equivalence
@@ -58,7 +58,7 @@ $$ f\circ g \homotopic \id_Y$$ and $g\circ f \homotopic \id_X$.
 
 Such a map $g$ is called a homotopy inverse of $f$, the pair of maps is a homotopy equivalence.
 
-If such an $f$ exists, we write $X \homotopic Y$ and say $X$ and $Y$ have the same homotopy type, or that they are homotopy equivalent. 
+If such an $f$ exists, we write $X \homotopic Y$ and say $X$ and $Y$ have the same homotopy type, or that they are homotopy equivalent.
 
 (Note that homotopy equivalence is strictly weaker than homeomorphic equivalence, i.e., $X\cong Y$ implies $X \homotopic Y$ but not necessarily the converse.)
 
@@ -97,7 +97,7 @@ Given a pointed space $(X,x_0)$, we define the fundamental group $\pi_1(X)$ as f
   - Closure:
   - Associativity:
   - Inverses:
-- Summary: 
+- Summary:
   - Elements of the fundamental group are *homotopy classes of loops*.
   - Continuous maps between spaces induce *some* homomorphism on fundamental groups.
     - Inclusions
@@ -112,7 +112,7 @@ $\Leftarrow$: Suppose $\pi_1(X) = 0$. Then there is just one element in the fund
 
 ## Definition: Covering Maps
 
-A covering map of a space is a map $p: \tilde X \into X$ such that each open set $U\in X$ pulls back to a disjoint union of open sets (called sheets) in $\tilde X$ (referred to as the covering space). That is, $p^{-1}(U) = \coprod_i V_i \subseteq \tilde X$. 
+A covering map of a space is a map $p: \tilde X \into X$ such that each open set $U\in X$ pulls back to a disjoint union of open sets (called sheets) in $\tilde X$ (referred to as the covering space). That is, $p^{-1}(U) = \coprod_i V_i \subseteq \tilde X$.
 
 If $\tilde X$is simply connected, it is the universal covering space - that is, for any other covering space $Y$ of $X$, $\tilde X$ is also a cover of $Y$. We also have $\text{Aut}(\tilde X) \cong \pi_1(X)$ for universal covers - for other covers, $\text{Aut}(\tilde X) \cong N(\Gamma) / \Gamma$ where $N(\cdot)$ is the normalizer and $\Gamma$ is the set of homotopy classes of loops in $\tilde X$ that are lifted from loops in $X$.
 
@@ -191,7 +191,7 @@ Here $X/G$ denotes $X/\sim$  where $\forall x,y\in X, x\sim y \iff \exists g\in 
 
 ### Proof:
 
-Construct a map $\phi: G \rightarrow \pi_1(X/G, G.x_0)$ by $g \mapsto [p \circ \gamma_g]$ 
+Construct a map $\phi: G \rightarrow \pi_1(X/G, G.x_0)$ by $g \mapsto [p \circ \gamma_g]$
 
 where $\gamma_g(0) = x_0$ and $\gamma_g(1) = G.x_0$.
 
@@ -199,18 +199,6 @@ where $\gamma_g(0) = x_0$ and $\gamma_g(1) = G.x_0$.
 - This is well-defined:
 
 ## Theorem: $\pi_1(\mathbb{RP}^n) \cong \mathbb{Z}_2$
-
-
-
-## Definition: Coproduct
-
-## Definition: Pushout
-
-## Definition: Colimit
-
-
-
-## Definition: Free Product with Amalgamation
 
 ## Theorem: Van Kampen's Theorem
 
@@ -247,7 +235,7 @@ Properties and examples:
 
 Given a simplex $\sigma = [v_1 \cdots v_n]$, define the face map $\del_i:\Delta^n \into \Delta^{n-1}$, where $\del_i\sigma = [v_1 \cdots \hat v_i \cdots v_n]$.
 
-A simplicial complex is a set $K​$ satisfying 
+A simplicial complex is a set $K​$ satisfying
 
 1. $\sigma \in K \implies \del_i\sigma \in K$
 2. $\sigma,\tau\in K \implies \sigma\intersect\tau = \emptyset,~ \del_i\sigma,~\text{or}~\del_i\tau$
@@ -258,17 +246,15 @@ To write down a simplicial complex, label the vertices with increasing integers.
 
 ## Examples of Simplicial Complexes
 
-![1513062466927](1513062466927.png)
+![Torus](1513062466927.png)
 
-![1513062526623](1513062526623.png)
+![Klein Bottle and $\RP^2$](1513062526623.png)
 
 For counterexamples, note that this fails to be a triangulation of $T$:
 
-![1513062599096](1513062599096.png)
+![Not a Torus](1513062599096.png)
 
 This fails, for example, the simplex $[1,2,1]$ does not uniquely determine a triangle in this picture.
-
-
 
 ## Templates for Triangulation
 
@@ -321,4 +307,3 @@ And in particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence,
 
 
 ### Long exact sequence of a triple
-
