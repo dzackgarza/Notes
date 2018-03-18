@@ -1,6 +1,15 @@
 # Homotopy
 - $f\homotopic g \implies f_* = g_*$ in homology.
 
+# The Universal Coefficient Theorems
+$$
+0 \to H_i X \tensor G \to H_i(X; G) \to \tor_1^\ZZ(H_{i-1}X, G) \to 0\\
+0 \to \ext (H_{i-1} X, G) \to H^i(X;G) \to \hom(H_i X, G) \to 0
+$$
+
+- For nice enough spaces: $H_i(X) = \ZZ^{\beta_i} \oplus T_i \implies H^i(X) = \ZZ^{\beta_i} \oplus T_{i-1}$
+
+-----
 # Algebra
 - $\QQ \tensor A \cong S^{-1}A$ for $S = \ZZ - \theset{0}$
 
@@ -13,18 +22,24 @@ $$\tor(A, B) = h[\cdots \to A_n \tensor B \to A_{n-1}\tensor B \to \cdots A_1\te
 
 Shorthand: $\tor: \mathcal{F}(A) \to (\wait \tensor B) \to H_*$
 
+## Properties of Tor
+
+- $\tor(A,B) = 0$ if $A$ or $B$ are torsion-free
+- $\tor(\ZZ_n, G) = \ker (g \mapsto ng)$
+- $\tor(A, B) = \tor(B, A)$
+- $\tor(\bigoplus A_i, B) = \bigoplus_i \tor(A_i, B)$
+
 ## Computing Ext
 $$\ext(A, B) = h[\cdots \hom(A, B_n) \to \hom(A, B_{n-1}) \to \cdots \to \hom(A, B_1) \to 0 ]$$ where $B_*$ is a free resolution of $B$.
 
 Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 
-# Properties of Ext/Tor
+## Properties of Ext
 
-- $\ext_0(A, B) = \hom(A, B)$
+- $\ext(A, B) = \hom(A, B)$
 - $\ext(F, \wait) = 0$ for $F$ free
 - $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
 - $\ext(\ZZ_n, G) \cong G/nG$
-- $\tor(\ZZ_n, G) \cong \ker (g \mapsto ng)$
 
 ## Hom/Ext/Tor Tables
 $\hom$    | $\ZZ_m$  | $\ZZ$  | $\QQ$
@@ -57,20 +72,7 @@ Thins that behave like "the identity map":
 
 For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/torext.pdf).
 
-# The Universal Coefficient Theorems
-$$
-0 \to H_i X \tensor G \to H_i(X; G) \to \tor_1^\ZZ(H_{i-1}X, G) \to 0\\
-0 \to \ext (H_{i-1} X, G) \to H^i(X;G) \to \hom(H_i X, G) \to 0
-$$
-
-- For nice enough spaces: $H_i(X) = \ZZ^{\beta_i} \oplus T_i \implies H^i(X) = \ZZ^{\beta_i} \oplus T_{i-1}$
-
-# The Kunneth Formula
-$$
-0 \to \bigoplus_j H_j(X; R) \tensor_R H_{i-j}(Y; R) \to H_i(X\cross Y; R) \to \bigoplus_j \tor_1^R(H_j(X; R), H_{i-j-1}(Y; R))
-$$
-
-
+-----
 
 # Lefshectz Number
 
