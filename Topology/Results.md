@@ -106,6 +106,8 @@ $$
 \SS^1 &=  &[&\ZZ, &\ZZ,               &0,    &0, &0,    &0\rightarrow & ]\\
 \MM &=    &[&\ZZ, &\ZZ,               &0,    &0, &0,    &0\rightarrow & ]\\
 \RP^2 &=  &[&\ZZ, &\ZZ_2,             &0,    &0, &0,    &0\rightarrow & ]\\
+\RP^3 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ, &0,    &0\rightarrow & ]\\
+\RP^4 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ_2, &0,    &0\rightarrow & ]\\
 \SS^2 &=  &[&\ZZ, &0,                 &\ZZ,  &0, &0,    &0\rightarrow & ]\\
 \TT^2 &=  &[&\ZZ, &\ZZ^2,             &\ZZ,  &0, &0,    &0\rightarrow & ]\\
 \KK &=    &[&\ZZ, &\ZZ \oplus \ZZ_2,  &0,    &0, &0,    &0\rightarrow & ]\\
