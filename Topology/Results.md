@@ -181,10 +181,11 @@ How to compute:
 
 ![$\mathbb{M}$](assets/Results-f9d55.png)
 
-# Useful Universal Covering Spaces
+# Useful Covering Spaces
 - $\RR \mapsvia{\pi} S^1 \leftarrow \ZZ$
 - $\RR^n \mapsvia{\pi} T^n \leftarrow \ZZ^n$
 - $\RP^n \mapsvia{\pi} S^n \leftarrow \ZZ_2$
 - $\vee_n S^1 \mapsvia{\pi} C^n \leftarrow \ZZ^{\ast n}$ where $C^n$ is the $n\dash$valent Cayley Graph.
 - $M \mapsvia{\pi} \tilde M \leftarrow \ZZ_2$, the orientation double cover
-- 
+- $T^2 \mapsvia{\times 2} \KK$
+- $L_{p/q} \mapsvia{\pi} S^3 \leftarrow \ZZ_q$
