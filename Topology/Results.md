@@ -50,6 +50,7 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 ## Properties of Tor
 
 - $\tor(A,B) = 0$ if $A$ or $B$ are torsion-free
+- $\tor(A,B) = \tor(A_T, B_T)$ where $G_T$ is the torsion subgroup of $G$.
 - $\tor(\bigoplus A_i, B) = \bigoplus \tor(A_i, B)$
 - $\tor(\ZZ_n, G) = \ker (g \mapsto ng) = \theset{g\in G\mid ng = 0}$
 - $\tor_0(A, B) = A \tensor B$
@@ -58,10 +59,10 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 ## Properties of Ext
 
 - $\ext(F, G) = 0$ if $F$ is free
+- $\ext(A,B) = \ext(A_T, B)$ where $A_T$ is the torsion subgroup.
 - $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
 - $\ext(\ZZ_n, G) \cong G/nG$
 - $\ext_0(A, B) = \hom(A, B)$
-- $\ext(A,B) = \ext(A_T, B)$ where $A_T$ is the torsion subgroup.
 
 ## Hom/Ext/Tor Tables
 $\hom$    | $\ZZ_m$  | $\ZZ$  | $\QQ$
