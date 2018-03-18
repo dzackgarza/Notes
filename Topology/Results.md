@@ -90,7 +90,7 @@ For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/tor
 
 # Lefshectz Number
 
-# Useful Homology
+# Low Dimensional Homology
 - $S^n = [\ZZ, \cdots , \ZZ, 0, \rightarrow]$
 - $S^1 = [\ZZ, \ZZ, 0, \rightarrow]$
 - $T^2 = [\ZZ, \ZZ^2, \ZZ, 0, \rightarrow]$
@@ -98,12 +98,12 @@ For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/tor
 
 $$
 \begin{array}{}
-\SS^1 &= &[& \ZZ, & \ZZ,    & 0, & 0, & 0, & \rightarrow & ]\\
-\MM &= &[& \ZZ, & \ZZ,      & 0, & 0, & 0, & \rightarrow & ]\\
-\SS^2 &= &[& \ZZ, & 0,      & \ZZ, & 0, & 0, & \rightarrow & ]\\
-\TT^2 &= &[& \ZZ, & \ZZ^2,  & \ZZ, & 0, & 0, & \rightarrow & ]\\
-\KK &= &[& \ZZ, & 0,      & 0, & 0, & 0, & \rightarrow & ]\\
-\SS^1 &= &[& \ZZ, & 0,      & 0, & 0, & 0, & \rightarrow & ]\\
+\SS^1 &=  &[& \ZZ, & \ZZ,               & 0,    & 0, & 0, & \rightarrow & ]\\
+\MM &=    &[& \ZZ, & \ZZ,               & 0,    & 0, & 0, & \rightarrow & ]\\
+\SS^2 &=  &[& \ZZ, & 0,                 & \ZZ,  & 0, & 0, & \rightarrow & ]\\
+\TT^2 &=  &[& \ZZ, & \ZZ^2,             & \ZZ,  & 0, & 0, & \rightarrow & ]\\
+\KK &=    &[& \ZZ, & \ZZ \oplus \ZZ_2,  & 0,    & 0, & 0, & \rightarrow & ]\\
+\SS^1 &=  &[& \ZZ, & 0,                 & 0,    & 0, & 0, & \rightarrow & ]\\
 \end{array}
 $$
 
