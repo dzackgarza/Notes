@@ -96,6 +96,17 @@ For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/tor
 - $T^2 = [\ZZ, \ZZ^2, \ZZ, 0, \rightarrow]$
 - $\RP^2 = [\ZZ, \ZZ_2, 0, \rightarrow]$
 
+$$
+\begin{array}{}
+S^1 &= &[& \ZZ, & \ZZ,    & 0, & 0, & 0, & \rightarrow & ]\\
+S^2 &= &[& \ZZ, & 0,      & \ZZ, & 0, & 0, & \rightarrow & ]\\
+T^2 &= &[& \ZZ, & \ZZ^2,  & \ZZ, & 0, & 0, & \rightarrow & ]\\
+\MM &= &[& \ZZ, & 0,      & 0, & 0, & 0, & \rightarrow & ]\\
+S^1 &= &[& \ZZ, & 0,      & 0, & 0, & 0, & \rightarrow & ]\\
+S^1 &= &[& \ZZ, & 0,      & 0, & 0, & 0, & \rightarrow & ]\\
+\end{array}
+$$
+
 # Homology Results
 - $H_n M^n = \ZZ \iff M^n$ is orientable.
 - $H_n(\bigvee_\alpha X_\alpha) = \bigoplus_\alpha H_n X_\alpha$
