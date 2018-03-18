@@ -1,0 +1,3 @@
+- Direct Sum
+- Direct Product
+- Tensor Product and Universal Property
