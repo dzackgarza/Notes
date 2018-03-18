@@ -65,6 +65,8 @@ How to compute:
     3. Compute local degrees
     3. Use $\del_n(e_i^n) = \sum_i d_i e_i^{n-1}$ where $d_i = \deg(\text{Attach }e_i^n \to \text{Collapse } X^{n-1}\dash\text{skeleton})$, which is a map $S^{n-1} \to S^{n-1}$
 
+# Manifolds
+- If $M^\text{orientable} \mapsvia{\pi_k} M^\text{non-orientable}$ is a $k\dash$fold cover, then $k$ is even or $\infty$.
 # Surfaces
 - Orientable:
   - $S^n, T^n, \RP^\text{odd}$
