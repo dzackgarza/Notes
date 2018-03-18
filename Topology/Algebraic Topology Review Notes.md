@@ -304,6 +304,4 @@ $H^{i+1}(S^n) \xrightarrow{} H^{i}(S^{n-1}) \xrightarrow{} 0 \oplus 0 \xrightarr
 
 And in particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence, which is always an isomorphism.
 
-
-
 ### Long exact sequence of a triple
