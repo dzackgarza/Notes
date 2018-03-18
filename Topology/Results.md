@@ -67,6 +67,8 @@ How to compute:
 
 # Manifolds
 - If $M^\text{orientable} \mapsvia{\pi_k} M^\text{non-orientable}$ is a $k\dash$fold cover, then $k$ is even or $\infty$.
+
+
 # Surfaces
 - Orientable:
   - $S^n, T^n, \RP^\text{odd}$
