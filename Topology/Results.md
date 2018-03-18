@@ -2,6 +2,7 @@
 - $f\homotopic g \implies f_* = g_*$ in homology.
 
 # The Universal Coefficient Theorems
+For changing coefficients from $\ZZ$ to $G$. Formulas:
 $$
 0 \to H_i X \tensor G \to H_i(X; G) \to \tor(H_{i-1}X, G) \to 0\\
 0 \to \ext (H_{i-1} X, G) \to H^i(X;G) \to \hom(H_i X, G) \to 0
