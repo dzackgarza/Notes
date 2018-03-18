@@ -60,3 +60,9 @@ How to compute:
     1. Note - $C^0 X = \pt \implies d_1: C^1 \to C^0$ is the zero map
     2. Compute local degrees
     3. Use $\del_n(e_i^n) = \sum_i d_i e_i^{n-1}$ where $d_i = \deg(\text{Attach }e_i^n \to \text{Collapse } X^{n-1}\dash\text{skeleton})$, which is a map $S^{n-1} \to S^{n-1}$
+
+# Surfaces
+- Orientable:
+  - $S^n, T^n, \RP^\text{odd}$
+- Nonorientable:
+  - $\RP^\text{even}$
