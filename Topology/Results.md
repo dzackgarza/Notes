@@ -11,10 +11,10 @@
 
 # Properties of Ext/Tor
 
-- $\ext^1(\wait, C)\circ \oplus \cong \oplus \circ \ext(\wait, C)$
-- $\ext^1(F, \wait) = 0$ for $F$ free
-- $\ext^1(\ZZ_n, G) \cong G/nG$
-- $\tor_1(\ZZ_n, G) \cong \ker (g \mapsto ng)$
+- $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
+- $\ext(F, \wait) = 0$ for $F$ free
+- $\ext(\ZZ_n, G) \cong G/nG$
+- $\tor(\ZZ_n, G) \cong \ker (g \mapsto ng)$
 
 ## Hom/Ext/Tor Tables
 $\hom$    | $\ZZ_m$  | $\ZZ$  | $\QQ$
@@ -34,6 +34,16 @@ $\ext$    | $\ZZ_m$   | $\ZZ$                 | $\QQ$
 $\ZZ_n$   | $\ZZ_d$   | $\ZZ_n$               | $0$  
 $\ZZ$     | $0$       | $0$                   | $0$
 $\QQ$     | $0$       | $\mathcal{A_p}/\QQ$   | $0$
+
+Things that behave like "the zero map":
+
+- $\ext(\ZZ, \wait)$
+- $\tor(\ZZ, \wait), \tor(\QQ, \wait)$
+- $\tor(\wait, \ZZ), \tor(\wait, \QQ)$
+
+Thins that behave like "the identity map":
+
+- $\hom(\ZZ, \wait)$
 
 For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/torext.pdf).
 
@@ -66,6 +76,7 @@ $$
 - $H_n(X, A) \cong H_n(X/A)$
 - $H_n(X) = 0 \iff X$ has no $n\dash$cells.
 - $C^0 X = \pt \implies d_1: C^1 \to C^0$ is the zero map.
+- $H^*(X; \FF) = \hom(X,\FF)$ for a field.
 
 # Long Exact Sequences
 $$
