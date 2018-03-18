@@ -109,6 +109,8 @@ $$
 \SS^2 &=  &[& \ZZ, & 0,                 & \ZZ,  & 0, & 0, & \rightarrow & ]\\
 \TT^2 &=  &[& \ZZ, & \ZZ^2,             & \ZZ,  & 0, & 0, & \rightarrow & ]\\
 \KK &=    &[& \ZZ, & \ZZ \oplus \ZZ_2,  & 0,    & 0, & 0, & \rightarrow & ]\\
+\CP^1 &=  &[& \ZZ, &0,                  &0,     & 0, & 0, & \rightarrow & ]\\
+\CP^2 &=  &[& \ZZ, &0,                  & 0,    & 0, & 0, & \rightarrow & ]\\
 \end{array}
 $$
 
