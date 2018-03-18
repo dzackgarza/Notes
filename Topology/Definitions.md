@@ -19,9 +19,17 @@
 - Cellular Homology
 - Degree of a Map
 - Exact Sequence
+- Euler Characteristic
+- Lefshetz Number
 
 # Structure
 - Free product with amalgamation
 - Direct Sum
 - Direct Product
 - Tensor Product and Universal Property
+
+# Chains
+
+- Elements of chain complexes:
+$x \in C_n(X) \implies x = \sum_i n_i (\sigma_i: \Delta^n \to X)$
+So $x$ is a singular $n\dash$chain.
