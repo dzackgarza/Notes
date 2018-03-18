@@ -34,7 +34,7 @@ $$
 - $H_n(\bigvee_\alpha X_\alpha) = \bigoplus_\alpha H_n X_\alpha$
 - $H_n(X, A) \cong H_n(X/A)$
 - $H_n(X) = 0 \iff X$ has no $n\dash$cells.
-- $C_0 X = \pt \implies d_1: C^1 \to C^0$ is the zero map.
+- $C^0 X = \pt \implies d_1: C^1 \to C^0$ is the zero map.
 
 # Long Exact Sequences
 $$
