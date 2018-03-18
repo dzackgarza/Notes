@@ -54,3 +54,4 @@ $$
 # Cellular Homology
 How to compute:
 1. Write cellular complex $$0 \to C^n \to C^{n-1} \to \cdots C^2 \to C^1 \to C^0 \to 0$$
+2. 
