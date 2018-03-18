@@ -29,6 +29,7 @@ $$
 
 ## Tensoring
 - $(\wait) \tensor_\ZZ \ZZ = \id$
+- $\ZZ_m \tensor \ZZ_n = \ZZ_d$
 
 ## Computing Tor
 
