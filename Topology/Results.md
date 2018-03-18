@@ -46,15 +46,15 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 ## Properties of Tor
 
 - $\tor(A,B) = 0$ if $A$ or $B$ are torsion-free
+- $\tor(\bigoplus A_i, B) = \bigoplus_i \tor(A_i, B)$
 - $\tor(\ZZ_n, G) = \ker (g \mapsto ng)$
 - $\tor(A, B) = \tor(B, A)$
-- $\tor(\bigoplus A_i, B) = \bigoplus_i \tor(A_i, B)$
 
 ## Properties of Ext
 
-- $\ext(A, B) = \hom(A, B)$
-- $\ext(F, \wait) = 0$ for $F$ free
+- $\ext(F, G) = 0$ if $F$ is free
 - $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
+- $\ext_0(A, B) = \hom(A, B)$
 - $\ext(\ZZ_n, G) \cong G/nG$
 
 ## Hom/Ext/Tor Tables
