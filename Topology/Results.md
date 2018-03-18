@@ -65,4 +65,4 @@ How to compute:
 - Orientable:
   - $S^n, T^n, \RP^\text{odd}$
 - Nonorientable:
-  - $\RP^\text{even}$
+  - $\RP^\text{even}, \mathbb{M}, \mathbb{K}$
