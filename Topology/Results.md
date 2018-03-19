@@ -138,11 +138,24 @@ $$
 
 ## CW Complexes
 - $S^1 = e^0 + e^1$
-- $S^2 = e^0 + e^n$
+- $S^2 = e^0 + e^2$
 - $S^n = e^0 + e^n$
 - $S^n = 2e^0 + 2e^1 + 2e^2 + \cdots + 2e^n$
 - $\RP^n = e^0 + e^1 + e^2 + \cdots + e^n$
 - $\CP^n = e^0 + e^2 + e^4 + \cdots e^{2n}$
+- $T^2 = e^0 + 2e^1 + e^2$
+
+## How to determine CW Complex of a Product
+- Write $E = e^0 + e^1 + \cdots$ and $F = e^0 + e^1 + \cdots$. Then compute the cells as $(e^0 + e^1 + \cdots)(e^0 + e^1 + \cdots)$ and just add exponents.
+    - E.g.
+    $$S^1 \cross S^1 = (e^0 + e^1)(e^0 + e^1) = e^{0+0} + 2e^{1+0} + e^{1+1} = e^0 + 2e^1 + e^2.$$
+
+    - E.g.
+    $$T^3 = (S^1)^3 = (e^0 + e^1)^3 = (e^0 + e^1)(e^0 + 2e^1 + e^2) \\
+    = e^{0+0} + 2e^{1+0} + e^{2+0} + e^{0+1} + 2e^{1+1} + e^{2+1} \\
+    = e^0 + 2e^1 + e^2 + e^1 + 2e^2 + e^3 \\
+    = e^0 + 3e^1 + 3e^2 + e^3.
+    $$
 
 ## Constructing a CW Complex with Prescribed Homology
 - Given $G = \bigoplus G_i$, and want a space such that $H_i X = G$? Construct $X = \bigvee X_i$ and then $H_i (\bigvee X_i) = \bigoplus H_i X_i$. Reduces problem to: given a group $H$, find a space $Y$ such that $H_n(Y) = G$.
