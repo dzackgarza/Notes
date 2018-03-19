@@ -193,3 +193,7 @@ How to compute:
 - $\chi X = \chi U + \chi V - \chi (U\cap V)$
 - $\chi A \# B = \chi A + \chi B - 2$
 - Connected closed surfaces: $<S, P, T, K \mid S = 1, P^2 = K, P^3 = PT>$
+- $\chi X = 2 \implies X \cong S$
+- $\chi X = 0 \implies X \cong T^2, K$
+- $\chi X = -2 \implies X \cong P$
+- $\chi X = -n, X$ orientable $\implies \chi X \cong \Sigma_{1-\frac{n}{2}}$
