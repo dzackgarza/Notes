@@ -136,6 +136,14 @@ $$
 - $C^0 X = \pt \implies d_1: C^1 \to C^0$ is the zero map.
 - $H^*(X; \FF) = \hom(X,\FF)$ for a field.
 
+## CW Complexes
+- $S^1 = e^0 + e^1$
+- $S^2 = e^0 + e^n$
+- $S^n = e^0 + e^n$
+- $S^n = 2e^0 + 2e^1 + 2e^2 + \cdots + 2e^n$
+- $\RP^n = e^0 + e^1 + e^2 + \cdots + e^n$
+- $\CP^n = e^0 + e^2 + e^4 + \cdots e^{2n}$
+
 ## Constructing a CW Complex with Prescribed Homology
 - Given $G = \bigoplus G_i$, and want a space such that $H_i X = G$? Construct $X = \bigvee X_i$ and then $H_i (\bigvee X_i) = \bigoplus H_i X_i$. Reduces problem to: given a group $H$, find a space $Y$ such that $H_n(Y) = G$.
   - Attach an $e^n$ to a point to get $H_n = \ZZ$
