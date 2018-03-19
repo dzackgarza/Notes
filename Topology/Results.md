@@ -190,6 +190,7 @@ How to compute:
 - If $A$ covers $B$ and $B$ is orientable, $A$ is orientable.
 
 # Classification of compact surfaces
+- Classified by $\chi$ and orientability.
 - $\chi X = \chi U + \chi V - \chi (U\cap V)$
 - $\chi A \# B = \chi A + \chi B - 2$
 - Connected closed surfaces: $<S, P, T, K \mid S = 1, P^2 = K, P^3 = PT>$
@@ -197,3 +198,4 @@ How to compute:
 - $\chi X = 0 \implies X \cong T^2, K$
 - $\chi X = -2 \implies X \cong P$
 - $\chi X = -n, X$ orientable $\implies \chi X \cong \Sigma_{1-\frac{n}{2}}$
+- $\chi X = -n, X$ non-orientable $\implies \chi X \cong \tilde\Sigma_{1-\frac{n}{2}}$
