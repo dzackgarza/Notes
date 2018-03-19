@@ -178,7 +178,7 @@ How to compute:
 
 1. Write cellular complex $$0 \to C^n \to C^{n-1} \to \cdots C^2 \to C^1 \to C^0 \to 0$$
 2. Compute differentials $\del_i: C^i \to C^{i-1}$
-    1. Note - $C^0 X = \pt \implies d_1: C^1 \to C^0$ is the zero map
+    1. Note - if $C^0$ is a point, $\del_1$ is the zero map
     2. Note - $H_n X = 0 \iff X$ has no $n\dash$cells.
     3. Compute local degrees
     3. Use $\del_n(e_i^n) = \sum_i d_i e_i^{n-1}$ where $d_i = \deg(\text{Attach }e_i^n \to \text{Collapse } X^{n-1}\dash\text{skeleton})$, which is a map $S^{n-1} \to S^{n-1}$
