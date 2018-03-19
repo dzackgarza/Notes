@@ -24,9 +24,9 @@ $$
 0 \to \bigoplus_j H_j(X; R) \tensor_R H_{i-j}(Y; R) \to H_i(X\cross Y; R) \to \bigoplus_j \tor_1^R(H_j(X; R), H_{i-j-1}(Y; R))
 $$
 
-For nice enough spaces:
+Non-canonical splitting:
 $$
-H_n (X\cross Y) = \bigoplus_{i+j = n} H_i X \oplus H_j Y
+H_n (X\cross Y) = \left( \bigoplus_{i+j = n} H_i X \oplus H_j Y\right) \oplus \bigoplus_{i+j = n-1}\tor(H_iX, H_j Y)
 $$
 
 -----
