@@ -30,6 +30,7 @@ H_n (X\cross Y) = \left( \bigoplus_{i+j = n} H_i X \oplus H_j Y\right) \oplus \b
 $$
 
 -----
+
 # Algebra
 - $\QQ \tensor A \cong S^{-1}A$ for $S = \ZZ - \theset{0}$
 
