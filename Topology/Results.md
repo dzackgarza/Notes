@@ -233,7 +233,7 @@ How to compute:
 - $\chi X = -n, X$ non-orientable $\implies \chi X \cong \tilde\Sigma_{1-\frac{n}{2}}$
 
 ## Cap and Cup Products
-
+- $\cup: H^p \cross H^q \to H^{p+q}; (a^p \cup b^q)(\sigma) = a^p(\sigma \circ F_p) b^q(\sigma \circ B_q)$ where $F_p, B_q$ is embedding into a $p+q$ simplex.
 - $\cap: H_p \cross H^q \to H_{p-q}; \sigma \cap \psi = \psi(F\circ\sigma)(B\circ \sigma)$ where $F,B$ are the front/backface maps.
 - Given $\psi \in C^q, \phi \in C^p, \sigma: \Delta^{p+q} \to X$, we have
 $$
