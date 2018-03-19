@@ -24,6 +24,11 @@ $$
 0 \to \bigoplus_j H_j(X; R) \tensor_R H_{i-j}(Y; R) \to H_i(X\cross Y; R) \to \bigoplus_j \tor_1^R(H_j(X; R), H_{i-j-1}(Y; R))
 $$
 
+For nice enough spaces:
+$$
+H_n (X\cross Y) = \bigoplus_{i+j = n} H_i X \oplus H_j Y
+$$
+
 -----
 # Algebra
 - $\QQ \tensor A \cong S^{-1}A$ for $S = \ZZ - \theset{0}$
