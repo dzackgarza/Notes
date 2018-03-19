@@ -57,6 +57,7 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 - $\hom(\oplus A_i, B) = \prod \hom(A_i, B)$
 - $\hom(A,\opus B_i) = \prod \hom(A, B_i)$
 - (Contravariant, Covariant)
+- Exact over vector spaces
 
 ## Properties of Tor
 
