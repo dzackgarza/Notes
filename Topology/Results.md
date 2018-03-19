@@ -228,7 +228,7 @@ How to compute:
 - For $A \mapsvia{\pi(\times d)} B$, we have $\chi(A) = d\chi(B)$
 - Covering spaces of orientable manifolds are orientable.
 
-# Classification of compact surfaces
+# Classification of Compact Surfaces (Euler Characteristic)
 - Classified by $\chi$ and orientability.
 - $\chi X = \chi U + \chi V - \chi (U\cap V)$
 - $\chi A \# B = \chi A + \chi B - 2$
@@ -238,6 +238,7 @@ How to compute:
 - $\chi X = -2 \implies X \cong P$
 - $\chi X = -n, X$ orientable $\implies \chi X \cong \Sigma_{1-\frac{n}{2}}$
 - $\chi X = -n, X$ non-orientable $\implies \chi X \cong \tilde\Sigma_{1-\frac{n}{2}}$
+- $\chi M^n = 0$ for $n$ odd.
 
 ## Cap and Cup Products
 - $\cup: H^p \cross H^q \to H^{p+q}; (a^p \cup b^q)(\sigma) = a^p(\sigma \circ F_p) b^q(\sigma \circ B_q)$ where $F_p, B_q$ is embedding into a $p+q$ simplex.
