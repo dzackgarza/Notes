@@ -240,6 +240,9 @@ How to compute:
 - $\chi X = -n, X$ non-orientable $\implies \chi X \cong \tilde\Sigma_{1-\frac{n}{2}}$
 - $\chi M^n = 0$ for $n$ odd.
 - $M^n$ closed/connected $\implies H_n = \ZZ, \tor(H_{n-1}) = 0$
+- 3-manifolds:
+  - Orientable: $H_* = (\ZZ, \ZZ^r, \ZZ^r, \ZZ)$
+  - Nonorientable: $H_* = (\ZZ, \ZZ^r, \ZZ^{r-1} \oplus \ZZ_2, \ZZ)$
 
 ## Cap and Cup Products
 - $\cup: H^p \cross H^q \to H^{p+q}; (a^p \cup b^q)(\sigma) = a^p(\sigma \circ F_p) b^q(\sigma \circ B_q)$ where $F_p, B_q$ is embedding into a $p+q$ simplex.
