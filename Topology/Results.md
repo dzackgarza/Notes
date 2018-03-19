@@ -187,7 +187,7 @@ How to compute:
 - $L_{p/q} \mapsvia{\pi} S^3 \leftarrow \ZZ_q$
 - $\CC^* \mapsvia{z^n} \CC \leftarrow \ZZ_n$
 - For $A \mapsvia{\pi(\times d)} B$, we have $\chi(A) = d\chi(B)$
-- If $A$ covers $B$ and $B$ is orientable, $A$ is orientable.
+- Covering spaces of orientable manifolds are orientable.
 
 # Classification of compact surfaces
 - Classified by $\chi$ and orientability.
@@ -195,7 +195,7 @@ How to compute:
 - $\chi A \# B = \chi A + \chi B - 2$
 - Connected closed surfaces: $<S, P, T, K \mid S = 1, P^2 = K, P^3 = PT>$
 - $\chi X = 2 \implies X \cong S$
-- $\chi X = 0 \implies X \cong T^2, K$
+- $\chi X = 0 \implies X \cong T^2$ or $K$
 - $\chi X = -2 \implies X \cong P$
 - $\chi X = -n, X$ orientable $\implies \chi X \cong \Sigma_{1-\frac{n}{2}}$
 - $\chi X = -n, X$ non-orientable $\implies \chi X \cong \tilde\Sigma_{1-\frac{n}{2}}$
