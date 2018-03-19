@@ -182,6 +182,14 @@ How to compute:
     2. Note - $H_n X = 0 \iff C^n = \emptyset$.
     3. Compute local degrees?
     3. Use $\del_n(e_i^n) = \sum_i d_i e_i^{n-1}$ where $$d_i = \deg(\text{Attach }e_i^n \to \text{Collapse } X^{n-1}\dash\text{skeleton}),$$ which is a map $S^{n-1} \to S^{n-1}$.
+    4. Note that $\ZZ^m \mapsvia{f} \ZZ^n$ has an $n\times m$ matrix
+    5. Row reduce, image is span of rows with pivots. Kernel can be easily found by taking RREF, padding with zeros so matrix is square and has all diagonals, then reading down diagonal - if a zero is encountered on $n$th element, take that column vector as a basis element with $-1$ substituted in for the $n$th entry.
+    eg.
+    $$
+\pmatrix{\mathbf1&2&0&2\\0&0&\mathbf1&-1\\0&0&0&\mathbf0} \to \pmatrix{\mathbf1&2&0&2\\0&\mathbf0&0&0\\0&0&\mathbf1&-1\\0&0&0&\mathbf0}\\ \ker = \pmatrix{2\\-1\\0\\0},\pmatrix{2\\0\\-1\\-1}\\
+\im = <a+2b+d,c-d>
+    $$
+    6. Or look at elementary divisors, say $n_i$, then the image is isomorphic to $\bigoplus n_i \ZZ$
 
 # Manifolds
 - If $M^\text{orientable} \mapsvia{\pi_k} M^\text{non-orientable}$ is a $k\dash$fold cover, then $k$ is even or $\infty$.
