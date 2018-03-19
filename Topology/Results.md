@@ -234,6 +234,8 @@ How to compute:
 
 ## Cap and Cup Products
 - $\cup: H^p \cross H^q \to H^{p+q}; (a^p \cup b^q)(\sigma) = a^p(\sigma \circ F_p) b^q(\sigma \circ B_q)$ where $F_p, B_q$ is embedding into a $p+q$ simplex.
+- For $f$ cts, $f^*(a\cup b) = f^*a \cup f^*b$
+- $\del(a^p \cup b^q) = \del a^p \cup b^q + (-1)^p(a^p\cup \del b^q)$ (The Leibniz rule)
 - $\cap: H_p \cross H^q \to H_{p-q}; \sigma \cap \psi = \psi(F\circ\sigma)(B\circ \sigma)$ where $F,B$ are the front/backface maps.
 - Given $\psi \in C^q, \phi \in C^p, \sigma: \Delta^{p+q} \to X$, we have
 $$
