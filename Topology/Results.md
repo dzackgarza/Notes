@@ -53,6 +53,11 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 - $\ZZ_m \tensor \ZZ_n = \ZZ_d$
 - $A\tensor B = 0 \implies A = 0 ~\or~ B = 0$
 
+## Properties of Hom
+- $\hom(\oplus A_i, B) = \prod \hom(A_i, B)$
+- $\hom(A,\opus B_i) = \prod \hom(A, B_i)$
+- (Contravariant, Covariant)
+
 ## Properties of Tor
 
 - $\tor(A,B) = 0$ if $A$ or $B$ are torsion-free
