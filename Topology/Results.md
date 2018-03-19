@@ -240,5 +240,5 @@ How to compute:
 - Given $\psi \in C^q, \phi \in C^p, \sigma: \Delta^{p+q} \to X$, we have
 $$
 \psi(\sigma \cap \phi) = (\phi \cup \psi)(\sigma)\\
-<a\cup b, c> = <a, b\cap c>
+<\phi\cup \psi, \sigma> = <\psi, \sigma \cap \phi>
 $$
