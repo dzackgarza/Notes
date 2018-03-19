@@ -173,11 +173,7 @@ How to compute:
 
 # Pasting Diagrams
 
-![$T^2$](assets/Results-86857.png)
-
-![$\mathbb{K}$](assets/Results-f9260.png)
-
-![$\RP^2$](assets/Results-bfc77.png)
+![$S^2, \RP^2, T^2, \KK$](assets/Results-37710.png)
 
 ![$\mathbb{M}$](assets/Results-f9d55.png)
 
@@ -192,3 +188,8 @@ How to compute:
 - $\CC^* \mapsvia{z^n} \CC \leftarrow \ZZ_n$
 - For $A \mapsvia{\pi(\times d)} B$, we have $\chi(A) = d\chi(B)$
 - If $A$ covers $B$ and $B$ is orientable, $A$ is orientable.
+
+# Classification of compact surfaces
+- $\chi X = \chi U + \chi V - \chi (U\cap V)$
+- $\chi A \# B = \chi A + \chi B - 2$
+- Connected closed surfaces: $<S, P, T, K \mid S = 1, P^2 = K, P^3 = PT>$
