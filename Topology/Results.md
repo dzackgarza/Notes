@@ -231,3 +231,11 @@ How to compute:
 - $\chi X = -2 \implies X \cong P$
 - $\chi X = -n, X$ orientable $\implies \chi X \cong \Sigma_{1-\frac{n}{2}}$
 - $\chi X = -n, X$ non-orientable $\implies \chi X \cong \tilde\Sigma_{1-\frac{n}{2}}$
+
+## Cap and Cup Products
+
+- $\cap: H_p \cross H^q \to H_{p-q}; \sigma \cap \psi = \psi(F\circ\sigma)(B\circ \sigma)$ where $F,B$ are the front/backface maps.
+- Given $\psi \in C^q, \phi \in C^p, \sigma: \Delta^{p+q} \to X$, we have
+$$
+\psi(\sigma \cap \phi) = (\phi \cup \psi)(\sigma)
+$$
