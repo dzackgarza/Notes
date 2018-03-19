@@ -74,6 +74,7 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 - $\ext(\bigoplus X_i, C) = \bigoplus \ext(X_i, C)$
 - $\ext(\ZZ_n, G) \cong G/nG$
 - $\ext_0(A, B) = \hom(A, B)$
+- $\ext(H_i(X; \FF), \FF) = 0$ for $\FF$ a field.
 
 ## Hom/Ext/Tor Tables
 $\hom$    | $\ZZ_m$  | $\ZZ$  | $\QQ$
