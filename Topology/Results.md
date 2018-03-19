@@ -239,6 +239,7 @@ How to compute:
 - $\chi X = -n, X$ orientable $\implies \chi X \cong \Sigma_{1-\frac{n}{2}}$
 - $\chi X = -n, X$ non-orientable $\implies \chi X \cong \tilde\Sigma_{1-\frac{n}{2}}$
 - $\chi M^n = 0$ for $n$ odd.
+- $M^n$ closed/connected $\implies H_n = \ZZ, \tor(H_{n-1}) = 0$
 
 ## Cap and Cup Products
 - $\cup: H^p \cross H^q \to H^{p+q}; (a^p \cup b^q)(\sigma) = a^p(\sigma \circ F_p) b^q(\sigma \circ B_q)$ where $F_p, B_q$ is embedding into a $p+q$ simplex.
