@@ -146,7 +146,7 @@ $$
 - $T^2 = e^0 + 2e^1 + e^2$
 
 ## How to determine CW Complex of a Product
-- Write $E = e^0 + e^1 + \cdots$ and $F = e^0 + e^1 + \cdots$. Then compute the cells as $(e^0 + e^1 + \cdots)(e^0 + e^1 + \cdots)$ and just add exponents.
+- Write $E = e^0 + e^1 + \cdots$ and $F = e^0 + e^1 + \cdots$. Then compute the cells as $(e^0 + e^1 + \cdots)(e^0 + e^1 + \cdots)$ and just add exponents. Essentially, just make the number of each cells present a coefficient of a polynomial and multiply together.
     - E.g.
     $$S^1 \cross S^1 = (e^0 + e^1)(e^0 + e^1) = e^{0+0} + 2e^{1+0} + e^{1+1} = e^0 + 2e^1 + e^2.$$
 
