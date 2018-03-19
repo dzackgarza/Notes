@@ -138,8 +138,8 @@ $$
 
 ## Constructing a CW Complex with Prescribed Homology
 - Given $G = \bigoplus G_i$, and want a space such that $H_i X = G$? Construct $X = \bigvee X_i$ and then $H_i (\bigvee X_i) = \bigoplus H_i X_i$. Reduces problem to: given a group $H$, find a space $Y$ such that $H_n(Y) = G$.
-  - Attach $n\dash$cells to get $\ZZ$
-  - Attach $n\dash$cells with attaching map of degree $d$ to get $\ZZ_d$
+  - Attach an $e^n$ to a point to get $H_n = \ZZ$
+  - Then attach an $e^{n+1}$ with attaching map of degree $d$ to get $H_n = \ZZ_d$
 
 # Long Exact Sequences
 $$
