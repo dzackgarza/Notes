@@ -239,5 +239,6 @@ How to compute:
 - $\cap: H_p \cross H^q \to H_{p-q}; \sigma \cap \psi = \psi(F\circ\sigma)(B\circ \sigma)$ where $F,B$ are the front/backface maps.
 - Given $\psi \in C^q, \phi \in C^p, \sigma: \Delta^{p+q} \to X$, we have
 $$
-\psi(\sigma \cap \phi) = (\phi \cup \psi)(\sigma)
+\psi(\sigma \cap \phi) = (\phi \cup \psi)(\sigma)\\
+<a\cup b, c> = <a, b\cap c>
 $$
