@@ -143,6 +143,7 @@ $$
 - $S^n = 2e^0 + 2e^1 + 2e^2 + \cdots + 2e^n \\= 2(1+x+x^2+\cdots x^n)$
 - $\RP^n = e^0 + e^1 + e^2 + \cdots + e^n \\= 1+x+x^2+\cdots x^n$
 - $\CP^n = e^0 + e^2 + e^4 + \cdots e^{2n} \\= 1 + x^2 +x^4 + \cdots x^{2n}$
+- $\KK = e^0 + 2e^1 + e^2$
 - $T^2 = e^0 + 2e^1 + e^2 \\ = 1 + 2x + x^2$
 - $T^3 = e^0 + 3e^1 + 3e^2 + e^3 \\= 1 + 3x + 3x^2 + x^3$
 - To get cell complex of $A\cross B$, just write each cell complex as a polynomial and multiply.
