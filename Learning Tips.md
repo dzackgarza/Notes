@@ -25,7 +25,7 @@ The most prestigious journals in the field.
    5. Acta
 2.  
    1. Duke, 
-   2. G&T, 
+   2. Geometry and Topology, 
    3. GAFA
 3. ​
    1. AJM, 
