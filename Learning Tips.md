@@ -32,7 +32,7 @@ The most prestigious journals in the field.
    2. Crelle’s, 
    3. J Topology, 
    4. JDG, 
-   5. Advances
+   5. Advances (Elsevier)
 
 
 
@@ -45,11 +45,11 @@ A big cluster of strong journals for geometry/topology/GGT:
    4. Proc/Journal LMS, 
    5. Groups Geom Dyn, 
    6. Israel J Math, 
-   7. Alg Geom Top, 
+   7. [Alg Geom Top](https://msp.org/agt/2018/18-2/) 
    8. Geom Dedicata, 
    9. Trans AMS, 
    10. Pacific J M, 
-   11. J Algebra, 
+   11. J Algebra,  (Elsevier)
    12. IMRN, 
    13. Michigan Math J, 
    14. J Topology and Analysis
@@ -58,12 +58,12 @@ Another cluster, more specialized:
 
 5. ​
    1. J Knot Theory Ram, 
-   2. Top and Its Appl, 
+   2. Top and Its Appl,  (Elsevier)
    3. New York JM, 
    4. Advances in Geom,
    5. Mathematika, 
    6. J Group Theory, 
-   7. J Pure Appl Alg
+   7. J Pure Appl Alg  (Elsevier)
 
 
 
@@ -83,3 +83,5 @@ Another cluster, more specialized:
     - Math Res Lett, 
     - Proc AMS, 
     - Bull LMS
+
+3 Manifold Topology: geometrization conjecture has been proven, and the virtual Haken conjecture 
