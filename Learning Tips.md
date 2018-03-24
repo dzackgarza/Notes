@@ -30,7 +30,7 @@ The most prestigious journals in the field.
 3. ​
    1. AJM, 
    2. Crelle’s, 
-   3. J Topology, 
+   3. Journal of Topology, 
    4. JDG, 
    5. Advances (Elsevier)
 
@@ -43,9 +43,9 @@ A big cluster of strong journals for geometry/topology/GGT:
    2. Commentarii, 
    3. Math Annalen, 
    4. Proc/Journal LMS, 
-   5. Groups Geom Dyn, 
+   5. Groups Geometry and Dynamics, 
    6. Israel J Math, 
-   7. [Alg Geom Top](https://msp.org/agt/2018/18-2/) 
+   7. [Algebraic and Geometric Topology](https://msp.org/agt/2018/18-2/) 
    8. Geom Dedicata, 
    9. Trans AMS, 
    10. Pacific J M, 
