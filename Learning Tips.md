@@ -64,3 +64,22 @@ Another cluster, more specialized:
    5. Mathematika, 
    6. J Group Theory, 
    7. J Pure Appl Alg
+
+
+
+- Special focus journals: 
+  - Notable conference proceedings.
+    - Contemp Math [Ahlfors-Bers Colloquium], 
+    - Top Proc [Spring Top Dyn Conf]
+  - Expository element to mission.
+    - L’Enseignement Math, 
+    - Experimental Math, 
+    - Amer Math Monthly, 
+    - Notices AMS,
+    - Rocky Mountain J, 
+    - Geombinatorics, 
+    - Intelligencer
+  - Short papers (page limit).
+    - Math Res Lett, 
+    - Proc AMS, 
+    - Bull LMS
