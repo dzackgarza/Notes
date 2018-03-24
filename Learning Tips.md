@@ -10,3 +10,8 @@ To maintain knowledge:
 - Space out learning
 
 Go deep with ideas, write up an explanation to someone else.
+
+
+
+# Notes on Topology Journals
+
