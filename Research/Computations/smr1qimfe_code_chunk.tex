@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{adjustbox}
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)]
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\begin{document}
+
+$E_2$ Page:
+
+\adjustbox{scale=2,center}{%
+\begin{tikzcd}
+p ~/~ S^1 & \cdot & \cdot & \cdot & \cdot &  \\
+1 & \mathbb{Z} \arrow[rrd, "{d_2^{0,1}}" description] & \cdot & \encircle{$\mathbb{Z}$} & \cdot &  \\
+0 & \encircle{$\mathbb{Z}$} & \cdot & \mathbb{Z} & \cdot &  \\
+ & 0 & 1 & 2 & 3 & q ~/~ S^2
+\end{tikzcd}
+}
+
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+\newpage
+$E_3$ Page:
+
+$$
+\begin{tikzcd}
+p ~/~ S^1 & \cdot & \cdot & \cdot & \cdot &  \\
+1 & \ker d_2^{0,1} & \cdot & \encircle{$\mathbb{Z}$} & \cdot &  \\
+0 & \encircle{$\mathbb{Z}$} & \cdot & \text{cokernel } d_2^{0,1} & \cdot &  \\
+ & 0 & 1 & 2 & 3 & q ~/~ S^2
+\end{tikzcd}
+$$
+
+
+
+\end{document}

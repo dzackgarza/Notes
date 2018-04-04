@@ -38,7 +38,7 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.show()
 ```
 
-Note that "fixed point problems" are in bijective correspondence with "finding the zero of a function" problems - for example, a fixed point satisfies $f(x) = x$, but this can equivalently be stated as looking for the zeros of the function $g(x) = f(x) - x$, so $g(x) = 0 \iff f(x) -x = 0 \iff x = f(x)$.
+Note that "fixed point problems" are in bijective correspondence with "finding the zero of a function" problems - for example, a fixed point satisfies $f(x) = x$, but this can equivalently be stated as looking for the zeros of the function $g(x) = f(x) - x$, so $g(x) = 0 \iff f(x) -x = 0 \iff x = f(x)$. So we can equivalently look for zeros on the graph of $g(x)$:
 
 ```python {cmd=true matplotlib=true}
 import numpy as np
@@ -51,8 +51,9 @@ plt.ylim(0, 1)
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.show()
 ```
+And here we see that there is at least one zero in the interval $[0,1]$, located somewhere around $0.75$.
 
-(Aside: Feynman once joked that the entirety of physics could be explained by $U = 0$ for some value of $U$, where you just collected every known equation on the left-hand side.)
+(Aside: Feynman once joked that the entirety of physics could be modeled by $U = 0$ for some function $U$, where you just collected every equation known to man on the left-hand side and called it $U$.)
 
 
 # Brouwer's Fixed Point
@@ -69,7 +70,7 @@ Fact: $\pi_1(S^1) = \ZZ$ and $\pi_1(D^2) = 0$. Then define a new function $g: D^
 Extending to higher dimensions: look at a cup of coffee, then imagine
 
 
-# Borsuk Ulask:
+# Borsuk Ulam:
 
 There exist a pair of antipodal points with same temperature and pressure. There are _infinitely_ many antipodal points with the same temperature!
 
