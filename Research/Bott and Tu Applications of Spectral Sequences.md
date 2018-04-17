@@ -78,5 +78,5 @@
     - Can compute $H^*(\Omega S^n)$
 - $Y \into X\cross Y \into X$ (not used here)
 
-## Intersting Spaces to Look At:
+## Interesting Spaces to Look At:
 $O, SO, Spin, U, or Sp$

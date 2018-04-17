@@ -21,7 +21,7 @@ $$ E_2^{p,q} = H^p(S^2) \tensor H^q(S^1).$$
 
 This yields the following $E_2$  and $E_3$ pages respectively (indexing columns with $p$ and rows with $q$):
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex{cmd:true, hide:true, run_on_save:false}
 \documentclass{article}
 \usepackage{tikz}
 \usetikzlibrary{cd}
@@ -124,7 +124,7 @@ $$E_2^{p,q} = H^p(S^3) \tensor H^q(SO^3).$$
 
 This is a little like the previous case, except the $E_2$ page is boring because the columns are further separated. Almost all entries stabilize early (partially due to the gap in row 1!) and the only potentially interesting thing happens on $E_3$:
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{article}
 \usepackage{tikz}
 \usetikzlibrary{cd}
@@ -176,7 +176,7 @@ $E_2^{p,q} = H^p(S^4) \tensor H^q(SO^4)$
 
 which only gets interesting at $E_4$:
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{article}
 \usepackage{tikz}
 \usetikzlibrary{cd}
@@ -206,7 +206,7 @@ q ~/~ SO^4 & \cdot & \cdot & \cdot & \cdot & \cdot & \cdot \\
 
 Taking a look at $E_5$, everything stabilizes:
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{article}
 \usepackage{tikz}
 \usetikzlibrary{cd}
