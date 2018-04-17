@@ -45,7 +45,7 @@ $$
 
 So we can apply the usual spectral sequence to this filtration. We know that $E_\infty$ can only contain $\ZZ$ in dimension zero, and we obtain the following $E_2$ page:
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
@@ -73,7 +73,7 @@ d_2(\alpha\tensor\beta) &= d_2(\alpha\tensor 1) \cup (1\tensor\beta) + 0\\
 $$
 
 And using the cup product structure on cohomology, we can fill out the following diagram that summarizes these results:
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
@@ -199,7 +199,7 @@ and so we can think of $\hom$ like a Hermitian inner product of this form, which
 
 We can also look at this as an almost-commuting of the following diagram
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz-cd}
@@ -224,7 +224,7 @@ We can also look at this as an almost-commuting of the following diagram
 
 where we can simplify by choosing elements, yielding
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz-cd}
@@ -271,7 +271,7 @@ Define the classifying space functor $\mathbf{Cat} \mapsvia{B} \mathbf{Set}$, de
 - The vertices (0-simplices) are the objects,
 - The edges (1-simplices) are the morphisms,
 - The 2-simplices are triangles
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz-cd}
@@ -286,7 +286,7 @@ A \arrow[rruu, "f"] \arrow[rrrr, "fg"] &  &  &  & C
 where the inside is considered "filled in" to denote the equivalence between the bottom $fg$ and the top "$f$ then $g$" path.
 
 - The 3-simplices are the tetrahedra
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz-cd}
@@ -308,7 +308,7 @@ This produces a CW complex, and hence a topological space, from the input catego
 
 **Example**: Let $G$ be a discrete group of order $n$ -- it is equivalently a category with one object and $n$ morphisms.
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}

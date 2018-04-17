@@ -1,9 +1,11 @@
 # Reading Notes
 
+[TOC]
+
+Paper on "constructive" algebraic topology
 [J. Rubio, F. Sergeraert / Bull. Sci. math. 126 (2002) 389–412 403](https://www-fourier.ujf-grenoble.fr/~sergerar/Papers/Constructive-AT.pdf)
 
-Many constructions in algebraic topology can be organized as solutions of fibration
-problems.
+Many constructions in algebraic topology can be organized as solutions of fibration problems.
 
 In particular the classifying space $BG$ of a topological group $G$ is the solution for a fibration $BG \cross_\tau G$ where the fiber space is the given group $G$, the base space is the classifying space $BG$ and the product $BG \cross G$ is twisted in such a way the total space $BG \cross_\tau G$ is contractible. The same idea where the base space $X$ is given and the fibre space is unknown leads to the loop space $\Omega X$ and the contractible total space $X \cross_\tau \Omega X$.
 
@@ -46,7 +48,7 @@ The stable homotopy groups of spheres are isomorphic to the framed cobordism gro
 
 The Adams-Novikov SS ends up being cleaner, fewer differentials!
 
-Table of $pi_{n+k}S^n$: [here](http://www.math.nus.edu.sg/~matwujie/homotopy_groups_sphere.html)
+Table of $\pi_{n+k}S^n$: [here](http://www.math.nus.edu.sg/~matwujie/homotopy_groups_sphere.html)
 
 Interesting question: $\pi_0(X)$ can be defined for schemes. What are the higher homotopy groups? What do they measure? (More fundamentally, what do higher homotopy groups of spheres measure at all?)
 
@@ -62,62 +64,64 @@ WRT schemes, what are the homotopy spheres? What are the homology spheres, the E
 - Define homotopy invariance
 - Classification of abelian groups
   - Free and torsion
-- Define pi_n(X)
+- Define $\pi_n(X)$
   - Show functoriality
   - Show homotopy invariant
 - Whitehead's Theorem (homotopy and homology versions)
-- Show higher pi_n are abelian
-- Compute H_* S^n
-- Compute pi_k S^1
+- $\pi_n$ for $n\geq 2$ is abelian
+- Compute $H_* S^n$
+- Compute $\pi_k S^1$
 - Cellular approximation theorem
-- Show pi_k S^n = 0 for k<n
-- Show pi_n only depends on n-skeleton
+- Show $\pi_k S^n = 0$ for $k<n$
+- Show $\pi_n$ only depends on n-skeleton
 - Hurewicz theorem
-- Show pi_n S^n = Z
-- Show pi_i S^n = 0 for i < n
-- Define fibrations and fibre bundles
+- Show $\pi_n S^n = Z$
+- Show $\pi_i S^n = 0$ for $i < n$
+- Define fibrations and fiber bundles
 - Define suspension and loop spaces
-- Show \Sigma \Omega adjunction
-- Show how to use \Sigma and \Omega to move between pi_n using equalities
+- Show $\Sigma \to \Omega$ adjunction
+- Show how to use $\Sigma$ and $\Omega$ to move between $\pi_n$ using equalities
 - Freudenthal Suspension theorem
 - The homotopy LES of a fibration
 - Hopf Fibration
-  - Show pi_k S^2 = pi_k S^3
-  - Show pi_3 S^2 = Z
+  - Show $\pi_k S^2 = \pi_k S^3$
+  - Show $\pi_3 S^2 = Z$
 - Killing off homotopy groups
 - SS of a filtration
 - Serre SS
-  - Compute algebra structure of CP^\infty
-- Compute pi_4 S^2
-- Compute first stable pi_k
+  - Compute algebra structure of $CP^\infty$
+- Compute $\pi_4 S^2$
+- Compute first stable $\pi_k$
 - Freudenthal Suspension
 - Eilenberg-Maclane Spaces
-- H^n (X; G) = [X, K(G, n)]
+- $H^n (X; G) = [X, K(G, n)]$
 - Summary of "easy" results:
-  - pi_k S^1 = 0, i > 1
-  - pi_n S^n = Z
-  - pi_3 S^2 = Z
-  - pi_k S^2 = pi_k S^3
-  - pi_i(S^n) is finite for i > n
-    - Except for pi_{4k-1}
+  - $\pi_k S^1 = 0, i > 1$
+  - $\pi_n S^n = Z$
+  - $\pi_3 S^2 = Z$
+  - $\pi_k S^2 = \pi_k S^3$
+  - $\pi_i(S^n)$ is finite for $i > n$
+    - Except for $\pi_{4k-1}$
   - See [here](https://web.stanford.edu/~amwright/HomotopyGroupsOfSoheres.pdf)
 - Harder results
-  - pi_n+1 S^n = Z\delta_2 + Z_2 \delta_{n \geq 3}
-  - pi_n+2 S^n = Z_2
+  - $\pi_n+1 S^n = Z\delta_2 + Z_2 \delta_{n \geq 3}$
+  - $\pi_n+2 S^n = Z_2$
 - Exact sequences
 - Splitting and extension problem
-- Degree of a map to Sn
-- Whitehead product and Lie Algebra structure of pi_*
+- Degree of a map to $S^n$
+- Whitehead product and Lie Algebra structure of $\pi_*$
 
 ----
 
 In fact, by working the Serre spectral sequence backwards, we can compute the homology of $\Omega S^n$.
 
-
+# Unstable homotopy groups of spheres
 ![Unstable Homotopy Groups of Spheres](assets/2-22ReadingNotes-52d83.png)
 
+# Homotopy groups of SOn
 ![Homotopy Groups of $SO^n$](assets/2-22ReadingNotes-591bd.png)
 
+# Useful Higher Homotopy used in Physics
 ![Various higher homotopy groups](assets/2-22ReadingNotes-0ea10.png)
 
 $\pi_n$ are equal for the following spaces:
@@ -127,6 +131,8 @@ $\pi_n$ are equal for the following spaces:
 - $S^3$
 - $SU^2$
 
+ (Maybe these are all diffeomorphic)
+
 Also $\pi_n(\RP^n) = \pi_n(S^n)$
 
 $Sp^4 = SU^2 \cross SU^2$
@@ -134,43 +140,44 @@ $Sp^4 = SU^2 \cross SU^2$
 $J: \pi_k(SO^n) \to \pi_{n+k} S^n$
 
 
+# Homotopy of Infinite Grasmmanian
 ![Homotopy of infinite Grassmanian](assets/2-22ReadingNotes-f759d.png)
 
 
 ---
 
-It is ''well-known'' that the third stable homotopy group of spheres is cyclic of order 24. It is also ''well-known'' that the quaternionic Hopf map ν:S7→S4, an S3-bundle, suspends to a generator of π8(S5)=πst3. It is even better known that the complex Hopf map η:S3→S2 suspends to a generator of π4(S3)=πst1=Z/2. For this, there is a reasonably elementary argument, see e.g. Bredon, Topology and Geometry, page 465 f:
+It is ''well-known'' that the third stable homotopy group of spheres is cyclic of order 24. It is also "well-known" that the quaternionic Hopf map $ν:S^7→S^4$, an $S^3$-bundle, suspends to a generator of $π_8(S^5)=π^{st}_3$. It is even better known that the complex Hopf map $η:S^3 \to S^2$ suspends to a generator of $π_4(S^3)=π^{st}_1=\ZZ_2$. For this, there is a reasonably elementary argument, see e.g. Bredon, Topology and Geometry, page 465.
 
-s we have seen in this MO question, and also this one, the K3 surface plays an important role in the third stable homotopy group of spheres. It can be viewed as the source of the 24 in this group πst3=Z/24. Here is a brief review of how that goes: the stable homotopy groups (in degree n) of spheres are the same as cobordism classes of stably framed manifolds (of dimension n). In dimension three the generator is given by ν=(S3,Lie), the 3-sphere with its Lie group framing (where we think of S3⊆H as the group of unit quaterions).
+As we have seen in this MO question, and also this one, the K3 surface plays an important role in the third stable homotopy group of spheres. It can be viewed as the source of the 24 in this group $π^{st}_3=\ZZ_{24}$. Here is a brief review of how that goes: the stable homotopy groups (in degree $n$) of spheres are the same as cobordism classes of stably framed manifolds (of dimension $n$). In dimension 3 the generator is given by $ν=(S^3,Lie)$, the 3-sphere with its Lie group framing (where we think of $S^3⊆H$ as the group of unit quaterions).
 
 
-The homotopy groups πi(S3) for i≤64 are apparently computed in:
+The homotopy groups $π_i(S^3)$ for $i\leq 64$ are apparently computed in:
 
-Curtis, Edward B.,Mahowald, Mark, The unstable Adams spectral sequence for S3, Algebraic topology (Evanston, IL, 1988), 125–162, Contemp. Math., 96, Amer. Math. Soc., Providence, RI, 1989.
+Curtis, Edward B.,Mahowald, Mark, The unstable Adams spectral sequence for $S^3$, Algebraic topology (Evanston, IL, 1988), 125–162, Contemp. Math., 96, Amer. Math. Soc., Providence, RI, 1989.
 
 The Pontryagin-Thom construction shows that the stable homotopy groups of spheres are the same as the groups of stably framed manifolds up to cobordism.
 
 The best overall summary of results would be Doug Ravenel's book on the homotopy groups of spheres, and I would also recommend Kochman's book. Read works of Mark Mahowald for results using the Adams spectral sequence, and Doug Ravenel for the Adams-Novikov spectral sequence. Complete or nearly complete calculations for the homotopy groups of spheres that have been localized at a particular Morava K-theory have been made by Toda, Goerss-Henn-Mahowald-Rezk, and Mark Behrens. If you're interested in computer calculations of Ext, you should contact Robert Bruner or Christian Nassau. Many others have contributed to the calculation of homotopy groups of spheres and probably deserve to be mentioned (if I omitted someone, it was unintentional).
 
-One of the most recent spectacular advances in algebraic topology was the solution of (most of) the Kervaire invariant 1 problem by Hill, Hopkins and Ravenel about framed manifolds/stable homotopy groups of spheres. They used a tremendous amount of stuff to solve this classical problem: equivariant topology, chromatic homotopy theory, spectral sequences, orthogonal spectra, abstract homotopy theory, ...
+*One of the most recent spectacular advances in algebraic topology was the solution of (most of) the Kervaire invariant 1 problem by Hill, Hopkins and Ravenel about framed manifolds/stable homotopy groups of spheres.* They used a tremendous amount of stuff to solve this classical problem: equivariant topology, chromatic homotopy theory, spectral sequences, orthogonal spectra, abstract homotopy theory, ...
 
 [https://www.youtube.com/watch?v=jie-ww7RBWY](https://www.youtube.com/watch?v=jie-ww7RBWY)
 
 [Honors Thesis on Related Stuff, Hopf Invariant 1](http://mathematics.stanford.edu/wp-content/uploads/2013/08/Victor-Honors-Thesis-2013.pdf)
 
+[Only odd spheres with a unique smooth structure are dimensions 1, 3, 5, and 61](http://archive.ymsc.tsinghua.edu.cn/pacm_download/293/8755-61sphere_final.pdf)
 
-[Only odd spheres with a unique smooth structure: 1,3, 5,61](http://archive.ymsc.tsinghua.edu.cn/pacm_download/293/8755-61sphere_final.pdf)
-Question 1.2.Let M be a closedn-manifold. SupposeMis homotopy equivalent toSn. IsMhomeomorphic toSn?The answer turns out to be yes for all dimensions
+Question 1.2. Let $M$ be a closed $n$-manifold. Suppose $M$ is homotopy equivalent to $S^n$. Is $M$ homeomorphic to $S^n$? The answer turns out to be yes for all dimensions.
 
-Question 1.4.LetMbe a closedn-manifold. SupposeMis homeomorphic toSn. IsMdiffeo-morphic toSn?Forn= 3, the answer is yes. It is due to Moise [37] that every closed 3-manifold has a uniquesmooth structure.  In particular, the 3-sphere has a unique smooth structure.  **For n= 4, thisquestion is wildly open.** For higher dimensions, Milnor [35] constructed an exotic smooth structure onS7. Furthermore,Kervaire and Milnor [27] showed that the answer is not true in general forn≥5
+Question 1.4. Let $M$ be a closed $n$-manifold. Suppose $M$ is homeomorphic to $S^n$. Is $M$ diffeomorphic to $S^n$? For $n= 3$, the answer is yes. It is due to Moise [37] that every closed 3-manifold has a unique smooth structure.  In particular, the 3-sphere has a unique smooth structure.  **For n= 4, this question is wildly open.** For higher dimensions, Milnor [35] constructed an exotic smooth structure on $S^7$. Furthermore, Kervaire and Milnor [27] showed that the answer is not true in general for $n≥5$.
 
-Question 1.6.For whichn’s does there exist a unique smooth structure onSn?Kervaire and Milnor reduced Question 1.5 to a computation of the stable homotopy groups ofspheres. In fact, Kervaire and Milnor constructed a group Θn, which is the group of h-cobordismclasses of homotopyn-spheres. The group Θnclassifies the differential structures onSnforn≥5
+Question 1.6. For which $n$ does there exist a unique smooth structure on $S^n$? Kervaire and Milnor reduced Question 1.5 to a computation of the stable homotopy groups of spheres. In fact, Kervaire and Milnor constructed a group $Θ_n$, which is the group of h-cobordism classes of homotopy $n$-spheres. The group $Θ_n$ classifies the differential structures on $S^n$ for $n≥5$.
 
-
+# Table of n+k homotopy groups of spheres
 ![](assets/2-22ReadingNotes-7a07a.png)
 
 $K(G, n) \cong \Omega K(G, n+1)$
 
-adjoint to map
+is adjoint to the map
 
 $\Sigma K(G,n ) \to K(G, n+1)$

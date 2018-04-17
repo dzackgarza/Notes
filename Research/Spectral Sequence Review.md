@@ -13,7 +13,7 @@ where $\delta$ is the "connecting homomorphism".
 
 
 Now specialize to the case where $A_*$ is a chain complex, $B_* \subset A_*$ is a subcomplex, and consider the quotient $A_*/B_*$. We have a short exact sequence
-$$ 0 \mapsvia{} B_* \mapsvia{i} A_* \mapsvia{p} A_*/B_* \mapsvia{} 0$$ 
+$$ 0 \mapsvia{} B_* \mapsvia{i} A_* \mapsvia{p} A_*/B_* \mapsvia{} 0$$
 
 Applying the snake lemma yields the long exact sequence in homology
 
@@ -21,7 +21,7 @@ $$\dots \mapsvia{} H_n(B_*) \mapsvia{i_*} H_n(A_*) \mapsvia{p_*} H_n(A_*/B_*) \m
 
 where $\delta$ is defined in the following way:
 
-Given an arbitrary class $\alpha \in H_n(A_*/B_*)$, pick a representative $x \in A_*$ so that $\alpha = [x]$. Since $\del x \in B_*$, we can define 
+Given an arbitrary class $\alpha \in H_n(A_*/B_*)$, pick a representative $x \in A_*$ so that $\alpha = [x]$. Since $\del x \in B_*$, we can define
 $\del(\alpha) = \del([x]) \definedas [\del x] \in H_{n-1}(B)$.
 
 Supposing that the computation of the homologies for the subcomplex $B_*$ and the quotient complex $A_*/B_*$ are tractable, we can break this long exact sequence up into a collection of short exact sequences
@@ -49,19 +49,13 @@ A *filtered chain complex* is a chain complex $(C_*, \del)$ along with a filtrat
 
 Possible example: Compute Serre spectral sequences with $\FF_p$ coefficients.
 
-
-
-
-
 # Example
 
 The most basic example is a spectral sequence is $E^r_{p,q}$, where $r$ denotes the page of the spectral sequence and the $E_{p,q}$ is a bigraded collection of abelian groups. Furthermore, we can take a "first quadrant" sequence, where only the $p>0, q>0$ terms are nontrivial. The differentials are then defined on any given page as a "shift map" that translates $p+r$ horizontal indices and $q-(r-1)$ vertical indices (direction depends on indexing vs. "coindexing"). Here is an example of an $r=2$ page:
 
 ![SpectralSequence](http://mathworld.wolfram.com/images/eps-gif/SpectralSequence_1000.gif)
 
-In this case (any case?), $\lim_{r\rightarrow \infty} E^r_{p,q}$ stabilizes for any given $(p,q)$ term, so we define it as $E^\infty_{p,q}$.
-
-In certain cases
+In this case, $\lim_{r\rightarrow \infty} E^r_{p,q}$ stabilizes for any given $(p,q)$ term, so we define it as $E^\infty_{p,q}$.
 
 
 

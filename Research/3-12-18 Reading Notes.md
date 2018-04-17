@@ -37,7 +37,7 @@ Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames i
 
 Also, $\pi_1(\Sigma_g) = <\theset{a_i, b_i}_i^n> \mid \prod_i^g [a_i, b_i]>$
 
-A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of $G$-bundles over $X$}} \cong [X, BG]$, i.e. bundles of $G$'s over $X$ are equivalent to maps from $X$ into the classifying space, i.e. $\hom(X, BG) \cong \theset{G\dash\text{bundles over } X}$
+A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of G-bundles over X}} \cong [X, BG]$, i.e. bundles of $G$'s over $X$ are equivalent to maps from $X$ into the classifying space, i.e. $$\hom(X, BG) \cong \theset{G\dash\text{bundles over } X}$$
 
 It is useful to think of $BG$ as a space whose points are copies of $G$, so the classifying map $X \mapsvia{f} BG$ assigns each $x \in X$ to the fiber above $x$, which is a $G$.
 

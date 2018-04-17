@@ -1,6 +1,6 @@
 # A 2 Step Filtration
 
-## Goal: 
+## Goal:
 
 We want to explicitly consider all of the objects, maps, and differentials in a particular spectral sequence arising from a space that admits a filtration that terminates in two steps. There are several concrete examples that should fit into this framework:
 
@@ -17,7 +17,7 @@ Let $X$ be a space and let $A\subset X$ be a subspace, inducing the inclusion $A
 
 $$0 \injects A \injects B$$
 
-Then consider applying the "chain functor" $C_*(\cdot): \textbf{Top} \into \textbf{Ab}$ that sends a space $X$ to a singular chain complex 
+Then consider applying the "chain functor" $C_*(\cdot): \textbf{Top} \into \textbf{Ab}$ that sends a space $X$ to a singular chain complex
 $$C_*(X) \definedas \cdots \mapsvia{\del_{i-1}} C_i(X) \mapsvia{\del_i} C_{i+1}(X) \mapsvia{\del_{i+1}} \cdots$$
 
 Applying this functor to the above inclusion induces an inclusion of chain complexes:
@@ -63,6 +63,7 @@ $E_1^{p,q} = H(E_0^{p,q}, d_0)$
 
 Not standard usage, here I consider the "$E_{-1}$ page" to be simply a presentation of the double complex itself. The formula works out to be something like
 $E_{-1}^{p,q} = F_pC_q(X)$
+
 $$
 \begin{array}{l:r|cccc}
 q= n &\hspace{4em} 0 & F_0C_n(X) &  F_1C_n(X) &  F_2C_n(X) \\
@@ -71,12 +72,10 @@ q=3 &0 &  F_0C_3(X) & F_1C_3(X) &  F_2C_3(X) \\
 q=2 &0 &  F_0C_2(X) & F_1C_2(X) &  F_2C_2(X) \\
 q=1 &0 & F_0C_1(X) & F_1C_1(X) &  F_2C_1(X) \\
 q=0 &0 & F_0C_0(X) &  F_1C_0(X) & F_2C_0(X) \\
-\hline
+\hline \\
 q=-1 &0 & 0 & 0 & 0 \\
 q-2 &0 & 0 & 0 & 0 \\
- 
- 
- \\\hdashline\\
+\\\hdashline\\
 p = -2 & p=-1& p=0 & p=1 & p=2 \\
 \end{array}
 $$
@@ -92,16 +91,15 @@ q=3 &0 &  C_3(X) & C_3(A) &  0 \\
 q=2 &0 &  C_2(X) & C_2(A) &  0 \\
 q=1 &0 & C_1(X) & C_1(A) &  0 \\
 q=0 &0 & C_0(X) &  C_0(A) & 0 \\
-\hline
+\hline \\
 q=-1 &0 & 0 & 0 & 0 \\
 q-2 &0 & 0 & 0 & 0 \\
- 
- 
- \\\hdashline\\
+\\\hdashline\\
 p = -2 & p=-1& p=0 & p=1 & p=2 \\
 \end{array}
 $$
-Focusing on the area $p,q >= -1$, we use the fact that the chain complexes come with natural boundary maps to define the differentials $d_{-1}\definedas \del_n: C_n(X) \into C_{n-1}(X)$. 
+
+Focusing on the area $p,q >= -1$, we use the fact that the chain complexes come with natural boundary maps to define the differentials $d_{-1}\definedas \del_n: C_n(X) \into C_{n-1}(X)$.
 $$
 \begin{CD}
 0 @<<< 0 @<<< 0 @<<< 0 \\
@@ -143,6 +141,7 @@ $$
 $E_0^{p,q} \definedas G_pC_q(X)$
 
 $C_n(X, A) \definedas \frac{C_n(X)}{C_n(A)}$
+
 $$
 \begin{array}{l:r|cccc}
 q= n &\hspace{4em} 0 & G_0C_n(X) &  G_1C_{n+1}(X) &  0 \\
@@ -151,15 +150,14 @@ q=3 &0 &  G_0C_3(X) & G_1C_4(X) &  0 \\
 q=2 &0 &  G_0C_2(X) & G_1C_3(X) &  0 \\
 q=1 &0 & G_0C_1(X) & G_1C_2(X) &  0 \\
 q=0 &0 & G_0C_0(X) &  G_1C_1(X) & 0 \\
-\hline
+\hline \\
 q=-1 &0 & 0 & G_1C_0(X) & 0 \\
 q-2 &0 & 0 & 0 & 0 \\
- 
- 
- \\\hdashline\\
+\\\hdashline\\
 p = -2 & p=-1& p=0 & p=1 & p=2 \\
 \end{array}
 $$
+
 Which unpacks as
 $$
 \begin{array}{l:r|cccc}
@@ -169,16 +167,15 @@ q=3 &0 &  \frac{F_0C_3(X)}{F_1C_3(X)} & \frac{F_1C_4(X)}{F_2C_4(X)} &  0 \\
 q=2 &0 & \frac{F_0C_2(X)}{F_1C_2(X)} & \frac{F_1C_3(X)}{F_2C_3(X)} &  0 \\
 q=1 &0 &\frac{F_0C_1(X)}{F_1C_1(X)} & \frac{F_1C_2(X)}{F_2C_2(X)} &  0 \\
 q=0 &0 & \frac{F_0C_0(X)}{F_1C_0(X)} &  \frac{F_1C_1(X)}{F_2C_1(X)} & 0 \\
-\hline
+\hline \\
 q=-1 &0 & 0 & \frac{F_1C_0(X)}{F_2C_0(X)} & 0 \\
 q-2 &0 & 0 & 0 & 0 \\
- 
- 
- \\\hdashline\\
+\\\hdashline\\
 p = -2 & p=-1& p=0 & p=1 & p=2 \\
 \end{array}
 $$
-Which further unpacks as 
+
+Which further unpacks as
 $$
 \begin{array}{l:r|cccc}
 q= n &\hspace{4em} 0 & \frac{C_n(X)}{C_n(A)} & \frac{C_{n+1}(A)}{0} &  0 \\
@@ -187,15 +184,14 @@ q=3 &0 &  \frac{C_3(X)}{C_3(A)} &\frac{C_4(A)}{0} &  0 \\
 q=2 &0 & \frac{C_2(X)}{C_2(A)} & \frac{C_3(A)}{0} &  0 \\
 q=1 &0 &\frac{C_1(X)}{C_1(A)} &\frac{C_2(A)}{0} &  0 \\
 q=0 &0 & \frac{C_0(X)}{C_0(A)} &  \frac{C_1(A)}{0} & 0 \\
-\hline
+\hline \\
 q=-1 &0 & 0 & \frac{C_0(A)}{0} & 0 \\
 q-2 &0 & 0 & 0 & 0 \\
- 
- 
- \\\hdashline\\
+\\\hdashline\\
 p = -2 & p=-1& p=0 & p=1 & p=2 \\
 \end{array}
 $$
+
 Which by definition is
 $$
 \begin{array}{l:r|cccc}
@@ -205,12 +201,10 @@ q=3 &0 & C_3(X, A) & C_4(A) &  0 \\
 q=2 &0 & C_2(X, A) &  C_3(A)&  0 \\
 q=1 &0 &C_1(X, A) &C_2(A) &  0 \\
 q=0 &0 &C_0(X, A) &  C_1(A) & 0 \\
-\hline
+\hline \\
 q=-1 &0 & 0 & C_0(A) & 0 \\
 q-2 &0 & 0 & 0 & 0 \\
- 
- 
- \\\hdashline\\
+\\\hdashline\\
 p = -2 & p=-1& p=0 & p=1 & p=2 \\
 \end{array}
 $$
@@ -243,4 +237,3 @@ $$
 ## $E_1$
 
 ## $E_2$
-
