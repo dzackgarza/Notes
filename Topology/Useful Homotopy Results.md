@@ -90,11 +90,7 @@ $$
   - $\pi_n(S^2) = 0$ for any $n > 1$?
 - Use SS of $F \into E \into B$ to calculate:
 
-  - $H_*(E)$ from $H_*(F), H_*(B)$ 
+  - $H_*(E)$ from $H_*(F), H_*(B)$
   - $H^*(B)$ from $H^*(F), H^*(E)$
   - $H^*(F)$ from $H^*(E), H^*(B)$
   - $E_2^{p.q} = H^p(B, H^q(F; R))$
-
-\**begin**{equation}\label{eq:neighbor-propability}
-    p_{ij}(t) = \frac{\ell_j(t) - \ell_i(t)}{\sum_{k \in N_i(t)}^{} \ell_k(t) - \ell_i(t)}
-\end{equation}
