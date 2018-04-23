@@ -21,7 +21,7 @@ $$ E_2^{p,q} = H^p(S^2) \tensor H^q(S^1).$$
 
 This yields the following $E_2$  and $E_3$ pages respectively (indexing columns with $p$ and rows with $q$):
 
-```latex{cmd=true, hide=true, run_on_save=true}
+```latex{cmd=true, hide=false, run_on_save=true}
 \documentclass{article}
 \usepackage{tikz}
 \usetikzlibrary{cd}

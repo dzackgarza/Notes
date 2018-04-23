@@ -27,7 +27,7 @@ Note that this is weaker than something like diffeomorphism, where we would want
 
 Why does repeatedly hitting cosine converge? Because $\cos: [0, 1] \to [0, 1]$ can be identified as $\cos: D^0 \to D^0$. Can also be identified using the following graph:
 
-```python {cmd=true matplotlib=true}
+```python {cmd=true, matplotlib=true}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -37,6 +37,7 @@ plt.plot(t1, t1, 'r', label="$f(x)=x$")
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.show()
 ```
+
 
 Note that "fixed point problems" are in bijective correspondence with "finding the zero of a function" problems - for example, a fixed point satisfies $f(x) = x$, but this can equivalently be stated as looking for the zeros of the function $g(x) = f(x) - x$, so $g(x) = 0 \iff f(x) -x = 0 \iff x = f(x)$. So we can equivalently look for zeros on the graph of $g(x)$:
 
