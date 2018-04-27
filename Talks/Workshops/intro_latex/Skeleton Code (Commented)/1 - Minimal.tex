@@ -1,0 +1,37 @@
+% Comments are denoted with the percent symbol
+
+% Almost everything that isn't content in LaTex is a command,
+% and almost every command has the same format:
+% \someCommandName[someOptions]{Some Content, or an argument}
+
+% You only really need three lines to produce a basic document:
+% The document class, and the begin/end document lines
+\documentclass{article}
+
+% Everything between \documentclass and \begin is the "preamble"
+
+% We'll see the preamble used more later, but generally speaking this is where you can take care
+% of setting up the document before you start actually writing content. This may involve importing 
+% packages that give you certain functionality or styling, setting up variables like the author's name
+% or the current date, or writing/including your own custom functions.
+
+% Uncomment this to emphasize the spacing between new paragraphs.
+\setlength{\parskip}{1em}
+ 
+\begin{document}
+
+Document content goes here!
+
+We can't just say y = mx + b.
+
+Use inline math with $y = mx + b$.
+
+Block-level math is $$y = mx + b$$
+
+% Now we'll just add a bunch of text to see how it fills out the final document.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\end{document}
