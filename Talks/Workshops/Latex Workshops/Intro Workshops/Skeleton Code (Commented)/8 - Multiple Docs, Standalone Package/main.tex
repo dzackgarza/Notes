@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[subpreambles=true]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{import}
+
+\graphicspath{{images/}{../images/}}
+ 
+\title{StandaloneEx}
+\author{Team Learn ShareLaTeX}
+\date{August 2014}
+ 
+\begin{document}
+ 
+    \maketitle
+ 
+    \section{First section}
+    \import{sections/}{introduction}
+ 
+    \section{Second section}
+    \import{sections/}{section2}
+ 
+\end{document}
