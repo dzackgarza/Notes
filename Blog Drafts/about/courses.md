@@ -5,15 +5,18 @@
 
 - Algebraic Topology
   - Fall 2017 -- Spring 2018
+  - Hatcher
 
 - Topics in Real Analysis: Quantum Mechanics
   - Spring 2017
 
 - Functional Analysis
   - Fall 2016 -- Winter 2017
+  - ?
 
 - Algebra
   - Fall 2017
+  - Dummit and Foote
 
 # Undergraduate Coursework
 
@@ -27,21 +30,25 @@
 
 - Applied Linear Algebra
   - Summer 2017
+  -
 
 - Partial Differential Equations
   - Summer 2017
+  -
 
 - Computer Vision
   - Spring 2017
 
 - Complex Analysis
   - Spring 2017
+  - Brown and Churchill
 
 - History of Mathematics (Hyperbolic Geometry)
   - Spring 2017
 
 - Theory of Computation
   - Winter 2017
+  - Sipser
 
 - Introductory Machine Learning
   - Winter 2017
@@ -53,9 +60,11 @@
 
 - Design and Analysis of Algorithms
   - Fall 2016
+  - CLRS
 
 - Number Theory
   - Summer 2016
+  - Leveque
 
 - Advanced Data Structures
   - Spring 2016
@@ -65,14 +74,17 @@
 
 - Abstract Algebra
   - Fall 2015 -- Spring 2016
+  - Beachy and Blair
 
 - Real Analysis
   - Fall 2015 -- Spring 2016
+  - Rudin
 
 ## 2015
 
 - Point-Set Topology
   - Winter 2015
+  - Munkres
 
 - Mathematical Algorithms and Systems Analysis in Computer Science
   - Winter 2015
@@ -85,9 +97,11 @@
 
 - Combinatorics
   - Fall 2015
+  - Bona
 
 - Mathematical Reasoning and Proof
   - Summer 2015
+  - Eccles
 
 - Vector Calculus
   - Summer 2015
@@ -121,12 +135,14 @@
 
 - Discrete Mathematics
   - Spring 2014
+  - Rosen
 
 - Electrical Circuit Theory
   - Spring 2014
 
 - Differential Equations and Linear Algebra
   - Spring 2014
+  - Annin
 
 ## 2013
 
@@ -138,6 +154,7 @@
 
 - Calculus: Single and Multivariable
   - Fall 2012 -- Spring 2013
+  - Stewart
 
 ## 2012
 
