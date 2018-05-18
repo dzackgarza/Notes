@@ -17,17 +17,17 @@ Go deep with ideas, write up an explanation to someone else.
 
 The most prestigious journals in the field.
 
-1. ​
+1. First
    1. Annals,
    2. JAMS,
    3. Inventiones,
    4. IHES,
    5. Acta
-2.
+2. Second
    1. Duke,
    2. Geometry and Topology,
    3. GAFA
-3. ​
+3. Third
    1. AJM,
    2. Crelle’s,
    3. Journal of Topology,
