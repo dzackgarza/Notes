@@ -1,5 +1,3 @@
-A Brief Introduction to Category Theory
-
 # Disclaimer
 
 This is meant to be a relatively short and **non-rigorous** introduction to Category Theory. Although I will be defining and using a lot of the technical terminology that is commonly used, this talk is primarily aimed at introducing these concepts, why they exist, and where they're useful and commonly used.
