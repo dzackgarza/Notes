@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>resources</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
+        
+      
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <p>This page contains links to resources I have found useful in the past. I’ve tried to roughly organize these by increasing complexity with respect to a typical undergraduate degree in Mathematics.</p>
+<p>Items that are marked with a ⭐️ are (in my opinion) particularly excellent resources to peruse in just about any circumstance.</p>
+<ul>
+<li><a href="#advice-for-incoming-math-majors">Advice for Incoming Math Majors</a></li>
+<li><a href="#general-notes-on-resources">General Notes on Resources</a></li>
+<li><a href="#general-advice-on-learning">General Advice on Learning</a></li>
+<li><a href="#specific-advice-on-learning-mathematics">Specific Advice on Learning Mathematics</a></li>
+<li><a href="#math-course-resources">Math Course Resources</a>
+<ul>
+<li><a href="#single-variable-calculus">Single Variable Calculus</a></li>
+<li><a href="#multiviarable-vector-calculus">Multiviarable / Vector Calculus</a></li>
+<li><a href="#linear-algebra">Linear Algebra</a></li>
+<li><a href="#ordinary-differential-equations">Ordinary Differential Equations</a></li>
+<li><a href="#discrete-mathematics">Discrete Mathematics</a></li>
+<li><a href="#survey-of-advanced-math-style-classes">“Survey of Advanced Math”-style classes</a></li>
+<li><a href="#number-theory">Number Theory</a></li>
+<li><a href="#abstract-algebra">Abstract Algebra</a>
+<ul>
+<li><a href="#galois-theory">Galois Theory</a></li>
+</ul>
+</li>
+<li><a href="#real-analysis">Real Analysis</a></li>
+<li><a href="#complex-analysis">Complex Analysis</a></li>
+<li><a href="#partial-differential-equations">Partial Differential Equations</a></li>
+<li><a href="#numerical-analysis">Numerical Analysis</a></li>
+<li><a href="#combinatorics">Combinatorics</a></li>
+<li><a href="#probability">Probability</a></li>
+<li><a href="#point-set-topology">Point-Set Topology</a></li>
+<li><a href="#graduate-real-analysis">Graduate Real Analysis</a></li>
+<li><a href="#functional-analysis">Functional Analysis</a></li>
+<li><a href="#category-theory">Category Theory</a></li>
+<li><a href="#algebraic-topology">Algebraic Topology</a></li>
+<li><a href="#algebraic-geometry">Algebraic Geometry</a></li>
+<li><a href="#manifolds">Manifolds</a></li>
+</ul>
+</li>
+<li><a href="#general-resources">General Resources</a>
+<ul>
+<li><a href="#math-subject-gre">Math Subject GRE</a></li>
+<li><a href="#computer-science">Computer Science</a></li>
+</ul>
+</li>
+<li><a href="#fun-stuff">Fun Stuff</a></li>
+</ul>
+<hr>
+<h1 class="mume-header" id="advice-for-incoming-math-majors">Advice for Incoming Math Majors</h1>
+
+<ul>
+<li>Start thinking about whether or not grad school as an option. You don’t have to <em>decide</em> within your first year, but you’ll want to pick courses accordingly.</li>
+<li>Get an idea of what Math is all about - there are great things beyond Calculus!
+<ul>
+<li>To get an idea of what you’re in for as a Math major, take a look at the GRE Mathematics Subject Exam. It covers a broad array of pretty standardized topics.</li>
+<li>Also take a look Garrity’s book (<a href="#garrity">linked in the resources section</a>) for a short, condensed survey of some of the major topics and theorems you’ll encounter.</li>
+<li>One thing that was helpful to me was to make <a href="world-of-math">graphs and diagrams</a> of different areas of Math I encountered. Take a look, knowing the landscape you’re traversing is valuable.</li>
+</ul>
+</li>
+<li>Learn Latex and Mathjax early, and then make efforts regularly typeset your written notes.</li>
+<li>It may be intimidating, but try to find ways to talk to your professors outside of class! Don’t hesitate to ask for advice on just about anything related to Math or your academic career, in my experience they are always happy to help.</li>
+</ul>
+<p>Here are what I would consider some of the essential, core classes that are relatively standard for people majoring in pure Math and aiming for grad school:</p>
+<ul>
+<li>All of the Calculus (of course)</li>
+<li>Linear Algebra</li>
+<li>Ordinary Differential Equations</li>
+<li>Abstract Algebra</li>
+<li>Real Analysis</li>
+<li>Point-Set Topology</li>
+</ul>
+<p>Here are some “nice-to-haves” – still important, still beautiful, and great electives, but missing out on them probably won’t immediately tank your application:</p>
+<ul>
+<li>Probability</li>
+<li>Combinatorics</li>
+<li>Complex Analysis</li>
+<li>Number Theory</li>
+<li>Discrete Math (e.g. Graph Theory)</li>
+<li>More Linear Algebra (e.g. Numerical Analysis)</li>
+</ul>
+<p>Of course, it’s important to explore a large variety of classes and find what you like. The ideas and concepts from these courses are quite prevalent in just about every subfield of Mathematics, so having them under your belt makes life much easier regardless of what you pursue.</p>
+<h1 class="mume-header" id="general-notes-on-resources">General Notes on Resources</h1>
+
+<ul>
+<li>Anything lower-division: Khan Academy.</li>
+<li>Video lectures in general: they are a crutch! Use them to supplement and enrich your understanding, they are not as effective as a primary learning source. Your primary resource should always be material from your own instructor and course. Passively watching is also not very helpful - take notes, write down timestamps and video titles for important topics, and don’t be afraid to rewatch these several times.</li>
+<li>Youtube videos and lectures: vary in quality, but you can watch at 2x speed.</li>
+<li>MIT OCW: when video lectures are available, generally high quality. Covers a good number of areas, and a good source of practice problems and exams.</li>
+<li>Look for book recommendations for your topic/class in places like Math StackExchange or MathOverflow, and don’t be afraid to consult multiple books on the same topic.</li>
+<li>If you find an author/lecturer/general source that you particularly like or makes much more sense to you than others, look up other things from that source. If they cover other topics, be open to learning those – Math is quite interrelated, and later topics will be easier to learn if you are well-versed in earlier topics and have a bag of concepts you can “hang your hat on”.</li>
+<li>For lower division or introductory courses that aren’t proof-based, try to obtain a textbook along with its accompanying solutions manual. This is a great way to drill problems, check your answers, and identify your weaknesses.</li>
+<li>General tip: don’t both with sites like Chegg.</li>
+<li>Learn how to use a Computer Algebra System (CAS) early! Don’t use it as a crutch - just learn enough syntax so that you can quickly compute sanity checks. <a href="http://www.wolframalpha.com/">Wolfram Alpha</a> is a good for quick things. If you have the time, learn something like  <a href="http://www.sagemath.org/index.html">SageMath</a>, which can do symbolic computations and can even be used for things like group theory and algebra.</li>
+</ul>
+<h1 class="mume-header" id="general-advice-on-learning">General Advice on Learning</h1>
+
+<ul>
+<li><strong>Vocabulary</strong>: for any new topic, it can be helpful to make a list of definitions and simply memorize them. Math is (at least partially) a language, so it is worth (partially) learning it like one!</li>
+<li><strong>Start everything early</strong>, Mathematics is more like a marathon than a sprint.</li>
+<li><strong>Work a lot of problems/proofs</strong>, more than you are assigned. But be judicious with your time! If you stare at a problem for more than an hour or two without making progress, pivot. Sometimes the best way to make progress on a problem is to take a break, work on something different, or sleep on it. A relevant quote from Alexander Grothendieck:
+<blockquote>
+<p>I can illustrate the approach with the image of a nut to be opened. The first analogy that came to my mind is of immersing the nut in some softening liquid, and why not simply water? From time to time you rub so the liquid penetrates better, and otherwise you let time pass. The shell becomes more flexible through weeks and months — when the time is ripe, hand pressure is enough, the shell opens like a perfectly ripened avocado!</p>
+</blockquote>
+</li>
+<li><strong>Use a wide variety of resources</strong>: books, lectures, notes, PDFs, use them all. The google search modifiers <code>inurl:edu filetype: pdf</code> are incredibly useful.</li>
+<li><strong>Extensively use good resources</strong>: there is also some value in working a single, particularly well-regarded book, front to back.</li>
+<li><strong>Spaced repetition</strong>: read up on it, and work it into your study habits. Cramming has diminishing returns in proof-based classes, you are much better served by visiting and revisiting material often enough to be familiar with it.</li>
+<li><strong>Sleep like it is your hobby.</strong> Two hours of extra sleep is almost always a more efficient use of your time than two hours of tired studying.</li>
+</ul>
+<h1 class="mume-header" id="specific-advice-on-learning-mathematics">Specific Advice on Learning Mathematics</h1>
+
+<ul>
+<li><strong>Use multiple books</strong>: For most undergraduate topics, there are many “standard” references. Use them all! Cross-reference liberally as well.</li>
+<li><strong>Get the definitions down cold</strong>: Record every single definition you come across and just do whatever you have to do to memorize them! Some people like flash cards, I personally make a “dictionary” document for each subject. Meaning and understanding is often a gradual process, but knowing the full statement of a definition should just be automatic. I like to think of definitions as the analog “multiplication tables” within higher Mathematics – is it essential to memorize? Well no, but you also wouldn’t want to waste time stopping to multiply out <span class="mathjax-exps">$12^2$</span> when you’re trying to solve an integral.</li>
+<li><strong>Synthesize often:</strong> This includes things like revising class notes, making your own “cheat sheets”, writing up explanations of particular theorems or motivations for certain concepts, etc. Even better, find ways to give talks or teach other people! Present things as if you were trying to teach yourself the topic 6-12 months in the past.</li>
+<li><strong>Google for PDF notes</strong>: For just about any topic at any level of specificty, someone has probably written up notes or expository explanations and shared them online. So it can be extremely beneficial to look through the first page or two of Google results using <code>filetype:pdf</code> for any concept or proof you happen to be studying and see how other mathematicians think about and present them.</li>
+</ul>
+<h1 class="mume-header" id="math-course-resources">Math Course Resources</h1>
+
+<h2 class="mume-header" id="single-variable-calculus">Single Variable Calculus</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Stewart</em>, Calculus: Early Transcendentals</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Spivak</em>, Calculus</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Apostol</em>, <a href="https://www.amazon.com/gp/product/0471000051/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0471000051&amp;linkCode=as2&amp;tag=dzackgarza-20&amp;linkId=5393e3e618e343c64e13b392200bb8b1">Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra</a></li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/user/patrickJMT/videos">patrickJMT</a>
+<ul>
+<li>Videos of how to solve many specific calculus and engineering problems</li>
+</ul>
+</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="multiviarable-vector-calculus">Multiviarable / Vector Calculus</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Schey</em>, Div, Grad, Curl, and All That: An Informal Text on Vector Calculus ⭐️</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/">MIT OCW Denis Auroux</a> ⭐️</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>: Many Calculus books cover both single and multivariable, so many of the resources from the single variable section will have some overlap here. (However, the resources in this section focus almost entirely on multivariable cases.)</p>
+<h2 class="mume-header" id="linear-algebra">Linear Algebra</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Axler</em>, Linear Algebra Done Right</li>
+<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Goode and Annin</em>, Differential Equations and Linear Algebra
+<ul>
+<li>Good balance of rigor vs. brevity and computation vs. theory. Very concise, gives you what you need to start calculating, but also takes time to list vector space axioms, mentions fields, a nice way of viewing the determinant formula, and (best of all) lists of many conditions that are equivalent to a matrix being singular or non-singular.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Anton</em>, Elementary Linear Algebra
+<ul>
+<li>Has an entire chapter on many cool applications of Linear Algebra – things like graph theory, computer graphics, and Google’s Pagerank algorithm. Also has a lot of “historical note” blurbs that are pretty interesting.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i>: <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">MIT OCW Gilbert Strang</a></li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="ordinary-differential-equations">Ordinary Differential Equations</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Goode and Annin</em>, Differential Equations and Linear Algebra
+<ul>
+<li>Good precisely because it sets up the language of linear algebra first, making many concepts in ODEs much easier to explain and understand.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i>: <a href="https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/index.htm">MIT OCW Differential Equations</a></li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="discrete-mathematics">Discrete Mathematics</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rosen</em>, Discrete Mathematics and Its Applications
+<ul>
+<li>Huge variety of topics, good prep for many Math-related computer science courses, also just a good survey of many topics at an introductory level.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Grimaldi</em>, Discrete and Combinatorial Mathematics: An Applied Introduction
+<ul>
+<li>Absolutely excellent presentation of recurrence relations, mirroring how solutions of differential equations are found. Also has a good presentation of how to commute quantifiers.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Eccles</em>, An Introduction to Mathematical Reasoning: Numbers, Sets and Functions</li>
+<li><i class="fa fa-external-link" aria-hidden="true"></i>⭐️ <a href="http://www.eecs70.org/">UC Berkeley’s EECS 70 Course</a>
+<ul>
+<li>A wonderful lower-division course for which excellent notes have been posted for a number of years.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Content</strong>:</p>
+<ul>
+<li>Basic logic (truth tables, quantifiers, implications, contrapositive and converse, induction)</li>
+<li>Basic set theory (set-builder notation, venn diagrams, cartesian products)</li>
+<li>Functions (injectivity/surjectivity, inverse images)</li>
+<li>Relations (partial orders, equivalence relations)</li>
+<li>Basic combinatorics (permutations and combinations, inclusion/exclusion, pigeonhole principle)</li>
+<li>Recurrence relations</li>
+<li>Graphs (Konigsberg problem, Hamiltonian/Eulerian cycles)</li>
+<li>Number theory (divisibility, modular arithmetic, the Euclidean algorithm)</li>
+<li>Generating functions</li>
+<li>Probability (odds for dice rolls and cards, distributions, Stirling’s approximation)</li>
+</ul>
+<p><strong>Notes</strong>:</p>
+<p>Highlight equation aspect of proofs, ties between recurrence relations and ODEs TODO</p>
+<h2 class="mume-header" id="survey-of-advanced-math-style-classes">“Survey of Advanced Math”-style classes</h2>
+
+<ul>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX">Introduction to Higher Mathematics</a> ⭐️<br>
+A great survey that highlights many different areas of advanced mathematics.</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<hr>
+<h2 class="mume-header" id="number-theory">Number Theory</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>LeVeque</em>, Fundamental of Number Theory
+<ul>
+<li>Short but good</li>
+</ul>
+</li>
+</ul>
+<p><strong>Content</strong>:</p>
+<ul>
+<li>The prime counting function</li>
+<li>Modular arithmetic, solving equations in rings, multiplicative functions (like the totient)</li>
+<li>The Chinese remainder theorem, Euler’s theorem, Fermat’s Little Theorem</li>
+<li>Quadratic reciprocity, the Legendre and Jacobi symbol</li>
+</ul>
+<p><strong>Notes</strong>: This is a subject that pairs very well with introductory abstract algebra (groups and rings).</p>
+<h2 class="mume-header" id="abstract-algebra">Abstract Algebra</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Dummit and Foote</em>, Abstract Algebra
+<ul>
+<li>Essentially the de-facto standard, plus it also serves as an encylopedaic reference.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> ⭐️ <a href="https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y">Matthew Salomone</a></li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> ⭐️ <a href="https://www.youtube.com/watch?v=VdLhQs_y_E8&amp;list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5">Benedict Gross MIT</a></li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Beachy and Blair</em>, Abstract Algebra</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="?">Math Dr. Bob, Abstract Algebra</a></li>
+</ul>
+<p><strong>Content</strong>:<br>
+Covers groups, rings, fields, and Galois theory.</p>
+<p><strong>Notes</strong>: There are also some popular videos by one “Math Doctor Bob”. He covers much of the relevant content. I’ve known people that have found his videos helpful - I did not.</p>
+<h3 class="mume-header" id="galois-theory">Galois Theory</h3>
+
+<ul>
+<li><i class="fa fa-tv" aria-hidden="true"></i> ⭐️ <a href="https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y">Matthew Salomone</a></li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="real-analysis">Real Analysis</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rudin</em>, Principles of Mathematical Analysis
+<ul>
+<li>Another standard. Often referred to as Baby Rudin.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> ⭐️<a href="https://www.youtube.com/playlist?list=PL0E754696F72137EC">Francis Su’s Lectures from Harvey Mudd College</a>
+<ul>
+<li>Recorded lectures, extremely clear and well-motivated.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=gJ1pYz1k0qM&amp;list=PL7B37EFE678A682CE">Math Dr. Bob, Real Analysis</a>
+<ul>
+<li>I didn’t find these helpful, but perhaps someone will.</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+<p><strong>Content</strong>:</p>
+<ul>
+<li>The reals as an ordered field, construction</li>
+<li>Metric spaces, basic topology</li>
+<li>The Riemann-Stieltjes Integral</li>
+<li>Sequences and series, Cauchy sequences and completeness</li>
+<li>Limits and continuity, pointwise and uniform convergence</li>
+<li>The Mean Value Theorem</li>
+<li>Measure theory and the Lebesgue integral</li>
+</ul>
+<p><strong>Notes</strong>:</p>
+</details>
+<h2 class="mume-header" id="complex-analysis">Complex Analysis</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> ⭐️ <em>Brown and Churchill</em>, Complex Variables and Applications</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> ⭐️ <em>Needham</em>, Visual Complex Analysis</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> Ahlfors</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="partial-differential-equations">Partial Differential Equations</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> ? UCSD TODO</li>
+</ul>
+<p><strong>Content</strong>: Heat/wave/Laplace equations.</p>
+<p><strong>Notes</strong>:</p>
+<h2 class="mume-header" id="numerical-analysis">Numerical Analysis</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> ? UCSD TODO</li>
+</ul>
+<p><strong>Content</strong>: Fixed points and root-finding, Newton’s method, least squares.<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="combinatorics">Combinatorics</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Wilf</em>, Generatingfunctionology</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Bona</em>, A Walk Through Combinatorics</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="probability">Probability</h2>
+
+<p>Description:<br>
+Book - ? UCSD TODO</p>
+<p><strong>Content</strong>:</p>
+<p><strong>Notes</strong>: It is useful to take (either beforehand or concurrently) introductory classes in both statistics and combinatorics.</p>
+<h2 class="mume-header" id="point-set-topology">Point-Set Topology</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> ⭐️ <em>Munkres</em>, Topology</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> ⭐️ <em>Lee</em>, Introduction to Smooth Manifolds</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<p>Specify which chapters are useful. TODO<br>
+Common question: where is Topology useful?<br>
+See Brouwer fixed point theorem, Lie groups in physics, links to functional analysis.</p>
+<hr>
+<h2 class="mume-header" id="graduate-real-analysis">Graduate Real Analysis</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rudin</em>, Principles of Mathematical Analysis<br>
+Chapter 11 has a light overview of measure theory, the Lebesgue integral,</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> Rudin, Papa Rudin
+<ul>
+<li>Also referred to as “Papa Rudin”</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> Measures and Martingales<br>
+This book is not as detailed, but covers material faster and provides a bit more intuition than Rudin. The first few chapters are a good supplement.</li>
+</ul>
+<p><strong>Content</strong>:</p>
+<ul>
+<li>Measure theory, sigma algebra</li>
+<li>Montone and dominated convergence theorems</li>
+<li><span class="mathjax-exps">$L^p$</span> spaces, Holder’s inequality</li>
+</ul>
+<p><strong>Notes</strong>:</p>
+<h2 class="mume-header" id="functional-analysis">Functional Analysis</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> ? Springer TODO</li>
+</ul>
+<h2 class="mume-header" id="category-theory">Category Theory</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> Aluffi Algebra Chapter Zero ⭐️</li>
+<li>Categories for the Working Mathematician</li>
+<li>Links to my talks</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=o6L6XeNdd_k">Talk on Category Theory by Tom LaGatta</a></li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> - Talk by that one student ⭐️</li>
+</ul>
+<p><strong>Content</strong>:</p>
+<p><strong>Notes</strong>: Expected in some classes, but often assumed. Used in Algebraic Topology and Algebraic Geometry heavily. There are some videos of formla lectures online by people like Steve Awodey, Bartosz Milewski, and Eugenia Changa, but I did not find them particularly helpful or enlightening when I was trying to learn this material.</p>
+<p>Look through talks</p>
+<h2 class="mume-header" id="algebraic-topology">Algebraic Topology</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> Munkres ⭐️</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> Hatcher ⭐️</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> Bott and Tu
+<ul>
+<li>asdsa</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> Griffiths and Morgan
+<ul>
+<li>Mostly homotopy theory.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=Ap2c1dPyIVo&amp;list=PL6763F57A61FE6FE8">NJ Wildberger, Introduction to Algebraic Topology</a>
+<ul>
+<li>A good series, just be aware that he expresses some extremely non-mainstream views in his other videos.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="algebraic-geometry">Algebraic Geometry</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> Harthstone</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<h2 class="mume-header" id="manifolds">Manifolds</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> Spivak, Calculus on Manifolds</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> Manifolds, Lee ⭐️</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=7G4SqIboeig">Frederic Schuller, International Winter School on Gravity and Light 2015</a> ⭐️</li>
+</ul>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
+<hr>
+<h1 class="mume-header" id="general-resources">General Resources</h1>
+
+<h2 class="mume-header" id="math-subject-gre">Math Subject GRE</h2>
+
+<p>If you are thinking about applying to graduate school in Mathematics (pure or applied), I would recommend that you start looking at the material for this exam within your first few years, and take it during your Junior year.</p>
+<p>This is because these tests are only offered twice per year, and you often won’t get your scores until late in the grad school application process - so if you want to retake and improve your score, you could delay your application by nearly a year. Yikes! Take it early, just in case.</p>
+<p>Topics</p>
+<ul>
+<li>Single Variable Calculus (x%)</li>
+<li>Multivariable Calculus (x%)</li>
+<li>Ordinary Differential Equations</li>
+<li>Linear Algebra</li>
+<li>Complex Analysis (x%)</li>
+<li>Abstract Algebra (x%)
+<ul>
+<li>Primarily groups and rings</li>
+</ul>
+</li>
+<li>Probability/Statistics (x%)</li>
+<li>Real Analysis (x%)
+<ul>
+<li>Convergence of sums/sequences, topological properties of <span class="mathjax-exps">$&#x5C;RR$</span></li>
+</ul>
+</li>
+<li>Combinatorics
+<ul>
+<li>Graph theory, counting problems</li>
+</ul>
+</li>
+<li>Point-Set Topology</li>
+<li>Numerical Analysis</li>
+<li>Set Theory and Logic</li>
+<li>
+<p id="garrity">All the Mathematics You Missed: But Need to Know for Graduate School, Garrity<p>
+</p></p></li>
+</ul>
+<p>Exams<br>
+<a href="http://www.math.ucla.edu/~iacoley/greprep.html">Link to 5 exams</a></p>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+</ul>
+<p>Advice</p>
+<ul>
+<li>Most problems don’t require extensive computations; there is usually a trick that solves it very quickly.</li>
+<li>Time is the most difficult factor, be sure to take timed practice tests.</li>
+</ul>
+<h2 class="mume-header" id="computer-science">Computer Science</h2>
+
+<ul>
+<li>CLRS<br>
+Algorithms</li>
+<li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm">MIT OCW Algorithms Course</a></li>
+<li>Cracking the Coding Interview<br>
+For internships</li>
+<li>Sipser<br>
+Computability, automata, and turing machines.</li>
+<li>Concrete Mathematics, Knuth<br>
+A lot of discrete and combinatorial mathematics.</li>
+<li>Flatland</li>
+</ul>
+<hr>
+<h1 class="mume-header" id="fun-stuff">Fun Stuff</h1>
+
+<p>This is mostly just stuff to get you jazzed about what you’re studying!</p>
+<ul>
+<li>Video - Eversion of Spheres: <a href="https://www.youtube.com/watch?v=sKqt6e7EcCs">Part 1</a> and <a href="https://www.youtube.com/watch?v=x7d13SgqUXg">Part 2</a></li>
+<li>Video - <a href="https://www.youtube.com/watch?v=f5liqUk0ZTw">Understanding Tensors</a></li>
+<li>Interactive web page - <a href="http://philogb.github.io/page/hopf/">Hopf Fibration Toy</a></li>
+<li>Reviews of some of the big Math-related Youtubers:
+<ul>
+<li>VSauce - 2/10
+<ul>
+<li>Often hints at neat concepts, but usually focused on “pop-math”. The cotton candy of the Math video world.</li>
+</ul>
+</li>
+<li>Mathologer - 9/10
+<ul>
+<li>Rigorous without drowning in technical details</li>
+</ul>
+</li>
+<li>PBS Infinite Series - 9/10
+<ul>
+<li>Topics are much closer to “serious” math, and are often accompanied with proofs.</li>
+</ul>
+</li>
+<li>Numberphile - 7/10
+<ul>
+<li>Often eschews rigorous explanations, which leads to a very misinformed public! Many good interviews, though.</li>
+</ul>
+</li>
+<li>3blue1brow - 8/10
+<ul>
+<li>Amazing visualization, topics are interesting but are less serious. Good for general conceptual understanding.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Some interesting Math-related movies:
+<ul>
+<li>Good Will Hunting</li>
+<li>A Beautiful Mind (John Nash)</li>
+<li>The Man Who Knew Infinity (Srinivasa Ramanujan)</li>
+<li>The Imitation Game (Alan Turing)</li>
+<li>Proof</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#advice-for-incoming-math-majors">Advice for Incoming Math Majors</a></li>
+<li><a href="#general-notes-on-resources">General Notes on Resources</a></li>
+<li><a href="#general-advice-on-learning">General Advice on Learning</a></li>
+<li><a href="#specific-advice-on-learning-mathematics">Specific Advice on Learning Mathematics</a></li>
+<li><a href="#math-course-resources">Math Course Resources</a>
+<ul>
+<li><a href="#single-variable-calculus">Single Variable Calculus</a></li>
+<li><a href="#multiviarable-vector-calculus">Multiviarable / Vector Calculus</a></li>
+<li><a href="#linear-algebra">Linear Algebra</a></li>
+<li><a href="#ordinary-differential-equations">Ordinary Differential Equations</a></li>
+<li><a href="#discrete-mathematics">Discrete Mathematics</a></li>
+<li><a href="#survey-of-advanced-math-style-classes">“Survey of Advanced Math”-style classes</a></li>
+<li><a href="#number-theory">Number Theory</a></li>
+<li><a href="#abstract-algebra">Abstract Algebra</a>
+<ul>
+<li><a href="#galois-theory">Galois Theory</a></li>
+</ul>
+</li>
+<li><a href="#real-analysis">Real Analysis</a></li>
+<li><a href="#complex-analysis">Complex Analysis</a></li>
+<li><a href="#partial-differential-equations">Partial Differential Equations</a></li>
+<li><a href="#numerical-analysis">Numerical Analysis</a></li>
+<li><a href="#combinatorics">Combinatorics</a></li>
+<li><a href="#probability">Probability</a></li>
+<li><a href="#point-set-topology">Point-Set Topology</a></li>
+<li><a href="#graduate-real-analysis">Graduate Real Analysis</a></li>
+<li><a href="#functional-analysis">Functional Analysis</a></li>
+<li><a href="#category-theory">Category Theory</a></li>
+<li><a href="#algebraic-topology">Algebraic Topology</a></li>
+<li><a href="#algebraic-geometry">Algebraic Geometry</a></li>
+<li><a href="#manifolds">Manifolds</a></li>
+</ul>
+</li>
+<li><a href="#general-resources">General Resources</a>
+<ul>
+<li><a href="#math-subject-gre">Math Subject GRE</a></li>
+<li><a href="#computer-science">Computer Science</a></li>
+</ul>
+</li>
+<li><a href="#fun-stuff">Fun Stuff</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
