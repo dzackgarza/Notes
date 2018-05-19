@@ -374,9 +374,9 @@ Here are some common examples of categories that arise in various contexts, roug
   - Objects: Banach spaces $B, C$
   - Morphisms: Bounded linear maps $f: B \rightarrow C$ such that $\Vert f\Vert_{\text{sup}}$ is finite.
     - If $B=C$, these are usually referred to as *bounded linear operators*
-  - Isomorphisms: Bounded linear bijective maps with bounded linear inverses.
+  - Isomorphisms: Bijective bounded linear maps with bounded linear inverses.
 
-    *Notes*: A Banach space is a vector space that is also a (complete) metric space, so the morphisms simply reflect that these two structures "play nicely" together. This is the case, since the following three are equivalent in Banach spaces:
+    *Notes*: A Banach space is a vector space that is also a complete metric space, so the morphisms simply reflect that these two structures "play nicely" together. This is the case, since the following three are equivalent in Banach spaces:
 
     - Bounded linear maps
     - Continuous linear maps
@@ -461,7 +461,7 @@ We can also make simple modifications to existing categories to obtain new ones:
 # Duality
 
 - Reverse arrows and redefine composition in $C$ to obtain $C^{op}$
-- Then every "thing" in $C$ has a corresponding "thing" in $C^{op}$, which we call a $co-"thing"$
+- Then every "thing" in $C$ has a corresponding "thing" in $C^{op}$, which we call a co-"thing".
   - Products and Coproducts
   - Kernels and Cokernels
   - Limits and Colimits
@@ -475,3 +475,4 @@ We can also make simple modifications to existing categories to obtain new ones:
   - The $k$th homology group of an $n$-dimensional manifold  is isomorphic $(n-k)$th cohomology group
   - $H^k(M) \cong H_{n-k}(M)$.
 # Universal Properties
+For another time!
