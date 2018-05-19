@@ -7,7 +7,7 @@
       
       
         <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"displayMath":[["$$","$$"],["\\[","\\]"]],"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true,"processEnvironments":false},"TeX":{"extensions":["noUndefined.js","autoload-all.js","AMSmath.js","AMSsymbols.js"],"Macros":{"NN":"{\\mathbb{N}}","RR":"{\\mathbb{R}}","ZZ":"{\\mathbb{Z}}","QQ":"{\\mathbb{Q}}","CC":"{\\mathbb{C}}","RP":"{\\mathbb{RP}}","CP":"{\\mathbb{CP}}","HP":"{\\mathbb{HP}}","OP":"{\\mathbb{OP}}","FF":"{\\mathbb{F}}","PP":"{\\mathbb{P}}","AA":"{\\mathbb{A}}","MM":"{\\mathbb{M}}","TT":"{\\mathbb{T}}","SS":"{\\mathbb{S}}","KK":"{\\mathbb{K}}","Gr":"{\\text{Gr}}","GL":"{\\text{GL}}","char":"{\\mathbb{1}}","abs":["\\left\\lvert #2 \\right\\rvert_{\\text{#1}}",2,""],"Aut":"{\\text{Aut}}","del":"{\\partial}","too":["{\\xrightarrow{#1}}",1,""],"im":"{\\text{im}~}","homotopic":"\\simeq","into":"\\to","theset":["\\{{#1}\\}",1],"norm":["{\\lVert}{#1}{\\rVert}",1],"cross":"\\times","definedas":"\\mathrel{\\vcenter{:}}=","surjects":"\\twoheadrightarrow","onto":"\\twoheadrightarrow","injects":"\\hookrightarrow","id":"\\text{id}","restrictionof":["\\left.{#1}\\right|_{#2}",2],"intersect":"\\bigcap","union":"\\bigcup","mapsvia":["\\xrightarrow{#1}",1],"coker":"\\operatorname{coker}","tensor":"\\otimes","semidirect":"\\rtimes","pt":"\\{\\text{pt}\\}","and":"{\\text{and}}","or":"{\\text{or}}","bd":"{\\del}","wait":"{\\,\\cdot\\,}","selfmap":"{\\circlearrowleft}","tor":"{\\text{Tor}}","ext":"{\\text{Ext}}","hom":"{\\text{Hom}}","actson":"{\\curvearrowright}","actsonl":"{\\curvearrowleft}","disjoint":"{\\coprod}","qed":"{\\tag*{$\\blacksquare$}}","dash":"{\\hbox{-}}","inner":["\\langle #1, #2 \\rangle",2,""]}},"HTML-CSS":{"availableFonts":["TeX"]}});
         </script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
         
@@ -219,21 +219,24 @@ code.language-yaml {
     </head>
     <body for="html-export">
       <div class="mume markdown-preview   ">
-      <p>This page contains links to resources I have found useful in the past. I’ve tried to roughly organize these by increasing complexity with respect to a typical undergraduate degree in Mathematics.</p>
-<p>Items that are marked with a ⭐️ are (in my opinion) particularly excellent resources to peruse in just about any circumstance.</p>
+      <p>This page contains links to resources I have found useful in the past, as well as answers to common math-related questions that seem to come up often.</p>
+<p><em>Disclaimer: in the textbook section, a number of the outgoing Amazon links are affiliate links! These help cover the hosting cost of this site, but you should also be aware that many of these books are often available at university libraries, at cheaper resalers, or often even as PDFs floating around online.</em></p>
 <ul>
-<li><a href="#advice-for-incoming-math-majors">Advice for Incoming Math Majors</a></li>
-<li><a href="#general-notes-on-resources">General Notes on Resources</a></li>
-<li><a href="#general-advice-on-learning">General Advice on Learning</a></li>
-<li><a href="#specific-advice-on-learning-mathematics">Specific Advice on Learning Mathematics</a></li>
+<li><a href="#advice">Advice</a>
+<ul>
+<li><a href="#for-incoming-math-majors">For Incoming Math Majors</a></li>
+<li><a href="#on-learning-and-being-a-student">On Learning and Being a Student</a></li>
+<li><a href="#on-learning-mathematics-specifically">On Learning Mathematics Specifically</a></li>
+</ul>
+</li>
 <li><a href="#math-course-resources">Math Course Resources</a>
 <ul>
+<li><a href="#general-notes-on-resources">General Notes on Resources</a></li>
 <li><a href="#single-variable-calculus">Single Variable Calculus</a></li>
 <li><a href="#multiviarable-vector-calculus">Multiviarable / Vector Calculus</a></li>
 <li><a href="#linear-algebra">Linear Algebra</a></li>
 <li><a href="#ordinary-differential-equations">Ordinary Differential Equations</a></li>
 <li><a href="#discrete-mathematics">Discrete Mathematics</a></li>
-<li><a href="#survey-of-advanced-math-style-classes">“Survey of Advanced Math”-style classes</a></li>
 <li><a href="#number-theory">Number Theory</a></li>
 <li><a href="#abstract-algebra">Abstract Algebra</a>
 <ul>
@@ -257,37 +260,47 @@ code.language-yaml {
 </li>
 <li><a href="#general-resources">General Resources</a>
 <ul>
-<li><a href="#math-subject-gre">Math Subject GRE</a></li>
+<li><a href="#extracurricular-math">Extracurricular Math</a></li>
 <li><a href="#computer-science">Computer Science</a></li>
+<li><a href="#the-math-subject-gre">The Math Subject GRE</a></li>
 </ul>
 </li>
 <li><a href="#fun-stuff">Fun Stuff</a></li>
 </ul>
 <hr>
-<h1 class="mume-header" id="advice-for-incoming-math-majors">Advice for Incoming Math Majors</h1>
+<h1 class="mume-header" id="advice">Advice</h1>
+
+<h2 class="mume-header" id="for-incoming-math-majors">For Incoming Math Majors</h2>
 
 <ul>
-<li>Start thinking about whether or not grad school as an option. You don’t have to <em>decide</em> within your first year, but you’ll want to pick courses accordingly.</li>
-<li>Get an idea of what Math is all about - there are great things beyond Calculus!
+<li>
+<p>Start thinking about whether or not grad school as an option. You don’t have to <em>decide</em> within your first year, but you’ll want to pick courses accordingly.</p>
+</li>
+<li>
+<p>Get an idea of what Math is all about - there are great things beyond Calculus!</p>
 <ul>
 <li>To get an idea of what you’re in for as a Math major, take a look at the GRE Mathematics Subject Exam. It covers a broad array of pretty standardized topics.</li>
 <li>Also take a look Garrity’s book (<a href="#garrity">linked in the resources section</a>) for a short, condensed survey of some of the major topics and theorems you’ll encounter.</li>
 <li>One thing that was helpful to me was to make <a href="world-of-math">graphs and diagrams</a> of different areas of Math I encountered. Take a look, knowing the landscape you’re traversing is valuable.</li>
 </ul>
 </li>
-<li>Learn Latex and Mathjax early, and then make efforts regularly typeset your written notes.</li>
-<li>It may be intimidating, but try to find ways to talk to your professors outside of class! Don’t hesitate to ask for advice on just about anything related to Math or your academic career, in my experience they are always happy to help.</li>
-</ul>
-<p>Here are what I would consider some of the essential, core classes that are relatively standard for people majoring in pure Math and aiming for grad school:</p>
+<li>
+<p>Learn Latex and Mathjax early, and then make efforts regularly typeset your written notes.</p>
+</li>
+<li>
+<p>It may be intimidating, but try to find ways to talk to your professors outside of class! Don’t hesitate to ask for advice on just about anything related to Math or your academic career, in my experience they are always happy to help.</p>
+</li>
+<li>
+<p>For those aiming for grad school, particularly in pure Math: here are what I would consider some of the most essential, core classes to take:</p>
 <ul>
-<li>All of the Calculus (of course)</li>
+<li>Calculus (of course)</li>
 <li>Linear Algebra</li>
 <li>Ordinary Differential Equations</li>
 <li>Abstract Algebra</li>
 <li>Real Analysis</li>
 <li>Point-Set Topology</li>
 </ul>
-<p>Here are some “nice-to-haves” – still important, still beautiful, and great electives, but missing out on them probably won’t immediately tank your application:</p>
+<p>Here are some “nice-to-haves” – still important, still beautiful, and great electives, but missing out on them in undergrad isn’t the end of the world:</p>
 <ul>
 <li>Probability</li>
 <li>Combinatorics</li>
@@ -296,361 +309,578 @@ code.language-yaml {
 <li>Discrete Math (e.g. Graph Theory)</li>
 <li>More Linear Algebra (e.g. Numerical Analysis)</li>
 </ul>
-<p>Of course, it’s important to explore a large variety of classes and find what you like. The ideas and concepts from these courses are quite prevalent in just about every subfield of Mathematics, so having them under your belt makes life much easier regardless of what you pursue.</p>
-<h1 class="mume-header" id="general-notes-on-resources">General Notes on Resources</h1>
-
-<ul>
-<li>Anything lower-division: Khan Academy.</li>
-<li>Video lectures in general: they are a crutch! Use them to supplement and enrich your understanding, they are not as effective as a primary learning source. Your primary resource should always be material from your own instructor and course. Passively watching is also not very helpful - take notes, write down timestamps and video titles for important topics, and don’t be afraid to rewatch these several times.</li>
-<li>Youtube videos and lectures: vary in quality, but you can watch at 2x speed.</li>
-<li>MIT OCW: when video lectures are available, generally high quality. Covers a good number of areas, and a good source of practice problems and exams.</li>
-<li>Look for book recommendations for your topic/class in places like Math StackExchange or MathOverflow, and don’t be afraid to consult multiple books on the same topic.</li>
-<li>If you find an author/lecturer/general source that you particularly like or makes much more sense to you than others, look up other things from that source. If they cover other topics, be open to learning those – Math is quite interrelated, and later topics will be easier to learn if you are well-versed in earlier topics and have a bag of concepts you can “hang your hat on”.</li>
-<li>For lower division or introductory courses that aren’t proof-based, try to obtain a textbook along with its accompanying solutions manual. This is a great way to drill problems, check your answers, and identify your weaknesses.</li>
-<li>General tip: don’t both with sites like Chegg.</li>
-<li>Learn how to use a Computer Algebra System (CAS) early! Don’t use it as a crutch - just learn enough syntax so that you can quickly compute sanity checks. <a href="http://www.wolframalpha.com/">Wolfram Alpha</a> is a good for quick things. If you have the time, learn something like  <a href="http://www.sagemath.org/index.html">SageMath</a>, which can do symbolic computations and can even be used for things like group theory and algebra.</li>
-</ul>
-<h1 class="mume-header" id="general-advice-on-learning">General Advice on Learning</h1>
-
-<ul>
-<li><strong>Vocabulary</strong>: for any new topic, it can be helpful to make a list of definitions and simply memorize them. Math is (at least partially) a language, so it is worth (partially) learning it like one!</li>
-<li><strong>Start everything early</strong>, Mathematics is more like a marathon than a sprint.</li>
-<li><strong>Work a lot of problems/proofs</strong>, more than you are assigned. But be judicious with your time! If you stare at a problem for more than an hour or two without making progress, pivot. Sometimes the best way to make progress on a problem is to take a break, work on something different, or sleep on it. A relevant quote from Alexander Grothendieck:
-<blockquote>
-<p>I can illustrate the approach with the image of a nut to be opened. The first analogy that came to my mind is of immersing the nut in some softening liquid, and why not simply water? From time to time you rub so the liquid penetrates better, and otherwise you let time pass. The shell becomes more flexible through weeks and months — when the time is ripe, hand pressure is enough, the shell opens like a perfectly ripened avocado!</p>
-</blockquote>
+<p>Of course, I recommend taking as many Math courses as possible – explore the subject and discover what you like! But the ideas and concepts from these particular courses are relevant to just about any area you might go into, so having some exposure to them makes life much easier (regardless of what you pursue).</p>
 </li>
-<li><strong>Use a wide variety of resources</strong>: books, lectures, notes, PDFs, use them all. The google search modifiers <code>inurl:edu filetype: pdf</code> are incredibly useful.</li>
-<li><strong>Extensively use good resources</strong>: there is also some value in working a single, particularly well-regarded book, front to back.</li>
+</ul>
+<h2 class="mume-header" id="on-learning-and-being-a-student">On Learning and Being a Student</h2>
+
+<ul>
+<li><strong>Start everything early</strong>: Starting early gives you time to mull over questions and potentially visit professors/TAs for help.</li>
+<li><strong>Use a wide variety of resources</strong>: Books, lectures, notes, PDFs – use them all! The search modifiers <code>inurl:edu filetype:pdf</code> on Google are incredibly useful.</li>
+<li><strong>Extensively use good resources</strong>: There is also some value in working a single, particularly well-regarded book, front to back.</li>
 <li><strong>Spaced repetition</strong>: read up on it, and work it into your study habits. Cramming has diminishing returns in proof-based classes, you are much better served by visiting and revisiting material often enough to be familiar with it.</li>
 <li><strong>Sleep like it is your hobby.</strong> Two hours of extra sleep is almost always a more efficient use of your time than two hours of tired studying.</li>
 </ul>
-<h1 class="mume-header" id="specific-advice-on-learning-mathematics">Specific Advice on Learning Mathematics</h1>
+<h2 class="mume-header" id="on-learning-mathematics-specifically">On Learning Mathematics Specifically</h2>
 
 <ul>
+<li><strong>Vocabulary</strong>: for any new topic, it can be helpful to make a list of definitions and simply memorize them. Math is (at least partially) a language, so it is worth (partially) learning it like one!</li>
 <li><strong>Use multiple books</strong>: For most undergraduate topics, there are many “standard” references. Use them all! Cross-reference liberally as well.</li>
 <li><strong>Get the definitions down cold</strong>: Record every single definition you come across and just do whatever you have to do to memorize them! Some people like flash cards, I personally make a “dictionary” document for each subject. Meaning and understanding is often a gradual process, but knowing the full statement of a definition should just be automatic. I like to think of definitions as the analog “multiplication tables” within higher Mathematics – is it essential to memorize? Well no, but you also wouldn’t want to waste time stopping to multiply out <span class="mathjax-exps">$12^2$</span> when you’re trying to solve an integral.</li>
 <li><strong>Synthesize often:</strong> This includes things like revising class notes, making your own “cheat sheets”, writing up explanations of particular theorems or motivations for certain concepts, etc. Even better, find ways to give talks or teach other people! Present things as if you were trying to teach yourself the topic 6-12 months in the past.</li>
 <li><strong>Google for PDF notes</strong>: For just about any topic at any level of specificty, someone has probably written up notes or expository explanations and shared them online. So it can be extremely beneficial to look through the first page or two of Google results using <code>filetype:pdf</code> for any concept or proof you happen to be studying and see how other mathematicians think about and present them.</li>
+<li><strong>Work a lot of problems/proofs</strong>: Do more than you are assigned, but be judicious with your time! If you stare at a problem for more than an hour or two without making progress, pivot. Sometimes the best way to make progress on a problem is to take a break, work on something different, or sleep on it. A relevant quote from Alexander Grothendieck:
+<blockquote>
+<p>I can illustrate the approach with the image of a nut to be opened. The first analogy that came to my mind is of immersing the nut in some softening liquid, and why not simply water? From time to time you rub so the liquid penetrates better, and otherwise you let time pass. The shell becomes more flexible through weeks and months — when the time is ripe, hand pressure is enough, the shell opens like a perfectly ripened avocado!</p>
+</blockquote>
+</li>
 </ul>
 <h1 class="mume-header" id="math-course-resources">Math Course Resources</h1>
 
+<h2 class="mume-header" id="general-notes-on-resources">General Notes on Resources</h2>
+
+<ul>
+<li>Anything lower-division: <a href="https://www.khanacademy.org/">Khan Academy</a>.</li>
+<li>On Youtube videos: more and more lectures and talks are being posted online. These vary in quality, but this if offset by the fact that you can watch them at 2x speed.</li>
+<li>On video lectures in general: they are a crutch! Use them to supplement and enrich your understanding, but they do not work well as primary resources. The best resources are always materials from your own instructors and courses. Passively watching videos is also not very helpful - take notes, write down timestamps and video titles for important topics, and don’t hesitate to rewatch several times.</li>
+<li><a href="https://ocw.mit.edu/index.htm">MIT OCW</a>: when video lectures are available, generally high quality. Covers a good number of areas, and a good source of practice problems and exams.</li>
+<li>Look for book recommendations for your topic/class in places like Math StackExchange (MSE) or MathOverflow (MO), and don’t be afraid to consult multiple books on the same topic. I’ve had very good luck following the  <a href="https://math.stackexchange.com/questions/tagged/reference-request">reference-request tags</a> on these sites.</li>
+<li>If you find an author/lecturer/general source that you particularly like, look up other things from that source! If they cover other topics, be open to learning those – Math is quite interrelated, and later topics will be easier to learn when you have a collection of concepts you can “hang your hat on”.</li>
+<li>For lower division or introductory courses, try to obtain a textbook paired with a solutions manual. This is a great way to drill problems, check your answers, and identify your weaknesses. Beware typos!</li>
+<li>Don’t both with sites like Chegg.</li>
+<li>For computational courses: Schaum’s Outlines can be useful, but the quality is <em>very</em> subject-dependent.</li>
+<li>Learn how to use a Computer Algebra System (CAS). Don’t use it as a crutch - just learn enough syntax so that you can quickly run “sanity checks” on your computations. <a href="http://www.wolframalpha.com/">Wolfram Alpha</a> is a good for quick things. If you have the time, learn something like <a href="http://www.sagemath.org/index.html">SageMath</a>, which can do symbolic computations and can even be used for things like group theory and algebra.</li>
+</ul>
+<p>Below are resources for specific courses/subjects; I’ve tried to roughly organize these by increasing complexity with respect to a typical undergraduate Math degree.</p>
+<p><strong>Legend</strong></p>
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> – Textbooks</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> – Videos or online lectures</li>
+<li><i class="fa fa-external-link" aria-hidden="true"></i> – Websites or other online collections of resources</li>
+<li><i class="fa fa-star" aria-hidden="true"></i> – Particularly excellent resources that I highly recommend</li>
+<li><em>Details</em> – Notes on the mathematical content or subject-specific advice.</li>
+</ul>
+<hr>
 <h2 class="mume-header" id="single-variable-calculus">Single Variable Calculus</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Stewart</em>, Calculus: Early Transcendentals</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Spivak</em>, Calculus</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Apostol</em>, <a href="https://www.amazon.com/gp/product/0471000051/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0471000051&amp;linkCode=as2&amp;tag=dzackgarza-20&amp;linkId=5393e3e618e343c64e13b392200bb8b1">Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra</a></li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Stewart</em>, <a href="https://www.amazon.com/gp/product/0538497904/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0538497904&amp;linkId=edb74b5594ddb68399ffe86972c7eb84">Calculus: Early Transcendentals</a>
+<ul>
+<li>What can I say? It’s a Calculus book, and it covers the standard curriculum. This one’s a good choice because there are a few solution manuals floating around for older editions.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Spivak</em>, <a href="https://www.amazon.com/gp/product/0914098918/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0914098918&amp;linkId=6e5af9b5340ff7f74c580ed8869d31f9">Calculus</a>
+<ul>
+<li>Exposition is a little more advanced, and closer to introductory real analysis. Good for an honors-level course, or if you want to see a more “rigorous” exposition of the topics from Stewart.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Apostol</em>, <a href="https://www.amazon.com/gp/product/0471000051/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0471000051&amp;linkCode=as2&amp;tag=dzackgarza-20&amp;linkId=5393e3e618e343c64e13b392200bb8b1">Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra</a>
+<ul>
+<li>A good alternative to Spivak.</li>
+</ul>
+</li>
 <li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/user/patrickJMT/videos">patrickJMT</a>
 <ul>
 <li>Videos of how to solve many specific calculus and engineering problems</li>
 </ul>
 </li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+<details markdown="1">
+**Content**:
+**Notes**:
+</details>
 <h2 class="mume-header" id="multiviarable-vector-calculus">Multiviarable / Vector Calculus</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Schey</em>, Div, Grad, Curl, and All That: An Informal Text on Vector Calculus ⭐️</li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/">MIT OCW Denis Auroux</a> ⭐️</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Schey</em>, <a href="https://www.amazon.com/gp/product/0393925161/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0393925161&amp;linkId=7d9d356912d7c9296c20c4cda5dd5837">Div, Grad, Curl, and All That: An Informal Text on Vector Calculus</a>
+<ul>
+<li>Most textbooks introduce these operators in a very formal way; this text expands and motivates these definitions greatly.</li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>: Many Calculus books cover both single and multivariable, so many of the resources from the single variable section will have some overlap here. (However, the resources in this section focus almost entirely on multivariable cases.)</p>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <a href="https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/">MIT OCW Denis Auroux</a>
+<ul>
+<li>A very geometric approach, with lots of great imagery!</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+**Notes**: Many Calculus books cover both single and multivariable, so most of the resources from the single variable section will be applicable here as well. However, the resources in this section focus almost entirely on multivariable cases.
+</details>
 <h2 class="mume-header" id="linear-algebra">Linear Algebra</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Axler</em>, Linear Algebra Done Right</li>
-<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Goode and Annin</em>, Differential Equations and Linear Algebra
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Axler</em>, <a href="https://www.amazon.com/gp/product/3319110799/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=3319110799&amp;linkId=eb9410dc5d589a51d13160ce65c9dff8">Linear Algebra Done Right</a>
+<ul>
+<li>This subject is usually taught as a bag of computational tricks and algorithms, which obscures the absolute beauty of the subject – this text motivates the theory nicely and shows how powerful it can be.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Goode and Annin</em>, <a href="https://www.amazon.com/gp/product/0130457949/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0130457949&amp;linkId=b72706b7edf00e16d825b413e1905040">Differential Equations and Linear Algebra</a>
 <ul>
 <li>Good balance of rigor vs. brevity and computation vs. theory. Very concise, gives you what you need to start calculating, but also takes time to list vector space axioms, mentions fields, a nice way of viewing the determinant formula, and (best of all) lists of many conditions that are equivalent to a matrix being singular or non-singular.</li>
 </ul>
 </li>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Anton</em>, Elementary Linear Algebra
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Anton</em>, <a href="https://www.amazon.com/gp/product/1118473507/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1118473507&amp;linkId=67a5c553b282419109a3bbfdbba97406">Elementary Linear Algebra</a>
 <ul>
 <li>Has an entire chapter on many cool applications of Linear Algebra – things like graph theory, computer graphics, and Google’s Pagerank algorithm. Also has a lot of “historical note” blurbs that are pretty interesting.</li>
 </ul>
 </li>
-<li><i class="fa fa-tv" aria-hidden="true"></i>: <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">MIT OCW Gilbert Strang</a></li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Strang</em>, <a href="https://www.amazon.com/gp/product/0980232775/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0980232775&amp;linkId=c4ee2ff3cdae059275e5a9370d59594d">Introduction to Linear Algebra</a>
+<ul>
+<li>Strang is a giant in the world of linear algebra, so it’s worth seeing how he approaches the subject.</li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">MIT OCW: Linear Algebra with Gilbert Strang</a>
+<ul>
+<li>Again, it’s Strang, so worth checking out!</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+**Notes**:
+</details>
 <h2 class="mume-header" id="ordinary-differential-equations">Ordinary Differential Equations</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Goode and Annin</em>, Differential Equations and Linear Algebra
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Goode and Annin</em>, <a href="https://www.amazon.com/gp/product/0130457949/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0130457949&amp;linkId=b72706b7edf00e16d825b413e1905040">Differential Equations and Linear Algebra</a>
 <ul>
-<li>Good precisely because it sets up the language of linear algebra first, making many concepts in ODEs much easier to explain and understand.</li>
+<li>Good precisely because it sets up the language of linear algebra first, making many concepts in ODEs much easier to explain and understand (e.g. solutions as eigenfunctions of derivative operators).</li>
 </ul>
 </li>
-<li><i class="fa fa-tv" aria-hidden="true"></i>: <a href="https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/index.htm">MIT OCW Differential Equations</a></li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/index.htm">MIT OCW: Differential Equations</a>
+<ul>
+<li>Very Physics-motivated approach, for better or worse.</li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+**Notes**:
+</details>
 <h2 class="mume-header" id="discrete-mathematics">Discrete Mathematics</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rosen</em>, Discrete Mathematics and Its Applications
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rosen</em>, <a href="https://www.amazon.com/gp/product/0077431448/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0077431448&amp;linkId=978fcb38a872b8e609e524a396ecf471">Discrete Mathematics and Its Applications</a>
 <ul>
 <li>Huge variety of topics, good prep for many Math-related computer science courses, also just a good survey of many topics at an introductory level.</li>
 </ul>
 </li>
-<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Grimaldi</em>, Discrete and Combinatorial Mathematics: An Applied Introduction
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Grimaldi</em>, <a href="https://www.amazon.com/gp/product/0201726343/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0201726343&amp;linkId=d7c4341e556bbc0297cd3ee66b043f1c">Discrete and Combinatorial Mathematics: An Applied Introduction</a>
 <ul>
 <li>Absolutely excellent presentation of recurrence relations, mirroring how solutions of differential equations are found. Also has a good presentation of how to commute quantifiers.</li>
 </ul>
 </li>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Eccles</em>, An Introduction to Mathematical Reasoning: Numbers, Sets and Functions</li>
-<li><i class="fa fa-external-link" aria-hidden="true"></i>⭐️ <a href="http://www.eecs70.org/">UC Berkeley’s EECS 70 Course</a>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Eccles</em>, <a href="https://www.amazon.com/gp/product/0521597188/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0521597188&amp;linkId=4edc26d769ec8c1c49edbc9b2f9c7ef5">An Introduction to Mathematical Reasoning: Numbers, Sets and Functions</a>
+<ul>
+<li>Good for a solid introduction to proofs.</li>
+</ul>
+</li>
+<li><i class="fa fa-external-link" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <a href="http://www.eecs70.org/">UC Berkeley’s EECS 70 Course</a>
 <ul>
 <li>A wonderful lower-division course for which excellent notes have been posted for a number of years.</li>
 </ul>
 </li>
 </ul>
-<p><strong>Content</strong>:</p>
-<ul>
-<li>Basic logic (truth tables, quantifiers, implications, contrapositive and converse, induction)</li>
-<li>Basic set theory (set-builder notation, venn diagrams, cartesian products)</li>
-<li>Functions (injectivity/surjectivity, inverse images)</li>
-<li>Relations (partial orders, equivalence relations)</li>
-<li>Basic combinatorics (permutations and combinations, inclusion/exclusion, pigeonhole principle)</li>
-<li>Recurrence relations</li>
-<li>Graphs (Konigsberg problem, Hamiltonian/Eulerian cycles)</li>
-<li>Number theory (divisibility, modular arithmetic, the Euclidean algorithm)</li>
-<li>Generating functions</li>
-<li>Probability (odds for dice rolls and cards, distributions, Stirling’s approximation)</li>
-</ul>
+<details markdown="1">
+**Content**:
+- Basic logic (truth tables, quantifiers, implications, contrapositive and converse, induction)
+- Basic set theory (set-builder notation, venn diagrams, cartesian products)
+- Functions (injectivity/surjectivity, inverse images)
+- Relations (partial orders, equivalence relations)
+- Basic combinatorics (permutations and combinations, inclusion/exclusion, pigeonhole principle)
+- Recurrence relations
+- Graphs (Konigsberg problem, Hamiltonian/Eulerian cycles)
+- Number theory (divisibility, modular arithmetic, the Euclidean algorithm)
+- Generating functions
+- Probability (odds for dice rolls and cards, distributions, Stirling's approximation)
 <p><strong>Notes</strong>:</p>
 <p>Highlight equation aspect of proofs, ties between recurrence relations and ODEs TODO</p>
-<h2 class="mume-header" id="survey-of-advanced-math-style-classes">“Survey of Advanced Math”-style classes</h2>
-
-<ul>
-<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX">Introduction to Higher Mathematics</a> ⭐️<br>
-A great survey that highlights many different areas of advanced mathematics.</li>
-</ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+</details>
 <hr>
 <h2 class="mume-header" id="number-theory">Number Theory</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>LeVeque</em>, Fundamental of Number Theory
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>LeVeque</em>, <a href="https://www.amazon.com/gp/product/0486689069/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0486689069&amp;linkId=5fa8c23ca453797a3d1f39d0741b7530">Fundamentals of Number Theory</a>
 <ul>
-<li>Short but good</li>
-</ul>
-</li>
-</ul>
-<p><strong>Content</strong>:</p>
-<ul>
-<li>The prime counting function</li>
-<li>Modular arithmetic, solving equations in rings, multiplicative functions (like the totient)</li>
-<li>The Chinese remainder theorem, Euler’s theorem, Fermat’s Little Theorem</li>
-<li>Quadratic reciprocity, the Legendre and Jacobi symbol</li>
-</ul>
-<p><strong>Notes</strong>: This is a subject that pairs very well with introductory abstract algebra (groups and rings).</p>
-<h2 class="mume-header" id="abstract-algebra">Abstract Algebra</h2>
-
-<ul>
-<li><i class="fa fa-book" aria-hidden="true"></i>⭐️ <em>Dummit and Foote</em>, Abstract Algebra
-<ul>
-<li>Essentially the de-facto standard, plus it also serves as an encylopedaic reference.</li>
-</ul>
-</li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> ⭐️ <a href="https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y">Matthew Salomone</a></li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> ⭐️ <a href="https://www.youtube.com/watch?v=VdLhQs_y_E8&amp;list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5">Benedict Gross MIT</a></li>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Beachy and Blair</em>, Abstract Algebra</li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="?">Math Dr. Bob, Abstract Algebra</a></li>
-</ul>
-<p><strong>Content</strong>:<br>
-Covers groups, rings, fields, and Galois theory.</p>
-<p><strong>Notes</strong>: There are also some popular videos by one “Math Doctor Bob”. He covers much of the relevant content. I’ve known people that have found his videos helpful - I did not.</p>
-<h3 class="mume-header" id="galois-theory">Galois Theory</h3>
-
-<ul>
-<li><i class="fa fa-tv" aria-hidden="true"></i> ⭐️ <a href="https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y">Matthew Salomone</a></li>
-</ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
-<h2 class="mume-header" id="real-analysis">Real Analysis</h2>
-
-<ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rudin</em>, Principles of Mathematical Analysis
-<ul>
-<li>Another standard. Often referred to as Baby Rudin.</li>
-</ul>
-</li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> ⭐️<a href="https://www.youtube.com/playlist?list=PL0E754696F72137EC">Francis Su’s Lectures from Harvey Mudd College</a>
-<ul>
-<li>Recorded lectures, extremely clear and well-motivated.</li>
-</ul>
-</li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=gJ1pYz1k0qM&amp;list=PL7B37EFE678A682CE">Math Dr. Bob, Real Analysis</a>
-<ul>
-<li>I didn’t find these helpful, but perhaps someone will.</li>
+<li>Short but good!</li>
 </ul>
 </li>
 </ul>
 <details markdown="1">
-<p><strong>Content</strong>:</p>
+**Content**:
+- The prime counting function
+- Modular arithmetic, solving equations in rings, multiplicative functions (like the totient)
+- The Chinese remainder theorem, Euler's theorem, Fermat's Little Theorem
+- Quadratic reciprocity, the Legendre and Jacobi symbol
+<p><strong>Notes</strong>: This is a subject that pairs very well with introductory abstract algebra (groups and rings).</p>
+</details>
+<h2 class="mume-header" id="abstract-algebra">Abstract Algebra</h2>
+
 <ul>
-<li>The reals as an ordered field, construction</li>
-<li>Metric spaces, basic topology</li>
-<li>The Riemann-Stieltjes Integral</li>
-<li>Sequences and series, Cauchy sequences and completeness</li>
-<li>Limits and continuity, pointwise and uniform convergence</li>
-<li>The Mean Value Theorem</li>
-<li>Measure theory and the Lebesgue integral</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Dummit and Foote</em>, <a href="https://www.amazon.com/gp/product/B017MY9TI0/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=B017MY9TI0&amp;linkId=ae6a57d293f98f92724e3287b46c6f06">Abstract Algebra</a>
+<ul>
+<li>Essentially the de-facto standard, plus it also serves as an encylopedaic reference.</li>
 </ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Beachy and Blair</em>, <a href="https://www.amazon.com/gp/product/1577664434/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1577664434&amp;linkId=54b29f3498d4bc910a3df2ec72cfa85f">Abstract Algebra</a>
+<ul>
+<li>A good undergraduate-level reference.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Matthew Salomone</em> <a href="https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y">Abstract Algebra Series</a>
+<ul>
+<li>Fantastically well-motivated series, covers the equivalent of an entire year of material that naturally leads into Galois theory.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Benedict Gross</em>, <a href="https://www.youtube.com/watch?v=VdLhQs_y_E8&amp;list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5">Lectures at Harvard</a>
+<ul>
+<li>Very clear with lots of examples.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <em>Math Dr. Bob</em>, <a href="?">Abstract Algebra</a>
+<ul>
+<li>I didn’t find these particularly useful, but I know people that have.</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+Covers groups, rings, fields, and Galois theory.
+<p><strong>Notes</strong>:</p>
+</details>
+<h3 class="mume-header" id="galois-theory">Galois Theory</h3>
+
+<ul>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Matthew Salomone</em>, <a href="https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y">Algebra Lectures</a>
+<ul>
+<li>A portion of his Algebra series, the exposition is fantastic because the series follows a cohesive narrative that introduces some of the major results and benefits of Galois theory early on. Highly recommended.</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+**Notes**:
+</details>
+<h2 class="mume-header" id="real-analysis">Real Analysis</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>  <em>Rudin</em>, <a href="https://www.amazon.com/gp/product/007054235X/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=007054235X&amp;linkId=6999e53c498f9f1f4b2f7d6e64ac0d8a">Principles of Mathematical Analysis</a>
+<ul>
+<li>Essentially a standard in undergraduate real analysis, written in a very terse style but covers a great deal of material. Often referred to as “Baby Rudin”.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Francis Su</em>, <a href="https://www.youtube.com/playlist?list=PL0E754696F72137EC">Lectures from Harvey Mudd College</a>
+<ul>
+<li>Recorded lectures, extremely clear and well-motivated!</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <em>Math Dr. Bob</em>, <a href="https://www.youtube.com/watch?v=gJ1pYz1k0qM&amp;list=PL7B37EFE678A682CE">Real Analysis</a>
+<ul>
+<li>I didn’t find these helpful, but perhaps others will.</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+- The reals as an ordered field, construction
+- Metric spaces, basic topology
+- The Riemann-Stieltjes Integral
+- Sequences and series, Cauchy sequences and completeness
+- Limits and continuity, pointwise and uniform convergence
+- The Mean Value Theorem
+- Measure theory and the Lebesgue integral
 <p><strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="complex-analysis">Complex Analysis</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> ⭐️ <em>Brown and Churchill</em>, Complex Variables and Applications</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> ⭐️ <em>Needham</em>, Visual Complex Analysis</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> Ahlfors</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Brown and Churchill</em>, <a href="https://www.amazon.com/gp/product/0073383171/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0073383171&amp;linkId=a29ea129f68e5b2a12841dc26c1138c3">Complex Variables and Applications</a>
+<ul>
+<li>Good overview of computational techniques at an undergrad level.</li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Needham</em>, <a href="https://www.amazon.com/gp/product/0198534469/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0198534469&amp;linkId=50937c6af6cc681f12f628911fd434f3">Visual Complex Analysis</a>
+<ul>
+<li>Absolutely phenomenal book! The exposition and imagery is truly excellent, although this is perhaps not the best book for learning computations.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Ahlfors</em>, <a href="https://www.amazon.com/gp/product/0070006571/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0070006571&amp;linkId=69362995cc0e8390c114c3135a28eccf">Complex Analysis</a>
+<ul>
+<li>A standard grad-level reference.</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+- The complex integral
+- Residue theorems
+- Analytic vs. Holomorphic vs. Complex Differentiable functions
+**Notes**:
+</details>
 <h2 class="mume-header" id="partial-differential-equations">Partial Differential Equations</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> ? UCSD TODO</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Evans</em>, <a href="https://www.amazon.com/gp/product/0821849743/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0821849743&amp;linkId=0641908b274e8a91630e51a90749f4db">Partial Differential Equations</a>
+<ul>
+<li>A graduate-level approach.</li>
 </ul>
-<p><strong>Content</strong>: Heat/wave/Laplace equations.</p>
+</li>
+</ul>
+<details markdown="1">
+**Content**: Heat/wave/Laplace equations.
 <p><strong>Notes</strong>:</p>
+</details>
 <h2 class="mume-header" id="numerical-analysis">Numerical Analysis</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> ? UCSD TODO</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> todo</li>
 </ul>
-<p><strong>Content</strong>: Fixed points and root-finding, Newton’s method, least squares.<br>
-<strong>Notes</strong>:</p>
+<details markdown="1">
+**Content**: Fixed points and root-finding, Newton's method, least squares.
+**Notes**:
+</details>
 <h2 class="mume-header" id="combinatorics">Combinatorics</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Wilf</em>, Generatingfunctionology</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Bona</em>, A Walk Through Combinatorics</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Wilf</em>, <a href="https://www.math.upenn.edu/~wilf/DownldGF.html">Generatingfunctionology</a>
+<ul>
+<li>Freely provided by Wilf on his site, exposition is excellent and it provides a comprehensive overview of how to work with generating functions.</li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Bona</em>, <a href="https://www.amazon.com/gp/product/9813148845/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=9813148845&amp;linkId=7c7b9364a6276848ebd103bcac8ef566">A Walk Through Combinatorics</a></li>
+</ul>
+<details markdown="1">
+**Content**:
+**Notes**:
+</details>
 <h2 class="mume-header" id="probability">Probability</h2>
 
-<p>Description:<br>
-Book - ? UCSD TODO</p>
-<p><strong>Content</strong>:</p>
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> UCSD todo</li>
+</ul>
+<details markdown="1">
+**Content**:
 <p><strong>Notes</strong>: It is useful to take (either beforehand or concurrently) introductory classes in both statistics and combinatorics.</p>
+</details>
 <h2 class="mume-header" id="point-set-topology">Point-Set Topology</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> ⭐️ <em>Munkres</em>, Topology</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> ⭐️ <em>Lee</em>, Introduction to Smooth Manifolds</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Munkres</em>, <a href="https://www.amazon.com/gp/product/0134689518/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0134689518&amp;linkId=d158c2143135041b06ceeb214bbbeda3">Topology</a>
+<ul>
+<li>A standard - the good stuff starts about 10 chapters in, everything before that is aimed at providing a solid grounding in set theory and proofs.</li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Lee</em>, <a href="https://www.amazon.com/gp/product/1441999817/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1441999817&amp;linkId=000aa52031ba5c130f390efbe5d5b5e4">Introduction to Smooth Manifolds</a>
+<ul>
+<li>The appendix has a great uber-compressed review of point-set.</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+**Notes**:
 <p>Specify which chapters are useful. TODO<br>
 Common question: where is Topology useful?<br>
 See Brouwer fixed point theorem, Lie groups in physics, links to functional analysis.</p>
+</details>
 <hr>
 <h2 class="mume-header" id="graduate-real-analysis">Graduate Real Analysis</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rudin</em>, Principles of Mathematical Analysis<br>
-Chapter 11 has a light overview of measure theory, the Lebesgue integral,</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> Rudin, Papa Rudin
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rudin</em>, <a href="https://www.amazon.com/gp/product/007054235X/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=007054235X&amp;linkId=6999e53c498f9f1f4b2f7d6e64ac0d8a">Principles of Mathematical Analysis</a>
 <ul>
-<li>Also referred to as “Papa Rudin”</li>
+<li>A contentious standard for real analysis. Chapter 11 has a light overview of measure theory, and the Lebesgue integral.</li>
 </ul>
 </li>
-<li><i class="fa fa-book" aria-hidden="true"></i> Measures and Martingales<br>
-This book is not as detailed, but covers material faster and provides a bit more intuition than Rudin. The first few chapters are a good supplement.</li>
-</ul>
-<p><strong>Content</strong>:</p>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Rudin</em>, <a href="https://www.amazon.com/gp/product/0070619875/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0070619875&amp;linkId=a627b7f18abfa94fa42b17f3b417fc2b">Real and Complex Analysis</a>
 <ul>
-<li>Measure theory, sigma algebra</li>
-<li>Montone and dominated convergence theorems</li>
-<li><span class="mathjax-exps">$L^p$</span> spaces, Holder’s inequality</li>
+<li>Also referred to as “Papa Rudin”.</li>
 </ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Schilling</em>, <a href="https://www.amazon.com/gp/product/1316620247/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1316620247&amp;linkId=88eeebe5438a1517f9cb700d2760c876">Measures, Integrals, and Martingales</a>
+<ul>
+<li>This book is not as detailed, as it is geared towards rigorous probability theory, but covers material faster and provides a bit more intuition than Rudin. The first few chapters are a good supplement to a full course.</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+- Measure theory, sigma algebra
+- Montone and dominated convergence theorems
+- $L^p$ spaces, Holder's inequality
 <p><strong>Notes</strong>:</p>
+</details>
 <h2 class="mume-header" id="functional-analysis">Functional Analysis</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> ? Springer TODO</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Conway</em>, <a href="https://www.amazon.com/gp/product/0387972455/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0387972455&amp;linkId=551eb9b7936eeb0957070b270d18f69f">A Course in Functional Analysis</a>
+<ul>
+<li>Assumes a background around the level of Papa Rudin.</li>
 </ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+- Measure theory, sigma algebra
+- Montone and dominated convergence theorems
+- $L^p$ spaces, Holder's inequality
+<p><strong>Notes</strong>:</p>
+</details>
 <h2 class="mume-header" id="category-theory">Category Theory</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> Aluffi Algebra Chapter Zero ⭐️</li>
-<li>Categories for the Working Mathematician</li>
-<li>Links to my talks</li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=o6L6XeNdd_k">Talk on Category Theory by Tom LaGatta</a></li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> - Talk by that one student ⭐️</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Aluffi</em> <a href="https://www.amazon.com/gp/product/0821847813/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0821847813&amp;linkId=550ef17ef618706c358e239378644290">Algebra Chapter Zero</a>
+<ul>
+<li>Covers Algebra in a more categorical manner, so this book works best as a second pass of Algebra.</li>
 </ul>
-<p><strong>Content</strong>:</p>
-<p><strong>Notes</strong>: Expected in some classes, but often assumed. Used in Algebraic Topology and Algebraic Geometry heavily. There are some videos of formla lectures online by people like Steve Awodey, Bartosz Milewski, and Eugenia Changa, but I did not find them particularly helpful or enlightening when I was trying to learn this material.</p>
-<p>Look through talks</p>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Mac Lane</em> <a href="https://www.amazon.com/gp/product/0387984038/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0387984038&amp;linkId=edb75c39191f4f3e3c6c1315f0bd529a">Categories for the Working Mathematician</a>
+<ul>
+<li>Seems to be a pretty standard reference; Mac Lane is regarded as one of the founders of the subject.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=o6L6XeNdd_k">Talk on Category Theory by Tom LaGatta</a></li>
+</ul>
+<details markdown="1">
+**Content**:
+<p><strong>Notes</strong>: Expected in some classes, but often assumed. Used in Algebraic Topology and Algebraic Geometry heavily. You can also find many full lectures online by people like Steve Awodey, Bartosz Milewski, and Eugenia Cheng.</p>
+</details>
 <h2 class="mume-header" id="algebraic-topology">Algebraic Topology</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> Munkres ⭐️</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> Hatcher ⭐️</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> Bott and Tu
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Munkres</em>, <a href="https://www.amazon.com/gp/product/9332549532/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=9332549532&amp;linkId=fa37f71d9cc78940fabc80d884040129">Topology</a>
 <ul>
-<li>asdsa</li>
+<li>Mostly point-set, but introduces things like the fundamental group in the later chapters.</li>
 </ul>
 </li>
-<li><i class="fa fa-book" aria-hidden="true"></i> Griffiths and Morgan
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Hatcher</em>, <a href="https://www.amazon.com/gp/product/0521795400/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0521795400&amp;linkId=7741db5a10f939a73e5c9c3e2a44eb49">Algebraic Topology</a>
+<ul>
+<li>Love it or hate it, this seems to be the standard reference!</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Bott and Tu</em>, <a href="https://www.amazon.com/gp/product/0387906134/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0387906134&amp;linkId=086065b5049039c079f28f75e797578e">Differential Forms in Algebraic Topology</a>
+<ul>
+<li>A beautiful, wonderful book! Tons of geometric intuition, and has a very deep selection of topics.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Griffiths and Morgan</em>, <a href="https://www.amazon.com/gp/product/B00FKP3962/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=B00FKP3962&amp;linkId=e04a0c47457c748acb505b2a028aaec7">Rational Homotopy Theory and Differential Forms</a>
 <ul>
 <li>Mostly homotopy theory.</li>
 </ul>
 </li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=Ap2c1dPyIVo&amp;list=PL6763F57A61FE6FE8">NJ Wildberger, Introduction to Algebraic Topology</a>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <em>NJ Wildberger</em>, <a href="https://www.youtube.com/watch?v=Ap2c1dPyIVo&amp;list=PL6763F57A61FE6FE8">Introduction to Algebraic Topology</a>
 <ul>
-<li>A good series, just be aware that he expresses some extremely non-mainstream views in his other videos.</li>
+<li>A good undergraduate-level series, just be aware that he expresses some extremely non-mainstream views in his other videos!</li>
 </ul>
 </li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+<details markdown="1">
+**Content**:
+**Notes**:
+</details>
 <h2 class="mume-header" id="algebraic-geometry">Algebraic Geometry</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> Harthstone</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Hartshone</em>,  <a href="https://www.amazon.com/gp/product/0387902449/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0387902449&amp;linkId=eff72560055aac9a8b2a525ab7b45b47">Algebraic Geometry</a>
+<ul>
+<li>Seems to be regarded as a pretty standard reference.</li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+**Notes**:
+</details>
 <h2 class="mume-header" id="manifolds">Manifolds</h2>
 
 <ul>
-<li><i class="fa fa-book" aria-hidden="true"></i> Spivak, Calculus on Manifolds</li>
-<li><i class="fa fa-book" aria-hidden="true"></i> Manifolds, Lee ⭐️</li>
-<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=7G4SqIboeig">Frederic Schuller, International Winter School on Gravity and Light 2015</a> ⭐️</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Spivak</em>, <a href="https://www.amazon.com/gp/product/0805390219/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0805390219&amp;linkId=d7cce2895c47afe764b0ce79d888a506">Calculus on Manifolds</a>
+<ul>
+<li>A good follow-up to Spivak’s Calculus book, the exposition is at an undergraduate level. Worth checking out if you like his style.</li>
 </ul>
-<p><strong>Content</strong>:<br>
-<strong>Notes</strong>:</p>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Lee</em>, <a href="https://www.amazon.com/gp/product/1441999817/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1441999817&amp;linkId=afdfc509ff8cb5a157d81a422cdf59b1">Introduction to Smooth Manifolds</a>
+<ul>
+<li>The gold standard.</li>
+</ul>
+</li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <em>Frederic Schuller</em>, <a href="https://www.youtube.com/watch?v=7G4SqIboeig">International Winter School on Gravity and Light 2015</a>
+<ul>
+<li>This guy is just phenomenal!</li>
+</ul>
+</li>
+</ul>
+<details markdown="1">
+**Content**:
+**Notes**:
+</details>
 <hr>
 <h1 class="mume-header" id="general-resources">General Resources</h1>
 
-<h2 class="mume-header" id="math-subject-gre">Math Subject GRE</h2>
+<h2 class="mume-header" id="extracurricular-math">Extracurricular Math</h2>
 
-<p>If you are thinking about applying to graduate school in Mathematics (pure or applied), I would recommend that you start looking at the material for this exam within your first few years, and take it during your Junior year.</p>
-<p>This is because these tests are only offered twice per year, and you often won’t get your scores until late in the grad school application process - so if you want to retake and improve your score, you could delay your application by nearly a year. Yikes! Take it early, just in case.</p>
-<p>Topics</p>
 <ul>
-<li>Single Variable Calculus (x%)</li>
-<li>Multivariable Calculus (x%)</li>
-<li>Ordinary Differential Equations</li>
-<li>Linear Algebra</li>
-<li>Complex Analysis (x%)</li>
-<li>Abstract Algebra (x%)
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Garrity</em>, <a href="https://www.amazon.com/gp/product/0521797071/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0521797071&amp;linkCode=as2&amp;tag=dzackgarza-20&amp;linkId=a599d541b5c474b2a50177e0cda4b379">All the Mathematics You Missed: But Need to Know for Graduate School</a><div id="garrity"></div>
 <ul>
-<li>Primarily groups and rings</li>
+<li>If you’re thinking about grad school at all, read this! Even if you’re not, it’s a pretty good collection of mathematics that it’s good to at least be familiar with. You can also use this to get an idea of some of the major theorems and results in a variety of subfields.</li>
 </ul>
 </li>
-<li>Probability/Statistics (x%)</li>
-<li>Real Analysis (x%)
+<li><i class="fa fa-tv" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <a href="https://www.youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX">Introduction to Higher Mathematics</a>
 <ul>
-<li>Convergence of sums/sequences, topological properties of <span class="mathjax-exps">$&#x5C;RR$</span></li>
+<li>A great survey that highlights many different areas of advanced mathematics.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Abbott</em>, <a href="https://www.amazon.com/gp/product/048627263X/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=048627263X&amp;linkId=1f5b4e9ec20ad3c1ebd5cd2af429be68">Flatland</a>
+<ul>
+<li>As the professor who recommended this to me said, reading this book is an absolutely essential step in the professional development of every mathematician. It’s a short fiction that explores a world of 1-dimensional beings that live in a 2-dimensional universe, which provides a powerful analogy for thinking about higher dimensional objects.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="computer-science">Computer Science</h2>
+
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>CLRS</em>, <a href="https://www.amazon.com/gp/product/0262033844/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0262033844&amp;linkCode=as2&amp;tag=dzackgarza-20&amp;linkId=f99bf4ce12d3ed422a41b841a3055d75">Introduction to Algorithms</a>
+<ul>
+<li><i class="fa fa-external-link" aria-hidden="true"></i> <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm">MIT OCW: Introduction to Algorithms</a> is a good supplement.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>McDowell</em>, <a href="https://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0984782850&amp;linkCode=as2&amp;tag=dzackgarza-20&amp;linkId=10277ceaad2b2e90ef6a1b321b555ffd">Cracking the Coding Interview</a>
+<ul>
+<li>Covers a number of quintessential CS interview questions, worth reading if you are preparing for internships.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Sipser</em>, <a href="https://www.amazon.com/gp/product/8131525295/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=8131525295&amp;linkId=8b4d166a094b0d45b504ea7f4da63727">Introduction to the Theory of Computation</a>
+<ul>
+<li>The standard resource for an introduction to theoretical computer science. Covers things like computability, automata, and Turing machines.</li>
+</ul>
+</li>
+<li><i class="fa fa-book" aria-hidden="true"></i> <em>Graham and Knuth</em>, <a href="https://www.amazon.com/gp/product/0201558025/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0201558025&amp;linkId=d0e1989fdcb7ee7be5595099a9267a00">Concrete Mathematics</a>
+<ul>
+<li>An encylopedaic reference for a huge swath of discrete Mathematics.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="the-math-subject-gre">The Math Subject GRE</h2>
+
+<p>If you are thinking about applying to graduate school in Mathematics (pure or applied), I would recommend that you start looking at the material for this exam within your first few years, and take it as soon as your Junior year.</p>
+<p>Note that the Math Subject GRE is vastly different than the Math portion of the General GRE. The latter covers primarily high-school level mathematics and requires no courses beyond Calculus (although the questions can still be tricky). The former is over 50% Calculus, and often includes a wide variety of upper-division topics as well. Many sources confuse these two exams!</p>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Single Variable Calculus</li>
+<li>Multivariable Calculus</li>
+<li>Ordinary Differential Equations</li>
+<li>Linear Algebra</li>
+<li>Complex Analysis</li>
+<li>Abstract Algebra
+<ul>
+<li>Primarily groups and rings, virtually no module or Galois theory.</li>
+</ul>
+</li>
+<li>Probability/Statistics</li>
+<li>Real Analysis
+<ul>
+<li>Convergence of sums/sequences, topological properties of <span class="mathjax-exps">$&#x5C;RR$</span>.</li>
 </ul>
 </li>
 <li>Combinatorics
@@ -661,46 +891,26 @@ This book is not as detailed, but covers material faster and provides a bit more
 <li>Point-Set Topology</li>
 <li>Numerical Analysis</li>
 <li>Set Theory and Logic</li>
-<li>
-<p id="garrity">All the Mathematics You Missed: But Need to Know for Graduate School, Garrity<p>
-</p></p></li>
 </ul>
-<p>Exams<br>
-<a href="http://www.math.ucla.edu/~iacoley/greprep.html">Link to 5 exams</a></p>
+<p><strong>Resources</strong></p>
 <ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-<li>4</li>
-<li>5</li>
+<li><i class="fa fa-external-link" aria-hidden="true"></i> You can find five sample exams <a href="http://www.math.ucla.edu/~iacoley/greprep.html">here.</a></li>
+<li><i class="fa fa-book" aria-hidden="true"></i> Princeton Review, <a href="https://www.amazon.com/gp/product/0375429727/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0375429727&amp;linkId=a8d125e03d8fa03bd5e41231a88252d1">Cracking the Math Subject GRE</a></li>
 </ul>
-<p>Advice</p>
+<p><strong>Advice</strong></p>
 <ul>
 <li>Most problems don’t require extensive computations; there is usually a trick that solves it very quickly.</li>
-<li>Time is the most difficult factor, be sure to take timed practice tests.</li>
-</ul>
-<h2 class="mume-header" id="computer-science">Computer Science</h2>
-
-<ul>
-<li>CLRS<br>
-Algorithms</li>
-<li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm">MIT OCW Algorithms Course</a></li>
-<li>Cracking the Coding Interview<br>
-For internships</li>
-<li>Sipser<br>
-Computability, automata, and turing machines.</li>
-<li>Concrete Mathematics, Knuth<br>
-A lot of discrete and combinatorial mathematics.</li>
-<li>Flatland</li>
+<li>Time is the most difficult factor, be sure to take timed practice tests. You have right around two minutes per problem.</li>
+<li>Sign up early, as these exams are often only held a few times per year.</li>
 </ul>
 <hr>
 <h1 class="mume-header" id="fun-stuff">Fun Stuff</h1>
 
-<p>This is mostly just stuff to get you jazzed about what you’re studying!</p>
+<p>Don’t forget to take some time to get excited about what you’re studying!</p>
 <ul>
-<li>Video - Eversion of Spheres: <a href="https://www.youtube.com/watch?v=sKqt6e7EcCs">Part 1</a> and <a href="https://www.youtube.com/watch?v=x7d13SgqUXg">Part 2</a></li>
-<li>Video - <a href="https://www.youtube.com/watch?v=f5liqUk0ZTw">Understanding Tensors</a></li>
-<li>Interactive web page - <a href="http://philogb.github.io/page/hopf/">Hopf Fibration Toy</a></li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> Eversion of Spheres: <a href="https://www.youtube.com/watch?v=sKqt6e7EcCs">Part 1</a> and <a href="https://www.youtube.com/watch?v=x7d13SgqUXg">Part 2</a></li>
+<li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=f5liqUk0ZTw">Understanding Tensors</a></li>
+<li><i class="fa fa-external-link" aria-hidden="true"></i> <a href="http://philogb.github.io/page/hopf/">Hopf Fibration Toy</a></li>
 <li>Reviews of some of the big Math-related Youtubers:
 <ul>
 <li>VSauce - 2/10
@@ -710,7 +920,7 @@ A lot of discrete and combinatorial mathematics.</li>
 </li>
 <li>Mathologer - 9/10
 <ul>
-<li>Rigorous without drowning in technical details</li>
+<li>Rigorous without drowning in technical details, and good topic selection!</li>
 </ul>
 </li>
 <li>PBS Infinite Series - 9/10
@@ -737,24 +947,28 @@ A lot of discrete and combinatorial mathematics.</li>
 <li>The Man Who Knew Infinity (Srinivasa Ramanujan)</li>
 <li>The Imitation Game (Alan Turing)</li>
 <li>Proof</li>
+<li>The Theory of Everything</li>
 </ul>
 </li>
 </ul>
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#advice-for-incoming-math-majors">Advice for Incoming Math Majors</a></li>
-<li><a href="#general-notes-on-resources">General Notes on Resources</a></li>
-<li><a href="#general-advice-on-learning">General Advice on Learning</a></li>
-<li><a href="#specific-advice-on-learning-mathematics">Specific Advice on Learning Mathematics</a></li>
+<li><a href="#advice">Advice</a>
+<ul>
+<li><a href="#for-incoming-math-majors">For Incoming Math Majors</a></li>
+<li><a href="#on-learning-and-being-a-student">On Learning and Being a Student</a></li>
+<li><a href="#on-learning-mathematics-specifically">On Learning Mathematics Specifically</a></li>
+</ul>
+</li>
 <li><a href="#math-course-resources">Math Course Resources</a>
 <ul>
+<li><a href="#general-notes-on-resources">General Notes on Resources</a></li>
 <li><a href="#single-variable-calculus">Single Variable Calculus</a></li>
 <li><a href="#multiviarable-vector-calculus">Multiviarable / Vector Calculus</a></li>
 <li><a href="#linear-algebra">Linear Algebra</a></li>
 <li><a href="#ordinary-differential-equations">Ordinary Differential Equations</a></li>
 <li><a href="#discrete-mathematics">Discrete Mathematics</a></li>
-<li><a href="#survey-of-advanced-math-style-classes">“Survey of Advanced Math”-style classes</a></li>
 <li><a href="#number-theory">Number Theory</a></li>
 <li><a href="#abstract-algebra">Abstract Algebra</a>
 <ul>
@@ -778,8 +992,9 @@ A lot of discrete and combinatorial mathematics.</li>
 </li>
 <li><a href="#general-resources">General Resources</a>
 <ul>
-<li><a href="#math-subject-gre">Math Subject GRE</a></li>
+<li><a href="#extracurricular-math">Extracurricular Math</a></li>
 <li><a href="#computer-science">Computer Science</a></li>
+<li><a href="#the-math-subject-gre">The Math Subject GRE</a></li>
 </ul>
 </li>
 <li><a href="#fun-stuff">Fun Stuff</a></li>
