@@ -372,7 +372,7 @@ Here are some common examples of categories that arise in various contexts, roug
 
 - $\mathbf{Ban}$ (Complete normed spaces)
   - Objects: Banach spaces $B, C$
-  - Morphisms: Bounded linear maps $f: B \rightarrow C$ such that $\Vert f\Vert_{\text{sup}}$ is finite. 
+  - Morphisms: Bounded linear maps $f: B \rightarrow C$ such that $\Vert f\Vert_{\text{sup}}$ is finite.
     - If $B=C$, these are usually referred to as *bounded linear operators*
   - Isomorphisms: Bounded linear bijective maps with bounded linear inverses.
 
@@ -386,7 +386,7 @@ Here are some common examples of categories that arise in various contexts, roug
 
 - $\mathbf{Hilb}$ (Complete inner product spaces)
   - Objects: Hilbert Spaces $\mathcal{H}, \mathcal{K}$
-  - Morphisms:  Bounded linear maps $T: \mathcal{H} \rightarrow \mathcal{K}$ such that $|| T ||_{sup}$ is finite.
+  - Morphisms:  Bounded linear maps $T: \mathcal{H} \rightarrow \mathcal{K}$ such that $\Vert T \Vert_{sup}$ is finite.
   - Isomorphisms: Bounded linear maps with bounded linear inverses.
 
   *Notes*: It might seem a bit simplistic at first to characterize something like a Hilbert space as essentially an "enriched vector space", but this turns out to be reflected in its categorical structure - the forgetful functor from $\mathbf{Hilb}$ to $\mathbf{Vec}$ given by forgetting the inner product is **faithful** (the categorical analog of "surjective" for normal functions)
