@@ -12,13 +12,13 @@ Category Theory was conceived (or invented, or discovered; whichever you prefer)
 
 One of Eilenberg and Mac Lane's motivations was that it was (and still is!) common among mathematicians to refer to certain constructions as "natural" and "canonical" - broadly speaking, these terms are used to denote constructions that were somehow "choice-free". For example, one might want to study vector spaces without explicitly choosing a basis vectors. In this way, one can discover properties that don't actually *depend* on a particular frame of reference, and in some sense are more "universal" and intrinsic to the object being studied.
 
-In particular, Eilinberg and Mac Lane wanted to formalize the notion of a **natural transformation** and things that were "naturally isomorphic."
+In particular, Eilenberg and Mac Lane wanted to formalize the notion of a **natural transformation** and things that were "naturally isomorphic."
 
 ### Interlude - What does "natural" mean?
 
 ----
 
-A canonical example from mathematics is that, given a finite-dimensional vector space $V$ over a field $k$ (you can just take $k=\mathbb{R} $ here if you'd like), one can look at it's *dual space*, denoted $V^*$, which is the space of all functions $f : V \rightarrow k$ that take vectors in $V$ as input and output scalars in the base field $k$. It turns out that $V^*$ is also a vector space, with the same dimension as $V$, and one result you might remember from linear algebra is that $\text{dim} V = n \Rightarrow V \cong R^n$ - that is, all vector spaces of finite dimension $n$ are indistinguishable (as vector spaces) from $\mathbb{R}^n$.
+A canonical example from mathematics is that, given a finite-dimensional vector space $V$ over a field $k$ (you can just take $k=\mathbb{R}$ here if you'd like), one can look at it's *dual space*, denoted $V^*$, which is the space of all functions $f : V \rightarrow k$ that take vectors in $V$ as input and output scalars in the base field $k$. It turns out that $V^*$ is also a vector space, with the same dimension as $V$, and one result you might remember from linear algebra is that $\text{dim} V = n \Rightarrow V \cong R^n$ - that is, all vector spaces of finite dimension $n$ are indistinguishable (as vector spaces) from $\mathbb{R}^n$.
 
 In particular, we have $\text{dim}~V^* = n$, so $V^* \cong R^n \cong V$. So $V$ is isomorphic to its dual.
 
@@ -30,7 +30,7 @@ So $V$ is isomorphic to $V^*$, and it is also isomorphic to $V^{**}$.  However, 
 
 This idea of 'naturality" is part of what category theory sets out to make precise.
 
-A secondary motivation was to to abstract away properties that are really only a result of some particular structure or construction, and don't actually have much to do with the specific kind of object you're working with. (If you've programmed much, the analog here would be "refactoring" commonly used pieces of code into a more general interface.)
+A secondary motivation was to abstract away properties that are really only a result of some particular structure or construction, and don't actually have much to do with the specific kind of object you're working with. (If you've programmed much, the analog here would be "refactoring" commonly used pieces of code into a more general interface.)
 
 A few such constructions would be things like products or quotients of objects, which are ubiquitous in mathematics. With products, for example, it is possible to construct a product of sets (which have very little structure), but we can also construct a product of vector spaces (which have a very rich structure). It's then natural to ask, what commonalities do these constructions share? Which properties of a product of vector spaces are due to them being vector spaces, and which are just a result of its construction as a product? This is another area where category theory shines; notions such as products and quotients can be described in terms of *universal properties*, which pay no heed to what the underlying objects really are at all.
 

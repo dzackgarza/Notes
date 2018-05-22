@@ -262,7 +262,7 @@ You can always triangulate a space by triangulating something homeomorphic, so f
 
 ![1513064067523](1513064067523.png)
 
-## Mayer-Vietoris
+# Mayer-Vietoris
 
 Given $A,B \subset X$ such that $A^\circ \cup B^\circ = X$, there is a long exact sequence in homology:
 

@@ -1,6 +1,3 @@
-# Homotopy
-- $f\homotopic g \implies f_* = g_*$ in homology.
-
 # The Universal Coefficient Theorems
 For changing coefficients from $\ZZ$ to $G$. Formulas:
 $$
@@ -52,10 +49,12 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 - $(\wait) \tensor_\ZZ \ZZ = \id$
 - $\ZZ_m \tensor \ZZ_n = \ZZ_d$
 - $A\tensor B = 0 \implies A = 0 ~\or~ B = 0$
+- $(\oplus A) \tensor B = \oplus(A \tensor B)$
+- $\ZZ_n \tensor A = a/nA$
 
 ## Properties of Hom
 - $\hom(\oplus A_i, B) = \prod \hom(A_i, B)$
-- $\hom(A,\opus B_i) = \prod \hom(A, B_i)$
+- $\hom(A,\bigoplus B_i) = \prod \hom(A, B_i)$
 - (Contravariant, Covariant)
 - Exact over vector spaces
 
@@ -80,19 +79,19 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 ## Hom/Ext/Tor Tables
 $\hom$    | $\ZZ_m$  | $\ZZ$  | $\QQ$
 --|---|---|--
-$\ZZ_n$   | $\ZZ_d$  | $0$    | $0$  
+$\ZZ_n$   | $\ZZ_d$  | $0$    | $0$
 $\ZZ$     | $\ZZ_m$  | $\ZZ$  | $\QQ$
 $\QQ$     | $0$      | $0$    | $\QQ$
 
 $\tor$    | $\ZZ_m$ | $\ZZ$ | $\QQ$
 --|---|---|--
-$\ZZ_n$   | $\ZZ_d$ | $0$   | $0$  
+$\ZZ_n$   | $\ZZ_d$ | $0$   | $0$
 $\ZZ$     | $0$     | $0$   | $0$
 $\QQ$     | $0$     | $0$   | $0$
 
 $\ext$    | $\ZZ_m$   | $\ZZ$                 | $\QQ$
 --|---|---|--
-$\ZZ_n$   | $\ZZ_d$   | $\ZZ_n$               | $0$  
+$\ZZ_n$   | $\ZZ_d$   | $\ZZ_n$               | $0$
 $\ZZ$     | $0$       | $0$                   | $0$
 $\QQ$     | $0$       | $\mathcal{A_p}/\QQ$   | $0$
 
@@ -109,8 +108,6 @@ Thins that behave like "the identity map":
 For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/torext.pdf).
 
 -----
-
-# Lefshectz Number
 
 # Low Dimensional Homology Examples
 
@@ -142,19 +139,7 @@ $$
 - $H_n(X, A) \cong H_n(X/A)$
 - $H_n(X) = 0 \iff X$ has no $n\dash$cells.
 - $C^0 X = \pt \implies d_1: C^1 \to C^0$ is the zero map.
-- $H^*(X; \FF) = \hom(X,\FF)$ for a field.
-
-## CW Complexes
-- $S^1 = e^0 + e^1 \\= 1+x$
-- $S^2 = e^0 + e^2 \\= 1+x^2$
-- $S^n = e^0 + e^n \\= 1+x^n$
-- $S^n = 2e^0 + 2e^1 + 2e^2 + \cdots + 2e^n \\= 2(1+x+x^2+\cdots x^n)$
-- $\RP^n = e^0 + e^1 + e^2 + \cdots + e^n \\= 1+x+x^2+\cdots x^n$
-- $\CP^n = e^0 + e^2 + e^4 + \cdots e^{2n} \\= 1 + x^2 +x^4 + \cdots x^{2n}$
-- $\KK = e^0 + 2e^1 + e^2$
-- $T^2 = e^0 + 2e^1 + e^2 \\ = 1 + 2x + x^2$
-- $T^3 = e^0 + 3e^1 + 3e^2 + e^3 \\= 1 + 3x + 3x^2 + x^3$
-- To get cell complex of $A\cross B$, just write each cell complex as a polynomial and multiply.
+- $H^*(X; \FF) = \hom(H_*(X; \FF),\FF)$ for a field.
 
 ## Constructing a CW Complex with Prescribed Homology
 - Given $G = \bigoplus G_i$, and want a space such that $H_i X = G$? Construct $X = \bigvee X_i$ and then $H_i (\bigvee X_i) = \bigoplus H_i X_i$. Reduces problem to: given a group $H$, find a space $Y$ such that $H_n(Y) = G$.
@@ -164,16 +149,12 @@ $$
 # Long Exact Sequences
 $$
 \begin{align}
-%
 A \subseteq X \implies
 &A \to X \to X/A \mapsvia{\delta} \cdots \\
-%
 X = A\cup B \implies
 &A\cap B \to A \oplus B \to A \cup B \mapsvia{\delta} \cdots\\
-%
 (X,A) \implies
 &A \to X \to X,A \mapsvia{\delta} \cdots\\
-%
 A\to B \to C \implies
 & \tor(A, G) \to \tor(B, G) \to \tor(C, G) \mapsvia{\delta_\downarrow} \cdots \\
 A\to B \to C \implies
@@ -254,3 +235,45 @@ $$
 \psi(\sigma \cap \phi) = (\phi \cup \psi)(\sigma)\\
 <\phi\cup \psi, \sigma> = <\psi, \sigma \cap \phi>
 $$
+
+# Intermediate Results
+* Covering Space Fundamental Group
+* Van Kampen Theorem
+* Useful long exact sequences
+  $${ \cdots \to H^{i}(X)\to H^{i}(U)\oplus H^{i}(V)\to H^{i}(U\cap V)\mapsvia{\delta} H^{i+1}(X)\to \cdots }$$
+* Useful Short Exact Sequences
+	- Note that $\ext_R^0 = \hom_R$ and $\tor_R^0 = \tensor_R$
+  $$
+	{\displaystyle 0\to \tor_\ZZ^0 (H_{i}(X;\ZZ), A)\,{\to }\,H_{i}(X;A)\to \operatorname {Tor}_\ZZ^1 (H_{i-1}(X;\ZZ ),A)\to 0.}\\
+	{ 0\to \ext_{\ZZ}^{1}(H_{i-1}(X; \ZZ),A)\to H^{i}(X; A)\to \ext_{\ZZ}^{0}(H_{i}(X; \ZZ),A) \to 0.} \\
+	0\to \bigoplus _{{i+j=k}}H_{i}(X;R)\otimes _{R}H_{j}(Y;R)\to H_{k}(X\times Y;R)\to \bigoplus _{{i+j=k-1}}{\mathrm  {Tor}}_{1}^{R}(H_{i}(X;R),H_{j}(Y;R))\to 0
+	$$
+* Useful shortcuts
+	* If $A$ is a field, then $$H^i(X; A) \cong \hom(H_i(X; A), A)$$
+	* If $R$ is a freely generated free $R\dash$module (or a PID or a field), then
+		$$ H_{k}(X\times Y;F) \cong \bigoplus _{{i+j=k}}H_{i}(X;F)\otimes H_{j}(Y;F)$$
+	* If $X$ is a finite CW complex then
+		$$H^i(X; \ZZ) = F(H_i(X; \ZZ)) \oplus T(H_{i-1}(X; \ZZ))$$
+
+* Seifert-van Kampen Theorem
+	-
+* Whitehead Theorem
+	- A map $X \mapsvia{f} Y$ on CW complexes that is a weak homotopy equivalence (inducing isomorphisms in homotopy) is in fact a homotopy equivalence.
+* Hurewicz Theorem
+	- The Hurewicz map on an $n-1\dash$connected space $X$ is an isomorphism $\pi_{k\leq n}X \to H_{k\leq n} X$.
+* Poincare Duality
+	- If $M^n$ is a **closed oriented manifold without boundary**, then $H^k(M^n; G) \cong H_{n-k}(M^n; G)$.
+- Cellular approximation theorem
+	- Any continuous map between CW complexes is homotopy equivalent to a cellular map.
+	- Uses:
+		- $\pi_{k\leq n}S^n = 0$
+		- $\pi_n(X) \cong \pi_n(X^{(n)})$
+
+# Major Results
+* Lefschetz Fixed Point Theorem
+	- If $\Lambda_f \neq 0$ then $f$ has a fixed point, where $X\selfmap_f$ and $\Lambda_f = \sum_{k \geq 0} (-1)^k ~\mathrm{Tr}(H_k(X; \QQ) \selfmap_{f_*})$.
+* Brouwer Fixed Point Theorem
+* Hairy Ball Theorem
+	- There is no non-vanishing tangent vector field on even dimensional spheres.
+* Borsuk-ulam Theorem
+* Ham Sanwich Theorem
