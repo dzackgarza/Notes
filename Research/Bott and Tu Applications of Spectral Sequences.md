@@ -77,8 +77,8 @@
   - $\Omega S^3 \to PS^3 \to S^3$:
     - Can compute $H^*(\Omega S^n)$
 - $Y \into X\cross Y \into X$ (not used here)
+-
 # Fibrations
-
 - $SO_{n-1}(R) \to SO_n(R) \to S^{n-1}$
 - $S^n \mapsvia{E} \Omega S^{n+1} \mapsvia{H} \Omega S^{2n+1}$
 - $S^1 \to S^{2n+1} \to \CP^n$

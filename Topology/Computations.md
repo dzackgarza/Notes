@@ -52,7 +52,18 @@
 | $\CP^2$                     | $\pi_*\CP^\infty \times \pi_* S^5$           | $H_*S^2 \times H_* S^4$                                          | $e^0 + e^2 + e^4$                                | $\ZZ[{}_{2}x]/({}_2x^{3})$                                      |
 | $\CP^n, n \geq 2$           | $\pi_*\CP^\infty \times \pi_*S^{2n+1}$[^cpn] | $\prod_{i=1}^n H_* S^{2i}$                                       | $\sum_{i=1}^n e^{2i}$                            | $\ZZ[{}_{2}x]/({}_2x^{n+1})$                                      |
 | Mobius Band [^mobius]       | $\pi_* S^1$                                  | $H_* S^1$                                                        | $e^0 + e^1$                                      |                                       |
-| Klein Bottle                | $K(\ZZ\ast\ZZ/ bab^{-1}a, 1)$[^piklein]      | $H_*S^n \times H_* \RP^\infty$                                   | $e^0 + 2e^1 + e^2$                               |                                       |
+| Klein Bottle                | $K(\ZZ\semidirect_{x \mapsto -x} \ZZ, 1)$[^piklein]      | $H_*S^1 \times H_* \RP^\infty$                                   | $e^0 + 2e^1 + e^2$                               |                                       |
+
+
+# Euler Characteristics
+- Only surfaces with positive $\chi$:
+	- $\chi S^2 = 2$
+	- $\chi \RP^2 = 1$
+	- $\chi B^2 = 1$
+- Manifolds with zero $\chi$
+	- $T^2, K, M, S^1 \cross I$
+- Manifolds with negative $\chi$
+	- $\Sigma_{g \geq 2}$ by $\chi(X) = 2-2g$.
 
 
 # Useful Facts and Techniques
@@ -71,6 +82,7 @@
 	* $X$ simply connected implies $\pi_k(X) \cong H_k(X)$ up to and including the first nonvanishing $H_k$
 	* $H_1(X) = \pi_1 X / [\pi_1X, \pi_1X]$, the abelianization.
 * General mantra: homotopy plays nicely with products, homology with wedge products.[^pullbacks]
+	> In general, homotopy groups behave nicely under homotopy pull-backs (e.g., fibrations and products), but not homotopy push-outs (e.g., cofibrations and wedges). Homology is the opposite.
 	* $\pi_k\prod X = \prod \pi_k X$ by LES.[^homotopyproduct]
 	* $H_k \prod X \neq \prod H_k X$ due to torsion.
 		* Nice case: $H_k (A\cross B) = \prod_{i+j=k} H_i A \tensor H_j B$ by Kunneth when all groups are torsion-free.[^kunneth]
@@ -156,6 +168,6 @@ $$H_n(\prod_{j=1}^k X_j) = \bigoplus_{\mathbb{x} \in \mathcal{P}(n,k)} \bigotime
 [^rpn]: Take the universal double cover $S^n \surjects^{\times 2} \RP^n$ to get equality in $\pi_{i\geq 2}$.
 [^cpn]: Use $\CP^n = S^{2n+1} / S^1$
 [^circwedge]: ?
-[^piklein]: Use the fact the $\tilde K = \RR^2$.
+[^piklein]: Alternatively, the fundamental group is $\ZZ\ast\ZZ/ bab^{-1}a$. Use the fact the $\tilde K = \RR^2$.
 [^mobius]: Uses the fact that $M \homotopic S^1$ by deformation-retracting onto the center circle.
 [^punctsphere]: Use the fact that $D(1, S^n) \cong \RR^n$ and thus $D(k, S^n) \cong D(k-1, \RR^n) \cong \bigvee^{k-1} S^1$

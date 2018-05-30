@@ -1,6 +1,6 @@
 # 18-02-14: Adjoint and Classifying Spaces
 
-In general, we define the classiyfing space $K(G, n)$ (also known as an Eilenberg-MacLane space) to be a space $X$ such that $\pi_n(X) = G$ and for $k\neq n,~\pi_k(X) = 0$.
+In general, we define the classifying space $K(G, n)$ (also known as an Eilenberg-MacLane space) to be a space $X$ such that $\pi_n(X) = G$ and for $k\neq n,~\pi_k(X) = 0$.
 
 *Note: in my notation, I will simply write this as $\pi_*(X) = G\delta_n$*
 

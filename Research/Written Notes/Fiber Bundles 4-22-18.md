@@ -60,11 +60,11 @@ $$ \RR^1 \to E \to S^1$$
 
 That is, the total spaces that occur when a one-dimensional real vector space (i.e. a real line) is chosen at each point of $S^1$. One possibility is the trivial bundle $E \cong S^1 \cross \RR \cong S^1 \cross I^\circ \in \text{DiffTop}$, which is an "open cylinder":
 
-![cylinder](../../../../images/2018/05/cylinder.png)
+![cylinder](../../../../../images/2018/05/cylinder.png)
 
 But another possibility is $E \cong M^\circ \in\text{DiffTop}$, an open Mobius band:
 
-![mobius band](../../../../images/2018/05/mobius-band.png)
+![mobius band](../../../../../images/2018/05/mobius-band.png)
 
 Here we can take the base space $B$ to be the circle through the center of the band; then every open neighborhood $U$ of a point $b\in B$ contains an arc of the center circle crossed with a vertical line segment that misses $\del M$. Thus the local picture looks like $S^1 \cross I^\circ$, while globally $M\not\cong S^1 \cross I^\circ \in \text{Top}$.^[Due to the fact that, for example, $M$ is nonorientable and orientability distinguishes topological spaces up to homeomorphism.]
 
@@ -149,10 +149,10 @@ S^1 \to E \mapsvia{\pi} S^1
 $$
 
 There is a trivial bundle, when $E = S^1 \cross S^1 = T^2$, the torus:
-![torus bundle](../../../../images/2018/05/torus-bundle.png)
+![torus bundle](../../../../../images/2018/05/torus-bundle.png)
 
 There is also a nontrivial bundle, $E = K$, the Klein bottle:
-![Klein bottle](../../../../images/2018/05/klein-bottle.png)
+![Klein bottle](../../../../../images/2018/05/klein-bottle.png)
 
 As in the earlier example involving the Mobius strip, since $K$ is nonorientable, $T^2 \not\cong K$ and there are thus at least two distinct bundles of this type.
 
@@ -216,7 +216,7 @@ So in other words, isomorphism classes of principal $G\dash$ bundles over a base
 
 $$
 [X, \Gr(n, \RR)] \cong \theset{\text{isomorphism classes of rank $n$ $\RR\dash$vector bundles over $X$}}
-$$\
+$$
 
 It is also the case that every such vector bundle is a pullback of the principal bundle
 $$

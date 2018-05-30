@@ -57,7 +57,7 @@ typora-copy-images-to:  .
 
    $f: X \into \theset{x_0}$ and $g: \theset{x_0} \into X$
    such that
-   $f\compose g \homotopic \id_{\theset{x_0}}$ and $g\compose f \homotopic \id_X$.
+   $f\circ g \homotopic \id_{\theset{x_0}}$ and $g\circ f \homotopic \id_X$.
 
    Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = x_0$ for every $x\in X$.)  But then $(g\circ f)(x) = g(x_0) = y_0$ for some constant $y_0 \in X$, so $g\circ f$ is a constant map. By assumption, $g\circ f \homotopic \id_X$, so the identity is homotopic to a constant map.
 
@@ -74,7 +74,7 @@ typora-copy-images-to:  .
 
    Then consider the subspace $U = \theset{(1/2, y) \mid y \in [0,1]} \subset M$. Claim: $U \cong \theset{*} \cross S^1$ for some point $*$.
 
-   $U$ can be written $\theset{1/2} \cross (I/\sim)$, and since $(1/2, 0) \sim (1/2,1)$, we have $I/ \sim =  I /\boundary I \cong S^1$, so $U \cong \theset{1/2}\cross S^1$ as desired (taking $* = \frac{1}{2}$).
+   $U$ can be written $\theset{1/2} \cross (I/\sim)$, and since $(1/2, 0) \sim (1/2,1)$, we have $I/ \sim =  I /\bd I \cong S^1$, so $U \cong \theset{1/2}\cross S^1$ as desired (taking $* = \frac{1}{2}$).
 
    However, we can define a homotopy from $M$ onto $U$, in the form of a deformation retract.
 
@@ -154,52 +154,54 @@ typora-copy-images-to:  .
 
    Homeomorphisms: ignore ligatures!!
 
-       1. $\theset{A, R}$
-         Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
+   1. $\theset{A, R}$
+     Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
 
-       2. $\theset{D, O, S^1}$
-         These all have no single point that can be removed to disconnect the space.
+   2. $\theset{D, O, S^1}$
+     These all have no single point that can be removed to disconnect the space.
 
-       3. $\theset{B,S^1 \vee S^1}$
-          Remove point at junction
+   3. $\theset{B,S^1 \vee S^1}$
+      Remove point at junction
 
-       4. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
-         These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
+   4. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$
+     These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
 
-       5. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
-         These all have a point that can be removed to yield 3 connected components homeomorphic to $I$. This is the "pasting" point in the vee.
+   5. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$
+     These all have a point that can be removed to yield 3 connected components homeomorphic to $I$. This is the "pasting" point in the vee.
 
-       6. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
-         Can remove **two** points to disconnect each into **five** components.
+   6. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$
+     Can remove **two** points to disconnect each into **five** components.
 
-       7. $\theset{P, Q, S^1 \vee [0,1]}$
-         Both contain a nontrivial loop.
+   7. $\theset{P, Q, S^1 \vee [0,1]}$
+     Both contain a nontrivial loop.
 
-       8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
-         Can remove **one** point to separate into **four** components.
+   8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$
+     Can remove **one** point to separate into **four** components.
 
 8. **Main Idea**: Show that both spaces are a deformation retract of the same space. (See Hatcher, Proposition 0.18, p. 25)
 
    Suppose we have the following maps
 
-   $f: S^1 \into X$
-
-   $g: S^1 \into X​$
+   $$
+	 f: S^1 \into X\\
+   g: S^1 \into X
+	 ​$$
 
    where $f \homotopic g$. Then there exists a homotopy
 
-   $H: S^1 \cross I \into X$
+   $$H: S^1 \cross I \into X$$
 
    such that $H(z, 0) = f(z)$ and $H(z,1) = g(z)$.
 
    Then define
-   $P \definedas X \coprod_f B^2$ and
-
-   $Q \definedas X \coprod_g B^2$
+   $$
+	 P \definedas X \coprod_f B^2\\
+   Q \definedas X \coprod_g B^2
+	 $$
 
    We want to that $P$ and $Q$ are homotopy-equivalent. In order to do so, we will construct a larger space which deformation retracts onto both $P$ and $Q$, which is a homotopy equivalence.
 
-   With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \boundary B^2$. In particular, $S^1$ is a subspace of $B^2$.
+   With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \bd B^2$. In particular, $S^1$ is a subspace of $B^2$.
 
    Claim: Both $P​$ and $Q​$ are subspaces of $R​$.
    Since $H(z, 0) = f(z)$. So considering $X \coprod_H B^2 \times \theset{0} \cong X \coprod_f B^2 = P$. A similar argument holds at the point $1\in I$. (*Not a strong argument*)
@@ -303,8 +305,6 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
    Proof: If $F^n \cong F^m$, then $\ZZ^n \cong \ZZ^m$. But then tensor both sides with $\ZZ_2$ over $\ZZ$, yielding $\ZZ^n \otimes_\ZZ \ZZ_2 \cong Z^m \otimes_\ZZ \ZZ_2$. But the LHS is isomorphic to $(\ZZ/2\ZZ)^n$, while the RHS is isomorphic to $(\ZZ/2\ZZ)^m$. *(Why?)*
    These are both finite groups - there are 2 elements in $\ZZ/2\ZZ$, so the first has $2^n$ elements and the latter has $2^m$ elements. But if $2^n=2^m$, then $n=m$. The lemma follows from the contrapositive.
 
-   ​
-
    Now we have all we need - let $X = S^2 - \theset{p_1, p_2}$ and $Y = S^3 - \theset{q_1, q_2}$. Then by the previous problems, $X \homotopic S^1$ and $Y \homotopic S^2$, so if $S^2 \cong S^3$ then $X \homotopic Y$ and $S^1 \homotopic S^2$. But $\pi_1(S^1) = \ZZ$ and $\pi_1(S^2) = 0$, so $S^1 \not\simeq S^2$, a contradiction.
 
 8. Here we go:
@@ -316,7 +316,7 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
 
 9. From complex analysis, $W(f(\alpha(t))) = Z_f - P_f = 4 - 1 = 3$. No idea how to approach with induced maps on the fundamental group of $S^1$ or $\CC - \theset{0}$.
 
-10. Let $M$ be the mobius strip, identified as $I\cross I / (t,0) \sim (1-t, 1)$, and let $x_0 = [(1, \frac{1}{2})] = [(0, \frac{1}{2})]$. Let $X$ be the line $(t, \frac{1}{2})$ for $t\in I$; by the identification of the endpoints this is actually a copy of $I / \boundary I \cong S^1$ inside of $M$ representing the middle circle of the strip. But then $M$ deformation retracts onto $S^1$ by just moving every point in $I\cross I$ horizontally towards this line, so $M \homotopic S^1$ and $\pi_1(M) \cong \ZZ$, generated by the loop described which we'll call $\alpha$.
+10. Let $M$ be the mobius strip, identified as $I\cross I / (t,0) \sim (1-t, 1)$, and let $x_0 = [(1, \frac{1}{2})] = [(0, \frac{1}{2})]$. Let $X$ be the line $(t, \frac{1}{2})$ for $t\in I$; by the identification of the endpoints this is actually a copy of $I / \bd I \cong S^1$ inside of $M$ representing the middle circle of the strip. But then $M$ deformation retracts onto $S^1$ by just moving every point in $I\cross I$ horizontally towards this line, so $M \homotopic S^1$ and $\pi_1(M) \cong \ZZ$, generated by the loop described which we'll call $\alpha$.
 
   To see what the boundary curve is, label the corners $a,b$ with the suitable identification. Then take a path from $a$ to $b$ on the right-hand boundary of the square. By sliding this through $I\cross I$, this is homotopic $\alpha$. But similarly, the path from $b$ to $a$ on the LHS of the square is also homotopic to $\alpha$, so the loop $a\into b \into a \homotopic \alpha^2$, so if $[\alpha] = 1 \in \pi_1(M)$, then $[a\into b\into a] = 2$.
 
@@ -330,13 +330,13 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
 
 1. Any covering map $p: S^1\cross S^1 \into \RP^2$ would induce an injection on fundamental groups, but $\pi_1(T) = \ZZ^2$ and $\pi_1(\ZZ_2)$ - but there are no homomorphisms between these groups. Why? One of them has an element of order 2, the other does not.
 
-2. Theorem: if $M_g \surjective M_h$ is an $n-$sheeted covering space, then $g = n(h-1) +1$.
+2. Theorem: if $M_g \surjects M_h$ is an $n-$sheeted covering space, then $g = n(h-1) +1$.
 
-   ![Ink DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk DrawingsInk Drawings](file:///C:/Users/Zack/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
+   ![](file:///C:/Users/Zack/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
 
 3. Draw CW square for $T$ and cut down the center to see two copies of $K$.
 
-4. Let $p: \tilde G \surjective G$ be such a covering, $a,b\in \tilde G$, we then want to show that $p(a)p(b) = p(a\star b)$ for some group operation $\star$ which we need to construct.
+4. Let $p: \tilde G \surjects G$ be such a covering, $a,b\in \tilde G$, we then want to show that $p(a)p(b) = p(a\star b)$ for some group operation $\star$ which we need to construct.
    ​
 
    Pick a basepoint $x\in G$ and any point $\tilde x \in p^{-1}(x)$. Since $\tilde G$ is path connected, pick two paths $\alpha, \beta$ from $\tilde x$ to $a,b$ respectively.
@@ -348,7 +348,7 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
    $p(a\star b) = p(\tilde f(1)) = f(1) = (p\circ\alpha)(1)\cdot (p\circ\beta)(1) = p(a)p(b)$.
    (Need to show this is continuous, and doesn't depend on $\alpha,\beta$?)
 
-5. Since $T^n = \prod_nS^1$, we have $\pi_1(T^n) = \prod_n \pi_1(S^1) = \ZZ^n$. We can also construct a cover $p:\RR^n \into T^n$ by just taking $\RR \surjective S^1$ the usual cover in each coordinate, yielding the covering space $\tilde X = \RR^n$ over $X = T^n$.
+5. Since $T^n = \prod_nS^1$, we have $\pi_1(T^n) = \prod_n \pi_1(S^1) = \ZZ^n$. We can also construct a cover $p:\RR^n \into T^n$ by just taking $\RR \surjects S^1$ the usual cover in each coordinate, yielding the covering space $\tilde X = \RR^n$ over $X = T^n$.
 
    By Hatcher (prop 4.1), the induced maps $p_*^i: \pi_i(\tilde X) \into \pi_i(X)$ is an isomorphism for $i \geq 2$. But $\pi_i(\RR^n) = 0$ for $i \neq 0$, so by this isomorphism $\pi_i(T^n) = i \geq 2$.
 
@@ -440,3 +440,223 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
    4. $S^2 \union_f D^2$, where $f$ attaches to the equator
 
    5. $T\union_f D^2$, where $f$ attaches inside the torus
+
+
+	 # Mayer Vietoris Problems
+
+	 # $\RP^2$
+	 We start with a few known facts. Let $A=M$, the Mobius strip, and $B= D^2$, the solid disk.
+
+	 - $\RP^2 = M \disjoint_\del D^2$
+	 - $H_*(M) = H_*(S^1)$, by a deformation retract of $M$ onto its center circle.
+	 - $H_*(D^2) = \ZZ\delta_0$
+	 - $H_*(S^1)= \ZZ(\delta_0 + \delta_1)$
+	 - $M \intersect D^2 = \del M = S^1$
+
+	 From Mayer-Vietoris, we have
+
+	 ```latex {cmd:true, hide:false, run_on_save:true}
+	 \documentclass[crop, tikz]{standalone}
+	 \usepackage{tikz}
+	 \usepackage{dsfont}
+	 \usepackage{amsmath, amsthm, amssymb}
+	 \usetikzlibrary{matrix, cd}
+	 \begin{document}
+
+	 \begin{tikzcd}
+	  &  &  &  & \cdots 0 \arrow[lllldd, out=0, in=-180, "\delta_3"'] \\
+	  &  &  &  &  \\
+	 H_2 \partial M \arrow[rr] \arrow[rr, "{(i^*, -j^*)_2}"] &  & H_2 M \oplus H_2 D^2 \arrow[rr, "(l^* - r^*)_2"] &  & H_2 \mathbb{RP}^2 \arrow[lllldd, "\delta_2"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 H_1\partial M \arrow[rr, "{(i^*, -j^*)_1}"] &  & H_1 M \oplus H_1 D^2 \arrow[rr, "(l^*-r^*)_1"] &  & H_1 \mathbb{RP}^2 \arrow[lllldd, "\delta_1"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 H_0 \partial M \arrow[rr, "{(i^*, -j^*)_0}"] &  & H_0 M \oplus H_0 D^2 \arrow[rr, "(l^* - r^*)_0"] &  & H_0 \mathbb{RP}^2 \arrow[lllldd, "\delta_0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 0 &  &  &  &
+	 \end{tikzcd}
+
+	 \end{document}
+	 ```
+
+	 and plugging in what is known yields
+
+	 ```latex {cmd:true, hide:false, run_on_save:true}
+	 \documentclass[crop, tikz]{standalone}
+	 \usepackage{tikz}
+	 \usepackage{dsfont}
+	 \usepackage{amsmath, amsthm, amssymb}
+	 \usetikzlibrary{matrix, cd}
+	 \begin{document}
+
+	 \begin{tikzcd}
+	  &  &  &  & 0 \arrow[lllldd, out=0, in=-180, "\delta_3"'] \\
+	  &  &  &  &  \\
+	 0 \arrow[rr] \arrow[rr, "{(i^2, -j^2)}"] &  & 0 \oplus 0 \arrow[rr, "l^2 - r^2"] &  & H_2 \mathbb{RP}^2 \arrow[lllldd, "\delta_2"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 \mathbb{Z} \arrow[rr, "{(i^1, -j^1)}"] &  & \mathbb{Z} \oplus 0 \arrow[rr, "l^1-r^1"] &  & H_1 \mathbb{RP}^2 \arrow[lllldd, "\delta_1"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 \mathbb{Z} \arrow[rr, "{(i^0, -j^0)}"] &  & \mathbb{Z} \oplus \mathbb{Z} \arrow[rr, "l^0 - r^0"] &  & H_0 \mathbb{RP}^2 \arrow[lllldd, "\delta_0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 0 &  &  &  &
+	 \end{tikzcd}
+
+	 \end{document}
+	 ```
+
+	 where $i: S^1 \into M$ and $j: S^1 \into D^2$.
+
+	 We can then identify all of the induced maps:
+
+	 - $i^2: H_2 \del M \into H_2 M \implies i^2: 0 \to 0 \implies i^2 = 0$
+	 - $i^1: H_1 \del M \into H_1 M$, i.e. $i^1: \ZZ \to \ZZ$ where $1 \mapsto 2$
+	   - Since $M$ deformation retracts onto its center circle, $H_1 M \cong H_1 S_M$ where $S_M$ is the center circle (homotopies induce isomorphisms on homology). But $H_1 \del M$ is generated by a cycle of edges with includes into $\del M$, which retracts onto a cycle that double covers $S_M$, so this map acts by doubling the generator.
+	 - $i^0: H_0 \del M \into H_0 M$, i.e. $i^0: \ZZ \to \ZZ$
+	 - $j^2: H_2 \del M \to H_2 D^2 \implies j^2: 0 \to 0 \implies j^2 = 0$
+	 - $j^1: H_1 \del M \to H_1 D^2 \implies j^1: \ZZ \to 0 \implies j^1 = 0$
+	 - $j^0: H_0 \del M \to H_0 D^2 \implies j_0: \ZZ \to \ZZ$
+
+	 So we can that the only nontrivial maps are $j^0, i^0, i^1$.
+
+
+
+	 ## Claim: $H_2(\RP^2) = 0$:
+
+	 We consider the portion of the sequence $$\cdots 0 \mapsvia{} H_2{\RP^2} \mapsvia{\delta_2} H_1 \del M \mapsvia{(i^1, -j^1)} H_1M \oplus H_1 D^2 \cdots\\
+	 \cdots 0 \mapsvia{} H_2\RP^2 \mapsvia{\delta_2} \ZZ \mapsvia{(i^1, -j^1)} \ZZ \oplus 0 \cdots$$
+
+	 We will show that $\ker \delta_2 = \im \delta_2 = 0$. By the first isomorphism theorem, we would then have $\frac{H_2 \RP^2}{\ker \delta_2} \cong \im \delta_2$ yielding $\frac{H_2 \RP^2}{0} = H_2 \RP^2 \cong 0$.
+
+	 - *Claim: $\ker \delta_2 = 0$*
+
+	   This follows because it is on the left tail of an exact sequence, where $\ker \delta_2 = \im 0 = 0$.
+
+	 - *Claim: $\im \delta_2 = 0$*
+
+	   $$(i^1, -j^1): H_1 \del M \to H_1 M \oplus H_1 D^2$$ is injective; explicitly, it is the map $$M_2: \ZZ \to \ZZ \oplus 0\\~1\mapsto (2, 0)$$
+
+	   From above, know that $-j^1$ is a zero map, and that $i^1$ doubles each generator. By this explicit construction, it is injective since 0 maps to 0.
+
+	   But then $\ker (i^1, -j^1) = \im \delta_2 = 0$ by exactness.
+
+	 So now we have:
+	 ```latex {cmd:true, hide:false, run_on_save:true}
+	 \documentclass[crop, tikz]{standalone}
+	 \usepackage{tikz}
+	 \usepackage{dsfont}
+	 \usepackage{amsmath, amsthm, amssymb}
+	 \usetikzlibrary{matrix, cd}
+	 \begin{document}
+
+	 \begin{tikzcd}
+	  &  &  &  & 0 \arrow[lllldd, out=0, in=-180, "0"'] \\
+	  &  &  &  &  \\
+	 0 \arrow[rr] \arrow[rr, "{0\times 0}"] &  & 0 \oplus 0 \arrow[rr, "0"] &  & 0 \arrow[lllldd, "0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 \mathbb{Z} \arrow[rr, "{x \mapsto (2x, 0)}"] &  & \mathbb{Z} \oplus 0 \arrow[rr, "l^1-r^1"] &  & H_1 \mathbb{RP}^2 \arrow[lllldd, "\delta_1"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 \mathbb{Z} \arrow[rr, "{(i^0, -j^0)}"] &  & \mathbb{Z} \oplus \mathbb{Z} \arrow[rr, "l^0 - r^0"] &  & H_0 \mathbb{RP}^2 \arrow[lllldd, "\delta_0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 0 &  &  &  &
+	 \end{tikzcd}
+
+	 \end{document}
+	 ```
+
+	 ## Claim: $H_1(\RP^2) = \ZZ_2$
+
+	 Here we are examining this portion of the sequence:
+
+	 $$
+	 \cdots \ZZ \mapsvia{x\mapsto (2x, 0)} H_1 M \oplus H_1 D^2 \mapsvia{l^1 - r^1} H_1 \RP^1 \mapsvia{\delta_1} H_0 \del M \mapsvia{(i^0, -j^0)} H_0 M \oplus H_0 D^2 \cdots\\
+	 \cdots \ZZ \mapsvia{x\mapsto (2x, 0)} \ZZ \oplus 0 \mapsvia{l^1-r^1} H_1 \RP^1 \mapsvia{\delta_1} \ZZ \mapsvia{(i^0, -j^0)} \ZZ \oplus \ZZ\cdots
+	 $$
+
+	 In general, we have the first isomorphism theorem: given any map $f$ we have $\frac{\mathrm{dom}f}{\ker f} \cong \im f$. Here we will take $f = l^1 - r^1$ and identify the necessary components to apply this theorem.
+
+	 - Claim: $\im l^1 - r^1 = H_1 \RP^2$.
+	   - We use the fact that the maps $(i^*, j^*)$ are all injections, so in particular $0 = \ker (i^0, j^0) = \im \delta_1$ by exactness. Consequently $\ker \delta_1 = H_1\RP^1 = \im l^1 - r^1$ by exactness.
+	 - What is $\ker (l^1-r^1)$?
+	   - By exactness, $\ker (l^1 - r^1) = \im (x \mapsto (2x, 0)) = 2\ZZ \oplus 0$
+
+	 By the first isomorphism theorem, we have $\im (l^1-r^1) \cong \frac{\mathrm{dom} (l^1-r^1)}{\ker (l^1-r^1)} = \frac{\ZZ\oplus 0}{2\ZZ \oplus 0} \cong \ZZ_2$.
+
+	 Note that $l^1 - r^1$ is a nontrivial homomorphism from $2\ZZ\cong \ZZ$ to $\ZZ_2$, of which there is only one: the natural quotient map $x \mapsto x \mod 2$.
+
+	 There is also no nontrivial homomorphism from $\ZZ_2 \to \ZZ$, so $\delta_1 = 0$.
+
+	 We now have:
+	 ```latex {cmd:true, hide:false, run_on_save:true}
+	 \documentclass[crop, tikz]{standalone}
+	 \usepackage{tikz}
+	 \usepackage{dsfont}
+	 \usepackage{amsmath, amsthm, amssymb}
+	 \usetikzlibrary{matrix, cd}
+	 \begin{document}
+
+	 \begin{tikzcd}
+	  &  &  &  & 0 \arrow[lllldd, out=0, in=-180, "0"'] \\
+	  &  &  &  &  \\
+	 0 \arrow[rr] \arrow[rr, "{0\times 0}"] &  & 0 \oplus 0 \arrow[rr, "0"] &  & 0 \arrow[lllldd, "0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 \mathbb{Z} \arrow[rr, "{x \mapsto (2x, 0)}"] &  & \mathbb{Z} \oplus 0 \arrow[rr, "x \mapsto x \mod 2"] &  & \mathbb{Z}_2 \arrow[lllldd, "0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 \mathbb{Z} \arrow[rr, "{(i^0, -j^0)}"] &  & \mathbb{Z} \oplus \mathbb{Z} \arrow[rr, "l^0 - r^0"] &  & H_0 \mathbb{RP}^2 \arrow[lllldd, "\delta_0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 0 &  &  &  &
+	 \end{tikzcd}
+
+	 \end{document}
+	 ```
+
+	 ## Claim: $H_0(\RP^2) = \ZZ$
+
+	 Here we examine
+
+
+	 $$
+	 H_1\RP^2 \mapsvia{\delta_1} H_0 \del M \mapsvia{(i^0, j^0)} H_0 M \oplus H_0 D^2 \mapsvia{l^0 - r^0} H_0\RP^2 \mapsvia{\delta_0} 0\\
+	 \ZZ_2 \mapsvia{\delta_1} \ZZ \mapsvia{(i^0, j^0)} \ZZ \oplus \ZZ \mapsvia{l^0 + r^0} H_0\RP^2 \mapsvia{\delta_0} 0
+	 $$
+
+	 Since there is no nontrivial homomorphism from $\ZZ_2 \to \ZZ$, we have $\delta_1 = 0$.
+
+	 We also have $\delta_0 = 0$ and $\ker \delta_0 = H_0 \RP^2 = \im l^0 + r^0$ making $l^0 + r^0$ surjective, so by the first isomorphism theorem we have $H_0 \RP^2 \cong \frac{\ZZ \oplus \ZZ}{\ker l^0 + r^0} = \frac{\ZZ \oplus \ZZ}{\im (i^0, j^0)}$
+
+	 By a similar argument used earlier, the double covering of the boundary circle $\del M$ over $S^1$ yields the map $(i^0, j^0): \ZZ \into \ZZ \oplus \ZZ$ given by $x \mapsto (2x, 2x)$ with
+
+	 ## Summary
+
+	 With all of this information, we finally have
+
+	 ```latex {cmd:true, hide:false, run_on_save:true}
+	 \documentclass[crop, tikz]{standalone}
+	 \usepackage{tikz}
+	 \usepackage{dsfont}
+	 \usepackage{amsmath, amsthm, amssymb}
+	 \usetikzlibrary{matrix, cd}
+	 \begin{document}
+
+	 \begin{tikzcd}
+	  &  &  &  & 0 \arrow[lllldd, out=0, in=-180, "0"'] \\
+	  &  &  &  &  \\
+	 0 \arrow[rr] \arrow[rr, "{0 \mapsto (0,0)}"] &  & 0 \oplus 0 \arrow[rr, "{(0,0)  \mapsto 0}"] &  & 0 \arrow[lllldd, "0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 \mathbb{Z} \arrow[rr, "{x\mapsto (2x, 0)}"] &  & 2\mathbb{Z} \oplus 0 \arrow[rr, "{(x,0) \mapsto x \mod 2}"] &  & \mathbb{Z}_2 \arrow[lllldd, "0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 \mathbb{Z} \arrow[rr, "{x \mapsto (2x, x)}"] &  & 2\mathbb{Z} \oplus \mathbb{Z} \arrow[rr, "{(x,y) \mapsto x-y}"] &  & \mathbb{Z} \arrow[lllldd, "0"', out=0, in=-180] \\
+	  &  &  &  &  \\
+	 0 &  &  &  &
+	 \end{tikzcd}
+
+	 \end{document}
+	 ```
+
+	 And so we find $H_*(\RP^2) = \ZZ \delta_0 + \ZZ_2\delta_1$
+
+	 # Cellular Homology
+
+	 # Degree
+
+	 # UCT
+
+	 # Homological Algebra
