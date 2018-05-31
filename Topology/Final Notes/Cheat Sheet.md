@@ -1,8 +1,5 @@
 
 # Intermediate Results
-* Covering Space Fundamental Group
-* Van Kampen Theorem
-* Kunneth Theorem
 * Useful long exact sequences
   $${ \cdots \to H^{i}(X)\to H^{i}(U)\oplus H^{i}(V)\to H^{i}(U\cap V)\mapsvia{\delta} H^{i+1}(X)\to \cdots }$$
 	$${\cdots \to H_{i}(A)\to H_{i}(X)\to H_{i}(X,A){\stackrel  {\delta }{\to }}H_{{i-1}}(A)\to \cdots }$$
@@ -26,6 +23,7 @@
 	- todo
 * Whitehead Theorem
 	- A map $X \mapsvia{f} Y$ on CW complexes that is a weak homotopy equivalence (inducing isomorphisms in homotopy) is in fact a homotopy equivalence.
+		- Counterexample: individual maps may not work, take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ which have isomorphic homotopy but not homology.
 * Hurewicz Theorem
 	- The Hurewicz map on an $n-1\dash$connected space $X$ is an isomorphism $\pi_{k\leq n}X \to H_{k\leq n} X$.
 - Cellular approximation theorem
@@ -39,15 +37,20 @@
 
 * **Results for Manifolds**
 	- Every $\CC\dash$manifold is canonically orientable.
-	- If $M^n$ is **closed and connected**, then $M^n$ is orientable iff $H_n(X) = \ZZ$ and $H_{\geq n}(X) = 0$.
+	- If $M^n$ is **closed and connected**, then $H_{\geq n}(X) = 0$ and $M^n$ is orientable iff $H_n(X) = \ZZ$.
 	- Poincare Duality
 		- If $M^n$ is a **closed orientable manifold without boundary**, then $H^k(M^n; F) \cong H_{n-k}(M^n; F)$ for a field $F$.
 		- This is a strict implication, so failure of the RHS implies missing conditions on the LHS.
 	- The intersection pairing is nodegenerate modulo torsion.
 	- Lefschet Duality
 		- If $M^n$ is a **closed orientable manifold with boundary** then  $H_k(M^n; \ZZ) \cong H^{n-k}(M^n, \del M^n; \ZZ)$
-	- $M^n$ closed and connected $\implies H_n = \ZZ$ and $\mathbf{T}(H_{n-1}) = 0$
+	- $M^n$ closed, connected, and orientable $\implies H_n = \ZZ$ and $\mathbf{T}(H_{n-1}) = 0$
 	- $M^n$ closed and $n$ odd implies $\chi(M^n) = 0$.
+	- Any map $X \to Y$ with $X$ factors through the orientation cover $\tilde Y_o$.
+		- If $Y$ is non-orientable, this is a double cover.
+	- If $n$ is odd, $\chi(M^n) = 0$ by Poincare Duality.
+	- $M$ is orientable if $\pi_1(M)$ has no subgroup of index 2.
+	- If $M^\text{orientable} \mapsvia{\pi_k} M^\text{non-orientable}$ is a $k\dash$fold cover, then $k$ is even or $\infty$.
 
 
 # Major Results
@@ -84,21 +87,23 @@ $$
 
 # The Kunneth Formula
 $$
-0 \to \bigoplus_j H_j(X; R) \tensor_R H_{i-j}(Y; R) \to H_i(X\cross Y; R) \to \bigoplus_j \tor_1^R(H_j(X; R), H_{i-j-1}(Y; R))
+0 \to \bigoplus_{i+j=k} H_j(X; R) \tensor_R H_{i}(Y; R) \to H_k(X\cross Y; R) \to \bigoplus_{i+j=k-1} \tor_R^1(H_i(X; R), H_{j}(Y; R))
 $$
 
 Non-canonical splitting:
 $$
-H_n (X\cross Y) = \left( \bigoplus_{i+j = n} H_i X \oplus H_j Y\right) \oplus \bigoplus_{i+j = n-1}\tor(H_iX, H_j Y)
+H_k (X\cross Y) = \left( \bigoplus_{i+j = k} H_i X \oplus H_j Y\right) \oplus \bigoplus_{i+j = k-1}\tor(H_iX, H_j Y)
 $$
 
 -----
 
-# Algebra
-- $\QQ \tensor A \cong S^{-1}A$ for $S = \ZZ - \theset{0}$
-
 ## Free Resolutions
+The canonical example:
 - $0 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{\mod m} \ZZ_m \to 0$
+
+Or more generally $0 \to \ker(f) \to F_n \mapsvia{f} G \to 0$ when $G$ has $n$ generators, where $F_n$ denotes the free group.
+
+Every abelian groups has a resolution of this form and length.
 
 ## Computing Tor
 
@@ -116,7 +121,7 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 - $(\wait) \tensor_R R^n = \id$
 - $\bigoplus_i A_i \tensor \bigoplus_j B_j = \bigoplus_i\bigoplus_j(A_i \tensor B_j)$
 - $\ZZ_m \tensor \ZZ_n = \ZZ_d$
-- $\ZZ_n \tensor A = a/nA$
+- $\ZZ_n \tensor A = A/nA$
 
 ## Properties of Hom
 - $\hom_R (\bigoplus_i A_i, \prod B_j) = \bigoplus_i \prod_j \hom(A_i, B_j)$
@@ -198,7 +203,6 @@ $$
 - $\CP^n = \CC^n \coprod \CP^{n-1} = \coprod_{i=0}^n \CC^i$
 
 # Homology Results
-- $H_n M^n = \ZZ \iff M^n$ is orientable.
 - $H_n(\bigvee_\alpha X_\alpha) = \bigoplus_\alpha H_n X_\alpha$
 - $H_n(X, A) \cong H_n(X/A)$
 - $H_n(X) = 0 \iff X$ has no $n\dash$cells.
@@ -213,8 +217,6 @@ $$
 # Long Exact Sequences
 $$
 \begin{align}
-A \subseteq X \implies
-&A \to X \to X/A \mapsvia{\delta} \cdots \\
 X = A\cup B \implies
 &A\cap B \to A \oplus B \to A \cup B \mapsvia{\delta} \cdots\\
 (X,A) \implies
@@ -240,12 +242,9 @@ How to compute:
     eg.
     $$
 \pmatrix{\mathbf1&2&0&2\\0&0&\mathbf1&-1\\0&0&0&\mathbf0} \to \pmatrix{\mathbf1&2&0&2\\0&\mathbf0&0&0\\0&0&\mathbf1&-1\\0&0&0&\mathbf0}\\ \ker = \pmatrix{2\\-1\\0\\0},\pmatrix{2\\0\\-1\\-1}\\
-\im = <a+2b+d,c-d>
+\im = <a+2b+2d,c-d>
     $$
     6. Or look at elementary divisors, say $n_i$, then the image is isomorphic to $\bigoplus n_i \ZZ$
-
-# Manifolds
-- If $M^\text{orientable} \mapsvia{\pi_k} M^\text{non-orientable}$ is a $k\dash$fold cover, then $k$ is even or $\infty$.
 
 
 # Surfaces
@@ -355,4 +354,6 @@ If $M$ is a closed 3-manifold and $K$ is a nullhomologous knot in $M$, then $H_1
 
 Take $M=S^3$, $K$ any knot, then $H_*(S^3 - K) = [\ZZ, \ZZ, 0\rightarrow]$. Follows from MV taking $S^3 = n(K) \cup (S^3-K)$, where $n(K) \homotopic S^1$ and $S^3-K \cap n(K) \homotopic T^2$. (Note $S^3-K$ is a connected, open 3-manifold, so $H^3(S^3-K) =0$).
 
-When covering spaces are involved in any way, try computing Euler characteristics - this sometimes yields nice numerical contstraints.
+When covering spaces are involved in any way, try computing Euler characteristics - this sometimes yields nice numerical constraints.
+
+To show something is not a manifold, try looking at local homology. Can use point-set style techniques like removing points, i.e. $H_1(X, X-\pt)$; this should essentially always yield $\ZZ$by excision arguments.

@@ -14,7 +14,7 @@
 	where $F_i^j$ is the face operator, which acts on a simplicial map $\sigma$ by restriction to the face spanned by $[v_i \ldots v_j]$, i.e. $F_i^j(\sigma) =\restrictionof{\sigma}{[v_i \ldots v_j]}$.
 * Cellular Homology
 * CW Cell
-	- An $n\dash$cell of $X$, say $e^n$, is the image of a map $\Phi: B^6 \to X$. That is, $e^n = \Phi(B^6)$. Attaching an $n\dash$cell to $X$ is equivalent to forming the space $B^n \coprod_f X$ where $f: \del B^n \to X$.
+	- An $n\dash$cell of $X$, say $e^n$, is the image of a map $\Phi: B^n \to X$. That is, $e^n = \Phi(B^n)$. Attaching an $n\dash$cell to $X$ is equivalent to forming the space $B^n \coprod_f X$ where $f: \del B^n \to X$.
 		- A $0\dash$cell is a point.
 		- A $1\dash$cell is an interval $[-1, 1] = B^1 \subset \RR^1$. Attaching requires a map from $S^0 =\theset{-1, +1} \to X$
 		- A $2\dash$cell is a solid disk $B^2 \subset \RR^2$ in the plane. Attaching requires a map $S^1 \to X$.
@@ -28,7 +28,6 @@
 * Chain Map
 	* A map between chain complexes $(C_*, \del_C) \mapsvia{f} (D_*, \del_D)$ is a chain map iff each component $C_i \mapsvia{f_i} D_i$ satsifies $$f_{i-1}\circ\del_{C, i} = \del_{D,i} \circ f_i$$ (i.e this forms a commuting ladder) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chain_map.svg/650px-Chain_map.svg.png)
 * Closed manifold
-* Closed manifold
 	* A manifold that is compact, with or without boundary.
 * Coboundary
 * Cochain
@@ -39,7 +38,6 @@
 	* Every open cover has a finite subcover.
 * Cone
 	* For a space $X$, defined as
-* Cone
 * Contractible
 	* A space is contractible if its identity map is nullhomotopic.
 * Contractible
@@ -48,7 +46,7 @@
 * Cup Product
 	- A map taking pairs ($p\dash$cocycles, $q\dash$cocycles) to $(p+q)\dash$cocyles by
 	$$
-	H^p(X; R) \cross H^q(X; R) \mapsvia{\smile} H^{p+1}(X; R)\\
+	H^p(X; R) \cross H^q(X; R) \mapsvia{\smile} H^{p+q}(X; R)\\
 	(a \cup b)(\sigma) = a(\sigma \circ I_0^p)b(\sigma \circ I_p^{p+q})
 	$$
 	where $\Delta^{p+q} \mapsvia{\sigma} X$ is a singular $p+q$ simplex and $I_i^j$ where $i\leq j \leq p+q$ is an embedding of the simplex $[i \ldots j] \injects \Delta^{p+q}$.
@@ -115,11 +113,25 @@
 
 	If $\hat i = j$ then $\left< \alpha, \beta \right> \in H_0 M = \ZZ$ is the signed number of intersection points.
 * Inverse Limit
+* Intersection Pairing
+	- The pairing obtained from dualizing Poincare Duality to obtain $$\mathrm{F}(H_i M) \tensor \mathrm{F}(H_{n-i}M) \to \ZZ$$
+	Computed as an oriented intersection number between two homology classes (perturbed to be transverse).
+* Intersection Form
+	- The nondegenerate bilinear form cohomology induced by the Kronecker Pairing: $$I: H^k(M_n) \cross H^{n-k}(M^n) \to \ZZ$$
+	where $n=2k$.
+		- When $k$ is odd, $I$ is skew-symmetric and thus a symplectic form.
+		- When $k$ is even (and thus 4 divides $n$) this is a symmetric form.
+		- Satisfies $I(x,y) = (-1)^{k(n-k)} I(y, x)$
 * Kronecker Pairing
+	- A map pairing a chain with a cochain, given by $$H^n(X; R) \cross H_n(X; R) \to R \\ ([\psi, \alpha]) \mapsto \psi(\alpha)$$
+	which is a nondegenerate bilinear form.
 * Kronecker Product
 * Lefschetz duality
 * Lefshetz Number
 * Lens Space
+* Local Degree
+	- At a point $x \in V \subset M$, a generator of $H_n(V, V-\theset{x})$. The degree of a map $S^n \to S^n$ is the sum of its local degrees.
+* Local Orientation
 * Limit
 * Linear Independence
 	* A generating $S$ for a module $M$ is linearly independent if $\sum r_i s_i = 0_M \implies \forall i,~r_i = 0 $ where $s_i\in S, r_i \in R$.
@@ -127,7 +139,7 @@
 	* $H_n(X, X-A; \ZZ)$ is the local homology at $A$, also denoted $H_n(X \mid A)$
 * Local Homology
 * Local orientation of a manifold
-	* At a point $x\in M^n$, a choice of a generator $\mu_x$ of $H_n(M, M - \theset{x}) = \ZZ$
+	* At a point $x\in M^n$, a choice of a generator $\mu_x$ of $H_n(M, M - \theset{x}) = \ZZ$.
 * Long exact sequence
 * Loop Space
 * Manifold
@@ -147,16 +159,24 @@
 * Orientable manifold
 	* A manifold for which an orientation exists, see "Orientation of a Manifold".
 * Orientation Cover
-	* For any manifold $M$, a two sheeted orientable covering space $\tilde M$. $M$ is orientable iff $\tilde M$ is disconnected. Constructed as $$\tilde M = \coprod_{x\in M}\theset{\mu_x \mid \mu_x~ \text{is a local orientation}}$$
+	* For any manifold $M$, a two sheeted orientable covering space $\tilde M_o$. $M$ is orientable iff $\tilde M$ is disconnected. Constructed as $$\tilde M = \coprod_{x\in M}\theset{\mu_x \mid \mu_x~ \text{is a local orientation}}$$
 * Orientation of a manifold
-	* A function $$M^n \to \coprod_{x\in M} H(X \mid \theset{x})\\ x \mapsto \mu_x$$ such that $\forall x \exists N_x$ in which  $\forall y\in N_x$, the preimage of each $\mu_y$ under the map $H_n(M\mid N_x) \surjects H_n(M\mid y)$ is a single generator $\mu_{N_x}$.
+	* A family of $\theset{\mu_x}_{x\in M}$ with local consistency: if $x,y \in U$ then $\mu_x, \mu_y$ are related via a propagation.
+		- Formally, a function $$M^n \to \coprod_{x\in M} H(X \mid \theset{x})\\ x \mapsto \mu_x$$ such that $\forall x \exists N_x$ in which  $\forall y\in N_x$, the preimage of each $\mu_y$ under the map $H_n(M\mid N_x) \surjects H_n(M\mid y)$ is a single generator $\mu_{N_x}$.
+	- TFAE:
+		- $M$ is orientable.
+		- The map $W: (M, x) \to \ZZ_2$ is trivial.
+		- $\tilde M_o = M \coprod \ZZ_2$ (two sheets).
+		- $\tilde M_o$ is disconnected
+		- The projection $\tilde M_o \to M$ admits a section.
 * Oriented manifold
 * Path
 * Path Lifting Property
 * Perfect Pairing
-* Perfect Pairing
+	- A pairing alone is an $R\dash$bilinear module map, or equivalently a map out of a tensor product since $p: M\tensor_R N \to L$ can be partially applied to yield $\phi: M \to L^N = \hom_R(N, L)$. A pairing is **perfect** when $\phi$ is an isomorphism.
+		- Example: $\det_M: k^2 \cross k^2 \to k$
 * Poincare Duality
-	* For a closed, orientable $n\dash$manifold, the isomorphism of the map $$ D: H^k(M; R) \to H_{n-k}(M; R) \\ D(\alpha) = [M] \frown \alpha$$
+	* For a closed, orientable $n\dash$manifold, following map $[M] \frown \wait$ is an ismorphism: $$ D: H^k(M; R) \to H_{n-k}(M; R) \\ D(\alpha) = [M] \frown \alpha$$
 * Projective Resolution
 * Properly Discontinuous
 * Pullback
@@ -168,8 +188,7 @@
 * Relative homotopy groups
 * Retraction
 	* A map $r$ in $A\mathrel{\textstyle\substack{\Large\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ satisfying $$r\circ\iota = \id_A.$$
-	Equivalently $X \surjects_r A$ and $\restrictionof{r}{A} = \id_A$.
-	If $X$ retracts onto $A$ then $i_*$ is injective.
+	Equivalently $X \surjects_r A$ and $\restrictionof{r}{A} = \id_A$. If $X$ retracts onto $A$, then $i_*$ is injective.
 * Short exact sequence
 * Simplicial Complex
 * Simplicial Map

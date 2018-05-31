@@ -1,4 +1,4 @@
-This page contains links to resources I have found useful in the past, as well as answers to common math-related questions that seem to come up often.
+If you find yourself asking "What book should I get to learn $X$", then you have come to the right place! This is a question I personally get asked a lot, and it also seems to come up roughly daily in various online Math communities, so I put together this list to point out some resources I've personally used and found helpful for various topics and courses.
 
 _Disclaimer: in the textbook section, a number of the outgoing Amazon links are affiliate links! These help cover the hosting cost of this site, but you should also be aware that many of these books are often available at university libraries, at cheaper resalers, or often even as PDFs floating around online._
 [toc]
