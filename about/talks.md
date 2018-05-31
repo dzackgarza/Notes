@@ -1,5 +1,7 @@
 
 ## 2018
+- 06/2018: Homotopy and the Hopf Fibration
+
 - 04/2018: Introduction to Markdown and Latex for Mathematics
 
 - 02/2018: Topological Fixed Point Theorems
