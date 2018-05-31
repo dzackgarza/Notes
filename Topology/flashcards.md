@@ -40,7 +40,7 @@ math
 
 Kunneth SES
 %
-$$0\to \bigoplus _{{i+j=k}}H_{i}(X;R)\otimes _{R}H_{j}(Y;R)\to H_{k}(X\times Y;R)\to \bigoplus _{{i+j=k-1}}{\mathrm  {Tor}}_{1}^{R}(H_{i}(X;R),H_{j}(Y;R))\to 0$$
+$$0\to \bigoplus_{i+j=k}H_{i}(X;R)\otimes _{R}H_{j}(Y;R)\to H_{k}(X\times Y;R)\to \bigoplus_{i+j=k-1}{\mathrm  {Tor}}_{R}^{1}(H_{i}(X;R),H_{j}(Y;R))\to 0$$
 %
 math
 
@@ -64,7 +64,7 @@ math
 
 Kunneth (nice case)
 %
-$$H_{k}(X\times Y;F) \cong \bigoplus _{{i+j=k}}H_{i}(X;F)\otimes H_{j}(Y;F)$$
+$$H_{k}(X\times Y;F) \cong \bigoplus_{i+j=k}H_{i}(X;F)\otimes H_{j}(Y;F)$$
 %
 Math
 
@@ -73,7 +73,7 @@ Math
 Hom Table
 %
 $$
-\begin{array}{c|c}
+\begin{array}{c|c|c|c}
 Hom & Z_m & Z & Q \\\hline
 Z_n  & Z_d & 0 & 0 \\\hline
 Z   & Z_m & Z & Q \\\hline
@@ -88,7 +88,7 @@ math
 Tor Table
 %
 $$
-\begin{array}{c|c}
+\begin{array}{c|c|c|c}
 Tor & Z_m & Z & Q \\\hline
 Z_n  & Z_d & 0 & 0 \\\hline
 Z   & 0  & 0 & 0 \\\hline
@@ -103,7 +103,7 @@ math
 Ext Table
 %
 $$
-\begin{array}{c|c}
+\begin{array}{c|c|c|c}
 Ext & Z_m & Z    & Q \\\hline
 Z_n  & Z_d & Z_n   & 0 \\\hline
 Z   & 0  & 0    & 0 \\\hline
@@ -147,7 +147,7 @@ math
 
 ---
 
-$H_* \CP^2$
+$H_* \mathbb{CP}^2$
 %
 $$[\mathbb{Z}, 0,                 \mathbb{Z},  0,      \mathbb{Z},  0\rightarrow  ]$$
 %

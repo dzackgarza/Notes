@@ -21,7 +21,7 @@ Spaces
 	- Doesn't cover, would induce $\pi_1(K) \injects \pi_1(T^2) \implies \ZZ\semidirect \ZZ \injects \ZZ^2$ but this would be a non-abelian subgroup of an abelian group.
 - $T^2 \surjects K$
 	- Covers, see diagram:
-		![toruscoveringkleinbottle](../../../../../images/2018/05/toruscoveringkleinbottle.png)
+		![toruscoveringkleinbottle](../../../../../../images/2018/05/toruscoveringkleinbottle.png)
 $\qed$
 
 
@@ -36,7 +36,7 @@ It is easier to prove the stronger claim that $\ZZ^\NN \leq \ZZ^{\ast 2}$ (i.e. 
 
 Just take the covering space $\tilde X \surjects S^1 \vee S^1$ defined via the gluing map $\RR \union_{\ZZ} S^1$ which attaches a circle to each integer point, taking 0 as the base point. Then let $a$ denote a translation and $b$ denote traversing a circle, so we have $\pi_1(\tilde X) = \left<\union_{n\in\ZZ}a^nba^{-n}\right>$ which is a free group on countably many generators. Since $\tilde X$ is a covering space, $\pi_1(\tilde X) \injects \pi_1(S^1 \vee S^1) = \ZZ^{\ast 2}$. By 4, we can restrict this to $n$ generators for any $n$ to get a subgroup, and $A\leq B \leq C \implies A \leq C$ as groups.
 
-Alternatively, just take a covering space of this form: ![coverings1s1](../../../../../images/2018/05/coverings1s1.png)
+Alternatively, just take a covering space of this form: ![coverings1s1](../../../../../../images/2018/05/coverings1s1.png)
 $\qed$
 
 ## 3. Construct a space having $H_*(X) = [\ZZ, 0, 0, 0, 0, \ZZ_4, 0\rightarrow]$
@@ -147,7 +147,7 @@ Facts used:
 - Structure of the universal cover of a wedge product
 - $\RR^2 \surjects_p T^2 = S^1 \cross S^1$
 
-![someuniversalcover](../../../../../images/2018/05/someuniversalcover.png)
+![someuniversalcover](../../../../../../images/2018/05/someuniversalcover.png)
 $\tilde X = \RR^2 \union_{\ZZ^2} S^2$, so $\pi_2(X) \cong \pi_2(\tilde X) = \prod_{i,j \in \ZZ^2} \ZZ = \ZZ^{\ZZ^2} = \ZZ^{\aleph_0}$.$\qed$
 
 ## 9. Let $S^3 \to E \to S^5$ be a fiber bundle and compute $H_3(E)$.
