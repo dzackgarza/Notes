@@ -59,10 +59,8 @@
     10. $\int (\tan(x) + \cot(x))^2\,dx$ = $\tan(x)-\cot(x)$
     11. $\int \frac{1}{(e^x + e^{-x})}\,dx = \tan^{-1}(e^x)$
     12. asdsa
-11. asdsa
     12. $\int \frac{x^3 -4x^2 + 2x - 3}{x+2} = (1/3)x^3 -3x^2 + 14x -31\ln(x+2)$
     13. $\int e^x\cos(x) \,dx = \frac{1}{2}e^x (\cos(x) + \sin(x))$
-    14. asdsa
     14. $\int \frac{x}{x^2-2x+16}\,dx$ = $\frac{1}{\sqrt{15}} \tan^{-1}(\frac{1}{\sqrt{15}(x-1)})$
     15. $\int \frac{1}{(x+1)\sqrt{x}}\,dx$ = $2\tan^{-1}(\sqrt{x})$
     16. asdsa
