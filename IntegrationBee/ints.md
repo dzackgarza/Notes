@@ -9,8 +9,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 # Main
 ## Level 1
-- $\int \frac{1}{x(\ln (x))^2} \,dx$ = $\frac{1}{\ln(x)}$
-    - The obvious $u$ sub works.
 - $\int \frac{1}{x^2}\cos(\frac{1}{x})\,dx = - \sin{\frac{1}{x}}$
     - Simple $u$ sub
 - $\int \frac{1}{x^2\sqrt{4x^2 -1}}\,dx = \frac{\sqrt{4x^2-1}}{x}$
