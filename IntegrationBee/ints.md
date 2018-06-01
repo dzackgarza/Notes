@@ -36,8 +36,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - A tricky trig sub followed by a $u$ sub makes it trivial
     - Also $\ln(\sin u + \cos u) -\ln\cos u$ for $u=x/2$
 ## Level 4
-- $\int \frac{2x-3}{x^3 + x}\,dx$ = $2\tan^{-1} \left(x\right)-3\ln (x)-\frac{3}{2}\ln \left(x^2+1\right)$
-    - PFD and antiderivative of $\tan^{-1}$
 - $\int \frac{2 \tan^{-1}(e^x)}{e^{2x}} \,dx = \tan^{-1}(e^{-x}) + e^{-x} + e^{-2x}\tan^{-1}(e^x)$
     - IBP: differentiate the $\tan^{-1}$ term, then use the fraction splitting trick.
 - $\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)}\,dx$ = $- \ln(\cos(x))$
