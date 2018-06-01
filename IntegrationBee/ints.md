@@ -24,8 +24,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - Completing the square and $u$ sub.
 - $\int \frac{1+x^2}{1-x^2} = \ln\frac{x+1}{x-1}$
     - Quasi PFD, knowledge of slightly more uncommon integral $1/(1-x^2)$ OR hyperbolic techniques
-- $\int \frac{1 + \sin(x)}{1 + \cos(x)}\,dx = -\ln(\cos(x) + 1) -\cot(x) + \csc(x)$
-    - Split sum, $\frac{\sin}{1+\cos}$ is a $u$ sub, $\frac{1}{1+\cos(x)}$ yields to rationalizing the denominator.
+
 - $\int \frac{1-\sin(x)}{1 + \cos(x)}\,dx = \tan(\frac{x}{2})+\ln(\cos(x)+1)$
     - Split sum, one term is $\int 1/(1+\cos)$ (requires nonobvious trig identity/sub), other term yields to easy $u$ sub.
 - $\int \frac{1}{1 + \sin(x) + \cos(x)}\,dx = \ln (\tan(\frac{x}{2}) + 1)$
