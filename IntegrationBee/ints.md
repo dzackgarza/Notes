@@ -9,7 +9,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 # Main
 ## Level 1
-- $\int 2018^x = \frac{2018^x}{\ln(2018)}$
 - $\int \frac{1}{x(\ln (x))^2} \,dx$ = $\frac{1}{\ln(x)}$
     - The obvious $u$ sub works.
 - $\int \frac{1}{x^2}\cos(\frac{1}{x})\,dx = - \sin{\frac{1}{x}}$
