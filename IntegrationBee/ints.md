@@ -7,8 +7,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - Polynomials
 
 
-# Tie Breakers
-
 # Minor Tricks
 
 - $\int \frac{1}{1-\sin(x)}\,dx$=$\frac{2sin(\frac{x}{2})}{cos(x/2) - \sin(x/2)}$
