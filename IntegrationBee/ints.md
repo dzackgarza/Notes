@@ -14,8 +14,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 ## Level 2
 - $\int \frac{\sec^3(x) + e^{\sin(x)}}{\sec(x)}\,dx$ = $\sec(x)(-e^{\sin(x)}\sin(\frac{x}{2})+\sin(x)+e^{\sin(x)}\cos^2(\frac{x}{2}))$
     - Split sum, recognize $d/dx \tan(x) = \sec^2(x)$ on one and $u$ sub on the other
-- $\int \ln(x^2-1)\,dx = \ln(x+1)-\ln(x-1) -2x + x\ln(x^2 - 1)$
-    - IBP with $dv=1$ trick, then fraction splitting trick
 - $\int \sin^2(2x) + \sec(2x) \,dx = \ln(\tan(2x) + \sec(2x)) - \cos(x)\sin(x) + x$
     - Or $\ln(\tan(2x) + \sec(2x)) - \sin(2x)/2 + x$
     - Known antiderivative and power of sin formula
