@@ -11,8 +11,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 ## Level 1
 - $\int \frac{1}{x^2\sqrt{4x^2 -1}}\,dx = \frac{\sqrt{4x^2-1}}{x}$
     - Trig sub $x=(1/2)\tan(u)$ plus an obvious $u$ sub yields a polynomial.
-- $\int \frac{e^x}{e^x+1}\,dx$ = $\ln({e^x+1})$
-    - $u$ sub
+-
 - $\int \frac{x}{x-1} = \ln(1-x) + x$
     - Fraction splitting trick
 - $\int \frac{3}{\sqrt{4-9x^2}} \,dx$ = $\sin^{-1} \left(\frac{3x}{2}\right)$
