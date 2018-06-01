@@ -21,8 +21,6 @@
 - Eat spaghetti
 - Drink wine
 
-------------------
-
 
 ## Going to sleep
 
