@@ -12,8 +12,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \sqrt{1 -x^2} \,dx$ = $\frac{1}{2}\sin^{-1} \left(x\right)+\frac{1}{4}\sin \left(2\sin^{-1} x\right)$
     - Trig sub $x=\sin u$ followed by a common trig identity
 ## Level 2
-- 
-    - Knowledge of hyperbolic antiderivatives and a u sub
 - $\int \frac{1}{x(x-1)^2} = \frac{1}{1-x} - \ln(x-1) + \ln(x)$
     - PFD, easy case with a repeated factor
 - $\int (\sin(x) + \cos(x))^2\,dx$ = $x-\frac{1}{2}\cos(2x)$
