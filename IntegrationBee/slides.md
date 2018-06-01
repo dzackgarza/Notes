@@ -25,11 +25,7 @@
     21. $\int \frac{x}{1+x^4}\,dx$=$\frac{tan^{-1}(x^2)}{2}$
     22. $\int \frac{x}{x-1} = \ln(1-x) + x$
     23. $\int x\ln(x) \,dx$ = $\frac{1}{4} x^2 (-1 + 2 \ln(x))$
-    24. assdsa
-23. asdsa
     24. $\int e^{(x+e^x)} \,dx$=$e^{e^{x}}$
-    25. asdsa
-    26. asdsa
 
 # Round 2
 ## Integral 14
