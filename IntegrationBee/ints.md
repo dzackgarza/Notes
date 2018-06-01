@@ -20,7 +20,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 ## Level 3
 - $\int \frac{x^3 -4x^2 + 2x - 3}{x+2} = (1/3)x^3 -3x^2 + 14x -31\ln(x+2)$
     - Polynomial long division
-- $\int \frac{x}{x^2-2x+16}\,dx$ = $\frac{1}{\sqrt{15}} \tan^{-1}(\frac{1}{\sqrt{15}(x-1)})$
     - Completing the square and $u$ sub.
 - $\int \frac{1}{1 + \sin(x) + \cos(x)}\,dx = \ln (\tan(\frac{x}{2}) + 1)$
     - A tricky trig sub followed by a $u$ sub makes it trivial
