@@ -18,9 +18,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int (\tan(x) + \cot(x))^2\,dx$ = $\tan(x)-\cot(x)$
     - Expand and use knowledge of antiderivatives of $\tan^2, \csc^2$
 ## Level 3
-- $\int \frac{x^3 -4x^2 + 2x - 3}{x+2} = (1/3)x^3 -3x^2 + 14x -31\ln(x+2)$
-    - Polynomial long division
-    - Completing the square and $u$ sub.
 - $\int \frac{1}{1 + \sin(x) + \cos(x)}\,dx = \ln (\tan(\frac{x}{2}) + 1)$
     - A tricky trig sub followed by a $u$ sub makes it trivial
     - Also $\ln(\sin u + \cos u) -\ln\cos u$ for $u=x/2$
