@@ -50,7 +50,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{1}{(e^x + e^{-x})}\,dx$=$\tan^{-1}(e^x)$
 - $\int \frac{1}{\sqrt{x}\sqrt{1-4x}}\,dx$=$\frac{\sqrt{1-4x}\sqrt{x}\sin^{-1}(2\sqrt{x})}{\sqrt{(1-4x)x}}$
 - $\int \frac{1}{x\sqrt{4x-1}}\,dx$=$\ln(1-\sqrt{1-4x})-\ln(\sqrt{1-4x}+1)$
-- $\int \frac{7-\ln(x)}{x(3+\ln(x))}\,dx$=$10\ln(\ln(x)+3)-\ln(x)$
+- 
 - $\int \frac{\tan(x)}{\tan(x) + \sec(x)}\,dx$=$x-\frac{2sin(\frac{x}{2})}{sin(\frac{x}{2})+cos(\frac{x}{2})}$
 - $\int \ln\sqrt{x^2+1}\,dx$=$\frac{1}{2}x(ln(x^2+1)-2)+tan^{-1}(x)$
 - $\int \frac{1}{\sqrt{x\sqrt{x}-x^2}}\,dx$=$2tan^{-1}(\frac{(2\sqrt{x}-1)\sqrt{x^{3/2}-x^2}}{2(\sqrt{x}-1)x})$
