@@ -50,7 +50,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - $u$-sub $u=e^x$ and *reverse* sub $x = \ln u$, then IBP and PFD.
 - $\int \frac{2\sin^2(x)}{\cos^3(x)} = \tan(x)\sec(x) -\ln\left(\tan(x) + \sec(x)\right)$
     - Trig identity $\sin^2(x) = 1 - \cos^2(x)$, use $\int \frac{1}{\cos(x)} = \ln(\sec(x) + \tan(x))$, then find $\int \frac{1}{\cos^3(x)} = (1/2)(\sec(x)\tan(x) + \ln(\sec(x) + \tan(x)))$ (mildly challenging on its own!)
-- $\int \sqrt{\frac{1+x}{1-x}}\,dx = x\sqrt{\frac{x+1}{1-x}} -\sqrt{\frac{x+1}{1-x}} - \sin^{-1}(-x)$
+- 
     - u-sub, IBP, and convoluted appearance of $d/dx \sin^{-1}(x)$.
 - $\int \frac{1}{\sin(x) + \cos(x)}\,dx = \frac{\sqrt{2}}{2}\left( \ln(u+1) - \ln(u-1)\right), u = \frac{\sqrt{2}}{2}\left( \tan(x/2) - 1\right)$
     - Yields to extremely nonobvious transformation $u = \tan(x/2)$ to produce $\int\frac{1}{2u+1-u^2}$. Then complete the square, factor out constants, and use knowledge of $\int 1/(1-x^2)$
