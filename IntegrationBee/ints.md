@@ -12,7 +12,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \sqrt{1 -x^2} \,dx$ = $\frac{1}{2}\sin^{-1} \left(x\right)+\frac{1}{4}\sin \left(2\sin^{-1} x\right)$
     - Trig sub $x=\sin u$ followed by a common trig identity
 ## Level 2
-- 
     - Split sum, recognize $d/dx \tan(x) = \sec^2(x)$ on one and $u$ sub on the other
     - Or $\ln(\tan(2x) + \sec(2x)) - \sin(2x)/2 + x$
     - Known antiderivative and power of sin formula
