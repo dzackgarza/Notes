@@ -36,7 +36,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 
 - $\int \frac{\sin^3{\sqrt{x}}}{2\sqrt{x}}\,dx$=$\frac{cos(3\sqrt{x})-9cos(\sqrt{x})}{12}$
-- $\int \frac{x}{1+x^4}\,dx$=$\frac{tan^{-1}(x^2)}{2}$
+- 
 - $\int \frac{x}{x^4-16}\,dx$=$\frac{\ln(4-x^2)-\ln(x^2+4)}{16}$
 - $\int \frac{\sec^2(x)}{1+\tan(x)}\,dx$=$\ln(\sin(x)+cos(x))-\ln(\cos(x))$
 - $\int \frac{1}{2x\sqrt{x-1}}\,dx$=$tan^{-1}(\sqrt{x-1})$
