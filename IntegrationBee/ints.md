@@ -9,7 +9,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 # Main
 ## Level 3
-- $\int \frac{1}{1 + \sin(x) + \cos(x)}\,dx = \ln (\tan(\frac{x}{2}) + 1)$
+- 
     - A tricky trig sub followed by a $u$ sub makes it trivial
     - Also $\ln(\sin u + \cos u) -\ln\cos u$ for $u=x/2$
 ## Level 4
