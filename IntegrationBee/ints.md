@@ -72,7 +72,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{\sqrt{1+\ln(x)}}{x\ln(x)} \,dx$ = $2\sqrt{1 + \ln(x)} + \ln(1 - \sqrt{1 + \ln(x)}) - \ln(1 + \sqrt{1 + \ln(x)})$
 - $\int e^{\sqrt{x}} \,dx$ = $2e^\sqrt{x} (-1 + \sqrt{x})$
 - $\int \sec^3(x) \,dx$ = $1/2 (-\ln(\cos(x/2) - \sin(x/2)) + \ln(\cos(x/2) + \sin(x/2)) + sec(x) \tan(x))$
-- 
 - $\int \frac{2\tan^{-1}(e^x)}{e^{2x}}\,dx$=$tan^{-1}(e^{-x}) - e^{-2x}(e^x + \tan^{-1}(e^x))$
 
 ### Powers of Trigonometric Functions
