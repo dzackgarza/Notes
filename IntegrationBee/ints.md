@@ -62,7 +62,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int (\ln(x))^2 \,dx$ = $x (2 - 2 \ln(x) + \ln^2(x))$
 - $\int x^2e^x \,dx$ = $e^x (2 - 2 x + x^2)$
 - $\int x\sin(2x) \,dx$=$1/4 (-2 x \cos(2 x) + \sin(2 x))$
-- $\int e^x\cos(x) \,dx$ = $1/2 e^x (\cos(x) + \sin(x))$
+- 
 - $\int \sqrt{x}\ln(x) \,dx$ = $2/9 x^{3/2} (-2 + 3 \ln(x))$
 - $\int x\ln(x) \,dx$ = $1/4 x^2 (-1 + 2 \ln(x))$
 - $\int x^2\ln(x) \,dx$ = $1/9 x^3 (-1 + 3 \ln(x))$
