@@ -54,8 +54,6 @@
 7. asdsad
     8. $\int \frac{7x + 5}{x^2 + x - 2} \,dx = 3\ln(x+2) + 4\ln(x-1)$
     9. $\int \frac{1}{\sqrt{e^{2x}-1}}\,dx$ = $\tan^{-1}(\sqrt{e^{2x}-1})$
-    10. asdsa
-9. asdsa
     10. $\int (\tan(x) + \cot(x))^2\,dx$ = $\tan(x)-\cot(x)$
     11. $\int \frac{1}{(e^x + e^{-x})}\,dx = \tan^{-1}(e^x)$
     12. $\int \frac{x^3 -4x^2 + 2x - 3}{x+2} = (1/3)x^3 -3x^2 + 14x -31\ln(x+2)$
