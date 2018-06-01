@@ -11,7 +11,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 - $\int \frac{1}{1-\sin(x)}\,dx$=$\frac{2sin(\frac{x}{2})}{cos(x/2) - \sin(x/2)}$
 - $\int \frac{x}{\sqrt[3]{x+1}}\,dx$=$\frac{3}{10}(1 + x)^{2/3}(-3+2x)$
-- $\int \frac{1}{\sqrt{e^{2x}-1}}\,dx$ = $\tan^{-1}(\sqrt{e^{2x}-1})$
+- 
 - $\int \frac{\sin^2(2x)}{1+\cos(2x)}\,dx$ = $x-\cos(x)\sin(x)$
 - $\int \frac{x^2 + 2x + 1}{x\sqrt{x^2-1}}\,dx$ = $2\ln(|\sqrt{x^2-1}+x|)+\tan^{-1}(\sqrt{x^2-1})+\sqrt{x^2-1}$
 
