@@ -63,13 +63,10 @@
     12. $\int \frac{x^3 -4x^2 + 2x - 3}{x+2} = (1/3)x^3 -3x^2 + 14x -31\ln(x+2)$
     13. $\int e^x\cos(x) \,dx = \frac{1}{2}e^x (\cos(x) + \sin(x))$
     14. asdsa
-13. asdsa
     14. $\int \frac{x}{x^2-2x+16}\,dx$ = $\frac{1}{\sqrt{15}} \tan^{-1}(\frac{1}{\sqrt{15}(x-1)})$
     15. $\int \frac{1}{(x+1)\sqrt{x}}\,dx$ = $2\tan^{-1}(\sqrt{x})$
     16. asdsa
-15. asdas
     16. $\int \frac{\sec^3(x) + e^{\sin(x)}}{\sec(x)}\,dx = \sec(x)(-e^{\sin(x)}\sin(\frac{x}{2})+\sin(x)+e^{\sin(x)}\cos^2(\frac{x}{2}))$
-    17. asdsa
 
 # Round 3
 ## Integral 21
