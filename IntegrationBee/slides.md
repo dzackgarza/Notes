@@ -31,11 +31,10 @@
 ## Match 21
 ## Match 22
 ## Match 23
+## Match 24
 
 # Round 4
-## Match 24
 ## Match 25
-
 ## Match 26
 
 # Round 5
