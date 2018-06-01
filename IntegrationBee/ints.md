@@ -45,9 +45,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{1- \sqrt{x}}{1 + \sqrt{x}}\,dx$ = $4\sqrt{x}- x - 4 \ln(1 + \sqrt{x})$
     - PFD and an integral of the form $a/(b + \sqrt{x})$ that yields to the obvious u-sub
 ## Level 5
-- $\int \frac{xe^x}{(e^x + 1)^2}\,dx = \frac{xe^x}{e^x+1} - \ln(e^x  + 1)$
-    - Equivalently $\frac{-x}{e^x+1} + x - \ln(e^x + 1)$
-    - $u$-sub $u=e^x$ and *reverse* sub $x = \ln u$, then IBP and PFD.
 - $\int \frac{e^x x\ln(x) - xe^x}{x\ln^2(x)} = \frac{e^x}{\ln(x)}$
     - Reverse quotient rule
 - $\int \frac{2\sin^2(x)}{\cos^3(x)} = \tan(x)\sec(x) -\ln\left(\tan(x) + \sec(x)\right)$
