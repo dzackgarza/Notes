@@ -10,11 +10,8 @@
     5. $\int x\sin(2x) \,dx$=$1/4 (-2 x \cos(2 x) + \sin(2 x))$
     6. $\int e^{e^x}e^x = e^{e^x}$
     7. $\int \frac{e^x}{e^x+1}\,dx = \ln({e^x+1})$
-7. asdsa
     8. $\int \frac{x^2}{1+x^6}\,dx = \frac{\tan^{-1}(x^3)}{3}$
     9. $\int \frac{1}{x^2 + 9} = \frac{1}{3}\tan^{-1}(\frac{x}{3})$
-    10. asdsa
-9. asdsad
     10. $\int e^{\sin^2(x)}\sin(2x)\,dx$= $e^{\sin^2(x)}$
     11. $\int x^2e^x \,dx$ = $e^x (2 - 2 x + x^2)$
     12. asdsa
