@@ -22,8 +22,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - Rewrite and use $u=e^x$
 - $\int \sqrt{1 -x^2} \,dx$ = $\frac{1}{2}\sin^{-1} \left(x\right)+\frac{1}{4}\sin \left(2\sin^{-1} x\right)$
     - Trig sub $x=\sin u$ followed by a common trig identity
-- $\int e^{(x+e^x)} \,dx$=$e^{e^{x}}$
-    - $u = e^x$ allows cancellation
 ## Level 2
 - $\int x^3 e^{-x} \,dx = (x^3 + 3x^2 + 6x + 6)e^{-x}$
     - IBP thrice, obvious but tedious.
