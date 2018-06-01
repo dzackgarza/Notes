@@ -18,12 +18,7 @@
     13. $\int \frac{x}{x^2 + 9} = \frac{1}{2}\ln(x^2 + 9)$
     14. $\int \frac{1}{x^2\sqrt{4x^2 -1}}\,dx = \frac{\sqrt{4x^2-1}}{x}$
     15. $\int \sin^{-1}(x) \,dx = x \sin^{-1}(x) + \sqrt{1 - x^2}$
-    16. sadsa
-15. asda
     16. $\int \sin^3(x) \,dx = -\cos \left(x\right)+\frac{\cos ^3\left(x\right)}{3}$
-    17. asdsad
-    18. asdsa
-17. asdsad
     18. $\int \ln(x^2 + 6x + 5)\,dx = x\ln(x^2+6x+5) -2x + \ln(x+1) + \ln(x+5)$
     19. $\int \frac{7-\ln(x)}{x(3+\ln(x))}\,dx = 10\ln(\ln(x)+3)-\ln(x)$
     20. asdsa
