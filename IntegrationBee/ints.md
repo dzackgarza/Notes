@@ -12,8 +12,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{1}{x^2\sqrt{4x^2 -1}}\,dx = \frac{\sqrt{4x^2-1}}{x}$
     - Trig sub $x=(1/2)\tan(u)$ plus an obvious $u$ sub yields a polynomial.
     - Fraction splitting trick
-- 
-    - Recognizing arcsin antiderivative, or maybe a trig sub
 - $\int \ln(x^2 + 6x + 5)\,dx = x\ln(x^2+6x+5) -2x + \ln(x+1) + \ln(x+5)$
     - Factor, apply $\ln\prod = \sum\ln$ and knowledge of $\int \ln x$, mostly algebra
 - $\int \sin(x)\cos(\cos(x)) \,dx$=$-\sin(\cos(x))$
