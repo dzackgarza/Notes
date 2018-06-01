@@ -8,11 +8,8 @@
     3. $\int 2018^x = \frac{2018^x}{\ln(2018)}$
     4. $\int \frac{1}{x^2}\cos(\frac{1}{x})\,dx = - \sin{\frac{1}{x}}$
     5. $\int x\sin(2x) \,dx$=$1/4 (-2 x \cos(2 x) + \sin(2 x))$
-    6. aasdsa
-5. asdsa
     6. $\int e^{e^x}e^x = e^{e^x}$
     7. $\int \frac{e^x}{e^x+1}\,dx = \ln({e^x+1})$
-    8. asdsa
 7. asdsa
     8. $\int \frac{x^2}{1+x^6}\,dx = \frac{\tan^{-1}(x^3)}{3}$
     9. $\int \frac{1}{x^2 + 9} = \frac{1}{3}\tan^{-1}(\frac{x}{3})$
