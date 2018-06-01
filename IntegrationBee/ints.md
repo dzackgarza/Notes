@@ -45,8 +45,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{1- \sqrt{x}}{1 + \sqrt{x}}\,dx$ = $4\sqrt{x}- x - 4 \ln(1 + \sqrt{x})$
     - PFD and an integral of the form $a/(b + \sqrt{x})$ that yields to the obvious u-sub
 ## Level 5
-- $\int \frac{1}{\sin(x) + \cos(x)}\,dx = \frac{\sqrt{2}}{2}\left( \ln(u+1) - \ln(u-1)\right), u = \frac{\sqrt{2}}{2}\left( \tan(x/2) - 1\right)$
-    - Yields to extremely nonobvious transformation $u = \tan(x/2)$ to produce $\int\frac{1}{2u+1-u^2}$. Then complete the square, factor out constants, and use knowledge of $\int 1/(1-x^2)$
+
 - $\int \sinh(x)\sin(x) = \frac{1}{2}(\cosh(x)\sin(x) - \sinh(x)\cos(x))$
     - Expand in terms of the form $e^{ix}$
 
