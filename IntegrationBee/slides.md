@@ -4,7 +4,7 @@
 
 # Round 1
 
-## Getting up
+## Match 1
 
 - Turn off alarm
 - Get out of bed
