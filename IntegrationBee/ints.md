@@ -50,14 +50,14 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{1}{(e^x + e^{-x})}\,dx$=$\tan^{-1}(e^x)$
 - $\int \frac{1}{\sqrt{x}\sqrt{1-4x}}\,dx$=$\frac{\sqrt{1-4x}\sqrt{x}\sin^{-1}(2\sqrt{x})}{\sqrt{(1-4x)x}}$
 - $\int \frac{1}{x\sqrt{4x-1}}\,dx$=$\ln(1-\sqrt{1-4x})-\ln(\sqrt{1-4x}+1)$
-- 
+-
 - $\int \frac{\tan(x)}{\tan(x) + \sec(x)}\,dx$=$x-\frac{2sin(\frac{x}{2})}{sin(\frac{x}{2})+cos(\frac{x}{2})}$
 - $\int \ln\sqrt{x^2+1}\,dx$=$\frac{1}{2}x(ln(x^2+1)-2)+tan^{-1}(x)$
 - $\int \frac{1}{\sqrt{x\sqrt{x}-x^2}}\,dx$=$2tan^{-1}(\frac{(2\sqrt{x}-1)\sqrt{x^{3/2}-x^2}}{2(\sqrt{x}-1)x})$
 
 ### Integration by Parts
 - $\int (\ln(x))^2 \,dx$ = $x (2 - 2 \ln(x) + \ln^2(x))$
-- $\int x^2e^x \,dx$ = $e^x (2 - 2 x + x^2)$
+- 
 - $\int x\sin(2x) \,dx$=$1/4 (-2 x \cos(2 x) + \sin(2 x))$
 - $\int \sqrt{x}\ln(x) \,dx$ = $2/9 x^{3/2} (-2 + 3 \ln(x))$
 - $\int x^2\ln(x) \,dx$ = $1/9 x^3 (-1 + 3 \ln(x))$
