@@ -15,7 +15,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{7x + 5}{x^2 + x - 2} \,dx = 3\ln(x+2) + 4\ln(x-1)$
     - Also $(7/2)\ln(x^2+x-2) -(1/2)\ln(x+2) + (1/2)\ln(x-1)$
     - Algebra to pull out factors, and/or PFD
-- $\int (\tan(x) + \cot(x))^2\,dx$ = $\tan(x)-\cot(x)$
     - Expand and use knowledge of antiderivatives of $\tan^2, \csc^2$
 ## Level 3
 - $\int \frac{1}{1 + \sin(x) + \cos(x)}\,dx = \ln (\tan(\frac{x}{2}) + 1)$
