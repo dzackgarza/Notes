@@ -40,7 +40,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{x}{1+x^4}\,dx$=$\frac{tan^{-1}(x^2)}{2}$
 - $\int \frac{x^2}{1+x^6}\,dx$=$\frac{tan^{-1}(x^3)}{3}$
 - $\int \frac{x}{x^4-16}\,dx$=$\frac{\ln(4-x^2)-\ln(x^2+4)}{16}$
-- $\int \frac{e^x}{1+e^{2x}}\,dx$=$tan^{-1}(e^x)$
 - $\int \frac{\sec^2(x)}{1+\tan(x)}\,dx$=$\ln(\sin(x)+cos(x))-\ln(\cos(x))$
 - $\int \frac{1}{2x\sqrt{x-1}}\,dx$=$tan^{-1}(\sqrt{x-1})$
 - $\int \frac{\sin(\alpha)}{\sqrt{4-\cos^2(\alpha)}}d\alpha$=$-sin^{-1}(\frac{cos(\alpha)}{2})$
