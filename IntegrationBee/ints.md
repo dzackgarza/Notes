@@ -7,11 +7,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - Polynomials
 
 
-# Main
-## Level 3
-## Level 4
-- $\int \frac{1- \sqrt{x}}{1 + \sqrt{x}}\,dx$ = $4\sqrt{x}- x - 4 \ln(1 + \sqrt{x})$
-    - PFD and an integral of the form $a/(b + \sqrt{x})$ that yields to the obvious u-sub
 # Tie Breakers
 
 # Minor Tricks
