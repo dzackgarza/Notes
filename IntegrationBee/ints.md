@@ -9,8 +9,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 # Main
 ## Level 1
-- $\int \frac{1}{x^2}\cos(\frac{1}{x})\,dx = - \sin{\frac{1}{x}}$
-    - Simple $u$ sub
 - $\int \frac{1}{x^2\sqrt{4x^2 -1}}\,dx = \frac{\sqrt{4x^2-1}}{x}$
     - Trig sub $x=(1/2)\tan(u)$ plus an obvious $u$ sub yields a polynomial.
 - $\int \frac{e^x}{e^x+1}\,dx$ = $\ln({e^x+1})$
