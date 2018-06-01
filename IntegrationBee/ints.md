@@ -22,8 +22,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - Polynomial long division
 - $\int \frac{x}{x^2-2x+16}\,dx$ = $\frac{1}{\sqrt{15}} \tan^{-1}(\frac{1}{\sqrt{15}(x-1)})$
     - Completing the square and $u$ sub.
-- $\int \frac{1+x^2}{1-x^2} = \ln\frac{x+1}{x-1}$
-    - Quasi PFD, knowledge of slightly more uncommon integral $1/(1-x^2)$ OR hyperbolic techniques
 - $\int \frac{1}{1 + \sin(x) + \cos(x)}\,dx = \ln (\tan(\frac{x}{2}) + 1)$
     - A tricky trig sub followed by a $u$ sub makes it trivial
     - Also $\ln(\sin u + \cos u) -\ln\cos u$ for $u=x/2$
