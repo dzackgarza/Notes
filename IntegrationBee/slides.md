@@ -4,11 +4,8 @@
 
 # Round 1
 
-1. asdas
     2. $\int \frac{1}{x(\ln (x))^2} \,dx$ = $\frac{1}{\ln(x)}$
     3. $\int 2018^x = \frac{2018^x}{\ln(2018)}$
-    4. asdsa
-3. asdas
     4. $\int \frac{1}{x^2}\cos(\frac{1}{x})\,dx = - \sin{\frac{1}{x}}$
     5. $\int x\sin(2x) \,dx$=$1/4 (-2 x \cos(2 x) + \sin(2 x))$
     6. aasdsa
