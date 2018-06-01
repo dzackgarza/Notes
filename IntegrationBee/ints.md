@@ -81,7 +81,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 ### Powers of Trigonometric Functions
 
 - $\int \cos^2 \left (\frac{1}{2}x \right) + \sec \left(\frac{1}{2}x\right)\,dx$= $\frac{1}{2}\left(\sin \left(x\right)+x\right)+2\ln \left|\tan \left(\frac{x}{2}\right)+\sec \left(\frac{x}{2}\right)\right|$
-- $\int \sin^3(x) \,dx$= $-\cos \left(x\right)+\frac{\cos ^3\left(x\right)}{3}$
+- 
 - $\int \cos^3(x) \,dx$= $\sin \left(x\right)-\frac{\sin ^3\left(x\right)}{3}$
 - $\int \sec^4(x) \,dx$ = $\frac{\left(\sqrt{\sec ^2\left(x\right)-1}\right)^3}{3}+\sqrt{\sec ^2\left(x\right)-1}$
 - $\int \sin^3(x)\cos^5(x) \,dx$ = $-\frac{\cos ^6\left(x\right)}{6}+\frac{\cos ^8\left(x\right)}{8}$
