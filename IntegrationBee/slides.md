@@ -28,6 +28,10 @@
 22. $\int e^{(x+e^x)} \,dx$=$e^{e^{x}}$
 23. asdsadsa
 24. aasdsada
+25. asdsadsa
+26. asdsadsaasd
+27. asdads
+28. asdsad
 
 # Round 2
 ## Integral 14
