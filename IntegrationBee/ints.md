@@ -37,7 +37,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 - $\int e^{\sin^2(x)}\sin(2x)\,dx$= $e^{\sin^2(x)}$
 - $\int \frac{\sin^3{\sqrt{x}}}{2\sqrt{x}}\,dx$=$\frac{cos(3\sqrt{x})-9cos(\sqrt{x})}{12}$
-- $\int \frac{\ln(x)}{x}\,dx$=$\frac{\ln^2(x)}{2}$
 - $\int \frac{x}{1+x^4}\,dx$=$\frac{tan^{-1}(x^2)}{2}$
 - $\int \frac{x^2}{1+x^6}\,dx$=$\frac{tan^{-1}(x^3)}{3}$
 - $\int \frac{x}{x^4-16}\,dx$=$\frac{\ln(4-x^2)-\ln(x^2+4)}{16}$
