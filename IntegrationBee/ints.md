@@ -44,12 +44,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - IBP with the $dv = 1$ trick, then IBP again with an $x\sec^2(x)$ integrand.
 - $\int \frac{1- \sqrt{x}}{1 + \sqrt{x}}\,dx$ = $4\sqrt{x}- x - 4 \ln(1 + \sqrt{x})$
     - PFD and an integral of the form $a/(b + \sqrt{x})$ that yields to the obvious u-sub
-## Level 5
-
-- $\int \sinh(x)\sin(x) = \frac{1}{2}(\cosh(x)\sin(x) - \sinh(x)\cos(x))$
-    - Expand in terms of the form $e^{ix}$
-
-
 # Tie Breakers
 
 # Minor Tricks
