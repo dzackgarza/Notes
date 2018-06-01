@@ -18,7 +18,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{1}{x(x-1)^2}\,dx$ = $\ln{x}-\frac{1}{x-1}-\ln(x-1)$
 - $\int \frac{x+\sin{x}}{1+\cos{x}}\,dx$ = $x\tan{\frac{x}{2}}$
 - $\int \frac{1}{x^2}\cos{\frac{1}{x}}\,dx$ = $-\sin{\frac{1}{x}}$
-- $\int \frac{1}{x^2\sqrt{4x^2-1}}\,dx$ = $\frac{\sqrt{4x^2-1}}{x}$
 
 ### Product to Sum formulas
 - $\int \sin(4x)\cos(3x)\,dx$=$\frac{-7cos(x)-cos(7x)}{14}$
