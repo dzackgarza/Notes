@@ -13,7 +13,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{x}{\sqrt[3]{x+1}}\,dx$=$\frac{3}{10}(1 + x)^{2/3}(-3+2x)$
 - $\int \frac{1}{\sqrt{e^{2x}-1}}\,dx$ = $\tan^{-1}(\sqrt{e^{2x}-1})$
 - $\int \frac{\sin^2(2x)}{1+\cos(2x)}\,dx$ = $x-\cos(x)\sin(x)$
-- $\int \frac{1}{(x+1)\sqrt{x}}\,dx$ = $2\tan^{-1}(\sqrt{x})$
 - $\int \frac{x^2 + 2x + 1}{x\sqrt{x^2-1}}\,dx$ = $2\ln(|\sqrt{x^2-1}+x|)+\tan^{-1}(\sqrt{x^2-1})+\sqrt{x^2-1}$
 
 - $\int x\sin^{-1}\left(\frac{1}{x}\right)\,dx$ = $\frac{x^2\csc^{-1}(x)+\sqrt{x^2-1}}{2}$
