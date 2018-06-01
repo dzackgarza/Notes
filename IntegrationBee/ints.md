@@ -13,7 +13,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - Trig sub $x=\sin u$ followed by a common trig identity
 ## Level 2
 - $\int \frac{1}{\cos^4(x)}\,dx = \frac{1}{3}\left(\sqrt{\sec ^2\left(x\right)-1}\right)^3+\sqrt{\sec ^2\left(x\right)-1}$
-    - $u=\sec(x)$ then $v=sqrt{u^2-1}$ makes it trivial after some algebra
+    - $u=\sec(x)$ then $v=\sqrt{u^2-1}$ makes it trivial after some algebra
 - $\int \tanh(x) = \ln(\cosh(x))$
     - Knowledge of hyperbolic antiderivatives and a u sub
 - $\int \frac{1}{x(x-1)^2} = \frac{1}{1-x} - \ln(x-1) + \ln(x)$
