@@ -21,12 +21,8 @@
     16. $\int \sin^3(x) \,dx = -\cos \left(x\right)+\frac{\cos ^3\left(x\right)}{3}$
     18. $\int \ln(x^2 + 6x + 5)\,dx = x\ln(x^2+6x+5) -2x + \ln(x+1) + \ln(x+5)$
     19. $\int \frac{7-\ln(x)}{x(3+\ln(x))}\,dx = 10\ln(\ln(x)+3)-\ln(x)$
-    20. asdsa
-19. asdsa
     20. $\int \frac{3}{\sqrt{4-9x^2}} \,dx = \sin^{-1} \left(\frac{3x}{2}\right)$
     21. $\int \frac{x}{1+x^4}\,dx$=$\frac{tan^{-1}(x^2)}{2}$
-    22. asdsa
-21. asdsa
     22. $\int \frac{x}{x-1} = \ln(1-x) + x$
     23. $\int x\ln(x) \,dx$ = $\frac{1}{4} x^2 (-1 + 2 \ln(x))$
     24. assdsa
