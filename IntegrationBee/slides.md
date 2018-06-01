@@ -3,6 +3,7 @@
 % March 22, 2005
 
 # Round 1
+12 Matchups, 2/3
 
 1. $\int \frac{1}{x(\ln (x))^2} \,dx$ = $\frac{1}{\ln(x)}$
 2. $\int 2018^x = \frac{2018^x}{\ln(2018)}$
