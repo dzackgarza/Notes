@@ -36,8 +36,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - A tricky trig sub followed by a $u$ sub makes it trivial
     - Also $\ln(\sin u + \cos u) -\ln\cos u$ for $u=x/2$
 ## Level 4
-- $\int \frac{2 \tan^{-1}(e^x)}{e^{2x}} \,dx = \tan^{-1}(e^{-x}) + e^{-x} + e^{-2x}\tan^{-1}(e^x)$
-    - IBP: differentiate the $\tan^{-1}$ term, then use the fraction splitting trick.
 - $\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)}\,dx$ = $- \ln(\cos(x))$
     - IBP with the $dv = 1$ trick, then IBP again with an $x\sec^2(x)$ integrand.
 - $\int \frac{1- \sqrt{x}}{1 + \sqrt{x}}\,dx$ = $4\sqrt{x}- x - 4 \ln(1 + \sqrt{x})$
