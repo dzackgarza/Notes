@@ -9,9 +9,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 # Main
 ## Level 1
-    - Trig sub $x=(1/2)\tan(u)$ plus an obvious $u$ sub yields a polynomial.
-    - Fraction splitting trick
-    - Factor, apply $\ln\prod = \sum\ln$ and knowledge of $\int \ln x$, mostly algebra
+
 - $\int \sin(x)\cos(\cos(x)) \,dx$=$-\sin(\cos(x))$
     - Rewrite and use $u=e^x$
 - $\int \sqrt{1 -x^2} \,dx$ = $\frac{1}{2}\sin^{-1} \left(x\right)+\frac{1}{4}\sin \left(2\sin^{-1} x\right)$
