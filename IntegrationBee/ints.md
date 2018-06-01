@@ -57,7 +57,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 
 ### Integration by Parts
 - $\int (\ln(x))^2 \,dx$ = $x (2 - 2 \ln(x) + \ln^2(x))$
-- 
+-
 - $\int x\sin(2x) \,dx$=$1/4 (-2 x \cos(2 x) + \sin(2 x))$
 - $\int \sqrt{x}\ln(x) \,dx$ = $2/9 x^{3/2} (-2 + 3 \ln(x))$
 - $\int x^2\ln(x) \,dx$ = $1/9 x^3 (-1 + 3 \ln(x))$
@@ -72,7 +72,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{\sqrt{1+\ln(x)}}{x\ln(x)} \,dx$ = $2\sqrt{1 + \ln(x)} + \ln(1 - \sqrt{1 + \ln(x)}) - \ln(1 + \sqrt{1 + \ln(x)})$
 - $\int e^{\sqrt{x}} \,dx$ = $2e^\sqrt{x} (-1 + \sqrt{x})$
 - $\int \sec^3(x) \,dx$ = $1/2 (-\ln(\cos(x/2) - \sin(x/2)) + \ln(\cos(x/2) + \sin(x/2)) + sec(x) \tan(x))$
-- $\int \sin^{-1}(x) \,dx$=$\sqrt{1 - x^2} + x \sin^{-1}(x)$
+- 
 - $\int \frac{2\tan^{-1}(e^x)}{e^{2x}}\,dx$=$tan^{-1}(e^{-x}) - e^{-2x}(e^x + \tan^{-1}(e^x))$
 
 ### Powers of Trigonometric Functions
