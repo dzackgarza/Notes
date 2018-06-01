@@ -48,8 +48,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{xe^x}{(e^x + 1)^2}\,dx = \frac{xe^x}{e^x+1} - \ln(e^x  + 1)$
     - Equivalently $\frac{-x}{e^x+1} + x - \ln(e^x + 1)$
     - $u$-sub $u=e^x$ and *reverse* sub $x = \ln u$, then IBP and PFD.
-- $\int \frac{e^x x\ln(x) - xe^x}{x\ln^2(x)} = \frac{e^x}{\ln(x)}$
-    - Reverse quotient rule
 - $\int \frac{2\sin^2(x)}{\cos^3(x)} = \tan(x)\sec(x) -\ln\left(\tan(x) + \sec(x)\right)$
     - Trig identity $\sin^2(x) = 1 - \cos^2(x)$, use $\int \frac{1}{\cos(x)} = \ln(\sec(x) + \tan(x))$, then find $\int \frac{1}{\cos^3(x)} = (1/2)(\sec(x)\tan(x) + \ln(\sec(x) + \tan(x)))$ (mildly challenging on its own!)
 - $\int \sqrt{\frac{1+x}{1-x}}\,dx = x\sqrt{\frac{x+1}{1-x}} -\sqrt{\frac{x+1}{1-x}} - \sin^{-1}(-x)$
