@@ -50,7 +50,7 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
 - $\int \frac{\sec^2(x)}{\sqrt{9-\tan^2(x)}}\,dx$=$\frac{\sqrt{5cos(2x)+4}\sec(x)tan^{-1}(\frac{sin(x)}{\sqrt{5cos(2x)+4}})}{\sqrt{9-\tan^2(x)}}$ **way too hard!!
 - $\int \frac{2}{x\sqrt{25x^4-1}}\,dx$=$tan^{-1}(\sqrt{25x^4-1})$
 - $\int x\sqrt{x+1}\,dx$=$\frac{2}{15}(x+1)^{3/2}(3x-2)$
-- $\int \frac{1}{(e^x + e^{-x})}\,dx$=$tan^{-1}(e^x)$
+- $\int \frac{1}{(e^x + e^{-x})}\,dx$=$\tan^{-1}(e^x)$
 - $\int \frac{1}{\sqrt{x}\sqrt{1-4x}}\,dx$=$\frac{\sqrt{1-4x}\sqrt{x}\sin^{-1}(2\sqrt{x})}{\sqrt{(1-4x)x}}$
 - $\int \frac{1}{x\sqrt{4x-1}}\,dx$=$\ln(1-\sqrt{1-4x})-\ln(\sqrt{1-4x}+1)$
 - $\int \frac{7-\ln(x)}{x(3+\ln(x))}\,dx$=$10\ln(\ln(x)+3)-\ln(x)$
