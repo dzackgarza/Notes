@@ -44,8 +44,6 @@ Polynomials, exponentials, extremely obvious $u$-subs that collapse immediately
     - IBP with the $dv = 1$ trick, then IBP again with an $x\sec^2(x)$ integrand.
 - $\int \frac{1- \sqrt{x}}{1 + \sqrt{x}}\,dx$ = $4\sqrt{x}- x - 4 \ln(1 + \sqrt{x})$
     - PFD and an integral of the form $a/(b + \sqrt{x})$ that yields to the obvious u-sub
-    - Product to Sum formulas to rewrite $\sin(3x), \cos(2x)$ in terms of $\cos^2, \sin^n$ terms, than rewrite $\sin^2$ as $\cos^2$ terms to yield a polynomial in $\cos$ times a $\sin$ term. u sub to finish
-
 ## Level 5
 - $\int \frac{xe^x}{(e^x + 1)^2}\,dx = \frac{xe^x}{e^x+1} - \ln(e^x  + 1)$
     - Equivalently $\frac{-x}{e^x+1} + x - \ln(e^x + 1)$
