@@ -14,7 +14,7 @@
 - Eat eggs
 - Drink coffee
 
-# In the evening
+# Round 2
 
 ## Dinner
 
@@ -23,7 +23,6 @@
 
 ------------------
 
-![picture of spaghetti](images/spaghetti.jpg)
 
 ## Going to sleep
 
