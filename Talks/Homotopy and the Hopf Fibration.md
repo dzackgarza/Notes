@@ -7,7 +7,7 @@
 
 ## Homotopy Theory
 - What is a homotopy
-- Whe
+- When are two 
 
 ## The Hopf Fibration
 - Explanation of fibrations
