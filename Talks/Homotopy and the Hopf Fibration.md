@@ -10,7 +10,7 @@
 
 ## Homotopy Theory
 - What is a homotopy
-- When are two
+- Homotopy e
 
 ## The Hopf Fibration
 - Explanation of fibrations
