@@ -16,4 +16,4 @@
 	- Explain larger space-filling foliations
 
 ## Interesting Results
-- $\pi_
+- $\pi_3(S^2)$
