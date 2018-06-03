@@ -7,7 +7,7 @@
 
 ## Algebraic Topology
 - Homeomorphisms and classification
-	- Partition of $\mathbf{t}
+	- Partition of $\mathbf{Top}$ into homeomorphism types
 
 ## Homotopy Theory
 - What is a homotopy
