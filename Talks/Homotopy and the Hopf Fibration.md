@@ -10,6 +10,6 @@
 ## The Hopf Fibration
 - Explanation of fibrations
 	- Fiber bundles: cylinder vs mobius strip
-- 
+- Visualization: 
 
 ## Interesting Results
