@@ -4,5 +4,4 @@
 
 ## Homotopy Theory
 
-
 ## The Hopf Fibration
