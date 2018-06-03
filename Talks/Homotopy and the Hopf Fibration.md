@@ -3,11 +3,13 @@
 ## Introduction
 - Who am I?
 - Link to undergraduate research
--
+
+
+## A
 
 ## Homotopy Theory
 - What is a homotopy
-- When are two 
+- When are two
 
 ## The Hopf Fibration
 - Explanation of fibrations
