@@ -8,6 +8,7 @@
 ## Homotopy Theory
 
 ## The Hopf Fibration
-- Ex
+- Explanation of fibrations
+	- Fiber bundles: 
 
 ## Interesting Results
