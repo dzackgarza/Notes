@@ -9,7 +9,8 @@
 - Homeomorphisms and classification
 	- Partition of $\mathbf{Top}$ into homeomorphism types
 - Why it's interesting to study
-	- Understanding + classificiation
+	- Understanding + classification
+	- Some 
 ## Homotopy Theory
 - What is a homotopy
 - Homotopy equivalence of spaces
