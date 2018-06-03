@@ -70,6 +70,8 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 # Fun Stuff
 Don't forget to take some time to get excited about what you're studying!
 
+- [Hyper Rouge](http://www.roguetemple.com/z/hyper/)
+	- A cool little dungeon crawler in which the in-game world is a hpyerbolic space. 
 - :fa-tv: Eversion of Spheres: [Part 1](https://www.youtube.com/watch?v=sKqt6e7EcCs) and [Part 2](https://www.youtube.com/watch?v=x7d13SgqUXg)
 - :fa-tv: [Understanding Tensors](https://www.youtube.com/watch?v=f5liqUk0ZTw)
 - :fa-external-link: [Hopf Fibration Toy](http://philogb.github.io/page/hopf/)
