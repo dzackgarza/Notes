@@ -16,3 +16,4 @@
 	- Explain larger space-filling foliations
 
 ## Interesting Results
+- $\pi_
