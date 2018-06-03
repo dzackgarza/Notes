@@ -10,7 +10,7 @@
 	- Partition of $\mathbf{Top}$ into homeomorphism types
 - Why it's interesting to study
 	- Understanding + classification
-	- Some 
+	- Some practical applications
 ## Homotopy Theory
 - What is a homotopy
 - Homotopy equivalence of spaces
