@@ -10,7 +10,7 @@
 
 ## Homotopy Theory
 - What is a homotopy
-- Homotopy equivalence of spaces / partition of $\
+- Homotopy equivalence of spaces / partition of $\mathbf{Top}$ into homotopy types
 
 ## The Hopf Fibration
 - Explanation of fibrations
