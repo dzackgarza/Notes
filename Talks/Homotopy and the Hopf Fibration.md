@@ -17,4 +17,4 @@
 
 ## Interesting Results
 - $\pi_3(S^2) = \mathbb{Z}$
-- $\pi_4(S^2) = \mathbb{Z}^2$
+- $\pi_4(S^2) = \mathbb{Z}_2$
