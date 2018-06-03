@@ -16,5 +16,5 @@
 	- Explain larger space-filling foliations
 
 ## Interesting Results
-- $\pi_3(S^2) = \mathjbb$
-- $\pi_4(S^2) =
+- $\pi_3(S^2) = \mathbb{Z}$
+- $\pi_4(S^2) = \mathbb{Z}^2$
