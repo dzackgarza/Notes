@@ -6,7 +6,7 @@
 
 
 ## Algebraic Topology
-- Homeomorphisms
+- Homeomorphisms and classification
 
 ## Homotopy Theory
 - What is a homotopy
