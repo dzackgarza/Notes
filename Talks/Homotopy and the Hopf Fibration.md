@@ -13,6 +13,6 @@
 - Visualization: [Hopf Fibration Tool/Tutorial](http://philogb.github.io/page/hopf/)
 - Visualization: [Hopf Shader](https://www.shadertoy.com/view/MstfDs)
 	- Explain inner torus
-	- Explain s
+	- Explain larger space-filling foliations
 
 ## Interesting Results
