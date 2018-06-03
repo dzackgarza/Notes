@@ -21,6 +21,7 @@
 - Explanation of fibrations
 	- Fiber bundles: cylinder vs mobius strip
 - $S^1 \to S^3 \to S^2$
+- Ster
 - Visualization: [Hopf Fibration Tool/Tutorial](http://philogb.github.io/page/hopf/)
 - Visualization: [Hopf Shader](https://www.shadertoy.com/view/MstfDs)
 	- Explain inner torus
