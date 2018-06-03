@@ -2,7 +2,8 @@
 
 ## Introduction
 - Who am I?
-- Link to 
+- Link to undergraduate research
+- 
 
 ## Homotopy Theory
 
