@@ -6,6 +6,8 @@
 -
 
 ## Homotopy Theory
+- What is a homotopy
+- Whe
 
 ## The Hopf Fibration
 - Explanation of fibrations
