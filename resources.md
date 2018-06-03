@@ -71,8 +71,11 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 Don't forget to take some time to get excited about what you're studying!
 
 - [Hyper Rouge](http://www.roguetemple.com/z/hyper/)
-	- A cool little dungeon crawler in which the in-game world is a hpyerbolic space. 
+	- A cool little dungeon crawler in which the in-game world is a hpyerbolic space.
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/xAFrKKApHTY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 - :fa-tv: Eversion of Spheres: [Part 1](https://www.youtube.com/watch?v=sKqt6e7EcCs) and [Part 2](https://www.youtube.com/watch?v=x7d13SgqUXg)
+	- A great way to get some visual intuition for what homeomorphisms and/or homotopy equivalences might look like
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/sKqt6e7EcCs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 - :fa-tv: [Understanding Tensors](https://www.youtube.com/watch?v=f5liqUk0ZTw)
 - :fa-external-link: [Hopf Fibration Toy](http://philogb.github.io/page/hopf/)
 - Reviews of some of the big Math-related Youtubers:
