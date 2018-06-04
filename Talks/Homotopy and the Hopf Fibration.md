@@ -86,7 +86,8 @@
 ## Interesting Results
 - $\pi_3(S^2) = \mathbb{Z}$
 	- Huge surprise! Mathematicians did not expect any nontrivial higher homotopy groups
-	- ![asdsa](../Research/assets/2-22ReadingNotes-52d83.png)
+	- ![asdsa](../Topology/homotopyGroupsStabilize.png)
 - $\pi_4(S^2) = \mathbb{Z}_2$
 - $\pi_{\geq 3} S^3 = \pi_{\geq 3} S^2$
-- The modern zoo: [wikipedia](https://en.wikipedia.org/wiki/Homotopy_groups_of_spheres#Table)
+- How to compute
+	- ![asdas](../Research/assets/838f4c41e48b25a7bed35abc7e7d950e_1.svg)
