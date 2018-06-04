@@ -11,7 +11,6 @@ $$ \cdots \mapsvia{} H_n(A) \mapsvia{i_*} H_n(B) \mapsvia{p_*} H_n(C) \mapsvia{\
 where $\delta$ is the "connecting homomorphism".
 
 
-
 Now specialize to the case where $A_*$ is a chain complex, $B_* \subset A_*$ is a subcomplex, and consider the quotient $A_*/B_*$. We have a short exact sequence
 $$ 0 \mapsvia{} B_* \mapsvia{i} A_* \mapsvia{p} A_*/B_* \mapsvia{} 0$$
 
