@@ -60,6 +60,7 @@
 		- Continues spirit of Klein's Erlangeng program - classify geometries by associated automorphism groups
 	- A section of a vector bundle is just a vector field - classifying sections yields number of independent vector fields
 		- Yields results like the hairy ball theorem: there is no non-vanishing tangent vector field on $S^2$
+	- Also yields a method of studying connections on bundles (important in physics)
 
 ## The Hopf Fibration
 - $S^1 \to S^3 \to S^2$
@@ -80,6 +81,7 @@
 	- Explain larger space-filling foliations
 		- Move points away from center of $S^2$
 - Not nullhomotopic!
+- Can suspend to yield generators of stable homotopy groups, important for studying cobordism
 
 ## Interesting Results
 - $\pi_3(S^2) = \mathbb{Z}$
