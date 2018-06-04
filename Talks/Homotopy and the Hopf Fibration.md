@@ -67,11 +67,12 @@
 	- The hopf map is $S^3 to S^2$, and the preimage of a point on $S^2$ is circles
 	- A nontrivial bundle, i.e. $S^3 \neq S^1 \times S^2$ (different homotopy groups)
 - Stereographic projection
-	- Image
+	- See image/diagram
 - Visualization: [Hopf Fibration Tool/Tutorial](http://philogb.github.io/page/hopf/)
 	- Explain that this is stereographic projection from $S^3$ to $\mathbb{R}^3$
 - Visualization: [Hopf Shader](https://www.shadertoy.com/view/MstfDs)
 	- Explain inner torus
+		- Move a point around $S^2$ and look at all of the preimage circles - generates an intertwined torus
 	- Explain larger space-filling foliations
 
 ## Interesting Results
