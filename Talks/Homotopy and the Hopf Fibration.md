@@ -62,9 +62,10 @@
 		- Yields results like the hairy ball theorem: there is no non-vanishing tangent vector field on $S^2$
 
 ## The Hopf Fibration
-- Explanation of fibrations
-	- Fiber bundles: cylinder vs mobius strip
 - $S^1 \to S^3 \to S^2$
+	- A family of circles, parameterized by a sphere
+	- The hopf map is $S^3 to S^2$, and the preimage of a point on $S^2$ is circles
+	- A nontrivial bundle, i.e. $S^3 \neq S^1 \times S^2$ (different homotopy groups)
 - Stereographic projection
 	- Image
 - Visualization: [Hopf Fibration Tool/Tutorial](http://philogb.github.io/page/hopf/)
