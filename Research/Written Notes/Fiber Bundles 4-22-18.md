@@ -149,7 +149,7 @@ S^1 \to E \mapsvia{\pi} S^1
 $$
 
 There is a trivial bundle, when $E = S^1 \cross S^1 = T^2$, the torus:
-![torus bundle](../../../../images/2018/05/torus-bundle.png)
+![torus bundle](../../images/2018/05/torus-bundle.png)
 
 There is also a nontrivial bundle, $E = K$, the Klein bottle:
 ![Klein bottle](../../../../../images/2018/05/klein-bottle.png)
