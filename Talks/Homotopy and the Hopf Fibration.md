@@ -39,7 +39,17 @@
 		- Derived and $(\infty, n)$ categories for small  $n$ (See Jacob Lurie's work)
 		- Homotopy hypothesis, a categorical equivalence between $\mathbf{Top}$ and $\infty\mathbf{Groupoid}$
 - Use on the geometric side: Fiber Bundles
-	- 
+	- Fibration, but drop uniqueness and add local triviality
+		- Locally a product: see cylinder vs mobius strip
+	- Most immediately useful applications: vector bundles. Most canonical example: tangent bundle on a manifold
+		- Tangent space at a point: think of circle in $\mathbb{R}^3$ now, a tangent vector at a point is somewhere on a line. Rotate up for a cylinder
+		- More generally: a plane touching a blob
+		- Allows doing calculus: if $f: M \to N$ is a $C^1$ function, then one can define the derivative as $DF: TM \to TN$
+	- Interlude on why Manifolds are important (more than just theoretically)
+		- Random sampling: can suppose that the underlying dimension has a manifold structure
+		- Nonlinear fitting: instead of fitting to a line or projecting to nearby planes, fit to an arbitrary smooth shape
+		- Dimensionality reduction: replace PCA, Linear Discriminant Analysis, etc with projections onto a low dimensional manifold
+		- Currently making it's way into machine learning, see [scikit-learn](http://scikit-learn.org/stable/modules/manifold.html)
 
 ## The Hopf Fibration
 - Explanation of fibrations
