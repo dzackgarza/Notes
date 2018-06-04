@@ -92,4 +92,3 @@
 - $\pi_4(S^2) = \mathbb{Z}_2$
 - $\pi_{\geq 3} S^3 = \pi_{\geq 3} S^2$
 - How to compute
-	- ![asdas](../Research/assets/838f4c41e48b25a7bed35abc7e7d950e_1.svg)
