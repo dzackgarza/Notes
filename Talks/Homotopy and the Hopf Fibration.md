@@ -76,3 +76,4 @@
 ## Interesting Results
 - $\pi_3(S^2) = \mathbb{Z}$
 - $\pi_4(S^2) = \mathbb{Z}_2$
+- The modern zoo: [wikipedia](https://en.wikipedia.org/wiki/Homotopy_groups_of_spheres#Table)
