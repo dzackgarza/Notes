@@ -28,7 +28,7 @@ $$E_2^{p,q} = H^p(\CP^2) \tensor H^q(S^1)$$
 
 Thus the $E_2$ page of the spectral sequence looks like this:
 
-```latex {cmd=true, hide=false, run_on_save=true}
+```latex {cmd=true hide=false run_on_save=true}
 \documentclass{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
