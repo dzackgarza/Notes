@@ -11,11 +11,24 @@
 - Why it's interesting to study
 	- Understanding + classification
 	- Some practical applications
+- The method of algebraic invariants
+
+
 ## Homotopy Theory
 - What is a homotopy
 - Homotopy equivalence of spaces
 	- Partition of $\mathbf{Top}$ into homotopy types
--
+- Weak equivalences
+
+# Fibrations
+- The homotopy lifting property
+- Every map can be replaced by a fibration
+	- $X \to_f Y$ factors through $M_f = X \times I \cup_f Y$ via a homotopy equivalence
+		- See diagram for $M_f$, can also interpret it as the pullback of the endpoint map on $Y$, i.e. $Y^I \to Y, \gamma \mapsto \gamma(1)$.
+- Fibrations induce LES in homotopy
+- Modern categorical work:
+	- Model categories, defined by weak equivalences and (co)fibrations
+	- Generalizes both homotopy theory and homological algebra
 
 ## The Hopf Fibration
 - Explanation of fibrations
