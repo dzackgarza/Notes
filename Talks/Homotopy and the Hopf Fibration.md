@@ -68,12 +68,17 @@
 	- A nontrivial bundle, i.e. $S^3 \neq S^1 \times S^2$ (different homotopy groups)
 - Stereographic projection
 	- See image/diagram
+- How do you get the map?
+	- Identify $\mathbb{R}^4 = \mathbb{C}^2$ and $\mathbb{R}^3 = \mathbb{R} \times \mathbb{C}$ and cook up a map $(z_1, z_2) \mapsto (z_3, r)$
+	- Then check all points in image have norm 1, so are on $S^2 \subset \mathbb{R}^3$
+	- Then check preimage of a point, find any two points in preimage are related by a phase, so are on a circle
 - Visualization: [Hopf Fibration Tool/Tutorial](http://philogb.github.io/page/hopf/)
 	- Explain that this is stereographic projection from $S^3$ to $\mathbb{R}^3$
 - Visualization: [Hopf Shader](https://www.shadertoy.com/view/MstfDs)
 	- Explain inner torus
-		- Move a point around $S^2$ and look at all of the preimage circles - generates an intertwined torus
+		- Move a point around $S^2$ and look at all of the preimage circles - generates an intertwined torus (after projection)
 	- Explain larger space-filling foliations
+		- Move points away from center of $S^2$
 
 ## Interesting Results
 - $\pi_3(S^2) = \mathbb{Z}$
