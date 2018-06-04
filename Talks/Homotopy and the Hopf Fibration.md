@@ -87,6 +87,8 @@
 - $\pi_3(S^2) = \mathbb{Z}$
 	- Huge surprise! Mathematicians did not expect any nontrivial higher homotopy groups
 	- ![asdsa](../Topology/homotopyGroupsStabilize.png)
+	- Compute using spectral sequence $F \to E \to B$ a fibration results in
+	  $$E_2^{p,q} = H^p(B, H^q(F; G)) = H^p(B;G) \tensor H^q(F; G)$$
 - $\pi_4(S^2) = \mathbb{Z}_2$
 - $\pi_{\geq 3} S^3 = \pi_{\geq 3} S^2$
 - How to compute
