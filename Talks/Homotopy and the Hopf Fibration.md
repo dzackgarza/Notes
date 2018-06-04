@@ -58,6 +58,7 @@
 	- Classifying bundles: another way to distinguish spaces
 		- Classifications turn up in homology - see $\mathbb{Z}_2$ in relation to $\RR \to M \to S^1$
 		- Continues spirit of Klein's Erlangeng program - classify geometries by associated automorphism groups
+	- A section of a vector bundle is just a vector field - classifying sections yields number of independent vector fields
 
 ## The Hopf Fibration
 - Explanation of fibrations
