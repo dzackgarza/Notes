@@ -8,10 +8,14 @@
 ## Algebraic Topology
 - Homeomorphisms and classification
 	- Partition of $\mathbf{Top}$ into homeomorphism types
+- Measure holes in spaces
 - Why it's interesting to study
 	- Understanding + classification
 	- Some practical applications
+		- Topological data anaylsis - given an incomplete sample, can we determine holes in the data set? (i.e. where data is not generated)
+		- Sensor networks - find holes in covered regions
 - The method of algebraic invariants
+
 
 
 ## Homotopy Theory
@@ -50,6 +54,7 @@
 		- Nonlinear fitting: instead of fitting to a line or projecting to nearby planes, fit to an arbitrary smooth shape
 		- Dimensionality reduction: replace PCA, Linear Discriminant Analysis, etc with projections onto a low dimensional manifold
 		- Currently making it's way into machine learning, see [scikit-learn](http://scikit-learn.org/stable/modules/manifold.html)
+		- 3D printing: every object needs to be a manifold!
 
 ## The Hopf Fibration
 - Explanation of fibrations
