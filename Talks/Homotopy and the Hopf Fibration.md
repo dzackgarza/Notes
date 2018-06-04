@@ -55,6 +55,9 @@
 		- Dimensionality reduction: replace PCA, Linear Discriminant Analysis, etc with projections onto a low dimensional manifold
 		- Currently making it's way into machine learning, see [scikit-learn](http://scikit-learn.org/stable/modules/manifold.html)
 		- 3D printing: every object needs to be a manifold!
+	- Classifying bundles: another way to distinguish spaces
+		- Classifications turn up in homology - see $\mathbb{Z}_2$ in relation to $\RR \to M \to S^1$
+		- Continues spirit of Klein's Erlangeng program - classify geometries by associated automorphism groups
 
 ## The Hopf Fibration
 - Explanation of fibrations
