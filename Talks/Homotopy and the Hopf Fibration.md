@@ -2,7 +2,7 @@
 
 ## Introduction
 - Who am I?
-- Explain ties to udner
+- Explain ties to undergraduate research
 
 
 ## Algebraic Topology
