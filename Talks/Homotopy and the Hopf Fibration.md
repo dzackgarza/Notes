@@ -19,16 +19,27 @@
 - Homotopy equivalence of spaces
 	- Partition of $\mathbf{Top}$ into homotopy types
 - Weak equivalences
+- Homotopy category
+	- Obtained by 'localizing' at weak equivalences
+	- Categorical version, recover module localization by localizing at multiplication maps
 
 # Fibrations
-- The homotopy lifting property
-- Every map can be replaced by a fibration
-	- $X \to_f Y$ factors through $M_f = X \times I \cup_f Y$ via a homotopy equivalence
-		- See diagram for $M_f$, can also interpret it as the pullback of the endpoint map on $Y$, i.e. $Y^I \to Y, \gamma \mapsto \gamma(1)$.
-- Fibrations induce LES in homotopy
-- Modern categorical work:
-	- Model categories, defined by weak equivalences and (co)fibrations
-	- Generalizes both homotopy theory and homological algebra
+- Use in homotopy theory (algebraic side)
+	- The homotopy lifting property + uniqueness
+		- Allows pushing homotopies upstairs
+		- Use: covering space theory
+	- Every map can be replaced by a fibration
+		- $X \to_f Y$ factors through $M_f = X \times I \cup_f Y$ via a homotopy equivalence
+			- See diagram for $M_f$, can also interpret it as the pullback of the endpoint map on $Y$, i.e. $Y^I \to Y, \gamma \mapsto \gamma(1)$.
+	- Fibrations induce LES in homotopy
+	- Modern categorical work:
+		- Follows late work of Grothendieck (~1990)
+		- Model categories, defined by weak equivalences and (co)fibrations
+		- Generalizes both homotopy theory and homological algebra
+		- Derived and $(\infty, n)$ categories for small  $n$ (See Jacob Lurie's work)
+		- Homotopy hypothesis, a categorical equivalence between $\mathbf{Top}$ and $\infty\mathbf{Groupoid}$
+- Use on the geometric side: Fiber Bundles
+	- 
 
 ## The Hopf Fibration
 - Explanation of fibrations
