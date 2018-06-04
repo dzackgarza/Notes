@@ -79,6 +79,7 @@
 		- Move a point around $S^2$ and look at all of the preimage circles - generates an intertwined torus (after projection)
 	- Explain larger space-filling foliations
 		- Move points away from center of $S^2$
+- Not nullhomotopic!
 
 ## Interesting Results
 - $\pi_3(S^2) = \mathbb{Z}$
