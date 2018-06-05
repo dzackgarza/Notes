@@ -65,7 +65,7 @@
 ## The Hopf Fibration
 - $S^1 \to S^3 \to S^2$
 	- A family of circles, parameterized by a sphere
-	- The hopf map is $S^3 to S^2$, and the preimage of a point on $S^2$ is circles
+	- The hopf map is $S^3 \to S^2$, and the preimage of a point on $S^2$ is circles
 	- A nontrivial bundle, i.e. $S^3 \neq S^1 \times S^2$ (different homotopy groups)
 - Stereographic projection
 	- See image/diagram
