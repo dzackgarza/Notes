@@ -4,7 +4,7 @@ For help with syntax, see [this link on Math StackExchange](https://math.meta.st
 
 Rules and Guidelines
 
-This rules need to be read before the competition starts. 
+This rules need to be read before the competition starts.
 
 1. Participants must correctly evaluate indefinite or definite, proper, single real variable integrals in the time allotted.
 2. In each round, both participants will approach the board and an integral will be shown. The timer will then begin a 10 second countdown at their discretion, during which neither participant may write on the board. When the timer announces the end of the countdown, participants may begin writing their work and solutions on the board.
@@ -23,7 +23,7 @@ Here are some basic examples, add further ones in list format
 - $\int \frac{1}{x} dx$ = $\ln (x)$
 - $\int_{-\infty}^\infty e^{-x^2} dx$ = $\sqrt{\pi}$
 - $\int_0^1 \int_y^1 \sin (x^2) dx dy$ = $\sin^2(\frac{1}{2})$
-- $\int_{-\infty}^{\infty} x^3 e^{-x} dx$ = 
+- $\int_{-\infty}^{\infty} x^3 e^{-x} dx$ =
 - $\int_2^\infty \frac{1}{x(\ln (x))^2} dx$ = $\frac{1}{log(2)}$
 - $\int \frac{x}{x^2-x+\frac{5}{6}}dx$ = $\Im$
 
@@ -39,7 +39,7 @@ Here are some basic examples, add further ones in list format
 - $\displaystyle \int \frac{x + \sin(x)}{1 + \cos(x)}dx = x \tan \frac{x}{2} + C$
 - $\displaystyle \int \frac{1}{x^2}\cos(\frac{1}{x})dx = - \sin{\frac{1}{x}} + C$
 - $\displaystyle \int \frac{1}{x^2\sqrt{4x^2 -1}}dx = \frac{\sqrt{4x^2-1}}{x} +C$
-- $\displaystyle \int (2^x + x^2) dx = \frac{2^x}{\ln(2)} + \frac{1}{3}x^3 + C$ 
+- $\displaystyle \int (2^x + x^2) dx = \frac{2^x}{\ln(2)} + \frac{1}{3}x^3 + C$
 
 
 ## Jonathan's teacher's stuff
@@ -86,7 +86,7 @@ Here are some basic examples, add further ones in list format
 - $\displaystyle\int \frac{1}{\sin(x) + \cos(x)}dx$=$(-1-i)(-1)^{3/4}tanh^{-1}(\frac{tan(\frac{x}{2})-1}{\sqrt{2}})$  **way too hard!!!
 ### Interesting u-substitutions
 - $\displaystyle\int \sin(x)\cos(\cos(x)) dx$=$-sin(cos(x))$
-- $\displaystyle\int e^{(x+e^x)} dx$=$e^{e^{x}}$ 
+- $\displaystyle\int e^{(x+e^x)} dx$=$e^{e^{x}}$
 - $\displaystyle\int e^{\sin^2(x)}\sin(2x)dx$= $e^{sin^2(x)}$
 - $\displaystyle\int \frac{\sin^3{\sqrt{x}}}{2\sqrt{x}}dx$=$\frac{cos(3\sqrt{x})-9cos(\sqrt{x})}{12}$
 - $\displaystyle\int \frac{\ln(x)}{x}dx$=$\frac{log^2(x)}{2}$
