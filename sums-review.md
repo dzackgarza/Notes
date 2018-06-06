@@ -4,4 +4,4 @@
 
 
 ## Early Club Motivation
-[  early-motivation.md]
+[ [ m | early-motivation.md]
