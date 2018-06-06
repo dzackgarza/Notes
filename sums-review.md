@@ -4,4 +4,5 @@
 
 
 ## Early Club Motivation
-[ [ m | early-motivation.md ]]
+
+[[ m | early-motivation.md ]]
