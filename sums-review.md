@@ -5,4 +5,4 @@
 
 ## Early Club Motivation
 
-[[ Early Motivation | ../early-motivation.md ]]
+[[ Early Motivation | ../SUMS/early-motivation.md ]]
