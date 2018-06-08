@@ -50,7 +50,6 @@ q ~/~ S^1 & \cdot & \cdot & \cdot & \cdot &  \\
 0 & \encircle{$\mathbb{Z}$} & \cdot & \text{cokernel } d_2^{0,1} & \cdot &  \\
  & 0 & 1 & 2 & 3 & p ~/~ S^2
 \end{tikzcd}
-$$
 }
 
 \end{document}
