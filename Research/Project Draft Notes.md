@@ -3,7 +3,7 @@
 - Define homotopy invariance
 - Classification of abelian groups
   - Free and torsion
-- Define $$\pi_n(X)$$
+- Define $\pi_n(X)$
   - Show functoriality
   - Show homotopy invariant
 - Whitehead's Theorem (homotopy and homology versions)
