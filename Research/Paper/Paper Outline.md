@@ -41,11 +41,12 @@
 - Goal: Freudenthal Suspension
 - Goal: Method of killing homotopy
   - Needed due to counterexamples of Whitehead Theorem
-  - Subgoal: Spectral Sequence
   - Subgoal: Fiber bundle theory
+- Goal: Spectral Sequences
+- Goal: Stable Homotopy Groups
 
 # Other Ideas
-# Possible Project Outline
+## Possible Project Outline
 
 - CW Complexes
 - Define homotopy
