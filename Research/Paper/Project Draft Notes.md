@@ -43,8 +43,8 @@
     - Except for $\pi_{4k-1}$
   - See [here](https://web.stanford.edu/~amwright/HomotopyGroupsOfSoheres.pdf)
 - Harder results
-  - $\pi_n+1 S^n = Z\delta_2 + Z_2 \delta_{n \geq 3}$
-  - $\pi_n+2 S^n = Z_2$
+  - $\pi_{n+1} S^n = Z\delta_2 + Z_2 \delta_{n \geq 3}$
+  - $\pi_{n+2} S^n = Z_2$
 - Exact sequences
 - Splitting and extension problem
 - Degree of a map to $S^n$
