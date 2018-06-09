@@ -36,7 +36,7 @@ Things that are homotopy equivalent to CW complexes:
 - Loop spaces of CW complexes
 - Eilenberg-MacLane spaces? $K(\pi, n)$.
 
-The Whitehead theorem holds for these: 
+The Whitehead theorem holds for these:
 $X \mapsvia{f} Y$ is an homotopy equivalence iff $\pi_*(X) \mapsvia{f_*} \pi_*(Y)$ is an isomorphism.
 
 Recall the weak topology for infinite CW complex: $U$ is open in $X$ iff $U \cap X^n$ is open for every $n$.
@@ -79,7 +79,7 @@ Hurewicz theorem: the bottom homology and homotopy groups are isomorphic, and ho
 
 General note: there are equivalent "relative versions" of most of these theorems.
 
-**Spectral Sequence:** Page 45. 
+**Spectral Sequence:** Page 45.
 
 For any fibration $F \mapsvia{} E \mapsvia{\pi} B$, we get a LES in homotopy
 $\pi_n(F) \into \pi_n(E) \into \pi_n(B) \mapsvia{\del} \pi_{n-1}(F)$
@@ -90,7 +90,7 @@ For CW complexes and a fibration, the relationship is nice - look at the total s
 
 *Note: use LES as trivial example of spectral sequence! Write out the pages, differentials, etc*
 
-The spectral sequence relates the cohomology of *successive pairs* in the filtration to the cohomology of the total space. 
+The spectral sequence relates the cohomology of *successive pairs* in the filtration to the cohomology of the total space.
 
 **Theorem**: If $B$ is path-connected and $\pi_1(B, b_0)$ acts trivially on $H^*(F)$, then there are isomorphisms
 $$
@@ -130,26 +130,26 @@ $\cdot \tensor \QQ$ is a right-exact functor, most results in this section are a
 
 Homotopy theory over $\QQ$ is much easier than over $\ZZ$. Samples results:
 $$
-\pi_i(S^{2n-1}) \otimes \QQ = \begin{cases} 
-\QQ & i=2n-1 \\ 
-0 & \text{otherwise} 
+\pi_i(S^{2n-1}) \otimes \QQ = \begin{cases}
+\QQ & i=2n-1 \\
+0 & \text{otherwise}
 \end{cases}
 $$
 
 
 Then using the fact that $\pi_i(S^{2n-1})$ is always finitely generated, we can conclude
 $$
-\pi_i(S^{2n-1}) = \begin{cases} 
-\ZZ & i=2n-1 \\ 
-\text{a finite group}  ~G & \text{otherwise} 
+\pi_i(S^{2n-1}) = \begin{cases}
+\ZZ & i=2n-1 \\
+\text{a finite group}  ~G & \text{otherwise}
 \end{cases}
 $$
 This yields for even $n$:
 $$
-\pi_i(S^{n})  = \begin{cases} 
-\ZZ & i=n \\ 
+\pi_i(S^{n})  = \begin{cases}
+\ZZ & i=n \\
 \ZZ \oplus G & i=2n-1 \\
-H & \text{otherwise} 
+H & \text{otherwise}
 \end{cases}
 $$
 for some finite groups $G,H$!

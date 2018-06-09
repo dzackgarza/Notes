@@ -40,5 +40,6 @@
 - Goal: CW Complexes and Cellular Approximation
 - Goal: Freudenthal Suspension
 - Goal: Method of killing homotopy
+  - Needed due to counterexamples of Whitehead Theorem
   - Subgoal: Spectral Sequence
   - Subgoal: Fiber bundle theory
