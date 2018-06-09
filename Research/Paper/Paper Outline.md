@@ -34,6 +34,7 @@
   - *Proof*: Freudenthal suspension in stable range?
 
 # General Outline
+- Goal: why care about spheres?
 - Goal: Define homotopy groups
 - Goal: Covering Spaces and Universal Cover
 - Goal: The degree of a map
