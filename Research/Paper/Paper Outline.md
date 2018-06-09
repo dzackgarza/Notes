@@ -43,6 +43,7 @@
 - Goal: Freudenthal Suspension
 - Goal: Method of killing homotopy
   - Needed due to counterexamples of Whitehead Theorem
+  - Subgoal: Postnikov towers
   - Subgoal: Fiber bundle theory
 - Goal: Spectral Sequences
 - Goal: Stable Homotopy Groups
