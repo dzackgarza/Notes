@@ -32,3 +32,13 @@
   - *Proof*: Freudenthal suspension in stable range?
 - Theorem: $\pi_{n+2} S^n = \ZZ_2$ for $n \geq 2$?
   - *Proof*: Freudenthal suspension in stable range?
+
+# General Outline
+- Goal: Define homotopy groups
+- Goal: Covering Spaces and Universal Cover
+- Goal: The degree of a map
+- Goal: CW Complexes and Cellular Approximation
+- Goal: Freudenthal Suspension
+- Goal: Method of killing homotopy
+  - Subgoal: Spectral Sequence
+  - Subgoal: Fiber bundle theory
