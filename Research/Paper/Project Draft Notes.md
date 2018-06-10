@@ -32,7 +32,7 @@
 - Compute $\pi_4 S^2$
 - Compute first stable $\pi_k$
 - Freudenthal Suspension
-- Eilenberg-Maclane Spaces
+- Eilenberg-MacLane Spaces
 - $H^n (X; G) = [X, K(G, n)]$
 - Summary of "easy" results:
   - $\pi_k S^1 = 0, i > 1$

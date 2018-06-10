@@ -180,7 +180,7 @@ $$
  && 0 && 1 && 2
 \end{array}
 $$
-Which is equal to 
+Which is equal to
 $$
 \begin{array}{c|ccc}
 1 && H^0(S^2, \ZZ) && 0 && H^2(S^2, \ZZ) \\

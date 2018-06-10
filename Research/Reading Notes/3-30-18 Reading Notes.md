@@ -16,11 +16,11 @@ Let $G$ be a topological group, and for a topological space $X$, write $bG(X)$ f
 
 A characteristic class $c$ of principal $G$-bundles is then a natural transformation from $bG$ to a cohomology functor $H*$, regarded also as a functor to Set.
 
-In other words, a characteristic class associates to any principal $G$-bundle $P → X$ in $bG(X)$ an element $c(P)$ in $H^*(X)$ such that, if $f : Y → X$ is a continuous map, then $c(f^*P) = f^*c(P)$. On the left is the class of the pullback of $P$ to $Y$; on the right is the image of the class of $P$ under the induced map in cohomology.
+In other words, a characteristic class associates to any principal $G$-bundle $P → X$ in $bG(X)$ an element $c(P)$ in $H^* (X)$ such that, if $f : Y → X$ is a continuous map, then $c(f^* P) = f^* c(P)$. On the left is the class of the pullback of $P$ to $Y$; on the right is the image of the class of $P$ under the induced map in cohomology.
 
-When the theory was put on an organised basis around 1950 (with the definitions reduced to homotopy theory) it became clear that the most fundamental characteristic classes known at that time (the Stiefel–Whitney class, the Chern class, and the Pontryagin classes) were reflections of the classical linear groups and their maximal torus structure.
+When the theory was put on an organized basis around 1950 (with the definitions reduced to homotopy theory) it became clear that the most fundamental characteristic classes known at that time (the Stiefel–Whitney class, the Chern class, and the Pontryagin classes) were reflections of the classical linear groups and their maximal torus structure.
 
-The prime mechanism then appeared to be this: Given a space $X$ carrying a vector bundle, that implied in the homotopy category a mapping from $X$ to a classifying space $BG$, for the relevant linear group $G$. For the homotopy theory the relevant information is carried by compact subgroups such as the orthogonal groups and unitary groups of $G$. Once the cohomology ${\displaystyle H^{*}(BG)}$ was calculated, once and for all, the contravariance property of cohomology meant that characteristic classes for the bundle would be defined in ${\displaystyle H^{*}(X)}$ in the same dimensions.
+The prime mechanism then appeared to be this: Given a space $X$ carrying a vector bundle, that implied in the homotopy category a mapping from $X$ to a classifying space $BG$, for the relevant linear group $G$. For the homotopy theory the relevant information is carried by compact subgroups such as the orthogonal groups and unitary groups of $G$. Once the cohomology ${\displaystyle H^* (BG)}$ was calculated, once and for all, the contravariance property of cohomology meant that characteristic classes for the bundle would be defined in ${\displaystyle H^* (X)}$ in the same dimensions.
 
 Characteristic numbers solve the oriented and unoriented bordism questions: two manifolds are (respectively oriented or unoriented) cobordant if and only if their characteristic numbers are equal.
 
@@ -53,7 +53,7 @@ A projection onto $X$. For a product space, this is just the projection onto the
 
 A principal $G$-bundle, where $G$ denotes any topological group, is a fiber bundle $π:P → X$ together with a continuous right action $P × G → P$ such that $G$ preserves the fibers of $P$ (i.e. if $y ∈ P_x$ then $yg ∈ P_x$ for all $g ∈ G$) and acts freely and transitively on them. This implies that each fiber of the bundle is homeomorphic to the group $G$ itself.
 
-Since the group action preserves the fibers of $π:P → X$ and acts transitively, it follows that the orbits of the $G$-action are precisely these fibers and the orbit space $P/G$ is homeomorphic to the base space $X$. Because the action is free, the fibers have the structure of $G$-torsors. A $G$-torsor is a space which is homeomorphic to $G$ but lacks a group structure since there is no preferred choice of an identity element.
+Since the group action preserves the fibers of $π:P → X$ and acts transitively, it follows that the orbits of the $G$-action are precisely these fibers and the orbit space $P/G$ is homeomorphic to the base space $X$. Because the action is free, the fibers have the structure of $G\dash$torsors. A $G$-torsor is a space which is homeomorphic to $G$ but lacks a group structure since there is no preferred choice of an identity element.
 
 **One of the most important questions regarding any fiber bundle is whether or not it is trivial, i.e. isomorphic to a product bundle.** A principal bundle is trivial if and only if it admits a global cross section.
 
@@ -63,9 +63,9 @@ The prototypical example of a smooth principal bundle is the frame bundle of a s
 
 A normal (regular) covering space $p:C → X$ is a principal bundle where the structure group
 
-$$G=\pi _{1}(X)/p_{*}(\pi _{1}(C))$$
+$$G=\pi _{1}(X)/p_* (\pi_{1}(C))$$
 
-acts on the fibres of p via the monodromy action. In particular, the universal cover of $X$ is a principal bundle over $X$ with structure group $π_1(X)$ (since the universal cover is simply connected and thus $π_1(C)$ is trivial).
+acts on the fibers of p via the monodromy action. In particular, the universal cover of $X$ is a principal bundle over $X$ with structure group $π_1(X)$ (since the universal cover is simply connected and thus $π_1(C)$ is trivial).
 
 ## Classification
 

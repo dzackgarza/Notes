@@ -34,17 +34,17 @@ $$
 
 In other words, we perform the following procedure: each rational function has a finite number of zeros and poles, so we imagine these as points on the Riemann sphere, each with an integer attached such that the sum of these integers equals zero.
 
-Then, we imagine wiggling these functions continuously - this induces movement of the points on the sphere. When any two points coincide, they "coalesce" and their correspdoning integer labels are added together.
+Then, we imagine wiggling these functions continuously - this induces movement of the points on the sphere. When any two points coincide, they "coalesce" and their corresponding integer labels are added together.
 
 We thus envision points in $K(\ZZ, 2) = CP^\infty$ as collections of "particle-antiparticle" swarms on the $S^2$:
 
-![swarm 3](../../../../images/2018/05/swarm-3.png)
+![swarm 3](/home/zack/notes/images/2018/05/swarm-3.png)
 
 There are two immediate generalizations:
 
 - First, replace $S^2$ with $S^n$ to obtain a corresponding picture for $K(\ZZ, n)$
-- Then, replace $\ZZ$ with an arbitrary abelian group. We then require that the aggregate word formed by all of the points multiples to the identity, and that coaslescing corresponds to multiplication of elements.
+- Then, replace $\ZZ$ with an arbitrary abelian group. We then require that the aggregate word formed by all of the points multiples to the identity, and that coalescing corresponds to multiplication of elements.
 
-![group swarm](../../../../images/2018/05/group-swarm.png)
+![group swarm](.images/2018/05/group-swarm.png)
 
 This yields a geometric picture for $K(G, n)$ for any abelian group $G$. $\qed$

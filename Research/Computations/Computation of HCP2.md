@@ -161,7 +161,7 @@ $$H^1(S^5) = 0 \implies H^2(\CP^2) \cong \ZZ~\text{and}~H^1(\CP^2) = 0$$
 - This means that $E_\infty^{0,1} \oplus E_\infty^{1,0} = 0$.
 - Consider the process of obtaining the $E_3$ page:
   - $E_3^{0,1}$ is obtained from the homology of the complex $0 \into \ZZ \mapsvia{\del_1} H^2(\CP^2) \into 0$, i.e. we have $E_3^{0,1} = \frac{\ker \del_1}{\im 0} = \ker \del_1$
-    - Note that all differentials after the $E_3$ page extend into the $p<0$ and $q<0$ quadrants, so there is stabiization here and $E_3^{0,1} = E_\infty^{0,1}$
+    - Note that all differentials after the $E_3$ page extend into the $p<0$ and $q<0$ quadrants, so there is stabilization here and $E_3^{0,1} = E_\infty^{0,1}$
       - But if the homology of this sequence is not zero, then $E_3^{1,0} \neq 0$, so $E_\infty^{0,1} \neq 0$ and $E_\infty^{0,1} \oplus E_\infty^{1,0} \neq 0$, a contradiction.
     - So this is an acyclic complex, and thus an exact sequence.
     - **So $\del_1$ is an isomorphism, and $H^2(\CP^2) \cong \ZZ$**

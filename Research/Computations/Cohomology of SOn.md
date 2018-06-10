@@ -269,4 +269,4 @@ Hatcher seems to do some computation involving Bockstein homomorphisms on page 3
 
 $$ H^* (SO^5) \cong F[x,y,z] / (2x, x^4, y^4, z^2, xz, x^3 - y^2)$$
 
-where $F$ is a "free graded commutative associative algebra over $\ZZ$". Is this the same thing as a DGA? And how exactly does one extract the list of cohomology groups from this representation?
+where $F$ is a "free graded commutative associative algebra over $\ZZ$". Is this the same thing as a differential graded algebra (DGA)? And how exactly does one extract the list of cohomology groups from this representation?
