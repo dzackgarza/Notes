@@ -1,0 +1,32 @@
+\documentclass[convert]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{adjustbox}
+\usepackage{mathdots}
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)]
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+    
+\newcommand\kmi[2]{\dfrac{\ker \left(d_0^{\,#1, #2}\right)}{\mathrm{im} \left( d_0^{\,\the\numexpr(#1 + 0)\relax, \the\numexpr(#2 + 1)}\right)}}
+
+\begin{document}
+
+\begin{tikzpicture}
+\draw [dashed] (-6,-9) -- (-6,9);
+\draw [dashed] (-9, -1.75) -- (8,-1.75);
+\node[scale=1.5] (a) at (0,0) {
+\begin{tikzcd}[scale=4,samples=200]
+\ddots  & \vdots & \vdots\      & \vdots\     & \vdots\      & \iddots \\
+\cdots  & \cdot  & \kmi{0}{2} \ & \kmi{1}{2}\ & \kmi{2}{2}\  & \cdots     & \\
+\cdots  & \cdot  & \kmi{0}{1}\  & \kmi{1}{1}\ & \kmi{2}{1}\  & \cdots     & \\
+\cdots  & \cdot  & \kmi{0}{0}\  & \kmi{1}{0}\ & \kmi{2}{0}\  & \cdots     & \\
+\cdots  & \cdot  & 0            & \kmi{1}{-1}\ & \kmi{2}{-1}\  & \cdots     & \\
+\cdots  & \cdot  & \cdot        & 0           & \kmi{2}{-2} \ & \cdots     & \\
+\iddots & \vdots & \vdots       & \vdots      & \vdots       & \ddots     &
+\end{tikzcd}
+};
+\end{tikzpicture}
+
+\end{document}

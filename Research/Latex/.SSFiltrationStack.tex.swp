@@ -1,0 +1,29 @@
+\documentclass[convert]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{adjustbox}
+\usepackage{mathdots}
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)]
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\begin{document}
+
+\begin{tikzpicture}
+\draw [dashed] (-4,-5) -- (-4,5);
+\draw [dashed] (-8, -1) -- (8,-1);
+\node[scale=1.5] (a) at (0,0) {
+\begin{tikzcd}[scale=4,samples=200]
+\ddots  & \vdots & \vdots\ar[d, blue, "d_0^{0,3}" near start]                                      & \vdots\ar[d, blue, "d_0^{1,3}" near start]                                      & \vdots\ar[d, blue, "d_0^{2,3}" near start]                                      & \iddots \\
+\cdots  & \cdot  & G^0C^2 \ar[d, blue, "d_0^{0,2}"]            & G^1C^3\ar[d, blue, "d_0^{1,2}"]             & G^2C^4\ar[d, blue, "d_0^{2,2}"]             & \cdots     & \\
+\cdots  & \cdot  & G^0C^1\ar[d, blue, "d_0^{0,1}"]             & G^1C^2\ar[d, blue, "d_0^{1,1}"]             & G^2C^3\ar[d, blue, "d_0^{2,1}"]             & \cdots     & \\
+\cdots  & \cdot  & G^0C^0\ar[d, blue, "d_0^{0,0}", near start] & G^1C^1\ar[d, blue, "d_0^{1,0}", near start] & G^2C^2\ar[d, blue, "d_0^{2,0}", near start] & \cdots     & \\
+\cdots  & \cdot  & 0                                       & G^1C^0\ar[d, blue, "d_0^{1,-1}"]                                      & G^2C^1\ar[d, blue, "d_0^{2,-1}"]             & \cdots     & \\
+\cdots  & \cdot  & \cdot                                       & 0                                       & G^2C^0 \ar[d, blue, "d_0^{2,-2}"]                                      & \cdots     & \\
+\iddots & \vdots & \vdots                                      & \vdots                                      & \vdots                                      & \ddots     &
+\end{tikzcd}
+};
+\end{tikzpicture}
+
+\end{document}
