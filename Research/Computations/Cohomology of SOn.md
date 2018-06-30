@@ -21,7 +21,7 @@ $$ E_2^{p,q} = H^p(S^2) \tensor H^q(S^1).$$
 
 This yields the following $E_2$  and $E_3$ pages respectively (indexing columns with $p$ and rows with $q$):
 
-```latex{cmd=true hide=false run_on_save=true}
+```latex{cmd=true hide=true run_on_save=true}
 \documentclass{article}
 \usepackage{tikz}
 \usetikzlibrary{cd}
@@ -50,6 +50,7 @@ q ~/~ S^1 & \cdot & \cdot & \cdot & \cdot &  \\
 0 & \encircle{$\mathbb{Z}$} & \cdot & \text{cokernel } d_2^{0,1} & \cdot &  \\
  & 0 & 1 & 2 & 3 & p ~/~ S^2
 \end{tikzcd}
+$$
 }
 
 \end{document}
@@ -269,4 +270,4 @@ Hatcher seems to do some computation involving Bockstein homomorphisms on page 3
 
 $$ H^* (SO^5) \cong F[x,y,z] / (2x, x^4, y^4, z^2, xz, x^3 - y^2)$$
 
-where $F$ is a "free graded commutative associative algebra over $\ZZ$". Is this the same thing as a differential graded algebra (DGA)? And how exactly does one extract the list of cohomology groups from this representation?
+where $F$ is a "free graded commutative associative algebra over $\ZZ$". Is this the same thing as a DGA? And how exactly does one extract the list of cohomology groups from this representation?

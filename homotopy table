@@ -1,0 +1,32 @@
+# Table
+
+```latex {cmd = true}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{asdsadas}
+\author{dzackgarza }
+\date{May 2018}
+
+\begin{document}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{llllllllllllllll}
+& $\pi_{1}$ & $\pi_{2}$ & $\pi_{3}$ & $\pi_{4}$ & $\pi_{5}$ & $\pi_{6}$  & $\pi_{7}$    & $\pi_{8}$  & $\pi_{9}$ & \pi_{10}    & \pi_{11} & \pi_{12} & \pi_{13}    & \pi_{14}         &\pi_{15}         \\
+$S^0$ & 0    & 0  & 0  & 0  & 0  & 0   & 0     & 0   & 0   & 0      & 0   & 0   & 0      & 0           & 0       \\
+$S^1$ & Z    & 0  & 0  & 0  & 0  & 0   & 0     & 0   & 0   & 0      & 0   & 0   & 0      & 0           & 0       \\
+$S^2$ & 0    & Z  & Z  & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{12}$ & $\mathbb{Z}_{2}$    & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{3}$  & $\mathbb{Z}_{15}$    & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{22}$ & $\mathbb{Z}_{12}$$\times$$\mathbb{Z}_{2}$ & $\mathbb{Z}_{84}$$\times$$\mathbb{Z}_{22}$     & $\mathbb{Z}_{22}$     \\
+$S^3$ & 0    & 0  & Z  & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{12}$ & $\mathbb{Z}_{2}$    & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{3}$  & $\mathbb{Z}_{15}$    & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{22}$ & $\mathbb{Z}_{12}$$\times$$\mathbb{Z}_{2}$ & $\mathbb{Z}_{84}$$\times$$\mathbb{Z}_{22}$     & $\mathbb{Z}_{22}$     \\
+$S^4$ & 0    & 0  & 0  & Z  & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$  & Z$\times$$\mathbb{Z}_{12}$ & $\mathbb{Z}_{22}$ & $\mathbb{Z}_{22}$ & $\mathbb{Z}_{24}$$\times$$\mathbb{Z}_{3}$ & $\mathbb{Z}_{15}$ & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{23}$    & $\mathbb{Z}_{120}$$\times$$\mathbb{Z}_{12}$$\times$$\mathbb{Z}_{2}$ & $\mathbb{Z}_{84}$$\times$$\mathbb{Z}_{25}$ \\
+$S^5$ & 0    & 0  & 0  & 0  & Z  & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{2}$    & $\mathbb{Z}_{24}$ & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{2}$     & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{30}$ & $\mathbb{Z}_{2}$     & $\mathbb{Z}_{23}$         & $\mathbb{Z}_{72}$$\times$$\mathbb{Z}_{2}$  \\
+$S^6$ & 0    & 0  & 0  & 0  & 0  & Z   & $\mathbb{Z}_{2}$    & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{24}$ & 0      & Z   & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{60}$    & $\mathbb{Z}_{24}$$\times$$\mathbb{Z}_{2}$      & $\mathbb{Z}_{23}$     \\
+$S^7$ & 0    & 0  & 0  & 0  & 0  & 0   & Z     & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{24}$    & 0   & 0   & $\mathbb{Z}_{2}$     & $\mathbb{Z}_{120}$        & $\mathbb{Z}_{23}$     \\
+$S^8$ & 0    & 0  & 0  & 0  & 0  & 0   & 0     & Z   & $\mathbb{Z}_{2}$  & $\mathbb{Z}_{2}$     & $\mathbb{Z}_{24}$ & 0   & 0      & $\mathbb{Z}_{2}$          & Z$\times$$\mathbb{Z}_{120}$
+\end{tabular}
+\end{table}
+
+\end{document}
+```
