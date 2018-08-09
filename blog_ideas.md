@@ -1,0 +1,82 @@
+# Ideas for Posts or Notes
+
+## Technical Topics
+- Rules and techniques for working with sums and generating functions
+- Some debunking of nonstandard analysis
+- What are modular forms?
+- Building N -> Q -> R -> C from sets
+- Fiber bundles
+- Method of killing homotopy
+- Brouwer's fixed point theorem
+- Hairy ball theorem
+- Why gimbal lock occurs
+- Results in SET and enumerative geometry
+- Einstein's equations
+- Interesting Results
+  - Nash embedding
+  - Aatiyah-Singer Index Theorem
+  - Geometrization
+  - Riemann-Roch
+- Descriptions of big problems
+  - Fermat's Last Theorem
+  - The abc conjecture
+  - The Weil conjectures
+  - Topology
+    - Smooth 3d Poincare (Resolved)
+    - Smooth 4d Poincare (Unresolved)
+    - Homotopy groups of spheres
+    - Smooth 4d Schoenflies
+    - The Ravenel conjectureso
+    - The Kervaire invariant problem
+    - The Hopf invariant one problem
+  - Hilbert's Problems
+    - Continuum hypothesis
+    - Peano is consistent
+  - Millenium Prize Problems
+    - Poincare
+    - Riemann
+    - P vs. NP
+    - Navier Stokes
+    - Yang-Mills and Mass Gap
+    - Hodge
+    - Birch-Swinnerton-Dyer
+  - When you can swap limiting operations
+- List of mind blowing facts from undergrad
+  - |Z| = |Q| < |R|, or even |Q| < |(0,1)|
+    - There are holes in Q!
+  - sum i = -1/12
+  - Calculators use series to compute functions (sin/cos, e/log, etc) and you can too!
+  - Birthday paradox
+  - Integrals depend on holes
+  - Gabriel's horn
+  - Euler's identity
+  - The high dimensional sphere is spiky
+  - The harmonic series diverges
+  - 0.999.... = 1
+  - Zeno's paradox converges
+  - There's no general formula for solving quintics
+  - Only some regular polygons can be constructed with a ruler/compass - relates geometry and number theory
+  - A conditionally convergent series can be rearranged to converge to anything
+  - sqrt(2) is not rational
+  - A normal vector to a surface is not always well-defined
+  - Trig is just complex analysis
+  - You can balance chemical equations using matrices
+  - 52! is huge - chances are very low that any two people (ever) have held the name shuffled deck
+  - Monty Hall problem
+  - Random walks in 2D almost never return to the origin (happens in 1d)
+  - Fixed point theorems (brouwer)
+  - The word problem
+  - Banach Tarski
+  - Godel completeness
+  - There are continuous everywhere, differentiable nowhere functions
+  - Every function can be expressed in terms of trig functions
+  - There is no uniform distribution on N, Q, R, etc
+  - We've only had algebraic symbols/formulas for ?00 years, and cartesian coordinates for ?00 years
+  - Euclid's 5th postulate
+  - Having boy/girl then boy problem
+  - i^i is real
+
+## Personal
+- Undergrad degree in review
+- Review of research program
+- Review of Witt Vectors conference

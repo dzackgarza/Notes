@@ -1,0 +1,6 @@
+- Yikyak, but as a website (anonymous, social, local only)
+  - Upvotes to float interesting content
+  - Pictures and text only
+  - Always anonymous, always
+  - Expire posts
+  - Sort by most recent (default), closest, and most popular
