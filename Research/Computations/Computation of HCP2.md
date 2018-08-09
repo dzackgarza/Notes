@@ -4,6 +4,8 @@ output: pdf_document
 
 # Computation of $H^*(\CP^2)$
 
+View rendered version [here](https://rawgit.com/dzackgarza/Notes/master/Research/Computations/Computation%20of%20HCP2.html)
+
 ## Theorem
 
 Suppose $F \to E \to B $ is a fibration satisfying (conditions).
