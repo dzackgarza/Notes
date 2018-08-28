@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>A Brief Introduction to Category Theory</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"displayMath":[["$$","$$"],["\\[","\\]"]],"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true,"processEnvironments":false},"TeX":{"extensions":["noUndefined.js","autoload-all.js","AMSmath.js","AMSsymbols.js"],"Macros":{"NN":"{\\mathbb{N}}","RR":"{\\mathbb{R}}","ZZ":"{\\mathbb{Z}}","QQ":"{\\mathbb{Q}}","CC":"{\\mathbb{C}}","RP":"{\\mathbb{RP}}","CP":"{\\mathbb{CP}}","HP":"{\\mathbb{HP}}","OP":"{\\mathbb{OP}}","FF":"{\\mathbb{F}}","PP":"{\\mathbb{P}}","AA":"{\\mathbb{A}}","MM":"{\\mathbb{M}}","TT":"{\\mathbb{T}}","SS":"{\\mathbb{S}}","KK":"{\\mathbb{K}}","Gr":"{\\text{Gr}}","GL":"{\\text{GL}}","char":"{\\mathbb{1}}","abs":["\\left\\lvert #2 \\right\\rvert_{\\text{#1}}",2,""],"Aut":"{\\text{Aut}}","del":"{\\partial}","too":["{\\xrightarrow{#1}}",1,""],"im":"{\\text{im}~}","homotopic":"\\simeq","into":"\\to","theset":["\\{{#1}\\}",1],"norm":["{\\lVert}{#1}{\\rVert}",1],"cross":"\\times","definedas":"\\mathrel{\\vcenter{:}}=","surjects":"\\twoheadrightarrow","onto":"\\twoheadrightarrow","injects":"\\hookrightarrow","id":"\\text{id}","restrictionof":["\\left.{#1}\\right|_{#2}",2],"intersect":"\\bigcap","union":"\\bigcup","mapsvia":["\\xrightarrow{#1}",1],"coker":"\\operatorname{coker}","tensor":"\\otimes","semidirect":"\\rtimes","pt":"\\{\\text{pt}\\}","and":"{\\text{and}}","or":"{\\text{or}}","bd":"{\\del}","wait":"{\\,\\cdot\\,}","selfmap":"{\\circlearrowleft}","tor":"{\\text{Tor}}","ext":"{\\text{Ext}}","hom":"{\\text{Hom}}","actson":"{\\curvearrowright}","actsonl":"{\\curvearrowleft}","disjoint":"{\\coprod}","qed":"{\\tag*{$\\blacksquare$}}","endef":"{\\tag*{$\\triangleleft$}}","dash":"{\\hbox{-}}","inner":["\\langle #1, #2 \\rangle",2,""],"bigast":"{\\mathop{\\Large \\ast}}","from":"{\\leftarrow}","covers":"{\\twoheadrightarrow_p}"}},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="disclaimer">Disclaimer</h1>
+
+<p>This is meant to be a relatively short and <strong>non-rigorous</strong> introduction to Category Theory. Although I will be defining and using a lot of the technical terminology that is commonly used, this talk is primarily aimed at introducing these concepts, why they exist, and where they’re useful and commonly used.</p>
+<p>In fact, most of the results used here will be stated with very minimal proof – this is partly due to time constraints, and diving into them here would obfuscate the more high-level points I’d like to make. However, if you are interested in seeing and working through some of these types of proofs yourself, I’ve included some references that I’d recommend near the end.</p>
+<h1 class="mume-header" id="introduction">Introduction</h1>
+
+<p>Of course, if we’re going to talk about Category Theory, I should probably start by telling you what it is! However, instead of diving into the definitions immediately, I think it helps to have some motivation for <em>why</em> such a thing should even exist in the first place.</p>
+<p>Category Theory was conceived (or invented, or discovered; whichever you prefer) in 1945 by Samuel Eilenberg and Saunders Mac Lane while working on something called the Cech cohomology, which is central in the field of algebraic topology.</p>
+<p>One of Eilenberg and Mac Lane’s motivations was that it was (and still is!) common among mathematicians to refer to certain constructions as “natural” and “canonical” – broadly speaking, these terms are used to denote constructions that were somehow “choice-free”. For example, one might want to study vector spaces without explicitly choosing a basis vectors. In this way, one can discover properties that don’t actually <em>depend</em> on a particular frame of reference, and in some sense are more “universal” and intrinsic to the object being studied.</p>
+<p>In particular, Eilenberg and Mac Lane wanted to formalize the notion of a <strong>natural transformation</strong> and things that were “naturally isomorphic.”</p>
+<h2 class="mume-header" id="interlude-what-does-natural-mean">Interlude –  What does “natural” mean?</h2>
+
+<hr>
+<p>A canonical example from mathematics is that, given a finite-dimensional vector space <span class="mathjax-exps">$V$</span> over a field <span class="mathjax-exps">$k$</span> (you can just take <span class="mathjax-exps">$k=&#x5C;mathbb{R}$</span> here if you’d like), one can look at it’s <em>dual space</em>, denoted <span class="mathjax-exps">$V^*$</span>, which is the space of all functions <span class="mathjax-exps">$f : V &#x5C;rightarrow k$</span> that take vectors in <span class="mathjax-exps">$V$</span> as input and output scalars in the base field <span class="mathjax-exps">$k$</span>. It turns out that <span class="mathjax-exps">$V^*$</span> is also a vector space, with the same dimension as <span class="mathjax-exps">$V$</span>, and one result you might remember from linear algebra is that <span class="mathjax-exps">$&#x5C;text{dim} V = n &#x5C;Rightarrow V &#x5C;cong R^n$</span> –  that is, all vector spaces of finite dimension <span class="mathjax-exps">$n$</span> are indistinguishable (as vector spaces) from <span class="mathjax-exps">$&#x5C;mathbb{R}^n$</span>.</p>
+<p>In particular, we have <span class="mathjax-exps">$&#x5C;text{dim}~V^* = n$</span>, so <span class="mathjax-exps">$V^* &#x5C;cong R^n &#x5C;cong V$</span>. So <span class="mathjax-exps">$V$</span> is isomorphic to its dual.</p>
+<p>But <span class="mathjax-exps">$V^*$</span> is a vector space in its own right, so we can look at <em>it’s</em> dual too! This is denoted <span class="mathjax-exps">$V^{**}$</span>, and sometimes referred to as the &quot;double dual&quot; of <span class="mathjax-exps">$V$</span>. In exactly the same way, we find that <span class="mathjax-exps">$&#x5C;text{dim}V^{**} =n$</span> as well, and so <span class="mathjax-exps">$V^{**} &#x5C;cong V^*$</span>, and so we can conclude that <span class="mathjax-exps">$V &#x5C;cong V^{**}$</span> –  that is, <span class="mathjax-exps">$V$</span> is isomorphic to its double dual.</p>
+<p>So <span class="mathjax-exps">$V$</span> is isomorphic to <span class="mathjax-exps">$V^*$</span>, and it is also isomorphic to <span class="mathjax-exps">$V^{**}$</span>.  However, when one goes through the process of actually finding and constructing these bijections, one finds that the map from <span class="mathjax-exps">$V &#x5C;rightarrow V^{*}$</span> truly depends on choosing a basis for <span class="mathjax-exps">$V$</span>; on the other hand, the map from <span class="mathjax-exps">$V$</span> to <span class="mathjax-exps">$V^{**}$</span> requires <em>no such choice</em>. In this way, we say that <span class="mathjax-exps">$V$</span> is isomorphic to its dual, but <span class="mathjax-exps">$V$</span> is <em>naturally</em> isomorphic to it’s double dual.</p>
+<hr>
+<p>This idea of “naturality” is part of what category theory sets out to make precise.</p>
+<p>A secondary motivation was to abstract away properties that are really only a result of some particular structure or construction, and don’t actually have much to do with the specific kind of object you’re working with. (If you’ve programmed much, the analog here would be “refactoring” commonly used pieces of code into a more general interface.)</p>
+<p>A few such constructions would be things like products or quotients of objects, which are ubiquitous in mathematics. With products, for example, it is possible to construct a product of sets (which have very little structure), but we can also construct a product of vector spaces (which have a very rich structure). It’s then natural to ask, what commonalities do these constructions share? Which properties of a product of vector spaces are due to them being vector spaces, and which are just a result of its construction as a product? This is another area where category theory shines; notions such as products and quotients can be described in terms of <em>universal properties</em>, which pay no heed to what the underlying objects really are at all.</p>
+<p>As a result, Category Theory provides a way of describing things in ways that are general enough be applied very broadly. It is useful as both an organizational tool, and also as a general language and logical framework which has found use not only in various branches mathematics, but also in logic, computer science, physics, philosophy, linguistics, and a host of other fields.</p>
+<p>On one hand, it serves as “simplification through abstraction” – we move from studying individual trees to studying the forest as a whole. On the other hand, it also allows us to reason about entire collections of forests, and how to transport our findings from one forest to another.</p>
+<p>In a nutshell, categories were invented as a framework to support <strong>functors</strong>, which were in turn invented to describe <strong>natural transformations</strong> between objects, which are in turn used to define <strong>adjoints</strong>. Of course, many other useful categorical tools have been developed, adjunction is really one of<strong>the</strong> key notions that category theory is meant to describe support.</p>
+<h2 class="mume-header" id="interlude-what-is-an-adjoint">Interlude –  What is an adjoint?</h2>
+
+<hr>
+<p>Adjunction is a slightly complicated concept, but informally speaking, <strong>functors</strong> map categories into other categories, and adjoints allow you to “approximate” one category by another. And in some cases, there is also an “inverse” to this approximation which takes you back to the original category.</p>
+<p>For example, consider groups and sets; there are categories <span class="mathjax-exps">$&#x5C;mathbf{Grp}$</span> and <span class="mathjax-exps">$&#x5C;mathbf{Set}$</span> in which these objects live. A group is really just a set that is decorated with some additional structure –  in this case, a binary operation that essentially behaves like modular addition. Usually groups are given to you with an <em>a priori</em> notion of what this operation is, but what if this weren’t the case? If you were just given a set, is there any way to &quot;upgrade&quot; it to a group?</p>
+<p>The answer is yes; if <span class="mathjax-exps">$X$</span> is any set, there is a construction called the <em>free group on</em> <span class="mathjax-exps">$X$</span>, denoted <span class="mathjax-exps">$F(X)$</span>, which goes something like this: given a set like <span class="mathjax-exps">$A = &#x5C;{a, b&#x5C;}$</span>, one thinks of <span class="mathjax-exps">$A$</span> as a formal alphabet of symbols, and makes another set of &quot;formal inverses&quot; of <span class="mathjax-exps">$A$</span>, say <span class="mathjax-exps">$B = &#x5C;{a^{-1}, b^{-1}&#x5C;}$</span>. Then, take the set <span class="mathjax-exps">$G = A &#x5C;coprod B = &#x5C;{a,b,a^{-1},b^{-1}&#x5C;}$</span> , add an element <span class="mathjax-exps">$&#x5C;varepsilon$</span> to denote an empty symbol, and define a group operation <span class="mathjax-exps">$&#x5C;bigstar$</span> that is simply the concatenation of symbols together (subject to no rules or relations other than <span class="mathjax-exps">$x &#x5C;bigstar &#x5C;varepsilon = x$</span>). We then stipulate that whenever something like <span class="mathjax-exps">$aa^{-1}$</span> occurs in a string (again, strictly as formal symbols over the alphabet <span class="mathjax-exps">$G$</span>), there is a reduction operation that replaces this with <span class="mathjax-exps">$&#x5C;varepsilon$</span>. After quotienting out by an equivalence under these reductions, we produce something that is a well-defined group, and is somehow the minimal group that could have been made from the original set and no other information.</p>
+<p>Then, there is something called a “forgetful functor” <span class="mathjax-exps">$&#x5C;mathcal{F}$</span> from <span class="mathjax-exps">$&#x5C;mathbf{Grp}$</span> into <span class="mathjax-exps">$&#x5C;mathbf{Set}$</span> that takes a group and gives you only the underlying set, &quot;forgetting&quot; everything about its structure as a group. For example, if one took that group <span class="mathjax-exps">$(&#x5C;mathbb{Z}_2 = &#x5C;{0,1&#x5C;}$</span> with the group operation <span class="mathjax-exps">$0+1 =1+0 = 1, 0+0=1+1=0$</span> (i.e., the <span class="mathjax-exps">$XOR$</span> operation), then applying <span class="mathjax-exps">$&#x5C;mathcal{F}$</span> to <span class="mathjax-exps">$(&#x5C;mathbb{Z}_2, XOR)$</span> just gives you a two element set <span class="mathjax-exps">$&#x5C;{a_0. a_1&#x5C;}$</span>.</p>
+<p>Then <span class="mathjax-exps">$&#x5C;mathcal{F}$</span> has an adjoint <span class="mathjax-exps">$&#x5C;mathcal{G}$</span>, which creates the free group on that set, <span class="mathjax-exps">$F(&#x5C;{a_0, a_1&#x5C;})$</span>. So if you apply <span class="mathjax-exps">$&#x5C;mathcal{G} &#x5C;circ &#x5C;mathcal{F}$</span> to <span class="mathjax-exps">$&#x5C;mathbb{Z_2}$</span>, you end up back in <span class="mathjax-exps">$&#x5C;mathbf{Grp}$</span>, but you don’t get back the same group you started with –  indeed, the free group consists of infinitely many strings over the alphabet <span class="mathjax-exps">$a_o, a_1, a_0^{-1}, a_1^{-1}$</span>, while <span class="mathjax-exps">$&#x5C;mathbb{Z}_2$</span> had only two elements. So this adjunction, the free group, provided a way to reconstruct a minimal group out of the information we lost by applying <span class="mathjax-exps">$&#x5C;mathcal{F}$</span>. For this reason, you’ll often hear of adjunction as the &quot;the most efficient&quot; solution to a given problem, or as a form of &quot;optimization&quot;.</p>
+<p>(In this case, however, there was only one group with an underlying set of two elements, so if we knew the adjunction was applied, we could deduce what the original group was!)</p>
+<hr>
+<h1 class="mume-header" id="definition-of-a-category">Definition of a Category</h1>
+
+<h2 class="mume-header" id="informal-description">Informal Description</h2>
+
+<p>Informally, a category is a collection of <strong>objects</strong> and <strong>arrows</strong> between them. Each arrow has a unique source and a target, both of which are objects, and arrows can be <strong>composed</strong> –  this will be precisely defined momentarily.</p>
+<p>For example, there is a category <strong>Set</strong> where the objects are just normal sets, and the arrows are functions between sets, and “composition of arrows” is just the usual composition of functions.</p>
+<p>In another light, categories can be viewed as <strong>simple directed graphs</strong> (diagrams) which have certain constraints on the edge structure. The nodes are the <strong>objects</strong> of the category, and the edges are <strong>morphisms</strong> between objects which satisfy two properties:<br>
+- Every node has an edge to itself<br>
+- For any sequence of paths between two nodes, there is a direct path between them.</p>
+<p>(In fact, one can always take the “free category” on any directed graph by simply filling in all of the necessary composition morphisms. This is a fun exercise, try it yourself!)</p>
+<h2 class="mume-header" id="formal-definitions">Formal Definitions</h2>
+
+<p>Formally, a category <span class="mathjax-exps">$C$</span> is two pieces of data:</p>
+<ul>
+<li><span class="mathjax-exps">$Ob(C)$</span>, the class of <em>objects</em> of <span class="mathjax-exps">$C$</span>,</li>
+<li><span class="mathjax-exps">$Hom(C)$</span>, the <strong>set</strong> of <em>morphisms</em> between objects in <span class="mathjax-exps">$Ob(C)$</span>
+<ul>
+<li>Members of <span class="mathjax-exps">$Hom(C)$</span> are denoted <span class="mathjax-exps">$Hom_C(X,Y)$</span>, where <span class="mathjax-exps">$X,Y &#x5C;in Ob(C)$</span>.</li>
+</ul>
+</li>
+</ul>
+<p>Along with a binary operation <span class="mathjax-exps">$&#x5C;circ$</span> which composes morphisms:</p>
+<ul>
+<li><span class="mathjax-exps">$&#x5C;forall X,Y,Z &#x5C;in Ob(C)$</span> where <span class="mathjax-exps">$f: X &#x5C;rightarrow Y$</span> and <span class="mathjax-exps">$g: Y &#x5C;rightarrow Z$</span>, there exists the <strong>composition</strong> <span class="mathjax-exps">$h$</span> of <span class="mathjax-exps">$f$</span> and <span class="mathjax-exps">$g$</span>, denoted <span class="mathjax-exps">$h = g &#x5C;circ f$</span>, where <span class="mathjax-exps">$h: X &#x5C;rightarrow Z$</span>.</li>
+<li>Using types, this operation might be expressed in the following way: <span class="mathjax-exps">$&#x5C;circ: Hom_C(X,Y) &#x5C;times Hom_C(Y,Z) &#x5C;rightarrow Hom_C(X,Z)$</span> <span class="mathjax-exps">$(f &#x5C;times g) &#x5C;mapsto g &#x5C;circ f$</span></li>
+</ul>
+<p>Which satisfies two axioms:</p>
+<ul>
+<li>Associativity of <span class="mathjax-exps">$&#x5C;circ$</span>, given by <span class="mathjax-exps">$f&#x5C;circ(g&#x5C;circ h) = (f&#x5C;circ g)&#x5C;circ h$</span></li>
+<li>Existence of unique two-sided identities: <span class="mathjax-exps">$&#x5C;forall X &#x5C;in Ob(C), &#x5C;exists id_X &#x5C;in Hom(C)​$</span> where <span class="mathjax-exps">$id_x: X &#x5C;rightarrow X​$</span>. These satisfy
+<ul>
+<li><span class="mathjax-exps">$&#x5C;forall f: A&#x5C;rightarrow X &#x5C;in Hom(A,X), f&#x5C;circ id_X = f$</span> and</li>
+<li><span class="mathjax-exps">$&#x5C;forall g: X &#x5C;rightarrow B &#x5C;in Hom(X, B), id_X &#x5C;circ g = g$</span>.</li>
+</ul>
+</li>
+</ul>
+<p>Note that the objects of category are “black boxes” –  we have no real information about what is inside of them, so in general we can not talk about elements of an object.</p>
+<p>&lt;-- #TODO --&gt;<br>
+Define: functor</p>
+<p>Define: adjunction</p>
+<p>Define: equivalence of categories</p>
+<h2 class="mume-header" id="foundational-issues">Foundational Issues</h2>
+
+<p>Certain collections of objects are “too big” to be sets – for example, we have Russel’s paradox: <span class="mathjax-exps">$(&#x5C;exists R = &#x5C;{ x : x &#x5C;not &#x5C;in x &#x5C;}) &#x5C;Rightarrow (R&#x5C;in R &#x5C;iff R&#x5C;not&#x5C;in R)$</span>, which must be a contradiction. So strictly speaking, one can not consider a &quot;set of all sets&quot;, although we would like to study things like the <em>blah</em> of all sets, for whatever <em>blah</em> we can come up with. In particular, we’d like a category <strong>Set</strong> that contains all sets</p>
+<p>The workaround is to use use <strong>classes</strong> (sets with restricted operations). A Class that is a also a normal set is referred to as a <strong>small class</strong>, while classes that are <em>not</em> sets are denoted <strong>proper classes</strong>.</p>
+<p>We will take the objects of categories to be proper classes, and in general the morphisms will be small classes and are sometimes referred to as <em>hom-sets</em>, although this is not strictly required. In this sense, category theory actually subsumes set and generalizes the theory of sets –  indeed, there are mathematical camps that see categories as an <em>alternative</em> to set theory for the foundation of math. If one is interested in such things, it is worth investigating the ideas of <strong>homotopy type theory</strong> and <strong>topoi</strong>, which might be said to fall under the umbrella of logic.</p>
+<h1 class="mume-header" id="examples">Examples</h1>
+
+<p>Since categories can be quite abstract objects, it’s useful to have a few concrete toy examples in mind to check new definitions and theorems against, here are a number of you can use. I’ve tried to collect examples from Algebra, Analysis, and even a few from Computer Science –  it is by no means necessary to be familiar with all of these; usually finding a few that you use often and are familiar with is quite sufficient for most purposes.</p>
+<hr>
+<p>Here, I’ll just cover what I think are the three most important parts of recognizing that some structure you’ve used is a category –  the objects, the morphisms, and what kind of morphisms are called isomorphisms in that category. Checking the categorical axioms is pretty routine and perhaps not as enlightening, so we’ll skip that for now.</p>
+<p>That being said, here’s how the examples are formatted:</p>
+<ul>
+<li><span class="mathjax-exps">$&#x5C;mathbf{Name}$</span>: A somewhat informal name I’ve given to the category as a whole.  Some names are more &quot;official&quot;, but these vary a lot across the literature. Some categories aren’t named at all, so I’ve supplied arbitrary names in some cases. Note that some categories are named after their object classes (<span class="mathjax-exps">$&#x5C;mathbf{Set}$</span>),  while others are actually named after their morphism classes (<span class="mathjax-exps">$&#x5C;mathbf{Mat}$</span>). Category names are usually typeset in <em>mathbf</em>.
+<ul>
+<li><em>Objects</em>: Describes the entire class <span class="mathjax-exps">$Ob(C)$</span>, and gives an example of what the full data of what two distinct members <span class="mathjax-exps">$X, Y$</span> in <span class="mathjax-exps">$Ob(C)$</span> might look like. I’ve tried to match the notation to the domain-specific notation one might use when working in each individual category.</li>
+<li><em>Morphisms</em>: Denotes what the entire class <span class="mathjax-exps">$Hom(C)$</span> looks like, as well as what a morphism <span class="mathjax-exps">$f: X &#x5C;rightarrow Y &#x5C;in Hom_C(X,Y) &#x5C;in Hom(C)$</span> looks like.</li>
+<li><em>Isomorphisms</em>: Denotes what conditions one puts on a morphism <span class="mathjax-exps">$f: X&#x5C;rightarrow Y$</span>  , and perhaps a corresponding morphism <span class="mathjax-exps">$g : Y &#x5C;rightarrow X$</span>, in order to recognize <span class="mathjax-exps">$X, Y$</span> as isomorphic objects in this category. (Often denoted <span class="mathjax-exps">$X &#x5C;cong Y$</span>)</li>
+</ul>
+</li>
+</ul>
+<p><em>Notes</em>: Some of these categories are constructed, and easier to demonstrate their construction blackboard. I’ve included notes to explain how this is done for a few examples.</p>
+<h3 class="mume-header" id="constructions">Constructions</h3>
+
+<p>Here, I’ll explicitly describe the full set of objects, and the full set of morphisms.</p>
+<h4 class="mume-header" id="mathbf2-the-minimal-category-on-two-objects"><span class="mathjax-exps">$&#x5C;mathbf{2}$</span> (The minimal category on two objects)</h4>
+
+<ul>
+<li>Objects: <span class="mathjax-exps">$&#x5C;{a,b&#x5C;}$</span> (A category made out of two arbitrary objects)</li>
+<li>Morphisms: <span class="mathjax-exps">$&#x5C;{Id_a: a &#x5C;mapsto a, Id_b: b &#x5C;mapsto b&#x5C;}$</span></li>
+<li>Isomorphisms: None (There is no morphism from <span class="mathjax-exps">$b$</span> to <span class="mathjax-exps">$a$</span>.)</li>
+</ul>
+<h4 class="mume-header" id="mathbf2-a-modified-version-of-mathbf2"><span class="mathjax-exps">$&#x5C;mathbf{2&#x27;}$</span> (A modified version of <span class="mathjax-exps">$&#x5C;mathbf{2}$</span>)</h4>
+
+<ul>
+<li>Objects: <span class="mathjax-exps">$&#x5C;{a,b&#x5C;}$</span></li>
+<li>Morphisms: <span class="mathjax-exps">$&#x5C;{a &#x5C;mapsto a, Id_b: b &#x5C;mapsto b&#x5C;} &#x5C;cup &#x5C;{ &#x5C;bigstar: a &#x5C;mapsto b, Id_a:  &#x5C;}$</span></li>
+<li>Isomorphisms: None (There is no morphism from <span class="mathjax-exps">$b$</span> to <span class="mathjax-exps">$a$</span>.)</li>
+</ul>
+<p><em>Notes:</em> Here I just took <span class="mathjax-exps">$&#x5C;mathbf{2}$</span> and added in a single extra morphism. The star symbol is used here just to denote the fact that this mapping is completely made up, and that arrows in categories don’t have to be &quot;functions&quot;  in the traditional sense at all. Each arrow is just <em>some</em> way to associate a source object with a target object.</p>
+<h4 class="mume-header" id="mathbfn-the-minimal-category-on-n-objects"><span class="mathjax-exps">$&#x5C;mathbf{n}$</span> (The minimal category on <span class="mathjax-exps">$n$</span> objects)</h4>
+
+<ul>
+<li>Objects: <span class="mathjax-exps">$&#x5C;{a_1, a_2, &#x5C;cdots, a_n&#x5C;}$</span> (A category made out of <span class="mathjax-exps">$n$</span> arbitrary objects)</li>
+<li>Morphisms: <span class="mathjax-exps">$&#x5C;{Id_{a_1}: a_1 &#x5C;mapsto a_2, Id_{a_2}: a_2 &#x5C;mapsto a_2, &#x5C;cdots , Id_{a_n} a_n &#x5C;mapsto a_n&#x5C;}$</span></li>
+<li>Isomorphisms: None (There are no morphism from <span class="mathjax-exps">$a_i$</span> to <span class="mathjax-exps">$a_j$</span> for any <span class="mathjax-exps">$i,j &#x5C;leq n$</span>)</li>
+</ul>
+<p><em>Notes</em>: This just shows that you can make a category out of any set of objects by only supplying identity morphisms –  such a category is called <em>discrete</em>. Also note that since every object <em>must</em> have an identity morphism anyway, the objects themselves don’t really matter at all. If we wanted, we could just identify every object with its identity morphism and define categories entirely in terms of morphisms. Practically speaking, though, keeping the notion of objects around makes categories a little easier to work with.</p>
+<p>Also, note that it didn’t matter that <span class="mathjax-exps">$n$</span> was finite here –  this construction works for any set <span class="mathjax-exps">$X$</span>, yielding <span class="mathjax-exps">$&#x5C;mathbf{Dis(X)}$</span> (the discrete category on <span class="mathjax-exps">$X$</span>)</p>
+<h4 class="mume-header" id="mathbf3"><span class="mathjax-exps">$&#x5C;mathbf{3&#x27;}$</span></h4>
+
+<ul>
+<li>Objects: <span class="mathjax-exps">$&#x5C;{a, b&#x5C;} &#x5C;cup &#x5C;{c&#x5C;}$</span> (A &quot;minimally interesting&quot; extension of <span class="mathjax-exps">$&#x5C;mathbf{2}$</span>)</li>
+<li>Morphisms: <span class="mathjax-exps">$&#x5C;{&#x5C;bigstar: a &#x5C;mapsto b,  Id_a: a &#x5C;mapsto a, Id_b: b &#x5C;mapsto b&#x5C;}$</span><br>
+<span class="mathjax-exps">$&#x5C;cup~&#x5C;{ Id_c: c&#x5C;mapsto c&#x5C;}$</span><br>
+<span class="mathjax-exps">$&#x5C;cup~&#x5C;{&#x5C;clubsuit: b &#x5C;mapsto c&#x5C;}$</span><br>
+<span class="mathjax-exps">$&#x5C;cup~&#x5C;{   &#x5C;sharp: a&#x5C;mapsto c &#x5C;text{ where } &#x5C;sharp(a) = (&#x5C;clubsuit &#x5C;circ &#x5C;bigstar)(a) &#x5C;}$</span></li>
+<li>Isomorphisms: None (There is no map from <span class="mathjax-exps">$b$</span> to <span class="mathjax-exps">$a$</span>, <span class="mathjax-exps">$c$</span> to <span class="mathjax-exps">$a$</span>, or <span class="mathjax-exps">$b$</span> to <span class="mathjax-exps">$c$</span>.)</li>
+</ul>
+<p><em>Notes</em>: The wacky symbols are again used to denote that these mappings are absolutely arbitrary.</p>
+<p>A quick explanation of what I mean by “minimally interesting”, though: Given <span class="mathjax-exps">$&#x5C;mathbb{2}$</span>, note that there are really only a few things we can do with it at this point. We could add another morphism, <span class="mathjax-exps">$b &#x5C;mapsto a$</span>, and we would get a category where <span class="mathjax-exps">$b&#x5C;cong a$</span>.</p>
+<p>The other thing we can do is add in a single object <span class="mathjax-exps">$c$</span>. We are forced to add an identity morphism for this to be a category, which is what the first union in the morphisms section supplies.</p>
+<p>At this point, we just have <span class="mathjax-exps">$&#x5C;mathbf{3}$</span>, so we look to modify the morphisms a bit to get something slightly different. There are a few choices here, but we’ll go with one of the more interesting ones: a morphism <span class="mathjax-exps">$&#x5C;clubsuit$</span> from an existing object <span class="mathjax-exps">$b$</span> to the new object <span class="mathjax-exps">$c$</span>.</p>
+<p>However, this won’t be a category unless it satisfies the axiom of composition, so we’re forced to add in a morphism that looks like <span class="mathjax-exps">$&#x5C;sharp$</span>.</p>
+<p>Denote<br>
+​		- <span class="mathjax-exps">$&#x5C;bigstar$</span> by <span class="mathjax-exps">$f$</span><br>
+​		- <span class="mathjax-exps">$&#x5C;clubsuit$</span> by <span class="mathjax-exps">$g$</span><br>
+​		- <span class="mathjax-exps">$&#x5C;sharp$</span> by <span class="mathjax-exps">$g &#x5C;circ f$</span>,</p>
+<p>and you get something that perhaps looks a little more familiar:</p>
+<p><img src="https://i.imgur.com/016ixGX.png" alt="The Category 3"></p>
+<p>If you haven’t seen this before, don’t worry –  I am sure you will! This particular “shape” of diagram shows up in many algebraic constructions (quotients and products, to name a few), and understanding it is the first step in getting a handle on things like universal properties.</p>
+<h3 class="mume-header" id="more-standard-examples">More Standard Examples</h3>
+
+<p>Here are some common examples of categories that arise in various contexts, roughly in increasing order of complexity.</p>
+<h4 class="mume-header" id="mathbfset"><span class="mathjax-exps">$&#x5C;mathbf{Set}$</span></h4>
+
+<ul>
+<li>Objects: Sets <span class="mathjax-exps">$A, B$</span></li>
+<li>Morphisms: Set functions <span class="mathjax-exps">$f: A &#x5C;rightarrow B$</span></li>
+<li>Isomorphisms: Bijective set functions <span class="mathjax-exps">$f: A&#x5C;rightarrow B$</span>
+<ul>
+<li><span class="mathjax-exps">$f$</span> is bijective iff <span class="mathjax-exps">$f$</span> is both
+<ul>
+<li>injective:  <span class="mathjax-exps">$&#x5C;forall a_1, a_2 &#x5C;in A, f(a_1) = f(a_2) &#x5C;Rightarrow a_1 = a_2​$</span>
+<ul>
+<li>This lets you construct a <em>left inverse</em></li>
+</ul>
+</li>
+<li>surjective:  <span class="mathjax-exps">$&#x5C;forall b &#x5C;in B, &#x5C;exists a&#x5C;in A : b = f(a)$</span>
+<ul>
+<li>This lets you construct a <em>right inverse</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><em>Notes</em>: These conditions allow you to construct a <span class="mathjax-exps">$g: B&#x5C;rightarrow A$</span> such that</p>
+<ul>
+<li><span class="mathjax-exps">$&#x5C;forall b&#x5C;in B, (f&#x5C;circ g)(b) = b$</span>
+<ul>
+<li>(i.e. <span class="mathjax-exps">$f&#x5C;circ g = id_B$</span> as a function)</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$&#x5C;forall a &#x5C;in A, g&#x5C;circ f(a) = a$</span>
+<ul>
+<li>(i.e. <span class="mathjax-exps">$g&#x5C;circ f = id_A$</span> as a function)</li>
+</ul>
+</li>
+</ul>
+<p>So we refer to <span class="mathjax-exps">$g$</span> as <strong>the</strong> two-sided inverse and call it <span class="mathjax-exps">$f^{-1}$</span>, which is unique when it exists. In many common cases, the objects in a category are &quot;built&quot; out of sets. These categories are called concrete, and the isomorphisms in these categories end up just being isomorphisms of the underlying sets, along with some other structure-preserving conditions. Thus understanding how morphisms and isomorphisms in <span class="mathjax-exps">$&#x5C;mathbf{Set}$</span> are constructed is a key first step.</p>
+<h4 class="mume-header" id="mathbfposet"><span class="mathjax-exps">$&#x5C;mathbf{Poset}$</span></h4>
+
+<ul>
+<li>Objects: Partially-ordered sets <span class="mathjax-exps">$(P &#x5C;leq)$</span>, <span class="mathjax-exps">$(Q, &#x5C;prec)$</span>
+<ul>
+<li>Recall that partial orders are reflexive, transitive, antisymmetric binary operations.</li>
+</ul>
+</li>
+<li>Morphisms: Set functions <span class="mathjax-exps">$f: P &#x5C;rightarrow Q$</span></li>
+<li>Isomorphisms: Bijective functions <span class="mathjax-exps">$f: P &#x5C;rightarrow Q$</span> such that<br>
+if <span class="mathjax-exps">$x,y&#x5C;in P$</span> and <span class="mathjax-exps">$x&#x5C;leq y$</span>, then <span class="mathjax-exps">$f(x) &#x5C;prec f(y)$</span></li>
+</ul>
+<h4 class="mume-header" id="mathbfrel"><span class="mathjax-exps">$&#x5C;mathbf{Rel}$</span></h4>
+
+<ul>
+<li>Objects: Binary Relations <span class="mathjax-exps">$(X, &#x5C;sim), (Y, &#x5C;propto)$</span>
+<ul>
+<li>Here <span class="mathjax-exps">$X$</span> is  just a set and <span class="mathjax-exps">$&#x5C;sim &#x5C;subseteq X&#x5C;times X$</span> is a binary relation.</li>
+</ul>
+</li>
+<li>Morphisms: Relation-preserving set functions <span class="mathjax-exps">$f: X &#x5C;rightarrow Y$</span> such that <span class="mathjax-exps">$&#x5C;forall a,b&#x5C;in X, a&#x5C;sim  b &#x5C;Rightarrow f(a)&#x5C;propto f(b)$</span></li>
+<li>Isomorphims: Bijective set functions (as in <span class="mathjax-exps">$&#x5C;mathbf{Set}$</span>) with an inverse <span class="mathjax-exps">$g: Y &#x5C;rightarrow X$</span> such that <span class="mathjax-exps">$&#x5C;forall c,d &#x5C;in Y, c &#x5C;propto d &#x5C;Rightarrow g(c) &#x5C;sim g(d)$</span>.</li>
+</ul>
+<p><em>Notes</em>: This works for any binary relation –  for example, take <span class="mathjax-exps">$&#x5C;mathbb{Z}$</span> with <span class="mathjax-exps">$a &#x5C;sim b$</span> iff <span class="mathjax-exps">$a$</span> divides <span class="mathjax-exps">$b$</span>.</p>
+<p>Also notice that to get an isomorphism, all we really did was take an isomorphism on the underlying set, and required that the inverse also satisfied the conditions of the morphisms in this category. So really, it required <span class="mathjax-exps">$f$</span> to be bijective in <span class="mathjax-exps">$&#x5C;mathbf{Set}$</span>, then <span class="mathjax-exps">$g=f^{-1}$</span> just needed to <em>also be morphism in</em> <span class="mathjax-exps">$&#x5C;mathbf{Rel}$</span>. We’ll see this pattern in almost every concrete category!</p>
+<h4 class="mume-header" id="mathbfgrp"><span class="mathjax-exps">$&#x5C;mathbf{Grp}$</span></h4>
+
+<ul>
+<li>Objects: Groups <span class="mathjax-exps">$(G, &#x5C;star), (H, &#x5C;diamond)$</span></li>
+<li>Morphisms: Group homomorphisms <span class="mathjax-exps">$&#x5C;varphi: (G, &#x5C;star) &#x5C;rightarrow (H, &#x5C;diamond)$</span> where <span class="mathjax-exps">$&#x5C;forall x,y &#x5C;in G$</span>, <span class="mathjax-exps">$&#x5C;phi(x&#x5C;star y) = &#x5C;phi(x) &#x5C;diamond &#x5C;phi(y)$</span></li>
+<li>Isomorphisms: Bijective group homomorphisms.
+<ul>
+<li>These are found by finding a <span class="mathjax-exps">$&#x5C;varphi$</span> that is bijective as a set function (as described in <span class="mathjax-exps">$&#x5C;mathbf{Set}$</span>) that is almost a homomorphism (as described above).</li>
+<li>Then <span class="mathjax-exps">$&#x5C;phi^{-1}$</span> can be constructed as a set function, and a result from group theory shows that <span class="mathjax-exps">$&#x5C;phi^{-1}$</span> is also a homomorphism.</li>
+</ul>
+</li>
+</ul>
+<p><em>Notes</em>: This is the first case in a very common pattern –  the isomorphisms in this category were just set bijections, <em>but they preserve the structure of the objects</em>. In this case, homomorphisms end up being the kind of morphisms you need to preserve the fundamental pieces of a group’s structure. They preserve the binary operation (by definition) and associativity (from function composition), but they also end up preserving inverses, identities, and information about the elements themselves like order.</p>
+<p>This can be summed up with a wave of the hand by saying that the isomorphisms in a category are just <em>invertible structure-preserving morphisms</em>.</p>
+<h4 class="mume-header" id="mathbfring"><span class="mathjax-exps">$&#x5C;mathbf{Ring}$</span></h4>
+
+<ul>
+<li>
+<p>Objects: Rings <span class="mathjax-exps">$(R, +, &#x5C;times)$</span></p>
+</li>
+<li>
+<p>Morphisms: Ring homomorphisms <span class="mathjax-exps">$&#x5C;varphi: (R, +, &#x5C;times) &#x5C;rightarrow (S, &#x5C;star, &#x5C;diamond)$</span> where <span class="mathjax-exps">$&#x5C;varphi(a&#x5C;times(b+c)) = &#x5C;varphi(a)&#x5C;star(&#x5C;varphi(b) &#x5C;diamond &#x5C;varphi(c))$</span></p>
+</li>
+<li>
+<p>Isomorphisms: Bijective ring homomorphisms</p>
+</li>
+<li>
+<p><span class="mathjax-exps">$&#x5C;mathbf{Ab} = &#x5C;mathbf{Mod_&#x5C;mathbb{Z}}$</span></p>
+<ul>
+<li>Objects: Abelian groups (Left <span class="mathjax-exps">$R$</span>-modules of <span class="mathjax-exps">$&#x5C;mathbb{Z}$</span>)</li>
+<li>Homomorphisms of abelian groups <span class="mathjax-exps">$&#x5C;varphi: G &#x5C;rightarrow H$</span></li>
+<li>Isomorphisms: Bijective group homomorphisms</li>
+</ul>
+</li>
+</ul>
+<h4 class="mume-header" id="mathbfvect_k"><span class="mathjax-exps">$&#x5C;mathbf{Vect_k}$</span></h4>
+
+<ul>
+<li>Objects: Vector spaces over a field <span class="mathjax-exps">$k$</span>, say <span class="mathjax-exps">$V, W$</span></li>
+<li>Morphisms: <span class="mathjax-exps">$k$</span>-linear maps <span class="mathjax-exps">$T: V &#x5C;rightarrow W$</span>
+<ul>
+<li>These are maps <span class="mathjax-exps">$T$</span> such that <span class="mathjax-exps">$&#x5C;forall v_1, v_2 &#x5C;in V, &#x5C;forall k&#x5C;in K$</span>, we have <span class="mathjax-exps">$T(v_1 + kv_2) = T(v_1) + kT(v_2)$</span>.</li>
+</ul>
+</li>
+<li>Isomorphisms: Invertible linear maps
+<ul>
+<li>These are maps between sets of <em>vectors</em> of <span class="mathjax-exps">$V$</span> and <span class="mathjax-exps">$W$</span> which are bijective functions on these sets (again, just as in <span class="mathjax-exps">$&#x5C;mathbf{Set}$</span>) with the restriction that they obey the linearity condition from above.</li>
+</ul>
+</li>
+</ul>
+<p><em>Notes</em>: The presence of <span class="mathjax-exps">$k$</span> is just a generalization –  if you haven’t seen a lot of algebra, you can just take <span class="mathjax-exps">$k=&#x5C;mathbb{R}$</span> and think of the category of all vector spaces over <span class="mathjax-exps">$&#x5C;mathbb{R}$</span>. Then an object in this category is just <span class="mathjax-exps">$&#x5C;mathbb{R^n}$</span> for some <span class="mathjax-exps">$n$</span>, and the maps are just the usual linear maps you’d see in an undergraduate course on linear algebra.</p>
+<p>Notice how the pattern seen in <span class="mathjax-exps">$&#x5C;mathbf{Grp}$</span> continues here –  to get an isomorphism, you just look at all of the functions between the underlying sets (this is a large set!), take only the bijections, then filter it even further by taking the bijections which preserve the structure you care about.</p>
+<p>Here, the structure-preserving maps in vector spaces end up being <em>linear maps</em>. You might notice that condition of linearity looks very similar to the condition for homomorphisms –  only now, the operations in both the source and target are the same.</p>
+<p>Informally, this is because you essentially get vector spaces by taking a group, tacking on a field <span class="mathjax-exps">$k$</span>, then adding a few more axioms –  so the linearity condition is really just a souped-up homomorphism on the underlying group (here, vectors under addition) that takes into account the remaining axioms (namely, scalar multiplication).</p>
+<p>The point of this example is to show that (generally speaking) as more structure is put on the objects, more restrictions will need to be put on the morphisms to retain that structure.</p>
+<h4 class="mume-header" id="mathbflogic_0-propositional-or-0-order-logic"><span class="mathjax-exps">$&#x5C;mathbf{Logic_0}$</span> (Propositional or &quot;0-order&quot; Logic)</h4>
+
+<ul>
+<li>Objects: Propositions <span class="mathjax-exps">$P, Q$</span></li>
+<li>Morphisms: Deductions defined by <span class="mathjax-exps">$P &#x5C;Rightarrow Q$</span> or &quot;P implies Q&quot;
+<ul>
+<li>Also known as deductions</li>
+</ul>
+</li>
+<li>Isomorphisms: Tautologies – equivalent propositions <span class="mathjax-exps">$P, Q$</span> such that <span class="mathjax-exps">$P &#x5C;iff Q$</span></li>
+</ul>
+<p><em>Notes</em>: This can be thought of as “the category of proofs”, and such a category can be derived from any deductive system. The isomorphisms here are “if and only if” statements, and they are often exploited in Mathematics to create <em>definitions</em>.<br>
+(In other words, every Mathematical definition is an iff statement, and any proposition isomorphic to a definition in this category can be taken as an equivalent definition.)</p>
+<h4 class="mume-header" id="mathbfaut-finite-state-automata"><span class="mathjax-exps">$&#x5C;mathbf{Aut}$</span> (Finite state automata)</h4>
+
+<ul>
+<li>
+<p>Objects: Finite state automata <span class="mathjax-exps">$(Q, &#x5C;Sigma, &#x5C;delta, q_0, F), (Q&#x27;, &#x5C;Sigma, &#x5C;delta&#x27;, q&#x27;_0, F&#x27;)$</span></p>
+<ul>
+<li><span class="mathjax-exps">$Q$</span> is the set of states</li>
+<li><span class="mathjax-exps">$&#x5C;Sigma$</span> is the input alphabet</li>
+<li><span class="mathjax-exps">$&#x5C;delta : &#x5C;Sigma &#x5C;times Q &#x5C;rightarrow Q$</span> is a transition map</li>
+<li><span class="mathjax-exps">$q_0&#x5C;in Q$</span> is the initial state</li>
+<li><span class="mathjax-exps">$F &#x5C;subseteq Q$</span> is the set of final/accepting states</li>
+</ul>
+</li>
+<li>
+<p>Morphisms: Simulations <span class="mathjax-exps">$f: Q &#x5C;rightarrow Q&#x27;$</span> such that</p>
+<ul>
+<li><span class="mathjax-exps">$&#x5C;forall &#x5C;sigma&#x5C;in&#x5C;Sigma, &#x5C;forall q&#x5C;in Q, ~ f(&#x5C;delta(&#x5C;sigma, q)) = &#x5C;delta&#x27;(&#x5C;sigma, f(q))$</span>
+<ul>
+<li>(Transitions are preserved)</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f(q_0) = {q&#x27;}_0$</span>
+<ul>
+<li>(Initial states are mapped to each other)</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f(F) &#x5C;subseteq F&#x27;$</span>
+<ul>
+<li>(Accepting states are preserved)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Isomorphisms: Bijective simulations that are also bijective on the underlying sets. Note that this forces <span class="mathjax-exps">$g=f^{-1}: Q&#x27; &#x5C;rightarrow Q$</span> to exist, and</p>
+<ul>
+<li><span class="mathjax-exps">$&#x5C;forall &#x5C;sigma&#x5C;in&#x5C;Sigma,~&#x5C;forall q&#x5C;in Q, (g&#x5C;circ f)(&#x5C;delta(&#x5C;sigma, q)) = &#x5C;delta(&#x5C;sigma, q)$</span>, so <span class="mathjax-exps">$g&#x5C;circ f = id_Q$</span>. Similarly, <span class="mathjax-exps">$f&#x5C;circ g = Id_{Q&#x27;}$</span></li>
+<li><span class="mathjax-exps">$q_0 = q&#x27;_0$</span></li>
+<li><span class="mathjax-exps">$F = F&#x27;$</span></li>
+</ul>
+</li>
+</ul>
+<h4 class="mume-header" id="mathbfgraph"><span class="mathjax-exps">$&#x5C;mathbf{Graph}$</span></h4>
+
+<ul>
+<li>
+<p>Objects: Graphs <span class="mathjax-exps">$G = (V_1, E_2),  H =(V_2, E_2)$</span> where <span class="mathjax-exps">$E_i &#x5C;subseteq V_i&#x5C;times V_i$</span></p>
+</li>
+<li>
+<p>Morphisms: maps <span class="mathjax-exps">$f: V_1  &#x5C;rightarrow V_2$</span> where  <span class="mathjax-exps">$(v,w) &#x5C;in E_1 &#x5C;Rightarrow (f(v), f(w)) &#x5C;in E_2$</span></p>
+<ul>
+<li>i.e. maps between vertex sets that preserve incidence relations.</li>
+</ul>
+</li>
+<li>
+<p>Isomorphisms: Bijective graph morphisms</p>
+</li>
+<li>
+<p><span class="mathjax-exps">$&#x5C;mathbf{Mat(&#x5C;mathbb{F})}$</span></p>
+<ul>
+<li>Objects: Natural numbers <span class="mathjax-exps">$m, n$</span></li>
+<li>Morphisms:  <span class="mathjax-exps">$A:m &#x5C;rightarrow n$</span> is <span class="mathjax-exps">$m&#x5C;times n$</span> matrix with entries in the underlying field <span class="mathjax-exps">$&#x5C;mathbb{F}$</span></li>
+<li>Isomorphisms: Natural numbers <span class="mathjax-exps">$m, n$</span> for which there exists a <span class="mathjax-exps">$B: n&#x5C;rightarrow m$</span>  , i.e an <span class="mathjax-exps">$n&#x5C;times m$</span> matrix, such that <span class="mathjax-exps">$AB = BA =I$</span>
+<ul>
+<li>Note that this can only possibly happen when <span class="mathjax-exps">$n=m$</span>, so <span class="mathjax-exps">$A,B$</span> are square. But then we can <em>always</em> just take the identity matrix <span class="mathjax-exps">$I_n = I_n^{-1}$</span> So isomorphisms are just equalities of natural numbers.</li>
+</ul>
+</li>
+</ul>
+<p><em>Notes</em>: This category is a little different –  the objects don’t matter much, since they’re really just keeping tracks of matrix dimensions. Instead, the morphisms themselves are the data this category encodes.</p>
+<p>While this seems like an odd category to consider, the kicker is it’s possible to prove that there is a &quot;full, faithful, surjective functor from <span class="mathjax-exps">$&#x5C;mathbf{Mat}(&#x5C;mathbb{F})$</span> to <span class="mathjax-exps">$&#x5C;mathbf{Vec}(&#x5C;mathbb{F})$</span>&quot; –  in other words, one can move between these categories without losing any vital information. In this case, this tells us that when working with (finite dimensional) vector spaces, it doesn’t matter whether you study abstract linear maps or the matrices that represent them!</p>
+</li>
+</ul>
+<h4 class="mume-header" id="mathbfhask-pseudo-category"><span class="mathjax-exps">$&#x5C;mathbf{Hask}$</span> (pseudo-category)</h4>
+
+<ul>
+<li>Objects: Haskell types <span class="mathjax-exps">$A, B$</span></li>
+<li>Morphisms: Functions <span class="mathjax-exps">$f: A &#x5C;rightarrow B$</span></li>
+<li>Isomorphisms: Type <span class="mathjax-exps">$A,B$</span> for which there exist functions <span class="mathjax-exps">$f: A&#x5C;rightarrow B, g: B &#x5C;rightarrow A$</span> such that <span class="mathjax-exps">$f.g b = id ~b$</span> and <span class="mathjax-exps">$g.f a = id ~a$</span>
+<ul>
+<li>Note: From the compiler’s point of view, <em>function</em> equivalence is perhaps the more interesting/important thing to look at!</li>
+</ul>
+</li>
+</ul>
+<h4 class="mume-header" id="mathbflambda-calc"><span class="mathjax-exps">$&#x5C;mathbf{&#x5C;lambda-Calc}$</span></h4>
+
+<ul>
+<li>Objects: Typed lambda calculi</li>
+<li>Morphisms: Translations that map types to types, terms to terms, and preserve equations (<span class="mathjax-exps">$&#x5C;alpha$</span> conversions, <span class="mathjax-exps">$&#x5C;beta$</span> reductions, etc)</li>
+</ul>
+<h4 class="mume-header" id="mathbfdiff"><span class="mathjax-exps">$&#x5C;mathbf{Diff}$</span></h4>
+
+<ul>
+<li>Objects: Smooth manifolds <span class="mathjax-exps">$(&#x5C;mathcal{M}, &#x5C;mathcal{A})​$</span> ,where <span class="mathjax-exps">$&#x5C;mathcal{M}​$</span> is a topological manifold (locally homeomorphic to <span class="mathjax-exps">$&#x5C;mathbb{R}^n​$</span>), and <span class="mathjax-exps">$&#x5C;mathcal{A}​$</span> is a maximal smooth atlas on <span class="mathjax-exps">$&#x5C;mathcal{M}​$</span>.</li>
+<li>Morphisms: Smooth maps <span class="mathjax-exps">$F: (&#x5C;mathcal{M_1}, &#x5C;mathcal{A_1}) &#x5C;rightarrow (&#x5C;mathcal{M_2}, &#x5C;mathcal{A_2})$</span> (where  <span class="mathjax-exps">$F = (f_1, f_2, &#x5C;cdots)$</span>) such that <span class="mathjax-exps">$&#x5C;frac{&#x5C;partial f_i}{&#x5C;partial x_j}$</span> is continuous for all <span class="mathjax-exps">$i,j$</span>, and if <span class="mathjax-exps">$&#x5C;phi &#x5C;in &#x5C;mathcal{A_1}$</span> is a chart on <span class="mathjax-exps">$&#x5C;mathcal{M_1}$</span>, then <span class="mathjax-exps">$F(&#x5C;phi)&#x5C;in&#x5C;mathcal{A_2}$</span> and is a chart on <span class="mathjax-exps">$&#x5C;mathcal{M_2}$</span></li>
+<li>Isomorphisms: Diffeomorphisms, which are morphisms <span class="mathjax-exps">$F$</span> with a smooth inverse <span class="mathjax-exps">$G$</span>.</li>
+</ul>
+<p><em>Notes</em>: This is where differential geometry and a fair amount of topology takes places, as well as certain branches of analysis, partial differential equations, and physics.</p>
+<h4 class="mume-header" id="mathbfmeas"><span class="mathjax-exps">$&#x5C;mathbf{Meas}$</span></h4>
+
+<ul>
+<li>
+<p>Objects: Measurable spaces <span class="mathjax-exps">$(X, &#x5C;mathcal{&#x5C;Sigma}_X), (Y, &#x5C;mathcal{&#x5C;Sigma}_Y)$</span></p>
+<ul>
+<li>(Where the <span class="mathjax-exps">$&#x5C;Sigma &#x5C;subset 2^X$</span> are <span class="mathjax-exps">$&#x5C;sigma$</span>-algebras over their respective sets, and the members of <span class="mathjax-exps">$&#x5C;Sigma$</span> are denoted the measurable sets)</li>
+<li>Note that these are measur<strong>able</strong> spaces, not measure spaces –  this is a space for which a measure <span class="mathjax-exps">$&#x5C;mu$</span> can be assigned. The triple <span class="mathjax-exps">$(X, &#x5C;Sigma, &#x5C;mu_X)$</span> would be a <strong>measure</strong> space.</li>
+</ul>
+</li>
+<li>
+<p>Morphisms: Measurable functions <span class="mathjax-exps">$f: (X, &#x5C;Sigma_X) &#x5C;rightarrow (Y, &#x5C;Sigma_Y)$</span> such that<br>
+<span class="mathjax-exps">$E &#x5C;in &#x5C;Sigma_Y &#x5C;Rightarrow f^{-1}(E) &#x5C;in &#x5C;Sigma_X$</span></p>
+<p>(Where <span class="mathjax-exps">$f^{-1}$</span>denotes the preimage or pullback of <span class="mathjax-exps">$f$</span>)</p>
+</li>
+<li>
+<p>Isomorphisms: Measurable functions <span class="mathjax-exps">$f$</span> with measurable inverses <span class="mathjax-exps">$g: (Y, &#x5C;Sigma_Y) &#x5C;rightarrow (X, &#x5C;Sigma_X)$</span> where <span class="mathjax-exps">$F &#x5C;in &#x5C;Sigma_X &#x5C;Rightarrow g^{-1}(F) &#x5C;in &#x5C;Sigma_Y$</span></p>
+</li>
+</ul>
+<p><em>Notes</em>: This is where probability theory happens.</p>
+<p>Also, it turns out to actually be very tricky to formulate measure theory in a categorical way! If we try to look at the category of <strong>measure</strong> spaces, it turns out that adding the actual measure <span class="mathjax-exps">$&#x5C;mu$</span> to a measurable space is in some sense &quot;too strong&quot; of a condition, and the resulting category lacks many useful properties.</p>
+<p>(In particular, it occludes the possibility of having a structure that is denoted the “categorical product”. Attempts formalize measure/probability in categorical terms is a topic of relatively current research.)</p>
+<h4 class="mume-header" id="mathbftop"><span class="mathjax-exps">$&#x5C;mathbf{Top}$</span></h4>
+
+<ul>
+<li>Objects: Topological Spaces <span class="mathjax-exps">$(X, &#x5C;mathcal{T}_X)$</span></li>
+<li>Morphisms: Continuous functions <span class="mathjax-exps">$f: (X, &#x5C;mathcal{T}_X) &#x5C;rightarrow (Y, &#x5C;mathcal{T}_Y)$</span> such that if <span class="mathjax-exps">$U$</span> is open in <span class="mathjax-exps">$Y$</span>, then <span class="mathjax-exps">$f^{-1}(U)$</span> is open in <span class="mathjax-exps">$X$</span>.
+<ul>
+<li>Note that this is equivalent to <span class="mathjax-exps">$U &#x5C;in &#x5C;mathcal{T}_Y &#x5C;Rightarrow f^{-1}(U) &#x5C;in &#x5C;mathcal{T}_X$</span></li>
+</ul>
+</li>
+<li>Isomorphisms: Homeomorphisms where <span class="mathjax-exps">$f$</span> has an inverse <span class="mathjax-exps">$g$</span>  (as in <span class="mathjax-exps">$&#x5C;mathbf{Set}$</span>) where <span class="mathjax-exps">$g$</span> is also a continuous function.</li>
+</ul>
+<h4 class="mume-header" id="mathbfunif"><span class="mathjax-exps">$&#x5C;mathbf{Unif}$</span></h4>
+
+<ul>
+<li>Objects: Uniform Spaces <span class="mathjax-exps">$(X, &#x5C;varepsilon)$</span></li>
+<li>Morphisms: Uniformly continuous maps</li>
+<li>Isomorphisms: Uniform maps, i.e. uniformly continuous maps admitting a uniformly continuous inverse.
+<ul>
+<li>These can be thought of as homeomorphisms, along with an added condition of uniformity on the maps and their inverses.</li>
+</ul>
+</li>
+</ul>
+<p><em>Notes</em>: A uniform space is a topological space, equipped with some notion of &quot;<span class="mathjax-exps">$&#x5C;varepsilon$</span>-closeness&quot;. Things like metric spaces and topological groups fit this description,  so most analysis technically happens in this category.</p>
+<h4 class="mume-header" id="mathbfmet"><span class="mathjax-exps">$&#x5C;mathbf{Met}$</span></h4>
+
+<ul>
+<li>Objects: Metric spaces <span class="mathjax-exps">$(M_1, d_1), (M_2, d_2)$</span>
+<ul>
+<li><span class="mathjax-exps">$d_1 : M_1 &#x5C;times M_1 &#x5C;rightarrow &#x5C;mathbb{R}$</span> is denoted the <em>metric</em> on <span class="mathjax-exps">$M_1$</span>.</li>
+</ul>
+</li>
+<li>Morphisms: Contractions <span class="mathjax-exps">$f: (M_1, d_1) &#x5C;rightarrow (M_2, d_2)$</span> such that <span class="mathjax-exps">$&#x5C;forall x,y &#x5C;in M_1$</span>, we have <span class="mathjax-exps">$d_2(f(x), f(y)) &#x5C;leq d_1(x,y)$</span>.</li>
+<li>Isomorphisms: Isometries
+<ul>
+<li>These are just the bijective contractions <span class="mathjax-exps">$f$</span>, so that <span class="mathjax-exps">$d_2(f(x), f(y)) = d_1(x,y)$</span></li>
+</ul>
+</li>
+</ul>
+<p><em>Notes</em>: The distance function <span class="mathjax-exps">$d$</span> has to satisfy a few more axioms than <span class="mathjax-exps">$&#x5C;varepsilon$</span> in <span class="mathjax-exps">$&#x5C;mathbf{Unif}$</span></p>
+<p>Starting here, there are actually many choices we could make for the morphisms –  for example, we could have chosen uniformly continuous functions, Lipschitz functions, or a few others. Here I’ve just chosen one of the weaker conditions –  Lipschitz functions with constant 1.</p>
+<p>Since every metric space is a topological space, the morphisms here need to extend the morphisms on <span class="mathjax-exps">$&#x5C;mathbb{Top}$</span>. This is in fact the case in <span class="mathjax-exps">$&#x5C;mathbf{Met}$</span>, since contractions on metric spaces end up being continuous.</p>
+<h4 class="mume-header" id="mathbfnorm"><span class="mathjax-exps">$&#x5C;mathbf{Norm}$</span></h4>
+
+<ul>
+<li>Objects: Normed spaces</li>
+<li>Morphisms: Continuous and linear maps
+<ul>
+<li>i.e., <span class="mathjax-exps">$Hom(&#x5C;mathbf{Met}) &#x5C;cap Hom(&#x5C;mathbf{Vec})$</span></li>
+</ul>
+</li>
+<li>Isomorphisms: Continuous linear bijective maps with continuous linear inverses</li>
+</ul>
+<h4 class="mume-header" id="mathbfban-complete-normed-vector-spaces"><span class="mathjax-exps">$&#x5C;mathbf{Ban}$</span> (Complete normed vector spaces)</h4>
+
+<ul>
+<li>Objects: Banach spaces <span class="mathjax-exps">$B, C$</span></li>
+<li>Morphisms: Bounded linear maps <span class="mathjax-exps">$f: B &#x5C;rightarrow C$</span> such that <span class="mathjax-exps">$&#x5C;Vert f&#x5C;Vert_{&#x5C;text{sup}}$</span> is finite.
+<ul>
+<li>If <span class="mathjax-exps">$B=C$</span>, these are usually referred to as <em>bounded linear operators</em></li>
+</ul>
+</li>
+<li>Isomorphisms: Bijective bounded linear maps with bounded linear inverses.</li>
+</ul>
+<p><em>Notes</em>: A Banach space is a vector space that is also a complete metric space, so the morphisms simply reflect that these two structures “play nicely” together. This is the case, since the following three are equivalent in Banach spaces:</p>
+<ul>
+<li>Bounded linear maps</li>
+<li>Continuous linear maps</li>
+<li>Uniformly continuous linear maps</li>
+</ul>
+<p>This is also where much of functional analysis happens.</p>
+<h4 class="mume-header" id="mathbfhilb-complete-inner-product-spaces"><span class="mathjax-exps">$&#x5C;mathbf{Hilb}$</span> (Complete inner product spaces)</h4>
+
+<ul>
+<li>Objects: Hilbert Spaces <span class="mathjax-exps">$&#x5C;mathcal{H}, &#x5C;mathcal{K}$</span></li>
+<li>Morphisms:  Bounded linear maps <span class="mathjax-exps">$T: &#x5C;mathcal{H} &#x5C;rightarrow &#x5C;mathcal{K}$</span> such that <span class="mathjax-exps">$&#x5C;Vert T &#x5C;Vert_{sup}$</span> is finite.</li>
+<li>Isomorphisms: Bounded linear maps with bounded linear inverses.</li>
+</ul>
+<p><em>Notes</em>: It might seem a bit simplistic at first to characterize something like a Hilbert space as essentially an “enriched vector space”, but this turns out to be reflected in its categorical structure –  the forgetful functor from <span class="mathjax-exps">$&#x5C;mathbf{Hilb}$</span> to <span class="mathjax-exps">$&#x5C;mathbf{Vec}$</span> given by forgetting the inner product is <strong>faithful</strong> (the categorical analog of &quot;surjective&quot; for normal functions)</p>
+<p>Similarly, one can simultaneously regard any Hilbert space as a Banach space, where the norm is induced by the inner product.</p>
+<h4 class="mume-header" id="mathbfcat"><span class="mathjax-exps">$&#x5C;mathbf{Cat}$</span></h4>
+
+<ul>
+<li>Objects: Small categories <span class="mathjax-exps">$C = (Ob(C), Hom(C)), ~D = (Ob(D), Hom(D))$</span></li>
+<li>Morphisms: <strong>Functors</strong> <span class="mathjax-exps">$F: (Ob(C), Hom(C)) &#x5C;rightarrow (Ob(D), Hom(D))$</span>
+<ul>
+<li>Functors map:
+<ul>
+<li>objects <span class="mathjax-exps">$c, c&#x27; &#x5C;in Ob(C)$</span> to objects <span class="mathjax-exps">$F(c) = d, F(c&#x27;) = d&#x27; &#x5C;in Ob(D)$</span>,</li>
+<li>morphisms <span class="mathjax-exps">$f:c &#x5C;rightarrow c&#x27; &#x5C;in Hom_C(c, c&#x27;)$</span> to morphisms <span class="mathjax-exps">$F(f) : F(c) &#x5C;rightarrow F(c&#x27;) &#x5C;in Hom_D(F(c), F(c&#x27;))$</span>,
+<ul>
+<li>Or to clean up notation a bit, morphisms that look like <span class="mathjax-exps">$g: d &#x5C;rightarrow d&#x27; &#x5C;in Hom(d, d&#x27;)$</span>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In words, this just sends the objects and arrows of one category to another, preserving the way arrows connect objects</li>
+</ul>
+</li>
+<li>Isomorphisms: <strong>Natural isomorphisms</strong>, i.e. functors <span class="mathjax-exps">$F: C &#x5C;rightarrow D$</span> with a dual functor <span class="mathjax-exps">$G: D &#x5C;rightarrow C$</span> such that <span class="mathjax-exps">$F &#x5C;circ G &#x5C;cong Id_D &#x5C;text{ and } G &#x5C;circ F &#x5C;cong Id_C$</span></li>
+</ul>
+<h2 class="mume-header" id="building-more-examples">Building More Examples</h2>
+
+<p>We can also make simple modifications to existing categories to obtain new ones:</p>
+<ul>
+<li>Denote a “distinguished” point : yields pointed categories (e.g. manifolds with base points)</li>
+<li>Add structural restrictions to get “smaller” categories
+<ul>
+<li>Force commutativity
+<ul>
+<li><span class="mathjax-exps">$&#x5C;mathbf{Ab} &#x5C;injects &#x5C;mathbf{Grp}$</span></li>
+<li><span class="mathjax-exps">$&#x5C;mathbf{CRing} &#x5C;injects &#x5C;mathbf{Ring}$</span></li>
+</ul>
+</li>
+<li>Forget some structure
+<ul>
+<li><span class="mathjax-exps">$&#x5C;mathbf{Ring}&#x5C;rightarrow &#x5C;mathbf{Grp}$</span>
+<ul>
+<li>(Just forget about multiplication)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Equip the objects with more structure and/or supply more stringent morphisms
+<ul>
+<li><span class="mathjax-exps">$&#x5C;mathbf{Top} &#x5C;surjects &#x5C;mathbf{Diff}$</span>
+<ul>
+<li>Require that the continuous maps be differentiable</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$&#x5C;mathbf{Set} &#x5C;surjects &#x5C;mathbf{FinSet}$</span>
+<ul>
+<li>Require the cardinality of the sets to be finite (This is where combinatorics is done)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>“Parameterized” categories
+<ul>
+<li><span class="mathjax-exps">$&#x5C;mathbf{Vect_k}$</span> where <span class="mathjax-exps">$k &#x5C;in &#x5C;{ &#x5C;mathbb{R}, &#x5C;mathbb{C}, &#x5C;ZZ_{p}, &#x5C;cdots&#x5C;} is a field$</span></li>
+<li><span class="mathjax-exps">$&#x5C;mathbf{C^A}$</span>: the category whose objects are morphisms in a fixed category <span class="mathjax-exps">$C$</span> with source <span class="mathjax-exps">$A$</span> (This can be thought of as a category of commutative diagrams involving <span class="mathjax-exps">$&#x5C;mathbf{A}$</span>)</li>
+</ul>
+</li>
+<li>The category of all morphisms in a fixed category <span class="mathjax-exps">$&#x5C;mathbf{C}$</span>, which yields <span class="mathjax-exps">$n&#x5C;dash$</span>categories.</li>
+<li>Take <span class="mathjax-exps">$C$</span> and reverse arrows to obtain <span class="mathjax-exps">$C^{op}$</span> to obtain a form of &quot;duality&quot;.</li>
+</ul>
+<p>&lt;-- #TODO --&gt;</p>
+<h1 class="mume-header" id="big-ideas">Big Ideas</h1>
+
+<ul>
+<li>Duality</li>
+<li>Isomorphisms</li>
+<li>Universal Properties
+<ul>
+<li>Build new objects out of old ones, or “factor” objects into smaller ones</li>
+<li>Define things “up to a unique isomorphism”</li>
+<li>Yoneda’s Lemma: To study an object, just look at the maps into and/or out of it!</li>
+</ul>
+</li>
+<li>Functors</li>
+<li>Limits / Colimits
+<ul>
+<li>Limits: Build new objects by “imposing equations” on existing ones.
+<ul>
+<li>Ex: Construction of the p-adic integers as the limit of the sequence of quotient homomorphisms: <span class="mathjax-exps">$&#x5C;cdots &#x5C;rightarrow &#x5C;mathbb{Z}&#x2F;p^n &#x5C;rightarrow &#x5C;cdots &#x5C;rightarrow &#x5C;mathbb{Z}&#x2F;p^2 &#x5C;rightarrow &#x5C;mathbb{Z}&#x2F;p$</span></li>
+</ul>
+</li>
+<li>Colimits: Build new objects by “gluing together” existing ones:</li>
+<li>Examples:
+<ul>
+<li>Products</li>
+<li>Quotients</li>
+<li>Kernels</li>
+<li>Completions</li>
+<li>Free products</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Adjunction
+<ul>
+<li>Duality between functors</li>
+<li>“Partial equivalence” of categories</li>
+</ul>
+</li>
+<li>Kan Extensions</li>
+</ul>
+<h2 class="mume-header" id="duality">Duality</h2>
+
+<ul>
+<li>Reverse arrows and redefine composition in <span class="mathjax-exps">$C$</span> to obtain <span class="mathjax-exps">$C^{op}$</span></li>
+<li>Then every “thing” in <span class="mathjax-exps">$C$</span> has a corresponding &quot;thing&quot; in <span class="mathjax-exps">$C^{op}$</span>, which we call a co-&quot;thing&quot;.
+<ul>
+<li>Products and Coproducts</li>
+<li>Kernels and Cokernels</li>
+<li>Limits and Colimits</li>
+</ul>
+</li>
+<li>Can often obtain two conclusions for the price of one!</li>
+<li>Duality is an involution
+<ul>
+<li>i.e., a co-co-<span class="mathjax-exps">$X$</span> is just an <span class="mathjax-exps">$X$</span></li>
+</ul>
+</li>
+<li>Canonical Example: Vector spaces <span class="mathjax-exps">$V$</span> and their duals <span class="mathjax-exps">$V^*$</span> over a field <span class="mathjax-exps">$k$</span>
+<ul>
+<li><span class="mathjax-exps">$V^* = &#x5C;{&#x5C;phi: V &#x5C;rightarrow k&#x5C;}$</span> where <span class="mathjax-exps">$&#x5C;phi$</span> is linear</li>
+<li><span class="mathjax-exps">$V &#x5C;not&#x5C;cong V*$</span>, but <span class="mathjax-exps">$V &#x5C;cong V^{**}$</span></li>
+</ul>
+</li>
+<li>Very powerful! Example: Poincare Duality
+<ul>
+<li>The <span class="mathjax-exps">$k$</span>th homology group of an <span class="mathjax-exps">$n$</span>-dimensional manifold  is isomorphic <span class="mathjax-exps">$(n-k)$</span>th cohomology group</li>
+<li><span class="mathjax-exps">$H^k(M) &#x5C;cong H_{n-k}(M)$</span>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="universal-properties">Universal Properties</h2>
+
+<p>For another time!</p>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#disclaimer">Disclaimer</a></li>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#interlude-what-does-natural-mean">Interlude –  What does “natural” mean?</a></li>
+<li><a href="#interlude-what-is-an-adjoint">Interlude –  What is an adjoint?</a></li>
+</ul>
+</li>
+<li><a href="#definition-of-a-category">Definition of a Category</a>
+<ul>
+<li><a href="#informal-description">Informal Description</a></li>
+<li><a href="#formal-definitions">Formal Definitions</a></li>
+<li><a href="#foundational-issues">Foundational Issues</a></li>
+</ul>
+</li>
+<li><a href="#examples">Examples</a><br>
+* <a href="#constructions">Constructions</a><br>
+* <a href="#mathbf2-the-minimal-category-on-two-objects"><span class="mathjax-exps">$&#x5C;mathbf{2}$</span> (The minimal category on two objects)</a><br>
+* <a href="#mathbf2-a-modified-version-of-mathbf2"><span class="mathjax-exps">$&#x5C;mathbf{2&#x27;}$</span> (A modified version of <span class="mathjax-exps">$&#x5C;mathbf{2}$</span>)</a><br>
+* <a href="#mathbfn-the-minimal-category-on-n-objects"><span class="mathjax-exps">$&#x5C;mathbf{n}$</span> (The minimal category on <span class="mathjax-exps">$n$</span> objects)</a><br>
+* <a href="#mathbf3"><span class="mathjax-exps">$&#x5C;mathbf{3&#x27;}$</span></a><br>
+* <a href="#more-standard-examples">More Standard Examples</a><br>
+* <a href="#mathbfset"><span class="mathjax-exps">$&#x5C;mathbf{Set}$</span></a><br>
+* <a href="#mathbfposet"><span class="mathjax-exps">$&#x5C;mathbf{Poset}$</span></a><br>
+* <a href="#mathbfrel"><span class="mathjax-exps">$&#x5C;mathbf{Rel}$</span></a><br>
+* <a href="#mathbfgrp"><span class="mathjax-exps">$&#x5C;mathbf{Grp}$</span></a><br>
+* <a href="#mathbfring"><span class="mathjax-exps">$&#x5C;mathbf{Ring}$</span></a><br>
+* <a href="#mathbfvect_k"><span class="mathjax-exps">$&#x5C;mathbf{Vect_k}$</span></a><br>
+* <a href="#mathbflogic_0-propositional-or-0-order-logic"><span class="mathjax-exps">$&#x5C;mathbf{Logic_0}$</span> (Propositional or &quot;0-order&quot; Logic)</a><br>
+* <a href="#mathbfaut-finite-state-automata"><span class="mathjax-exps">$&#x5C;mathbf{Aut}$</span> (Finite state automata)</a><br>
+* <a href="#mathbfgraph"><span class="mathjax-exps">$&#x5C;mathbf{Graph}$</span></a><br>
+* <a href="#mathbfhask-pseudo-category"><span class="mathjax-exps">$&#x5C;mathbf{Hask}$</span> (pseudo-category)</a><br>
+* <a href="#mathbflambda-calc"><span class="mathjax-exps">$&#x5C;mathbf{&#x5C;lambda-Calc}$</span></a><br>
+* <a href="#mathbfdiff"><span class="mathjax-exps">$&#x5C;mathbf{Diff}$</span></a><br>
+* <a href="#mathbfmeas"><span class="mathjax-exps">$&#x5C;mathbf{Meas}$</span></a><br>
+* <a href="#mathbftop"><span class="mathjax-exps">$&#x5C;mathbf{Top}$</span></a><br>
+* <a href="#mathbfunif"><span class="mathjax-exps">$&#x5C;mathbf{Unif}$</span></a><br>
+* <a href="#mathbfmet"><span class="mathjax-exps">$&#x5C;mathbf{Met}$</span></a><br>
+* <a href="#mathbfnorm"><span class="mathjax-exps">$&#x5C;mathbf{Norm}$</span></a><br>
+* <a href="#mathbfban-complete-normed-vector-spaces"><span class="mathjax-exps">$&#x5C;mathbf{Ban}$</span> (Complete normed vector spaces)</a><br>
+* <a href="#mathbfhilb-complete-inner-product-spaces"><span class="mathjax-exps">$&#x5C;mathbf{Hilb}$</span> (Complete inner product spaces)</a><br>
+* <a href="#mathbfcat"><span class="mathjax-exps">$&#x5C;mathbf{Cat}$</span></a>
+<ul>
+<li><a href="#building-more-examples">Building More Examples</a></li>
+</ul>
+</li>
+<li><a href="#big-ideas">Big Ideas</a>
+<ul>
+<li><a href="#duality">Duality</a></li>
+<li><a href="#universal-properties">Universal Properties</a></li>
+</ul>
+</li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
