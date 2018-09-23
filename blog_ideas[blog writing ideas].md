@@ -76,3 +76,20 @@
 - Undergrad degree in review
 - Review of research program
 - Review of Witt Vectors conference
+
+# From Lightning Talks
+- Epsilon delta proofs
+- Approaches to finding the limit of a function (single and/or multivariable)
+- Parametricity and the algebra of pure functional programs
+- Set theory (maybe the ZFC axioms, some history etc.)
+- Graph theory (e.g. basic theory, applications)
+- Turing machines
+- Non-standard analysis (hyper-real numbers etc.)
+- Construction of number systems (e.g. the natural numbers from the Peano axioms, or the real numbers as Cauchy sequences of rationals)
+- Something fun from probability theory (e.g. Markov processes and their connection to linear algebra)
+- Game theory
+- Problem solving techniques (maybe someone has read Polya, or happens to have exerience from contest math at some level?)
+- Solving recurrence relations (using the language of ODEs)
+- Applications of Linear Algebra - PageRank, Computer Graphics, and more
+- Mathematical formulation of Brownian motion and its role in mathematics
+- Stochastic Calculus

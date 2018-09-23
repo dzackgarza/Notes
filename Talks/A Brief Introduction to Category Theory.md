@@ -1,3 +1,4 @@
+
 # Disclaimer
 
 This is meant to be a relatively short and **non-rigorous** introduction to Category Theory. Although I will be defining and using a lot of the technical terminology that is commonly used, this talk is primarily aimed at introducing these concepts, why they exist, and where they're useful and commonly used.
@@ -421,12 +422,10 @@ We can also make simple modifications to existing categories to obtain new ones:
     - $\mathbf{Set} \surjects \mathbf{FinSet}$
       - Require the cardinality of the sets to be finite (This is where combinatorics is done)
 - "Parameterized" categories
-  - $\mathbf{Vect_k}$ where $k \in \{ \mathbb{R}, \mathbb{C}, \ZZ_{p}, \cdots\} is a field$
+  - $\mathbf{Vect_k}$ where $k \in \{ \RR, \CC, \ZZ_{p}, \cdots\}$ is a field.
   - $\mathbf{C^A}$: the category whose objects are morphisms in a fixed category $C$ with source $A$ (This can be thought of as a category of commutative diagrams involving $\mathbf{A}$)
 - The category of all morphisms in a fixed category $\mathbf{C}$, which yields $n\dash$categories.
 - Take $C$ and reverse arrows to obtain $C^{op}$ to obtain a form of "duality".
-
-<-- #TODO -->
 
 # Big Ideas
 
