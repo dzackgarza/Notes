@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>WorldOfMath</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"displayMath":[["$$","$$"],["\\[","\\]"]],"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true,"processEnvironments":false},"TeX":{"extensions":["noUndefined.js","autoload-all.js","AMSmath.js","AMSsymbols.js"],"Macros":{"NN":"{\\mathbb{N}}","RR":"{\\mathbb{R}}","ZZ":"{\\mathbb{Z}}","CC":"{\\mathbb{C}}","QQ":"{\\mathbb{Q}}","RP":"{\\mathbb{RP}}","CP":"{\\mathbb{CP}}","HP":"{\\mathbb{HP}}","OP":"{\\mathbb{OP}}","FF":"{\\mathbb{F}}","PP":"{\\mathbb{P}}","AA":"{\\mathbb{A}}","MM":"{\\mathbb{M}}","TT":"{\\mathbb{T}}","SS":"{\\mathbb{S}}","KK":"{\\mathbb{K}}","Gr":"{\\text{Gr}}","GL":"{\\text{GL}}","indicator":"{\\unicode{x1D7D9}}","char":"{\\mathbb{1}}","abs":["\\left\\lvert #2 \\right\\rvert_{\\text{#1}}",2,""],"Aut":"{\\text{Aut}}","del":"{\\partial}","too":["{\\xrightarrow{#1}}",1,""],"im":"{\\text{im}~}","homotopic":"\\simeq","into":"\\to","theset":["\\{{#1}\\}",1],"norm":["{\\lVert}{#1}{\\rVert}",1],"cross":"\\times","definedas":"\\mathrel{\\vcenter{:}}=","surjects":"\\twoheadrightarrow","onto":"\\twoheadrightarrow","injects":"\\hookrightarrow","id":"\\text{id}","restrictionof":["\\left.{#1}\\right|_{#2}",2],"intersect":"\\bigcap","union":"\\bigcup","mapsvia":["\\xrightarrow{#1}",1],"coker":"\\operatorname{coker}","tensor":"\\otimes","semidirect":"\\rtimes","pt":"\\{\\text{pt}\\}","and":"{\\text{and}}","or":"{\\text{or}}","bd":"{\\del}","wait":"{\\,\\cdot\\,}","selfmap":"{\\circlearrowleft}","tor":"{\\text{Tor}}","ext":"{\\text{Ext}}","hom":"{\\text{Hom}}","actson":"{\\curvearrowright}","actsonl":"{\\curvearrowleft}","disjoint":"{\\coprod}","qed":"{\\tag*{$\\blacksquare$}}","endef":"{\\tag*{$\\triangleleft$}}","dash":"{\\hbox{-}}","inner":["\\langle #1, #2 \\rangle",2,""],"bigast":"{\\mathop{\\Large \\ast}}","from":"{\\leftarrow}","covers":"{\\twoheadrightarrow_p}"}},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <p>This is a small diagram I put together using the wonderful <a href="https://www.graphviz.org/">GraphViz</a>. The nodes in this graph denote categories of object, while an arrow <span class="mathjax-exps">$A &#x5C;to B$</span> denotes some kind of &quot;inclusion&quot; of categories.</p>
+<p>(More precisely, it denotes the existence of a forgetful functor from <span class="mathjax-exps">$B$</span> to <span class="mathjax-exps">$A$</span>, so perhaps I should reverse the arrows!)</p>
+<p><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="1033pt" height="1196pt" viewBox="0.00 0.00 1033.13 1196.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1192)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-1192 1029.1281,-1192 1029.1281,4 -4,4"></polygon>
+<!-- Sets -->
+<g id="node1" class="node">
+<title>Sets</title>
+<ellipse fill="none" stroke="#000000" cx="707.9465" cy="-1170" rx="27.2622" ry="18"></ellipse>
+<text text-anchor="middle" x="707.9465" y="-1165.8" font-family="Times,serif" font-size="14.00" fill="#000000">Sets</text>
+</g>
+<!-- Magmas -->
+<g id="node2" class="node">
+<title>Magmas</title>
+<ellipse fill="none" stroke="#000000" cx="409.9465" cy="-1098" rx="44.0814" ry="18"></ellipse>
+<text text-anchor="middle" x="409.9465" y="-1093.8" font-family="Times,serif" font-size="14.00" fill="#000000">Magmas</text>
+</g>
+<!-- Sets&#45;&gt;Magmas -->
+<g id="edge1" class="edge">
+<title>Sets&#45;&gt;Magmas</title>
+<path fill="none" stroke="#000000" d="M682.2813,-1163.799C632.4294,-1151.7543 521.8066,-1125.0266 457.9477,-1109.5976"></path>
+<polygon fill="#000000" stroke="#000000" points="458.6591,-1106.1688 448.1167,-1107.2223 457.015,-1112.973 458.6591,-1106.1688"></polygon>
+</g>
+<!-- Posets -->
+<g id="node3" class="node">
+<title>Posets</title>
+<ellipse fill="none" stroke="#000000" cx="903.9465" cy="-1098" rx="35.931" ry="18"></ellipse>
+<text text-anchor="middle" x="903.9465" y="-1093.8" font-family="Times,serif" font-size="14.00" fill="#000000">Posets</text>
+</g>
+<!-- Sets&#45;&gt;Posets -->
+<g id="edge2" class="edge">
+<title>Sets&#45;&gt;Posets</title>
+<path fill="none" stroke="#000000" d="M732.1074,-1161.6696C762.0067,-1151.2894 814.4232,-1132.8592 858.9465,-1116 861.4425,-1115.0549 864.0108,-1114.0676 866.5951,-1113.0632"></path>
+<polygon fill="#000000" stroke="#000000" points="867.898,-1116.3119 875.9237,-1109.3953 865.3365,-1109.7973 867.898,-1116.3119"></polygon>
+</g>
+<!-- Topological Spaces -->
+<g id="node5" class="node">
+<title>Topological Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="651.9465" cy="-882" rx="86.859" ry="18"></ellipse>
+<text text-anchor="middle" x="651.9465" y="-877.8" font-family="Times,serif" font-size="14.00" fill="#000000">Topological Spaces</text>
+</g>
+<!-- Sets&#45;&gt;Topological Spaces -->
+<g id="edge4" class="edge">
+<title>Sets&#45;&gt;Topological Spaces</title>
+<path fill="none" stroke="#000000" d="M693.8433,-1154.2164C685.6419,-1144.0533 675.9615,-1130.1381 670.9465,-1116 645.8966,-1045.3796 647.0265,-955.5118 649.6536,-910.4608"></path>
+<polygon fill="#000000" stroke="#000000" points="653.1601,-910.4742 650.3201,-900.2671 646.175,-910.0174 653.1601,-910.4742"></polygon>
+</g>
+<!-- Measurable Spaces -->
+<g id="node32" class="node">
+<title>Measurable Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="764.9465" cy="-1098" rx="85.1108" ry="18"></ellipse>
+<text text-anchor="middle" x="764.9465" y="-1093.8" font-family="Times,serif" font-size="14.00" fill="#000000">Measurable Spaces</text>
+</g>
+<!-- Sets&#45;&gt;Measurable Spaces -->
+<g id="edge44" class="edge">
+<title>Sets&#45;&gt;Measurable Spaces</title>
+<path fill="none" stroke="#000000" d="M720.5967,-1154.0209C727.5663,-1145.2171 736.3902,-1134.0712 744.3286,-1124.0437"></path>
+<polygon fill="#000000" stroke="#000000" points="747.2655,-1125.9727 750.7284,-1115.9597 741.7772,-1121.6277 747.2655,-1125.9727"></polygon>
+</g>
+<!-- Semigroups -->
+<g id="node6" class="node">
+<title>Semigroups</title>
+<ellipse fill="none" stroke="#000000" cx="274.9465" cy="-1026" rx="57.3437" ry="18"></ellipse>
+<text text-anchor="middle" x="274.9465" y="-1021.8" font-family="Times,serif" font-size="14.00" fill="#000000">Semigroups</text>
+</g>
+<!-- Magmas&#45;&gt;Semigroups -->
+<g id="edge5" class="edge">
+<title>Magmas&#45;&gt;Semigroups</title>
+<path fill="none" stroke="#000000" d="M382.9517,-1083.6028C362.9337,-1072.9265 335.3735,-1058.2277 313.1041,-1046.3507"></path>
+<polygon fill="#000000" stroke="#000000" points="314.7049,-1043.2379 304.2343,-1041.6202 311.4108,-1049.4143 314.7049,-1043.2379"></polygon>
+</g>
+<!-- Quasigroups -->
+<g id="node7" class="node">
+<title>Quasigroups</title>
+<ellipse fill="none" stroke="#000000" cx="409.9465" cy="-1026" rx="59.6935" ry="18"></ellipse>
+<text text-anchor="middle" x="409.9465" y="-1021.8" font-family="Times,serif" font-size="14.00" fill="#000000">Quasigroups</text>
+</g>
+<!-- Magmas&#45;&gt;Quasigroups -->
+<g id="edge6" class="edge">
+<title>Magmas&#45;&gt;Quasigroups</title>
+<path fill="none" stroke="#000000" d="M409.9465,-1079.8314C409.9465,-1072.131 409.9465,-1062.9743 409.9465,-1054.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="413.4466,-1054.4132 409.9465,-1044.4133 406.4466,-1054.4133 413.4466,-1054.4132"></polygon>
+</g>
+<!-- Lattices -->
+<g id="node4" class="node">
+<title>Lattices</title>
+<ellipse fill="none" stroke="#000000" cx="903.9465" cy="-1026" rx="41.7056" ry="18"></ellipse>
+<text text-anchor="middle" x="903.9465" y="-1021.8" font-family="Times,serif" font-size="14.00" fill="#000000">Lattices</text>
+</g>
+<!-- Posets&#45;&gt;Lattices -->
+<g id="edge3" class="edge">
+<title>Posets&#45;&gt;Lattices</title>
+<path fill="none" stroke="#000000" d="M903.9465,-1079.8314C903.9465,-1072.131 903.9465,-1062.9743 903.9465,-1054.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="907.4466,-1054.4132 903.9465,-1044.4133 900.4466,-1054.4133 907.4466,-1054.4132"></polygon>
+</g>
+<!-- Metric Spaces -->
+<g id="node25" class="node">
+<title>Metric Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="698.9465" cy="-810" rx="66.0057" ry="18"></ellipse>
+<text text-anchor="middle" x="698.9465" y="-805.8" font-family="Times,serif" font-size="14.00" fill="#000000">Metric Spaces</text>
+</g>
+<!-- Topological Spaces&#45;&gt;Metric Spaces -->
+<g id="edge31" class="edge">
+<title>Topological Spaces&#45;&gt;Metric Spaces</title>
+<path fill="none" stroke="#000000" d="M663.8066,-863.8314C669.2471,-855.497 675.8012,-845.4567 681.7679,-836.3162"></path>
+<polygon fill="#000000" stroke="#000000" points="684.7176,-838.2004 687.2531,-827.9134 678.856,-834.374 684.7176,-838.2004"></polygon>
+</g>
+<!-- Manifolds -->
+<g id="node26" class="node">
+<title>Manifolds</title>
+<ellipse fill="none" stroke="#000000" cx="608.9465" cy="-738" rx="50.9619" ry="18"></ellipse>
+<text text-anchor="middle" x="608.9465" y="-733.8" font-family="Times,serif" font-size="14.00" fill="#000000">Manifolds</text>
+</g>
+<!-- Topological Spaces&#45;&gt;Manifolds -->
+<g id="edge32" class="edge">
+<title>Topological Spaces&#45;&gt;Manifolds</title>
+<path fill="none" stroke="#000000" d="M640.8736,-864.1328C635.003,-853.9019 628.1543,-840.6232 623.9465,-828 617.278,-807.9944 613.4887,-784.4576 611.3874,-766.4721"></path>
+<polygon fill="#000000" stroke="#000000" points="614.8473,-765.9077 610.3114,-756.3329 607.8864,-766.6465 614.8473,-765.9077"></polygon>
+</g>
+<!-- Normed Spaces -->
+<g id="node28" class="node">
+<title>Normed Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="792.9465" cy="-234" rx="71.8105" ry="18"></ellipse>
+<text text-anchor="middle" x="792.9465" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Normed Spaces</text>
+</g>
+<!-- Topological Spaces&#45;&gt;Normed Spaces -->
+<g id="edge36" class="edge">
+<title>Topological Spaces&#45;&gt;Normed Spaces</title>
+<path fill="none" stroke="#000000" d="M710.3898,-868.5462C733.3484,-860.432 757.9772,-847.7045 773.9465,-828 799.6868,-796.2392 792.9465,-778.8816 792.9465,-738 792.9465,-738 792.9465,-738 792.9465,-378 792.9465,-337.876 792.9465,-291.4631 792.9465,-262.4177"></path>
+<polygon fill="#000000" stroke="#000000" points="796.4466,-262.1853 792.9465,-252.1854 789.4466,-262.1854 796.4466,-262.1853"></polygon>
+</g>
+<!-- Measure Spaces -->
+<g id="node33" class="node">
+<title>Measure Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="894.9465" cy="-810" rx="73.5126" ry="18"></ellipse>
+<text text-anchor="middle" x="894.9465" y="-805.8" font-family="Times,serif" font-size="14.00" fill="#000000">Measure Spaces</text>
+</g>
+<!-- Topological Spaces&#45;&gt;Measure Spaces -->
+<g id="edge41" class="edge">
+<title>Topological Spaces&#45;&gt;Measure Spaces</title>
+<path fill="none" stroke="#000000" d="M702.0016,-867.1689C741.6178,-855.4307 796.9511,-839.0357 838.2081,-826.8114"></path>
+<polygon fill="#000000" stroke="#000000" points="839.2502,-830.1531 847.8439,-823.9563 837.2615,-823.4415 839.2502,-830.1531"></polygon>
+</g>
+<!-- Topological Groups -->
+<g id="node34" class="node">
+<title>Topological Groups</title>
+<ellipse fill="none" stroke="#000000" cx="449.9465" cy="-810" rx="88.5882" ry="18"></ellipse>
+<text text-anchor="middle" x="449.9465" y="-805.8" font-family="Times,serif" font-size="14.00" fill="#000000">Topological Groups</text>
+</g>
+<!-- Topological Spaces&#45;&gt;Topological Groups -->
+<g id="edge42" class="edge">
+<title>Topological Spaces&#45;&gt;Topological Groups</title>
+<path fill="none" stroke="#000000" d="M608.1155,-866.3771C577.515,-855.4699 536.4749,-840.8418 503.8681,-829.2196"></path>
+<polygon fill="#000000" stroke="#000000" points="504.635,-825.7773 494.0403,-825.7166 502.2847,-832.371 504.635,-825.7773"></polygon>
+</g>
+<!-- Topological Vector Spaces -->
+<g id="node36" class="node">
+<title>Topological Vector Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="347.9465" cy="-234" rx="115.731" ry="18"></ellipse>
+<text text-anchor="middle" x="347.9465" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Topological Vector Spaces</text>
+</g>
+<!-- Topological Spaces&#45;&gt;Topological Vector Spaces -->
+<g id="edge48" class="edge">
+<title>Topological Spaces&#45;&gt;Topological Vector Spaces</title>
+<path fill="none" stroke="#000000" d="M631.6329,-864.3425C577.0952,-816.8973 431.343,-689.8303 427.9465,-684 407.368,-648.6753 408.9465,-634.8816 408.9465,-594 408.9465,-594 408.9465,-594 408.9465,-378 408.9465,-334.1465 384.6637,-288.307 366.7398,-260.4447"></path>
+<polygon fill="#000000" stroke="#000000" points="369.623,-258.4595 361.1826,-252.0555 363.7872,-262.3253 369.623,-258.4595"></polygon>
+</g>
+<!-- Monoids -->
+<g id="node10" class="node">
+<title>Monoids</title>
+<ellipse fill="none" stroke="#000000" cx="274.9465" cy="-954" rx="45.2478" ry="18"></ellipse>
+<text text-anchor="middle" x="274.9465" y="-949.8" font-family="Times,serif" font-size="14.00" fill="#000000">Monoids</text>
+</g>
+<!-- Semigroups&#45;&gt;Monoids -->
+<g id="edge9" class="edge">
+<title>Semigroups&#45;&gt;Monoids</title>
+<path fill="none" stroke="#000000" d="M274.9465,-1007.8314C274.9465,-1000.131 274.9465,-990.9743 274.9465,-982.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="278.4466,-982.4132 274.9465,-972.4133 271.4466,-982.4133 278.4466,-982.4132"></polygon>
+</g>
+<!-- Loops -->
+<g id="node8" class="node">
+<title>Loops</title>
+<ellipse fill="none" stroke="#000000" cx="391.9465" cy="-954" rx="35.3548" ry="18"></ellipse>
+<text text-anchor="middle" x="391.9465" y="-949.8" font-family="Times,serif" font-size="14.00" fill="#000000">Loops</text>
+</g>
+<!-- Quasigroups&#45;&gt;Loops -->
+<g id="edge7" class="edge">
+<title>Quasigroups&#45;&gt;Loops</title>
+<path fill="none" stroke="#000000" d="M405.4044,-1007.8314C403.4282,-999.9266 401.0683,-990.4872 398.8807,-981.7365"></path>
+<polygon fill="#000000" stroke="#000000" points="402.2458,-980.7659 396.4249,-971.9134 395.4548,-982.4637 402.2458,-980.7659"></polygon>
+</g>
+<!-- Groups -->
+<g id="node9" class="node">
+<title>Groups</title>
+<ellipse fill="none" stroke="#000000" cx="332.9465" cy="-882" rx="39.4273" ry="18"></ellipse>
+<text text-anchor="middle" x="332.9465" y="-877.8" font-family="Times,serif" font-size="14.00" fill="#000000">Groups</text>
+</g>
+<!-- Loops&#45;&gt;Groups -->
+<g id="edge8" class="edge">
+<title>Loops&#45;&gt;Groups</title>
+<path fill="none" stroke="#000000" d="M378.2625,-937.3008C370.9223,-928.3433 361.7273,-917.1223 353.5417,-907.1331"></path>
+<polygon fill="#000000" stroke="#000000" points="356.0116,-904.6251 346.9661,-899.1086 350.5972,-909.0618 356.0116,-904.6251"></polygon>
+</g>
+<!-- Abelian Groups -->
+<g id="node11" class="node">
+<title>Abelian Groups</title>
+<ellipse fill="none" stroke="#000000" cx="232.9465" cy="-810" rx="72.3939" ry="18"></ellipse>
+<text text-anchor="middle" x="232.9465" y="-805.8" font-family="Times,serif" font-size="14.00" fill="#000000">Abelian Groups</text>
+</g>
+<!-- Groups&#45;&gt;Abelian Groups -->
+<g id="edge11" class="edge">
+<title>Groups&#45;&gt;Abelian Groups</title>
+<path fill="none" stroke="#000000" d="M311.7391,-866.7307C298.1944,-856.9784 280.3734,-844.1473 265.1064,-833.1551"></path>
+<polygon fill="#000000" stroke="#000000" points="267.0913,-830.2714 256.9308,-827.2687 263.0011,-835.9522 267.0913,-830.2714"></polygon>
+</g>
+<!-- Groups&#45;&gt;Topological Groups -->
+<g id="edge43" class="edge">
+<title>Groups&#45;&gt;Topological Groups</title>
+<path fill="none" stroke="#000000" d="M356.6232,-867.4297C372.8052,-857.4716 394.5765,-844.0739 413.0206,-832.7237"></path>
+<polygon fill="#000000" stroke="#000000" points="415.0863,-835.5621 421.7686,-827.3403 411.4176,-829.6005 415.0863,-835.5621"></polygon>
+</g>
+<!-- Lie Groups -->
+<g id="node37" class="node">
+<title>Lie Groups</title>
+<ellipse fill="none" stroke="#000000" cx="491.9465" cy="-666" rx="54.9965" ry="18"></ellipse>
+<text text-anchor="middle" x="491.9465" y="-661.8" font-family="Times,serif" font-size="14.00" fill="#000000">Lie Groups</text>
+</g>
+<!-- Groups&#45;&gt;Lie Groups -->
+<g id="edge51" class="edge">
+<title>Groups&#45;&gt;Lie Groups</title>
+<path fill="none" stroke="#000000" d="M333.4994,-863.9251C334.797,-844.8712 338.9446,-814.5503 351.9465,-792 377.7004,-747.3331 424.8398,-709.8896 457.2512,-687.7161"></path>
+<polygon fill="#000000" stroke="#000000" points="459.6123,-690.3472 465.9723,-681.8737 455.7162,-684.5316 459.6123,-690.3472"></polygon>
+</g>
+<!-- Monoids&#45;&gt;Groups -->
+<g id="edge10" class="edge">
+<title>Monoids&#45;&gt;Groups</title>
+<path fill="none" stroke="#000000" d="M288.9867,-936.5708C296.111,-927.7269 304.8939,-916.8239 312.7316,-907.0945"></path>
+<polygon fill="#000000" stroke="#000000" points="315.488,-909.2519 319.0356,-899.2687 310.0367,-904.8606 315.488,-909.2519"></polygon>
+</g>
+<!-- Rings -->
+<g id="node12" class="node">
+<title>Rings</title>
+<ellipse fill="none" stroke="#000000" cx="136.9465" cy="-738" rx="33.646" ry="18"></ellipse>
+<text text-anchor="middle" x="136.9465" y="-733.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rings</text>
+</g>
+<!-- Monoids&#45;&gt;Rings -->
+<g id="edge13" class="edge">
+<title>Monoids&#45;&gt;Rings</title>
+<path fill="none" stroke="#000000" d="M252.5755,-938.1016C224.1791,-916.6014 176.0007,-875.442 151.9465,-828 142.2458,-808.8672 138.6108,-784.7917 137.3386,-766.3567"></path>
+<polygon fill="#000000" stroke="#000000" points="140.8277,-766.0479 136.8347,-756.2343 133.8364,-766.396 140.8277,-766.0479"></polygon>
+</g>
+<!-- Abelian Groups&#45;&gt;Rings -->
+<g id="edge12" class="edge">
+<title>Abelian Groups&#45;&gt;Rings</title>
+<path fill="none" stroke="#000000" d="M209.7076,-792.5708C196.1626,-782.412 178.995,-769.5364 164.7376,-758.8433"></path>
+<polygon fill="#000000" stroke="#000000" points="166.8287,-756.0366 156.7287,-752.8366 162.6287,-761.6366 166.8287,-756.0366"></polygon>
+</g>
+<!-- Modules -->
+<g id="node18" class="node">
+<title>Modules</title>
+<ellipse fill="none" stroke="#000000" cx="319.9465" cy="-666" rx="44.6645" ry="18"></ellipse>
+<text text-anchor="middle" x="319.9465" y="-661.8" font-family="Times,serif" font-size="14.00" fill="#000000">Modules</text>
+</g>
+<!-- Abelian Groups&#45;&gt;Modules -->
+<g id="edge19" class="edge">
+<title>Abelian Groups&#45;&gt;Modules</title>
+<path fill="none" stroke="#000000" d="M243.7892,-792.0535C258.9149,-767.0179 286.4548,-721.4347 303.9439,-692.4872"></path>
+<polygon fill="#000000" stroke="#000000" points="307.065,-694.0894 309.2405,-683.7204 301.0736,-690.4696 307.065,-694.0894"></polygon>
+</g>
+<!-- Vector Spaces -->
+<g id="node19" class="node">
+<title>Vector Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="275.9465" cy="-306" rx="66.57" ry="18"></ellipse>
+<text text-anchor="middle" x="275.9465" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">Vector Spaces</text>
+</g>
+<!-- Abelian Groups&#45;&gt;Vector Spaces -->
+<g id="edge21" class="edge">
+<title>Abelian Groups&#45;&gt;Vector Spaces</title>
+<path fill="none" stroke="#000000" d="M234.5023,-791.7646C240.9618,-716.053 265.6945,-426.1636 273.5422,-334.1804"></path>
+<polygon fill="#000000" stroke="#000000" points="277.03,-334.4722 274.3928,-324.2109 270.0553,-333.8771 277.03,-334.4722"></polygon>
+</g>
+<!-- Integral Domains -->
+<g id="node13" class="node">
+<title>Integral Domains</title>
+<ellipse fill="none" stroke="#000000" cx="136.9465" cy="-666" rx="78.1892" ry="18"></ellipse>
+<text text-anchor="middle" x="136.9465" y="-661.8" font-family="Times,serif" font-size="14.00" fill="#000000">Integral Domains</text>
+</g>
+<!-- Rings&#45;&gt;Integral Domains -->
+<g id="edge14" class="edge">
+<title>Rings&#45;&gt;Integral Domains</title>
+<path fill="none" stroke="#000000" d="M136.9465,-719.8314C136.9465,-712.131 136.9465,-702.9743 136.9465,-694.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="140.4466,-694.4132 136.9465,-684.4133 133.4466,-694.4133 140.4466,-694.4132"></polygon>
+</g>
+<!-- Rings&#45;&gt;Modules -->
+<g id="edge20" class="edge">
+<title>Rings&#45;&gt;Modules</title>
+<path fill="none" stroke="#000000" d="M164.3435,-727.2209C194.5108,-715.3518 243.3606,-696.1322 278.2785,-682.394"></path>
+<polygon fill="#000000" stroke="#000000" points="279.7064,-685.5934 287.7306,-678.6751 277.1435,-679.0794 279.7064,-685.5934"></polygon>
+</g>
+<!-- Algebras -->
+<g id="node20" class="node">
+<title>Algebras</title>
+<ellipse fill="none" stroke="#000000" cx="167.9465" cy="-234" rx="45.7848" ry="18"></ellipse>
+<text text-anchor="middle" x="167.9465" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">Algebras</text>
+</g>
+<!-- Rings&#45;&gt;Algebras -->
+<g id="edge25" class="edge">
+<title>Rings&#45;&gt;Algebras</title>
+<path fill="none" stroke="#000000" d="M112.665,-725.4314C90.0609,-713.3018 58.5944,-695.1781 49.9465,-684 24.3134,-650.8669 21.9465,-635.8911 21.9465,-594 21.9465,-594 21.9465,-594 21.9465,-378 21.9465,-318.1318 84.9442,-274.7813 128.1757,-252.0808"></path>
+<polygon fill="#000000" stroke="#000000" points="130.0139,-255.0726 137.3401,-247.419 126.8401,-248.8335 130.0139,-255.0726"></polygon>
+</g>
+<!-- UFDs -->
+<g id="node14" class="node">
+<title>UFDs</title>
+<ellipse fill="none" stroke="#000000" cx="136.9465" cy="-594" rx="34.2065" ry="18"></ellipse>
+<text text-anchor="middle" x="136.9465" y="-589.8" font-family="Times,serif" font-size="14.00" fill="#000000">UFDs</text>
+</g>
+<!-- Integral Domains&#45;&gt;UFDs -->
+<g id="edge15" class="edge">
+<title>Integral Domains&#45;&gt;UFDs</title>
+<path fill="none" stroke="#000000" d="M136.9465,-647.8314C136.9465,-640.131 136.9465,-630.9743 136.9465,-622.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="140.4466,-622.4132 136.9465,-612.4133 133.4466,-622.4133 140.4466,-622.4132"></polygon>
+</g>
+<!-- PIDs -->
+<g id="node15" class="node">
+<title>PIDs</title>
+<ellipse fill="none" stroke="#000000" cx="136.9465" cy="-522" rx="30.1938" ry="18"></ellipse>
+<text text-anchor="middle" x="136.9465" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">PIDs</text>
+</g>
+<!-- UFDs&#45;&gt;PIDs -->
+<g id="edge16" class="edge">
+<title>UFDs&#45;&gt;PIDs</title>
+<path fill="none" stroke="#000000" d="M136.9465,-575.8314C136.9465,-568.131 136.9465,-558.9743 136.9465,-550.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="140.4466,-550.4132 136.9465,-540.4133 133.4466,-550.4133 140.4466,-550.4132"></polygon>
+</g>
+<!-- Euclidean Domains -->
+<g id="node16" class="node">
+<title>Euclidean Domains</title>
+<ellipse fill="none" stroke="#000000" cx="136.9465" cy="-450" rx="86.859" ry="18"></ellipse>
+<text text-anchor="middle" x="136.9465" y="-445.8" font-family="Times,serif" font-size="14.00" fill="#000000">Euclidean Domains</text>
+</g>
+<!-- PIDs&#45;&gt;Euclidean Domains -->
+<g id="edge17" class="edge">
+<title>PIDs&#45;&gt;Euclidean Domains</title>
+<path fill="none" stroke="#000000" d="M136.9465,-503.8314C136.9465,-496.131 136.9465,-486.9743 136.9465,-478.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="140.4466,-478.4132 136.9465,-468.4133 133.4466,-478.4133 140.4466,-478.4132"></polygon>
+</g>
+<!-- Fields -->
+<g id="node17" class="node">
+<title>Fields</title>
+<ellipse fill="none" stroke="#000000" cx="167.9465" cy="-378" rx="34.7864" ry="18"></ellipse>
+<text text-anchor="middle" x="167.9465" y="-373.8" font-family="Times,serif" font-size="14.00" fill="#000000">Fields</text>
+</g>
+<!-- Euclidean Domains&#45;&gt;Fields -->
+<g id="edge18" class="edge">
+<title>Euclidean Domains&#45;&gt;Fields</title>
+<path fill="none" stroke="#000000" d="M144.7691,-431.8314C148.2466,-423.7547 152.4138,-414.0761 156.2497,-405.1668"></path>
+<polygon fill="#000000" stroke="#000000" points="159.4939,-406.4824 160.2338,-395.9134 153.0645,-403.7141 159.4939,-406.4824"></polygon>
+</g>
+<!-- Fields&#45;&gt;Vector Spaces -->
+<g id="edge22" class="edge">
+<title>Fields&#45;&gt;Vector Spaces</title>
+<path fill="none" stroke="#000000" d="M189.2839,-363.7751C204.3603,-353.7242 224.8777,-340.0459 242.1643,-328.5215"></path>
+<polygon fill="#000000" stroke="#000000" points="244.4847,-331.1811 250.8637,-322.7219 240.6017,-325.3567 244.4847,-331.1811"></polygon>
+</g>
+<!-- Fields&#45;&gt;Algebras -->
+<g id="edge26" class="edge">
+<title>Fields&#45;&gt;Algebras</title>
+<path fill="none" stroke="#000000" d="M167.9465,-359.7623C167.9465,-335.201 167.9465,-291.2474 167.9465,-262.3541"></path>
+<polygon fill="#000000" stroke="#000000" points="171.4466,-262.0896 167.9465,-252.0896 164.4466,-262.0897 171.4466,-262.0896"></polygon>
+</g>
+<!-- Modules&#45;&gt;Vector Spaces -->
+<g id="edge23" class="edge">
+<title>Modules&#45;&gt;Vector Spaces</title>
+<path fill="none" stroke="#000000" d="M317.2529,-647.862C313.4451,-620.6061 306.9465,-567.434 306.9465,-522 306.9465,-522 306.9465,-522 306.9465,-450 306.9465,-408.7759 294.6544,-362.3703 285.5508,-333.655"></path>
+<polygon fill="#000000" stroke="#000000" points="288.8023,-332.337 282.3698,-323.9184 282.1484,-334.511 288.8023,-332.337"></polygon>
+</g>
+<!-- Vector Spaces&#45;&gt;Algebras -->
+<g id="edge24" class="edge">
+<title>Vector Spaces&#45;&gt;Algebras</title>
+<path fill="none" stroke="#000000" d="M250.8977,-289.3008C235.7556,-279.2061 216.3016,-266.2367 200.0394,-255.3953"></path>
+<polygon fill="#000000" stroke="#000000" points="201.6429,-252.2578 191.3809,-249.6229 197.76,-258.0822 201.6429,-252.2578"></polygon>
+</g>
+<!-- Vector Spaces&#45;&gt;Normed Spaces -->
+<g id="edge47" class="edge">
+<title>Vector Spaces&#45;&gt;Normed Spaces</title>
+<path fill="none" stroke="#000000" d="M335.253,-297.7407C430.3549,-284.4963 616.7249,-258.5415 719.889,-244.1744"></path>
+<polygon fill="#000000" stroke="#000000" points="720.4901,-247.6245 729.9117,-242.7785 719.5245,-240.6914 720.4901,-247.6245"></polygon>
+</g>
+<!-- Vector Spaces&#45;&gt;Topological Vector Spaces -->
+<g id="edge49" class="edge">
+<title>Vector Spaces&#45;&gt;Topological Vector Spaces</title>
+<path fill="none" stroke="#000000" d="M293.3757,-288.5708C302.1975,-279.749 313.0681,-268.8784 322.7791,-259.1674"></path>
+<polygon fill="#000000" stroke="#000000" points="325.3297,-261.5666 329.9259,-252.0206 320.38,-256.6168 325.3297,-261.5666"></polygon>
+</g>
+<!-- Tensor Algebras -->
+<g id="node21" class="node">
+<title>Tensor Algebras</title>
+<ellipse fill="none" stroke="#000000" cx="167.9465" cy="-162" rx="75.2402" ry="18"></ellipse>
+<text text-anchor="middle" x="167.9465" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tensor Algebras</text>
+</g>
+<!-- Algebras&#45;&gt;Tensor Algebras -->
+<g id="edge27" class="edge">
+<title>Algebras&#45;&gt;Tensor Algebras</title>
+<path fill="none" stroke="#000000" d="M167.9465,-215.8314C167.9465,-208.131 167.9465,-198.9743 167.9465,-190.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="171.4466,-190.4132 167.9465,-180.4133 164.4466,-190.4133 171.4466,-190.4132"></polygon>
+</g>
+<!-- Lie Algebras -->
+<g id="node22" class="node">
+<title>Lie Algebras</title>
+<ellipse fill="none" stroke="#000000" cx="442.9465" cy="-162" rx="61.3532" ry="18"></ellipse>
+<text text-anchor="middle" x="442.9465" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Lie Algebras</text>
+</g>
+<!-- Algebras&#45;&gt;Lie Algebras -->
+<g id="edge28" class="edge">
+<title>Algebras&#45;&gt;Lie Algebras</title>
+<path fill="none" stroke="#000000" d="M202.7386,-222.174C209.4181,-220.0285 216.3778,-217.8781 222.9465,-216 277.084,-200.5209 339.4781,-185.4657 383.9606,-175.2017"></path>
+<polygon fill="#000000" stroke="#000000" points="384.7717,-178.6066 393.7346,-172.957 383.2049,-171.7842 384.7717,-178.6066"></polygon>
+</g>
+<!-- Clifford Algebras -->
+<g id="node23" class="node">
+<title>Clifford Algebras</title>
+<ellipse fill="none" stroke="#000000" cx="256.9465" cy="-90" rx="79.3309" ry="18"></ellipse>
+<text text-anchor="middle" x="256.9465" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">Clifford Algebras</text>
+</g>
+<!-- Tensor Algebras&#45;&gt;Clifford Algebras -->
+<g id="edge29" class="edge">
+<title>Tensor Algebras&#45;&gt;Clifford Algebras</title>
+<path fill="none" stroke="#000000" d="M189.491,-144.5708C200.8852,-135.353 215.0445,-123.8983 227.4444,-113.8669"></path>
+<polygon fill="#000000" stroke="#000000" points="229.7189,-116.5288 235.292,-107.5182 225.3162,-111.0867 229.7189,-116.5288"></polygon>
+</g>
+<!-- Exterior Algebras -->
+<g id="node24" class="node">
+<title>Exterior Algebras</title>
+<ellipse fill="none" stroke="#000000" cx="79.9465" cy="-90" rx="79.8931" ry="18"></ellipse>
+<text text-anchor="middle" x="79.9465" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">Exterior Algebras</text>
+</g>
+<!-- Tensor Algebras&#45;&gt;Exterior Algebras -->
+<g id="edge30" class="edge">
+<title>Tensor Algebras&#45;&gt;Exterior Algebras</title>
+<path fill="none" stroke="#000000" d="M146.6442,-144.5708C135.378,-135.353 121.3778,-123.8983 109.1172,-113.8669"></path>
+<polygon fill="#000000" stroke="#000000" points="111.3137,-111.1418 101.3577,-107.5182 106.881,-116.5595 111.3137,-111.1418"></polygon>
+</g>
+<!-- Geometric Algebras -->
+<g id="node38" class="node">
+<title>Geometric Algebras</title>
+<ellipse fill="none" stroke="#000000" cx="256.9465" cy="-18" rx="89.1216" ry="18"></ellipse>
+<text text-anchor="middle" x="256.9465" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">Geometric Algebras</text>
+</g>
+<!-- Clifford Algebras&#45;&gt;Geometric Algebras -->
+<g id="edge53" class="edge">
+<title>Clifford Algebras&#45;&gt;Geometric Algebras</title>
+<path fill="none" stroke="#000000" d="M256.9465,-71.8314C256.9465,-64.131 256.9465,-54.9743 256.9465,-46.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="260.4466,-46.4132 256.9465,-36.4133 253.4466,-46.4133 260.4466,-46.4132"></polygon>
+</g>
+<!-- Metric Spaces&#45;&gt;Manifolds -->
+<g id="edge33" class="edge">
+<title>Metric Spaces&#45;&gt;Manifolds</title>
+<path fill="none" stroke="#000000" d="M677.6178,-792.937C665.7637,-783.4537 650.846,-771.5196 637.9455,-761.1991"></path>
+<polygon fill="#000000" stroke="#000000" points="639.8069,-758.2061 629.8117,-754.6921 635.434,-763.6722 639.8069,-758.2061"></polygon>
+</g>
+<!-- Riemannian Manifolds -->
+<g id="node27" class="node">
+<title>Riemannian Manifolds</title>
+<ellipse fill="none" stroke="#000000" cx="664.9465" cy="-666" rx="99.6202" ry="18"></ellipse>
+<text text-anchor="middle" x="664.9465" y="-661.8" font-family="Times,serif" font-size="14.00" fill="#000000">Riemannian Manifolds</text>
+</g>
+<!-- Metric Spaces&#45;&gt;Riemannian Manifolds -->
+<g id="edge35" class="edge">
+<title>Metric Spaces&#45;&gt;Riemannian Manifolds</title>
+<path fill="none" stroke="#000000" d="M694.6404,-791.7623C688.8157,-767.0928 678.3718,-722.8598 671.5513,-693.9731"></path>
+<polygon fill="#000000" stroke="#000000" points="674.922,-693.0177 669.2177,-684.0896 668.1094,-694.6263 674.922,-693.0177"></polygon>
+</g>
+<!-- Manifolds&#45;&gt;Riemannian Manifolds -->
+<g id="edge34" class="edge">
+<title>Manifolds&#45;&gt;Riemannian Manifolds</title>
+<path fill="none" stroke="#000000" d="M622.5026,-720.5708C629.1622,-712.0085 637.3229,-701.5161 644.7031,-692.0272"></path>
+<polygon fill="#000000" stroke="#000000" points="647.5538,-694.0629 650.9305,-684.0206 642.0283,-689.7653 647.5538,-694.0629"></polygon>
+</g>
+<!-- Manifolds&#45;&gt;Lie Groups -->
+<g id="edge50" class="edge">
+<title>Manifolds&#45;&gt;Lie Groups</title>
+<path fill="none" stroke="#000000" d="M583.5593,-722.3771C566.9252,-712.1407 544.9654,-698.627 526.7157,-687.3964"></path>
+<polygon fill="#000000" stroke="#000000" points="528.4453,-684.3512 518.0944,-682.091 524.7766,-690.3128 528.4453,-684.3512"></polygon>
+</g>
+<!-- Banach Spaces -->
+<g id="node29" class="node">
+<title>Banach Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="661.9465" cy="-162" rx="69.4418" ry="18"></ellipse>
+<text text-anchor="middle" x="661.9465" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Banach Spaces</text>
+</g>
+<!-- Normed Spaces&#45;&gt;Banach Spaces -->
+<g id="edge37" class="edge">
+<title>Normed Spaces&#45;&gt;Banach Spaces</title>
+<path fill="none" stroke="#000000" d="M762.8925,-217.4817C744.4198,-207.3288 720.5645,-194.2175 700.6825,-183.29"></path>
+<polygon fill="#000000" stroke="#000000" points="702.3102,-180.1908 691.8607,-178.4414 698.9385,-186.3253 702.3102,-180.1908"></polygon>
+</g>
+<!-- Inner Product Spaces -->
+<g id="node30" class="node">
+<title>Inner Product Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="841.9465" cy="-162" rx="93.1794" ry="18"></ellipse>
+<text text-anchor="middle" x="841.9465" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">Inner Product Spaces</text>
+</g>
+<!-- Normed Spaces&#45;&gt;Inner Product Spaces -->
+<g id="edge38" class="edge">
+<title>Normed Spaces&#45;&gt;Inner Product Spaces</title>
+<path fill="none" stroke="#000000" d="M805.0589,-216.2022C810.7288,-207.871 817.5998,-197.7748 823.8676,-188.565"></path>
+<polygon fill="#000000" stroke="#000000" points="826.9004,-190.3295 829.6332,-180.0931 821.1134,-186.3911 826.9004,-190.3295"></polygon>
+</g>
+<!-- Hilbert Spaces -->
+<g id="node31" class="node">
+<title>Hilbert Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="841.9465" cy="-90" rx="67.7314" ry="18"></ellipse>
+<text text-anchor="middle" x="841.9465" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">Hilbert Spaces</text>
+</g>
+<!-- Inner Product Spaces&#45;&gt;Hilbert Spaces -->
+<g id="edge39" class="edge">
+<title>Inner Product Spaces&#45;&gt;Hilbert Spaces</title>
+<path fill="none" stroke="#000000" d="M841.9465,-143.8314C841.9465,-136.131 841.9465,-126.9743 841.9465,-118.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="845.4466,-118.4132 841.9465,-108.4133 838.4466,-118.4133 845.4466,-118.4132"></polygon>
+</g>
+<!-- Measurable Spaces&#45;&gt;Measure Spaces -->
+<g id="edge40" class="edge">
+<title>Measurable Spaces&#45;&gt;Measure Spaces</title>
+<path fill="none" stroke="#000000" d="M773.0786,-1079.9843C795.1481,-1031.0919 856.2722,-895.6785 882.6101,-837.33"></path>
+<polygon fill="#000000" stroke="#000000" points="885.8934,-838.5633 886.8175,-828.0089 879.5132,-835.6834 885.8934,-838.5633"></polygon>
+</g>
+<!-- Measure Spaces&#45;&gt;Normed Spaces -->
+<g id="edge46" class="edge">
+<title>Measure Spaces&#45;&gt;Normed Spaces</title>
+<path fill="none" stroke="#000000" d="M876.204,-792.1148C866.9656,-782.2891 856.4412,-769.3971 849.9465,-756 832.113,-719.2131 830.9465,-706.8816 830.9465,-666 830.9465,-666 830.9465,-666 830.9465,-378 830.9465,-336.3681 815.9137,-290.14 804.7584,-261.567"></path>
+<polygon fill="#000000" stroke="#000000" points="807.9834,-260.2055 801.0054,-252.2332 801.4887,-262.817 807.9834,-260.2055"></polygon>
+</g>
+<!-- Probability Spaces -->
+<g id="node35" class="node">
+<title>Probability Spaces</title>
+<ellipse fill="none" stroke="#000000" cx="941.9465" cy="-738" rx="83.3636" ry="18"></ellipse>
+<text text-anchor="middle" x="941.9465" y="-733.8" font-family="Times,serif" font-size="14.00" fill="#000000">Probability Spaces</text>
+</g>
+<!-- Measure Spaces&#45;&gt;Probability Spaces -->
+<g id="edge45" class="edge">
+<title>Measure Spaces&#45;&gt;Probability Spaces</title>
+<path fill="none" stroke="#000000" d="M906.5645,-792.2022C912.0441,-783.8079 918.6934,-773.6218 924.742,-764.3558"></path>
+<polygon fill="#000000" stroke="#000000" points="927.7639,-766.1295 930.2993,-755.8425 921.9022,-762.3032 927.7639,-766.1295"></polygon>
+</g>
+<!-- Lie Groups&#45;&gt;Lie Algebras -->
+<g id="edge52" class="edge">
+<title>Lie Groups&#45;&gt;Lie Algebras</title>
+<path fill="none" stroke="#000000" d="M491.9465,-647.8146C491.9465,-620.4983 491.9465,-567.25 491.9465,-522 491.9465,-522 491.9465,-522 491.9465,-306 491.9465,-265.1184 487.2553,-254.2958 472.9465,-216 469.4732,-206.7041 464.5914,-197.0733 459.773,-188.5642"></path>
+<polygon fill="#000000" stroke="#000000" points="462.7273,-186.6834 454.6391,-179.8401 456.6944,-190.2336 462.7273,-186.6834"></polygon>
+</g>
+</g>
+</svg>
+</p>
+      </div>
+      <div class="md-sidebar-toc"></div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
