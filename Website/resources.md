@@ -5,6 +5,11 @@ _Disclaimer: in the textbook section, a number of the outgoing Amazon links are 
 
 ---
 
+The excellent monograph "The Geometry and Topology of Three-Manifolds" by William Thurston, although available [here](http://library.msri.org/books/gt3m/), is (for whatever reason) split into
+a number of PDFs -- I've concatenated them into a single PDF, which you can download [here](/assets/pdfs/ThurstonGeometryAndTopologyofThreeManifolds.pdf).
+
+---
+
 @import "advice.md"
 
 ---
