@@ -1,7 +1,6 @@
 [toc]
 
 # Activities
-* 06/2018 - 09/2018: Summer Research in Algebraic Topology
 * 06/2018: Attendee, [Witt Vectors, Deformations, and Absolute Geometry Conference](https://www.uvm.edu/~tdupuy/witt2018.html), University of Vermont.
 * 03/2018: Attendee, [Latinx in the Mathematical Science Conference](https://www.ipam.ucla.edu/programs/special-events-and-conferences/latinx-in-the-mathematical-sciences-conference-2018/?tab=overview), Institute for Pure & Applied Mathematics (IPAM) at UC Los Angeles.
 * 01/2018 - 06/2018: Undergraduate Research with [Justin Roberts](http://www.math.ucsd.edu/~justin/) in Algebraic Topology.
