@@ -3,3 +3,4 @@
 - Contact 3-manifolds
 - Hyperbolic 3-manifolds
 - Symplectic 4-manifolds
+- Why do Eilenberg-MacLane spaces have complicated higher cohomology?
