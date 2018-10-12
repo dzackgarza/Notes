@@ -4,3 +4,5 @@
 - Hyperbolic 3-manifolds
 - Symplectic 4-manifolds
 - Why do Eilenberg-MacLane spaces have complicated higher cohomology?
+  - Dually, why do spheres have higher complicated homotopy?
+- What is a Postnikov tower? Why is it useful?
