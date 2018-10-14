@@ -71,7 +71,9 @@
   - Euclid's 5th postulate
   - Having boy/girl then boy problem
   - i^i is real
-- Greens Theorem and
+- Green's Theorem and Stoke's Theorem are the same thing
+
+
 
 ## Personal
 - Undergrad degree in review
