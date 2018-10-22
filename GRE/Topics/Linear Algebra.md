@@ -1,0 +1,137 @@
+Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear transformation $T: \RR^n \to \RR^m$
+
+## General Notes
+- Rank: number of nonzero rows in RREF
+- $\mathrm{Trace}(A) = \sum_{i=1}^m A_{i,i}$
+- Elementary row operations / matrices:
+	- Permute rows
+	- Multiple a row by a scalar
+	- Add any row to another
+- $A (m\times n),~ B(n\times p),~ AB = C \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner[\mathbf{a^T_i}]{\mathbf{b_j}}$
+	- i.e., the $c_{ij}$ entry is just dotting row $i$ of $A$ with column $j$ of $B$.
+
+## Systems of Linear Equations
+Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A \mid \vec b)$ an augmented matrix.
+- Consistent: A system of linear equations is *consistent* when it has at least one solution.
+- Inconsistent: A system of linear equations is *inconsistent* when it has no solutions.
+- Tall matrices: more equations than unknowns
+- Wide matrices: more unknowns than equations
+- Three possibilities for a system of linear equations:
+	- No solutions
+	- One unique solution
+	- Infinitely many solutions
+- Possibilities:
+	- $r < r'$: the system is inconsistent.
+	- $r = r'$: the system is consistent, and
+		- $r' = n \implies $ there is a unique solution (square, tall)
+		- $r' < n \implies $ there are infinitely many solutions (wide)
+- Homogeneous systems are **always** consistent.
+
+## The Determinant
+- Properties of the Determinant $A: m\times n$
+	- $\det(AB) = \det(A) \det(B)$
+	- Permute two Rows: $\det A' = - \det A$
+	- Factor a scalar $t$ out of one row: $\det A' = t \det A$
+		- $\det(tA) = t^m \det(A)$
+	- Add one row to another: $\det(A') = \det(A)$
+	- $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$ for upper or lower triangular matrices.
+	- $\det(A^{-1}) = \frac{1}{\det(A)}$
+	- $\det{A^k} = k\det{A}$
+	- $\det{A^T} = \det{A}$
+	- $\det(\mathbf{a}_1 + \mathbf{a}_2, \cdots) = \det(\mathbf{a}_1, \cdots) + \det(\mathbf{a}_2, \cdots)$
+	- If any row of $A$ is all zeros, $\det(A) = 0$.
+	- Take $A = \pmatrix{\vec a \rightarrow \\ \vec b \rightarrow \\ \vdots }$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by
+		$\vec{a}, \vec{b}, \vec{c}$.
+
+## The Spaces of a Matrix / Linear Map
+- Finding bases for various spaces of $A$:
+	- Rowspace: reduce to RREF, and take nonzero rows of RREF $(\subseteq \RR^n)$
+	- Colspace: reduce to RREF, and take columns with pivots from original $A$ $(\subseteq \RR^m)$
+	- Nullspace: reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
+
+## Eigenvalues and Eigenvectors
+- Defining equation: $\lambda\in E(A) \iff \forall x \in \RR^m, A\vec x = \lambda\vec x$
+- Finding: solve $A - I \lambda_i = 0$ for each $i$.
+- $\lambda \in E(A) \implies \lambda^2 \in E(A^2)$ (with the same eigenvector).
+- Eigenvectors corresponding to distinct eigenvalues are **always** linearly independent
+- $A$ has $n$ distinct eigenvalues $\implies A$ has $n$ linearly independent eigenvectors.
+- Similar matrices have identical eigenvalues and multiplicities.
+- A matrix $A$ is diagonalizable $\iff A$ has $n$ linearly independent eigenvectors.
+- Useful Facts
+	- $\prod \lambda_i = \det A$
+	- $\sum \lambda_i = \mathrm{Tr}~A$
+
+
+## Misc
+- $\abs{\mathrm{rowspace}(A)} = \abs{\mathrm{colspace}(A)}$
+- Proof of Cauchy-Schwarz: See Goode page 346.
+- Distance from a point $p$ to a line $\vec a + t\vec b$: let $\vec w = \vec p - \vec a$, then: $\norm{w - P(w, v)}$
+	- ![distance from line to point](../../images/DistanceFromLineToPoint.png)
+- Computing change of basis matrices: #todo
+- Two step vector subspace test:
+	- Ensure it contains the zero vector
+	- Ensure it's closed under scalar multiplication and vector addition
+- Any set of two vectors $\theset{\vec v, \vec w}$ is linearly dependent $\iff \exists \lambda :~\vec v = \lambda \vec w$.
+- A set of functions $\theset{f_i}$ is linearly independent on $I \iff \exists x_0 \in I: W(x_0) \neq 0$ (where $W$ is the Wronskian)
+	- NOTE: $W \equiv 0$ on $I \not\implies \theset{f_i}$ is linearly dependent!
+	- Counterexample: $\theset{x, x+x^2, 2x-x^2}$ where $W \equiv 0$ but $x+x^2 = 3(x) + (2x-x^2)$.
+	- Sufficient condition: each $f_i$ is the solution to a linear homogeneous ODE $L(y) = 0$.
+- Every square matrix is similar to a matrix in jordan canonical form.
+- Projection onto column space of $A$: given by $P(\vec x) = A(A^t A)^{-1}A^T\vec x$
+- Normal equations: $\vec x$ is a least squares solution to $A\vec x = \vec b \iff A^T A \vec x = A^T \vec b$
+
+## Gram-Schmidt Process
+Extending $\theset{\mathbf{x}_i}$ to an orthonormal basis
+$$
+\mathbf{v}_1 = \mathbf{x_1}\\
+\mathbf{v}_2 = \mathbf{x}_2 - P(\mathbf{x}_2, \mathbf{v}_1) \\
+\mathbf{v}_3 = \mathbf{x_3} - P(\mathbf{x}_3, \mathbf{v_1}) - P(\mathbf{x}_3, \mathbf{v}_2)
+\\ \dots \\
+\mathbf { v } _ { i } = \mathbf{x_i} - \sum_{k=1}^{i-1}P(\mathbf{x}_i, \mathbf{v}_k)
+= \mathbf { x } _ { i } - \sum _ { k = 1 } ^ { i - 1 } \frac { \left\langle \mathbf { x } _ { i } , \mathbf { v } _ { k } \right\rangle } { \left\| \mathbf { v } _ { k } \right\| ^ { 2 } } \mathbf { v } _ { k }
+$$
+
+
+## Inverting a Matrix
+Equivalent formulas for $A^{-1}$:
+
+- Adjoints: $A^{-1} = \frac{\mathrm{adjugate(A)}}{\det(A)}$
+- Gauss Jordan: $[A \mid I] \sim [I \mid A^{-1}]$
+- Cramer's Rule: $A\vec{x} = \vec{b} \implies x_k = \frac{\det(B_k)}{\det(A)}$ where $B_k$ is $A$ where the $k\dash$th column is replaced by $\vec{b}$
+
+
+## Big List of Equivalent Properties
+Let $A$ be an $m\times n$ matrix. TFAE:
+- $A$ is invertible and has a unique inverse $A^{-1}$
+- $A^T$ is invertible
+- $\det(A) \neq 0$
+- The linear system $A\bar{x} = \bar{b}$ has a unique solution for every $b\ \in \RR^m$
+- The homogeneous system $A\bar{x} = 0$ has only the trivial solution $\bar{x} = 0$
+- $\rank(A) = m$ (i.e. $A$ is full rank)
+- $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$
+- $A = \prod_{i=1}^k E_i$ for some finite $k$, where each $E_i$ is an elementary matrix.
+- $A$ is row-equivalent to the identity matrix $I_n$
+- $A$ has exactly $n$ pivots
+- The columns of $A$ are a basis for $\RR^n$
+	- i.e. $\mathrm{colspace}(A) = \RR^n$
+- The rows of $A$ are a basis for $\RR^m$
+	- i.e. $\mathrm{rowspace}(A) = \RR^m$
+- $\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A\right)^\perp = \theset{\vec 0}$
+- Zero is not an eigenvalue of $A$.
+- $A$ has $n$ linearly independent eigenvectors
+- The rows of $A$ are coplanar.
+
+As a consequence, all of the following negations are equivalent:
+
+- $A$ is not invertible/singular
+- At least one row of $A$ is a linear combination of the others
+- The $RREF$ of $A$ has a row of all zeros.
+
+Reformulated in terms of linear maps $T$, TFAE:
+- $T^{-1}: \RR^m \to \RR^n$ exists
+- $\im(T) = \RR^n$
+- $\ker(T) = 0$
+- $T$ is injective
+- $T$ is surjective
+- $T$ is an isomorphism
+- The system $A\bar{x} = 0$ has infinitely many solutions

@@ -1,0 +1,1936 @@
+<!DOCTYPE html><html><head>
+      <title>Master Notes</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"displayMath":[["$$","$$"],["\\[","\\]"]],"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true,"processEnvironments":false},"TeX":{"extensions":["noUndefined.js","autoload-all.js","AMSmath.js","AMSsymbols.js"],"Macros":{"NN":"{\\mathbb{N}}","RR":"{\\mathbb{R}}","ZZ":"{\\mathbb{Z}}","CC":"{\\mathbb{C}}","QQ":"{\\mathbb{Q}}","RP":"{\\mathbb{RP}}","CP":"{\\mathbb{CP}}","HP":"{\\mathbb{HP}}","OP":"{\\mathbb{OP}}","FF":"{\\mathbb{F}}","PP":"{\\mathbb{P}}","AA":"{\\mathbb{A}}","MM":"{\\mathbb{M}}","TT":"{\\mathbb{T}}","SS":"{\\mathbb{S}}","KK":"{\\mathbb{K}}","Gr":"{\\text{Gr}}","GL":"{\\text{GL}}","char":"{\\mathbb{1}}","abs":["{\\left\\lvert #2 \\right\\rvert_{\\text{#1}}}",2,""],"Aut":"{\\text{Aut}}","del":"{\\partial}","too":["{\\xrightarrow{#1}}",1,""],"im":"{\\text{im}~}","homotopic":"\\simeq","into":"\\to","theset":["\\{{#1}\\}",1],"norm":["{{\\lVert}{#1}{\\rVert}}",1],"cross":"\\times","definedas":"\\mathrel{\\vcenter{:}}=","surjects":"\\twoheadrightarrow","onto":"\\twoheadrightarrow","injects":"\\hookrightarrow","id":"\\text{id}","restrictionof":["{\\left.{#1}\\right|_{#2}}",2],"intersect":"\\bigcap","union":"\\bigcup","mapsvia":["{\\xrightarrow{#1}}",1],"coker":"\\operatorname{coker}","rank":"\\operatorname{rank}","tensor":"\\otimes","semidirect":"\\rtimes","pt":"\\{\\text{pt}\\}","and":"{\\text{ and }}","or":"{\\text{ or }}","bd":"{\\del}","wait":"{\\,\\cdot\\,}","selfmap":"{\\circlearrowleft}","tor":"{\\text{Tor}}","ext":"{\\text{Ext}}","hom":"{\\text{Hom}}","actson":"{\\curvearrowright}","actsonl":"{\\curvearrowleft}","disjoint":"{\\coprod}","qed":"{\\tag*{$\\blacksquare$}}","endef":"{\\tag*{$\\triangleleft$}}","dash":"{\\hbox{-}}","bigast":"{\\mathop{\\Large \\ast}}","from":"{\\leftarrow}","covers":"{\\twoheadrightarrow_p}","inner":["{\\langle #1, #2 \\rangle}",2,""],"indicator":["{\\unicode{x1D7D9}\\left[#1\\right]}",1,""],"equalsbecause":["{\\stackrel{\\mbox{$\\tiny{\\text{ #1 }}$}}{=}}",1],"conjugate":["{\\overline{{#1}}}",1],"strike":["{\\enclose{horizontalstrike}{#1}}",1],"Real":["{\\mathcal{Re}({#1})}",1],"dd":["{\\frac{\\partial #1}{\\partial #2}}",2,""]}},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+        <script type="text/javascript" async src="file:////home/zack/.atom/packages/markdown-preview-enhanced/node_modules/@shd101wyy/mume/dependencies/mathjax/MathJax.js" charset="UTF-8"></script>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="fundamentals">Fundamentals</h1>
+
+<h2 class="mume-header" id="pre-calculus-or-proof-fundamentals">Pre-Calculus or Proof Fundamentals</h2>
+
+<ul>
+<li>
+<p>Parabolas: <span class="mathjax-exps">$y = \frac{1}{4p}x^2 \implies$</span> focus at <span class="mathjax-exps">$(0, p)$</span> and directrix is the line given by <span class="mathjax-exps">$y = -p$</span>. #todo add image</p>
+</li>
+<li>
+<p>Equation of circle: <span class="mathjax-exps">$x^2+y^2=r^2$</span></p>
+</li>
+<li>
+<p>Ellipses: defined as locus of points where the <strong>sum</strong> of distances to two focii are constant. Equation: <span class="mathjax-exps">$\frac{x^2}{w^2} + \frac{y^2}{h^2} = 1$</span>, foci at <span class="mathjax-exps">$(\pm\sqrt{w^2-h^2}, 0)$</span></p>
+</li>
+<li>
+<p>Hyperbolas: defined as locus of points where the <strong>difference</strong> between the distances to two focii are constant. Equation: <span class="mathjax-exps">$\frac{x^2}{w^2}-\frac{y^2}{h^2} = 1$</span>, focii at <span class="mathjax-exps">$(\pm\sqrt{w^2+h^2, 0})$</span></p>
+</li>
+<li>
+<p>Common locii of points:</p>
+<ul>
+<li>Distance to a point is constant: circle</li>
+<li>Distances between two focii are equal: a line bisecting the midpoint of the line connecting them</li>
+<li>Sum of distances to two focii are constant: Ellipse</li>
+<li>Differences between distances to two focii are constant: hyperbola</li>
+</ul>
+</li>
+<li>
+<p>Vieta&#x2019;s Formulas: Write <span class="mathjax-exps">$p(x) = \sum a_k x^k = \prod(x_k - r_k)$</span> and expand the product to obtain </p><div class="mathjax-exps">$$p(x) = a_n x^n - (\sum_k r_k)x^{n-1} + (\sum_{i&lt;j} r_i r_j)x^{n-1} + \cdots = \sum_{k=1}^n (-1)^k \sigma_{n-k}(\theset{r_i}_{i=1}^n) x^k$$</div><br>
+where <span class="mathjax-exps">$\sigma_i$</span> is the <span class="mathjax-exps">$i\dash$</span>th elementary symmetric sum.<p></p>
+<ul>
+<li>Example :<div class="mathjax-exps">$$p(x) = x^2 + bx + c = x^2 - (r_1 + r_2)x + (r_1r_2)$$</div></li>
+<li>Example: <div class="mathjax-exps">$$p(x) = a_3x^3 + a_2x^2 + a_1x + a_0 \\ = a_3 x^3 -a_3(r_1+r_2+r_3)x^2 + a_3(r_1r_2 + r_1r_3 + r_2r_3)x - a_3(r_1r_2r_3) \\ \implies -\frac{a_2}{a_3} = r_1+r_2+r_3 \\ \implies \frac{a_1}{a_3} = r_1r_2 + r_1r_3 + r_2r_3 \\ \implies \frac{a_0}{a_3} = r_1r_2r_3$$</div></li>
+<li>Quick conclusions:
+<ul>
+<li>Sum of roots of a monic polynomial is the <strong>negative</strong> of the coefficient of <span class="mathjax-exps">$x^{n-1}$</span></li>
+<li>Product of roots of a monic polynomial is the constant coefficient.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Properties of logs:</p>
+<ul>
+<li><span class="mathjax-exps">$\ln(\prod) = \sum \ln$</span> but <span class="mathjax-exps">$\prod \ln \neq \ln \sum$</span></li>
+<li><span class="mathjax-exps">$\log_b x = \frac{\ln x}{\ln b}$</span></li>
+<li>Stuff I always forget
+<ul>
+<li><span class="mathjax-exps">$\frac{\ln x}{\ln y} \neq \ln\frac{x}{y} = \ln x - \ln y$</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Trig Values</p>
+<ul>
+<li>Useful note: <span class="mathjax-exps">$\frac{1}{2} &lt; \frac{\sqrt 2}{2} &lt; \frac{\sqrt 3}{2}$</span><br>
+<div class="mathjax-exps">$$\begin{array}{c|ccc} &amp;&amp; \sin &amp;&amp; \cos &amp;&amp; \tan \\ \hline \\ 0 &amp;&amp; \frac{\sqrt 0}{2} &amp;&amp; \frac{\sqrt 4}{2} &amp;&amp; 0\\ \\ \frac{\pi}{6} &amp;&amp; \frac{\sqrt 1}{2} &amp;&amp; \frac{\sqrt 3}{2} &amp;&amp; \frac{1}{\sqrt 3}\\ \\ \frac{\pi}{4} &amp;&amp; \frac{\sqrt 2}{2} &amp;&amp; \frac{\sqrt{2}}{2} &amp;&amp; 1 \\ \\ \frac{\pi}{3} &amp;&amp; \frac{\sqrt 3}{2} &amp;&amp; \frac{\sqrt 1}{2} &amp;&amp; \frac{\sqrt 3}{1}\\ \\ \frac{\pi}{2} &amp;&amp; \frac{\sqrt 4}{2} &amp;&amp; \frac{\sqrt 0}{2} &amp;&amp; \infty \end{array}$$</div></li>
+</ul>
+</li>
+<li>
+<p>Trig Identities</p>
+<ul>
+<li><span class="mathjax-exps">$\tan2\theta = \frac{2\tan\theta}{1-\tan^2\theta}$</span></li>
+<li><span class="mathjax-exps">$\csc^2\theta - 1 = \cot^2\theta$</span></li>
+<li><span class="mathjax-exps">$\tan(a+b) = \frac{\tan a + \tan b}{1-\tan a\tan b}$</span></li>
+</ul>
+</li>
+<li>
+<p>Useful shortcuts:</p>
+<ul>
+<li>Squares
+<ul>
+<li><span class="mathjax-exps">$(a+b)^2 = a^2 + b^2 + 2ab$</span></li>
+<li><span class="mathjax-exps">$(a-b)^2 = a^2 + b^2 - 2ab$</span></li>
+<li>Sum of squares: <span class="mathjax-exps">$a^2+b^2 = (a+b)^2 + 2ab$</span></li>
+<li>Difference of squares: <span class="mathjax-exps">$a^2- b^2 = (a+b)(a-b)$</span></li>
+</ul>
+</li>
+<li>Cubes
+<ul>
+<li><span class="mathjax-exps">$(a+b)^3 = a^3 + b^3 + 3(a^2b + ab^2)$</span></li>
+<li><span class="mathjax-exps">$(a-b)^3 = a^3 -b^3 + 3(-a^2b +ab^2)$</span></li>
+<li>Sum of cubes: <span class="mathjax-exps">$a^3 + b^3 = (a+b)(a^2+b^2-ab)$</span></li>
+<li>Difference of cubes: <span class="mathjax-exps">$a^3 - b^3 = (a-b)(a^2+ b^2 + ab)$</span></li>
+</ul>
+</li>
+<li>Square Roots
+<ul>
+<li><span class="mathjax-exps">$(\sqrt a + \sqrt b)^2 = a + b + 2\sqrt{ab}$</span></li>
+<li><span class="mathjax-exps">$(\sqrt a - \sqrt b)^2 = a + b - 2\sqrt{ab}$</span></li>
+<li><span class="mathjax-exps">$(a+\sqrt{b})(a-\sqrt{b}) = a^2 - b$</span></li>
+<li><span class="mathjax-exps">$(a+i\sqrt{b})(a-i\sqrt{b}) = a^2 + b$</span></li>
+<li><span class="mathjax-exps">$(a+b)(a-b) = a^2 + b^2$</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Completing the square</p>
+</li>
+<li>
+<p>Polynomial long division</p>
+</li>
+<li>
+<p>Rational roots theorem</p>
+</li>
+<li>
+<p>Areas of certain figures:</p>
+<ul>
+<li>Circle:</li>
+<li>Cylinder:</li>
+<li>Trapezoid:</li>
+<li>Right triangle:</li>
+<li>Isosceles triangle:</li>
+<li>Generic triangle:</li>
+<li>Ellipse:</li>
+<li>Parallelograms:</li>
+</ul>
+</li>
+<li>
+<p>Polar coordinates: <span class="mathjax-exps">$(x,y) \mapsto (\sqrt{x^2 + y^2}, \tan^{-1}(\frac{y}{x}))$</span></p>
+</li>
+<li>
+<p>Synthetic Division: #todo</p>
+</li>
+</ul>
+<h2 class="mume-header" id="general-techniques">General Techniques:</h2>
+
+<ul>
+<li>Gather everything and interpret as a polynomial in some variable
+<ul>
+<li>Example: given <span class="mathjax-exps">$\sinh(x) = \frac{1}{2}e^x - e^{-x}$</span>, find <span class="mathjax-exps">$\sinh^{-1} x$</span>
+<ul>
+<li>Let <span class="mathjax-exps">$u=e^x$</span>, and note that <span class="mathjax-exps">$u &gt; 0$</span> and <span class="mathjax-exps">$x = \ln u$</span>.<br>
+<div class="mathjax-exps">$$x = \frac{1}{2}u+u^{-1} \implies \\ u-u^{-1} = 2x \implies \\ u - u^{-1} - 2x = 0 \implies \\ \mathbf{u}^2 -2x\mathbf{u} -1 = 0 \implies \\ u  = \frac{1}{2}(2x \pm \sqrt{4x^2 +4})$$</div><br>
+so <span class="mathjax-exps">$\sinh^{-1} x = \ln(x+\sqrt{x^2+1})$</span></li>
+</ul>
+</li>
+<li>Example: you don&#x2019;t always need the quadratic formula. Given <span class="mathjax-exps">$\cosh x = e^x+e^{-x}$</span>, find <span class="mathjax-exps">$\tanh^{-1}(x)$</span>.<br>
+<div class="mathjax-exps">$$x = \frac{u-u^{-1}}{u+u^{-1}} \implies  \\ x(u+u^{-1})- (u-u^{-1}) = 0 \implies \\ x(u^2+1) - (u^2 - 1) = 0 \implies \\ \mathbf{u}^2(x-1) + (x+1) = 0 \implies \\ u^2 = \frac{1+x}{1-x}$$</div></li>
+</ul>
+</li>
+<li>If you see <span class="mathjax-exps">$x^2+y^2$</span>, try adding <span class="mathjax-exps">$2xy$</span> to reduce to <span class="mathjax-exps">$(x+y)^2$</span></li>
+<li>Finding the minimal polynomial of a number <span class="mathjax-exps">$a+b$</span>: #todo</li>
+</ul>
+<hr>
+<h1 class="mume-header" id="single-variable-calculus">Single Variable Calculus</h1>
+
+<h2 class="mume-header" id="big-theorems-tools">Big Theorems / Tools:</h2>
+
+<ul>
+<li>The Fundamental Theorem of Calculus: <div class="mathjax-exps">$$\frac{\partial}{\partial x} \int_a^x f(t) dt = f(x)$$</div></li>
+<li>Extreme Value Theorem</li>
+<li>Involving the Derivative:
+<ul>
+<li>Mean Value Theorem: <div class="mathjax-exps">$$f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f&apos;(p)(b-a)$$</div>
+<ul>
+<li>Useful variant for integrals and average value: <div class="mathjax-exps">$$f \in C^0(I) \implies \exists p\in I: \int_a^b f(x)~dx = f(p)(b-a)$$</div></li>
+</ul>
+</li>
+<li>Rolle&#x2019;s Theorem</li>
+</ul>
+</li>
+<li>L&#x2019;Hopital&#x2019;s Rule: If
+<ul>
+<li><span class="mathjax-exps">$f(x),g(x)$</span> differentiable on <span class="mathjax-exps">$I - \pt$</span></li>
+<li><span class="mathjax-exps">$\lim_{x\to pt} f(x) = \lim_{x\to \pt} g(x) \in \theset{0, \pm \infty}$</span></li>
+<li><span class="mathjax-exps">$\forall x \in I, g&apos;(x) \neq 0$</span></li>
+<li><span class="mathjax-exps">$\lim_{x\to\pt} \frac{ f&apos;(x)}{\ g&apos;(x)}$</span> exists<br>
+<div class="mathjax-exps">$$\implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } = \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }$$</div></li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="differential">Differential</h2>
+
+<h3 class="mume-header" id="limits">Limits</h3>
+
+<ul>
+<li>Tools for finding limits, in order of difficulty:
+<ul>
+<li>Plugging it in</li>
+<li>L&#x2019;Hopital&#x2019;s Rule (only for indeterminate forms <span class="mathjax-exps">$\frac 0 0, \frac \infty \infty$</span>)
+<ul>
+<li>For <span class="mathjax-exps">$\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$</span>, let <span class="mathjax-exps">$L = \lim f^g \implies \ln L = \lim g \ln f$</span></li>
+</ul>
+</li>
+<li>Algebraic rules</li>
+<li>Squeeze theorem,</li>
+<li>Monotonic + bounded</li>
+</ul>
+</li>
+<li>One-sided limits: <span class="mathjax-exps">$\lim_{x\to a^-} f(x) = \lim_{\varepsilon \to 0} f(a-\varepsilon)$</span></li>
+<li>Limits at zero or infinity: <div class="mathjax-exps">$$\lim_{x\to\infty} f(x) = \lim_{\frac{1}{x}\to 0} f(\frac{1}{x})\text{ and } \lim_{x\to 0} f(x) = \lim_{x\to\infty} f(1/x)$$</div>
+<ul>
+<li>Also useful:<br>
+<div class="mathjax-exps">$$\lim_{x\to\infty} \frac{p(x)}{q(x)} = \cases{   0 &amp; $\deg p &lt; \deg q$ \\   \infty &amp; $\deg p &gt; \deg q$ \\   \frac{p_n}{q_n} &amp; $\deg p = \deg q$ }$$</div>
+<ul>
+<li>#todo: prove!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Be careful: limits may not exist!!
+<ul>
+<li>Example <span class="mathjax-exps">$:\lim_{x\to 0} \frac{1}{x} \neq 0$</span></li>
+</ul>
+</li>
+<li>Asymptotes:
+<ul>
+<li>Vertical asymptotes: at values <span class="mathjax-exps">$x=p$</span> where <span class="mathjax-exps">$\lim_{x\to p} = \pm\infty$</span></li>
+<li>Horizontal asymptotes: given by points <span class="mathjax-exps">$y=L$</span> where <span class="mathjax-exps">$L \lim_{x\to\pm\infty} f(x) &lt; \infty$</span></li>
+<li>Oblique asymptotes: for rational functions, divide - terms without denominators yield equation of asymptote (i.e. look at the asymptotic order or &#x201C;limiting behavior&#x201D;).
+<ul>
+<li>Concretely: <span class="mathjax-exps">$f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)$</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Limit of a recurrence: <span class="mathjax-exps">$x_n = f(x_{n-1}, x_{n-2}, \cdots)$</span>
+<ul>
+<li>If the limit exists, it is a solution to <span class="mathjax-exps">$x = f(x)$</span></li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="derivatives">Derivatives</h3>
+
+<ul>
+<li>Chain rule: <span class="mathjax-exps">$\dd{x}(f\circ g)(x) = f&apos;(g(x))g&apos;(x)$</span></li>
+<li>Product rule: <span class="mathjax-exps">$\dd{x}f(x)g(x) =f&apos;g + g&apos;f$</span>
+<ul>
+<li>Note for all rules: always prime the first thing!</li>
+</ul>
+</li>
+<li>Quotient rule: <span class="mathjax-exps">$\dd{x} \frac{f(x)}{g(x)} = \frac{f&apos;g - g&apos;f}{g^2}$</span></li>
+<li>Implicit differentiation: <span class="mathjax-exps">$(f(x))&apos; = f&apos;(x)~dx, (f(y))&apos; = f&apos;(y)~dy$</span>
+<ul>
+<li>Often able to solve for <span class="mathjax-exps">$\dd[y]{x}$</span> this way.</li>
+</ul>
+</li>
+<li>Obtaining derivatives of inverse functions: if <span class="mathjax-exps">$y = f^{-1}(x)$</span> then write <span class="mathjax-exps">$f(y) = x$</span> and implicitly differentiate.</li>
+<li>Approximating change: <span class="mathjax-exps">$\Delta y \approx f&apos;(x) \Delta x$</span></li>
+</ul>
+<h3 class="mume-header" id="related-rates">Related Rates</h3>
+
+<p>General series of steps: want to know some unknown rate <span class="mathjax-exps">$y_t$</span></p>
+<ul>
+<li>Lay out known relation that involves <span class="mathjax-exps">$y$</span></li>
+<li>Take derivative implicitly (say w.r.t <span class="mathjax-exps">$t$</span>) to obtain a relation between <span class="mathjax-exps">$y_t$</span> and other stuff.</li>
+<li>Isolate <span class="mathjax-exps">$y_t = \text{ known stuff }$</span></li>
+<li>Example: ladder sliding down wall
+<ul>
+<li>Setup: <span class="mathjax-exps">$l, x_t$</span> and <span class="mathjax-exps">$x(t)$</span> are known for a given <span class="mathjax-exps">$t$</span>, want <span class="mathjax-exps">$y_t$</span>.</li>
+<li><span class="mathjax-exps">$x(t)^2 + y(t)^2 = l^2 \implies 2xx_t +2yy_t = 2ll_t = 0$</span> (noting that <span class="mathjax-exps">$l$</span> is constant)</li>
+<li>So <span class="mathjax-exps">$y_t = -\frac{x(t)}{y(t)}x_t$</span></li>
+<li><span class="mathjax-exps">$x(t)$</span> is known, so obtain <span class="mathjax-exps">$y(t) = \sqrt{l^2 - x(t)^2}$</span> and solve.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="integral">Integral</h2>
+
+<ul>
+<li>Average values: <div class="mathjax-exps">$$f_{\text{avg}}(x) = \frac{1}{b-a}\int_a^b f(t) dt$$</div>
+<ul>
+<li>Proof: apply MVT to <span class="mathjax-exps">$F(x)$</span>.</li>
+</ul>
+</li>
+<li>Area Between Curves
+<ul>
+<li>Area in polar coordinates: <div class="mathjax-exps">$$A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta$$</div></li>
+</ul>
+</li>
+<li>Solids of Revolution
+<ul>
+<li>Disks: <span class="mathjax-exps">$A = \int \pi r(t)^2 ~dt$</span></li>
+<li>Cylinders: <span class="mathjax-exps">$A = \int 2\pi r(t)h(t) ~dt$</span></li>
+</ul>
+</li>
+<li>Arc lengths
+<ul>
+<li><span class="mathjax-exps">$ds = \sqrt{dx^2 + dy^2}$</span></li>
+<li><span class="mathjax-exps">$SA = \int 2 \pi r(x) ~ds$</span></li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="big-list-of-integration-techniques">Big List of Integration Techniques</h3>
+
+<p>Given <span class="mathjax-exps">$f(x)$</span>, we want to find an antiderivative <span class="mathjax-exps">$F(x) = \int f$</span> satisfying <span class="mathjax-exps">$\frac{\partial}{\partial x}F(x) = f(x)$</span></p>
+<ul>
+<li>Guess and check: look for a function that differentiates to <span class="mathjax-exps">$f$</span>.</li>
+<li><span class="mathjax-exps">$u\dash$</span> substitution</li>
+<li>Integration by Parts:
+<ul>
+<li>The standard form:<br>
+<div class="mathjax-exps">$$\int u dv = uv - \int v du$$</div></li>
+<li>A more general form for repeated applications: let <span class="mathjax-exps">$v^{-1} = \int v$</span>, <span class="mathjax-exps">$v^{-2} = \int\int v$</span>, etc.<br>
+<div class="mathjax-exps">$$\begin{align} \int_a^b uv &amp;= uv^{-1}\bigg\rvert_a^b  - \int_a^b u^{1} v^{-1}\\ &amp;= uv^{-1} - u^1v^{-2}\bigg\rvert_a^b + \int_a^b u^2v^{-2} \\ &amp;= uv^{-1} - u^1v^{-2} + u^2v^{-3}\bigg\rvert_a^b - \int_a^b u^3v^{-3} \\ &amp;\vdots \\ \implies \int_a^b uv &amp;= (-1)^n\int_a^b u^nv^{-n} + \sum_{k=1}^n (-1)^k u^{k-1}v^{-k} \bigg\rvert_a^b \end{align}$$</div></li>
+<li>Generally useful when one term&#x2019;s <span class="mathjax-exps">$n$</span>th derivative is a constant.</li>
+<li>Shoelace method:</li>
+<li>Note: you can choose <span class="mathjax-exps">$u$</span> or <span class="mathjax-exps">$v$</span> equal to 1! Useful if you know the derivative of the integrand.</li>
+</ul>
+</li>
+<li>Differentiating under the integral<br>
+<div class="mathjax-exps">$$\begin{align}   \frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &amp;=   f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)}\\   &amp;= f(x, b(x))~b&apos;(x) - f(x, a(x))~a&apos;(x)\end{align}$$</div>
+<ul>
+<li>Proof: let <span class="mathjax-exps">$F(x)$</span> be an antiderivative and compute <span class="mathjax-exps">$F&apos;(x)$</span> using the chain rule.</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Derivatives</th>
+<th>Integrals</th>
+<th>Signs</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mathjax-exps">$u$</span></td>
+<td><span class="mathjax-exps">$v$</span></td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$u&apos;$</span></td>
+<td><span class="mathjax-exps">$\int v$</span></td>
+<td><span class="mathjax-exps">$+$</span></td>
+<td><span class="mathjax-exps">$u\int v$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$u&apos;&apos;$</span></td>
+<td><span class="mathjax-exps">$\int\int v$</span></td>
+<td><span class="mathjax-exps">$-$</span></td>
+<td><span class="mathjax-exps">$-u&apos;\int\int v$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$\vdots$</span></td>
+<td><span class="mathjax-exps">$\vdots$</span></td>
+<td><span class="mathjax-exps">$\vdots$</span></td>
+<td><span class="mathjax-exps">$\vdots$</span></td>
+</tr>
+</tbody>
+</table>
+<p>Fill out until one column is zero (alternate signs). Get the result column by multiplying diagonally, then sum down the column.</p>
+<ul>
+<li>
+<p>Trigonometric Substitution<br>
+</p><div class="mathjax-exps">$$\begin{align}   \sqrt{a^2-x^2} &amp;&amp; \Rightarrow &amp;&amp; x = a\sin(\theta) &amp;&amp;dx = a\cos(\theta)~d\theta \\   \sqrt{a^2+x^2} &amp;&amp; \Rightarrow &amp;&amp; x = a\tan(\theta) &amp;&amp;dx = a\sec^2(\theta)~d\theta \\   \sqrt{x^2 - a^2} &amp;&amp; \Rightarrow &amp;&amp; x = a \sec(\theta) &amp;&amp;dx = a\sec(\theta)\tan(\theta)~d\theta   \end{align}$$</div><p></p>
+</li>
+<li>
+<p>Partial Fractions</p>
+</li>
+<li>
+<p>Completing the Square #todo</p>
+</li>
+<li>
+<p>Trig Formulas</p>
+<ul>
+<li>Double angle formulas:<br>
+<div class="mathjax-exps">$$\begin{align} \sin^2(x) &amp;&amp; = &amp;&amp; \frac{1}{2}(1-2\cos x) \\ &amp;&amp; = &amp;&amp; \\ &amp;&amp; = &amp;&amp; \\ &amp;&amp; = &amp;&amp; \\ &amp;&amp; = &amp;&amp; \\ \end{align}$$</div></li>
+</ul>
+</li>
+<li>
+<p>Products of trig functions</p>
+<ul>
+<li>Setup: <span class="mathjax-exps">$\int \sin^a(x) \cos^b(x) ~dx$</span>
+<ul>
+<li>Both <span class="mathjax-exps">$a,b$</span> even: <span class="mathjax-exps">$\sin(x)\cos(x) = \frac{1}{2} \sin(x)$</span></li>
+<li><span class="mathjax-exps">$a$</span> odd: <span class="mathjax-exps">$\sin^2 = 1-\cos^2,~u=\cos(x)$</span></li>
+<li><span class="mathjax-exps">$b$</span> odd: <span class="mathjax-exps">$\cos^2 = 1-\sin^2,~u=\sin(x)$</span></li>
+</ul>
+</li>
+<li>Setup: <span class="mathjax-exps">$\int \tan^a(x) \sec^b(x) ~dx$</span>
+<ul>
+<li><span class="mathjax-exps">$a$</span> odd: <span class="mathjax-exps">$\tan^2 = \sec^2 - 1,~ u = \sec(x)$</span></li>
+<li><span class="mathjax-exps">$b$</span> even: <span class="mathjax-exps">$\sec^2 = \tan^2 - 1, u = \tan(x)$</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="big-derivative-integral-table">Big Derivative / Integral Table</h3>
+
+<p></p><div class="mathjax-exps">$$\begin{align}   \frac{\partial f}{\partial{x}}\Leftarrow &amp;&amp; f &amp;&amp; \Rightarrow\int f dx   \\ \hline \\ \frac{1}{2\sqrt{x}} &amp;&amp; \sqrt{x} &amp;&amp; \frac{2}{3}x^{\frac{3}{2}} \\ nx^{n-1} &amp;&amp; x^n, n \neq -1 &amp;&amp; \frac{1}{n+1}x^{n+1} \\ \frac{1}{x} &amp;&amp; \bbox[yellow]{\ln(x)} &amp;&amp; x\ln(x) - x \\ a^x\ln(a) &amp;&amp; a^x &amp;&amp; \frac{a^x}{\ln a} \\ \cos(x) &amp;&amp; \sin(x)  &amp;&amp; -\cos(x) \\ -\sin(x) &amp;&amp; \cos(x)  &amp;&amp; \sin(x) \\ 2\sec^2(x)\tan(x) &amp;&amp; \sec^2(x)  &amp;&amp; \tan(x) \\ 2\csc^2(x)\cot(x) &amp;&amp; \csc^2(x)  &amp;&amp; -\cot(x) \\ \sec^2(x) &amp;&amp; \tan(x) &amp;&amp;  \ln\abs{\sec(x)} \\ \sec(x)\tan(x) &amp;&amp; \sec(x) &amp;&amp; \ln\abs{\sec(x) + \tan(x)} \\ -\csc(x)\cot(x) &amp;&amp; \csc(x)  &amp;&amp; \ln\abs{\csc(x)-\cot(x)} \\ \frac{1}{1+x^2} &amp;&amp; \bbox[yellow]{\tan^{-1}(x)}  &amp;&amp; x\tan^{-1}x - \frac{1}{2}\ln(1+x^2) \\ \frac{1}{\sqrt{1-x^2}} &amp;&amp; \bbox[yellow]{\sin^{-1}(x)} &amp;&amp; x\sin^{-1}x+ \sqrt{1-x^2} \\ -\frac{1}{\sqrt{1-x^2}} &amp;&amp; \bbox[yellow]{\cos^{-1}(x)} &amp;&amp; x\cos^{-1}x -\sqrt{1-x^2} \\ \frac{1}{\sqrt{x^2+a}} &amp;&amp; \ln\abs{x+\sqrt{x^2+a}} &amp;&amp; \cdot\\ -\csc^2(x) &amp;&amp; \cot(x) &amp;&amp; ? \\ ? &amp;&amp; \cos^2(x) &amp;&amp; ? \\ ? &amp;&amp; \sin^2(x) &amp;&amp; ? \\ ? &amp;&amp; ? &amp;&amp; ? \\ ? &amp;&amp; ? &amp;&amp; ? \\ ? &amp;&amp; ? &amp;&amp; ? \\ ? &amp;&amp; ? &amp;&amp; ? \\ ? &amp;&amp; ? &amp;&amp; ? \\ ? &amp;&amp; ? &amp;&amp; ? \\ ? &amp;&amp; ? &amp;&amp; ? \\ ? &amp;&amp; xe^{ax} &amp;&amp; \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\ ? &amp;&amp; e^{ax}\sin(bx) &amp;&amp; \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\ ? &amp;&amp; e^{ax}\cos(bx) &amp;&amp; \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\ ? &amp;&amp; ? &amp;&amp; ? \\ \end{align}$$</div><p></p>
+<p>Memory Aids:</p>
+<ul>
+<li>Stuff I often get wrong:
+<ul>
+<li><span class="mathjax-exps">$-x^{-2} \neq \int x^{-1} = \int \frac{1}{x} = \ln x$</span></li>
+<li><span class="mathjax-exps">$\frac{1}{x} \neq \int \ln x = x\ln x - x$</span></li>
+<li><span class="mathjax-exps">$\int x^{-k} = \frac{1}{-k+1}x^{-k+1} \neq \frac{1}{-(k+1)}x^{-(k+1)}$</span>
+<ul>
+<li>e.g. <span class="mathjax-exps">$\int x^{-2} = -x^{-1} \neq -\frac{1}{3}x^{-3}$</span></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$\lim_{n\to\infty} \frac{n}{n+1} = 1 \neq 0$</span></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$\frac{\partial}{\partial x}a^x = \frac{\partial}{\partial x}e^{x\ln a} = e^{x\ln a} \ln a = a^x \ln a.$</span></li>
+<li>Exponentials: when in doubt, write <span class="mathjax-exps">$a^b = e^{b\ln a}$</span></li>
+<li><span class="mathjax-exps">$\frac{\partial}{\partial x} x^{f(x)} = ?$</span></li>
+<li><span class="mathjax-exps">$\sum x^k = \frac{1}{1-x} \neq \frac{1}{1+x} = \sum (-1)^k x^k$</span></li>
+</ul>
+<p>Other small but useful facts:<br>
+</p><div class="mathjax-exps">$$\int_0^{2\pi} \sin \theta~d\theta = \int_0^{2\pi} \cos \theta~d\theta = 0$$</div><p></p>
+<h3 class="mume-header" id="optimization">Optimization</h3>
+
+<ul>
+<li>Critical points: boundary points and wherever <span class="mathjax-exps">$f&apos;(x) = 0$</span></li>
+<li>Second derivative test:
+<ul>
+<li><span class="mathjax-exps">$f&apos;&apos;(p) &gt; 0 \implies p$</span> is a min</li>
+<li><span class="mathjax-exps">$f&apos;&apos;(p) &lt; 0 \implies p$</span> is a max</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 class="mume-header" id="multivariable-calculus">Multivariable Calculus</h1>
+
+<p>Notation:</p>
+<p><span class="mathjax-exps">$\phi: \RR^n \to \RR,~ \quad \phi(x_1, x_2, \cdots) = \cdots$</span></p>
+<p><span class="mathjax-exps">$\mathbf{F}: \RR^n \to \RR^n,~ \mathbf{F}(x_1,x_2,\cdots) = [\mathbf{F}_1(x_1, x_2, \cdots), \mathbf{F}_2(x_1, x_2, \cdots), \cdots, \mathbf{F}_n(x_1, x_2, \cdots)]$</span></p>
+<p><span class="mathjax-exps">$\vec{v} = [v_1, v_2, \cdots]$</span></p>
+<p><span class="mathjax-exps">$R$</span> is a region, <span class="mathjax-exps">$S$</span> is a surface, <span class="mathjax-exps">$V$</span> is a solid.</p>
+<p></p><div class="mathjax-exps">$$\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = 	\oint _ { \partial S } [\mathbf{F}_1, \mathbf{F}_2, \mathbf{F}_3] \cdot [dx, dy, dz] = \oint_{\del S} \mathbf{F}_1dx + \mathbf{F}_2dy + \mathbf{F}_3dz$$</div><p></p>
+<h2 class="mume-header" id="big-theorems">Big Theorems:</h2>
+
+<ul>
+<li><span class="mathjax-exps">$\nabla\cross(\nabla\phi) = 0$</span></li>
+<li><span class="mathjax-exps">$\nabla\cdot(\nabla\cross \mathbf{F}) = 0$</span></li>
+<li>Green&#x2019;s Theorem:<br>
+<div class="mathjax-exps">$$\oint _ { \del R } ( L ~d x + M ~d y ) = \iint _ { R } \left( \frac { \partial M } { \partial x } - \frac { \partial L } { \partial y } \right) d x d y$$</div></li>
+<li>Divergence Theorem:<br>
+<div class="mathjax-exps">$$\iint_ { \partial V } \mathbf { F } \cdot d \mathbf { S } = \iiint _ { V } ( \nabla \cdot \mathbf { F } ) ~d V$$</div></li>
+<li>Stokes&#x2019; Theorem:<br>
+<div class="mathjax-exps">$$\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = \iint _ { S } ( \nabla \times \mathbf { F } ) \cdot d \mathbf { S }$$</div>
+<ul>
+<li>Equals zero if <span class="mathjax-exps">$S$</span> is a closed surface.</li>
+</ul>
+</li>
+<li>Recovering Green&#x2019;s Theorem from Stokes&#x2019; Theorem:
+<ul>
+<li>Let <span class="mathjax-exps">$\mathbf{F} = [L, M, 0]$</span>, then <span class="mathjax-exps">$\nabla\cross \mathbf{F} = [0, 0, \frac{\partial M}{\partial x} - \frac{\partial L}{\partial y}]$</span></li>
+</ul>
+</li>
+<li>Computing Areas with Green&#x2019;s Theorem:<br>
+<div class="mathjax-exps">$$A(R) = \oint _ { \del R } x ~d y = - \oint _ { \del R } y ~d x = \frac { 1 } { 2 } \oint _ { \del R } - y ~d x + x ~d y$$</div></li>
+</ul>
+<h2 class="mume-header" id="geometry">Geometry</h2>
+
+<ul>
+<li>Slope of a vector</li>
+<li>Unit tangent: <span class="mathjax-exps">$\mathbf{\hat T}(t) = \mathbf{\hat r}&apos;(t)$</span></li>
+<li>Unit normal: <span class="mathjax-exps">$\mathbf{\hat N}(t) = \mathbf{\hat T}&apos;(t) = \mathbf{\hat r}&apos;&apos;(t)$</span>
+<ul>
+<li>Follows from fact that <span class="mathjax-exps">$\norm{\mathbf{v}(t)} = c \implies \inner[\mathbf{v}(t)]{\mathbf{v}&apos;(t)} = 0$</span></li>
+</ul>
+</li>
+<li>Useful to know: rotation matrices<br>
+<div class="mathjax-exps">$$\mathbf{R}_\theta = \left[ \begin{array} { l l } { \cos \theta } &amp; { - \sin \theta } \\ { \sin \theta } &amp; { \cos \theta } \end{array} \right] \implies \mathbf{R}_\frac{\pi}{2} = \left[ \begin{array} { l l } { 0 } &amp; { - 1 } \\ { 1 } &amp; { 0 } \end{array}\right] \implies \mathbf{R}_\frac{\pi}{2} \begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}{-y \\ x}\end{bmatrix}$$</div>
+<ul>
+<li>Example use: given <span class="mathjax-exps">$\mathbf{v}, \mathbf{R}_\frac{\pi}{2}\mathbf v \perp \mathbf v$</span>, so useful to obtain normals or other perpendicular vectors in the plane.</li>
+</ul>
+</li>
+<li>Useful trick: given <span class="mathjax-exps">$\mathbf v = [a,b,c]$</span>, one perpendicular vector is <span class="mathjax-exps">$\mathbf v^\perp = [c,c, -(a+b)]$</span> as long as <span class="mathjax-exps">$\mathbf v \neq [-1,-1,0]$</span> - in this case, choose <span class="mathjax-exps">$\mathbf v^\perp = [-(b+c), a, a]$</span>.</li>
+<li>Projection onto a vector of <span class="mathjax-exps">$\mathbf b$</span> onto <span class="mathjax-exps">$\mathbf a$</span>:<br>
+<div class="mathjax-exps">$$\mathrm{proj}_\mathbf{a}(\mathbf b) = \inner[\mathbf b]{\mathbf a}\mathbf{\hat a}$$</div></li>
+<li>Orthogonal projection of <span class="mathjax-exps">$\mathbf b$</span> onto <span class="mathjax-exps">$\mathbf a$</span>:<br>
+<div class="mathjax-exps">$$\mathrm{proj}_{\mathbf a}^\perp(\mathbf b) = \mathbf b - \mathrm{proj}_\mathbf{a}(\mathbf{b}) = \mathbf b - \inner[\mathbf b]{\mathbf a}\mathbf{\hat a}$$</div></li>
+</ul>
+<h3 class="mume-header" id="lines">Lines</h3>
+
+<p>Equations of a line <span class="mathjax-exps">$L \subset \RR^3: A\hat x + B\hat y + C = 0$</span></p>
+<ul>
+<li>Key insights:<br>
+<div class="mathjax-exps">$$\mathbf x \in L \iff \inner[\mathbf x]{\mathbf n} = 0 \quad \text{ or } \\ \mathbf x = (x, y, z) \in L \iff \exists t: \mathbf x = \mathbf p_0 + t(\mathbf p_1 - \mathbf p_0) \\ \implies x = p_{0x} + t(p_{1x} - p_{0x}) \\ \implies y = p_{0y} + t(p_{1y} - p_{0y}) \\ \implies z = p_{0z} + t(p_{1z} - p_{0z})$$</div></li>
+<li>Determined by a point <span class="mathjax-exps">$\mathbf p$</span> and a normal <span class="mathjax-exps">$\mathbf n = [n_0, n_1, 0]:~ n_0x + n_2y = d$</span></li>
+<li>Also determined by a point <span class="mathjax-exps">$\mathbf p$</span> and a vector <span class="mathjax-exps">$\mathbf v$</span> on the line.</li>
+<li>Also determined by two points <span class="mathjax-exps">$\mathbf p_0, \mathbf p_1$</span></li>
+<li>Symmetric Equation (sometimes useful) obtained by eliminating <span class="mathjax-exps">$t$</span>:<br>
+<div class="mathjax-exps">$$\mathbf x = (x, y, z) \in L \iff \frac{x-p_{0x}}{p_{1x}-p_{0x}} = \frac{y-p_{0y}}{p_{1y}-p_{0y}} = \frac{z-p_{0z}}{p_{1z}-p_{0z}}$$</div></li>
+<li>Slope of a line in <span class="mathjax-exps">$\RR^2$</span>: <div class="mathjax-exps">$$\mathbf{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$</div></li>
+<li>Normal to a line in <span class="mathjax-exps">$\RR^2$</span>:</li>
+</ul>
+<h3 class="mume-header" id="planes">Planes</h3>
+
+<p>Equations of a plane <span class="mathjax-exps">$P \subset \RR^3: A\hat x + B\hat y + C\hat y + D = 0$</span></p>
+<ul>
+<li>Key insight:<br>
+<div class="mathjax-exps">$$\mathbf x \in P \iff \inner[\mathbf n]{\mathbf x - \mathbf p_0} = 0 \\   \implies n_0 x + n_1 y + n_2 z = d \\   (d = n_1p_1 + n_2p_2 + n_3p_3)$$</div></li>
+<li>Determined by a point <span class="mathjax-exps">$\mathbf p_0$</span> and a normal vector <span class="mathjax-exps">$\mathbf n$</span></li>
+<li>Also determined by two points <span class="mathjax-exps">$\mathbf p_0, \mathbf p_1$</span> using <span class="mathjax-exps">$\mathbf n = \mathbf p_0 \times \mathbf p_1$</span></li>
+</ul>
+<h3 class="mume-header" id="tangent-and-normal-spaces">Tangent and Normal Spaces</h3>
+
+<ul>
+<li>Key insight: the gradient is perpendicular to level sets and thus a normal vector.<br>
+<div class="mathjax-exps">$$\mathbf{x} \in T_g(\mathbf p_0) \implies \inner[\nabla f]{\mathbf x-\mathbf p_0} = 0$$</div></li>
+</ul>
+<h3 class="mume-header" id="surfaces">Surfaces</h3>
+
+<ul>
+<li>Tangent plane to a surface <span class="mathjax-exps">$z = g(x,y):$</span> let <span class="mathjax-exps">$f(x, y, z) = g(x,y) - z$</span> and <span class="mathjax-exps">$\mathbf x = [x,y,z]$</span>,then <span class="mathjax-exps">$\nabla f = [g_x, g_y, -1]$</span> and<br>
+<div class="mathjax-exps">$$z_x(x_0, y_0)(x-x_0) + z_y(x_0, y_0)(y-y_0) -1(z-z_0) = 0$$</div></li>
+<li><strong>Surface</strong>: For any surface <span class="mathjax-exps">$S$</span> give by a level set <span class="mathjax-exps">$f(x,y, z) = 0$</span> and any <span class="mathjax-exps">$\mathbf p_0 \in S$</span>, the gradient is a normal vector, i.e. <span class="mathjax-exps">$\nabla f({\mathbf p_0}) \perp {T}_S({\mathbf p_0})$</span> (the tangent plane to <span class="mathjax-exps">$S$</span> at <span class="mathjax-exps">$\mathbf p_0$</span>)</li>
+</ul>
+<h4 class="mume-header" id="curves">Curves</h4>
+
+<ul>
+<li>Tangent line to a curve: given <span class="mathjax-exps">$\mathbf{r}(t)$</span> and <span class="mathjax-exps">$\mathbf{p}_0$</span>, use the fact that <span class="mathjax-exps">$\inner[\mathbf{r}&apos;(t)]{\mathbf{r}(t)} = 0$</span> to obtain<br>
+<div class="mathjax-exps">$$T_r(t) = \mathbf{p}_0 + t\mathbf{r}(t)$$</div></li>
+</ul>
+<h3 class="mume-header" id="normal-spaces">Normal Spaces</h3>
+
+<p>Key insight: the gradient is normal</p>
+<ul>
+<li><strong>General Curve/Line</strong>: for a curve <span class="mathjax-exps">$\mathbf{r}(t)$</span>, the normal vector at a point is given by <div class="mathjax-exps">$$T_r&apos;(t) =$$</div></li>
+<li><strong>Planar Curve/Line</strong>: For any planar curve given by <span class="mathjax-exps">$y = g(x)$</span>, let <span class="mathjax-exps">$f(x, y) = g(x) - y$</span> to obtain the normal vector <span class="mathjax-exps">$\nabla f = [g_x(x), -1]$</span> with slope <span class="mathjax-exps">$-\frac{1}{g_x(x)}$</span>. Then <div class="mathjax-exps">$$N(x,y) = [x, y] + t \nabla f(x, y) \text{ where } f(x,y) = g(x) - y$$</div></li>
+</ul>
+<h3 class="mume-header" id="minimal-distances">Minimal Distances</h3>
+
+<p>Fix a point <span class="mathjax-exps">$\mathbf p$</span>. Big idea: project onto subspaces or orthogonal complements.</p>
+<ul>
+<li>
+<p>Point to plane:</p>
+<ul>
+<li>Given a plane <span class="mathjax-exps">$S = \theset{\mathbf{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$</span>, project onto <span class="mathjax-exps">$S^\perp$</span> using<br>
+<div class="mathjax-exps">$$d = \norm{\inner[\mathbf p]{\mathbf{n}}\mathbf{\hat n}}$$</div><br>
+where we can read off the normal vector <span class="mathjax-exps">$\mathbf{n} = [n_0, n_1, n_2]$</span> directly from the equation.</li>
+<li>Given just two vectors <span class="mathjax-exps">$\mathbf u, \mathbf v$</span>: manufacture a normal vector <span class="mathjax-exps">$\mathbf n = \mathbf u \times \mathbf v$</span> and continue as above.</li>
+</ul>
+</li>
+<li>
+<p>Point to line:</p>
+<ul>
+<li>Given a line <span class="mathjax-exps">$L = \theset{t\mathbf v: t\in \RR}$</span> for some fixed <span class="mathjax-exps">$\mathbf v$</span><br>
+<div class="mathjax-exps">$$d = \norm{\mathrm{proj}_\mathbf{v}^\perp(\mathbf{p})} = \norm{\mathbf p - \inner[\mathbf p]{\mathbf v}\mathbf{\hat v}}.$$</div></li>
+<li>Equivalently,for any point <span class="mathjax-exps">$\mathbf v_0 \in L$</span>, <div class="mathjax-exps">$$d = \norm{(\mathbf p - \mathbf v_0)\times \mathbf{\hat v}}$$</div></li>
+</ul>
+</li>
+<li>
+<p>Line to line:</p>
+<ul>
+<li>Given <span class="mathjax-exps">$\mathbf{r}_1(t) = \mathbf p_1 + t\mathbf v_2$</span> and <span class="mathjax-exps">$\mathbf{r}_2(t) = \mathbf p_2 + t\mathbf v_2$</span>, then the minimal line connecting these will lie along <span class="mathjax-exps">$\mathbf n = \mathbf v_1 \times \mathbf v_2$</span> which is normal to both lines. Then<br>
+<div class="mathjax-exps">$$d(t) = \norm{\inner[\mathbf r_1(t)]{\mathbf n}\mathbf{\hat n} - \inner[\mathbf r_2(t)]{\mathbf n}\mathbf{\hat n}} \\ \implies d = \norm{\inner[\mathbf p_1 - \mathbf p_2]{\mathbf n}\mathbf{\hat n}}$$</div></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="partial-derivatives">Partial Derivatives</h2>
+
+<ul>
+<li>Chain rule #todo</li>
+</ul>
+<h2 class="mume-header" id="vector-calculus">Vector Calculus</h2>
+
+<ul>
+<li>
+<p>Scalar field on <span class="mathjax-exps">$X$</span>: a function <span class="mathjax-exps">$\phi: X \to \RR$</span></p>
+</li>
+<li>
+<p>Vector field on <span class="mathjax-exps">$X$</span>: a function <span class="mathjax-exps">$\mathbf{F}: X\to \RR^n$</span></p>
+</li>
+<li>
+<p>Gradient field on <span class="mathjax-exps">$X$</span>: a vector field <span class="mathjax-exps">$\mathbf{F}: X \to \RR^n$</span> such that there exists a scalar field <span class="mathjax-exps">$\phi: X\to \RR$</span> where <span class="mathjax-exps">$\nabla \phi = \mathbf{F}$</span></p>
+</li>
+<li>
+<p>Dot product: <span class="mathjax-exps">$\vec a \cdot \vec b = \norm{a}\norm{b}\cos\theta_{a,b}$</span></p>
+</li>
+<li>
+<p>Cross product: <span class="mathjax-exps">$\vec a \cross \vec b = \hat n \norm{a}\norm{b}\sin\theta_{a,b}$</span></p>
+<ul>
+<li><span class="mathjax-exps">$\vec x \cross y \perp \vec x, \vec y$</span></li>
+</ul>
+</li>
+<li>
+<p>Spherical Coordinates: </p><div class="mathjax-exps">$$x = r\cos\theta = \rho\sin\phi\cos\theta \\ y = r\sin\theta = \rho\sin\phi\sin\theta$$</div><p></p>
+</li>
+<li>
+<p>The Del Operator:<br>
+</p><div class="mathjax-exps">$$\nabla \definedas \sum_{i=1}^n \frac{\partial}{\partial x_i} \mathbf{e}_i   = \left[\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}, \cdots, \frac{\partial}{\partial x_n}\right]$$</div><p></p>
+</li>
+<li>
+<p>The Gradient: takes scalar fields to vector fields<br>
+</p><div class="mathjax-exps">$$\nabla: (\RR^n \to \RR) \to (\RR^n \to \RR^n) \\   \phi \mapsto \nabla \phi   \definedas \sum_{i=1}^n \frac{\partial \phi}{\partial x_i} ~\mathbf{e}_i   = [\frac{\partial \phi}{\partial x_1}, \fr`ac{\partial \phi}{\partial x_2}, \cdots, \frac{\partial \phi}{\partial x_n}]$$</div><p></p>
+<ul>
+<li><span class="mathjax-exps">$n=3 \implies \nabla \phi = [\phi_x, \phi_y, \phi_z]$</span></li>
+</ul>
+</li>
+<li>
+<p>The Directional Derivative: <span class="mathjax-exps">$D_\mathbf{v}(\phi) = \mathbf{v} \cdot \nabla \phi$</span></p>
+</li>
+<li>
+<p>Divergence: takes<br>
+</p><div class="mathjax-exps">$$\mathrm{div}(\mathbf{F}): (\RR^n \to \RR^n) \to (\RR^n \to \RR) \\   \mathbf{F} \mapsto \nabla \cdot \mathbf{F}   \definedas \sum_{i=1}^n \frac{\partial \mathbf{F}_i}{\partial x_i} = \frac{\partial \mathbf{F}_1}{\partial x_1} + \frac{\partial \mathbf{F}_2}{\partial x_2} + \cdots + \frac{\partial \mathbf{F}_n}{\partial x_n}$$</div><p></p>
+<ul>
+<li><span class="mathjax-exps">$n=3\implies \nabla \cdot \mathbf{F} = (\mathbf{F}_1)_x + (\mathbf{F}_2)_y + (\mathbf{F}_3)_z$</span></li>
+</ul>
+</li>
+<li>
+<p>Curl: </p><div class="mathjax-exps">$$\mathrm{curl}(\mathbf{F}): (\RR^3 \to \RR^3) \to (\RR^3 \to \RR^3) \\ \mathbf{F} \mapsto \nabla \cross \mathbf{F} \definedas \nabla \times \mathbf { F } = \left| \begin{array} { c c c } { \mathbf { e }_1 } &amp; { \mathbf { e }_2 } &amp; { \mathbf { e }_3 } \\ { \frac { \partial } { \partial x } } &amp; { \frac { \partial } { \partial y } } &amp; { \frac { \partial } { \partial z } } \\ { \mathbf{F} _ { 1 } } &amp; { \mathbf{F} _ { 2 } } &amp; { \mathbf{F} _ { 3 } } \end{array} \right| \\ = \left[ \frac { \partial \mathbf{F} _ { z } } { \partial y } - \frac { \partial \mathbf{F} _ { y } } { \partial z },\quad \frac { \partial \mathbf{F} _ { x } } { \partial z } - \frac { \partial \mathbf{F} _ { z } } { \partial x },\quad  \frac { \partial \mathbf{F} _ { y } } { \partial x } - \frac { \partial \mathbf{F} _ { x } } { \partial y } \right]$$</div><p></p>
+</li>
+<li>
+<p>Computing Flux: #todo </p><div class="mathjax-exps">$$\iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$</div><p></p>
+</li>
+<li>
+<p>Line Integrals: for a path <span class="mathjax-exps">$C$</span> parameterized as <span class="mathjax-exps">$\theset{\mathbf{r}(t): a\leqt\leq b}$</span><br>
+</p><div class="mathjax-exps">$$\int_C f ds = \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}&apos;(t)}~dt$$</div><br>
+Some Results<p></p>
+</li>
+<li>
+<p><span class="mathjax-exps">$\nabla \cdot \mathbf{F} = 0 \not \implies \exists G:~ \mathbf{F} = \nabla\cross G$</span></p>
+<ul>
+<li>Counterexample<div class="mathjax-exps">$$\mathbf{F}(x,y,z) =\frac{1}{\sqrt{x^2+y^2+z^2}}[x, y, z]~,\quad S = S^2 \subset \RR^3 \\ \implies \nabla \mathbf{F} = 0 \text{ but } \iint_{S^2}\mathbf{F}\cdot d\mathbf{S} = 4\pi \neq 0$$</div><br>
+Where by Stokes&#x2019; theorem, <div class="mathjax-exps">$$\mathbf{F} = \nabla\cross\mathbf{G}\implies\iint_{S^2} \mathbf{F} = \iint_{S^2} \nabla\cross\mathbf{G} \equalsbecause{Stokes} \oint_{\del S^2}\mathbf{G}~d\mathbf{r} = 0$$</div><br>
+since <span class="mathjax-exps">$\del S^2 = \emptyset$</span>.</li>
+<li>Sufficient condition: <span class="mathjax-exps">$\mathbf{F}$</span> is everywhere <span class="mathjax-exps">$C^1$</span></li>
+</ul>
+</li>
+<li>
+<p></p><div class="mathjax-exps">$$\exists \mathbf{G}:~ \mathbf{F} = \nabla \cross \mathbf{G} \iff \forall \text{ closed } S, \iint_S \mathbf{F}\cdot d\mathbf{S} = 0$$</div><p></p>
+</li>
+</ul>
+<h2 class="mume-header" id="approximation-and-optimization">Approximation and Optimization</h2>
+
+<ul>
+<li>Linear Approximation:
+<ul>
+<li><span class="mathjax-exps">$z = f(x,y):$</span> use Tangent plane formulation to obtain<br>
+<div class="mathjax-exps">$$f(x,y) \approx f(x_0, y_0) + f_x(x_0, y_0)(x-x_0) + f_y(x_0, y_0)(y-y_0)$$</div></li>
+</ul>
+</li>
+<li>Optimization
+<ul>
+<li>Critical points of <span class="mathjax-exps">$f(\vec x)$</span> given by points <span class="mathjax-exps">$\vec p_0$</span> such that <span class="mathjax-exps">$\nabla f\mid_{\vec p_0} = 0$</span></li>
+<li>Second derivative test: compute <span class="mathjax-exps">$H_f(p_0) \definedas  \left| \begin{array} { l l } { f _ { x x } } &amp; { f _ { x y } } \\ { f _ { y x } } &amp; { f _ { y y } } \end{array} \right| ({ \vec p _ { 0 } })$</span>. By cases:
+<ul>
+<li><span class="mathjax-exps">$H(\vec p_0) = 0$</span>: No conclusion</li>
+<li><span class="mathjax-exps">$H(\vec p_0) &lt; 0$</span>: Saddle point</li>
+<li><span class="mathjax-exps">$H(\vec p_0) &gt; 0$</span>:
+<ul>
+<li><span class="mathjax-exps">$f_{xx}(\vec p_0) &gt; 0 \implies$</span> local min</li>
+<li><span class="mathjax-exps">$f_{xx}(\vec p_0) &lt; 0 \implies$</span> local max</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Constrained Optimization: <strong>Lagrange Multipliers</strong>
+<ul>
+<li>The setup:<br>
+<div class="mathjax-exps">$$\text{Optimize } f(\vec x) \\ \text{subject to } g(\vec x) = c \\ \implies \nabla f = \lambda \nabla g$$</div></li>
+<li>Use this formula to obtain a system of equations in the components of <span class="mathjax-exps">$x$</span> and the parameter <span class="mathjax-exps">$\lambda$</span>.</li>
+<li>Generally solve for lambda and substitute to obtain relations between equations, then substitute back into constraint to find a number of candidate critical points.</li>
+<li>Test all critical points by just plugging back into <span class="mathjax-exps">$f$</span>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 class="mume-header" id="ordinary-differential-equations">Ordinary Differential Equations</h1>
+
+<h2 class="mume-header" id="ordinary-differential-equations-1">Ordinary Differential Equations</h2>
+
+<ul>
+<li>Separable equations:<br>
+<div class="mathjax-exps">$$p(y)\frac{dy}{dx} - q(x) = 0 \implies \int p(y) dy = \int q(x) dx + C$$</div><br>
+<div class="mathjax-exps">$$\frac{dy}{dx} = f(x)g(y) \implies \int \frac{1}{g(y)}dy = \int f(x) dx + C$$</div>
+<ul>
+<li>Population growth: <div class="mathjax-exps">$$\frac{dP}{dt} = kP \implies \qquad P = P_0 e^{kt}$$</div></li>
+<li>Logistic growth:
+<ul>
+<li>General form: <span class="mathjax-exps">$\frac{dP}{dt} =(B(t) - D(t))P(t)$</span></li>
+<li>Assume birth rate is constant <span class="mathjax-exps">$B(t) = B_0$</span> and death rate is proportional to instantaneous population <span class="mathjax-exps">$D(t) = D_0 P(t)$</span>. Then let <span class="mathjax-exps">$r = B_0, C = B_0/D_0$</span> be the <em>carrying capacity</em>:<br>
+<div class="mathjax-exps">$$\frac{dP}{dt} = r\left( 1 - \frac{P}{C} \right)P \implies \qquad P(t) = \frac{P_0}{\frac{P_0}{C} + e^{-rt}(1 - \frac{P_0}{C})}$$</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>First order linear: <div class="mathjax-exps">$$\frac{dy}{dx} + p(x)y = q(x) \implies I(x) = e^{\int p(x) dx},\qquad y(x) = \frac{1}{I(x)}\left(\int q(x)I(x) dx + C\right)$$</div></li>
+<li>Exact:
+<ul>
+<li><span class="mathjax-exps">$M(x,y)dx + N(x,y)dy = 0 \text{ is exact } \iff \exists \phi: \frac{\partial\phi}{\partial x} = M(x, y),~\frac{\partial\phi}{\partial y} = N(x, y) \\ \iff \frac{\partial M}{\partial y} = \frac{\partial N}{x}$</span></li>
+<li>General solution: <div class="mathjax-exps">$$\phi(x, y) = \int^x M(s, y) ds + \int^y N(x, t) dt - \int^y \frac{\partial}{\partial t} \left(\int^x M(s, t) ds\right)dt$$</div><br>
+(where <span class="mathjax-exps">$\int^x f(t) dt$</span> means take the antiderivative of <span class="mathjax-exps">$f$</span> and consider it a function of <span class="mathjax-exps">$x$</span>)</li>
+</ul>
+</li>
+<li>Cauchy Euler: #todo</li>
+<li>Bernoulli: $todo</li>
+</ul>
+<h2 class="mume-header" id="linear-homogeneous">Linear Homogeneous</h2>
+
+<p>General form:<br>
+</p><div class="mathjax-exps">$$y^{(n)} + c_{n-1} y^{(n-1)} + \cdots + c_2y&apos;&apos; + cy&apos; + cy = 0 \\ p(D)y = \prod (D-r_i)^{m_i} y= 0$$</div><br>
+where <span class="mathjax-exps">$p$</span> is a polynomial in the differential operator <span class="mathjax-exps">$D$</span> with roots <span class="mathjax-exps">$r_i$</span>:<p></p>
+<ul>
+<li>
+<p>Real roots: contribute <span class="mathjax-exps">$m_i$</span> solutions of the form<br>
+</p><div class="mathjax-exps">$$e^{rx}, xe^{rx}, \cdots, x^{m_i-1}e^{rx}$$</div><p></p>
+</li>
+<li>
+<p>Complex conjugate roots: for <span class="mathjax-exps">$r=a+bi$</span>, contribute <span class="mathjax-exps">$2m_i$</span> solutions of the form<br>
+</p><div class="mathjax-exps">$$e^{(a\pm bi)x}, xe^{(a\pm bi)x}, ~\cdots,~ x^{m_i-1}e^{(a\pm bi)x} \\   = e^{ax}\cos(bx), e^{ax}\sin(bx),~ xe^{ax}\cos(bx), xe^{ax}\sin(bx),~ \cdots,~$$</div><p></p>
+</li>
+</ul>
+<p>Example: by cases, second order equation of the form </p><div class="mathjax-exps">$$ay&apos;&apos; + by&apos; + cy = 0$$</div><p></p>
+<ul>
+<li>Two distinct roots: <span class="mathjax-exps">$c_1 e^{r_1 x} + c_2 e^{r_2 x}$</span></li>
+<li>One real root: <span class="mathjax-exps">$c_1 e^{rx} + c_2 x e^{rx}$</span></li>
+<li>Complex conjugates <span class="mathjax-exps">$\alpha \pm i \beta$</span>: <span class="mathjax-exps">$e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$</span></li>
+</ul>
+<h2 class="mume-header" id="linear-inhomogeneous">Linear Inhomogeneous</h2>
+
+<p>General form:<br>
+</p><div class="mathjax-exps">$$y^{(n)} + c_{n-1} y^{(n-1)} + \cdots + c_2y&apos;&apos; + cy&apos; + cy = F(x) \\ p(D)y = \prod (D-r_i)^{m_i} y= 0$$</div><p></p>
+<p>Then solutions are of the form <span class="mathjax-exps">$y_c + y_p$</span>, where <span class="mathjax-exps">$y_c$</span> is the solution to the associated homogeneous system and <span class="mathjax-exps">$y_p$</span> is a particular solution.</p>
+<p>Methods of obtaining particular solutions</p>
+<h3 class="mume-header" id="undetermined-coefficients">Undetermined Coefficients</h3>
+
+<ul>
+<li>Find an operator <span class="mathjax-exps">$p(D)$</span> the annihilates <span class="mathjax-exps">$F(x)$</span> (so <span class="mathjax-exps">$q(D)F = 0$</span>)</li>
+<li>Find solution of <span class="mathjax-exps">$q(D)p(D) = 0$</span>, subtract of known solutions from homogeneous part to obtain the form of the trial solution <span class="mathjax-exps">$A_0f(x)$</span>, where <span class="mathjax-exps">$A_0$</span> is the undetermined coefficient</li>
+<li>Substitute trial solution into original equation to determine <span class="mathjax-exps">$A_0$</span></li>
+</ul>
+<p>Useful Annihilators:<br>
+</p><div class="mathjax-exps">$$\begin{align} &amp;F(x) = p(x): &amp; D^{\deg(p)+1} \\ &amp;F(x) = p(x)e^{ax}: &amp; (D-a)^{\deg(p)+1}\\ &amp;F(x) = \cos(ax) + \sin(ax): &amp; D^2 + a^2\\ &amp;F(x) = e^{ax}(a_0\cos(bx) + b_0\sin(bx)): &amp; (D-z)(D-\conjugate{z}) = D^2 -2aD + a^2 + b^2 \\ &amp;F(x) = p(x)e^{ax}\cos(bx) + p(x)e^{ax}\cos(bx): &amp; \left( (D-z)(D-\conjugate{z})\right)^{\max(\deg(p), \deg(q))+ 1} \end{align}$$</div><p></p>
+<h3 class="mume-header" id="variation-of-parameters">Variation of Parameters</h3>
+
+<pre class="language-text">#todo
+</pre>
+<h3 class="mume-header" id="reduction-of-order">Reduction of Order</h3>
+
+<pre class="language-text">#todo
+</pre>
+<h2 class="mume-header" id="systems-of-differential-equations">Systems of Differential Equations</h2>
+
+<p>General form: </p><div class="mathjax-exps">$$\frac{\partial \vec{x(t)} }{\partial t} = A\vec {x(t)} + \vec {b(t)} \text{ or } \mathbf{x}&apos;(t) = A\mathbf{x}(t) + \mathbf{b}(t)$$</div><p></p>
+<p>General solution to homogeneous equation:<br>
+</p><div class="mathjax-exps">$$c_1\vec{x_1(t)} + c_2\vec{x_2(t)}+ \cdots +c_n\vec{x_n(t)} = X(t)\vec{c}$$</div><p></p>
+<p>If <span class="mathjax-exps">$A$</span> is a matrix of constants: <span class="mathjax-exps">$\vec{x(t)} = e^{\lambda_i t}~\vec{v}_i$</span> is a solution for each eigenvalue/eigenvector pair <span class="mathjax-exps">$(\lambda_i, v_i)$</span></p>
+<ul>
+<li>If <span class="mathjax-exps">$A$</span> is defective: #todo generalized eigenvectors&#x2026;?</li>
+</ul>
+<p>Nonhomogeneous Equation: particular solutions given by <span class="mathjax-exps">$\vec{x}_p(t) = X(t) \int^t X^{-1}(s)\vec{b(s)}~ds$</span></p>
+<h2 class="mume-header" id="laplace-transforms">Laplace Transforms</h2>
+
+<p>Definitions:<br>
+</p><div class="mathjax-exps">$$H_ { a } ( t ) = \left\{ \begin{array} { l l } { 0 , } &amp; { 0 \leq t &lt; a } \\ { 1 , } &amp; { t \geq a } \end{array} \right.\\ \delta(t): \int_\RR \delta(t-a)f(t)~dt = f(a),\quad \int_\RR \delta(t-a)~dt = 1\\ (f \ast g )(t) = \int_0^t f(t-s)g(s)~ds$$</div><br>
+Useful property: for <span class="mathjax-exps">$a\leq b$</span>, <span class="mathjax-exps">$H_a(t) - H_b(t) = \indicator[a,b]$</span>.<br>
+<div class="mathjax-exps">$$\begin{align} t^n, n\in\NN \quad&amp;\iff  &amp;n!\frac{1}{s^{n+1}},\quad &amp;s &gt; 0 \\ t^{-\frac{1}{2}} \quad&amp;\iff &amp;\sqrt{\pi} s^{-\frac{1}{2}}\quad &amp; s&gt;0\\ e^{at} \quad&amp;\iff &amp;\frac{1}{s-a},\quad &amp;s &gt; a \\ \cos(bt) \quad&amp;\iff &amp;\frac{s}{s^2+b^2},\quad &amp;s&gt;0 \\ \sin(bt) \quad&amp;\iff &amp;\frac{b}{s^2+b^2},\quad &amp;s&gt;0 \\ \delta(t-a) \quad&amp;\iff &amp;e^{-as} \quad&amp; \\ H_a(t) \quad&amp;\iff &amp;s^{-1}e^{-as}\quad&amp; \\ e^{at}f(t) \quad&amp;\iff &amp;F(s-a)\quad &amp; \\ H_a(t)f(t-a) \quad&amp;\iff &amp;e^{-as}F(s)&amp; \\ f&apos;(t) \quad&amp;\iff &amp; sL(f) - f(0) &amp; \\ f&apos;&apos;(t) \quad&amp;\iff &amp;s^2L(f) -sf(0) - f&apos;(0) &amp;\\ f^{(n)}(t) \quad&amp;\iff &amp; s^nL(f) - \sum_{i=0}^{n-1} s^{n-1-i}f^{(i)}(0) &amp; \\ f(t)g(t) \quad&amp;\iff &amp;F(s) \ast G(s)\quad &amp; \end{align}$$</div><p></p>
+<ul>
+<li>For <span class="mathjax-exps">$f$</span> periodic with period <span class="mathjax-exps">$T$</span>, <span class="mathjax-exps">$L(f) = \frac{1}{1+e^{-sT}}\int_0^T e^{-st}f(t)~dt$</span></li>
+</ul>
+<h2 class="mume-header" id="techniques-review">Techniques Review</h2>
+
+<ul>
+<li><span class="mathjax-exps">$p(y)y&apos; = q(x)$</span>: separable</li>
+<li><span class="mathjax-exps">$y&apos;+p(x)y = q(x)$</span>: integrating factor</li>
+<li><span class="mathjax-exps">$y&apos; = f(x,y), f(tx,ty) = f(x,y)$</span>: COV <span class="mathjax-exps">$y= xV(x)$</span> reduces to separable</li>
+<li><span class="mathjax-exps">$y&apos; +p(x)y = q(x)y^n$</span>: Bernoulli, divide by <span class="mathjax-exps">$y^n$</span> and COV <span class="mathjax-exps">$u = y^{1-n}$</span></li>
+<li><span class="mathjax-exps">$M(x,y)dx + N(x,y)dy = 0$</span>: exact if <span class="mathjax-exps">$M_y = N_x$</span>, solution <span class="mathjax-exps">$\phi(x,y) = c$</span> where <span class="mathjax-exps">$\phi_x =M, \phi_y = N$</span></li>
+</ul>
+<hr>
+<h2 class="mume-header" id="linear-algebra">Linear Algebra</h2>
+
+<p>Assume everywhere that <span class="mathjax-exps">$A$</span> is an <span class="mathjax-exps">$m\times n$</span> matrix that represents a linear transformation <span class="mathjax-exps">$T: \RR^n \to \RR^m$</span></p>
+<h2 class="mume-header" id="general-notes">General Notes</h2>
+
+<ul>
+<li>Rank: number of nonzero rows in RREF</li>
+<li><span class="mathjax-exps">$\mathrm{Trace}(A) = \sum_{i=1}^m A_{i,i}$</span></li>
+<li>Elementary row operations / matrices:
+<ul>
+<li>Permute rows</li>
+<li>Multiple a row by a scalar</li>
+<li>Add any row to another</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$A (m\times n),~ B(n\times p),~ AB = C \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner[\mathbf{a^T_i}]{\mathbf{b_j}}$</span>
+<ul>
+<li>i.e., the <span class="mathjax-exps">$c_{ij}$</span> entry is just dotting row <span class="mathjax-exps">$i$</span> of <span class="mathjax-exps">$A$</span> with column <span class="mathjax-exps">$j$</span> of <span class="mathjax-exps">$B$</span>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="systems-of-linear-equations">Systems of Linear Equations</h2>
+
+<p>Notation: <span class="mathjax-exps">$A\vec x = \vec b$</span> a linear system, <span class="mathjax-exps">$r = \rank(A)$</span> and <span class="mathjax-exps">$r&apos; = \rank(A \mid \vec b)$</span> an augmented matrix.</p>
+<ul>
+<li>Consistent: A system of linear equations is <em>consistent</em> when it has at least one solution.</li>
+<li>Inconsistent: A system of linear equations is <em>inconsistent</em> when it has no solutions.</li>
+<li>Tall matrices: more equations than unknowns</li>
+<li>Wide matrices: more unknowns than equations</li>
+<li>Three possibilities for a system of linear equations:
+<ul>
+<li>No solutions</li>
+<li>One unique solution</li>
+<li>Infinitely many solutions</li>
+</ul>
+</li>
+<li>Possibilities:
+<ul>
+<li><span class="mathjax-exps">$r &lt; r&apos;$</span>: the system is inconsistent.</li>
+<li><span class="mathjax-exps">$r = r&apos;$</span>: the system is consistent, and
+<ul>
+<li><span class="mathjax-exps">$r&apos; = n \implies$</span> there is a unique solution (square, tall)</li>
+<li><span class="mathjax-exps">$r&apos; &lt; n \implies$</span> there are infinitely many solutions (wide)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Homogeneous systems are <strong>always</strong> consistent.</li>
+</ul>
+<h2 class="mume-header" id="the-determinant">The Determinant</h2>
+
+<ul>
+<li>Properties of the Determinant <span class="mathjax-exps">$A: m\times n$</span>
+<ul>
+<li><span class="mathjax-exps">$\det(AB) = \det(A) \det(B)$</span></li>
+<li>Permute two Rows: <span class="mathjax-exps">$\det A&apos; = - \det A$</span></li>
+<li>Factor a scalar <span class="mathjax-exps">$t$</span> out of one row: <span class="mathjax-exps">$\det A&apos; = t \det A$</span>
+<ul>
+<li><span class="mathjax-exps">$\det(tA) = t^m \det(A)$</span></li>
+</ul>
+</li>
+<li>Add one row to another: <span class="mathjax-exps">$\det(A&apos;) = \det(A)$</span></li>
+<li><span class="mathjax-exps">$\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$</span> for upper or lower triangular matrices.</li>
+<li><span class="mathjax-exps">$\det(A^{-1}) = \frac{1}{\det(A)}$</span></li>
+<li><span class="mathjax-exps">$\det{A^k} = k\det{A}$</span></li>
+<li><span class="mathjax-exps">$\det{A^T} = \det{A}$</span></li>
+<li><span class="mathjax-exps">$\det(\mathbf{a}_1 + \mathbf{a}_2, \cdots) = \det(\mathbf{a}_1, \cdots) + \det(\mathbf{a}_2, \cdots)$</span></li>
+<li>If any row of <span class="mathjax-exps">$A$</span> is all zeros, <span class="mathjax-exps">$\det(A) = 0$</span>.</li>
+<li>Take <span class="mathjax-exps">$A = \pmatrix{\vec a \rightarrow \\ \vec b \rightarrow \\ \vdots }$</span>, then in <span class="mathjax-exps">$\RR^3$</span>, <span class="mathjax-exps">$\det(A)$</span> is the volume of the parallelepiped spanned by<br>
+<span class="mathjax-exps">$\vec{a}, \vec{b}, \vec{c}$</span>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="the-spaces-of-a-matrix-linear-map">The Spaces of a Matrix / Linear Map</h2>
+
+<ul>
+<li>Finding bases for various spaces of <span class="mathjax-exps">$A$</span>:
+<ul>
+<li>Rowspace: reduce to RREF, and take nonzero rows of RREF <span class="mathjax-exps">$(\subseteq \RR^n)$</span></li>
+<li>Colspace: reduce to RREF, and take columns with pivots from original <span class="mathjax-exps">$A$</span> <span class="mathjax-exps">$(\subseteq \RR^m)$</span></li>
+<li>Nullspace: reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="eigenvalues-and-eigenvectors">Eigenvalues and Eigenvectors</h2>
+
+<ul>
+<li>Defining equation: <span class="mathjax-exps">$\lambda\in E(A) \iff \forall x \in \RR^m, A\vec x = \lambda\vec x$</span></li>
+<li>Finding: solve <span class="mathjax-exps">$A - I \lambda_i = 0$</span> for each <span class="mathjax-exps">$i$</span>.</li>
+<li><span class="mathjax-exps">$\lambda \in E(A) \implies \lambda^2 \in E(A^2)$</span> (with the same eigenvector).</li>
+<li>Eigenvectors corresponding to distinct eigenvalues are <strong>always</strong> linearly independent</li>
+<li><span class="mathjax-exps">$A$</span> has <span class="mathjax-exps">$n$</span> distinct eigenvalues <span class="mathjax-exps">$\implies A$</span> has <span class="mathjax-exps">$n$</span> linearly independent eigenvectors.</li>
+<li>Similar matrices have identical eigenvalues and multiplicities.</li>
+<li>A matrix <span class="mathjax-exps">$A$</span> is diagonalizable <span class="mathjax-exps">$\iff A$</span> has <span class="mathjax-exps">$n$</span> linearly independent eigenvectors.</li>
+<li>Useful Facts
+<ul>
+<li><span class="mathjax-exps">$\prod \lambda_i = \det A$</span></li>
+<li><span class="mathjax-exps">$\sum \lambda_i = \mathrm{Tr}~A$</span></li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="misc">Misc</h2>
+
+<ul>
+<li><span class="mathjax-exps">$\abs{\mathrm{rowspace}(A)} = \abs{\mathrm{colspace}(A)}$</span></li>
+<li>Proof of Cauchy-Schwarz: See Goode page 346.</li>
+<li>Distance from a point <span class="mathjax-exps">$p$</span> to a line <span class="mathjax-exps">$\vec a + t\vec b$</span>: let <span class="mathjax-exps">$\vec w = \vec p - \vec a$</span>, then: <span class="mathjax-exps">$\norm{w - P(w, v)}$</span>
+<ul>
+<li><img src="../../images/DistanceFromLineToPoint.png" alt="distance from line to point"></li>
+</ul>
+</li>
+<li>Computing change of basis matrices: #todo</li>
+<li>Two step vector subspace test:
+<ul>
+<li>Ensure it contains the zero vector</li>
+<li>Ensure it&#x2019;s closed under scalar multiplication and vector addition</li>
+</ul>
+</li>
+<li>Any set of two vectors <span class="mathjax-exps">$\theset{\vec v, \vec w}$</span> is linearly dependent <span class="mathjax-exps">$\iff \exists \lambda :~\vec v = \lambda \vec w$</span>.</li>
+<li>A set of functions <span class="mathjax-exps">$\theset{f_i}$</span> is linearly independent on <span class="mathjax-exps">$I \iff \exists x_0 \in I: W(x_0) \neq 0$</span> (where <span class="mathjax-exps">$W$</span> is the Wronskian)
+<ul>
+<li>NOTE: <span class="mathjax-exps">$W \equiv 0$</span> on <span class="mathjax-exps">$I \not\implies \theset{f_i}$</span> is linearly dependent!</li>
+<li>Counterexample: <span class="mathjax-exps">$\theset{x, x+x^2, 2x-x^2}$</span> where <span class="mathjax-exps">$W \equiv 0$</span> but <span class="mathjax-exps">$x+x^2 = 3(x) + (2x-x^2)$</span>.</li>
+<li>Sufficient condition: each <span class="mathjax-exps">$f_i$</span> is the solution to a linear homogeneous ODE <span class="mathjax-exps">$L(y) = 0$</span>.</li>
+</ul>
+</li>
+<li>Every square matrix is similar to a matrix in jordan canonical form.</li>
+<li>Projection onto column space of <span class="mathjax-exps">$A$</span>: given by <span class="mathjax-exps">$P(\vec x) = A(A^t A)^{-1}A^T\vec x$</span></li>
+<li>Normal equations: <span class="mathjax-exps">$\vec x$</span> is a least squares solution to <span class="mathjax-exps">$A\vec x = \vec b \iff A^T A \vec x = A^T \vec b$</span></li>
+</ul>
+<h2 class="mume-header" id="gram-schmidt-process">Gram-Schmidt Process</h2>
+
+<p>Extending <span class="mathjax-exps">$\theset{\mathbf{x}_i}$</span> to an orthonormal basis<br>
+</p><div class="mathjax-exps">$$\mathbf{v}_1 = \mathbf{x_1}\\ \mathbf{v}_2 = \mathbf{x}_2 - P(\mathbf{x}_2, \mathbf{v}_1) \\ \mathbf{v}_3 = \mathbf{x_3} - P(\mathbf{x}_3, \mathbf{v_1}) - P(\mathbf{x}_3, \mathbf{v}_2) \\ \dots \\ \mathbf { v } _ { i } = \mathbf{x_i} - \sum_{k=1}^{i-1}P(\mathbf{x}_i, \mathbf{v}_k) = \mathbf { x } _ { i } - \sum _ { k = 1 } ^ { i - 1 } \frac { \left\langle \mathbf { x } _ { i } , \mathbf { v } _ { k } \right\rangle } { \left\| \mathbf { v } _ { k } \right\| ^ { 2 } } \mathbf { v } _ { k }$$</div><p></p>
+<h2 class="mume-header" id="inverting-a-matrix">Inverting a Matrix</h2>
+
+<p>Equivalent formulas for <span class="mathjax-exps">$A^{-1}$</span>:</p>
+<ul>
+<li>Adjoints: <span class="mathjax-exps">$A^{-1} = \frac{\mathrm{adjugate(A)}}{\det(A)}$</span></li>
+<li>Gauss Jordan: <span class="mathjax-exps">$[A \mid I] \sim [I \mid A^{-1}]$</span></li>
+<li>Cramer&#x2019;s Rule: <span class="mathjax-exps">$A\vec{x} = \vec{b} \implies x_k = \frac{\det(B_k)}{\det(A)}$</span> where <span class="mathjax-exps">$B_k$</span> is <span class="mathjax-exps">$A$</span> where the <span class="mathjax-exps">$k\dash$</span>th column is replaced by <span class="mathjax-exps">$\vec{b}$</span></li>
+</ul>
+<h2 class="mume-header" id="big-list-of-equivalent-properties">Big List of Equivalent Properties</h2>
+
+<p>Let <span class="mathjax-exps">$A$</span> be an <span class="mathjax-exps">$m\times n$</span> matrix. TFAE:</p>
+<ul>
+<li><span class="mathjax-exps">$A$</span> is invertible and has a unique inverse <span class="mathjax-exps">$A^{-1}$</span></li>
+<li><span class="mathjax-exps">$A^T$</span> is invertible</li>
+<li><span class="mathjax-exps">$\det(A) \neq 0$</span></li>
+<li>The linear system <span class="mathjax-exps">$A\bar{x} = \bar{b}$</span> has a unique solution for every <span class="mathjax-exps">$b\ \in \RR^m$</span></li>
+<li>The homogeneous system <span class="mathjax-exps">$A\bar{x} = 0$</span> has only the trivial solution <span class="mathjax-exps">$\bar{x} = 0$</span></li>
+<li><span class="mathjax-exps">$\rank(A) = m$</span> (i.e. <span class="mathjax-exps">$A$</span> is full rank)</li>
+<li><span class="mathjax-exps">$\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$</span></li>
+<li><span class="mathjax-exps">$A = \prod_{i=1}^k E_i$</span> for some finite <span class="mathjax-exps">$k$</span>, where each <span class="mathjax-exps">$E_i$</span> is an elementary matrix.</li>
+<li><span class="mathjax-exps">$A$</span> is row-equivalent to the identity matrix <span class="mathjax-exps">$I_n$</span></li>
+<li><span class="mathjax-exps">$A$</span> has exactly <span class="mathjax-exps">$n$</span> pivots</li>
+<li>The columns of <span class="mathjax-exps">$A$</span> are a basis for <span class="mathjax-exps">$\RR^n$</span>
+<ul>
+<li>i.e. <span class="mathjax-exps">$\mathrm{colspace}(A) = \RR^n$</span></li>
+</ul>
+</li>
+<li>The rows of <span class="mathjax-exps">$A$</span> are a basis for <span class="mathjax-exps">$\RR^m$</span>
+<ul>
+<li>i.e. <span class="mathjax-exps">$\mathrm{rowspace}(A) = \RR^m$</span></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A\right)^\perp = \theset{\vec 0}$</span></li>
+<li>Zero is not an eigenvalue of <span class="mathjax-exps">$A$</span>.</li>
+<li><span class="mathjax-exps">$A$</span> has <span class="mathjax-exps">$n$</span> linearly independent eigenvectors</li>
+<li>The rows of <span class="mathjax-exps">$A$</span> are coplanar.</li>
+</ul>
+<p>As a consequence, all of the following negations are equivalent:</p>
+<ul>
+<li><span class="mathjax-exps">$A$</span> is not invertible/singular</li>
+<li>At least one row of <span class="mathjax-exps">$A$</span> is a linear combination of the others</li>
+<li>The <span class="mathjax-exps">$RREF$</span> of <span class="mathjax-exps">$A$</span> has a row of all zeros.</li>
+</ul>
+<p>Reformulated in terms of linear maps <span class="mathjax-exps">$T$</span>, TFAE:</p>
+<ul>
+<li><span class="mathjax-exps">$T^{-1}: \RR^m \to \RR^n$</span> exists</li>
+<li><span class="mathjax-exps">$\im(T) = \RR^n$</span></li>
+<li><span class="mathjax-exps">$\ker(T) = 0$</span></li>
+<li><span class="mathjax-exps">$T$</span> is injective</li>
+<li><span class="mathjax-exps">$T$</span> is surjective</li>
+<li><span class="mathjax-exps">$T$</span> is an isomorphism</li>
+<li>The system <span class="mathjax-exps">$A\bar{x} = 0$</span> has infinitely many solutions</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="complex-analysis">Complex Analysis</h2>
+
+<ul>
+<li>
+<p>Properties of modulus:</p>
+<ul>
+<li><span class="mathjax-exps">$z = a+ib \implies \abs{z} = \sqrt{a^2 + b^2}$</span></li>
+<li><span class="mathjax-exps">$\abs{z}^2 = z\conjugate{z} = a^2 + b^2$</span></li>
+<li><span class="mathjax-exps">$\frac{z\conjugate{z}}{\abs{z}^2} = \frac{(a+ib)(a-ib)}{a^2 + b^2} = 1$</span></li>
+</ul>
+</li>
+<li>
+<p><span class="mathjax-exps">$\frac{1}{a+ib} = \frac{1}{z} = \frac{\conjugate{z}}{\abs{z}^2} = \frac{a-ib}{a^2+b^2}$</span></p>
+</li>
+<li>
+<p><span class="mathjax-exps">$e^{zx} = e^{(a+ib)x} = e^{ax}(\cos(bx) + i\sin(bx))$</span></p>
+</li>
+<li>
+<p>Complex exponential: <span class="mathjax-exps">$x^z \definedas e^{z\ln x}$</span></p>
+</li>
+<li>
+<p><span class="mathjax-exps">$n\dash$</span>th roots: <span class="mathjax-exps">$e^{\frac{ki}{2\pi n}}$</span></p>
+</li>
+<li>
+<p>For <span class="mathjax-exps">$z=a+bi$</span>, <span class="mathjax-exps">$(x-z)(x-\conjugate{z}) = x^2 - 2\Real{z}x + (a^2+b^2)$</span></p>
+</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="real-analysis">Real Analysis</h2>
+
+<p>Notation used throughout: <span class="mathjax-exps">$f: \RR \to \RR,~\mathbf{f}:\RR^n \to \RR^m$</span>, <span class="mathjax-exps">$K$</span> is a compact set, and &quot;integrable&quot; or <span class="mathjax-exps">$L_R(K)$</span> denotes &quot;Riemann integrable on <span class="mathjax-exps">$K$</span>&quot;.</p>
+<h2 class="mume-header" id="big-theorems-formulas">Big Theorems / Formulas</h2>
+
+<ul>
+<li><strong>Generalized Mean Value Theorem</strong><br>
+<div class="mathjax-exps">$$f,g\text{ differentiable on } [a,b] \implies \exists c\in[a,b] : \left[f ( b ) - f ( a ) \right] g&apos; ( c ) = \left[g ( b ) - g ( a )\right] f&apos; ( c )$$</div>
+<ul>
+<li>Recover MVT: #todo</li>
+</ul>
+</li>
+<li><strong>Bolzano-Weierstrass</strong>: every bounded sequence has a convergent subsequence.</li>
+<li><strong>Heine-Borel</strong>: in <span class="mathjax-exps">$\RR^n, X$</span> is compact <span class="mathjax-exps">$\iff X$</span> is closed and bounded.</li>
+</ul>
+<h2 class="mume-header" id="big-examples">Big Examples</h2>
+
+<ul>
+<li>A function continuous and discontinuous at infinitely many points:<br>
+<div class="mathjax-exps">$$f(x) = \cases{   0 &amp; $x\in\RR-\QQ$ \\   \frac{1}{q} &amp; $x = \frac{p}{q} \in \QQ$ }$$</div>
+<ul>
+<li>Then <span class="mathjax-exps">$f$</span> is discontinuous on <span class="mathjax-exps">$\QQ$</span> and continuous on <span class="mathjax-exps">$\RR-\QQ$</span>. Proof</li>
+<li>Fix <span class="mathjax-exps">$\varepsilon$</span>, let <span class="mathjax-exps">$x_0 \in \RR-\QQ$</span>, choose <span class="mathjax-exps">$n: \frac{1}{n} &lt; \varepsilon$</span> using Archimedean property.
+<ul>
+<li>Define <span class="mathjax-exps">$S = \theset{x\in\QQ: x\in (0,1), x=\frac{m}{n&apos;}, n&apos; &lt; n}$</span></li>
+<li>Then <span class="mathjax-exps">$\abs{S} \leq 1+2+\cdots (n-1)$</span>, so choose <span class="mathjax-exps">$\delta = \min_{s\in S}\abs{s-x_0}$</span></li>
+<li>Then <div class="mathjax-exps">$$x \in N_\delta(x_0) \implies f(x) &lt; \frac{1}{n} &lt; \varepsilon \qed$$</div></li>
+<li>#todo, revisit and spell out more</li>
+</ul>
+</li>
+<li>Let <span class="mathjax-exps">$x_0 = \frac{p}{q} \in \QQ$</span> and <span class="mathjax-exps">$\theset{x_n} = \theset{x-\frac{1}{n\sqrt 2}}$</span>. Then <div class="mathjax-exps">$$x_n \uparrow x_0\text{ but } f(x_n) = 0 \to 0 \neq \frac{1}{q} = f(x_0) \qed$$</div></li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="motivation-commuting-limit-operations">Motivation: Commuting Limit Operations</h2>
+
+<ul>
+<li>Suppose <span class="mathjax-exps">$f_n \to f$</span> (pointwise, not necessarily uniformly)</li>
+<li>Let <span class="mathjax-exps">$F(x) = \int f(t)$</span> be an antiderivative of <span class="mathjax-exps">$f$</span></li>
+<li>Let <span class="mathjax-exps">$f&apos;(x) = \frac{\partial f}{\partial x}(x)$</span> be the derivative of <span class="mathjax-exps">$f$</span>.</li>
+</ul>
+<p>Then consider the following possible ways to commute various limiting operations:</p>
+<hr>
+<p>Does taking the derivative of the integral of a function always return the original function?<br>
+</p><div class="mathjax-exps">$$[\frac{\partial}{\partial x}, \int dx]:\qquad\qquad \frac{\partial}{\partial x}\int f(x, t)dt =_? \int \frac{\partial}{\partial x} f(x, t)dt\\ \text{}$$</div><p></p>
+<p><strong>Answer</strong>: Sort of (but possibly not).</p>
+<p><strong>Counterexample</strong>: </p><div class="mathjax-exps">$$f(x) = \cases{1 &amp; $x &gt; 0$ \\ -1 &amp; $x \leq 0$} \implies \int f \approx \abs{x},$$</div> which is not differentiable. (This is remedied by the so-called &quot;weak derivative&quot;)<p></p>
+<p><strong>Sufficient Condition</strong>: If <span class="mathjax-exps">$f$</span> is continuous, then both are always equal to <span class="mathjax-exps">$f(x)$</span> by the FTC.</p>
+<hr>
+<p>Is the derivative of a continuous function always continuous?<br>
+</p><div class="mathjax-exps">$$[\frac{\partial}{\partial x}, \lim_{x_i\to x}]:\qquad\qquad \lim_{x_i \to x} f&apos;(x_n) =_? f&apos;(\lim_{x_i\to x} x)$$</div><br>
+<strong>Answer</strong>: No.<p></p>
+<p><strong>Counterexample</strong>: </p><div class="mathjax-exps">$$f ( x ) = \left\{ \begin{array} { l l } { x ^ { 2 } \sin ( 1 / x ) } &amp; { \text { if } x \neq 0 } \\ { 0 } &amp; { \text { if } x = 0 } \end{array} \right. \implies f ^ { \prime } ( x ) = \left\{ \begin{array} { l l } { 2 x \sin \left( \frac { 1 } { x } \right) - \cos \left( \frac { 1 } { x } \right) } &amp; { \text { if } x \neq 0 } \\ { 0 } &amp; { \text { if } x = 0 } \end{array} \right.$$</div><br>
+which is discontinuous at zero.<p></p>
+<p><strong>Sufficient Condition</strong>: There doesn&#x2019;t seem to be a general one (which is perhaps why we study <span class="mathjax-exps">$C^k$</span> functions).</p>
+<hr>
+<p>Is the limit of a sequence of differentiable functions differentiable <strong>and</strong> the derivative of the limit?</p>
+<p></p><div class="mathjax-exps">$$[\frac{\partial}{\partial x}, \lim_{f_n \to f}]:\qquad\qquad \lim_{f_n \to f}\frac{\partial}{\partial x}f_n(x) =_? \frac{\partial }{\partial x}\lim_{f_n \to f} f_n(x)$$</div><br>
+<strong>Answer</strong>: <em>Super</em> no &#x2013; even the uniform limit of differentiable functions need not be differentiable!<p></p>
+<p><strong>Counterexample</strong>: <span class="mathjax-exps">$f_n(x) = \frac{\sin(nx)}{\sqrt{n}} \rightrightarrows f = 0$</span> but <span class="mathjax-exps">$f_n&apos; \not\to f&apos; = 0$</span></p>
+<p><strong>Sufficient Condition</strong>: <span class="mathjax-exps">$f_n \rightrightarrows f$</span> and <span class="mathjax-exps">$f_n \in C^1$</span>.</p>
+<hr>
+<p>Is the limit of a sequence of integrable functions integrable <strong>and</strong> the integral of the limit?</p>
+<p></p><div class="mathjax-exps">$$[\int dx, \lim_{f_n \to f}](f):\qquad\qquad \lim_{f_n \to f}\int f_n(x) dx =_? \int \lim_{f_n \to f} f_n(x) dx$$</div><p></p>
+<p><strong>Answer</strong>: No.</p>
+<p><strong>Counterexample</strong>: Order <span class="mathjax-exps">$\QQ\intersect[0,1]$</span> as <span class="mathjax-exps">$\theset{q_i}_{i\in\NN}$</span>, then take<br>
+</p><div class="mathjax-exps">$$f_n(x) = \sum_{i=1}^n \indicator[q_n] \to \indicator[{\QQ\intersect[0,1]}]$$</div> where each <span class="mathjax-exps">$f_n$</span> integrates to zero (only finitely many discontinuities) but <span class="mathjax-exps">$f$</span> is not Riemann-integrable.<p></p>
+<p><strong>Sufficient Condition</strong>: $</p>
+<ul>
+<li><span class="mathjax-exps">$f_n \rightrightarrows f$</span>, or</li>
+<li><span class="mathjax-exps">$f$</span> integrable and <span class="mathjax-exps">$\exists M: \forall n, \abs{f_n} &lt; M$</span> (<span class="mathjax-exps">$f_n$</span> uniformly bounded)</li>
+</ul>
+<hr>
+<p>Is the integral of a continuous function also continuous?</p>
+<p></p><div class="mathjax-exps">$$[\int dx, \lim_{x_i \to x}]:\qquad\qquad \lim_{x_i \to x} F(x_i) =_? F(\lim_{x_i \to x} x_i)$$</div><p></p>
+<p><strong>Answer</strong>: Yes.</p>
+<p><strong>Proof</strong>: <span class="mathjax-exps">$|f(x)| &lt; M$</span> on <span class="mathjax-exps">$I$</span>, so given <span class="mathjax-exps">$c$</span> pick a sequence <span class="mathjax-exps">$x\to c$</span>. Then </p><div class="mathjax-exps">$$\abs{f(x)} &lt; M \implies \left\vert \int_c^x f(t)dt \right\vert &lt; \int_c^x M dt \implies \abs{F(x) - F(c)} &lt; M(b-a) \to 0$$</div><p></p>
+<hr>
+<p>Is the limit of a sequence of continuous functions also continuous?</p>
+<p></p><div class="mathjax-exps">$$[\lim_{x_i \to x}, \lim_{f_n \to f}]: \qquad\qquad \lim_{f_n \to f}\lim_{x_i \to x} f(x_i) =_? \lim_{x_i \to x}\lim_{f_n \to f} f_n(x_i)\\ \text{}\\$$</div><p></p>
+<p><strong>Answer</strong>: No.</p>
+<p><strong>Counterexample</strong>: <span class="mathjax-exps">$f_n(x) = x^n \to \delta(1)$</span></p>
+<p><strong>Sufficient Condition</strong>: <span class="mathjax-exps">$f_n \rightrightarrows f$</span></p>
+<hr>
+<p>Does a sum of differentiable functions necessarily converge to a differentiable function?</p>
+<p></p><div class="mathjax-exps">$$\left[\frac{\partial}{\partial x}, \sum_{f_n}\right]: \qquad\qquad \frac{\partial}{\partial x} \sum_{k=1}^\infty f_k =_? \sum_{k=1}^\infty \frac{\partial}{\partial x} f_k \\ \text{} \\ \text{}\\$$</div><p></p>
+<p><strong>Answer</strong>: No.</p>
+<p><strong>Counterexample</strong>: <span class="mathjax-exps">$f_n(x) = \frac{\sin(nx)}{\sqrt{n}} \rightrightarrows 0 \definedas f$</span>, but <span class="mathjax-exps">$f_n&apos; = \sqrt{n}\cos(nx) \not\to 0 = f&apos;$</span> (at, say, <span class="mathjax-exps">$x=0$</span>)</p>
+<p><strong>Sufficient Condition</strong>: When <span class="mathjax-exps">$f_n \in C^1, \exists x_0: f_n(x_0) \to f(x_0),$</span> and <span class="mathjax-exps">$\sum \norm{f_n&apos;}_\infty &lt; \infty$</span> (continuously differentiable, converges at a point, and the derivatives absolutely converge)</p>
+<hr>
+<h2 class="mume-header" id="continuity">Continuity</h2>
+
+<p></p><div class="mathjax-exps">$$f~\text{cts} \iff \lim_{x \to p} f(x) = f(p)$$</div><p></p>
+<p>Example of a discontinuous function: <span class="mathjax-exps">$\sin(\frac{1}{x})$</span> at <span class="mathjax-exps">$x=0$</span>.</p>
+<p>Uniiform continuity #todo</p>
+<h2 class="mume-header" id="differentiability">Differentiability</h2>
+
+<p></p><div class="mathjax-exps">$$f&apos;(p) \definedas \frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p}$$</div><p></p>
+<ul>
+<li>For multivariable functions: existence and continuity of <span class="mathjax-exps">$\frac{\partial \mathbf{f}}{\partial x_i} \forall i \implies \mathbf{f}$</span> differentiable
+<ul>
+<li>Necessity of continuity: example of a continuous functions with all partial and directional derivatives that is not differentiable: <div class="mathjax-exps">$$f(x, y) = \cases{\frac{y^3}{x^2+y^2} &amp; $(x,y) \neq (0,0)$ \\ 0 &amp; else}$$</div></li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="properties-strongest-to-weakest">Properties, strongest to weakest</h2>
+
+<p></p><div class="mathjax-exps">$$C^\infty \subsetneq C^k \subsetneq \text{ differentiable } \subsetneq C^0 \subset L_R(K)$$</div><p></p>
+<ul>
+<li>Example showing <span class="mathjax-exps">$f\in C^0 \not\implies f$</span> is differentiable <strong>and</strong> <span class="mathjax-exps">$f$</span> not differentiable <span class="mathjax-exps">$\not\implies f \not\in C^0$</span>.
+<ul>
+<li>Take <span class="mathjax-exps">$f(x) = \abs{x}$</span> at <span class="mathjax-exps">$x=0$</span>.</li>
+</ul>
+</li>
+<li>Example showing that <span class="mathjax-exps">$f$</span> differentiable <span class="mathjax-exps">$\not\implies f \in C^1$</span>:
+<ul>
+<li>Take <div class="mathjax-exps">$$f(x) = \cases{x^2\sin(\frac{1}{x}) &amp; $x \neq 0$ \\ 0 &amp; $x =  0$}\implies f&apos;(x) = \cases{-\cos(\frac{1}{x}) + 2x\sin(\frac{1}{x}) &amp; $x \neq 0$\\ 0 &amp; $x=0$}$$</div> but <span class="mathjax-exps">$\lim_{x\to 0}f&apos;(x)$</span> does not exist and thus <span class="mathjax-exps">$f&apos;$</span> is not continuous at zero.</li>
+</ul>
+</li>
+</ul>
+<p>Proof that <span class="mathjax-exps">$f$</span> differentiable <span class="mathjax-exps">$\implies f \in C^0$</span>:<br>
+</p><div class="mathjax-exps">$$f(x) - f(p) = \frac{f(x)-f(p)}{x-p}(x-p) \stackrel{\tiny\mbox{hypothesis}}{=} f&apos;(p)(x-p) \stackrel{\tiny\mbox{$x\to p$}}\rightrightarrows 0$$</div><p></p>
+<h2 class="mume-header" id="giant-table-of-relations">Giant Table of Relations</h2>
+
+<p>Bold are assumed hypothesis, regular text is the strongest conclusion you can reach, strikeout denotes implications that aren&#x2019;t necessarily true.</p>
+<p></p><div class="mathjax-exps">$$\begin{align} f&apos; &amp;&amp; f &amp;&amp; \therefore f &amp;&amp; F \\ \hline \\ \strike{\text{exists}} &amp;&amp; \mathbf{continuous} &amp;&amp;  \text{K-integrable} &amp;&amp; \text{exists} \\ \strike{\text{continuous}} &amp;&amp; \mathbf{differentiable}  &amp;&amp; \text{continuous} &amp;&amp; \text{exists} \\ \strike{\text{exists}} &amp;&amp; \mathbf{integrable} &amp;&amp; \strike{\text{continuous}} &amp;&amp; \text{differentiable} \\ \end{align}$$</div><p></p>
+<p>Explanation of items in table:</p>
+<ul>
+<li>K-integrable: compactly integrable.</li>
+<li><span class="mathjax-exps">$f$</span> integrable <span class="mathjax-exps">$\implies F$</span> differentiable <span class="mathjax-exps">$\implies F \in C^0$</span>
+<ul>
+<li>By definition and FTC, and differentiability <span class="mathjax-exps">$\implies$</span> continuity</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f$</span> differentiable and <span class="mathjax-exps">$K$</span> compact <span class="mathjax-exps">$\implies f$</span> integrable on <span class="mathjax-exps">$K$</span>.
+<ul>
+<li>In general, <span class="mathjax-exps">$f$</span> differentiable <span class="mathjax-exps">$\not\implies f$</span> integrable. Necessity of compactness: <div class="mathjax-exps">$$f(x) = e^x \in C^\infty(\RR)\text{ but }\int_\RR e^x dx \to \infty$$</div></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f$</span> integrable <span class="mathjax-exps">$\not\implies f$</span> differentiable
+<ul>
+<li>An integrable function that is not differentiable: <span class="mathjax-exps">$f(x) = |x|$</span> on <span class="mathjax-exps">$\RR$</span></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f$</span> differentiable <span class="mathjax-exps">$\implies f$</span> continuous a.e.</li>
+</ul>
+<h2 class="mume-header" id="integrability">Integrability</h2>
+
+<ul>
+<li>Sufficient criteria for integrability:
+<ul>
+<li><span class="mathjax-exps">$f$</span> continuous, montone, bounded, finitely many discontinuities, or</li>
+<li>Uniformly continuous, or</li>
+<li>Finitely many discontinuities</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f$</span> integrable <span class="mathjax-exps">$\iff$</span> bounded and continuous a.e.
+<ul>
+<li>Prime example of a non-integrable function: <span class="mathjax-exps">$f = \indicator[\QQ]$</span></li>
+</ul>
+</li>
+<li>FTC for the Riemann Integral.
+<ul>
+<li>
+<p>If <span class="mathjax-exps">$F$</span> is a differentiable function on the interval <span class="mathjax-exps">$[a,b]$</span>, and <span class="mathjax-exps">$F&apos;$</span> is bounded and continuous a.e., then <span class="mathjax-exps">$F&#x2032; \in L_R([a, b])$</span> and </p><div class="mathjax-exps">$$\forall x\in [a,b]: \int_a^x F&apos;(t)~dt=F(x)&#x2212;F(a)$$</div><p></p>
+</li>
+<li>
+<p>Suppose <span class="mathjax-exps">$f$</span> bounded and continuous a.e. on <span class="mathjax-exps">$[a,b]$</span>, and define <span class="mathjax-exps">$F(x) \definedas \int_a^x f(t)~dt$</span>. Then <span class="mathjax-exps">$F$</span> is absolutely continuous on <span class="mathjax-exps">$[a,b]$</span>, and for <span class="mathjax-exps">$p \in [a,b]$</span>,<br>
+</p><div class="mathjax-exps">$$f \in C^0(p) \implies F \text{ differentiable at } p,~ F&apos;(p) = f(p), \text{ and } F&apos; \stackrel{\tiny\mbox{a.e}}{=} f.$$</div><p></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="list-of-free-conclusions">List of Free Conclusions:</h2>
+
+<ul>
+<li>
+<p><span class="mathjax-exps">$f$</span> integrable on <span class="mathjax-exps">$U$</span>:</p>
+<ul>
+<li><span class="mathjax-exps">$f$</span> is bounded</li>
+<li><span class="mathjax-exps">$f$</span> is continuous a.e. (finitely many discontinuities)</li>
+<li><span class="mathjax-exps">$F$</span> is continuous</li>
+<li><span class="mathjax-exps">$F$</span> is differentiable</li>
+</ul>
+</li>
+<li>
+<p><span class="mathjax-exps">$f$</span> continuous on <span class="mathjax-exps">$U$</span>:</p>
+<ul>
+<li><span class="mathjax-exps">$f$</span> is integrable on compact subsets of <span class="mathjax-exps">$U$</span></li>
+<li><span class="mathjax-exps">$F$</span> exists</li>
+</ul>
+</li>
+<li>
+<p><span class="mathjax-exps">$f$</span> differentiable at a point <span class="mathjax-exps">$p$</span>:</p>
+<ul>
+<li><span class="mathjax-exps">$f$</span> is continuous</li>
+</ul>
+</li>
+<li>
+<p><span class="mathjax-exps">$f$</span> is differentiable in <span class="mathjax-exps">$U$</span></p>
+<ul>
+<li><span class="mathjax-exps">$f$</span> is continuous a.e.</li>
+</ul>
+</li>
+<li>
+<p>Defining the Riemann integral: #todo</p>
+</li>
+</ul>
+<h2 class="mume-header" id="pointwise-convergence">Pointwise convergence</h2>
+
+<p></p><div class="mathjax-exps">$$f_n \to f = \lim_{n\to\infty} f_n$$</div><br>
+Summary:<br>
+<div class="mathjax-exps">$$\lim_{f_n \to f} \lim_{x_i \to x} f_n(x_i) \neq \lim_{x_i \to x} \lim_{f_n \to f} f_n(x_i)$$</div><p></p>
+<p></p><div class="mathjax-exps">$$\lim_{f_n \to f} \int_I f_n \neq \int_I \lim_{f_n \to f} f_n$$</div><p></p>
+<ul>
+<li>Pointwise convergence is strictly weaker than uniform convergence.
+<ul>
+<li>Example of a function that converges pointwise but not uniformly: <span class="mathjax-exps">$f_n(x) = x^n$</span> on <span class="mathjax-exps">$[0, 1]$</span></li>
+<li>Proof: towards a contradiction let <span class="mathjax-exps">$\varepsilon = \frac{1}{2}$</span>. Then let <span class="mathjax-exps">$n = N(\frac{1}{2})$</span> and <span class="mathjax-exps">$x = \left(\frac{3}{4}\right)^\frac{1}{n}$</span>: then <span class="mathjax-exps">$f(x) = 0$</span> but <span class="mathjax-exps">$\abs{f_n(x) - f(x)} = x^n = \frac{3}{4} &gt; \frac{1}{2}$</span>. <span class="mathjax-exps">$\qed$</span></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f_n$</span> continuous <span class="mathjax-exps">$\not\implies f$</span> is continuous
+<ul>
+<li>i.e. &#x201C;the pointwise limit of continuous functions is not necessarily continuous&#x201D;</li>
+<li>Take <div class="mathjax-exps">$$f_n(x) = x^n,\quad f_n(x) \to \indicator[x = 1]$$</div></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f_n$</span> differentiable <span class="mathjax-exps">$\not\implies f&apos;_n$</span> converges
+<ul>
+<li>Take <div class="mathjax-exps">$$f_n(x) = \frac{1}{n}\sin(n^2 x) \to 0,\quad f&apos;_n = n\cos(n^2 x) ~\text{does not converge}$$</div></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$f_n$</span> integrable <span class="mathjax-exps">$\not\implies \lim_{f_n \to f} \int_I f_n \neq \int_I \lim_{f_n \to f} f_n$</span>
+<ul>
+<li>May fail to converge to same value, take <div class="mathjax-exps">$$f_n(x) = \frac{2n^2x}{(1+n^2x^2)^2} \to 0, \quad \int_0^1 f_n = 1 - \frac{1}{n^2 + 1} \to 1$$</div></li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="uniform-convergence">Uniform Convergence</h2>
+
+<p></p><div class="mathjax-exps">$$f_n \rightrightarrows f= \lim_{n\to\infty} f_n \text{ and } \sum_{n=1}^\infty f_n \rightrightarrows S$$</div><p></p>
+<p>Summary:<br>
+</p><div class="mathjax-exps">$$\lim_{x_i \to x} \lim_{f_n \to f} f_n(x_i) = \lim_{f_n \to f} \lim_{x_i \to x} f_n(x_i) = \lim_{f_n \to f} f_n(\lim_{x_i \to x} x_i)$$</div><p></p>
+<p></p><div class="mathjax-exps">$$\lim_{f_n \to f} \int_I f_n = \int_I \lim_{f_n \to f} f_n$$</div><p></p>
+<p></p><div class="mathjax-exps">$$\sum_{n=1}^\infty \int_I f_n = \int_I \sum_{n=1}^\infty f_n$$</div><p></p>
+<p>&quot;The uniform limit of a(n) <span class="mathjax-exps">$x$</span> function is <span class="mathjax-exps">$x$</span>&quot;, for <span class="mathjax-exps">$x \in$</span> {continuous, bounded}</p>
+<ul>
+<li>
+<p>Equivalent to convergence in the uniform metric on the metric space of bounded functions on <span class="mathjax-exps">$X$</span>: </p><div class="mathjax-exps">$$f_n \rightrightarrows f \iff \sup_{x\in X} \abs{f_n(x) - f(x)} \to 0$$</div><p></p>
+<ul>
+<li><span class="mathjax-exps">$(B(X,Y), \norm{}_\infty)$</span> is a metric space and <span class="mathjax-exps">$f_n \rightrightarrows f \iff \norm{f_n - f}_\infty \to 0$</span><br>
+(where <span class="mathjax-exps">$B(X,Y)$</span> are bounded functions from <span class="mathjax-exps">$X$</span> to <span class="mathjax-exps">$Y$</span> and <span class="mathjax-exps">$\norm{f}_\infty = \sup_{x\in I}\theset{f(x)}$</span></li>
+</ul>
+</li>
+<li>
+<p><span class="mathjax-exps">$f_n \rightrightarrows f \implies f_n \to f$</span> pointwise</p>
+</li>
+<li>
+<p><span class="mathjax-exps">$f_n$</span> continuous <span class="mathjax-exps">$\implies f$</span> continuous</p>
+<ul>
+<li>i.e. &#x201C;the uniform limit of continuous functions is continuous&#x201D;</li>
+</ul>
+</li>
+<li>
+<p><span class="mathjax-exps">$f_n \in C^1$</span>, <span class="mathjax-exps">$\exists x_0: f_n(x_0) \to f(x_0)$</span>, and <span class="mathjax-exps">$f&apos;_n \rightrightarrows g$</span> <span class="mathjax-exps">$\implies f$</span> differentiable and <span class="mathjax-exps">$f&apos; = g~$</span> (i.e. <span class="mathjax-exps">$f&apos;_n \to f&apos;$</span>)</p>
+<ul>
+<li>Necessity of <span class="mathjax-exps">$C^1$</span> &#x2013; look at failures of <span class="mathjax-exps">$f&apos;_n$</span> to be continuous:
+<ul>
+<li>Take <span class="mathjax-exps">$f_n(x) = \sqrt{\frac{1}{n^2} + x^2} \rightrightarrows |x|$</span>, not differentiable</li>
+<li>Take <span class="mathjax-exps">$f_n(x) = n^{-\frac{1}{2}}\sin(nx) \rightrightarrows 0$</span> but <span class="mathjax-exps">$f&apos;_n \not\to f&apos; = 0$</span> and <span class="mathjax-exps">$f&apos; \neq g$</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span class="mathjax-exps">$f_n$</span> integrable <span class="mathjax-exps">$\implies f$</span> integrable and <span class="mathjax-exps">$\int f_n \to \int f$</span></p>
+</li>
+<li>
+<p><span class="mathjax-exps">$f_n$</span> bounded <span class="mathjax-exps">$\implies f$</span> bounded</p>
+</li>
+<li>
+<p><span class="mathjax-exps">$f_n \rightrightarrows f_n \not\implies f&apos;_n$</span> converges</p>
+<ul>
+<li>Says nothing about it general</li>
+</ul>
+</li>
+<li>
+<p><span class="mathjax-exps">$f_n&apos; \rightrightarrows f&apos; \not\implies f_n \rightrightarrows f$</span></p>
+<ul>
+<li>Unless <span class="mathjax-exps">$f$</span> converges at one or more points.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="sequences-and-metric-spaces">Sequences and Metric Spaces</h2>
+
+<ul>
+<li>Big Theorems:
+<ul>
+<li><strong>Bolzano-Weierstrass</strong>: every bounded sequence has a convergent subsequence.</li>
+<li><strong>Heine-Borel</strong>: in <span class="mathjax-exps">$\RR^n, X$</span> is compact <span class="mathjax-exps">$\iff X$</span> is closed and bounded.
+<ul>
+<li>Necessity of <span class="mathjax-exps">$\RR^n$</span>: <span class="mathjax-exps">$X = (\ZZ, d(x,y) = 1)$</span> is closed, complete, bounded, but not compact since <span class="mathjax-exps">$\theset{1,2,\cdots}$</span> has no convergent subsequence</li>
+<li>Converse holds iff bounded is replaced with totally bounded</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$X$</span> compact <span class="mathjax-exps">$\iff X$</span> sequentially compact</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$\theset{x_i} \to p \implies$</span> every subsequence also converges to <span class="mathjax-exps">$p$</span>.</li>
+<li><span class="mathjax-exps">$\theset{x_i} \to p \implies \theset{x_i}$</span> is Cauchy
+<ul>
+<li>Converse holds in complete metric spaces. Example of a Cauchy sequence that doesn&#x2019;t converge: <span class="mathjax-exps">$x_i = \pi$</span> truncated to <span class="mathjax-exps">$i$</span> decimal places in <span class="mathjax-exps">$\QQ \subset \RR$</span>.</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$X$</span> complete and <span class="mathjax-exps">$X \subset Y \implies X$</span> closed in <span class="mathjax-exps">$Y$</span>
+<ul>
+<li>Necessity of completeness: <span class="mathjax-exps">$\QQ\subset \QQ$</span> is closed but <span class="mathjax-exps">$\QQ\subset\RR$</span> is not.</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$X$</span> compact <span class="mathjax-exps">$\implies X$</span> complete and bounded.
+<ul>
+<li>Holds for any metric space, converse generally does not</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$X$</span> compact and <span class="mathjax-exps">$Y \subset X \implies Y$</span> compact <span class="mathjax-exps">$\iff$</span> <span class="mathjax-exps">$Y$</span> closed.</li>
+</ul>
+<h2 class="mume-header" id="series">Series</h2>
+
+<ul>
+<li>Define <span class="mathjax-exps">$s_n(x) = \sum_{k=1}^n f_k(x)$</span> and <span class="mathjax-exps">$S(x) = \lim_{n\to\infty} s_n(x)$</span>, which can converge pointwise or uniformly.</li>
+</ul>
+<h2 class="mume-header" id="convergence">Convergence:</h2>
+
+<p>Notation: <span class="mathjax-exps">$\theset{a_n}_{n\in\NN}$</span> is a &quot;sequence&quot;, <span class="mathjax-exps">$\sum_{i\in\NN} a_i$</span> is a &quot;sum&quot;, and <span class="mathjax-exps">$\sum_{k\in\NN} f_k$</span> is a &quot;series&quot;.</p>
+<p>Radius of convergence: </p><div class="mathjax-exps">$$L = \lim_{n\to\infty}\abs{\frac{a_{n+1}}{a_n}} \implies R = \frac{1}{L}$$</div><p></p>
+<h3 class="mume-header" id="tools-for-showing-convergence">Tools for Showing Convergence</h3>
+
+<h4 class="mume-header" id="sequences">Sequences</h4>
+
+<ul>
+<li>Known sequences: let <span class="mathjax-exps">$c$</span> be a constant.<br>
+<div class="mathjax-exps">$$c, c^2, c^3, \ldots = \theset{c^n}_{n=1}^\infty \to 0 \quad\forall \abs{c} &lt; 1 \\   \frac{1}{c},\frac{1}{c^2},\frac{1}{c^3},\ldots= \theset{\frac{1}{c^n}}_{n=1}^\infty \to 0 \quad\forall  \abs{c} &gt; 1 \\   1,\frac{1}{2^c},\frac{1}{3^c},\ldots = \theset{\frac{1}{n^c}}_{n=1}^\infty \to 0 \quad\forall c &gt; 0 \\$$</div></li>
+<li>Use algebraic properties of limits</li>
+<li>Epsilon-delta definition</li>
+<li>Algebraic properties and manipulation: limits commute with <span class="mathjax-exps">$\pm, \times, \div$</span> and <span class="mathjax-exps">$\lim C = C$</span> for constants.
+<ul>
+<li>E.g. Divide all terms by <span class="mathjax-exps">$n$</span> before taking limit</li>
+<li>Clear denominators</li>
+</ul>
+</li>
+<li><strong>Squeeze Theorem</strong>:<br>
+<div class="mathjax-exps">$$b_n \leq a_n \leq c_n \text{ and } b_n,c_n \to L \implies a_n \to L$$</div></li>
+<li><strong>Monotone Convergence Theorem</strong>: <span class="mathjax-exps">$\theset{a_i}$</span> monotone and bounded <span class="mathjax-exps">$\implies$</span> convergent.
+<ul>
+<li>And converges to <span class="mathjax-exps">$L = \lim\sup a_i$</span></li>
+</ul>
+</li>
+<li><strong>Cauchy Criteria</strong>: <span class="mathjax-exps">$\abs{a_m - a_n} \to 0 \in \RR \implies \theset{a_i}$</span> converges.
+<ul>
+<li>i.e. show <span class="mathjax-exps">$\theset{a_i}$</span> is a Cauchy sequence.</li>
+</ul>
+</li>
+</ul>
+<h4 class="mume-header" id="sums">Sums</h4>
+
+<p></p><div class="mathjax-exps">$$\sum_{k=1}^\infty a_k x^k$$</div><p></p>
+<ul>
+<li>Known sums:<br>
+<div class="mathjax-exps">$$\sum_{k=1}^\infty k^p &lt; \infty \iff p \leq 1 \\   \sum_{k=1}^\infty \frac{1}{k^p} &lt; \infty \iff p &gt; 1 \\   \sum_{k=1}^\infty \frac{1}{k} = \infty$$</div><br>
+(See appendix for more.)</li>
+<li>Concrete examples of convergent series:<br>
+<div class="mathjax-exps">$$\sum_{n=1}^\infty \frac{1}{n^2} &lt; \infty \\   	\sum_{n=1}^\infty \frac{1}{n^3} &lt; \infty \\   	\sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} &lt; \infty \\   	\sum_{n=1}^\infty \frac{1}{n!}  = e \\   	\sum_{n=1}^\infty \frac{1}{c^n} = \frac{c}{c-1} \\   	\sum_{n=1}^\infty (-1)^n \frac{1}{c^n} = \frac{c}{c+1} \\   	\sum_{n=1}^\infty (-1)^n \frac{1}{n} = \ln 2 \\$$</div></li>
+<li>Concrete examples of divergent series:<br>
+<div class="mathjax-exps">$$\sum_{n=1}^\infty \frac{1}{n} = \infty \\   	\sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty \\$$</div></li>
+<li>NOTE: <span class="mathjax-exps">$a_n\to 0$</span> does not imply <span class="mathjax-exps">$\sum a_n &lt; \infty$</span>. Counterexample: harmonic series.</li>
+<li>Absolute convergence <span class="mathjax-exps">$\implies$</span> convergence</li>
+<li><strong>Cauchy Criteria</strong>:<br>
+<div class="mathjax-exps">$$\limsup a_i \to 0 \implies \sum a_i \text{ converges }$$</div></li>
+<li>Radius of convergence: use the <span class="mathjax-exps">$\lim \abs{\frac{a_{k+1}x^{k+1}}{a_kx^k}} = \abs{x}\lim \abs{\frac{a_{k+1}}{a_k}} &lt; 1$</span> will imply convergence, so take <span class="mathjax-exps">$L = \frac{a_{k+1}}{a_k}$</span> and then <span class="mathjax-exps">$R = \frac{1}{L}$</span>.
+<ul>
+<li>Note <span class="mathjax-exps">$L=0 \implies$</span> absolutely convergent everywhere</li>
+<li><span class="mathjax-exps">$L = \infty \implies$</span> convergent only at <span class="mathjax-exps">$x=0$</span>.</li>
+<li>Also need to check endpoints <span class="mathjax-exps">$R, -R$</span> manually.</li>
+</ul>
+</li>
+<li><strong>The Big Tests</strong>
+<ul>
+<li><strong>Comparison Test</strong>
+<ul>
+<li><span class="mathjax-exps">$a_n &lt; b_n \and \sum b_n &lt; \infty \implies \sum a_n &lt; \infty$</span></li>
+<li><span class="mathjax-exps">$b_n &lt; a_n \and \sum b_n = \infty \implies \sum a_n = \infty$</span></li>
+</ul>
+</li>
+<li><strong>Ratio Test</strong><br>
+<div class="mathjax-exps">$$R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}$$</div>
+<ul>
+<li><span class="mathjax-exps">$R &lt; 1$</span>: absolutely convergent</li>
+<li><span class="mathjax-exps">$R &gt; 1$</span>: divergent</li>
+<li><span class="mathjax-exps">$R = 1$</span>: inconclusive</li>
+</ul>
+</li>
+<li><strong>Root Test</strong><br>
+<div class="mathjax-exps">$$R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}$$</div>
+<ul>
+<li><span class="mathjax-exps">$R &lt; 1$</span>: convergent</li>
+<li><span class="mathjax-exps">$R &gt; 1$</span>: divergent</li>
+<li><span class="mathjax-exps">$R = 1$</span>: inconclusive</li>
+</ul>
+</li>
+<li><strong>Integral Test</strong><br>
+<div class="mathjax-exps">$$f(n) = a_n \implies \sum a_n &lt; \infty \iff \int_1^\infty f(x) dx &lt; \infty$$</div></li>
+<li><strong>Limit Test</strong><br>
+<div class="mathjax-exps">$$\lim_{n\to\infty}\frac{a_n}{b_n} = L &lt; \infty \implies \sum a_n &lt; \infty \iff \sum b_n &lt; \infty$$</div></li>
+<li><strong>Alternating Series Test</strong><br>
+<div class="mathjax-exps">$$a_n \downarrow 0 \implies \sum (-1)^n a_n &lt; \infty$$</div></li>
+</ul>
+</li>
+</ul>
+<h4 class="mume-header" id="series-1">Series</h4>
+
+<ul>
+<li><strong>Weierstrass <span class="mathjax-exps">$M$</span> Test</strong>:<br>
+<div class="mathjax-exps">$$\sum_{n=1}^\infty \abs{\norm{f_n}_\infty} &lt; \infty \implies \exists f\in C^0 : \sum_{n=1}^\infty f_n \rightrightarrows f$$</div>
+<ul>
+<li><span class="mathjax-exps">$M$</span> comes from defining <span class="mathjax-exps">$M_k = \sup\theset{f_k(x)}$</span> and requiring <span class="mathjax-exps">$\sum \abs{M_k} &lt; \infty$</span></li>
+<li>&#x201C;Absolute convergence of sup norms implies uniform convergence&#x201D;</li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="showing-divergence">Showing Divergence</h3>
+
+<h4 class="mume-header" id="sequences-1">Sequences</h4>
+
+<ul>
+<li><span class="mathjax-exps">$a_i \not\to 0 \implies$</span> not convergent.
+<ul>
+<li>Can check with L&#x2019;Hopital&#x2019;s rule</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$\theset{a_i}$</span> not bounded <span class="mathjax-exps">$\implies$</span> not convergent</li>
+<li><span class="mathjax-exps">$\theset{a_i}$</span> not monotone <span class="mathjax-exps">$\implies$</span> not convergent</li>
+</ul>
+<h4 class="mume-header" id="sums-1">Sums</h4>
+
+<p>?</p>
+<h4 class="mume-header" id="series-2">Series</h4>
+
+<ul>
+<li><span class="mathjax-exps">$\limsup \abs{f_k(x)} \neq 0 \implies$</span> not convergent</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="topology">Topology</h2>
+
+<h2 class="mume-header" id="number-theory">Number Theory</h2>
+
+<h2 class="mume-header" id="abstract-algebra">Abstract Algebra</h2>
+
+<ul>
+<li>Determining is a set is a subgroup:
+<ul>
+<li>Two step subgroup test: #todo</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="symmetric-group">Symmetric Group</h2>
+
+<ul>
+<li>Generated by:
+<ul>
+<li>Transpositions</li>
+<li>#todo</li>
+</ul>
+</li>
+<li>Inversions: given <span class="mathjax-exps">$\tau = (p_1 \cdots p_n)$</span>, a pair <span class="mathjax-exps">$p_i, p_j$</span> is <em>inverted</em> iff <span class="mathjax-exps">$i &lt; j$</span> but <span class="mathjax-exps">$p_j &lt; p_i$</span></li>
+<li>Can count inversions $N(\tau)
+<ul>
+<li>Equal to minimum number of transpositions to obtain non-decreasing permutation</li>
+</ul>
+</li>
+<li>Sign of a permutation: <span class="mathjax-exps">$\sigma(\tau) = (-1)^{N(\tau)}$</span></li>
+<li>Parity of permutations <span class="mathjax-exps">$\cong (\ZZ, +)$</span>
+<ul>
+<li>even <span class="mathjax-exps">$\circ$</span> even = even</li>
+<li>odd <span class="mathjax-exps">$\circ$</span> odd = even</li>
+<li>even <span class="mathjax-exps">$\circ$</span> odd = odd</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="to-sort">To Sort</h2>
+
+<ul>
+<li>Eisenstein&#x2019;s Criteriion</li>
+<li>Gauss&#x2019; Lemma</li>
+<li>Integral Domains</li>
+<li>Unique Factorization Domains</li>
+<li>Prime Elements</li>
+<li>Prime Ideals</li>
+<li>Field Extensions</li>
+<li>The Chinese Remainder Theorem for Rings</li>
+<li>Irreducible Polynomials
+<ul>
+<li>Over <span class="mathjax-exps">$\ZZ_2: x, x+1, x^2+x+1, x^3+x+1,x^3+x^2+1$</span></li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="combinatorics">Combinatorics</h2>
+
+<ul>
+<li>Common series: see appendix</li>
+<li>Other useful series and facts</li>
+</ul>
+<h2 class="mume-header" id="probability">Probability</h2>
+
+<ul>
+<li>Mean / Expected Value: <div class="mathjax-exps">$$E[X] = \int x P(X = x) = \int x f_X(x)$$</div>
+<ul>
+<li>Linearity of expectation:<br>
+<div class="mathjax-exps">$$E[\sum a_i X_i] = \sum a_i E[X_i]$$</div><br>
+Does not matter whether or not the <span class="mathjax-exps">$X_i$</span> are independent.</li>
+</ul>
+</li>
+<li>Variance: <div class="mathjax-exps">$$\mathrm{Var}(X) = \int (x - E[X])^2$$</div></li>
+<li>Standard deviation: <div class="mathjax-exps">$$\sigma(X) = \mathrm{Var}(X)^{1/2}$$</div></li>
+</ul>
+<h2 class="mume-header" id="numerical-analysis">Numerical Analysis</h2>
+
+<ul>
+<li>Euler&#x2019;s Method:
+<ul>
+<li>To solve <span class="mathjax-exps">$\frac{dy}{dx} = f(x,y), y(x_0) = y_0$</span>, choose a step size <span class="mathjax-exps">$\varepsilon$</span>, and let <span class="mathjax-exps">$x_{n+1} = x_0 + n\varepsilon$</span>. Then <div class="mathjax-exps">$$y_{n+1} = y_n + \varepsilon f(x_n, y_n)$$</div></li>
+</ul>
+</li>
+<li>Decompositions of Matrices:
+<ul>
+<li><span class="mathjax-exps">$LU$</span></li>
+<li>Cholesky</li>
+<li>Singular Value</li>
+</ul>
+</li>
+</ul>
+<h1 class="mume-header" id="appendix">Appendix</h1>
+
+<h2 class="mume-header" id="neat-tricks">Neat Tricks</h2>
+
+<ul>
+<li>Commuting differentials and integrals:<br>
+<div class="mathjax-exps">$$\frac{d}{dx} \int_{a(x)}^{b(x)} f(x,t) dt = f(x, b(x))\frac{d}{dx}b(x) - f(x, a(x))\frac{d}{dx}a(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt$$</div>
+<ul>
+<li>Need <span class="mathjax-exps">$f, \frac{df}{dx}$</span> to be continuous in both variables. Also need <span class="mathjax-exps">$a(x),b(x) \in C_1$</span>.</li>
+<li>If <span class="mathjax-exps">$a,b$</span> are constant, boundary terms vanish.</li>
+<li>Recover the fundamental theorem with <span class="mathjax-exps">$a(x) = a, b(x) = b, f(x,t) = f(t)$</span>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="useful-series-and-sequences">Useful Series and Sequences</h2>
+
+<p>Notation: <span class="mathjax-exps">$\uparrow, \downarrow$</span>: monotonically converges from below/above.</p>
+<ul>
+<li>Taylor Series: <div class="mathjax-exps">$$f ( x ) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } \left( x _ { 0 } \right) } { n ! } \left( x - x _ { 0 } \right) ^ { n }$$</div></li>
+<li>Cauchy Product:<br>
+<div class="mathjax-exps">$$\left( \sum_{k=0}^\infty a_k x^k \right)\left( \sum_{k=0}^\infty b_i x^n \right) = \sum_{k=0}^\infty \left( \sum_{i=0}^k a_{n} b_{n} \right)x^k$$</div></li>
+<li>Differentiation: <div class="mathjax-exps">$$\frac{\partial}{\partial x} \sum_{k=i}^\infty a_kx^k = \sum_{k=i+1}^\infty k\,a_k x^{k-1}$$</div></li>
+<li>Common Series<br>
+<div class="mathjax-exps">$$\begin{align}   	&amp;\sum_{k=0}^{N} x^k &amp;= \frac{1-x^{N+1}}{1-x} &amp;\\   	&amp;\sum_{k=1}^\infty x^k &amp;= \frac{1}{1-x}&amp; \quad\text{ for } \abs{x} &lt; 1 \\   	&amp;\sum _ { k = 1 } ^ { \infty } k x ^ { k - 1 } &amp;= \frac { 1 } { ( 1 - x ) ^ { 2 } }&amp; \quad \text { for } | x | &lt; 1 \\   	&amp;\sum _ { k = 2 } ^ { \infty } k ( k - 1 ) x ^ { k - 2 } &amp;= \frac { 2 } { ( 1 - x ) ^ { 3 } } &amp; \quad \text { for } | x | &lt; 1  \\       &amp;\sum _ { k = 3 } ^ { \infty } k ( k - 1 ) ( k - 2 ) x ^ { k - 3 } &amp;= \frac { 6 } { ( 1 - x ) ^ { 4 } } &amp; \quad \text { for } | x | &lt; 1   \\   	&amp;\sum_{k=1}^\infty {n\choose k} x^k y^{n-k} &amp;= (x+y)^n&amp; \\      	&amp;\sum _ { k = 1 } ^ { \infty } \frac { x ^ { k } } { k } &amp;= -\log ( 1 - x )&amp; \\     &amp;\sum _ { k = 0 } ^ { \infty } \frac { x ^ { k } } { k ! } &amp;= e^x &amp; \\   	&amp;\sum _ { n = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { ( 2 n + 1 ) ! } x ^ { 2 k + 1 } \quad = x - \frac { x ^ { 3 } } { 3 ! } + \frac { x ^ { 5 } } { 5 ! } &amp;= \sin(x) &amp; \\   	&amp;\sum _ { k = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { ( 2 n ) ! } x ^ { 2 k } \quad = 1 - \frac { x ^ { 2 } } { 2 ! } + \frac { x ^ { 4 } } { 4 ! } &amp;= \cos(x)&amp; \\   	&amp;\sum _ { k = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { 2 n + 1 } x ^ { 2 k + 1 } \quad = x - \frac { x ^ { 3 } } { 3 } + \frac { x ^ { 5 } } { 5 } &amp;= \arctan(x) &amp; \\   	&amp;\sum _ { k = 0 } ^ { \infty } \frac { 1 } { ( 2 k + 1 ) ! }x ^ { 2 n + 1 } \quad = x + \frac { x ^ { 3 } } { 3 ! } + \frac { x ^ { 5 } } { 5 ! } + \cdots &amp;= \sinh(x) &amp; \\   	&amp;\sum _ { k = 0 } ^ { \infty } \frac { 1 } { ( 2 k ) ! }x ^ { 2 k } \quad = 1 + \frac { x ^ { 2 } } { 2 ! } + \frac { x ^ { 4 } } { 4 ! } + \cdots &amp; = \cosh(x) &amp; \\   	&amp;\sum _ { k = 0 } ^ { \infty } \frac { x ^ { 2 k + 1 } } { 2 k + 1 } &amp;= \operatorname { arctanh } x  &amp; \\   	&amp;\sum_{k=1}^\infty \frac{1}{k} &amp;= \infty &amp;\\   	&amp;\sum_{k=1}^\infty (-1)^k \frac{1}{k} &amp;= \ln (2) &amp; \\   	&amp;\sum_{k=1}^N \frac{1}{k} &amp;\approx \ln(N) + \gamma + \frac{1}{2N} &amp; \\   	&amp;\sum _ { k = 1 } ^ { \infty } \frac { 1 } { k ^ { 2 } } &amp;= \frac { \pi ^ { 2 } } { 6 }&amp; \\   	\end{align}$$</div></li>
+</ul>
+<h2 class="mume-header" id="rational-roots-theorem">Rational Roots Theorem</h2>
+
+<h2 class="mume-header" id="partial-fraction-decomposition">Partial Fraction Decomposition</h2>
+
+<p>Given <span class="mathjax-exps">$R(x) = \frac{p(x)}{q(x)}$</span>, factor <span class="mathjax-exps">$q(x)$</span> into <span class="mathjax-exps">$\prod q_i(x)$</span>.</p>
+<ul>
+<li>Linear factors of the form <span class="mathjax-exps">$q_i(x) = (ax+b)^n$</span> contribute <div class="mathjax-exps">$$r_i(x) = \sum_{k=1}^n \frac{A_k}{(ax+b)^k} = \frac{A_1}{ax+b} + \frac{A_2}{(ax+b)^2} + \cdots$$</div></li>
+<li>Irreducible quadratics of the form <span class="mathjax-exps">$q_i(x) = (ax^2+bx+c)^n$</span> contribute <div class="mathjax-exps">$$r_i(x) = \sum_{k=1}^n \frac{A_k x + B_k}{(ax^2+bx+c)^k} = \frac{A_1x+B_1}{ax^2+bx+c} + \frac{A_2x+B_2}{(ax^2+bx+c)^2} + \cdots$$</div>
+<ul>
+<li>Note: <span class="mathjax-exps">$ax^2+bx+c$</span> is irreducible <span class="mathjax-exps">$\iff b^2 &lt; 4ac$</span></li>
+</ul>
+</li>
+<li>Write <span class="mathjax-exps">$R(x) = \frac{p(x)}{\prod q_i(x)} = \sum r_i(x)$</span>, then solve for the unknown coefficients <span class="mathjax-exps">$A_k, B_k$</span>.
+<ul>
+<li>IMPORTANT SHORTCUT: don&#x2019;t try to solve the resulting linear system: for each <span class="mathjax-exps">$q_i(x)$</span>, multiply through by that factor and evaluate at its root to zero out many terms!</li>
+<li>For linear terms <span class="mathjax-exps">$q_i(x) = (ax+b)^n$</span>, define <span class="mathjax-exps">$P(x) = (ax+b)^nR(x)$</span>; then<br>
+<div class="mathjax-exps">$$A_{k} =  \frac{1}{(n-k)!}P^{(n-k)}(a), \quad k = 1,2,\cdots n \\ \implies A_n= P(a),~ A_{n-1} = P&apos;(a),~ \cdots,~ A_1 = \frac{1}{(n-1)!}P^{(n-1)}(A)$$</div></li>
+<li>Note: #todo check, might need to evaluate at <span class="mathjax-exps">$-b/a$</span> instead, extend to quadratics.</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#fundamentals">Fundamentals</a>
+<ul>
+<li><a href="#pre-calculus-or-proof-fundamentals">Pre-Calculus or Proof Fundamentals</a></li>
+<li><a href="#general-techniques">General Techniques:</a></li>
+</ul>
+</li>
+<li><a href="#single-variable-calculus">Single Variable Calculus</a>
+<ul>
+<li><a href="#big-theorems-tools">Big Theorems / Tools:</a></li>
+<li><a href="#differential">Differential</a>
+<ul>
+<li><a href="#limits">Limits</a></li>
+<li><a href="#derivatives">Derivatives</a></li>
+<li><a href="#related-rates">Related Rates</a></li>
+</ul>
+</li>
+<li><a href="#integral">Integral</a>
+<ul>
+<li><a href="#big-list-of-integration-techniques">Big List of Integration Techniques</a></li>
+<li><a href="#big-derivative-integral-table">Big Derivative / Integral Table</a></li>
+<li><a href="#optimization">Optimization</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#multivariable-calculus">Multivariable Calculus</a>
+<ul>
+<li><a href="#big-theorems">Big Theorems:</a></li>
+<li><a href="#geometry">Geometry</a>
+<ul>
+<li><a href="#lines">Lines</a></li>
+<li><a href="#planes">Planes</a></li>
+<li><a href="#tangent-and-normal-spaces">Tangent and Normal Spaces</a></li>
+<li><a href="#surfaces">Surfaces</a>
+<ul>
+<li><a href="#curves">Curves</a></li>
+</ul>
+</li>
+<li><a href="#normal-spaces">Normal Spaces</a></li>
+<li><a href="#minimal-distances">Minimal Distances</a></li>
+</ul>
+</li>
+<li><a href="#partial-derivatives">Partial Derivatives</a></li>
+<li><a href="#vector-calculus">Vector Calculus</a></li>
+<li><a href="#approximation-and-optimization">Approximation and Optimization</a></li>
+</ul>
+</li>
+<li><a href="#ordinary-differential-equations">Ordinary Differential Equations</a>
+<ul>
+<li><a href="#ordinary-differential-equations-1">Ordinary Differential Equations</a></li>
+<li><a href="#linear-homogeneous">Linear Homogeneous</a></li>
+<li><a href="#linear-inhomogeneous">Linear Inhomogeneous</a>
+<ul>
+<li><a href="#undetermined-coefficients">Undetermined Coefficients</a></li>
+<li><a href="#variation-of-parameters">Variation of Parameters</a></li>
+<li><a href="#reduction-of-order">Reduction of Order</a></li>
+</ul>
+</li>
+<li><a href="#systems-of-differential-equations">Systems of Differential Equations</a></li>
+<li><a href="#laplace-transforms">Laplace Transforms</a></li>
+<li><a href="#techniques-review">Techniques Review</a></li>
+<li><a href="#linear-algebra">Linear Algebra</a></li>
+<li><a href="#general-notes">General Notes</a></li>
+<li><a href="#systems-of-linear-equations">Systems of Linear Equations</a></li>
+<li><a href="#the-determinant">The Determinant</a></li>
+<li><a href="#the-spaces-of-a-matrix-linear-map">The Spaces of a Matrix / Linear Map</a></li>
+<li><a href="#eigenvalues-and-eigenvectors">Eigenvalues and Eigenvectors</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#gram-schmidt-process">Gram-Schmidt Process</a></li>
+<li><a href="#inverting-a-matrix">Inverting a Matrix</a></li>
+<li><a href="#big-list-of-equivalent-properties">Big List of Equivalent Properties</a></li>
+<li><a href="#complex-analysis">Complex Analysis</a></li>
+<li><a href="#real-analysis">Real Analysis</a></li>
+<li><a href="#big-theorems-formulas">Big Theorems / Formulas</a></li>
+<li><a href="#big-examples">Big Examples</a></li>
+<li><a href="#motivation-commuting-limit-operations">Motivation: Commuting Limit Operations</a></li>
+<li><a href="#continuity">Continuity</a></li>
+<li><a href="#differentiability">Differentiability</a></li>
+<li><a href="#properties-strongest-to-weakest">Properties, strongest to weakest</a></li>
+<li><a href="#giant-table-of-relations">Giant Table of Relations</a></li>
+<li><a href="#integrability">Integrability</a></li>
+<li><a href="#list-of-free-conclusions">List of Free Conclusions:</a></li>
+<li><a href="#pointwise-convergence">Pointwise convergence</a></li>
+<li><a href="#uniform-convergence">Uniform Convergence</a></li>
+<li><a href="#sequences-and-metric-spaces">Sequences and Metric Spaces</a></li>
+<li><a href="#series">Series</a></li>
+<li><a href="#convergence">Convergence:</a>
+<ul>
+<li><a href="#tools-for-showing-convergence">Tools for Showing Convergence</a>
+<ul>
+<li><a href="#sequences">Sequences</a></li>
+<li><a href="#sums">Sums</a></li>
+<li><a href="#series-1">Series</a></li>
+</ul>
+</li>
+<li><a href="#showing-divergence">Showing Divergence</a>
+<ul>
+<li><a href="#sequences-1">Sequences</a></li>
+<li><a href="#sums-1">Sums</a></li>
+<li><a href="#series-2">Series</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#topology">Topology</a></li>
+<li><a href="#number-theory">Number Theory</a></li>
+<li><a href="#abstract-algebra">Abstract Algebra</a></li>
+<li><a href="#symmetric-group">Symmetric Group</a></li>
+<li><a href="#to-sort">To Sort</a></li>
+<li><a href="#combinatorics">Combinatorics</a></li>
+<li><a href="#probability">Probability</a></li>
+<li><a href="#numerical-analysis">Numerical Analysis</a></li>
+</ul>
+</li>
+<li><a href="#appendix">Appendix</a>
+<ul>
+<li><a href="#neat-tricks">Neat Tricks</a></li>
+<li><a href="#useful-series-and-sequences">Useful Series and Sequences</a></li>
+<li><a href="#rational-roots-theorem">Rational Roots Theorem</a></li>
+<li><a href="#partial-fraction-decomposition">Partial Fraction Decomposition</a></li>
+</ul>
+</li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
