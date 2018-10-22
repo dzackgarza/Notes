@@ -57,7 +57,9 @@
   - A normal vector to a surface is not always well-defined
   - Trig is just complex analysis
   - You can balance chemical equations using matrices
-  - 52! is huge - chances are very low that any two people (ever) have held the name shuffled deck
+  - Factorials are really, super large
+    - 52! is huge - chances are very low that any two people (ever) have held the name shuffled deck
+    - Compare to total time since big bang in seconds, estimated size of the observable universe, etc
   - Monty Hall problem
   - Random walks in 2D almost never return to the origin (happens in 1d)
   - Fixed point theorems (brouwer)
