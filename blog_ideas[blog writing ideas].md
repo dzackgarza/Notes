@@ -72,6 +72,7 @@
   - Having boy/girl then boy problem
   - i^i is real
 - Green's Theorem and Stoke's Theorem are the same thing
+- Deriving formulas using differentiation/integration of power series
 
 
 
