@@ -1,8 +1,9 @@
-
-
 ## To Sort
 - Fermat's Little Theorem
 - The Euclidean Algorithm
+- Burnside's Lemma
+- The Sylow Theorems
+- Galois Theory
 
 
 ## Group Theory
@@ -48,6 +49,10 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 	- $\ZZ_4, \ZZ_2^2$
 	- $Q = \langle a , b | a ^ { 4 } = 1 , a ^ { 2 } = b ^ { 2 } , a b = b a ^ { 3 } \rangle$ the quaternion group
 
+- Chinese Remainder Theorem: $$\ZZ_{pq} \cong \ZZ_p \oplus \ZZ_q \iff (p,q) = 1$$
+- Fundamental Theorem of Finitely Generated Abelian Groups:
+  - $G = \ZZ^n \oplus \bigoplus \ZZ_{q_i}$
+
 - Finding all of the unique groups of a given order: #todo
 
 ### The Symmetric Group
@@ -55,7 +60,7 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 	- Transpositions
 	- #todo
 - Inversions: given $\tau = (p_1 \cdots p_n)$, a pair $p_i, p_j$ is *inverted* iff $i < j$ but $p_j < p_i$
-- Can count inversions $N(\tau)
+- Can count inversions $N(\tau)$
 	- Equal to minimum number of transpositions to obtain non-decreasing permutation
 - Sign of a permutation: $\sigma(\tau) = (-1)^{N(\tau)}$
 - Parity of permutations $\cong (\ZZ, +)$
