@@ -12,7 +12,6 @@
 	$$
 	- Recover FTC by taking $a(x) = c, b(x) = x, f(x,t) = f(t)$.
 		- Note that if $f(x,t) = f(t)$ alone, then $\dd{x} f(t) = 0$ and the second integral vanishes
-	- #todo for constants, this should allow differentiating under the integral when $f, f_x$ are "jointly continuous"
 - Extreme Value Theorem
 - Involving the Derivative:
 	- Mean Value Theorem: $$f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f'(p)(b-a)$$
@@ -117,6 +116,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align}
 	$$
 	- Proof: let $F(x)$ be an antiderivative and compute $F'(x)$ using the chain rule.
+	- #todo for constants, this should allow differentiating under the integral when $f, f_x$ are "jointly continuous"
 
 Derivatives  | Integrals  |  Signs | Result
 ---|---|--|---|---
