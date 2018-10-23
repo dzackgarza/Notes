@@ -1,0 +1,2 @@
+- Open sets: closed under arbitrary unions, finite intersections
+- Closed sets: closed under finite unions, arbitrary intersections

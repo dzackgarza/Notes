@@ -1,0 +1,2 @@
+- Equations of conic sections
+- Plane geometry
