@@ -2,7 +2,7 @@
 - The Fundamental Theorem of Calculus:
 	$$
 	\frac{\partial}{\partial x} \int_a^x f(t) dt = f(x) \\ \\
-	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(t) dt = f(b(x))b'(x) - f(a(x))a'(x)
+	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} g(t) dt = g(b(x))b'(x) - g(a(x))a'(x)
 	$$
 - The generalized Fundamental Theorem of Calculus
 	$$\begin{align}
