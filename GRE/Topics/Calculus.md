@@ -167,6 +167,7 @@ $$
 \hline \\
 \frac{1}{2\sqrt{x}} && \sqrt{x} && \frac{2}{3}x^{\frac{3}{2}} \\
 nx^{n-1} && x^n, n \neq -1 && \frac{1}{n+1}x^{n+1} \\
+-nx^{-(n+1)} && \frac{1}{x^n}, n \neq 1 && -\frac{1}{n-1}x^{-(n-1)} \\
 \frac{1}{x} && \bbox[yellow]{\ln(x)} && x\ln(x) - x \\
 a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 \cos(x) && \sin(x)  && -\cos(x) \\
