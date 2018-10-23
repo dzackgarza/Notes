@@ -1,5 +1,17 @@
 ##  Big Theorems / Tools:
-- The Fundamental Theorem of Calculus: $$ \frac{\partial}{\partial x} \int_a^x f(t) dt = f(x)$$
+- The Fundamental Theorem of Calculus:
+	$$
+	\frac{\partial}{\partial x} \int_a^x f(t) dt = f(x) \\ \\
+	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(t) dt = f(b(x))b'(x) - f(a(x))a'(x)
+	$$
+- The generalized Fundamental Theorem of Calculus
+	$$\begin{align}
+	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
+	f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\ \\
+	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align}
+	$$
+	- Recover FTC by taking $a(x) = c, b(x) = x, f(x,t) = f(t)$.
+		- Note that if $f(x,t) = f(t)$ alone, then $\dd{x} f(t) = 0$ and the second integral vanishes
 - Extreme Value Theorem
 - Involving the Derivative:
 	- Mean Value Theorem: $$f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f'(p)(b-a)$$
