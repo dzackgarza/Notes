@@ -1,6 +1,3 @@
-
-# Advice
-
 ## For Incoming Math Majors
 - Start thinking about whether or not grad school as an option. You don't have to *decide* within your first year, but you'll want to pick courses accordingly.
 - Get an idea of what Math is all about - there are great things beyond Calculus!
