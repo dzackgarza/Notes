@@ -1,0 +1,81 @@
+digraph G {
+"Abelian Groups" -> "Modules" [dir=back];
+"Abelian Groups" -> "Rings" [dir=back];
+"Abelian Groups" -> "Vector Spaces" [dir=back];
+"Algebras" -> "Lie Algebras" [dir=back];
+"Algebras" -> "Tensor Algebras" [dir=back];
+"Algebras" -> "Modules"
+"Affine Spaces" -> "Vector Spaces" [dir=back];
+"Affine Spaces" -> "Projective Spaces" [dir=back];
+"Algebraic Varieties" -> "Topological Spaces"
+"Affine Varieties" -> "Algebraic Varieties"
+"Algebraic Groups" -> "Algebraic Varieties"
+"Algebraic Groups" -> "Groups"
+"Abelian Varieties" -> "Algebraic Groups"
+"Abelian Varieties" -> "Projective Algebraic Varieties"
+"Banach Algebras" -> "Banach Spaces"
+"Banach Algebras" -> "Algebras"
+"Projective Algebraic Varieties" -> "Algebraic Varieties"
+"Linear Algebraic Varieties" -> "Algebraic Groups"
+"Banach Spaces" -> "Hilbert Spaces" [dir=back];
+"Bialgebras" -> "Algebras"
+"Bialgebras" -> "Coalgebras"
+"Hopf Algebras" -> "Bialgebras"
+"Clifford Algebras" -> "Geometric Algebras" [dir=back];
+"Euclidean Domains" -> "Fields" [dir=back];
+"Fields" -> "Vector Spaces" [dir=back];
+"Groups" -> "Abelian Groups" [dir=back];
+"Groups" -> "Topological Groups" [dir=back];
+"Groups" -> "Torsors";
+"Group Rings" -> "Modules"
+"Group Rings" -> "Rings"
+"Inner Product Spaces" -> "Hilbert Spaces" [dir=back];
+"Integral Domains" -> "UFDs" [dir=back];
+"Lie Groups" -> "Lie Algebras" [dir=back];
+"Loops" -> "Groups" [dir=back];
+"Magmas" -> "Quasigroups" [dir=back];
+"Magmas" -> "Semigroups" [dir=back];
+"Measurable Spaces" -> "Measure Spaces" [dir=back];
+"Measure Spaces" -> "Probability Spaces" [dir=back];
+"Metric Spaces" -> "Topological Manifolds" [dir=back];
+"Metric Spaces" -> "Riemannian Manifolds" [dir=back];
+"Modules" -> "Vector Spaces" [dir=back];
+"Monoids" -> "Groups" [dir=back];
+"Monoids" -> "Rings" [dir=back];
+"Normed Spaces" -> "Banach Spaces" [dir=back];
+"Normed Spaces" -> "Inner Product Spaces" [dir=back];
+"PIDs" -> "Euclidean Domains" [dir=back];
+"Posets" -> "Lattices" [dir=back];
+"Quasigroups" -> "Loops" [dir=back];
+"Rings" -> "Integral Domains" [dir=back];
+"Rings" -> "Modules" [dir=back];
+"Semigroups" -> "Monoids" [dir=back];
+"C^* Algebras" -> "Algebras"
+"Symmetric Algebras" -> "Tensor Algebras"
+"Sets" -> "Magmas" [dir=back];
+"Sets" -> "Measurable Spaces" [dir=back];
+"Sets" -> "Posets" [dir=back];
+"Sets" -> "Topological Spaces" [dir=back];
+"Schemes" -> "Algebraic Varieties"
+"Smooth Manifolds" -> "Riemannian Manifolds" [dir=back];
+"Smooth Manifolds" -> "Lie Groups" [dir=back];
+"Tensor Algebras" -> "Clifford Algebras" [dir=back];
+"Tensor Algebras" -> "Exterior Algebras" [dir=back];
+"Topological Spaces" -> "Measure Spaces" [dir=back];
+"Topological Spaces" -> "Metric Spaces" [dir=back];
+"Metric Spaces" -> "Normed Spaces" [dir=back];
+"Topological Spaces" -> "Topological Groups" [dir=back];
+"Topological Spaces" -> "Topological Vector Spaces" [dir=back];
+"Topological Spaces" -> "Uniform Spaces" [dir=back];
+"Topological Spaces" -> "Projective Spaces" [dir=back];
+"Topological Manifolds" -> "Smooth Manifolds" [dir=back];
+"Topological Groups" -> "Lie Groups" [dir=back];
+"Topological Vector Spaces" -> "Banach Spaces" [dir=back];
+"Topological Rings" -> "Topological Groups"
+"Topological Rings" -> "Rings"
+"UFDs" -> "PIDs" [dir=back];
+"Topological Groups" -> "Uniform Spaces" [dir=back];
+"Topological Vector Spaces" -> "Uniform Spaces"
+"Vector Spaces" -> "Normed Spaces" [dir=back];
+"Vector Spaces" -> "Topological Vector Spaces" [dir=back];
+}
