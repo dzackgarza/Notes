@@ -12,6 +12,7 @@
 	$$
 	- Recover FTC by taking $a(x) = c, b(x) = x, f(x,t) = f(t)$.
 		- Note that if $f(x,t) = f(t)$ alone, then $\dd{x} f(t) = 0$ and the second integral vanishes
+	- #todo for constants, this should allow differentiating under the integral when $f, f_x$ are "jointly continuous"
 - Extreme Value Theorem
 - Involving the Derivative:
 	- Mean Value Theorem: $$f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f'(p)(b-a)$$
