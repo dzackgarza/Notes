@@ -74,6 +74,7 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 	- Generic triangle:
 	- Ellipse:
 	- Parallelograms:
+	- Cones:
 
 - Polar coordinates: $(x,y) \mapsto (\sqrt{x^2 + y^2}, \tan^{-1}(\frac{y}{x}))$
 - Synthetic Division: #todo
