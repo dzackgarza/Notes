@@ -1,3 +1,12 @@
+Summary for GRE exam:
+- limits,
+- continuity,
+- boundedness,
+- compactness,
+- definitions of topological spaces,
+- Lipschitz continuity
+- sequences and series of functions.
+
 Notation used throughout: $f: \RR \to \RR,~\mathbf{f}:\RR^n \to \RR^m$, $K$ is a compact set, and "integrable" or $L_R(K)$ denotes "Riemann integrable on $K$".
 
 ## Big Theorems / Formulas
