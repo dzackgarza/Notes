@@ -29,7 +29,7 @@ _Disclaimer: in the textbook section, a number of the outgoing Amazon links are 
 
 ## Computer Science
 - :fa-book: _CLRS_, [Introduction to Algorithms](https://www.amazon.com/gp/product/0262033844/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0262033844&linkCode=as2&tag=dzackgarza-20&linkId=f99bf4ce12d3ed422a41b841a3055d75)
-	- :fa-external-link: [MIT OCW: Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm) is a good supplement.
+	- :fa-external-link-alt: [MIT OCW: Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm) is a good supplement.
 - :fa-book: _McDowell_, [Cracking the Coding Interview](https://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dzackgarza-20&linkId=10277ceaad2b2e90ef6a1b321b555ffd)
 	- Covers a number of quintessential CS interview questions, worth reading if you are preparing for internships.
 - :fa-book: _Sipser_, [Introduction to the Theory of Computation](https://www.amazon.com/gp/product/8131525295/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=8131525295&linkId=8b4d166a094b0d45b504ea7f4da63727)
@@ -61,7 +61,7 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 - Set Theory and Logic
 
 **Resources**
-- :fa-external-link: You can find five sample exams [here.](http://www.math.ucla.edu/~iacoley/greprep.html)
+- :fa-external-link-alt: You can find five sample exams [here.](http://www.math.ucla.edu/~iacoley/greprep.html)
 - :fa-book: Princeton Review, [Cracking the Math Subject GRE](https://www.amazon.com/gp/product/0375429727/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0375429727&linkId=a8d125e03d8fa03bd5e41231a88252d1)
 
 **Advice**
@@ -81,7 +81,7 @@ Don't forget to take some time to get excited about what you're studying!
 	- A great way to get some visual intuition for what homeomorphisms and/or homotopy equivalences might look like
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/sKqt6e7EcCs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 - :fa-tv: [Understanding Tensors](https://www.youtube.com/watch?v=f5liqUk0ZTw)
-- :fa-external-link: [Hopf Fibration Toy](http://philogb.github.io/page/hopf/)
+- :fa-external-link-alt: [Hopf Fibration Toy](http://philogb.github.io/page/hopf/)
 - Reviews of some of the big Math-related Youtubers:
 	- VSauce - 2/10
 		- Often hints at neat concepts, but usually focused on "pop-math". The cotton candy of the Math video world.
