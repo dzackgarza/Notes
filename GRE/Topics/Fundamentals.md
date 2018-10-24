@@ -9,6 +9,59 @@ Be careful! $\frac{\ln x}{\ln y} \neq \ln\frac{x}{y} = \ln x - \ln y$
 - Completing the square:
 	- $p(x) = ax^2 + bx + c \implies p(x) =  a(x+\frac{b}{2a})^2 + -\frac{1}{2}\left(\frac{b^2-4ac}{2a}\right)$
 
+- Pascal's Triangle:
+
+$n$  | Sequence  
+--|--
+3  | $1,2,1$
+4  | $1,3,3,1$
+5  | $1,4,6,4,1$
+6  | $1,5,10,10,5,1$
+7  | $1,6,15,20,15,16,1$
+8  | $1,7,21,35,35,21,7,1$
+
+Obtain new entries by adding in $\rotate[180]{L}$ pattern (e.g. 7 = 1+6, 12 = 6 + 15, etc).
+Note that $n\choose i$ is given by the entry in the $n\dash$th row, $i\dash$ column.
+
+Table of Small Factorials
+
+$n$  |  $n!$
+--|--
+2   | $2$  
+3   | $6$
+4   | $24$
+5   | $120$
+6   | $720$
+7   | $5040$
+8   | $40320$
+9   | $362880$
+10  | $3628800$
+
+$\pi \approx 3.1415926535$
+$e \approx 2.71828$
+$\sqrt{2} \approx 1.4142135$
+
+Primes Under 100:
+$$\begin{align}
+& 2, 3, 5, 7 , 11, 13, 17, 19, \\
+& 23,	29,	31,	37,	41,	43,	47,	\\
+& 53,	59,	61,	67, \\
+& 71,  73,	79,	83,	89,	97,	101
+\end{align}$$
+
+Checking Divisibility by Small Primes
+$p$  |  $p \mid n \iff$
+--|--
+2  |  $p \mod 10 = 2,4$
+3  |  $\sum \text{digits} \mid 3$
+5  |  $p \mod 5 = 0, 5$
+7  |  
+11  |  
+13  |  
+17  |  
+23  |  
+27  |  
+
 ## Geometry
 
 - Generic Conic Sections

@@ -23,16 +23,23 @@
 	- $\forall x \in I, g'(x) \neq 0$
 	- $\lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)}$ exists
 	$$\implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } = \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }$$
+- Taylor Expansions:
+	$$ \begin{align}
+	T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
+	&= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ & \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
+	\end{align}$$
+	Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
 
 ## Differential
 
 ### Limits
-- Tools for finding limits, in order of difficulty:
-	- Plugging it in
+- Tools for finding $\lim_{x\to a} f(x)$, in order of difficulty:
+	- Plug in: equal to $f(a)$ if continuous
 	- L'Hopital's Rule (only for indeterminate forms $\frac 0 0, \frac \infty \infty$)
 		- For $\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$, let $L = \lim f^g \implies \ln L = \lim g \ln f$
 	- Algebraic rules
-	- Squeeze theorem,
+	- Squeeze theorem
+	- Expand in Taylor series at $a$
 	- Monotonic + bounded
 - One-sided limits: $\lim_{x\to a^-} f(x) = \lim_{\varepsilon \to 0} f(a-\varepsilon)$
 - Limits at zero or infinity: $$\lim_{x\to\infty} f(x) = \lim_{\frac{1}{x}\to 0} f(\frac{1}{x})\text{ and } \lim_{x\to 0} f(x) = \lim_{x\to\infty} f(1/x)$$
@@ -44,7 +51,6 @@
 		\frac{p_n}{q_n} & $\deg p = \deg q$
 	}
 	$$
-		- #todo: prove!
 - Be careful: limits may not exist!!
 	- Example $:\lim_{x\to 0} \frac{1}{x} \neq 0$
 - Asymptotes:
