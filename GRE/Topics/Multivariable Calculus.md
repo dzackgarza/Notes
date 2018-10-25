@@ -10,28 +10,7 @@ $R$ is a region, $S$ is a surface, $V$ is a solid.
 
 $$	\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = 	\oint _ { \partial S } [\mathbf{F}_1, \mathbf{F}_2, \mathbf{F}_3] \cdot [dx, dy, dz] = \oint_{\del S} \mathbf{F}_1dx + \mathbf{F}_2dy + \mathbf{F}_3dz$$
 
-## Big Theorems:
-- $\nabla\cross(\nabla\phi) = 0$
-- $\nabla\cdot(\nabla\cross \mathbf{F}) = 0$
-- Green's Theorem:
-	$$
-	\oint _ { \del R } ( L ~d x + M ~d y ) = \iint _ { R } \left( \frac { \partial M } { \partial x } - \frac { \partial L } { \partial y } \right) d x d y
-	$$
-- Divergence Theorem:
-	$$
-	\iint_ { \partial V } \mathbf { F } \cdot d \mathbf { S } = \iiint _ { V } ( \nabla \cdot \mathbf { F } ) ~d V
-	$$
-- Stokes' Theorem:
-	$$
-	\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = \iint _ { S } ( \nabla \times \mathbf { F } ) \cdot d \mathbf { S }
-	$$
-	- Equals zero if $S$ is a closed surface.
-- Recovering Green's Theorem from Stokes' Theorem:
-	- Let $\mathbf{F} = [L, M, 0]$, then $\nabla\cross \mathbf{F} = [0, 0, \frac{\partial M}{\partial x} - \frac{\partial L}{\partial y}]$
-- Computing Areas with Green's Theorem:
-	$$
-	A(R) = \oint _ { \del R } x ~d y = - \oint _ { \del R } y ~d x = \frac { 1 } { 2 } \oint _ { \del R } - y ~d x + x ~d y
-	$$
+---
 
 ## Geometry
 - Slope of a vector
@@ -62,12 +41,13 @@ $$
 - Determined by a point $\mathbf p$ and a normal $\mathbf n = [n_0, n_1, 0]:~ n_0x + n_2y = d$
 - Also determined by a point $\mathbf p$ and a vector $\mathbf v$ on the line.
 - Also determined by two points $\mathbf p_0, \mathbf p_1$
-- Symmetric Equation (sometimes useful) obtained by eliminating $t$:
+- Symmetric Equation (sometimes useful) obtained by isolating $t$ in each component and setting equal:
 $$
 \mathbf x = (x, y, z) \in L \iff \frac{x-p_{0x}}{p_{1x}-p_{0x}} = \frac{y-p_{0y}}{p_{1y}-p_{0y}} = \frac{z-p_{0z}}{p_{1z}-p_{0z}}
 $$
+	Note that the denominators are just the coefficients of $t$ in the parametric equations.
 - Slope of a line in $\RR^2$: $$\mathbf{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$
-- Normal to a line in $\RR^2$:
+- Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \mathbf{v}^\perp = [-y, x]$$
 
 ### Planes
 Equations of a plane $P \subset \RR^3: A\hat x + B\hat y + C\hat y + D = 0$
@@ -79,23 +59,33 @@ Equations of a plane $P \subset \RR^3: A\hat x + B\hat y + C\hat y + D = 0$
 	$$
 - Determined by a point $\mathbf p_0$ and a normal vector $\mathbf n$
 - Also determined by two points $\mathbf p_0, \mathbf p_1$ using $\mathbf n = \mathbf p_0 \times \mathbf p_1$
+- Useful trick: once you compute $\mathbf n$, you can compute $d = \inner[\mathbf n]{\mathbf p}$ for _any_ point in the plane (don't necessarily need to use the one you started with, so pick any point that's convenient to calculate)
 
 ### Tangent and Normal Spaces
-- Key insight: the gradient is perpendicular to level sets and thus a normal vector.
-$$\mathbf{x} \in T_g(\mathbf p_0) \implies \inner[\nabla f]{\mathbf x-\mathbf p_0} = 0 $$
+- Key insight: just need a point and a normal vector, and the gradient is normal to level sets.
+**The Tangent Plane Equation**: for any locus $f(\mathbf x) = 0$, we have
+$$\mathbf{x} \in T_f(\mathbf p_0) \implies \inner[\nabla f(\mathbf p_0)]{\mathbf x-\mathbf p_0} = 0 $$
 
 ### Surfaces
-- Tangent plane to a surface $z = g(x,y):$ let $f(x, y, z) = g(x,y) - z$ and $\mathbf x = [x,y,z]$,then $\nabla f = [g_x, g_y, -1]$ and
-$$
-z_x(x_0, y_0)(x-x_0) + z_y(x_0, y_0)(y-y_0) -1(z-z_0) = 0
-$$
+- Tangent plane to a surface $z = g(x,y)$: let $f(x, y, z) = g(x,y) - z$ and $\mathbf x = [x,y,z]$. Now $\mathbf p$ is on the surface $\iff \mathbf p$ is in a level set of $f$. The gradient of $f$ is normal to the level sets (and thus the surface) so compute $\nabla f = [g_x, g_y, -1]$ and you can proceed to write down the tagent plane equation to obtain an implicit relation that can be solved for $z$.
+
 - **Surface**: For any surface $S$ give by a level set $f(x,y, z) = 0$ and any $\mathbf p_0 \in S$, the gradient is a normal vector, i.e. $\nabla f({\mathbf p_0}) \perp {T}_S({\mathbf p_0})$ (the tangent plane to $S$ at $\mathbf p_0$)
+
+- Surfaces of revolution:
+	- Given $f(x_1 ,x_2) = 0$, can be revolved around either the $x_1$ or $x_2$ axis.
+		- $f(x,y)$ around the $x$ axis yields $f(x, \pm \sqrt{y^2 + z^2})=0$
+		- $f(x,y)$ around the $y$ axis yields $f(\pm\sqrt{x^2 + z^2}, y)=0$
+		- Remaining cases proceed similarly - leave the axis variable alone, replace other variable with square root involving missing axis.
+- Equations of lines tangent to an intersection of surfaces $f(x,y,z) = g(x,y,z)$:
+	- Find two normal vectors and take their cross product, i.e. $L = \nabla f \times \nabla g$
 
 #### Curves
 - Tangent line to a curve: given $\mathbf{r}(t)$ and $\mathbf{p}_0$, use the fact that $\inner[\mathbf{r}'(t)]{\mathbf{r}(t)} = 0$ to obtain
 $$
 T_r(t) = \mathbf{p}_0 + t\mathbf{r}(t)
 $$
+- Level curves:
+	- Given a surface $f(x,y,z) = 0$, the level curves are obtained by looking at $f(x,y,c) = 0$.
 
 ### Normal Spaces
 Key insight: the gradient is normal
@@ -124,66 +114,38 @@ Fix a point $\mathbf p$. Big idea: project onto subspaces or orthogonal compleme
 	$$
 	d(t) = \norm{\inner[\mathbf r_1(t)]{\mathbf n}\mathbf{\hat n} - \inner[\mathbf r_2(t)]{\mathbf n}\mathbf{\hat n}} \\ \implies d = \norm{\inner[\mathbf p_1 - \mathbf p_2]{\mathbf n}\mathbf{\hat n}}
 	$$
+
 ---
 
 ## Partial Derivatives
-- Chain rule #todo
+- Chain Rule: Write out tree of dependent variables:
+```latex {cmd=true, hide=true, run_on_save=true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & u \arrow[dd] \arrow[rr] \arrow[rrdd] &  & x \\
+z \arrow[rd] \arrow[ru] \arrow[rrru] \arrow[rrrd] &  &  &  \\
+ & v \arrow[rr] \arrow[rruu] &  & y
+\end{tikzcd}
+\end{document}
+```
 
-## Vector Calculus
-- Scalar field on $X$: a function $\phi: X \to \RR$
-- Vector field on $X$: a function $\mathbf{F}: X\to \RR^n$
-- Gradient field on $X$: a vector field $\mathbf{F}: X \to \RR^n$ such that there exists a scalar field $\phi: X\to \RR$ where $\nabla \phi = \mathbf{F}$
+Then sum each possible path, e.g.
 
-- Dot product: $\vec a \cdot \vec b = \norm{a}\norm{b}\cos\theta_{a,b}$
+$$\begin{align}
+\left(\dd[z]{x}\right)_y &= \left(\dd[z]{x}\right)_{u,y,v} \\
+& + \left(\dd[z]{v}\right)_{x,y,u} \left(\dd[v]{x}\right)_y \\
+& + \left(\dd[z]{u}\right)_{x,y,v} \left(\dd[u]{x}\right)_{v,y}  \\
+& + \left(\dd[z]{u}\right)_{x,y,v} \left(\dd[u]{v}\right)_{x,y} \left(\dd[v]{x}\right)_y
+\end{align}$$
 
-- Cross product: $\vec a \cross \vec b = \hat n \norm{a}\norm{b}\sin\theta_{a,b}$
-	- $\vec x \cross y \perp \vec x, \vec y$
-
-- Spherical Coordinates: $$ x = r\cos\theta = \rho\sin\phi\cos\theta \\ y = r\sin\theta = \rho\sin\phi\sin\theta$$
-- The Del Operator:
-	$$
-	\nabla \definedas \sum_{i=1}^n \frac{\partial}{\partial x_i} \mathbf{e}_i
-	= \left[\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}, \cdots, \frac{\partial}{\partial x_n}\right]
-	$$
-
-- The Gradient: takes scalar fields to vector fields
-	$$ \nabla: (\RR^n \to \RR) \to (\RR^n \to \RR^n) \\
-	\phi \mapsto \nabla \phi
-	\definedas \sum_{i=1}^n \frac{\partial \phi}{\partial x_i} ~\mathbf{e}_i
-	= [\frac{\partial \phi}{\partial x_1}, \frac{\partial \phi}{\partial x_2}, \cdots, \frac{\partial \phi}{\partial x_n}]$$
-	- $n=3 \implies \nabla \phi = [\phi_x, \phi_y, \phi_z]$
-
-- The Directional Derivative: $D_\mathbf{v}(\phi) = \mathbf{v} \cdot \nabla \phi$
-
-- Divergence: takes
-	$$
-	\mathrm{div}(\mathbf{F}): (\RR^n \to \RR^n) \to (\RR^n \to \RR) \\
-	\mathbf{F} \mapsto \nabla \cdot \mathbf{F}
-	\definedas \sum_{i=1}^n \frac{\partial \mathbf{F}_i}{\partial x_i} = \frac{\partial \mathbf{F}_1}{\partial x_1} + \frac{\partial \mathbf{F}_2}{\partial x_2} + \cdots + \frac{\partial \mathbf{F}_n}{\partial x_n}$$
-	- $n=3\implies \nabla \cdot \mathbf{F} = (\mathbf{F}_1)_x + (\mathbf{F}_2)_y + (\mathbf{F}_3)_z$
-
-- Curl: $$
-\mathrm{curl}(\mathbf{F}): (\RR^3 \to \RR^3) \to (\RR^3 \to \RR^3) \\
-\mathbf{F} \mapsto \nabla \cross \mathbf{F}
-\definedas \nabla \times \mathbf { F }
-= \left| \begin{array} { c c c } { \mathbf { e }_1 } & { \mathbf { e }_2 } & { \mathbf { e }_3 } \\ { \frac { \partial } { \partial x } } & { \frac { \partial } { \partial y } } & { \frac { \partial } { \partial z } } \\ { \mathbf{F} _ { 1 } } & { \mathbf{F} _ { 2 } } & { \mathbf{F} _ { 3 } } \end{array} \right| \\
-= \left[ \frac { \partial \mathbf{F} _ { z } } { \partial y } - \frac { \partial \mathbf{F} _ { y } } { \partial z },\quad \frac { \partial \mathbf{F} _ { x } } { \partial z } - \frac { \partial \mathbf{F} _ { z } } { \partial x },\quad  \frac { \partial \mathbf{F} _ { y } } { \partial x } - \frac { \partial \mathbf{F} _ { x } } { \partial y } \right]
-$$
-
-- Computing Flux: #todo $$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
-
-- Line Integrals: for a path $C$ parameterized as $\theset{\mathbf{r}(t): t\in[a,b]\subseteq \RR}$
-	$$\int_C f ~ds = \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}'(t)}~dt$$
-Some Results
-
-- $\nabla \cdot \mathbf{F} = 0 \not \implies \exists G:~ \mathbf{F} = \nabla\cross G$
-	- Counterexample$$\mathbf{F}(x,y,z) =\frac{1}{\sqrt{x^2+y^2+z^2}}[x, y, z]~,\quad S = S^2 \subset \RR^3 \\ \implies \nabla \mathbf{F} = 0 \text{ but } \iint_{S^2}\mathbf{F}\cdot d\mathbf{S} = 4\pi \neq 0$$
-	Where by Stokes' theorem, $$\mathbf{F} = \nabla\cross\mathbf{G}\implies\iint_{S^2} \mathbf{F} = \iint_{S^2} \nabla\cross\mathbf{G} \equalsbecause{Stokes} \oint_{\del S^2}\mathbf{G}~d\mathbf{r} = 0$$
-	since $\del S^2 = \emptyset$.  
-	- Sufficient condition: $\mathbf{F}$ is everywhere $C^1$
+Where the subscripts denote which variables are held constant.
 
 
-- $$\exists \mathbf{G}:~ \mathbf{F} = \nabla \cross \mathbf{G} \iff \forall \text{ closed } S, \iint_S \mathbf{F}\cdot d\mathbf{S} = 0$$
 
 ## Approximation and Optimization
 - Linear Approximation:
@@ -191,15 +153,21 @@ Some Results
 	$$f(x,y) \approx f(x_0, y_0) + f_x(x_0, y_0)(x-x_0) + f_y(x_0, y_0)(y-y_0)$$
 - Optimization
 	- Critical points of $f(\vec x)$ given by points $\vec p_0$ such that $\nabla f\mid_{\vec p_0} = 0$
-	- Second derivative test: compute $H_f(p_0) \definedas  \left| \begin{array} { l l } { f _ { x x } } & { f _ { x y } } \\ { f _ { y x } } & { f _ { y y } } \end{array} \right| ({ \vec p _ { 0 } })$. By cases:
-		- $H(\vec p_0) = 0$: No conclusion
-		- $H(\vec p_0) < 0$: Saddle point
-		- $H(\vec p_0) > 0$:
-			- $f_{xx}(\vec p_0) > 0 \implies $ local min
-			- $f_{xx}(\vec p_0) < 0 \implies $ local max
-- Constrained Optimization: **Lagrange Multipliers**
-	- The setup:
-	$$ \text{Optimize } f(\vec x) \\ \text{subject to } g(\vec x) = c \\ \implies \nabla f = \lambda \nabla g$$
-	- Use this formula to obtain a system of equations in the components of $x$ and the parameter $\lambda$.
-	- Generally solve for lambda and substitute to obtain relations between equations, then substitute back into constraint to find a number of candidate critical points.
-	- Test all critical points by just plugging back into $f$.
+	- Second derivative test: compute $H_f(p_0) \definedas  \left| \begin{array} { l l } { f _ { x x } } & { f _ { x y } } \\ { f _ { y x } } & { f _ { y y } } \end{array} \right| ({ \vec p _ { 0 } })$.
+	- By cases:
+		- $H(\mathbf p_0) = 0$: No conclusion
+		- $H(\mathbf p_0) < 0$: Saddle point
+		- $H(\mathbf p_0) > 0$:
+			- $f_{xx}(\mathbf p_0) > 0 \implies $ local min
+			- $f_{xx}(\mathbf p_0) < 0 \implies $ local max
+	- Mnemonic: make matrix with $\nabla f$ as the columns, and then differentiate variables left to right.
+- Constrained by domain:
+	- Extrema occur on boundaries, so parametrize each boundary to obtain a function in one less variable and apply standard optimization techniques to yield critical points. Test all critical points to find extrema.
+- Constrained by an equation:
+	- If possible, use constraint to just reduce equation to one dimension and optimze like single-variable case. Otherwise,
+	- **Lagrange Multipliers**. The setup:
+	$$ \text{Optimize } f(\mathbf x) \\ \text{subject to } g(\mathbf x) = c \\ \implies \nabla f = \lambda \nabla g$$
+	1. Use this formula to obtain a system of equations in the components of $x$ and the parameter $\lambda$.
+	2. Use $\lambda$ to obtain a relation involving only components of $\mathbf{x}$.
+	3. Substitute relations **back into constraint** to obtain a collection of critical points.
+	4. Evaluate $f$ at critical points to find max/min.

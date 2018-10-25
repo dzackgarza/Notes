@@ -85,13 +85,15 @@ $p$  |  $p \mid n \iff$
 - Ellipses: $$\frac{x^2}{w^2} + \frac{y^2}{h^2} = 1$$
 	- Defining trait:
 		- The locus of points where the *sum* of distances to two **focii** are constant.
-	- **Vertices** at $(\pm w, 0)$
+	- **Center** at $(0,0)$ (can translate easily)
+	- **Vertices** at $(\pm w, 0)$ and $(0, \pm h)$
 	- **Focii** at $F_1 = (\sqrt{w^2-h^2}, 0), F_2 = (-\sqrt{w^2-h^2}, 0)$
+	- Another useful shortcut form:
 
 - Hyperbolas: $$\frac{x^2}{w^2}-\frac{y^2}{h^2} = 1$$
 	- Defining trait:
 		- Locus of points where the *difference* between the distances to two **focii** are constant.
-	- **Vertices** at $(0, \pm h)$
+	- **Vertices** at $(0, \pm h)$ and $(\pm w, 0)$
 	- **Focii** at $F_1 = (\sqrt{w^2+h^2}, 0), F_2 = (-\sqrt{w^2+h^2}, 0)$
 
 - Summary of Traits:
@@ -118,6 +120,12 @@ Parallelograms: | $bh$
 Cones: | $?$
 
 - Polar coordinates: $(x,y) \mapsto (\sqrt{x^2 + y^2}, \tan^{-1}(\frac{y}{x}))$
+- Spherical Coordinates: $[\rho, \phi, \theta]$ where
+	$$
+	x^2+y^2+z^1 = \rho^2 \\
+	x = \rho \sin\phi\cos\theta \\
+	y = \rho \sin\phi\sin\theta
+	$$
 
 
 ## Trigonometry

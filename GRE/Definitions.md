@@ -63,13 +63,17 @@
 - Divergence
 - Curl
 - Taylor Series (at a point $a$)
-	- Single Variable:
+	- Single Variable $\RR \to \RR$
 	$$
 	T_a(x) = f ( a ) + \frac { f ^ { \prime } ( a ) } { 1 ! } ( x - a ) + \frac { f ^ { \prime \prime } ( a ) } { 2 ! } ( x - a ) ^ { 2 } + \frac { f ^ { \prime \prime \prime } ( a ) } { 3 ! } ( x - a ) ^ { 3 } + \cdots \\ \implies T_a(x) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }
 	$$
-	- Multivariable:
+	- Multivariable $\RR^n \to \RR$:
 	$$
-	T_a ( x , y ) = f ( a , b ) + ( x - a ) f _ { x } ( a , b ) + ( y - b ) f _ { y } ( a , b ) + \\ \frac { 1 } { 2 ! } \left( ( x - a ) ^ { 2 } f _ { x x } ( a , b ) + 2 ( x - a ) ( y - b ) f _ { y _ { y } } ( a , b ) + ( y - b ) ^ { 2 } f _ { y w } ( a , b ) \right) + \cdots
+	T_a(\mathbf x) = f(\mathbf a) + (\mathbf x - \mathbf a)^T\nabla f(\mathbf a)
+	$$
+	- Multivariable $\RR^n \to \RR^m$:
+	$$
+	T_{(a,b)} ( x , y ) = f ( a , b ) + ( x - a ) f _ { x } ( a , b ) + ( y - b ) f _ { y } ( a , b ) + \\ \frac { 1 } { 2 ! } \left( ( x - a ) ^ { 2 } f _ { x x } ( a , b ) + 2 ( x - a ) ( y - b ) f _ { y y  } ( a , b ) + ( y - b ) ^ { 2 } f _ { y x } ( a , b ) \right) + \cdots
 	$$
 	$$
 	T_a ( \mathbf { x } ) = f ( \mathbf { a } ) + ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{J} ( \mathbf { a } ) + \frac { 1 } { 2 ! } ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{H} ( \mathbf { a } ) ( \mathbf { x } - \mathbf { a } ) + \cdots \\
