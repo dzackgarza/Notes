@@ -135,6 +135,8 @@ Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf
 
 	- Given just two vectors $\mathbf u, \mathbf v$: manufacture a normal vector $\mathbf n = \mathbf u \times \mathbf v$ and continue as above.
 
+	- Special case: if $\mathbf p = \mathbf 0$
+
 - **Point to line**:
 
 	- Given a line $L: \mathbf x(t) = t\mathbf v$ for some fixed $\mathbf v$, use
