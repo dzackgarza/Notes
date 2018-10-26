@@ -188,8 +188,8 @@ a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 -\frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\cos^{-1}(x)} && x\cos^{-1}x -\sqrt{1-x^2} \\
 \frac{1}{\sqrt{x^2+a}} && \ln\abs{x+\sqrt{x^2+a}} && \cdot\\
 -\csc^2(x) && \cot(x) && ? \\
-? && \cos^2(x) && ? \\
-? && \sin^2(x) && ? \\
+-2\sin x\cos x && \cos^2(x) && \frac{1}{2(x + \sin x \cos x)} \\
+2\sin x\cos x && \sin^2(x) && \frac{1}{2}(x - \sin x \cos x) \\
 ? && ? && ? \\
 ? && ? && ? \\
 ? && ? && ? \\
