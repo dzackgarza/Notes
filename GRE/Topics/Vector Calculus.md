@@ -28,18 +28,46 @@ $$	\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = 	\oint _ { \part
 ## Definitions
 
 $$\begin{align}
-\vec a \cdot \vec b = \norm{a}\norm{b}\cos\theta_{a,b} && \text{dot product} \\
-\vec a \cross \vec b = \hat n \norm{a}\norm{b}\sin\theta_{a,b} && \text{cross product} \\
-\nabla \definedas \sum_{i=1}^n \frac{\partial}{\partial x_i} \mathbf{e}_i
-= \left[\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}, \cdots, \frac{\partial}{\partial x_n}\right] && \text{del operator} \\
-\nabla \phi \definedas \sum_{i=1}^n \frac{\partial \phi}{\partial x_i} ~\mathbf{e}_i
-= [\frac{\partial \phi}{\partial x_1}, \frac{\partial \phi}{\partial x_2}, \cdots, \frac{\partial \phi}{\partial x_n}] && \text{gradient} \\
-D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u} && \text{directional derivative} \\
+\mathbf a \cdot \mathbf b
+= \inner[\mathbf x]{\mathbf y}
+= \sum_{i=1}^n {x_i y_i} = x_1y_1 + x_2y_2 + \cdots
+&& \text{inner/dot product}
+\\
+\mathbf a \cross \mathbf b
+= \mathbf{\hat n} \norm{\mathbf a}\norm{\mathbf b}\sin\theta_{\mathbf a,\mathbf b}
+= \left| \begin{array}{ccc}
+	\mathbf{\hat x} & \mathbf{\hat y} & \mathbf{\hat z} \\
+	a_1 & a_2 & a_3 \\
+	b_1 & b_2 & b_3
+\end{array}\right|
+&& \text{cross product}
+\\
+\norm{\mathbf x} = \sqrt{\inner[\mathbf x]{\mathbf x}}
+= \sqrt{\sum_{i=1}^n x_i^2}
+= \sqrt{x_1^2 + x_2^2 + \cdots}
+&& \text{norm}
+\\
+\nabla
+\definedas \sum_{i=1}^n \frac{\partial}{\partial x_i} \mathbf{e}_i
+= \left[\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}, \cdots, \frac{\partial}{\partial x_n}\right]
+&& \text{del operator}
+\\
+\nabla \phi
+\definedas \sum_{i=1}^n \frac{\partial \phi}{\partial x_i} ~\mathbf{e}_i
+= [\frac{\partial \phi}{\partial x_1}, \frac{\partial \phi}{\partial x_2}, \cdots, \frac{\partial \phi}{\partial x_n}]
+&& \text{gradient}
+\\
+D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
+&& \text{directional derivative}
+\\
 \nabla \cdot \mathbf{F}
-\definedas \sum_{i=1}^n \frac{\partial \mathbf{F}_i}{\partial x_i} = \frac{\partial \mathbf{F}_1}{\partial x_1} + \frac{\partial \mathbf{F}_2}{\partial x_2} + \cdots + \frac{\partial \mathbf{F}_n}{\partial x_n} && \text{divergence} \\
+\definedas \sum_{i=1}^n \frac{\partial \mathbf{F}_i}{\partial x_i} = \frac{\partial \mathbf{F}_1}{\partial x_1} + \frac{\partial \mathbf{F}_2}{\partial x_2} + \cdots + \frac{\partial \mathbf{F}_n}{\partial x_n}
+&& \text{divergence}
+\\
 \nabla \times \mathbf { F }
 = \left| \begin{array} { c c c } { \mathbf { e }_1 } & { \mathbf { e }_2 } & { \mathbf { e }_3 } \\ { \frac { \partial } { \partial x } } & { \frac { \partial } { \partial y } } & { \frac { \partial } { \partial z } } \\ { \mathbf{F} _ { 1 } } & { \mathbf{F} _ { 2 } } & { \mathbf{F} _ { 3 } } \end{array} \right|  = [\mathbf{F}_{3y} - \mathbf{F}_{2z}, \mathbf{F}_{1z}- \mathbf{F}_{3x}, \mathbf{F}_{2x} -\mathbf{F}_{1y}]
 && \text{curl}
+\\
 \end{align}$$
 - Note that the directional derivative uses a normalized direction vector!
 
