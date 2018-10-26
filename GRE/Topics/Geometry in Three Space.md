@@ -10,8 +10,7 @@
 
 Important Equations
 $$
-\inner[\mathbf x]{\mathbf y} = \sum_{i=1}^n {x_i y_i} = x_1y_1 + x_2y_2 + \cdots \\
-\norm{\mathbf x} = \sqrt{\inner[\mathbf x]{\mathbf x}} = \sqrt{\sum_{i=1}^n x_i^2} = \sqrt{x_1^2 + x_2^2 + \cdots}
+
 $$
 
 ## Lines
