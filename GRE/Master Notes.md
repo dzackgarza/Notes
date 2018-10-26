@@ -13,6 +13,10 @@
 # Multivariable Calculus
 @import "Topics/Multivariable Calculus.md"
 
+@import "Topics/Geometry in Three Space.md"
+
+@import "Topics/Vector Calculus"
+
 ---
 
 # Ordinary Differential Equations
@@ -20,33 +24,33 @@
 
 ---
 
-## Linear Algebra
+# Linear Algebra
 @import "Topics/Linear Algebra.md"
 
 ---
 
-## Complex Analysis
+# Complex Analysis
 @import "Topics/Complex Analysis.md"
 
 ---
 
-## Real Analysis
+# Real Analysis
 @import "Topics/Real Analysis.md"
 
 ---
 
-## Topology
+# Topology
 
-## Number Theory
+# Number Theory
 
-## Abstract Algebra
+# Abstract Algebra
 @import "Topics/Algebra.md"
 
-## Combinatorics
+# Combinatorics
 - Common series: see appendix
 - Other useful series and facts
 
-## Probability
+# Probability
 - Mean / Expected Value: $$E[X] = \int x P(X = x) = \int x f_X(x)$$
 	- Linearity of expectation:
 		$$E[\sum a_i X_i] = \sum a_i E[X_i]$$
@@ -55,7 +59,7 @@
 - Standard deviation: $$\sigma(X) = \mathrm{Var}(X)^{1/2}$$
 
 
-## Numerical Analysis
+# Numerical Analysis
 - Euler's Method:
 	- To solve $\frac{dy}{dx} = f(x,y), y(x_0) = y_0$, choose a step size $\varepsilon$, and let $x_{n+1} = x_0 + n\varepsilon$. Then $$y_{n+1} = y_n + \varepsilon f(x_n, y_n)$$
 - Decompositions of Matrices:
