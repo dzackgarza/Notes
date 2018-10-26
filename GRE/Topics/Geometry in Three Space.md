@@ -21,7 +21,7 @@ $$
 Ax + By + C = 0
 \hspace{8em}
 \mathbf x = \mathbf p + t\mathbf v \\ \\
-\mathbf x \in L \iff \inner[\mathbf x]{\mathbf n} = 0
+\mathbf x \in L \iff \inner[\mathbf x]{\mathbf n} = 0 ?
 $$
 
 - Determined by a point $\mathbf p$ and a vector $\mathbf v$ on the line.
