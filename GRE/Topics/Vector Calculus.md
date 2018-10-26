@@ -104,11 +104,11 @@ $$\begin{align}
 
 - **Line Integrals**:
 	- For a path $C$ parameterized as $\theset{\mathbf{r}(t): t\in[a,b]}$
-	$$
+	$$\begin{align}
 	\int_C f ~ds
-	= \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}'(t)}~dt 
-	= \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt
-	$$
+	&= \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}'(t)}~dt \\
+	&= \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt
+	\end{align}$$
 
 - **Flux Integrals**:
 	$$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
