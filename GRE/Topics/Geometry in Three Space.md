@@ -48,7 +48,6 @@ $$
 - Can read normal vector off of equation: $\mathbf n = [a,b,c]$
 	- And $d = \inner[\mathbf n]{\mathbf p_0}$
 
-
 - Other Facts
 	$$
 	n_0 x + n_1 y + n_2 z = d = n_1p_1 + n_2p_2 + n_3p_3
