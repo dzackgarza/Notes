@@ -18,7 +18,7 @@
 
 ## Lines
 $$
-L \subset \RR^3: Ax + By + C = 0
+Ax + By + C = 0
 \hspace{8em}
 \mathbf x = \mathbf p + t\mathbf v \\ \\
 \mathbf x \in L \iff \inner[\mathbf x]{\mathbf n} = 0
@@ -41,8 +41,10 @@ $$
 
 ## Planes
 $$
-P \subset \RR^3: A x + B y + C z + D = 0
-\hspace{8em}
+A x + B y + C z + D = 0
+\hspace{4em}
+ax + by + cz = d
+\hspace{4em}
 \mathbf x(t,s) = \mathbf p + t\mathbf v_1 + s\mathbf v_2 \\ \\
 \mathbf x \in P \iff \inner[\mathbf n]{\mathbf x - \mathbf p_0} = 0
 $$
