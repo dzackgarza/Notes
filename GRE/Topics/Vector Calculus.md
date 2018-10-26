@@ -102,7 +102,7 @@ $$\begin{align}
 
 ## Computations
 
-- **Line Integrals**:
+- **Line Integrals Of Curves**:
 	- For a path $C$ parameterized as $\theset{\mathbf{r}(t): t\in[a,b]}$
 	$$\begin{align}
 	\int_C f ~ds
