@@ -125,20 +125,25 @@ Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf
 	\mathrm{proj}_{\mathbf a}^\perp(\mathbf b) = \mathbf b - \mathrm{proj}_\mathbf{a}(\mathbf{b})
 	$$
 
-- Point to plane:
+- **Point to plane**:
 	- Given a plane $S = \theset{\mathbf{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, project onto $S^\perp$ using
+
 	$$
-	d = \norm{\inner[\mathbf p]{\mathbf{n}}\mathbf{\hat n}}
+	d = \norm{\mathrm{proj}_{\mathbf n}(\mathbf p)}
 	$$
-	where we can read off the normal vector $\mathbf{n} = [n_0, n_1, n_2]$ directly from the equation.
+
 	- Given just two vectors $\mathbf u, \mathbf v$: manufacture a normal vector $\mathbf n = \mathbf u \times \mathbf v$ and continue as above.
 
-- Point to line:
+- **Point to line**:
+
 	- Given a line $L = \theset{t\mathbf v: t\in \RR}$ for some fixed $\mathbf v$
-	$$d = \norm{\mathrm{proj}_\mathbf{v}^\perp(\mathbf{p})} = \norm{\mathbf p - \inner[\mathbf p]{\mathbf v}\mathbf{\hat v}}.$$
+	$$
+	d = \norm{\mathrm{proj}_\mathbf{v}^\perp(\mathbf{p})}
+	$$
+	- Given a line $L: \mathbf x(t) = \mathbf v_0 + t\mathbf v$, let $\mathbf v = \mathbf x(1) - \mathbf x(0)$ and proceed as above.
 	- Equivalently,for any point $\mathbf v_0 \in L$, $$d = \norm{(\mathbf p - \mathbf v_0)\times \mathbf{\hat v}}$$
 
-- Line to line:
+- **Line to line**:
 	- Given $\mathbf{r}_1(t) = \mathbf p_1 + t\mathbf v_2$ and $\mathbf{r}_2(t) = \mathbf p_2 + t\mathbf v_2$, then the minimal line connecting these will lie along $\mathbf n = \mathbf v_1 \times \mathbf v_2$ which is normal to both lines. Then
 	$$
 	d(t) = \norm{\inner[\mathbf r_1(t)]{\mathbf n}\mathbf{\hat n} - \inner[\mathbf r_2(t)]{\mathbf n}\mathbf{\hat n}} \\ \implies d = \norm{\inner[\mathbf p_1 - \mathbf p_2]{\mathbf n}\mathbf{\hat n}}
