@@ -1,3 +1,8 @@
+## Notation
+$R$ is a region, $S$ is a surface, $V$ is a solid.
+
+$$	\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = 	\oint _ { \partial S } [\mathbf{F}_1, \mathbf{F}_2, \mathbf{F}_3] \cdot [dx, dy, dz] = \oint_{\del S} \mathbf{F}_1dx + \mathbf{F}_2dy + \mathbf{F}_3dz$$
+
 ## Big Theorems:
 - Green's Theorem:
 	$$
