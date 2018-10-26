@@ -60,12 +60,13 @@ $$
 
 ## Surfaces
 $$
-f(x,y,z) = 0
+S = \theset{(x,y,z) \mid f(x,y, z) = 0} \hspace{10em} z = f(x,y)
 $$
-- Given by explicit equations $z = g(x,y)$ or implicit equations $f(x,y,z) = 0$
-- Tangent plane to a surface $z = g(x,y)$: let $f(x, y, z) = g(x,y) - z$ and $\mathbf x = [x,y,z]$. Now $\mathbf p$ is on the surface $\iff \mathbf p$ is in a level set of $f$. The gradient of $f$ is normal to the level sets (and thus the surface) so compute $\nabla f = [g_x, g_y, -1]$ and you can proceed to write down the tagent plane equation to obtain an implicit relation that can be solved for $z$.
-
-- **Surface**: For any surface $S$ give by a level set $f(x,y, z) = 0$ and any $\mathbf p_0 \in S$, the gradient is a normal vector, i.e. $\nabla f({\mathbf p_0}) \perp {T}_S({\mathbf p_0})$ (the tangent plane to $S$ at $\mathbf p_0$)
+- Tangent plane to a surface
+	- $z = g(x,y)$: Let $f(x, y, z) = g(x,y) - z$ and $\mathbf x = [x,y,z]$. Now $\mathbf p$ is on the surface $\iff \mathbf p$ is in a level set of $f$.
+	- The gradient of $f$ is normal to the level sets (and thus the surface) so compute $\nabla f = [g_x, g_y, -1]$
+	- Write down the tagent plane equation to obtain an implicit relation that can be solved for $z$.
+- $f(x,y, z) = 0$ and any $\mathbf p_0 \in S$, the gradient is a normal vector.
 
 - Surfaces of revolution:
 	- Given $f(x_1 ,x_2) = 0$, can be revolved around either the $x_1$ or $x_2$ axis.
