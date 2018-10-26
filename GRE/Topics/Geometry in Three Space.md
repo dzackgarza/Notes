@@ -127,15 +127,18 @@ Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf
 	$$
 
 - **Point to plane**:
-	- Given a plane $S = \theset{\mathbf{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, find any one point $\mathbf p \in S$ and project it onto $S^\perp$ using
+	- Given a point $\mathbf p$ and a plane $S = \theset{\mathbf{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, find any point $\mathbf q \in S$ and project $\mathbf p -\mathbf q$ onto $S^\perp$ using
 
 	$$
-	d = \norm{\mathrm{proj}_{\mathbf n}(\mathbf p)}
+	d = \norm{\mathrm{proj}_{\mathbf n}(\mathbf p - \mathbf q)}
 	$$
 
 	- Given just two vectors $\mathbf u, \mathbf v$: manufacture a normal vector $\mathbf n = \mathbf u \times \mathbf v$ and continue as above.
 
-	- Special case: if $\mathbf p = \mathbf 0$
+	- Special case: if $\mathbf p = \mathbf 0$ (i.e. **distance from plane to origin**)
+	$$
+	d = \norm{\mathrm{proj}_{\mathbf n}(\mathbf q)}
+	$$
 
 - **Point to line**:
 
