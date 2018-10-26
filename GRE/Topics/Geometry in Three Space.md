@@ -23,16 +23,9 @@ Ax + By + C = 0
 \mathbf x = \mathbf p + t\mathbf v \\ \\
 \mathbf x \in L \iff \inner[\mathbf x]{\mathbf n} = 0
 $$
-- Key insights:
-$$
-\mathbf x = (x, y, z) \in L \iff \exists t: \mathbf x = \mathbf p_0 + t(\mathbf p_1 - \mathbf p_0) \\
-\implies x = p_{0x} + t(p_{1x} - p_{0x}) \\
-\implies y = p_{0y} + t(p_{1y} - p_{0y}) \\
-\implies z = p_{0z} + t(p_{1z} - p_{0z})
-$$
-- Determined by a point $\mathbf p$ and a normal $\mathbf n = [n_0, n_1, 0]:~ n_0x + n_2y = d$
-- Also determined by a point $\mathbf p$ and a vector $\mathbf v$ on the line.
-- Also determined by two points $\mathbf p_0, \mathbf p_1$
+
+- Determined by a point $\mathbf p$ and a vector $\mathbf v$ on the line.
+	- Also determined by two points $\mathbf p_0, \mathbf p_1$ by taking $\mathbf v = \mathbf p_1 - \mathbf p_0$
 - Symmetric Equation (sometimes useful) obtained by isolating $t$ in each component and setting equal:
 $$
 \mathbf x = (x, y, z) \in L \iff \frac{x-p_{0x}}{p_{1x}-p_{0x}} = \frac{y-p_{0y}}{p_{1y}-p_{0y}} = \frac{z-p_{0z}}{p_{1z}-p_{0z}}
