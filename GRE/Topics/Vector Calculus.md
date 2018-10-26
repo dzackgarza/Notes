@@ -116,8 +116,15 @@ $$\begin{align}
 $$\begin{align}
 \int_C \mathbf F \cdot d\mathbf r
 & \definedas \int_a^b (\mathbf F \circ \mathbf r)(t) \cdot \mathbf r'(t) ~dt \\
-&= \int_a^b [\mathbf F_1(x(t), y(t), \cdots), \mathbf F_2(x(t), y(t), \cdots)]\cdot[x_t, y_t, \cdots] ~dt
+&= \int_a^b [\mathbf F_1(x(t), y(t), \cdots), \mathbf F_2(x(t), y(t), \cdots)]\cdot[x_t, y_t, \cdots] ~dt \\
 \end{align}$$
+
+Equivalently written:
+$$
+\int_a^b \mathbf F_1 ~dx + \mathbf F_2 ~dy + \cdots
+\definedas \int_C \mathbf F \cdot d\mathbf r
+$$
+in which case $[dx, dy, \cdots] \definedas \mathbf r'(t)$.
 
 - **Flux Integrals**:
 	$$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
