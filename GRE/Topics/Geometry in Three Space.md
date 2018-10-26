@@ -20,7 +20,7 @@
 $$
 Ax + By + C = 0
 \hspace{8em}
-\mathbf x(t) = \mathbf p + t\mathbf v \\ \\
+\mathbf x = \mathbf p + t\mathbf v \\ \\
 \mathbf x \in L \iff \inner[\mathbf x]{\mathbf n} = 0
 $$
 
