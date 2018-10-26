@@ -62,10 +62,10 @@ $$
 $$
 S = \theset{(x,y,z) \mid f(x,y, z) = 0} \hspace{10em} z = f(x,y)
 $$
-- Tangent plane to a surface
-	- $z = g(x,y)$: Let $f(x, y, z) = g(x,y) - z$ and $\mathbf x = [x,y,z]$. Now $\mathbf p$ is on the surface $\iff \mathbf p$ is in a level set of $f$.
-	- The gradient of $f$ is normal to the level sets (and thus the surface) so compute $\nabla f = [g_x, g_y, -1]$
-	- Write down the tagent plane equation to obtain an implicit relation that can be solved for $z$.
+- Tangent plane to a surface: need a point $\mathbf{p}$ and a normal $\mathbf{n}$
+	- $z = g(x,y)$: Let $f(x, y, z) = g(x,y) - z$, then $\mathbf p \in S \iff \mathbf p$ is in a level set of $f$.
+	- $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
+	- Write down the tangent plane equation to obtain an implicit relation that can be solved for $z$.
 - $f(x,y, z) = 0$ and any $\mathbf p_0 \in S$, the gradient is a normal vector.
 
 - Surfaces of revolution:
