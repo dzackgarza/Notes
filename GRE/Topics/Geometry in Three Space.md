@@ -83,9 +83,20 @@ $$
 	$$L = \theset{\mathbf x\mid \mathbf x = \mathbf p + t \mathbf n}$$
 
 ## Curves
-- Tangent line to a curve: given $\mathbf{r}(t)$ and $\mathbf{p}_0$, use the fact that $\inner[\mathbf{r}'(t)]{\mathbf{r}(t)} = 0$ to obtain
 $$
-T_r(t) = \mathbf{p}_0 + t\mathbf{r}(t)
+\mathbf r(t) = [x(t), y(t), z(t)]
+$$
+
+- Tangent line:
+	- Use the fact that $\mathbf r'(t)$ is a tangent vector to $\mathbf r(t)$
+$$
+\mathbf T(t) = \mathbf r(t_0) + t\mathbf{r}'(t)
+$$
+
+- Normal line:
+	- Use the fact that $\mathbf{r}''(t) \perp \mathbf{r}'(t)$
+$$
+\mathbf N(t) = \mathbf r(t_0) + t \mathbf r''(t)
 $$
 
 - Level curves:
