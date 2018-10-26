@@ -62,13 +62,18 @@ $$
 $$
 S = \theset{(x,y,z) \mid f(x,y, z) = 0} \hspace{10em} z = f(x,y)
 $$
-- Tangent plane to a surface: need a point $\mathbf{p}$ and a normal $\mathbf{n}$
-	- $z = g(x,y)$: Let $f(x, y, z) = g(x,y) - z$, then $\mathbf p \in S \iff \mathbf p$ is in a level set of $f$.
-	- $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
-	- Write down the tangent plane equation to obtain an implicit relation that can be solved for $z$.
-- $f(x,y, z) = 0$ and any $\mathbf p_0 \in S$, the gradient is a normal vector.
+- **Tangent plane to a surface**:
+	- Need a point $\mathbf{p}$ and a normal $\mathbf{n}$. By cases:
+	- $f(x,y, z) = 0$
+		- $\nabla f$ is a normal vector.
+		- Write the tangent plane equation $\inner[\mathbf n]{\mathbf x - \mathbf p_0}$, done.
+	- $z = g(x,y)$:
+		- Let $f(x, y, z) = g(x,y) - z$, then $\mathbf p \in S \iff \mathbf p$ is in a level set of $f$.
+		- $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
+		- Proceed as in previous case
 
-- Surfaces of revolution:
+
+- **Surfaces of revolution**:
 	- Given $f(x_1 ,x_2) = 0$, can be revolved around either the $x_1$ or $x_2$ axis.
 		- $f(x,y)$ around the $x$ axis yields $f(x, \pm \sqrt{y^2 + z^2})=0$
 		- $f(x,y)$ around the $y$ axis yields $f(\pm\sqrt{x^2 + z^2}, y)=0$
