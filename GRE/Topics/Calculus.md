@@ -177,15 +177,15 @@ nx^{n-1} && x^n, n \neq -1 && \frac{1}{n+1}x^{n+1} \\
 \frac{1}{x} && \bbox[yellow]{\ln(x)} && x\ln(x) - x \\
 a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 \cos(x) && \sin(x)  && -\cos(x) \\
--\sin(x) && \cos(x)  && \sin(x) \\
-\sec^2(x) && \tan(x) &&  \ln\abs{\sec(x)} \\
-\sec(x)\tan(x) && \sec(x) && \ln\abs{\sec(x) + \tan(x)} \\
 -\csc(x)\cot(x) && \csc(x)  && \ln\abs{\csc(x)-\cot(x)} \\
+-\sin(x) && \cos(x)  && \sin(x) \\
+\sec(x)\tan(x) && \sec(x) && \ln\abs{\sec(x) + \tan(x)} \\
+\sec^2(x) && \tan(x) &&  \ln\abs{\frac{1}{\cos x}} \\
+-\csc^2(x) && \cot(x) && \ln \abs{\sin x} \\
 \frac{1}{1+x^2} && \bbox[yellow]{\tan^{-1}(x)}  && x\tan^{-1}x - \frac{1}{2}\ln(1+x^2) \\
 \frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\sin^{-1}(x)} && x\sin^{-1}x+ \sqrt{1-x^2} \\
 -\frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\cos^{-1}(x)} && x\cos^{-1}x -\sqrt{1-x^2} \\
 \frac{1}{\sqrt{x^2+a}} && \ln\abs{x+\sqrt{x^2+a}} && \cdot\\
--\csc^2(x) && \cot(x) && ? \\
 -2\sin x\cos x && \cos^2(x) && \frac{1}{2}(x + \sin x \cos x) \\
 2\sin x\cos x && \sin^2(x) && \frac{1}{2}(x - \sin x \cos x) \\
 2\csc^2(x)\cot(x) && \csc^2(x)  && -\cot(x) \\
@@ -197,7 +197,7 @@ a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 ? && ? && ? \\
 ? && ? && ? \\
 ? && ? && ? \\
-? && xe^{ax} && \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\
+(ax+1)e^{ax} && xe^{ax} && \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\
 ? && e^{ax}\sin(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\
 ? && e^{ax}\cos(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
 ? && ? && ? \\
