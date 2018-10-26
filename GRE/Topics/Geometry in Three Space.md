@@ -26,11 +26,12 @@ $$
 
 - Determined by a point $\mathbf p$ and a vector $\mathbf v$ on the line.
 	- Also determined by two points $\mathbf p_0, \mathbf p_1$ by taking $\mathbf v = \mathbf p_1 - \mathbf p_0$
-- Symmetric Equation (sometimes useful) obtained by isolating $t$ in each component and setting equal:
+- Symmetric Equation (sometimes useful)
+	- Obtained by isolating $t$ in each component and setting results equal:
 $$
 (x, y, z) \in L \iff \frac{x-p_{x}}{v_x} = \frac{y-p_{y}}{v_y} = \frac{z-p_{z}}{v_z}
 $$
-	Note that the denominators are just the coefficients of $t$ in the parametric equations.
+	(Note that the denominators are just the coefficients of $t$ in the parametric equation.)
 
 ## Planes
 $$
