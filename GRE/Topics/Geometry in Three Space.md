@@ -145,7 +145,7 @@ Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf
 - **Line to line**:
 	- Given $\mathbf{r}_1(t) = \mathbf p_1 + t\mathbf v_2$ and $\mathbf{r}_2(t) = \mathbf p_2 + t\mathbf v_2$:
 		- Let $\mathbf n = \mathbf v_1 \times \mathbf v_2$, which is normal to both lines.
-		- Project the vector between any two points onto this normal: 
+		- Then project the vector between any two points onto this normal: 
 	$$
 	d= \norm{\mathrm{proj}_{\mathbf n}(\mathbf p_2 - \mathbf p_1)}
 	$$
