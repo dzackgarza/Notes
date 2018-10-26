@@ -126,7 +126,6 @@ $$
 \definedas \int_C \mathbf F \cdot d\mathbf r
 $$
 in which case $[dx, dy, \cdots] \definedas [x_t, y_t, \cdots] = \mathbf r'(t)$.
-
 	- _Remember to substitute dx back into the integrand!!_
 
 - **Flux Integrals**:
