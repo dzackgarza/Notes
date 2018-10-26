@@ -87,13 +87,13 @@ $$
 \mathbf r(t) = [x(t), y(t), z(t)]
 $$
 
-- Tangent line:
+- Tangent line
 	- Use the fact that $\mathbf r'(t)$ is a tangent vector to $\mathbf r(t)$
 $$
 \mathbf T(t) = \mathbf r(t_0) + t\mathbf{r}'(t)
 $$
 
-- Normal line:
+- Normal line
 	- Use the fact that $\mathbf{r}''(t) \perp \mathbf{r}'(t)$
 $$
 \mathbf N(t) = \mathbf r(t_0) + t \mathbf r''(t)
