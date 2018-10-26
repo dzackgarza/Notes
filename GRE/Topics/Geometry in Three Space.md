@@ -141,7 +141,6 @@ Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf
 	d = \norm{\mathrm{proj}_\mathbf{v}^\perp(\mathbf{p})}
 	$$
 	- Given a line $L: \mathbf x(t) = \mathbf w_0 + t\mathbf w$, let $\mathbf v = \mathbf x(1) - \mathbf x(0)$ and proceed as above.
-	- Equivalently,for any point $\mathbf v_0 \in L$, $$d = \norm{(\mathbf p - \mathbf v_0)\times \mathbf{\hat v}}$$
 
 - **Line to line**:
 	- Given $\mathbf{r}_1(t) = \mathbf p_1 + t\mathbf v_2$ and $\mathbf{r}_2(t) = \mathbf p_2 + t\mathbf v_2$, then the minimal line connecting these will lie along $\mathbf n = \mathbf v_1 \times \mathbf v_2$ which is normal to both lines. Then
