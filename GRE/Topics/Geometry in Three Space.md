@@ -127,7 +127,7 @@ Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf
 	$$
 
 - **Point to plane**:
-	- Given a plane $S = \theset{\mathbf{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, project onto $S^\perp$ using
+	- Given a plane $S = \theset{\mathbf{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, find any one point $\mathbf p \in S$ and project it onto $S^\perp$ using
 
 	$$
 	d = \norm{\mathrm{proj}_{\mathbf n}(\mathbf p)}
