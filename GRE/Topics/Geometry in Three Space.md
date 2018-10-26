@@ -63,7 +63,7 @@ $$
 
 - **Planar Curve/Line**: For any planar curve given by $y = g(x)$, let $f(x, y) = g(x) - y$ to obtain the normal vector $\nabla f = [g_x(x), -1]$ with slope $-\frac{1}{g_x(x)}$.
 
-- **General Curve/Line**: for a curve $\mathbf{r}(t)$, just use the fact that $\mathbf r'(t)$ is orthogonal to $\mathbf r(t)$
+- **General Curve/Line**: for a curve $\mathbf{r}(t)$, just use the fact that $ \mathbf r'(t) = \dd{t} \mathbf r(t)$ is orthogonal to $\mathbf r(t)$.
 
 ### Surfaces
 - Tangent plane to a surface $z = g(x,y)$: let $f(x, y, z) = g(x,y) - z$ and $\mathbf x = [x,y,z]$. Now $\mathbf p$ is on the surface $\iff \mathbf p$ is in a level set of $f$. The gradient of $f$ is normal to the level sets (and thus the surface) so compute $\nabla f = [g_x, g_y, -1]$ and you can proceed to write down the tagent plane equation to obtain an implicit relation that can be solved for $z$.
