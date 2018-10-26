@@ -114,9 +114,9 @@ $$\begin{align}
 - **Line Integrals of Vector Fields**
 	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then
 $$\begin{align}
-\int_C \mathbf F \cdot d\mathbf r 
+\int_C \mathbf F \cdot d\mathbf r
 & \definedas \int_a^b (\mathbf F \circ \mathbf r)(t) \cdot \mathbf r'(t) ~dt \\
-&= \int_a^b
+&= \int_a^b [\mathbf F_1(x(t), y(t), \cdots), \mathbf F_2(x(t), y(t), \cdots)]\cdot[x_t, y_t, \cdots] ~dt
 \end{align}$$
 
 - **Flux Integrals**:
