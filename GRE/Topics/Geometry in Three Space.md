@@ -1,18 +1,10 @@
-## Basics
-- Unit tangent: $\mathbf{\hat T}(t) = \mathbf{\hat r}'(t)$
-- Unit normal: $\mathbf{\hat N}(t) = \mathbf{\hat T}'(t) = \mathbf{\hat r}''(t)$
-	- Follows from fact that $\norm{\mathbf{v}(t)} = c \implies \inner[\mathbf{v}(t)]{\mathbf{v}'(t)} = 0$
+## Plane Geometry
 - Useful to know: rotation matrices
  	$$
 	\mathbf{R}_\theta = \left[ \begin{array} { l l } { \cos \theta } & { - \sin \theta } \\ { \sin \theta } & { \cos \theta } \end{array} \right] \implies \mathbf{R}_\frac{\pi}{2} = \left[ \begin{array} { l l } { 0 } & { - 1 } \\ { 1 } & { 0 } \end{array}\right] \implies \mathbf{R}_\frac{\pi}{2} \begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}{-y \\ x}\end{bmatrix}
 	$$
 	- Example use: given $\mathbf{v}, \mathbf{R}_\frac{\pi}{2}\mathbf v \perp \mathbf v$, so useful to obtain normals or other perpendicular vectors in the plane.
 - Useful trick: given $\mathbf v = [a,b,c]$, one perpendicular vector is $\mathbf v^\perp = [c,c, -(a+b)]$ as long as $\mathbf v \neq [-1,-1,0]$ - in this case, choose $\mathbf v^\perp = [-(b+c), a, a]$.
-- Projection onto a vector of $\mathbf b$ onto $\mathbf a$:
-	$$\mathrm{proj}_\mathbf{a}(\mathbf b) = \inner[\mathbf b]{\mathbf a}\mathbf{\hat a}$$
-- Orthogonal projection of $\mathbf b$ onto $\mathbf a$:
-	$$\mathrm{proj}_{\mathbf a}^\perp(\mathbf b) = \mathbf b - \mathrm{proj}_\mathbf{a}(\mathbf{b}) = \mathbf b - \inner[\mathbf b]{\mathbf a}\mathbf{\hat a}$$
-
 - Slope of a line in $\RR^2$: $$\mathbf{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$
 - Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \mathbf{v}^\perp = [-y, x]$$
 
@@ -125,6 +117,13 @@ $$
 
 ## Minimal Distances
 Fix a point $\mathbf p$. Big idea: project onto subspaces or orthogonal complements.
+
+- Projection onto a vector of $\mathbf b$ onto $\mathbf a$:
+	$$
+	\mathrm{proj}_\mathbf{a}(\mathbf b) = \inner[\mathbf b]{\mathbf a}\mathbf{\hat a}
+	\hspace{8em}
+	\mathrm{proj}_{\mathbf a}^\perp(\mathbf b) = \mathbf b - \mathrm{proj}_\mathbf{a}(\mathbf{b})
+	$$
 
 - Point to plane:
 	- Given a plane $S = \theset{\mathbf{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, project onto $S^\perp$ using
