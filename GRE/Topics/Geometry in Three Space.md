@@ -1,5 +1,4 @@
-## Geometry
-- Slope of a vector
+## Basics
 - Unit tangent: $\mathbf{\hat T}(t) = \mathbf{\hat r}'(t)$
 - Unit normal: $\mathbf{\hat N}(t) = \mathbf{\hat T}'(t) = \mathbf{\hat r}''(t)$
 	- Follows from fact that $\norm{\mathbf{v}(t)} = c \implies \inner[\mathbf{v}(t)]{\mathbf{v}'(t)} = 0$
