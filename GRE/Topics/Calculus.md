@@ -178,8 +178,6 @@ nx^{n-1} && x^n, n \neq -1 && \frac{1}{n+1}x^{n+1} \\
 a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 \cos(x) && \sin(x)  && -\cos(x) \\
 -\sin(x) && \cos(x)  && \sin(x) \\
-2\sec^2(x)\tan(x) && \sec^2(x)  && \tan(x) \\
-2\csc^2(x)\cot(x) && \csc^2(x)  && -\cot(x) \\
 \sec^2(x) && \tan(x) &&  \ln\abs{\sec(x)} \\
 \sec(x)\tan(x) && \sec(x) && \ln\abs{\sec(x) + \tan(x)} \\
 -\csc(x)\cot(x) && \csc(x)  && \ln\abs{\csc(x)-\cot(x)} \\
@@ -190,6 +188,8 @@ a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 -\csc^2(x) && \cot(x) && ? \\
 -2\sin x\cos x && \cos^2(x) && \frac{1}{2}(x + \sin x \cos x) \\
 2\sin x\cos x && \sin^2(x) && \frac{1}{2}(x - \sin x \cos x) \\
+2\csc^2(x)\cot(x) && \csc^2(x)  && -\cot(x) \\
+2\sec^2(x)\tan(x) && \sec^2(x)  && \tan(x) \\
 ? && ? && ? \\
 ? && ? && ? \\
 ? && ? && ? \\
