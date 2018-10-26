@@ -118,7 +118,7 @@ $$
 ## Minimal Distances
 Fix a point $\mathbf p$. Big idea: project onto subspaces or orthogonal complements.
 
-- Projection onto a vector of $\mathbf b$ onto $\mathbf a$:
+Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf a$:
 	$$
 	\mathrm{proj}_\mathbf{a}(\mathbf b) = \inner[\mathbf b]{\mathbf a}\mathbf{\hat a}
 	\hspace{8em}
