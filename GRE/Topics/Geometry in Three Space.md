@@ -101,7 +101,8 @@ $$
 \mathbf N(t) = \mathbf r(t_0) + t \mathbf r''(t)
 $$
 	- Special case: Planar Curves and Lines: $y = f(x)$,
-		- let $g(x, y) = f(x) - y$ to obtain the normal vector $\nabla g = [f_x(x), -1]$ which has slope $-\frac{1}{g_x(x)}$.
+		- Let $g(x, y) = f(x) - y$, then
+		$$\nabla g = [f_x(x), -1]\implies m = -\frac{1}{f_x(x)}$$
 
 
 
