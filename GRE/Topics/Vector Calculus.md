@@ -112,7 +112,12 @@ $$\begin{align}
 \end{align}$$
 
 - **Line Integrals of Vector Fields**
-	- Always check if exact first: $\dd[y] \mathbf{F_1}$
+	- If exact:
+	$$
+	\dd{y} \mathbf F_1 = \dd x \mathbf F_2 \implies
+	\int \mathbf F_1 ~dx + \mathbf F_2 ~dy = \phi(\mathbf p_1) - \phi(\mathbf p_0)
+	$$
+	The function $\phi$ can be found using the same method from ODEs.
 	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then
 $$\begin{align}
 \int_C \mathbf F \cdot d\mathbf r
