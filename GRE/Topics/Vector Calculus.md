@@ -107,15 +107,17 @@ $$\begin{align}
 
 $$\begin{align}
 \int_C f ~ds
-&= \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}'(t)}~dt \\
+&\definedas \int_a^b (f\circ \mathbf{r})(t) ~\norm{\mathbf{r}'(t)}~dt \\
 &= \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt
 \end{align}$$
 
 - **Line Integrals of Vector Fields**
-
-$$
-\int_C \mathbf F \cdot d\mathbf r = \int_a^b
-$$
+	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then
+$$\begin{align}
+\int_C \mathbf F \cdot d\mathbf r 
+& \definedas \int_a^b (\mathbf F \circ \mathbf r)(t) \cdot \mathbf r'(t) ~dt \\
+&= \int_a^b
+\end{align}$$
 
 - **Flux Integrals**:
 	$$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
