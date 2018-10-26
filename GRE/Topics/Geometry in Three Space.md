@@ -57,8 +57,16 @@ $$\mathbf{x} \in T_f(\mathbf p_0) \implies \inner[\nabla f(\mathbf p_0)]{\mathbf
 ## Normal Lines
 Key insight: the gradient is normal.
 
-- **Planar Curve/Line**: For any planar curve given by $y = g(x)$, let $f(x, y) = g(x) - y$ to obtain the normal vector $\nabla f = [g_x(x), -1]$ with slope $-\frac{1}{g_x(x)}$. Then $$N(x,y) = [x, y] + t \nabla f(x, y) \text{ where } f(x,y) = g(x) - y$$
-- **General Curve/Line**: for a curve $\mathbf{r}(t)$, the normal vector at a point is given by $$T_r'(t) = $$
+To find a normal line, you just need a single point $\mathbf{p}$ and a normal vector $\mathbf n$; then $$
+L = \theset{\mathbf x \mid \mathbf x = \mathbf p + t\mathbf v}
+$$
+
+- **Planar Curve/Line**: For any planar curve given by $y = g(x)$, let $f(x, y) = g(x) - y$ to obtain the normal vector $\nabla f = [g_x(x), -1]$ with slope $-\frac{1}{g_x(x)}$. Then the normal line is given by
+$$
+N(x,y) = [x, y] + t \nabla f(x, y) \text{ where } f(x,y) = g(x) - y
+$$
+
+- **General Curve/Line**: for a curve $\mathbf{r}(t)$,
 
 ### Surfaces
 - Tangent plane to a surface $z = g(x,y)$: let $f(x, y, z) = g(x,y) - z$ and $\mathbf x = [x,y,z]$. Now $\mathbf p$ is on the surface $\iff \mathbf p$ is in a level set of $f$. The gradient of $f$ is normal to the level sets (and thus the surface) so compute $\nabla f = [g_x, g_y, -1]$ and you can proceed to write down the tagent plane equation to obtain an implicit relation that can be solved for $z$.
