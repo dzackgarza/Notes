@@ -74,10 +74,14 @@ $$\begin{align}
 
 ## Computations
 
-- Computing Flux: #todo $$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
+- **Line Integrals**:
+	- For a path $C$ parameterized as $\theset{\mathbf{r}(t): t\in[a,b]}$
+	$$\int_C f ~ds = \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}'(t)}~dt = \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt$$
 
-- Line Integrals: for a path $C$ parameterized as $\theset{\mathbf{r}(t): t\in[a,b]\subseteq \RR}$
-	$$\int_C f ~ds = \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}'(t)}~dt$$
+- **Flux Integrals**:
+	- #todo $$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
+
+
 
 - Recovering Green's Theorem from Stokes' Theorem:
 	- Let $\mathbf{F} = [L, M, 0]$, then $\nabla\cross \mathbf{F} = [0, 0, \frac{\partial M}{\partial x} - \frac{\partial L}{\partial y}]$
