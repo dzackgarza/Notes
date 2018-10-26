@@ -100,6 +100,8 @@ $$
 $$
 \mathbf N(t) = \mathbf r(t_0) + t \mathbf r''(t)
 $$
+	- Special case: Planar Curves and Lines: $y = f(x)$,
+		- let $g(x, y) = f(x) - y$ to obtain the normal vector $\nabla g = [f_x(x), -1]$ which has slope $-\frac{1}{g_x(x)}$.
 
 
 
@@ -118,9 +120,7 @@ To find a normal line, you just need a single point $\mathbf{p}$ and a normal ve
 L = \theset{\mathbf x \mid \mathbf x = \mathbf p + t\mathbf v}
 $$
 
-- **Planar Curve/Line**: For any planar curve given by $y = g(x)$, let $f(x, y) = g(x) - y$ to obtain the normal vector $\nabla f = [g_x(x), -1]$ with slope $-\frac{1}{g_x(x)}$.
 
-- **General Curve/Line**: for a curve $\mathbf{r}(t)$, just use the fact that $ \mathbf r'(t) = \dd{t} \mathbf r(t)$ is tangent to $\mathbf r(t)$, and $\mathbf r''(t) = \frac{\partial^2}{\partial t^2}\mathbf r(t)$ is orthogonal to $\mathbf r'(t)$
 
 ## Minimal Distances
 Fix a point $\mathbf p$. Big idea: project onto subspaces or orthogonal complements.
