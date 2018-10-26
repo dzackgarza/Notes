@@ -13,7 +13,7 @@
 - Orthogonal projection of $\mathbf b$ onto $\mathbf a$:
 	$$\mathrm{proj}_{\mathbf a}^\perp(\mathbf b) = \mathbf b - \mathrm{proj}_\mathbf{a}(\mathbf{b}) = \mathbf b - \inner[\mathbf b]{\mathbf a}\mathbf{\hat a}$$
 
-### Lines
+## Lines
 Equations of a line $L \subset \RR^3: A\hat x + B\hat y + C = 0$
 - Key insights:
 $$
@@ -34,7 +34,7 @@ $$
 - Slope of a line in $\RR^2$: $$\mathbf{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$
 - Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \mathbf{v}^\perp = [-y, x]$$
 
-### Planes
+## Planes
 Equations of a plane $P \subset \RR^3: A\hat x + B\hat y + C\hat y + D = 0$
 - Key insight:
 	$$
@@ -46,10 +46,19 @@ Equations of a plane $P \subset \RR^3: A\hat x + B\hat y + C\hat y + D = 0$
 - Also determined by two points $\mathbf p_0, \mathbf p_1$ using $\mathbf n = \mathbf p_0 \times \mathbf p_1$
 - Useful trick: once you compute $\mathbf n$, you can compute $d = \inner[\mathbf n]{\mathbf p}$ for _any_ point in the plane (don't necessarily need to use the one you started with, so pick any point that's convenient to calculate)
 
-### Tangent and Normal Spaces
+---
+
+## Tangent Lines / Planes
 - Key insight: just need a point and a normal vector, and the gradient is normal to level sets.
 **The Tangent Plane Equation**: for any locus $f(\mathbf x) = 0$, we have
 $$\mathbf{x} \in T_f(\mathbf p_0) \implies \inner[\nabla f(\mathbf p_0)]{\mathbf x-\mathbf p_0} = 0 $$
+
+
+## Normal Lines
+Key insight: the gradient is normal.
+
+- **Planar Curve/Line**: For any planar curve given by $y = g(x)$, let $f(x, y) = g(x) - y$ to obtain the normal vector $\nabla f = [g_x(x), -1]$ with slope $-\frac{1}{g_x(x)}$. Then $$N(x,y) = [x, y] + t \nabla f(x, y) \text{ where } f(x,y) = g(x) - y$$
+- **General Curve/Line**: for a curve $\mathbf{r}(t)$, the normal vector at a point is given by $$T_r'(t) = $$
 
 ### Surfaces
 - Tangent plane to a surface $z = g(x,y)$: let $f(x, y, z) = g(x,y) - z$ and $\mathbf x = [x,y,z]$. Now $\mathbf p$ is on the surface $\iff \mathbf p$ is in a level set of $f$. The gradient of $f$ is normal to the level sets (and thus the surface) so compute $\nabla f = [g_x, g_y, -1]$ and you can proceed to write down the tagent plane equation to obtain an implicit relation that can be solved for $z$.
@@ -65,7 +74,7 @@ $$\mathbf{x} \in T_f(\mathbf p_0) \implies \inner[\nabla f(\mathbf p_0)]{\mathbf
 	- Find two normal vectors and take their cross product, e.g. $n = \nabla f \times \nabla g$, then
 	$$L = \theset{\mathbf x\mid \mathbf x = \mathbf p + t \mathbf n}$$
 
-#### Curves
+### Curves
 - Tangent line to a curve: given $\mathbf{r}(t)$ and $\mathbf{p}_0$, use the fact that $\inner[\mathbf{r}'(t)]{\mathbf{r}(t)} = 0$ to obtain
 $$
 T_r(t) = \mathbf{p}_0 + t\mathbf{r}(t)
@@ -73,11 +82,6 @@ $$
 - Level curves:
 	- Given a surface $f(x,y,z) = 0$, the level curves are obtained by looking at $f(x,y,c) = 0$.
 
-### Normal Spaces
-Key insight: the gradient is normal
-
-- **General Curve/Line**: for a curve $\mathbf{r}(t)$, the normal vector at a point is given by $$T_r'(t) = $$
-- **Planar Curve/Line**: For any planar curve given by $y = g(x)$, let $f(x, y) = g(x) - y$ to obtain the normal vector $\nabla f = [g_x(x), -1]$ with slope $-\frac{1}{g_x(x)}$. Then $$N(x,y) = [x, y] + t \nabla f(x, y) \text{ where } f(x,y) = g(x) - y$$
 
 ### Minimal Distances
 Fix a point $\mathbf p$. Big idea: project onto subspaces or orthogonal complements.
