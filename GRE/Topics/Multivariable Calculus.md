@@ -1,19 +1,10 @@
-Notation:
+## Notation
 
 $\phi: \RR^n \to \RR,~ \quad \phi(x_1, x_2, \cdots) = \cdots$
 
 $\mathbf{F}: \RR^n \to \RR^n,~ \mathbf{F}(x_1,x_2,\cdots) = [\mathbf{F}_1(x_1, x_2, \cdots), \mathbf{F}_2(x_1, x_2, \cdots), \cdots, \mathbf{F}_n(x_1, x_2, \cdots)]$
 
 $\vec{v} = [v_1, v_2, \cdots]$
-
-$R$ is a region, $S$ is a surface, $V$ is a solid.
-
-$$	\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = 	\oint _ { \partial S } [\mathbf{F}_1, \mathbf{F}_2, \mathbf{F}_3] \cdot [dx, dy, dz] = \oint_{\del S} \mathbf{F}_1dx + \mathbf{F}_2dy + \mathbf{F}_3dz$$
-
----
-
-
----
 
 ## Partial Derivatives
 - Chain Rule: Write out tree of dependent variables:
