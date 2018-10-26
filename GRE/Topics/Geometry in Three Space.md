@@ -8,6 +8,12 @@
 - Slope of a line in $\RR^2$: $$\mathbf{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$
 - Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \mathbf{v}^\perp = [-y, x]$$
 
+Important Equations
+$$
+\inner[\mathbf x]{\mathbf y} = \sum_{i=1}^n {x_i y_i} = x_1y_1 + x_2y_2 + \cdots \\
+\norm{\mathbf x} = \sqrt{\inner[\mathbf x]{\mathbf x}} = \sqrt{\sum_{i=1}^n x_i^2} = \sqrt{x_1^2 + x_2^2 + \cdots}
+$$
+
 ## Lines
 $$
 Ax + By + C = 0
