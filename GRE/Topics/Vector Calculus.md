@@ -120,12 +120,14 @@ $$\begin{align}
 & \int_a^b \mathbf F_1(x(t), y(t) \cdots)x_t + \mathbf F_2(x(t), y(t), \cdots)y_t + \cdots ~dt
 \end{align}$$
 
-Equivalently written:
+	- Equivalently written:
 $$
 \int_a^b \mathbf F_1 ~dx + \mathbf F_2 ~dy + \cdots
 \definedas \int_C \mathbf F \cdot d\mathbf r
 $$
 in which case $[dx, dy, \cdots] \definedas [x_t, y_t, \cdots] = \mathbf r'(t)$.
+
+	- _Remember to substitute dx back into the integrand!!_
 
 - **Flux Integrals**:
 	$$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
