@@ -33,6 +33,11 @@ $$\begin{align}
 = \sum_{i=1}^n {x_i y_i} = x_1y_1 + x_2y_2 + \cdots
 && \text{inner/dot product}
 \\
+\norm{\mathbf x} = \sqrt{\inner[\mathbf x]{\mathbf x}}
+= \sqrt{\sum_{i=1}^n x_i^2}
+= \sqrt{x_1^2 + x_2^2 + \cdots}
+&& \text{norm}
+\\
 \mathbf a \cross \mathbf b
 = \mathbf{\hat n} \norm{\mathbf a}\norm{\mathbf b}\sin\theta_{\mathbf a,\mathbf b}
 = \left| \begin{array}{ccc}
@@ -41,11 +46,6 @@ $$\begin{align}
 	b_1 & b_2 & b_3
 \end{array}\right|
 && \text{cross product}
-\\
-\norm{\mathbf x} = \sqrt{\inner[\mathbf x]{\mathbf x}}
-= \sqrt{\sum_{i=1}^n x_i^2}
-= \sqrt{x_1^2 + x_2^2 + \cdots}
-&& \text{norm}
 \\
 \nabla
 \definedas \sum_{i=1}^n \frac{\partial}{\partial x_i} \mathbf{e}_i
