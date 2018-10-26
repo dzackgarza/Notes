@@ -112,6 +112,7 @@ $$\begin{align}
 \end{align}$$
 
 - **Line Integrals of Vector Fields**
+	- Always check if exact first: $\dd[y] \mathbf{F_1}$
 	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then
 $$\begin{align}
 \int_C \mathbf F \cdot d\mathbf r
