@@ -13,8 +13,10 @@
 # Multivariable Calculus
 @import "Topics/Multivariable Calculus.md"
 
+# Geometry in $\RR^3$
 @import "Topics/Geometry in Three Space.md"
 
+# Vector Calculus
 @import "Topics/Vector Calculus"
 
 ---
