@@ -44,7 +44,9 @@ ax + by + cz = d
 $$
 
 - Determined by a point $\mathbf p_0$ and a normal vector $\mathbf n$
-- Also determined by two points $\mathbf p_0, \mathbf p_1$ using $\mathbf n = \mathbf p_0 \times \mathbf p_1$
+	- Also determined by two points $\mathbf p_0, \mathbf p_1$ using $\mathbf n = \mathbf p_0 \times \mathbf p_1$
+- Can read normal vector off of equation: $\mathbf n = [a,b,c]$
+	- And $d = \inner[\mathbf n]{\mathbf p_0}$
 
 
 - Other Facts
