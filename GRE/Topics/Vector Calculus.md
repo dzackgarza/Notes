@@ -104,10 +104,14 @@ $$\begin{align}
 
 - **Line Integrals**:
 	- For a path $C$ parameterized as $\theset{\mathbf{r}(t): t\in[a,b]}$
-	$$\int_C f ~ds = \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}'(t)}~dt = \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt$$
+	$$
+	\int_C f ~ds
+	= \int_a^b f(\mathbf{r}(t)) ~\norm{\mathbf{r}'(t)}~dt 
+	= \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt
+	$$
 
 - **Flux Integrals**:
-	- #todo $$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
+	$$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
 
 
 - Recovering Green's Theorem from Stokes' Theorem:
