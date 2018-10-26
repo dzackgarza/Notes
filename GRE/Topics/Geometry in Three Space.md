@@ -78,9 +78,13 @@ $$
 		- $f(x,y)$ around the $x$ axis yields $f(x, \pm \sqrt{y^2 + z^2})=0$
 		- $f(x,y)$ around the $y$ axis yields $f(\pm\sqrt{x^2 + z^2}, y)=0$
 		- Remaining cases proceed similarly - leave the axis variable alone, replace other variable with square root involving missing axis.
+
 - Equations of lines tangent to an intersection of surfaces $f(x,y,z) = g(x,y,z)$:
 	- Find two normal vectors and take their cross product, e.g. $n = \nabla f \times \nabla g$, then
 	$$L = \theset{\mathbf x\mid \mathbf x = \mathbf p + t \mathbf n}$$
+
+- Level curves:
+	- Given a surface $f(x,y,z) = 0$, the level curves are obtained by looking at e.g. $f(x,y,c) = 0$.
 
 ## Curves
 $$
@@ -99,8 +103,7 @@ $$
 \mathbf N(t) = \mathbf r(t_0) + t \mathbf r''(t)
 $$
 
-- Level curves:
-	- Given a surface $f(x,y,z) = 0$, the level curves are obtained by looking at $f(x,y,c) = 0$.
+
 
 ---
 
