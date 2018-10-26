@@ -137,10 +137,10 @@ in which case $[dx, dy, \cdots] \definedas [x_t, y_t, \cdots] = \mathbf r'(t)$.
 - **Flux Integrals**:
 	$$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
 
+- **Computing Areas with Green's Theorem**
+	- Given $R$ and $f(x,y) = 0$
+		- Compute $$\frac{1}{2} \int_{\del R} x ~dx = -\frac{1}{2} \int_{\del R} y ~dy =\iint_R 1 ~dA $$
 
-- Recovering Green's Theorem from Stokes' Theorem:
-	- Let $\mathbf{F} = [L, M, 0]$, then $\nabla\cross \mathbf{F} = [0, 0, \frac{\partial M}{\partial x} - \frac{\partial L}{\partial y}]$
-Some Results
 
 ## Other Results
 - $\nabla \cdot \mathbf{F} = 0 \not \implies \exists G:~ \mathbf{F} = \nabla\cross G$
@@ -149,3 +149,7 @@ Some Results
 	since $\del S^2 = \emptyset$.  
 	- Sufficient condition: $\mathbf{F}$ is everywhere $C^1$
 $$\exists \mathbf{G}:~ \mathbf{F} = \nabla \cross \mathbf{G} \iff \forall \text{ closed } S, \iint_S \mathbf{F}\cdot d\mathbf{S} = 0$$
+
+
+- Recovering Green's Theorem from Stokes' Theorem:
+	- Let $\mathbf{F} = [L, M, 0]$, then $\nabla\cross \mathbf{F} = [0, 0, \frac{\partial M}{\partial x} - \frac{\partial L}{\partial y}]$
