@@ -8,10 +8,6 @@
 - Slope of a line in $\RR^2$: $$\mathbf{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$
 - Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \mathbf{v}^\perp = [-y, x]$$
 
-Important Equations
-$$
-
-$$
 
 ## Lines
 $$
