@@ -77,7 +77,8 @@ $$\mathbf{x} \in T_f(\mathbf p_0) \implies \inner[\nabla f(\mathbf p_0)]{\mathbf
 		- $f(x,y)$ around the $y$ axis yields $f(\pm\sqrt{x^2 + z^2}, y)=0$
 		- Remaining cases proceed similarly - leave the axis variable alone, replace other variable with square root involving missing axis.
 - Equations of lines tangent to an intersection of surfaces $f(x,y,z) = g(x,y,z)$:
-	- Find two normal vectors and take their cross product, i.e. $L = \nabla f \times \nabla g$
+	- Find two normal vectors and take their cross product, e.g. $n = \nabla f \times \nabla g$, then
+	$$L = \theset{\mathbf x\mid \mathbf x = \mathbf p + t \mathbf n}$$
 
 #### Curves
 - Tangent line to a curve: given $\mathbf{r}(t)$ and $\mathbf{p}_0$, use the fact that $\inner[\mathbf{r}'(t)]{\mathbf{r}(t)} = 0$ to obtain
