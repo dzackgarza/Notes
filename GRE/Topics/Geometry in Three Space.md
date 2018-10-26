@@ -45,12 +45,12 @@ $$
 
 - Determined by a point $\mathbf p_0$ and a normal vector $\mathbf n$
 	- Also determined by two points $\mathbf p_0, \mathbf p_1$ using $\mathbf n = \mathbf p_0 \times \mathbf p_1$
-- Can read normal vector off of equation: $\mathbf n = [a,b,c]$
-	- And $d = \inner[\mathbf n]{\mathbf p_0}$
+
 
 - Other Facts
+	- Can read normal vector off of equation: $\mathbf n = [a,b,c]$
 	$$
-	n_0 x + n_1 y + n_2 z = d = n_1p_1 + n_2p_2 + n_3p_3
+	d =  \inner[\mathbf n]{\mathbf p_0} = n_1p_1 + n_2p_2 + n_3p_3
 	$$
 
 - Useful trick: once you compute $\mathbf n$, you can compute $d = \inner[\mathbf n]{\mathbf p}$ for _any_ point in the plane (don't necessarily need to use the one you started with, so pick any point that's convenient to calculate)
