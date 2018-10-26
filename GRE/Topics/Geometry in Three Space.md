@@ -136,7 +136,7 @@ Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf
 
 - **Point to line**:
 
-	- Given a line $L = \theset{t\mathbf v: t\in \RR}$ for some fixed $\mathbf v$
+	- Given a line $L: \mathbf x(t) = t\mathbf v$ for some fixed $\mathbf v$, use
 	$$
 	d = \norm{\mathrm{proj}_\mathbf{v}^\perp(\mathbf{p})}
 	$$
