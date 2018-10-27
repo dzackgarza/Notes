@@ -7,6 +7,11 @@ $\mathbf{F}: \RR^n \to \RR^n,~ \mathbf{F}(x_1,x_2,\cdots) = [\mathbf{F}_1(x_1, x
 $\vec{v} = [v_1, v_2, \cdots]$
 
 ## Partial Derivatives
+- Definition:
+$$
+\dd{x} f(x,y) =
+\lim_{h \to 0} \frac{f(x+h, y) - f(x,y)}{h}
+$$
 - Chain Rule: Write out tree of dependent variables:
 ```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
