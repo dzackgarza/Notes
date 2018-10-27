@@ -148,6 +148,9 @@ Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf
 	$$
 	- Given a line $L: \mathbf x(t) = \mathbf w_0 + t\mathbf w$, let $\mathbf v = \mathbf x(1) - \mathbf x(0)$ and proceed as above.
 
+- **Point to a Curve**
+	- Todo
+
 - **Line to line**:
 	- Given $\mathbf{r}_1(t) = \mathbf p_1 + t\mathbf v_2$ and $\mathbf{r}_2(t) = \mathbf p_2 + t\mathbf v_2$:
 		- Let $\mathbf n = \mathbf v_1 \times \mathbf v_2$, which is normal to both lines.
