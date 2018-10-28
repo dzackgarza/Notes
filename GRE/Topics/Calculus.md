@@ -99,6 +99,11 @@ General series of steps: want to know some unknown rate $y_t$
 	= \int_{y_0}^{y_1}\sqrt{\dd[x]{y} + 1}~dy
 	$$
 	- $SA = \int 2 \pi r(x) ~ds$
+- Center of Mass
+	- Given a density $\rho(\mathbf x)$ of an object $R$, the $x_i$ coordinate is given by
+$$
+x_i = \frac{\int_R x_i\rho(x) ~dx}{\int_R \rho(x)~dx}
+$$
 
 ### Big List of Integration Techniques
 
