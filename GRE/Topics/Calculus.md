@@ -140,6 +140,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 $$
 \int_a^b f(x)~dx = \int_{\tan\frac{a}{2}}^{\tan\frac{b}{2}} f(u)~du
 $$
+		- Example: $\int_0^{\pi/2} \frac{1}{\sin \theta}~d\theta = 1/2$
 
 Derivatives  | Integrals  |  Signs | Result
 ---|---|--|---|---
