@@ -68,6 +68,10 @@ D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
 = \left| \begin{array} { c c c } { \mathbf { e }_1 } & { \mathbf { e }_2 } & { \mathbf { e }_3 } \\ { \frac { \partial } { \partial x } } & { \frac { \partial } { \partial y } } & { \frac { \partial } { \partial z } } \\ { \mathbf{F} _ { 1 } } & { \mathbf{F} _ { 2 } } & { \mathbf{F} _ { 3 } } \end{array} \right|  = [\mathbf{F}_{3y} - \mathbf{F}_{2z}, \mathbf{F}_{1z}- \mathbf{F}_{3x}, \mathbf{F}_{2x} -\mathbf{F}_{1y}]
 && \text{curl}
 \\
+\iint _ { S } ( \nabla \times \mathbf { F } ) \cdot d \mathbf { S } = \iint _ { S } ( \nabla \times \mathbf { F } ) \cdot \mathbf { n } ~dS
+&& \text{surface integral}
+\\
+a
 \end{align}$$
 - Note that the directional derivative uses a normalized direction vector!
 
