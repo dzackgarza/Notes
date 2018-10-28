@@ -15,6 +15,7 @@
 	- Memorize which sequences converge!
 
 ## Chapter 3
+- 6,7,8,9,11,12,14,16,17,23,24,28,29
 
 ## Chapter 4
 
