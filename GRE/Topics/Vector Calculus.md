@@ -102,7 +102,12 @@ $$\begin{align}
 - Curl: takes vector fields on $\RR^3$ to vector fields on $\RR^3$
 
 
-- Spherical Coordinates: $$ x = r\cos\theta = \rho\sin\phi\cos\theta \\ y = r\sin\theta = \rho\sin\phi\sin\theta$$
+- Spherical Coordinates:
+$$
+x = r\cos\theta = \rho\sin\phi\cos\theta \\
+y = r\sin\theta = \rho\sin\phi\sin\theta \\
+dV \mapsto r^2 \sin\phi ~dV
+$$,
 
 ## Computations
 
