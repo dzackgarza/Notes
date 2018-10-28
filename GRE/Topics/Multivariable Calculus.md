@@ -9,9 +9,28 @@ $\vec{v} = [v_1, v_2, \cdots]$
 ## Partial Derivatives
 - Definition:
 $$
+f: \RR^n \to \RR \\
+\dd[f]{x_i}(\mathbf p)  = \lim_{h\to 0}\frac{f(\mathbf p + h\mathbf e_i)  - f(\mathbf p)}{h}
+$$
+
+Most common case:
+$$
+f: \RR^2 \to \RR \\
 \dd{x} f(x,y) =
 \lim_{h \to 0} \frac{f(x+h, y) - f(x,y)}{h}
 $$
+
+Most general case:
+
+$$
+f: \RR^n \to \RR^m \\
+\text{A linear transformation } D_f \text{ such that }
+\\
+\lim _ { \mathbf x \rightarrow \mathbf a } \frac { \left\| f (\mathbf x ) - f (\mathbf a ) - D_f (\mathbf x - \mathbf a ) \right\| } { \| \mathbf x - \mathbf a \| } = 0
+\\
+D_f(\mathbf a) = \left[ \begin{array} { c c c c } { \frac { \partial f _ { 1 } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { 1 } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \ldots } & { \frac { \partial f _ { 1 } } { \partial x _ { n } } ( \mathbf { a } ) } \\ { \frac { \partial f _ { 2 } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { 2 } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \dots } & { \frac { \partial f _ { 2 } } { \partial x _ { n } } ( \mathbf { a } ) } \\ { \vdots } & { \vdots } & { \ddots } & { \vdots } \\ { \frac { \partial f _ { m } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { m } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \cdots } & { \frac { \partial f _ { m } } { \partial x _ { n } } ( \mathbf { a } ) } \end{array} \right]
+$$
+
 - Chain Rule: Write out tree of dependent variables:
 ```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
