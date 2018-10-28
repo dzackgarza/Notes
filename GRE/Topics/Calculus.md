@@ -120,7 +120,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	\int_a^b uv &= uv^{-1}\bigg\rvert_a^b  - \int_a^b u^{1} v^{-1}\\
 	&= uv^{-1} - u^1v^{-2}\bigg\rvert_a^b + \int_a^b u^2v^{-2} \\
 	&= uv^{-1} - u^1v^{-2} + u^2v^{-3}\bigg\rvert_a^b - \int_a^b u^3v^{-3} \\
-	&\vdots \\
+	&\quad\vdots \\
 	\implies \int_a^b uv &= (-1)^n\int_a^b u^nv^{-n} + \sum_{k=1}^n (-1)^k u^{k-1}v^{-k} \bigg\rvert_a^b
 	\end{align}$$
 	- Generally useful when one term's $n$th derivative is a constant.
