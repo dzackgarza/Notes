@@ -107,12 +107,14 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 - Guess and check: look for a function that differentiates to $f$.
 - $u\dash$ substitution
 	- More generally, any change of variables
-$$
-x = g(u) \implies \int_a^b f(x)~dx = \int_{g^{-1}(a)}^{g^{-1}(b)} (f\circ g)(x) ~g'(x)~dx
-$$
+	$$
+	x = g(u) \implies \int_a^b f(x)~dx = \int_{g^{-1}(a)}^{g^{-1}(b)} (f\circ g)(x) ~g'(x)~dx
+	$$
 - Integration by Parts:
 	- The standard form:
-	$$ \int u dv = uv - \int v du $$
+	$$
+	\int u dv = uv - \int v du
+	$$
 	- A more general form for repeated applications: let $v^{-1} = \int v$, $v^{-2} = \int\int v$, etc.
 	$$\begin{align}
 	\int_a^b uv &= uv^{-1}\bigg\rvert_a^b  - \int_a^b u^{1} v^{-1}\\
