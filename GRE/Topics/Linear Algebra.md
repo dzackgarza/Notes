@@ -9,6 +9,7 @@ Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear tra
 	- Add any row to another
 - $A (m\times n),~ B(n\times p),~ AB = C \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner[\mathbf{a^T_i}]{\mathbf{b_j}}$
 	- i.e., the $c_{ij}$ entry is just dotting row $i$ of $A$ with column $j$ of $B$.
+- $\abs{A \mod p} \mod p \cong \abs{A} \mod p$
 
 ## Systems of Linear Equations
 Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A \mid \vec b)$ an augmented matrix.

@@ -1,8 +1,9 @@
 ## To Sort
-- Fermat's Little Theorem
-- The Euclidean Algorithm
 - Burnside's Lemma
+- Cauchy's Theorem
+	- If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
 - The Sylow Theorems
+	- If $\abs{G} = n = \prod p_i^{k_i}$, for each $i$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
 - Galois Theory
 - [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
 
@@ -111,6 +112,7 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 		- Counterexample: $G = \ZZ_4 \cross \ZZ_2, H = <(0,1)>, K = <(2,0)>$. Then $G/H \cong \ZZ_4 \not\cong \ZZ_2^2 \cong G/K$
 	- $G\in\mathbf{Ab} \implies $ for each $p$ dividing $o(G)$, there is an element of order $p$
 	- Any surjective homomorphism $\phi: A \surjects B$ where $o(A) = o(B)$ is an isomorphism
+	- If $G$ is abelian, for each $d\mid \abs{G}$ there is exactly one subgroup of order $d$.
 
 - Sylow Subgroups:
 	- Todo

@@ -1,0 +1,1 @@
+ - Choosing: $n\choose k$
