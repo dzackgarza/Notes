@@ -70,16 +70,19 @@ Where the subscripts denote which variables are held constant.
 	- $z = f(x,y):$ use Tangent plane formulation to obtain
 	$$f(x,y) \approx f(x_0, y_0) + f_x(x_0, y_0)(x-x_0) + f_y(x_0, y_0)(y-y_0)$$
 - Optimization
-	- Critical points of $f(\vec x)$ given by points $\vec p$ such that $\nabla f\mid_{\vec p_0} = 0$
+	- Critical points of $f$ given by points $\vec p$ such that $\nabla f({\mathbf p}) = 0$
 	- Second derivative test: compute $\abs{H_f(\mathbf p)} \definedas  \left| \begin{array} { l l } { f _ { x x } } & { f _ { x y } } \\ { f _ { y x } } & { f _ { y y } } \end{array} \right| ({ \mathbf p  })$.
 	- By cases:
 		- $\abs{H(\mathbf p)} = 0$: No conclusion
 		- $\abs{H(\mathbf p)} < 0$: Saddle point
-		- $\abs{H(\mathbf p)} > 0$:
-			- $f_{xx}(\mathbf p) > 0 \implies $ local min
-			- $f_{xx}(\mathbf p) < 0 \implies $ local max
+		- $\abs{H(\mathbf p)} > 0$: 
+			- $f_{xx}(\mathbf p) > 0 \implies$ local min
+			- $f_{xx}(\mathbf p) < 0 \implies$ local max
 	- Mnemonic: make matrix with $\nabla f$ as the columns, and then differentiate variables left to right.
-	- What's really going on: local min $\iff$ positive definite $\iff$ eigenvalues of $H$ are positivie
+	- What's really going on:
+		- Eigenvalues have same sign $\iff$ positive definite or negative definite
+		- Positive definite $\implies$ convex $\implies$ local min
+		- Negative definite $\implies$ concave $\implies$ local max
 - Constrained by domain:
 	- Extrema occur on boundaries, so parametrize each boundary to obtain a function in one less variable and apply standard optimization techniques to yield critical points. Test all critical points to find extrema.
 - Constrained by an equation:
