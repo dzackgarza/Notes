@@ -106,6 +106,10 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 
 - Guess and check: look for a function that differentiates to $f$.
 - $u\dash$ substitution
+	- More generally, any change of variables
+$$
+x = g(u) \implies \int_a^b f(x)~dx = \int_{g^{-1}(a)}^{g^{-1}(b)} (f\circ g)(x) ~g'(x)~dx
+$$
 - Integration by Parts:
 	- The standard form:
 	$$ \int u dv = uv - \int v du $$
@@ -128,6 +132,12 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	$$
 	- Proof: let $F(x)$ be an antiderivative and compute $F'(x)$ using the chain rule.
 	- #todo for constants, this should allow differentiating under the integral when $f, f_x$ are "jointly continuous"
+- The ridiculous trig sub: for any integrand containing only  trig terms
+	- Transforms *any* such integrand into a rational function of $x$
+	- Let $u = 2\tan^{-1}x, ~du = \frac{2}{x^2+1}$, then
+$$
+\int_a^b f(x)~dx = \int_{\tan\frac{a}{2}}^{\tan\frac{b}{2}} f(u)~du
+$$
 
 Derivatives  | Integrals  |  Signs | Result
 ---|---|--|---|---
