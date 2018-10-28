@@ -99,5 +99,5 @@ Where the subscripts denote which variables are held constant.
 
 For any $f: \RR^n \to \RR^n$ and region $R$,
 $$
-\int _ { g ( R ) } f ( \mathbf { x } ) ~d V = \int _ { R } f ( g ( \mathbf { x } ) ) \cdot \operatorname { det } ( D ( g ( \mathbf { x } ) ) ) ~d V
+\int _ { g ( R ) } f ( \mathbf { x } ) ~d V = \int _ { R } (f  \circ g) ( \mathbf { x } )  \cdot \abs{D_g  ( \mathbf { x })} ~d V
 $$
