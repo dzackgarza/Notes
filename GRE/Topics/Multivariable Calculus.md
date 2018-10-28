@@ -75,7 +75,7 @@ Where the subscripts denote which variables are held constant.
 	- By cases:
 		- $\abs{H(\mathbf p)} = 0$: No conclusion
 		- $\abs{H(\mathbf p)} < 0$: Saddle point
-		- $\abs{H(\mathbf p)} > 0$: 
+		- $\abs{H(\mathbf p)} > 0$:
 			- $f_{xx}(\mathbf p) > 0 \implies$ local min
 			- $f_{xx}(\mathbf p) < 0 \implies$ local max
 	- Mnemonic: make matrix with $\nabla f$ as the columns, and then differentiate variables left to right.
@@ -93,3 +93,11 @@ Where the subscripts denote which variables are held constant.
 	2. Use $\lambda$ to obtain a relation involving only components of $\mathbf{x}$.
 	3. Substitute relations **back into constraint** to obtain a collection of critical points.
 	4. Evaluate $f$ at critical points to find max/min.
+
+
+## Change of Variables
+
+For any $f: \RR^n \to \RR^n$ and region $R$,
+$$
+\int _ { g ( R ) } f ( \mathbf { x } ) ~d V = \int _ { R } f ( g ( \mathbf { x } ) ) \cdot \operatorname { det } ( D ( g ( \mathbf { x } ) ) ) ~d V
+$$
