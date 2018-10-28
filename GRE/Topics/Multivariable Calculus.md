@@ -73,11 +73,11 @@ Where the subscripts denote which variables are held constant.
 	- Critical points of $f(\vec x)$ given by points $\vec p$ such that $\nabla f\mid_{\vec p_0} = 0$
 	- Second derivative test: compute $\abs{H_f(\mathbf p)} \definedas  \left| \begin{array} { l l } { f _ { x x } } & { f _ { x y } } \\ { f _ { y x } } & { f _ { y y } } \end{array} \right| ({ \mathbf p  })$.
 	- By cases:
-		- $H(\mathbf p_0) = 0$: No conclusion
-		- $H(\mathbf p_0) < 0$: Saddle point
-		- $H(\mathbf p_0) > 0$:
-			- $f_{xx}(\mathbf p_0) > 0 \implies $ local min
-			- $f_{xx}(\mathbf p_0) < 0 \implies $ local max
+		- $\abs{H(\mathbf p)} = 0$: No conclusion
+		- $\abs{H(\mathbf p)} < 0$: Saddle point
+		- $\abs{H(\mathbf p)} > 0$:
+			- $f_{xx}(\mathbf p) > 0 \implies $ local min
+			- $f_{xx}(\mathbf p) < 0 \implies $ local max
 	- Mnemonic: make matrix with $\nabla f$ as the columns, and then differentiate variables left to right.
 	- What's really going on: local min $\iff$ positive definite $\iff$ eigenvalues of $H$ are positivie
 - Constrained by domain:
