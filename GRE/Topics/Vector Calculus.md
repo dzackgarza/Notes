@@ -150,8 +150,9 @@ in which case $[dx, dy, \cdots] \definedas [x_t, y_t, \cdots] = \mathbf r'(t)$.
 - **Surface Integrals**
 	- For a paramterization $\mathbf r(s,t): U \to S$ of a surface $S$ and any function $f: \RR^n \to \RR$,
 $$
-\iint _ { S } f ~dA = \iint _ { U } ( f \circ \mathbf r) ( s , t ) \cdot \left\| T _ { u } \times T _ { v } \right\| ~dA
+\iint _ { S } f ~dA = \iint _ { U } ( f \circ \mathbf r) ( s , t )~\norm{\mathbf n}  ~dA
 $$
+	- Can obtain a normal vector $\mathbf n = T _ { u } \times T _ { v }$
 
 ## Other Results
 - $\nabla \cdot \mathbf{F} = 0 \not \implies \exists G:~ \mathbf{F} = \nabla\cross G$
