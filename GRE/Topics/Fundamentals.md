@@ -273,5 +273,16 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 - $A_k$ countable $\implies \prod_{k=1}^n A_k, \union_{k=1}^\infty A_k$ countable
 
 ### Preimage Identities
+Injectivity: left cancellation
+Surjectivity: right cancellation
 - $A \subseteq f^{-1}(f(A))$
 	- $A = f^{-1}(f(A)) \iff f$ is injective
+- $f(f^{-1}(A)) \subseteq A$
+	- $f(f^{-1}(A)) = A \iff f$ is surjective
+- $A \subseteq B \implies f(A) \subseteq f(B) \or f^{-1}(A) \subseteq f^{-1}(B)$
+- $f(\union_{i\in I}A_i) = \union_{i\in I} f(A_i)$
+	- $f^{-1}(\union_{i\in I}A_i) = \union_{i\in I} f^{-1}(A_i)$
+- $f(\intersect_{i\in I}A_i) = \intersect_{i\in I} f(A_i)$
+	- $f^{-1}(\intersect_{i\in I}A_i) = \intersect_{i\in I} f^{-1}(A_i)$
+- $f(A) - f(B) \subseteq f(A-B)$
+	- But $f^{-1}(A) - f^{-1}(B)  = f^{-1}(A-B)$
