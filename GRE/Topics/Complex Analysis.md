@@ -44,6 +44,9 @@ $$
 
 
 
+$$
+\oint_C f(z)~dz = 2\pi i \sum_k \mathrm{Res}(f, z_k)
+$$
 - Computing residues:
 $$
 \operatorname { Res } ( f , c ) = \frac { 1 } { ( n - 1 ) ! } \lim _ { z \rightarrow c } \frac { d ^ { n - 1 } } { d z ^ { n - 1 } } \left( ( z - c ) ^ { n } f ( z ) \right) \\
@@ -57,7 +60,7 @@ Definitions
 - Meromorphic
 
 Complex Analytic $\implies$ smooth and all derivatives are analytic
-- Not true in real case, take the everywhere differentiable but not $C^1$ function 
+- Not true in real case, take the everywhere differentiable but not $C^1$ function
 $$
 f(x) = \cases{
 	-\frac{1}{2}x^2 & $x < 0$ \\ ~~~
