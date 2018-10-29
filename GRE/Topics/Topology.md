@@ -3,9 +3,11 @@
 - Neighborhood
 	- $N_r(p) = \theset{q \mid d_X(p,q) < r}$
 - Limit Point
-	- $p$ is a limit point of $E$ if $\forall N_r(p),~ \exists q\neq p \mid q \in N_r(p)$
+	- $p$ is a limit point of $E$ iff $\forall N_r(p),~ \exists q\neq p \mid q \in N_r(p)$
 	- Equivalently, $\forall N_r(p),~ N_r(p) \cap E \neq \emptyset$
 - Isolated Point
+	- $p$ is an isolated point of $E$ iff $p$ is not a limit point of $E$
+	- Equivalently, $\exists N_r(p) \mid N_r(p) \cap E = \emptyset$
 - Perfect
 - Dense
 - Interior
