@@ -1,11 +1,11 @@
 Summary for GRE exam:
-- limits,
-- continuity,
-- boundedness,
-- compactness,
-- definitions of topological spaces,
+- Limits,
+- Continuity,
+- Boundedness,
+- Compactness,
+- Definitions of topological spaces,
 - Lipschitz continuity
-- sequences and series of functions.
+- Sequences and series of functions.
 
 Notation used throughout: $f: \RR \to \RR,~\mathbf{f}:\RR^n \to \RR^m$, $K$ is a compact set, and "integrable" or $L_R(K)$ denotes "Riemann integrable on $K$".
 
@@ -65,8 +65,11 @@ $$
 $$
 **Answer**: No.
 
-**Counterexample**: $$f ( x ) = \left\{ \begin{array} { l l } { x ^ { 2 } \sin ( 1 / x ) } & { \text { if } x \neq 0 } \\ { 0 } & { \text { if } x = 0 } \end{array} \right.
-\implies f ^ { \prime } ( x ) = \left\{ \begin{array} { l l } { 2 x \sin \left( \frac { 1 } { x } \right) - \cos \left( \frac { 1 } { x } \right) } & { \text { if } x \neq 0 } \\ { 0 } & { \text { if } x = 0 } \end{array} \right.$$
+**Counterexample**:
+$$
+f ( x ) = \left\{ \begin{array} { l l } { x ^ { 2 } \sin ( 1 / x ) } & { \text { if } x \neq 0 } \\ { 0 } & { \text { if } x = 0 } \end{array} \right.
+\implies f ^ { \prime } ( x ) = \left\{ \begin{array} { l l } { 2 x \sin \left( \frac { 1 } { x } \right) - \cos \left( \frac { 1 } { x } \right) } & { \text { if } x \neq 0 } \\ { 0 } & { \text { if } x = 0 } \end{array} \right.
+$$
 which is discontinuous at zero.
 
 **Sufficient Condition**: There doesn't seem to be a general one (which is perhaps why we study $C^k$ functions).
@@ -152,18 +155,24 @@ $$
 ---
 
 ## Continuity
-
-$$f~\text{cts} \iff \lim_{x \to p} f(x) = f(p)$$
+$$
+f\text{ continuous } \iff \lim_{x \to p} f(x) = f(p)
+$$
 
 Example of a discontinuous function: $\sin(\frac{1}{x})$ at $x=0$.
 
-Uniiform continuity #todo
+Uniform continuity #todo
 
 ## Differentiability
+$$
+f'(p) \definedas \frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p}
+$$
 
-$$f'(p) \definedas \frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p}$$
 - For multivariable functions: existence and continuity of $\frac{\partial \mathbf{f}}{\partial x_i} \forall i \implies \mathbf{f}$ differentiable
-	- Necessity of continuity: example of a continuous functions with all partial and directional derivatives that is not differentiable: $$f(x, y) = \cases{\frac{y^3}{x^2+y^2} & $(x,y) \neq (0,0)$ \\ 0 & else}$$
+	- Necessity of continuity: example of a continuous functions with all partial and directional derivatives that is not differentiable:
+$$
+f(x, y) = \cases{\frac{y^3}{x^2+y^2} & $(x,y) \neq (0,0)$ \\ 0 & else}
+$$
 
 ## Properties, strongest to weakest
 $$
@@ -307,6 +316,11 @@ $$
 - $X$ compact $\implies X$ complete and bounded.
 	- Holds for any metric space, converse generally does not
 - $X$ compact and $Y \subset X \implies Y$ compact $\iff$ $Y$ closed.
+- Definition of a metric:
+	- $d(x,y) \geq 0,$
+		- $d(x,y) = 0 \iff x = y$
+	- $d(x,y) = d(y,x)$
+	- $\forall p,~ d(x,y) \leq d(x,p) + d(p,y) $
 
 
 ## Series
