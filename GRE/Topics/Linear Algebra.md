@@ -10,6 +10,10 @@ Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear tra
 - $A (m\times n),~ B(n\times p),~ AB = C \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner[\mathbf{a^T_i}]{\mathbf{b_j}}$
 	- i.e., the $c_{ij}$ entry is just dotting row $i$ of $A$ with column $j$ of $B$.
 - $\abs{A \mod p} \mod p \cong \abs{A} \mod p$
+- For $2\cross 2$ matrices,
+	$$
+	A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac{1}{\abs{A}}\left( \begin{array}{cc} d & -b \\ -c & a \end{array}\right)
+	$$
 
 ## Systems of Linear Equations
 Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A \mid \vec b)$ an augmented matrix.
@@ -49,6 +53,8 @@ Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A 
 	- Rowspace: reduce to RREF, and take nonzero rows of RREF $(\subseteq \RR^n)$
 	- Colspace: reduce to RREF, and take columns with pivots from original $A$ $(\subseteq \RR^m)$
 	- Nullspace: reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
+	- Eigenspace: find the nullspace of $A - \lambda I$
+	- todo: example
 
 ## Eigenvalues and Eigenvectors
 - Defining equation: $\lambda\in E(A) \iff \forall x \in \RR^m, A\vec x = \lambda\vec x$

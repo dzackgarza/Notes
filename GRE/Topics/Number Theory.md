@@ -12,6 +12,13 @@
 	\phi(n) = \phi(\prod_i p_i^{k_i}) &= \prod_i p_i^{k_i-1}(p_i-1) \\ &= n \left(\frac{\prod_i (p_i-1)}{\prod_i p_i}\right) \\ &= n\prod_i(1 - \frac{1}{p_i})
 	\end{align}$$
 
+- Invertibility:
+$$
+xa = xb \mod n \implies a = b \mod \frac{n}{(x,n)}
+$$
+	- i.e. $x$ is invertible in $\ZZ_n \iff (x,n) = 1$
+	- Implication: $\abs{\ZZ_n^\cross} = \phi(n)$
+
 - Fermat's Little Theorem
 $$
 x^{p} - x = 0 \mod p \\
