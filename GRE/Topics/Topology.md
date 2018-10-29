@@ -14,6 +14,8 @@
 	- Path connected $\implies$ connected
 - Simply Connected
 - Totally Disconnected
+- Compact
+	- Every covering has a finite subcovering.
 
 Example:
 - The space $\theset{\frac{1}{n}}_{n\in \NN}$
