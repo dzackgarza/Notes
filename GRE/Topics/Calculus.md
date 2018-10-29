@@ -66,6 +66,7 @@
 - Product rule: $\dd{x}f(x)g(x) =f'g + g'f$
 	- Note for all rules: always prime the first thing!
 - Quotient rule: $\dd{x} \frac{f(x)}{g(x)} = \frac{f'g - g'f}{g^2}$
+- Inverse rule: $\dd[f^{-1}]{x}(f(x_0)) = \left( \dd[f]{x} \right)^{-1}(x_0) = 1/f'(x_0)$
 - Implicit differentiation: $(f(x))' = f'(x)~dx, (f(y))' = f'(y)~dy$
 	- Often able to solve for $\dd[y]{x}$ this way.
 - Obtaining derivatives of inverse functions: if $y = f^{-1}(x)$ then write $f(y) = x$ and implicitly differentiate.
