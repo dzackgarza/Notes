@@ -51,7 +51,16 @@ f(z) = \frac{g(z)}{h(z)} \implies \operatorname { Res } ( f , c ) = \frac{g(c)}{
 $$
 
 Definitions
-- Analytic
+- Analytic: differentiable everywhere
 - Entire
 - Holomorphic
 - Meromorphic
+
+Complex Analytic $\implies$ smooth and all derivatives are analytic
+- Not true in real case, take
+$$
+f(x) = \cases{
+	-\frac{1}{2}x^2 & $x < 0$ \\ ~~~
+	\frac{1}{2}x^2 & $x \geq 0$
+}
+$$
