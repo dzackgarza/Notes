@@ -1,5 +1,6 @@
 
 - $a\mid b \iff b = 0 \mod a$
+- Notation: $(a,b) = \gcd(a,b)$
 - Totient Function
 	$$
 	\phi(p) = p-1 \\
@@ -12,10 +13,13 @@
 	\end{align}$$
 
 - Fermat's Little Theorem
-	$$ x^n - x = 0 \mod n \\
-	x^{p-1} - 1 = 0 \mod p $$
+$$
+x^{p} - x = 0 \mod p \\
+x^{p-1} - 1 = 0 \mod p \quad \text{ if } p \not\mid a
+$$
 - The Euclidean Algorithm
+	- todo
 - The Jacobi symbol
 
 Solving $ax + by = c$
-- Has solutions $\iff$
+- Has solutions $\iff c = 0 \mod (a,b) \iff \gcd(a,b) \text{ divides } c$.
