@@ -1,13 +1,16 @@
 - Open sets: closed under arbitrary unions, finite intersections
 - Closed sets: closed under finite unions, arbitrary intersections
 - Neighborhood
+	- $N_r(p) = \theset{q \mid d_X(p,q) < r}$
+- Limit Point
+	- $p$ is a limit point of $E$ if $\forall N_r(p),~ \exists q\neq p \mid q \in N_r(p)$
+	- Equivalently, $\forall N_r(p),~ N_r(p) \cap E \neq \emptyset$
 - Isolated Point
 - Perfect
 - Dense
 - Interior
 - Exterior
 - Boundary
-- Limit Point
 - Closure
 - Connected
 	- Space of connected sets closed under union, product, closures
