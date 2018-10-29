@@ -81,6 +81,14 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 	- Solvability
 	- Nilpotency
 
+- Useful homomorphim invariants
+	- $\phi(e) = e$
+	- $\abs{g} = m < \infty \implies \abs{\phi(g)} = m$
+	- Inverses, i.e. $\phi(a)^{-1} = \phi(a^{-1})$
+	- $H < G \implies \phi(H) < G'$
+		- $H' < G' \implies \phi^{-1}(H') < G$
+	- $\abs{G} < \infty \implies \phi(G)$ divides $\abs{G}, \abs{G'}$
+
 ## Big Theorems
 - Classification of Abelian Groups
 $$
