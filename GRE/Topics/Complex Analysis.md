@@ -35,8 +35,11 @@ $$
 
 Cauchy-Riemann Equations
 $$
-\dd[f]{\bar z} = 0 \implies \hspace{4em} u_x = v_y \hspace{4em}u_y = -v_x
+u_x = v_y \hspace{4em}u_y = -v_x
 $$
+- Alternatively:
+	- $\dd[f]{\bar z} = 0$
+	- $\inner[\nabla u]{\nabla v}  = 0 $
 
 
 
