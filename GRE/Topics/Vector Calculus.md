@@ -47,6 +47,9 @@ $$\begin{align}
 \end{array}\right|
 && \text{cross product}
 \\
+D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
+&& \text{directional derivative}
+\\
 \nabla
 \definedas \sum_{i=1}^n \frac{\partial}{\partial x_i} \mathbf{e}_i
 = \left[\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}, \cdots, \frac{\partial}{\partial x_n}\right]
@@ -57,8 +60,9 @@ $$\begin{align}
 = [\frac{\partial \phi}{\partial x_1}, \frac{\partial \phi}{\partial x_2}, \cdots, \frac{\partial \phi}{\partial x_n}]
 && \text{gradient}
 \\
-D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
-&& \text{directional derivative}
+\Delta f \definedas \nabla\cdot\nabla f \definedas \sum_{i=1}^n \frac{\partial^2 f}{\partial x_i^2}
+= \frac{\partial^2}{\partial x_1^2} + \frac{\partial^2}{\partial x_2} + \cdots + \frac{\partial^2}{\partial x_n^2}
+&& \text{laplacian}
 \\
 \nabla \cdot \mathbf{F}
 \definedas \sum_{i=1}^n \frac{\partial \mathbf{F}_i}{\partial x_i} = \frac{\partial \mathbf{F}_1}{\partial x_1} + \frac{\partial \mathbf{F}_2}{\partial x_2} + \cdots + \frac{\partial \mathbf{F}_n}{\partial x_n}
