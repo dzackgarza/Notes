@@ -251,3 +251,4 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 - $(A\cap B) - C = (A-C) \cap (B-C)$
 - $A\cup(B\cap C) = (A\cup B) \cap (A\cup C)$
 - $A\cap(B\cup C) = (A\cap B) \cup (A \cap C)$
+- $A_k$ countable $\implies \prod_{k=1}^n A_k, \union_{k=1}^\infty A_k$ countable
