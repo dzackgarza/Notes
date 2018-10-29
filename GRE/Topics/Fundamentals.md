@@ -257,11 +257,17 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 ### Useful Set Identities
 - $(A\cup B)^c = A^c \cap B^c$
 - $(A\cap B)^c = A^c \cup B^c$
+- $A - B = A \cap B^c$
+- $(A-B)^c = A^c \cup B$
 - $(A\cup B) - C = (A-C) \cup (B-C)$
 - $(A\cap B) - C = (A-C) \cap (B-C)$
+- $A - (B \cup C) = (A - B) \cap (A - C)$
+- $A - (B \cap C) = (A-B) \cup (A-C)$
+- $A - (B - C) = (A-B) \cup (A \cap C)$
+- $(A-B) \cap C = (A \cap C) - B = A \cap (C-B)$
+- $(A-B) \cup C = (A \cup C) - (B-C)$
 - $A\cup(B\cap C) = (A\cup B) \cap (A\cup C)$
 - $A\cap(B\cup C) = (A\cap B) \cup (A \cap C)$
-- $A - B = A \cap B^c$
 - $A \subseteq C \and B \subseteq C \implies A \cup B \subseteq C$
 - $C \subseteq A \and C \subseteq B \implies C \subseteq A \cup B$
 - $A_k$ countable $\implies \prod_{k=1}^n A_k, \union_{k=1}^\infty A_k$ countable
