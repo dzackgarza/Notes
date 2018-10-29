@@ -124,6 +124,10 @@ Cones: | $?$
 	- $\sin 2x = 2\sin x \cos x$
 	- Less useful: $\tan(a+b) = \frac{\tan a + \tan b}{1-\tan a\tan b}$
 		- $\tan 2x = \frac{2\tan x}{1-\tan^2 x}$
+	- Half-Angle identities
+		- $\sin (x/2) = \pm \sqrt{(1/2)(1-\cos x)}$
+		- $\cos (x/2) = \pm \sqrt{(1/2)(1+\cos x)}$
+		- $\tan (x/2) = \sin x / (1 + \cos x)$
 
 - Law of Cosines $$ a^2 = b^2 + c^2 - 2bc\cos\theta_A$$
 	- Totally symmetric under any swap of two symbols
