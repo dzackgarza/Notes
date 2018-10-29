@@ -8,3 +8,7 @@ Summary for GRE:
 		Does not matter whether or not the $X_i$ are independent.
 - Variance: $$\mathrm{Var}(X) = \int (x - E[X])^2$$
 - Standard deviation: $$\sigma(X) = \mathrm{Var}(X)^{1/2}$$
+
+## Distributions
+- Bernoulli: trial two outcomes of probability $p$ and $1-p$ respectively.
+	- $P(\text{k successes in n trials}) = {n\choose k} p^k(1-p)^{n-k}$
