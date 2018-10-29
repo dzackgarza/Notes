@@ -242,3 +242,9 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 	$$
 - If you see $x^2+y^2$, try adding $2xy$ to reduce to $(x+y)^2$
 - Finding the minimal polynomial of a number $a+b$: #todo
+
+## Logic and Sets
+
+- $(A\cap B)^c = A^c \cup B^c$
+- $(A \cup B)^c = A^c \cap B^c$
+- 
