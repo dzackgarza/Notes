@@ -57,7 +57,7 @@ Definitions
 - Meromorphic
 
 Complex Analytic $\implies$ smooth and all derivatives are analytic
-- Not true in real case, take the everywhere differentiable function
+- Not true in real case, take the everywhere differentiable but not $C^1$ function 
 $$
 f(x) = \cases{
 	-\frac{1}{2}x^2 & $x < 0$ \\ ~~~
