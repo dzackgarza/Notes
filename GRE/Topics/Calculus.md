@@ -185,43 +185,7 @@ Fill out until one column is zero (alternate signs). Get the result column by mu
 		- $b$ even: $\sec^2 = \tan^2 - 1, u = \tan(x)$
 
 
-### Big Derivative / Integral Table
-$$
-\begin{align}  
-\frac{\partial f}{\partial{x}}\Leftarrow && f && \Rightarrow\int f dx   \\
-\hline \\
-\frac{1}{2\sqrt{x}} && \sqrt{x} && \frac{2}{3}x^{\frac{3}{2}} \\
-nx^{n-1} && x^n, n \neq -1 && \frac{1}{n+1}x^{n+1} \\
--nx^{-(n+1)} && \frac{1}{x^n}, n \neq 1 && -\frac{1}{n-1}x^{-(n-1)} \\
-\frac{1}{x} && \bbox[yellow]{\ln(x)} && x\ln(x) - x \\
-a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
-\cos(x) && \sin(x)  && -\cos(x) \\
--\csc(x)\cot(x) && \csc(x)  && \ln\abs{\csc(x)-\cot(x)} \\
--\sin(x) && \cos(x)  && \sin(x) \\
-\sec(x)\tan(x) && \sec(x) && \ln\abs{\sec(x) + \tan(x)} \\
-\sec^2(x) && \tan(x) &&  \ln\abs{\frac{1}{\cos x}} \\
--\csc^2(x) && \cot(x) && \ln \abs{\sin x} \\
-\frac{1}{1+x^2} && \bbox[yellow]{\tan^{-1}(x)}  && x\tan^{-1}x - \frac{1}{2}\ln(1+x^2) \\
-\frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\sin^{-1}(x)} && x\sin^{-1}x+ \sqrt{1-x^2} \\
--\frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\cos^{-1}(x)} && x\cos^{-1}x -\sqrt{1-x^2} \\
-\frac{1}{\sqrt{x^2+a}} && \ln\abs{x+\sqrt{x^2+a}} && \cdot\\
-2\sin x\cos x && \sin^2(x) && \frac{1}{2}(x - \sin x \cos x) \\
--2\sin x\cos x && \cos^2(x) && \frac{1}{2}(x + \sin x \cos x) \\
-2\csc^2(x)\cot(x) && \csc^2(x)  && -\cot(x) \\
-2\sec^2(x)\tan(x) && \sec^2(x)  && \tan(x) \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-(ax+1)e^{ax} && xe^{ax} && \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\
-? && e^{ax}\sin(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\
-? && e^{ax}\cos(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
-? && ? && ? \\
-\end{align}
-$$
+
 
 Other small but useful facts:
 $$

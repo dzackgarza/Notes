@@ -2,6 +2,8 @@ Summary for GRE:
 - Calculating Mean, standard deviation, and variance from PDF,
 - Bernoulli trials.
 
+- Random Variable
+	- For $(\Sigma, E, \mu)$ a probability space with sample space $\Sigma$ and probability measure $\mu$, a random variable is a function $X: \Sigma \to \RR$
 - Mean / Expected Value: $$E[X] = \int x P(X = x) = \int x f_X(x)$$
 	- Linearity of expectation:
 		$$E[\sum a_i X_i] = \sum a_i E[X_i]$$
