@@ -82,6 +82,13 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 	- Nilpotency
 
 ## Big Theorems
+- Classification of Abelian Groups
+$$
+G \cong \ZZ_{p_1^{k_1}} \oplus \ZZ_{p_2^{k_2}} \oplus \cdots \oplus \ZZ_{p_n^{k_n}}
+$$
+Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
+
+
 - Isomorphism Theorems
 	$$ \begin{align}
 	\phi: G \to G' \implies && \frac{G}{\ker{\phi}} \cong &~ \phi(G) \\

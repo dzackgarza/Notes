@@ -12,7 +12,6 @@
 - Perfect
 	- $E$ is perfect iff $E$ is closed and $E \subseteq L(E)$
 	- Equivalently, $L(E) = E$
-- Dense
 - Interior
 	- $p$ is an interior point of $E$ iff $\exists N_r(p) \mid N_r(p) \subsetneq E$
 	- Denote the interior of $E$ by $E^\circ$
@@ -27,6 +26,8 @@
 	- Closed under arbitrary unions, finite intersections
 - Boundary
 - Closure
+- Dense
+	- $E$ is dense in $X$ iff $X \subseteq E \cup L(E)$
 - Connected
 	- Space of connected sets closed under union, product, closures
 	- Convex $\implies$ connected
