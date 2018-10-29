@@ -26,7 +26,7 @@ $$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
 $$
 z' = \lim_{h\to 0} \frac{f(z+h)-f(z)}{h}
 $$
-	- A complex function that is not differentiable: $f(z) = z/\bar{z}$
+	- A complex function that is not differentiable at a point: $f(z) = z/\bar{z}$ at $z=0$
 
 
 - Computing residues:
