@@ -12,3 +12,7 @@ Summary for GRE:
 ## Distributions
 - Bernoulli: trial two outcomes of probability $p$ and $1-p$ respectively.
 	- $P(\text{k successes in n trials}) = {n\choose k} p^k(1-p)^{n-k}$
+- Normal
+$$
+f_X(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
