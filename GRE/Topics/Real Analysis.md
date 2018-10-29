@@ -162,6 +162,7 @@ $$
 Examples:
 - A function discontinuous at a point: $\sin(\frac{1}{x})$ at $x=0$
 - A nowhere continuous function: $f(x) = \indicator[x \in \QQ]$
+	- Not Riemann integrable
 
 Uniform continuity #todo
 
@@ -233,6 +234,8 @@ Explanation of items in table:
 
 	- Suppose $f$ bounded and continuous a.e. on $[a,b]$, and define $F(x) \definedas \int_a^x f(t)~dt$. Then $F$ is absolutely continuous on $[a,b]$, and for $p \in [a,b]$,
 	$$f \in C^0(p) \implies F \text{ differentiable at } p,~ F'(p) = f(p), \text{ and } F' \stackrel{\tiny\mbox{a.e}}{=} f.$$
+
+	- A function that is not Riemann integrable but Lebesgue integrable: $f(x) = \indicator[x \in \QQ]$
 
 
 ## List of Free Conclusions:
