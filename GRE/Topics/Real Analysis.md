@@ -159,7 +159,9 @@ $$
 f\text{ continuous } \iff \lim_{x \to p} f(x) = f(p)
 $$
 
-Example of a discontinuous function: $\sin(\frac{1}{x})$ at $x=0$.
+Examples:
+- A function discontinuous at a point: $\sin(\frac{1}{x})$ at $x=0$
+- A nowhere continuous function: $f(x) = \indicator[x \in \QQ]$
 
 Uniform continuity #todo
 
