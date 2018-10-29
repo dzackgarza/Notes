@@ -1,2 +1,10 @@
 - Open sets: closed under arbitrary unions, finite intersections
 - Closed sets: closed under finite unions, arbitrary intersections
+- Interior
+- Exterior
+- Boundary
+- Limit Point
+- Closure
+- Disconnected
+- Simply Connected
+- Totally Disconnected
