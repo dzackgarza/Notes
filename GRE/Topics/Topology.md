@@ -8,3 +8,6 @@
 - Disconnected
 - Simply Connected
 - Totally Disconnected
+
+Example:
+- The space $\theset{\frac{1}{n}}_{n\in \NN}$
