@@ -245,10 +245,21 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 
 ## Logic and Sets
 
+
+### Logics
+- $P \implies Q \iff Q \or \lnot P$
+- $P \implies Q \iff \lnot Q \implies \lnot P$
+- $P \or(Q \and S) \iff (P \or Q) \and (P \or S)$
+- $P \and(Q \or S) \iff (P \and Q) \or (P \and S)$
+- $\lnot (P \and Q) \iff \lnot P \or \lnot Q$
+- $\lnot (P \or Q) \iff \lnot P \and \lnot Q$
+
+### Useful Set Identities
 - $(A\cup B)^c = A^c \cap B^c$
 - $(A\cap B)^c = A^c \cup B^c$
 - $(A\cup B) - C = (A-C) \cup (B-C)$
 - $(A\cap B) - C = (A-C) \cap (B-C)$
 - $A\cup(B\cap C) = (A\cup B) \cap (A\cup C)$
 - $A\cap(B\cup C) = (A\cap B) \cup (A \cap C)$
+- $A - B = A \cap B^c$
 - $A_k$ countable $\implies \prod_{k=1}^n A_k, \union_{k=1}^\infty A_k$ countable
