@@ -60,8 +60,8 @@ D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
 = [\frac{\partial \phi}{\partial x_1}, \frac{\partial \phi}{\partial x_2}, \cdots, \frac{\partial \phi}{\partial x_n}]
 && \text{gradient}
 \\
-\Delta f \definedas \nabla\cdot\nabla f \definedas \sum_{i=1}^n \frac{\partial^2 f}{\partial x_i^2}
-= \frac{\partial^2}{\partial x_1^2} + \frac{\partial^2}{\partial x_2} + \cdots + \frac{\partial^2}{\partial x_n^2}
+\Delta \phi \definedas \nabla\cdot\nabla \phi \definedas \sum_{i=1}^n \frac{\partial^2 \phi}{\partial x_i^2}
+= \frac{\partial^2 \phi}{\partial x_1^2} + \frac{\partial^2 \phi}{\partial x_2} + \cdots + \frac{\partial^2 \phi}{\partial x_n^2}
 && \text{laplacian}
 \\
 \nabla \cdot \mathbf{F}
