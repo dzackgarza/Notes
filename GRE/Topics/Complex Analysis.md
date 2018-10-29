@@ -53,4 +53,5 @@ $$
 Definitions
 - Analytic
 - Entire
-- 
+- Holomorphic
+- Meromorphic
