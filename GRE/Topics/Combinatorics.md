@@ -1,1 +1,2 @@
  - Choosing: $n\choose k$
+	 - Choosing with repetition allowed: ${n+k-1}\choose k$
