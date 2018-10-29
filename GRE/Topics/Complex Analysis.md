@@ -4,6 +4,7 @@
 	- $\frac{z\conjugate{z}}{\abs{z}^2} = \frac{(a+ib)(a-ib)}{a^2 + b^2} = 1$
 - $\frac{1}{a+ib} = \frac{1}{z} = \frac{\conjugate{z}}{\abs{z}^2} = \frac{a-ib}{a^2+b^2}$
 - $e^{zx} = e^{(a+ib)x} = e^{ax}(\cos(bx) + i\sin(bx))$
+- Complex logarithm: $\mathrm{Log} z = \ln\abs{z} + i~\mathrm{Arg}z$
 - Complex exponential: $x^z \definedas e^{z\ln x}$
 
 - $n\dash$th roots:
