@@ -243,10 +243,10 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 - If you see $x^2+y^2$, try adding $2xy$ to reduce to $(x+y)^2$
 - Finding the minimal polynomial of a number $a+b$: #todo
 
-## Logic and Sets
+## Miscellaneous Properties
 
 
-### Logics
+### Logic Identities
 - $P \implies Q \iff Q \or \lnot P$
 - $P \implies Q \iff \lnot Q \implies \lnot P$
 - $P \or(Q \and S) \iff (P \or Q) \and (P \or S)$
@@ -254,7 +254,7 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 - $\lnot (P \and Q) \iff \lnot P \or \lnot Q$
 - $\lnot (P \or Q) \iff \lnot P \and \lnot Q$
 
-### Useful Set Identities
+### Set Identities
 - $(A\cup B)^c = A^c \cap B^c$
 - $(A\cap B)^c = A^c \cup B^c$
 - $A - B = A \cap B^c$
@@ -271,3 +271,7 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 - $A \subseteq C \and B \subseteq C \implies A \cup B \subseteq C$
 - $C \subseteq A \and C \subseteq B \implies C \subseteq A \cup B$
 - $A_k$ countable $\implies \prod_{k=1}^n A_k, \union_{k=1}^\infty A_k$ countable
+
+### Preimage Identities
+- $A \subseteq f^{-1}(f(A))$
+	- $A = f^{-1}(f(A)) \iff f$ is injective

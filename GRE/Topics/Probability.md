@@ -8,6 +8,9 @@ Summary for GRE:
 		Does not matter whether or not the $X_i$ are independent.
 - Variance: $$\mathrm{Var}(X) = \int (x - E[X])^2 f_X(x) ~dx$$
 - Standard deviation: $$\sigma(X) = \sqrt{\mathrm{Var}(X)}$$
+- Baye's Theorem: todo
+
+Birthday Paradox
 
 ## Distributions
 - Bernoulli: trial two outcomes of probability $p$ and $1-p$ respectively.
