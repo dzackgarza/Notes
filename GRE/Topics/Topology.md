@@ -8,10 +8,10 @@
 - Connected
 	- Space of connected sets closed under union, product
 - Disconnected
+- Path Connected
+	- Path connected $\implies$ connected
 - Simply Connected
 - Totally Disconnected
 
 Example:
 - The space $\theset{\frac{1}{n}}_{n\in \NN}$
-
-- Path connected $\implies$ connected
