@@ -163,6 +163,12 @@ Example of a discontinuous function: $\sin(\frac{1}{x})$ at $x=0$.
 
 Uniform continuity #todo
 
+Epsilon-Delta Definition:
+$$
+\forall \varepsilon,~ \exists \delta \mid \\
+d(x,y) < \delta \implies d(f(x), f(y)) < \varepsilon
+$$
+
 ## Differentiability
 $$
 f'(p) \definedas \frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p}
