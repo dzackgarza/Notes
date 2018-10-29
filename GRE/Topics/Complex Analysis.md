@@ -11,6 +11,11 @@
 	\cos z = \frac{1}{2}(e^{iz} + e^{-iz}) \\
 	\sin z = \frac{1}{2i}(e^{iz} - e^{-iz})
 	$$
+- Hyperbolic Functions
+$$
+\cos(iz) = \cosh z \quad \cosh(iz) = \cos z \\
+\sin(iz) = \sinh z \quad \sinh(iz) = \sin z
+$$
 
 - $n\dash$th roots:
 $$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
