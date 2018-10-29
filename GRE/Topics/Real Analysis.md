@@ -165,8 +165,8 @@ Uniform continuity #todo
 
 Epsilon-Delta Definition:
 $$
-\forall \varepsilon,~ \exists \delta \mid \\
-d(x,y) < \delta \implies d(f(x), f(y)) < \varepsilon
+f:(X, d_X) \to (Y, d_Y) \text{ continuous } \iff \forall \varepsilon,~ \exists \delta \mid ~
+d_X(x,y) < \delta \implies d_Y(f(x), f(y)) < \varepsilon
 $$
 
 ## Differentiability
