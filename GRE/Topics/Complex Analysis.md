@@ -6,6 +6,11 @@
 - $e^{zx} = e^{(a+ib)x} = e^{ax}(\cos(bx) + i\sin(bx))$
 - Complex logarithm: $\mathrm{Log}(z) = \ln\abs{z} + i~\mathrm{Arg}(z)$
 - Complex exponential: $x^z \definedas e^{z\ln x}$
+- Complex trig functions:
+	$$
+	\cos z = \frac{1}{2}(e^{iz} + e^{-iz}) \\
+	\sin z = \frac{1}{2i}(e^{iz} - e^{-iz})
+	$$
 
 - $n\dash$th roots:
 $$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
