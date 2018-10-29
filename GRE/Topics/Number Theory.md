@@ -1,3 +1,5 @@
+
+- $a\mid b \iff b = 0 \mod a$
 - Totient Function
 	$$
 	\phi(p) = p-1 \\
@@ -14,3 +16,6 @@
 	x^{p-1} - 1 = 0 \mod p $$
 - The Euclidean Algorithm
 - The Jacobi symbol
+
+Solving $ax + by = c$
+- Has solutions $\iff$
