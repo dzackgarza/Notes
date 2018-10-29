@@ -7,6 +7,7 @@
 - Closure
 - Connected
 	- Space of connected sets closed under union, product
+	- Convex $\implies$ connected
 - Disconnected
 - Path Connected
 	- $\forall x,y \in X \exists f: I \to X \mid f(0) = x, f(1) = y$
