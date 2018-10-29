@@ -37,6 +37,7 @@ Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
 		$$
 
 ## Rational Roots Theorem
+
 ## Partial Fraction Decomposition
 Given $R(x) = \frac{p(x)}{q(x)}$, factor $q(x)$ into $\prod q_i(x)$.
 - Linear factors of the form $q_i(x) = (ax+b)^n$ contribute $$r_i(x) = \sum_{k=1}^n \frac{A_k}{(ax+b)^k} = \frac{A_1}{ax+b} + \frac{A_2}{(ax+b)^2} + \cdots$$
@@ -47,3 +48,11 @@ Given $R(x) = \frac{p(x)}{q(x)}$, factor $q(x)$ into $\prod q_i(x)$.
 	- For linear terms $q_i(x) = (ax+b)^n$, define $P(x) = (ax+b)^nR(x)$; then
 	$$A_{k} =  \frac{1}{(n-k)!}P^{(n-k)}(a), \quad k = 1,2,\cdots n \\ \implies A_n= P(a),~ A_{n-1} = P'(a),~ \cdots,~ A_1 = \frac{1}{(n-1)!}P^{(n-1)}(A)$$
 	- Note: #todo check, might need to evaluate at $-b/a$ instead, extend to quadratics.
+
+## Properties of Norms
+$$\begin{align}
+\norm{t\mathbf x} &= \abs{t} \norm{\mathbf x} \\
+\abs{\inner[\mathbf x]{\mathbf y}} &\leq \norm{\mathbf x} \norm{\mathbf y} \\
+\norm{\mathbf x+\mathbf y} &\leq \norm{\mathbf x} + \norm{\mathbf y} \\
+\norm{\mathbf x-\mathbf z} &\leq \norm{\mathbf x-\mathbf y} + \norm{\mathbf y-\mathbf z}
+\end{align}$$
