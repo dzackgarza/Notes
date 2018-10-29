@@ -245,7 +245,9 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 
 ## Logic and Sets
 
+- $(A\cup B)^c = A^c \cap B^c$
 - $(A\cap B)^c = A^c \cup B^c$
-- $(A \cup B)^c = A^c \cap B^c$
-- $(A \cap B) - C = (A-C) \cap (B-C)$
 - $(A\cup B) - C = (A-C) \cup (B-C)$
+- $(A\cap B) - C = (A-C) \cap (B-C)$
+- $A\cup(B\cap C) = (A\cup B) \cap (A\cup C)$
+- $A\cap(B\cup C) = (A\cap B) \cup (A \cap C)$
