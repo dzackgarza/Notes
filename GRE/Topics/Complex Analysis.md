@@ -28,6 +28,17 @@ z' = \lim_{h\to 0} \frac{f(z+h)-f(z)}{h}
 $$
 	- A complex function that is not differentiable at a point: $f(z) = z/\bar{z}$ at $z=0$
 
+ - The Wittinger / total derivative:
+$$
+\frac { \partial } { \partial z } = \frac { 1 } { 2 } \left( \frac { \partial } { \partial x } - i \frac { \partial } { \partial y } \right) , \quad \frac { \partial } { \partial \overline { z } } = \frac { 1 } { 2 } \left( \frac { \partial } { \partial x } + i \frac { \partial } { \partial y } \right)
+$$
+
+Cauchy-Riemann Equations
+$$
+\dd[f]{\bar z} = 0 \implies \hspace{4em} u_x = v_y \hspace{4em}u_y = -v_x
+$$
+
+
 
 - Computing residues:
 $$
