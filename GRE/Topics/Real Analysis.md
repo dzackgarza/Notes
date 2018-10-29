@@ -228,7 +228,6 @@ Explanation of items in table:
 	- Uniformly continuous, or
 	- Finitely many discontinuities
 - $f$ integrable $\iff$ bounded and continuous a.e.
-	- Prime example of a non-integrable function: $f = \indicator[\QQ]$
 - FTC for the Riemann Integral.
 	- If $F$ is a differentiable function on the interval $[a,b]$, and $F'$ is bounded and continuous a.e., then $F′ \in L_R([a, b])$ and $$\forall x\in [a,b]: \int_a^x F'(t)~dt=F(x)−F(a)$$
 
