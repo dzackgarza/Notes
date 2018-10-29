@@ -9,59 +9,6 @@ Be careful! $\frac{\ln x}{\ln y} \neq \ln\frac{x}{y} = \ln x - \ln y$
 - Completing the square:
 	- $p(x) = ax^2 + bx + c \implies p(x) =  a(x+\frac{b}{2a})^2 + -\frac{1}{2}\left(\frac{b^2-4ac}{2a}\right)$
 
-- Pascal's Triangle:
-
-$n$  | Sequence  
---|--
-3  | $1,2,1$
-4  | $1,3,3,1$
-5  | $1,4,6,4,1$
-6  | $1,5,10,10,5,1$
-7  | $1,6,15,20,15,16,1$
-8  | $1,7,21,35,35,21,7,1$
-
-Obtain new entries by adding in $\rotate[180]{L}$ pattern (e.g. 7 = 1+6, 12 = 6 + 15, etc).
-Note that $n\choose i$ is given by the entry in the $n\dash$th row, $i\dash$ column.
-
-Table of Small Factorials
-
-$n$  |  $n!$
---|--
-2   | $2$  
-3   | $6$
-4   | $24$
-5   | $120$
-6   | $720$
-7   | $5040$
-8   | $40320$
-9   | $362880$
-10  | $3628800$
-
-$\pi \approx 3.1415926535$
-$e \approx 2.71828$
-$\sqrt{2} \approx 1.4142135$
-
-Primes Under 100:
-$$\begin{align}
-& 2, 3, 5, 7 , 11, 13, 17, 19, \\
-& 23,	29,	31,	37,	41,	43,	47,	\\
-& 53,	59,	61,	67, \\
-& 71,  73,	79,	83,	89,	97,	101
-\end{align}$$
-
-Checking Divisibility by Small Primes
-$p$  |  $p \mid n \iff$
---|--
-2  |  $p \mod 10 = 2,4$
-3  |  $\sum \text{digits} \mid 3$
-5  |  $p \mod 5 = 0, 5$
-7  |  
-11  |  
-13  |  
-17  |  
-23  |  
-27  |  
-
 ## Geometry
 
 - Generic Conic Sections
@@ -186,6 +133,8 @@ Cones: | $?$
 		&= \abs{\mathbf x}^2 + \abs{\mathbf y}^2 - 2\inner[\mathbf x]{\mathbf y} \\
 		&= \abs{\mathbf x}^2 + \abs{\mathbf y}^2 - 2\abs{\mathbf x}\abs{\mathbf y}\cos\theta
 		\end{align}$$
+
+
 ## Polynomials
 
 - Vieta's Formulas: Write $p(x) = \sum a_k x^k = \prod(x_k - r_k)$ and expand the product to obtain $$ p(x) = a_n x^n - (\sum_k r_k)x^{n-1} + (\sum_{i<j} r_i r_j)x^{n-1} + \cdots = \sum_{k=1}^n (-1)^k \sigma_{n-k}(\theset{r_i}_{i=1}^n) x^k$$
@@ -242,47 +191,3 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 	$$
 - If you see $x^2+y^2$, try adding $2xy$ to reduce to $(x+y)^2$
 - Finding the minimal polynomial of a number $a+b$: #todo
-
-## Miscellaneous Properties
-
-
-### Logic Identities
-- $P \implies Q \iff Q \or \lnot P$
-- $P \implies Q \iff \lnot Q \implies \lnot P$
-- $P \or(Q \and S) \iff (P \or Q) \and (P \or S)$
-- $P \and(Q \or S) \iff (P \and Q) \or (P \and S)$
-- $\lnot (P \and Q) \iff \lnot P \or \lnot Q$
-- $\lnot (P \or Q) \iff \lnot P \and \lnot Q$
-
-### Set Identities
-- $(A\cup B)^c = A^c \cap B^c$
-- $(A\cap B)^c = A^c \cup B^c$
-- $A - B = A \cap B^c$
-- $(A-B)^c = A^c \cup B$
-- $(A\cup B) - C = (A-C) \cup (B-C)$
-- $(A\cap B) - C = (A-C) \cap (B-C)$
-- $A - (B \cup C) = (A - B) \cap (A - C)$
-- $A - (B \cap C) = (A-B) \cup (A-C)$
-- $A - (B - C) = (A-B) \cup (A \cap C)$
-- $(A-B) \cap C = (A \cap C) - B = A \cap (C-B)$
-- $(A-B) \cup C = (A \cup C) - (B-C)$
-- $A\cup(B\cap C) = (A\cup B) \cap (A\cup C)$
-- $A\cap(B\cup C) = (A\cap B) \cup (A \cap C)$
-- $A \subseteq C \and B \subseteq C \implies A \cup B \subseteq C$
-- $C \subseteq A \and C \subseteq B \implies C \subseteq A \cup B$
-- $A_k$ countable $\implies \prod_{k=1}^n A_k, \union_{k=1}^\infty A_k$ countable
-
-### Preimage Identities
-Injectivity: left cancellation
-Surjectivity: right cancellation
-- $A \subseteq f^{-1}(f(A))$
-	- $A = f^{-1}(f(A)) \iff f$ is injective
-- $f(f^{-1}(A)) \subseteq A$
-	- $f(f^{-1}(A)) = A \iff f$ is surjective
-- $A \subseteq B \implies f(A) \subseteq f(B) \or f^{-1}(A) \subseteq f^{-1}(B)$
-- $f(\union_{i\in I}A_i) = \union_{i\in I} f(A_i)$
-	- $f^{-1}(\union_{i\in I}A_i) = \union_{i\in I} f^{-1}(A_i)$
-- $f(\intersect_{i\in I}A_i) = \intersect_{i\in I} f(A_i)$
-	- $f^{-1}(\intersect_{i\in I}A_i) = \intersect_{i\in I} f^{-1}(A_i)$
-- $f(A) - f(B) \subseteq f(A-B)$
-	- But $f^{-1}(A) - f^{-1}(B)  = f^{-1}(A-B)$

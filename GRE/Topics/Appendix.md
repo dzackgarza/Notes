@@ -5,6 +5,44 @@
 	- If $a,b$ are constant, boundary terms vanish.
 	- Recover the fundamental theorem with $a(x) = a, b(x) = b, f(x,t) = f(t)$.
 
+## Big Derivative / Integral Table
+	$$
+	\begin{align}  
+	\frac{\partial f}{\partial{x}}\Leftarrow && f && \Rightarrow\int f dx   \\
+	\hline \\
+	\frac{1}{2\sqrt{x}} && \sqrt{x} && \frac{2}{3}x^{\frac{3}{2}} \\
+	nx^{n-1} && x^n, n \neq -1 && \frac{1}{n+1}x^{n+1} \\
+	-nx^{-(n+1)} && \frac{1}{x^n}, n \neq 1 && -\frac{1}{n-1}x^{-(n-1)} \\
+	\frac{1}{x} && \bbox[yellow]{\ln(x)} && x\ln(x) - x \\
+	a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
+	\cos(x) && \sin(x)  && -\cos(x) \\
+	-\csc(x)\cot(x) && \csc(x)  && \ln\abs{\csc(x)-\cot(x)} \\
+	-\sin(x) && \cos(x)  && \sin(x) \\
+	\sec(x)\tan(x) && \sec(x) && \ln\abs{\sec(x) + \tan(x)} \\
+	\sec^2(x) && \tan(x) &&  \ln\abs{\frac{1}{\cos x}} \\
+	-\csc^2(x) && \cot(x) && \ln \abs{\sin x} \\
+	\frac{1}{1+x^2} && \bbox[yellow]{\tan^{-1}(x)}  && x\tan^{-1}x - \frac{1}{2}\ln(1+x^2) \\
+	\frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\sin^{-1}(x)} && x\sin^{-1}x+ \sqrt{1-x^2} \\
+	-\frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\cos^{-1}(x)} && x\cos^{-1}x -\sqrt{1-x^2} \\
+	\frac{1}{\sqrt{x^2+a}} && \ln\abs{x+\sqrt{x^2+a}} && \cdot\\
+	2\sin x\cos x && \sin^2(x) && \frac{1}{2}(x - \sin x \cos x) \\
+	-2\sin x\cos x && \cos^2(x) && \frac{1}{2}(x + \sin x \cos x) \\
+	2\csc^2(x)\cot(x) && \csc^2(x)  && -\cot(x) \\
+	2\sec^2(x)\tan(x) && \sec^2(x)  && \tan(x) \\
+	? && ? && ? \\
+	? && ? && ? \\
+	? && ? && ? \\
+	? && ? && ? \\
+	? && ? && ? \\
+	? && ? && ? \\
+	? && ? && ? \\
+	(ax+1)e^{ax} && xe^{ax} && \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\
+	? && e^{ax}\sin(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\
+	? && e^{ax}\cos(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
+	? && ? && ? \\
+	\end{align}
+	$$
+
 ## Useful Series and Sequences
 Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
 - Taylor Series: $$ f ( x ) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } \left( x _ { 0 } \right) } { n ! } \left( x - x _ { 0 } \right) ^ { n } $$
@@ -56,3 +94,104 @@ $$\begin{align}
 \norm{\mathbf x+\mathbf y} &\leq \norm{\mathbf x} + \norm{\mathbf y} \\
 \norm{\mathbf x-\mathbf z} &\leq \norm{\mathbf x-\mathbf y} + \norm{\mathbf y-\mathbf z}
 \end{align}$$
+
+## Logic Identities
+- $P \implies Q \iff Q \or \lnot P$
+- $P \implies Q \iff \lnot Q \implies \lnot P$
+- $P \or(Q \and S) \iff (P \or Q) \and (P \or S)$
+- $P \and(Q \or S) \iff (P \and Q) \or (P \and S)$
+- $\lnot (P \and Q) \iff \lnot P \or \lnot Q$
+- $\lnot (P \or Q) \iff \lnot P \and \lnot Q$
+
+## Set Identities
+- $(A\cup B)^c = A^c \cap B^c$
+- $(A\cap B)^c = A^c \cup B^c$
+- $A - B = A \cap B^c$
+- $(A-B)^c = A^c \cup B$
+- $(A\cup B) - C = (A-C) \cup (B-C)$
+- $(A\cap B) - C = (A-C) \cap (B-C)$
+- $A - (B \cup C) = (A - B) \cap (A - C)$
+- $A - (B \cap C) = (A-B) \cup (A-C)$
+- $A - (B - C) = (A-B) \cup (A \cap C)$
+- $(A-B) \cap C = (A \cap C) - B = A \cap (C-B)$
+- $(A-B) \cup C = (A \cup C) - (B-C)$
+- $A\cup(B\cap C) = (A\cup B) \cap (A\cup C)$
+- $A\cap(B\cup C) = (A\cap B) \cup (A \cap C)$
+- $A \subseteq C \and B \subseteq C \implies A \cup B \subseteq C$
+- $C \subseteq A \and C \subseteq B \implies C \subseteq A \cup B$
+- $A_k$ countable $\implies \prod_{k=1}^n A_k, \union_{k=1}^\infty A_k$ countable
+
+## Preimage Identities
+Injectivity: left cancellation
+Surjectivity: right cancellation
+- $A \subseteq f^{-1}(f(A))$
+	- $A = f^{-1}(f(A)) \iff f$ is injective
+- $f(f^{-1}(A)) \subseteq A$
+	- $f(f^{-1}(A)) = A \iff f$ is surjective
+- $A \subseteq B \implies f(A) \subseteq f(B) \or f^{-1}(A) \subseteq f^{-1}(B)$
+- $f(\union_{i\in I}A_i) = \union_{i\in I} f(A_i)$
+	- $f^{-1}(\union_{i\in I}A_i) = \union_{i\in I} f^{-1}(A_i)$
+- $f(\intersect_{i\in I}A_i) = \intersect_{i\in I} f(A_i)$
+	- $f^{-1}(\intersect_{i\in I}A_i) = \intersect_{i\in I} f^{-1}(A_i)$
+- $f(A) - f(B) \subseteq f(A-B)$
+	- But $f^{-1}(A) - f^{-1}(B)  = f^{-1}(A-B)$
+
+## Pascal's Triangle:
+
+$n$  | Sequence  
+--|--
+3  | $1,2,1$
+4  | $1,3,3,1$
+5  | $1,4,6,4,1$
+6  | $1,5,10,10,5,1$
+7  | $1,6,15,20,15,16,1$
+8  | $1,7,21,35,35,21,7,1$
+
+Obtain new entries by adding in $\rotate[180]{L}$ pattern (e.g. 7 = 1+6, 12 = 6 + 15, etc).
+Note that $n\choose i$ is given by the entry in the $n\dash$th row, $i\dash$ column.
+
+## Table of Small Factorials
+
+$n$  |  $n!$
+--|--
+2   | $2$  
+3   | $6$
+4   | $24$
+5   | $120$
+6   | $720$
+7   | $5040$
+8   | $40320$
+9   | $362880$
+10  | $3628800$
+
+$\pi \approx 3.1415926535$
+$e \approx 2.71828$
+$\sqrt{2} \approx 1.4142135$
+
+## Primes Under 100:
+$$\begin{align}
+& 2, 3, 5, 7 , \\
+& 11, 13, 17, 19, \\
+& 23,	29,	\\
+& 31,	37,	\\
+& 41,	43,	47,	\\
+& 53,	59,	\\
+& 61,	67, \\
+& 71,  73,	79,	\\
+& 83,	89, \\
+& 97,	\\
+& 101
+\end{align}$$
+
+## Checking Divisibility by Small Primes
+$p$  |  $p \mid n \iff$
+--|--
+2  |  $p \mod 10 = 2,4$
+3  |  $\sum \text{digits} \mid 3$
+5  |  $p \mod 5 = 0, 5$
+7  |  
+11  |  
+13  |  
+17  |  
+23  |  
+27  |  
