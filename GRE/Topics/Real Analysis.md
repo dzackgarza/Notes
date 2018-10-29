@@ -172,6 +172,8 @@ $$
 - The preimage of every open set is open
 - The preimage of every closed set is closed
 
+A continuous function on a compact space attains its extrema.
+
 ## Differentiability
 $$
 f'(p) \definedas \frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p}
