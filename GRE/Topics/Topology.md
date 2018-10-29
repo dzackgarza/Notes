@@ -6,7 +6,7 @@
 - Limit Point
 - Closure
 - Connected
-	- Space of connected sets closed under union, product
+	- Space of connected sets closed under union, product, closures
 	- Convex $\implies$ connected
 - Disconnected
 - Path Connected
