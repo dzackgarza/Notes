@@ -167,6 +167,7 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 
 - Polynomial long division
 - Rational roots theorem
+	- Let $p(x) = \sum_{i=1}^n a_i x^i$, then if $p$ has a rational root $r$, then $r \in \theset{\frac{s}{t} : s\mid a_0,~ t \mid a_n}$
 - Synthetic Division: #todo
 
 ## General Techniques:

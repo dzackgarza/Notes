@@ -1,4 +1,6 @@
-Notation: $z = a_ib, f(z) = u(x,y) + iv(x,y)$
+Notation: $z = a + ib, f(z) = u(x,y) + iv(x,y)$
+
+## Useful Equations and Definitions
 $$\begin{align}
 \abs{z} &= \sqrt{a^2 + b^2} \\
 \abs{z}^2 = z\conjugate{z} &= a^2 + b^2 \\
@@ -17,16 +19,17 @@ x^z &\definedas e^{z\ln x} \\
 \frac { \partial } { \partial \overline { z } } &= \frac { 1 } { 2 } \left( \frac { \partial } { \partial x } + i \frac { \partial } { \partial y } \right)
 \end{align}$$
 
+## Complex Arithmetic and Calculus
 - $n\dash$th roots:
 $$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
 
-- Differentiability
+### Differentiability
 $$
 z' = \lim_{h\to 0} \frac{f(z+h)-f(z)}{h}
 $$
-	- A complex function that is not differentiable at a point: $f(z) = z/\bar{z}$ at $z=0$
+- A complex function that is not differentiable at a point: $f(z) = z/\bar{z}$ at $z=0$
 
-Cauchy-Riemann Equations
+- Cauchy-Riemann Equations
 $$
 u_x = v_y \hspace{4em}u_y = -v_x
 $$
@@ -36,7 +39,8 @@ $$
 	- $\Delta u = \Delta v = 0$ (both components are harmonic)
 
 
-
+## Complex Integrals
+The main theorem:
 $$
 \oint_C f(z)~dz = 2\pi i \sum_k \mathrm{Res}(f, z_k)
 $$
