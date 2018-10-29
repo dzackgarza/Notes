@@ -40,6 +40,7 @@ $$
 - Alternatively:
 	- $\dd[f]{\bar z} = 0$
 	- $\inner[\nabla u]{\nabla v}  = 0 $
+	- $\Delta u = \Delta v = 0$
 
 
 
