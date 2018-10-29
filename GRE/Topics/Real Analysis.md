@@ -163,11 +163,14 @@ Example of a discontinuous function: $\sin(\frac{1}{x})$ at $x=0$.
 
 Uniform continuity #todo
 
-Epsilon-Delta Definition:
+Equivalent Definitions:
+- Epsilon-Delta Definition:
 $$
 f:(X, d_X) \to (Y, d_Y) \text{ continuous } \iff \forall \varepsilon,~ \exists \delta \mid ~
 d_X(x,y) < \delta \implies d_Y(f(x), f(y)) < \varepsilon
 $$
+- The preimage of every open set is open
+- The preimage of every closed set is closed
 
 ## Differentiability
 $$
