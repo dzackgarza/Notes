@@ -40,7 +40,7 @@ $$
 - Alternatively:
 	- $\dd[f]{\bar z} = 0$
 	- $\inner[\nabla u]{\nabla v}  = 0 $
-	- $\Delta u = \Delta v = 0$ (both components are harmonic) 
+	- $\Delta u = \Delta v = 0$ (both components are harmonic)
 
 
 
@@ -49,3 +49,8 @@ $$
 \operatorname { Res } ( f , c ) = \frac { 1 } { ( n - 1 ) ! } \lim _ { z \rightarrow c } \frac { d ^ { n - 1 } } { d z ^ { n - 1 } } \left( ( z - c ) ^ { n } f ( z ) \right) \\
 f(z) = \frac{g(z)}{h(z)} \implies \operatorname { Res } ( f , c ) = \frac{g(c)}{h'(c)}
 $$
+
+Definitions
+- Analytic
+- Entire
+- 
