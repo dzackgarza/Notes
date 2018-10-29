@@ -6,7 +6,7 @@ Summary for GRE:
 	- Linearity of expectation:
 		$$E[\sum a_i X_i] = \sum a_i E[X_i]$$
 		Does not matter whether or not the $X_i$ are independent.
-- Variance: $$\mathrm{Var}(X) = \int (x - E[X])^2$$
+- Variance: $$\mathrm{Var}(X) = \int (x - E[X])^2 f_X(x) ~dx$$
 - Standard deviation: $$\sigma(X) = \mathrm{Var}(X)^{1/2}$$
 
 ## Distributions
