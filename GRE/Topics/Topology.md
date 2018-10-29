@@ -19,6 +19,7 @@
 	- Every covering has a finite subcovering.
 	- $X$ compact and $U \subset X: (U \text{ closed } \implies U \text{ compact })$
 		- $U \text{ compact } \implies U \text{ closed }$ iff $X$ is Hausdorff
+	- Closed under products
 
 Example:
 - The space $\theset{\frac{1}{n}}_{n\in \NN}$
