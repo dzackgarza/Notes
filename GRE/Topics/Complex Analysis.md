@@ -22,6 +22,10 @@ $$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
 
 - For $z=a+bi$, $(x-z)(x-\conjugate{z}) = x^2 - 2\Real{z}x + (a^2+b^2)$
 
+- Differentiability
+$$
+z' = \lim_{h\to 0} \frac{f(z+h)-f(z)}{h}
+$$
 - Computing residues:
 $$
 \operatorname { Res } ( f , c ) = \frac { 1 } { ( n - 1 ) ! } \lim _ { z \rightarrow c } \frac { d ^ { n - 1 } } { d z ^ { n - 1 } } \left( ( z - c ) ^ { n } f ( z ) \right) \\
