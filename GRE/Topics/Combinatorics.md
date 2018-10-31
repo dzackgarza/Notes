@@ -29,6 +29,11 @@ Stirling Numbers
 
 Consider a function $f: N \to K$ where $\abs{N}=n, \abs{K} = k$.
 
+Three equally valid interpretations:
+- $f$ labels elements of $N$ by elements of $K$
+- For each element of $N$, $f$ chooses an element of $K$
+- $f$ partitions $N$ into classes that are mapped to the same element of $K$
+
 $$\begin{array}{c|c|c|c}
 \text{Permutations \ Restrictions}  & N \mapsvia{f} K & N \injects K & N \surjects K
 \\ \hline
