@@ -1,9 +1,24 @@
- - Choosing: $n\choose k$
-	 - Choosing with repetition allowed: ${n+k-1}\choose k$
-
+## Notation
+$$\begin{align*}
+n^\underline k 	&= n(n-1)(n-2) \cdots (n-k+1) && \text{(falling factorial, $k$ terms)}\\
+n^{\overline k} &= n(n+1)(n+2) \cdots (n+k-1) \text{} && \text{(rising factorial, $k$ terms)}\\ 
+{n\choose k} 		&= \frac{n!}{k!(n-k)!} = \frac{n^\underline k} {k!} \\
+a
+\end{align*}$$
+# The Important Numbers
+- Binomial Coefficients
+	- Choosing:
+	- Choosing with repetition allowed: ${n+k-1}\choose k$
 Stirling Numbers
 - Of the first kind $S(n,k) = S(n-1, k-1) + kS(n-1, k)$
-- Of the second kind
+- Of the second kind: $\stirling{n}{k}$
+	- Counts the number of ways to partition a set of $n$ labelled objects into $k$ nonempty, unlabelled subsets
+	- Recurrence relation:
+		$$
+		\left\{ \begin{array} { c } { n + 1 } \\ { k } \end{array} \right\} = k \left\{ \begin{array} { l } { n } \\ { k } \end{array} \right\} + \left\{ \begin{array} { c } { n } \\ { k - 1 } \end{array} \right\}\\ \\ \stirling 0 0 = 1,\quad \stirling n 0 = \stirling 0 n = 0
+		$$
+	- Explicit formula: $\stirling n k = \frac 1 {k!} \sum_{i=0}^k (-1)^{k-i} {k \choose i} i^n$
+	- $B_n = \sum_{i=0}^n \stirling n i$
 
 Betti Numbers
 Bell Numbers
@@ -23,9 +38,9 @@ f \circ \sigma_N 								& {n+k-1}\choose n & k\choose n & {n-1}\choose{n-k} \\
 In words:
 Perm. / Rest.  | ---  | Injective  | Surjective  
 --|---|---|--  
----  | A sequence of $n$ elements from $X$  |   |  Compositions of $N$ with exactly $k$ subsets
+---  | A sequence of any $n$ elements of $K$  |  Sequences of $n$ _distinct_ elements of $K$ |  Compositions of $N$ with exactly $k$ subsets
 Permutations of $N$  |  Multisets of $K$ with $n$ elements | An $n\dash$element subset of $K$  |  Compositions of $n$ with $k$ terms
-Permutations of $X$  |    Partitions of $N$ into $\leq k$ subsets | Partitions of $n$ into $\leq k$ nonempty parts   | Partitions of $N$ into exactly $k$ subsets  
+Permutations of $X$  |    Partitions of $N$ into $\leq k$ subsets | Partitions of $n$ into $\leq k$ nonempty parts   | Partitions of $N$ into exactly $k$ nonempty subsets  
 Both  |  Partitions of $n$ into $\leq k$ parts | Partitions of $n$ into $\leq k$ nonempty parts  | Partitions of $n$ into exactly $k$ parts  
 
 Set/Integer Partitions
