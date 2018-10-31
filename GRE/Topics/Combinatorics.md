@@ -19,9 +19,10 @@ Stirling Numbers
 		$$
 	- Explicit formula: $\stirling n k = \frac 1 {k!} \sum_{i=0}^k (-1)^{k-i} {k \choose i} i^n$
 	- $B_n = \sum_{i=0}^n \stirling n i$
-
-Betti Numbers
-Bell Numbers
+- Betti Numbers
+- Bell Numbers
+- Partitions
+- Compositions
 
 ## The Twelvefold Way
 
