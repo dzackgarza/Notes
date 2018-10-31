@@ -39,6 +39,7 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 - Partitions
 	- A partition of $n$ is a composition of $n$ quotiented by permutations of the ordering of terms.
 		- Example: 2 compositions of $5$ involving $1$ and $4$, given by $4+1$ and $1+4$, whereas there is only one such partition of $5$ given by $4+1$.
+	- Visualize with Young diagrams
 
 ## The Twelvefold Way
 
