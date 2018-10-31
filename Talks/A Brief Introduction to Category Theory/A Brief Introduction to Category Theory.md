@@ -1,4 +1,3 @@
-
 # Disclaimer
 
 This is meant to be a relatively short and **non-rigorous** introduction to Category Theory. Although I will be defining and using a lot of the technical terminology that is commonly used, this talk is primarily aimed at introducing these concepts, why they exist, and where they're useful and commonly used.
@@ -17,8 +16,6 @@ In particular, Eilenberg and Mac Lane wanted to formalize the notion of a **natu
 
 ## Interlude --  What does "natural" mean?
 
-----
-
 A canonical example from mathematics is that, given a finite-dimensional vector space $V$ over a field $k$ (you can just take $k=\mathbb{R}$ here if you'd like), one can look at it's *dual space*, denoted $V^*$, which is the space of all functions $f : V \rightarrow k$ that take vectors in $V$ as input and output scalars in the base field $k$. It turns out that $V^*$ is also a vector space, with the same dimension as $V$, and one result you might remember from linear algebra is that $\text{dim} V = n \Rightarrow V \cong R^n$ --  that is, all vector spaces of finite dimension $n$ are indistinguishable (as vector spaces) from $\mathbb{R}^n$.
 
 In particular, we have $\text{dim}~V^* = n$, so $V^* \cong R^n \cong V$. So $V$ is isomorphic to its dual.
@@ -26,8 +23,6 @@ In particular, we have $\text{dim}~V^* = n$, so $V^* \cong R^n \cong V$. So $V$ 
 But $V^*$ is a vector space in its own right, so we can look at *it's* dual too! This is denoted $V^{**}$, and sometimes referred to as the "double dual" of $V$. In exactly the same way, we find that $\text{dim}V^{**} =n$ as well, and so $V^{**} \cong V^*$, and so we can conclude that $V \cong V^{**}$ --  that is, $V$ is isomorphic to its double dual.
 
 So $V$ is isomorphic to $V^*$, and it is also isomorphic to $V^{**}$.  However, when one goes through the process of actually finding and constructing these bijections, one finds that the map from $V \rightarrow V^{*}$ truly depends on choosing a basis for $V$; on the other hand, the map from $V$ to $V^{**}$ requires *no such choice*. In this way, we say that $V$ is isomorphic to its dual, but $V$ is *naturally* isomorphic to it's double dual.
-
------
 
 This idea of "naturality" is part of what category theory sets out to make precise.
 
@@ -43,8 +38,6 @@ In a nutshell, categories were invented as a framework to support **functors**, 
 
 ## Interlude --  What is an adjoint?
 
----
-
 Adjunction is a slightly complicated concept, but informally speaking, **functors** map categories into other categories, and adjoints allow you to "approximate" one category by another. And in some cases, there is also an "inverse" to this approximation which takes you back to the original category.
 
 For example, consider groups and sets; there are categories $\mathbf{Grp}$ and $\mathbf{Set}$ in which these objects live. A group is really just a set that is decorated with some additional structure --  in this case, a binary operation that essentially behaves like modular addition. Usually groups are given to you with an *a priori* notion of what this operation is, but what if this weren't the case? If you were just given a set, is there any way to "upgrade" it to a group?
@@ -56,8 +49,6 @@ Then, there is something called a "forgetful functor" $\mathcal{F}$ from $\mathb
 Then $\mathcal{F}$ has an adjoint $\mathcal{G}$, which creates the free group on that set, $F(\{a_0, a_1\})$. So if you apply $\mathcal{G} \circ \mathcal{F}$ to $\mathbb{Z_2}$, you end up back in $\mathbf{Grp}$, but you don't get back the same group you started with --  indeed, the free group consists of infinitely many strings over the alphabet $a_o, a_1, a_0^{-1}, a_1^{-1}$, while $\mathbb{Z}_2$ had only two elements. So this adjunction, the free group, provided a way to reconstruct a minimal group out of the information we lost by applying $\mathcal{F}$. For this reason, you'll often hear of adjunction as the "the most efficient" solution to a given problem, or as a form of "optimization".
 
 (In this case, however, there was only one group with an underlying set of two elements, so if we knew the adjunction was applied, we could deduce what the original group was!)
-
----
 
 # Definition of a Category
 
@@ -91,13 +82,6 @@ Which satisfies two axioms:
 
 Note that the objects of category are "black boxes" --  we have no real information about what is inside of them, so in general we can not talk about elements of an object.
 
-<-- #TODO -->
-Define: functor
-
-Define: adjunction
-
-Define: equivalence of categories
-
 ## Foundational Issues
 
 Certain collections of objects are "too big" to be sets -- for example, we have Russel's paradox: $(\exists R = \{ x : x \not \in x \}) \Rightarrow (R\in R \iff R\not\in R)$, which must be a contradiction. So strictly speaking, one can not consider a "set of all sets", although we would like to study things like the *blah* of all sets, for whatever *blah* we can come up with. In particular, we'd like a category **Set** that contains all sets
@@ -110,36 +94,37 @@ We will take the objects of categories to be proper classes, and in general the 
 
 Since categories can be quite abstract objects, it's useful to have a few concrete toy examples in mind to check new definitions and theorems against, here are a number of you can use. I've tried to collect examples from Algebra, Analysis, and even a few from Computer Science --  it is by no means necessary to be familiar with all of these; usually finding a few that you use often and are familiar with is quite sufficient for most purposes.
 
-----------
-
 Here, I'll just cover what I think are the three most important parts of recognizing that some structure you've used is a category --  the objects, the morphisms, and what kind of morphisms are called isomorphisms in that category. Checking the categorical axioms is pretty routine and perhaps not as enlightening, so we'll skip that for now.
 
-That being said, here's how the examples are formatted:
+That being said, here's how the following examples are formatted:
 
-- $\mathbf{Name}$: A somewhat informal name I've given to the category as a whole.  Some names are more "official", but these vary a lot across the literature. Some categories aren't named at all, so I've supplied arbitrary names in some cases. Note that some categories are named after their object classes ($\mathbf{Set}$),  while others are actually named after their morphism classes ($\mathbf{Mat}$). Category names are usually typeset in *mathbf*.
-  - *Objects*: Describes the entire class $Ob(C)$, and gives an example of what the full data of what two distinct members $X, Y$ in $Ob(C)$ might look like. I've tried to match the notation to the domain-specific notation one might use when working in each individual category.
-  - *Morphisms*: Denotes what the entire class $Hom(C)$ looks like, as well as what a morphism $f: X \rightarrow Y \in Hom_C(X,Y) \in Hom(C)$ looks like.
-  - *Isomorphisms*: Denotes what conditions one puts on a morphism $f: X\rightarrow Y$  , and perhaps a corresponding morphism $g : Y \rightarrow X$, in order to recognize $X, Y$ as isomorphic objects in this category. (Often denoted $X \cong Y$)
+$\mathbf{Name}$: A somewhat informal name I've given to the category as a whole.  Some names are more "official", but these vary a lot across the literature. Some categories aren't named at all, so I've supplied arbitrary names in some cases. Note that some categories are named after their object classes ($\mathbf{Set}$),  while others are actually named after their morphism classes ($\mathbf{Mat}$). Category names are usually typeset in *mathbf*.
+
+*Objects*: Describes the entire class $Ob(C)$, and gives an example of what the full data of what two distinct members $X, Y$ in $Ob(C)$ might look like. I've tried to match the notation to the domain-specific notation one might use when working in each individual category.
+
+*Morphisms*: Denotes what the entire class $Hom(C)$ looks like, as well as what a morphism $f: X \rightarrow Y \in Hom_C(X,Y) \in Hom(C)$ looks like.
+
+*Isomorphisms*: Denotes what conditions one puts on a morphism $f: X\rightarrow Y$  (and perhaps a corresponding morphism $g : Y \rightarrow X$) in order to recognize $X, Y$ as isomorphic objects in this category, which we'll denote $X \cong Y$.
 
 *Notes*: Some of these categories are constructed, and easier to demonstrate their construction blackboard. I've included notes to explain how this is done for a few examples.
 
-### Constructions
+## Constructions
 
 Here, I'll explicitly describe the full set of objects, and the full set of morphisms.
 
-#### $\mathbf{2}$ (The minimal category on two objects)
+### $\mathbf{2}$ (The minimal category on two objects)
   * Objects: $\{a,b\}$ (A category made out of two arbitrary objects)
   * Morphisms: $\{Id_a: a \mapsto a, Id_b: b \mapsto b\}$
   * Isomorphisms: None (There is no morphism from $b$ to $a$.)
 
-#### $\mathbf{2'}$ (A modified version of $\mathbf{2}$)
+### $\mathbf{2'}$ (A modified version of $\mathbf{2}$)
   - Objects: $\{a,b\}$
   - Morphisms: $\{a \mapsto a, Id_b: b \mapsto b\} \cup \{ \bigstar: a \mapsto b, Id_a:  \}$
   - Isomorphisms: None (There is no morphism from $b$ to $a$.)
 
 *Notes:* Here I just took $\mathbf{2}$ and added in a single extra morphism. The star symbol is used here just to denote the fact that this mapping is completely made up, and that arrows in categories don't have to be "functions"  in the traditional sense at all. Each arrow is just *some* way to associate a source object with a target object.
 
-#### $\mathbf{n}$ (The minimal category on $n$ objects)
+### $\mathbf{n}$ (The minimal category on $n$ objects)
   * Objects: $\{a_1, a_2, \cdots, a_n\}$ (A category made out of $n$ arbitrary objects)
   * Morphisms: $\{Id_{a_1}: a_1 \mapsto a_2, Id_{a_2}: a_2 \mapsto a_2, \cdots , Id_{a_n} a_n \mapsto a_n\}$
   * Isomorphisms: None (There are no morphism from $a_i$ to $a_j$ for any $i,j \leq n$)
@@ -148,7 +133,7 @@ Here, I'll explicitly describe the full set of objects, and the full set of morp
 
 Also, note that it didn't matter that $n$ was finite here --  this construction works for any set $X$, yielding $\mathbf{Dis(X)}$ (the discrete category on $X$)
 
-#### $\mathbf{3'}$
+### $\mathbf{3'}$
   - Objects: $\{a, b\} \cup \{c\}$ (A "minimally interesting" extension of $\mathbf{2}$)
   - Morphisms: $\{\bigstar: a \mapsto b,  Id_a: a \mapsto a, Id_b: b \mapsto b\} $
     $\cup~\{ Id_c: c\mapsto c\} $
@@ -167,9 +152,9 @@ At this point, we just have $\mathbf{3}$, so we look to modify the morphisms a b
 However, this won't be a category unless it satisfies the axiom of composition, so we're forced to add in a morphism that looks like $\sharp$.
 
 Denote
-​		- $\bigstar$ by $f$
-​		- $\clubsuit$ by $g$
-​		- $\sharp$ by $g \circ f$,
+- $\bigstar$ by $f$
+- $\clubsuit$ by $g$
+- $\sharp$ by $g \circ f$,
 
 and you get something that perhaps looks a little more familiar:
 
@@ -177,11 +162,11 @@ and you get something that perhaps looks a little more familiar:
 
 If you haven't seen this before, don't worry --  I am sure you will! This particular "shape" of diagram shows up in many algebraic constructions (quotients and products, to name a few), and understanding it is the first step in getting a handle on things like universal properties.
 
-### More Standard Examples
+## More Standard Examples
 
 Here are some common examples of categories that arise in various contexts, roughly in increasing order of complexity.
 
-#### $\mathbf{Set}$
+### $\mathbf{Set}$
   - Objects: Sets $A, B$
   - Morphisms: Set functions $f: A \rightarrow B$
   - Isomorphisms: Bijective set functions $f: A\rightarrow B$
@@ -200,14 +185,14 @@ Here are some common examples of categories that arise in various contexts, roug
 
   So we refer to $g$ as **the** two-sided inverse and call it $f^{-1}$, which is unique when it exists. In many common cases, the objects in a category are "built" out of sets. These categories are called concrete, and the isomorphisms in these categories end up just being isomorphisms of the underlying sets, along with some other structure-preserving conditions. Thus understanding how morphisms and isomorphisms in $\mathbf{Set}$ are constructed is a key first step.
 
-#### $\mathbf{Poset}$
+### $\mathbf{Poset}$
   - Objects: Partially-ordered sets $(P \leq)$, $(Q, \prec)$
     - Recall that partial orders are reflexive, transitive, antisymmetric binary operations.
   - Morphisms: Set functions $f: P \rightarrow Q$
   - Isomorphisms: Bijective functions $f: P \rightarrow Q$ such that
     if $x,y\in P$ and $x\leq y$, then $f(x) \prec f(y)$
 
-#### $\mathbf{Rel}$
+### $\mathbf{Rel}$
   - Objects: Binary Relations $(X, \sim), (Y, \propto)$
     - Here $X$ is  just a set and $\sim \subseteq X\times X$ is a binary relation.
   - Morphisms: Relation-preserving set functions $f: X \rightarrow Y$ such that $\forall a,b\in X, a\sim  b \Rightarrow f(a)\propto f(b)$
@@ -218,7 +203,7 @@ Here are some common examples of categories that arise in various contexts, roug
   Also notice that to get an isomorphism, all we really did was take an isomorphism on the underlying set, and required that the inverse also satisfied the conditions of the morphisms in this category. So really, it required $f$ to be bijective in $\mathbf{Set}$, then $g=f^{-1}$ just needed to *also be morphism in* $\mathbf{Rel}$. We'll see this pattern in almost every concrete category!
 
 
-#### $\mathbf{Grp}$
+### $\mathbf{Grp}$
   - Objects: Groups $(G, \star), (H, \diamond)$
   - Morphisms: Group homomorphisms $\varphi: (G, \star) \rightarrow (H, \diamond)$ where $\forall x,y \in G$, $\phi(x\star y) = \phi(x) \diamond \phi(y)$
   - Isomorphisms: Bijective group homomorphisms.
@@ -229,7 +214,7 @@ Here are some common examples of categories that arise in various contexts, roug
 
   This can be summed up with a wave of the hand by saying that the isomorphisms in a category are just *invertible structure-preserving morphisms*.
 
-#### $\mathbf{Ring}$
+### $\mathbf{Ring}$
   - Objects: Rings $(R, +, \times)$
   - Morphisms: Ring homomorphisms $\varphi: (R, +, \times) \rightarrow (S, \star, \diamond)$ where $\varphi(a\times(b+c)) = \varphi(a)\star(\varphi(b) \diamond \varphi(c))$
   - Isomorphisms: Bijective ring homomorphisms
@@ -239,7 +224,7 @@ Here are some common examples of categories that arise in various contexts, roug
   - Homomorphisms of abelian groups $\varphi: G \rightarrow H$
   - Isomorphisms: Bijective group homomorphisms
 
-#### $\mathbf{Vect_k}$
+### $\mathbf{Vect_k}$
   - Objects: Vector spaces over a field $k$, say $V, W$
   - Morphisms: $k$-linear maps $T: V \rightarrow W$
     - These are maps $T$ such that $\forall v_1, v_2 \in V, \forall k\in K$, we have $T(v_1 + kv_2) = T(v_1) + kT(v_2)$.
@@ -256,7 +241,7 @@ Here are some common examples of categories that arise in various contexts, roug
 
   The point of this example is to show that (generally speaking) as more structure is put on the objects, more restrictions will need to be put on the morphisms to retain that structure.
 
-#### $\mathbf{Logic_0}$ (Propositional or "0-order" Logic)
+### $\mathbf{Logic_0}$ (Propositional or "0-order" Logic)
   - Objects: Propositions $P, Q$
   - Morphisms: Deductions defined by $P \Rightarrow Q$ or "P implies Q"
     - Also known as deductions
@@ -265,7 +250,7 @@ Here are some common examples of categories that arise in various contexts, roug
   *Notes*: This can be thought of as "the category of proofs", and such a category can be derived from any deductive system. The isomorphisms here are "if and only if" statements, and they are often exploited in Mathematics to create *definitions*.
   (In other words, every Mathematical definition is an iff statement, and any proposition isomorphic to a definition in this category can be taken as an equivalent definition.)
 
-#### $\mathbf{Aut}$ (Finite state automata)
+### $\mathbf{Aut}$ (Finite state automata)
 
   - Objects: Finite state automata $(Q, \Sigma, \delta, q_0, F), (Q', \Sigma, \delta', q'_0, F')$
 
@@ -287,13 +272,13 @@ Here are some common examples of categories that arise in various contexts, roug
     - $q_0 = q'_0$
     - $F = F'$
 
-#### $\mathbf{Graph}$
+### $\mathbf{Graph}$
   - Objects: Graphs $G = (V_1, E_2),  H =(V_2, E_2)$ where $E_i \subseteq V_i\times V_i$
   - Morphisms: maps $f: V_1  \rightarrow V_2$ where  $(v,w) \in E_1 \Rightarrow (f(v), f(w)) \in E_2$
     - i.e. maps between vertex sets that preserve incidence relations.
   - Isomorphisms: Bijective graph morphisms
 
-- $\mathbf{Mat(\mathbb{F})}$
+### $\mathbf{Mat(\mathbb{F})}$
   - Objects: Natural numbers $m, n$
   - Morphisms:  $A:m \rightarrow n$ is $m\times n$ matrix with entries in the underlying field $\mathbb{F}$
   - Isomorphisms: Natural numbers $m, n$ for which there exists a $B: n\rightarrow m$  , i.e an $n\times m$ matrix, such that $AB = BA =I$
@@ -303,24 +288,24 @@ Here are some common examples of categories that arise in various contexts, roug
 
   While this seems like an odd category to consider, the kicker is it's possible to prove that there is a "full, faithful, surjective functor from $\mathbf{Mat}(\mathbb{F})$ to $\mathbf{Vec}(\mathbb{F})$" --  in other words, one can move between these categories without losing any vital information. In this case, this tells us that when working with (finite dimensional) vector spaces, it doesn't matter whether you study abstract linear maps or the matrices that represent them!
 
-#### $\mathbf{Hask}$ (pseudo-category)
+### $\mathbf{Hask}$ (pseudo-category)
   - Objects: Haskell types $A, B$
   - Morphisms: Functions $f: A \rightarrow B$
   - Isomorphisms: Type $A,B$ for which there exist functions $f: A\rightarrow B, g: B \rightarrow A$ such that $f.g b = id ~b$ and $g.f a = id ~a$
     - Note: From the compiler's point of view, *function* equivalence is perhaps the more interesting/important thing to look at!
 
-#### $\mathbf{\lambda-Calc}$
+### $\mathbf{\lambda-Calc}$
   - Objects: Typed lambda calculi
   - Morphisms: Translations that map types to types, terms to terms, and preserve equations ($\alpha$ conversions, $\beta$ reductions, etc)
 
-#### $\mathbf{Diff}$
+### $\mathbf{Diff}$
   - Objects: Smooth manifolds $(\mathcal{M}, \mathcal{A})​$ ,where $\mathcal{M}​$ is a topological manifold (locally homeomorphic to $\mathbb{R}^n​$), and $\mathcal{A}​$ is a maximal smooth atlas on $\mathcal{M}​$.
   - Morphisms: Smooth maps $F: (\mathcal{M_1}, \mathcal{A_1}) \rightarrow (\mathcal{M_2}, \mathcal{A_2})$ (where  $F = (f_1, f_2, \cdots)$) such that $\frac{\partial f_i}{\partial x_j}$ is continuous for all $i,j$, and if $\phi \in \mathcal{A_1}$ is a chart on $\mathcal{M_1}$, then $F(\phi)\in\mathcal{A_2}$ and is a chart on $\mathcal{M_2}$
   - Isomorphisms: Diffeomorphisms, which are morphisms $F$ with a smooth inverse $G$.
 
   *Notes*: This is where differential geometry and a fair amount of topology takes places, as well as certain branches of analysis, partial differential equations, and physics.
 
-#### $\mathbf{Meas}$
+### $\mathbf{Meas}$
   - Objects: Measurable spaces $(X, \mathcal{\Sigma}_X), (Y, \mathcal{\Sigma}_Y)$
     - (Where the $\Sigma \subset 2^X$ are $\sigma$-algebras over their respective sets, and the members of $\Sigma$ are denoted the measurable sets)
     - Note that these are measur**able** spaces, not measure spaces --  this is a space for which a measure $\mu$ can be assigned. The triple $(X, \Sigma, \mu_X)$ would be a **measure** space.
@@ -338,13 +323,13 @@ Here are some common examples of categories that arise in various contexts, roug
 
   (In particular, it occludes the possibility of having a structure that is denoted the "categorical product". Attempts formalize measure/probability in categorical terms is a topic of relatively current research.)
 
-#### $\mathbf{Top}$
+### $\mathbf{Top}$
   - Objects: Topological Spaces $(X, \mathcal{T}_X)$
   - Morphisms: Continuous functions $f: (X, \mathcal{T}_X) \rightarrow (Y, \mathcal{T}_Y)$ such that if $U$ is open in $Y$, then $f^{-1}(U)$ is open in $X$.
     - Note that this is equivalent to $U \in \mathcal{T}_Y \Rightarrow f^{-1}(U) \in \mathcal{T}_X$
   - Isomorphisms: Homeomorphisms where $f$ has an inverse $g$  (as in $\mathbf{Set}$) where $g$ is also a continuous function.
 
-#### $\mathbf{Unif}$
+### $\mathbf{Unif}$
   - Objects: Uniform Spaces $(X, \varepsilon)$
   - Morphisms: Uniformly continuous maps
   - Isomorphisms: Uniform maps, i.e. uniformly continuous maps admitting a uniformly continuous inverse.
@@ -352,7 +337,7 @@ Here are some common examples of categories that arise in various contexts, roug
 
   *Notes*: A uniform space is a topological space, equipped with some notion of "$\varepsilon$-closeness". Things like metric spaces and topological groups fit this description,  so most analysis technically happens in this category.
 
-#### $\mathbf{Met}$
+### $\mathbf{Met}$
   - Objects: Metric spaces $(M_1, d_1), (M_2, d_2)$
     - $d_1 : M_1 \times M_1 \rightarrow \mathbb{R}$ is denoted the *metric* on $M_1$.
   - Morphisms: Contractions $f: (M_1, d_1) \rightarrow (M_2, d_2)$ such that $\forall x,y \in M_1$, we have $d_2(f(x), f(y)) \leq d_1(x,y)$.
@@ -365,13 +350,13 @@ Here are some common examples of categories that arise in various contexts, roug
 
   Since every metric space is a topological space, the morphisms here need to extend the morphisms on $\mathbb{Top}$. This is in fact the case in $\mathbf{Met}$, since contractions on metric spaces end up being continuous.
 
-#### $\mathbf{Norm}$
+### $\mathbf{Norm}$
   - Objects: Normed spaces
   - Morphisms: Continuous and linear maps
     - i.e., $Hom(\mathbf{Met}) \cap Hom(\mathbf{Vec})$
   - Isomorphisms: Continuous linear bijective maps with continuous linear inverses
 
-#### $\mathbf{Ban}$ (Complete normed vector spaces)
+### $\mathbf{Ban}$ (Complete normed vector spaces)
   - Objects: Banach spaces $B, C$
   - Morphisms: Bounded linear maps $f: B \rightarrow C$ such that $\Vert f\Vert_{\text{sup}}$ is finite.
     - If $B=C$, these are usually referred to as *bounded linear operators*
@@ -385,7 +370,7 @@ Here are some common examples of categories that arise in various contexts, roug
 
   This is also where much of functional analysis happens.
 
-#### $\mathbf{Hilb}$ (Complete inner product spaces)
+### $\mathbf{Hilb}$ (Complete inner product spaces)
   - Objects: Hilbert Spaces $\mathcal{H}, \mathcal{K}$
   - Morphisms:  Bounded linear maps $T: \mathcal{H} \rightarrow \mathcal{K}$ such that $\Vert T \Vert_{sup}$ is finite.
   - Isomorphisms: Bounded linear maps with bounded linear inverses.
@@ -394,7 +379,7 @@ Here are some common examples of categories that arise in various contexts, roug
 
 Similarly, one can simultaneously regard any Hilbert space as a Banach space, where the norm is induced by the inner product.
 
-#### $\mathbf{Cat}$
+### $\mathbf{Cat}$
   - Objects: Small categories $C = (Ob(C), Hom(C)), ~D = (Ob(D), Hom(D))$
   - Morphisms: **Functors** $F: (Ob(C), Hom(C)) \rightarrow (Ob(D), Hom(D))$
     - Functors map:
@@ -404,7 +389,7 @@ Similarly, one can simultaneously regard any Hilbert space as a Banach space, wh
     - In words, this just sends the objects and arrows of one category to another, preserving the way arrows connect objects
   - Isomorphisms: **Natural isomorphisms**, i.e. functors $F: C \rightarrow D$ with a dual functor $G: D \rightarrow C$ such that $F \circ G \cong Id_D \text{ and } G \circ F \cong Id_C$
 
-## Building More Examples
+## Building New Examples from Old Ones
 
 We can also make simple modifications to existing categories to obtain new ones:
 
@@ -427,8 +412,11 @@ We can also make simple modifications to existing categories to obtain new ones:
 - The category of all morphisms in a fixed category $\mathbf{C}$, which yields $n\dash$categories.
 - Take $C$ and reverse arrows to obtain $C^{op}$ to obtain a form of "duality".
 
-# Big Ideas
+---
 
+*(Note: everything that follows are just rough notes on what I like to cover when I give talks on this topic!)*
+
+# Big Ideas
 - Duality
 - Isomorphisms
 - Universal Properties
@@ -465,7 +453,7 @@ We can also make simple modifications to existing categories to obtain new ones:
 - Canonical Example: Vector spaces $V$ and their duals $V^*$ over a field $k$
   - $V^* = \{\phi: V \rightarrow k\}$ where $\phi$ is linear
   - $V \not\cong V*$, but $V \cong V^{**}$
-- Very powerful! Example: Poincare Duality
+- A very powerful example: Poincare Duality
   - The $k$th homology group of an $n$-dimensional manifold  is isomorphic $(n-k)$th cohomology group
   - $H^k(M) \cong H_{n-k}(M)$.
 

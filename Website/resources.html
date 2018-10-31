@@ -7,7 +7,7 @@
       
       
         <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"displayMath":[["$$","$$"],["\\[","\\]"]],"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true,"processEnvironments":false},"TeX":{"extensions":["noUndefined.js","autoload-all.js","AMSmath.js","AMSsymbols.js"],"Macros":{"NN":"{\\mathbb{N}}","RR":"{\\mathbb{R}}","ZZ":"{\\mathbb{Z}}","CC":"{\\mathbb{C}}","QQ":"{\\mathbb{Q}}","RP":"{\\mathbb{RP}}","CP":"{\\mathbb{CP}}","HP":"{\\mathbb{HP}}","OP":"{\\mathbb{OP}}","FF":"{\\mathbb{F}}","PP":"{\\mathbb{P}}","AA":"{\\mathbb{A}}","MM":"{\\mathbb{M}}","TT":"{\\mathbb{T}}","SS":"{\\mathbb{S}}","KK":"{\\mathbb{K}}","Gr":"{\\text{Gr}}","GL":"{\\text{GL}}","indicator":"{\\unicode{x1D7D9}}","char":"{\\mathbb{1}}","abs":["\\left\\lvert #2 \\right\\rvert_{\\text{#1}}",2,""],"Aut":"{\\text{Aut}}","del":"{\\partial}","too":["{\\xrightarrow{#1}}",1,""],"im":"{\\text{im}~}","homotopic":"\\simeq","into":"\\to","theset":["\\{{#1}\\}",1],"norm":["{\\lVert}{#1}{\\rVert}",1],"cross":"\\times","definedas":"\\mathrel{\\vcenter{:}}=","surjects":"\\twoheadrightarrow","onto":"\\twoheadrightarrow","injects":"\\hookrightarrow","id":"\\text{id}","restrictionof":["\\left.{#1}\\right|_{#2}",2],"intersect":"\\bigcap","union":"\\bigcup","mapsvia":["\\xrightarrow{#1}",1],"coker":"\\operatorname{coker}","tensor":"\\otimes","semidirect":"\\rtimes","pt":"\\{\\text{pt}\\}","and":"{\\text{and}}","or":"{\\text{or}}","bd":"{\\del}","wait":"{\\,\\cdot\\,}","selfmap":"{\\circlearrowleft}","tor":"{\\text{Tor}}","ext":"{\\text{Ext}}","hom":"{\\text{Hom}}","actson":"{\\curvearrowright}","actsonl":"{\\curvearrowleft}","disjoint":"{\\coprod}","qed":"{\\tag*{$\\blacksquare$}}","endef":"{\\tag*{$\\triangleleft$}}","dash":"{\\hbox{-}}","inner":["\\langle #1, #2 \\rangle",2,""],"bigast":"{\\mathop{\\Large \\ast}}","from":"{\\leftarrow}","covers":"{\\twoheadrightarrow_p}"}},"HTML-CSS":{"availableFonts":["TeX"]}});
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
         </script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
         
@@ -352,16 +352,14 @@ code.language-yaml {
 <li>For lower division or introductory courses, try to obtain a textbook paired with a solutions manual. This is a great way to drill problems, check your answers, and identify your weaknesses. Beware typos!</li>
 <li>Don’t both with sites like Chegg.</li>
 <li>For computational courses: Schaum’s Outlines can be useful, but the quality is <em>very</em> subject-dependent.</li>
-<li>Learn how to use a Computer Algebra System (CAS). Don’t use it as a crutch - just learn enough syntax so that you can quickly run “sanity checks” on your computations. <a href="http://www.wolframalpha.com/">Wolfram Alpha</a> is a good for quick things. If you have the time, learn something like <a href="http://www.sagemath.org/index.html">SageMath</a>, which can do symbolic computations and can even be used for things like group theory and algebra.</li>
-</ul>
-<p>Below are resources for specific courses/subjects; I’ve tried to roughly organize these by increasing complexity with respect to a typical undergraduate Math degree.</p>
-<p><strong>Legend</strong></p>
-<ul>
+<li>Learn how to use a Computer Algebra System (CAS). Don’t use it as a crutch - just learn enough syntax so that you can quickly run “sanity checks” on your computations. <a href="http://www.wolframalpha.com/">Wolfram Alpha</a> is a good for quick things. If you have the time, learn something like <a href="http://www.sagemath.org/index.html">SageMath</a>, which can do symbolic computations and can even be used for things like group theory and algebra.<br>
+Below are resources for specific courses/subjects; I’ve tried to roughly organize these by increasing complexity with respect to a typical undergraduate Math degree.<br>
+<strong>Legend</strong></li>
 <li><i class="fa fa-book" aria-hidden="true"></i> – Textbooks</li>
 <li><i class="fa fa-tv" aria-hidden="true"></i> – Videos or online lectures</li>
 <li><i class="fa fa-external-link" aria-hidden="true"></i> – Websites or other online collections of resources</li>
 <li><i class="fa fa-star" aria-hidden="true"></i> – Particularly excellent resources that I highly recommend</li>
-<li><em>Details</em> – Notes on the mathematical content or subject-specific advice.</li>
+<li><em>Details</em> – Expand these sections for notes on the mathematical content or subject-specific advice.</li>
 </ul>
 <hr>
 <h2 class="mume-header" id="single-variable-calculus">Single Variable Calculus</h2>
@@ -389,8 +387,8 @@ code.language-yaml {
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**:
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="multiviarable-vector-calculus">Multiviarable / Vector Calculus</h2>
 
@@ -407,8 +405,8 @@ code.language-yaml {
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**: Many Calculus books cover both single and multivariable, so most of the resources from the single variable section will be applicable here as well. However, the resources in this section focus almost entirely on multivariable cases.
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>: Many Calculus books cover both single and multivariable, so most of the resources from the single variable section will be applicable here as well. However, the resources in this section focus almost entirely on multivariable cases.</p>
 </details>
 <h2 class="mume-header" id="linear-algebra">Linear Algebra</h2>
 
@@ -440,8 +438,8 @@ code.language-yaml {
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**:
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="ordinary-differential-equations">Ordinary Differential Equations</h2>
 
@@ -458,8 +456,8 @@ code.language-yaml {
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**:
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="discrete-mathematics">Discrete Mathematics</h2>
 
@@ -486,19 +484,21 @@ code.language-yaml {
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-- Basic logic (truth tables, quantifiers, implications, contrapositive and converse, induction)
-- Basic set theory (set-builder notation, venn diagrams, cartesian products)
-- Functions (injectivity/surjectivity, inverse images)
-- Relations (partial orders, equivalence relations)
-- Basic combinatorics (permutations and combinations, inclusion/exclusion, pigeonhole principle)
-- Recurrence relations
-- Graphs (Konigsberg problem, Hamiltonian/Eulerian cycles)
-- Number theory (divisibility, modular arithmetic, the Euclidean algorithm)
-- Generating functions
-- Probability (odds for dice rolls and cards, distributions, Stirling's approximation)
-<p><strong>Notes</strong>:</p>
-<p>Highlight equation aspect of proofs, ties between recurrence relations and ODEs TODO</p>
+<p><strong>Content</strong>:</p>
+<ul>
+<li>Basic logic (truth tables, quantifiers, implications, contrapositive and converse, induction)</li>
+<li>Basic set theory (set-builder notation, venn diagrams, cartesian products)</li>
+<li>Functions (injectivity/surjectivity, inverse images)</li>
+<li>Relations (partial orders, equivalence relations)</li>
+<li>Basic combinatorics (permutations and combinations, inclusion/exclusion, pigeonhole principle)</li>
+<li>Recurrence relations</li>
+<li>Graphs (Konigsberg problem, Hamiltonian/Eulerian cycles)</li>
+<li>Number theory (divisibility, modular arithmetic, the Euclidean algorithm)</li>
+<li>Generating functions</li>
+<li>Probability (odds for dice rolls and cards, distributions, Stirling’s approximation)<br>
+<strong>Notes</strong>:<br>
+Highlight equation aspect of proofs, ties between recurrence relations and ODEs TODO</li>
+</ul>
 </details>
 <hr>
 <h2 class="mume-header" id="number-theory">Number Theory</h2>
@@ -511,12 +511,14 @@ code.language-yaml {
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-- The prime counting function
-- Modular arithmetic, solving equations in rings, multiplicative functions (like the totient)
-- The Chinese remainder theorem, Euler's theorem, Fermat's Little Theorem
-- Quadratic reciprocity, the Legendre and Jacobi symbol
-<p><strong>Notes</strong>: This is a subject that pairs very well with introductory abstract algebra (groups and rings).</p>
+<p><strong>Content</strong>:</p>
+<ul>
+<li>The prime counting function</li>
+<li>Modular arithmetic, solving equations in rings, multiplicative functions (like the totient)</li>
+<li>The Chinese remainder theorem, Euler’s theorem, Fermat’s Little Theorem</li>
+<li>Quadratic reciprocity, the Legendre and Jacobi symbol<br>
+<strong>Notes</strong>: This is a subject that pairs very well with introductory abstract algebra (groups and rings).</li>
+</ul>
 </details>
 <h2 class="mume-header" id="abstract-algebra">Abstract Algebra</h2>
 
@@ -548,9 +550,9 @@ code.language-yaml {
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-Covers groups, rings, fields, and Galois theory.
-<p><strong>Notes</strong>:</p>
+<p><strong>Content</strong>:<br>
+Covers groups, rings, fields, and Galois theory.<br>
+<strong>Notes</strong>:</p>
 </details>
 <h3 class="mume-header" id="galois-theory">Galois Theory</h3>
 
@@ -562,8 +564,8 @@ Covers groups, rings, fields, and Galois theory.
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**:
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="real-analysis">Real Analysis</h2>
 
@@ -585,15 +587,17 @@ Covers groups, rings, fields, and Galois theory.
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-- The reals as an ordered field, construction
-- Metric spaces, basic topology
-- The Riemann-Stieltjes Integral
-- Sequences and series, Cauchy sequences and completeness
-- Limits and continuity, pointwise and uniform convergence
-- The Mean Value Theorem
-- Measure theory and the Lebesgue integral
-<p><strong>Notes</strong>:</p>
+<p><strong>Content</strong>:</p>
+<ul>
+<li>The reals as an ordered field, construction</li>
+<li>Metric spaces, basic topology</li>
+<li>The Riemann-Stieltjes Integral</li>
+<li>Sequences and series, Cauchy sequences and completeness</li>
+<li>Limits and continuity, pointwise and uniform convergence</li>
+<li>The Mean Value Theorem</li>
+<li>Measure theory and the Lebesgue integral<br>
+<strong>Notes</strong>:</li>
+</ul>
 </details>
 <h2 class="mume-header" id="complex-analysis">Complex Analysis</h2>
 
@@ -615,11 +619,13 @@ Covers groups, rings, fields, and Galois theory.
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-- The complex integral
-- Residue theorems
-- Analytic vs. Holomorphic vs. Complex Differentiable functions
-**Notes**:
+<p><strong>Content</strong>:</p>
+<ul>
+<li>The complex integral</li>
+<li>Residue theorems</li>
+<li>Analytic vs. Holomorphic vs. Complex Differentiable functions<br>
+<strong>Notes</strong>:</li>
+</ul>
 </details>
 <h2 class="mume-header" id="partial-differential-equations">Partial Differential Equations</h2>
 
@@ -631,8 +637,8 @@ Covers groups, rings, fields, and Galois theory.
 </li>
 </ul>
 <details markdown="1">
-**Content**: Heat/wave/Laplace equations.
-<p><strong>Notes</strong>:</p>
+<p><strong>Content</strong>: Heat/wave/Laplace equations.<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="numerical-analysis">Numerical Analysis</h2>
 
@@ -640,8 +646,8 @@ Covers groups, rings, fields, and Galois theory.
 <li><i class="fa fa-book" aria-hidden="true"></i> todo</li>
 </ul>
 <details markdown="1">
-**Content**: Fixed points and root-finding, Newton's method, least squares.
-**Notes**:
+<p><strong>Content</strong>: Fixed points and root-finding, Newton’s method, least squares.<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="combinatorics">Combinatorics</h2>
 
@@ -654,8 +660,8 @@ Covers groups, rings, fields, and Galois theory.
 <li><i class="fa fa-book" aria-hidden="true"></i> <em>Bona</em>, <a href="https://www.amazon.com/gp/product/9813148845/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=9813148845&amp;linkId=7c7b9364a6276848ebd103bcac8ef566">A Walk Through Combinatorics</a></li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**:
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="probability">Probability</h2>
 
@@ -663,8 +669,8 @@ Covers groups, rings, fields, and Galois theory.
 <li><i class="fa fa-book" aria-hidden="true"></i> UCSD todo</li>
 </ul>
 <details markdown="1">
-**Content**:
-<p><strong>Notes</strong>: It is useful to take (either beforehand or concurrently) introductory classes in both statistics and combinatorics.</p>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>: It is useful to take (either beforehand or concurrently) introductory classes in both statistics and combinatorics.</p>
 </details>
 <h2 class="mume-header" id="point-set-topology">Point-Set Topology</h2>
 
@@ -681,9 +687,9 @@ Covers groups, rings, fields, and Galois theory.
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**:
-<p>Specify which chapters are useful. TODO<br>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:<br>
+Specify which chapters are useful. TODO<br>
 Common question: where is Topology useful?<br>
 See Brouwer fixed point theorem, Lie groups in physics, links to functional analysis.</p>
 </details>
@@ -718,11 +724,13 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-- Measure theory, sigma algebras
-- Monotone and dominated convergence theorems
-- $L^p$ spaces, Holder's inequality
-<p><strong>Notes</strong>:</p>
+<p><strong>Content</strong>:</p>
+<ul>
+<li>Measure theory, sigma algebras</li>
+<li>Monotone and dominated convergence theorems</li>
+<li><span class="mathjax-exps">$L^p$</span> spaces, Holder’s inequality<br>
+<strong>Notes</strong>:</li>
+</ul>
 </details>
 <h2 class="mume-header" id="algebra">Algebra</h2>
 
@@ -741,11 +749,13 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-- Measure theory, sigma algebra
-- Montone and dominated convergence theorems
-- $L^p$ spaces, Holder's inequality
-<p><strong>Notes</strong>:</p>
+<p><strong>Content</strong>:</p>
+<ul>
+<li>Measure theory, sigma algebra</li>
+<li>Montone and dominated convergence theorems</li>
+<li><span class="mathjax-exps">$L^p$</span> spaces, Holder’s inequality<br>
+<strong>Notes</strong>:</li>
+</ul>
 </details>
 <h2 class="mume-header" id="category-theory">Category Theory</h2>
 
@@ -763,8 +773,8 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
 <li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=o6L6XeNdd_k">Talk on Category Theory by Tom LaGatta</a></li>
 </ul>
 <details markdown="1">
-**Content**:
-<p><strong>Notes</strong>: Expected in some classes, but often assumed. Used in Algebraic Topology and Algebraic Geometry heavily. You can also find many full lectures online by people like Steve Awodey, Bartosz Milewski, and Eugenia Cheng.</p>
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>: Expected in some classes, but often assumed. Used in Algebraic Topology and Algebraic Geometry heavily. You can also find many full lectures online by people like Steve Awodey, Bartosz Milewski, and Eugenia Cheng.</p>
 </details>
 <h2 class="mume-header" id="algebraic-topology">Algebraic Topology</h2>
 
@@ -796,8 +806,8 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**:
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="algebraic-geometry">Algebraic Geometry</h2>
 
@@ -814,8 +824,8 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
 </li>
 </ul>
 <details markdown="1">
-**Content**:
-**Notes**:
+<p><strong>Content</strong>:<br>
+<strong>Notes</strong>:</p>
 </details>
 <h2 class="mume-header" id="differential-geometry-manifolds">Differential Geometry / Manifolds</h2>
 
@@ -838,9 +848,11 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
 <li><em>do Carmo</em>, Riemannian Geometry</li>
 </ul>
 <details markdown="1">
-**Content**:
+<p><strong>Content</strong>:</p>
 <!-- **Notes**: -->
 </details>
+<hr>
+<p>I’m continually expanding this list – if you have any recommendations, please feel free to let me know in the comments so I can possibly add them!</p>
 <hr>
 <h1 class="mume-header" id="general-resources">General Resources</h1>
 
@@ -868,7 +880,7 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
 <ul>
 <li><i class="fa fa-book" aria-hidden="true"></i> <em>CLRS</em>, <a href="https://www.amazon.com/gp/product/0262033844/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0262033844&amp;linkCode=as2&amp;tag=dzackgarza-20&amp;linkId=f99bf4ce12d3ed422a41b841a3055d75">Introduction to Algorithms</a>
 <ul>
-<li><i class="fa fa-external-link" aria-hidden="true"></i> <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm">MIT OCW: Introduction to Algorithms</a> is a good supplement.</li>
+<li><i class="fa fa-external-link-alt" aria-hidden="true"></i> <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm">MIT OCW: Introduction to Algorithms</a> is a good supplement.</li>
 </ul>
 </li>
 <li><i class="fa fa-book" aria-hidden="true"></i> <em>McDowell</em>, <a href="https://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0984782850&amp;linkCode=as2&amp;tag=dzackgarza-20&amp;linkId=10277ceaad2b2e90ef6a1b321b555ffd">Cracking the Coding Interview</a>
@@ -920,7 +932,7 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
 </ul>
 <p><strong>Resources</strong></p>
 <ul>
-<li><i class="fa fa-external-link" aria-hidden="true"></i> You can find five sample exams <a href="http://www.math.ucla.edu/~iacoley/greprep.html">here.</a></li>
+<li><i class="fa fa-external-link-alt" aria-hidden="true"></i> You can find five sample exams <a href="http://www.math.ucla.edu/~iacoley/greprep.html">here.</a></li>
 <li><i class="fa fa-book" aria-hidden="true"></i> Princeton Review, <a href="https://www.amazon.com/gp/product/0375429727/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=dzackgarza-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0375429727&amp;linkId=a8d125e03d8fa03bd5e41231a88252d1">Cracking the Math Subject GRE</a></li>
 </ul>
 <p><strong>Advice</strong></p>
@@ -947,7 +959,7 @@ See Brouwer fixed point theorem, Lie groups in physics, links to functional anal
   <iframe width="560" height="315" src="https://www.youtube.com/embed/sKqt6e7EcCs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 </li>
 <li><i class="fa fa-tv" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=f5liqUk0ZTw">Understanding Tensors</a></li>
-<li><i class="fa fa-external-link" aria-hidden="true"></i> <a href="http://philogb.github.io/page/hopf/">Hopf Fibration Toy</a></li>
+<li><i class="fa fa-external-link-alt" aria-hidden="true"></i> <a href="http://philogb.github.io/page/hopf/">Hopf Fibration Toy</a></li>
 <li>Reviews of some of the big Math-related Youtubers:
 <ul>
 <li>VSauce - 2/10
