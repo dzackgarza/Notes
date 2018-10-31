@@ -9,10 +9,15 @@ Betti Numbers
 Bell Numbers
 
 
-The 12fold method
-- Counting Surjective Functions
-- Counting Injective Functions
-- Counting Bijective Functions
+The Twelvefold Way: consider a function $f: N \ to X$
+$$\begin{array}{c|c|c|c}
+\text{Permutation / Restriction of $f$} & \text{None} & \text{Injective} & \text{Surjective}
+\\ \hline
+f & x^n & x^{\underline{n}} x! \stirling{n}{x}  \\
+f \circ \sigma_N \\
+\sigma_X \circ f \\
+\sigma_X \circ f \circ \sigma_N
+\end{array}$$
 
 Set/Integer Partitions
 
