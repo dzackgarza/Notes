@@ -19,6 +19,7 @@ Stirling Numbers
 		$$
 		s(n,k) = s(n-1, k-1) + ks(n-1, k)
 		$$
+	- Relation to rising factorial: $x^{\overline n} = \sum_{k=1}^n s(n,k)x^k$
 - Of the second kind: $\stirling{n}{k}$
 	- Counts the number of ways to partition a set $N$ into $k$ non-empty subsets $S_i$ (i.e. such that $S_i \cap S_j = \emptyset,~\coprod_{i=1}^k S_i = N$)
 	- Recurrence relation:
