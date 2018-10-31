@@ -32,7 +32,7 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 - Bell Numbers
 - Partitions
 - Compositions
-	- A composition of $n$ is a way of writing $k_1 + k_2 + \cdots k_i = n$ where each $0 \leq k_i \leq n$
+	- A composition of $n$ is a way of writing $n$ as a sum of strictly positive integers, ie. $k_1 + k_2 + \cdots k_i = n$ where each $0 < k_i \leq n$.
 
 ## The Twelvefold Way
 
