@@ -32,6 +32,10 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 - Bell Numbers
 - Compositions
 	- A composition of $n$ is a way of writing $n$ as a sum of strictly positive integers, ie. $k_1 + k_2 + \cdots k_i = n$ where each $0 < k_i \leq n$, where distinct orders are distinct.
+	- Weak compositions: identical, but some terms are allowed to be zero.
+	- Number of compositions of $n$ into $k$ parts: $n-1 \choose k - 1$
+	- Number of _weak_ compositions of $n$ into $k$ parts: $n+k-1 \choose n$
+	- Total number of compositions of $n$ (into any number of parts): $2^{n-1}$
 - Partitions
 	- A partition of $n$ is a composition of $n$ quotiented by permutations of the ordering of terms.
 		- Example: 2 compositions of $5$ involving $1$ and $4$, given by $4+1$ and $1+4$, whereas there is only one such partition of $5$ given by $4+1$.
