@@ -1,8 +1,8 @@
 ## Notation
 $$\begin{align*}
-n^\underline k 	&= n(n-1)(n-2) \cdots (n-k+1) && \text{(falling factorial, $k$ terms)}\\
-n^{\overline k} &= n(n+1)(n+2) \cdots (n+k-1) \text{} && \text{(rising factorial, $k$ terms)}\\ 
-{n\choose k} 		&= \frac{n!}{k!(n-k)!} = \frac{n^\underline k} {k!} \\
+{n\choose k} 		&= \frac{n!}{k!(n-k)!} \\
+n^\underline k 	&= n(n-1) \cdots (n-k+1) = k!{n\choose k} && \text{(falling factorial, $k$ terms)}\\
+n^{\overline k} &= n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n} \text{} && \text{(rising factorial, $k$ terms)}\\
 a
 \end{align*}$$
 # The Important Numbers
@@ -23,16 +23,17 @@ Stirling Numbers
 Betti Numbers
 Bell Numbers
 
+## The Twelvefold Way
 
-The Twelvefold Way: consider a function $f: N \to K$ where $\abs{N}=n, \abs{K} = k$.
+Consider a function $f: N \to K$ where $\abs{N}=n, \abs{K} = k$.
 
 $$\begin{array}{c|c|c|c}
 \text{Permutations \ Restrictions}  & N \mapsvia{f} K & N \injects K & N \surjects K
 \\ \hline
 f 															& k^n & k^{\underline{n}} & k! \stirling{n}{k}  \\
 f \circ \sigma_N 								& {n+k-1}\choose n & k\choose n & {n-1}\choose{n-k} \\
-\sigma_X \circ f 								& \sum_{i=0}^k \stirling{n}{i} & [n \leq k] & \stirling{n}{k}\\
-\sigma_X \circ f \circ \sigma_N & p_k(n+k) & [n \leq k] & p_k(n)
+\sigma_X \circ f 								& \sum_{i=0}^k \stirling{n}{i} & \indicator{n \leq k} & \stirling{n}{k}\\
+\sigma_X \circ f \circ \sigma_N & p_k(n+k) & \indicator{n \leq k} & p_k(n)
 \end{array}$$
 
 In words:
@@ -40,8 +41,10 @@ Perm. / Rest.  | ---  | Injective  | Surjective
 --|---|---|--  
 ---  | A sequence of any $n$ elements of $K$  |  Sequences of $n$ _distinct_ elements of $K$ |  Compositions of $N$ with exactly $k$ subsets
 Permutations of $N$  |  Multisets of $K$ with $n$ elements | An $n\dash$element subset of $K$  |  Compositions of $n$ with $k$ terms
-Permutations of $X$  |    Partitions of $N$ into $\leq k$ subsets | Partitions of $n$ into $\leq k$ nonempty parts   | Partitions of $N$ into exactly $k$ nonempty subsets  
-Both  |  Partitions of $n$ into $\leq k$ parts | Partitions of $n$ into $\leq k$ nonempty parts  | Partitions of $n$ into exactly $k$ parts  
+Permutations of $X$  |    Partitions of $N$ into $\leq k$ subsets |?  | Partitions of $N$ into exactly $k$ nonempty subsets  
+Both  |  Partitions of $n$ into $\leq k$ parts | ? | Partitions of $n$ into exactly $k$ parts  
+
+Proofs/Explanations:
 
 Set/Integer Partitions
 
