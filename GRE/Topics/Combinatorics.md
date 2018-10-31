@@ -13,7 +13,7 @@ The Twelvefold Way: consider a function $f: N \ to X$
 $$\begin{array}{c|c|c|c}
 \text{Permutation / Restriction of $f$} & \text{None} & \text{Injective} & \text{Surjective}
 \\ \hline
-f & x^n & x^{\underline{n}} x! \stirling{n}  \\
+f & x^n & x^{\underline{n}} x! \stirling{n}{k}  \\
 f \circ \sigma_N \\
 \sigma_X \circ f \\
 \sigma_X \circ f \circ \sigma_N
