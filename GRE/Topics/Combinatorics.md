@@ -31,7 +31,7 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 - Betti Numbers
 - Bell Numbers
 - Compositions
-	- A composition of $n$ is a way of writing $n$ as a sum of strictly positive integers, ie. $k_1 + k_2 + \cdots k_i = n$ where each $0 < k_i \leq n$, where distinct orders are distinct.
+	- A composition of $n$ is a way of writing $n$ as a sum of strictly positive integers, ie. $k_1 + k_2 + \cdots k_i = n$ where each $0 < k_i \leq n$, where order matters (and distinct orders count as distinct compositions).
 	- Weak compositions: identical, but some terms are allowed to be zero.
 	- Number of compositions of $n$ into $k$ parts: $n-1 \choose k - 1$
 	- Number of _weak_ compositions of $n$ into $k$ parts: $n+k-1 \choose n$
