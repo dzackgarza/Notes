@@ -14,7 +14,7 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 	- Choosing with repetition allowed: ${n+k-1}\choose k$
 Stirling Numbers
 - Of the first kind, signed: $s(n,k)$
-	- Count the number of permutations of $n$ elements with $k$ disjoint cycles.
+	- Count the number of permutations of $n$ elements with $k$ disjoint cycles, i.e. the number of elements elements in $S_n$ that are the product of $k$ disjoint cycles (including trivial cycles that fix a point).
 	- Recurrence relation:
 		$$
 		s(n,k) = s(n-1, k-1) + ks(n-1, k)
