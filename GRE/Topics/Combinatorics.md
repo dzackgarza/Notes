@@ -1,10 +1,12 @@
 ## Notation
 $$\begin{align*}
-{n\choose k} 		&= \frac{n!}{k!(n-k)!} \\
-n^\underline k 	&= n(n-1) \cdots (n-k+1) = k!{n\choose k} && \text{(falling factorial, $k$ terms)}\\
-n^{\overline k} &= n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n} \text{} && \text{(rising factorial, $k$ terms)}\\
-a
+S^n &= \theset{?} && \text{the symmetric group} \\
+{n\choose k} 		&= \frac{n!}{k!(n-k)!} && \text{binomial coefficient}\\
+n^\underline k 	&= n(n-1) \cdots (n-k+1) = k!{n\choose k} && \text{falling factorial}\\
+n^{\overline k} &= n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n} \text{} && \text{rising factorial}\\
 \end{align*}$$
+
+Note that the rising and falling factorials always have exactly $k$ terms.
 
 # The Important Numbers
 - Binomial Coefficients
@@ -29,10 +31,26 @@ Stirling Numbers
 
 Consider a function $f: N \to K$ where $\abs{N}=n, \abs{K} = k$.
 
-Three equally valid interpretations:
+A number of valid interpretations:
 - $f$ labels elements of $N$ by elements of $K$
 - For each element of $N$, $f$ chooses an element of $K$
 - $f$ partitions $N$ into classes that are mapped to the same element of $K$
+- Throw each of $N$ balls into some of $K$ boxes
+
+Dictionary:
+- No restrictions:
+	- Assign $n$ labels, repetition allowed
+	- Form a multiset of $K$ of size $n$
+- Injectivity
+	- Assign $n$ labels without repetition
+	- Select $n$ distinct elements from $K$
+	- Number of $n\dash$combinations of $k$ elements
+	- No more than one ball per box
+- Surjectivity:
+	- Use every label at least once
+	- Every element of $K$ is selected at least once
+- "Indistinguishable"
+	- Quotient by the action of $S^n$ or $S^k$
 
 $$\begin{array}{c|c|c|c}
 \text{Permutations \ Restrictions}  & N \mapsvia{f} K & N \injects K & N \surjects K
