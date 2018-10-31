@@ -5,6 +5,7 @@ n^\underline k 	&= n(n-1) \cdots (n-k+1) = k!{n\choose k} && \text{(falling fact
 n^{\overline k} &= n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n} \text{} && \text{(rising factorial, $k$ terms)}\\
 a
 \end{align*}$$
+
 # The Important Numbers
 - Binomial Coefficients
 	- Choosing:
