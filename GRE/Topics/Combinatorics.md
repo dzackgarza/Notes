@@ -30,9 +30,11 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 	- $B_n = \sum_{i=0}^n \stirling n i$
 - Betti Numbers
 - Bell Numbers
-- Partitions
 - Compositions
-	- A composition of $n$ is a way of writing $n$ as a sum of strictly positive integers, ie. $k_1 + k_2 + \cdots k_i = n$ where each $0 < k_i \leq n$.
+	- A composition of $n$ is a way of writing $n$ as a sum of strictly positive integers, ie. $k_1 + k_2 + \cdots k_i = n$ where each $0 < k_i \leq n$, where distinct orders are distinct.
+- Partitions
+	- A partition of $n$ is a composition of $n$ quotiented by permutations of the ordering of terms.
+		- Example: 2 compositions of $5$ involving $1$ and $4$, given by $4+1$ and $1+4$, whereas there is only one such partition of $5$ given by $4+1$.
 
 ## The Twelvefold Way
 
