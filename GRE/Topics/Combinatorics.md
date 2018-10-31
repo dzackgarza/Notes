@@ -41,6 +41,14 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 		- Example: 2 compositions of $5$ involving $1$ and $4$, given by $4+1$ and $1+4$, whereas there is only one such partition of $5$ given by $4+1$.
 	- Visualize with Young diagrams
 
+## Common Problems
+- Stars and Bars
+	- No two bars adjacent: $n-1\choose k-1$
+	- Allowing adjacent bars: $n+k-1 \choose k-1$
+
+Coupon Collectors Problem
+
+
 ## The Twelvefold Way
 
 Consider a function $f: N \to K$ where $\abs{N}=n, \abs{K} = k$.
@@ -89,7 +97,3 @@ Permutations of $X$  |    Partitions of $N$ into $\leq k$ subsets |?  | Partitio
 Both  |  Partitions of $n$ into $\leq k$ parts | ? | Partitions of $n$ into exactly $k$ parts  
 
 Proofs/Explanations:
-
-Set/Integer Partitions
-
-Coupon Collectors Problem
