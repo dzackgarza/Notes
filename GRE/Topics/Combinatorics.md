@@ -1,6 +1,6 @@
 ## Notation
 $$\begin{align*}
-S^n &= \theset{?} && \text{the symmetric group} \\
+S_n &= \theset{?} && \text{the symmetric group} \\
 {n\choose k} 		&= \frac{n!}{k!(n-k)!} && \text{binomial coefficient}\\
 n^\underline k 	&= n(n-1) \cdots (n-k+1) = k!{n\choose k} && \text{falling factorial}\\
 n^{\overline k} &= n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n} \text{} && \text{rising factorial}\\
@@ -50,7 +50,7 @@ Dictionary:
 	- Use every label at least once
 	- Every element of $K$ is selected at least once
 - "Indistinguishable"
-	- Quotient by the action of $S^n$ or $S^k$
+	- Quotient by the action of $S_n$ or $S_k$
 
 $$\begin{array}{c|c|c|c}
 \text{Permutations \ Restrictions}  & N \mapsvia{f} K & N \injects K & N \surjects K
