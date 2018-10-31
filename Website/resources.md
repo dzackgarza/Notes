@@ -1,6 +1,6 @@
-If you find yourself asking "What book should I get to learn $X$", then you have come to the right place! This is a question I personally get asked a lot, and it also seems to come up roughly daily in various online Math communities, so I put together this list to point out some resources I've personally used and found helpful for various topics and courses.
+If you find yourself asking, "What book should I get to learn $X$?", then you have come to the right place! This is a question I personally get asked a lot, and one that seems to be posted almost daily on several online Math communities, so I put together this list to point out some resources I've personally used and found helpful for courses and various other topics.
 
-_Disclaimer: in the textbook section, a number of the outgoing Amazon links are affiliate links! These help cover the hosting cost of this site, but you should also be aware that many of these books are often available at university libraries, at cheaper resalers, or often even as PDFs floating around online._
+_Disclaimer: in the textbook section, a number of the outgoing Amazon links are affiliate links! These are meant to help cover the hosting cost of this site, but you should also be aware that many of these books are often available at university libraries, at cheaper resalers, or often even as PDFs floating around online._
 [toc]
 
 ---
