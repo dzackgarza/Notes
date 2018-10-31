@@ -44,7 +44,7 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 ## Common Problems
 - Stars and Bars
 	- No two bars adjacent: $n-1\choose k-1$
-	- Allowing adjacent bars: $n+k-1 \choose k-1$
+	- Allowing adjacent bars: $n+k-1 \choose k-1$movie re
 
 Coupon Collectors Problem
 
