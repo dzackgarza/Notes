@@ -12,15 +12,14 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 - Binomial Coefficients
 	- Choosing:$n \choose k$
 	- Choosing with repetition allowed: ${n+k-1}\choose k$
-Stirling Numbers
-- Of the first kind, signed: $s(n,k)$
+- Signed Stirling Numbers of the First Kind: $s(n,k)$
 	- Count the number of permutations of $n$ elements with $k$ disjoint cycles, i.e. the number of elements elements in $S_n$ that are the product of $k$ disjoint cycles (including trivial cycles that fix a point).
 	- Recurrence relation:
 		$$
 		s(n,k) = s(n-1, k-1) + ks(n-1, k)
 		$$
 	- Relation to falling factorial: $x^{\underline n} = \sum_{k=1}^n s(n,k)x^k$
-- Of the second kind: $\stirling{n}{k}$
+- Stirling Numbers of the Second Kind: $\stirling{n}{k}$
 	- Counts the number of ways to partition a set $N$ into $k$ non-empty subsets $S_i$ (i.e. such that $S_i \cap S_j = \emptyset,~\coprod_{i=1}^k S_i = N$)
 	- Recurrence relation:
 		$$
