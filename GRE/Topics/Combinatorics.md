@@ -9,15 +9,24 @@ Betti Numbers
 Bell Numbers
 
 
-The Twelvefold Way: consider a function $f: N \ to X$
+The Twelvefold Way: consider a function $f: N \to K$ where $\abs{N}=n, \abs{K} = k$.
+
 $$\begin{array}{c|c|c|c}
-\text{Permutation / Restriction of $f$} & \text{None} & \text{Injective} & \text{Surjective}
+\text{Permutations \ Restrictions}  & \text{None} & \text{Injective} & \text{Surjective}
 \\ \hline
-f & x^n & x^{\underline{n}} x! \stirling{n}{k}  \\
-f \circ \sigma_N \\
-\sigma_X \circ f \\
-\sigma_X \circ f \circ \sigma_N
+f 															& k^n & k^{\underline{n}} & k! \stirling{n}{k}  \\
+f \circ \sigma_N 								& {n+k-1}\choose n & k\choose n & {n-1}\choose{n-k} \\
+\sigma_X \circ f 								& \sum_{i=0}^k \stirling{n}{i} & [n \leq k] & \stirling{n}{k}\\
+\sigma_X \circ f \circ \sigma_N & p_k(n+k) & [n \leq k] & p_k(n)
 \end{array}$$
+
+In words:
+Perm. / Rest.  | None  | Injective  | Surjective  
+--|---|---|--  
+None  | A sequence of $n$ elements from $X$  |   |  Compositions of $N$ with exactly $k$ subsets
+Permutations of $N$  |  Multisets of $K$ with $n$ elements | An $n\dash$element subset of $K$  |  Compositions of $n$ with $k$ terms
+Permutations of $X$  |    Partitions of $N$ into $\leq k$ subsets | Partitions of $n$ into $\leq k$ nonempty parts   | Partitions of $N$ into exactly $k$ subsets  
+Both  |  Partitions of $n$ into $\leq k$ parts | Partitions of $n$ into $\leq k$ nonempty parts  | Partitions of $n$ into exactly $k$ parts  
 
 Set/Integer Partitions
 
