@@ -241,10 +241,10 @@
 
 - :fa-book: :fa-star: _Brown and Churchill_, [Complex Variables and Applications](https://www.amazon.com/gp/product/0073383171/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0073383171&linkId=a29ea129f68e5b2a12841dc26c1138c3)
 	- Good overview of computational techniques at an undergrad level.
-	-
+
 - :fa-book: :fa-star: _Needham_, [Visual Complex Analysis](https://www.amazon.com/gp/product/0198534469/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0198534469&linkId=50937c6af6cc681f12f628911fd434f3)
 	- Absolutely phenomenal book! The exposition and imagery is truly excellent, although this is perhaps not the best book for learning computations.
-	-
+
 - :fa-book: _Ahlfors_, [Complex Analysis](https://www.amazon.com/gp/product/0070006571/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0070006571&linkId=69362995cc0e8390c114c3135a28eccf)
 	- A standard grad-level reference.
 
