@@ -15,6 +15,14 @@
 	- $\gcd(x, y, z) = \gcd(\gcd(x,y), z)$
 	- $\gcd(x, y) = \gcd(x\mod y, y)$
 	- $\gcd(x,y) = \gcd(x-y, y)$
+- Chinese Remainder Theorem: the system
+$$
+\begin{array} { c } { x \equiv a _ { 1 } \quad \left( \bmod m _ { 1 } \right) } \\ { x \equiv a _ { 2 } \quad \left( \bmod m _ { 2 } \right) } \\ { \vdots } \\ { x \equiv a _ { r } \quad \left( \bmod m _ { r } \right) } \end{array}
+$$
+has a unique solution $x \mod \prod m_i \iff (m_i, m_j) = 1$ for each pair $i,j$, given by
+$$
+x = \sum_{j=1}^r a_j \frac{\prod_i m_i}{m_j} \left[ \frac{\prod_i m_i}{m_j} \right]^{-1}_{\mod m_j}
+$$
 
 
 ## The Totient Function
