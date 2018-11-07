@@ -10,6 +10,8 @@
 	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
 	- Can compute gcd by taking prime factorization, intersection of primes occuring, and lowest exponent occuring.
 	- $\gcd(x, y, z) = \gcd(\gcd(x,y), z)$
+	- $\gcd(x, y) = \gcd(x\mod y, y)$
+	- $\gcd(x,y) = \gcd(x-y, y)$
 
 
 ## The Totient Function
