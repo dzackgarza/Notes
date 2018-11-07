@@ -215,7 +215,7 @@
 
 - :fa-book: :fa-star:  _Rudin_, [Principles of Mathematical Analysis](https://www.amazon.com/gp/product/007054235X/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=007054235X&linkId=6999e53c498f9f1f4b2f7d6e64ac0d8a)
 	- Essentially a standard in undergraduate real analysis, written in a very terse style but covers a great deal of material. Often referred to as "Baby Rudin".
-	-
+
 - :fa-tv: :fa-star: _Francis Su_, [Lectures from Harvey Mudd College](https://www.youtube.com/playlist?list=PL0E754696F72137EC)
 	- Recorded lectures, extremely clear and well-motivated!
 
@@ -241,10 +241,10 @@
 
 - :fa-book: :fa-star: _Brown and Churchill_, [Complex Variables and Applications](https://www.amazon.com/gp/product/0073383171/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0073383171&linkId=a29ea129f68e5b2a12841dc26c1138c3)
 	- Good overview of computational techniques at an undergrad level.
-	-
+
 - :fa-book: :fa-star: _Needham_, [Visual Complex Analysis](https://www.amazon.com/gp/product/0198534469/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0198534469&linkId=50937c6af6cc681f12f628911fd434f3)
 	- Absolutely phenomenal book! The exposition and imagery is truly excellent, although this is perhaps not the best book for learning computations.
-	-
+
 - :fa-book: _Ahlfors_, [Complex Analysis](https://www.amazon.com/gp/product/0070006571/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0070006571&linkId=69362995cc0e8390c114c3135a28eccf)
 	- A standard grad-level reference.
 
@@ -358,6 +358,7 @@
 
 
 ## Algebra
+
 - :fa-book: _Dummit and Foote_, [Abstract Algebra](https://www.amazon.com/gp/product/8126532289/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=8126532289&linkId=973f430e6e8fd4d8bf5037120e259075)
 	- Pretty much the all-around standard, this thing is absolutely encylopedaic!
 
@@ -443,12 +444,16 @@
 
 
 ## Differential Geometry / Manifolds
+
 - :fa-book: _Spivak_, [Calculus on Manifolds](https://www.amazon.com/gp/product/0805390219/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0805390219&linkId=d7cce2895c47afe764b0ce79d888a506)
 	- A good follow-up to Spivak's Calculus book, the exposition is at an undergraduate level. Worth checking out if you like his style.
+
 - :fa-book: :fa-star: _Lee_, [Introduction to Smooth Manifolds](https://www.amazon.com/gp/product/1441999817/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=1441999817&linkId=afdfc509ff8cb5a157d81a422cdf59b1)
 	- The gold standard.
+
 - :fa-tv: :fa-star: _Frederic Schuller_, [International Winter School on Gravity and Light 2015](https://www.youtube.com/watch?v=7G4SqIboeig)
 	- This guy is just phenomenal!
+
 - :fa-book: _Manfredo do Carmo_, [Riemannian Geometry](https://www.amazon.com/gp/product/B017WQJ42Y/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B017WQJ42Y&linkId=72a9cad165ace8e2a5844e18fe45211e)
 
 <details markdown="1">
