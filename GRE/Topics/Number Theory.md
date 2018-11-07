@@ -59,6 +59,7 @@ Generally concerned with the multiplicative group $(\ZZ_n, \times)$.
 
 Computations:
 - $x = 0 \mod n$ where $n=\prod p_i^{k_i} \implies x = 0 \mod p_i^{j}$ for each $i$ and for each $j\leq k_i$.
+- If there are factors of the moduls, peel them off with addition. E.g.: $x \mod n = nk + r \mod n = r \mod n$. Try $x=463, n = 4$ to obtain $3$.
 - Repeated squaring/fast exponentiation: use the facts:
 $$
 x^k \mod n = (x^{k/d} \mod n)^d \mod n, \\
