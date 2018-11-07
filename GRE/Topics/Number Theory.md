@@ -7,6 +7,7 @@
 - Divisibility: $a\mid b \iff b = 0 \mod a$
 - The fundamental theorem of arithmetic: $n = \prod p_i^{k_i}$
 - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
+	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$ 
 
 
 ## The Totient Function
