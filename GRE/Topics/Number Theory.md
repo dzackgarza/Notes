@@ -58,7 +58,7 @@ $$ n = \sum_{d\mid n} \phi(d) $$
 Generally concerned with the multiplicative group $(\ZZ_n, \times)$.
 
 Computations:
-- $x = 0 \mod n$ where $n=\prod p_i^{k_i} \implies x = 0 \mod p_i^{k_i}$ for each $i$.
+- $x = 0 \mod n$ where $n=\prod p_i^{k_i} \implies x = 0 \mod p_i^{j}$ for each $i$ and for any $j\leq k_i$.
 - Repeated squaring/fast exponentiation: use the facts:
 $$
 x^k \mod n = (x^{k/d} \mod n)^d \mod n, \\
