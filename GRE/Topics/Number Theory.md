@@ -85,6 +85,7 @@ $$
 	- So $x$ is invertible in $\ZZ_n \iff (x,n) = 1$ and thus $\ZZ_n^\times = \theset{1\leq x \leq n : (x,n) = 1}$
 		- Corrolary: $\abs{\ZZ_n^\cross} = \phi(n)$
 	- Exactly what allows you to "cancel", i.e. multiply through by inverses.
+	- A use of this trick: reduce by dividing entire equation. Pick any $x$ such that $x\mid a, b$ and $(x,n) = 1$  and then $a =b \mod n \implies \frac a x = \frac b x \mod n$
 
 - Fermat's Little Theorem
 $$
