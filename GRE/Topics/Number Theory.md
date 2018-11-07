@@ -6,6 +6,7 @@
 ## Basics
 - Divisibility: $a\mid b \iff b = 0 \mod a$
 - The fundamental theorem of arithmetic: $n = \prod p_i^{k_i}$
+	- Number of distinct prime factors: $\prod(k_i + 1)$
 - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
 		- Also holds for lcm, $\mathrm{lcm}(x,y) = d~\mathrm{lcm}(\frac x d, \frac y d)$
