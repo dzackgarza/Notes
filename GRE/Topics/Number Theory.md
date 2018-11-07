@@ -4,7 +4,9 @@
 - $\ZZ_n^\times$, the group of units mod $n$.
 
 ## Basics
-- Divisiblity: $a\mid b \iff b = 0 \mod a$
+- Divisibility: $a\mid b \iff b = 0 \mod a$
+- The fundamental theorem of arithmetic: $n = \prod p_i^{k_i}$
+- $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 
 
 ## The Totient Function
