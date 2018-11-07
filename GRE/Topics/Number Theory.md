@@ -57,7 +57,7 @@ $$ n = \sum_{d\mid n} \phi(d) $$
 ## Modular Arithmetic
 Generally concerned with the multiplicative group $(\ZZ_n, \times)$.
 
-Computations:
+### Computations:
 - $x = 0 \mod n$ where $n=\prod p_i^{k_i} \implies x = 0 \mod p_i^{j}$ for each $i$ and for each $j\leq k_i$.
 - If there are factors of the moduls, peel them off with addition. E.g.: $x \mod n = nk + r \mod n = r \mod n$. Try $x=463, n = 4$ to obtain $3$.
 - Repeated squaring/fast exponentiation: use the facts:
@@ -73,6 +73,7 @@ $$
 a^{\phi(p)} = 1 \mod n
 $$
 
+### Other Stuff
 - Quadratic Residues: $x$ is a quadratic residue mod $n \iff \exists a: a^2 = x \mod n$
 	- In $\ZZ_p$, exactly half of the elements (even powers of generator)
 	- $-1$ is a quadratic residuce in $\ZZ_p \iff p = 1 \mod 4$
