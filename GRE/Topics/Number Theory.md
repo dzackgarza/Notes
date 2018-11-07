@@ -16,6 +16,7 @@
 	- $\gcd(x, y, z) = \gcd(\gcd(x,y), z)$
 	- $\gcd(x, y) = \gcd(x\mod y, y)$
 	- $\gcd(x,y) = \gcd(x-y, y)$
+
 - Chinese Remainder Theorem: the system
 $$
 \begin{array} { c } { x \equiv a _ { 1 } \quad \left( \bmod m _ { 1 } \right) } \\ { x \equiv a _ { 2 } \quad \left( \bmod m _ { 2 } \right) } \\ { \vdots } \\ { x \equiv a _ { r } \quad \left( \bmod m _ { r } \right) } \end{array}
@@ -57,6 +58,7 @@ $$ n = \sum_{d\mid n} \phi(d) $$
 Generally concerned with the multiplicative group $(\ZZ_n, \times)$.
 
 Computations:
+- $x = 0 \mod \prod p_i^{k_i} \implies x = 0 \mod p_i^{k_i}$ for each $i$.
 - Repeated squaring/fast exponentiation: use the facts:
 $$
 x^k \mod n = (x^{k/d} \mod n)^d \mod n, \\
