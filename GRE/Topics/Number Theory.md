@@ -7,7 +7,9 @@
 - Divisibility: $a\mid b \iff b = 0 \mod a$
 - The fundamental theorem of arithmetic: $n = \prod p_i^{k_i}$
 - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
-	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$ 
+	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
+	- Can compute gcd by taking prime factorization, intersection of primes occuring, and lowest exponent occuring.
+	- $\gcd(x, y, z) = \gcd(\gcd(x,y), z)$
 
 
 ## The Totient Function
