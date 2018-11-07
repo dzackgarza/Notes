@@ -9,6 +9,7 @@
 - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
 	- Can compute gcd by taking prime factorization, intersection of primes occuring, and lowest exponent occuring.
+	- Can also compute with Euclidean algorithm, taking the final bottom-right coefficient
 	- $\gcd(x, y, z) = \gcd(\gcd(x,y), z)$
 	- $\gcd(x, y) = \gcd(x\mod y, y)$
 	- $\gcd(x,y) = \gcd(x-y, y)$
