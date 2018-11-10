@@ -4,12 +4,18 @@ Summary for GRE:
 
 - Random Variable
 	- For $(\Sigma, E, \mu)$ a probability space with sample space $\Sigma$ and probability measure $\mu$, a random variable is a function $X: \Sigma \to \RR$
+
 - Mean / Expected Value: $$E[X] = \int x P(X = x) = \int x f_X(x)$$
 	- Linearity of expectation:
 		$$E[\sum a_i X_i] = \sum a_i E[X_i]$$
 		Does not matter whether or not the $X_i$ are independent.
+
 - Variance: $$\mathrm{Var}(X) = \int (x - E[X])^2 f_X(x) ~dx$$
-- Standard deviation: $$\sigma(X) = \sqrt{\mathrm{Var}(X)}$$
+
+- Standard deviation: $$\sigma(X) = \sqrt{\mathrm{Var}(X)} = \sqrt{\int (x - E[X])^2 f_X(x) ~dx} $$
+
+- Covariance: $$ $$
+
 - Baye's Theorem: todo
 
 Birthday Paradox
