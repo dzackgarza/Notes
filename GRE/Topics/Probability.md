@@ -23,6 +23,8 @@ Summary for GRE:
 
 - Cumulative distribution: $F(x) = P(X \leq x)$
 
+- Stirling's Approximation: $k! \sim k^\frac{k+1}{2}e^{-k} \sqrt{2\pi} $
+
 # Common Problems
 - Birthday Paradox
 - Coupon Collectors
