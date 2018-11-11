@@ -24,8 +24,9 @@ $$
 - Mean / Expected Value:
 	- For any given r.v. $X$, define the expectation operator $E[\wait] = \inner{\wait}{f(x)}$
 $$
-\mu_X \definedas E[X] \definedas \inner{x}{f(x)} = \int_\RR x f(x) ~dx
+E[X] \definedas \inner{x}{f(x)} = \int_\RR x f(x) ~dx
 $$
+	- Also denoted $\mu_X$
 	- Linearity of expectation:
 $$
 E\left[\sum_{i\in\NN} a_i X_i\right] = \sum_{i\in\NN} a_i E[X_i]
