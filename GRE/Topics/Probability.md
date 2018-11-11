@@ -10,11 +10,18 @@ Summary for GRE:
 		$$E[\sum a_i X_i] = \sum a_i E[X_i]$$
 		Does not matter whether or not the $X_i$ are independent.
 
-- Variance: $$\mathrm{Var}(X) = \int (x - E[X])^2 f_X(x) ~dx$$
+- Variance:
+	$$
+	\mathrm{Var}(X) = E[(X - E[X])^2] \\
+	= \int (x - E[X])^2 f_X(x) \\
+	= E[X^2] - E[X]^2 
+	$$
 
 - Standard deviation: $$\sigma(X) = \sqrt{\mathrm{Var}(X)} = \sqrt{\int (x - E[X])^2 f_X(x) ~dx} $$
 
 - Covariance: $$ $$
+
+- Cumulative distribution: $F(x) = P(X \leq x)$
 
 # Common Problems
 - Birthday Paradox
