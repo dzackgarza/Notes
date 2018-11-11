@@ -33,6 +33,7 @@ $$
 	&\definedas \sigma^2(X)
 	\end{align*}$$
 	where $\sigma$ is the standard deviation.
+	- Nonlinearity of variance: $\mathrm{Var}(aX + b) = a^2\mathrm{Var}(X)$
 
 
 - Covariance: $$ \mathrm{Cov}(X,Y) = $$
