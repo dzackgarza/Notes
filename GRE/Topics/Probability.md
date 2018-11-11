@@ -22,9 +22,9 @@ $$
 	- Yields $\dd{F}{x} = f(x)$
 
 - Mean / Expected Value:
+	- For any given r.v. $X$, define the expectation operator $E[\wait] = \inner{\wait}{f(x)}$
 $$
-\mu_X \definedas E[X] = \int_\RR x f(x) ~dx \\
-= \inner{x}{f(x)}
+\mu_X \definedas E[X] \definedas \inner{x}{f(x)} = \int_\RR x f(x) ~dx
 $$
 	- Linearity of expectation:
 $$
