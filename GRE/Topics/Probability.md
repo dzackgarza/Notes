@@ -1,15 +1,20 @@
-Summary for GRE:
-- Calculating Mean, standard deviation, and variance from PDF,
-- Bernoulli trials.
+## Definitions
+$$\begin{align*}
+L_2(X) &= \theset{f: X \to \RR: \int_\RR f(x) ~dx < \infty} \\
+\inner{f}{g}_{2} &= \int_\RR f(x)g(x) ~dx \\
+\norm{f}_2^2 &= \inner{f}{f} = \int_\RR f(x)^2 ~dx
+\end{align*}$$
 
 - Random Variable
 	- For $(\Sigma, E, \mu)$ a probability space with sample space $\Sigma$ and probability measure $\mu$, a random variable is a function $X: \Sigma \to \RR$
+
 - Probability density function (pdf):
 	- For any $U \subset \RR$, given by the relation
 	$$
 	P(X \in U) = \int_U f(x) ~dx \\
 	\implies P(a \leq X \leq b) = \int_a^b f(x) ~dx
 	$$
+
 - Cumulative distribution function (cdf): the antiderivative of the pdf
 $$
 F(x) = P(X \leq x) = \int_{-\infty}^x f(x) ~dx
@@ -17,7 +22,8 @@ $$
 
 - Mean / Expected Value:
 $$
-E[X] = \int_\RR x f(x) ~dx
+\mu_X \definedas E[X] = \int_\RR x f(x) ~dx \\
+= \inner{x}{f(x)}_{L_2}
 $$
 	- Linearity of expectation:
 $$
@@ -27,7 +33,8 @@ $$
 
 - Variance:
 	$$\begin{align*}
-	\mathrm{Var}(X) &= E[(X - E[X])^2] \\
+	\mathrm{Var}(X) &= \norm{x - \inner{x}{f(x)}_{L_2} }_{L_2} \\
+	&= E[(X - E[X])^2] \\
 	&= \int (x - E[X])^2 f(x) ~dx \\
 	&= E[X^2] - E[X]^2 \\
 	&\definedas \sigma^2(X)
@@ -35,15 +42,11 @@ $$
 	where $\sigma$ is the standard deviation.
 	- Nonlinearity of variance: $\mathrm{Var}(aX + b) = a^2\mathrm{Var}(X)$
 
-
-- Covariance: $$ \mathrm{Cov}(X,Y) = $$
+- Covariance: $$ \mathrm{Cov}(X,Y) = E[(X-\mu_X)(Y-\mu_Y)]$$
 
 - Stirling's Approximation: $k! \sim k^\frac{k+1}{2}e^{-k} \sqrt{2\pi} $
 
-# Common Problems
-- Birthday Paradox
-- Coupon Collectors
-	- Given $X = \theset{1, \cdots n}$, what is the expected number of draws until all $n$ outcomes are seen?
+
 
 $$\begin{align*}
 \end{align*}$$
@@ -75,6 +78,8 @@ Properties that follow from axioms:
 - Odds: $P(A) / P(A^c)$
 	- Conditional odds: $\frac{P(A \mid E)}{P(A^c \mid E)} = \frac{P(A)}{P(A^c)} \frac{P(E \mid A)}{P(E \mid A^c)} $
 - Independence: $P(A \intersect B) = P(A) P(B)$
+
+
 ## Distributions
 
 Let $X$ be a random variable, and $f$ be its probability density function satisfying $f(k) = P(X = k)$
@@ -167,7 +172,10 @@ $>3$  |  $0.99$
 
 
 
-- Exponential
+# Common Problems
+- Birthday Paradox
+- Coupon Collectors
+	- Given $X = \theset{1, \cdots n}$, what is the expected number of draws until all $n$ outcomes are seen?
 
 ## Shortcuts
 - When computing expected values, variation, etc, just insert a parameter $k$ and compute the moments $E[X^k]$. Then with a solution in terms of $k$, let $k=1,2$ etc.
