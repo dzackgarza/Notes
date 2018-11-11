@@ -109,7 +109,7 @@ f(k) 			&= \quad {n \choose k} p^k (1-p)^{n-k} \\
 - Negative Binomial
 	- Similar to binomial, where $X$ is the number of trials it takes to accumlate $r$ successes
 $$\begin{align*}
-f(k) &= \quad {n-1 \choose r-1}p^r(1-p)^{n-r}
+f(k) &= \quad {k-1 \choose r-1}p^r(1-p)^{k-r}
 \end{align*}$$
 
 - Normal
