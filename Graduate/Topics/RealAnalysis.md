@@ -16,3 +16,4 @@ $$
   - Useful variant - take $q = 1$ to get $\norm{f \ast g}_p \leq \norm{f}_p \norm{g}_1$
   - Take $p=1$ to show $L_1$ is closed under $\ast$.
 - The Riemann-Lebesgue Lemma
+- Proving that $\delta \not\in L_1(\RR)$
