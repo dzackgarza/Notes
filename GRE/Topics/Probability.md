@@ -5,7 +5,7 @@ L_2(X) &= \theset{f: X \to \RR: \int_\RR f(x) ~dx < \infty} \\
 E[\wait] &= \inner{\wait}{f} \\
 \norm{f}_2^2 &= \inner{f}{f} = \int_\RR f(x)^2 ~dx\\
 \id:& ~\RR \to \RR, \id(x) = x \\
-(T_{p}f)(\wait) = f(p- \wait) \\
+(T_{p}f)(x) &= f(p- x) \\
 (f \ast g)(p) &= \int_\RR f(t)g(p-t)~dt = \int_\RR f(t)(T_{p}g)(t) ~dt = \inner{T_pg}{f}
 \end{align*}$$
 
@@ -46,9 +46,19 @@ $$
 	where $\sigma$ is the standard deviation.
 	- Can also defined as $\inner{(\id - \inner{\id}{f})^2}{f}$
 		- Take the portion of the id function in the orthogonal complement of $f$, squared, and project it back onto $f$?
-	- Nonlinearity of variance: $\mathrm{Var}(aX + b) = a^2\mathrm{Var}(X)$
+	- Properties:
+		- $\mathrm{Var}(aX + b) = a^2\mathrm{Var}(X)$
+		- $\mathrm{Var}(\sum_\NN X_i) = \sum_i \mathrm{Var}(X_i) + 2 \sum_{i < j}\mathrm{Cov}(X_i, X_j)$
 
-- Covariance: $$ \mathrm{Cov}(X,Y) = E[(X-\mu_X)(Y-\mu_Y)]$$
+- Covariance:
+$$\begin{align*}
+\mathrm{Cov}(X,Y) &= E[(X-\mu_X)(Y-\mu_Y)] \\
+ &= E[XY] - E[X]E[Y]
+\end{align*}$$
+	- Properties:
+		- $\mathrm{Cov}(X, X) = \mathrm{Var}(X)$
+		- $\mathrm{Cov}(aX, Y) = a\mathrm{Cov}(X,Y)$
+		- $\mathrm{Cov}(\sum_{\NN} X_i, \sum_\NN Y_j) = \sum_i \sum_j\mathrm{Cov}(X_i, Y_j)$
 
 - Stirling's Approximation: $k! \sim k^\frac{k+1}{2}e^{-k} \sqrt{2\pi} $
 
@@ -88,9 +98,8 @@ Properties that follow from axioms:
 		0 & $y\not \in \im(g)$
 	}
 	$$
-- The Gamma Function
-	$$\Gamma(x+1) = \int_{\RR^{>0}} e^{-t} t^x ~dt$$
-	- Integrate by parts to obtain functional relation $\Gamma(x+1) = x\Gamma(x)$
+- pdf of a sum of independent random variables: $f_{X+Y} = (F_X \ast f_y)$
+
 
 ## Distributions
 
@@ -189,6 +198,23 @@ $>3$  |  $0.99$
 - Coupon Collectors
 	- Given $X = \theset{1, \cdots n}$, what is the expected number of draws until all $n$ outcomes are seen?
 
-## Shortcuts
+## Notes, Shortcuts, Misc
 - When computing expected values, variation, etc, just insert a parameter $k$ and compute the moments $E[X^k]$. Then with a solution in terms of $k$, let $k=1,2$ etc.
 - Neat property of pdfs: $P(X \in N_\varepsilon(a)) \approx \varepsilon f(a)$
+- The Gamma Function
+	$$\Gamma(x+1) = \int_{\RR^{>0}} e^{-t} t^x ~dt$$
+	- Integrate by parts to obtain functional relation $\Gamma(x+1) = x\Gamma(x)$
+- Boole's Inequality: $P(\union_\NN A_i) \leq \sum_\NN P(A_i)$
+- For any function $f:X \to \RR$, there is a lower bound: $\max_{x\in X}f(x) \geq E[f(x)]$
+- Moment Generating Functions: $M(t) = E[e^{Xt}]$
+	- Then $M^{(n)}(0)$ is the $n\dash$th moment, i.e. $M'(0) = E[X], M''(0) = E[X^2]$, etc.
+
+Table: let $q = 1-p$
+$$\begin{array}{c|ccc}
+\text{Distribution} &  f(x) && \mu & \sigma^2 & M(t) \\
+\hline \\
+B(n, p) & {n\choose x}p^x q^{n-x} && np & npq & (pe^t + q)^n\\
+P(\lambda) & \frac{\lambda^x}{x!}e^{-\lambda} && \lambda & \lambda & e^{\lambda(e^t-1)}\\
+G(p) & q^{x-1}p && \frac{1}{p} & \frac{q}{p^2} & \frac{pe^t}{1-qe^t}\\
+B^-(r, p) & {n-1 \choose r-1}p^rq^{n-r} && \frac{r}{p} & \frac{rq}{p^2} & \left(\frac{pe^t}{1-qe^t}\right)^r 
+\end{array}$$
