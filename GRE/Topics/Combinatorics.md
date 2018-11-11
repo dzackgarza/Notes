@@ -13,7 +13,7 @@ Multinomial: A set of $n$ items divided into $k$ distinct, disjoint subsets of s
 Multinomial theorem: $$(x_1 + x_2 + \cdots x_k )^n = \sum_{m_1, m_2, \cdots, m_k \\ ~~~\sum m_i = n}{n \choose m_1,m_2,\cdots, m_k}x_1^{m_1}x_2^{m_2}\cdots x_k^{m_k}$$
 which contains $n + r - 1 \choose r - 1$ terms.
 
-Inclusion-Exclusion: $$ \abs{\union_{i=1}^n A_i} = \sum_i \abs A_i - \sum_{i_1 < i_2}^{n\choose 2^2} \abs{A_{i_1} \intersect A_{i_2}} + \sum_{i_1 < i_2 < i_3}^{n \choose 2^3} \abs{A_{i_1} \intersect A_{i_2} \intersect A_{i_3}} + \cdots +(-1)^{n+1} \abs{\intersect_{i=1}^n A_i}$$
+Inclusion-Exclusion: $$ \abs{\union_{i=1}^n A_i} = \sum_i \abs A_i - \sum_{i_1 < i_2}^{n\choose 2^2} \abs{A_{i_1} \intersect A_{i_2}} + \sum_{i_1 < i_2 < i_3}^{n \choose 2^3} \abs{A_{i_1} \intersect A_{i_2} \intersect A_{i_3}} + \cdots +(-1)^{n+1} \abs{\intersect_{i=1}^n A_i} \\ = \sum_{k=1}^n \sum_{i_1 < \cdots < i_k}  (-1)^{k+1} \abs{\intersect_{j=1}^k A_{i_j}}$$
 
 # The Important Numbers
 - Binomial Coefficients
