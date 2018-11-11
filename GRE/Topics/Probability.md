@@ -42,7 +42,7 @@ Properties that follow from axioms:
 		$$P(A \mid B) = \frac{P(A)P(B\mid A)}{\sum_{j = 1}^n P(B \mid A_j)}$$
 	- LHS: the posterior probability, while $P(A_i)$ are the priors.
 - Odds: $P(A) / P(A^c)$
-	- Conditional odds (Bayesian): $\frac{P(A \mid E)}{P(A^c \mid E)} = \frac{P(A)}{P(A^c)} \frac{P(E \mid A)}{P(E \mid A^c)} $
+	- Conditional odds: $\frac{P(A \mid E)}{P(A^c \mid E)} = \frac{P(A)}{P(A^c)} \frac{P(E \mid A)}{P(E \mid A^c)} $
 ## Distributions
 
 Let $X$ be a random variable.
