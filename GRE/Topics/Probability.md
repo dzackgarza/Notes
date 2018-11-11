@@ -37,7 +37,7 @@ P(X = k) &= \quad \frac 1 n
 		- Fair coin toss where $n=2$.
 
 - Bernoulli:
-  - Consider a trial with either a positive or negative outcome, and let $X \in\theset{0,1}$ where $1$ denotes a success with probability $p$. Then,
+	- Consider a trial with either a positive or negative outcome, and let $X \in\theset{0,1}$ where $1$ denotes a success with probability $p$. Then,
 $$\begin{align*}
 P(X = k) &= \quad \cases{
 	1-p, 		& $k = 0$ \\
@@ -49,24 +49,25 @@ P(X = k) &= \quad \cases{
 	- Examples:
 		- A weighted coin with $P(\text{Heads}) = p$
 
-
 - Geometric:
 	- Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ where $X=k$ denotes the first success happening on the $k\dash$th trial. Then,
-
 $$\begin{align*}
 P(X = k) &= \quad (1-p)^{k-1} p \\
 \mu &= \quad \frac 1 p \\
 \sigma^2 &= \quad \frac{1-p}{p^2}
 \end{align*}$$
+	- Examples:
+		- A sequence of coin flips and the number of flips before the first heads appears.
 
 - Binomial
   - Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ denote the number of successes occurring in $n$ trials. Then,
-
 $$\begin{align*}
 P(X = k) &= \quad {n \choose k} p^k (1-p)^{n-k} \\
 \mu &= \quad np \\
 \sigma^2 &= \quad np(1-p)
 \end{align*}$$
+	- Examples:
+		- A sequence of coin flips and the numbers of total heads occuring.
 
 - Normal
 $$
