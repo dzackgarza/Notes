@@ -82,7 +82,9 @@ Let $X$ be a random variable, and $f$ be its probability density function satisf
 - Uniform:
 	- Consider an event with $n$ mutually exclusive outcomes of equal probability, and let $X \in \theset{1,2,\ldots, n}$ denote which outcome occurs. Then,
 $$\begin{align*}
-P(X = k) &= \quad \frac 1 n
+f(k) 			&= \quad \frac 1 n \\
+\mu 			&= \frac n 2 \\
+\sigma^2 	&= a
 \end{align*}$$
 	- Examples:
 		- Dice rolls where $n=6$.
