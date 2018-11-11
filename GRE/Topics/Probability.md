@@ -1,8 +1,9 @@
 ## Definitions
 $$\begin{align*}
 L_2(X) &= \theset{f: X \to \RR: \int_\RR f(x) ~dx < \infty} \\
-\inner{f}{g}_{2} &= \int_\RR f(x)g(x) ~dx \\
-\norm{f}_2^2 &= \inner{f}{f} = \int_\RR f(x)^2 ~dx
+\inner{g}{f}_{2} &= \int_\RR g(x)f(x) ~dx \\
+E[\wait] &= \inner{\wait}{f} \\
+\norm{f}_2^2 &= \inner{f}{f} = \int_\RR f(x)^2 ~dx\\
 \end{align*}$$
 
 - Random Variable
@@ -22,11 +23,11 @@ $$
 	- Yields $\dd{F}{x} = f(x)$
 
 - Mean / Expected Value:
-	- For any given r.v. $X$, define the expectation operator $E[\wait] = \inner{\wait}{f(x)}$
+	- For any given r.v. $X$, define the expectation operator $$
 $$
 E[X] \definedas \inner{x}{f(x)} = \int_\RR x f(x) ~dx
 $$
-	- Also denoted $\mu_X$
+	(Also denoted $\mu_X$)
 	- Linearity of expectation:
 $$
 E\left[\sum_{i\in\NN} a_i X_i\right] = \sum_{i\in\NN} a_i E[X_i]
@@ -41,6 +42,7 @@ $$
 	&\definedas \sigma^2(X)
 	\end{align*}$$
 	where $\sigma$ is the standard deviation.
+	- Also defined as $\inner{x}{f(x)}$
 	- Nonlinearity of variance: $\mathrm{Var}(aX + b) = a^2\mathrm{Var}(X)$
 
 - Covariance: $$ \mathrm{Cov}(X,Y) = E[(X-\mu_X)(Y-\mu_Y)]$$
