@@ -36,8 +36,8 @@ Properties that follow from axioms:
 - $P(E \union F) = P(E) + P(F) - P(E \intersect F)$
 
 Conditional Probability: $P(F)P(E \mid F) = P(E \intersect F)$
-Genearlization: $P(\intersect_\NN E_i) = P(E_1) P(E_2 \mid E_1)P(E_3\mid E_1 \intersect E_2) \cdots$
-
+Generalization: $P(\intersect_\NN E_i) = P(E_1) P(E_2 \mid E_1)P(E_3\mid E_1 \intersect E_2) \cdots$
+Bayes Rule: $P(E) = P(F)P(E \mid F) + P(F^c)P(E \mid F^c)$
 ## Distributions
 
 Let $X$ be a random variable.
