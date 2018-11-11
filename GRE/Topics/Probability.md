@@ -76,12 +76,12 @@ P(X = k) &= \quad \frac 1 n
 - Bernoulli:
 	- Consider a trial with either a positive or negative outcome, and let $X \in\theset{0,1}$ where $1$ denotes a success with probability $p$. Then,
 $$\begin{align*}
-f(k) &= \quad \cases{
+f(k) 			&= \quad \cases{
 	1-p, 		& $k = 0$ \\
 	p, 			& $k = 1$
 } \\
-\mu &= \quad p \\
-\sigma^2 &= \quad p(1-p)
+\mu 			&= \quad p \\
+\sigma^2 	&= \quad p(1-p)
 \end{align*}$$
 	- Examples:
 		- A weighted coin with $P(\text{Heads}) = p$
@@ -89,9 +89,9 @@ f(k) &= \quad \cases{
 - Geometric:
 	- Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ where $X=k$ denotes the first success happening on the $k\dash$th trial. Then,
 $$\begin{align*}
-f(k) &= \quad (1-p)^{k-1} p \\
-\mu &= \quad \frac 1 p \\
-\sigma^2 &= \quad \frac{1-p}{p^2}
+f(k) 			&= \quad (1-p)^{k-1} p \\
+\mu 			&= \quad \frac 1 p \\
+\sigma^2 	&= \quad \frac{1-p}{p^2}
 \end{align*}$$
 	- Examples:
 		- A sequence of coin flips and the number of flips before the first heads appears.
@@ -99,12 +99,12 @@ f(k) &= \quad (1-p)^{k-1} p \\
 - Binomial
   - Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ denote the number of successes occurring in $n$ trials. Then,
 $$\begin{align*}
-f(k) &= \quad {n \choose k} p^k (1-p)^{n-k} \\
-\mu &= \quad np \\
-\sigma^2 &= \quad np(1-p)
+f(k) 			&= \quad {n \choose k} p^k (1-p)^{n-k} \\
+\mu 			&= \quad np \\
+\sigma^2 	&= \quad np(1-p)
 \end{align*}$$
 	- Examples:
-		- A sequence of coin flips and the numbers of total heads occuring.
+		- A sequence of coin flips and the numbers of total heads occurring.
 
 - Normal
 $$
@@ -125,7 +125,9 @@ $>3$  |  $0.99$
 	- Given a parameter $\lambda > -$
 $$
 \begin{align*}
-f(k) &= \frac{\lambda^k}{k!}e^{-\lambda}
+f(k) 			&= \quad \frac{\lambda^k}{k!}e^{-\lambda} \\
+\mu 			&= \quad \lambda \\
+\sigma^2 	&= \quad \lambda^2
 \end{align*}$$
 	- Approximates binomial when $n >> 1$  and $p << 1$ by using $\lambda = np$
 	-
