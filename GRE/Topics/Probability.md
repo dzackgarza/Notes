@@ -32,6 +32,7 @@ Axioms of Probability: given a sample space $\Sigma$ with events $S$,
 Properties that follow from axioms:
 - $P(S^c) = 1 - P(S)$
 - $E \subseteq F \implies P(E) \leq P(F)$
+- $P(E \union F) = P(E) + P(F) - P(E \intersect F)$
 
 ## Distributions
 
