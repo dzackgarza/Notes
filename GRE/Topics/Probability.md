@@ -127,6 +127,6 @@ $$
 \begin{align*}
 f(k) &= \frac{\lambda^k}{k!}e^{-\lambda}
 \end{align*}$$
-	- Approximates binomial when $n >> 1$ by $\lambda = np$
-	- 
+	- Approximates binomial when $n >> 1$  and $p << 1$ by using $\lambda = np$
+	-
 - Exponential
