@@ -4,7 +4,9 @@ L_2(X) &= \theset{f: X \to \RR: \int_\RR f(x) ~dx < \infty} \\
 \inner{g}{f}_{2} &= \int_\RR g(x)f(x) ~dx \\
 E[\wait] &= \inner{\wait}{f} \\
 \norm{f}_2^2 &= \inner{f}{f} = \int_\RR f(x)^2 ~dx\\
-\id:& ~\RR \to \RR, \id(x) = x
+\id:& ~\RR \to \RR, \id(x) = x \\
+(T_{p}f)(\wait) = f(p- \wait) \\
+(f \ast g)(p) &= \int_\RR f(t)g(p-t)~dt &= \int_\RR f(t)T_{p, g}
 \end{align*}$$
 
 - Random Variable
@@ -88,6 +90,7 @@ Properties that follow from axioms:
 	$$
 - The Gamma Function
 	$$\Gamma(x+1) = \int_{\RR^{>0}} e^{-t} t^x ~dt$$
+	- Integrate by parts to obtain functional relation $\Gamma(x+1) = x\Gamma(x)$
 
 ## Distributions
 
