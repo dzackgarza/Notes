@@ -11,11 +11,11 @@ Summary for GRE:
 		Does not matter whether or not the $X_i$ are independent.
 
 - Variance:
-	$$
-	\mathrm{Var}(X) = E[(X - E[X])^2] \\
-	= \int (x - E[X])^2 f_X(x) \\
-	= E[X^2] - E[X]^2 
-	$$
+	$$\begin{align*}
+	\mathrm{Var}(X) &= E[(X - E[X])^2] \\
+	&= \int (x - E[X])^2 f_X(x) \\
+	&= E[X^2] - E[X]^2 
+	\end{align*}$$
 
 - Standard deviation: $$\sigma(X) = \sqrt{\mathrm{Var}(X)} = \sqrt{\int (x - E[X])^2 f_X(x) ~dx} $$
 
