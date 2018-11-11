@@ -122,7 +122,7 @@ $>3$  |  $0.99$
 
 
 - Poisson
-	- Given a parameter $\lambda > -$
+	- Given a parameter $\lambda > 0$ that denotes the rate per unit time of an event occurring and $X$ the number of times the event occurs in one unit of time, 
 $$
 \begin{align*}
 f(k) 			&= \quad \frac{\lambda^k}{k!}e^{-\lambda} \\
