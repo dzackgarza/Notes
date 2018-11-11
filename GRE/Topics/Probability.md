@@ -128,7 +128,9 @@ f(k) 			&= \quad (1-p)^{k-1} p \\
 - Hypergeometric
 	- $H(n, m, s)$ An urn filled with $n$ balls, where $m$ are white and $n-m$ are black; pick a sample of size $s$ and let $X$ denote the number of white balls:
 $$\begin{align*}
-f(k) = {m \choose k} {n-m \choose s-k} {n \choose s}^{-1}
+f(k) 			&= \quad {m \choose k} {n-m \choose s-k} {n \choose s}^{-1} \\
+\mu 			&= \quad \frac{ms}{n} \\
+\sigma^2 	&= \quad \frac{ms}{n}(1- \frac{m}{n})\left( 1 - \frac{s-1}{n-1} \right)
 \end{align*}$$
 
 - Normal
