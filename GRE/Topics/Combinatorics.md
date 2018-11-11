@@ -11,6 +11,7 @@ Note that the rising and falling factorials always have exactly $k$ terms.
 
 # The Important Numbers
 - Binomial Coefficients
+	- The Binomial Theorem: $$(x+y)^n = \sum_{k=0}^n {n\choose k}x^ky^{n-k}$$
 	- Choosing:$n \choose k$
 	- Choosing with repetition allowed: ${n+k-1}\choose k$
 - Signed Stirling Numbers of the First Kind: $s(n,k)$
