@@ -35,7 +35,7 @@ Properties that follow from axioms:
 	- Proof: $E \subseteq F \implies F = E \union (E^c \intersect F)$, which are disjoint, so $P(E) \leq P(E) + P(E^c \intersect F) = P(F)$.
 - $P(E \union F) = P(E) + P(F) - P(E \intersect F)$
 
-Conditional Probability: $P(F)P(E \mid F) = P(E \intersect F)$
+Conditional Probability: $P(F)P(E \mid F) = P(E \intersect F) = P(E)P(F \mid E)$
 Generalization: $P(\intersect_\NN E_i) = P(E_1) P(E_2 \mid E_1)P(E_3\mid E_1 \intersect E_2) \cdots$
 Bayes Rule: $P(E) = P(F)P(E \mid F) + P(F^c)P(E \mid F^c)$
 ## Distributions
