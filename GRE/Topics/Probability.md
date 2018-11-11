@@ -86,16 +86,6 @@ f(k) 			&= \quad \cases{
 	- Examples:
 		- A weighted coin with $P(\text{Heads}) = p$
 
-- Geometric:
-	- Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ where $X=k$ denotes the first success happening on the $k\dash$th trial. Then,
-$$\begin{align*}
-f(k) 			&= \quad (1-p)^{k-1} p \\
-\mu 			&= \quad \frac 1 p \\
-\sigma^2 	&= \quad \frac{1-p}{p^2}
-\end{align*}$$
-	- Examples:
-		- A sequence of coin flips and the number of flips before the first heads appears.
-
 - Binomial
   - Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ denote the number of successes occurring in $n$ trials. Then,
 $$\begin{align*}
@@ -106,11 +96,34 @@ f(k) 			&= \quad {n \choose k} p^k (1-p)^{n-k} \\
 	- Examples:
 		- A sequence of coin flips and the numbers of total heads occurring.
 
+- Poisson
+	- Given a parameter $\lambda > 0$ that denotes the rate per unit time of an event occurring and $X$ the number of times the event occurs in one unit of time,
+$$
+\begin{align*}
+f(k) 			&= \quad \frac{\lambda^k}{k!}e^{-\lambda} \\
+\mu 			&= \quad \lambda \\
+\sigma^2 	&= \quad \lambda^2
+\end{align*}$$
+	- Approximates binomial when $n >> 1$  and $p << 1$ by using $\lambda = np$
+
 - Negative Binomial
-	- Similar to binomial, where $X$ is the number of trials it takes to accumlate $r$ successes
+	- $B^- (r, p)$: similar to binomial, where $X$ is the number of trials it takes to accumulate $r$ successes
 $$\begin{align*}
 f(k) &= \quad {k-1 \choose r-1}p^r(1-p)^{k-r}
 \end{align*}$$
+
+- Geometric:
+	- Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ where $X=k$ denotes the first success happening on the $k\dash$th trial. Then,
+$$\begin{align*}
+f(k) 			&= \quad (1-p)^{k-1} p \\
+\mu 			&= \quad \frac 1 p \\
+\sigma^2 	&= \quad \frac{1-p}{p^2}
+\end{align*}$$
+	- Note this is equal to $B^-(1, p)$
+	- Examples:
+		- A sequence of coin flips and the number of flips before the first heads appears.
+
+
 
 - Normal
 $$
@@ -127,14 +140,5 @@ $2.5$  | $0.97$
 $>3$  |  $0.99$
 
 
-- Poisson
-	- Given a parameter $\lambda > 0$ that denotes the rate per unit time of an event occurring and $X$ the number of times the event occurs in one unit of time,
-$$
-\begin{align*}
-f(k) 			&= \quad \frac{\lambda^k}{k!}e^{-\lambda} \\
-\mu 			&= \quad \lambda \\
-\sigma^2 	&= \quad \lambda^2
-\end{align*}$$
-	- Approximates binomial when $n >> 1$  and $p << 1$ by using $\lambda = np$
-	-
+
 - Exponential
