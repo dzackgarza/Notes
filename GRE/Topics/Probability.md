@@ -26,6 +26,7 @@ $$\begin{align*}
 Axioms of Probability: given a sample space $\Sigma$ with events $S$,
 1. $\mu(\Sigma) = 1$, so $S \in \Sigma \implies 0 \leq P(S) \leq 1$
 2. For mutually exclusive events, $P(\union_\NN S_i) = \sum_\NN P(S_i)$
+	1. Yields $P(\emptyset) = 0$
 ## Distributions
 
 Let $X$ be a random variable.
