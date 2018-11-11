@@ -37,9 +37,15 @@ Properties that follow from axioms:
 
 - Conditional Probability: $P(F)P(E \mid F) = P(E \intersect F) = P(E)P(F \mid E)$
 	- Generalization: $P(\intersect_\NN E_i) = P(E_1) P(E_2 \mid E_1)P(E_3\mid E_1 \intersect E_2) \cdots$
-- Bayes Rule: $P(E) = P(F)P(E \mid F) + P(F^c)P(E \mid F^c)$
+- Bayes Rule:
+	$$
+	P(E) = P(F)P(E \mid F) + P(F^c)P(E \mid F^c) \\
+	P(E) = \sum_i P(E \mid A_i)
+	$$
 	- Generalization: for $\coprod_{i=1}^n A_i = \Sigma$ and $A=A_i$ for some $i$,
-		$$P(A \mid B) = \frac{P(A)P(B\mid A)}{\sum_{j = 1}^n P(B \mid A_j)}$$
+		$$
+		P(A \mid B) = \frac{P(A)P(B\mid A)}{\sum_{j = 1}^n P(B \mid A_j)} \\
+		$$
 	- LHS: the posterior probability, while $P(A_i)$ are the priors.
 - Odds: $P(A) / P(A^c)$
 	- Conditional odds: $\frac{P(A \mid E)}{P(A^c \mid E)} = \frac{P(A)}{P(A^c)} \frac{P(E \mid A)}{P(E \mid A^c)} $
