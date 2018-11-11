@@ -40,7 +40,7 @@ Properties that follow from axioms:
 - Bayes Rule: $P(E) = P(F)P(E \mid F) + P(F^c)P(E \mid F^c)$
 	- Generalization: for $\coprod_{i=1}^n A_i = \Sigma$,
 		$$P(A_i \mid B) = \frac{P(B)P(B\mid A_i)}{\sum_{j = 1}^n P(B \mid A_j)}$$
-	- LHS: the posterior probability, while $P(B_i)$ are the priors.
+	- LHS: the posterior probability, while $P(A_i)$ are the priors.
 ## Distributions
 
 Let $X$ be a random variable.
