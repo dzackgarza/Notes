@@ -32,11 +32,12 @@ Let $X$ be a random variable.
 $$\begin{align*}
 P(X = k) &= \quad \frac 1 n
 \end{align*}$$
-	- Every outcome has an equal probability - e.g. dice rolls where $n=6$.
+	- Examples:
+		- Dice rolls where $n=6$.
+		- Fair coin toss where $n=2$.
 
 - Bernoulli:
   - Consider a trial with either a positive or negative outcome, and let $X \in\theset{0,1}$ where $1$ denotes a success with probability $p$. Then,
-
 $$\begin{align*}
 P(X = k) &= \quad \cases{
 	1-p, 		& $k = 0$ \\
@@ -45,6 +46,8 @@ P(X = k) &= \quad \cases{
 \mu &= \quad p \\
 \sigma^2 &= \quad p(1-p)
 \end{align*}$$
+	- Examples:
+		- A weighted coin with $P(\text{Heads}) = p$
 
 
 - Geometric:
