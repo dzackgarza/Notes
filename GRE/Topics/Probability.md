@@ -28,7 +28,7 @@ $$
 - Variance:
 	$$\begin{align*}
 	\mathrm{Var}(X) &= E[(X - E[X])^2] \\
-	&= \int (x - E[X])^2 f_X(x) \\
+	&= \int (x - E[X])^2 f(x) ~dx \\
 	&= E[X^2] - E[X]^2
 	\end{align*}$$
 
