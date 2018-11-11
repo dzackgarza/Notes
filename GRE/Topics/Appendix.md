@@ -109,6 +109,7 @@ $$\begin{align}
 - $\lnot (P \or Q) \iff \lnot P \and \lnot Q$
 
 ## Set Identities
+- $A \union B = A \union (A^c \intersect B)$
 - $(\union_\NN A_i)^c = \intersect_\NN A_i^c$
 - $(\intersect_\NN A_i)^c = \union_\NN A_i^c$
 - $A - B = A \cap B^c$
