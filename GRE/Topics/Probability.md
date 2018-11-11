@@ -15,7 +15,10 @@ $$
 F(x) = P(X \leq x) = \int_{-\infty}^x f(x) ~dx
 $$
 
-- Mean / Expected Value: $$E[X] = \int x P(X = x) = \int x f_X(x)$$
+- Mean / Expected Value:
+$$
+E[X] = \int_\RR x f(x) ~dx
+$$
 	- Linearity of expectation:
 		$$E[\sum a_i X_i] = \sum a_i E[X_i]$$
 		Does not matter whether or not the $X_i$ are independent.
