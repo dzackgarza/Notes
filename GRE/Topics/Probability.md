@@ -19,6 +19,7 @@ L_2(X) &= \theset{f: X \to \RR: \int_\RR f(x) ~dx < \infty} \\
 $$
 F(x) = P(X \leq x) = \int_{-\infty}^x f(x) ~dx
 $$
+	- Yields $\dd{F}{x} = f(x)$
 
 - Mean / Expected Value:
 $$
@@ -77,7 +78,7 @@ Properties that follow from axioms:
 	- If $g$ is differentiable and monotonic and $Y=g(X)$, then
 	$$
 	f_Y(y) = \cases{
-		(f_X \circ g^{-1})(y) \abs{\dd{}{y}g^{-1}(y)} & $y \in \im(g)$ \\ 
+		(f_X \circ g^{-1})(y) \abs{\dd{}{y}g^{-1}(y)} & $y \in \im(g)$ \\
 		0 & $y\not \in \im(g)$
 	}
 	$$
