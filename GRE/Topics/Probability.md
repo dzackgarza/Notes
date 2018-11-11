@@ -4,6 +4,8 @@ Summary for GRE:
 
 - Random Variable
 	- For $(\Sigma, E, \mu)$ a probability space with sample space $\Sigma$ and probability measure $\mu$, a random variable is a function $X: \Sigma \to \RR$
+- Probability density function:
+	- For any $U \subset \RR$, given by the relation $$P(X \in U) = \int_U f(x) ~dx$$
 
 - Mean / Expected Value: $$E[X] = \int x P(X = x) = \int x f_X(x)$$
 	- Linearity of expectation:
