@@ -109,7 +109,9 @@ f(k) 			&= \quad \frac{\lambda^k}{k!}e^{-\lambda} \\
 - Negative Binomial
 	- $B^- (r, p)$: similar to binomial, where $X$ is the number of trials it takes to accumulate $r$ successes
 $$\begin{align*}
-f(k) &= \quad {k-1 \choose r-1}p^r(1-p)^{k-r}
+f(k) &= \quad {k-1 \choose r-1}p^r(1-p)^{k-r} \\
+\mu &= \quad \frac r p \\
+\sigma^2 &= \quad \frac{r (1-p)}{p^2}
 \end{align*}$$
 
 - Geometric:
