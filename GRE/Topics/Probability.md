@@ -23,7 +23,7 @@ $$
 $$
 E\left[\sum_{i\in\NN} a_i X_i\right] = \sum_{i\in\NN} a_i E[X_i]
 $$
-		Does not matter whether or not the $X_i$ are independent.
+	Does not matter whether or not the $X_i$ are independent.
 
 - Variance:
 	$$\begin{align*}
