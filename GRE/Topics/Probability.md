@@ -89,6 +89,7 @@ f(k) 			&= \quad \frac 1 n \\
 	- Examples:
 		- Dice rolls where $n=6$.
 		- Fair coin toss where $n=2$.
+	- Continuous: $\mu = (1/2)(b+a), \sigma^2 = (1/12)(b-a)^2$
 
 - Bernoulli:
 	- Consider a trial with either a positive or negative outcome, and let $X \in\theset{0,1}$ where $1$ denotes a success with probability $p$. Then,
