@@ -86,6 +86,8 @@ Properties that follow from axioms:
 		0 & $y\not \in \im(g)$
 	}
 	$$
+- The Gamma Function
+	$$\Gamma(x+1) = \int_{\RR^{>0}} e^{-t} t^x ~dt$$
 
 ## Distributions
 
