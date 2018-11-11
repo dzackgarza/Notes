@@ -125,7 +125,11 @@ f(k) 			&= \quad (1-p)^{k-1} p \\
 	- Examples:
 		- A sequence of coin flips and the number of flips before the first heads appears.
 
-
+- Hypergeometric
+	- $H(n, m, s)$ An urn filled with $n$ balls, where $m$ are white and $n-m$ are black; pick a sample of size $s$ and let $X$ denote the number of white balls:
+$$\begin{align*}
+f(k) = {m \choose k} {n-m \choose s-k} {n \choose s}^{-1}
+\end{align*}$$
 
 - Normal
 $$
