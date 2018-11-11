@@ -9,7 +9,9 @@ n^{\overline k} &= n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n} \text{} && \t
 
 Note that the rising and falling factorials always have exactly $k$ terms.
 
-Multinomial: A set of $n$ items divided into $k$ distinct, disjoint subsets of sizes $m_1 \cdots m_k$: 
+Multinomial: A set of $n$ items divided into $k$ distinct, disjoint subsets of sizes $m_1 \cdots m_k$.
+Multinomial theorem: $$(x_1 + x_2 + \cdots x_k )^n = \sum_{m_1, m_2, \cdots, m_k \\ ~~~\sum m_i = n}{n \choose m_1,m_2,\cdots, m_k}x_1^{m_1}x_2^{m_2}\cdots x_k^{m_k}$$
+which contains $n + r - 1 \choose r - 1$ terms.
 
 # The Important Numbers
 - Binomial Coefficients
