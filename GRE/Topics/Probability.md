@@ -20,7 +20,9 @@ $$
 E[X] = \int_\RR x f(x) ~dx
 $$
 	- Linearity of expectation:
-		$$E[\sum a_i X_i] = \sum a_i E[X_i]$$
+$$
+E\left[\sum_{i\in\NN} a_i X_i\right] = \sum_{i\in\NN} a_i E[X_i]
+$$
 		Does not matter whether or not the $X_i$ are independent.
 
 - Variance:
