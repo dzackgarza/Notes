@@ -7,6 +7,8 @@
 ## Useful Results
 - Cauchy-Schwarz
 - Young's Inequality
+- Holder's Inequality
+- Minkowski's Inequality
 - Jensen's Inequality:
 $$
 r^{-1} \definedas p^{-1} + q^{-1} - 1 \implies \norm{f \ast g}_r \leq \norm{f}_p \norm{g}_q
