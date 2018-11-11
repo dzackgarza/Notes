@@ -122,4 +122,11 @@ $>3$  |  $0.99$
 
 
 - Poisson
+	- Given a parameter $\lambda > -$
+$$
+\begin{align*}
+f(k) &= \frac{\lambda^k}{k!}e^{-\lambda}
+\end{align*}$$
+	- Approximates binomial when $n >> 1$ by $\lambda = np$
+	- 
 - Exponential
