@@ -106,6 +106,12 @@ f(k) 			&= \quad {n \choose k} p^k (1-p)^{n-k} \\
 	- Examples:
 		- A sequence of coin flips and the numbers of total heads occurring.
 
+- Negative Binomial
+	- Similar to binomial, where $X$ is the number of trials it takes to accumlate $r$ successes
+$$\begin{align*}
+f(k) &= \quad {n-1 \choose r-1}p^r(1-p)^{n-r}
+\end{align*}$$
+
 - Normal
 $$
 f(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}} \\
@@ -122,7 +128,7 @@ $>3$  |  $0.99$
 
 
 - Poisson
-	- Given a parameter $\lambda > 0$ that denotes the rate per unit time of an event occurring and $X$ the number of times the event occurs in one unit of time, 
+	- Given a parameter $\lambda > 0$ that denotes the rate per unit time of an event occurring and $X$ the number of times the event occurs in one unit of time,
 $$
 \begin{align*}
 f(k) 			&= \quad \frac{\lambda^k}{k!}e^{-\lambda} \\
