@@ -45,7 +45,7 @@ $$
 
 - Stirling's Approximation: $k! \sim k^\frac{k+1}{2}e^{-k} \sqrt{2\pi} $
 
-
+## Theory and Background
 Axioms of Probability: given a sample space $\Sigma$ with events $S$,
 1. $\mu(\Sigma) = 1$
 	1. Yields $S \in \Sigma \implies 0 \leq P(S) \leq 1$
@@ -73,7 +73,14 @@ Properties that follow from axioms:
 - Odds: $P(A) / P(A^c)$
 	- Conditional odds: $\frac{P(A \mid E)}{P(A^c \mid E)} = \frac{P(A)}{P(A^c)} \frac{P(E \mid A)}{P(E \mid A^c)} $
 - Independence: $P(A \intersect B) = P(A) P(B)$
-
+- Change of variables for pdfs:
+	- If $g$ is differentiable and monotonic and $Y=g(X)$, then
+	$$
+	f_Y(y) = \cases{
+		(f_X \circ g^{-1})(y) \abs{\dd{}{y}g^{-1}(y)} & $y \in \im(g)$ \\ 
+		0 & $y\not \in \im(g)$
+	}
+	$$
 
 ## Distributions
 
