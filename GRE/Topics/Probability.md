@@ -4,6 +4,7 @@ L_2(X) &= \theset{f: X \to \RR: \int_\RR f(x) ~dx < \infty} \\
 \inner{g}{f}_{2} &= \int_\RR g(x)f(x) ~dx \\
 E[\wait] &= \inner{\wait}{f} \\
 \norm{f}_2^2 &= \inner{f}{f} = \int_\RR f(x)^2 ~dx\\
+\id:& ~\RR \to \RR, \id(x) = x
 \end{align*}$$
 
 - Random Variable
@@ -23,9 +24,8 @@ $$
 	- Yields $\dd{F}{x} = f(x)$
 
 - Mean / Expected Value:
-	- For any given r.v. $X$, define the expectation operator $$
 $$
-E[X] \definedas \inner{x}{f(x)} = \int_\RR x f(x) ~dx
+E[X] \definedas \inner{\id}{f} = \int_\RR x f(x) ~dx
 $$
 	(Also denoted $\mu_X$)
 	- Linearity of expectation:
@@ -42,7 +42,8 @@ $$
 	&\definedas \sigma^2(X)
 	\end{align*}$$
 	where $\sigma$ is the standard deviation.
-	- Also defined as $\inner{x}{f(x)}$
+	- Can also defined as $\inner{(\id - \inner{\id}{f})^2}{f}$
+		- Take the portion of the id function in the orthogonal complement of $f$, squared, and project it back onto $f$?
 	- Nonlinearity of variance: $\mathrm{Var}(aX + b) = a^2\mathrm{Var}(X)$
 
 - Covariance: $$ \mathrm{Cov}(X,Y) = E[(X-\mu_X)(Y-\mu_Y)]$$
