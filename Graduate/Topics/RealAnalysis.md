@@ -22,3 +22,4 @@ $$
 - Density Results:
   - $C_c(\RR) \subset C_0(\RR)$
 - $C_c(\RR) \intersect C^\infty(\RR) \neq \emptyset$, e.g. take $f(x) = e^{-1\frac{1}{x^2}} \chi_{(0, \infty}(x)$.
+- The Banach Algebra $L^1(\RR)$ is not a principal ideal domain.
