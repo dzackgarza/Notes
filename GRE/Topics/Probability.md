@@ -23,7 +23,7 @@ $$
 - Mean / Expected Value:
 $$
 \mu_X \definedas E[X] = \int_\RR x f(x) ~dx \\
-= \inner{x}{f(x)}_{L_2}
+= \inner{x}{f(x)}
 $$
 	- Linearity of expectation:
 $$
@@ -33,8 +33,7 @@ $$
 
 - Variance:
 	$$\begin{align*}
-	\mathrm{Var}(X) &= \norm{x - \inner{x}{f(x)}_{L_2} }_{L_2} \\
-	&= E[(X - E[X])^2] \\
+	\mathrm{Var}(X) &= E[(X - E[X])^2] \\
 	&= \int (x - E[X])^2 f(x) ~dx \\
 	&= E[X^2] - E[X]^2 \\
 	&\definedas \sigma^2(X)
