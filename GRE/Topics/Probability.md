@@ -14,7 +14,7 @@ Summary for GRE:
 	$$\begin{align*}
 	\mathrm{Var}(X) &= E[(X - E[X])^2] \\
 	&= \int (x - E[X])^2 f_X(x) \\
-	&= E[X^2] - E[X]^2 
+	&= E[X^2] - E[X]^2
 	\end{align*}$$
 
 - Standard deviation: $$\sigma(X) = \sqrt{\mathrm{Var}(X)} = \sqrt{\int (x - E[X])^2 f_X(x) ~dx} $$
@@ -60,7 +60,7 @@ Properties that follow from axioms:
 - Independence: $P(A \intersect B) = P(A) P(B)$
 ## Distributions
 
-Let $X$ be a random variable.
+Let $X$ be a random variable, and $f$ be its probability density function satisfying $f(k) = P(X = k)$
 
 - Uniform:
 	- Consider an event with $n$ mutually exclusive outcomes of equal probability, and let $X \in \theset{1,2,\ldots, n}$ denote which outcome occurs. Then,
@@ -74,7 +74,7 @@ P(X = k) &= \quad \frac 1 n
 - Bernoulli:
 	- Consider a trial with either a positive or negative outcome, and let $X \in\theset{0,1}$ where $1$ denotes a success with probability $p$. Then,
 $$\begin{align*}
-P(X = k) &= \quad \cases{
+f(k) &= \quad \cases{
 	1-p, 		& $k = 0$ \\
 	p, 			& $k = 1$
 } \\
@@ -87,7 +87,7 @@ P(X = k) &= \quad \cases{
 - Geometric:
 	- Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ where $X=k$ denotes the first success happening on the $k\dash$th trial. Then,
 $$\begin{align*}
-P(X = k) &= \quad (1-p)^{k-1} p \\
+f(k) &= \quad (1-p)^{k-1} p \\
 \mu &= \quad \frac 1 p \\
 \sigma^2 &= \quad \frac{1-p}{p^2}
 \end{align*}$$
@@ -97,7 +97,7 @@ P(X = k) &= \quad (1-p)^{k-1} p \\
 - Binomial
   - Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ denote the number of successes occurring in $n$ trials. Then,
 $$\begin{align*}
-P(X = k) &= \quad {n \choose k} p^k (1-p)^{n-k} \\
+f(k) &= \quad {n \choose k} p^k (1-p)^{n-k} \\
 \mu &= \quad np \\
 \sigma^2 &= \quad np(1-p)
 \end{align*}$$
@@ -106,7 +106,7 @@ P(X = k) &= \quad {n \choose k} p^k (1-p)^{n-k} \\
 
 - Normal
 $$
-f_X(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+f(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}} \\
 $$
 
 $z$  |  $\Phi(z)$
