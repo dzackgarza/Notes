@@ -46,10 +46,6 @@ $$
 - Stirling's Approximation: $k! \sim k^\frac{k+1}{2}e^{-k} \sqrt{2\pi} $
 
 
-
-$$\begin{align*}
-\end{align*}$$
-
 Axioms of Probability: given a sample space $\Sigma$ with events $S$,
 1. $\mu(\Sigma) = 1$
 	1. Yields $S \in \Sigma \implies 0 \leq P(S) \leq 1$
