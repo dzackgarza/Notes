@@ -144,3 +144,6 @@ $>3$  |  $0.99$
 
 
 - Exponential
+
+## Shortcuts
+- When computing expected values, variation, etc, just insert a paramter $k$ and compute the moments $E[X^k]$. Then let $k=1,2$ etc.
