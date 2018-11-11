@@ -109,8 +109,8 @@ $$\begin{align}
 - $\lnot (P \or Q) \iff \lnot P \and \lnot Q$
 
 ## Set Identities
-- $(A\cup B)^c = A^c \cap B^c$
-- $(A\cap B)^c = A^c \cup B^c$
+- $(\union_\NN A_i)^c = \intersect_\NN A_i^c$
+- $(\intersect_\NN A_i)^c = \union_\NN A_i^c$
 - $A - B = A \cap B^c$
 - $(A-B)^c = A^c \cup B$
 - $(A\cup B) - C = (A-C) \cup (B-C)$
