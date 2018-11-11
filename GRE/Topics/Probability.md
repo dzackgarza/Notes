@@ -20,36 +20,50 @@ Summary for GRE:
 
 Birthday Paradox
 
+$$\begin{align*}
+\end{align*}$$
+
 ## Distributions
 
--Uniform:
-  - $P(X = k) = \frac 1 n$
+Let $X$ be a random variable.
+
+- Uniform:
+	- Consider an event with $n$ mutually exclusive outcomes of equal probability, and let $X \in \theset{1,2,\ldots, n}$ denote which outcome occurs. Then,
+$$\begin{align*}
+P(X = k) &= \quad \frac 1 n
+\end{align*}$$
+	- Every outcome has an equal probability - e.g. dice rolls where $n=6$.
 
 - Bernoulli:
-  - Trial with two outcomes, success or failure, with probability $p$ and $1-p$ respectively.
-	- $P(\text{k successes in n trials}) = {n\choose k} p^k(1-p)^{n-k}$
-  - Or let $X$ be a r.v. where $X\in\theset{0,1}$ with $X=1$ denoting a success, then $P(X=1) = p$
-$$
-P(X = 1) = p \\
-\mu = p \\
-\sigma^2 = p(1-p)
-$$
+  - Consider a trial with either a positive or negative outcome, and let $X \in\theset{0,1}$ where $1$ denotes a success with probability $p$. Then,
+
+$$\begin{align*}
+P(X = k) &= \quad \cases{
+	1-p, 		& $k = 0$ \\
+	p, 			& $k = 1$
+} \\
+\mu &= \quad p \\
+\sigma^2 &= \quad p(1-p)
+\end{align*}$$
+
 
 - Geometric:
-  - Independent Bernoulli trials, gives the probability that the first success happens on the $k\dash$th trial.
-$$
-P(X = k) = (1-p)^{k-1} p \\
-\mu = \frac 1 p \\
-\sigma^2 = \frac{1-p}{p^2}
-$$
+	- Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ where $X=k$ denotes the first success happening on the $k\dash$th trial. Then,
+
+$$\begin{align*}
+P(X = k) &= \quad (1-p)^{k-1} p \\
+\mu &= \quad \frac 1 p \\
+\sigma^2 &= \quad \frac{1-p}{p^2}
+\end{align*}$$
 
 - Binomial
-  - Independent Bernoulli trials, gives the probability of $k$ successes out of $n$ trials.
-$$
-P(X = k) = {n \choose k} p^k (1-p)^{n-k} \\
-\mu = np \\
-\sigma^2 = np(1-p)
-$$
+  - Consider a sequence of independent Bernoulli trials, let $X \in \theset{1,\ldots, n}$ denote the number of successes occurring in $n$ trials. Then,
+
+$$\begin{align*}
+P(X = k) &= \quad {n \choose k} p^k (1-p)^{n-k} \\
+\mu &= \quad np \\
+\sigma^2 &= \quad np(1-p)
+\end{align*}$$
 
 - Normal
 $$
