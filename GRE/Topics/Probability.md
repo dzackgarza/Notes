@@ -35,6 +35,8 @@ Properties that follow from axioms:
 	- Proof: $E \subseteq F \implies F = E \union (E^c \intersect F)$, which are disjoint, so $P(E) \leq P(E) + P(E^c \intersect F) = P(F)$.
 - $P(E \union F) = P(E) + P(F) - P(E \intersect F)$
 
+Conditional Probability: $P(E \mid F) = \frac{P(E \cap F)}{P(F)}$
+
 ## Distributions
 
 Let $X$ be a random variable.
