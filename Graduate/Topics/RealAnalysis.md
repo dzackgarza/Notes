@@ -16,4 +16,9 @@ $$
   - Useful variant - take $q = 1$ to get $\norm{f \ast g}_p \leq \norm{f}_p \norm{g}_1$
   - Take $p=1$ to show $L_1$ is closed under $\ast$.
 - The Riemann-Lebesgue Lemma
-- Proving that $\delta \not\in L_1(\RR)$
+- Proving that $\delta \not\in L_1(\RR)$ and that there is no such identity
+  - Rather, is a distribution or measure that _acts_ on $f$ and satisfies $f(x) \int_\RR f(t)\delta(t-x) ~dt$
+- Fubini's Theorem
+- Density Results:
+  - $C_c(\RR) \subset C_0(\RR)$
+- $C_c(\RR) \intersect C^\infty(\RR) \neq \emptyset$, e.g. take $f(x) = e^{-1\frac{1}{x^2}} \chi_{(0, \infty}(x)$.
