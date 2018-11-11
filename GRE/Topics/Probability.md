@@ -6,7 +6,7 @@ E[\wait] &= \inner{\wait}{f} \\
 \norm{f}_2^2 &= \inner{f}{f} = \int_\RR f(x)^2 ~dx\\
 \id:& ~\RR \to \RR, \id(x) = x \\
 (T_{p}f)(\wait) = f(p- \wait) \\
-(f \ast g)(p) &= \int_\RR f(t)g(p-t)~dt &= \int_\RR f(t)T_{p, g}
+(f \ast g)(p) &= \int_\RR f(t)g(p-t)~dt = \int_\RR f(t)(T_{p}g)(t) ~dt = \inner{T_pg}{f}
 \end{align*}$$
 
 - Random Variable
