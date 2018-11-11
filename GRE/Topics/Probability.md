@@ -49,6 +49,7 @@ Properties that follow from axioms:
 	- LHS: the posterior probability, while $P(A_i)$ are the priors.
 - Odds: $P(A) / P(A^c)$
 	- Conditional odds: $\frac{P(A \mid E)}{P(A^c \mid E)} = \frac{P(A)}{P(A^c)} \frac{P(E \mid A)}{P(E \mid A^c)} $
+- Indpendence: $P(A \intersect B) = P(A) P(B)$
 ## Distributions
 
 Let $X$ be a random variable.
