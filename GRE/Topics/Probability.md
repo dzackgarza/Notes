@@ -40,7 +40,7 @@ Properties that follow from axioms:
 - Bayes Rule:
 	$$
 	P(E) = P(F)P(E \mid F) + P(F^c)P(E \mid F^c) \\
-	P(E) = \sum_i P(E \mid A_i)
+	P(E) = \sum_i P(A_i) P(E \mid A_i)
 	$$
 	- Generalization: for $\coprod_{i=1}^n A_i = \Sigma$ and $A=A_i$ for some $i$,
 		$$
