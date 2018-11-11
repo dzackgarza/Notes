@@ -29,10 +29,11 @@ $$
 	$$\begin{align*}
 	\mathrm{Var}(X) &= E[(X - E[X])^2] \\
 	&= \int (x - E[X])^2 f(x) ~dx \\
-	&= E[X^2] - E[X]^2
+	&= E[X^2] - E[X]^2 \\
+	&\definedas \sigma^2(X)
 	\end{align*}$$
+	where $\sigma$ is the standard deviation.
 
-- Standard deviation: $$\sigma(X) = \sqrt{\mathrm{Var}(X)} = \sqrt{\int (x - E[X])^2 f_X(x) ~dx} $$
 
 - Covariance: $$ $$
 
