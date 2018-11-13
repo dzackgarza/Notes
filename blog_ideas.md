@@ -75,6 +75,9 @@
   - i^i is real
 - Green's Theorem and Stoke's Theorem are the same thing
 - Deriving formulas using differentiation/integration of power series
+- What is the Axiom of Choice?
+- Constructing large cardinals
+- Euclid's proof of the infinitude of primes: $1 + \prod p_i$ is not necessarily prime!!
 
 
 
