@@ -13,7 +13,7 @@ $$
 
 ## Big Derivative / Integral Table
 $$
-\begin{align}  
+\begin{align*}  
 \frac{\partial f}{\partial{x}}\Leftarrow && f && \Rightarrow\int f dx   \\
 \hline \\
 \frac{1}{2\sqrt{x}} && \sqrt{x} && \frac{2}{3}x^{\frac{3}{2}} \\
@@ -46,7 +46,7 @@ a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 ? && e^{ax}\sin(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\
 ? && e^{ax}\cos(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
 ? && ? && ? \\
-\end{align}
+\end{align*}
 $$
 
 ## Useful Series and Sequences
@@ -58,7 +58,7 @@ Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
 	$$
 - Differentiation: $$\frac{\partial}{\partial x} \sum_{k=i}^\infty a_kx^k = \sum_{k=i+1}^\infty k\,a_k x^{k-1}$$
 - Common Series
-		$$\begin{align}
+		$$\begin{align*}
 		&\sum_{k=0}^{N} x^k &= \frac{1-x^{N+1}}{1-x} &\\
 		&\sum_{k=1}^\infty x^k &= \frac{1}{1-x}& \quad\text{ for } \abs{x} < 1 \\
 		&\sum _ { k = 1 } ^ { \infty } k x ^ { k - 1 } &= \frac { 1 } { ( 1 - x ) ^ { 2 } }& \quad \text { for } | x | < 1 \\
@@ -77,7 +77,7 @@ Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
 		&\sum_{k=1}^\infty (-1)^k \frac{1}{k} &= \ln (2) & \\
 		&\sum_{k=1}^N \frac{1}{k} &\approx \ln(N) + \gamma + \frac{1}{2N} & \\
 		&\sum _ { k = 1 } ^ { \infty } \frac { 1 } { k ^ { 2 } } &= \frac { \pi ^ { 2 } } { 6 }& \\
-		\end{align}
+		\end{align*}
 		$$
 
 
@@ -93,12 +93,12 @@ Given $R(x) = \frac{p(x)}{q(x)}$, factor $q(x)$ into $\prod q_i(x)$.
 	- Note: #todo check, might need to evaluate at $-b/a$ instead, extend to quadratics.
 
 ## Properties of Norms
-$$\begin{align}
+$$\begin{align*}
 \norm{t\mathbf x} &= \abs{t} \norm{\mathbf x} \\
-\abs{\inner[\mathbf x]{\mathbf y}} &\leq \norm{\mathbf x} \norm{\mathbf y} \\
+\abs{\inner{\mathbf x}{\mathbf y}} &\leq \norm{\mathbf x} \norm{\mathbf y} \\
 \norm{\mathbf x+\mathbf y} &\leq \norm{\mathbf x} + \norm{\mathbf y} \\
 \norm{\mathbf x-\mathbf z} &\leq \norm{\mathbf x-\mathbf y} + \norm{\mathbf y-\mathbf z}
-\end{align}$$
+\end{align*}$$
 
 ## Logic Identities
 - $P \implies Q \iff Q \or \lnot P$
@@ -109,39 +109,66 @@ $$\begin{align}
 - $\lnot (P \or Q) \iff \lnot P \and \lnot Q$
 
 ## Set Identities
-- $A \union B = A \union (A^c \intersect B)$
-- $A = (B\intersect A) \union (B^c \intersect A)$
-- $(\union_\NN A_i)^c = \intersect_\NN A_i^c$
-- $(\intersect_\NN A_i)^c = \union_\NN A_i^c$
-- $A - B = A \cap B^c$
-- $(A-B)^c = A^c \cup B$
-- $(A\cup B) - C = (A-C) \cup (B-C)$
-- $(A\cap B) - C = (A-C) \cap (B-C)$
-- $A - (B \cup C) = (A - B) \cap (A - C)$
-- $A - (B \cap C) = (A-B) \cup (A-C)$
-- $A - (B - C) = (A-B) \cup (A \cap C)$
-- $(A-B) \cap C = (A \cap C) - B = A \cap (C-B)$
-- $(A-B) \cup C = (A \cup C) - (B-C)$
-- $A\cup(B\cap C) = (A\cup B) \cap (A\cup C)$
-- $A\cap(B\cup C) = (A\cap B) \cup (A \cap C)$
-- $A \subseteq C \and B \subseteq C \implies A \cup B \subseteq C$
-- $C \subseteq A \and C \subseteq B \implies C \subseteq A \cup B$
-- $A_k$ countable $\implies \prod_{k=1}^n A_k, \union_{k=1}^\infty A_k$ countable
+$$\begin{align*}
+A \union B 							&& = && A \union (A^c \intersect B) \\
+A 											&& = && (B\intersect A) \union (B^c \intersect A) \\
+(\union_\NN A_i)^c 			&& = && \intersect_\NN A_i^c \\
+(\intersect_\NN A_i)^c 	&& = && \union_\NN A_i^c \\
+A - B 									&& = && A \cap B^c \\
+(A-B)^c 								&& = && A^c \cup B \\
+(A\cup B) - C 					&& = && (A-C) \cup (B-C) \\
+(A\cap B) - C 					&& = && (A-C) \cap (B-C) \\
+A - (B \cup C) 					&& = && (A - B) \cap (A - C) \\
+A - (B \cap C) 					&& = && (A-B) \cup (A-C) \\
+A - (B - C) 						&& = && (A-B) \cup (A \cap C) \\
+(A-B) \cap C 						&& = && (A \cap C) - B && = && A \cap (C-B) \\
+(A-B) \cup C 						&& = && (A \cup C) - (B-C) \\
+A\cup(B\cap C) 					&& = && (A\cup B) \cap (A\cup C) \\
+A\cap(B\cup C) 					&& = && (A\cap B) \cup (A \cap C) \\
+A \subseteq C \and B \subseteq C 		&&\implies && A \cup B \subseteq C \\
+C \subseteq A \and C \subseteq B 		&&\implies && C \subseteq A \cup B \\
+A_k ~\text{countable} && \implies 	&& \prod_{k=1}^n A_k, ~ \union_{k=1}^\infty A_k \quad\text{countable}
+\end{align*}$$
+
 
 ## Preimage Identities
-Injectivity: left cancellation
-Surjectivity: right cancellation
-- $A \subseteq f^{-1}(f(A))$
-	- $A = f^{-1}(f(A)) \iff f$ is injective
-- $f(f^{-1}(A)) \subseteq A$
-	- $f(f^{-1}(A)) = A \iff f$ is surjective
+Summary
+- Injectivity: left cancellation
+- Surjectivity: right cancellation
+- Everything commutes with unions
+- Preimage commutes with everything
+- Image generally only results in an inequality
+
+Preimage Equations
 - $A \subseteq B \implies f(A) \subseteq f(B) \or f^{-1}(A) \subseteq f^{-1}(B)$
-- $f(\union_{i\in I}A_i) = \union_{i\in I} f(A_i)$
-	- $f^{-1}(\union_{i\in I}A_i) = \union_{i\in I} f^{-1}(A_i)$
-- $f(\intersect_{i\in I}A_i) = \intersect_{i\in I} f(A_i)$
-	- $f^{-1}(\intersect_{i\in I}A_i) = \intersect_{i\in I} f^{-1}(A_i)$
-- $f(A) - f(B) \subseteq f(A-B)$
-	- But $f^{-1}(A) - f^{-1}(B)  = f^{-1}(A-B)$
+- $f^{-1}(\union_{i\in I}A_i) = \union_{i\in I} f^{-1}(A_i)$
+	- Also holds for $f(\union_{i\in I}A_i) = \union_{i\in I} f(A_i)$
+- $f^{-1}(\intersect_{i\in I}A_i) = \intersect_{i\in I} f^{-1}(A_i)$
+	- Also holds for $f(\intersect_{i\in I}A_i) = \intersect_{i\in I} f(A_i)$
+- $f^{-1}(A) - f^{-1}(B)  = f^{-1}(A-B)$
+	- BUT $f(A) - f(B) \subseteq f(A-B)$
+- For $X\subset A, Y \subset B$:
+	- $(\restrictionof{f}{X})^{-1} = X \intersect f^{-1}(Y)$
+	- $(f\circ f^{-1})(Y) = Y \intersect f(A)$
+- Summary: preimage commutes with:
+	- Union
+	- Intersection
+	- Complements
+	- Difference
+	- Symmetric Difference
+
+Image Equations
+- $A \subset B \implies f(A) \subset f(B)$
+- $f(\union A_i) = \union f(A_i)$
+- $f(\intersect A_i) \subset \intersect f(A_i)$
+- $f(A-B) \supset f(A) - f(B)$
+- $f(A^c) = \im(f) - f(A)$
+
+Equations Involving Both
+- $A \subseteq f^{-1}(f(A))$
+	- Equal $\iff f$ is injective
+- $f(f^{-1}(A)) \subseteq A$
+	- Equal $\iff f$ is surjective
 
 ## Pascal's Triangle:
 
@@ -176,7 +203,7 @@ $e \approx 2.71828$
 $\sqrt{2} \approx 1.4142135$
 
 ## Primes Under 100:
-$$\begin{align}
+$$\begin{align*}
 & 2, 3, 5, 7 , \\
 & 11, 13, 17, 19, \\
 & 23,	29,	\\
@@ -188,7 +215,7 @@ $$\begin{align}
 & 83,	89, \\
 & 97,	\\
 & 101
-\end{align}$$
+\end{align*}$$
 
 ## Checking Divisibility by Small Numbers
 Note that $n\mod 10^k$ yields the last $k$ digits.
@@ -211,6 +238,8 @@ $p$  |  $p \mid n \iff$
 
 ## Hyperbolic Functions
 $$
+\cosh(x) = \frac{1}{2}(e^x + e^{-x}) \\
+\sinh(x) = \frac{1}{2}(e^x - e^{-x}) \\
 \cos(iz) = \cosh z \\
 \cosh(iz) = \cos z \\
 \sin(iz) = \sinh z \\
