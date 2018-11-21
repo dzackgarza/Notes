@@ -258,8 +258,8 @@ $p$ | $p \mid n \iff$ | Mnemonic
 7   | RPP, $k=2$ | Recursive prime procedure
 8   | $n \equiv 8k \mod 10^3$ |
 9   | $\sum d_i \equiv 0 \mod 9$ | 9 divides the sum of digits (apply recursively)
-10  | $n \equiv 0 \mod 10$ |
-11  | |
+10  | $n \equiv 0 \mod 10$ | Last digit is 0
+11  | RPP, $k=4$|
 13  | |
 17  | |
 23  | |
