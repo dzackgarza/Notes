@@ -237,14 +237,14 @@ $p$  |  $p \mid n \iff$
 27  |
 
 ## Hyperbolic Functions
-$$
-\cosh(x) = \frac{1}{2}(e^x + e^{-x}) \\
-\sinh(x) = \frac{1}{2}(e^x - e^{-x}) \\
-\cos(iz) = \cosh z \\
-\cosh(iz) = \cos z \\
-\sin(iz) = \sinh z \\
-\sinh(iz) = \sin z \\
-\sinh^{-1}x = ? = \ln(x + \sqrt{x^2+1}) \\
-\cosh^{-1}x = ? = \ln(x + \sqrt{x^2-1}) \\
-\tanh^{-1}x = \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
-$$
+$$\begin{align*}
+\cosh(x)    &= \frac{1}{2}(e^x + e^{-x}) \\
+\sinh(x)    &= \frac{1}{2}(e^x - e^{-x}) \\
+\cos(iz)    &= \cosh z \\
+\cosh(iz)   &= \cos z \\
+\sin(iz)    &= \sinh z \\
+\sinh(iz)   &= \sin z \\
+\sinh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2+1}) \\
+\cosh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2-1}) \\
+\tanh^{-1}x &= \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
+\end{align*}$$
