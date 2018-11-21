@@ -84,7 +84,7 @@ $$\begin{align*}
 &\sum_{k=0}^{\infty } \frac{x ^ { 2 k + 1 }}{2 k + 1 }                                                                                     &=  \operatorname { arctanh } x  & \\
 &\sum_{k=1}^\infty \frac{1}{k}                                                                                                             &=  \infty &\\
 &\sum_{k=1}^\infty (-1)^k \frac{1}{k}                                                                                                      &=  \ln (2) & \\
-&\sum_{k=1}^N \frac{1}{k}                                                                                                                  &=  \approx \ln(N) + \gamma + \frac{1}{2N} & \\
+&\sum_{k=1}^N \frac{1}{k}                                                                                                                  &= _\approx \ln(N) + \gamma + \frac{1}{2N} & \\
 &\sum_{k=1}^{\infty } \frac{1 } {k ^ { 2 } }                                                                                               &=  \frac{\pi ^ { 2 }}{6 }& \\
 \end{align*}
 $$
