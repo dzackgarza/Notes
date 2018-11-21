@@ -245,8 +245,8 @@ Note that $n\mod 10^k$ yields the last $k$ digits. Let $d_i$ denote the $i\dash$
 
 The recursive prime procedure (RPP): for each prime $p$, there exists a $k$ such recursive application of this procedure to $n$ yields the
 same remainder mod $p$ as $n$ itself.
-- Write $n_0 = x + y$ where $y = 0 \ldots 9$ and $x=10k$
-- Let $n_1 = x - ky$, repeat until $n_i < 10$.
+- Write $n_0 = 10x + y$ where $y = 0 \ldots 9$
+- Let $n_1 = x + ky$, repeat until $n_i < 10$.
 
 $p$ | $p \mid n \iff$ | Mnemonic
 --  | --  | --
@@ -255,13 +255,14 @@ $p$ | $p \mid n \iff$ | Mnemonic
 4   | $n \equiv 4k \mod 10^2$ | Last two digits are divisible by 4
 5   | $n \equiv 0, 5 \mod 10$ | Last digit is 0 or 5
 6   | $n \equiv 0 \mod 2  \text{ and } n \equiv 0 \mod 3$ | Reduce to 2, 3 case
-7   | RPP, $k=2$ | Recursive prime procedure
+7   | RPP, $k=-2$ | Recursive prime procedure, $10x+y \equiv 10(x-2y) \mod 7$
 8   | $n \equiv 8k \mod 10^3$ |
 9   | $\sum d_i \equiv 0 \mod 9$ | 9 divides the sum of digits (apply recursively)
 10  | $n \equiv 0 \mod 10$ | Last digit is 0
-11  | RPP, $k=4$|
-13  | |
+11  | $\sum (-1)^i d_i \equiv 0 \mod 11$ or  | 11 divides alternating sum
+13  | RPP, $k=4$ | $40 \equiv 1 \mod 13 \implies 10x + y \equiv 10(x + 4y) \mod 13$
 17  | |
+19  | RPP, $k=2$ | $20 \equiv 1 \mod 19 \implies 10x + y \equiv 10(x + 2y) \mod 19$
 23  | |
 27  | |
 
