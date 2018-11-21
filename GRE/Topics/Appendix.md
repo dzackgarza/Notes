@@ -263,8 +263,6 @@ $p$ | $p \mid n \iff$ | Mnemonic
 13  | RPP, $k=4$  | $40 \equiv 1 \mod 13 \implies 10x + y \equiv 10(x + 4y) \mod 13$
 17  | RPP, $k=-5$ | $-50 \equiv 1 \mod 17 \implies 10x + y \equiv 10(x - 5y) \mod 19$
 19  | RPP, $k=2$  | $20 \equiv 1 \mod 19 \implies 10x + y \equiv 10(x + 2y) \mod 19$
-23  | |
-27  | |
 
 
 ## Hyperbolic Functions
