@@ -103,10 +103,10 @@ Given $R(x) = \frac{p(x)}{q(x)}$, factor $q(x)$ into $\prod q_i(x)$.
 
 ## Properties of Norms
 $$\begin{align*}
-\norm{t\mathbf x} &= \abs{t} \norm{\mathbf x} \\
-\abs{\inner{\mathbf x}{\mathbf y}} &\leq \norm{\mathbf x} \norm{\mathbf y} \\
-\norm{\mathbf x+\mathbf y} &\leq \norm{\mathbf x} + \norm{\mathbf y} \\
-\norm{\mathbf x-\mathbf z} &\leq \norm{\mathbf x-\mathbf y} + \norm{\mathbf y-\mathbf z}
+\norm{t\mathbf x}                  & = \abs{t} \norm{\mathbf x} \\
+\abs{\inner{\mathbf x}{\mathbf y}} & \leq \norm{\mathbf x} \norm{\mathbf y} \\
+\norm{\mathbf x+\mathbf y}         & \leq \norm{\mathbf x} + \norm{\mathbf y} \\
+\norm{\mathbf x-\mathbf z}         & \leq \norm{\mathbf x-\mathbf y} + \norm{\mathbf y-\mathbf z}
 \end{align*}$$
 
 ## Logic Identities
