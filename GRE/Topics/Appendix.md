@@ -13,39 +13,39 @@ $$
 
 ## Big Derivative / Integral Table
 $$
-\begin{align*}  
-\frac{\partial f}{\partial{x}}\Leftarrow && f && \Rightarrow\int f dx   \\
+\begin{align*}
+\frac{\partial f}{\partial{x}}\Leftarrow && f                           && \Rightarrow\int f dx   \\
 \hline \\
-\frac{1}{2\sqrt{x}} && \sqrt{x} && \frac{2}{3}x^{\frac{3}{2}} \\
-nx^{n-1} && x^n, n \neq -1 && \frac{1}{n+1}x^{n+1} \\
--nx^{-(n+1)} && \frac{1}{x^n}, n \neq 1 && -\frac{1}{n-1}x^{-(n-1)} \\
-\frac{1}{x} && \bbox[yellow]{\ln(x)} && x\ln(x) - x \\
-a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
-\cos(x) && \sin(x)  && -\cos(x) \\
--\csc(x)\cot(x) && \csc(x)  && \ln\abs{\csc(x)-\cot(x)} \\
--\sin(x) && \cos(x)  && \sin(x) \\
-\sec(x)\tan(x) && \sec(x) && \ln\abs{\sec(x) + \tan(x)} \\
-\sec^2(x) && \tan(x) &&  \ln\abs{\frac{1}{\cos x}} \\
--\csc^2(x) && \cot(x) && \ln \abs{\sin x} \\
-\frac{1}{1+x^2} && \bbox[yellow]{\tan^{-1}(x)}  && x\tan^{-1}x - \frac{1}{2}\ln(1+x^2) \\
-\frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\sin^{-1}(x)} && x\sin^{-1}x+ \sqrt{1-x^2} \\
--\frac{1}{\sqrt{1-x^2}} && \bbox[yellow]{\cos^{-1}(x)} && x\cos^{-1}x -\sqrt{1-x^2} \\
-\frac{1}{\sqrt{x^2+a}} && \ln\abs{x+\sqrt{x^2+a}} && \cdot\\
-2\sin x\cos x && \sin^2(x) && \frac{1}{2}(x - \sin x \cos x) \\
--2\sin x\cos x && \cos^2(x) && \frac{1}{2}(x + \sin x \cos x) \\
-2\csc^2(x)\cot(x) && \csc^2(x)  && -\cot(x) \\
-2\sec^2(x)\tan(x) && \sec^2(x)  && \tan(x) \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-? && ? && ? \\
-(ax+1)e^{ax} && xe^{ax} && \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\
-? && e^{ax}\sin(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\
-? && e^{ax}\cos(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
-? && ? && ? \\
+\frac{1}{2\sqrt{x}}                      && \sqrt{x}                    && \frac{2}{3}x^{\frac{3}{2}} \\
+nx^{n-1}                                 && x^n, n \neq -1              && \frac{1}{n+1}x^{n+1} \\
+-nx^{-(n+1)}                             && \frac{1}{x^n}, n \neq 1     && -\frac{1}{n-1}x^{-(n-1)} \\
+\frac{1}{x}                              && \bbox[yellow]{\ln(x)}       && x\ln(x) - x \\
+a^x\ln(a)                                && a^x                         && \frac{a^x}{\ln a} \\
+\cos(x)                                  && \sin(x)                     && -\cos(x) \\
+-\csc(x)\cot(x)                          && \csc(x)                     && \ln\abs{\csc(x)-\cot(x)} \\
+-\sin(x)                                 && \cos(x)                     && \sin(x) \\
+\sec(x)\tan(x)                           && \sec(x)                     && \ln\abs{\sec(x) + \tan(x)} \\
+\sec^2(x)                                && \tan(x)                     && \ln\abs{\frac{1}{\cos x}} \\
+-\csc^2(x)                               && \cot(x)                     && \ln \abs{\sin x} \\
+\frac{1}{1+x^2}                          && \bbox[yellow]{\tan^{-1}(x)} && x\tan^{-1}x - \frac{1}{2}\ln(1+x^2) \\
+\frac{1}{\sqrt{1-x^2}}                   && \bbox[yellow]{\sin^{-1}(x)} && x\sin^{-1}x+ \sqrt{1-x^2} \\
+-\frac{1}{\sqrt{1-x^2}}                  && \bbox[yellow]{\cos^{-1}(x)} && x\cos^{-1}x -\sqrt{1-x^2} \\
+\frac{1}{\sqrt{x^2+a}}                   && \ln\abs{x+\sqrt{x^2+a}}     && \cdot\\
+2\sin x\cos x                            && \sin^2(x)                   && \frac{1}{2}(x - \sin x \cos x) \\
+-2\sin x\cos x                           && \cos^2(x)                   && \frac{1}{2}(x + \sin x \cos x) \\
+2\csc^2(x)\cot(x)                        && \csc^2(x)                   && -\cot(x) \\
+2\sec^2(x)\tan(x)                        && \sec^2(x)                   && \tan(x) \\
+?                                        && ?                           && ? \\
+?                                        && ?                           && ? \\
+?                                        && ?                           && ? \\
+?                                        && ?                           && ? \\
+?                                        && ?                           && ? \\
+?                                        && ?                           && ? \\
+?                                        && ?                           && ? \\
+(ax+1)e^{ax}                             && xe^{ax}                     && \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\
+?                                        && e^{ax}\sin(bx)              && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\
+?                                        && e^{ax}\cos(bx)              && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
+?                                        && ?                           && ? \\
 \end{align*}
 $$
 
@@ -62,9 +62,9 @@ Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
 		&\sum_{k=0}^{N} x^k &= \frac{1-x^{N+1}}{1-x} &\\
 		&\sum_{k=1}^\infty x^k &= \frac{1}{1-x}& \quad\text{ for } \abs{x} < 1 \\
 		&\sum _ { k = 1 } ^ { \infty } k x ^ { k - 1 } &= \frac { 1 } { ( 1 - x ) ^ { 2 } }& \quad \text { for } | x | < 1 \\
-		&\sum _ { k = 2 } ^ { \infty } k ( k - 1 ) x ^ { k - 2 } &= \frac { 2 } { ( 1 - x ) ^ { 3 } } & \quad \text { for } | x | < 1  \\  
+		&\sum _ { k = 2 } ^ { \infty } k ( k - 1 ) x ^ { k - 2 } &= \frac { 2 } { ( 1 - x ) ^ { 3 } } & \quad \text { for } | x | < 1  \\
 	  &\sum _ { k = 3 } ^ { \infty } k ( k - 1 ) ( k - 2 ) x ^ { k - 3 } &= \frac { 6 } { ( 1 - x ) ^ { 4 } } & \quad \text { for } | x | < 1   \\
-		&\sum_{k=1}^\infty {n\choose k} x^k y^{n-k} &= (x+y)^n& \\   
+		&\sum_{k=1}^\infty {n\choose k} x^k y^{n-k} &= (x+y)^n& \\
 		&\sum _ { k = 1 } ^ { \infty } \frac { x ^ { k } } { k } &= -\log ( 1 - x )& \\
 	  &\sum _ { k = 0 } ^ { \infty } \frac { x ^ { k } } { k ! } &= e^x & \\
 		&\sum _ { n = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { ( 2 n + 1 ) ! } x ^ { 2 k + 1 } \quad = x - \frac { x ^ { 3 } } { 3 ! } + \frac { x ^ { 5 } } { 5 ! } &= \sin(x) & \\
@@ -172,7 +172,7 @@ Equations Involving Both
 
 ## Pascal's Triangle:
 
-$n$  | Sequence  
+$n$  | Sequence
 --|--
 3  | $1,2,1$
 4  | $1,3,3,1$
@@ -188,7 +188,7 @@ Note that $n\choose i$ is given by the entry in the $n\dash$th row, $i\dash$ col
 
 $n$  |  $n!$
 --|--
-2   | $2$  
+2   | $2$
 3   | $6$
 4   | $24$
 5   | $120$
@@ -231,10 +231,10 @@ $p$  |  $p \mid n \iff$
 9  |  $\sum \text{digits} = 9k$
 10  | $n \mod 10 = 0$
 11  |
-13  |  
-17  |  
-23  |  
-27  |  
+13  |
+17  |
+23  |
+27  |
 
 ## Hyperbolic Functions
 $$
