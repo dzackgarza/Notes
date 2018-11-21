@@ -255,7 +255,7 @@ $p$ | $p \mid n \iff$ | Mnemonic
 4   | $n \equiv 4k \mod 10^2$ | Last two digits are divisible by 4
 5   | $n \equiv 0, 5 \mod 10$ | Last digit is 0 or 5
 6   | $n \equiv 0 \mod 2  \text{ and } n \equiv 0 \mod 3$ | Reduce to 2, 3 case
-7   | RPP, $k=-2$ | Recursive prime procedure, $10x+y \equiv 10(x-2y) \mod 7$
+7   | RPP, $k=-2$ | $-20 \equiv 1 \mod 7 \implies 10x+y \equiv 10(x-2y) \mod 7$
 8   | $n \equiv 8k \mod 10^3$ |
 9   | $\sum d_i \equiv 0 \mod 9$ | 9 divides the sum of digits (apply recursively)
 10  | $n \equiv 0 \mod 10$ | Last digit is 0
