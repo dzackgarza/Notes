@@ -62,6 +62,32 @@ $$\begin{align*}
 
 - Stirling's Approximation: $k! \sim k^\frac{k+1}{2}e^{-k} \sqrt{2\pi} $
 
+- Markov Inequality: $P(X \geq a) \leq \frac 1 a E[X]$
+	- One-sided Markov: $P(X \in N_\varepsilon(\mu)) = 2\frac{\sigma^2}{\sigma^2 + a^2}$
+
+- Chebyshev's Inequality: $P(\abs{X - \mu} \geq a) \leq \left( \frac \sigma k \right)^2$
+	- Apply Markov to the variable $(X-\mu)^2$ and $a=k^2$
+
+- Central Limit Theorem: for $X_i$ i.i.d.,
+$$
+\lim_n \frac{\sum_{i=1}^n X_i - n\mu}{\sigma \sqrt n} \sim N(0, 1)
+$$
+
+- Strong Law of Large Numbers:
+$$
+P(\frac{1}{n} \sum X_i \rightarrow \mu) = 1
+$$
+
+- Chernoff Bounds: for all $t > 0$,
+$$
+P(X \in N_\varepsilon(a)^c) \leq 2 e^{-at}M_X(t) \\
+$$
+
+- Jensen Inequality: $E[f(X)] \geq f(E[X])$
+
+- Entropy: $H(X) = - \sum p_i \ln p_i$
+
+
 ## Theory and Background
 Axioms of Probability: given a sample space $\Sigma$ with events $S$,
 1. $\mu(\Sigma) = 1$
@@ -208,13 +234,39 @@ $>3$  |  $0.99$
 - For any function $f:X \to \RR$, there is a lower bound: $\max_{x\in X}f(x) \geq E[f(x)]$
 - Moment Generating Functions: $M(t) = E[e^{Xt}]$
 	- Then $M^{(n)}(0)$ is the $n\dash$th moment, i.e. $M'(0) = E[X], M''(0) = E[X^2]$, etc.
+	- $M_{X+Y}(t) = M_X(t)M_Y(t)$ (if independent)
+	- $M_{aX + b}(t) = e^{bt} M_X(at)$
+	- $f_X = \mathcal{F}^{-1}(M_X(it))$, denoting the inverse Fourier transform,
 
 Table: let $q = 1-p$
 $$\begin{array}{c|ccc}
 \text{Distribution} &  f(x) && \mu & \sigma^2 & M(t) \\
 \hline \\
-B(n, p) & {n\choose x}p^x q^{n-x} && np & npq & (pe^t + q)^n\\
-P(\lambda) & \frac{\lambda^x}{x!}e^{-\lambda} && \lambda & \lambda & e^{\lambda(e^t-1)}\\
-G(p) & q^{x-1}p && \frac{1}{p} & \frac{q}{p^2} & \frac{pe^t}{1-qe^t}\\
-B^-(r, p) & {n-1 \choose r-1}p^rq^{n-r} && \frac{r}{p} & \frac{rq}{p^2} & \left(\frac{pe^t}{1-qe^t}\right)^r 
+B(n, p) & {n\choose x}p^x q^{n-x} && np & npq & (pe^t + q)^n
+\\
+P(\lambda) & \frac{\lambda^x}{x!}e^{-\lambda} && \lambda & \lambda & e^{\lambda(e^t-1)}
+\\
+G(p) & q^{x-1}p && \frac{1}{p} & \frac{q}{p^2} & \frac{pe^t}{1-qe^t}
+\\
+B^-(r, p) & {n-1 \choose r-1}p^rq^{n-r} && \frac{r}{p} & \frac{rq}{p^2} & \left(\frac{pe^t}{1-qe^t}\right)^r
+\\
+U(a, b) & \indicator{a\leq x\leq b}\frac 1 {b-a} && \frac{1}{2}(a+b) & \frac{1}{12}(b-a)^2 & \frac{e^{tb} - e^{ta}}{t(b-a)}
+\\
+Exp(\lambda) & \indicator{0 \leq x}\lambda e^{-\lambda x} && \frac 1 \lambda & \frac 1 {\lambda^2} & \frac \lambda {\lambda - t}
+\\
+\Gamma(s, \lambda) & \indicator{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} && \frac s \lambda & \frac s {\lambda^2}  & \left( \frac{\lambda}{\lambda - t} \right)^s \\
+N(\mu, \sigma^2) & \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}} && \mu & \sigma^2 & e^{\mu t + \frac{1}{2}\sigma^2 t^2}
 \end{array}$$
+
+
+- Why you need the Stieltjes Integral: let $X \sim B(n, \frac 1 2), Y \sim U(0, 1),$ and
+$$
+Z = \cases{
+	X, & $X = 1$ \\
+	Y, & else
+}
+$$
+then $\abs{Z} = \abs{\RR}$ so $Z$ is not discrete, but $P(X = 1) = \frac 1 2 \neq 0$ so $Z$ is not continuous. Definition:
+$$
+\int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)
+$$
