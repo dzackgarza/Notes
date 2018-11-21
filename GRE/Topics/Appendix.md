@@ -51,34 +51,43 @@ $$
 
 ## Useful Series and Sequences
 Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
-- Taylor Series: $$ f ( x ) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } \left( x _ { 0 } \right) } { n ! } \left( x - x _ { 0 } \right) ^ { n } $$
+- Taylor Series:
+$$
+f ( x ) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } \left( x _ { 0 } \right) } { n ! } \left( x - x _ { 0 } \right) ^ { n }
+$$
+
 - Cauchy Product:
-	$$
-	\left( \sum_{k=0}^\infty a_k x^k \right)\left( \sum_{k=0}^\infty b_i x^n \right) = \sum_{k=0}^\infty \left( \sum_{i=0}^k a_{n} b_{n} \right)x^k
-	$$
-- Differentiation: $$\frac{\partial}{\partial x} \sum_{k=i}^\infty a_kx^k = \sum_{k=i+1}^\infty k\,a_k x^{k-1}$$
+$$
+\left( \sum_{k=0}^\infty a_k x^k \right)\left( \sum_{k=0}^\infty b_i x^n \right) = \sum_{k=0}^\infty \left( \sum_{i=0}^k a_{n} b_{n} \right)x^k
+$$
+
+- Differentiation:
+$$
+\frac{\partial}{\partial x} \sum_{k=i}^\infty a_kx^k = \sum_{k=i+1}^\infty k\,a_k x^{k-1}
+$$
+
 - Common Series
-		$$\begin{align*}
-		&\sum_{k=0}^{N} x^k &= \frac{1-x^{N+1}}{1-x} &\\
-		&\sum_{k=1}^\infty x^k &= \frac{1}{1-x}& \quad\text{ for } \abs{x} < 1 \\
-		&\sum _ { k = 1 } ^ { \infty } k x ^ { k - 1 } &= \frac { 1 } { ( 1 - x ) ^ { 2 } }& \quad \text { for } | x | < 1 \\
-		&\sum _ { k = 2 } ^ { \infty } k ( k - 1 ) x ^ { k - 2 } &= \frac { 2 } { ( 1 - x ) ^ { 3 } } & \quad \text { for } | x | < 1  \\
-	  &\sum _ { k = 3 } ^ { \infty } k ( k - 1 ) ( k - 2 ) x ^ { k - 3 } &= \frac { 6 } { ( 1 - x ) ^ { 4 } } & \quad \text { for } | x | < 1   \\
-		&\sum_{k=1}^\infty {n\choose k} x^k y^{n-k} &= (x+y)^n& \\
-		&\sum _ { k = 1 } ^ { \infty } \frac { x ^ { k } } { k } &= -\log ( 1 - x )& \\
-	  &\sum _ { k = 0 } ^ { \infty } \frac { x ^ { k } } { k ! } &= e^x & \\
-		&\sum _ { n = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { ( 2 n + 1 ) ! } x ^ { 2 k + 1 } \quad = x - \frac { x ^ { 3 } } { 3 ! } + \frac { x ^ { 5 } } { 5 ! } &= \sin(x) & \\
-		&\sum _ { k = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { ( 2 n ) ! } x ^ { 2 k } \quad = 1 - \frac { x ^ { 2 } } { 2 ! } + \frac { x ^ { 4 } } { 4 ! } &= \cos(x)& \\
-		&\sum _ { k = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { 2 n + 1 } x ^ { 2 k + 1 } \quad = x - \frac { x ^ { 3 } } { 3 } + \frac { x ^ { 5 } } { 5 } &= \arctan(x) & \\
-		&\sum _ { k = 0 } ^ { \infty } \frac { 1 } { ( 2 k + 1 ) ! }x ^ { 2 n + 1 } \quad = x + \frac { x ^ { 3 } } { 3 ! } + \frac { x ^ { 5 } } { 5 ! } + \cdots &= \sinh(x) & \\
-		&\sum _ { k = 0 } ^ { \infty } \frac { 1 } { ( 2 k ) ! }x ^ { 2 k } \quad = 1 + \frac { x ^ { 2 } } { 2 ! } + \frac { x ^ { 4 } } { 4 ! } + \cdots & = \cosh(x) & \\
-		&\sum _ { k = 0 } ^ { \infty } \frac { x ^ { 2 k + 1 } } { 2 k + 1 } &= \operatorname { arctanh } x  & \\
-		&\sum_{k=1}^\infty \frac{1}{k} &= \infty &\\
-		&\sum_{k=1}^\infty (-1)^k \frac{1}{k} &= \ln (2) & \\
-		&\sum_{k=1}^N \frac{1}{k} &\approx \ln(N) + \gamma + \frac{1}{2N} & \\
-		&\sum _ { k = 1 } ^ { \infty } \frac { 1 } { k ^ { 2 } } &= \frac { \pi ^ { 2 } } { 6 }& \\
-		\end{align*}
-		$$
+$$\begin{align*}
+&\sum_{k=0}^{N} x^k                                                                                                                                                  &= \frac{1-x^{N+1}}{1-x} &\\
+&\sum_{k=1}^\infty x^k                                                                                                                                               &= \frac{1}{1-x}& \quad\text{ for } \abs{x} < 1 \\
+&\sum _ { k = 1 } ^ { \infty } k x ^ { k - 1 }                                                                                                                       &= \frac { 1 } { ( 1 - x ) ^ { 2 } }& \quad \text { for } | x | < 1 \\
+&\sum _ { k = 2 } ^ { \infty } k ( k - 1 ) x ^ { k - 2 }                                                                                                             &= \frac { 2 } { ( 1 - x ) ^ { 3 } } & \quad \text { for } | x | < 1  \\
+&\sum _ { k = 3 } ^ { \infty } k ( k - 1 ) ( k - 2 ) x ^ { k - 3 }                                                                                                   &= \frac { 6 } { ( 1 - x ) ^ { 4 } } & \quad \text { for } | x | < 1   \\
+&\sum_{k=1}^\infty {n\choose k} x^k y^{n-k}                                                                                                                          &= (x+y)^n& \\
+&\sum _ { k = 1 } ^ { \infty } \frac { x ^ { k } } { k }                                                                                                             &= -\log ( 1 - x )& \\
+&\sum _ { k = 0 } ^ { \infty } \frac { x ^ { k } } { k ! }                                                                                                           &= e^x & \\
+&\sum _ { n = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { ( 2 n + 1 ) ! } x ^ { 2 k + 1 } \quad = x - \frac { x ^ { 3 } } { 3 ! } + \frac { x ^ { 5 } } { 5 ! }     &= \sin(x) & \\
+&\sum _ { k = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { ( 2 n ) ! } x ^ { 2 k } \quad = 1 - \frac { x ^ { 2 } } { 2 ! } + \frac { x ^ { 4 } } { 4 ! }             &= \cos(x)& \\
+&\sum _ { k = 0 } ^ { \infty } \frac { ( - 1 ) ^ { k } } { 2 n + 1 } x ^ { 2 k + 1 } \quad = x - \frac { x ^ { 3 } } { 3 } + \frac { x ^ { 5 } } { 5 }               &= \arctan(x) & \\
+&\sum _ { k = 0 } ^ { \infty } \frac { 1 } { ( 2 k + 1 ) ! }x ^ { 2 n + 1 } \quad = x + \frac { x ^ { 3 } } { 3 ! } + \frac { x ^ { 5 } } { 5 ! } + \cdots           &= \sinh(x) & \\
+&\sum _ { k = 0 } ^ { \infty } \frac { 1 } { ( 2 k ) ! }x ^ { 2 k } \quad = 1 + \frac { x ^ { 2 } } { 2 ! } + \frac { x ^ { 4 } } { 4 ! } + \cdots & = \cosh(x) & \\
+&\sum _ { k = 0 } ^ { \infty } \frac { x ^ { 2 k + 1 } } { 2 k + 1 }                                                                                                 &= \operatorname { arctanh } x  & \\
+&\sum_{k=1}^\infty \frac{1}{k}                                                                                                                                       &= \infty &\\
+&\sum_{k=1}^\infty (-1)^k \frac{1}{k}                                                                                                                                &= \ln (2) & \\
+&\sum_{k=1}^N \frac{1}{k} &\approx \ln(N) + \gamma + \frac{1}{2N} & \\
+&\sum _ { k = 1 } ^ { \infty } \frac { 1 } { k ^ { 2 } }                                                                                                             &= \frac { \pi ^ { 2 } } { 6 }& \\
+\end{align*}
+$$
 
 
 ## Partial Fraction Decomposition
