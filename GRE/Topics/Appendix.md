@@ -51,6 +51,7 @@ $$
 
 ## Useful Series and Sequences
 Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
+
 - Taylor Series:
 $$
 f ( x ) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } \left( x _ { 0 } \right) } { n ! } \left( x - x _ { 0 } \right) ^ { n }
@@ -92,13 +93,26 @@ $$
 
 ## Partial Fraction Decomposition
 Given $R(x) = \frac{p(x)}{q(x)}$, factor $q(x)$ into $\prod q_i(x)$.
-- Linear factors of the form $q_i(x) = (ax+b)^n$ contribute $$r_i(x) = \sum_{k=1}^n \frac{A_k}{(ax+b)^k} = \frac{A_1}{ax+b} + \frac{A_2}{(ax+b)^2} + \cdots$$
-- Irreducible quadratics of the form $q_i(x) = (ax^2+bx+c)^n$ contribute $$r_i(x) = \sum_{k=1}^n \frac{A_k x + B_k}{(ax^2+bx+c)^k} = \frac{A_1x+B_1}{ax^2+bx+c} + \frac{A_2x+B_2}{(ax^2+bx+c)^2} + \cdots$$
+
+- Linear factors of the form $q_i(x) = (ax+b)^n$ contribute
+$$
+r_i(x) = \sum_{k=1}^n \frac{A_k}{(ax+b)^k} = \frac{A_1}{ax+b} + \frac{A_2}{(ax+b)^2} + \cdots
+$$
+
+- Irreducible quadratics of the form $q_i(x) = (ax^2+bx+c)^n$ contribute
+$$
+r_i(x) = \sum_{k=1}^n \frac{A_k x + B_k}{(ax^2+bx+c)^k} = \frac{A_1x+B_1}{ax^2+bx+c} + \frac{A_2x+B_2}{(ax^2+bx+c)^2} + \cdots
+$$
 	- Note: $ax^2+bx+c$ is irreducible $\iff b^2 < 4ac$
+
 - Write $R(x) = \frac{p(x)}{\prod q_i(x)} = \sum r_i(x)$, then solve for the unknown coefficients $A_k, B_k$.
+
 	- IMPORTANT SHORTCUT: don't try to solve the resulting linear system: for each $q_i(x)$, multiply through by that factor and evaluate at its root to zero out many terms!
+
 	- For linear terms $q_i(x) = (ax+b)^n$, define $P(x) = (ax+b)^nR(x)$; then
-	$$A_{k} =  \frac{1}{(n-k)!}P^{(n-k)}(a), \quad k = 1,2,\cdots n \\ \implies A_n= P(a),~ A_{n-1} = P'(a),~ \cdots,~ A_1 = \frac{1}{(n-1)!}P^{(n-1)}(A)$$
+$$
+A_{k} =  \frac{1}{(n-k)!}P^{(n-k)}(a), \quad k = 1,2,\cdots n \\ \implies A_n= P(a),~ A_{n-1} = P'(a),~ \cdots,~ A_1 = \frac{1}{(n-1)!}P^{(n-1)}(A)
+$$
 	- Note: #todo check, might need to evaluate at $-b/a$ instead, extend to quadratics.
 
 ## Properties of Norms
