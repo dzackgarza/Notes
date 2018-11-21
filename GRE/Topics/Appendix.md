@@ -242,22 +242,29 @@ $$\begin{align*}
 
 ## Checking Divisibility by Small Numbers
 Note that $n\mod 10^k$ yields the last $k$ digits. Let $d_i$ denote the $i\dash$th digit of $n$.
-$p$ | $p \mid n \iff$
---  | --
-2   | $n \equiv 2, 4, 6, 8 \mod 10$
-3   | $\sum d_i \equiv 0 \mod 3$
-4   | $n \equiv 4k \mod 10^2$
-5   | $n \equiv 0, 5 \mod 10$
-6   | $n \equiv 0 \mod 2  \text{ and } n \equiv 0 \mod 3$
-7   | ?
-8   | $n \equiv 8k \mod 10^3$
-9   | $\sum d_i = 9k$
-10  | $n \equiv 0 \mod 10$
-11  |
-13  |
-17  |
-23  |
-27  |
+
+The recursive prime procedure (RPP): for each prime $p$, there exists a $k$ such recursive application of this procedure to $n$ yields the
+same remainder mod $p$ as $n$ itself.
+- Write $n_0 = x + y$ where $y = 0 \ldots 9$ and $x=10k$
+- Let $n_1 = x - ky$, repeat until $n_i < 10$.
+
+$p$ | $p \mid n \iff$ | Mnemonic
+--  | --  | --
+2   | $n \equiv 2, 4, 6, 8 \mod 10$ | Last digit is even
+3   | $\sum d_i \equiv 0 \mod 3$ | 3 divides the sum of digits (apply recursively)
+4   | $n \equiv 4k \mod 10^2$ | Last two digits are divisible by 4
+5   | $n \equiv 0, 5 \mod 10$ | Last digit is 0 or 5
+6   | $n \equiv 0 \mod 2  \text{ and } n \equiv 0 \mod 3$ | Reduce to 2, 3 case
+7   | RPP, $k=2$ | Recursive prime procedure
+8   | $n \equiv 8k \mod 10^3$ |
+9   | $\sum d_i \equiv 0 \mod 9$ | 9 divides the sum of digits (apply recursively)
+10  | $n \equiv 0 \mod 10$ |
+11  | |
+13  | |
+17  | |
+23  | |
+27  | |
+
 
 ## Hyperbolic Functions
 $$\begin{align*}
