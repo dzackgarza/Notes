@@ -219,16 +219,16 @@ $$\begin{align*}
 
 ## Checking Divisibility by Small Numbers
 Note that $n\mod 10^k$ yields the last $k$ digits.
-$p$  |  $p \mid n \iff$
---|--
-2  |  $n \mod 10 = 2,4$
-3  |  $\sum \text{digits} = 3k$
-4  |  $n \mod 10^2 = 4k$
-5  |  $n \mod 5 = 0, 5$
-6  |  $n \mod 2 = n \mod 3 = 0$
-7  |  ?
-8  |  $n \mod 10^3 = 8k$
-9  |  $\sum \text{digits} = 9k$
+$p$ | $p \mid n \iff$
+--  | --
+2   | $n \mod 10 = 2,4$
+3   | $\sum \text{digits} = 3k$
+4   | $n \mod 10^2 = 4k$
+5   | $n \mod 5 = 0, 5$
+6   | $n \mod 2 = n \mod 3 = 0$
+7   | ?
+8   | $n \mod 10^3 = 8k$
+9   | $\sum \text{digits} = 9k$
 10  | $n \mod 10 = 0$
 11  |
 13  |
