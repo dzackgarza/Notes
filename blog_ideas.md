@@ -78,6 +78,7 @@
 - What is the Axiom of Choice?
 - Constructing large cardinals
 - Euclid's proof of the infinitude of primes: $1 + \prod p_i$ is not necessarily prime!!
+- "What every math major should know"
 
 
 
