@@ -22,9 +22,7 @@ Assume that students have a basic knowledge of complex arithmetic.
     $$
     \int_\gamma f(z)~dz = \int_a^b f(\gamma(t)) \gamma'(t) ~dt
     $$
-    
-
-    
+    This is the first and most basic way to compute such an integral.
 
 - Residue
 
