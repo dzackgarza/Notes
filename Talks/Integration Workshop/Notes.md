@@ -86,7 +86,7 @@ Some background definitions:
 
 - The Tools We'll Need:
 
-  - If $\Gamma = \ \gamma_1 + \gamma_2 + \cdots + \gamma_n$, then
+  - For any contour $\Gamma = \sum_{i=1}^n \gamma_i = \gamma_1 + \gamma_2 + \cdots + \gamma_n$, we have
     $$
     \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
     $$
