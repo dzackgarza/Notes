@@ -134,14 +134,14 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
   $$
 
-  - The trick: reduce other problems to computing a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So just rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. 'extract' the nonsingular part for the numerator) and apply this theorem.
+  - The trick: only need to know how to compute a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So just rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. 'extract' the nonsingular part for the numerator) and apply this theorem.
 
 - The Residue Theorem:
   $$
   \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
   $$
   ​	  where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
-    - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right hand side.
+    - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right hand side (e.g. just expand Laurent series about $z_i$)
 
 - The estimation lemma:
   $$
@@ -177,10 +177,12 @@ $$
 $$
 It now only remains to compute the first term, the integral around the closed contour.
 
-We first need examine the singularities that $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. We can generate one easily as $e^{\frac{i\pi}{6}}$ since $e^{i\pi} = -1$, and generate new ones by adding angle multiples of $2k\pi$. This yields 6 unique points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)}$ where $k$ ranges from $0$ to $5$. Taking $R > 1$, three of these will fall inside the contour, as shown here:
+We first need examine the singularities that $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. We can generate one easily as $e^{\frac{i\pi}{6}}$ since $e^{i\pi} = -1$, and generate new ones by adding angle multiples of $2k\pi$. This yields 6 unique points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)}$ where $k$ ranges from $0$ to $5$. 
+
+Taking $R > 1$, three of these will fall inside the contour, as shown here:
 
 ![1545866865661](/home/zack/SparkleShare/github.com/Notes/assets/example1_contour_with_singularities.png)
 
-We can now proceed in one of two ways:
+We can now proceed in one of two ways, both of which will involve a computation at each $\zeta_k$:
 
-- Cauchy's Integral Theorem
+- The Residue Theorem - compute 
