@@ -150,3 +150,4 @@ First, to make sure this technique will go through as desired, we'll want to mak
 
 By design, we've chosen $C_R$ to be easy to work with - in particular, the arc length will just be half of the circumference. Since the latter is $2\pi R$, the former is just $\pi R$.
 
+To compute the supremum, note that we can write any point on $C_R$ as $z=Re^{i\theta}$ where $\theta \in [0, \pi]$, and so $\left\lvert z\right\rvert = \left\lvert R e^{i\theta}\right\rvert$ 
