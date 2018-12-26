@@ -39,7 +39,8 @@ Some background definitions:
 
 - Singularity
 
-  - 
+  - Broadly speaking, a point where the function goes to $\infty$ or fails to be defined. The prototypical example is the point $z=0$ for $f(z) = \frac{1}{z}$. 
+  - We'll primarily be concerned with *poles*, which are 
 
 ## Computing Real Integrals Using Complex Analysis
 
