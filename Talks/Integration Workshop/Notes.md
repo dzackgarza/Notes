@@ -6,7 +6,7 @@
 
 Assumptions: 
 
-Assume that students have a basic knowledge 
+Assume that students have a basic knowledge of complex arithmetic.
 
 - The complex plane
 
