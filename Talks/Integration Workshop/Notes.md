@@ -43,6 +43,10 @@ Some background definitions:
   - We'll primarily be concerned with *poles*, which are relatively mild. These are singularities that can be "multiplied out", i.e. one can find an $n$ such that $a$ is a singularity of $f$, but $a$ is not a singularity of $g(z) = (z-a)^n f(z)$. 
     - A prototypical example is $f(z) = \frac{1}{z^2}$ at $z=0$, where $g(z) = z^2 f(z) = 1$ is no longer singular at zero.
 
+- Residue
+
+  - For any complex function $f$
+
 ## Computing Real Integrals Using Complex Analysis
 
 - Goal: compute something like
