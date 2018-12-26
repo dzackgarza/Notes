@@ -59,10 +59,10 @@ Some background definitions:
   
 
 Conventions:
-$\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contour, potentially comprised of many smaller contours $\gamma_i$. The symbole $\int_\Gamma$ is complex integration along the contour $\Gamma$, while $\oint_\Gamma$ denotes integration along $\Gamma$ when $\Gamma$ is a closed contour (although $\Gamma$ may be suppressed when the contour is understood from context). 
-  
+$\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contour, potentially comprised of many smaller contours $\gamma_i$. The symbol $\int_\Gamma$ is complex integration along the contour $\Gamma$, while $\oint_\Gamma$ denotes integration along $\Gamma$ when $\Gamma$ is a closed contour (although $\Gamma$ may be suppressed when the contour is understood from context). 
 
-  
+
+
 
 ## Computing Real Integrals Using Complex Analysis
 
