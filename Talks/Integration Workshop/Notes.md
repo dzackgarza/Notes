@@ -95,6 +95,12 @@ Some background definitions:
     \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
     $$
 
+  - Cauchy's Integral Formula:
+    $$
+    \frac {}
+    $$
+    
+
   - The Residue Theorem:
   $$
   \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
