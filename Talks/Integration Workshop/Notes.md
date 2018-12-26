@@ -95,9 +95,9 @@ Some background definitions:
     \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
     $$
 
-  - Cauchy's Integral Formula:
+  - Cauchy's Integral Formula: for simplicity, assume $f$ is smooth and holomorphic at 
     $$
-    \frac {2\pi i}{n!} f^{(n)}(z_0) = \oint \frac{f(z)}{(z-z_0)^{n+1}} ~dz
+    \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
     $$
     
 
