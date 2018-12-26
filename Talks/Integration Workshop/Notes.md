@@ -142,8 +142,11 @@ Want to compute the following integral:
 $$
 I = \int_{-\infty}^\infty \frac{1}{x^6+1} ~dx
 $$
-We'll use the semicircle contour $\Gamma_R = L_R + C_R$ from above. We then know that
+We'll use the semicircle contour $\Gamma_R = L_R + C_R$ from above. Letting $f(x) = \frac{1}{x^6+1}$ and thus $f(z) = \frac{1}{z^6+1}$, we then know that
 $$
 \int_{-\infty}^\infty \frac{1}{x^6+1} dx = \lim_{R \to \infty} \left( \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz - \int_{C_R} \frac{1}{z^6+1} ~dz \right)
 $$
-First, to make sure this technique will go through as desired, we'll want to make sure (and show!) that the integral around $C_R$ goes to zero in the limit. This means we'll need two quantities - the length of $C_R$, and the supremum 
+First, to make sure this technique will go through as desired, we'll want to make sure (and show!) that the integral around $C_R$ goes to zero in the limit. This means we'll need two quantities - the length of $C_R$, and the supremum of $f(z)$ along it.
+
+By design, we've chosen $C_R$ to be easy to work with - in particular, the arc length will just be half of the circumference. Since the latter is $2\pi R$, the former is just $\pi R$.
+
