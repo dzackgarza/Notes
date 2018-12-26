@@ -45,14 +45,14 @@
 
 - How to solve:
 
-  - For the first term, we apply the residue theorem
+  - For the first term, we apply the residue theorem (will explain momentarily)
 
   - For the second term, we hope that the integral along this $C_R$ is easier to compute than the integral along $L_R$ (rare), or that the integral along $C_R$ vanishes in the limit (common!)
 
 - The Tools We'll Need:
 
   - The Residue Theorem
-    $$
+  $$
   \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
   $$
   where $S_f$ is the set of singularities of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
