@@ -33,14 +33,23 @@
     $$
     which can of course be rearranged to isolate the quantity we want:
 
-    
+
     $$
     \int_{L_R} f(z)~dz = \oint f(z) ~dz - \int_{C_R}f(z)~dz
     $$
 
+  - We can then take the limit as $R$ goes to infinity to obtain the final expression:
+    $$
+    \int_{-\infty}^\infty f(x) dx = \lim_{R \to \infty} \left( \oint f(z) ~dz - \int_{C_R}f(z)~dz \right)
+    $$
+
+- How to solve:
+
   - For the first term, we apply the residue theorem, which states that 
-    $$
-    \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
-    $$
-    where $S_f$ is the set of singularities of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
-  - 
+
+  $$
+  \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
+  $$
+  where $S_f$ is the set of singularities of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
+
+  - For the second term, we hope that the integral along this $C_R$ is easier to compute than the integral along $L_R$ (rare), or 
