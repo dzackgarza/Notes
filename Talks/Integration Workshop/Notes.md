@@ -14,7 +14,7 @@ Assume that students have a basic knowledge of complex arithmetic.
 
 - Contour
 
-  - A smooth curve in the plane (or many concatenated together). Recall from vector calculus that curves admit parameterizations, so we can write a curve as $\gamma(t): \R \to \C$. A *closed* contour is any contour which 
+  - A smooth curve in the plane (or many concatenated together). Recall from vector calculus that curves admit parameterizations, so we can write a curve as $\gamma(t): \R \to \C$. A *closed* contour is any contour which begins and ends at a single point, enclosing some region of the plane.
 
 - Complex Integral
 
@@ -34,9 +34,12 @@ Assume that students have a basic knowledge of complex arithmetic.
 
   - Note - a fundamental theorem of Calculus holds in $\C$ (much like in $\R$), but the problem is that many basic functions fail to have antiderivatives!
 
-    - Example: $f(z) = \frac 1 z$ does not have an a
+    - Example: $f(z) = \frac 1 z$ does not have the antiderivative $\ln z$ as in real calculus - in fact, it has no antiderivative because there is a closed contour for which $\oint f(z) \neq 0$, namely the unit circle.
+    - So the workhorses from real calculus ($u$ subs, integration by parts, etc) become far less effective.
 
-- Residue
+- Singularity
+
+  - 
 
 ## Computing Real Integrals Using Complex Analysis
 
