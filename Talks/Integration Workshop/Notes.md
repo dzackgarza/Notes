@@ -4,6 +4,10 @@
 
 ## Background and Terminology
 
+Assumptions: 
+
+Assume that students have a basic knowledge 
+
 - The complex plane
 
   - Visualize as the vector space $\R^2$ via the injection $(x,y) \mapsto x + iy$, but there are a variety of other complex structures around (complex multiplication, conjugation, the derivative, etc). Many techniques from vector calculus in the plane will still carry over.
