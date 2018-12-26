@@ -24,7 +24,11 @@ Assume that students have a basic knowledge of complex arithmetic.
     $$
     This is the first and most basic way to compute such an integral. 
 
-  - Note - there are also complex antiderivatives and a fundamental theorem of Calculus (much like on $\R$), but the problem is that many basic functions fail to have antiderivatives!
+- Complex Antiderivative
+
+  - Defined like a potential function in vector calculus, a function $\phi: $
+
+- Note - there are also complex antiderivatives and a fundamental theorem of Calculus (much like on $\R$), but the problem is that many basic functions fail to have antiderivatives!
 
 - Residue
 
