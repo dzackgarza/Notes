@@ -40,12 +40,13 @@ Some background definitions:
 - Singularity
 
   - Broadly speaking, a point where the function goes to $\infty$ or fails to be defined. The prototypical example is the point $z=0$ for $f(z) = \frac{1}{z}$, or more generally $z=a$ for $f(z) = \frac{1}{z-a}$
-  - We'll primarily be concerned with *poles*, which are relatively mild. These are singularities that can be "multiplied out", i.e. one can find an $n$ such that $a$ is a singularity of $f$, but $a$ is not a singularity of $g(z) = (z-a)^n f(z)$. 
+  - We'll primarily be concerned with *poles*, which are relatively mild. These are singularities that can be "multiplied out", i.e. one can find an $n$ such that $a$ is a singularity of $f$, but $z_0$ is not a singularity of $g(z) = (z-z_0)^n f(z)$. 
     - A prototypical example is $f(z) = \frac{1}{z^2}$ at $z=0$, where $g(z) = z^2 f(z) = 1$ is no longer singular at zero.
 
 - Holomorphic
 
-  - Defined in open sets/neighborhoods of points. Actual definition: $f$ is complex differentiable, 
+  - Defined in open sets/neighborhoods $U​$ of points. Actual definition: $f​$ is complex differentiable, but in $\C​$ this is equivalent to *analytic*, i.e. has a convergent power series in only positive powers. Generally means $f​$ does not have singularities in $U​$. 
+  - E.g. A pole is a singularity such that there exists an $n$ where $g(z)=(z-z_0)^nf(z)$ is holomorphic at $z_0$.
 
 - Residue
 
