@@ -126,6 +126,8 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   $$
 
   - Corollary: If (say) $\gamma_1 = -\gamma_2$ , so that two components of the contour traverse the same curve in opposite directions, $\int_{\gamma_1} f(z) ~dz = -\int_{\gamma_2} f(z) ~dz$ and their contributions cancel.
+  - Related fact: if there is a *homotopy* between two contours $\gamma_1, \gamma_2$ that does not pass through any singularities of $f$, then $\int_{\gamma_1} f(z)~dz= \int_{\gamma_2} f(z)~dz$
+  - Big conclusion: integration about any contour $\Gamma$ can be broken up into a sum of integrals around circles enclosing the singularities of $f$.
 
 - Cauchy's Integral Formula: for simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
   $$
