@@ -84,23 +84,23 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
   - Note that we have implicitly identified the original $f: \R \to \R$ with a *new* $f: \C \to \C$ which is given by the same formula. It may be the case that the first $f$ was well-behaved, but the new $f$ has complex singularities - in fact, we are counting on it!
 
-  - Line integrals are not much easier to compute, but complex integrals around *closed contours* are. So pick a closed contour that includes $L_R$ - in this case, we’ll take half-circle of radius $R$ in the upper half plane, $C_R$:
+  - General line/path integrals are not much easier to compute, but complex integrals around *closed contours* are. So pick a closed contour that includes $L_R$ - in this case, we’ll take half-circle of radius $R$ in the upper half plane, $C_R$:
 
     ![1545857433852](/home/zack/SparkleShare/github.com/Notes/assets/circular_contour.png)
-    Note: this is not the only contour that works! 
+    Taking this clockwise, we'll write it as $\Gamma_R = L_R + C_R$ Note: this is not the only contour that works! 
 
   - We can then write
     $$
-    \oint f(z) ~dz = \int_{L_R} f(z)~dz + \int_{C_R}f(z)~dz
+    \oint_{\Gamma_R} f(z) ~dz = \int_{L_R} f(z)~dz + \int_{C_R}f(z)~dz
     $$
     which can of course be rearranged to isolate the quantity we want:
     $$
-    \int_{L_R} f(z)~dz = \oint f(z) ~dz - \int_{C_R}f(z)~dz
+    \int_{L_R} f(z)~dz = \oint_{\Gamma_R} f(z) ~dz - \int_{C_R}f(z)~dz
     $$
 
   - We can then take the limit as $R$ goes to infinity to obtain the final expression:
     $$
-    \int_{-\infty}^\infty f(x) dx = \lim_{R \to \infty} \left( \oint f(z) ~dz - \int_{C_R}f(z)~dz \right)
+    \int_{-\infty}^\infty f(x) dx = \lim_{R \to \infty} \left( \oint_{\Gamma_R} f(z) ~dz - \int_{C_R}f(z)~dz \right)
     $$
 
 - How to solve:
@@ -142,4 +142,8 @@ Want to compute the following integral:
 $$
 I = \int_{-\infty}^\infty \frac{1}{x^6+1} ~dx
 $$
-We'll use the semicircle contour from above, with $C_R$ and $L_R$ defined identically.
+We'll use the semicircle contour $\Gamma_R = L_R + C_R$ from above. We then know that
+$$
+\int_{-\infty}^\infty \frac{1}{x^6+1} dx = \lim_{R \to \infty} \left( \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz - \int_{C_R} \frac{1}{z^6+1} ~dz \right)
+$$
+First, to make sure this technique will go through as desired, we'll want to make sure (and show!) that the integral around $C_R$ goes to zero in the limit. This means we'll need two quantities - the length of $C_R$, and the supremum 
