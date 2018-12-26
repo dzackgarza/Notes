@@ -14,7 +14,7 @@ Assume that students have a basic knowledge of complex arithmetic.
 
 - Contour
 
-  - A smooth curve in the plane (or many concatenated together). Recall from vector calculus that curves admit parameterizations, so we can write a curve as $\gamma(t): \R \to \C$.
+  - A smooth curve in the plane (or many concatenated together). Recall from vector calculus that curves admit parameterizations, so we can write a curve as $\gamma(t): \R \to \C$. A *closed* contour is any contour which 
 
 - Complex Integral
 
@@ -28,11 +28,13 @@ Assume that students have a basic knowledge of complex arithmetic.
 
   - Defined like a potential function in vector calculus, a function $\phi: \C \to \C$ is an antiderivative of $f$ if and only if for all paths $\gamma$ from $z_a$ to $z_b$, we have
     $$
-    \int_\gamma f(z) ~dz = \phi(z_b) - \phi(z_a)
+    \int_\gamma f(z) ~dz = \phi(z_b) - \phi(z_a) \text{ or equivalently for all closed contours, } \oint f(z) ~dz = 0
     $$
     
 
   - Note - a fundamental theorem of Calculus holds in $\C$ (much like in $\R$), but the problem is that many basic functions fail to have antiderivatives!
+
+    - Example: $f(z) = \frac 1 z$ does not have an a
 
 - Residue
 
