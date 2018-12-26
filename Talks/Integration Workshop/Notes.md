@@ -77,14 +77,14 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
 - Summary of approach:
 
-  - Use the fact that $\R \hookrightarrow \C$ as the real line, so this is equivalent to a contour integral along $L_R = \{ x + 0i \mid -R \leq x \leq R\}$. So we’re equivalently computing this line integral: 
+  - Use the fact that $\R \hookrightarrow \C$ as the real line via $x \mapsto x+0i$, so this is equivalent to a contour integral along $L_R = \{ x + 0i \mid -R \leq x \leq R\}$and we’re equivalently computing the integral 
     $$
     \int_{L_R} f(z) ~dz
     $$
 
-  - Note that we’ve implicitly identified the original $f: \R \to \R$ with a *new* $f: \C \to \C$ which is given by the same formula. It may be the case that the first $f$ was well-behaved, but the new $f$ has complex singularities - in fact, we are counting on it!
+  - Note that we have implicitly identified the original $f: \R \to \R$ with a *new* $f: \C \to \C$ which is given by the same formula. It may be the case that the first $f$ was well-behaved, but the new $f$ has complex singularities - in fact, we are counting on it!
 
-  - Line integrals aren’t much easier to compute, but complex integrals around *closed contours* are very easy. So pick a closed contour that includes $L_R$ - in this case, we’ll take half-circle of radius $R$ in the upper half plane, $C_R$:
+  - Line integrals are not much easier to compute, but complex integrals around *closed contours* are. So pick a closed contour that includes $L_R$ - in this case, we’ll take half-circle of radius $R$ in the upper half plane, $C_R$:
 
     ![1545857433852](/home/zack/SparkleShare/github.com/Notes/assets/circular_contour.png)
     Note: this is not the only contour that works! 
@@ -105,7 +105,7 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
 - How to solve:
 
-  - For the first term, we apply the residue theorem (will explain momentarily)
+  - For the first term, we apply the residue theorem or Cauchy's integral formula (will explain momentarily)
   - For the second term, we hope that the integral along this $C_R$ is easier to compute than the integral along $L_R$ (rare), or that the integral along $C_R$ vanishes in the limit (common!)
     - For the latter case, we'll need to prove that a limit goes to zero, so we'll need some bounds/inequalities
 
@@ -121,7 +121,7 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
   $$
 
-  - The trick: reduce other problems to computing a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. 'extract' the nonsingular part for the numerator) and apply this theorem.
+  - The trick: reduce other problems to computing a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So just rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. 'extract' the nonsingular part for the numerator) and apply this theorem.
 
 - The Residue Theorem:
   $$
@@ -136,4 +136,4 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   $$
   where the first term is the length of the curve $\Gamma$ and the second is the maximum value $f$ takes on points along $\Gamma$.
 
-
+# Example 1
