@@ -125,6 +125,8 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
   $$
 
+  - Corollary: If (say) $\gamma_1 = -\gamma_2$ , so that two components of the contour traverse the same curve in opposite directions, $\int_{\gamma_1} f(z) ~dz = -\int_{\gamma_2} f(z) ~dz$ and their contributions cancel.
+
 - Cauchy's Integral Formula: for simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
   $$
   \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
@@ -177,3 +179,6 @@ We first need examine the singularities that $\Gamma_R$ encloses. This amounts t
 
 ![1545866865661](/home/zack/SparkleShare/github.com/Notes/assets/example1_contour_with_singularities.png)
 
+We can now proceed in one of two ways:
+
+- Cauchy's Integral Theorem
