@@ -26,7 +26,7 @@ Assume that students have a basic knowledge of complex arithmetic.
 
 - Complex Antiderivative
 
-  - Defined like a potential function in vector calculus, a function $\phi: $
+  - Defined like a potential function in vector calculus, a function $\phi: \C \to \C$ is an antiderivative of $f$ if and only if for all paths $\gamma$
 
 - Note - there are also complex antiderivatives and a fundamental theorem of Calculus (much like on $\R$), but the problem is that many basic functions fail to have antiderivatives!
 
