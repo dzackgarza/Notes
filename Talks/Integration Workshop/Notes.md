@@ -163,11 +163,11 @@ To compute the supremum, note that we can write any point on $C_R$ as $z=Re^{i\t
 $$
 \left\lvert z^6+1 \right\rvert \geq \left\lvert {\left\lvert z^6\right\rvert - \left\lvert 1 \right\rvert}\right\rvert = \left\lvert R^6 - 1\right\rvert
 $$
-using the reverse triangle inequality. Taking reciprocals reverses the inequality, yielding
+using the reverse triangle inequality. Taking reciprocals reverses the inequality, yielding the upper bound
 $$
 \left\lvert \frac{1}{z^6+1} \right\rvert \leq \left\lvert \frac{1}{R^6-1}\right\rvert
 $$
-and applying the estimation lemma yields
+where applying the estimation lemma and taking the limit yields
 $$
-\left\lvert \frac{1}{z^6+1} \right\rvert \leq \left\lvert \frac{1}{R^6-1}\right\rvert
+\left\lvert \int_{C_R} \frac{1}{z^6+1}~dz \right\rvert  \leq \left\lvert \frac{\pi R}{R^6-1}\right\rvert \to 0
 $$
