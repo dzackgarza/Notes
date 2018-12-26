@@ -173,4 +173,7 @@ $$
 $$
 It now only remains to compute the first term, the integral around the closed contour.
 
-We first need to see how many singularities $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. These are exactly the points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)}$ 
+We first need examine the singularities that $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. We can generate one easily as $e^{\frac{i\pi}{6}}$ since $e^{i\pi} = -1$, and generate new ones by adding angle multiples of $2k\pi$. This yields 6 unique points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)}$ where $k$ ranges from $0$ to $5$. Taking $R > 1$, three of these will fall inside the contour, as shown here:
+
+![1545866865661](/home/zack/SparkleShare/github.com/Notes/assets/example1_contour_with_singularities.png)
+
