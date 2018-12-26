@@ -2,7 +2,7 @@
 
 
 
-## Background and Terminology
+# Background and Terminology
 
 To cover if less than 50% of attendees haven't taken both courses in complex analysis (UCSD 120A/B). Assumptions: Students know some real single variable calculus and vector calculus, and basic complex arithmetic.
 
