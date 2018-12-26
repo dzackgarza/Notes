@@ -43,9 +43,15 @@ Some background definitions:
   - We'll primarily be concerned with *poles*, which are relatively mild. These are singularities that can be "multiplied out", i.e. one can find an $n$ such that $a$ is a singularity of $f$, but $a$ is not a singularity of $g(z) = (z-a)^n f(z)$. 
     - A prototypical example is $f(z) = \frac{1}{z^2}$ at $z=0$, where $g(z) = z^2 f(z) = 1$ is no longer singular at zero.
 
+- Holomorphic
+
+  - If $f$ is defined on an open set
+
 - Residue
 
   - For a complex function $f$ at a point $z_0$, one can compute a Laurent expansion of $f$ at $z_0$ (expand in a power series using powers of $z, z^{-1}$). The residue of $f$ at $z_0$ is then the coefficient of $z^{-1}$ in this expansion.
+
+  
 
 ## Computing Real Integrals Using Complex Analysis
 
@@ -95,7 +101,7 @@ Some background definitions:
     \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
     $$
 
-  - Cauchy's Integral Formula: for simplicity, assume $f$ is smooth and holomorphic at 
+  - Cauchy's Integral Formula: for simplicity, assume $f$ is smooth and holomorphic in a neighborhood of $z_0$, then
     $$
     \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
     $$
