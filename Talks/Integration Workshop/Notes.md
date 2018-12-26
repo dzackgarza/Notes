@@ -44,8 +44,8 @@
 - How to solve:
 
   - For the first term, we apply the residue theorem (will explain momentarily)
-
   - For the second term, we hope that the integral along this $C_R$ is easier to compute than the integral along $L_R$ (rare), or that the integral along $C_R$ vanishes in the limit (common!)
+    - For the latter case, we'll need to prove that a limit goes to zero, so we'll need some bounds/inequalities
 
 - The Tools We'll Need:
 
@@ -55,4 +55,4 @@
   $$
     where $S_f$ is the set of singularities of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
   - Test
-  
+
