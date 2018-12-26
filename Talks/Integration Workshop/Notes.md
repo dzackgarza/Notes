@@ -137,3 +137,9 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   where the first term is the length of the curve $\Gamma$ and the second is the maximum value $f$ takes on points along $\Gamma$.
 
 # Example 1
+
+Want to compute the following integral:
+$$
+I = \int_{-\infty}^\infty \frac{1}{x^6+1} ~dx
+$$
+We'll use the semicircle contour from above, with $C_R$ and $L_R$ defined identically.
