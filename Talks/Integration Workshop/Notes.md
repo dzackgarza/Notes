@@ -27,11 +27,13 @@
     \oint f(z) ~dz = \int_{L_R} f(z)~dz + \int_{C_R}f(z)~dz
     $$
     which can of course be rearranged to isolate the quantity we want:
-    $$
-    
-    $$
 
+    
     $$
     \int_{L_R} f(z)~dz = \oint f(z) ~dz - \int_{C_R}f(z)~dz
     $$
-  - Test
+
+  - For the first term, we apply the residue theorem, which states that 
+    $$
+    \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
+    $$
