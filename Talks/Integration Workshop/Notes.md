@@ -15,9 +15,8 @@
     $$
     \int_{L_R} f(z) ~dz
     $$
-    
 
-  - Note that we’ve implicitly identified the original $f: \R \to \R$ with a **
+  - Note that we’ve implicitly identified the original $f: \R \to \R$ with a *new* $f: \C \to \C$ which is given by the same formula. It may be the case that the first $f$ was well-behaved, but the new $f$ has complex singularities - in fact, we are counting on it!
 
   - Line integrals aren’t much easier to compute, but complex integrals around *closed contours* are very easy. So pick a closed contour that includes $L_R$ - in this case, we’ll take half-circle of radius $R$ in the upper half plane, $C_R$:
 
@@ -27,5 +26,12 @@
     $$
     \oint f(z) ~dz = \int_{L_R} f(z)~dz + \int_{C_R}f(z)~dz
     $$
+    which can of course be rearranged to isolate the quantity we want:
+    $$
+    
+    $$
 
-
+    $$
+    \int_{L_R} f(z)~dz = \oint f(z) ~dz - \int_{C_R}f(z)~dz
+    $$
+  - Test
