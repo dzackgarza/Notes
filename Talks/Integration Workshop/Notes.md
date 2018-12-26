@@ -185,4 +185,14 @@ Taking $R > 1$, three of these will fall inside the contour, as shown here:
 
 We can now proceed in one of two ways, both of which will involve a computation at each $\zeta_k$:
 
-- The Residue Theorem - compute 
+- The Residue Theorem - compute Laurent expansions and look at coefficients of $z^{-1}$ (tricky in general, usually involves some clever manipulations of series)
+- Cauchy's Integral Formula - take derivatives (formulaic)
+
+
+
+### Residue Theorem
+
+Directly applying this theorem, we can write
+$$
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \sum_{i=0}^2 \mathrm{Res}(f, \zeta_i) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, \zeta_i) + \mathrm{Res}(f, \zeta_i)
+$$
