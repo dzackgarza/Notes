@@ -119,6 +119,8 @@ Some background definitions:
   \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
   $$
     where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
+    - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right hand side.
+
   - The estimation lemma:
     $$
     \left\lvert \int_\Gamma f(z) ~dz\right\rvert \leq \left\vert \Gamma\right\vert \sup_{z\in\Gamma}\left\lvert f(z)\right\rvert
