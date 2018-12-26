@@ -86,6 +86,12 @@ Some background definitions:
 
 - The Tools We'll Need:
 
+  - If $\Gamma = \ \gamma_1 + \gamma_2 + \cdots + \gamma_n$, then
+    $$
+    \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
+    $$
+    
+
   - The Residue Theorem
   $$
   \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
