@@ -45,8 +45,9 @@ Some background definitions:
 
 - Holomorphic
 
-  - Defined in open sets/neighborhoods $U​$ of points. Actual definition: $f​$ is complex differentiable, but in $\C​$ this is equivalent to *analytic*, i.e. has a convergent power series in only positive powers. Generally means $f​$ does not have singularities in $U​$. 
+  - Defined in open sets/neighborhoods $U$ of points. Actual definition: $f$ is complex differentiable, but in $\C$ this is equivalent to *analytic*, i.e. has a convergent power series in only positive powers. Generally means $f$ does not have singularities in $U$. 
   - E.g. A pole is a singularity such that there exists an $n$ where $g(z)=(z-z_0)^nf(z)$ is holomorphic at $z_0$.
+  - Most theorems are stated in terms of holomorphic functions.
 
 - Residue
 
@@ -102,7 +103,7 @@ Some background definitions:
     \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
     $$
 
-  - Cauchy's Integral Formula: for simplicity, assume $f$ is smooth and holomorphic in a neighborhood of $z_0$, then
+  - Cauchy's Integral Formula: for simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
     $$
     \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
     $$
