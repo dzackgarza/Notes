@@ -64,6 +64,10 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
 
 
+---
+
+
+
 # Computing Real Integrals Using Complex Analysis
 
 - Goal: compute something like
