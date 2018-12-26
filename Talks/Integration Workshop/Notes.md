@@ -4,7 +4,10 @@
 
 ## Background and Terminology
 
+- The complex plane
+  - Visualize as the vector space $\R^2$ via the injection $(x,y) \mapsto x + iy$, but recalling that there are 
 - Contour
+  - A smooth curve in 
 - Residue
 
 ## Computing Real Integrals Using Complex Analysis
@@ -25,7 +28,8 @@
 
   - Line integrals aren’t much easier to compute, but complex integrals around *closed contours* are very easy. So pick a closed contour that includes $L_R$ - in this case, we’ll take half-circle of radius $R$ in the upper half plane, $C_R$:
 
-  ![1545857433852](/home/zack/SparkleShare/github.com/Notes/assets/circular_contour.png)
+    ![1545857433852](/home/zack/SparkleShare/github.com/Notes/assets/circular_contour.png)
+    Note: this is not the only contour that works! 
 
   - We can then write
     $$
