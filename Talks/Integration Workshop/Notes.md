@@ -4,7 +4,7 @@
 
 ## Background and Terminology
 
-Assumptions: 
+To cover if less than 50% of attendees haven't sAssumptions: 
 
 Assume that students have a basic knowledge of complex arithmetic.
 
