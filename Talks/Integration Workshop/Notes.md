@@ -143,6 +143,8 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   ​	  where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
     - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right hand side (e.g. just expand Laurent series about $z_i$)
 
+  - The Residue Computation Work
+
 - The estimation lemma:
   $$
     \left\lvert \int_\Gamma f(z) ~dz\right\rvert \leq \left\vert \Gamma\right\vert \sup_{z\in\Gamma}\left\lvert f(z)\right\rvert
@@ -177,7 +179,7 @@ $$
 $$
 It now only remains to compute the first term, the integral around the closed contour.
 
-We first need examine the singularities that $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. We can generate one easily as $e^{\frac{i\pi}{6}}$ since $e^{i\pi} = -1$, and generate new ones by adding angle multiples of $2k\pi$. This yields 6 unique points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)}$ where $k$ ranges from $0$ to $5$. 
+We first need examine the singularities that $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. We can generate one easily as $e^{\frac{i\pi}{6}}$ since $e^{i\pi} = -1$, and generate new ones by adding angle multiples of $2k\pi$. This yields 6 unique points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)} = e^{\frac{i\pi}{6}(2k+1)}$ where $k$ ranges from $0$ to $5$. 
 
 Taking $R > 1$, three of these will fall inside the contour, as shown here:
 
@@ -194,5 +196,5 @@ We can now proceed in one of two ways, both of which will involve a computation 
 
 Directly applying this theorem, we can write
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \sum_{i=0}^2 \mathrm{Res}(f, \zeta_i) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, \zeta_i) + \mathrm{Res}(f, \zeta_i)
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, e^{\frac{i\pi}{2}}) + \mathrm{Res}(f, e^{\frac{i 5\pi}{6}})
 $$
