@@ -108,7 +108,7 @@ Some background definitions:
     \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
     $$
 
-    - The trick: reduce other problems to computing a want to compute $\oint f(z)$
+    - The trick: reduce other problems to computing a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute $\oint g(z)$. So rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. 'extract' the nonsingular part for the numerator) and apply this theorem.
 
   - The Residue Theorem:
   $$
