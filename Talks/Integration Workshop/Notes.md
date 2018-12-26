@@ -2,6 +2,11 @@
 
 
 
+## Background and Terminology
+
+- Contour
+- Residue
+
 ## Computing Real Integrals Using Complex Analysis
 
 - Goal: compute something like
@@ -37,3 +42,5 @@
     $$
     \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
     $$
+    where $S_f$ is the set of singularities of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
+  - 
