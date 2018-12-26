@@ -117,7 +117,7 @@ Some background definitions:
     where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
   - The estimation lemma:
     $$
-    \left\Lvert \int_\Gamma f(z) ~dz} \leq \
+    \left\lvert \int_\Gamma f(z) ~dz\right\rvert \leq \
     $$
     
 
