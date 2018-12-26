@@ -45,7 +45,7 @@ Some background definitions:
 
 - Residue
 
-  - For any complex function $f$
+  - For a complex function $f$ at a point $z_0$, one can compute a Laurent expansion of $f$ at $z_0$ (expand in a power series using powers of $z, z^{-1}$). The residue of $f$ at $z_0$ is then the coefficient of $z^{-1}$ in this expansion.
 
 ## Computing Real Integrals Using Complex Analysis
 
