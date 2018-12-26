@@ -5,9 +5,10 @@
 ## Background and Terminology
 
 - The complex plane
-  - Visualize as the vector space $\R^2$ via the injection $(x,y) \mapsto x + iy$, but remember there are a variety of other complex structures around (complex multiplication, conjugation, the derivative, etc). Many techniques from vector calculus in the plane will carry over.
+  - Visualize as the vector space $\R^2$ via the injection $(x,y) \mapsto x + iy$, but there are a variety of other complex structures around (complex multiplication, conjugation, the derivative, etc). Many techniques from vector calculus in the plane will still carry over.
 - Contour
-  - A smooth curve in the plane.
+  - A smooth curve in the plane (or many concatenated together). Recall from vector calculus that curves admit parameterizations, so we can write a curve as $\gamma(t): \R \to \C$.
+- Complex Integral
 - Residue
 
 ## Computing Real Integrals Using Complex Analysis
