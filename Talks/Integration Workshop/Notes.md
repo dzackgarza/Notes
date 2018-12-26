@@ -34,7 +34,6 @@ Some background definitions:
     $$
     \int_\gamma f(z) ~dz = \phi(z_b) - \phi(z_a) \text{ or equivalently for all closed contours, } \oint f(z) ~dz = 0
     $$
-    
 
   - Note - a fundamental theorem of Calculus holds in $\C$ (much like in $\R$), but the problem is that many basic functions fail to have antiderivatives!
 
@@ -56,6 +55,12 @@ Some background definitions:
 - Residue
 
   - For a complex function $f$ at a point $z_0$, one can compute a Laurent expansion of $f$ at $z_0$ (expand in a power series using powers of $z, z^{-1}$). The residue of $f$ at $z_0$ is then the coefficient of $z^{-1}$ in this expansion.
+
+  
+
+Conventions:
+$\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contour, potentially comprised of 
+  
 
   
 
@@ -100,30 +105,31 @@ Some background definitions:
   - For the second term, we hope that the integral along this $C_R$ is easier to compute than the integral along $L_R$ (rare), or that the integral along $C_R$ vanishes in the limit (common!)
     - For the latter case, we'll need to prove that a limit goes to zero, so we'll need some bounds/inequalities
 
-- The Tools We'll Need:
+## The Tools We'll Need:
 
-  - For any contour $\Gamma = \sum_{i=1}^n \gamma_i = \gamma_1 + \gamma_2 + \cdots + \gamma_n$, we have
-    $$
-    \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
-    $$
+- For any contour $\Gamma = \sum_{i=1}^n \gamma_i = \gamma_1 + \gamma_2 + \cdots + \gamma_n$, we have
+  $$
+  \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
+  $$
 
-  - Cauchy's Integral Formula: for simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
-    $$
-    \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
-    $$
+- Cauchy's Integral Formula: for simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
+  $$
+  \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
+  $$
 
-    - The trick: reduce other problems to computing a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. 'extract' the nonsingular part for the numerator) and apply this theorem.
+  - The trick: reduce other problems to computing a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. 'extract' the nonsingular part for the numerator) and apply this theorem.
 
-  - The Residue Theorem:
+- The Residue Theorem:
   $$
   \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
   $$
-    where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
+  ​	  where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
     - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right hand side.
 
-  - The estimation lemma:
-    $$
+- The estimation lemma:
+  $$
     \left\lvert \int_\Gamma f(z) ~dz\right\rvert \leq \left\vert \Gamma\right\vert \sup_{z\in\Gamma}\left\lvert f(z)\right\rvert
-    $$
-    where the first term is the length of the curve $\Gamma$ and the second is the maximum value $f$ takes on points along $\Gamma$.
+  $$
+  where the first term is the length of the curve $\Gamma$ and the second is the maximum value $f$ takes on points along $\Gamma$.
+
 
