@@ -97,7 +97,7 @@ Some background definitions:
 
   - Cauchy's Integral Formula:
     $$
-    \frac {}
+    \frac {2\pi i}{n!} f^{(n)}(z)
     $$
     
 
