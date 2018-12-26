@@ -107,7 +107,8 @@ Some background definitions:
     $$
     \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
     $$
-    
+
+    - The trick: reduce other problems to computing a want to compute $\oint f(z)$
 
   - The Residue Theorem:
   $$
