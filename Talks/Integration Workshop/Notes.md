@@ -90,12 +90,11 @@ Some background definitions:
     $$
     \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
     $$
-    
 
-  - The Residue Theorem
+  - The Residue Theorem:
   $$
   \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
   $$
-    where $S_f$ is the set of singularities of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
+    where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
   - Test
 
