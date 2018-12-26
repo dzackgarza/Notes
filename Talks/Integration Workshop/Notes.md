@@ -171,3 +171,6 @@ where applying the estimation lemma and taking the limit yields
 $$
 \left\lvert \int_{C_R} \frac{1}{z^6+1}~dz \right\rvert  \leq \left\lvert \frac{\pi R}{R^6-1}\right\rvert \to 0
 $$
+It now only remains to compute the first term, the integral around the closed contour.
+
+We first need to see how many singularities $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. These are exactly the points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)}$ 
