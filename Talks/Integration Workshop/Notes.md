@@ -117,7 +117,7 @@ Some background definitions:
     where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
   - The estimation lemma:
     $$
-    \left\lvert \int_\Gamma f(z) ~dz\right\rvert \leq \
+    \left\lvert \int_\Gamma f(z) ~dz\right\rvert \leq \left\vert \Gamma\right\vert \sup_{z\in\Gamma}\left\lvert f(z)\right\rvert
     $$
-    
+    where the first term is the length of the curve $\Gamma$ and the second is the maximum value $f$ takes on points along $\Gamma$.
 
