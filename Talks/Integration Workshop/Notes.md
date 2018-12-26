@@ -111,6 +111,13 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
 ## The Tools We'll Need:
 
+- The triangle inequalities:
+  $$
+  \left\lvert x+y\right\rvert \leq \left\lvert x\right\rvert + \left\lvert y\right\rvert \\
+  \left\lvert x+y \right\rvert \geq \left\lvert {} \right\rvert
+  $$
+  
+
 - For any contour $\Gamma = \sum_{i=1}^n \gamma_i = \gamma_1 + \gamma_2 + \cdots + \gamma_n$, we have
   $$
   \int_\Gamma f(z)~dz = \sum_{i=1}^n \int _{\gamma_i} f(z)~dz
@@ -150,4 +157,8 @@ First, to make sure this technique will go through as desired, we'll want to mak
 
 By design, we've chosen $C_R$ to be easy to work with - in particular, the arc length will just be half of the circumference. Since the latter is $2\pi R$, the former is just $\pi R$.
 
-To compute the supremum, note that we can write any point on $C_R$ as $z=Re^{i\theta}$ where $\theta \in [0, \pi]$, and so $\left\lvert z\right\rvert = \left\lvert R e^{i\theta}\right\rvert$ 
+To compute the supremum, note that we can write any point on $C_R$ as $z=Re^{i\theta}$ where $\theta \in [0, \pi]$, and so $\left\lvert z\right\rvert = \left\lvert R e^{i\theta}\right\rvert = \left\lvert {R}\right\rvert \left\lvert e^{i\theta} \right\rvert = \left\lvert R \right\rvert$, since $e^{i\theta}$ is just a point on the unit circle and thus has modulus 1. We can then conclude that
+$$
+\left\lvert z^6+1 \right\rvert \geq \left\lvert {\left\lvert z^6\right\rvert + \left\lvert 1 \right\rvert}\right\rvert = \left\lvert R^6 + 1\right\rvert
+$$
+using the reverse triangle inequality
