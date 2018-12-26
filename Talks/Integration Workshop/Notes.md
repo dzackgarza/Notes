@@ -18,11 +18,11 @@ Assume that students have a basic knowledge of complex arithmetic.
 
 - Complex Integral
 
-  - Basic idea: defined like a line integral in vector calculus, we use the parameterization to reduce it to a real integral. If $\gamma$ is supported on the real interval $[a, b]$ then we let
+  - Basic idea: defined like a line/path integral in vector calculus, we use the parameterization to reduce it to a real integral. If $\gamma$ is supported on the real interval $[a, b]$ then we let
     $$
     \int_\gamma f(z)~dz = \int_a^b f(\gamma(t)) \gamma'(t) ~dt
     $$
-    This is the first and most basic way to compute such an integral.
+    This is the first and most basic way to compute such an integral. 
 
 - Residue
 
