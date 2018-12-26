@@ -45,7 +45,7 @@ Some background definitions:
 
 - Holomorphic
 
-  - Actual definition: $f$ is complex differentiable
+  - Defined in open sets/neighborhoods of points. Actual definition: $f$ is complex differentiable, 
 
 - Residue
 
