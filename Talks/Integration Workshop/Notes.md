@@ -4,7 +4,7 @@
 
 # Background and Terminology
 
-To cover if less than 50% of attendees haven't taken both courses in complex analysis (UCSD 120A/B). Assumptions: Students know some real single variable calculus and vector calculus, and basic complex arithmetic.
+To cover if less than 50% of attendees haven't taken both courses in complex analysis (UCSD 120A/B). Assumptions: Students know some real single variable calculus and vector calculus, and basic complex arithmetic (polar form, complex modulus, etc).
 
 ## Some Definitions:
 
@@ -113,8 +113,10 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
 - The triangle inequalities:
   $$
-  \left\lvert x+y\right\rvert \leq \left\lvert x\right\rvert + \left\lvert y\right\rvert \\
-  \left\lvert x+y \right\rvert \geq \left\lvert {} \right\rvert
+  \begin{align*}
+  \left\lvert x+y\right\rvert &\leq \left\lvert x\right\rvert + \left\lvert y\right\rvert \\
+  \left\lvert x-y \right\rvert &\geq \left\lvert {\left\lvert x\right\rvert - \left\lvert y \right\rvert} \right\rvert
+  \end{align*}
   $$
   
 
@@ -159,6 +161,13 @@ By design, we've chosen $C_R$ to be easy to work with - in particular, the arc l
 
 To compute the supremum, note that we can write any point on $C_R$ as $z=Re^{i\theta}$ where $\theta \in [0, \pi]$, and so $\left\lvert z\right\rvert = \left\lvert R e^{i\theta}\right\rvert = \left\lvert {R}\right\rvert \left\lvert e^{i\theta} \right\rvert = \left\lvert R \right\rvert$, since $e^{i\theta}$ is just a point on the unit circle and thus has modulus 1. We can then conclude that
 $$
-\left\lvert z^6+1 \right\rvert \geq \left\lvert {\left\lvert z^6\right\rvert + \left\lvert 1 \right\rvert}\right\rvert = \left\lvert R^6 + 1\right\rvert
+\left\lvert z^6+1 \right\rvert \geq \left\lvert {\left\lvert z^6\right\rvert - \left\lvert 1 \right\rvert}\right\rvert = \left\lvert R^6 - 1\right\rvert
 $$
-using the reverse triangle inequality
+using the reverse triangle inequality. Taking reciprocals reverses the inequality, yielding
+$$
+\left\lvert \frac{1}{z^6+1} \right\rvert \leq \left\lvert \frac{1}{R^6-1}\right\rvert
+$$
+and applying the estimation lemma yields
+$$
+\left\lvert \frac{1}{z^6+1} \right\rvert \leq \left\lvert \frac{1}{R^6-1}\right\rvert
+$$
