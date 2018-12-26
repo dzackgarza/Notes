@@ -97,7 +97,7 @@ Some background definitions:
 
   - Cauchy's Integral Formula:
     $$
-    \frac {2\pi i}{n!} f^{(n)}(z)
+    \frac {2\pi i}{n!} f^{(n)}(z_0) = \oint \frac{f(z)}{(z-a)^{n+1}} ~dz
     $$
     
 
