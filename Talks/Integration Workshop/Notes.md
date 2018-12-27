@@ -214,8 +214,8 @@ This is rarely the method one would actually use in practice, but it's perhaps w
 In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation. This can be done by hand, but for our purposes, we'll just use the following SAGE code to get the decomposition relatively quickly:
 $$
 \begin{align}
-\frac{1}{z^6+1} &= \frac{e^{\frac{11 i\pi}{6}}}{6 \left(x- e^{\frac{5 i\pi}{6}} \right)} + \frac{e^{\frac{7 i\pi}{6}}}{6 \left(x- e^{\frac{i \pi}{6}}\right)} + \frac{e^{\frac{5 i\pi}{6}}}{6 \left(x- e^{\frac{11 i\pi}{6}}\right)} \\ \\ 
-&+ \frac{e^{\frac{i \pi}{6}}}{6 \left(x- e^{\frac{7 i\pi}{6}} \right)} + \frac{e^{\frac{3 i\pi}{2}}}{6 \left(x- e^{\frac{i \pi}{2}} \right)} + \frac{e^{\frac{i \pi}{2}}}{6 \left(x- e^{\frac{3i \pi}{2}}\right)}
+\frac{1}{z^6+1} &= \frac{e^{\frac{11 i\pi}{6}}}{6 \left(z- e^{\frac{5 i\pi}{6}} \right)} + \frac{e^{\frac{7 i\pi}{6}}}{6 \left(z- e^{\frac{i \pi}{6}}\right)} + \frac{e^{\frac{5 i\pi}{6}}}{6 \left(z- e^{\frac{11 i\pi}{6}}\right)} \\ \\ 
+&+ \frac{e^{\frac{i \pi}{6}}}{6 \left(z- e^{\frac{7 i\pi}{6}} \right)} + \frac{e^{\frac{3 i\pi}{2}}}{6 \left(z- e^{\frac{i \pi}{2}} \right)} + \frac{e^{\frac{i \pi}{2}}}{6 \left(z- e^{\frac{3i \pi}{2}}\right)}
 \end{align}
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
