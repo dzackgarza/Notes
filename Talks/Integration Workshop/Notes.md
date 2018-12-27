@@ -306,3 +306,7 @@ which is precisely what we obtained with the first approach.
 
 ## Approach 3: Cauchy's Integral Formula
 
+Finally, we can use the fact that the full contour integral can be broken into a sum of integrals around the enclosed singularities. Recalling that these are $\zeta_0, \zeta_1, \zeta_2$ 
+$$
+\oint_{\Gamma_R} f(z) ~dz = \oint \gamma_1 f(z) ~dz
+$$
