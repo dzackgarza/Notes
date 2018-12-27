@@ -154,6 +154,11 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   $$
   \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
   $$
+  In particular, if $z_0$ is a pole of order 1, this reduces to
+  $$
+  \oint \frac{f(z)}{z-z_0} = 2\pi i f(z_0)
+  $$
+  
 
   - The trick: only need to know how to compute a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So just rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. ‘extract’ the nonsingular part for the numerator) and apply this theorem.
 
