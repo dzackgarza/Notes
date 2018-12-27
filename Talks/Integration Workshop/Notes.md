@@ -319,3 +319,9 @@ where each $\gamma_i$ is a small circle around $\zeta_i$. Now we note that if $\
 $$
 \frac{1}{z^6 + 1} = \frac{1}{\prod_{i=1}^6 (z - \zeta_i)} = \frac{ 1 / \prod_{i\neq k} (z-\zeta_i)}{(z-\zeta_k)^1}
 $$
+which allows us to directly write
+$$
+\oint_{\gamma_k} f(z)~dz = \prod_{i\neq k}\frac{1}{ (\zeta_k - \zeta_i)}
+$$
+
+
