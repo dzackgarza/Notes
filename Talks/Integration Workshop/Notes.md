@@ -323,5 +323,11 @@ which allows us to directly write
 $$
 \oint_{\gamma_k} f(z)~dz = \prod_{i\neq k}\frac{1}{ (\zeta_k - \zeta_i)}
 $$
+and so, in its full glory, we have
+$$
+\begin{align*}
+\int_{\gamma_0}
+\end{align*}
+$$
 
 
