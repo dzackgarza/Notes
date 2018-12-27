@@ -224,8 +224,8 @@ $$
 To make things slightly cleaner, if we label the roots clockwise as $\zeta_i, i=0,1,\cdots 5$, this can be rewritten as 
 $$
 \begin{align*}
-\frac{1}{z^6 + 1} &= \frac{\zeta_5}{z-\zeta_3} + \frac{\zeta_4}{z-\zeta_0} + \frac{\zeta_3}{z-\zeta_6} \\ 
-&+ \frac{\zeta_0}{z-\zeta_4} + \frac{\zeta_5}{z-\zeta_2}  + \frac{\zeta_1}{z-\zeta_5}
+\frac{1}{z^6 + 1} &= \frac{\zeta_5}{z-\zeta_2} + \frac{\zeta_3}{z-\zeta_0} + \frac{\zeta_2}{z-\zeta_5} \\ 
+&+ \frac{\zeta_0}{z-\zeta_3} + \frac{\zeta_4}{z-\zeta_1}  + \frac{\zeta_1}{z-\zeta_4}
 \end{align*}
 $$
 
