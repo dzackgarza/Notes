@@ -339,4 +339,4 @@ which is precisely what we obtained by the previous two methods.
 
 # The Takeaway
 
-In all cases, we end up reducing the hard (or sometimes impossible) problem of computing a real integral using calculus in $\R$ to what are essentially algebra problems in $\C$. Although these 
+In all cases, we end up reducing the hard (or sometimes impossible) problem of computing a real integral using calculus in $\R$ to what are essentially algebra problems in $\C$. Although these seem like long and involved techniques are first glance, with a bit of practice, it is possible to be quick enough with the computations to make these techniques rival the standard set of real integration techniques.
