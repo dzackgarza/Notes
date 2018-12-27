@@ -228,9 +228,9 @@ show(ss)
 
 $$
 \begin{align}
-\frac{\sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x + \sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} - \frac{\sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x - \sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} \\
-+ \frac{\sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x + \sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} - \frac{\sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x - \sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} \\ 
-+ \frac{i}{6 \, {\left(x + i\right)}} - \frac{i}{6 \, {\left(x - i\right)}}
+\frac{1}{z^6+1} &= \frac{\sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x + \sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} - \frac{\sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x - \sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} \\ \\
+&+ \frac{\sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x + \sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} - \frac{\sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x - \sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} \\  \\
+&+ \frac{i}{6 \, {\left(x + i\right)}} - \frac{i}{6 \, {\left(x - i\right)}}
 \end{align}
 $$
 
