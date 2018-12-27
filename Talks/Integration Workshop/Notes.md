@@ -221,7 +221,7 @@ and thus
 $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
 $$
-At this point, I find it most convenient to simplify this geometrically. For example, denote the right hand side $I_R$; we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a symmetry about the real line, $f(z) = z^5$ turns out to be a symmetry across the imaginary axis, and $f(z) = -z$ is a symmetry about the line . So one can work out that
+At this point, I find it most convenient to approach this geometrically. For example, denote the right hand side $I_R$; we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a reflection about the real line, one can check that $f(z) = z^5$ is a reflection across the imaginary axis, and $f(z) = -z$ is a symmetry about the line . So one can work out that
 $$
 \begin{align*}
 I_R &= \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right) \\ &= \frac{1}{6} \left( \zeta_5^{5} + \zeta_4^{5} + \zeta_3^{5} \right) \\&= \frac{1}{6} \left( \zeta_3 + \zeta_4 + \zeta_5 \right) \\&= -\frac{1}{6} \left( \zeta_0 + \zeta_1 + \zeta_2 \right) \\&= -\frac{1}{6} \left( \zeta_0 + \zeta_1 - \bar{\zeta_0} \right)
@@ -235,7 +235,7 @@ and thus
 $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i(-\frac 1 3 i) = \frac{2\pi} 3 
 $$
-Since this doesn't depend on $R$, we can take the limit in equation $(\ref{main})$ and we have our solution.
+Since this doesn't depend on $R$, taking the limit in equation $(\ref{main})$ yields this as our solution.
 
 
 
