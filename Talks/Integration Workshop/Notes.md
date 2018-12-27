@@ -221,7 +221,7 @@ $$
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
 
-These are all of the form $\frac{a}{b(z-\zeta)}$, which can manipulated into a form resembling a geometric series. The following computation shows 
+These are all of the form $\frac{a}{b(z-\zeta)}$, which can manipulated into a form resembling a geometric series. The following computation shows how this is most commonly done:
 $$
 \begin{align*}
 \frac{a}{b(z-\zeta)} &= \frac{a}{b} \left( \frac{1}{z-\zeta} \right)  \\ 
