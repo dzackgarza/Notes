@@ -128,13 +128,6 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   - Related fact: if there is a *homotopy* between two contours $\gamma_1, \gamma_2$ that does not pass through any singularities of $f$, then $\int_{\gamma_1} f(z)~dz= \int_{\gamma_2} f(z)~dz$
   - Big conclusion: integration about any contour $\Gamma$ can be broken up into a sum of integrals around circles enclosing the singularities of $f$.
 
-- Cauchy's Integral Formula: for simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
-  $$
-  \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
-  $$
-
-  - The trick: only need to know how to compute a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So just rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. 'extract' the nonsingular part for the numerator) and apply this theorem.
-
 - The Residue Theorem:
   $$
   \oint f(z) ~dz = 2\pi i \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
@@ -155,6 +148,13 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
     \left\lvert \int_\Gamma f(z) ~dz\right\rvert \leq \left\vert \Gamma\right\vert \sup_{z\in\Gamma}\left\lvert f(z)\right\rvert
   $$
   where the first term is the length of the curve $\Gamma$ and the second is the maximum value $f$ takes on points along $\Gamma$.
+
+- Cauchy’s Integral Formula: for simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
+  $$
+  \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
+  $$
+
+  - The trick: only need to know how to compute a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So just rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. ‘extract’ the nonsingular part for the numerator) and apply this theorem.
 
 # Example 1
 
