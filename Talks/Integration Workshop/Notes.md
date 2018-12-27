@@ -211,7 +211,22 @@ For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = 
 
 This is rarely the method one would actually use in practice, but it's perhaps worth detailing it here. By definition, the residue of $f$ at $z_i$ is the coefficient of $\frac{1}{z-z_i}$ in the Laurent expansion of $f$  at $z=z_i$. In principal, this can always be done for rational functions, primarily using the known series $\frac{1}{1-z} = 1 + z + z^2 + \cdots =  \sum_{k=1}^\infty z^k$. 
 
-In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation. Using a computer algebra system 
+In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation. This can be done by hand, but for our purposes, we'll just use the following SAGE code to get the decomposition quickly:
+
+```python
+R.<x> = QQbar['x']
+ff = x^6 + 1
+ss = 0
+for q in (1/ff).partial_fraction_decomposition()[1]:
+    a = QQbar(q.numerator())
+    ar = a.radical_expression()
+    b = QQbar(x - q.denominator())
+    br = b.radical_expression()
+    ss = ss + (ar/(x-br))
+show(ss)
+```
+
+
 
 ### Residue Theorem
 
