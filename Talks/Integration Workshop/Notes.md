@@ -210,6 +210,6 @@ $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, e^{\frac{i\pi}{2}}) + \mathrm{Res}(f, e^{\frac{i 5\pi}{6}})
 $$
 For the first term, we write
-$$
-\frac{1}{z^6+1} = \frac{\}{z-\zeta_0}
-$$
+
+
+
