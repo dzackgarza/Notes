@@ -337,3 +337,6 @@ $$
 $$
 which is precisely what we obtained by the previous two methods.
 
+# The Takeaway
+
+In all cases, we end up reducing the hard (or sometimes impossible) problem of computing a real integral using calculus in $\R$ to what are essentially algebra problems in $\C$. Although these 
