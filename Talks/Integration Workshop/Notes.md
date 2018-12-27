@@ -231,7 +231,7 @@ $$
 &= -\frac{a}{b\zeta} \left( 1 + \frac{z}{\zeta} + (\frac{z}{\zeta})^2 + (\frac{z}{\zeta})^3 + \cdots\right)
 \end{align*}
 $$
-From this, we see that if we expand all of the above summands in a Laurent series about any given $\zeta$
+F
 
 ### Residue Theorem
 
