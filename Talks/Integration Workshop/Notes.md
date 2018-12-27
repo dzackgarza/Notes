@@ -310,4 +310,7 @@ Finally, we can use the fact that the full contour integral can be broken into a
 $$
 \oint_{\Gamma_R} f(z) ~dz = \oint_{\gamma_0} f(z) ~dz + \oint_{\gamma_1} f(z) ~dz + \oint_{\gamma_2} f(z) ~dz
 $$
-where each $\gamma_i$ is a small circle around $\zeta_i$. Now we note that if $\gamma_i$ is small enough, the only singularity it encloses is $\zeta_i$ which is just a pole of order 1, and so the function $(z-\zeta_i)^1f(z)$ is holomorphic in this region. 
+where each $\gamma_i$ is a small circle around $\zeta_i$. Now we note that if $\gamma_i$ is small enough, the only singularity it encloses is $\zeta_i$ which is just a pole of order 1, and so the function $(z-\zeta_i)^1f(z)$ is holomorphic in this region and we can apply this theorem. We use the trick of writing
+$$
+\frac{1}{z^6 + 1} = \frac{1}{\prod_{i=1}^6 (z - \zeta_i)} = \frac{\prod_{i\neq k} (z-\zeta_i)}{(z-z_k)^1}
+$$
