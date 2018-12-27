@@ -223,13 +223,13 @@ $$
 $$
 At this point, I find it most convenient to approach this geometrically by looking at how certain maps act on the shape spanned by the 6 roots (a hexagon in this case). 
 
-For example, denote the right hand side $I_R$; since $\left\vert \zeta_k \right\rvert = 1$ we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a reflection about the real axis; one can check that $f(z) = z^5$ is a reflection across the imaginary axis, and $f(z) = -z$ is a  . So one can work out that
+For example, denote the right hand side $I_R$; since $\left\vert \zeta_k \right\rvert = 1$ we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a reflection about the real axis; one can check that $f(z) = z^5$ is a reflection across the imaginary axis, and $f(z) = -z$ is a reflection through the origin . This allows one to rewrite
 $$
 \begin{align*}
 I_R &= \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right) \\ &= \frac{1}{6} \left( \zeta_5^{5} + \zeta_4^{5} + \zeta_3^{5} \right) \\&= \frac{1}{6} \left( \zeta_3 + \zeta_4 + \zeta_5 \right) \\&= -\frac{1}{6} \left( \zeta_0 + \zeta_1 + \zeta_2 \right) \\&= -\frac{1}{6} \left( \zeta_0 + \zeta_1 - \bar{\zeta_0} \right)
 \end{align*}
 $$
-We can identify $\zeta_1 = e^{i\pi/2} = i$ and use the identity $z-\bar{z} = 2i~\mathrm{Im}(z)$ and the fact that $\zeta_0 = e^{i\pi /6} = \cos(\pi/6) + i\sin(\pi/6) = \frac{\sqrt 3}{2} + \frac{1}{2}i$ to obtain $\zeta_0 + \bar{\zeta_0} = 2i(\frac{1}{2}) = i$ to find that 
+We can identify $\zeta_1 = e^{i\pi/2} = i$ and use the identity $z-\bar{z} = 2i~\mathrm{Im}(z)$ and the fact that $\zeta_0 = e^{i\pi /6} = \cos(\pi/6) + i\sin(\pi/6) = \frac{\sqrt 3}{2} + \frac{1}{2}i$ to obtain $\zeta_0 + \bar{\zeta_0} = 2i(\frac{1}{2}) = i$ to and find that 
 $$
 I_R= -\frac 1 6 (i + i) = -\frac{1}{3}i
 $$
