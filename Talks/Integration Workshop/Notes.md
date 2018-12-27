@@ -217,4 +217,4 @@ and thus
 $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
 $$
-At this point, it is perhaps just most convenient to work out the group structure of these roots
+At this point, it is perhaps just most convenient to work out the group structure of these roots using geometry. For $n$th roots of unity, we have $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{n-k}$
