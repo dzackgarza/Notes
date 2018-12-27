@@ -207,9 +207,13 @@ For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = 
 
 Directly applying this theorem, we can write
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, e^{\frac{i\pi}{2}}) + \mathrm{Res}(f, e^{\frac{i 5\pi}{6}})
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, e^{\frac{i\pi}{2}}) + \mathrm{Res}(f, e^{\frac{5 i \pi}{6}})
 $$
-Then, applying our residue workhorse and taking $p(z) = 1, q(z) = z^6+1$, and computing $q'(z) = 6z^5$, we find that $\mathrm{Res}(f, \zeta_k) = \frac{1}{6\zeta_k^5}$
-
-
-
+Then, applying our residue workhorse and taking $p(z) = 1,~ q(z) = z^6+1$, and then computing $q'(z) = 6z^5$, we find that
+$$
+\mathrm{Res}(f, \zeta_k) = \frac{1}{6\zeta_k^5} = \frac{1}{6}\zeta_k^{-5}
+$$
+and thus
+$$
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \frac{1}{6} \left( e^{\frac{i\pi}{6}} + e^{\frac{i\pi}{2}} + e^{\frac{5i \pi}{6}} \right)
+$$
