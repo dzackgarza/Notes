@@ -221,7 +221,11 @@ $$
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
 
-These are all of the form $\frac{a}{b(z-\zeta_i)} = \frac{a}{b}\frac{1}{z-\zeta} = \frac{a}{b}\frac{1}{z-\zeta}$
+These are all of the form
+$$
+\frac{a}{b(z-\zeta_i)} = \frac{a}{b}\frac{1}{z-\zeta} = \frac{a}{b\zeta}\frac{1}{\frac{z}{\zeta}-1}
+$$
+
 
 ### Residue Theorem
 
