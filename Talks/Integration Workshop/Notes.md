@@ -231,7 +231,7 @@ $$
 &= -\frac{a}{b\zeta} \left( 1 + \frac{z}{\zeta} + (\frac{z}{\zeta})^2 + (\frac{z}{\zeta})^3 + \cdots\right)
 \end{align*}
 $$
-For example, let's compute the expansion about $\zeta = i$. 
+S
 
 ### Residue Theorem
 
