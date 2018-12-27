@@ -221,7 +221,14 @@ $$
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
 
-To make things slightly cleaner, 
+To make things slightly cleaner, if we label the roots clockwise as $\zeta_i, i=0,1,\cdots 5$, this can be rewritten as 
+$$
+\begin{align*}
+\frac{1}{z^6 + 1} &= \frac{\zeta_5}{z-\zeta_3} + \frac{\zeta_4}{z-\zeta_0} + \frac{\zeta_3}{z-\zeta_6} \\ 
+&+ \frac{\zeta_0}{z-\zeta_4} + \frac{\zeta_5}{z-\zeta_2}  + \frac{\zeta_1}{z-\zeta_5}
+\end{align*}
+$$
+
 
 These are all of the form $\frac{a}{b(z-\zeta)}$, which can manipulated into a form resembling a geometric series. The following computation shows how this is most commonly done:
 $$
