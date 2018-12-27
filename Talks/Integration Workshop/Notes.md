@@ -215,5 +215,6 @@ $$
 $$
 and thus
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \frac{1}{6} \left( e^{\frac{-i5\pi}{6}} + i^{-5} + e^{\frac{-25i \pi}{6}} \right) = \frac{1}{6} (-i)
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
 $$
+At this point, it is perhaps just most convenient to work out the group structure of these roots
