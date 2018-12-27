@@ -291,7 +291,7 @@ $$
 $$
 At this point, I find it most convenient to approach this geometrically by looking at how certain maps act on the shape spanned by the 6 roots (a hexagon in this case). 
 
-Since $\left\vert \zeta_k \right\rvert = 1$ we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a reflection about the real axis; one can check that $f(z) = z^5$ is a reflection across the imaginary axis, and $f(z) = -z$ is a reflection through the origin . This allows one to rewrite
+Since $\left\vert \zeta_k \right\rvert = 1$ we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a reflection about the real axis; one can also check that $f(z) = z^5$ is a reflection across the imaginary axis and $f(z) = -z$ is a reflection through the origin . This allows one to rewrite
 $$
 \begin{align*}
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz  
