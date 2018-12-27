@@ -221,7 +221,9 @@ and thus
 $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
 $$
-At this point, I find it most convenient to approach this geometrically. For example, denote the right hand side $I_R$; we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a reflection about the real line, one can check that $f(z) = z^5$ is a reflection across the imaginary axis, and $f(z) = -z$ is a symmetry about the line . So one can work out that
+At this point, I find it most convenient to approach this geometrically by looking at how certain maps act on the shape spanned by the 6 roots (a hexagon in this case). 
+
+For example, denote the right hand side $I_R$; since $\left\vert \zeta_k \right\rvert = 1$ we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a reflection about the real axis; one can check that $f(z) = z^5$ is a reflection across the imaginary axis, and $f(z) = -z$ is a  . So one can work out that
 $$
 \begin{align*}
 I_R &= \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right) \\ &= \frac{1}{6} \left( \zeta_5^{5} + \zeta_4^{5} + \zeta_3^{5} \right) \\&= \frac{1}{6} \left( \zeta_3 + \zeta_4 + \zeta_5 \right) \\&= -\frac{1}{6} \left( \zeta_0 + \zeta_1 + \zeta_2 \right) \\&= -\frac{1}{6} \left( \zeta_0 + \zeta_1 - \bar{\zeta_0} \right)
