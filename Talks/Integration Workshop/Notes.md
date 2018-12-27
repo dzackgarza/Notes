@@ -308,5 +308,6 @@ which is precisely what we obtained with the first approach.
 
 Finally, we can use the fact that the full contour integral can be broken into a sum of integrals around the enclosed singularities. Recalling that these are $\zeta_0, \zeta_1, \zeta_2$ 
 $$
-\oint_{\Gamma_R} f(z) ~dz = \oint \gamma_1 f(z) ~dz
+\oint_{\Gamma_R} f(z) ~dz = \oint_{\gamma_0} f(z) ~dz + \oint_{\gamma_1} f(z) ~dz + \oint_{\gamma_2} f(z) ~dz
 $$
+where each $\gamma_i$ is a small circle around $\zeta_i$. Now we note that if $\gamma_i$ is small enough, the only singularity it encloses is $\zeta_i$ which is just a pole of order 1, and so the function $(z-\zeta_i)^1f(z)$ is holomorphic in this region. 
