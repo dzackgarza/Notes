@@ -209,7 +209,7 @@ For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = 
 
 ### Approach 1: Direct Residue Computation
 
-This is rarely the method one would actually use in practice, but it's perhaps worth detailing it here. By definition, the residue of $f$ at $z_i$ is the coefficient of $\frac{1}{z-z_i}$ in the Laurent expansion of $f$  at $z=z_i$. In principal, this can always be done for rational functions, primarily using the known series $\frac{1}{1-z} = 1 + z + z^2 + \cdots =  \sum_{k=1}^\infty z^k$. 
+This is rarely the method one would actually use in practice, but it's perhaps worth detailing it here. By definition, the residue of $f$ at $z_i$ is the coefficient of $\frac{1}{z-z_i}$ in the Laurent expansion of $f$  at $z=z_i$. In principal, this can always be done for rational functions, primarily using the known geometric series $\frac{1}{1-z} = 1 + z + z^2 + \cdots =  \sum_{k=1}^\infty z^k$. 
 
 In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation. This can be done by hand, but for our purposes, we'll just use the following SAGE code to get the decomposition relatively quickly:
 $$
@@ -221,13 +221,14 @@ $$
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
 
-These are all of the form
+These are all of the form $\frac{a}{b(z-\zeta)}$, which can manipulated into a form resembling a geometric series. The following computation shows 
 $$
 \begin{align*}
 \frac{a}{b(z-\zeta)} &= \frac{a}{b} \left( \frac{1}{z-\zeta} \right)  \\ 
 &= \frac{a}{b} \left( \frac{1/\zeta}{\frac{z}{\zeta}-1}\right) \\
 &= \frac{a}{b\zeta} \left( \frac{1}{\frac{z}{\zeta}-1}\right) \\
-&= \frac{a}{b\zeta} \left( \frac{1}{1 - z'}\right) \\
+&= -\frac{a}{b\zeta} \left( \frac{1}{1 - \frac{z}{\zeta} }\right) \\
+&= -\frac{a}{b\zeta} \left( 1 + \frac{z}{\zeta} + (\frac{z}{\zeta})^2 + (\frac{z}{\zeta})^3 + \cdots\right)
 \end{align*}
 $$
 
