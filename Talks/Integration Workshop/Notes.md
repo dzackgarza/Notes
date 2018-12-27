@@ -217,4 +217,7 @@ and thus
 $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
 $$
-At this point, I find it most convenient to work . For example, we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$
+At this point, I find it most convenient to simplify this geometrically. For example, we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a symmetry about the real line, and $\zeta^5$ turns out to be a symmetry across the imaginary axis. So one can work out that
+$$
+\frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right) = \frac{1}{6} \left( \zeta_5^{5} + \zeta_4^{5} + \zeta_3^{5} \right) = \frac{1}{6} \left( \zeta_3 + \zeta_4 + \zeta_5 \right)
+$$
