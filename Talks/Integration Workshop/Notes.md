@@ -233,14 +233,14 @@ $$
 These are all of the form $\frac{a}{b(z-\zeta)}$, which can manipulated into a form resembling a geometric series. The following computation shows how this is most commonly done:
 $$
 \begin{align*}
-\frac{a}{b(z-\zeta_i)} &= \frac{a}{b} \left( \frac{1}{z-\zeta_i} \right)  \\ 
-&= \frac{a}{b} \left( \frac{1/\zeta_i}{\frac{z}{\zeta_i}-1}\right) \\
-&= \frac{a}{b\zeta_i} \left( \frac{1}{\frac{z}{\zeta_i}-1}\right) \\
-&= -\frac{a}{b\zeta_i} \left( \frac{1}{1 - \frac{z}{\zeta_i} }\right) \\
-&= -\frac{a}{b\zeta_i} \left( 1 + \frac{z}{\zeta_i} + (\frac{z}{\zeta_i})^2 + (\frac{z}{\zeta_i})^3 + \cdots\right)
+\frac{a}{z-\zeta_i} &= a \left( \frac{1}{z-\zeta_i} \right)  \\ 
+&= a \left( \frac{1/\zeta_i}{\frac{z}{\zeta_i}-1}\right) \\
+&= \frac{a}{\zeta_i} \left( \frac{1}{\frac{z}{\zeta_i}-1}\right) \\
+&= -\frac{a}{\zeta_i} \left( \frac{1}{1 - \frac{z}{\zeta_i} }\right) \\
+&= -\frac{a}{\zeta_i} \left( 1 + \frac{z}{\zeta_i} + (\frac{z}{\zeta_i})^2 + (\frac{z}{\zeta_i})^3 + \cdots\right)
 \end{align*}
 $$
-So if we fix one $\zeta_k$ and wish to compute the Laurent expansion about that point, we find that all 5 other terms can be expanded in this way 
+So if we fix one $\zeta_k$ and wish to compute the Laurent expansion about that point, we find that all 5 other terms can be expanded in this way - but most importantly, none of these 5 will contribute a term of the form $\frac{1}{z-\zeta_k}$. We thus find that $\$
 
 ### Residue Theorem
 
