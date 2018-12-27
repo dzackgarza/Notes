@@ -207,6 +207,10 @@ $$
  
 For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = \frac{1/(x+2)}{x-2}$.
 
+### Approach 1: Direct Residue Computation
+
+This is rarely the method one would actually use in practice, but it's perhaps worth detailing it here. By definition, the residue of $f$ at $z_i$ is the coefficient of $\frac{1}{z-z_i}$ in the Laurent expansion of $f$  at $z=z_i$. In principal, this can always be done for rational functions, primarily using the known series $\frac{1}{1-z} = 1 + z + z^2 + \cdots =  \sum_{k=1}^\infty z^k$
+
 ### Residue Theorem
 
 Noting that $e^{\frac{i\pi}{2}} = i$ and directly applying this theorem, we can write
