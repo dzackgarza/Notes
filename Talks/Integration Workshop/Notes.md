@@ -228,9 +228,8 @@ show(ss)
 
 $$
 \begin{align}
-\frac{1}{z^6+1} &= \frac{\sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x + \sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} - \frac{\sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x - \sqrt{\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} \\ \\
-&+ \frac{\sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x + \sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} - \frac{\sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}}{6 \, {\left(x - \sqrt{-\frac{1}{2} i \, \sqrt{3} + \frac{1}{2}}\right)}} \\  \\
-&+ \frac{i}{6 \, {\left(x + i\right)}} - \frac{i}{6 \, {\left(x - i\right)}}
+\frac{1}{z^6+1} &= \frac{e^{\frac{11 \pi}{6} i}}{6 \left(x- e^{\frac{5 \pi}{6} i} \right)} + \frac{e^{\frac{7 \pi}{6} i}}{6 \left(x- e^{\frac{i \pi}{6}}\right)} + \frac{e^{\frac{5 \pi}{6} i}}{6 \left(x- e^{\frac{11 \pi}{6} i}\right)} \\ \\ 
+&+ \frac{e^{\frac{i \pi}{6}}}{6 \left(x- e^{\frac{7 \pi}{6} i} \right)} + \frac{e^{\frac{3 \pi}{2} i}}{6 \left(x- e^{\frac{i \pi}{2}} \right)} + \frac{e^{\frac{i \pi}{2}}}{6 \left(x- e^{\frac{3i \pi}{2}}\right)}
 \end{align}
 $$
 
