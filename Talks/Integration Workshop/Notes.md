@@ -221,6 +221,8 @@ $$
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
 
+To make things slightly cleaner, 
+
 These are all of the form $\frac{a}{b(z-\zeta)}$, which can manipulated into a form resembling a geometric series. The following computation shows how this is most commonly done:
 $$
 \begin{align*}
