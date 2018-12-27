@@ -326,7 +326,7 @@ $$
 and so, in its full glory, we have
 $$
 \begin{align*}
-\int_{\gamma_0}
+\oint_{\gamma_0} f(z) ~dz = \frac{1}{(\zeta_0-\zeta_1)} \frac{1}{(\zeta_0-\zeta_2)} \frac{1}{(\zeta_0-\zeta_3)} \frac{1}{(\zeta_0-\zeta_4)} \frac{1}{(\zeta_0-\zeta_5)}
 \end{align*}
 $$
 
