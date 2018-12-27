@@ -157,7 +157,7 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
   - The trick: only need to know how to compute a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So just rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. ‘extract’ the nonsingular part for the numerator) and apply this theorem.
 
-# Example 1
+# A Demonstrative Example
 
 Want to compute the following integral:
 $$
@@ -207,7 +207,7 @@ $$
 
 For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = \frac{1/(x+2)}{x-2}$.
 
-### Approach 1: Direct Residue Computation
+## Approach 1: Direct Residue Computation
 
 This is rarely the method one would actually use in practice, but it's perhaps worth detailing it here. By definition, the residue of $f$ at $z_i$ is the coefficient of $\frac{1}{z-z_i}$ in the Laurent expansion of $f$  at $z=z_i$. In principal, this can always be done for rational functions, primarily using the known geometric series $\frac{1}{1-z} = 1 + z + z^2 + \cdots =  \sum_{k=1}^\infty z^k$. 
 
@@ -274,7 +274,7 @@ $$
 $$
 Since this doesn't depend on $R$, taking the limit in equation $(\ref{main})$ yields this as our solution.
 
-### Approach 2: Nice Theorems
+## Approach 2: Nice Theorems
 
 Noting that the prior approach is slightly onerous, we can instead apply some slick theorems to simplify computing residues.
 
@@ -304,4 +304,4 @@ $$
 
 which is precisely what we obtained with the first approach.
 
-### Approach 3: Cauchy's Integral Formula
+## Approach 3: Cauchy's Integral Formula
