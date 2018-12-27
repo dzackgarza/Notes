@@ -210,7 +210,7 @@ For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = 
 
 This is rarely the method one would actually use in practice, but it's perhaps worth detailing it here. By definition, the residue of $f$ at $z_i$ is the coefficient of $\frac{1}{z-z_i}$ in the Laurent expansion of $f$  at $z=z_i$. In principal, this can always be done for rational functions, primarily using the known geometric series $\frac{1}{1-z} = 1 + z + z^2 + \cdots =  \sum_{k=1}^\infty z^k$. 
 
-In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation. This can be done by hand, but for our purposes, we'll just use the following SAGE code to get the decomposition relatively quickly:
+In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation. This can be done by hand, but for our purposes, we'll use SAGE  to get the decomposition relatively quickly:
 $$
 \begin{align}
 \frac{1}{z^6+1} &= \frac{e^{\frac{11 i\pi}{6}}}{6 \left(z- e^{\frac{5 i\pi}{6}} \right)} + \frac{e^{\frac{7 i\pi}{6}}}{6 \left(z- e^{\frac{i \pi}{6}}\right)} + \frac{e^{\frac{5 i\pi}{6}}}{6 \left(z- e^{\frac{11 i\pi}{6}}\right)} \\ 
@@ -269,20 +269,23 @@ $$
 $$
 and thus
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i(-\frac 1 3 i) = \frac{2\pi} 3 
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i(-\frac 1 3 i) = \frac{2\pi} 3
 $$
 Since this doesn't depend on $R$, taking the limit in equation $(\ref{main})$ yields this as our solution.
 
 ### Approach 2: Nice Theorems
 
+Noting that the prior approach is slightly onerous, we can instead apply some slick theorems to simplify computing residues.
 
-A much easier approach Then, applying our residue workhorse and taking $p(z) = 1,~ q(z) = z^6+1$, and then computing $q'(z) = 6z^5$, we find that
+In particular,applying our residue workhorse and taking $p(z) = 1,~ q(z) = z^6+1$, and then computing $q'(z) = 6z^5$, we find that
 $$
 \mathrm{Res}(f, \zeta_k) = \frac{1}{6\zeta_k^5} = \frac{1}{6}\zeta_k^{-5}
 $$
 and thus
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
+\begin{align*}
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i\sum_{k=0}^2 \mathrm{Res}(f, \zeta_k)  =2\pi i \left(\frac{1}{6}\right) \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
+\end{align*}
 $$
 At this point, I find it most convenient to approach this geometrically by looking at how certain maps act on the shape spanned by the 6 roots (a hexagon in this case). 
 
