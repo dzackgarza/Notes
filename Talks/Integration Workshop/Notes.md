@@ -240,7 +240,15 @@ $$
 &= -\frac{a}{\zeta_i} \left( 1 + \frac{z}{\zeta_i} + (\frac{z}{\zeta_i})^2 + (\frac{z}{\zeta_i})^3 + \cdots\right)
 \end{align*}
 $$
-So if we fix one $\zeta_k$ and wish to compute the Laurent expansion about that point, we find that all 5 other terms can be expanded in this way - but most importantly, none of these 5 will contribute a term of the form $\frac{1}{z-\zeta_k}$. We thus find that $\$
+So if we fix one $\zeta_k$ and wish to compute the Laurent expansion about that point, we find that all 5 other terms can be expanded in this way - but most importantly, none of these 5 will contribute a term of the form $\frac{1}{z-\zeta_k}$. We thus compute $\mathrm{Res}(f, \zeta_k)$ by picking the numerator off of the term with $\zeta_k$ in the denominator and multiplying by $\frac 1 6$, which yields
+$$
+\begin{align*}
+\mathrm{Res}(f, \zeta_0) &= \frac 1 6 \zeta_3 \\
+\mathrm{Res}(f, \zeta_1) &= \frac 1 6 \zeta_4 \\
+\mathrm{Res}(f, \zeta_2) &= \frac 1 6 \zeta_5 \\
+\end{align*}
+$$
+
 
 ### Residue Theorem
 
