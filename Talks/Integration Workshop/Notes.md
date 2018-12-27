@@ -328,8 +328,12 @@ $$
 \begin{align*}
 \oint_{\gamma_0} f(z) ~dz = \frac{1}{(\zeta_0-\zeta_1)} \frac{1}{(\zeta_0-\zeta_2)} \frac{1}{(\zeta_0-\zeta_3)} \frac{1}{(\zeta_0-\zeta_4)} \frac{1}{(\zeta_0-\zeta_5)} = \frac 1 6 \zeta_3 \\
 \oint_{\gamma_1} f(z) ~dz = \frac{1}{(\zeta_1-\zeta_0)} \frac{1}{(\zeta_1-\zeta_2)} \frac{1}{(\zeta_1-\zeta_3)} \frac{1}{(\zeta_1-\zeta_4)} \frac{1}{(\zeta_1-\zeta_5)} = \frac 1 6 \zeta_4 \\
-\oint_{\gamma_2} f(z) ~dz = \frac{1}{(\zeta_2-\zeta_0} \frac{1}{(\zeta_2-\zeta_1)} \frac{1}{(\zeta_2-\zeta_3)} \frac{1}{(\zeta_2-\zeta_4)} \frac{1}{(\zeta_2-\zeta_5)} = \frac 1 6 \zeta_3 \\
+\oint_{\gamma_2} f(z) ~dz = \frac{1}{(\zeta_2-\zeta_0} \frac{1}{(\zeta_2-\zeta_1)} \frac{1}{(\zeta_2-\zeta_3)} \frac{1}{(\zeta_2-\zeta_4)} \frac{1}{(\zeta_2-\zeta_5)} = \frac 1 6 \zeta_5 \\
 \end{align*}
 $$
-
+and thus
+$$
+\oint_{\Gamma_R} f(z) ~dz  = \frac{1}{6}(\zeta_3 + \zeta_4 + \zeta_5)
+$$
+which 
 
