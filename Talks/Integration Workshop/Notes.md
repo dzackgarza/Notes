@@ -138,7 +138,7 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
 - The Residue Theorem:
   $$
-  \oint f(z) ~dz = \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
+  \oint f(z) ~dz = 2\pi i \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
   $$
   ​	  where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
     - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right hand side e.g. just expand Laurent series about $z_i$, or:
@@ -207,7 +207,7 @@ For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = 
 
 Noting that $e^{\frac{i\pi}{2}} = i$ and directly applying this theorem, we can write
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, i) + \mathrm{Res}(f, e^{\frac{5 i \pi}{6}})
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i\sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, i) + \mathrm{Res}(f, e^{\frac{5 i \pi}{6}})
 $$
 Then, applying our residue workhorse and taking $p(z) = 1,~ q(z) = z^6+1$, and then computing $q'(z) = 6z^5$, we find that
 $$
@@ -215,7 +215,7 @@ $$
 $$
 and thus
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
 $$
 At this point, I find it most convenient to simplify this geometrically. For example, denote the right hand side $I_R$; we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a symmetry about the real line, $f(z) = z^5$ turns out to be a symmetry across the imaginary axis, and $f(z) = -z$ is a symmetry about the line . So one can work out that
 $$
@@ -226,4 +226,8 @@ $$
 We can identify $\zeta_1 = e^{i\pi/2} = i$ and use the identity $z-\bar{z} = 2i~\mathrm{Im}(z)$ and the fact that $\zeta_0 = e^{i\pi /6} = \cos(\pi/6) + i\sin(\pi/6) = \frac{\sqrt 3}{2} + \frac{1}{2}i$ to obtain $\zeta_0 + \bar{\zeta_0} = 2i(\frac{1}{2}) = i$ to find that 
 $$
 I_R= -\frac 1 6 (i + i) = -\frac{1}{3}i
+$$
+and thus
+$$
+
 $$
