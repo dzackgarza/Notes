@@ -323,10 +323,10 @@ which allows us to directly write
 $$
 \oint_{\gamma_k} f(z)~dz = \prod_{i\neq k}\frac{1}{ (\zeta_k - \zeta_i)}
 $$
-These
+These computations are again slightly onerous but straightforward, and we obtain
 $$
 \begin{align*}
-\oint_{\gamma_0} f(z) ~dz = \frac{1}{(\zeta_0-\zeta_1)} \frac{1}{(\zeta_0-\zeta_2)} \frac{1}{(\zeta_0-\zeta_3)} \frac{1}{(\zeta_0-\zeta_4)} \frac{1}{(\zeta_0-\zeta_5)}
+\oint_{\gamma_0} f(z) ~dz = \frac{1}{(\zeta_0-\zeta_1)} \frac{1}{(\zeta_0-\zeta_2)} \frac{1}{(\zeta_0-\zeta_3)} \frac{1}{(\zeta_0-\zeta_4)} \frac{1}{(\zeta_0-\zeta_5)} = 
 \end{align*}
 $$
 
