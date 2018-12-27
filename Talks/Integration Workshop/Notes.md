@@ -215,5 +215,5 @@ $$
 $$
 and thus
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \frac{1}{6} \left( e^{\frac{-i5\pi}{6}} + i^{-5} + e^{\frac{-25i \pi}{6}} \right) = \frac{1}{6} (-1 -i)
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \frac{1}{6} \left( e^{\frac{-i5\pi}{6}} + i^{-5} + e^{\frac{-25i \pi}{6}} \right) = \frac{1}{6} (-i)
 $$
