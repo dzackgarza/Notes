@@ -335,5 +335,5 @@ and thus
 $$
 \oint_{\Gamma_R} f(z) ~dz  = \frac{1}{6}(\zeta_3 + \zeta_4 + \zeta_5)
 $$
-which 
+which is precisely what we obtained by the previous two methods.
 
