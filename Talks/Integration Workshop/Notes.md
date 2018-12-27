@@ -128,20 +128,20 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   - Related fact: if there is a *homotopy* between two contours $\gamma_1, \gamma_2$ that does not pass through any singularities of $f$, then $\int_{\gamma_1} f(z)~dz= \int_{\gamma_2} f(z)~dz$
   - Big conclusion: integration about any contour $\Gamma$ can be broken up into a sum of integrals around circles enclosing the singularities of $f$.
 
-- The Residue Theorem:
+- **The Residue Theorem**:
   $$
   \oint f(z) ~dz = 2\pi i \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
   $$
   ​	  where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
     - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right hand side e.g. just expand Laurent series about $z_i$, or:
-    - **The Residue Computation Workhorse:**
-      Supposing that $f(z)$ can be written as a rational function $f(z)= \frac{p(z)}{q(z)}$ , where $z_0$ is a simple pole (so that $p(z_0) \neq 0$ but $q(z_0) = 0$) and the following expression makes sense , we have
 
-  $$
-  \mathrm{Res}(f, z_0) = \frac{p(z_0)}{q'(z_0)}
-  $$
+  - **The Residue Computation Workhorse:**
+    Supposing that $f(z)$ can be written as a rational function $f(z)= \frac{p(z)}{q(z)}$ , where $z_0$ is a simple pole (so that $p(z_0) \neq 0$ but $q(z_0) = 0$) and the following expression makes sense , we have
+    $$
+    \mathrm{Res}(f, z_0) = \frac{p(z_0)}{q'(z_0)}
+    $$
 
-  
+    
 
 - The estimation lemma:
   $$
@@ -149,7 +149,8 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   $$
   where the first term is the length of the curve $\Gamma$ and the second is the maximum value $f$ takes on points along $\Gamma$.
 
-- Cauchy’s Integral Formula: for simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
+- **Cauchy’s Integral Formula**: 
+  For simplicity, assume $f$ is holomorphic in a neighborhood of $z_0$ (theorem: and thus smooth), then
   $$
   \oint \frac{f(z)}{(z-z_0)^{n}} ~dz = \frac {2\pi i}{(n-1)!} f^{(n-1)}(z_0)
   $$
