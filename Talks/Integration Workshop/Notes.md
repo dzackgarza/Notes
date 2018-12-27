@@ -221,6 +221,8 @@ $$
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
 
+These are all of the form $\frac{a}{b(z-\zeta_i)} = \frac{a}{b}\frac{1}{z-\zeta} = \frac{a}{b}\frac{1}{z-\zeta}$
+
 ### Residue Theorem
 
 Noting that $e^{\frac{i\pi}{2}} = i$ and directly applying this theorem, we can write
