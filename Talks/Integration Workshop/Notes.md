@@ -284,7 +284,9 @@ $$
 and thus
 $$
 \begin{align*}
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i\sum_{k=0}^2 \mathrm{Res}(f, \zeta_k)  =2\pi i \left(\frac{1}{6}\right) \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz &= \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz \\
+&= 2\pi i\sum_{k=0}^2 \mathrm{Res}(f, \zeta_k)  \\
+&=2\pi i \left(\frac{1}{6}\right) \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right)
 \end{align*}
 $$
 At this point, I find it most convenient to approach this geometrically by looking at how certain maps act on the shape spanned by the 6 roots (a hexagon in this case). 
@@ -292,13 +294,14 @@ At this point, I find it most convenient to approach this geometrically by looki
 For example, denote the right hand side $I_R$; since $\left\vert \zeta_k \right\rvert = 1$ we can observe that $\zeta_k ^{-1} = \bar{\zeta_k} = \zeta_{6-k}$, which is a reflection about the real axis; one can check that $f(z) = z^5$ is a reflection across the imaginary axis, and $f(z) = -z$ is a reflection through the origin . This allows one to rewrite
 $$
 \begin{align*}
-I_R &= \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right) \\ 
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz  
+&= \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right) \\ 
 &= \frac{1}{6} \left( \zeta_5^{5} + \zeta_4^{5} + \zeta_3^{5} \right) \\
 &= \frac{1}{6} \left( \zeta_3 + \zeta_4 + \zeta_5 \right)
 \end{align*}
 $$
 
-
+which is precisely what 
 
 
 ## Cauchy's Integral Formula
