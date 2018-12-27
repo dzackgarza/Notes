@@ -196,7 +196,7 @@ We can now proceed in one of two ways, both of which will involve a computation 
 - The Residue Theorem - compute Laurent expansions and look at coefficients of $z^{-1}$ (tricky in general, usually involves some clever manipulations of series)
 - Cauchy's Integral Formula - take derivatives (formulaic)
 
-Before proceeding, note that we can factor and write $\frac{1}{z^6+1} = \frac{1}{\prod_k (\zeta_k)}$
+Before proceeding, note that we can factor and write $\frac{1}{z^6+1} = \frac{1}{\prod_k (z-\zeta_k)}$. For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))}$. Moreover, we can isolate any given root as a denominator and this as $\frac{\prod_{k\neq } (z-\zeta_k)}{}$
 
 ### Residue Theorem
 
