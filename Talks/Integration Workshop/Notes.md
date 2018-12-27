@@ -118,7 +118,6 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   \left\lvert x-y \right\rvert &\geq \left\lvert {\left\lvert x\right\rvert - \left\lvert y \right\rvert} \right\rvert
   \end{align*}
   $$
-  
 
 - For any contour $\Gamma = \sum_{i=1}^n \gamma_i = \gamma_1 + \gamma_2 + \cdots + \gamma_n$, we have
   $$
@@ -204,7 +203,7 @@ Before proceeding, note that we can factor and write $\frac{1}{z^6+1} = \frac{1}
 $$
 \frac{1}{z^6+1} = \frac{\prod_{k\neq j} \frac{1}{(z-\zeta_k)}}{z-\zeta_j}
 $$
- 
+
 For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = \frac{1/(x+2)}{x-2}$.
 
 ### Approach 1: Direct Residue Computation
@@ -254,19 +253,30 @@ $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz 
 &= 2\pi i\sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) \\
 &= \mathrm{Res}(f, \zeta_0) + \mathrm{Res}(f, \zeta_1) + \mathrm{Res}(f, \zeta_2) \\
+&= \frac{1}{6} \left( \zeta_3 + \zeta_4 + \zeta_5 \right) \\
 &= -\frac{1}{6} \left( \zeta_0 + \zeta_1 + \zeta_2 \right) \\
 &= -\frac{1}{6} \left( \zeta_0 + \zeta_1 - \bar{\zeta_0} \right)
 \end{align*}
 $$
 
-
-### Residue Theorem
-
-Noting that $e^{\frac{i\pi}{2}} = i$ and directly applying this theorem, we can write
+We can identify $\zeta_1 = e^{i\pi/2} = i$ and use the identity $z-\bar{z} = 2i~\mathrm{Im}(z)$ and the fact that 
 $$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i\sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, i) + \mathrm{Res}(f, e^{\frac{5 i \pi}{6}})
+\zeta_0 = e^{i\pi /6} = \cos(\pi/6) + i\sin(\pi/6) = \frac{\sqrt 3}{2} + \frac{1}{2}
 $$
-Then, applying our residue workhorse and taking $p(z) = 1,~ q(z) = z^6+1$, and then computing $q'(z) = 6z^5$, we find that
+to obtain $\zeta_0 + \bar{\zeta_0} = 2i(\frac{1}{2}) = i$. We then find that 
+$$
+-\frac{1}{6} \left( \zeta_0 + \zeta_1 - \bar{\zeta_0} \right) = -\frac 1 6 (i + i) = -\frac{1}{3}i
+$$
+and thus
+$$
+\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i(-\frac 1 3 i) = \frac{2\pi} 3 
+$$
+Since this doesn't depend on $R$, taking the limit in equation $(\ref{main})$ yields this as our solution.
+
+### Approach 2: Nice Theorems
+
+
+A much easier approach Then, applying our residue workhorse and taking $p(z) = 1,~ q(z) = z^6+1$, and then computing $q'(z) = 6z^5$, we find that
 $$
 \mathrm{Res}(f, \zeta_k) = \frac{1}{6\zeta_k^5} = \frac{1}{6}\zeta_k^{-5}
 $$
@@ -281,20 +291,10 @@ $$
 \begin{align*}
 I_R &= \frac{1}{6} \left( \zeta_0^{-5} + \zeta_1^{-5} + \zeta_2^{-5} \right) \\ 
 &= \frac{1}{6} \left( \zeta_5^{5} + \zeta_4^{5} + \zeta_3^{5} \right) \\
-&= \frac{1}{6} \left( \zeta_3 + \zeta_4 + \zeta_5 \right) \\
-&= -\frac{1}{6} \left( \zeta_0 + \zeta_1 + \zeta_2 \right) \\
-&= -\frac{1}{6} \left( \zeta_0 + \zeta_1 - \bar{\zeta_0} \right)
+&= \frac{1}{6} \left( \zeta_3 + \zeta_4 + \zeta_5 \right)
 \end{align*}
 $$
-We can identify $\zeta_1 = e^{i\pi/2} = i$ and use the identity $z-\bar{z} = 2i~\mathrm{Im}(z)$ and the fact that $\zeta_0 = e^{i\pi /6} = \cos(\pi/6) + i\sin(\pi/6) = \frac{\sqrt 3}{2} + \frac{1}{2}i$ to obtain $\zeta_0 + \bar{\zeta_0} = 2i(\frac{1}{2}) = i$ to and find that 
-$$
-I_R= -\frac 1 6 (i + i) = -\frac{1}{3}i
-$$
-and thus
-$$
-\oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i(-\frac 1 3 i) = \frac{2\pi} 3 
-$$
-Since this doesn't depend on $R$, taking the limit in equation $(\ref{main})$ yields this as our solution.
+
 
 
 
