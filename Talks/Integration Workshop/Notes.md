@@ -301,7 +301,6 @@ $$
 \end{align*}
 $$
 
-which is precisely what 
+which is precisely what we obtained with the first approach.
 
-
-## Cauchy's Integral Formula
+### Approach 3: Cauchy's Integral Formula
