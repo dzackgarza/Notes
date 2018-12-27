@@ -209,7 +209,7 @@ Directly applying this theorem, we can write
 $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = \sum_{k=0}^2 \mathrm{Res}(f, \zeta_k) = \mathrm{Res}(f, e^{\frac{i\pi}{6}} ) + \mathrm{Res}(f, e^{\frac{i\pi}{2}}) + \mathrm{Res}(f, e^{\frac{i 5\pi}{6}})
 $$
-For the first term, we write
+Then, applying our residue workhorse and taking $p(z) = 1, q(z) = z^6+1$, and computing $q'(z) = 6z^5$, we find that $\mathrm{Res}(f, \zeta_k) = \frac{1}{6\zeta_k^5}$
 
 
 
