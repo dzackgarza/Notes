@@ -223,7 +223,12 @@ $$
 
 These are all of the form
 $$
-\frac{a}{b(z-\zeta_i)} = \frac{a}{b}\frac{1}{z-\zeta} = \frac{a}{b\zeta}\frac{1}{\frac{z}{\zeta}-1}
+\begin{align*}
+\frac{a}{b(z-\zeta)} &= \frac{a}{b} \left( \frac{1}{z-\zeta} \right)  \\ 
+&= \frac{a}{b} \left( \frac{1/\zeta}{\frac{z}{\zeta}-1}\right) \\
+&= \frac{a}{b\zeta} \left( \frac{1}{\frac{z}{\zeta}-1}\right) \\
+&= \frac{a}{b\zeta} \left( \frac{1}{1 - z'}\right) \\
+\end{align*}
 $$
 
 
