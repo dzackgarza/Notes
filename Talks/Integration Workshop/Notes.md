@@ -197,7 +197,7 @@ where applying the estimation lemma and taking the limit yields
 $$
 \left\lvert \int_{C_R} \frac{1}{z^6+1}~dz \right\rvert  \leq \left\lvert \frac{\pi R}{R^6-1}\right\rvert \to 0
 $$
-ThusIt now only remains to compute the first term, the integral around the closed contour.
+Thus for $R$ large enough, the contribution the integral along the semicircular portion of the contour will vanish. It now only remains to compute the first term, the integral around the entire closed contour.
 
 We first need examine the singularities that $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. We can generate one easily as $e^{\frac{i\pi}{6}}$ since $e^{i\pi} = -1$, and generate new ones by adding angle multiples of $2k\pi$. This yields 6 unique points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)} = e^{\frac{i\pi}{6}(2k+1)}$ where $k$ ranges from $0$ to $5$. 
 
@@ -230,6 +230,8 @@ $$
 \end{align}
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
+
+It is also worth noting at this point that one could alternatively factor the de
 
 To make things slightly cleaner, if we label the roots clockwise as $\zeta_i, i=0,1,\cdots 5$, this can be rewritten as 
 $$
@@ -283,6 +285,8 @@ $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i(-\frac 1 3 i) = \frac{2\pi} 3
 $$
 Since this doesn't depend on $R$, taking the limit in equation $(\ref{main})$ yields this as our solution.
+
+
 
 ## Approach 2: Nice Theorems
 
