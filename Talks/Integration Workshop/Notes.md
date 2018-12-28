@@ -292,7 +292,7 @@ Since this does not depend on $R$, taking the limit in equation $(\ref{main})$ y
 
 Noting that the prior approach is slightly onerous, we can instead apply some slick theorems to simplify computing residues.
 
-In particular,applying our residue workhorse and taking $p(z) = 1,~ q(z) = z^6+1$, and then computing $q'(z) = 6z^5$, we find that
+In particular, applying the **residue workhorse** and taking $p(z) = 1,~ q(z) = z^6+1$, we can compute $q'(z) = 6z^5$ and find that
 $$
 \mathrm{Res}(f, \zeta_k) = \frac{1}{6\zeta_k^5} = \frac{1}{6}\zeta_k^{-5}
 $$
