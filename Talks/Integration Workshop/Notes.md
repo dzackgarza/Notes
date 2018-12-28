@@ -252,7 +252,7 @@ $$
 &= -\frac{a}{\zeta_i} \left( 1 + \frac{z}{\zeta_i} + (\frac{z}{\zeta_i})^2 + (\frac{z}{\zeta_i})^3 + \cdots\right)
 \end{align*}
 $$
-So if we fix one $\zeta_k$ and wish to compute the Laurent expansion about that point, we find that all 5 other terms can be expanded in this way - but most importantly, none of these 5 will contribute a term of the form $\frac{1}{z-\zeta_k}$. We thus compute $\mathrm{Res}(f, \zeta_k)$ by picking the numerator off of the term with $\zeta_k$ in the denominator and multiplying by $\frac 1 6$, which yields
+So if we fix one $\zeta_k$ and wish to compute the Laurent expansion about that point, we find that all 5 other terms can be expanded in this way - but most importantly, none of these 5 will contribute a term of the form $\frac{1}{z-\zeta_k}$. We thus compute $\mathrm{Res}(f, \zeta_k)$ by picking the numerator off of the term with $\zeta_k$ in the denominator (and multiplying by $\frac 1 6$) which yields
 $$
 \begin{align*}
 \mathrm{Res}(f, \zeta_0) &= \frac 1 6 \zeta_3 \\
@@ -272,9 +272,9 @@ $$
 \end{align*}
 $$
 
-We can identify $\zeta_1 = e^{i\pi/2} = i$ and use the identity $z-\bar{z} = 2i~\mathrm{Im}(z)$ and the fact that 
+We can readily identify $\zeta_1 = e^{i\pi/2} = i$ and use the identity $z-\bar{z} = 2i~\mathrm{Im}(z)$ and the fact that 
 $$
-\zeta_0 = e^{i\pi /6} = \cos(\pi/6) + i\sin(\pi/6) = \frac{\sqrt 3}{2} + \frac{1}{2}
+\zeta_0 = e^{i\pi /6} = \cos(\pi/6) + i\sin(\pi/6) = \frac{\sqrt 3}{2} + \frac{1}{2}i
 $$
 to obtain $\zeta_0 + \bar{\zeta_0} = 2i(\frac{1}{2}) = i$. We then find that 
 $$
@@ -284,7 +284,7 @@ and thus
 $$
 \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz = 2\pi i(-\frac 1 3 i) = \frac{2\pi} 3
 $$
-Since this doesn't depend on $R$, taking the limit in equation $(\ref{main})$ yields this as our solution.
+Since this does not depend on $R$, taking the limit in equation $(\ref{main})$ yields this as our solution.
 
 
 
