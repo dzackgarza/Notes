@@ -231,7 +231,7 @@ $$
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
 
-It is also worth noting at this point that one could alternatively factor the de
+It is also worth noting at this point that one could alternatively factor the denominator, write the fraction as a product of
 
 To make things slightly cleaner, if we label the roots clockwise as $\zeta_i, i=0,1,\cdots 5$, this can be rewritten as 
 $$
