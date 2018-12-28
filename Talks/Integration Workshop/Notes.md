@@ -354,7 +354,7 @@ In all cases, we end up reducing the hard (or sometimes impossible) problem of c
 
 This technique is useful whenever one is trying to integrate functions of the form
 $$
-\int 
+\int_0^\theta f(\cos(\omega_1 x), \sin(\omega_2 x)) ~dx
 $$
 
 
