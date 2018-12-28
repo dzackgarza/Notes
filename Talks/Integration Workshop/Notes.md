@@ -352,4 +352,4 @@ In all cases, we end up reducing the hard (or sometimes impossible) problem of c
 
 
 
-[^partial_fraction]: It is also worth noting that one could take $\frac{1}{x^6+1}$, factor the denominator and break this up as a product of 6 fractions. One can then proceed to expand each ina 
+[^partial_fraction]: It is also worth noting that one could take $\frac{1}{x^6+1}$, factor the denominator, and break this into a product of 6 fractions. One can then proceed to expand each in a power series, and begin collecting terms to find the desired coefficients.
