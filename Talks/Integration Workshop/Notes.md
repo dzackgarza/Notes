@@ -27,7 +27,11 @@ To cover if less than 50% of attendees haven't taken both courses in complex ana
     \int_\gamma f(z)~dz = \int_a^b f(\gamma(t)) \gamma'(t) ~dt
     $$
     This is the first and most basic way to compute such an integral.
-    Alternatively, if $f$ can be written as a function of a real variable $t$ over an interval $[a,b]$, 
+    Alternatively, if $f: \R \to \C$ can be written as a function of a real variable $t$ over an interval $[a,b]$, then it can be split into real imaginary parts and we can define
+    $$
+    \int_a^b f(t) ~dt = \int_a^b u(t) + iv(t) ~dt= \int_a^b u(t)~dt + i\int_a^b v(t) ~dt
+    $$
+    
 
 - Complex Antiderivative
 
