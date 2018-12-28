@@ -167,9 +167,9 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
   - The trick: only need to know how to compute a contour integral on a circle around a single pole $z_0$ of order $n$, thus want to compute some $\oint g(z)$. So just rewrite $g(z) = \frac{f(z)}{(z-z_0)^n}$ (i.e. ‘extract’ the nonsingular part for the numerator) and apply this theorem.
 
-# A Demonstrative Example
+# Example 1: A Reciprocal of a Polynomial
 
-Want to compute the following integral:
+Suppose we want to compute the following integral:
 $$
 I = \int_{-\infty}^\infty \frac{1}{x^6+1} ~dx
 $$
@@ -197,7 +197,7 @@ where applying the estimation lemma and taking the limit yields
 $$
 \left\lvert \int_{C_R} \frac{1}{z^6+1}~dz \right\rvert  \leq \left\lvert \frac{\pi R}{R^6-1}\right\rvert \to 0
 $$
-It now only remains to compute the first term, the integral around the closed contour.
+ThusIt now only remains to compute the first term, the integral around the closed contour.
 
 We first need examine the singularities that $\Gamma_R$ encloses. This amounts to looking at where $\frac{1}{z^6+1}$ blows up, which are exactly the points $z^6 = -1$, or the complex sixth roots of -1. We can generate one easily as $e^{\frac{i\pi}{6}}$ since $e^{i\pi} = -1$, and generate new ones by adding angle multiples of $2k\pi$. This yields 6 unique points $\zeta_k = e^{i(\frac \pi 6 + \frac {2k\pi} 6)} = e^{\frac{i\pi}{6}(2k+1)}$ where $k$ ranges from $0$ to $5$. 
 
