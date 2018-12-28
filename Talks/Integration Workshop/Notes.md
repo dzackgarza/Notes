@@ -221,7 +221,11 @@ For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = 
 
 This is rarely the method one would actually use in practice, but it's perhaps worth detailing it here. By definition, the residue of $f$ at $z_i$ is the coefficient of $\frac{1}{z-z_i}$ in the Laurent expansion of $f$  at $z=z_i$. In principal, this can always be done for rational functions, primarily using the known geometric series $\frac{1}{1-z} = 1 + z + z^2 + \cdots =  \sum_{k=1}^\infty z^k$. 
 
-In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation. This can be done by hand, but for our purposes, we'll use SAGE  to get the decomposition relatively quickly:
+In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation.
+
+[^undefined]: 
+
+ This can be done by hand, but for our purposes, we'll use SAGE  to get the decomposition relatively quickly:
 $$
 \begin{align}
 \frac{1}{z^6+1} &= \frac{e^{\frac{11 i\pi}{6}}}{6 \left(z- e^{\frac{5 i\pi}{6}} \right)} + \frac{e^{\frac{7 i\pi}{6}}}{6 \left(z- e^{\frac{i \pi}{6}}\right)} + \frac{e^{\frac{5 i\pi}{6}}}{6 \left(z- e^{\frac{11 i\pi}{6}}\right)} \\ 
@@ -230,8 +234,6 @@ $$
 \end{align}
 $$
 (See the referenced notebook to get an idea of how this can be computed.)
-
-It is also worth noting at this point that one could alternatively factor the denominator, write the fraction as a product of
 
 To make things slightly cleaner, if we label the roots clockwise as $\zeta_i, i=0,1,\cdots 5$, this can be rewritten as 
 $$
