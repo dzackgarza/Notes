@@ -356,7 +356,7 @@ This technique is useful whenever one is trying to integrate functions of the fo
 $$
 \int_a^b f(\cos(\omega_1 \theta), \sin(\omega_2 \theta)) ~d\theta
 $$
-where $a,b, \omega_1, \omega_2$ are constants. In other words
+where $a,b, \omega_1, \omega_2$ are constants. Example integrands might be things like $1+\sin(2\theta), \sin\theta + 4\cos(\pi \theta),$ or $\frac{1+\sin\theta}{}$ 
 
 
 
