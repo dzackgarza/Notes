@@ -22,7 +22,7 @@ To cover if less than 50% of attendees haven't taken both courses in complex ana
 
 - Complex Integral
 
-  - Basic idea: defined like a line/path integral in vector calculus, we use the parameterization to reduce it to a real integral. If $\gamma$ is supported on the real interval $[a, b]$ then we let
+  - Basic idea: defined like a line/path integral in vector calculus, we use a parameterization of the contour to reduce it to a real integral. If $\gamma$ is supported on the real interval $[a, b]$ then we let
     $$
     \int_\gamma f(z)~dz = \int_a^b f(\gamma(t)) \gamma'(t) ~dt
     $$
