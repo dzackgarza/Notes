@@ -221,9 +221,7 @@ For example, $\frac{1}{x^2-4} = \frac{1}{(x-2)(x-(-2))} = \frac{1/(x-2)}{x+2} = 
 
 This is rarely the method one would actually use in practice, but it's perhaps worth detailing it here. By definition, the residue of $f$ at $z_i$ is the coefficient of $\frac{1}{z-z_i}$ in the Laurent expansion of $f$  at $z=z_i$. In principal, this can always be done for rational functions, primarily using the known geometric series $\frac{1}{1-z} = 1 + z + z^2 + \cdots =  \sum_{k=1}^\infty z^k$. 
 
-In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation.
-
-[^undefined]: 
+In this case, we can use partial fractions to expand $\frac{1}{z^6 + 1}$ - this is a messy but straightforward computation.[^partial_fraction] 
 
  This can be done by hand, but for our purposes, we'll use SAGE  to get the decomposition relatively quickly:
 $$
@@ -351,3 +349,7 @@ which is precisely what we obtained by the previous two methods.
 # The Takeaway
 
 In all cases, we end up reducing the hard (or sometimes impossible) problem of computing a real integral using calculus in $\R$ to what are essentially algebra problems in $\C$, primarily the manipulation of polynomials and roots of unity. Although these techniques may seem quite involved at first glance, a bit of practice makes them fast enough to rival the standard set of single variable real calculus techniques.
+
+
+
+[^partial_fraction]: It is also worth noting that one could take $\frac{1}{x^6+1}$, factor the denominator and break this up as a product of 6 fractions. One can then proceed to expand each ina 
