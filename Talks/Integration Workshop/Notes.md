@@ -352,6 +352,10 @@ In all cases, we end up reducing the hard (or sometimes impossible) problem of c
 
 # Example 2: Integrals Containing Trig Functions
 
+This technique is useful whenever one is trying to integrate functions of the form
+$$
+\int 
+$$
 
 
 
