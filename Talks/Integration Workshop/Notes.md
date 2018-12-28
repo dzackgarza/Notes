@@ -356,7 +356,7 @@ This technique is useful whenever one is trying to integrate functions of the fo
 $$
 \int_a^b f(\cos(\omega_1 \theta), \sin(\omega_2 \theta)) ~d\theta
 $$
-where $a,b, \omega_1, \omega_2$ are constants. Example integrands might be things like $1+\sin(2\theta), \sin\theta + 4\cos(\pi \theta),$ or $\frac{13+\sin\theta}{5 + \cos^2\theta }$. While these may be amenable to the usual trigonometric substitutions from real calculus, but an alternative technique is to use a substitution to reduce these integrands to polynomials in a complex variable $z$.
+where $a,b, \omega_1, \omega_2$ are constants. Example integrands might be things like $1+\sin(2\theta), \sin\theta + 4\cos(\pi \theta),$ or $\frac{13+\sin\theta}{5 + \cos^2\theta }$. While these may be amenable to the usual trigonometric substitutions from real calculus, but an alternative technique is to use a substitution to transform the integrands into polynomials in a complex variable $z$, and the real integral into a contour integral. This allows 
 
 
 
