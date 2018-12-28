@@ -27,7 +27,7 @@ To cover if less than 50% of attendees haven't taken both courses in complex ana
     \int_\gamma f(z)~dz = \int_a^b f(\gamma(t)) \gamma'(t) ~dt
     $$
     This is the first and most basic way to compute such an integral.
-    Alternatively, if $f$ is 
+    Alternatively, if $f$ 
 
 - Complex Antiderivative
 
