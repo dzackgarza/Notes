@@ -208,7 +208,9 @@ Counterexamples to inclusions are strict:
 - The Chinese Remainder Theorem for Rings
 - Polynomial Rings
 	- Irreducible Polynomials
-		- Over $Z2: x,x+1,x2+x+1,x3+x+1,x3+x2+1Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1\ZZ_2: $
+		- Over $\ZZ_2$: 
+		$$ x,~ x+1,~ x^2+x+1,~ x^3+x+1,~ x^3+x^2+1 
+		$$
 		- Eisenstein's Criterion
 - Gauss' Lemma
 - When is $\QQ[\sqrt d]$ a field? #todo
