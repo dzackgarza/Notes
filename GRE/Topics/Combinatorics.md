@@ -40,7 +40,9 @@ $$
 	- Counts the number of ways to partition a set $N$ into $k$ non-empty subsets $S_i$ (i.e. such that $S_i \cap S_j = \emptyset,~\coprod_{i=1}^k S_i = N$)
 	- Recurrence relation:
 		$$
-		\left\{ \begin{array} { c } { n + 1 } \\ { k } \end{array} \right\} = k \left\{ \begin{array} { l } { n } \\ { k } \end{array} \right\} + \left\{ \begin{array} { c } { n } \\ { k - 1 } \end{array} \right\}\\ \\ \stirling 0 0 = 1,\quad \stirling n 0 = \stirling 0 n = 0
+		\stirling{n+1}{k} = k\stirling{n}{k} + \stirling{n}{k-1} \\ 
+		\stirling 0 0 = 1,
+		\quad \stirling n 0 = \stirling 0 n = 0
 		$$
 	- Explicit formula: $\stirling n k = \frac 1 {k!} \sum_{i=0}^k (-1)^{k-i} {k \choose i} i^n$
 	- $B_n = \sum_{i=0}^n \stirling n i$
