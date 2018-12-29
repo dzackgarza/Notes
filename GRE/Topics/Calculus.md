@@ -5,7 +5,7 @@
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} g(t) dt = g(b(x))b'(x) - g(a(x))a'(x)
 	$$
 - The generalized Fundamental Theorem of Calculus
-	$$\begin{align}
+	$$\begin{align*}
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
 	f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\ \\
 	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align}
@@ -24,7 +24,7 @@
 	- $\lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)}$ exists
 	$$\implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } = \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }$$
 - Taylor Expansions:
-	$$ \begin{align}
+	$$ \begin{align*}
 	T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
 	&= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ & \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
 	\end{align}$$
@@ -122,7 +122,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	\int u dv = uv - \int v du
 	$$
 	- A more general form for repeated applications: let $v^{-1} = \int v$, $v^{-2} = \int\int v$, etc.
-	$$\begin{align}
+	$$\begin{align*}
 	\int_a^b uv &= uv^{-1}\bigg\rvert_a^b  - \int_a^b u^{1} v^{-1}\\
 	&= uv^{-1} - u^1v^{-2}\bigg\rvert_a^b + \int_a^b u^2v^{-2} \\
 	&= uv^{-1} - u^1v^{-2} + u^2v^{-3}\bigg\rvert_a^b - \int_a^b u^3v^{-3} \\
@@ -133,7 +133,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	- Shoelace method:
 	- Note: you can choose $u$ or $v$ equal to 1! Useful if you know the derivative of the integrand.
 - Differentiating under the integral
-	$$\begin{align}
+	$$\begin{align*}
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
 	f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)}\\
 	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align}
@@ -158,7 +158,7 @@ $\vdots$  | $\vdots$  |$\vdots$   |$\vdots$
 Fill out until one column is zero (alternate signs). Get the result column by multiplying diagonally, then sum down the column.
 
 - Trigonometric Substitution
-	$$\begin{align}
+	$$\begin{align*}
 	\sqrt{a^2-x^2} && \Rightarrow && x = a\sin(\theta) &&dx = a\cos(\theta)~d\theta \\
 	\sqrt{a^2+x^2} && \Rightarrow && x = a\tan(\theta) &&dx = a\sec^2(\theta)~d\theta \\
 	\sqrt{x^2 - a^2} && \Rightarrow && x = a \sec(\theta) &&dx = a\sec(\theta)\tan(\theta)~d\theta
@@ -167,7 +167,7 @@ Fill out until one column is zero (alternate signs). Get the result column by mu
 - Completing the Square #todo
 - Trig Formulas
 	- Double angle formulas:
-	$$\begin{align}
+	$$\begin{align*}
 	\sin^2(x) && = && \frac{1}{2}(1-2\cos x) \\
 	&& = && \\
 	&& = && \\

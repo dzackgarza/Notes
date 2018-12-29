@@ -19,7 +19,7 @@ $$\begin{array}{c|ccc}
 \frac{\pi}{2} && \frac{\sqrt 4}{2} && \frac{\sqrt 0}{2} && \infty
 \end{array}$$
 
-$$\begin{align}
+$$\begin{align*}
 (a+b)^2 = && \hspace{20em} a^2 + b^2 + 2ab \\
 (a-b)^2 = && a^2 + b^2 - 2ab \\
 a^2+b^2 = && (a+b)^2 + 2ab \\
@@ -35,7 +35,7 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 (a+b)(a-b) = && a^2 + b^2
 \end{align}$$
 
-$$\begin{align}  
+$$\begin{align*}  
 \frac{\partial f}{\partial{x}}\Leftarrow && f && \Rightarrow\int f dx   \\
 \hline \\
 \frac{1}{2\sqrt{x}} && \sqrt{x} && \frac{2}{3}x^{\frac{3}{2}} \\
@@ -70,13 +70,13 @@ a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 \end{align}
 $$
 
-$$\begin{align}
+$$\begin{align*}
 \sqrt{a^2-x^2} && \Rightarrow && x = a\sin(\theta) &&dx = a\cos(\theta)~d\theta \\
 \sqrt{a^2+x^2} && \Rightarrow && x = a\tan(\theta) &&dx = a\sec^2(\theta)~d\theta \\
 \sqrt{x^2 - a^2} && \Rightarrow && x = a \sec(\theta) &&dx = a\sec(\theta)\tan(\theta)~d\theta
 \end{align}$$
 
-$$\begin{align}
+$$\begin{align*}
 p(y)y' = q(x) && \hspace{10em} \text{separable} \\ \\
 y'+p(x)y = q(x) && \text{integrating factor} \\ \\
 y' = f(x,y), f(tx,ty) = f(x,y) && y = xV(x)\text{ COV reduces to separable} \\ \\

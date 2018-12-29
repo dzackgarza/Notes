@@ -94,7 +94,7 @@ Cones: | $\frac {\pi r^2} h$
 			- $\tan^2 + 1 = \sec^2$
 			- $1 + \cot^2 x = \csc^2 x$
 		- Just listing what conclusions you can pull out of these permutations:
-		$$\begin{align}
+		$$\begin{align*}
 		\sin^2 x &= 1-\cos^2 x \\
 		\cos^2 x &= 1-\sin^2 x \\
 		\tan^2 x &= \sec^2 - 1 \\
@@ -110,7 +110,7 @@ Cones: | $\frac {\pi r^2} h$
 		\end{align}$$
 
 	- A derivation with multiple payoffs:
-		$$\begin{align}
+		$$\begin{align*}
 		\cos(a+b) + i\sin(a+b) &= e^{i(a-b)} \\
 		&=(\cos a + i\sin a)(\cos b - i\sin b) \\
 		&= (\cos a\cos b + \sin a \sin b) + i(\sin a \cos b + \cos a \sin b)
@@ -132,7 +132,7 @@ Cones: | $\frac {\pi r^2} h$
 - Law of Cosines $$ a^2 = b^2 + c^2 - 2bc\cos\theta_A$$
 	- Totally symmetric under any swap of two symbols
 	- Derivation: pick the vertex corresponding to $A$, label the vectors to the other two vertices $\mathbf x, \mathbf y$, then
-		$$\begin{align}
+		$$\begin{align*}
 		\abs{\mathbf x - \mathbf y}^2 &= \inner[\mathbf x - \mathbf y]{\mathbf x - \mathbf y} \\
 		&= \abs{\mathbf x}^2 + \abs{\mathbf y}^2 - 2\inner[\mathbf x]{\mathbf y} \\
 		&= \abs{\mathbf x}^2 + \abs{\mathbf y}^2 - 2\abs{\mathbf x}\abs{\mathbf y}\cos\theta

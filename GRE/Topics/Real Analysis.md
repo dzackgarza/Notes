@@ -204,7 +204,7 @@ Proof that $f$ differentiable $\implies f \in C^0$:
 ## Giant Table of Relations
 Bold are assumed hypothesis, regular text is the strongest conclusion you can reach, strikeout denotes implications that aren't necessarily true.
 
-$$\begin{align}
+$$\begin{align*}
 f' && f && \therefore f && F \\
 \hline \\
 \strike{\text{exists}} && \mathbf{continuous} &&  \text{K-integrable} && \text{exists} \\

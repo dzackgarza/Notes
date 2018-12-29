@@ -1,5 +1,5 @@
 ## Techniques Overview
-$$\begin{align}
+$$\begin{align*}
 p(y)y' = q(x) && \hspace{10em} \text{separable} \\ \\
 y'+p(x)y = q(x) && \text{integrating factor} \\ \\
 y' = f(x,y), f(tx,ty) = f(x,y) && y = xV(x)\text{ COV reduces to separable} \\ \\
@@ -68,7 +68,7 @@ Methods of obtaining particular solutions
 - Substitute trial solution into original equation to determine $A_0$
 
 Useful Annihilators:
-$$\begin{align}
+$$\begin{align*}
 &F(x) = p(x): & D^{\deg(p)+1} \\
 &F(x) = p(x)e^{ax}: & (D-a)^{\deg(p)+1}\\
 &F(x) = \cos(ax) + \sin(ax): & D^2 + a^2\\
@@ -104,7 +104,7 @@ $$ H_ { a } ( t ) = \left\{ \begin{array} { l l } { 0 , } & { 0 \leq t < a } \\ 
 (f \ast g )(t) = \int_0^t f(t-s)g(s)~ds
 $$
 Useful property: for $a\leq b$, $H_a(t) - H_b(t) = \indicator[a,b]$.
-$$\begin{align}
+$$\begin{align*}
 t^n, n\in\NN \quad&\iff  &n!\frac{1}{s^{n+1}},\quad &s > 0 \\
 t^{-\frac{1}{2}} \quad&\iff &\sqrt{\pi} s^{-\frac{1}{2}}\quad & s>0\\
 e^{at} \quad&\iff &\frac{1}{s-a},\quad &s > a \\

@@ -54,7 +54,7 @@ z \arrow[rd] \arrow[ru] \arrow[rrru] \arrow[rrrd] &  &  &  \\
 
 Then sum each possible path, e.g.
 
-$$\begin{align}
+$$\begin{align*}
 \left(\dd[z]{x}\right)_y &= \left(\dd[z]{x}\right)_{u,y,v} \\
 & + \left(\dd[z]{v}\right)_{x,y,u} \left(\dd[v]{x}\right)_y \\
 & + \left(\dd[z]{u}\right)_{x,y,v} \left(\dd[u]{x}\right)_{v,y}  \\

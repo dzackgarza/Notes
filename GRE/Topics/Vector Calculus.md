@@ -27,7 +27,7 @@ $$	\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = 	\oint _ { \part
 
 ## Definitions
 
-$$\begin{align}
+$$\begin{align*}
 \mathbf a \cdot \mathbf b
 = \inner[\mathbf x]{\mathbf y}
 = \sum_{i=1}^n {x_i y_i} = x_1y_1 + x_2y_2 + \cdots
@@ -81,7 +81,7 @@ a
 
 
 - Function Types
-$$\begin{align}
+$$\begin{align*}
 \nabla: (\RR^n \to \RR) &\to (\RR^n \to \RR^n) \\
 \phi &\mapsto \nabla \phi \definedas \sum_{i=1}^n \frac{\partial \phi}{\partial x_i} ~\mathbf{e}_i \\ \\
 \text{}
@@ -95,7 +95,7 @@ $$\begin{align}
 \end{align}$$
 
 - Some terminology:
-$$\begin{align}
+$$\begin{align*}
 \text{Scalar Field} && \phi:&~ X \to \RR \\
 \text{Vector Field} && \mathbf{F}:&~ X\to \RR^n\\
 \text{Gradient Field} && \mathbf{F}:&~ X \to \RR^n \mid \exists \phi: X\to \RR \mid \nabla \phi = F
@@ -124,7 +124,7 @@ $$,
 - **Line Integrals Of Curves**
 	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then
 
-$$\begin{align}
+$$\begin{align*}
 \int_C f ~ds
 &\definedas \int_a^b (f\circ \mathbf{r})(t) ~\norm{\mathbf{r}'(t)}~dt \\
 &= \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt
@@ -138,7 +138,7 @@ $$\begin{align}
 	$$
 	The function $\phi$ can be found using the same method from ODEs.
 	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then
-$$\begin{align}
+$$\begin{align*}
 \int_C \mathbf F \cdot d\mathbf r
 & \definedas \int_a^b (\mathbf F \circ \mathbf r)(t) \cdot \mathbf r'(t) ~dt \\
 &= \int_a^b [\mathbf F_1(x(t), y(t), \cdots), \mathbf F_2(x(t), y(t), \cdots)]\cdot[x_t, y_t, \cdots] ~dt \\

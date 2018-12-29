@@ -1,7 +1,7 @@
 Notation: $z = a + ib, f(z) = u(x,y) + iv(x,y)$
 
 ## Useful Equations and Definitions
-$$\begin{align}
+$$\begin{align*}
 \abs{z} &= \sqrt{a^2 + b^2} \\
 \abs{z}^2 = z\conjugate{z} &= a^2 + b^2 \\
 \frac{z\conjugate{z}}{\abs{z}^2} &= \frac{(a+ib)(a-ib)}{a^2 + b^2} = 1 \\

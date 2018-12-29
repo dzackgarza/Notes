@@ -8,7 +8,7 @@
 - [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
 
 ## Big List of Notation
-$$\begin{align}
+$$\begin{align*}
 C(x) =&& \theset{g\in G : gxg^{-1} = x} && \subseteq G && \text{Centralizer} \\
 C_G(x) = && \theset{gxg^{-1} : g\in G} && \subseteq G && \text{Conjugacy Class} \\
 G_x = && \theset{g.x : x\in X} && \subseteq X && \text{Orbit} \\
@@ -98,7 +98,7 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
 
 
 - Isomorphism Theorems
-	$$ \begin{align}
+	$$ \begin{align*}
 	\phi: G \to G' \implies && \frac{G}{\ker{\phi}} \cong &~ \phi(G) \\
 	H \normal G,~ K < G \implies && \frac{K}{H\intersect K} \cong &~ \frac{HK}{H} \\
 	H,K \normal G,~ K < H \implies && \frac{G/K}{H/K} \cong &~ \frac{G}{H}
