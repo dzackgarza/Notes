@@ -188,7 +188,7 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
   - Integral Domain
   - Division Ring
 
-- \text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}
+- $field⟹Euclidean Domain⟹PID⟹UFD⟹integral domain\text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}$
 
   
 
@@ -208,7 +208,7 @@ Counterexamples to inclusions are strict:
 - The Chinese Remainder Theorem for Rings
 - Polynomial Rings
 	- Irreducible Polynomials
-		- Over $Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1\ZZ_2: x, x+1, x^2+x+1, x^3+x+1,x^3+x^2+1$
+		- Over $\ZZ_2: ~ x,x+1,x2+x+1,x3+x+1,x3+x2+1Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1$
 		- Eisenstein's Criterion
 - Gauss' Lemma
 - When is $\QQ[\sqrt d]$ a field? #todo
