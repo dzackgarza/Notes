@@ -62,7 +62,7 @@ $$
 ## Common Problems
 - Stars and Bars
 	- No two bars adjacent: $n-1\choose k-1$
-	- Allowing adjacent bars: $n+k-1 \choose k-1$movie re
+	- Allowing adjacent bars: $n+k-1 \choose k-1$
 
 Coupon Collectors Problem
 
@@ -97,14 +97,16 @@ Dictionary:
 - Partitions of $N$ into $k$ subsets = surjective functions / $S_k$
 - Compositions of $n$ into $k$ parts = surjective functions / $S_n$
 
-$$\begin{array}{c|c|c|c}
+$$
+\begin{array}{c|c|c|c}
 \text{Permutations \ Restrictions}  & N \mapsvia{f} K & N \injects K & N \surjects K
 \\ \hline
 f 															& k^n & k^{\underline{n}} & k! \stirling{n}{k}  \\
 f \circ \sigma_N 								& {n+k-1}\choose n & k\choose n & {n-1}\choose{n-k} \\
 \sigma_X \circ f 								& \sum_{i=0}^k \stirling{n}{i} & \indicator{n \leq k} & \stirling{n}{k}\\
 \sigma_X \circ f \circ \sigma_N & p_k(n+k) & \indicator{n \leq k} & p_k(n)
-\end{array}$$
+\end{array}
+$$
 
 In words:
 Perm. / Rest.  | ---  | Injective  | Surjective  
