@@ -5,7 +5,7 @@
 - The Sylow Theorems
 	- If $\abs{G} = n = \prod p_i^{k_i}$, for each $ii$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
 - Galois Theory
-- [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
+- More terms: [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
 
 ## Big List of Notation
 $$
