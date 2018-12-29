@@ -159,9 +159,9 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 - The ridiculous trig sub: for any integrand containing only trig terms
 	- Transforms *any* such integrand into a rational function of $x$
 	- Let $u = 2\tan^{-1}x, ~du = \frac{2}{x^2+1}$, then
-$$
-\int_a^b f(x)~dx = \int_{\tan\frac{a}{2}}^{\tan\frac{b}{2}} f(u)~du
-$$
+	$$
+	\int_a^b f(x)~dx = \int_{\tan\frac{a}{2}}^{\tan\frac{b}{2}} f(u)~du
+	$$
 		- Example: $\int_0^{\pi/2} \frac{1}{\sin \theta}~d\theta = 1/2$
 
 Derivatives  | Integrals  |  Signs | Result
@@ -174,22 +174,26 @@ $\vdots$  | $\vdots$  |$\vdots$   |$\vdots$
 Fill out until one column is zero (alternate signs). Get the result column by multiplying diagonally, then sum down the column.
 
 - Trigonometric Substitution
-	$$\begin{align*}
+	$$
+	\begin{align*}
 	\sqrt{a^2-x^2} && \Rightarrow && x = a\sin(\theta) &&dx = a\cos(\theta)~d\theta \\
 	\sqrt{a^2+x^2} && \Rightarrow && x = a\tan(\theta) &&dx = a\sec^2(\theta)~d\theta \\
 	\sqrt{x^2 - a^2} && \Rightarrow && x = a \sec(\theta) &&dx = a\sec(\theta)\tan(\theta)~d\theta
-	\end{align*}$$
+	\end{align*}
+	$$
 - Partial Fractions
 - Completing the Square #todo
 - Trig Formulas
 	- Double angle formulas:
-	$$\begin{align*}
+	$$
+	\begin{align*}
 	\sin^2(x) && = && \frac{1}{2}(1-2\cos x) \\
 	&& = && \\
 	&& = && \\
 	&& = && \\
 	&& = && \\
-	\end{align*}$$
+	\end{align*}
+	$$
 
 - Products of trig functions
 	- Setup: $\int \sin^a(x) \cos^b(x) ~dx$
