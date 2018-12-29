@@ -112,6 +112,7 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
 
 
 
+
 - Lagrange's Theorem: $H < G \implies o(H) \mid o(G)$
   - Converse is false: $o(A_4) = 12$ but has no order 6 subgroup.
 
@@ -208,7 +209,7 @@ Counterexamples to inclusions are strict:
 - The Chinese Remainder Theorem for Rings
 - Polynomial Rings
 	- Irreducible Polynomials
-		- Over $\ZZ_2: ~ x,x+1,x2+x+1,x3+x+1,x3+x2+1Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1$
+		- Over $Z2: x,x+1,x2+x+1,x3+x+1,x3+x2+1Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1\ZZ_2: $
 		- Eisenstein's Criterion
 - Gauss' Lemma
 - When is $\QQ[\sqrt d]$ a field? #todo
