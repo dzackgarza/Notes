@@ -29,10 +29,13 @@
 	= \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }
 	$$
 - Taylor Expansions:
-	$$ \begin{align*}
+	$$ 
+	\begin{align*}
 	T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
-	&= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ & \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
-	\end{align*}$$
+	&= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ 
+	& \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
+	\end{align*}
+	$$
 	Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
 
 ## Differential
