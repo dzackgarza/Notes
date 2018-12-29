@@ -83,7 +83,8 @@ $$
 
 
 - Function Types
-$$\begin{align*}
+$$
+\begin{align*}
 \nabla: (\RR^n \to \RR) &\to (\RR^n \to \RR^n) \\
 \phi &\mapsto \nabla \phi \definedas \sum_{i=1}^n \frac{\partial \phi}{\partial x_i} ~\mathbf{e}_i \\ \\
 \text{}
@@ -94,14 +95,17 @@ $$\begin{align*}
 \mathrm{curl}(\mathbf{F}): (\RR^3 \to \RR^3) &\to (\RR^3 \to \RR^3) \\
 \mathbf{F} &\mapsto \nabla \cross \mathbf{F} \\ \\
 \text{}
-\end{align*}$$
+\end{align*}
+$$
 
 - Some terminology:
-$$\begin{align*}
+$$
+\begin{align*}
 \text{Scalar Field} && \phi:&~ X \to \RR \\
 \text{Vector Field} && \mathbf{F}:&~ X\to \RR^n\\
 \text{Gradient Field} && \mathbf{F}:&~ X \to \RR^n \mid \exists \phi: X\to \RR \mid \nabla \phi = F
-\end{align*}$$
+\end{align*}
+$$
 
 - The Gradient: lifts scalar fields on $\RR^n$ to vector fields on $\RR^n$
 - Divergence: drops vector fields on $\RR^n$ to scalar fields on $\RR^n$
@@ -119,7 +123,7 @@ $$
 x = r\cos\theta = \rho\sin\phi\cos\theta \\
 y = r\sin\theta = \rho\sin\phi\sin\theta \\
 dV \mapsto r^2 \sin\phi \quad dr~d\phi~d\theta
-$$,
+$$
 
 ## Computations
 
