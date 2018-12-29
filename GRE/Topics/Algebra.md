@@ -108,11 +108,6 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
   \end{align*}
   $$
 
-
-
-
-
-
 - Lagrange's Theorem: $H < G \implies o(H) \mid o(G)$
   - Converse is false: $o(A_4) = 12$ but has no order 6 subgroup.
 
