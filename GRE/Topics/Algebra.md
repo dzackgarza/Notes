@@ -191,9 +191,9 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
 
 - $field⟹Euclidean Domain⟹PID⟹UFD⟹integral domain\text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}$
 
-  
 
-  
+
+
 
 Counterexamples to inclusions are strict:
 	- An ED that is not a field:
