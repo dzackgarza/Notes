@@ -94,7 +94,10 @@ General series of steps: want to know some unknown rate $y_t$
 
 ## Integral
 
-- Average values: $$f_{\text{avg}}(x) = \frac{1}{b-a}\int_a^b f(t) dt$$
+- Average values: 
+	$$
+	f_{\text{avg}}(x) = \frac{1}{b-a}\int_a^b f(t) dt
+	$$
 	- Proof: apply MVT to $F(x)$.
 - Area Between Curves
 	- Area in polar coordinates: $$A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta$$
