@@ -64,7 +64,9 @@ Some Pattern Recognition:
 	- i.e. show $\theset{a_i}$ is a Cauchy sequence.
 
 #### Sums
-$$ \sum_{k=1}^\infty a_k x^k$$
+$$ 
+\sum_{k=1}^\infty a_k x^k
+$$
 - Known sums:
 	$$
 	\sum_{k=1}^\infty k^p < \infty \iff p \leq 1 \\
@@ -73,24 +75,26 @@ $$ \sum_{k=1}^\infty a_k x^k$$
 	$$
 	(See appendix for more.)
 - Concrete examples of convergent series:
-		$$
-		\sum_{n=1}^\infty \frac{1}{n^2} < \infty \\
-		\sum_{n=1}^\infty \frac{1}{n^3} < \infty \\
-		\sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} < \infty \\
-		\sum_{n=1}^\infty \frac{1}{n!}  = e \\
-		\sum_{n=1}^\infty \frac{1}{c^n} = \frac{c}{c-1} \\
-		\sum_{n=1}^\infty (-1)^n \frac{1}{c^n} = \frac{c}{c+1} \\
-		\sum_{n=1}^\infty (-1)^n \frac{1}{n} = \ln 2 \\
-		$$
+	$$
+	\sum_{n=1}^\infty \frac{1}{n^2} < \infty \\
+	\sum_{n=1}^\infty \frac{1}{n^3} < \infty \\
+	\sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} < \infty \\
+	\sum_{n=1}^\infty \frac{1}{n!}  = e \\
+	\sum_{n=1}^\infty \frac{1}{c^n} = \frac{c}{c-1} \\
+	\sum_{n=1}^\infty (-1)^n \frac{1}{c^n} = \frac{c}{c+1} \\
+	\sum_{n=1}^\infty (-1)^n \frac{1}{n} = \ln 2 \\
+	$$
 - Concrete examples of divergent series:
-		$$
-		\sum_{n=1}^\infty \frac{1}{n} = \infty \\
-		\sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty \\
-		$$
+	$$
+	\sum_{n=1}^\infty \frac{1}{n} = \infty \\
+	\sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty \\
+	$$
 - NOTE: $a_n\to 0$ does not imply $\sum a_n < \infty$. Counterexample: harmonic series.
 - Absolute convergence $\implies$ convergence
 - **Cauchy Criteria**:
-	$$\limsup a_i \to 0 \implies \sum a_i \text{ converges }$$
+	$$
+	\limsup a_i \to 0 \implies \sum a_i \text{ converges }
+	$$
 - Radius of convergence: use the $\lim \abs{\frac{a_{k+1}x^{k+1}}{a_kx^k}} = \abs{x}\lim \abs{\frac{a_{k+1}}{a_k}} < 1$ will imply convergence, so take $L = \frac{a_{k+1}}{a_k}$ and then $R = \frac{1}{L}$.
 	- Note $L=0 \implies$ absolutely convergent everywhere
 	- $L = \infty \implies$ convergent only at $x=0$.
