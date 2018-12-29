@@ -148,8 +148,8 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 - Differentiating under the integral
 	$$
 	\begin{align*}
-	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
-	f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)}\\
+	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt 
+	&= f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\
 	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)
 	\end{align*}
 	$$
