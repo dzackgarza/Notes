@@ -1,16 +1,14 @@
 ## To Sort
 - Burnside's Lemma
 - Cauchy's Theorem
-  - If $|G|=n=∏piki|G|=n=∏piki|G|=n=∏|G|=n=∏piki|G|=n=∏piki|G|=n=∏piki|G|=n=∏\abs{G} = n = \prod p_i^{k_i}$, then for each $iiiiiiii$ there exists a subgroup $HHHHHHHH$ of order $pipipipipipipip_i$.
+  - If $|G|=n=∏piki|G|=n=∏piki<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>i</mi><mi>k</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mrow><mo>|</mo><mi>G</mi><mo>|</mo></mrow><mrow class="MJX-TeXAtom-ORD"></mrow></msub></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><msubsup><mi>p</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi>k</mi><mi>i</mi></msub></mrow></msubsup></math>|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}​$, then for each $ii<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi><mi>i</mi></math>ii​$ there exists a subgroup $HH<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>H</mi><mi>H</mi></math>HH​$ of order $pipi<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>i</mi><msub><mi>p</mi><mi>i</mi></msub></math>pip_i​$.
 - The Sylow Theorems
-  - If $|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki|G|=n=∏pkii|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}$, for each $iiiiii$ and each $1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1 \leq k_j \leq k_i$ then there exists a subgroup $HHHHHH$ of order $pkjipikjpikjpkjipikjp_i^{k_j}$.
+  - If $|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>k</mi><mi>i</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>i</mi><mi>k</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>i</mi><mi>k</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>k</mi><mi>i</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>i</mi><mi>k</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mrow><mo>|</mo><mi>G</mi><mo>|</mo></mrow><mrow class="MJX-TeXAtom-ORD"></mrow></msub></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><msubsup><mi>p</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi>k</mi><mi>i</mi></msub></mrow></msubsup></math>|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki|G|=n=∏pkii|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}$, for each $iiiiii<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi><mi>i</mi><mi>i</mi><mi>i</mi><mi>i</mi><mi>i</mi></math>iiiiii$ and each $1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><msub><mi>k</mi><mi>j</mi></msub><mo>≤</mo><msub><mi>k</mi><mi>i</mi></msub></math>1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1 \leq k_j \leq k_i$ then there exists a subgroup $HHHHHH<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>H</mi><mi>H</mi><mi>H</mi><mi>H</mi><mi>H</mi><mi>H</mi></math>HHHHHH$ of order $pkjipikjpikjpkjipikjpikj<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>k</mi><mi>j</mi><mi>i</mi><mi>p</mi><mi>i</mi><mi>k</mi><mi>j</mi><mi>p</mi><mi>i</mi><mi>k</mi><mi>j</mi><mi>p</mi><mi>k</mi><mi>j</mi><mi>i</mi><mi>p</mi><mi>i</mi><mi>k</mi><mi>j</mi><msubsup><mi>p</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi>k</mi><mi>j</mi></msub></mrow></msubsup></math>pkjipikjpikjpkjipikjp_i^{k_j}$.
 - Galois Theory
 - [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
 
 ## Big List of Notation
-
-$$
-\begin{align*}
+$$\begin{align*}
 C(x) =&& \theset{g\in G : gxg^{-1} = x} && \subseteq G && \text{Centralizer} \\
 C_G(x) = && \theset{gxg^{-1} : g\in G} && \subseteq G && \text{Conjugacy Class} \\
 G_x = && \theset{g.x : x\in X} && \subseteq X && \text{Orbit} \\
@@ -19,10 +17,7 @@ Z(G) = && \theset{x\in G: \forall g\in G,~ gxg^{-1} = x} && \subseteq G && \text
 \mathrm{Inn}(G) = && \theset{\phi_g(x) = gxg^{-1} } && \subseteq \Aut(G) && \text{Inner Aut.} \\
 \mathrm{Out}(G) = && \Aut(G) / \mathrm{Inn}(G) && \injects \Aut(G) && \text{Outer Aut.} \\
 N(H) = && \theset{g\in G: gHg^{-1} = H} && \subseteq G && \text{Normalizer}
-\end{align*}
-$$
-
-
+\end{align*}$$
 
 ## Group Theory
 Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a generic group operation.
