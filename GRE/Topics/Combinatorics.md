@@ -1,11 +1,13 @@
 ## Notation
-$$\begin{align*}
-S_n &= \theset{?} && \text{the symmetric group} \\
-{n\choose k} 		&= \frac{n!}{k!(n-k)!} && \text{binomial coefficient}\\
-n^\underline k 	&= n(n-1) \cdots (n-k+1) = k!{n\choose k} && \text{falling factorial}\\
-n^{\overline k} &= n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n} \text{} && \text{rising factorial}\\
-{n \choose {m_1, m_2, \cdots m_k}} &= \frac{n!}{\prod_{i=1}^k m_i!} && \text{multinomial coefficient}
-\end{align*}$$
+$$
+\begin{align*}
+S_n 								&= \theset{1,2,\ldots n} 									&& \text{the symmetric group} \\
+{n\choose k} 						&= \frac{n!}{k!(n-k)!} 										&& \text{binomial coefficient}\\
+n^\underline k 						&= n(n-1) \cdots (n-k+1) = k!{n\choose k} 					&& \text{falling factorial}\\
+n^{\overline k} 					&= n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n} \text{} 	&& \text{rising factorial}\\
+{n \choose {m_1, m_2, \cdots m_k}} 	&= \frac{n!}{\prod_{i=1}^k m_i!} 							&& \text{multinomial coefficient}
+\end{align*}
+$$
 
 Note that the rising and falling factorials always have exactly $k$ terms.
 
