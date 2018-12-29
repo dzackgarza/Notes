@@ -162,6 +162,7 @@ a^2+b^2 = && (a+b)^2 + 2ab \\
 a^2- b^2 = && (a+b)(a-b) \\
 (a+b)^3 = &&  a^3 + b^3 + 3(a^2b + ab^2) \\
 (a-b)^3 = &&  a^3 -b^3 + 3(-a^2b +ab^2) \\
+a^3 \pm b^3 = (a \pm b)(a^2 \mp 2ab + b^2) ~~\text{(SOAP: Same/Opposite/Always Positive)}\\
 a^3 + b^3 = &&  (a+b)(a^2+b^2-ab) \\
 a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 (\sqrt a + \sqrt b)^2 = &&  a + b + 2\sqrt{ab} \\
