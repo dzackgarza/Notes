@@ -66,7 +66,7 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 
 - One step subgroup test:
 	$$
-	a,b\in H \implies a b^{-1} \in H \\
+	a,b \in H \implies a b^{-1} \in H \\
 	$$
 
 - Useful isomorphism invariants:
