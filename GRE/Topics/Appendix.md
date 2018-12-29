@@ -1,4 +1,5 @@
 ## Definitions
+
 $$
 e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n
 $$
@@ -6,6 +7,7 @@ $$
 ## Neat Tricks
 
 - Commuting differentials and integrals:
+
 $$
 \frac{d}{dx} \int_{a(x)}^{b(x)} f(x,t) dt = f(x, b(x))\frac{d}{dx}b(x) - f(x, a(x))\frac{d}{dx}a(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt
 $$
@@ -16,6 +18,7 @@ $$
 
 
 ## Big Derivative / Integral Table
+
 $$
 \begin{align*}
 \frac{\partial f}{\partial{x}}\Leftarrow && f                           && \Rightarrow\int f dx   \\
@@ -57,22 +60,26 @@ $$
 Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
 
 - Taylor Series:
+
 $$
 f ( x ) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } \left( x _ { 0 } \right) } { n ! } \left( x - x _ { 0 } \right) ^ { n }
 $$
 
 - Cauchy Product:
+
 $$
 \left( \sum_{k=0}^\infty a_k x^k \right)\left( \sum_{k=0}^\infty b_i x^n \right) = \sum_{k=0}^\infty \left( \sum_{i=0}^k a_{n} b_{n} \right)x^k
 $$
 
 - Differentiation:
+
 $$
 \frac{\partial}{\partial x} \sum_{k=i}^\infty a_kx^k = \sum_{k=i+1}^\infty k\,a_k x^{k-1}
 $$
 
 - Common Series
-$$\begin{align*}
+$$
+\begin{align*}
 &\sum_{k=0}^{N} x^k                                                                                                                        &=  \frac{1-x^{N+1}}{1-x} &\\
 &\sum_{k=1}^\infty x^k                                                                                                                     &=  \frac{1}{1-x}& \quad\text{ for } \abs{x} < 1 \\
 &\sum_{k=1}^{\infty } k x ^ {k - 1 }                                                                                                       &=  \frac{1}{( 1 - x ) ^ { 2 } }& \quad \text { for } | x | < 1 \\
