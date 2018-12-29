@@ -188,13 +188,11 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
   - Euclidean Domain:
   - Integral Domain
   - Division Ring
-- $\text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}$
+$$ 
+\text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}
+$$
 
-
-
-
-
-Counterexamples to inclusions are strict:
+- Counterexamples to inclusions are strict:
 	- An ED that is not a field:
 	- A PID that is not an ED: $\QQ[\sqrt {19}]$
 	- A UFD that is not a PID:
