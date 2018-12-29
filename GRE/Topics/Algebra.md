@@ -1,7 +1,7 @@
 ## To Sort
 - Burnside's Lemma
 - Cauchy's Theorem
-  - If $|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}$, then for each $ii$ there exists a subgroup $HH$ of order $pip_i$.
+  - If $|G|=n=∏piki|G|=n=∏piki|G|=n=∏|G|=n=∏piki|G|=n=∏piki|G|=n=∏piki|G|=n=∏\abs{G} = n = \prod p_i^{k_i}$, then for each $iiiiiiii$ there exists a subgroup $HHHHHHHH$ of order $pipipipipipipip_i$.
 - The Sylow Theorems
   - If $|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki|G|=n=∏pkii|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}$, for each $iiiiii$ and each $1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1 \leq k_j \leq k_i$ then there exists a subgroup $HHHHHH$ of order $pkjipikjpikjpkjipikjp_i^{k_j}$.
 - Galois Theory
