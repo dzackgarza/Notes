@@ -24,7 +24,10 @@
 	- $\lim_{x\to pt} f(x) = \lim_{x\to \pt} g(x) \in \theset{0, \pm \infty}$
 	- $\forall x \in I, g'(x) \neq 0$
 	- $\lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)}$ exists
-	$$\implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } = \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }$$
+	$$
+	\implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } 
+	= \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }
+	$$
 - Taylor Expansions:
 	$$ \begin{align*}
 	T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
