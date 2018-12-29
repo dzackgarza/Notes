@@ -83,7 +83,7 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 	- Solvability
 	- Nilpotency
 
-- Useful homomorphim invariants
+- Useful homomorphism invariants
 	- $\phi(e) = e$
 	- $\abs{g} = m < \infty \implies \abs{\phi(g)} = m$
 	- Inverses, i.e. $\phi(a)^{-1} = \phi(a^{-1})$
