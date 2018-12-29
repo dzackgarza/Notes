@@ -1,14 +1,16 @@
 ## To Sort
 - Burnside's Lemma
 - Cauchy's Theorem
-	- If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
+  - If $|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}$, then for each $ii$ there exists a subgroup $HH$ of order $pip_i$.
 - The Sylow Theorems
-	- If $\abs{G} = n = \prod p_i^{k_i}$, for each $i$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
+  - If $|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki|G|=n=∏pkii|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}$, for each $iiiiii$ and each $1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1 \leq k_j \leq k_i$ then there exists a subgroup $HHHHHH$ of order $pkjipikjpikjpkjipikjp_i^{k_j}$.
 - Galois Theory
 - [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
 
 ## Big List of Notation
-$$\begin{align*}
+
+$$
+\begin{align*}
 C(x) =&& \theset{g\in G : gxg^{-1} = x} && \subseteq G && \text{Centralizer} \\
 C_G(x) = && \theset{gxg^{-1} : g\in G} && \subseteq G && \text{Conjugacy Class} \\
 G_x = && \theset{g.x : x\in X} && \subseteq X && \text{Orbit} \\
@@ -17,11 +19,14 @@ Z(G) = && \theset{x\in G: \forall g\in G,~ gxg^{-1} = x} && \subseteq G && \text
 \mathrm{Inn}(G) = && \theset{\phi_g(x) = gxg^{-1} } && \subseteq \Aut(G) && \text{Inner Aut.} \\
 \mathrm{Out}(G) = && \Aut(G) / \mathrm{Inn}(G) && \injects \Aut(G) && \text{Outer Aut.} \\
 N(H) = && \theset{g\in G: gHg^{-1} = H} && \subseteq G && \text{Normalizer}
-\end{align*}$$
+\end{align*}
+$$
+
+
 
 ## Group Theory
 Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a generic group operation.
-- $\ZZ_n$ the unique cyclic group of order $n$
+- $Zn\ZZ_n$ the unique cyclic group of order $nn$
 - $\mathbf{Q}$ the quaternion group
 - $G^n = G\times G \times \cdots G$
 - $Z(G)$ the center of $G$
@@ -50,7 +55,7 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 		- $x\in X \implies e.x = x$
 	- Orbits partition any set
 	- Transitive Action
-	- Conjugacy Class: $C \subset G$ is a conjugacy class $\iff$
+	- Conjugacy Class: $C⊂GC \subset G$ is a conjugacy class $⟺\iff$
 		- $x\in C, g\in G \implies gxg^{-1} \in C$
 		- $x,y \in C \implies \exists g\in G : gxg^{-1} = y$
 		- i.e. subsets that are closed under $G$ acting on itself by conjugation and on which the action is transitive
