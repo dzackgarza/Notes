@@ -202,7 +202,8 @@ $$
 - Polynomial Rings
 	- Irreducible Polynomials
 		- Over $\ZZ_2$: 
-		$$ x,~ x+1,~ x^2+x+1,~ x^3+x+1,~ x^3+x^2+1 
+		$$ 
+		x,~ x+1,~ x^2+x+1,~ x^3+x+1,~ x^3+x^2+1 
 		$$
 		- Eisenstein's Criterion
 - Gauss' Lemma
