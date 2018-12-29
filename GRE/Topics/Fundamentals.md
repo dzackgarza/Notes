@@ -64,7 +64,7 @@ Ellipse  | $\frac 1 2 wh$
 Trapezoid:  | $\frac{a+b} 2 h$
 Any Triangle: | $\frac 1 2 bh$
 Parallelograms: | $bh$
-Cones: | $?$
+Cones: | $\frac {\pi r^2} h$
 
 - Polar coordinates: $(x,y) \mapsto (\sqrt{x^2 + y^2}, \tan^{-1}(\frac{y}{x}))$
 - Spherical Coordinates: $[\rho, \phi, \theta]$ where
