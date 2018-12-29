@@ -153,7 +153,7 @@ Cones: | $\frac {\pi r^2} h$
 		- Product of roots of a monic polynomial is the constant coefficient.
 
 - Common enough to memorize:
-$$\begin{align}
+$$\begin{align*}
 (a+b)^2 = && \hspace{20em} a^2 + b^2 + 2ab \\
 (a-b)^2 = && a^2 + b^2 - 2ab \\
 a^2+b^2 = && (a+b)^2 + 2ab \\
@@ -167,7 +167,7 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 (a+\sqrt{b})(a-\sqrt{b}) = &&  a^2 - b \\
 (a+i\sqrt{b})(a-i\sqrt{b}) = &&  a^2 + b \\
 (a+b)(a-b) = && a^2 + b^2
-\end{align}$$
+\end{align*}$$
 
 - Polynomial long division
 - Rational roots theorem
