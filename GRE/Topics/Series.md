@@ -104,12 +104,16 @@ $$
 		- $a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty$
 		- $b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty$
 	- **Ratio Test**
-		$$R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}$$
+		$$
+		R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
+		$$
 		- $R < 1$: absolutely convergent
 		- $R > 1$: divergent
 		- $R = 1$: inconclusive
 	- **Root Test**
-		$$R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}$$
+		$$
+		R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
+		$$
 		- $R < 1$: convergent
 		- $R > 1$: divergent
 		- $R = 1$: inconclusive
