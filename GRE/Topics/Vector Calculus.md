@@ -201,7 +201,10 @@ $$
 	$$
 	since $\del S^2 = \emptyset$.  
 	- Sufficient condition: $\mathbf{F}$ is everywhere $C^1$
-$$\exists \mathbf{G}:~ \mathbf{F} = \nabla \cross \mathbf{G} \iff \forall \text{ closed } S, \iint_S \mathbf{F}\cdot d\mathbf{S} = 0$$
+	$$
+	\exists \mathbf{G}:~ \mathbf{F} = \nabla \cross \mathbf{G} 
+	\iff \forall \text{ closed } S, \iint_S \mathbf{F}\cdot d\mathbf{S} = 0
+	$$
 
 
 - Recovering Green's Theorem from Stokes' Theorem:
