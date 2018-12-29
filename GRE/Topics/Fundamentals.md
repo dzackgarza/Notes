@@ -141,6 +141,8 @@ Cones: | $\frac {\pi r^2} h$
 
 ## Polynomials
 
+- Elementary Symmetric Polynomials: #todo
+
 - Vieta's Formulas: Write $p(x) = \sum a_k x^k = \prod(x_k - r_k)$ and expand the product to obtain $$ p(x) = a_n x^n - (\sum_k r_k)x^{n-1} + (\sum_{i<j} r_i r_j)x^{n-1} + \cdots = \sum_{k=1}^n (-1)^k \sigma_{n-k}(\theset{r_i}_{i=1}^n) x^k$$
 	where $\sigma_i$ is the $i\dash$th elementary symmetric sum.
 
