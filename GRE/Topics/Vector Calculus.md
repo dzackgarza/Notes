@@ -27,7 +27,8 @@ $$	\oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } = 	\oint _ { \part
 
 ## Definitions
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbf a \cdot \mathbf b
 = \inner[\mathbf x]{\mathbf y}
 = \sum_{i=1}^n {x_i y_i} = x_1y_1 + x_2y_2 + \cdots
@@ -76,7 +77,8 @@ D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
 && \text{surface integral}
 \\
 a
-\end{align*}$$
+\end{align*}
+$$
 - Note that the directional derivative uses a normalized direction vector!
 
 
