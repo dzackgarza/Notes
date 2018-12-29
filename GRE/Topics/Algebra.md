@@ -188,7 +188,7 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
   - Integral Domain
   - Division Ring
 
-- $\text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}$
+- \text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}
 
   
 
