@@ -130,11 +130,13 @@ $$
 - **Line Integrals Of Curves**
 	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then
 
-$$\begin{align*}
+$$
+\begin{align*}
 \int_C f ~ds
 &\definedas \int_a^b (f\circ \mathbf{r})(t) ~\norm{\mathbf{r}'(t)}~dt \\
 &= \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt
-\end{align*}$$
+\end{align*}
+$$
 
 - **Line Integrals of Vector Fields**
 	- If exact:
@@ -144,12 +146,14 @@ $$\begin{align*}
 	$$
 	The function $\phi$ can be found using the same method from ODEs.
 	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then
-$$\begin{align*}
+$$
+\begin{align*}
 \int_C \mathbf F \cdot d\mathbf r
 & \definedas \int_a^b (\mathbf F \circ \mathbf r)(t) \cdot \mathbf r'(t) ~dt \\
 &= \int_a^b [\mathbf F_1(x(t), y(t), \cdots), \mathbf F_2(x(t), y(t), \cdots)]\cdot[x_t, y_t, \cdots] ~dt \\
 & \int_a^b \mathbf F_1(x(t), y(t) \cdots)x_t + \mathbf F_2(x(t), y(t), \cdots)y_t + \cdots ~dt
-\end{align*}$$
+\end{align*}
+$$
 
 	- Equivalently written:
 $$
@@ -160,7 +164,9 @@ in which case $[dx, dy, \cdots] \definedas [x_t, y_t, \cdots] = \mathbf r'(t)$.
 	- _Remember to substitute dx back into the integrand!!_
 
 - **Flux Integrals**:
-	$$ \iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS$$
+	$$ 
+	\iint_S \mathbf{F}\cdot d\mathbf{S} = \iint_S \mathbf{F}\cdot \mathbf{\hat n} ~dS
+	$$
 
 - **Computing Areas with Green's Theorem**
 	- Given $R$ and $f(x,y) = 0$
