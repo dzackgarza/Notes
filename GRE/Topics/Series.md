@@ -140,12 +140,14 @@ $$
 	- "Absolute convergence of sup norms implies uniform convergence"
 
 ### Showing Divergence
+todo
 
 #### Sequences
-
+todo
 
 
 #### Sums
-?
+todo
 
 #### Series
+todo
