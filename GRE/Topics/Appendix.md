@@ -12,9 +12,9 @@ $$
 \frac{d}{dx} \int_{a(x)}^{b(x)} f(x,t) dt = f(x, b(x))\frac{d}{dx}b(x) - f(x, a(x))\frac{d}{dx}a(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt
 $$
 
-  - Need $f, \frac{df}{dx}$ to be continuous in both variables. Also need $a(x),b(x) \in C_1$.
+  - Need $f,dfdxf, \frac{df}{dx}$ to be continuous in both variables. Also need $a(x),b(x)∈C1a(x),b(x) \in C_1$.
   - If $a,b$ are constant, boundary terms vanish.
-  - Recover the fundamental theorem with $a(x) = a, b(x) = b$, and $f(x,t) = f(t)$.
+  - Recover the fundamental theorem with $a(x)=a,b(x)=ba(x) = a, b(x) = b$, and $f(x,t)=f(t)f(x,t) = f(t)$.
 
 
 ## Big Derivative / Integral Table
@@ -57,6 +57,7 @@ a^x\ln(a)                                && a^x                         && \frac
 $$
 
 ## Useful Series and Sequences
+
 Notation: $\uparrow, \downarrow$: monotonically converges from below/above.
 
 - Taylor Series:
