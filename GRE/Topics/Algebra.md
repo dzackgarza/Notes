@@ -107,9 +107,9 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
   H,K \normal G,~ K < H \implies && \frac{G/K}{H/K} \cong &~ \frac{G}{H}
   \end{align*}
   $$
-  
 
-  
+
+
 
 - Lagrange's Theorem: $H < G \implies o(H) \mid o(G)$
   - Converse is false: $o(A_4) = 12$ but has no order 6 subgroup.
@@ -207,3 +207,4 @@ Counterexamples to inclusions are strict:
 		- Eisenstein's Criterion
 - Gauss' Lemma
 - When is $\QQ[\sqrt d]$ a field? #todo
+- $
