@@ -3,12 +3,13 @@
 - Cauchy's Theorem
 	- If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
 - The Sylow Theorems
-	- If $\abs{G} = n = \prod p_i^{k_i}$, for each $i$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
+	- If $|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}$, for each $ii$ and each $1≤kj≤ki1 \leq k_j \leq k_i$ then there exists a subgroup $HH$ of order $pikjp_i^{k_j}$.
 - Galois Theory
 - [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
 
 ## Big List of Notation
-$$\begin{align*}
+$$
+\begin{align*}
 C(x) =&& \theset{g\in G : gxg^{-1} = x} && \subseteq G && \text{Centralizer} \\
 C_G(x) = && \theset{gxg^{-1} : g\in G} && \subseteq G && \text{Conjugacy Class} \\
 G_x = && \theset{g.x : x\in X} && \subseteq X && \text{Orbit} \\
@@ -17,7 +18,10 @@ Z(G) = && \theset{x\in G: \forall g\in G,~ gxg^{-1} = x} && \subseteq G && \text
 \mathrm{Inn}(G) = && \theset{\phi_g(x) = gxg^{-1} } && \subseteq \Aut(G) && \text{Inner Aut.} \\
 \mathrm{Out}(G) = && \Aut(G) / \mathrm{Inn}(G) && \injects \Aut(G) && \text{Outer Aut.} \\
 N(H) = && \theset{g\in G: gHg^{-1} = H} && \subseteq G && \text{Normalizer}
-\end{align*}$$
+\end{align*}
+$$
+
+
 
 ## Group Theory
 Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a generic group operation.
@@ -27,10 +31,8 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 - $Z(G)$ the center of $G$
 - $o(G)$ the order of a group
 - $S_n$ the symmetric group
-- $A_n$ the alternating group
-- $D_n$ the dihedral group of order $2n$
-
-
+- $AnA_n$ the alternating group
+- $DnD_n$ the dihedral group of order $2n2n$
 
 - Group Axioms
 	- Closure: $a,b \in G \implies ab \in G$
@@ -98,25 +100,31 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
 
 
 - Isomorphism Theorems
-	$$ \begin{align*}
-	\phi: G \to G' \implies && \frac{G}{\ker{\phi}} \cong &~ \phi(G) \\
-	H \normal G,~ K < G \implies && \frac{K}{H\intersect K} \cong &~ \frac{HK}{H} \\
-	H,K \normal G,~ K < H \implies && \frac{G/K}{H/K} \cong &~ \frac{G}{H}
-	\end{align*}$$
+  $$
+  \begin{align*}
+  \phi: G \to G’ \implies && \frac{G}{\ker{\phi}} \cong &~ \phi(G) \\
+  H \normal G,~ K < G \implies && \frac{K}{H\intersect K} \cong &~ \frac{HK}{H} \\
+  H,K \normal G,~ K < H \implies && \frac{G/K}{H/K} \cong &~ \frac{G}{H}
+  \end{align*}
+  $$
+  
+
+  
 
 - Lagrange's Theorem: $H < G \implies o(H) \mid o(G)$
-	- Converse is false: $o(A_4) = 12$ but has no order 6 subgroup.
+  - Converse is false: $o(A_4) = 12$ but has no order 6 subgroup.
 
 - The $GZ$ Theorem: $G/Z(G)$ cyclic $\implies G\in\mathbf{Ab}$
+
 - Orbit Stabilizer Theorem: $G / x_0 \cong Gx$
 
 - The Class Equation
-	- Let $G\actson X$ and $\mathcal{O}_i \subseteq X$ be the nontrivial orbits, then
-	$$ \abs{X} = \abs{ X_0 } + \sum_{[x_i] \in X/G} \abs{Gx} $$
-	- The right hand side is the number of fixed points, plus a sum over all of the orbits of size greater than 1, where any representative within the orbit is chosen and we look at the index of its stabilizer in $G$.
-	- Let $G\actson G$ and for each nontrivial conjugacy class $C_G$ choose a representative $[x_i] = C_G = C_G(x_i)$ to obtain
+  - Let $G\actson X$ and $\mathcal{O}_i \subseteq X$ be the nontrivial orbits, then
+  $$ \abs{X} = \abs{ X_0 } + \sum_{[x_i] \in X/G} \abs{Gx} $$
+  - The right hand side is the number of fixed points, plus a sum over all of the orbits of size greater than 1, where any representative within the orbit is chosen and we look at the index of its stabilizer in $G$.
+  - Let $G\actson G$ and for each nontrivial conjugacy class $C_G$ choose a representative $[x_i] = C_G = C_G(x_i)$ to obtain
 
-	$$ \abs{G} = \abs{Z(G)} + \sum_{[x_i] = C_G(x_i)} \left[ G: [x_i] \right]$$
+  $$ \abs{G} = \abs{Z(G)} + \sum_{[x_i] = C_G(x_i)} \left[ G: [x_i] \right]$$
 
 
 - Useful facts:
