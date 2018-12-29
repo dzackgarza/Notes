@@ -95,7 +95,7 @@ $$
 	$$
 	\limsup a_i \to 0 \implies \sum a_i \text{ converges }
 	$$
-- Radius of convergence: use the $\lim \abs{\frac{a_{k+1}x^{k+1}}{a_kx^k}} = \abs{x}\lim \abs{\frac{a_{k+1}}{a_k}} < 1$ will imply convergence, so take $L = \frac{a_{k+1}}{a_k}$ and then $R = \frac{1}{L}$.
+- Radius of convergence: use the fact that $\lim \abs{\frac{a_{k+1}x^{k+1}}{a_kx^k}} = \abs{x}\lim \abs{\frac{a_{k+1}}{a_k}} < 1$ will imply convergence, so take $L = \frac{a_{k+1}}{a_k}$ and then $R = \frac{1}{L}$.
 	- Note $L=0 \implies$ absolutely convergent everywhere
 	- $L = \infty \implies$ convergent only at $x=0$.
 	- Also need to check endpoints $R, -R$ manually.
