@@ -24,7 +24,7 @@ _Notes_:
 
 14: Worth redoing, not entirely trivial.
 
-15: Review injective/surjective defns for speed.
+15: Review injective/surjective definitions for speed.
 
 16: ??? Memorize distributive properties to simplify?
 
