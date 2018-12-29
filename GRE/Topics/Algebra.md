@@ -207,4 +207,3 @@ Counterexamples to inclusions are strict:
 		- Eisenstein's Criterion
 - Gauss' Lemma
 - When is $\QQ[\sqrt d]$ a field? #todo
-- $
