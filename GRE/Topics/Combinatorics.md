@@ -108,7 +108,7 @@ f \circ \sigma_N 								& {n+k-1}\choose n & k\choose n & {n-1}\choose{n-k} \\
 \end{array}
 $$
 
-In words:
+In words (todo: explain)
 Perm. / Rest.  | ---  | Injective  | Surjective  
 --|---|---|--  
 ---  | A sequence of any $n$ elements of $K$  |  Sequences of $n$ _distinct_ elements of $K$ |  Compositions of $N$ with exactly $k$ subsets
