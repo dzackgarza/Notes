@@ -4,13 +4,14 @@ e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \
 $$
 
 ## Neat Tricks
+
 - Commuting differentials and integrals:
 $$
-\frac{d}{dx} \int_{a(x)}^{b(x)} f(x,t) dt = f(x, b(x))\frac{d}{dx}b(x) - f(x, a(x))\frac{d}{dx}a(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt
+
 $$
-- Need $f, \frac{df}{dx}$ to be continuous in both variables. Also need $a(x),b(x) \in C_1$.
-- If $a,b$ are constant, boundary terms vanish.
-- Recover the fundamental theorem with $a(x) = a, b(x) = b$, and $f(x,t) = f(t)$.
+  - Need $f, \frac{df}{dx}$ to be continuous in both variables. Also need $a(x),b(x) \in C_1$.
+  - If $a,b$ are constant, boundary terms vanish.
+  - Recover the fundamental theorem with $a(x) = a, b(x) = b$, and $f(x,t) = f(t)$.
 
 
 ## Big Derivative / Integral Table
@@ -91,7 +92,6 @@ $$\begin{align*}
 &\sum_{k=1}^{\infty } \frac{1 } {k ^ { 2 } }                                                                                               &=  \frac{\pi ^ { 2 }}{6 }& \\
 \end{align*}
 $$
-
 ## Partial Fraction Decomposition
 Given $R(x) = \frac{p(x)}{q(x)}$, factor $q(x)$ into $\prod q_i(x)$.
 
