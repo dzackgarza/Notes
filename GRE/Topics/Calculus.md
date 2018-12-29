@@ -141,7 +141,8 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	$$
 	- Proof: let $F(x)$ be an antiderivative and compute $F'(x)$ using the chain rule.
 	- #todo for constants, this should allow differentiating under the integral when $f, f_x$ are "jointly continuous"
-- The ridiculous trig sub: for any integrand containing only  trig terms
+	- LIPET: Log, Inverse trig, Polynomial, Exponeitial, Trig: generally let $u$ be whichever one comes first.
+- The ridiculous trig sub: for any integrand containing only trig terms
 	- Transforms *any* such integrand into a rational function of $x$
 	- Let $u = 2\tan^{-1}x, ~du = \frac{2}{x^2+1}$, then
 $$
