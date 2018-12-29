@@ -76,7 +76,7 @@ D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
 && \text{surface integral}
 \\
 a
-\end{align}$$
+\end{align*}$$
 - Note that the directional derivative uses a normalized direction vector!
 
 
@@ -92,14 +92,14 @@ $$\begin{align*}
 \mathrm{curl}(\mathbf{F}): (\RR^3 \to \RR^3) &\to (\RR^3 \to \RR^3) \\
 \mathbf{F} &\mapsto \nabla \cross \mathbf{F} \\ \\
 \text{}
-\end{align}$$
+\end{align*}$$
 
 - Some terminology:
 $$\begin{align*}
 \text{Scalar Field} && \phi:&~ X \to \RR \\
 \text{Vector Field} && \mathbf{F}:&~ X\to \RR^n\\
 \text{Gradient Field} && \mathbf{F}:&~ X \to \RR^n \mid \exists \phi: X\to \RR \mid \nabla \phi = F
-\end{align}$$
+\end{align*}$$
 
 - The Gradient: lifts scalar fields on $\RR^n$ to vector fields on $\RR^n$
 - Divergence: drops vector fields on $\RR^n$ to scalar fields on $\RR^n$
@@ -128,7 +128,7 @@ $$\begin{align*}
 \int_C f ~ds
 &\definedas \int_a^b (f\circ \mathbf{r})(t) ~\norm{\mathbf{r}'(t)}~dt \\
 &= \int_a^b f(x(t), y(t), z(t)) \sqrt{x_t^2 + y_t^2 + z_t^2} ~dt
-\end{align}$$
+\end{align*}$$
 
 - **Line Integrals of Vector Fields**
 	- If exact:
@@ -143,7 +143,7 @@ $$\begin{align*}
 & \definedas \int_a^b (\mathbf F \circ \mathbf r)(t) \cdot \mathbf r'(t) ~dt \\
 &= \int_a^b [\mathbf F_1(x(t), y(t), \cdots), \mathbf F_2(x(t), y(t), \cdots)]\cdot[x_t, y_t, \cdots] ~dt \\
 & \int_a^b \mathbf F_1(x(t), y(t) \cdots)x_t + \mathbf F_2(x(t), y(t), \cdots)y_t + \cdots ~dt
-\end{align}$$
+\end{align*}$$
 
 	- Equivalently written:
 $$

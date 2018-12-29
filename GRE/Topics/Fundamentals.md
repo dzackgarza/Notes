@@ -107,14 +107,14 @@ Cones: | $\frac {\pi r^2} h$
 		1 - \cot^2 x &= \text{nothing!} \\
 		\tan^2x - 1 &= \text{nothing!} \\
 		\cot^2x - 1 &= \text{nothing!}
-		\end{align}$$
+		\end{align*}$$
 
 	- A derivation with multiple payoffs:
 		$$\begin{align*}
 		\cos(a+b) + i\sin(a+b) &= e^{i(a-b)} \\
 		&=(\cos a + i\sin a)(\cos b - i\sin b) \\
 		&= (\cos a\cos b + \sin a \sin b) + i(\sin a \cos b + \cos a \sin b)
-		\end{align}$$
+		\end{align*}$$
 		- $\sin(a+b) = \sin a \cos b + \cos a \sin b$
 		- $\cos(a+b) = \cos a \cos b - \sin a \sin b$
 		- $a=b \implies \sin(2a) = 2\sin a \cos a$
@@ -136,7 +136,7 @@ Cones: | $\frac {\pi r^2} h$
 		\abs{\mathbf x - \mathbf y}^2 &= \inner[\mathbf x - \mathbf y]{\mathbf x - \mathbf y} \\
 		&= \abs{\mathbf x}^2 + \abs{\mathbf y}^2 - 2\inner[\mathbf x]{\mathbf y} \\
 		&= \abs{\mathbf x}^2 + \abs{\mathbf y}^2 - 2\abs{\mathbf x}\abs{\mathbf y}\cos\theta
-		\end{align}$$
+		\end{align*}$$
 
 
 ## Polynomials

@@ -17,7 +17,7 @@ Z(G) = && \theset{x\in G: \forall g\in G,~ gxg^{-1} = x} && \subseteq G && \text
 \mathrm{Inn}(G) = && \theset{\phi_g(x) = gxg^{-1} } && \subseteq \Aut(G) && \text{Inner Aut.} \\
 \mathrm{Out}(G) = && \Aut(G) / \mathrm{Inn}(G) && \injects \Aut(G) && \text{Outer Aut.} \\
 N(H) = && \theset{g\in G: gHg^{-1} = H} && \subseteq G && \text{Normalizer}
-\end{align}$$
+\end{align*}$$
 
 ## Group Theory
 Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a generic group operation.
@@ -102,7 +102,7 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
 	\phi: G \to G' \implies && \frac{G}{\ker{\phi}} \cong &~ \phi(G) \\
 	H \normal G,~ K < G \implies && \frac{K}{H\intersect K} \cong &~ \frac{HK}{H} \\
 	H,K \normal G,~ K < H \implies && \frac{G/K}{H/K} \cong &~ \frac{G}{H}
-	\end{align}$$
+	\end{align*}$$
 
 - Lagrange's Theorem: $H < G \implies o(H) \mid o(G)$
 	- Converse is false: $o(A_4) = 12$ but has no order 6 subgroup.

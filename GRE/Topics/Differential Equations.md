@@ -6,7 +6,7 @@ y' = f(x,y), f(tx,ty) = f(x,y) && y = xV(x)\text{ COV reduces to separable} \\ \
 y' +p(x)y = q(x)y^n && \text{Bernoulli, divide by $y^n$ and COV $u = y^{1-n}$} \\ \\
 M(x,y)dx + N(x,y)dy = 0 && M_y = N_x: \phi(x,y) = c (\phi_x =M, \phi_y = N) \\ \\
 P(D)y = f(x,y) && x^ke^{rx} \text{ for each root }
-\end{align}$$
+\end{align*}$$
 
 *Where $e^{zx}$ yields $e^{ax}\cos bx, e^{ax}\sin bx$*
 
@@ -74,7 +74,7 @@ $$\begin{align*}
 &F(x) = \cos(ax) + \sin(ax): & D^2 + a^2\\
 &F(x) = e^{ax}(a_0\cos(bx) + b_0\sin(bx)): & (D-z)(D-\conjugate{z}) = D^2 -2aD + a^2 + b^2 \\
 &F(x) = p(x)e^{ax}\cos(bx) + p(x)e^{ax}\cos(bx): & \left( (D-z)(D-\conjugate{z})\right)^{\max(\deg(p), \deg(q))+ 1}
-\end{align}$$
+\end{align*}$$
 
 
 ### Variation of Parameters
@@ -118,6 +118,6 @@ f'(t) \quad&\iff & sL(f) - f(0) & \\
 f''(t) \quad&\iff &s^2L(f) -sf(0) - f'(0) &\\
 f^{(n)}(t) \quad&\iff & s^nL(f) - \sum_{i=0}^{n-1} s^{n-1-i}f^{(i)}(0) & \\
 f(t)g(t) \quad&\iff &F(s) \ast G(s)\quad &
-\end{align}$$
+\end{align*}$$
 
 - For $f$ periodic with period $T$, $L(f) = \frac{1}{1+e^{-sT}}\int_0^T e^{-st}f(t)~dt$

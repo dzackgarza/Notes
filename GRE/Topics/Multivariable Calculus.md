@@ -59,7 +59,7 @@ $$\begin{align*}
 & + \left(\dd[z]{v}\right)_{x,y,u} \left(\dd[v]{x}\right)_y \\
 & + \left(\dd[z]{u}\right)_{x,y,v} \left(\dd[u]{x}\right)_{v,y}  \\
 & + \left(\dd[z]{u}\right)_{x,y,v} \left(\dd[u]{v}\right)_{x,y} \left(\dd[v]{x}\right)_y
-\end{align}$$
+\end{align*}$$
 
 Where the subscripts denote which variables are held constant.
 

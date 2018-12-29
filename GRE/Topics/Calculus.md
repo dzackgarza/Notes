@@ -8,7 +8,7 @@
 	$$\begin{align*}
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
 	f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\ \\
-	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align}
+	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align*}
 	$$
 	- Recover FTC by taking $a(x) = c, b(x) = x, f(x,t) = f(t)$.
 		- Note that if $f(x,t) = f(t)$ alone, then $\dd{x} f(t) = 0$ and the second integral vanishes
@@ -27,7 +27,7 @@
 	$$ \begin{align*}
 	T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
 	&= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ & \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
-	\end{align}$$
+	\end{align*}$$
 	Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
 
 ## Differential
@@ -128,7 +128,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	&= uv^{-1} - u^1v^{-2} + u^2v^{-3}\bigg\rvert_a^b - \int_a^b u^3v^{-3} \\
 	&\quad\vdots \\
 	\implies \int_a^b uv &= (-1)^n\int_a^b u^nv^{-n} + \sum_{k=1}^n (-1)^k u^{k-1}v^{-k} \bigg\rvert_a^b
-	\end{align}$$
+	\end{align*}$$
 	- Generally useful when one term's $n$th derivative is a constant.
 	- Shoelace method:
 	- Note: you can choose $u$ or $v$ equal to 1! Useful if you know the derivative of the integrand.
@@ -136,7 +136,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	$$\begin{align*}
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
 	f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)}\\
-	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align}
+	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align*}
 	$$
 	- Proof: let $F(x)$ be an antiderivative and compute $F'(x)$ using the chain rule.
 	- #todo for constants, this should allow differentiating under the integral when $f, f_x$ are "jointly continuous"
@@ -162,7 +162,7 @@ Fill out until one column is zero (alternate signs). Get the result column by mu
 	\sqrt{a^2-x^2} && \Rightarrow && x = a\sin(\theta) &&dx = a\cos(\theta)~d\theta \\
 	\sqrt{a^2+x^2} && \Rightarrow && x = a\tan(\theta) &&dx = a\sec^2(\theta)~d\theta \\
 	\sqrt{x^2 - a^2} && \Rightarrow && x = a \sec(\theta) &&dx = a\sec(\theta)\tan(\theta)~d\theta
-	\end{align}$$
+	\end{align*}$$
 - Partial Fractions
 - Completing the Square #todo
 - Trig Formulas
@@ -173,7 +173,7 @@ Fill out until one column is zero (alternate signs). Get the result column by mu
 	&& = && \\
 	&& = && \\
 	&& = && \\
-	\end{align}$$
+	\end{align*}$$
 
 - Products of trig functions
 	- Setup: $\int \sin^a(x) \cos^b(x) ~dx$

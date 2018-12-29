@@ -210,7 +210,7 @@ f' && f && \therefore f && F \\
 \strike{\text{exists}} && \mathbf{continuous} &&  \text{K-integrable} && \text{exists} \\
 \strike{\text{continuous}} && \mathbf{differentiable}  && \text{continuous} && \text{exists} \\
 \strike{\text{exists}} && \mathbf{integrable} && \strike{\text{continuous}} && \text{differentiable} \\
-\end{align}$$
+\end{align*}$$
 
 Explanation of items in table:
 - K-integrable: compactly integrable.

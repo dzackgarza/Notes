@@ -33,7 +33,7 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 (a+\sqrt{b})(a-\sqrt{b}) = &&  a^2 - b \\
 (a+i\sqrt{b})(a-i\sqrt{b}) = &&  a^2 + b \\
 (a+b)(a-b) = && a^2 + b^2
-\end{align}$$
+\end{align*}$$
 
 $$\begin{align*}  
 \frac{\partial f}{\partial{x}}\Leftarrow && f && \Rightarrow\int f dx   \\
@@ -67,14 +67,14 @@ a^x\ln(a) && a^x && \frac{a^x}{\ln a} \\
 ? && e^{ax}\sin(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\
 ? && e^{ax}\cos(bx) && \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
 ? && ? && ? \\
-\end{align}
+\end{align*}
 $$
 
 $$\begin{align*}
 \sqrt{a^2-x^2} && \Rightarrow && x = a\sin(\theta) &&dx = a\cos(\theta)~d\theta \\
 \sqrt{a^2+x^2} && \Rightarrow && x = a\tan(\theta) &&dx = a\sec^2(\theta)~d\theta \\
 \sqrt{x^2 - a^2} && \Rightarrow && x = a \sec(\theta) &&dx = a\sec(\theta)\tan(\theta)~d\theta
-\end{align}$$
+\end{align*}$$
 
 $$\begin{align*}
 p(y)y' = q(x) && \hspace{10em} \text{separable} \\ \\
@@ -83,4 +83,4 @@ y' = f(x,y), f(tx,ty) = f(x,y) && y = xV(x)\text{ COV reduces to separable} \\ \
 y' +p(x)y = q(x)y^n && \text{Bernoulli, divide by $y^n$ and COV $u = y^{1-n}$} \\ \\
 M(x,y)dx + N(x,y)dy = 0 && M_y = N_x: \phi(x,y) = c (\phi_x =M, \phi_y = N) \\ \\
 P(D)y = f(x,y) && x^ke^{rx} \text{ for each root }
-\end{align}$$
+\end{align*}$$

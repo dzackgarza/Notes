@@ -17,7 +17,7 @@ x^z &\definedas e^{z\ln x} \\
 \frac { \partial } { \partial z } &= \frac { 1 } { 2 } \left( \frac { \partial } { \partial x } - i \frac { \partial } { \partial y } \right)
 \\
 \frac { \partial } { \partial \overline { z } } &= \frac { 1 } { 2 } \left( \frac { \partial } { \partial x } + i \frac { \partial } { \partial y } \right)
-\end{align}$$
+\end{align*}$$
 
 ## Complex Arithmetic and Calculus
 - $n\dash$th roots:
