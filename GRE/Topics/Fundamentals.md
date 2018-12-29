@@ -156,13 +156,11 @@ Cones: | $\frac {\pi r^2} h$
 
 - Common enough to memorize:
 $$\begin{align*}
-(a+b)^2 = && \hspace{20em} a^2 + b^2 + 2ab \\
-(a-b)^2 = && a^2 + b^2 - 2ab \\
-a^2+b^2 = && (a+b)^2 + 2ab \\
-a^2- b^2 = && (a+b)(a-b) \\
-(a+b)^3 = &&  a^3 + b^3 + 3(a^2b + ab^2) \\
-(a-b)^3 = &&  a^3 -b^3 + 3(-a^2b +ab^2) \\
-a^3 \pm b^3 = (a \pm b)(a^2 \mp 2ab + b^2) ~~\text{(SOAP: Same/Opposite/Always Positive)}\\
+(a \pm b)^2 = && a^2 \pm 2ab +b^2 \\
+a^2 + b^2 = && (a+b)^2 + 2ab \\
+a^2 - b^2 = && (a+b) (a-b) \\
+(a\pm b)^3 = &&  a^3 \pm 3a^2b + 3ab^2 \pm b^3 \\
+a^3 \pm b^3 = && (a \pm b)(a^2 \mp 2ab + b^2) ~~\text{(SOAP: Same/Opposite/Always Positive)}\\
 (\sqrt a + \sqrt b)^2 = &&  a + b + 2\sqrt{ab} \\
 (\sqrt a - \sqrt b)^2 = &&  a + b - 2\sqrt{ab} \\
 (a+\sqrt{b})(a-\sqrt{b}) = &&  a^2 - b \\
