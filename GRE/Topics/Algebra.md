@@ -31,8 +31,8 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 - $Z(G)$ the center of $G$
 - $o(G)$ the order of a group
 - $S_n$ the symmetric group
-- $AnA_n$ the alternating group
-- $DnD_n$ the dihedral group of order $2n2n$
+- $A_n$ the alternating group
+- $D_n$ the dihedral group of order $2n2n$
 
 - Group Axioms
 	- Closure: $a,b \in G \implies ab \in G$
