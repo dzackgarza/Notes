@@ -161,11 +161,10 @@ a^2 + b^2 = && (a+b)^2 + 2ab \\
 a^2 - b^2 = && (a+b) (a-b) \\
 (a\pm b)^3 = &&  a^3 \pm 3a^2b + 3ab^2 \pm b^3 \\
 a^3 \pm b^3 = && (a \pm b)(a^2 \mp 2ab + b^2) ~~\text{(SOAP: Same/Opposite/Always Positive)}\\
-(\sqrt a + \sqrt b)^2 = &&  a + b + 2\sqrt{ab} \\
-(\sqrt a - \sqrt b)^2 = &&  a + b - 2\sqrt{ab} \\
-(a+\sqrt{b})(a-\sqrt{b}) = &&  a^2 - b \\
-(a+i\sqrt{b})(a-i\sqrt{b}) = &&  a^2 + b \\
-(a+b)(a-b) = && a^2 + b^2
+(\sqrt a \pm \sqrt b)^2 = &&  a + b \pm 2\sqrt{ab} \\
+(a + \sqrt{b}) (a - \sqrt{b})   = &&  a^2 - b \\
+(a + i\sqrt{b}) (a - i\sqrt{b}) = &&  a^2 + b \\
+(a+b)(a-b) = && a^2 - b^2
 \end{align*}$$
 
 - Polynomial long division
