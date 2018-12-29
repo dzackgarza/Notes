@@ -175,7 +175,8 @@ in which case $[dx, dy, \cdots] \definedas [x_t, y_t, \cdots] = \mathbf r'(t)$.
 		\oint_{\del R} x ~dy = - \oint_{\del R} y ~dx \\
 		= \frac{1}{2} \oint_{\del R} -y~dx + x~dy
 		= \frac{1}{2} \iint_R 1 - (-1) ~dA   
-		=\iint_R 1 ~dA $$
+		=\iint_R 1 ~dA 
+		$$
 	- Steps:
 		- Parametrize $C$
 - **Surface Integrals**
