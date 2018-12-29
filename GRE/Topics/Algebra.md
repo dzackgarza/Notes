@@ -38,7 +38,7 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 	- Closure: $a,b \in G \implies ab \in G$
 	- Identity: $\exists e\in G \mid a\in G \implies ae = ea = a$
 	- Associativity: $a,b,c \in G \implies (ab)c = a(bc)$
-	- Invertibility: $a\in G \implies \exists b \in G \mid ab =ba = e$
+	- Inverses: $a\in G \implies \exists b \in G \mid ab =ba = e$
 
 - Definitions:
 	- Order
