@@ -111,6 +111,7 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
 
 
 
+
 - Lagrange's Theorem: $H < G \implies o(H) \mid o(G)$
   - Converse is false: $o(A_4) = 12$ but has no order 6 subgroup.
 
@@ -176,18 +177,22 @@ Where $(p_i, k_i)$ are the set of elementary divisors of $G$.
 ## Ring Theory
 
 - Ring Axioms: #todo
-	- Examples:
-	- Non-Examples:
+  - Examples:
+  - Non-Examples:
 - Definition of an Ideal
 - Definitions of types of rings:
-	- Field
-	- Unique Factorization Domain (UFD)
-	- Principal Ideal Domain (PID)
-	- Euclidean Domain:
-	- Integral Domain
-	- Division Ring
-$$\text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}
-$$
+  - Field
+  - Unique Factorization Domain (UFD)
+  - Principal Ideal Domain (PID)
+  - Euclidean Domain:
+  - Integral Domain
+  - Division Ring
+
+- $\text{field} \implies \text{Euclidean Domain} \implies \text{PID} \implies \text{UFD} \implies \text{integral domain}$
+
+  
+
+  
 
 Counterexamples to inclusions are strict:
 	- An ED that is not a field:
@@ -203,7 +208,7 @@ Counterexamples to inclusions are strict:
 - The Chinese Remainder Theorem for Rings
 - Polynomial Rings
 	- Irreducible Polynomials
-		- Over $\ZZ_2: x, x+1, x^2+x+1, x^3+x+1,x^3+x^2+1$
+		- Over $Z2:x,x+1,x2+x+1,x3+x+1,x3+x2+1\ZZ_2: x, x+1, x^2+x+1, x^3+x+1,x^3+x^2+1$
 		- Eisenstein's Criterion
 - Gauss' Lemma
 - When is $\QQ[\sqrt d]$ a field? #todo
