@@ -275,7 +275,8 @@ $p$ | $p \mid n \iff$ | Mnemonic
 
 
 ## Hyperbolic Functions
-$$\begin{align*}
+$$
+\begin{align*}
 \cosh(x)    &= \frac{1}{2}(e^x + e^{-x}) \\
 \sinh(x)    &= \frac{1}{2}(e^x - e^{-x}) \\
 \cos(iz)    &= \cosh z \\
@@ -285,4 +286,5 @@ $$\begin{align*}
 \sinh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2+1}) \\
 \cosh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2-1}) \\
 \tanh^{-1}x &= \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
-\end{align*}$$
+\end{align*}
+$$
