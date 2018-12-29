@@ -146,10 +146,12 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	- Shoelace method:
 	- Note: you can choose $u$ or $v$ equal to 1! Useful if you know the derivative of the integrand.
 - Differentiating under the integral
-	$$\begin{align*}
+	$$
+	\begin{align*}
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
 	f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)}\\
-	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)\end{align*}
+	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)
+	\end{align*}
 	$$
 	- Proof: let $F(x)$ be an antiderivative and compute $F'(x)$ using the chain rule.
 	- #todo for constants, this should allow differentiating under the integral when $f, f_x$ are "jointly continuous"
