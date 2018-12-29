@@ -1,9 +1,9 @@
 ## To Sort
 - Burnside's Lemma
 - Cauchy's Theorem
-  - If $|G|=n=∏piki|G|=n=∏piki<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>i</mi><mi>k</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mrow><mo>|</mo><mi>G</mi><mo>|</mo></mrow><mrow class="MJX-TeXAtom-ORD"></mrow></msub></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><msubsup><mi>p</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi>k</mi><mi>i</mi></msub></mrow></msubsup></math>|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}​$, then for each $ii<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi><mi>i</mi></math>ii​$ there exists a subgroup $HH<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>H</mi><mi>H</mi></math>HH​$ of order $pipi<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>i</mi><msub><mi>p</mi><mi>i</mi></msub></math>pip_i​$.
+	- If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
 - The Sylow Theorems
-  - If $|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>k</mi><mi>i</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>i</mi><mi>k</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>i</mi><mi>k</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>k</mi><mi>i</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>G</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><mi>p</mi><mi>i</mi><mi>k</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mrow><mo>|</mo><mi>G</mi><mo>|</mo></mrow><mrow class="MJX-TeXAtom-ORD"></mrow></msub></mrow><mo>=</mo><mi>n</mi><mo>=</mo><mo>∏</mo><msubsup><mi>p</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi>k</mi><mi>i</mi></msub></mrow></msubsup></math>|G|=n=∏pkii|G|=n=∏piki|G|=n=∏piki|G|=n=∏pkii|G|=n=∏piki\abs{G} = n = \prod p_i^{k_i}$, for each $iiiiii<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi><mi>i</mi><mi>i</mi><mi>i</mi><mi>i</mi><mi>i</mi></math>iiiiii$ and each $1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><mi>k</mi><mi>j</mi><mo>≤</mo><mi>k</mi><mi>i</mi><mn>1</mn><mo>≤</mo><msub><mi>k</mi><mi>j</mi></msub><mo>≤</mo><msub><mi>k</mi><mi>i</mi></msub></math>1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1≤kj≤ki1 \leq k_j \leq k_i$ then there exists a subgroup $HHHHHH<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>H</mi><mi>H</mi><mi>H</mi><mi>H</mi><mi>H</mi><mi>H</mi></math>HHHHHH$ of order $pkjipikjpikjpkjipikjpikj<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>k</mi><mi>j</mi><mi>i</mi><mi>p</mi><mi>i</mi><mi>k</mi><mi>j</mi><mi>p</mi><mi>i</mi><mi>k</mi><mi>j</mi><mi>p</mi><mi>k</mi><mi>j</mi><mi>i</mi><mi>p</mi><mi>i</mi><mi>k</mi><mi>j</mi><msubsup><mi>p</mi><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><msub><mi>k</mi><mi>j</mi></msub></mrow></msubsup></math>pkjipikjpikjpkjipikjp_i^{k_j}$.
+	- If $\abs{G} = n = \prod p_i^{k_i}$, for each $i$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
 - Galois Theory
 - [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
 
@@ -21,7 +21,7 @@ N(H) = && \theset{g\in G: gHg^{-1} = H} && \subseteq G && \text{Normalizer}
 
 ## Group Theory
 Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a generic group operation.
-- $Zn\ZZ_n$ the unique cyclic group of order $nn$
+- $\ZZ_n$ the unique cyclic group of order $n$
 - $\mathbf{Q}$ the quaternion group
 - $G^n = G\times G \times \cdots G$
 - $Z(G)$ the center of $G$
@@ -50,7 +50,7 @@ Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a gene
 		- $x\in X \implies e.x = x$
 	- Orbits partition any set
 	- Transitive Action
-	- Conjugacy Class: $C⊂GC \subset G$ is a conjugacy class $⟺\iff$
+	- Conjugacy Class: $C \subset G$ is a conjugacy class $\iff$
 		- $x\in C, g\in G \implies gxg^{-1} \in C$
 		- $x,y \in C \implies \exists g\in G : gxg^{-1} = y$
 		- i.e. subsets that are closed under $G$ acting on itself by conjugation and on which the action is transitive
