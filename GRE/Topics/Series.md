@@ -118,11 +118,17 @@ $$
 		- $R > 1$: divergent
 		- $R = 1$: inconclusive
 	- **Integral Test**
-		$$f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty$$
+		$$
+		f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
+		$$
 	- **Limit Test**
-		$$\lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty$$
+		$$
+		\lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty
+		$$
 	- **Alternating Series Test**
-		$$a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty$$
+		$$
+		a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty
+		$$
 
 #### Series
 - **Weierstrass $M$ Test**:
