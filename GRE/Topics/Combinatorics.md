@@ -116,4 +116,4 @@ Permutations of $N$  |  Multisets of $K$ with $n$ elements | An $n\dash$element 
 Permutations of $X$  |    Partitions of $N$ into $\leq k$ subsets |?  | Partitions of $N$ into exactly $k$ nonempty subsets  
 Both  |  Partitions of $n$ into $\leq k$ parts | ? | Partitions of $n$ into exactly $k$ parts  
 
-Proofs/Explanations:
+Proofs/Explanations: todo
