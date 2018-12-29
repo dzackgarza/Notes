@@ -105,7 +105,6 @@ General series of steps: want to know some unknown rate $y_t$
 	- Disks: $A = \int \pi r(t)^2 ~dt$
 	- Cylinders: $A = \int 2\pi r(t)h(t) ~dt$
 - Arc lengths
-	-
 	$$
 	ds = \sqrt{dx^2 + dy^2}\qquad L = \int ~ds \\
 	= \int_{x_0}^{x_1}\sqrt{1 + \dd[y]{x}}~dx \\
@@ -114,9 +113,9 @@ General series of steps: want to know some unknown rate $y_t$
 	- $SA = \int 2 \pi r(x) ~ds$
 - Center of Mass
 	- Given a density $\rho(\mathbf x)$ of an object $R$, the $x_i$ coordinate is given by
-$$
-x_i = \frac{\int_R x_i\rho(x) ~dx}{\int_R \rho(x)~dx}
-$$
+	$$
+	x_i = \frac{\int_R x_i\rho(x) ~dx}{\int_R \rho(x)~dx}
+	$$
 
 ### Big List of Integration Techniques
 
