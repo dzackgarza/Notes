@@ -59,7 +59,7 @@ For counterexamples, note that this fails to be a triangulation of $T$:
 
 ![Not a Torus](../../assets/1513062599096.png)
 
-This fails, for example, the simplex $[1,2,1]$ does not uniquely determine a triangle in this picture.
+This fails - for example, the simplex $[1,2,1]$ does not uniquely determine a triangle in this picture.
 
 ## Templates for Triangulation
 
