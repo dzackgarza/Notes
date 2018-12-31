@@ -27,13 +27,9 @@
 ## Higher Homotopy Groups of the Sphere
 
 * $\pi_n(S^n) = \ZZ$
-
 * $\pi_{n+1}S^n = \ZZ_2$ for $n \geq 4$
-
 * $\pi_{n+2}(S^n) \cong \ZZ_2$
-
 * $\pi_{n+3}S^n = \ZZ_8$ for $n\geq 5$
-
 * $\pi_5 S^2 = \ZZ_2$
 * $\pi_6 S^3 = \ZZ_4$
 * $\pi_7 S^4 = \ZZ \oplus \ZZ_4$
