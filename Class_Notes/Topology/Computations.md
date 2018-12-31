@@ -4,7 +4,7 @@
 * Lists start at entry 1, since all spaces are connected here and thus $\pi_0 = H_0 = \ZZ$. That is,
 	- $\pi_*(X) = [\pi_1(X), \pi_2(X), \pi_3(X), \ldots]$
 	- $H_*(X) = [H_1(X), H_2(X), H_3(X)]$
-- For a finite group $S$, it is the case that $\prod_S G = \bigoplus_S G$ in $\mathbf{Grp}$, i.e. that direct product and direct sum coincide. Otherwise, if $S$ is infinite the direct sum requires cofinitely many zero entries -- so here we always use $\prod$.
+- For a finite group $G$, it is the case that $\prod_S G = \bigoplus_S G$ in $\mathbf{Grp}$, i.e. that direct product and direct sum coincide. Otherwise, if $S$ is infinite the direct sum requires cofinitely many zero entries -- so here we always use $\prod$.
 * $\ZZ^n \definedas \prod_{i=1}^n \ZZ = \ZZ \times \ZZ \times \ldots \ZZ$ is the free abelian group of rank $n$.
 	- $x \in \ZZ^n = \left< a_1, \ldots, a_n\right> \implies x = \sum_n c_i a_i$ for some $c_i \in \ZZ$ , i.e. $a_i$ form a basis.
 	- Example: $x = 2a_1 + 4a_2 + a_1 - a_2 = 3a_1 + 3a_2$.
