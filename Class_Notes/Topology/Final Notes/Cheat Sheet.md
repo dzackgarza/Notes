@@ -342,7 +342,7 @@ $$
 
 # Further Notes
 On spaces complements of spaces in $\RR^3$:
-> My personal crutch is to just think about complements in $S^3$, which are usually easier since knot complements in $S^3$ are always K(π,1)s. Now if $K$ is a knot and $X$ is its complement in $S^3$, then you can prove that its complement in $\RR^3$ is homotopy equivalent to $S2\wedge X$
+> My personal crutch is to just think about complements in $S^3$, which are usually easier since knot complements in $S^3$ are always K(π,1)s. Now if $K$ is a knot and $X$ is its complement in $S^3$, then you can prove that its complement in $\RR^3$ is homotopy equivalent to $S2\vee X$
 
 For a graph $G$, we always have $\pi_1(G) \cong \ZZ^n$ where $n = |E(G - T)|$, the complement of the set of edges in any maximal tree. Equivalently, $n = 1-\chi(G)$. Moreover, $X \homotopic \bigvee^n S^1$ in this case.
 
