@@ -28,7 +28,7 @@
 	$$
 	and letting $P = \pi_1(U)$, there is a natural isomorphism
 	$$
-	\pi_1()
+	\pi_1(U_1) \bigast
 	$$
 	- Examples:
       - Computing $\pi_1(S^1 \vee S^1)$
