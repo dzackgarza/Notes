@@ -21,7 +21,9 @@
 			$$
 * Seifert-van Kampen Theorem
 	- Statement: Suppose $X = U_1 \union U_2$ where $U \definedas U_1 \intersect U_2 \neq \emptyset$ is path-connected. Then there are induced homomorphisms
+	$$
 	
+	$$
 	- Examples:
       - Computing $\pi_1(S^1 \vee S^1)$
       - Computing $\pi_1(S^1 \cross S^1)$
