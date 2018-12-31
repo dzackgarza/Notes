@@ -1,6 +1,6 @@
 # Covering Spaces
 
-Picture to keep in mind 
+Picture to keep in mind ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Covering_space_diagram.svg/1200px-Covering_space_diagram.svg.png)
 
 
 ## Useful Facts
