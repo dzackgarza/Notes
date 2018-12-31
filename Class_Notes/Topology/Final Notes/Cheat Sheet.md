@@ -20,9 +20,10 @@
 			H_i(X; \ZZ) = F(H^i(X; \ZZ)) \times T(H^{i+1}(X; \ZZ))
 			$$
 * Seifert-van Kampen Theorem
-	- Statement: Suppose $X = U_1 \union U_2$ where $U \definedas U_1 \intersect U_2 \neq \emptyset$ is path-connected. Then there are induced homomorphisms
+	- Statement: Suppose $X = U_1 \union U_2$ where $U \definedas U_1 \intersect U_2 \neq \emptyset$ is path-connected. Then the maps $i_1: U_1 \into X$ and $i_2: U_2 \into X$
+	induce the following group homomorphisms:
 	$$
-	i_1: U_1 \into X
+	i_1^*: 
 	$$
 	- Examples:
       - Computing $\pi_1(S^1 \vee S^1)$
