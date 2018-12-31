@@ -20,7 +20,7 @@
 			H_i(X; \ZZ) = F(H^i(X; \ZZ)) \times T(H^{i+1}(X; \ZZ))
 			$$
 * Seifert-van Kampen Theorem
-	- todo
+	- Statement: Suppose $X = U_1 \union U_2$
 	- Examples:
       - Computing $\pi_1(S^1 \vee S^1)$
       - Computing $\pi_1(S^1 \cross S^1)$
