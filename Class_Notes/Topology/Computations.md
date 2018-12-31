@@ -1,6 +1,6 @@
 **Legend**
 
-* $\pi_0(X)$ is the set of path components of $X$, and I write $\pi(X) = \ZZ$ if $X$ is path-connected (although it is not a group). Similarly, $H_0(X)$ is a free abelian group on the set of path components of $X$.
+* $\pi_0(X)$ is the set of path components of $X$, and I write $\pi_0(X) = \ZZ$ if $X$ is path-connected (although it is not a group). Similarly, $H_0(X)$ is a free abelian group on the set of path components of $X$.
 * Lists start at entry 1, since all spaces are connected here and thus $\pi_0 = H_0 = \ZZ$. That is,
 	- $\pi_*(X) = [\pi_1(X), \pi_2(X), \pi_3(X), \ldots]$
 	- $H_*(X) = [H_1(X), H_2(X), H_3(X)]$
