@@ -7,7 +7,7 @@
 
 ## Theorem: Van Kampen's Theorem
 
-Claim: If $X = U \cup V$, then $\pi_1(X) = \pi_1(U) \ast \pi_1(V)$.
+Claim: If $X = U \union V$, then $\pi_1(X) = \pi_1(U) \ast \pi_1(V)$.
 
 ### Proof
 
