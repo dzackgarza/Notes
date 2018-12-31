@@ -14,7 +14,7 @@ To cover if less than 50% of attendees haven't taken both courses in complex ana
 
 - Contour
 
-  - A smooth curve in the plane (or many concatenated together). Recall from vector calculus that curves admit parameterizations, so we can write a curve as $\gamma(t): \RR \to \C$. A *closed* contour is any contour which begins and ends at a single point, enclosing some region of the plane.
+  - A smooth curve in the plane (or many concatenated together). Recall from vector calculus that curves admit parameterizations, so we can write a curve as $\gamma(t): \RR \to \CC$. A *closed* contour is any contour which begins and ends at a single point, enclosing some region of the plane.
 
 - Complex Differentiation
 
@@ -27,7 +27,7 @@ To cover if less than 50% of attendees haven't taken both courses in complex ana
     \int_\gamma f(z)~dz = \int_a^b f(\gamma(t)) \gamma'(t) ~dt
     $$
     This is the first and most basic way to compute such an integral.
-    Alternatively, if $f: \RR \to \C$ can be written as a function of a real variable $t$ over an interval $[a,b]$, then it can be split into real imaginary parts and we can define
+    Alternatively, if $f: \RR \to \CC$ can be written as a function of a real variable $t$ over an interval $[a,b]$, then it can be split into real imaginary parts and we can define
     $$
     \int_a^b f(t) ~dt = \int_a^b u(t) + iv(t) ~dt= \int_a^b u(t)~dt + i\int_a^b v(t) ~dt
     $$
@@ -35,12 +35,12 @@ To cover if less than 50% of attendees haven't taken both courses in complex ana
 
 - Complex Antiderivative
 
-  - Defined like a potential function in vector calculus, a function $\phi: \C \to \C$ is an antiderivative of $f$ if and only if for all paths $\gamma$ from $z_a$ to $z_b$, we have
+  - Defined like a potential function in vector calculus, a function $\phi: \CC \to \CC$ is an antiderivative of $f$ if and only if for all paths $\gamma$ from $z_a$ to $z_b$, we have
     $$
     \int_\gamma f(z) ~dz = \phi(z_b) - \phi(z_a) \text{ or equivalently for all closed contours, } \oint f(z) ~dz = 0
     $$
 
-  - Note - a fundamental theorem of Calculus holds in $\C$ (much like in $\RR$), but the problem is that many basic functions fail to have antiderivatives!
+  - Note - a fundamental theorem of Calculus holds in $\CC$ (much like in $\RR$), but the problem is that many basic functions fail to have antiderivatives!
 
     - Example: $f(z) = \frac 1 z$ does not have the antiderivative $\ln z$ as in real calculus - in fact, it has no antiderivative because there is a closed contour for which $\oint f(z) \neq 0$, namely the unit circle.
     - So the workhorses from real calculus ($u$ subs, integration by parts, etc) become far less effective.
@@ -53,7 +53,7 @@ To cover if less than 50% of attendees haven't taken both courses in complex ana
 
 - Holomorphic
 
-  - Defined in open sets/neighborhoods $U$ of points. Actual definition: $f$ is complex differentiable, but in $\C$ this is equivalent to *analytic*, i.e. has a convergent power series in only positive powers. Generally means $f$ does not have singularities in $U$. 
+  - Defined in open sets/neighborhoods $U$ of points. Actual definition: $f$ is complex differentiable, but in $\CC$ this is equivalent to *analytic*, i.e. has a convergent power series in only positive powers. Generally means $f$ does not have singularities in $U$. 
   - E.g. A pole is a singularity such that there exists an $n$ where $g(z)=(z-z_0)^nf(z)$ is holomorphic at $z_0$.
   - Most theorems are stated in terms of holomorphic functions.
 
@@ -82,12 +82,12 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
 - Summary of approach:
 
-  - Use the fact that $\RR \hookrightarrow \C$ as the real line via $x \mapsto x+0i$, so this is equivalent to a contour integral along $L_R = \{ x + 0i \mid -R \leq x \leq R\}$and we’re equivalently computing the integral 
+  - Use the fact that $\RR \hookrightarrow \CC$ as the real line via $x \mapsto x+0i$, so this is equivalent to a contour integral along $L_R = \{ x + 0i \mid -R \leq x \leq R\}$and we’re equivalently computing the integral 
     $$
     \int_{L_R} f(z) ~dz
     $$
 
-  - Note that we have implicitly identified the original $f: \RR \to \RR$ with a *new* $f: \C \to \C$ which is given by the same formula. It may be the case that the first $f$ was well-behaved, but the new $f$ has complex singularities - in fact, we are counting on it!
+  - Note that we have implicitly identified the original $f: \RR \to \RR$ with a *new* $f: \CC \to \CC$ which is given by the same formula. It may be the case that the first $f$ was well-behaved, but the new $f$ has complex singularities - in fact, we are counting on it!
 
   - General line/path integrals are not much easier to compute, but complex integrals around *closed contours* are. So pick a closed contour that includes $L_R$ - in this case, we’ll take half-circle of radius $R$ in the upper half plane, $C_R$:
 
@@ -350,7 +350,7 @@ which is precisely what we obtained by the previous two methods.
 
 ## The Takeaway
 
-In all cases, we end up reducing the hard (or sometimes impossible) problem of computing a real integral using calculus in $\RR$ to what are essentially algebra problems in $\C$, primarily the manipulation of polynomials and roots of unity. Although these techniques may seem quite involved at first glance, a bit of practice makes them fast enough to rival the standard set of single variable real calculus techniques.
+In all cases, we end up reducing the hard (or sometimes impossible) problem of computing a real integral using calculus in $\RR$ to what are essentially algebra problems in $\CC$, primarily the manipulation of polynomials and roots of unity. Although these techniques may seem quite involved at first glance, a bit of practice makes them fast enough to rival the standard set of single variable real calculus techniques.
 
 # Example 2: Integrals Containing Trig Functions
 
