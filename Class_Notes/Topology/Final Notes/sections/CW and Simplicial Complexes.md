@@ -51,7 +51,7 @@ To write down a simplicial complex, label the vertices with increasing integers.
 
 ## Examples of Simplicial Complexes
 
-![Torus](/)
+![Torus](/    )
 
 ![Klein Bottle and $\RP^2$](1513062526623.png)
 
