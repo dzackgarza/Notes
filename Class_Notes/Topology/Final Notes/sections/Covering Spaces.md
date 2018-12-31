@@ -1,5 +1,7 @@
 # Covering Spaces
 
+Picture to keep in mind 
+
 
 ## Useful Facts
 
