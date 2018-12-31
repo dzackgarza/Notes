@@ -30,6 +30,7 @@
 	$$
 	\pi_1(X, \pt) \cong \pi_1(U_1, \pt) ~\bigast_P~ \pi_1(U_2, \pt)
 	$$
+	where $\bigast_P$ is the amalgamated free product over $P$.
 	- Examples:
       - Computing $\pi_1(S^1 \vee S^1)$
       - Computing $\pi_1(S^1 \cross S^1)$
