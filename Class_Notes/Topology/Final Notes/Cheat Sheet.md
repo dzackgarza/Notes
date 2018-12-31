@@ -26,7 +26,7 @@
 	i_1^*: \pi_1(U_1 ,\pt) \into \pi_1(X, \pt) \\
 	i_2^*: \pi_1(U_2 ,\pt) \into \pi_1(X, \pt)
 	$$
-	and there is a natural isomorphism
+	and letting $P = \pi_1(U)$, there is a natural isomorphism
 	$$
 	\pi_1()
 	$$
