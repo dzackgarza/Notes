@@ -57,7 +57,7 @@ To write down a simplicial complex, label the vertices with increasing integers.
 
 For counterexamples, note that this fails to be a triangulation of $T$:
 
-![Not a Torus](1513062599096.png)
+![Not a Torus](../../assets/1513062599096.png)
 
 This fails, for example, the simplex $[1,2,1]$ does not uniquely determine a triangle in this picture.
 
@@ -65,4 +65,4 @@ This fails, for example, the simplex $[1,2,1]$ does not uniquely determine a tri
 
 You can always triangulate a space by triangulating something homeomorphic, so for common spaces you can work with these fundamental domains:
 
-![1513064067523](1513064067523.png)
+![1513064067523](../../assets/1513064067523.png)
