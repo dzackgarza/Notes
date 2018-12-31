@@ -25,7 +25,7 @@
 * $\mathbb{CP}^n = S^{2n+1} / S^1$
 * $B^n = \theset{\mathbb{v} \in \RR^n \mid \norm{\mathbb{v}} \leq 1} \subset \RR^n$
 * $S^{n-1} = \del B^{n} = \theset{\mathbb{v} \in \RR^{n} \mid \norm{\mathbb{v}} = 1} \subset \RR^n$
-![sphere ball correct](~/SparkleShare/github.com/dzackgarza.comv2018/assets/images/sphere-v-ball-correct.png)
+![sphere ball correct](../assets/sphere-v-ball-correct.png)
 
 # Table of Homotopy and Homology Structures
 
