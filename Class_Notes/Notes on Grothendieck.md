@@ -24,7 +24,6 @@
     - Etale Cohomology
   - Wiles and Fermat's Last Theorem
 
-
 Narrative - building Algebraic Geometry in the 20th century
 Include contributions of 
 Weil, Zariski, Serre
