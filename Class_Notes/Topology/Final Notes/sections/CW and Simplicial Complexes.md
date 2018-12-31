@@ -3,7 +3,7 @@
 ## Useful Facts
 - To build a Moore space $M(n, \ZZ_p)$, take $X = S^n$ and attach $e^{n+1}$ via a map $\Phi: S^n = \del B^{n+1}\to X^{(n)} = S^n$ of degree $p$.
 	- To obtain $M(n, \prod G_i)$ take the corresponding $\bigvee X_i$
-	- Can also use Mayer Veitoris $H_{n+1}(\Sigma X) = H_n(X)$ and just suspend spaces with known homology.
+	- Can also use Mayer Veitoris to conclude $H_{n+1}(\Sigma X) = H_n(X)$ and just suspend spaces with known homology.
 
 ## Theorem: Van Kampen's Theorem
 
