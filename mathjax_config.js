@@ -79,7 +79,9 @@ module.exports = {
       inner: ['\\langle #1, #2 \\rangle', 2, ""],
       bigast: '{\\mathop{\\Large \\ast}}',
       from: '{\\leftarrow}',
-      covers: '{\\twoheadrightarrow_p}'
+      covers: '{\\twoheadrightarrow_p}',
+      suchthat: '{\\ni}',
+      divides: '{\~\\mid\~}'
     }
   },
   'HTML-CSS': { availableFonts: ['TeX'] }
