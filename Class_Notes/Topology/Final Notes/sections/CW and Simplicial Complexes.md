@@ -53,7 +53,7 @@ To write down a simplicial complex, label the vertices with increasing integers.
 
 /home/zack/SparkleShare/github.com/Notes/Class_Notes/Topology/Final Notes/sections/CW and Simplicial Complexes.md
 
-![Torus](../../assets/1513062466927.png)
+![Torus](../../../assets/1513062466927.png)
 
 ![Klein Bottle and $\RP^2$](1513062526623.png)
 
