@@ -1,5 +1,5 @@
 * Acyclic
-* Alexandar duality
+* Alexander duality
 * Basis
 	* For an $R\dash$module $M$, a basis $B$ is a linearly independent generating set.
 * Boundary
