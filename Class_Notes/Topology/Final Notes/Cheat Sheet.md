@@ -28,7 +28,7 @@
 	$$
 	and letting $P = \pi_1(U), \pt$, there is a natural isomorphism
 	$$
-	\pi_1(U_1, \pt) \bigast_P \pi_1(U_2, \pt)
+	\pi_1(U_1, \pt) \bigast_P ~\pi_1(U_2, \pt)
 	$$
 	- Examples:
       - Computing $\pi_1(S^1 \vee S^1)$
