@@ -34,12 +34,12 @@
 
 * $\pi\_{n+3}S^n = \ZZ_8$ for $n\geq 5$
 
-* $\pi_5S^2 = \ZZ_2$
-* $\pi_6S^3 = \ZZ_4$
-* $\pi_7S^4 = \ZZ \oplus \ZZ_4$
-* $\pi_kS^2 \cong \pi_kS^3$
-* $\pi_3S^2 \cong \ZZ$
-* $\pi_4S^2 \cong \ZZ_2$
+* $\pi_5 S^2 = \ZZ_2$
+* $\pi_6 S^3 = \ZZ_4$
+* $\pi_7 S^4 = \ZZ \oplus \ZZ_4$
+* $\pi_k S^2 \cong \pi_kS^3$
+* $\pi_3 S^2 \cong \ZZ$
+* $\pi_4 S^2 \cong \ZZ_2$
 
 ## Misc
 
