@@ -51,7 +51,7 @@ $X\cross \RR^n \homotopic X \cross \pt$
 ## Mayer-Vietoris
 Given $A,B \subset X$ such that $A^\circ \cup B^\circ = X$, there is a long exact sequence in homology:
 
-```latex {cmd=true, hide=false, run_on_save=true}
+```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass[crop, tikz]{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
