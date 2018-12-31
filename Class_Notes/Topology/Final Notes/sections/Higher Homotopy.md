@@ -37,7 +37,7 @@
 * $\pi_5 S^2 = \ZZ_2$
 * $\pi_6 S^3 = \ZZ_4$
 * $\pi_7 S^4 = \ZZ \oplus \ZZ_4$
-* $\pi_k S^2 \cong \pi_kS^3$
+* $\pi_k S^2 \cong \pi_k S^3$
 * $\pi_3 S^2 \cong \ZZ$
 * $\pi_4 S^2 \cong \ZZ_2$
 
