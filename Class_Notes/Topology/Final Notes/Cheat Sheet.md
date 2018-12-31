@@ -21,6 +21,10 @@
 			$$
 * Seifert-van Kampen Theorem
 	- todo
+	- # Van Kampen
+- $\pi_1(S^1 \vee S^1)$
+- $\pi_1(S^1 \cross S^1)$
+- Counterexample when $U\cap V$ isn't path-connected: $S^1$ with $U,V$ neighborhoods of the poles.
 * Whitehead Theorem
 	- A map $X \mapsvia{f} Y$ on CW complexes that is a weak homotopy equivalence (inducing isomorphisms in homotopy) is in fact a homotopy equivalence.
 		- Counterexample: individual maps may not work, take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ which have isomorphic homotopy but not homology.
