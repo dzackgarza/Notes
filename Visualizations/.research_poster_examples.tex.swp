@@ -26,7 +26,7 @@
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tikzpicture}[scale=\textwidth/5cm,samples=200]
 
 % Handle
@@ -57,7 +57,7 @@
 % Arrow for map
 \draw[-{Latex[length=3mm,width=3mm]}] (1.5, -.5) .. controls (2, -1) and (2.5, .5)  ..(4.2, -.5);
 
-
+% Label for arrow
 \draw  (3.0,0) node {$f: X \to Y$};
 
 \end{tikzpicture}
