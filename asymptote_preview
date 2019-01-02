@@ -8,10 +8,10 @@ else
   filename=$(basename -- "$filepath")
   extension="${filename##*.}"
   filename="${filename%.*}"
-  echo "$directory/$filename.eps"
-  #while true; do
-    #inotifywait -e CLOSE_WRITE $filepath;
-    #asy --render 0 $filename -o "";
-  #done
+  outfile="$directory/$filename.eps"
+  while true; do
+    inotifywait -e CLOSE_WRITE $filepath;
+    asy --render 0 $filepath -o $outfile;
+  done
 fi
 
