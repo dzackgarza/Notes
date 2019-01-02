@@ -19,7 +19,7 @@
 \usetikzlibrary{decorations.shapes}
 
 
- \pgfplotsset{compat=1.14}
+\pgfplotsset{compat=1.14}
  
 \tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
 
