@@ -94,25 +94,39 @@
 
 
 
-\begin{asy}[width=\the\linewidth,inline=true]
-pair z0=(0,0);
-pair z1=(2,0);
-pair z2=(5,0);
-pair zf=z1+0.75*(z2-z1);
+\begin{tikzpicture}[scale=\textwidth/35cm,samples=200]
+	\draw (-7,0)[fill=red] circle (.4mm);
+	\draw (-6,0)[fill=red] circle (.4mm);
+	\draw  (-6.5,-1.3) node {$S^0$};
 
-draw(z1--z2);
-dot(z1,red+0.15cm);
-dot(z2,darkgreen+0.3cm);
-label("$m$",z1,1.2N,red);
-label("$M$",z2,1.5N,darkgreen);
-label("$\hat{\ }$",zf,0.2*S,fontsize(24pt)+blue);
+    \draw[red] (-3,0) circle (1cm);
+	\draw  (-3,-1.3) node {$S^1$};
+	
+	\draw[red] (-1,0) arc (180:360:1cm and 0.5cm);
+    \draw[dashed, red] (-1,0) arc (180:0:1cm and 0.5cm);
+    \draw[red] (0,1) arc (90:270:0.5cm and 1cm);
+    \draw[dashed, red] (0,1) arc (90:-90:0.5cm and 1cm);
+    \draw[red] (0,0) circle (1cm);
+    \shade[ball color=blue!10!white,opacity=0.20] (0,0) circle (1cm);
+    \draw  (0,-1.3) node {$S^2$};
+\end{tikzpicture}
+% Balls
+\begin{tikzpicture}[scale=\textwidth/35cm,samples=200]
+	\draw[thick, blue] (-7,0) -- (-6,0);
+	\draw[fill=red](-6,0) circle (.4mm);
+	\draw[fill=red](-7,0) circle (.4mm);
+	\draw (-6.5,-1.3) node {$B^0$};
 
-pair s=-0.2*I;
-draw("$x$",z0+s--z1+s,N,red,Arrows,Bars,PenMargins);
-s=-0.5*I;
-draw("$\bar{x}$",z0+s--zf+s,blue,Arrows,Bars,PenMargins);
-s=-0.95*I;
-draw("$X$",z0+s--z2+s,darkgreen,Arrows,Bars,PenMargins);
-\end{asy}
+	%\shade[ball color=blue!100!white] (-3,0) circle (1cm);
+	\draw[pattern=horizontal lines, pattern color=blue] (-3,0) circle (1cm);
+    \draw[red] (-3,0) circle (1cm);
+	\draw (-3,-1.3) node {$B^1$};
+
+    \shade[ball color=blue!100!white,opacity=0.90] (0,0) circle (1cm);
+    \draw[red] (0,0) circle (1cm);
+   	\draw[red] (-1,0) arc (180:360:1cm and 0.5cm);
+    \draw[red] (0,1) arc (90:270:0.5cm and 1cm);
+    \draw  (0,-1.3) node {$B^2$};
+\end{tikzpicture}
 
 \end{document}
