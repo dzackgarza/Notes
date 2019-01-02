@@ -15,7 +15,7 @@ triple fs(pair t) {
 
 surface s=surface(fs,(0,180),(360,360),8,8,Spline);
 material m = blue, emissivepen=0.2*white
-draw(s, surfacepen=m);
+draw(s, surfacepen=material(m));
 /*draw(s,surfacepen=material(blue+opacity(0.6), emissivepen=0.2*white),render(compression=Low,merge=true));*/
 
 xaxis3(Label("$x$",1),xmin=0,xmax=7,Arrow3);
