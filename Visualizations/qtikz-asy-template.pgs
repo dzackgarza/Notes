@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage[inline]{asymptote}
+\begin{document}
+
+\begin{asydef}
+// Global Asymptote definitions can be put here.
+import three;
+usepackage("bm");
+texpreamble("\def\V#1{\bm{#1}}");
+// settings.toolbar=true;
+\end{asydef}
+
+\begin{center}
+\begin{asy}
+size(4cm,0);
+<>
+shipout(bbox(0.25cm));
+\end{asy}
+\end{center}
+
+\end{document}
+
