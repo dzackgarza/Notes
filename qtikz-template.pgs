@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{amsmath, amsthm, amssymb}
 \usepackage{mathptmx}
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
