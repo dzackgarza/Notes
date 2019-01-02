@@ -26,7 +26,8 @@
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Coffee cup with map out
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{tikzpicture}[scale=\textwidth/5cm,samples=200]
 
 % Handle
