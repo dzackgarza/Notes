@@ -1,16 +1,15 @@
 \documentclass{article}
-
-\usepackage{asymptote}
-
+\usepackage{mathptmx}
+\usepackage{pgfplots}
+\usepackage[inline]{asymptote}
+\usepackage[active,pdftex,tightpage]{preview}
+\PreviewEnvironment[]{asy}
 \begin{document}
-
 \begin{asydef}
 import three;
 import solids;
 \end{asydef}
-
 \begin{asy}
 <>
 \end{asy}
-
 \end{document}
