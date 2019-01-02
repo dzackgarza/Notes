@@ -7,7 +7,7 @@ else
   filename=$(basename -- "$filepath")
   extension="${filename##*.}"
   filename="${filename%.*}"
-  echo "$filepath"
+  echo "$filename"
   #while true; do
     #inotifywait -e CLOSE_WRITE $filepath;
     #asy --render 0 $filename -o "";
