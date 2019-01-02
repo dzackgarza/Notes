@@ -9,9 +9,9 @@ currentprojection=perspective(5,4,4);
 real R=3;
 real a=1;
 
-/*triple fs(pair t) {*/
-  /*return ((R+a*Cos(t.y))*Cos(t.x),(R+a*Cos(t.y))*Sin(t.x),a*Sin(t.y));*/
-/*};*/
+triple fs(pair t) {
+  return ((R+a*Cos(t.y))*Cos(t.x),(R+a*Cos(t.y))*Sin(t.x),a*Sin(t.y));
+};
 
 /*surface s=surface(fs,(0,180),(360,360),8,8,Spline);*/
 /*draw(s,surfacepen=material(blue+opacity(0.6), emissivepen=0.2*white),render(compression=Low,merge=true));*/
