@@ -4,6 +4,7 @@ if [ $# -eq 0 ]; then
     echo "Supply filename as argument"
 else
   filepath=$(realpath $1)
+  directory=$(dirname $filepath)
   filename=$(basename -- "$filepath")
   extension="${filename##*.}"
   filename="${filename%.*}"
