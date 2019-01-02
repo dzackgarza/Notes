@@ -28,7 +28,6 @@
 
 % Coffee cup with map out
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\iffalse
 \begin{tikzpicture}[scale=\textwidth/5cm,samples=200]
 
 % Handle
@@ -63,7 +62,6 @@
 \draw  (3.0,0) node {$f: X \to Y$};
 
 \end{tikzpicture}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
@@ -90,7 +88,6 @@
 \end{asy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\fi
 
 
 % Sphere vs. Ball for Low Dimensions
