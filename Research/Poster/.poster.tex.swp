@@ -257,7 +257,7 @@ where $[X, Y]$ is obtained by taking the set of all continuous maps $f: X \to Y$
 \begin{center}
 
 \begin{tikzpicture}[scale=\textwidth/65cm,samples=200, decoration={markings,mark=at position 0.5 with {\arrow{>}}},
-   witharrow/.style={postaction={decorate}}, dot/.style={draw,fill,circle,inner sep=1.5pt,minimum width=0pt}]
+   witharrow/.style={postaction={decorate}}]
     \draw[thick, blue] (-3,0) -- (-1,0);
 	\draw[fill=red](-3,0) circle (.4mm);
 	\draw[fill=red](-1,0) circle (.4mm);
