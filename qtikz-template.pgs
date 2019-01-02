@@ -2,7 +2,7 @@
 \usepackage{mathptmx}
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
-\usetikzlibrary{arrows.meta, cd, fadings, patterns}
+\usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, decorations.markings}
 \tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
 \usepackage{pgfplots}
 \usepackage[inline]{asymptote}
