@@ -16,6 +16,8 @@
 
 \large
 \resizebox{\linewidth}{!}{
+
+% Sphere with great circle
 \begin{tikzpicture}[scale=\textwidth/14cm,samples=200]
     \draw (-1,0) arc (180:360:1cm and 0.5cm);
     \draw[dashed] (-1,0) arc (180:0:1cm and 0.5cm);
@@ -26,6 +28,7 @@
 \end{tikzpicture}
 \hspace{0.5cm}
 
+% Mesh of gaussian
 \begin{tikzpicture}[scale=\textwidth/40cm,samples=200]
     \pgfplotsset{ticks=none}
 	\begin{axis}
@@ -34,6 +37,7 @@
 	\end{axis}
 \end{tikzpicture}
 
+% Mobius band with center circle
 \begin{tikzpicture}[scale=\textwidth/40cm,samples=200]
   \begin{axis}[
     hide axis,
