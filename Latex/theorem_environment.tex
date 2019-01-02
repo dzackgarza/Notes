@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\usepackage{amsthm}
+
+% This AMS package gives us a newtheorem command, which can be extended to define new environments of things that should logically be one piece - like a claim or definition. Each gets its own separate numbering, and allows you to reference it later on by label.
+\newtheorem{defn}{Definition}
+\newtheorem{claim}{Claim}
+
+\begin{document}
+
+% Immediately using the 'defn' environment we made in the preamble:
+\begin{defn}
+A \textbf{topology} $\mathcal{T}$ on a set $X$, denoted $\mathcal{T}(X)$, is a subset of $2^X$ (the powerset of $X$) satisfying...
+\end{defn}
+
+\begin{claim}
+Suppose $X$ is a set and $\mathcal{T}$ is a topology on $X$. Then $\mathcal{T}$ is great.
+\end{claim}
+
+% Proof inserts a nice square at the end of all of its content, aligned to the right - this is usually a stand-in for something like "Proof Completed", "QED", etc.
+\begin{proof}
+Left as an exercise for the reader.
+\end{proof}
+
+\end{document}
