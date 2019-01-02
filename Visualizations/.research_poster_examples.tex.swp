@@ -27,7 +27,7 @@
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-\begin{tikzpicture}[scale=\textwidth/1cm,samples=200]
+\begin{tikzpicture}[scale=\textwidth/5cm,samples=200]
 
 % Handle
 \begin{scope}[shift=(10:7/8), rotate=-30, yslant=1/2, xslant=-1/8]
