@@ -89,6 +89,7 @@
   zaxis3(Label("$z$",1),zmin=0,zmax=4,Arrow3);
   label("$Y = $ A Torus", (0,-40), p = fontsize(30pt));
 \end{asy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{asy}[width=\the\linewidth,inline=true]
 pair z0=(0,0);
