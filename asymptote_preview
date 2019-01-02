@@ -9,6 +9,8 @@ else
   extension="${filename##*.}"
   filename="${filename%.*}"
   outfile="$directory/$filename.eps"
+  asy --render 0 $filepath -o $outfile;
+  xdg-open $outfile;
   while true; do
     inotifywait -e CLOSE_WRITE $filepath;
     asy --render 0 $filepath -o $outfile;
