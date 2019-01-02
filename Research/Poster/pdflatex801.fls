@@ -350,3 +350,12 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 OUTPUT /tmp/gummi/.poster.tex-1.asy
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
