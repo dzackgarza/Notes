@@ -3,10 +3,14 @@
 if [ $# -eq 0 ]; then
     echo "Supply filename as argument"
 else
-  filename=$1
-  while true; do
-    inotifywait -e CLOSE_WRITE $filename;
-    asy --render 0 $filename;
-  done
+  filepath=$(realpath $1)
+  filename=$(basename -- "$filepath")
+  extension="${filename##*.}"
+  filename="${filename%.*}"
+  echo "$filepath"
+  #while true; do
+    #inotifywait -e CLOSE_WRITE $filepath;
+    #asy --render 0 $filename -o "";
+  #done
 fi
 
