@@ -1,4 +1,4 @@
-unitsize(1inch);
+﻿unitsize(1inch);
 path T,ct,tt;
 T=(0,0)--(1,0)--(1/2,sqrt(3)/2)--cycle;
 ct=(0,0)..(1,0)--(1/2,sqrt(3)/2)..cycle;
