@@ -1,7 +1,4 @@
-settings.render = 0;
-settings.prc = false;
-
-import solids;
+\begin{asy}
   size(400);
   import graph3;
 
@@ -20,3 +17,4 @@ import solids;
   yaxis3(Label("$y$",1),ymin=0,ymax=7,Arrow3);
   zaxis3(Label("$z$",1),zmin=0,zmax=4,Arrow3);
   label("$Y = $ A Torus", (0,-40), p = fontsize(30pt));
+\end{asy}
