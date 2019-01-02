@@ -54,8 +54,10 @@
 % Coffee Cup Label
 \draw  (0,-1.7) node {$X = $ A Coffee Cup};
 
-% 
+% Arrow for map
 \draw[-{Latex[length=3mm,width=3mm]}] (1.5, -.5) .. controls (2, -1) and (2.5, .5)  ..(4.2, -.5);
+
+
 \draw  (3.0,0) node {$f: X \to Y$};
 
 \end{tikzpicture}
