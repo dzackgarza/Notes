@@ -1,0 +1,180 @@
+%%% ====================================================================
+%%% @LaTeX-file{
+%%%   filename  = "aomsample.tex",
+%%%   copyright = "Copyright 1995, 1999 American Mathematical Society,
+%%%                2005 Hebrew University Magnes Press,
+%%%                all rights reserved.  Copying of this file is
+%%%                authorized only if either:
+%%%                (1) you make absolutely no changes to your copy,
+%%%                including name; OR
+%%%                (2) if you do make changes, you first rename it
+%%%                to some other name.",
+%%% }
+%%% ====================================================================
+\NeedsTeXFormat{LaTeX2e}% LaTeX 2.09 can't be used (nor non-LaTeX)
+[1994/12/01]% LaTeX date must December 1994 or later
+\documentclass[normal]{aomart}
+%\usepackage[english]{babel}
+%\documentclass[screen]{aomart}
+%\documentclass{aomart}
+%    Some definitions useful in producing this sort of documentation:
+\chardef\bslash=`\\ % p. 424, TeXbook
+%    Normalized (nonbold, nonitalic) tt font, to avoid font
+%    substitution warning messages if tt is used inside section
+%    headings and other places where odd font combinations might
+%    result.
+\newcommand{\ntt}{\normalfont\ttfamily}
+%    command name
+\newcommand{\cn}[1]{{\protect\ntt\bslash#1}}
+%    LaTeX package name
+\newcommand{\pkg}[1]{{\protect\ntt#1}}
+%    File name
+\newcommand{\fn}[1]{{\protect\ntt#1}}
+%    environment name
+\newcommand{\env}[1]{{\protect\ntt#1}}
+\hfuzz1pc % Don't bother to report overfull boxes if overage is < 1pc
+
+%       Theorem environments
+
+%% \theoremstyle{plain} %% This is the default
+\newtheorem[{}\it]{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{rem}{Remark}[section]
+\newtheorem*[{}\it]{notation}{Notation}
+\newtheorem{step}{Step}
+
+%\numberwithin{equation}{section}
+
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\secref}[1]{\S\ref{#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{#1}}
+
+
+%       Math definitions
+
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\st}{\sigma}
+\newcommand{\XcY}{{(X,Y)}}
+\newcommand{\SX}{{S_X}}
+\newcommand{\SY}{{S_Y}}
+\newcommand{\SXY}{{S_{X,Y}}}
+\newcommand{\SXgYy}{{S_{X|Y}(y)}}
+\newcommand{\Cw}[1]{{\hat C_#1(X|Y)}}
+\newcommand{\G}{{G(X|Y)}}
+\newcommand{\PY}{{P_{\mathcal{Y}}}}
+\newcommand{\X}{\mathcal{X}}
+\newcommand{\wt}{\widetilde}
+\newcommand{\wh}{\widehat}
+
+\DeclareMathOperator{\per}{per}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\non}{non}
+\DeclareMathOperator{\cf}{cf}
+\DeclareMathOperator{\add}{add}
+\DeclareMathOperator{\Cham}{Cham}
+\DeclareMathOperator{\IM}{Im}
+\DeclareMathOperator{\esssup}{ess\,sup}
+\DeclareMathOperator{\meas}{meas}
+\DeclareMathOperator{\seg}{seg}
+
+%    \interval is used to provide better spacing after a [ that
+%    is used as a closing delimiter.
+\newcommand{\interval}[1]{\mathinner{#1}}
+
+%    Notation for an expression evaluated at a particular condition. The
+%    optional argument can be used to override automatic sizing of the
+%    right vert bar, e.g. \eval[\biggr]{...}_{...}
+\newcommand{\eval}[2][\right]{\relax
+  \ifx#1\right\relax \left.\fi#2#1\rvert}
+
+%    Enclose the argument in vert-bar delimiters:
+\newcommand{\envert}[1]{\left\lvert#1\right\rvert}
+\let\abs=\envert
+
+%    Enclose the argument in double-vert-bar delimiters:
+\newcommand{\enVert}[1]{\left\lVert#1\right\rVert}
+\let\norm=\enVert
+
+%\setcounter{tocdepth}{5}
+
+\title[Research Proposal]{Faculty Mentor Program \\ Research Proposal}
+\author{D. Zack Garza}
+\address{University of California, San Diego\\
+La Jolla, California}
+\email{dzackgarza@gmail.com}
+\urladdr{https://dzackgarza.com}
+\givenname{Zack}
+\surname{Garza}
+\copyrightyear{2018--2022}
+\copyrightnote{\textcopyright~2018--2022 D. Zack Garza}
+
+
+\begin{document}
+
+\begin{abstract}
+  This research project will focus on the theory and applications of \textit{spectral sequences}, a computational tool and for computing topological data associated to a space. Such sequences can be used to compute either the the \textit{cohomology ring} or the \textit{homotopy groups} of a space, both of which fundamentally contribute to the algebraic characterization and classification of a space, by decomposing a large calculation into a series of smaller approximations that in some sense 'converge' to the desired algebraic object.
+  
+  Such sequences are regularly applied in modern research in mathematics, particularly in algebraic topology and homotopy theory, but also in many other areas of mathematics such as differential topology and algebraic geometry.
+  
+  In recent years, similar methods have been applied to the analysis of large data sets via a technique called \textit{persistent homology}, which have recently been shown to carry the same data as a specific type of spectral sequence, and that advances in either technique might be used to influence the other.\cite{Basu2017}
+  
+  The goal of this project is to investigate spectral sequences and their connections to other fundamental topics in modern mathematics. Research directions might include generalizing them to broader classes of objects, algebraically classifying the computability of certain families, or characterizing results that make them more amenable to computation.
+\end{abstract}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Topology as a distinguished field of Mathematics is relatively new, only coming into its own in the early 1900s, although many of its central ideas had been present in other fields for nearly a century prior. On the whole, Topology can essentially be characterized as an investigation into the property of \textit{topological spaces}, sets of objects with some notion of closeness between its points that may or may not be associated with some numerical measure of distance. Many important mathematical objects are instances of such spaces -- the real or complex numbers, for example, as well as their higher dimensional analogs.
+
+However, it turns out that many other interesting objects within mathematics also carry the structure of a topological space. Perhaps the most prominent examples are from the class of objects known as \textit{manifolds}, which are roughly spaces that at small enough levels can be described by coordinates of real numbers. The study of such objects from the lens of topology played a prominent role in 20th-century physics, especially in the formulation of general relativity and properties such as the shape and curvature of the universe.
+
+A particularly powerful framework arose in the first half of the 1900s with the advent of Algebraic Topology, which began by attaching certain algebraic objects to topological spaces in order to distinguish and classify them. One of the first such invariants was the \textit{fundamental group}, the first in a series of \textit{homotopy groups}, which measure the ways in which a given object can interact with $n$-dimensional spheres. It was found that although these were powerful invariants, they were generally difficult to compute for arbitrary spaces, and so another set of invariants denoted the \textit{homology} and \textit{cohomology} groups of a space were developed. These objects roughly measure the number of holes that a space has at varying dimensions - for example, a circle has a 2-dimensional hole in its center, while the surface of a ball has a 3-dimensional hole represented by its empty interior.
+
+These proved to be very powerful computational tools, and have led to many unforeseen advancements. Homology, in particular, has proved to be a powerful theoretical tool -- one example is the advent of obstruction theory, which allows one to prove a certain construction works by showing that a particular homology group vanishes. Conversely, one might also be able to show that a construction does \textit{not} work by showing that a particular homology group is not zero, and so it might be said that this homology group measures such an obstruction.
+
+Over the past 10-20 years, homology has become much more prevalent in applied settings. One particularly salient development is the advent of \textit{persistent homology}, in which a large set of data is transformed into a series of topological spaces, upon which all of the aforementioned tools can be applied. Some of the theory and applications of this are summarized in \cite{Basu}. With the proliferation of large sets of high-dimensional data, the tools of topology are increasingly brought to bear on problems involving summarizing this data, extracting its salient features, and coming up with ways to represent or embed such data in lower dimensional spaces to make computations more tractable.
+
+The primary aim of this research proposal is to investigate \textit{spectral sequences}, which are a computational tool and framework for computing homology, cohomology, and homotopy groups of spaces. It is particularly suited to analyzing how interactions between spaces are reflected in their algebraic invariants, and essentially works by breaking a large computation down into a series of smaller approximations that are related to the problem -- in the sufficiently nice cases, there is a sense in which these smaller intermediate solutions "converge" to the desired computation.
+
+
+\section{Literature Review}
+
+As highlighted in \cite{Chow2006}, a number of stringent simplifying assumptions are made to guarantee such convergence -- however, it is still possible to glean valuable information from the sequence, even in the absence of complete information, and moreover, it may be that some conditions are sufficient but not necessary. So one research direction is examining what happens when several of the simplifying assumptions are dropped, or if there are alternatives - work towards this direction is done in \cite{Eilenberg1962}
+
+Similarly, spectral sequences also arise from other sources, such as generic double complexes, exact couples, as well as from fibrations, which are a core piece of modern Algebraic Topology. Thus another research direction is investigating the ramifications in these instances, particularly in spectral sequences arising from fibrations involving classifying spaces. There is a body of work over the past 50-60 years aimed at extending techniques of Algebraic Topology into Algebraic Geometry using "motivic" methods -- this includes the use of spectral sequences, as detailed in \cite{Dugger2010}.
+
+Finally, another interesting direction is to ascertain algebraic conditions on spectral sequences that guarantee convergence or enable comparisons with known sequences to reduce computational complexity. The former is broached by \cite{Boardman1999}, while some results towards the latter are introduced in \cite{Zeeman1957}.
+
+\section{Methodology} 
+The methodological approach to this research project will involve a detailed study of the requisite background knowledge, as well as how spectral sequences fit into a broader mathematical context. We will start off by making simplifying assumptions in order to obtain a sequence that is easy to compute with, 
+
+The first results will be to show how several rather technical results in homological algebra can be recovered from the most basic instance of a spectral sequence, yielding elementary proofs of what are otherwise rather technical results. This is generally an indicator that a given abstraction is useful and worth examining in more detail.
+
+Then we will apply this to a small collection of well-known classical spaces that appear in different areas of mathematics and physics. Computations will be carried out on these spaces and checked against known results. Furthermore, we will investigate if these computations, if pushed slightly farther than usual, yield any new or novel proofs of otherwise difficult or complex results. 
+
+For example, one common application involves a result that recognizes that cohomology groups carry an additional structure that makes them into rings, and applies a spectral sequence to deduce the ring structure of the well-studied complex projective space $\mathbb{CP}^n$. 
+
+We will attempt to extend this method to some of the classical Lie Groups, which are often studied in theoretical physics. The cohomology rings of these groups have a known (albeit more complicated) structure, so an exhibition of such a structure using only spectral sequences would make for an interesting result.
+
+We will then examine the interplay between spectral sequences and fibrations, which will be closely related to topics involving fiber bundles and classifying spaces, both of which are pivotal areas of modern research in their own right. Analysis of these objects involves different, slightly more complex spectral sequences, some of which may only yield partial information due to the intractability or impracticality of computing certain differentials. In any case, we will attempt to apply these spectral sequences to a variety of known types of fibrations, potentially producing intermediate results that allow us to compare and map between related sequences. Here we will also use this information to ascertain the current state-of-the-art results in the computation of the higher homotopy groups of spheres, a central and fundamental open problem in Algebraic Topology.
+
+Finally, we will examine some of the modern adaptations of spectral sequences to both more general and more specialized situations. One instance of a more general theory involves a spectral sequence of derived functors, which encapsulates and unifies several of the previous types of sequences mentioned. An instance of more specialized sequences might involve, for example, the Atiyah–Hirzebruch spectral sequence, which provides a link between topological $K$-theory and classical singular cohomology, which has laid the groundwork for searches for similar sequences that link various other types of cohomology theories that have arisen over the past several decades.\cite{Grayson2005} Such connections provide a way to transport computations and techniques from one setting to another, potentially yielding new ways to attack previously unyielding problems, as is done in \cite{Batson2013} to produce new invariants of knots.
+
+The overall result of this research will be presented via poster, and also compiled into a write-up in the form of a survey article that tabulates and exhibits the results of these computations, highlighting which parts contain novel, interesting, or unexpected results. It will also provide an overview of the more generalized theories, including how they related to the previously established definitions and theorems.
+
+\newpage
+\bibliography{aomsample}
+\bibliographystyle{aomalpha}
+
+\end{document}
+\endinput
