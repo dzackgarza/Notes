@@ -2,7 +2,7 @@ settings.render = 0;
 settings.prc = false;
 
 import solids;
-size(20);
+size(40);
 import graph3;
 
 currentprojection=perspective(5,4,4);
