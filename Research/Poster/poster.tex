@@ -3,7 +3,7 @@
 \usepackage{multicol} 			%3-column layout
 \usepackage[left=2cm,right=2cm,bottom=0cm,top=0cm]{geometry}			%Reset margins
 \usepackage{mathpazo}			%Load palatino font & pazo math
-\usepackage{color}	
+\usepackage{color}
 
 \usepackage{amsmath, amsthm, amssymb}
 
@@ -74,7 +74,7 @@ University of California, San Diego }
 \section*{Background}
 This project is centered around the use of spectral sequences to compute topological invariants of spaces. These invariants can be used to categorize, study, and distinguish familiar spaces that arise in various branches of Mathematics, and often lead to the construction or discovery of entirely new types of spaces.
 
-Generally speaking, Topology is the study of spaces that admit a notion of closeness, measured by a collection of ``open sets''. Spaces fitting such a description are said to be objects in the category of \textbf{Topological Spaces} (also denoted \textbf{Top}). In this category, spaces are only distinguished up to \textbf{homeomorphism}, a continuous bijective map with continuous inverse. That is, given two spaces and a map $f: X \to Y$, if $f$ is continuous and admits an continuous inverse $f^{-1} X \to Y$, then $X$ and $Y$ are considered equivalent objects in \textbf{Top} and we write $X \cong Y$. Such maps $f$ can also be thought of as continuous deformations from $X$ to $Y$. 
+Generally speaking, Topology is the study of spaces that admit a notion of closeness, measured by a collection of ``open sets''. Spaces fitting such a description are said to be objects in the category of \textbf{Topological Spaces} (also denoted \textbf{Top}). In this category, spaces are only distinguished up to \textbf{homeomorphism}, a continuous bijective map with continuous inverse. That is, given two spaces and a map $f: X \to Y$, if $f$ is continuous and admits an continuous inverse $f^{-1} X \to Y$, then $X$ and $Y$ are considered equivalent objects in \textbf{Top} and we write $X \cong Y$. Such maps $f$ can also be thought of as continuous deformations from $X$ to $Y$.
 
 Such deformations preserve purely topological properties, such as the number of connected components and the number of holes. Such properties are referred to as \textit{topological invariants}. It is for this reason that Topology is sometimes referred to as ``rubber sheet geometry'', in which the surfaces act like rubber or clay that can be reshaped but can not be torn without potentially affecting its topological properties. An oft-cited example is that, thought of as surfaces embedded in $\mathbb{R}^3$, a coffee cup is homeomorphic to a one-holed torus, and thus there is a continuous map of the following type:
 
@@ -84,24 +84,24 @@ Such deformations preserve purely topological properties, such as the number of 
 
 % Handle
 \begin{scope}[shift=(10:7/8), rotate=-30, yslant=1/2, xslant=-1/8]
-  \shade [top color=gray!80, bottom color=gray!30] 
+  \shade [top color=gray!80, bottom color=gray!30]
     (0,0) arc (130:-100:3/8 and 1/2) -- ++(0,1/4) arc (-100:130:1/8 and 1/4) -- cycle;
-  \shade [top color=gray!10, bottom color=gray!60] 
+  \shade [top color=gray!10, bottom color=gray!60]
     (0,0) arc (130:-100:3/8 and 1/2) -- ++(0,1/32) arc (-100:130:1/4 and 1/3) -- cycle;
 \end{scope}
 
 % Cup
-\fill [black!75, path fading=fade out] 
+\fill [black!75, path fading=fade out]
     (0,-1) ellipse [x radius=3/4, y radius=1/2];
-\shade [left color=gray!60, right color=gray!30] 
+\shade [left color=gray!60, right color=gray!30]
   (-1,0) arc (180:360:1 and 5/4);
 \shade [bottom color=gray, top color=gray!30, opacity=1/2]
   (-1,0) arc (180:360:1 and 5/4);
-\shade [left color=gray!20, right color=gray!40] 
+\shade [left color=gray!20, right color=gray!40]
   (0,0) ellipse [x radius=1, y radius=1/2];
-\shade [left color=gray!40, right color=gray!20] 
+\shade [left color=gray!40, right color=gray!20]
   (0,0) ellipse [x radius=1-1/16, y radius=1/2-1/16];
-\shade [bottom color=gray, top color=gray!10, opacity=1/2] 
+\shade [bottom color=gray, top color=gray!10, opacity=1/2]
   (0,0) ellipse [x radius=1-1/16, y radius=1/2-1/16];
 \draw  (0,-1.7) node {$X = $ A Coffee Cup};
 \draw[-{Latex[length=3mm,width=3mm]}] (1.5, -.5) .. controls (2, -1) and (2.5, .5)  ..(4.2, -.5);
@@ -142,7 +142,7 @@ The simplest such examples arise from looking at subsets of real $n$-dimensional
 
     \draw[red] (-3,0) circle (1cm);
 	\draw  (-3,-1.3) node {$S^1$};
-	
+
 	\draw[red] (-1,0) arc (180:360:1cm and 0.5cm);
     \draw[dashed, red] (-1,0) arc (180:0:1cm and 0.5cm);
     \draw[red] (0,1) arc (90:270:0.5cm and 1cm);
@@ -186,7 +186,7 @@ There are also a number of other relatively simple spaces that can be assembled 
    \draw [thick, shade, shading angle=30, opacity=0.90, red, top color = blue] (ul) arc (-180:180:3cm and .75cm);
    \node at (0,-3.5){$B^1 \times B^0$};
     \draw[dashed, red] (-3,-2) arc (180:0:3cm and .75cm);
-    \draw[thick, red] (ll) arc (180:360:3cm and .75cm);    
+    \draw[thick, red] (ll) arc (180:360:3cm and .75cm);
 
 \end{tikzpicture}
 % Torus
@@ -196,7 +196,7 @@ There are also a number of other relatively simple spaces that can be assembled 
     \draw[solid] (-4,.5) arc (90:150: 2cm and .8cm);
     \draw[solid] (-4,.5) arc (90:30: 2cm and .8cm);
     \draw  (-4,-3) node {$T^2 = S^1 \times S^1$};
-    \draw[red] (-4,.5) ellipse (3cm and 1cm); 
+    \draw[red] (-4,.5) ellipse (3cm and 1cm);
 	\draw[red] (-5,-.25) arc (90:270:.5cm and .85cm);
 	\draw[red, dashed] (-5,-.25) arc (90:-90:.5cm and .85cm);
 \end{tikzpicture}
@@ -250,21 +250,22 @@ The size and complexity of \textbf{Top} makes such questions difficult. The \tex
 
 The notion of \textit{homotopy} has become a cornerstone of modern Algebraic Topology. As a first approximation, a homotopy between two maps can be thought of as a continuous, time-dependent interpolation between them. In the simplest case, we consider \textbf{paths} within a space $X$ to be equivalent to maps from the unit interval $I$, or equivalently the zero-dimensional ball $B^0$, into $X$, and two maps $f, g: B^0 \to X$ are said to be \textbf{homotopic} whenever there exists a family of maps $F_t: B^0 \to X, t \in [0, 1]$ satisfying $F_0 = f$ and $F_1 = g$. This provides a notion of homotopy between paths in a space.
 
-In this way, the space is ``probed'' by a test space, in this case a ball $B^0$, in order to study it. An extremely useful application of this concept is to measure the number of ``holes'' in a space by taking one's test spaces to be spheres $S^n$ instead of balls. This leads to the notion \textbf{Homotopy Groups}, a collection of groups $\pi_n(X), n = 0, 1, 2, \ldots$ assigned to a space which serve as algebraic invariants: that is, they satisfy the property that $X \cong Y$ implies $\pi_n(X) = \pi_n(Y)$ for all $n$. Conversely, if there is even a single $n$ such that $\pi_n(X) \neq \pi_n(Y)$, one can conclude that $X \not \cong Y$. These groups are defined as 
+In this way, the space is ``probed'' by a test space, in this case a ball $B^0$, in order to study it. An extremely useful application of this concept is to measure the number of ``holes'' in a space by taking one's test spaces to be spheres $S^n$ instead of balls. This leads to the notion \textbf{Homotopy Groups}, a collection of groups $\pi_n(X), n = 0, 1, 2, \ldots$ assigned to a space which serve as algebraic invariants: that is, they satisfy the property that $X \cong Y$ implies $\pi_n(X) = \pi_n(Y)$ for all $n$. Conversely, if there is even a single $n$ such that $\pi_n(X) \neq \pi_n(Y)$, one can conclude that $X \not \cong Y$. These groups are defined as
 $$\pi_n(X) = [S^n, X]$$
 where $[X, Y]$ is obtained by taking the set of all continuous maps $f: X \to Y$ and identifying all maps that are homotopic to one another. We say that two spaces $X$ and $Y$ are \textit{homotopy equivalent} or are equivalent as objects in the category \textbf{hoTop} when there are mutually inverse maps $f: X \to Y$ and $g: Y \to X$ that are each homotopic to the identity maps on the respective spaces.
 
 \begin{center}
 
-\begin{tikzpicture}[scale=\textwidth/65cm,samples=200, decoration={markings,mark=at position 0.5 with {\arrow{>}}},
-   witharrow/.style={postaction={decorate}}, dot/.style={draw,fill,circle,inner sep=1.5pt,minimum width=0pt}]
+%\begin{tikzpicture}[scale=\textwidth/65cm,samples=200, decoration={markings,mark=at position 0.5 with {\arrow{>}}},
+   %witharrow/.style={postaction={decorate}}, dot/.style={draw,fill,circle,inner sep=1.5pt,minimum width=0pt}]
+\begin{tikzpicture}[scale=\textwidth/65cm, samples=200]
     \draw[thick, blue] (-3,0) -- (-1,0);
 	\draw[fill=red](-3,0) circle (.4mm);
 	\draw[fill=red](-1,0) circle (.4mm);
 	\draw (-2,-.5) node {$B^0$};
     % ellipse
-    \node[dot,label={[left] $p$}, red] (a3) at (0,0) {};
-    \node[dot,label={[right]$q$}, red] (b3) at (4,0) {};
+    \node[label={[left] $p$}, red] (a3) at (0,0) {};
+    \node[label={[right]$q$}, red] (b3) at (4,0) {};
     \draw[thick,witharrow] (a3) to[out=50,in=150]node[above]{$f$} (b3);
     \foreach \o/\i in {40/160,30/170,20/180,10/190,-10/200}
        \draw[dashed] (a3) to[out=\o,in=\i]  (b3);
@@ -365,7 +366,7 @@ Since spheres are perhaps the simplest spaces to study, we can take both the tes
         {-(sin(\a)*cos(\b)*sin(\c))*cos(x)+(sin(\a)*cos(\c))*sin(x)+(cos(\a)*sin(\b)*sin(\c))},
         {(sin(\a)*sin(\b))*cos(x)+cos(\a)*cos(\b)}
     );
-    
+
 \pgfmathsetmacro{\a}{1.0}
 \addplot3 [blue, domain=0:360, samples=3] (
         {(sin(\a)*cos(\b)*cos(\c))*cos(x)+(sin(\a)*sin(\c))*sin(x)-(cos(\a)*sin(\b)*cos(\c))},
@@ -385,7 +386,7 @@ For each $n$, it can be shown that there are in fact infinitely many nontrivial 
 \begin{center}
 \includegraphics[width=20cm]{helix}
 \end{center}
- 
+
 
 \subsection*{Spectral Sequences}
 Spectral sequences are a tool for computing \textit{homology}, another algebraic invariant. When combined with a construction called \textbf{Postnikov Towers}, which generalize the construction of covering spaces, these sequences can also be used in an iterative procedure to compute homotopy groups. These sequences are represented as a differential graded structure $(E_n^{p,q}, \partial_n^{p,q})$ in which each $E_n$ (denoted the \textit{pages} of the sequence) is obtained from the previous page by taking homology. This induces differentials that extend farther on each page, and with further assumptions on the boundedness of this complex, the pages stabilize and the sequence is said to converge.
@@ -449,7 +450,7 @@ real rad = 1;
 triple vertex=(0,0,1);
 
 surface sph = shift(vertex)*unitsphere;
-revolution b=sphere(vertex,1); 
+revolution b=sphere(vertex,1);
 
 draw(b,1,frontpen=def_front,backpen=def_back,longitudinalpen=nullpen); // Draw equator
 
@@ -457,7 +458,7 @@ draw(b.silhouette(),def_front);
 int d = 3;
 draw((d,-d,0)--(d,d,0)--(-d,d,0)--(-d,-d,0)--cycle,def_back_solid);
 
-void dointersect(triple pt)  
+void dointersect(triple pt)
 {
 	path3 intray = point((0,0,2))--pt;
     triple[] tmp = intersectionpoints(intray,sph,1e-4);
