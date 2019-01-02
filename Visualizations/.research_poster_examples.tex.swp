@@ -66,6 +66,7 @@
 
 
 % Torus in R3
+% todo: doesn't work
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{asy}
   size(400);
