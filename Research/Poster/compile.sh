@@ -1,3 +1,3 @@
 asy *.asy
 pdflatex -interaction nonstopmode -file-line-error ./poster.tex
-rm *.{out,log,aux}
+rm *.{out,log,aux,pre,prc}
