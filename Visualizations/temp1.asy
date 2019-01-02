@@ -1,18 +1,18 @@
-size(400);
-import graph3;
+pair z0=(0,0);
+pair z1=(2,0);
+pair z2=(5,0);
+pair zf=z1+0.75*(z2-z1);
 
-currentprojection=perspective(5,4,4);
-real R=3;
-real a=1;
+draw(z1--z2);
+dot(z1,red+0.15cm);
+dot(z2,darkgreen+0.3cm);
+label("$m$",z1,1.2N,red);
+label("$M$",z2,1.5N,darkgreen);
+label("$\hat{\ }$",zf,0.2*S,fontsize(24pt)+blue);
 
-triple fs(pair t) {
-  return ((R+a*Cos(t.y))*Cos(t.x),(R+a*Cos(t.y))*Sin(t.x),a*Sin(t.y));
-};
-
-surface s=surface(fs,(0,180),(360,360),8,8,Spline);
-draw(s,surfacepen=material(blue+opacity(0.6), emissivepen=0.2*white),render(compression=Low,merge=true));
-
-xaxis3(Label("$x$",1),xmin=0,xmax=7,Arrow3);
-yaxis3(Label("$y$",1),ymin=0,ymax=7,Arrow3);
-zaxis3(Label("$z$",1),zmin=0,zmax=4,Arrow3);
-label("$Y = $ A Torus", (0,-40), p = fontsize(30pt));
+pair s=-0.2*I;
+draw("$x$",z0+s--z1+s,N,red,Arrows,Bars,PenMargins);
+s=-0.5*I;
+draw("$\bar{x}$",z0+s--zf+s,blue,Arrows,Bars,PenMargins);
+s=-0.95*I;
+draw("$X$",z0+s--z2+s,darkgreen,Arrows,Bars,PenMargins);
