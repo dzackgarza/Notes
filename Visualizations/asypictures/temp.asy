@@ -23,4 +23,4 @@ xaxis3(Label("$x$",1),xmin=0,xmax=7,Arrow3);
 yaxis3(Label("$y$",1),ymin=0,ymax=7,Arrow3);
 zaxis3(Label("$z$",1),zmin=0,zmax=4,Arrow3);
 
-label("$Y = $ A Torus", (0,-20), p = fontsize(30pt));
+label("$Y = $ A Torus", (0,-10), p = fontsize(30pt));
