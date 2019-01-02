@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{mathptmx}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{arrows.meta, cd, fadings, patterns}
+\tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
+\usepackage{pgfplots}
+\usepackage[inline]{asymptote}
+%\usepackage{color}
+\usepackage[active,pdftex,tightpage]{preview}
+\PreviewEnvironment[]{tikzpicture}
+\PreviewEnvironment[]{pgfpicture}
+\DeclareSymbolFont{symbolsb}{OMS}{cmsy}{m}{n}
+\SetSymbolFont{symbolsb}{bold}{OMS}{cmsy}{b}{n}
+\DeclareSymbolFontAlphabet{\mathcal}{symbolsb}
+\begin{document}
+<>
+\end{document}
