@@ -14,7 +14,7 @@ triple fs(pair t) {
 };
 
 surface s=surface(fs,(0,180),(360,360),8,8,Spline);
-material m = opacity(0.65)+palegreen;
+material m = palegreen;
 
 draw(s, surfacepen=m);
 /*draw(s,surfacepen=material(blue+opacity(0.6), emissivepen=0.2*white),render(compression=Low,merge=true));*/
