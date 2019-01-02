@@ -63,9 +63,8 @@
 \draw  (3.0,0) node {$f: X \to Y$};
 
 \end{tikzpicture}
-\fi
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % Torus in R3
@@ -90,6 +89,9 @@
   label("$Y = $ A Torus", (0,-40), p = fontsize(30pt));
 \end{asy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 \begin{asy}[width=\the\linewidth,inline=true]
 pair z0=(0,0);
