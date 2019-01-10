@@ -13,6 +13,7 @@ filename="${filename%.*}"
 outfile="$directory/$filename.eps"
 first_run=true
 
+echo "Starting..."
 while true; do
   inotifywait -e CLOSE_WRITE $filepath;
 
