@@ -10,7 +10,6 @@ directory=$(dirname $filepath)
 filename=$(basename -- "$filepath")
 extension="${filename##*.}"
 filename="${filename%.*}"
-outfile="$directory/$filename.eps"
 first_run=true
 
 if [ ! -f $filepath ]; then
@@ -25,9 +24,11 @@ while true; do
   case $extension in
     "asy")
       echo "Re-rendering..."
+      outfile="$directory/$filename.eps"
       asy --render 0 $filepath -o $outfile
       ;;
     "tex")
+      outfile="$directory/$filename.pdf"
       pdflatex $filepath --output-directory $directory
       ;;
   esac
