@@ -12,6 +12,7 @@ extension="${filename##*.}"
 filename="${filename%.*}"
 outfile="$directory/$filename.eps"
 first_run=true
+
 if [ ! -f $filepath ]; then
   echo "Input file not found"
   exit 1;
