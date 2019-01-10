@@ -30,6 +30,7 @@ while true; do
     "tex")
       outfile="$directory/$filename.pdf"
       pdflatex $filepath --output-directory $directory
+      rm *.{aux,log}
       ;;
   esac
 
