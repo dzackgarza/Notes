@@ -29,9 +29,9 @@ while true; do
 
   if [ "$first_run" = true ]; then
     echo "First run"
-    inotifywait -e CLOSE_WRITE $filepath;
     xdg-open $outfile;
     first_run=false;
   fi
 
+  inotifywait -e CLOSE_WRITE $filepath;
 done
