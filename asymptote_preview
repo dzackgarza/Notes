@@ -19,6 +19,7 @@ while true; do
   echo "Extension: $extension"
   case $extension in
     "asy")
+      echo "Re-rendering..."
       asy --render 0 $filepath -o $outfile
       ;;
     "tex")
