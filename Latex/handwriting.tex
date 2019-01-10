@@ -16,30 +16,23 @@
     \noindent\ooalign{\rule[\heightX]{\textwidth}{.1pt}\cr
     \noindent\hdashrule[\heightx]{\textwidth}{.1pt}{1mm}\cr
     \noindent\rule{\textwidth}{.1pt}\cr
-    \noindent\scalebox{#1}{\pdfliteral{q 1 Tr [.1 .4]0 d .1 w}
-    \cleaders\hbox{a}\hfill\kern0pt
-    \pdfliteral{Q}}}%
+    \noindent\scalebox{#1}{\pdfliteral{q 1 Tr [.1 .4]0 d .1 w}#2\pdfliteral{Q}}}%
 }
 
 \begin{document}
 
-%\setline{5}{\leaders\hbox{$\alpha$}\hfill\kern0pt}\vspace{1.25cm}\\
-%\setline{5}{\noindent \leaders\hbox{kitty!}\hfill\kern0pt}\vspace{1.25cm}\\
-%\noindent \cleaders\hbox{kitty!}\hfill\kern0pt \par
-%\noindent \xleaders\hbox{kitty!}\hfill\kern0pt
-
-%\foreach \n in {
-  %\alpha, \beta, \gamma, \delta, \epsilon, \zeta, \eta, \theta,
-  %\iota, \kappa, \lambda, \mu, \nu, \xi,
-%}{
-  %\setline{5}{\leaders\hbox{$\n$}\hfill\kern0pt}\vspace{0.25cm}\\
-%}
+\foreach \n in {
+  \alpha, \beta, \gamma, \delta, \epsilon, \zeta, \eta, \theta,
+  \iota, \kappa, \lambda, \mu, \nu, \xi,
+}{
+  \setline{5}{\n\n\n\n\n\n\n\n\n\n}\vspace{0.25cm}\\
+}
 \foreach \n in {
   \pi, \rho, \sigma, \tau, \upsilon, \phi, \xi, \psi, \omega,
   \Gamma, \Delta, \varepsilon, \Theta, \Lambda,
   \Xi, \Pi, \Sigma, \Phi, \varphi, \Psi, \Omega
 }{
-  \setline{5}{$\n$}\vspace{0.25cm}\\
+  \setline{5}{$\n \n \n \n \n \n \n \n$}\vspace{0.25cm}\\
 }
 
 
