@@ -6,7 +6,7 @@ real f(pair z) {
     else
         return 0;
 }
-currentprojection=perspective(3,-4,3.5);
+currentprojection=perspective(4,-4,3.5);
 limits((-7,-8,-4),(7,7,6));
 xaxis3(Label("$x$",1),red,arrow=Arrow3);
 yaxis3(Label("$y$",1),red,arrow=Arrow3);
