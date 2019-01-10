@@ -26,6 +26,7 @@ while true; do
   esac
 
   if [ "$first_run" = true ]; then
+    echo "First run"
     xdg-open $outfile;
     first_run=false;
   fi
