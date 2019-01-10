@@ -15,7 +15,6 @@ first_run=true
 
 echo "Starting..."
 while true; do
-  inotifywait -e CLOSE_WRITE $filepath;
 
   echo "Extension: $extension"
   case $extension in
@@ -30,6 +29,7 @@ while true; do
   if [ "$first_run" = true ]; then
     echo "First run"
     xdg-open $outfile;
+    inotifywait -e CLOSE_WRITE $filepath;
     first_run=false;
   fi
 
