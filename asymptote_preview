@@ -16,6 +16,7 @@ first_run=true
 while true; do
   inotifywait -e CLOSE_WRITE $filepath;
 
+  echo "Extension: $extension"
   case $extension in
     "asy")
       asy --render 0 $filepath -o $outfile
