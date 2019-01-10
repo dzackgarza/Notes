@@ -38,5 +38,6 @@ while true; do
     first_run=false;
   fi
 
+  # Block execution until file write
   inotifywait -e CLOSE_WRITE $filepath;
 done
