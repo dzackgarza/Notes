@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{dashrule}
+\usepackage(pgffor}
 
 \newsavebox\myboxX
 \newsavebox\myboxx
@@ -20,10 +21,12 @@
 
 \begin{document}
 
-\setline{5}{$\xi \xi \xi \xi \xi \xi \xi \xi \xi \xi \xi \xi \xi \xi$}\vspace{2cm}
+\foreach \n in {\xi, \zeta, \mu}{\setline{5}{$\n \n \n \n \n \n \n \n \n \n \n \n \n \n$}\vspace{2cm}}
 
-\setline{5}{$\zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta$}\vspace{2cm}
+%\setline{5}{$\xi \xi \xi \xi \xi \xi \xi \xi \xi \xi \xi \xi \xi \xi$}\vspace{2cm}
 
-\setline{5}{$\mu \mu \mu \mu \mu \mu \mu \mu \mu \mu \mu$}\vspace{2cm}
+%\setline{5}{$\zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta \zeta$}\vspace{2cm}
+
+%\setline{5}{$\mu \mu \mu \mu \mu \mu \mu \mu \mu \mu \mu$}\vspace{2cm}
 
 \end{document}
