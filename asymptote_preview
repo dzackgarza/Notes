@@ -13,7 +13,13 @@ else
   xdg-open $outfile;
   while true; do
     inotifywait -e CLOSE_WRITE $filepath;
-    asy --render 0 $filepath -o $outfile;
+    case $extension in
+      "asy")
+        asy --render 0 $filepath -o $outfile
+        ;;
+      "tex")
+        pdflatex $filepath --output-directory $directory
+        ;;
   done
 fi
 
