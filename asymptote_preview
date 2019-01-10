@@ -1,25 +1,33 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-    echo "Supply filename as argument"
-else
-  filepath=$(realpath $1)
-  directory=$(dirname $filepath)
-  filename=$(basename -- "$filepath")
-  extension="${filename##*.}"
-  filename="${filename%.*}"
-  outfile="$directory/$filename.eps"
-  asy --render 0 $filepath -o $outfile;
-  xdg-open $outfile;
-  while true; do
-    inotifywait -e CLOSE_WRITE $filepath;
-    case $extension in
-      "asy")
-        asy --render 0 $filepath -o $outfile
-        ;;
-      "tex")
-        pdflatex $filepath --output-directory $directory
-        ;;
-  done
+  echo "Supply filename as argument"
+  exit 1;
 fi
 
+filepath=$(realpath $1)
+directory=$(dirname $filepath)
+filename=$(basename -- "$filepath")
+extension="${filename##*.}"
+filename="${filename%.*}"
+outfile="$directory/$filename.eps"
+first_run=true
+
+while true; do
+  inotifywait -e CLOSE_WRITE $filepath;
+
+  case $extension in
+    "asy")
+      asy --render 0 $filepath -o $outfile
+      ;;
+    "tex")
+      pdflatex $filepath --output-directory $directory
+      ;;
+  esac
+
+  if [ "$first_run" = true ]; then
+    xdg-open $outfile;
+    first_run=false;
+  fi
+
+done
