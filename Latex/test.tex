@@ -1,0 +1,12 @@
+\documentclass{minimal}
+\usepackage{pgf,pgffor}
+
+\begin{document}
+\foreach \n [count=\ni] in {a,...,e} {% Comment signs at end of line to avoid
+    \ifnum\ni=1%                        unwanted whitespace.
+        \n%
+    \else%
+        --\n%
+    \fi%
+}
+\end{document}
