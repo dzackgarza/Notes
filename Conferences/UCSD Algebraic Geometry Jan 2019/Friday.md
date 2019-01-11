@@ -47,4 +47,4 @@ Construction: the Banana manifold. Start with a hyersurface $S$ of degree $(1,3)
 
 Take the fiber product of $S$ with itself, $S \cross_{\PP^1} S$, then blow up the diagonal. Then $h^{1,1} = 20$ and $h^{2,1} = 8$.
 
-Why "Banana manifold"? Fibered over $\PP^1$ with 12 singular fibers, each fiber 
+Why "Banana manifold"? Fibered over $\PP^1$ with 12 singular fibers.
