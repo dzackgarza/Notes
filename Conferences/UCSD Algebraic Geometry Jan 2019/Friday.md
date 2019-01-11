@@ -19,3 +19,6 @@ $\dim X = 1:$ Elliptic curves, all topologically $T^2$
 $\dim X = 2: K_3$ surface, only one topological type (all diffeomorphic)
 $\dim X = 3$: Many, suspected to be finite (around 500 million possibly!), unknown if infinite.
 
+Hodge numbers
+
+- $HNumber of independent curve classes
