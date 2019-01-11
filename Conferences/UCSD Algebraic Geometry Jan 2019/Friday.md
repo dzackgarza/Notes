@@ -13,4 +13,4 @@ Keywords:
 - Hodge numbers
 - Picard group
 
-Definition: A Calabi-Yau manifold is a complex project manifold $X$ with a trivial canonical class, where $
+Definition: A Calabi-Yau manifold is a complex project manifold $X$ with a trivial canonical class, where $H^k() = 
