@@ -49,3 +49,4 @@ Take the fiber product of $S$ with itself, $S \cross_{\PP^1} S$, then blow up th
 
 Why "Banana manifold"? Fibered over $\PP^1$, fibers are abelian surfaces, 12 fibers are singular.
 
+
