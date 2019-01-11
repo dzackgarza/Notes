@@ -34,3 +34,5 @@ Famously - Donaldson-Thomas / Gromov-Witten invariants, you get a number that co
 Gromov-Witten potential - picking a basis for $H_k(X, \ZZ)$, then the genus $g$ potential is obtained by summing the invariants in a formal power series / generating function. Expected that the resulting functions have much structure (such as automorphic properties)
 
 Slight embarassment - there does not exist a $CY\dash$threehold for which these potentials are known for each $g$, not even conjecturally!
+
+Can we find one where we can write all of these down?
