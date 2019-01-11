@@ -38,3 +38,5 @@ Slight embarassment - there does not exist a compact $CY\dash$threehold for whic
 Can we find one where we can write all of these down?
 
 ## The Arithmetic Side
+
+Called "rigid" if number of complex deformations is zero.
