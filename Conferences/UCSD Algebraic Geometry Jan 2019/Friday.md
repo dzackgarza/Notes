@@ -41,3 +41,5 @@ Can we find one where we can write all of these down?
 
 Called "rigid" if the number of complex deformations is zero. (? Hodge number from above), leads to interesting arithmetic.
 
+Theorem: Every $CY3$ over $\QQ$ is modular (analog of modular theorem for elliptic curves)
+
