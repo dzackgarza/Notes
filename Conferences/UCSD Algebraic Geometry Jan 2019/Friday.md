@@ -40,3 +40,4 @@ Can we find one where we can write all of these down?
 ## The Arithmetic Side
 
 Called "rigid" if the number of complex deformations is zero. (? Hodge number from above)
+
