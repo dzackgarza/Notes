@@ -30,3 +30,4 @@ Why should we be interested in these? Show up in Physics, (Enumerative) Geometry
 Famously - Donaldson-Thomas / Gromov-Witten invariants, you get a number that comes from the moduli space of maps from genus $g$ curves into $X$.
 
 Gromov-Witten potential - picking a basis for $H_k(X, \ZZ)$, then the genus $g$ potential is obtained by summing the invariants in a formal power series / generating function. Expected that the resulting functions have much structure (such as automorphic properties)
+
