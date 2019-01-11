@@ -11,3 +11,5 @@ Keywords:
 - Calabi-Yau model
 - Modular forms
 - Hodge numbers
+- Picard group
+
