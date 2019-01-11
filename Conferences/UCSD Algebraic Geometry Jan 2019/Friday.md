@@ -24,3 +24,5 @@ Hodge numbers
 - $H^{1,1}(X)$: Number of independent curve classes
 
 Physicists interested in such manifolds with small Hodge numbers (bidegree < 20)
+
+Why should
