@@ -23,6 +23,6 @@ Hodge numbers
 - $H^{?,?}$: Number of deformations
 - $H^{1,1}(X)$: Number of independent curve classes
 
-Physicists interested in such manifolds with small Hodge numbers (bidegree < 20)
+Physicists interested in $CY\dash$threefolds with small Hodge numbers (bidegree < 20)
 
-Why should
+Why should we be interested in these? Show up in Physics, Geometry, and Arithmetic.
