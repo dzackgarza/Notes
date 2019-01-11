@@ -22,3 +22,4 @@ $\dim X = 3$: Many, suspected to be finite (around 500 million possibly!), unkno
 Hodge numbers
 - $H^{?,?}$: Number of deformations
 - $H^{1,1}(X)$: Number of independent curve classes
+
