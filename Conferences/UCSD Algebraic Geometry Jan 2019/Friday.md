@@ -41,5 +41,7 @@ Can we find one where we can write all of these down?
 
 Called "rigid" if the number of complex deformations is zero. (? Hodge number from above), leads to interesting arithmetic.
 
-Theorem: Every rigid $CY3$ over $\QQ$ is modular (analog of modular theorem for elliptic curves), i.e. there exists a weight 4 modular form
+Theorem: Every rigid $CY3$ over $\QQ$ is modular (analog of modular theorem for elliptic curves), i.e. there exists a weight 4 modular form arising from the Galois representation on the top cohomology.
+
+If you take the Fourier expansion of this form
 
