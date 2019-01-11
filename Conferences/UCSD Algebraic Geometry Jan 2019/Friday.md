@@ -43,7 +43,6 @@ Called "rigid" if the number of complex deformations is zero. (? Hodge number fr
 
 Theorem: Every rigid $CY3$ over $\QQ$ is modular (analog of modular theorem for elliptic curves), i.e. there exists a weight 4 modular form arising from the Galois representation on the top cohomology.
 
-Construction: the Banana manifold. Start with a hyersurface $S$ of degree $(1,3)$ in $\PP^1 \cross \PP^2$ and blowup over $\PP^1$
+Construction: the Banana manifold. Start with a hyersurface $S$ of degree $(1,3)$ in $\PP^1 \cross \PP^2$ and blowup over $\PP^1$. Has 12 singular points?
 
-Take the fiber product of $S$ with itself, $S \cross_{\PP^1} S$, then blow up the diagonal. Then 
-$h^{1,1} = 20, h^{2,1} = 8$
+Take the fiber product of $S$ with itself, $S \cross_{\PP^1} S$, then blow up the diagonal. Then $h^{1,1} = 20, h^{2,1} = 8$
