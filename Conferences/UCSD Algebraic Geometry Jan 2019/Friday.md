@@ -36,3 +36,4 @@ Gromov-Witten potential - picking a basis for $H_k(X, \ZZ)$, then the genus $g$ 
 Slight embarassment - there does not exist a $CY\dash$threehold for which these potentials are known for each $g$, not even conjecturally!
 
 Can we find one where we can write all of these down?
+
