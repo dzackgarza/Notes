@@ -25,4 +25,4 @@ Hodge numbers
 
 Physicists interested in $CY\dash$threefolds with small Hodge numbers (bidegree < 20)
 
-Why should we be interested in these? Show up in Physics, Geometry, and Arithmetic.
+Why should we be interested in these? Show up in Physics, (Enumerative) Geometry, Arithmetic.
