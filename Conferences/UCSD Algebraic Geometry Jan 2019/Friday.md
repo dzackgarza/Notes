@@ -45,4 +45,4 @@ Theorem: Every rigid $CY3$ over $\QQ$ is modular (analog of modular theorem for 
 
 Construction: the Banana manifold. Start with a hyersurface $S$ of degree $(1,3)$ in $\PP^1 \cross \PP^2$ and blowup over $\PP^1$
 
-Take the fiber product of $S$ with itself, $S \cross_{\PP^1} S$
+Take the fiber product of $S$ with itself, $S \cross_{\PP^1} S$, then blow up the diagonal.
