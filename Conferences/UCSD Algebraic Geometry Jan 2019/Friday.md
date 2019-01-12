@@ -114,6 +114,7 @@ Keywords:
 - Kodaira dimension
 - Iitaka conjecture
 - Ample line bundles
+- Picard rank
 
 
 Pseudoautomorphisms: Birational map that is an isomorphism in codimension 1. (Can only happen in $\dim > 3$).
