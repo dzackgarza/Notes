@@ -111,6 +111,8 @@ Proof: inductive argument with three major difficulties! See paper.
 [^1]: Thought to be the same, two published proofs with specific errors. This talk shows that the theorem is false.
 
 Keywords:
+- Divisors
+- Base locus
 - Pseudo-effective cone
 - Blowup (subvarieties)
 - Fibration
