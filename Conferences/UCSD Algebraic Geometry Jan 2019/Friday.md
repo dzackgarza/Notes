@@ -63,4 +63,4 @@ Why "Banana manifold"? Fibered over $\PP^1$, fibers are abelian surfaces, 12 fib
 
 Keywords:
 - Hilbert scheme
-- 
+- Semistability (of varieties)
