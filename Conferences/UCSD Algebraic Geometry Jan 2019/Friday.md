@@ -145,5 +145,5 @@ $$
 
 Theorem: this is a "good" height function:
 $$
-\hat h (p) = \lim_{n\to\infty} \frac{h(\varphi^n(p))}{\lambda_1(\varphi)^n}
+\hat h (p) = \lim_{n\to\infty} \frac{h(\varphi^n(p))}{\lambda_1(\varphi)^n} + \lim_{n\to\infty} \frac{h(\varphi^n(p))}{\lambda_1(\varphi)^n}
 $$
