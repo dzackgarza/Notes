@@ -113,3 +113,4 @@ Keywords:
 - Iitaka conjecture
 
 
+Pseudoautomorphisms: Birational map that is an isomorphism in codimension 1.
