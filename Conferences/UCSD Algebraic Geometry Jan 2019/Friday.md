@@ -119,7 +119,7 @@ Keywords:
 - Ample line bundles
 - Picard rank
 - [Riemann-Roch](http://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Talovikova.pdf)
-- Hilbert polynomial
+- [Hilbert polynomial](https://en.wikipedia.org/wiki/Hilbert_series_and_Hilbert_polynomial)
 
 
 Pseudoautomorphisms: Birational map that is an isomorphism in codimension 1. (Can only happen in $\dim > 3$).
