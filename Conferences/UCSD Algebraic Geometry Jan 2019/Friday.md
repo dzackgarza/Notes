@@ -67,3 +67,6 @@ Keywords:
 - Semistability (of varieties)
 - Moduli stack
 - Minimal model program
+- Valuation
+- Degeneration
+- 
