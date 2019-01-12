@@ -74,5 +74,7 @@ Keywords:
 # Eric Larson - The Maximal Rank Conjecture
 [Link to Possibly Relevant Paper](https://arxiv.org/abs/1711.04906)
 
-Look at curve in projective space - start with a curve $C$, a line bundle $L$ on $C$, and look at sections to obtain a map (parameterization). Can alternatively describe as a vanishing locus of polynomials.
+Look at curve in projective space - start with a curve $C$, a line bundle $L$ on $C$, and look at sections to obtain a map (parameterization). Can alternatively describe as a vanishing locus of polynomials (cartesian coordinates).
+
+
 
