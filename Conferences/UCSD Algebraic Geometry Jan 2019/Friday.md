@@ -135,3 +135,5 @@ Computing $\nu(D_+)$, claim it equals 1:
 $$
 \inner{D_+}{D_+} = \inner{\varphi^* D_+}{\varphi^* D_+} = \lambda^2 \inner{D_+}{D_+} \implies \inner{D_+}{D_+} = 0.
 $$
+
+Not known if there is a counterexample for $q\dash$invariants?
