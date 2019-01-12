@@ -138,7 +138,7 @@ $$
 
 Not known if there is a counterexample for $q\dash$invariants?
 
-Unknown, possibly hard problem: 
+**Unknown, possibly hard problem:** 
 $$
 h^0(\lfloor mD \rfloor+A) \in \Theta(m^r)
 $$
