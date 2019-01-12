@@ -143,6 +143,7 @@ $$
 h^0(\lfloor mD \rfloor+A) \in_? \Theta(m^r)
 $$
 
+Suppose  $\phi: X \selfmap$
 Theorem: $\hat h$ is a "good" height function for $\varphi$, where
 $$
 \hat h (p) = \lim_{n\to\infty} \frac{h(\varphi^n(p))}{\lambda_1(\varphi)^n} + \lim_{n\to\infty} \frac{h(\varphi^{-n}(p))}{\lambda_1(\varphi^{-1})^n}
