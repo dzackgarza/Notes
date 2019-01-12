@@ -38,3 +38,5 @@ Stuff to Look Into
 - Tate Twist
 - Formal groups
 - Local fields
+- Nishida's Theorem:
+  - The $S^1$ spectrum is some kind of "thickening" of $\ZZ$?
