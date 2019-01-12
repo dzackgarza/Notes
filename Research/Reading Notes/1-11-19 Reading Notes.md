@@ -3,11 +3,18 @@
 Big Theorems:
 - Brouwer Fixed Point
 - Division Algebras over $\RR$
+- Borsuk-Ulam
+- Invariance of domain
 - Aatiyah-Singer Index Theorem
   - $K\dash$theory and bordism
 - Brown Representability Spectrum
 
 Opinion from MO: modern Topology starts with spectra.
+
+Stuff to Review:
+- Stiefel-Whitney class
+- Mapping cylinder/cone
+-
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
@@ -24,3 +31,6 @@ Stuff to Look Into
 - Deformation theory
 - Topological modular forms
 - Riemann-Roch
+- Localizations
+- Completions
+- Steenrod Algebra
