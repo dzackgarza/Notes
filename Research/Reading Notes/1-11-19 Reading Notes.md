@@ -44,3 +44,4 @@ Stuff to Look Into
 - Local fields
 - Nishida's Theorem:
   - The $S^1$ spectrum is some kind of "thickening" of $\ZZ$?
+- Hodge Conjecture
