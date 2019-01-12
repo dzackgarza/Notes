@@ -123,3 +123,5 @@ Keywords:
 Pseudoautomorphisms: Birational map that is an isomorphism in codimension 1. (Can only happen in $\dim > 3$).
 
 Specific counterexample: obtain a divisor as the largest eigenvalue of a pullback map (theorem that the largest is real, all complex are smaller in modulus).
+
+Computing $h^0$: preserved under pullback, and eventually lands in $\mathrm{Amp}(X)$, where it is trivial to calculate by Riemann-Roch.
