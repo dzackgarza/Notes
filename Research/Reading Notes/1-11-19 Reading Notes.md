@@ -18,6 +18,7 @@ Stuff to Review:
 - Euler class (or Euler bundle..? Find in old email)
 - Homotopy limit/colimit
 - The $J$-homomorphism
+  - [See Hopkins](https://www.youtube.com/watch?v=Ix4pg87LKVk)
 - $p\dash$adic stuff
 - Linearly independent sections
 - Normal bundle
@@ -51,4 +52,4 @@ Stuff to Look Into
 - Fukaya categories
 - Symplectic geometry
   - Lagrangian submanifolds
--
+- Morava E-Theory
