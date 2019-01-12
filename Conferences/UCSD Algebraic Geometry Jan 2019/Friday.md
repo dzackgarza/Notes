@@ -143,7 +143,7 @@ $$
 h^0(\lfloor mD \rfloor+A) \in_? \Theta(m^r)
 $$
 
-Theorem: this is a "good" height function:
+Theorem: this is a "good" height function: for $\phi$
 $$
 \hat h (p) = \lim_{n\to\infty} \frac{h(\varphi^n(p))}{\lambda_1(\varphi)^n} + \lim_{n\to\infty} \frac{h(\varphi^{-n}(p))}{\lambda_1(\varphi^{-1})^n}
 $$
