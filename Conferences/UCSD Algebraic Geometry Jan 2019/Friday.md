@@ -82,6 +82,8 @@ Keywords:
 - Generic divisors
 - Ideal sheaf
 
+Maximal rank conjecture: roughly related to the degree of equations that cut out curves.
+
 Look at curve in projective space - start with a curve $C$, a line bundle $L$ on $C$, and look at sections to obtain a map (parameterization). Can alternatively describe as a vanishing locus of polynomials (cartesian coordinates).
 
 Both yield maps $C \to \PP^r$ for some $r$; Brill-Noether theorem gives criteria for existence of such a map (embedding?).
