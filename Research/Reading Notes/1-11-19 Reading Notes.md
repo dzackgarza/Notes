@@ -19,6 +19,7 @@ Stuff to Review:
 - Homotopy limit/colimit
 - The $J$-homomorphism
 - $p\dash$adic stuff
+- Linearly independent sections
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
