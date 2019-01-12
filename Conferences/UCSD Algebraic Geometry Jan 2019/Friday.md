@@ -138,4 +138,4 @@ $$
 
 Not known if there is a counterexample for $q\dash$invariants?
 
-Unknown, possibly hard problem: $C_1 m^r \leq h^0(\floor{mD}+A)$
+Unknown, possibly hard problem: $C_1 m^r \leq h^0(\floor{mD}+A) \leq $
