@@ -103,10 +103,10 @@ Proof: inductive argument with three major difficulties! See paper.
 
 > The Iitaka dimension of a line bundle D on a projective variety X is the dimension of the image of the rational map given by |mD| for large and divisible m. This is not a numerical invariant of D, and there are several approaches to constructing a "numerical dimension" of D, which should be an analogous invariant depending only on the numerical class of D.  I will discuss an example of a divisor with surprising properties with respect to these different definitions.
 >
-> The example is based on the existence of pseudoautomorphisms of Calabi-Yau varieties with a certain kind of dynamical positivity.  As time permits, I will explain some implications of this same positivity condition for questions in arithmetic dynamics.
+> The example is based on the existence of pseudo-automorphisms of Calabi-Yau varieties with a certain kind of dynamical positivity.  As time permits, I will explain some implications of this same positivity condition for questions in arithmetic dynamics.
 
 Keywords:
-- Pseudoeffective cone
+- Pseudo-effective cone
 - Blowup (subvarieties)
 - Fibration
 - Kodaira dimension
