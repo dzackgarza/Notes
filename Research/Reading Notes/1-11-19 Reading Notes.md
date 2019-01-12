@@ -14,7 +14,8 @@ Opinion from MO: modern Topology starts with spectra.
 Stuff to Review:
 - Stiefel-Whitney class
 - Mapping cylinder/cone
--
+- Chern class
+- Euler class (or Euler bundle..?)
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
@@ -34,3 +35,4 @@ Stuff to Look Into
 - Localizations
 - Completions
 - Steenrod Algebra
+- Tate Twist
