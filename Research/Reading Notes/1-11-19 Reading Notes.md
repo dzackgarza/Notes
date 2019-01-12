@@ -17,6 +17,7 @@ Stuff to Review:
 - Chern class
 - Euler class (or Euler bundle..? Find in old email)
 - Homotopy limit/colimit
+- The $J$-homomorphism
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
