@@ -8,3 +8,16 @@ Big Theorems:
 - Brown Representability Spectrum
 
 Opinion from MO: modern Topology starts with spectra.
+
+Stuff to Look Into
+- Kervaire Invariant 1 Problem
+  - Equivariant topology
+  - Chromatic homotopy theory
+  - Orthogonal spectra
+- Model categories
+- The cobordism hypothesis
+- Milnor's conjecture
+- Vandiver's conjecture
+- $\infty\dash$categories
+- Classifying orbifolds
+- $K\dash$theory
