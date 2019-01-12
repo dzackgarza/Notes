@@ -92,7 +92,9 @@ Look at curve in projective space - start with a curve $C$, a line bundle $L$ on
 Both yield maps $C \to \PP^r$ for some $r$; Brill-Noether theorem gives criteria for existence of such a map (embedding?).
 
 Need to look at the kernel of this restriction map:
-$$ H ^ { 0 } \left( \mathcal { O } _ { \mathrm { pr } } ( k ) \right) \rightarrow H ^ { 0 } \left( \mathcal { O } _ { C } ( k ) \right) $$
+$$ 
+H ^ { 0 } \left( \mathcal { O } _ { \mathrm { pr } } ( k ) \right) \rightarrow H ^ { 0 } \left( \mathcal { O } _ { C } ( k ) \right) 
+$$
 
 Surjective, but perhaps not in general (from dimensional considerations). The conjecture is thus that this map is either injective or surjective (maximal rank).
 
