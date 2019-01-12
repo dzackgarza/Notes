@@ -104,5 +104,6 @@ Proof: inductive argument with three major difficulties! See paper.
 > The example is based on the existence of pseudoautomorphisms of Calabi-Yau varieties with a certain kind of dynamical positivity.  As time permits, I will explain some implications of this same positivity condition for questions in arithmetic dynamics.
 
 Keywords:
-
+- Pseudo-effective cone
+- 
 
