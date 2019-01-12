@@ -28,6 +28,7 @@ Stuff to Review:
 - Colimits
 - Smash product
 - Picard group (e.g. of $L_{K(n)}S^O$)
+- Regular representations
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
