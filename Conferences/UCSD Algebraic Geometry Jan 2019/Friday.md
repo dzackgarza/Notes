@@ -124,4 +124,4 @@ Pseudoautomorphisms: Birational map that is an isomorphism in codimension 1. (Ca
 
 Specific counterexample: obtain a divisor as the largest eigenvalue of a pullback map (theorem that the largest is real, all complex are smaller in modulus).
 
-Computing $h^0$: preserved under pullback, and eventually lands in $\mathrm{Amp}(X)$ (the ample cone, first quadrant in $H_2 \cross H_1$), where it is trivial to compute by Riemann-Roch.
+Computing $h^0$: preserved under pullback, and eventually lands in $\mathrm{Amp}(X)$ (the ample cone $\sim$ first quadrant in $H_2 \cross H_1$), where it is trivial to compute by Riemann-Roch.
