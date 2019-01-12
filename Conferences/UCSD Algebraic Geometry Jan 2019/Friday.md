@@ -76,5 +76,5 @@ Keywords:
 
 Look at curve in projective space - start with a curve $C$, a line bundle $L$ on $C$, and look at sections to obtain a map (parameterization). Can alternatively describe as a vanishing locus of polynomials (cartesian coordinates).
 
-
+Both yield maps $C \to \PP^k$ for some $k$.
 
