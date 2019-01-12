@@ -21,3 +21,5 @@ Stuff to Look Into
 - $\infty\dash$categories
 - Classifying orbifolds
 - $K\dash$theory
+- Deformation theory
+- Topological modular forms
