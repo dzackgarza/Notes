@@ -74,3 +74,4 @@ Keywords:
 # Eric Larson - The Maximal Rank Conjecture
 [Link to Possibly Relevant Paper](https://arxiv.org/abs/1711.04906)
 
+Look at curve in projective space - start with a curve $C$, a line bundle $L$ on $C$, and sections 
