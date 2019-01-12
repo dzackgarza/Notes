@@ -36,3 +36,5 @@ Stuff to Look Into
 - Completions
 - Steenrod Algebra
 - Tate Twist
+- Formal groups
+- Local fields
