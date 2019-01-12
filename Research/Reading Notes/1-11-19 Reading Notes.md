@@ -23,3 +23,4 @@ Stuff to Look Into
 - $K\dash$theory
 - Deformation theory
 - Topological modular forms
+- Riemann-Roch
