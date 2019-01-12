@@ -20,6 +20,8 @@ Stuff to Review:
 - The $J$-homomorphism
 - $p\dash$adic stuff
 - Linearly independent sections
+- Normal bundle
+- Tubular neighborhoods
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
