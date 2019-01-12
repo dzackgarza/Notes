@@ -58,6 +58,8 @@ Take the fiber product of $S$ with itself, $S \cross_{\PP^1} S$, then blow up th
 
 Why "Banana manifold"? Fibered over $\PP^1$, fibers are abelian surfaces, 12 fibers are singular.
 
+(Proceeded with construction of )
+
 
 # Chenyang Xu - The uniqueness of K-polystable Fano degeneration
 [Link to Possibly Relevant Paper](https://arxiv.org/abs/1812.03538)
