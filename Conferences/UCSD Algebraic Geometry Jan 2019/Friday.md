@@ -94,3 +94,6 @@ $$ H ^ { 0 } \left( \mathcal { O } _ { \mathrm { pr } } ( k ) \right) \rightarro
 Surjective, but perhaps not in general (from dimensional considerations). The conjecture is thus that this map is either injective or surjective (maximal rank).
 
 Proof: inductive argument with three major difficulties! See paper.
+
+---
+
