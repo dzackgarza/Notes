@@ -145,5 +145,5 @@ $$
 
 Theorem: this is a "good" height function:
 $$
-\hat h (p) = \lim_{n\to\infty} \frac{h(\)}{}
+\hat h (p) = \lim_{n\to\infty} \frac{h(\varphi^n(p))}{}
 $$
