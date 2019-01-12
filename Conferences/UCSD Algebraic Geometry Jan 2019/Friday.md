@@ -83,3 +83,5 @@ Both yield maps $C \to \PP^r$ for some $r$; Brill-Noether theorem gives criteria
 
 Need to look at the kernel of this restriction map:
 $$ H ^ { 0 } \left( \mathcal { O } _ { \mathrm { pr } } ( k ) \right) \rightarrow H ^ { 0 } \left( \mathcal { O } _ { C } ( k ) \right) $$
+
+Surjective
