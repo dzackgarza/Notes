@@ -140,5 +140,5 @@ Not known if there is a counterexample for $q\dash$invariants?
 
 **Unknown, possibly hard problem:** 
 $$
-h^0(\lfloor mD \rfloor+A) \in \Theta(m^r)
+h^0(\lfloor mD \rfloor+A) \in_? \Theta(m^r)
 $$
