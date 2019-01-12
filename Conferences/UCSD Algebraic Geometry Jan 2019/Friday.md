@@ -63,6 +63,7 @@ Why "Banana manifold"? Fibered over $\PP^1$, fibers are abelian surfaces, 12 fib
 [Link to Possibly Relevant Paper](https://arxiv.org/abs/1812.03538)
 
 Keywords:
+- Fano Variety
 - Hilbert scheme
 - Semistability (of varieties)
 - Moduli stack
