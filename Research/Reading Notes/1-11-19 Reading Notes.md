@@ -15,7 +15,7 @@ Stuff to Review:
 - Stiefel-Whitney class
 - Mapping cylinder/cone
 - Chern class
-- Euler class (or Euler bundle..?)
+- Euler class (or Euler bundle..? Find in old email)
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
