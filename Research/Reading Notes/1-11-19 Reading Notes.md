@@ -25,6 +25,8 @@ Stuff to Review:
 - Tubular neighborhoods
 - Resolutions
 - Suspension
+- Colimits
+- Smash product
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
