@@ -97,5 +97,5 @@ Proof: inductive argument with three major difficulties! See paper.
 
 ---
 
-
+# John Lesieutre - Numerical Dimension Revisited
 
