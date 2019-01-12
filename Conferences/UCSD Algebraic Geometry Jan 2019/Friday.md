@@ -143,3 +143,7 @@ $$
 h^0(\lfloor mD \rfloor+A) \in_? \Theta(m^r)
 $$
 
+Theorem: this is a "good" height function:
+$$
+
+$$
