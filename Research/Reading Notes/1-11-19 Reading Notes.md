@@ -27,6 +27,7 @@ Stuff to Review:
 - Suspension
 - Colimits
 - Smash product
+- Picard group (e.g. of $L_{K(n)}S^O$)
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
