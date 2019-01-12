@@ -131,4 +131,7 @@ Specific counterexample: obtain a divisor as the largest eigenvalue of a pullbac
 
 Computing $h^0$: preserved under pullback, and eventually lands in $\mathrm{Amp}(X)$ (the ample cone $\sim$ first quadrant in $H_2 \cross H_1$), where it is trivial to compute by Riemann-Roch, Euler characteristic.
 
-Computing $\nu(D_+)$, claim it equals 1: $\inner{D_+}{D_+} = \inner{\varphi^* D_+}{\varphi^* D_+} = \lambda^2 \inner{D_+}{D_+} \implies \inner{D_+}{D_+} = 0.$
+Computing $\nu(D_+)$, claim it equals 1: 
+$$
+\inner{D_+}{D_+} = \inner{\varphi^* D_+}{\varphi^* D_+} = \lambda^2 \inner{D_+}{D_+} \implies \inner{D_+}{D_+} = 0.
+$$
