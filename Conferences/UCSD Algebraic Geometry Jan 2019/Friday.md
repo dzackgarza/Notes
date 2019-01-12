@@ -66,3 +66,4 @@ Keywords:
 - Hilbert scheme
 - Semistability (of varieties)
 - Moduli stack
+- Minimal model program
