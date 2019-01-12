@@ -18,6 +18,7 @@ Stuff to Review:
 - Euler class (or Euler bundle..? Find in old email)
 - Homotopy limit/colimit
 - The $J$-homomorphism
+- $p\dash$adic stuff
 
 Stuff to Look Into
 - Kervaire Invariant 1 Problem
