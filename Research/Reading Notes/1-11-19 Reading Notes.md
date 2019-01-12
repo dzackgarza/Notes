@@ -47,3 +47,8 @@ Stuff to Look Into
 - Nishida's Theorem:
   - The $S^1$ spectrum is some kind of "thickening" of $\ZZ$?
 - Hodge Conjecture
+- Floer homology
+- Fukaya categories
+- Symplectic geometry
+  - Lagrangian submanifolds
+-
