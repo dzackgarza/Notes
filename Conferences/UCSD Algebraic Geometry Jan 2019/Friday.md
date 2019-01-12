@@ -72,3 +72,5 @@ Keywords:
 - Degeneration
 
 # Eric Larson - The Maximal Rank Conjecture
+[Link to Possibly Relevant Paper](https://arxiv.org/abs/1711.04906)
+
