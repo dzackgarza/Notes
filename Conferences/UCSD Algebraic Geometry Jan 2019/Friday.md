@@ -145,5 +145,5 @@ $$
 
 Theorem: this is a "good" height function:
 $$
-\hat h ()
+\hat h (\varphi) = \lim_{n\to\infty} \frac{}{}
 $$
