@@ -158,6 +158,7 @@ Keywords:
 - Toric variety
 - SYZ mirror symmetry
 - SYZ conjecture
+- Fukaya category
 
 The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$, want
 $$
