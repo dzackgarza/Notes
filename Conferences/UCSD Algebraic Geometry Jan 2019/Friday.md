@@ -188,3 +188,5 @@ Correspondence between complex and symplectic under mirror symmetry.
 Full resolution of a singularity "factors" through partial resolutions; breaks deformation space into components.
 
 Theme in algebraic geometry: have obstruction problem, add structure to make obstruction vanish.
+
+See phone picture for theorem about smoothness in deformation space.
