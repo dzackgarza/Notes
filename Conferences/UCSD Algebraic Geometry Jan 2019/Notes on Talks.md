@@ -192,3 +192,8 @@ Theme in algebraic geometry: have obstruction problem, add structure to make obs
 
 *See phone picture for theorem about smoothness in deformation space.*
 
+
+---
+
+
+
