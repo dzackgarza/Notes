@@ -158,3 +158,5 @@ Keywords:
 - Toric variety
 - SYZ mirror symmetry
 - SYZ conjecture
+
+The SYZ conjecture: take the pair(X<D)>)
