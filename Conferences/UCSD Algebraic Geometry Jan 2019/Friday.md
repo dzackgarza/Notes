@@ -156,4 +156,4 @@ $$
 
 Keywords:
 - Toric variety
-- 
+- SYZ mirror symetry
