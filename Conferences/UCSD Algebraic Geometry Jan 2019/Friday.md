@@ -189,4 +189,4 @@ Full resolution of a singularity "factors" through partial resolutions; breaks d
 
 Theme in algebraic geometry: have obstruction problem, add structure to make obstruction vanish.
 
-See phone picture for theorem about smoothness in deformation space.)
+*See phone picture for theorem about smoothness in deformation space.*
