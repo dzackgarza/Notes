@@ -3,7 +3,7 @@ Friday, January 11, 2019 - Sunday, January 13, 2019
 
 [Link to Website](https://sites.google.com/site/complexalgebraicgeometry2019/)
 
-[[toc]]
+
 
 ---
 
