@@ -3,7 +3,9 @@ Friday, January 11, 2019 - Sunday, January 13, 2019
 
 [Link to Website](https://sites.google.com/site/complexalgebraicgeometry2019/)
 
+## Table of Contents
 - [UCSD Algebraic Geometry Conference](#ucsd-algebraic-geometry-conference)
+  - [Table of Contents](#table-of-contents)
 - [Jim Bryan - The Geometry and Arithmetic of the World’s Tiniest Calabi-Yau Threefold](#jim-bryan---the-geometry-and-arithmetic-of-the-worlds-tiniest-calabi-yau-threefold)
   - [The Arithmetic Side](#the-arithmetic-side)
 - [Chenyang Xu - The uniqueness of K-polystable Fano degeneration](#chenyang-xu---the-uniqueness-of-k-polystable-fano-degeneration)
