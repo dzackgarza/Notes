@@ -205,4 +205,4 @@ Keywords:
 - MMP (Minimal model program)
 - Divisor
 
-Take a fibration, generally has singular fibers and thus yields a singular foliation. Blowing up these singularities does not help - they in fact introduce more singularities.
+Take a fibration, generally has singular fibers and thus yields a singular foliation. Blowing up these singularities does not help - this in fact introduces more singularities.
