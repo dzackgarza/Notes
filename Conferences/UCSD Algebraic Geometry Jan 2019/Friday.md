@@ -183,3 +183,4 @@ Gives a "dual special Lagrangian torus fibrations".
 
 Correspondence between complex and symplectic under mirror symmetry.
 
+Theme in algebraic geometry: have obstruction problem, add structure to make obstruction vanish.
