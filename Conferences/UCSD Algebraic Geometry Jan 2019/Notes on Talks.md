@@ -5,7 +5,7 @@ Friday, January 11, 2019 - Sunday, January 13, 2019
 
 ---
 
-# Jim Bryan - The geometry and arithmetic of the world’s tiniest Calabi-Yau threefold
+# Jim Bryan - The Geometry and Arithmetic of the World’s Tiniest Calabi-Yau Threefold
 Links
 - [Possibly Relevant Paper](https://arxiv.org/abs/1004.2997)
 
