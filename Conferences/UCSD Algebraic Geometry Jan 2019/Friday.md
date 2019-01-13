@@ -124,6 +124,7 @@ Keywords:
 - [Riemann-Roch](http://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Talovikova.pdf)
 - [Hilbert polynomial](https://en.wikipedia.org/wiki/Hilbert_series_and_Hilbert_polynomial)
 - [Hyper-Hyperkähler](https://en.wikipedia.org/wiki/Hyperk%C3%A4hler_manifold)
+- $\mathcal{O}(1)$?
 
 
 Pseudoautomorphisms: Birational map that is an isomorphism in codimension 1. (Can only happen in $\dim > 3$).
