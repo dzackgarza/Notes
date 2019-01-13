@@ -159,4 +159,4 @@ Keywords:
 - SYZ mirror symmetry
 - SYZ conjecture
 
-The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$
+The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$
