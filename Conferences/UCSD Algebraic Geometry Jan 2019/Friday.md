@@ -150,4 +150,4 @@ $$
 \hat h (p) = \lim_{n\to\infty} \frac{h(\varphi^n(p))}{\lambda_1(\varphi)^n} + \lim_{n\to\infty} \frac{h(\varphi^{-n}(p))}{\lambda_1(\varphi^{-1})^n}
 $$
 
-# Paul Hacking - Mirror symmetry for Fano varieties
+# Paul Hacking - Mirror Symmetry for Fano Varieties
