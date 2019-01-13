@@ -77,7 +77,8 @@ Keywords:
 - Degeneration
 
 # Eric Larson - The Maximal Rank Conjecture
-[Possibly Relevant Paper](https://arxiv.org/abs/1711.04906)
+Links:
+- [Possibly Relevant Paper](https://arxiv.org/abs/1711.04906)
 
 Keywords:
 - Hilbert scheme
