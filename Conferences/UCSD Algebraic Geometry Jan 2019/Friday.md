@@ -179,3 +179,4 @@ Gives a "dual special Lagrangian torus fibrations".
 "Wrapped" Fukaya category: objects are lagrangians ("wrapped" at infinity), morphisms are Floer homology? Equivalent to sheaves on a site for quasi-projective varieties?
 
 Correspondence between complex and symplectic under mirror symmetry.
+
