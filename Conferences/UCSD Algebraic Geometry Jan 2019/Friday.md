@@ -169,6 +169,7 @@ Keywords:
 - Minkowski sum/decomposition
 - Base locus
 - "General fiber"
+- Gromov-Witten invariants
 
 The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$, want
 $$
