@@ -168,4 +168,4 @@ U \arrow[rdd, "f"] &  & V \arrow[ldd, "g"] \\
 \end{tikzcd}
 $$
 
-Gives a "dual special Lagrangian torus fibration"
+Gives a "dual special Lagrangian torus fibration".
