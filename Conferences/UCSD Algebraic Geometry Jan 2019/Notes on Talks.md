@@ -224,3 +224,5 @@ Keywords:
 - [Exceptional divisor/ locus](https://en.wikipedia.org/wiki/Exceptional_divisor)
 
 Take a fibration, generally has singular fibers and thus yields a singular foliation. Blowing up these singularities does not help - this in fact introduces more singularities.
+
+Locally, a foliation is a fibration?
