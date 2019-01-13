@@ -170,3 +170,5 @@ U \arrow[rdd, "f"] &  & V \arrow[ldd, "g"] \\
 $$
 
 Gives a "dual special Lagrangian torus fibration".
+
+Fukaya category: objects are lagrangians, morphisms are Floer cohomology?
