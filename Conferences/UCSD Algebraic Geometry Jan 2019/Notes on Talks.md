@@ -198,7 +198,7 @@ Theme in algebraic geometry: have obstruction problem, add structure to make obs
 # Paolo Cascini - Minimal Model Program for Foliations
 
 Some relevant background:
-[Snapshot of MMP](https://www2.bc.edu/brian-lehmann/papers/snapshot.pdf)
+- [Snapshot of MMP](https://www2.bc.edu/brian-lehmann/papers/snapshot.pdf)
 
 Keywords:
 - Foliations
