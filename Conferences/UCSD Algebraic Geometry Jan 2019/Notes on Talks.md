@@ -221,5 +221,6 @@ Keywords:
 - MMP (Minimal model program)
 - Divisor (and exceptional divisor)
 - Semi-ample
+- Exceptional locus
 
 Take a fibration, generally has singular fibers and thus yields a singular foliation. Blowing up these singularities does not help - this in fact introduces more singularities.
