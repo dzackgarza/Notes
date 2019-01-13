@@ -203,6 +203,6 @@ Some relevant background:
 Keywords:
 - [Foliations](https://en.wikipedia.org/wiki/Foliation)
 - MMP (Minimal model program)
-- Divisor
+- Divisor (and exceptional divisor)
 
 Take a fibration, generally has singular fibers and thus yields a singular foliation. Blowing up these singularities does not help - this in fact introduces more singularities.
