@@ -170,6 +170,7 @@ Keywords:
 - Base locus
 - "General fiber"
 - Gromov-Witten invariants
+- Stein Manifolds
 
 The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$, want
 $$
