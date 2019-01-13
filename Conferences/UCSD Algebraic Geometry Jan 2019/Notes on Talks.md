@@ -8,7 +8,7 @@ Friday, January 11, 2019 - Sunday, January 13, 2019
   - [Table of Contents](#table-of-contents)
 - [Jim Bryan - The Geometry and Arithmetic of the World’s Tiniest Calabi-Yau Threefold](#jim-bryan---the-geometry-and-arithmetic-of-the-worlds-tiniest-calabi-yau-threefold)
   - [The Arithmetic Side](#the-arithmetic-side)
-- [Chenyang Xu - The uniqueness of K-polystable Fano degeneration](#chenyang-xu---the-uniqueness-of-k-polystable-fano-degeneration)
+- [Chenyang Xu - The Uniqueness of K-polystable Fano Degeneration](#chenyang-xu---the-uniqueness-of-k-polystable-fano-degeneration)
 - [Eric Larson - The Maximal Rank Conjecture](#eric-larson---the-maximal-rank-conjecture)
 - [John Lesieutre - Numerical Dimension Revisited](#john-lesieutre---numerical-dimension-revisited)
 - [Paul Hacking - Mirror Symmetry for Fano Varieties](#paul-hacking---mirror-symmetry-for-fano-varieties)
@@ -76,7 +76,7 @@ Why "Banana manifold"? Fibered over $\PP^1$, fibers are abelian surfaces, 12 fib
 (Proceeded with construction of object with very low Hodge numbers.)
 
 
-# Chenyang Xu - The uniqueness of K-polystable Fano degeneration
+# Chenyang Xu - The Uniqueness of K-polystable Fano Degeneration
 Links:
 - [Possibly Relevant Paper](https://arxiv.org/abs/1812.03538)
 
