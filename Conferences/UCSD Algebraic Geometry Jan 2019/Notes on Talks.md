@@ -201,7 +201,7 @@ Some relevant background:
 - [Recent Results around MMP](https://www2.bc.edu/brian-lehmann/papers/snapshot.pdf)
 
 Keywords:
-- [Foliations]()
+- [Foliations](https://en.wikipedia.org/wiki/Foliation)
 - MMP (Minimal model program)
 - Divisor
 
