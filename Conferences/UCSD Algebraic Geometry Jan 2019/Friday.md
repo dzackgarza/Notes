@@ -155,7 +155,7 @@ $$
 > The mirror of a Fano n-fold is a family of Calabi--Yau (n-1)-folds over the affine line with maximally unipotent monodromy at infinity. We describe this mirror correspondence in terms of birational geometry, deformation theory, and Hodge theory. This is joint work with Corti and Petracci, and builds on work of Coates, Corti, Galkin, Golyshev, and Kasprzyk.
 
 Keywords:
-- Fano varieties
+- Fano varieties/manifolds
 - Toric variety
 - SYZ mirror symmetry
 - SYZ conjecture
