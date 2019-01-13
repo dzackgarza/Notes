@@ -167,3 +167,4 @@ U \arrow[rdd, "f"] &  & V \arrow[ldd, "g"] \\
  & B & 
 \end{tikzcd}
 $$
+
