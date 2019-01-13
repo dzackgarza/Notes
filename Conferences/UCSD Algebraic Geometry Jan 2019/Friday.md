@@ -163,6 +163,7 @@ Keywords:
 - Q-Gorenstein
 - Blowdown
 - Hodge theory
+- Hodge-Tate variety
 
 The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$, want
 $$
