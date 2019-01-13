@@ -160,3 +160,10 @@ Keywords:
 - SYZ conjecture
 
 The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$, want
+$$
+\begin{tikzcd}
+U \arrow[rdd, "f"] &  & V \arrow[ldd, "g"] \\
+ &  &  \\
+ & B & 
+\end{tikzcd}
+$$
