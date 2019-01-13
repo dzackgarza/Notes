@@ -166,6 +166,7 @@ Keywords:
 - Hodge-Tate variety
 - Polytopes
 - Minkowski sum
+- Base locus
 
 The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$, want
 $$
