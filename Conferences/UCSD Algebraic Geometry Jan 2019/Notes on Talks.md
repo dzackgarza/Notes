@@ -3,7 +3,14 @@ Friday, January 11, 2019 - Sunday, January 13, 2019
 
 [Link to Website](https://sites.google.com/site/complexalgebraicgeometry2019/)
 
-
+- [UCSD Algebraic Geometry Conference](#ucsd-algebraic-geometry-conference)
+- [Jim Bryan - The Geometry and Arithmetic of the World’s Tiniest Calabi-Yau Threefold](#jim-bryan---the-geometry-and-arithmetic-of-the-worlds-tiniest-calabi-yau-threefold)
+  - [The Arithmetic Side](#the-arithmetic-side)
+- [Chenyang Xu - The uniqueness of K-polystable Fano degeneration](#chenyang-xu---the-uniqueness-of-k-polystable-fano-degeneration)
+- [Eric Larson - The Maximal Rank Conjecture](#eric-larson---the-maximal-rank-conjecture)
+- [John Lesieutre - Numerical Dimension Revisited](#john-lesieutre---numerical-dimension-revisited)
+- [Paul Hacking - Mirror Symmetry for Fano Varieties](#paul-hacking---mirror-symmetry-for-fano-varieties)
+- [Paolo Cascini - Minimal Model Program for Foliations](#paolo-cascini---minimal-model-program-for-foliations)
 
 ---
 
