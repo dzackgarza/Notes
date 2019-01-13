@@ -171,4 +171,4 @@ $$
 
 Gives a "dual special Lagrangian torus fibration".
 
-Fukaya category: objects are lagrangians, morphisms are Floer cohomology? Equivalent to sheaves on a site for quasi-projective varieties?
+Fukaya category: objects are lagrangians, morphisms are Floer homology? Equivalent to sheaves on a site for quasi-projective varieties?
