@@ -241,7 +241,7 @@ Keywords
 - Ample line bundle
 - Toric variety
 
-Definition: Bott Vanishing holds for a smooth projective variety $X$ if
+Definition: Bott Vanishing holds for a smooth projective variety $X$ if for all ample line bundles $L$,
 $$
 H ^ { j } \left( X , \Omega _ { X } ^ { i } \otimes L \right) = 0
 $$
