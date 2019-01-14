@@ -250,3 +250,5 @@ Generalization of Kodaira vanishing; holds for all smooth projective **toric** v
 $$
 \thevector{x_1, x_2, \cdots} \mapsto \thevector{x_1^p, x_2^p, \cdots}
 $$
+
+If the Frobenius lifts in a Fano variety, then Bott vanishing holds.
