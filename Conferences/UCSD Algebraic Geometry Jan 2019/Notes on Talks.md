@@ -252,3 +252,4 @@ $$
 $$
 
 If the Frobenius lifts in a Fano variety, then Bott vanishing holds. Doesn't hold for many Fano varieties, namely those that aren't rigid (deformation group is not zero).
+
