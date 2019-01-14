@@ -277,5 +277,10 @@ Holds for $K3$ surfaces of $\deg X =22$ or $\geq 24$ (degree coming from Chern c
 
 *Moduli spaces as smooth stacks?*
 
-Bott vanishing will hold for curves on the surface of sufficient complexity - 
+Bott vanishing will hold for curves on the surface of sufficient complexity:
+$$
+19 + g\leq 3g-3 \implies g \geq 11
+$$
+
+Able to recover $X$ 
 
