@@ -247,6 +247,7 @@ Keywords
 - Rigidity
 - Abelian variety
 - $K3$ surfaces
+- Chern class
 
 Definition: *Bott vanishing* holds for a smooth projective variety $X$ if for all ample line bundles $L$,
 $$
