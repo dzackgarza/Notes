@@ -268,4 +268,4 @@ What are the other rationally-connected (or Fano) varieties that satisfying Bott
 
 Over abelian varieties, reduces to Kodaira vanishing. (Because the tangent bundles are trivial vector bundles.) So Bott vanishing holds.
 
-Next obvious: $K3$ surfaces. Nonobvious part: does the appropriate 1st cohomology vanish? (See def above). Generally yes, for $i+j \geq n = \dim X$. Need Euler characteristic positive, but can compute directly by Riemann-Roch since $K3$ surfaces are well understood.
+Next obvious: $K3$ surfaces. Nonobvious part: does the appropriate 1st cohomology vanish? (See def above). Generally yes, for $i+j \geq n = \dim X$. Need Euler characteristic positive, but can compute directly by Riemann-Roch since $K3$ surfaces are well understood. Fails for low degree (e.g. toric surfaces), but may hold for high degree.
