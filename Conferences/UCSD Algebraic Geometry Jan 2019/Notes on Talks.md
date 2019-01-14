@@ -263,3 +263,4 @@ Many rigid Fanos do not satisfy Bott vanishing - Grassmanians (other than $\CP$)
 Question: Does Bott vanishing imply toric (for smooth projective varieties)? Answer: No.
 
 What are the other rationally-connected (or Fano) varieties that satisfying Bott vanishing There are more than just toric varieties. Maybe they're combinatorially meaningful? Or smooth over the integers like torics?
+
