@@ -241,10 +241,10 @@ Keywords
 - Ample line bundle
 - Toric variety
 - Frobenius lift
-- Rigid Fano varieties
+- Fano varieties
 - Ample cone
 - Picard group (of a surface)
-- 
+- Rigidity
 
 Definition: *Bott vanishing* holds for a smooth projective variety $X$ if for all ample line bundles $L$,
 $$
