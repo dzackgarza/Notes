@@ -245,4 +245,4 @@ $$
 H ^ { j } \left( X , \Omega _ { X } ^ { i } \otimes L \right) = 0
 $$
 
-Generalization of Kodaira vanishing; holds for all smooth projective toric varieties.
+Generalization of Kodaira vanishing; holds for all smooth projective **toric** varieties.
