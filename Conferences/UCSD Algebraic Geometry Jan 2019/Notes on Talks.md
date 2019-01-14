@@ -246,6 +246,7 @@ Keywords
 - Picard group (of a surface)
 - Rigidity
 - Abelian variety
+- $K3$ surfaces
 
 Definition: *Bott vanishing* holds for a smooth projective variety $X$ if for all ample line bundles $L$,
 $$
@@ -265,4 +266,4 @@ Question: Does Bott vanishing imply toric (for smooth projective varieties)? Ans
 
 What are the other rationally-connected (or Fano) varieties that satisfying Bott vanishing There are more than just toric varieties. Maybe they're combinatorially meaningful? Or smooth over the integers like torics?
 
-Over abelian varieties, reduces to Kodaira vanishing. (Because the tangent bundles are trivial vector bundles.)
+Over abelian varieties, reduces to Kodaira vanishing. (Because the tangent bundles are trivial vector bundles.) 
