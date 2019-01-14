@@ -253,4 +253,4 @@ $$
 
 If the Frobenius lifts in a Fano variety, then Bott vanishing holds. Doesn't hold for many Fano varieties, namely those that aren't rigid (deformation group is not zero).
 
-Does Bott vanishing imply toric (for smooth projective varieties)? No.
+Question: Does Bott vanishing imply toric (for smooth projective varieties)? Answer: No.
