@@ -229,3 +229,5 @@ Take a fibration, generally has singular fibers and thus yields a singular folia
 Locally, a foliation is a fibration?
 
 # Burt Totaro - Bott Vanishing
+
+> Bott proved a very strong vanishing theorem for sheaf cohomology on projective space. The statement does not hold for most varieties, and we survey what is known. We find new varieties that satisfy Bott vanishing, building on what is known about moduli spaces of K3 surfaces.
