@@ -282,5 +282,5 @@ $$
 19 + g\leq 3g-3 \implies g \geq 11
 $$
 
-Able to recover $X$ since it defined by where it vanishes on quadrics.
+Able to recover $X$ since it defined by where it vanishes on quadrics. 
 
