@@ -13,6 +13,7 @@ Friday, January 11, 2019 - Sunday, January 13, 2019
 - [John Lesieutre - Numerical Dimension Revisited](#john-lesieutre---numerical-dimension-revisited)
 - [Paul Hacking - Mirror Symmetry for Fano Varieties](#paul-hacking---mirror-symmetry-for-fano-varieties)
 - [Paolo Cascini - Minimal Model Program for Foliations](#paolo-cascini---minimal-model-program-for-foliations)
+- [Burt Totaro - Bott Vanishing](#burt-totaro---bott-vanishing)
 
 ---
 
@@ -226,3 +227,5 @@ Keywords:
 Take a fibration, generally has singular fibers and thus yields a singular foliation. Blowing up these singularities does not help - this in fact introduces more singularities.
 
 Locally, a foliation is a fibration?
+
+# Burt Totaro - Bott Vanishing
