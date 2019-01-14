@@ -241,4 +241,4 @@ Keywords
 - Ample line bundle
 
 
-Generalization of Kodaira vanishing.
+Generalization of Kodaira vanishing; holds for all projective toric varieties.
