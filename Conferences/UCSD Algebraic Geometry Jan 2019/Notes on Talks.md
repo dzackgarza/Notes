@@ -245,6 +245,7 @@ Keywords
 - Ample cone
 - Picard group (of a surface)
 - Rigidity
+- Abelian variety
 
 Definition: *Bott vanishing* holds for a smooth projective variety $X$ if for all ample line bundles $L$,
 $$
