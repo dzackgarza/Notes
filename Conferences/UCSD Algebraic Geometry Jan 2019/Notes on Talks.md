@@ -244,6 +244,7 @@ Keywords
 - Rigid Fano varieties
 - Ample cone
 - Picard group (of a surface)
+- 
 
 Definition: *Bott vanishing* holds for a smooth projective variety $X$ if for all ample line bundles $L$,
 $$
