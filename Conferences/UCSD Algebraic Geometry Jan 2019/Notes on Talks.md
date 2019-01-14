@@ -249,6 +249,7 @@ Keywords
 - $K3$ surfaces
 - Chern class
 - Ramified maps
+- Genus of a curve
 
 Definition: *Bott vanishing* holds for a smooth projective variety $X$ if for all ample line bundles $L$,
 $$
