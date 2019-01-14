@@ -282,7 +282,7 @@ $$
 19 + g\leq 3g-3 \implies g \geq 11
 $$
 
-Able to recover $X$ since it defined by where it vanishes on quadrics (curve will have degree 2 and higher terms). Fails for $K3$ surfaces of degree 
+Able to recover $X$ since it defined by where it vanishes on quadrics (curve will have degree 2 and higher terms). Fails for $K3$ surfaces of genus 12 or degree 22)
 
 
 
