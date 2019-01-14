@@ -12,10 +12,11 @@ Big Theorems:
 Opinion from MO: modern Topology starts with spectra.
 
 Stuff to Review:
-- Stiefel-Whitney class
-- Mapping cylinder/cone
-- Chern class
-- Euler class (or Euler bundle..? Find in old email)
+- Characteristic Classes (see Milnor)
+  - Stiefel-Whitney class
+  - Mapping cylinder/cone
+  - Chern class
+  - Euler class (or Euler bundle..? Find in old email)
 - Homotopy limit/colimit
 - The $J$-homomorphism
   - [See beginning of Hopkins talk](https://www.youtube.com/watch?v=Ix4pg87LKVk)
