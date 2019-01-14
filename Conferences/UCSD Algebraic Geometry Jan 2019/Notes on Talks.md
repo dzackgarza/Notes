@@ -246,4 +246,4 @@ $$
 H ^ { j } \left( X , \Omega _ { X } ^ { i } \otimes L \right) = 0
 $$
 
-Generalization of Kodaira vanishing; holds for all smooth projective **toric** varieties. Projective space has an interesting endomorphism, essentially the frobenius ($p^{\text{th}0}$)
+Generalization of Kodaira vanishing; holds for all smooth projective **toric** varieties. Projective space has an interesting endomorphism, essentially the frobenius ($p^{\text{th}0}$ power map $\thevector{x_1, x_2}]$)
