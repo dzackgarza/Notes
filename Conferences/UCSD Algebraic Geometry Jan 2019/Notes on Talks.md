@@ -273,4 +273,5 @@ Next obvious thing to look at: $K3$ surfaces. Nonobvious part: does the appropri
 
 Holds for $K3$ surfaces of $\deg X =22$ or $\geq 24$ (degree coming from Chern class). Fix $K3$ surfaces of a given degree, there is a 19-dimensional moduli space where Bott vanishing holds. (May need to throw away countably many subspaces, remaining "very general")
 
-**Moduli spaces as smooth stacks?**
+*Moduli spaces as smooth stacks?*
+
