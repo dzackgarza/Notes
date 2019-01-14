@@ -261,3 +261,4 @@ If the Frobenius lifts in a Fano variety, then Bott vanishing holds. Doesn't hol
 Many rigid Fanos do not satisfy Bott vanishing - Grassmanians (other than $\CP$), quadrics of $\dim \geq 3$.
 
 Question: Does Bott vanishing imply toric (for smooth projective varieties)? Answer: No.
+
