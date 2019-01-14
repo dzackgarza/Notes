@@ -251,4 +251,4 @@ $$
 \thevector{x_1, x_2, \cdots} \mapsto \thevector{x_1^p, x_2^p, \cdots}
 $$
 
-If the Frobenius lifts in a Fano variety, then Bott vanishing holds.
+If the Frobenius lifts in a Fano variety, then Bott vanishing holds. Doesn't hold for many Fano varieties, namely those that aren't rigid (deformation group is not zero).
