@@ -240,6 +240,9 @@ Links
 Keywords
 - Ample line bundle
 
-Definition: Bott Vanishing 
+Definition: Bott Vanishing holds for a smooth projective variety $X$ if
+$$
+H ^ { j } \left( X , \Omega _ { X } ^ { i } \otimes L \right) = 0
+$$
 
 Generalization of Kodaira vanishing; holds for all smooth projective toric varieties.
