@@ -240,6 +240,6 @@ Links
 Keywords
 - Ample line bundle
 
-Definition: Bott Vanishing
+Definition: Bott Vanishing 
 
 Generalization of Kodaira vanishing; holds for all smooth projective toric varieties.
