@@ -284,3 +284,5 @@ $$
 
 Able to recover $X$ since it defined by where it vanishes on quadrics (curve will have degree 2 and higher terms).
 
+
+
