@@ -239,6 +239,7 @@ Links
 
 Keywords
 - Ample line bundle
+- Toric variety
 
 Definition: Bott Vanishing holds for a smooth projective variety $X$ if
 $$
