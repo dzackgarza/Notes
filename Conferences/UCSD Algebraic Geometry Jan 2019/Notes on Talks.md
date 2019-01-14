@@ -241,7 +241,7 @@ Keywords
 - Ample line bundle
 - Toric variety
 - Frobenius lift
-- Rigid Fanos
+- Rigid Fano varieties
 
 Definition: *Bott vanishing* holds for a smooth projective variety $X$ if for all ample line bundles $L$,
 $$
