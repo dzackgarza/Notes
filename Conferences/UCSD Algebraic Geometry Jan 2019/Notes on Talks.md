@@ -138,7 +138,7 @@ Keywords:
 - Picard rank
 - [Riemann-Roch](http://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Talovikova.pdf)
 - [Hilbert polynomial](https://en.wikipedia.org/wiki/Hilbert_series_and_Hilbert_polynomial)
-- [Hyper-Hyperkähler](https://en.wikipedia.org/wiki/Hyperk%C3%A4hler_manifold)
+- [Hyperkähler](https://en.wikipedia.org/wiki/Hyperk%C3%A4hler_manifold)
 - $\mathcal{O}(1)$?
 
 
