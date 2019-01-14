@@ -271,4 +271,4 @@ Over abelian varieties, reduces to Kodaira vanishing. (Because the tangent bundl
 
 Next obvious: $K3$ surfaces. Nonobvious part: does the appropriate 1st cohomology vanish? (See def above). Generally yes, for $i+j \geq n = \dim X$. Need Euler characteristic $\chi(X) \geq 0$, but can compute directly by Riemann-Roch since $K3$ surfaces are well understood. Fails for low degree (e.g. toric surfaces), but may hold for high degree.
 
-Holds for $K3$ surfaces of $\deg X \Fix $K3$ surfaces of a given degree, there is a 19-dimensional moduli space where Bott vanishing holds. (May need to throw away countably many subspaces, remaining "very general")
+Holds for $K3$ surfaces of $\deg X =22$ or $\geq 24$ (degree coming from Chern class). Fix $K3$ surfaces of a given degree, there is a 19-dimensional moduli space where Bott vanishing holds. (May need to throw away countably many subspaces, remaining "very general")
