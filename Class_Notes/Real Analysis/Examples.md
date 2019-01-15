@@ -60,8 +60,9 @@ $$
 - Not integrable
     <details markdown="1">
     <summary>Proof</summary>
+    Just look at $[\frac 1 2, 1]$
     $$
-    
+
     $$
     </details>
 - ?
