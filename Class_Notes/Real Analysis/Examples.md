@@ -73,7 +73,7 @@ $$
     &< -\sum \frac 1 2 (x_i - x_{i-1}) \\
     &= -\frac 1 2 \left( \frac 1 2 \right) = -\frac 1 4 \\
     \implies \underline{\int_0^1} f &\leq -\frac 1 4 \\
-    \implies 
+    \implies \under
     \end{align*}
     $$
     <details markdown="1">
