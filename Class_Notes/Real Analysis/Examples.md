@@ -55,8 +55,8 @@ x, & x\in \QQ \\
 \end{cases}
 $$
 
-- ?
-- ?
+- Continuous at 0
+- Discontinuous at $\RR-\theset{0}$
 - Not integrable
     <details markdown="1">
     <summary>Proof</summary>
