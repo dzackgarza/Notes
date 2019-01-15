@@ -62,6 +62,7 @@ Show that refinement is monotone.
 
 Define upper and lower integrals.
 
+
 Show that lower $\leq$ upper integral.
 
 # 6.2: Integrability
