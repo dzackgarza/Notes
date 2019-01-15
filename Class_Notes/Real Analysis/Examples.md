@@ -7,7 +7,7 @@ Questions to ask:
 - Is $f$ integrable?
 - Is $f$ differentiable?
 
-## The actual Dirichlet function
+## The Dirichlet function
 $$
 f ( x ) = \indicator{\QQ} = \begin{cases}
 1, & x\in \QQ \\
