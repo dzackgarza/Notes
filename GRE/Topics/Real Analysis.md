@@ -175,10 +175,6 @@ $$
 f\text{ continuous } \iff \lim_{x \to p} f(x) = f(p)
 $$
 
-Examples:
-- A function discontinuous at a point: $\sin(\frac{1}{x})$ at $x=0$
-- A nowhere continuous function: $f(x) = \indicator[x \in \QQ]$
-	- Not Riemann integrable
 
 Uniform continuity #todo
 
@@ -190,6 +186,11 @@ d_X(x,y) < \delta \implies d_Y(f(x), f(y)) < \varepsilon
 $$
 - The preimage of every open set is open
 - The preimage of every closed set is closed
+
+Examples:
+- A function discontinuous at a point: $\sin(\frac{1}{x})$ at $x=0$
+- A nowhere continuous function: $f(x) = \indicator[x \in \QQ]$
+	- Not Riemann integrable
 
 Some Facts:
 - A continuous function on a compact space attains its extrema.
