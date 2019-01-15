@@ -191,11 +191,10 @@ $$
 - The preimage of every open set is open
 - The preimage of every closed set is closed
 
-
-A continuous function on a compact space attains its extrema.
-
-There are functions that are continuous on $\RR-\QQ$ but discontinuous on $\QQ$.
-There are no functions that are continuous on $\QQ$ but discontinuous on $\RR-\QQ$
+Some Facts:
+- A continuous function on a compact space attains its extrema.
+- There are functions that are continuous on $\RR-\QQ$ but discontinuous on $\QQ$.
+- There are no functions that are continuous on $\QQ$ but discontinuous on $\RR-\QQ$
 
 ## Differentiability
 $$
