@@ -10,10 +10,18 @@ Summary for GRE exam:
 Notation used throughout: $f: \RR \to \RR,~\mathbf{f}:\RR^n \to \RR^m$, $K$ is a compact set, and "integrable" or $L_R(K)$ denotes "Riemann integrable on $K$".
 
 ## Big Ideas
+- Want to know the interactions between the following major operations:
+  - Continuity (pointwise limits)
+  - Differentiability
+  - Integrability
+  - Limits of sequences
+  - Limits of series/sums
 - The derivative of a continuous function need not be continuous
 - A continuous function need to be differentiable
 - A uniform limit of differentiable functions need not be differentiable
 - A limit of integrable functions need not be integrable
+- An integrable function need not be continuous
+- An integrable function need not be differentiable
 
 ## Big Theorems / Formulas
 - **Generalized Mean Value Theorem**
@@ -279,7 +287,7 @@ $$
 	- Take $$f_n(x) = \frac{1}{n}\sin(n^2 x) \to 0,\quad f'_n = n\cos(n^2 x) ~\text{does not converge}$$
 - $f_n$ integrable $\not\implies \lim_{f_n \to f} \int_I f_n \neq \int_I \lim_{f_n \to f} f_n$
 	- May fail to converge to same value, take $$ f_n(x) = \frac{2n^2x}{(1+n^2x^2)^2} \to 0, \quad \int_0^1 f_n = 1 - \frac{1}{n^2 + 1} \to 1$$
-	-
+
 
 
 ## Uniform Convergence
@@ -354,4 +362,5 @@ $$
 
 Notation:$\sum_{k\in\NN} f_k$ is a "series"
 
-- $\limsup \abs{f_k(x)} \neq 0 \implies $ not convergent- $\limsup \abs{f_k(x)} \neq 0 \implies $ not convergent
+- $\limsup \abs{f_k(x)} \neq 0 \implies $ not convergent
+- $\limsup \abs{f_k(x)} \neq 0 \implies $ not convergent
