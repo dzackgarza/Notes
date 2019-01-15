@@ -58,6 +58,9 @@ $$
 - ?
 - ?
 - Not integrable
+    <details markdown="1">
+    <summary>Proof</summary>
+    Restrict attention to $[\frac 1 2, 1]$
     $$\begin{align*}
     \overline{\int_0^1} f &= \inf \theset{ \sum \sup f(x) (x_i - x_{i-1}) } \\
     \sup f(x) = x_i \implies \sum \sup f(x) (x_i - x_{i-1}) &= \sum x_i (x_i - x_{i-1}) \\
@@ -75,11 +78,7 @@ $$
     \implies \underline{\int_0^1} f &\leq -\frac 1 4
     \end{align*}
     $$
-    So we have $\underline{\int_0^1} f \lneq 0 \lneq \overline{\int_0^1} f$
-    <details markdown="1">
-    <summary>Proof</summary>
-    Restrict attention to $[\frac 1 2, 1]$
-    
+    So we have $\underline{\int_0^1} f \lneq 0 \lneq \overline{\int_0^1} f$.
     </details>
 - ?
 
