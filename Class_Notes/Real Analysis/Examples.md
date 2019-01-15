@@ -10,10 +10,11 @@ Questions to ask:
 ## The Dirichlet function
 $$
 f ( x ) = \indicator{\QQ} = \begin{cases}
-1, & x\in \QQ \\
-0, & \text{else}
+a, & x\in \QQ \\
+b, & \text{else}
 \end{cases}
 $$
+(Usually take $a=1, b=0$)
 
 ## Its complement 
 $$
