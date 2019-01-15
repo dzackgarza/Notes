@@ -243,8 +243,8 @@ Explanation of items in table:
 ## Integrability
 - Sufficient criteria for Riemann integrability:
 	- $f$ continuous
-	- Bounded and continuous almost everywhere, or
-	- Uniformly continuous
+	- $f$ bounded and continuous almost everywhere, or
+	- $f$ uniformly continuous
 - $f$ integrable $\iff$ bounded and continuous a.e.
 - FTC for the Riemann Integral.
 	- If $F$ is a differentiable function on the interval $[a,b]$, and $F'$ is bounded and continuous a.e., then $F′ \in L_R([a, b])$ and $$\forall x\in [a,b]: \int_a^x F'(t)~dt=F(x)−F(a)$$
