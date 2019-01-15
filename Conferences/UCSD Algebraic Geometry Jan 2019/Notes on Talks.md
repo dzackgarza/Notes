@@ -3,7 +3,7 @@ Friday, January 11, 2019 - Sunday, January 13, 2019
 
 [Link to Website](https://sites.google.com/site/complexalgebraicgeometry2019/)
 
-*Disclaimer: I am not an expert in this field, or even very knowledgeable! These notes are just for personal purposes, and almost certainly do not accurately reflect the full content of these talks. They are mostly to remind me 
+*Disclaimer: I am not an expert in this field, or even very knowledgeable! These notes are mostly for personal purposes, and certainly do not accurately reflect the full content of anyone's talks. I primarily took these to document some different topics, keywords, objects, and ideas I'd like to look at more carefully, along with some associated information about names/papers for later reference.*
 
 ## Table of Contents
 - [UCSD Algebraic Geometry Conference](#ucsd-algebraic-geometry-conference)
@@ -190,13 +190,27 @@ Keywords:
 - Stein Manifolds
 
 The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$, want
-$$
+
+```latex {cmd=true, hide=true, run_on_save=true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usetikzlibrary{cd}
+\begin{document}
 \begin{tikzcd}
-U \arrow[rdd, "f"] &  & V \arrow[ldd, "g"] \\
+U \arrow[rdd, "f"] &  & V \arrow[ldd, "g" description] \\
  &  &  \\
  & B & 
 \end{tikzcd}
-$$
+\end{document}
+```
+
+\begin{tikzcd}
+ &  & a \arrow[lldd, "f" description] \\
+ &  &  \\
+b &  & 
+\end{tikzcd}
 
 Gives a "dual special Lagrangian torus fibrations".
 
