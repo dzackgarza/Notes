@@ -50,6 +50,10 @@ Define refinement of a partition.
 
 (Aside, a useful partition: $x_i = a + \frac{i}{n}b,~ 0\leq i \leq n$.)
 
+Define Darboux Sum
+
+Show that refinement is monotone.
+
 Define $m_i, M_i$.
 $$
 \begin{aligned} 
