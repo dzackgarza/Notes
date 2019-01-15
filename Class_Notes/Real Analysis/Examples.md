@@ -64,7 +64,8 @@ $$
     \implies \sum \sup f(x) (x_i - x_{i-1}) &= \sum x_i (x_i - x_{i-1}) \\
     &> \sum \frac 1 2 (x_i - x_{i-1}) \\
     &> \frac 1 2 \sum  (x_i - x_{i-1}) \\
-    &= \frac 1 2 \left(\frac 1 2\right) = \frac 1 4 
+    &= \frac 1 2 \left(\frac 1 2\right) = \frac 1 4 \\
+    &\neq 
     \end{align*}
     $$
     <details markdown="1">
