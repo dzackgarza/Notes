@@ -32,7 +32,7 @@ $$
 - Continuous at 0
 - Discontinuous at $\RR-\theset{0}$
 - Not integrable
-  - 
+  - $U(f) > \frac 1 4$ but $L(f) = 0$.
 - Differentiable nowhere
 
 ## Dirichlet with a Differentiable Point
