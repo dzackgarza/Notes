@@ -46,7 +46,7 @@ Review Dirichlet function.
 
 Define partition. Define regular partition.
 
-Aside, a useful partition: $x_i = a + \frac{i}{n}$
+Aside, a useful partition: $x_i = a + \frac{i}{n}, 0$
 
 Define $m_i, M_i$.
 $$
