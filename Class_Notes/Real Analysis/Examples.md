@@ -9,7 +9,7 @@ f ( x ) = \indicator{\QQ} = \begin{cases}
 \end{cases}
 $$
 
-## Reversed
+## The complemented (?)
 $$
 f ( x ) = \begin{cases}
 0, & x\in \QQ \\
