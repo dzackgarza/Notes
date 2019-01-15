@@ -78,7 +78,7 @@ $$
 $$
 (Note that it's the inf of the uppers and sup of the lowers!)
 
-Show that lower $\leq$ upper integral.
+Show $\overline {\int_a^b} f(x) ~dx
 
 # 6.2: Integrability
 
