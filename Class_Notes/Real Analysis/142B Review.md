@@ -12,3 +12,5 @@ Sections Covered:
 - 8.6, 8.7, 9.1
 - 9.1, 9.2, 9.3
 - 9.4, 9.5
+
+# 6.1: Darboux Sum, Upper and Lower Integrals
