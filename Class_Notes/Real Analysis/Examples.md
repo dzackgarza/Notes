@@ -60,7 +60,9 @@ $$
 - Not integrable
     <details markdown="1">
     <summary>Proof</summary>
-    asdsad
+    $$
+    
+    $$
     </details>
 - ?
 
