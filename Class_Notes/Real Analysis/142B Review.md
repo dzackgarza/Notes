@@ -14,3 +14,6 @@ Sections Covered:
 - 9.4, 9.5
 
 # 6.1: Darboux Sum, Upper and Lower Integrals
+
+- Define integrability
+- 
