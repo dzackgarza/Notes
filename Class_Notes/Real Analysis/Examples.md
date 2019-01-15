@@ -47,4 +47,5 @@ f ( x ) = \begin{cases}
 \end{cases}
 $$
 
-- Continuous 
+- Continuous on $\QQ$
+- Discontinuous on $\RR-\QQ$
