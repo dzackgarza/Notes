@@ -74,7 +74,7 @@ Show that lower $\leq$ upper integral.
 
 # 6.2: Integrability
 
-Define integrability.
+Definition: Integrability
 
 "Archimedes-Riemann Theorem":
 $$
