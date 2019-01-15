@@ -78,13 +78,20 @@ Define integrability.
 
 "Archimedes-Riemann Theorem":
 $$
-f ~\text{integrable} \implies \exists \theset{P_i}_{i=1}^\infty ~\text{s.t.}~  U(f, P_i) - L(f, P_i) \to 0
+f ~\text{integrable} \implies \exists \theset{P_i}_{i=1}^\infty ~\text{s.t.} \quad  U(f, P_i) - L(f, P_i) \to 0
 $$
 
 Equivalently,
 $$
-\forall \varepsilon,~\exists P(\varepsilon) \mid U(f, P(\varepsilon)) - L(f, P(\varepsilon)) \leq \varepsilon
+\forall \varepsilon,~\exists P(\varepsilon) \text{ s.t. } \quad U(f, P(\varepsilon)) - L(f, P(\varepsilon)) \leq \varepsilon
 $$
+
+Show a function that is not integrable:
+$$
+f ( x ) = \left\{ \begin{array} { l l } { 0 , } & { \text { if } x \in \QQ } \\ { 1 , } & { \text{ else } } \end{array} \right.
+$$
+
+Let $\varepsilon < 1$ be fixed. Then let $P(\varepsilon) = \theset{x_0, x_1, \cdots x_n}$ be an arbitrary partition. Note that $[x_i]
 
 Show that a monotonically increasing function is integrable.
 
