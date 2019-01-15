@@ -88,7 +88,6 @@ $$
 \forall \varepsilon,~\exists P(\varepsilon) \text{ s.t. } \quad U(f, P(\varepsilon)) - L(f, P(\varepsilon)) \leq \varepsilon
 $$
 
----
 
 **Claim**: There are functions that are not integrable.
 
@@ -97,8 +96,8 @@ $$
 f ( x ) = \left\{ \begin{array} { l l } { 0 , } & { \text { if } x \in \QQ } \\ { 1 , } & { \text{ else } } \end{array} \right.
 $$
 
-**Proof**:
-<>
+<details markdown="1">
+<summary> Proof: </summary>
 Let $\varepsilon < \min \theset{1, b-a}$ be fixed. Then let $P(\varepsilon) = \theset{x_0, x_1, \cdots x_n}$ be an arbitrary partition. Note that $[x_{i-1}, x_i]$ is a closed real interval, so it contains at least one rational number $p$, and at least one irrational number $q$. Thus $$
 \inf \theset{f(x) \mid x \in [x_{i-1}, x_i]} \leq f(p) = 0 \implies m_i \leq 0 \\
 \text{and} \\ 
@@ -117,8 +116,7 @@ U(f, P(\varepsilon)) - L(f, P(\varepsilon)) &= \left( \sum_{i=1}^n (x_i - x_{i-1
 $$
 
 Since $P(\varepsilon)$ was an arbitrary, this holds for any partition, and thus $f$ is not integrable. $\qed$
-
----
+</details>
 
 Show that a monotonically increasing function is integrable.
 
@@ -131,3 +129,5 @@ Show ability to split integral at intermediate point (additivity).
 Show monotonicity.
 
 # 6.4: Interactions Between Continuity and Integrability
+
+Theorem: $f$ continuous on a closed/bounded set $\implies f$ integrable.
