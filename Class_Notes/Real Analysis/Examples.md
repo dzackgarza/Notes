@@ -49,5 +49,5 @@ $$
 
 - Continuous on $\QQ$
 - Discontinuous on $\RR-\QQ$
-- 
+- Integrable with $\int
 - Nowhere differentiable
