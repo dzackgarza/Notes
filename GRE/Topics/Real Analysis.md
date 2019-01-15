@@ -241,7 +241,7 @@ Explanation of items in table:
 - $f$ differentiable $\implies f$ continuous a.e.
 
 ## Integrability
-- Sufficient criteria for integrability:
+- Sufficient criteria for Riemann integrability:
 	- $f$ continuous, montone, bounded, finitely many discontinuities, or
 	- Bounded and continuous almost everywhere, or
 	- Uniformly continuous
