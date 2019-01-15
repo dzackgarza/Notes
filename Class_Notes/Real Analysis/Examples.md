@@ -62,7 +62,7 @@ $$
     <summary>Proof</summary>
     Just look at $[\frac 1 2, 1]$
     $$
-
+    
     $$
     </details>
 - ?
