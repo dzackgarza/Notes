@@ -185,7 +185,7 @@ $$
 
 Examples:
 - A function discontinuous at a point: $\sin(\frac{1}{x})$ at $x=0$
-- A nowhere continuous function: $f(x) = \indicator{x \in \QQ]$
+- A nowhere continuous function: $f(x) = \indicator{\QQ}$
 	- Not Riemann integrable
 
 Some Facts:
