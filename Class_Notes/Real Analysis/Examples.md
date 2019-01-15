@@ -69,7 +69,7 @@ $$
     $$
     and 
     $$\begin{align*}
-    
+    \underline(\int_0^1)
     \end{align*}
     $$
     <details markdown="1">
