@@ -129,3 +129,5 @@ Show that step functions are integrable.
 Show ability to split integral at intermediate point (additivity).
 
 Show monotonicity.
+
+# 6.4: Interactions Between Continuity and Integrability
