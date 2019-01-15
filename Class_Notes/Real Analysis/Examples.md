@@ -49,5 +49,5 @@ $$
 
 - Continuous on $\QQ$
 - Discontinuous on $\RR-\QQ$
-- Integrable with $\int
+- Integrable with $\int_a^b f = 0$
 - Nowhere differentiable
