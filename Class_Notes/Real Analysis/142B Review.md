@@ -91,7 +91,18 @@ $$
 f ( x ) = \left\{ \begin{array} { l l } { 0 , } & { \text { if } x \in \QQ } \\ { 1 , } & { \text{ else } } \end{array} \right.
 $$
 
-Let $\varepsilon < 1$ be fixed. Then let $P(\varepsilon) = \theset{x_0, x_1, \cdots x_n}$ be an arbitrary partition. Note that $[x_i]
+Let $\varepsilon < 1$ be fixed. Then let $P(\varepsilon) = \theset{x_0, x_1, \cdots x_n}$ be an arbitrary partition. Note that $[x_{i-1}, x_i]$ is a closed real interval, so it contains at least one rational number $p$, and at least one irrational number $q$. Thus $$
+\inf \theset{f(x) \mid x \in [x_{i-1}, x_i]} \leq f(p) = 0 \implies m_i \leq 0 \\
+\text{and} \\ 
+\sup \theset{f(x) \mid x \in [x_{i-1}, x_i]} \geq f(q) = 1 \implies M_i \geq 1.
+$$
+
+But then
+$$
+\begin{align*}
+U(f, P(\varepsilon)) - L(f, P(\varepsilon)) &= 
+\end{align*}
+$$
 
 Show that a monotonically increasing function is integrable.
 
