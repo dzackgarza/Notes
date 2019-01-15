@@ -39,7 +39,7 @@ x, & x\in \QQ \\
 \end{cases}
 $$
 
-## Thomae's function:
+## The Thomae function:
 $$
 f ( x ) = \begin{cases}
 \frac 1 q, & x = \frac p q \in \QQ,~(p,q) = 1 \\
