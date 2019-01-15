@@ -20,7 +20,7 @@ $$
 - Discontinuous everywhere
 - 
 
-## A scaled version
+## Dirichlet with a function
 $$
 f ( x ) = \begin{cases}
 x, & x\in \QQ \\
