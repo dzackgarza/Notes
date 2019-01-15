@@ -21,7 +21,20 @@ $$
 - Not integrable
 - Differentiable nowhere
 
-## Dirichlet with a function
+## Dirichlet with a continuous point
+$$
+f ( x ) = \begin{cases}
+x, & x\in \QQ \\
+0, & \text{else}
+\end{cases}
+$$
+
+- Continuous at 0
+- Discontinuous at $\RR-\theset{0}$
+- ?
+- Differentiable nowhere 
+
+# Dirichlet with a Differentiable Point
 $$
 f ( x ) = \begin{cases}
 x, & x\in \QQ \\
