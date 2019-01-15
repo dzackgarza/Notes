@@ -131,3 +131,5 @@ Show monotonicity.
 # 6.4: Interactions Between Continuity and Integrability
 
 Theorem: $f$ continuous on a closed/bounded set $\implies f$ integrable.
+
+Theorem: same conditions $\implies$
