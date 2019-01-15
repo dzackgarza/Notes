@@ -16,7 +16,8 @@ b, & \text{else}
 $$
 (usually take $a=1, b=0$)
 
-- 
+- Continuous nowhere
+- Discontinuous everywhere
 
 ## Its complement 
 $$
