@@ -61,7 +61,7 @@ U(f, P) = \sum_{i=1}^n (x_i - x_{i-1})M_i = \sum_{i=1}^n  (x_i - x_{i-1}) ~\sup\
 L(f, P) = \sum_{i=1}^n (x_i - x_{i-1})m_i = \sum_{i=1}^n(x_i - x_{i-1}) ~\inf\theset{~f ( x ) \mid x \in [x_{i-1}, x_{i}]~}
 $$
 
-Show that $L(f,P) \leq U(f, p)$
+Note that $\inf f $L(f,P) \leq U(f, p)$
 
 Define Darboux Sum:
 
