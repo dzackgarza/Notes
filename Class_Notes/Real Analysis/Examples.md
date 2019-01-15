@@ -14,7 +14,9 @@ a, & x\in \QQ \\
 b, & \text{else}
 \end{cases}
 $$
-(Usually take $a=1, b=0$)
+(usually take $a=1, b=0$)
+
+- 
 
 ## Its complement 
 $$
