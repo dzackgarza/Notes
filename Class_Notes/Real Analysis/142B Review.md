@@ -37,3 +37,5 @@ Define refinement.
 Show that refinement is monotone.
 
 Define upper and lower integrals.
+
+# 6.2: 
