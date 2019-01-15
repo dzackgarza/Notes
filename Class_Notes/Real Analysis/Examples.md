@@ -21,7 +21,7 @@ $$
 - Not integrable
 - Differentiable nowhere
 
-## Dirichlet with a continuous point
+## Dirichlet with a Continuous Point
 $$
 f ( x ) = \begin{cases}
 x, & x\in \QQ \\
@@ -34,7 +34,7 @@ $$
 - ?
 - Differentiable nowhere 
 
-# Dirichlet with a Differentiable Point
+## Dirichlet with a Differentiable Point
 $$
 f ( x ) = \begin{cases}
 x^2, & x\in \QQ \\
