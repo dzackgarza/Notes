@@ -45,3 +45,5 @@ f ( x ) = \begin{cases}
 0, & \text{else}
 \end{cases}
 $$
+
+- Continuity:
