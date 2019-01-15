@@ -101,7 +101,7 @@ But then
 $$
 \begin{align*}
 U(f, P(\varepsilon)) - L(f, P(\varepsilon)) &= \left( \sum_{i=1}^n (x_i - x_{i-1})M_i  \right) - \left( \sum_{i=1}^n (x_i - x_{i-1})m_i  \right) \\
-&\leq \left( \sum_{i=1}^n (x_i - x_{i-1})M_i  \right) - \left( \sum_{i=1}^n (x_i - x_{i-1})m_i  \right)
+&\leq \left( \sum_{i=1}^n (x_i - x_{i-1})0  \right) - \left( \sum_{i=1}^n (x_i - x_{i-1})1  \right)
 \end{align*}
 $$
 
