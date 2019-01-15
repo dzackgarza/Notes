@@ -65,10 +65,7 @@ $$
 
 Note that $\inf f \leq \sup f \implies L(f,P) \leq U(f, p)$.
 
-Define Darboux Sum:
 
-
-Show that refinement is monotone.
 
 Definition: **Upper and Lower Integrals.**
 $$
