@@ -40,7 +40,7 @@ $$
 
 Thomae's function:
 $$
-f ( x ) = \indicator{\QQ} = \begin{cases}
+f ( x ) = \begin{cases}
 x, & x\in \QQ \\
 0, & \text{else}
 \end{cases}
