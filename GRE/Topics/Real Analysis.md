@@ -10,8 +10,10 @@ Summary for GRE exam:
 Notation used throughout: $f: \RR \to \RR,~\mathbf{f}:\RR^n \to \RR^m$, $K$ is a compact set, and "integrable" or $L_R(K)$ denotes "Riemann integrable on $K$".
 
 ## Big Ideas
-- The derivative of a continuous function is not necessarily continuous
-- 
+- The derivative of a continuous function need not be continuous
+- A continuous function need to be differentiable
+- A uniform limit of differentiable functions need not be differentiable
+- A limit of integrable functions need not be integrable
 
 ## Big Theorems / Formulas
 - **Generalized Mean Value Theorem**
@@ -104,9 +106,9 @@ $$
 **Answer**: No.
 
 **Counterexample**: Order $\QQ\intersect[0,1]$ as $\theset{q_i}_{i\in\NN}$, then take
-$$f_n(x) = \sum_{i=1}^n \indicator[q_n] \to \indicator[{\QQ\intersect[0,1]}]$$ where each $f_n$ integrates to zero (only finitely many discontinuities) but $f$ is not Riemann-integrable.
+$$f_n(x) = \sum_{i=1}^n \indicator{q_n} \to \indicator{{\QQ\intersect[0,1]}}$$ where each $f_n$ integrates to zero (only finitely many discontinuities) but $f$ is not Riemann-integrable.
 
-**Sufficient Condition**: $
+**Sufficient Condition**:
 - $f_n \rightrightarrows f$, or
 - $f$ integrable and $\exists M: \forall n, \abs{f_n} < M$ ($f_n$ uniformly bounded)
 
