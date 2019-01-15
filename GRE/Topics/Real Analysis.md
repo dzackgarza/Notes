@@ -277,6 +277,8 @@ $$
 
 
 ## Uniform Convergence
+
+Notation:
 $$f_n \rightrightarrows f= \lim_{n\to\infty} f_n \text{ and } \sum_{n=1}^\infty f_n \rightrightarrows S$$
 
 Summary:
