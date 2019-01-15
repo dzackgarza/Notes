@@ -16,4 +16,5 @@ Sections Covered:
 # 6.1: Darboux Sum, Upper and Lower Integrals
 
 - Define integrability
+- Show that a cts function on a compact interval is integrable
 - 
