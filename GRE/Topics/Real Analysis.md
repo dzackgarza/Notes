@@ -10,6 +10,8 @@ Summary for GRE exam:
 Notation used throughout: $f: \RR \to \RR,~\mathbf{f}:\RR^n \to \RR^m$, $K$ is a compact set, and "integrable" or $L_R(K)$ denotes "Riemann integrable on $K$".
 
 ## Big Ideas
+- The derivative of a continuous function is not necessarily continuous
+- 
 
 ## Big Theorems / Formulas
 - **Generalized Mean Value Theorem**
