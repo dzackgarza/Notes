@@ -1,4 +1,5 @@
 # Variations of the Dirichlet Function
+Let $[a,b]
 
 The actual Dirichlet function:
 $$
