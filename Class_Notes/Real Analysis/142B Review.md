@@ -42,6 +42,8 @@ Define $L(f, P), U(f,P)$.
 
 Show that $L(f,P) \leq U(f, p)$
 
+Define Darboux Sum:
+
 Important inequality:
 $$
 \sum_i^n m_i (x_i - x_{i-1}) \leq L(f, P) \leq \int_a^b f(x) ~dx \leq  U(f, P) \leq \sum_i^n M_i (x_i - x_{i-1})
@@ -52,7 +54,6 @@ Define refinement.
 
 Show that refinement is monotone.
 
-Define Darboux Sum
 
 Define upper and lower integrals.
 
