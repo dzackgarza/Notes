@@ -18,7 +18,7 @@ $$
 
 - Continuous nowhere
 - Discontinuous everywhere
-- 
+- Not integrable
 
 ## Dirichlet with a function
 $$
