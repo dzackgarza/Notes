@@ -44,11 +44,7 @@ Definition: Partition
 
 For each $i$, we can look at bounds on $f$ within the interval $[x_i, x_{i+1}]$
 
----
-
-
-
-Define partition. Define regular partition. Define tagged partition.
+Define regular partition. Define tagged partition.
 
 Aside, a useful partition: $x_i = a + \frac{i}{n}b,~ 0\leq i \leq n$.
 
