@@ -62,7 +62,7 @@ Show that refinement is monotone.
 
 Define upper and lower integrals.
 $$
-\underline
+\underline \int_a^b 
 $$
 
 Show that lower $\leq$ upper integral.
