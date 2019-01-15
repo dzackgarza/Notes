@@ -44,13 +44,13 @@ Definition: Partition
 
 For each $i$, we can look at bounds on $f$ within the interval $[x_i, x_{i+1}]$
 
+(Aside, a useful partition: $x_i = a + \frac{i}{n}b,~ 0\leq i \leq n$.)
+
+
 Define regular partition. 
 Define tagged partition. 
 Define refinement of a partition.
 
-(Aside, a useful partition: $x_i = a + \frac{i}{n}b,~ 0\leq i \leq n$.)
-
-Define Darboux Sum
 
 Show that refinement is monotone.
 
