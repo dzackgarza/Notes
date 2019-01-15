@@ -30,7 +30,9 @@ x, & x\in \QQ \\
 $$
 
 - Continuous at 0
-- Discontinuous at $\RR-\theset{0}$ 
+- Discontinuous at $\RR-\theset{0}$
+- ?
+- Differentiable nowhere 
 
 ## A mix
 $$
