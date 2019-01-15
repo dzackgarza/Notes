@@ -37,8 +37,14 @@ Review Dirichlet function.
 Define partition. Define regular partition.
 
 Define $m_i, M_i$.
+$$
+\begin{aligned} M _ { i } = & \sup _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x ) \\ m _ { i } = & \inf _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x ) \end{aligned}
+$$
 
 Define $L(f, P), U(f,P)$.
+$$
+U(f, P)
+$$
 
 Show that $L(f,P) \leq U(f, p)$
 
@@ -53,7 +59,6 @@ $$
 Define refinement.
 
 Show that refinement is monotone.
-
 
 Define upper and lower integrals.
 
