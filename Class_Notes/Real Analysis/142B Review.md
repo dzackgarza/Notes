@@ -45,8 +45,8 @@ $$
 
 Define $L(f, P),~U(f,P)$.
 $$
-U(f, P) = \sum_{i=1}^n M_i(x_i - x_{i-1}) = & \sup _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x )  \\
-L(f, P) = \sum_{i=1}^n m_i(x_i - x_{i-1})
+U(f, P) = \sum_{i=1}^n (x_i - x_{i-1})M_i = \sum_{i=1}^n  (x_i - x_{i-1}) ~\sup\theset{~f ( x ) \mid x \in [x_{i-1}, x_{i}]~}  \\
+L(f, P) = \sum_{i=1}^n (x_i - x_{i-1})m_i = \sum_{i=1}^n(x_i - x_{i-1}) ~\inf\theset{~f ( x ) \mid x \in [x_{i-1}, x_{i}]~}
 $$
 
 Show that $L(f,P) \leq U(f, p)$
@@ -79,6 +79,11 @@ Define integrability.
 "Archimedes-Riemann Theorem":
 $$
 f ~\text{integrable} \implies \exists \theset{P_i}_{i=1}^\infty ~\text{s.t.}~  U(f, P_i) - L(f, P_i) \to 0
+$$
+
+Equivalently,
+$$
+\forall \varepsilon,~\exists N \text{ s.t. } 
 $$
 
 Show that a monotonically increasing function is integrable.
