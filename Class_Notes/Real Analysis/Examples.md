@@ -45,7 +45,7 @@ $$
 
 - Continuous at 0
 - Discontinuous at $\RR-\theset{0}$
-- ?
+- Not integrable
 - Differentiable at 0 
 
 ## Dirichlet with Two Functions
