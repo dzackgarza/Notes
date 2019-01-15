@@ -99,25 +99,25 @@ $$
 <details markdown="1">
 <summary>Proof</summary>
 
-    Let $\varepsilon < \min \theset{1, b-a}$ be fixed. Then let $P(\varepsilon) = \theset{x_0, x_1, \cdots x_n}$ be an arbitrary partition. Note that $[x_{i-1}, x_i]$ is a closed real interval, so it contains at least one rational number $p$, and at least one irrational number $q$. Thus 
-    $$
-    \inf \theset{f(x) \mid x \in [x_{i-1}, x_i]} \leq f(p) = 0 \implies m_i \leq 0 \\
-    \text{and} \\ 
-    \sup \theset{f(x) \mid x \in [x_{i-1}, x_i]} \geq f(q) = 1 \implies M_i \geq 1.
-    $$
+Let $\varepsilon < \min \theset{1, b-a}$ be fixed. Then let $P(\varepsilon) = \theset{x_0, x_1, \cdots x_n}$ be an arbitrary partition. Note that $[x_{i-1}, x_i]$ is a closed real interval, so it contains at least one rational number $p$, and at least one irrational number $q$. Thus 
+$$
+\inf \theset{f(x) \mid x \in [x_{i-1}, x_i]} \leq f(p) = 0 \implies m_i \leq 0 \\
+\text{and} \\ 
+\sup \theset{f(x) \mid x \in [x_{i-1}, x_i]} \geq f(q) = 1 \implies M_i \geq 1.
+$$
 
-    But this holds for each $i$, so we have
-    $$
-    \begin{align*}
-    U(f, P(\varepsilon)) - L(f, P(\varepsilon)) &= \left( \sum_{i=1}^n (x_i - x_{i-1})M_i  \right) - \left( \sum_{i=1}^n (x_i - x_{i-1})m_i  \right) \\
-    &\geq \left( \sum_{i=1}^n (x_i - x_{i-1})1  \right) - \left( \sum_{i=1}^n (x_i - x_{i-1})0  \right) \\
-    &= \left( \sum_{i=1}^n (x_i - x_{i-1})  \right) \\
-    &= b-a \\
-    &\geq \varepsilon
-    \end{align*}
-    $$
+But this holds for each $i$, so we have
+$$
+\begin{align*}
+U(f, P(\varepsilon)) - L(f, P(\varepsilon)) &= \left( \sum_{i=1}^n (x_i - x_{i-1})M_i  \right) - \left( \sum_{i=1}^n (x_i - x_{i-1})m_i  \right) \\
+&\geq \left( \sum_{i=1}^n (x_i - x_{i-1})1  \right) - \left( \sum_{i=1}^n (x_i - x_{i-1})0  \right) \\
+&= \left( \sum_{i=1}^n (x_i - x_{i-1})  \right) \\
+&= b-a \\
+&\geq \varepsilon
+\end{align*}
+$$
 
-    Since $P(\varepsilon)$ was an arbitrary, this holds for any partition, and thus $f$ is not integrable. $\qed$
+Since $P(\varepsilon)$ was an arbitrary, this holds for any partition, and thus $f$ is not integrable. $\qed$
 </details>
 
 Show that a monotonically increasing function is integrable.
