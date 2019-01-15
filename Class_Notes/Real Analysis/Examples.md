@@ -47,7 +47,7 @@ $$
 - ?
 - Differentiable at 0 
 
-## A mix
+## Dirichlet with 
 $$
 f ( x ) = \begin{cases}
 x, & x\in \QQ \\
