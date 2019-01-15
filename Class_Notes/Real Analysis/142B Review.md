@@ -96,8 +96,8 @@ $$
 f ( x ) = \left\{ \begin{array} { l l } { 0 , } & { \text { if } x \in \QQ } \\ { 1 , } & { \text{ else } } \end{array} \right.
 $$
 
-    <details markdown="1">
-    <summary>Proof:</summary>
+<details markdown="1">
+<summary>Proof:</summary>
 
     Let $\varepsilon < \min \theset{1, b-a}$ be fixed. Then let $P(\varepsilon) = \theset{x_0, x_1, \cdots x_n}$ be an arbitrary partition. Note that $[x_{i-1}, x_i]$ is a closed real interval, so it contains at least one rational number $p$, and at least one irrational number $q$. Thus 
     $$
@@ -118,7 +118,7 @@ $$
     $$
 
     Since $P(\varepsilon)$ was an arbitrary, this holds for any partition, and thus $f$ is not integrable. $\qed$
-    </details>
+</details>
 
 Show that a monotonically increasing function is integrable.
 
