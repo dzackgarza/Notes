@@ -62,7 +62,8 @@ $$
     <summary>Proof</summary>
     Just look at $[\frac 1 2, 1]$
     $$\begin{align*}
-    \overline{\int_0^1} f = \inf \theset{ \sum \sup f (x_i - x_{i-1}) }
+    \overline{\int_0^1} f &= \inf \theset{ \sum \sup f (x_i - x_{i-1}) } \\
+    
     \end{align*}
     $$
     </details>
