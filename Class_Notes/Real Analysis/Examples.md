@@ -41,7 +41,7 @@ $$
 Thomae's function:
 $$
 f ( x ) = \begin{cases}
-\frac 1 q, & x\in \QQ \\
+\frac 1 q, & x = \frac p q \in \QQ \\
 0, & \text{else}
 \end{cases}
 $$
