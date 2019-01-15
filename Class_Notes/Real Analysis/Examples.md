@@ -80,7 +80,7 @@ $$
     $$
     So we have $\underline{\int_0^1} f \lneq 0 \lneq \overline{\int_0^1} f$.
     </details>
-- ?
+- Differentiable nowhere.
 
 ## The Thomae function:
 $$
