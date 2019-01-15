@@ -11,7 +11,7 @@ $$
 
 Its complement 
 $$
-f ( x ) = \begin{cases}
+f ( x ) = \indicator{\RR-\QQ} = \begin{cases}
 0, & x\in \QQ \\
 1, & \text{else}
 \end{cases}
