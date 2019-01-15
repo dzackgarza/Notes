@@ -60,10 +60,17 @@ Show that lower $\leq$ upper integral.
 
 Define integrability.
 
+"Archimedes-Riemann Theorem":
+$$
+f ~\text{integrable} \implies \exists \theset{P_i}_{i=1}^\infty ~\text{s.t.}~  U(f, P_i) - L(f, P_i) \to 0
+$$
+
 Show that a monotonically increasing function is integrable.
 
 Show that step functions are integrable.
 
 # 6.3: Properties of Integrals
 
-Show 
+Show ability to split integral at intermediate point (additivity).
+
+Show monotonicity.
