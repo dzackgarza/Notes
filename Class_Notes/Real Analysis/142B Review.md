@@ -40,6 +40,11 @@ Define $L(f, P), U(f,P)$.
 
 Show that $L(f,P) \leq U(f, p)$
 
+Important inequality:
+$$
+L(f, P) \leq 
+$$
+
 Define refinement.
 
 Show that refinement is monotone.
