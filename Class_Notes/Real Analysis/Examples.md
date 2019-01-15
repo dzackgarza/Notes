@@ -8,7 +8,10 @@ f ( x ) = \indicator{\QQ} = \begin{cases}
 0, & \text{else}
 \end{cases}
 $$
-
+- Reversed
 $$
-
+f ( x ) = \begin{cases}
+1, & x\in \QQ \\
+0, & \text{else}
+\end{cases}
 $$
