@@ -55,6 +55,12 @@ x, & x\in \QQ \\
 \end{cases}
 $$
 
+- ?
+- ?
+- Not integrable
+<details markdown="1"></details>
+- ?
+
 ## The Thomae function:
 $$
 f ( x ) = \begin{cases}
