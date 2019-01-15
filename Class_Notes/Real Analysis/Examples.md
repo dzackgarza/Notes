@@ -26,9 +26,8 @@ x, & x\in \QQ \\
 $$
 
 A mix
-A scaled version
 $$
-f ( x ) = \indicator{\QQ} = \begin{cases}
+f ( x ) = \begin{cases}
 x, & x\in \QQ \\
 -x, & \text{else}
 \end{cases}
