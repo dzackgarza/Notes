@@ -37,3 +37,11 @@ x, & x\in \QQ \\
 -x, & \text{else}
 \end{cases}
 $$
+
+Thomae's function:
+$$
+f ( x ) = \indicator{\QQ} = \begin{cases}
+x, & x\in \QQ \\
+0, & \text{else}
+\end{cases}
+$$
