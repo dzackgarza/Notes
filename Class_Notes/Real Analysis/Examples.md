@@ -16,3 +16,5 @@ f ( x ) = \indicator{\RR-\QQ} = \begin{cases}
 1, & \text{else}
 \end{cases}
 $$
+
+A scaled version
