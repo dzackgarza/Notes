@@ -48,7 +48,7 @@ Define regular partition.
 Define tagged partition. 
 Define refinement of a partition.
 
-Aside, a useful partition: $x_i = a + \frac{i}{n}b,~ 0\leq i \leq n$.
+(Aside, a useful partition: $x_i = a + \frac{i}{n}b,~ 0\leq i \leq n$.)
 
 Define $m_i, M_i$.
 $$
