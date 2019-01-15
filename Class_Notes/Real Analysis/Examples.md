@@ -58,9 +58,9 @@ $$
 - ?
 - ?
 - Not integrable
-<details markdown="1">
-<summary>Proof</summary>
-</details>
+    <details markdown="1">
+    <summary>Proof</summary>
+    </details>
 - ?
 
 ## The Thomae function:
