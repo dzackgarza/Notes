@@ -27,6 +27,12 @@ Definition: Partition
 > Given an interval $[a,b]$, a **partition** is an ordered set $P = \theset{x_0, x_1, \ldots, x_n}$ of finitely many points such that $\forall~ 0\leq i \leq n$, we have $x_i \in [a,b]$ and $i \leq j \implies x_i \leq x_j$.
 
 For each $i$, we can look at bounds on $f$ within the interval $[x_i, x_{i+1}]$
+---
+Review bounded.
+
+Review Dirichlet function.
+
+Define partition. Define regular partition.
 
 Define $m_i, M_i$.
 
@@ -45,3 +51,7 @@ Show that lower $\leq$ upper integral.
 # 6.2: ???
 
 Define integrability.
+
+Show that a monotonically increasing function is integrable.
+
+Show that step functions are integrable.
