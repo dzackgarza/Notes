@@ -69,6 +69,8 @@ $$
     $$
     and 
     $$\begin{align*}
+    
+    \end{align*}
     $$
     <details markdown="1">
     <summary>Proof</summary>
