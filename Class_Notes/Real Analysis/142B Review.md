@@ -38,12 +38,15 @@ Define partition. Define regular partition.
 
 Define $m_i, M_i$.
 $$
-\begin{aligned} M _ { i } = & \sup _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x ) \\ m _ { i } = & \inf _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x ) \end{aligned}
+\begin{aligned} 
+M _ { i } = & \sup _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x ) \\ 
+m _ { i } = & \inf _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x ) \end{aligned}
 $$
 
-Define $L(f, P), U(f,P)$.
+Define $L(f, P),~U(f,P)$.
 $$
-U(f, P)
+U(f, P) = \sum_{i=1}^n M_i(x_i - x_{i-1}) = & \sup _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x )  \\
+L(f, P) = \sum_{i=1}^n m_i(x_i - x_{i-1})
 $$
 
 Show that $L(f,P) \leq U(f, p)$
@@ -60,10 +63,12 @@ Define refinement.
 
 Show that refinement is monotone.
 
-Define upper and lower integrals.
+Definition: **Upper and Lower Integrals.**
 $$
-\underline \int_a^b 
+\overline {\int_a^b} f(d) ~dx = \inf\theset{~ U(f, P) \mid P ~\text{is a partition of }~ [a,b]} \\
+\underline {\int_a^b} f(d) ~dx = \sup\theset{~ L(f, P) \mid P ~\text{is a partition of }~ [a,b]} 
 $$
+(Note that it's the inf of the uppers and sup of the lowers!)
 
 Show that lower $\leq$ upper integral.
 
