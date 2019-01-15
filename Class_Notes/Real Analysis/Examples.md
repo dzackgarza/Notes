@@ -18,14 +18,7 @@ $$
 
 - Continuous nowhere
 - Discontinuous everywhere
-
-## Its complement 
-$$
-f ( x ) = \indicator{\RR-\QQ} = \begin{cases}
-0, & x\in \QQ \\
-1, & \text{else}
-\end{cases}
-$$
+- 
 
 ## A scaled version
 $$
