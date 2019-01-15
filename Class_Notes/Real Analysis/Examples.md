@@ -1,5 +1,5 @@
 # Variations of the Dirichlet Function
-Consider all integrals to be over a compact interval $[a, b]$.
+Consider all integrals to be over a compact interval $[a, b]$ with $0 \leq a < b$.
 
 Questions to ask:
 - Where is $f$ continuous?
