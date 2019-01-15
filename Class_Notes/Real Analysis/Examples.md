@@ -18,3 +18,9 @@ f ( x ) = \indicator{\RR-\QQ} = \begin{cases}
 $$
 
 A scaled version
+$$
+f ( x ) = \indicator{\QQ} = \begin{cases}
+x, & x\in \QQ \\
+0, & \text{else}
+\end{cases}
+$$
