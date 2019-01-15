@@ -132,4 +132,4 @@ Show monotonicity.
 
 Theorem: $f$ continuous on a closed/bounded set $\implies f$ integrable.
 
-Theorem: same conditions $\implies$
+Theorem: $f$ continuous on $(a,b)$ and just *bounded* on $[a,b]$ is still integrable, and integrable does not depend on $f(a), f(b)$ (can be changed arbitrarily).
