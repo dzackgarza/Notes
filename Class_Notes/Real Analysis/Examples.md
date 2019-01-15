@@ -29,7 +29,7 @@ x, & x\in \QQ \\
 \end{cases}
 $$
 
-- 
+-  
 
 ## A mix
 $$
