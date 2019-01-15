@@ -191,6 +191,7 @@ $$
 - The preimage of every open set is open
 - The preimage of every closed set is closed
 
+
 A continuous function on a compact space attains its extrema.
 
 There are functions that are continuous on $\RR-\QQ$ but discontinuous on $\QQ$.
