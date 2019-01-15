@@ -45,7 +45,7 @@ $$
 - Continuous at 0
 - Discontinuous at $\RR-\theset{0}$
 - ?
-- Differentiable nowhere 
+- Differentiable at 0 
 
 ## A mix
 $$
