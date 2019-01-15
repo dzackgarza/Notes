@@ -13,6 +13,16 @@ Sections Covered:
 - 9.1, 9.2, 9.3
 - 9.4, 9.5
 
+# Important Inequality!!
+This is more or less the workhorse of most integrability problems:
+$$
+\sum_i^n m_i (x_i - x_{i-1}) \leq L(f, P) \leq \underline{\int_a^b }f(x)~dx \leq \int_a^b f(x) ~dx \leq \overline{\int_a^b}  f(x)~dx \leq  U(f, P) \leq \sum_i^n M_i (x_i - x_{i-1})
+$$
+
+Note that $\sum_{i=1}^n (x_i - x_{i-1}) = (b-a)$ by cancellation.
+
+---
+
 # 6.1: Darboux Sum, Upper and Lower Integrals
 
 - Define integrability
@@ -53,12 +63,6 @@ Show that $L(f,P) \leq U(f, p)$
 
 Define Darboux Sum:
 
-Important inequality:
-$$
-\sum_i^n m_i (x_i - x_{i-1}) \leq L(f, P) \leq \int_a^b f(x) ~dx \leq  U(f, P) \leq \sum_i^n M_i (x_i - x_{i-1})
-$$
-(where $\sum (x_i - x_{i-1}) = (b-a)$ by cancellation.)
-
 Define refinement.
 
 Show that refinement is monotone.
@@ -74,7 +78,10 @@ Show that lower $\leq$ upper integral.
 
 # 6.2: Integrability
 
-Definition: Integrability
+Definition: **Integrability**
+$$
+f \text{ integrable } \iff \underline{\int_a^b} f(x)~dx = \overline{\int_a^b}f ~dx
+$$
 
 "Archimedes-Riemann Theorem":
 $$
