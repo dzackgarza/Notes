@@ -46,6 +46,8 @@ Review Dirichlet function.
 
 Define partition. Define regular partition.
 
+Aside, a useful partition: $x_i =
+
 Define $m_i, M_i$.
 $$
 \begin{aligned} 
