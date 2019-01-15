@@ -193,6 +193,8 @@ Some Facts:
 - There are functions that are continuous on $\RR-\QQ$ but discontinuous on $\QQ$.
 - There are no functions that are continuous on $\QQ$ but discontinuous on $\RR-\QQ$
 
+Uniform continuity #todo
+
 ## Differentiability
 $$
 f'(p) \definedas \frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p}
