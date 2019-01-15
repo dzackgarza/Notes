@@ -176,10 +176,6 @@ $$
 f\text{ continuous } \iff \lim_{x \to p} f(x) = f(p)
 $$
 
-
-Uniform continuity #todo
-
-Equivalent Definitions:
 - Epsilon-Delta Definition:
 $$
 f:(X, d_X) \to (Y, d_Y) \text{ continuous } \iff \forall \varepsilon,~ \exists \delta \mid ~
