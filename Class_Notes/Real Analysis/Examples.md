@@ -25,3 +25,11 @@ x, & x\in \QQ \\
 \end{cases}
 $$
 
+A mix
+A scaled version
+$$
+f ( x ) = \indicator{\QQ} = \begin{cases}
+x, & x\in \QQ \\
+0, & \text{else}
+\end{cases}
+$$
