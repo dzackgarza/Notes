@@ -44,7 +44,7 @@ Review bounded.
 
 Review Dirichlet function.
 
-Define partition. Define regular partition.
+Define partition. Define regular partition. Define tagged partition.
 
 Aside, a useful partition: $x_i = a + \frac{i}{n}b,~ 0\leq i \leq n$.
 
