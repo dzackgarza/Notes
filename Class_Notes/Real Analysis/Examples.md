@@ -67,6 +67,9 @@ $$
     \implies \overline{\int_0^1} f &\geq \frac 1 4
     \end{align*}
     $$
+    and 
+    $$\begin{align*}
+    $$
     <details markdown="1">
     <summary>Proof</summary>
     Restrict attention to $[\frac 1 2, 1]$
