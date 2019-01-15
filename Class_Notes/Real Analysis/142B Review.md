@@ -17,4 +17,7 @@ Sections Covered:
 
 - Define integrability
 - Show that a cts function on a compact interval is integrable
-- Prove the 1st FTC
+- Prove the two FTCs:
+$$
+
+$$
