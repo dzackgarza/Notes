@@ -37,7 +37,7 @@ $$
 # Dirichlet with a Differentiable Point
 $$
 f ( x ) = \begin{cases}
-x, & x\in \QQ \\
+x^2, & x\in \QQ \\
 0, & \text{else}
 \end{cases}
 $$
