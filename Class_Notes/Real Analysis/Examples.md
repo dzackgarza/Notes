@@ -59,8 +59,7 @@ $$
 - ?
 - Not integrable
     $$\begin{align*}
-    \overline{\int_0^1} f &= \inf \theset{ \sum \sup f(x) (x_i - x_{i-1}) } \\
-    \sup f(x) &= x_i \\
+    \overline{\int_0^1} f &= \inf \theset{ \sum \sup f(x) (x_i - x_{i-1}) } ,~ \sup f(x) = x_i \\
     \implies \sum \sup f(x) (x_i - x_{i-1}) &= \sum x_i (x_i - x_{i-1}) \\
     &> \sum \frac 1 2 (x_i - x_{i-1}) \\
     &> \frac 1 2 \sum  (x_i - x_{i-1}) \\
