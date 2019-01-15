@@ -64,7 +64,7 @@ $$
     &> \sum \frac 1 2 (x_i - x_{i-1}) \\
     &> \frac 1 2 \sum  (x_i - x_{i-1}) \\
     &= \frac 1 2 \left(\frac 1 2\right) = \frac 1 4 \\
-    \implies \overline{\int_0^1} f &\geq \frac 1 4 &
+    \implies \overline{\int_0^1} f &\geq \frac 1 4
     \end{align*}
     $$
     <details markdown="1">
