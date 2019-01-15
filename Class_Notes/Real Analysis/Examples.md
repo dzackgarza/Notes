@@ -29,7 +29,8 @@ x, & x\in \QQ \\
 \end{cases}
 $$
 
--  
+- Continuous at 0
+- Discontinuous at $\RR-\theset{0}$ 
 
 ## A mix
 $$
