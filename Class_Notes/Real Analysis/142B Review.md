@@ -40,9 +40,7 @@ For each $i$, we can look at bounds on $f$ within the interval $[x_i, x_{i+1}]$
 
 ---
 
-Review bounded.
 
-Review Dirichlet function.
 
 Define partition. Define regular partition. Define tagged partition.
 
