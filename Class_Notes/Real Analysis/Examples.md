@@ -1,5 +1,5 @@
 # Variations of the Dirichlet Function
-Let $[a,b]
+Consider all integrals to be over a compact interval $[a.b]$.
 
 The actual Dirichlet function:
 $$
