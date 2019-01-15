@@ -19,6 +19,7 @@ $$
 - Continuous nowhere
 - Discontinuous everywhere
 - Not integrable
+- Differentiable nowhere
 
 ## Dirichlet with a function
 $$
@@ -47,4 +48,4 @@ $$
 - Continuous on $\RR-\QQ$
 - Discontinuous on $\QQ$
 - Integrable with $\int_a^b f = 0$
-- Nowhere differentiable
+- Differentiable nowhere
