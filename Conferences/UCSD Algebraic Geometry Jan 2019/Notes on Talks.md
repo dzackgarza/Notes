@@ -199,18 +199,12 @@ The SYZ conjecture: take the pair $(X,D)$ and $(Y,E)$, with $U=X-D, V=Y-E$, want
 \usetikzlibrary{cd}
 \begin{document}
 \begin{tikzcd}
-U \arrow[rdd, "f"] &  & V \arrow[ldd, "g" description] \\
+U \arrow[rdd, "f" description] &  & V \arrow[ldd, "g" description] \\
  &  &  \\
  & B & 
 \end{tikzcd}
 \end{document}
 ```
-
-\begin{tikzcd}
- &  & a \arrow[lldd, "f" description] \\
- &  &  \\
-b &  & 
-\end{tikzcd}
 
 Gives a "dual special Lagrangian torus fibrations".
 
