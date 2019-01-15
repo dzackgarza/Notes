@@ -59,7 +59,7 @@ $$
 - ?
 - Not integrable
 <details markdown="1">
-<summary>
+<summary>Proof</summary>
 </details>
 - ?
 
