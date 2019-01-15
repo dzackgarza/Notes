@@ -83,7 +83,7 @@ $$
 
 Equivalently,
 $$
-\forall \varepsilon,~\exists N \text{ s.t. } 
+\forall \varepsilon,~\exists P(\varepsilon) \mid U(f, P(\varepsilon)) - L(f, P(\varepsilon)) \leq \varepsilon
 $$
 
 Show that a monotonically increasing function is integrable.
