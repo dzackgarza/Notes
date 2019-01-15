@@ -193,7 +193,7 @@ $$
 
 A continuous function on a compact space attains its extrema.
 
-There are no functions that are continuous on $\QQ$ but discontinuous on the irrational numbers
+There are no functions that are continuous on $\QQ$ but discontinuous on $\RR-\QQ$
 
 ## Differentiability
 $$
