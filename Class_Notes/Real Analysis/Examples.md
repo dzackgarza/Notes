@@ -49,3 +49,5 @@ $$
 
 - Continuous on $\QQ$
 - Discontinuous on $\RR-\QQ$
+- 
+- Nowhere differentiable
