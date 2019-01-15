@@ -73,8 +73,8 @@ Note that $\inf f \leq \sup f \implies L(f,P) \leq U(f, p)$.
 
 Definition: **Upper and Lower Integrals.**
 $$
-\overline {\int_a^b} f(d) ~dx = \inf\theset{~ U(f, P) \mid P ~\text{is a partition of }~ [a,b]} \\
-\underline {\int_a^b} f(d) ~dx = \sup\theset{~ L(f, P) \mid P ~\text{is a partition of }~ [a,b]} 
+\overline {\int_a^b} f(x) ~dx = \inf\theset{~ U(f, P) \mid P ~\text{is a partition of }~ [a,b]} \\
+\underline {\int_a^b} f(x) ~dx = \sup\theset{~ L(f, P) \mid P ~\text{is a partition of }~ [a,b]} 
 $$
 (Note that it's the inf of the uppers and sup of the lowers!)
 
