@@ -61,7 +61,8 @@ $$
     $$\begin{align*}
     \overline{\int_0^1} f &= \inf \theset{ \sum \sup f(x) (x_i - x_{i-1}) } \\
     \sup f(x) &= x_i \\
-    \implies \sum \sup f(x) (x_i - x_{i-1}) &= \sum \sup x_i (x_i - x_{i-1})
+    \implies \sum \sup f(x) (x_i - x_{i-1}) &= \sum x_i (x_i - x_{i-1}) \\
+    &=
     \end{align*}
     $$
     <details markdown="1">
