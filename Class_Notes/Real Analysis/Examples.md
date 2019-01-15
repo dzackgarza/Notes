@@ -62,7 +62,7 @@ $$
     <summary>Proof</summary>
     Just look at $[\frac 1 2, 1]$
     $$
-    \overline{\int_0^1} f = 
+    \overline{\int_0^1} f = \inf \theset{ \sum \sup f(x) }
     $$
     </details>
 - ?
