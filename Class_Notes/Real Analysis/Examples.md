@@ -1,7 +1,7 @@
 # Variations of the Dirichlet Function
 Consider all integrals to be over a compact interval $[a.b]$.
 
-- The actual Dirichlet function
+The actual Dirichlet function
 $$
 f ( x ) = \indicator{\QQ} = \begin{cases}
 1, & x\in \QQ \\
@@ -9,7 +9,7 @@ f ( x ) = \indicator{\QQ} = \begin{cases}
 \end{cases}
 $$
 
-## 
+Its complement 
 $$
 f ( x ) = \begin{cases}
 0, & x\in \QQ \\
