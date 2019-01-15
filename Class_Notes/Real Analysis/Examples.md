@@ -75,7 +75,7 @@ $$
     \implies \underline{\int_0^1} f &\leq -\frac 1 4
     \end{align*}
     $$
-    So we have $\underline{\int_0^1} f < 0 \overline{\int_0^1} f$
+    So we have $\underline{\int_0^1} f \lneq 0 \lneq \overline{\int_0^1} f$
     <details markdown="1">
     <summary>Proof</summary>
     Restrict attention to $[\frac 1 2, 1]$
