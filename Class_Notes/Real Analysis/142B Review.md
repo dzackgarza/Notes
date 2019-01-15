@@ -100,7 +100,7 @@ $$
 But then
 $$
 \begin{align*}
-U(f, P(\varepsilon)) - L(f, P(\varepsilon)) &= 
+U(f, P(\varepsilon)) - L(f, P(\varepsilon)) &= \left( \sum_{i=1}^n (x_i - x_{i-1})M_i  \right)
 \end{align*}
 $$
 
