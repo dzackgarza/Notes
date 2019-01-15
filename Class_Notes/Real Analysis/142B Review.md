@@ -42,7 +42,7 @@ Show that $L(f,P) \leq U(f, p)$
 
 Important inequality:
 $$
-L(f, P) \leq  \sum_i^n (x_i - x_{i-1})
+L(f, P) \leq  \sum_i^n m_i (x_i - x_{i-1})
 $$
 
 Define refinement.
