@@ -3,7 +3,7 @@ Friday, January 11, 2019 - Sunday, January 13, 2019
 
 [Link to Website](https://sites.google.com/site/complexalgebraicgeometry2019/)
 
-*Disclaimer: these are just personal notes, and I am not an expert in this field!
+*Disclaimer: I am not an expert in this field, or even very knowledgeable!
 
 ## Table of Contents
 - [UCSD Algebraic Geometry Conference](#ucsd-algebraic-geometry-conference)
