@@ -242,7 +242,7 @@ Explanation of items in table:
 
 ## Integrability
 - Sufficient criteria for Riemann integrability:
-	- $f$ continuous,
+	- $f$ continuous
 	- Bounded and continuous almost everywhere, or
 	- Uniformly continuous
 - $f$ integrable $\iff$ bounded and continuous a.e.
