@@ -19,5 +19,5 @@ Sections Covered:
 - Show that a cts function on a compact interval is integrable
 - Prove the two FTCs:
 $$
-\int_a^b \dd[x] 
+\int_a^b \dd{} 
 $$
