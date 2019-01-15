@@ -32,6 +32,7 @@ $$
 - Continuous at 0
 - Discontinuous at $\RR-\theset{0}$
 - Not integrable
+  - 
 - Differentiable nowhere
 
 ## Dirichlet with a Differentiable Point
