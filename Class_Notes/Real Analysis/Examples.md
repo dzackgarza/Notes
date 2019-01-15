@@ -3,6 +3,7 @@ Consider all integrals to be over a compact interval $[a.b]$.
 
 Questions to ask:
 - Where is $f$ continuous?
+- Where is $f$ discontinuous?
 - Is $f$ integrable?
 - Is $f$ differentiable?
 
@@ -46,4 +47,4 @@ f ( x ) = \begin{cases}
 \end{cases}
 $$
 
-- Continuity:
+- Continuous 
