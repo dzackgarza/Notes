@@ -61,7 +61,7 @@ M _ { i } = & \sup _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x ) 
 m _ { i } = & \inf _ { x \in \left[ x _ { i - 1 } , x _ { i } \right] } f ( x ) \end{aligned}
 $$
 
-Define the *Darboux sums*, $L(f, P),~U(f,P)$:
+Define the **Darboux Sums**, $L(f, P),~U(f,P)$:
 $$
 U(f, P) = \sum_{i=1}^n (x_i - x_{i-1})M_i = \sum_{i=1}^n  (x_i - x_{i-1}) ~\sup\theset{~f ( x ) \mid x \in [x_{i-1}, x_{i}]~}  \\
 L(f, P) = \sum_{i=1}^n (x_i - x_{i-1})m_i = \sum_{i=1}^n(x_i - x_{i-1}) ~\inf\theset{~f ( x ) \mid x \in [x_{i-1}, x_{i}]~}
