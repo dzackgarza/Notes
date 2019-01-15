@@ -44,7 +44,7 @@ f ( x ) = \begin{cases}
 \end{cases}
 $$
 
-- Continuous on $\QQ$
-- Discontinuous on $\RR-\QQ$
+- Continuous on $\RR-\QQ$
+- Discontinuous on $\QQ$
 - Integrable with $\int_a^b f = 0$
 - Nowhere differentiable
