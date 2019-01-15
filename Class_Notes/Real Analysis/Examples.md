@@ -47,7 +47,7 @@ $$
 - ?
 - Differentiable at 0 
 
-## Dirichlet with 
+## Dirichlet with Two Functions
 $$
 f ( x ) = \begin{cases}
 x, & x\in \QQ \\
