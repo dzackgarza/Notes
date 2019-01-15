@@ -6,7 +6,7 @@ Questions to ask:
 - Is $f$ integrable?
 - Is $f$ differentiable?
 
-The actual Dirichlet function
+## The actual Dirichlet function
 $$
 f ( x ) = \indicator{\QQ} = \begin{cases}
 1, & x\in \QQ \\
@@ -14,7 +14,7 @@ f ( x ) = \indicator{\QQ} = \begin{cases}
 \end{cases}
 $$
 
-Its complement 
+## Its complement 
 $$
 f ( x ) = \indicator{\RR-\QQ} = \begin{cases}
 0, & x\in \QQ \\
@@ -22,7 +22,7 @@ f ( x ) = \indicator{\RR-\QQ} = \begin{cases}
 \end{cases}
 $$
 
-A scaled version
+## A scaled version
 $$
 f ( x ) = \begin{cases}
 x, & x\in \QQ \\
@@ -30,7 +30,7 @@ x, & x\in \QQ \\
 \end{cases}
 $$
 
-A mix
+## A mix
 $$
 f ( x ) = \begin{cases}
 x, & x\in \QQ \\
@@ -38,7 +38,7 @@ x, & x\in \QQ \\
 \end{cases}
 $$
 
-Thomae's function:
+## Thomae's function:
 $$
 f ( x ) = \begin{cases}
 \frac 1 q, & x = \frac p q \in \QQ,~(p,q) = 1 \\
