@@ -85,11 +85,6 @@ $$
 
 "Archimedes-Riemann Theorem":
 $$
-f ~\text{integrable} \implies \exists \theset{P_i}_{i=1}^\infty ~\text{s.t.} \quad  U(f, P_i) - L(f, P_i) \to 0
-$$
-
-Equivalently,
-$$
 \forall \varepsilon,~\exists P(\varepsilon) \text{ s.t. } \quad U(f, P(\varepsilon)) - L(f, P(\varepsilon)) \leq \varepsilon
 $$
 
