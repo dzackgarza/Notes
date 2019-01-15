@@ -30,7 +30,9 @@ For each $i$, we can look at bounds on $f$ within the interval $[x_i, x_{i+1}]$
 
 Define $m_i, M_i$.
 
-Define $L(f, p), U(f,p)$.
+Define $L(f, P), U(f,P)$.
+
+Show that $L(f,P) \leq U(f, p)$
 
 Define refinement.
 
@@ -38,4 +40,8 @@ Show that refinement is monotone.
 
 Define upper and lower integrals.
 
-# 6.2: 
+Show that lower $\leq$ upper integral.
+
+# 6.2: ???
+
+Define integrability.
