@@ -69,7 +69,8 @@ $$
     $$
     and 
     $$\begin{align*}
-    \underline{\int_0^1} f &= \sup \theset{ \sum \inf f(x) (x_i - x_{i-1})}
+    \underline{\int_0^1} f &= \sup \theset{ \sum \inf f(x) (x_i - x_{i-1})} \\
+    
     \end{align*}
     $$
     <details markdown="1">
