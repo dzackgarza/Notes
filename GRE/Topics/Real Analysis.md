@@ -193,6 +193,8 @@ $$
 
 A continuous function on a compact space attains its extrema.
 
+continuous on the rational numbers and discontinuous on the irrational numbers
+
 ## Differentiability
 $$
 f'(p) \definedas \frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p}
