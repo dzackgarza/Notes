@@ -52,6 +52,8 @@ Define refinement.
 
 Show that refinement is monotone.
 
+Define Darboux Sum
+
 Define upper and lower integrals.
 
 Show that lower $\leq$ upper integral.
