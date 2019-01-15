@@ -26,4 +26,4 @@ $$
 Definition: Partition
 > Given an interval $[a,b]$, a **partition** is an ordered set $P = \theset{x_0, x_1, \ldots, x_n}$ of finitely many points such that $\forall~ 0\leq i \leq n$, we have $x_i \in [a,b]$ and $i \leq j \implies x_i \leq x_j$.
 
-For each $i$, we can look at the sup/inf of $f()
+For each $i$, we can look at bounds on $f$ within the interval $[x_i, x_{i+1}]$
