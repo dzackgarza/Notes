@@ -193,7 +193,7 @@ $$
 
 A continuous function on a compact space attains its extrema.
 
-continuous on the rational numbers and discontinuous on the irrational numbers
+continuous on $\QQ$ and discontinuous on the irrational numbers
 
 ## Differentiability
 $$
