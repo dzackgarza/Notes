@@ -72,7 +72,7 @@ $$
     \underline{\int_0^1} f &= \sup \theset{ \sum \inf f(x) (x_i - x_{i-1})} \\
     \inf f(x) = -x_i \implies \sum \inf f(x) (x_i - x_{i-1}) &= \sum -x_i (x_i - x_{i-1}) \\
     &< \sum \frac 1 2 (x_i - x_{i-1}) \\
-    &= 
+    &= \frac 1 2 \left( \frac 1 2 \right)
     \end{align*}
     $$
     <details markdown="1">
