@@ -170,7 +170,7 @@ $$
 
 ## Continuity
 
-Definition:
+Definitions: 
 $$
 f\text{ continuous } \iff \lim_{x \to p} f(x) = f(p)
 $$
