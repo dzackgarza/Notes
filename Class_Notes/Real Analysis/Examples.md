@@ -58,7 +58,9 @@ $$
 - ?
 - ?
 - Not integrable
-<details markdown="1"></details>
+<details markdown="1">
+<summary>
+</details>
 - ?
 
 ## The Thomae function:
