@@ -97,6 +97,13 @@ Question: when does the representation lift?
 
 Equivalently, is every bundle flat? No, but this is an open question when the base is a surface (i.e. for all we know, every representation could lift). Conjectured that for the Kodaira manifold, it is not flat. Big problem, because this is perhaps the simplest nonlinear connection.
 
+# Monodromy as a Complete Invariant
+
+Classifying space theory: there exists a (crazy) space $\mathrm{BDiff}$ such that
+$$
+\theset{} \iff 
+$$
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
