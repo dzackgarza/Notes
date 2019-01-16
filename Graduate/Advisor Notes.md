@@ -45,7 +45,7 @@ Proof:
 1. Construct a candidate set map bijection $\phi: \RR^2 \to \RR^2$ inducing $\Phi$.
 2. Apply Darboux' theorem: such a $\phi$ taking lines to lines and bijective is affine. (Note: many think this is the definition of affine!). Try to prove!
 
-Pick a point $p$, and any two lines $l_1, l_2$ going through it. Define $\Phi(p)$ as the intersection of $\Phi(l_1) \intersect \Phi(l_2$).
+Pick a point $p$, and any two lines $l_1, l_2$ going through it. Define $\Phi(p)$ as the intersection of $\Phi(l_1) \intersect \Phi(l_2$). Is it well-defined? can have 3 lines pairwise intersecting in the image, but could be 3 different points. Need an assumption (i.e. preserving triple intersections).
 
 Punchline: Helle's theorem, in any collection of convex subsets of $\RR^n$, if any $n+1$ intersect then all intersect.
 
