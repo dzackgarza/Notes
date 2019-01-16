@@ -42,7 +42,7 @@ One organizing problem: classify surface bundles over a fixed space up to
 - Biholomorphism
   - Total spaces are complex manifolds
 
-B.F. proved algorithmic computability for bundle iso, fiber
+B.F. proved algorithmic computability for bundle iso, homeo and even fiberwise homeo is unsolvable.
 
 ---
 
