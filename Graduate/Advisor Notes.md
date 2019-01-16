@@ -26,4 +26,4 @@ then for $n\geq 3$, $\Phi$ is induced by a unique affine map $\phi$.
 
 Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem) (related to rigidity of lattices, semi-simple Lie groups, etc); many have seen in real hyperbolic case, but in higher rank cases (more important) for lattices in $\SL(n, \RR)$, this is a key ingredient in the proof.
 
-A variation: suppose $\Phi: \theset{\text{lines in } \RR^n} \selfmap$ is a bijection. Let $n=2$
+A variation: suppose $\Phi: \theset{\text{lines in } \RR^n} \selfmap$ is a bijection. Look at $n=2$ case.
