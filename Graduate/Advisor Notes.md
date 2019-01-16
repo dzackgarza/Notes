@@ -94,4 +94,4 @@ $$
 \Aut(\Gamma_n) \cong \mathrm{Homeo}(M)
 $$
 
-Step 1:
+Step 1: Start looking at separation and nesting properties. $X \subset M$ is separating 
