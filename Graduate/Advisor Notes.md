@@ -128,6 +128,8 @@ $$
 \theset{\text{conjugacy classes of representations } \rho: \pi_b \to \mathrm{Mod}\Sigma_g}
 $$
 
+Why? For any $K(\pi, 1)$ space
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
