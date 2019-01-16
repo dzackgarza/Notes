@@ -23,4 +23,4 @@ $$
 
 then $\Phi$ is induced by a unique affine map $\phi$.
 
-Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem)
+Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem) (related to )
