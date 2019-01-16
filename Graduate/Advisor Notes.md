@@ -107,7 +107,7 @@ Step 3: Look at embedded isotopies, $H: I \to S$ (note that we can use the compa
 Getting the associated graph-theoretic property. Let $H: I \to S$ be an injective set map (want to say when it is continuous and embedded in terms of disjointness).
 
 Need four properties:
-- $H(r) \intersect H(s) \neq \emptyset \iff r=s$
-- $r\leq s \leq t \implies H(s)$ is between $H(r), H(t)$.
+- Disjointness: $H(r) \intersect H(s) \neq \emptyset \iff r=s$
+- Order-preserving: $r\leq s \leq t \implies H(s)$ is between $H(r), H(t)$.
 - No gaps: Every $\gamma \in S$ intersects some $H(t)$ for some $t\in I$.
 - Continuity/vary continuously:
