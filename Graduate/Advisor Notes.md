@@ -50,7 +50,7 @@ Why study $\Sigma_g$ bundles?
 2. For 3-manifolds: almost all (e.g. all hyperbolic) closed 3-manifolds are finitely covered by some $M_f^3$ surface bundle
    1. Famous conjecture of Thurston! Very recent
       1. His fields medal was finding a single hyperbolic structure on a closed 3-manifold fibering over the circle.
-      2. 
+3. FOr 4-manifolds: huge class of symplectic mfds.
 
 ---
 
