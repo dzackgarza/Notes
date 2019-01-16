@@ -23,4 +23,4 @@ $$
 
 then $\Phi$ is induced by a unique affine map $\phi$.
 
-Importance: 
+Importance: proving 
