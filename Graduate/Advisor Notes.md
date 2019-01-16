@@ -104,6 +104,8 @@ $$
 \theset{\text{iso classes } \Sigma_g \to E \to B} \iff [B, \mathrm{BDiff}^+ \Sigma_g] 
 $$
 
+
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
