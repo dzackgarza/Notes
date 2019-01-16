@@ -113,3 +113,6 @@ Need four properties:
 - Continuity/vary continuously: For all $\gamma \in S,~\theset{t \in I \mid H(t) \intersect \gamma \neq \emptyset}$ is closed.
 
 Step 4: $\Phi$ preserves foliated punctured discs.
+
+Not as easy as it looks - want to show that the image limits to a point, as opposed to e.g. a tree (don't have to wory about it limiting to a sphere due to the bijective correspondence.)
+
