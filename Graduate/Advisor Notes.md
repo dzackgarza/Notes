@@ -11,4 +11,4 @@
 
 - Work-in-progress!
 
-Geometric motivation: a map $\phi_n \RR^n \to \RR^n$ if there is a matrix in $\GL(n, \RR)$
+Geometric motivation: a map $\phi_n \RR^n \to \RR^n$ if there is a matrix $A \in \GL(n, \RR)$ such that $\forall \vector{v} \in \RR^n$
