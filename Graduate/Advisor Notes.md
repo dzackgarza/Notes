@@ -4,4 +4,5 @@
 
 29th Workshop in Geometric Topology, Oregon State University, June 29, 2012
 
-- 
+- Talk about the theory surface bundles.
+  - Not so much related to his personal work!
