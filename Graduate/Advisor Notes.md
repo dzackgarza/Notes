@@ -103,3 +103,5 @@ Step 1: Start looking at separation and nesting properties. $X \subset M$ is sep
 Step 2: $\Phi$ preserves "betweenness", i.e. $Y$ is between $X$ and $Z$ iff for any sphere intersecting both $X$ and $Z$ also intersects $Y$. (These preserved topological properties will be preserved under automorphisms of the graph!)
 
 Step 3: Look at embedded isotopies, $H: I \to S$ (note that we can use the compact-open on $S$) such that each $H_t \definedas H(t)$ is embedded and $\union_{t\in I} H_t(S^{n-1})$ is an embedded $S^{n-1} \cross I$ (i.e. embedded families of spheres with a preferred foliation by codimension 1 spheres.)
+
+Getting the associated graph-theoretic property. Let $H: I \to S$ be an injective set map (want to say it in terms of disjointness and )
