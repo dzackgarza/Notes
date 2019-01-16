@@ -95,3 +95,5 @@ $$
 $$
 
 Step 1: Start looking at separation and nesting properties. $X \subset M$ is separating $\iff \mathrm{Link}_{\Gamma_n}(X)$ is a join, where the Link of $X$ is the set of all vertices that are disjoint from $X$.
+
+*#todo What is a Link? What is a join?*
