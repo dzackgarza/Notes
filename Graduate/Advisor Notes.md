@@ -130,7 +130,7 @@ $$
 
 Why? For any $X = K(\pi, 1)$ space, $[\wait, X] \cong$ the conjugacy classes of $[\pi_1 \wait, \pi_1 X]$(?)
 
-
+Someone, this all comes down to uniformization.
 
 ---
 
