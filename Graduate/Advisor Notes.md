@@ -52,6 +52,7 @@ Why study $\Sigma_g$ bundles?
       1. His fields medal was finding a single hyperbolic structure on a closed 3-manifold fibering over the circle.
 3. FOr 4-manifolds: huge class of symplectic mfds.
    1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups
+   2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 
 ---
 
