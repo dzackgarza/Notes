@@ -46,6 +46,7 @@ One organizing problem: classify surface bundles over a fixed closed base manifo
 B.F. proved algorithmic computability for bundle iso, homeo and even fiberwise homeo is unsolvable.
 
 Why study $\Sigma_g$ bundles?
+1. The simplest nonlinear bundle theory (i.e. structure group is not just $\GL(n)$, it is $S^1$)
 
 ---
 
