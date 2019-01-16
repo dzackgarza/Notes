@@ -55,6 +55,8 @@ Why study $\Sigma_g$ bundles?
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 4. AG: moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
 
+The main invariant for these bundles
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
