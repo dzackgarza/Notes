@@ -104,7 +104,7 @@ $$
 \theset{\text{iso classes } \Sigma_g \to E \to B} \iff [B, \mathrm{BDiff}^+ \Sigma_g] 
 $$
 
-Model: general construction, just find any contractible space on which $\mathrm{Diff}$ acts freely and take the quotient. 
+Model: general construction, just find any contractible space on which $\mathrm{Diff}$ acts freely and take the quotient. One that works: $\mathrm{Emb}(\Sigma_g, \RR^\infty)$
 
 
 ---
