@@ -7,4 +7,4 @@
 - Talk about the theory surface bundles.
   - This talk: not so much related to his personal work!
 
-[Talk](https://www.youtube.com/watch?v=X0XBnKBKSDI)
+[Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
