@@ -43,4 +43,5 @@ Double intersections aren't quite enough, see figure 1. #todo add from phone
 
 Proof:
 1. Construct a candidate bijection $\phi: \RR^2 \to \RR^2$ inducing $\Phi$.
-2. Apply theorem from Darboux:
+2. Apply theorem from Darboux: such a $\phi$ taking lines to lines and bijective is affine. (Note: many think this is the definition of affine!)
+
