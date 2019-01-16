@@ -65,7 +65,7 @@ $$
 
 Take a homeomorphism to its homotopy class.
 
-> 
+> In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$
 
 ---
 
