@@ -138,7 +138,7 @@ How are you given the bundle? Can be given as triangulation, in which case one c
 
 Theorem: The conjugacy problem in $\mathrm{Mod} \Sigma_g$ solvable.
 
-
+But this does not solve the problem for homeo $\Sigma_g \to M^3 \to S_1$.
 
 ---
 
