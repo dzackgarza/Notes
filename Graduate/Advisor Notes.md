@@ -69,8 +69,8 @@ Theorem 1: A homeomorphism takes embedded spheres to embedded spheres.
 
 Suppose $\Phi: S \to S$ is bijective, and $\forall X, Y \in S$,
 $$
-X \intersect Y = \empty \iff \Phi(X) \intersect \Phi(Y)
+X \intersect Y = \emptyset \iff \Phi(X) \intersect \Phi(Y) = \emptyset
 $$
 
-
+then $\exists ! \phi: M \to M
 
