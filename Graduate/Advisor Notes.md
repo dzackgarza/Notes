@@ -13,7 +13,7 @@ $$
 \Sigma_g \to E \mapsvia{\pi} B
 $$
 
-(The base and total space will usually )
+(The base and total space will usually be compact manifolds, fiber is a surface)
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
