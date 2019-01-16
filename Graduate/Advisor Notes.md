@@ -15,7 +15,10 @@ $$
 
 (Fiber bundle where the base and total space will usually be compact manifolds, fiber is a surface)
 
-For any $f\in \mathrm{Diff}(\Sigma_g)$, take cylinder on $\Sigma_g$ and glue ends via $f$ to obtain a 
+For any $f\in \mathrm{Diff}(\Sigma_g)$, take cylinder on $\Sigma_g$ and glue ends via $f$ to obtain a 3-manifold and the surface bundle 
+$$
+\Sigma_g \to M_f^3 \mapsvia{\pi} S^1
+$$
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
