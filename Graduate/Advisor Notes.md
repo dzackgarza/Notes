@@ -36,3 +36,5 @@ L_1 \intersect L_2 \intersect L_3 \neq \emptyset \iff \Phi(L_1) \intersect \Phi(
 $$
 
 then $\Phi$ is induced by an affine map $\phi$.
+
+Remark: false if $\Phi$ only preserves double points (and not triple points).
