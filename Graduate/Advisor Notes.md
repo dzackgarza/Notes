@@ -72,5 +72,5 @@ $$
 X \intersect Y = \emptyset \iff \Phi(X) \intersect \Phi(Y) = \emptyset
 $$
 
-then $\exists ! \phi: M \to M
+then there exists a unique homemorphism  $\phi: M \to M
 
