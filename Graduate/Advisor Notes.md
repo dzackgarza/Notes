@@ -22,7 +22,7 @@ $$
 
 Every 3-manifold that fibers over the circle is of this form! Why?Can remove a point from $S^1$ to get a trivial bundle.
 
-Another way to build bundles: take a representation $\rho \pi_1 B \to \mathrm{Diff}(\Sigma_g)$, let $E = \tilde B \cross \Sigma_g / (x,y) \sim (g.x, \rho(g)(y)$ (standard construction)
+Another way to build bundles: take a representation $\rho \pi_1 B \to \mathrm{Diff}(\Sigma_g)$, let $E = \tilde B \cross \Sigma_g / (x,y) \sim (g.x, \rho(g)(y)$ (standard construction) where $\tilde B$ is the universal cover of $B$.
 
 
 ---
