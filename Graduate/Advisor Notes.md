@@ -52,5 +52,5 @@ Punchline: Helle's theorem, in any collection of convex subsets of $\RR^n$, if a
 # The Topology Side
 feat. Dan Margalit
 
-Theorems they proved
+Theorems they proved:
 
