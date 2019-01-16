@@ -72,7 +72,7 @@ $$
 \rho: \pi_1 B \to \mathrm{Mod} \Sigma_g
 $$
 
-Look at LES in homotopy
+Look at LES in homotopy, the map $\pi_2 B \to \pi_1 F$ has image in the center
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
