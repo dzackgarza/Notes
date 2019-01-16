@@ -75,6 +75,9 @@ $$
 Look at LES in homotopy, the map $\pi_2 B \to \pi_1 F$ has image in the center, but $\pi_a \Sigma_g$ is centerless, yielding a SES.
 
 For any SES of groups, you can get a representation $\pi_1 B \to \mathrm{Out} \pi_1 F$
+
+
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
