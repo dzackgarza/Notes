@@ -138,6 +138,8 @@ How are you given the bundle? Can be given as triangulation, in which case one c
 
 Theorem: The conjugacy problem in $\mathrm{Mod} \Sigma_g$ solvable.
 
+
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
