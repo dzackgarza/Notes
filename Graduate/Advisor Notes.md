@@ -111,3 +111,5 @@ Need four properties:
 - Order-preserving: $r\leq s \leq t \implies H(s)$ is between $H(r), H(t)$.
 - No gaps: Every $\gamma \in S$ intersects some $H(t)$ for some $t\in I$.
 - Continuity/vary continuously: For all $\gamma \in S,~\theset{t \in I \mid H(t) \intersect \gamma \neq \emptyset}$ is closed.
+
+Step 4:
