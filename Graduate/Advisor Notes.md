@@ -93,3 +93,4 @@ Useful to encode disjointness: let $\Gamma_n$ be a graph with vertices for each 
 $$
 \Aut(\Gamma_n) \cong \mathrm{Homeo}(M)
 $$
+
