@@ -6,6 +6,7 @@
 
 - Talk about the theory surface bundles.
   - This talk: not so much related to his personal work!
+  - Will revisit
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
@@ -23,4 +24,4 @@ $$
 
 then $\Phi$ is induced by a unique affine map $\phi$.
 
-Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem) (related to rigidity of lattices, semi-simple Lie groups, etc)
+Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem) (related to rigidity of lattices, semi-simple Lie groups, etc); 
