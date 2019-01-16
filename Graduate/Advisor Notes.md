@@ -94,3 +94,4 @@ $$
 \Aut(\Gamma_n) \cong \mathrm{Homeo}(M)
 $$
 
+Step 1:
