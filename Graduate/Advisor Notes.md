@@ -56,7 +56,7 @@ Why study $\Sigma_g$ bundles?
 4. AG: $\mathcal M$ moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
 
 The main invariant for these bundles: The Monodromy Representation
-Let $\mathrm{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\pi_0(\mathrm{Diff}^+ \Sigma_g)$) (group og homotopy/isotopy classes of diffeos on the surface).
+Let $\mathrm{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\pi_0(\mathrm{Diff}^+ \Sigma_g)$) (group of homotopy/isotopy classes of diffeos on the surface).
 
 Representation from earlier can project down:
 $$
