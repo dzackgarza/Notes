@@ -4,5 +4,4 @@
 
 29th Workshop in Geometric Topology, Oregon State University, June 29, 2012
 
-
 - 
