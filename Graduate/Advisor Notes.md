@@ -53,7 +53,7 @@ Why study $\Sigma_g$ bundles?
 3. FOr 4-manifolds: huge class of symplectic mfds.
    1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
-4. AG: moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
+4. AG: $\mathcal M$ moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
 
 The main invariant for these bundles: The Monodromy Representation
 Let $\mathrm{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\pi_0(\mathrm{Diff}^+ \Sigma_g)$) (group og homotopy/isotopy classes of diffeos on the surface).
