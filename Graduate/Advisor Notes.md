@@ -54,5 +54,5 @@ feat. Dan Margalit
 
 Theorems they proved:
 
-Fix a manifold $M$, let $S = \mathrm{Emb}(S^{n-1}, M) / \~$
+Fix a manifold $M$, let $S = \mathrm{Emb}(S^{n-1}, M) / \mathrm{Diff}(S^{n-1})$
 
