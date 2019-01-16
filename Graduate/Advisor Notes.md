@@ -132,7 +132,7 @@ Why? For any $X = K(\pi, 1)$ space, $[\wait, X] \cong$ the conjugacy classes of 
 
 Someone, this all comes down to uniformization.
 
-> Note: reduces problem of classification up to bundle isomorphism (solved in general by B.F.)
+> Note: reduces problem of classification up to bundle isomorphism (solved in general by B.F.) to a group theory problem immediately
 
 ---
 
