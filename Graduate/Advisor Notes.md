@@ -74,4 +74,4 @@ $$
 
 then there exists a unique homemorphism  $\phi: M \selfmap$ inducing $\Phi$.
 
-Need manifold assumption - counterexample, take $Z$ to be two discs glued at two distinct points. Then $\exists \theset{\text{loops in } Z}\selfmap$ bijective, preservces
+Need manifold assumption - counterexample, take $Z$ to be two discs glued at two distinct points. Then $\exists \theset{\text{loops in } Z}\selfmap$ bijective, preserves disjointness, but is not induced by any homeomorphism.
