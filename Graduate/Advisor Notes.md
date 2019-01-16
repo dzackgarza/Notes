@@ -58,7 +58,10 @@ Why study $\Sigma_g$ bundles?
 The main invariant for these bundles: The Monodromy Representation
 Let $\mathrm{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\pi_0(\mathrm{Diff}^+ \Sigma_g)$) (group og homotopy/isotopy classes of diffeos on the surface).
 
-
+Representation from earlier can project down:
+$$
+\pi_1 B \to \mathrm{Diff}^+ \Sigma_g \mapsvia{\pi}
+$$
 
 ---
 
