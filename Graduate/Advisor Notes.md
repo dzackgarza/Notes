@@ -95,7 +95,7 @@ Question: when does the representation lift?
 \end{document}
 ```
 
-Equivalently, is every bundle flat? No, but this is an open question when the base is a surface. Conjectured that for the Kodaira manifold, it is not flat. Big problem, because this is perhaps the simplest nonlinear connection.
+Equivalently, is every bundle flat? No, but this is an open question when the base is a surface (i.e. for all we know, every representation could lift). Conjectured that for the Kodaira manifold, it is not flat. Big problem, because this is perhaps the simplest nonlinear connection.
 
 ---
 
