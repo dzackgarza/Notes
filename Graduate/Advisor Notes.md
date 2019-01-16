@@ -28,7 +28,7 @@ Generalizes previous example: take real line cross surface and mod out by deck t
 
 Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat connections.
 
-Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$
+Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$.
 
 
 ---
