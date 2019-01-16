@@ -83,3 +83,5 @@ Theorem 2: Suppose you have a bijective set map $\Phi: \theset{\text{loops in } 
 $$
 L(\gamma_1, \gamma_2) \neq 0 \implies L(\Phi(\gamma_1), \Phi(\gamma_2)) \neq 0
 $$
+
+Then $\Phi$ is induced by a unique homeomorphism $\phi$.
