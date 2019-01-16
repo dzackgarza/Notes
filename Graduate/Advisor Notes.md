@@ -140,6 +140,8 @@ Theorem: The conjugacy problem in $\mathrm{Mod} \Sigma_g$ solvable.
 
 But this does not solve the problem for homeo $\Sigma_g \to M^3 \to S_1$.
 
+Why? Relates back to a paper of Thurston's
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
