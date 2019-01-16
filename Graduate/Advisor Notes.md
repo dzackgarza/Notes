@@ -8,10 +8,12 @@
   - This talk: not so much related to his personal work!
   - Will revisit
 
-Throughought: $\Sigma_g$ a connected oriented $g\geq 2$ surface, will look at $\Sigma_g bundles$ given by 
+Throughought: $\Sigma_g$ a connected oriented $g\geq 2$ surface, will look at $\Sigma_g\dash$ bundles given by 
 $$
 \Sigma_g \to E \mapsvia{\pi} B
 $$
+
+
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
