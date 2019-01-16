@@ -94,4 +94,4 @@ $$
 \Aut(\Gamma_n) \cong \mathrm{Homeo}(M)
 $$
 
-Step 1: Start looking at separation and nesting properties. $X \subset M$ is separating $\iff$ 
+Step 1: Start looking at separation and nesting properties. $X \subset M$ is separating $\iff \mathrm{Link}_{\Gamma_n}(X)$
