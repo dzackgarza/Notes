@@ -75,4 +75,4 @@ $$
 then there exists a unique homemorphism  $\phi: M \selfmap$ inducing $\Phi$.
 
 Need manifold assumption - counterexample, take $Z$ to be two discs glued at two distinct points. Then $\exists \theset{\text{loops in } Z}\selfmap$ bijective, preserves disjointness, but is not induced by any homeomorphism.
-Take any homeomorphism of a disc $\phi$ such that $\phi^2 = \id$ that exchanges the glued points.
+Take any homeomorphism of a disc $\phi$ such that $\phi^2 = \id$ that exchanges the glued points. Then do the identity on the other disc.
