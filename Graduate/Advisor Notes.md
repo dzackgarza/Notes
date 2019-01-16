@@ -79,4 +79,4 @@ Take any homeomorphism of a disc $\phi$ such that $\phi^2 = \id$ that exchanges 
 
 Turns out this counterexample doesn't quite work! Take a figure 8 at a glue point extending into both discs, the homeomorphism will separate it into two loops.
 
-Theorem 2: Suppose you have a bijective set map $\Phi: \theset{\text{}}
+Theorem 2: Suppose you have a bijective set map $\Phi: \theset{\text{loops in } \RR^3}$ that preserves the linking number.
