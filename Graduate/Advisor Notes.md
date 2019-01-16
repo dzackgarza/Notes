@@ -15,7 +15,7 @@ $$
 
 (Fiber bundle where the base and total space will usually be compact manifolds, fiber is a surface)
 
-
+For any $f\in \mathrm{Diff}(\Sigma_g$, 
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
