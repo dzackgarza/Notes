@@ -29,3 +29,5 @@ Much easier theorem: if you start with a bijective set map $\RR^n \selfmap$ whic
 Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem) (related to rigidity of lattices, semi-simple Lie groups, etc); many have seen in real hyperbolic case, but in higher rank cases (more important) for lattices in $\SL(n, \RR)$, this is a key ingredient in the proof.
 
 A variation: suppose $\Phi: \theset{\text{lines in } \RR^n} \selfmap$ is a bijection. Look at $n=2$ case.
+
+Suppose that for all distinct lines $L_1, L_2, L_3$, then triple intersections are preserved
