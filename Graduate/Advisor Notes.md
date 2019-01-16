@@ -18,5 +18,5 @@ In other words, a composition of a linear map and a translation. Takes lines to 
 Fundamental Theorem of Affine Geometry:
 Suppose you have a set map that is a bijection $\Phi: \theset{\text{affine subspaces of } \RR^n} \selfmap$ then
 $$
-P_1 \subset P_2 \implies \Phi(P_1)
+P_1 \subseteq P_2 \implies \Phi(P_1) \subseteq \Phi(P_2)
 $$
