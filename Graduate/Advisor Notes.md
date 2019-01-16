@@ -85,3 +85,5 @@ L(\gamma_1, \gamma_2) \neq 0 \implies L(\Phi(\gamma_1), \Phi(\gamma_2)) \neq 0
 $$
 
 Then $\Phi$ is induced by a unique homeomorphism $\phi: \RR^3 \to \RR^3$.
+
+Proof outline of theorem 1:
