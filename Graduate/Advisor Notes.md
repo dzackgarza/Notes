@@ -65,7 +65,7 @@ $$
 
 Take a homeomorphism to its homotopy class, Mod is finitely generated.
 
-> In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$, and this is a $K(\pi_1)$ space
+> In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
 
 ---
 
