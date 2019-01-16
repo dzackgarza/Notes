@@ -117,3 +117,8 @@ Step 4: $\Phi$ preserves foliated punctured discs.
 Not as easy as it looks - want to show that the image limits to a point, as opposed to e.g. a tree (don't have to wory about it limiting to a sphere due to the bijective correspondence.)
 
 Uses limiting families of sphere to detect separation, linking, etc!
+
+Possible extensions:
+- What is a symplectomorphism?
+- What is a covering map?
+- (Just go through Munkres book and list the maps!)
