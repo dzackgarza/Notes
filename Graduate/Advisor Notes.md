@@ -116,7 +116,7 @@ Some serious math, theorem of Eels-Earle 1969:
 
 Corrolary: we care about $\mathrm{Bdiff}$, classifying space theory doesn't really see contractible stuff. So:
 $$
-\mathrm{Bdiff}
+\mathrm{Bdiff}^+ \Sigma_g \
 $$
 
 ---
