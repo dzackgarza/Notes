@@ -37,6 +37,7 @@ One organizing problem: classify surface bundles over a fixed space up to
 - Diffeo
 - Homotopy-equivalence
 - Fiberwise homeo (homeo that takes fiber to fiber)
+- Symplectomorphism
 
 ---
 
