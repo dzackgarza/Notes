@@ -63,6 +63,10 @@ $$
 \pi_1 B \to \mathrm{Diff}^+ \Sigma_g \mapsvia{\pi} \mathrm{Mod(\Sigma_g)}
 $$
 
+Take a homeomorphism to its homotopy class.
+
+> 
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
