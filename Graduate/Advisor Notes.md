@@ -20,6 +20,7 @@ $$
 \Sigma_g \to M_f^3 \mapsvia{\pi} S^1
 $$
 
+
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
 - Work-in-progress!
