@@ -109,7 +109,7 @@ Model: general construction, just find any contractible space on which $\mathrm{
 Not useful yet, because we don't know what $\mathrm{BDiff}$ is.
 
 Some serious math, theorem of Eels-Earle 1969:
-- For surfaces $g\geq 2$, $\mathrm{Diff}_0(\Sigma_g)$ (the diffeos isotopic to the identity is homotopy-equivalent to a point!
+- For surfaces $g\geq 2$, $\mathrm{Diff}_0(\Sigma_g)$ (the diffeos isotopic to the identity) is homotopy-equivalent to a point!
     - Note: can write mapping class group as Diff mod the path-component of the identity (i.e. it's the group of path components)
     - Uses Beltrami equation, measurable Riemann mapping theorem, solving PDEs, some serious Math!
     - $\mathrm{Diff}_0$ acts on the 
