@@ -123,6 +123,10 @@ Note that the last equality follows because there's no topology on the mapping c
 
 Huge conclusion:
 
+$$
+\theset{\text{iso classes of } \Sigma_g\dash\text{bundles over } B} \iff
+$$
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
