@@ -89,3 +89,4 @@ Then $\Phi$ is induced by a unique homeomorphism $\phi: \RR^3 \to \RR^3$.
 # Proof outline of theorem 1:
 Given $\Phi:S \to S$ a bijection preserving disjointness, need to construct a unique $\phi: M \selfmap$ inducing $\Phi$.
 
+Useful to encode disjointness: let $\Gamma_n$ be a graph with vertices for $x\in S$ and edges
