@@ -40,6 +40,8 @@ One organizing problem: classify surface bundles over a fixed space up to
   - Homeo that takes fiber to fiber
 - Symplectomorphism
 - Biholomorphism
+  - Total spaces are complex manifolds
+
 
 ---
 
