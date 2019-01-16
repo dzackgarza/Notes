@@ -98,4 +98,4 @@ Step 1: Start looking at separation and nesting properties. $X \subset M$ is sep
 
 *#todo What is a Link? What is a join?*
 
-Note: technique is listing 
+Note: technique is listing topological properties that are true, then creating a dictionary into properties of your graph.
