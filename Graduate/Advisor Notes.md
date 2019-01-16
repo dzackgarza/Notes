@@ -1,6 +1,24 @@
-# Benson Farb
+**Benson Farb**
 
-[Part 2: Surface bundles, mapping class groups, moduli spaces, and cohomology](https://www.youtube.com/watch?v=E_Ly2NWX1g8)
+- [Part 2: Surface bundles, mapping class groups, moduli spaces, and cohomology](#part-2-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology)
+  - [Monodromy as a Complete Invariant](#monodromy-as-a-complete-invariant)
+  - [Characteristic Classes](#characteristic-classes)
+  - [The "Signature Cocycle"](#the-%22signature-cocycle%22)
+  - [Another Cocycle](#another-cocycle)
+- [Part 3: Reconstruction problems in geometry and topology](#part-3-reconstruction-problems-in-geometry-and-topology)
+  - [Fundamental Theorem of Affine Geometry](#fundamental-theorem-of-affine-geometry)
+  - [Importance](#importance)
+  - [The Topology Side](#the-topology-side)
+  - [Theorem 1: A homeomorphism takes embedded spheres to embedded spheres.](#theorem-1-a-homeomorphism-takes-embedded-spheres-to-embedded-spheres)
+  - [Theorem 2: A Homeomorphism takes loops to loops](#theorem-2-a-homeomorphism-takes-loops-to-loops)
+  - [Proof Outline of Theorem 1](#proof-outline-of-theorem-1)
+    - [Step 1](#step-1)
+    - [Step 2](#step-2)
+    - [Step 3](#step-3)
+    - [Step 4](#step-4)
+
+# Part 2: Surface bundles, mapping class groups, moduli spaces, and cohomology
+[Link to Video](https://www.youtube.com/watch?v=E_Ly2NWX1g8)
 
 29th Workshop in Geometric Topology, Oregon State University, June 29, 2012
 
@@ -97,7 +115,7 @@ Question: when does the representation lift?
 
 Equivalently, is every bundle flat? No, but this is an open question when the base is a surface (i.e. for all we know, every representation could lift). Conjectured that for the Kodaira manifold, it is not flat. Big problem, because this is perhaps the simplest nonlinear connection.
 
-# Monodromy as a Complete Invariant
+## Monodromy as a Complete Invariant
 
 Classifying space theory: there exists a (crazy) space $\mathrm{BDiff}^+\Sigma_g$ such that
 $$
@@ -140,11 +158,86 @@ Theorem: The conjugacy problem in $\mathrm{Mod} \Sigma_g$ solvable.
 
 But this does not solve the problem for homeo $\Sigma_g \to M^3 \to S_1$.
 
-Why? Relates back to a paper of Thurston's, theory of "The Thurston Norm"
+Why? Relates back to a paper of Thurston's, theory of the Thurston Norm, from paper "A norm on the Homology of 3-manifolds": there exist many 3-manifolds fibering over the circle (as long as $\beta_1(M^3) > 2)$ such that $M^3$ fibers $\Sigma_h \to M^3 \to S^1$ for infinitely many $h$, but finitely many for any fixed $h$.
+
+How do you get an invariant out of this? Given two 3-manifolds that fiber over the circle, each with a monodromy in the mapping class group - are they conjugate in the mapping class group? If so, then the manifolds are the same. If not, the bundles are not isomorphic, BUT they could be homeomorphic in some accidental different way.
+
+How to solve: the Thurston norm is computable. Need to enumerate all the ways of fibering, and find the minimal genus fibering. (Should be the same!) Check how many ways there are of fibering. Then check, for each fibering, are the monodromies the same? At least one needs to be the same to be homeomorphic.
+
+## Characteristic Classes
+
+For suitably nice spaces, given by a mapping
+
+$$
+\Sigma_g \to E \mapsvia{\pi} B \iff c(E \mapsvia{\pi} B) \in H^i(B)
+$$
+
+that is natural with respect to pullbacks: given
+
+```latex {cmd=true, hide=true, run_on_save=true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+E' \arrow[rr, "\tilde f"] \arrow[dd, "\pi'"] &  & E \arrow[dd, "\pi"] \\
+ &  &  \\
+B' \arrow[rr, "f" description] &  & B
+\end{tikzcd}
+\end{document}
+```
+
+require that $\tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B))$.
+
+Any characteristic class is just an element of $H^*(\mathrm{BDiff}^+ \Sigma_g) = H^*(\mathrm{Mod} \Sigma_g)$, since every bundle will be a pullback of the universal bundle.
+
+Lots of papers about the "stable cohomology" of the mapping class group, given by taking $g$ big enough. We know $\chi$ of the mapping class group, it grows superexponentially and we know polynomially-many. No known unstable classes in genus 5 or higher!!
+
+What do we know?
+- $H^1(\mathrm{Mod} \Sigma_g; \QQ) = 0$
+- Elements of $H^2(\mathrm{Mod} \Sigma_g; \QQ)$:
+
+## The "Signature Cocycle"
+
+Any 2-cycle (for any space) will be homologous to the image of a map $f$ of a surface into that space. Given blah, pullback the bundle over $\mathrm{BDiff}$:
+```latex {cmd=true, hide=true, run_on_save=true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ &  & \Sigma_g \arrow[rr] &  & T \arrow[dd] \\
+ &  &  &  &  \\
+\Sigma_g \arrow[rr] \arrow[rruu, dotted] &  & M^4 \arrow[dd] \arrow[rruu, dotted] &  & \mathrm{BDiff}^+ \Sigma_g \\
+ &  &  &  &  \\
+ &  & \Sigma_h \arrow[rruu, "f" description] &  & 
+\end{tikzcd}
+\end{document}
+```
+Take the signature of $M_4$ (where you use the intersection pairing on $H_2$, take the signature of that form). Using Novikov additivity for signature, this satisfies the cocycle condition and finally yields a number!
+
+## Another Cocycle
+
+Look at the vertical bundle over $T$, you get $\RR^2 \to E \to T$.
+> Note: can see this bundle by looking at moduli space of Riemann surfaces $\mathcal{M}_g$, covered by $\mathcal{M}_g^*$ with fiber $\Sigma_g$. There is a vertical bundle over this, everything that is tangent to the fiber, which is a 2-plane bundle over the covering space.
+
+So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so $e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\mathrm{Mod} \Sigma_g; \QQ)$. But that
+
+Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
+
+Theorem (Harrer, 1980s): $H^2(\mathrm{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional! So all of these classes are scalar multiples of eachother - and in fact, sometimes not rational multiples, so sometimes you get interesting number-theoretic quantities like $\frac {\pi^2} 6$.
+
+See book with Dan Margalit - all of this lives in the group $\mathrm{Mod} \Sigma_g \injects \mathrm{Homeo}^+(S^1)$
 
 ---
 
-[Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
+# Part 3: Reconstruction problems in geometry and topology
+
+[Link to Video](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
 - Work-in-progress!
 
@@ -152,7 +245,7 @@ Geometric motivation: a map $\phi \RR^n \to \RR^n$ if there is a matrix $A \in \
 
 In other words, a composition of a linear map and a translation. Takes lines to lines, planes to planes.
 
-Fundamental Theorem of Affine Geometry:
+## Fundamental Theorem of Affine Geometry
 Suppose you have a set map that is a bijection $\Phi: \theset{\text{affine subspaces of } \RR^n, \dim \geq 0} \selfmap$ which satisfies
 $$
 P_1 \subseteq P_2 \implies \Phi(P_1) \subseteq \Phi(P_2),
@@ -162,7 +255,9 @@ then for $n\geq 3$, $\Phi$ is induced by a unique affine map $\phi$.
 
 Much easier theorem: if you start with a bijective set map $\RR^n \selfmap$ which takes lines to lines, then it's affine. (Darboux 1800s)
 
-Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem) (related to rigidity of lattices, semi-simple Lie groups, etc); many have seen in real hyperbolic case, but in higher rank cases (more important) for lattices in $\SL(n, \RR)$, this is a key ingredient in the proof.
+## Importance
+
+Proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem) (related to rigidity of lattices, semi-simple Lie groups, etc); many have seen in real hyperbolic case, but in higher rank cases (more important) for lattices in $\SL(n, \RR)$, this is a key ingredient in the proof.
 
 A variation: suppose $\Phi: \theset{\text{lines in } \RR^n} \selfmap$ is a bijection. Look at $n=2$ case.
 
@@ -185,7 +280,7 @@ Pick a point $p$, and any two lines $l_1, l_2$ going through it. Define $\Phi(p)
 
 Punchline: Helle's theorem, in any collection of convex subsets of $\RR^n$, if any $n+1$ intersect then all intersect.
 
-# The Topology Side
+## The Topology Side
 feat. Dan Margalit
 
 Theorems they proved:
@@ -201,7 +296,7 @@ $$
 S = \theset{ \text{subsets of } M \text{ homeomorphic to } S^{n-1} }.
 $$
 
-# Theorem 1: A homeomorphism takes embedded spheres to embedded spheres. 
+## Theorem 1: A homeomorphism takes embedded spheres to embedded spheres. 
 
 Suppose $\Phi: S \to S$ is bijective, and $\forall X, Y \in S$,
 $$
@@ -215,14 +310,16 @@ Take any homeomorphism of a disc $\phi$ such that $\phi^2 = \id$ that exchanges 
 
 Turns out this counterexample doesn't quite work! Take a figure 8 at a glue point extending into both discs, the homeomorphism will separate it into two loops.
 
-# Theorem 2: Suppose you have a bijective set map $\Phi: \theset{\text{loops in } \RR^3}$ that preserves "linking", i.e. 
+## Theorem 2: A Homeomorphism takes loops to loops
+
+Suppose you have a bijective set map $\Phi: \theset{\text{loops in } \RR^3}$ that preserves "linking", i.e. 
 $$
 L(\gamma_1, \gamma_2) \neq 0 \implies L(\Phi(\gamma_1), \Phi(\gamma_2)) \neq 0
 $$
 
 Then $\Phi$ is induced by a unique homeomorphism $\phi: \RR^3 \to \RR^3$.
 
-# Proof outline of theorem 1:
+## Proof Outline of Theorem 1
 Given $\Phi:S \to S$ a bijection preserving disjointness, need to construct a unique $\phi: M \selfmap$ inducing $\Phi$.
 
 Useful to encode disjointness: let $\Gamma_n$ be a graph with vertices for each $X\in S$ and edges connecting $X,Y \iff X\intersect Y = \emptyset$. Can restate the theorem as
@@ -230,15 +327,21 @@ $$
 \Aut(\Gamma_n) \cong \mathrm{Homeo}(M)
 $$
 
-Step 1: Start looking at separation and nesting properties. $X \subset M$ is separating $\iff \mathrm{Link}_{\Gamma_n}(X)$ is a join, where the Link of $X$ is the set of all vertices that are disjoint from $X$.
+### Step 1 
+
+Start looking at separation and nesting properties. $X \subset M$ is separating $\iff \mathrm{Link}_{\Gamma_n}(X)$ is a join, where the Link of $X$ is the set of all vertices that are disjoint from $X$.
 
 *#todo What is a Link? What is a join?*
 
 > Note: technique is listing topological properties that are true, then creating a dictionary  from topological properties of the manifold into properties of your graph. Similar to when working on [Tit's Buildings](https://en.wikipedia.org/wiki/Building_(mathematics)#Bruhat-Tits_trees_with_complex_multiplication).
 
-Step 2: $\Phi$ preserves "betweenness", i.e. $Y$ is between $X$ and $Z$ iff for any sphere intersecting both $X$ and $Z$ also intersects $Y$. (These preserved topological properties will be preserved under automorphisms of the graph!)
+### Step 2 
 
-Step 3: Look at embedded isotopies, $H: I \to S$ (note that we can use the compact-open on $S$) such that each $H_t \definedas H(t)$ is embedded and $\union_{t\in I} H_t(S^{n-1})$ is an embedded $S^{n-1} \cross I$ (i.e. embedded families of spheres with a preferred foliation by codimension 1 spheres.)
+$\Phi$ preserves "betweenness", i.e. $Y$ is between $X$ and $Z$ iff for any sphere intersecting both $X$ and $Z$ also intersects $Y$. (These preserved topological properties will be preserved under automorphisms of the graph!)
+
+### Step 3 
+
+Look at embedded isotopies, $H: I \to S$ (note that we can use the compact-open on $S$) such that each $H_t \definedas H(t)$ is embedded and $\union_{t\in I} H_t(S^{n-1})$ is an embedded $S^{n-1} \cross I$ (i.e. embedded families of spheres with a preferred foliation by codimension 1 spheres.)
 
 Getting the associated graph-theoretic property. Let $H: I \to S$ be an injective set map (want to say when it is continuous and embedded in terms of disjointness).
 
@@ -248,7 +351,9 @@ Need four properties:
 - No gaps: Every $\gamma \in S$ intersects some $H(t)$ for some $t\in I$.
 - Continuity/vary continuously: For all $\gamma \in S,~\theset{t \in I \mid H(t) \intersect \gamma \neq \emptyset}$ is closed.
 
-Step 4: $\Phi$ preserves foliated punctured discs.
+### Step 4
+
+$\Phi$ preserves foliated punctured discs.
 
 Not as easy as it looks - want to show that the image limits to a point, as opposed to e.g. a tree (don't have to wory about it limiting to a sphere due to the bijective correspondence.)
 
