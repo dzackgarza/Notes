@@ -93,6 +93,9 @@ Question: when does the representation lift?
 \pi_1 B \arrow[rr] \arrow[rruu, "?" description, dotted] &  & \mathrm{Mod} \Sigma_g
 \end{tikzcd}
 \end{document}
+```
+
+Equivalently, is every bundle flat? No, but this is an open question when the base is a surface.
 
 ---
 
