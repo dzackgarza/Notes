@@ -108,4 +108,5 @@ Getting the associated graph-theoretic property. Let $H: I \to S$ be an injectiv
 
 Need four properties:
 - $H(r) \intersect H(s) \neq \emptyset \iff r=s$
-- $r\leq s \leq t \implies $H(s)
+- $r\leq s \leq t \implies H(s)$ is between $H(r), H(t)$.
+- 
