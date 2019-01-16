@@ -125,7 +125,7 @@ Huge conclusion:
 
 $$
 \theset{\text{iso classes of } \Sigma_g\dash\text{bundles over } B} \iff
-\theset{\text{conjugacy classes of representations }}
+\theset{\text{conjugacy classes of representations } \rho: \pi_b \to \mathrm{Mod}\Sigma_g}
 $$
 
 ---
