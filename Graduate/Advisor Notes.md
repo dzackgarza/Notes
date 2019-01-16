@@ -76,7 +76,9 @@ Look at LES in homotopy, the map $\pi_2 B \to \pi_1 F$ has image in the center, 
 
 For any SES of groups, you can get a representation $\pi_1 B \to \mathrm{Out} \pi_1 F$
 
-Can produce a map $\mathrm{Mod} \Sigma_g \to \mathrm{Out}\pi_1 \Sigma_g$ by applying a homeomorphism to $\pi_1$
+Can produce a map $\mathrm{Mod} \Sigma_g \to \mathrm{Out}\pi_1 \Sigma_g$ by applying a homeomorphism to $\pi_1$, might move the basepoint, but these are isomorphic groups (classical theorem).
+
+
 
 ---
 
