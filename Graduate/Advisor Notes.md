@@ -132,6 +132,8 @@ Why? For any $X = K(\pi, 1)$ space, $[\wait, X] \cong$ the conjugacy classes of 
 
 Someone, this all comes down to uniformization.
 
+> Note: reduces problem of classification up to bundle isomorphism (solved in general by B.F.)
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
