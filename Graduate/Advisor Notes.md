@@ -134,7 +134,7 @@ Someone, this all comes down to uniformization.
 
 > Note: Reduces problem of classification up to bundle isomorphism (solved in general by B.F.) to a group theory problem immediately.
 
-How are you given the bundle? Can be given as triangulation, in which case one can produce the monodromy map (huge number of steps though! $e^e^{e^{\cdots}}$).
+How are you given the bundle? Can be given as triangulation, in which case one can produce the monodromy map (huge number of steps though! $e^{e^{e^{\cdots}}}$).
 
 ---
 
