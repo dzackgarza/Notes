@@ -38,3 +38,4 @@ $$
 then $\Phi$ is induced by an affine map $\phi$.
 
 Remark: false if $\Phi$ only preserves double points (and not triple points).
+
