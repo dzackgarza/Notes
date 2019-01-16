@@ -63,7 +63,7 @@ $$
 \pi_1 B \to \mathrm{Diff}^+ \Sigma_g \mapsvia{\pi} \mathrm{Mod(\Sigma_g)}
 $$
 
-Take a homeomorphism to its homotopy class.
+Take a homeomorphism to its homotopy class, Mod is finitely generated.
 
 > In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$
 
