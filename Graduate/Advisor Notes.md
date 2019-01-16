@@ -47,5 +47,5 @@ Proof:
 
 Pick a point $p$, and any two lines going through it.
 
-Punchline: Helle's theorem
+Punchline: Helle's theorem, any $n+1$ convex subsets of $\RR^n$
 
