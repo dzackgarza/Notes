@@ -80,7 +80,12 @@ Can produce a map $\mathrm{Mod} \Sigma_g \to \mathrm{Out}\pi_1 \Sigma_g$ by appl
 
 Question: when does the representation lift?
 ```{latex}
-
+\begin{tikzcd}
+ &  & \mathrm{Diff}^+ \Sigma_g \arrow[dd] \\
+ &  &  \\
+\pi_1 B \arrow[rr] \arrow[rruu, "?" description, dotted] &  & \mathrm{Mod} \Sigma_g
+\end{tikzcd}
+```
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
