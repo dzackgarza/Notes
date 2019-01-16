@@ -17,7 +17,7 @@ Geometric motivation: a map $\phi \RR^n \to \RR^n$ if there is a matrix $A \in \
 In other words, a composition of a linear map and a translation. Takes lines to lines, planes to planes.
 
 Fundamental Theorem of Affine Geometry:
-Suppose you have a set map that is a bijection $\Phi: \theset{\text{affine subspaces of } \RR^n} \selfmap$ which satisfies
+Suppose you have a set map that is a bijection $\Phi: \theset{\text{affine subspaces of } \RR^n, \dim \geq 0} \selfmap$ which satisfies
 $$
 P_1 \subseteq P_2 \implies \Phi(P_1) \subseteq \Phi(P_2),
 $$
