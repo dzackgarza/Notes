@@ -65,7 +65,7 @@ $$
 S = \theset{ \text{subsets of } M \text{ homeomorphic to } S^{n-1} }.
 $$
 
-Theorem 1: A homeomorphism takes embedded spheres to embedded spheres. 
+# Theorem 1: A homeomorphism takes embedded spheres to embedded spheres. 
 
 Suppose $\Phi: S \to S$ is bijective, and $\forall X, Y \in S$,
 $$
@@ -79,13 +79,13 @@ Take any homeomorphism of a disc $\phi$ such that $\phi^2 = \id$ that exchanges 
 
 Turns out this counterexample doesn't quite work! Take a figure 8 at a glue point extending into both discs, the homeomorphism will separate it into two loops.
 
-Theorem 2: Suppose you have a bijective set map $\Phi: \theset{\text{loops in } \RR^3}$ that preserves "linking", i.e. 
+# Theorem 2: Suppose you have a bijective set map $\Phi: \theset{\text{loops in } \RR^3}$ that preserves "linking", i.e. 
 $$
 L(\gamma_1, \gamma_2) \neq 0 \implies L(\Phi(\gamma_1), \Phi(\gamma_2)) \neq 0
 $$
 
 Then $\Phi$ is induced by a unique homeomorphism $\phi: \RR^3 \to \RR^3$.
 
-Proof outline of theorem 1:
+# Proof outline of theorem 1:
 Given $\Phi:S \to S$ a bijection preserving disjointness, need to construct a unique $\phi: M \selfmap$ inducing $\Phi$.
 
