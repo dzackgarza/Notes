@@ -8,3 +8,7 @@
   - This talk: not so much related to his personal work!
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
+
+- Work-in-progress!
+
+Geometric motivation: a map $\phi_n \RR^n \to \RR^n$ if there is a matrix in $\GL(n, \RR)$
