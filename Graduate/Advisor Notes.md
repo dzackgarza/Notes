@@ -72,7 +72,7 @@ $$
 \rho: \pi_1 B \to \mathrm{Mod} \Sigma_g
 $$
 
-
+Look at LES in homotopy
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
