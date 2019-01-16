@@ -47,6 +47,7 @@ B.F. proved algorithmic computability for bundle iso, homeo and even fiberwise h
 
 Why study $\Sigma_g$ bundles?
 1. The simplest nonlinear bundle theory (i.e. structure group is not just $\GL(n)$, it is $S^1$)
+2. For 3-manifolds: almost every 
 
 ---
 
