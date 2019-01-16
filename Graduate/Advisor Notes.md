@@ -54,3 +54,5 @@ feat. Dan Margalit
 
 Theorems they proved:
 
+Fix a manifold $M$, let $S = \mathrm{Emb}(S^{n-1}, M) / ~$
+
