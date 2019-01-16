@@ -109,7 +109,7 @@ Model: general construction, just find any contractible space on which $\mathrm{
 Not useful yet, because we don't know what $\mathrm{BDiff}$ is.
 
 Some serious math, theorem of Eels-Earle 1969:
-- Diffeos isotopic to the identity
+- For surfaces $g\geq 2$, the diffeos isotopic to the identity
 
 
 ---
