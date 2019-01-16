@@ -114,7 +114,7 @@ Some serious math, theorem of Eels-Earle 1969:
     - Uses Beltrami equation, measurable Riemann mapping theorem, solving PDEs, some serious Math!
     - $\mathrm{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is Teichmuller space(?), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
 
-Corrolary: we care about $\mathrm{Bdiff}$
+Corrolary: we care about $\mathrm{Bdiff}$, classifying space theory doesn't really see contractible stuff.
 
 ---
 
