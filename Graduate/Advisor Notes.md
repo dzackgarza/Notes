@@ -49,7 +49,7 @@ Why study $\Sigma_g$ bundles?
 1. The simplest nonlinear bundle theory (i.e. structure group is not just $\GL(n)$, it is $S^1$)
 2. For 3-manifolds: almost all (e.g. all hyperbolic) closed 3-manifolds are finitely covered by some $M_f^3$ surface bundle
    1. Famous conjecture of Thurston! Very recent
-      1. His fields medal was finding a single
+      1. His fields medal was finding a single hyperbolic structure
 
 ---
 
