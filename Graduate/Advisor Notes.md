@@ -74,4 +74,4 @@ $$
 
 then there exists a unique homemorphism  $\phi: M \selfmap$ inducing $\Phi$.
 
-Need manifold assumption - counterexample, take $Z$ to be two discs glued 
+Need manifold assumption - counterexample, take $Z$ to be two discs glued at two distinct points. Then there is a map
