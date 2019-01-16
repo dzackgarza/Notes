@@ -53,6 +53,6 @@ Punchline: Helle's theorem, in any collection of convex subsets of $\RR^n$, if a
 feat. Dan Margalit
 
 Theorems they proved:
-
-Fix a manifold $M$, let $S = \mathrm{Emb}(S^{n-1}, M) / \mathrm{Diff}(S^{n-1})$
+What is a homeomorphism?
+Fix a manifold $M$, let $S = \mathrm{Emb}(S^{n-1}, M) / \mathrm{Diff}(S^{n-1})$,
 
