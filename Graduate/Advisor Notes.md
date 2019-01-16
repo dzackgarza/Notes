@@ -24,7 +24,7 @@ $$
 
 then for $n\geq 3$, $\Phi$ is induced by a unique affine map $\phi$.
 
-Much easier theorem: if you start with a bijective set map $\RR^n \selfmap$ which takes lines to lines,
+Much easier theorem: if you start with a bijective set map $\RR^n \selfmap$ which takes lines to lines, then it's affine. (Darboux 1800s)
 
 Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigidity_theorem) (related to rigidity of lattices, semi-simple Lie groups, etc); many have seen in real hyperbolic case, but in higher rank cases (more important) for lattices in $\SL(n, \RR)$, this is a key ingredient in the proof.
 
