@@ -104,4 +104,4 @@ Step 2: $\Phi$ preserves "betweenness", i.e. $Y$ is between $X$ and $Z$ iff for 
 
 Step 3: Look at embedded isotopies, $H: I \to S$ (note that we can use the compact-open on $S$) such that each $H_t \definedas H(t)$ is embedded and $\union_{t\in I} H_t(S^{n-1})$ is an embedded $S^{n-1} \cross I$ (i.e. embedded families of spheres with a preferred foliation by codimension 1 spheres.)
 
-Getting the associated graph-theoretic property. Let $H: I \to S$ be an injective set map (want to say it in terms of disjointness and )
+Getting the associated graph-theoretic property. Let $H: I \to S$ be an injective set map (want to say when it is continuous and embedded in terms of disjointness and )
