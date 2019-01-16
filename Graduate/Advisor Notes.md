@@ -81,5 +81,5 @@ Turns out this counterexample doesn't quite work! Take a figure 8 at a glue poin
 
 Theorem 2: Suppose you have a bijective set map $\Phi: \theset{\text{loops in } \RR^3}$ that preserves "linking", i.e. 
 $$
-L(\gamma_1, \gamma_2) \neq 0 \implies L(\Phi(\gamma_1), \Phi(\gamma_2) \neq 0)
+L(\gamma_1, \gamma_2) \neq 0 \implies L(\Phi(\gamma_1), \Phi(\gamma_2)) \neq 0
 $$
