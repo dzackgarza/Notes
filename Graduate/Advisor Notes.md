@@ -30,6 +30,7 @@ Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat 
 
 > Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$. Take the kernel of $E \mapsvia{f} B$ is obtain a "vertical" 2-plane bundle, horizontal is not well-defined and so is a choice of a 2-plane field. Flat means curvature vanishes is equivalent to Frobenius integrability theorem - the 2-plane is integrable. So curvature measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a foliation".
 
+One organizing proble,
 
 ---
 
