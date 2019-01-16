@@ -108,7 +108,7 @@ Model: general construction, just find any contractible space on which $\mathrm{
 
 Not useful yet, because we don't know what $\mathrm{BDiff}$ is.
 
-Some serious math:
+Some serious math, theorem of Eels-Earle 1969:
 - Beltrami equation
 
 
