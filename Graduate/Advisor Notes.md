@@ -28,6 +28,8 @@ Generalizes previous example: take real line cross surface and mod out by deck t
 
 Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat connections.
 
+Note on connections:
+
 
 ---
 
