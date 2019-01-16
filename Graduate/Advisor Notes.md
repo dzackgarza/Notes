@@ -57,7 +57,7 @@ What is a homeomorphism?
 
 Fix an $n\dash$manifold $M$, $n\geq 2$ let 
 $$
-S = \mathrm{Emb}(S^{n-1}, M) / \mathrm{Diff}(S^{n-1}),
+S = \mathrm{Emb}(S^{n-1}, M) / \mathrm{Homeo}(S^{n-1}),
 $$
 
 the space of embedded spheres in $M$ as subsets, so 
@@ -67,7 +67,7 @@ $$
 
 Theorem 1: A homeomorphism takes embedded spheres to embedded spheres. Suppose $\Phi: S \to S$ is bijective, and $\forall X, Y \in S$,
 $$
-X \intersect Y = \empty \iff \Phi(X) \intersect \Phi()$
+X \intersect Y = \empty \iff \Phi(X) \intersect \Phi(Y)
 $$
 
 
