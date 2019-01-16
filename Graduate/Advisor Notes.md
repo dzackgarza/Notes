@@ -116,7 +116,7 @@ Some serious math, theorem of Eels-Earle 1969:
 
 Corrolary: we care about $\mathrm{Bdiff}$, classifying space theory doesn't really see contractible stuff. So:
 $$
-\mathrm{Bdiff}^+ \Sigma_g \
+\mathrm{Bdiff}^+ \Sigma_g \cong \mathrm{BMod}\Sigma_g = K(\mathrm{Mod}\Sigma_g, 1)
 $$
 
 ---
