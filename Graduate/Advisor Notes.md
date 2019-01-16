@@ -54,7 +54,9 @@ feat. Dan Margalit
 
 Theorems they proved:
 What is a homeomorphism?
-Fix an $n\dash$manifold $M$, $n\geq 2$ let $S = \mathrm{Emb}(S^{n-1}, M) / \mathrm{Diff}(S^{n-1})$, the space of embedded spheres in $M$ as subsets, so $S = \theset{ \text{subsets of } M \text{ homeomorphic to } S^{n-1} }$.
+Fix an $n\dash$manifold $M$, $n\geq 2$ let 
+$$
+S = \mathrm{Emb}(S^{n-1}, M) / \mathrm{Diff}(S^{n-1})$, the space of embedded spheres in $M$ as subsets, so $S = \theset{ \text{subsets of } M \text{ homeomorphic to } S^{n-1} }$.
 
 
 
