@@ -99,7 +99,7 @@ Equivalently, is every bundle flat? No, but this is an open question when the ba
 
 # Monodromy as a Complete Invariant
 
-Classifying space theory: there exists a (crazy) space $\mathrm{BDiff}$ such that
+Classifying space theory: there exists a (crazy) space $\mathrm{BDiff}^+\Sigma_g$ such that
 $$
 \theset{\text{iso classes } \Sigma_g \to E \to B} \iff [B, \mathrm{BDiff}^+ \Sigma_g] 
 $$
