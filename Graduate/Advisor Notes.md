@@ -53,7 +53,7 @@ Why study $\Sigma_g$ bundles?
 3. FOr 4-manifolds: huge class of symplectic mfds.
    1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
-4. 
+4. AG: 
 
 ---
 
