@@ -121,6 +121,8 @@ $$
 
 Note that the last equality follows because there's no topology on the mapping class group of a discrete group.
 
+Huge conclusion:
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
