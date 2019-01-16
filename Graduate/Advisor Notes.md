@@ -106,3 +106,5 @@ Step 3: Look at embedded isotopies, $H: I \to S$ (note that we can use the compa
 
 Getting the associated graph-theoretic property. Let $H: I \to S$ be an injective set map (want to say when it is continuous and embedded in terms of disjointness).
 
+Need four properties:
+- 
