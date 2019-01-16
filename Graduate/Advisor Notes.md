@@ -67,7 +67,10 @@ Take a homeomorphism to its homotopy class, Mod is finitely generated.
 
 > In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
 
-So any bundle $\Sigma_g \to E\ to B$ yields a corresponding monodromy Representation $\rho: \pi_1 B \to \mathrm{Mod} \Sigma_g$
+So any bundle $\Sigma_g \to E\ to B$ yields a corresponding monodromy representation 
+$$
+\rho: \pi_1 B \to \mathrm{Mod} \Sigma_g
+$$
 
 ---
 
