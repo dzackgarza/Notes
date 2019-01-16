@@ -60,7 +60,7 @@ Let $\mathrm{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\p
 
 Representation from earlier can project down:
 $$
-\pi_1 B \to \mathrm{Diff}^+ \Sigma_g \mapsvia{\pi}
+\pi_1 B \to \mathrm{Diff}^+ \Sigma_g \mapsvia{\pi} \mathrm{Mod(\Sigma_g)}
 $$
 
 ---
