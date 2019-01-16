@@ -45,6 +45,8 @@ One organizing problem: classify surface bundles over a fixed closed base manifo
 
 B.F. proved algorithmic computability for bundle iso, homeo and even fiberwise homeo is unsolvable.
 
+Why study $\Sigma_g$ bundles?
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
