@@ -79,13 +79,21 @@ For any SES of groups, you can get a representation $\pi_1 B \to \mathrm{Out} \p
 Can produce a map $\mathrm{Mod} \Sigma_g \to \mathrm{Out}\pi_1 \Sigma_g$ by applying a homeomorphism to $\pi_1$, might move the basepoint, but these are isomorphic groups (classical theorem).
 
 Question: when does the representation lift?
-```{latex}
+
+```latex {cmd=true, hide=true, run_on_save=true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usetikzlibrary{cd}
+\begin{document}
 \begin{tikzcd}
  &  & \mathrm{Diff}^+ \Sigma_g \arrow[dd] \\
  &  &  \\
 \pi_1 B \arrow[rr] \arrow[rruu, "?" description, dotted] &  & \mathrm{Mod} \Sigma_g
 \end{tikzcd}
-```
+\end{document}
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
