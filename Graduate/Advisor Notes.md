@@ -30,7 +30,9 @@ Importance: proving [Mostow rigidity](https://en.wikipedia.org/wiki/Mostow_rigid
 
 A variation: suppose $\Phi: \theset{\text{lines in } \RR^n} \selfmap$ is a bijection. Look at $n=2$ case.
 
-Suppose that for all distinct lines $L_1, L_2, L_3$, then triple intersections are preserved:
+Suppose that for all distinct lines $L_1, L_2, L_3$, triple intersections are preserved:
 $$
 L_1 \intersect L_2 \intersect L_3 \neq \emptyset \iff \Phi(L_1) \intersect \Phi(L_2) \intersect \Phi(L_3) \neq \emptyset,
 $$
+
+then $\Phi$ is induced by an affine map $\phi$.
