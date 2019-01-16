@@ -65,7 +65,7 @@ $$
 S = \theset{ \text{subsets of } M \text{ homeomorphic to } S^{n-1} }.
 $$
 
-
+Theorem 1: 
 
 
 
