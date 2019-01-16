@@ -140,7 +140,7 @@ Theorem: The conjugacy problem in $\mathrm{Mod} \Sigma_g$ solvable.
 
 But this does not solve the problem for homeo $\Sigma_g \to M^3 \to S_1$.
 
-Why? Relates back to a paper of Thurston's
+Why? Relates back to a paper of Thurston's, theory of "The Thurston Norm"
 
 ---
 
