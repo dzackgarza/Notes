@@ -32,5 +32,5 @@ A variation: suppose $\Phi: \theset{\text{lines in } \RR^n} \selfmap$ is a bijec
 
 Suppose that for all distinct lines $L_1, L_2, L_3$, then triple intersections are preserved:
 $$
-L_1 \intersect L_2 \intersect L_3 \neq \emptyset \iff \Phi(L_1) \intersect \Phi(L_2) \intersect \Phi(L_3) \neq \emptyset.
+L_1 \intersect L_2 \intersect L_3 \neq \emptyset \iff \Phi(L_1) \intersect \Phi(L_2) \intersect \Phi(L_3) \neq \emptyset,
 $$
