@@ -24,7 +24,9 @@ Every 3-manifold that fibers over the circle is of this form! Why?Can remove a p
 
 Another way to build bundles: take a representation $\rho \pi_1 B \to \mathrm{Diff}(\Sigma_g)$, let $E = \tilde B \cross \Sigma_g / (x,y) \sim (g.x, \rho(g)(y)$ (standard construction) where $\tilde B$ is the universal cover of $B$.
 
+Generalizes previous example: take real line cross surface and mod out by deck transformations.
 
+Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat connections.
 
 
 ---
