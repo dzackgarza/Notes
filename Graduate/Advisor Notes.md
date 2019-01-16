@@ -100,4 +100,4 @@ Step 1: Start looking at separation and nesting properties. $X \subset M$ is sep
 
 > Note: technique is listing topological properties that are true, then creating a dictionary  from topological properties of the manifold into properties of your graph. Similar to when working on [Tit's Buildings](https://en.wikipedia.org/wiki/Building_(mathematics)#Bruhat-Tits_trees_with_complex_multiplication).
 
-Step 2: $\Phi$ preserves "betweenness", i.e. $Y$ is between $X$ and $Z$ iff for any sphere intersecting both $X$ and $Z$ also intersects $Y$.
+Step 2: $\Phi$ preserves "betweenness", i.e. $Y$ is between $X$ and $Z$ iff for any sphere intersecting both $X$ and $Z$ also intersects $Y$. (These preserved topological properties will be preserved under automorphisms of the graph!)
