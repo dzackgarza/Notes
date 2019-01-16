@@ -114,6 +114,8 @@ Some serious math, theorem of Eels-Earle 1969:
     - Uses Beltrami equation, measurable Riemann mapping theorem, solving PDEs, some serious Math!
     - $\mathrm{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is Teichmuller space(?), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
 
+
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
