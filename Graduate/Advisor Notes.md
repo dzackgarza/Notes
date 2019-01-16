@@ -119,6 +119,8 @@ $$
 \mathrm{Bdiff}^+ \Sigma_g \cong \mathrm{BMod}\Sigma_g = K(\mathrm{Mod}\Sigma_g, 1)
 $$
 
+Note that the last equality follows because there's no topology on the mapping class group of a discrete group.
+
 ---
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
