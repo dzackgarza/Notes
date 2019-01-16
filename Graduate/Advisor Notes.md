@@ -33,6 +33,7 @@ Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat 
 One organizing problem: classify surface bundles over a fixed space up to 
 - Bundle isomorphism
   - Fiberwise homeo, but doesn't actually permute any fibers
+  - Covering the identity map
 - Homeo
 - Diffeo
 - Homotopy-equivalence
