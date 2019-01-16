@@ -16,4 +16,4 @@ Geometric motivation: a map $\phi \RR^n \to \RR^n$ if there is a matrix $A \in \
 In other words, a composition of a linear map and a translation. Takes lines to lines, planes to planes.
 
 Fundamental Theorem of Affine Geometry:
-Suppose you have a set map from 
+Suppose you have a set map 
