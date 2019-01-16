@@ -22,3 +22,5 @@ P_1 \subseteq P_2 \implies \Phi(P_1) \subseteq \Phi(P_2),
 $$
 
 then $\Phi$ is induced by a unique affine map $\phi$.
+
+Importance: 
