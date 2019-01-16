@@ -65,7 +65,9 @@ $$
 S = \theset{ \text{subsets of } M \text{ homeomorphic to } S^{n-1} }.
 $$
 
-Theorem 1: A homeomorphism takes embedded spheres to embedded spheres. Suppose $\Phi: S \to S$ is bijective, and $\forall X, Y \in S$,
+Theorem 1: A homeomorphism takes embedded spheres to embedded spheres. 
+
+Suppose $\Phi: S \to S$ is bijective, and $\forall X, Y \in S$,
 $$
 X \intersect Y = \empty \iff \Phi(X) \intersect \Phi(Y)
 $$
