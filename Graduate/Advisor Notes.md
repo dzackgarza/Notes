@@ -128,7 +128,7 @@ $$
 \theset{\text{conjugacy classes of representations } \rho: \pi_b \to \mathrm{Mod}\Sigma_g}
 $$
 
-Why? For any $X = K(\pi, 1)$ space, $[Y, X] \cong [\pi_1 Y, \pi_1 X]$
+Why? For any $X = K(\pi, 1)$ space, $[\wait, X] \cong [\pi_1 Y, \pi_1 X]$
 
 ---
 
