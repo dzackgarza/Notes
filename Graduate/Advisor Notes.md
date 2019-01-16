@@ -102,4 +102,4 @@ Step 1: Start looking at separation and nesting properties. $X \subset M$ is sep
 
 Step 2: $\Phi$ preserves "betweenness", i.e. $Y$ is between $X$ and $Z$ iff for any sphere intersecting both $X$ and $Z$ also intersects $Y$. (These preserved topological properties will be preserved under automorphisms of the graph!)
 
-Step 3: Look at embedded isotopies, $H: I \to S$
+Step 3: Look at embedded isotopies, $H: I \to S$ (note that we can use the compact-open on $S$)
