@@ -13,7 +13,7 @@ $$
 \Sigma_g \to E \mapsvia{\pi} B
 $$
 
-
+(Usu)
 
 [Part 3: Reconstruction problems in geometry and topology](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
