@@ -189,7 +189,10 @@ B' \arrow[rr, "f" description] &  & B
 \end{document}
 ```
 
-and require that $\tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B))$.
+and require that 
+$$
+\tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B)).
+$$
 
 Any characteristic class is just an element of $H^*(\mathrm{BDiff}^+ \Sigma_g) = H^*(\mathrm{Mod} \Sigma_g)$, since every bundle will be a pullback of the universal bundle.
 
