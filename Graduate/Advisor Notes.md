@@ -251,7 +251,7 @@ $$
 P_1 \subseteq P_2 \implies \Phi(P_1) \subseteq \Phi(P_2),
 $$
 
-$\left< asdsadas\right>$
+$\mathbf{w}$
 
 then for $n\geq 3$, $\Phi$ is induced by a unique affine map $\phi$.
 
