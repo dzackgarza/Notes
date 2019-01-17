@@ -172,7 +172,7 @@ $$
 \Sigma_g \to E \mapsvia{\pi} B \iff c(E \mapsvia{\pi} B) \in H^i(B)
 $$
 
-that is natural with respect to pullbacks: given
+that is natural with respect to pullbacks; i.e. take
 
 ```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
@@ -189,7 +189,7 @@ B' \arrow[rr, "f" description] &  & B
 \end{document}
 ```
 
-require that $\tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B))$.
+and require that $\tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B))$.
 
 Any characteristic class is just an element of $H^*(\mathrm{BDiff}^+ \Sigma_g) = H^*(\mathrm{Mod} \Sigma_g)$, since every bundle will be a pullback of the universal bundle.
 
