@@ -41,7 +41,7 @@
 - :fa-book: _Spivak_, [Calculus](https://www.amazon.com/gp/product/0914098918/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0914098918&linkId=6e5af9b5340ff7f74c580ed8869d31f9)
 	- Exposition is a little more advanced, and closer to introductory real analysis. Good for an honors-level course, or if you want to see a more "rigorous" exposition of the topics from Stewart.
 
-- :fa-book: _Apostol_, Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra
+- :fa-book: _Apostol_, [Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra](https://www.amazon.com/gp/product/0471000051/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0471000051&linkCode=as2&tag=dzackgarza-20&linkId=5393e3e618e343c64e13b392200bb8b1)
 	- A good alternative to Spivak.
 
 - :fa-tv: [patrickJMT](https://www.youtube.com/user/patrickJMT/videos)
