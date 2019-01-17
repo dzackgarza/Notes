@@ -225,7 +225,9 @@ Take the signature of $M_4$ (where you use the intersection pairing on $H_2$, ta
 Look at the vertical bundle over $T$, you get $\RR^2 \to E \to T$.
 > Note: can see this bundle by looking at moduli space of Riemann surfaces $\mathcal{M}_g$, covered by $\mathcal{M}_g^*$ with fiber $\Sigma_g$. There is a vertical bundle over this, everything that is tangent to the fiber, which is a 2-plane bundle over the covering space.
 
-So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so $e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\mathrm{Mod} \Sigma_g; \QQ)$. But that
+So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so 
+$$
+e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\mathrm{Mod} \Sigma_g; \QQ)$. But that
 
 Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
 
