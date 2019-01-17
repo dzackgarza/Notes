@@ -282,7 +282,7 @@ Pick a point $p$, and any two lines $l_1, l_2$ going through it. Define $\Phi(p)
 Punchline: Helle's theorem, in any collection of convex subsets of $\RR^n$, if any $n+1$ intersect then all intersect.
 
 ## The Topology Side
-feat. Dan Margalit
+*feat. Dan Margalit*
 
 Theorems they proved:
 What is a homeomorphism?
