@@ -241,7 +241,10 @@ See book with Dan Margalit - all of this lives in the group $\mathrm{Mod} \Sigma
 
 - Work-in-progress!
 
-Geometric motivation: a map $\phi \RR^n \to \RR^n$ if there is a matrix $A \in \GL(n, \RR)$ such that $\exists \vector{w} \in \RR^n :\forall \vector{v} \in \RR^n, \phi(\vector{v}) = A \vector{v} + \vector{w}.$
+Geometric motivation: a map $\phi \RR^n \to \RR^n$ if there is a matrix $A \in \GL(n, \RR)$ such that 
+$$
+\exists \vector{w} \in \RR^n :\forall \vector{v} \in \RR^n, \phi(\vector{v}) = A \vector{v} + \vector{w}.
+$$
 
 In other words, a composition of a linear map and a translation. Takes lines to lines, planes to planes.
 
