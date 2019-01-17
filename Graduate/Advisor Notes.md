@@ -251,6 +251,8 @@ $$
 P_1 \subseteq P_2 \implies \Phi(P_1) \subseteq \Phi(P_2),
 $$
 
+$\left< asdsadas\right>$
+
 then for $n\geq 3$, $\Phi$ is induced by a unique affine map $\phi$.
 
 Much easier theorem: if you start with a bijective set map $\RR^n \selfmap$ which takes lines to lines, then it's affine. (Darboux 1800s)
