@@ -197,7 +197,7 @@ Lots of papers about the "stable cohomology" of the mapping class group, given b
 
 What do we know?
 - $H^1(\mathrm{Mod} \Sigma_g; \QQ) = 0$
-- Elements of $H^2(\mathrm{Mod} \Sigma_g; \QQ)$:
+- Elements of $H^2(\mathrm{Mod} \Sigma_g; \QQ)$: some known cocycles.
 
 ## The "Signature Cocycle"
 
