@@ -466,4 +466,4 @@
 
 ---
 
-I'm continually expanding this list -- if you have any recommendations, please feel free to let me know in the comments so I can possibly add them!
+I'm continually expanding this list -- if you have any recommendations, please feel free to let me know in the comments so I can add them!
