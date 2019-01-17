@@ -26,7 +26,7 @@
   - This talk: not so much related to his personal work!
   - Will revisit
 
-Throughought: $\Sigma_g$ a connected oriented $g\geq 2$ surface, will look at $\Sigma_g\dash$ bundles given by 
+Throughout: $\Sigma_g$ a connected oriented $g\geq 2$ surface, will look at $\Sigma_g\dash$ bundles given by 
 $$
 \Sigma_g \to E \mapsvia{\pi} B
 $$
