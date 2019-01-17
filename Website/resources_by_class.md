@@ -35,10 +35,10 @@
 
 ## Single Variable Calculus
 
-- :fa-book: _Stewart_, [Calculus: Early Transcendentals](https://www.amazon.com/gp/product/0538497904/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0538497904&linkId=edb74b5594ddb68399ffe86972c7eb84)
+- :fa-book: _Stewart_, **Calculus: Early Transcendentals**
 	- What can I say? It's a Calculus book, and it covers the standard curriculum. This one's a good choice because there are a few solution manuals floating around for older editions.
 
-- :fa-book: _Spivak_, [Calculus](https://www.amazon.com/gp/product/0914098918/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0914098918&linkId=6e5af9b5340ff7f74c580ed8869d31f9)
+- :fa-book: _Spivak_, **Calculus**
 	- Exposition is a little more advanced, and closer to introductory real analysis. Good for an honors-level course, or if you want to see a more "rigorous" exposition of the topics from Stewart.
 
 - :fa-book: _Apostol_, **Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra**
@@ -119,13 +119,13 @@
 
 ## Discrete Mathematics
 
-- :fa-book: _Rosen_, [Discrete Mathematics and Its Applications](https://www.amazon.com/gp/product/0077431448/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0077431448&linkId=978fcb38a872b8e609e524a396ecf471)
+- :fa-book: _Rosen_, **Discrete Mathematics and Its Applications**
 	- Huge variety of topics, good prep for many Math-related computer science courses, also just a good survey of many topics at an introductory level.
 
-- :fa-book: :fa-star: _Grimaldi_, [Discrete and Combinatorial Mathematics: An Applied Introduction](https://www.amazon.com/gp/product/0201726343/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0201726343&linkId=d7c4341e556bbc0297cd3ee66b043f1c)
+- :fa-book: :fa-star: _Grimaldi_, **Discrete and Combinatorial Mathematics: An Applied Introduction**
 	- Absolutely excellent presentation of recurrence relations, mirroring how solutions of differential equations are found. Also has a good presentation of how to commute quantifiers.
 
-- :fa-book: _Eccles_, [An Introduction to Mathematical Reasoning: Numbers, Sets and Functions](https://www.amazon.com/gp/product/0521597188/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0521597188&linkId=4edc26d769ec8c1c49edbc9b2f9c7ef5)
+- :fa-book: _Eccles_, **An Introduction to Mathematical Reasoning: Numbers, Sets and Functions**
 	- Good for a solid introduction to proofs.
 
 - :fa-external-link: :fa-star: [UC Berkeley's EECS 70 Course](http://www.eecs70.org/)
@@ -154,7 +154,7 @@
 
 ## Number Theory
 
-- :fa-book: _LeVeque_, [Fundamentals of Number Theory](https://www.amazon.com/gp/product/0486689069/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0486689069&linkId=5fa8c23ca453797a3d1f39d0741b7530)
+- :fa-book: _LeVeque_, **Fundamentals of Number Theory**
 	- Short but good!
 
 <details markdown="1">
@@ -173,10 +173,10 @@
 
 ## Abstract Algebra
 
-- :fa-book: :fa-star: _Dummit and Foote_, [Abstract Algebra](https://www.amazon.com/gp/product/B017MY9TI0/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=B017MY9TI0&linkId=ae6a57d293f98f92724e3287b46c6f06)
+- :fa-book: :fa-star: _Dummit and Foote_, **Abstract Algebra**
 	- Essentially the de-facto standard, plus it also serves as an encylopedaic reference.
 
-- :fa-book: _Beachy and Blair_, [Abstract Algebra](https://www.amazon.com/gp/product/1577664434/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=1577664434&linkId=54b29f3498d4bc910a3df2ec72cfa85f)
+- :fa-book: _Beachy and Blair_, **Abstract Algebra**
 	- A good undergraduate-level reference.
 
 - :fa-tv: :fa-star: _Matthew Salomone_ [Abstract Algebra Series](https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y)
@@ -213,7 +213,7 @@
 
 ## Real Analysis
 
-- :fa-book: :fa-star:  _Rudin_, [Principles of Mathematical Analysis](https://www.amazon.com/gp/product/007054235X/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=007054235X&linkId=6999e53c498f9f1f4b2f7d6e64ac0d8a)
+- :fa-book: :fa-star:  _Rudin_, **Principles of Mathematical Analysis**
 	- Essentially a standard in undergraduate real analysis, written in a very terse style but covers a great deal of material. Often referred to as "Baby Rudin".
 
 - :fa-tv: :fa-star: _Francis Su_, [Lectures from Harvey Mudd College](https://www.youtube.com/playlist?list=PL0E754696F72137EC)
@@ -239,13 +239,13 @@
 
 ## Complex Analysis
 
-- :fa-book: :fa-star: _Brown and Churchill_, [Complex Variables and Applications](https://www.amazon.com/gp/product/0073383171/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0073383171&linkId=a29ea129f68e5b2a12841dc26c1138c3)
+- :fa-book: :fa-star: _Brown and Churchill_, **Complex Variables and Applications**
 	- Good overview of computational techniques at an undergrad level.
 
-- :fa-book: :fa-star: _Needham_, [Visual Complex Analysis](https://www.amazon.com/gp/product/0198534469/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0198534469&linkId=50937c6af6cc681f12f628911fd434f3)
+- :fa-book: :fa-star: _Needham_, **Visual Complex Analysis**
 	- Absolutely phenomenal book! The exposition and imagery is truly excellent, although this is perhaps not the best book for learning computations.
 
-- :fa-book: _Ahlfors_, [Complex Analysis](https://www.amazon.com/gp/product/0070006571/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0070006571&linkId=69362995cc0e8390c114c3135a28eccf)
+- :fa-book: _Ahlfors_, **Complex Analysis**
 	- A standard grad-level reference.
 
 <details markdown="1">
@@ -261,7 +261,7 @@
 
 ## Partial Differential Equations
 
-- :fa-book: _Evans_, [Partial Differential Equations](https://www.amazon.com/gp/product/0821849743/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0821849743&linkId=0641908b274e8a91630e51a90749f4db)
+- :fa-book: _Evans_, **Partial Differential Equations**
 	- A graduate-level approach.
 
 <details markdown="1">
@@ -274,7 +274,7 @@
 
 ## Numerical Analysis
 
-- :fa-book: _Burden_, [Numerical Analysis](https://www.amazon.com/gp/product/1305253663/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1305253663&linkId=e35588d12b30d36fd8dcd24b4ace94cf)
+- :fa-book: _Burden_, **Numerical Analysis**
 
 <details markdown="1">
 **Content**
@@ -290,7 +290,7 @@
 - :fa-book: :fa-star: _Wilf_, [Generatingfunctionology](https://www.math.upenn.edu/~wilf/DownldGF.html)
 	- Freely provided by Wilf on his site, exposition is excellent and it provides a comprehensive overview of how to work with generating functions.
 
-- :fa-book: _Bona_, [A Walk Through Combinatorics](https://www.amazon.com/gp/product/9813148845/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=9813148845&linkId=7c7b9364a6276848ebd103bcac8ef566)
+- :fa-book: _Bona_, **A Walk Through Combinatorics**
 
 <details markdown="1">
 **Content**
@@ -300,7 +300,7 @@
 
 ## Probability
 
-- :fa-book: _Ross_, [A First Course in Probability](https://www.amazon.com/gp/product/032179477X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=032179477X&linkCode=as2&tag=dzackgarza-20&linkId=08dfadf9f72e1cff15e5a01d89cee645)
+- :fa-book: _Ross_, **A First Course in Probability**
 
 <details markdown="1">
 **Content**
@@ -313,10 +313,10 @@
 
 ## Point-Set Topology
 
-- :fa-book: :fa-star: _Munkres_, [Topology](https://www.amazon.com/gp/product/0134689518/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0134689518&linkId=d158c2143135041b06ceeb214bbbeda3)
+- :fa-book: :fa-star: _Munkres_, **Topology**
 	- A standard - the good stuff starts about 10 chapters in, everything before that is aimed at providing a solid grounding in set theory and proofs.
 
-- :fa-book: :fa-star: _Lee_, [Introduction to Smooth Manifolds](https://www.amazon.com/gp/product/1441999817/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=1441999817&linkId=000aa52031ba5c130f390efbe5d5b5e4)
+- :fa-book: :fa-star: _Lee_, **Introduction to Smooth Manifolds**
 	- The appendix has a great uber-compressed review of point-set.
 
 <details markdown="1">
@@ -331,19 +331,19 @@
 
 ## Graduate Real Analysis
 
-- :fa-book: _Rudin_, [Principles of Mathematical Analysis](https://www.amazon.com/gp/product/007054235X/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=007054235X&linkId=6999e53c498f9f1f4b2f7d6e64ac0d8a)
+- :fa-book: _Rudin_, **Principles of Mathematical Analysis**
 	- A contentious standard for real analysis. Chapter 11 has a light overview of measure theory, and the Lebesgue integral.
 
-- :fa-book: _Rudin_, [Real and Complex Analysis](https://www.amazon.com/gp/product/0070619875/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0070619875&linkId=a627b7f18abfa94fa42b17f3b417fc2b)
+- :fa-book: _Rudin_, **Real and Complex Analysis**
 	- Also referred to as "Papa Rudin".
 
-- :fa-book: _Schilling_, [Measures, Integrals, and Martingales](https://www.amazon.com/gp/product/1316620247/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=1316620247&linkId=88eeebe5438a1517f9cb700d2760c876)
+- :fa-book: _Schilling_, **Measures, Integrals, and Martingales**
 	- This book is not as detailed, as it is geared towards rigorous probability theory, but covers material faster and provides a bit more intuition than Rudin. The first few chapters are a good supplement to a full course.
 
-- :fa-book: _Folland_, [Real Analysis: Modern Techniques and Their Applications](https://www.amazon.com/gp/product/0471317160/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0471317160&linkId=bf877a0601670f24fa0dc4a753fc7035)
+- :fa-book: _Folland_, **Real Analysis: Modern Techniques and Their Applications**
 	- Particularly good for measure theory.
 
-- :fa-book: _Royden_, [Real Analysis](https://www.amazon.com/gp/product/0134689496/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0134689496&linkId=ed6f27a7c9495b0b5f4dce59f62cf3f6)
+- :fa-book: _Royden_, **Real Analysis**
 	- Also good for measure theory.
 
 <details markdown="1">
@@ -359,17 +359,17 @@
 
 ## Algebra
 
-- :fa-book: _Dummit and Foote_, [Abstract Algebra](https://www.amazon.com/gp/product/8126532289/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=8126532289&linkId=973f430e6e8fd4d8bf5037120e259075)
+- :fa-book: _Dummit and Foote_, **Abstract Algebra**
 	- Pretty much the all-around standard, this thing is absolutely encylopedaic!
 
-- :fa-book: _Atiyah and MacDonald_, [Introduction to Commutative Algebra](https://www.amazon.com/gp/product/0201407515/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0201407515&linkId=ac45310232f375be221ae2015096f690)
+- :fa-book: _Atiyah and MacDonald_, **Introduction to Commutative Algebra**
 
-- :fa-book: _Weibel_, [An Introduction to Homological Algebra](https://www.amazon.com/gp/product/0521559871/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0521559871&linkId=d39dca5803316bded06612bf92b6a5a0)
+- :fa-book: _Weibel_, **An Introduction to Homological Algebra**
 
 
 ## Functional Analysis
 
-- :fa-book: _Conway_, [A Course in Functional Analysis](https://www.amazon.com/gp/product/0387972455/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0387972455&linkId=551eb9b7936eeb0957070b270d18f69f)
+- :fa-book: _Conway_, **A Course in Functional Analysis**
 	- Assumes a background around the level of Papa Rudin.
 
 <details markdown="1">
@@ -385,10 +385,10 @@
 
 ## Category Theory
 
-- :fa-book: :fa-star: _Aluffi_ [Algebra Chapter Zero](https://www.amazon.com/gp/product/0821847813/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0821847813&linkId=550ef17ef618706c358e239378644290)
+- :fa-book: :fa-star: _Aluffi_ **Algebra Chapter Zero**
 	- Covers Algebra in a more categorical manner, so this book works best as a second pass of Algebra.
 
-- :fa-book: _Mac Lane_ [Categories for the Working Mathematician](https://www.amazon.com/gp/product/0387984038/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0387984038&linkId=edb75c39191f4f3e3c6c1315f0bd529a)
+- :fa-book: _Mac Lane_ **Categories for the Working Mathematician**
 	- Seems to be a pretty standard reference; Mac Lane is regarded as one of the founders of the subject.
 
 - :fa-tv: [Talk on Category Theory by Tom LaGatta](https://www.youtube.com/watch?v=o6L6XeNdd_k)
@@ -404,16 +404,16 @@
 
 ## Algebraic Topology
 
-- :fa-book: :fa-star: _Munkres_, [Topology](https://www.amazon.com/gp/product/9332549532/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=9332549532&linkId=fa37f71d9cc78940fabc80d884040129)
+- :fa-book: :fa-star: _Munkres_, **Topology**
 	- Mostly point-set, but introduces things like the fundamental group in the later chapters.
 
-- :fa-book: :fa-star: _Hatcher_, [Algebraic Topology](https://www.amazon.com/gp/product/0521795400/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0521795400&linkId=7741db5a10f939a73e5c9c3e2a44eb49)
+- :fa-book: :fa-star: _Hatcher_, **Algebraic Topology**
 	- Love it or hate it, this seems to be the standard reference!
 
-- :fa-book: :fa-star: _Bott and Tu_, [Differential Forms in Algebraic Topology](https://www.amazon.com/gp/product/0387906134/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0387906134&linkId=086065b5049039c079f28f75e797578e)
+- :fa-book: :fa-star: _Bott and Tu_, **Differential Forms in Algebraic Topology**
 	- A beautiful, wonderful book! Tons of geometric intuition, and has a very deep selection of topics.
 
-- :fa-book: :fa-star: _Griffiths and Morgan_, [Rational Homotopy Theory and Differential Forms](https://www.amazon.com/gp/product/B00FKP3962/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=B00FKP3962&linkId=e04a0c47457c748acb505b2a028aaec7)
+- :fa-book: :fa-star: _Griffiths and Morgan_, **Rational Homotopy Theory and Differential Forms**
 	- Mostly homotopy theory.
 
 - :fa-tv: _NJ Wildberger_, [Introduction to Algebraic Topology](https://www.youtube.com/watch?v=Ap2c1dPyIVo&list=PL6763F57A61FE6FE8)
@@ -429,10 +429,10 @@
 
 ## Algebraic Geometry
 
-- :fa-book: _Reid_, [Undergraduate Algebraic Geometry](https://www.amazon.com/gp/product/B01CEKKASA/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01CEKKASA&linkId=1378399d553b5bd7b5489ee340df9fb2)
+- :fa-book: _Reid_, **Undergraduate Algebraic Geometry**
 	- Great introduction to the field, weaves in a lot of history and classical results.
 
-- :fa-book: _Hartshone_,  [Algebraic Geometry](https://www.amazon.com/gp/product/0387902449/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0387902449&linkId=eff72560055aac9a8b2a525ab7b45b47)
+- :fa-book: _Hartshone_,  **Algebraic Geometry**
 	- Seems to be regarded as a pretty standard reference.
 
 <details markdown="1">
@@ -445,16 +445,16 @@
 
 ## Differential Geometry / Manifolds
 
-- :fa-book: _Spivak_, [Calculus on Manifolds](https://www.amazon.com/gp/product/0805390219/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0805390219&linkId=d7cce2895c47afe764b0ce79d888a506)
+- :fa-book: _Spivak_, **Calculus on Manifolds**
 	- A good follow-up to Spivak's Calculus book, the exposition is at an undergraduate level. Worth checking out if you like his style.
 
-- :fa-book: :fa-star: _Lee_, [Introduction to Smooth Manifolds](https://www.amazon.com/gp/product/1441999817/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=1441999817&linkId=afdfc509ff8cb5a157d81a422cdf59b1)
+- :fa-book: :fa-star: _Lee_, **Introduction to Smooth Manifolds**
 	- The gold standard.
 
 - :fa-tv: :fa-star: _Frederic Schuller_, [International Winter School on Gravity and Light 2015](https://www.youtube.com/watch?v=7G4SqIboeig)
 	- This guy is just phenomenal!
 
-- :fa-book: _Manfredo do Carmo_, [Riemannian Geometry](https://www.amazon.com/gp/product/B017WQJ42Y/ref=as_li_tl?ie=UTF8&tag=dzackgarza-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B017WQJ42Y&linkId=72a9cad165ace8e2a5844e18fe45211e)
+- :fa-book: _Manfredo do Carmo_, **Riemannian Geometry**
 
 <details markdown="1">
 **Content**
