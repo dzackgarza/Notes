@@ -41,7 +41,7 @@
 - :fa-book: _Spivak_, [Calculus](https://www.amazon.com/gp/product/0914098918/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0914098918&linkId=6e5af9b5340ff7f74c580ed8869d31f9)
 	- Exposition is a little more advanced, and closer to introductory real analysis. Good for an honors-level course, or if you want to see a more "rigorous" exposition of the topics from Stewart.
 
-- :fa-book: _Apostol_, [Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra](https://www.amazon.com/gp/product/0471000051/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0471000051&linkCode=as2&tag=dzackgarza-20&linkId=5393e3e618e343c64e13b392200bb8b1)
+- :fa-book: _Apostol_, **Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra**
 	- A good alternative to Spivak.
 
 - :fa-tv: [patrickJMT](https://www.youtube.com/user/patrickJMT/videos)
@@ -58,7 +58,7 @@
 
 ## Multiviarable / Vector Calculus
 
-- :fa-book: :fa-star: _Schey_, [Div, Grad, Curl, and All That: An Informal Text on Vector Calculus](https://www.amazon.com/gp/product/0393925161/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0393925161&linkId=7d9d356912d7c9296c20c4cda5dd5837)
+- :fa-book: :fa-star: _Schey_, **Div, Grad, Curl, and All That: An Informal Text on Vector Calculus**
 	- Most textbooks introduce these operators in a very formal way; this text expands and motivates these definitions greatly.
 
 - :fa-tv: :fa-star: [MIT OCW Denis Auroux](https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/)
@@ -76,16 +76,16 @@
 
 ## Linear Algebra
 
-- :fa-book: :fa-star: _Axler_, [Linear Algebra Done Right](https://www.amazon.com/gp/product/3319110799/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=3319110799&linkId=eb9410dc5d589a51d13160ce65c9dff8)
+- :fa-book: :fa-star: _Axler_, **Linear Algebra Done Right**
 	- This subject is usually taught as a bag of computational tricks and algorithms, which obscures the absolute beauty of the subject -- this text motivates the theory nicely and shows how powerful it can be.
 
-- :fa-book: :fa-star: _Goode and Annin_, [Differential Equations and Linear Algebra](https://www.amazon.com/gp/product/0130457949/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0130457949&linkId=b72706b7edf00e16d825b413e1905040)
+- :fa-book: :fa-star: _Goode and Annin_, **Differential Equations and Linear Algebra**
 	- Good balance of rigor vs. brevity and computation vs. theory. Very concise, gives you what you need to start calculating, but also takes time to list vector space axioms, mentions fields, a nice way of viewing the determinant formula, and (best of all) lists of many conditions that are equivalent to a matrix being singular or non-singular.
 
-- :fa-book: _Anton_, [Elementary Linear Algebra](https://www.amazon.com/gp/product/1118473507/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=1118473507&linkId=67a5c553b282419109a3bbfdbba97406)
+- :fa-book: _Anton_, **Elementary Linear Algebra**
 	- Has an entire chapter on many cool applications of Linear Algebra -- things like graph theory, computer graphics, and Google's Pagerank algorithm. Also has a lot of "historical note" blurbs that are pretty interesting.
 
-- :fa-book: _Strang_, [Introduction to Linear Algebra](https://www.amazon.com/gp/product/0980232775/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0980232775&linkId=c4ee2ff3cdae059275e5a9370d59594d)
+- :fa-book: _Strang_, **Introduction to Linear Algebra**
 	- Strang is a giant in the world of linear algebra, so it's worth seeing how he approaches the subject.
 
 - :fa-tv: [MIT OCW: Linear Algebra with Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
@@ -102,7 +102,7 @@
 
 ## Ordinary Differential Equations
 
-- :fa-book: :fa-star: _Goode and Annin_, [Differential Equations and Linear Algebra](https://www.amazon.com/gp/product/0130457949/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0130457949&linkId=b72706b7edf00e16d825b413e1905040)
+- :fa-book: :fa-star: _Goode and Annin_, **Differential Equations and Linear Algebra**
 	- Good precisely because it sets up the language of linear algebra first, making many concepts in ODEs much easier to explain and understand (e.g. solutions as eigenfunctions of derivative operators).
 
 - :fa-tv: [MIT OCW: Differential Equations](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/index.htm)
