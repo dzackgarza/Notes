@@ -284,8 +284,7 @@ Punchline: Helle's theorem, in any collection of convex subsets of $\RR^n$, if a
 ## The Topology Side
 *feat. Dan Margalit*
 
-Theorems they proved:
-What is a homeomorphism?
+Theorems they proved: What is a homeomorphism?
 
 Fix an $n\dash$manifold $M$, $n\geq 2$ let 
 $$
