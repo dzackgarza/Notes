@@ -227,7 +227,8 @@ Look at the vertical bundle over $T$, you get $\RR^2 \to E \to T$.
 
 So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so 
 $$
-e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\mathrm{Mod} \Sigma_g; \QQ)$. But that
+e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\mathrm{Mod} \Sigma_g; \QQ).
+$$ 
 
 Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
 
