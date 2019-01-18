@@ -3,8 +3,8 @@
         "English (American)"
     ],
     "spellright.documentTypes": [
+        "markdown",
         "latex",
-        "plaintext",
-        "markdown"
+        "plaintext"
     ]
 }
