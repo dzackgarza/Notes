@@ -49,7 +49,7 @@ $\dim X = 2: K_3$ surface, only one topological type (all diffeomorphic)
 $\dim X = 3$: Many, suspected to be finite (around 500 million possibly!), unknown if infinite.
 
 Hodge numbres
-- $h^{?,?}$: Number of deformations
+- $h^{?,?}$: Number of defmators
 - $h^{1,1}(X)$: Number of independent curve classes
 
 Physicists interested in $CY\dash$threefolds with small Hodge numbers (bidegree < 20)
