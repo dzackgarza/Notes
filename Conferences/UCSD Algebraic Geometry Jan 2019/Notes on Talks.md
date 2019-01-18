@@ -40,7 +40,8 @@ Keywords:
 - Group scheme
 - Lefschetz fibration
 
-Definition: A Calabi-Yau manifold is a complex project manifold $X$ with a trivial canonical class, where $H^k(X, \mathcal{O}_X) = 0$ for $k=0,n$.
+Definition: A Calabi-Yau manifold is a complex project manifold $X$ with a trivial canonical class, where 
+$H^k(X, \mathcal{O}_X) = 0$ for $k=0,n$.
 
 Example: the quintic.
 
