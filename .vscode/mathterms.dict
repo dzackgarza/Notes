@@ -7,3 +7,5 @@ Lipschitz
 nullspace
 rowspace
 columnspace
+eigenspace
+invertibility
