@@ -29,7 +29,7 @@
 - Single Variable Optimization
 - Taylor Series
 - Linear Approximations
-- 
+
 
 ### Integral
 - Riemann Sum Definition of the Integral
