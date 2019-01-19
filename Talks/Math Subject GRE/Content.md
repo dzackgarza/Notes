@@ -106,7 +106,7 @@
 ## Number Theory
 - Prime decomposition
 - Divisibility
-- Modular congruences
+- Modular congruence
 - Euler's Totient function
 - Fermat's Little Theorem
 - The Chinese Remainder Theorem
