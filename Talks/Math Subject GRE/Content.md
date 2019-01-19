@@ -23,7 +23,7 @@
 	- $x^n, e^x, \sin, \cos,$ etc
 - Mean Value Theorem
 - Extreme Value Theorem
-- Rolle Theorem
+- Rolle's Theorem
 - Implicit Differentiation
 - Related Rates
 - Single Variable Optimization
