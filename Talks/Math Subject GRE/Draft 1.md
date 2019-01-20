@@ -85,6 +85,6 @@
 	- Eat relatively healthy before the exam. Be sure to have breakfast the morning of the exam too!
 	- Stay hydrated, drink water (but not too much -- remember, no restroom breaks during the exam)
 	- Don't stress too much - this exam isn't a barrier, it is a chance to revisit a great deal of fun mathematics and show grad schools how far you've come and how much you've learned during your degree!
-		- Note: I think graduate schools mostly just want to see that you don't totally tank this exam, because in many cases, grad students will be TAing the very courses covered in this exam. Also, remember that there are many grad programs that do not require the exam at all!
+		- Note: I think graduate schools mostly just want to see that you don't totally tank this exam, because in many cases, grad students will be TA-ing the very courses covered in this exam. Also, remember that there are many grad programs that do not require the exam at all!
 
 @import "Content.md"
