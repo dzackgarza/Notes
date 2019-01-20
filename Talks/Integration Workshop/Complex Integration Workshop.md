@@ -184,7 +184,7 @@ Keep this equation in mind! We will come back to it.
 
 First, to make sure this technique will go through as desired, we'll want to make sure (and show!) that the integral around $C_R$ goes to zero in the limit. This means we'll need two quantities - the length of $C_R$, and the supremum of $f(z)$ along it.
 
-By design, we've chosen $C_R$ to be easy to work with - in particular, the arc length will just be half of the circumference. Since the latter is $2\pi R$, the former is just $\pi R$.
+By design, we've chosen $C_R$ to be easy to work with -- in particular, the arc length will just be half of the circumference. Since the latter is $2\pi R$, the former is just $\pi R$.
 
 To compute the supremum, note that we can write any point on $C_R$ as $z=Re^{i\theta}$ where $\theta \in [0, \pi]$, and so $\left\lvert z\right\rvert = \left\lvert R e^{i\theta}\right\rvert = \left\lvert {R}\right\rvert \left\lvert e^{i\theta} \right\rvert = \left\lvert R \right\rvert$, since $e^{i\theta}$ is just a point on the unit circle and thus has modulus 1. We can then conclude that
 $$
