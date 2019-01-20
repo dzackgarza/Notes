@@ -1,4 +1,4 @@
-Notation: $z = a + ib, f(z) = u(x,y) + iv(x,y)$
+Notation: $z = a + ib, f(z) = u(x, y) + iv(x, y)$
 
 ## Useful Equations and Definitions
 $$\begin{align*}
