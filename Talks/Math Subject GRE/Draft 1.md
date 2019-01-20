@@ -69,7 +69,7 @@
 	- It is tempting to thoroughly solve each problem you're given, but this is not always necessary.
 		- Example: if you're asked to compute an indefinite integral, it may be faster to just take the derivative of all 5 answers to see which matches the integrand.
 	- Use the multiple choice format to your advantage -- they often have hints for what constants might appear in the answer, or hint at a technique to use.
-		- Similar strategy to general GRE reading sections - look at answer choices *before* reading question, so you've already framed what you're looking for
+		- Similar strategy to general GRE reading sections -- look at answer choices *before* reading question, so you've already framed what you're looking for
 	- If you eliminate 4 choices with 100% confidence, then the answer **must** be the remaining choice. No need to check!
 
 - Practice Exams
