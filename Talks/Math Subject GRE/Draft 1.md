@@ -36,7 +36,7 @@
 	- No restroom breaks!!
 
 # References
-- Garrity, [All the Mathematics You Missed (But Need to Know for Graduate School](https://www.amazon.com/All-Mathematics-You-Missed-Graduate/dp/0521797071)
+- Garrity, [All the Mathematics You Missed (But Need to Know for Graduate School)](https://www.amazon.com/All-Mathematics-You-Missed-Graduate/dp/0521797071)
 - The Princeton Review, [Cracking the Math GRE Subject Test](https://www.amazon.com/Cracking-GRE-Mathematics-Subject-Test/dp/0375429727)
 	- Note: ETS corporate headquarters is in Princeton, so.
 - Official Practice Exams
