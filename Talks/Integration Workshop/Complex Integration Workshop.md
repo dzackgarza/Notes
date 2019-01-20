@@ -182,7 +182,7 @@ $$
 $$
 Keep this equation in mind! We will come back to it.
 
-First, to make sure this technique will go through as desired, we'll want to make sure (and show!) that the integral around $C_R$ goes to zero in the limit. This means we'll need two quantities - the length of $C_R$, and the supremum of $f(z)$ along it.
+First, to make sure this technique will go through as desired, we'll want to make sure (and show!) that the integral around $C_R$ goes to zero in the limit. This means we'll need two quantities -- the length of $C_R$, and the supremum of $f(z)$ along it.
 
 By design, we've chosen $C_R$ to be easy to work with -- in particular, the arc length will just be half of the circumference. Since the latter is $2\pi R$, the former is just $\pi R$.
 
