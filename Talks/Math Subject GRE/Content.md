@@ -132,7 +132,7 @@
 
 ## Probability
 - Common distributions
-- Density functions (PDF, CDF)
+- Density functions (Probability Density Functions, Cumulative Density Functions)
 - Expected Value, linearity of expectation
 - Variance
 - Standard Deviation
