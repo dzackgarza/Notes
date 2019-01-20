@@ -176,7 +176,7 @@ I = \int_{-\infty}^\infty \frac{1}{x^6+1} ~dx
 $$
 We'll use the semicircle contour $\Gamma_R = L_R + C_R$ from above. Letting $f(x) = \frac{1}{x^6+1}$ and thus $f(z) = \frac{1}{z^6+1}$, we then know that
 $$
-\begin{equation}\tag{2}\label{main2}
+\begin{equation}\tag{2}
 \int_{-\infty}^\infty \frac{1}{x^6+1} dx = \lim_{R \to \infty} \left( \oint_{\Gamma_R} \frac{1}{z^6+1} ~dz - \int_{C_R} \frac{1}{z^6+1} ~dz \right)
 \end{equation}
 $$
