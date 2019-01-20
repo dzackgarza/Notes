@@ -138,7 +138,7 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
   \oint f(z) ~dz = 2\pi i \sum_{z_i \in S_f} \mathrm{Res}(f, z_i)
   $$
   ​	  where $S_f$ is the set of poles of $f$ and $\mathrm{Res}(f, z_i)$ is the residue of $f$ at $z_i$.
-    - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right hand side e.g. just expand Laurent series about $z_i$, or:
+    - Used as an alternative to Cauchy's Integral Formula, many ways to compute the residues on the right-hand side e.g. just expand Laurent series about $z_i$, or:
 
   - **The Residue Computation Workhorse:**
     Supposing that $f(z)$ can be written as a rational function $f(z)= \frac{p(z)}{q(z)}$ , where $z_0$ is a simple pole (so that $p(z_0) \neq 0$ but $q(z_0) = 0$) and the following expression makes sense , we have
