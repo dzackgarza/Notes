@@ -76,7 +76,7 @@
 	- There are 5 official exams out there (see reference section) with solutions.
 	- Take all of them! Time yourself! All include scoring rubric to compute your percentile, so score yourself too.
 		- Note: 3 hour exams can be mentally exhausting if you are not used to them. Practicing is essential to get your mental stamina up.
-	- Note that all of the released exams are significantly easier than the actual exams.
+	- Note that all the released exams are significantly easier than the actual exams.
 	- Aim to complete practice exams within 2 hours at around the 90th percentile.
 
 - Self Care
