@@ -91,7 +91,7 @@ $\gamma$ will denote a single contour (draw) while $\Gamma$ will denote a contou
 
   - General line/path integrals are not much easier to compute, but complex integrals around *closed contours* are. So pick a closed contour that includes $L_R$ - in this case, we’ll take half-circle of radius $R$ in the upper half plane, $C_R$:
 
-    ![1545857433852](/home/zack/SparkleShare/github.com/Notes/assets/circular_contour.png)
+![1545857433852](/home/zack/SparkleShare/github.com/Notes/assets/circular_contour.png)
     Taking this clockwise, we'll write it as $\Gamma_R = L_R + C_R$ Note: this is not the only contour that works! 
 
   - We can then write
