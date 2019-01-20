@@ -23,7 +23,7 @@ x^z &\definedas e^{z\ln x} \\
 - $n\dash$th roots:
 $$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
 
-### Differentiability
+### Complex Differentiability
 $$
 z' = \lim_{h\to 0} \frac{f(z+h)-f(z)}{h}
 $$
