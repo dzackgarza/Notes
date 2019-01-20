@@ -66,7 +66,7 @@
 	- But note that because there are 5 choices, blindly guessing still has *negative expected value*!
 	- So to break even (zero expected value), you need to eliminate at least one incorrect choice from each question.
 - Choice elimination
-	- It is tempting to thoroughly solve each problem you're given, but this is not always necessary.
+	- It is tempting to thoroughly solve each problem you are given, but this is not always necessary.
 		- Example: if you're asked to compute an indefinite integral, it may be faster to just take the derivative of all 5 answers to see which matches the integrand.
 	- Use the multiple choice format to your advantage -- they often have hints for what constants might appear in the answer, or hint at a technique to use.
 		- Similar strategy to general GRE reading sections -- look at answer choices *before* reading question, so you've already framed what you're looking for
