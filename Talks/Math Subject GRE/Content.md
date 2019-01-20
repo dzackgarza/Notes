@@ -96,7 +96,7 @@
 	- Number of possible solutions
 - Determinant: Computation and Properties
 - Trace: Computation and Properties
-- Row-reducing algorithm / Gaussian Elimination / Redcuced Row-Echelon Form
+- Row-reducing algorithm / Gaussian Elimination / Reduced Row-Echelon Form
 - Computing nullspace/rowspace/columnspace
 	- As well as nullity/rank
 - Finding eigenvalues and the eigenspace
