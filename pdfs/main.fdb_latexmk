@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1547944648 "/home/zack/SparkleShare/github.com/Notes/Class_Notes/Complex Analysis/Review/main.tex" "/home/zack/Notes/pdfs/main.pdf" "main" 1547944648
-  "/home/zack/Notes/pdfs/main.aux" 1547944648 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/zack/SparkleShare/github.com/Notes/Class_Notes/Complex Analysis/Review/main.tex" 1547944648 15633 1cf8ecfac18e9b0a974e73e11065beff ""
+["pdflatex"] 1547944653 "/home/zack/SparkleShare/github.com/Notes/Class_Notes/Complex Analysis/Review/main.tex" "/home/zack/Notes/pdfs/main.pdf" "main" 1547944653
+  "/home/zack/Notes/pdfs/main.aux" 1547944649 2509 b08507f757b8560a1566e9dcb11a6797 ""
+  "/home/zack/SparkleShare/github.com/Notes/Class_Notes/Complex Analysis/Review/main.tex" 1547944653 15634 4b9cd04160744ab366c2f3a48623e84f ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1543696176 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1543696176 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1543696176 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -102,7 +102,7 @@
   "fluid.png" 1540344039 5388 f1645051534d4c083a547bece3b7d7f0 ""
   "heat-eqn.png" 1540344039 3934 dd7cce7c314db6708bd6f8ad7073c328 ""
   "log.png" 1540344039 8060 dd91b724697e527f418cc70cb420c7f2 ""
-  "main.tex" 1547944648 15633 1cf8ecfac18e9b0a974e73e11065beff ""
+  "main.tex" 1547944653 15634 4b9cd04160744ab366c2f3a48623e84f ""
   "sin.png" 1540344039 7331 aad7f32cfa94165c92dff7abd8caa608 ""
   (generated)
   "/home/zack/Notes/pdfs/main.aux"
