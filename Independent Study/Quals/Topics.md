@@ -114,7 +114,7 @@ Ring Theory: (commutative case)
 - duality and bilinear pairings
 - esp. symmetric and alternating forms.
 
-Field Theory. General field theory including 
+Field Theory. 
 - separable and inseparable extensions
 - normal extensions
 - transcendental extensions
