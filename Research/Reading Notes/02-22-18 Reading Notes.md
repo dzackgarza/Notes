@@ -141,7 +141,7 @@ $J: \pi_k(SO^n) \to \pi_{n+k} S^n$
 
 
 # Homotopy of Infinite Grassmannian
-![Homotopy of infinite grassmannian](assets/2-22ReadingNotes-f759d.png)
+![Homotopy of infinite Grassmannian](assets/2-22ReadingNotes-f759d.png)
 
 
 ---
