@@ -190,7 +190,6 @@ Categories and Functors:
 Group Theory:
 - Classification of abelian groups
 - Dihedral groups
-- 
 - conjugacy 
 - factor groups
 - finitely generated groups and their presentations
@@ -207,6 +206,14 @@ Group Theory:
 - symmetric groups and permutation representations; 
 - the isomorphism theorems; 
 - the Sylow theorems
+- [basic properties of groups; dihedral groups; cycle decomposition and symmetric groups;
+subgroups, cosets, and Lagrange’s Theorem; cyclic groups and subgroups; subgroup lat-
+tice; quotient groups and normal subgroups; Isomorphism Theorems; Hölder Program and
+simple groups; transpositions, alternating groups; group actions, Cayley’s Theorem, Class
+Equation; Sylow’s Theorem and applications; simplicity of An ; direct products, the Fun-
+damental Theorem of Finitely Generated Abelian Groups and applications;] commutators,
+the derived series, solvable groups; semidirect products.
+
 
 Ring Theory: (commutative case)
 - Ideals and homomorphisms
