@@ -292,7 +292,7 @@ Galois Theory:
 field automorphisms
 - fixed fields 
 - the Fundamental Theorem of Galois Theory
-- application in examples of small degree
+- Compute galois groups for small degree examples
 - Galois theory of finite fields
 - abelian extensions of Q
 - Primitive Element Theorem
