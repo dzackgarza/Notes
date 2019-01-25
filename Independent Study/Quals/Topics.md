@@ -202,7 +202,9 @@ Analytic functions: Examples
 - Poisson integrals
 - Dirichlet problem for a disk
 - Harnack’s principle
-- Schwarz lemma and the hyperbolic metric. Compact families of analytic and harmonic functions: series and product developments
+- Schwarz lemma and the hyperbolic metric. 
+- Compact families of analytic and harmonic functions: 
+- series and product developments
 - Hurwitz theorem
 - Mittag-Leffler theorem
 - infinite products
