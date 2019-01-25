@@ -45,7 +45,7 @@ explicit solutions of simple equations.
 - LU decomposition.
 
 ## Analysis
-Topology of Rn and metric spaces; properties of continuous functions
+- Topology of Rn and metric spaces; properties of continuous functions
 - compactness
 - connectedness
 - limit points; least upper bound property of R. Sequences and series
