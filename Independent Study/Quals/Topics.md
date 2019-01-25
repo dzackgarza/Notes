@@ -46,7 +46,13 @@ explicit solutions of simple equations.
 - canonical forms. Systems of linear equations: solvability criteria
 - Gaussian elimination
 - row-reduced form
-- LU decomposition.
+- LU decomposition
+- 3.4. Linear algebra (Mathematics 110). Matrices, linear transformations, change of
+basis; nullity-rank theorem. Eigenvalues and eigenvectors; determinants, characteristic and
+minimal polynomials, Cayley-Hamilton theorem; diagonalization and triangularization of
+operators; Jordan normal form, rational canonical form; invariant subspaces and canonical
+forms; inner product spaces, hermitian and unitary operators, adjoints. Quadratic forms.
+
 
 ## Algebra
 - Groups
