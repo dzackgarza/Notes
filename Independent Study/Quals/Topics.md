@@ -59,9 +59,9 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - equicontinuity
 - countability and uncountability (e.g. of the reals)
 - spaces of functions. Basic arguments and theorems of undergraduate analysis using these concepts
-- Bolzano-Weierstrass
-- Stone-Weierstrass
-- Arzela-Ascoli theorems.
+- Bolzano-Weierstrass theorem
+- Stone-Weierstrass theorem
+- Arzela-Ascoli theorem
 Multivariable calculus: definition of differentiability in several variables (approximating linear transformation)
 - partial derivatives
 - chain rule
