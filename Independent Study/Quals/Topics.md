@@ -188,23 +188,23 @@ Categories and Functors:
 - products
 
 Group Theory:
-- homomorphisms
-- normal subgroups
-- factor groups
-- conjugacy 
-- the isomorphism theorems; 
-- group actions
-- the Sylow theorems
-- Jordan-Holder theorems; 
-- symmetric groups and permutation representations; 
-- free groups
-- nilpotent
-- solvable
-- simple groups
-- finitely generated groups and their presentations
 - Classification of abelian groups; 
-- semi-direct product groups 
+- conjugacy 
+- factor groups
+- finitely generated groups and their presentations
+- free groups
+- group actions
 - group extensions.
+- homomorphisms
+- Jordan-Holder theorems; 
+- nilpotent
+- normal subgroups
+- semi-direct product groups 
+- simple groups
+- solvable
+- symmetric groups and permutation representations; 
+- the isomorphism theorems; 
+- the Sylow theorems
 
 Ring Theory: (commutative case)
 - Ideals and homomorphisms
