@@ -189,6 +189,8 @@ Categories and Functors:
 
 Group Theory:
 - Classification of abelian groups
+- Dihedral groups
+- 
 - conjugacy 
 - factor groups
 - finitely generated groups and their presentations
