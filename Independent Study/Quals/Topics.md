@@ -210,14 +210,16 @@ Analytic functions: Examples
 - residue theorem
 - the argument principle
 - Rouche's theorem
-- and the evaluation of definite integrals. 
-- Harmonic functions: conjugate functions
+- The evaluation of definite integrals. 
+- Harmonic functions: 
+- conjugate functions
 - maximum principle
 - mean value property
 - Poisson integrals
 - Dirichlet problem for a disk
 - Harnack's principle
-- Schwarz lemma and the hyperbolic metric. 
+- Schwarz lemma 
+- the hyperbolic metric. 
 - Compact families of analytic and harmonic functions: 
 - series and product developments
 - Hurwitz theorem
