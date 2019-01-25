@@ -260,8 +260,8 @@ Representations of Groups
 - and the compact subsets of C(X)
 - approximate identities; 
 - Arzela-Ascoli theorem 
-- basic Fourier analysis 
-- basic functional analysis 
+- Fourier analysis 
+- Functional analysis 
 - closed graph theorem
 - convergence theorems 
 - convolutions on Rn
