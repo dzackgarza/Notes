@@ -155,8 +155,9 @@ Lebesgue integration; convergence theorems (uniform convergence
 - strong, weak, and weak* topologies 
 - Urysohn’s lemma
 - the Tychonoff theorem
-- the Baire Category theorem and the Stone-Weierstrass theorem. The spaces C(X)
-- the Riesz representation theorem
+- the Baire Category theorem and the Stone-Weierstrass theorem. 
+- The spaces C(X)
+- Riesz representation theorem
 - and the compact subsets of C(X)
 - (Arzela-Ascoli theorem); Hilbert space
 - self-adjoint linear operators and their spectra; Lp spaces (duality
