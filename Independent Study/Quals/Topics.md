@@ -275,6 +275,12 @@ Field Theory.
 - and algebraic closure; Galois theory
 - solvability by radicals
 - cyclic extensions and Kummer theory.
+- Field Theory:
+[field extensions, degrees, algebraic and transcendental extensions,] minimal polynomials
+of algebraic elements; straightedge and compass constructions; splitting fields and alge-
+braic closures; existence and uniqueness of finite fields; separable extensions; cyclotomic
+polynomials.
+
 
 Ring Theory: (non-commutative case) 
 - Semisimple rings
