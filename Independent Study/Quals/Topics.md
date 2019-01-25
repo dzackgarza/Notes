@@ -213,7 +213,8 @@ Group Theory:
 - Lagrange’s Theorem; 
 - cyclic groups and subgroups; 
 - subgroup lattice; 
-- quotient groups and normal subgroups; 
+- quotient groups 
+- normal subgroups; 
 - Isomorphism Theorems; 
 - Hölder Program and simple groups; 
 - transpositions
