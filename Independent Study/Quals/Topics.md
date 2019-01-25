@@ -299,8 +299,7 @@ field automorphisms
 - symmetric functions 
 - the Fundamental Theorem of Symmetric Functions
 - discriminants
-- roots of polynomials of
-degree ≤ 4
+- roots of polynomials of degree ≤ 4
 - solvable and radical extensions
 - insolvability of the quintic.
 
