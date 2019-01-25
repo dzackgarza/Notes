@@ -293,7 +293,8 @@ Representations of Groups
 - Riemann-Lebesgue lemma 
 - Riesz representation theorem
 - self-adjoint linear operators and their spectra; 
-- signed measures and Hahn decompositions); 
+- signed measures 
+- Hahn decompositions 
 - strong/weak/weak* topologies 
 - the Baire Category theorem 
 - The spaces C(X)
