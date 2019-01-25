@@ -79,7 +79,7 @@ Categories and Functors:
 - adjoint functors
 - products
 
-Group Theory: basic notions and results (esp. those pertaining to automorphisms
+Group Theory:
 - homomorphisms
 - normal subgroups
 - factor groups
