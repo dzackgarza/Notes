@@ -31,9 +31,8 @@ explicit solutions of simple equations.
 - solvability criteria
 - Cayley-Hamilton theorem; 
 - change of basis
-- change of basis and similarity of matrices
+- similarity of matrices
 - characteristic and minimal polynomials
-- determinant
 - determinants
 - diagonalization and triangularization of operators; 
 - diagonalization of hermitian and symmetric matrices
