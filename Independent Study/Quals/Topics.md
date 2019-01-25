@@ -204,9 +204,11 @@ Group Theory:
 - simple groups
 - solvable
 - symmetric groups and permutation representations; 
-- the isomorphism theorems; 
-- the Sylow theorems
-- dihedral groups; cycle decomposition and symmetric groups; subgroups
+- isomorphism theorems; 
+- Sylow theorems
+- dihedral groups; 
+- cycle decomposition and symmetric groups; 
+- subgroups
 - cosets
 - Lagrange’s Theorem; 
 - cyclic groups and subgroups; 
