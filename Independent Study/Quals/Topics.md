@@ -255,54 +255,54 @@ Representations of Groups
 - Peter-Weyl theorem.
 
 ## Real Analysis
-- Lebesgue integration; 
+  - convolutions on Rn
+  - orthonormal systems
+  - Plancherel's theorem
+  - trigonometric series
+- $L^p$ spaces
+- abstract measure theory;
+- and the compact subsets of C(X)
+- approximate identities; 
+- Arzela-Ascoli theorem 
+- basic Fourier analysis 
+- basic functional analysis 
+- closed graph theorem
 - convergence theorems 
-- uniform convergence
+- covering lemmas and differentiation of measures 
+- distribution functions
 - Egoroff's theorem
-- Lusin’s theorem
-- Lebesgue dominated convergence theorem
-- monotone convergence theorem
 - Fatou’s lemma
 - Fubini’s theorem; 
-- covering lemmas and differentiation of measures 
-- Lebesgue decomposition theorem
-- Radon-Nikodym theorem
-- Jordan decomposition theorem
-- relations to functions of bounded variation
-- signed measures and Hahn decompositions); 
-- approximate identities; 
-- basic functional analysis 
-- linear functionals
 - Hahn-Banach theorem
-- open mapping theorem
-- closed graph theorem
-- uniform boundedness principle
-- strong/weak/weak* topologies 
-- Urysohn’s lemma
-- the Tychonoff theorem
-- the Baire Category theorem 
-- the Stone-Weierstrass theorem. 
-- The spaces C(X)
-- Riesz representation theorem
-- and the compact subsets of C(X)
-- Arzela-Ascoli theorem 
+- Hausdorff measures
 - Hilbert space
-- self-adjoint linear operators and their spectra; 
-- $L^p$ spaces
-- distribution functions
-- weak $L^p$ spaces
 - Holder’s inequality
 - Jensen’s inequality
+- Jordan decomposition theorem
+- Lebesgue decomposition theorem
+- Lebesgue dominated convergence theorem
+- Lebesgue integration; 
+- linear functionals
 - linear operators); 
-- basic Fourier analysis 
-  - orthonormal systems
-  - trigonometric series
-  - convolutions on Rn
-  - Plancherel's theorem
-- Riemann-Lebesgue lemma 
+- Lusin’s theorem
+- monotone convergence theorem
+- open mapping theorem
 - Poisson summation formula 
-- abstract measure theory;
-- Hausdorff measures
+- Radon-Nikodym theorem
+- relations to functions of bounded variation
+- Riemann-Lebesgue lemma 
+- Riesz representation theorem
+- self-adjoint linear operators and their spectra; 
+- signed measures and Hahn decompositions); 
+- strong/weak/weak* topologies 
+- the Baire Category theorem 
+- The spaces C(X)
+- the Stone-Weierstrass theorem. 
+- the Tychonoff theorem
+- uniform boundedness principle
+- uniform convergence
+- Urysohn’s lemma
+- weak $L^p$ spaces
 
 ## Complex Analysis
 Analytic functions: Examples
