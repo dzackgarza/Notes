@@ -361,6 +361,7 @@ Representations of Groups
 - covering lemmas 
 - differentiation of measures 
 - distribution functions
+- dominated convergence theorem
 - Egoroff's theorem
 - Fatou’s lemma
 - Fubini’s theorem; 
