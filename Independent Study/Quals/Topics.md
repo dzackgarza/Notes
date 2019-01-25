@@ -265,7 +265,8 @@ Representations of Groups
 - closed graph theorem
 - convergence theorems 
 - convolutions on $\RR^n$
-- covering lemmas and differentiation of measures 
+- covering lemmas 
+- differentiation of measures 
 - distribution functions
 - Egoroff's theorem
 - Fatou’s lemma
