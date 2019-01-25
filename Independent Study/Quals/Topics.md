@@ -112,6 +112,7 @@ explicit solutions of simple equations.
 - convergence of sequences of numbers and functions
 - the derivative
 - differentiation under the integral sign
+- Dini's Theorem
 - Fourier series. 
 - epsilon-delta arguments
 - equality of mixed partials
