@@ -179,7 +179,7 @@ Lebesgue integration; convergence theorems (uniform convergence
 - $L^p$ spaces
 - distribution functions
 - weak $L^p$ spaces
-- Hölder’s inequality
+- Holder’s inequality
 - Jensen’s inequality
 - linear operators); basic Fourier analysis (orthonormal systems
 - trigonometric series
