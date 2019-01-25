@@ -50,7 +50,7 @@ explicit solutions of simple equations.
 - LU decomposition
 - nullity-rank theorem. 
 - orthogonal and unitary matrices
-- orthogonality and
+- orthogonality 
 - orthonormality
 - Quadratic forms
 - quadratic forms and symmetric matrices
