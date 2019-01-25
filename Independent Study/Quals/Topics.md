@@ -50,7 +50,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - fixed point theory
 - with applications to Newton's method and solutions of non-linear equations
 - numerical integration with error estimation.
-- primarily in R^n: open and closed sets
+- open and closed sets
 - completeness
 - convergence of sequences of numbers and functions
 - closure
