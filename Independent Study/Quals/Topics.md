@@ -29,7 +29,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - LU decomposition.
 
 ## Analysis
-One-variable calculus foundations: completeness of the real numbers
+- completeness of the real numbers
 - sequences
 - series
 - limits
