@@ -52,7 +52,10 @@ Topology of Rn and metric spaces; properties of continuous functions
 - Cauchy sequences
 - uniform convergence and its relation to derivatives and integrals; power series
 - radius of convergence
-- Weierstrass M -test; convergence of improper integrals. Compactness in functions spaces. Inverse and implicit function theorems and applications; the derivative as a linear map; existence and uniqueness theorems for solutions of ordinary differential equations; elementary Fourier series. Texts: Rosenlicht
+- Weierstrass M -test; 
+- convergence of improper integrals. 
+- Compactness in functions spaces. 
+- Inverse and implicit function theorems and applications; the derivative as a linear map; existence and uniqueness theorems for solutions of ordinary differential equations; elementary Fourier series. Texts: Rosenlicht
 - Introduction to analysis
 - Dover; Marsden
 - Elementary classical analysis
