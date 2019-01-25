@@ -204,19 +204,19 @@ Analytic functions: Examples
 - Casorati-Weierstrass theorem
 - open mapping theorem
 - maximum principle
-- Morera’s theorem
+- Morera's theorem
 - Schwarz reflection principle. 
 - Cauchy’s theorem on multiply connected domains
 - residue theorem
 - the argument principle
-- Rouche’s theorem
+- Rouche's theorem
 - and the evaluation of definite integrals. 
 - Harmonic functions: conjugate functions
 - maximum principle
 - mean value property
 - Poisson integrals
 - Dirichlet problem for a disk
-- Harnack’s principle
+- Harnack's principle
 - Schwarz lemma and the hyperbolic metric. 
 - Compact families of analytic and harmonic functions: 
 - series and product developments
