@@ -194,7 +194,7 @@ Analytic functions: Examples
 - Cauchy’s theorem on multiply connected domains
 - residue theorem
 - the argument principle
-- Rouch´e’s theorem
+- Rouche’s theorem
 - and the evaluation of definite inte- grals. Harmonic functions: conjugate functions
 - maximum principle
 - mean value property
