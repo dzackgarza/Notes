@@ -6,6 +6,11 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 # Prelim Level
 
 ## Calculus
+3.1. Calculus (Mathematics 1A-1B-53-54). Basic first- and second-year calculus. Deriva-
+tives of maps from Rm to Rn , gradient, chain rule; maxima and minima, Lagrange multipli-
+ers; line and surface integrals of scalar and vector functions; Gauss’s, Green’s and Stokes’
+theorems. Ordinary differential equations; explicit solutions of simple equations.
+
 
 ## Linear Algebra
 - Vector spaces
