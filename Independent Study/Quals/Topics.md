@@ -281,7 +281,8 @@ Field Theory.
 - algebraic and transcendental extensions
 - minimal polynomials of algebraic elements
 - straightedge and compass constructions
-- splitting fields and algebraic closures
+- splitting fields 
+- algebraic closures
 - existence and uniqueness of finite fields
 - separable extensions
 - cyclotomic polynomials.
