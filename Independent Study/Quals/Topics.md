@@ -276,7 +276,7 @@ Analytic functions: Examples
 - Riemannian metrics
 - gradients
 - volume forms
--  and the interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
+- interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
 
 ### Algebraic topology: 
 Basic concepts of homotopy theory
