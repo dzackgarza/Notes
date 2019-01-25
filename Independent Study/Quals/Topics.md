@@ -289,7 +289,9 @@ Field Theory.
 
 Galois Theory:
 Galois Theory:
-field automorphisms, fixed fields and the Fundamental Theorem of Galois Theory, appli-
+field automorphisms
+- fixed fields and the Fundamental Theorem of Galois Theory
+- appli-
 cation in examples of small degree; Galois theory of finite fields; abelian extensions of Q;
 Primitive Element Theorem; Fundamental Theorem of Algebra; symmetric functions and
 the Fundamental Theorem of Symmetric Functions; discriminants; roots of polynomials of
