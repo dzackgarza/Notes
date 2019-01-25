@@ -247,11 +247,13 @@ Analytic functions: Examples
 ## Topology
 
 ### Differential topology: 
-manifolds
+- manifolds
 - tangent vectors
 - smooth maps
-- tangent bundle and vector bundles in general
-- vector fields and integral curves
+- tangent bundle 
+- vector bundles in general
+- vector fields 
+- integral curves
 - Sard’s Theorem on the measure of critical values
 - embedding theorem
 - transversality
