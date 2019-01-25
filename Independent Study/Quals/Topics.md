@@ -235,6 +235,6 @@ Analytic functions: Examples
 - the Dirichlet problem 
 - The monodromy theorem 
 - Picard’s theorem. 
-- Elementary facts about elliptic functions.
+- elliptic functions.
 
 ## Topology
