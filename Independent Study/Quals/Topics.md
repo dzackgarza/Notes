@@ -97,7 +97,7 @@ explicit solutions of simple equations.
 
 ---
 
-# Qual Level
+# Qualifying Exam Level
 
 ## Algebra
 Categories and Functors: 
