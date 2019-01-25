@@ -51,7 +51,7 @@ groups. Examples: permutation groups, cyclic groups, dihedral groups, matrix gro
 sic properties of rings, units, ideals, homomorphisms, quotient rings, prime and maximal
 ideals, fields of fractions, Euclidean domains, principal ideal domains and unique factoriza-
 tion domains, polynomial rings. Elementary properties of finite field extensions and roots
-of polynomials, finite fields. Texts: Lang, Algebra, Addison-Wesley; Hungerford, Algebra,
+of polynomials, finite fields.
 
 
 ## Analysis
