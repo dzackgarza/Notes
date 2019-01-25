@@ -54,12 +54,10 @@ Groups
 - normal subgroups
 - homomorphisms
 - quotient groups
-- automor-
-phisms
+- automorphisms
 - groups acting on sets
 - Sylow theorems and applications
-- finitely generated abelian
-groups. Examples: permutation groups
+- finitely generated abelian groups. Examples: permutation groups
 - cyclic groups
 - dihedral groups
 - matrix groups. Ba-
