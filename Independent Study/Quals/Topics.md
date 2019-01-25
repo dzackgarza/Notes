@@ -134,7 +134,7 @@ Ring Theory: (non-commutative case)
 - group rings.
 
 Representations of Groups
-- esp. finite groups. Basic definitions
+- esp. finite groups. 
 - matrix coefficients
 - Schur orthogonality
 - invariant inner products and complete reducibility of representations
