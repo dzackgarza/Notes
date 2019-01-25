@@ -57,15 +57,8 @@ Topology of Rn and metric spaces; properties of continuous functions
 - Compactness in functions spaces. 
 - Inverse and implicit function theorems and applications; 
 - the derivative as a linear map; 
-- existence and uniqueness theorems for solutions of ordinary differential equations; elementary Fourier series. Texts: Rosenlicht
-- Introduction to analysis
-- Dover; Marsden
-- Elementary classical analysis
-- Freeman; Bartle
-- Elements of real analysis
-- Wiley; Rudin
-- Principles of mathematical analysis
-- McGraw-Hill.
+- existence and uniqueness theorems for solutions of ordinary differential equations; 
+- elementary Fourier series. 
 
 # Qual Level
 
