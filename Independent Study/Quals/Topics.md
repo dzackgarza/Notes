@@ -82,7 +82,7 @@ Categories and Functors: basic definitions and examples
 - products
 
 Group Theory: basic notions and results (esp. those pertaining to automorphisms
--  homomorphisms
+- homomorphisms
 - normal subgroups
 - factor groups
 - and conjugacy); the isomorphism theorems; group actions
