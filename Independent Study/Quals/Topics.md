@@ -311,7 +311,9 @@ Ring Theory: (non-commutative case)
 - non-semisimple rings
 - indecomposable modules 
 - Krull-Schmidt theorem; 
-- group rings.
+- group rings
+
+Module Theory:
 
 Representations of Groups
 - esp. finite groups. 
