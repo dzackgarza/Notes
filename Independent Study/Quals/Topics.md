@@ -199,7 +199,6 @@ Group Theory:
 - cyclic groups and subgroups; 
 - derived series
 - Dihedral groups
-- dihedral groups; 
 - direct products
 - factor groups
 - finitely generated groups and their presentations
