@@ -73,8 +73,9 @@ Groups
 - Euclidean domains
 - principal ideal domains 
 - unique factorization domains
-- polynomial rings. Elementary properties of finite field extensions and roots
-of polynomials
+- polynomial rings 
+- finite field extensions
+- roots of polynomials
 - finite fields.
 
 
