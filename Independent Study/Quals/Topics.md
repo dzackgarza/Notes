@@ -308,50 +308,50 @@ Representations of Groups
 
 ## Complex Analysis
 - Analytic functions
-- sums of power series
-- exponential and logarithm functions
-- Mobius transformations and spherical representation. 
-- Cauchy’s theorem: Goursat’s proof
-- consequences of Cauchy integral formula
-- such as Liouville's theorem
-- isolated singularities
 - Casorati-Weierstrass theorem
-- open mapping theorem
-- maximum principle
-- Morera's theorem
-- Schwarz reflection principle. 
 - Cauchy’s theorem on multiply connected domains
-- residue theorem
-- the argument principle
-- Rouche's theorem
-- The evaluation of definite integrals. 
-- Harmonic functions: 
+- Cauchy’s theorem: Goursat’s proof
+- Compact families of analytic and harmonic functions: 
+- Conformal mappings
 - conjugate functions
+- consequences of Cauchy integral formula
+- Dirichlet problem for a disk
+- Elementary mappings
+- elliptic functions.
+- exponential and logarithm functions
+- Harmonic functions: 
+- Harnack's principle
+- Hurwitz theorem
+- infinite products
+- isolated singularities
+- mapping of polygons
+- mappings of finitely connected domains. 
+- maximum principle
 - maximum principle
 - mean value property
-- Poisson integrals
-- Dirichlet problem for a disk
-- Harnack's principle
-- Schwarz lemma 
-- the hyperbolic metric. 
-- Compact families of analytic and harmonic functions: 
-- series and product developments
-- Hurwitz theorem
 - Mittag-Leffler theorem
-- infinite products
-- Weierstrass product theorem
-- Poisson- Jensen formula. 
-- Conformal mappings
-- Elementary mappings
-- Riemann mapping theorem
-- mapping of polygons
-- reflections across analytic boundaries
-- mappings of finitely connected domains. 
-- Subharmonic functions 
-- the Dirichlet problem 
-- The monodromy theorem 
+- Mobius transformations and spherical representation. 
+- Morera's theorem
+- open mapping theorem
 - Picard’s theorem. 
-- elliptic functions.
+- Poisson integrals
+- Poisson- Jensen formula. 
+- reflections across analytic boundaries
+- residue theorem
+- Riemann mapping theorem
+- Rouche's theorem
+- Schwarz lemma 
+- Schwarz reflection principle. 
+- series and product developments
+- Subharmonic functions 
+- such as Liouville's theorem
+- sums of power series
+- the argument principle
+- the Dirichlet problem 
+- The evaluation of definite integrals. 
+- the hyperbolic metric. 
+- The monodromy theorem 
+- Weierstrass product theorem
 
 ## Topology
 
