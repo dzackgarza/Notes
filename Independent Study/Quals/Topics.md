@@ -11,9 +11,9 @@ Derivatives of maps from Rm to Rn
 - gradient
 - chain rule; 
 - maxima and minima
-Lagrange multipliers; 
-line and surface integrals of scalar and vector functions; 
-Gauss’s
+- Lagrange multipliers; 
+- line and surface integrals of scalar and vector functions; 
+- Gauss’s
 - Green’s and Stokes’ theorems. 
 Ordinary differential equations; 
 explicit solutions of simple equations.
