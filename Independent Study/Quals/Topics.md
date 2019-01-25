@@ -414,6 +414,7 @@ Representations of Groups
 - Elementary mappings
 - elliptic functions.
 - exponential and logarithm functions
+- fractional linear transformations
 - Harmonic functions: 
 - Harnack's principle
 - Hurwitz theorem
