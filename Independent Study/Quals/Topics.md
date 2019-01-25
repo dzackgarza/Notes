@@ -320,8 +320,9 @@ Module Theory:
 - generation of modules 
 - direct sums 
 - free modules
-- modules over Principal Ideal
-Domains, rank, and the Fundamental Theorem of Finitely Generated Modules over a P.I.D.
+- modules over Principal Ideal Domains, 
+- rank 
+- the Fundamental Theorem of Finitely Generated Modules over a P.I.D.
 
 
 Representations of Groups
