@@ -7,13 +7,17 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 
 ## Calculus
 Basic first- and second-year calculus. 
-Derivatives of maps from Rm to Rn , 
-gradient, 
+Derivatives of maps from Rm to Rn 
+- 
+gradient
+- 
 chain rule; 
-maxima and minima, 
+maxima and minima
+- 
 Lagrange multipliers; 
 line and surface integrals of scalar and vector functions; 
-Gauss’s, Green’s and Stokes’ theorems. 
+Gauss’s
+- Green’s and Stokes’ theorems. 
 Ordinary differential equations; 
 explicit solutions of simple equations.
 
@@ -45,13 +49,34 @@ explicit solutions of simple equations.
 - LU decomposition.
 
 ## Algebra
-Groups, subgroups, normal subgroups, homomorphisms, quotient groups, automor-
-phisms, groups acting on sets, Sylow theorems and applications, finitely generated abelian
-groups. Examples: permutation groups, cyclic groups, dihedral groups, matrix groups. Ba-
-sic properties of rings, units, ideals, homomorphisms, quotient rings, prime and maximal
-ideals, fields of fractions, Euclidean domains, principal ideal domains and unique factoriza-
-tion domains, polynomial rings. Elementary properties of finite field extensions and roots
-of polynomials, finite fields.
+Groups
+- subgroups
+- normal subgroups
+- homomorphisms
+- quotient groups
+- automor-
+phisms
+- groups acting on sets
+- Sylow theorems and applications
+- finitely generated abelian
+groups. Examples: permutation groups
+- cyclic groups
+- dihedral groups
+- matrix groups. Ba-
+sic properties of rings
+- units
+- ideals
+- homomorphisms
+- quotient rings
+- prime and maximal
+ideals
+- fields of fractions
+- Euclidean domains
+- principal ideal domains and unique factoriza-
+tion domains
+- polynomial rings. Elementary properties of finite field extensions and roots
+of polynomials
+- finite fields.
 
 
 ## Analysis
@@ -284,8 +309,12 @@ Analytic functions: Examples
 
 ## Topology
 
-Guillemin and Pollack, Differential Topology
-Spivak, Differential Geometry, vol I, third edition
+Guillemin and Pollack
+- Differential Topology
+Spivak
+- Differential Geometry
+- vol I
+- third edition
 
 
 ### Differential topology: 
