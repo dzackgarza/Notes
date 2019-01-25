@@ -184,7 +184,7 @@ Lebesgue integration; convergence theorems (uniform convergence
 - linear operators); basic Fourier analysis (orthonormal systems
 - trigonometric series
 - convolutions on Rn
-- Plancherel’s theorem
+- Plancherel's theorem
 - Riemann-Lebesgue lemma 
 - Poisson summation formula 
 - abstract measure theory;
