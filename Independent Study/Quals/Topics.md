@@ -34,7 +34,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - series
 - limits
 - continuity
-- including epsilon-delta arguments
+- epsilon-delta arguments
 - maxima and minima
 - uniform continuity
 - definition of the derivative
