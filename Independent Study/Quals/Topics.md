@@ -49,7 +49,7 @@ explicit solutions of simple equations.
 - LU decomposition.
 
 ## Algebra
-Groups
+- Groups
 - subgroups
 - normal subgroups
 - homomorphisms
@@ -76,7 +76,7 @@ Groups
 - polynomial rings 
 - finite field extensions
 - roots of polynomials
-- finite fields.
+- finite fields
 
 
 ## Analysis
