@@ -152,9 +152,8 @@ Lebesgue integration; convergence theorems (uniform convergence
 - open mapping theorem
 - closed graph theorem
 - uniform boundedness principle
-- strong
-- weak
-- and weak* topologies); elementary point set topology including Urysohn’s lemma
+- strong, weak, and weak* topologies 
+- Urysohn’s lemma
 - the Tychonoff theorem
 - the Baire Cat- egory theorem and the Stone-Weierstrass theorem. The spaces C(X)
 - the Riesz representation theorem
