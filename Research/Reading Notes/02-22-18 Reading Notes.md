@@ -140,7 +140,7 @@ $Sp^4 = SU^2 \cross SU^2$
 $J: \pi_k(SO^n) \to \pi_{n+k} S^n$
 
 
-# Homotopy of Infinite Grasmmanian
+# Homotopy of Infinite Grassmannian
 ![Homotopy of infinite Grassmannian](assets/2-22ReadingNotes-f759d.png)
 
 
