@@ -8,12 +8,9 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 ## Calculus
 Basic first- and second-year calculus. 
 Derivatives of maps from Rm to Rn 
-- 
-gradient
-- 
-chain rule; 
-maxima and minima
-- 
+- gradient
+- chain rule; 
+- maxima and minima
 Lagrange multipliers; 
 line and surface integrals of scalar and vector functions; 
 Gauss’s
