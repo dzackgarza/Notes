@@ -67,8 +67,8 @@ Groups
 - ideals
 - homomorphisms
 - quotient rings
-- prime and maximal
-ideals
+- prime ideals
+- maximal ideals
 - fields of fractions
 - Euclidean domains
 - principal ideal domains and unique factoriza-
