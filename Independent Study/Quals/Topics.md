@@ -45,9 +45,7 @@ explicit solutions of simple equations.
 - LU decomposition.
 
 ## Analysis
-Topology of Rn and metric spaces; prop-
-erties of continuous functions, compactness, connectedness, limit points; least upper bound
-property of R. Sequences and series, Cauchy sequences, uniform convergence and its relation
+Topology of Rn and metric spaces; properties of continuous functions, compactness, connectedness, limit points; least upper bound property of R. Sequences and series, Cauchy sequences, uniform convergence and its relation
 to derivatives and integrals; power series, radius of convergence, Weierstrass M -test; conver-
 gence of improper integrals. Compactness in functions spaces. Inverse and implicit function
 theorems and applications; the derivative as a linear map; existence and uniqueness theorems
