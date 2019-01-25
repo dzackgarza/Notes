@@ -145,7 +145,8 @@ Representations of Groups
 - Peter-Weyl theorem.
 
 ## Real Analysis
-Lebesgue integration; convergence theorems (uniform convergence
+- Lebesgue integration; 
+- convergence theorems (uniform convergence
 - Egoroff's theorem
 - Lusin’s theorem
 - Lebesgue dominated convergence theorem
