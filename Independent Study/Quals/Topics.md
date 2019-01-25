@@ -281,7 +281,7 @@ Representations of Groups
 - Lebesgue dominated convergence theorem
 - Lebesgue integration; 
 - linear functionals
-- linear operators); 
+- linear operators 
 - Lusin’s theorem
 - monotone convergence theorem
 - open mapping theorem
@@ -289,7 +289,7 @@ Representations of Groups
 - Plancherel's theorem
 - Poisson summation formula 
 - Radon-Nikodym theorem
-- relations to functions of bounded variation
+- functions of bounded variation
 - Riemann-Lebesgue lemma 
 - Riesz representation theorem
 - self-adjoint linear operators and their spectra; 
