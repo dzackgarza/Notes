@@ -116,7 +116,8 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - existence and uniqueness theorems for solutions of ordinary differential equations
 - fixed point theory 
 - fundamental theorem of calculus
-- Inverse and implicit function theorems and applications; 
+- Inverse function theorems
+- Implicit function theorem 
 - limit points
 - least upper bound property of R
 - limits
