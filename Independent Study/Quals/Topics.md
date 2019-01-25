@@ -93,7 +93,7 @@ explicit solutions of simple equations.
 - the mean value theorem
 - Topology of Rn and metric spaces; properties of continuous functions
 - uniform convergence and integration
-- uniform convergence and its relation to derivatives and integrals; power series
+- uniform convergence and its relation to derivatives and integrals; 
 - Weierstrass M -test; 
 - definition of differentiability in several variables (approximating linear transformation)
 
