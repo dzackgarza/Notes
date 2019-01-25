@@ -37,7 +37,6 @@ explicit solutions of simple equations.
 - diagonalization and triangularization of operators; 
 - diagonalization of hermitian and symmetric matrices
 - Eigenvalues
-- eigenvectors and eigenvalues
 - eigenvectors; 
 - exponentiation of matrices and application to differential equations
 - Gaussian elimination
