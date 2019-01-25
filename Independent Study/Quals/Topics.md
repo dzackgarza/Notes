@@ -25,9 +25,10 @@ explicit solutions of simple equations.
 ## Linear Algebra
 - adjoints of linear transformations 
 - dual spaces
-- and their computation
 - basis and dimension
-- canonical forms. Systems of linear equations: solvability criteria
+- canonical forms
+- Systems of linear equations
+- solvability criteria
 - Cayley-Hamilton theorem; 
 - change of basis
 - change of basis and similarity of matrices
