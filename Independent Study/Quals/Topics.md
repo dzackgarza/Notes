@@ -1,9 +1,10 @@
 Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.html#past)
-[UCLA Old Exams](https://secure.math.ucla.edu/gradquals/hbquals.php) (Includes "basic exam" = prelims)
+[UCLA Prelims](https://secure.math.ucla.edu/gradquals/hbquals.php) (Includes "basic exam" = prelims)
+[Berkeley Prelims](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
+
 
 # Prelim Level
 
-[Berkeley Prelims](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
 ## Linear Algebra
 - Vector spaces
