@@ -59,10 +59,6 @@ explicit solutions of simple equations.
 - the derivative as a linear map; 
 - existence and uniqueness theorems for solutions of ordinary differential equations; 
 - elementary Fourier series. 
-
-# Qual Level
-
-## Analysis
 - completeness of the real numbers
 - sequences
 - series
@@ -104,6 +100,10 @@ Multivariable calculus: definition of differentiability in several variables (ap
 - equality of mixed partials
 - multivariable integration
 - change of variables formula.
+
+---
+
+# Qual Level
 
 ## Algebra
 Categories and Functors: 
