@@ -246,13 +246,15 @@ Ring Theory: (commutative case)
 - homomorphisms
 - isomorphisms
 - quotient rings
-and the Isomorphism Theorems; ideals
+- Isomorphism Theorems; 
+- ideals
 - prime ideals
 - maximal ideals
 - integral domains
--
-construction of finite fields; rings of fractions; Chinese Remainder Theorem;] Euclidean
-Domains
+- construction of finite fields; 
+- rings of fractions; 
+- Chinese Remainder Theorem
+- Euclidean Domains
 - Principal Ideal Domains
 - Unique Factorization Domains
 - quadratic integer rings;
