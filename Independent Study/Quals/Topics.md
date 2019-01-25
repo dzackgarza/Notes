@@ -51,8 +51,8 @@ explicit solutions of simple equations.
 - orthogonality 
 - orthonormality
 - Quadratic forms
-- rank 
-- rational canonical form; 
+- rank
+- rational canonical form
 - row-reduced form
 - similarity of matrices
 - solvability criteria
