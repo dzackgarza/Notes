@@ -207,8 +207,8 @@ Group Theory:
 - isomorphism theorems; 
 - Sylow theorems
 - dihedral groups; 
-- cycle decomposition and symmetric groups; 
-- subgroups
+- cycle decomposition 
+- symmetric groups and subgroups
 - cosets
 - Lagrange’s Theorem; 
 - cyclic groups and subgroups; 
