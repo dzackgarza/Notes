@@ -254,13 +254,13 @@ Analytic functions: Examples
 - vector bundles in general
 - vector fields 
 - integral curves
-- Sard’s Theorem on the measure of critical values
+- Sard's Theorem on the measure of critical values
 - embedding theorem
 - transversality
 - degree theory
 - the Lefshetz Fixed Point Theorem
 - Euler characteristic
-- Ehresmann’s theorem that proper submersions are locally trivial fibrations
+- Ehresmann's theorem that proper submersions are locally trivial fibrations
 
 
 ### Differential geometry: 
