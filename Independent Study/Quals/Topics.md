@@ -166,7 +166,7 @@ Lebesgue integration; convergence theorems (uniform convergence
 - weak $L^p$ spaces
 - Hölder’s inequality
 - Jensen’s inequality
-- linear operators); basic Fourier analysis (orthonormal sys- tems
+- linear operators); basic Fourier analysis (orthonormal systems
 - trigonometric series
 - convolutions on Rn
 - Plancherel’s theorem
