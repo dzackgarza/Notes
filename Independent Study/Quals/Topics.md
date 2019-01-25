@@ -82,7 +82,6 @@ explicit solutions of simple equations.
 - partial derivatives
 - radius of convergence
 - Riemann integral
-- sequences
 - sequences and series of functions
 - series
 - Spaces of functions
