@@ -137,7 +137,10 @@ Lebesgue integration; convergence theorems (uniform convergence
 - Lusin’s theorem
 - Lebesgue dominated convergence theorem
 - monotone convergence theorem
-- Fatou’s lemma); Fubini’s theorem; covering lemmas and differentiation of measures (Lebesgue decomposition theorem
+- Fatou’s lemma
+- Fubini’s theorem; 
+- covering lemmas and differentiation of measures 
+- Lebesgue decomposition theorem
 - Radon-Nikodym theorem
 - Jordan decomposition theorem
 - rela- tions to functions of bounded variation
