@@ -171,8 +171,7 @@ explicit solutions of simple equations.
 - Basic properties of harmonic functions in the plane
 - connection with analytic functions
 - harmonic conjugates
--
-mean value property
+- mean value property
 - maximum principle. Residue theorem
 - evaluation of definite integrals. Mapping properties of linear fractional transformations
 - conformal equivalences of the unit disk with itself and with the upper half-plane. 
