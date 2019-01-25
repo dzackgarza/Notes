@@ -141,6 +141,10 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - uniform convergence and its relation to derivatives and integrals; 
 - Weierstrass M -test; 
 - definition of differentiability in several variables (approximating linear transformation)
+- Order axioms
+- supremum and infimum
+- Cauchy sequences
+- Cauchy-Schwarz
 
 ## Complex Analysis
 - Basic properties of the complex number system. 
