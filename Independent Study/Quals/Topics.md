@@ -55,13 +55,12 @@ explicit solutions of simple equations.
 - compactness
 - Compactness in functions spaces. 
 - completeness
-- completeness of the real numbers
 - connectedness
 - continuity
 - contraction maps
 - convergence of improper integrals. 
 - convergence of sequences of numbers and functions
-- definition of the derivative
+- the derivative
 - differentiation under the integral sign
 - elementary Fourier series. 
 - epsilon-delta arguments
