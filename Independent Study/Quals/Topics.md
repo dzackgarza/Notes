@@ -210,8 +210,7 @@ Group Theory:
 subgroups, cosets, and Lagrange’s Theorem; cyclic groups and subgroups; subgroup lat-
 tice; quotient groups and normal subgroups; Isomorphism Theorems; Hölder Program and
 simple groups; transpositions, alternating groups; group actions, Cayley’s Theorem, Class
-Equation; Sylow’s Theorem and applications; simplicity of An ; direct products, the Fun-
-damental Theorem of Finitely Generated Abelian Groups and applications;] commutators,
+Equation; Sylow’s Theorem and applications; simplicity of An ; direct products, the Fundamental Theorem of Finitely Generated Abelian Groups and applications;] commutators,
 the derived series, solvable groups; semidirect products.
 
 
