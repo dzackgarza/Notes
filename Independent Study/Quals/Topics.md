@@ -45,6 +45,15 @@ explicit solutions of simple equations.
 - LU decomposition.
 
 ## Algebra
+3.3. Abstract algebra (Mathematics 113). Elementary set theory, e. g. uncountability
+of R. Groups, subgroups, normal subgroups, homomorphisms, quotient groups, automor-
+phisms, groups acting on sets, Sylow theorems and applications, finitely generated abelian
+groups. Examples: permutation groups, cyclic groups, dihedral groups, matrix groups. Ba-
+sic properties of rings, units, ideals, homomorphisms, quotient rings, prime and maximal
+ideals, fields of fractions, Euclidean domains, principal ideal domains and unique factoriza-
+tion domains, polynomial rings. Elementary properties of finite field extensions and roots
+of polynomials, finite fields. Texts: Lang, Algebra, Addison-Wesley; Hungerford, Algebra,
+
 
 ## Analysis
   - with applications to Newton's method and solutions of non-linear equations
