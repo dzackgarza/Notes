@@ -98,7 +98,8 @@ Group Theory:
 - semi-direct product groups 
 - group extensions.
 
-Ring Theory: commutative case.  Ideals and homomorphisms
+Ring Theory: commutative case.  
+- Ideals and homomorphisms
 - localization and completion
 - free and projective modules
 - basic theorems about factorization and UFD's 
