@@ -182,10 +182,11 @@ Lebesgue integration; convergence theorems (uniform convergence
 - Holder’s inequality
 - Jensen’s inequality
 - linear operators); 
-- basic Fourier analysis (orthonormal systems
-- trigonometric series
-- convolutions on Rn
-- Plancherel's theorem
+- basic Fourier analysis 
+  - orthonormal systems
+  - trigonometric series
+  - convolutions on Rn
+  - Plancherel's theorem
 - Riemann-Lebesgue lemma 
 - Poisson summation formula 
 - abstract measure theory;
