@@ -66,10 +66,9 @@ explicit solutions of simple equations.
 - epsilon-delta arguments
 - equality of mixed partials
 - equicontinuity
-- existence and uniqueness theorems for solutions of ordinary differential equations; 
+- existence and uniqueness theorems for solutions of ordinary differential equations
 - fixed point theory 
 - fundamental theorem of calculus
-- inverse and implicit function theorems
 - Inverse and implicit function theorems and applications; 
 - limit points
 - least upper bound property of R
