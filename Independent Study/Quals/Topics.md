@@ -423,7 +423,7 @@ Representations of Groups
 - mapping of polygons
 - mappings of finitely connected domains. 
 - maximum principle
-- maximum principle
+- maximum modulus principle
 - mean value property
 - Mittag-Leffler theorem
 - Mobius transformations and spherical representation. 
