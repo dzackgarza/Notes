@@ -23,47 +23,47 @@ explicit solutions of simple equations.
 
 
 ## Linear Algebra
-- Vector spaces
-- subspaces
-- basis and dimension
-- linear transformations and matrices
-- rank and nullity
-- change of basis and similarity of matrices
-- inner product spaces
-- orthogonality and
-- orthonormality
-- Gram-Schmidt process
-- adjoints of linear transformations and dual spaces
-- quadratic forms and symmetric matrices
-- orthogonal and unitary matrices
-- diagonalization of hermitian and symmetric matrices
-- eigenvectors and eigenvalues
+- adjoints of linear transformations 
+- dual spaces
 - and their computation
-- exponentiation of matrices and application to differential equations
-- least squares problems
-- trace
-- determinant
+- basis and dimension
 - canonical forms. Systems of linear equations: solvability criteria
+- Cayley-Hamilton theorem; 
+- change of basis
+- change of basis and similarity of matrices
+- characteristic and minimal polynomials
+- determinant
+- determinants
+- diagonalization and triangularization of operators; 
+- diagonalization of hermitian and symmetric matrices
+- Eigenvalues
+- eigenvectors and eigenvalues
+- eigenvectors; 
+- exponentiation of matrices and application to differential equations
 - Gaussian elimination
-- row-reduced form
+- Gram-Schmidt process
+- hermitian and unitary operators
+- inner product spaces
+- inner product spaces
+- invariant subspaces and canonical forms; 
+- Jordan normal form
+- least squares problems
+- linear transformations
+- linear transformations and matrices
 - LU decomposition
 - Matrices
-- linear transformations
-- change of basis
 - nullity-rank theorem. 
-- Eigenvalues
-- eigenvectors; 
-- determinants
-- characteristic and minimal polynomials
-- Cayley-Hamilton theorem; 
-- diagonalization and triangularization of operators; 
-- Jordan normal form
-- rational canonical form; 
-- invariant subspaces and canonical forms; 
-- inner product spaces
-- hermitian and unitary operators
-- adjoints. 
+- orthogonal and unitary matrices
+- orthogonality and
+- orthonormality
 - Quadratic forms
+- quadratic forms and symmetric matrices
+- rank and nullity
+- rational canonical form; 
+- row-reduced form
+- subspaces
+- trace
+- Vector spaces
 
 
 ## Algebra
