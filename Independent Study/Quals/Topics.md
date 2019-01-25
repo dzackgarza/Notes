@@ -169,7 +169,6 @@ explicit solutions of simple equations.
 - argument principle
 - Rouché’s theorem. 
 - Basic properties of harmonic functions in the plane
-- connection with analytic functions
 - harmonic conjugates
 - mean value property
 - maximum principle. Residue theorem
