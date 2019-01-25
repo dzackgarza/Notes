@@ -44,6 +44,8 @@ explicit solutions of simple equations.
 - row-reduced form
 - LU decomposition.
 
+## Algebra
+
 ## Analysis
   - with applications to Newton's method and solutions of non-linear equations
 - Arzela-Ascoli theorem
