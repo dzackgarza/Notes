@@ -62,7 +62,7 @@ explicit solutions of simple equations.
 - convergence of sequences of numbers and functions
 - the derivative
 - differentiation under the integral sign
-- elementary Fourier series. 
+- Fourier series. 
 - epsilon-delta arguments
 - equality of mixed partials
 - equicontinuity
@@ -72,7 +72,6 @@ explicit solutions of simple equations.
 - Inverse and implicit function theorems and applications; 
 - limit points
 - least upper bound property of R
-- Sequences and series
 - limits
 - maxima and minima
 - mean value theorem for integrals
