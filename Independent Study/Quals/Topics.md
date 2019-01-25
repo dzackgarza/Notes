@@ -217,7 +217,10 @@ Group Theory:
 - transpositions
 - alternating groups; group actions
 - Cayley’s Theorem
-- Class Equation; Sylow’s Theorem and applications; simplicity of An ; direct products
+- Class Equation; 
+- Sylow’s Theorem and applications; 
+- simplicity of An
+- direct products
 - the Fundamental Theorem of Finitely Generated Abelian Groups and applications;] commutators
 - the derived series
 - solvable groups; semidirect products.
