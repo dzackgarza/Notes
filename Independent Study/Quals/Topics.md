@@ -172,13 +172,16 @@ Lebesgue integration; convergence theorems (uniform convergence
 - trigonometric series
 - convolutions on Rn
 - Plancherel’s theorem
-- Riemann-Lebesgue lemma Poisson summation formula); abstract measure theory; Hausdorff measures.
+- Riemann-Lebesgue lemma 
+- Poisson summation formula 
+- abstract measure theory;
+- Hausdorff measures
 
 ## Complex Analysis
 Analytic functions: Examples
 - sums of power series
 - exponential and logarithm functions
-- M¨obius transformations
+- Mobius transformations
 - and spherical representation. Cauchy’s theorem: Goursat’s proof
 - consequences of Cauchy integral formula
 - such as Liouville’s theorem
