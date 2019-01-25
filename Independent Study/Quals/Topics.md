@@ -161,7 +161,8 @@ Lebesgue integration; convergence theorems (uniform convergence
 - Riesz representation theorem
 - and the compact subsets of C(X)
 - (Arzela-Ascoli theorem); Hilbert space
-- self-adjoint linear operators and their spectra; Lp spaces (duality
+- self-adjoint linear operators and their spectra; 
+- $L^p$ spaces
 - distribution functions
 - weak $L^p$ spaces
 - Hölder’s inequality
