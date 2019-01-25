@@ -221,9 +221,11 @@ Group Theory:
 - Sylow’s Theorem and applications; 
 - simplicity of An
 - direct products
-- the Fundamental Theorem of Finitely Generated Abelian Groups and applications;] commutators
-- the derived series
-- solvable groups; semidirect products.
+- Fundamental Theorem of Finitely Generated Abelian Groups and applications
+- commutators
+- derived series
+- solvable groups
+- semidirect products.
 
 
 Ring Theory: (commutative case)
