@@ -188,7 +188,7 @@ Categories and Functors:
 - products
 
 Group Theory:
-- Classification of abelian groups; 
+- Classification of abelian groups
 - conjugacy 
 - factor groups
 - finitely generated groups and their presentations
