@@ -1,5 +1,5 @@
 Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.html#past)
-[UCLA Prelims](https://secure.math.ucla.edu/gradquals/hbquals.php) (Includes "basic exam" = prelims)
+[UCLA Prelims and Quals](https://secure.math.ucla.edu/gradquals/hbquals.php)
 [Berkeley Prelims](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
 
