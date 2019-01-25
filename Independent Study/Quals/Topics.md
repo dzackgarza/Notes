@@ -24,18 +24,15 @@ explicit solutions of simple equations.
 
 ## Linear Algebra
 - adjoints of linear transformations 
-- dual spaces
 - basis and dimension
 - canonical forms
-- Systems of linear equations
-- solvability criteria
 - Cayley-Hamilton theorem; 
 - change of basis
-- similarity of matrices
 - characteristic and minimal polynomials
 - determinants
 - diagonalization and triangularization of operators; 
 - diagonalization of hermitian and symmetric matrices
+- dual spaces
 - Eigenvalues
 - eigenvectors; 
 - exponentiation of matrices and application to differential equations
@@ -48,17 +45,20 @@ explicit solutions of simple equations.
 - least squares problems
 - linear transformations 
 - LU decomposition
+- nullity
 - nullity-rank theorem. 
 - orthogonal and unitary matrices
 - orthogonality 
 - orthonormality
 - Quadratic forms
-- symmetric matrices
 - rank 
-- nullity
 - rational canonical form; 
 - row-reduced form
+- similarity of matrices
+- solvability criteria
 - subspaces
+- symmetric matrices
+- Systems of linear equations
 - trace
 - Vector spaces
 
