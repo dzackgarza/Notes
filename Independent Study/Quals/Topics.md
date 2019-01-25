@@ -146,7 +146,7 @@ Representations of Groups
 
 ## Real Analysis
 Lebesgue integration; convergence theorems (uniform convergence
-- Egoroff’s theorem
+- Egoroff's theorem
 - Lusin’s theorem
 - Lebesgue dominated convergence theorem
 - monotone convergence theorem
@@ -199,7 +199,7 @@ Analytic functions: Examples
 - Mobius transformations and spherical representation. 
 - Cauchy’s theorem: Goursat’s proof
 - consequences of Cauchy integral formula
-- such as Liouville’s theorem
+- such as Liouville's theorem
 - isolated singularities
 - Casorati-Weierstrass theorem
 - open mapping theorem
