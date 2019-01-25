@@ -287,6 +287,8 @@ Field Theory.
 - separable extensions
 - cyclotomic polynomials.
 
+Galois Theory:
+
 
 Ring Theory: (non-commutative case) 
 - Semisimple rings
