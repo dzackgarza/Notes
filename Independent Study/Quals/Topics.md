@@ -57,8 +57,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - connectedness
 - uniform continuity
 - equicontinuity
-- countability and uncountability (e.g. of the reals)
-- spaces of functions. Basic arguments and theorems of undergraduate analysis using these concepts
+- Spaces of functions
 - Bolzano-Weierstrass theorem
 - Stone-Weierstrass theorem
 - Arzela-Ascoli theorem
