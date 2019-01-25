@@ -136,7 +136,7 @@ Lebesgue integration; convergence theorems (uniform convergence
 - Ego- roff’s theorem
 - Lusin’s theorem
 - Lebesgue dominated convergence theorem
-- monotone conver- gence theorem
+- monotone convergence theorem
 - Fatou’s lemma); Fubini’s theorem; covering lemmas and differentiation of measures (Lebesgue decomposition theorem
 - Radon-Nikodym theorem
 - Jordan decomposition theorem
