@@ -314,6 +314,10 @@ Ring Theory: (non-commutative case)
 - group rings
 
 Module Theory:
+basic properties of modules and submodules; quotient modules and the Isomorphism The-
+orems; generation of modules, direct sums, and free modules; modules over Principal Ideal
+Domains, rank, and the Fundamental Theorem of Finitely Generated Modules over a P.I.D.
+
 
 Representations of Groups
 - esp. finite groups. 
