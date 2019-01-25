@@ -213,6 +213,9 @@ Analytic functions: Examples
 - Riemann mapping theorem
 - mapping of polygons
 - reflections across analytic boundaries
-- and mappings of finitely connected domains. Subharmonic functions and the Dirichlet problem. The monodromy theorem and Picard’s theorem. Elementary facts about elliptic functions.
+- and mappings of finitely connected domains. 
+- Subharmonic functions and the Dirichlet problem. 
+- The monodromy theorem and Picard’s theorem. 
+- Elementary facts about elliptic functions.
 
 ## Topology
