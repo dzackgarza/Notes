@@ -246,6 +246,9 @@ Analytic functions: Examples
 
 ## Topology
 
+Guillemin and Pollack, Differential Topology
+
+
 ### Differential topology: 
 - manifolds
 - tangent vectors
