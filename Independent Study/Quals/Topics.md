@@ -43,14 +43,11 @@ explicit solutions of simple equations.
 - Gram-Schmidt process
 - hermitian and unitary operators
 - inner product spaces
-- inner product spaces
 - invariant subspaces and canonical forms; 
 - Jordan normal form
 - least squares problems
-- linear transformations
-- linear transformations and matrices
+- linear transformations 
 - LU decomposition
-- Matrices
 - nullity-rank theorem. 
 - orthogonal and unitary matrices
 - orthogonality and
