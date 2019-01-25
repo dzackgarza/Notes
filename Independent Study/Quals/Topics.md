@@ -355,10 +355,7 @@ Representations of Groups
 
 Guillemin and Pollack
 - Differential Topology
-Spivak
-- Differential Geometry
-- vol I
-- third edition
+Spivak Differential Geometry
 
 
 ### Differential topology: 
