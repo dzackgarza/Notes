@@ -47,7 +47,18 @@ explicit solutions of simple equations.
 - Gaussian elimination
 - row-reduced form
 - LU decomposition
-- Matrices, linear transformations, change of basis; nullity-rank theorem. Eigenvalues and eigenvectors; determinants, characteristic and minimal polynomials, Cayley-Hamilton theorem; diagonalization and triangularization of operators; Jordan normal form, rational canonical form; invariant subspaces and canonical forms; inner product spaces, hermitian and unitary operators, adjoints. Quadratic forms.
+- Matrices
+- linear transformations
+- change of basis
+- nullity-rank theorem. 
+- Eigenvalues
+- eigenvectors; 
+- determinants
+- characteristic and minimal polynomials
+- Cayley-Hamilton theorem; diagonalization and triangularization of operators; Jordan normal form
+- rational canonical form; invariant subspaces and canonical forms; inner product spaces
+- hermitian and unitary operators
+- adjoints. Quadratic forms.
 
 
 ## Algebra
