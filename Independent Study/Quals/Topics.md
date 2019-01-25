@@ -13,8 +13,9 @@ chain rule;
 maxima and minima, 
 Lagrange multipliers; 
 line and surface integrals of scalar and vector functions; 
-Gauss’s, Green’s and Stokes’
-theorems. Ordinary differential equations; explicit solutions of simple equations.
+Gauss’s, Green’s and Stokes’ theorems. 
+Ordinary differential equations; 
+explicit solutions of simple equations.
 
 
 ## Linear Algebra
