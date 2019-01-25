@@ -71,8 +71,8 @@ Groups
 - maximal ideals
 - fields of fractions
 - Euclidean domains
-- principal ideal domains and unique factoriza-
-tion domains
+- principal ideal domains 
+- unique factorization domains
 - polynomial rings. Elementary properties of finite field extensions and roots
 of polynomials
 - finite fields.
