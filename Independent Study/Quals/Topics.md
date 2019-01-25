@@ -45,61 +45,61 @@ explicit solutions of simple equations.
 - LU decomposition.
 
 ## Analysis
-- Topology of Rn and metric spaces; properties of continuous functions
-- compactness
-- connectedness
-- limit points; least upper bound property of R. Sequences and series
-- Cauchy sequences
-- uniform convergence and its relation to derivatives and integrals; power series
-- radius of convergence
-- Weierstrass M -test; 
-- convergence of improper integrals. 
-- Compactness in functions spaces. 
-- Inverse and implicit function theorems and applications; 
-- the derivative as a linear map; 
-- existence and uniqueness theorems for solutions of ordinary differential equations; 
-- elementary Fourier series. 
-- completeness of the real numbers
-- sequences
-- series
-- limits
-- continuity
-- epsilon-delta arguments
-- maxima and minima
-- uniform continuity
-- definition of the derivative
-- the mean value theorem
-- Taylor expansion with remainder
-- Riemann integral
-- mean value theorem for integrals
-- fundamental theorem of calculus
-- sequences and series of functions
-- uniform convergence and integration
-- differentiation under the integral sign
-- contraction maps
-- fixed point theory 
   - with applications to Newton's method and solutions of non-linear equations
-- numerical integration with error estimation.
-- open and closed sets
-- completeness
-- convergence of sequences of numbers and functions
+- Arzela-Ascoli theorem
+- Bolzano-Weierstrass theorem
+- Cauchy sequences
+- chain rule
+- change of variables formula.
 - closure
 - compactness
+- compactness
+- Compactness in functions spaces. 
+- completeness
+- completeness of the real numbers
 - connectedness
-- uniform continuity
-- equicontinuity
-- Spaces of functions
-- Bolzano-Weierstrass theorem
-- Stone-Weierstrass theorem
-- Arzela-Ascoli theorem
-Multivariable calculus: definition of differentiability in several variables (approximating linear transformation)
-- partial derivatives
-- chain rule
-- Taylor expansion in several variables
-- inverse and implicit function theorems
+- connectedness
+- continuity
+- contraction maps
+- convergence of improper integrals. 
+- convergence of sequences of numbers and functions
+- definition of the derivative
+- differentiation under the integral sign
+- elementary Fourier series. 
+- epsilon-delta arguments
 - equality of mixed partials
+- equicontinuity
+- existence and uniqueness theorems for solutions of ordinary differential equations; 
+- fixed point theory 
+- fundamental theorem of calculus
+- inverse and implicit function theorems
+- Inverse and implicit function theorems and applications; 
+- limit points; least upper bound property of R. Sequences and series
+- limits
+- maxima and minima
+- mean value theorem for integrals
 - multivariable integration
-- change of variables formula.
+- numerical integration with error estimation.
+- open and closed sets
+- partial derivatives
+- radius of convergence
+- Riemann integral
+- sequences
+- sequences and series of functions
+- series
+- Spaces of functions
+- Stone-Weierstrass theorem
+- Taylor expansion in several variables
+- Taylor expansion with remainder
+- the derivative as a linear map; 
+- the mean value theorem
+- Topology of Rn and metric spaces; properties of continuous functions
+- uniform continuity
+- uniform continuity
+- uniform convergence and integration
+- uniform convergence and its relation to derivatives and integrals; power series
+- Weierstrass M -test; 
+Multivariable calculus: definition of differentiability in several variables (approximating linear transformation)
 
 ---
 
