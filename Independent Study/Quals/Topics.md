@@ -144,7 +144,9 @@ Lebesgue integration; convergence theorems (uniform convergence
 - Radon-Nikodym theorem
 - Jordan decomposition theorem
 - relations to functions of bounded variation
-- signed measures and Hahn decompositions); approximate identities; basic functional analysis (linear functionals
+- signed measures and Hahn decompositions); 
+- approximate identities; 
+- basic functional analysis (linear functionals
 - Hahn-Banach theorem
 - open mapping theorem
 - closed graph theorem
