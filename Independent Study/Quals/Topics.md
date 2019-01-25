@@ -147,6 +147,10 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Cauchy-Schwarz inequality
 - Triangle inequalities
 - limsup and liminf
+- Interior points
+- Boundary Points
+- Accumulation points
+- 
 
 ## Complex Analysis
 - Basic properties of the complex number system. 
