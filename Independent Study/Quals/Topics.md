@@ -353,8 +353,7 @@ Representations of Groups
 
 ## Topology
 
-Guillemin and Pollack
-- Differential Topology
+Guillemin and Pollack Differential Topology
 Spivak Differential Geometry
 
 
