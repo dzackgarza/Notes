@@ -83,7 +83,9 @@ Group Theory:
 - homomorphisms
 - normal subgroups
 - factor groups
-- and conjugacy); the isomorphism theorems; group actions
+- conjugacy 
+- the isomorphism theorems; 
+- group actions
 - and the Sylow and Jordan-Holder theorems; symmetric groups and permutation representations; free
 - nilpotent
 - solvable
