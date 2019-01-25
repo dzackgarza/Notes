@@ -258,12 +258,12 @@ Ring Theory: (commutative case)
 - Principal Ideal Domains
 - Unique Factorization Domains
 - quadratic integer rings;
-polynomial rings
+- polynomial rings
 - factorization in one variable
 - Gauss’ Lemma
 - irreducibility criteria
--
-Eisenstein’s Criterion; Noetherian rings.
+- Eisenstein’s Criterion; 
+- Noetherian rings.
 
 
 Field Theory. 
