@@ -92,7 +92,6 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 
 
 ## Analysis
-  - with applications to Newton's method and solutions of non-linear equations
 - Arzela-Ascoli theorem
 - Bolzano-Weierstrass theorem
 - Cauchy sequences
