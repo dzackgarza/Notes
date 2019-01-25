@@ -304,7 +304,7 @@ Representations of Groups
 - uniform boundedness principle
 - uniform convergence
 - Urysohn’s lemma
-- weak $L^p$ spaces
+- Weak $L^p$ spaces
 
 ## Complex Analysis
 Analytic functions: Examples
