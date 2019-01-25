@@ -264,11 +264,11 @@ Analytic functions: Examples
 
 
 ### Differential geometry: 
-Lie derivatives
+- Lie derivatives
 - integrable distributions and the Frobenius Theorem
 - differential forms
 - integration and  Stokes’ Theorem
-- deRham cohomology
+- de Rham cohomology
 - including the Mayer-Vietoris sequence
 - Poincare duality
 - Thom classes
