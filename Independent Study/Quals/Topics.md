@@ -146,8 +146,7 @@ explicit solutions of simple equations.
 - definition of differentiability in several variables (approximating linear transformation)
 
 ## Complex Analysis
-Basic properties of the complex number system. Analytic functions, conformality, Cauchy-Riemann equations, elementary functions and their basic properties (rational  functions, exponential function, logarithm function, trigono-
-√metric functions, roots, e. g. z). Cauchy’s theorem and Cauchy’s integral formula, power series and Laurent series, isolation of zeros, classification of isolated singularities (including singularity at ∞), analyticity of limit functions. Maximum principle, Schwarz’s lemma, Liouville’s theorem, Morera’s theorem, argument principle, Rouché’s theorem. Basic properties of harmonic functions in the plane, connection with analytic functions, harmonic conjugates,
+Basic properties of the complex number system. Analytic functions, conformality, Cauchy-Riemann equations, elementary functions and their basic properties (rational  functions, exponential function, logarithm function, trigonometric functions, roots, e. g. z). Cauchy’s theorem and Cauchy’s integral formula, power series and Laurent series, isolation of zeros, classification of isolated singularities (including singularity at ∞), analyticity of limit functions. Maximum principle, Schwarz’s lemma, Liouville’s theorem, Morera’s theorem, argument principle, Rouché’s theorem. Basic properties of harmonic functions in the plane, connection with analytic functions, harmonic conjugates,
 mean value property, maximum principle. Residue theorem, evaluation of definite integrals. Mapping properties of linear fractional transformations, conformal equivalences of the unit disk with itself and with the upper half-plane. 
 
 
