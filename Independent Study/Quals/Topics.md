@@ -71,7 +71,9 @@ explicit solutions of simple equations.
 - fundamental theorem of calculus
 - inverse and implicit function theorems
 - Inverse and implicit function theorems and applications; 
-- limit points; least upper bound property of R. Sequences and series
+- limit points
+- least upper bound property of R
+- Sequences and series
 - limits
 - maxima and minima
 - mean value theorem for integrals
