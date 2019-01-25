@@ -242,9 +242,7 @@ Ring Theory: (commutative case)
 - tensor products
 - duality and bilinear pairings
 - esp. symmetric and alternating forms.
-
-Ring Theory:
-[basic properties of rings and subrings; homomorphisms, isomorphisms, quotient rings
+rings and subrings; homomorphisms, isomorphisms, quotient rings
 and the Isomorphism Theorems; ideals, prime ideals, maximal ideals, integral domains,
 construction of finite fields; rings of fractions; Chinese Remainder Theorem;] Euclidean
 Domains, Principal Ideal Domains, Unique Factorization Domains, quadratic integer rings;
