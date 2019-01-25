@@ -195,7 +195,8 @@ Analytic functions: Examples
 - residue theorem
 - the argument principle
 - Rouche’s theorem
-- and the evaluation of definite inte- grals. Harmonic functions: conjugate functions
+- and the evaluation of definite integrals. 
+- Harmonic functions: conjugate functions
 - maximum principle
 - mean value property
 - Poisson integrals
