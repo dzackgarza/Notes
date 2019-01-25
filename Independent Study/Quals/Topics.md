@@ -153,7 +153,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Accumulation points
 - Heine-Borel theorem
 - Intermediate Value theorem
-- 
+- uniform continuity
 
 ## Complex Analysis
 - Basic properties of the complex number system. 
