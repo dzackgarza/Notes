@@ -161,12 +161,14 @@ explicit solutions of simple equations.
 - power series and Laurent series
 - isolation of zeros
 - classification of isolated singularities (including singularity at ∞)
-- analyticity of limit functions. Maximum principle
+- analyticity of limit functions. 
+- Maximum principle
 - Schwarz’s lemma
 - Liouville’s theorem
 - Morera’s theorem
 - argument principle
-- Rouché’s theorem. Basic properties of harmonic functions in the plane
+- Rouché’s theorem. 
+- Basic properties of harmonic functions in the plane
 - connection with analytic functions
 - harmonic conjugates
 -
