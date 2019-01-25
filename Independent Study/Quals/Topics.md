@@ -6,8 +6,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 # Prelim Level
 
 ## Calculus
-Basic first- and second-year calculus. 
-Derivatives of maps from Rm to Rn 
+- Derivatives of maps from Rm to Rn 
 - gradient
 - chain rule; 
 - maxima and minima
