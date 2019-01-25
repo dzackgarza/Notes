@@ -144,7 +144,9 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Order axioms
 - supremum and infimum
 - Cauchy sequences
-- Cauchy-Schwarz
+- Cauchy-Schwarz inequality
+- Triangle inequalities
+- limsup and liminf
 
 ## Complex Analysis
 - Basic properties of the complex number system. 
