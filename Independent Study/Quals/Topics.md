@@ -3,30 +3,201 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 # Prelim Level
 
 ## Linear Algebra
-Vector spaces, subspaces, basis and dimension, linear transformations and matrices, rank and nullity, change of basis and similarity of matrices, inner product spaces, orthogonality and, orthonormality, Gram-Schmidt process, adjoints of linear transformations and dual spaces, quadratic forms and symmetric matrices, orthogonal and unitary matrices, diagonalization of hermitian and symmetric matrices, eigenvectors and eigenvalues, and their computation, exponentiation of matrices and application to differential equations, least squares problems, trace, determinant, canonical forms. Systems of linear equations: solvability criteria, Gaussian elimination, row-reduced form, LU decomposition.
+Vector spaces
+- subspaces
+- basis and dimension
+- linear transformations and matrices
+- rank and nullity
+- change of basis and similarity of matrices
+- inner product spaces
+- orthogonality and
+- orthonormality
+- Gram-Schmidt process
+- adjoints of linear transformations and dual spaces
+- quadratic forms and symmetric matrices
+- orthogonal and unitary matrices
+- diagonalization of hermitian and symmetric matrices
+- eigenvectors and eigenvalues
+- and their computation
+- exponentiation of matrices and application to differential equations
+- least squares problems
+- trace
+- determinant
+- canonical forms. Systems of linear equations: solvability criteria
+- Gaussian elimination
+- row-reduced form
+- LU decomposition.
 
 ## Analysis
-One-variable calculus foundations: completeness of the real numbers, sequences, series, limits, continuity, including epsilon-delta arguments, maxima and minima, uniform continuity, definition of the derivative, the mean value theorem, Taylor expansion with remainder, Riemann integral, mean value theorem for integrals, fundamental theorem of calculus, sequences and series of functions, uniform convergence and integration, differentiation under the integral sign, contraction maps, fixed point theory, with applications to Newton's method and solutions of non-linear equations, numerical integration with error estimation.
-Metric space topology and analysis, primarily in R^n: open and closed sets, completeness, convergence of sequences of numbers and functions, closure, compactness, connectedness, uniform continuity, equicontinuity, countability and uncountability (e.g. of the reals), spaces of functions. Basic arguments and theorems of undergraduate analysis using these concepts, including the Bolzano-Weierstrass, the Stone-Weierstrass, and the Arzela-Ascoli theorems.
-Multivariable calculus: definition of differentiability in several variables (approximating linear transformation), partial derivatives, chain rule, Taylor expansion in several variables, inverse and implicit function theorems, equality of mixed partials, multivariable integration, change of variables formula.
+One-variable calculus foundations: completeness of the real numbers
+- sequences
+- series
+- limits
+- continuity
+- including epsilon-delta arguments
+- maxima and minima
+- uniform continuity
+- definition of the derivative
+- the mean value theorem
+- Taylor expansion with remainder
+- Riemann integral
+- mean value theorem for integrals
+- fundamental theorem of calculus
+- sequences and series of functions
+- uniform convergence and integration
+- differentiation under the integral sign
+- contraction maps
+- fixed point theory
+- with applications to Newton's method and solutions of non-linear equations
+- numerical integration with error estimation.
+Metric space topology and analysis
+- primarily in R^n: open and closed sets
+- completeness
+- convergence of sequences of numbers and functions
+- closure
+- compactness
+- connectedness
+- uniform continuity
+- equicontinuity
+- countability and uncountability (e.g. of the reals)
+- spaces of functions. Basic arguments and theorems of undergraduate analysis using these concepts
+- including the Bolzano-Weierstrass
+- the Stone-Weierstrass
+- and the Arzela-Ascoli theorems.
+Multivariable calculus: definition of differentiability in several variables (approximating linear transformation)
+- partial derivatives
+- chain rule
+- Taylor expansion in several variables
+- inverse and implicit function theorems
+- equality of mixed partials
+- multivariable integration
+- change of variables formula.
 
 ## Algebra
-Categories and Functors: basic definitions and examples, universal properties, natural transformations, representable functors, Yoneda lemma, adjoint functors, products
+Categories and Functors: basic definitions and examples
+- universal properties
+- natural transformations
+- representable functors
+- Yoneda lemma
+- adjoint functors
+- products
 
-Group Theory: basic notions and results (esp. those pertaining to automorphisms,  homomorphisms, normal subgroups, factor groups, and conjugacy); the isomorphism theorems; group actions, and the Sylow and Jordan-Holder theorems; symmetric groups and permutation representations; free, nilpotent, solvable, simple groups, finitely generated groups and their presentations, esp. abelian (with classification); semi-direct product groups and group extensions.
+Group Theory: basic notions and results (esp. those pertaining to automorphisms
+-  homomorphisms
+- normal subgroups
+- factor groups
+- and conjugacy); the isomorphism theorems; group actions
+- and the Sylow and Jordan-Holder theorems; symmetric groups and permutation representations; free
+- nilpotent
+- solvable
+- simple groups
+- finitely generated groups and their presentations
+- esp. abelian (with classification); semi-direct product groups and group extensions.
 
-Ring Theory: commutative case.  Ideals and homomorphisms, localization and completion, free and projective modules, basic theorems about factorization and UFD's , structure theory of modules over a PID, including applications to canonical forms of a matrix, chain conditions, Hilbert basis theorem, integral ring extensions, Hilbert Nullstellensatz, Dedekind rings, tensor products, duality and bilinear pairings, esp. symmetric and alternating forms.
+Ring Theory: commutative case.  Ideals and homomorphisms
+- localization and completion
+- free and projective modules
+- basic theorems about factorization and UFD's 
+- structure theory of modules over a PID
+- including applications to canonical forms of a matrix
+- chain conditions
+- Hilbert basis theorem
+- integral ring extensions
+- Hilbert Nullstellensatz
+- Dedekind rings
+- tensor products
+- duality and bilinear pairings
+- esp. symmetric and alternating forms.
 
-Field Theory. General field theory including separable and inseparable extensions, normal extensions, transcendental extensions, cyclotomic extensions, finite fields, and algebraic closure; Galois theory, solvability by radicals, cyclic extensions and Kummer theory.
+Field Theory. General field theory including separable and inseparable extensions
+- normal extensions
+- transcendental extensions
+- cyclotomic extensions
+- finite fields
+- and algebraic closure; Galois theory
+- solvability by radicals
+- cyclic extensions and Kummer theory.
 
-Ring Theory: non-commutative case. Semisimple rings, irreducible modules, and the Artin-Wedderburn theorem; non-semisimple rings, indecomposable modules and the Krull-Schmidt theorem; group rings.
+Ring Theory: non-commutative case. Semisimple rings
+- irreducible modules
+- and the Artin-Wedderburn theorem; non-semisimple rings
+- indecomposable modules and the Krull-Schmidt theorem; group rings.
 
-Representations of Groups, esp. finite groups. Basic definitions, matrix coefficients, Schur orthogonality, invariant inner products and complete reducibility of representations, characters of finite groups and parametrization of complex representations by characters, character tables, Peter-Weyl theorem.
+Representations of Groups
+- esp. finite groups. Basic definitions
+- matrix coefficients
+- Schur orthogonality
+- invariant inner products and complete reducibility of representations
+- characters of finite groups and parametrization of complex representations by characters
+- character tables
+- Peter-Weyl theorem.
 
 ## Real Analysis
-Lebesgue integration; convergence theorems (uniform convergence, Ego- roff’s theorem, Lusin’s theorem, Lebesgue dominated convergence theorem, monotone conver- gence theorem, Fatou’s lemma); Fubini’s theorem; covering lemmas and differentiation of measures (Lebesgue decomposition theorem, Radon-Nikodym theorem, Jordan decomposition theorem, rela- tions to functions of bounded variation, signed measures and Hahn decompositions); approximate identities; basic functional analysis (linear functionals, Hahn-Banach theorem, open mapping the- orem, closed graph theorem, uniform boundedness principle, strong, weak, and weak* topologies); elementary point set topology including Urysohn’s lemma, the Tychonoff theorem, the Baire Cat- egory theorem and the Stone-Weierstrass theorem. The spaces C(X), the Riesz representation theorem, and the compact subsets of C(X), (Arzela-Ascoli theorem); Hilbert space, self-adjoint linear operators and their spectra; Lp spaces (duality, distribution functions, weak Lp spaces, Hölder’s inequality, Jensen’s inequality, linear operators); basic Fourier analysis (orthonormal sys- tems, trigonometric series, convolutions on Rn, Plancherel’s theorem, Riemann-Lebesgue lemma Poisson summation formula); abstract measure theory; Hausdorff measures.
+Lebesgue integration; convergence theorems (uniform convergence
+- Ego- roff’s theorem
+- Lusin’s theorem
+- Lebesgue dominated convergence theorem
+- monotone conver- gence theorem
+- Fatou’s lemma); Fubini’s theorem; covering lemmas and differentiation of measures (Lebesgue decomposition theorem
+- Radon-Nikodym theorem
+- Jordan decomposition theorem
+- rela- tions to functions of bounded variation
+- signed measures and Hahn decompositions); approximate identities; basic functional analysis (linear functionals
+- Hahn-Banach theorem
+- open mapping the- orem
+- closed graph theorem
+- uniform boundedness principle
+- strong
+- weak
+- and weak* topologies); elementary point set topology including Urysohn’s lemma
+- the Tychonoff theorem
+- the Baire Cat- egory theorem and the Stone-Weierstrass theorem. The spaces C(X)
+- the Riesz representation theorem
+- and the compact subsets of C(X)
+- (Arzela-Ascoli theorem); Hilbert space
+- self-adjoint linear operators and their spectra; Lp spaces (duality
+- distribution functions
+- weak Lp spaces
+- Hölder’s inequality
+- Jensen’s inequality
+- linear operators); basic Fourier analysis (orthonormal sys- tems
+- trigonometric series
+- convolutions on Rn
+- Plancherel’s theorem
+- Riemann-Lebesgue lemma Poisson summation formula); abstract measure theory; Hausdorff measures.
 
 ## Complex Analysis
-Analytic functions: Examples, sums of power series, exponential and logarithm functions, M¨obius transformations, and spherical representation. Cauchy’s theorem: Goursat’s proof, consequences of Cauchy integral formula, such as Liouville’s theorem, isolated singularities, Casorati-Weierstrass theorem, open mapping theorem, maximum principle, Morera’s theorem, and Schwarz reflection principle. Cauchy’s theorem on multiply connected domains, residue theorem, the argument principle, Rouch´e’s theorem, and the evaluation of definite inte- grals. Harmonic functions: conjugate functions, maximum principle, mean value property, Poisson integrals, Dirichlet problem for a disk, Harnack’s principle, Schwarz lemma and the hyperbolic metric. Compact families of analytic and harmonic functions: series and product developments, Hurwitz theorem, Mittag-Leffler theorem, infinite products, Weierstrass product theorem, Poisson- Jensen formula. Conformal mappings: Elementary mappings, Riemann mapping theorem, mapping of polygons, reflections across analytic boundaries, and mappings of finitely connected domains. Subharmonic functions and the Dirichlet problem. The monodromy theorem and Picard’s theorem. Elementary facts about elliptic functions.
+Analytic functions: Examples
+- sums of power series
+- exponential and logarithm functions
+- M¨obius transformations
+- and spherical representation. Cauchy’s theorem: Goursat’s proof
+- consequences of Cauchy integral formula
+- such as Liouville’s theorem
+- isolated singularities
+- Casorati-Weierstrass theorem
+- open mapping theorem
+- maximum principle
+- Morera’s theorem
+- and Schwarz reflection principle. Cauchy’s theorem on multiply connected domains
+- residue theorem
+- the argument principle
+- Rouch´e’s theorem
+- and the evaluation of definite inte- grals. Harmonic functions: conjugate functions
+- maximum principle
+- mean value property
+- Poisson integrals
+- Dirichlet problem for a disk
+- Harnack’s principle
+- Schwarz lemma and the hyperbolic metric. Compact families of analytic and harmonic functions: series and product developments
+- Hurwitz theorem
+- Mittag-Leffler theorem
+- infinite products
+- Weierstrass product theorem
+- Poisson- Jensen formula. Conformal mappings: Elementary mappings
+- Riemann mapping theorem
+- mapping of polygons
+- reflections across analytic boundaries
+- and mappings of finitely connected domains. Subharmonic functions and the Dirichlet problem. The monodromy theorem and Picard’s theorem. Elementary facts about elliptic functions.
 
 ## Topology
