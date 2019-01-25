@@ -150,12 +150,13 @@ explicit solutions of simple equations.
 - Analytic functions
 - conformality
 - Cauchy-Riemann equations
-- elementary functions and their basic properties (rational  functions
+- elementary functions and their basic properties 
+- rational  functions
 - exponential function
 - logarithm function
 - trigonometric functions
 - roots
-- e. g. z). Cauchy’s theorem and Cauchy’s integral formula
+- Cauchy’s theorem and Cauchy’s integral formula
 - power series and Laurent series
 - isolation of zeros
 - classification of isolated singularities (including singularity at ∞)
