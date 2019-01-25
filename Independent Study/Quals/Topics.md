@@ -269,7 +269,7 @@ Analytic functions: Examples
 - differential forms
 - integration and  Stokes’ Theorem
 - de Rham cohomology
-- including the Mayer-Vietoris sequence
+- the Mayer-Vietoris sequence
 - Poincare duality
 - Thom classes
 - degree theory and Euler characteristic from the viewpoint of de Rham cohomology
