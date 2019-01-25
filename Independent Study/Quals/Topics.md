@@ -45,6 +45,20 @@ explicit solutions of simple equations.
 - LU decomposition.
 
 ## Analysis
+3.2. Classical analysis (Mathematics 104). Topology of Rn and metric spaces; prop-
+erties of continuous functions, compactness, connectedness, limit points; least upper bound
+property of R. Sequences and series, Cauchy sequences, uniform convergence and its relation
+to derivatives and integrals; power series, radius of convergence, Weierstrass M -test; conver-
+gence of improper integrals. Compactness in functions spaces. Inverse and implicit function
+theorems and applications; the derivative as a linear map; existence and uniqueness theorems
+for solutions of ordinary differential equations; elementary Fourier series. Texts: Rosenlicht,
+Introduction to analysis, Dover; Marsden, Elementary classical analysis, Freeman; Bartle,
+Elements of real analysis, Wiley; Rudin, Principles of mathematical analysis, McGraw-Hill.
+
+
+# Qual Level
+
+## Analysis
 - completeness of the real numbers
 - sequences
 - series
