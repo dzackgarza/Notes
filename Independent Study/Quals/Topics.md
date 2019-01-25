@@ -208,7 +208,13 @@ Group Theory:
 - the Sylow theorems
 - dihedral groups; cycle decomposition and symmetric groups; subgroups
 - cosets
-- and Lagrange’s Theorem; cyclic groups and subgroups; subgroup lattice; quotient groups and normal subgroups; Isomorphism Theorems; Hölder Program and simple groups; transpositions
+- Lagrange’s Theorem; 
+- cyclic groups and subgroups; 
+- subgroup lattice; 
+- quotient groups and normal subgroups; 
+- Isomorphism Theorems; 
+- Hölder Program and simple groups; 
+- transpositions
 - alternating groups; group actions
 - Cayley’s Theorem
 - Class Equation; Sylow’s Theorem and applications; simplicity of An ; direct products
