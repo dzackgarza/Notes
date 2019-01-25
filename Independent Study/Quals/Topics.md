@@ -256,15 +256,15 @@ Representations of Groups
 
 ## Real Analysis
 - $L^p$ spaces
-- abstract measure theory;
-- and the compact subsets of C(X)
+- measure theory;
+- compact subsets of C(X)
 - approximate identities; 
 - Arzela-Ascoli theorem 
 - Fourier analysis 
 - Functional analysis 
 - closed graph theorem
 - convergence theorems 
-- convolutions on Rn
+- convolutions on $\RR^n$
 - covering lemmas and differentiation of measures 
 - distribution functions
 - Egoroff's theorem
