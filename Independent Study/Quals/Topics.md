@@ -3,7 +3,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 # Prelim Level
 
 ## Linear Algebra
-Vector spaces
+- Vector spaces
 - subspaces
 - basis and dimension
 - linear transformations and matrices
