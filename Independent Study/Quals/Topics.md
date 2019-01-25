@@ -146,7 +146,8 @@ Lebesgue integration; convergence theorems (uniform convergence
 - relations to functions of bounded variation
 - signed measures and Hahn decompositions); 
 - approximate identities; 
-- basic functional analysis (linear functionals
+- basic functional analysis 
+- linear functionals
 - Hahn-Banach theorem
 - open mapping theorem
 - closed graph theorem
