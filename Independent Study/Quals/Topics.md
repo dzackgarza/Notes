@@ -94,7 +94,9 @@ Group Theory:
 - solvable
 - simple groups
 - finitely generated groups and their presentations
-- esp. abelian (with classification); semi-direct product groups and group extensions.
+- Classification of abelian groups; 
+- semi-direct product groups 
+- group extensions.
 
 Ring Theory: commutative case.  Ideals and homomorphisms
 - localization and completion
