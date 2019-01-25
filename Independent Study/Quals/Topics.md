@@ -224,7 +224,9 @@ Analytic functions: Examples
 - Mittag-Leffler theorem
 - infinite products
 - Weierstrass product theorem
-- Poisson- Jensen formula. Conformal mappings: Elementary mappings
+- Poisson- Jensen formula. 
+- Conformal mappings
+- Elementary mappings
 - Riemann mapping theorem
 - mapping of polygons
 - reflections across analytic boundaries
