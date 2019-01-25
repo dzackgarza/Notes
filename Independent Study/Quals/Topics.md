@@ -398,6 +398,7 @@ Representations of Groups
 - uniform convergence
 - Urysohn’s lemma
 - Weak $L^p$ spaces
+- Minkowski inequalities
 
 ## Complex Analysis
 - Analytic functions
