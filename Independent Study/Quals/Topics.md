@@ -86,7 +86,8 @@ Group Theory:
 - conjugacy 
 - the isomorphism theorems; 
 - group actions
-- and the Sylow and Jordan-Holder theorems; symmetric groups and permutation representations; free
+- the Sylow theorems
+- Jordan-Holder theorems; symmetric groups and permutation representations; free
 - nilpotent
 - solvable
 - simple groups
