@@ -272,7 +272,7 @@ Analytic functions: Examples
 - including the Mayer-Vietoris sequence
 - Poincare duality
 - Thom classes
-- degree theory and Euler characteristic revisited from the viewpoint of de Rham cohomology
+- degree theory and Euler characteristic from the viewpoint of de Rham cohomology
 - Riemannian metrics
 - gradients
 - volume forms
