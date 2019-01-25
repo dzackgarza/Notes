@@ -53,8 +53,9 @@ explicit solutions of simple equations.
 - orthogonality 
 - orthonormality
 - Quadratic forms
-- quadratic forms and symmetric matrices
-- rank and nullity
+- symmetric matrices
+- rank 
+- nullity
 - rational canonical form; 
 - row-reduced form
 - subspaces
