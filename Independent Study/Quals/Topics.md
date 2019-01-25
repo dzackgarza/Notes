@@ -279,7 +279,7 @@ Analytic functions: Examples
 - interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
 
 ### Algebraic topology: 
-- Basic concepts of homotopy theory
+- homotopy theory
 - fundamental group 
 - covering spaces
 - singular homology 
@@ -288,4 +288,4 @@ Analytic functions: Examples
 - Mayer-Vietoris sequence
 - calculation of homology and cohomology of standard spaces
 - cell complexes and cellular homology
-- deRham’s theorem $H_\text{sing} \cong H_{}$
+- deRham’s theorem $H_\text{sing} \cong H_{\text{DR}}$
