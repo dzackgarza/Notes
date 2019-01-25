@@ -146,7 +146,8 @@ Representations of Groups
 
 ## Real Analysis
 - Lebesgue integration; 
-- convergence theorems (uniform convergence
+- convergence theorems 
+- uniform convergence
 - Egoroff's theorem
 - Lusin’s theorem
 - Lebesgue dominated convergence theorem
