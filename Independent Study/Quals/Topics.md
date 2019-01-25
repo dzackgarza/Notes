@@ -288,8 +288,7 @@ Field Theory.
 - cyclotomic polynomials.
 
 Galois Theory:
-Galois Theory:
-field automorphisms
+- field automorphisms
 - fixed fields 
 - the Fundamental Theorem of Galois Theory
 - Compute galois groups for small degree examples
