@@ -292,10 +292,19 @@ Galois Theory:
 field automorphisms
 - fixed fields and the Fundamental Theorem of Galois Theory
 - appli-
-cation in examples of small degree; Galois theory of finite fields; abelian extensions of Q;
-Primitive Element Theorem; Fundamental Theorem of Algebra; symmetric functions and
-the Fundamental Theorem of Symmetric Functions; discriminants; roots of polynomials of
-degree ≤ 4; solvable and radical extensions; insolvability of the quintic.
+cation in examples of small degree
+- Galois theory of finite fields
+- abelian extensions of Q
+-
+Primitive Element Theorem
+- Fundamental Theorem of Algebra
+- symmetric functions and
+the Fundamental Theorem of Symmetric Functions
+- discriminants
+- roots of polynomials of
+degree ≤ 4
+- solvable and radical extensions
+- insolvability of the quintic.
 
 
 Ring Theory: (non-commutative case) 
