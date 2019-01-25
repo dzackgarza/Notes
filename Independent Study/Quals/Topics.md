@@ -45,7 +45,7 @@ explicit solutions of simple equations.
 - LU decomposition.
 
 ## Analysis
-3.2. Classical analysis (Mathematics 104). Topology of Rn and metric spaces; prop-
+Topology of Rn and metric spaces; prop-
 erties of continuous functions, compactness, connectedness, limit points; least upper bound
 property of R. Sequences and series, Cauchy sequences, uniform convergence and its relation
 to derivatives and integrals; power series, radius of convergence, Weierstrass M -test; conver-
