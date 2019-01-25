@@ -124,7 +124,8 @@ Field Theory.
 - solvability by radicals
 - cyclic extensions and Kummer theory.
 
-Ring Theory: non-commutative case. Semisimple rings
+Ring Theory: (non-commutative case) 
+- Semisimple rings
 - irreducible modules
 - and the Artin-Wedderburn theorem; non-semisimple rings
 - indecomposable modules and the Krull-Schmidt theorem; group rings.
