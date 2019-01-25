@@ -146,7 +146,7 @@ explicit solutions of simple equations.
 - definition of differentiability in several variables (approximating linear transformation)
 
 ## Complex Analysis
-3.5. Complex analysis (Mathematics 185). Basic properties of the complex number sys-
+Basic properties of the complex number sys-
 tem. Analytic functions, conformality, Cauchy-Riemann equations, elementary functions and
 their basic properties (rational
  functions, exponential function, logarithm function, trigono-
