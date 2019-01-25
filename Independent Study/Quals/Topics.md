@@ -290,7 +290,8 @@ Field Theory.
 Galois Theory:
 Galois Theory:
 field automorphisms
-- fixed fields and the Fundamental Theorem of Galois Theory
+- fixed fields 
+- the Fundamental Theorem of Galois Theory
 - application in examples of small degree
 - Galois theory of finite fields
 - abelian extensions of Q
