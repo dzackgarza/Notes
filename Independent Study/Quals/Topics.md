@@ -99,7 +99,7 @@ explicit solutions of simple equations.
 - uniform convergence and integration
 - uniform convergence and its relation to derivatives and integrals; power series
 - Weierstrass M -test; 
-Multivariable calculus: definition of differentiability in several variables (approximating linear transformation)
+- definition of differentiability in several variables (approximating linear transformation)
 
 ---
 
