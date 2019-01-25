@@ -160,7 +160,8 @@ Lebesgue integration; convergence theorems (uniform convergence
 - The spaces C(X)
 - Riesz representation theorem
 - and the compact subsets of C(X)
-- (Arzela-Ascoli theorem); Hilbert space
+- Arzela-Ascoli theorem 
+- Hilbert space
 - self-adjoint linear operators and their spectra; 
 - $L^p$ spaces
 - distribution functions
