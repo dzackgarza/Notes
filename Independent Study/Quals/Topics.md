@@ -241,7 +241,7 @@ Ring Theory: (commutative case)
 - Dedekind rings
 - tensor products
 - duality and bilinear pairings
-- esp. symmetric and alternating forms.
+- symmetric and alternating forms.
 - rings and subrings; 
 - homomorphisms
 - isomorphisms
