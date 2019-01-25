@@ -168,7 +168,9 @@ Representations of Groups
 - open mapping theorem
 - closed graph theorem
 - uniform boundedness principle
-- strong, weak, and weak* topologies 
+- strong
+- weak
+- and weak* topologies 
 - Urysohn’s lemma
 - the Tychonoff theorem
 - the Baire Category theorem 
@@ -245,11 +247,34 @@ Analytic functions: Examples
 ## Topology
 
 ### Differential topology: 
-manifolds, tangent vectors, smooth maps, tangent bundle and vector bundles in general, vector fields and integral curves, Sard’s Theorem on the measure of critical values, embedding theorem, transversality, degree theory, the Lefshetz Fixed Point Theorem, Euler characteristic, Ehresmann’s theorem that proper submersions are locally trivial fibrations
+manifolds
+- tangent vectors
+- smooth maps
+- tangent bundle and vector bundles in general
+- vector fields and integral curves
+- Sard’s Theorem on the measure of critical values
+- embedding theorem
+- transversality
+- degree theory
+- the Lefshetz Fixed Point Theorem
+- Euler characteristic
+- Ehresmann’s theorem that proper submersions are locally trivial fibrations
 
 
 ### Differential geometry: 
-Lie derivatives, integrable distributions and the Frobenius Theorem, differential forms, integration and  Stokes’ Theorem, deRham cohomology, including the Mayer-Vietoris sequence, Poincare duality, Thom classes, degree theory and Euler characteristic revisited from the viewpoint of deRham cohomology, Riemannian metrics, gradients, volume forms,  and the interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
+Lie derivatives
+- integrable distributions and the Frobenius Theorem
+- differential forms
+- integration and  Stokes’ Theorem
+- deRham cohomology
+- including the Mayer-Vietoris sequence
+- Poincare duality
+- Thom classes
+- degree theory and Euler characteristic revisited from the viewpoint of deRham cohomology
+- Riemannian metrics
+- gradients
+- volume forms
+-  and the interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
 
 ### Algebraic topology: 
 Basic concepts of homotopy theory
