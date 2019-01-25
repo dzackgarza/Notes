@@ -307,7 +307,7 @@ Representations of Groups
 - Weak $L^p$ spaces
 
 ## Complex Analysis
-Analytic functions: Examples
+- Analytic functions
 - sums of power series
 - exponential and logarithm functions
 - Mobius transformations and spherical representation. 
