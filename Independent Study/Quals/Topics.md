@@ -55,10 +55,15 @@ explicit solutions of simple equations.
 - eigenvectors; 
 - determinants
 - characteristic and minimal polynomials
-- Cayley-Hamilton theorem; diagonalization and triangularization of operators; Jordan normal form
-- rational canonical form; invariant subspaces and canonical forms; inner product spaces
+- Cayley-Hamilton theorem; 
+- diagonalization and triangularization of operators; 
+- Jordan normal form
+- rational canonical form; 
+- invariant subspaces and canonical forms; 
+- inner product spaces
 - hermitian and unitary operators
-- adjoints. Quadratic forms.
+- adjoints. 
+- Quadratic forms.
 
 
 ## Algebra
