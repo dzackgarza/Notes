@@ -181,8 +181,8 @@ Lebesgue integration; convergence theorems (uniform convergence
 Analytic functions: Examples
 - sums of power series
 - exponential and logarithm functions
-- Mobius transformations
-- and spherical representation. Cauchy’s theorem: Goursat’s proof
+- Mobius transformations and spherical representation. 
+- Cauchy’s theorem: Goursat’s proof
 - consequences of Cauchy integral formula
 - such as Liouville’s theorem
 - isolated singularities
