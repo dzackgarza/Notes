@@ -277,9 +277,7 @@ Representations of Groups
 - open mapping theorem
 - closed graph theorem
 - uniform boundedness principle
-- strong
-- weak
-- and weak* topologies 
+- strong/weak/weak* topologies 
 - Urysohn’s lemma
 - the Tychonoff theorem
 - the Baire Category theorem 
