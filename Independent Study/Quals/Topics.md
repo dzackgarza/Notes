@@ -137,8 +137,10 @@ Representations of Groups
 - esp. finite groups. 
 - matrix coefficients
 - Schur orthogonality
-- invariant inner products and complete reducibility of representations
-- characters of finite groups and parametrization of complex representations by characters
+- invariant inner products 
+- complete reducibility of representations
+- characters of finite groups 
+- parametrization of complex representations by characters
 - character tables
 - Peter-Weyl theorem.
 
