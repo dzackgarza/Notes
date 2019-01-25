@@ -98,7 +98,7 @@ Group Theory:
 - semi-direct product groups 
 - group extensions.
 
-Ring Theory: commutative case.  
+Ring Theory: (commutative case)
 - Ideals and homomorphisms
 - localization and completion
 - free and projective modules
@@ -114,7 +114,8 @@ Ring Theory: commutative case.
 - duality and bilinear pairings
 - esp. symmetric and alternating forms.
 
-Field Theory. General field theory including separable and inseparable extensions
+Field Theory. General field theory including 
+- separable and inseparable extensions
 - normal extensions
 - transcendental extensions
 - cyclotomic extensions
