@@ -155,8 +155,9 @@ explicit solutions of simple equations.
 - exponential function
 - logarithm function
 - trigonometric functions
-- roots
-- Cauchy’s theorem and Cauchy’s integral formula
+- complex roots
+- Cauchy’s theorem 
+- Cauchy’s integral formula
 - power series and Laurent series
 - isolation of zeros
 - classification of isolated singularities (including singularity at ∞)
