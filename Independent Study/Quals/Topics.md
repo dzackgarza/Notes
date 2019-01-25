@@ -11,6 +11,17 @@ Metric space topology and analysis, primarily in R^n: open and closed sets, comp
 Multivariable calculus: definition of differentiability in several variables (approximating linear transformation), partial derivatives, chain rule, Taylor expansion in several variables, inverse and implicit function theorems, equality of mixed partials, multivariable integration, change of variables formula.
 
 ## Algebra
+Categories and Functors: basic definitions and examples, universal properties, natural transformations, representable functors, Yoneda lemma, adjoint functors, products
+
+Group Theory: basic notions and results (esp. those pertaining to automorphisms,  homomorphisms, normal subgroups, factor groups, and conjugacy); the isomorphism theorems; group actions, and the Sylow and Jordan-Holder theorems; symmetric groups and permutation representations; free, nilpotent, solvable, simple groups, finitely generated groups and their presentations, esp. abelian (with classification); semi-direct product groups and group extensions.
+
+Ring Theory: commutative case.  Ideals and homomorphisms, localization and completion, free and projective modules, basic theorems about factorization and UFD's , structure theory of modules over a PID, including applications to canonical forms of a matrix, chain conditions, Hilbert basis theorem, integral ring extensions, Hilbert Nullstellensatz, Dedekind rings, tensor products, duality and bilinear pairings, esp. symmetric and alternating forms.
+
+Field Theory. General field theory including separable and inseparable extensions, normal extensions, transcendental extensions, cyclotomic extensions, finite fields, and algebraic closure; Galois theory, solvability by radicals, cyclic extensions and Kummer theory.
+
+Ring Theory: non-commutative case. Semisimple rings, irreducible modules, and the Artin-Wedderburn theorem; non-semisimple rings, indecomposable modules and the Krull-Schmidt theorem; group rings.
+
+Representations of Groups, esp. finite groups. Basic definitions, matrix coefficients, Schur orthogonality, invariant inner products and complete reducibility of representations, characters of finite groups and parametrization of complex representations by characters, character tables, Peter-Weyl theorem.
 
 ## Real Analysis
 
