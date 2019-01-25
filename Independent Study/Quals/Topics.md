@@ -279,9 +279,11 @@ Analytic functions: Examples
 - interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
 
 ### Algebraic topology: 
-Basic concepts of homotopy theory
-- fundamental group and covering spaces
-- singular homology and cohomology theory
+- Basic concepts of homotopy theory
+- fundamental group 
+- covering spaces
+- singular homology 
+- cohomology theory
 - axioms of homology theory
 - Mayer-Vietoris sequence
 - calculation of homology and cohomology of standard spaces
