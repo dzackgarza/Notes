@@ -92,8 +92,6 @@ explicit solutions of simple equations.
 - the derivative as a linear map; 
 - the mean value theorem
 - Topology of Rn and metric spaces; properties of continuous functions
-- uniform continuity
-- uniform continuity
 - uniform convergence and integration
 - uniform convergence and its relation to derivatives and integrals; power series
 - Weierstrass M -test; 
