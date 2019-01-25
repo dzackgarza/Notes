@@ -252,4 +252,11 @@ manifolds, tangent vectors, smooth maps, tangent bundle and vector bundles in ge
 Lie derivatives, integrable distributions and the Frobenius Theorem, differential forms, integration and  Stokes’ Theorem, deRham cohomology, including the Mayer-Vietoris sequence, Poincare duality, Thom classes, degree theory and Euler characteristic revisited from the viewpoint of deRham cohomology, Riemannian metrics, gradients, volume forms,  and the interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
 
 ### Algebraic topology: 
-Basic concepts of homotopy theory, fundamental group and covering spaces, singular homology and cohomology theory, axioms of homology theory, Mayer-Vietoris sequence, calculation of homology and cohomology of standard spaces, cell complexes and cellular homology, deRham’s theorem on the isomorphism of deRham differential –form cohomology and singular cohomology with real coefficient
+Basic concepts of homotopy theory
+- fundamental group and covering spaces
+- singular homology and cohomology theory
+- axioms of homology theory
+- Mayer-Vietoris sequence
+- calculation of homology and cohomology of standard spaces
+- cell complexes and cellular homology
+- deRham’s theorem on the isomorphism of deRham differential –form cohomology and singular cohomology with real coefficient
