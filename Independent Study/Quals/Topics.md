@@ -247,6 +247,7 @@ Analytic functions: Examples
 ## Topology
 
 Guillemin and Pollack, Differential Topology
+Spivak, Differential Geometry, vol I, third edition
 
 
 ### Differential topology: 
