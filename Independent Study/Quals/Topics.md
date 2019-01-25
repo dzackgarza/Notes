@@ -288,4 +288,4 @@ Analytic functions: Examples
 - Mayer-Vietoris sequence
 - calculation of homology and cohomology of standard spaces
 - cell complexes and cellular homology
-- deRham’s theorem on the isomorphism of deRham differential form cohomology and singular cohomology with real coefficient
+- deRham’s theorem $H_\text{sing} \cong H_{}$
