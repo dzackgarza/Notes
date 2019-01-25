@@ -255,10 +255,6 @@ Representations of Groups
 - Peter-Weyl theorem.
 
 ## Real Analysis
-  - convolutions on Rn
-  - orthonormal systems
-  - Plancherel's theorem
-  - trigonometric series
 - $L^p$ spaces
 - abstract measure theory;
 - and the compact subsets of C(X)
@@ -268,6 +264,7 @@ Representations of Groups
 - basic functional analysis 
 - closed graph theorem
 - convergence theorems 
+- convolutions on Rn
 - covering lemmas and differentiation of measures 
 - distribution functions
 - Egoroff's theorem
@@ -287,6 +284,8 @@ Representations of Groups
 - Lusin’s theorem
 - monotone convergence theorem
 - open mapping theorem
+- orthonormal systems
+- Plancherel's theorem
 - Poisson summation formula 
 - Radon-Nikodym theorem
 - relations to functions of bounded variation
@@ -299,6 +298,7 @@ Representations of Groups
 - The spaces C(X)
 - the Stone-Weierstrass theorem. 
 - the Tychonoff theorem
+- trigonometric series
 - uniform boundedness principle
 - uniform convergence
 - Urysohn’s lemma
