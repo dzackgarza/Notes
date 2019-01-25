@@ -188,47 +188,49 @@ Categories and Functors:
 - products
 
 Group Theory:
+- alternating groups; 
+- Cayley’s Theorem
+- Class Equation; 
 - Classification of abelian groups
-- Dihedral groups
+- commutators
 - conjugacy 
+- cosets
+- cycle decomposition 
+- cyclic groups and subgroups; 
+- derived series
+- Dihedral groups
+- dihedral groups; 
+- direct products
 - factor groups
 - finitely generated groups and their presentations
 - free groups
+- Fundamental Theorem of Finitely Generated Abelian Groups and applications
+- group actions
 - group actions
 - group extensions.
+- Hölder Program 
 - homomorphisms
+- isomorphism theorems; 
+- Isomorphism Theorems; 
 - Jordan-Holder theorems; 
+- Lagrange’s Theorem; 
 - nilpotent
 - normal subgroups
-- semi-direct product groups 
-- simple groups
-- solvable
-- symmetric groups and permutation representations; 
-- isomorphism theorems; 
-- Sylow theorems
-- dihedral groups; 
-- cycle decomposition 
-- symmetric groups and subgroups
-- cosets
-- Lagrange’s Theorem; 
-- cyclic groups and subgroups; 
-- subgroup lattice; 
-- quotient groups 
 - normal subgroups; 
-- Isomorphism Theorems; 
-- Hölder Program and simple groups; 
-- transpositions
-- alternating groups; group actions
-- Cayley’s Theorem
-- Class Equation; 
-- Sylow’s Theorem and applications; 
-- simplicity of An
-- direct products
-- Fundamental Theorem of Finitely Generated Abelian Groups and applications
-- commutators
-- derived series
-- solvable groups
+- quotient groups 
+- semi-direct product groups 
 - semidirect products.
+- simple groups
+- simple groups; 
+- simplicity of An
+- solvable
+- solvable groups
+- subgroup lattice; 
+- Sylow theorems
+- Sylow’s Theorem and applications; 
+- symmetric groups and permutation representations; 
+- symmetric groups and subgroups
+- transpositions
 
 
 Ring Theory: (commutative case)
