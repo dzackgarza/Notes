@@ -63,7 +63,7 @@ explicit solutions of simple equations.
 - inner product spaces
 - hermitian and unitary operators
 - adjoints. 
-- Quadratic forms.
+- Quadratic forms
 
 
 ## Algebra
