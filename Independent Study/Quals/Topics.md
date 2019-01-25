@@ -71,7 +71,7 @@ Multivariable calculus: definition of differentiability in several variables (ap
 - change of variables formula.
 
 ## Algebra
-Categories and Functors: basic definitions and examples
+Categories and Functors: 
 - universal properties
 - natural transformations
 - representable functors
