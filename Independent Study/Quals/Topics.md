@@ -47,7 +47,8 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - uniform convergence and integration
 - differentiation under the integral sign
 - contraction maps
-- fixed point theory with applications to Newton's method and solutions of non-linear equations
+- fixed point theory 
+  - with applications to Newton's method and solutions of non-linear equations
 - numerical integration with error estimation.
 - open and closed sets
 - completeness
