@@ -190,7 +190,8 @@ Analytic functions: Examples
 - open mapping theorem
 - maximum principle
 - Morera’s theorem
-- and Schwarz reflection principle. Cauchy’s theorem on multiply connected domains
+- Schwarz reflection principle. 
+- Cauchy’s theorem on multiply connected domains
 - residue theorem
 - the argument principle
 - Rouch´e’s theorem
