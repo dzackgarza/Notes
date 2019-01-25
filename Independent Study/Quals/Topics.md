@@ -163,7 +163,7 @@ Lebesgue integration; convergence theorems (uniform convergence
 - (Arzela-Ascoli theorem); Hilbert space
 - self-adjoint linear operators and their spectra; Lp spaces (duality
 - distribution functions
-- weak Lp spaces
+- weak $L^p$ spaces
 - Hölder’s inequality
 - Jensen’s inequality
 - linear operators); basic Fourier analysis (orthonormal sys- tems
