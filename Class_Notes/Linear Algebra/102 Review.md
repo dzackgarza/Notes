@@ -25,4 +25,4 @@ Textbook: Leon, *Linear Algebra with Applications*
   - *Final Exam*
 
 Some notes:
-- The next exam is basically just chapter 5; the bit on eigenvalues/eigenvectors will essentially be 
+- The next exam is basically just chapter 5; the bit on eigenvalues/eigenvectors will essentially be review from lower-div (mostly computational).
