@@ -19,4 +19,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 6.2: Systems of Linear Differential Equations
 - 6.3: Diagonalization
 - 6.6: Quadratic Forms
+- 6.7: Positive Definite Matrices
 - 
