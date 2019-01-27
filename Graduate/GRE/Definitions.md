@@ -161,8 +161,8 @@ $$
 ## Linear Algebra
 Convention: always over a field $k$, and $T: k^n \to k^m$ is a generic linear map (or $m\times n$ matrix).
 
-- Consistent: 
-A system of linear equations is *consistent* when it has at least one solution.
+- Consistent
+	A system of linear equations is *consistent* when it has at least one solution.
 
 - Inconsistent: 
 A system of linear equations is *inconsistent* when it has no solutions.
