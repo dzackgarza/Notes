@@ -354,4 +354,6 @@ $$
 - The Complex Derivative
 - Meromorphic
 - The Gamma Function: Satisfies $\Gamma(p+1) + p\Gamma(p)$ and $\Gamma(1) = 1$, defined as
-	$$\Gamma ( p ) = \int _ { 0 } ^ { \infty } t ^ { p - 1 } e ^ { - t } d t , \quad p > 0$$
+$$
+\Gamma ( p ) = \int _ { 0 } ^ { \infty } t ^ { p - 1 } e ^ { - t } d t , \quad p > 0
+$$
