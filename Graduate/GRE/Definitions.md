@@ -20,7 +20,8 @@
 ## Calculus
 
 - Limit
-	$$\lim_{x \to p} f(x) = L \iff \forall\varepsilon,~\exists\delta:\\
+	$$
+	\lim_{x \to p} f(x) = L \iff \forall\varepsilon,~\exists\delta:\\
 	d(x, p) < \delta\implies d(f(x), L) < \varepsilon
 	$$
 
@@ -60,9 +61,9 @@
 	$$
 
 - Gradient 
-$$
-\nabla f = [f_x, f_y, f_z]
-$$
+	$$
+	\nabla f = [f_x, f_y, f_z]
+	$$
 
 - Divergence
 
