@@ -6,4 +6,6 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 3.5: Change of Basis
 - 4.1: Linear Transformations
 - 4.2: Matrix Representations
+- 4.3: Similarity
+
 - 
