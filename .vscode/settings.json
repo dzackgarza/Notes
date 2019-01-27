@@ -8,5 +8,5 @@
         "plaintext"
     ],
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 1110
+    "editor.wordWrapColumn": 90
 }
