@@ -140,23 +140,23 @@ $$
 asdsa#todo
 
 - Pointwise Convergence
-	$$
-	\text{For}~\{f_n: X \to Y\}_{n\in\NN},\\ f_n \to f \iff
-	\forall \varepsilon > 0,~\forall x\in X,~ \exists N(x, \varepsilon)\in\NN :
-	\quad n > N \implies d_Y\left(f_n(x),f(x)\right) < \varepsilon
-	$$
+$$
+\text{For}~\{f_n: X \to Y\}_{n\in\NN},\\ f_n \to f \iff
+\forall \varepsilon > 0,~\forall x\in X,~ \exists N(x, \varepsilon)\in\NN :
+\quad n > N \implies d_Y\left(f_n(x),f(x)\right) < \varepsilon
+$$
 
 - Uniform Convergence
-	$$
-	\text{For}~\{f_n: X \to Y\}_{n\in\NN}, \\
-	f_n \rightrightarrows f \iff \forall \varepsilon > 0,~ \exists N(\varepsilon)\in\NN :
-	\quad \forall x\in X,~ n > N \implies d_Y(f_n(x), f(x)) < \varepsilon
-	$$
+$$
+\text{For}~\{f_n: X \to Y\}_{n\in\NN}, \\
+f_n \rightrightarrows f \iff \forall \varepsilon > 0,~ \exists N(\varepsilon)\in\NN :
+\quad \forall x\in X,~ n > N \implies d_Y(f_n(x), f(x)) < \varepsilon
+$$
 
-	- Generalized Mean Value Theorem
-	$$
-	(f ( b ) - f ( a ) ) g' ( c ) = (g ( b ) - g ( a )) f' ( c )
-	$$
+- Generalized Mean Value Theorem
+$$
+(f ( b ) - f ( a ) ) g' ( c ) = (g ( b ) - g ( a )) f' ( c )
+$$
 
 ## Linear Algebra
 Convention: always over a field $k$, and $T: k^n \to k^m$ is a generic linear map (or $m\times n$ matrix).
