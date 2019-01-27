@@ -18,4 +18,5 @@ Textbook: Leon, *Linear Algebra with Applications*
   - *Exam 2*
 - 6.2: Systems of Linear Differential Equations
 - 6.3: Diagonalization
+- 6.6: Quadratic Forms
 - 
