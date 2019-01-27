@@ -23,3 +23,6 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 6.5: Singular Value Decomposition
 - 7.7: The Moore-Penrose Pseudo-Inverse
   - *Final Exam*
+
+Some notes:
+- The next exam is basically just chapter 5; the bits on eigenvalues/eigenvectors
