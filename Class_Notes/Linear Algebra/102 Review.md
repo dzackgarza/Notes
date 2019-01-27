@@ -7,11 +7,11 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 4.1: Linear Transformations
 - 4.2: Matrix Representations
 - 4.3: Similarity
-
+  - *Exam 1*   
 - 5.1: Scalar Product in $\RR^n$
 - 5.2: Orthogonal Subspaces
 - 5.3: Least Squares
 - 5.4: Inner Product Spaces
 - 5.5: Orthonormal Sets
 - 5.6: Gram-Schmidt
-- Eigenvalues
+- 6.1: Eigenvalues and Eigenvectors
