@@ -7,5 +7,6 @@
         "latex",
         "plaintext"
     ],
-    "editor.wordWrap": "wordWrapColumn"
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 1110
 }
