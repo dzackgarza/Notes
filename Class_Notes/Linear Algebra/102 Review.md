@@ -1,1 +1,1 @@
-Textbook: Leon, *Applications o
+Textbook: Leon, *Linear Algebra with Applications*
