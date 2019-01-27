@@ -12,4 +12,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 5.2: Orthogonal Subspaces
 - 5.3: Least Squares
 - 5.4: Inner Product Spaces
+- 5.5: Orthonormal Sets
 - 
