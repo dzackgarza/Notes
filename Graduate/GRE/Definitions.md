@@ -196,7 +196,7 @@ $$
 
 - Subspace
 
-	- A nonempty subset $W \subseteq V$ that is a vector space and satisfies $\theset{ \sum_i c_i \vec x_i \mid x_i \in W} \subseteq W$
+	- A nonempty subset $W \subseteq V$ that is a vector space and satisfies $\theset{ \sum_i c_i \vec x_i \mid c_i \in \FF,~ x_i \in W} \subseteq W$
 
 	- Quick counter-check: find $\vec x, \vec y$ such that $a\vec x + b\vec y \not\in W$
 
