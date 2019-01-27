@@ -177,9 +177,9 @@ $$\mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}$$
 where $M_{i, j}$ is the minor obtained by deleting the $i\dash$th row and $j\dash$th column of $A$.
 
 - Adjugate
-	$$
-	\mathrm{adjugate}(A) = \mathrm{cofactor}(A)^T = (-1)^{i+j} M_{j, i}
-	$$
+$$
+\mathrm{adjugate}(A) = \mathrm{cofactor}(A)^T = (-1)^{i+j} M_{j, i}
+$$
 
 - Vector Space Axioms
 	- Let $k$ be a field and $\vec{u},\vec{v},\vec{w} \in V$ and $r,s,t\in k$. A vector space $V$ over $k$ satisfies:
