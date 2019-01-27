@@ -318,7 +318,10 @@ $$
 W \left[ f _ { 1 } , f _ { 2 } , \ldots , f _ { k } \right] ( x ) = \left| \begin{array} { c c c c } { f _ { 1 } ( x ) } & { f _ { 2 } ( x ) } & { \dots } & { f _ { k } ( x ) } \\ { f _ { 1 } ^ { \prime } ( x ) } & { f _ { 2 } ^ { \prime } ( x ) } & { \dots } & { f _ { k } ^ { \prime } ( x ) } \\ { \vdots } & { \vdots } & { } & { \vdots } \\ { f _ { 1 } ^ { ( k - 1 ) } ( x ) } & { f _ { 2 } ^ { ( k - 1 ) } ( x ) } & { \dots } & { f _ { k } ^ { ( k - 1 ) } ( x ) } \end{array} \right|
 $$
 
-- Laplace Transform: $$L_f(s) = \int_0^\infty e^{-st} f(t) ~dt$$
+- Laplace Transform: 
+$$
+L_f(s) = \int_0^\infty e^{-st} f(t) ~dt
+$$
 
 ## Algebra
 - Ring
