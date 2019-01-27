@@ -16,4 +16,6 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 5.6: Gram-Schmidt
 - 6.1: Eigenvalues and Eigenvectors
   - *Exam 2*
+- 6.2: Systems of Linear Differential Equations
+- 6.3: Diagonalization
 - 
