@@ -164,10 +164,11 @@ Convention: always over a field $k$, and $T: k^n \to k^m$ is a generic linear ma
 - Consistent
 	A system of linear equations is *consistent* when it has at least one solution.
 
-- Inconsistent: 
-A system of linear equations is *inconsistent* when it has no solutions.
+- Inconsistent
+	A system of linear equations is *inconsistent* when it has no solutions.
 
-- Rank: number of nonzero rows in RREF
+- Rank
+	The number of nonzero rows in RREF
 - Elementary Matrix
 - Row Equivalent
 - Pivot
