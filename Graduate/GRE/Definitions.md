@@ -173,7 +173,8 @@ Convention: always over a field $k$, and $T: k^n \to k^m$ is a generic linear ma
 - Row Equivalent
 - Pivot
 - Cofactor
-$$\mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}$$ where $M_{i, j}$ is the minor obtained by deleting the $i\dash$th row and $j\dash$th column of $A$.
+$$\mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}$$ 
+where $M_{i, j}$ is the minor obtained by deleting the $i\dash$th row and $j\dash$th column of $A$.
 
 - Adjugate
 	$$
