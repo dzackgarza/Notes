@@ -15,3 +15,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 5.5: Orthonormal Sets
 - 5.6: Gram-Schmidt
 - 6.1: Eigenvalues and Eigenvectors
+  - *Exam 2*
+- 
