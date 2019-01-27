@@ -20,4 +20,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 6.3: Diagonalization
 - 6.6: Quadratic Forms
 - 6.7: Positive Definite Matrices
+- 6.5: Singular Value Decomposition
 - 
