@@ -201,7 +201,7 @@ $$
 \theset{ \sum_i c_i \vec x_i \mid c_i \in \FF,~ x_i \in W} \subseteq W
 $$
 
-	- Quick counter-check: find $\vec x, \vec y$ such that $a\vec x + b\vec y \not\in W$
+    - Quick counter-check: find $\vec x, \vec y$ such that $a\vec x + b\vec y \not\in W$
 
 - Span
 	- Given a set of $n$ vectors $S = \theset{\vec x_i}_{i=1}^n$, defined as $\mathrm{Span}(S) = \theset{\sum_{i=1}^nc_i \vec x_i \mid c_i \in k}$
