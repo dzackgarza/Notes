@@ -59,9 +59,15 @@
 	\mathbf{f}:\RR^n \to \RR^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:\RR^n \to \RR^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_{\RR^n}} { \| \mathbf { h } \| _{\RR^m} } = 0
 	$$
 
-- Gradient $$\nabla f = [f_x, f_y, f_z]$$
+- Gradient 
+$$
+\nabla f = [f_x, f_y, f_z]
+$$
+
 - Divergence
+
 - Curl
+
 - Taylor Series (at a point $a$)
 	- Single Variable $\RR \to \RR$
 	$$
