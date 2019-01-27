@@ -3,4 +3,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 # Topics
 
 - 1.6: Partition Matrices
+- 3.5: Change of Basis
 - 
