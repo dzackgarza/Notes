@@ -121,9 +121,9 @@ $S$ is connected $\iff$ $\not\exists U,V\subset S$ nonempty, open, disjoint such
 
 - Compact:
 	- Every open cover has a finite subcover:
-		$$
-		X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty \and X\subseteq \union_{i\in I} V_i
-		$$
+	$$
+	X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty \and X\subseteq \union_{i\in I} V_i
+	$$
 
 - Sequential Compactness
 
