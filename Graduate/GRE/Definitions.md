@@ -126,16 +126,15 @@ X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty
 $$
 
 - Sequential Compactness
-
-	- Every sequence has a convergent subsequence:
-	$$
-	\theset{x_i}_{i\in I}\subseteq X \implies \exists J\subseteq I,~ \exists p\in X: \quad \theset{x_j}_{j\in J} \to p
-	$$
+Every sequence has a convergent subsequence:
+$$
+\theset{x_i}_{i\in I}\subseteq X \implies \exists J\subseteq I,~ \exists p\in X: \quad \theset{x_j}_{j\in J} \to p
+$$
 
 - Bounded (sequences, subsets, metric spaces)
-	$$
-	U \subseteq X \text{ is bounded } \iff \exists x\in X, \exists M \in \RR :\quad u\in U \implies d(x, u) < M
-	$$
+$$
+U \subseteq X \text{ is bounded } \iff \exists x\in X, \exists M \in \RR :\quad u\in U \implies d(x, u) < M
+$$
 
 - Totally Bounded: #todo
 
