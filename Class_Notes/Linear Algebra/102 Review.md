@@ -10,4 +10,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 
 - 5.1: Scalar Product in $\RR^n$
 - 5.2: Orthogonal Subspaces
-- 
+- 5.3: Least Squares
