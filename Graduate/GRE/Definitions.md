@@ -113,7 +113,8 @@
 - Closure of a Set
 - Boundary
 - Metric
-- Cauchy Sequence: $$\theset{a_i} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in\NN: \quad m,n > N \implies d(x_m, x_n) < \varepsilon $$
+- Cauchy Sequence: 
+  $$\theset{a_i} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in\NN: \quad m,n > N \implies d(x_m, x_n) < \varepsilon $$
 - Connected: $S$ is connected $\iff$ $\not\exists U,V\subset S$ nonempty, open, disjoint such that $S = U \cup V$
 	$$
 	\theset{x_i}_{i\in\NN}\text{ is Cauchy }\iff \forall\varepsilon>0,~\exists N:~ \quad i,j>N \implies d(x_i, x_j) < \varepsilon
