@@ -120,10 +120,10 @@ $$\theset{a_i} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\
 $S$ is connected $\iff$ $\not\exists U,V\subset S$ nonempty, open, disjoint such that $S = U \cup V$
 
 - Compact:
-	- Every open cover has a finite subcover:
-	$$
-	X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty \and X\subseteq \union_{i\in I} V_i
-	$$
+Every open cover has a finite subcover:
+$$
+X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty \and X\subseteq \union_{i\in I} V_i
+$$
 
 - Sequential Compactness
 
