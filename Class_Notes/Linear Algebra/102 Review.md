@@ -8,4 +8,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 4.2: Matrix Representations
 - 4.3: Similarity
 
+- 5.1: Scalar Product in $\RR^n$
 - 
