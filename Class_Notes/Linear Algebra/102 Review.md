@@ -21,4 +21,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 6.6: Quadratic Forms
 - 6.7: Positive Definite Matrices
 - 6.5: Singular Value Decomposition
-- 
+- 7.7: The Moore-Penrose Pseudo-Inverse
