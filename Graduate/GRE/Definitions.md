@@ -212,7 +212,10 @@ $$
 - Row Space
 	- The range of the linear map $T$.
 	- Given $T =
-\begin{bmatrix} \vec x_1 \rightarrow \\ \vec x_2 \rightarrow \\ \vdots \\ \vec x_m \rightarrow \end{bmatrix}$, defined as $\mathrm{Span}(\theset{\vec x_i}_{i=1}^m) \subseteq k^m$
+\begin{bmatrix} \vec x_1 \rightarrow \\ \vec x_2 \rightarrow \\ \vdots \\ \vec x_m \rightarrow \end{bmatrix}$, defined as 
+$$
+\mathrm{Span}(\theset{\vec x_i}_{i=1}^m) \subseteq k^m
+$$
 	- $\mathrm{rowspace}(T)^\perp = \mathrm{null}(T)$
 	- $\abs{\mathrm{rowspace}(T)} = \mathrm{Rank}(T)$
 
