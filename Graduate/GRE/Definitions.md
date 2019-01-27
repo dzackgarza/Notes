@@ -136,7 +136,8 @@ $$
 U \subseteq X \text{ is bounded } \iff \exists x\in X, \exists M \in \RR :\quad u\in U \implies d(x, u) < M
 $$
 
-- Totally Bounded: #todo
+- Totally Bounded
+asdsa#todo
 
 - Pointwise Convergence
 	$$
