@@ -28,7 +28,9 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Systems of linear equations
   - Consistent vs. Inconsistent
   - Possibilities for solutions
+  - Geometric intepretation
 - Methods of computing the inverse
   - Formula for 2x2 case
   - Augment with the identity
-  - 
+  - Cramer's Rule
+- 
