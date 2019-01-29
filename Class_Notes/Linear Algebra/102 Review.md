@@ -29,10 +29,12 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Consistent vs. Inconsistent
   - Possibilities for solutions
   - Geometric interpretation
-- Methods of computing the inverse
-  - Formula for 2x2 case
-  - Augment with the identity
-  - Cramer's Rule
+- Matrix Inverses
+  - Singular matrices
+  - Methods of computing the inverse
+    - Formula for 2x2 case
+    - Augment with the identity
+    - Cramer's Rule
 - Vector Spaces
   - Span
   - Linear Independence
