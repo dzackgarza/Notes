@@ -28,3 +28,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Systems of linear equations
   - Consistent vs. Inconsistent
   - Possibilities for solutions
+- 
