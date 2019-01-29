@@ -31,7 +31,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Geometric interpretation
 - Matrix Inverses
   - Detecting if a matrix is singular
-  - Methods of computing the inverse
+  - Computing the inverse
     - Formula for 2x2 case
     - Augment with the identity
     - Cramer's Rule
