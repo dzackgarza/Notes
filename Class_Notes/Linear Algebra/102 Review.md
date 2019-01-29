@@ -25,4 +25,6 @@ Textbook: Leon, *Linear Algebra with Applications*
   - *Final Exam*
 
 # Review
-- Consistent vs. Inconsistent system
+- Systems of linear equations
+  - Consistent vs. Inconsistent
+  - Possibilities for solutions
