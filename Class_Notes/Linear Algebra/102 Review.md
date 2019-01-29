@@ -25,3 +25,4 @@ Textbook: Leon, *Linear Algebra with Applications*
   - *Final Exam*
 
 # Review
+- Consistent vs. Inconsistent system
