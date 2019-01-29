@@ -41,4 +41,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Linear Independence
   - Subspace and the subspace test
   - Basis
-- 
+- Common Computation
+  - Basis for the column space
+  - Basis for the nullspace
+  - 
