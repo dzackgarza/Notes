@@ -36,6 +36,8 @@ Textbook: Leon, *Linear Algebra with Applications*
     - Augment with the identity
     - Cramer's Rule
 - Vector Spaces
+  - Definition in terms of closures
   - Span
   - Linear Independence
+  - Subspace and the subspace test
   - 
