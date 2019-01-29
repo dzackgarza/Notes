@@ -30,7 +30,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Possibilities for solutions
   - Geometric interpretation
 - Matrix Inverses
-  - Singular matrices
+  - Detecting if a matrix is singular
   - Methods of computing the inverse
     - Formula for 2x2 case
     - Augment with the identity
