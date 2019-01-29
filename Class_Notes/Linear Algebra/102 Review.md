@@ -33,4 +33,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Formula for 2x2 case
   - Augment with the identity
   - Cramer's Rule
-- 
+- Vector Spaces
+  - Span
+  - Linear Independence
+  - 
