@@ -40,4 +40,5 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Span
   - Linear Independence
   - Subspace and the subspace test
-  - 
+  - Basis
+- 
