@@ -42,7 +42,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Subspace and the subspace test
   - Basis
 - Common Computation
-  - RREF
+  - Reduction to RREF
   - Basis for the column space
   - Basis for the nullspace
   - Eigenvectors and a basis for the eigenspace
