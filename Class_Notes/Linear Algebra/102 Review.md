@@ -45,4 +45,4 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Reduction to RREF
   - Basis for the column space
   - Basis for the nullspace
-  - Eigenvectors and a basis for the eigenspace
+  - Basis for the eigenspace
