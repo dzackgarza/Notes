@@ -43,6 +43,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Basis
 - Common Computation
   - Reduction to RREF
+  - Eigenvalues and eigenvectors
   - Basis for the column space
   - Basis for the nullspace
   - Basis for the eigenspace
