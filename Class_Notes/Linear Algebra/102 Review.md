@@ -50,4 +50,4 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Construct matrix from a given linear map
   - Construct change of basis matrix
   - Construct matrix projection onto subspace
-  - 
+  - Convert a basis to an orthonormal basis
