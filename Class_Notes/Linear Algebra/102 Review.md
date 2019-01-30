@@ -49,3 +49,4 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Basis for the eigenspace
   - Construct matrix from a given linear map
   - Construct change of basis matrix
+  - Construct matrix projection onto subspace
