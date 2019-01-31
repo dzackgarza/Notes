@@ -80,7 +80,6 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 ---
 
 # Fun Stuff
-Don't forget to take some time to get excited about what you're studying!
 
 - [Hyper Rouge](http://www.roguetemple.com/z/hyper/)
 	- A cool little dungeon crawler in which the in-game world is a hpyerbolic space.
@@ -90,24 +89,13 @@ Don't forget to take some time to get excited about what you're studying!
 	- A great way to get some visual intuition for what homeomorphisms and/or homotopy equivalences might look like
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/sKqt6e7EcCs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-- :fa-tv: [Understanding Tensors](https://www.youtube.com/watch?v=f5liqUk0ZTw)
-
 - :fa-external-link-alt: [Hopf Fibration Toy](http://philogb.github.io/page/hopf/)
 
-- Reviews of some of the big Math-related Youtubers:
-	- VSauce - 2/10
-		- Often hints at neat concepts, but usually focused on "pop-math". The cotton candy of the Math video world.
-	- Mathologer - 9/10
-		- Rigorous without drowning in technical details, and good topic selection!
-	- PBS Infinite Series - 9/10
-		- Topics are much closer to "serious" math, and are often accompanied with proofs.
-	- Numberphile - 7/10
-		- Often eschews rigorous explanations, which leads to a very misinformed public! Many good interviews, though.
-	- 3blue1brow - 8/10
-		- Amazing visualization, topics are interesting but are less serious. Good for general conceptual understanding.
+- Funny papers, notes, or expository writing
+  - [Time variation of a fundamental dimensionless constant](https://arxiv.org/abs/0903.5321)
 
 - Some interesting Math-related movies:
-- Proof
+  - Proof
 	- Good Will Hunting
 	- A Beautiful Mind (John Nash)
 	- The Imitation Game (Alan Turing)
