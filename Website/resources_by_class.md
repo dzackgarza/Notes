@@ -27,7 +27,7 @@
  **Legend**
 - :fa-book: -- Textbooks
 - :fa-tv: -- Videos or online lectures
-- :fa-external-link: -- Websites or other online collections of resources
+- :fa-link: -- Websites or other online collections of resources
 - :fa-star: -- Particularly excellent resources that I highly recommend
 - _Details_ -- Expand these sections for notes on the mathematical content or subject-specific advice.
 
@@ -47,6 +47,9 @@
 - :fa-tv: [patrickJMT](https://www.youtube.com/user/patrickJMT/videos)
 	- Videos of how to solve many specific calculus and engineering problems
 
+- :fa-link: [Paul's Online Notes](http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)
+  - Follows the standard curriculum very closely, with many examples and in-depth explanations.
+
 <details markdown="1">
 **Content**
 - Todo
@@ -63,6 +66,9 @@
 
 - :fa-tv: :fa-star: [MIT OCW Denis Auroux](https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/)
 	- A very geometric approach, with lots of great imagery!
+
+- :fa-link: [Paul's Online Notes](http://tutorial.math.lamar.edu/Classes/CalcIII/CalcIII.aspx)
+  - More fantastic notes from Paul!
 
 <details markdown="1">
 **Content**
@@ -128,7 +134,7 @@
 - :fa-book: _Eccles_, **An Introduction to Mathematical Reasoning: Numbers, Sets and Functions**
 	- Good for a solid introduction to proofs.
 
-- :fa-external-link: :fa-star: [UC Berkeley's EECS 70 Course](http://www.eecs70.org/)
+- :fa-link: :fa-star: [UC Berkeley's EECS 70 Course](http://www.eecs70.org/)
 	- A wonderful lower-division course for which excellent notes have been posted for a number of years.
 
 
