@@ -17,7 +17,7 @@ $$
 
 
 ## General Notes
-- $A \in \mathrm{Mat}(m,n}$ represents a linear map $T: \RR^
+- $A \in \mathrm{Mat}(m,n)$ represents a linear map $T: \RR^n \to \RR^m$
 - Rank: number of nonzero rows in RREF
 - $\mathrm{Trace}(A) = \sum_{i=1}^m A_{i,i}$
 - Elementary row operations / matrices:
