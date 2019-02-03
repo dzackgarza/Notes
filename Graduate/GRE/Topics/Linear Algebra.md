@@ -58,7 +58,6 @@ Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \
 
 Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties:
 - Product-preserving, so $\det(AB) = \det(A) \det(B)$
-  - i.e. it's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$
   - Corollary: $\det{A^k} = k\det{A}$
   - Corollary: $\det(A^{-1}) = (\det A)^{-1}$
 - Adding multiples of any row to another does not change its value, so for any $i$ and any scalar $t$, we have $\det(\vector a_1, \vector a_2, \cdots) = \det(\vector a_1 + t\vector a_i, \vector a_2, \cdots)$
