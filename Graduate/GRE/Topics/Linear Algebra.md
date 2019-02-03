@@ -72,7 +72,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 - If any row of $A$ is all zeros, $\det(A) = 0$.
 - Take $A = [\vector a_1, \vector a_2, \vector a_3]$, then in $\RR^3$, the value of $\det(A)$ is the volume of the parallelepiped spanned by the $\vector a_i$.
 
-Computing the Determinant:
+**Computing the Determinant:**
 - Take the Laplace expansion along any row or column
 - Reduce to $\mathrm{REF}$ (i.e. just upper triangular), keeping track of the following effects:
   - $R_i \pm t R_j \to R_i$: no effect
