@@ -62,7 +62,7 @@ Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \
     	- $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
 	- Add one row to another: $\det(A') = \det(A)$
 	- $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$ for upper or lower triangular matrices.
-	- $\det(A^{-1}) = \frac{1}{\det(A)}$
+	- 
 	- $\det{A^T} = \det{A}$
 	- Linearity in each row: $\det(\sum_i \vector a_i, \cdots) = \sum_i \det(\vector{a}_i, \cdots)$
 	- If any row of $A$ is all zeros, $\det(A) = 0$.
