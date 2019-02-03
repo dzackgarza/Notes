@@ -67,19 +67,20 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
   - $\det\pmatrix{t \vector a_1, \vector a_2, \cdots, \vector a_m} = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
   - $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
   - Linearity in each row: $\det(\sum_i \vector a_i, \cdots) = \sum_i \det(\vector{a}_i, \cdots)$
-- For an lower/upper triangular matrix $L$ and $U$ respectively, we have $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$.
+
 - $\det{A^T} = \det{A}$
 - If any row of $A$ is all zeros, $\det(A) = 0$.
   - More generally, if $A$ is singular, $\det A = 0$, so the determinant distinguishes singular matrices / matrices with less than full rank.
 - Take $A = [\vector a_1, \vector a_2, \vector a_3]$, then in $\RR^3$, the value of $\det(A)$ is the volume of the parallelepiped spanned by the $\vector a_i$.
 
 **Computing the Determinant:**
+
 - Take the Laplace expansion along any row or column
 - Reduce to $\mathrm{REF}$ (i.e. just upper triangular), keeping track of the following effects:
   - $R_i \pm t R_j \to R_i$: no effect
   - Permute two rows: change sign
   - Multiply a row by a scalar $t$: multiply determinant by $t$
-
+- For an lower/upper triangular matrix $L$ and $U$ respectively, we have $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$.
 
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
