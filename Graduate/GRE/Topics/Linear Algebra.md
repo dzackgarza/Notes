@@ -70,7 +70,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 - For an lower/upper triangular matrix $L$ and $U$ respectively, we have $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$.
 - $\det{A^T} = \det{A}$
 - If any row of $A$ is all zeros, $\det(A) = 0$.
-  - More generally, if $A$ is singular, $\det A = 0$, so the determinant classifies singular matrices / matrices with less than full rank.
+  - More generally, if $A$ is singular, $\det A = 0$, so the determinant distinguishes singular matrices / matrices with less than full rank.
 - Take $A = [\vector a_1, \vector a_2, \vector a_3]$, then in $\RR^3$, the value of $\det(A)$ is the volume of the parallelepiped spanned by the $\vector a_i$.
 
 **Computing the Determinant:**
