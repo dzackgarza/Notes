@@ -77,7 +77,6 @@ Computing the Determinant:
 - Reduce to $\mathrm{RREF}$, keeping track of the following effects:
   - Permute two rows: change sign
   - $R_i \pm t R_j \to R_i$: no effect
-
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
 	- $\mathrm{rowspace} A \subseteq \RR^n$: reduce to RREF, and take nonzero rows of $\mathrm{RREF}(A)$.
