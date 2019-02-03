@@ -17,7 +17,7 @@ $$
 	- Permute rows
 	- Multiple a row by a scalar
 	- Add any row to another
-- If $A = \thevector{a_1, a_2, \cdots} \in \mathrm{Mat}(m, n)$ and $B\in\mathrm{Mat}(n, p)$, then
+- If $A = \thevector{\vector a_1, \vector a_2, \cdots} \in \mathrm{Mat}(m, n)$ and $B\in\mathrm{Mat}(n, p)$, then
 $$
 C \definedas AB \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a^T_i}}{\mathbf{b_j}}
 $$
