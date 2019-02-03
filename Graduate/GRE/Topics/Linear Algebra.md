@@ -59,7 +59,7 @@ Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ 
 
 Defined as $\inner{\vector a}{\vector b} = \sum_i a_i b_i$. Can also be written as $\vector a^T\vector b$ or $\vector a \cdot \vector b$. 
 
-Defines a norm $\norm{\vector a} = \sqrt{\inner{\vector a}{\vector a}}$; also leads to a notion of angle via the formula $\inner{\vector a}{\vector b} = 
+Defines a norm $\norm{\vector a} = \sqrt{\inner{\vector a}{\vector a}}$; also leads to a notion of angle via the formula $\inner{\vector a}{\vector b} = \cos \theta_{a,b}$
 
 ## The Determinant
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
