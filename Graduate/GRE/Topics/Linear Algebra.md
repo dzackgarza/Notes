@@ -64,7 +64,6 @@ Notation: $A\vector x = \vector b$ a linear system, $r = \rank(A)$ and $ r' = \r
 	- Colspace: reduce to RREF, and take columns with pivots from original $A$ $(\subseteq \RR^m)$
 	- Nullspace: reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
 	- Eigenspace: find the nullspace of $A - \lambda I$
-	- todo: example
 
 ## Eigenvalues and Eigenvectors
 - Defining equation: $\lambda\in E(A) \iff \forall \vector x \in \RR^m, A\vector x = \lambda\vector x$
