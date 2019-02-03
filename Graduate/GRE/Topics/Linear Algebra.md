@@ -64,7 +64,7 @@ Defines a norm $\norm{\vector a} = \sqrt{\inner{\vector a}{\vector a}}$; also le
 
 Satisfies three properties:
 1. Bilinearity: $\inner{\sum_j \alpha_j \vector a_j}{\sum_k \beta_k \vector b_k} = \sum_j \sum_i \alpha_j \beta_i \inner{\vector a_j}{\vector b_i}$.
-2. Symmetry: $\inner{\vector a}{\vector b}
+2. Symmetry: $\inner{\vector a}{\vector b} = \inner{\vector b}{\vector a}$.
 
 ## The Determinant
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
