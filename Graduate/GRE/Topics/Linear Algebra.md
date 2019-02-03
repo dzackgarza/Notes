@@ -59,8 +59,6 @@ Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \
 	- Multilinear in rows:
     	- $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
     	- $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
-	- Can factor a scalar $t$ out of one row at a time: $\det A' = t \det A$
-		- $\det(tA) = t^m \det(A)$
 	- Add one row to another: $\det(A') = \det(A)$
 	- $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$ for upper or lower triangular matrices.
 	- $\det(A^{-1}) = \frac{1}{\det(A)}$
