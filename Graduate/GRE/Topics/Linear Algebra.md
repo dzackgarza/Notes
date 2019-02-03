@@ -24,7 +24,7 @@ $$
 $$
 C \definedas AB \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a^T_i}}{\mathbf{b_j}}
 $$
-  - i.e., the $c_{ij}$ entry is obtained by dotting row $i$ of $A$ with column $j$ of $B$.
+  - i.e., entry $c_{ij}$ is obtained by dotting row $i$ of $A$ with column $j$ of $B$.
 - $\abs{A \mod p} \mod p \cong \abs{A} \mod p$
 - For $2\cross 2$ matrices,
 	$$
