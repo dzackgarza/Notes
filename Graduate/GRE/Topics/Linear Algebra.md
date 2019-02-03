@@ -59,7 +59,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
   - Corollary: $\det{A^k} = k\det{A}$
   - Corollary: $\det(A^{-1}) = (\det A)^{-1}$
 - Adding multiples of any row does not change its value, so for any $i$ and any scalara $t$, we have $\det(\vector a_1, \vector a_2, \cdots) = \det(\vector a_1 + t\vector a_i, \vector a_2, \cdots)$
-- Permuting two rows switches sign: so $\det(\cdots \vector a_i,\cdots, \vector a_j, \cdots) = -\det(\cdots \vector a_j,\cdots, \vector a_i, \cdots)$
+- Permuting two rows switches sign: so $\det(\cdots, \vector a_i,\cdots, \vector a_j, \cdots) = -\det(\cdots \vector a_j,\cdots, \vector a_i, \cdots)$
 - Multilinear in rows:
   	- $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
   	- $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
