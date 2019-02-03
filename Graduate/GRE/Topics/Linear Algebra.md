@@ -51,7 +51,7 @@ Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ 
 - Homogeneous systems are **always** consistent.
 
 ## The Determinant
-Notation: $\det A$ is the determinant of a matrix; also write $\det A = \det(a_1, a_2, \cdots a_m)$
+Notation: $\det A$ is the determinant of a matrix; also write $\det A = \det(\vector a_1, \vector a_2, \cdots \vector a_m)$
 - Properties of the Determinant $A: m\times n$
 	- $\det(AB) = \det(A) \det(B)$
 	- Permute two Rows: $\det A' = - \det A$
