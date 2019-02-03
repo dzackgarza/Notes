@@ -26,7 +26,7 @@ $$
 	$$
 
 ## Systems of Linear Equations
-Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A \mid \vec b)$ an augmented matrix.
+Notation: $A\vector x = \vector b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A \mid \vector b)$ an augmented matrix.
 - Consistent: A system of linear equations is *consistent* when it has at least one solution.
 - Inconsistent: A system of linear equations is *inconsistent* when it has no solutions.
 - Tall matrices: more equations than unknowns
@@ -55,8 +55,8 @@ Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A 
 	- $\det{A^T} = \det{A}$
 	- $\det(\mathbf{a}_1 + \mathbf{a}_2, \cdots) = \det(\mathbf{a}_1, \cdots) + \det(\mathbf{a}_2, \cdots)$
 	- If any row of $A$ is all zeros, $\det(A) = 0$.
-	- Take $A = \pmatrix{\vec a \rightarrow \\ \vec b \rightarrow \\ \vdots }$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by
-		$\vec{a}, \vec{b}, \vec{c}$.
+	- Take $A = \pmatrix{\vector a \rightarrow \\ \vector b \rightarrow \\ \vdots }$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by
+		$\vector{a}, \vector{b}, \vector{c}$.
 
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
@@ -67,7 +67,7 @@ Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A 
 	- todo: example
 
 ## Eigenvalues and Eigenvectors
-- Defining equation: $\lambda\in E(A) \iff \forall x \in \RR^m, A\vec x = \lambda\vec x$
+- Defining equation: $\lambda\in E(A) \iff \forall x \in \RR^m, A\vector x = \lambda\vector x$
 - Finding: solve $A - I \lambda_i = 0$ for each $i$.
 - $\lambda \in E(A) \implies \lambda^2 \in E(A^2)$ (with the same eigenvector).
 - Eigenvectors corresponding to distinct eigenvalues are **always** linearly independent
@@ -82,20 +82,20 @@ Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A 
 ## Misc
 - $\abs{\mathrm{rowspace}(A)} = \abs{\mathrm{colspace}(A)}$
 - Proof of Cauchy-Schwarz: See Goode page 346.
-- Distance from a point $p$ to a line $\vec a + t\vec b$: let $\vec w = \vec p - \vec a$, then: $\norm{w - P(w, v)}$
+- Distance from a point $p$ to a line $\vector a + t\vector b$: let $\vector w = \vector p - \vector a$, then: $\norm{w - P(w, v)}$
 	- ![distance from line to point](../../images/DistanceFromLineToPoint.png)
 - Computing change of basis matrices: #todo
 - Two step vector subspace test:
 	- Ensure it contains the zero vector
 	- Ensure it's closed under scalar multiplication and vector addition
-- Any set of two vectors $\theset{\vec v, \vec w}$ is linearly dependent $\iff \exists \lambda :~\vec v = \lambda \vec w$.
+- Any set of two vectors $\theset{\vector v, \vector w}$ is linearly dependent $\iff \exists \lambda :~\vector v = \lambda \vector w$.
 - A set of functions $\theset{f_i}$ is linearly independent on $I \iff \exists x_0 \in I: W(x_0) \neq 0$ (where $W$ is the Wronskian)
 	- NOTE: $W \equiv 0$ on $I \not\implies \theset{f_i}$ is linearly dependent!
 	- Counterexample: $\theset{x, x+x^2, 2x-x^2}$ where $W \equiv 0$ but $x+x^2 = 3(x) + (2x-x^2)$.
 	- Sufficient condition: each $f_i$ is the solution to a linear homogeneous ODE $L(y) = 0$.
 - Every square matrix is similar to a matrix in jordan canonical form.
-- Projection onto column space of $A$: given by $P(\vec x) = A(A^t A)^{-1}A^T\vec x$
-- Normal equations: $\vec x$ is a least squares solution to $A\vec x = \vec b \iff A^T A \vec x = A^T \vec b$
+- Projection onto column space of $A$: given by $P(\vector x) = A(A^t A)^{-1}A^T\vector x$
+- Normal equations: $\vector x$ is a least squares solution to $A\vector x = \vector b \iff A^T A \vector x = A^T \vector b$
 
 ## Gram-Schmidt Process
 Extending $\theset{\mathbf{x}_i}$ to an orthonormal basis
@@ -114,7 +114,7 @@ Equivalent formulas for $A^{-1}$:
 
 - Adjoints: $A^{-1} = \frac{\mathrm{adjugate(A)}}{\det(A)}$
 - Gauss Jordan: $[A \mid I] \sim [I \mid A^{-1}]$
-- Cramer's Rule: $A\vec{x} = \vec{b} \implies x_k = \frac{\det(B_k)}{\det(A)}$ where $B_k$ is $A$ where the $k\dash$th column is replaced by $\vec{b}$
+- Cramer's Rule: $A\vector{x} = \vector{b} \implies x_k = \frac{\det(B_k)}{\det(A)}$ where $B_k$ is $A$ where the $k\dash$th column is replaced by $\vector{b}$
 
 
 ## Big List of Equivalent Properties
@@ -122,8 +122,8 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - $A$ is invertible and has a unique inverse $A^{-1}$
 - $A^T$ is invertible
 - $\det(A) \neq 0$
-- The linear system $A\vector{x} = \vector{b}$ has a unique solution for every $b\ \in \RR^m$
-- The homogeneous system $A\vector{x} = 0$ has only the trivial solution $\vector{x} = 0$
+- The linear system $A\vectortor{x} = \vectortor{b}$ has a unique solution for every $b\ \in \RR^m$
+- The homogeneous system $A\vectortor{x} = 0$ has only the trivial solution $\vectortor{x} = 0$
 - $\rank(A) = n$ 
   - i.e. $A$ is full rank
 - $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$
@@ -134,7 +134,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 	- i.e. $\mathrm{colspace}(A) = \RR^n$
 - The rows of $A$ are a basis for $\RR^m$
 	- i.e. $\mathrm{rowspace}(A) = \RR^m$
-- $\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A\right)^\perp = \theset{\vec 0}$
+- $\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A\right)^\perp = \theset{\vector 0}$
 - Zero is not an eigenvalue of $A$.
 - $A$ has $n$ linearly independent eigenvectors
 - The rows of $A$ are coplanar.
@@ -145,8 +145,8 @@ Similarly, by taking negations, TFAE:
 - $A$ is singular
 - $A^T$ is not invertible
 - $\det A = 0$
-- The linear system $A \vector x = \vector b$ has either no solution or infinitely many solutions.
-- The homogeneous system $A \vector x = \vector 0$ has nontrivial solutions
+- The linear system $A \vectortor x = \vectortor b$ has either no solution or infinitely many solutions.
+- The homogeneous system $A \vectortor x = \vectortor 0$ has nontrivial solutions
 - $\rank A < n$
 - $\dim \mathrm{nullspace}~ A > 0$
 - At least one row of $A$ is a linear combination of the others
@@ -159,4 +159,4 @@ Reformulated in terms of linear maps $T$, TFAE:
 - $T$ is injective
 - $T$ is surjective
 - $T$ is an isomorphism
-- The system $A\vector{x} = 0$ has infinitely many solutions
+- The system $A\vectortor{x} = 0$ has infinitely many solutions
