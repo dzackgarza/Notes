@@ -56,7 +56,7 @@ Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \
   - Preserves products, so $\det(AB) = \det(A) \det(B)$
     - i.e. it's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$ 
 	- Permuting two rows switches sign: $\det A' = - \det A$
-	- Factoring a scalar $t$ out of one row: $\det A' = t \det A$
+	- Can factor a scalar $t$ out of one row at a time: $\det A' = t \det A$
 		- $\det(tA) = t^m \det(A)$
 	- Add one row to another: $\det(A') = \det(A)$
 	- $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$ for upper or lower triangular matrices.
