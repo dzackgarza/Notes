@@ -140,7 +140,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 
 Similarly, by taking negations, TFAE:
 
-- $A$ is not invertible/singular
+- $A$ is not invertible
 - At least one row of $A$ is a linear combination of the others
 - The $RREF$ of $A$ has a row of all zeros.
 
