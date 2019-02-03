@@ -5,10 +5,10 @@ Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear tra
 $$
 \abs{\ker(A)} + \abs{\im(A)} = \abs{\mathrm{domain}(A)}
 $$
-	- Generalization: If $A \to B \to C$ is exact then $\abs{B} = \abs{A} + \abs{C}$, so take the exact sequence
-	$$
-	0 \rightarrow \operatorname { ker } A \stackrel { I d } { \rightarrow } \mathrm{domain}(A) \stackrel { A } { \rightarrow } \text { im } A \rightarrow 0
-	$$
+  - Generalization: If $A \to B \to C$ is exact then $\abs{B} = \abs{A} + \abs{C}$, so take the exact sequence
+$$
+0 \rightarrow \operatorname { ker } A \stackrel { I d } { \rightarrow } \mathrm{domain}(A) \stackrel { A } { \rightarrow } \text { im } A \rightarrow 0
+$$
 
 ## General Notes
 - Rank: number of nonzero rows in RREF
