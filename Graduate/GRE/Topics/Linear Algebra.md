@@ -138,7 +138,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - $A$ has $n$ linearly independent eigenvectors
 - The rows of $A$ are coplanar.
 
-As a consequence, all of the following negations are equivalent:
+Similarly, by taking negations, TFAE:
 
 - $A$ is not invertible/singular
 - At least one row of $A$ is a linear combination of the others
