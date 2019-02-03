@@ -1,4 +1,4 @@
-Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear transformation $T: \RR^n \to \RR^m$. Vectors are written as $\vector a$, which are column vectors, and so $\vector a^T$ denotes a row vector. Matrices written as a collection of vectors $A = \thevector{\vector a_1, \vector a_2, \cdots}$ denote that each $\vector a_i$ is the $i$th column of $A$. Vector spaces are denoted $V, W$; the notations $\abs V$ and $\dim V$ both denote the dimension of the space. $\mathrm{Mat}(m,n)$ denotes the space of all $m\times n$ matrices.
+Assume everywhere that the underlying field is $\CC$ or $\RR$, and that $A$ is an $m\times n$ matrix that represents a linear transformation $T: \RR^n \to \RR^m$. Vectors are written as $\vector a$, which are column vectors, and so $\vector a^T$ denotes a row vector. Matrices written as a collection of vectors $A = \thevector{\vector a_1, \vector a_2, \cdots}$ denote that each $\vector a_i$ is the $i$th column of $A$. Vector spaces are denoted $V, W$; the notations $\abs V$ and $\dim V$ both denote the dimension of the space. $\mathrm{Mat}(m,n)$ denotes the space of all $m\times n$ matrices.
 
 ## Big Theorems
 
