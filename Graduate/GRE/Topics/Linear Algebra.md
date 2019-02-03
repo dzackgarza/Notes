@@ -72,6 +72,8 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 - If any row of $A$ is all zeros, $\det(A) = 0$.
 - Take $A = [\vector a_1, \vector a_2, \vector a_3]$, then in $\RR^3$, the value of $\det(A)$ is the volume of the parallelepiped spanned by the $\vector a_i$.
 
+Note that $\det A = 0 \iff \mathrm{RREF}(A)
+
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
 	- $\mathrm{rowspace} A \subseteq \RR^n$: reduce to RREF, and take nonzero rows of $\mathrm{RREF}(A)$.
