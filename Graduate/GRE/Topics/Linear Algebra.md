@@ -19,7 +19,7 @@ $$
 	- Add any row to another
 - If $A \in \mathrm{Mat}(m, n)$ and $B\in\mathrm{Mat}(n, p)$, then
 $$
-AB = C \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a^T_i}}{\mathbf{b_j}}
+C \definedas AB \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a^T_i}}{\mathbf{b_j}}
 $$
 	- i.e., the $c_{ij}$ entry is just dotting row $i$ of $A$ with column $j$ of $B$.
 - $\abs{A \mod p} \mod p \cong \abs{A} \mod p$
