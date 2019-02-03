@@ -125,7 +125,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - The linear system $A\vector{x} = \vector{b}$ has a unique solution for every $b\ \in \RR^m$
 - The homogeneous system $A\vector{x} = 0$ has only the trivial solution $\vector{x} = 0$
 - $\rank(A) = n$ 
-  - (i.e. $A$ is full rank)
+  - i.e. $A$ is full rank
 - $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$
 - $A = \prod_{i=1}^k E_i$ for some finite $k$, where each $E_i$ is an elementary matrix.
 - $A$ is row-equivalent to the identity matrix $I_n$
