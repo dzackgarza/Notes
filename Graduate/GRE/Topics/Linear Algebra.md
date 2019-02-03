@@ -38,8 +38,8 @@ Notation: $A\vector x = \vector b$ a linear system, $r = \rank(A)$ and $ r_b = \
 - Possibilities:
 	- $r < r_b$: the system is inconsistent.
 	- $r = r_b$: the system is consistent, and
-		- $r_b = n \implies $ there is a unique solution (square, tall)
-		- $r_b < n \implies $ there are infinitely many solutions (wide)
+		- $r_b = n \implies$ there is a unique solution (square, tall)
+		- $r_b < n \implies$ there are infinitely many solutions (wide)
 - Homogeneous systems are **always** consistent.
 
 ## The Determinant
