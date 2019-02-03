@@ -27,8 +27,8 @@ $$
 
 ## Systems of Linear Equations
 Notation: $A\vector x = \vector b$ a linear system, $r = \rank(A)$ and $ r_b = \rank(A \mid \vector b)$ an augmented matrix.
-- Consistent: A system of linear equations is *consistent* when it has at least one solution.
-- Inconsistent: A system of linear equations is *inconsistent* when it has no solutions.
+- Consistent: A system of linear equations is **consistent** when it has at least one solution.
+- Inconsistent: A system of linear equations is **inconsistent** when it has no solutions.
 - Tall matrices: more equations than unknowns
 - Wide matrices: more unknowns than equations
 - Three possibilities for a system of linear equations:
