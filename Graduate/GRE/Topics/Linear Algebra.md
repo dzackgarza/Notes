@@ -58,17 +58,17 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
   - i.e. it's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$
   - Corollary: $\det{A^k} = k\det{A}$
   - Corollary: $\det(A^{-1}) = (\det A)^{-1}$
+- $\det$ is invariant under 
 - Permuting two rows switches sign: $\det A' = - \det A$
-	- Multilinear in rows:
-    	- $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
-    	- $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
-	- Add one row to another: $\det(A') = \det(A)$
-	- $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$ for upper or lower triangular matrices.
-	- 
-	- $\det{A^T} = \det{A}$
-	- Linearity in each row: $\det(\sum_i \vector a_i, \cdots) = \sum_i \det(\vector{a}_i, \cdots)$
-	- If any row of $A$ is all zeros, $\det(A) = 0$.
-	- Take $A = \pmatrix{\vector a \rightarrow \\ \vector b \rightarrow \\ \vdots }$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by $\vector{a}, \vector{b}, \vector{c}$.
+- Multilinear in rows:
+  	- $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
+  	- $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
+- $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$ for upper or lower triangular matrices.
+- 
+- $\det{A^T} = \det{A}$
+- Linearity in each row: $\det(\sum_i \vector a_i, \cdots) = \sum_i \det(\vector{a}_i, \cdots)$
+- If any row of $A$ is all zeros, $\det(A) = 0$.
+- Take $A = \pmatrix{\vector a \rightarrow \\ \vector b \rightarrow \\ \vdots }$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by $\vector{a}, \vector{b}, \vector{c}$.
 
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
