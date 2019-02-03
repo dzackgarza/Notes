@@ -55,7 +55,7 @@ Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \
 - Properties of the Determinant $A \in \mathrm{Mat}(m, n)$.
 	- It's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$ 
     	- So concretely, $\det(AB) = \det(A) \det(B)$
-	- Permute two Rows: $\det A' = - \det A$
+	- Permute two rows switches sign: $\det A' = - \det A$
 	- Factor a scalar $t$ out of one row: $\det A' = t \det A$
 		- $\det(tA) = t^m \det(A)$
 	- Add one row to another: $\det(A') = \det(A)$
