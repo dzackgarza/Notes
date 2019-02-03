@@ -54,8 +54,9 @@ Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ 
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
 - Properties of the Determinant $A \in \mathrm{Mat}(m, n)$.
   - Preserves products, so $\det(AB) = \det(A) \det(B)$
-    - i.e. it's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$ 
-	- Permuting two rows switches sign: $\det A' = - \det A$
+    - i.e. it's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$
+    - Corrollary: $\det{A^k} = k\det{A}$
+- Permuting two rows switches sign: $\det A' = - \det A$
 	- Multilinear in rows:
     	- $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
     	- $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
