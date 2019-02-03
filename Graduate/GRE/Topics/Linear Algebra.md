@@ -22,7 +22,7 @@ $$
 - $\abs{A \mod p} \mod p \cong \abs{A} \mod p$
 - For $2\cross 2$ matrices,
 	$$
-	A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac{1}{\abs{A}}\left( \begin{array}{cc} d & -b \\ -c & a \end{array}\right)
+	A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac{1}{\det{A}}\left( \begin{array}{cc} d & -b \\ -c & a \end{array}\right)
 	$$
 
 ## Systems of Linear Equations
