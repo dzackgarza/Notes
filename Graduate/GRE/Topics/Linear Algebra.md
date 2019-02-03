@@ -2,6 +2,8 @@ Assume everywhere that the underlying field is $\RR$, and that $A$ is an $m\time
 
 Vector spaces are denoted $V, W$; the notations $\abs V$ and $\dim V$ both denote the dimension of the space. $\mathrm{Mat}(m,n)$ denotes the space of all $m\times n$ matrices, and $\det A$ is the determinant.
 
+Augment matrices are denoted $[A \mid \vector b]
+
 ## Big Theorems
 
 - Rank Nullity:
@@ -32,7 +34,7 @@ A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac
 $$
 
 ## Systems of Linear Equations
-Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ r_b = \rank([A \mid \vector b])$ the matrix 
+Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ r_b = \rank([A \mid \vector b])$.
 - Consistent: A system of linear equations is **consistent** when it has at least one solution.
 - Inconsistent: A system of linear equations is **inconsistent** when it has no solutions.
 - Tall matrices: more equations than unknowns
