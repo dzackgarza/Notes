@@ -144,7 +144,7 @@ Similarly, by taking negations, TFAE:
 - $A$ is singular
 - $A^T$ is not invertible
 - $\det A = 0$
-- The linear system $A \vector x = \vector v$
+- The linear system $A \vector x = \vector b$
 - At least one row of $A$ is a linear combination of the others
 - The $RREF$ of $A$ has a row of all zeros.
 
