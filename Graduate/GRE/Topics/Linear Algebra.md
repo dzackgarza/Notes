@@ -66,7 +66,7 @@ Satisfies three properties:
 1. Bilinearity: $\inner{\sum_j \alpha_j \vector a_j}{\sum_k \beta_k \vector b_k} = \sum_j \sum_i \alpha_j \beta_i \inner{\vector a_j}{\vector b_i}$.
 2. Symmetry: $\inner{\vector a}{\vector b} = \inner{\vector b}{\vector a}$.
 3. Positivity: $\vector a \neq \vector 0 \implies \inner{\vector a}{\vector a} > 0$
-   1. And $\vector a
+   1. And $\vector a = \vector 0 \iff \inner{\vector a}{\vector a} = 0$
 
 ## The Determinant
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
