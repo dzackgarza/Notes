@@ -26,6 +26,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 
 # Definitions to Know
 
+
 # Review
 - Systems of linear equations
   - Consistent vs. Inconsistent
