@@ -61,7 +61,8 @@ Defined as $\inner{\vector a}{\vector b} = \sum_i a_i b_i$. Can also be written 
 
 Defines a norm $\norm{\vector a} = \sqrt{\inner{\vector a}{\vector a}}$; also leads to a notion of angle via the formula $\inner{\vector a}{\vector b} = \norm{\vector a} \norm{\vector b} \cos \theta_{a,b}$.
 
-
+Satisfies three properties:
+1. Bilinearity: $\inner{\sum \alpha_i \vector a_i}{\sum \beta_i \vector b_i}$
 
 ## The Determinant
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
