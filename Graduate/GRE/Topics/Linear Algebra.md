@@ -71,7 +71,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
-	- $\mathrm{rowspace} A \subseteq \RR^m$: reduce to RREF, and take nonzero rows of RREF $(\subseteq \RR^n)$
+	- $\mathrm{rowspace} A \subseteq \RR^m$: reduce to RREF, and take nonzero rows of RREF.
 	- Colspace: reduce to RREF, and take columns with pivots from original $A$ $(\subseteq \RR^m)$
 	- Nullspace: reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
 	- Eigenspace: find the nullspace of $A - \lambda I$
