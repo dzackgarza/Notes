@@ -53,8 +53,8 @@ Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ 
 ## The Determinant
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
 - Properties of the Determinant $A \in \mathrm{Mat}(m, n)$.
-	- It's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$ 
-    	- So concretely, $\det(AB) = \det(A) \det(B)$
+  - Preserves products, so $\det(AB) = \det(A) \det(B)$
+    - i.e. it's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$ 
 	- Permute two rows switches sign: $\det A' = - \det A$
 	- Factor a scalar $t$ out of one row: $\det A' = t \det A$
 		- $\det(tA) = t^m \det(A)$
