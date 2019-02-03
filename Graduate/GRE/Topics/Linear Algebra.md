@@ -67,7 +67,6 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
   - $\det\pmatrix{t \vector a_1, \vector a_2, \cdots, \vector a_m} = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
   - $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
   - Linearity in each row: $\det(\sum_i \vector a_i, \cdots) = \sum_i \det(\vector{a}_i, \cdots)$
-
 - $\det{A^T} = \det{A}$
 - If any row of $A$ is all zeros, $\det(A) = 0$.
   - More generally, if $A$ is singular, $\det A = 0$, so the determinant distinguishes singular matrices / matrices with less than full rank.
