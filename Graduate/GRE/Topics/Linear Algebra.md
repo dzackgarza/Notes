@@ -32,7 +32,7 @@ A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac
 $$
 
 ## Systems of Linear Equations
-Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ r_b = \rank(A \mid \vector b)$ the matrix $\thevector{\vector a_1, \vector a_2, \cdots \vector a_n, \vector b}$
+Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ r_b = \rank(A \mid \vector b)$ the matrix 
 - Consistent: A system of linear equations is **consistent** when it has at least one solution.
 - Inconsistent: A system of linear equations is **inconsistent** when it has no solutions.
 - Tall matrices: more equations than unknowns
