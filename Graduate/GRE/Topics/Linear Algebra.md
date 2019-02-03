@@ -1,4 +1,4 @@
-Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear transformation $T: \RR^n \to \RR^m$. A matrix 
+Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear transformation $T: \RR^n \to \RR^m$. 
 
 ## Big Theorems
 - Rank Nullity:
