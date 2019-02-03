@@ -145,6 +145,7 @@ Similarly, by taking negations, TFAE:
 - $A^T$ is not invertible
 - $\det A = 0$
 - The linear system $A \vector x = \vector b$ has either no solution or infinitely many solutions.
+- The homogeneous system $A \vector x = \vector 0$ 
 - At least one row of $A$ is a linear combination of the others
 - The $RREF$ of $A$ has a row of all zeros.
 
