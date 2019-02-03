@@ -89,7 +89,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
   - $\mathrm{nullspace} A$: 
     - Reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
   - Eigenspace: 
-    - Compute $\mathrm{nullspace} A - \lambda I$
+    - Compute $\mathrm{nullspace} (A - \lambda I)$
 
 ## Eigenvalues and Eigenvectors
 - Defining equation: $\lambda\in E(A) \iff \forall \vector x \in \RR^m, A\vector x = \lambda\vector x$
