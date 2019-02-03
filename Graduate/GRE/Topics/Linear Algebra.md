@@ -10,7 +10,7 @@ Augment matrices are denoted $[A \mid \vector b] = \thevector{\vector a_1, \vect
 $$
 \abs{\ker(A)} + \abs{\im(A)} = \abs{\mathrm{domain}(A)}
 $$
-  - Generalization: If $A \to B \to C$ is an exact sequence of vector spaces then $B \cong A \oplus C$, and so $\abs{B} = \abs{A} + \abs{C}$ so take the exact sequence
+  - Generalization: If $A \to B \to C$ is an exact sequence of vector spaces then $B \cong A \oplus C$, and so $\abs{B} = \abs{A} + \abs{C}$, so just take the exact sequence
 $$
 0 \rightarrow \operatorname { ker } A \stackrel { I d } { \rightarrow } \mathrm{domain}(A) \stackrel { A } { \rightarrow } \text { im } A \rightarrow 0
 $$
