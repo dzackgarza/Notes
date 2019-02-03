@@ -67,7 +67,7 @@ Notation: $A\vector x = \vector b$ a linear system, $r = \rank(A)$ and $ r' = \r
 	- todo: example
 
 ## Eigenvalues and Eigenvectors
-- Defining equation: $\lambda\in E(A) \iff \forall x \in \RR^m, A\vector x = \lambda\vector x$
+- Defining equation: $\lambda\in E(A) \iff \forall \vector x \in \RR^m, A\vector x = \lambda\vector x$
 - Finding: solve $A - I \lambda_i = 0$ for each $i$.
 - $\lambda \in E(A) \implies \lambda^2 \in E(A^2)$ (with the same eigenvector).
 - Eigenvectors corresponding to distinct eigenvalues are **always** linearly independent
