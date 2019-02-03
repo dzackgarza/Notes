@@ -57,7 +57,9 @@ Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ 
 
 ## The Inner Product
 
-Defined as $\inner{\vector a}{\vector b} = \sum_i a_i b_i$. Can also be written as $\vector a^T\vector b$ or $\vector a \cdot \vector b$
+Defined as $\inner{\vector a}{\vector b} = \sum_i a_i b_i$. Can also be written as $\vector a^T\vector b$ or $\vector a \cdot \vector b$. 
+
+Defines a norm $\norm{\vector a} = \sqrt$
 
 ## The Determinant
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
