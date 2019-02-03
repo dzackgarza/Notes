@@ -4,6 +4,8 @@ Vector spaces are denoted $V, W$; the notations $\abs V$ and $\dim V$ both denot
 
 Augment matrices are denoted $[A \mid \vector b] = \thevector{\vector a_1, \vector a_2, \cdots \vector a_n, \vector b}$, and block matrices are notated similarly.
 
+$\spec A$ denotes the set of all eigenvalues of $A$.
+
 ## Big Theorems
 
 - Rank Nullity:
