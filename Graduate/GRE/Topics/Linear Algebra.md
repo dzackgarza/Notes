@@ -36,10 +36,10 @@ Notation: $A\vector x = \vector b$ a linear system, $r = \rank(A)$ and $ r_b = \
 	- One unique solution
 	- Infinitely many solutions
 - Possibilities:
-	- $r < r'$: the system is inconsistent.
-	- $r = r'$: the system is consistent, and
-		- $r' = n \implies $ there is a unique solution (square, tall)
-		- $r' < n \implies $ there are infinitely many solutions (wide)
+	- $r < r_b$: the system is inconsistent.
+	- $r = r_b$: the system is consistent, and
+		- $r_b = n \implies $ there is a unique solution (square, tall)
+		- $r_b < n \implies $ there are infinitely many solutions (wide)
 - Homogeneous systems are **always** consistent.
 
 ## The Determinant
