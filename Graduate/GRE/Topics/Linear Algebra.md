@@ -122,8 +122,8 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - $A$ is invertible and has a unique inverse $A^{-1}$
 - $A^T$ is invertible
 - $\det(A) \neq 0$
-- The linear system $A\bar{x} = \bar{b}$ has a unique solution for every $b\ \in \RR^m$
-- The homogeneous system $A\bar{x} = 0$ has only the trivial solution $\bar{x} = 0$
+- The linear system $A\vector{x} = \vector{b}$ has a unique solution for every $b\ \in \RR^m$
+- The homogeneous system $A\vector{x} = 0$ has only the trivial solution $\vector{x} = 0$
 - $\rank(A) = m$ (i.e. $A$ is full rank)
 - $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$
 - $A = \prod_{i=1}^k E_i$ for some finite $k$, where each $E_i$ is an elementary matrix.
@@ -155,4 +155,4 @@ Reformulated in terms of linear maps $T$, TFAE:
 - $T$ is injective
 - $T$ is surjective
 - $T$ is an isomorphism
-- The system $A\bar{x} = 0$ has infinitely many solutions
+- The system $A\vector{x} = 0$ has infinitely many solutions
