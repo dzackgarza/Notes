@@ -67,7 +67,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 - For an lower/upper triangular matrix $L$ and $U$ respectively, we have $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$.
 - $\det{A^T} = \det{A}$
 - If any row of $A$ is all zeros, $\det(A) = 0$.
-- Take $A = \pmatrix{\vector a_1, \vector a_2, \vector a_3}$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by $\theset{\vector a_i}_{i=1}^m$.
+- Take $A = \pmatrix{\vector a_1, \vector a_2, \vector a_3}$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by the $\vector a_i$.
 
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
