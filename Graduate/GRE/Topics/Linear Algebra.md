@@ -15,7 +15,9 @@ $$
 0 \rightarrow \operatorname { ker } A \stackrel { I d } { \rightarrow } \mathrm{domain}(A) \stackrel { A } { \rightarrow } \text { im } A \rightarrow 0
 $$
 
+
 ## General Notes
+- $A \in \mathrm{Mat}(m,n}$ represents a linear map $T: \RR^
 - Rank: number of nonzero rows in RREF
 - $\mathrm{Trace}(A) = \sum_{i=1}^m A_{i,i}$
 - Elementary row operations / matrices:
