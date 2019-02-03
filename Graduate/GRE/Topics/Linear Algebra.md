@@ -78,6 +78,8 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
   - $R_i \pm t R_j \to R_i$: no effect
   - Permute two rows: change sign
   - Multiply a row by a scalar $t$: multiply determinant by $t$
+
+
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
 	- $\mathrm{rowspace} A \subseteq \RR^n$: reduce to RREF, and take nonzero rows of $\mathrm{RREF}(A)$.
