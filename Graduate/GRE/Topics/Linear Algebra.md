@@ -55,6 +55,10 @@ Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ 
 		- $r_b < n \implies$ there are infinitely many solutions (wide)
 - Homogeneous systems are **always** consistent.
 
+## The Inner Product
+
+Defined as $\inner{\vector a, \vector b}$
+
 ## The Determinant
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
 
