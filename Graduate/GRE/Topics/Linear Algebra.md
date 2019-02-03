@@ -82,7 +82,7 @@ Notation: $A\vector x = \vector b$ a linear system, $r = \rank(A)$ and $ r' = \r
 ## Misc
 - $\abs{\mathrm{rowspace}(A)} = \abs{\mathrm{colspace}(A)}$
 - Proof of Cauchy-Schwarz: See Goode page 346.
-- Distance from a point $p$ to a line $\vector a + t\vector b$: let $\vector w = \vector p - \vector a$, then: $\norm{w - P(w, v)}$
+- Distance from a point $p$ to a line $\vector a + t\vector b$: let $\vector w = \vector p - \vector a$, then: $\norm{\vector w - P(\vector w, \vector v)}$
 	- ![distance from line to point](../../images/DistanceFromLineToPoint.png)
 - Computing change of basis matrices: #todo
 - Two step vector subspace test:
