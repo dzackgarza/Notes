@@ -26,10 +26,10 @@ C \definedas AB \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a^T
 $$
   - i.e., entry $c_{ij}$ is obtained by dotting row $i$ of $A$ with column $j$ of $B$.
 - $\det{(A \mod p}) \mod p = (\det{A}) \mod p$
-- For $2\cross 2$ matrices,
-	$$
-	A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac{1}{\det{A}}\left( \begin{array}{cc} d & -b \\ -c & a \end{array}\right)
-	$$
+- For $2\times 2$ matrices,
+$$
+A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac{1}{\det{A}}\left( \begin{array}{cc} d & -b \\ -c & a \end{array}\right)
+$$
 
 ## Systems of Linear Equations
 Notation: $A\vector x = \vector b$ a linear system, $r = \rank(A)$ and $ r_b = \rank(A \mid \vector b)$ an augmented matrix.
