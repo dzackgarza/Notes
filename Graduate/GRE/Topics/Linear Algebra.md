@@ -74,7 +74,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 
 Computing the Determinant:
 - Take the Laplace expansion along any row or column
-- Reduce to $\mathrm{REF}$, keeping track of the following effects:
+- Reduce to $\mathrm{REF}$ (i.e. just upper triangular), keeping track of the following effects:
   - $R_i \pm t R_j \to R_i$: no effect
   - Permute two rows: change sign
   - Multiply a row by a scalar $t$: multiply determinant by $t$
