@@ -80,7 +80,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
   - $R_i \pm t R_j \to R_i$: no effect
   - Permute two rows: change sign
   - Multiply a row by a scalar $t$: multiply determinant by $t$
-- For an lower/upper triangular matrix $L$ and $U$ respectively, we have $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$.
+- Note: for an lower/upper triangular matrix $L$ and $U$ respectively, we have $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$.
 
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
