@@ -56,7 +56,7 @@ Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \
   - Preserves products, so $\det(AB) = \det(A) \det(B)$
     - i.e. it's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$
     - Corollary: $\det{A^k} = k\det{A}$
-    - Corollary: $\det(A^{-1}) = \det(A)^{-1}$
+    - Corollary: $\det(A^{-1}) = (\det A)^{-1}$
 - Permuting two rows switches sign: $\det A' = - \det A$
 	- Multilinear in rows:
     	- $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
