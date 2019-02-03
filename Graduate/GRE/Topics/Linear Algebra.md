@@ -61,9 +61,9 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 - Adding multiples of any row to another does not change its value, so for any $i$ and any scalar $t$, we have $\det(\vector a_1, \vector a_2, \cdots) = \det(\vector a_1 + t\vector a_i, \vector a_2, \cdots)$
 - Permuting two rows switches sign: so $\det(\cdots, \vector a_i,\cdots, \vector a_j, \cdots) = -\det(\cdots, \vector a_j,\cdots, \vector a_i, \cdots)$
 - Multilinearity in rows:
-  	- $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
-  	- $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
-  	- Linearity in each row: $\det(\sum_i \vector a_i, \cdots) = \sum_i \det(\vector{a}_i, \cdots)$
+  - $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
+  - $\det(t \vector a_1, t\vector a_2, \cdots, t\vector a_m) = t^m \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
+  - Linearity in each row: $\det(\sum_i \vector a_i, \cdots) = \sum_i \det(\vector{a}_i, \cdots)$
 - For an lower/upper triangular matrix $L$ and $U$ respectively, we have $\det(L) = \det(U) = \prod_{i=1}^n a_{ii}$ for upper or lower triangular matrices.
 - $\det{A^T} = \det{A}$
 - 
