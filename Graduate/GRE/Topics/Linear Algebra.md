@@ -75,7 +75,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 Computing the Determinant:
 - Take the Laplace expansion along any row or column
 - Reduce to $\mathrm{RREF}$, keeping track of the following effects:
-  - Permute two rows: no effect
+  - Permute two rows: changes sign
   - 
 
 ## The Spaces of a Matrix / Linear Map
