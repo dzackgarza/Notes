@@ -2,7 +2,7 @@ Assume everywhere that the underlying field is $\RR$, and that $A$ is an $m\time
 
 Vector spaces are denoted $V, W$; the notations $\abs V$ and $\dim V$ both denote the dimension of the space. $\mathrm{Mat}(m,n)$ denotes the space of all $m\times n$ matrices, and $\det A$ is the determinant.
 
-Augment matrices are denoted $[A \mid \vector b]
+Augment matrices are denoted $[A \mid \vector b] = \thevector{\vector a_1, \vector a_2, \cdots \vector a_n, \vector b}$
 
 ## Big Theorems
 
