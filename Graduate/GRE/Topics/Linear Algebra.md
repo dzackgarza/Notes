@@ -1,4 +1,4 @@
-Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear transformation $T: \RR^n \to \RR^m$. Vectors are written as $\vector a$, which are column vectors, and so $\vector a^T$ denotes a row vector. Matrices written as a collection of vectors $A = \thevector{\vector a_1, \vector a_2, \cdots}$ denote that the $
+Assume everywhere that $A$ is an $m\times n$ matrix that represents a linear transformation $T: \RR^n \to \RR^m$. Vectors are written as $\vector a$, which are column vectors, and so $\vector a^T$ denotes a row vector. Matrices written as a collection of vectors $A = \thevector{\vector a_1, \vector a_2, \cdots}$ denote that each $\vector a_i$ is the $i$ column of $A$.
 
 ## Big Theorems
 - Rank Nullity:
