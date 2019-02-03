@@ -61,7 +61,7 @@ Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ 
 	- $\det(A^{-1}) = \frac{1}{\det(A)}$
 	- $\det{A^k} = k\det{A}$
 	- $\det{A^T} = \det{A}$
-	- $\det(\mathbf{a}_1 + \mathbf{a}_2, \cdots) = \det(\mathbf{a}_1, \cdots) + \det(\mathbf{a}_2, \cdots)$
+	- $\det(\sum_i \vector a_i, \cdots) = \sum_i \det(\mathbf{a}_1, \cdots) + \det(\mathbf{a}_2, \cdots)$
 	- If any row of $A$ is all zeros, $\det(A) = 0$.
 	- Take $A = \pmatrix{\vector a \rightarrow \\ \vector b \rightarrow \\ \vdots }$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by $\vector{a}, \vector{b}, \vector{c}$.
 
