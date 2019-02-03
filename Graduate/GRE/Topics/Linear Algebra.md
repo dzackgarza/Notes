@@ -56,7 +56,7 @@ Notation: $A\vec x = \vec b$ a linear system, $r = \rank(A)$ and $ r' = \rank(A 
 	- $\det(\mathbf{a}_1 + \mathbf{a}_2, \cdots) = \det(\mathbf{a}_1, \cdots) + \det(\mathbf{a}_2, \cdots)$
 	- If any row of $A$ is all zeros, $\det(A) = 0$.
 	- Take $A = \pmatrix{\vec a \rightarrow \\ \vec b \rightarrow \\ \vdots }$, then in $\RR^3$, $\det(A)$ is the volume of the parallelepiped spanned by
-		$\vec{a}, \vec{b}, \vec{c}$.
+		$\vector{a}, \vector{b}, \vector{c}$.
 
 ## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
@@ -114,7 +114,7 @@ Equivalent formulas for $A^{-1}$:
 
 - Adjoints: $A^{-1} = \frac{\mathrm{adjugate(A)}}{\det(A)}$
 - Gauss Jordan: $[A \mid I] \sim [I \mid A^{-1}]$
-- Cramer's Rule: $A\vec{x} = \vec{b} \implies x_k = \frac{\det(B_k)}{\det(A)}$ where $B_k$ is $A$ where the $k\dash$th column is replaced by $\vec{b}$
+- Cramer's Rule: $A\vector{x} = \vector{b} \implies x_k = \frac{\det(B_k)}{\det(A)}$ where $B_k$ is $A$ where the $k\dash$th column is replaced by $\vector{b}$
 
 
 ## Big List of Equivalent Properties
