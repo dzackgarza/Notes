@@ -24,6 +24,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - 7.7: The Moore-Penrose Pseudo-Inverse
   - *Final Exam*
 
+# Definitions to Know
+
 # Review
 - Systems of linear equations
   - Consistent vs. Inconsistent
@@ -41,7 +43,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Linear Independence
   - Subspace and the subspace test
   - Basis
-- Common Computation
+- Common Computations
   - Reduction to RREF
   - Eigenvalues and eigenvectors
   - Basis for the column space
