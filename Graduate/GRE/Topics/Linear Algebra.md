@@ -17,7 +17,7 @@ $$
 	- Permute rows
 	- Multiple a row by a scalar
 	- Add any row to another
-- $A (m\times n),~ B(n\times p),~ AB = C \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a^T_i}]{\mathbf{b_j}}$
+- $A (m\times n),~ B(n\times p),~ AB = C \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a^T_i}}{\mathbf{b_j}}$
 	- i.e., the $c_{ij}$ entry is just dotting row $i$ of $A$ with column $j$ of $B$.
 - $\abs{A \mod p} \mod p \cong \abs{A} \mod p$
 - For $2\cross 2$ matrices,
