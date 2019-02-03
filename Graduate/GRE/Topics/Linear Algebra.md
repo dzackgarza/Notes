@@ -58,7 +58,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
   - i.e. it's a group homomorphism $(\mathrm{Mat}(m,n), *) \to (\RR, *)$
   - Corollary: $\det{A^k} = k\det{A}$
   - Corollary: $\det(A^{-1}) = (\det A)^{-1}$
-- Adding multiples of any row $\det(\vector a_1, \vector a_2, \cdots) = \det(\vector a_1 + \vector a_i, \vector a_2, \cdots)$
+- Adding multiples of any row does not change its value, so $\det(\vector a_1, \vector a_2, \cdots) = \det(\vector a_1 + t\vector a_i, \vector a_2, \cdots)$
 - Permuting two rows switches sign: $\det A' = - \det A$
 - Multilinear in rows:
   	- $\det(t \vector a_1, \vector a_2, \cdots, \vector a_m) = t \det(\vector a_1, \vector a_2, \cdots, \vector a_m)$
