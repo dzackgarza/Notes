@@ -110,6 +110,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 
 # List of Things To Be Able To Compute
 - Construct a matrix representing a linear map
+  - With respect to the standard basis
+  - With respect to chosen bases in the domain and codomain
 - Construct a change of basis matrix
 - Check that a map is a linear transformation
 - Compute the following spaces of a matrix and their orthogonal complements:
