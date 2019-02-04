@@ -45,7 +45,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Null space
 - Singular 
 - Projection
-- Orthogonal subspace
+- Orthogonal subspaces
+- Orthogonal complement
 - Least-squares solution
 - Eigenvalue
 - Eigenvector
