@@ -42,6 +42,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Span
 - Linear independence
 - Basis
+- Change of basis
 - Dimension
 - Row space
 - Column space
