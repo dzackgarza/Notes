@@ -37,6 +37,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Row Echelon Form
 - Reduced Row Echelon Form
 - Gaussian elimination
+- Block matrix
 - Vector space
 - Vector subspace
 - Linear transformation
