@@ -44,7 +44,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Column space
 - Null space
 - Singular 
-- 
+- Eigenvalue
+- Eigenvector
 
 # Review
 - Systems of linear equations
