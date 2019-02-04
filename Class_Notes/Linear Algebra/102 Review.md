@@ -64,6 +64,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Diagonalizable
 - Inner product
 - Defective
+- Singular value decomposition
 
 # Review
 - Systems of linear equations
