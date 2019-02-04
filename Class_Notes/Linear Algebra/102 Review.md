@@ -69,6 +69,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Singular value decomposition
 - QR factorization
 - Gram-Schmidt process
+- Spectral theorem
 
 # Review
 - Systems of linear equations
