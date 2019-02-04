@@ -34,7 +34,9 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Vector space
 - Vector subspace
 - Span
-- 
+- Linear independence
+- Basis
+- Dimension
 
 # Review
 - Systems of linear equations
