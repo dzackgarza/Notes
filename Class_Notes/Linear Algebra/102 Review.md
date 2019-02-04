@@ -133,5 +133,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Compute the matrix for a projection onto a subspace
 - Find the QR factorization of a matrix
 
-# Conceptual Things to Do
+# List of Necessary Theory
 - Prove facts about block matrices
