@@ -130,3 +130,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Convert a set of vectors to a basis
 - Convert a basis to an orthonormal basis
 - Determine if a matrix is diagonalizable 
+- Compute the matrix for a projection onto a subspace
