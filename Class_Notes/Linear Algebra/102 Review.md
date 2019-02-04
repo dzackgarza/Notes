@@ -75,7 +75,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Symmetric matrix
 - Orthogonal matrix
 - Positive-definite
-- 
+- Quadratic form
 
 # Review
 - Systems of linear equations
