@@ -118,3 +118,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Null space
 - Compute the shortest distance between a point and a plane
 - Compute the least squares solution to linear system
+- Prove that something is a vector space
+- Prove that a map is an inner product
+- Compute determinants
+- 
