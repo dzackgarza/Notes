@@ -41,6 +41,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Row space
 - Column space
 - Null space
+- Singular 
 - 
 
 # Review
