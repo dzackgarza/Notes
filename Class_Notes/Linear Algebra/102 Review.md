@@ -109,3 +109,9 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Convert a basis to an orthonormal basis
 
 # List of Things To Be Able To Do
+- Construct a matrix representing a linear map
+- Construct a change of basis matrix
+- Check that a map is a linear transformation
+- Compute the following spaces of a matrix and their orthogonal complements:
+  - Row space
+  - Column space
