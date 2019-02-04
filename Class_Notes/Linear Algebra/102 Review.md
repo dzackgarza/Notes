@@ -53,6 +53,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Least-squares solution
 - Eigenvalue
 - Eigenvector
+- Characteristic polynomial
 - Diagonalizable
 
 # Review
