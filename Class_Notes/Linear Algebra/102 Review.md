@@ -131,3 +131,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Convert a basis to an orthonormal basis
 - Determine if a matrix is diagonalizable 
 - Compute the matrix for a projection onto a subspace
+- Find the QR factorization of a matrix
