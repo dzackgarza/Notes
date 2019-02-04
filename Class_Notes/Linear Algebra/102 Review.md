@@ -50,6 +50,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Image
 - Null space
 - Kernel
+- Direct sum
 - Singular 
 - Projection
 - Orthogonal subspaces
