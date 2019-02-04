@@ -56,6 +56,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Eigenvalue
 - Eigenvector
 - Characteristic polynomial
+- Similarity
 - Diagonalizable
 - Inner product
 - Defective
