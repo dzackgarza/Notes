@@ -31,6 +31,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Elementary row operation
 - Row equivalence
 - Pivot
+- Vector space
+- Vector subspace
 - 
 
 # Review
