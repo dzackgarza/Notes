@@ -56,7 +56,6 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Null space
 - Kernel
 - Direct sum
-- Singular 
 - Projection
 - Orthogonal subspaces
 - Orthogonal complement
