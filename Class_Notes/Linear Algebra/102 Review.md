@@ -122,3 +122,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Prove that a map is an inner product
 - Compute determinants
 - Compute the RREF of a matrix
+- Compute characteristic 
