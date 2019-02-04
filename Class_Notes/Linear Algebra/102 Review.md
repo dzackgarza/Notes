@@ -127,3 +127,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Solve a system of ODEs resulting arising from tank mixing
 - Compute the singular value decomposition of a matrix
 - Compute the rank and nullity of a matrix
+- Convert a set of vectors to a basis
+- Convert a basis to an orthonormal basis
