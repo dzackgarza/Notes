@@ -39,7 +39,7 @@ A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac
 $$
 - Rewriting matrix multiplication:
 $$
-\sum \alpha_i \vector a_i = [\vector a_1, \vector a_2, \cdots] [\alpha_1, \alpha_2, \cdots]^T
+\sum \alpha_i \vector a_i = [\vector a_1, \vector a_2, \cdots] [\alpha_1, \alpha_2, \cdots]^T = 
 $$
 
 ## Systems of Linear Equations
