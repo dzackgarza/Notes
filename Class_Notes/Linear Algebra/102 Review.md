@@ -29,6 +29,9 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Consistent/inconsistent system
 - Rank
 - Elementary row operation
+- Row equivalence
+- Pivot
+- 
 
 # Review
 - Systems of linear equations
