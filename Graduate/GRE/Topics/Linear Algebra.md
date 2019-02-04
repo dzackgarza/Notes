@@ -37,6 +37,10 @@ $$
 $$
 A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac{1}{\det{A}}\left( \begin{array}{cc} d & -b \\ -c & a \end{array}\right)
 $$
+- Rewriting matrix multiplication:
+$$
+
+$$
 
 ## Systems of Linear Equations
 Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ r_b = \rank([A \mid \vector b])$.
