@@ -67,6 +67,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Inner product
 - Defective
 - Singular value decomposition
+- QR factorization
+- Gram-Schmidt process
 
 # Review
 - Systems of linear equations
