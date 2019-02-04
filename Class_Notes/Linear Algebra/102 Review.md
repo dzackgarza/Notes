@@ -45,6 +45,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Null space
 - Singular 
 - Projection
+- Orthogonal subspace
+- Least-squares solution
 - Eigenvalue
 - Eigenvector
 - Diagonalizable
