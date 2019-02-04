@@ -65,6 +65,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Similarity
 - Diagonalizable
 - Inner product
+- Bilinearity
+- Multilinearity
 - Defective
 - Singular value decomposition
 - QR factorization
