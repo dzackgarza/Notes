@@ -27,6 +27,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 # Definitions to Know
 - System of equations
 - Consistent/inconsistent system
+- Rank
 - 
 
 # Review
