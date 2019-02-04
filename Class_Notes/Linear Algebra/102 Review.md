@@ -107,3 +107,5 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Construct change of basis matrix
   - Construct matrix projection onto subspace
   - Convert a basis to an orthonormal basis
+
+# List of Things to be Able to Do
