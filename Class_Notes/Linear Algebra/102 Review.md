@@ -28,7 +28,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - System of equations
 - Consistent/inconsistent system
 - Rank
-- 
+- Elementary row operation
 
 # Review
 - Systems of linear equations
