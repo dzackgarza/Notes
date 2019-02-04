@@ -34,6 +34,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Elementary row operation
 - Row equivalence
 - Pivot
+- Gaussian elimination
 - Vector space
 - Vector subspace
 - Span
