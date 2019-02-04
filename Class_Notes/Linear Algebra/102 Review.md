@@ -34,6 +34,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Elementary row operation
 - Row equivalence
 - Pivot
+- Row Echelon Form
+- Reduced Row Echelon Form
 - Gaussian elimination
 - Vector space
 - Vector subspace
@@ -41,8 +43,6 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Linear independence
 - Basis
 - Dimension
-- Row Echelon Form
-- Reduced Row Echelon Form
 - Row space
 - Column space
 - Null space
