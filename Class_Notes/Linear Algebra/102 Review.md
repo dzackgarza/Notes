@@ -55,6 +55,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Eigenvector
 - Characteristic polynomial
 - Diagonalizable
+- Inner product
 
 # Review
 - Systems of linear equations
