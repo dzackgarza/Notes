@@ -45,7 +45,9 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Dimension
 - Row space
 - Column space
+- Image
 - Null space
+- Kernel
 - Singular 
 - Projection
 - Orthogonal subspaces
