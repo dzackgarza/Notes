@@ -189,39 +189,39 @@ $$
 $$
 
 - Vector Space Axioms
-	- Let $k$ be a field and $\vec{u},\vec{v},\vec{w} \in V$ and $r,s,t\in k$. A vector space $V$ over $k$ satisfies:
-		1. Closure under addition: $\vec{v} + \vec{w} \in V$
-		2. Closure under scalar multiplication: $r\vec{v} \in V$
-		3. Commutativity of addition: $\vec{v} + \vec{w} = \vec{w} + \vec{v}$
-		4. Associativity of addition: $\vec{u} + (\vec{v} + \vec{w}) = (\vec{u}+\vec{v}) + \vec{w}$
-		5. Existence of an additive zero $\vec{0}$ satisfying $\vec{v} + 0 = 0 + \vec{v} = \vec{v}$
-		6. Existence of additive inverse $-\vec{v}$ satisfying $v + (-\vec{v}) = 0$
-		7. Unit property: $1\vec{v} = \vec{v}$
-		8. Associativity of scalar multiplication: $(rs)\vec{v} = r(s\vec{v})$
-		9. Distribution of scalars multiplication over vector addition: $r(\vec{v} + \vec{w}) = r\vec{v} + r\vec{w}$
-		10. Distribution of scalar multiplication over scalar addition: $(r+s)\vec{v} = r\vec{v} + s\vec{v}$
+	- Let $k$ be a field and $\vector{u},\vector{v},\vector{w} \in V$ and $r,s,t\in k$. A vector space $V$ over $k$ satisfies:
+		1. Closure under addition: $\vector{v} + \vector{w} \in V$
+		2. Closure under scalar multiplication: $r\vector{v} \in V$
+		3. Commutativity of addition: $\vector{v} + \vector{w} = \vector{w} + \vector{v}$
+		4. Associativity of addition: $\vector{u} + (\vector{v} + \vector{w}) = (\vector{u}+\vector{v}) + \vector{w}$
+		5. Existence of an additive zero $\vector{0}$ satisfying $\vector{v} + 0 = 0 + \vector{v} = \vector{v}$
+		6. Existence of additive inverse $-\vector{v}$ satisfying $v + (-\vector{v}) = 0$
+		7. Unit property: $1\vector{v} = \vector{v}$
+		8. Associativity of scalar multiplication: $(rs)\vector{v} = r(s\vector{v})$
+		9. Distribution of scalars multiplication over vector addition: $r(\vector{v} + \vector{w}) = r\vector{v} + r\vector{w}$
+		10. Distribution of scalar multiplication over scalar addition: $(r+s)\vector{v} = r\vector{v} + s\vector{v}$
 
 - Subspace
 
 	- A nonempty subset $W \subseteq V$ that is a vector space and satisfies 
 $$
-\theset{ \sum_i c_i \vec x_i \mid c_i \in \FF,~ x_i \in W} \subseteq W
+\theset{ \sum_i c_i \vector x_i \mid c_i \in \FF,~ x_i \in W} \subseteq W
 $$
 
-    - Quick counter-check: find $\vec x, \vec y$ such that $a\vec x + b\vec y \not\in W$
+    - Quick counter-check: find $\vector x, \vector y$ such that $a\vector x + b\vector y \not\in W$
 
 - Span
-  Given a set of $n$ vectors $S = \theset{\vec x_i}_{i=1}^n$, defined as 
+  Given a set of $n$ vectors $S = \theset{\vector x_i}_{i=1}^n$, defined as 
   $$
-  \mathrm{Span}(S) = \theset{\sum_{i=1}^nc_i \vec x_i \mid c_i \in k}
+  \mathrm{Span}(S) = \theset{\sum_{i=1}^nc_i \vector x_i \mid c_i \in k}
   $$
 
 - Row Space
 	- The range of the linear map $T$.
 	- Given $T =
-\begin{bmatrix} \vec x_1 \rightarrow \\ \vec x_2 \rightarrow \\ \vdots \\ \vec x_m \rightarrow \end{bmatrix}$, defined as 
+\begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}$, defined as 
 $$
-\mathrm{Span}(\theset{\vec x_i}_{i=1}^m) \subseteq k^m
+\mathrm{Span}(\theset{\vector x_i}_{i=1}^m) \subseteq k^m
 $$
 	- $\mathrm{rowspace}(T)^\perp = \mathrm{null}(T)$
 	- $\abs{\mathrm{rowspace}(T)} = \mathrm{Rank}(T)$
@@ -229,7 +229,7 @@ $$
 - Column Space
 
 - Null Space
-	- Defined as $\mathrm{null}(T) = \theset{\vec{x} \in k^n \mid T(\vec{x}) = 0 \in k^m}$
+	- Defined as $\mathrm{null}(T) = \theset{\vector{x} \in k^n \mid T(\vector{x}) = 0 \in k^m}$
 	- $\mathrm{null}(T)^\perp = \mathrm{rowspace}(T)$
 
 - Eigenvalue
@@ -237,19 +237,19 @@ $$
 	- Invariant under similarity.
 
 - Eigenspace
-	- For a linear map $T$ with eigenvalue $\lambda$, defined as $E_\lambda = \theset{\vec x \in k^n \mid T(\vec x) = \lambda \vec x}$
+	- For a linear map $T$ with eigenvalue $\lambda$, defined as $E_\lambda = \theset{\vector x \in k^n \mid T(\vector x) = \lambda \vector x}$
 
 - Dimension
 	- The cardinality of a basis of $V$
 
 - Basis
-	- A linearly independent set of vectors $S = \theset{\vec x_i} \subset V$ such that $\mathrm{Span}(S) = V$
+	- A linearly independent set of vectors $S = \theset{\vector x_i} \subset V$ such that $\mathrm{Span}(S) = V$
 
 - Linear independence
-	- A set of vectors $\theset{\vec x_i}_{i=1}^n$ is linearly independent $\iff \sum_{i=1}^n c_i \vec x_i = 0 \implies c_i = 0$ for all $i$.
+	- A set of vectors $\theset{\vector x_i}_{i=1}^n$ is linearly independent $\iff \sum_{i=1}^n c_i \vector x_i = 0 \implies c_i = 0$ for all $i$.
 	- Can be detected by considering the matrix
 	$$
-	T = \begin{bmatrix} \vec x_1 \rightarrow \\ \vec x_2 \rightarrow \\ \vdots \\ \vec x_m \rightarrow \end{bmatrix}
+	T = \begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}
 	$$
 	(linearly independent iff $T$ is singular)
 
@@ -260,7 +260,7 @@ $$
 	- $\abs{\mathrm{Nullspace}(A)} + \abs{\mathrm{Rank}(A)} = \abs{\mathrm{Codomain}(A)}$
 
 - Nullspace
-	- $\mathrm{nullspace}(A) = \theset{\vec{x}\in \RR^n : A \vec{x} = \vec 0}$
+	- $\mathrm{nullspace}(A) = \theset{\vector{x}\in \RR^n : A \vector{x} = \vector 0}$
 
 - Singular
 	- A square $n\times n$ matrix $T$ is singular iff $\mathrm{Rank}(T) < n$
@@ -270,21 +270,21 @@ $$
 
 - Diagonalizable
 	- A matrix $X$ is diagonalizable if it can be written $X = EDE^{-1}$ where $D$ is diagonal.
-	- If $X$ is $n\times n$ and has $n$ linearly independent eigenvectors $\vec\lambda_i$, then $D_{ii} = \vec\lambda_i$, and $E  =
-\begin{bmatrix} \vec\lambda_1 & \vec\lambda_2 & \cdots  & \vec \lambda_n \\ \downarrow & \downarrow &\cdots & \downarrow \end{bmatrix}$
+	- If $X$ is $n\times n$ and has $n$ linearly independent eigenvectors $\vector\lambda_i$, then $D_{ii} = \vector\lambda_i$, and $E  =
+\begin{bmatrix} \vector\lambda_1 & \vector\lambda_2 & \cdots  & \vector \lambda_n \\ \downarrow & \downarrow &\cdots & \downarrow \end{bmatrix}$
 
 - Positive Definite
-	- A matrix $A$ is positive definite iff $\forall \vec x \in k^n,$ we have the scalar inequality $\vec x^T A \vec x > 0$
+	- A matrix $A$ is positive definite iff $\forall \vector x \in k^n,$ we have the scalar inequality $\vector x^T A \vector x > 0$
 
 - Projection
-	- The projection of a vector $\vec v $ onto $\vec u$ is given by $P_{\vec u}(\vec v) = \left< \vec u, \vec v \right> \hat u$
-	- The projection of a vector $\vec v$ onto a space $U = \mathrm{Span}(\theset{\vec u_i})$ is given by
+	- The projection of a vector $\vector v $ onto $\vector u$ is given by $P_{\vector u}(\vector v) = \left< \vector u, \vector v \right> \hat u$
+	- The projection of a vector $\vector v$ onto a space $U = \mathrm{Span}(\theset{\vector u_i})$ is given by
 	$$
-	P_U(\vec v) = \sum_i P_{\vec u_i}(\vec v) = \sum_i \left< \vec u_i, \vec v\right> \hat u_i
+	P_U(\vector v) = \sum_i P_{\vector u_i}(\vector v) = \sum_i \left< \vector u_i, \vector v\right> \hat u_i
 	$$
 
 - Orthogonal Complement
-	- Given a subspace $U \subseteq V$, defined as $U^\perp = \theset{\vec v \in V \mid \forall \vec u \in U, \left<\vec u, \vec v\right> = 0}$
+	- Given a subspace $U \subseteq V$, defined as $U^\perp = \theset{\vector v \in V \mid \forall \vector u \in U, \left<\vector u, \vector v\right> = 0}$
 
 - Determinant
 	$$
@@ -303,22 +303,22 @@ $$
 - Skew-Symmetric: $A = -A^T$
 
 - Inner Product
-	- $\inner[\vec x]{\vec x} \geq 0$
-	- $\inner[\vec x]{\vec x} = 0 \iff \vec x = \vec 0$
-	- $\inner[\vec x]{\vec y} = \conjugate{\inner[\vec y]{\vec x}}$
-	- $\inner[k\vec x]{\vec y} = k\inner[\vec x]{\vec y} = \inner[\vec x]{k\vec y}$
-	- $\inner[\vec x + \vec y]{\vec z} = \inner[\vec x]{\vec z} + \inner[y]{\vec z}$
-	- $\inner[a\vec x]{b\vec y} = \inner[\vec x]{\vec x} + \inner[a\vec x]{y} + \inner[\vec x]{b\vec y} + \inner[\vec y]{\vec y}$
-	- Defines a norm: $\norm{\vec x} = \sqrt{\inner[\vec x]{\vec x}} \implies \norm{\vec x}^2 = \inner[\vec x]{\vec x}$
+	- $\inner[\vector x]{\vector x} \geq 0$
+	- $\inner[\vector x]{\vector x} = 0 \iff \vector x = \vector 0$
+	- $\inner[\vector x]{\vector y} = \conjugate{\inner[\vector y]{\vector x}}$
+	- $\inner[k\vector x]{\vector y} = k\inner[\vector x]{\vector y} = \inner[\vector x]{k\vector y}$
+	- $\inner[\vector x + \vector y]{\vector z} = \inner[\vector x]{\vector z} + \inner[y]{\vector z}$
+	- $\inner[a\vector x]{b\vector y} = \inner[\vector x]{\vector x} + \inner[a\vector x]{y} + \inner[\vector x]{b\vector y} + \inner[\vector y]{\vector y}$
+	- Defines a norm: $\norm{\vector x} = \sqrt{\inner[\vector x]{\vector x}} \implies \norm{\vector x}^2 = \inner[\vector x]{\vector x}$
 
-- Cauchy-Schwarz Inequality: $\abs{\inner[\vec x]{\vec y}} \leq \norm{\vec x}\norm{\vec y}$
+- Cauchy-Schwarz Inequality: $\abs{\inner[\vector x]{\vector y}} \leq \norm{\vector x}\norm{\vector y}$
 
 - Orthogonality:
-	- For vectors: $\vec x \perp \vec y \iff \inner[\vec x]{\vec y} = 0$
+	- For vectors: $\vector x \perp \vector y \iff \inner[\vector x]{\vector y} = 0$
 	- For matrices: $A$ is orthogonal $\iff A^{-1} = A^T$
 
-- Orthogonal Projection of $\vec x$ onto $\vec y$: $$P(\vec x, \vec y) = \inner[\vec x]{\vec y} \hat y = \inner[\vec x]{\vec y} \frac{\vec y}{\norm{\vec y}^2}$$
-	- Note $\norm{P(\vec x, \vec y)} = \norm{\vec x}\cos\theta_{x,y}$
+- Orthogonal Projection of $\vector x$ onto $\vector y$: $$P(\vector x, \vector y) = \inner[\vector x]{\vector y} \hat y = \inner[\vector x]{\vector y} \frac{\vector y}{\norm{\vector y}^2}$$
+	- Note $\norm{P(\vector x, \vector y)} = \norm{\vector x}\cos\theta_{x,y}$
 
 - Defective: An $n\times n$ matrix $A$ is defective $\iff$ the number of linearly independent eigenvectors of $A$ is less than $n$.
 
