@@ -124,3 +124,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Compute the RREF of a matrix
 - Compute characteristic polynomials, eigenvalues, and eigenvectors
 - Diagonalize a matrix
+- Solve a system of ODEs resulting arising from tank mixing
