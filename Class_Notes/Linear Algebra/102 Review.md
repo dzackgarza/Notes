@@ -37,6 +37,9 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Linear independence
 - Basis
 - Dimension
+- Row space
+- Column space
+- Null space
 - 
 
 # Review
