@@ -25,7 +25,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - *Final Exam*
 
 # Definitions to Know
-
+- 
 
 # Review
 - Systems of linear equations
