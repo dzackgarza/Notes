@@ -138,4 +138,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Prove facts about injective linear maps
 - Prove facts about similar matrices
 - Prove facts about orthogonal spaces and orthogonal complements
-- Prove facts about 
+- Prove facts about inner products
