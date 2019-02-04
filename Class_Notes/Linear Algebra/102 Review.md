@@ -139,3 +139,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Prove facts about similar matrices
 - Prove facts about orthogonal spaces and orthogonal complements
 - Prove facts about inner products
+- Prove facts about orthonormal sets
+- Prove facts about eigenvalues/eigenvectors
