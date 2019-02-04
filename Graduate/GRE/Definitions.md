@@ -249,7 +249,7 @@ $$
 	- A set of vectors $\theset{\vector x_i}_{i=1}^n$ is linearly independent $\iff \sum_{i=1}^n c_i \vector x_i = 0 \implies c_i = 0$ for all $i$.
 	- Can be detected by considering the matrix
 	$$
-	T = \begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}
+	T = \begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}^T
 	$$
 	(linearly independent iff $T$ is singular)
 
