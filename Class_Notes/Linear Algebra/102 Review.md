@@ -56,6 +56,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Characteristic polynomial
 - Diagonalizable
 - Inner product
+- Defective
 
 # Review
 - Systems of linear equations
