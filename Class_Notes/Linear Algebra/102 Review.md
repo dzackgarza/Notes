@@ -25,6 +25,8 @@ Textbook: Leon, *Linear Algebra with Applications*
   - *Final Exam*
 
 # Definitions to Know
+- System of equations
+- Consistent/inconsistent system
 - 
 
 # Review
