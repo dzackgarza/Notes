@@ -137,4 +137,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Prove facts about block matrices
 - Prove facts about injective linear maps
 - Prove facts about similar matrices
-- Prove 
+- Prove facts about orthogonal spaces and orthogonal complements
+- 
