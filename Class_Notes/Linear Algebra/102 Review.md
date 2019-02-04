@@ -56,6 +56,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Orthogonal subspaces
 - Orthogonal complement
 - Least-squares solution
+- Orthonormal 
 - Eigenvalue
 - Eigenvector
 - Characteristic polynomial
