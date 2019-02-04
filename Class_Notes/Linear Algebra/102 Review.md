@@ -115,3 +115,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Compute the following spaces of a matrix and their orthogonal complements:
   - Row space
   - Column space
+  - Null space
+- 
