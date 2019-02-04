@@ -29,7 +29,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Homogeneous system
 - Consistent/inconsistent system
 - Matrix
-- Matrix $A \vector x = \vector b$
+- Matrix (i.e. $A \vector x = \vector b$)
 - Determinant
 - Trace
 - Rank
