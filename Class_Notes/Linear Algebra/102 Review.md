@@ -72,7 +72,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - QR factorization
 - Gram-Schmidt process
 - Spectral theorem
-- 
+- Symmetric matrix
+- Orthogonal matrix
 
 # Review
 - Systems of linear equations
