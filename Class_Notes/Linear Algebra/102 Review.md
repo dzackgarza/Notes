@@ -143,4 +143,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Prove facts about eigenvalues/eigenvectors
 - Understand when a matrix can be diagonalized
 - Prove facts about diagonalizable matrices
-- 
+- Prove facts about the orthogonal decomposition theorem
