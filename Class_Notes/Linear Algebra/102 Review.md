@@ -129,3 +129,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Compute the rank and nullity of a matrix
 - Convert a set of vectors to a basis
 - Convert a basis to an orthonormal basis
+- Determine if a matrix is diagonalizable 
