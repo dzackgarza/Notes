@@ -46,6 +46,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Singular 
 - Eigenvalue
 - Eigenvector
+- Diagonalizable
 
 # Review
 - Systems of linear equations
