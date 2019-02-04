@@ -39,6 +39,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Gaussian elimination
 - Vector space
 - Vector subspace
+- Linear transformation
 - Span
 - Linear independence
 - Basis
