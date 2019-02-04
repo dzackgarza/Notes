@@ -30,6 +30,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Consistent/inconsistent system
 - Matrix
 - Matrix (i.e. $A \vector x = \vector b$)
+- Inverse matrix
+- Singular matrix
 - Determinant
 - Trace
 - Rank
