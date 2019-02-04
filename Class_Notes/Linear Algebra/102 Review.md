@@ -28,6 +28,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - System of equations
 - Homogeneous system
 - Consistent/inconsistent system
+- Determinant
+- Trace
 - Rank
 - Elementary row operation
 - Row equivalence
