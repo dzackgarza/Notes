@@ -33,6 +33,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Pivot
 - Vector space
 - Vector subspace
+- Span
 - 
 
 # Review
