@@ -116,4 +116,4 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Row space
   - Column space
   - Null space
-- 
+- Compute the shortest distance between a point and a plane
