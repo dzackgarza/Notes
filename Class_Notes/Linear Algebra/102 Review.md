@@ -126,3 +126,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Diagonalize a matrix
 - Solve a system of ODEs resulting arising from tank mixing
 - Compute the singular value decomposition of a matrix
+- Compute the rank and nullity of a matrix
