@@ -26,6 +26,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 
 # Definitions to Know
 - System of equations
+- Homogeneous system
 - Consistent/inconsistent system
 - Rank
 - Elementary row operation
