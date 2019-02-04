@@ -38,6 +38,8 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Linear independence
 - Basis
 - Dimension
+- Row Echelon Form
+- Reduced Row Echelon Form
 - Row space
 - Column space
 - Null space
