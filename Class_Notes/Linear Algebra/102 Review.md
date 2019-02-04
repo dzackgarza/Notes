@@ -55,6 +55,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Projection
 - Orthogonal subspaces
 - Orthogonal complement
+- Normal equations
 - Least-squares solution
 - Orthonormal 
 - Eigenvalue
