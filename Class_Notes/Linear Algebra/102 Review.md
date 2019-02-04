@@ -136,4 +136,5 @@ Textbook: Leon, *Linear Algebra with Applications*
 # List of Necessary Theory
 - Prove facts about block matrices
 - Prove facts about injective linear maps
+- Prove facts about similar matrices
 - Prove 
