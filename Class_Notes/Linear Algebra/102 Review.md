@@ -125,3 +125,4 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Compute characteristic polynomials, eigenvalues, and eigenvectors
 - Diagonalize a matrix
 - Solve a system of ODEs resulting arising from tank mixing
+- Compute the singular value decomposition of a matrix
