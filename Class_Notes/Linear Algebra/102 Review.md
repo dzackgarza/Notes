@@ -108,7 +108,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Construct matrix projection onto subspace
   - Convert a basis to an orthonormal basis
 
-# List of Things To Be Able To Do
+# List of Things To Be Able To Compute
 - Construct a matrix representing a linear map
 - Construct a change of basis matrix
 - Check that a map is a linear transformation
