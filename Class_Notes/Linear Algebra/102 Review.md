@@ -37,6 +37,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Linear independence
 - Basis
 - Dimension
+- 
 
 # Review
 - Systems of linear equations
