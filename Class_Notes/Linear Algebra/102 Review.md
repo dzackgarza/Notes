@@ -132,3 +132,6 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Determine if a matrix is diagonalizable 
 - Compute the matrix for a projection onto a subspace
 - Find the QR factorization of a matrix
+
+# Conceptual Things to Do
+- Prove facts about block matrices
