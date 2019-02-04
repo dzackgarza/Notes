@@ -74,6 +74,7 @@ Textbook: Leon, *Linear Algebra with Applications*
 - Spectral theorem
 - Symmetric matrix
 - Orthogonal matrix
+- 
 
 # Review
 - Systems of linear equations
