@@ -108,4 +108,4 @@ Textbook: Leon, *Linear Algebra with Applications*
   - Construct matrix projection onto subspace
   - Convert a basis to an orthonormal basis
 
-# List of Things to be Able to Do
+# List of Things To Be Able To Do
