@@ -113,7 +113,7 @@ Textbook: Leon, *Linear Algebra with Applications*
   - With respect to the standard basis in both domain and range
   - With respect to a nonstandard basis in the range
   - With respect to a nonstandard basis in the domain
-  - With respect to chosen bases in the domain and codomain
+  - With respect to nonstandard bases in both the domain and range
 - Construct a change of basis matrix
 - Check that a map is a linear transformation
 - Compute the following spaces of a matrix and their orthogonal complements:
