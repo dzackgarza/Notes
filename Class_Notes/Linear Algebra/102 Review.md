@@ -110,7 +110,9 @@ Textbook: Leon, *Linear Algebra with Applications*
 
 # List of Things To Be Able To Compute
 - Construct a matrix representing a linear map
-  - With respect to the standard basis
+  - With respect to the standard basis in both domain and range
+  - With respect to a nonstandard basis in the range
+  - With respect to a nonstandard basis in the domain
   - With respect to chosen bases in the domain and codomain
 - Construct a change of basis matrix
 - Check that a map is a linear transformation
