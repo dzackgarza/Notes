@@ -3,20 +3,20 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 [Berkeley Prelims](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
 
-# Prelim Level
+# Undergraduate / Prelim Level
 
 ## Calculus
-- Derivatives of maps from Rm to Rn 
-- gradient
 - chain rule; 
-- maxima and minima
+- Derivatives of maps from $\RR^m\to\RR^n$ 
+- explicit solutions of simple equations
+- Gauss’s Theorem
+- gradient
+- Green’s Theorem 
 - Lagrange multipliers; 
 - line and surface integrals of scalar and vector functions; 
-- Gauss’s Theorem
-- Green’s Theorem 
-- Stokes’ theorems. 
+- maxima and minima
 - Ordinary differential equations; 
-- explicit solutions of simple equations.
+- Stokes’ theorems. 
 
 
 ## Linear Algebra
@@ -37,7 +37,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Gram-Schmidt process
 - hermitian and unitary operators
 - inner product spaces
-- invariant subspaces and canonical forms; 
+- invariant subspaces 
 - Jordan normal form
 - least squares problems
 - linear transformations 
@@ -61,40 +61,44 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 
 
 ## Algebra
-- Groups
-- subgroups
-- normal subgroups
-- homomorphisms
-- quotient groups
 - automorphisms
-- groups acting on sets
-- Sylow theorems and applications
-- finitely generated abelian groups. 
-- permutation groups
 - cyclic groups
 - dihedral groups
-- matrix groups. 
-- rings
-- units
-- ideals
-- homomorphisms
-- quotient rings
-- prime ideals
-- maximal ideals
-- fields of fractions
 - Euclidean domains
-- principal ideal domains 
-- unique factorization domains
-- polynomial rings 
+- fields of fractions
 - finite field extensions
-- roots of polynomials
 - finite fields
+- finitely generated abelian groups. 
+- Groups
+- groups acting on sets
+- homomorphisms
+- homomorphisms
+- ideals
+- matrix groups
+- maximal ideals
+- normal subgroups
+- permutation groups
+- polynomial rings 
+- prime ideals
+- principal ideal domains 
+- quotient groups
+- quotient rings
+- rings
+- roots of polynomials
+- subgroups
+- Sylow theorems and applications
+- unique factorization domains
+- units
 
 
-## Analysis
+## Real Analysis
+- Accumulation points
 - Arzela-Ascoli theorem
 - Bolzano-Weierstrass theorem
+- Boundary Points
 - Cauchy sequences
+- Cauchy sequences
+- Cauchy-Schwarz inequality
 - chain rule
 - change of variables formula.
 - closure
@@ -106,26 +110,31 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - contraction maps
 - convergence of improper integrals. 
 - convergence of sequences of numbers and functions
-- the derivative
+- definition of differentiability in several variables (approximating linear transformation)
 - differentiation under the integral sign
 - Dini's Theorem
-- Fourier series. 
 - epsilon-delta arguments
 - equality of mixed partials
 - equicontinuity
 - existence and uniqueness theorems for solutions of ordinary differential equations
 - fixed point theory 
+- Fourier series. 
 - fundamental theorem of calculus
-- Inverse function theorems
+- Heine-Borel theorem
 - Implicit function theorem 
+- Interior points
+- Intermediate Value theorem
+- Inverse function theorems
+- least upper bound property of $\RR$
 - limit points
-- least upper bound property of R
 - limits
+- limsup and liminf
 - maxima and minima
 - mean value theorem for integrals
 - multivariable integration
 - numerical integration with error estimation.
 - open and closed sets
+- Order axioms
 - partial derivatives
 - radius of convergence
 - Riemann integral
@@ -133,75 +142,69 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - series
 - Spaces of functions
 - Stone-Weierstrass theorem
+- supremum and infimum
 - Taylor expansion in several variables
 - Taylor expansion with remainder
+- the derivative
 - the derivative as a linear map; 
 - the mean value theorem
 - Topology of Rn and metric spaces; properties of continuous functions
+- Triangle inequalities
+- uniform continuity
 - uniform convergence and integration
 - uniform convergence and its relation to derivatives and integrals; 
 - Weierstrass M -test; 
-- definition of differentiability in several variables (approximating linear transformation)
-- Order axioms
-- supremum and infimum
-- Cauchy sequences
-- Cauchy-Schwarz inequality
-- Triangle inequalities
-- limsup and liminf
-- Interior points
-- Boundary Points
-- Accumulation points
-- Heine-Borel theorem
-- Intermediate Value theorem
-- uniform continuity
 
 ## Complex Analysis
-- Basic properties of the complex number system. 
 - Analytic functions
-- conformality
-- Cauchy-Riemann equations
-- elementary functions and their basic properties 
-- rational  functions
-- exponential function
-- logarithm function
-- trigonometric functions
-- complex roots
-- Cauchy’s theorem 
-- Cauchy’s integral formula
-- power series and Laurent series
-- isolation of zeros
-- classification of isolated singularities (including singularity at ∞)
 - analyticity of limit functions. 
-- Maximum principle
-- Schwarz’s lemma
-- Liouville’s theorem
-- Morera’s theorem
 - argument principle
-- Rouché’s theorem. 
 - Basic properties of harmonic functions in the plane
-- harmonic conjugates
-- mean value property
-- maximum principle. Residue theorem
-- evaluation of definite integrals. Mapping properties of linear fractional transformations
+- Basic properties of the complex number system. 
+- Cauchy-Riemann equations
+- Cauchy’s integral formula
+- Cauchy’s theorem 
+- classification of isolated singularities (including singularity at $\infty$)
+- complex roots
 - conformal equivalences of the unit disk with itself and with the upper half-plane. 
+- conformality
+- elementary functions and their basic properties 
+- evaluation of definite integrals
+- exponential function
+- harmonic conjugates
+- isolation of zeros
+- Liouville’s theorem
+- logarithm function
+- Mapping properties of linear fractional transformations
+- Maximum principle
+- maximum principle. Residue theorem
+- mean value property
+- Morera’s theorem
+- power series and Laurent series
+- rational  functions
+- Rouché’s theorem. 
+- Schwarz’s lemma
+- trigonometric functions
 
 
 ---
 
-# Qualifying Exam Level
+# Graduate Level
 
 ## Algebra
 Categories and Functors: 
-- universal properties
-- natural transformations
-- representable functors
-- Yoneda lemma
 - adjoint functors
+- natural transformations
 - products
+- representable functors
+- universal properties
+- Yoneda lemma
 
-Group Theory:
+### Group Theory
+First 6 chapters (220 pages) of D&F.
 - alternating groups; 
 - Cayley’s Theorem
+- Cauchy's Theorem
 - Class Equation; 
 - Classification of abelian groups
 - commutators
@@ -220,11 +223,16 @@ Group Theory:
 - group extensions.
 - Hölder Program 
 - homomorphisms
-- Isomorphism Theorems; 
+- Isomorphism Theorems
+  - 1st 
+  - 2nd
+  - 3rd
+  - 4th
 - Jordan-Holder theorems; 
 - Lagrange’s Theorem; 
 - nilpotent
-- normal subgroups; 
+- normal subgroups
+- $p\dash$groups
 - quotient groups 
 - semi-direct product groups 
 - semidirect products.
@@ -232,130 +240,140 @@ Group Theory:
 - simplicity of An
 - solvable groups
 - subgroup lattice; 
-- Sylow’s Theorem and applications; 
+- Sylow’s theorems
+  - 1
+  - 2
+  - 3
 - symmetric groups and permutation representations; 
 - symmetric groups and subgroups
 - transpositions
 
 
-Ring Theory: (commutative case)
-- Ideals and homomorphisms
-- localization and completion
-- free and projective modules
+### Commutative Ring Theory
+Chapters 7-9 in D&F
 - basic theorems about factorization and UFD's 
-- structure theory of modules over a PID
-- including applications to canonical forms of a matrix
+- bilinear pairings
 - chain conditions
-- Hilbert basis theorem
-- integral ring extensions
-- Hilbert Nullstellensatz
-- Dedekind rings
-- tensor products
-- duality and bilinear pairings
-- symmetric and alternating forms.
-- rings and subrings; 
-- homomorphisms
-- isomorphisms
-- quotient rings
-- Isomorphism Theorems; 
-- ideals
-- prime ideals
-- maximal ideals
-- integral domains
-- construction of finite fields; 
-- rings of fractions; 
 - Chinese Remainder Theorem
+- completion
+- construction of finite fields; 
+- Dedekind rings
+- duality 
+- Eisenstein’s Criterion
 - Euclidean Domains
-- Principal Ideal Domains
-- Unique Factorization Domains
-- quadratic integer rings;
-- polynomial rings
 - factorization in one variable
+- free and projective modules
 - Gauss’ Lemma
+- Hilbert basis theorem
+- Hilbert Nullstellensatz
+- homomorphisms
+- ideals
+- integral domains
+- integral ring extensions
 - irreducibility criteria
-- Eisenstein’s Criterion; 
-- Noetherian rings.
+- Isomorphism Theorems; 
+- localization 
+- maximal ideals
+- nilpotence
+- nilradicals
+- Noetherian rings
+- polynomial rings
+- prime ideals
+- Principal Ideal Domains
+- quadratic integer rings;
+- quotient rings
+- rings and subrings; 
+- rings of fractions; 
+- structure theory of modules over a PID
+- symmetric and alternating forms.
+- tensor products
+- Unique Factorization Domains
+- Zorn's lemma
 
 
-Field Theory. 
-- separable and inseparable extensions
-- normal extensions
-- transcendental extensions
-- cyclotomic extensions
-- finite fields
-- and algebraic closure; Galois theory
-- solvability by radicals
-- cyclic extensions and Kummer theory.
-- Field Theory:
-- field extensions
-- degrees
+### Field Theory 
+Chapters 13-14 in D&F
 - algebraic and transcendental extensions
-- minimal polynomials of algebraic elements
-- straightedge and compass constructions
-- splitting fields 
 - algebraic closures
-- existence and uniqueness of finite fields
-- separable extensions
+- algebraic extensions 
+- Computation of Galois groups of polynomials
+- cyclic extensions and Kummer theory.
+- cyclotomic extensions
 - cyclotomic polynomials.
+- degrees
+- existence and uniqueness of finite fields
+- field extensions
+- finite fields
+- minimal polynomials of algebraic elements
+- normal extensions
+- separable and inseparable extensions
+- separable extensions
+- solvability by of polynomials radicals
+- splitting fields 
+- straightedge and compass constructions
+- transcendental extensions
 
-Galois Theory:
+### Galois Theory
+- abelian extensions of Q
+- Compute galois groups for small degree examples
+- discriminants
 - field automorphisms
 - fixed fields 
-- the Fundamental Theorem of Galois Theory
-- Compute galois groups for small degree examples
-- Galois theory of finite fields
-- abelian extensions of Q
-- Primitive Element Theorem
 - Fundamental Theorem of Algebra
-- symmetric functions 
-- the Fundamental Theorem of Symmetric Functions
-- discriminants
+- Galois theory of finite fields
+- insolvability of the quintic.
+- Primitive Element Theorem
 - roots of polynomials of degree ≤ 4
 - solvable and radical extensions
-- insolvability of the quintic.
+- symmetric functions 
+- the Fundamental Theorem of Galois Theory
+- the Fundamental Theorem of Symmetric Functions
 
 
-Ring Theory: (non-commutative case) 
-- Semisimple rings
-- irreducible modules
-- Artin-Wedderburn theorem; 
-- non-semisimple rings
-- indecomposable modules 
-- Krull-Schmidt theorem; 
-- group rings
-
-Module Theory:
-- modules and submodules
-- quotient modules 
-- the Isomorphism Theorems
-- generation of modules 
+### Module Theory:
+Sections 10.1,2,3 and 12.1,2,3.
 - direct sums 
 - free modules
-- modules over Principal Ideal Domains, 
+- generation of modules 
+- modules and submodules
+- modules over PIDs 
+- projective modules
+- quotient modules 
 - rank 
 - the Fundamental Theorem of Finitely Generated Modules over a P.I.D.
+- the Isomorphism Theorems
 
 
-Representations of Groups
-- esp. finite groups. 
-- matrix coefficients
-- Schur orthogonality
-- invariant inner products 
-- complete reducibility of representations
-- characters of finite groups 
-- parametrization of complex representations by characters
+### Noncommutative Ring Theory
+- Artin-Wedderburn theorem; 
+- group rings
+- indecomposable modules 
+- irreducible modules
+- Krull-Schmidt theorem; 
+- non-semisimple rings
+- Semisimple rings
+
+
+### Representations of Groups
 - character tables
-- Peter-Weyl theorem.
+- characters of finite groups 
+- complete reducibility of representations
+- esp. finite groups. 
+- invariant inner products 
+- matrix coefficients
+- parametrization of complex representations by characters
+- Peter-Weyl theorem
+- Schur orthogonality
+
+
+---
 
 ## Real Analysis
 - $L^p$ spaces
-- measure theory;
-- compact subsets of C(X)
 - approximate identities; 
 - Arzela-Ascoli theorem 
-- Fourier analysis 
-- Functional analysis 
 - closed graph theorem
+- compact subsets of C(X)
 - convergence theorems 
 - convolutions on $\RR^n$
 - covering lemmas 
@@ -364,7 +382,11 @@ Representations of Groups
 - dominated convergence theorem
 - Egoroff's theorem
 - Fatou’s lemma
+- Fourier analysis 
 - Fubini’s theorem; 
+- Functional analysis 
+- functions of bounded variation
+- Hahn decompositions 
 - Hahn-Banach theorem
 - Hausdorff measures
 - Hilbert space
@@ -377,18 +399,18 @@ Representations of Groups
 - linear functionals
 - linear operators 
 - Lusin’s theorem
+- measure theory;
+- Minkowski inequalities
 - monotone convergence theorem
 - open mapping theorem
 - orthonormal systems
 - Plancherel's theorem
 - Poisson summation formula 
 - Radon-Nikodym theorem
-- functions of bounded variation
 - Riemann-Lebesgue lemma 
 - Riesz representation theorem
 - self-adjoint linear operators and their spectra; 
 - signed measures 
-- Hahn decompositions 
 - strong/weak/weak* topologies 
 - the Baire Category theorem 
 - The spaces C(X)
@@ -399,7 +421,6 @@ Representations of Groups
 - uniform convergence
 - Urysohn’s lemma
 - Weak $L^p$ spaces
-- Minkowski inequalities
 
 ## Complex Analysis
 - Analytic functions
@@ -422,8 +443,8 @@ Representations of Groups
 - isolated singularities
 - mapping of polygons
 - mappings of finitely connected domains. 
-- maximum principle
 - maximum modulus principle
+- maximum principle
 - mean value property
 - Mittag-Leffler theorem
 - Mobius transformations and spherical representation. 
@@ -456,45 +477,45 @@ Spivak Differential Geometry
 
 
 ### Differential topology: 
+- degree theory
+- Ehresmann's theorem that proper submersions are locally trivial fibrations
+- embedding theorem
+- Euler characteristic
+- integral curves
 - manifolds
-- tangent vectors
+- Sard's Theorem on the measure of critical values
 - smooth maps
 - tangent bundle 
+- tangent vectors
+- the Lefshetz Fixed Point Theorem
+- transversality
 - vector bundles in general
 - vector fields 
-- integral curves
-- Sard's Theorem on the measure of critical values
-- embedding theorem
-- transversality
-- degree theory
-- the Lefshetz Fixed Point Theorem
-- Euler characteristic
-- Ehresmann's theorem that proper submersions are locally trivial fibrations
 
 
 ### Differential geometry: 
-- Lie derivatives
-- integrable distributions and the Frobenius Theorem
-- differential forms
-- integration and  Stokes’ Theorem
 - de Rham cohomology
-- the Mayer-Vietoris sequence
-- Poincare duality
-- Thom classes
 - degree theory and Euler characteristic from the viewpoint of de Rham cohomology
-- Riemannian metrics
+- differential forms
 - gradients
-- volume forms
+- integrable distributions and the Frobenius Theorem
+- integration and  Stokes’ Theorem
 - interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
+- Lie derivatives
+- Poincare duality
+- Riemannian metrics
+- the Mayer-Vietoris sequence
+- Thom classes
+- volume forms
 
 ### Algebraic topology: 
-- homotopy theory
-- fundamental group 
-- covering spaces
-- singular homology 
-- cohomology theory
 - axioms of homology theory
-- Mayer-Vietoris sequence
 - calculation of homology and cohomology of standard spaces
 - cell complexes and cellular homology
+- cohomology theory
+- covering spaces
 - deRham’s theorem $H_\text{sing} \cong H_{\text{DR}}$
+- fundamental group 
+- homotopy theory
+- Mayer-Vietoris sequence
+- singular homology 

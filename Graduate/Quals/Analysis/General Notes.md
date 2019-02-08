@@ -2,7 +2,6 @@
 
 - Banach Space
 - $L^p$
--
 
 ## Useful Results
 - Cauchy-Schwarz
