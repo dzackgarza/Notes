@@ -7,6 +7,7 @@
 \usepackage{mathtools, amssymb, amsthm}
 
 \usepackage{booktabs}
+\usepackage(microtype}
 % Italics, Numbered
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
