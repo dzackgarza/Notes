@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 
-\usepackage(microtype}
+
 
 \usepackage[msc-links]{amsrefs}
 \usepackage{hyperref}
