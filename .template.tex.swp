@@ -13,6 +13,10 @@
 \newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
 \newtheorem{exmp}[thm]{Example} % same for example numbers
 
+\newtheorem*{observation}{Observation}
+\newtheorem*{example}{Example}
+\newtheorem*{remark}{Remark}
+
 \title{
 	\textbf{Insert Title}\\ 
 	{\normalsize (subtitle)}
