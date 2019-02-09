@@ -30,6 +30,8 @@
 
 \tableofcontents
 
+\section Main
+
 \begin{thm}
 All $a$'s are $b$'s. 
 \end{thm}
