@@ -61,6 +61,10 @@ Abcdde\cite{	hatcherAlgebraicTopologya}
 \todo{Rewrite this answer $\ldots$ cd}
 \end{defn}
 
+\begin{tikzpicture}
+\draw (0,0) -- (0,2) -- (2,0)-- (0,0);
+\end{tikzpicture}
+
 \newpage
 \section{Todo}
 \listoftodos 
