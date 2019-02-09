@@ -9,7 +9,7 @@
 \newtheorem{defn}{Definition}
 \newtheorem{claim}{Claim}
 \newtheorem{proof}{Proof}
-\newtheorem{defn}{Definition}
+\newtheorem{cor}{Corollary}
 
 \title{
 	\textbf{Insert Title}\\ 
