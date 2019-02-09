@@ -27,7 +27,9 @@
 
 \maketitle
 
-\begin{thm}All \end{thm}
+\begin{thm}
+All $a$'s are $b$'s. 
+\end{thm}
 
 \begin{defn}
 Abcdde\cite{	hatcherAlgebraicTopologya}
