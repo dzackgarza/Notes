@@ -4,7 +4,7 @@
 \usepackage{hyperref}
 \usepackage{amsthm}
 
-\new	theorem{defn}{Definition
+\new	theorem{defn}{Definition}
 
 \title{
 	\textbf{Insert Title}\\ 
@@ -16,6 +16,7 @@
 
 \maketitle
 
+\
 Abcdde\cite{	hatcherAlgebraicTopologya}
 
 \bibliography{/home/zack/Notes/library.bib} 
