@@ -14,7 +14,6 @@
 \newtheorem{exmp}[thm]{Example} % same for example numbers
 
 \newtheorem*{observation}{Observation}
-\newtheorem*{example}{Example}
 \newtheorem*{remark}{Remark}
 
 \title{
