@@ -3,7 +3,7 @@
 \usepackage[msc-links]{amsrefs}
 \usepackage{hyperref}
 
-
+\usepackage{amsmath}
 
 \title{
 	\textbf{Insert Title}\\ 
