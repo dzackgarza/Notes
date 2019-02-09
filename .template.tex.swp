@@ -14,7 +14,7 @@
 \usepackage{booktabs}
 \usepackage{todonotes}
 
-\usepackage[msc-links]{amsrefs}
+\usepackage[msc-links, alphabetic]{amsrefs}
 %\usepackage{biblatex}
 
 % Italics, Numbered
