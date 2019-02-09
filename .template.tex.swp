@@ -4,7 +4,7 @@
 \usepackage{hyperref}
 \usepackage{amsthm}
 
-\new	theorem{
+\new	theorem{defn}{Definition
 
 \title{
 	\textbf{Insert Title}\\ 
