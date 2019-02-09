@@ -21,6 +21,9 @@
 \usepackage[msc-links]{amsrefs}
 %\usepackage{biblatex}
 
+\usepackage{tikz}
+
+
 % Italics, Numbered
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[section] % reset theorem numbering for each chapter
