@@ -6,7 +6,7 @@
 
 \usepackage{mathtools, amssymb, amsthm}
 
-\usepackage{booktabs}
+%\usepackage{booktabs}
 \usepackage(microtype}
 \usepackage{todonotes}
 
