@@ -17,9 +17,9 @@
 
 \maketitle
 
-\begin{defn}
+
 Abcdde\cite{	hatcherAlgebraicTopologya}
-\end{defn}
+
 
 \bibliography{/home/zack/Notes/library.bib} 
 \bibliographystyle{ieeetr}
