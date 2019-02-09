@@ -6,6 +6,8 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 
+\theoremstyle{plain}
+
 \newtheorem{defn}{Definition}
 \newtheorem{thm}{Theorem}
 \newtheorem{claim}{Claim}
