@@ -1,6 +1,6 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 
-\documentclass[11pt]{scrartcl}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern} 
 
