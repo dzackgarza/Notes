@@ -2,6 +2,7 @@
 
 
 
+\usepackage{microtype}
 \usepackage[msc-links]{amsrefs}
 \usepackage{hyperref}
 \usepackage{graphicx}
