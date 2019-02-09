@@ -4,6 +4,7 @@
 \usepackage{hyperref}
 
 \usepackage{amsmath}
+\usepackage{amsthm}
 
 \title{
 	\textbf{Insert Title}\\ 
