@@ -13,6 +13,7 @@
 \newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
 \newtheorem{exmp}[thm]{Example} % same for example numbers
 
+\theoremstyle{plain}
 \newtheorem*{observation}{Observation}
 \newtheorem*{remark}{Remark}
 
