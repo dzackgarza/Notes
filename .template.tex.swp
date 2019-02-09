@@ -3,7 +3,7 @@
 
 
 \usepackage{microtype}
-\usepackage[msc-links]{amsrefs}
+
 \usepackage{hyperref}
 \usepackage{graphicx}
 
@@ -13,7 +13,8 @@
 
 \usepackage{booktabs}
 \usepackage{todonotes}
-\usepackage{biblatex}
+
+%\usepackage[msc-links]{amsrefs}
 
 % Italics, Numbered
 \theoremstyle{plain}
