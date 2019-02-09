@@ -2,10 +2,8 @@
 
 \usepackage[msc-links]{amsrefs}
 \usepackage{hyperref}
-\usepackage{amsmath}
-\usepackage{amsthm}
 
-\new	theorem{defn}{Definition}
+
 
 \title{
 	\textbf{Insert Title}\\ 
