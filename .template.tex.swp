@@ -11,7 +11,7 @@
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
 
-
+% Plain
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
 \newtheorem{eg}[thm]{Example} % same for example numbers
