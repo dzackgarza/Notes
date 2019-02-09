@@ -15,6 +15,7 @@
 \usepackage{todonotes}
 
 %\usepackage[msc-links]{amsrefs}
+\usepackage{biblatex}
 
 % Italics, Numbered
 \theoremstyle{plain}
