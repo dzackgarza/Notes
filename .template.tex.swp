@@ -49,12 +49,12 @@ All $a$'s are $b$'s.
 
 \begin{defn}
 Abcdde\cite{	hatcherAlgebraicTopologya}
-%\todo{Rewrite this answer $\ldots$ abcd}
+\todo{Rewrite this answer $\ldots$ abcd}
 \end{defn}
 
 \newpage
 \section{Todo}
-%\listoftodos 
+\listoftodos 
 
 \bibliography{/home/zack/Notes/library.bib} 
 \bibliographystyle{ieeetr}
