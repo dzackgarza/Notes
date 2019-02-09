@@ -8,7 +8,6 @@
 
 \newtheorem{defn}{Definition}
 \newtheorem{claim}{Claim}
-\newtheorem{proof}{Proof}
 \newtheorem{cor}{Corollary}
 
 \title{
