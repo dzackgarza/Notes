@@ -44,6 +44,8 @@ All $a$'s are $b$'s.
 
 \begin{defn}
 Abcdde\cite{	hatcherAlgebraicTopologya}
+\todo{Rewrite this answer \ldots}
+
 \end{defn}
 
 \bibliography{/home/zack/Notes/library.bib} 
