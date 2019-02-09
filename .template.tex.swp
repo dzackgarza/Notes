@@ -7,6 +7,9 @@
 \usepackage{amsthm}
 
 \newtheorem{defn}{Definition}
+\newtheorem{defn}{Definition}
+\newtheorem{defn}{Definition}
+\newtheorem{defn}{Definition}
 
 \title{
 	\textbf{Insert Title}\\ 
