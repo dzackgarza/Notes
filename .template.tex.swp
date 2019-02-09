@@ -15,7 +15,7 @@
 \newtheorem{eg}[thm]{Example} % same for example numbers
 
 \theoremstyle{plain}
-\newtheorem*{observation}{Observation}
+\newtheorem*{note}{Note}
 \newtheorem*{remark}{Remark}
 
 \title{
