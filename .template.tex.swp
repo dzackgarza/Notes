@@ -9,8 +9,8 @@
 %, amssymb, amsthm
 
 %\usepackage{booktabs}
-\usepackage(microtype}
-\usepackage{todonotes}
+%\usepackage(microtype}
+%\usepackage{todonotes}
 
 % Italics, Numbered
 \theoremstyle{plain}
