@@ -6,6 +6,8 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 
+\newtheorem{defn}{Definition}
+
 \title{
 	\textbf{Insert Title}\\ 
 	{\normalsize (subtitle)}
