@@ -12,7 +12,6 @@
 %, amssymb, amsthm
 
 \usepackage{booktabs}
-
 \usepackage{todonotes}
 
 % Italics, Numbered
