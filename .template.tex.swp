@@ -4,8 +4,7 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 
-\usepackage{amsmath}
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath, amssymb, amsthm}
 
 % Italics, Numbered
 \theoremstyle{plain}
