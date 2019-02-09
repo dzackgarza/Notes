@@ -14,8 +14,8 @@
 \usepackage{booktabs}
 \usepackage{todonotes}
 
-%\usepackage[msc-links]{amsrefs}
-\usepackage{biblatex}
+\usepackage[msc-links]{amsrefs}
+%\usepackage{biblatex}
 
 % Italics, Numbered
 \theoremstyle{plain}
