@@ -8,7 +8,7 @@
 
 \newtheorem{defn}{Definition}
 \newtheorem{claim}{Claim}
-\newtheorem{defn}{Definition}
+\newtheorem{proof}{Proof}
 \newtheorem{defn}{Definition}
 
 \title{
