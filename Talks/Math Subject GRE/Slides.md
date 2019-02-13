@@ -9,7 +9,8 @@ presentation:
 
 <!-- slide -->
 # Agenda
-- What is the 
+- What is the Mathematics Subject GRE?
+- What topics does it cover?
 
 <!-- slide -->
 
