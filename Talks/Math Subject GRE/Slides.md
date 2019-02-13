@@ -171,7 +171,6 @@ svc 1
 
 <!-- slide -->
 # Topics: Discrete Mathematics
-
 <!-- slide vertical=true -->
 svc 1
 
@@ -185,6 +184,7 @@ svc 1
 - Congruence
 - Prime factorization
 - The totient function
+- Group-theoretic properties of $\ZZ/n\ZZ$
 
 
 
