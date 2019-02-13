@@ -139,7 +139,7 @@ presentation:
 ## Topics
 - Vectors, div, grad, curl
 - Equations of lines, planes, paramaterized curves
-  - And finding intersections thereof
+  - And finding intersections
 - Multivariable Taylor series
 - Computing linear approximations
 - Lagrange Multipliers
