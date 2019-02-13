@@ -32,6 +32,8 @@ presentation:
   - Abstract Algebra 
   - Number Theory
 
+![algebra](http://www.math.colostate.edu/~jwilson/math/16/D16.gif)
+
 <!-- slide vertical=true-->
 - Mixed Topics (25%)
   - Logic / Set Theory
