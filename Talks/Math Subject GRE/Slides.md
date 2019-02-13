@@ -180,16 +180,17 @@ svc 1
 
 <!-- slide -->
 # Topics: Number Theory
-
 <!-- slide vertical=true -->
-svc 1
+- Divisibility
+- Congruence
+- Prime factorization
+- The totient function
 
 
 
 
 <!-- slide -->
 # Topics: Abstract Algebra
-
 <!-- slide vertical=true -->
 svc 1
 
@@ -198,6 +199,7 @@ svc 1
 
 <!-- slide -->
 # Topics: Real Analysis
+<!-- slide vertical=true -->
 - Properties of Metrics and Metric Spaces
 - The Cauchy-Schwarz Inequality
 - Definitions of Sequences and Series
@@ -211,14 +213,10 @@ svc 1
 	- $[\frac{\partial}{\partial x}, \int dx](f)$
 - Uniform and point-wise continuity
 - Lipschitz Continuity
-  
-<!-- slide vertical=true -->
-svc 1
 
 
 <!-- slide -->
 # Topics: Point-Set Topology
-
 <!-- slide vertical=true -->
 - Open/closed sets
 - Connected, disconnected, totally disconnected, etc
@@ -228,7 +226,6 @@ svc 1
 
 <!-- slide -->
 # Topics: Complex Analysis
-
 <!-- slide vertical=true -->
 svc 1
 
