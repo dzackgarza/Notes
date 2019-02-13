@@ -50,7 +50,7 @@ presentation:
 <!-- slide -->
 # Logistics
 
-- Multiple choice
+- Multiple choice, 5 choices
 - 66 questions, 170 minutes
 - No downside to guessing
 
