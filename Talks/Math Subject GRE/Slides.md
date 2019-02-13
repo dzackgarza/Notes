@@ -138,6 +138,7 @@ presentation:
 <!-- slide vertical=true -->
 - Vectors, div, grad, curl
 - Equations of lines, planes, paramaterized curves
+  - And finding intersections thereof
 - 
 
 
