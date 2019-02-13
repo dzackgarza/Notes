@@ -105,7 +105,8 @@ presentation:
 # Single Variable Calculus
 
 <!-- slide vertical=true -->
-svc 1
+- Computing limits
+- 
 
 
 
