@@ -25,7 +25,8 @@ presentation:
   - Differential Equations
 - Algebra (25%)
   - Linear Algebra
-  - 
+  - Abstract Algebra 
+  - Number Theory
 - Mixed Topics (25%)
 
 <!-- slide -->
