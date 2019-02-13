@@ -130,7 +130,7 @@ presentation:
   - Specific integrands
 - Computing definite integrals
 - Solids of revolution
-- 
+- Series (see real analysis section)
 
 <!-- slide -->
 # Multivariable Calculus
