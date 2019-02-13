@@ -29,7 +29,9 @@ presentation:
   - Number Theory
 - Mixed Topics (25%)
   - Real Analysis
-  - 
+  - Complex Analysis
+  - Probability
+  - Combinatorics
 
 <!-- slide -->
 # Single Variable Calculus
