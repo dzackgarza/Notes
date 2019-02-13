@@ -28,7 +28,9 @@ presentation:
   - Abstract Algebra 
   - Number Theory
 - Mixed Topics (25%)
+  - Logic / Set Theory
   - Real Analysis
+  - Point-Set Topology
   - Complex Analysis
   - Probability
   - Combinatorics
