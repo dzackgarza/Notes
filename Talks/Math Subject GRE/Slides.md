@@ -90,7 +90,8 @@ presentation:
 - Speed is important
 - Focus on lower div
 - Drill *a lot* of problems
-- 
+- Memorize formulas and definitions
+- Spaced repetition
 
 
 <!-- slide -->
