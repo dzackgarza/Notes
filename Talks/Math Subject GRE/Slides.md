@@ -120,7 +120,8 @@ presentation:
 
 <!-- slide vertical=true -->
 ## Integrals
-- 
+- Riemann sum definition of the integral
+- The fundamental theorem of Calculus
 
 
 <!-- slide -->
