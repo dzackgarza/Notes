@@ -88,7 +88,7 @@ presentation:
 
 - Start early
 - Speed is important
-- 
+- Focus on 
 
 
 <!-- slide -->
