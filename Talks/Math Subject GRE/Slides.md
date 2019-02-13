@@ -198,6 +198,8 @@ svc 1
 
 <!-- slide -->
 # Topics: Real Analysis
+- Properties of metric spaces
+- 
 
 <!-- slide vertical=true -->
 svc 1
