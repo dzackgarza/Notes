@@ -24,6 +24,8 @@ presentation:
   - Multivariable
   - Differential Equations
 
+
+
 <!-- slide vertical=true-->
 - "Algebra" (25%)
   - Linear Algebra
