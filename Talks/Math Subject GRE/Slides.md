@@ -141,6 +141,7 @@ presentation:
   - And finding intersections thereof
 - Multivariable Taylor series
 - Computing linear approximations
+- Lagrange Multipliers
 - 
 
 
