@@ -107,7 +107,7 @@ presentation:
 <!-- slide vertical=true -->
 - Computing limits
 - Showing continuity
-- 
+- Computing derivatives
 
 
 
