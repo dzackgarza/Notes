@@ -29,6 +29,8 @@ presentation:
   - Linear Algebra
   - Abstract Algebra 
   - Number Theory
+
+<!-- slide vertical=true-->
 - Mixed Topics (25%)
   - Logic / Set Theory
   - Real Analysis
