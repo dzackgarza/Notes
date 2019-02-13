@@ -1,7 +1,7 @@
 ---
 presentation:
   margin: 0.0
-  theme: moon.css
+  theme: serif.css
 ---
 
 <!-- slide -->
