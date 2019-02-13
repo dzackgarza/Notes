@@ -12,7 +12,7 @@ presentation:
 - What the Mathematics Subject GRE is
 - What topics it covers
 - Some exam logistics
-- 
+- Resources 
 
 <!-- slide -->
 
