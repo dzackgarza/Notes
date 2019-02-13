@@ -20,6 +20,7 @@ presentation:
 # Main Topics
 
 - Calculus (50%)
+- Algebra (25%)
 - 
 
 <!-- slide -->
