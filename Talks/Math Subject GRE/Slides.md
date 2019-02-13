@@ -155,6 +155,7 @@ presentation:
 <!-- slide -->
 # Linear Algebra
 <!-- slide vertical=true -->
+## Topics
 - Systems of equations
 - Row operations, Gaussian elimination, REF, RREF
 - Determinant, inversion, trace
