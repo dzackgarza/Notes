@@ -127,6 +127,7 @@ presentation:
   - Partial fraction decomposition
   - Trigonometric Substitution
   - Integration by parts
+  - 
 - Computing definite integrals
 
 
