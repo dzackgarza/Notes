@@ -203,6 +203,14 @@ svc 1
 svc 1
 
 
+<!-- slide -->
+# Topics: Point-Set Topology
+
+<!-- slide vertical=true -->
+- Connectedness
+- 
+
+
 
 
 <!-- slide -->
