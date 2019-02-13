@@ -5,7 +5,7 @@ presentation:
 
 <!-- slide -->
 
-**Mathematics Subject GRE Workshop**
+# Mathematics Subject GRE Workshop
 
 
 <!-- slide -->
