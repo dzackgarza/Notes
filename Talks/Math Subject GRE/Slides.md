@@ -86,7 +86,7 @@ presentation:
 <!-- slide -->
 # General Tips
 
-- 
+- Start early
 
 
 <!-- slide -->
