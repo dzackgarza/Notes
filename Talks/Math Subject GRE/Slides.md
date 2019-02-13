@@ -161,6 +161,9 @@ presentation:
 - Vector spaces and subspaces
 - Rank-nullity
 - Computing nullspace, colspace, rowspace, eigenvalues/eigenvectors
+- Big list of equivalent conditions for invertibility
+- Canonical forms
+- Quadratic forms
 
 
 
