@@ -154,7 +154,6 @@ presentation:
 
 <!-- slide -->
 # Linear Algebra
-
 <!-- slide vertical=true -->
 svc 1
 
@@ -163,7 +162,7 @@ svc 1
 <!-- slide -->
 # Ordinary Differential Equations
 <!-- slide vertical=true -->
-- $\sum_{i=1}^n \alpha_i y^{(i)}(x) = 0$
+- $\sum_{i=1}^n \alpha_i y^{(i)}(x) = f(x)$
 
 
 
