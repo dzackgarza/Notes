@@ -129,7 +129,8 @@ presentation:
   - Integration by parts
   - Specific integrands
 - Computing definite integrals
-
+- Solids of revolution
+- 
 
 <!-- slide -->
 # Multivariable Calculus
