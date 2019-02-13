@@ -144,7 +144,7 @@ presentation:
 - Lagrange Multipliers
 - Multivariable optimization
 - Arc lengths of curves
-- Line integrals, surface integrals
+- Line integrals, surface integrals, volume integrals
 - Green's Theorem
 - Stoke's Theorem
 
