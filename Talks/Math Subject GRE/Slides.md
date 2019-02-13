@@ -108,6 +108,8 @@ presentation:
 - Computing limits
 - Showing continuity
 - Computing derivatives
+- Mean Value Theorem
+- Extreme Value Theorem
 
 
 
