@@ -19,7 +19,8 @@ presentation:
 <!-- slide -->
 # Main Topics
 
-- Calculus
+- Calculus (50%)
+- 
 
 <!-- slide -->
 # Single Variable Calculus
