@@ -61,6 +61,7 @@ presentation:
 - Multiple choice, 5 choices
 - 66 questions, 170 minutes
 - No downside to guessing
+- Only offered 3x/year
 
 <!-- slide -->
 # References
