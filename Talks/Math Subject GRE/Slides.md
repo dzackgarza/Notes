@@ -42,6 +42,7 @@ presentation:
   - Complex Analysis
   - Probability
   - Combinatorics
+  ![analysis](https://pbs.twimg.com/media/C29j_1BXEAAa0PN.jpg)
 
 <!-- slide -->
 # Single Variable Calculus
