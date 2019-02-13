@@ -88,6 +88,8 @@ presentation:
 
 - Start early
 - Speed is important
+- Focus on lower div
+- Drill *a lot* of problems
 - 
 
 
