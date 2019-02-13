@@ -72,6 +72,9 @@ presentation:
 	- GR 8767
 	- GR 9768
 
+<!-- slide -->
+# General Tips
+
 
 <!-- slide -->
 # Single Variable Calculus
