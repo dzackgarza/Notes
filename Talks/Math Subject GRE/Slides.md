@@ -172,7 +172,8 @@ svc 1
 <!-- slide -->
 # Topics: Discrete Mathematics
 <!-- slide vertical=true -->
-svc 1
+- 
+- Recurrence relations
 
 
 
