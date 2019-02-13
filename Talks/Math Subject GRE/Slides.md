@@ -23,7 +23,7 @@ presentation:
   - Single Variable
   - Multivariable
   - Differential Equations
-- Algebra (25%)
+- "Algebra" (25%)
   - Linear Algebra
   - Abstract Algebra 
   - Number Theory
