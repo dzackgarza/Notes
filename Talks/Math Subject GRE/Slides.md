@@ -124,7 +124,9 @@ presentation:
 - The fundamental theorem of Calculus (both forms)
 - Computing antiderivatives
   - $u\dash$substitutions
-  - 
+  - Partial fraction decomposition
+  - Trigonometric Substitution
+  - Integration by parts
 - Computing definite integrals
 
 
