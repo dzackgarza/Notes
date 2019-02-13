@@ -1,7 +1,7 @@
 ---
 presentation:
   margin: 0.0
-  theme: white.css
+  theme: blood.css
 ---
 
 <!-- slide -->
