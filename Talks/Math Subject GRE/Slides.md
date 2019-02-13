@@ -11,5 +11,7 @@ presentation:
 <!-- slide -->
 
 ## What is the Mathematics Subject GRE?
+
 - Different from the Math section of the *General* GRE
 - Required of graduate student applicants to many Math Ph.D. programs
+- 
