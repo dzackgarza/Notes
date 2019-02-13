@@ -24,7 +24,7 @@ presentation:
   - Multivariable
   - Differential Equations
 
-![enter image description here](https://ximera.osu.edu/mooculus/calculus2/surfaceArea/digInSurfaceArea-figure7.svg)
+![calculus](https://ximera.osu.edu/mooculus/calculus2/surfaceArea/digInSurfaceArea-figure7.svg)
 
 <!-- slide vertical=true-->
 - "Algebra" (25%)
