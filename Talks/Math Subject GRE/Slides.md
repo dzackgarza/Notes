@@ -32,6 +32,9 @@ presentation:
 # Discrete Mathematics
 
 <!-- slide -->
+# Number Theory
+
+<!-- slide -->
 # Abstract Algebra
 
 <!-- slide -->
