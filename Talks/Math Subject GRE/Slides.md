@@ -51,7 +51,7 @@ presentation:
 # Logistics
 
 - Multiple choice
-- 2 hours, 50m
+- 66 questions, 170m (2h
 
 <!-- slide -->
 # Single Variable Calculus
