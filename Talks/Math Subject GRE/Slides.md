@@ -183,6 +183,7 @@ presentation:
 <!-- slide -->
 # Topics: Discrete Mathematics
 <!-- slide vertical=true -->
+## Topics
 - Graphs, trees
 - Recurrence relations
 
@@ -192,6 +193,7 @@ presentation:
 <!-- slide -->
 # Topics: Number Theory
 <!-- slide vertical=true -->
+## Topics
 - Divisibility
 - Congruence
 - Prime factorization
