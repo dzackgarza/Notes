@@ -20,9 +20,12 @@ presentation:
 # Main Topics
 
 - Calculus (50%)
-  - Single variable
+  - Single Variable
   - Multivariable
+  - Differential Equations
 - Algebra (25%)
+  - Linear Algebra
+  - 
 - Mixed Topics (25%)
 
 <!-- slide -->
