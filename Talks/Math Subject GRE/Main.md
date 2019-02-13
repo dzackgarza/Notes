@@ -34,7 +34,7 @@ Imports content.md
 	- 170 minutes (2h 50m)
 	- Leaving around 154 seconds (~2.5 minutes) per problem
 	- Final score: $\Sigma_{i=1}^{66} \indicator{\text{Question } i \text{ is correct}}$
-	- Questions left blank are considered incorrect
+	- Questions left blank are considered incorrect, but no penalty for guessing.
 - Exam Day
 	- Must bring photo ID. Don't forget!!
 	- Not able to bring phone, backup, etc.
