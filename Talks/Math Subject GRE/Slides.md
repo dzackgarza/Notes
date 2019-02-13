@@ -160,6 +160,7 @@ presentation:
 - Determinant, inversion, trace
 - Vector spaces and subspaces
 - Rank-nullity
+- Computing nullspace, colspace, rowspace, eigenvalues/eigenvectors
 
 
 
