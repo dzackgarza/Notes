@@ -92,7 +92,8 @@ presentation:
 - Drill *a lot* of problems
 - Memorize formulas and definitions
 - Spaced repetition
-- Save practice exams
+- Save actual exams
+- Replicate exam conditions
 
 
 <!-- slide -->
