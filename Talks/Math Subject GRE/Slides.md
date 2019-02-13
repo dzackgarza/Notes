@@ -16,6 +16,8 @@ presentation:
 - Required of graduate student applicants to many Math Ph.D. programs
 - Tests a breadth of undergraduate topics
 
+![](./images/general_gre.png)
+
 <!-- slide -->
 # Main Topics
 
