@@ -162,6 +162,8 @@ presentation:
 - Rank-nullity
 - Computing nullspace, colspace, rowspace, eigenvalues/eigenvectors
 - Big list of equivalent conditions for invertibility
+- Projections onto subspaces
+- Diagonalizability and similarity
 - Canonical forms
 - Quadratic forms
 
