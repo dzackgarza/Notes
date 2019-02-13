@@ -11,7 +11,7 @@ presentation:
 <!-- slide -->
 # Agenda
 - Description of Mathematics Subject GRE
-- What topics it covers
+- Topics it covers
 - Exam logistics
 - Recommended resources
 - Study techniques/tips
