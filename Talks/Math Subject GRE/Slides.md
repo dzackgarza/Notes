@@ -65,6 +65,7 @@ presentation:
 	- GR 9367
 	- GR 8767
 	- GR 9768
+![](https://i3.ebkimg.com/previews/000/000890/000890393/000890393-hq-168-80.jpg)
 
 <!-- slide -->
 # Single Variable Calculus
