@@ -198,9 +198,19 @@ svc 1
 
 <!-- slide -->
 # Topics: Real Analysis
-- Properties of metric spaces
-- 
-
+- Properties of Metrics and Metric Spaces
+- The Cauchy-Schwarz Inequality
+- Definitions of Sequences and Series
+- Testing Convergence of a Series:
+	- Integral Test
+	- Ratio Test
+	- Root Test
+	- $p$ Test
+- Cauchy Sequences
+- Commuting limiting operations:
+	- $[\frac{\partial}{\partial x}, \int dx](f)$
+- Uniform and point-wise continuity
+- Lipschitz Continuity
 <!-- slide vertical=true -->
 svc 1
 
