@@ -66,7 +66,8 @@ Imports content.md
 - **Speed**
 	- With 2.5 minutes per question, being quick is absolutely vital.
 	- Quickly solving easy problems gives you more time on difficult problems, or time double check answers and/or be more careful on tricky problems.
-	- Benchmark: aim to be able to do most Calculus problems in <1 minute. Simple limits, derivatives, or integrals should be on the order of seconds at most.
+	- Benchmark: aim to be able to do most Calculus problems in <1 minute. 
+    	- Simple limits, derivatives, or integrals should be on the order of seconds at most.
 - Guessing:
 	- Blank answers are wrong answers, so blindly guessing has higher expected value than not answering at all.
 	- But note that because there are 5 choices, blindly guessing still has *negative expected value*!
