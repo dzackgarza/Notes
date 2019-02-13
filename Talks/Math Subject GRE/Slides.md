@@ -110,6 +110,10 @@ presentation:
 - Computing derivatives
 - Mean Value Theorem
 - Extreme Value Theorem
+- Rolle's Theorem
+- Implicit Differentiation
+- Related Rates
+- 
 
 
 
