@@ -139,6 +139,8 @@ presentation:
 - Vectors, div, grad, curl
 - Equations of lines, planes, paramaterized curves
   - And finding intersections thereof
+- Multivariable Taylor series
+- Computing linear approximations
 - 
 
 
