@@ -112,23 +112,68 @@ svc 1
 <!-- slide -->
 # Multivariable Calculus
 
+<!-- slide vertical=true -->
+svc 1
+
+
+
+
 <!-- slide -->
 # Linear Algebra
+
+<!-- slide vertical=true -->
+svc 1
+
+
 
 <!-- slide -->
 # Ordinary Differential Equations
 
+<!-- slide vertical=true -->
+svc 1
+
+
+
+
 <!-- slide -->
 # Topics: Discrete Mathematics
+
+<!-- slide vertical=true -->
+svc 1
+
+
+
 
 <!-- slide -->
 # Topics: Number Theory
 
+<!-- slide vertical=true -->
+svc 1
+
+
+
+
 <!-- slide -->
 # Topics: Abstract Algebra
+
+<!-- slide vertical=true -->
+svc 1
+
+
+
 
 <!-- slide -->
 # Topics: Real Analysis
 
+<!-- slide vertical=true -->
+svc 1
+
+
+
+
 <!-- slide -->
 # Topics: Complex Analysis
+
+<!-- slide vertical=true -->
+svc 1
+
