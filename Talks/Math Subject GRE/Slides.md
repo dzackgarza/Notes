@@ -162,7 +162,7 @@ svc 1
 <!-- slide -->
 # Ordinary Differential Equations
 <!-- slide vertical=true -->
-- $\sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)$
+- General solutions to $\sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)$
 
 
 
