@@ -157,7 +157,7 @@ presentation:
 <!-- slide vertical=true -->
 - Systems of equations
 - Gaussian elimination, REF, RREF
-- Determinant, trace
+- Determinant, inversion, trace
 - Vector spaces and subspaces
 - Rank-nullity
 
