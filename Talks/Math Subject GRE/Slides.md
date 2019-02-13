@@ -12,7 +12,7 @@ presentation:
 # Agenda
 - Description of Mathematics Subject GRE
 - What topics it covers
-- Some exam logistics
+- Exam logistics
 - Recommended resources
 - Study techniques/tips
 - Review of topics + sample problems
