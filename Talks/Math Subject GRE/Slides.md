@@ -156,7 +156,9 @@ presentation:
 # Linear Algebra
 <!-- slide vertical=true -->
 - Systems of equations
-- Gaussian elimination, RREF
+- Gaussian elimination, REF, RREF
+- Vector spaces and subspaces
+- Rank-nullity
 
 
 
