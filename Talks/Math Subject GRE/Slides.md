@@ -11,7 +11,8 @@ presentation:
 # Agenda
 - What the Mathematics Subject GRE is
 - What topics it covers
-- Various exam logistics
+- Some exam logistics
+- 
 
 <!-- slide -->
 
