@@ -86,6 +86,8 @@ presentation:
 <!-- slide -->
 # General Tips
 
+![](https://pm1.narvii.com/6764/9db97da1ae788b05dd789270d71cd209239e1870v2_hq.jpg)
+
 - Start early
 - Speed is important
 - Focus on lower div
@@ -95,6 +97,7 @@ presentation:
 - Save actual exams
 - Replicate exam conditions
 - Self care!!
+
 
 
 <!-- slide -->
