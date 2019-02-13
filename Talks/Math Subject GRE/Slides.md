@@ -87,7 +87,7 @@ presentation:
 # General Tips
 
 - Start early
-- 
+- Focus 
 
 
 <!-- slide -->
