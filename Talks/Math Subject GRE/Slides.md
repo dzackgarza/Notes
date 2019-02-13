@@ -48,6 +48,12 @@ presentation:
 ![analysis](https://pbs.twimg.com/media/C29j_1BXEAAa0PN.jpg)
 
 <!-- slide -->
+# Logistics
+
+- Multiple choice
+- 2 hours, 
+
+<!-- slide -->
 # Single Variable Calculus
 
 <!-- slide -->
