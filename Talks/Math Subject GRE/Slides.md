@@ -11,4 +11,4 @@ presentation:
 <!-- slide -->
 
 ## What is the Mathematics Subject GRE?
-- Different to the Math section of the *general* GRE
+- Different from the Math section of the *general* GRE
