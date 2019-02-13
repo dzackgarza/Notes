@@ -18,3 +18,21 @@ presentation:
 
 <!-- slide -->
 # Single Variable Calculus
+
+<!-- slide -->
+# Multivariable Calculus
+
+<!-- slide -->
+# Linear Algebra
+
+<!-- slide -->
+# Ordinary Differential Equations
+
+<!-- slide -->
+# Discrete Mathematics
+
+<!-- slide -->
+# Abstract Algebra
+
+<!-- slide -->
+# Single Variable Calculus
