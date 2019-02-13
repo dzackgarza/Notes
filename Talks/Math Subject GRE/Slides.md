@@ -118,7 +118,9 @@ presentation:
 - Computing Taylor expansions
 - Computing linear approximations
 
-
+<!-- slide vertical=true -->
+## Integrals
+- 
 
 
 <!-- slide -->
