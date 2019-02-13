@@ -156,7 +156,7 @@ presentation:
 # Linear Algebra
 <!-- slide vertical=true -->
 - Systems of equations
-- RowGaussian elimination, REF, RREF
+- Row operations, Gaussian elimination, REF, RREF
 - Determinant, inversion, trace
 - Vector spaces and subspaces
 - Rank-nullity
