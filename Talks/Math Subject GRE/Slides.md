@@ -156,7 +156,7 @@ presentation:
 # Linear Algebra
 <!-- slide vertical=true -->
 - Systems of equations
-- 
+- Gaussian elimination, RREF
 
 
 
