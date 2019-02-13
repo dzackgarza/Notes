@@ -94,6 +94,7 @@ presentation:
 - Spaced repetition
 - Save actual exams
 - Replicate exam conditions
+- Self care!!
 
 
 <!-- slide -->
