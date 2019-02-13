@@ -155,7 +155,8 @@ presentation:
 <!-- slide -->
 # Linear Algebra
 <!-- slide vertical=true -->
-svc 1
+- Systems of equations
+- 
 
 
 
