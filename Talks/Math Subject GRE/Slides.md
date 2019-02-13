@@ -211,6 +211,7 @@ svc 1
 	- $[\frac{\partial}{\partial x}, \int dx](f)$
 - Uniform and point-wise continuity
 - Lipschitz Continuity
+  
 <!-- slide vertical=true -->
 svc 1
 
