@@ -13,7 +13,8 @@ presentation:
 - What topics it covers
 - Some exam logistics
 - Recommended resources
-- 
+- Study techniques/tips
+- Mathematics topic review
 
 <!-- slide -->
 
