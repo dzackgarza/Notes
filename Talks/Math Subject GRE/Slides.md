@@ -142,6 +142,7 @@ presentation:
 - Multivariable Taylor series
 - Computing linear approximations
 - Lagrange Multipliers
+- Multivariable optimization
 - 
 
 
