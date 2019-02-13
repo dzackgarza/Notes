@@ -21,7 +21,7 @@ presentation:
 
 - Calculus (50%)
 - Algebra (25%)
-- 
+- Mixed Topics (25%)
 
 <!-- slide -->
 # Single Variable Calculus
