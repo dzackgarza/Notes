@@ -27,7 +27,7 @@ presentation:
 ![](./images/general_gre.png)
 
 <!-- slide -->
-# Main Topics
+# What topics does it cover?
 
 - Calculus (50%)
   - Single Variable
