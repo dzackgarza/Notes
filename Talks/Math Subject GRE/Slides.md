@@ -143,7 +143,10 @@ presentation:
 - Computing linear approximations
 - Lagrange Multipliers
 - Multivariable optimization
-- 
+- Arc lengths of curves
+- Line integrals
+- Green's Theorem
+- Stoke's Theorem
 
 
 
