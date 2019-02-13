@@ -113,6 +113,8 @@ presentation:
 - Rolle's Theorem
 - Implicit Differentiation
 - Related Rates
+- Optimization
+- Computing Taylor expansions
 - 
 
 
