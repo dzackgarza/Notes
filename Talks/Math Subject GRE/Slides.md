@@ -51,7 +51,7 @@ presentation:
 # Logistics
 
 - Multiple choice
-- 2 hours, 
+- 2 hours, 50m
 
 <!-- slide -->
 # Single Variable Calculus
