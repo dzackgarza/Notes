@@ -121,7 +121,9 @@ presentation:
 <!-- slide vertical=true -->
 ## Integrals
 - Riemann sum definition of the integral
-- The fundamental theorem of Calculus
+- The fundamental theorem of Calculus (both forms)
+- Computing integrals
+- 
 
 
 <!-- slide -->
