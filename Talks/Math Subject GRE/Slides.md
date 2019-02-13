@@ -136,7 +136,8 @@ presentation:
 # Multivariable Calculus
 
 <!-- slide vertical=true -->
-svc 1
+- Vectors, div, grad, curl
+- 
 
 
 
