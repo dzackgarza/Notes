@@ -162,9 +162,8 @@ svc 1
 
 <!-- slide -->
 # Ordinary Differential Equations
-
 <!-- slide vertical=true -->
-svc 1
+- 
 
 
 
@@ -172,7 +171,7 @@ svc 1
 <!-- slide -->
 # Topics: Discrete Mathematics
 <!-- slide vertical=true -->
-- 
+- Graphs, trees
 - Recurrence relations
 
 
