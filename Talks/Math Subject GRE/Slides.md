@@ -122,7 +122,8 @@ presentation:
 ## Integrals
 - Riemann sum definition of the integral
 - The fundamental theorem of Calculus (both forms)
-- Computing integrals
+- Computing antiderivatives
+- Computing definite integrals
 - 
 
 
