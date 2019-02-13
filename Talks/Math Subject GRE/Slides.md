@@ -136,6 +136,7 @@ presentation:
 # Multivariable Calculus
 
 <!-- slide vertical=true -->
+## Topics
 - Vectors, div, grad, curl
 - Equations of lines, planes, paramaterized curves
   - And finding intersections thereof
@@ -173,6 +174,7 @@ presentation:
 <!-- slide -->
 # Ordinary Differential Equations
 <!-- slide vertical=true -->
+## Topics
 - General solutions to $\sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)$
 
 
