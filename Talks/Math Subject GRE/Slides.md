@@ -163,7 +163,7 @@ svc 1
 <!-- slide -->
 # Ordinary Differential Equations
 <!-- slide vertical=true -->
-- $\sum \alpha_i y^{(i)}(x) = 0$
+- $\sum_{i=1}^n \alpha_i y^{(i)}(x) = 0$
 
 
 
