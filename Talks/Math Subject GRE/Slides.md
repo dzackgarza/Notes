@@ -29,7 +29,7 @@ presentation:
 # Ordinary Differential Equations
 
 <!-- slide -->
-# Discrete Mathematics
+# Topics: Discrete Mathematics
 
 <!-- slide -->
 # Number Theory
