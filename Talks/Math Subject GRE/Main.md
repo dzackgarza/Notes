@@ -2,7 +2,7 @@ GRE Workshop
 
 First Draft. January 19, 2019.
 
-Imports content.md.
+Imports content.md
 
 # What is the Math GRE?
 - Difference between General GRE and Subject GRE
