@@ -32,13 +32,13 @@ presentation:
 # Topics: Discrete Mathematics
 
 <!-- slide -->
-# Number Theory
+# Topics: Number Theory
 
 <!-- slide -->
-# Abstract Algebra
+# Topics: Abstract Algebra
 
 <!-- slide -->
-# Real Analysis
+# Topics: Real Analysis
 
 <!-- slide -->
-# Complex Analysis
+# Topics: Complex Analysis
