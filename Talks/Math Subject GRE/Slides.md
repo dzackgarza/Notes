@@ -14,7 +14,7 @@ presentation:
 - Some exam logistics
 - Recommended resources
 - Study techniques/tips
-- Mathematics topic review
+- Mathematics topic review + sample problems
 
 <!-- slide -->
 
