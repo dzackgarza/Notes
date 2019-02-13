@@ -207,7 +207,8 @@ svc 1
 # Topics: Point-Set Topology
 
 <!-- slide vertical=true -->
-- Connectedness, disconnected, totally disconnected spaces
+- Open/closed sets
+- Connected, disconnected, totally disconnected, etc
 
 
 
