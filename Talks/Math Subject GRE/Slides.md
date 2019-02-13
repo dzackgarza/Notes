@@ -1,7 +1,7 @@
 ---
 presentation:
   margin: 0.0
-  theme: blood.css
+  theme: moon.css
 ---
 
 <!-- slide -->
