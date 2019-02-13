@@ -33,7 +33,7 @@ Imports content.md
 	- 66 questions
 	- 170 minutes (2h 50m)
 	- Leaving around 154 seconds (~2.5 minutes) per problem
-	- Final score: $\Sigma_{i=1}^{66} \indicator{\text{correct}}$
+	- Final score: $\Sigma_{i=1}^{66} \indicator{\text{Question } i \text{ is correct}}$
 	- Questions left blank are considered incorrect
 - Exam Day
 	- Must bring photo ID. Don't forget!!
