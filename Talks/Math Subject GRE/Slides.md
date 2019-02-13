@@ -123,6 +123,7 @@ presentation:
 - Riemann sum definition of the integral
 - The fundamental theorem of Calculus (both forms)
 - Computing antiderivatives
+  - $u\dash$substitutions
   - 
 - Computing definite integrals
 
