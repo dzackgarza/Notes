@@ -86,6 +86,8 @@ presentation:
 <!-- slide -->
 # General Tips
 
+- 
+
 
 <!-- slide -->
 # Single Variable Calculus
