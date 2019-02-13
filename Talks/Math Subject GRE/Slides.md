@@ -52,6 +52,7 @@ presentation:
 
 - Multiple choice
 - 66 questions, 170 minutes
+- No downside to guessing
 
 <!-- slide -->
 # Single Variable Calculus
