@@ -23,6 +23,8 @@ presentation:
   - Single Variable
   - Multivariable
   - Differential Equations
+
+<!-- slide vertical=true-->
 - "Algebra" (25%)
   - Linear Algebra
   - Abstract Algebra 
