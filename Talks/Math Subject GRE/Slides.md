@@ -11,4 +11,4 @@ presentation:
 <!-- slide -->
 
 ## What is the Mathematics Subject GRE?
-- 
+- Not the same as the *general* GRE
