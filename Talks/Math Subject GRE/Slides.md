@@ -115,7 +115,7 @@ presentation:
 - Related Rates
 - Optimization
 - Computing Taylor expansions
-- 
+- Computing linear approximations
 
 
 
