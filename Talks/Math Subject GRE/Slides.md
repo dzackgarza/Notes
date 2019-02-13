@@ -1,6 +1,7 @@
 ---
 presentation:
   margin: 0.0
+  theme: white.css
 ---
 
 <!-- slide -->
