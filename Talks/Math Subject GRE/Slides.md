@@ -87,7 +87,8 @@ presentation:
 # General Tips
 
 - Start early
-- Focus 
+- Speed is important
+- 
 
 
 <!-- slide -->
