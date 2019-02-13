@@ -1,6 +1,6 @@
 ---
 presentation:
-  enableSpeakerNotes: true
+  margin: 0.0
 ---
 
 <!-- slide -->
