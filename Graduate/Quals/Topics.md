@@ -90,6 +90,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Sylow theorems and applications
 - unique factorization domains
 - units
+- Definitions of groups, rings, fields, and modules over a ring. Homomorphisms of these objects. Subgroups, normal subgroups, quotient groups. Cyclic groups, finite abelian groups (structure theorem). Ideals, prime and maximal and their quotients — basic examples Z, k[X], rings of algebraic integers. Field extensions, splitting fields of polynomials, normal extensions.
 
 
 ## Real Analysis
