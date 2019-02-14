@@ -188,6 +188,10 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Schwarz’s lemma
 - trigonometric functions
 
+## Topology
+- Open and closed sets, continuous functions. Connectedness, compactness, Hausdorff, normality. Metric spaces, Rn. Heine-Borel theorem.
+
+
 
 ---
 
