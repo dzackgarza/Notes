@@ -16,7 +16,8 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - line and surface integrals of scalar and vector functions; 
 - maxima and minima
 - Ordinary differential equations; 
-- Stokes’ theorems. 
+- Stokes’ theorem
+-  Differential of a smoothing mapping between open subsets in Euclidean spaces. Matrix of partial derivatives. Inverse and implicit functions. Multivariable Riemann integration.
 
 
 ## Linear Algebra
