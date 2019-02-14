@@ -5,7 +5,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 
 # Undergraduate / Prelim Level
 
-## Calculus
+## Calculus (Stewart)
 - chain rule; 
 - Derivatives of maps from $\RR^m\to\RR^n$ 
 - explicit solutions of simple equations
