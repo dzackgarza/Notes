@@ -58,6 +58,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Systems of linear equations
 - trace
 - Vector spaces
+- Finite dimensional vector spaces (over R) and linear maps between them – subspaces, quotient spaces, dimension, bases, matrix representations. Positive definite inner products, orthonormal bases, extensions of orthonormal subsets. Eigenvalues and eigenvectors for automorphisms. Characteristic polynomial.
 
 
 ## Algebra
