@@ -62,7 +62,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Finite dimensional vector spaces (over R) and linear maps between them – subspaces, quotient spaces, dimension, bases, matrix representations. Positive definite inner products, orthonormal bases, extensions of orthonormal subsets. Eigenvalues and eigenvectors for automorphisms. Characteristic polynomial.
 
 
-## Algebra
+## Algebra (Artin, Herstein)
 - automorphisms
 - cyclic groups
 - dihedral groups
