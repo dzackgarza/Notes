@@ -188,6 +188,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Rouché’s theorem. 
 - Schwarz’s lemma
 - trigonometric functions
+- Definition of holomorphic functions, Cauchy integral formula, power series representations of holomorphic functions, radius of convergence, meromorphic functions, residues.
 
 ## Topology
 - Open and closed sets, continuous functions. Connectedness, compactness, Hausdorff, normality. Metric spaces, Rn. Heine-Borel theorem.
