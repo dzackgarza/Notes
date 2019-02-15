@@ -1,0 +1,368 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[bookmarksopen, linktocpage]{hyperref}
+\setlength{\parindent}{0pt}
+
+\newcommand{\norm}[1]{\lVert#1\rVert} 		%Double vertical bars for norms
+\newcommand{\ip}[2]{\langle#1,#2\rangle}	%Inner product
+\newcommand{\vb}[1]{\mathbf{#1}}		%Bold vector
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+% Augmented matrices. Use like this:
+% \begin{pmatrix}[cc|c]
+
+\begin{document}
+\title{Differential Equations and Linear Algebra, Spring 2014 Notes}
+\author{Zack Garza}
+\maketitle
+\tableofcontents
+
+\chapter{Vector Spaces}
+Next Exam: April 2nd. Covers 4.6$\rightarrow$5.1.
+
+Remember: To show a set spans a space, show that an arbitrary element in that space can be expressed as a linear combination of the vectors in your set. This usually results in a linear system of equations -- as long as you can solve this system in terms of your vectors, it will be consistent.
+
+\section{Bases}
+\subsection{Determining a Basis}
+A set $S$ that forms a basis for a vector space $V$ must satisfy two conditions:
+\begin{enumerate}
+  \item $S$ is set of linearly independent vectors.
+  \item $S$ spans $V$.
+\end{enumerate}
+
+All bases for a given vector space $V$ have the same number of elements, and this is referred to as the
+\textit{dimension} of $V$ such that dim[$V$] = the number of elements in the basis.
+
+If the dimension is known, it is equal to the minimum number of vectors needed to span $V$, as well as the maximum number of linearly independent vectors that a set in $V$ can contain.
+
+\textbf{Does a set $S$ form a basis for a vector space $V$?}
+
+First, check for linear independence. If dim[$V$]=$n$ and $S$ contains $n$ linearly independent vectors, $S$ is guaranteed to form a basis for $V$.
+
+This means that given a set of vectors, we only have to shown linear dependence and that the number of elements matches the dimension of the space! So we only need to know their \textbf{linear independence} and the space's \textbf{dimension}. In other words, $n$ linearly independent vectors in $n$-dimensional space means, for free, we have a basis.
+
+Note: dim[$P_n$]$=n+1$.
+
+\textbf{}
+
+\subsubsection{For the subspaces of a given matrix}
+\textbf{Null space:}
+
+Suppose we are given a matrix, and want to examine the properties of its null space. Recall that the null space of a matrix $A$ is given by $\left\{ \mathbf{x}: A\mathbf{x} = \mathbf{0}\right\}$, and its dimension is equal to the number of free variables in ref(A).
+
+This is generally found by augmenting the matrix with $\mathbf{0}$ is using ERO to obtain its REF. Once a relationship between the free variables is found, construct a solution set of the form
+\begin{align*}
+S = \left\{ \mathbf{x}\in \mathbb{R}^n : x = a_1\mathbf{v_1} + a_2\mathbf{v_2} \cdots a_n\mathbf{v_n} \land a_1,a_2,\cdots a_n \in R \right\} = \text{span}\left\{ \text{something}\right\}
+\end{align*}
+
+At this point, it should be clear what the basis and dimensions are.
+
+\textbf{Row space:}
+
+A basis for the row space of a matrix $A$ is nothing more than the number of nonzero rows in ref($A$), which is a subspace of $\mathbb{R}^n$.
+
+\textbf{Column space:}
+
+A basis for the column space of a matrix $A$ consists of the column vectors with leading oness in rref($A$).
+
+
+
+\subsection{Extending a Basis}
+:o
+
+\section{Inner Product Spaces (4.11)}
+\textit{March 24, 2014}\\
+
+  \subsection{Axioms}
+    \noindent4 Axioms of an Inner Product
+    \begin{enumerate}
+      \item
+		$\ip{\vb{V_1}}{\vb{V_1}} >= 0$ and $\ip{\vb{V_1}}{\vb{V_1}}=0\iff\vb{V_1} = 0$
+
+		Check that the scalar result is positive or zero, and show that $\ip{\vb{A}}{\vb{A}} = 0$ forces the coefficients to be zero.
+      \item
+		Commutativity of $\bigodot$
+
+		$\ip{\vb{V_1}}{\vb{V_2}} = \ip{\vb{V_2}}{\vb{V_1}}$
+      \item
+		Associativity of scalar multiplication over $\bigodot$
+
+		$\ip{c\vb{V_1}}{\vb{V_2}} = c\ip{\vb{V_1}}{\vb{V_2}}$
+      \item
+		Associativity of $\bigoplus$ over $\bigodot$
+
+		$\ip{\vb{V_1}}{\vb{V_2} + \vb{V_3}} = \ip{\vb{V_1}}{\vb{V_2}} + \ip{\vb{V_1}}{\vb{V_3}}$
+    \end{enumerate}
+
+  \subsection{Orthogonality}
+    Two vectors $\vb{p}$ and $\vb{q}$ are defined to be orthogonal if $\ip{\vb{p}}{\vb{q}} = 0$.
+
+  \subsection{The Gram-Schmidt Process}
+    Given a basis
+    \begin{align*}
+      S = \left\{\mathbf{v_1, v_2, \cdots v_n}\right\},
+    \end{align*}
+
+    the Gram-Schmidt process produces a corresponding orthogonal basis
+    \begin{align*}
+      S' = \left\{\mathbf{u_1, u_2, \cdots u_n}\right\}
+    \end{align*}
+    that spans the same vector space as $S$.
+
+    $S'$ is found using the following pattern:
+    \begin{align*}
+    \mathbf{u_1} &= \mathbf{v_1} \\
+    \mathbf{u_2} &= \mathbf{v_2} - \text{proj}_{\mathbf{u_1}} \mathbf{v_2}\\
+    \mathbf{u_3} &= \mathbf{v_3} - \text{proj}_{\mathbf{u_1}} \mathbf{v_3} - \text{proj}_{\mathbf{u_2}} \mathbf{v_3}\\
+    \end{align*}
+
+    where
+    \begin{align*}
+      \text{proj}_{\mathbf{u}} \mathbf{v} = (\text{scal}_{\mathbf{u}} \mathbf{v})\frac{\mathbf{u}}{\mathbf{\norm{u}}}
+      = \frac{\langle \mathbf{v,u} \rangle}{\norm{\mathbf{u}}}\frac{\mathbf{u}}{\mathbf{\norm{u}}}
+      = \frac{\ip{\vb{v}}{\vb{u}}}{\norm{\vb{u}}^2}\vb{u}
+    \end{align*}
+    is a vector defined as the \textit{orthogonal projection of $\vb{v}$ onto $\vb{u}$.}
+
+      \begin{figure}[htpb]
+      \begin{centering}
+      \begin{center}
+      \includegraphics[width=\linewidth]{./projection.png}
+      \label{fig:projection}
+      \caption{Orthogonal projection of $\vb{v_2}$ onto $\vb{u_1}$}
+      \end{center}
+      \par\end{centering}
+      \end{figure}
+
+    The orthogonal set $S'$ can then be transformed into an orthonormal set $S''$ by simply dividing the vectors $s\in S'$ by their magnitudes. The usual definition of a vector's magnitude is
+    \begin{align*}
+    \norm{\vb{a}} = \sqrt{\ip{\vb{a}}{\vb{a}}} \text{ and } \norm{\vb{a}}^2 = \ip{\vb{a}}{\vb{a}}
+    \end{align*}
+
+    As a final check, all vectors in $S'$ should be orthogonal to each other, such that
+    \begin{align*}
+    \ip{\vb{v_i}}{\vb{v_j}} = 0 \text{ when } i \neq j
+    \end{align*}
+
+    and all vectors in $S''$ should be orthonormal, such that
+    \begin{align*}
+    \ip{\vb{v_i}}{\vb{v_j}} = \delta_{ij}
+    \end{align*}
+\subsection{Types of Questions}
+\begin{enumerate}
+	\item
+		\textit{Is a given set of vectors an orthogonal set?}
+
+		This is only the case if the inner product of every vector with every other vector is zero.
+
+	\item
+		\textit{Show a set of vectors is orthonormal (or force it to be)}
+
+		Take the norm of the vector (i.e., the square root of its own inner product). If it is 1, it is a unit vector. Otherwise, divide the vector by its norm to create a an orthonormal set.
+\end{enumerate}
+
+
+\section{Dimension Counting: The Rank-Nullity Theorem}
+  Let $A$ be an $m\times n$ matrix, then
+  \begin{align*}
+    \text{rank}(A) + \text{nullity}(A) = n \text{ (Number of columns)}
+  \end{align*}
+
+  Similarly,
+  \begin{align*}
+   \text{dim[rowspace}(A)] = \text{dim[colspace}(A)] = \text{rank}(A)
+  \end{align*}
+  However, the row space and column space are subspaces of different vector spaces.
+
+
+
+\chapter{Linear Transformations}
+%Define mappings
+
+\textbf{Definition: } A mapping $T: V\mapsto W$ is said to be a \textit{linear transformation} if the following properties hold:
+\begin{align*}
+ T(\vb{u} + \vb{v}) &= T(\vb{u}) + T(\vb{u}) \\
+ T(c\vb{v}) &= cT(\vb{v})
+\end{align*}
+
+\textbf{Definition: } Let $T: V\mapsto W$ be a linear transformation from one vector space to another, then
+\begin{align*}
+ \text{kernel}(T)=\left\{\vb{v}\in V : T(\vb{v}) = \vb{0}_w\right\}
+\end{align*}
+The kernel of $T$ is a subspace of $V$, and every vector in it is mapped to the zero vector in $W$. Defining $A$ as a linear transformation matrix, the kernel is identical to the solution set to $A\vb{x} = \vb{0}$.
+
+\textbf{Definition:} Similarly, the subset of $W$ consisting of all transformed vectors is denoted the range of $T$ and is defined as
+\begin{align*}
+	\text{Rng}(T) = \left\{T(\vb{v}):\vb{v} \in V\right\}
+\end{align*}
+The range of $T$ is instead a subspace of $W$ into which the transformations are mapped.
+
+
+For any matrix transformation $T:\mathbb{R}^n \mapsto \mathbb{R}^n$ given by an $m \times n$ matrix,
+\begin{align*}
+	\text{Ker}(T) = \text{nullspace}(A) \\
+	\text{Rng}(T) = \text{colspace}(A).
+\end{align*}
+
+\textbf{Theorem}: The General Rank-Nullity Theorem
+\begin{align*}
+	\text{dim[Ker($T$)] + dim[Rng($T$)] = dim[$V$]}.
+\end{align*}
+
+Notes:
+
+It is common to want to know the range and kernel of a specific linear transformation $T$. $T$ can be given in many ways, but a general strategy for deducing these properties involves:
+\begin{enumerate}
+	\item Express an arbitrary vector in $V$ as a linear combination of its basis vectors, and set it equal to an arbitrary vector in $W$.
+	\item Use the linear properties of $T$ to make a substitution from known transformations
+	\item Find a restriction or relation given by the constants of the initial linear combination.
+\end{enumerate}
+
+\textbf{Definition:} A linear transformation is said to be
+\begin{enumerate}
+	\item \textbf{one-to-one} if whenever $\vb{v_1} \neq \vb{v_2}, T(\vb{v_1}) \neq T(\vb{v_2})$.
+	\item \textbf{onto} if every $w \in W$ is the image under $T$ of at least one vector in $V$.
+\end{enumerate}
+
+\textbf{Theorem:} A given linear transformation is:
+\begin{enumerate}
+	\item one-to-one $\iff$ Ker$(T) = \left\{0\right\}$
+	\item onto $\iff$ Rng$(T) = W$.
+\end{enumerate}
+
+\textit{Corollary:}
+\begin{enumerate}
+	\item If $T$ is one-to-one, then dim[$V$] $\leq$ dim[$W$].
+	\item If $T$ is onto, then dim[$V$] $\geq$ dim[$W$].
+	\item If $T$ is both, then dim[$V$] = dim[$W$], and a transformation $T^{-1}$ exists, and the two spaces are isomorphic.
+	\item If dim[$V$] = dim[$W$], $T$ is one-to-one $\iff$ $T$ is onto.
+\end{enumerate}
+These are often useful in the contrapositive.
+
+\textbf{Definition: }Inverse Functions. $T_2 = T_1^{-1}$ means that the following relationship holds:
+\begin{align*}
+	(T_1T_2)\vb{v} = (T_2T_1)\vb{v} = \vb{v}
+\end{align*}
+
+
+\textbf{Definition:} A map between vector spaces is said to be an \textit{isomorphism} if it is an invertible, linear map. \\ \\
+
+\textit{Showing a linear transformation is one-to-one: }Simply show that the kernel only contains $\vb{0}$.
+
+\textit{Showing a linear transformation is onto: } Use the generalized rank nullity theorem. If dim[Rng($T$)] = dim[$V$], then Rng($T$) = $V$ and $T$ is onto. Useful fact: If $W$ is a subspace of $V$ with the same dimension, $W$ and $V$ are the same thing.
+
+\textit{Showing an inverse map exists: } Show the map is one-to-one and onto. In other words, that the kernel is empty and the dimension of the range is the dimension of the codomain.
+
+\section{Examples}
+\begin{enumerate}
+	\item Show that if $T_1$ and $T_2$ are both injective, so is the composition ($T_2T_1$).
+
+	\textit{Solution: }
+	Goal: Show the kernel of the composition is the singleton set containing the zero vector.
+	\begin{enumerate}
+		\item Suppose we have $v_1 \in \text{Ker}(T_2T_1).$
+		\item Then $(T_2T_1)(v_1) = 0 \Rightarrow T_2(T_1(v_1)) = 0.$
+		\item Since $T_2$ is onto, $T_1(v_1) = 0$.
+		\item Use assumptions to tracing this back, showing the only vector in the kernel is $\vb{0}$.
+	\end{enumerate}
+
+	\item Show that if the two maps are both surjective, so is the composition.
+
+	\textit{Solution: }
+	Goal: Show for every vector in $V_3$, there has to exist a vector in $V_1$ that can get you there!
+\end{enumerate}
+
+\chapter{Eigenthings}
+Nada!
+
+\chapter{Applications to Differential Equations}
+\section{Linear Equations of Order n}
+The standard form of such equations is
+\begin{align*}
+	y^{(n)} + a_1y^{(n-1)} + a_2y^{(n-2)} + \cdots +a_ny'' + a_{n-1}y' + y = F(x).
+\end{align*}
+
+All solutions will be the sum of the solution to the associated homogeneous equation and a single particular solution.
+
+In the homogeneous case, examine the discriminant of the characteristic polynomial. Three cases arise:
+\begin{enumerate}
+	\item $D>0 \Rightarrow$ 2 Real solutions, $c_1e^{r_1x} + c_2e^{r_2x}$
+	\item $D=0 \Rightarrow$ 1 Real, 1 Complex, $(c_1 +c_2x)e^{r_1x}$
+	\item $D<0 \Rightarrow$ 2 Complex, $e^{ax}(c_1\cos bx + c_2\sin bx)$
+\end{enumerate}
+That is, every real root contributes a term of $ce^{rx}$, while a multiplicity of $m$ multiplies the solution by a polynomial in $x$ of degree $m-1$.
+
+Every pair of complex roots contributes a term $ce^r(a\cos \omega x + b\sin \omega x)$, where $r$ is the real part of the roots and $\omega$ is the complex part.
+
+In the nonhomogeneous case, assume a solution in the most general form of $F(x)$, and substitute it into the equation to solve for constant terms. For example,
+\begin{enumerate}
+	\item $F(x) = P(x^n) \Rightarrow y_p = a+bx+cx^2+\cdots+(n+1)x^n$
+	\item $F(x) = e^x \Rightarrow y_p = Ae^x$
+	\item $F(x) = A\cos (\omega x) \Rightarrow y_p = a\cos(\omega x) + b\sin(\omega x)$
+\end{enumerate}
+
+\subsection{Annihilators}
+Use to reduce a nonhomogeneous equation to a homogeneous one as a polynomial in the operator $D$.
+\begin{enumerate}
+	\item $(D-a) \Rightarrow e^{ax}$
+	\item $(D-a)^{k+1} \Rightarrow x^k e^{ax}, x^{k-1}e^{ax}, \cdots, e^{ax}$
+	\item $D^{k+1} \Rightarrow x^k, x^{k-1}, \cdots,C$
+	\item $D^2-2aD+a^2+b^2 \Rightarrow e^{ax}\cos(bx), e^{ax}\sin(bx)$
+	\item $(D^2-2aD+a^2+b^2)^{k+1} \Rightarrow x^k e^{ax}\cos(bx), x^{k-1} e^{ax}\cos(bx), x^k e^{ax}\sin(bx), x^{k-1}e^{ax}\sin(bx),\cdots$
+\end{enumerate}
+
+\subsection{Complex Solutions}
+$F(x)$ of the form $e^{ax}sin(kx)$ can be rewritten as $e^{(a+ki)x}$
+
+
+\chapter{Laplace Transforms}
+
+Definition:
+\begin{equation}
+	L[f(t)] = L[f] =\int_0^\infty e^{-st}f(t)dt = F(s).
+\end{equation}
+
+\begin{enumerate}
+	\item $L[e^{at}] = \frac{1}{s-a}$
+	\item $L[t^n] = \frac{n!}{s^{n+1}}$
+	\item $L[1] = \frac{1}{s}$
+	\item $L[\cosh(at)] = \frac{s}{s^2-a^2}$
+	\item $L[\sinh(at)] = \frac{a}{s^2-a^2}$
+	\item $L[\cos(at)]= \frac{s}{s^2+a^2}$
+	\item $L[\sin(at)]= \frac{a}{s^2+a^2}$
+	\item $L[y'] = sL[y] + y(0)$
+	\item $L[y''] = s^2L[y] - sy(0) - y'(0)$
+\end{enumerate}
+
+Theorem: The First Shifting Theorem states
+\begin{equation}
+	L[e^{at} f(t)] = \int_0^\infty e^{(a-s)}f(t)dt = F(s-a),
+\end{equation}
+
+or that a constant shift of $a$ adds a factor of $e^{at}$ under an inverse Laplace transformation.
+
+The general technique for solving differential equations with Laplace Transforms:
+\begin{enumerate}
+	\item Take the Laplace Transform of all terms on both sides.
+	\item Solve for $L[y]$ in terms of $s$.
+	\item Attempt an inverse Laplace Transformations
+	\begin{enumerate}
+		\item This may involve partial fraction decomposition, completing the square, and splitting numerators to match terms with known inverse transformations.
+	\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+\end{document}
