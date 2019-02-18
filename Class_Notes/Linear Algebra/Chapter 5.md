@@ -225,8 +225,8 @@ The matrix $R$ can then be written as
 $$
 \begin{bmatrix}
 \inner{\vector u_1}{\vector x_1} & \inner{\vector u_1}{\vector x_2} & \inner{\vector u_1}{\vector x_3} & \cdots & \\
-0 & 1 & 1 & \cdots & \\
-0 & 0 & 1 & \cdots & \\
+0 & \inner{\vector u_2}{\vector x_2} & \inner{\vector u_2}{\vector x_3} & \cdots & \\
+0 & 0 & \inner{\vector u_3}{\vector x_3} & \cdots & \\
 \vdots & \vdots & \vdots & \ddots \\
 \end{bmatrix}
 $$
