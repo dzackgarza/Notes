@@ -103,6 +103,7 @@ A^T &:  \RR^m \to \RR^n
 \end{align*}$$
 
 We have the following decompositions:
-$$
-$$
+$$\begin{align*}
+\RR^n \cong \nullspace
+\end{align*}$$
 
