@@ -178,7 +178,7 @@ $$
 [\vector x]_\mathcal{B} = \vector c \definedas [c_1, c_2, \cdots, c_n]^T.
 $$
 
-This allows us to rewrite the projection matrix 
+This allows us to rewrite the projection matrix onto 
 
 **The Algorithm**
 
