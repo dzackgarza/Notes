@@ -141,6 +141,6 @@ $$\begin{align*}
 
 as well as the adjoint formula
 $$
-\inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}$
+\inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}
 $$
 
