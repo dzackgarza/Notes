@@ -41,7 +41,7 @@ QQ^T = I \implies &\text{The columns of } Q \text { are orthogonal,} \\
 Q^TQ = I \implies &\text{The rows of } Q \text{ are orthogonal.}
 \end{align*}$$
 
-Another general formula of use is
+Another useful formula is
 $$
 \norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + 2\inner{\vector x}{\vector y} + \norm{\vector y}^2,
 $$
