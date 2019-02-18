@@ -12,4 +12,7 @@ $$
 \norm {\vector x} = \sqrt{\inner{\vector x}{\vector x}}
 $$
 
-We can also use 
+We can define a notion of angle:
+$$
+\inner{\vector x}{\vector y} = \norm \vector x
+$$
