@@ -36,10 +36,10 @@ $$
 Note that this makes the zero vector orthogonal to everything.
 
 Given a notion of orthogonality for vectors, we can extend this to matrices. A square matrix is said to be orthogonal iff $QQ^T = Q^TQ = I$. For rectangular matrices, we have the following characterizations:
-$$
-QQ^T = I \implies \text{The columns of } Q \text { are orthogonal,} \\
-Q^TQ = I \implies \text{The rows of } Q \text{ are orthogonal.}
-$$
+$$\being{align*}
+QQ^T = I \implies &\text{The columns of } Q \text { are orthogonal,} \\
+Q^TQ = I \implies &\text{The rows of } Q \text{ are orthogonal.}
+\end{align*}$$
 
 Another general formula of use is
 $$
