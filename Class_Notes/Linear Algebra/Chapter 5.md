@@ -12,6 +12,12 @@ $$
 \norm {\vector x} = \sqrt{\inner{\vector x}{\vector x}},
 $$
 
+which has the often useful alternative formulation
+
+$$
+\
+$$
+
 We can define a notion of angle:
 $$
 \inner{\vector x}{\vector y} = \norm{\vector x} \norm{\vector y} \cos\theta_{x,y}
