@@ -171,3 +171,5 @@ and we find that
 $$
 [\vector x]_\mathcal{B} = \vector c \definedas [c_1, c_2, \cdots, c_n]^T.
 $$
+
+**The Algorithm**
