@@ -122,6 +122,8 @@ From this, we get the equation
 $$
 A^T \vector r = \vector 0 \\
 \implies A^T(\vector b - A \tilde{\vector x}) = \vector 0\\
-\implies A^T
+\implies A^TA\tilde{\vector x} = A^T \vector b
 $$
+
+If $A$ has
 
