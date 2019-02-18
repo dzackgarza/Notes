@@ -15,4 +15,5 @@ $$
 We can define a notion of angle:
 $$
 \inner{\vector x}{\vector y} = \norm{\vector x} \norm{\vector y} \cos\theta_{x,y}
+\implies \cos \theta_{x,y} \definedas \frac{\norm{\vector x}}{\norm{\vector y}}
 $$
