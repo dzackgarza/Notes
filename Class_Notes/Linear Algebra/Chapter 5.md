@@ -178,11 +178,11 @@ Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis 
 
 First define 
 $$
-N: \RR^n \selfmap \\
+N: \RR^n \to S^{n-1} \\
 x \mapsto \frac {x} {\norm{x}}
 $$
 
-which projects a vector onto the unit sphere
+which projects a vector onto the unit sphere in $\RR^n$ by normalizing. Then,
 
 $$\begin{align*}
 u_1 = \hat x_1 \\
