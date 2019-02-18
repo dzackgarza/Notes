@@ -132,5 +132,5 @@ $$
 \tilde{\vector x} = (A^TA)^{-1}A^T \vector b \qed
 $$
 
-These equations can also be derived explicitly using Calculus
+These equations can also be derived explicitly using Calculus applied to matrices, vectors, and inner products. 
 
