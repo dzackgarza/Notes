@@ -226,7 +226,9 @@ $$r_{ij} = \begin{cases}
 \inner{\vector u_i}{\vector x_j}, & i\leq j, \\
 0, & \text{else}.
 \end{cases}$$
-$$
+
+Explicitly, this yields the matrix
+$$R = 
 \begin{bmatrix}
 \inner{\vector u_1}{\vector x_1} & \inner{\vector u_1}{\vector x_2} & \inner{\vector u_1}{\vector x_3} & \cdots & \\
 0 & \inner{\vector u_2}{\vector x_2} & \inner{\vector u_2}{\vector x_3} & \cdots & \\
