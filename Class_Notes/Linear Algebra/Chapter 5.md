@@ -121,7 +121,7 @@ Geometrically, the solution is given by projecting $\vector b$ onto the column s
 From this, we get the equation
 $$
 A^T \vector r = \vector 0 \\
-\implies A^T(\vector b - A \tilde{\vector x}) = \vector 0\\
+\implies A^T(A \tilde{\vector x} - \vector b) = \vector 0\\
 \implies A^TA\tilde{\vector x} = A^T \vector b,
 $$
 
