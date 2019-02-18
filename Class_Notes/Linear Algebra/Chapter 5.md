@@ -136,6 +136,11 @@ These equations can also be derived explicitly using Calculus applied to matrice
 $$\begin{align*}
 \dd{}{\vector x} \inner{\vector x}{\vector a} &= \vector a \\
 \dd{}{\vector x} \inner{\vector x}{\vector x} = \dd{}{\vector x} \norm{\vector x}^2 &= 2\vector x\\
-\dd{}{\vector x} \inner{\vector x}{\vector A\vector x} &= asdsa
+\dd{}{\vector x} \inner{\vector x}{\vector A\vector x} &= (A+A^T)\vector x
 \end{align*}$$
+
+as well as the adjoint formula
+$$
+\inner{A\vector x}{\vector x} = \inner{
+$$
 
