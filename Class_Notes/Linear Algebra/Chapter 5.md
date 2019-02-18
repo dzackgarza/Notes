@@ -174,4 +174,4 @@ $$
 
 **The Algorithm**
 
-Given 
+Given the set $\theset{\vector x_i}
