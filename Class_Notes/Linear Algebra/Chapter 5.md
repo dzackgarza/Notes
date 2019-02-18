@@ -183,7 +183,7 @@ $$
 P_S = Q(Q^TQ)^{-1}Q^T.
 $$
 
-Since $Q$ has orthogonal columns and thus satisfies $QQ^T = I$, this simplifies to
+Since $Q$ has orthogonal columns and satisfies $QQ^T = I$, this simplifies to
 $$
 P_S = QQ^T.
 $$
