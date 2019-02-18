@@ -74,6 +74,8 @@ $$
 P_S(\vector v) = \sum_{i=1}^k \inner{\vector v}{\hat {\vector s_i}}\hat{\vector s_i }
 $$
 
+This can be computed 
+
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
 S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.
