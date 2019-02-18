@@ -68,3 +68,5 @@ To find the distance between a point $\vector a$ and a plane, we need only proje
 $$
 d = \inner{\vector a}{\vector n}
 $$
+
+Given a subspace $S \subseteq V$, we define its **orthogonal complement**
