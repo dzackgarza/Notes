@@ -149,5 +149,7 @@ $$
 \dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0
 $$.
 
-## Gram-Schmidt
+##Gram-Schmidt
+
+The general setup here
 
