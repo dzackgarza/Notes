@@ -174,7 +174,13 @@ $$
 
 **The Algorithm**
 
-Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis $\theset{\vector u_i}$ iteratively as follows. Let $N$ be 
+Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis $\theset{\vector u_i}$ iteratively as follows. 
+
+First define 
+$$
+N: \RR^n \selfmap
+x \mapsto \frac x \norm{x}
+$$
 
 $$\begin{align*}
 u_1 = \hat x_1 \\
