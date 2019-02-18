@@ -74,12 +74,12 @@ $$
 P_S(\vector v) = \sum_{i=1}^k \inner{\vector v}{\hat {\vector s_i}}\hat{\vector s_i }
 $$
 
-This can be computed by forming the change-of-basis matrix $S$, and then forming the matrix operator
+This can be computed by forming the change-of-basis matrix $S$, and then forming the matrix operator[^1]
 $$
 P_S = S(S^T S)^{-1}S^T.
-$$[^1]
+$$
 
-[^projmatrix: For a derivation of this formula, see the section on least-squares approximations.]
+[^1: For a derivation of this formula, see the section on least-squares approximations.]
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
