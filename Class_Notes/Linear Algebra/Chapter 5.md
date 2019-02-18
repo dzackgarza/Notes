@@ -26,4 +26,7 @@ $$
 
 where $\theta_{x,y}$ denotes the angle between the vectors $\vector x$ and $\vector y$.
 
-Note that $\cos \theta=0$ exactly when $\theta = \pm \frac \pi 2$. We can thus can declare two vectors to be **orthogonal** exactly in this case, which occurs when $\inner{\vector x}
+Note that $\cos \theta=0$ exactly when $\theta = \pm \frac \pi 2$. We can thus can declare two vectors to be **orthogonal** exactly in this case:
+$$
+\vector x \perp \vector y \iff \inner{\vector x}{\vector y} = 0
+$$
