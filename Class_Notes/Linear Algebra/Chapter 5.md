@@ -35,8 +35,10 @@ $$
 
 Another general formula of use is
 $$
-\norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + 2\inner{\vector x}{\vector y} + \norm{\vector y}^2 
+\norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + 2\inner{\vector x}{\vector y} + \norm{\vector y}^2,
 $$
+
+and so when $\vector x \perp \vector y$, we have $\norm{\vector x + \vector y}^2 = \normP\vector x}^2 + \norm{\vector y}^2$
 
 ## Projections
 With an inner product in hand and a notion of orthogonality, we can define a notion of **orthogonal projection** of one vector onto another, and more generally of a vector onto a subspace spanned by multiple vectors.
