@@ -213,4 +213,7 @@ In words, at each stage, we take one of the original vectors $\vetor x_i$, then 
 **The QR Decomposition**
 Gram-Schmidt is often computed to find an orthonormal basis for, say, the range of some matrix $A$. With a small modification to this algorithm, we can write $A = QR$ where $R$ is upper triangular and $Q$ has orthogonal columns.
 
-Why is this useful? One reason is that this also allows for a particularly simple expression of least-squares solutions. If $A=QR$, then a bit of algebraic manipulation shows that $
+Why is this useful? One reason is that this also allows for a particularly simple expression of least-squares solutions. If $A=QR$, then a bit of algebraic manipulation will show that 
+$$
+\tilde{\vector x} = R^{-1}Q^T\vector b
+$$
