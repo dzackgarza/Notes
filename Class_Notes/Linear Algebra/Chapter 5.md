@@ -39,6 +39,7 @@ With an inner product in hand and a notion of orthogonality, we can define a not
 
  **Figure Here**
 
-We notice that whatever $p$ is, it will in the direction of $\vector y$, and thus $\vector p = \lambda \hat {\vector y}$ for some scalar $\lambda$, where in fact $\lambda = \norm {\vector p}$ since $\norm{\hat\vector y } = 1$.
- We can then form a "residual" vector $\vector r = \vector x - \vector p$
+We notice that whatever $p$ is, it will in the direction of $\vector y$, and thus $\vector p = \lambda \hat {\vector y}$ for some scalar $\lambda$, where in fact $\lambda = \norm {\vector p}$ since $\norm{\hat{\vector y}} = 1$.
+
+We can then form a "residual" vector $\vector r = \vector x - \vector p$
  
