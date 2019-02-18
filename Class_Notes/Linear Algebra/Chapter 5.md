@@ -180,9 +180,10 @@ $$
 
 This also allows us to simplify projection matrices. Supposing that $A$ has orthonormal columns and letting $S$ be the column space of $A$, recall that the projection onto $S$ is defined by
 $$
-P_S = Q(Q^TQ)^{-1}Q^T,
+P_S = Q(Q^TQ)^{-1}Q^T.
 $$
-and noting that $Q$ has orthogonal columns and thus satisfies $QQ^T = I$, this simplifies to
+
+Since $Q$ has orthogonal columns and thus satisfies $QQ^T = I$, this simplifies to
 $$
 P_S = QQ^T.
 $$
