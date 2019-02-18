@@ -74,7 +74,10 @@ $$
 P_S(\vector v) = \sum_{i=1}^k \inner{\vector v}{\hat {\vector s_i}}\hat{\vector s_i }
 $$
 
-This can be computed by forming the change-of-basis matrix $S$,
+This can be computed by forming the change-of-basis matrix $S$, and then forming the matrix operator
+$$
+P_S = 
+$$
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
