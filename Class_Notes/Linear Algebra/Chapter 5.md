@@ -98,7 +98,7 @@ One important property of projections is that for any vector $\vector v$ and for
 
 Given a matrix $A \in \mathrm{Mat}(m, n)$, and noting that
 $$\begin{align*}
-A: & \RR^n \to \RR^m,\\
-A^T: & \RR^m \to \RR^n
+A &: \RR^n \to \RR^m,\\
+A^T &:  \RR^m \to \RR^n
 \end{align*}$$
 
