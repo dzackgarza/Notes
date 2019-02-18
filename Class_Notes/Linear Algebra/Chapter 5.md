@@ -195,6 +195,6 @@ u_k &= N(\vector x_k - \sum_{i=1}^{k-1} \inner{\vector x_k}{\vector u_i}\vector 
 In words, at each stage, we take one of the original vectors $\vetor x_i$, then subtract off its projections onto all of the $\vector u_i$ we've created up until that point. This leaves us with only the component of $\vector x_i$ that is orthogonal to the span of the other $\vector u_i$, and we then normalize to ensure it has norm 1.
 
 **The QR Decomposition**
-Gram-Schmidt is often computed to find an orthonormal basis for, say, the range of some matrix $A$. With a small modification to this algorithm, we can write $A = QR$ where $R$ is upper triangular and $Q$ is orthogonal.
+Gram-Schmidt is often computed to find an orthonormal basis for, say, the range of some matrix $A$. With a small modification to this algorithm, we can write $A = QR$ where $R$ is upper triangular and $Q$ has orthogonal columns.
 
 Why is this useful? One reason is that as long as $A$ has orthogonal columns, then it is full rank and thus invertible. But since $A = QR$ and $\det A = \det QR = \det Q \det R \neq 0$, both $Q$ and $R$ are nonsingular as well, and rather easy to invert. Since $Q$ will have 
