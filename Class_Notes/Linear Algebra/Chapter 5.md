@@ -205,7 +205,7 @@ Gram-Schmidt is often computed to find an orthonormal basis for, say, the range 
 
 Why is this useful? One reason is that as long as $A$ has orthogonal columns, then it is full rank and thus invertible. But since $A = QR$ and $\det A = \det QR = \det Q \det R \neq 0$, both $Q$ and $R$ are nonsingular as well, and rather easy to invert. 
 
-It also simplifies projection matrices. Letting $S$ be the column space of $A$, recall that the projection onto $S$ is defined by
+It also simplifies projection matrices. Letting $S$ be the column space of $A$, where $A$ has columns consisting of  recall that the projection onto $S$ is defined by
 $$
 P_S = Q(Q^TQ)^{-1}Q^T,
 $$
