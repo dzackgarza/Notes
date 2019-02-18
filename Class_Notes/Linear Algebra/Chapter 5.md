@@ -17,3 +17,6 @@ $$
 \inner{\vector x}{\vector y} = \norm{\vector x} \norm{\vector y} \cos\theta_{x,y}
 \implies \cos \theta_{x,y} \definedas \frac{\inner{\vector x}{\vector y}}{\norm{\vector x} \norm{\vector y}} = \inner{\hat{\vector x}}{\hat{\vector y}}
 $$
+
+where $\theta_{x,y}$ denotes the angle between the vectors $\vector x$ and $\vector y$.
+
