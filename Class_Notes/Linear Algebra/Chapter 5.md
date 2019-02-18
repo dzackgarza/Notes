@@ -158,4 +158,6 @@ B[\vector x]_\mathcal{B} = [\vector x]_{\mathcal{E}}
 $$
 
 But to change from $\mathcal{E}$ to $\mathcal{B}$ requires computing $B^{-1}$, which acts on vectors in the standard basis according to
-
+$$
+B^{-1}[\vector x]_\mathcal{E} = [\vector x]_{\mathcal{B}}
+$$
