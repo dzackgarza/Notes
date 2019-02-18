@@ -224,7 +224,7 @@ The matrix $R$ can then be written as
 
 $$r_{ij} = \begin{cases}
 \inner{\vector u_i}{\vector x_j}, & i\leq j, \\
-0 & \text{else}.
+0, & \text{else}.
 \end{cases}$$
 $$
 \begin{bmatrix}
