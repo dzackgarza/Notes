@@ -162,4 +162,4 @@ $$
 B^{-1}[\vector x]_\mathcal{E} = [\vector x]_{\mathcal{B}}
 $$
 
-If, on the other hand, the $\vector b_i$ were orthogonal, it is the case that $B{-1} = B^T$
+If, on the other hand, the $\vector b_i$ are orthonormal, it is the case that $B{-1} = B^T$
