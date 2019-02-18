@@ -218,4 +218,4 @@ $$
 \tilde{\vector x} = R^{-1}Q^T\vector b.
 $$
 
-How does it work? You simply perform Gram-Schmidt to obtain $\theset{\vector u_i}$, then 
+How does it work? You simply perform Gram-Schmidt to obtain $\theset{\vector u_i}$, then $Q = [\vector u_1, \vector u_2, \cdots ]$.
