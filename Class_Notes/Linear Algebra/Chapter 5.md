@@ -35,7 +35,8 @@ $$
 
 Note that this makes the zero vector orthogonal to everything.
 
-Given a notion of orthogonality for vectors, we can extend this to matrices. 
+Given a notion of orthogonality for vectors, we can extend this to matrices. A square matrix is said to be orthogonal iff 
+
 
 Another general formula of use is
 $$
