@@ -39,5 +39,5 @@ With an inner product in hand and a notion of orthogonality, we can define a not
 
  **Figure Here**
 
-We notice that whatever $p$ is, it will be along $\vector y$ and thus we will have $\vector p = \lambda \vector y$ for some scalar $\lambda$. We can then form a "residual" vector $
+We notice that whatever $p$ is, it will be along $\vector y$ and thus we will have $\vector p = \lambda \hat {\vector y}$ for some scalar $\lambda$. We can then form a "residual" vector $\vector r = \vector x - \vector p$
  
