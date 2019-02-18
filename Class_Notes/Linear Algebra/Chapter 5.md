@@ -207,5 +207,5 @@ Why is this useful? One reason is that as long as $A$ has orthogonal columns, th
 
 Letting $S$ be the column space of $Q$, recall that the projection onto $S$ is defined by
 $$
-P_S = Q
+P_S = Q(Q^TQ)^{-1}Q^T
 $$
