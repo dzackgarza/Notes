@@ -118,5 +118,5 @@ The general setup here is that we would like to solve $A\vector x = \vector b$ f
 
 Geometrically, the solution is given by projecting $\vector b$ onto the column space of $A$. To see why this is the case, define the residual vector $\vector r = \vector b - A\tilde{\vector x}$. We then seek to minimize $\norm{\vector r}$, which happens exactly when $\vector r \perp \im A$. But this happens exactly when $\vector r \in (\im A)^\perp$, which by the fundamental subspaces theorem, is equivalent to $\vector r \in \ker A^T$.
 
-
+From this, we get the equat
 
