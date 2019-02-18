@@ -209,4 +209,7 @@ Letting $S$ be the column space of $Q$, recall that the projection onto $S$ is d
 $$
 P_S = Q(Q^TQ)^{-1}Q^T,
 $$
-and noting that $Q$ has orthogonal columns, it will satisfy $QQ^T = I$. 
+and noting that $Q$ has orthogonal columns and thus satisfies $QQ^T = I$, we have
+$$
+P_S = QQ^T.
+$$
