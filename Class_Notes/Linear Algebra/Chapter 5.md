@@ -76,8 +76,10 @@ $$
 
 This can be computed by forming the change-of-basis matrix $S$, and then forming the matrix operator
 $$
-P_S = S(S^T S)^{-1}S^T
+P_S = S(S^T S)^{-1}S^T.
 $$
+
+For a derivation of 
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
