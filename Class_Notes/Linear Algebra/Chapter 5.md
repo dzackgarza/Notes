@@ -97,8 +97,8 @@ One important property of projections is that for any vector $\vector v$ and for
 **The Fundamental Subspaces Theorem**
 
 Given a matrix $A \in \mathrm{Mat}(m, n)$, and noting that
-$$
-A: \RR^n \to \RR^m,\\
-A^T: \RR^m \to \RR^n
-$$
+$$\begin{align*}
+A: & \RR^n \to \RR^m,\\
+A^T: & \RR^m \to \RR^n
+\end{align*}$$
 
