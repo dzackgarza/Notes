@@ -186,7 +186,7 @@ which projects a vector onto the unit sphere in $\RR^n$ by normalizing. Then,
 
 $$\begin{align*}
 u_1 &= N(\vector{x_1}) \\
-u_2 &= N(\vectorx_2 - \inner{x_2}{u_1}u_1)\\
+u_2 &= N(\vector x_2 - \inner{\vector x_2}{\vector u_1}\vector u_1)\\
 u_3 &= N(x_3 - \inner{x_3}{u_1}u_1 - \inner{x_3}{u_2}u_2 ) \\
 \vdots & \qquad \vdots \\
 u_k &= N(x_k - \sum_{i=1}^{k-1} \inner{x_k}{u_i} u_i)
