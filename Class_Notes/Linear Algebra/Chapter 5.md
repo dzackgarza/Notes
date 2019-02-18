@@ -147,5 +147,7 @@ $$
 The derivation proceeds by solving the equation
 $$
 \dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0
-$$
+$$.
+
+## Gram-Schmidt
 
