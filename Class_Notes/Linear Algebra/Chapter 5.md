@@ -224,7 +224,7 @@ The matrix $R$ can then be written as
 
 $$
 \begin{bmatrix}
-\inner{\vector u_1}{\vector x_1} & \inner{\vector u_1}{\vector x_2} & \inner{}{} & \cdots & \\
+\inner{\vector u_1}{\vector x_1} & \inner{\vector u_1}{\vector x_2} & \inner{\vector u_1}{\vector x_3} & \cdots & \\
 0 & 1 & 1 & \cdots & \\
 0 & 0 & 1 & \cdots & \\
 \vdots & \vdots & \vdots & \ddots \\
