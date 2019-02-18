@@ -53,3 +53,7 @@ $$
 \inner{\vector x - \vector p_0}{\vector n} =
 $$
 
+To find the distance between a point $\vector a$ and a plane, we need only project $\vector a$ onto the subspace spanned by the normal $\vector n$:
+$$
+d = \inner{\vector a}{\vector n}
+$$
