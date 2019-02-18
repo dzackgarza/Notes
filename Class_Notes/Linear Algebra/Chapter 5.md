@@ -178,7 +178,14 @@ $$
 [\vector x]_\mathcal{B} = \vector c \definedas [c_1, c_2, \cdots, c_n]^T.
 $$
 
-This also allows us to simplify projection matrices.
+This also allows us to simplify projection matrices; Letting $S$ be the column space of $A$, where $A$ has columns consisting of  recall that the projection onto $S$ is defined by
+$$
+P_S = Q(Q^TQ)^{-1}Q^T,
+$$
+and noting that $Q$ has orthogonal columns and thus satisfies $QQ^T = I$, this simplifies to
+$$
+P_S = QQ^T.
+$$
 
 **The Algorithm**
 
