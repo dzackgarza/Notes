@@ -144,3 +144,5 @@ $$
 \inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}
 $$
 
+The derivation proceeds by computing $\
+
