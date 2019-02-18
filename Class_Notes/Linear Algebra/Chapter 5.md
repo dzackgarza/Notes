@@ -88,6 +88,8 @@ $$
 S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.
 $$
 
+An important property 
+
 One important property of projections is that for any vector $\vector v$, it is the case that $\vector v - P_S(\vector v) \in S^\perp$ for any subspace $S$.
 
-Given two subspace $S_1, S_2$, we say that $S_1$ is orthogonal to $S_2$ and write $S_1 \perp S_2$ iff $S_1 \subseteq S_2^\perp$ and $S_2 \subseteq S_1 \perp$.
+Given two subspace $S_1, S_2$, we say that $S_1$ is orthogonal to $S_2$ and write $S_1 \perp S_2$ iff $S_1 \subseteq S_2^\perp$ and $S_2 \subseteq S_1^\perp$.
