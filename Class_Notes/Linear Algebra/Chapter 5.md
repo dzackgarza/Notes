@@ -33,7 +33,7 @@ $$
 \vector x \perp \vector y \iff \inner{\vector x}{\vector y} = 0.
 $$
 
-
+Note that this makes the zero vector perpendicular to everything.
 
 Another general formula of use is
 $$
