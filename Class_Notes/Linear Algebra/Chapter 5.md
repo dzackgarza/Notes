@@ -227,6 +227,6 @@ $$
 1 & 1 & 1 & \cdots & \\
 0 & 1 & 1 & \cdots & \\
 0 & 0 & 1 & \cdots & \\
-\vdots & \vdots & \vdots & 1 \\
+\vdots & \vdots & \vdots & \ddots \\
 \end{bmatrix}
 $$
