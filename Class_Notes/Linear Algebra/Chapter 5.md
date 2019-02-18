@@ -69,7 +69,7 @@ $$
 d = \inner{\vector a}{\vector n}
 $$
 
-In general, we 
+In general, supposing that $S$ is a subspace spanned by $\theset{\vector s_i}_{i=1}^k$
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
