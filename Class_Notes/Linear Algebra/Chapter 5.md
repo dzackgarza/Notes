@@ -88,6 +88,6 @@ $$
 S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.
 $$
 
-An important property is that any choice of subspace $S\subseteq V$ yields a decomposition $V = S \oplus S^\perp$.
+An important property is that any choice of subspace $S\subseteq V$ yields a decomposition $V = S \oplus S^\perp$. Given two subspace $S_1$ and $S_2$ where
 
 One important property of projections is that for any vector $\vector v$, it is the case that $\vector v - P_S(\vector v) \in S^\perp$ for any subspace $S$.
