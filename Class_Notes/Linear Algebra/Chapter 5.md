@@ -15,7 +15,7 @@ $$
 which has the often useful alternative formulation
 
 $$
-\
+\inner{\vector x}{\vector x} = \norm{\vector x}^2
 $$
 
 We can define a notion of angle:
