@@ -225,6 +225,8 @@ The matrix $R$ can then be written as
 $$
 \begin{bmatrix}
 1 & 1 & 1 & \cdots & \\
-0 & 1 & 1 & \cdots &\\
+0 & 1 & 1 & \cdots & \\
+0 & 0 & 1 & \cdots & \\
+\vdots & \vdots 
 \end{bmatrix}
 $$
