@@ -114,5 +114,5 @@ Figure here
 
 Figure here
 
-
+The general setup here is that we would like to solve $
 
