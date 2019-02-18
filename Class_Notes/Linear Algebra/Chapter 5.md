@@ -185,7 +185,7 @@ $$
 which projects a vector onto the unit sphere in $\RR^n$ by normalizing. Then,
 
 $$\begin{align*}
-u_1 &= \hat x_1 \\
+u_1 &= \hat \vector{x_1} \\
 u_2 &= N(x_2 - \inner{x_2}{u_1}u_1)\\
 u_3 &= N(x_3 - \inner{x_3}{u_1}u_1 - \inner{x_3}{u_2}u_2 ) \\
 \vdots & \qquad \vdots \\
