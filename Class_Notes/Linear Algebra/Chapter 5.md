@@ -36,7 +36,7 @@ $$
 Note that this makes the zero vector orthogonal to everything.
 
 Given a notion of orthogonality for vectors, we can extend this to matrices. A square matrix is said to be orthogonal iff $QQ^T = Q^TQ = I$. For rectangular matrices, we have the following characterizations:
-$$\being{align*}
+$$\begin{align*}
 QQ^T = I \implies &\text{The columns of } Q \text { are orthogonal,} \\
 Q^TQ = I \implies &\text{The rows of } Q \text{ are orthogonal.}
 \end{align*}$$
