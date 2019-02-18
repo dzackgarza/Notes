@@ -70,3 +70,6 @@ d = \inner{\vector a}{\vector n}
 $$
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
+$$
+S^\perp = \theset{v\in V \suchthat }
+$$
