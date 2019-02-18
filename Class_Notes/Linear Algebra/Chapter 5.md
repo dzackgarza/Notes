@@ -41,7 +41,7 @@ With an inner product in hand and a notion of orthogonality, we can define a not
 
 We notice that whatever $p$ is, it will in the direction of $\vector y$, and thus $\vector p = \lambda \hat {\vector y}$ for some scalar $\lambda$, where in fact $\lambda = \norm {\vector p}$ since $\norm{\hat{\vector y}} = 1$. We will find that \lambda = $\inner{\vector x}{\hat{\vector y}}$, and so
 $$
-\vector p = \inner{\vector x}{\hat{\vector y}}\hat{\vector y}}
+\vector p = \inner{\vector x}{\hat{\vector y}}\hat{\vector y} = \frac{\inner{\vector x}{\vector y}}{\inner{\vector y}{\vector y}} \vector y
 $$
 
 We can then form a "residual" vector $\vector r = \vector x - \vector p$, which should satisfy $\vector r \perp \vector p$.
