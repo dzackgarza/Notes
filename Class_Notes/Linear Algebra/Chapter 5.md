@@ -86,4 +86,4 @@ $$
 S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.
 $$
 
-One important property of projections is that 
+One important property of projections is that for any vector $\vector v$, it is the cast that $\vector v - P_S
