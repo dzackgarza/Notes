@@ -71,5 +71,5 @@ $$
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
-S^\perp = \theset{v\in V \suchthat \forall }
+S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.
 $$
