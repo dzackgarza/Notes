@@ -26,4 +26,4 @@ $$
 
 where $\theta_{x,y}$ denotes the angle between the vectors $\vector x$ and $\vector y$.
 
-This allows us to declare two vectors orthogonal if 
+Note that $\cos \theta=0$ exactly when $\theta = \pm \pi/2$, 
