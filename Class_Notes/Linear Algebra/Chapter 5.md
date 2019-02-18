@@ -35,8 +35,9 @@ $$
 ## Projections
 With an inner product in hand and a notion of orthogonality, we can define a notion of **orthogonal projection** of one vector onto another, and more generally of a vector onto a subspace spanned by multiple vectors.
 
- We can work out what the formula should be using a simple model. Say we have two vectors $\vector x$ and $\vector y$, and we want to define "the component of $\vector x$ that lies along $\vector y$.
+ Say we have two vectors $\vector x$ and $\vector y$, and we want to define "the component of $\vector x$ that lies along $\vector y$". We can work out what the formula should be using a simple model:
 
  **Figure Here**
+
 
  
