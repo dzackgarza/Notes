@@ -218,4 +218,4 @@ $$
 \tilde{\vector x} = R^{-1}Q^T\vector b.
 $$
 
-How does it work? 
+How does it work? You simply perform Gram-Schmidt
