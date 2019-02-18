@@ -38,3 +38,5 @@ With an inner product in hand and a notion of orthogonality, we can define a not
  We can work out what the formula should be using a simple model:
 
  **Figure Here**
+
+ 
