@@ -167,4 +167,7 @@ $$
 \vector x = \sum_{i=1}^n \inner{\vector x}{\vector b_i} \vector b_i \definedas \sum_{i=1}^n c_i \vector b_i,
 $$
 
-and we find that $[\vector x]_\mathcal{B} = \vector c \definedas [c_1, c_2, \cdots, c_n]^T$
+and we find that 
+$$
+[\vector x]_\mathcal{B} = \vector c \definedas [c_1, c_2, \cdots, c_n]^T
+$$
