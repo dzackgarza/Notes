@@ -224,7 +224,7 @@ The matrix $R$ can then be written as
 
 $$
 \begin{bmatrix}
-1 & 1 & \cdots & \\
-0 & 1 & 1 \cdots &\\
+1 & 1 & 1 & \cdots & \\
+0 & 1 & 1 & \cdots &\\
 \end{bmatrix}
 $$
