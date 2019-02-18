@@ -104,6 +104,6 @@ A^T &:  \RR^m \to \RR^n
 
 We have the following decompositions:
 $$\begin{align*}
-\RR^n \cong \ker A \oplus
+\RR^n \cong \ker A ~\oplus~ \im A^T
 \end{align*}$$
 
