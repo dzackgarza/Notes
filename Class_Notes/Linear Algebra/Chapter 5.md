@@ -203,10 +203,10 @@ In words, at each stage, we take one of the original vectors $\vetor x_i$, then 
 **The QR Decomposition**
 Gram-Schmidt is often computed to find an orthonormal basis for, say, the range of some matrix $A$. With a small modification to this algorithm, we can write $A = QR$ where $R$ is upper triangular and $Q$ has orthogonal columns.
 
-Why is this useful? One reason is that as long as $A$ has orthogonal columns, then it is full rank and thus invertible. But since $A = QR$ and $\det A = \det QR = \det Q \det R \neq 0$, both $Q$ and $R$ are nonsingular as well, and rather easy to invert. Since $Q$ has orthogonal columns, it will satisfy $QQ^T = I$. 
+Why is this useful? One reason is that as long as $A$ has orthogonal columns, then it is full rank and thus invertible. But since $A = QR$ and $\det A = \det QR = \det Q \det R \neq 0$, both $Q$ and $R$ are nonsingular as well, and rather easy to invert. 
 
 Letting $S$ be the column space of $Q$, recall that the projection onto $S$ is defined by
 $$
 P_S = Q(Q^TQ)^{-1}Q^T,
 $$
-and noting that 
+and noting that $Q$ has orthogonal columns, it will satisfy $QQ^T = I$. 
