@@ -102,3 +102,7 @@ A &: \RR^n \to \RR^m,\\
 A^T &:  \RR^m \to \RR^n
 \end{align*}$$
 
+We have the following decompositions:
+$$
+$$
+
