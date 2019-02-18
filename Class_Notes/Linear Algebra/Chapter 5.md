@@ -71,7 +71,7 @@ $$
 
 In general, supposing that $S$ is a subspace spanned by $\theset{\vector s_i}_{i=1}^k$, there is an operator $P_S$ which projects vectors onto the subspace $S$, given by
 $$
-P_S =  
+P_S(\vector v) = \sum_{i=1}^k \inner{}{}\vector s_i 
 $$
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
