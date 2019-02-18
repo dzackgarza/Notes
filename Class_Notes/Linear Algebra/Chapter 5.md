@@ -114,5 +114,5 @@ Figure here
 
 Figure here
 
-The general setup here is that we would like to solve $
+The general setup here is that we would like to solve $A\vector x = \vector b$ for $\vector x$, where $\vector b$ is not in fact in the range of $A$.
 
