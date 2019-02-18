@@ -33,3 +33,4 @@ $$
 $$
 
 ## Projections
+With an inner product in hand and a notion of orthogonality, we can define a notion of **orthogonal projection** 
