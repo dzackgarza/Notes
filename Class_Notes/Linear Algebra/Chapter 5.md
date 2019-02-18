@@ -35,6 +35,8 @@ $$
 
 Note that this makes the zero vector orthogonal to everything.
 
+Given a notion of orthogonality for vectors, we can extend this to matrices. 
+
 Another general formula of use is
 $$
 \norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + 2\inner{\vector x}{\vector y} + \norm{\vector y}^2,
