@@ -116,5 +116,5 @@ Figure here
 
 The general setup here is that we would like to solve $A\vector x = \vector b$ for $\vector x$, where $\vector b$ is not in fact in the range of $A$. We thus settle for a unique "best" solution $\tilde{\vector x}$ such that the error $\norm{\vector b - A\tilde{\vector x}}$ is minimized.
 
-Geometrically, the solution is given by projecting $\vector b$ onto the column space of $A$. To see why this is the case, define the residual vector $\vector r = \vector b - A\tilde{\vector x}$. We then seek to minimize $\norm{\vector r}$, which happens exactly when $\vector r \perp \mathrm{colspace}(A)$. But this happens exactly when $\vector r \in \im(A)^\perp$, which by the fundamental subspaces theorem, is equivalent to $\vector r \in \ker A^T$.
+Geometrically, the solution is given by projecting $\vector b$ onto the column space of $A$. To see why this is the case, define the residual vector $\vector r = \vector b - A\tilde{\vector x}$. We then seek to minimize $\norm{\vector r}$, which happens exactly when $\vector r \perp \im A$. But this happens exactly when $\vector r \in \im(A)^\perp$, which by the fundamental subspaces theorem, is equivalent to $\vector r \in \ker A^T$.
 
