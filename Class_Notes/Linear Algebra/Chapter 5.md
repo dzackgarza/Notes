@@ -125,5 +125,5 @@ A^T \vector r = \vector 0 \\
 \implies A^TA\tilde{\vector x} = A^T \vector b
 $$
 
-If $A$ has
+If $A$ is an $m\times n$ matrix and is of full rank, so it has $n$ linearly independent columns, then one can show that $
 
