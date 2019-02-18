@@ -76,7 +76,7 @@ $$
 
 This can be computed by forming the change-of-basis matrix $S$, and then forming the matrix operator
 $$
-P_S = 
+P_S = S(S^T S)^{-1}S^T
 $$
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
