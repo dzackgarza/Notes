@@ -144,5 +144,5 @@ $$
 \inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}
 $$
 
-The derivation proceeds by computing $
+The derivation proceeds by computing $\dd{}{\vector x} \norm{\vector b - A\vector x}$
 
