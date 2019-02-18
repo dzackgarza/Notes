@@ -178,5 +178,5 @@ Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis 
 
 $$\begin{align*}
 u_1 = \hat x_1 \\
-u_2 = \hat{x_2 }
+u_2 = \hat{x_2 - \inner{}{}u_1}
 \end{align*}$$
