@@ -9,7 +9,7 @@ $$
 
 we can define a **norm**
 $$
-\norm {\vector x} = \sqrt{\inner{\vector x}{\vector x}}
+\norm {\vector x} = \sqrt{\inner{\vector x}{\vector x}},
 $$
 
 We can define a notion of angle:
