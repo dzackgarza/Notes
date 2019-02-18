@@ -178,8 +178,8 @@ Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis 
 
 First define 
 $$
-N: \RR^n \selfmap
-x \mapsto \frac {x} \norm{x}
+N: \RR^n \selfmap \\
+x \mapsto \frac {x} {\norm{x}}
 $$
 
 $$\begin{align*}
