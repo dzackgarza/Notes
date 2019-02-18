@@ -174,7 +174,7 @@ $$
 
 **The Algorithm**
 
-Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis $\theset{\vector u_i}$ iteratively as follows:
+Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis $\theset{\vector u_i}$ iteratively as follows. Let $N
 
 $$\begin{align*}
 u_1 = \hat x_1 \\
