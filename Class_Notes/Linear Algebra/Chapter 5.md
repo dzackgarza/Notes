@@ -135,7 +135,7 @@ $$
 These equations can also be derived explicitly using Calculus applied to matrices, vectors, and inner products. This requires the use of the following formulas:
 $$\begin{align*}
 \dd{}{\vector x} \inner{\vector x}{\vector a} &= \vector a \\
-\dd{}{\vector x} \inner{\vector x}{\vector x} = \dd{}{\vector x} \norm{\vector x}^2 = 2\vector x\\
-\dd{}{\vector x} \inner{\vector x}{\vector a} = asdsa
+\dd{}{\vector x} \inner{\vector x}{\vector x} = \dd{}{\vector x} \norm{\vector x}^2 &= 2\vector x\\
+\dd{}{\vector x} \inner{\vector x}{\vector A\vector x} &= asdsa
 \end{align*}$$
 
