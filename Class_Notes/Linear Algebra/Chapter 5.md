@@ -110,3 +110,7 @@ $$\begin{align*}
 
 ## Least Squares
 
+Figure here
+
+Figure here
+
