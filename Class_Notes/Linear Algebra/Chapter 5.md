@@ -178,6 +178,8 @@ $$
 [\vector x]_\mathcal{B} = \vector c \definedas [c_1, c_2, \cdots, c_n]^T.
 $$
 
+This allows us to rewrite the projection matrix 
+
 **The Algorithm**
 
 Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis $\theset{\vector u_i}$ iteratively as follows. 
