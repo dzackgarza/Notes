@@ -222,7 +222,9 @@ How does it work? You simply perform Gram-Schmidt to obtain $\theset{\vector u_i
 
 The matrix $R$ can then be written as 
 
-$$\begin{cases}
+$$r_{ij} = \begin{cases}
+\inner{\vector u_i}{\vector x_j}, & i\leq j, \\
+0 &, \text{else}.
 \end{cases}$$
 $$
 \begin{bmatrix}
