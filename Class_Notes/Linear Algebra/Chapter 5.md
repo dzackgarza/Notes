@@ -38,7 +38,7 @@ $$
 \norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + 2\inner{\vector x}{\vector y} + \norm{\vector y}^2,
 $$
 
-and so when $\vector x \perp \vector y$, we have $\inner{\vector x}{\vector y} = 0 $ the norm commutes with squaring and we have 
+and so when $\vector x \perp \vector y$, we have $\inner{\vector x}{\vector y} = 0 $. So the norm commutes with squaring, yielding 
 $$
 \norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + \norm{\vector y}^2
 $$
