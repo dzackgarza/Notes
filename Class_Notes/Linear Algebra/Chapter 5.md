@@ -182,6 +182,8 @@ N: \RR^n \selfmap \\
 x \mapsto \frac {x} {\norm{x}}
 $$
 
+which projects a vector onto the unit sphere
+
 $$\begin{align*}
 u_1 = \hat x_1 \\
 u_2 = \widehat{x_2 - \inner{x_2}{u_1}u_1}
