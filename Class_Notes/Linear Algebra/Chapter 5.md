@@ -217,3 +217,5 @@ Why is this useful? One reason is that this also allows for a particularly simpl
 $$
 \tilde{\vector x} = R^{-1}Q^T\vector b.
 $$
+
+How does it work? 
