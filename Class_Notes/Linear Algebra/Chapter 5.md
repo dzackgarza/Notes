@@ -108,3 +108,5 @@ $$\begin{align*}
 &\RR^m &\cong  \im A &\oplus \ker A^T &\cong \mathrm{colspace}(A) &\oplus~ \mathrm{nullspace}(A^T)
 \end{align*}$$
 
+## Least Squares
+
