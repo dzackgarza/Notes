@@ -94,3 +94,5 @@ An important property is that any choice of subspace $S\subseteq V$ yields a dec
 
 One important property of projections is that for any vector $\vector v$ and for any subspace $S$, we have $\vector v - P_S(\vector v) \in S^\perp$.
 
+**The Fundamental Subspaces Theorem**
+
