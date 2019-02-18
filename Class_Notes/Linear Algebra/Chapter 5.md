@@ -79,7 +79,7 @@ $$
 P_S = S(S^T S)^{-1}S^T.
 $$
 
-[^projmatrix: For a derivation of this formula, see the section on least-squares approximations]
+[^projmatrix]
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
