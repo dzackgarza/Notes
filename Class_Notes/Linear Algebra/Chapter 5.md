@@ -19,10 +19,6 @@ $$
 \inner{\vector x}{\vector x} = \norm{\vector x}^2
 $$
 
-Another general formula of use is
-$$
-\norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + 2\inner{\vector x}{\vector y} + \norm{\vector y}^2 
-$$
 
 We can define a notion of angle:
 $$
@@ -35,6 +31,11 @@ where $\theta_{x,y}$ denotes the angle between the vectors $\vector x$ and $\vec
 Note that $\cos \theta=0$ exactly when $\theta = \pm \frac \pi 2$. We can thus can declare two vectors to be **orthogonal** exactly in this case:
 $$
 \vector x \perp \vector y \iff \inner{\vector x}{\vector y} = 0
+$$
+
+Another general formula of use is
+$$
+\norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + 2\inner{\vector x}{\vector y} + \norm{\vector y}^2 
 $$
 
 ## Projections
