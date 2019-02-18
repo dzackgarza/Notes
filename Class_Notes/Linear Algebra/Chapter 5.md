@@ -220,3 +220,8 @@ $$
 
 How does it work? You simply perform Gram-Schmidt to obtain $\theset{\vector u_i}$, then $$Q = [\vector u_1, \vector u_2, \cdots ].$$
 
+The matrix $R$ can then be written as 
+
+$$
+
+$$
