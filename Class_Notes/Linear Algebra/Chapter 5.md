@@ -69,6 +69,8 @@ $$
 d = \inner{\vector a}{\vector n}
 $$
 
+In general, we 
+
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
 S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.
