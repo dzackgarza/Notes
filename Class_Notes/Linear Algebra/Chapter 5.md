@@ -127,8 +127,8 @@ $$
 
 where the last line is described as the **normal equation**.
 
-If $A$ is an $m\times n$ matrix and is of full rank, so it has $n$ linearly independent columns, then one can show that $A^T A$ is nonsingular, and we thus arrive at the **normal equations**
+If $A$ is an $m\times n$ matrix and is of full rank, so it has $n$ linearly independent columns, then one can show that $A^T A$ is nonsingular, and we thus arrive at the least-squares solution
 $$
-\
+\tilde{\vector x} = (A^
 $$
 
