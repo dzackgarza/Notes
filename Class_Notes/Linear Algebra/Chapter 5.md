@@ -144,5 +144,5 @@ $$
 \inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}
 $$
 
-The derivation proceeds by solving $\dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0$
+The derivation proceeds by solving the equation$\dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0$
 
