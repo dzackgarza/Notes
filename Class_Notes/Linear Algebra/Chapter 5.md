@@ -164,5 +164,5 @@ $$
 
 If, on the other hand, the $\vector b_i$ are orthonormal, then $B{-1} = B^T$, which is much easier to compute. We also obtain a rather simple formula for the coordinates of $\vector x$ with respect to $\mathcal B$. This follows because we can write
 $$
-\vector x = \sum_{i=1}^n \inner{\vector x}{\vector b_i} \vector b_i
+\vector x = \sum_{i=1}^n \inner{\vector x}{\vector b_i} \vector b_i \definedas \sum_{i=1}^n c_i \vector b_i
 $$
