@@ -104,6 +104,7 @@ A^T &:  \RR^m \to \RR^n
 
 We have the following decompositions:
 $$\begin{align*}
-\RR^n \cong \ker A ~\oplus~ \im A^T \cong \mathrm{nullspace}(A) ~\oplus~ \mathrm{colspace}(A^T)
+\RR^n \cong \ker A ~\oplus~ \im A^T \cong \mathrm{nullspace}(A) ~\oplus~ \mathrm{colspace}(A^T) \\
+\RR^m
 \end{align*}$$
 
