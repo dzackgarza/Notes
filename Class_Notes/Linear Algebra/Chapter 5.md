@@ -21,7 +21,7 @@ $$
 
 Another general formula of use is
 $$
-\norm{\vector x + \vector y}^2 = \norm{x}^2 + 2\inner{x}{y} + \norm{y}^2 
+\norm{\vector x + \vector y}^2 = \norm{\vector x}^2 + 2\inner{\vector x}{\vector y} + \norm{\vector y}^2 
 $$
 
 We can define a notion of angle:
