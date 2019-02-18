@@ -11,3 +11,5 @@ we can define a **norm**
 $$
 \norm {\vector x} = \sqrt{\inner{\vector x}{\vector x}}
 $$
+
+We can also use 
