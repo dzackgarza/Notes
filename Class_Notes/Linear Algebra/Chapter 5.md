@@ -85,3 +85,5 @@ Given a subspace $S \subseteq V$, we define its **orthogonal complement**
 $$
 S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.
 $$
+
+One important property of projections is that 
