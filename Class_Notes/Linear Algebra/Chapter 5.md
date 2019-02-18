@@ -30,8 +30,10 @@ where $\theta_{x,y}$ denotes the angle between the vectors $\vector x$ and $\vec
 
 Note that $\cos \theta=0$ exactly when $\theta = \pm \frac \pi 2$. We can thus can declare two vectors to be **orthogonal** exactly in this case:
 $$
-\vector x \perp \vector y \iff \inner{\vector x}{\vector y} = 0
+\vector x \perp \vector y \iff \inner{\vector x}{\vector y} = 0.
 $$
+
+
 
 Another general formula of use is
 $$
@@ -86,4 +88,4 @@ $$
 S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.
 $$
 
-One important property of projections is that for any vector $\vector v$, it is the cast that $\vector v - P_S
+One important property of projections is that for any vector $\vector v$, it is the cast that $\vector v - P_S(\vector v) \in S^\perp$ for any subspace $S$.
