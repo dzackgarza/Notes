@@ -222,9 +222,8 @@ How does it work? You simply perform Gram-Schmidt to obtain $\theset{\vector u_i
 
 The matrix $R$ can then be written as 
 
-$$\being{cases}
-
-
+$$\begin{cases}
+\end{cases}$$
 $$
 \begin{bmatrix}
 \inner{\vector u_1}{\vector x_1} & \inner{\vector u_1}{\vector x_2} & \inner{\vector u_1}{\vector x_3} & \cdots & \\
