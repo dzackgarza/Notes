@@ -174,4 +174,4 @@ $$
 
 **The Algorithm**
 
-Given the set $\theset{\vector x_i}
+Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis $\theset{\vector u_i}$ iteratively as follows
