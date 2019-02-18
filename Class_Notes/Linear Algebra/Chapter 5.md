@@ -154,6 +154,6 @@ The general setup here is that we are given an orthogonal basis $\theset{\vector
 
 Why would we want such a thing? Recall that we often wanted to change from the standard basis $\mathcal{E}$ to some different basis $\mathcal{B} = \theset{\vector b_1, \vector b_2, \cdots}$. We could form the change of basis matrix $B = [\vector b_1, \vector b_2, \cdots]$ acts according to
 $$
-B[\vector x]_\mathcal{B}
+B[\vector x]_\mathcal{B} = [\vector x]_{mathcal{E}}
 $$
 
