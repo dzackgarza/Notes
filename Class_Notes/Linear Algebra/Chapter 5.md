@@ -146,10 +146,9 @@ $$
 
 The derivation proceeds by solving the equation
 $$
-\dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0
-$$.
+\dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0.
+$$
 
-##Gram-Schmidt
-
-The general setup here
+## Gram-Schmidt
+The general setup here is that we are given an orthogonal basis $\theset{\vector x_i}_{i=1}^n$ and we want to produce an **orthonormal** basis from them.
 
