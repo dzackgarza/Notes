@@ -1,5 +1,6 @@
 # Chapter 5: Orthogonality
 
+## Inner Products and Norms
 The point of this chapter is to show how an inner product can induce a notion of "angle", which agrees with our intuition in Euclidean spaces such as $\RR^n$, but can be extended to much less intuitive things, like spaces of functions.
 
 Given an inner product 
@@ -30,3 +31,5 @@ Note that $\cos \theta=0$ exactly when $\theta = \pm \frac \pi 2$. We can thus c
 $$
 \vector x \perp \vector y \iff \inner{\vector x}{\vector y} = 0
 $$
+
+## Projections
