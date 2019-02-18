@@ -178,7 +178,7 @@ $$
 [\vector x]_\mathcal{B} = \vector c \definedas [c_1, c_2, \cdots, c_n]^T.
 $$
 
-This also allows us to simplify projection matrices. Letting $S$ be the column space of $A$, where $A$ has recall that the projection onto $S$ is defined by
+This also allows us to simplify projection matrices. Supposing that $A$ has orthonormal columns and letting $S$ be the column space of $A$, recall that the projection onto $S$ is defined by
 $$
 P_S = Q(Q^TQ)^{-1}Q^T,
 $$
