@@ -104,6 +104,6 @@ A^T &:  \RR^m \to \RR^n
 
 We have the following decompositions:
 $$\begin{align*}
-\RR^n \cong \nullspace
+\RR^n \cong \mathrm{nullspace}(A) \oplus
 \end{align*}$$
 
