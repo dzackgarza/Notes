@@ -223,5 +223,6 @@ How does it work? You simply perform Gram-Schmidt to obtain $\theset{\vector u_i
 The matrix $R$ can then be written as 
 
 $$
-
+\begin{bmatrix}
+\end{bmatrix}
 $$
