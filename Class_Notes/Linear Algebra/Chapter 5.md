@@ -161,3 +161,5 @@ But to change from $\mathcal{E}$ to $\mathcal{B}$ requires computing $B^{-1}$, w
 $$
 B^{-1}[\vector x]_\mathcal{E} = [\vector x]_{\mathcal{B}}
 $$
+
+If, on the other hand, the $\vector b_i$ were orthogonal, 
