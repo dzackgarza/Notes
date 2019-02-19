@@ -144,7 +144,7 @@ Key equations: projection and orthogonal projection of $\vector b$ onto $\vector
 	- Given a point $\vector p$ and a plane $S = \theset{\vector{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, let $\vector n = [n_1, n_2, n_3]$, find any point $\vector q \in S$, and project $\vector p -\vector q$ onto $S^\perp = \mathrm{Span}(\vector n)$ using
 
 	$$
-	d = \norm{\mathrm{proj}_{\vector n}(\vector p - \vector q)} = \inner{\vector p - \vector q}{\vector n} \vector 
+	d = \norm{\mathrm{proj}_{\vector n}(\vector p - \vector q)} = \inner{\vector p - \vector q}{\vector n} \hat{\vector n}
 	$$
 
 	- Given just two vectors $\vector u, \vector v$: manufacture a normal vector $\vector n = \vector u \times \vector v$ and continue as above.
