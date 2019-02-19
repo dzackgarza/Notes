@@ -103,8 +103,12 @@ $$
 
 ## Tangent Lines / Planes
 - Key insight: just need a point and a normal vector, and the gradient is normal to level sets.
-**The Tangent Plane Equation**: Dor any locus $f(\mathbf x) = 0$, we have
-$$\mathbf{x} \in T_f(\mathbf p_0) \implies \inner}\nabla f(\mathbf p_0)}{\mathbf x-\mathbf p_0} = 0 $$
+
+**The Tangent Plane Equation**: 
+For any locus $f(\mathbf x) = 0$, we have
+$$
+\mathbf{x} \in T_f(\mathbf p_0) \implies \inner}\nabla f(\mathbf p_0)}{\mathbf x-\mathbf p_0} = 0 
+$$
 
 
 ## Normal Lines
