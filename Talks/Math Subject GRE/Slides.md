@@ -183,6 +183,11 @@ Single variable: solve $\dd{}{x} f(x) = 0$ to find critical points $c_i$; check 
 Multivariable: 
 $$H_f = \det(J_f) = f_{xx} f_{yy} - 2f_{xy}^2$$
 
+Lagrange Multipliers:
+$$
+\nabla f(\vector x) = \lambda \nabla g(\vector x)
+$$
+
 <!-- slide vertical=true -->
 ## Linear Approximation
 $$
