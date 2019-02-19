@@ -143,7 +143,7 @@ $$
 ## Important Extras
 The Fundamental Theorem of Calculus
 $$
-\frac{d}{dx} \int_a^x f(t) dt 
+\frac{d}{dx} \int_a^x f(t)~dt = f(x) 
 $$
 Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ and commute the derivative/integral
 
