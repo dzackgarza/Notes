@@ -155,7 +155,7 @@ Use simple techniques when possible
 
 $$
 \frac{a}{b+\sqrt{c}} = \frac{a}{b+\sqrt{c}} \left( \frac {b-\sqrt c} {b-\sqrt c} \right) = \frac {a(b-\sqrt c)} {b^2 - c} \\
-\frac{1}{}
+\frac{1}{ax^2 + bx + c} = \frac{1}{}
 $$
 
 <!-- slide -->
