@@ -77,6 +77,11 @@ $$
 P = (AA^T)^{-1}A^T,
 $$
 
+while this matrix performs the projection and expresses it in terms of the standard basis:
+$$
+P = A(AA^T)^{-1}A^T.
+$$
+
 ## Subspaces
 
 Equation of a plane: given a point $\vector p_0$ on a plane and a normal vector $\vector n$, any vector $\vector x$ on the plane satisfies
