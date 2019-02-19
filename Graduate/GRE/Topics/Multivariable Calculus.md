@@ -35,7 +35,7 @@ $$
 
 (Note that this is also sometimes referred to as the *Jacobian* matrix, and generalizes the first derivative.)
 
-For a function $f: \RR^n \to \RR$, the **Hessian** is a generalization of the second derivative, and is given in coordinates by $(H_f)_{ij} = \dd{^2}{x_i x_j}
+For a function $f: \RR^n \to \RR$, the **Hessian** is a generalization of the second derivative, and is given in coordinates by $(H_f)_{ij} = \dd{^2}{x_i x_j}f
 $$
 H_f({ \mathbf { a } }) = \left[ \begin{array} { c c c } { \frac { \partial ^ { 2 } f } { \partial x _ { 1 } \partial x _ { 1 } } ( \mathbf { a } ) } & { \dots } & { \frac { \partial ^ { 2 } f } { \partial x _ { 1 } \partial x _ { n } } ( \mathbf { a } ) } \\ { \vdots } & { \ddots } & { \vdots } \\ { \frac { \partial ^ { 2 } f } { \partial x _ { n } \partial x _ { 1 } } ( \mathbf { a } ) } & { \cdots } & { \frac { \partial ^ { 2 } f } { \partial x _ { n } \partial x _ { n } } ( \mathbf { a } ) } \end{array} \right].
 $$
