@@ -72,6 +72,8 @@ $$
 \vector p = \sum_{i=1}^n \frac{\inner{\vector x}{\vector y_i}}{\inner{\vector y_i}{\vector y_i}} \vector y_i = \sum_{i=1}^n \inner{\vector x}{\vector y_i} \hat{\vector y_i}.
 $$
 
+> Note: this is part of why having an orthogonal basis is desirable!
+
 Letting $A = [\vector y_1, \vector y_2, \cdots]$, then the following matrix projects vectors onto $S$, expressing them in terms of the basis $\vector y_i$:
 $$
 \tilde P_A = (AA^T)^{-1}A^T,
