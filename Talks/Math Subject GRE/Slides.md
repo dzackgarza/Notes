@@ -196,7 +196,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Tangent Planes and Linear Approximations
-Let $S$ be a surface. 
+Let $S$ be a surface. **Key Insight: The gradient of a function is normal to its level sets!**
 - Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
 	- $S = \theset{f(x,y, z) = 0}$
 		- $\nabla f$ is a normal vector to the zero level set of $f$.
