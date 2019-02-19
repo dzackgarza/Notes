@@ -20,10 +20,10 @@ f: \RR^2 \to \RR \\
 \lim_{h \to 0} \frac{f(x+h, y) - f(x,y)}{h}
 $$
 
-Most general case: Differentiable if there exists a linear transformation $D_f$ such that a limit exists; is the "best linear approximation to $f$".
+Most general case: a function $f: \RR^n \to \RR^m$ is differentiable if there exists a linear transformation $D_f$ such that a limit exists; is the "best linear approximation to $f$".
 
 $$
-f: \RR^n \to \RR^m
+
 \\
 \lim _ { \mathbf x \rightarrow \mathbf a } \frac { \left\| f (\mathbf x ) - f (\mathbf a ) - D_f (\mathbf x - \mathbf a ) \right\| } { \| \mathbf x - \mathbf a \| } = 0
 \\
