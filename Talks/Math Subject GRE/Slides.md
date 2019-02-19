@@ -139,6 +139,8 @@ Commuting a derivative with an integral
 $$
 \frac{d}{dx} \int_{a(x)}^{b(x)} f(x,t) dt = \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt \\ + f(x, b(x))\frac{d}{dx}b(x) - f(x, a(x))\frac{d}{dx}a(x)$$
 
+Essentially follows from the chain rule, worth deriving as an exercise.
+
 <!-- slide vertical=true -->
 ## Important Extras
 The Fundamental Theorems of Calculus
