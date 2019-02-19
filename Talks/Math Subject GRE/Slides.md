@@ -199,7 +199,7 @@ $$
 Let $S$ be a surface.
 - Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
 	- $S = \theset{f(x,y, z) = 0}$
-		- $\nabla f$ is a normal vector.
+		- $\nabla f$ is a normal vector to the zero level set.
 		- Write the tangent plane equation $\inner{\vector n}{\vector x - \vector p_0}$, done.
 	- $z = g(x,y)$:
 		- Let $f(x, y, z) = g(x,y) - z$, then $\vector p \in S \iff \vector p$ is in a level set of $f$.
