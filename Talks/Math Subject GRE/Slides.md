@@ -246,6 +246,7 @@ $$
 $$
 - Compute
   - Determinant, trace, inverse, subspaces, eigenvalues, etc
+  - Know properties too!
 - Definitions
   - Vector space, subspace, singular, consistent system, etc
 
