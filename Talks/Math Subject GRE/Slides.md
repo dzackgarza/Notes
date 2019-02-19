@@ -141,7 +141,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Important Extras
-The Fundamental Theorem of Calculus
+The Fundamental Theorems of Calculus
 $$
 \int_a^b \dd{}{x} f'(x)~dx = f(b) - f(a) \\
 \frac{d}{dx} \int_a^x f(t)~dt = f(x)
