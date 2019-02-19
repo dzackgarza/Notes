@@ -69,7 +69,7 @@ Notice that we can then form a "residual" vector $\vector r = \vector x - \vecto
 
 Equation of a plane: given a point $\vector p_0$ on a plane and a normal vector $\vector n$, any vector $\vector x$ on the plane satisfies
 $$
-\inner{\vector x - \vector p_0}{\vector n} =
+\inner{\vector x - \vector p_0}{\vector n} = 0
 $$
 
 To find the distance between a point $\vector a$ and a plane, we need only project $\vector a$ onto the subspace spanned by the normal $\vector n$:
