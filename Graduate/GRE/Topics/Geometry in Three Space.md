@@ -160,6 +160,7 @@ Key equations: projection and orthogonal projection of $\vector b$ onto $\vector
 	$$
 	d = \norm{\mathrm{proj}_\vector{v}^\perp(\vector{p})}
 	$$
+	
 	- Given a line $L: \vector x(t) = \vector w_0 + t\vector w$, let $\vector v = \vector x(1) - \vector x(0)$ and proceed as above.
 
 - **Point to a Curve**
