@@ -272,6 +272,8 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - $\rank(A) = n$ 
   - i.e. $A$ is full rank
 - $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$
+
+
 - $A = \prod_{i=1}^k E_i$ for some finite $k$, where each $E_i$ is an elementary matrix.
 - $A$ is row-equivalent to the identity matrix $I_n$
 - $A$ has exactly $n$ pivots
