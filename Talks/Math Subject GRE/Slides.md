@@ -207,8 +207,7 @@ $$
 \vector p \in S \iff \vector p \in \theset{f(x,y,z) = 0}.
 $$
     - So $\nabla f$ is normal to level sets, compute $\nabla f = [\dd{}{x}g, \dd{}{y}g, -1]$
-		- Proceed as in previous case
-		- 
+		- Proceed as in previous case 
 <!-- slide vertical=true -->
 ## Applications of Integrals
 
