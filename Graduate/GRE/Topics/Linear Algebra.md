@@ -141,7 +141,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 - Normal equations: $\vector x$ is a least squares solution to $A\vector x = \vector b \iff A^T A \vector x = A^T \vector b$
 
 ## Gram-Schmidt Process
-Extending a basis $\theset{\mathbf{x}_i}$ to an orthonormal basis $theset{\vector u_i}$,
+Extending a basis $\theset{\mathbf{x}_i}$ to an orthonormal basis $\theset{\vector u_i}$
 $$\begin{align*}
 \vector u_1 &= N(\vector{x_1}) \\
 \vector u_2 &= N(\vector x_2 - \inner{\vector x_2}{\vector u_1}\vector u_1)\\
