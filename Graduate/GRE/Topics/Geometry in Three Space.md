@@ -13,8 +13,9 @@ $$
 
 - Normal to a line in $\RR^2$: 
 $$
-m^\perp = \frac{-1}{m} \implies \vector{v}^\perp = [-y, x]
+m^\perp = -\frac{1}{m} \implies \vector{v}^\perp = [-y, x]
 $$
+
 - Circle in polar coordinates: centered at $(0, a) \implies r= a\sin\theta$
 
 ## Lines
