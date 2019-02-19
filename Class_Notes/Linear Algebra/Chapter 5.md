@@ -96,16 +96,6 @@ $$
 d = \inner{\vector a}{\vector n}
 $$
 
-In general, supposing that $S$ is a subspace spanned by $\theset{\vector s_i}_{i=1}^k$, there is an operator $P_S$ which projects vectors onto the subspace $S$, given by
-$$
-P_S(\vector v) = \sum_{i=1}^k \inner{\vector v}{\hat {\vector s_i}}\hat{\vector s_i }
-$$
-
-This can be computed by forming the change-of-basis matrix $S = [\vector s_1, \vector s_2, \cdots]$, and then forming the matrix 
-$$
-P_S = S(S^T S)^{-1}S^T.
-$$
-
 [^projmatrix]: For a derivation of this formula, see the section on least-squares approximations.
 
 Given a subspace $S \subseteq V$, we define its **orthogonal complement**
