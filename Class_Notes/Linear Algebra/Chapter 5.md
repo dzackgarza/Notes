@@ -72,7 +72,7 @@ $$
 \vector p = \sum_{i=1}^n \frac{\inner{\vector x}{\vector y_i}}{\inner{\vector y_i}{\vector y_i}} \vector y_i = \sum_{i=1}^n \inner{\vector x}{\vector y_i} \hat{\vector y_i}.
 $$
 
-Letting $Y = [\vector y_1, \vector y_2, \cdots]$, then the matrix 
+Letting $Y = [\vector y_1, \vector y_2, \cdots]$, then the following matrix project
 
 ## Subspaces
 
