@@ -42,7 +42,7 @@ H_f({ \mathbf { a } }) = \left[ \begin{array} { c c c } { \frac { \partial ^ { 2
 $$
 
 Concretely, this generalizes the 2nd derivative via the relationship $H_f(\vector a) = D_{\nabla f}(\vector a)$.
-In general, for a function $f: \RR^n \to \RR^m$, the second derivative is given as a tensor and is more complicated to work with. It is given by $H_f ) = \left( { H } \left( f _ { 1 } \right) ,  { H } \left( f _ { 2 } \right) , \ldots ,  { H } \left( f _ { m } \right) \right)$
+In general, for a function $f: \RR^n \to \RR^m$, the second derivative is given as a tensor and is more complicated to work with. It is given by $H_{\vector f} = [H_{f_1}, H_{f_2}, \cdots]$
 
 - Chain Rule: Write out tree of dependent variables:
 ```latex {cmd=true, hide=true, run_on_save=true}
