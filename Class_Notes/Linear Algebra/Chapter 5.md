@@ -69,7 +69,7 @@ Notice that we can then form a "residual" vector $\vector r = \vector x - \vecto
 **Projection Onto a Subspace**
 In general, supposing one has a subspace $S = \mathrm{span}\theset{\vector y_1, \vector y_2, \cdots, \vector y_n}$ and (importantly!) the $\vector y_i$ are orthogonal, then the projection of $\vector p$ of $x$ onto $S$ is given by the sum of the projections onto each basis vector, yielding
 $$
-\vector p = \sum_{i=1}^n \frac{\inner{\vector x}{\vector y_i}}{\inner{\vector y_i}{\vector y_i}} \vector y_i = \sum_{i=1}^n \inner{\vector x}{\vector y_i} \hat{\vector y_i}
+\vector p = \sum_{i=1}^n \frac{\inner{\vector x}{\vector y_i}}{\inner{\vector y_i}{\vector y_i}} \vector y_i = \sum_{i=1}^n \inner{\vector x}{\vector y_i} \hat{\vector y_i}.
 $$
 
 ## Subspaces
