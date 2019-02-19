@@ -205,11 +205,11 @@ $$
 which projects a vector onto the unit sphere in $\RR^n$ by normalizing. Then,
 
 $$\begin{align*}
-u_1 &= N(\vector{x_1}) \\
-u_2 &= N(\vector x_2 - \inner{\vector x_2}{\vector u_1}\vector u_1)\\
-u_3 &= N(\vector x_3 - \inner{\vector x_3}{\vector u_1}\vector u_1 - \inner{\vector x_3}{\vector u_2}\vector u_2 ) \\
+\vector u_1 &= N(\vector{x_1}) \\
+\vector u_2 &= N(\vector x_2 - \inner{\vector x_2}{\vector u_1}\vector u_1)\\
+\vector u_3 &= N(\vector x_3 - \inner{\vector x_3}{\vector u_1}\vector u_1 - \inner{\vector x_3}{\vector u_2}\vector u_2 ) \\
 \vdots & \qquad \vdots \\
-u_k &= N(\vector x_k - \sum_{i=1}^{k-1} \inner{\vector x_k}{\vector u_i}\vector u_i)
+\vector u_k &= N(\vector x_k - \sum_{i=1}^{k-1} \inner{\vector x_k}{\vector u_i}\vector u_i)
 \end{align*}$$
 
 In words, at each stage, we take one of the original vectors $\vector x_i$, then subtract off its projections onto all of the $\vector u_i$ we've created up until that point. This leaves us with only the component of $\vector x_i$ that is orthogonal to the span of the previous $\vector u_i$ we already have, and we then normalize each $\vector u_i$ we obtain this way.
