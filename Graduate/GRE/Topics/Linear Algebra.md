@@ -22,7 +22,7 @@ $$
 - $A \in \mathrm{Mat}(m,n)$ represents a linear map $T: \RR^n \to \RR^m$
   - Note the contravariance here!
 - Rank: number of nonzero rows in RREF
-- $\mathrm{Trace}(A) = \sum_{i=1}^m A_{i,i}$
+- $\mathrm{Trace}(A) = \sum_{i=1}^m A_{ii}$
 - Elementary row operations / matrices:
 	- Permute rows
 	- Multiple a row by a scalar
