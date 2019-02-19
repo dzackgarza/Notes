@@ -242,7 +242,7 @@ $$
 $$
 - Fundamental Subspace Theorems
 $$
-\im(A)^\perp
+\im(A) \perp
 $$
 
 # Fundamental Spaces
