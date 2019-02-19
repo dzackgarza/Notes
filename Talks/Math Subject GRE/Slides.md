@@ -184,7 +184,7 @@ Lines
 $$
 Ax + By + C = 0
 \hspace{8em}
-\vector x = \vector p + t\vector v \\ \\
+\vector x = \vector p + t\vector v \\
 \vector x \in L \iff \inner{\vector x}{\vector n} = 0
 $$
 
