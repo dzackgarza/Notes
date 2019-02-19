@@ -107,7 +107,7 @@ Given two subspace $S_1$ and $S_2$ where $S_1^\perp = S_2$, we occasionally writ
 
 An important property is that any choice of subspace $S\subseteq V$ yields a decomposition $V = S \oplus S^\perp$. 
 
-One important property of projections is that for any vector $\vector v$ and for any subspace $S$, we have $\vector v - P_S(\vector v) \in S^\perp$. Moreover, if $\vector v \in S^\perp$, then $P_s(\vector v)$ must be zero. This follows by noting that in equation $\reg{projection_equation}$
+One important property of projections is that for any vector $\vector v$ and for any subspace $S$, we have $\vector v - P_S(\vector v) \in S^\perp$. Moreover, if $\vector v \in S^\perp$, then $P_s(\vector v)$ must be zero. This follows by noting that in equation $\ref{projection_equation}$
 
 **The Fundamental Subspaces Theorem**
 
