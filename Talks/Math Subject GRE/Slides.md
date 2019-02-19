@@ -183,8 +183,8 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to 
 Lines
 $$
 Ax + By + C = 0
-\hspace{8em}
-\vector x = \vector p + t\vector v \\
+\hspace{4em}
+\vector x = \vector p + t\vector v
 \vector x \in L \iff \inner{\vector x}{\vector n} = 0
 $$
 
