@@ -102,6 +102,9 @@ presentation:
 <!-- slide -->
 # Basic Algebra
 
+<!-- slide vertical=true-->
+# Basic 
+
 
 <!-- slide -->
 # Single Variable Calculus
