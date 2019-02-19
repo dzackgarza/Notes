@@ -189,7 +189,7 @@ $$
 ## Optimization
 **Lagrange Multipliers:**
 $$ 
-\text{Optimize } f(\mathbf x) \\ \text{subject to } g(\mathbf x) = c \\ \implies \nabla f = \lambda \nabla g
+\text{Optimize } f(\mathbf x) \text{ subject to } g(\mathbf x) = c \\ \implies \nabla f = \lambda \nabla g
 $$
 Generally a system of nonlinear equations, common tricks to solve.
 
