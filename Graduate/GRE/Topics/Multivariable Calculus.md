@@ -95,7 +95,8 @@ Where the subscripts denote which variables are held constant.
 	- Extrema occur on boundaries, so parametrize each boundary to obtain a function in one less variable and apply standard optimization techniques to yield critical points. Test all critical points to find extrema.
 - Constrained by an equation:
 	- If possible, use constraint to just reduce equation to one dimension and optimze like single-variable case. Otherwise,
-	- **Lagrange Multipliers**. The setup:
+	- **Lagrange Multipliers**. 
+	- The setup:
 	$$ \text{Optimize } f(\mathbf x) \\ \text{subject to } g(\mathbf x) = c \\ \implies \nabla f = \lambda \nabla g$$
 	1. Use this formula to obtain a system of equations in the components of $x$ and the parameter $\lambda$.
 	2. Use $\lambda$ to obtain a relation involving only components of $\mathbf{x}$.
