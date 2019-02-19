@@ -201,7 +201,7 @@ Let $S$ be a surface. **Key Insight: The gradient of a function is normal to its
 	- $S = \theset{f(x,y, z) = 0}$
 		- $\nabla f$ is a normal vector zero level set.
 		- Just write the tangent plane equation $\inner{\vector n}{\vector x - \vector p_0}$.
-	- $z = g(x,y)$:
+	- $S$ is given by $z = g(x,y)$:
 		- Let $f(x, y, z) = g(x,y) - z$, then $\vector p \in S \iff \vector p$ is in a level set of $f$.
 		- $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
 		- Proceed as in previous case
