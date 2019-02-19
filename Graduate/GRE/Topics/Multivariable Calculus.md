@@ -33,7 +33,7 @@ D_f(\mathbf a)
 = \left[ \begin{array} { c c c c } { \frac { \partial f _ { 1 } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { 1 } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \ldots } & { \frac { \partial f _ { 1 } } { \partial x _ { n } } ( \mathbf { a } ) } \\ { \frac { \partial f _ { 2 } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { 2 } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \dots } & { \frac { \partial f _ { 2 } } { \partial x _ { n } } ( \mathbf { a } ) } \\ { \vdots } & { \vdots } & { \ddots } & { \vdots } \\ { \frac { \partial f _ { m } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { m } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \cdots } & { \frac { \partial f _ { m } } { \partial x _ { n } } ( \mathbf { a } ) } \end{array} \right].
 $$
 
-(Note that this is also sometimes referred to as the *Jacobian* matrix, and generalizes the first derivative.)
+Note that this is also sometimes referred to as the *Jacobian* matrix, and generalizes the first derivative. When $D_f$ exists, it is the best linear approximation to $f$ in a neighborhood of $\vector a$.
 
 For a function $f: \RR^n \to \RR$, the **Hessian** is a generalization of the second derivative, and is given in coordinates by $(H_f)_{ij} = \dd{^2}{x_i x_j}f$. Explicitly, we have
 
