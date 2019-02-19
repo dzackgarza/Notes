@@ -40,7 +40,7 @@ $$
 	- Also determined by two points $\mathbf p_0, \mathbf p_1$ using $\mathbf n = \mathbf p_0 \times \mathbf p_1$
 
 - **Normal vector to a plane**
-	- Can read normal off of equation: $\mathbf n = {a,b,c]$
+	- Can read normal off of equation: $\mathbf n = [a,b,c]$
 
 - Other Facts
 	$$
