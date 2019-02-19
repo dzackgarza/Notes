@@ -181,9 +181,12 @@ $$
 **Single variable:** solve $\dd{}{x} f(x) = 0$ to find critical points $c_i$ then check min/max by computing $\dd{^2}{x^2}f(c_i)$.
 
 **Multivariable:** solve $\nabla f(\vector x) = 0$ for critical points $\vector c_i$, then check min/max by computing the determinant of the Hessian:
-$$\det{H_f}  = f_{xx} f_{yy} - 2f_{xy}^2$$
-(Amounts to seeing if the Hessian is PSD, implying $f$ is convex)
+$$
+H_f({ \mathbf { a } }) = \left[ \begin{array} { c c c } { \frac { \partial ^ { 2 } f } { \partial x _ { 1 } \partial x _ { 1 } } ( \mathbf { a } ) } & { \dots } & { \frac { \partial ^ { 2 } f } { \partial x _ { 1 } \partial x _ { n } } ( \mathbf { a } ) } \\ { \vdots } & { \ddots } & { \vdots } \\ { \frac { \partial ^ { 2 } f } { \partial x _ { n } \partial x _ { 1 } } ( \mathbf { a } ) } & { \cdots } & { \frac { \partial ^ { 2 } f } { \partial x _ { n } \partial x _ { n } } ( \mathbf { a } ) } \end{array} \right].
+$$
 
+<!-- slide vertical=true -->
+## Optimization
 **Lagrange Multipliers:**
 $$
 \nabla f(\vector x) = \lambda \nabla g(\vector x)
