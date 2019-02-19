@@ -24,7 +24,10 @@ Most general case: a function $f: \RR^n \to \RR^m$ is differentiable if there ex
 
 $$
 \lim _ { \mathbf x \rightarrow \mathbf a } \frac { \left\| f (\mathbf x ) - f (\mathbf a ) - D_f (\mathbf x - \mathbf a ) \right\| } { \| \mathbf x - \mathbf a \| } = 0
-\\
+$$
+
+When this transformation exists, it can be given in coordinates by
+$$
 D_f(\mathbf a) = \left[ \begin{array} { c c c c } { \frac { \partial f _ { 1 } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { 1 } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \ldots } & { \frac { \partial f _ { 1 } } { \partial x _ { n } } ( \mathbf { a } ) } \\ { \frac { \partial f _ { 2 } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { 2 } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \dots } & { \frac { \partial f _ { 2 } } { \partial x _ { n } } ( \mathbf { a } ) } \\ { \vdots } & { \vdots } & { \ddots } & { \vdots } \\ { \frac { \partial f _ { m } } { \partial x _ { 1 } } ( \mathbf { a } ) } & { \frac { \partial f _ { m } } { \partial x _ { 2 } } ( \mathbf { a } ) } & { \cdots } & { \frac { \partial f _ { m } } { \partial x _ { n } } ( \mathbf { a } ) } \end{array} \right]
 $$
 
