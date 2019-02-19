@@ -41,7 +41,7 @@ $$
 H_f({ \mathbf { a } }) = \left[ \begin{array} { c c c } { \frac { \partial ^ { 2 } f } { \partial x _ { 1 } \partial x _ { 1 } } ( \mathbf { a } ) } & { \dots } & { \frac { \partial ^ { 2 } f } { \partial x _ { 1 } \partial x _ { n } } ( \mathbf { a } ) } \\ { \vdots } & { \ddots } & { \vdots } \\ { \frac { \partial ^ { 2 } f } { \partial x _ { n } \partial x _ { 1 } } ( \mathbf { a } ) } & { \cdots } & { \frac { \partial ^ { 2 } f } { \partial x _ { n } \partial x _ { n } } ( \mathbf { a } ) } \end{array} \right].
 $$
 
-Concretely, this generalizes the 2nd derivative via the relationship $H_f$
+Concretely, this generalizes the 2nd derivative via the relationship $H_f = D_{\nabla f}$
 In general, for a function $f: \RR^n \to \RR^m$, the second derivative is given as a tensor and is more complicated to work with.
 
 - Chain Rule: Write out tree of dependent variables:
