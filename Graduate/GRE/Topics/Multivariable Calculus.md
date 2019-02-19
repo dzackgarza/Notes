@@ -96,8 +96,10 @@ Where the subscripts denote which variables are held constant.
 - Constrained by an equation:
 	- If possible, use constraint to just reduce equation to one dimension and optimze like single-variable case. Otherwise,
 	- **Lagrange Multipliers**. 
-	- The setup:
-	$$ \text{Optimize } f(\mathbf x) \\ \text{subject to } g(\mathbf x) = c \\ \implies \nabla f = \lambda \nabla g$$
+    	- The setup:
+	$$ 
+	\text{Optimize } f(\mathbf x) \\ \text{subject to } g(\mathbf x) = c \\ \implies \nabla f = \lambda \nabla g
+	$$
 	1. Use this formula to obtain a system of equations in the components of $x$ and the parameter $\lambda$.
 	2. Use $\lambda$ to obtain a relation involving only components of $\mathbf{x}$.
 	3. Substitute relations **back into constraint** to obtain a collection of critical points.
