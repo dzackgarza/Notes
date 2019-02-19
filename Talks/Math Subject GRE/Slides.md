@@ -184,7 +184,7 @@ $$
 $$\det{H_f}  = f_{xx} f_{yy} - 2f_{xy}^2$$
 (Amounts to seeing if the Hessian is PSD, implying $f$ is convex)
 
-Lagrange Multipliers:
+**Lagrange Multipliers:**
 $$
 \nabla f(\vector x) = \lambda \nabla g(\vector x)
 $$
