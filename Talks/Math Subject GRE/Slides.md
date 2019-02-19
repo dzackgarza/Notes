@@ -179,6 +179,7 @@ $$
 <!-- slide vertical=true -->
 ## Applications of Integrals
 
+
 <!-- slide vertical=true -->
 ## Optimization
 **Single variable:** solve $\dd{}{x} f(x) = 0$ to find critical points $c_i$ then check min/max by computing $\dd{^2}{x^2}f(c_i)$.
