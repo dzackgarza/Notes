@@ -178,8 +178,8 @@ $$
 
 <!-- slide vertical=true -->
 ## Optimization
-Solve $\dd{}{x} f(x) = 0$.
-
+Single variable: solve $\dd{}{x} f(x) = 0$.
+Multivariable: $$H_f = \det(J_f) = f_{xx} f_{yy} - 2f_{xy}^2$$
 
 ## Linear Approximation
 $$
