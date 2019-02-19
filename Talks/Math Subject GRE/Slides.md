@@ -188,8 +188,8 @@ $$
 <!-- slide vertical=true -->
 ## Optimization
 **Lagrange Multipliers:**
-$$
-\nabla f(\vector x) = \lambda \nabla g(\vector x)
+$$ 
+\text{Optimize } f(\mathbf x) \\ \text{subject to } g(\mathbf x) = c \\ \implies \nabla f = \lambda \nabla g
 $$
 Generally a system of nonlinear equations, common tricks to solve.
 
