@@ -122,7 +122,7 @@ $$
 
 
 ## Normal Lines
-Key insight: the gradient is normal.
+Key idea: the gradient is normal.
 
 To find a normal line, you just need a single point $\vector{p}$ and a normal vector $\vector n$; then $$
 L = \theset{\vector x \mid \vector x = \vector p + t\vector v}
