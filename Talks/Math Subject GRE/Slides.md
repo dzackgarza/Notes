@@ -241,6 +241,8 @@ $$
 \abs{\ker(A)} + \abs{\im(A)} = \abs{\mathrm{domain}(A)}
 $$
 
+# 
+
 <!-- slide vertical=true -->
 ## Topics
 - Systems of equations
