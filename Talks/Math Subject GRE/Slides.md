@@ -151,7 +151,7 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute the
 
 <!-- slide vertical=true -->
 ## Use Simple Techniques
-Use simple techniques when possible
+When possible, of course.
 
 $$
 \frac{a}{b+\sqrt{c}} = \frac{a}{b+\sqrt{c}} \left( \frac {b-\sqrt c} {b-\sqrt c} \right) = \frac {a(b-\sqrt c)} {b^2 - c} \\
