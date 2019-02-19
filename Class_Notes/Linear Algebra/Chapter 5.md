@@ -151,7 +151,7 @@ $$
 
 From these, by letting $A=I$ we can derive
 $$
-\dd{}{\vector x} \inner{\vector x}{\vector x} = \dd{}{\vector x} \norm{\vector x}^2 = 2\vector x\\
+\dd{}{\vector x} \norm{\vector x}^2 = \dd{}{\vector x} \inner{\vector x}{\vector x} = 2\vector x\\
 $$
 
 The derivation proceeds by solving the equation
