@@ -208,6 +208,8 @@ $$
 $$
     - So $\nabla f$ is normal to level sets, compute $\nabla f = [\dd{}{x}g, \dd{}{y}g, -1]$
 		- Proceed as in previous case 
+
+
 <!-- slide vertical=true -->
 ## Applications of Integrals
 
