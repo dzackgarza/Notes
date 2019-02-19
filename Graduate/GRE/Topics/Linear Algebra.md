@@ -60,7 +60,7 @@ Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ 
 
 Defined as $\inner{\vector a}{\vector b} = \sum_i a_i b_i$. Can also be written as $\vector a^T\vector b$ or $\vector a \cdot \vector b$. 
 
-Defines a norm $\norm{\vector a} = \sqrt{\inner{\vector a}{\vector a}}$; also leads to a notion of angle via the formula $\inner{\vector a}{\vector b} = \norm{\vector a} \norm{\vector b} \cos \theta_{a,b}$.
+Yields a norm $\norm{\vector a} = \sqrt{\inner{\vector a}{\vector a}}$; also leads to a notion of angle via the formula $\inner{\vector a}{\vector b} = \norm{\vector a} \norm{\vector b} \cos \theta_{a,b}$.
 
 
 Satisfies three properties:
