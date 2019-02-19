@@ -240,3 +240,5 @@ $$R =
 \vdots & \vdots & \vdots & \ddots \\
 \end{bmatrix}
 $$
+
+Todo: explain shortcut for diagonals.
