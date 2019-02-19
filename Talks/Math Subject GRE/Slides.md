@@ -143,7 +143,7 @@ $$
 ## Important Extras
 The Fundamental Theorem of Calculus
 $$
-\frac{d}{dx} \int_a^x f(t)~dt = f(x), \int _a^x f'(t)dt = f(x) 
+\frac{d}{dx} \int_a^x f(t)~dt = f(x), \int _a^b f'(t)dt = f(b) - f(a), \text{etc} 
 $$
 Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ and commute the derivative/integral
 
