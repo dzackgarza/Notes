@@ -33,7 +33,7 @@ A x + B y + C z + D = 0
 ax + by + cz = d
 \hspace{4em}
 \mathbf x(t,s) = \mathbf p + t\mathbf v_1 + s\mathbf v_2 \\ \\
-\mathbf x \in P \iff \inner[\mathbf n]{\mathbf x - \mathbf p_0} = 0
+\mathbf x \in P \iff \inner{\mathbf n}{\mathbf x - \mathbf p_0} = 0
 $$
 
 - Determined by a point $\mathbf p_0$ and a normal vector $\mathbf n$
