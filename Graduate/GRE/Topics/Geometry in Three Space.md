@@ -107,7 +107,7 @@ $$
 **The Tangent Plane Equation**: 
 For any locus $f(\mathbf x) = 0$, we have
 $$
-\mathbf{x} \in T_f(\mathbf p_0) \implies \inner}\nabla f(\mathbf p_0)}{\mathbf x-\mathbf p_0} = 0 
+\mathbf{x} \in T_f(\vector p_0) \implies \inner}\nabla f(\mathbf p_0)}{\mathbf x-\mathbf p_0} = 0 
 $$
 
 
