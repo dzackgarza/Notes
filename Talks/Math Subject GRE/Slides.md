@@ -191,7 +191,24 @@ $$
 $$ 
 \text{Optimize } f(\mathbf x) \text{ subject to } g(\mathbf x) = c \\ \implies \nabla \vector f = \lambda \nabla \vector g
 $$
-Generally a system of nonlinear equations, common tricks to solve.
+Generally a system of nonlinear equations, but there are common tricks to solve.
+
+<!-- slide vertical=true -->
+## Multivariable Chain Rule
+```latex {cmd=true, hide=true, run_on_save=true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & u \arrow[dd] \arrow[rr] \arrow[rrdd] &  & x \\
+z \arrow[rd] \arrow[ru] \arrow[rrru] \arrow[rrrd] &  &  &  \\
+ & v \arrow[rr] \arrow[rruu] &  & y
+\end{tikzcd}
+\end{document}
+```
 
 <!-- slide vertical=true -->
 ## Linear Approximation
