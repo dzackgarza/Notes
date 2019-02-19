@@ -78,11 +78,11 @@
 - Matrix definition of the derivative, i.e. the Jacobian: $$(J_f)_{ij} = \frac{\partial f_i}{\partial x_j}$$
 - The Hessian: $$H_f = \det(J_f) = f_{xx} f_{yy} - 2f_{xy}^2$$
 - Equations of common shapes and surfaces:
-	- A plane: Given $\bar n, \bar p_0$
-	$$\left< x-\bar p_0, \bar n\right> = 0$$
-	- A line: Given $\bar p_0, p_1$
-	$$x-\bar p_0 = t(\bar p_1 - \bar p_0)$$ or
-	$$ x = t\bar p_0 + (1-t)\bar p_1$$
+	- A plane: Given $\vector n, \vector p_0$
+	$$\left< x-\vector p_0, \vector n\right> = 0$$
+	- A line: Given $\vector p_0, p_1$
+	$$x-\vector p_0 = t(\vector p_1 - \vector p_0)$$ or
+	$$ x = t\vector p_0 + (1-t)\vector p_1$$
 - Finding intersections between lines/planes/surfaces/arbitrary equations
 
 
@@ -99,7 +99,7 @@
 		- Positive definite: Max
 		- Any equal to 0: Inconclusive
 - Lagrange Multipliers
-	- $\nabla f(\bar x) = \lambda \nabla g(\bar x)$
+	- $\nabla f(\vector x) = \lambda \nabla g(\vector x)$
 
 ### Differential Equations
 - Separable, linear up to 2nd order, homogeneous and otherwise
