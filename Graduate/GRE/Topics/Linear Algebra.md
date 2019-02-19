@@ -127,7 +127,6 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 - $\abs{\mathrm{rowspace}(A)} = \abs{\mathrm{colspace}(A)}$
 - Proof of Cauchy-Schwarz: See Goode page 346.
 - Distance from a point $p$ to a line $\vector a + t\vector b$: let $\vector w = \vector p - \vector a$, then: $\norm{\vector w - P(\vector w, \vector v)}$
-	- ![distance from line to point](../../images/DistanceFromLineToPoint.png)
 - Computing change of basis matrices: #todo
 - Two step vector subspace test:
 	- Ensure it contains the zero vector
