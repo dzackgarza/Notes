@@ -146,7 +146,7 @@ $$\begin{align*}
 \int_a^b \dd{}{x} f(x)~dx &= f(b) - f(a) \\
 \end{align*}$$
 
-First form !
+First form is usually skimmed over, but very important in GRE!
 
 <!-- slide vertical=true -->
 ## Commuting $D$ and $I$
