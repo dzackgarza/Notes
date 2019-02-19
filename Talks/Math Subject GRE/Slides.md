@@ -141,7 +141,9 @@ $$
 
 <!-- slide vertical=true -->
 ## Important Extras
-Commuting a derivative with an integral
+The Fundamental Theorem of Calculus
+$$
+$$
 
 <!-- slide -->
 # Multivariable Calculus
