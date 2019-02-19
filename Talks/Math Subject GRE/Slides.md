@@ -245,8 +245,9 @@ $$
 \im(A) \perp \ker(A^T), \qquad \ker(A) \perp \im (A^T)
 $$
 
+<!-- slide -->
+# Linear Algebra
 # Fundamental Spaces
-## The Spaces of a Matrix / Linear Map
 - Finding bases for various spaces of $A$:
   - $\mathrm{rowspace} A \subseteq \RR^n$
   	- Reduce to RREF, and take nonzero rows of $\mathrm{RREF}(A)$.
