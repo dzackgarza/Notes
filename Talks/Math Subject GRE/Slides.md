@@ -206,7 +206,7 @@ Let $S$ be a surface. **Key Insight: The gradient of a function is normal to its
 $$
 \vector p \in S \iff \vector p \in \theset{f(x,y,z) = 0}.
 $$
-  - $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
+    - $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
 		- Proceed as in previous case
 		- 
 <!-- slide vertical=true -->
