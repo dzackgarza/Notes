@@ -151,7 +151,7 @@ Key equations: projection and orthogonal projection of $\vector b$ onto $\vector
 
 	- Special case: if $\vector p = \vector 0$ (i.e. **distance from plane to origin**)
 	$$
-	d = \norm{\mathrm{proj}_{\vector n}(\vector q)} = \inner{\vector p}{\vector n} \norm{\vector n}
+	d = \norm{\mathrm{proj}_{\vector n}(\vector q)} = \inner{\vector p}{\vector n} \hat{\vector n}
 	$$
 
 - **Point to line**:
