@@ -37,7 +37,7 @@ $$
 $$
 A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac{1}{\det{A}}\left( \begin{array}{cc} d & -b \\ -c & a \end{array}\right)
 $$
-In words, swap 
+In words, swap the main diagonal entries, and flip the signs on the off-diagonal.
 - Rewriting matrix multiplication:
 $$
 \sum \alpha_i \vector a_i = [\vector a_1, \vector a_2, \cdots] [\alpha_1, \alpha_2, \cdots]^T
