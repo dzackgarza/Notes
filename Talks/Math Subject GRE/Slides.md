@@ -178,6 +178,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Optimization
+Solve $\dd{}{x} f(x) = 0$.
 
 
 ## Linear Approximation
