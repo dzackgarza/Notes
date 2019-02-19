@@ -242,7 +242,7 @@ $$
 $$
 - Fundamental Subspace Theorems
 $$
-\im(A) \perp
+\im(A) \perp \ker(A^T), \qquad \ker(A) \perp \im (A^T)
 $$
 
 # Fundamental Spaces
