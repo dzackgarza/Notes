@@ -130,6 +130,14 @@ presentation:
 - Solids of revolution
 - Series (see real analysis section)
 
+<!-- slide vertical=true -->
+## Use Simple Techniques
+When possible, of course.
+
+$$
+\frac{a}{b+\sqrt{c}} = \frac{a}{b+\sqrt{c}} \left( \frac {b-\sqrt c} {b-\sqrt c} \right) = \frac {a(b-\sqrt c)} {b^2 - c} \\
+\frac{1}{ax^2 + bx + c} = \frac{1}{(x-r_1)(x-r_2)} = \frac{A}{x-r_1} + \frac{B}{x-r_2}
+$$
 
 <!-- slide vertical=true -->
 ## Commuting $D$ and $I$
