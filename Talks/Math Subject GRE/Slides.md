@@ -218,6 +218,8 @@ $$\begin{align*}
 & + \left(\dd{z}{u}\right)_{x,y,v} \left(\dd{u}{v}\right)_{x,y} \left(\dd{v}{x}\right)_y
 \end{align*}$$
 
+*
+
 <!-- slide vertical=true -->
 ## Linear Approximation
 $$
