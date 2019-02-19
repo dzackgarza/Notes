@@ -144,6 +144,7 @@ $$
 The Fundamental Theorem of Calculus
 $$
 $$
+Set $a(x) = a, b(x) = b, f(x,t) = f(t)$.
 
 <!-- slide -->
 # Multivariable Calculus
