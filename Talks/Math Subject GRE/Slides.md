@@ -198,7 +198,7 @@ $$
 ## Tangent Planes and Linear Approximations
 Let $S$ be a surface.
 - Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
-	- $f(x,y, z) = 0$
+	- $S = \theset{f(x,y, z) = 0}$
 		- $\nabla f$ is a normal vector.
 		- Write the tangent plane equation $\inner{\vector n}{\vector x - \vector p_0}$, done.
 	- $z = g(x,y)$:
