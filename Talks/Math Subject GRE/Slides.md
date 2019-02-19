@@ -188,7 +188,7 @@ $$\det{H_f}  = f_{xx} f_{yy} - 2f_{xy}^2$$
 $$
 \nabla f(\vector x) = \lambda \nabla g(\vector x)
 $$
-Generally a system of nonlinear equations, need 
+Generally a system of nonlinear equations, common tricks to solve.
 
 <!-- slide vertical=true -->
 ## Linear Approximation
