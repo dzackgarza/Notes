@@ -178,9 +178,10 @@ $$
 
 <!-- slide vertical=true -->
 ## Optimization
-Single variable: solve $\dd{}{x} f(x) = 0$.
+Single variable: solve $\dd{}{x} f(x) = 0$, 
 Multivariable: $$H_f = \det(J_f) = f_{xx} f_{yy} - 2f_{xy}^2$$
 
+<!-- slide vertical=true -->
 ## Linear Approximation
 $$
 f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2 + o(x^3) \\
