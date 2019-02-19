@@ -99,6 +99,8 @@ presentation:
 - Replicate exam conditions
 - Self care!!
 
+<!-- slide -->
+# Basic Algebra
 
 
 <!-- slide -->
