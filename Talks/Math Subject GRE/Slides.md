@@ -240,8 +240,23 @@ $$
 $$
 \abs{\ker(A)} + \abs{\im(A)} = \abs{\mathrm{domain}(A)}
 $$
+- Fundamental Subspace Theorems
+$$
 
-# 
+$$
+
+# Fundamental Spaces
+## The Spaces of a Matrix / Linear Map
+- Finding bases for various spaces of $A$:
+  - $\mathrm{rowspace} A \subseteq \RR^n$
+  	- Reduce to RREF, and take nonzero rows of $\mathrm{RREF}(A)$.
+  - $\mathrm{colspace} A \subseteq \RR^m$:
+    - Reduce to RREF, and take columns with pivots from original $A$.
+  - $\mathrm{nullspace} A$: 
+    - Reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
+  - Eigenspace: 
+    - For each $\lambda \in \spec(A)$ Compute $\mathrm{nullspace} (A - \lambda I)$
+
 
 <!-- slide vertical=true -->
 ## Topics
