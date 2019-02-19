@@ -182,8 +182,7 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to 
 ## Geometry in $\RR^3$
 Lines
 $$
-Ax + By + C = 0
-\hspace{4em}
+Ax + By + C = 0,~
 \vector x = \vector p + t\vector v
 \vector x \in L \iff \inner{\vector x}{\vector n} = 0
 $$
