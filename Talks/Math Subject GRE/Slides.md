@@ -182,6 +182,7 @@ $$
 
 **Multivariable:** solve $\nabla f(\vector x) = 0$ for critical points $\vector c_i$, then check
 $$\det{H_f}  = f_{xx} f_{yy} - 2f_{xy}^2$$
+(Amounts to seeing if the Hessian is positive definite, implying $f$ is convex)
 
 Lagrange Multipliers:
 $$
