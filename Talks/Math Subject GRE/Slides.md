@@ -196,7 +196,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Tangent Planes and Linear Approximations
-Let $S$ be a surface.
+Let $S$ be a surface. 
 - Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
 	- $S = \theset{f(x,y, z) = 0}$
 		- $\nabla f$ is a normal vector to the zero level set of $f$.
