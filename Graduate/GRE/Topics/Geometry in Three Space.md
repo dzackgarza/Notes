@@ -29,9 +29,7 @@ $$
 ## Planes
 $$
 A x + B y + C z + D = 0
-\hspace{4em}
-ax + by + cz = d
-\hspace{4em}
+\hspace{8em}
 \vector x(t,s) = \vector p + t\vector v_1 + s\vector v_2 \\ \\
 \vector x \in P \iff \inner{\vector n}{\vector x - \vector p_0} = 0
 $$
