@@ -101,7 +101,7 @@ $$
 P_S(\vector v) = \sum_{i=1}^k \inner{\vector v}{\hat {\vector s_i}}\hat{\vector s_i }
 $$
 
-This can be computed by forming the change-of-basis matrix $S = [\vector s_1, \vector s_2, \cdots]$, and then forming the matrix [^projmatrix]
+This can be computed by forming the change-of-basis matrix $S = [\vector s_1, \vector s_2, \cdots]$, and then forming the matrix 
 $$
 P_S = S(S^T S)^{-1}S^T.
 $$
