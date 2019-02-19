@@ -143,6 +143,7 @@ $$
 ## Important Extras
 The Fundamental Theorem of Calculus
 $$
+\frac{d}{dx} \int_{a(x)}^{b(x)} f(x,t) dt 
 $$
 Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ and commute the derivative/integral
 
