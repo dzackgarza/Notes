@@ -142,14 +142,13 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 
 ## Gram-Schmidt Process
 Extending $\theset{\mathbf{x}_i}$ to an orthonormal basis
-$$
-\mathbf{v}_1 = \mathbf{x_1}\\
-\mathbf{v}_2 = \mathbf{x}_2 - P(\mathbf{x}_2, \mathbf{v}_1) \\
-\mathbf{v}_3 = \mathbf{x_3} - P(\mathbf{x}_3, \mathbf{v_1}) - P(\mathbf{x}_3, \mathbf{v}_2)
-\\ \dots \\
-\mathbf { v } _ { i } = \mathbf{x_i} - \sum_{k=1}^{i-1}P(\mathbf{x}_i, \mathbf{v}_k)
-= \mathbf { x } _ { i } - \sum _ { k = 1 } ^ { i - 1 } \frac { \left\langle \mathbf { x } _ { i } , \mathbf { v } _ { k } \right\rangle } { \left\| \mathbf { v } _ { k } \right\| ^ { 2 } } \mathbf { v } _ { k }
-$$
+$$\begin{align*}
+\vector u_1 &= N(\vector{x_1}) \\
+\vector u_2 &= N(\vector x_2 - \inner{\vector x_2}{\vector u_1}\vector u_1)\\
+\vector u_3 &= N(\vector x_3 - \inner{\vector x_3}{\vector u_1}\vector u_1 - \inner{\vector x_3}{\vector u_2}\vector u_2 ) \\
+\vdots & \qquad \vdots \\
+\vector u_k &= N(\vector x_k - \sum_{i=1}^{k-1} \inner{\vector x_k}{\vector u_i}\vector u_i)
+\end{align*}$$
 
 
 ## Inverting a Matrix
