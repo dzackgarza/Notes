@@ -1,24 +1,24 @@
 ## Plane Geometry
 - Useful to know: rotation matrices
  	$$
-	\mathbf{R}_\theta = \left[ \begin{array} { l l } { \cos \theta } & { - \sin \theta } \\ { \sin \theta } & { \cos \theta } \end{array} \right] \implies \mathbf{R}_\frac{\pi}{2} = \left[ \begin{array} { l l } { 0 } & { - 1 } \\ { 1 } & { 0 } \end{array}\right] \implies \mathbf{R}_\frac{\pi}{2} \begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}{-y \\ x}\end{bmatrix}
+	\vector{R}_\theta = \left[ \begin{array} { l l } { \cos \theta } & { - \sin \theta } \\ { \sin \theta } & { \cos \theta } \end{array} \right] \implies \vector{R}_\frac{\pi}{2} = \left[ \begin{array} { l l } { 0 } & { - 1 } \\ { 1 } & { 0 } \end{array}\right] \implies \vector{R}_\frac{\pi}{2} \begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}{-y \\ x}\end{bmatrix}
 	$$
-	- Example use: given $\mathbf{v}, \mathbf{R}_\frac{\pi}{2}\mathbf v \perp \mathbf v$, so useful to obtain normals or other perpendicular vectors in the plane.
-- Useful trick: given $\mathbf v = [a,b,c]$, one perpendicular vector is $\mathbf v^\perp = [c,c, -(a+b)]$ as long as $\mathbf v \neq [-1,-1,0]$ - in this case, choose $\mathbf v^\perp = [-(b+c), a, a]$.
-- Slope of a line in $\RR^2$: $$\mathbf{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$
-- Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \mathbf{v}^\perp = [-y, x]$$
+	- Example use: given $\vector{v}, \vector{R}_\frac{\pi}{2}\vector v \perp \vector v$, so useful to obtain normals or other perpendicular vectors in the plane.
+- Useful trick: given $\vector v = [a,b,c]$, one perpendicular vector is $\vector v^\perp = [c,c, -(a+b)]$ as long as $\vector v \neq [-1,-1,0]$ - in this case, choose $\vector v^\perp = [-(b+c), a, a]$.
+- Slope of a line in $\RR^2$: $$\vector{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$
+- Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \vector{v}^\perp = [-y, x]$$
 - Circle in polar coordinates: centered at $(0, a) \implies r= a\sin\theta$
 
 ## Lines
 $$
 Ax + By + C = 0
 \hspace{8em}
-\mathbf x = \mathbf p + t\mathbf v \\ \\
-\mathbf x \in L \iff \inner{\mathbf x}{\mathbf n} = 0
+\vector x = \vector p + t\vector v \\ \\
+\vector x \in L \iff \inner{\vector x}{\vector n} = 0
 $$
 
-- Determined by a point $\mathbf p$ and a vector $\mathbf v$ on the line.
-	- Also determined by two points $\mathbf p_0, \mathbf p_1$ by taking $\mathbf v = \mathbf p_1 - \mathbf p_0$
+- Determined by a point $\vector p$ and a vector $\vector v$ on the line.
+	- Also determined by two points $\vector p_0, \vector p_1$ by taking $\vector v = \vector p_1 - \vector p_0$
 - Symmetric Equation (sometimes useful)
 	- Obtained by isolating $t$ in each component and setting results equal:
 $$
@@ -32,34 +32,34 @@ A x + B y + C z + D = 0
 \hspace{4em}
 ax + by + cz = d
 \hspace{4em}
-\mathbf x(t,s) = \mathbf p + t\mathbf v_1 + s\mathbf v_2 \\ \\
-\mathbf x \in P \iff \inner{\mathbf n}{\mathbf x - \mathbf p_0} = 0
+\vector x(t,s) = \vector p + t\vector v_1 + s\vector v_2 \\ \\
+\vector x \in P \iff \inner{\vector n}{\vector x - \vector p_0} = 0
 $$
 
-- Determined by a point $\mathbf p_0$ and a normal vector $\mathbf n$
-	- Also determined by two points $\mathbf p_0, \mathbf p_1$ using $\mathbf n = \mathbf p_0 \times \mathbf p_1$
+- Determined by a point $\vector p_0$ and a normal vector $\vector n$
+	- Also determined by two points $\vector p_0, \vector p_1$ using $\vector n = \vector p_0 \times \vector p_1$
 
 - **Normal vector to a plane**
-	- Can read normal off of equation: $\mathbf n = [a,b,c]$
+	- Can read normal off of equation: $\vector n = [a,b,c]$
 
 - Other Facts
 	$$
-	d =  \inner{\mathbf n}{\mathbf p_0} = n_1p_1 + n_2p_2 + n_3p_3
+	d =  \inner{\vector n}{\vector p_0} = n_1p_1 + n_2p_2 + n_3p_3
 	$$
 
-	- Useful trick: once you compute $\mathbf n$, you can compute $d = \inner{\mathbf n}{\mathbf p}$ for _any_ point in the plane (don't necessarily need to use the one you started with, so pick any point that's convenient to calculate)
+	- Useful trick: once you compute $\vector n$, you can compute $d = \inner{\vector n}{\vector p}$ for _any_ point in the plane (don't necessarily need to use the one you started with, so pick any point that's convenient to calculate)
 
 ## Surfaces
 $$
 S = \theset{(x,y,z) \mid f(x,y, z) = 0} \hspace{10em} z = f(x,y)
 $$
 - **Tangent plane to a surface**:
-	- Need a point $\mathbf{p}$ and a normal $\mathbf{n}$. By cases:
+	- Need a point $\vector{p}$ and a normal $\vector{n}$. By cases:
 	- $f(x,y, z) = 0$
 		- $\nabla f$ is a normal vector.
-		- Write the tangent plane equation $\inner{\mathbf n}{\mathbf x - \mathbf p_0}$, done.
+		- Write the tangent plane equation $\inner{\vector n}{\vector x - \vector p_0}$, done.
 	- $z = g(x,y)$:
-		- Let $f(x, y, z) = g(x,y) - z$, then $\mathbf p \in S \iff \mathbf p$ is in a level set of $f$.
+		- Let $f(x, y, z) = g(x,y) - z$, then $\vector p \in S \iff \vector p$ is in a level set of $f$.
 		- $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
 		- Proceed as in previous case
 
@@ -72,26 +72,26 @@ $$
 
 - Equations of lines tangent to an intersection of surfaces $f(x,y,z) = g(x,y,z)$:
 	- Find two normal vectors and take their cross product, e.g. $n = \nabla f \times \nabla g$, then
-	$$L = \theset{\mathbf x\mid \mathbf x = \mathbf p + t \mathbf n}$$
+	$$L = \theset{\vector x\mid \vector x = \vector p + t \vector n}$$
 
 - Level curves:
 	- Given a surface $f(x,y,z) = 0$, the level curves are obtained by looking at e.g. $f(x,y,c) = 0$.
 
 ## Curves
 $$
-\mathbf r(t) = [x(t), y(t), z(t)]
+\vector r(t) = [x(t), y(t), z(t)]
 $$
 
 - **Tangent line to a curve**
-	- Use the fact that $\mathbf r'(t)$ is a tangent vector to $\mathbf r(t)$
+	- Use the fact that $\vector r'(t)$ is a tangent vector to $\vector r(t)$
 $$
-\mathbf T(t) = \mathbf r(t_0) + t\mathbf{r}'(t)
+\vector T(t) = \vector r(t_0) + t\vector{r}'(t)
 $$
 
 - **Normal line to a curve**
-	- Use the fact that $\mathbf{r}''(t) \perp \mathbf{r}'(t)$
+	- Use the fact that $\vector{r}''(t) \perp \vector{r}'(t)$
 $$
-\mathbf N(t) = \mathbf r(t_0) + t \mathbf r''(t)
+\vector N(t) = \vector r(t_0) + t \vector r''(t)
 $$
 	- Special case: Planar Curves and Lines: $y = f(x)$,
 		- Let $g(x, y) = f(x) - y$, then
@@ -105,60 +105,60 @@ $$
 - Key insight: just need a point and a normal vector, and the gradient is normal to level sets.
 
 **The Tangent Plane Equation**: 
-For any locus $f(\mathbf x) = 0$, we have
+For any locus $f(\vector x) = 0$, we have
 $$
-\mathbf{x} \in T_f(\vector p_0) \implies \inner}\nabla f(\mathbf p_0)}{\mathbf x-\mathbf p_0} = 0 
+\vector{x} \in T_f(\vector p_0) \implies \inner}\nabla f(\vector p_0)}{\vector x-\vector p_0} = 0 
 $$
 
 
 ## Normal Lines
 Key insight: the gradient is normal.
 
-To find a normal line, you just need a single point $\mathbf{p}$ and a normal vector $\mathbf n$; then $$
-L = \theset{\mathbf x \mid \mathbf x = \mathbf p + t\mathbf v}
+To find a normal line, you just need a single point $\vector{p}$ and a normal vector $\vector n$; then $$
+L = \theset{\vector x \mid \vector x = \vector p + t\vector v}
 $$
 
 
 
 ## Minimal Distances
-Fix a point $\mathbf p$. Key idea: find a subspace and project onto it.
+Fix a point $\vector p$. Key idea: find a subspace and project onto it.
 
-Key equations: projection and orthogonal projection of $\mathbf b$ onto $\mathbf a$:
+Key equations: projection and orthogonal projection of $\vector b$ onto $\vector a$:
 	$$
-	\mathrm{proj}_\mathbf{a}(\mathbf b) = \inner}\mathbf b}{\mathbf a}\mathbf{\hat a}
+	\mathrm{proj}_\vector{a}(\vector b) = \inner}\vector b}{\vector a}\vector{\hat a}
 	\hspace{8em}
-	\mathrm{proj}_{\mathbf a}^\perp(\mathbf b) = \mathbf b - \mathrm{proj}_\mathbf{a}(\mathbf{b})
+	\mathrm{proj}_{\vector a}^\perp(\vector b) = \vector b - \mathrm{proj}_\vector{a}(\vector{b})
 	$$
 
 - **Point to plane**:
-	- Given a point $\mathbf p$ and a plane $S = \theset{\mathbf{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, find any point $\mathbf q \in S$ and project $\mathbf p -\mathbf q$ onto $S^\perp$ using
+	- Given a point $\vector p$ and a plane $S = \theset{\vector{x} \in \RR^3 \mid n_0x + n_1y + n_2z = d}$, find any point $\vector q \in S$ and project $\vector p -\vector q$ onto $S^\perp$ using
 
 	$$
-	d = \norm{\mathrm{proj}_{\mathbf n}(\mathbf p - \mathbf q)} = \inner}\mathbf p - \mathbf q}{\mathbf q} \norm{\mathbf n}
+	d = \norm{\mathrm{proj}_{\vector n}(\vector p - \vector q)} = \inner}\vector p - \vector q}{\vector q} \norm{\vector n}
 	$$
 
-	- Given just two vectors $\mathbf u, \mathbf v$: manufacture a normal vector $\mathbf n = \mathbf u \times \mathbf v$ and continue as above.
+	- Given just two vectors $\vector u, \vector v$: manufacture a normal vector $\vector n = \vector u \times \vector v$ and continue as above.
 
-	- Special case: if $\mathbf p = \mathbf 0$ (i.e. **distance from plane to origin**)
+	- Special case: if $\vector p = \vector 0$ (i.e. **distance from plane to origin**)
 	$$
-	d = \norm{\mathrm{proj}_{\mathbf n}(\mathbf q)} = \inner}\mathbf p]{\mathbf q} \norm{\mathbf n}
+	d = \norm{\mathrm{proj}_{\vector n}(\vector q)} = \inner}\vector p]{\vector q} \norm{\vector n}
 	$$
 
 - **Point to line**:
 
-	- Given a line $L: \mathbf x(t) = t\mathbf v$ for some fixed $\mathbf v$, use
+	- Given a line $L: \vector x(t) = t\vector v$ for some fixed $\vector v$, use
 	$$
-	d = \norm{\mathrm{proj}_\mathbf{v}^\perp(\mathbf{p})}
+	d = \norm{\mathrm{proj}_\vector{v}^\perp(\vector{p})}
 	$$
-	- Given a line $L: \mathbf x(t) = \mathbf w_0 + t\mathbf w$, let $\mathbf v = \mathbf x(1) - \mathbf x(0)$ and proceed as above.
+	- Given a line $L: \vector x(t) = \vector w_0 + t\vector w$, let $\vector v = \vector x(1) - \vector x(0)$ and proceed as above.
 
 - **Point to a Curve**
 	- Todo
 
 - **Line to line**:
-	- Given $\mathbf{r}_1(t) = \mathbf p_1 + t\mathbf v_2$ and $\mathbf{r}_2(t) = \mathbf p_2 + t\mathbf v_2$:
-		- Let $\mathbf n = \mathbf v_1 \times \mathbf v_2$, which is normal to both lines.
+	- Given $\vector{r}_1(t) = \vector p_1 + t\vector v_2$ and $\vector{r}_2(t) = \vector p_2 + t\vector v_2$:
+		- Let $\vector n = \vector v_1 \times \vector v_2$, which is normal to both lines.
 		- Then project the vector between any two points onto this normal:
 	$$
-	d= \norm{\mathrm{proj}_{\mathbf n}(\mathbf p_2 - \mathbf p_1)}
+	d= \norm{\mathrm{proj}_{\vector n}(\vector p_2 - \vector p_1)}
 	$$
