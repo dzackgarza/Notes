@@ -150,6 +150,8 @@ $$\begin{align*}
 \vector u_k &= N(\vector x_k - \sum_{i=1}^{k-1} \inner{\vector x_k}{\vector u_i}\vector u_i)
 \end{align*}$$
 
+where $N$ denotes normalizing the result.
+
 
 ## Inverting a Matrix
 Equivalent formulas for $A^{-1}$:
