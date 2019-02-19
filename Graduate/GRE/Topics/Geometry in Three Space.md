@@ -44,7 +44,7 @@ $$
 
 - Other Facts
 	$$
-	d =  \inner{\mathbf n]{\mathbf p_0} = n_1p_1 + n_2p_2 + n_3p_3
+	d =  \inner{\mathbf n}{\mathbf p_0} = n_1p_1 + n_2p_2 + n_3p_3
 	$$
 
 	- Useful trick: once you compute $\mathbf n$, you can compute $d = \inner{\mathbf n]{\mathbf p}$ for _any_ point in the plane (don't necessarily need to use the one you started with, so pick any point that's convenient to calculate)
