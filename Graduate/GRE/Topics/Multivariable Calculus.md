@@ -92,7 +92,7 @@ Where the subscripts denote which variables are held constant.
     		- Positive definite $\implies$ convex $\implies$ local min
     		- Negative definite $\implies$ concave $\implies$ local max
 - Constrained by domain:
-	- Extrema occur on boundaries, so parametrize each boundary to obtain a function in one less variable and apply standard optimization techniques to yield critical points. Test all critical points to find extrema.
+	- Extrema occur on boundaries, so parameterize each boundary to obtain a function in one less variable and apply standard optimization techniques to yield critical points. Test all critical points to find extrema.
 - Constrained by an equation:
 	- If possible, use constraint to just reduce equation to one dimension and optimze like single-variable case. Otherwise,
 	- **Lagrange Multipliers**. 
