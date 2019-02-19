@@ -29,7 +29,7 @@ $$
 	- Add any row to another
 - If $A = \thevector{\vector a_1, \vector a_2, \cdots} \in \mathrm{Mat}(m, n)$ and $B = \thevector{\vector b_1, \vector b_2, \cdots} \in\mathrm{Mat}(n, p)$, then
 $$
-C \definedas AB \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a_i}}{\mathbf{b_j}}
+C \definedas AB \implies c_{ij} = \sum_{k=1}^n a_{ik}b_{kj} = \inner{\mathbf{a_i}}{\mathbf{b_j}} = \vector a^T \vector b_j
 $$
   - i.e., entry $c_{ij}$ is obtained by dotting row $i$ of $A$ with column $j$ of $B$.
 - $\det{(A \mod p}) \mod p = (\det{A}) \mod p$
