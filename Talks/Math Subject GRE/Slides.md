@@ -141,13 +141,12 @@ $$
 (Derived from chain rule)
 
 <!-- slide vertical=true -->
-## Important Extras
-The Fundamental Theorems of Calculus
+## The Fundamental Theorems of Calculus
 $$\begin{align*}
 \int_a^b \dd{}{x} f(x)~dx &= f(b) - f(a) \\ \\
 \frac{d}{dx} \int_a^x f(t)~dt &= f(x)
 \end{align*}$$
-Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute the derivative/integral
+Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute the derivative/integral.
 
 <!-- slide vertical=true -->
 ## Use Simple Techniques
