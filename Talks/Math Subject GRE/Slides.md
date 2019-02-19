@@ -196,8 +196,16 @@ $$
 
 <!-- slide vertical=true -->
 ## More Geometry in $\RR^3$
-Tangent plane to a surface $f(x,y,z) = 0$:
-
+Tangent Planes and Linear Approximations
+- Need a point $\vector{p}$ and a normal $\vector{n}$. By cases:
+	- $f(x,y, z) = 0$
+		- $\nabla f$ is a normal vector.
+		- Write the tangent plane equation $\inner{\vector n}{\vector x - \vector p_0}$, done.
+	- $z = g(x,y)$:
+		- Let $f(x, y, z) = g(x,y) - z$, then $\vector p \in S \iff \vector p$ is in a level set of $f$.
+		- $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
+		- Proceed as in previous case
+		- 
 <!-- slide vertical=true -->
 ## Applications of Integrals
 
