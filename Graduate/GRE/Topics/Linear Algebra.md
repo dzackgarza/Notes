@@ -137,7 +137,7 @@ Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties
 	- Counterexample: $\theset{x, x+x^2, 2x-x^2}$ where $W \equiv 0$ but $x+x^2 = 3(x) + (2x-x^2)$.
 	- Sufficient condition: each $f_i$ is the solution to a linear homogeneous ODE $L(y) = 0$.
 - Every square matrix is similar to a matrix in jordan canonical form.
-- Projection onto column space of $A$: given by $P(\vector x) = A(A^t A)^{-1}A^T\vector x$
+- Projection onto column space of $A$: given by $P(\vector x) = A(A^T A)^{-1}A^T\vector x$
 - Normal equations: $\vector x$ is a least squares solution to $A\vector x = \vector b \iff A^T A \vector x = A^T \vector b$
 
 ## Gram-Schmidt Process
