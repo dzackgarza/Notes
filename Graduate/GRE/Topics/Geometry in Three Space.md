@@ -137,7 +137,7 @@ Key equations: projection and orthogonal projection of $\vector b$ onto $\vector
 	$$
 	\mathrm{proj}_\vector{a}(\vector b) = \inner{\vector b}{\vector a}\vector{\hat a}
 	\hspace{8em}
-	\mathrm{proj}_{\vector a}^\perp(\vector b) = \vector b - \mathrm{proj}_\vector{a}(\vector{b})
+	\mathrm{proj}_{\vector a}^\perp(\vector b) = \vector b - \mathrm{proj}_\vector{a}(\vector{b}) = b - \inner{b}{a}\hat a
 	$$
 
 - **Point to plane**:
