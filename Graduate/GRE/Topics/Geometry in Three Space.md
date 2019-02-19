@@ -21,6 +21,7 @@ $$
 - Circle in polar coordinates: centered at $(0, a) \implies r= a\sin\theta$
 
 ## Lines
+
 $$
 Ax + By + C = 0
 \hspace{8em}
