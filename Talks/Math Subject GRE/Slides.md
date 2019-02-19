@@ -245,11 +245,10 @@ $$
 \im(A) \perp \ker(A^T), \qquad \ker(A) \perp \im (A^T)
 $$
 - Definitions
-  - Vector space, subspace, singular, consistent system
+  - Vector space, subspace, singular, consistent system, etc
 
 <!-- slide -->
-# Linear Algebra
-# Fundamental Spaces
+## Fundamental Spaces
 - Finding bases for various spaces of $A$:
   - $\mathrm{rowspace} A \subseteq \RR^n$
   	- Reduce to RREF, and take nonzero rows of $\mathrm{RREF}(A)$.
