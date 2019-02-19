@@ -199,7 +199,7 @@ Given the orthogonal basis $\theset{\vector x_i}$, we form an orthonormal basis 
 First define 
 $$
 N: \RR^n \to S^{n-1} \\
-\vector x \mapsto \frac {\vector x} {\norm{\vector  x}}
+\vector x \mapsto \hat{\vector x} \definedas \frac {\vector x} {\norm{\vector  x}}
 $$
 
 which projects a vector onto the unit sphere in $\RR^n$ by normalizing. Then,
