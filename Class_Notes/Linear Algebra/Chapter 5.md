@@ -69,7 +69,7 @@ Notice that we can then form a "residual" vector $\vector r = \vector x - \vecto
 **Projection Onto a Subspace**
 In general, supposing one has a subspace $S = \mathrm{span}\theset{\vector y_1, \vector y_2, \cdots, \vector y_n}$, then the projection of $\vector p$ of $x$ onto $S$ is given by 
 $$
-\vector p = \sum_{i=1}^n \frac{}{}
+\vector p = \sum_{i=1}^n \frac{}{}\vector y_i
 $$
 
 ## Subspaces
