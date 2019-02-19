@@ -261,6 +261,28 @@ $$
   - Eigenspace: 
     - For each $\lambda \in \spec(A)$ Compute $\ker (A - \lambda I)$
 
+<!-- slide vertical=true -->
+## Big List of Equivalent Properties
+Let $A$ be an $m\times n$ matrix. TFAE:
+- $A$ is invertible and has a unique inverse $A^{-1}$
+- $A^T$ is invertible
+- $\det(A) \neq 0$
+- The linear system $A\vector{x} = \vector{b}$ has a unique solution for every $b\ \in \RR^m$
+- The homogeneous system $A\vector{x} = 0$ has only the trivial solution $\vector{x} = 0$
+- $\rank(A) = n$ 
+  - i.e. $A$ is full rank
+- $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$
+- $A = \prod_{i=1}^k E_i$ for some finite $k$, where each $E_i$ is an elementary matrix.
+- $A$ is row-equivalent to the identity matrix $I_n$
+- $A$ has exactly $n$ pivots
+- The columns of $A$ are a basis for $\RR^n$
+	- i.e. $\mathrm{colspace}(A) = \RR^n$
+- The rows of $A$ are a basis for $\RR^m$
+	- i.e. $\mathrm{rowspace}(A) = \RR^m$
+- $\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A\right)^\perp = \theset{\vector 0}$
+- Zero is not an eigenvalue of $A$.
+- $A$ has $n$ linearly independent eigenvectors
+- The rows of $A$ are coplanar.
 
 <!-- slide vertical=true -->
 ## Topics
