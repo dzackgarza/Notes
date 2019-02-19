@@ -223,7 +223,10 @@ $$\begin{align*}
 <!-- slide vertical=true -->
 ## Linear Approximation
 $$
-f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2 + o(x^3) \\
+f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2 + o(x^3)
+$$
+
+$$
 f(\vector p) \approx f(\vector p) + \nabla f(\vector p)(\vector x - \vector a) + (\vector x - \vector p )^T H_f(p)(\vector x - \vector p) + o(\norm{\vector x - \vector p}^3)
 $$
 
