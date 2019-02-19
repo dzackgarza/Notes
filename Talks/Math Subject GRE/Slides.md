@@ -196,7 +196,7 @@ $$
 
 <!-- slide vertical=true -->
 ## More Geometry in $\RR^3$
-Tangent Planes
+Tangent plane to a surface $f(x,y,z) = 0$:
 
 <!-- slide vertical=true -->
 ## Applications of Integrals
