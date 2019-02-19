@@ -40,14 +40,14 @@ $$
 	- Also determined by two points $\mathbf p_0, \mathbf p_1$ using $\mathbf n = \mathbf p_0 \times \mathbf p_1$
 
 - **Normal vector to a plane**
-	- Can read normal off of equation: $\mathbf n = [a,b,c]$
+	- Can read normal off of equation: $\mathbf n = {a,b,c]$
 
 - Other Facts
 	$$
-	d =  \inner[\mathbf n]{\mathbf p_0} = n_1p_1 + n_2p_2 + n_3p_3
+	d =  \inner{\mathbf n]{\mathbf p_0} = n_1p_1 + n_2p_2 + n_3p_3
 	$$
 
-	- Useful trick: once you compute $\mathbf n$, you can compute $d = \inner[\mathbf n]{\mathbf p}$ for _any_ point in the plane (don't necessarily need to use the one you started with, so pick any point that's convenient to calculate)
+	- Useful trick: once you compute $\mathbf n$, you can compute $d = \inner{\mathbf n]{\mathbf p}$ for _any_ point in the plane (don't necessarily need to use the one you started with, so pick any point that's convenient to calculate)
 
 ## Surfaces
 $$
@@ -57,7 +57,7 @@ $$
 	- Need a point $\mathbf{p}$ and a normal $\mathbf{n}$. By cases:
 	- $f(x,y, z) = 0$
 		- $\nabla f$ is a normal vector.
-		- Write the tangent plane equation $\inner[\mathbf n]{\mathbf x - \mathbf p_0}$, done.
+		- Write the tangent plane equation $\inner{\mathbf n]{\mathbf x - \mathbf p_0}$, done.
 	- $z = g(x,y)$:
 		- Let $f(x, y, z) = g(x,y) - z$, then $\mathbf p \in S \iff \mathbf p$ is in a level set of $f$.
 		- $\nabla f$ is normal to level sets (and thus the surface), so compute $\nabla f = [g_x, g_y, -1]$
