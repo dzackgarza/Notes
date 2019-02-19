@@ -142,9 +142,11 @@ $$
 <!-- slide vertical=true -->
 ## The Fundamental Theorems of Calculus
 $$\begin{align*}
-\int_a^b \dd{}{x} f(x)~dx &= f(b) - f(a) \\ \\
-\frac{d}{dx} \int_a^x f(t)~dt &= f(x)
+\frac{d}{dx} \int_a^x f(t)~dt &= f(x) \\ \\
+\int_a^b \dd{}{x} f(x)~dx &= f(b) - f(a) \\
 \end{align*}$$
+
+Second form is extremely important!
 
 <!-- slide vertical=true -->
 ## Commuting $D$ and $I$
