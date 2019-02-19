@@ -250,26 +250,33 @@ code.language-yaml {
 <h2 class="mume-header" id="projections">Projections</h2>
 
 <p>With an inner product in hand and a notion of orthogonality, we can define a notion of <strong>orthogonal projection</strong> of one vector onto another, and more generally of a vector onto a subspace spanned by multiple vectors.</p>
-<p>Say we have two vectors <span class="mathjax-exps">$\vector x$</span> and <span class="mathjax-exps">$\vector y$</span>, and we want to define &quot;the component of <span class="mathjax-exps">$\vector x$</span> that lies along <span class="mathjax-exps">$\vector y$</span>&quot;, which we&#x2019;ll call <span class="mathjax-exps">$\vector p$</span>. We can work out what the formula should be using a simple model:</p>
+<p><strong>Projection Onto a Vector</strong><br>
+Say we have two vectors <span class="mathjax-exps">$\vector x$</span> and <span class="mathjax-exps">$\vector y$</span>, and we want to define &quot;the component of <span class="mathjax-exps">$\vector x$</span> that lies along <span class="mathjax-exps">$\vector y$</span>&quot;, which we&#x2019;ll call <span class="mathjax-exps">$\vector p$</span>. We can work out what the formula should be using a simple model:</p>
 <p><strong>Figure Here</strong></p>
 <p>We notice that whatever <span class="mathjax-exps">$p$</span> is, it will in the direction of <span class="mathjax-exps">$\vector y$</span>, and thus <span class="mathjax-exps">$\vector p = \lambda \hat {\vector y}$</span> for some scalar <span class="mathjax-exps">$\lambda$</span>, where in fact <span class="mathjax-exps">$\lambda = \norm {\vector p}$</span> since <span class="mathjax-exps">$\norm{\hat{\vector y}} = 1$</span>. We will find that \lambda = <span class="mathjax-exps">$\inner{\vector x}{\hat{\vector y}}$</span>, and so<br>
 </p><div class="mathjax-exps">$$\vector p = \inner{\vector x}{\hat{\vector y}}\hat{\vector y} = \frac{\inner{\vector x}{\vector y}}{\inner{\vector y}{\vector y}} \vector y$$</div><p></p>
 <p>Notice that we can then form a &#x201C;residual&#x201D; vector <span class="mathjax-exps">$\vector r = \vector x - \vector p$</span>, which should satisfy <span class="mathjax-exps">$\vector r \perp \vector p$</span>. If we were to let <span class="mathjax-exps">$\lambda$</span> vary as a function of a parameter <span class="mathjax-exps">$t$</span> (making <span class="mathjax-exps">$\vector r$</span> a function of <span class="mathjax-exps">$t$</span> as well) we would find that this particular choice minimizes <span class="mathjax-exps">$\norm{\vector r (t)}$</span>.</p>
+<p><strong>Projection Onto a Subspace</strong><br>
+In general, supposing one has a subspace <span class="mathjax-exps">$S = \mathrm{span}\theset{\vector y_1, \vector y_2, \cdots, \vector y_n}$</span> and (importantly!) the <span class="mathjax-exps">$\vector y_i$</span> are orthogonal, then the projection of <span class="mathjax-exps">$\vector p$</span> of <span class="mathjax-exps">$x$</span> onto <span class="mathjax-exps">$S$</span> is given by the sum of the projections onto each basis vector, yielding<br>
+</p><div class="mathjax-exps">$$\begin{equation}\label{projection_equation} \vector p = \sum_{i=1}^n \frac{\inner{\vector x}{\vector y_i}}{\inner{\vector y_i}{\vector y_i}} \vector y_i = \sum_{i=1}^n \inner{\vector x}{\vector y_i} \hat{\vector y_i}\end{equation}.$$</div><p></p>
+<blockquote>
+<p>Note: this is part of why having an orthogonal basis is desirable!</p>
+</blockquote>
+<p>Letting <span class="mathjax-exps">$A = [\vector y_1, \vector y_2, \cdots]$</span>, then the following matrix projects vectors onto <span class="mathjax-exps">$S$</span>, expressing them in terms of the basis <span class="mathjax-exps">$\vector y_i$</span><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>:<br>
+</p><div class="mathjax-exps">$$\tilde P_A = (AA^T)^{-1}A^T,$$</div><p></p>
+<p>while this matrix performs the projection and expresses it in terms of the standard basis:<br>
+</p><div class="mathjax-exps">$$P_A = A(AA^T)^{-1}A^T.$$</div><p></p>
 <h2 class="mume-header" id="subspaces">Subspaces</h2>
 
 <p>Equation of a plane: given a point <span class="mathjax-exps">$\vector p_0$</span> on a plane and a normal vector <span class="mathjax-exps">$\vector n$</span>, any vector <span class="mathjax-exps">$\vector x$</span> on the plane satisfies<br>
-</p><div class="mathjax-exps">$$\inner{\vector x - \vector p_0}{\vector n} =$$</div><p></p>
+</p><div class="mathjax-exps">$$\inner{\vector x - \vector p_0}{\vector n} = 0$$</div><p></p>
 <p>To find the distance between a point <span class="mathjax-exps">$\vector a$</span> and a plane, we need only project <span class="mathjax-exps">$\vector a$</span> onto the subspace spanned by the normal <span class="mathjax-exps">$\vector n$</span>:<br>
 </p><div class="mathjax-exps">$$d = \inner{\vector a}{\vector n}$$</div><p></p>
-<p>In general, supposing that <span class="mathjax-exps">$S$</span> is a subspace spanned by <span class="mathjax-exps">$\theset{\vector s_i}_{i=1}^k$</span>, there is an operator <span class="mathjax-exps">$P_S$</span> which projects vectors onto the subspace <span class="mathjax-exps">$S$</span>, given by<br>
-</p><div class="mathjax-exps">$$P_S(\vector v) = \sum_{i=1}^k \inner{\vector v}{\hat {\vector s_i}}\hat{\vector s_i }$$</div><p></p>
-<p>This can be computed by forming the change-of-basis matrix <span class="mathjax-exps">$S = [\vector s_1, \vector s_2, \cdots]$</span>, and then forming the matrix <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><br>
-</p><div class="mathjax-exps">$$P_S = S(S^T S)^{-1}S^T.$$</div><p></p>
 <p>Given a subspace <span class="mathjax-exps">$S \subseteq V$</span>, we define its <strong>orthogonal complement</strong><br>
 </p><div class="mathjax-exps">$$S^\perp = \theset{\vector v\in V \suchthat \forall \vector s\in S,~ \inner{\vector v}{\vector s} = 0}.$$</div><p></p>
 <p>Given two subspace <span class="mathjax-exps">$S_1$</span> and <span class="mathjax-exps">$S_2$</span> where <span class="mathjax-exps">$S_1^\perp = S_2$</span>, we occasionally write <span class="mathjax-exps">$S_1 \perp S_2$</span>.</p>
 <p>An important property is that any choice of subspace <span class="mathjax-exps">$S\subseteq V$</span> yields a decomposition <span class="mathjax-exps">$V = S \oplus S^\perp$</span>.</p>
-<p>One important property of projections is that for any vector <span class="mathjax-exps">$\vector v$</span> and for any subspace <span class="mathjax-exps">$S$</span>, we have <span class="mathjax-exps">$\vector v - P_S(\vector v) \in S^\perp$</span>.</p>
+<p>One important property of projections is that for any vector <span class="mathjax-exps">$\vector v$</span> and for any subspace <span class="mathjax-exps">$S$</span>, we have <span class="mathjax-exps">$\vector v - P_S(\vector v) \in S^\perp$</span>. Moreover, if <span class="mathjax-exps">$\vector v \in S^\perp$</span>, then <span class="mathjax-exps">$P_s(\vector v)$</span> must be zero. This follows by noting that in equation <span class="mathjax-exps">$\ref{projection_equation}$</span>, every inner product appearing in the sum vanishes, by definition of <span class="mathjax-exps">$\vector v \in S^\perp$</span>, and so the projection is zero.</p>
 <p><strong>The Fundamental Subspaces Theorem</strong></p>
 <p>Given a matrix <span class="mathjax-exps">$A \in \mathrm{Mat}(m, n)$</span>, and noting that<br>
 </p><div class="mathjax-exps">$$\begin{align*} A &amp;: \RR^n \to \RR^m,\\ A^T &amp;:  \RR^m \to \RR^n \end{align*}$$</div><p></p>
@@ -283,13 +290,15 @@ code.language-yaml {
 <p>Geometrically, the solution is given by projecting <span class="mathjax-exps">$\vector b$</span> onto the column space of <span class="mathjax-exps">$A$</span>. To see why this is the case, define the residual vector <span class="mathjax-exps">$\vector r = A\tilde{\vector x} - \vector b$</span>. We then seek to minimize <span class="mathjax-exps">$\norm{\vector r}$</span>, which happens exactly when <span class="mathjax-exps">$\vector r \perp \im A$</span>. But this happens exactly when <span class="mathjax-exps">$\vector r \in (\im A)^\perp$</span>, which by the fundamental subspaces theorem, is equivalent to <span class="mathjax-exps">$\vector r \in \ker A^T$</span>.</p>
 <p>From this, we get the equation<br>
 </p><div class="mathjax-exps">$$A^T \vector r = \vector 0 \\ \implies A^T(A \tilde{\vector x} - \vector b) = \vector 0\\ \implies A^TA\tilde{\vector x} = A^T \vector b,$$</div><p></p>
-<p>where the last line is described as the <strong>normal equation</strong>.</p>
+<p>where the last line is described as the <strong>normal equations</strong>.</p>
 <p>If <span class="mathjax-exps">$A$</span> is an <span class="mathjax-exps">$m\times n$</span> matrix and is of full rank, so it has <span class="mathjax-exps">$n$</span> linearly independent columns, then one can show that <span class="mathjax-exps">$A^T A$</span> is nonsingular, and we thus arrive at the least-squares solution<br>
 </p><div class="mathjax-exps">$$\tilde{\vector x} = (A^TA)^{-1}A^T \vector b \qed$$</div><p></p>
 <p>These equations can also be derived explicitly using Calculus applied to matrices, vectors, and inner products. This requires the use of the following formulas:<br>
-</p><div class="mathjax-exps">$$\begin{align*} \dd{}{\vector x} \inner{\vector x}{\vector a} &amp;= \vector a \\ \dd{}{\vector x} \inner{\vector x}{\vector x} = \dd{}{\vector x} \norm{\vector x}^2 &amp;= 2\vector x\\ \dd{}{\vector x} \inner{\vector x}{\vector A\vector x} &amp;= (A+A^T)\vector x \end{align*}$$</div><p></p>
+</p><div class="mathjax-exps">$$\begin{align*} \dd{}{\vector x} \inner{\vector x}{\vector a} &amp;= \vector a \\ \dd{}{\vector x} \inner{\vector x}{\vector A\vector x} &amp;= (A+A^T)\vector x \end{align*}$$</div><p></p>
 <p>as well as the adjoint formula<br>
-</p><div class="mathjax-exps">$$\inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}$$</div><p></p>
+</p><div class="mathjax-exps">$$\inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}.$$</div><p></p>
+<p>From these, by letting <span class="mathjax-exps">$A=I$</span> we can derive<br>
+</p><div class="mathjax-exps">$$\dd{}{\vector x} \norm{\vector x}^2 = \dd{}{\vector x} \inner{\vector x}{\vector x} = 2\vector x\\$$</div><p></p>
 <p>The derivation proceeds by solving the equation<br>
 </p><div class="mathjax-exps">$$\dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0.$$</div><p></p>
 <h2 class="mume-header" id="gram-schmidt">Gram-Schmidt</h2>
@@ -311,10 +320,10 @@ code.language-yaml {
 
 <p>Given the orthogonal basis <span class="mathjax-exps">$\theset{\vector x_i}$</span>, we form an orthonormal basis <span class="mathjax-exps">$\theset{\vector u_i}$</span> iteratively as follows.</p>
 <p>First define<br>
-</p><div class="mathjax-exps">$$N: \RR^n \to S^{n-1} \\ x \mapsto \frac {x} {\norm{x}}$$</div><p></p>
+</p><div class="mathjax-exps">$$\begin{align*} N: \RR^n &amp;\to S^{n-1} \\ \vector x &amp;\mapsto \hat{\vector x} \definedas \frac {\vector x} {\norm{\vector  x}} \end{align*}$$</div><p></p>
 <p>which projects a vector onto the unit sphere in <span class="mathjax-exps">$\RR^n$</span> by normalizing. Then,</p>
-<p></p><div class="mathjax-exps">$$\begin{align*} u_1 &amp;= N(\vector{x_1}) \\ u_2 &amp;= N(\vector x_2 - \inner{\vector x_2}{\vector u_1}\vector u_1)\\ u_3 &amp;= N(\vector x_3 - \inner{\vector x_3}{\vector u_1}\vector u_1 - \inner{\vector x_3}{\vector u_2}\vector u_2 ) \\ \vdots &amp; \qquad \vdots \\ u_k &amp;= N(\vector x_k - \sum_{i=1}^{k-1} \inner{\vector x_k}{\vector u_i}\vector u_i) \end{align*}$$</div><p></p>
-<p>In words, at each stage, we take one of the original vectors <span class="mathjax-exps">$\vector x_i$</span>, then subtract off its projections onto all of the <span class="mathjax-exps">$\vector u_i$</span> we&#x2019;ve created up until that point. This leaves us with only the component of <span class="mathjax-exps">$\vector x_i$</span> that is orthogonal to the span of the other <span class="mathjax-exps">$\vector u_i$</span>, and we then normalize to ensure it has norm 1.</p>
+<p></p><div class="mathjax-exps">$$\begin{align*} \vector u_1 &amp;= N(\vector{x_1}) \\ \vector u_2 &amp;= N(\vector x_2 - \inner{\vector x_2}{\vector u_1}\vector u_1)\\ \vector u_3 &amp;= N(\vector x_3 - \inner{\vector x_3}{\vector u_1}\vector u_1 - \inner{\vector x_3}{\vector u_2}\vector u_2 ) \\ \vdots &amp; \qquad \vdots \\ \vector u_k &amp;= N(\vector x_k - \sum_{i=1}^{k-1} \inner{\vector x_k}{\vector u_i}\vector u_i) \end{align*}$$</div><p></p>
+<p>In words, at each stage, we take one of the original vectors <span class="mathjax-exps">$\vector x_i$</span>, then subtract off its projections onto all of the <span class="mathjax-exps">$\vector u_i$</span> we&#x2019;ve created up until that point. This leaves us with only the component of <span class="mathjax-exps">$\vector x_i$</span> that is orthogonal to the span of the previous <span class="mathjax-exps">$\vector u_i$</span> we already have, and we then normalize each <span class="mathjax-exps">$\vector u_i$</span> we obtain this way.</p>
 <h3 class="mume-header" id="the-qr-decomposition">The QR Decomposition</h3>
 
 <p>Gram-Schmidt is often computed to find an orthonormal basis for, say, the range of some matrix <span class="mathjax-exps">$A$</span>. With a small modification to this algorithm, we can write <span class="mathjax-exps">$A = QR$</span> where <span class="mathjax-exps">$R$</span> is upper triangular and <span class="mathjax-exps">$Q$</span> has orthogonal columns.</p>
@@ -325,6 +334,7 @@ code.language-yaml {
 <p></p><div class="mathjax-exps">$$r_{ij} = \begin{cases} \inner{\vector u_i}{\vector x_j}, &amp; i\leq j, \\ 0, &amp; \text{else}. \end{cases}$$</div><p></p>
 <p>Explicitly, this yields the matrix<br>
 </p><div class="mathjax-exps">$$R =  \begin{bmatrix} \inner{\vector u_1}{\vector x_1} &amp; \inner{\vector u_1}{\vector x_2} &amp; \inner{\vector u_1}{\vector x_3} &amp; \cdots &amp; \\ 0 &amp; \inner{\vector u_2}{\vector x_2} &amp; \inner{\vector u_2}{\vector x_3} &amp; \cdots &amp; \\ 0 &amp; 0 &amp; \inner{\vector u_3}{\vector x_3} &amp; \cdots &amp; \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots \\ \end{bmatrix}$$</div><p></p>
+<p>Todo: explain shortcut for diagonals.</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
