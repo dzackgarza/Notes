@@ -191,7 +191,7 @@ Planes
 $$
 A x + B y + C z + D = 0
 \vector x(t,s) = \vector p + t\vector v_1 + s\vector v_2 \\
-\vector x \in P \iff \inner{\vector n}{\vector x - \vector p_0} = 0
+\vector x \in P \iff \inner{\vector x - \vector p_0}{\vector n} = 0
 $$
 
 <!-- slide vertical=true -->
