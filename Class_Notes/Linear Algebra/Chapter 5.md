@@ -146,7 +146,12 @@ $$\begin{align*}
 
 as well as the adjoint formula
 $$
-\inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}
+\inner{A\vector x}{\vector x} = \inner{\vector x}{A^T \vector x}.
+$$
+
+From these, by letting $A=I$ we can derive
+$$
+\dd{}{\vector x} \inner{\vector x}{\vector x} = \dd{}{\vector x} \norm{\vector x}^2 &= 2\vector x\\
 $$
 
 The derivation proceeds by solving the equation
