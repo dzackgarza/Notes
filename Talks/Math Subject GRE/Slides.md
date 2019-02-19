@@ -244,6 +244,8 @@ $$
 $$
 \im(A) \perp \ker(A^T), \qquad \ker(A) \perp \im (A^T)
 $$
+- Definitions
+  - Vector space, subspace, singular, consistent system
 
 <!-- slide -->
 # Linear Algebra
