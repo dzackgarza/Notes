@@ -112,7 +112,7 @@ $$
 ---
 
 ## Tangent Lines / Planes
-- Key insight: just need a point and a normal vector, and the gradient is normal to level sets.
+Key insight: just need a point and a normal vector, and the gradient is normal to level sets.
 
 **The Tangent Plane Equation**: 
 For any locus $f(\vector x) = 0$, we have
