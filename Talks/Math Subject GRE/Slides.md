@@ -181,7 +181,7 @@ $$
 **Single variable:** solve $\dd{}{x} f(x) = 0$ to find critical points $c_i$; check min/max by looking at $\dd{^2}{x^2}f(c_i)$.
 
 **Multivariable:** solve $\nabla f(\vector x) = 0$
-$$H_f = \det(J_f) = f_{xx} f_{yy} - 2f_{xy}^2$$
+$$\det{H_f}  = f_{xx} f_{yy} - 2f_{xy}^2$$
 
 Lagrange Multipliers:
 $$
