@@ -195,9 +195,9 @@ A x + B y + C z + D = 0,~
 $$
 
 <!-- slide vertical=true -->
-## More Geometry in $\RR^3$
-Tangent Planes and Linear Approximations
-- Need a point $\vector{p}$ and a normal $\vector{n}$. By cases:
+## Tangent Planes and Linear Approximations to a Surface $S$
+Let $S$ be a surface.
+- Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
 	- $f(x,y, z) = 0$
 		- $\nabla f$ is a normal vector.
 		- Write the tangent plane equation $\inner{\vector n}{\vector x - \vector p_0}$, done.
