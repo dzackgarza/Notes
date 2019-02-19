@@ -132,6 +132,10 @@ presentation:
 - Solids of revolution
 - Series (see real analysis section)
 
+
+<!-- slide vertical=true -->
+
+
 <!-- slide -->
 # Multivariable Calculus
 
