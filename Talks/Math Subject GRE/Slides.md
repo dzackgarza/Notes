@@ -149,6 +149,14 @@ $$\begin{align*}
 \end{align*}$$
 Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute the derivative/integral
 
+<!-- slide vertical=true -->
+## Important Extras
+Use simple techniques when possible
+
+$$
+\frac{a}{b+\sqrt{c}}
+$$
+
 <!-- slide -->
 # Multivariable Calculus
 
