@@ -90,7 +90,7 @@
 ### Approximation and Optimization
 - Linear approximation
 	$$f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2 + o(x^3)$$
-	$$f(\vector p) \approx f(\bar p) + \nabla f(\bar p)(\bar x - \bar a) + (\bar x - \bar p )^T H_f(p)(\bar x - \bar p) + o(\norm{\bar x - \bar p}^3)$$
+	$$f(\vector p) \approx f(\vector p) + \nabla f(\v p)(\bar x - \bar a) + (\bar x - \bar p )^T H_f(p)(\bar x - \bar p) + o(\norm{\bar x - \bar p}^3)$$
 - Single variable
 	- Second derivative test #TODO
 - Multivariable
