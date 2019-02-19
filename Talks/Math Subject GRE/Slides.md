@@ -146,7 +146,7 @@ $$\begin{align*}
 \int_a^b \dd{}{x} f(x)~dx &= f(b) - f(a) \\
 \end{align*}$$
 
-Second form is extremely important!
+First form is extremely important!
 
 <!-- slide vertical=true -->
 ## Commuting $D$ and $I$
