@@ -178,7 +178,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Optimization
-Single variable: solve $\dd{}{x} f(x) = 0$, check min/max by looking at $\dd{^2}{x^2}f(c_i)$.
+Single variable: solve $\dd{}{x} f(x) = 0$ to find critical points $c_i$; check min/max by looking at $\dd{^2}{x^2}f(c_i)$.
 Multivariable: $$H_f = \det(J_f) = f_{xx} f_{yy} - 2f_{xy}^2$$
 
 <!-- slide vertical=true -->
