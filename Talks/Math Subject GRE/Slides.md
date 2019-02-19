@@ -181,6 +181,7 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to 
 <!-- slide vertical=true -->
 ## Geometry in $\RR^3$
 
+
 <!-- slide vertical=true -->
 ## Applications of Integrals
 
