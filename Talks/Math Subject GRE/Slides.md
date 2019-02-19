@@ -103,7 +103,7 @@ presentation:
 # Basic Algebra
 
 <!-- slide vertical=true-->
-# Basic 
+# Basic Algebra
 
 
 <!-- slide -->
