@@ -176,7 +176,8 @@ $$
 - The divergence theorem
 - Stoke's Theorem
 
-
+<!-- slide vertical=true -->
+# Lagrange Multipliers
 
 
 <!-- slide -->
