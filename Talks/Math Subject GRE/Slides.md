@@ -144,7 +144,7 @@ $$
 The Fundamental Theorem of Calculus
 $$
 $$
-Set $a(x) = a, b(x) = b, f(x,t) = f(t)$.
+Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ and commute the derivative/integral
 
 <!-- slide -->
 # Multivariable Calculus
