@@ -26,7 +26,7 @@ $$
 \lim _ { \mathbf x \rightarrow \mathbf a } \frac { \left\| f (\mathbf x ) - f (\mathbf a ) - D_f (\mathbf x - \mathbf a ) \right\| } { \| \mathbf x - \mathbf a \| } = 0
 $$
 
-When this transformation exists, it can be given in coordinates by
+When this transformation exists, it can be given in coordinates by taking the gradient of each component of $f$, evaluating at the point $\vector a$
 $$
 D_f(\mathbf a) 
 = [\nabla f_1(\vector a), ~\nabla f_2(\vector a), ~\cdots]^T 
