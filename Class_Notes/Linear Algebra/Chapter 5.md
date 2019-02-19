@@ -74,12 +74,12 @@ $$
 
 Letting $Y = [\vector y_1, \vector y_2, \cdots]$, then the following matrix projects vectors onto $S$, expressing them in terms of the $Y\dash$basis:
 $$
-P = (AA^T)^{-1}A^T,
+\tilde P_A = (AA^T)^{-1}A^T,
 $$
 
 while this matrix performs the projection and expresses it in terms of the standard basis:
 $$
-P = A(AA^T)^{-1}A^T.
+P_A = A(AA^T)^{-1}A^T.
 $$
 
 ## Subspaces
