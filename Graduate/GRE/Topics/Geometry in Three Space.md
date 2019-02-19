@@ -6,7 +6,8 @@ $$
   - Example use: given $\vector{v}$, the rotated vector $\vector{R}_\frac{\pi}{2}\vector v \perp \vector v$, so useful to obtain normal or other perpendicular vectors in the plane.
 - Useful trick: given $\vector v = [a,b,c]$, one perpendicular vector is $\vector v^\perp = [c,c, -(a+b)]$ as long as $\vector v \neq [-1,-1,0]$ - in this case, choose $\vector v^\perp = [-(b+c), a, a]$.
 - Slope of a line in $\RR^2$: $$\vector{v} = [x, y] \in \RR^2 \implies  m = \frac{y}{x}$$
-- Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \vector{v}^\perp = [-y, x]$$
+- Normal to a line in $\RR^2$: $$m^\perp = \frac{-1}{m} \implies \vector{v}^\perp = [-y, x]
+$$
 - Circle in polar coordinates: centered at $(0, a) \implies r= a\sin\theta$
 
 ## Lines
