@@ -177,7 +177,8 @@ $$
 - Stoke's Theorem
 
 <!-- slide vertical=true -->
-## Lagrange Multipliers
+## Optimization
+
 
 ## Linear Approximation
 $$
