@@ -38,10 +38,6 @@ $$
 A^{-1} = \left( \begin{array}{cc} a & b \\ c & d \end{array}\right)^{-1} = \frac{1}{\det{A}}\left( \begin{array}{cc} d & -b \\ -c & a \end{array}\right)
 $$
 In words, swap the main diagonal entries, and flip the signs on the off-diagonal.
-- Rewriting matrix multiplication:
-$$
-\sum \alpha_i \vector a_i = [\vector a_1, \vector a_2, \cdots] [\alpha_1, \alpha_2, \cdots]^T
-$$
 
 ## Systems of Linear Equations
 Notation: Let $A\vector x = \vector b$ be a linear system, $r = \rank(A)$ and $ r_b = \rank([A \mid \vector b])$.
