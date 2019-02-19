@@ -195,6 +195,10 @@ A x + B y + C z + D = 0,~
 $$
 
 <!-- slide vertical=true -->
+## More Geometry in $\RR^3$
+Tangent Planes
+
+<!-- slide vertical=true -->
 ## Applications of Integrals
 
 
