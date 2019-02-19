@@ -3,7 +3,7 @@
 $$
 \vector{R}_\theta = \left[ \begin{array} { l l } { \cos \theta } & { - \sin \theta } \\ { \sin \theta } & { \cos \theta } \end{array} \right] \implies \vector{R}_\frac{\pi}{2} = \left[ \begin{array} { l l } { 0 } & { - 1 } \\ { 1 } & { 0 } \end{array}\right] \implies \vector{R}_\frac{\pi}{2} \begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}{-y \\ x}\end{bmatrix}
 $$
-  - Example use: given $\vector{v}$, the rotated vector $\vector{R}_\frac{\pi}{2}\vector v$ is orthogonal to $\vector v$, so useful to obtain normal or other orthogonal vectors in the plane.
+  - Example use: given $\vector{v}$, the rotated vector $\vector{R}_\frac{\pi}{2}\vector v$ is orthogonal to $\vector v$. This is a useful way to obtain normal or other orthogonal vectors in the plane.
 - Useful trick: given $\vector v = [a,b,c]$, one perpendicular vector is $\vector v^\perp = [c,c, -(a+b)]$ as long as $\vector v \neq [-1,-1,0]$ - in this case, choose $\vector v^\perp = [-(b+c), a, a]$.
 
 - Slope of a line in $\RR^2$: 
