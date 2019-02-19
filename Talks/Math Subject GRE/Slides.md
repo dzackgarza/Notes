@@ -195,7 +195,7 @@ A x + B y + C z + D = 0,~
 $$
 
 <!-- slide vertical=true -->
-## Tangent Planes and Linear Approximations to a Surface
+## Tangent Planes and Linear Approximations
 Let $S$ be a surface.
 - Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
 	- $f(x,y, z) = 0$
