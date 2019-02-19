@@ -172,5 +172,5 @@ Key equations: projection and orthogonal projection of $\vector b$ onto $\vector
 		- Then project the vector between any two points onto this normal:
 	$$
 	d= \norm{\mathrm{proj}_{\vector n}(\vector p_2 - \vector p_1)}
-	= \norm{\inner{\vector p_2 -\vector p_1}{}}
+	= \norm{\inner{\vector p_2 -\vector p_1}{\vector v_1 \cross \vector v_2}}
 	$$
