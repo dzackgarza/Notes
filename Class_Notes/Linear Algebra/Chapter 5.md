@@ -74,7 +74,7 @@ $$
 
 > Note: this is part of why having an orthogonal basis is desirable!
 
-Letting $A = [\vector y_1, \vector y_2, \cdots]$, then the following matrix projects vectors onto $S$, expressing them in terms of the basis $\vector y_i$:
+Letting $A = [\vector y_1, \vector y_2, \cdots]$, then the following matrix projects vectors onto $S$, expressing them in terms of the basis $\vector y_i$[^projmatrix]:
 $$
 \tilde P_A = (AA^T)^{-1}A^T,
 $$
