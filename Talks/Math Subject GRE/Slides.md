@@ -145,7 +145,6 @@ $$\begin{align*}
 \int_a^b \dd{}{x} f(x)~dx &= f(b) - f(a) \\ \\
 \frac{d}{dx} \int_a^x f(t)~dt &= f(x)
 \end{align*}$$
-Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute the derivative/integral.
 
 <!-- slide vertical=true -->
 ## Commuting $D$ and $I$
@@ -155,6 +154,8 @@ $$
 $$
 
 *(Derived from chain rule)*
+
+Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute the derivative/integral.
 
 
 
