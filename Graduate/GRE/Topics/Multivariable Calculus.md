@@ -10,7 +10,7 @@ $\vec{v} = [v_1, v_2, \cdots]$
 - Definition:
 $$
 f: \RR^n \to \RR \\
-\dd[f]{x_i}(\mathbf p)  = \lim_{h\to 0}\frac{f(\mathbf p + h\mathbf e_i)  - f(\mathbf p)}{h}
+\dd{f}{x_i}(\mathbf p)  = \lim_{h\to 0}\frac{f(\mathbf p + h\mathbf e_i)  - f(\mathbf p)}{h}
 $$
 
 Most common case:
