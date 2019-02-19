@@ -89,8 +89,8 @@ Where the subscripts denote which variables are held constant.
 	- Mnemonic: make matrix with $\nabla f$ as the columns, and then differentiate variables left to right.
 	- What's really going on:
 		- Eigenvalues have same sign $\iff$ positive definite or negative definite
-		- Positive definite $\implies$ convex $\implies$ local min
-		- Negative definite $\implies$ concave $\implies$ local max
+    		- Positive definite $\implies$ convex $\implies$ local min
+    		- Negative definite $\implies$ concave $\implies$ local max
 - Constrained by domain:
 	- Extrema occur on boundaries, so parametrize each boundary to obtain a function in one less variable and apply standard optimization techniques to yield critical points. Test all critical points to find extrema.
 - Constrained by an equation:
