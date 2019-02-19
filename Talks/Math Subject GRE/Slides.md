@@ -100,13 +100,6 @@ presentation:
 - Self care!!
 
 <!-- slide -->
-# Basic Algebra
-
-<!-- slide vertical=true-->
-# Basic Algebra
-
-
-<!-- slide -->
 # Single Variable Calculus
 
 <!-- slide vertical=true -->
