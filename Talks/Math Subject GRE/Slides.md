@@ -186,7 +186,7 @@ H_f({ \mathbf { a } }) = \left[ \begin{array} { c c c } { \frac { \partial ^ { 2
 $$
 
 <!-- slide vertical=true -->
-## Optimization
+## Optimization (cont)
 **Lagrange Multipliers:**
 $$ 
 \text{Optimize } f(\mathbf x) \text{ subject to } g(\mathbf x) = c \\ \implies \nabla \vector f = \lambda \nabla \vector g
