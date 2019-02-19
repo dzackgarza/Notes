@@ -150,7 +150,7 @@ $$\begin{align*}
 Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute the derivative/integral
 
 <!-- slide vertical=true -->
-## Important Extras
+## Use Simple Techniques
 Use simple techniques when possible
 
 $$
