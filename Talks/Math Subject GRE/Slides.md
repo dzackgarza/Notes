@@ -522,6 +522,10 @@ $$
 
 <!-- slide vertical=true -->
 ## Definitions
+- Fermat's Little Theorem
+$$
+a^p = a \mod p
+$$
 
 <!-- slide vertical=true -->
 ## Advanced Topics
