@@ -107,7 +107,7 @@ General series of steps: want to know some unknown rate $y_t$
 - Arc lengths
 	$$
 	ds = \sqrt{dx^2 + dy^2}\qquad L = \int ~ds \\
-	= \int_{x_0}^{x_1}\sqrt{1 + \dd[y]{x}}~dx \\
+	= \int_{x_0}^{x_1}\sqrt{1 + \dd{y}{x}}~dx \\
 	= \int_{y_0}^{y_1}\sqrt{\dd[x]{y} + 1}~dy
 	$$
 	- $SA = \int 2 \pi r(x) ~ds$
