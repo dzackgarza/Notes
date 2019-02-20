@@ -498,15 +498,15 @@ d\mid x \and d\mid y \implies  d \mid \gcd(x,y) \\ \quad \and \gcd(x,y) = d\gcd(
 $$
   - Also works for $\mathrm{lcm}(x,y)$
   - Computing $\gcd(x,y)$: take prime factorization of $x$ and $y$. Take only the distinct primes they have in common. Then take the minimum exponent of each.
-- The totient function
-- Group-theoretic properties of $\ZZ/n\ZZ$
 
 <!-- slide vertical=true -->
 ## Definitions
-  - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
-	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
-		- Also holds for lcm, $\mathrm{lcm}(x,y) = d~\mathrm{lcm}(\frac x d, \frac y d)$
-	- Can compute gcd by taking prime factorization, intersection of primes occurring, and lowest exponent occurring.
+- The totient function
+- Group-theoretic properties of $\ZZ/n\ZZ$
+- $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
+- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
+- Also holds for lcm, $\mathrm{lcm}(x,y) = d~\mathrm{lcm}(\frac x d, \frac y d)$
+- Can compute gcd by taking prime factorization, intersection of primes occurring, and lowest exponent occurring.
 
 
 
