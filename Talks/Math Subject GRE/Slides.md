@@ -224,7 +224,7 @@ $$
 <!-- slide vertical=true -->
 ## Advanced Series
 - **Cauchy Criteria**:
-    - Let $s_k = \sum_{i=1}^k a_i$, then
+    - Let $s_k = \sum_{i=1}^k a_i$ be the $k\dash$th partial sum, then
 	$$
 	\sum a_i \text{ converges } \iff \theset{s_k} \text{ is a Cauchy sequence},
 	$$
