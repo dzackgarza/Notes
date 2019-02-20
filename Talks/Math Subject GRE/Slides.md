@@ -437,7 +437,7 @@ $$
   - Complex conjugates $\alpha \pm \beta i$: $$y(x) = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$$
 
 <!-- slide vertical=true -->
-## Systems of ODEs
+## IVP for a System of ODEs
 $$\vector{x}'(t) = A\vector{x}(t) + \vector{b}(t)$$
 
 General solution given by 
