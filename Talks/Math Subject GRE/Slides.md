@@ -225,7 +225,7 @@ $$
 ## Advanced Series
 - **Cauchy Criteria**:
 	$$
-	\limsup a_i \to 0 \implies \sum a_i \text{ converges }
+	\limsup a_i \to 0 \iff \sum a_i \text{ converges }
 	$$
 - **Weierstrass $M$ Test**:
 	 $$ 
