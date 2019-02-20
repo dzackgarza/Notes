@@ -486,7 +486,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 ## Definitions
 - Divisibility and modular congruence:
 $$
-a\mid b \iff b = 0 \mod a
+a\mid b \iff b = 0 \mod a \iff \exists c \sucthat 
 $$
 -  The fundamental theorem of arithmetic: 
 $$
