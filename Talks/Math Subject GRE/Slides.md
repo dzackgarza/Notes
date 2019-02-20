@@ -510,7 +510,8 @@ $$
 $$
   - Computing $\phi$:
 $$
-\gcd(a,b) = 1 \implies \phi(ab) = \phi(a)\phi(b)
+\gcd(a,b) = 1 \implies \phi(ab) = \phi(a)\phi(b) \\
+
 $$
 
 - Group-theoretic properties of $\ZZ/n\ZZ$
