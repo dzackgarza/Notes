@@ -438,6 +438,9 @@ $$
 
 <!-- slide vertical=true -->
 ## IVP for a System of ODEs
+
+- Separable
+$$\frac{dy}{dx} = f(x)g(y) \implies \int \frac{1}{g(y)}dy = \int f(x) dx + C$$
 $$\vector{x}'(t) = A\vector{x}(t) + \vector{b}(t)$$
 
 General solution given by 
