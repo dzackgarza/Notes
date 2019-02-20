@@ -117,7 +117,7 @@ presentation:
 - Computing linear approximations
 
 <!-- slide vertical=true -->
-## Integrals
+## Integral
 - Riemann sum definition of the integral
 - The fundamental theorem of Calculus (both forms)
 - Computing antiderivatives
