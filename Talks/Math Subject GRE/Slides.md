@@ -508,6 +508,10 @@ $$
 $$
 \phi(a) = \abs{\theset{x \in \NN \suchthat x \leq a \and \gcd(x,a) = 1}}
 $$
+  - Computing $\phi$:
+$$
+\gcd(a,b) = 1 \implies \phi(
+$$
 
 - Group-theoretic properties of $\ZZ/n\ZZ$
 
