@@ -522,7 +522,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Definitions
-- Fermat's Little Theorem and a Corrolary:
+- Fermat's Little Theorem and Euler's Theorem
 $$
 a^p = a \mod p \implies a^{\phi(p)} = 1 \mod p
 $$
