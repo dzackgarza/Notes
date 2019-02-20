@@ -485,6 +485,7 @@ $$
 $$
 a\in\mathbb Z \implies a = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}
 $$
+
 - Know some group-theoretic properties of $\ZZ/n\ZZ$
 
 <!-- slide vertical=true -->
