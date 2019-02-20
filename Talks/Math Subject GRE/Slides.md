@@ -486,7 +486,7 @@ $$
 a\in\mathbb Z \implies a = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}
 $$
 
-- Know some group-theoretic properties of $\ZZ/n\ZZ$
+- Know some group and ring theoretic properties of $\ZZ/n\ZZ$
   - $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
 
 <!-- slide vertical=true -->
