@@ -226,7 +226,7 @@ $$
 - **Cauchy Criteria**:
     - Let $s_n = \sum_{i=1}^n a_i$, tjhen
 	$$
-	\limsup a_i \to 0 \iff \sum a_i \text{ converges }
+	\sum a_i \text{ converges } \iff \theset{s_n} \text{ is cauchy },
 	$$
 - **Weierstrass $M$ Test**:
 	 $$ 
