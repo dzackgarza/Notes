@@ -443,7 +443,7 @@ $$
 $$\frac{dy}{dx} = f(x)g(y) \implies \int \frac{1}{g(y)}dy = \int f(x) dx + C$$
 $$\vector{x}'(t) = A\vector{x}(t) + \vector{b}(t)$$
 
-- Sytems of ODEs
+- Systems of ODEs
 General solution given by 
 $$
 \vector{x}(t) = \sum_{i=1}^n c_i e^{\lambda_i t}~\vector{v}_i
