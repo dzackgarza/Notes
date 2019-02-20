@@ -427,7 +427,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 $$
 \sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)
 $$
-  - Just write the characteristic polynomial and do algebra.
+  - Just write the characteristic polynomial.
 - Example: A second order homogeneous equation 
 $$
 ay'' + by' + cy = 0 \mapsto ax^2 + bx + c = 0
