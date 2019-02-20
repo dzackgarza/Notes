@@ -519,7 +519,7 @@ $$
 <!-- slide vertical=true -->
 ## Advanced Topics
 - Mobius Inversion
-- 
+- The Legendre/Jacobi Symbols
 
 
 
