@@ -133,7 +133,7 @@ presentation:
 <!-- slide vertical-true -->
 ## Computing Limits
 - Tools for finding $\lim_{x\to a} f(x)$, in order of difficulty:
-	- Plug in: equal to $f(a)$ if continuous
+	- Plug in: equal to $f(a)$ if $f$ is continuous
 	- L'Hopital's Rule (only for indeterminate forms $\frac 0 0, \frac \infty \infty$)
 		- For $\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$, let $L = \lim f^g \implies \ln L = \lim g \ln f$
 	- Algebraic rules
