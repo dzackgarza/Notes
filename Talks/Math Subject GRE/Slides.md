@@ -130,7 +130,7 @@ presentation:
 - Solids of revolution
 - Series (see real analysis section)
 
-<!-- slide vertical-true -->
+<!-- slide vertical=true -->
 ## Computing Limits
 - Tools for finding $\lim_{x\to a} f(x)$, in order of difficulty:
 	- Plug in: equal to $f(a)$ if $f \in C^1(N_\varepsilon(a))$
