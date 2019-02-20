@@ -137,7 +137,7 @@ $$
 	 \implies \exists f\in C^0 : \sum_{n=1}^\infty f_n \rightrightarrows f
 	 $$
 	- $M$ comes from defining $M_k = \sup\theset{f_k(x)}$ and requiring $\sum \abs{M_k} < \infty$
-	- "Absolute convergence of sup norms implies uniform convergence"
+	- "Absolute convergence in the sup norms implies uniform convergence"
 
 ### Showing Divergence
 todo
