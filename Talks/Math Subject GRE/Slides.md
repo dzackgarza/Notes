@@ -149,6 +149,12 @@ $$\begin{align*}
 First form is usually skimmed over in courses, but very important!
 
 <!-- slide vertical=true -->
+## FTC Alternative Forms
+$$
+\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} g(t) dt = g(b(x))b'(x) - g(a(x))a'(x)
+$$
+
+<!-- slide vertical=true -->
 ## Commuting $D$ and $I$
 Commuting a derivative with an integral
 $$
