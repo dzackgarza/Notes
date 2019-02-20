@@ -134,9 +134,9 @@ presentation:
 ## Computing Limits
 - Tools for finding $\lim_{x\to a} f(x)$, in order of difficulty:
 	- Plug in: equal to $f(a)$ if $f \in C_1$
+	- Algebraic Manipulation
 	- L'Hopital's Rule (only for indeterminate forms $\frac 0 0, \frac \infty \infty$)
 		- For $\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$, let $L = \lim f^g \implies \ln L = \lim g \ln f$
-	- Algebraic rules
 	- Squeeze theorem
 	- Expand in Taylor series at $a$
 	- Monotonic + bounded
