@@ -519,6 +519,7 @@ $$
 <!-- slide vertical=true -->
 ## Advanced Topics
 - Mobius Inversion
+- Quadratic residues
 - The Legendre/Jacobi Symbols
 
 
