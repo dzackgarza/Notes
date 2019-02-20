@@ -496,6 +496,7 @@ $$
 $$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)} \\
 d\mid x \and d\mid y \implies  d \mid \gcd(x,y) \\ \quad \and \gcd(x,y) = d\gcd(\frac x d, \frac y d)
 $$
+- Computing $\gcd(x,y)$: take prime factorization of $x$ and $y$.
 - The totient function
 - Group-theoretic properties of $\ZZ/n\ZZ$
 
