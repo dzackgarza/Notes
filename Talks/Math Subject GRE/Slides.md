@@ -200,6 +200,7 @@ $$
 
 <!-- slide vertical=true -->
 ## More Series and Sequences
+You should know some examples of series that converge and diverge
 - **Root Test**
 $$
 R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
