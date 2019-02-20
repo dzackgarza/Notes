@@ -488,6 +488,7 @@ $$
 
 - Know some group and ring theoretic properties of $\ZZ/n\ZZ$
   - $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
+    - This means $ax = b \mod n \iff x = a^{-1}b \mod n$
 
 <!-- slide vertical=true -->
 ## Definitions
