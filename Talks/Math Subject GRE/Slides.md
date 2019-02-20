@@ -430,7 +430,7 @@ $$
   - Just write the characteristic polynomial and do algebra.
 - Example: A second order homogeneous equation 
 $$
-ay'' + by' + cy = 0 \mapsto ax^2 + bx + c = 0 = (x-r_1)(x-r_2) 
+ay'' + by' + cy = 0 \mapsto ax^2 + bx + c = 0
 $$
   - Two distinct roots: $c_1 e^{r_1 x} + c_2 e^{r_2 x}$
   - One real root: $c_1 e^{rx} + c_2 x e^{rx}$
