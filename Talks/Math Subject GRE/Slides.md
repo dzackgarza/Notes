@@ -523,7 +523,9 @@ $$
   - Just take the prime factorization and apply these.
 
 <!-- slide vertical=true -->
-- Chinese Remainder Theorem: the system
+## Chinese Remainder Theorem
+
+The system
 $$
 \begin{array} { c } { x \equiv a _ { 1 } \quad \left( \bmod m _ { 1 } \right) } \\ { x \equiv a _ { 2 } \quad \left( \bmod m _ { 2 } \right) } \\ { \vdots } \\ { x \equiv a _ { r } \quad \left( \bmod m _ { r } \right) } \end{array}
 $$
