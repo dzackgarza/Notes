@@ -504,7 +504,10 @@ $$
 
 <!-- slide vertical=true -->
 ## Definitions
-- The totient function
+- Euler's Totient Funtion
+$$
+\phi(x) = \abs{\theset{x \in \NN \suchthat }}
+$$
 - Group-theoretic properties of $\ZZ/n\ZZ$
 - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 - If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
