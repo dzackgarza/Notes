@@ -232,7 +232,7 @@ $$
 	 \sum_{n=1}^\infty \abs{\norm{f_n}_\infty} < \infty 
 	 \implies \exists f\in C^0 : \sum_{n=1}^\infty f_n \rightrightarrows f
 	 $$
-	- $M$ comes from defining $M_k = \sup\theset{f_k(x)}$ and requiring $\sum \abs{M_k} < \infty$
+	- i.e. define $M_k = \sup\theset{f_k(x)}$ and require that $\sum \abs{M_k} < \infty$
 	- "Absolute convergence in the sup norms implies uniform convergence"
 
 
