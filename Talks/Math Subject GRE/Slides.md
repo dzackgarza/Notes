@@ -450,11 +450,11 @@ $$
 for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
 <!-- slide vertical=true -->
-## Rare
+## Less Common + More Complex
 
 - Integrating factors
 - Change of Variables
-- Inhomogeneous ODEs need a *particular solution*
+- Inhomogeneous ODEs (need a *particular solution*)
   - Variation of parameters
   - Annihilators
   - Undetermined coefficients
