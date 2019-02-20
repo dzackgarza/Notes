@@ -450,7 +450,7 @@ $$
 for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
 <!-- slide vertical=true -->
-## More Complicated Techniques
+## More Concepts
 
 - Integrating factors
 - Exact equations
