@@ -454,9 +454,12 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
 - Integrating factors
 - Exact equations
+- Change of Variables
 - Inhomogeneous ODEs need a *particular solution*
   - Variation of parameters
   - Undetermined coefficients
+  - Reduction of Order
+  - Laplace Transforms
 
 <!-- slide -->
 # Topics: Discrete Mathematics
