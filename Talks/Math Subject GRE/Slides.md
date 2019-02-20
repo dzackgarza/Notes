@@ -506,7 +506,7 @@ $$
 ## Definitions
 - Euler's Totient Funtion
 $$
-\phi(x) = \abs{\theset{x \in \NN \suchthat }}
+\phi(a) = \abs{\theset{x \in \NN \suchthat x < a \and }}
 $$
 - Group-theoretic properties of $\ZZ/n\ZZ$
 - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
