@@ -529,7 +529,7 @@ The system
 $$
 \begin{array} { c } { x \equiv a _ { 1 } \quad \left( \bmod m _ { 1 } \right) } \\ { x \equiv a _ { 2 } \quad \left( \bmod m _ { 2 } \right) } \\ { \vdots } \\ { x \equiv a _ { r } \quad \left( \bmod m _ { r } \right) } \end{array}
 $$
-has a unique solution $x \mod \prod m_i$ iff $(m_i, m_j) = 1$ for each pair $i,j$.
+has a unique solution $\mod \prod m_i$ iff $(m_i, m_j) = 1$ for each pair $i,j$.
 
 The solution is given by
 $$
