@@ -193,16 +193,18 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to 
 $$
 R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
 $$
-- $R < 1$: absolutely convergent
-- $R > 1$: divergent
-- $R = 1$: inconclusive
+  - $R < 1$: absolutely convergent
+  - $R > 1$: divergent
+  - $R = 1$: inconclusive
 - **Root Test**
 $$
 R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
 $$
-- $R < 1$: convergent
-- $R > 1$: divergent
-- $R = 1$: inconclusive
+  - $R < 1$: convergent
+  - $R > 1$: divergent
+  - $R = 1$: inconclusive
+
+
 - **Integral Test**
 $$
 f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
