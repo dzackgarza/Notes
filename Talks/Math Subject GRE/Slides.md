@@ -501,6 +501,7 @@ $$
     - Take prime factorization of $x$ and $y$,
     - Take only the distinct primes they have in common, 
     - Take the minimum exponent appearing
+  
 
 <!-- slide vertical=true -->
 ## Definitions
