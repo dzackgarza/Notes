@@ -224,7 +224,7 @@ $$
 <!-- slide vertical=true -->
 ## Advanced Series
 - **Cauchy Criteria**:
-    - Let $s_n = \sum_{i=1}^n a_i$, then
+    - Let $s_k = \sum_{i=1}^k a_i$, then
 	$$
 	\sum a_i \text{ converges } \iff \theset{s_n} \text{ is a Cauchy sequence},
 	$$
