@@ -505,6 +505,10 @@ $$
 
 <!-- slide vertical=true -->
 ## Definitions
+- Coprime
+$$
+\gcd(a,b) = 1 \iff 
+$$
 - Euler's Totient Funtion
 $$
 \phi(a) = \abs{\theset{x \in \NN \suchthat x < a \and }}
