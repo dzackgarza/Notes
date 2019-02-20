@@ -20,7 +20,7 @@
 $$
 f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f'(p)(b-a)
 $$
-		- Useful variant for integrals and average value: $$f \in C^0(I) \implies \exists p\in I: \int_a^b f(x)~dx = f(p)(b-a)$$
+  - Useful variant for integrals and average value: $$f \in C^0(I) \implies \exists p\in I: \int_a^b f(x)~dx = f(p)(b-a)$$
 	- Rolle's Theorem
 - L'Hopital's Rule: If
 	- $f(x),g(x)$ differentiable on $I - \pt$
