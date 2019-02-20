@@ -507,7 +507,7 @@ $$
 ## Definitions
 - Coprime
 $$
-\gcd(a,b) = 1 \iff 
+a\tex{ is coprime to } b \iff \gcd(a,b) = 1 
 $$
 - Euler's Totient Funtion
 $$
