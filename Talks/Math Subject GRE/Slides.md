@@ -492,6 +492,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
  Divisibility: $a\mid b \iff b = 0 \mod a$
  The fundamental theorem of arithmetic: $n = \prod p_i^{k_i}$
+  $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 
 
 
