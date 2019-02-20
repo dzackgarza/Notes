@@ -507,7 +507,7 @@ $$
 ## Definitions
 - Coprime
 $$
-a\tex{ is coprime to } b \iff \gcd(a,b) = 1 
+a\text{ is coprime to } b \iff \gcd(a,b) = 1 
 $$
 - Euler's Totient Funtion
 $$
