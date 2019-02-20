@@ -222,6 +222,12 @@ a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty
 $$
 
 
+- **Cauchy Criteria**:
+	$$
+	\limsup a_i \to 0 \implies \sum a_i \text{ converges }
+	$$
+
+
 <!-- slide -->
 # Multivariable Calculus
 
