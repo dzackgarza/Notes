@@ -103,7 +103,7 @@ presentation:
 # Single Variable Calculus
 
 <!-- slide vertical=true -->
-## Derivatives
+## Differential
 - Computing limits
 - Showing continuity
 - Computing derivatives
