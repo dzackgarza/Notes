@@ -440,7 +440,7 @@ $$
 ## Systems of ODEs
 $$\vector{x}'(t) = A\vector{x}(t) + \vector{b}(t)$$
 
-General solution given by
+General solution given by $$\vector{x}(t) = e^{\lambda_i t}~\vector{v}_i$ is a solution for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$
 
 
 
