@@ -224,6 +224,7 @@ $$
 <!-- slide vertical=true -->
 ## Advanced Series
 - **Cauchy Criteria**:
+    - Let $s_n = 
 	$$
 	\limsup a_i \to 0 \iff \sum a_i \text{ converges }
 	$$
