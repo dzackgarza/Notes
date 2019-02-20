@@ -490,7 +490,7 @@ a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac
 $$
 -  The fundamental theorem of arithmetic: 
 $$
-n\in\mathbb Z \implies n = \prod p_i^{k_i}
+n\in\mathbb Z \implies n = \prod p_i^{k_i}, p_i \text{ prime}
 $$
 - GCD, LCM
 $$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)} \\
