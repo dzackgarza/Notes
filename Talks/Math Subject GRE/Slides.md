@@ -422,8 +422,8 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 <!-- slide -->
 # Ordinary Differential Equations
 <!-- slide vertical=true -->
-## Easy 
-- Should be able to immediately write solutions to anything of the form 
+## Easy IVPs 
+- Should be able to immediately write solutions to any initial value problem of the form 
 $$
 \sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)
 $$
