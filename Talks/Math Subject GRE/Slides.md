@@ -200,7 +200,7 @@ $$
   - $R = 1$: inconclusive
 
 <!-- slide vertical=true -->
-## More Series and Sequences
+## More Series
 - **Root Test**
 $$
 R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
