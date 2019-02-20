@@ -439,6 +439,7 @@ $$
 <!-- slide vertical=true -->
 ## More Easy IVPs
 
+- The Logistic Equation
 - Separable
 $$\frac{dy}{dx} = f(x)g(y) \implies \int \frac{1}{g(y)}dy = \int f(x) dx + C$$
 
