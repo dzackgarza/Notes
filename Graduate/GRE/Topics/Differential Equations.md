@@ -100,7 +100,7 @@ If $A$ is a matrix of constants: $\vector{x}(t) = e^{\lambda_i t}~\vector{v}_i$ 
 
 Inhomogeneous Equation: particular solutions given by 
 $$
-\vector{x}_p(t) = \vector X(t) \int^t X^{-1}(s)\vec{b(s)}~ds
+\vector{x}_p(t) = \vector X(t) \int^t \vector X^{-1}(s)\vector{b}(s) ~ds
 $$
 
 ## Laplace Transforms
