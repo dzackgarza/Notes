@@ -198,7 +198,6 @@ $$
   - $R > 1$: divergent
   - $R = 1$: inconclusive
 
-
 <!-- slide vertical=true -->
 ## More Series and Sequences
 - **Root Test**
