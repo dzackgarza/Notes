@@ -230,7 +230,7 @@ $$
 - **Weierstrass $M$ Test**:
 	 $$ 
 	 \sum_{n=1}^\infty \abs{\norm{f_n}_\infty} < \infty 
-	 \implies \exists f\in C^0 : \sum_{n=1}^\infty f_n \rightrightarrows f
+	 \implies \exists f\in C^0 \suchthat \\ \sum_{n=1}^\infty f_n \rightrightarrows f
 	 $$
 	- i.e. define $M_k = \sup\theset{f_k(x)}$ and require that $\sum \abs{M_k} < \infty$
 	- "Absolute convergence in the sup norms implies uniform convergence"
