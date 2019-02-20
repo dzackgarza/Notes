@@ -91,7 +91,7 @@ $$
 
 General solution to homogeneous equation:
 $$
-c_1\vector{x_1}(t) + c_2\vector{x_2}(t)+ \cdots +c_n\vector{x_n}(t) = X(t)\vec{c}
+c_1\vector{x_1}(t) + c_2\vector{x_2}(t)+ \cdots +c_n\vector{x_n}(t) = \vector X(t)\vector{c}
 $$
 
 
