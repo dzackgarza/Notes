@@ -487,6 +487,8 @@ a\in\mathbb Z \implies a = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}
 $$
 - Know some group-theoretic properties of $\ZZ/n\ZZ$
 
+<!-- slide vertical=true -->
+## Definitions
 - GCD, LCM
 $$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)} \\
 d\mid x \and d\mid y \implies  d \mid \gcd(x,y) \\ \quad \and \gcd(x,y) = d\gcd(\frac x d, \frac y d)
