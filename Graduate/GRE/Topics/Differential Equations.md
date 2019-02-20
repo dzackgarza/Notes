@@ -86,7 +86,7 @@ $$\begin{align*}
 ## Systems of Differential Equations
 General form: 
 $$
-\frac{\partial \vector{x}(t) }{\partial t} = A\vector {x}(t) + \vector {b}(t) \text{ or } \vector{x}'(t) = A\vector{x}(t) + \mathbf{b}(t)
+\frac{\partial \vector{x}(t) }{\partial t} = A\vector {x}(t) + \vector {b}(t) \text{ or } \vector{x}'(t) = A\vector{x}(t) + \vector{b}(t)
 $$
 
 General solution to homogeneous equation:
