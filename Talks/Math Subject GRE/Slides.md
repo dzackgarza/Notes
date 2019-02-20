@@ -190,7 +190,7 @@ There are exactly 6 tests at our disposal:
 - **Comparison Test**
   - $a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty$
   - $b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty$
-  - You should know some examples of series that converge and diverge
+  - You should know some examples of series that converge and diverge to compare to.
 - **Ratio Test**
 $$
 R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
