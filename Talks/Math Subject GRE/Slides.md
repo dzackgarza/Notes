@@ -470,15 +470,6 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
   - Bernoulli
   - Cauchy-Euler
 
-<!-- slide -->
-# Topics: Discrete Mathematics
-<!-- slide vertical=true -->
-## Topics
-- Graphs, trees
-- Recurrence relations
-
-
-
 
 <!-- slide -->
 # Topics: Number Theory
@@ -532,7 +523,12 @@ $$
 <!-- slide vertical=true -->
 svc 1
 
-
+<!-- slide -->
+# Topics: Discrete Mathematics
+<!-- slide vertical=true -->
+## Topics
+- Graphs, trees
+- Recurrence relations
 
 
 <!-- slide -->
