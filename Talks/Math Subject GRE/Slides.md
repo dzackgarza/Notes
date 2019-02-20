@@ -442,7 +442,7 @@ $$\vector{x}'(t) = A\vector{x}(t) + \vector{b}(t)$$
 
 General solution given by 
 $$
-\vector{x}(t) = \sum_{i=1}^n e^{\lambda_i t}~\vector{v}_i
+\vector{x}(t) = \sum_{i=1}^n c_i e^{\lambda_i t}~\vector{v}_i
 $$ 
 for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
