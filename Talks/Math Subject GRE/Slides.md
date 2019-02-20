@@ -508,8 +508,8 @@ $$
 - Coprime
 $$
 a\text{ is coprime to } b \iff \gcd(a,b) = 1 
-  - Often write $(a,b) = \gcd(a,b)$
 $$
+  - Often write $(a,b) = \gcd(a,b)$
 - Euler's Totient Funtion
 $$
 \phi(a) = \abs{\theset{x \in \NN \suchthat x < a \and }}
