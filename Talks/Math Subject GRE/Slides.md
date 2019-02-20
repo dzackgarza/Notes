@@ -484,8 +484,10 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 # Topics: Number Theory
 <!-- slide vertical=true -->
 ## Topics
-- Divisibility
-- Congruence
+- Divisibility and modular congruence:
+$$
+$a\mid b \iff b = 0 \mod a$
+$$
 - Prime factorization
 - The totient function
 - Group-theoretic properties of $\ZZ/n\ZZ$
