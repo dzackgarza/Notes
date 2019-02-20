@@ -351,6 +351,9 @@ $$
 
 <!-- slide -->
 # Linear Algebra
+
+<!-- slide vertical=true -->
+## Big Theorems
 - Rank Nullity:
 $$
 \abs{\ker(A)} + \abs{\im(A)} = \abs{\mathrm{domain}(A)}
