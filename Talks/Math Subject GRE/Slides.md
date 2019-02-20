@@ -491,6 +491,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 - Group-theoretic properties of $\ZZ/n\ZZ$
 
  Divisibility: $a\mid b \iff b = 0 \mod a$
+ The fundamental theorem of arithmetic: $n = \prod p_i^{k_i}$
 
 
 
