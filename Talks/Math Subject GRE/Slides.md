@@ -186,35 +186,35 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to 
 
 <!-- slide vertical=true -->
 ## Series and Sequences
-	- **Comparison Test**
-		- $a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty$
-		- $b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty$
-	- **Ratio Test**
-		$$
-		R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
-		$$
-		- $R < 1$: absolutely convergent
-		- $R > 1$: divergent
-		- $R = 1$: inconclusive
-	- **Root Test**
-		$$
-		R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
-		$$
-		- $R < 1$: convergent
-		- $R > 1$: divergent
-		- $R = 1$: inconclusive
-	- **Integral Test**
-		$$
-		f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
-		$$
-	- **Limit Test**
-		$$
-		\lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty
-		$$
-	- **Alternating Series Test**
-		$$
-		a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty
-		$$
+- **Comparison Test**
+- $a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty$
+- $b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty$
+- **Ratio Test**
+$$
+R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
+$$
+- $R < 1$: absolutely convergent
+- $R > 1$: divergent
+- $R = 1$: inconclusive
+- **Root Test**
+$$
+R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
+$$
+- $R < 1$: convergent
+- $R > 1$: divergent
+- $R = 1$: inconclusive
+- **Integral Test**
+$$
+f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
+$$
+- **Limit Test**
+$$
+\lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty
+$$
+- **Alternating Series Test**
+$$
+a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty
+$$
 
 
 <!-- slide -->
