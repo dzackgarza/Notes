@@ -204,7 +204,8 @@ $$
   - $R > 1$: divergent
   - $R = 1$: inconclusive
 
-
+<!-- slide vertical=true -->
+## More Series and Sequences
 - **Integral Test**
 $$
 f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
