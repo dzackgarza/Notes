@@ -524,9 +524,8 @@ $$
 ## Definitions
 - Fermat's Little Theorem and a Corrolary:
 $$
-a^p = a \mod p
+a^p = a \mod p \implies a^{\phi(p)} = 1 \mod p
 $$
-  - Corrolary: $a^{\phi(p)} = 1 \mod p$
 
 <!-- slide vertical=true -->
 ## Advanced Topics
