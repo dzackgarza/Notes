@@ -165,7 +165,7 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to 
 	- Disks: $A = \int \pi r(t)^2 ~dt$
 	- Cylinders: $A = \int 2\pi r(t)h(t) ~dt$
 - Arc Lengths
-	- $ds = \sqrt{dx^2 + dy^2}\qquad L = \int ~ds$
+	- $ds = \sqrt{dx^2 + dy^2},\qquad L = \int ~ds$
 
 
 <!-- slide -->
