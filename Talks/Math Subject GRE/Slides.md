@@ -185,7 +185,8 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to 
 	- $ds = \sqrt{dx^2 + dy^2},\qquad L = \int ~ds$
 
 <!-- slide vertical=true -->
-## Series and Sequences
+## Series
+There are exactly 6 tests at our disposal:
 - **Comparison Test**
   - $a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty$
   - $b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty$
