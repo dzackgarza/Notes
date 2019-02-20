@@ -441,7 +441,7 @@ $$
 
 - The Logistic Equation
 $$
-\frac{dP}{dt} = r\left( 1 - \frac{P}{C} \right)P \implies \qquad P(t) = \frac{P_0}{\frac{P_0}{C} + e^{-rt}(1 - \frac{P_0}{C})}
+\frac{dP}{dt} = r\left( 1 - \frac{P}{C} \right)P \implies P(t) = \frac{P_0}{\frac{P_0}{C} + e^{-rt}(1 - \frac{P_0}{C})}
 $$
 
 - Separable
