@@ -488,7 +488,10 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 $$
 $a\mid b \iff b = 0 \mod a$
 $$
--  The fundamental theorem of arithmetic: $n = \prod p_i^{k_i}$
+-  The fundamental theorem of arithmetic: 
+$$
+n\in\mathbb Z \implies n = \prod p_i^{k_i}
+$$
 - The totient function
 - Group-theoretic properties of $\ZZ/n\ZZ$
 
