@@ -423,7 +423,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 # Ordinary Differential Equations
 <!-- slide vertical=true -->
 ## Topics
-- General solutions to 
+- Should be able to immediately write solutions  
 $$
 \sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)
 $$
