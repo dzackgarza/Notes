@@ -527,6 +527,10 @@ $$
 a^p = a \mod p \implies a^{\phi(p)} = 1 \mod p \\
 p \not\mid a \implies a^{p-1} = 1 \mod p
 $$
+- Wilson's Theorem
+$$
+n \text{ is prime } \iff 
+$$
 
 <!-- slide vertical=true -->
 ## Advanced Topics
