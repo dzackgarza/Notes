@@ -483,7 +483,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 <!-- slide -->
 # Topics: Number Theory
 <!-- slide vertical=true -->
-## Topics
+## Definitions
 - Divisibility and modular congruence:
 $$
 a\mid b \iff b = 0 \mod a
@@ -500,7 +500,8 @@ $$
 - The totient function
 - Group-theoretic properties of $\ZZ/n\ZZ$
 
-
+<!-- slide vertical=true -->
+## Definitions
   - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
 		- Also holds for lcm, $\mathrm{lcm}(x,y) = d~\mathrm{lcm}(\frac x d, \frac y d)$
