@@ -456,6 +456,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 - Change of Variables
 - Inhomogeneous ODEs need a *particular solution*
   - Variation of parameters
+  - Annihilators
   - Undetermined coefficients
   - Reduction of Order
   - Laplace Transforms
