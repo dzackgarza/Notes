@@ -226,7 +226,7 @@ $$
 - **Cauchy Criteria**:
     - Let $s_k = \sum_{i=1}^k a_i$, then
 	$$
-	\sum a_i \text{ converges } \iff \theset{s_n} \text{ is a Cauchy sequence},
+	\sum a_i \text{ converges } \iff \theset{s_k} \text{ is a Cauchy sequence},
 	$$
 - **Weierstrass $M$ Test**:
 	 $$ 
