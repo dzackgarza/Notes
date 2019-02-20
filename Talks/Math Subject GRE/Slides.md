@@ -492,12 +492,11 @@ $$
 $$
 n\in\mathbb Z \implies n = \prod p_i^{k_i}
 $$
+- GCD, LCM, etc
+$$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$$
 - The totient function
 - Group-theoretic properties of $\ZZ/n\ZZ$
 
- Divisibility: $a\mid b \iff b = 0 \mod a$
-
-  $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 
   - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 	- If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
