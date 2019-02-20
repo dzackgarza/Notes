@@ -197,6 +197,10 @@ $$
   - $R < 1$: absolutely convergent
   - $R > 1$: divergent
   - $R = 1$: inconclusive
+
+
+<!-- slide vertical=true -->
+## More Series and Sequences
 - **Root Test**
 $$
 R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
@@ -204,9 +208,6 @@ $$
   - $R < 1$: convergent
   - $R > 1$: divergent
   - $R = 1$: inconclusive
-
-<!-- slide vertical=true -->
-## More Series and Sequences
 - **Integral Test**
 $$
 f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
