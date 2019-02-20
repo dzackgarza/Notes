@@ -456,7 +456,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 - Exact equations
 - Inhomogeneous ODEs need a *particular solution*
   - Variation of parameters
-  - 
+  - Undetermined coefficients
 
 <!-- slide -->
 # Topics: Discrete Mathematics
