@@ -513,7 +513,7 @@ $$
 \gcd(a,b) = 1 \implies \phi(ab) = \phi(a)\phi(b) \\
 \phi(p^k) = p^k - p^{k-1}
 $$
-  - So just take the prime factorization and apply these rules.
+  - Just take the prime factorization and apply these.
 
 - Group-theoretic properties of $\ZZ/n\ZZ$
 
