@@ -73,7 +73,7 @@
 - Chain rule: $\dd{x}(f\circ g)(x) = f'(g(x))g'(x)$
 - Product rule: $\dd{x}f(x)g(x) =f'g + g'f$
 	- Note for all rules: always prime the first thing!
-- Quotient rule: $\dd{x} \frac{f(x)}{g(x)} = \frac{f'g - g'f}{g^2}$
+- Quotient rule: $\dd{}{x} \frac{f(x)}{g(x)} = \frac{f'g - g'f}{g^2}$
 	- Mnemonic: Low d-high minus high d-low
 - Inverse rule: $\dd[f^{-1}]{x}(f(x_0)) = \left( \dd[f]{x} \right)^{-1}(x_0) = 1/f'(x_0)$
 - Implicit differentiation: $(f(x))' = f'(x)~dx, (f(y))' = f'(y)~dy$
