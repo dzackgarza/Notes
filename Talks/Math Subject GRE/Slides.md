@@ -484,14 +484,17 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 # Topics: Number Theory
 <!-- slide vertical=true -->
 ## Definitions
+
 - Divisibility and modular congruence:
 $$
 a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac 
 $$
+
 -  The fundamental theorem of arithmetic: 
 $$
 a\in\mathbb Z \implies a = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}
 $$
+
 - GCD, LCM
 $$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)} \\
 d\mid x \and d\mid y \implies  d \mid \gcd(x,y) \\ \quad \and \gcd(x,y) = d\gcd(\frac x d, \frac y d)
@@ -509,10 +512,12 @@ $$
 $$
 a\text{ is coprime to } b \iff \gcd(a,b) = 1 
 $$
+
 - Euler's Totient Funtion
 $$
 \phi(a) = \abs{\theset{x \in \NN \suchthat x \leq a \and \gcd(x,a) = 1}}
 $$
+
 - Group-theoretic properties of $\ZZ/n\ZZ$
 - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
 - If $d\mid x$ and $d\mid y$, then $\gcd(x,y) = d\gcd(\frac x d, \frac y d)$
