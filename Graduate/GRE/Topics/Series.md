@@ -2,7 +2,10 @@
 
 Notation: $\theset{a_n}_{n\in\NN}$ is a **sequence**, $\sum_{i\in\NN} a_i$ is a **series,**.
 
-Radius of convergence: $$L = \lim_{n\to\infty}\abs{\frac{a_{n+1}}{a_n}} \implies R = \frac{1}{L}$$
+Radius of convergence: 
+$$
+L = \lim_{n\to\infty}\abs{\frac{a_{n+1}}{a_n}} \implies R = \frac{1}{L}
+$$
 
 ### Tools for Showing Convergence
 
