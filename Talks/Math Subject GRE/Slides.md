@@ -475,16 +475,17 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 # Topics: Number Theory
 <!-- slide vertical=true -->
 ## Definitions
+-  The fundamental theorem of arithmetic: 
+$$
+a\in\mathbb Z \implies a = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}
+$$
 
 - Divisibility and modular congruence:
 $$
 a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac 
 $$
 
--  The fundamental theorem of arithmetic: 
-$$
-a\in\mathbb Z \implies a = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}
-$$
+
 
 - Know some group and ring theoretic properties of $\ZZ/n\ZZ$
   - $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
