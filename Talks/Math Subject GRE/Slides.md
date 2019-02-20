@@ -521,6 +521,7 @@ $$
 - Mobius Inversion
 - Quadratic residues
 - The Legendre/Jacobi Symbols
+- Quadratic Reciprocity
 
 
 
