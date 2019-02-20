@@ -422,7 +422,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 <!-- slide -->
 # Ordinary Differential Equations
 <!-- slide vertical=true -->
-## Topics
+## Easy 
 - Should be able to immediately write solutions to anything of the form 
 $$
 \sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)
@@ -436,7 +436,9 @@ $$
   - One real root: $$y(x) = c_1 e^{rx} + c_2 x e^{rx}$$
   - Complex conjugates $\alpha \pm \beta i$: $$y(x) = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$$
 
-<!-- 
+<!-- slide vertical=true -->
+## Systems of ODEs
+$$\vector{x}'(t) = A\vector{x}(t) + \vector{b}(t)$$
 
 
 
