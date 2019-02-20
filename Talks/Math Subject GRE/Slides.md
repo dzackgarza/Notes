@@ -494,7 +494,7 @@ n\in\mathbb Z \implies n = \prod p_i^{k_i}
 $$
 - GCD, LCM, etc
 $$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)} \\
-d\mid x \and d\mid y \implies \gcd(x,y) = d\gcd(\frac x d, \frac y d)
+d\mid x \and d\mid y \implies  d \mid \gcd(x,y) \\ \and \gcd(x,y) = d\gcd(\frac x d, \frac y d)
 $$
 - The totient function
 - Group-theoretic properties of $\ZZ/n\ZZ$
