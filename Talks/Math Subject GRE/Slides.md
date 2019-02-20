@@ -440,6 +440,8 @@ $$
 ## Systems of ODEs
 $$\vector{x}'(t) = A\vector{x}(t) + \vector{b}(t)$$
 
+General solution given by
+
 
 
 <!-- slide -->
