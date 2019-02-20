@@ -195,7 +195,7 @@ A x + B y + C z + D = 0,~
 $$
 
 <!-- slide vertical=true -->
-## Tangent Planes and Linear Approximations
+## Tangent Planes/Linear Approximations
 Let $S$ be a surface. **Key Insight: The gradient of a function is normal to its level sets!**
 - Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
 	- $S = \theset{f(x,y, z) = 0}$
