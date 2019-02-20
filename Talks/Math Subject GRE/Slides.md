@@ -529,7 +529,7 @@ p \not\mid a \implies a^{p-1} = 1 \mod p
 $$
 - Wilson's Theorem
 $$
-n \text{ is prime } \iff 
+n \text{ is prime } \iff (n-1)! = -1 \mod 
 $$
 
 <!-- slide vertical=true -->
