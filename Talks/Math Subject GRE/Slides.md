@@ -433,8 +433,8 @@ $$
 ay'' + by' + cy = 0 \mapsto ax^2 + bx + c = 0
 $$
   - Two distinct roots: $$y(x) = c_1 e^{r_1 x} + c_2 e^{r_2 x}$$
-  - One real root: $y(x) = c_1 e^{rx} + c_2 x e^{rx}$
-  - Complex conjugates $\alpha \pm i \beta$: $y(x) = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
+  - One real root: $$y(x) = c_1 e^{rx} + c_2 x e^{rx}$$
+  - Complex conjugates $$\alpha \pm i \beta$: $y(x) = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$$
 
 
 
