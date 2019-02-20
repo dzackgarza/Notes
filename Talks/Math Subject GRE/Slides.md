@@ -451,7 +451,9 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
 <!-- slide vertical=true -->
 ## More Complicated Techniques
+
 - Inhomogeneous ODEs need a *particular solution*
+  - Variation of paramters
   - 
 
 <!-- slide -->
