@@ -522,7 +522,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Definitions
-- Fermat's Little Theorem
+- Fermat's Little Theorem and a Corrolary:
 $$
 a^p = a \mod p
 $$
