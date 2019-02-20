@@ -224,9 +224,9 @@ $$
 <!-- slide vertical=true -->
 ## Advanced Series
 - **Cauchy Criteria**:
-    - Let $s_n = \sum_{i=1}^n a_i$, tjhen
+    - Let $s_n = \sum_{i=1}^n a_i$, then
 	$$
-	\sum a_i \text{ converges } \iff \theset{s_n} \text{ is cauchy },
+	\sum a_i \text{ converges } \iff \theset{s_n} \text{ is Cauchy },
 	$$
 - **Weierstrass $M$ Test**:
 	 $$ 
