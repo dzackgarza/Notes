@@ -424,6 +424,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 
 <!-- slide -->
 # Ordinary Differential Equations
+
 <!-- slide vertical=true -->
 ## Easy IVPs 
 - Should be able to immediately write solutions to any initial value problem of the form 
@@ -476,6 +477,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
 <!-- slide -->
 # Topics: Number Theory
+
 <!-- slide vertical=true -->
 ## Definitions
 -  The fundamental theorem of arithmetic: 
