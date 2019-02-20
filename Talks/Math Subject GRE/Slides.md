@@ -516,7 +516,10 @@ $$
   - Just take the prime factorization and apply these.
 
 - Group-theoretic properties of $\ZZ/n\ZZ$
-
+<!-- slide vertical=true -->
+## Advanced Topics
+- Mobius Inversion
+- 
 
 
 
