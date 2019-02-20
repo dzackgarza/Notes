@@ -66,11 +66,11 @@ Some Pattern Recognition:
 - **Cauchy Criteria**: $\abs{a_m - a_n} \to 0 \in \RR \implies \theset{a_i}$ converges.
 	- i.e. show $\theset{a_i}$ is a Cauchy sequence.
 
-#### Sums
+#### Series
 $$ 
 \sum_{k=1}^\infty a_k x^k
 $$
-- Known sums:
+- Known series:
 	$$
 	\sum_{k=1}^\infty k^p < \infty \iff p \leq 1 \\
 	\sum_{k=1}^\infty \frac{1}{k^p} < \infty \iff p > 1 \\
