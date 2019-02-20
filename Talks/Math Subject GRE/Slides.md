@@ -368,7 +368,7 @@ $$
 - Definitions
   - Vector space, subspace, singular, consistent system, etc
 
-<!-- slide -->
+<!-- slide vertical=true -->
 ## Fundamental Spaces
 - Finding bases for various spaces of $A$:
   - $\mathrm{rowspace} A \subseteq \RR^n$
