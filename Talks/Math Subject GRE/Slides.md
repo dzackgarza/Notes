@@ -436,6 +436,8 @@ $$
   - One real root: $$y(x) = c_1 e^{rx} + c_2 x e^{rx}$$
   - Complex conjugates $\alpha \pm \beta i$: $$y(x) = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$$
 
+<!-- 
+
 
 
 <!-- slide -->
