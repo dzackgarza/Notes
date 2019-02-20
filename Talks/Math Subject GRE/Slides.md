@@ -490,6 +490,8 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 - The totient function
 - Group-theoretic properties of $\ZZ/n\ZZ$
 
+ Divisibility: $a\mid b \iff b = 0 \mod a$
+
 
 
 
