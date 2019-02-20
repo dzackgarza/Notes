@@ -95,7 +95,7 @@ c_1\vector{x_1}(t) + c_2\vector{x_2}(t)+ \cdots +c_n\vector{x_n}(t) = \vector X(
 $$
 
 
-If $A$ is a matrix of constants: $\vector{x}(t) = e^{\lambda_i t}~\vec{v}_i$ is a solution for each eigenvalue/eigenvector pair $(\lambda_i, v_i)$
+If $A$ is a matrix of constants: $\vector{x}(t) = e^{\lambda_i t}~\vector{v}_i$ is a solution for each eigenvalue/eigenvector pair $(\lambda_i, v_i)$
 - If $A$ is defective: #todo generalized eigenvectors..?
 
 Nonhomogeneous Equation: particular solutions given by $\vec{x}_p(t) = X(t) \int^t X^{-1}(s)\vec{b(s)}~ds$
