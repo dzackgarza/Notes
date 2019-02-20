@@ -278,7 +278,8 @@ Essentially just use Taylor expansions.
 
 Single variable case:
 $$
-f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2 + o(x^3)
+T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }
+f(p) =\approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2 + o(x^3)
 $$
 
 Multivariable case:
