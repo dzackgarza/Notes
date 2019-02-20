@@ -96,7 +96,7 @@ $$
 
 
 If $A$ is a matrix of constants: $\vector{x}(t) = e^{\lambda_i t}~\vector{v}_i$ is a solution for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$
-- If $A$ is defective: #todo generalized eigenvectors..?
+- If $A$ is defective, you'll need generalized eigenvectors.
 
 Nonhomogeneous Equation: particular solutions given by $\vec{x}_p(t) = X(t) \int^t X^{-1}(s)\vec{b(s)}~ds$
 
