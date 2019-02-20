@@ -526,6 +526,7 @@ $$
 $$
 a^p = a \mod p
 $$
+  - Corrolary: $a^{\phi(p)} = 1 \mod p$
 
 <!-- slide vertical=true -->
 ## Advanced Topics
