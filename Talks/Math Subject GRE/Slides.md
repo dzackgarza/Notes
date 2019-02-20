@@ -184,6 +184,9 @@ Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to 
 - Arc Lengths
 	- $ds = \sqrt{dx^2 + dy^2},\qquad L = \int ~ds$
 
+<!-- slide vertical=true -->
+## Series and Sequences
+
 
 <!-- slide -->
 # Multivariable Calculus
