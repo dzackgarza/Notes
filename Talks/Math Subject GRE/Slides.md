@@ -511,7 +511,7 @@ $$
   - Computing $\phi$:
 $$
 \gcd(a,b) = 1 \implies \phi(ab) = \phi(a)\phi(b) \\
-\phi(p^k) = p^k - p^{k-1}p^{k-1}(p-1)
+\phi(p^k) = p^k - p^{k-1} = p^{k-1}(p-1)
 $$
 
 - Group-theoretic properties of $\ZZ/n\ZZ$
