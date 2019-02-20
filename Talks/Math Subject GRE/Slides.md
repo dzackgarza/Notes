@@ -159,6 +159,10 @@ $$
 
 Set $a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0$, then commute to derive the FTC.
 
+- Solids of Revolution
+	- Disks: $A = \int \pi r(t)^2 ~dt$
+	- Cylinders: $A = \int 2\pi r(t)h(t) ~dt$
+
 
 <!-- slide -->
 # Multivariable Calculus
