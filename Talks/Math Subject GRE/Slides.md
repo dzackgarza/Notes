@@ -533,7 +533,7 @@ x = \sum_{j=1}^r a_j \frac{\prod_i m_i}{m_j} \left[ \frac{\prod_i m_i}{m_j} \rig
 $$
 
 <!-- slide vertical=true -->
-## Definitions
+## Theorems
 - Fermat's Little Theorem and Euler's Theorem
 $$
 a^p = a \mod p \implies a^{\phi(p)} = 1 \mod p \\
