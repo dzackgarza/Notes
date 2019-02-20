@@ -140,7 +140,7 @@ presentation:
 	- Squeeze theorem
 	- Expand in Taylor series at $a$
 	- Monotonic + bounded
-	- 
+  
 <!-- slide vertical=true -->
 ## Use Simple Techniques
 When possible, of course.
