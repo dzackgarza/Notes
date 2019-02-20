@@ -1,6 +1,6 @@
 ## Convergence:
 
-Notation: $\theset{a_n}_{n\in\NN}$ is a "sequence", $\sum_{i\in\NN} a_i$ is a "sieres", and
+Notation: $\theset{a_n}_{n\in\NN}$ is a "sequence", $\sum_{i\in\NN} a_i$ is a "series", and
 
 Radius of convergence: $$L = \lim_{n\to\infty}\abs{\frac{a_{n+1}}{a_n}} \implies R = \frac{1}{L}$$
 
