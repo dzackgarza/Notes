@@ -423,11 +423,15 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 # Ordinary Differential Equations
 <!-- slide vertical=true -->
 ## Topics
-- General solutions to $\sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)$
+- General solutions to 
+$$
+\sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)
+$$
+
 Example: by cases, second order equation of the form $$ay'' + by' + cy = 0$$
-- Two distinct roots: $c_1 e^{r_1 x} + c_2 e^{r_2 x}$
-- One real root: $c_1 e^{rx} + c_2 x e^{rx}$
-- Complex conjugates $\alpha \pm i \beta$: $e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
+  - Two distinct roots: $c_1 e^{r_1 x} + c_2 e^{r_2 x}$
+  - One real root: $c_1 e^{rx} + c_2 x e^{rx}$
+  - Complex conjugates $\alpha \pm i \beta$: $e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
 
 
 
