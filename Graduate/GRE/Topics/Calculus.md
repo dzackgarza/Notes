@@ -16,7 +16,10 @@
 		- Note that if $f(x,t) = f(t)$ alone, then $\dd{x} f(t) = 0$ and the second integral vanishes
 - Extreme Value Theorem
 - Involving the Derivative:
-	- Mean Value Theorem: $$f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f'(p)(b-a)$$
+	- Mean Value Theorem: 
+$$
+f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f'(p)(b-a)
+$$
 		- Useful variant for integrals and average value: $$f \in C^0(I) \implies \exists p\in I: \int_a^b f(x)~dx = f(p)(b-a)$$
 	- Rolle's Theorem
 - L'Hopital's Rule: If
