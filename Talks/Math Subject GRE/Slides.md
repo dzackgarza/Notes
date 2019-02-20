@@ -509,10 +509,9 @@ $$
 $$
 a\text{ is coprime to } b \iff \gcd(a,b) = 1 
 $$
-  - Often write $(a,b) = \gcd(a,b)$
 - Euler's Totient Funtion
 $$
-\phi(a) = \abs{\theset{x \in \NN \suchthat x < a \and }}
+\phi(a) = \abs{\theset{x \in \NN \suchthat x < a \and \gcd(x,a) = 1}}
 $$
 - Group-theoretic properties of $\ZZ/n\ZZ$
 - $xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)}$
