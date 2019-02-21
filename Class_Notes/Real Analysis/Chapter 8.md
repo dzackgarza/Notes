@@ -14,4 +14,4 @@ $$
 
 which we express compactly as $T_n(x, c) = \sum_{k=1}^n \frac{1}{k!}f^{(k)}(c)(x-c)^n$.
 
-This function is the unique polynomial of order $n$ that satisfies $\dd{^k}{x^k}f(c) = \dd{^k}{x^k}T(c, c)$ for all $k\leq n$, and is referred to as the *$n\dash$th order Taylor polynomial of $f$ at $c$*.
+This function is the unique polynomial of order $n$ that satisfies $\dd{^k}{x^k}f(c) = \dd{^k}{x^k}T(c, c)$ for all $k\leq n$, and is referred to as the *$n\dash$th order Taylor polynomial of $f$ at the point $c$*. The book abbreviates $T_n(x, c)$ as $p_n(x)$.
