@@ -27,7 +27,7 @@ Some useful Taylor polynomials to recall:
 
 Note that in nice enough cases (like everything seen here), we can differentiate and integrate these series term by term. We can also use clever algebraic manipulations to get new series from known ones.
 
-For example, recall that the geometric series $
+For example, recall that the geometric series $\sum x^k = \frac 1 {1-x}$
 
 If $f\in C^\infty(I)$, then one can ask if $p_n(x) \to f(x)$ pointwise. This is essentially the definition of $f$ being a *real analytic* function, and will hold for polynomials, exponentials, trig functions. However, not every function will have a Taylor series that converges at every point.
 
