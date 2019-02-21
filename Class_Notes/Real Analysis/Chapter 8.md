@@ -46,5 +46,5 @@ As it turns out, we can derive an explicit expression for what this remainder ac
 
 Explicitly, we have
 $$
-R_n(x)  = \in_a^x \frac{}{}
+R_n(x)  = \int_a^x \frac{1}{x}
 $$
