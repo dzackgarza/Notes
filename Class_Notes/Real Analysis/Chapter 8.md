@@ -52,5 +52,5 @@ $$
 and by applying the Mean Value Theorem, we can obtain
 
 $$
-\exists \p \in (a, x) \suchthat 
+\exists p \in (x, c) \suchthat 
 $$
