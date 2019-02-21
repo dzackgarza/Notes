@@ -4,4 +4,4 @@ Sections covered:
 
 # 8.1: Taylor Polynomials
 
-From Calculus, we know $\dd{^n}{x^n}(x-c)^n = n!$
+From Calculus, we know $\dd{^n}{x^n}(x-c)^n = n!$, and that if $k> n$, then 
