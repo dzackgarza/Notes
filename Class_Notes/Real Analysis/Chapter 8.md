@@ -66,7 +66,7 @@ $$
 
 There is also a nice theorem that provides a sufficient condition for when this error term converges to zero:
 
-Given some $\varepsilon$, if $f \in C^\infty(I)$ and there exists an $\varepsilon$ and a $M$ such that 
+Given some $\varepsilon$, if $f \in C^\infty(I)$ and there exists an $M$ such that 
 $$
 x \in N_\varepsilon(c) \implies \abs{f^{(n)}(c)} \leq M^n
 $$
