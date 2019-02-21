@@ -31,7 +31,7 @@ For example, recall that the geometric series $\sum_{k=0}^\infty x^k = \frac 1 {
 
 By making the substitution $x = 1-x$, we find that that $\frac 1 x = \sum(1-x)^k = \sum (-1)^k(x-1)^k$, which is thus the Taylor series for $f(x) = \frac 1 x$ at $c=1$.
 
-We can instead integrate both sides to obtain $\sum_{k=0}^\infty \frac 1 {k+1} x^{k+1} = -\ln(1-x)$, and again substitute $x=1-x$ to obtain $\ln(x) = -\sum \frac 1 {k+1}(x-1)^{k+1}$
+We can instead integrate both sides to obtain $\sum_{k=0}^\infty \frac 1 {k+1} x^{k+1} = -\ln(1-x)$, and again substitute $x=1-x$ to obtain $\ln(x) = -\sum \frac 1 {k+1}(x-1)^{k+1}$, the Taylor series for $f(x) = \ln(x)$ at $c=1$.
 
 If $f\in C^\infty(I)$, then one can ask if $p_n(x) \to f(x)$ pointwise. This is essentially the definition of $f$ being a *real analytic* function, and will hold for polynomials, exponentials, trig functions. However, not every function will have a Taylor series that converges at every point.
 
