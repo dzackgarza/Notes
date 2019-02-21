@@ -3,3 +3,4 @@ Sections covered:
 - 8.6, 8.7
 
 # 8.1: Taylor Polynomials
+
