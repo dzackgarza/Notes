@@ -32,4 +32,4 @@ $$
 
 and thus the above condition is equivalent to $R_n(x) \to 0$.
 
-As it turns out, we can derive an explicit expression for what this remainder actually is in terms of $f$
+As it turns out, we can derive an explicit expression for what this remainder actually is in terms of $f$.
