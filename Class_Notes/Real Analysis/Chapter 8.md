@@ -52,5 +52,7 @@ $$
 and by applying the Mean Value Theorem, we can obtain
 
 $$
-\exists p \in (x, c) \suchthat R_n(x) = \frac{1}{(n+1)!}\dd{^nf}{x^n}(p) (x-c)^{n+1}
+\exists p \in (x, c) \suchthat R_n(x) = \frac{1}{(n+1)!}\dd{^nf}{x^n}(p) (x-c)^{n+1}.
 $$
+
+This is especially helpful if we know $\exists 
