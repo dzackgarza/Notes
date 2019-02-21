@@ -55,5 +55,5 @@ $$
 \exists p \in (x, c) \suchthat R_n(x) = \frac{1}{(n+1)!}\dd{^nf}{x^n}(p) (x-c)^{n+1}.
 $$
 
-This is especially helpful if we know $\exists M$ such that for every point in $(x,c)$, $f$ is bounded by $M$. This immediately translates to a uniform bound on error of the Taylor approximation, using the above expression.
+This is especially helpful if we know $\exists M$ such that for every point in $(x,c)$, $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation, using the above expression.
 
