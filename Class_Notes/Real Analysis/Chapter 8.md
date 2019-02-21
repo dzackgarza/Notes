@@ -71,4 +71,4 @@ $$
 x \in N_\varepsilon(c) \implies \abs{f^{(n)}(c)} \leq M^n
 $$
 
-then $f$ is equal to its Taylor expansion on $N
+then $f$ is equal to its Taylor expansion on $N_\varepsilon(c)$.
