@@ -24,3 +24,8 @@ Some useful Taylor polynomials to recall:
 - $f(x) = \sqrt x, c = 1 \implies p_3(x) = 1 + \frac 1 2 (x-1) - \frac 1 8 (x-1)^2 + \frac{1}{16} (x-1)^3$
 
 If $f\in C^\infty(I)$, then one can ask if $p_n(x) \to f(x)$ pointwise. This is essentially the definition of $f$ being a *real analytic* function, and will hold for polynomials, exponentials, trig functions, and more.
+
+We can measure the error by defining *the $n\dash$th remainder$,
+$$
+R_n(x)
+$$
