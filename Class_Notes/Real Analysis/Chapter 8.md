@@ -80,4 +80,4 @@ $$
 f(x) = e^{-\frac{1}{x^2}}.
 $$
 
-In this example, $f$ is smooth, so a Taylor series 
+In this example, $f$ is smooth, so a Taylor series $T
