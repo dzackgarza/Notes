@@ -200,7 +200,7 @@ $$
 f'(p) \definedas \frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p}
 $$
 
-- For multivariable functions: existence and continuity of $\frac{\partial \mathbf{f}}{\partial x_i} \forall i \implies \mathbf{f}$ differentiable
+- For multivariable functions: existence **and continuity** of $\frac{\partial \mathbf{f}}{\partial x_i} \forall i \implies \mathbf{f}$ differentiable
 	- Necessity of continuity: example of a continuous functions with all partial and directional derivatives that is not differentiable:
 $$
 f(x, y) = \cases{\frac{y^3}{x^2+y^2} & $(x,y) \neq (0,0)$ \\ 0 & else}
