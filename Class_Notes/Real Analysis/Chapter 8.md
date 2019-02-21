@@ -71,7 +71,7 @@ Given some $\varepsilon$, if $f \in C^\infty(I)$ and there exists an $M$ such th
 $$
 x \in N_\varepsilon(c) \implies \abs{f^{(n)}(c)} \leq M^n
 $$
-then $f$ is equal to its Taylor expansion about $c$ on $N_\varepsilon(c)$.
+then the Taylor expansion about $c$ on $N_\varepsilon(c)$.
 
 In other words, this condition mostly just asks that the derivatives of $f$ be bounded and don't grow too fast.
 
