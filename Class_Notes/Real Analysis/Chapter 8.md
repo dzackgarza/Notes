@@ -46,7 +46,7 @@ As it turns out, we can derive an explicit expression for what this remainder ac
 
 Explicitly, we have
 $$
-R_n(x)  = \int_a^x \frac{1}{n!} \dd{^n f}{x^n}(t) (x-t)^n ~dt,
+R_n(x)  = \int_c^x \frac{1}{n!} \dd{^n f}{x^n}(t) (x-t)^n ~dt,
 $$
 
 and by applying the Mean Value Theorem, we can obtain
