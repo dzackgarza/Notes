@@ -66,5 +66,5 @@ $$
 
 There is also a nice theorem that provides a sufficient condition for when this error term converges to zero:
 
-If 
+If $f \in C^\infty(I)$ 
 
