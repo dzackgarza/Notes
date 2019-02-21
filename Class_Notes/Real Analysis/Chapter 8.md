@@ -81,3 +81,5 @@ f(x) = e^{-\frac{1}{x^2}}.
 $$
 
 In this example, $f$ is smooth, so any Taylor polynomial $T_n(x, 0)$ centered at zero can be written. However, it can be shown that $T_n(x, 0) \rightrightarrows 0$.
+
+
