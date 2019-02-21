@@ -57,5 +57,5 @@ $$
 
 This is especially helpful if we know $\exists M$ such that for every point in $(x,c)$, $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation, using the above expression.
 
-Note that the book describes this in a slightly different way - they write $f(x) = p_n(x) + R_n(x)$ 
+Note that the book describes this in a slightly different way - for the statement of Lagrange's theorem, they write $f(x) = p_n(x) + R_n(x)$, and simply substitute the above expression in for $R_n(x)$.
 
