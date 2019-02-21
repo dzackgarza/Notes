@@ -56,3 +56,4 @@ $$
 $$
 
 This is especially helpful if we know $\exists M$ such that for every point in $(x,c)$, $f$ is bounded by $M$. This immediately translates to a bound on error of the Taylor approximation, using the above expression.
+
