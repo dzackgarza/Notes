@@ -61,6 +61,6 @@ Note that the book describes this in a slightly different way - for the statemen
 
 This is most often used in the following form:
 $$
-\abs{f(x) - p_n(x)
+\abs{f(x) - p_n(x)}
 $$
 
