@@ -16,3 +16,6 @@ which we express compactly as $T_n(x, c) = \sum_{k=1}^n \frac{1}{k!}f^{(k)}(c)(x
 
 This function is the unique polynomial of order $n$ that satisfies $\dd{^k}{x^k}f(c) = \dd{^k}{x^k}T(c, c)$ for all $k\leq n$, and is referred to as the *$n\dash$th order Taylor polynomial of $f$ at the point $c$*. The book abbreviates $T_n(x, c)$ as $p_n(x)$.
 
+Some useful Taylor polynomials to recall:
+
+- $f(x) = e^x, c = 0 \implies p_n(x) = 1 +x + \frac{1}{2} x^2 + \frac{1}{6}x^3 + \cdots + \frac{1}{n!} x^n$.
