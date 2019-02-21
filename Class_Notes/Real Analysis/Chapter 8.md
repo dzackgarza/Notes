@@ -9,5 +9,5 @@ From Calculus, we know $\dd{^n}{x^n}(x-c)^n = n!$, and that if $k> n$, then $\dd
 We can use this fact to write the $n\dash$th order Taylor approximation of a function $f: I \to \RR$ at a point $c$ as
 
 $$
-T_n(x, c) = f(c) + \dd{f}{x}(c)(x-c) + \frac{\dd{^2f}{x^2}(c)
+T_n(x, c) = f(c) + \dd{f}{x}(c)(x-c) + \frac{1}{2}\dd{^2f}{x^2}(c)
 $$
