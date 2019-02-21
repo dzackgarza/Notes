@@ -42,4 +42,4 @@ $$
 
 and thus the above condition is equivalent to $R_n(x) \to 0$. In general, one may wonder just how large the error is, how fast it goes to zero, or how many terms one has to take so the the error is sufficiently small.
 
-As it turns out, we can derive an explicit expression for what this remainder actually is in terms of $f$. We also get a theorem that tells us that $R_n(x) \in O(\abs{x-c}^n)$
+As it turns out, we can derive an explicit expression for what this remainder actually is in terms of $f$. We also get a theorem that tells us that $R_n(x) \in O(\abs{x-c}^n)$, i.e. the error goes to zero faster than
