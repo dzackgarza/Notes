@@ -61,6 +61,6 @@ Note that the book describes this in a slightly different way - for the statemen
 
 This is most often used in the following form:
 $$
-\exists \xi \suchthat \abs{f(x) - p_n(x)} = \frac{1}{(n+1)!}f^{(n+1)}(\xi)\abs{x-c}^{n+1}
+\exists \xi \suchthat \abs{f(x) - p_n(x)} = \frac{1}{(n+1)!}f^{(n+1)}(\xi)
 $$
 
