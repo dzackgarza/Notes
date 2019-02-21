@@ -4,3 +4,4 @@ Sections covered:
 
 # 8.1: Taylor Polynomials
 
+From Calculus, we know $\dd{}{x}
