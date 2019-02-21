@@ -74,3 +74,4 @@ $$
 then $f$ is equal to its Taylor expansion about $c$ on $N_\varepsilon(c)$.
 
 
+
