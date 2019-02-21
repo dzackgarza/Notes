@@ -10,7 +10,7 @@ $$
 \sum_i^n m_i (x_i - x_{i-1}) \leq L(f, P) \leq \underline{\int_a^b }f(x)~dx \leq \int_a^b f(x) ~dx \leq \overline{\int_a^b}  f(x)~dx \leq  U(f, P) \leq \sum_i^n M_i (x_i - x_{i-1})
 $$
 
-Note that $\sum_{i=1}^n (x_i - x_{i-1}) = (b-a)$ by cancellation.
+> Note that $\sum_{i=1}^n (x_i - x_{i-1}) = (b-a)$ by cancellation.
 
 # 6.1: Darboux Sum, Upper and Lower Integrals
 
