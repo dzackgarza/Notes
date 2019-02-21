@@ -23,3 +23,4 @@ Note that $\sum_{i=1}^n (x_i - x_{i-1}) = (b-a)$ by cancellation.
 
 ---
 
+@import "Chapter 6.md"
