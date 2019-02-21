@@ -12,6 +12,8 @@ $$
 
 > Note that $\sum_{i=1}^n (x_i - x_{i-1}) = (b-a)$ by cancellation.
 
+---
+
 # 6.1: Darboux Sum, Upper and Lower Integrals
 
 - Define integrability
@@ -21,8 +23,6 @@ $$
 \int_a^b \dd{}{x} F(x) ~dx = F(b) - F(a) \\
 \dd{}{x} \int_a^x f(x) ~dx = f(x) 
 $$
-
----
 
 Review bounded.
 
