@@ -57,3 +57,5 @@ $$
 
 This is especially helpful if we know $\exists M$ such that for every point in $(x,c)$, $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation, using the above expression.
 
+Note that the book describes this in a slightly different way - they write 
+
