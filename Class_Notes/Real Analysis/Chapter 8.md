@@ -6,3 +6,7 @@ Sections covered:
 
 From Calculus, we know $\dd{^n}{x^n}(x-c)^n = n!$, and that if $k> n$, then $\dd{^n}{x^k}(x-c)^k = 0$. (This can be proved by induction.)
 
+We can use this fact to write the Taylor approximation of a function $f: I \to \RR$ at a point $c$ as
+$$
+
+$$
