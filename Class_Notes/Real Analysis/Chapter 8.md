@@ -52,5 +52,5 @@ $$
 and by applying the Mean Value Theorem, we can obtain
 
 $$
-\exists p \in (x, c) \suchthat R_n(x) = 
+\exists p \in (x, c) \suchthat R_n(x) = \frac{}{}
 $$
