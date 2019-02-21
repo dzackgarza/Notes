@@ -13,14 +13,6 @@ Sections Covered:
 - 9.1, 9.2, 9.3
 - 9.4, 9.5
 
-# Important Inequality!!
-This is more or less the workhorse of most integrability problems:
-$$
-\sum_i^n m_i (x_i - x_{i-1}) \leq L(f, P) \leq \underline{\int_a^b }f(x)~dx \leq \int_a^b f(x) ~dx \leq \overline{\int_a^b}  f(x)~dx \leq  U(f, P) \leq \sum_i^n M_i (x_i - x_{i-1})
-$$
-
-Note that $\sum_{i=1}^n (x_i - x_{i-1}) = (b-a)$ by cancellation.
-
 ---
 
 @import "Chapter 6.md"
