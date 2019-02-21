@@ -12,4 +12,4 @@ $$
 T_n(x, c) = f(c) + \dd{f}{x}(c)(x-c) + \frac{1}{2}\dd{^2f}{x^2}(c)(x-c)^2 + \cdots \frac{1}{n!} \dd{^nf}{x^n}(c)(x-c)^n,
 $$
 
-which we express compactly as $T_n(x, c) = \sum_{k=1}^n \frac{1}{k!}$
+which we express compactly as $T_n(x, c) = \sum_{k=1}^n \frac{1}{k!}f^{(k)}(c)(x-c)^n$
