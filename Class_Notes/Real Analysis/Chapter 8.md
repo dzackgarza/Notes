@@ -14,4 +14,4 @@ $$
 
 which we express compactly as $T_n(x, c) = \sum_{k=1}^n \frac{1}{k!}f^{(k)}(c)(x-c)^n$.
 
-This function is the unique polynomial of order $n$ that satisfies $\dd{^k}{x^k}f = 
+This function is the unique polynomial of order $n$ that satisfies $\dd{^k}{x^k}f = \dd{^k}{x^k}T(x, c)$ 
