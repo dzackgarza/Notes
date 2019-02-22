@@ -638,7 +638,8 @@ $$
 
 <!-- slide vertical=true -->
 # Definitions
-- Group, subgroup, ring, homomorphism
+- Group, ring, subgroup, ideal, homomorphism, etc
+- Order
 - Structure of the Symmetric group
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
 
