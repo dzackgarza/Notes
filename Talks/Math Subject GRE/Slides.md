@@ -113,7 +113,7 @@ Five Official Practice Exams
 - Spaced repetition, e.g. Anki
 - Replicate exam conditions
 - Build up mental stamina
-  - i.e. 3 hours of uninteruppted problem solving
+  - i.e. 3 hours of uninterrupted problem solving
 - Self care!!
 
 
