@@ -609,7 +609,7 @@ $$
 x = \sum_{j=1}^r a_j \frac{\prod_i m_i}{m_j} \left[ \frac{\prod_i m_i}{m_j} \right]^{-1}_{\mod m_j}
 $$
 
-
+Seems symbolically complex, but generally an easy algorithm to carry out.
 
 <!-- slide vertical=true -->
 ## Theorems
