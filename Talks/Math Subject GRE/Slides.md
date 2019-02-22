@@ -452,13 +452,6 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 
 <!-- slide vertical=true -->
 ## Various Other Topics
-- Systems of equations
-- Row operations, Gaussian elimination, REF, RREF
-- Determinant, inversion, trace
-- Vector spaces and subspaces
-- Rank-nullity
-- Computing nullspace, colspace, rowspace, eigenvalues/eigenvectors
-- Big list of equivalent conditions for invertibility
 - Quadratic forms
 - Projections onto subspaces
 - Diagonalizability and similarity
