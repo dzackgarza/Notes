@@ -667,7 +667,7 @@ $$
 - Uniform and point-wise continuity
 - Lipschitz Continuity
 
-<!-- slide vertical=true --!>
+<!-- slide vertical=true -->
 ## Big Theorems
 - **Generalized Mean Value Theorem**
 $$f,g\text{ differentiable on } [a,b] \implies \exists c\in[a,b] :
