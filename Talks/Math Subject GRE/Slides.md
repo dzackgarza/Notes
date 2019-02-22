@@ -463,6 +463,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - Diagonalizability and similarity
 - Canonical forms
 - Quadratic forms
+- Decompositions ($QR, VDV^T, SVD,$ etc)
 
 
 <!-- slide -->
