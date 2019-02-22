@@ -675,7 +675,7 @@ One step subgroup test:
 <!-- slide vertical=true -->
 ## Classification of Abelian Groups
   $$
-  \abs{G} = 
+  \abs{G} = n = \prod p_i
   G \cong \ZZ_{p_1^{k_1}} \oplus \ZZ_{p_2^{k_2}} \oplus \cdots \oplus \ZZ_{p_n^{k_n}}
   $$
   Where $(p_i, k_i)$ are the set of *elementary divisors* of $G$.
