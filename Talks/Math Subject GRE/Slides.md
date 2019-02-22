@@ -846,4 +846,4 @@ So D, A are true. C is true because it's a homogeneous system. B is true because
 ![problem1](/assets/problem4.png)
 Note: I and II can simultaneously hold!
 
-Note $N_{\frac{1}{2}}(x) = \theset{x}$, so every singleton is open. Any subset of $\ZZ$ is a countable union of its singletons, so every subset of $\ZZ$ is open. The complement any set is one such subset, so every subset is also closed. The inverse image of any subset of $\RR$ is a subset of $\ZZ$, which is open, so every such $f$
+Note $N_{\frac{1}{2}}(x) = \theset{x}$, so every singleton is open. Any subset of $\ZZ$ is a countable union of its singletons, so every subset of $\ZZ$ is open. The complement any set is one such subset, so every subset is also closed. The inverse image of any subset of $\RR$  under any $f:\ZZ \to \RR$ is a subset of $\ZZ$, which is open, so every such $f$
