@@ -108,6 +108,7 @@ Five Official Practice Exams
 <!-- slide vertical=true -->
 # Study Tips
 - Start early
+  - 
 - Speed is important
 - Spaced repetition
 - Replicate exam conditions
