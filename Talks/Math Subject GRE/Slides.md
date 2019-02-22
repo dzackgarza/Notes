@@ -548,6 +548,7 @@ Know some group and ring theoretic properties of $\ZZ/n\ZZ$
 $$
 \abs{(\ZZ/n\ZZ)^*} = \phi(n)
 $$
+  cyclic when $n
 
 <!-- slide vertical=true -->
 ## Definitions
