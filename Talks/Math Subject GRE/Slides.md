@@ -556,6 +556,8 @@ $$
 $$
 \begin{aligned} a & = q _ { 0 } b + r _ { 0 } \\ b & = q _ { 1 } r _ { 0 } + r _ { 1 } \\ r _ { 0 } & = q _ { 2 } r _ { 1 } + r _ { 2 } \\ r _ { 1 } & = q _ { 3 } r _ { 2 } + r _ { 3 } \\ & \vdots \end{aligned}
 $$
+
+
 <!-- slide vertical=true -->
 ## Definitions
 - Coprime
