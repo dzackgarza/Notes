@@ -389,7 +389,7 @@ Single variable case:
 $$
 f(p) = f(p) + f'(p)(x-p) \\+ f''(p)(x-a)^2 + o(x^3)
 $$
-
+<div style="height:100px"></div>
 Multivariable case:
 $$
 f(\vector p)  f(\vector p) + \nabla f(\vector p)(\vector x - \vector a) \\+ (\vector x - \vector p )^T H_f(p)(\vector x - \vector p) + O(\norm{\vector x - \vector p}_2^3)
