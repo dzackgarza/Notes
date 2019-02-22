@@ -355,13 +355,13 @@ Generally a system of nonlinear equations, but there are common tricks to solve.
 \usepackage{amsmath, amsthm, amssymb}
 \usetikzlibrary{cd}
 \begin{document}
-\adjustbox{scale=2,center}{%
+\adjustbox{scale=2}{%
 \begin{tikzcd}
  & u \arrow[dd] \arrow[rr] \arrow[rrdd] &  & x \\
 z \arrow[rd] \arrow[ru] \arrow[rrru] \arrow[rrrd] &  &  &  \\
  & v \arrow[rr] \arrow[rruu] &  & y
 \end{tikzcd}
-%}
+}
 \end{document}
 ```
 
