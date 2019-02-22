@@ -641,6 +641,8 @@ $$
 - Definitions: group, subgroup, ring, homomorphism
 - Symmetric group, dihedral group
 
+- Every element in a permutation group is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
+
 <!-- slide -->
 # Topics: Discrete Mathematics
 <!-- slide vertical=true -->
