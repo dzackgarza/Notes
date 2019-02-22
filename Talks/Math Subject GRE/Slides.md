@@ -355,7 +355,8 @@ z \arrow[rd] \arrow[ru] \arrow[rrru] \arrow[rrrd] &  &  &  \\
 \end{tikzcd}
 \end{document}
 ```
-
+<!-- slide vertical=true -->
+## Multivariable Chain Rule
 To get any one derivative, sum over all possible paths to it:
 $$\begin{align*}
 \left(\dd{z}{x}\right)_y &= \left(\dd{z}{x}\right)_{u,y,v} \\
