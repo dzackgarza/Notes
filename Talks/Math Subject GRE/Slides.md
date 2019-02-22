@@ -670,7 +670,8 @@ $$
 <!-- slide vertical=true -->
 ## Big Theorems
 - **Generalized Mean Value Theorem**
-$$f,g\text{ differentiable on } [a,b] \implies \exists c\in[a,b] :
+$$
+f,g\text{ differentiable on } [a,b] \implies \\ \exists c\in[a,b] :
 \left[f ( b ) - f ( a ) \right] g' ( c ) = \left[g ( b ) - g ( a )\right] f' ( c )
 $$
 - **Bolzano-Weierstrass**: every bounded sequence has a convergent subsequence.
