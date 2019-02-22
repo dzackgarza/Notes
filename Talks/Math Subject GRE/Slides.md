@@ -419,7 +419,7 @@ $$
 
   - Eigenspace: 
     - Recall equation $\lambda \in \spec(A) \iff \exists \vector v_\lambda \suchthat A\vector v_\lambda  = \lambda \vector v_\lambda$
-    - For each $\lambda \in \spec(A)$, compute $\ker (A - \lambda I)$
+    - For each $\lambda \in \spec(A)$, compute $\ker (\lambda I)$
 
 <!-- slide vertical=true -->
 ## Big List of Equivalent Properties
