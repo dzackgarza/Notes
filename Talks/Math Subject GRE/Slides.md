@@ -492,6 +492,9 @@ $$
 - Separable
 $$\frac{dy}{dx} = f(x)g(y) \implies \int \frac{1}{g(y)}dy = \int f(x) dx + C$$
 
+<!-- slide vertical=true -->
+## More Easy IVPs
+
 - Systems of ODEs
 $$
 \vector{x}'(t) = A\vector{x}(t) + \vector{b}(t) 
