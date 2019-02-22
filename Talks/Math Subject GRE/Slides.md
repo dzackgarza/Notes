@@ -548,7 +548,7 @@ Know some group and ring theoretic properties of $\ZZ/n\ZZ$
 $$
 \abs{(\ZZ/n\ZZ)^*} = \phi(n)
 $$
-  cyclic when $n=1,2,4,p^k, 
+  cyclic when $n=1,2,4,p^k, 2p^k$
 
 <!-- slide vertical=true -->
 ## Definitions
