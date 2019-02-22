@@ -541,17 +541,6 @@ $$
 
 <!-- slide vertical=true -->
 ## Definitions
-Know some group and ring theoretic properties of $\ZZ/n\ZZ$
-- $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
-  - So we can solve equations with inverses: $ax = b \mod n \iff x = a^{-1}b \mod n$
-- But there will always be *some* units; in general,
-$$
-\abs{(\ZZ/n\ZZ)^*} = \phi(n)
-$$
-  and is cyclic when $n=1,2,4,p^k, 2p^k$
-
-<!-- slide vertical=true -->
-## Definitions
 - GCD, LCM
 $$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)} \\
 d\mid x \and d\mid y \implies  d \mid \gcd(x,y) \\ \quad \and \gcd(x,y) = d\gcd(\frac x d, \frac y d)
@@ -580,6 +569,17 @@ $$
 \phi(p^k) = p^k - p^{k-1}
 $$
   - Just take the prime factorization and apply these.
+
+<!-- slide vertical=true -->
+## Definitions
+Know some group and ring theoretic properties of $\ZZ/n\ZZ$
+- $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
+  - So we can solve equations with inverses: $ax = b \mod n \iff x = a^{-1}b \mod n$
+- But there will always be *some* units; in general,
+$$
+\abs{(\ZZ/n\ZZ)^*} = \phi(n)
+$$
+  and is cyclic when $n=1,2,4,p^k, 2p^k$
 
 <!-- slide vertical=true -->
 ## Chinese Remainder Theorem
