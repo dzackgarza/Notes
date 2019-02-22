@@ -81,14 +81,13 @@ Good high-level overview of undergrad topics.
 Shallow treatment of Algebra, Real Analysis, Topology, Number Theory.
 
 <!-- slide vertical=true-->
-Five Official Practice Exams
+Five Official Practice Exams (with Solutions)
 - GR 1268
 - GR 0568
 - GR 9367
 - GR 8767
 - GR 9768
 
-Include solutions.
 All old and *significantly* easier than exams in recent years.
 
 <!-- slide -->
