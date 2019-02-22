@@ -57,13 +57,13 @@
 
 	- For multivariable functions:
 	$$
-	\mathbf{f}:\RR^n \to \RR^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:\RR^n \to \RR^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_{\RR^n}} { \| \mathbf { h } \| _{\RR^m} } = 0
+	\mathbf{f}:\RR^n \to \RR^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:\RR^n \to \RR^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_ {\RR^n}} { \| \mathbf { h } \|_ {\RR^m} } = 0
 	$$
 
-- Gradient 
-	$$
-	\nabla f = [f_x, f_y, f_z]
-	$$
+- Gradient
+$$
+\nabla f = [f_x, f_y, f_z]
+$$
 
 - Divergence
 
@@ -120,10 +120,10 @@
 - Closure of a Set
 - Boundary
 - Metric
-- Cauchy Sequence: 
+- Cauchy Sequence:
 $$\theset{a_i} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in\NN: \quad m,n > N \implies d(x_m, x_n) < \varepsilon $$
 
-- Connected: 
+- Connected:
 $S$ is connected $\iff$ $\not\exists U,V\subset S$ nonempty, open, disjoint such that $S = U \cup V$
 
 - Compact:
@@ -180,7 +180,7 @@ Convention: always over a field $k$, and $T: k^n \to k^m$ is a generic linear ma
 - Row Equivalent
 - Pivot
 - Cofactor
-$$\mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}$$ 
+$$\mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}$$
 where $M_{i, j}$ is the minor obtained by deleting the $i\dash$th row and $j\dash$th column of $A$.
 
 - Adjugate
@@ -203,7 +203,7 @@ $$
 
 - Subspace
 
-	- A nonempty subset $W \subseteq V$ that is a vector space and satisfies 
+	- A nonempty subset $W \subseteq V$ that is a vector space and satisfies
 $$
 \theset{ \sum_i c_i \vector x_i \mid c_i \in \FF,~ x_i \in W} \subseteq W
 $$
@@ -211,7 +211,7 @@ $$
     - Quick counter-check: find $\vector x, \vector y$ such that $a\vector x + b\vector y \not\in W$
 
 - Span
-  Given a set of $n$ vectors $S = \theset{\vector x_i}_{i=1}^n$, defined as 
+  Given a set of $n$ vectors $S = \theset{\vector x_i}_{i=1}^n$, defined as
   $$
   \mathrm{Span}(S) = \theset{\sum_{i=1}^nc_i \vector x_i \mid c_i \in k}
   $$
@@ -219,7 +219,7 @@ $$
 - Row Space
 	- The range of the linear map $T$.
 	- Given $T =
-\begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}$, defined as 
+\begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}$, defined as
 $$
 \mathrm{Span}(\theset{\vector x_i}_{i=1}^m) \subseteq k^m
 $$
@@ -338,7 +338,7 @@ $$
 W \left[ f _ { 1 } , f _ { 2 } , \ldots , f _ { k } \right] ( x ) = \left| \begin{array} { c c c c } { f _ { 1 } ( x ) } & { f _ { 2 } ( x ) } & { \dots } & { f _ { k } ( x ) } \\ { f _ { 1 } ^ { \prime } ( x ) } & { f _ { 2 } ^ { \prime } ( x ) } & { \dots } & { f _ { k } ^ { \prime } ( x ) } \\ { \vdots } & { \vdots } & { } & { \vdots } \\ { f _ { 1 } ^ { ( k - 1 ) } ( x ) } & { f _ { 2 } ^ { ( k - 1 ) } ( x ) } & { \dots } & { f _ { k } ^ { ( k - 1 ) } ( x ) } \end{array} \right|
 $$
 
-- Laplace Transform: 
+- Laplace Transform:
 $$
 L_f(s) = \int_0^\infty e^{-st} f(t) ~dt
 $$
