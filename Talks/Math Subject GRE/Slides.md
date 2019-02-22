@@ -644,7 +644,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Structure
-- Structure of the Symmetric group
+- Structure of $S_n$
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
 - Structure of $\ZZ_n$
 $$ 
