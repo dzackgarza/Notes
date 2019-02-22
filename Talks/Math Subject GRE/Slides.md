@@ -711,8 +711,8 @@ Suppose $\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$
 
 - Noetherian: $I_1 \subseteq I_2 \subseteq \cdots \implies \exists N \suchthat I_N = I_{N+1} = \cdots$
 
-- Various types of rings and their relations
-<div style="height:50px"></div>
+- Various types of rings and their relations:
+<div style="height:20px"></div>
 $$ 
 \text{field} \implies \text{Euclidean Domain} \implies \text{PID} \\ \implies \text{UFD} \implies \text{integral domain}
 $$
