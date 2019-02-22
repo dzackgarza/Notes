@@ -418,6 +418,7 @@ $$
     - Reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
 
   - Eigenspace: 
+    - Recall equation $\lambda \in \spec(A)$
     - For each $\lambda \in \spec(A)$ Compute $\ker (A - \lambda I)$
 
 <!-- slide vertical=true -->
