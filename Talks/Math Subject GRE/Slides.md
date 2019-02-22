@@ -675,7 +675,9 @@ $$
 - Connected, disconnected, totally disconnected, etc
 
 
-
+<!-- slide vertical=true -->
+## Useful Facts
+- Topologies are closed under 
 
 
 
