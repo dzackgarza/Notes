@@ -642,6 +642,12 @@ $$
 - Structure of the Symmetric group
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
 
+<!-- slide vertical=true -->
+- Cauchy's Theorem
+	- If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
+- The Sylow Theorems
+	- If $\abs{G} = n = \prod p_i^{k_i}$, for each $ii$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
+
 <!-- slide -->
 # Topics: Discrete Mathematics
 <!-- slide vertical=true -->
