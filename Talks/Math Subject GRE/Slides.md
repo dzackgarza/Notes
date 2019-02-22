@@ -179,7 +179,7 @@ $$\begin{align*}
 \int_a^b \dd{}{x} f(x)~dx &= f(b) - f(a) \\
 \end{align*}$$
 
-First form is usually skimmed over in courses, but very important!
+First form is usually skimmed over, but very important!
 
 <!-- slide vertical=true -->
 ## FTC Alternative Forms
