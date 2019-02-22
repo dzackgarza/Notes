@@ -90,7 +90,7 @@ Five Official Practice Exams (with Solutions)
 
 All old and *significantly* easier than exams in recent years.
 
-Aim for 90th percentile in <2 hours.
+Aim for 90th percentile in $< 2$ hours.
 
 <!-- slide -->
 # General Tips
