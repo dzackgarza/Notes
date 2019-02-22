@@ -110,7 +110,7 @@ Five Official Practice Exams
 - Start early
   - Steady practice paced over 3-9 months is 100x more effective than 1 month of cramming
 - Speed is important (unfortunately)
-- Spaced repetition
+- Spaced repetition, e.g. Anki
 - Replicate exam conditions
 - Self care!!
 
