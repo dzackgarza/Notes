@@ -52,7 +52,7 @@ presentation:
   - Complex Analysis
   - Combinatorics
   - Probability
-<img src="https://pbs.twimg.com/media/C29j_1BXEAAa0PN.jpg">
+<img src="https://pbs.twimg.com/media/C29j_1BXEAAa0PN.jpg" height="10%">
 
 <!-- slide -->
 # Logistics
