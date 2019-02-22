@@ -713,6 +713,8 @@ $$
 \text{field} \implies \text{Euclidean Domain} \implies \text{PID} \\ \implies \text{UFD} \implies \text{integral domain}
 $$
 
+- Noetherian: $I_1 \subseteq I_2 \subseteq \cdots \implies \exists N \suchthat I_N = I_{N+1} = \cdots$
+
 <!-- slide -->
 # Topics: Real Analysis
 <!-- slide vertical=true -->
