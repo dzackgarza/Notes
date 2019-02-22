@@ -793,4 +793,4 @@ $$
 
 <!-- slide -->
 # Example Problems
-
+![problem1](/assets/problem1.png)
