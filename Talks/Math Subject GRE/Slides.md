@@ -647,6 +647,7 @@ $$
 ## Topics
 - Graphs, trees
 - Recurrence relations
+- Counting number of non-isomorphic strutures
 
 
 <!-- slide -->
