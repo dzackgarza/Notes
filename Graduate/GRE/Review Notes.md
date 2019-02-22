@@ -36,7 +36,7 @@
 
 # Analysis
 
-- $f$ injective implies $f$ has a nonzero derivative (in nbhds)
+- $f$ injective implies $f$ has a nonzero derivative (in neighborhoods)
 - In $\mathbb{R}$, singletons are closed. This means any finite subset is closed, as a finite union of singleton sets! Good for counterexamples to continuity.
 - Definition of topology: arbitrary unions and finite intersections of open sets are open. Equivalently, arbitrary intersections and finite unions of closed sets are closed.
 - The best source of examples and counterexamples is the open/closed unit interval in $\mathbb{R}$. Always test against these first!
@@ -99,4 +99,4 @@ $$
 - Related rates problems can often be solved via implicit differentiation of some constraint function
 - The second derivative of a parametric equation is not exactly what you'd intuitively think!
 - For the love of god, remember the FTC! $\frac{\partial}{\partial x} \int_0^x f(y) dy = f(x)$.
-- Technique for asymptotic inequalities: WTF $f < g$, so show $f(x_0) < g(x_0)$ at a point and then show $\forall x > x_0, f'(x) < g'(x)$. Good for big-O style problems too.
+- Technique for asymptotic inequalities: WTS $f < g$, so show $f(x_0) < g(x_0)$ at a point and then show $\forall x > x_0, f'(x) < g'(x)$. Good for big-O style problems too.
