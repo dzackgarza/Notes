@@ -789,6 +789,7 @@ $$
 \oint_C f(z)~dz = 2\pi i \sum_k \mathrm{Res}(f, z_k)
 $$
   - Exams often include one complex integral
+  - Need a number of other theorems for actually computing residues
 
 <!-- slide -->
 # Conclusion
