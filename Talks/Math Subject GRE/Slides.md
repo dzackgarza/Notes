@@ -802,11 +802,11 @@ C, because $\ZZ-\theset{0}$ lacks inverses
 (Would need to extend to $\QQ$)
 
 <!-- slide -->
-# Example Problem 1
+# Example Problem 2
 ![problem1](/assets/problem2.png)
 
 <!-- slide vertical=true-->
-# Example Problem 1
+# Example Problem 2
 ![problem1](/assets/problem2.png)
 $$
 L = \lim _ { ( a , b ) \rightarrow 0 } \frac { ( a - b i ) ^ { 2 } } { ( a + b i ) ^ { 2 } } = \lim _ { ( a , b ) \rightarrow 0 } \frac { a ^ { 2 } - b ^ { 2 } - 2 a b i } { a ^ { 2 } - b ^ { 2 } + 2 a b i } \\
@@ -817,11 +817,11 @@ $$
 So E, because the limit needs to be path-independent.
 
 <!-- slide -->
-# Example Problem 1
-![problem1](/assets/problem1.png)
+# Example Problem 3
+![problem1](/assets/problem3.png)
 
 <!-- slide vertical=true-->
-# Example Problem 1
+# Example Problem 3
 ![problem1](/assets/problem1.png)
 C, because $\ZZ-\theset{0}$ lacks inverses 
 (Would need to extend to $\QQ$)
