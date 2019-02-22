@@ -671,12 +671,17 @@ One step subgroup test:
 	- If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
 - The Sylow Theorems
 	- If $\abs{G} = n = \prod p_i^{k_i}$, for each $ii$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
-- Classification of Abelian Groups
+
+<!-- slide vertical=true -->
+## Classification of Abelian Groups
   $$
   G \cong \ZZ_{p_1^{k_1}} \oplus \ZZ_{p_2^{k_2}} \oplus \cdots \oplus \ZZ_{p_n^{k_n}}
   $$
   Where $(p_i, k_i)$ are the set of *elementary divisors* of $G$.
   Get one unique group for every unique integer partition of $n = \abs{G}$
+
+<!-- slide vertical=true -->
+## Example
 
 <!-- slide -->
 # Topics: Discrete Mathematics
