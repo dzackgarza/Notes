@@ -637,6 +637,7 @@ $$
 # Topics: Abstract Algebra
 
 <!-- slide vertical=true -->
+# 
 - Definitions: group, subgroup, ring, homomorphism
 - Symmetric 
 
