@@ -71,9 +71,10 @@ presentation:
 *Garrity,* [All the Mathematics You Missed (But Need to Know for Graduate School)](https://www.amazon.com/All-Mathematics-You-Missed-Graduate/dp/0521797071)
 ![](https://i3.ebkimg.com/previews/000/000890/000890393/000890393-hq-168-80.jpg)
 
+Good high-level overview of undergrad topics.
+
 <!-- slide vertical=true-->
 *The Princeton Review,* [Cracking the Math GRE Subject Test](https://www.amazon.com/Cracking-GRE-Mathematics-Subject-Test/dp/0375429727)
-
 ![](https://images-na.ssl-images-amazon.com/images/I/51SwQs4zzdL._SX383_BO1,204,203,200_.jpg)
 
 <!-- slide vertical=true-->
