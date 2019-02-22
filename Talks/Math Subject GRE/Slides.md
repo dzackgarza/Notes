@@ -635,8 +635,10 @@ $$
 
 <!-- slide -->
 # Topics: Abstract Algebra
+
 <!-- slide vertical=true -->
-svc 1
+- Definitions: group, subgroup, ring, homomorphism
+- Symmetric 
 
 <!-- slide -->
 # Topics: Discrete Mathematics
