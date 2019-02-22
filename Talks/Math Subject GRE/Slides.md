@@ -808,5 +808,3 @@ C, because $\ZZ-\theset{0}$ lacks inverses
 <!-- slide vertical=true-->
 # Example Problem 1
 ![problem1](/assets/problem2.png)
-C, because $\ZZ-\theset{0}$ lacks inverses 
-(Would need to extend to $\QQ$)
