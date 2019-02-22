@@ -48,7 +48,6 @@
 
 # Linear Algebra
 
-
 - An $m\times n$ matrix is a map from $n$-dimensional space to $m$-dimensional space. Number of _rows_ tell you the dimension of the codomain, the number of _columns_ tell you the dimension of the _domain_.
 - The column space of $A$ (i.e. linear combinations of the columns) are a basis for the _image_ of $A$.
 - The row space is a basis for the _coimage_, which is nullspace perp.
