@@ -451,7 +451,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - The rows of $A$ are coplanar.
 
 <!-- slide vertical=true -->
-## Topics
+## Various Other Topics
 - Systems of equations
 - Row operations, Gaussian elimination, REF, RREF
 - Determinant, inversion, trace
@@ -463,7 +463,6 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - Diagonalizability and similarity
 - Canonical forms
 - Quadratic forms
-
 
 
 <!-- slide -->
