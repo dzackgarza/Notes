@@ -114,7 +114,7 @@ Five Official Practice Exams
 - Replicate exam conditions
 - Build up mental stamina
   - i.e. 2-3 hours of uninterrupted problem solving
-  - More 
+  - 
 - Self care!!
 
 
