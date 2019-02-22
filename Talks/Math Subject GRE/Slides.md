@@ -97,6 +97,7 @@ Five Official Practice Exams
 <!-- slide vertical=true -->
 # Math-Specific Tips
 - Focus on lower div
+- 
 - Drill *a lot* of problems
 - Memorize formulas and definitions
 - Save actual exams
