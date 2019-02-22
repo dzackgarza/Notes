@@ -678,6 +678,8 @@ $$
 <!-- slide vertical=true -->
 ## Useful Facts
 - Topologies are closed under 
+  - Arbitrary unions
+  - Finite intersections
 
 
 
