@@ -835,4 +835,4 @@ $$\left(
 \left(\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right) = \vector 0
 $$
 
-So D, A are true. C is true because it's a homogeneous system. B is true because $A\vector x = 0 \implies A (t\vector x) = tA\vector x = 0$ which means $t\vector x$ is a solution for every $t$.
+So D, A are true. C is true because it's a homogeneous system. B is true because $A\vector x = 0 \implies A (t\vector x) = tA\vector x = 0$ which means $t\vector x$ is a solution for every $t$. By process of elimination, E must be false.
