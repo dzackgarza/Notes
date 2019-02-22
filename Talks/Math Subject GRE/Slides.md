@@ -824,4 +824,7 @@ So E, because the limit needs to be path-independent.
 # Example Problem 3
 ![problem1](/assets/problem3.png)
 
-Don't row-reduce or invert! Strategy: 
+Don't row-reduce or invert! Strategy: compute
+$$
+
+$$
