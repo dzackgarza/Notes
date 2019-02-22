@@ -663,7 +663,7 @@ $$
 	- $p$ Test
 - Cauchy Sequences
 - Commuting limiting operations:
-	- $[\frac{\partial}{\partial x}, \int dx](f)$
+	- $[\frac{\partial}{\partial x}, \int dx]$
 - Uniform and point-wise continuity
 - Lipschitz Continuity
 
