@@ -834,3 +834,4 @@ $$\left(
 \end{array}\right)
 \left(\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right) = \vector 0
 $$
+
