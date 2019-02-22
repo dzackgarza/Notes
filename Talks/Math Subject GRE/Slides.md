@@ -665,6 +665,7 @@ $$
   - Cycle types
   - Inversions
   - Conjugacy classes
+  - Parity
 
 - Structure of $\ZZ_n$
 $$ 
