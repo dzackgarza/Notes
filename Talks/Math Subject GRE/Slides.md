@@ -839,8 +839,8 @@ So D, A are true. C is true because it's a homogeneous system. B is true because
 
 <!-- slide -->
 # Example Problem 4
-![problem1](/assets/problem3.png)
+![problem1](/assets/problem4.png)
 
 <!-- slide vertical=true-->
 # Example Problem 4
-![problem1](/assets/problem3.png)
+![problem1](/assets/problem4.png)
