@@ -26,6 +26,7 @@ presentation:
 - Different from the Math section of the *General* GRE
 - Required of graduate student applicants to many Math Ph.D. programs
 - Tests a breadth of undergraduate topics
+</textarea>
 </div>
 
 <div class="column" style="float:right; width:30%" markdown="1">
