@@ -115,7 +115,10 @@ Five Official Practice Exams
 - Build mental stamina
   - i.e. 2-3 hours of uninterrupted problem solving
 - Self care!!
-  - 
+  - Sleep
+  - Eat right
+  - Hydrate
+  - Moisturize
 
 
 <!-- slide -->
