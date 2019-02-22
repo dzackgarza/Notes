@@ -645,13 +645,13 @@ $$
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
 
 <!-- slide vertical=true -->
-- Group Axioms
+Group Axioms
 	- Closure: $a,b \in G \implies ab \in G$
 	- Identity: $\exists e\in G \mid a\in G \implies ae = ea = a$
 	- Associativity: $a,b,c \in G \implies (ab)c = a(bc)$
 	- Inverses: $a\in G \implies \exists b \in G \mid ab =ba = e$
 
-- One step subgroup test:
+One step subgroup test:
 	$$
 	a,b \in H \implies a b^{-1} \in H \\
 	$$
