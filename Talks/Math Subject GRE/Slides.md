@@ -52,7 +52,7 @@ presentation:
   - Complex Analysis
   - Combinatorics
   - Probability
-  
+<img src="
 ![analysis](https://pbs.twimg.com/media/C29j_1BXEAAa0PN.jpg)
 
 <!-- slide -->
