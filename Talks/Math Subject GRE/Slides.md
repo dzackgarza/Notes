@@ -814,4 +814,4 @@ a = 0 \implies L = 1 \\
 a = b \implies L = -1
 $$
 
-So E, because the limit needs to be path-indpendent.
+So E, because the limit needs to be path-independent.
