@@ -639,7 +639,7 @@ $$
 <!-- slide vertical=true -->
 # Definitions
 - Group, ring, subgroup, ideal, homomorphism, etc
-- Order
+- Order, Center, Centralizer, 
 - Structure of the Symmetric group
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
 
