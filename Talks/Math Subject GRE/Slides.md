@@ -419,7 +419,8 @@ $$
 
   - Eigenspace: 
     - Recall the equation: 
-    $$\lambda \in \spec(A) \iff \exists \vector v_\lambda \suchthat A\vector v_\lambda  = \lambda \vector v_\lambda
+    $$
+    \lambda \in \spec(A) \iff \exists \vector v_\lambda \suchthat A\vector v_\lambda  = \lambda \vector v_\lambda
     $$
     - For each $\lambda \in \spec(A)$, compute $\ker (\lambda I - A)$
 
