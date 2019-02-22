@@ -234,6 +234,9 @@ $$
 $$
 f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
 $$
+
+<!-- slide vertical=true -->
+## More Series
 - **Limit Test**
 $$
 \lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty
