@@ -731,6 +731,7 @@ $$
 <!-- slide -->
 # Topics: Point-Set Topology
 <!-- slide vertical=true -->
+## General Concepts
 - Open/closed sets
 - Connected, disconnected, totally disconnected, etc
 - Metric spaces
