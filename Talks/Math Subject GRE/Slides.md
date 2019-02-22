@@ -36,10 +36,10 @@ presentation:
 ![calculus](http://pyvandenbussche.info/wp-content/uploads/2017/07/integral.png)
 
 <!-- slide vertical=true-->
-- "Algebra" (25%)
-  - Linear Algebra
-  - Abstract Algebra 
-  - Number Theory
+## "Algebra" (25%)
+- Linear Algebra
+- Abstract Algebra 
+- Number Theory
 
 ![algebra](http://www.math.colostate.edu/~jwilson/math/16/D16.gif)
 
