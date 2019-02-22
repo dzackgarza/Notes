@@ -304,7 +304,8 @@ Let $S$ be a surface. **Key Insight: The gradient of a function is normal to its
 		- $\nabla f$ is a normal vector zero level set.
 		- Just write the tangent plane equation $\inner{\vector n}{\vector x - \vector p_0}$.
 
-
+<!-- slide vertical=true -->
+## Tangent Planes/Linear Approximations
 - $S$ is given by $z = g(x,y)$:
 - Let $f(x, y, z) = g(x,y) - z$, then 
   $$
