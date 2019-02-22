@@ -379,7 +379,7 @@ $$
 
 Multivariable case:
 $$
-f(\vector p)  f(\vector p) + \nabla f(\vector p)(\vector x - \vector a) \\+ (\vector x - \vector p )^T H_f(p)(\vector x - \vector p) + o(\norm{\vector x - \vector p}_2^3)
+f(\vector p)  f(\vector p) + \nabla f(\vector p)(\vector x - \vector a) \\+ (\vector x - \vector p )^T H_f(p)(\vector x - \vector p) + O\norm{\vector x - \vector p}_2^3)
 $$
 
 <!-- slide -->
