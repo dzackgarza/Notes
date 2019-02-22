@@ -418,7 +418,9 @@ $$
     - Reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
 
   - Eigenspace: 
-    - Recall the equation: $\lambda \in \spec(A) \iff \exists \vector v_\lambda \suchthat A\vector v_\lambda  = \lambda \vector v_\lambda$
+    - Recall the equation: 
+    $$\lambda \in \spec(A) \iff \exists \vector v_\lambda \suchthat A\vector v_\lambda  = \lambda \vector v_\lambda
+    $$
     - For each $\lambda \in \spec(A)$, compute $\ker (\lambda I - A)$
 
 <!-- slide vertical=true -->
