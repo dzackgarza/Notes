@@ -27,7 +27,7 @@ presentation:
 
 
 <!-- slide -->
-# What topics does it cover?
+# Topics
 
 - Calculus (50%)
   - Single Variable
