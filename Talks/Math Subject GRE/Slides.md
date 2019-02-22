@@ -108,7 +108,7 @@ Five Official Practice Exams
 <!-- slide vertical=true -->
 # Study Tips
 - Start early
-  - 
+  - Spaced over 3-9 months
 - Speed is important
 - Spaced repetition
 - Replicate exam conditions
