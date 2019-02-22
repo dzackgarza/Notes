@@ -129,9 +129,9 @@ Aim for 90th percentile in $< 2$ hours.
 - Computing limits
 - Showing continuity
 - Computing derivatives
+- Rolle's Theorem
 - Mean Value Theorem
 - Extreme Value Theorem
-- Rolle's Theorem
 - Implicit Differentiation
 - Related Rates
 - Optimization
