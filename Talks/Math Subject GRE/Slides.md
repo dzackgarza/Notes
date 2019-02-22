@@ -832,5 +832,5 @@ $$\left(
 3 & 5 & 10 & 14 \\
 2 & 5 & 5 & 6
 \end{array}\right)
-\left(\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right)
+\left(\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right) = \vector 0
 $$
