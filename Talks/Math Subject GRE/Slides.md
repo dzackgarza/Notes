@@ -767,7 +767,7 @@ $$
   - Why? $\not\exists \varepsilon \suchthat (x-\varepsilon, x+\varepsilon) \subseteq \theset{x}$, and $\RR^n$ has a basis of such open neighborhoods.
 
 <!-- slide -->
-# Topics: Discrete Mathematics
+# Topics: Discrete Mathematics + Combinatorics
 <!-- slide vertical=true -->
 ## Topics
 - Graphs, trees
