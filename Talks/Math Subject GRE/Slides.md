@@ -318,8 +318,9 @@ i.e. it is the zero set of some function $f:\RR^3 \to \RR$
 
 <!-- slide vertical=true -->
 ## Tangent Planes/Linear Approximations
+
 $$
-\text{Case 2: } S \text{is given by } z = g(x,y)
+\text{Case 2: } S \text{ is given by } z = g(x,y)
 $$
 - Let $f(x, y, z) = g(x,y) - z$, then 
     $$
