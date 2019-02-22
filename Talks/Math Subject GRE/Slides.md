@@ -681,10 +681,6 @@ Suppose $\abs{G} = n = \prod_{i=1}^n p_i^{k_i}$
   $$
   In words: $G$ decomposes into a direct sum of groups corresponding to its prime factorization. For each component, you take the corresponding prime $p$, write an integer partition of $p$, and each unique partition yields a unique group.
 
-<!-- slide vertical=true -->
-## Example
-Suppose $\abs{G} = 270 = 2 3^3 5$
-
 <!-- slide -->
 # Topics: Discrete Mathematics
 <!-- slide vertical=true -->
