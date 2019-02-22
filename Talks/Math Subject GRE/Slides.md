@@ -99,6 +99,8 @@ Five Official Practice Exams
 - Focus on lower div
 - For Calculus, focus on speed: median $\leq 1$ minute
 - Drill *a lot* of problems
+  - Seriously, a lot.
+  - Seriously.
 - Memorize formulas and definitions
 - Save actual exams
 
