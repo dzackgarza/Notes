@@ -409,7 +409,7 @@ $$
   - $\mathrm{rowspace} A \subseteq \RR^n$
   	- Reduce to RREF, and take nonzero rows of $\mathrm{RREF}(A)$.
   
-  - $\mathrm{colspace} A \subseteq \RR^m$:
+  - $\mathrm{colspace} A / \im A \subseteq \RR^m$:
     - Reduce to RREF, and take columns with pivots from original $A$.
 
 <!-- slide vertical=true -->
