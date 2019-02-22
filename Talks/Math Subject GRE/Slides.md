@@ -646,14 +646,14 @@ $$
 
 <!-- slide vertical=true -->
 Group Axioms
-	- Closure: $a,b \in G \implies ab \in G$
-	- Identity: $\exists e\in G \mid a\in G \implies ae = ea = a$
-	- Associativity: $a,b,c \in G \implies (ab)c = a(bc)$
-	- Inverses: $a\in G \implies \exists b \in G \mid ab =ba = e$
+- Closure: $a,b \in G \implies ab \in G$
+- Identity: $\exists e\in G \mid a\in G \implies ae = ea = a$
+- Associativity: $a,b,c \in G \implies (ab)c = a(bc)$
+- Inverses: $a\in G \implies \exists b \in G \mid ab =ba = e$
 
 One step subgroup test:
 	$$
-	a,b \in H \implies a b^{-1} \in H \\
+	H \leq G \iff a,b \in H \implies a b^{-1} \in H \\
 	$$
   
 <!-- slide vertical=true -->
