@@ -769,7 +769,7 @@ $$
 <!-- slide -->
 # Topics: Discrete Mathematics + Combinatorics
 <!-- slide vertical=true -->
-## Topics
+## General Concepts
 - Graphs, trees
 - Recurrence relations
 - Counting problems
