@@ -810,5 +810,6 @@ C, because $\ZZ-\theset{0}$ lacks inverses
 ![problem1](/assets/problem2.png)
 $$
 L = \lim _ { ( a , b ) \rightarrow 0 } \frac { ( a - b i ) ^ { 2 } } { ( a + b i ) ^ { 2 } } = \lim _ { ( a , b ) \rightarrow 0 } \frac { a ^ { 2 } - b ^ { 2 } - 2 a b i } { a ^ { 2 } - b ^ { 2 } + 2 a b i } \\
-a = 0 \implies L = 0
+a = 0 \implies L = 1 \\
+a = b \implies L = -1
 $$
