@@ -677,7 +677,7 @@ One step subgroup test:
   $$
   \abs{G} = n = \prod_{i=1}^n p_i^{k_i} \\
   G \cong \bigoplus_{i=1}^n G_i \text{ with } \abs{G_i} = p_i^{k_i} \text{ and } \\
-  G_i \cong \bigoplus_{j=1}^k
+  G_i \cong \bigoplus_{j=1}^k \ZZ_{p_i}
   $$
   Where $(p_i, k_i)$ are the set of *elementary divisors* of $G$.
   Get one unique group for every unique integer partition of $n = \abs{G}$
