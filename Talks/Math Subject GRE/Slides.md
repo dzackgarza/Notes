@@ -774,7 +774,7 @@ $$
 - Recurrence relations
 - Counting problems
   - e.g. number of nonisomorphic structures
-- 
+- Inclusion-exclusion
 
 <!-- slide -->
 # Topics: Complex Analysis
