@@ -308,7 +308,9 @@ $$
 Let $S \subseteq \RR^3$ be a surface. 
 
 **Key Insight: The gradient of a function is normal to its level sets!**
-Need a point $\vector{p} \in S$ and a normal $\vector{n}$. Cases:
+Need a point $\vector{p} \in S$ and a normal $\vector{n}$. 
+
+- Cases:
 
 $$
 S = \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}
