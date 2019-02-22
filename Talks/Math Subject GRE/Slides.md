@@ -385,10 +385,11 @@ $$\begin{align*}
 ## Linear Approximation
 Essentially just use Taylor expansions.
 
-Single variable case:
+### Single variable case:
 $$
 f(p) = f(p) + f'(p)(x-p) \\+ f''(p)(x-a)^2 + o(x^3)
 $$
+
 <div style="height:100px"></div>
 ### Multivariable case:
 $$
