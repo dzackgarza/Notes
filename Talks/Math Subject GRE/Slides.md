@@ -45,13 +45,13 @@ presentation:
 
 <!-- slide vertical=true-->
 ## Mixed Topics (25%)
-  - Real Analysis
-  - Logic / Set Theory
-  - Discrete Mathematics
-  - Point-Set Topology
-  - Complex Analysis
-  - Combinatorics
-  - Probability
+- Real Analysis
+- Logic / Set Theory
+- Discrete Mathematics
+- Point-Set Topology
+- Complex Analysis
+- Combinatorics
+- Probability
 <img src="https://pbs.twimg.com/media/C29j_1BXEAAa0PN.jpg" style="height:300px">
 
 <!-- slide -->
