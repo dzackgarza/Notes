@@ -383,7 +383,7 @@ $$\begin{align*}
 
 <!-- slide vertical=true -->
 ## Linear Approximation
-Essentially just use Taylor expansions.
+Just use Taylor expansions.
 
 ### Single variable case:
 $$
