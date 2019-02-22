@@ -109,7 +109,7 @@ Five Official Practice Exams
 # Study Tips
 - Start early
   - Steady practice paced over 3-9 months is 100x more effective than 1 month of cramming
-- Speed is important
+- Speed is important (unfortunately)
 - Spaced repetition
 - Replicate exam conditions
 - Self care!!
