@@ -455,7 +455,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - Quadratic forms
 - Projection operators
 - Least Squares
-- Diagonalizability and similarity
+- Diagonalizability, similarity
 - Canonical forms
 - Decompositions ($QR, VDV^T, SVD,$ etc)
 
