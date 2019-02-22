@@ -676,7 +676,7 @@ One step subgroup test:
 ## Classification of Abelian Groups
   $$
   \abs{G} = n = \prod_{i=1}^n p_i^{k_i} \\
-  G \cong \bigoplus_{i=1}^n G_i \text{ where } \\
+  G \cong \bigoplus_{i=1}^n G_i \text{ with } \abs{G_i} = p_i^{k_i} \\
   G_i \cong \bigoplus_{j=1}^k
   $$
   Where $(p_i, k_i)$ are the set of *elementary divisors* of $G$.
