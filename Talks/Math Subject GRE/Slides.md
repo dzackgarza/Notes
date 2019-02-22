@@ -411,10 +411,11 @@ $$
   
   - $\mathrm{colspace} A \subseteq \RR^m$:
     - Reduce to RREF, and take columns with pivots from original $A$.
-
+<!-- slide vertical=true -->
+## Fundamental Spaces
   - $\mathrm{nullspace} A$: 
     - Reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
-    
+
   - Eigenspace: 
     - For each $\lambda \in \spec(A)$ Compute $\ker (A - \lambda I)$
 
