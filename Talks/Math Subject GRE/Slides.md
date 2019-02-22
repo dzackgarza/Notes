@@ -346,7 +346,8 @@ $$
 $$ 
 \text{Optimize } f(\mathbf x) \text{ subject to } g(\mathbf x) = c \\ \implies \nabla \vector f = \lambda \nabla \vector g
 $$
-Generally a system of nonlinear equations, but there are common tricks to solve.
+- Generally a system of nonlinear equations
+  - But there are a few common tricks to help solve.
 
 <!-- slide vertical=true -->
 ## Multivariable Chain Rule
