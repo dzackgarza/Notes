@@ -504,7 +504,6 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
 <!-- slide vertical=true -->
 ## Less Common Topics
-
 - Integrating factors
 - Change of Variables
 - Inhomogeneous ODEs (need a *particular solution*)
@@ -513,6 +512,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
   - Undetermined coefficients
   - Reduction of Order
   - Laplace Transforms
+  - Series solutions
 - Special Equations
   - Exact
   - Bernoulli
