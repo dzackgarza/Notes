@@ -470,6 +470,9 @@ $$
 \sum_{i=0}^n \alpha_i y^{(i)}(x) = f(x)
 $$
   - Just write the characteristic polynomial.
+
+<!-- slide vertical=true -->
+## Easy IVPs 
 - Example: A second order homogeneous equation 
 $$
 ay'' + by' + cy = 0 \mapsto ax^2 + bx + c = 0
