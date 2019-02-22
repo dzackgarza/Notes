@@ -637,9 +637,9 @@ $$
 # Topics: Abstract Algebra
 
 <!-- slide vertical=true -->
-# 
+# Broad Topics
 - Definitions: group, subgroup, ring, homomorphism
-- Symmetric 
+- Symmetric group, dihedral group
 
 <!-- slide -->
 # Topics: Discrete Mathematics
