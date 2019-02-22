@@ -669,7 +669,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Big Theorems
-- **
+- **Completeness**: Every Cauchy sequence in $\RR^n$ converges.
 - **Generalized Mean Value Theorem**
 $$
 f,g\text{ differentiable on } [a,b] \implies \\ \exists c\in[a,b] :
