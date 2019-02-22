@@ -95,6 +95,12 @@ Five Official Practice Exams
 ![](https://pm1.narvii.com/6764/9db97da1ae788b05dd789270d71cd209239e1870v2_hq.jpg)
 
 <!-- slide vertical=true -->
+- Focus on lower div
+- Drill *a lot* of problems
+- Memorize formulas and definitions
+- Save actual exams
+
+<!-- slide vertical=true -->
 # Study Tips
 - Start early
 - Speed is important
@@ -102,11 +108,7 @@ Five Official Practice Exams
 - Replicate exam conditions
 - Self care!!
 
-<!-- slide vertical=true -->
-- Focus on lower div
-- Drill *a lot* of problems
-- Memorize formulas and definitions
-- Save actual exams
+
 
 <!-- slide -->
 # Single Variable Calculus
