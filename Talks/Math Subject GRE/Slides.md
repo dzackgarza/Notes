@@ -669,6 +669,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Big Theorems
+- **
 - **Generalized Mean Value Theorem**
 $$
 f,g\text{ differentiable on } [a,b] \implies \\ \exists c\in[a,b] :
