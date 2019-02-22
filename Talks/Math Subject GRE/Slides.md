@@ -554,7 +554,7 @@ $$
 <!-- slide vertical=true -->
 ## The Euclidean Algorithm
 $$
-\begin{aligned} a & = q _ { 0 } b + r _ { 0 } \\ b & = q _ { 1 } r _ { 0 } + r _ { 1 } \\ r _ { 0 } & = q _ { 2 } r _ { 1 } + r _ { 2 } \\ r _ { 1 } & = q _ { 3 } r _ { 2 } + r _ { 3 } \\ & \vdots \\r_k &= q_{k+2}r_{k+1} + r_{k+2} \\ r_{k+1} &= q_{k+3}r_{k+2} + r_{k+2}
+\begin{aligned} a & = q _ { 0 } b + r _ { 0 } \\ b & = q _ { 1 } r _ { 0 } + r _ { 1 } \\ r _ { 0 } & = q _ { 2 } r _ { 1 } + r _ { 2 } \\ r _ { 1 } & = q _ { 3 } r _ { 2 } + r _ { 3 } \\ & \vdots \\r_k &= q_{k+2}r_{k+1} + r_{k+2} \\ r_{k+1} &= q_{k+3}r_{k+2} + 0
 \end{aligned}
 $$
 
