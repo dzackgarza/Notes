@@ -639,7 +639,7 @@ $$
 <!-- slide vertical=true -->
 # Definitions
 - Group, ring, subgroup, ideal, homomorphism, etc
-- Order, Center, Centralizer, 
+- Order, Center, Centralizer, orbits, stabilizers
 - Common groups: $S_n, A_n, C_n, D_{2n}, \ZZ_n,$ etc
 - Structure of the Symmetric group
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
