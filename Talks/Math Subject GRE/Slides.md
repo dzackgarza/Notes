@@ -98,16 +98,16 @@ Five Official Practice Exams
 # Study Tips
 - Start early
 - Speed is important
-- Focus on lower div
-- Drill *a lot* of problems
-- Memorize formulas and definitions
+
 - Spaced repetition
 - Save actual exams
 - Replicate exam conditions
 - Self care!!
 
 <!-- slide vertical=true -->
-- 
+- Focus on lower div
+- Drill *a lot* of problems
+- Memorize formulas and definitions
 
 <!-- slide -->
 # Single Variable Calculus
