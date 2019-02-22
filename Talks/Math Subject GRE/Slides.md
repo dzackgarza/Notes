@@ -679,7 +679,7 @@ Suppose $\abs{G} = n = \prod_{i=1}^n p_i^{k_i}$
   G \cong \bigoplus_{i=1}^n G_i \text{ with } \abs{G_i} = p_i^{k_i} \text{ and } \\
   G_i \cong \bigoplus_{j=1}^k \ZZ_{p_i^{\alpha_j}} \text{ where } \sum_{j=1}^k \alpha_j = k_i
   $$
-  $G$ decomposes into a direct sum of groups corresponding to its prime factorization. For each component, you take the corresponding prime $p$, write an integer partition of $p$, and each unique partition yields a unique group.
+  $G$ decomposes into a direct sum of groups corresponding to its prime factorization. For each component, you take the corresponding prime $p$, write an integer partition of its exponent, and each unique partition yields a unique group.
 
 <!-- slide -->
 # Topics: Discrete Mathematics
