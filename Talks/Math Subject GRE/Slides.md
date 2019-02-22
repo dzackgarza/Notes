@@ -831,5 +831,5 @@ $$\left(
 1 & 4 & 1 & 0 \\
 3 & 5 & 10 & 14 \\
 2 & 5 & 5 & 6
-\end{array}\right)
+\end{array}\right)\begin{array}{c}
 $$
