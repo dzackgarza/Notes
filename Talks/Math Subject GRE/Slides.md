@@ -21,7 +21,7 @@ presentation:
 
 ## What is the Mathematics Subject GRE?
 
-<div class="column" style="float:left; width:30%" markdown="1">
+<div class="column" style="float:left; width:30%" data-markdown>
 - Different from the Math section of the *General* GRE
 - Required of graduate student applicants to many Math Ph.D. programs
 - Tests a breadth of undergraduate topics
