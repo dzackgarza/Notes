@@ -825,11 +825,11 @@ So E, because the limit needs to be path-independent.
 ![problem1](/assets/problem3.png)
 
 Don't row-reduce or invert! Strategy: compute
-$$
+$$\left(
 \begin{array}{cccc}
 1 & 3 & 2 & 3 \\
 1 & 4 & 1 & 0 \\
 3 & 5 & 10 & 14 \\
 2 & 5 & 5 & 6
-\end{array}
+\end{array}\right)
 $$
