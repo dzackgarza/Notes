@@ -609,6 +609,8 @@ $$
 x = \sum_{j=1}^r a_j \frac{\prod_i m_i}{m_j} \left[ \frac{\prod_i m_i}{m_j} \right]^{-1}_{\mod m_j}
 $$
 
+
+
 <!-- slide vertical=true -->
 ## Theorems
 - Fermat's Little Theorem and Euler's Theorem
