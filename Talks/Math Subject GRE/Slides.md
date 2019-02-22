@@ -772,7 +772,9 @@ $$
 ## Topics
 - Graphs, trees
 - Recurrence relations
-- Counting number of non-isomorphic structures
+- Counting problems
+  - e.g. number of nonisomorphic structures
+- 
 
 <!-- slide -->
 # Topics: Complex Analysis
