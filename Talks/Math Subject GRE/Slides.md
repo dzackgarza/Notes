@@ -112,9 +112,8 @@ Five Official Practice Exams
 - Speed is important (unfortunately)
 - Spaced repetition, e.g. Anki
 - Replicate exam conditions
-- Build up mental stamina
+- Build mental stamina
   - i.e. 2-3 hours of uninterrupted problem solving
-  - 
 - Self care!!
 
 
