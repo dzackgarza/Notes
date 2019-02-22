@@ -79,12 +79,12 @@ presentation:
 ![](https://images-na.ssl-images-amazon.com/images/I/51SwQs4zzdL._SX383_BO1,204,203,200_.jpg)
 
 <!-- slide vertical=true-->
-- Five Official Practice Exams
-	- GR 1268
-	- GR 0568
-	- GR 9367
-	- GR 8767
-	- GR 9768
+Five Official Practice Exams
+- GR 1268
+- GR 0568
+- GR 9367
+- GR 8767
+- GR 9768
 
 <!-- slide -->
 # General Tips
