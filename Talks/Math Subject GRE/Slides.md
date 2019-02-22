@@ -395,6 +395,7 @@ $$
 $$
 \im(A) \perp \ker(A^T), \qquad \ker(A) \perp \im (A^T)
 $$
+
 - Compute
   - Determinant, trace, inverse, subspaces, eigenvalues, etc
   - Know properties too!
