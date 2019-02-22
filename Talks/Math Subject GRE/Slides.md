@@ -88,7 +88,8 @@ Five Official Practice Exams
 - GR 8767
 - GR 9768
 
-I
+Include solutions.
+All old and *significantly* easier than modern exam.
 <!-- slide -->
 # General Tips
 
