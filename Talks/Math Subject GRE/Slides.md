@@ -503,7 +503,7 @@ $$
 for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 
 <!-- slide vertical=true -->
-## Less Common + More Complex
+## Less Common Topics
 
 - Integrating factors
 - Change of Variables
