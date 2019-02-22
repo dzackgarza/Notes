@@ -298,7 +298,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Tangent Planes/Linear Approximations
-Let $S \subseteq \RR^2$ be a surface. 
+Let $S \subseteq \RR^3$ be a surface. 
 
 **Key Insight: The gradient of a function is normal to its level sets!**
 - Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
