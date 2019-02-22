@@ -645,6 +645,7 @@ $$
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
 
 <!-- slide vertical=true -->
+## Basics
 Group Axioms
 - Closure: $a,b \in G \implies ab \in G$
 - Identity: $\exists e\in G \mid a\in G \implies ae = ea = a$
