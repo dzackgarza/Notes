@@ -658,6 +658,7 @@ One step subgroup test:
 	$$
   
 <!-- slide vertical=true -->
+## Useful Theorems
 - Cauchy's Theorem
 	- If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
 - The Sylow Theorems
