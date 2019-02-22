@@ -544,7 +544,10 @@ $$
 Know some group and ring theoretic properties of $\ZZ/n\ZZ$
 - $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
   - So we can solve equations with inverses: $ax = b \mod n \iff x = a^{-1}b \mod n$
-- But there will always be *some* units, 
+- But there will always be *some* units; in general,
+$$
+(\ZZ/n\ZZ
+$$
 
 <!-- slide vertical=true -->
 ## Definitions
