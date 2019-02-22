@@ -411,6 +411,7 @@ $$
   
   - $\mathrm{colspace} A \subseteq \RR^m$:
     - Reduce to RREF, and take columns with pivots from original $A$.
+
 <!-- slide vertical=true -->
 ## Fundamental Spaces
   - $\mathrm{nullspace} A$: 
