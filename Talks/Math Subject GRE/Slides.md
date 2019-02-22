@@ -661,11 +661,14 @@ $$
 	- Ratio Test
 	- Root Test
 	- $p$ Test
-- Cauchy Sequences
+- Cauchy sequences and completeness
 - Commuting limiting operations:
 	- $[\frac{\partial}{\partial x}, \int dx]$
 - Uniform and point-wise continuity
 - Lipschitz Continuity
+
+<slide vertical=true -->
+## Big Theorems
 
 
 <!-- slide -->
