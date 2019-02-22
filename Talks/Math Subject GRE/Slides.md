@@ -706,7 +706,7 @@ Suppose $\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$
 <!-- slide vertical=true -->
 # Ring Theory
 - Definition: $(R, +, \times)$ where $(R, +)$ is abelian and $(R, times)$ is a monoid.
-- Ideals: $(I, +) \leq (R, +)$ and $\forall r\in R, \forall x\in I, rx \in I$
+- Ideals: $(I, +) \leq (R, +)$ and $r\in R, x\in I \implies rx \in I$
 $$ 
 \text{field} \implies \text{Euclidean Domain} \implies \text{PID} \\ \implies \text{UFD} \implies \text{integral domain}
 $$
