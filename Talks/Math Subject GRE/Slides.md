@@ -69,7 +69,6 @@ presentation:
 
 <!-- slide vertical=true-->
 *Garrity,* [All the Mathematics You Missed (But Need to Know for Graduate School)](https://www.amazon.com/All-Mathematics-You-Missed-Graduate/dp/0521797071)
-
 ![](https://i3.ebkimg.com/previews/000/000890/000890393/000890393-hq-168-80.jpg)
 
 <!-- slide vertical=true-->
