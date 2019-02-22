@@ -314,8 +314,8 @@ $$
 S = \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}
 $$ 
 i.e. it is the zero set of some function $f:\RR^3 \to \RR$
-    - $\nabla f$ is a vector that is normal to the zero level set.
-		- So just  write the equation for a tangent plane $\inner{\vector n}{\vector x - \vector p_0}$.
+  - $\nabla f$ is a vector that is normal to the zero level set.
+- So just  write the equation for a tangent plane $\inner{\vector n}{\vector x - \vector p_0}$.
 
 <!-- slide vertical=true -->
 ## Tangent Planes/Linear Approximations
