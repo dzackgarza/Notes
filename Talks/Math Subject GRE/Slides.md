@@ -25,7 +25,6 @@ presentation:
 - Required of graduate student applicants to many Math Ph.D. programs
 - Tests a breadth of undergraduate topics
 
-
 <!-- slide -->
 # Topics
 
