@@ -306,13 +306,13 @@ Let $S$ be a surface. **Key Insight: The gradient of a function is normal to its
 
 <!-- slide vertical=true -->
 ## Tangent Planes/Linear Approximations
-- $S$ is given by $z = g(x,y)$:
-- Let $f(x, y, z) = g(x,y) - z$, then 
-  $$
-  \vector p \in S \iff \vector p \in \theset{f(x,y,z) = 0}.
-  $$
-    - Then $\nabla f$ is normal to level sets, compute $\nabla f = [\dd{}{x}g, \dd{}{y}g, -1]$
-    - Proceed as in previous case.
+- If $S$ is given by $z = g(x,y)$:
+  - Let $f(x, y, z) = g(x,y) - z$, then 
+    $$
+    \vector p \in S \iff \vector p \in \theset{f(x,y,z) = 0}.
+    $$
+      - Then $\nabla f$ is normal to level sets, compute $\nabla f = [\dd{}{x}g, \dd{}{y}g, -1]$
+      - Proceed as in previous case.
 
 
 <!-- slide vertical=true -->
