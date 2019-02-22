@@ -682,7 +682,7 @@ One step subgroup test:
 
 <!-- slide vertical=true -->
 ## Example
-Suppose $\abs{G} = 270 = 2 3^
+Suppose $\abs{G} = 270 = 2 3^3 5$
 
 <!-- slide -->
 # Topics: Discrete Mathematics
