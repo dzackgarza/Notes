@@ -201,7 +201,7 @@ $$
 <div style="height:50px;"></div>
 Set 
 $$
-a(x) = a, b(x) = b, f(x,t) = f(t)$ so $\dd{}{x} f(t) = 0,
+a(x) = a, b(x) = b, f(x,t) = f(t) \implies \dd{}{x} f(t) = 0,
 $$ 
 then commute to derive the FTC.
 
