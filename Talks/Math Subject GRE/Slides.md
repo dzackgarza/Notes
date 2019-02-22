@@ -682,6 +682,7 @@ One step subgroup test:
 
 <!-- slide vertical=true -->
 ## Example
+Suppose $\abs{G} = 
 
 <!-- slide -->
 # Topics: Discrete Mathematics
