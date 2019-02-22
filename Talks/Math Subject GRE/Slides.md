@@ -675,7 +675,7 @@ f,g\text{ differentiable on } [a,b] \implies \\ \exists c\in[a,b] :
 \left[f ( b ) - f ( a ) \right] g' ( c ) = \left[g ( b ) - g ( a )\right] f' ( c )
 $$
   - Take $g(x) = x$ to recover the usual MVT
-- **Bolzano-Weierstrass**: every bounded sequence has a convergent subsequence.
+- **Bolzano-Weierstrass**: every bounded sequence in $\RR^n$ has a convergent subsequence.
 - **Heine-Borel**: in $\RR^n, X$ is compact $\iff X$ is closed and bounded.
 
 <!-- slide -->
