@@ -813,3 +813,5 @@ L = \lim _ { ( a , b ) \rightarrow 0 } \frac { ( a - b i ) ^ { 2 } } { ( a + b i
 a = 0 \implies L = 1 \\
 a = b \implies L = -1
 $$
+
+So E, because the limit needs to be path-indpendent.
