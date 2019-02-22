@@ -95,7 +95,7 @@ Five Official Practice Exams
 ![](https://pm1.narvii.com/6764/9db97da1ae788b05dd789270d71cd209239e1870v2_hq.jpg)
 
 <!-- slide vertical=true -->
-# Math-Specific Tips
+## Math-Specific Tips
 - Focus on lower div
 - For Calculus, focus on speed: median $\leq 1$ minute
 - Drill *a lot* of problems
