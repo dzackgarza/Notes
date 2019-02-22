@@ -79,7 +79,7 @@ Good high-level overview of undergrad topics.
 
 "Calculus: The Greatest Hits", plus good breadth. 
 
-Little depth in topics like Algebra, Real Analysis, Topology, or Number Theory.
+Shallow treatment of Algebra, Real Analysis, Topology, Number Theory.
 
 <!-- slide vertical=true-->
 Five Official Practice Exams
