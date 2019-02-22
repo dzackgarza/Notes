@@ -792,5 +792,5 @@ $$
   - Need a number of other theorems for actually computing residues
 
 <!-- slide -->
-# Example Problems
+# Example Problem 1
 ![problem1](/assets/problem1.png)
