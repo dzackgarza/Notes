@@ -783,6 +783,10 @@ $$(x+y)^n = \sum_{k=0}^n {n\choose k}x^ky^{n-k}$$
 <!-- slide vertical=true -->
 - $n\dash$th roots:
 $$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
+The main theorem:
+$$
+\oint_C f(z)~dz = 2\pi i \sum_k \mathrm{Res}(f, z_k)
+$$
 
 <!-- slide -->
 # Conclusion
