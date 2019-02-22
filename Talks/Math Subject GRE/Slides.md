@@ -391,6 +391,7 @@ $$
 $$
 \abs{\ker(A)} + \abs{\im(A)} = \abs{\mathrm{domain}(A)}
 $$
+
 - Fundamental Subspace Theorems
 $$
 \im(A) \perp \ker(A^T), \qquad \ker(A) \perp \im (A^T)
