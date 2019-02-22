@@ -354,6 +354,7 @@ Generally a system of nonlinear equations, but there are common tricks to solve.
 \usepackage{dsfont}
 \usepackage{amsmath, amsthm, amssymb}
 \usetikzlibrary{cd}
+\usepackage{adjustbox}
 \begin{document}
 \adjustbox{scale=2}{%
   \begin{tikzcd}
