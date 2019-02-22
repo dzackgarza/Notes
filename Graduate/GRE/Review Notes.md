@@ -37,12 +37,10 @@
 # Analysis
 
 - $f$ injective implies $f$ has a nonzero derivative (in nbhds)
-- Chain rule: $(g \circ f)' = g'(f(x))~f'(x)$
 - In $\mathbb{R}$, singletons are closed. This means any finite subset is closed, as a finite union of singleton sets! Good for counterexamples to continuity.
 - Definition of topology: arbitrary unions and finite intersections of open sets are open. Equivalently, arbitrary intersections and finite unions of closed sets are closed.
 - The best source of examples and counterexamples is the open/closed unit interval in $\mathbb{R}$. Always test against these first!
 - Every Cauchy sequence converges in a complete metric space
-- Prototypical example of a diverging function near zero: $f(x) = 1/x$.
 
 # Combinatorics and Probability
 
@@ -50,15 +48,6 @@
 
 # Linear Algebra
 
-## Basis for rowspace
-
-RREF and read off the pivot rows.
-
-## Basis for colspace/image
-
-RREF, then use the pivoted columns _from the original matrix_!
-
-## Basis for nullspace
 
 - An $m\times n$ matrix is a map from $n$-dimensional space to $m$-dimensional space. Number of _rows_ tell you the dimension of the codomain, the number of _columns_ tell you the dimension of the _domain_.
 - The column space of $A$ (i.e. linear combinations of the columns) are a basis for the _image_ of $A$.
@@ -74,7 +63,9 @@ RREF, then use the pivoted columns _from the original matrix_!
 
 - Inverting matrices quickly:
 
-$\left(\begin{array}{cc} a&b\ c&d \end{array}\right)^{-1} = {1 \over a d - b c} \left(\begin{array}{rr} d&-b\ -c&a \end{array}\right)~,~~\text{ where } ad-bc \ne 0$.
+$$
+\left(\begin{array}{cc} a& b \\ c& d \end{array}\right)^{-1} = {1 \over a d - b c} \left(\begin{array}{rr} d&-b \\ -c&a \end{array}\right)~,~~\text{ where } ad-bc \ne 0
+$$
 
 The pattern?
 
@@ -82,13 +73,16 @@ The pattern?
 2. Swap the diagonals
 3. Hadamard product with checkerboard $\left(\begin{array}{rr} +&-\ -&+ \end{array}\right)$
 
-$\left(\begin{array}{ccc} a&b&c\ d&e&f\ g&h&i \end{array}\right)^{-1} = {1 \over {\rm{det}}} \left(\begin{array}{rrr} e i - f h&-(b i - c h)&b f - c e\ -(d i - f g)&a i - c g&-(a f -c d)\ d h - e g&-(a h - b g)&a e - b d \end{array}\right).$
+$\left(\begin{array}{ccc} a&b&c\\ d&e&f\\ g&h&i \end{array}\right)^{-1} = {1 \over {\rm{det}}} \left(\begin{array}{rrr} e i - f h& -(b i - c h)& b f - c e\\ -(d i - f g)&a i - c g&-(a f -c d)\\ d h - e g & -(a h - b g)& a e - b d \end{array}\right).$
 
 The pattern:
 
 1. Divide by determinant
-2. Each entry is determinant of submatrix of $A$ with col/row deleted
-3. Hadamard product with checkerboard $\left(\begin{array}{rrr} +&- & +\ -&+ & -\ +& -&+ \end{array}\right)$
+2. Each entry is determinant of submatrix of $A$ with corresponding col/row deleted
+3. Hadamard product with checkerboard
+$$
+\left(\begin{array}{rrr} +&- & +\\ -&+ & -\\ +& -&+ \end{array}\right)
+$$
 4. Transpose at the end!!
 
 # Calculus
