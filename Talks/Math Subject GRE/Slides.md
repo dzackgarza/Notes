@@ -725,7 +725,13 @@ $$
 - In $\RR^n$, singletons are closed, and thus so are finite sets of points
   - Why? $\not\exists \varepsilon \suchthat (x-\varepsilon, x+\varepsilon) \subseteq \theset{x}$, and $\RR^n$ has a basis of such open neighborhoods.
 
-
+<!-- slide -->
+# Topics: Discrete Mathematics
+<!-- slide vertical=true -->
+## Topics
+- Graphs, trees
+- Recurrence relations
+- Counting number of non-isomorphic structures
 
 <!-- slide -->
 # Topics: Complex Analysis
