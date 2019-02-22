@@ -77,7 +77,9 @@ Good high-level overview of undergrad topics.
 *The Princeton Review,* [Cracking the Math GRE Subject Test](https://www.amazon.com/Cracking-GRE-Mathematics-Subject-Test/dp/0375429727)
 ![](https://images-na.ssl-images-amazon.com/images/I/51SwQs4zzdL._SX383_BO1,204,203,200_.jpg)
 
-"Calculus: The Greatest Hits", plus good breadth. 
+"Calculus: The Greatest Hits"
+
+Good breadth. 
 
 Shallow treatment of Algebra, Real Analysis, Topology, Number Theory.
 
