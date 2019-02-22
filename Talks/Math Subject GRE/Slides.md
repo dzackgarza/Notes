@@ -102,7 +102,7 @@ Five Official Practice Exams
   - Seriously, a lot.
   - *Seriously.*
 - Memorize formulas and definitions
-- Save actual exams
+- Save actual exams as diagnostic tools
 
 <!-- slide vertical=true -->
 # Study Tips
