@@ -97,7 +97,7 @@ Five Official Practice Exams
 <!-- slide vertical=true -->
 # Math-Specific Tips
 - Focus on lower div
-- For Calculus, focus on speed: $\leq 1$ minute median
+- For Calculus, focus on speed: median $\leq 1$ minute
 - Drill *a lot* of problems
 - Memorize formulas and definitions
 - Save actual exams
