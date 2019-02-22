@@ -44,7 +44,7 @@ presentation:
 ![algebra](http://www.math.colostate.edu/~jwilson/math/16/D16.gif)
 
 <!-- slide vertical=true-->
-- Mixed Topics (25%)
+## Mixed Topics (25%)
   - Real Analysis
   - Logic / Set Theory
   - Discrete Mathematics
