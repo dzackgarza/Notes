@@ -2202,7 +2202,7 @@ then commute to derive the FTC.
 <h1 class="mume-header" id="multivariable-calculus">Multivariable Calculus</h1>
 
 </section><section vertical="true" lineno="274" class="slide " data-line="274" data-h="8" data-v="1">
-<h2 class="mume-header" id="topics-1">Topics</h2>
+<h2 class="mume-header" id="general-concepts">General Concepts</h2>
 
 <ul>
 <li>Vectors, div, grad, curl</li>
@@ -2216,7 +2216,7 @@ then commute to derive the FTC.
 <li>Lagrange Multipliers</li>
 <li>Multivariable optimization</li>
 <li>Arc lengths of curves</li>
-<li>Line integrals, surface integrals</li>
+<li>Line/Surface/Flux integrals</li>
 <li>Green&#x2019;s Theorem</li>
 <li>The divergence theorem</li>
 <li>Stoke&#x2019;s Theorem</li>
@@ -2276,8 +2276,7 @@ i.e. it is the zero set of some function <span class="mathjax-exps">$f:\RR^3 \to
 </section><section vertical="true" lineno="351" class="slide " data-line="351" data-h="8" data-v="7">
 <h2 class="mume-header" id="multivariable-chain-rule">Multivariable Chain Rule</h2>
 
-<div class="code-chunk" data-id="code-chunk-id-0" data-cmd="latex"><div class="input-div"><div class="btn-group"><div class="run-btn btn"><span>&#x25B6;&#xFE0E;</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div><div class="output-div"><p><img src="data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNzAzLjU0MnB0IiBoZWlnaHQ9IjQzNS4yODVwdCIgdmlld0JveD0iMCAwIDcwMy41NDIgNDM1LjI4NSIgdmVyc2lvbj0iMS4xIj4KPGRlZnM+CjxnPgo8c3ltYm9sIG92ZXJmbG93PSJ2aXNpYmxlIiBpZD0iZ2x5cGgwLTAiPgo8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7IiBkPSIiLz4KPC9zeW1ib2w+CjxzeW1ib2wgb3ZlcmZsb3c9InZpc2libGUiIGlkPSJnbHlwaDAtMSI+CjxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTsiIGQ9Ik0gMjAuOTIxODc1IC0zLjM0Mzc1IEMgMjEuNTc4MTI1IC0wLjg5MDYyNSAyMy42NzE4NzUgMC42NTYyNSAyNi4yNSAwLjY1NjI1IEMgMjguMzQzNzUgMC42NTYyNSAyOS43MTg3NSAtMC43MTg3NSAzMC42NzE4NzUgLTIuNjI1IEMgMzEuNjg3NSAtNC43ODEyNSAzMi40Njg3NSAtOC40MjE4NzUgMzIuNDY4NzUgLTguNTQ2ODc1IEMgMzIuNDY4NzUgLTkuMTQwNjI1IDMxLjkyMTg3NSAtOS4xNDA2MjUgMzEuNzUgLTkuMTQwNjI1IEMgMzEuMTQwNjI1IC05LjE0MDYyNSAzMS4wOTM3NSAtOC45MDYyNSAzMC45MDYyNSAtOC4wNzgxMjUgQyAzMC4wNjI1IC00LjcxODc1IDI4LjkzNzUgLTAuNjU2MjUgMjYuNDIxODc1IC0wLjY1NjI1IEMgMjUuMTcxODc1IC0wLjY1NjI1IDI0LjU2MjUgLTEuNDM3NSAyNC41NjI1IC0zLjQwNjI1IEMgMjQuNTYyNSAtNC43MTg3NSAyNS4yODEyNSAtNy41MzEyNSAyNS43NjU2MjUgLTkuNjI1IEwgMjcuNDM3NSAtMTYuMDc4MTI1IEMgMjcuNjI1IC0xNi45ODQzNzUgMjguMjE4NzUgLTE5LjI1IDI4LjQ1MzEyNSAtMjAuMTQwNjI1IEMgMjguNzUgLTIxLjUxNTYyNSAyOS4zNTkzNzUgLTIzLjc5Njg3NSAyOS4zNTkzNzUgLTI0LjE1NjI1IEMgMjkuMzU5Mzc1IC0yNS4yMzQzNzUgMjguNTE1NjI1IC0yNS43NjU2MjUgMjcuNjI1IC0yNS43NjU2MjUgQyAyNy4zMTI1IC0yNS43NjU2MjUgMjUuNzY1NjI1IC0yNS43MDMxMjUgMjUuMjgxMjUgLTIzLjY3MTg3NSBDIDI0LjE1NjI1IC0xOS4zMTI1IDIxLjUxNTYyNSAtOC44NDM3NSAyMC43OTY4NzUgLTUuNjcxODc1IEMgMjAuNzUgLTUuNDM3NSAxOC4zNTkzNzUgLTAuNjU2MjUgMTMuOTg0Mzc1IC0wLjY1NjI1IEMgMTAuODc1IC0wLjY1NjI1IDEwLjI4MTI1IC0zLjM0Mzc1IDEwLjI4MTI1IC01LjU2MjUgQyAxMC4yODEyNSAtOC45MDYyNSAxMS45NTMxMjUgLTEzLjYyNSAxMy41MTU2MjUgLTE3Ljc1IEMgMTQuMjM0Mzc1IC0xOS41NDY4NzUgMTQuNTMxMjUgLTIwLjM5MDYyNSAxNC41MzEyNSAtMjEuNTE1NjI1IEMgMTQuNTMxMjUgLTI0LjIxODc1IDEyLjYwOTM3NSAtMjYuNDIxODc1IDkuNjI1IC0yNi40MjE4NzUgQyAzLjk1MzEyNSAtMjYuNDIxODc1IDEuNzM0Mzc1IC0xNy43NSAxLjczNDM3NSAtMTcuMjE4NzUgQyAxLjczNDM3NSAtMTYuNjI1IDIuMzI4MTI1IC0xNi42MjUgMi40NTMxMjUgLTE2LjYyNSBDIDMuMDQ2ODc1IC0xNi42MjUgMy4xMDkzNzUgLTE2LjczNDM3NSAzLjQwNjI1IC0xNy42ODc1IEMgNC45MDYyNSAtMjIuODkwNjI1IDcuMTcxODc1IC0yNS4xMDkzNzUgOS40NTMxMjUgLTI1LjEwOTM3NSBDIDkuOTg0Mzc1IC0yNS4xMDkzNzUgMTAuOTM3NSAtMjUuMDQ2ODc1IDEwLjkzNzUgLTIzLjE0MDYyNSBDIDEwLjkzNzUgLTIxLjcwMzEyNSAxMC4yODEyNSAtMTkuOTY4NzUgOS45MjE4NzUgLTE5LjA2MjUgQyA3LjcxODc1IC0xMy4xNTYyNSA2LjQ1MzEyNSAtOS40NTMxMjUgNi40NTMxMjUgLTYuNTE1NjI1IEMgNi40NTMxMjUgLTAuODQzNzUgMTAuNTc4MTI1IDAuNjU2MjUgMTMuODEyNSAwLjY1NjI1IEMgMTcuNzUgMC42NTYyNSAxOS45MDYyNSAtMi4wMzEyNSAyMC45MjE4NzUgLTMuMzQzNzUgWiBNIDIwLjkyMTg3NSAtMy4zNDM3NSAiLz4KPC9zeW1ib2w+CjxzeW1ib2wgb3ZlcmZsb3c9InZpc2libGUiIGlkPSJnbHlwaDAtMiI+CjxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTsiIGQ9Ik0gMTkuOTY4NzUgLTE4LjA0Njg3NSBDIDIwLjMyODEyNSAtMTkuNjA5Mzc1IDIxLjcwMzEyNSAtMjUuMTA5Mzc1IDI1Ljg5MDYyNSAtMjUuMTA5Mzc1IEMgMjYuMTg3NSAtMjUuMTA5Mzc1IDI3LjYyNSAtMjUuMTA5Mzc1IDI4Ljg3NSAtMjQuMzI4MTI1IEMgMjcuMjAzMTI1IC0yNC4wMzEyNSAyNiAtMjIuNTMxMjUgMjYgLTIxLjEwOTM3NSBDIDI2IC0yMC4xNDA2MjUgMjYuNjU2MjUgLTE5LjAxNTYyNSAyOC4yODEyNSAtMTkuMDE1NjI1IEMgMjkuNTkzNzUgLTE5LjAxNTYyNSAzMS41IC0yMC4wOTM3NSAzMS41IC0yMi40ODQzNzUgQyAzMS41IC0yNS41OTM3NSAyNy45ODQzNzUgLTI2LjQyMTg3NSAyNS45Mzc1IC0yNi40MjE4NzUgQyAyMi40ODQzNzUgLTI2LjQyMTg3NSAyMC4zOTA2MjUgLTIzLjI1IDE5LjY3MTg3NSAtMjEuODc1IEMgMTguMTcxODc1IC0yNS44MjgxMjUgMTQuOTUzMTI1IC0yNi40MjE4NzUgMTMuMjE4NzUgLTI2LjQyMTg3NSBDIDcgLTI2LjQyMTg3NSAzLjU5Mzc1IC0xOC43MTg3NSAzLjU5Mzc1IC0xNy4yMTg3NSBDIDMuNTkzNzUgLTE2LjYyNSA0LjE4NzUgLTE2LjYyNSA0LjI5Njg3NSAtMTYuNjI1IEMgNC43ODEyNSAtMTYuNjI1IDQuOTY4NzUgLTE2LjczNDM3NSA1LjA3ODEyNSAtMTcuMjgxMjUgQyA3LjEwOTM3NSAtMjMuNjA5Mzc1IDExLjA2MjUgLTI1LjEwOTM3NSAxMy4wOTM3NSAtMjUuMTA5Mzc1IEMgMTQuMjM0Mzc1IC0yNS4xMDkzNzUgMTYuMzEyNSAtMjQuNTYyNSAxNi4zMTI1IC0yMS4xMDkzNzUgQyAxNi4zMTI1IC0xOS4yNSAxNS4yOTY4NzUgLTE1LjI1IDEzLjA5Mzc1IC02Ljg3NSBDIDEyLjE0MDYyNSAtMy4xNzE4NzUgMTAuMDQ2ODc1IC0wLjY1NjI1IDcuNDA2MjUgLTAuNjU2MjUgQyA3LjA0Njg3NSAtMC42NTYyNSA1LjY3MTg3NSAtMC42NTYyNSA0LjQyMTg3NSAtMS40Mzc1IEMgNS45MjE4NzUgLTEuNzM0Mzc1IDcuMjM0Mzc1IC0yLjk4NDM3NSA3LjIzNDM3NSAtNC42NTYyNSBDIDcuMjM0Mzc1IC02LjI4MTI1IDUuOTIxODc1IC02Ljc1IDUuMDE1NjI1IC02Ljc1IEMgMy4yMzQzNzUgLTYuNzUgMS43MzQzNzUgLTUuMjAzMTI1IDEuNzM0Mzc1IC0zLjI4MTI1IEMgMS43MzQzNzUgLTAuNTMxMjUgNC43MTg3NSAwLjY1NjI1IDcuMzU5Mzc1IDAuNjU2MjUgQyAxMS4yOTY4NzUgMC42NTYyNSAxMy40NTMxMjUgLTMuNTMxMjUgMTMuNjI1IC0zLjg5MDYyNSBDIDE0LjM0Mzc1IC0xLjY3MTg3NSAxNi41IDAuNjU2MjUgMjAuMDkzNzUgMC42NTYyNSBDIDI2LjI1IDAuNjU2MjUgMjkuNjU2MjUgLTcuMDQ2ODc1IDI5LjY1NjI1IC04LjU0Njg3NSBDIDI5LjY1NjI1IC05LjE0MDYyNSAyOS4xMDkzNzUgLTkuMTQwNjI1IDI4LjkzNzUgLTkuMTQwNjI1IEMgMjguMzkwNjI1IC05LjE0MDYyNSAyOC4yODEyNSAtOC45MDYyNSAyOC4xNTYyNSAtOC40ODQzNzUgQyAyNi4xODc1IC0yLjA5Mzc1IDIyLjEyNSAtMC42NTYyNSAyMC4yMDMxMjUgLTAuNjU2MjUgQyAxNy44NzUgLTAuNjU2MjUgMTYuOTIxODc1IC0yLjU3ODEyNSAxNi45MjE4NzUgLTQuNjA5Mzc1IEMgMTYuOTIxODc1IC01LjkyMTg3NSAxNy4yODEyNSAtNy4yMzQzNzUgMTcuOTM3NSAtOS44NTkzNzUgWiBNIDE5Ljk2ODc1IC0xOC4wNDY4NzUgIi8+Cjwvc3ltYm9sPgo8c3ltYm9sIG92ZXJmbG93PSJ2aXNpYmxlIiBpZD0iZ2x5cGgwLTMiPgo8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7IiBkPSJNIDcuOTUzMTI1IC00Ljk2ODc1IEMgMTEuMTcxODc1IC04LjQyMTg3NSAxMi45MDYyNSAtOS45MjE4NzUgMTUuMDYyNSAtMTEuNzgxMjUgQyAxNS4wNjI1IC0xMS44NDM3NSAxOC43NjU2MjUgLTE1IDIwLjkyMTg3NSAtMTcuMTU2MjUgQyAyNi42MDkzNzUgLTIyLjcxODc1IDI3LjkyMTg3NSAtMjUuNTkzNzUgMjcuOTIxODc1IC0yNS44MjgxMjUgQyAyNy45MjE4NzUgLTI2LjQyMTg3NSAyNy4zNzUgLTI2LjQyMTg3NSAyNy4yNjU2MjUgLTI2LjQyMTg3NSBDIDI2Ljg0Mzc1IC0yNi40MjE4NzUgMjYuNjU2MjUgLTI2LjI5Njg3NSAyNi4zNTkzNzUgLTI1Ljc2NTYyNSBDIDI0LjU2MjUgLTIyLjg5MDYyNSAyMy4zMTI1IC0yMS45Mzc1IDIxLjg3NSAtMjEuOTM3NSBDIDIwLjQzNzUgLTIxLjkzNzUgMTkuNzM0Mzc1IC0yMi44NDM3NSAxOC44MjgxMjUgLTIzLjg1OTM3NSBDIDE3LjY4NzUgLTI1LjIzNDM3NSAxNi42NzE4NzUgLTI2LjQyMTg3NSAxNC43MDMxMjUgLTI2LjQyMTg3NSBDIDEwLjIxODc1IC0yNi40MjE4NzUgNy40Njg3NSAtMjAuODU5Mzc1IDcuNDY4NzUgLTE5LjYwOTM3NSBDIDcuNDY4NzUgLTE5LjMxMjUgNy42NTYyNSAtMTguOTUzMTI1IDguMTg3NSAtMTguOTUzMTI1IEMgOC43MzQzNzUgLTE4Ljk1MzEyNSA4Ljg0Mzc1IC0xOS4yNSA4Ljk2ODc1IC0xOS42MDkzNzUgQyAxMC4xMDkzNzUgLTIyLjM1OTM3NSAxMy41NzgxMjUgLTIyLjQyMTg3NSAxNC4wNDY4NzUgLTIyLjQyMTg3NSBDIDE1LjI5Njg3NSAtMjIuNDIxODc1IDE2LjQzNzUgLTIyIDE3LjgxMjUgLTIxLjUxNTYyNSBDIDIwLjIwMzEyNSAtMjAuNjI1IDIwLjg1OTM3NSAtMjAuNjI1IDIyLjQyMTg3NSAtMjAuNjI1IEMgMjAuMjY1NjI1IC0xOC4wNDY4NzUgMTUuMjUgLTEzLjc1IDE0LjEwOTM3NSAtMTIuNzk2ODc1IEwgOC43MzQzNzUgLTcuNzY1NjI1IEMgNC42NTYyNSAtMy43NjU2MjUgMi41NzgxMjUgLTAuMzU5Mzc1IDIuNTc4MTI1IDAuMDYyNSBDIDIuNTc4MTI1IDAuNjU2MjUgMy4xNzE4NzUgMC42NTYyNSAzLjI4MTI1IDAuNjU2MjUgQyAzLjc2NTYyNSAwLjY1NjI1IDMuODkwNjI1IDAuNTMxMjUgNC4yNSAtMC4xMjUgQyA1LjYyNSAtMi4yMTg3NSA3LjQwNjI1IC0zLjgyODEyNSA5LjMyODEyNSAtMy44MjgxMjUgQyAxMC43MDMxMjUgLTMuODI4MTI1IDExLjI5Njg3NSAtMy4yODEyNSAxMi43OTY4NzUgLTEuNTQ2ODc1IEMgMTMuODEyNSAtMC4yOTY4NzUgMTQuODkwNjI1IDAuNjU2MjUgMTYuNjI1IDAuNjU2MjUgQyAyMi41MzEyNSAwLjY1NjI1IDI2IC02LjkzNzUgMjYgLTguNTQ2ODc1IEMgMjYgLTguODQzNzUgMjUuNzY1NjI1IC05LjE0MDYyNSAyNS4yODEyNSAtOS4xNDA2MjUgQyAyNC43NSAtOS4xNDA2MjUgMjQuNjI1IC04Ljc4MTI1IDI0LjQ1MzEyNSAtOC4zNzUgQyAyMy4wNzgxMjUgLTQuNDg0Mzc1IDE5LjI1IC0zLjM0Mzc1IDE3LjI4MTI1IC0zLjM0Mzc1IEMgMTYuMDc4MTI1IC0zLjM0Mzc1IDE1IC0zLjcwMzEyNSAxMy43NSAtNC4xMjUgQyAxMS43MTg3NSAtNC45MDYyNSAxMC44MjgxMjUgLTUuMTQwNjI1IDkuNTYyNSAtNS4xNDA2MjUgQyA5LjQ1MzEyNSAtNS4xNDA2MjUgOC40ODQzNzUgLTUuMTQwNjI1IDcuOTUzMTI1IC00Ljk2ODc1IFogTSA3Ljk1MzEyNSAtNC45Njg3NSAiLz4KPC9zeW1ib2w+CjxzeW1ib2wgb3ZlcmZsb3c9InZpc2libGUiIGlkPSJnbHlwaDAtNCI+CjxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTsiIGQ9Ik0gMjcuOTg0Mzc1IC0yMi4yMzQzNzUgQyAyNy45ODQzNzUgLTI1LjQ2ODc1IDI2LjQyMTg3NSAtMjYuNDIxODc1IDI1LjM0Mzc1IC0yNi40MjE4NzUgQyAyMy44NTkzNzUgLTI2LjQyMTg3NSAyMi40MjE4NzUgLTI0Ljg3NSAyMi40MjE4NzUgLTIzLjU0Njg3NSBDIDIyLjQyMTg3NSAtMjIuNzgxMjUgMjIuNzE4NzUgLTIyLjQyMTg3NSAyMy4zNzUgLTIxLjc2NTYyNSBDIDI0LjYyNSAtMjAuNTYyNSAyNS40MDYyNSAtMTkuMDE1NjI1IDI1LjQwNjI1IC0xNi44NTkzNzUgQyAyNS40MDYyNSAtMTQuMzQzNzUgMjEuNzY1NjI1IC0wLjY1NjI1IDE0Ljc2NTYyNSAtMC42NTYyNSBDIDExLjcxODc1IC0wLjY1NjI1IDEwLjM0Mzc1IC0yLjc1IDEwLjM0Mzc1IC01Ljg1OTM3NSBDIDEwLjM0Mzc1IC05LjIwMzEyNSAxMS45NTMxMjUgLTEzLjU3ODEyNSAxMy44MTI1IC0xOC41MzEyNSBDIDE0LjIzNDM3NSAtMTkuNTQ2ODc1IDE0LjUzMTI1IC0yMC4zOTA2MjUgMTQuNTMxMjUgLTIxLjUxNTYyNSBDIDE0LjUzMTI1IC0yNC4yMTg3NSAxMi42MDkzNzUgLTI2LjQyMTg3NSA5LjYyNSAtMjYuNDIxODc1IEMgNCAtMjYuNDIxODc1IDEuNzM0Mzc1IC0xNy43NSAxLjczNDM3NSAtMTcuMjE4NzUgQyAxLjczNDM3NSAtMTYuNjI1IDIuMzI4MTI1IC0xNi42MjUgMi40NTMxMjUgLTE2LjYyNSBDIDMuMDQ2ODc1IC0xNi42MjUgMy4xMDkzNzUgLTE2LjczNDM3NSAzLjQwNjI1IC0xNy42ODc1IEMgNS4xNDA2MjUgLTIzLjczNDM3NSA3LjcxODc1IC0yNS4xMDkzNzUgOS40NTMxMjUgLTI1LjEwOTM3NSBDIDkuOTIxODc1IC0yNS4xMDkzNzUgMTAuOTM3NSAtMjUuMTA5Mzc1IDEwLjkzNzUgLTIzLjE4NzUgQyAxMC45Mzc1IC0yMS43MDMxMjUgMTAuMzQzNzUgLTIwLjA5Mzc1IDkuOTIxODc1IC0xOS4wMTU2MjUgQyA3LjI5Njg3NSAtMTIuMDc4MTI1IDYuNTE1NjI1IC05LjMyODEyNSA2LjUxNTYyNSAtNi43NSBDIDYuNTE1NjI1IC0wLjI5Njg3NSAxMS43ODEyNSAwLjY1NjI1IDE0LjUzMTI1IDAuNjU2MjUgQyAyNC41NjI1IDAuNjU2MjUgMjcuOTg0Mzc1IC0xOS4xMjUgMjcuOTg0Mzc1IC0yMi4yMzQzNzUgWiBNIDI3Ljk4NDM3NSAtMjIuMjM0Mzc1ICIvPgo8L3N5bWJvbD4KPHN5bWJvbCBvdmVyZmxvdz0idmlzaWJsZSIgaWQ9ImdseXBoMC01Ij4KPHBhdGggc3R5bGU9InN0cm9rZTpub25lOyIgZD0iTSAyOS4wNDY4NzUgLTIyLjc4MTI1IEMgMjkuMjk2ODc1IC0yMy42MDkzNzUgMjkuMjk2ODc1IC0yMy43MzQzNzUgMjkuMjk2ODc1IC0yNC4xNTYyNSBDIDI5LjI5Njg3NSAtMjUuMjM0Mzc1IDI4LjQ1MzEyNSAtMjUuNzY1NjI1IDI3LjU2MjUgLTI1Ljc2NTYyNSBDIDI2Ljk2ODc1IC0yNS43NjU2MjUgMjYgLTI1LjQwNjI1IDI1LjQ2ODc1IC0yNC41MTU2MjUgQyAyNS4zNDM3NSAtMjQuMjE4NzUgMjQuODc1IC0yMi4zNTkzNzUgMjQuNjI1IC0yMS4yODEyNSBDIDI0LjIxODc1IC0xOS43MzQzNzUgMjMuNzk2ODc1IC0xOC4xMDkzNzUgMjMuNDM3NSAtMTYuNSBMIDIwLjc1IC01LjczNDM3NSBDIDIwLjUgLTQuODQzNzUgMTcuOTM3NSAtMC42NTYyNSAxMy45ODQzNzUgLTAuNjU2MjUgQyAxMC45Mzc1IC0wLjY1NjI1IDEwLjI4MTI1IC0zLjI4MTI1IDEwLjI4MTI1IC01LjUgQyAxMC4yODEyNSAtOC4yNSAxMS4yOTY4NzUgLTExLjk1MzEyNSAxMy4zMjgxMjUgLTE3LjIxODc1IEMgMTQuMjgxMjUgLTE5LjY3MTg3NSAxNC41MzEyNSAtMjAuMzI4MTI1IDE0LjUzMTI1IC0yMS41MTU2MjUgQyAxNC41MzEyNSAtMjQuMjE4NzUgMTIuNjA5Mzc1IC0yNi40MjE4NzUgOS42MjUgLTI2LjQyMTg3NSBDIDMuOTUzMTI1IC0yNi40MjE4NzUgMS43MzQzNzUgLTE3Ljc1IDEuNzM0Mzc1IC0xNy4yMTg3NSBDIDEuNzM0Mzc1IC0xNi42MjUgMi4zMjgxMjUgLTE2LjYyNSAyLjQ1MzEyNSAtMTYuNjI1IEMgMy4wNDY4NzUgLTE2LjYyNSAzLjEwOTM3NSAtMTYuNzM0Mzc1IDMuNDA2MjUgLTE3LjY4NzUgQyA1LjAxNTYyNSAtMjMuMzEyNSA3LjQwNjI1IC0yNS4xMDkzNzUgOS40NTMxMjUgLTI1LjEwOTM3NSBDIDkuOTIxODc1IC0yNS4xMDkzNzUgMTAuOTM3NSAtMjUuMTA5Mzc1IDEwLjkzNzUgLTIzLjE4NzUgQyAxMC45Mzc1IC0yMS43MDMxMjUgMTAuMzQzNzUgLTIwLjE0MDYyNSA5LjkyMTg3NSAtMTkuMDE1NjI1IEMgNy41MzEyNSAtMTIuNjcxODc1IDYuNDUzMTI1IC05LjI2NTYyNSA2LjQ1MzEyNSAtNi40NTMxMjUgQyA2LjQ1MzEyNSAtMS4xNDA2MjUgMTAuMjE4NzUgMC42NTYyNSAxMy43NSAwLjY1NjI1IEMgMTYuMDc4MTI1IDAuNjU2MjUgMTguMTA5Mzc1IC0wLjM1OTM3NSAxOS43ODEyNSAtMi4wMzEyNSBDIDE5LjAxNTYyNSAxLjA3ODEyNSAxOC4yOTY4NzUgNCAxNS45MDYyNSA3LjE3MTg3NSBDIDE0LjM0Mzc1IDkuMjAzMTI1IDEyLjA3ODEyNSAxMC45Mzc1IDkuMzI4MTI1IDEwLjkzNzUgQyA4LjQ4NDM3NSAxMC45Mzc1IDUuNzk2ODc1IDEwLjc2NTYyNSA0Ljc4MTI1IDguNDIxODc1IEMgNS43MzQzNzUgOC40MjE4NzUgNi41MTU2MjUgOC40MjE4NzUgNy4zNTkzNzUgNy43MTg3NSBDIDcuOTUzMTI1IDcuMTcxODc1IDguNTQ2ODc1IDYuMzkwNjI1IDguNTQ2ODc1IDUuMjY1NjI1IEMgOC41NDY4NzUgMy40MDYyNSA2LjkzNzUgMy4xNzE4NzUgNi4zNDM3NSAzLjE3MTg3NSBDIDQuOTY4NzUgMy4xNzE4NzUgMi45ODQzNzUgNC4xMjUgMi45ODQzNzUgNy4wNDY4NzUgQyAyLjk4NDM3NSAxMC4wNDY4NzUgNS42MjUgMTIuMjUgOS4zMjgxMjUgMTIuMjUgQyAxNS40ODQzNzUgMTIuMjUgMjEuNjQwNjI1IDYuODEyNSAyMy4zMTI1IDAuMDYyNSBaIE0gMjkuMDQ2ODc1IC0yMi43ODEyNSAiLz4KPC9zeW1ib2w+CjwvZz4KPC9kZWZzPgo8ZyBpZD0ic3VyZmFjZTEiPgo8ZyBzdHlsZT0iZmlsbDpyZ2IoMCUsMCUsMCUpO2ZpbGwtb3BhY2l0eToxOyI+CiAgPHVzZSB4bGluazpocmVmPSIjZ2x5cGgwLTEiIHg9IjI1MS4xIiB5PSI0Ny42MDkiLz4KPC9nPgo8ZyBzdHlsZT0iZmlsbDpyZ2IoMCUsMCUsMCUpO2ZpbGwtb3BhY2l0eToxOyI+CiAgPHVzZSB4bGluazpocmVmPSIjZ2x5cGgwLTIiIHg9IjYyMy43MTgiIHk9IjQ3LjYwOSIvPgo8L2c+CjxnIHN0eWxlPSJmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICA8dXNlIHhsaW5rOmhyZWY9IiNnbHlwaDAtMyIgeD0iMjUuNzM0IiB5PSIyMjQuNjk5Ii8+CjwvZz4KPGcgc3R5bGU9ImZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTsiPgogIDx1c2UgeGxpbms6aHJlZj0iI2dseXBoMC00IiB4PSIyNTIuNjQ4IiB5PSI0MDEuNzgzIi8+CjwvZz4KPGcgc3R5bGU9ImZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTsiPgogIDx1c2UgeGxpbms6aHJlZj0iI2dseXBoMC01IiB4PSI2MjUuMDc0IiB5PSI0MDEuNzgzIi8+CjwvZz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtMTIuMjY2ODI4IDI0LjQ5MzIzNCBMIC0xMi4yNjY4MjggLTIyLjE1NzgwNyAiIHRyYW5zZm9ybT0ibWF0cml4KDYsMCwwLC02LDM0MS44MDgsMjE3LjY0MykiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIGQ9Ik0gLTIuMDcyMDQgMi4zOTEwNjggQyAtMS42OTM3ODQgMC45NTYxNzIgLTAuODUwMDM0IDAuMjc5MDg5IDAuMDAwMjI2MDQyIC0wLjAwMDIwODEyNSBDIC0wLjg1MDAzNCAtMC4yNzg4NTQgLTEuNjkzNzg0IC0wLjk1NjU4OCAtMi4wNzIwNCAtMi4zOTA4MzMgIiB0cmFuc2Zvcm09Im1hdHJpeCgwLDYsNiwwLDI2OC4yMDgyOCwzNTEuNzgzOCkiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtNC45MjYzMzMgMzAuODI5MTcyIEwgNDIuMDk3NzU1IDMwLjgyOTE3MiAiIHRyYW5zZm9ybT0ibWF0cml4KDYsMCwwLC02LDM0MS44MDgsMjE3LjY0MykiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIGQ9Ik0gLTIuMDcxODgxIDIuMzkxMTc4IEMgLTEuNjkzNjI1IDAuOTU2MjgyIC0wLjg0OTg3NSAwLjI3OTE5OSAtMC4wMDAyNjYwNDIgLTAuMDAwMDk4MTI1IEMgLTAuODQ5ODc1IC0wLjI3ODc0NCAtMS42OTM2MjUgLTAuOTU2NDc4IC0yLjA3MTg4MSAtMi4zOTA3MjMgIiB0cmFuc2Zvcm09Im1hdHJpeCg2LDAsMCwtNiw1OTUuNTkxNDQsMzIuNjY3MzgpIi8+CjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMzk4NDg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIGQ9Ik0gLTUuNjAxNDY0IDI0LjQ5MzIzNCBMIDQzLjYwNjIxOSAtMjIuMjgxNTA1ICIgdHJhbnNmb3JtPSJtYXRyaXgoNiwwLDAsLTYsMzQxLjgwOCwyMTcuNjQzKSIvPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDowLjM5ODQ4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtMi4wNzIxNDQgMi4zOTA1MzggQyAtMS42OTM2NTUgMC45NTYxNjcgLTAuODQ5OTE5IDAuMjc5Mjc3IDAuMDAwMTkzNzAzIC0wLjAwMDAyOTY0OTQgQyAtMC44NDk3NzYgLTAuMjc5MTM2IC0xLjY5MzcxMSAtMC45NTY2MDIgLTIuMDcyMDQ5IC0yLjM5MTE2ICIgdHJhbnNmb3JtPSJtYXRyaXgoNC4zNSw0LjEzNTMyLDQuMTM1MzIsLTQuMzUsNjA0LjMxMTc4LDM1Mi4xNTUzMikiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtNDMuMTE5MDQyIC00LjE1OTEwOSBMIC0xOS42NjQ2MTUgLTIyLjQzODQwNiAiIHRyYW5zZm9ybT0ibWF0cml4KDYsMCwwLC02LDM0MS44MDgsMjE3LjY0MykiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIGQ9Ik0gLTIuMDcxODE5IDIuMzkwODMxIEMgLTEuNjkzMjY4IDAuOTU2MjE3IC0wLjg0OTk3NiAwLjI3OTAyNSAwLjAwMDIwMjQ4NCAtMC4wMDAwMzU0NTM3IEMgLTAuODQ5ODg2IC0wLjI3ODgyNSAtMS42OTM1MDMgLTAuOTU2MDE2IC0yLjA3MjMyIC0yLjM5MDkxNSAiIHRyYW5zZm9ybT0ibWF0cml4KDQuNzUzOTgsMy43MDUsMy43MDUsLTQuNzUzOTgsMjI0Ljc2ODcsMzUzLjAxMDgpIi8+CjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMzk4NDg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIGQ9Ik0gLTQzLjExOTA0MiA2Ljc4ODE1NiBMIC0xOS45MjI0MjcgMjQuODY2MjgxICIgdHJhbnNmb3JtPSJtYXRyaXgoNiwwLDAsLTYsMzQxLjgwOCwyMTcuNjQzKSIvPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDowLjM5ODQ4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtMi4wNzIzNzIgMi4zOTEwMjYgQyAtMS42OTM1NjkgMC45NTYxMzIgLTAuODQ5OTYyIDAuMjc4OTM5IDAuMDAwMTE5MDQ3IDAuMDAwMTQ0NjUyIEMgLTAuODUwMDU3IC0wLjI3ODkwOCAtMS42OTMzNDkgLTAuOTU2MDg4IC0yLjA3MTkwOCAtMi4zOTA2OTEgIiB0cmFuc2Zvcm09Im1hdHJpeCg0Ljc1Mzk4LC0zLjcwNTA2LC0zLjcwNTA2LC00Ljc1Mzk4LDIyMy4yMTg3Miw2Ny43MDgxNikiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtNDMuMTE5MDQyIDMuMzg1ODEzIEwgNDIuMTE0MDMxIDI4LjU1MTE3NyAiIHRyYW5zZm9ybT0ibWF0cml4KDYsMCwwLC02LDM0MS44MDgsMjE3LjY0MykiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIGQ9Ik0gLTIuMDcyMzU0IDIuMzkwOTc4IEMgLTEuNjkzMjU0IDAuOTU2NTQxIC0wLjg1IDAuMjc5MTc1IDAuMDAwMjI4NTI1IC0wLjAwMDMxMDQxNSBDIC0wLjg0OTk4NSAtMC4yNzg3MTIgLTEuNjkzMzQ1IC0wLjk1NjM2NiAtMi4wNzIwODUgLTIuMzkwNzYgIiB0cmFuc2Zvcm09Im1hdHJpeCg1Ljc2MjU4LC0xLjcwMTMsLTEuNzAxMywtNS43NjI1OCw1OTUuNjM4NzgsNDUuOTk4NikiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtNDMuMTE5MDQyIC0wLjc1ODcxOSBMIDQyLjMzOTk0MyAtMjUuOTg4NTM2ICIgdHJhbnNmb3JtPSJtYXRyaXgoNiwwLDAsLTYsMzQxLjgwOCwyMTcuNjQzKSIvPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDowLjM5ODQ4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtMi4wNzIyMzggMi4zOTEwNDkgQyAtMS42OTM1MSAwLjk1NjY0OCAtMC44NTAxNTUgMC4yNzg5ODQgMC4wMDAyNDI4MDcgLTAuMDAwMDUwMjI1MiBDIC0wLjg1MDE3NSAtMC4yNzg5MDUgLTEuNjkzNDM4IC0wLjk1NjI2NSAtMi4wNzE5MjkgLTIuMzkwNTE4ICIgdHJhbnNmb3JtPSJtYXRyaXgoNS43NjI1OCwxLjcwMTI0LDEuNzAxMjQsLTUuNzYyNTgsNTk2Ljk5NDc4LDM3My45MTMzNikiLz4KPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MC4zOTg0ODtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtNS4xODQ3OTcgLTI4LjIwMDEyNSBMIDQyLjMyNDMxOCAtMjguMjAwMTI1ICIgdHJhbnNmb3JtPSJtYXRyaXgoNiwwLDAsLTYsMzQxLjgwOCwyMTcuNjQzKSIvPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDowLjM5ODQ4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtMi4wNzE5NjkgMi4zOTA3MSBDIC0xLjY5MzcxNCAwLjk1NjQ2NSAtMC44NDk5NjQgMC4yNzg3MzEgMC4wMDAyOTY0NTggMC4wMDAwODUgQyAtMC44NDk5NjQgLTAuMjc5MjEyIC0xLjY5MzcxNCAtMC45NTYyOTUgLTIuMDcxOTY5IC0yLjM5MTE5MSAiIHRyYW5zZm9ybT0ibWF0cml4KDYsMCwwLC02LDU5Ni45NDc0NCwzODYuODQ0MjYpIi8+CjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMzk4NDg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIGQ9Ik0gLTYuMzI5MzI4IC0yMi41NTYyNDUgTCA0Mi44NzgzNTQgMjQuMjE4NDk1ICIgdHJhbnNmb3JtPSJtYXRyaXgoNiwwLDAsLTYsMzQxLjgwOCwyMTcuNjQzKSIvPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDowLjM5ODQ4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtMi4wNzIyNDggMi4zOTEwODcgQyAtMS42OTM0MzkgMC45NTYwODEgLTAuODQ5OTc1IDAuMjc5MDY0IC0wLjAwMDAwNTk3ODkxIC0wLjAwMDA0MzE2NjcgQyAtMC44NDk2NyAtMC4yNzg4NzggLTEuNjkzODU1IC0wLjk1NjI0IC0yLjA3MTg3MiAtMi4zOTEwNTkgIiB0cmFuc2Zvcm09Im1hdHJpeCg0LjM1LC00LjEzNTMyLC00LjEzNTMyLC00LjM1LDU5OS45NDUxNiw3MS41MDc2KSIvPgo8L2c+Cjwvc3ZnPgo=" alt=""></p>
-</div></div></section><section vertical="true" lineno="371" class="slide " data-line="371" data-h="8" data-v="8">
+<div class="code-chunk" data-id="code-chunk-id-0" data-cmd="latex"><div class="input-div"><div class="btn-group"><div class="run-btn btn"><span>&#x25B6;&#xFE0E;</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div><div class="output-div"></div></div></section><section vertical="true" lineno="371" class="slide " data-line="371" data-h="8" data-v="8">
 <h2 class="mume-header" id="multivariable-chain-rule-1">Multivariable Chain Rule</h2>
 
 <p>To get any one derivative, sum over all possible paths to it:<br>
@@ -2601,7 +2600,7 @@ has a unique solution <span class="mathjax-exps">$\mod \prod m_i$</span> iff <sp
 <h1 class="mume-header" id="topics-abstract-algebra">Topics: Abstract Algebra</h1>
 
 </section><section vertical="true" lineno="653" class="slide " data-line="653" data-h="12" data-v="1">
-<h1 class="mume-header" id="definitions-4">Definitions</h1>
+<h2 class="mume-header" id="definitions-4">Definitions</h2>
 
 <ul>
 <li>Group, ring, subgroup, ideal, homomorphism, etc</li>
@@ -2617,6 +2616,10 @@ has a unique solution <span class="mathjax-exps">$\mod \prod m_i$</span> iff <sp
 <ul>
 <li>e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.</li>
 <li>Generated by (e.g.) transpositions</li>
+<li>Cycle types</li>
+<li>Inversions</li>
+<li>Conjugacy classes</li>
+<li>Sign of a permutation</li>
 </ul>
 </li>
 <li>
@@ -2624,7 +2627,7 @@ has a unique solution <span class="mathjax-exps">$\mod \prod m_i$</span> iff <sp
 </p><div class="mathjax-exps">$$\ZZ_{pq} = \ZZ_p \oplus \ZZ_q \iff (p,q) = 1$$</div><p></p>
 </li>
 </ul>
-</section><section vertical="true" lineno="670" class="slide " data-line="670" data-h="12" data-v="3">
+</section><section vertical="true" lineno="674" class="slide " data-line="674" data-h="12" data-v="3">
 <h2 class="mume-header" id="basics">Basics</h2>
 
 <p>Group Axioms</p>
@@ -2636,7 +2639,7 @@ has a unique solution <span class="mathjax-exps">$\mod \prod m_i$</span> iff <sp
 </ul>
 <p>One step subgroup test:<br>
 </p><div class="mathjax-exps">$$H \leq G \iff a,b \in H \implies a b^{-1} \in H \\$$</div><p></p>
-</section><section vertical="true" lineno="683" class="slide " data-line="683" data-h="12" data-v="4">
+</section><section vertical="true" lineno="687" class="slide " data-line="687" data-h="12" data-v="4">
 <h2 class="mume-header" id="useful-theorems">Useful Theorems</h2>
 
 <p>Cauchy&#x2019;s Theorem</p>
@@ -2647,16 +2650,40 @@ has a unique solution <span class="mathjax-exps">$\mod \prod m_i$</span> iff <sp
 <ul>
 <li>If <span class="mathjax-exps">$\abs{G} = n = \prod p_i^{k_i}$</span>, for each <span class="mathjax-exps">$ii$</span> and each <span class="mathjax-exps">$1 \leq k_j \leq k_i$</span> then there exists a subgroup <span class="mathjax-exps">$H$</span> of order <span class="mathjax-exps">$p_i^{k_j}$</span>.</li>
 </ul>
-</section><section vertical="true" lineno="692" class="slide " data-line="692" data-h="12" data-v="5">
+</section><section vertical="true" lineno="696" class="slide " data-line="696" data-h="12" data-v="5">
 <h2 class="mume-header" id="classification-of-abelian-groups">Classification of Abelian Groups</h2>
 
 <p>Suppose <span class="mathjax-exps">$\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$</span><br>
 </p><div class="mathjax-exps">$$G \cong \bigoplus_{i=1}^n G_i \text{ with } \abs{G_i} = p_i^{k_i} \text{ and } \\   G_i \cong \bigoplus_{j=1}^k \ZZ_{p_i^{\alpha_j}} \text{ where } \sum_{j=1}^k \alpha_j = k_i$$</div><br>
 <span class="mathjax-exps">$G$</span> decomposes into a direct sum of groups corresponding to its prime factorization. For each component, you take the corresponding prime, write an integer partition of its exponent, and each unique partition yields a unique group.<p></p>
-</section></section><section><section lineno="701" class="slide " data-line="701" data-h="13" data-v="0">
+</section><section vertical="true" lineno="705" class="slide " data-line="705" data-h="12" data-v="6">
+<h1 class="mume-header" id="ring-theory">Ring Theory</h1>
+
+<ul>
+<li>
+<p>Definition: <span class="mathjax-exps">$(R, +, \times)$</span> where <span class="mathjax-exps">$(R, +)$</span> is abelian and <span class="mathjax-exps">$(R, times)$</span> is a monoid.</p>
+</li>
+<li>
+<p>Ideals: <span class="mathjax-exps">$(I, +) \leq (R, +)$</span> and <span class="mathjax-exps">$r\in R, x\in I \implies rx \in I$</span></p>
+</li>
+<li>
+<p>Noetherian: <span class="mathjax-exps">$I_1 \subseteq I_2 \subseteq \cdots \implies \exists N \suchthat I_N = I_{N+1} = \cdots$</span></p>
+<ul>
+<li>(Ascending chain condition)</li>
+</ul>
+</li>
+<li>
+<p>Various types of rings and their relations:</p>
+</li>
+</ul>
+<div style="height:20px"></div>
+$$ 
+\text{field} \implies \text{Euclidean Domain} \implies \text{PID} \\ \implies \text{UFD} \implies \text{integral domain}
+$$
+</section></section><section><section lineno="723" class="slide " data-line="723" data-h="13" data-v="0">
 <h1 class="mume-header" id="topics-real-analysis">Topics: Real Analysis</h1>
 
-</section><section vertical="true" lineno="703" class="slide " data-line="703" data-h="13" data-v="1">
+</section><section vertical="true" lineno="725" class="slide " data-line="725" data-h="13" data-v="1">
 <ul>
 <li>Properties of Metrics and Metric Spaces</li>
 <li>The Cauchy-Schwarz Inequality</li>
@@ -2678,7 +2705,7 @@ has a unique solution <span class="mathjax-exps">$\mod \prod m_i$</span> iff <sp
 <li>Uniform and point-wise continuity</li>
 <li>Lipschitz Continuity</li>
 </ul>
-</section><section vertical="true" lineno="718" class="slide " data-line="718" data-h="13" data-v="2">
+</section><section vertical="true" lineno="740" class="slide " data-line="740" data-h="13" data-v="2">
 <h2 class="mume-header" id="big-theorems-1">Big Theorems</h2>
 
 <ul>
@@ -2692,16 +2719,18 @@ has a unique solution <span class="mathjax-exps">$\mod \prod m_i$</span> iff <sp
 <li><strong>Bolzano-Weierstrass</strong>: every bounded sequence in <span class="mathjax-exps">$\RR^n$</span> has a convergent subsequence.</li>
 <li><strong>Heine-Borel</strong>: in <span class="mathjax-exps">$\RR^n, X$</span> is compact <span class="mathjax-exps">$\iff X$</span> is closed and bounded.</li>
 </ul>
-</section></section><section><section lineno="730" class="slide " data-line="730" data-h="14" data-v="0">
+</section></section><section><section lineno="752" class="slide " data-line="752" data-h="14" data-v="0">
 <h1 class="mume-header" id="topics-point-set-topology">Topics: Point-Set Topology</h1>
 
-</section><section vertical="true" lineno="732" class="slide " data-line="732" data-h="14" data-v="1">
+</section><section vertical="true" lineno="754" class="slide " data-line="754" data-h="14" data-v="1">
+<h2 class="mume-header" id="general-concepts-1">General Concepts</h2>
+
 <ul>
 <li>Open/closed sets</li>
 <li>Connected, disconnected, totally disconnected, etc</li>
 <li>Metric spaces</li>
 </ul>
-</section><section vertical="true" lineno="737" class="slide " data-line="737" data-h="14" data-v="2">
+</section><section vertical="true" lineno="760" class="slide " data-line="760" data-h="14" data-v="2">
 <h2 class="mume-header" id="useful-facts">Useful Facts</h2>
 
 <ul>
@@ -2713,30 +2742,85 @@ has a unique solution <span class="mathjax-exps">$\mod \prod m_i$</span> iff <sp
 </li>
 <li>In <span class="mathjax-exps">$\RR^n$</span>, singletons are closed, and thus so are finite sets of points
 <ul>
-<li>Why? <span class="mathjax-exps">$\not\exists \varepsilon \suchthat (x-\varepsilon, x+\varepsilon) \subseteq \theset{x}$</span>, and <span class="mathjax-exps">$\RR^n$</span> has a basis of such open neighborhoods.</li>
+<li>Useful for constructing counterexamples to statements</li>
 </ul>
 </li>
 </ul>
-</section></section><section><section lineno="745" class="slide " data-line="745" data-h="15" data-v="0">
-<h1 class="mume-header" id="topics-discrete-mathematics">Topics: Discrete Mathematics</h1>
+</section></section><section><section lineno="768" class="slide " data-line="768" data-h="15" data-v="0">
+<h1 class="mume-header" id="topics-discrete-mathematics-combinatorics">Topics: Discrete Mathematics + Combinatorics</h1>
 
-</section><section vertical="true" lineno="747" class="slide " data-line="747" data-h="15" data-v="1">
-<h2 class="mume-header" id="topics-2">Topics</h2>
+</section><section vertical="true" lineno="770" class="slide " data-line="770" data-h="15" data-v="1">
+<h2 class="mume-header" id="general-concepts-2">General Concepts</h2>
 
 <ul>
 <li>Graphs, trees</li>
 <li>Recurrence relations</li>
-<li>Counting number of non-isomorphic structures</li>
+<li>Counting problems
+<ul>
+<li>e.g. number of nonisomorphic structures</li>
 </ul>
-</section></section><section><section lineno="753" class="slide " data-line="753" data-h="16" data-v="0">
+</li>
+<li>Inclusion-exclusion</li>
+</ul>
+<p></p><div class="mathjax-exps">$$(x+y)^n = \sum_{k=0}^n {n\choose k}x^ky^{n-k}$$</div><p></p>
+</section></section><section><section lineno="780" class="slide " data-line="780" data-h="16" data-v="0">
 <h1 class="mume-header" id="topics-complex-analysis">Topics: Complex Analysis</h1>
 
-</section><section vertical="true" lineno="755" class="slide " data-line="755" data-h="16" data-v="1">
-<p>svc 1</p>
-</section></section><section lineno="758" class="slide " data-line="758" data-h="17" data-v="0">
-<h1 class="mume-header" id="conclusion">Conclusion</h1>
+</section><section vertical="true" lineno="782" class="slide " data-line="782" data-h="16" data-v="1">
+<h1 class="mume-header" id="general-concepts-3">General Concepts</h1>
 
-</section>
+<ul>
+<li><span class="mathjax-exps">$n\dash$</span>th roots:<br>
+<div class="mathjax-exps">$$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$</div></li>
+<li>The Residue theorem:<br>
+<div class="mathjax-exps">$$\oint_C f(z)~dz = 2\pi i \sum_k \mathrm{Res}(f, z_k)$$</div>
+<ul>
+<li>Exams often include one complex integral</li>
+<li>Need a number of other theorems for actually computing residues</li>
+</ul>
+</li>
+</ul>
+</section></section><section><section lineno="793" class="slide " data-line="793" data-h="17" data-v="0">
+<h1 class="mume-header" id="example-problem-1">Example Problem 1</h1>
+
+<p><img src="../../assets/problem1.png" alt="problem1"></p>
+</section><section vertical="true" lineno="797" class="slide " data-line="797" data-h="17" data-v="1">
+<h1 class="mume-header" id="example-problem-1-1">Example Problem 1</h1>
+
+<p><img src="../../assets/problem1.png" alt="problem1"><br>
+C, because <span class="mathjax-exps">$\ZZ-\theset{0}$</span> lacks inverses<br>
+(Would need to extend to <span class="mathjax-exps">$\QQ$</span>)</p>
+</section></section><section><section lineno="803" class="slide " data-line="803" data-h="18" data-v="0">
+<h1 class="mume-header" id="example-problem-2">Example Problem 2</h1>
+
+<p><img src="../../assets/problem2.png" alt="problem1"></p>
+</section><section vertical="true" lineno="807" class="slide " data-line="807" data-h="18" data-v="1">
+<h1 class="mume-header" id="example-problem-2-1">Example Problem 2</h1>
+
+<p><img src="../../assets/problem2.png" alt="problem1"><br>
+</p><div class="mathjax-exps">$$L = \lim _ { ( a , b ) \rightarrow 0 } \frac { ( a - b i ) ^ { 2 } } { ( a + b i ) ^ { 2 } } = \lim _ { ( a , b ) \rightarrow 0 } \frac { a ^ { 2 } - b ^ { 2 } - 2 a b i } { a ^ { 2 } - b ^ { 2 } + 2 a b i } \\ a = 0 \implies L = 1 \\ a = b \implies L = -1$$</div><p></p>
+<p>So E, because the limit needs to be path-independent.</p>
+</section></section><section><section lineno="818" class="slide " data-line="818" data-h="19" data-v="0">
+<h1 class="mume-header" id="example-problem-3">Example Problem 3</h1>
+
+<p><img src="../../assets/problem3.png" alt="problem1"></p>
+</section><section vertical="true" lineno="822" class="slide " data-line="822" data-h="19" data-v="1">
+<h1 class="mume-header" id="example-problem-3-1">Example Problem 3</h1>
+
+<p><img src="../../assets/problem3.png" alt="problem1"></p>
+<p>Don&#x2019;t row-reduce or invert! Just one computation<br>
+</p><div class="mathjax-exps">$$\left( \begin{array}{cccc} 1 &amp; 3 &amp; 2 &amp; 3 \\ 1 &amp; 4 &amp; 1 &amp; 0 \\ 3 &amp; 5 &amp; 10 &amp; 14 \\ 2 &amp; 5 &amp; 5 &amp; 6 \end{array}\right) \left(\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right) = \vector 0$$</div><p></p>
+<p>So D, A are true. C is true because it&#x2019;s a homogeneous system. B is true because <span class="mathjax-exps">$A\vector x = 0 \implies A (t\vector x) = tA\vector x = 0$</span> which means <span class="mathjax-exps">$t\vector x$</span> is a solution for every <span class="mathjax-exps">$t$</span>. By process of elimination, E must be false.</p>
+</section></section><section><section lineno="839" class="slide " data-line="839" data-h="20" data-v="0">
+<h1 class="mume-header" id="example-problem-4">Example Problem 4</h1>
+
+<p><img src="../../assets/problem4.png" alt="problem1"></p>
+</section><section vertical="true" lineno="843" class="slide " data-line="843" data-h="20" data-v="1">
+<h1 class="mume-header" id="example-problem-4-1">Example Problem 4</h1>
+
+<p><img src="../../assets/problem4.png" alt="problem1"></p>
+<p>Note <span class="mathjax-exps">$N_{\frac{1}{2}}(x) = \theset{x}$</span>, so every singleton is open. Any subset of <span class="mathjax-exps">$\ZZ$</span> is a countable union of its singletons, so every subset of <span class="mathjax-exps">$\ZZ$</span> is open. The complement any set is one such subset, so every subset is clopen. The inverse image of any subset of <span class="mathjax-exps">$\RR$</span>  under any <span class="mathjax-exps">$f:\ZZ \to \RR$</span> is a subset of <span class="mathjax-exps">$\ZZ$</span>, which is open, so every such <span class="mathjax-exps">$f$</span> is continuous. So E.</p>
+</section></section>
       </div>
     </div>
     
