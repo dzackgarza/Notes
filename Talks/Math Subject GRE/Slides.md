@@ -546,7 +546,7 @@ Know some group and ring theoretic properties of $\ZZ/n\ZZ$
   - So we can solve equations with inverses: $ax = b \mod n \iff x = a^{-1}b \mod n$
 - But there will always be *some* units; in general,
 $$
-\abs{(\ZZ/n\ZZ)^* \cong \ZZ/
+\abs{(\ZZ/n\ZZ)^*} = \phi(n)
 $$
 
 <!-- slide vertical=true -->
