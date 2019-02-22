@@ -318,13 +318,15 @@ i.e. it is the zero set of some function $f:\RR^3 \to \RR$
 
 <!-- slide vertical=true -->
 ## Tangent Planes/Linear Approximations
-- If $S$ is given by $z = g(x,y)$:
-  - Let $f(x, y, z) = g(x,y) - z$, then 
+$$
+\text{Case 2: } S \text{is given by } z = g(x,y)
+$$
+- Let $f(x, y, z) = g(x,y) - z$, then 
     $$
     \vector p \in S \iff \vector p \in \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}.
     $$
-  - Then $\nabla f$ is normal to level sets, compute $\nabla f = [\dd{}{x}g, \dd{}{y}g, -1]$
-  - Proceed as in previous case.
+- Then $\nabla f$ is normal to level sets, compute $\nabla f = [\dd{}{x}g, \dd{}{y}g, -1]$
+- Proceed as in previous case.
 
 
 <!-- slide vertical=true -->
