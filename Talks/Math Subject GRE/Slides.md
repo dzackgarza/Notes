@@ -703,7 +703,7 @@ Suppose $\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$
   $$
   $G$ decomposes into a direct sum of groups corresponding to its prime factorization. For each component, you take the corresponding prime, write an integer partition of its exponent, and each unique partition yields a unique group.
 
-<!-- slider vertical=true -->
+<!-- slide vertical=true -->
 # Ring Theory
 
 $$ 
