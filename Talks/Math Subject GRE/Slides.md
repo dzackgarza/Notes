@@ -453,7 +453,8 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 <!-- slide vertical=true -->
 ## Various Other Topics
 - Quadratic forms
-- Projections onto subspaces
+- Projection operators
+- Least Squares
 - Diagonalizability and similarity
 - Canonical forms
 - Decompositions ($QR, VDV^T, SVD,$ etc)
