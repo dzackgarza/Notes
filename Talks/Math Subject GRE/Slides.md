@@ -100,7 +100,7 @@ Five Official Practice Exams
 - For Calculus, focus on speed: median $\leq 1$ minute
 - Drill *a lot* of problems
   - Seriously, a lot.
-  - Seriously.
+  - *Seriously.*
 - Memorize formulas and definitions
 - Save actual exams
 
