@@ -326,6 +326,7 @@ $$
     $$
     \vector p \in S \iff \vector p \in \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}.
     $$
+    
 - Then $\nabla f$ is normal to level sets, compute $\nabla f = [\dd{}{x}g, \dd{}{y}g, -1]$
 - Proceed as in previous case.
 
