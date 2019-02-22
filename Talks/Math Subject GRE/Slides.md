@@ -640,6 +640,7 @@ $$
 # Definitions
 - Group, ring, subgroup, ideal, homomorphism, etc
 - Order, Center, Centralizer, 
+- $S_n, C_n, D_{2n}, \ZZ_n, 
 - Structure of the Symmetric group
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
 
