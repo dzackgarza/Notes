@@ -682,15 +682,6 @@ Suppose $\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$
   $G$ decomposes into a direct sum of groups corresponding to its prime factorization. For each component, you take the corresponding prime, write an integer partition of its exponent, and each unique partition yields a unique group.
 
 <!-- slide -->
-# Topics: Discrete Mathematics
-<!-- slide vertical=true -->
-## Topics
-- Graphs, trees
-- Recurrence relations
-- Counting number of non-isomorphic structures
-
-
-<!-- slide -->
 # Topics: Real Analysis
 <!-- slide vertical=true -->
 - Properties of Metrics and Metric Spaces
