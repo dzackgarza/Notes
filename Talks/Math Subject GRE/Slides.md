@@ -533,7 +533,8 @@ $$
 $$
 a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac 
 $$
-  - Useful fact: $a = 0 \mod n \iff a = 0 \mod p$ for every distinct prime factor $p$ of $n$.
+  - Useful fact: 
+  $$a = 0 \mod n \iff a = 0 \mod p$ for every distinct prime factor $p$ of $n$.
 
 <!-- slide vertical=true -->
 ## Definitions
