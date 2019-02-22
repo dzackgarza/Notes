@@ -302,7 +302,7 @@ Let $S \subseteq \RR^3$ be a surface.
 
 **Key Insight: The gradient of a function is normal to its level sets!**
 - Need a point $\vector{p} \in S$ and a normal $\vector{n}$. By cases:
-	- $S = \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}$
+	- $S = \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}$, i.e. it is the zero set of some function
     - $\nabla f$ is a normal vector zero level set.
 		- Just write the tangent plane equation $\inner{\vector n}{\vector x - \vector p_0}$.
 
