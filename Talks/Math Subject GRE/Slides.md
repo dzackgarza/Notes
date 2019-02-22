@@ -652,7 +652,7 @@ $$
 # Topics: Abstract Algebra
 
 <!-- slide vertical=true -->
-# Definitions
+## Definitions
 - Group, ring, subgroup, ideal, homomorphism, etc
 - Order, Center, Centralizer, orbits, stabilizers
 - Common groups: $S_n, A_n, C_n, D_{2n}, \ZZ_n,$ etc
