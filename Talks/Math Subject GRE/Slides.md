@@ -101,7 +101,8 @@ Five Official Practice Exams
 - Drill *a lot* of problems
   - Seriously, a lot.
   - *Seriously.*
-- Memorize formulas and definitions
+- Should memorize formulas and definitions
+  - No time to rederive!
 - Save actual exams as diagnostic tools
 
 <!-- slide vertical=true -->
