@@ -794,3 +794,7 @@ $$
 <!-- slide -->
 # Example Problem 1
 ![problem1](/assets/problem1.png)
+
+<!-- slide vertical=true-->
+# Example Problem 1
+![problem1](/assets/problem1.png)
