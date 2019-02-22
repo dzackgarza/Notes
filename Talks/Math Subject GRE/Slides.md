@@ -781,7 +781,8 @@ $$(x+y)^n = \sum_{k=0}^n {n\choose k}x^ky^{n-k}$$
 <!-- slide -->
 # Topics: Complex Analysis
 <!-- slide vertical=true -->
-svc 1
+- $n\dash$th roots:
+$$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
 
 <!-- slide -->
 # Conclusion
