@@ -323,10 +323,10 @@ $$
 \text{Case 2: } S \text{ is given by } z = g(x,y)
 $$
 - Let $f(x, y, z) = g(x,y) - z$, then 
+    $$\\
+    \vector p \in S \iff \vector p \in \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}.\\
     $$
-    \vector p \in S \iff \vector p \in \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}.
-    $$
-    
+
 - Then $\nabla f$ is normal to level sets, compute $\nabla f = [\dd{}{x}g, \dd{}{y}g, -1]$
 - Proceed as in previous case.
 
