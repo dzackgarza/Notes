@@ -541,10 +541,10 @@ $$
 
 <!-- slide vertical=true -->
 ## Definitions
-- Know some group and ring theoretic properties of $\ZZ/n\ZZ$
-  - $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
-    - So we can solve equations with inverses: $ax = b \mod n \iff x = a^{-1}b \mod n$
-  - 
+Know some group and ring theoretic properties of $\ZZ/n\ZZ$
+- $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
+  - So we can solve equations with inverses: $ax = b \mod n \iff x = a^{-1}b \mod n$
+- But there will always be *some* invertible elements, 
 
 <!-- slide vertical=true -->
 ## Definitions
