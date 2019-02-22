@@ -809,5 +809,6 @@ C, because $\ZZ-\theset{0}$ lacks inverses
 # Example Problem 1
 ![problem1](/assets/problem2.png)
 $$
-\lim _ { ( a , b ) \rightarrow 0 } \frac { ( a - b i ) ^ { 2 } } { ( a + b i ) ^ { 2 } } = \lim _ { ( a , b ) \rightarrow 0 } \frac { a ^ { 2 } - b ^ { 2 } - 2 a b i } { a ^ { 2 } - b ^ { 2 } + 2 a b i }
+L = \lim _ { ( a , b ) \rightarrow 0 } \frac { ( a - b i ) ^ { 2 } } { ( a + b i ) ^ { 2 } } = \lim _ { ( a , b ) \rightarrow 0 } \frac { a ^ { 2 } - b ^ { 2 } - 2 a b i } { a ^ { 2 } - b ^ { 2 } + 2 a b i } \\
+a = 0 \implies L = 0
 $$
