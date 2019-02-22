@@ -828,5 +828,8 @@ Don't row-reduce or invert! Strategy: compute
 $$
 \begin{array}{cccc}
 1 & 3 & 2 & 3 \\
+1 & 4 & 1 & 0 \\
+3 & 5 & 10 & 14 \\
+
 \end{array}
 $$
