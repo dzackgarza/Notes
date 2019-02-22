@@ -90,6 +90,8 @@ Five Official Practice Exams (with Solutions)
 
 All old and *significantly* easier than exams in recent years.
 
+Aim for 
+
 <!-- slide -->
 # General Tips
 
