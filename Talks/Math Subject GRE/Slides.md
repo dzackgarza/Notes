@@ -646,7 +646,7 @@ $$
 ## Structure
 - Structure of the Symmetric group
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
-
+- Structure of $\ZZ_n$
 $$ 
 \ZZ_{pq} = \ZZ_p \oplus \ZZ_q \iff (p,q) = 1
 $$
