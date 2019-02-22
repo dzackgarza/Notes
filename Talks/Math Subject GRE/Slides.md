@@ -673,7 +673,7 @@ $$
 <!-- slide vertical=true -->
 - Open/closed sets
 - Connected, disconnected, totally disconnected, etc
-
+- Metric spaces
 
 <!-- slide vertical=true -->
 ## Useful Facts
