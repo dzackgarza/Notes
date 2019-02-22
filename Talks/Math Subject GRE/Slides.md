@@ -559,7 +559,7 @@ $$
 \end{aligned}
 $$
 
-Back-substitute to write $ax+by = r_{k+2} = (a,b)$.
+Back-substitute to write $ax+by = \mathbf{r_{k+2}} = (a,b)$.
 
 Works for polynomials!!
 
