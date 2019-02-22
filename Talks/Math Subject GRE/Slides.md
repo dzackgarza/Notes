@@ -459,10 +459,10 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - Rank-nullity
 - Computing nullspace, colspace, rowspace, eigenvalues/eigenvectors
 - Big list of equivalent conditions for invertibility
+- Quadratic forms
 - Projections onto subspaces
 - Diagonalizability and similarity
 - Canonical forms
-- Quadratic forms
 - Decompositions ($QR, VDV^T, SVD,$ etc)
 
 
