@@ -374,7 +374,7 @@ Essentially just use Taylor expansions.
 
 Single variable case:
 $$
-f(p) =\approx f(p) + f'(p)(x-p) \\+ f''(p)(x-a)^2 + o(x^3)
+f(p) \approx f(p) + f'(p)(x-p) \\+ f''(p)(x-a)^2 + o(x^3)
 $$
 
 Multivariable case:
