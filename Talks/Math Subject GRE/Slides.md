@@ -798,4 +798,4 @@ $$
 <!-- slide vertical=true-->
 # Example Problem 1
 ![problem1](/assets/problem1.png)
-\(C\), because $\ZZ-\theset{0}$ lacks inverses 
+C, because $\ZZ-\theset{0}$ lacks inverses 
