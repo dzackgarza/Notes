@@ -309,10 +309,8 @@ Let $S \subseteq \RR^3$ be a surface. Generally need a point $\vector{p} \in S$ 
 
 **Key Insight: The gradient of a function is normal to its level sets!**
 
-Cases:
-
 $$
-S = \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}
+\text{Case 1: } S = \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}
 $$ 
 i.e. it is the zero set of some function $f:\RR^3 \to \RR$
   - $\nabla f$ is a vector that is normal to the zero level set.
