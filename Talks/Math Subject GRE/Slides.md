@@ -513,7 +513,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
   - Reduction of Order
   - Laplace Transforms
   - Series solutions
-- Special Equations
+- Special ODEs
   - Exact
   - Bernoulli
   - Cauchy-Euler
