@@ -835,3 +835,4 @@ $$\left(
 \left(\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right) = \vector 0
 $$
 
+So D, A are true. C is true because it's a homogeneous system. B
