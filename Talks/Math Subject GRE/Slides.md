@@ -846,4 +846,4 @@ So D, A are true. C is true because it's a homogeneous system. B is true because
 ![problem1](/assets/problem4.png)
 Note: I and II can simultaneously hold!
 
-Note $N_{\frac{1}{2}}(x) = \theset{x}$, so every set is open. $\ZZ$ is countable, 
+Note $N_{\frac{1}{2}}(x) = \theset{x}$, so every singleton is open. $\ZZ$ is countable, 
