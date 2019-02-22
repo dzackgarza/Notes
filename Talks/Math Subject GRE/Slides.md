@@ -2,6 +2,7 @@
 presentation:
   margin: 0.0
   theme: serif.css
+  width: 1200
 ---
 
 <!-- slide -->
