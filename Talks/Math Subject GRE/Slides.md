@@ -831,5 +831,6 @@ $$\left(
 1 & 4 & 1 & 0 \\
 3 & 5 & 10 & 14 \\
 2 & 5 & 5 & 6
-\end{array}\right)\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right)
+\end{array}\right)
+\left(\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right)
 $$
