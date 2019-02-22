@@ -678,8 +678,8 @@ $$
 <!-- slide vertical=true -->
 ## Useful Facts
 - Topologies are closed under 
-  - Arbitrary unions: $U_i \in \mathcal{T} \implies \union_{i\in I} U_i \in \mathcal{T}$
-  - Finite intersections: $U_i \in \mathcal{T}
+  - Arbitrary unions: $U_j \in \mathcal{T} \implies \union_{j\in J} U_i \in \mathcal{T}$
+  - Finite intersections: $U_i \in \mathcal{T} \implies \intersection_{i=1}^
 
 
 
