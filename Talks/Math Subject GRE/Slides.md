@@ -414,7 +414,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Fundamental Spaces
-  - $\mathrm{nullspace} A$: 
+  - $\mathrm{nullspace} A / \ker A$: 
     - Reduce to RREF, zero rows are free variables, convert back to equations and pull free variables out as scalar multipliers.
 
   - Eigenspace: 
