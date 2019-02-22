@@ -705,7 +705,7 @@ Suppose $\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$
 
 <!-- slide vertical=true -->
 # Ring Theory
-
+- Ideals: $
 $$ 
 \text{field} \implies \text{Euclidean Domain} \implies \text{PID} \\ \implies \text{UFD} \implies \text{integral domain}
 $$
