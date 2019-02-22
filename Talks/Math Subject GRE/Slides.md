@@ -643,6 +643,13 @@ $$
   - e.g. Every element is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
 
 <!-- slide vertical=true -->
+- Group Axioms
+	- Closure: $a,b \in G \implies ab \in G$
+	- Identity: $\exists e\in G \mid a\in G \implies ae = ea = a$
+	- Associativity: $a,b,c \in G \implies (ab)c = a(bc)$
+	- Inverses: $a\in G \implies \exists b \in G \mid ab =ba = e$
+  
+<!-- slide vertical=true -->
 - Cauchy's Theorem
 	- If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
 - The Sylow Theorems
