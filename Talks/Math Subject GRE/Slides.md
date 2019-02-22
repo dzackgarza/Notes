@@ -822,6 +822,4 @@ So E, because the limit needs to be path-independent.
 
 <!-- slide vertical=true-->
 # Example Problem 3
-![problem1](/assets/problem1.png)
-C, because $\ZZ-\theset{0}$ lacks inverses 
-(Would need to extend to $\QQ$)
+![problem1](/assets/problem3.png)
