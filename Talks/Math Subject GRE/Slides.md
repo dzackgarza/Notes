@@ -535,7 +535,8 @@ a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac
 $$
   - Useful fact: $a = 0 \mod n \iff a = 0 \mod p$ for every distinct prime factor $p$ of $n$.
 
-
+<!-- slide vertical=true -->
+## Definitions
 - Know some group and ring theoretic properties of $\ZZ/n\ZZ$
   - $\ZZ/n\ZZ$ is a field $\iff n$ is prime.
     - So we can solve equations with inverses: $ax = b \mod n \iff x = a^{-1}b \mod n$
