@@ -776,6 +776,8 @@ $$
   - e.g. number of nonisomorphic structures
 - Inclusion-exclusion
 
+$$(x+y)^n = \sum_{k=0}^n {n\choose k}x^ky^{n-k}$$
+
 <!-- slide -->
 # Topics: Complex Analysis
 <!-- slide vertical=true -->
