@@ -117,9 +117,6 @@ Five Official Practice Exams
 - Self care!!
   - Sleep
   - Eat right
-  - Hydrate
-  - Moisturize
-
 
 <!-- slide -->
 # Single Variable Calculus
