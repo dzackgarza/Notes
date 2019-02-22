@@ -341,6 +341,7 @@ Generally a system of nonlinear equations, but there are common tricks to solve.
 
 <!-- slide vertical=true -->
 ## Multivariable Chain Rule
+<div width="500px">
 ```latex {cmd=true, hide=true, run_on_save=true}
 \documentclass{standalone}
 \usepackage{tikz}
@@ -355,6 +356,8 @@ z \arrow[rd] \arrow[ru] \arrow[rrru] \arrow[rrrd] &  &  &  \\
 \end{tikzcd}
 \end{document}
 ```
+</div>
+
 <!-- slide vertical=true -->
 ## Multivariable Chain Rule
 To get any one derivative, sum over all possible paths to it:
