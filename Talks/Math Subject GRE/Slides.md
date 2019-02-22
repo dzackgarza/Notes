@@ -406,7 +406,7 @@ $$
 <!-- slide vertical=true -->
 ## Fundamental Spaces
 - Finding bases for various spaces of $A$:
-  - $\mathrm{rowspace} A \subseteq \RR^n$
+  - $\mathrm{rowspace} A/ \im A^T \subseteq \RR^n$
   	- Reduce to RREF, and take nonzero rows of $\mathrm{RREF}(A)$.
   
   - $\mathrm{colspace} A / \im A \subseteq \RR^m$:
