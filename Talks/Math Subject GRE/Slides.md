@@ -827,6 +827,6 @@ So E, because the limit needs to be path-independent.
 Don't row-reduce or invert! Strategy: compute
 $$
 \begin{array}{cccc}
-1 & 
+1 & 3 & 2 & 3 \\
 \end{array}
 $$
