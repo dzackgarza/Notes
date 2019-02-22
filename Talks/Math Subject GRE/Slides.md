@@ -844,3 +844,5 @@ So D, A are true. C is true because it's a homogeneous system. B is true because
 <!-- slide vertical=true-->
 # Example Problem 4
 ![problem1](/assets/problem4.png)
+Note: I and II can simultaneously hold!
+
