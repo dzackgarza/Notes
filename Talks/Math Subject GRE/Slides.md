@@ -559,7 +559,7 @@ $$
 \end{aligned}
 $$
 
-Back-substitute to write $ax+by = (a,b) = r_{k+2}
+Back-substitute to write $ax+by = (a,b) = r_{k+2}$
 
 
 <!-- slide vertical=true -->
