@@ -282,7 +282,7 @@ $$
 - Lagrange Multipliers
 - Multivariable optimization
 - Arc lengths of curves
-- Line integrals, surface integrals
+- Line/Surface/Flux integrals
 - Green's Theorem
 - The divergence theorem
 - Stoke's Theorem
