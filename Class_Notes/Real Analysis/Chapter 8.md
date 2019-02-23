@@ -29,7 +29,7 @@ Note that in nice enough cases (like everything seen here), we can differentiate
 
 For example, recall the geometric series $$\sum_{k=0}^\infty x^k = \frac 1 {1-x},$$ which converges provided $\abs x < 1$. This can be derived by writing the Taylor series for $f(x) = \frac{1}{1-x}$ at the point $c=0$. 
 
-By making the substitution $x = 1-x$, we find that that $\frac 1 x = \sum(1-x)^k = \sum (-1)^k(x-1)^k$, which is thus the Taylor series for $f(x) = \frac 1 x$ at $c=1$.
+By making the substitution $x = 1-x$, we find that that $$\frac 1 x = \sum(1-x)^k = \sum (-1)^k(x-1)^k,$$ which is thus the Taylor series for $f(x) = \frac 1 x$ at $c=1$.
 
 We can instead integrate both sides to obtain $\sum_{k=0}^\infty \frac 1 {k+1} x^{k+1} = -\ln(1-x)$, and again substitute $x=1-x$ to obtain $\ln(x) = -\sum \frac 1 {k+1}(x-1)^{k+1}$, the Taylor series for $f(x) = \ln(x)$ at $c=1$.
 
