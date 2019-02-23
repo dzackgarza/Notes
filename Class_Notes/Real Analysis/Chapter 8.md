@@ -58,6 +58,8 @@ $$
 \exists \xi \in (x, c) \suchthat R_n(x) = \frac{1}{(n+1)!}\dd{^nf}{x^n}(\xi) (x-c)^{n+1}.
 $$
 
+
+
 ## Convergence
 This is especially helpful if we know $\exists M$ such that for every $\xi \in (x,c)$, we have $f^{(n)}(\xi) \leq M$, so that the $n$th derivative of $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation using the above expression for the remainder term.
 
