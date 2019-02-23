@@ -798,10 +798,13 @@ $$
 - Recurrence relations
 - Counting problems
   - e.g. number of nonisomorphic structures
-- Inclusion-exclusion
+- Inclusion-exclusion, etc
 
 $$(x+y)^n = \sum_{k=0}^n {n\choose k}x^ky^{n-k}$$
 
+
+<!-- slide -->
+# Example Problems
 
 <!-- slide -->
 # Example Problem 1
