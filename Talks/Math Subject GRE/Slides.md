@@ -554,7 +554,8 @@ $$
   - Useful fact:
   $$
   x = 0 \mod a \iff a = 0 \mod p_i ~\forall i
-  $$ 
+  $$
+  (Note: this is only true 
 
 <!-- slide vertical=true -->
 ## Definitions
