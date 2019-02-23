@@ -560,7 +560,7 @@ $$
 <!-- slide vertical=true -->
 ## Definitions
 - GCD, LCM
-$$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)} \\ \\
+$$ xy = \gcd{(x,y)}~\mathrm{lcm}{(x,y)} \\
 d\mid x \and d\mid y \implies  d \mid \gcd(x,y) \\ \\
 \quad \and \gcd(x,y) = d\gcd(\frac x d, \frac y d)
 $$
