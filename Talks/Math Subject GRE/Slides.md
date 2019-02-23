@@ -464,7 +464,7 @@ TFAE:
 	- i.e. $\mathrm{colspace}(A) = \RR^n$
 - The rows of $A$ are a basis for $V \cong \RR^n$
 	- i.e. $\mathrm{rowspace}~(A) = \RR^n$
-- $\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A^T\right)^\perp = \theset{\vector 0}$
+- $\left(\mathrm{colspace}~(A)\right)^\perp = \left(\mathrm{rowspace}A^T\right)^\perp = \theset{\vector 0}$
 - Zero is not an eigenvalue of $A$.
 - $A$ has $n$ linearly independent eigenvectors
 
