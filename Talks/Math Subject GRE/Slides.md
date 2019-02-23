@@ -473,7 +473,7 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - Least Squares
 - Diagonalizability, similarity
 - Canonical forms
-- Decompositions ($QR, VDV^T, SVD,$ etc)
+- Decompositions ($QR, VDV^{-1}, SVD,$ etc)
 
 
 <!-- slide -->
