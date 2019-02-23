@@ -555,7 +555,7 @@ $$
   $$
   x = 0 \mod a \iff x = 0 \mod p_i^{k_i} ~\forall i
   $$
-  (Follows from the Chinese remainder theorem since all of the $p_i^{k_i}$ are coprime)
+  *(Follows from the Chinese remainder theorem since all of the $p_i^{k_i}$ are coprime)*
 
 <!-- slide vertical=true -->
 ## Definitions
