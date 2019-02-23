@@ -443,7 +443,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Big List of Equivalent Properties
-Let $A$ be an $n\times n$ matrix representing a linear map $A: V \to W$ 
+Let $A$ be an $n\times n$ matrix representing a linear map $L: V \to W$ 
 
 TFAE:
 - $A$ is invertible and has a unique inverse $A^{-1}$
