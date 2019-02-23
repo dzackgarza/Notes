@@ -460,8 +460,8 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - $A$ has exactly $n$ pivots
 - The columns of $A$ are a basis for $\RR^m$
 	- i.e. $\mathrm{colspace}(A) = \RR^m$
-- The rows of $A$ are a basis for $\RR^m$
-	- i.e. $\mathrm{rowspace}(A) = \RR^m$
+- The rows of $A$ are a basis for $\RR^n$
+	- i.e. $\mathrm{rowspace}(A) = \RR^n$
 - $\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A^T\right)^\perp = \theset{\vector 0}$
 - Zero is not an eigenvalue of $A$.
 - $A$ has $n$ linearly independent eigenvectors
