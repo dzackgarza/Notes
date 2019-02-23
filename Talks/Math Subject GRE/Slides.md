@@ -303,6 +303,8 @@ A x + B y + C z + D = 0,~
 \vector x \in P \iff \inner{\vector x - \vector p_0}{\vector n} = 0
 $$
 
+Distances to lines/planes: project onto orthogonal complement.
+
 <!-- slide vertical=true -->
 ## Tangent Planes/Linear Approximations
 Let $S \subseteq \RR^3$ be a surface. Generally need a point $\vector{p} \in S$ and a normal $\vector{n}$. 
