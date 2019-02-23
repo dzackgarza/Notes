@@ -623,7 +623,7 @@ has a unique solution $x \mod \prod m_i$ iff $\gcd(m_i, m_j) = 1$ for each pair 
 
 The solution is given by
 $$
-x = \sum_{j=1}^r a_j \frac{\prod_i m_i}{m_j} \left[ \frac{\prod_i m_i}{m_j} \right]^{-1}_{\mod m_j}
+x = \sum_{j=1}^r a_j \frac{\prod_i m_i}{m_j} \left( \left[ \frac{\prod_i m_i}{m_j} \right]^{-1}_{\mod m_j}\right)
 $$
 
 Seems symbolically complex, but actually an easy algorithm to carry out by hand.
