@@ -551,11 +551,12 @@ $$
 $$
 x\mid y \iff y = 0 \mod x \iff \exists c \suchthat y = xc 
 $$
-  - Useful fact:
-  $$
-  x = 0 \mod n \iff x = 0 \mod p_i^{k_i} ~\forall i
-  $$
-  *(Follows from the Chinese remainder theorem since all of the $p_i^{k_i}$ are coprime)*
+
+- Useful fact:
+$$
+x = 0 \mod n \iff x = 0 \mod p_i^{k_i} ~\forall i
+$$
+*(Follows from the Chinese remainder theorem since all of the $p_i^{k_i}$ are coprime)*
 
 <!-- slide vertical=true -->
 ## Definitions
