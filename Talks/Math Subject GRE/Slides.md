@@ -275,7 +275,7 @@ $$
 <!-- slide vertical=true -->
 ## General Concepts
 - Vectors, div, grad, curl
-- Equations of lines, planes, paramaterized curves
+- Equations of lines, planes, parameterized curves
   - And finding intersections
 - Multivariable Taylor series
 - Computing linear approximations
