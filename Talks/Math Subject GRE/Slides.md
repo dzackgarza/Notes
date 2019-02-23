@@ -555,7 +555,7 @@ $$
   $$
   x = 0 \mod a \iff a = 0 \mod p_i ~\forall i
   $$
-  (Note: this is only true 
+  (Note: this is only true for $p_i^1$
 
 <!-- slide vertical=true -->
 ## Definitions
