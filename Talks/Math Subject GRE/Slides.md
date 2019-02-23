@@ -555,7 +555,7 @@ $$
   $$
   x = 0 \mod a \iff a = 0 \mod p_i ~\forall i
   $$
-  (Note: this is only true for primes $p_i^1$, not the factors $p_i^{k_i}$
+  (Note: this is only true for primes $p_i^1$, not necessarily the factors $p_i^{k_i}$)
 
 <!-- slide vertical=true -->
 ## Definitions
