@@ -739,7 +739,7 @@ $$
 <!-- slide -->
 # Topics: Real Analysis
 <!-- slide vertical=true -->
-- Properties of Metrics and Metric Spaces
+- Properties of Metric Spaces
 - The Cauchy-Schwarz Inequality
 - Definitions of Sequences and Series
 - Testing Convergence of sequences and series
