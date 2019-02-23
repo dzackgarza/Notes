@@ -35,7 +35,7 @@ presentation:
   - Multivariable
   - Differential Equations
 
-![calculus](http://pyvandenbussche.info/wp-content/uploads/2017/07/integral.png)
+![calculus](./assets/integral.png)
 
 <!-- slide vertical=true-->
 ## "Algebra" (25%)
