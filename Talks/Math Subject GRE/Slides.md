@@ -704,6 +704,7 @@ Cauchy's Theorem
 
 The Sylow Theorems
 - If $\abs{G} = n = \prod p_i^{k_i}$, for each $i$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H_{i,j}$ for all orders $p_i^{k_j}$.
+  - Note: partial converse to Cauchy's theorem.
 
 <!-- slide vertical=true -->
 ## Classification of Abelian Groups
