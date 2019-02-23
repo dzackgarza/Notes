@@ -767,7 +767,7 @@ $$
 ## General Concepts
 - Open/closed sets
 - Connected, disconnected, totally disconnected, etc
-- Metric spaces
+- Mostly topics related to metric spaces
 
 <!-- slide vertical=true -->
 ## Useful Facts
