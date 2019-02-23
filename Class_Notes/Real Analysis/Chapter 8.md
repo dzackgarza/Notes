@@ -55,7 +55,7 @@ $$
 \exists \xi \in (x, c) \suchthat R_n(x) = \frac{1}{(n+1)!}\dd{^nf}{x^n}(\xi) (x-c)^{n+1}.
 $$
 
-This is especially helpful if we know $\exists M$ such that for every $p \in (x,c)$, we have $f(p) \leq M$ -- so $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation, using the above expression.
+This is especially helpful if we know $\exists M$ such that for every $p \in (x,c)$, we have $f(p) \leq M$ -- so the $n\dash$ the derivative of $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation, using the above expression.
 
 Note that the book describes this in a slightly different way - for the statement of Lagrange's theorem, they write $f(x) = p_n(x) + R_n(x)$, and simply substitute the above expression in for $R_n(x)$.
 
