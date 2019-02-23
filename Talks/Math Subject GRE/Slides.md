@@ -556,7 +556,7 @@ $$
   $$
   a = 0 \mod n \iff a = 0 \mod p_i
   $$ 
-  for every distinct prime factor $p_i$ of $n$.
+  for every $i$.
 
 <!-- slide vertical=true -->
 ## Definitions
