@@ -97,7 +97,7 @@ Aim for 90th percentile in $< 2$ hours.
 <!-- slide -->
 # General Tips
 
-![](https://pm1.narvii.com/6764/9db97da1ae788b05dd789270d71cd209239e1870v2_hq.jpg)
+![](./assets/study_book.jpg)
 
 <!-- slide vertical=true -->
 ## Math-Specific Tips
