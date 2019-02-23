@@ -642,7 +642,7 @@ $$
 $$
 a^p = a \mod p \\
 p \not\mid a \implies a^{p-1} = 1 \mod p \\
-\text{and in general, } a^{\phi(p)} = 1 \mod p 
+\text{and in general, } \\ a^{\phi(p)} = 1 \mod p 
 $$
 
 - Wilson's Theorem
