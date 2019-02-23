@@ -2148,7 +2148,7 @@ then commute to derive the FTC.
 </ul>
 </li>
 <li><strong>Ratio Test</strong><br>
-<div class="mathjax-exps">$$R =\limsup_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}$$</div>
+<div class="mathjax-exps">$$R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}$$</div>
 <ul>
 <li><span class="mathjax-exps">$R &lt; 1$</span>: absolutely convergent</li>
 <li><span class="mathjax-exps">$R &gt; 1$</span>: divergent</li>
@@ -2231,9 +2231,9 @@ then commute to derive the FTC.
 <h2 class="mume-header" id="geometry-in-rr3">Geometry in <span class="mathjax-exps">$\RR^3$</span></h2>
 
 <p>Lines<br>
-</p><div class="mathjax-exps">$$Ax + By + C = 0,~ \vector x = \vector p + t\vector v,\\ \vector x \in L \iff \inner{\vector x}{\vector n} = 0$$</div><p></p>
+</p><div class="mathjax-exps">$$Ax + By + C = 0,~ \vector x = \vector p + t\vector v,\\ \vector x \in L \iff \inner{\vector x-\vector p}{\vector n} = 0$$</div><p></p>
 <p>Planes<br>
-</p><div class="mathjax-exps">$$A x + B y + C z + D = 0,~ \vector x(t,s) = \vector p + t\vector v_1 + s\vector v_2 \\ \vector x \in P \iff \inner{\vector x - \vector p_0}{\vector n} = 0$$</div><p></p>
+</p><div class="mathjax-exps">$$A x + B y + C z + D = 0,~ \vector x(t,s) = \vector p + t\vector v_1 + s\vector v_2 \\ \vector x \in P \iff \inner{\vector x - \vector p}{\vector n} = 0$$</div><p></p>
 <p>Distances to lines/planes: project onto orthogonal complement.</p>
 </section><section vertical="true" lineno="307" class="slide " data-line="307" data-h="8" data-v="3">
 <h2 class="mume-header" id="tangent-planeslinear-approximations">Tangent Planes/Linear Approximations</h2>
@@ -2373,42 +2373,43 @@ i.e. it is the zero set of some function <span class="mathjax-exps">$f:\RR^3 \to
 </section><section vertical="true" lineno="443" class="slide " data-line="443" data-h="9" data-v="4">
 <h2 class="mume-header" id="big-list-of-equivalent-properties">Big List of Equivalent Properties</h2>
 
-<p>Let <span class="mathjax-exps">$A$</span> be an <span class="mathjax-exps">$m\times n$</span> matrix. TFAE:</p>
+<p>Let <span class="mathjax-exps">$A$</span> be an <span class="mathjax-exps">$n\times n$</span> matrix representing a linear map <span class="mathjax-exps">$L: V \to W$</span></p>
+<p>TFAE:</p>
 <ul>
 <li><span class="mathjax-exps">$A$</span> is invertible and has a unique inverse <span class="mathjax-exps">$A^{-1}$</span></li>
 <li><span class="mathjax-exps">$A^T$</span> is invertible</li>
 <li><span class="mathjax-exps">$\det(A) \neq 0$</span></li>
 <li>The linear system <span class="mathjax-exps">$A\vector{x} = \vector{b}$</span> has a unique solution for every <span class="mathjax-exps">$b\ \in \RR^m$</span></li>
 <li>The homogeneous system <span class="mathjax-exps">$A\vector{x} = 0$</span> has only the trivial solution <span class="mathjax-exps">$\vector{x} = 0$</span></li>
-<li><span class="mathjax-exps">$\rank(A) = n$</span>
+<li><span class="mathjax-exps">$\rank(A) = \dim(W) = n$</span>
 <ul>
 <li>i.e. <span class="mathjax-exps">$A$</span> is full rank</li>
 </ul>
 </li>
-<li><span class="mathjax-exps">$\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$</span></li>
+<li><span class="mathjax-exps">$\mathrm{nullity}(A) \definedas \dim(\mathrm{nullspace}(A)) = \dim(\ker L)  = 0$</span></li>
 </ul>
-</section><section vertical="true" lineno="455" class="slide " data-line="455" data-h="9" data-v="5">
+</section><section vertical="true" lineno="457" class="slide " data-line="457" data-h="9" data-v="5">
 <h2 class="mume-header" id="big-list-of-equivalent-properties-1">Big List of Equivalent Properties</h2>
 
 <ul>
 <li><span class="mathjax-exps">$A = \prod_{i=1}^k E_i$</span> for some finite <span class="mathjax-exps">$k$</span>, where each <span class="mathjax-exps">$E_i$</span> is an elementary matrix.</li>
 <li><span class="mathjax-exps">$A$</span> is row-equivalent to the identity matrix <span class="mathjax-exps">$I_n$</span></li>
 <li><span class="mathjax-exps">$A$</span> has exactly <span class="mathjax-exps">$n$</span> pivots</li>
-<li>The columns of <span class="mathjax-exps">$A$</span> are a basis for <span class="mathjax-exps">$\RR^m$</span>
+<li>The columns of <span class="mathjax-exps">$A$</span> are a basis for <span class="mathjax-exps">$W \cong \RR^n$</span>
 <ul>
-<li>i.e. <span class="mathjax-exps">$\mathrm{colspace}(A) = \RR^m$</span></li>
+<li>i.e. <span class="mathjax-exps">$\mathrm{colspace}(A) = \RR^n$</span></li>
 </ul>
 </li>
-<li>The rows of <span class="mathjax-exps">$A$</span> are a basis for <span class="mathjax-exps">$\RR^n$</span>
+<li>The rows of <span class="mathjax-exps">$A$</span> are a basis for <span class="mathjax-exps">$V \cong \RR^n$</span>
 <ul>
-<li>i.e. <span class="mathjax-exps">$\mathrm{rowspace}(A) = \RR^n$</span></li>
+<li>i.e. <span class="mathjax-exps">$\mathrm{rowspace}~(A) = \RR^n$</span></li>
 </ul>
 </li>
-<li><span class="mathjax-exps">$\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A^T\right)^\perp = \theset{\vector 0}$</span></li>
+<li><span class="mathjax-exps">$\left(\mathrm{colspace}~(A)\right)^\perp = \left(\mathrm{rowspace}~(A^T)\right)^\perp = \theset{\vector 0}$</span></li>
 <li>Zero is not an eigenvalue of <span class="mathjax-exps">$A$</span>.</li>
 <li><span class="mathjax-exps">$A$</span> has <span class="mathjax-exps">$n$</span> linearly independent eigenvectors</li>
 </ul>
-</section><section vertical="true" lineno="468" class="slide " data-line="468" data-h="9" data-v="6">
+</section><section vertical="true" lineno="470" class="slide " data-line="470" data-h="9" data-v="6">
 <h2 class="mume-header" id="various-other-topics">Various Other Topics</h2>
 
 <ul>
@@ -2419,10 +2420,10 @@ i.e. it is the zero set of some function <span class="mathjax-exps">$f:\RR^3 \to
 <li>Canonical forms</li>
 <li>Decompositions (<span class="mathjax-exps">$QR, VDV^{-1}, SVD,$</span> etc)</li>
 </ul>
-</section></section><section><section lineno="478" class="slide " data-line="478" data-h="10" data-v="0">
+</section></section><section><section lineno="480" class="slide " data-line="480" data-h="10" data-v="0">
 <h1 class="mume-header" id="ordinary-differential-equations">Ordinary Differential Equations</h1>
 
-</section><section vertical="true" lineno="481" class="slide " data-line="481" data-h="10" data-v="1">
+</section><section vertical="true" lineno="483" class="slide " data-line="483" data-h="10" data-v="1">
 <h2 class="mume-header" id="easy-ivps">Easy IVPs</h2>
 
 <ul>
@@ -2433,7 +2434,7 @@ i.e. it is the zero set of some function <span class="mathjax-exps">$f:\RR^3 \to
 </ul>
 </li>
 </ul>
-</section><section vertical="true" lineno="489" class="slide " data-line="489" data-h="10" data-v="2">
+</section><section vertical="true" lineno="491" class="slide " data-line="491" data-h="10" data-v="2">
 <h2 class="mume-header" id="easy-ivps-1">Easy IVPs</h2>
 
 <ul>
@@ -2446,7 +2447,7 @@ i.e. it is the zero set of some function <span class="mathjax-exps">$f:\RR^3 \to
 </ul>
 </li>
 </ul>
-</section><section vertical="true" lineno="499" class="slide " data-line="499" data-h="10" data-v="3">
+</section><section vertical="true" lineno="501" class="slide " data-line="501" data-h="10" data-v="3">
 <h2 class="mume-header" id="more-easy-ivps">More Easy IVPs</h2>
 
 <ul>
@@ -2459,7 +2460,7 @@ i.e. it is the zero set of some function <span class="mathjax-exps">$f:\RR^3 \to
 </p><div class="mathjax-exps">$$\frac{dy}{dx} = f(x)g(y) \implies \int \frac{1}{g(y)}dy = \int f(x) dx + C$$</div><p></p>
 </li>
 </ul>
-</section><section vertical="true" lineno="510" class="slide " data-line="510" data-h="10" data-v="4">
+</section><section vertical="true" lineno="512" class="slide " data-line="512" data-h="10" data-v="4">
 <h2 class="mume-header" id="more-easy-ivps-1">More Easy IVPs</h2>
 
 <ul>
@@ -2467,7 +2468,7 @@ i.e. it is the zero set of some function <span class="mathjax-exps">$f:\RR^3 \to
 <div class="mathjax-exps">$$\vector{x}&apos;(t) = A\vector{x}(t) + \vector{b}(t)  \implies \vector{x}(t) = \sum_{i=1}^n c_i e^{\lambda_i t}~\vector{v}_i$$</div><br>
 for each eigenvalue/eigenvector pair <span class="mathjax-exps">$(\lambda_i, \vector v_i)$</span>.</li>
 </ul>
-</section><section vertical="true" lineno="520" class="slide " data-line="520" data-h="10" data-v="5">
+</section><section vertical="true" lineno="522" class="slide " data-line="522" data-h="10" data-v="5">
 <h2 class="mume-header" id="less-common-topics">Less Common Topics</h2>
 
 <ul>
@@ -2491,28 +2492,28 @@ for each eigenvalue/eigenvector pair <span class="mathjax-exps">$(\lambda_i, \ve
 </ul>
 </li>
 </ul>
-</section></section><section><section lineno="537" class="slide " data-line="537" data-h="11" data-v="0">
+</section></section><section><section lineno="539" class="slide " data-line="539" data-h="11" data-v="0">
 <h1 class="mume-header" id="topics-number-theory">Topics: Number Theory</h1>
 
-</section><section vertical="true" lineno="540" class="slide " data-line="540" data-h="11" data-v="1">
+</section><section vertical="true" lineno="542" class="slide " data-line="542" data-h="11" data-v="1">
 <h2 class="mume-header" id="definitions">Definitions</h2>
 
 <ul>
 <li>
 <p>The fundamental theorem of arithmetic:<br>
-</p><div class="mathjax-exps">$$a\in\mathbb Z \implies a = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}$$</div><p></p>
+</p><div class="mathjax-exps">$$n\in\mathbb Z \implies n = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}$$</div><p></p>
 </li>
 <li>
 <p>Divisibility and modular congruence:<br>
-</p><div class="mathjax-exps">$$a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac$$</div><p></p>
-<ul>
-<li>Useful fact:<br>
-<div class="mathjax-exps">$$a = 0 \mod n \iff a = 0 \mod p$$</div><br>
-for every distinct prime factor <span class="mathjax-exps">$p$</span> of <span class="mathjax-exps">$n$</span>.</li>
-</ul>
+</p><div class="mathjax-exps">$$x\mid y \iff y = 0 \mod x \iff \exists c \suchthat y = xc$$</div><p></p>
+</li>
+<li>
+<p>Useful fact:<br>
+</p><div class="mathjax-exps">$$x = 0 \mod n \iff x = 0 \mod p_i^{k_i} ~\forall i$$</div><br>
+<em>(Follows from the Chinese remainder theorem since all of the <span class="mathjax-exps">$p_i^{k_i}$</span> are coprime)</em><p></p>
 </li>
 </ul>
-</section><section vertical="true" lineno="557" class="slide " data-line="557" data-h="11" data-v="2">
+</section><section vertical="true" lineno="560" class="slide " data-line="560" data-h="11" data-v="2">
 <h2 class="mume-header" id="definitions-1">Definitions</h2>
 
 <ul>
@@ -2530,14 +2531,14 @@ for every distinct prime factor <span class="mathjax-exps">$p$</span> of <span c
 </ul>
 </li>
 </ul>
-</section><section vertical="true" lineno="569" class="slide " data-line="569" data-h="11" data-v="3">
+</section><section vertical="true" lineno="573" class="slide " data-line="573" data-h="11" data-v="3">
 <h2 class="mume-header" id="the-euclidean-algorithm">The Euclidean Algorithm</h2>
 
 <p>Computes GCD, can also be used to find modular inverses:<br>
 </p><div class="mathjax-exps">$$\begin{aligned} a &amp; = q _ { 0 } b + r _ { 0 } \\ b &amp; = q _ { 1 } r _ { 0 } + r _ { 1 } \\ r _ { 0 } &amp; = q _ { 2 } r _ { 1 } + r _ { 2 } \\ r _ { 1 } &amp; = q _ { 3 } r _ { 2 } + r _ { 3 } \\ &amp; \vdots \\r_k &amp;= q_{k+2}r_{k+1} + \mathbf{r_{k+2}} \\ r_{k+1} &amp;= q_{k+3}r_{k+2} + 0 \end{aligned}$$</div><p></p>
 <p>Back-substitute to write <span class="mathjax-exps">$ax+by = \mathbf{r_{k+2}} = \gcd(a,b)$</span>.</p>
 <p>(Also works for polynomials!)</p>
-</section><section vertical="true" lineno="581" class="slide " data-line="581" data-h="11" data-v="4">
+</section><section vertical="true" lineno="585" class="slide " data-line="585" data-h="11" data-v="4">
 <h2 class="mume-header" id="definitions-2">Definitions</h2>
 
 <ul>
@@ -2555,7 +2556,7 @@ for every distinct prime factor <span class="mathjax-exps">$p$</span> of <span c
 </ul>
 </li>
 </ul>
-</section><section vertical="true" lineno="599" class="slide " data-line="599" data-h="11" data-v="5">
+</section><section vertical="true" lineno="603" class="slide " data-line="603" data-h="11" data-v="5">
 <h2 class="mume-header" id="definitions-3">Definitions</h2>
 
 <p>Know some group and ring theoretic properties of <span class="mathjax-exps">$\ZZ/n\ZZ$</span></p>
@@ -2569,24 +2570,24 @@ for every distinct prime factor <span class="mathjax-exps">$p$</span> of <span c
 <div class="mathjax-exps">$$\abs{(\ZZ/n\ZZ)^{\times}} = \phi(n)$$</div><br>
 and is cyclic when <span class="mathjax-exps">$n=1,2,4,p^k, 2p^k$</span></li>
 </ul>
-</section><section vertical="true" lineno="611" class="slide " data-line="611" data-h="11" data-v="6">
+</section><section vertical="true" lineno="615" class="slide " data-line="615" data-h="11" data-v="6">
 <h2 class="mume-header" id="chinese-remainder-theorem">Chinese Remainder Theorem</h2>
 
 <p>The system<br>
 </p><div class="mathjax-exps">$$\begin{array} { c } { x \equiv a _ { 1 } \quad \left( \bmod m _ { 1 } \right) } \\ { x \equiv a _ { 2 } \quad \left( \bmod m _ { 2 } \right) } \\ { \vdots } \\ { x \equiv a _ { r } \quad \left( \bmod m _ { r } \right) } \end{array}$$</div><br>
 has a unique solution <span class="mathjax-exps">$x \mod \prod m_i$</span> iff <span class="mathjax-exps">$\gcd(m_i, m_j) = 1$</span> for each pair <span class="mathjax-exps">$i,j$</span>.<p></p>
-</section><section vertical="true" lineno="620" class="slide " data-line="620" data-h="11" data-v="7">
+</section><section vertical="true" lineno="624" class="slide " data-line="624" data-h="11" data-v="7">
 <h2 class="mume-header" id="chinese-remainder-theorem-1">Chinese Remainder Theorem</h2>
 
 <p>The solution is given by<br>
 </p><div class="mathjax-exps">$$x = \sum_{j=1}^r a_j \frac{\prod_i m_i}{m_j} \left( \left[ \frac{\prod_i m_i}{m_j} \right]^{-1}_{\mod m_j}\right)$$</div><p></p>
 <p>Seems symbolically complex, but actually an easy algorithm to carry out by hand.</p>
-</section><section vertical="true" lineno="630" class="slide " data-line="630" data-h="11" data-v="8">
+</section><section vertical="true" lineno="634" class="slide " data-line="634" data-h="11" data-v="8">
 <h2 class="mume-header" id="chinese-remainder-theorem-2">Chinese Remainder Theorem</h2>
 
 <p>Ring-theoretic interpretation: let <span class="mathjax-exps">$N = \prod n_i$</span>, then<br>
 </p><div class="mathjax-exps">$$\gcd(i,j) = 1 ~~\forall (i,j)  \implies \ZZ_N \cong \bigoplus \ZZ_{n_i}$$</div><p></p>
-</section><section vertical="true" lineno="638" class="slide " data-line="638" data-h="11" data-v="9">
+</section><section vertical="true" lineno="642" class="slide " data-line="642" data-h="11" data-v="9">
 <h2 class="mume-header" id="theorems">Theorems</h2>
 
 <ul>
@@ -2599,7 +2600,7 @@ has a unique solution <span class="mathjax-exps">$x \mod \prod m_i$</span> iff <
 </p><div class="mathjax-exps">$$n \text{ is prime } \iff (n-1)! = -1 \mod n$$</div><p></p>
 </li>
 </ul>
-</section><section vertical="true" lineno="652" class="slide " data-line="652" data-h="11" data-v="10">
+</section><section vertical="true" lineno="656" class="slide " data-line="656" data-h="11" data-v="10">
 <h2 class="mume-header" id="advanced-topics">Advanced Topics</h2>
 
 <ul>
@@ -2608,10 +2609,10 @@ has a unique solution <span class="mathjax-exps">$x \mod \prod m_i$</span> iff <
 <li>The Legendre/Jacobi Symbols</li>
 <li>Quadratic Reciprocity</li>
 </ul>
-</section></section><section><section lineno="661" class="slide " data-line="661" data-h="12" data-v="0">
+</section></section><section><section lineno="665" class="slide " data-line="665" data-h="12" data-v="0">
 <h1 class="mume-header" id="topics-abstract-algebra">Topics: Abstract Algebra</h1>
 
-</section><section vertical="true" lineno="664" class="slide " data-line="664" data-h="12" data-v="1">
+</section><section vertical="true" lineno="668" class="slide " data-line="668" data-h="12" data-v="1">
 <h2 class="mume-header" id="definitions-4">Definitions</h2>
 
 <ul>
@@ -2619,7 +2620,7 @@ has a unique solution <span class="mathjax-exps">$x \mod \prod m_i$</span> iff <
 <li>Order, Center, Centralizer, orbits, stabilizers</li>
 <li>Common groups: <span class="mathjax-exps">$S_n, A_n, C_n, D_{2n}, \ZZ_n,$</span> etc</li>
 </ul>
-</section><section vertical="true" lineno="670" class="slide " data-line="670" data-h="12" data-v="2">
+</section><section vertical="true" lineno="674" class="slide " data-line="674" data-h="12" data-v="2">
 <h2 class="mume-header" id="structure">Structure</h2>
 
 <ul>
@@ -2639,7 +2640,7 @@ has a unique solution <span class="mathjax-exps">$x \mod \prod m_i$</span> iff <
 </p><div class="mathjax-exps">$$\ZZ_{pq} = \ZZ_p \oplus \ZZ_q \iff (p,q) = 1$$</div><p></p>
 </li>
 </ul>
-</section><section vertical="true" lineno="685" class="slide " data-line="685" data-h="12" data-v="3">
+</section><section vertical="true" lineno="689" class="slide " data-line="689" data-h="12" data-v="3">
 <h2 class="mume-header" id="basics">Basics</h2>
 
 <p>Group Axioms</p>
@@ -2651,7 +2652,7 @@ has a unique solution <span class="mathjax-exps">$x \mod \prod m_i$</span> iff <
 </ul>
 <p>One step subgroup test:<br>
 </p><div class="mathjax-exps">$$H \leq G \iff a,b \in H \implies a b^{-1} \in H \\$$</div><p></p>
-</section><section vertical="true" lineno="698" class="slide " data-line="698" data-h="12" data-v="4">
+</section><section vertical="true" lineno="702" class="slide " data-line="702" data-h="12" data-v="4">
 <h2 class="mume-header" id="useful-theorems">Useful Theorems</h2>
 
 <p>Cauchy&#x2019;s Theorem</p>
@@ -2666,13 +2667,13 @@ has a unique solution <span class="mathjax-exps">$x \mod \prod m_i$</span> iff <
 </ul>
 </li>
 </ul>
-</section><section vertical="true" lineno="708" class="slide " data-line="708" data-h="12" data-v="5">
+</section><section vertical="true" lineno="712" class="slide " data-line="712" data-h="12" data-v="5">
 <h2 class="mume-header" id="classification-of-abelian-groups">Classification of Abelian Groups</h2>
 
 <p>Suppose <span class="mathjax-exps">$\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$</span><br>
 </p><div class="mathjax-exps">$$G \cong \bigoplus_{i=1}^n G_i \text{ with } \abs{G_i} = p_i^{k_i} \text{ and } \\   G_i \cong \bigoplus_{j=1}^k \ZZ_{p_i^{\alpha_j}} \text{ where } \sum_{j=1}^k \alpha_j = k_i$$</div><br>
 <span class="mathjax-exps">$G$</span> decomposes into a direct sum of groups corresponding to its prime factorization. For each component, you take the corresponding prime, write an integer partition of its exponent, and each unique partition yields a unique group.<p></p>
-</section><section vertical="true" lineno="717" class="slide " data-line="717" data-h="12" data-v="6">
+</section><section vertical="true" lineno="721" class="slide " data-line="721" data-h="12" data-v="6">
 <h1 class="mume-header" id="ring-theory">Ring Theory</h1>
 
 <ul>
@@ -2703,10 +2704,10 @@ has a unique solution <span class="mathjax-exps">$x \mod \prod m_i$</span> iff <
 $$ 
 \text{field} \implies \text{Euclidean Domain} \implies \text{PID} \\ \implies \text{UFD} \implies \text{integral domain}
 $$
-</section></section><section><section lineno="738" class="slide " data-line="738" data-h="13" data-v="0">
+</section></section><section><section lineno="742" class="slide " data-line="742" data-h="13" data-v="0">
 <h1 class="mume-header" id="topics-real-analysis">Topics: Real Analysis</h1>
 
-</section><section vertical="true" lineno="740" class="slide " data-line="740" data-h="13" data-v="1">
+</section><section vertical="true" lineno="744" class="slide " data-line="744" data-h="13" data-v="1">
 <ul>
 <li>Properties of Metric Spaces</li>
 <li>The Cauchy-Schwarz Inequality</li>
@@ -2721,7 +2722,7 @@ $$
 <li>Uniform and point-wise continuity</li>
 <li>Lipschitz Continuity</li>
 </ul>
-</section><section vertical="true" lineno="751" class="slide " data-line="751" data-h="13" data-v="2">
+</section><section vertical="true" lineno="755" class="slide " data-line="755" data-h="13" data-v="2">
 <h2 class="mume-header" id="big-theorems-1">Big Theorems</h2>
 
 <ul>
@@ -2735,10 +2736,10 @@ $$
 <li><strong>Bolzano-Weierstrass</strong>: every bounded sequence in <span class="mathjax-exps">$\RR^n$</span> has a convergent subsequence.</li>
 <li><strong>Heine-Borel</strong>: in <span class="mathjax-exps">$\RR^n, X$</span> is compact <span class="mathjax-exps">$\iff X$</span> is closed and bounded.</li>
 </ul>
-</section></section><section><section lineno="763" class="slide " data-line="763" data-h="14" data-v="0">
+</section></section><section><section lineno="767" class="slide " data-line="767" data-h="14" data-v="0">
 <h1 class="mume-header" id="topics-point-set-topology">Topics: Point-Set Topology</h1>
 
-</section><section vertical="true" lineno="765" class="slide " data-line="765" data-h="14" data-v="1">
+</section><section vertical="true" lineno="769" class="slide " data-line="769" data-h="14" data-v="1">
 <h2 class="mume-header" id="general-concepts-1">General Concepts</h2>
 
 <ul>
@@ -2746,7 +2747,7 @@ $$
 <li>Connected, disconnected, totally disconnected, etc</li>
 <li>Mostly topics related to metric spaces</li>
 </ul>
-</section><section vertical="true" lineno="771" class="slide " data-line="771" data-h="14" data-v="2">
+</section><section vertical="true" lineno="775" class="slide " data-line="775" data-h="14" data-v="2">
 <h2 class="mume-header" id="useful-facts">Useful Facts</h2>
 
 <ul>
@@ -2762,10 +2763,10 @@ $$
 </ul>
 </li>
 </ul>
-</section></section><section><section lineno="779" class="slide " data-line="779" data-h="15" data-v="0">
+</section></section><section><section lineno="783" class="slide " data-line="783" data-h="15" data-v="0">
 <h1 class="mume-header" id="topics-complex-analysis">Topics: Complex Analysis</h1>
 
-</section><section vertical="true" lineno="781" class="slide " data-line="781" data-h="15" data-v="1">
+</section><section vertical="true" lineno="785" class="slide " data-line="785" data-h="15" data-v="1">
 <h1 class="mume-header" id="general-concepts-2">General Concepts</h1>
 
 <ul>
@@ -2779,10 +2780,10 @@ $$
 </ul>
 </li>
 </ul>
-</section></section><section><section lineno="792" class="slide " data-line="792" data-h="16" data-v="0">
+</section></section><section><section lineno="796" class="slide " data-line="796" data-h="16" data-v="0">
 <h1 class="mume-header" id="topics-discrete-mathematics-combinatorics">Topics: Discrete Mathematics + Combinatorics</h1>
 
-</section><section vertical="true" lineno="794" class="slide " data-line="794" data-h="16" data-v="1">
+</section><section vertical="true" lineno="798" class="slide " data-line="798" data-h="16" data-v="1">
 <h2 class="mume-header" id="general-concepts-3">General Concepts</h2>
 
 <ul>
@@ -2796,51 +2797,51 @@ $$
 <li>Inclusion-exclusion, etc</li>
 </ul>
 <p></p><div class="mathjax-exps">$$(x+y)^n = \sum_{k=0}^n {n\choose k}x^ky^{n-k}$$</div><p></p>
-</section></section><section lineno="805" class="slide " data-line="805" data-h="17" data-v="0">
+</section></section><section lineno="809" class="slide " data-line="809" data-h="17" data-v="0">
 <h1 class="mume-header" id="example-problems">Example Problems</h1>
 
-</section><section><section lineno="808" class="slide " data-line="808" data-h="18" data-v="0">
+</section><section><section lineno="812" class="slide " data-line="812" data-h="18" data-v="0">
 <h1 class="mume-header" id="example-problem-1">Example Problem 1</h1>
 
-<p><img src="../../assets/problem1.png" alt="problem1"></p>
-</section><section vertical="true" lineno="812" class="slide " data-line="812" data-h="18" data-v="1">
+<p><img src="./assets/problem1.png" alt="problem1"></p>
+</section><section vertical="true" lineno="816" class="slide " data-line="816" data-h="18" data-v="1">
 <h1 class="mume-header" id="example-problem-1-1">Example Problem 1</h1>
 
-<p><img src="../../assets/problem1.png" alt="problem1"><br>
+<p><img src="./assets/problem1.png" alt="problem1"><br>
 C, because <span class="mathjax-exps">$\ZZ-\theset{0}$</span> lacks inverses<br>
 (Would need to extend to <span class="mathjax-exps">$\QQ$</span>)</p>
-</section></section><section><section lineno="818" class="slide " data-line="818" data-h="19" data-v="0">
+</section></section><section><section lineno="822" class="slide " data-line="822" data-h="19" data-v="0">
 <h1 class="mume-header" id="example-problem-2">Example Problem 2</h1>
 
-<p><img src="../../assets/problem2.png" alt="problem1"></p>
-</section><section vertical="true" lineno="822" class="slide " data-line="822" data-h="19" data-v="1">
+<p><img src="./assets/problem2.png" alt="problem1"></p>
+</section><section vertical="true" lineno="826" class="slide " data-line="826" data-h="19" data-v="1">
 <h1 class="mume-header" id="example-problem-2-1">Example Problem 2</h1>
 
-<p><img src="../../assets/problem2.png" alt="problem1"><br>
+<p><img src="./assets/problem2.png" alt="problem1"><br>
 </p><div class="mathjax-exps">$$L = \lim _ { ( a , b ) \rightarrow 0 } \frac { ( a - b i ) ^ { 2 } } { ( a + b i ) ^ { 2 } } = \lim _ { ( a , b ) \rightarrow 0 } \frac { a ^ { 2 } - b ^ { 2 } - 2 a b i } { a ^ { 2 } - b ^ { 2 } + 2 a b i } \\ a = 0 \implies L = 1 \\ a = b \implies L = -1$$</div><p></p>
 <p>So E, because the limit needs to be path-independent.</p>
-</section></section><section><section lineno="833" class="slide " data-line="833" data-h="20" data-v="0">
+</section></section><section><section lineno="837" class="slide " data-line="837" data-h="20" data-v="0">
 <h1 class="mume-header" id="example-problem-3">Example Problem 3</h1>
 
-<p><img src="../../assets/problem3.png" alt="problem1"></p>
-</section><section vertical="true" lineno="837" class="slide " data-line="837" data-h="20" data-v="1">
+<p><img src="./assets/problem3.png" alt="problem1"></p>
+</section><section vertical="true" lineno="841" class="slide " data-line="841" data-h="20" data-v="1">
 <h1 class="mume-header" id="example-problem-3-1">Example Problem 3</h1>
 
-<p><img src="../../assets/problem3.png" alt="problem1"></p>
+<p><img src="./assets/problem3.png" alt="problem1"></p>
 <p>Don&#x2019;t row-reduce or invert! Just one computation<br>
 </p><div class="mathjax-exps">$$\left( \begin{array}{cccc} 1 &amp; 3 &amp; 2 &amp; 3 \\ 1 &amp; 4 &amp; 1 &amp; 0 \\ 3 &amp; 5 &amp; 10 &amp; 14 \\ 2 &amp; 5 &amp; 5 &amp; 6 \end{array}\right) \left(\begin{array}{c}-5 \\ 1 \\ 1 \\ 0\end{array}\right) = \vector 0$$</div><p></p>
-</section><section vertical="true" lineno="852" class="slide " data-line="852" data-h="20" data-v="2">
+</section><section vertical="true" lineno="856" class="slide " data-line="856" data-h="20" data-v="2">
 <h1 class="mume-header" id="example-problem-3-2">Example Problem 3</h1>
 
 <p>So D, A are true. C is true because it&#x2019;s a homogeneous system. B is true because <span class="mathjax-exps">$A\vector x = 0 \implies A (t\vector x) = tA\vector x = 0$</span> which means <span class="mathjax-exps">$t\vector x$</span> is a solution for every <span class="mathjax-exps">$t$</span>. By process of elimination, E must be false.</p>
-</section></section><section><section lineno="856" class="slide " data-line="856" data-h="21" data-v="0">
+</section></section><section><section lineno="860" class="slide " data-line="860" data-h="21" data-v="0">
 <h1 class="mume-header" id="example-problem-4">Example Problem 4</h1>
 
-<p><img src="../../assets/problem4.png" alt="problem1"></p>
-</section><section vertical="true" lineno="860" class="slide " data-line="860" data-h="21" data-v="1">
+<p><img src="./assets/problem4.png" alt="problem1"></p>
+</section><section vertical="true" lineno="864" class="slide " data-line="864" data-h="21" data-v="1">
 <h1 class="mume-header" id="example-problem-4-1">Example Problem 4</h1>
 
-<p><img src="../../assets/problem4.png" alt="problem1"></p>
+<p><img src="./assets/problem4.png" alt="problem1"></p>
 <p>Note <span class="mathjax-exps">$N_{\frac{1}{2}}(x) = \theset{x}$</span>, so every singleton is open. Any subset of <span class="mathjax-exps">$\ZZ$</span> is a countable union of its singletons, so every subset of <span class="mathjax-exps">$\ZZ$</span> is open. The complement any set is one such subset, so every subset is clopen. The inverse image of any subset of <span class="mathjax-exps">$\RR$</span>  under any <span class="mathjax-exps">$f:\ZZ \to \RR$</span> is a subset of <span class="mathjax-exps">$\ZZ$</span>, which is open, so every such <span class="mathjax-exps">$f$</span> is continuous. So E.</p>
 </section></section>
       </div>
