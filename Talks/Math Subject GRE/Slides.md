@@ -553,9 +553,9 @@ a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac
 $$
   - Useful fact: 
   $$
-  a = 0 \mod n \iff a = 0 \mod p
+  a = 0 \mod n \iff a = 0 \mod p_i
   $$ 
-  for every distinct prime factor $p$ of $n$.
+  for every distinct prime factor $p_i$ of $n$.
 
 <!-- slide vertical=true -->
 ## Definitions
