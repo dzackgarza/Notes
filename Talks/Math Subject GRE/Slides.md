@@ -451,7 +451,7 @@ TFAE:
 - $\det(A) \neq 0$
 - The linear system $A\vector{x} = \vector{b}$ has a unique solution for every $b\ \in \RR^m$
 - The homogeneous system $A\vector{x} = 0$ has only the trivial solution $\vector{x} = 0$
-- $\rank(A) = \abs{W} = n$ 
+- $\rank(A) = \dim W = n$ 
   - i.e. $A$ is full rank
 - $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) =  = 0$
 
