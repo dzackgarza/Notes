@@ -293,7 +293,7 @@ Lines
 $$
 Ax + By + C = 0,~
 \vector x = \vector p + t\vector v,\\
-\vector x \in L \iff \inner{\vector x}{\vector n} = 0
+\vector x \in L \iff \inner{\vector x-\vector p}{\vector n} = 0
 $$
 
 Planes
