@@ -553,7 +553,7 @@ x\mid y \iff y = 0 \mod x \iff \exists c \suchthat y = xc
 $$
   - Useful fact:
   $$
-  x = 0 \mod a \iff a = 0 \mod p_i
+  x = 0 \mod a \iff a = 0 \mod p_i ~\forall i
   $$ 
 
 <!-- slide vertical=true -->
