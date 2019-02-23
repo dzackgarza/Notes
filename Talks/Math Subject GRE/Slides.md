@@ -549,7 +549,7 @@ $$
 
 - Divisibility and modular congruence:
 $$
-a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac 
+x\mid y \iff y = 0 \mod x \iff \exists c \suchthat y = xc 
 $$
   - Useful fact:
   $$
