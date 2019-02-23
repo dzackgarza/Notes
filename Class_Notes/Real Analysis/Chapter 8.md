@@ -59,7 +59,7 @@ $$
 $$
 
 ## Convergence
-This is especially helpful if we know $\exists M$ such that for every $\xi \in (x,c)$, we have $f^{(n)}(\xi) \leq M$, so the $n\dash$ the derivative of $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation, using the above expression.
+This is especially helpful if we know $\exists M$ such that for every $\xi \in (x,c)$, we have $f^{(n)}(\xi) \leq M$, so that the $n\dash$th derivative of $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation, using the above expression.
 
 Note that the book describes this in a slightly different way -- for the statement of Lagrange's theorem, they write $f(x) = p_n(x) + R_n(x)$, and simply substitute the above expression in for $R_n(x)$. It also weakens the hypothesis to $f^{(n)}(\xi) \leq M^n$, where the bound is allowed to depend on $n$ and is thus not uniform.
 
