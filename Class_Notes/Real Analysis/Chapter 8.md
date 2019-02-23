@@ -27,7 +27,7 @@ Some useful Taylor polynomials to recall:
 
 Note that in nice enough cases (like everything seen here), we can differentiate and integrate these series term by term. We can also use clever algebraic manipulations to get new series from known ones.
 
-For example, recall the geometric series $$\sum_{k=0}^\infty x^k = \frac 1 {1-x}$$ provided $\abs x < 1$, which can be derived by writing the Taylor series for $f(x) = \frac{1}{1-x}$ at the point $c=0$. 
+For example, recall the geometric series $$\sum_{k=0}^\infty x^k = \frac 1 {1-x},$$ which converges provided $\abs x < 1$. This can be derived by writing the Taylor series for $f(x) = \frac{1}{1-x}$ at the point $c=0$. 
 
 By making the substitution $x = 1-x$, we find that that $\frac 1 x = \sum(1-x)^k = \sum (-1)^k(x-1)^k$, which is thus the Taylor series for $f(x) = \frac 1 x$ at $c=1$.
 
