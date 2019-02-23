@@ -727,7 +727,7 @@ Suppose $\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$
 
 - Differences between prime and irreducible elements
   - Prime: $p \mid ab \implies \mid a \or p \mid b$
-  - Irreducible: 
+  - Irreducible: $x \text{ irreducible } \iff \not\exist a,b\in R^\times \suchthat p = ab$.
 - Various types of rings and their relations:
 <div style="height:20px"></div>
 $$ 
