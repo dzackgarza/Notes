@@ -61,7 +61,8 @@ $$
 In general, we have
 > The Lagrange Remainder Theorem
 > If $f$ is $n$ times differentiable on a neighborhood of a point $p$, say $N_\delta(p)$, then for all points $x$ in the deleted neighborhood $N_\delta(p) - \theset{p}$ , there exists a point $\xi$ strictly between $x$ and $p$ such that
-> sadqwetyuio\\\\$$
+$$
+f(x) = p_{n-1}(x) + \frac{f^{(n)}(x_0)(x-p)^n}{n!}
 $$
 
 ## Convergence
