@@ -604,7 +604,7 @@ Know some group and ring theoretic properties of $\ZZ/n\ZZ$
   - So we can solve equations with inverses: $ax = b \mod n \iff x = a^{-1}b \mod n$
 - But there will always be *some* units; in general,
 $$
-\abs{(\ZZ/n\ZZ)^*\times = \phi(n)
+\abs{(\ZZ/n\ZZ)^\times = \phi(n)
 $$
   and is cyclic when $n=1,2,4,p^k, 2p^k$
 
