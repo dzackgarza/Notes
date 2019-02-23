@@ -640,8 +640,9 @@ $$
 ## Theorems
 - Fermat's Little Theorem and Euler's Theorem
 $$
-a^p = a \mod p \implies a^{\phi(p)} = 1 \mod p \\
-p \not\mid a \implies a^{p-1} = 1 \mod p
+a^p = a \mod p \\
+p \not\mid a \implies a^{p-1} = 1 \mod p \\
+\text{and in general, } a^{\phi(p)} = 1 \mod p 
 $$
 
 - Wilson's Theorem
