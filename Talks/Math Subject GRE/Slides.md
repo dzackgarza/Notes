@@ -453,7 +453,7 @@ TFAE:
 - The homogeneous system $A\vector{x} = 0$ has only the trivial solution $\vector{x} = 0$
 - $\rank(A) = \abs{W} = n$ 
   - i.e. $A$ is full rank
-- $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) = 0$
+- $\mathrm{nullity}(A) \definedas \dim\mathrm{nullspace}(A) =  = 0$
 
 <!-- slide vertical=true -->
 ## Big List of Equivalent Properties
