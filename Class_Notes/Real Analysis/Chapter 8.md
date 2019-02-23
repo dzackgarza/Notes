@@ -73,7 +73,7 @@ x \in N_\varepsilon(c) \implies \abs{f^{(n)}(x)} \leq M^n
 $$
 then the Taylor expansion about $c$ converges on $N_\varepsilon(c)$.
 
-In other words, this condition mostly just requires that each of the derivatives of $f$ is bounded and don't grow too fast.
+In other words, this condition mostly just requires that each of the derivatives of $f$ is bounded and that they don't "grow too fast".
 
 Note that it is not necessarily the case that the Taylor series actually converges to $f$. If the derivatives are *uniformly* bounded, then this will happen, but a counterexample is given by
 $$
