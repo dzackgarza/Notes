@@ -162,7 +162,7 @@ Aim for 90th percentile in $< 2$ hours.
 	- L'Hopital's Rule (only for indeterminate forms $\frac 0 0, \frac \infty \infty$)
 		- For $\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$, let $L = \lim f^g \implies \ln L = \lim g \ln f$
 	- Squeeze theorem
-	- Expand in Taylor series at $a$
+	- Take Taylor expansion at $a$
 	- Monotonic + bounded (for sequences)
   
 <!-- slide vertical=true -->
