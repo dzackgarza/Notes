@@ -544,7 +544,7 @@ for each eigenvalue/eigenvector pair $(\lambda_i, \vector v_i)$.
 ## Definitions
 -  The fundamental theorem of arithmetic: 
 $$
-a\in\mathbb Z \implies a = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}
+n\in\mathbb Z \implies n = \prod_{i=1}^n p_i^{k_i}, \quad p_i \text{ prime}
 $$
 
 - Divisibility and modular congruence:
@@ -553,7 +553,7 @@ x\mid y \iff y = 0 \mod x \iff \exists c \suchthat y = xc
 $$
   - Useful fact:
   $$
-  x = 0 \mod a \iff x = 0 \mod p_i^{k_i} ~\forall i
+  x = 0 \mod n \iff x = 0 \mod p_i^{k_i} ~\forall i
   $$
   *(Follows from the Chinese remainder theorem since all of the $p_i^{k_i}$ are coprime)*
 
