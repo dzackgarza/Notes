@@ -553,9 +553,8 @@ a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac
 $$
   - Useful fact:
   $$
-  x = 0 \mod a \iff a = 0 \mod p_i
+  x = 0 \mod a \iff \forall i,~ a = 0 \mod p_i
   $$ 
-  for every $i$.
 
 <!-- slide vertical=true -->
 ## Definitions
