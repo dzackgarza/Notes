@@ -69,7 +69,7 @@ There is also a nice theorem that provides a sufficient condition for when this 
 > **Theorem:** A Sufficient Condition for Convergence of a Taylor Series
 Given a point $c$ and some $\varepsilon$, if $f \in C^\infty(I)$ and there exists an $M$ such that 
 $$
-x \in N_\varepsilon(c) \implies \abs{f^{(n)}(c)} \leq M^n
+x \in N_\varepsilon(c) \implies \abs{f^{(n)}(x)} \leq M^n
 $$
 then the Taylor expansion about $c$ converges on $N_\varepsilon(c)$.
 
