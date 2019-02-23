@@ -553,7 +553,7 @@ a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac
 $$
   - Useful fact:
   $$
-  a = 0 \mod n \iff a = 0 \mod p_i
+  x = 0 \mod a \iff a = 0 \mod p_i
   $$ 
   for every $i$.
 
