@@ -222,7 +222,7 @@ There are 6 major tests at our disposal:
   - You should know some examples of series that converge and diverge to compare to.
 - **Ratio Test**
 $$
-R =\limsup_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
+R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
 $$
   - $R < 1$: absolutely convergent
   - $R > 1$: divergent
