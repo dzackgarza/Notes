@@ -742,11 +742,7 @@ $$
 - Properties of Metrics and Metric Spaces
 - The Cauchy-Schwarz Inequality
 - Definitions of Sequences and Series
-- Testing Convergence of a Series:
-	- Integral Test
-	- Ratio Test
-	- Root Test
-	- $p$ Test
+- Testing Convergence of sequences and series
 - Cauchy sequences and completeness
 - Commuting limiting operations:
 	- $[\frac{\partial}{\partial x}, \int dx]$
