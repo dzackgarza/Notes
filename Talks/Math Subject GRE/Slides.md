@@ -555,7 +555,6 @@ $$
   $$
   x = 0 \mod a \iff x = 0 \mod p_i^{k_i} ~\forall i
   $$
-  (Note: this is only true for primes $p_i$, not necessarily the factors $p_i^{k_i}$)
 
 <!-- slide vertical=true -->
 ## Definitions
