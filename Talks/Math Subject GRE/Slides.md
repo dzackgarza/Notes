@@ -551,7 +551,8 @@ $$
 $$
 a\mid b \iff b = 0 \mod a \iff \exists c \suchthat b = ac 
 $$
-  - Useful fact: 
+  - Useful fact:
+  If $n = \prod p_i_^{k_i}$
   $$
   a = 0 \mod n \iff a = 0 \mod p_i
   $$ 
