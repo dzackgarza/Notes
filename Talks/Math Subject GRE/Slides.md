@@ -822,11 +822,11 @@ C, because $\ZZ-\theset{0}$ lacks inverses
 
 <!-- slide -->
 # Example Problem 2
-![problem1](/assets/problem2.png)
+![problem1](./assets/problem2.png)
 
 <!-- slide vertical=true-->
 # Example Problem 2
-![problem1](/assets/problem2.png)
+![problem1](./assets/problem2.png)
 $$
 L = \lim _ { ( a , b ) \rightarrow 0 } \frac { ( a - b i ) ^ { 2 } } { ( a + b i ) ^ { 2 } } = \lim _ { ( a , b ) \rightarrow 0 } \frac { a ^ { 2 } - b ^ { 2 } - 2 a b i } { a ^ { 2 } - b ^ { 2 } + 2 a b i } \\
 a = 0 \implies L = 1 \\
@@ -837,11 +837,11 @@ So E, because the limit needs to be path-independent.
 
 <!-- slide -->
 # Example Problem 3
-![problem1](/assets/problem3.png)
+![problem1](./assets/problem3.png)
 
 <!-- slide vertical=true-->
 # Example Problem 3
-![problem1](/assets/problem3.png)
+![problem1](./assets/problem3.png)
 
 Don't row-reduce or invert! Just one computation
 $$\left(
