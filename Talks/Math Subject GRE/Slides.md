@@ -575,7 +575,7 @@ $$
 \end{aligned}
 $$
 
-Back-substitute to write $ax+by = \mathbf{r_{k+2}} = (a,b)$.
+Back-substitute to write $ax+by = \mathbf{r_{k+2}} = \gcd(a,b)$.
 
 (Also works for polynomials!)
 
