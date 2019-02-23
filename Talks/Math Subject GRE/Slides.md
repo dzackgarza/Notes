@@ -633,7 +633,7 @@ Seems symbolically complex, but actually an easy algorithm to carry out by hand.
 
 Ring-theoretic interpretation: let $N = \prod n_i$, then
 $$
-\gcd(i,j) = 1 \forall (i,j)  \implies \ZZ_N \cong \bigoplus \ZZ_{n_i}
+\gcd(i,j) = 1 ~~\forall (i,j)  \implies \ZZ_N \cong \bigoplus \ZZ_{n_i}
 $$
 
 <!-- slide vertical=true -->
