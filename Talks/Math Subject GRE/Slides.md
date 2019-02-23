@@ -163,7 +163,7 @@ Aim for 90th percentile in $< 2$ hours.
 		- For $\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$, let $L = \lim f^g \implies \ln L = \lim g \ln f$
 	- Squeeze theorem
 	- Expand in Taylor series at $a$
-	- Monotonic + bounded
+	- Monotonic + bounded (for sequences)
   
 <!-- slide vertical=true -->
 ## Use Simple Techniques
