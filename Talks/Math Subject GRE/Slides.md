@@ -631,7 +631,7 @@ Seems symbolically complex, but actually an easy algorithm to carry out by hand.
 <!-- slide vertical=true -->
 ## Chinese Remainder Theorem
 
-Ring-theoretic interpretation
+Ring-theoretic interpretation: let $n = \prod p_i$
 $$
 
 $$
