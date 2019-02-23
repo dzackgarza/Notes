@@ -389,7 +389,7 @@ Just use Taylor expansions.
 
 ### Single variable case:
 $$
-f(p) = f(p) + f'(p)(x-p) \\+ f''(p)(x-a)^2 + o(x^3)
+f(p) = f(p) + f'(p)(x-p) \\+ f''(p)(x-a)^2 + O(x^3)
 $$
 
 <div style="height:100px"></div>
