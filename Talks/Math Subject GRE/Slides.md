@@ -778,6 +778,19 @@ $$
   - Useful for constructing counterexamples to statements
 
 <!-- slide -->
+# Topics: Complex Analysis
+<!-- slide vertical=true -->
+# General Concepts
+- $n\dash$th roots:
+$$e^{\frac{ki}{2\pi n}}, \qquad k = 1, 2, \cdots n-1$$
+- The Residue theorem:
+$$
+\oint_C f(z)~dz = 2\pi i \sum_k \mathrm{Res}(f, z_k)
+$$
+  - Exams often include one complex integral
+  - Need a number of other theorems for actually computing residues
+  
+<!-- slide -->
 # Topics: Discrete Mathematics + Combinatorics
 <!-- slide vertical=true -->
 ## General Concepts
