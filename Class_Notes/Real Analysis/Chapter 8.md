@@ -75,11 +75,4 @@ then the Taylor expansion about $c$ converges on $N_\varepsilon(c)$.
 
 In other words, this condition mostly just requires that each of the derivatives of $f$ is bounded and that they don't "grow too fast" as $n$ increases.
 
-Note that it is not necessarily the case that the Taylor series actually converges to $f$. If the derivatives are *uniformly* bounded, then this will happen, but a counterexample is given by
-$$
-f(x) = e^{-\frac{1}{x^2}}.
-$$
-
-In this example, $f$ is smooth, so any Taylor polynomial $T_n(x, 0)$ centered at zero can be written. However, it can be shown that $T_n(x, 0) \rightrightarrows 0$.
-
 
