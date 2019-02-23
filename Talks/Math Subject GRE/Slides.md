@@ -309,7 +309,7 @@ Distances to lines/planes: project onto orthogonal complement.
 ## Tangent Planes/Linear Approximations
 Let $S \subseteq \RR^3$ be a surface. Generally need a point $\vector{p} \in S$ and a normal $\vector{n}$. 
 
-**Key Insight: The gradient of a function is normal to its level sets!**
+**Key Insight: The gradient of a function is normal to its level sets.**
 
 $$
 \text{Case 1: } S = \theset{[x,y,z] \in \RR^3 \mid f(x,y, z) = 0}
