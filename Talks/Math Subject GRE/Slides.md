@@ -629,6 +629,14 @@ $$
 Seems symbolically complex, but actually an easy algorithm to carry out by hand.
 
 <!-- slide vertical=true -->
+## Chinese Remainder Theorem
+
+Ring-theoretic interpretation
+$$
+
+$$
+
+<!-- slide vertical=true -->
 ## Theorems
 - Fermat's Little Theorem and Euler's Theorem
 $$
