@@ -726,6 +726,7 @@ Suppose $\abs{G} = n = \prod_{i=1}^m p_i^{k_i}$
   - (Ascending chain condition)
 
 - Differences between prime and irreducible elements
+  - Prime: $p \mid ab \implies \mid a \or p \mid b$
 - Various types of rings and their relations:
 <div style="height:20px"></div>
 $$ 
