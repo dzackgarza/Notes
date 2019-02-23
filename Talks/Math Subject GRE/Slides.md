@@ -278,9 +278,9 @@ $$
 - Equations of lines, planes, parameterized curves
   - And finding intersections
 - Multivariable Taylor series
-- Computing linear approximations
-- Lagrange Multipliers
+  - Computing linear approximations
 - Multivariable optimization
+  - Lagrange Multipliers
 - Arc lengths of curves
 - Line/surface/flux integrals
 - Green's Theorem
