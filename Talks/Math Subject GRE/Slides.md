@@ -703,7 +703,7 @@ Cauchy's Theorem
 - If $\abs{G} = n = \prod p_i^{k_i}$, then for each $i$ there exists a subgroup $H$ of order $p_i$.
 
 The Sylow Theorems
-- If $\abs{G} = n = \prod p_i^{k_i}$, for each $ii$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
+- If $\abs{G} = n = \prod p_i^{k_i}$, for each $i$ and each $1 \leq k_j \leq k_i$ then there exists a subgroup $H$ of order $p_i^{k_j}$.
 
 <!-- slide vertical=true -->
 ## Classification of Abelian Groups
