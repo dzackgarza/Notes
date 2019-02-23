@@ -465,7 +465,6 @@ Let $A$ be an $m\times n$ matrix. TFAE:
 - $\left(\mathrm{colspace}A\right)^\perp = \left(\mathrm{rowspace}A^T\right)^\perp = \theset{\vector 0}$
 - Zero is not an eigenvalue of $A$.
 - $A$ has $n$ linearly independent eigenvectors
-- The rows of $A$ are coplanar.
 
 <!-- slide vertical=true -->
 ## Various Other Topics
