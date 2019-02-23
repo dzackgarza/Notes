@@ -443,7 +443,7 @@ $$
 
 <!-- slide vertical=true -->
 ## Big List of Equivalent Properties
-Let $A$ be an $m\times n$ matrix. TFAE:
+Let $A$ be an $n\times n$ matrix. TFAE:
 - $A$ is invertible and has a unique inverse $A^{-1}$
 - $A^T$ is invertible
 - $\det(A) \neq 0$
