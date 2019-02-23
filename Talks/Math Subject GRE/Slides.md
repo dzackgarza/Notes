@@ -631,9 +631,9 @@ Seems symbolically complex, but actually an easy algorithm to carry out by hand.
 <!-- slide vertical=true -->
 ## Chinese Remainder Theorem
 
-Ring-theoretic interpretation: let $n = \prod p_i$
+Ring-theoretic interpretation: let $N = \prod n_i$, then
 $$
-
+\forall (i,j), \gcd(i,j) = 1 \implies \ZZ_N \cong \bigoplus \ZZ_{n_i}
 $$
 
 <!-- slide vertical=true -->
