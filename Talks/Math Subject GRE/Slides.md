@@ -812,11 +812,11 @@ $$(x+y)^n = \sum_{k=0}^n {n\choose k}x^ky^{n-k}$$
 
 <!-- slide -->
 # Example Problem 1
-![problem1](/assets/problem1.png)
+![problem1](./assets/problem1.png)
 
 <!-- slide vertical=true-->
 # Example Problem 1
-![problem1](/assets/problem1.png)
+![problem1](./assets/problem1.png)
 C, because $\ZZ-\theset{0}$ lacks inverses 
 (Would need to extend to $\QQ$)
 
