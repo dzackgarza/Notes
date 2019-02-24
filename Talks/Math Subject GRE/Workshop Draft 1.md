@@ -1,31 +1,4 @@
 
-- Purpose of the exam
-- Who should take it, when, and why
-
-# Logistics and Technicalities
-- Usually offered 3 times per year
-	- Around March, early September, and late October
-	- Grad apps are usually due in early December, so you have 2-3 chances
-	- Registration deadlines are usually 1-2 months before actual test date.
-	- Might have to travel to testing center: for San Diego, SDSU.
-	- Everything is done online through [ets.org](ets.org)
-- Cost:
-	- About $200 per exam
-	- Fee waivers available that cut it down to $100 per exam
-		- Easy to qualify, but requires getting form from website, getting some verification paperwork from financial aid
-		- Takes something like 5-6 weeks to process, if not longer. Start early!
-- Structure:
-	- Multiple choice (5 choices)
-	- 66 questions
-	- 170 minutes (2h 50m)
-	- Leaving around 154 seconds (~2.5 minutes) per problem
-	- Final score: $\Sigma \left(\indicator[\text{correct}] - \frac{1}{4}\indicator[\text{incorrect}]\right)$
-	- Questions left blank are considered incorrect
-- Exam Day
-	- Must bring photo ID. Don't forget!!
-	- Not able to bring phone, backup, etc.
-	- Must have confirmation/registration number or printed copy of email they send you near the exam date.
-	- No restroom breaks!!
 
 # Resources and References
 - Garrity, [All the Mathematics You Missed [ But Need to Know for Graduate School ] ](https://www.amazon.com/All-Mathematics-You-Missed-Graduate/dp/0521797071)
