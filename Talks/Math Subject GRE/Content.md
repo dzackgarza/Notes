@@ -107,8 +107,6 @@
 - The Wronskian
 - Fourier and Laplace Transforms
 
----
-
 ## Linear Algebra
 - Systems of Linear Equations
 	- Number of possible solutions
