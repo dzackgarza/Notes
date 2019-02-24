@@ -258,7 +258,16 @@
 
 ---
 
-
+## Linear Algebra
+- Systems of Linear Equations
+	- Number of possible solutions
+- Row-reducing algorithm / Gaussian Elimination / RREF
+- Properties of determinant and trace
+- Computing nullspace, rowspace, columnspace
+	- As well as nullity/rank
+- Finding eigenvalues and the eigenspace
+- Jordan Canonical Form
+- Conditions for invertibility
 
 ## Complex Analysis
 - Complex roots and branch cuts
