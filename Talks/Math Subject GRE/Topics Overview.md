@@ -1,7 +1,7 @@
 # Important Topics by Course
 
 ## Pre-Calculus or Proof Fundamentals
-- Areas:
+- Areas and properties of:
 	- Circles
 	- Ellipses
 	- Cylinders
