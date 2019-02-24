@@ -34,6 +34,32 @@
 - Taylor Series
 - Linear Approximations
 
+## Calculus
+### Differential
+- Epsilon-Delta Definition of Limit
+- Computing Limits
+	- Elementary limit properties (sum, product, quotient)
+	- L'Hopital's Rule
+- Limit definition of continuity
+- Limit definition of derivative
+- Computing derivatives
+	- Elementary/Known Derivatives
+	- $x^n, e^x, \sin, \cos,$ etc
+- Mean Value Theorem
+- Extreme Value Theorem
+- Rolle's Theorem
+- Implicit Differentiation
+- Related Rates
+- Single Variable Optimization
+	- See optimization section
+- Taylor Series
+	$$f_a(x) = \sum \frac{1}{k!} f^{(k)}(a)(x-a)$$
+- Linear Approximation
+	$$f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2$$
+- Common Derivatives: #TODO
+	- $\frac{d}{dx} x^c = ?$
+- Limit definition of $f''(a)$
+
 
 ### Integral
 - Riemann Sum Definition of the Integral
@@ -156,31 +182,7 @@
 
 ---
 
-## Calculus
-### Differential
-- Epsilon-Delta Definition of Limit
-- Computing Limits
-	- Elementary limit properties (sum, product, quotient)
-	- L'Hopital's Rule
-- Limit definition of continuity
-- Limit definition of derivative
-- Computing derivatives
-	- Elementary/Known Derivatives
-	- $x^n, e^x, \sin, \cos,$ etc
-- Mean Value Theorem
-- Extreme Value Theorem
-- Rolle's Theorem
-- Implicit Differentiation
-- Related Rates
-- Single Variable Optimization
-	- See optimization section
-- Taylor Series
-	$$f_a(x) = \sum \frac{1}{k!} f^{(k)}(a)(x-a)$$
-- Linear Approximation
-	$$f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2$$
-- Common Derivatives: #TODO
-	- $\frac{d}{dx} x^c = ?$
-- Limit definition of $f''(a)$
+
 
 ### Integral
 - Riemann Sum Definition of the Integral
