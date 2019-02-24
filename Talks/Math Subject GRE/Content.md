@@ -92,7 +92,7 @@
 	$$f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2 + o(x^3)$$
 	$$f(\vector p) \approx f(\vector p) + \nabla f(\vector p)(\vector x - \vector a) + (\vector x - \vector p )^T H_f(p)(\vector x - \vector p) + o(\norm{\vector x - \vector p}^3)$$
 - Single variable
-	- Second derivative test #TODO
+	- Second derivative test
 - Multivariable
 	- Eigenvalues of Hessian
 		- Negative definite: Min
