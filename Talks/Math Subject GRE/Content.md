@@ -10,6 +10,18 @@
 	- ?
 - Functions, relations, orders
 
+## Pre-Calculus or Proof Fundamentals
+- Areas and properties of:
+	- Circles
+	- Ellipses
+	- Cylinders
+- Geometry:
+	- The sum of interior angles in an $n-$gon is $180(n-2)$; the sum of exterior angles is 360.
+- Functions, relations
+	- A relation $\sim \subset X \cross Y$ is not a function if $\exists x \in X$ and $\exists y_1, y_2 \in Y$ such that $x \sim y_1$ and $x \sim y_2$ (so $\sim$ is many-to-one)
+	- Injectivity, Surjectivity
+- Law of Cosines: $$a^2 = b^2 + c^2 - 2bc\cos(\theta_a)$$
+
 ## Calculus
 ### Differential
 - Epsilon-Delta Definition of Limit
