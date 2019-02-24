@@ -37,7 +37,6 @@
 - Linear Approximation
 	$$f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2$$
 - Common Derivatives:
-	- And some uncommon ones, e.g. $\frac{d}{dx} x^c$
 - Limit definition of $f''(a)$
 
 
