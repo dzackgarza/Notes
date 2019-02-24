@@ -36,7 +36,7 @@
 	$$f_a(x) = \sum \frac{1}{k!} f^{(k)}(a)(x-a)$$
 - Linear Approximation
 	$$f(p) \approx f(p) + f'(p)(x-p) + f''(p)(x-a)^2$$
-- Common Derivatives: #TODO
+- Common Derivatives:
 	- $\frac{d}{dx} x^c = ?$
 - Limit definition of $f''(a)$
 
