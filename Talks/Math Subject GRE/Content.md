@@ -1,16 +1,6 @@
 # Content
 
-## Pre-Calculus
-- Areas:
-	- Circles
-	- Ellipses
-	- Cylinders
-- Law of Cosines: $a^2 = b^2 + c^2 - 2bc\cos(\theta_a)$
-- Geometry:
-	- ?
-- Functions, relations, orders
-
-## Pre-Calculus or Proof Fundamentals
+## Pre-Calculus and Proof Fundamentals
 - Areas and properties of:
 	- Circles
 	- Ellipses
@@ -21,6 +11,8 @@
 	- A relation $\sim \subset X \cross Y$ is not a function if $\exists x \in X$ and $\exists y_1, y_2 \in Y$ such that $x \sim y_1$ and $x \sim y_2$ (so $\sim$ is many-to-one)
 	- Injectivity, Surjectivity
 - Law of Cosines: $$a^2 = b^2 + c^2 - 2bc\cos(\theta_a)$$
+- Truth tables
+- Contrapositive, 
 
 ## Calculus
 ### Differential
