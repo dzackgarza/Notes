@@ -41,10 +41,6 @@
 - Limit definition of $f''(a)$
 
 
-
-
-
-
 ### Integral
 - Riemann Sum Definition of the Integral
 - Fundamental Theorem of Calculus:
