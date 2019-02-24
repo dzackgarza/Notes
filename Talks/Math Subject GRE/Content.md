@@ -18,26 +18,6 @@
 ### Differential
 - Epsilon-Delta Definition of Limit
 - Computing Limits
-	- Elementary rules (sum, product, quotient)
-	- L'Hopital's Rule
-- Limit definition of continuity
-- Limit definition of derivative
-- Computing derivatives
-	- Elementary/Known Derivatives
-	- $x^n, e^x, \sin, \cos,$ etc
-- Mean Value Theorem
-- Extreme Value Theorem
-- Rolle's Theorem
-- Implicit Differentiation
-- Related Rates
-- Single Variable Optimization
-- Taylor Series
-- Linear Approximations
-
-## Calculus
-### Differential
-- Epsilon-Delta Definition of Limit
-- Computing Limits
 	- Elementary limit properties (sum, product, quotient)
 	- L'Hopital's Rule
 - Limit definition of continuity
@@ -59,6 +39,7 @@
 - Common Derivatives: #TODO
 	- $\frac{d}{dx} x^c = ?$
 - Limit definition of $f''(a)$
+
 
 
 ### Integral
