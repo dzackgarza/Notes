@@ -12,7 +12,7 @@
 	- Injectivity, Surjectivity
 - Law of Cosines: $$a^2 = b^2 + c^2 - 2bc\cos(\theta_a)$$
 - Truth tables
-- Contrapositive, 
+- Contrapositive, negating quantifiers, etc
 
 ## Calculus
 ### Differential
