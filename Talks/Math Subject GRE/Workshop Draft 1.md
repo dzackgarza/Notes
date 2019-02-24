@@ -1,14 +1,4 @@
 
-# General Strategy Notes
-- Studying
-	- Start early. Like *really* early, like at least 6 months before the exam.
-	- Spaced repetition:
-		- There are plenty of definitions, formulas and equations that are just worth memorizing outright:
-			- Examples: The definition of a connected space, $\frac{d}{dx} \sin(x)$, $\int x^n dx$, solutions to ODEs of the form $ay'' + by' + cy = 0$, etc
-		- But it's also helpful to have some methods and proofs memorized
-			- Examples: Techniques for solving the nonlinear systems arising from Lagrange multipliers, the proof the differentiability implies continuity, etc
-		- Flashcard programs like Anki are great for this, also just solving problems and then revisiting them regularly is perfectly sufficient to get them into your working memory.
-	- A recommendation - just pick up Stewart's Calculus and go through the entire thing. 50% of the exam is Calculus, so this pays off! Use the chapter reviews as a diagnostic, use a solutions manual or Wolfram to check your answers, and drill into sections that you're weak in.
 
 - **Speed**
 	- With 2.5 minutes per question, being quick is absolutely vital.
