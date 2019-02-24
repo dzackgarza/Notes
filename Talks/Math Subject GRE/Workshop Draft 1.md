@@ -1,16 +1,4 @@
 
-
-# Resources and References
-- Garrity, [All the Mathematics You Missed [ But Need to Know for Graduate School ] ](https://www.amazon.com/All-Mathematics-You-Missed-Graduate/dp/0521797071)
-- Leduc / The Princeton Review, [Cracking the Math GRE Subject Test](https://www.amazon.com/Cracking-GRE-Mathematics-Subject-Test/dp/0375429727)
-	- Note: ETS corporate headquarters is in Princeton, so.
-- Official Practice Exams
-	- GR 1268
-	- GR 0568
-	- GR 9367
-	- GR 8767
-	- GR 9768
-
 # General Strategy Notes
 - Studying
 	- Start early. Like *really* early, like at least 6 months before the exam.
