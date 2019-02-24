@@ -102,11 +102,3 @@
 
 @import "Topics Overview.md"
 
-# Advice From Others
-> Some unsolicited advice: Calculus I takes up ~25% and Calculus II, III takes up another ~25%. Calculus I should be doable. The integrals will usually yield to tricks and not brute force e.g. rationalizing denominator, factorization, partial fractions, and even symmetry. Know your small angle approximations! Calculus II and III may seem scary, but it isn't. Expect simple Lagrange multipliers, arc length of curves, Green's theorem, divergence theorem. (Stokes' is unlikely.) For complex analysis, the Cauchy integral formula and residue theorem are sufficient (~3 questions). For differential equations, refer to the chapter in Princeton Review (~3 questions).
-
-> Linear algebra takes up about 10%. Abstract algebra takes up another 5-10%. The scope is quite varied. Questions on the Jordan canonical form have appeared before, but don't waste your time if you have not learnt it before. Focus on systems of linear equations. Be familiar with the invertibility conditions and consequences. Be familiar with the properties of det and tr and how to compute them. The abstract algebra questions will cover groups, rings and fields. Preparing for this is not like preparing for calculus -- I feel that you should just memorize the basic definitions and results and let your skill do the rest in the exam.
-
-> The remaining ~35% of questions do not belong to any of the above categories. The topics covered include basic number theory (congruences, Fermat's Little Theorem), plane geometry (high school level), polynomials, foundations (functions, relations, orders). My exam had a problem on Cauchy-Schwarz.
-
-> A few other topics in the "Others" category: Combinatorics. Permutations, combinations, inclusion-exclusion. Derangement-like questions may appear. Statistics. Mine had a question on the standard deviation of the addition of two normal distributions. Topology. Arguably the hardest. If you have taken a topology class then go through the basic definitions, results, and proofs of some of the results. The rest depends on your skill.
