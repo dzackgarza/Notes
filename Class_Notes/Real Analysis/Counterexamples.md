@@ -36,7 +36,7 @@ $$
 
 ## Dirichlet with a Differentiable Point
 $$
-f ( x ) = \begin{cases}
+f ( x ) = x^2~\indicator{\QQ} = \begin{cases}
 x^2, & x\in \QQ \\
 0, & \text{else}
 \end{cases}
