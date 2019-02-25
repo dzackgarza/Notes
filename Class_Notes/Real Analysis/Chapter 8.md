@@ -87,7 +87,7 @@ $$
 \frac{1}{(n+1)!}f^{(n+1)}(\xi)\abs{x-c}^{n+1} \leq \frac{1}{(n+1)!}M^n\abs{x-c}^{n+1} = c_n,
 $$
 
-which is just some constant that only depends on $n$. We generally look for a nice enough $M^n$ so that $c_n \to 0$, which 
+which is just some constant that only depends on $n$. We generally look for a nice enough $M^n$ so that $c_n \to 0$, which means the remainder goes to zero and thus the Taylor series for $f$ will indeed converge to $f$ in the limit.
 
 There is also a nice theorem that provides a sufficient condition for when this error term converges to zero:
 
