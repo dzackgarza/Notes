@@ -4,7 +4,6 @@
 \documentclass[11pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 
-
 %These tell TeX which packages to use.
 \usepackage{array}
 \usepackage{mathtools}
@@ -59,21 +58,13 @@
 \setlength{\textwidth}{6.5in}
 \pagestyle{empty}
 
-
 % Pandoc-specific fixes
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-% Tikz
+% Tikz and Graphics
 \usepackage{tikz, tikz-3dplot}
 \usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, decorations.markings}
 \tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
 \usepackage{pgfplots}
 \usepackage[inline]{asymptote}
-%\usepackage[active,pdftex,tightpage]{preview}
-%\PreviewEnvironment[]{tikzpicture}
-%\PreviewEnvironment[]{pgfpicture}
-%\PreviewEnvironment[]{asy}
-%\DeclareSymbolFont{symbolsb}{OMS}{cmsy}{m}{n}
-%\SetSymbolFont{symbolsb}{bold}{OMS}{cmsy}{b}{n}
-%\DeclareSymbolFontAlphabet{\mathcal}{symbolsb}
