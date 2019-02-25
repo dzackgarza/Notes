@@ -1,0 +1,813 @@
+<!DOCTYPE html><html><head>
+      <title>General Notes</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"displayMath":[["$$","$$"],["\\[","\\]"]],"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true,"processEnvironments":false},"TeX":{"extensions":["noUndefined.js","autoload-all.js","AMSmath.js","AMSsymbols.js"],"equationNumbers":{"autoNumber":"AMS"},"Macros":{"NN":"{\\mathbb{N}}","RR":"{\\mathbb{R}}","ZZ":"{\\mathbb{Z}}","CC":"{\\mathbb{C}}","QQ":"{\\mathbb{Q}}","RP":"{\\mathbb{RP}}","CP":"{\\mathbb{CP}}","HP":"{\\mathbb{HP}}","OP":"{\\mathbb{OP}}","FF":"{\\mathbb{F}}","PP":"{\\mathbb{P}}","AA":"{\\mathbb{A}}","MM":"{\\mathbb{M}}","TT":"{\\mathbb{T}}","SS":"{\\mathbb{S}}","KK":"{\\mathbb{K}}","Gr":"{\\text{Gr}}","GL":"{\\text{GL}}","SL":"{\\text{SL}}","char":"{\\mathbb{1}}","vector":["{\\mathbf{ {#1} }}",1],"abs":["{\\left\\lvert #2 \\right\\rvert_{\\text{#1}}}",2,""],"Aut":"{\\text{Aut}}","del":"{\\partial}","too":["{\\xrightarrow{#1}}",1,""],"im":"{\\text{im}~}","homotopic":"\\simeq","into":"\\to","theset":["\\{{#1}\\}",1],"norm":["{{\\lVert}{#1}{\\rVert}}",1],"cross":"\\times","definedas":"\\mathrel{\\vcenter{:}}=","surjects":"\\twoheadrightarrow","onto":"\\twoheadrightarrow","injects":"\\hookrightarrow","id":"\\text{id}","restrictionof":["{\\left.{#1}\\right|_{#2}}",2],"intersect":"\\bigcap","union":"\\bigcup","mapsvia":["{\\xrightarrow{#1}}",1],"coker":"\\operatorname{coker}","rank":"\\operatorname{rank}","tensor":"\\otimes","semidirect":"\\rtimes","pt":"\\{\\text{pt}\\}","and":"{\\text{ and }}","or":"{\\text{ or }}","bd":"{\\del}","wait":"{\\,\\cdot\\,}","selfmap":"{\\circlearrowleft}","tor":"{\\text{Tor}}","ext":"{\\text{Ext}}","hom":"{\\text{Hom}}","actson":"{\\curvearrowright}","actsonl":"{\\curvearrowleft}","disjoint":"{\\coprod}","qed":"{\\tag*{$\\blacksquare$}}","endef":"{\\tag*{$\\triangleleft$}}","dash":"{\\hbox{-}}","bigast":"{\\mathop{\\Large \\ast}}","from":"{\\leftarrow}","covers":"{\\twoheadrightarrow_p}","inner":["{\\langle {#1}, {#2} \\rangle}",2],"indicator":["{\\unicode{x1D7D9}\\left[#1\\right]}",1],"equalsbecause":["{\\stackrel{\\mbox{$\\tiny{\\text{ #1 }}$}}{=}}",1],"conjugate":["{\\overline{{#1}}}",1],"strike":["{\\enclose{horizontalstrike}{#1}}",1],"realpart":["{\\mathcal{Re}({#1})}",1],"imaginarypart":["{\\mathcal{Im}({#1})}",1],"dd":["{\\frac{\\partial #1}{\\partial #2}}",2],"normal":"{~\\trianglelefteq~}","rotate":["{\\style{display: inline-block; transform: rotate(#1deg)}{#2}}",2,"90"],"stirling":["\\genfrac\\{\\}{0pt}{}{#1}{#2}",2],"thevector":["{\\left[ {#1} \\right]}",1],"th":["{\\text{th}}",0],"spec":["{\\mathrm{Spec}}",0],"suchthat":["{~\\backepsilon ~}",0],"divides":["{~\\mid ~}",0],"uniformlyconverges":["\\rightrightarrows",0]}},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+.markdown-preview.markdown-preview {
+  /*.reveal .slides {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*// overflow-y: auto !important;*/
+  /*}*/
+}
+.reveal section img {
+  display: block;
+  margin: auto;
+  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <p>GRE Workshop</p>
+<p>First Draft. January 19, 2019.</p>
+<p>Imports <a href="http://content.md">content.md</a></p>
+<h1 class="mume-header" id="what-is-the-math-gre">What is the Math GRE?</h1>
+
+<ul>
+<li>Difference between General GRE and Subject GRE
+<ul>
+<li>Content of Math section of general GRE (Quantitative portion):
+<ul>
+<li>Euclidean Geometry, basic Algebra (exponents, factoring, etc), Arithmetic (Estimation, ratios), Data Analysis (Graphs, tables)</li>
+<li>Essentially everything before a Calculus class</li>
+</ul>
+</li>
+<li>Content of Subject GRE:
+<ul>
+<li>50% Calculus (Single and Multivariable, ODEs)</li>
+<li>25% Algebra (Linear Algebra, Abstract Algebra, &#x2018;Number Theory&#x2019;)</li>
+<li>25% Mixed upper division stuff (Real Analysis, Combinatorics, Probability, Point-Set Topology)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Purpose of the exam</li>
+<li>Who should take it, when, and why</li>
+</ul>
+<h1 class="mume-header" id="logistics-and-technicalities">Logistics and Technicalities</h1>
+
+<ul>
+<li>Usually offered 3 times per year
+<ul>
+<li>Around March, early September, and late October</li>
+<li>Grad apps are usually due in early December, so you have 2-3 chances</li>
+<li>Registration deadlines are usually 1-2 months before actual test date.</li>
+<li>Might have to travel to testing center: for San Diego, SDSU.</li>
+<li>Everything is done online through <a href="ets.org">ets.org</a></li>
+</ul>
+</li>
+<li>Cost:
+<ul>
+<li>About $200 per exam</li>
+<li>Fee waivers available that cut it down to $100 per exam
+<ul>
+<li>Easy to qualify, but requires getting form from website, getting some verification paperwork from financial aid</li>
+<li>Takes <strong>at least</strong> 6 weeks to process, if not longer. Start early!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Structure:
+<ul>
+<li>Multiple choice (5 choices)</li>
+<li>66 questions</li>
+<li>170 minutes (2h 50m)</li>
+<li>Leaving around 154 seconds (~2.5 minutes) per problem</li>
+<li>Final score: simply a sum of how many correct answers you have. Given as percentile based on cohort taking the exam on the same date.</li>
+</ul>
+</li>
+<li>Exam Day
+<ul>
+<li>Must bring photo ID. Don&#x2019;t forget!!</li>
+<li>Not able to bring phone, backup, etc.</li>
+<li>Must have confirmation/registration number or printed copy of email they send you near the exam date.</li>
+<li>No restroom breaks!!</li>
+</ul>
+</li>
+</ul>
+<h1 class="mume-header" id="references">References</h1>
+
+<ul>
+<li>Garrity, <a href="https://www.amazon.com/All-Mathematics-You-Missed-Graduate/dp/0521797071">All the Mathematics You Missed (But Need to Know for Graduate School)</a></li>
+<li>The Princeton Review, <a href="https://www.amazon.com/Cracking-GRE-Mathematics-Subject-Test/dp/0375429727">Cracking the Math GRE Subject Test</a>
+<ul>
+<li>Note: ETS corporate headquarters is in Princeton, so.</li>
+</ul>
+</li>
+<li>Official Practice Exams
+<ul>
+<li>GR 1268</li>
+<li>GR 0568</li>
+<li>GR 9367</li>
+<li>GR 8767</li>
+<li>GR 9768</li>
+</ul>
+</li>
+</ul>
+<h1 class="mume-header" id="general-strategy-notes">General Strategy Notes</h1>
+
+<ul>
+<li>
+<p>Studying</p>
+<ul>
+<li>Start early. Like <em>really</em> early, like at least 6 months before the exam.</li>
+<li>Spaced repetition:
+<ul>
+<li>There are plenty of definitions, formulas and equations that are just worth memorizing outright:
+<ul>
+<li>Examples: The definition of a connected space, <span class="mathjax-exps">$\frac{d}{dx} \sin(x)$</span>, <span class="mathjax-exps">$\int x^n dx$</span>, solutions to ODEs of the form <span class="mathjax-exps">$ay&apos;&apos; + by&apos; + cy = 0$</span>, etc</li>
+</ul>
+</li>
+<li>But it&#x2019;s also helpful to have some methods and proofs memorized
+<ul>
+<li>Examples: Techniques for solving the nonlinear systems arising from Lagrange multipliers, the proof the differentiability implies continuity, etc</li>
+</ul>
+</li>
+<li>Flashcard programs like Anki are great for this, also just solving problems and then revisiting them regularly is perfectly sufficient to get them into your working memory.</li>
+</ul>
+</li>
+<li>A recommendation - just pick up Stewart&#x2019;s Calculus and go through the entire thing. 50% of the exam is Calculus, so this pays off! Use the chapter reviews as a diagnostic, use a solutions manual or Wolfram to check your answers, and drill into sections that you&#x2019;re weak in.</li>
+</ul>
+</li>
+<li>
+<p><strong>Speed</strong></p>
+<ul>
+<li>With 2.5 minutes per question, being quick is absolutely vital.</li>
+<li>Quickly solving easy problems gives you more time on difficult problems, or time double check answers and/or be more careful on tricky problems.</li>
+<li><strong>Benchmark: aim to be able to do most Calculus problems in &lt;1 minute.</strong>
+<ul>
+<li>Simple limits, derivatives, or integrals should be on the order of seconds at most.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Guessing:</p>
+<ul>
+<li>Blank answers are wrong answers, so blindly guessing has higher expected value than not answering at all.</li>
+<li>But note that because there are 5 choices, blindly guessing still has <em>negative expected value</em>!</li>
+<li>So to break even (zero expected value), you need to eliminate at least one incorrect choice from each question.</li>
+</ul>
+</li>
+<li>
+<p>Choice elimination</p>
+<ul>
+<li>It is tempting to thoroughly solve each problem that you are given, but this is not always necessary.
+<ul>
+<li>Example: if you&#x2019;re asked to compute an indefinite integral, it may be faster to just take the derivative of all 5 answers to see which matches the integrand.</li>
+</ul>
+</li>
+<li>Use the multiple choice format to your advantage &#x2013; they often have hints for what constants might appear in the answer, or hint at a technique to use.
+<ul>
+<li>Similar strategy to general GRE reading sections &#x2013; look at answer choices <em>before</em> reading question, so you&#x2019;ve already framed what you&#x2019;re looking for</li>
+</ul>
+</li>
+<li>If you eliminate 4 choices with 100% confidence, then the answer <strong>must</strong> be the remaining choice. No need to check!</li>
+</ul>
+</li>
+<li>
+<p>Practice Exams</p>
+<ul>
+<li>There are 5 official exams out there (see reference section) with solutions.</li>
+<li>Take all of them! Time yourself! All include scoring rubric to compute your percentile, so score yourself too.
+<ul>
+<li>Note: 3 hour exams can be mentally exhausting if you are not used to them. Practicing is essential to get your mental stamina up.</li>
+</ul>
+</li>
+<li>Note that all the released exams are significantly easier than the actual exams.</li>
+<li>Aim to complete practice exams within 2 hours at around the 90th percentile.</li>
+</ul>
+</li>
+<li>
+<p>Self Care</p>
+<ul>
+<li>Applies to every exam - taking care of your mind and body pays dividends!</li>
+<li>No all-nighters, no cramming - getting an extra few hours of sleep is immensely more beneficial than trying get a few more formulas tucked into your short-term memory.</li>
+<li>Eat relatively healthy before the exam. Be sure to have breakfast the morning of the exam too!</li>
+<li>Stay hydrated, drink water (but not too much &#x2013; remember, no restroom breaks during the exam)</li>
+<li>Don&#x2019;t stress too much - this exam isn&#x2019;t a barrier, it is a chance to revisit a great deal of fun mathematics and show grad schools how far you&#x2019;ve come and how much you&#x2019;ve learned during your degree!
+<ul>
+<li>Note: I think graduate schools mostly just want to see that you don&#x2019;t totally tank this exam, because in many cases, grad students will be TA-ing the very courses covered in this exam. Also, remember that there are many grad programs that do not require the exam at all!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 class="mume-header" id="advice-from-others">Advice From Others</h1>
+
+<blockquote>
+<p>Some unsolicited advice: Calculus I takes up ~25% and Calculus II, III takes up another ~25%. Calculus I should be doable. The integrals will usually yield to tricks and not brute force e.g. rationalizing denominator, factorization, partial fractions, and even symmetry. Know your small angle approximations! Calculus II and III may seem scary, but it isn&#x2019;t. Expect simple Lagrange multipliers, arc length of curves, Green&#x2019;s theorem, divergence theorem. (Stokes&#x2019; is unlikely.) For complex analysis, the Cauchy integral formula and residue theorem are sufficient (~3 questions). For differential equations, refer to the chapter in Princeton Review (~3 questions).</p>
+</blockquote>
+<blockquote>
+<p>Linear algebra takes up about 10%. Abstract algebra takes up another 5-10%. The scope is quite varied. Questions on the Jordan canonical form have appeared before, but don&#x2019;t waste your time if you have not learnt it before. Focus on systems of linear equations. Be familiar with the invertibility conditions and consequences. Be familiar with the properties of det and tr and how to compute them. The abstract algebra questions will cover groups, rings and fields. Preparing for this is not like preparing for calculus &#x2013; I feel that you should just memorize the basic definitions and results and let your skill do the rest in the exam.</p>
+</blockquote>
+<blockquote>
+<p>The remaining ~35% of questions do not belong to any of the above categories. The topics covered include basic number theory (congruences, Fermat&#x2019;s Little Theorem), plane geometry (high school level), polynomials, foundations (functions, relations, orders). My exam had a problem on Cauchy-Schwarz.</p>
+</blockquote>
+<blockquote>
+<p>A few other topics in the &#x201C;Others&#x201D; category: Combinatorics. Permutations, combinations, inclusion-exclusion. Derangement-like questions may appear. Statistics. Mine had a question on the standard deviation of the addition of two normal distributions. Topology. Arguably the hardest. If you have taken a topology class then go through the basic definitions, results, and proofs of some of the results. The rest depends on your skill.</p>
+</blockquote>
+<hr>
+<h1 class="mume-header" id="content">Content</h1>
+
+<h2 class="mume-header" id="pre-calculus-and-proof-fundamentals">Pre-Calculus and Proof Fundamentals</h2>
+
+<ul>
+<li>Areas and properties of:
+<ul>
+<li>Circles</li>
+<li>Ellipses</li>
+<li>Cylinders</li>
+</ul>
+</li>
+<li>Geometry:
+<ul>
+<li>The sum of interior angles in an <span class="mathjax-exps">$n-$</span>gon is <span class="mathjax-exps">$180(n-2)$</span>; the sum of exterior angles is 360.</li>
+</ul>
+</li>
+<li>Functions, relations, and orders
+<ul>
+<li>A relation <span class="mathjax-exps">$\sim \subset X \cross Y$</span> is not a function if <span class="mathjax-exps">$\exists x \in X$</span> and <span class="mathjax-exps">$\exists y_1, y_2 \in Y$</span> such that <span class="mathjax-exps">$x \sim y_1$</span> and <span class="mathjax-exps">$x \sim y_2$</span> (so <span class="mathjax-exps">$\sim$</span> is many-to-one)</li>
+<li>Injectivity, Surjectivity</li>
+</ul>
+</li>
+<li>Law of Cosines: <div class="mathjax-exps">$$a^2 = b^2 + c^2 - 2bc\cos(\theta_a)$$</div></li>
+<li>Truth tables</li>
+<li>Contrapositive, negating quantifiers, etc</li>
+</ul>
+<h2 class="mume-header" id="calculus">Calculus</h2>
+
+<h3 class="mume-header" id="differential">Differential</h3>
+
+<ul>
+<li>Epsilon-Delta Definition of Limit</li>
+<li>Computing Limits
+<ul>
+<li>Elementary limit properties (sum, product, quotient)</li>
+<li>L&#x2019;Hopital&#x2019;s Rule</li>
+</ul>
+</li>
+<li>Limit definition of continuity</li>
+<li>Limit definition of derivative</li>
+<li>Computing derivatives
+<ul>
+<li>Elementary/Known Derivatives</li>
+<li><span class="mathjax-exps">$x^n, e^x, \sin, \cos,$</span> etc</li>
+</ul>
+</li>
+<li>Mean Value Theorem</li>
+<li>Extreme Value Theorem</li>
+<li>Rolle&#x2019;s Theorem</li>
+<li>Implicit Differentiation</li>
+<li>Related Rates</li>
+<li>Single Variable Optimization
+<ul>
+<li>See optimization section</li>
+</ul>
+</li>
+<li>Taylor Series<br>
+<div class="mathjax-exps">$$f_a(x) = \sum \frac{1}{k!} f^{(k)}(a)(x-a)$$</div></li>
+<li>Linear Approximation<br>
+<div class="mathjax-exps">$$f(p) \approx f(p) + f&apos;(p)(x-p) + f&apos;&apos;(p)(x-a)^2$$</div></li>
+<li>Common Derivatives:</li>
+<li>Limit definition of <span class="mathjax-exps">$f&apos;&apos;(a)$</span></li>
+</ul>
+<h3 class="mume-header" id="integral">Integral</h3>
+
+<ul>
+<li>Riemann Sum Definition of the Integral</li>
+<li>Fundamental Theorem of Calculus:<br>
+<div class="mathjax-exps">$$\frac{d}{dx} \int_c^x g(t) dt = g(x)$$</div></li>
+<li>Computing integrals/antiderivatives
+<ul>
+<li>Elementary/Known Antiderivatives
+<ul>
+<li><span class="mathjax-exps">$x^n, e^x, \sin, \cos,$</span> etc</li>
+</ul>
+</li>
+<li>Algebra:
+<ul>
+<li>Rationalizing the denominator</li>
+<li>Factoring</li>
+</ul>
+</li>
+<li>Interpretation of Integrals as Areas</li>
+<li><span class="mathjax-exps">$u$</span> Substitution</li>
+<li>Partial Fraction Decomposition</li>
+<li>Trigonometric Substitution</li>
+<li>Integration by Parts</li>
+</ul>
+</li>
+<li>Solids of Revolution
+<ul>
+<li>Disk Method</li>
+<li>Shell Method</li>
+</ul>
+</li>
+<li>Applications
+<ul>
+<li>Volume</li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="series-and-sequences">Series and Sequences</h3>
+
+<ul>
+<li>Common Series (geometric, harmonic, <span class="mathjax-exps">$p$</span>)</li>
+<li>Convergence Tests (integral, ratio, root, etc)</li>
+</ul>
+<h3 class="mume-header" id="multivariable">Multivariable</h3>
+
+<ul>
+<li>Vectors, Div, Grad, and Curl</li>
+<li>Parametric Equations</li>
+<li>Multivariable Taylor Series</li>
+<li>Linear Approximation
+<ul>
+<li>See Optimization</li>
+</ul>
+</li>
+<li>Arc Length of Curves</li>
+<li><strong>Green&#x2019;s Theorem</strong></li>
+<li>The Divergence Theorem</li>
+<li>Stokes&#x2019; Theorem</li>
+<li>Matrix definition of the derivative, i.e. the Jacobian: <div class="mathjax-exps">$$(J_f)_{ij} = \frac{\partial f_i}{\partial x_j}$$</div></li>
+<li>The Hessian: <div class="mathjax-exps">$$H_f = \det(J_f) = f_{xx} f_{yy} - 2f_{xy}^2$$</div></li>
+<li>Equations of common shapes and surfaces:
+<ul>
+<li>A plane: Given <span class="mathjax-exps">$\vector n, \vector p_0$</span><br>
+<div class="mathjax-exps">$$\left&lt; x-\vector p_0, \vector n\right&gt; = 0$$</div></li>
+<li>A line: Given <span class="mathjax-exps">$\vector p_0, p_1$</span><br>
+<div class="mathjax-exps">$$x-\vector p_0 = t(\vector p_1 - \vector p_0)$$</div> or<br>
+<div class="mathjax-exps">$$x = t\vector p_0 + (1-t)\vector p_1$$</div></li>
+</ul>
+</li>
+<li>Finding intersections between lines/planes/surfaces/arbitrary equations</li>
+</ul>
+<h3 class="mume-header" id="approximation-and-optimization">Approximation and Optimization</h3>
+
+<ul>
+<li>Linear approximation<br>
+<div class="mathjax-exps">$$f(p) \approx f(p) + f&apos;(p)(x-p) + f&apos;&apos;(p)(x-a)^2 + o(x^3)$$</div><br>
+<div class="mathjax-exps">$$f(\vector p) \approx f(\vector p) + \nabla f(\vector p)(\vector x - \vector a) + (\vector x - \vector p )^T H_f(p)(\vector x - \vector p) + o(\norm{\vector x - \vector p}^3)$$</div></li>
+<li>Single variable
+<ul>
+<li>Second derivative test</li>
+</ul>
+</li>
+<li>Multivariable
+<ul>
+<li>Eigenvalues of Hessian
+<ul>
+<li>Negative definite: Min</li>
+<li>Positive definite: Max</li>
+<li>Any equal to 0: Inconclusive</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Lagrange Multipliers
+<ul>
+<li><span class="mathjax-exps">$\nabla f(\vector x) = \lambda \nabla g(\vector x)$</span></li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="differential-equations">Differential Equations</h3>
+
+<ul>
+<li>Separable, linear up to 2nd order, homogeneous and otherwise</li>
+<li>Systems of differential equations</li>
+<li>The Wronskian</li>
+<li>Fourier and Laplace Transforms</li>
+</ul>
+<h2 class="mume-header" id="linear-algebra">Linear Algebra</h2>
+
+<ul>
+<li>Systems of Linear Equations
+<ul>
+<li>Number of possible solutions</li>
+</ul>
+</li>
+<li>Row-reducing algorithm / Gaussian Elimination / RREF</li>
+<li>Properties of determinant and trace</li>
+<li>Computing nullspace, rowspace, columnspace
+<ul>
+<li>As well as nullity/rank</li>
+</ul>
+</li>
+<li>Finding eigenvalues and the eigenspace</li>
+<li>Jordan Canonical Form</li>
+<li>Conditions for invertibility</li>
+</ul>
+<h2 class="mume-header" id="complex-analysis">Complex Analysis</h2>
+
+<ul>
+<li>Complex roots and branch cuts</li>
+<li>Complex limits and the complex derivative</li>
+<li>Cauchy Integral Formula</li>
+<li>The Residue Theorem</li>
+</ul>
+<h2 class="mume-header" id="real-analysis">Real Analysis</h2>
+
+<ul>
+<li>Intermediate Value Theorem and Mean Value Theorem</li>
+<li>Least upper bound / Supremum and Greatest lower bound / infimum</li>
+<li>Epsilon-delta proofs</li>
+<li>Uniform and point-wise continuity</li>
+<li>Metrics and Metric Spaces</li>
+<li>The Cauchy-Schwarz Inequality</li>
+<li>Definitions of Sequences and Series</li>
+<li>Testing Convergence of a Series:
+<ul>
+<li>Integral Test</li>
+<li>Ratio Test</li>
+<li>Root Test</li>
+<li><span class="mathjax-exps">$p$</span> Test</li>
+</ul>
+</li>
+<li>Cauchy Sequences<br>
+Tricks section&quot;</li>
+</ul>
+<h2 class="mume-header" id="topology">Topology</h2>
+
+<ul>
+<li>Definition of a Topology</li>
+<li>
+<ul>
+<li>Topology: Arbitrary unions and finite intersections
+<ul>
+<li>Connected</li>
+<li>Disconnected</li>
+<li>Totally Disconnected</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Weird topologies</li>
+</ul>
+<h2 class="mume-header" id="number-theory">Number Theory</h2>
+
+<ul>
+<li>Prime decomposition</li>
+<li>Divisibility</li>
+<li>Modular congruences</li>
+<li>Euler&#x2019;s Totient function</li>
+<li>Fermat&#x2019;s Little Theorem</li>
+<li>The Chinese Remainder Theorem</li>
+</ul>
+<h2 class="mume-header" id="abstract-algebra">Abstract Algebra</h2>
+
+<ul>
+<li>Groups
+<ul>
+<li>Vocabulary: homomorphisms, orders, centralizer, normal subgroup, etc</li>
+<li>Division Rings, Integral Domains</li>
+<li>Classification of finite simple abelian groups
+<ul>
+<li>e.g. count number of unique groups of order <span class="mathjax-exps">$n$</span></li>
+</ul>
+</li>
+<li>The Cyclic, Symmetric, and Dihedral Groups</li>
+<li>Lagrange&#x2019;s Theorem (orders of subgroups)</li>
+<li>The Sylow Theorems</li>
+</ul>
+</li>
+<li>Rings
+<ul>
+<li>Fields</li>
+<li>Unique Factorization Domains</li>
+<li>Principal Ideal Domains</li>
+<li>Division Rings</li>
+<li>The Chinese Remainder Theorem</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="combinatorics">Combinatorics</h2>
+
+<ul>
+<li>12-fold counting method</li>
+<li>Stars and Bars</li>
+<li>Permutations</li>
+<li>Combinations</li>
+<li>Inclusions/Exclusions</li>
+<li>Derangements</li>
+<li>The Symmetric Groups</li>
+<li>Integer Partitions</li>
+</ul>
+<h2 class="mume-header" id="probability">Probability</h2>
+
+<ul>
+<li>Common Distributions
+<ul>
+<li>Bernoulli</li>
+<li>Binomial</li>
+<li>Geometric</li>
+<li>Exponential</li>
+</ul>
+</li>
+<li>Mean / Expected Value / Variance / Standard Deviation</li>
+<li>Density functions
+<ul>
+<li>PDF:</li>
+<li>CDF:</li>
+</ul>
+</li>
+<li>The normal distribution
+<ul>
+<li>Normal Rule: <span class="mathjax-exps">$68/95/99.7\%$</span> within <span class="mathjax-exps">$1/2/3 \sigma$</span></li>
+<li>Normal approximations (e.g. to binomial)</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="numerical-analysis">Numerical Analysis</h2>
+
+<ul>
+<li>Newton&#x2019;s Method</li>
+<li>Euler&#x2019;s Method</li>
+<li>Quadrature</li>
+</ul>
+<h2 class="mume-header" id="other-useful-tricks">Other Useful Tricks</h2>
+
+<ul>
+<li>Commuting differentials and integrals:<br>
+<div class="mathjax-exps">$$\frac{d}{dx} \int_{a(x)}^{b(x)} f(x,t) dt = f(x, b(x))\frac{d}{dx}b(x) - f(x, a(x))\frac{d}{dx}a(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt$$</div>
+<ul>
+<li>Need <span class="mathjax-exps">$f, f&apos;$</span> to be continuous in both <span class="mathjax-exps">$x$</span> and <span class="mathjax-exps">$t$</span>. Also need <span class="mathjax-exps">$a(x),b(x) \in C_1$</span>.</li>
+<li>If <span class="mathjax-exps">$a,b$</span> are constant, boundary terms vanish.</li>
+<li>Recover the fundamental theorem with <span class="mathjax-exps">$a(x) = a, b(x) = b, f(x,t) = f(t)$</span>.</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#what-is-the-math-gre">What is the Math GRE?</a></li>
+<li><a href="#logistics-and-technicalities">Logistics and Technicalities</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#general-strategy-notes">General Strategy Notes</a></li>
+<li><a href="#advice-from-others">Advice From Others</a></li>
+<li><a href="#content">Content</a>
+<ul>
+<li><a href="#pre-calculus-and-proof-fundamentals">Pre-Calculus and Proof Fundamentals</a></li>
+<li><a href="#calculus">Calculus</a>
+<ul>
+<li><a href="#differential">Differential</a></li>
+<li><a href="#integral">Integral</a></li>
+<li><a href="#series-and-sequences">Series and Sequences</a></li>
+<li><a href="#multivariable">Multivariable</a></li>
+<li><a href="#approximation-and-optimization">Approximation and Optimization</a></li>
+<li><a href="#differential-equations">Differential Equations</a></li>
+</ul>
+</li>
+<li><a href="#linear-algebra">Linear Algebra</a></li>
+<li><a href="#complex-analysis">Complex Analysis</a></li>
+<li><a href="#real-analysis">Real Analysis</a></li>
+<li><a href="#topology">Topology</a></li>
+<li><a href="#number-theory">Number Theory</a></li>
+<li><a href="#abstract-algebra">Abstract Algebra</a></li>
+<li><a href="#combinatorics">Combinatorics</a></li>
+<li><a href="#probability">Probability</a></li>
+<li><a href="#numerical-analysis">Numerical Analysis</a></li>
+<li><a href="#other-useful-tricks">Other Useful Tricks</a></li>
+</ul>
+</li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
