@@ -8,7 +8,7 @@ Questions to ask:
 
 ## The Dirichlet function
 $$
-f ( x ) = b + (a-b)\indicator{\QQ} = \begin{cases}
+f ( x ) = b + (a-b)~\indicator{\QQ} = \begin{cases}
 a, & x\in \QQ \\
 b, & \text{else}
 \end{cases}
@@ -22,7 +22,7 @@ $$
 
 ## Dirichlet with a Continuous Point
 $$
-f ( x ) x\indicator{\QQ} = \begin{cases}
+f ( x ) = x~\indicator{\QQ} = \begin{cases}
 x, & x\in \QQ \\
 0, & \text{else}
 \end{cases}
