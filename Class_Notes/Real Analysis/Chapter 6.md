@@ -25,7 +25,7 @@ Review bounded.
 Review Dirichlet function.
 
 Definition: Partition
-> Given an interval $I = [a,b]$, a **partition of $I$** is an ordered set $P = \theset{x_0, x_1, \ldots, x_n}$ of finitely many points where $x_i \in [a,b]$ for all $0\leq i,j \leq n$ and $a\leq x_0 \leq x_1 \leq \cdots x_n \leq b$.
+> Given an interval $I = [a,b]$, a **partition of $I$** is an ordered set $P = \theset{x_0, x_1, \ldots, x_n}$ of finitely many points where $a\leq x_0 \leq x_1 \leq \cdots x_n \leq b$.
 
 For each $i$, we can look at bounds on $f$ within the interval $[x_i, x_{i+1}]$
 
