@@ -82,6 +82,8 @@ $$
 \exists \xi \suchthat \abs{f(x) - p_n(x)} = \frac{1}{(n+1)!}f^{(n+1)}(\xi)\abs{x-c}^{n+1}
 $$
 
+Note that if we did have such an $M^n$ 
+
 There is also a nice theorem that provides a sufficient condition for when this error term converges to zero:
 
 > **Theorem:** A Sufficient Condition for Convergence of a Taylor Series
