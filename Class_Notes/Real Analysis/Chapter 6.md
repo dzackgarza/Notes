@@ -62,7 +62,7 @@ $$
 \underline {\int_a^b} f(x) ~dx = \sup\theset{~ L(f, P) \mid P ~\text{is a partition of }~ [a,b]} 
 $$
 
-Note that it's the infimum of the upper sums and supremum of the lower sums; this is easy to get mixed up.
+Note that it's the infimum of the upper sums and supremum of the lower sums; it is easy to mix these up.
 
 Show 
 $$
