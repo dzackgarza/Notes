@@ -4,7 +4,7 @@ author: John Doe
 date: March 22, 2005
 output:
   custom_document:
-    path: my_doc.tex
+    path: out.tex
     pandoc_args: [
       "-t", "latex",
       "-S"
