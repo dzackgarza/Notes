@@ -1,14 +1,25 @@
-\documentclass[]{article}
+\RequirePackage[l2tabu, orthodox]{nag}
+
+%\documentclass[]{article}
+\documentclass[11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+
 
 %These tell TeX which packages to use.
 \usepackage{array,epsfig}
+\usepackage{mathtools}
 \usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra}
 \usepackage{color}
+
+\usepackage{microtype}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 % Nice math font that journals use
 \usepackage[lite]{mtpro2}
 %\usepackage{mathrsfs}
+\usepackage{lmodern}
+\usepackage[sc]{mathpazo}
 
 % Theorem Styles
 \theoremstyle{definition}
@@ -68,3 +79,10 @@
 \SetSymbolFont{symbolsb}{bold}{OMS}{cmsy}{b}{n}
 \DeclareSymbolFontAlphabet{\mathcal}{symbolsb}
 
+% Document
+\title{
+	\textbf{TODO Insert Title}\\
+	{\normalsize (TODO subtitle)}
+}
+\author{D. Zack Garza}
+\date{\today}
