@@ -29,7 +29,7 @@ Definition: Partition
 
 For each $i$, we can look at the values $f$ takes on within the interval $[x_i, x_{i+1}]$; in particular, we can consider $\sup\theset{f(x) \suchthat x\in[x_i, x_{i+1}]}$ (as well as the infimum).
 
-> Aside: one very useful partition is $x_i \definedas a + \frac{i}{n}b,~ 0\leq i \leq n$.
+> Aside: one very useful partition is $x_i \definedas a + \frac{i}{n}b$ where $0\leq i \leq n$.
 
 
 Define regular partition. 
