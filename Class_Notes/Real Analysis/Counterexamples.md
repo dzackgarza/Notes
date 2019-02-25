@@ -5,7 +5,7 @@ Questions to ask:
 - Where is $f$ continuous?
 - Where is $f$ discontinuous?
 - Is $f$ integrable?
-- Is $f$ differentiable?
+- Where is/isn't $f$ differentiable?
 
 ## The Dirichlet function
 $$
