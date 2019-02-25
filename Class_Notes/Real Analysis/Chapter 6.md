@@ -27,7 +27,7 @@ Review Dirichlet function.
 Definition: Partition
 > Given an interval $I = [a,b]$, a **partition of $I$** is an ordered set $P = \theset{x_0, x_1, \ldots, x_n}$ of finitely many points where $a\leq x_0 \leq x_1 \leq \cdots \leq x_n \leq b$.
 
-For each $i$, we can look at the values $f$ takes on within the interval $[x_i, x_{i+1}]$; in particular, we can consider $\sup_{x\in[x_i, x_{i+1}]}$
+For each $i$, we can look at the values $f$ takes on within the interval $[x_i, x_{i+1}]$; in particular, we can consider $\sup\theset{x\in[x_i, x_{i+1}]}$
 
 (Aside, a useful partition: $x_i = a + \frac{i}{n}b,~ 0\leq i \leq n$.)
 
