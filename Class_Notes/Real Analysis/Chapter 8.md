@@ -84,7 +84,7 @@ $$
 
 Note that if we have the $M^n$ bound from above, this allows us to write
 $$
-\frac{1}{(n+1)!}f^{(n+1)}(\xi)\abs{x-c}^{n+1} \leq \frac{1}{(n+1)!}f^{(n+1)}(\xi)\abs{x-c}^{n+1}
+\frac{1}{(n+1)!}f^{(n+1)}(\xi)\abs{x-c}^{n+1} \leq \frac{1}{(n+1)!}M^n\abs{x-c}^{n+1}
 $$
 
 There is also a nice theorem that provides a sufficient condition for when this error term converges to zero:
