@@ -22,7 +22,7 @@ $$
 
 ## Dirichlet with a Continuous Point
 $$
-f ( x ) = \begin{cases}
+f ( x ) x\indicator{\QQ} = \begin{cases}
 x, & x\in \QQ \\
 0, & \text{else}
 \end{cases}
