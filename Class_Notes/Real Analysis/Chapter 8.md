@@ -41,7 +41,7 @@ $$
 and therefore a Taylor series converging to $f$ at a point $p$ is equivalent to $R_n(p) \to 0$. 
 
 ## Error in Approximation
-In general, one may wonder just how large the error $R_n(x)$ is in some interval, how fast it goes to zero as $n$ is increased, or how many terms one needs to take so the the error is sufficiently small.
+In general, one may wonder just how large the error $R_n(x)$ is in some interval, how fast it goes to zero as $n$ is increased, or how many terms one needs to take so the the error is sufficiently small (e.g. less than the precision of a floating point number).
 
 As it turns out, we can derive an explicit expression for what this remainder actually is in terms of $f$. We also get a theorem that tells us that $\frac{R_n(x)}{\abs{x-c}^n} \to 0$, i.e. the error goes to zero faster than any $n\dash$th degree polynomial in $x-c$.
 
