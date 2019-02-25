@@ -3,4 +3,4 @@
 \contentsline {subsection}{\numberline {1.2}Breakfast}{1}{subsection.1.2}
 \contentsline {section}{\numberline {2}In the evening}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}Dinner}{1}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Going to sleep}{1}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Going to sleep}{2}{subsection.2.2}
