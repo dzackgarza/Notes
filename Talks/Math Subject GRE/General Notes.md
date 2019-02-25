@@ -1,6 +1,6 @@
 GRE Workshop
 
-First Draft. January 19, 2019.
+Workshop given Friday, February 22
 
 # What is the Math GRE?
 - Difference between General GRE and Subject GRE
