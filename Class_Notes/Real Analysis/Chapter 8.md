@@ -84,7 +84,7 @@ $$
 
 Note that if we have the $M^n$ bound from above, this allows us to write
 $$
-\frac{1}{(n+1)!}f^{(n+1)}(\xi)\abs{x-c}^{n+1} \leq \frac{1}{(n+1)!}M^n\abs{x-c}^{n+1} = c^n,
+\frac{1}{(n+1)!}f^{(n+1)}(\xi)\abs{x-c}^{n+1} \leq \frac{1}{(n+1)!}M^n\abs{x-c}^{n+1} = c_n,
 $$
 
 which is just some constant that only depends on $n$. We generally look for a nice enough $M^n$ so that $c_n \to 0$, which 
