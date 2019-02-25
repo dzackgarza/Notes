@@ -49,7 +49,7 @@ $$
 
 ## Dirichlet with Two Functions
 $$
-f ( x ) = x~\indicator{\QQ} + (-x)\indicatpr{\RR-\QQ} = \begin{cases}
+f ( x ) = x~\indicator{\QQ} + (-x)\indicator{\RR-\QQ} = \begin{cases}
 x, & x\in \QQ \\
 -x, & \text{else}
 \end{cases}
