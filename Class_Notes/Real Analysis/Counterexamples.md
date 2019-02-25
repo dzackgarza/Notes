@@ -3,8 +3,8 @@ Consider all integrals to be over a compact interval $[a, b]$ with $0 \leq a < b
 
 Questions to ask:
 - Where is/isn't $f$ continuous?
-- Is $f$ integrable?
 - Where is/isn't $f$ differentiable?
+- Is $f$ Riemann integrable?
 
 ## The Dirichlet function
 $$
