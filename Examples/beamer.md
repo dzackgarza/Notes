@@ -26,8 +26,6 @@ output: beamer_presentation
 
 ----
 
-![picture of spaghetti](images/spaghetti.jpg)
-
 ## Going to sleep
 
 - Get in bed
