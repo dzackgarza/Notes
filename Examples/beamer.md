@@ -4,9 +4,11 @@ author: John Doe
 date: March 22, 2005
 output:
   custom_document:
-    path: beamer.tex
+    path: my_doc.tex
     pandoc_args: [
-      "-t", "latex"
+      "-r",  "markdown+tex_math_single_backslash+simple_tables+table_captions+yaml_metadata_block",
+      "-t", "latex",
+      "-S",
     ]
 ---
 
