@@ -6,9 +6,7 @@ output:
   custom_document:
     path: beamer.tex
     pandoc_args: [
-      "-r",  "markdown+tex_math_single_backslash+simple_tables+table_captions+yaml_metadata_block",
-      "-t", "latex",
-      "-S",
+      "-t", "latex"
     ]
 ---
 
