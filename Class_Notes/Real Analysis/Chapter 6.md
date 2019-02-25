@@ -117,6 +117,8 @@ Show that a monotonically increasing function is integrable.
 
 Show that step functions are integrable.
 
+How to show a function is not integrable:
+
 # 6.3: Properties of Integrals
 
 Show ability to split integral at intermediate point (additivity).
