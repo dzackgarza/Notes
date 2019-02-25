@@ -89,10 +89,10 @@ $$
 
 which is just some constant that only depends on $n$. We generally look for a nice enough $M^n$ so that $c_n \to 0$, which means the remainder goes to zero and thus the Taylor series for $f$ will indeed converge to $f$ in the limit.
 
-We can state this as a theorem which provides a sufficient condition for when this error term converges to zero:
+We can state this as a theorem which provides a sufficient condition for convergence:
 
 > **Theorem:** A Sufficient Condition for Convergence of a Taylor Series
-Given a point $c$ and some $\varepsilon$, if $f \in C^\infty(I)$ and there exists an $M$ such that 
+Given a point $c$ and some $\varepsilon>0$, if $f \in C^\infty(I)$ and there exists an $M$ such that 
 $$
 x \in N_\varepsilon(c) \implies \abs{f^{(n)}(x)} \leq M^n
 $$
