@@ -22,27 +22,27 @@ _Disclaimer: in the textbook section, a number of the outgoing Amazon links are 
 ## Extracurricular Math
 <div id="garrity" style="display: none;"></div>
 
-- :fa-book:  _Garrity_, [All the Mathematics You Missed: But Need to Know for Graduate School](https://www.amazon.com/gp/product/0521797071/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0521797071&linkCode=as2&tag=dzackgarza-20&linkId=a599d541b5c474b2a50177e0cda4b379)
+- :fa-book:  _Garrity_, [All the Mathematics You Missed: But Need to Know for Graduate School](https://www.amazon.com/gp/product/0521797071)
 	- If you're thinking about grad school at all, read this! Even if you're not, it's a pretty good collection of mathematics that it's good to at least be familiar with. You can also use this to get an idea of some of the major theorems and results in a variety of subfields.
 
 - :fa-tv: :fa-star: [Introduction to Higher Mathematics](https://www.youtube.com/playlist?list=PLZzHxk_TPOStgPtqRZ6KzmkUQBQ8TSWVX)
 	- A great survey that highlights many different areas of advanced mathematics.
 
-- :fa-book: _Abbott_, [Flatland](https://www.amazon.com/gp/product/048627263X/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=048627263X&linkId=1f5b4e9ec20ad3c1ebd5cd2af429be68)
+- :fa-book: _Abbott_, [Flatland](https://www.amazon.com/gp/product/048627263X)
 	- As the professor who recommended this to me said, reading this book is an absolutely essential step in the professional development of every mathematician. It's a short fiction that explores a world of 1-dimensional beings that live in a 2-dimensional universe, which provides a powerful analogy for thinking about higher dimensional objects.
 
 ## Computer Science
 
-- :fa-book: _CLRS_, [Introduction to Algorithms](https://www.amazon.com/gp/product/0262033844/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0262033844&linkCode=as2&tag=dzackgarza-20&linkId=f99bf4ce12d3ed422a41b841a3055d75)
+- :fa-book: _CLRS_, [Introduction to Algorithms](https://www.amazon.com/gp/product/0262033844)
 	- :fa-external-link-alt: [MIT OCW: Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm) is a good supplement.
 
-- :fa-book: _McDowell_, [Cracking the Coding Interview](https://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dzackgarza-20&linkId=10277ceaad2b2e90ef6a1b321b555ffd)
+- :fa-book: _McDowell_, [Cracking the Coding Interview](https://www.amazon.com/gp/product/0984782850)
 	- Covers a number of quintessential CS interview questions, worth reading if you are preparing for internships.
 
-- :fa-book: _Sipser_, [Introduction to the Theory of Computation](https://www.amazon.com/gp/product/8131525295/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=8131525295&linkId=8b4d166a094b0d45b504ea7f4da63727)
+- :fa-book: _Sipser_, [Introduction to the Theory of Computation](https://www.amazon.com/gp/product/8131525295)
 	- The standard resource for an introduction to theoretical computer science. Covers things like computability, automata, and Turing machines.
 
-- :fa-book: _Graham and Knuth_, [Concrete Mathematics](https://www.amazon.com/gp/product/0201558025/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0201558025&linkId=d0e1989fdcb7ee7be5595099a9267a00)
+- :fa-book: _Graham and Knuth_, [Concrete Mathematics](https://www.amazon.com/gp/product/0201558025)
 	- An encylopedaic reference for a huge swath of discrete Mathematics.
 
 ## The Math Subject GRE
@@ -70,7 +70,7 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 
 **Resources**
 - :fa-external-link-alt: You can find five sample exams [here.](http://www.math.ucla.edu/~iacoley/greprep.html)
-- :fa-book: Princeton Review, [Cracking the Math Subject GRE](https://www.amazon.com/gp/product/0375429727/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dzackgarza-20&creative=9325&linkCode=as2&creativeASIN=0375429727&linkId=a8d125e03d8fa03bd5e41231a88252d1)
+- :fa-book: Princeton Review, [Cracking the Math Subject GRE](https://www.amazon.com/gp/product/0375429727)
 
 **Advice**
 - Most problems don't require extensive computations; there is usually a trick that solves it very quickly.
