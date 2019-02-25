@@ -33,7 +33,7 @@ We can instead integrate both sides to obtain $$\sum_{k=0}^\infty \frac 1 {k+1} 
 
 If $f\in C^\infty(I)$, then one can ask if $p_n(x) \to f(x)$ pointwise. This is essentially the definition of $f$ being a *real analytic* function, and will hold for polynomials, exponentials, trig functions, and other common functions from Calculus. However, although we can always write *some* Taylor series for a function, **not every function will have a Taylor series that converges to it at every point.**
 
-We can measure the error by defining *the $n\dash$th remainder*,
+If we take only finitely many terms of the full Taylor series as an approximation to $f$, we can measure the error by defining *the $n\dash$th remainder*,
 $$
 R_n(x) = f(x) - p_n(x),
 $$
