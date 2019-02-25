@@ -38,7 +38,7 @@ $$
 R_n(x) = f(x) - p_n(x),
 $$
 
-and thus is equivalent to $R_n(x) \to 0$. 
+and asking that a Taylor series converges to $f$ at a point $p$ is equivalent to $R_n(x) \to 0$. 
 
 ## Error in Approximation
 In general, one may wonder just how large the error is, how fast it goes to zero, or how many terms one has to take so the the error is sufficiently small.
