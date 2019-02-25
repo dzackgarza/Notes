@@ -31,7 +31,7 @@ By making the substitution $x = 1-x$, we find that that $$\frac 1 x = \sum(1-x)^
 
 We can instead integrate both sides to obtain $$\sum_{k=0}^\infty \frac 1 {k+1} x^{k+1} = -\ln(1-x),$$ and again substitute $x=1-x$ to obtain $$\ln(x) = -\sum \frac 1 {k+1}(x-1)^{k+1},$$ the Taylor series for $f(x) = \ln(x)$ at $c=1$.
 
-If $f\in C^\infty(I)$, then one can ask if $p_n(x) \to f(x)$ pointwise. This is essentially the definition of $f$ being a *real analytic* function, and will hold for polynomials, exponentials, trig functions, and other common functions from Calculus. However, although we can always write *some* Taylor series, **not every function will have a Taylor series that converges to it at every point.**
+If $f\in C^\infty(I)$, then one can ask if $p_n(x) \to f(x)$ pointwise. This is essentially the definition of $f$ being a *real analytic* function, and will hold for polynomials, exponentials, trig functions, and other common functions from Calculus. However, although we can always write *some* Taylor series for a function, **not every function will have a Taylor series that converges to it at every point.**
 
 We can measure the error by defining *the $n\dash$th remainder*,
 $$
