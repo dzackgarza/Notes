@@ -8,7 +8,7 @@ output:
     pandoc_args: [
         "-r",  "markdown+tex_math_single_backslash+simple_tables+table_captions+yaml_metadata_block+smart",
         "-t", "latex"
-        "--template=/path/to/my/latex.template",
+        "--template=/home/zack/Notes/Examples/pandoc_template.tex",
     ]
 ---
 
