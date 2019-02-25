@@ -71,7 +71,7 @@ x \in N_\delta(p)-\theset{p} \implies f(x) = \sum_{k=0}^{n-1} \frac{f^{(k)}(p)}{
 $$
 
 ## Convergence
-This is especially helpful if we know $\exists M$ such that for every $\xi \in (x,c)$, we have $f^{(n)}(\xi) \leq M$, so that the $n$th derivative of $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation using the above expression for the remainder term.
+Remainder theorems are especially helpful if we know $\exists M$ such that for every $\xi \in (x,c)$, we have $f^{(n)}(\xi) \leq M$, so that the $n$th derivative of $f$ is bounded by $M$. This immediately translates to a uniform bound on the error of any given Taylor approximation using the above expression for the remainder term.
 
 *Note that the book weakens this hypothesis to $f^{(n)}(\xi) \leq M^n$, where the bound is allowed to depend on $n$ and is thus not uniform.*
 
