@@ -1,6 +1,6 @@
-GRE Workshop
+#GRE Workshop
 
-Workshop given Friday, February 22
+Given Friday, February 22nd, 2019.
 
 # What is the Math GRE?
 - Difference between General GRE and Subject GRE
