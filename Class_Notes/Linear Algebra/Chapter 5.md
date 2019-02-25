@@ -41,7 +41,7 @@ QQ^T = I \implies &\text{The rows of } Q \text { are orthogonal,} \\
 Q^TQ = I \implies &\text{The columns of } Q \text{ are orthogonal.}
 \end{align*}$$
 
-To remember which condition is which, just recall that matrix multiplication $AB$ takes the inner product between the **rows** of $A$ and the **columns** of $B$. So if we want to inspect whether or not the columns of $Q$ are orthogonal, we should let $B=Q$ in the above formulation -- then we just note that the rows of $Q^T$ are indeed the columns of $Q$, so e.g. $Q^TQ$ computes the pairwise inner products of all of the columns of $Q$.
+To remember which condition is which, just recall that matrix multiplication $AB$ takes the inner product between the **rows** of $A$ and the **columns** of $B$. So if, for example, we want to inspect whether or not the columns of $Q$ are orthogonal, we should let $B=Q$ in the above formulation -- then we just note that the rows of $Q^T$ are indeed the columns of $Q$, so e.g. $Q^TQ$ computes the pairwise inner products of all of the columns of $Q$.
 
 Another useful formula is
 $$
