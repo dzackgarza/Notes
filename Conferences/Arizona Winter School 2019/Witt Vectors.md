@@ -31,3 +31,6 @@ One can find explicit expression for the sums and products of such things, and i
 One then defines $W_P(R) = \prod_{i\in P} R = R^P$, and $W(R) = W_\NN(R)$.
 
 A final important part of the definition are the *ghost components*,
+$$
+w _ { n } = \sum _ { d | n } d X _ { d } ^ { n / d } \in \mathbf { Z } \left[ \left\{ X _ { d } : d | n \right\} \right]
+$$
