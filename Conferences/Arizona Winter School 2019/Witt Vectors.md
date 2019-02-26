@@ -2,7 +2,7 @@
 
 General idea: given a commutative ring $R$, a Witt vector $w$ will be an infinite sequence of elements of $R$. Taking $W(R)$ to be a collection of such $w$, we will equip $W(R)$ with its own ring structure.
 
-One useful fact will be that $W(\FF_p) = \ZZ_p$, the ring of $p\dash$adic integers. The construction essentially mirrors a way of obtaining $
+One useful fact will be that $W(\FF_p) = \ZZ_p$, the ring of $p\dash$adic integers. The construction essentially mirrors a way of obtaining $\ZZ_p$ from the finite field $\FF_p$.
 
 > Quick review: the $p\dash$adic integers are metric space completions of $\ZZ$ that are not $\QQ$. Two numbers are "close" in the $p\dash$adic metric exactly when they differ by a large power of $p$.
 
