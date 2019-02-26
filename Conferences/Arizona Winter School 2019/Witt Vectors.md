@@ -22,6 +22,6 @@ U \definedas \theset{x \in \ZZ_p \suchthat x^{p-1}-x=0},
 $$ 
 the "$(p-1)\dash$th roots of unity in $\ZZ_p$". 
 
-If we then let $a_i \in U \union \theset{0}$; we can pull $U$ back along $\omega$ to map the latter choices of $a_i$ to the former, so this yields an alternative representation of $x$. These characters can be computed explicitly in the forward direction: if $x =[x_0, x_1, \cdots ]$ 
+If we then let $a_i \in U \union \theset{0}$; we can pull $U$ back along $\omega$ to map the latter choices of $a_i$ to the former, so this yields an alternative representation of $x$. These characters can be computed explicitly in the forward direction: to find $x =[x_0, x_1, \cdots ]$ on the Teichmüller side, one simply computes $x_i =  
 
 Now, instead of looking at infinite sequences of elements of $\FF_p$, we can look at infinite sequences of elements in $\omega(\FF_p) \subseteq \ZZ_{p}$, and Witt vectors allow us to explicitly compute with such things.
