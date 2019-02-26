@@ -18,7 +18,7 @@ $$
 
 and so another choice of $a_i$ can be obtained by looking at 
 $$
-U \definedas \theset{x \in \ZZ_p \suchthat x^{p-1}-x=0},
+U \definedas \theset{x \in \ZZ_p \suchthat x^{p}-x=0},
 $$ 
 the $(p-1)\dash$th roots of unity in $\ZZ_p$. This arises from the fact that $\FF_p^\times \cong \ZZ/(p-1)\ZZ$, and so every nonzero element is a root of $x^{p-1}-1$.
 
