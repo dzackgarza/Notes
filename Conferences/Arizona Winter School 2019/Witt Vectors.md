@@ -6,9 +6,9 @@ One useful fact will be that $W(\FF_p) = \ZZ_p$, the ring of $p\dash$adic intege
 
 > Quick review: the $p\dash$adic integers are metric space completions of $\ZZ$ that are not $\QQ$. Two numbers are "close" in the $p\dash$adic metric exactly when they differ by a large power of $p$.
 
-The initial application of Witt vectors comes from the problem of finding "nice" expressions for the sums and products of $p\dash$adic integers. In general, if $x\in \ZZ_p$, one can write $x = \sum_{i=0}^\infty a_i p^i$ with $a_i \in \FF_p$, which is a convergent power series in the $p\dash$adic metric. However, this particular representation proves difficult to compute with.
+The initial application of Witt vectors comes from the problem of finding "nice" expressions for the sums and products of $p\dash$adic integers. In general, if $x\in \ZZ_p$, one can write $x = \sum_{i=0}^\infty a_i p^i$ with $a_i \in \FF_p$, which is a convergent power series in the $p\dash$adic metric. 
 
-One can thus represent $x$ an element of $\prod_{i=1}^\infty \FF_p$, where we just need to find the appropriate ring structure.
+One can thus represent $x$ an element of $\prod_{i=1}^\infty \FF_p$, where we just need to find the appropriate ring structure. However, this particular representation proves difficult to compute with. As it turns out, we can instead take coefficients from a particular subset of $\ZZ_p$
 
 There is a map call the *Teichmüller character*, 
 
