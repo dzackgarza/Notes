@@ -37,5 +37,5 @@ $$
 
 which yields a map
 $$
-w_\cdot :W_P(R) \to R^P
+w_\wait :W_P(R) \to R^P
 $$
