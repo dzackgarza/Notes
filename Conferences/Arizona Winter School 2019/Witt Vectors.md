@@ -14,4 +14,4 @@ $$
 \omega: \FF_p^\times \to \ZZ_p^\times,
 $$
 
-and so we can pull back $U$ along this map to identify
+and so we can pull back $U$ along this map to map the former choices of $a_i$ to the latter. 
