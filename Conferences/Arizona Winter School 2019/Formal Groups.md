@@ -1,4 +1,4 @@
-A *formal group law* is an intermediate notion between a Lie group and a Lie algebra, being slightly more general than a Lie algebra.
+A *formal group law* is an intermediate notion between a Lie group and a Lie algebra, being slightly more general than a Lie algebra. 
 
 Given a lie algebra $\mathfrak g$ over a field $k$, a *deformation* of $\mathfrak g$ is another lie algebra $\mathfrak a$ over a $k\dash$algebra $A$, along with an isomorphism
 $$
