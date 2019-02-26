@@ -37,6 +37,6 @@ $$
 
 which yields a map
 $$
-w_\wait :W_P(R) \to R^P
-x \mapsto (w_n(x))
+w_\wait :W_P(R) \to R^P \\
+x \mapsto (w_i(x))_{i\in P}
 $$
