@@ -8,7 +8,7 @@ One useful fact will be that $W(\FF_p) = \ZZ_p$, the ring of $p\dash$adic intege
 
 The initial application of Witt vectors comes from the problem of finding "nice" expressions for the sums and products of $p\dash$adic integers. In general, if $x\in \ZZ_p$, one can write $x = \sum_{i=0}^\infty a_i p^i$ with $a_i \in \FF_p$, which is a convergent power series in the $p\dash$adic metric. However, this particular representation proves difficult to compute with.
 
-We can represent this series as an element of $\prod_{i=1}^\infty \FF_p$
+We can represent this series as an element of $\prod_{i=1}^\infty \FF_p$, where we just need to find the appropriate ring structure.
 
 There is a map call the *Teichmüller character*, 
 
