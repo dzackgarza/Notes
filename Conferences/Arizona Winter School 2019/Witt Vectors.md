@@ -1,3 +1,3 @@
 # Witt Vectors
 
-General idea: given a commutative ring $R$, a Witt vector $w$ will be an infinite sequence of elements of $R$. Letting $W$ be the collection 
+General idea: given a commutative ring $R$, a Witt vector $w$ will be an infinite sequence of elements of $R$. Taking $W$ to be a collection of such $w$, 
