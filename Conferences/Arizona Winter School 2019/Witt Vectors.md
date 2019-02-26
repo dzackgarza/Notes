@@ -10,13 +10,13 @@ The initial application of Witt vectors comes from the problem of finding "nice"
 
 One can thus represent $x$ an element of $\prod_{i=1}^\infty \FF_p$, where we just need to find the appropriate ring structure. However, this particular representation proves difficult to compute with. As it turns out, an alternative choice that works well is taking coefficients from a particular subset of $\ZZ_p$.
 
-There is a map call the *Teichmüller character*, 
+There is a map called the *Teichmüller character*, 
 
 $$
 \omega: \FF_p^\times \to \ZZ_p^\times,
 $$
 
-and so another choice of $a_i$ can be found by looking at 
+and so another choice of $a_i$ can be obtained by looking at 
 $$
 U \definedas \theset{x \in \ZZ_p \suchthat x^p-x=0},
 $$ 
