@@ -14,7 +14,7 @@ $$
 \omega: \FF_p^\times \to \ZZ_p^\times,
 $$
 
-and so another choice of $a_i$ 
+and so another choice of $a_i$ can be found by 
 One can instead look at $U$, the $(p-1)$st roots of unity in $\ZZ_p$, i.e. the roots of $x^p - x$, and alternatively take $a_i \in U \union \theset{0}$. 
 
 and so we can pull back $U$ along $\omega$ to map the latter choices of $a_i$ to the former. 
