@@ -29,3 +29,5 @@ Now instead of looking at infinite sequences of elements of $\FF_p$, we can look
 One can find explicit expression for the sums and products of such things, and it turns out these are "functorial enough" to be generalized to arbitrary rings. In general, one can produce $W(R)$, the big Witt ring with coefficients in $R$, by first defining a *divisor-stable set* $P$, which satisfy $n\in P \implies $ all proper divisors of $n$ are in $P$. Examples includes $P=\theset{1,2,\cdots n}$ and $P = \theset{1,p,p^2, \cdots}$.
 
 One then defines $W_P(R) = \prod_{i\in P} R = R^P$, and $W(R) = W_\NN(R)$.
+
+A final important part of the definition are the *ghost components*,
