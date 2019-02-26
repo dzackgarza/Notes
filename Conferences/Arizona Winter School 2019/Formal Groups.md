@@ -1,1 +1,1 @@
-A *formal group law* is a formal power series that essentially behaves
+A *formal group law* 
