@@ -331,3 +331,5 @@ additivity
 monotonicity
 Teichmüller
 functorial
+endofunctor
+covariant
