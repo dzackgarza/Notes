@@ -11,6 +11,5 @@ The initial application of Witt vectors comes from the problem of finding "nice"
 One can instead look at $U$, the $(p-1)$st roots of unity in $\ZZ_p$, i.e. the roots of $x^p - x$, and alternatively take $a_i \in U \union \theset{0}$. There is a map call the *Teichmüller character*, 
 
 $$
-\omega: \FF_p^\times \to \ZZ_p^\times \\
-
+\omega: \FF_p^\times \to \ZZ_p^\times,
 $$
