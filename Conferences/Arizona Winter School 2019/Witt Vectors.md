@@ -26,4 +26,6 @@ If we then let $a_i \in U \union \theset{0}$; we can pull $U$ back along $\omega
 
 Now instead of looking at infinite sequences of elements of $\FF_p$, we can look at infinite sequences of elements in $\omega(\FF_p) \subseteq \ZZ_{p}$, and Witt vectors allow us to explicitly compute with such things.
 
-One can find explicit expression for the sums and products of such things, and it turns out these are "functorial enough" to be generalized to arbitrary rings. In general, one can produce $W(R)$, the big Witt ring with coefficients in $R$, by first defining a *divisor-stable set* $P$, which satisfy $n\in P \implies $ all proper divisors of $n$ are in $P$. Examples includes $P=\theset{1,2,\cdots n}$ and $P = \theset{1,p,p^2, \cdots}$One then defines $W_P(R) = \prod_{i\in P} R = R^P$
+One can find explicit expression for the sums and products of such things, and it turns out these are "functorial enough" to be generalized to arbitrary rings. In general, one can produce $W(R)$, the big Witt ring with coefficients in $R$, by first defining a *divisor-stable set* $P$, which satisfy $n\in P \implies $ all proper divisors of $n$ are in $P$. Examples includes $P=\theset{1,2,\cdots n}$ and $P = \theset{1,p,p^2, \cdots}$.
+
+One then defines $W_P(R) = \prod_{i\in P} R = R^P$
