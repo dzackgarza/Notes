@@ -15,3 +15,4 @@ Terms to lookup and define:
 - Stack
 - Quasi-coherent sheaf
 - Representation of a group
+- Nilpotent
