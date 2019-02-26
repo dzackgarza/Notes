@@ -6,3 +6,8 @@ Given a lie algebra $\mathfrak g$ over a field $k$, a *deformation* of $\mathfra
 $$
 \phi: \mathfrak g \to \mathfrak a \tensor_A k
 $$
+
+Terms to lookup and define:
+
+- Spectrum
+- 
