@@ -39,7 +39,7 @@ $$
 which, if we write $x = [x_i]_{i\in p}$, yields a map
 $$
 w_\wait :W_P(R) \to R^P \\
-x \mapsto (w_i(x))_{i\in P}
+x \mapsto [w_i(x)]_{i\in P}
 $$
 
 where the $w_i(x)$ are referred to as the *ghost components* of $x$.
