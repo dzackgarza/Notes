@@ -20,7 +20,7 @@ and so another choice of $a_i$ can be obtained by looking at
 $$
 U \definedas \theset{x \in \ZZ_p \suchthat x^{p-1}-x=0},
 $$ 
-the $(p-1)\dash$th roots of unity in $\ZZ_p$. This arises from the fact that $\FF_p^\times \cong \ZZ/(p-1)\ZZ$, and so every nonzero element is a root of $x^{p-1}-x
+the $(p-1)\dash$th roots of unity in $\ZZ_p$. This arises from the fact that $\FF_p^\times \cong \ZZ/(p-1)\ZZ$, and so every nonzero element is a root of $x^{p-1}-1$.
 
 If we then let $a_i \in U \union \theset{0}$; we can pull $U$ back along $\omega$ to map the latter choices of $a_i$ to the former, so this yields an alternative representation of $x$. These characters can be computed explicitly in the forward direction: to find $x =[x_1, x_2, \cdots ]$ on the Teichmüller side, one simply computes $x_i$ recursively via the conditions $$x_0 = x \\ x_i = x_{i-1} \mod p^i,\\ x_i^{p-1}-1=0 \mod p^{i+1}.$$
 
