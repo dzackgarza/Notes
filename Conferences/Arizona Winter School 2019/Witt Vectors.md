@@ -38,4 +38,5 @@ $$
 which yields a map
 $$
 w_\wait :W_P(R) \to R^P
+x \mapsto (w_n(x))
 $$
