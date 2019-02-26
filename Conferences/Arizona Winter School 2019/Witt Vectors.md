@@ -16,4 +16,6 @@ $$
 
 and so another choice of $a_i$ can be found by looking at 
 $$
-U \definedas \theset{x \in \ZZ_p \suchthat x^p-x=0}$, i.e. the "$(p-1)\dash$th roots of unity in $\ZZ_p$, and alternatively take $a_i \in U \union \theset{0}$. We can pull $U$ back along $\omega$ to map the latter choices of $a_i$ to the former, yielding an alternative representation of a $p\dash$adic integer. 
+U \definedas \theset{x \in \ZZ_p \suchthat x^p-x=0},
+$$ 
+the "$(p-1)\dash$th roots of unity in $\ZZ_p$, and alternatively take $a_i \in U \union \theset{0}$. We can pull $U$ back along $\omega$ to map the latter choices of $a_i$ to the former, yielding an alternative representation of a $p\dash$adic integer. 
