@@ -13,3 +13,5 @@ One can instead look at $U$, the $(p-1)$st roots of unity in $\ZZ_p$, i.e. the r
 $$
 \omega: \FF_p^\times \to \ZZ_p^\times,
 $$
+
+and so we can pull back $U
