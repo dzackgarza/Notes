@@ -10,4 +10,4 @@ $$
 Terms to lookup and define:
 
 - Spectrum
-- 
+- Lazard ring
