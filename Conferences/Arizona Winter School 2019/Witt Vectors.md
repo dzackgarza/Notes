@@ -32,6 +32,10 @@ One then defines $W_P(R) = \prod_{i\in P} R = R^P$, and $W(R) = W_\NN(R)$.
 
 A final important part of the definition are the *ghost components*,
 $$
-w_n
-w _ { n } = \sum _ { d | n } d X _ { d } ^ { n / d } \in \ZZ \left[ \left\{ X _ { d } \suchthat d \divides n \right\} \right]
+w _ { n } = \sum _ { d | n } d X _ { d } ^ { n / d } \in \ZZ \left[ \left\{ X _ { d } \suchthat d \divides n \right\} \right],
+$$
+
+which yields a map
+$$
+(
 $$
