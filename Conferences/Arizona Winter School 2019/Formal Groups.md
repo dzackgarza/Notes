@@ -14,3 +14,4 @@ Terms to lookup and define:
 - Adams-Novikov spectral sequence
 - Stack
 - Quasi-coherent sheaf
+- Representation of a group
