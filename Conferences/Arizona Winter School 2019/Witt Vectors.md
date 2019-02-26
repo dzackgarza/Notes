@@ -20,4 +20,4 @@ and so another choice of $a_i$ can be obtained by looking at
 $$
 U \definedas \theset{x \in \ZZ_p \suchthat x^p-x=0},
 $$ 
-the "$(p-1)\dash$th roots of unity in $\ZZ_p$. We then let $a_i \in U \union \theset{0}$; we can pull $U$ back along $\omega$ to map the latter choices of $a_i$ to the former, so this yields an alternative representation of $x$. Now, instead of looking at infinite sequences of elements of $\FF_p$, we can look at infinite sequences elements in $\omega(\FF_p) \subseteq \ZZ_{p}$, and Witt vectors allow us to explicitly compute with such things.
+the "$(p-1)\dash$th roots of unity in $\ZZ_p$. We then let $a_i \in U \union \theset{0}$; we can pull $U$ back along $\omega$ to map the latter choices of $a_i$ to the former, so this yields an alternative representation of $x$. Now, instead of looking at infinite sequences of elements of $\FF_p$, we can look at infinite sequences of elements in $\omega(\FF_p) \subseteq \ZZ_{p}$, and Witt vectors allow us to explicitly compute with such things.
