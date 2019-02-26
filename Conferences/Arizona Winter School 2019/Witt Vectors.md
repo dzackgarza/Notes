@@ -37,5 +37,5 @@ $$
 
 which yields a map
 $$
-(
+W_P(R) \to R^P
 $$
