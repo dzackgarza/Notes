@@ -14,4 +14,4 @@ $$
 \omega: \FF_p^\times \to \ZZ_p^\times,
 $$
 
-and so we can pull back $U$ along this map to map the latter choices of $a_i$ to the former. 
+and so we can pull back $U$ along $\omega$ to map the latter choices of $a_i$ to the former. 
