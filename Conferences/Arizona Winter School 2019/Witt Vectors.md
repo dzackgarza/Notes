@@ -14,4 +14,4 @@ $$
 \omega: \FF_p^\times \to \ZZ_p^\times,
 $$
 
-and so we can pull back $U
+and so we can pull back $U$ along this map
