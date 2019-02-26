@@ -43,3 +43,5 @@ x \mapsto [w_i(x)]_{i\in P}
 $$
 
 where the $w_i(x)$ are referred to as the *ghost components* of $x$.
+
+Given all of this, we obtain a covariant endofunctor on $\ZZ\dash$algebras.
