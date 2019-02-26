@@ -4,4 +4,4 @@ General idea: given a commutative ring $R$, a Witt vector $w$ will be an infinit
 
 One useful fact will be that $W(\FF_p) = \ZZ_p$, the ring of $p\dash$adic integers.
 
-> Quick review: the $p\dash$adic integers are metric space completions of $\ZZ$ that are not $\QQ$. 
+> Quick review: the $p\dash$adic integers are metric space completions of $\ZZ$ that are not $\QQ$. Two numbers are "close" in the $p\dash$adic metric exactly when they differ by a large power of $p$.
