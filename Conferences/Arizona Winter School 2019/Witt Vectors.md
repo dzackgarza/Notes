@@ -36,7 +36,7 @@ w_n: W_P(R) \to R \\
 w _ { n } = \sum _ { d | n } d x _ { d } ^ { n / d } \in \ZZ \left[ \left\{ x_ { d } \suchthat d \divides n \right\} \right],
 $$
 
-which, if we write $x = [x_i]_{i\in P}$ (the *Witt components of $x$), yields a map
+which, if we write $x = [x_i]_{i\in P}$ (the *Witt components of $x$*), yields a map
 $$
 w_\wait :W_P(R) \to R^P \\
 x \mapsto [w_i(x)]_{i\in P}
