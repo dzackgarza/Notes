@@ -45,3 +45,4 @@ Terms to lookup and define
 - Representation of a group
 - Nilpotent
 - Ramified
+- Thom spectra
