@@ -8,7 +8,7 @@ $$
 
 Taking the lie algebra $\mathfrak g$ of a lie group $G$ is viewed as a "linearization" of $G$, and amounts to studying $G$ in some neighborhood of the identity. We'd like to translate this to the setting of algebraic groups, but this process fails in characteristic $p$ and results in too much loss of information.
 
-So we instead look for an *intermediate* structure $\mathcal F$ that is between a lie group and its lie algebra; schematically,
+So we instead look for an *intermediate* structure $\mathcal F$ that is somehow between a lie group and its lie algebra; schematically,
 $$
 G \to \mathcal F \to \mathfrak g
 $$
