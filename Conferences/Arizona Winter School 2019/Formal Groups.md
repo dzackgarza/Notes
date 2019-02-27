@@ -2,7 +2,7 @@ A *formal group law* is an intermediate notion between a Lie group and a Lie alg
 
 To flesh this out, note that a common fact from Lie theory is that there is an equivalence of categories
 $$
-\left\{ \begin{array} \text{simply connected  real Lie groups } \right\} 
+\left\{ \begin{array} \text{simply connected} \\ \text{real Lie groups} \end{array} \right\} 
 $$
 
 These appear in Topology when considering "complex oriented cohomology theories" evaluated on $\CP^\infty$, and in particular in complex cobordism cohomology. They are also useful in class field theory to construct something called the "local Artin map". In characteristic zero, every formal group is completely determined by a corresponding Lie algebra. Moreover, a formal group is a group object in the category of formal schemes.
