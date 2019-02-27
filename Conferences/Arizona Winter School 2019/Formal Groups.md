@@ -10,10 +10,21 @@ Taking the lie algebra $\mathfrak g$ of a lie group $G$ is viewed as a "lineariz
 
 So we instead look for an *intermediate* structure $\mathcal F$ that is somehow between a lie group and its lie algebra; schematically,
 $$
-G \to \mathcal F \to \mathfrak g
+G \to \mathcal F \to \mathfrak g,
 $$
 
-These appear in Topology when considering "complex oriented cohomology theories" evaluated on $\CP^\infty$, and in particular in complex cobordism cohomology. They are also useful in class field theory to construct something called the "local Artin map". In characteristic zero, every formal group is completely determined by a corresponding Lie algebra. Moreover, a formal group is a group object in the category of formal schemes.
+and a formal group is such an $\mathcal F$ that ends up retaining enough information to work.
+
+The analog of studying $G$ near the identity $e$ is taking the completion of $G$, given by 
+$$
+\widehat G \definedas \spec (\widehat{\mathcal O_{G, e}}),
+$$
+
+where $\mathcal O_{G,e}$ is the stalk at the identity. This object turns out to be a group scheme which captures information about $G$ locally near $e$, and is both captures enough information to be useful and is easy enough to study.
+
+Thus a formal group is a natural setting in which to study objects like $\widehat G$.
+
+Formal groups appear in Topology when considering "complex oriented cohomology theories" evaluated on $\CP^\infty$, and in particular in complex cobordism cohomology. They are also useful in class field theory to construct something called the "local Artin map". In characteristic zero, every formal group is completely determined by a corresponding Lie algebra. Moreover, a formal group is a group object in the category of formal schemes.
 
 In Lie groups, once we choose coordinates around the identity, the multiplication on the Lie group can be expressed using power series. This procedure gives us a formal group law. 
 
