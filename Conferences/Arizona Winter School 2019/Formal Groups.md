@@ -9,12 +9,12 @@ $$
 \phi: \mathfrak g \to \mathfrak a \tensor_A k
 $$
 
-Terms to lookup and define:
+Terms to lookup and deSQFT_use
 
 - Spectrum
 - Lazard ring
-- Adams-Novikov spectral sequence
+- Adams-Novikov spectrSQFT_use
 - Stack
-- Quasi-coherent sheaf
+- Quasi-coherent sheafSQFT_use
 - Representation of a group
 - Nilpotent
