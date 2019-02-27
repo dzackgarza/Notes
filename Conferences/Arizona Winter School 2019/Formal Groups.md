@@ -33,6 +33,8 @@ $$
 \phi: \mathfrak g \to \mathfrak a \tensor_A k
 $$
 
+In general, the deformation theory of an object provides a way of studying the smoothness of the moduli space of such objects.
+
 Terms to lookup and define
 
 - Spectrum
