@@ -1,10 +1,18 @@
 * Acyclic
+
 * Alexander duality
+
 * Basis
 	* For an $R\dash$module $M$, a basis $B$ is a linearly independent generating set.
+
 * Boundary
+
 * Boundary of a manifold
-	* Points $x\in M^n$ defined by $$\del M = \theset{x\in M: H_n(M, M-\theset{x}; \ZZ) = 0}$$
+	* Points $x\in M^n$ defined by 
+	$$
+	\del M = \theset{x\in M: H_n(M, M-\theset{x}; \ZZ) = 0}
+	$$
+
 * Cap Product
 	* Denoting $\Delta^p \mapsvia{\sigma} X \in C_p(X; G)$, a map that sends pairs ($p\dash$chains, $q\dash$cochains) to $(p-q)\dash$chains $\Delta^{p-q} \to X$ by
 	$$
@@ -12,37 +20,60 @@
 	\sigma \frown \psi = \psi(F_0^q(\sigma))F_q^p(\sigma)
 	$$
 	where $F_i^j$ is the face operator, which acts on a simplicial map $\sigma$ by restriction to the face spanned by $[v_i \ldots v_j]$, i.e. $F_i^j(\sigma) =\restrictionof{\sigma}{[v_i \ldots v_j]}$.
+
 * Cellular Homology
+
 * CW Cell
 	- An $n\dash$cell of $X$, say $e^n$, is the image of a map $\Phi: B^n \to X$. That is, $e^n = \Phi(B^n)$. Attaching an $n\dash$cell to $X$ is equivalent to forming the space $B^n \coprod_f X$ where $f: \del B^n \to X$.
 		- A $0\dash$cell is a point.
 		- A $1\dash$cell is an interval $[-1, 1] = B^1 \subset \RR^1$. Attaching requires a map from $S^0 =\theset{-1, +1} \to X$
 		- A $2\dash$cell is a solid disk $B^2 \subset \RR^2$ in the plane. Attaching requires a map $S^1 \to X$.
 		- A $3\dash$cell is a solid ball $B^3 \subset \RR^3$. Attaching requires a map from the sphere $S^2 \to X$.
+
 * Cellular Map
 	* A map $X \mapsvia{f} Y$ is said to be cellular if $f(X^{(n)}) \subseteq Y^{(n)}$ where $X^{(n)}$ denotes the $n\dash$ skeleton.
+
 * Chain
 	* An element $c \in C_p(X; R)$ can be represented as the singular $p$ simplex $\Delta^p \to X$.
+
 * Chain Homotopy
 	* Given two maps between chain complexes $(C_*, \del_C) \mapsvia{f, ~g} (D_*, \del_D)$, a chain homotopy is a family $h_i: C_i \to B_{i+1}$ satisfying $$f_i-g_i = \del_{B, i-1}\circ h_n + h_{i+1}\circ \del_{A, i}$$. ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Chain_homotopy_between_chain_complexes.svg/650px-Chain_homotopy_between_chain_complexes.svg.png)
+
 * Chain Map
-	* A map between chain complexes $(C_*, \del_C) \mapsvia{f} (D_*, \del_D)$ is a chain map iff each component $C_i \mapsvia{f_i} D_i$ satsifies $$f_{i-1}\circ\del_{C, i} = \del_{D,i} \circ f_i$$ (i.e this forms a commuting ladder) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chain_map.svg/650px-Chain_map.svg.png)
+	* A map between chain complexes $(C_*, \del_C) \mapsvia{f} (D_*, \del_D)$ is a chain map iff each component $C_i \mapsvia{f_i} D_i$ satisfies 
+	$$
+	f_{i-1}\circ\del_{C, i} = \del_{D,i} \circ f_i
+	$$ 
+	(i.e this forms a commuting ladder) 
+	![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chain_map.svg/650px-Chain_map.svg.png)
+
 * Closed manifold
 	* A manifold that is compact, with or without boundary.
+
 * Coboundary
+
 * Cochain
-	* An element $c \in C^p(X; R)$ can be represented as as function $c: C_p(X, R) \to R$
+	* An element $c \in C^p(X; R)$ can be represented as as function $c: C_p(X, R) \to R$.
+
 * Cocycle
+
 * Colimit
+
 * Compact
 	* Every open cover has a finite subcover.
+
 * Cone
 	* For a space $X$, defined as
+
 * Contractible
 	* A space is contractible if its identity map is nullhomotopic.
+
 * Contractible
+
 * Coproduct
+
 * Covering Space
+
 * Cup Product
 	- A map taking pairs ($p\dash$cocycles, $q\dash$cocycles) to $(p+q)\dash$cocyles by
 	$$
@@ -53,32 +84,52 @@
 	On a manifold, the cup product is Poincare dual to the intersection of submanifolds.
 	* Applications
 		- $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
+
 * CW Complex
+
 * Cycle
+
 * Deck Transformation
+
 * Deformation
+
 * Deformation Retract
 	* A map $r$ in $A\mathrel{\textstyle\substack{\Large\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ that is a retraction (so $r\circ \iota = \id_A$) also satisfying $i\circ r \homotopic \id_A$.
+
 * Degree of a Map
+
 * Derived Functor (Left)
 	* For a functor $T$ and an $R\dash$module $A$, a left derived functor $(L_nT)$ is defined as $h_n(TP_A)$, where $P_A$ is a projective resolution of $A$.
+
 * Dimension of a manifold
 	* For $x\in M$, the only nonvanishing homology group $H_i(M, M - \theset{x}; \ZZ)$
+
 * Direct Limit
+
 * Direct Product
+
 * Direct Sum
+
 * Eilenberg-MacLane Space
+
 * Euler Characteristic
+
 * Exact Functor
 	* A functor $T$ is right exact if a short exact sequence $0 \to A \to B \to C \to 0$ yields an exact sequence $\ldots TA \to TB \to TC \to 0$, and is left exact if it yields $0 \to TA \to TB \to TC \to \ldots$
 	* Examples:
 		* $\wait \tensor_R \wait$ is a right exact bifunctor.
+
 * Exact Sequence
+
 * Excision
+
 * Ext Group
+
 * Flat
 	* An $R\dash$module is flat if $A\tensor_R \wait$ is an exact functor.
+
 * Free and Properly Discontinuous
+
 * Free module
 	* A $\dash$module $M$ with a basis $S = \theset{s_i}$ of generating elements. Every such module is the image of a unique map $\mathcal{F}(S) = R^S \surjects M$, and if $M = \left< S \mid \mathcal{R} \right>$  for some set of relations $\mathcal{R}$, then $M \cong R^S / \mathcal{R}$.
 * Free Product
@@ -107,7 +158,7 @@
 	H_{\hat i}M \tensor H_{\hat j}M \to H_{\widehat{i+j}}X\\
 	\alpha\tensor \beta \mapsto \left< \alpha, \beta \right>
 	$$
-	obtained by conjugating the cup product with Poincare Duality, i.e. $$\left< \alpha, \beta \right> = [M] \frown ([\alpha]^\check{} \smile [\beta]^\check{})$$
+	obtained by conjugating the cup product with Poincare Duality, i.e. $$\left< \alpha, \beta \right> = [M] \frown ([\alpha]^\dual \smile [\beta]^\dual)$$
 
 	Then, if $[A], [B]$ are transversely intersecting submanifolds representing $\alpha, \beta$, then $$\left<\alpha, \beta\right> = [A\intersect B]$$.
 
