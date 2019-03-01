@@ -132,26 +132,44 @@
 
 * Free module
 	* A $\dash$module $M$ with a basis $S = \theset{s_i}$ of generating elements. Every such module is the image of a unique map $\mathcal{F}(S) = R^S \surjects M$, and if $M = \left< S \mid \mathcal{R} \right>$  for some set of relations $\mathcal{R}$, then $M \cong R^S / \mathcal{R}$.
+
 * Free Product
+
 * Free product with amalgamation
+
 * Fundamental Class
 	* For a connected, closed, orientable manifold, $[M]$ is a generator of $H_n(M; \ZZ) = \ZZ$.
+
 * Fundamental classes
+
 * Fundamental Group
+
 * Generating Set
-	* $S = \theset{s_i}$ is a generating set for an $R\dash$ module $M$ iff $$x\in M \implies x = \sum r_i s_i$$ for some coefficient ring elements $r_i \in R$.
+	* $S = \theset{s_i}$ is a generating set for an $R\dash$ module $M$ iff $$x\in M \implies x = \sum r_i s_i$$ for some coefficients $r_i \in R$ (where this sum may be infinite).
+
 * Gluing Along a Map
+
 * Group Ring
+
 * Homologous
+
 * Homotopic
+
 * Homotopy
+
 * Homotopy Class
+
 * Homotopy Equivalence
+
 * Homotopy Extension Property
+
 * Homotopy Groups
+
 * Homotopy Lifting Property
+
 * Injection
-	* A map $f$ with a **left** inverse $\iota$ satisfying $\iota\circ f = \id$
+	* A map $\iota$ with a **left** inverse $f$ satisfying $f\circ \iota = \id$
+
 * Intersection Pairing
 	For a manifold $M$, a map on homology defined by
 	$$
@@ -163,54 +181,85 @@
 	Then, if $[A], [B]$ are transversely intersecting submanifolds representing $\alpha, \beta$, then $$\left<\alpha, \beta\right> = [A\intersect B]$$.
 
 	If $\hat i = j$ then $\left< \alpha, \beta \right> \in H_0 M = \ZZ$ is the signed number of intersection points.
+
 * Inverse Limit
+
 * Intersection Pairing
 	- The pairing obtained from dualizing Poincare Duality to obtain $$\mathrm{F}(H_i M) \tensor \mathrm{F}(H_{n-i}M) \to \ZZ$$
 	Computed as an oriented intersection number between two homology classes (perturbed to be transverse).
+
 * Intersection Form
 	- The nondegenerate bilinear form cohomology induced by the Kronecker Pairing: $$I: H^k(M_n) \cross H^{n-k}(M^n) \to \ZZ$$
 	where $n=2k$.
-		- When $k$ is odd, $I$ is skew-symmetric and thus a symplectic form.
-		- When $k$ is even (and thus 4 divides $n$) this is a symmetric form.
-		- Satisfies $I(x,y) = (-1)^{k(n-k)} I(y, x)$
+      - When $k$ is odd, $I$ is skew-symmetric and thus a *symplectic form.*
+      - When $k$ is even (and thus $n \equiv 0 \mod 4$) this is a symmetric form.
+      - Satisfies $I(x,y) = (-1)^{k(n-k)} I(y, x)$
+
 * Kronecker Pairing
 	- A map pairing a chain with a cochain, given by $$H^n(X; R) \cross H_n(X; R) \to R \\ ([\psi, \alpha]) \mapsto \psi(\alpha)$$
 	which is a nondegenerate bilinear form.
+
 * Kronecker Product
+
 * Lefschetz duality
+
 * Lefshetz Number
+
 * Lens Space
+
 * Local Degree
 	- At a point $x \in V \subset M$, a generator of $H_n(V, V-\theset{x})$. The degree of a map $S^n \to S^n$ is the sum of its local degrees.
+
 * Local Orientation
+
 * Limit
+
 * Linear Independence
 	* A generating $S$ for a module $M$ is linearly independent if $\sum r_i s_i = 0_M \implies \forall i,~r_i = 0 $ where $s_i\in S, r_i \in R$.
+
 * Local homology
 	* $H_n(X, X-A; \ZZ)$ is the local homology at $A$, also denoted $H_n(X \mid A)$
+
 * Local Homology
+
 * Local orientation of a manifold
 	* At a point $x\in M^n$, a choice of a generator $\mu_x$ of $H_n(M, M - \theset{x}) = \ZZ$.
+
 * Long exact sequence
+
 * Loop Space
+
 * Manifold
 	* An $n\dash$maniofld is a Hausdorff space in which each neighborhood has an open neighborhood homeomorphic to $\RR^n$.
+
 * Manifold with boundary
 	* A manifold in which open neighborhoods may be isomorphic to either $\RR^n$ or a half-space $\theset{\mathbf{x} \in \RR^n \mid x_i > 0}$.
+
 * Mapping Cone
+
 * Mapping Cylinder
+
 * Mapping Path Space
+
 * Mayer-vietoris Sequence
+
 * Monodromy
+
 * Moore Space
+
 * N-cell
+
 * N-connected
+
 * Nullhomotopic
 	* A map $X\mapsvia{f} Y$ is nullhomotopic if it is homotopic to a constant map $X \mapsvia{c} \theset{y_0}$; that is, there exists a homotopy
+
 * Orientable manifold
 	* A manifold for which an orientation exists, see "Orientation of a Manifold".
+
 * Orientation Cover
 	* For any manifold $M$, a two sheeted orientable covering space $\tilde M_o$. $M$ is orientable iff $\tilde M$ is disconnected. Constructed as $$\tilde M = \coprod_{x\in M}\theset{\mu_x \mid \mu_x~ \text{is a local orientation}}$$
+
 * Orientation of a manifold
 	* A family of $\theset{\mu_x}_{x\in M}$ with local consistency: if $x,y \in U$ then $\mu_x, \mu_y$ are related via a propagation.
 		- Formally, a function $$M^n \to \coprod_{x\in M} H(X \mid \theset{x})\\ x \mapsto \mu_x$$ such that $\forall x \exists N_x$ in which  $\forall y\in N_x$, the preimage of each $\mu_y$ under the map $H_n(M\mid N_x) \surjects H_n(M\mid y)$ is a single generator $\mu_{N_x}$.
@@ -220,50 +269,85 @@
 		- $\tilde M_o = M \coprod \ZZ_2$ (two sheets).
 		- $\tilde M_o$ is disconnected
 		- The projection $\tilde M_o \to M$ admits a section.
+
 * Oriented manifold
+
 * Path
+
 * Path Lifting Property
+
 * Perfect Pairing
 	- A pairing alone is an $R\dash$bilinear module map, or equivalently a map out of a tensor product since $p: M\tensor_R N \to L$ can be partially applied to yield $\phi: M \to L^N = \hom_R(N, L)$. A pairing is **perfect** when $\phi$ is an isomorphism.
 		- Example: $\det_M: k^2 \cross k^2 \to k$
+
 * Poincare Duality
-	* For a closed, orientable $n\dash$manifold, following map $[M] \frown \wait$ is an ismorphism: $$ D: H^k(M; R) \to H_{n-k}(M; R) \\ D(\alpha) = [M] \frown \alpha$$
+	* For a closed, orientable $n\dash$manifold, following map $[M] \frown \wait$ is an isomorphism: $$ D: H^k(M; R) \to H_{n-k}(M; R) \\ D(\alpha) = [M] \frown \alpha$$
+
 * Projective Resolution
+
 * Properly Discontinuous
+
 * Pullback
+
 * Pushout
+
 * Quasi-isomorphism
+
 * R-orientability
+
 * Relative boundaries
+
 * Relative cycles
+
 * Relative homotopy groups
+
 * Retraction
 	* A map $r$ in $A\mathrel{\textstyle\substack{\Large\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ satisfying $$r\circ\iota = \id_A.$$
 	Equivalently $X \surjects_r A$ and $\restrictionof{r}{A} = \id_A$. If $X$ retracts onto $A$, then $i_*$ is injective.
+
 * Short exact sequence
+
 * Simplicial Complex
+
 * Simplicial Map
-	* Fora map $K\mapsvia{f} L$ between simplicial complexes, $f$ is a simplicial map if for any set of vertices $\theset{v_i}$ spanning a simplex in $K$, the set $\theset{f(v_i)}$ are the vertices of a simplex in $L$.
+	* For a map $$K\mapsvia{f} L$$ between simplicial complexes, $f$ is a simplicial map if for any set of vertices $\theset{v_i}$ spanning a simplex in $K$, the set $\theset{f(v_i)}$ are the vertices of a simplex in $L$.
+
 * Simply Connected
+
 * Singular Chain
-	$$x \in C_n(x) \implies X = \sum_i n_i \sigma_i = \sum_i n_i (\Delta^n \mapsvia{\sigma_i} X)$$
+$$
+x \in C_n(x) \implies X = \sum_i n_i \sigma_i = \sum_i n_i (\Delta^n \mapsvia{\sigma_i} X)$$
+
 * Singular Cochain
-	$$x \in C^n(x) \implies X = \sum_i n_i \psi_i = \sum_i n_i (\sigma_i \mapsvia{\psi_i} X)$$
+$$
+x \in C^n(x) \implies X = \sum_i n_i \psi_i = \sum_i n_i (\sigma_i \mapsvia{\psi_i} X)
+$$
+
 * Singular Homology
-* Singular Simplex
+
+
 * Smash Product
+
 * Surjection
 	* A map $\pi$ with a **right** inverse $f$ satisfying $$\pi \circ f = \id$$
+
 * Suspension
+
 * Tor Group
 	* For an $R\dash$module
 		$$\tor_R^n(\wait, B) = L_n(\wait \tensor_R B)$$
 		where $L_n$ denotes the $n$th left derived functor.
+
 * Universal Cover
+
 * Universal Coefficient Theorem for Cohomology
+
 * Universal Coefficient Theorem for Change of Coefficient Ring
+
 * Weak Homotopy Equivalence
+
 * Weak Topology
+
 * Wedge Product
 
 
@@ -271,4 +355,5 @@
 - $C_X$
 - $\Sigma(X)$
 - $\Sigma_g$
-- $\hat i$
+- $\iota, \pi$
+- $\widehat {i+j}$: for an $n\dash$dimensional manifold, the "dual" dimension $\widehat{i+j} \definedas n - (i+j)$.
