@@ -64,6 +64,9 @@
 
 * Cone
 	* For a space $X$, defined as
+	$$
+	CX = \frac{X\cross I}
+	$$
 
 * Contractible
 	* A space is contractible if its identity map is nullhomotopic.
@@ -78,9 +81,13 @@
 	- A map taking pairs ($p\dash$cocycles, $q\dash$cocycles) to $(p+q)\dash$cocyles by
 	$$
 	H^p(X; R) \cross H^q(X; R) \mapsvia{\smile} H^{p+q}(X; R)\\
-	(a \cup b)(\sigma) = a(\sigma \circ I_0^p)b(\sigma \circ I_p^{p+q})
+	(a \cup b)(\sigma) = a(\sigma \circ I_0^p)~b(\sigma \circ I_p^{p+q})
 	$$
-	where $\Delta^{p+q} \mapsvia{\sigma} X$ is a singular $p+q$ simplex and $I_i^j$ where $i\leq j \leq p+q$ is an embedding of the simplex $[i \ldots j] \injects \Delta^{p+q}$.
+	where $\Delta^{p+q} \mapsvia{\sigma} X$ is a singular $p+q$ simplex and
+	$$
+	I_i^j: [i, \cdots, j] \injects\Delta^{p+q}
+	$$
+	is an embedding of the $(j-i)\dash$simplex into a $(p+q)\dash$simplex.
 	On a manifold, the cup product is Poincare dual to the intersection of submanifolds.
 	* Applications
 		- $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
@@ -94,12 +101,13 @@
 * Deformation
 
 * Deformation Retract
-	* A map $r$ in $A\mathrel{\textstyle\substack{\Large\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ that is a retraction (so $r\circ \iota = \id_A$) also satisfying $i\circ r \homotopic \id_A$.
+	* A map $r$ in $A\mathrel{\textstyle\substack{\Large\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ that is a retraction (so $r\circ \iota = \id_A$) **that also satisfies** $\iota \circ r \homotopic \id_X$.
+	* Note that this is equality in one direction, but only homotopy equivalence in the other.
 
 * Degree of a Map
 
-* Derived Functor (Left)
-	* For a functor $T$ and an $R\dash$module $A$, a left derived functor $(L_nT)$ is defined as $h_n(TP_A)$, where $P_A$ is a projective resolution of $A$.
+* Derived Functor
+	* For a functor $T$ and an $R\dash$module $A$, a *left derived functor* $(L_nT)$ is defined as $h_n(TP_A)$, where $P_A$ is a projective resolution of $A$.
 
 * Dimension of a manifold
 	* For $x\in M$, the only nonvanishing homology group $H_i(M, M - \theset{x}; \ZZ)$
@@ -115,7 +123,16 @@
 * Euler Characteristic
 
 * Exact Functor
-	* A functor $T$ is right exact if a short exact sequence $0 \to A \to B \to C \to 0$ yields an exact sequence $\ldots TA \to TB \to TC \to 0$, and is left exact if it yields $0 \to TA \to TB \to TC \to \ldots$
+	* A functor $T$ is *right exact* if a short exact sequence 
+	$$0 \to A \to B \to C \to 0$$ 
+	yields an exact sequence 
+	$$\ldots TA \to TB \to TC \to 0,$$ 
+	and is *left exact* if it yields 
+	$$0 \to TA \to TB \to TC \to \ldots$$
+	Thus a functor is exact iff it is both left and right exact, yielding
+	$$
+	0 \to TA \to TB \to TC \to 0
+	$$
 	* Examples:
 		* $\wait \tensor_R \wait$ is a right exact bifunctor.
 
