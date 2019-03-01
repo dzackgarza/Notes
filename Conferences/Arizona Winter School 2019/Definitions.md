@@ -33,7 +33,7 @@ Terms to lookup and define. For each term, provide
 
 Prerequisite Knowledge
 - Commutative Group Laws and Lazard's Theorems
-  - See *Stable homotopy and generalised homology* and *A. Fr¨ohlich, Formal groups*
+  - See *Stable homotopy and generalised homology* and *A. Frohlich, Formal groups*
 - Lubin-Tate Formal Groups
   - See *J. Lubin and J. Tate, Formal complex multiplication in local fields,*
   - For their deformation spaces, see *Formal moduli for one parameter formal Lie groups,*

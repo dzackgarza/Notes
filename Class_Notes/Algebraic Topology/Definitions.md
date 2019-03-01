@@ -100,7 +100,7 @@
 * Homotopy Groups
 * Homotopy Lifting Property
 * Injection
-	* A map $\iota$ with a **left** inverse $f$ satisfing $f\circ \iota = \id$
+	* A map $f$ with a **left** inverse $\iota$ satisfying $\iota\circ f = \id$
 * Intersection Pairing
 	For a manifold $M$, a map on homology defined by
 	$$
