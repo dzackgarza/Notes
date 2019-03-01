@@ -53,20 +53,22 @@
 * Coboundary
 
 * Cochain
-	* An element $c \in C^p(X; R)$ can be represented as as function $c: C_p(X, R) \to R$.
+	* An cochain $c \in C^p(X; R)$ is a map $c \in \hom(C_p(X; R), R)$ on chains.
 
 * Cocycle
 
 * Colimit
 
 * Compact
-	* Every open cover has a finite subcover.
+	* A space $X$ is compact iff every open cover of $X$ has a finite subcover.
 
 * Cone
 	* For a space $X$, defined as
 	$$
-	CX = \frac{X\cross I}
+	CX = \frac{X\cross I} {X \cross \theset{0}}
 	$$
+	Example: The cone on the circle $CS^1$ ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cone.svg/250px-Cone.svg.png)
+	Note that the cone embeds $X$ in a contractible space $CX$.
 
 * Contractible
 	* A space is contractible if its identity map is nullhomotopic.
@@ -90,7 +92,7 @@
 	is an embedding of the $(j-i)\dash$simplex into a $(p+q)\dash$simplex.
 	On a manifold, the cup product is Poincare dual to the intersection of submanifolds.
 	* Applications
-		- $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
+		- $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$. Proof: todo
 
 * CW Complex
 
@@ -349,6 +351,9 @@ $$
 	* A map $\pi$ with a **right** inverse $f$ satisfying $$\pi \circ f = \id$$
 
 * Suspension
+Compact represented as $\Sigma X = CX \coprod_{\id_X} CX$, two cones on $X$ glued along $X$. Explicitly given by
+$$
+$$
 
 * Tor Group
 	* For an $R\dash$module
