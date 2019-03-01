@@ -35,15 +35,3 @@ $$
 
 In general, the deformation theory of an object provides a way of studying the smoothness of the moduli space of such objects.
 
-Terms to lookup and define
-
-- Spectrum
-- Lazard ring
-  > Lazard proved that it has a very simple structure: it is just a polynomial ring (over the integers) on generators of degree 1, 2, 3, ... (where $c_{i,j}$ has degree $(i + j − 1)$). Quillen (1969) proved that the coefficient ring of complex cobordism is naturally isomorphic as a graded ring to Lazard's universal ring.
-- Adams-Novikov spectral sequence
-- Stack
-- Quasi-coherent sheaf
-- Representation of a group
-- Nilpotent
-- Ramified
-- Thom spectra
