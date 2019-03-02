@@ -353,6 +353,7 @@ $$
 * Suspension
 Compact represented as $\Sigma X = CX \coprod_{\id_X} CX$, two cones on $X$ glued along $X$. Explicitly given by
 $$
+\Sigma X = \frac{X\cross I}{(X\cross \theset{0}) \union (X\cross \theset{1}) \union (\theset{x_0} \cross I)}
 $$
 
 * Tor Group
