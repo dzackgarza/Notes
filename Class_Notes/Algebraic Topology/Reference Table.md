@@ -127,8 +127,11 @@
     * The projective special linear group over a ring $R$, $PSL_n(R)$
     * The modular groups $PSL_n(\ZZ)$
       * Specifically $PSL_2(\ZZ)$
+
 * The real Grassmannian, $Gr(n, k, \RR)$, i.e. the set of $k$ dimensional subspaces of $\RR^n$
+
 * The Stiefel manifold $V_n(k)$
+
 * Possible modifications to a space $X$:
 	* Remove $k$ points by taking $D(k, X)
 	* Remove a line segment
@@ -137,13 +140,18 @@
 	* Quotient by a group action (e.g. antipodal map, or rotation)
 	* Remove a knot
 	* Take complement in ambient space
+
 * Assorted info about other Lie Groups:
  * $O_n, U_n, SO_n, SU_n, Sp_n$
+
 * $\pi_k(U_n) = \ZZ\cdot\indicator{k~\text{odd}}$
   * $\pi_1(U_n) = 1$
+
 * $\pi_k(SU_n) = \ZZ\cdot\indicator{k~\text{odd}}$
   * $\pi_1(SU_n) = 0$
+
 * $\pi_k(U_n) = \ZZ_2\cdot\indicator{k = 0,1\mod 8} + \ZZ\cdot\indicator{k = 3,7 \mod 8}$
+
 * $\pi_k(SP_n) = \ZZ_2\cdot\indicator{k = 4,5\mod 8} + \ZZ\cdot\indicator{k = 3,7 \mod 8}$
 
 
