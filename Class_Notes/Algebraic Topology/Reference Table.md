@@ -142,7 +142,7 @@
 * $\pi_i(S^n) = 0$ for $i < n$, $\pi_n(S^n) = \ZZ$
   * Not necessarily true that $\pi_i(S^n) = 0$ when $i > n$!!!
     * E.g. $\pi_3(S^2) = \ZZ$ by Hopf fibration
-* $H_i(S^n) = \indicator[i \in \theset{0, n}]$
+* $H_i(S^n) = \indicator{i \in \theset{0, n}}$
 * $H_n(\bigvee_i X_i) \cong \bigoplus_i H_n(X_i)$ for "good pairs"
   * Corollary: $H_n(\bigvee_k S^n) = \ZZ^k$
 * $S^n / S^k \homotopic S^n \vee \Sigma S^{k}$
