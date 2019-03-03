@@ -117,7 +117,7 @@
     * The projective special linear group over a ring $R$, $PSL_n(R)$
     * The modular groups $PSL_n(\ZZ)$
       * Specifically $PSL_2(\ZZ)$
-* The real Grassmanian, $Gr(n, k, \RR)$, i.e. the set of $k$ dimensional subspaces of $\RR^n$
+* The real Grassmannian, $Gr(n, k, \RR)$, i.e. the set of $k$ dimensional subspaces of $\RR^n$
 * The Stiefel manifold $V_n(k)$
 * Possible modifications to a space $X$:
 	* Remove $k$ points by taking $D(k, X)
