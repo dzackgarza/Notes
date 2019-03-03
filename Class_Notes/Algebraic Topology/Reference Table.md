@@ -1,30 +1,42 @@
 # Conventions
 
 * $\pi_0(X)$ is the set of path components of $X$, and I write $\pi_0(X) = \ZZ$ if $X$ is path-connected (although it is not a group). Similarly, $H_0(X)$ is a free abelian group on the set of path components of $X$.
+
 * Lists start at entry 1, since all spaces are connected here and thus $\pi_0 = H_0 = \ZZ$. That is,
 	- $\pi_*(X) = [\pi_1(X), \pi_2(X), \pi_3(X), \ldots]$
 	- $H_*(X) = [H_1(X), H_2(X), H_3(X)]$
 - For a finite index set $I$, it is the case that $\prod_I G = \bigoplus_I G$ in $\mathbf{Grp}$, i.e. the finite direct product and finite direct sum coincide. Otherwise, if $I$ is infinite, the direct sum requires cofinitely many zero entries (i.e. finitely many nonzero entries), so here we always use $\prod$. In other words, there is an injective map $\bigoplus_I G \injects \prod_I G$ which is an isomorphism when $\abs{I} < \infty$
+
 * $\ZZ^n \definedas \prod_{i=1}^n \ZZ = \ZZ \times \ZZ \times \ldots \ZZ$ is the free abelian group of rank $n$.
 	- $x \in \ZZ^n = \left< a_1, \ldots, a_n\right> \implies x = \sum_n c_i a_i$ for some $c_i \in \ZZ$ , i.e. $a_i$ form a basis.
 	- Example: $x = 2a_1 + 4a_2 + a_1 - a_2 = 3a_1 + 3a_2$.
+
 * $\ZZ^{\ast n} \definedas \ZZ \ast \ZZ \ast \ldots \ZZ$ is the free product of $n$ free abelian groups, i.e. a free (nonabelian) group on $n$ generators.
 	- $x \in \ZZ^{\ast n} = \left< a_1, \ldots, a_n\right>$ implies that $x$ is a finite word in the noncommuting symbols $a_i^k$ for $k\in \ZZ$.
 	- Example: $x = a_1^2 a_2^4 a_1 a_2^{-2}$
+
 * $K(G, n)$ is an Eilenberg-MacLane space, the homotopy-unique space satisfying $\pi_k(K(G, n)) = n$ if $k=n$ and zero otherwise.
 	- $K(\ZZ, 1) = S^1$
 	- $K(\ZZ, 2) = \CP^\infty$
 	- $K(\ZZ_2, 1) = \RP^\infty$
+
 * $M(G, n)$ is a Moore space, the homotopy-unique space satisfying $H_k(M(G, n)) = n$ if $k=n$ and zero otherwise.
 	- $M(\ZZ, n) = S^n$
 	- $M(\ZZ_2, 1) = \RP^2$
 	- $M(\ZZ_p, n)$ is made by attaching $e^{n+1}$ to $S^n$ via a degree $p$ map.
+
 * $T^n = \prod_n S^1$ is the $n\dash$torus
+
 * $D(k, X)$ is the space $X$ with $k\in \NN$ distinct points deleted, i.e. the punctured space $X - \theset{x_1, x_2, \ldots x_k}$ where each $x_i \in X$.
+
 * $\mathbb{RP}^n = S^n /S^0 = S^n / \ZZ_2$
+
 * $\mathbb{CP}^n = S^{2n+1} / S^1$
+
 * $B^n = \theset{\mathbb{v} \in \RR^n \mid \norm{\mathbb{v}} \leq 1} \subset \RR^n$
+
 * $S^{n-1} = \del B^{n} = \theset{\mathbb{v} \in \RR^{n} \mid \norm{\mathbb{v}} = 1} \subset \RR^n$
+
 ![sphere ball correct](assets/sphere-v-ball-correct.png)
 
 # Table of Homotopy and Homology Structures
