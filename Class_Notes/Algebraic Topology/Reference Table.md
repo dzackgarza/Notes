@@ -129,9 +129,9 @@
 	* Take complement in ambient space
 * Assorted info about other Lie Groups:
  * $O_n, U_n, SO_n, SU_n, Sp_n$
-* $\pi_k(U_n) = \ZZ\cdot\mathbf{1}[k~\text{odd}]$
+* $\pi_k(U_n) = \ZZ\cdot\indicator{k~\text{odd}}$
  $\pi_1(U_n) = 1$
-* $\pi_k(SU_n) = \ZZ\cdot\mathbf{1}[k~\text{odd}]$
+* $\pi_k(SU_n) = \ZZ\cdot\mathbf{1}[k~\text{odd}}$
  $\pi_1(SU_n) = 0$
 * $\pi_k(U_n) = \ZZ_2\cdot\mathbf{1}[k = 0,1\mod 8] + \ZZ\cdot\mathbb{1}[k = 3,7 \mod 8]$
 * $\pi_k(SP_n) = \ZZ_2\cdot\mathbf{1}[k = 4,5\mod 8] + \ZZ\cdot\mathbb{1}[k = 3,7 \mod 8]$
