@@ -18,7 +18,10 @@
 	- $x \in \ZZ^{\ast n} = \left< a_1, \ldots, a_n\right>$ implies that $x$ is a finite word in the noncommuting symbols $a_i^k$ for $k\in \ZZ$.
 	- Example: $x = a_1^2 a_2^4 a_1 a_2^{-2}$
 
-* $K(G, n)$ is an Eilenberg-MacLane space, the homotopy-unique space satisfying $\pi_k(K(G, n)) = n$ if $k=n$ and zero otherwise.
+* $K(G, n)$ is an Eilenberg-MacLane space, the homotopy-unique space satisfying 
+$$\begin{cases}
+\pi_k(K(G, n)) = n$ if $k=n$ and zero otherwise.
+\end{cases}$$
 	- $K(\ZZ, 1) = S^1$
 	- $K(\ZZ, 2) = \CP^\infty$
 	- $K(\ZZ_2, 1) = \RP^\infty$
