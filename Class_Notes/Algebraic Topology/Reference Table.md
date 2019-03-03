@@ -19,14 +19,25 @@
 	- Example: $x = a_1^2 a_2^4 a_1 a_2^{-2}$
 
 * $K(G, n)$ is an Eilenberg-MacLane space, the homotopy-unique space satisfying 
-$$\begin{cases}
-\pi_k(K(G, n)) = n$ if $k=n$ and zero otherwise.
-\end{cases}$$
+$$
+\pi_k(K(G, n)) = 
+\begin{cases}
+G & k=n, \\ 
+0 & k\neq n.
+\end{cases}
+$$
 	- $K(\ZZ, 1) = S^1$
 	- $K(\ZZ, 2) = \CP^\infty$
 	- $K(\ZZ_2, 1) = \RP^\infty$
 
-* $M(G, n)$ is a Moore space, the homotopy-unique space satisfying $H_k(M(G, n)) = n$ if $k=n$ and zero otherwise.
+* $M(G, n)$ is a Moore space, the homotopy-unique space satisfying 
+$$
+H_k(KMG, n)) = 
+\begin{cases}
+G & k=n, \\ 
+0 & k\neq n.
+\end{cases}
+$$
 	- $M(\ZZ, n) = S^n$
 	- $M(\ZZ_2, 1) = \RP^2$
 	- $M(\ZZ_p, n)$ is made by attaching $e^{n+1}$ to $S^n$ via a degree $p$ map.
@@ -51,24 +62,24 @@ $$\begin{cases}
 | Space $X$                   | $\pi_*(X)$                                   | $H_*(X)$                                                         | CW                                               | $H^*(X)$                                |
 |-----------------------------|----------------------------------------------|------------------------------------------------------------------|--------------------------------------------------|---------------------------------------|
 | $\RR^n$ [^1]                | $0$                                          | $0$                                                              | $(\union_{\ZZ} e^0 + \union_{\ZZ}e^1)^n$         | 0                                     |
-| $D(k, \RR^n)$[^pplane]      | $\pi_*\bigvee^k S^1$                         | $H_*\bigvee^k S^1$?                                              | $e^0 + ke^1$                                     |                                       |
+| $D(k, \RR^n)$[^pplane]      | $\pi_*\bigvee^k S^1$                         | $\bigoplus_k H_* M(\ZZ, 1)$                                            | $e^0 + ke^1$                                     |                                       |
 | $B^n$ [^2]                  | $\pi_*(\RR^n)$                               | $H_*(\RR^n)$                                                     | $e^0 + e^n + e^{n+1}$[^4]                        | 0                                     |
-| $S^n$                       | $[0 \ldots , \ZZ, ? \ldots]$                 | $[0, \ldots , \ZZ, 0, \ldots]$                                   | $e^0 + e^n$ [^3]                                 |$\ZZ[{}_{n}x]/(x^2)$                                       |
-| $D(k, S^n)$[^punctsphere]   | $\pi_*\bigvee^{k-1}S^1$                      | $H_*\bigvee^{k-1}S^1$                                            | $e^0 + (k-1)e^1$                                 |                                       |
-| $T^2$                       | $\pi_*S^1 \times \pi_* S^1$                  | $(H_* S^1)^2  \times H_* S^2$                                    | $e^0 + 2e^1 + e^2$                               | $\Lambda({}_{1}x_1, {}_{1}x_2)$               |
-| $T^n$                       | $\prod^n \pi_* S^1$[^5]                      | $$\prod_{i=1}^n (H_* S^i)^{n\choose i}$$                         | $$(e^0 + e^1)^n = \sum_{i=1}^n {n\choose i}e^i$$ | $\Lambda({}_{1}x_1, {}_{1}x_2, \ldots {}_{1}x_n)$ |
+| $S^n$                       | $[0 \ldots , \ZZ, ? \ldots]$                 | $H_*M(\ZZ, n)$                                                   | $e^0 + e^n$ [^3]                                 |$\ZZ[{}_{n}x]/(x^2)$                                       |
+| $D(k, S^n)$[^punctsphere]   | $\pi_*\bigvee^{k-1}S^1$                      | $\bigoplus_{k-1}H_*M(\ZZ, 1)$                                          | $e^0 + (k-1)e^1$                                 |                                       |
+| $T^2$                       | $\pi_*S^1 \times \pi_* S^1$                  | $(H_* M(\ZZ, 1))^2  \times H_* M(\ZZ, 2)$                                    | $e^0 + 2e^1 + e^2$                               | $\Lambda({}_{1}x_1, {}_{1}x_2)$               |
+| $T^n$                       | $\prod^n \pi_* S^1$[^5]                      | $$\prod_{i=1}^n (H_* M(\ZZ, i))^{n\choose i}$$                         | $$(e^0 + e^1)^n = \sum_{i=1}^n {n\choose i}e^i$$ | $\Lambda({}_{1}x_1, {}_{1}x_2, \ldots {}_{1}x_n)$ |
 | $D(k, T^n)$                 | $[0, 0, 0, 0, \ldots]$?                      | $[0, 0, 0, 0, \ldots]$?                                          | $e^0 + e^1$                                      |                                       |
-| $S^1 \vee S^1$              | $\pi_*S^1 \ast \pi_* S^1$                    | $H_*S^1 \times H_* S^1$                                          | $e^0 + 2e^1$                                     |                                       |
-| $\bigvee^n S^1$[^circwedge] | $\bigast^n \pi_* S^1$                        | $\prod H_* S^1$                                                  | $e^0 + e^1$                                      |                                       |
-| $\RP^1$[^rp1circle]         | $\pi_* S^1$                                  | $H_* S^1$                                                        | $e^0 + e^1$                                      | ${}_{0}\ZZ \times {}_{1}\ZZ$                                      |
-| $\RP^2$                     | $\pi_*\RP^\infty \times \pi_* S^2$           | $H_*M(\ZZ_2, 1)$                                                 | $e^0 + e^1 + e^2$                                | ${}_{0}\ZZ \times {}_{2}\ZZ_2$                                       |
-| $\RP^3$                     | $\pi_*\RP^\infty \times \pi_* S^3$           | $H_*M(\ZZ_2, 1) \times H_*S^3$                                   | $e^0 + e^1 + e^2 + e^3$                          | ${}_{0}\ZZ \times {}_{2}\ZZ_2 \times {}_{3}\ZZ$                                      |
-| $\RP^4$                     | $\pi_*\RP^\infty \times \pi_* S^4$           | $H_*M(\ZZ_2, 1) \times H_*M(\ZZ_2, 3)$                           | $e^0 + e^1 + e^2 + e^3 + e^4$                    | ${}_{0}\ZZ \times ({}_{2}\ZZ_2)^2$                                      |
-| $\RP^n, n \geq 4$ even      | $\pi_*\RP^\infty \times \pi_*S^n$[^rpn]      | $$\prod_{\text{odd}~i < n} H_*M(\ZZ_2, i)$$                      | $\sum_{i=1}^n e^i$                               | ${}_{0}\ZZ \times \prod_{i=1}^{n/2}{}_{2}\ZZ_2$                                      |
-| $\RP^n, n \geq 4$ odd       | $\pi_*\RP^\infty \times \pi_*S^n$[^rpn]      | $$\prod_{\text{odd}~ i \leq n-2} H_*M(\ZZ_2, i) \times H_* S^n$$ | $\sum_{i=1}^n e^i$                               | $H^*(\RP^{n-1}) \times {}_{n}\ZZ$                                      |
-| $\CP^1$[^cp1sphere]         | $\pi_*\CP^\infty \times \pi_* S^3$           | $H_* S^2$                                                        | $e^0 + e^2$                                      | $\ZZ[{}_{2}x]/({}_2x^{2})$                                      |
-| $\CP^2$                     | $\pi_*\CP^\infty \times \pi_* S^5$           | $H_*S^2 \times H_* S^4$                                          | $e^0 + e^2 + e^4$                                | $\ZZ[{}_{2}x]/({}_2x^{3})$                                      |
-| $\CP^n, n \geq 2$           | $\pi_*\CP^\infty \times \pi_*S^{2n+1}$[^cpn] | $\prod_{i=1}^n H_* S^{2i}$                                       | $\sum_{i=1}^n e^{2i}$                            | $\ZZ[{}_{2}x]/({}_2x^{n+1})$                                      |
+| $S^1 \vee S^1$              | $\pi_*S^1 \ast \pi_* S^1$                    | $(H_*M(\ZZ, 1))^2$                                          | $e^0 + 2e^1$                                     |                                       |
+| $\bigvee^n S^1$[^circwedge] | $\bigast^n \pi_* S^1$                        | $\prod H_* M(\ZZ, 1)$                                                  | $e^0 + e^1$                                      |                                       |
+| $\RP^1$[^rp1circle]         | $\pi_* S^1$                                  | $H_* M(\ZZ, 1)$                                                        | $e^0 + e^1$                                      | ${}_{0}\ZZ \times {}_{1}\ZZ$                                      |
+| $\RP^2$                     | $\pi_*K(\ZZ_2, 1)\times \pi_* S^2$           | $H_*M(\ZZ_2, 1)$                                                 | $e^0 + e^1 + e^2$                                | ${}_{0}\ZZ \times {}_{2}\ZZ_2$                                       |
+| $\RP^3$                     | $\pi_*K(\ZZ_2, 1)\times \pi_* S^3$           | $H_*M(\ZZ_2, 1) \times H_*M(\ZZ, 3)$                                   | $e^0 + e^1 + e^2 + e^3$                          | ${}_{0}\ZZ \times {}_{2}\ZZ_2 \times {}_{3}\ZZ$                                      |
+| $\RP^4$                     | $\pi_*K(\ZZ_2, 1)\times \pi_* S^4$           | $H_*M(\ZZ_2, 1) \times H_*M(\ZZ_2, 3)$                           | $e^0 + e^1 + e^2 + e^3 + e^4$                    | ${}_{0}\ZZ \times ({}_{2}\ZZ_2)^2$                                      |
+| $\RP^n, n \geq 4$ even      | $\pi_*K(\ZZ_2, 1)\times \pi_*S^n$[^rpn]      | $$\prod_{\text{odd}~i < n} H_*M(\ZZ_2, i)$$                      | $\sum_{i=1}^n e^i$                               | ${}_{0}\ZZ \times \prod_{i=1}^{n/2}{}_{2}\ZZ_2$                                      |
+| $\RP^n, n \geq 4$ odd       | $\pi_*K(\ZZ_2, 1)\times \pi_*S^n$[^rpn]      | $$\prod_{\text{odd}~ i \leq n-2} H_*M(\ZZ_2, i) \times H_* S^n$$ | $\sum_{i=1}^n e^i$                               | $H^*(\RP^{n-1}) \times {}_{n}\ZZ$                                      |
+| $\CP^1$[^cp1sphere]         | $\pi_*K(\ZZ, 2)  \times \pi_* S^3$           | $H_* S^2$                                                        | $e^0 + e^2$                                      | $\ZZ[{}_{2}x]/({}_2x^{2})$                                      |
+| $\CP^2$                     | $\pi_*K(\ZZ, 2)  \times \pi_* S^5$           | $H_*S^2 \times H_* S^4$                                          | $e^0 + e^2 + e^4$                                | $\ZZ[{}_{2}x]/({}_2x^{3})$                                      |
+| $\CP^n, n \geq 2$           | $\pi_*K(\ZZ, 2)  \times \pi_*S^{2n+1}$[^cpn] | $\prod_{i=1}^n H_* S^{2i}$                                       | $\sum_{i=1}^n e^{2i}$                            | $\ZZ[{}_{2}x]/({}_2x^{n+1})$                                      |
 | Mobius Band [^mobius]       | $\pi_* S^1$                                  | $H_* S^1$                                                        | $e^0 + e^1$                                      |                                       |
 | Klein Bottle                | $K(\ZZ\semidirect_{x \mapsto -x} \ZZ, 1)$[^piklein]      | $H_*S^1 \times H_* \RP^\infty$                                   | $e^0 + 2e^1 + e^2$                               |                                       |
 
