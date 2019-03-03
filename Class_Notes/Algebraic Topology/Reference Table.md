@@ -134,7 +134,7 @@
 * $\pi_k(SU_n) = \ZZ\cdot\indicator{k~\text{odd}}$
  $\pi_1(SU_n) = 0$
 * $\pi_k(U_n) = \ZZ_2\cdot\indicator{k = 0,1\mod 8} + \ZZ\cdot\indicator{k = 3,7 \mod 8}$
-* $\pi_k(SP_n) = \ZZ_2\cdot\mathbf{1}[k = 4,5\mod 8] + \ZZ\cdot\indicator{k = 3,7 \mod 8}$
+* $\pi_k(SP_n) = \ZZ_2\cdot\indicator{k = 4,5\mod 8} + \ZZ\cdot\indicator{k = 3,7 \mod 8}$
 
 
 # Spheres
