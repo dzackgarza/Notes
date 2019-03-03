@@ -78,9 +78,11 @@
 	  - $(A \injects X) \mapsto (A, X, X/A)$
   * Excision
 * $\pi_{i\geq 2}(X)$ is always abelian.
+
 * The ranks of $\pi_0$ and $H_0$ are the number of path components, and $\pi_0(X) = \ZZ$ iff $X$ is simply connected.
 	* $X$ simply connected implies $\pi_k(X) \cong H_k(X)$ up to and including the first nonvanishing $H_k$
 	* $H_1(X) = \pi_1 X / [\pi_1X, \pi_1X]$, the abelianization.
+
 * General mantra: homotopy plays nicely with products, homology with wedge products.[^pullbacks]
 	> In general, homotopy groups behave nicely under homotopy pull-backs (e.g., fibrations and products), but not homotopy push-outs (e.g., cofibrations and wedges). Homology is the opposite.
 	* $\pi_k\prod X = \prod \pi_k X$ by LES.[^homotopyproduct]
