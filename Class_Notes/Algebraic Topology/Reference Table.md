@@ -110,6 +110,7 @@
 # Other Interesting Things To Consider
 
 * The "generalized uniform bouquet"? $\mathcal{B}^n(m) = \bigvee_{i=1}^n S^m$
+
 * Lie Groups
   * The real general linear group, $\GL_n(\RR)$
     * The real special linear group $SL_n(\RR)$
@@ -118,6 +119,7 @@
     * The real unitary group, $U_n(\RR)$
       * The real special unitary group, $SU_n(\RR)$
     * The real symplectic group $Sp(n)$
+
 * "Geometric" Stuff
   * Affine $n$-space over a field $\AA^n(k) = k^n \semidirect GL_n(k)$
   * The projective space $\PP^n(k)$
