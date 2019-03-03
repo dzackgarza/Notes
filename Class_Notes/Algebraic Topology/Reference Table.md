@@ -6,7 +6,9 @@
 	* $\pi_*(X) = [\pi_1(X), \pi_2(X), \pi_3(X), \cdots]$
 	* $H_*(X) = [H_1(X), H_2(X), H_3(X), \cdots]$
 
-* For a finite index set $I$, it is the case that $\prod_I G = \bigoplus_I G$ in $\mathbf{Grp}$, i.e. the finite direct product and finite direct sum coincide. Otherwise, if $I$ is infinite, the direct sum requires cofinitely many zero entries (i.e. finitely many nonzero entries), so here we always use $\prod$. In other words, there is an injective map $\bigoplus_I G \injects \prod_I G$ which is an isomorphism when $\abs{I} < \infty$
+* For a finite index set $I$, it is the case that $\prod_I G = \bigoplus_I G$ in $\mathbf{Grp}$, i.e. the finite direct product and finite direct sum coincide. Otherwise, if $I$ is infinite, the direct sum requires cofinitely many zero entries (i.e. finitely many nonzero entries), so here we always use $\prod$. 
+
+In other words, there is an injective map $\bigoplus_I G \injects \prod_I G$ which is an isomorphism when $\abs{I} < \infty$
 
 * $\ZZ^n \definedas \prod_{i=1}^n \ZZ = \ZZ \times \ZZ \times \ldots \ZZ$ is the free abelian group of rank $n$.
 	- $x \in \ZZ^n = \left< a_1, \cdots, a_n\right> \implies x = \sum_n c_i a_i$ for some $c_i \in \ZZ$ , i.e. $a_i$ form a basis.
