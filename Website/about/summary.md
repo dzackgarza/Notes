@@ -24,7 +24,7 @@
 # Talks
 
 ## 2019
-- 02/2019: 
+- 02/2019: Mathematics Subject GRE Workshop
 
 ## 2018
 - 06/2018: Homotopy and the Hopf Fibration
@@ -44,7 +44,7 @@
 
 - 04/2017: Introduction to LaTeX
 
-- 02/2017: Intermediate LaTeXs
+- 02/2017: Intermediate LaTeX
 
 - 01/2017: Intermediate LaTex: Organizing Large Projects
 
