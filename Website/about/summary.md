@@ -2,7 +2,7 @@
 
 # Activities
 * 04/2019: Attendee, [Arizona Winter School 2019: Topology and Arithmetic](http://swc.math.arizona.edu/)
- * [Some notes (WIP):](https://dzackgarza.com/rawnotes/Conferences/Arizona-Winter-School-2019/Typeset/)
+  * [Some notes (WIP):](https://dzackgarza.com/rawnotes/Conferences/Arizona-Winter-School-2019/Typeset/)
 
 * 01/2019: Attendee, [Complex Algebraic Geometry Conferenc (UC San Diego)](https://sites.google.com/site/complexalgebraicgeometry2019/)
   * [Some notes](https://dzackgarza.com/rawnotes/Conferences/UCSD%20Algebraic%20Geometry%20Jan%202019/Notes%20on%20Talks.html)
