@@ -1,6 +1,8 @@
 [toc]
 
+
 # Activities
+
 * 04/2019: Attendee, [Arizona Winter School 2019: Topology and Arithmetic](http://swc.math.arizona.edu/)
   * [Some notes (WIP):](https://dzackgarza.com/rawnotes/Conferences/Arizona-Winter-School-2019/Typeset/)
 
@@ -20,6 +22,9 @@
 ---
 
 # Talks
+
+## 2019
+- 02/2019: 
 
 ## 2018
 - 06/2018: Homotopy and the Hopf Fibration
