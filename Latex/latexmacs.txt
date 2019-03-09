@@ -46,7 +46,7 @@
 \def\and{{\text{ and }}}
 \def\or{{\text{ or }}}
 \def\bd{{\del}}
-\def\wait{\cdot\}
+\def\wait{\cdot}
 \def\selfmap{{\circlearrowleft}}
 \def\tor{\text{Tor}}
 \def\ext{\text{Ext}}
