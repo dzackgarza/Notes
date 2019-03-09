@@ -53,7 +53,7 @@
 \newcommand{\actson}{\curvearrowright}
 \newcommand{\actsonl}{\curvearrowleft}
 \newcommand{\disjoint}{{\coprod}}
-\newcommand{\qed}{{\tag*{$\blacksquare$}}}
+\renewcommand{\qed}{{\tag*{$\blacksquare$}}}
 \newcommand{\endef}{{\tag*{$\triangleleft$}}}
 \newcommand{\dash}{{\hbox{-}}}
 \newcommand{\bigast}{{\mathop{\Large \ast}}}
