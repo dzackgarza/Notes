@@ -46,7 +46,7 @@
 \def\and{{\text{ and }}}
 \def\or{{\text{ or }}}
 \def\bd{{\del}}
-\def\wait{{\,\cdot\,}}
+\def\wait{\cdot\}
 \def\selfmap{{\circlearrowleft}}
 \def\tor{\text{Tor}}
 \def\ext{\text{Ext}}
@@ -54,12 +54,10 @@
 \def\actson{\curvearrowright}
 \def\actsonl{\curvearrowleft}
 \def\disjoint{{\coprod}}
-\def\qed{{\tag*{$\blacksquare$}}}
-\def\endef{{\tag*{$\triangleleft$}}}
 \def\dash{{\hbox{-}}}
 \def\bigast{{\mathop{\Large \ast}}}
 \def\from{\leftarrow}
 \def\covers{\twoheadrightarrow}
-\def\normal{{~\trianglelefteq~}}
+\def\normal{\trianglelefteq}
 \def\inv{^{-1}}
 \def\units{^{\times}}
