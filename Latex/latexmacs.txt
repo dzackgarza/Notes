@@ -42,8 +42,6 @@
 \newcommand{\tensor}{\otimes}
 \newcommand{\semidirect}{\rtimes}
 \newcommand{\pt}{\{\text{pt}\}}
-\renewcommand{\and}{{\text{ and }}}
-\renewcommand{\or}{{\text{ or }}}
 \newcommand{\bd}{{\del}}
 \newcommand{\wait}{{\,\cdot\,}}
 \newcommand{\selfmap}{{\circlearrowleft}}
@@ -53,7 +51,6 @@
 \newcommand{\actson}{\curvearrowright}
 \newcommand{\actsonl}{\curvearrowleft}
 \newcommand{\disjoint}{{\coprod}}
-\renewcommand{\qed}{{\tag*{$\blacksquare$}}}
 \newcommand{\dash}{{\hbox{-}}}
 \newcommand{\bigast}{{\mathop{\Large \ast}}}
 \newcommand{\from}{\leftarrow}
