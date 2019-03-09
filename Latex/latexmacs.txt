@@ -9,15 +9,16 @@
 \newcommand{\OP}{{\mathbb{OP}}}
 \newcommand{\FF}{{\mathbb{F}}}
 \newcommand{\PP}{{\mathbb{P}}}
-\newcommand{\A}{{\mathbb{A}}}
+\newcommand{\AA}{{\mathbb{A}}}
 \newcommand{\MM}{{\mathbb{M}}}
 \newcommand{\TT}{{\mathbb{T}}}
+\newcommand{\SS}{{\mathbb{S}}}
 \newcommand{\KK}{{\mathbb{K}}}
 \newcommand{\Gr}{{\text{Gr}}}
 \newcommand{\GL}{{\text{GL}}}
 \newcommand{\SL}{{\text{SL}}}
 \newcommand{\SO}{{\text{SO}}}
-\newcommand{\OO}{{\mathcal{O}}}
+\newcommand{\O}{{\mathcal{O}}}
 \newcommand{\Zp}{\mathbb{Z}_{(p)}}
 \newcommand{\Qp}{\mathbb{Q}_{(p)}}
 \newcommand{\ZpZ}{\mathbb{Z}/p\mathbb{Z}}
@@ -42,15 +43,19 @@
 \newcommand{\tensor}{\otimes}
 \newcommand{\semidirect}{\rtimes}
 \newcommand{\pt}{\{\text{pt}\}}
+\newcommand{\and}{{\text{ and }}}
+\newcommand{\or}{{\text{ or }}}
 \newcommand{\bd}{{\del}}
 \newcommand{\wait}{{\,\cdot\,}}
 \newcommand{\selfmap}{{\circlearrowleft}}
 \newcommand{\tor}{\text{Tor}}
 \newcommand{\ext}{\text{Ext}}
-\renewcommand{\hom}{\text{Hom}}
+\newcommand{\hom}{\text{Hom}}
 \newcommand{\actson}{\curvearrowright}
 \newcommand{\actsonl}{\curvearrowleft}
 \newcommand{\disjoint}{{\coprod}}
+\newcommand{\qed}{{\tag*{$\blacksquare$}}}
+\newcommand{\endef}{{\tag*{$\triangleleft$}}}
 \newcommand{\dash}{{\hbox{-}}}
 \newcommand{\bigast}{{\mathop{\Large \ast}}}
 \newcommand{\from}{\leftarrow}
