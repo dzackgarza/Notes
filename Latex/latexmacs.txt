@@ -49,7 +49,7 @@
 \newcommand{\selfmap}{{\circlearrowleft}}
 \newcommand{\tor}{\text{Tor}}
 \newcommand{\ext}{\text{Ext}}
-\def{\hom}{\text{Hom}}
+\renewcommand{\hom}{\text{Hom}}
 \newcommand{\actson}{\curvearrowright}
 \newcommand{\actsonl}{\curvearrowleft}
 \newcommand{\disjoint}{{\coprod}}
