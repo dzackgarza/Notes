@@ -43,8 +43,6 @@
 \newcommand{\tensor}{\otimes}
 \newcommand{\semidirect}{\rtimes}
 \newcommand{\pt}{\{\text{pt}\}}
-\newcommand{\and}{{\text{ and }}}
-\newcommand{\or}{{\text{ or }}}
 \newcommand{\bd}{{\del}}
 \newcommand{\wait}{{\,\cdot\,}}
 \newcommand{\selfmap}{{\circlearrowleft}}
