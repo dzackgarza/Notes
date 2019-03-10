@@ -92,4 +92,3 @@
 \declarecommand*{\qed}[0]{{\tag*{$\blacksquare$}}}
 \declarecommand*{\and}[0]{{\text{ and }}}
 \declarecommand*{\or}[0]{{\text{ or }}}
-\declarecommand*{\endef}[0]{{\tag*{$\triangleleft$}}}
