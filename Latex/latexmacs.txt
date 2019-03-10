@@ -88,8 +88,3 @@
 \newcommand{\inv}{^{-1}}
 \newcommand{\normal}{{~\trianglelefteq~}}
 \newcommand{\units}{^{\times}}
-\newcommand{\hom}{\text{Hom}}
-\newcommand{\qed}{{\tag*{$\blacksquare$}}}
-\newcommand{\and}{{\text{ and }}}
-\newcommand{\or}{{\text{ or }}}
-\newcommand{\endef}{{\tag*{$\triangleleft$}}}
