@@ -1,95 +1,95 @@
-\declarecommand{\NN}[0]{{\mathbb{N}}}
-\declarecommand{\RR}[0]{{\mathbb{R}}}
-\declarecommand{\ZZ}[0]{{\mathbb{Z}}}
-\declarecommand{\CC}[0]{{\mathbb{C}}}
-\declarecommand{\QQ}[0]{{\mathbb{Q}}}
-\declarecommand{\RP}[0]{{\mathbb{RP}}}
-\declarecommand{\CP}[0]{{\mathbb{CP}}}
-\declarecommand{\HP}[0]{{\mathbb{HP}}}
-\declarecommand{\OP}[0]{{\mathbb{OP}}}
-\declarecommand{\FF}[0]{{\mathbb{F}}}
-\declarecommand{\PP}[0]{{\mathbb{P}}}
-\declarecommand{\Af}[0]{{\mathbb{A}}}
-\declarecommand{\MM}[0]{{\mathbb{M}}}
-\declarecommand{\TT}[0]{{\mathbb{T}}}
-\declarecommand{\Sp}[0]{{\mathbb{S}}}
-\declarecommand{\KK}[0]{{\mathbb{K}}}
-\declarecommand{\Gr}[0]{{\text{Gr}}}
-\declarecommand{\GL}[0]{{\text{GL}}}
-\declarecommand{\SL}[0]{{\text{SL}}}
-\declarecommand{\SO}[0]{{\text{SO}}}
-\declarecommand{\OO}[0]{{\mathcal{O}}}
-\declarecommand{\dual}[0]{\vee}
-\declarecommand{\Tr}[0]{\mathrm{Tr}}
-\declarecommand{\divides}[0]{{~\mid ~}}
-\declarecommand{\sym}[0]{\mathrm{Sym}}
-\declarecommand{\aut}[0]{\mathrm{Aut}}
-\declarecommand{\char}[0]{{\mathbb{1}}}
-\declarecommand{\grad}[0]{\mathrm{grad}}
-\declarecommand{\spec}[0]{{\mathrm{Spec}}}
-\declarecommand{\suchthat}[0]{{~\backepsilon ~}}
-\declarecommand{\uniformlyconverges}[0]{\rightrightarrows}
-\declarecommand{\mapsvia}[1]{\xrightarrow{#1}}
-\declarecommand{\vector}[1]{{\mathbf{ {#1} }}}
-\declarecommand{\generators}[1]{\langle{#1}\rangle}
-\declarecommand{\theset}[1]{\{{#1}\}}
-\declarecommand{\too}[1]{{\xrightarrow{#1}}}
-\declarecommand{\norm}[1]{{{\lVert}{#1}{\rVert}}}
-\declarecommand{\restrictionof}[2]{{\left.{#1}\right|_{#2}}}
-\declarecommand{\inner}[2]{{\langle {#1}, {#2} \rangle}}
-\declarecommand{\indicator}[1]{{\unicode{x1D7D9}\left[#1\right]}}
-\declarecommand{\equalsbecause}[1]{{\stackrel{\mbox{$\tiny{\text{ #1 }}$}}{=}}}
-\declarecommand{\conjugate}[1]{{\overline{{#1}}}}
-\declarecommand{\strike}[1]{{\enclose{horizontalstrike}{#1}}}
-\declarecommand{\realpart}[1]{{\mathcal{Re}({#1})}}
-\declarecommand{\imaginarypart}[1]{{\mathcal{Im}({#1})}}
-\declarecommand{\dd}[2]{{\frac{\partial #1}{\partial #2}}}
-\declarecommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
-\declarecommand{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
-\declarecommand{\thevector}[1]{{\left[ {#1} \right]}}
-\declarecommand{\th}[0]{{\text{th}}}
-\declarecommand{\abs}[2]{{\left\lvert #2 \right\rvert_{\text{#1}}}}
-\declarecommand{\intersect}[0]{\bigcap}
-\declarecommand{\union}[0]{\bigcup}
-\declarecommand{\coker}[0]{\operatorname{coker}}
-\declarecommand{\rank}[0]{\operatorname{rank}}
-\declarecommand{\tensor}[0]{\otimes}
-\declarecommand{\semidirect}[0]{\rtimes}
-\declarecommand{\pt}[0]{\{\text{pt}\}}
-\declarecommand{\bd}[0]{{\del}}
-\declarecommand{\wait}[0]{{\,\cdot\,}}
-\declarecommand{\selfmap}[0]{{\circlearrowleft}}
-\declarecommand{\tor}[0]{\text{Tor}}
-\declarecommand{\ext}[0]{\text{Ext}}
-\declarecommand{\actson}[0]{\curvearrowright}
-\declarecommand{\actsonl}[0]{\curvearrowleft}
-\declarecommand{\disjoint}[0]{{\coprod}}
-\declarecommand{\dash}[0]{{\hbox{-}}}
-\declarecommand{\bigast}[0]{{\mathop{\Large \ast}}}
-\declarecommand{\from}[0]{\leftarrow}
-\declarecommand{\covers}[0]{\twoheadrightarrow}
-\declarecommand{\Zp}[0]{\mathbb{Z}_{(p)}}
-\declarecommand{\Qp}[0]{\mathbb{Q}_{(p)}}
-\declarecommand{\ZpZ}[0]{\mathbb{Z}/p\mathbb{Z}}
-\declarecommand{\Sm}[0]{{\text{Sm}_k}}
-\declarecommand{\GG}[0]{{\mathbb{G}}}
-\declarecommand{\bung}[0]{\text{Bun}_G}
-\declarecommand{\Aut}[0]{{\text{Aut}}}
-\declarecommand{\del}[0]{{\partial}}
-\declarecommand{\im}[0]{{\text{im}~}}
-\declarecommand{\homotopic}[0]{\simeq}
-\declarecommand{\into}[0]{\to}
-\declarecommand{\cross}[0]{\times}
-\declarecommand{\definedas}[0]{\mathrel{\vcenter{:}}=}
-\declarecommand{\surjects}[0]{\twoheadrightarrow}
-\declarecommand{\onto}[0]{\twoheadrightarrow}
-\declarecommand{\injects}[0]{\hookrightarrow}
-\declarecommand{\id}[0]{\text{id}}
-\declarecommand{\inv}[0]{^{-1}}
-\declarecommand{\normal}[0]{{~\trianglelefteq~}}
-\declarecommand{\units}[0]{^{\times}}
-\declarecommand{\hom}[0]{\text{Hom}}
-\declarecommand{\qed}[0]{{\tag*{$\blacksquare$}}}
-\declarecommand{\and}[0]{{\text{ and }}}
-\declarecommand{\or}[0]{{\text{ or }}}
-\declarecommand{\endef}[0]{{\tag*{$\triangleleft$}}}
+\declarecommand*{\NN}[0]{{\mathbb{N}}}
+\declarecommand*{\RR}[0]{{\mathbb{R}}}
+\declarecommand*{\ZZ}[0]{{\mathbb{Z}}}
+\declarecommand*{\CC}[0]{{\mathbb{C}}}
+\declarecommand*{\QQ}[0]{{\mathbb{Q}}}
+\declarecommand*{\RP}[0]{{\mathbb{RP}}}
+\declarecommand*{\CP}[0]{{\mathbb{CP}}}
+\declarecommand*{\HP}[0]{{\mathbb{HP}}}
+\declarecommand*{\OP}[0]{{\mathbb{OP}}}
+\declarecommand*{\FF}[0]{{\mathbb{F}}}
+\declarecommand*{\PP}[0]{{\mathbb{P}}}
+\declarecommand*{\Af}[0]{{\mathbb{A}}}
+\declarecommand*{\MM}[0]{{\mathbb{M}}}
+\declarecommand*{\TT}[0]{{\mathbb{T}}}
+\declarecommand*{\Sp}[0]{{\mathbb{S}}}
+\declarecommand*{\KK}[0]{{\mathbb{K}}}
+\declarecommand*{\Gr}[0]{{\text{Gr}}}
+\declarecommand*{\GL}[0]{{\text{GL}}}
+\declarecommand*{\SL}[0]{{\text{SL}}}
+\declarecommand*{\SO}[0]{{\text{SO}}}
+\declarecommand*{\OO}[0]{{\mathcal{O}}}
+\declarecommand*{\dual}[0]{\vee}
+\declarecommand*{\Tr}[0]{\mathrm{Tr}}
+\declarecommand*{\divides}[0]{{~\mid ~}}
+\declarecommand*{\sym}[0]{\mathrm{Sym}}
+\declarecommand*{\aut}[0]{\mathrm{Aut}}
+\declarecommand*{\char}[0]{{\mathbb{1}}}
+\declarecommand*{\grad}[0]{\mathrm{grad}}
+\declarecommand*{\spec}[0]{{\mathrm{Spec}}}
+\declarecommand*{\suchthat}[0]{{~\backepsilon ~}}
+\declarecommand*{\uniformlyconverges}[0]{\rightrightarrows}
+\declarecommand*{\mapsvia}[1]{\xrightarrow{#1}}
+\declarecommand*{\vector}[1]{{\mathbf{ {#1} }}}
+\declarecommand*{\generators}[1]{\langle{#1}\rangle}
+\declarecommand*{\theset}[1]{\{{#1}\}}
+\declarecommand*{\too}[1]{{\xrightarrow{#1}}}
+\declarecommand*{\norm}[1]{{{\lVert}{#1}{\rVert}}}
+\declarecommand*{\restrictionof}[2]{{\left.{#1}\right|_{#2}}}
+\declarecommand*{\inner}[2]{{\langle {#1}, {#2} \rangle}}
+\declarecommand*{\indicator}[1]{{\unicode{x1D7D9}\left[#1\right]}}
+\declarecommand*{\equalsbecause}[1]{{\stackrel{\mbox{$\tiny{\text{ #1 }}$}}{=}}}
+\declarecommand*{\conjugate}[1]{{\overline{{#1}}}}
+\declarecommand*{\strike}[1]{{\enclose{horizontalstrike}{#1}}}
+\declarecommand*{\realpart}[1]{{\mathcal{Re}({#1})}}
+\declarecommand*{\imaginarypart}[1]{{\mathcal{Im}({#1})}}
+\declarecommand*{\dd}[2]{{\frac{\partial #1}{\partial #2}}}
+\declarecommand*{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
+\declarecommand*{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
+\declarecommand*{\thevector}[1]{{\left[ {#1} \right]}}
+\declarecommand*{\th}[0]{{\text{th}}}
+\declarecommand*{\abs}[2]{{\left\lvert #2 \right\rvert_{\text{#1}}}}
+\declarecommand*{\intersect}[0]{\bigcap}
+\declarecommand*{\union}[0]{\bigcup}
+\declarecommand*{\coker}[0]{\operatorname{coker}}
+\declarecommand*{\rank}[0]{\operatorname{rank}}
+\declarecommand*{\tensor}[0]{\otimes}
+\declarecommand*{\semidirect}[0]{\rtimes}
+\declarecommand*{\pt}[0]{\{\text{pt}\}}
+\declarecommand*{\bd}[0]{{\del}}
+\declarecommand*{\wait}[0]{{\,\cdot\,}}
+\declarecommand*{\selfmap}[0]{{\circlearrowleft}}
+\declarecommand*{\tor}[0]{\text{Tor}}
+\declarecommand*{\ext}[0]{\text{Ext}}
+\declarecommand*{\actson}[0]{\curvearrowright}
+\declarecommand*{\actsonl}[0]{\curvearrowleft}
+\declarecommand*{\disjoint}[0]{{\coprod}}
+\declarecommand*{\dash}[0]{{\hbox{-}}}
+\declarecommand*{\bigast}[0]{{\mathop{\Large \ast}}}
+\declarecommand*{\from}[0]{\leftarrow}
+\declarecommand*{\covers}[0]{\twoheadrightarrow}
+\declarecommand*{\Zp}[0]{\mathbb{Z}_{(p)}}
+\declarecommand*{\Qp}[0]{\mathbb{Q}_{(p)}}
+\declarecommand*{\ZpZ}[0]{\mathbb{Z}/p\mathbb{Z}}
+\declarecommand*{\Sm}[0]{{\text{Sm}_k}}
+\declarecommand*{\GG}[0]{{\mathbb{G}}}
+\declarecommand*{\bung}[0]{\text{Bun}_G}
+\declarecommand*{\Aut}[0]{{\text{Aut}}}
+\declarecommand*{\del}[0]{{\partial}}
+\declarecommand*{\im}[0]{{\text{im}~}}
+\declarecommand*{\homotopic}[0]{\simeq}
+\declarecommand*{\into}[0]{\to}
+\declarecommand*{\cross}[0]{\times}
+\declarecommand*{\definedas}[0]{\mathrel{\vcenter{:}}=}
+\declarecommand*{\surjects}[0]{\twoheadrightarrow}
+\declarecommand*{\onto}[0]{\twoheadrightarrow}
+\declarecommand*{\injects}[0]{\hookrightarrow}
+\declarecommand*{\id}[0]{\text{id}}
+\declarecommand*{\inv}[0]{^{-1}}
+\declarecommand*{\normal}[0]{{~\trianglelefteq~}}
+\declarecommand*{\units}[0]{^{\times}}
+\declarecommand*{\hom}[0]{\text{Hom}}
+\declarecommand*{\qed}[0]{{\tag*{$\blacksquare$}}}
+\declarecommand*{\and}[0]{{\text{ and }}}
+\declarecommand*{\or}[0]{{\text{ or }}}
+\declarecommand*{\endef}[0]{{\tag*{$\triangleleft$}}}
