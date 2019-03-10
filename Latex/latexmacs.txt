@@ -12,7 +12,7 @@
 \newcommand{\Af}{{\mathbb{A}}}
 \newcommand{\MM}{{\mathbb{M}}}
 \newcommand{\TT}{{\mathbb{T}}}
-\newcommand{\SS}{{\mathbb{S}}}
+\newcommand{\Sph}{{\mathbb{S}}}
 \newcommand{\KK}{{\mathbb{K}}}
 \newcommand{\Gr}{{\text{Gr}}}
 \newcommand{\GL}{{\text{GL}}}
