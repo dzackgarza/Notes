@@ -18,7 +18,7 @@
 \newcommand{\GL}{{\text{GL}}}
 \newcommand{\SL}{{\text{SL}}}
 \newcommand{\SO}{{\text{SO}}}
-\newcommand{\O}{{\mathcal{O}}}
+\newcommand{\OO}{{\mathcal{O}}}
 \newcommand{\Zp}{\mathbb{Z}_{(p)}}
 \newcommand{\Qp}{\mathbb{Q}_{(p)}}
 \newcommand{\ZpZ}{\mathbb{Z}/p\mathbb{Z}}
