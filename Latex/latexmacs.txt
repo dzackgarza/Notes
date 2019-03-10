@@ -24,7 +24,6 @@
 \newcommand{\divides}[0]{{~\mid ~}}
 \newcommand{\sym}[0]{\mathrm{Sym}}
 \newcommand{\aut}[0]{\mathrm{Aut}}
-\newcommand{\char}[0]{{\mathbb{1}}}
 \newcommand{\grad}[0]{\mathrm{grad}}
 \newcommand{\spec}[0]{{\mathrm{Spec}}}
 \newcommand{\suchthat}[0]{{~\backepsilon ~}}
