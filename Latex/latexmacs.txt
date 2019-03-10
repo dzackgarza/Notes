@@ -9,7 +9,7 @@
 \newcommand{\OP}{{\mathbb{OP}}}
 \newcommand{\FF}{{\mathbb{F}}}
 \newcommand{\PP}{{\mathbb{P}}}
-\newcommand{\AA}{{\mathbb{A}}}
+\newcommand{\Af}{{\mathbb{A}}}
 \newcommand{\MM}{{\mathbb{M}}}
 \newcommand{\TT}{{\mathbb{T}}}
 \newcommand{\SS}{{\mathbb{S}}}
