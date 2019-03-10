@@ -58,3 +58,17 @@
 % Major Macros
 %\renewcommand{\and}{{\text{ and }}}
 %\renewcommand{\or}{{\text{ or }}}
+
+% Hack: Calls /providecommand and /renewcommand together
+% to allow a version of /newcommand that doesn't care
+% if a command was previously defined.
+\makeatletter
+\newcommand*{\declarecommand}{%
+  \@star@or@long\declare@command
+}
+\newcommand*{\declare@command}[1]{%
+  \provide@command{#1}{}%
+  % \let#1\@empty % would be more efficient, but without error checking
+  \renew@command{#1}%
+}
+\makeatother
