@@ -88,7 +88,3 @@
 \declarecommand{\inv}[0]{^{-1}}
 \declarecommand{\normal}[0]{{~\trianglelefteq~}}
 \declarecommand{\units}[0]{^{\times}}
-\declarecommand{\hom}[0]{\text{Hom}}
-\declarecommand{\qed}[0]{{\tag*{$\blacksquare$}}}
-\declarecommand{\and}[0]{{\text{ and }}}
-\declarecommand{\or}[0]{{\text{ or }}}
