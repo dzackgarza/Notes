@@ -150,7 +150,7 @@ $$
     * The real symplectic group $Sp(n)$
 
 * "Geometric" Stuff
-  * Affine $n$-space over a field $\AA^n(k) = k^n \semidirect GL_n(k)$
+  * Affine $n$-space over a field $\Af^n(k) = k^n \semidirect GL_n(k)$
   * The projective space $\PP^n(k)$
     * The projective linear group over a ring $R$, $PGL_n(R)$
     * The projective special linear group over a ring $R$, $PSL_n(R)$

@@ -1,6 +1,6 @@
 # The Fundamental Group
 
-## Lemma: $\pi_1(X)$ for a CW-complex only depends on the 1-skeleton, and $H^k(X)$ only depends on the $k$-skeleton.
+## Lemma: The fundamental group of a CW-complex only depends on the 1-skeleton, and $H^k(X)$ only depends on the $k$-skeleton.
 
 ## Definition: Homotopy
 
@@ -29,13 +29,13 @@ So let $f, g: Z \into X$ be any continuous functions into $X$. Then define $H: Z
 
 Let $f: X \to Y$ be a continuous map, then $f$ is said to be a *homotopy equivalence* if there exists a continuous map $g: X \to Y$ such that
 
-$$ f\circ g \homotopic \id_Y$$ and $g\circ f \homotopic \id_X$.
+$f\circ g \homotopic \id_Y$ and $g\circ f \homotopic \id_X$.
 
 Such a map $g$ is called a homotopy inverse of $f$, the pair of maps is a homotopy equivalence.
 
 If such an $f$ exists, we write $X \homotopic Y$ and say $X$ and $Y$ have the same homotopy type, or that they are homotopy equivalent.
 
-(Note that homotopy equivalence is strictly weaker than homeomorphic equivalence, i.e., $X\cong Y$ implies $X \homotopic Y$ but not necessarily the converse.)
+> Note that homotopy equivalence is strictly weaker than homeomorphic equivalence, i.e., $X\cong Y$ implies $X \homotopic Y$ but not necessarily the converse.
 
 ## Definition: Contractible
 
@@ -49,11 +49,19 @@ Let $X$ be a topological space and $A \subset X$ be a subspace, then a *retracti
 
 Note that this definition isn't very useful, as every space has at least one retraction - for example, the constant map $r:X \into \theset{x_0}$ for any $x\_0 \in X$.
 
-A *deformation retract* is a homotopy $H:X\cross I \into X$ from the identity on $X$ to the identity on $A$ that fixes $A$ at all times. That is, $H(x, 0) = \id_X(x) = x$, $H(x,1) \in A$, and $H(a, t) \in A$ for all $a\in A$ (so $\restrictionof{H}{A} = \id_A$).
+A *deformation retract* is a homotopy $H:X\cross I \into X$ from the identity on $X$ to the identity on $A$ that fixes $A$ at all times. That is,
+$$
+H: X\cross I \to X \\
+H(x, 0) = \id_X \\
+H(x, 1) = \id_A \\
+x\in A \implies H(x, t) \in A \quad \forall t
+$$
+
+Equivalently, this requires that $\restrictionof{H}{A} = \id_A$
 
 A deformation retract between a space and a subspace is a homotopy equivalence, and further $X\homotopic Y$ iff there is a $Z$ such that both $X$ and $Y$ are deformation retracts of $Z$. Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$, then $A \homotopic B$.
 
-## Definition: The Fundamental Group $\pi_1(X)$
+## Definition: The Fundamental Group / 1st Homotopy Group
 
 Given a pointed space $(X,x_0)$, we define the fundamental group $\pi_1(X)$ as follows:
 
@@ -77,10 +85,10 @@ Given a pointed space $(X,x_0)$, we define the fundamental group $\pi_1(X)$ as f
   - Continuous maps between spaces induce *some* homomorphism on fundamental groups.
     - Inclusions
 
-# Theorem: $X$ is simply connected $\iff$ $\pi_1(X) = 0$
+# Theorem: $X$ is simply connected iff it has trivial fundamental group.
 
 By definition, $X$ is simply connected iff $X$ is path connected and every loop contracts to a point.
 
-$\Rightarrow$ Suppose $X$ is simply connected. Then every loop in $X$ contracts to a point, so if $\alpha$ is a loop in $X$, $[\alpha] = [\id_{x_0}]$, the identity element of $\pi_1(X)$. But then there is only one element in in this group.
+$\Rightarrow$: Suppose $X$ is simply connected. Then every loop in $X$ contracts to a point, so if $\alpha$ is a loop in $X$, $[\alpha] = [\id_{x_0}]$, the identity element of $\pi_1(X)$. But then there is only one element in in this group.
 
 $\Leftarrow$: Suppose $\pi_1(X) = 0$. Then there is just one element in the fundamental group, the identity element, so if $\alpha$ is a loop in $X$ then $[\alpha] = [\id_{x_0}]$. So there is a homotopy taking $\alpha$ to the constant map, which is a contraction of $\alpha$ to a point.

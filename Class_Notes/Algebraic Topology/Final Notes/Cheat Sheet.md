@@ -1,71 +1,114 @@
+---
+markdown:
+  image_dir: /assets
+  ignore_from_front_matter: true
+  absolute_image_path: true
+---
 
 # Intermediate Results
-* Useful long exact sequences
-  $${ \cdots \to H^{i}(X)\to H^{i}(U)\oplus H^{i}(V)\to H^{i}(U\cap V)\mapsvia{\delta} H^{i+1}(X)\to \cdots }$$
-	$${\cdots \to H_{i}(A)\to H_{i}(X)\to H_{i}(X,A){\stackrel  {\delta }{\to }}H_{{i-1}}(A)\to \cdots }$$
-* Useful Short Exact Sequences
-	- Note that $\ext_R^0 = \hom_R$ and $\tor_R^0 = \tensor_R$
-  $$
-	{\displaystyle 0\to \tor_\ZZ^0 (H_{i}(X;\ZZ), A)\,{\to }\,H_{i}(X;A)\to \operatorname {Tor}_\ZZ^1 (H_{i-1}(X;\ZZ ),A)\to 0.}\\
-	{ 0\to \ext_{\ZZ}^{1}(H_{i-1}(X; \ZZ),A)\to H^{i}(X; A)\to \ext_{\ZZ}^{0}(H_{i}(X; \ZZ),A) \to 0.} \\
-	0\to \bigoplus _{{i+j=k}}H_{i}(X;R)\otimes _{R}H_{j}(Y;R)\to H_{k}(X\times Y;R)\to \bigoplus _{{i+j=k-1}}{\mathrm  {Tor}}_{1}^{R}(H_{i}(X;R),H_{j}(Y;R))\to 0
-	$$
-	* Useful shortcuts
-		* Cohomology: If $A$ is a field, then $$H^i(X; A) \cong \hom(H_i(X; A), A)$$
-		* Kunneth: If $R$ is a freely generated free $R\dash$module (or a PID or a field), then
-			$$ H_{k}(X\times Y) \cong \bigoplus _{{i+j=k}}H_{i}(X)\otimes H_{j}(Y) \bigoplus_{i+j=k-1}\tor(H_i(X), H_j(X))$$
-		* UCT: If $X$ is a finite CW complex then
-			$$
-			H^i(X; \ZZ) = F(H_i(X; \ZZ)) \times T(H_{i-1}(X; \ZZ))\\
-			H_i(X; \ZZ) = F(H^i(X; \ZZ)) \times T(H^{i+1}(X; \ZZ))
-			$$
-* Seifert-van Kampen Theorem
-	- Statement: Suppose $X = U_1 \union U_2$ where $U \definedas U_1 \intersect U_2 \neq \emptyset$ is path-connected, and let $\pt \in U$. Then the maps $i_1: U_1 \into X$ and $i_2: U_2 \into X$
-	induce the following group homomorphisms:
-	$$
-	i_1^*: \pi_1(U_1 ,\pt) \into \pi_1(X, \pt) \\
-	i_2^*: \pi_1(U_2 ,\pt) \into \pi_1(X, \pt)
-	$$
-	and letting $P = \pi_1(U), \pt$, there is a natural isomorphism
-	$$
-	\pi_1(X, \pt) \cong \pi_1(U_1, \pt) ~\bigast_P~ \pi_1(U_2, \pt)
-	$$
-	where $\bigast_P$ is the amalgamated free product over $P$.
-	(todo: formulate in terms of pushouts)
-	- Examples:
-      - Computing $\pi_1(S^1 \vee S^1)$
-      - Computing $\pi_1(S^1 \cross S^1)$
-      - Counterexample when $U\cap V$ isn't path-connected: $S^1$ with $U,V$ neighborhoods of the poles.
-* Whitehead Theorem
-	- A map $X \mapsvia{f} Y$ on CW complexes that is a weak homotopy equivalence (inducing isomorphisms in homotopy) is in fact a homotopy equivalence.
-		- Counterexample: individual maps may not work, take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ which have isomorphic homotopy but not homology.
-* Hurewicz Theorem
-	- The Hurewicz map on an $n-1\dash$connected space $X$ is an isomorphism $\pi_{k\leq n}X \to H_{k\leq n} X$.
-- Cellular approximation theorem
-	- Any continuous map between CW complexes is homotopy equivalent to a cellular map.
-	- Applications:
-		- $\pi_{k\leq n}S^n = 0$
-		- $\pi_n(X) \cong \pi_n(X^{(n)})$
+
+## Useful long exact sequences
+$$
+{ \cdots \to H^{i}(X)\to H^{i}(U)\oplus H^{i}(V)\to H^{i}(U\cap V)\mapsvia{\delta} H^{i+1}(X)\to \cdots }
+$$
+
+$$
+{\cdots \to H_{i}(A)\to H_{i}(X)\to H_{i}(X,A){\stackrel{\delta }{\to }}H_{{i-1}}(A)\to \cdots }
+$$
+
+## Useful Short Exact Sequences
+> Note that $\ext_R^0 = \hom_R$ and $\tor_R^0 = \tensor_R$
+
+Homology to cohomology:
+$$
+{\displaystyle 0\to \tor_\ZZ^0 (H_{i}(X;\ZZ), A)\,{\to }\,H_{i}(X;A)\to \operatorname {Tor}_\ZZ^1 (H_{i-1}(X;\ZZ ),A)\to 0.}
+$$
+
+Cohomology to dual space:
+$$
+{ 0\to \ext_{\ZZ}^{1}(H_{i-1}(X; \ZZ),A)\to H^{i}(X; A)\to \ext_{\ZZ}^{0}(H_{i}(X; \ZZ),A) \to 0.}
+$$
+
+Product of spaces to tensor product of homology:
+$$
+0\to \bigoplus _{{i+j=k}}H_{i}(X;R)\otimes _{R}H_{j}(Y;R)\to H_{k}(X\times Y;R)\to \bigoplus _{{i+j=k-1}}{\mathrm  {Tor}}_{1}^{R}(H_{i}(X;R),H_{j}(Y;R))\to 0
+$$
+
+## Useful shortcuts
+
+* Cohomology: If $A$ is a field, then $$H^i(X; A) \cong \hom(H_i(X; A), A)$$
+
+* Kunneth: If $R$ is a freely generated free $R\dash$module (or a PID or a field), then
+$$ 
+H_{k}(X\times Y) \cong \bigoplus _{{i+j=k}}H_{i}(X)\otimes H_{j}(Y) \bigoplus_{i+j=k-1}\tor(H_i(X), H_j(X))
+$$
+
+* Universal Coefficients Theorem: If $X$ is a finite CW complex then
+$$
+H^i(X; \ZZ) = F(H_i(X; \ZZ)) \times T(H_{i-1}(X; \ZZ))\\
+H_i(X; \ZZ) = F(H^i(X; \ZZ)) \times T(H^{i+1}(X; \ZZ))
+$$
+
+## Seifert-van Kampen Theorem
+
+Statement: Suppose $X = U_1 \union U_2$ where $U \definedas U_1 \intersect U_2 \neq \emptyset$ is path-connected, and let $\pt \in U$. Then the maps $i_1: U_1 \into X$ and $i_2: U_2 \into X$ induce the following group homomorphisms:
+
+$$
+i_1^*: \pi_1(U_1 ,\pt) \into \pi_1(X, \pt) \\
+i_2^*: \pi_1(U_2 ,\pt) \into \pi_1(X, \pt)
+$$
+
+and letting $P = \pi_1(U), \pt$, there is a natural isomorphism
+
+$$
+\pi_1(X, \pt) \cong \pi_1(U_1, \pt) ~\bigast_P~ \pi_1(U_2, \pt)
+$$
+where $\bigast_P$ is the amalgamated free product over $P$.
+
+> (Todo: formulate in terms of pushouts)
+
+### Examples
+- Computing $\pi_1(S^1 \vee S^1)$
+- Computing $\pi_1(S^1 \cross S^1)$
+- Counterexample when $U\cap V$ isn't path-connected: $S^1$ with $U,V$ neighborhoods of the poles.
+
+
+## Whitehead Theorem
+A map $X \mapsvia{f} Y$ on CW complexes that is a weak homotopy equivalence (inducing isomorphisms in homotopy) is in fact a homotopy equivalence.
+
+**Counterexample:** individual maps may not work, take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ which have isomorphic homotopy but not homology.
+
+## Hurewicz Theorem
+The Hurewicz map on an $n-1\dash$connected space $X$ is an isomorphism $\pi_{k\leq n}X \to H_{k\leq n} X$.
+
+## Cellular approximation theorem
+Any continuous map between CW complexes is homotopy equivalent to a cellular map.
+
+### Applications:
+- $\pi_{k\leq n}S^n = 0$
+- $\pi_n(X) \cong \pi_n(X^{(n)})$
+
+## Commuting Homology/Homotopy Products
 - $H_n(X/A) \cong \tilde H_n(X, A)$ when $A\subset X$ has a neighborhood that deformation retracts onto it.
 - $H_n(\bigvee_\alpha X_\alpha) = \bigoplus_\alpha H_n X_\alpha$
 
 
-* **Results for Manifolds**
-	- Every $\CC\dash$manifold is canonically orientable.
-	- If $M^n$ is **closed and connected**, then $H_{\geq n}(X) = 0$ and $M^n$ is orientable iff $H_n(X) = \ZZ$.
-	- Poincare Duality
-		- If $M^n$ is a **closed orientable manifold without boundary**, then $H^k(M^n; F) \cong H_{n-k}(M^n; F)$ for a field $F$.
-		- This is a strict implication, so failure of the RHS implies missing conditions on the LHS.
-	- The intersection pairing is nodegenerate modulo torsion.
-	- Lefschet Duality
-		- If $M^n$ is a **closed orientable manifold with boundary** then  $H_k(M^n; \ZZ) \cong H^{n-k}(M^n, \del M^n; \ZZ)$
-	- $M^n$ closed, connected, and orientable $\implies H_n = \ZZ$ and $\mathbf{T}(H_{n-1}) = 0$
-	- $M^n$ closed and $n$ odd implies $\chi(M^n) = 0$.
-	- Any map $X \to Y$ with $X$ factors through the orientation cover $\tilde Y_o$.
-		- If $Y$ is non-orientable, this is a double cover.
-	- If $n$ is odd, $\chi(M^n) = 0$ by Poincare Duality.
-	- $M$ is orientable if $\pi_1(M)$ has no subgroup of index 2.
-	- If $M^\text{orientable} \mapsvia{\pi_k} M^\text{non-orientable}$ is a $k\dash$fold cover, then $k$ is even or $\infty$.
+## Results for Manifolds
+- Every $\CC\dash$manifold is canonically orientable.
+- If $M^n$ is **closed and connected**, then $H_{\geq n}(X) = 0$ and $M^n$ is orientable iff $H_n(X) = \ZZ$.
+- Poincare Duality
+- If $M^n$ is a **closed orientable manifold without boundary**, then $H^k(M^n; F) \cong H_{n-k}(M^n; F)$ for a field $F$.
+- This is a strict implication, so failure of the RHS implies missing conditions on the LHS.
+- The intersection pairing is nodegenerate modulo torsion.
+- Lefschetz Duality
+- If $M^n$ is a **closed orientable manifold with boundary** then  $H_k(M^n; \ZZ) \cong H^{n-k}(M^n, \del M^n; \ZZ)$
+- $M^n$ closed, connected, and orientable $\implies H_n = \ZZ$ and $\mathbf{T}(H_{n-1}) = 0$
+- $M^n$ closed and $n$ odd implies $\chi(M^n) = 0$.
+- Any map $X \to Y$ with $X$ factors through the orientation cover $\tilde Y_o$.
+- If $Y$ is non-orientable, this is a double cover.
+- If $n$ is odd, $\chi(M^n) = 0$ by Poincare Duality.
+- $M$ is orientable if $\pi_1(M)$ has no subgroup of index 2.
+- If $M^\text{orientable} \mapsvia{\pi_k} M^\text{non-orientable}$ is a $k\dash$fold cover, then $k$ is even or $\infty$.
 
 
 # Major Results
@@ -82,25 +125,31 @@
 * Freudenthal Suspension
 
 
-# The Universal Coefficient Theorems
-For changing coefficients from $\ZZ$ to $G$. Formulas:
+##  The Universal Coefficient Theorems
+For changing coefficients from $\ZZ$ to $G$ an arbitrary group. There are short exact sequences
 $$
-0 \to H_i X \tensor G \to H_i(X; G) \to \tor(H_{i-1}X, G) \to 0\\
+0 \to H_i X \tensor G \to H_i(X; G) \to \tor(H_{i-1}X, G) \to 0
+$$
+
+$$
 0 \to \ext (H_{i-1} X, G) \to H^i(X;G) \to \hom(H_i X, G) \to 0
 $$
 
-- Splits unnaturally:
+which split unnaturally:
 $$
-H_i(X;G) = (H_iX\tensor G) \oplus \tor(H_{i-1}X; G)\\
+H_i(X;G) = (H_iX\tensor G) \oplus \tor(H_{i-1}X; G)
+$$
+
+$$
 H^i(X; G) = \hom(H_iX, G) \oplus \ext(H_{i-1}X; G)
 $$
 
-- When $H_iX$ are all finitely generated, write $H_i(X; \ZZ) = \ZZ^{\beta_i} \oplus T_i$. Then
+When $H_iX$ are all finitely generated, write $H_i(X; \ZZ) = \ZZ^{\beta_i} \oplus T_i$. Then
 $$
-H^i(X; \ZZ) = \ZZ^{\beta_i} \oplus T_{i-1}
+H^i(X; \ZZ) = \ZZ^{\beta_i} \oplus T_{i-1}.
 $$
 
-# The Kunneth Formula
+## The Kunneth Formula
 $$
 0 \to \bigoplus_{i+j=k} H_j(X; R) \tensor_R H_{i}(Y; R) \to H_k(X\cross Y; R) \to \bigoplus_{i+j=k-1} \tor_R^1(H_i(X; R), H_{j}(Y; R))
 $$
@@ -110,26 +159,43 @@ $$
 H_k (X\cross Y) = \left( \bigoplus_{i+j = k} H_i X \oplus H_j Y\right) \oplus \bigoplus_{i+j = k-1}\tor(H_iX, H_j Y)
 $$
 
------
 
 ## Free Resolutions
 The canonical example:
-- $0 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{\mod m} \ZZ_m \to 0$
+$$
+0 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{\mod m} \ZZ_m \to 0
+$$
 
-Or more generally $0 \to \ker(f) \to F_n \mapsvia{f} G \to 0$ when $G$ has $n$ generators, where $F_n$ denotes the free group.
+Or more generally for a finitely generated group $G = \generators{g_1, g_2, \cdots, g_n}$,
+$$
+\cdots \to \ker(f) \to F[g_1, g_2, \cdots, g_n] \mapsvia{f} G \to 0
+$$ 
+where $F$ denotes taking the free group.
 
-Every abelian groups has a resolution of this form and length.
+Every abelian groups has a resolution of this form and length 2.
 
 ## Computing Tor
 
-$$\tor(A, B) = h[\cdots \to A_n \tensor B \to A_{n-1}\tensor B \to \cdots A_1\tensor B \to 0]$$ where $A_*$ is a free resolution of $A$.
+$$
+\tor(A, B) = h[\cdots \to A_n \tensor B \to A_{n-1}\tensor B \to \cdots A_1\tensor B \to 0]
+$$ 
+where $A_*$ is any free resolution of $A$.
 
-Shorthand: $\tor: \mathcal{F}(A) \to (\wait \tensor B) \to H_*$
+Shorthand/mnemonic: 
+$$
+\tor: \mathcal{F}(A) \to (\wait \tensor B) \to H_*
+$$
 
 ## Computing Ext
-$$\ext(A, B) = h[\cdots \hom(A, B_n) \to \hom(A, B_{n-1}) \to \cdots \to \hom(A, B_1) \to 0 ]$$ where $B_*$ is a free resolution of $B$.
+$$
+\ext(A, B) = h[\cdots \hom(A, B_n) \to \hom(A, B_{n-1}) \to \cdots \to \hom(A, B_1) \to 0 ]
+$$ 
+where $B_*$ is a any free resolution of $B$.
 
-Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
+Shorthand/mnemonic: 
+$$
+\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*
+$$
 
 ## Properties of Tensor Product
 - $A\tensor B \cong B\tensor A$
@@ -158,6 +224,7 @@ Shorthand: $\ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*$
 - $\ext(\ZZ_n, G) \cong G/nG$
 
 ## Hom/Ext/Tor Tables
+
 $\hom$    | $\ZZ_m$  | $\ZZ$  | $\QQ$
 --|---|---|--
 $\ZZ_n$   | $\ZZ_d$  | $0$    | $0$
@@ -189,7 +256,7 @@ Thins that behave like "the identity functor":
 - $\hom(\ZZ, \wait)$
 - $\wait \tensor_\ZZ \ZZ$ and $\ZZ \tensor_\ZZ \wait$
 
-For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/torext.pdf).
+For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/torext.pdf). This is a certain ring of adeles.
 
 -----
 
@@ -197,24 +264,24 @@ For description of $\mathcal{A_p}$, see [here](http://math.jhu.edu/~jmb/note/tor
 
 $$
 \begin{array}{}
-\SS^1 &=  &[&\ZZ, &\ZZ,               &0,    &0,      &0,    &0\rightarrow & ]\\
+S^1   &=  &[&\ZZ, &\ZZ,               &0,    &0,      &0,    &0\rightarrow & ]\\
 \MM   &=  &[&\ZZ, &\ZZ,               &0,    &0,      &0,    &0\rightarrow & ]\\
 \RP^1 &=  &[&\ZZ, &\ZZ,               &0,    &0,      &0,    &0\rightarrow & ]\\
 \RP^2 &=  &[&\ZZ, &\ZZ_2,             &0,    &0,      &0,    &0\rightarrow & ]\\
 \RP^3 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ,    &0,    &0\rightarrow & ]\\
 \RP^4 &=  &[&\ZZ, &\ZZ_2,             &0,    &\ZZ_2,  &0,    &0\rightarrow & ]\\
-\SS^2 &=  &[&\ZZ, &0,                 &\ZZ,  &0,      &0,    &0\rightarrow & ]\\
+ S^2  &=  &[&\ZZ, &0,                 &\ZZ,  &0,      &0,    &0\rightarrow & ]\\
 \TT^2 &=  &[&\ZZ, &\ZZ^2,             &\ZZ,  &0,      &0,    &0\rightarrow & ]\\
-\KK &=    &[&\ZZ, &\ZZ \oplus \ZZ_2,  &0,    &0,      &0,    &0\rightarrow & ]\\
+\KK   &=  &[&\ZZ, &\ZZ \oplus \ZZ_2,  &0,    &0,      &0,    &0\rightarrow & ]\\
 \CP^1 &=  &[&\ZZ, &0,                 &\ZZ,  &0,      &0,    &0\rightarrow & ]\\
 \CP^2 &=  &[&\ZZ, &0,                 &\ZZ,  &0,      &\ZZ,  &0\rightarrow & ]\\
 \end{array}
 $$
 
 # Low Dimensional Equivalences
-- $\RP^1 \cong \SS^1$
-- $\CP^1 \cong \SS^2$
-- $\MM \homotopic \SS^1$
+- $\RP^1 \cong S^1$
+- $\CP^1 \cong S^2$
+- $\MM \homotopic S^1$
 - $\CP^n = \CC^n \coprod \CP^{n-1} = \coprod_{i=0}^n \CC^i$
 
 # Homology Results
@@ -231,16 +298,16 @@ $$
 
 # Long Exact Sequences
 $$
-\begin{align}
+\begin{align*}
 X = A\cup B \implies
-&A\cap B \to A \oplus B \to A \cup B \mapsvia{\delta} \cdots\\
+&A\cap B \to A \oplus B \to A \cup B \mapsvia{\delta} \cdots
 (X,A) \implies
 &A \to X \to X,A \mapsvia{\delta} \cdots\\
 A\to B \to C \implies
 & \tor(A, G) \to \tor(B, G) \to \tor(C, G) \mapsvia{\delta_\downarrow} \cdots \\
 A\to B \to C \implies
 & \ext(A, G) \to \ext(B, G) \to \ext(C, G) \mapsvia{\delta_\uparrow} \cdots
-\end{align}
+\end{align*}
 $$
 
 # Cellular Homology
@@ -248,38 +315,39 @@ How to compute:
 
 1. Write cellular complex $$0 \to C^n \to C^{n-1} \to \cdots C^2 \to C^1 \to C^0 \to 0$$
 2. Compute differentials $\del_i: C^i \to C^{i-1}$
-    1. Note - if $C^0$ is a point, $\del_1$ is the zero map
-    2. Note - $H_n X = 0 \iff C^n = \emptyset$.
+    1. *Note: if $C^0$ is a point, $\del_1$ is the zero map.*
+    2. *Note: $H_n X = 0 \iff C^n = \emptyset$.*
     3. Compute degrees: Use $\del_n(e_i^n) = \sum_i d_i e_i^{n-1}$ where $$d_i = \deg(\text{Attach }e_i^n \to \text{Collapse } X^{n-1}\dash\text{skeleton}),$$ which is a map $S^{n-1} \to S^{n-1}$.
 	    1. Alternatively, choose orientations for both spheres. Then pick a point in the target, and look at points in the fiber. Sum them up with a weight of +1 if the orientations match and -1 otherwise.
     4. Note that $\ZZ^m \mapsvia{f} \ZZ^n$ has an $n\times m$ matrix
     5. Row reduce, image is span of rows with pivots. Kernel can be easily found by taking RREF, padding with zeros so matrix is square and has all diagonals, then reading down diagonal - if a zero is encountered on $n$th element, take that column vector as a basis element with $-1$ substituted in for the $n$th entry.
     eg.
-    $$
-\pmatrix{\mathbf1&2&0&2\\0&0&\mathbf1&-1\\0&0&0&\mathbf0} \to \pmatrix{\mathbf1&2&0&2\\0&\mathbf0&0&0\\0&0&\mathbf1&-1\\0&0&0&\mathbf0}\\ \ker = \pmatrix{2\\-1\\0\\0},\pmatrix{2\\0\\-1\\-1}\\
-\im = <a+2b+2d,c-d>
-    $$
+$$
+\pmatrix{\mathbf1&2&0&2\\0&0&\mathbf1&-1\\0&0&0&\mathbf0} \to 
+\pmatrix{\mathbf1&2&0&2\\0&\mathbf0&0&0\\0&0&\mathbf1&-1\\0&0&0&\mathbf0}\\ \ker = 
+\left\{\pmatrix{2\\-1\\0\\0},
+\pmatrix{2\\0\\-1\\-1}\right\}\\
+\im = \generators{a+2b+2d,c-d}
+$$
     6. Or look at elementary divisors, say $n_i$, then the image is isomorphic to $\bigoplus n_i \ZZ$
 
 
 # Surfaces
-- Orientable:
-  - $S^n, T^n, \RP^\text{odd}$
-- Nonorientable:
-  - $\RP^\text{even}, \mathbb{M}, \mathbb{K}$
+- Orientable: $S^n, T^n, \RP^\text{odd}$
+- Nonorientable: $\RP^\text{even}, \mathbb{M}, \mathbb{K}$
 
 # Pasting Diagrams
 
-![$S^2, \RP^2, T^2, \KK$](assets/Results-37710.png)
+![$S^2, \RP^2, T^2, \KK$](/assets/Results-37710.png)
 
-![$\mathbb{M}$](assets/Results-f9d55.png)
+![$\mathbb{M}$](/assets/Results-f9d55.png)
 
 # Useful Covering Spaces
 - $\RR \mapsvia{\pi} S^1 \leftarrow \ZZ$
 - $\RR^n \mapsvia{\pi} T^n \leftarrow \ZZ^n$
 - $\RP^n \mapsvia{\pi} S^n \leftarrow \ZZ_2$
 - $\vee_n S^1 \mapsvia{\pi} C^n \leftarrow \ZZ^{\ast n}$ where $C^n$ is the $n\dash$valent Cayley Graph
-    ![Cayley Graph on $Z^{\ast 2$}](assets/Results-9ba56.png)
+    ![Cayley Graph on $Z^{\ast 2$}](/assets/Results-9ba56.png)
 - $M \mapsvia{\pi} \tilde M \leftarrow \ZZ_2$, the orientation double cover
 - $T^2 \mapsvia{\times 2} \KK$
 - $L_{p/q} \mapsvia{\pi} S^3 \leftarrow \ZZ_q$
@@ -304,24 +372,31 @@ How to compute:
   - Nonorientable: $H_* = (\ZZ, \ZZ^r, \ZZ^{r-1} \oplus \ZZ_2, \ZZ)$
 
 ## Cap and Cup Products
-$\cup: H^p \cross H^q \to H^{p+q}; (a^p \cup b^q)(\sigma) = a^p(\sigma \circ F_p) b^q(\sigma \circ B_q)$ where $F_p, B_q$ is embedding into a $p+q$ simplex.
 
-For $f$ cts, $f^*(a\cup b) = f^*a \cup f^*b$
+$$
+\cup: H^p \cross H^q \to H^{p+q}; (a^p \cup b^q)(\sigma) = a^p(\sigma \circ F_p) b^q(\sigma \circ B_q)
+$$ 
+where $F_p, B_q$ is embedding into a $p+q$ simplex.
 
-$\del(a^p \cup b^q) = \del a^p \cup b^q + (-1)^p(a^p\cup \del b^q)$ (The Leibniz rule)
+For $f$ continuous, $f^*(a\cup b) = f^*a \cup f^*b$
 
-$\cap: H_p \cross H^q \to H_{p-q}; \sigma \cap \psi = \psi(F\circ\sigma)(B\circ \sigma)$ where $F,B$ are the front/backface maps.
+It satisfies the Leibniz rule
+$$\del(a^p \cup b^q) = \del a^p \cup b^q + (-1)^p(a^p\cup \del b^q)$$ 
+
+$$
+\cap: H_p \cross H^q \to H_{p-q}; \sigma \cap \psi = \psi(F\circ\sigma)(B\circ \sigma)
+$$ 
+where $F,B$ are the front/back face maps.
 
 Given $\psi \in C^q, \phi \in C^p, \sigma: \Delta^{p+q} \to X$, we have
 $$
 \psi(\sigma \cap \phi) = (\phi \cup \psi)(\sigma)\\
-<\phi\cup \psi, \sigma> = <\psi, \sigma \cap \phi>
+\inner{\phi\cup \psi}{\sigma} = \inner{\psi}{\sigma \cap \phi}
 $$
-
 
 Let $M^n$ be a closed oriented smooth manifold, and $A^{\hat i}, B^{\hat j} \subseteq X$ be submanifolds of codimension $i$ and $j$ respectively that intersect transversely (so $\forall p\in A\intersect B$, the inclusion-induced map $T_pA \times T_p B \to T_p X$ is surjective.)
 
-Then $A\cap B$ is a submanifold of codimension $i+j$ and there is a SES
+Then $A\cap B$ is a submanifold of codimension $i+j$ and there is a short exact sequence
 $$
 0 \to T_p(A\intersect B) \to T_p A \times T_p B \to T_p X \to 0
 $$
@@ -334,13 +409,13 @@ Then the images under inclusion define homology classes
 - $[A\intersect B] \in H_{\widehat{i+j}}X$.
 
 Denoting their Poincare duals by
-- $[A]^\check{} \in H^i X$
-- $[B]^\check{} \in H^j X$
-- $[A\intersect B]^\check{} \in H^{i+j}X$
+- $[A]^\dual \in H^i X$
+- $[B]^\dual \in H^j X$
+- $[A\intersect B]^\dual \in H^{i+j}X$
 
 We then have
 $$
-[A]^\check{} \smile [B]^\check{} = [A\intersect B]^\check{} \in H^{i+j} X
+[A]^\dual \smile [B]^\dual = [A\intersect B]^\dual \in H^{i+j} X
 $$
 
 Example: in $\CP^n$, each even-dimensional cohomology $H^{2i}\CP^n$ has a generator $\alpha_i$ with is Poincare dual to an $\hat i$ plane. A generic $\hat i$ plane intersects a $\hat j$ plane in a $\widehat{i+j}$ plane, yielding $\alpha_i \smile \alpha_j = \alpha_{i+j}$ for $i+j \leq n$.
@@ -351,12 +426,12 @@ Example: For $T^2$, we have
 
 Then $A\cap B = \pm [p]$, and so
 $$
-[A]^\check{} \smile [B]^\check{} = [p]^\check{}\\
-[B]^\check{} \smile [A]^\check{} = -[p]^\check{}
+[A]^\dual \smile [B]^\dual = [p]^\dual\\
+[B]^\dual \smile [A]^\dual = -[p]^\dual
 $$
 
 # Further Notes
-On spaces complements of spaces in $\RR^3$:
+On the complements of spaces in $\RR^3$:
 > My personal crutch is to just think about complements in $S^3$, which are usually easier since knot complements in $S^3$ are always K(π,1)s. Now if $K$ is a knot and $X$ is its complement in $S^3$, then you can prove that its complement in $\RR^3$ is homotopy equivalent to $S^2\vee X$
 
 For a graph $G$, we always have $\pi_1(G) \cong \ZZ^n$ where $n = |E(G - T)|$, the complement of the set of edges in any maximal tree. Equivalently, $n = 1-\chi(G)$. Moreover, $X \homotopic \bigvee^n S^1$ in this case.

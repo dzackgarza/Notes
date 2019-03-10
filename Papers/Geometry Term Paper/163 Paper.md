@@ -106,7 +106,10 @@ In the case of projective geometry, one wants to introduce a notion of "perspect
 
 To see why Klein considered Projective geometry to be in some ways the most general and universal of the geometries known at his time, it suffices to carry out a similar construction in the projective case. One first takes a vector space $V_k$, constructs a group that will act as the symmetries of the desired, and identifies the geometry as the result that the group action on the
 
-Definition: Given a group $G$, the _center_ of a group $Z(G)$ is defined as $Z(G) \definedas \theset{g\in G \mid gh = hg ~\forall h\in G}$, the set of elements that commute with every other element of the group.
+Definition: Given a group $G$, the _center_ of a group $Z(G)$ is defined as 
+$$
+Z(G) \definedas \theset{g\in G \mid gh = hg ~\forall h\in G},
+$$ the set of elements that commute with every other element of the group.
 
 Definition: The _projective linear group of dimension $n-1$_ is the group defined by $PGL\_{n-1}(k) = GL_n(k) / Z(GL_n(k))$, the general linear group quotiented by its center.
 

@@ -1,17 +1,18 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 
 %\documentclass[]{article}
-\documentclass[11pt]{scrartcl}
+\documentclass[11pt]{scrreprt}
 \usepackage[utf8]{inputenc}
 
 %These tell TeX which packages to use.
 \usepackage{array}
 \usepackage{mathtools}
-\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd}
 \usepackage{color}
 
 \usepackage{microtype}
-\usepackage{hyperref}
+\usepackage[pdfencoding=auto]{hyperref}
+\usepackage{bookmark}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{todonotes}
@@ -20,7 +21,7 @@
 % Nice math font that journals use
 %\usepackage[lite]{mtpro2}
 %\usepackage{mathrsfs}
-\usepackage{mathptmx}
+%\usepackage{mathptmx}
 \usepackage{lmodern}
 %\usepackage[sc]{mathpazo}
 
@@ -58,18 +59,4 @@
 % Major Macros
 %\renewcommand{\and}{{\text{ and }}}
 %\renewcommand{\or}{{\text{ or }}}
-
-% Hack: Calls /providecommand and /renewcommand together
-% to allow a version of /newcommand that doesn't care
-% if a command was previously defined.
-\makeatletter
-\newcommand*{\declarecommand}{%
-  \@star@or@long\declare@command
-}
-\newcommand*{\declare@command}[1]{%
-  \provide@command{#1}{}%
-  % \let#1\@empty % would be more efficient, but without error checking
-  \renew@command{#1}%
-}
-\makeatother
 \input{/home/zack/Notes/Latex/latexmacs.txt}
