@@ -232,7 +232,7 @@ f' && f && \therefore f && F \\
 
 Explanation of items in table:
 - K-integrable: compactly integrable.
-- $f$ integrable $\implies F$ differentiable $\implies F \in C^0$
+- $f$ integrable $\implies F$ differentiable $\implies F \in C_0$
 	- By definition and FTC, and differentiability $\implies$ continuity
 - $f$ differentiable and $K$ compact $\implies f$ integrable on $K$.
 	- In general, $f$ differentiable $\not\implies f$ integrable. Necessity of compactness: $$f(x) = e^x \in C^\infty(\RR)\text{ but }\int_\RR e^x dx \to \infty$$
