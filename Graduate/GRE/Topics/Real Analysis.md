@@ -256,7 +256,7 @@ Explanation of items in table:
 
 
 ## List of Free Conclusions:
-- $f$ integrable on $U$ if any of the following hold
+- $f$ integrable on $U \implies$:
 	- $f$ is bounded
 	- $f$ is continuous a.e. (finitely many discontinuities)
 	- $F$ is continuous
