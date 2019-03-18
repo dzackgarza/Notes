@@ -257,8 +257,7 @@ Explanation of items in table:
 
 ## List of Free Conclusions:
 - $f$ integrable on $U$ if any of the following hold
-	- $f$ is bounded
-	- $f$ is continuous a.e. (finitely many discontinuities)
+	- $f$ is bounded continuous a.e. (finitely many discontinuities)
 	- $F$ is continuous
 	- $F$ is differentiable
 - $f$ continuous on $U$:
