@@ -2,7 +2,7 @@
 
 $$
 \begin{align*}
-	\frac{\partial}{\partial x} \int_{1}^{x} f(x, t) dt = \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt f(x, b(x))~b'(x) - f(x, a(x))~a'(x)
+	\frac{\partial}{\partial x} \int_{1}^{x} f(x, t) dt = \int_{1}^{x} \frac{\partial}{\partial x} f(x, t) dt f(x, b(x))~b'(x) - f(x, a(x))~a'(x)
 \end{align*}$$
 
 
