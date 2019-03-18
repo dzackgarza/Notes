@@ -17,7 +17,7 @@ Notation used throughout: $f: \RR \to \RR,~\mathbf{f}:\RR^n \to \RR^m$, $K$ is a
   - Limits of sequences
   - Limits of series/sums
 - The derivative of a continuous function need not be continuous
-- A continuous function need to be differentiable
+- A continuous function need not be differentiable
 - A uniform limit of differentiable functions need not be differentiable
 - A limit of integrable functions need not be integrable
 - An integrable function need not be continuous
