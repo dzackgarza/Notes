@@ -260,7 +260,7 @@ Explanation of items in table:
 	- $f$ is bounded
 	- $f$ is continuous a.e. (finitely many discontinuities)
 	- $\int f$ is continuous
-	- $F$ is differentiable
+	- $\int f$ is differentiable
 - $f$ continuous on $U$:
 	- $f$ is integrable on compact subsets of $U$
 	- $F$ exists
