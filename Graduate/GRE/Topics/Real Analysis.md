@@ -263,7 +263,8 @@ Explanation of items in table:
 	- $\int f$ is differentiable
 - $f$ continuous on $U$:
 	- $f$ is integrable on compact subsets of $U$
-	- $F$ exists
+	- $f$ is bounded
+	- $f$ is integrable
 - $f$ differentiable at a point $p$:
 	- $f$ is continuous
 - $f$ is differentiable in $U$
