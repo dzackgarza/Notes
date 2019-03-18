@@ -259,7 +259,7 @@ Explanation of items in table:
 - $f$ integrable on $U \implies$:
 	- $f$ is bounded
 	- $f$ is continuous a.e. (finitely many discontinuities)
-	- $F$ is continuous
+	- $\int f$ is continuous
 	- $F$ is differentiable
 - $f$ continuous on $U$:
 	- $f$ is integrable on compact subsets of $U$
