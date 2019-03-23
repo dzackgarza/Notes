@@ -24,7 +24,7 @@ The prime mechanism then appeared to be this: Given a space $X$ carrying a vecto
 
 Characteristic numbers solve the oriented and unoriented bordism questions: two manifolds are (respectively oriented or unoriented) cobordant if and only if their characteristic numbers are equal.
 
-# Schoenflies problem
+# Schoenflies Problem
 
 A sharpening of Jordan curve theorem. It states that not only does every simple closed curve in the plane separate the plane into two regions, one (the "inside") bounded and the other (the "outside") unbounded; but also that these two regions are homeomorphic to the inside and outside of a standard circle in the plane.
 
@@ -32,7 +32,7 @@ A sharpening of Jordan curve theorem. It states that not only does every simple 
 
 The uniformization theorem says that every simply connected Riemann surface is conformally equivalent to one of the three Riemann surfaces: the open unit disk, the complex plane, or the Riemann sphere. In particular it implies that every Riemann surface admits a Riemannian metric of constant curvature.
 
-For compact Riemann surfaces, those with universal cover the unit disk are precisely the hyperbolic surfaces of genus greater than 1, all with non-abelian fundamental group; those with universal cover the complex plane are the Riemann surfaces of genus 1, namely the complex tori or elliptic curves with fundamental group Z2; and those with universal cover the Riemann sphere are those of genus zero, namely the Riemann sphere itself, with trivial fundamental group.
+For compact Riemann surfaces, those with universal cover the unit disk are precisely the hyperbolic surfaces of genus greater than 1, all with non-abelian fundamental group; those with universal cover the complex plane are the Riemann surfaces of genus 1, namely the complex tori or elliptic curves with fundamental group $Z_2$; and those with universal cover the Riemann sphere are those of genus zero, namely the Riemann sphere itself, with trivial fundamental group.
 
 The uniformization theorem is a generalization of the Riemann mapping theorem from proper simply connected open subsets of the plane to arbitrary simply connected Riemann surfaces.
 
