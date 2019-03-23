@@ -40,7 +40,7 @@ But the homotopy groups of $SO$ were computed by Bott, and have some 8-fold peri
 
 The image of $J$ was found by Adams in '66 or so, it is a finite group with order the denominator of some function involving Bernoulli numbers. However, the pattern is more apparent by looking at the $p$-stems, then the number of connected dots really just depends on the $p$-adic divisibilty of the horizontal number plus 1. The image of $J$ is just the bottom row in these stem diagrams.
 
-How to read the stem diagrams? Each one is for a fixed $p$, for example at $p=2$ each dot depicts a factor of 2 and vertical lines denote additve extensions. For example, $\cdot \to \cdot \to \cdot$ vertically would denote $\ZZ_{2^3} = \ZZ_2 \oplus \ZZ_2 \oplus \ZZ_2$, whereas $\cdot \to \cdot$ denotes $\ZZ_2 \oplus \ZZ_2$.
+How to read the stem diagrams? Each one is for a fixed $p$, for example at $p=2$ each dot depicts a factor of 2 and vertical lines denote additive extensions. For example, $\cdot \to \cdot \to \cdot$ vertically would denote $\ZZ_{2^3} = \ZZ_2 \oplus \ZZ_2 \oplus \ZZ_2$, whereas $\cdot \to \cdot$ denotes $\ZZ_2 \oplus \ZZ_2$.
 
 The EHP sequence is good for unstable stuff, not the best for stable - use the Adams spectral sequence instead.
 
