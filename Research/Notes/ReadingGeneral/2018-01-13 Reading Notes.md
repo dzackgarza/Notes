@@ -104,6 +104,8 @@ In other words, for any $k$, we can think of $H^*(E^p, E^{p-k})$ as a $k$-th app
 
 **EXAMPLES OF COMPUTATION: Page 54**
 
+
+
 - Cohomology of $\CP^n$ using $S^1 \into S^{2n+1} \into \CP^n$
   -
 - Cohomology of the infinite Grassmannian $\lim_n G(k, n)$
