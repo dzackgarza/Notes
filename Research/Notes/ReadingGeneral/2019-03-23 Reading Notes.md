@@ -8,7 +8,6 @@ $$
 
 
 $$
-\begin{array} { c } { \mathcal { K } ( X ) \longrightarrow \mathcal { K } ( U ) } \\ 
-\downarrow & \downarrow \\ 
-{ \mathcal { K } ( V ) \longrightarrow \mathcal { K } ( U \cap V ) } \end{array}
+\begin{CD}
+\end{CD}
 $$
