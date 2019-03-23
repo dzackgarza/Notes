@@ -9,6 +9,7 @@ $$
 
 $$
 \begin{CD}
-\mathcal{K} @>>> \mathcal{K} 
+\mathcal{K}(C) @>>> \mathcal{K}(U) \\
+
 \end{CD}
 $$
