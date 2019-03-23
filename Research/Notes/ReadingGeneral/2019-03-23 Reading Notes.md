@@ -9,6 +9,6 @@ $$
 
 $$
 \begin{CD}
-
+\mathcal{K} @>>> \mathcal{K} 
 \end{CD}
 $$
