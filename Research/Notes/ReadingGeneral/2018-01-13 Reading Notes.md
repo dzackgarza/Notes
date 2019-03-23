@@ -105,7 +105,7 @@ In other words, for any $k$, we can think of $H^*(E^p, E^{p-k})$ as a $k$-th app
 **EXAMPLES OF COMPUTATION: Page 54**
 
 - Cohomology of $\CP^n$ using $S^1 \into S^{2n+1} \into \CP^n$
-  - 
+  -
 - Cohomology of the infinite Grassmannian $\lim_n G(k, n)$
   - Answer: $H^*(G(k)) = \ZZ[x_1, x_2, \cdots x_k]$
 
@@ -126,7 +126,7 @@ Unique up to homotopy, $X = \lim_n X_n$ (an inverse limit). Essentially construc
 
 Homotopy and homology commute with direct limits.
 
-$\cdot \tensor \QQ$ is a right-exact functor, most results in this section are about how terms in exact sequences all become $\QQ$-vector spaces. In particular, $H^*(X; \QQ), H_*(X;\QQ)$ are.
+$(\cdot \tensor \QQ)$ is a right-exact functor, most results in this section are about how terms in exact sequences all become $\QQ$-vector spaces. In particular, $H^*(X; \QQ), H_*(X;\QQ)$ are.
 
 Homotopy theory over $\QQ$ is much easier than over $\ZZ$. Samples results:
 $$
