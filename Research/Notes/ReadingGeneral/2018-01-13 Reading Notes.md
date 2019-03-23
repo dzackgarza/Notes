@@ -3,7 +3,7 @@
 - **Rational Homotopy Theory and Differential Forms** by Griffiths and Morgan
 - **Differential Forms in Algebraic Topology** by Bott and Tu
 - **Differential Topology** by Hirsch
-- **Comprehensive Introduction to DIfferential Geometry** by Spivak
+- **Comprehensive Introduction to Differential Geometry** by Spivak
 - **Topology from the Differentiable Viewpoint** by Milnor
 - **Topology and Geometry** by Bredon
 - **User's Guide to Spectral Sequences** by Mcleary
@@ -27,7 +27,7 @@ Overall purpose: want to relate $C^\infty$ forms on a manifold to AT invariants.
 
 This DGA of smooth forms is actually enough to calculate all of the AT invariants, and can be used to build the Postnikov tower of $M$ ($\tensor \RR$)
 
-One construction is the localization of a CW complex at $\QQ$, this removes torsion and divisibility phenomena. The effect on the postnikov tower is just then tensoring with $\QQ$.
+One construction is the localization of a CW complex at $\QQ$, this removes torsion and divisibility phenomena. The effect on the Postnikov tower is just then tensoring with $\QQ$.
 
 Things that are homotopy equivalent to CW complexes:
 
@@ -65,7 +65,7 @@ Axioms of homology:
 
 - $X \mapsvia{f} Y$ always induces a map on homology $H_*(X) \mapsvia{f_*}H_*(Y)$
 - An orientation on $S^n$ induces an isomorphism $H_n(S^n) \cong \ZZ$; reversing orientation induces the map $\ZZ \mapsvia{\phi}\ZZ: \phi(1) = -1$
-- $Y\subseteq X$ yields the definition of relative homology $H_*(X, Y)$, and mayer vietoris holds; i.e. there is a long exact sequence
+- $Y\subseteq X$ yields the definition of relative homology $H_*(X, Y)$, and Mayer Vietoris holds; i.e. there is a long exact sequence
   $\cdots H_n(Y) \into H_n(X) \into H_n(X, Y) \into H_{n-1}(Y) \cdots$
 - Excision: $U \subset Y \subset X$ and $\bar U \subset Y^\circ$ implies $H_*(X-U, Y-U) \cong H_*(X,Y)$.
 
@@ -106,7 +106,7 @@ In other words, for any $k$, we can think of $H^*(E^p, E^{p-k})$ as a $k$-th app
 
 - Cohomology of $\CP^n$ using $S^1 \into S^{2n+1} \into \CP^n$
   - ​
-- Cohmology of the infinite Grassmanian $\lim_n G(k, n)$
+- Cohomology of the infinite Grassmannian $\lim_n G(k, n)$
   - Answer: $H^*(G(k)) = \ZZ[x_1, x_2, \cdots x_k]$
 
 ## Postnikov Towers
@@ -191,6 +191,6 @@ $$
 $$
 And $E_3 = E_\infty$, so $d_2^{0,1}$ is an isomorphism.
 
-*Note: Probably a good starting point for basic calcuations? Fill out the missing details for this table.*
+*Note: Probably a good starting point for basic calculations? Fill out the missing details for this table.*
 
 Challenge: Prove $\pi_4(S^2) = \frac{\ZZ}{2\ZZ}$
