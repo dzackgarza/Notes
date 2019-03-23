@@ -27,9 +27,7 @@ $$
 $$
 is a homotopy pullback diagram.
 
-Our first guess is motivated by the hypothesis that a contravariant functor E : (Schemes) → (Spectra) satisfying property (∗), in analogy to the functor K, must be something like a cohomology
-theory for schemes. A weak equivalence of schemes X
-∼
+Our first guess is motivated by the hypothesis that a contravariant functor E : (Schemes) → (Spectra) A weak equivalence of schemes X∼
 −→ Y would be expected to have the property
 that E(Y ) → E(X) is a weak equivalence of spectra for every such E. 
 
