@@ -17,7 +17,7 @@ $$
 \cdots \rightarrow K ^ { n } ( X ) \rightarrow K ^ { n } ( U ) \oplus K ^ { n } ( V ) \rightarrow K ^ { n } ( U \cap V ) \rightarrow K ^ { n + 1 } ( X ) \rightarrow \cdots
 $$
 
-
+This follows formally once one proves the stronger result that
 $$
 \begin{CD}
 \mathcal{K}(C) @>>> \mathcal{K}(U) \\
@@ -25,3 +25,5 @@ $$
 \mathcal{K}(V) @>>> \mathcal{K}(U\intersect V)
 \end{CD}
 $$
+is a homotopy pullback diagram.
+
