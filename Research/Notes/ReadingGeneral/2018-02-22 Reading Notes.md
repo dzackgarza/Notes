@@ -44,7 +44,7 @@ How to read the stem diagrams? Each one is for a fixed $p$, for example at $p=2$
 
 The EHP sequence is good for unstable stuff, not the best for stable - use the Adams spectral sequence instead.
 
-The stable homotopy groups of spheres are isomorphic to the framed cobordism groups of manifolds. The kervaire invariant has to do with which stable homotopy groups can be represented by exotic spheres. There are several open problems related to differentials and invariants the arise from this SS, e.g. what are the permanent cycles? The Kervaire Invariant Problem was only recently solved by Hopkins-Ravenel-Hill.
+The stable homotopy groups of spheres are isomorphic to the framed cobordism groups of manifolds. The Kervaire invariant has to do with which stable homotopy groups can be represented by exotic spheres. There are several open problems related to differentials and invariants the arise from this SS, e.g. what are the permanent cycles? The Kervaire Invariant Problem was only recently solved by Hopkins-Ravenel-Hill.
 
 The Adams-Novikov SS ends up being cleaner, fewer differentials!
 
