@@ -27,7 +27,7 @@ $$
 $$
 is a homotopy pullback diagram.
 
-Our first guess is motivated by the hypothesis that a contravariant functor $E$ : (Schemes) → (Spectra) A weak equivalence of schemes $X \to Y$ would be expected to have the property
+Our first guess is motivated by the hypothesis that a contravariant functor $E$ : (Schemes) → (Spectra), in analogy to the functor $K$, should look like a cohomology theory. A weak equivalence of schemes $X \to Y$ would be expected to have the property
 that $E(Y ) → E(X)$ is a weak equivalence of spectra for every such $E$. 
 
 Believing that this gives the ‘correct’ definition of weak equivalence reduces to believing that the whole homotopy theory of schemes is captured in the two basic facts that $\mathrm{hocolim}~U_\wait \longrightarrow X$ and $X \cross I \to X$ are weak equivalences.  The surprising answer is yes. If we use this definition in the case of reasonable topological spaces (like CW-complexes) we do recover the usual notion of weak equivalence.
