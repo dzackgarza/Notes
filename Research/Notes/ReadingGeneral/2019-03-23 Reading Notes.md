@@ -7,3 +7,6 @@ $$
 $$
 
 
+$$
+\begin{array} { c } { \mathcal { K } ( X ) \longrightarrow \mathcal { K } ( U ) } \\ { \gamma } \\ { \mathcal { K } ( V ) \longrightarrow \mathcal { K } ( U \cap V ) } \end{array}
+$$
