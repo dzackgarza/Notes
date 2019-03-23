@@ -118,7 +118,7 @@ In fact, by working the Serre spectral sequence backwards, we can compute the ho
 # Unstable homotopy groups of spheres
 ![Unstable Homotopy Groups of Spheres](assets/2-22ReadingNotes-52d83.png)
 
-# Homotopy groups of SOn
+# Homotopy Groups of SO(n)
 ![Homotopy Groups of $SO^n$](assets/2-22ReadingNotes-591bd.png)
 
 # Useful Higher Homotopy used in Physics
