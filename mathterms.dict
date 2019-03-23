@@ -155,7 +155,6 @@ unipotent
 zack
 nonsingular
 connectedness
-
 Bolzano
 uncountability
 countability
@@ -170,7 +169,6 @@ representable
 Yoneda
 adjoint
 homomorphisms
-
 nilpotent
 Nullstellensatz
 UFD
@@ -241,12 +239,8 @@ Vietoris
 Thom
 Riemannian
 domains
-
-
-
 triangularization
 Cayley
-
 conformality
 analyticity
 Dini
@@ -272,7 +266,6 @@ cobordism
 quaternions
 Pontryagin
 Ravenel
-
 equivariant
 Morava
 Kervaire
@@ -298,7 +291,6 @@ GLB
 Homogeneous
 Separable
 Penrose
-
 parallelepiped
 eigenvector
 Multilinear
@@ -396,7 +388,6 @@ pushouts
 Kunneth
 nonorientable
 abelianization
-
 Kampen
 Hurewicz
 cofibrations
@@ -411,7 +402,6 @@ Garrity
 Mathjax
 multimodal
 Errett
-
 Dummit
 Foote
 Hatcher
@@ -421,7 +411,6 @@ Haskell
 Latinx
 Beachy
 Rudin
-
 Munkres
 Bona
 WIP
