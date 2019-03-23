@@ -64,7 +64,7 @@ That is, the total spaces that occur when a one-dimensional real vector space (i
 
 But another possibility is $E \cong M^\circ \in\text{DiffTop}$, an open Möbius band:
 
-![mobius band](/home/zack/notes/images/2018/05/mobius-band.png)
+![Möbius band](/home/zack/notes/images/2018/05/mobius-band.png)
 
 Here we can take the base space $B$ to be the circle through the center of the band; then every open neighborhood $U$ of a point $b\in B$ contains an arc of the center circle crossed with a vertical line segment that misses $\del M$. Thus the local picture looks like $S^1 \cross I^\circ$, while globally $M\not\cong S^1 \cross I^\circ \in \text{Top}$.^[Due to the fact that, for example, $M$ is nonorientable and orientability distinguishes topological spaces up to homeomorphism.]
 
