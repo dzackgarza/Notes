@@ -3,7 +3,7 @@
 [Sheaves for Homotopy Theorists](http://math.mit.edu/~dspivak/files/cech.pdf)
 
 The algebraic K-groups of a scheme X are defined by producing a spectrum K(X) and setting
-$K^n(X) \definedas π_{-n}K(X)
+$K^n(X) \definedas π_{-n}K(X)$.
 
 > Be warned that K-theorists and geometers write $K_n(X)$ for our $K^{−n}(X)$ -- we will stick to homotopy-theoretic notation, however.
 
