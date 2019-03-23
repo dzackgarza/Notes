@@ -10,6 +10,7 @@ $$
 $$
 \begin{CD}
 \mathcal{K}(C) @>>> \mathcal{K}(U) \\
-
+@VVV @VVV \\
+\mathcal{K}(V) @>>> \mathcal{K}(U\intersect V)
 \end{CD}
 $$
