@@ -25,7 +25,7 @@ Terms to look up:
 - Foliation
 - Orbifold
 - Sectional curvature
-  - Of a riemannian manifold
+  - Of a Riemannian manifold
 - "Type" of a quadratic form
 - Isotropy group
 - Uniformization
