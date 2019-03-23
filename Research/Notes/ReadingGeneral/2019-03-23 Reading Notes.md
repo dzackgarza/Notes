@@ -2,7 +2,7 @@
 
 
 The algebraic K-groups of a scheme X are defined by producing a spectrum K(X) and setting
-$K_n(X) \definedas π−nK(X)$ (be warned that K-theorists and geometers write Kn(X) for our K−n(X)—we
+$K_n(X) \definedas π_{-n}K(X)$ (be warned that K-theorists and geometers write Kn(X) for our K−n(X)—we
 will stick to homotopy-theoretic notation, however). K can be defined so that it actually gives a
 contravariant functor (Schemes) → (Spectra), and so the groups Kn(X) do indeed start to look like
 a cohomology theory. For X a topological space, the analogue of K(X) turns out to be the mapping
