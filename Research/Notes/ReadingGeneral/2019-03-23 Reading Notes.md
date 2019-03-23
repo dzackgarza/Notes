@@ -1,6 +1,6 @@
 # General Reading
 
-
+[
 The algebraic K-groups of a scheme X are defined by producing a spectrum K(X) and setting
 $K^n(X) \definedas π_{-n}K(X)
 
