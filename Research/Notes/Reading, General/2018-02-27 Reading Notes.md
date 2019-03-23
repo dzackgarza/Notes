@@ -40,7 +40,7 @@ Browder showed that the Kervaire invariant can be one only when $4p+2=2l−2$ fo
 [Justification for Lie Group Computations](https://en.wikipedia.org/wiki/Fundamental_group#Lie_groups)
 Here is a very fundamental way to create interesting Riemannian manifolds: Let $G$ be a semi-simple Lie group, let $K$ be its maximal compact subgroup, let $Γ$ be a discrete subgroup of $G$, and form $G/K$. This quotient is called the symmetric space attached to $G$.
 
-The Riemanian structure comes from an invariant metric on $G$, and so $G$ acts as isometries on $G/K$ by left translation.
+The Riemannian structure comes from an invariant metric on $G$, and so $G$ acts as isometries on $G/K$ by left translation.
 
 If you now take a discrete subgroup $Γ$ of $G$, you can form the double quotient $Γ∖G/K$. These are some of the most celebrated Riemannian manifolds in mathematics. In the case of $SL_2(\RR)$, we know via uniformization that all genus $g≥2$ Riemann surfaces can be described in this way. In the case of $SL_2(\CC)$ we get hyperbolic 3-manifolds, from symplectic groups we get moduli spaces of abelian varieties, ... .
 
