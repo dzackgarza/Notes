@@ -27,10 +27,10 @@ $$
 $$
 is a homotopy pullback diagram.
 
-believing that this gives the ‘correct’ definition of weak equivalence
-reduces to believing that the whole homotopy theory of schemes is captured in the two basic facts
-that hocolim −−−−−→
-U• → X and X × I → X are weak equivalences. This doesn’t sound particularly
+Believing that this gives the ‘correct’ definition of weak equivalence
+reduces to believing that the whole homotopy theory of schemes is captured in the two basic facts that 
+$hocolim \long U• → X$ 
+and X × I → X are weak equivalences. This doesn’t sound particularly
 believable. Is it even true for topological spaces?
 The surprising answer is yes. If we use this definition in the case of reasonable topological spaces
 (like CW-complexes) we do recover the usual notion of weak equivalence
