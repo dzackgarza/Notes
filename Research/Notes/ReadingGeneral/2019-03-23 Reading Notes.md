@@ -12,7 +12,7 @@ spectrum $bu^X$, where bu is the spectrum representing complex connective K-theo
 
 Thus, the functor K can be thought of as a substitute for the spectrum bu -- it is sort of a device for storing all the same information that bu provides, but without an honest ‘space’ to house it in.
 
-Most of the important results about algebraic K-theory arise from the study of the spectrum K(X), rather than that of the disembodied abelian groups Kn(X). For example, if the scheme X is covered by two open sets U and V , one wants a Mayer-Vietoris sequence
+Most of the important results about algebraic K-theory arise from the study of the spectrum K(X), rather than that of the disembodied abelian groups $K^n(X)$. For example, if the scheme X is covered by two open sets U and V , one wants a Mayer-Vietoris sequence
 $$
 \cdots \rightarrow K ^ { n } ( X ) \rightarrow K ^ { n } ( U ) \oplus K ^ { n } ( V ) \rightarrow K ^ { n } ( U \cap V ) \rightarrow K ^ { n + 1 } ( X ) \rightarrow \cdots
 $$
