@@ -67,7 +67,7 @@ $A_*$ known for all $O_n$ and $SO_n$ for $n$ odd in 80s, general result for $SO_
 
 # Further Reading
 
-Characteristic classes are elements of $H^*(BG)$, can be used to define chararacteristic classes for bundles.
+Characteristic classes are elements of $H^*(BG)$, can be used to define characteristic classes for bundles.
 
 Connected covers can kill higher homotopy?
 
