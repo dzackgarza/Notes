@@ -27,3 +27,6 @@ To look up and learn more about:
 - Spectra
   - Really spell out the details of how they're constructed (find/pick one of the nicer definitions) and their duality with homology theories
   - Extract some of the motivating examples of computations with spectra from my textbook annotations
+- Hopf Algebras
+  - Same story, extract and understand the motivating examples
+- 
