@@ -22,4 +22,4 @@ To look up and learn more about:
 - The Kervaire invariant 1 problem
 - The Adams Spectral Sequence
 - Morava $K$ and $E$ theory
-- The Morava stabilizer group
+- The Morava stabilizer groups
