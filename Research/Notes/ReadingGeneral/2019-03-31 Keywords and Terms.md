@@ -40,5 +40,6 @@ To look up and learn more about:
   - Find some results that actually work/compute with these
 - **$K\dash$theory**
 - The Novikov conjecture
+- Metrics and curvature on manifolds
 - 
   
