@@ -35,5 +35,5 @@ To look up and learn more about:
   - Also piece together theory of e.g. comodules over them
 - Localization
   - See some actual computations of computing "at a prime" or "away from a prime" 
-  - 
+- Gerbe
   
