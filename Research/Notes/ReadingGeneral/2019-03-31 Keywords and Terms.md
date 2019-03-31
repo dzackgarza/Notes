@@ -46,4 +46,5 @@ To look up and learn more about:
 - $H\dash$spaces
 - Motivate and understand phantom maps
 - Nilpotence
+- Profinite groups
   
