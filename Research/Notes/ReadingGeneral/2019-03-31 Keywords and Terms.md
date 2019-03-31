@@ -14,3 +14,4 @@ To look up and learn more about:
 - Topological modular forms
 - Index theory
 - The chromatic splitting conjecture
+  - Is this similar to fracture theorems in stable homotopy..?
