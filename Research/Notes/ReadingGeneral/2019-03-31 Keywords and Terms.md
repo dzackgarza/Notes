@@ -62,3 +62,4 @@ To look up and learn more about:
 - Cohomology operations
 - Thom spectrum
   - And Thom space
+- Tate cohomology
