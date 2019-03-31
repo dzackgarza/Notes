@@ -4,4 +4,5 @@ To look up and learn more about:
   - What are the actual statements? What is their importance within AG?
   - What were Deligne's contributions?
 - The Ravenel conjectures
-  - Particularly Mike Hopkins' 
+  - Particularly Mike Hopkins' contributions
+- 
