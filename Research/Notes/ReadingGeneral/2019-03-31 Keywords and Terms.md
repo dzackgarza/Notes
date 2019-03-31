@@ -60,4 +60,5 @@ To look up and learn more about:
   - And cofibrant generation
 - **The Steenrod Algebra**
 - Cohomology operations
-  
+- Thom spectrum
+  - And Thom space
