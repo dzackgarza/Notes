@@ -1,5 +1,7 @@
 Reading: [Mark Hovey's List of Open Problems in Algebraic Topology](http://mhovey.web.wesleyan.edu/problems/big.html)
 
+> Note: a vector bundle is a locally free sheaf!
+
 To look up and learn more about:
 
 - The Weil Conjectures
@@ -33,4 +35,4 @@ To look up and learn more about:
   - Also piece together theory of e.g. comodules over them
 - Localization
   - See some actual computations of computing "at a prime" or "away from a prime" 
-- 
+  
