@@ -54,4 +54,6 @@ To look up and learn more about:
 - Formal group laws
 - Symmetric monoidal categories
 - Quillen equivalence
+- Model categories 
+  - And cofibrant generation
   
