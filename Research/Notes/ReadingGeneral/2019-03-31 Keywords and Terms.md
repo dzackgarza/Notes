@@ -42,4 +42,5 @@ To look up and learn more about:
 - The Novikov conjecture
 - Metrics and curvature on manifolds
 - Understand the $H$ notation, i.e. $H\ZZ$
+- $A_\infty$
   
