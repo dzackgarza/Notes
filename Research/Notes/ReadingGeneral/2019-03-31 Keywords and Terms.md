@@ -39,4 +39,5 @@ To look up and learn more about:
 - Simplicial sets
   - Find some results that actually work/compute with these
 - $K\dash$theory
+  - 
   
