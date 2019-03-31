@@ -45,4 +45,5 @@ To look up and learn more about:
 - $A_\infty$
 - $H\dash$spaces
 - Motivate and understand phantom maps
+- Nilpotence
   
