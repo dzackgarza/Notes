@@ -26,7 +26,7 @@ To look up and learn more about:
 - Morava $K$ and $E$ theory
 - The Morava stabilizer groups
 - Lubin-Tate spaces
-- Spectra
+- **Spectra**
   - Really spell out the details of how they're constructed (find/pick one of the nicer definitions) and their duality with homology theories
   - Extract some of the motivating examples of computations with spectra from my textbook annotations
   - Especially try to understand the bordism spectrum, $MO$?
@@ -38,6 +38,5 @@ To look up and learn more about:
 - Gerbe
 - Simplicial sets
   - Find some results that actually work/compute with these
-- $K\dash$theory
-  - 
+- **$K\dash$theory**
   
