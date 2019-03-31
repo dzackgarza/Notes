@@ -56,5 +56,6 @@ To look up and learn more about:
 - Quillen equivalence
 - Model categories 
   - And cofibrant generation
-- 
+- **The Steenrod Algebra**
+- Cohomology operations
   
