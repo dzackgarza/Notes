@@ -21,6 +21,7 @@ To look up and learn more about:
 - Bousfield localization
 - The telescope conjecture
 - Loop spaces
+  - Particularly infinite loop spaces, and why they're important
 - Weyl groups
 - The Kervaire invariant 1 problem
 - The Adams Spectral Sequence
