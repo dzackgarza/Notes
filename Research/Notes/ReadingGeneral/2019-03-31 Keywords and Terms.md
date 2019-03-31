@@ -13,3 +13,4 @@ To look up and learn more about:
 - The etale fundamental group
 - Topological modular forms
 - Index theory
+- The chromatic splitting conjecture
