@@ -15,4 +15,5 @@ To look up and learn more about:
 - Index theory
 - The chromatic splitting conjecture
   - Is this similar to fracture theorems in stable homotopy..?
+- Bousfield localization
 - 
