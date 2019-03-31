@@ -47,5 +47,5 @@ To look up and learn more about:
 - Motivate and understand phantom maps
 - Nilpotence
 - Profinite groups
-- 
+- Quasi-coherent sheaves over a scheme
   
