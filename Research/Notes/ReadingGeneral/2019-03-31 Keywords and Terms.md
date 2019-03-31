@@ -56,4 +56,5 @@ To look up and learn more about:
 - Quillen equivalence
 - Model categories 
   - And cofibrant generation
+- 
   
