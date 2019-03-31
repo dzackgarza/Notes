@@ -63,3 +63,4 @@ To look up and learn more about:
 - Thom spectrum
   - And Thom space
 - Tate cohomology
+- 
