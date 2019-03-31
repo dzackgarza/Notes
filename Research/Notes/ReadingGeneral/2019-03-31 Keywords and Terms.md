@@ -52,5 +52,5 @@ To look up and learn more about:
 - Quasi-coherent sheaves over a scheme
 - Moduli stacks
 - Formal group laws
-- 
+- Symmetric monoidal categories
   
