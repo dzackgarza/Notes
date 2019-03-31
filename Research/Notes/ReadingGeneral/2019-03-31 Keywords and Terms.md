@@ -16,6 +16,7 @@ To look up and learn more about:
 - The etale fundamental group
 - Topological modular forms
 - Index theory
+- Chromatic homotopy theory
 - The chromatic splitting conjecture
   - Is this similar to fracture theorems in stable homotopy..?
 - Bousfield localization
