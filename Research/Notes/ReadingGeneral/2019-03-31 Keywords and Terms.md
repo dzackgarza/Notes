@@ -65,3 +65,5 @@ To look up and learn more about:
   - And Thom space
 - Tate cohomology
 - Get a more precise understanding of $n\dash$categories
+- The Milnor conjecture
+- The Grothendieck-Witt Ring
