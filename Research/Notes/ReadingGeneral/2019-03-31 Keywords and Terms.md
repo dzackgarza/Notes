@@ -24,3 +24,5 @@ To look up and learn more about:
 - Morava $K$ and $E$ theory
 - The Morava stabilizer groups
 - Lubin-Tate spaces
+- Spectra
+  - Really spell out the details of how they're constructed (find/pick one of the nicer definitions) and their duality with homology theories
