@@ -1,6 +1,7 @@
 Reading: [Mark Hovey's List of Open Problems in Algebraic Topology](http://mhovey.web.wesleyan.edu/problems/big.html)
 
-> Note: a vector bundle is a locally free sheaf!
+> Note: a vector bundle is a locally free sheaf.
+> A scheme is a generalization of a ring, in the same way that a manfold is a generalization of R^n
 
 To look up and learn more about:
 
