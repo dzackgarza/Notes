@@ -8,3 +8,6 @@ To look up and learn more about:
 - The Ravenel conjectures
   - Particularly Mike Hopkins' contributions
 - The generating hypothesis in stable homotopy theory
+- Elliptic cohomology
+- The etale fundamental group
+- 
