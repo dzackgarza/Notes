@@ -9,5 +9,6 @@ To look up and learn more about:
   - Particularly Mike Hopkins' contributions
 - The generating hypothesis in stable homotopy theory
 - Elliptic cohomology
+  - Hopkins' viewpoint on elliptic spectra
 - The etale fundamental group
 - 
