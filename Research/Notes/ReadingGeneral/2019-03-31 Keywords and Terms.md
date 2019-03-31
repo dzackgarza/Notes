@@ -69,4 +69,4 @@ To look up and learn more about:
 - The Grothendieck-Witt Ring
 - The chromatic redshift conjecture
 - Algebraic K Theory
-  - 
+  - And how topological cyclic homology is an easier
