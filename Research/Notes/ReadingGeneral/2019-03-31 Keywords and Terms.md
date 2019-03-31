@@ -44,5 +44,5 @@ To look up and learn more about:
 - Understand the $H$ notation, i.e. $H\ZZ$
 - $A_\infty$
 - $H\dash$spaces
-- 
+- Motivate and understand phantom maps
   
