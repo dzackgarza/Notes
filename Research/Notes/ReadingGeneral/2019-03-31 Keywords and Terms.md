@@ -17,4 +17,5 @@ To look up and learn more about:
   - Is this similar to fracture theorems in stable homotopy..?
 - Bousfield localization
 - The telescope conjecture
-- 
+- Loop spaces
+- Weyl groups
