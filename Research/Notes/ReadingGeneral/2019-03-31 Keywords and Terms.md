@@ -20,3 +20,4 @@ To look up and learn more about:
 - Loop spaces
 - Weyl groups
 - The Kervaire invariant 1 problem
+- The Adams Spectral Sequence
