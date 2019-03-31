@@ -19,3 +19,4 @@ To look up and learn more about:
 - The telescope conjecture
 - Loop spaces
 - Weyl groups
+- The Kervaire invariant 1 problem
