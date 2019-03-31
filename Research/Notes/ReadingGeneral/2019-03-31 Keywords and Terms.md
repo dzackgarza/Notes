@@ -67,3 +67,5 @@ To look up and learn more about:
 - Get a more precise understanding of $n\dash$categories
 - The Milnor conjecture
 - The Grothendieck-Witt Ring
+- The chromatic redshift conjecture
+- Algebraic K Theory
