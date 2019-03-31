@@ -29,4 +29,4 @@ To look up and learn more about:
   - Extract some of the motivating examples of computations with spectra from my textbook annotations
 - Hopf Algebras
   - Same story, extract and understand the motivating examples
-- 
+  - Also piece together theory of e.g. comodules over them
