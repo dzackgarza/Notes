@@ -11,4 +11,4 @@ To look up and learn more about:
 - Elliptic cohomology
   - Hopkins' viewpoint on elliptic spectra
 - The etale fundamental group
-- 
+- Topological modular forms
