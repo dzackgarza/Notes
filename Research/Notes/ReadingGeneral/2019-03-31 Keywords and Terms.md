@@ -23,7 +23,7 @@ To look up and learn more about:
 - Weyl groups
 - The Kervaire invariant 1 problem
 - The Adams Spectral Sequence
-- Morava $K$ and $E$ theory
+- **Morava $K$ and $E$ theory**
 - The Morava stabilizer groups
 - Lubin-Tate spaces
 - **Spectra**
