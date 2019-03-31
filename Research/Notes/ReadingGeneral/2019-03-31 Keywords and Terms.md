@@ -35,7 +35,7 @@ To look up and learn more about:
   - Also piece together theory of e.g. comodules over them
 - Localization
   - See some actual computations of computing "at a prime" or "away from a prime" 
-- Gerbe
+- Gerbes
 - Simplicial sets
   - Find some results that actually work/compute with these
 - **$K\dash$theory**
@@ -47,4 +47,5 @@ To look up and learn more about:
 - Motivate and understand phantom maps
 - Nilpotence
 - Profinite groups
+- 
   
