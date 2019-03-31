@@ -17,6 +17,7 @@ To look up and learn more about:
 - Topological modular forms
 - Index theory
 - Chromatic homotopy theory
+- The chromatic spectral sequence
 - The chromatic splitting conjecture
   - Is this similar to fracture theorems in stable homotopy..?
 - Bousfield localization
