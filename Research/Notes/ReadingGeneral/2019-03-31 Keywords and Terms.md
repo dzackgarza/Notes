@@ -1,4 +1,4 @@
-Reading: [Mike Hovey's List of Open Problems in Algebraic Topology](http://mhovey.web.wesleyan.edu/problems/big.html)
+Reading: [Mark Hovey's List of Open Problems in Algebraic Topology](http://mhovey.web.wesleyan.edu/problems/big.html)
 
 To look up and learn more about:
 
