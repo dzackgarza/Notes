@@ -53,4 +53,5 @@ To look up and learn more about:
 - Moduli stacks
 - Formal group laws
 - Symmetric monoidal categories
+- 
   
