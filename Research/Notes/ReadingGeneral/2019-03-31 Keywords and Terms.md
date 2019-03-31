@@ -34,6 +34,7 @@ To look up and learn more about:
 - Hopf Algebras
   - Same story, extract and understand the motivating examples
   - Also piece together theory of e.g. comodules over them
+  - Also Hopf Algebroids
 - Localization
   - See some actual computations of computing "at a prime" or "away from a prime" 
 - Gerbes
