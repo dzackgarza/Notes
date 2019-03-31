@@ -63,4 +63,4 @@ To look up and learn more about:
 - Thom spectrum
   - And Thom space
 - Tate cohomology
-- 
+- Get a more precise understanding of $n\dash$categories
