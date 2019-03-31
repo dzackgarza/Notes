@@ -7,4 +7,4 @@ To look up and learn more about:
   - What were Deligne's contributions?
 - The Ravenel conjectures
   - Particularly Mike Hopkins' contributions
-- 
+- The generating hypothesis
