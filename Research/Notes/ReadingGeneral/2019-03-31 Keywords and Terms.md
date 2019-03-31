@@ -12,3 +12,4 @@ To look up and learn more about:
   - Hopkins' viewpoint on elliptic spectra
 - The etale fundamental group
 - Topological modular forms
+- Index theory
