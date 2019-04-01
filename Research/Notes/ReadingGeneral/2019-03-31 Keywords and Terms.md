@@ -5,6 +5,8 @@ Reading: [Mark Hovey's List of Open Problems in Algebraic Topology](http://mhove
 
 To look up and learn more about:
 ## Specific Problems/Conjectures
+(and concepts therein)
+
 - The Weil Conjectures
   - What are the actual statements? What is their importance within AG?
   - What were Deligne's contributions?
