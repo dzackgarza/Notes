@@ -4,7 +4,7 @@ Reading: [Mark Hovey's List of Open Problems in Algebraic Topology](http://mhove
 > A scheme is a generalization of a ring, in the same way that a manifold is a generalization of R^n
 
 To look up and learn more about:
-
+## Specific Problems/Conjectures
 - The Weil Conjectures
   - What are the actual statements? What is their importance within AG?
   - What were Deligne's contributions?
