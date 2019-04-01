@@ -74,6 +74,9 @@ To look up and learn more about:
 - The chromatic redshift conjecture
 - Algebraic K Theory
   - And how topological cyclic homology is related and more computable
+
+
+## General Theory
 - Algebras
   - Precise descriptions of polynomial, exterior, and symmetric algebras
 - 
