@@ -80,3 +80,4 @@ To look up and learn more about:
 - Algebras
   - Precise descriptions of polynomial, exterior, and symmetric algebras
 - Homotopy and derived categories
+  - Sort out weak equivalences vs homotopy equivalences vs quasi-isomorphisms etc
