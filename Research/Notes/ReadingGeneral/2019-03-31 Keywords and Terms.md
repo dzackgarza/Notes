@@ -91,3 +91,4 @@ To look up and learn more about:
 - Sard's Theorem
 - Generalized Poincare
 - Langlands and Geometric Langlands
+- L functions for elliptic curves
