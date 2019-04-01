@@ -83,3 +83,6 @@ To look up and learn more about:
   - Sort out weak equivalences vs homotopy equivalences vs quasi-isomorphisms etc
 - Limits, colimits
 - Pushouts, pullbacks
+- Adjunction
+- Equivalence of categories
+  - Need to state this precisely!
