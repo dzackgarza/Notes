@@ -94,3 +94,7 @@ To look up and learn more about:
 - L functions for elliptic curves
 
 ## Notes
+
+>Flipping roles, generalized cohomology theories can be studied in their own right. They come from a category called the stable homotopy category (which is much like a derived category of chain complexes), and each of them can be determined by a certain amount of data involving cohomology operations. Much of this data can be recovered by looking at how the generalized cohomology theory behaves on certain spaces (projective spaces and classifying spaces being the canonical examples).
+
+>
