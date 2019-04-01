@@ -74,6 +74,8 @@ To look up and learn more about:
 - The chromatic redshift conjecture
 - Algebraic K Theory
   - And how topological cyclic homology is related and more computable
+- Formal Groups
+  - Where they come up, what they're used for, why important
 
 
 ## General Theory
