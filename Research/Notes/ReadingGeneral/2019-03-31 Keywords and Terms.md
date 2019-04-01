@@ -102,3 +102,7 @@ To look up and learn more about:
 > After a lot of hard work (with some of the bigger names including Adams, Milnor, and Quillen, though I am leaving a lot of important names out) it is discovered, starting from almost pure calculation, that the stable homotopy category has a connection to the category of 1-dimensional formal groups, via the study of characteristic classes. Each generalized cohomology theory determines some amount of formal group data.
 
 >  via things like BP-theory and the Adams-Novikov spectral sequence, leads to better qualitative understanding of the stable homotopy category, new guesses about what phenomena can occur (e.g. the Ravenel conjectures), new techniques which are computationally useful, and new theorems (e.g. the solution of most of the Ravenel conjectures).
+
+>Take a look at Machlachlan and Reid's book "The Arithmetic of Hyperbolic 3-Manifolds".
+
+Since finite volume hyperbolic structures are unique whenever an n-manifold (n≥3) has them, any invariants of the hyperbolic structure are invariants of the manifold. Hyperbolic manifolds are K(π,1)-spaces, so they're not just diffeo/homeomorphism invariants, but invariants of the homotopy-type.
