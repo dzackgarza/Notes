@@ -79,4 +79,4 @@ To look up and learn more about:
 ## General Theory
 - Algebras
   - Precise descriptions of polynomial, exterior, and symmetric algebras
-- 
+- Homotopy and derived categories
