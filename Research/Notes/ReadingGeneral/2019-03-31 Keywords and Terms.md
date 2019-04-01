@@ -74,3 +74,4 @@ To look up and learn more about:
   - And how topological cyclic homology is related and more computable
 - Algebras
   - Precise descriptions of polynomial, exterior, and symmetric algebras
+- 
