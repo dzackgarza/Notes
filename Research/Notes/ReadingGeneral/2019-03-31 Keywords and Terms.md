@@ -79,6 +79,7 @@ To look up and learn more about:
 ## General Theory
 - Algebras
   - Precise descriptions of polynomial, exterior, and symmetric algebras
+  - Differential graded and Lie
 - Homotopy and derived categories
   - Sort out weak equivalences vs homotopy equivalences vs quasi-isomorphisms etc
 - Limits, colimits
