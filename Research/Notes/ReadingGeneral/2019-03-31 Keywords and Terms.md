@@ -88,3 +88,5 @@ To look up and learn more about:
 - Equivalence of categories
   - Need to state this precisely!
 - $E_n$ rings
+- Sard's Theorem
+- Generalized Poincare
