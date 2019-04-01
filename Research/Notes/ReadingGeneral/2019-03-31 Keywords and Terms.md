@@ -87,3 +87,4 @@ To look up and learn more about:
 - Adjunction
 - Equivalence of categories
   - Need to state this precisely!
+- $E_n$ rings
