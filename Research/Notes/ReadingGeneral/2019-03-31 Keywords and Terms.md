@@ -90,3 +90,4 @@ To look up and learn more about:
 - $E_n$ rings
 - Sard's Theorem
 - Generalized Poincare
+- Langlands and Geometric Langlands
