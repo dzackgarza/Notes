@@ -85,6 +85,7 @@ To look up and learn more about:
 - Chow rings
 - Teichmüller space: space of complex structures
 - Mapping class group: orientation-preserving diffeos / id component
+- Perfect fields
 
 
 ## General Theory
