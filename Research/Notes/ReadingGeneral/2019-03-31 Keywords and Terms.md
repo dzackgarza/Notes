@@ -107,6 +107,8 @@ To look up and learn more about:
 - Classification of surfaces
 - Complex structures, almost-complex structures
 - Trivial, canonical, universal bundles
+- Exceptional divisor
+- Blowup
 
 ## Notes
 
