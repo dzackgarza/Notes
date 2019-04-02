@@ -80,6 +80,7 @@ To look up and learn more about:
 - Stacks
 - Coarse moduli space
 - Closed points of a scheme
+- Smooth projective curves
 
 
 ## General Theory
