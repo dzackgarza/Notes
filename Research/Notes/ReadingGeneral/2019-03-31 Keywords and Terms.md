@@ -102,6 +102,7 @@ To look up and learn more about:
 - Langlands and Geometric Langlands
 - L functions for elliptic curves
 - The Frobenius
+- Classification of surfaces
 
 ## Notes
 
