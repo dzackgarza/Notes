@@ -106,7 +106,7 @@ To look up and learn more about:
 - The Frobenius
 - Classification of surfaces
 - Complex structures, almost-complex structures
-- Trivial and canonical bundles
+- Trivial, canonical, universal bundles
 
 ## Notes
 
