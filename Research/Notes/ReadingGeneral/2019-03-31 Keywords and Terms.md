@@ -83,7 +83,7 @@ To look up and learn more about:
   - $E$ behaves like a local ring and $K$ its residue fields
 - Brauer groups
 - Massey products
-
+- Descent
 
 ## General Theory
 - Algebras
