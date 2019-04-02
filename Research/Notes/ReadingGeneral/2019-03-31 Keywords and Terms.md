@@ -139,4 +139,4 @@ H^\wait(\mathcal M; \QQ) \cong \left( H^\wait(X; \QQ)\right)^G
 $$
 where the RHS denotes the taking the $G\dash$ invariant part. Seems to only work over $\QQ$. The quotient is scheme-theoretic. The actual definite involves equivariant cohomology.
 
-Prototypical example of a moduli space: $\Gr_\CC(n, k)$. Apparently fundamental classes exist for closed subvarieties.
+Prototypical example of a moduli space: $\Gr_\CC(n, k)$. Apparently fundamental classes exist for closed subvarieties? Maybe just closed subvarieties of a moduli space.
