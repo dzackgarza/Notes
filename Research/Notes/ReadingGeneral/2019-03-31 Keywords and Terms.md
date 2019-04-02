@@ -121,4 +121,7 @@ $$
 $$
 where GF is the absolute Galois group of F and π1 is the algebraic (etale) fundamental group. In case the curve is over the complex numbers, the etale π1 is the profinite completion of the regular fundamental group, so there is a very close connection to the classical stuff of Hatcher. The conjecture is still a wide open problem, but any proof would mean you could check something of number theoretic interest (existence of rational points on curves) by studying maps between certain generalized homotopy groups!
 
-Neat trick from algebraic geometry: For a stack $\mathcal M =X/G$ where $X$ is a $\CC\dash$variety and $G$ is a finite group,
+Neat trick from algebraic geometry: For a stack $\mathcal M =X/G$ where $X$ is a $\CC\dash$variety and $G$ is a finite group, then
+$$
+H^\wait(\mathcal M; \QQ) \cong \left( \right)^G
+$$
