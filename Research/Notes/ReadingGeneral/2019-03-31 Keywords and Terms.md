@@ -79,7 +79,7 @@ To look up and learn more about:
 - Schemes
 - Stacks
 - Coarse moduli space
-- Closed points
+- Closed points of a scheme
 
 
 ## General Theory
