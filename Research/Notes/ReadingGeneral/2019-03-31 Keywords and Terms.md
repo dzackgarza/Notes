@@ -76,14 +76,6 @@ To look up and learn more about:
   - And how topological cyclic homology is related and more computable
 - Formal Groups
   - Where they come up, what they're used for, why important
-- Schemes
-- Stacks
-- Coarse moduli space
-  - Somehow a nicer version of a stack where torsion in the automorphism groups aren't messing things up
-- Closed points of a scheme
-- Smooth projective curves
-- Chow rings
-- Teichmüller space: space of complex structures
 - Mapping class group: orientation-preserving diffeos / id component
 - Perfect fields
 
@@ -113,6 +105,14 @@ To look up and learn more about:
 - Hodge numbers
 - Jacobian of a curve
 - Abelian varieties
+- Schemes
+- Stacks
+- Coarse moduli space
+  - Somehow a nicer version of a stack where torsion in the automorphism groups aren't messing things up
+- Closed points of a scheme
+- Smooth projective curves
+- Chow rings
+- Teichmüller space: space of complex structures
 
 ## Notes
 
