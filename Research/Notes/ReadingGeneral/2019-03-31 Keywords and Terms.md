@@ -104,6 +104,7 @@ To look up and learn more about:
 - L functions for elliptic curves
 - The Frobenius
 - Classification of surfaces
+- Complex structures, almost-complex structures
 
 ## Notes
 
