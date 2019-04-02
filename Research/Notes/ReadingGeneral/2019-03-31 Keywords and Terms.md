@@ -110,6 +110,8 @@ To look up and learn more about:
 - Exceptional divisor
 - Blowup
 - Hodge numbers
+- Jacobian of a curve
+- Abelian varieties
 
 ## Notes
 
