@@ -84,6 +84,7 @@ To look up and learn more about:
 - Smooth projective curves
 - Chow rings
 - Teichmüller space: space of complex structures
+- Mapping class group: Teichmüller divided by orientation-preserving diffeos
 
 
 ## General Theory
