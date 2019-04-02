@@ -83,6 +83,7 @@ To look up and learn more about:
 - Closed points of a scheme
 - Smooth projective curves
 - Chow rings
+- Teichmüller space: space of complex structures
 
 
 ## General Theory
