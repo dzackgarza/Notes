@@ -82,6 +82,7 @@ To look up and learn more about:
   - Somehow a nicer version of a stack where torsion in the automorphism groups aren't messing things up
 - Closed points of a scheme
 - Smooth projective curves
+- Chow rings
 
 
 ## General Theory
