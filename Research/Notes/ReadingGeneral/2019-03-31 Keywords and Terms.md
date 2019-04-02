@@ -109,6 +109,7 @@ To look up and learn more about:
 - Trivial, canonical, universal bundles
 - Exceptional divisor
 - Blowup
+- Hodge numbers
 
 ## Notes
 
