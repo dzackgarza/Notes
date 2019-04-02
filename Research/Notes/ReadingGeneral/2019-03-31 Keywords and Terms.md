@@ -78,6 +78,7 @@ To look up and learn more about:
   - Where they come up, what they're used for, why important
 - Mapping class group: orientation-preserving diffeos / id component
 - Perfect fields
+- Spf: Formal spectrum
 
 
 ## General Theory
