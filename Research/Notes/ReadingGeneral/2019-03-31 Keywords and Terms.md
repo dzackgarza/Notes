@@ -123,5 +123,5 @@ where GF is the absolute Galois group of F and π1 is the algebraic (etale) fund
 
 Neat trick from algebraic geometry: For a stack $\mathcal M =X/G$ where $X$ is a $\CC\dash$variety and $G$ is a finite group, then
 $$
-H^\wait(\mathcal M; \QQ) \cong \left( \right)^G
+H^\wait(\mathcal M; \QQ) \cong \left( H^\wait(X; \QQ)\right)^G
 $$
