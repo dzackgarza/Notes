@@ -76,6 +76,10 @@ To look up and learn more about:
   - And how topological cyclic homology is related and more computable
 - Formal Groups
   - Where they come up, what they're used for, why important
+- Schemes
+- Stacks
+- Coarse moduli space
+- Closed points
 
 
 ## General Theory
