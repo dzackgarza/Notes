@@ -132,3 +132,5 @@ $$
 H^\wait(\mathcal M; \QQ) \cong \left( H^\wait(X; \QQ)\right)^G
 $$
 where the RHS denotes the taking the $G\dash$ invariant part. Seems to only work over $\QQ$. The quotient is scheme-theoretic. The actual definite involves equivariant cohomology.
+
+Prototypical example of a moduli space: $\GR(n, k)$
