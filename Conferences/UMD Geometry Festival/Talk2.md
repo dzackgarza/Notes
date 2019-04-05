@@ -41,4 +41,8 @@ We want to get a map that yields a exact 2-form, we'll just show one that yields
 
 The action of $G^{Ox}$ on $J(M)$ is Hamiltonian with moment map $J(M) \to \Omega^2(M)$ given by $J \mapsto 2\mathrm{Ricc}_{G, J}$. 
 
-Choose $\nabla$ a torsion-free connection on $TM$ where $\nabla_G = 0$, then $\mathrm{Ricc}_{G, J} = \frac 1 2 (\tau^\nabla_J + d\lambda^\nabla_J)$ where $d$ is the covariant derivative. Although we make this choice, the result Ricci form does not depend on it.
+Choose $\nabla$ a torsion-free connection on $TM$ where $\nabla_G = 0$, then $\mathrm{Ricc}_{G, J} = \frac 1 2 (\tau^\nabla_J + d\lambda^\nabla_J)$ where $d$ is the covariant derivative. Although we make this choice, the result Ricci form does not depend on it. 
+
+Think about the case where $M$ is Calibi-Yau. Can do similar construction, but the Ricci form takes values in some affine space and needs a correction, and you lose equivariance.
+
+Note that this is not a Kahler form.
