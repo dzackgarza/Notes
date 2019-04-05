@@ -17,6 +17,6 @@ Outline:
 
 First PDEs written in modern style: Euler, 1757
 
-The Euler flow is an incompressible fluid confined to a compact Riemannian manifolds, evolving according to the Euler equations. (It wasn't clear how to extend defn of Riemannian manifolds to infinite dimensions.) Evolve along geodesics, need to be volume-preserving. Look at action on gridded-up version of torus.
+The Euler flow is an incompressible fluid confined to a compact Riemannian manifolds, evolving according to the Euler equations. (It wasn't clear how to extend defn of Riemannian manifolds to infinite dimensions.) Evolve along geodesics, need to be volume-preserving. Look at action on gridded-up version of torus $T^2$.
 
 Discrete version of incompressible motion.
