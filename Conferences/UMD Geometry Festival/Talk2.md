@@ -45,4 +45,4 @@ Choose $\nabla$ a torsion-free connection on $TM$ where $\nabla_G = 0$, then $\m
 
 Think about the case where $M$ is Calibi-Yau (and/or Teichmuller space?). Can do similar construction, but the Ricci form takes values in some affine space and needs a correction, and you lose equivariance.
 
-Note that this is not a Kahler form. Look at Yau's theorem. Look at the Chern class of $S^1\times S^3$. There is a construction that yields both a complex form and a symplectic form on the Teichmuller space in question, and we can find an explicit formula for it.
+Note that this is not a Kahler form. Look at Yau's theorem. Look at the Chern class of $S^1\times S^3$. There is a construction that yields both a complex form and a canonical symplectic form on the Teichmuller space in question, and we can find an explicit formula for it.
