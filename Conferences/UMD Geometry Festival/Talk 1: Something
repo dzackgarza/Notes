@@ -23,4 +23,4 @@ Discrete version of incompressible motion - acts by permutation, i.e. a finite s
 
 There is some solution that gives the final permutation at the lowest cost -- the possibilities are finite, but large. This will be our "geodesic", i.e. optimal transport.
 
-Example: find the minimal flow between $[1,2,\cdots n]$ and $[n, n-1, \cdots, 2, 1]$.
+Example: find the minimal flow between $[1,2,\cdots n]$ and $[n, n-1, \cdots, 2, 1]$. Tr
