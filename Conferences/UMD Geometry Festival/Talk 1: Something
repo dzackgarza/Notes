@@ -20,3 +20,5 @@ First PDEs written in modern style: Euler, 1757
 The Euler flow is an incompressible fluid confined to a compact Riemannian manifolds, evolving according to the Euler equations. (It wasn't clear how to extend defn of Riemannian manifolds to infinite dimensions.) Evolve along geodesics, need to be volume-preserving. Look at action on gridded-up version of torus $T^2$.
 
 Discrete version of incompressible motion - acts by permutation, i.e. a finite series of permutations on gridded cells. Compute "cost" of flow by adding squares of displacements, which increases if any step moves any given grid by a large amount.
+
+There is some solution that gives the final permutation at the lowest cost -- the possibilities are finite, but large.
