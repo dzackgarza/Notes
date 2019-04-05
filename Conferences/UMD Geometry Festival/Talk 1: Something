@@ -28,3 +28,5 @@ Example: find the minimal flow between $[1,2,\cdots n]$ and $[n, n-1, \cdots, 2,
 Well-known: in 1D, there is no non-trivial solution.
 
 In passing to the continuous limit, this solution can be improved by a factor of $\frac \pi {12}$. Actual solution in continuous case is known; all trigonometric functions. This shape is reflected in the finite numeric simulations.
+
+This generalized solution has been discovered in an entirely different framework involving random walks on the symmetric group.
