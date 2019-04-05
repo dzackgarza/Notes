@@ -37,7 +37,7 @@ This generalized solution has been discovered in an entirely different framework
 
 A generalized incompressible flow on a compact Riemannian manifold $D$ is a probability measure $\mu$ on paths $\xi_t$ such that $\mu​$ has finite average energy 
 
-$$E_\mu \int_0^T \frac 1 2 \left|\frac{d\xi}{dt}\right|^2 dt$$ 
+$$E_\mu \int_0^T \frac 1 2 \left|\frac{d\xi}{dt}\right|^2 dt​$$ 
 
 where we are taking the expectation of this integral.
 
