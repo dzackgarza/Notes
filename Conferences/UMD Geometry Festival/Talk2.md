@@ -13,7 +13,15 @@ where we follow a Hamiltonian flow to infinity and obtain a number.
 
 If any of the weights are negative, the points can not be semi-stable, which falls out of a specific bound on the Mumford weights. Thus we have
 
+
+
 **Theorem**
+$$
+\sup_{\xi\neq0} \frac{-W_\mu(x,\xi)}{\left|\xi\right|} \leq \inf_{g\in G} \left|\mu(gx)\right|
+$$
+
+
+**Corrollary**
 
 $x$ is semistable ($\mu(gx) = 0$) $\iff$ $\forall\xi, W_\mu(x, \xi)  \geq 0$.
 
