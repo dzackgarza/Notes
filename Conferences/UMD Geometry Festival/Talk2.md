@@ -27,7 +27,7 @@ $x$ is semistable ($\mu(gx) = 0$) $\iff$ $\forall\xi, W_\mu(x, \xi)  \geq 0$.
 
 
 
-This is at the heart of geometric invariant theory (Hilbert, Mumford, Kempf, Ness, Kirwan). The key tool is studying the gradient flow of the moment map, or more precisely $\frac 1 2 \mu^2$, about which one can say many interesting things.
+This is at the heart of **geometric invariant theory** (Hilbert, Mumford, Kempf, Ness, Kirwan). The key tool is studying the gradient flow of the moment map, or more precisely $\frac 1 2 \mu^2​$, about which one can say many interesting things.
 
 
 
