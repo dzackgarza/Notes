@@ -39,4 +39,6 @@ We want to get a map that yields a exact 2-form, we'll just show one that yields
 
 **Theorem**
 
-The action of $G^{Ox}$ on $J(M)$ is Hamiltonian with moment map $J(M) \to \Omega^2(M)$ given by $J \mapsto \mathrm{Ricc}_{G, J}$.
+The action of $G^{Ox}$ on $J(M)$ is Hamiltonian with moment map $J(M) \to \Omega^2(M)$ given by $J \mapsto \mathrm{Ricc}_{G, J}$. 
+
+Choose $\nabla$ a torision
