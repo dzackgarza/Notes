@@ -15,9 +15,11 @@ If any of the weights are negative, the points can not be semi-stable, which fal
 
 **Theorem**
 
-$x$ is semistable $\iff$ $\forall\xi, W_\mu(x, \xi)  \geq 0$.
+$x$ is semistable ($\mu(gx) = 0$) $\iff$ $\forall\xi, W_\mu(x, \xi)  \geq 0$.
 
 
+
+This is at the heart of geometric invariant theory (Hilbert, Mumford, Kempf, Ness, Kirwan)
 
 
 
