@@ -37,4 +37,4 @@ This generalized solution has been discovered in an entirely different framework
 
 A generalized incompressible flow on a compact Riemannian manifold $D$ is a probability measure $\mu$ on paths $\xi_t$ such that $\mu$ has finite energy $E_\mu \int_0^T \frac 1 2 \abs{\frac{d\xi}{dt}}^2 dt$ (where we take the expectation of this integral).
 
-Main results on minimizing geodesic (since 1992): let $\mu_{0, T}$ be a probability measure on $D\times D$ such that the projections $\mu_0=\mu_t = \mathcal L_D$, the Lebesgue measure. This measure is spanned by at least on generalized incompressible flow $\mu$ of minimal energy.
+Main results on minimizing geodesic (since 1992): let $\mu_{0, T}$ be a probability measure on $D\times D$ such that the projections $\mu_0=\mu_t = \mathcal L_D$, the Lebesgue measure on $D$. This measure is spanned by at least on generalized incompressible flow $\mu$ of minimal energy.
