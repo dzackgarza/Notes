@@ -15,5 +15,9 @@ If any of the weights are negative, the points can not be semi-stable, which fal
 
 **Theorem**
 
-$x$ is semistable $\iff$ $\forall\xi, W_\mu(x, \xi)  \geq 0$
+$x$ is semistable $\iff$ $\forall\xi, W_\mu(x, \xi)  \geq 0$.
+
+
+
+
 
