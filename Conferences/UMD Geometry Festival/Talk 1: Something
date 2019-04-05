@@ -47,4 +47,6 @@ In fact, there is a unique pressure distribution $\nabla p(t, x)$ that relates t
 
 Smoothness of these solutions is important.The existence of a unique $\nabla p$ follows from the convexity of the minimizing geodesic problem. Main open equation: is $\nabla p$ smooth? We currently know it is $L^2$ locally (1999/2008) and we have data for which $p$ is not better than locally semi-convex in $x$.
 
-Last questio
+Last questions: what about the initial value problem? (Y.B. 2018)
+
+A priori, convex minimization techniques are hopeless for the IVP.
