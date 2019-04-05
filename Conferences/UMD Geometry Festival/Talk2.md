@@ -31,4 +31,4 @@ This is at the heart of **geometric invariant theory** (Hilbert, Mumford, Kempf,
 
 
 
-Example: let $J_n = \left\{ a\right\}$
+Example: let $J_n = \left\{ J^{2n\times 2n} \mid J^2 = -I \right\} = \left\{ g \pmatrix{0 & -I \\ I & 0} g \mid g\in SL(2n, \mathbb R)\right\}$.
