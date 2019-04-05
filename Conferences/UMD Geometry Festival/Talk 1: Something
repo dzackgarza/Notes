@@ -49,4 +49,4 @@ Smoothness of these solutions is important.The existence of a unique $\nabla p$ 
 
 Last questions: what about the initial value problem? (Y.B. 2018)
 
-A priori, convex minimization techniques are hopeless for the IVP. For a generalized incomrpessible flow, it does not make sense to prescribe any initial velocity $\left| \frac{d\xi}{dt}\right|_{t=0}$ for $\mu-$ae paths.
+A priori, convex minimization techniques are hopeless for the IVP. For a generalized incompressible flow, it does not make sense to prescribe any initial velocity $\left| \frac{d\xi}{dt}\right|_{t=0}$ for $\mu-​$ae paths.
