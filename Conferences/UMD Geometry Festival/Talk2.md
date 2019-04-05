@@ -45,5 +45,4 @@ Choose $\nabla$ a torsion-free connection on $TM$ where $\nabla_G = 0$, then $\m
 
 Think about the case where $M$ is Calibi-Yau (and/or Teichmuller space?). Can do similar construction, but the Ricci form takes values in some affine space and needs a correction, and you lose equivariance.
 
-Note that this is not a Kahler form.
-
+Note that this is not a Kahler form. Look at Yau's theorem.
