@@ -31,3 +31,4 @@ This is at the heart of **geometric invariant theory** (Hilbert, Mumford, Kempf,
 
 
 
+Example: let $J_n = \left\{ a\right\}$
