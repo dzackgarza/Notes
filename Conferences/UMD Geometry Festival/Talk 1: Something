@@ -29,4 +29,4 @@ Well-known: in 1D, there is no non-trivial solution.
 
 In passing to the continuous limit, this solution can be improved by a factor of $\frac \pi {12}$. Actual solution in continuous case is known; all trigonometric functions. This shape is reflected in the finite numeric simulations.
 
-This generalized solution has been discovered in an entirely different framework involving random walks on the symmetric group (Virag et al).
+This generalized solution has been discovered in an entirely different framework involving random walks on the symmetric group (Virag et al). The least action principle ruling the original problem is the limit of a large deviation principle ruling the random exchange of adjacent cells in the discrete model.
