@@ -31,6 +31,5 @@ This is at the heart of **geometric invariant theory** (Hilbert, Mumford, Kempf,
 
 
 
-Example: let $J_n = \left\{ J^{2n\times 2n} \mid J^2 = -I \right\} = \left\{ g \pmatrix{0 & -I \\ I & 0} g \mid g\in SL(2n, \mathbb R)\right\}$ which are compatible with orientation. We can take the tangent space to obtain $T = \left\{ J \mid \hat J J + J\hat J = 0\right\} = \left\{ [\xi, \hat J] \mid \xi \in \mathfrak{sl}(2, \mathbb R)\right\}$, and get a symplectic form $\Omega_J(A, B) = \frac 1 2 \mathrm{Trace}(AJB)$. Then the moment map is given by 
+Example: let $J_n = \left\{ J^{2n\times 2n} \mid J^2 = -I \right\} = \left\{ g \pmatrix{0 & -I \\ I & 0} g \mid g\in SL(2n, \mathbb R)\right\}$ which are compatible with orientation. We can take the tangent space to obtain $T = \left\{ J \mid \hat J J + J\hat J = 0\right\} = \left\{ [\xi, \hat J] \mid \xi \in \mathfrak{sl}(2, \mathbb R)\right\}$, and get a symplectic form $\Omega_J(A, B) = \frac 1 2 \mathrm{Trace}(AJB)$. Then the moment map is given by $\Omega_J([\xi, J], \hat J) = \left< d\mu(), (J)\hat J, \xi\right> = -\mathrm{Trace}(\xi\hat J)$.
 
-$\Omega_J([\xi, J], \hat J) = \left< d\mu(), (J)\hat J, \xi\right> = -\mathrm{Trace}(\xi\hat J)$
