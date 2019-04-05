@@ -22,3 +22,5 @@ The Euler flow is an incompressible fluid confined to a compact Riemannian manif
 Discrete version of incompressible motion - acts by permutation, i.e. a finite series of permutations on gridded cells. Compute "cost" of flow by adding squares of displacements, which increases if any step moves any given grid by a large amount.
 
 There is some solution that gives the final permutation at the lowest cost -- the possibilities are finite, but large. This will be our "geodesic", i.e. optimal transport.
+
+Example: 
