@@ -1,10 +1,14 @@
+---
+title: Fluid Mechanics and Geometry
+---
+
 # Fluid Mechanics and Geometry
 
 *Yann Brenier*
 
 
 
-Outline: 
+Outline:
 
 - Geometric interpretation of Euler equations for incompressible fluids (Arnold 1966)
 - Discrete fluids, combinatorial optimization, generalized incompressible flows
@@ -35,9 +39,9 @@ This generalized solution has been discovered in an entirely different framework
 
 ## Generalized Flows
 
-A generalized incompressible flow on a compact Riemannian manifold $D$ is a probability measure $\mu$ on paths $\xi_t$ such that $\mu​$ has finite average energy 
+A generalized incompressible flow on a compact Riemannian manifold $D$ is a probability measure $\mu$ on paths $\xi_t$ such that $\mu​$ has finite average energy
 
-$$E_\mu \int_0^T \frac 1 2 \left|\frac{d\xi}{dt}\right|^2 dt​$$ 
+$$E_\mu \int_0^T \frac 1 2 \left|\frac{d\xi}{dt}\right|^2 dt​$$
 
 where we are taking the expectation of this integral.
 
