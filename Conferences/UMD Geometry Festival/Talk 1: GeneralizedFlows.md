@@ -1,10 +1,8 @@
 ---
 title: Fluid Mechanics and Geometry
+author: Yann Brenier
 ---
 
-# Fluid Mechanics and Geometry
-
-*Yann Brenier*
 
 
 
