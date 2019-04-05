@@ -11,4 +11,4 @@ W_\mu(\xi) = \lim_{t\to\infty}\left< \mu (\exp(it\xi)x), \xi\right>
 $$
 where we follow a Hamiltonian flow to infinity and obtain a number.
 
-If any of the weights are negative, the points can not be semi-stable, which falls out of a specific mount on the weights.
+If any of the weights are negative, the points can not be semi-stable, which falls out of a specific bound on the Mumford weights.
