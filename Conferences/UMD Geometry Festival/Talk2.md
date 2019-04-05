@@ -50,3 +50,5 @@ $$
 \Omega_J(\hat J_1, \hat J_2) = \int_M \left(\frac 1 2 \mathrm{tr}(\hat J_1 J \hat J_2) - f_1g_2 + f_2g_1 \right)\rho_J
 $$
 where $\rho_J$  is such that $\mathrm{Ricc}_{\rho_J, J} = \omega$.
+
+Recovers something about Kahler-Einstein metric, the moment map can also be roughly seen as a Kahler-Ricci potential.
