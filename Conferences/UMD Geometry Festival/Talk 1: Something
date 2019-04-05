@@ -35,3 +35,4 @@ This generalized solution has been discovered in an entirely different framework
 
 ## Generalized Flows
 
+A generalized incompressible flow on a compact Riemannian manifold $D$ is a probability measure on paths $\mu$ such that $\mu$ has finite energy
