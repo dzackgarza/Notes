@@ -7,5 +7,6 @@ Let $(X, \omega)$ be a symplectic manifold acted on by a lie group $G$. There is
 
 We can look at the Kahler case $(X, \mu, J)$ and for $G\in U(n)$ we can complexify to obtain $G^C\in G(n, \mathbb C)$. and $X/G^C \cong X^{ss}/\sim \cong X//G$. We'd like to know the behavior of maps passing through the zero set of the moment map. To this end, we use Mumford weights:
 $$
-W_\mu(\xi) = 
+W_\mu(\xi) = \lim_{t\to\infty}\left< \mu (\exp(it\xi)x), \xi\right>
 $$
+where we follow a Hamiltonian flow to infinity and obtain a number.
