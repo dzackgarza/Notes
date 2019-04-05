@@ -23,4 +23,5 @@ Discrete version of incompressible motion - acts by permutation, i.e. a finite s
 
 There is some solution that gives the final permutation at the lowest cost -- the possibilities are finite, but large. This will be our "geodesic", i.e. optimal transport.
 
-Example: find the minimal flow between $[1,2,\cdots n]$ and $[n, n-1, \cdots, 2, 1]$. Transpositions get it done in 12 steps. This is nice because it passes to the limit nicely, which ends up looking like a solution to Euler's equation.
+Example: find the minimal flow between $[1,2,\cdots n]$ and $[n, n-1, \cdots, 2, 1]$. Transpositions get it done in 12 steps. This is nice because it passes to the limit nicely, which ends up looking like a solution to Euler's equation. Observe pattern of each number "bouncing" off wall, while its neighboring number does so in a symmetric fashion the yields a rectangle.
+
