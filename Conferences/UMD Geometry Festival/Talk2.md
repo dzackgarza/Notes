@@ -39,6 +39,6 @@ We want to get a map that yields a exact 2-form, we'll just show one that yields
 
 **Theorem**
 
-The action of $G^{Ox}​$ on $J(M)​$ is Hamiltonian with moment map $J(M) \to \Omega^2(M)​$ given by $J \mapsto \mathrm{Ricc}_{G, J}​$. 
+The action of $G^{Ox}$ on $J(M)$ is Hamiltonian with moment map $J(M) \to \Omega^2(M)$ given by $J \mapsto 2\mathrm{Ricc}_{G, J}$. 
 
-Choose $\nabla$ a torsion-free connection on $TM$ where $\nabla_G = 0$, then $\mathrm{Ricc}_{G, J} = \frac 1 2 (\tau^\nabla_J + d\lambda^\nabla_J)$ where $d$ is the covariant derivative.
+Choose $\nabla​$ a torsion-free connection on $TM​$ where $\nabla_G = 0​$, then $\mathrm{Ricc}_{G, J} = \frac 1 2 (\tau^\nabla_J + d\lambda^\nabla_J)​$ where $d​$ is the covariant derivative.
