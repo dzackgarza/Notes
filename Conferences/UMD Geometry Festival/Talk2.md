@@ -35,4 +35,4 @@ Example: let $J_n = \left\{ J^{2n\times 2n} \mid J^2 = -I \right\} = \left\{ g \
 
 Can look at frame bundle, get structure group $SL(2n, \mathbb R)$. Let $M^{2n}$ be an oriented manifold with a volume form, then $J(M)$ is the space of almost-complex structures on $M$. Can repeat the above construction to get a symplectic form that is volume-preserving by integrating a differential form over the endomorphism bundle. This ends up being compatible with the group action (the group of volume-preserving diffeomorphisms), so the question becomes whether or not it's a Hamiltonian action.
 
-We want to get a map that yields a exact 2-form, we'll just show one that yields an e
+We want to get a map that yields a exact 2-form, we'll just show one that yields a closed form -- the Ricci form (?).
