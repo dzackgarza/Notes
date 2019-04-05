@@ -53,4 +53,4 @@ A priori, convex minimization techniques are hopeless for the IVP. For a general
 
 
 
-We currently don't know if the Euler equations have global solutions, or even if they break down in finite time! Wide open.
+We currently don't know if the Euler equations have global solutions, or even if they break down in finite time! Wide open, one of the main problems in non-linear PDEs.
