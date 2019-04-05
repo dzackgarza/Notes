@@ -51,4 +51,4 @@ $$
 $$
 where $\rho_J$  is such that $\mathrm{Ricc}_{\rho_J, J} = \omega$.
 
-Recovers something about Kahler-Einstein metric, the moment map can also be roughly seen as a Kahler-Ricci potential. Yields some logarithmic variant of the Kahler-Ricci flow.
+Recovers something about Kahler-Einstein metric, the moment map can also be roughly seen as a Kahler-Ricci potential. Yields some logarithmic variant of the Kahler-Ricci flow. See the Dehn functional, Donaldson framework.
