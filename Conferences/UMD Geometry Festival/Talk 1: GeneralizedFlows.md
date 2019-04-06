@@ -56,7 +56,6 @@ Last questions: what about the initial value problem? (Y.B. 2018)
 A priori, convex minimization techniques are hopeless for the IVP. For a generalized incompressible flow $\mu$ with finite average energy, it does not make sense to prescribe any initial velocity $\left| \frac{d\xi}{dt}\right|_{t=0}$ for $\mu-$ae paths. But if we look at such a flow in minimal energy, we can set up a different equation that is tractable. The dual convex minimization problem is always solvable, and can uniquely recover the smooth classical solutions to the Euler equations for a short enough $T$. This can be seen as a kind of non-commutative optimal transport problem involving fields on non-negative symmetric matrices, which are of current interest.
 
 
-
 We currently don't know if the Euler equations have global solutions, or even if they break down in finite time! Wide open, one of the main problems in non-linear PDEs.
 
 Generally looking at space of volume-preserving diffeomorphisms, dense in the set of certain product measures? Gives a natural weak closure: goes by the name of bi-stochastic measures?
