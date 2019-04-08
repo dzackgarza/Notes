@@ -46,7 +46,7 @@
 \newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
 \newcommand{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
 \newcommand{\thevector}[1]{{\left[ {#1} \right]}}
-\newcommand{\abs}[2]{{\left\lvert #2 \right\rvert_{\text{#1}}}}
+\newcommand{\abs}[1]{{\left\lvert #1 \right\rvert}}
 \newcommand{\intersect}[0]{\bigcap}
 \newcommand{\union}[0]{\bigcup}
 \newcommand{\coker}[0]{\operatorname{coker}}

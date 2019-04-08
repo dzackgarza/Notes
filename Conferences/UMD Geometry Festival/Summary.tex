@@ -1,0 +1,597 @@
+\input{/home/zack/Notes/Latex/preamble.tex}
+
+\title{
+	\textbf{Title}\\
+	{\normalsize (subtitle)}
+}
+\author{D. Zack Garza}
+\date{\today}
+
+\begin{document}
+
+\maketitle\todo{Insert title and subtitle.}
+\tableofcontents
+
+
+\hypertarget{umd-geometry-festival}{%
+\section{UMD Geometry Festival}\label{umd-geometry-festival}}
+
+\hypertarget{fluid-mechanics-and-geometry-yann-brenier}{%
+\section{Fluid Mechanics and Geometry (Yann
+Brenier)}\label{fluid-mechanics-and-geometry-yann-brenier}}
+
+Outline:
+
+\begin{itemize}
+\tightlist
+\item
+  Geometric interpretation of Euler equations for incompressible fluids
+  (Arnold 1966)
+\item
+  Discrete fluids, combinatorial optimization, generalized
+  incompressible flows
+\item
+  Generalized minimizing geodesics with probability and convexity tools
+  (1989-2012)
+\item
+  The initial value problem, relates to the completeness of certain
+  manifolds (2018)
+\end{itemize}
+
+\hypertarget{euler-equations}{%
+\subsection{Euler Equations}\label{euler-equations}}
+
+First PDEs written in modern style: Euler, 1757.
+
+The Euler flow is an incompressible fluid confined to a compact
+Riemannian manifolds, evolving according to the Euler equations. (It
+wasn't clear how to extend definition of Riemannian manifolds to
+infinite dimensions.) Evolve along geodesics, need to be
+volume-preserving. Look at action on gridded-up version of torus
+\(T^2\).
+
+Discrete version of incompressible motion - acts by permutation, i.e.~a
+finite series of permutations on gridded cells. Compute ``cost'' of flow
+by adding squares of displacements, which increases if any step moves
+any given grid by a large amount.
+
+There is some solution that gives the final permutation at the lowest
+cost -- the possibilities are finite, but large. This will be our
+``geodesic'', i.e.~optimal transport.
+
+Example: find the minimal flow between \([1,2,\cdots n]\) and
+\([n, n-1, \cdots, 2, 1]\). Transpositions get it done in 12 steps. This
+is nice because it passes to the limit nicely, which ends up looking
+like a solution to Euler's equation. Observe pattern of each number
+``bouncing'' off wall, while its neighboring number does so in a
+symmetric fashion the yields a rectangle.
+
+Well-known: in 1D, there is no non-trivial solution.
+
+In passing to the continuous limit, this solution can be improved by a
+factor of \(\frac \pi {12}\). Actual solution in continuous case is
+known; all trigonometric functions. This shape is reflected in the
+finite numeric simulations.
+
+This generalized solution has been discovered in an entirely different
+framework involving random walks on the symmetric group (Virag et al).
+The least action principle ruling the original problem is the limit of a
+large deviation principle ruling the random exchange of adjacent cells
+in the discrete model. This principle says that looking at Brownian
+motion to a point, conditioned on the motion being in a neighborhood of
+that point, converges to a geodesic in the limit as the noise goes to
+zero.
+
+\hypertarget{generalized-flows}{%
+\subsection{Generalized Flows}\label{generalized-flows}}
+
+A generalized incompressible flow on a compact Riemannian manifold \(D\)
+is a probability measure \(\mu\) on paths \(\xi_t\) such that \(\mu\)
+has finite average energy
+
+\[
+E_\mu \int_0^T \frac 1 2 \abs{\frac{d\xi}{dt}}^2 dt
+\]
+
+where we are taking the expectation of this integral.
+
+Main results on minimizing geodesic (since 1992): let \(\mu_{0, T}\) be
+a probability measure on \(D \times D\) such that the projections
+\(\mu_0=\mu_t = \mathcal{L}_D\), the Lebesgue measure on \(D\). This
+measure is spanned by at least on generalized incompressible flow
+\(\mu\) of minimal energy.
+
+In fact, there is a unique pressure distribution \(\nabla p(t, x)\) that
+relates to these solutions by an explicit equation, where we view this
+as an acceleration field. The uniqueness here is surprising. In Arnold's
+classical framework, approximate minimizing geodesics may not converge
+in the any classical sense but do converge to generalized solutions when
+the dimension is at least 3 \emph{(Shnirelman 1985)}. In dimension 2,
+there is something to do with symplectic forms that prevents this. Note
+that there is no similar results for the dynamics of rigid bodies,
+i.e.~geodesic curves along \(SO(3)\) \emph{(Y.B. 2012)}. Seems that the
+\(d=2\) case is generally open.
+
+Smoothness of these solutions is important.The existence of a unique
+\(\nabla p\) follows from the convexity of the minimizing geodesic
+problem. Main open equation: is \(\nabla p\) smooth? We currently know
+it is \(L^2\) locally (1999/2008) and we have data for which \(p\) is
+not better than locally semi-convex in \(x\).
+
+Last questions: what about the initial value problem? (Y.B. 2018)
+
+A priori, convex minimization techniques are hopeless for the IVP. For a
+generalized incompressible flow \(\mu\) with finite average energy, it
+does not make sense to prescribe any initial velocity
+\(\left| \frac{d\xi}{dt}\right|_{t=0}\) for \(\mu-\)a.e. paths. But if
+we look at such a flow in minimal energy, we can set up a different
+equation that is tractable. The dual convex minimization problem is
+always solvable, and can uniquely recover the smooth classical solutions
+to the Euler equations for a short enough \(T\). This can be seen as a
+kind of non-commutative optimal transport problem involving fields on
+non-negative symmetric matrices, which are of current interest.
+
+We currently don't know if the Euler equations have global solutions, or
+even if they break down in finite time! Wide open, one of the main
+problems in non-linear PDEs.
+
+Generally looking at space of volume-preserving diffeomorphisms, dense
+in the set of certain product measures? Gives a natural weak closure:
+goes by the name of bi-stochastic measures?
+
+\hypertarget{moment-maps-in-symplectic-and-kahler-geometry-dietmar-salamon}{%
+\section{Moment Maps in Symplectic and Kahler Geometry (Dietmar
+Salamon)}\label{moment-maps-in-symplectic-and-kahler-geometry-dietmar-salamon}}
+
+Let \((X, \omega)\) be a symplectic manifold acted on by a lie group
+\(G\). There is a moment map \(\mu: X \to \mathcal{Of}^*\) (?), and we
+can consider a quotient space \(X//G = \mu^{-1}(0) / G\) where we look
+at where the moment map vanishes and quotient out by a group action.
+This is an orbifold, and in fact a manifold and symplectic.
+
+We can look at the Kahler case \((X, \mu, J)\) and for \(G\in U(n)\) we
+can complexify to obtain \(G^C\in G(n, \mathbb C)\). and
+\(X/G^C \cong X^{ss}/\sim \cong X//G\). We'd like to know the behavior
+of maps passing through the zero set of the moment map. To this end, we
+use Mumford weights: \[
+W_\mu(x, \xi) = \lim_{t\to\infty}\left< \mu (\exp(it\xi)x), \xi\right>
+\] where we follow a Hamiltonian flow to infinity and obtain a number.
+
+If any of the weights are negative, the points can not be semistable,
+which falls out of a specific bound on the Mumford weights. Thus we have
+
+\textbf{Theorem}: \[
+\sup_{\xi\neq 0} \frac{-W_\mu(x,\xi)}{\left|\xi\right|} \leq \inf_{g\in G} \left|\mu(gx)\right|
+\]
+
+\textbf{Corollary}: \(x\) is semistable (\(\mu(gx) = 0\)) \(\iff\)
+\(\forall\xi, W_\mu(x, \xi) \geq 0\).
+
+This is at the heart of \textbf{geometric invariant theory} (Hilbert,
+Mumford, Kempf, Ness, Kirwan).
+
+The key tool is studying the gradient flow of the moment map, or more
+precisely \(\frac 1 2 \mu^2\), about which one can say many interesting
+things.
+
+\textbf{Example}: let \[
+J_n = \left\{ J^{2n\times 2n} \mid J^2 = -I \right\}
+= \left\{ g \begin{pmatrix}0 & -I \\ I & 0\end{pmatrix} g \mid g\in SL(2n, \mathbb R)\right\}
+\] which are compatible with orientation. We can take the tangent space
+to obtain \[
+T = \left\{ J \mid \hat J J + J\hat J = 0\right\} = \left\{ [\xi, \hat J] \mid \xi \in \mathfrak{sl}(2, \mathbb R)\right\},
+\] and get a symplectic form
+\(\Omega_J(A, B) = \frac 1 2 \mathrm{Trace}(AJB)\). Then the moment map
+is given by \[
+\Omega_J([\xi, J], \hat J) = \left< d\mu(), (J)\hat J, \xi\right> = -\mathrm{Trace}(\xi\hat J).
+\]
+
+Can look at frame bundle, get structure group \(SL(2n, \mathbb R)\). Let
+\(M^{2n}\) be an oriented manifold with a volume form, then \(J(M)\) is
+the space of almost-complex structures on \(M\). Can repeat the above
+construction to get a symplectic form that is volume-preserving by
+integrating a differential form over the endomorphism bundle. This ends
+up being compatible with the group action (the group of
+volume-preserving diffeomorphism), so the question becomes whether or
+not it's a Hamiltonian action.
+
+We want to get a map that yields a exact 2-form, we'll just show one
+that yields a closed form -- the Ricci form (?).
+
+\textbf{Theorem}: The action of \(G^{Ox}\) on \(J(M)\) is Hamiltonian
+with moment map \(J(M) \to \Omega^2(M)\) given by
+\(J \mapsto 2\mathrm{Ricc}_{G, J}\).
+
+Choose \(\nabla\) a torsion-free connection on \(TM\) where
+\(\nabla_G = 0\), then
+\(\mathrm{Ricc}_{G, J} = \frac 1 2 (\tau^\nabla_J + d\lambda^\nabla_J)\)
+where \(d\) is the covariant derivative. Although we make this choice,
+the result Ricci form does not depend on it.
+
+Think about the case where \(M\) is Calibi-Yau (and/or Teichmüller
+space?). Can do similar construction, but the Ricci form takes values in
+some affine space and needs a correction, and you lose equivariance.
+
+Note that this is not a Kahler form. Look at Yau's theorem. Look at the
+Chern class of \(S^1\times S^3\). There is a construction that yields
+both a complex form and a canonical symplectic form on the Teichmüller
+space \(\mathcal T_0(M)\), and we can find an explicit formula for it:
+\[
+\Omega_J(\hat J_1, \hat J_2) = \int_M \left(\frac 1 2 \mathrm{tr}(\hat J_1 J \hat J_2) - f_1g_2 + f_2g_1 \right)\rho_J
+\] where \(\rho_J\) is such that \(\mathrm{Ricc}_{\rho_J, J} = \omega\).
+
+Recovers something about Kahler-Einstein metric, the moment map can also
+be roughly seen as a Kahler-Ricci potential. Yields some logarithmic
+variant of the Kahler-Ricci flow. See the Dehn functional, Donaldson
+framework.
+
+\hypertarget{zero-sets-of-laplace-eigenfunctions-aleksandr-logunov}{%
+\section{Zero Sets of Laplace Eigenfunctions (Aleksandr
+Logunov)}\label{zero-sets-of-laplace-eigenfunctions-aleksandr-logunov}}
+
+Let \(M\) be a closed Riemannian manifold, we will look at
+eigenfunctions of the Laplacian on on \(M\).
+
+Example: Eigenfunctions on \(S^2\) are restrictions of homogeneous
+harmonic polynomials functions \(f: \RR^3 \to S^2\), which has a basis
+of relatively simple polynomials where the eigenvalues are related to
+their degrees.
+
+Two elementary questions:
+
+\begin{itemize}
+\item
+  Does the number of critical points of eigenfunctions
+  \(\varphi_\lambda\), \[
+  C_{\phi, \lambda} = \theset{x \suchthat \nabla \varphi_\lambda(x)= 0},
+  \] tend to infinity as \(\lambda \to \infty\)?
+\item
+  Flat eigenfunctions: is there a sequence of eigenfunctions on \(S^2\)
+  such that \[
+  \max_M \abs{\varphi_\lambda(x)} \leq C \norm{\varphi_\lambda}_2?
+  \]
+
+  \begin{itemize}
+  \tightlist
+  \item
+    E.g. on \(S^1\), all eigenfunctions \(\sin(ax+b)\) are flat.
+  \item
+    Such eigenfunctions exist on \(S^{2d-1}\).
+  \item
+    Sarnak's conjecture: there are no such sequences on \(S^2\).
+  \end{itemize}
+\end{itemize}
+
+Nodal domains: a theorem of Courant (1923) says that the \(k\dash\)th
+eigenfunction has at most \(k\) nodal domains (where they are ordered by
+size of eigenvalue). A result of Stern/Lewey shows that there are
+spherical harmonics of any odd degree with only two nodal domains.
+
+Yau's conjecture: \[
+c\sqrt\lambda \leq H^{n-1}(Z_{\varphi_\lambda}) \leq C \sqrt \lambda.
+\]
+
+Shown for algebraic manifolds and real-analytic manifolds, still open in
+the Riemannian case. Recent result: proves lower bound in dimensions
+above 2, some improvements closer to conjectured in dimension 2.
+
+Nadirashvili's conjecture: Let \(u\) be a non-constant harmonic function
+in \(\RR^3\). Does \(\mu(\theset{u=0}) = 0\)? Believed we need to
+understand this for harmonic functions before understanding the zero
+sets of Laplacians. By 2016 work, yes, and there is a uniform lower
+bound (?).
+
+An old trick: can translate questions about zero sets of eigenfunctions
+\(\varphi + \lambda \varphi = 0\) into zero sets of harmonic functions
+\(\Delta u = 0\), given by defining
+\(u(x,t) = \varphi(x)e^{\sqrt\lambda t}\).
+
+Work of Donnelly-Fefferman bounds the growth of Laplace eigenfunctions.
+There is a harmonic analog of Yau's conjecture,
+\(H^{n-1}(Z_\varphi \intersect B_1) \leq CN(B_1)\) where \(H\) is the
+Hausdorff measure and \(N\) is the doubling index; Yau's would follow
+from this by setting \(C=\sqrt\lambda\).
+
+On the scale \(c/\sqrt \lambda\), you can ``shake'' the eigenfunctions
+so they look like harmonic functions; i.e.~there is a quasi-conformal
+change of coordinates that sends the zero set the eigenfunctions to the
+zero set of a harmonic function.
+
+Landis conjecture: let \(\Delta u + Vu = 0\) be an elliptic equation,
+where \(V\) is a bounded potential \(\abs V < 1\). If
+\(\abs {u(x)} \leq\exp(-\abs{x}^{1+\varepsilon})\), then \(u\) is
+identically zero. Can also be formulated in terms of the maximum number
+of nodal curves intersecting at a point. WIP: this is true for real
+potentials. Solutions behave very differently between the real and
+complex cases. Any counterexample would necessarily have many zeros.
+
+\hypertarget{the-geometry-and-arithmetic-of-the-worlds-smallest-calibi-yau-threefolds-jim-bryan}{%
+\section{The Geometry and Arithmetic of the World's Smallest Calibi-Yau
+Threefolds (Jim
+Bryan)}\label{the-geometry-and-arithmetic-of-the-worlds-smallest-calibi-yau-threefolds-jim-bryan}}
+
+\textbf{Definition}: A compact complex Kahler manifold \(X\) of
+dimension \(d\) is Calibi-Yau if \(c_1(TX)=0\), where \(c_1\) is the
+first Chern class (i.e.~\(\det T^\dual X = K_X \cong X\cross\CC\),
+i.e.~the canonical is trivial) \(\iff\) there exists a holomorphic
+global \(d\dash\)form \(\iff\) there exists a Ricci flat Kahler metric
+and \(h^{k, 0}(X) = 0\) unless \(k=0,d\).
+
+\begin{itemize}
+\tightlist
+\item
+  If \(d=1\), \(X\) is an elliptic curve, topologically only one type (a
+  torus)
+\item
+  If \(d=2\), \(X\) is a \(K3\) surface, topologically only one type
+\item
+  If \(d=3\), \(X\) is a CY-threefold, there are \textgreater5 million
+\end{itemize}
+
+There are two interesting Hodge numbers: - \(h^{1,1}(X)\): the dimension
+of the Kahler cone, or dually the number of independent holomorphic
+curve classes - Never zero if Kahler - \(h^{2,1}(X)\): the space of
+independent infinitesimal complex deformations - Mirror symmetry swaps
+these two
+
+\textbf{Definition}: A rigid CY3 \(X\) has \(h^{2,1}(X)=0\).
+
+Interested in a few aspects of CY3s: - What combinations of values
+\((h^{1,1}, h^{2,1})\) are possible? - Mirror symmetry falls out of
+tabulating these - Physicists interested in small ones - How small can
+these combinations be? (By summing these two numbers) - Can we compute
+the Donaldson-Thomas/Gromov-Witten/``string partition functions''
+(generating functions for counts of curves) - What are the modular
+properties of these functions? - Arithmetic: rigid CY3s over \(\QQ\) are
+modular forms (much like Wile's theorem showing elliptic curves are
+modular)
+
+Today: - Construct rigid CY3s (banana manifolds) of (0,4) and (0,2) -
+Compute Donaldson-Thomas partition function and associated Gromov-Witten
+potential, a genus 2 Siegal modular form of weight \(2g-2\). - Compute
+the modular forms (\(L\dash\)series)
+
+\hypertarget{the-generic-banana-manifold}{%
+\section{The Generic Banana
+Manifold}\label{the-generic-banana-manifold}}
+
+Start with a generic hypersurface \(S \subset \CP^2\cross \CP^1\) of
+degree \((3,1)\). Projecting onto \(\PP^2\) yields
+\(Bl_{9\text{pts}}\CP^2\), onto \(\PP^1\) yields an elliptic fibration
+(projects onto an elliptic curve) which has 12 nodal fibers.
+
+See image
+
+Now to make a threefold: take the fiber product
+\(\hat X = S \cross_{\PP^1} S\) which has 12 conifold singularities,
+which we can resolve by taking \(X = Bl_\Delta(\hat X)\), where
+\(\Delta\) is the diagonal. This yields a CY3 with
+\(h^{2,1}(X) = 8, h^{1,1}(X) = 20\). The fibers are generically products
+of elliptic curves \(E\cross E\), which has 12 singular fibers.
+
+(Note that we're blowing up along a Cartier divisor and not a Weil
+divisor, which gives the singularities local resolutions.)
+
+We also have \(E_\text{sing} = \CC{\units}\cross \CC\units \cross B\)
+where \(B=C^1 \union C^2 \union C^3\) where \(C_i = \PP^1\) and
+\(C_i \intersect C_j = \theset{p,q}\) and \(N = \OO(-1)\oplus \OO(-1)\).
+This thing is a toric variety?
+
+See image
+
+We can do enumerative geometry here by looking at the fibers of
+\(X \mapsvia{\pi} \PP^1\), where
+\(\beta \in \ker \pi \cong \ZZ^3 = H_2(X; \ZZ)\) is given by
+\(\beta = d_1[c_1] + d_2[c_2] + d_3[c_3]\). Can write out a generating
+function \(Z^{DT}(Q_1, Q_2, Q_3, p)\) where the coefficients are the DT
+invariants, i.e.~the virtual count of curves given by the holomorphic
+euler characteristic. This expands to a product where the coefficients
+and exponents are themselves coefficients of modular forms. The
+exponents appearing are the fourier coefficients of a specific modular
+form?
+
+The associated GW potentials are genus 2 Siegel modular forms \(F\) of
+weight \(2g-2\). Can think of this as a function on the moduli space of
+genus 2 modular curves, and the weight is like the Chern class?
+
+A rigid example: start with an extremal elliptic surface \(S^6\), see
+image. This is the universal family for moduli of elliptic curves with a
+6-torsion point, and has a \(\ZZ/6\ZZ\) action. Let \(S'\) be a base
+change that reverses the order of the fibers, and take
+\(S\times_{\PP^1}S'\). The \(\ZZ/6\ZZ\) action is now free and this is a
+\(6\times 4\) conifold. If we blow up the quotient along these points to
+get an \(X_6\), this is a rigid CY3 where \(X\mapsvia{\pi} \PP^1\) has 3
+banana fibers and 1 section, \(h^{2,1}=0\), and \(h^{1,1} = 4\). The
+theorem (in progress) is that \(Z\) of these fibers is similar to the
+previous one, and the \(F_q\)s are now Siegel for certain congruent
+subgroups of \(\mathrm{Sp}_2(\ZZ)\).
+
+As it turns out, there was an additional \(\ZZ/2\ZZ\) action, yielding a
+\(\ZZ/12\ZZ\), and quotienting by this yields 2 banana fibers and 2
+doubled fibers which are each \(\PP^1\) bundles over a special elliptic
+curve. Moreover, this is tied for the smallest one, at
+\(h^{2,1} = 0, h^{1,1} = 2\).
+
+Where does the modularity come from? Topological vertex, Schur
+functions, but not satisfying -- we don't have good explanations of
+where this should be coming from.
+
+There aren't any threefolds where we can completely compute the
+partition functions, we have a hard time computing with the sections
+(although the fibers are okay).
+
+\hypertarget{boundary-operator-associated-to-sigma_k-curvature-yi-wang}{%
+\section{Boundary Operator Associated to Sigma\_k Curvature (Yi
+Wang)}\label{boundary-operator-associated-to-sigma_k-curvature-yi-wang}}
+
+Define the \(k\)-Hessian energy \[
+\int_\Omega u \sigma_k D^2 u ~dx.
+\]
+
+When \(k=1\) this recovers the Dirichlet energy
+\(\int_\Omega -u\Delta u\). On a Riemannian manifold, we are instead
+interested in the Shouten tensor which is a combination of the Ricci
+curvature and the scalar curvature. Can decompose the Riemann curvature
+tensor into a conformally invariant Weyl curvature \(W\) and and certain
+product.
+
+We want to look at conformally invariant operators, and the most natural
+one is the conformal Laplacian \(L_g = -\Delta +c_n R_g\). Under a
+conformal change of metric, we can look at the Yamabe problem which asks
+for a decomposition with \(\hat R\) constant. This was solved in the
+80s. It is a variational problem.
+
+On 4-manifolds, there is a Chern-Gauss-Bonnet formula, which involves
+the \(L_2\) norm of the Weyl tensor (local conformal invariant) and the
+other is a constant times \(\sigma_2\), and so \[
+\int_{X^4} \sigma_2 ~dv_g
+\] is a conformal invariant.
+
+This leads to a generalized Yamabe problem
+\(\sigma_k = \text{constant}\). This is 2nd order elliptic PDE. This
+problem is variational (solutions are critical points of an energy
+functional) if \(k=1,2\) or \(g\) is locally conformally flat. Can write
+this functional, \(\int \sigma_k ~\mathrm{vol}_g\), and can write an
+Euler-Lagrange equation for this to determine the gradient of this
+functional.
+
+Open questions: - Is there a Dirichlet principle for the Shouten tensor
+or the operator \(\sigma_k(D^2u)\)?
+
+Why should this be possible? The \(k\dash\)Hessian energy is pointwise
+non-negative when \(u=0\) on the boundary, so it is a generalized
+Dirichlet energy by integration by parts. Can obtain a Sobolev
+inequality for it when \(\Sigma\) is \((k-1)\)-convex (i.e.~this holds
+for the second fundamental form) and \(2k<n\). This gives an embedding
+into some \(L^p\) space. For \(2k=n\) obtain an Orlicz-type inequality;
+for \(2k>n\) obtain embeddings into Holder spaces.
+
+The well-known Dirichlet principle: for any \(u\) where
+\(\restrictionof{u}{\del M} = f\) and
+\(\int_\Omega \abs{\nabla u}^2 dx \geq \int_\Omega \abs{u_f}^2 dx\)
+where \(u_f\) is a harmonic extension of \(f\) that solves \[
+\begin{cases}
+\Delta u = 0 & \text{on}~\Omega, \\
+u=f & \text{on}~\del\Omega.
+\end{cases}
+\]
+
+The main result is that for smooth domain with boundary, there is a
+multilinear differential operator along with a multilinear functional
+that is symmetric in its inputs that recovers the \(k\dash\)Hessian.
+This functional looks like \[
+Q = -\int_\Omega u L_k + \oint_{\del \Omega} B_k
+\] where \(L_k\) is a \(k\dash\)linear map and \(B_k\) is a boundary
+operator.
+
+Examples involve the Laplace-Beltrami operator.
+
+The symmetric property in this theorem yields two nice properties: the
+functional's Euler-Lagrange equation is the one wanted earlier, and it
+is convex. With some assumptions, this will yield the desired Dirichlet
+principle for the \(\sigma_k\) curvature.
+
+The boundary operator involves some generalization of the mean
+curvature, called \(H_k\) which is a linear combination of the Shouten
+tensor and the second fundamental form. The \(L\) is an extension of the
+conformal Laplacian operator. When \(k=1\), this recover Escoba Yamabe's
+functional.
+
+\hypertarget{spectral-asymptotics-on-stationary-spacetimes-steven-zelditch}{%
+\section{Spectral Asymptotics on Stationary Spacetimes (Steven
+Zelditch)}\label{spectral-asymptotics-on-stationary-spacetimes-steven-zelditch}}
+
+Want to look at a step function that jumps at eigenvalues by the
+multiplicity of each eigenvalues. Recall the wave equation
+\(\square u = 0\), and introduce the propagator
+\(e^{-it\sqrt{-\Delta}}\) which is a pseudo-differential operator that
+propagates time zero solutions.
+
+Can look at the tempered distribution \[
+\Tr V(t) = \sum_{j=0}^\infty e^{it\lambda_j} = e_0(t) + \sum_{L} e_L(t)
+\]
+
+were \(L\) are taken in the ``length spectrum''.
+
+The singular support of \(e_0\) is \(\theset{0}\) and of \(e_L\) is
+\(\theset{L}\). Essentially amounts to take the fourier transform of the
+counting function and looking at its singularities. Need to assume that
+the sets of closed geodesics are nondegenerate (critical point for the
+length function on the loop space). Note that when you look at the
+family of closed geodesics of a given length, the number will depend on
+the geometry. A sphere has a manifold's worth, a torus a single
+parameter family, while on a hyperbolic surface each length is isolated.
+
+Any closed geodesic is in the unit cotangent bundle \(S\Sigma\), so pick
+a transversal. Can look at first return map, take the derivative to
+obtain the linear Poincare map. Shouldn't have 1 as an eigenvalue,
+otherwise you could deform the geodesic (condition is equivalent to
+being nondegenerate).
+
+Major milestone: able to reduce complex determinants of Hessians of
+phase functions to (essentially) linear algebra. Some kind of ``symbol
+calculus'' of fourier operators.
+
+General question: instead of solving Einstein's field equations, how do
+we instead let a wave equation evolve on a curved spacetime?
+
+Uncurved spacetime is given by \(\RR \cross \Sigma\) with a metric
+\(-dt^2 + h_\Sigma\), the Euclidean metric? The generalization here is
+to globally hypberolic stationary spacetimes, want a compact Cauchy
+hypersurface. Globally hyperbolic is a condition used frequently in
+general relativity. We have \(M^{3,1} \cong \RR \cross \Sigma\)
+topologically (not metrically), and so every causal curves (tangent
+vector has lorentz norm strictly positive?) intersects a given
+hypersurface \(\Sigma\) exactly once.
+
+Moreover \(\square\) is essentially the Laplace-Beltrami operator on
+this space. Stationary means there exists a timelike Killing vector
+field, i.e.~timelike flows are isometries. The killing field is our
+stand-in for \(\dd{}{t}\), since there is no preferred time coordinate.
+This is a strong assumption, since the cosmological constant was found
+to be positive (i.e.~expanding spacetime). What is the propagator, the
+eigenvalues, the lengths of closed geodesics?
+
+Can look at \(z = \dd{}{t}\) and \(Dz = \frac 1 i \dd{}{t}\) and we can
+recover the Laplacian by looking at the eigenvalues of special
+solutions, \(Du_J = \lambda u_j\), and the \(u_j\) span
+\(\ker \square_g\) the Klein-Gordon operator. Want to keep everything
+internal with Lorentzian geometry, so don't want to choose a particular
+Cauchy hypersurface extrinsically.
+
+Can look at space of null-geodesic
+\(N = \theset{\gamma \suchthat g(\dot\gamma, \dot\gamma) = 0}\)
+(equivalent to light rays) which is a symplectic manifold. Define
+\(\mathrm{char}\square = \theset{\xi \in T^\dual M \suchthat \sigma_\square (x, \xi) = 0}\),
+then let \(\RR\) act on this by Hamiltonian flows to obtain
+\(N = \mathrm{char}\square/\RR\). Leads to studying \(e^{tZ}\) the
+killing flow on \(N\). Can get a bundle of the original space over the
+orbits of the killing flow, which has a natural connection \(\theta\)
+where the metric on the base space is induced by the metric in the total
+space. The metric does not need to be integrable; this is equivalent to
+requiring the space to be static instead of stationary.
+
+The theorem: look at the spectrum of
+\(\restrictionof{D_z}{\ker\square}\). Want to define a trace, so need an
+inner product on \(\ker\square\). This has a natural symplectic vector
+space structure, since it's a solution to variational problem (?), so we
+can just add an almost-complex structure (see books on QFT in curved
+spacetime, positive and negative frequency solutions, Robert Wahl?). Can
+use the energy-stress tensor to define such an inner product, this will
+be independent of the choice of a cauchy hypersurface.
+
+\textbf{Theorem}: \(\Tr ~\restrictionof{e^{tZ}}{\ker \square}\) is
+essentially the same summation formula as earlier, where the sum is over
+the periodic orbits of the killing flow, and this is something that
+makes sense for any dynamical system.
+
+Picture to keep in mind: can evolve a hypersurface using the wave
+equation \(\Sigma_0 \to e^{tZ}\Sigma_0\) and then look at the killing
+flow \(e^{tZ}\Sigma_0 \to \Sigma_0\). This gives an operator that you
+can take the trace of.
+
+\listoftodos
+
+\bibliography{/home/zack/Notes/library.bib}
+
+\end{document}

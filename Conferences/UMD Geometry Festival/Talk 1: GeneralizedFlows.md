@@ -3,16 +3,12 @@ title: Fluid Mechanics and Geometry
 author: Yann Brenier
 ---
 
-
-
-
 Outline:
 
 - Geometric interpretation of Euler equations for incompressible fluids (Arnold 1966)
 - Discrete fluids, combinatorial optimization, generalized incompressible flows
 - Generalized minimizing geodesics with probability and convexity tools (1989-2012)
 - The initial value problem, relates to the completeness of certain manifolds (2018)
-
 
 
 ## Euler Equations
@@ -37,15 +33,15 @@ This generalized solution has been discovered in an entirely different framework
 
 ## Generalized Flows
 
-A generalized incompressible flow on a compact Riemannian manifold $D$ is a probability measure $\mu$ on paths $\xi_t$ such that $\mu​$ has finite average energy
+A generalized incompressible flow on a compact Riemannian manifold $D$ is a probability measure $\mu$ on paths $\xi_t$ such that $\mu$ has finite average energy
 
 $$
-E_\mu \int_0^T \frac 1 2 \abs{\frac{d\xi}{dt}}^2 dt​
+E_\mu \int_0^T \frac 1 2 \abs{\frac{d\xi}{dt}}^2 dt
 $$
 
 where we are taking the expectation of this integral.
 
-Main results on minimizing geodesic (since 1992): let $\mu_{0, T}$ be a probability measure on $D\times D$ such that the projections $\mu_0=\mu_t = \mathcal L_D$, the Lebesgue measure on $D$. This measure is spanned by at least on generalized incompressible flow $\mu​$ of minimal energy.
+Main results on minimizing geodesic (since 1992): let $\mu_{0, T}$ be a probability measure on $D \times D$ such that the projections $\mu_0=\mu_t = \mathcal{L}_D$, the Lebesgue measure on $D$. This measure is spanned by at least on generalized incompressible flow $\mu$ of minimal energy.
 
 In fact, there is a unique pressure distribution $\nabla p(t, x)$ that relates to these solutions by an explicit equation, where we view this as an acceleration field. The uniqueness here is surprising. In Arnold's classical framework, approximate minimizing geodesics may not converge in the any classical sense but do converge to generalized solutions when the dimension is at least 3 *(Shnirelman 1985)*. In dimension 2, there is something to do with symplectic forms that prevents this. Note that there is no similar results for the dynamics of rigid bodies, i.e. geodesic curves along $SO(3)$ *(Y.B. 2012)*. Seems that the $d=2$ case is generally open.
 
@@ -53,7 +49,7 @@ Smoothness of these solutions is important.The existence of a unique $\nabla p$ 
 
 Last questions: what about the initial value problem? (Y.B. 2018)
 
-A priori, convex minimization techniques are hopeless for the IVP. For a generalized incompressible flow $\mu$ with finite average energy, it does not make sense to prescribe any initial velocity $\left| \frac{d\xi}{dt}\right|_{t=0}$ for $\mu-$ae paths. But if we look at such a flow in minimal energy, we can set up a different equation that is tractable. The dual convex minimization problem is always solvable, and can uniquely recover the smooth classical solutions to the Euler equations for a short enough $T$. This can be seen as a kind of non-commutative optimal transport problem involving fields on non-negative symmetric matrices, which are of current interest.
+A priori, convex minimization techniques are hopeless for the IVP. For a generalized incompressible flow $\mu$ with finite average energy, it does not make sense to prescribe any initial velocity $\left| \frac{d\xi}{dt}\right|_{t=0}$ for $\mu-$a.e. paths. But if we look at such a flow in minimal energy, we can set up a different equation that is tractable. The dual convex minimization problem is always solvable, and can uniquely recover the smooth classical solutions to the Euler equations for a short enough $T$. This can be seen as a kind of non-commutative optimal transport problem involving fields on non-negative symmetric matrices, which are of current interest.
 
 
 We currently don't know if the Euler equations have global solutions, or even if they break down in finite time! Wide open, one of the main problems in non-linear PDEs.
