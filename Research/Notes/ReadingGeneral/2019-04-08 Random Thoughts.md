@@ -31,4 +31,4 @@ The "dual" of geometric realization is totalization.
 Look at Bousfield-Kan spectral sequence
 
 # Random Reading
-A Fredholm operator $D$ on a Banach space is one such that the index $\ker D - \coker D$ makes sense.
+A Fredholm operator $D$ on a Banach space is one such that the index $\dim\ker D - \dim\coker D$ makes sense.
