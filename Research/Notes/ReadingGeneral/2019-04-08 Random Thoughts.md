@@ -1,9 +1,13 @@
+# AG/NT Stuff
 There seems to be some interest from topologists and geometers around the **Novikov conjecture**. On the analytic side, **Sarnak's conjecture** seems to have some buzz as well.
 
 Surface bundles and monodromy representations sound interesting.
 
 I should really get a better grip on etale cohomology and the etale fundamental group.
 
+I should review conference notes and get a list going on the common structures and spaces that are popping up. $K3$ surfaces, Kahler manifolds, toric varieties, Calibi-Yau manifolds, etc.
+
+# Topology Stuff
 Defining THH:
 
 - Take $A \in \mathcal C$, where $\mathcal C$ is a "nice" monoidal category, and $A$ is an algebra object in it. We'll call the monoidal operation $\tensor$.
