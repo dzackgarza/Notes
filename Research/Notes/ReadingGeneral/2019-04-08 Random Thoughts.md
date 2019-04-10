@@ -14,4 +14,4 @@ Defining THH:
 - Now take its geometric realization $\abs{THH_\wait(A)}$
   - In general, take $\mathrm{hocolim}_\Delta THH_\wait(A)$
 
-Look at the HKR theorem again.
+Look at the HKR theorem again, identifies $HH$ with 
