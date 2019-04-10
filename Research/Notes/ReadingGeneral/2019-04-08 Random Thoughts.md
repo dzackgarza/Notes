@@ -6,4 +6,5 @@ I should really get a better grip on etale cohomology and the etale fundamental 
 
 Defining THH:
 - Take $A \in \mathcal C$, a "nice" monoidal category, we'll call the monoidal operation $\tensor$.
-- We'll make a simplicial object $THH_\wait(A)$
+- We'll make a simplicial object $THH_\wait(A)$:
+  - $THH_n(A) = A^{\tensor n}$
