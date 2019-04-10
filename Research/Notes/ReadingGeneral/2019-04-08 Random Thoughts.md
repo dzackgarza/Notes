@@ -14,4 +14,6 @@ Defining THH:
 - Now take its geometric realization $\abs{THH_\wait(A)}$
   - In general, take $\mathrm{hocolim}_\Delta THH_\wait(A)$
 
-Look at the HKR theorem again, identifies $HH$ with derivations
+Look at the HKR theorem again, identifies $HH$ with derivations.
+
+When proving stuff about algebras -- try with polynomial algebras first, essentially the simplest case.
