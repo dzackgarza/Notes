@@ -20,4 +20,6 @@ When proving stuff about algebras -- try with polynomial algebras first, essenti
 
 Simplest coalgebra case: divided power algebras (also a Hopf algebra)
 
-The "dual" of geometric realization is totalization
+The "dual" of geometric realization is totalization.
+
+Look at Bousfield-Kan spectral sequence
