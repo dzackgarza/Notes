@@ -10,4 +10,4 @@ Defining THH:
 - We'll make a simplicial object $THH_\wait(A)$:
   - $THH_n(A) = A^{\tensor n+1}$. If it's to be simplicial, need to specify the face/degeneracy maps:
   - Face map: collapse by cyclic multiplication
-  - Degeneracy maps: use the unit of $A$, can replace any tensor symbol with it. Have a unit map that goes from the unit to $A$
+  - Degeneracy maps: use the unit of $A$, can replace any tensor symbol with it. Have a unit map that goes from the unit to $A$, so somehow this gets you "up" one level (?)
