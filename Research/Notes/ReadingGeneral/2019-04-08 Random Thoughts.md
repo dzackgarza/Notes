@@ -19,3 +19,5 @@ Look at the HKR theorem again, identifies $HH$ with derivations.
 When proving stuff about algebras -- try with polynomial algebras first, essentially the simplest case.
 
 Simplest coalgebra case: divided power algebras (also a Hopf algebra)
+
+The "dual" of geometric realization is totalization
