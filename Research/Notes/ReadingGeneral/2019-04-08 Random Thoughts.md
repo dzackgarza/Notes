@@ -29,3 +29,6 @@ Simplest coalgebra case: divided power algebras (also a Hopf algebra)
 The "dual" of geometric realization is totalization.
 
 Look at Bousfield-Kan spectral sequence
+
+# Random Reading
+A Fredholm operator $ on a Banach space is one such that the index $
