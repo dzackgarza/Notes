@@ -7,7 +7,7 @@ I should really get a better grip on etale cohomology and the etale fundamental 
 
 I should review conference notes and get a list going on the common structures and spaces that are popping up. $K3$ surfaces, Kahler manifolds, toric varieties, Calibi-Yau manifolds, etc.
 
-Review the deRham-Witt complex and crystalline cohomology.
+Review the deRham-Witt complex and crystalline cohomology, get at least a surface-level understanding of $L$ functions.
 
 # Topology Stuff
 Defining THH:
