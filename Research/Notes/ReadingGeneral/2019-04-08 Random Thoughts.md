@@ -1,5 +1,5 @@
 # AG/NT Stuff
-There seems to be some interest from topologists and geometers around the **Novikov conjecture**. On the analytic side, **Sarnak's conjecture** seems to have some buzz as well.
+There seems to be some interest from topologists and geometers around the **Novikov conjecture**. On the analytic side, **Sarnak's conjecture** seems to have some buzz as well, as does the **Artin conjecture**.
 
 Surface bundles and monodromy representations sound interesting.
 
