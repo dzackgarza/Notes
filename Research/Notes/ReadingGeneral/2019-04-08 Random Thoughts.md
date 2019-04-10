@@ -5,5 +5,5 @@ Surface bundles and monodromy representations sound interesting.
 I should really get a better grip on etale cohomology and the etale fundamental group.
 
 Defining THH:
-- Take $\mathcal C$ to be a "nice" monoidal category, we'll call the monoidal operation $\tensor$.
+- Take $A \in \mathcal C$, a "nice" monoidal category, we'll call the monoidal operation $\tensor$.
 - We'll make a simplicial object $THH_\wait(A)$
