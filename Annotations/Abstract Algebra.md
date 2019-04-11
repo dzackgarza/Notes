@@ -1,7 +1,5 @@
 # Abstract Algebra, I. N. Herstein
 /home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf
-## Notes
-<hr>
 ## Highlights
 - a ring if (<a href="file:////home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf#page=142" target="_blank">I. N. Herstein 142</a>)
 - \(a\) \(b\) \(c\) \(d\) \(e\) (<a href="file:////home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf#page=142" target="_blank">I. N. Herstein 142</a>)
