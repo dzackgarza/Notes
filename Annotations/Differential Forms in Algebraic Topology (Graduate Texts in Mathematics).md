@@ -1,3 +1,8 @@
-# Differential Forms in Algebraic Topology (Graduate Texts in Mathematics), Raoul Bott & Loring W. Tu/home/zack/Dropbox/Library/Raoul Bott/Differential Forms in Algebraic Topology (Graduate Texts in Mathematics) (655)/Differential Forms in Algebraic Topology ( - Raoul Bott.pdf## NotesSetup for spectral sequences (<a href="file:////home/zack/Dropbox/Library/Raoul Bott/Differential Forms in Algebraic Topology (Graduate Texts in Mathematics) (655)/Differential Forms in Algebraic Topology ( - Raoul Bott.pdf#page=85" target="_blank">Raoul Bott & Loring W. Tu 85</a>)</p>
+# Differential Forms in Algebraic Topology (Graduate Texts in Mathematics), Raoul Bott & Loring W. Tu
+/home/zack/Dropbox/Library/Raoul Bott/Differential Forms in Algebraic Topology (Graduate Texts in Mathematics) (655)/Differential Forms in Algebraic Topology ( - Raoul Bott.pdf
+## Notes
+Setup for spectral sequences (<a href="file:////home/zack/Dropbox/Library/Raoul Bott/Differential Forms in Algebraic Topology (Graduate Texts in Mathematics) (655)/Differential Forms in Algebraic Topology ( - Raoul Bott.pdf#page=85" target="_blank">Raoul Bott & Loring W. Tu 85</a>)</p>
 Spectral sequence of a filtered complex (<a href="file:////home/zack/Dropbox/Library/Raoul Bott/Differential Forms in Algebraic Topology (Graduate Texts in Mathematics) (655)/Differential Forms in Algebraic Topology ( - Raoul Bott.pdf#page=86" target="_blank">Raoul Bott & Loring W. Tu 86</a>)</p>
-The Grassmanian (<a href="file:////home/zack/Dropbox/Library/Raoul Bott/Differential Forms in Algebraic Topology (Graduate Texts in Mathematics) (655)/Differential Forms in Algebraic Topology ( - Raoul Bott.pdf#page=154" target="_blank">Raoul Bott & Loring W. Tu 154</a>)</p><hr>## Highlights<hr>
+The Grassmanian (<a href="file:////home/zack/Dropbox/Library/Raoul Bott/Differential Forms in Algebraic Topology (Graduate Texts in Mathematics) (655)/Differential Forms in Algebraic Topology ( - Raoul Bott.pdf#page=154" target="_blank">Raoul Bott & Loring W. Tu 154</a>)</p><hr>
+## Highlights
+<hr>
