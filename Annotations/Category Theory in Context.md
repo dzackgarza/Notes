@@ -1,1 +1,6 @@
-# Category Theory in Context, Unknown/home/zack/Dropbox/Library/Unknown/Category Theory in Context (677)/Category Theory in Context - Unknown.pdf## Notes<hr>## Highlights<hr>
+# Category Theory in Context, Unknown
+/home/zack/Dropbox/Library/Unknown/Category Theory in Context (677)/Category Theory in Context - Unknown.pdf
+## Notes
+<hr>
+## Highlights
+<hr>

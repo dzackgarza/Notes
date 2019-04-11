@@ -1,1 +1,6 @@
-# An Introduction to Stable Homotopy Theory, Unknown/home/zack/Dropbox/Library/Unknown/An Introduction to Stable Homotopy Theory (687)/An Introduction to Stable Homotopy Theory - Unknown.pdf## Notes<hr>## Highlights<hr>
+# An Introduction to Stable Homotopy Theory, Unknown
+/home/zack/Dropbox/Library/Unknown/An Introduction to Stable Homotopy Theory (687)/An Introduction to Stable Homotopy Theory - Unknown.pdf
+## Notes
+<hr>
+## Highlights
+<hr>

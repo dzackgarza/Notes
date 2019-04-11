@@ -1,1 +1,6 @@
-# Fiber Bundles Basics, Unknown/home/zack/Dropbox/Library/Unknown/Fiber Bundles Basics (634)/Fiber Bundles Basics - Unknown.pdf## Notes<hr>## Highlights<hr>
+# Fiber Bundles Basics, Unknown
+/home/zack/Dropbox/Library/Unknown/Fiber Bundles Basics (634)/Fiber Bundles Basics - Unknown.pdf
+## Notes
+<hr>
+## Highlights
+<hr>
