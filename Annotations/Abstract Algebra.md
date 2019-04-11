@@ -1,1 +1,6 @@
-# Abstract Algebra, I. N. Herstein/home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf## Notes<hr>## Highlights<hr>
+# Abstract Algebra, I. N. Herstein
+/home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf
+## Notes
+<hr>
+## Highlights
+<hr>
