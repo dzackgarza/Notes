@@ -1,0 +1,1 @@
+# Complex Variables and Applications, James Ward Brown & Ruel Vance Churchill/home/zack/Dropbox/Library/James Ward Brown/Complex Variables and Applications (572)/Complex Variables and Applications - James Ward Brown.pdf## Notes<hr>## Highlights<hr>
