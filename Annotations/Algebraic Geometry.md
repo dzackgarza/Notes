@@ -1,0 +1,1 @@
+# Algebraic Geometry, Robin Harthstone/home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf## Notes<hr>## Highlights<hr>
