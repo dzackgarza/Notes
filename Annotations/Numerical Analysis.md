@@ -1,6 +1,0 @@
-# Numerical Analysis, Richard L. Burden
-/home/zack/Dropbox/Library/Richard L. Burden/Numerical Analysis (455)/Numerical Analysis - Richard L. Burden.pdf
-## Notes
-This page was intentionally left blank (<a href="file:////home/zack/Dropbox/Library/Richard L. Burden/Numerical Analysis (455)/Numerical Analysis - Richard L. Burden.pdf#page=2" target="_blank">Richard L. Burden 2</a>)</p><hr>
-## Highlights
-<hr>

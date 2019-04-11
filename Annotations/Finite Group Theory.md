@@ -1,6 +1,0 @@
-# Finite Group Theory, I Martin Isaacs
-/home/zack/Dropbox/Library/I Martin Isaacs/Finite Group Theory (532)/Finite Group Theory - I Martin Isaacs.pdf
-## Notes
-<hr>
-## Highlights
-<hr>
