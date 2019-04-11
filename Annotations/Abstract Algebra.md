@@ -160,3 +160,4 @@
 - function d from the nonzero elements of R to the nonnegative integers that (<a href="file:////home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf#page=179" target="_blank">I. N. Herstein 179</a>)
 - satisfies: (<a href="file:////home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf#page=179" target="_blank">I. N. Herstein 179</a>)
 - \(a\) \(b\) (<a href="file:////home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf#page=179" target="_blank">I. N. Herstein 179</a>)<hr>
+
