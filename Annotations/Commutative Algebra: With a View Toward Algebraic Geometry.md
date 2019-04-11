@@ -1,0 +1,4 @@
+# Commutative Algebra: With a View Toward Algebraic Geometry, David Eisenbud & Professor David Eisenbud
+
+/home/zack/Dropbox/Library/David Eisenbud/Commutative Algebra_ With a View Toward Algebraic Geometry (577)/Commutative Algebra_ With a View Toward Al - David Eisenbud.pdf
+
