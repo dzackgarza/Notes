@@ -1,1 +1,1 @@
-# Algebraic Geometry, Robin Harthstone/home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf## Notes<hr>## Highlights<hr>
+# Algebraic Geometry, Andreas Gathmann/home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf## Notes<hr>## Highlights<hr>
