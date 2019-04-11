@@ -1,32 +1,30 @@
-# Algebraic Geometry, Robin Harthstone
+# Algebraic Geometry, Andreas Gathmann
 
-/home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf
+/home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf
 
 ## Highlights
 
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=19" target="_blank">Robin Harthstone 19</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=19" target="_blank">Robin Harthstone 19</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=19" target="_blank">Robin Harthstone 19</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=19" target="_blank">Robin Harthstone 19</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=19" target="_blank">Robin Harthstone 19</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=19" target="_blank">Robin Harthstone 19</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=41" target="_blank">Robin Harthstone 41</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=42" target="_blank">Robin Harthstone 42</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=42" target="_blank">Robin Harthstone 42</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=43" target="_blank">Robin Harthstone 43</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=43" target="_blank">Robin Harthstone 43</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=43" target="_blank">Robin Harthstone 43</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=44" target="_blank">Robin Harthstone 44</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=44" target="_blank">Robin Harthstone 44</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=45" target="_blank">Robin Harthstone 45</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=46" target="_blank">Robin Harthstone 46</a>)
--  (<a href="file:////home/zack/Dropbox/Library/Robin Harthstone/Algebraic Geometry (607)/Algebraic Geometry - Robin Harthstone.pdf#page=47" target="_blank">Robin Harthstone 47</a>)<hr>
+- \. A rational map f from X to (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- Y , written f : X 99K Y , (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- \) from a non-empty open (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- subset U ⊂ X to Y \. (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- We say that two such rational maps f1 : U1 → Y and f2 : U2 → Y with U1 ,U2 ⊂ X (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- subset U ⊂ X to Y \. We say that two such rational maps f1 : U1 → are the same if f1 = f2 on a non-empty open subset of U1 ∩U2 \. (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- \(a\) (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- \(Birational maps\)\. (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- \(b\) (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=72" target="_blank">Andreas Gathmann 72</a>)
+- t birational irreducible (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=73" target="_blank">Andreas Gathmann 73</a>)
+- varieties have the same dimension\. (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=73" target="_blank">Andreas Gathmann 73</a>)
+- Construction 9\.10 (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=73" target="_blank">Andreas Gathmann 73</a>)
+- Example 9\.13 (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=74" target="_blank">Andreas Gathmann 74</a>)
+- strict transform o (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=74" target="_blank">Andreas Gathmann 74</a>)
+- Correct picture (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=75" target="_blank">Andreas Gathmann 75</a>)
+- t the blow-up construction does not actually depend on the chosen (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=75" target="_blank">Andreas Gathmann 75</a>)
+- functions, but only on the ideal generated by them\. (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=75" target="_blank">Andreas Gathmann 75</a>)
+- Lemma 9\.16\. (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=76" target="_blank">Andreas Gathmann 76</a>)
+- C (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=78" target="_blank">Andreas Gathmann 78</a>)
+- \. It is a cone whose dimension is the local (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=82" target="_blank">Andreas Gathmann 82</a>)
+- dimension codimX {a} \(Corollary 9\.24\), and we can think of it as the cone that best approximates X (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=82" target="_blank">Andreas Gathmann 82</a>)
+- around a\. (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=82" target="_blank">Andreas Gathmann 82</a>)
+- \(Tangent spaces\)\. (<a href="file:////home/zack/Dropbox/Library/Andreas Gathmann/Algebraic Geometry (515)/Algebraic Geometry - Andreas Gathmann.pdf#page=82" target="_blank">Andreas Gathmann 82</a>)<hr>
 
