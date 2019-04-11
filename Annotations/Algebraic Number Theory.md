@@ -1,1 +1,1 @@
-# Algebraic Number Theory, Neukirch/home/zack/Dropbox/Library/Neukirch/Algebraic Number Theory (619)/Algebraic Number Theory - Neukirch.pdf## Notes<hr>## Highlights<hr>
+# Algebraic Number Theory, Jürgen Neukirch/home/zack/Dropbox/Library/Jurgen Neukirch/Algebraic Number Theory (605)/Algebraic Number Theory - Jurgen Neukirch.pdf## Notes<hr>## Highlights<hr>
