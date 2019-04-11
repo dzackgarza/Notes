@@ -1,4 +1,0 @@
-# QFT for Topologists, Daniel Dugger
-
-/home/zack/Dropbox/Library/Daniel Dugger/QFT for Topologists (692)/QFT for Topologists - Daniel Dugger.pdf
-

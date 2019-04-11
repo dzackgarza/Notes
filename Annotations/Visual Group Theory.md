@@ -1,4 +1,0 @@
-# Visual Group Theory, Acampo GmbH
-
-/home/zack/Dropbox/Library/Acampo GmbH/Visual Group Theory (627)/Visual Group Theory - Acampo GmbH.pdf
-
