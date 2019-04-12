@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+\graphicspath{{images/}{../images/}}
+ 
+\title{The Ultimate in Modularity}
+\author{D. Zack Garza}
+\date{\today}
+ 
+\begin{document}
+ 
+    \maketitle
+ 
+    \section{First section}
+    \import{sections/}{lecture1}
+ 
+    \section{Second section}
+    \import{sections/}{lecture2}
+ 
+\end{document}

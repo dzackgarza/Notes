@@ -80,7 +80,7 @@
 - Euclid's proof of the infinitude of primes: $1 + \prod p_i$ is not necessarily prime!!
 - The Kernel Trick
 - Eigenfaces
-
+- "What every math major should know"
 
 
 ## Personal

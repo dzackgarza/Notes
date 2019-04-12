@@ -1,0 +1,290 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[bookmarksopen, linktocpage]{hyperref}
+\setlength{\parindent}{0pt}
+
+\newcommand{\norm}[1]{\lVert#1\rVert} 		%Double vertical bars for norms
+\newcommand{\ip}[2]{\langle#1,#2\rangle}	%Inner product
+\newcommand{\vb}[1]{\mathbf{#1}}		%Bold vector
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+% Augmented matrices. Use like this:
+% \begin{pmatrix}[cc|c]
+
+\begin{document}
+\title{Discrete Mathematics, Spring 2014 Notes}
+\author{Zack Garza}
+\maketitle
+\tableofcontents
+
+\chapter{Recurrence Relations}
+\section{Applications}
+Definition: If the $n$th term a sequence, $a_n$, is a function of a previous term of the sequence, we call the sequence $a_n + a_{n-1} + a_{n-2}\cdots +a_0$ a \textbf{recurrence relation}.
+
+Definition: If a sequence $s$ satisfies a recurrence relation, it is called a \textit{solution}. A recurrence relation along with initial conditions uniquely determines a solution sequence.
+
+
+Examples:
+\begin{enumerate}
+	\item
+		The Fibonacci Sequence ${f_n}$ satisfies the recurrence relation
+		\begin{gather*}
+			f_n = f_{n-1} + f_{n-2} \\
+			\text{where } \\
+			f_1 = 1 \text{ and } f_2 = 1.
+		\end{gather*}
+	\item
+		The Tower of Hanoi: The goal is to move all the discs to peg 3. Let $H_n$ denote the number of moves needed to solve a tower with $n$ discs. Determine a recurrence relation for the sequence $\{H_n\}$.
+
+		\textit{Solution:}
+		Starting with $n$ discs on peg 1, move $n-1$ discs to peg 2. While we don't know how many moves this will take, we do know that it will be equal to $H_{n-1}$ moves.
+
+		Use one move to move the largest disc to peg 3, which adds 1 move.
+
+		The remaining $n-1$ discs can then be moved to peg 3 in $H_{n-1}$ moves.
+		%?%
+
+		This gives the recurrent relation
+		\begin{gather*}
+			H_n = 2H_{n-1} + 1 \\
+			\text{where } H_1 = 1.
+		\end{gather*}
+
+		This can be solved iteratively:
+		\begin{align*}
+			H_n &= &2   &H_{n-1} 			&+ 1 			\\
+				&= &2   &(2H_{n-2} + 1) 	&+ 1 			\\
+				&= &2^2 &H_{n-2} 			&+ 2 + 1 		\\
+				&= &2^2 &(2H_{n-3} + 1) 	&+ 2 + 1 		\\
+				&= &2^3 &H_{n-3}			&+ 2^2 + 2 + 1
+		\end{align*}
+
+		Generalizing the above pattern, we see that
+		\begin{align*}
+			H_n &= 2^{n-1}H_1 + 2^{n-2} + 2^{n-3}+\cdots+2+1							\\
+				&= 2^{n-1} + 2^{n-2} + 2^{n-3}+\cdots+2+1 &\text{ (because $H_1$ = 1)} 	\\
+				&= \sum_{i=0}^{n-1} 2^i \\
+				&= 2^n - 1 &\text{(Sum of a geometric series)}  %Listed in Theorem 1, Section 2.4
+		\end{align*}
+\end{enumerate}
+
+\section{Explicit Solutions}
+Definition: Given a recurrence relation of the form
+\begin{gather}\label{definition:recurrence_relation}
+	a_n = c_1a_{n-1} + c_2a_{n-2} + \cdots + c_ka_{n-k} \\
+	\text{where } c_1, c_2, \cdots c_k \in \mathbb{R} \text{ and } c_k \neq 0, \notag
+\end{gather}
+we refer to $a_n$ as a \textit{linear homogeneous relation of degree k with constant coefficients}.
+
+These terms are defined as follows:
+\begin{enumerate}
+	\item \textbf{Linear: }
+		The right hand side of ~\ref{definition:recurrence_relation} is the sum of the previous terms in $a_n$ multiplied by a function of $n$. \\
+		For example, $a_n = a_{n-1} + a_{n-2}^2$ is not linear.
+	\item \textbf{Homogeneous: }
+		No terms occur that are not multiples of the $a_j$s. 				\\ %?
+		For example, $H_n = 2H_{n-1} + 1$ is not homogeneous.
+	\item \textbf{Constant Coefficients}
+		The coefficients do not depend on $n$.								\\
+		For example, $B_n = nB_{n-1}$ does not have constant coefficients.
+	\item \textbf{Degree: }
+		The degree is the number of previous terms that determine $a_n$.	\\
+		For example, the degree of $f_n$ is 2, and the degree of $a_n = a_{n-5}$ is 5.
+\end{enumerate}
+
+\subsection{Solving}
+\subsubsection{The Method of Characteristic Equations}
+	Generally, we look for solutions of the form $a_n = r^n$, where $r$ is some constant.
+
+	Given a sequence
+	\begin{gather*}
+		a_n = c_1a_{n-1} + c_2a_{n-2} + \cdots +c_ka_{n-k},
+	\end{gather*}
+
+	$a_n = r^n$ is a solution if and only if
+	\begin{gather*}\label{eq:rec_soln}
+		r^n = c_1r^{n-1} + c_2r^{n-2} + \cdots + c_kr^{n-k}.
+	\end{gather*}
+
+	Dividing both sides of~\ref{eq:rec_soln} by $r^{n-k}$ yields
+	\begin{gather*}
+		r_k = c_1r^{k-1} + c_2r^{k-2} + \cdots + c_{k-1}r + c_k.
+	\end{gather*}
+
+	Rearranging terms shows that
+	\begin{gather}
+		r_k - c_1r^{k-1} - c_2r^{k-2} - \cdots - c_k = 0,
+	\end{gather}
+
+	which means that in order for $a_n = r^n$ to be a solution to the recurrence relation, $r$ must be a solution to the equation above. We refer to this as the \textbf{characteristic equation} of the recurrence relation, and the solutions to this equation are the \textbf{characteristic roots} of the recurrence relation. \\ \\
+
+	Exercise: Let $c_1,c_2\in\mathbb{R}$. Suppose $r^2 - c_1r - c_2 = 0$ has two distinct roots, $r_1$ and $r_2$. Show for the recurrence relation
+	\begin{gather*}
+		a_n = c_1a_{n-1} + c_2a_{n-2},
+	\end{gather*}
+
+	a solution is given by
+	\begin{gather*}
+		a_n = \alpha r_1^n + \alpha_2 r_2^n, n\in\mathbb{N},
+	\end{gather*}
+	where $\alpha$ and $\alpha_2$ are constants.(Note: This is a actually a theorem!)
+
+	\textit{Hints: }
+		\begin{enumerate}
+			\item
+				Show that \textbf{if} $r_1$ and $r_2$ are roots to the characteristic equation and $\alpha$ and $\alpha_2$ are constants, \textbf{then} the sequence $\{a_n\}$ given by $a_n = \alpha r_1^n + \alpha_2 r_2^n$ is a solution to the recurrence relation.
+			\item
+				Show that \textbf{if} the sequence $\{a_n\}$ is a solution, \textbf{then} $a_n$ must equal $\alpha r_1^n + \alpha_2 r_2^n$ for some $\alpha$ and $\alpha_2$.
+		\end{enumerate}
+
+	\textit{Solution: }
+	\begin{enumerate}
+		\item
+			Showing that the sequence $a_n = \alpha r_1^n + \alpha_2 r_2^n$ is a solution to the recurrence relation:
+
+			Since it is assumed that $r_1$ and $r_2$ are roots of $r^2 - c_1r - c_2 = 0$,
+			\begin{align*}
+				r_1^2 &= c_1r_1 + c_2 \\
+				r_2^2 &= c_1r_2 + c_2.
+			\end{align*}
+
+			Supposing that this is a solution for any term in $a_n$, this shows that
+			\begin{align*}
+				a_{n-1} = \alpha r_1^{n-1} + \alpha_2 r_2^{n-2} \\
+				a_{n-2} = \alpha r_1^{n-1} + \alpha_2 r_2^{n-2}
+			\end{align*}
+
+			Substituting this into the original recurrence relation:
+			\begin{align*}
+				c_1a_{n-1} + c_2a_{n-2} &= c_1(\alpha r_1^{n-1} + \alpha_2 r_2^{n-2}) + c_2(\alpha r_1^{n-2} + \alpha_2 r_2^{n-2}) \\
+				&= \alpha r_1^{n-2}(c_1r_1 + c_2) +\alpha_2 r_2^{n-2}(c_1r_2 + c_2) \\
+				&= \alpha r_1^{n-2}(r_1^2) +\alpha_2 r_2^{n-2}(r_2^2) \\
+				&= \alpha r_1^n + \alpha_2 r_2^n \\
+				&= a_n
+			\end{align*}
+
+		\item
+			Showing that every solution to $a_n$ is of the form $a_n = \alpha r_1^{n} +\alpha r_2^{n}$:
+
+			Suppose $\{a_n\}$ is a solution, and the recurrence relation has the initial conditions $a_0 = C_0$ and $a_1 = C_1$. It remains to show that $\exists \alpha,\alpha_2$ that satisfy these same initial conditions.
+
+			\begin{gather*}
+				a_0 = C_0 \and a_0 = \alpha r_{1}^0 + \alpha_2 r_{2}^0 \\
+				a_1 = C_1 \and \alpha r_1^{1} + \alpha_2 r_2^{1}
+			\end{gather*}
+
+			This gives the following system of linear equations:
+			\begin{align*}
+				C_0 &= \alpha + \alpha_2 \\
+				C_1 &= \alpha r_1 + \alpha_2 r_2
+			\end{align*}
+
+			Which has unique solutions in terms of $C_1$ and $C_2$ for $r_1 \neq r_2$.
+	\end{enumerate}
+
+	So what's the punchline? This means that given a linear homogeneous recurrence relation with constant coefficients, the solution can be uniquely expressed as
+	\begin{gather}
+		a_n = \alpha r_1^n + \alpha_2 r_2^n,
+	\end{gather}
+	where $r_1$ and $r_2$ are the two distinct roots of the characteristic equation, and the initial conditions will determine the constant coefficients.
+
+	Exercise: Use this result to derive an explicit expression for the Fibonacci sequence.
+
+	What if there is only one root? We simply force orthogonality, and the solutions will take the form of
+	\begin{gather}
+		a_n = \alpha r^n + \alpha_2 nr^n
+	\end{gather}
+
+	In fact, this can be generalized -- as long as the characteristic equation has $k$ distinct roots, the solution will be of the form
+	\begin{gather}
+		a_n = \alpha_1 r_1^n + \alpha_2 r_2^n + \cdots + \alpha_3 r_k^n
+	\end{gather}
+
+	This can be generalized even further, in the case that the characteristic equation as multiple roots with multiplicity $m$. The general solution
+	%TODO: Finish
+
+\section{Generating Functions}
+Generating functions usually occur in the form of power series -- however, we only regard these series formally. The sequence is extracted from the coefficients of the series, where the variable $x$ only plays the role of a placeholder. We consider these series to be a ring of algebraic objects, defined as \textit{formal power series}, for which the values of $x$ is merely a formal symbol. This means that it is nonsensical to evaluate such a series at any given point - the symbol $x$ is much like a clothesline, for which the power mark the positions of the ``clothespins'' on which the sequence is ``pinned''. This also means that we are not concerned with questions of convergence.
+
+In order to find a generating function for which the $n$th coefficient is equal to the $n$th term in a sequence, we require that the recurrence relation is equipped with a clear range of values. ``Don't settle for a recurrence that has an unqualified free variable''.
+
+General technique:
+\begin{enumerate}
+	\item
+		Define the generating function you will look for.
+		For example, for a sequence $a_o, a_1, a_2...$, a natural choice would be $A(x) = \sum_{j\geq0}a_jx^j$.
+	\item
+		Take the original recurrence relation, and multiply both sides by $x^n$
+	\item
+		Sum both sides \textit{over all the values of $n$ for which the relation is valid.}
+	\item
+		Try to express the result in terms of $A(x)$.
+	\item
+		Optional: To obtain an explicit formula for the $n$th term, attempt to expand $A(x)$. May require partial fraction decomposition, and definitely requires knowledge of series representations and equivalents.
+\end{enumerate}
+
+
+
+\chapter{Relations}
+\section{Functions as Relations}
+Definition: For two sets, say $A$ and $B$, a \textbf{binary relation from $A$ to $B$} is a subset of $A \times B$. In other words, it is a set $R$ of ordered pairs where the first element comes from $A$, and the second element comes from $B$. When an ordered pair $(a,b)$ is a member of $R$, we say $a$ is \textbf{related} to $b$ by $R$. Relations among elements of more than two sets are referred to as \textbf{$n$-ary } relations. \\ \\
+
+Definition: If we have a relation from $A$ to itself, we called this a \textit{a relation on $A$}, which is a subset of $A \times A$. \\ \\
+
+Definition: A relation $R$ on a set $A$ is called \textit{reflexive} if $(a,a) \in R ~\forall a \in A$. In other words, $\forall a((a,a)\in R)$. This means that a relation is reflexive if every element of $A$ is related to itself. \\ \\
+
+Definition: A relation $R$ on a set $A$ is \textit{symmetric} if
+
+$\forall a,b\in A, [(a,b)\in R \Rightarrow (b,a)\in R$]. \\ \\
+
+Definition: A relation $R$ on a set $A$ is \textit{antisymmetric} if
+
+$\forall a,b\in A, [((a,b)\in R \land (b,a)\in R) \Rightarrow a=b$].\\ \\
+
+Definition: A relation $R$ on a set $A$ is \textit{transitive} if
+
+$\forall a,b,c\in A, [(a,b)\in R \land (b,c)\in R \Rightarrow (a,c)\in R].$ \\ \\
+
+Theorem: A relation $R$ on a set $A$ is transitive $\iff R^n\subseteq R ~\forall n\in \mathbb{N}.$
+
+Definition: Let $R$ be a relation from sets $A$ to $B$, and $S$ be a relation from $B$ to $C$. The \textbf{composite} of the relations $R$ and $S$ is the relation, for which membership is defined as follows:
+$\forall a\in A, \forall c\in C, \exists b\in B [(a,b)\in R \land (b,c)\in S]$. The notation $R^n$ for such a relation denotes the function composed with itself $n$ times. This relation is denoted $S\circ R$.
+\\ \\
+
+Definition: If a relation $R$ on a set $A$ is reflexive, symmetric, and transitive, it is said to be an \textbf{equivalence relation}. If $R$ is an equivalence relation on $A$, we denote the \textbf{equivalence class} of $R$ as $[a]_R = \left\{s | (a,s) \in R\right\}$ and we call any $b \in [a]_R$ a \textbf{representative} of the equivalence class.
+
+Definition: A relation $R$ on a set $S$ is called a \textbf{partial ordering} or\textbf{partial order} if it is reflexive, antisymmetric, and transitive. A set $S$ together with a partial ordering is called a \textbf{poset} and is denoted by $(S,R)$. The symbol $\preccurlyeq$ is introduced to discuss how elements with posets are ordered. \\ \\
+
+Definition: Elements $a$ and $b$ of a poset $(S, \preccurlyeq)$ are said to be \textbf{comparable} if either $a\preccurlyeq b$ or $b\succcurlyeq a$. When neither condition applies, $a$ and $b$ are said to be \textbf{incomparable}. \\ \\
+
+Definition: A poset $(S, \preccurlyeq)$ is a \textbf{well-ordered set} if the operation $\preccurlyeq$ is a total ordering and every nonempty subset of $S$ has a ``least'' element.
+
+\chapter{Misc}
+Definition: \textbf{P vs. NP}
+
+\textbf{P: The class of polynomial-time problems}
+
+A decision problem in in P if it can be solved by a deterministic Turing machine in polynomial time in terms of the size of its input. That is, there exists a Turing machine $T$ that solves the decision, and a polynomial $p(n)$ such that $\forall n\in \mathbb{N}$, $T$ halts after no more than $p(n)$ transitions.
+
+\textbf{NP: The class of nondeterministic polynomial-time problems}
+A decision problem in in NP if it can be solved by a nondeterministic Turing machine in polynomial time in terms of its input. \\ \\
+
+Definition: A \textit{partition of a set $S$} is a collection of nonempty, pairwise disjoint sets whose union is $S$. This is also referred to as an \textit{equivalence relation} on $S$. The sets into which $S$ is partitioned are called \textit{classes} of the partition. \\
+
+\indent Related note: Given a set $[n] = \left\{1,2,\cdots , n\right\}$, the number of partitions of $[n]$ into $k$ classes is given by $\left\{\frac{n}{k}\right\}$, and is referred to as the Stirling number of the second kind.
+
+Fact: The Cauchy product rule
+\begin{gather}
+	\sum_n a_nx^n \sum_n b_nx^n = \sum_n a_k b_{n-k}.
+\end{gather}
+
+\end{document}

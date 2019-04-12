@@ -1,0 +1,18 @@
+\documentclass[float=false, crop=false]{standalone}
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+\begin{document}
+
+We can now import reusable components:
+ 
+\begin{figure}[ht]
+    \centering
+    \subimport{../components/}{diagram.tex}
+    \label{fig:tikzexample}
+    \caption{A nice simple diagram}
+\end{figure}
+ 
+
+\end{document}

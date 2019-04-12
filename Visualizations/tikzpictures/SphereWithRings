@@ -1,0 +1,43 @@
+﻿\begin{tikzpicture}[scale=\textwidth/2cm,samples=120]
+\begin{axis}[hide axis, axis equal, samples=15]
+
+\addplot3 [surf, gray, faceted color=gray, opacity=0.5, samples=20, z buffer=sort, domain=0:360, y domain=0:1] ({cos(x)*y},{sin(x)*y},
+{sqrt(1-(cos(x)*y)^2-(sin(x)*y)^2))});
+
+\addplot3 [surf, gray, faceted color=gray, opacity=0.5, samples=20, z buffer=sort, domain=0:360, y domain=0:1] ({cos(x)*y},{sin(x)*y},
+{-sqrt(1-(cos(x)*y)^2-(sin(x)*y)^2))});
+
+\pgfmathsetmacro{\a}{90.0}
+\pgfmathsetmacro{\b}{30.0}
+\pgfmathsetmacro{\c}{-15.0}
+
+\addplot3 [blue, thick, domain=0:360, samples=40] (
+        {(sin(\a)*cos(\b)*cos(\c))*cos(x)+(sin(\a)*sin(\c))*sin(x)-(cos(\a)*sin(\b)*cos(\c))},
+        {-(sin(\a)*cos(\b)*sin(\c))*cos(x)+(sin(\a)*cos(\c))*sin(x)+(cos(\a)*sin(\b)*sin(\c))},
+        {(sin(\a)*sin(\b))*cos(x)+cos(\a)*cos(\b)}
+    );
+
+\pgfmathsetmacro{\a}{60.0}
+\addplot3 [blue, domain=0:360, samples=40] (
+        {(sin(\a)*cos(\b)*cos(\c))*cos(x)+(sin(\a)*sin(\c))*sin(x)-(cos(\a)*sin(\b)*cos(\c))},
+        {-(sin(\a)*cos(\b)*sin(\c))*cos(x)+(sin(\a)*cos(\c))*sin(x)+(cos(\a)*sin(\b)*sin(\c))},
+        {(sin(\a)*sin(\b))*cos(x)+cos(\a)*cos(\b)}
+    );
+
+
+\pgfmathsetmacro{\a}{10.0}
+\addplot3 [blue, domain=0:360, samples=20] (
+        {(sin(\a)*cos(\b)*cos(\c))*cos(x)+(sin(\a)*sin(\c))*sin(x)-(cos(\a)*sin(\b)*cos(\c))},
+        {-(sin(\a)*cos(\b)*sin(\c))*cos(x)+(sin(\a)*cos(\c))*sin(x)+(cos(\a)*sin(\b)*sin(\c))},
+        {(sin(\a)*sin(\b))*cos(x)+cos(\a)*cos(\b)}
+    );
+
+\pgfmathsetmacro{\a}{5.0}
+\addplot3 [blue, domain=0:360, samples=10] (
+        {(sin(\a)*cos(\b)*cos(\c))*cos(x)+(sin(\a)*sin(\c))*sin(x)-(cos(\a)*sin(\b)*cos(\c))},
+        {-(sin(\a)*cos(\b)*sin(\c))*cos(x)+(sin(\a)*cos(\c))*sin(x)+(cos(\a)*sin(\b)*sin(\c))},
+        {(sin(\a)*sin(\b))*cos(x)+cos(\a)*cos(\b)}
+    );
+    
+\end{axis}
+\end{tikzpicture}

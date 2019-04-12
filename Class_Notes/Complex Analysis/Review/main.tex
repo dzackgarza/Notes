@@ -10,7 +10,7 @@
 
 \usepackage[dvipsnames]{xcolor}
 \title{Complex Analysis}
-\author{dzackgarza }
+\author{D. Zack Garza}
 \date{June 2017}
  
 % Set this =0 to hide, =1 to show
@@ -70,11 +70,11 @@ In small neighborhoods, the derivative of a function at a point rotates it by an
 % Roots
 \subsection{$n$th roots of a complex number}
 The $n$th roots of $z_0$ are given by writing $z_0 = re^{i\theta}$, and are 
-\[\zeta = \left\{ \sqrt[n]{r} \exp\left[{i\left( \frac{\theta}{n} + \frac{2k\pi}{n}\right)}\right] \mid k = 0,1,2,\cdots, n-1\right\}\]
+\[\zeta = \left\{ \sqrt[n]{r} \exp\left[{i\left( \frac{\theta}{n} + \frac{2k\pi}{n}\right)}\right] \mid k = 0,1,2,\ldots, n-1\right\}\]
 
 or equivalently
 
-\[\zeta = \left\{ \sqrt[n]{r}\omega_n^k \mid k = 0,1,2,\cdots, n-1\right\}~\text{where}~\omega_n = e^{\frac{2\pi i}{n}}\]
+\[\zeta = \left\{ \sqrt[n]{r}\omega_n^k \mid k = 0,1,2,\ldots, n-1\right\}~\text{where}~\omega_n = e^{\frac{2\pi i}{n}}\]
 
 This can be derived by looking at $\left( re^{i\theta + 2k\pi}\right)^{\frac{1}{n}}$.
 
@@ -84,9 +84,10 @@ It is also useful to immediately recognize that $z^2+a = (z-i\sqrt{a})(z+i\sqrt{
 \subsection{The Cauchy-Riemann Equations}
 
 If $f(x+iy) = u(x,y) + iv(x,y)$ or $f(re^{i\theta}) = u(r,\theta) + iv(r,\theta)$, then $f$ is complex differentiable if $u,v$ satisfy 
+
 \begin{align*}
     u_x &= v_y &\quad u_y &= -v_x \\
-    ru_r &= v_\theta &\quad u_\theta &= -rv_r
+    r u_r &= v_\theta &\quad u_\theta &= -r v_r
 \end{align*}
 
 In this case, 
@@ -187,7 +188,7 @@ Can also be used for integrals of the form $\int f(z) \cos az dz$ or $\int f(z) 
     
     \item $[z_1, z_2, z_3] \mapsto [w_1, w_2, w_3]$
     
-    Every LFT is determined by its action on three points. Given 3 pairs points $z_i \mapsto w_i$, construct an LFT using the implicit equation
+    Every linear fractional transformation is determined by its action on three points. Given 3 pairs points $z_i \mapsto w_i$, construct one using the implicit equation
     \[
     \frac{(w-w_1)(w_2-w_3)}{(w-w_3)(w_2-w_1)} = \frac{(z-z_1)(z_2-z_3)}{(z-z_3)(z_2-z_1)}
     \]
@@ -279,7 +280,7 @@ It is mostly important to know that composing a harmonic function on one domain 
 
 Similarly, composing the solution to a boundary value problem on a domain with a conformal map produces a new solution to a new boundary problem in the new domain, where the new boundary is given by the conformal image of the old one.
 
-The general technique is use solutions to the BVP on a simple domain $D$, and compose one or several conformal maps to map a given problem into $D$, then pull back the solution.
+The general technique is use solutions to the boundary value problem on a simple domain $D$, and compose one or several conformal maps to map a given problem into $D$, then pull back the solution.
 
 \subsubsection{Heat Flow: Steady Temperatures}
 
@@ -364,7 +365,7 @@ A solution in $\mathbb{H}$ is $F(z) = Az$ some some velocity $A$. Apply conforma
    
    Note - continuous partials are not enough, consider $f(z) = |z|^2$.
    
-   \item Rouche's Theorem
+   \item Rouché's Theorem
    
    If $p(z) = f(z) + g(z)$ and $|g(z)| < |f(z)|$ everywhere on $C$, then $f$ and $p$ have the same number of zeros with $C$.
    
@@ -419,7 +420,7 @@ A solution in $\mathbb{H}$ is $F(z) = Az$ some some velocity $A$. Apply conforma
 \subsection{Some Useful Formulae}
 
 \[
-f_{x_0}(x) = f(x_0) + f'(x_0)(x-x_0) + \frac{1}{2!}f''(x_0)(x-x_0)^2 + \cdots
+f_{x_0}(x) = f(x_0) + f'(x_0)(x-x_0) + \frac{1}{2!}f''(x_0)(x-x_0)^2 + \ldots
 \]
 
 \[ 
@@ -438,22 +439,22 @@ e^z = \sum_k \frac{1}{k!} z^k
 \cos z 
 &= \frac{1}{2}(e^{iz} + e^{-iz})
 &
-&= 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \cdots \\
+&= 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \ldots \\
 %
 \cosh z 
 &= \frac{1}{2}(e^{z} + e^{-z}) 
 &= \cos iz 
-&= 1 + \frac{z^2}{2!} + \frac{z^4}{4!} + \cdots \\
+&= 1 + \frac{z^2}{2!} + \frac{z^4}{4!} + \ldots \\
 %
 \sin z 
 &= \frac{1}{2i}(e^{iz} - e^{-iz}) 
 &
-&= z - \frac{z^3}{3!} + \frac{z^4}{4!} - \cdots \\
+&= z - \frac{z^3}{3!} + \frac{z^4}{4!} - \ldots \\
 %
 \sinh z 
 &= \frac{1}{2}(e^{z} - e^{-z}) 
 &= -i\sin iz 
-&= z + \frac{z^3}{3!} + \frac{z^4}{4!} + \cdots \\
+&= z + \frac{z^3}{3!} + \frac{z^4}{4!} + \ldots \\
 \end{align*}
 Mnemonic: just remember that cosine is an even function, and that the even terms of $e^z$ are kept. Similarly, sine is an odd function, so keep the odd terms of $e^z$.
 
@@ -486,7 +487,7 @@ Useful to know: $\Gamma(\frac{1}{2}) = \sqrt\pi$.
    
    \item Find the first three terms of the Laurent expansion of $\frac{e^z+1}{e^z-1}$.
    \hide{
-   Equals $2z^{-1} + 0 + 6^{-1}z + \cdots$
+   Equals $2z^{-1} + 0 + 6^{-1}z + \ldots$
    }
    
   \item Compute $\int_{S_1} \frac{1}{z^2+z-1}dz$

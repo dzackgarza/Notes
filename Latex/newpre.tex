@@ -1,0 +1,154 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+%\documentclass[]{article}
+\documentclass[11pt]{scrreprt}
+\usepackage[utf8]{inputenc}
+
+%These tell TeX which packages to use.
+\usepackage{array}
+\usepackage{mathtools}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd}
+\usepackage{color}
+
+\usepackage{microtype}
+\usepackage[pdfencoding=auto]{hyperref}
+\usepackage{bookmark}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage[msc-links]{amsrefs}
+
+% Nice math font that journals use
+%\usepackage[lite]{mtpro2}
+%\usepackage{mathrsfs}
+%\usepackage{mathptmx}
+\usepackage{lmodern}
+%\usepackage[sc]{mathpazo}
+
+% Theorem Styles
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem*{remark}{Remark}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{joke}{Joke}
+\newtheorem{example}{Example}
+\newtheorem*{solution}{Solution}
+\newtheorem{proposition}{Proposition}
+
+%Pagination stuff.
+\setlength{\topmargin}{-.3 in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textheight}{9.in}
+\setlength{\textwidth}{6.5in}
+\pagestyle{empty}
+
+% Pandoc-specific fixes
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Tikz and Graphics
+\usepackage{tikz, tikz-3dplot}
+\usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, decorations.markings}
+\tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
+\usepackage{pgfplots}
+\usepackage[inline]{asymptote}
+
+% Major Macros
+%\renewcommand{\and}{{\text{ and }}}
+%\renewcommand{\or}{{\text{ or }}}
+\newcommand{\NN}[0]{{\mathbb{N}}}
+\newcommand{\RR}[0]{{\mathbb{R}}}
+\newcommand{\ZZ}[0]{{\mathbb{Z}}}
+\newcommand{\CC}[0]{{\mathbb{C}}}
+\newcommand{\QQ}[0]{{\mathbb{Q}}}
+\newcommand{\RP}[0]{{\mathbb{RP}}}
+\newcommand{\CP}[0]{{\mathbb{CP}}}
+\newcommand{\HP}[0]{{\mathbb{HP}}}
+\newcommand{\OP}[0]{{\mathbb{OP}}}
+\newcommand{\FF}[0]{{\mathbb{F}}}
+\newcommand{\PP}[0]{{\mathbb{P}}}
+\newcommand{\Af}[0]{{\mathbb{A}}}
+\newcommand{\MM}[0]{{\mathbb{M}}}
+\newcommand{\TT}[0]{{\mathbb{T}}}
+\newcommand{\Sp}[0]{{\mathbb{S}}}
+\newcommand{\KK}[0]{{\mathbb{K}}}
+\newcommand{\Gr}[0]{{\text{Gr}}}
+\newcommand{\GL}[0]{{\text{GL}}}
+\newcommand{\SL}[0]{{\text{SL}}}
+\newcommand{\SO}[0]{{\text{SO}}}
+\newcommand{\OO}[0]{{\mathcal{O}}}
+\newcommand{\mltext}[1]{\left\{\begin{array}{c}#1\end{array}\right\}}
+\newcommand{\dual}[0]{\vee}
+\newcommand{\Tr}[0]{\mathrm{Tr}}
+\newcommand{\divides}[0]{{~\mid ~}}
+\newcommand{\sym}[0]{\mathrm{Sym}}
+\newcommand{\aut}[0]{\mathrm{Aut}}
+\newcommand{\grad}[0]{\mathrm{grad}}
+\newcommand{\spec}[0]{{\mathrm{Spec}}}
+\newcommand{\suchthat}[0]{{~\backepsilon ~}}
+\newcommand{\uniformlyconverges}[0]{\rightrightarrows}
+\newcommand{\mapsvia}[1]{\xrightarrow{#1}}
+\newcommand{\generators}[1]{\langle{#1}\rangle}
+\newcommand{\theset}[1]{\{{#1}\}}
+\newcommand{\too}[1]{{\xrightarrow{#1}}}
+\newcommand{\norm}[1]{{{\lVert}{#1}{\rVert}}}
+\newcommand{\restrictionof}[2]{{\left.{#1}\right|_{#2}}}
+\newcommand{\inner}[2]{{\langle {#1}, {#2} \rangle}}
+\newcommand{\indicator}[1]{{\unicode{x1D7D9}\left[#1\right]}}
+\newcommand{\equalsbecause}[1]{{\stackrel{\mbox{$\tiny{\text{ #1 }}$}}{=}}}
+\newcommand{\conjugate}[1]{{\overline{{#1}}}}
+\newcommand{\strike}[1]{{\enclose{horizontalstrike}{#1}}}
+\newcommand{\realpart}[1]{{\mathcal{Re}({#1})}}
+\newcommand{\imaginarypart}[1]{{\mathcal{Im}({#1})}}
+\newcommand{\dd}[2]{{\frac{\partial #1}{\partial #2}}}
+\newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
+\newcommand{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
+\newcommand{\thevector}[1]{{\left[ {#1} \right]}}
+\newcommand{\abs}[2]{{\left\lvert #2 \right\rvert_{\text{#1}}}}
+\newcommand{\intersect}[0]{\bigcap}
+\newcommand{\union}[0]{\bigcup}
+\newcommand{\coker}[0]{\operatorname{coker}}
+\newcommand{\rank}[0]{\operatorname{rank}}
+\newcommand{\tensor}[0]{\otimes}
+\newcommand{\semidirect}[0]{\rtimes}
+\newcommand{\pt}[0]{\{\text{pt}\}}
+\newcommand{\bd}[0]{{\del}}
+\newcommand{\wait}[0]{{\,\cdot\,}}
+\newcommand{\selfmap}[0]{{\circlearrowleft}}
+\newcommand{\tor}[0]{\text{Tor}}
+\newcommand{\ext}[0]{\text{Ext}}
+\newcommand{\actson}[0]{\curvearrowright}
+\newcommand{\actsonl}[0]{\curvearrowleft}
+\newcommand{\disjoint}[0]{{\coprod}}
+\newcommand{\dash}[0]{{\hbox{-}}}
+\newcommand{\bigast}[0]{{\mathop{\Large \ast}}}
+\newcommand{\from}[0]{\leftarrow}
+\newcommand{\covers}[0]{\twoheadrightarrow}
+\newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
+\newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
+\newcommand{\ZpZ}[0]{\mathbb{Z}/p\mathbb{Z}}
+\newcommand{\Sm}[0]{{\text{Sm}_k}}
+\newcommand{\GG}[0]{{\mathbb{G}}}
+\newcommand{\bung}[0]{\text{Bun}_G}
+\newcommand{\Aut}[0]{{\text{Aut}}}
+\newcommand{\del}[0]{{\partial}}
+\newcommand{\im}[0]{{\text{im}~}}
+\newcommand{\homotopic}[0]{\simeq}
+\newcommand{\into}[0]{\to}
+\newcommand{\cross}[0]{\times}
+\newcommand{\definedas}[0]{\coloneqq}
+\newcommand{\surjects}[0]{\twoheadrightarrow}
+\newcommand{\onto}[0]{\twoheadrightarrow}
+\newcommand{\injects}[0]{\hookrightarrow}
+\newcommand{\id}[0]{\text{id}}
+\newcommand{\inv}[0]{^{-1}}
+\newcommand{\normal}[0]{{~\trianglelefteq~}}
+\newcommand{\units}[0]{^{\times}}
+\newcommand{\annd}[0]{{\text{ and }}}
+\newcommand{\orr}[0]{{\text{ or }}}
+\renewcommand{\vector}[1]{{\mathbf{ {#1} }}}
+\renewcommand{\hom}[0]{\text{Hom}}
+\renewcommand{\char}[0]{\text{char}}
