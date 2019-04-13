@@ -9,3 +9,21 @@ We wish to consider the following question: For which n is Θn = 0?
 
 The general belief is that there should be finitely many such n, and these n should
 be concentrated in relatively low dimensions.
+
+The chromatic tower. Fix a prime p. The chromatic tower of a spectrum X is
+the tower of Bousfield localizations
+$$
+X \rightarrow \cdots \rightarrow X _ { E ( n ) } \rightarrow X _ { E ( n - 1 ) } \rightarrow \cdots \rightarrow X _ { E ( 0 ) }
+$$
+where E(n) is the nth Johnson-Wilson spectrum (E(0) = HQ, by convention) with
+$$
+E ( n ) _ { * } = \mathbb { Z } _ { ( p ) } \left[ v _ { 1 } , \dots , v _ { n - 1 } , v _ { n } ^ { \pm } \right]
+$$
+The fibers of the chromatic tower
+$$
+M _ { n } X \rightarrow X _ { E ( n ) } \rightarrow X _ { E ( n - 1 ) }
+$$
+are called the monochromatic layers. The spectral sequence associated to the chromatic tower is the chromatic spectral sequence
+$$
+E _ { 1 } ^ { n , * } = \pi _ { * } M _ { n } X \Rightarrow \pi _ { * } X _ { ( p ) }
+$$
