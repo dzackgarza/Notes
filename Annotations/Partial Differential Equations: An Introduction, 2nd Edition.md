@@ -1,6 +1,8 @@
-# Partial Differential Equations: An Introduction, 2nd Edition (Walter A. Strauss)
+# 07/07/2017: Partial Differential Equations: An Introduction, 2nd Edition (Walter A. Strauss)
 
-/home/zack/Dropbox/Library/Walter A. Strauss/Partial Differential Equations_ An Introduction, 2nd Edition (452)/Partial Differential Equations_ An Introdu - Walter A. Strauss.pdf
+<a href='file:////home/zack/Dropbox/Library/Walter A. Strauss/Partial Differential Equations_ An Introduction, 2nd Edition (452)/Partial Differential Equations_ An Introdu - Walter A. Strauss.pdf' target='_blank'>/home/zack/Dropbox/Library/Walter A. Strauss/Partial Differential Equations_ An Introduction, 2nd Edition (452)/Partial Differential Equations_ An Introdu - Walter A. Strauss.pdf</a>
+
+Last Annotation: 07/07/2017
 
 ## Highlights
 

@@ -1,6 +1,8 @@
-# Principles of Mathematical Analysis (Walter Rudin)
+# 02/07/2019: Principles of Mathematical Analysis (Walter Rudin)
 
-/home/zack/Dropbox/Library/Walter Rudin/Principles of Mathematical Analysis (431)/Principles of Mathematical Analysis - Walter Rudin.pdf
+<a href='file:////home/zack/Dropbox/Library/Walter Rudin/Principles of Mathematical Analysis (431)/Principles of Mathematical Analysis - Walter Rudin.pdf' target='_blank'>/home/zack/Dropbox/Library/Walter Rudin/Principles of Mathematical Analysis (431)/Principles of Mathematical Analysis - Walter Rudin.pdf</a>
+
+Last Annotation: 02/07/2019
 
 ## Notes
 

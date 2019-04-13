@@ -1,6 +1,8 @@
-# Abstract Algebra (I. N. Herstein)
+# 04/11/2019: Abstract Algebra (I. N. Herstein)
 
-/home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf
+<a href='file:////home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf' target='_blank'>/home/zack/Dropbox/Library/I. N. Herstein/Abstract Algebra (405)/Abstract Algebra - I. N. Herstein.pdf</a>
+
+Last Annotation: 04/11/2019
 
 ## Highlights
 

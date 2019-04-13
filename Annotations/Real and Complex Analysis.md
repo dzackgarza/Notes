@@ -1,6 +1,8 @@
-# Real and Complex Analysis (Walter Rudin)
+# 02/01/2019: Real and Complex Analysis (Walter Rudin)
 
-/home/zack/Dropbox/Library/Walter Rudin/Real and Complex Analysis (439)/Real and Complex Analysis - Walter Rudin.pdf
+<a href='file:////home/zack/Dropbox/Library/Walter Rudin/Real and Complex Analysis (439)/Real and Complex Analysis - Walter Rudin.pdf' target='_blank'>/home/zack/Dropbox/Library/Walter Rudin/Real and Complex Analysis (439)/Real and Complex Analysis - Walter Rudin.pdf</a>
+
+Last Annotation: 02/01/2019
 
 ## Notes
 

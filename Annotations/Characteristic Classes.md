@@ -1,6 +1,8 @@
-# Characteristic Classes (John Milnor & James D. Stasheff)
+# 02/09/2019: Characteristic Classes (John Milnor & James D. Stasheff)
 
-/home/zack/Dropbox/Library/John Milnor/Characteristic Classes (654)/Characteristic Classes - John Milnor.pdf
+<a href='file:////home/zack/Dropbox/Library/John Milnor/Characteristic Classes (654)/Characteristic Classes - John Milnor.pdf' target='_blank'>/home/zack/Dropbox/Library/John Milnor/Characteristic Classes (654)/Characteristic Classes - John Milnor.pdf</a>
+
+Last Annotation: 02/09/2019
 
 ## Notes
 

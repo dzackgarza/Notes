@@ -1,6 +1,8 @@
-# Calculus on Manifolds: A Modern Approach to Classical Theorems of Advanced Calculus (Michael Spivak)
+# 12/23/2015: Calculus on Manifolds: A Modern Approach to Classical Theorems of Advanced Calculus (Michael Spivak)
 
-/home/zack/Dropbox/Library/Michael Spivak/Calculus on Manifolds_ A Modern Approach to Classical Theorems of Advanced Calculus (588)/Calculus on Manifolds_ A Modern Approach t - Michael Spivak.pdf
+<a href='file:////home/zack/Dropbox/Library/Michael Spivak/Calculus on Manifolds_ A Modern Approach to Classical Theorems of Advanced Calculus (588)/Calculus on Manifolds_ A Modern Approach t - Michael Spivak.pdf' target='_blank'>/home/zack/Dropbox/Library/Michael Spivak/Calculus on Manifolds_ A Modern Approach to Classical Theorems of Advanced Calculus (588)/Calculus on Manifolds_ A Modern Approach t - Michael Spivak.pdf</a>
+
+Last Annotation: 12/23/2015
 
 ## Highlights
 

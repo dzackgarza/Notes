@@ -1,6 +1,8 @@
-# Introduction to Homotopy Theory (Paul Selick)
+# 03/07/2019: Introduction to Homotopy Theory (Paul Selick)
 
-/home/zack/Dropbox/Library/Paul Selick/Introduction to Homotopy Theory (663)/Introduction to Homotopy Theory - Paul Selick.pdf
+<a href='file:////home/zack/Dropbox/Library/Paul Selick/Introduction to Homotopy Theory (663)/Introduction to Homotopy Theory - Paul Selick.pdf' target='_blank'>/home/zack/Dropbox/Library/Paul Selick/Introduction to Homotopy Theory (663)/Introduction to Homotopy Theory - Paul Selick.pdf</a>
+
+Last Annotation: 03/07/2019
 
 ## Notes
 
