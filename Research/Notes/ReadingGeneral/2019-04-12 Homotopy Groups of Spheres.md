@@ -1,3 +1,4 @@
+[Behrens Hopkins Hill](https://www3.nd.edu/~mbehren1/papers/exotic2.pdf)
 A homotopy n-sphere is a smooth n-manifold which is homotopy equivalent to
 $S^n$. Kervaire and Milnor defined Θn to be the group of homotopy spheres up
 to h-cobordism (where the group operation is given by connect sum). By the
