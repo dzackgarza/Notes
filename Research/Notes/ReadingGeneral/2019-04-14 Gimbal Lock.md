@@ -25,7 +25,7 @@ $$
 \begin{tikzcd}
 T^3 \arrow[rrdd, "g"]                                       &  &                              \\
                                                             &  &                              \\
-{SO(3, \mathbb{R})} \arrow[rr, "f"] \arrow[uu, "h", dashed] &  & {\mathrm{Gl}(n, \mathbb{R})}
+{SO(3, \mathbb{R})} \arrow[rr, "f"] \arrow[dd, "h", dashed] &  & {\mathrm{Gl}(n, \mathbb{R})}
 \end{tikzcd}
 $$
 
@@ -41,3 +41,5 @@ In particular, we would want $h$ to be a homeomorphism -- however, something has
 gone awry, because this is not the case. Perhaps the easiest way to see this is by considering fundamental
 groups. Topologically, we have $\SO(3, \RR) \cong \RP^3$ and in particular $\pi_1(\RP^3) \cong \ZZ/2\ZZ$. However,
 $\pi_1(T^3) \cong \ZZ^3$, and so these spaces are not homeomorphic.
+
+We might instead ask that $h$ be a covering map, so that $T^3$ covers $\SO(3, \RR)$ instead.
