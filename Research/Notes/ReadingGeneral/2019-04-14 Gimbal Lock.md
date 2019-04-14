@@ -48,4 +48,4 @@ we know that injectivity will have to fail, and it is this phenomenon which intr
 that result in gimbal lock. When writing out such a map, this singular points will be to coordinates
 at which the map will be less than full rank.
 
-To explicitly construct such a map, we'll view $SO(3, \RR)$ as $\RP^3$
+To explicitly construct such a map, we'll identify $SO(3, \RR)$ with $\RP^3$ and look for an $h': T^3 \to \RP^3$
