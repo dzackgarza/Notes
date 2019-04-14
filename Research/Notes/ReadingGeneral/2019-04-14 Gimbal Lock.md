@@ -42,4 +42,7 @@ gone awry, because this is not the case. Perhaps the easiest way to see this is 
 groups. Topologically, we have $\SO(3, \RR) \cong \RP^3$ and in particular $\pi_1(\RP^3) \cong \ZZ/2\ZZ$. However,
 $\pi_1(T^3) \cong \ZZ^3$, and so these spaces are not homeomorphic.
 
-We might instead ask that $h$ be a covering map, so that $T^3$ covers $\SO(3, \RR)$ instead.
+We might instead ask that $h$ be a covering map, so that $T^3$ covers $\SO(3, \RR)$ in some sufficiently
+nice way instead. It turns out that such a surjective map can be constructed, but from the above discussion,
+we know that injectivity will have to fail, and it is this phenomenon which introduces the singularities
+that result in gimbal lock.
