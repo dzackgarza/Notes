@@ -72,5 +72,14 @@ covering space corresponding to $\ZZ/2\ZZ$, and the remaining choice can be real
 where $p(\vector{x}) = [x_1, x_2, x_3]$ in homogeneous coordinates. Topologically, noting that
 $$p(-\vector x) = [-x_1, -x_2, -x_3] = [x_1, x_2, x_3],$$
 
-which follows from the identity $[x,y, \cdots] = [\lambda x, \lambda y, \cdots]$ in projective spaces, we find
+which follows from the identity $[x,y, \cdots] = [\lambda x, \lambda y, \cdots]$ for any scalar $\lambda$ in projective spaces, we find
 that this map is realized by taking points on the sphere and identifying them with their antipodes.
+
+Since $\pi_1(S^3) = 0$, the induced map $p_*(\pi_1(S^3)) \to \pi_1(\RP^3)$ will be the zero map, and thus
+$p_*(\pi_1(S^3)) = 0$ and we obtain the second possible covering space. This can also be
+seen from the fact that $S^3$ is simply connected, so $\pi_1(S^3) = 0$, and thus
+$S^3$ is the universal cover of $\RP^3$.
+
+Of particular importance here is the fact that the only possibilities for covers were $S^3$ or
+$\RP^3$ itself. We know that $\RP^3 \not\cong T^3$ by looking at fundamental groups; we can also find that
+$S^3 \not\cong T^3$ by looking at $\pi_3$. In particular, $\pi_1(S^3) = 0$ while $\pi_1(T^3) = \ZZ^3$.
