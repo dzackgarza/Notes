@@ -37,3 +37,7 @@ In particular, we should ask that this diagram preserves all of the structure we
 we are viewing everything in sight as a smooth topological group, we should ask that all maps be
 continuous group homomorphisms.
 
+In particular, we would want $h$ to be a homeomorphism -- however, something has already
+gone awry, because this is not the case. Perhaps the easiest way to see this is by considering fundamental
+groups. Topologically, we have $\SO(3, \RR) \cong \RP^3$ and in particular $\pi_1(\RP^3) \cong \ZZ/2\ZZ$. However,
+$\pi_1(T^3) \cong \ZZ^3$, and so these spaces are not homeomorphic.
