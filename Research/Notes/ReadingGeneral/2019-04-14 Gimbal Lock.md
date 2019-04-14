@@ -49,4 +49,7 @@ that result in gimbal lock. When writing out such a map, this singular points wi
 at which the map will be less than full rank, and fail to be a local homeomorphism in neighborhoods of
 these points.
 
-To explicitly construct such a map, we'll identify $SO(3, \RR)$ with $\RP^3$ and look for an $h': T^3 \to \RP^3$
+To explicitly construct such a map, we'll identify $SO(3, \RR)$ with $\RP^3$ and look for a map $h': T^3 \to \RP^3$.
+
+Nix that, we'll actually want to look at all possible covers of $\RP^3$.
+
