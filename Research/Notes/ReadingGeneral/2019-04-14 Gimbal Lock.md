@@ -87,3 +87,7 @@ there can not exist a covering map $T^3 \to \RP^3$, which means that any such ma
 we construct must fail the local homeomorphic mapping condition in a neighborhood of at least one point.
 
 
+So let's attempt to define such a map and see what goes wrong. Since $T^3 = S^1 \cross S^1 \cross S^1$, let a coordinate
+on the torus be given by $(\theta_1, \theta_2, \theta_3)$ where each $\theta_i \in [0, \2pi)$. Since we hope to represent
+all elements of $SO(3,\RR)$ in this way, we will aim for a surjective map.
+
