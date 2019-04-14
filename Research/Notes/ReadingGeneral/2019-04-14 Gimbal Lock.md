@@ -29,6 +29,11 @@ T^3 \arrow[rrdd, "g"]                                       &  &                
 \end{tikzcd}
 $$
 
-In particular, to ensure some level of continuity, we should ask that this commutes in the category
-of topological spaces and continuous maps. In particular, $h$ should be a continuous map.
+In other words, can we factor the complicated representation $f$ that we want through a simpler representation $g$?
+In order for this to be a fully faithful representation, this amounts to asking if we can replace $SO(3, \RR)$
+by $E$ up to isomorphism in some category.
+
+In particular, we should ask that this diagram preserves all of the structure we care about. Since
+we are viewing everything in sight as a smooth topological group, we should ask that all maps be
+continuous group homomorphisms.
 
