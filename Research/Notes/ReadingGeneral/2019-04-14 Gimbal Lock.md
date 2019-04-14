@@ -82,4 +82,8 @@ $S^3$ is the universal cover of $\RP^3$.
 
 Of particular importance here is the fact that the only possibilities for covers were $S^3$ or
 $\RP^3$ itself. We know that $\RP^3 \not\cong T^3$ by looking at fundamental groups; we can also find that
-$S^3 \not\cong T^3$ by looking at $\pi_3$. In particular, $\pi_1(S^3) = 0$ while $\pi_1(T^3) = \ZZ^3$.
+$S^3 \not\cong T^3$ by looking at $\pi_3$. In particular, $\pi_1(S^3) = 0$ while $\pi_1(T^3) = \ZZ^3$. So
+there can not exist a covering map $T^3 \to \RP^3$, which means that any such map
+we construct must fail the local homeomorphic mapping condition in a neighborhood of at least one point.
+
+
