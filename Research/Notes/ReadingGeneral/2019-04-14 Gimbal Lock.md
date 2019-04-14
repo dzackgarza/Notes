@@ -51,5 +51,14 @@ these points.
 
 To explicitly construct such a map, we'll identify $SO(3, \RR)$ with $\RP^3$ and look for a map $h': T^3 \to \RP^3$.
 
-Nix that, we'll actually want to look at all possible covers of $\RP^3$.
+Nix that, we'll actually want to look at all possible covers of $\RP^3$. One such covering space is $S^3$, where
+the covering map is given by identifying antipodal points.
 
+
+Definition [Hatcher]: For a topological space $X$, a covering space of $X$ is a space $\tilde X$ and a map $p: \tilde X \to X$ such that
+for each point $x\in X$, there exists an open neighborhood $U_x\subet X$ of $x$ such that $p^{-1}i(U_x) = \coprod \tilde{U}_x$ such that
+each $\tilde{U}_x$ is homeomorphic to $U_x$, where the homeomorphism is realized by $p$.
+
+One fact we can use here is that if $p$ is a covering map, then the induced map on fundamental groups $p_*: \tilde X \to X$ is
+an injection. Since we are taking $X = \RP^3$ here and we know $\pi_1(\RP^3) = \ZZ/2\ZZ$, we can narrow our search a bit
+by asking what groups $G$ can fit into an injective group homomorphism $G \to \ZZ/2\ZZ$.
