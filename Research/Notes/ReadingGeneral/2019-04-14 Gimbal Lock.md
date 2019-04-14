@@ -45,4 +45,7 @@ $\pi_1(T^3) \cong \ZZ^3$, and so these spaces are not homeomorphic.
 We might instead ask that $h$ be a covering map, so that $T^3$ covers $\SO(3, \RR)$ in some sufficiently
 nice way instead. It turns out that such a surjective map can be constructed, but from the above discussion,
 we know that injectivity will have to fail, and it is this phenomenon which introduces the singularities
-that result in gimbal lock.
+that result in gimbal lock. When writing out such a map, this singular points will be to coordinates
+at which the map will be less than full rank.
+
+To explicitly construct such a map, we'll view $SO(3, \RR)$ as $\RP^3$
