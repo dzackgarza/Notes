@@ -69,4 +69,8 @@ We can in fact instead appeal to the classification of covering spaces, which sa
 correspondence between covering spaces of $X$ and subgroups of $\pi_1(X)$. Since $\ZZ/2\ZZ$ has exactly two subgroups,
 $0$ and $\ZZ/2\ZZ$, this leaves us with exactly two choices. The identity map $\RP^2 \to \RP^2$ yields the
 covering space corresponding to $\ZZ/2\ZZ$, and the remaining choice can be realized by taking $S^3 \mapsvia{p} \RP^2$
-where $p(\vector{x,y,z}) = [x, y, z]$ in homogeneous coordinates.
+where $p(\vector{x}) = [x_1, x_2, x_3]$ in homogeneous coordinates. Topologically, noting that
+$$p(-\vector x) = [-x_1, -x_2, -x_3] = [x_1, x_2, x_3],$$
+
+which follows from the identity $[x,y, \cdots] = [\lambda x, \lambda y, \cdots]$ in projective spaces, we find
+that this map is realized by taking points on the sphere and identifying them with their antipodes.
