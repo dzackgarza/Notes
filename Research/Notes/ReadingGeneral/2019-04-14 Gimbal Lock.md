@@ -62,4 +62,5 @@ each $\tilde{U}_x$ is homeomorphic to $U_x$, where the homeomorphism is realized
 One fact we can use here is that if $p$ is a covering map, then the induced map on fundamental groups $p_*: \tilde X \to X$ is
 an injection. Since we are taking $X = \RP^3$ here and we know $\pi_1(\RP^3) = \ZZ/2\ZZ$, we can narrow our search a bit
 by asking what groups $G$ can fit into an injective group homomorphism $G \to \ZZ/2\ZZ$. This narrows our choices
-for $\tilde X$ considerably, since this forces $\pi_1(\tilde X) = \ZZ/2\ZZ\text or }0$.
+for $\tilde X$ considerably, since this forces $\pi_1(\tilde X) = \ZZ/2\ZZ\text{ or }0$. This immediately excludes
+$T^3$ from being a possibility, since $\pi_1(T^3) = \ZZ^3$ and an infinite group can't be injected into a finite group.
