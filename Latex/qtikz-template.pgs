@@ -1,5 +1,5 @@
 \input{preamble.tex}
-\usepackage[active,pdftex,tightpage, ifthen]{preview}
+\usepackage[active,pdftex,tightpage, ifthen, cac]{preview}
 \PreviewEnvironment[]{tikzpicture}
 \PreviewEnvironment[]{pgfpicture}
 \PreviewEnvironment[]{asy}
