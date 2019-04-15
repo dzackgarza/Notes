@@ -13,7 +13,9 @@ where $2\pi \phi \sim \phi, 2\pi\psi \sim \psi, \pi\psi\sim\psi$.
 We can then cook up a representation $g: E \to \GL(n, \RR)$ by writing down appropriate rotation matrices in
 the parameters $\phi, \theta, \psi$.
 
-#TODO insert equations for matrix representation
+$$
+R = \left[ \begin{array} { c c c } { 1 } & { 0 } & { 0 } \\ { 0 } & { \cos \alpha } & { - \sin \alpha } \\ { 0 } & { \sin \alpha } & { \cos \alpha } \end{array} \right] \left[ \begin{array} { c c c } { \cos \beta } & { 0 } & { \sin \beta } \\ { 0 } & { 1 } & { 0 } \\ { - \sin \beta } & { 0 } & { \cos \beta } \end{array} \right] \left[ \begin{array} { c c c } { \cos \gamma } & { - \sin \gamma } & { 0 } \\ { \sin \gamma } & { \cos \gamma } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} \right]
+$$
 
 Note that each angle lives in a real interval with the endpoints identified, which is topologically a circle.
 So, up to homeomorphism, we have $E \cong S^1 \cross S^1 \cross S^1 = (S^1)^3 = T^3$, a real 3-torus. The question then becomes
@@ -88,6 +90,9 @@ we construct must fail the local homeomorphic mapping condition in a neighborhoo
 
 
 So let's attempt to define such a map and see what goes wrong. Since $T^3 = S^1 \cross S^1 \cross S^1$, let a coordinate
-on the torus be given by $(\theta_1, \theta_2, \theta_3)$ where each $\theta_i \in [0, \2pi)$. Since we hope to represent
-all elements of $SO(3,\RR)$ in this way, we will aim for a surjective map.
+on the torus be given by $(\theta_1, \theta_2, \theta_3)$ where each $\theta_i \in [0, \2pi)$. Inspired by how nicely
+the previous map $S^3 \to \RP^3$ worked, let us first define
+$$p: \T^3 \to \RP^3 \\ (\theta_1, \theta_2, \theta_3) \mapsto [\theta_1, \theta_2, \theta_3]$$
+Since we hope to represent all elements of $SO(3,\RR)$ in this way, we want a surjective map.
+
 
