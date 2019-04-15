@@ -14,7 +14,7 @@ We can then cook up a representation $g: E \to \GL(n, \RR)$ by writing down appr
 the parameters $\phi, \theta, \psi$.
 
 $$
-R = \left[ \begin{array} { c c c } { 1 } & { 0 } & { 0 } \\ { 0 } & { \cos \alpha } & { - \sin \alpha } \\ { 0 } & { \sin \alpha } & { \cos \alpha } \end{array} \right] \left[ \begin{array} { c c c } { \cos \beta } & { 0 } & { \sin \beta } \\ { 0 } & { 1 } & { 0 } \\ { - \sin \beta } & { 0 } & { \cos \beta } \end{array} \right] \left[ \begin{array} { c c c } { \cos \gamma } & { - \sin \gamma } & { 0 } \\ { \sin \gamma } & { \cos \gamma } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} \right]
+R = \left[ \begin{array} { c c c } { 1 } & { 0 } & { 0 } \\ { 0 } & { \cos \alpha } & { - \sin \alpha } \\ { 0 } & { \sin \alpha } & { \cos \alpha } \end{array} \right] \left[ \begin{array} { c c c } { \cos \beta } & { 0 } & { \sin \beta } \\ { 0 } & { 1 } & { 0 } \\ { - \sin \beta } & { 0 } & { \cos \beta } \end{array} \right] \left[ \begin{array} { c c c } { \cos \gamma } & { - \sin \gamma } & { 0 } \\ { \sin \gamma } & { \cos \gamma } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} \right] = = \left[ \begin{array} { c c c } { 0 } & { 0 } & { 1 } \\ { \sin ( \alpha + \gamma ) } & { \cos ( \alpha + \gamma ) } & { 0 } \\ { - \cos ( \alpha + \gamma ) } & { \sin ( \alpha + \gamma ) } & { 0 } \end{array} \right]
 $$
 
 Note that each angle lives in a real interval with the endpoints identified, which is topologically a circle.
