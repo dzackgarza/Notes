@@ -1,0 +1,42 @@
+\input{/home/zack/Notes/Latex/preamble.tex}
+
+\title{
+	\textbf{Insert Title}\\ 
+	{\normalsize (subtitle)}
+}
+\author{D. Zack Garza}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Main}
+
+\begin{theorem}
+All $a$'s are $b$'s. 
+\end{theorem}
+
+\begin{definition}
+Abcdde\cite{	hatcherAlgebraicTopologya}
+\todo{Rewrite this answer $\ldots$ cd}
+\end{definition}
+
+\begin{tikzpicture}
+\def\n{20}
+\foreach \i in {1,...,\n} {
+	\foreach \j in {1,...,\n} {
+		\draw[fill=\ifthenelse{\i=1}{red}{red}] (\i-1,\j-1)--(\i,\j-1)--(\i,\j)--(\i-1,\j)--(\i-1,\j-1);
+	}
+}
+\end{tikzpicture}
+
+\newpage
+\section{Todo}
+\listoftodos 
+
+\bibliography{/home/zack/Notes/library.bib} 
+
+
+\end{document}
