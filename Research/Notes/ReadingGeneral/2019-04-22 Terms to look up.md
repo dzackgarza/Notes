@@ -1,1 +1,2 @@
-* $p\dash$completions
+- $p\dash$completions
+
