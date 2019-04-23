@@ -28,56 +28,56 @@ Show up to your advisory meetings with a clear agenda, starting with things that
 
 Other people’s successes are not your failures. Try as much as possible not to compete with your peers. Don’t undermine them, don’t put them down, don’t be upset when they succeed. Foster a support network, based on care and trust. Help them and they will help you. Share materials with each other, read each other’s papers, study together. They will be your colleagues, now and forever. Success in academia hinges upon long-term collaborative interactions.
 
-If you have debilitating stage fright or presentation anxiety, I would recommend talking to your doctor about whether you’re a good candidate for beta blockers, such as propranolola
+If you have debilitating stage fright or presentation anxiety, I would recommend talking to your doctor about whether you’re a good candidate for beta blockers, such as propranolol.
 
-Every lecture should make only one main point.
+- Every lecture should make only one main point.
 
-The German philosopher G. W. F. Hegel wrote
-that any philosopher who uses the word “and”
-too often cannot be a good philosopher. I think
-he was right, at least insofar as lecturing goes.
+  The German philosopher G. W. F. Hegel wrote
+  that any philosopher who uses the word “and”
+  too often cannot be a good philosopher. I think
+  he was right, at least insofar as lecturing goes.
 
-Every lecture should state one main point and repeat it over and over, like a theme with variations
-
-
-As I looked through his Collected Papers, however, 
-another picture emerged. The editors had
-gone out of their way to publish every little scrap
-Riesz had ever published. It was clear that Riesz’s
-publications were few. What is more surprising
-is that the papers had been published several
-times. Riesz would publish the first rough version 
-of an idea in some obscure Hungarian journal. 
-A few years later he would send a series of
-notes to the French Academy’s Comptes Rendus
-in which the same material was further elaborated. 
-A few more years would pass, and he
-would publish the definitive paper, either in
-French or in English.
-
-Adam Koranyi, who took courses with Frederick Riesz, 
-told me that Riesz would lecture on
-the same subject year after year while meditating 
-on the definitive version to be written. No
-wonder the final version was perfect.
+- Every lecture should state one main point and repeat it over and over, like a theme with variations
 
 
-Every Mathematician Has Only a Few Tricks
+  As I looked through his Collected Papers, however,
+  another picture emerged. The editors had
+  gone out of their way to publish every little scrap
+  Riesz had ever published. It was clear that Riesz’s
+  publications were few. What is more surprising
+  is that the papers had been published several
+  times. Riesz would publish the first rough version
+  of an idea in some obscure Hungarian journal.
+  A few years later he would send a series of
+  notes to the French Academy’s Comptes Rendus
+  in which the same material was further elaborated.
+  A few more years would pass, and he
+  would publish the definitive paper, either in
+  French or in English.
 
-Use the Feynman Method
+  Adam Koranyi, who took courses with Frederick Riesz,
+  told me that Riesz would lecture on
+  the same subject year after year while meditating
+  on the definitive version to be written. No
+  wonder the final version was perfect.
 
-Richard Feynman was fond of giving the following advice on how to be a genius. You have
-to keep a dozen of your favorite problems con-
-stantly present in your mind, although by and
-large they will lay in a dormant state. Every time
-you hear or read a new trick or a new result, test
-it against each of your twelve problems to see
-whether it helps. Every once in a while there will
-be a hit,
 
-Give Lavish Acknowledgments
+- Every Mathematician Has Only a Few Tricks
 
-Write Informative Introductions
+- Use the Feynman Method
+
+  Richard Feynman was fond of giving the following advice on how to be a genius. You have
+  to keep a dozen of your favorite problems constantly
+  present in your mind, although by and
+  large they will lay in a dormant state. Every time
+  you hear or read a new trick or a new result, test
+  it against each of your twelve problems to see
+  whether it helps. Every once in a while there will
+  be a hit,
+
+- Give Lavish Acknowledgments
+
+- Write Informative Introductions
 
 Nowadays reading a mathematics paper from top
 to bottom is a rare event. If we wish our paper
