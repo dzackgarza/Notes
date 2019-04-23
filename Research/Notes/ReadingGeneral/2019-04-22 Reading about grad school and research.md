@@ -2,7 +2,7 @@ The most prestigious journals may be Annals of Math., Invent. Math., and the Jou
 
 Participate in research groups: If you are a new graduate student in your department, I recommend that you contact your department chair, coordinator, advisor, and graduate studies chair to ask them about any available research groups to join so you can participate in the group’s research publications and seminar’s talks.
 
-At the end of the talk, you should try to answer the questions: What question(s) is the speaker trying to answer? Why should we care about them? What flavor of results has the speaker proved? Do I have a small example of the phenonenon under discussion? You can even scribble down these questions at the start of the talk, and jot down answers to them during the talk.
+At the end of the talk, you should try to answer the questions: What question(s) is the speaker trying to answer? Why should we care about them? What flavor of results has the speaker proved? Do I have a small example of the phenomenon under discussion? You can even scribble down these questions at the start of the talk, and jot down answers to them during the talk.
 
 Try to extract three words from the talk (no matter how tangentially related to the subject at hand) that you want to know the definition of.
 
@@ -20,10 +20,11 @@ What if you are interested in liberal arts jobs? If you think it is a possibilit
 
 1. Co-author a paper with someone who has more experience. Approach a professor who is working on an interesting project and offer your services in return for a junior authorship. He’ll appreciate the help and will give you lots of good comments on the paper because his name will be on it.
 
-Advisory Relationship:
+# Advisory Relationship
 
 You should have a discussion with your advisor very early on about your career goals. By this, I mean, you should talk openly about whether or not you are planning to pursue a tenure-track research position, a teaching position at a SLAC (small, liberal arts college), an “alt-ac” career in industry, or any other goal.
-how up to your advisory meetings with a clear agenda, starting with things that are most time-sensitive. Your advisors are busy and may not have the time to be as involved as they want to be in your life. Make it easy for them. Same with emails that you are sending out. If it’s longer than two paragraphs: stop and delete the whole thing. Set up a meeting instead.
+
+Show up to your advisory meetings with a clear agenda, starting with things that are most time-sensitive. Your advisors are busy and may not have the time to be as involved as they want to be in your life. Make it easy for them. Same with emails that you are sending out. If it’s longer than two paragraphs: stop and delete the whole thing. Set up a meeting instead.
 
 Other people’s successes are not your failures. Try as much as possible not to compete with your peers. Don’t undermine them, don’t put them down, don’t be upset when they succeed. Foster a support network, based on care and trust. Help them and they will help you. Share materials with each other, read each other’s papers, study together. They will be your colleagues, now and forever. Success in academia hinges upon long-term collaborative interactions.
 
