@@ -1,5 +1,6 @@
 \input{preamble.tex}
 \usepackage[active,pdftex,tightpage, ifthen, calc]{preview}
+\usepackage{freetikz}
 \PreviewEnvironment[]{tikzpicture}
 \PreviewEnvironment[]{pgfpicture}
 \PreviewEnvironment[]{asy}
