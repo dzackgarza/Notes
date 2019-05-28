@@ -13,7 +13,7 @@ unlabeled	unlabeled	pk(n)	{10n≤kn>k	pk(n)−pk−1(n)
 | 1 | 1 | $k^n$  | $P(n+1-k)$  | $k! S(n,k)$ |
 | 0 | 1 |  ${k+n-1}\choose{n}$ | $k\choose n$ | ${n-1}\choose{n-k}$ |
 | 1 | 0 | $\sum_k S(n, k)$  | $\indicator{1 \leq k}$  | $S(n, k)$ |
-| 1 | 0 | $p_k(n)$ | $\indicator{1 \leq   |   |
+| 1 | 0 | $p_k(n)$ | $\indicator{n \leq k}$  |   |
 
 # Combinatorics
 
