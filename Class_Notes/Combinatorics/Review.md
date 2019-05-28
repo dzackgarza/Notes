@@ -13,7 +13,9 @@ $$
 | Yes | No | $\sum_k S(n, k)$  | $\indicator{1 \leq k}$  | $S(n, k)$ |
 | No | No | $p_k(n)$ | $\indicator{n \leq k}$  | $p_k(n) - p_{k-1}(n)$ |
 
-1. Choose an
+1. A word of length $n$ from an alphabet of size $[k]$, with repetition allowed.
+2. A word of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
+3. A word of length $n$ from an alphabet of size $[k]$, where every letter is used at least once.
 
 # Combinatorics
 
