@@ -11,7 +11,7 @@ unlabeled	unlabeled	pk(n)	{10n≤kn>k	pk(n)−pk−1(n)
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
 |---|---|---|---|---|
 | 1 | 1 | $k^n$  | $P(n+1-k)$  | $k! S(n,k)$ |
-| 0 | 1 |  ${k+n-1}\choose{n}$ | $k\choose n$ | $$ |
+| 0 | 1 |  ${k+n-1}\choose{n}$ | $k\choose n$ | ${n-1}\choose{n-k}$ |
 | 1 | 0 |   |   |   |
 | 1 | 0 |   |   |   |
 
