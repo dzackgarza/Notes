@@ -9,9 +9,9 @@ labeled	unlabeled	S(n,1)+S(n,2)+⋯+S(n,k)	{10n≤kn>k	S(n,k)
 unlabeled	unlabeled	pk(n)	{10n≤kn>k	pk(n)−pk−1(n) 
 
 | $x\in [n]$   | $y\in [k]$  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
-|---|---|---|---|
-|   |   |
-
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
 
 # Combinatorics
 
