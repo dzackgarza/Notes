@@ -3,7 +3,7 @@
 - $\abs{\theset{\text{Permutations}}}  = n!$
 
 Let 
-$$P_n(k) = (n)_n =
+$$P_n(k) = (a)_b =x
 $$ 
 
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
