@@ -3,7 +3,7 @@
 - $\abs{\theset{\text{Permutations}}}  = n!$
 
 Let 
-$$P_n(x) = (x)_b = x(x-1)\cdots 
+$$P_n(x) = (x)_b = x(x-1)\cdots (x-n+1) = \prod_{i=0}^{n-1}(x - i) 
 $$ 
 
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
