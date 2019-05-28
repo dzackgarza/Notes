@@ -1,6 +1,6 @@
 # Formulae
 
-- $\size\theset{\text{Permutations}} n!$ 
+- $\abs{\theset{\text{Permutations}} n!$ 
 
 # Combinatorics
 
