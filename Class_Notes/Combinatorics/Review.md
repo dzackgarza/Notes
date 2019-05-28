@@ -10,8 +10,10 @@ unlabeled	unlabeled	pk(n)	{10n≤kn>k	pk(n)−pk−1(n)
 
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
 |---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
+| 1  |   |   |   |   |
+| 1 |   |   |   |   |
+| 1 |   |   |   |   |
+| 1 |   |   |   |   |
 
 # Combinatorics
 
