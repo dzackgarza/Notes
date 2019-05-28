@@ -2,7 +2,7 @@
 
 - $\abs{\theset{\text{Permutations}}}  = n!$
 
-Let 
+Let $P_n(k) = (n_ 
 
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
 |---|---|---|---|---|
