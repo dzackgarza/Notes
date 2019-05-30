@@ -9,5 +9,6 @@
 - Induction, Weak
 - Induction, Stong
 - Choose
+- Binomial Theorem
 
 # Dictionary of Interpretations
