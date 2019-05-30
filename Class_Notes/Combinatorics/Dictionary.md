@@ -29,6 +29,7 @@
 
 $$
 \begin{align*}
-n^{\underline k} = n(n-1)\cdots(n-k+1) &\hfill \text{Strings}
+n^{\underline k} = n(n-1)\cdots(n-k+1) &\qquad \text{Strings of length $k$ over an alphabet of size $n$} \\
+
 \end{align*}
 $$
