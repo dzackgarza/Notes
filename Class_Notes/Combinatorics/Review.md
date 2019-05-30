@@ -24,7 +24,7 @@ which is the number of ways to select $k$ items from a set of $n$ items without 
 $$
 {\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose k} = {{n+k-1}\choose n-1} = \frac{n^{\overline k}}{k!}
 $$
-which is the number of ways to select $k$ items from a set of $n$ items, with replacement.
+which is the number of ways to select $k$ items from a set of $n$ items, with replacement. This yields a $k\dash$element multiset of elements from $[n]$.
 
 - Compositions
 $$\begin{align*}
