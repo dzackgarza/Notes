@@ -18,7 +18,7 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 | Yes | No | $\sum_k S(n, k)$  | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$  | $\begin{cases}S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
 | No | No | $p_k(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) - p_{k-1}(n) & k \leq n \\ 0 & k > n \end{cases}$  |
 
-Interpretations in terms of strings:
+Some Interpretations:
 1. Words of length $n$ from an alphabet of size $[k]$, with repetition allowed.
 2. Words of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
 3. Words of length $n$ from an alphabet of size $[k]$, where every letter is used at least once.
