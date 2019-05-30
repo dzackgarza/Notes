@@ -59,6 +59,8 @@ Some Interpretations:
 1. Unrestricted, unlabeled $[n]$, labeled $[k]$
    1. Number of ways to choose with replacement $k$ symbols to appear in a word of length $n$. Alternatively, all words of length $n$ with letters choisen from $[k]$ with replacement, where we identify together all words that are anagrams of each other.
    2. Lay $n$ indstinguishable balls out in a line, then place $k-1$ dividers to form $k$ compartments. Put all balls falling in the first compartment into bin 1, all in the second compartment to bin 2, etc.
+      1. Use stars and bars
+2. Injec
 
 ---
 
