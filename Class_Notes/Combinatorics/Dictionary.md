@@ -14,6 +14,7 @@
 - Binomial Theorem
 - Multinomial Theorem
 - Multinomial
+- Multiset
 - Partitions, Set
 - Partition, Integer
 - Compositions, Integer
