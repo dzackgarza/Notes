@@ -11,14 +11,14 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 - Stirling Numbers of the First Kind
 - Multiset Coefficient
 $$
-
+{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n}
 $$
 
 # The 12-fold Way
 | $[n]$ labeled?   | $[k]$  labeled?  | $[n] \to [k]$ | $[n] \injects [k]$ | $[n] \surjects [k]$
 |---|---|---|---|---|
 | Yes | Yes | $k^n$  | $\begin{cases}n^{\underline k} & n \leq k \\ 0 & n > k \end{cases}$  |  $\begin{cases}k!~S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
-| No | Yes |  ${n+k-1}\choose{n}$ | $\begin{cases}{k\choose n} & n \leq k\\ 0 & n > k\end{cases}$ | $\begin{cases}{n-1}\choose{n-k} & k \leq n \\ 0 & k > n \end{cases}$ |
+| No | Yes |  ${\left(\!\!{n\choose k}\!\!\right)}$ | $\begin{cases}{k\choose n} & n \leq k\\ 0 & n > k\end{cases}$ | $\begin{cases}{n-1}\choose{n-k} & k \leq n \\ 0 & k > n \end{cases}$ |
 | Yes | No | $\sum_k S(n, k)$  | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$  | $\begin{cases}S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
 | No | No | $p_k(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) - p_{k-1}(n) & k \leq n \\ 0 & k > n \end{cases}$  |
 
