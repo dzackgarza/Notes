@@ -31,7 +31,7 @@ $$
 \begin{align*}
 n! &\qquad \text{Strings of length $n$ over an alphabet of size $n$, or}\\
 &\qquad \text{Ways to arrange $n$ distinct objects in a line, or}\\
-&\qquad \text{}\\
+&\qquad \text{Ways to place $n$ labeled balls into $n$ labeled bins}\\
 n^{\underline k} = n(n-1)\cdots(n-k+1) &\qquad \text{Strings of length $k$ over an alphabet of size $n$} \\
 \end{align*}
 $$
