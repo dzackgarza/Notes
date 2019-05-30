@@ -1,30 +1,30 @@
 # Definitions
 
-- Permutation
+- Binomial Coefficients
+- Binomial Theorem
+- Choose
 - Combination
-- Stirling Number of the First Kind
-- Stirling Number of the Second Kind
-- Cycles (in Permutations)
+- Compositions, Integer
 - Cycle Notation, One Line
 - Cycle Notation, Two Line
-- Pigeon-Hole Principle
-- Induction, Weak
-- Induction, Stong
-- Choose
-- Binomial Theorem
-- Binomial Coefficients
-- Multinomial Theorem
-- Multinomial Coefficients
-- Multinomial
-- Multiset
-- Multiset Permutations
-- Multiset Coefficients
-- Partitions, Set
-- Partition, Integer
-- Compositions, Integer
-- Symmetric Group
-- Inclusion-Exclusion
+- Cycles (in Permutations)
 - Generating Functions, Ordinary
+- Inclusion-Exclusion
+- Induction, Stong
+- Induction, Weak
+- Multinomial
+- Multinomial Coefficients
+- Multinomial Theorem
+- Multiset
+- Multiset Coefficients
+- Multiset Permutations
+- Partition, Integer
+- Partitions, Set
+- Permutation
+- Pigeon-Hole Principle
+- Stirling Number of the First Kind
+- Stirling Number of the Second Kind
+- Symmetric Group
 
 # Dictionary of Interpretations
 
