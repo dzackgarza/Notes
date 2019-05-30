@@ -29,11 +29,11 @@
 - Permutation
 - Pigeon-Hole Principle
 - Stirling Number of the First Kind
-  - $s(n, k) = \#\theset{\text{Permutations in $S^n$ having exactly $k$ cycles}}$
+  $$s(n, k) = \#\theset{\text{Elements in $S^n$ having exactly $k$ cycles}}$$
   - No easy closed formula.
   - Satisfies $$s(n, k) = s(n-1, k-1) + (n-1)s(n-1, k)$$
 - Stirling Number of the Second Kind
-  - $S(n, k) = \#\theset{\text{Set partitions of $[n]$ into $k$ parts}}$ 
+  $$S(n, k) = \#\theset{\text{Set partitions of $[n]$ into $k$ parts}}$$
     - No easy closed formula.
     - Such a partition is a collection of subsets $S_1, \cdots , S_k$ such that $S_i \intersect S_j = \emptyset$ and $\coprod_i S_i = [n]$
 - Symmetric Group
