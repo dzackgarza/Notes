@@ -3,7 +3,7 @@
 - Binomial Coefficients
 - Binomial Theorem
 - Catalan Numbers
-  - $C(n, k)
+  - $C(n) = 
 - Choose
 - Combination
 - Compositions, Integer
