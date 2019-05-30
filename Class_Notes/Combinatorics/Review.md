@@ -20,7 +20,7 @@ $$
 | Yes | Yes | $k^n$  | $\begin{cases}n^{\underline k} & n \leq k \\ 0 & n > k \end{cases}$  |  $\begin{cases}k!~S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
 | No | Yes |  ${\left(\!\!{n\choose k}\!\!\right)}$ | $\begin{cases}{k\choose n} & n \leq k\\ 0 & n > k\end{cases}$ | $\begin{cases}{n-1}\choose{n-k} & k \leq n \\ 0 & k > n \end{cases}$ |
 | Yes | No | $\sum_{i=1}^k S(n, i)$  | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$  | $\begin{cases}S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
-| No | No | $\sum_{i=1}^n p_i(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) - p_{k-1}(n) & k \leq n \\ 0 & k > n \end{cases}$  |
+| No | No | $\sum_{i=1}^k p_i(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) - p_{k-1}(n) & k \leq n \\ 0 & k > n \end{cases}$  |
 
 Some Interpretations:
 1. Words of length $n$ from an alphabet of size $[k]$, with repetition allowed.
