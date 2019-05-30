@@ -56,7 +56,7 @@ Some Interpretations:
 ---
 
 1. Unrestricted, unlabeled $[n]$, labeled $[k]$
-   1. Words of length $n$ from an alphabet of size $k$, with 
+   1. Distinct words of length $n$ formed from the $k$ letters of some given word, where letters may repeat. Example: MISSISSIPPI
 
 ---
 
