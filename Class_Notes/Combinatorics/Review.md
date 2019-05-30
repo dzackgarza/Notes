@@ -13,14 +13,17 @@ $$
 be the *rising factorial*, which is a product with exactly $n$ terms.
 - Multiset Permutations
 - Stirling Numbers of the First Kind
+
 - Multiset Coefficient
 $$
-{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1} = \frac{n^{\overline k}}{k!}
+{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose k} = {{n+k-1}\choose n-1} = \frac{n^{\overline k}}{k!}
 $$
+
 - Compositions
-$$ \#\theset{\text{compositions of $n$ into $k$ parts}} = {n-1 \choose n-k} \\
-\#\theset{\text{weak compositions of $n$ into $k$ parts}} = \multinomial{n+1 \choose k-1} = {n+k-1 \choose k}
-$$
+$$\begin{align*}
+\#\theset{\text{compositions of $n$ into $k$ parts}} &= {n-1 \choose n-k} \\ \\
+\#\theset{\text{weak compositions of $n$ into $k$ parts}} &= \multinomial{n+1 \choose k-1} \\ &= {n+k-1 \choose k}
+\end{align*}$$
 
 # The 12-fold Way
 | $[n]$ labeled?   | $[k]$  labeled?  | $[n] \to [k]$ | $[n] \injects [k]$ | $[n] \surjects [k]$
