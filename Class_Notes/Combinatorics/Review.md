@@ -23,7 +23,9 @@ $$
 | No | No | $\sum_{i=1}^k p_i(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) & k \leq n \\ 0 & k > n \end{cases}$  |
 
 Some Interpretations:
-1. Words of length $n$ from an alphabet of size $[k]$, with repetition allowed.
+1. Unrestricted labeled balls into labeled bins
+   1. Words of length $n$ from an alphabet of size $[k]$, with repetition allowed.
+   2. For 
 2. Words of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
 3. Words of length $n$ from an alphabet of size $[k]$, where every letter is used at least once.
 4. 
