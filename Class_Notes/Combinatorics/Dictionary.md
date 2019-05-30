@@ -23,6 +23,7 @@
 - Permutation
 - Pigeon-Hole Principle
 - Stirling Number of the First Kind
+  - Permutations in $S^n$
 - Stirling Number of the Second Kind
 - Symmetric Group
 
