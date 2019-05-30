@@ -13,7 +13,7 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 # The 12-fold Way
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $[n] \injects [k]$ | $[n] \surjects [k]$
 |---|---|---|---|---|
-| Yes | Yes | $k^n$  | $(n+1-k)^{\underline n}$  | $k!~S(n,k)$ |
+| Yes | Yes | $k^n$  | $n^{\underline k}$  | $k!~S(n,k)$ |
 | No | Yes |  ${k+n-1}\choose{n}$ | $k\choose n$ | ${n-1}\choose{n-k}$ |
 | Yes | No | $\sum_k S(n, k)$  | $\indicator{1 \leq k}$  | $S(n, k)$ |
 | No | No | $p_k(n)$ | $\indicator{n \leq k}$  | $p_k(n) - p_{k-1}(n)$ |
