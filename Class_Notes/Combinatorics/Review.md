@@ -35,17 +35,17 @@ $$\begin{align*}
 
 Some Interpretations:
 
-1. Unrestricted, labeled, labeled
+1. Unrestricted, labeled $[n]$, labeled $[k]$
    1. Words of length $n$ from an alphabet of size $[k]$, with repetition allowed.
    2. For each of $n$ balls, choose **with replacement** one of $k$ bins as its target.
-2. Injective, labeled, labeled
+2. Injective, labeled $[n]$, labeled $[k]$
    1. Words of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
    2. For each of $n$ balls, choose **without replacement** one of $k$ bins as its target
-3. Surjective, labeled, labeled
+3. Surjective, labeled $[n]$, labeled $[k]$
    1. Words of length $n$ from an alphabet of size $[k]$, where every letter appears at least once.
       1. Partition $n$ slots into $k$ groups, then assign letter $a$ to one of the $k$ group, letter $b$ to one of the remaining $k-1$ groups, etc
    2. Distribute $n$ balls into $k$ bins where each bin has at least one ball.
-4. Unrestricted, unlabeled, labeled
+4. Unrestricted, unlabeled $[n]$, labeled $[k]$
    1. Words of length $n$ from an alphabet of size $k$, where anagrams are identified with each other.
 
 
