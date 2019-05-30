@@ -2,6 +2,8 @@
 
 - Binomial Coefficients
 - Binomial Theorem
+- Catalan Numbers
+  - $C(n, k)
 - Choose
 - Combination
 - Compositions, Integer
