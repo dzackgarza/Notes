@@ -6,7 +6,9 @@
   - $C(n) = \frac 1 {n+1} {{2n}\choose{n}}$
 - Choose
 - Combination
-- Compositions, Integer
+- Composition, Weak
+  - 
+- Composition
 - Cycle Notation, One Line
 - Cycle Notation, Two Line
 - Cycles (in Permutations)
