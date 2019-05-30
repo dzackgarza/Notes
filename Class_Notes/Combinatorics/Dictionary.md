@@ -29,7 +29,7 @@
 - Permutation
 - Pigeon-Hole Principle
 - Stirling Number of the First Kind
-  $$s(n, k) = \#\theset{\text{Elements in $S^n$ having exactly $k$ cycles}}$$
+  $$s(n, k) = \#\theset{\text{$\sigma \in S^n \suchthat \sigma$ has exactly $k$ cycles}}$$
   - No easy closed formula.
   - Satisfies $$s(n, k) = s(n-1, k-1) + (n-1)s(n-1, k)$$
 - Stirling Number of the Second Kind
