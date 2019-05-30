@@ -26,3 +26,9 @@
 - Generating Functions, Ordinary
 
 # Dictionary of Interpretations
+
+$$
+\begin{align*}
+x^{\underline n}
+\end{align*}
+$$
