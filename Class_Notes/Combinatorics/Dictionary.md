@@ -3,7 +3,7 @@
 - Permutation
 - Combination
 - Stirling Number of the First Kind
-- Stirling Number of the Secon Kind
+- Stirling Number of the Second Kind
 - Cycles (in Permutations)
 - Cycle Notation, One Line
 - Cycle Notation, Two Line
