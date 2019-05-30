@@ -56,7 +56,7 @@ Some Interpretations:
 ---
 
 1. Unrestricted, unlabeled $[n]$, labeled $[k]$
-   1. 
+   1. Number of ways to choose with replacement $k$ symbols to appear in a word of length $n$. Alternatively, number of words
 
 ---
 
