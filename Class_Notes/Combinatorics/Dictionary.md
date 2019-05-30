@@ -17,5 +17,6 @@
 - Compositions, Integer
 - Symmetric Group
 - Inclusion-Exclusion
+- Generating Functions, Ordinary
 
 # Dictionary of Interpretations
