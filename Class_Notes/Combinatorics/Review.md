@@ -23,11 +23,16 @@ $$
 | No | No | $\sum_{i=1}^k p_i(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) & k \leq n \\ 0 & k > n \end{cases}$  |
 
 Some Interpretations:
+
 1. Unrestricted labeled balls into labeled bins
    1. Words of length $n$ from an alphabet of size $[k]$, with repetition allowed.
-   2. For each of $n$ balls, choose any one of $k$ bins as its target
-2. Words of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
-3. Words of length $n$ from an alphabet of size $[k]$, where every letter is used at least once.
+   2. For each of $n$ balls, choose **with replacement** one of $k$ bins as its target.
+2. Injective labeled balls into labeled bins
+   1. Words of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
+   2. For each of $n$ balls, choose **without replacement** one of $k$ bins as its target
+3. Surjective labeled balls into labeled bins
+   1. Words of length $n$ from an alphabet of size $[k]$, where every letter appears at least once.
+   2. 
 4. 
 
 - Injective:
