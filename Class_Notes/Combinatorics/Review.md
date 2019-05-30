@@ -11,7 +11,7 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 - Stirling Numbers of the First Kind
 - Multiset Coefficient
 $$
-{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1}
+{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1} = \frac{1}{k!} n^{\underline k}
 $$
 - Compositions
 $$ \#\theset{\text{compositions of $n$ into $k$ parts}} = {n-1 \choose n-k}$$
