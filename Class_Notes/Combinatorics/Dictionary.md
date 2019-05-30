@@ -29,6 +29,6 @@
 
 $$
 \begin{align*}
-x^{\underline n}
+n^{\underline k} = n(n-1)\cdots(n-k+1) &\hfill \text{Strings}
 \end{align*}
 $$
