@@ -8,7 +8,7 @@ $$
 be the *falling factorial*, which is a product with exactly $n$ terms.
 
 - Multiset Permutations
-- 
+- Stirling Numbers of the First Kind
 
 # THe 12-fold Way
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
