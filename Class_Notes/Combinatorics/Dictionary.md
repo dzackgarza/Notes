@@ -16,5 +16,6 @@
 - Partition, Integer
 - Compositions, Integer
 - Symmetric Group
+- Inclusion-Exclusion
 
 # Dictionary of Interpretations
