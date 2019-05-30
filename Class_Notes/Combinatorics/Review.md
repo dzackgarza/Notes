@@ -7,7 +7,7 @@ $$P_n(x) = (x)_n = (x)^{\underline n} = x(x-1)\cdots (x-n+1) = \prod_{i=0}^{n-1}
 $$ 
 be the *falling factorial*, which is a product with exactly $n$ terms.
 
-- Stirling Number
+- Multiset Permutations
 - 
 
 # THe 12-fold Way
