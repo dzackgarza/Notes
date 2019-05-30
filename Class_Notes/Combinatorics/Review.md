@@ -57,6 +57,7 @@ Some Interpretations:
 
 1. Unrestricted, unlabeled $[n]$, labeled $[k]$
    1. Words of length $n$ from an alphabet of size $k$, where anagrams are identified with each other.
+   2. For each of $n$ balls
 
 ---
 
