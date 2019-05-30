@@ -15,7 +15,7 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 |---|---|---|---|---|
 | Yes | Yes | $k^n$  | $n^{\underline k}$  | $k!~S(n,k)$ |
 | No | Yes |  ${n+k-1}\choose{n}$ | $\begin{cases}0 & k < n, \\{k\choose n} & k \geq n\end{cases}$ | ${n-1}\choose{n-k}$ |
-| Yes | No | $\sum_k S(n, k)$  | $\begin{cases}1, k \end{cases}$  | $S(n, k)$ |
+| Yes | No | $\sum_k S(n, k)$  | $\begin{cases}1 & k \leq n \\ 0 & k > n \end{cases}$  | $S(n, k)$ |
 | No | No | $p_k(n)$ | $\indicator{n \leq k}$  | $p_k(n) - p_{k-1}(n)$ |
 
 1. A word of length $n$ from an alphabet of size $[k]$, with repetition allowed.
