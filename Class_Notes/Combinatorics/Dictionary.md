@@ -3,7 +3,7 @@
 - Binomial Coefficients
 - Binomial Theorem
 - Catalan Numbers
-  - $C(n) = 
+  - $C(n) = \frac 1 {n+1} 
 - Choose
 - Combination
 - Compositions, Integer
