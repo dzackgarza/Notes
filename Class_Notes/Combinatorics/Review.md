@@ -40,6 +40,13 @@ $$\begin{align*}
 | Yes | No | $\sum_{i=1}^k S(n, i)$  | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$  | $\begin{cases}S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
 | No | No | $\sum_{i=1}^k p_i(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) & k \leq n \\ 0 & k > n \end{cases}$  |
 
+- Injective:
+  - Choose without replacement
+  - At most one ball per bin
+- Surjective: 
+  - Choose with replacement, but must use every ball at least once.
+  - At least one ball per bin / no bin is empty
+
 Some Interpretations:
 
 1. Unrestricted, labeled $[n]$, labeled $[k]$
@@ -64,13 +71,6 @@ Some Interpretations:
    1. 
 
 ---
-
-- Injective:
-  - Choose without replacement
-  - At most one ball per bin
-- Surjective: 
-  - Choose with replacement, but must use every ball at least once.
-  - At least one ball per bin / no bin is empty
 
 # Combinatorics
 
