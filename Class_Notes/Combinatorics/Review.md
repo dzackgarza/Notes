@@ -34,7 +34,8 @@ Some Interpretations:
    1. Words of length $n$ from an alphabet of size $[k]$, where every letter appears at least once.
       1. Partition $n$ slots into $k$ groups, then assign letter $a$ to one of the $k$ group, letter $b$ to one of the remaining $k-1$ groups, etc
    2. Distribute $n$ balls into $k$ bins where each bin has at least one ball.
-4. 
+4. Unrestricted unlabeled balls into labeled bins
+   1. 
 5. 
 
 - Injective:
