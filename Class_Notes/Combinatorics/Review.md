@@ -8,7 +8,9 @@ $$
 be the *falling factorial*, which is a product with exactly $n$ terms.
 
 - Stirling Number
+- 
 
+# THe 12-fold Way
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
 |---|---|---|---|---|
 | Yes | Yes | $k^n$  | $P_n(n+1-k)$  | $k!~S(n,k)$ |
