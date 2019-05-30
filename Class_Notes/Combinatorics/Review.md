@@ -28,7 +28,7 @@ Some Interpretations:
 3. Words of length $n$ from an alphabet of size $[k]$, where every letter is used at least once.
 4. 
 
-Injective: Choose without replacement
+Injective: Choose without replacement, or 
 
 Surjective: Choose with replacement, but must use every item at least once.
 
