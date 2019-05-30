@@ -24,7 +24,7 @@
 - Pigeon-Hole Principle
 - Stirling Number of the First Kind
   - $s(n, k) = $ Permutations in $S^n$ having exactly $k$ cycles.
-  - Satisfies $s(n, k) = 
+  - Satisfies $s(n, k) = s(n-1, k-1) + 
 - Stirling Number of the Second Kind
 - Symmetric Group
 
