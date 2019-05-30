@@ -12,5 +12,7 @@
 - Binomial Theorem
 - Multinomial Theorem
 - Multinomial
+- Partitions, Set
+- Partition, Integer
 
 # Dictionary of Interpretations
