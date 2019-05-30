@@ -15,5 +15,6 @@
 - Partitions, Set
 - Partition, Integer
 - Compositions, Integer
+- Symmetric Group
 
 # Dictionary of Interpretations
