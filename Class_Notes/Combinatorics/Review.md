@@ -14,7 +14,7 @@ $$
 {\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1}
 $$
 - Compositions
-$$ \text{comp}(n, k) = {n-1 \choose n-k}$$
+$$ \#\theset{\text{compositions of $n$ into $k$ parts}} = {n-1 \choose n-k}$$
 
 # The 12-fold Way
 | $[n]$ labeled?   | $[k]$  labeled?  | $[n] \to [k]$ | $[n] \injects [k]$ | $[n] \surjects [k]$
