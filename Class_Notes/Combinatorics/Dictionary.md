@@ -18,6 +18,7 @@
 - Multinomial
 - Multiset
 - Multiset Permutations
+- Multiset Coefficients
 - Partitions, Set
 - Partition, Integer
 - Compositions, Integer
