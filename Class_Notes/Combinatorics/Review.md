@@ -56,7 +56,7 @@ Some Interpretations:
 ---
 
 1. Unrestricted, unlabeled $[n]$, labeled $[k]$
-   1. Distinct words of length $n$ formed from the $k$ letters of some given word, where letters may repeat. Example: MISSISSIPPI
+   1. Anagrams of some given word of length $n$ with $k$ distinct letters that may be repeated within the word.
 
 ---
 
