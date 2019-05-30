@@ -3,7 +3,7 @@
 - Binomial Coefficients
 - Binomial Theorem
 - Catalan Numbers
-  - $C(n) = \frac 1 {n+1} 
+  - $C(n) = \frac 1 {n+1} {{2n}\choose{n}}$
 - Choose
 - Combination
 - Compositions, Integer
