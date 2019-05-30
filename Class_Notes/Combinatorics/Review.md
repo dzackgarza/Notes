@@ -56,7 +56,7 @@ Some Interpretations:
 ---
 
 1. Unrestricted, unlabeled $[n]$, labeled $[k]$
-   1. Anagrams of some given word of length $n$ with $k$ distinct letters that may be repeated within the word.
+   1. Anagrams of some given word of length $n$ with $k$ distinct letters (which may be repeated within the word).
 
 ---
 
