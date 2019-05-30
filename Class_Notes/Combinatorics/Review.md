@@ -11,7 +11,7 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 - Stirling Numbers of the First Kind
 - Multiset Coefficient
 $$
-{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n}
+{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1}
 $$
 
 # The 12-fold Way
