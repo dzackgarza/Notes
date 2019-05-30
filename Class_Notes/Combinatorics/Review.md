@@ -32,8 +32,10 @@ Some Interpretations:
    2. For each of $n$ balls, choose **without replacement** one of $k$ bins as its target
 3. Surjective labeled balls into labeled bins
    1. Words of length $n$ from an alphabet of size $[k]$, where every letter appears at least once.
-   2. 
+      1. Partition $n$ slots into $k$ groups, then assign letter $a$ to one of the $k$ group, letter $b$ to one of the remaining $k-1$ groups, etc
+   2. Distribute $n$ balls into $k$ bins where each bin has at least one ball.
 4. 
+5. 
 
 - Injective:
   - Choose without replacement
