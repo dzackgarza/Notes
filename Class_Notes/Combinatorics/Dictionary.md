@@ -5,6 +5,8 @@
 - Stirling Number of the First Kind
 - Stirling Number of the Secon Kind
 - Cycles (in Permutations)
+- Cycle Notation, One Line
+- Cycle Notation, Two Line
 - Pigeon-Hole Principle
 - Induction, Weak
 - Induction, Stong
