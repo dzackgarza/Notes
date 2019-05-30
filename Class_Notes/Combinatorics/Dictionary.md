@@ -14,5 +14,6 @@
 - Multinomial
 - Partitions, Set
 - Partition, Integer
+- Compositions, Integer
 
 # Dictionary of Interpretations
