@@ -8,5 +8,6 @@
 - Pigeon-Hole Principle
 - Induction, Weak
 - Induction, Stong
+- Choose
 
 # Dictionary of Interpretations
