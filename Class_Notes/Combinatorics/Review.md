@@ -33,7 +33,7 @@ Some Interpretations:
   - At most one ball per bin
 - Surjective: 
   - Choose with replacement, but must use every ball at least once.
-  - At least one ball per bin
+  - At least one ball per bin / no bin is empty
 
 # Combinatorics
 
