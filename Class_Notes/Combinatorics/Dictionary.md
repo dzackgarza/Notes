@@ -6,5 +6,6 @@
 - Stirling Number of the Secon Kind
 - Cycle
 - Pigeon-Hole Principle
+- Induction
 
 # Dictionary of Interpretations
