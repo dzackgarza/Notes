@@ -15,7 +15,7 @@ be the *rising factorial*, which is a product with exactly $n$ terms.
 - Stirling Numbers of the First Kind
 - Multiset Coefficient
 $$
-{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1} = \frac{n^{\underline k}}{k!}
+{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1} = \frac{n^{\overline k}}{k!}
 $$
 - Compositions
 $$ \#\theset{\text{compositions of $n$ into $k$ parts}} = {n-1 \choose n-k}$$
