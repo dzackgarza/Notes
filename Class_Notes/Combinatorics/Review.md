@@ -9,7 +9,7 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 
 - Multiset Permutations
 - Stirling Numbers of the First Kind
-- ????
+- Multiset Coefficient
 $$
 
 $$
