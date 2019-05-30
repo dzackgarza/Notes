@@ -21,15 +21,15 @@ $$
 
 - Compositions
 $$\begin{align*}
-\#\theset{\text{compositions of $n$ into $k$ parts}} &= {n-1 \choose n-k} \\ \\
-\#\theset{\text{weak compositions of $n$ into $k$ parts}} &= \multinomial{n+1 \choose k-1} \\ &= {n+k-1 \choose k}
+\mathrm{comp}_W(n, k) = \#\theset{\text{compositions of $n$ into $k$ parts}} &= {n-1 \choose n-k} \\ \\
+\mathrm{comp}(n, k) = \#\theset{\text{weak compositions of $n$ into $k$ parts}} &= \multinomial{n+1 \choose k-1} \\ &= {n+k-1 \choose k}
 \end{align*}$$
 
 # The 12-fold Way
 | $[n]$ labeled?   | $[k]$  labeled?  | $[n] \to [k]$ | $[n] \injects [k]$ | $[n] \surjects [k]$
 |---|---|---|---|---|
 | Yes | Yes | $k^n$  | $\begin{cases}n^{\underline k} & n \leq k \\ 0 & n > k \end{cases}$  |  $\begin{cases}k!~S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
-| No | Yes |  $\multinomial{n\choose k}$ | $\begin{cases}{k\choose n} & n \leq k\\ 0 & n > k\end{cases}$ | $\begin{cases}{n-1}\choose{n-k} & k \leq n \\ 0 & k > n \end{cases}$ |
+| No | Yes |  $\multinomial{n\choose k}$ | $\begin{cases}{k\choose n} & n \leq k\\ 0 & n > k\end{cases}$ | $\begin{cases} \mathrm{comp}_W(n, k) & k \leq n \\ 0 & k > n \end{cases}$ |
 | Yes | No | $\sum_{i=1}^k S(n, i)$  | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$  | $\begin{cases}S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
 | No | No | $\sum_{i=1}^k p_i(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) & k \leq n \\ 0 & k > n \end{cases}$  |
 
