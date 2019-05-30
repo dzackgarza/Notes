@@ -7,8 +7,9 @@
 - Choose
 - Combination
 - Composition, Weak
-  - A *weak composition of $n$ into $k$ parts* is n ordered sequence of integers $(a_1, \cdots a_k)$ such that $\sum a_i = n$ and each $a_i \geq 0 
+  - A *weak composition of $n$ into $k$ parts* is n ordered sequence of integers $(a_1, \cdots a_k)$ such that $\sum_i a_i = n$ and $0 \leq a_i \leq n$ 
 - Composition
+  - A *(strong) composition of $n$ into $k$ parts* is n ordered sequence of integers $(a_1, \cdots a_k)$ such that $\sum_i a_i = n$ and $1 \leq a_i \leq n$ 
 - Cycle Notation, One Line
 - Cycle Notation, Two Line
 - Cycles (in Permutations)
