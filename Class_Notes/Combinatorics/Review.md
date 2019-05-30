@@ -13,16 +13,17 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 # The 12-fold Way
 | $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $[n] \injects [k]$ | $[n] \surjects [k]$
 |---|---|---|---|---|
-| Yes | Yes | $k^n$  | $\begin{cases}n^{\underline k} & n \leq k \\ 0 & n > k \end{cases}$  | $k!~S(n,k)$ |
-| No | Yes |  ${n+k-1}\choose{n}$ | $\begin{cases}{k\choose n} & n \leq k\\ 0 & n > k\end{cases}$ | ${n-1}\choose{n-k}$ |
-| Yes | No | $\sum_k S(n, k)$  | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$  | $S(n, k)$ |
-| No | No | $p_k(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $p_k(n) - p_{k-1}(n)$ |
+| Yes | Yes | $k^n$  | $\begin{cases}n^{\underline k} & n \leq k \\ 0 & n > k \end{cases}$  |  $\begin{cases}k!~S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
+| No | Yes |  ${n+k-1}\choose{n}$ | $\begin{cases}{k\choose n} & n \leq k\\ 0 & n > k\end{cases}$ | $\begin{cases}{n-1}\choose{n-k} & k \leq n \\ 0 & k > n \end{cases}$ |
+| Yes | No | $\sum_k S(n, k)$  | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$  | $\begin{cases}S(n,k) & k \leq n \\ 0 & k > n \end{cases}$  |
+| No | No | $p_k(n)$ | $\begin{cases}1 & n \leq k \\ 0 & n > k \end{cases}$   | $\begin{cases}p_k(n) - p_{k-1}(n) & k \leq n \\ 0 & k > n \end{cases}$  |
 
 1. A word of length $n$ from an alphabet of size $[k]$, with repetition allowed.
 2. A word of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
 3. A word of length $n$ from an alphabet of size $[k]$, where every letter is used at least once.
 
 Injective: Choose without replacement
+
 Surjective: Choose with replacement, but must use every item at least once.
 
 # Combinatorics
