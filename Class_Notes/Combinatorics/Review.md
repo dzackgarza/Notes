@@ -10,8 +10,8 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 - Multiset Permutations
 - Stirling Numbers of the First Kind
 
-# THe 12-fold Way
-| $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $f:[n] \injects [k]$ | $f: [n] \surjects [k]$
+# The 12-fold Way
+| $[n]$ labeled?   | $[k]$  labeled?  | No restrictions | $[n] \injects [k]$ | $[n] \surjects [k]$
 |---|---|---|---|---|
 | Yes | Yes | $k^n$  | $P_n(n+1-k)$  | $k!~S(n,k)$ |
 | No | Yes |  ${k+n-1}\choose{n}$ | $k\choose n$ | ${n-1}\choose{n-k}$ |
