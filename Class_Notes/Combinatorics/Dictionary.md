@@ -29,9 +29,11 @@
 
 $$
 \begin{align*}
-n! &\qquad \text{Strings of length $n$ over an alphabet of size $n$, or}\\
+n! &\qquad \text{Strings of length $n$ over an alphabet of size $n$ with no duplicates,}\\
 &\qquad \text{Ways to arrange $n$ distinct objects in a line, or}\\
-&\qquad \text{Ways to place $n$ labeled balls into $n$ labeled bins}\\
-n^{\underline k} = n(n-1)\cdots(n-k+1) &\qquad \text{Strings of length $k$ over an alphabet of size $n$} \\
+&\qquad \text{Number of functions $[n] \to [n]$ that are injective and surjective}\\
+&\qquad \text{Ways to place $n$ labeled balls into $n$ labeled bins, each bin has $\leq 1$ ball}\\
+n^{\underline k} = n(n-1)\cdots(n-k+1) &\qquad \text{Strings of length $k$ over an alphabet of size $n$ with no duplicates, or} \\
+&\qquad \text{}\\
 \end{align*}
 $$
