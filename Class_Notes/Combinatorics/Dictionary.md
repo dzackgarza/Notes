@@ -7,7 +7,7 @@
 - Choose
 - Combination
 - Composition, Weak
-  - 
+  - A sequence of 
 - Composition
 - Cycle Notation, One Line
 - Cycle Notation, Two Line
