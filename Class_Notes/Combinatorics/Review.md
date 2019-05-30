@@ -28,9 +28,12 @@ Some Interpretations:
 3. Words of length $n$ from an alphabet of size $[k]$, where every letter is used at least once.
 4. 
 
-Injective: Choose without replacement, or 
-
-Surjective: Choose with replacement, but must use every item at least once.
+- Injective:
+  - Choose without replacement
+  - At most one ball per bin
+- Surjective: 
+  - Choose with replacement, but must use every ball at least once.
+  - At least one ball per bin
 
 # Combinatorics
 
