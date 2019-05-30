@@ -22,6 +22,8 @@ be the *falling factorial*, which is a product with exactly $n$ terms.
 2. A word of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
 3. A word of length $n$ from an alphabet of size $[k]$, where every letter is used at least once.
 
+Injective: 
+
 # Combinatorics
 
 List of concepts
