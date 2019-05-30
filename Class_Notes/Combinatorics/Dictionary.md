@@ -12,7 +12,9 @@
 - Induction, Stong
 - Choose
 - Binomial Theorem
+- Binomial Coefficients
 - Multinomial Theorem
+- Multinomial Coefficients
 - Multinomial
 - Multiset
 - Multiset Permutations
