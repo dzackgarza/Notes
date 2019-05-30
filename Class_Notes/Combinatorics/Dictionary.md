@@ -10,5 +10,7 @@
 - Induction, Stong
 - Choose
 - Binomial Theorem
+- Multinomial Theorem
+- Multinomial
 
 # Dictionary of Interpretations
