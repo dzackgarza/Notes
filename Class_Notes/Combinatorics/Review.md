@@ -3,15 +3,19 @@
 - $\abs{\theset{\text{Permutations}}}  = n!$
 
 - Falling Factorial: Let 
-$$(x)^{\underline n} = x(x-1)\cdots (x-n+1) = \prod_{i=0}^{n-1}(x - i) 
+$$x^{\underline n} = x(x-1)\cdots (x-n+1) = \prod_{i=0}^{n-1}(x - i) 
 $$ 
 be the *falling factorial*, which is a product with exactly $n$ terms.
-
+- Rising Factorial: Let
+$$
+x^{\overline n} = x(x+1_ \cdots (x+n-1) = \prod_{i=0}^{n-1}(x+i)
+$$
+be the *rising factorial*, which is a product with exactly $n$ terms.
 - Multiset Permutations
 - Stirling Numbers of the First Kind
 - Multiset Coefficient
 $$
-{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1} = \frac{1}{k!} n^{\underline k}
+{\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose n} = {{n+k-1}\choose k-1} = \frac{n^{\underline k}}{k!}
 $$
 - Compositions
 $$ \#\theset{\text{compositions of $n$ into $k$ parts}} = {n-1 \choose n-k}$$
