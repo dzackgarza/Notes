@@ -4,7 +4,7 @@
 - Combination
 - Stirling Number of the First Kind
 - Stirling Number of the Secon Kind
-- Cycle
+- Cycles (in Permutations)
 - Pigeon-Hole Principle
 - Induction, Weak
 - Induction, Stong
