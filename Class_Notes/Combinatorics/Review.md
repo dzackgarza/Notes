@@ -19,7 +19,7 @@ $$
 $$
 - Compositions
 $$ \#\theset{\text{compositions of $n$ into $k$ parts}} = {n-1 \choose n-k} \\
-\#\theset{\text{weak compositions of $n$ into $k$ parts}} = {n-1 \choose n-k}
+\#\theset{\text{weak compositions of $n$ into $k$ parts}} = \multinomial{n+1 \choose k-1} = {n+k-1 \choose k}
 $$
 
 # The 12-fold Way
