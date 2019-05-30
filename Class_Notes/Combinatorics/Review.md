@@ -44,6 +44,7 @@ Some Interpretations:
 
 1. Unrestricted, labeled $[n]$, labeled $[k]$
    1. Words of length $n$ from an alphabet of size $[k]$, with repetition allowed.
+      1. $k$ choices for first letter, $k$ for second, etc
    2. For each of $n$ balls, choose **with replacement** one of $k$ bins as its target.
 2. Injective, labeled $[n]$, labeled $[k]$
    1. Words of length $n$ from an alphabet of size $[k]$ with no repetition (all letters unique).
