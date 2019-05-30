@@ -14,10 +14,11 @@ be the *rising factorial*, which is a product with exactly $n$ terms.
 - Multiset Permutations
 - Stirling Numbers of the First Kind
 
-- Multiset Coefficient
+- Multiset Coefficient: Define
 $$
 {\left(\!\!{n\choose k}\!\!\right)} = {{n+k-1}\choose k} = {{n+k-1}\choose n-1} = \frac{n^{\overline k}}{k!}
 $$
+which is the number of ways to select $k$ items from a set of $n$ items, with replacement.
 
 - Compositions
 $$\begin{align*}
