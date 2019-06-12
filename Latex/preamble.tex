@@ -18,6 +18,24 @@
 \usepackage{todonotes}
 \usepackage[msc-links]{amsrefs}
 \usepackage{cleveref} % use \cref{}, automatically deduces theorem, proposition, etc
+\usepackage{csquotes}
+\usepackage{longtable}
+\usepackage{bbm}
+\usepackage{parskip}
+
+% Highlight quote
+\usepackage{xcolor}
+\usepackage{environ}
+\definecolor{block-gray}{gray}{0.85}
+\NewEnviron{myblock}
+{\colorbox{block-gray}{%
+\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+\small\addtolength{\leftskip}{10mm}
+\addtolength{\rightskip}{10mm}
+\BODY}}
+}
+\renewcommand{\quote}{\myblock}
+\renewcommand{\endquote}{\endmyblock}
 
 % Nice math font that journals use
 %\usepackage[lite]{mtpro2}
@@ -55,9 +73,11 @@
 \usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, decorations.markings}
 \tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
 \usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
 \usepackage[inline]{asymptote}
 
 % Major Macros
 %\renewcommand{\and}{{\text{ and }}}
 %\renewcommand{\or}{{\text{ or }}}
+\renewcommand{\vector}[1]{\mathbf{#1}}
 \input{/home/zack/Notes/Latex/latexmacs.txt}

@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Combinatorics Review</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"displayMath":[["$$","$$"],["\\[","\\]"]],"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true,"processEnvironments":false},"TeX":{"extensions":["noUndefined.js","autoload-all.js","AMSmath.js","AMSsymbols.js"],"equationNumbers":{"autoNumber":"AMS"},"Macros":{"NN":["{\\mathbb{N}}",0],"RR":["{\\mathbb{R}}",0],"ZZ":["{\\mathbb{Z}}",0],"CC":["{\\mathbb{C}}",0],"QQ":["{\\mathbb{Q}}",0],"RP":["{\\mathbb{RP}}",0],"CP":["{\\mathbb{CP}}",0],"HP":["{\\mathbb{HP}}",0],"OP":["{\\mathbb{OP}}",0],"FF":["{\\mathbb{F}}",0],"PP":["{\\mathbb{P}}",0],"Af":["{\\mathbb{A}}",0],"MM":["{\\mathbb{M}}",0],"TT":["{\\mathbb{T}}",0],"Sp":["{\\mathbb{S}}",0],"KK":["{\\mathbb{K}}",0],"Gr":["{\\text{Gr}}",0],"GL":["{\\text{GL}}",0],"SL":["{\\text{SL}}",0],"SO":["{\\text{SO}}",0],"OO":["{\\mathcal{O}}",0],"mltext":["\\left\\{\\begin{array}{c}#1\\end{array}\\right\\}",1],"dual":["\\vee",0,""],"Tr":["\\mathrm{Tr}",0],"divides":["{~\\mid ~}",0],"sym":["\\mathrm{Sym}",0],"aut":["\\mathrm{Aut}",0],"grad":["\\mathrm{grad}",0],"spec":["{\\mathrm{Spec}}",0],"suchthat":["{~\\backepsilon ~}",0],"uniformlyconverges":["\\rightrightarrows",0],"mapsvia":["\\xrightarrow{#1}",1],"generators":["\\langle{#1}\\rangle",1],"theset":["\\{{#1}\\}",1],"too":["{\\xrightarrow{#1}}",1,""],"norm":["{{\\lVert}{#1}{\\rVert}}",1],"restrictionof":["{\\left.{#1}\\right|_{#2}}",2],"inner":["{\\langle {#1}, {#2} \\rangle}",2],"indicator":["{\\unicode{x1D7D9}\\left[#1\\right]}",1],"equalsbecause":["{\\stackrel{\\mbox{$\\tiny{\\text{ #1 }}$}}{=}}",1],"conjugate":["{\\overline{{#1}}}",1],"strike":["{\\enclose{horizontalstrike}{#1}}",1],"realpart":["{\\mathcal{Re}({#1})}",1],"imaginarypart":["{\\mathcal{Im}({#1})}",1],"dd":["{\\frac{\\partial #1}{\\partial #2}}",2],"rotate":["{\\style{display: inline-block; transform: rotate(#1deg)}{#2}}",2,"90"],"stirling":["\\genfrac\\{\\}{0pt}{}{#1}{#2}",2],"thevector":["{\\left[ {#1} \\right]}",1],"abs":["{\\left\\lvert #2 \\right\\rvert_{\\text{#1}}}",2,""],"intersect":["\\bigcap",0],"union":["\\bigcup",0],"coker":["\\operatorname{coker}",0],"rank":["\\operatorname{rank}",0],"tensor":["\\otimes",0],"semidirect":["\\rtimes",0],"pt":["\\{\\text{pt}\\}",0],"bd":["{\\del}",0],"wait":["{\\,\\cdot\\,}",0],"selfmap":["{\\circlearrowleft}",0],"tor":["\\text{Tor}",0],"ext":["\\text{Ext}",0],"actson":["\\curvearrowright",0],"actsonl":["\\curvearrowleft",0],"disjoint":["{\\coprod}",0],"dash":["{\\hbox{-}}",0],"bigast":["{\\mathop{\\Large \\ast}}",0],"from":["\\leftarrow",0],"covers":["\\twoheadrightarrow",0],"Zp":["\\mathbb{Z}_{(p)}",0],"Qp":["\\mathbb{Q}_{(p)}",0],"ZpZ":["\\mathbb{Z}/p\\mathbb{Z}",0],"Sm":["{\\text{Sm}_k}",0],"GG":["{\\mathbb{G}}",0],"bung":["\\text{Bun}_G",0],"Aut":["{\\text{Aut}}",0],"del":["{\\partial}",0],"im":["{\\text{im}~}",0],"homotopic":["\\simeq",0],"into":["\\to",0],"cross":["\\times",0],"definedas":["\\mathrel{\\vcenter{:}}=",0],"surjects":["\\twoheadrightarrow",0],"onto":["\\twoheadrightarrow",0],"injects":["\\hookrightarrow",0],"id":["\\text{id}",0],"inv":["^{-1}",0],"normal":["{~\\trianglelefteq~}",0],"units":["^{\\times}",0],"annd":["{\\text{ and }}",0],"orr":["{\\text{ or }}",0],"arcsec":["\\mathrm{arcsec}",0],"multinomial":["\\left(\\!\\!{#1}\\!\\!\\right)",1],"stirlingfirst":["\\genfrac{[}{]}{0pt}{}{#1}{#2}",2],"vector":["{\\mathbf{ {#1} }}",1],"hom":["\\text{Hom}",0],"qed":["{\\tag*{$\\blacksquare$}}",0],"char":["\\text{char}",0]}},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <p>‘-r markdown+tex_math_single_backslash+simple_tables+table_captions+yaml_metadata_block+smart+blank_before_blockquote+backtick_code_blocks’</p>
+<h1 class="mume-header" id="formulae">Formulae</h1>
+
+<p>Note that the theory is important for Combinatorics, just knowing what definitions are and what various expressions counts, but this is a very problem-driven subject! These are your tools – it is worth delineating exactly what kinds of problems are tractable, and which are more difficult. But the ultimate skill in this kind of course is to know when to apply which tool to a problem, how to translate problems into things you know how to count, and how to seamlessly move back and forth between various combinatorial interpretations.</p>
+<p>So problems are the best practice!</p>
+<h2 class="mume-header" id="overview">Overview</h2>
+
+<ul>
+<li>
+<p><span class="mathjax-exps">$&#x5C;theset{a, b, c, &#x5C;cdots} = &#x5C;theset{b, c, a, &#x5C;cdots} = &#x5C;theset{c, b, a, &#x5C;cdots} = &#x5C;cdots$</span> is a <strong>set</strong>, a structure which contains some finite number of unique elements, and there is a-priori notion of &quot;order&quot; or an indexing operation (i.e. there is no distinguished &quot;first&quot; element, etc).</p>
+</li>
+<li>
+<p>If <span class="mathjax-exps">$S$</span> is a set, then <span class="mathjax-exps">$&#x5C;# S$</span> denotes the <strong>size</strong> of the set, i.e. a count of the number of elements contained in <span class="mathjax-exps">$S$</span>.</p>
+</li>
+<li>
+<p><span class="mathjax-exps">$[a, b, c] &#x5C;neq [b, c, a]$</span> is an <strong>ordered list</strong> (also called a <span class="mathjax-exps">$k&#x5C;dash$</span>tuple), a structure of not-necessarily unique elements from some set in which there is a well-defined order/indexing operation.</p>
+<ul>
+<li>For example, the second element of <span class="mathjax-exps">$[b,c,a]$</span> is <span class="mathjax-exps">$c$</span>, and the first element of <span class="mathjax-exps">$[3,1,2]$</span> is 3.</li>
+<li>Equivalently, this can be thought of as a <strong>word</strong> from some <strong>alphabet</strong> of symbols. In this case, we may write <span class="mathjax-exps">$[a,b,c]$</span> as <span class="mathjax-exps">$abc$</span> instead.</li>
+<li>Rigorously, if <span class="mathjax-exps">$A$</span> is the set of elements we’re interested in, an ordered list is an element of the <span class="mathjax-exps">$k&#x5C;dash$</span>fold product set <span class="mathjax-exps">$A &#x5C;cross A &#x5C;cross &#x5C;cdots A = A^k$</span>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="mume-header" id="sets">Sets</h2>
+
+<p>For any given <span class="mathjax-exps">$n$</span>, there is essentially <strong>one</strong> set of size <span class="mathjax-exps">$n$</span>, the set <span class="mathjax-exps">$[n] = &#x5C;theset{1,2,&#x5C;cdots n}$</span>. It is a theorem that every set admits a <em>well-ordering</em>, and a consequence of this is that any set <span class="mathjax-exps">$S$</span> of countable size <span class="mathjax-exps">$n$</span> admits a bijective map <span class="mathjax-exps">$S &#x5C;to [n]$</span>. So <span class="mathjax-exps">$S &#x5C;cong [n]$</span> in the category of Sets, &quot;up to relabeling&quot; of elements.</p>
+<p>But be careful! <span class="mathjax-exps">$[n]$</span> comes with its own labeling **and ** its own ordering <span class="mathjax-exps">$1 &#x5C;leq 2 &#x5C;leq &#x5C;cdots$</span>, and so should perhaps be regarded as an ordered list with unique elements instead. As a set, we can order the elements any way and obtain the same set.</p>
+<h2 class="mume-header" id="the-symmetric-group">The Symmetric Group</h2>
+
+<p><span class="mathjax-exps">$S_n$</span> denotes the <strong>symmetric group</strong> on <span class="mathjax-exps">$n$</span> elements; each element of this group is a bijective function <span class="mathjax-exps">$[n]&#x5C;to[n]$</span>. Combinatorialists really love this group, and it secretly shows up in most counting problems.</p>
+<p>A <strong>permutation</strong> <span class="mathjax-exps">$&#x5C;sigma$</span> is an element of <span class="mathjax-exps">$S_n$</span>, We can specify a bijection by describing where it sends every element, so for example, define<br>
+<div class="mathjax-exps">$$&#x5C;begin{aligned} &#x5C;sigma: [5] &amp;&#x5C;to [5] &amp;&#x5C;&#x5C; &#x5C;&#x5C; &#x5C;sigma(1) &amp;= 3 &#x5C;implies &amp;1 &#x5C;mapsto 3 &#x5C;&#x5C; &#x5C;sigma(2) &amp;= 4 &#x5C;implies &amp;2 &#x5C;mapsto 4 &#x5C;&#x5C; &#x5C;sigma(3) &amp;= 5 &#x5C;implies &amp;3 &#x5C;mapsto 5 &#x5C;&#x5C; &#x5C;sigma(4) &amp;= 2 &#x5C;implies &amp;4 &#x5C;mapsto 2 &#x5C;&#x5C; &#x5C;sigma(5) &amp;= 1 &#x5C;implies &amp;5 &#x5C;mapsto 1 &#x5C;&#x5C; &#x5C;end{aligned}$$</div><br>
+There are several more concise notations equivalent to the above specification:</p>
+<h3 class="mume-header" id="two-line-notation">Two line notation</h3>
+
+<p>Write <span class="mathjax-exps">$1&#x5C;cdots n$</span>, and under each number, write where it is sent to under <span class="mathjax-exps">$&#x5C;sigma$</span>:<br>
+<div class="mathjax-exps">$$&#x5C;left( &#x5C;begin{array}{ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &#x5C;&#x5C; 3 &amp; 4 &amp; 5 &amp; 2 &amp; 1 &#x5C;end{array}&#x5C;right)$$</div><br>
+In general, we write<br>
+<div class="mathjax-exps">$$&#x5C;left( &#x5C;begin{array}{cccc} 1 &amp; 2 &amp; &#x5C;cdots &amp; n  &#x5C;&#x5C; &#x5C;sigma(1) &amp; &#x5C;sigma(2) &amp; &#x5C;cdots &amp; &#x5C;sigma(n) &#x5C;end{array}&#x5C;right)$$</div></p>
+<h3 class="mume-header" id="one-line-notation">One line notation</h3>
+
+<p>Noting that in the above notation, we’ll always write <span class="mathjax-exps">$1&#x5C;cdots n$</span> in the top row, we can just omit it and implicitly agree that the <span class="mathjax-exps">$k&#x5C;dash$</span>th position denotes where the integer <span class="mathjax-exps">$k$</span> is mapped to:<br>
+<div class="mathjax-exps">$$[3,4,5,2,1] = 34521$$</div></p>
+<p>In general, we write a concatenated list of numbers<br>
+<div class="mathjax-exps">$$&#x5C;sigma(1)&#x5C;sigma(2) &#x5C;cdots &#x5C;sigma(n)$$</div></p>
+<h3 class="mume-header" id="cycle-notation">Cycle Notation</h3>
+
+<p>Since <span class="mathjax-exps">$S_n$</span> is a finite group, we know that every element will have finite order. So for some given number <span class="mathjax-exps">$i$</span>, we can look at the iterates <span class="mathjax-exps">$&#x5C;sigma(i), &#x5C;sigma^2(i) = &#x5C;sigma(&#x5C;sigma(i)), &#x5C;sigma^3(i), &#x5C;cdots$</span> and there will be some <span class="mathjax-exps">$k$</span> for which <span class="mathjax-exps">$&#x5C;sigma^k(i) = i$</span>. This sequence of images is called a <strong>cycle</strong>, and it turns out that we can recover our permutation entirely from exhaustively recording the cycles.</p>
+<p>The algorithm: start with <span class="mathjax-exps">$1$</span>, then compute all <span class="mathjax-exps">$&#x5C;sigma^i(1)$</span>. Write the resulting numbers in parentheses, then take the smallest number you haven’t seen yet, open a new parenthesis, and repeat until all numbers <span class="mathjax-exps">$1 &#x5C;cdots n$</span> appear somewhere. Finally, if any set of parentheses contains only a single number (so <span class="mathjax-exps">$&#x5C;sigma(i) = i$</span> after only 1 iteration), omit it.</p>
+<p>Our example:<br>
+<div class="mathjax-exps">$$(1,3,5)(2,4)$$</div><br>
+which reads as &quot;1 maps to 3, 3 maps to 5, 5 maps to 1&quot; and &quot;2 maps to 4, 4 maps to 2&quot;.</p>
+<p>In general, we write<br>
+<div class="mathjax-exps">$$(1, &#x5C;sigma(1), &#x5C;sigma^2(1), &#x5C;cdots, &#x5C;sigma^{k}(1))~(a_1, &#x5C;sigma(a_1), &#x5C;sigma^2(a_1), &#x5C;cdots, &#x5C;sigma^{k_1}(a_1)) ~ &#x5C;cdots$$</div></p>
+<p>Observations/notes:</p>
+<ul>
+<li>While <span class="mathjax-exps">$(abc) &#x5C;neq (bac)$</span> as cycles, we do have <span class="mathjax-exps">$(abc) = (cab) = (bca) = (abc)$</span>. So order matters <em>somewhat</em>, but not every reordering yields a new distinct cycle. Instead, for a cycle <span class="mathjax-exps">$&#x5C;sigma$</span> of length <span class="mathjax-exps">$k$</span>, there are exactly <span class="mathjax-exps">$k-1$</span> representatives that are equivalent to <span class="mathjax-exps">$&#x5C;sigma$</span> and only differ by these &quot;shifts&quot;.</li>
+<li>By writing things out this way, we’ve represented <span class="mathjax-exps">$&#x5C;sigma$</span> as a <strong>product of disjoint cycles</strong>, i.e. no number occurs in more than one set of parentheses. Moreover, we can do this for every element <span class="mathjax-exps">$&#x5C;sigma$</span>, so we say that <span class="mathjax-exps">$S_n$</span>.</li>
+<li>It is sometimes useful to write these in a “canonical” way – shift every cycle so the largest elements are first, then sort the cycles in increasing order based on those first elements.</li>
+</ul>
+<h3 class="mume-header" id="useful-facts-about-the-symmetric-group">Useful facts about the Symmetric group</h3>
+
+<ul>
+<li>Every element can be written as a product of disjoint cycles</li>
+<li>Disjoint cycles commute</li>
+<li>The group-theoretic order of a cycle is its length</li>
+<li>The group-theoretic order of a product of cycles is the least common multiple of the lengths.</li>
+</ul>
+<h2 class="mume-header" id="permutations">Permutations:</h2>
+
+<p>We can count the number of bijections from an <span class="mathjax-exps">$n$</span> element set to itself:<br>
+<div class="mathjax-exps">$$&#x5C;#&#x5C;theset{&#x5C;text{Permutations of} [n]} = &#x5C;abs{S_n}  = n!$$</div></p>
+<ul>
+<li>Also the number of a ways to form an <strong>ordered list</strong> of <span class="mathjax-exps">$n$</span> unique elements (<span class="mathjax-exps">$n$</span> choices for 1st element, <span class="mathjax-exps">$n-1$</span> choices for 2nd, etc).</li>
+</ul>
+<h2 class="mume-header" id="ordered-lists">Ordered Lists</h2>
+
+<p>If <span class="mathjax-exps">$&#x5C;#&#x5C;Sigma = k$</span> is some set (which we’ll regard as &quot;formal symbols&quot;), we can count the number of ordered lists:<br>
+<div class="mathjax-exps">$$&#x5C;# &#x5C;theset{&#x5C;text{Length $k$ lists over $&#x5C;Sigma$}} = n^k$$</div></p>
+<ul>
+<li>Logic: Suppose <span class="mathjax-exps">$L = l_1 l_2, &#x5C;cdots l_k$</span>, then there are <span class="mathjax-exps">$n$</span> choices of symbol for <span class="mathjax-exps">$l_1$</span>, <span class="mathjax-exps">$n$</span> choices for <span class="mathjax-exps">$l_2$</span>, etc.</li>
+<li>Also counts the number of words over an alphabet of size <span class="mathjax-exps">$k$</span>.</li>
+</ul>
+<h2 class="mume-header" id="falling-factorial">Falling Factorial</h2>
+
+<p>Let<br>
+<div class="mathjax-exps">$$&#x5C;begin{aligned} n^{&#x5C;underline k} &amp;&#x5C;definedas &#x5C;prod_{i=0}^{k-1}(n - i) &#x5C;&#x5C; &amp;= n(n-1)&#x5C;cdots (n-k+1) &#x5C;&#x5C; &amp;= &#x5C;frac{n!}{(n-k)!} &#x5C;end{aligned}$$</div><br>
+be the <em>falling factorial</em>, which is a product with exactly <span class="mathjax-exps">$n$</span> terms.</p>
+<ul>
+<li>Counts the number of ways to form an <strong>ordered list</strong> of <span class="mathjax-exps">$k$</span> items from an <span class="mathjax-exps">$n$</span> element set (i.e. there is a distinguished &quot;first&quot; pick, &quot;second&quot; pick, etc)</li>
+<li>Also counts the number of injections <span class="mathjax-exps">$[k] &#x5C;injects [n]$</span></li>
+</ul>
+<h2 class="mume-header" id="rising-factorial">Rising Factorial</h2>
+
+<p>Let<br>
+<div class="mathjax-exps">$$&#x5C;begin{aligned} n^{&#x5C;overline k} &amp;&#x5C;definedas &#x5C;prod_{i=0}^{k-1}(n+i) &#x5C;&#x5C; &amp;=n(n+1) &#x5C;cdots (n+k-1) &#x5C;&#x5C;&amp;= &#x5C;frac{(n+k-1)!}{(n-1)!} &#x5C;&#x5C; &#x5C;&#x5C;&amp;= (n+k-1)^{&#x5C;underline k} &#x5C;end{aligned}$$</div><br>
+be the <em>rising factorial</em>, which is a product with exactly <span class="mathjax-exps">$n$</span> terms.</p>
+<ul>
+<li>Counts the number of ways to form an <strong>ordered list</strong> of <span class="mathjax-exps">$k$</span> items from an <span class="mathjax-exps">$n+k-1$</span> element set.</li>
+</ul>
+<h2 class="mume-header" id="combinationsbinomial-coefficients">Combinations/Binomial Coefficients</h2>
+
+<p>Counts the number of ways to form a <span class="mathjax-exps">$k&#x5C;dash$</span>element <strong>subset</strong> of a set of <span class="mathjax-exps">$n$</span> items:<br>
+<div class="mathjax-exps">$$&#x5C;begin{aligned} &#x5C;#&#x5C;theset{k&#x5C;dash&#x5C;text{element subsets of } [n]} = {n &#x5C;choose k} &amp;&#x5C;definedas &#x5C;frac{n!}{k!(n-k!)} &#x5C;&#x5C; &amp;= {n &#x5C;choose n-k} &#x5C;&#x5C; &#x5C;&#x5C; &amp;= &#x5C;frac{n^{&#x5C;underline k}}{k!} &#x5C;end{aligned}$$</div></p>
+<ul>
+<li>Note that order does <strong>not</strong> matter here; we identify any two sets that differ by a permutation
+<ul>
+<li>In other words, first form an ordered list of <span class="mathjax-exps">$k$</span> unique elements from <span class="mathjax-exps">$[n]$</span> in <span class="mathjax-exps">$n^{&#x5C;underline k}$</span> ways, then quotient out by the <span class="mathjax-exps">$k!$</span> ways to reorder the list that yield the same set.</li>
+</ul>
+</li>
+<li>Alternatively, ways to pick <span class="mathjax-exps">$k$</span> items from <span class="mathjax-exps">$[n]$</span> <strong>without replacement</strong>, then remove the labels.</li>
+<li>Alternatively, the coefficient of <span class="mathjax-exps">$x^k$</span> in the expansion of <span class="mathjax-exps">$(1+x)^n$</span>, i.e.<br>
+<div class="mathjax-exps">$$(1+x)^n = &#x5C;sum_{k&#x5C;geq 0} {n&#x5C;choose k} x^k$$</div><br>
+which can be generalized to<br>
+<div class="mathjax-exps">$$(x+y)^n = &#x5C;sum_{k&#x5C;geq 0} {n&#x5C;choose k} x^ky^{n-k}$$</div></li>
+</ul>
+<h3 class="mume-header" id="generalized-binomial-coefficients">Generalized Binomial Coefficients</h3>
+
+<p>We can extend the “choose” notation and thus the binomial formula to rational powers by defining<br>
+<div class="mathjax-exps">$${r &#x5C;choose k} = &#x5C;frac{1}{k!} &#x5C;prod_{i=0}^{k-1} (r - i) = &#x5C;frac{r(r-1)(r-2)&#x5C;cdots(r-k+1)}{k!}&#x5C;&#x5C; (x+y)^r = &#x5C;sum_{k&#x5C;geq 0} {r&#x5C;choose k} x^ky^{n-k}$$</div></p>
+<p>Note that this allows us to expand things such as <span class="mathjax-exps">$&#x5C;sqrt{x+y} = (x+y)^&#x5C;frac{1}{2}$</span> in an infinite sum:<br>
+<div class="mathjax-exps">$$&#x5C;sqrt { 1 + x } = 1 + &#x5C;frac { 1 } { 2 } x - &#x5C;frac { 1 } { 8 } x ^ { 2 } + &#x5C;frac { 1 } { 16 } x ^ { 3 } - &#x5C;frac { 5 } { 128 } x ^ { 4 } + &#x5C;frac { 7 } { 256 } x ^ { 5 } - &#x5C;cdots$$</div></p>
+<h2 class="mume-header" id="multisets">Multisets</h2>
+
+<ul>
+<li>What is a multiset? If <span class="mathjax-exps">$S$</span> is a set, you can think of a multiset <span class="mathjax-exps">$M$</span> as a word in the symbols <span class="mathjax-exps">$s_i &#x5C;in S$</span> where order doesn’t matter.
+<ul>
+<li>Example: <span class="mathjax-exps">$S = &#x5C;theset{a,b,c}$</span> and <span class="mathjax-exps">$M = &#x5C;theset{a,a,a,b,b} = &#x5C;theset{a,b,a,a,b} = &#x5C;cdots$</span></li>
+</ul>
+</li>
+<li>Alternatively, it is a collection of elements of <span class="mathjax-exps">$S$</span>, each with a multiplicity, so a subset of <span class="mathjax-exps">$S &#x5C;cross &#x5C;NN$</span>, where we define the size to be the sum of the multiplicities instead of (the usual) number of elements.
+<ul>
+<li>Example: As above, <span class="mathjax-exps">$M = &#x5C;theset{(a, 3), (b,2)}$</span>. Note that although <span class="mathjax-exps">$M$</span> has size 2 as a set, it has size <span class="mathjax-exps">$3+2 = 5$</span> as a multiset.</li>
+</ul>
+</li>
+</ul>
+<p>We can thus count the number of <span class="mathjax-exps">$k&#x5C;dash$</span>element multisets of an <span class="mathjax-exps">$n&#x5C;dash$</span>element set:<br>
+<div class="mathjax-exps">$$&#x5C;begin{aligned} &#x5C;#&#x5C;theset{&#x5C;text{Multisets of $[n]$ of size $k$} } &amp;= &#x5C;multinomial{n&#x5C;choose k} &#x5C;&#x5C; &amp;&#x5C;definedas {{n+k-1}&#x5C;choose k} &#x5C;&#x5C; &amp;= {{n+k-1}&#x5C;choose n-1} &#x5C;&#x5C; &#x5C;&#x5C; &amp;= &#x5C;frac{n^{&#x5C;overline k}}{k!} &#x5C;end{aligned}$$</div></p>
+<p><em>Proof</em>: Multisets can be put in bijection with unrestricted stars and bars arrangements, see next section. <span class="mathjax-exps">$&#x5C;qed$</span></p>
+<ul>
+<li>The number <span class="mathjax-exps">$&#x5C;multinomial{n&#x5C;choose k}$</span> is denoted a <strong>multinomial coefficient</strong>.</li>
+<li>Also counts the number of ways to select <span class="mathjax-exps">$k$</span> items <strong>with replacement</strong> from a set of size <span class="mathjax-exps">$n$</span>.</li>
+</ul>
+<h2 class="mume-header" id="catalan-numbers">Catalan Numbers</h2>
+
+<p>Consider the problem of counting the number of <span class="mathjax-exps">$n&#x5C;times n$</span> lattice paths that don’t go above the diagonal. Since every such path has to have a &quot;first hitting time&quot; for the diagonal, we can enumerate these using a recurrence relation. Let <span class="mathjax-exps">$C_n$</span> be the number of such paths. If the first hit occurs on the <span class="mathjax-exps">$k$</span>th diagonal, then there were <span class="mathjax-exps">$C_k$</span> paths leading there and <span class="mathjax-exps">$C_{n-k}$</span> paths to the top-right corner. This yields<br>
+<div class="mathjax-exps">$$C_{n+1} = &#x5C;sum_{i=0}^n C_i C_{n-i}$$</div><br>
+and using generating functions, it can be shown that<br>
+<div class="mathjax-exps">$$C_n = &#x5C;frac{1}{n+1}{2n &#x5C;choose n}$$</div></p>
+<h2 class="mume-header" id="stars-and-bars">Stars and Bars</h2>
+
+<p>A useful conceptual counting problem, as many other problems can be encoded as some version of this. The idea is we have an alphabet <span class="mathjax-exps">$&#x5C;Sigma = &#x5C;theset{&#x5C;star, &#x5C;mid}$</span> (&quot;star&quot; and &quot;bar&quot;), and we’d like to form certain words containing exactly <span class="mathjax-exps">$n$</span> copies of <span class="mathjax-exps">$&#x5C;star$</span> and <span class="mathjax-exps">$k$</span> copies of <span class="mathjax-exps">$&#x5C;mid$</span>.</p>
+<p>There are two variants: we’ll say a configuration of stars and bars is <em>strict</em> if a bar does not occur as the first or last symbol, and there are no two adjacent bars.</p>
+<h3 class="mume-header" id="variant-1-strict">Variant 1: Strict</h3>
+
+<p>This can be counted as<br>
+<div class="mathjax-exps">$$&#x5C;#&#x5C;theset{&#x5C;text{strict configurations of $n$ stars and $k-1$ bars}} = {n-1 &#x5C;choose k-1}$$</div></p>
+<p><em>Proof</em>: Lay out <span class="mathjax-exps">$n$</span> stars, which have <span class="mathjax-exps">$n-1$</span> gaps between them. From these gaps, choose any <span class="mathjax-exps">$k-1$</span> of them (without replacement) to contain bars.<span class="mathjax-exps">$&#x5C;qed$</span></p>
+<ul>
+<li>Note that this partitions the <span class="mathjax-exps">$n$</span> stars into <span class="mathjax-exps">$k$</span> nonempty groups, so this counts the number of ways to separate <span class="mathjax-exps">$n$</span> indistinguishable objects into <span class="mathjax-exps">$k$</span> nonempty groups,</li>
+<li>Alternatively, counts the number of compositions of <span class="mathjax-exps">$n$</span> into <span class="mathjax-exps">$k$</span> parts.</li>
+</ul>
+<h3 class="mume-header" id="variant-2-unrestricted">Variant 2: Unrestricted</h3>
+
+<p>With no restrictions of the configuration, we can count<br>
+<div class="mathjax-exps">$$&#x5C;#&#x5C;theset{&#x5C;text{unrestricted configurations of $n$ stars and $k-1$ bars}} = {n+k-1 &#x5C;choose k-1}$$</div></p>
+<p><em>Proof</em>: Since we just need to form an arbitrary word from <span class="mathjax-exps">$n$</span> stars and <span class="mathjax-exps">$k-1$</span> bars, simply place <span class="mathjax-exps">$n + (k-1)$</span> blanks, choose <span class="mathjax-exps">$k-1$</span> of them (without replacement) to be bars, and place stars everywhere else.</p>
+<p><em>Alternate proof</em>: Lay out <span class="mathjax-exps">$n$</span> stars, then from the <span class="mathjax-exps">$n-1$</span> gaps, choose <span class="mathjax-exps">$k-1$</span> gaps with replacement to contain bars. This can be done in <span class="mathjax-exps">$&#x5C;multinomial{n-1 &#x5C;choose k-1} = {n+k-1 &#x5C;choose k-1}$</span> ways. <span class="mathjax-exps">$&#x5C;qed$</span></p>
+<ul>
+<li>Note that this partitions <span class="mathjax-exps">$n$</span> stars into <span class="mathjax-exps">$k$</span> groups, some of which may be empty.</li>
+<li>Alternatively, counts the number of weak compositions of <span class="mathjax-exps">$n$</span> into <span class="mathjax-exps">$k$</span> parts.</li>
+</ul>
+<h2 class="mume-header" id="stirling-numbers-of-the-first-kind">Stirling Numbers of the First Kind</h2>
+
+<p>For a given <span class="mathjax-exps">$n$</span>, consider permutations <span class="mathjax-exps">$&#x5C;sigma &#x5C;in S_n$</span>. It can be written as a product of disjoint cycles in cycle notation, so one can ask how many permutations have exactly <span class="mathjax-exps">$k$</span> disjoint cycles. In other words, we have<br>
+<div class="mathjax-exps">$$&#x5C;sigma = &#x5C;overbrace{(a_1b_1&#x5C;cdots)(a_2b_2&#x5C;cdots)&#x5C;cdots(a_kb_k&#x5C;cdots)}^{k &#x5C;text{ cycles}} &#x5C;in S_n$$</div><br>
+in cycle notation, where we include cycles of length 1 (i.e. fixed points). We can thus count<br>
+<div class="mathjax-exps">$$&#x5C;#&#x5C;theset{&#x5C;text{permutations of $[n]$ with exactly $k$ disjoint cycles}} &#x5C;definedas c(n, k) = &#x5C;stirlingfirst{n}{k}$$</div><br>
+the <strong>unsigned Stirling number of the first kind</strong>.</p>
+<blockquote>
+<p>In other applications, there is a <strong>signed Stirling number of the first kind</strong> which are related by<br>
+<div class="mathjax-exps">$$s(n, k) &#x5C;definedas (-1)^{n-k}c(n, k), &#x5C;quad &#x5C;abs{s(n,k)} = c(n, k)$$</div><br>
+These yield the coefficients of <span class="mathjax-exps">$x^n$</span> in the falling factorial <span class="mathjax-exps">$x^{&#x5C;underline n} = x(x-1)&#x5C;cdots(x-n+1)$</span>.</p>
+</blockquote>
+<p>There isn’t a particularly nice closed form expression for <span class="mathjax-exps">$c(n, k)$</span>, so the main computational tool is the following recurrence relation they satisfy:<br>
+<div class="mathjax-exps">$$&#x5C;stirlingfirst n k = (n-1){&#x5C;stirlingfirst {n-1} k} + &#x5C;stirlingfirst{n-1}{k-1}$$</div><br>
+<em>Proof:</em> Either <span class="mathjax-exps">$n$</span> is a fixed point (i.e. in a cycle by itself) or it is not.</p>
+<ul>
+<li>If <span class="mathjax-exps">$n$</span> is a fixed point, we can delete the cycle <span class="mathjax-exps">$(n)$</span> from <span class="mathjax-exps">$&#x5C;sigma$</span> to obtain a permutation of <span class="mathjax-exps">$[n-1]$</span> with <span class="mathjax-exps">$k-1$</span> cycles. Conversely, we can lift any permutation of <span class="mathjax-exps">$[n-1]$</span> with <span class="mathjax-exps">$k-1$</span> cycles to a permutation of <span class="mathjax-exps">$[n]$</span> by just adding the cycle <span class="mathjax-exps">$(n)$</span>, which can only be done in one way, yielding the second term</li>
+<li>Otherwise, <span class="mathjax-exps">$n$</span> appears in a cycle with other elements. We can delete it to obtain a permutation of <span class="mathjax-exps">$[n-1]$</span> which still has <span class="mathjax-exps">$k$</span> cycles; conversely, given such a permutation, consider the operation of multiplying <span class="mathjax-exps">$&#x5C;sigma$</span> by the transposition <span class="mathjax-exps">$(n~i)$</span> where <span class="mathjax-exps">$1&#x5C;leq i&#x5C;leq n-1$</span>. This has the effect of inserting <span class="mathjax-exps">$n$</span> into the cycle containing <span class="mathjax-exps">$i$</span>, and in fact puts it right before <span class="mathjax-exps">$i$</span>, i.e.<br>
+<div class="mathjax-exps">$$(a_1 a_2 &#x5C;cdots a_{k}~ i ~ a_{k+1} &#x5C;cdots a_m)(n~i) =  (a_1 a_2 &#x5C;cdots a_{k}~ n ~ i ~ a_{k+1} &#x5C;cdots a_m).$$</div><br>
+There are exactly <span class="mathjax-exps">$n-1$</span> choices for <span class="mathjax-exps">$i$</span>, and each one yields a way to insert <span class="mathjax-exps">$n$</span> into an existing cycle, yielding the first term. <span class="mathjax-exps">$&#x5C;qed$</span></li>
+</ul>
+<h2 class="mume-header" id="stirling-numbers-of-the-second-kind">Stirling Numbers of the Second Kind</h2>
+
+<p>A <strong>set partition of <span class="mathjax-exps">$[n]$</span> into <span class="mathjax-exps">$k$</span> parts</strong> is a collection <span class="mathjax-exps">$S_1, S_2, &#x5C;cdots S_k$</span> where</p>
+<ul>
+<li><span class="mathjax-exps">$S_i &#x5C;subseteq [n]$</span> for each <span class="mathjax-exps">$i$</span></li>
+<li><span class="mathjax-exps">$S_i &#x5C;neq &#x5C;emptyset$</span> for any <span class="mathjax-exps">$i$</span>,</li>
+<li><span class="mathjax-exps">$S_i &#x5C;intersect S_j = &#x5C;emptyset$</span> for all pairs <span class="mathjax-exps">$1 &#x5C;leq i,j &#x5C;leq k$</span> (so all of the <span class="mathjax-exps">$S_i$</span> are disjoint), and</li>
+<li><span class="mathjax-exps">$[n] = S_1 &#x5C;disjoint S_2 &#x5C;disjoint &#x5C;cdots &#x5C;disjoint S_k$</span></li>
+</ul>
+<p>We can then count<br>
+<div class="mathjax-exps">$$&#x5C;#&#x5C;theset{&#x5C;text{Set partitions of $[n]$ into $k$ parts}} &#x5C;definedas S(n, k) = &#x5C;stirling n k,$$</div><br>
+which is referred to as the Stirling number of the second kind. Although there is a closed-form formula for it, it is not particulary nice – the primary method of computing it comes from a recurrence relation it satisfies:<br>
+<div class="mathjax-exps">$$&#x5C;stirling n k = k&#x5C;stirling {n-1} {k} + &#x5C;stirling{n-1}{k-1}$$</div></p>
+<p><em>Proof (with a valuable technique!)</em>: When forming a set partition of <span class="mathjax-exps">$[n]$</span> into <span class="mathjax-exps">$k$</span> parts, there are two disjoint cases: either <span class="mathjax-exps">$n$</span> is in a singleton set, or it is not.</p>
+<ul>
+<li>If <span class="mathjax-exps">$n$</span> a singleton, throw that part away. What remains is a partition of <span class="mathjax-exps">$n-1$</span> into <span class="mathjax-exps">$k-1$</span> parts.  Conversely, given any partition of <span class="mathjax-exps">$n-1$</span> into <span class="mathjax-exps">$k-1$</span> parts, we can add the part <span class="mathjax-exps">$&#x5C;theset{n}$</span> to obtain a partition of <span class="mathjax-exps">$n$</span> into <span class="mathjax-exps">$k$</span> parts where <span class="mathjax-exps">$n$</span> is a singleton. This yields the second term.</li>
+<li>If it is not, <span class="mathjax-exps">$n$</span> is some <span class="mathjax-exps">$S_i$</span> with at least 1 other element. Letting <span class="mathjax-exps">$S&#x27;_i = S_i - &#x5C;theset{n} &#x5C;neq &#x5C;emptyset$</span> we get a partition of <span class="mathjax-exps">$n-1$</span> into <span class="mathjax-exps">$k$</span> parts. Conversely, given any partition of <span class="mathjax-exps">$n-1$</span> into <span class="mathjax-exps">$k$</span> parts, we can form a partition of <span class="mathjax-exps">$n$</span> into <span class="mathjax-exps">$k$</span> parts where <span class="mathjax-exps">$n$</span> is not a singleton by adding <span class="mathjax-exps">$n$</span> to any part. Note that there are <span class="mathjax-exps">$k$</span> choices for which part to add <span class="mathjax-exps">$n$</span> to, yielding the first term. <span class="mathjax-exps">$&#x5C;qed$</span></li>
+</ul>
+<h2 class="mume-header" id="compositions">Compositions</h2>
+
+<p>In general, a composition is a way of writing <span class="mathjax-exps">$n$</span> as a sum of positive integers, i.e. <span class="mathjax-exps">$n = a_1 + a_2 + &#x5C;cdots$</span> where <span class="mathjax-exps">$a_i &#x5C;in &#x5C;ZZ$</span>. There are infinitely many of these, so to count anything, we need to place various restrictions:</p>
+<h3 class="mume-header" id="strong-compositions">Strong Compositions</h3>
+
+<p>A <strong>composition of <span class="mathjax-exps">$n$</span> into <span class="mathjax-exps">$k$</span> parts</strong> is an <strong>ordered list</strong> <span class="mathjax-exps">$[a_1, a_2, &#x5C;cdots a_k]$</span> such that <span class="mathjax-exps">$&#x5C;sum_{i=1}^k a_i = n$</span> and for each <span class="mathjax-exps">$i$</span> we have <span class="mathjax-exps">$0 &lt; a_i &#x5C;leq n$</span>. (Note that we <strong>do not</strong> allow any <span class="mathjax-exps">$a_i$</span> to be zero now.)</p>
+<p>These can be counted as<br>
+<div class="mathjax-exps">$$&#x5C;mathrm{comp}(n, k) = &#x5C;#&#x5C;theset{&#x5C;text{compositions of $n$ into $k$ parts}} &#x5C;&#x5C; = &#x5C;multinomial{n+1 &#x5C;choose k-1} &#x5C;&#x5C; = {n+k-1 &#x5C;choose k}$$</div><br>
+where <span class="mathjax-exps">$&#x5C;multinomial{a &#x5C;choose b}$</span> is the multinomial coefficient. This follows from by a bijection with strict stars and bars configurations. Note that distinct lists yields distinct compositions.</p>
+<h3 class="mume-header" id="weak-compositions">Weak Compositions</h3>
+
+<p>A <strong>weak composition of <span class="mathjax-exps">$n$</span> into <span class="mathjax-exps">$k$</span> parts</strong> is an <strong>ordered list</strong> <span class="mathjax-exps">$[a_1, a_2, &#x5C;cdots a_k]$</span> such that<span class="mathjax-exps">$&#x5C;sum_{i=1}^k a_i = n$</span> and for each <span class="mathjax-exps">$i$</span> we have <span class="mathjax-exps">$0 &#x5C;leq a_i &#x5C;leq n$</span>. (Note that we allow some <span class="mathjax-exps">$a_i$</span> to be zero.)</p>
+<p>These can be counted as<br>
+<div class="mathjax-exps">$$&#x5C;mathrm{comp}_W(n, k)  = &#x5C;#&#x5C;theset{&#x5C;text{weak compositions of $n$ into $k$ parts}} &#x5C;&#x5C; = {n-1 &#x5C;choose n-k},$$</div><br>
+which follows from a bijection with unrestricted stars and bars configurations. Note that distinct lists yields distinct compositions.</p>
+<h3 class="mume-header" id="integer-partitions">Integer Partitions</h3>
+
+<p>An <strong>integer partition of <span class="mathjax-exps">$n$</span> into <span class="mathjax-exps">$k$</span> parts</strong> is a strong composition of <span class="mathjax-exps">$n$</span> into <span class="mathjax-exps">$k$</span> parts where we identify any compositions that differ by a permutation of of parts. In other words, it is a <strong>set</strong> of integers <span class="mathjax-exps">$[a_1, a_2, &#x5C;cdots a_k]$</span> such that <span class="mathjax-exps">$&#x5C;sum_{i=1}^k a_i = n$</span> and for each i, <span class="mathjax-exps">$1 &#x5C;leq a_i &#x5C;leq n$</span>.</p>
+<p><em>Example</em>: The strong compositions of 4 are</p>
+<div class="code-chunk" data-id="code-chunk-id-0" data-cmd="/usr/bin/sage"><div class="input-div"><pre data-role="codeBlock" data-info="python {code_chunk_offset=0, cmd=&amp;amp;quot;&amp;amp;#x2F;usr&amp;amp;#x2F;bin&amp;amp;#x2F;sage&amp;amp;quot;}" class="language-python"><span class="token keyword">from</span> sage<span class="token punctuation">.</span><span class="token builtin">all</span> <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span>Compositions<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token builtin">len</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</pre><div class="btn-group"><div class="run-btn btn"><span>▶︎</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div><div class="output-div"><pre class="language-text">[[4], [1, 3], [2, 2], [3, 1], [1, 1, 2], [1, 2, 1], [2, 1, 1], [1, 1, 1, 1]]
+</pre></div></div><p>while the integer partitions are</p>
+<div class="code-chunk" data-id="code-chunk-id-1" data-cmd="/usr/bin/sage"><div class="input-div"><pre data-role="codeBlock" data-info="python {code_chunk_offset=1, cmd=&amp;amp;quot;&amp;amp;#x2F;usr&amp;amp;#x2F;bin&amp;amp;#x2F;sage&amp;amp;quot;}" class="language-python"><span class="token keyword">from</span> sage<span class="token punctuation">.</span><span class="token builtin">all</span> <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span>Partitions<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token builtin">len</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</pre><div class="btn-group"><div class="run-btn btn"><span>▶︎</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div><div class="output-div"><pre class="language-text">[[4], [3, 1], [2, 2], [2, 1, 1], [1, 1, 1, 1]]
+</pre></div></div><p>Note that <span class="mathjax-exps">$[3,1]$</span> and <span class="mathjax-exps">$[1,3]$</span> are distinct as compositions of 4 into 2 parts, but are identified as partitions of 4 into 2 parts.</p>
+<p>These are generally difficult to count, but we can define<br>
+<div class="mathjax-exps">$$&#x5C;begin{aligned} &#x5C;# &#x5C;theset{&#x5C;text{Integer partitions of $n$ into $k$ parts}} &amp;&#x5C;definedas p(n, k) &#x5C;&#x5C; &#x5C;# &#x5C;theset{&#x5C;text{Integer partitions of $n$ into any number of parts}} &amp;&#x5C;definedas p(n). &#x5C;end{aligned}$$</div></p>
+<p>Integer partitions are in bijective correspondence with <strong>Ferrer’s diagrams</strong>, which provide many useful ways of extracting information via diagram operations. The most important operation is <strong>conjugation</strong>, which is flipping a diagram about its main diagonal. This operation can be used to prove the following bijections between types of integer partitions:</p>
+<p><div class="mathjax-exps">$$&#x5C;begin{aligned} &#x5C;#&#x5C;theset{&#x5C;text{Exactly $k$ parts}} &amp;= &#x5C;#&#x5C;theset{&#x5C;text{Largest part $= k$}}&#x5C;&#x5C; &#x5C;#&#x5C;theset{&#x5C;text{Any number of parts, where every part is $&#x5C;leq k$}} &amp;= &#x5C;#&#x5C;theset{&#x5C;text{At most $k$ parts}} &#x5C;&#x5C; &#x5C;#&#x5C;theset{&#x5C;text{Any number of distinct, odd parts}} &amp;= &#x5C;#&#x5C;theset{&#x5C;text{Self-conjugate partitions}} &#x5C;end{aligned}$$</div></p>
+<h1 class="mume-header" id="generating-functions">Generating Functions</h1>
+
+<h2 class="mume-header" id="solving-recurrences">Solving Recurrences</h2>
+
+<p>Usually given or put in the form of <span class="mathjax-exps">$a_n = f(a_{n-1}, a_{n-2}, &#x5C;cdots)$</span></p>
+<p>The secret sauce:</p>
+<ol>
+<li>Declare your generating function <span class="mathjax-exps">$A(x) = &#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} a_n x^n$</span></li>
+<li>Multiply the recurrence through by <span class="mathjax-exps">$x^n$</span>.</li>
+<li>“Integrate out” by summing over all values of <span class="mathjax-exps">$n$</span> for which the recurrence is valid.</li>
+<li>Write everything you see in terms of <span class="mathjax-exps">$A(x), A&#x27;(x)$</span>, or other polynomials in <span class="mathjax-exps">$x$</span>.</li>
+<li>Solve for <span class="mathjax-exps">$A(x)$</span> to get some analytic function.</li>
+<li>(Optional) Produce a closed-form formula for <span class="mathjax-exps">$a_n$</span> by expanding the analytic function as a power series, or using <strong>coefficient extraction</strong>:<br>
+<div class="mathjax-exps">$$a_n = &#x5C;frac{1}{n!} &#x5C;restrictionof{&#x5C;dd{^n A(x)}{x^n}}{x=0}$$</div></li>
+</ol>
+<h2 class="mume-header" id="sequences-sums-and-closed-forms">Sequences, Sums, and Closed Forms</h2>
+
+<ul>
+<li>A right shift is the operation <span class="mathjax-exps">$[a_0, a_1, a_2, &#x5C;cdots] &#x5C;mapsto [0, a_0, a_1, &#x5C;cdots]$</span>, so <span class="mathjax-exps">$R(A(n)) = A(n-1)$</span></li>
+<li>A left shift is the operation <span class="mathjax-exps">$[a_0, a_1, a_2, &#x5C;cdots] &#x5C;mapsto [a_1, a_2, a_3 &#x5C;cdots]$</span>, so <span class="mathjax-exps">$L(A(n)) = A(n+1)$</span>
+<ul>
+<li>Note that this loses information! <span class="mathjax-exps">$a_0$</span> disappears.</li>
+<li>Generally done by derivatives.</li>
+</ul>
+</li>
+</ul>
+<p>Ordinary Generating Functions</p>
+<table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>OGF</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mathjax-exps">$[1, 1,   1,    &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}1x^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, -1,   1,    &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1+x}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}(-1)^nx^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[r, r^2, r^3,  &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-rx}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}r^nx^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, 0,   1,    &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x^2}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}1x^{2n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, 0,   0,  1,  &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x^3}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}1x^{3n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, 2,   3,  4,  &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;dd{}{x}&#x5C;frac 1 {1-x} = &#x5C;left(&#x5C;frac{1}{1-x}&#x5C;right)^2$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}(n+1)x^{n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[0, 1, 2,   3,   &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$x&#x5C;dd{}{x}&#x5C;frac 1 {1-x} = x&#x5C;left(&#x5C;frac{1}{1-x}&#x5C;right)^2$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}nx^{n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1,{c &#x5C;choose 1}, {c &#x5C;choose 2}, &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$(1+x)^c$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}{c &#x5C;choose n}x^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, {c+1 &#x5C;choose 1}, {c+2 &#x5C;choose 2}, &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;left( &#x5C;frac 1 {1-x} &#x5C;right)^c$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n &#x5C;geq 0}{n+c &#x5C;choose n} x^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[0,&#x5C;cdots 0, {c &#x5C;choose c}, {c+1 &#x5C;choose c}, &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$x^c &#x5C;left(&#x5C;frac{1}{1-x}&#x5C;right)^{c+1}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq c}{n &#x5C;choose c}x^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, A(x), A(x)^2, &#x5C;cdots ]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac {1}{1-A(x)}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} A(x)^n {x^n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[&#x5C;sum_{i=0}^0 a_i, &#x5C;sum_{i=0}^1 a_i, &#x5C;sum_{i=0}^2 a_i, &#x5C;cdots ]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac{A(x)}{1-x}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} &#x5C;left(&#x5C;sum_{i=0}^n a_n&#x5C;right) &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+</tbody>
+</table>
+<p>Exponential Generating Functions</p>
+<table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>EGF</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mathjax-exps">$[1, 1,   1,    &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$e^x$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}1 &#x5C;frac {x^n} {n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[r, r^2, r^3,  &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$e^{rx}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}r^n&#x5C;frac {x^n} {n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, 0,   1,    &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;cosh(x)$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}1 &#x5C;frac {x^{2n}} {n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, 0,   0,  1,  &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$?$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n &#x5C;geq 0} 1&#x5C;frac{x^{2n}}{(2n)!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[0, 1, 2,   3,  &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$xe^x$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1}n &#x5C;frac {x^n} {n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1,{c &#x5C;choose 1}, {c &#x5C;choose 2}, &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$(1+x)^c$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}{c &#x5C;choose n}&#x5C;frac {x^n} {n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[0,&#x5C;cdots 0, {c &#x5C;choose c}, {c+1 &#x5C;choose c}, &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$x^c &#x5C;left(&#x5C;frac{1}{1-x}&#x5C;right)^{c+1}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq c}{n &#x5C;choose c}&#x5C;frac {x^n} {n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, {c+1 &#x5C;choose 1}, {c+2 &#x5C;choose 2}, &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;left( &#x5C;frac 1 {1-x} &#x5C;right)^c$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n &#x5C;geq 0}{n+c &#x5C;choose n} &#x5C;frac {x^n} {n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[0, 0!, 1!, 2!, &#x5C;cdots ]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;ln &#x5C;frac{1}{1-x}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n &#x5C;geq 0}(n-1)! &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$[1, A(x), A(x)^2, &#x5C;cdots ]$</span></td>
+<td><span class="mathjax-exps">$e^{A(x)}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} A(x)^n &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="sequence-lookup">Sequence Lookup</h2>
+
+<table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>OGF</th>
+<th>EGF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n=k}$</span></td>
+<td><span class="mathjax-exps">$x^k$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac{x^k}{k!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n &#x5C;geq 0} (&#x5C;NN)$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x}$</span></td>
+<td><span class="mathjax-exps">$e^x$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n &#x5C;geq 1} (&#x5C;NN_{&#x5C;geq 1})$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac x {1-x}$</span></td>
+<td><span class="mathjax-exps">$e^x - 1$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n &#x5C;geq 2} (&#x5C;NN_{&#x5C;geq 2})$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac {x^2} {1-x}$</span></td>
+<td><span class="mathjax-exps">$e^x - 1 - x$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n &#x5C;geq k}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac {x^k} {1-x}$</span></td>
+<td><span class="mathjax-exps">$e^x - &#x5C;displaystyle&#x5C;sum_{n=0}^k &#x5C;frac{x^n}{n!} =&#x5C;displaystyle&#x5C;sum_{n=k+1}^&#x5C;infty &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n &#x5C;leq k}$</span></td>
+<td><span class="mathjax-exps">$1+x+x^2+&#x5C;cdots +x^k$</span></td>
+<td><span class="mathjax-exps">$1 + x + &#x5C;frac{x^2}{2} + &#x5C;cdots +&#x5C;frac{x^k}{k!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n&#x5C;text{ even}}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac{1}{1-x^2}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;cosh(x)$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n&#x5C;text{ odd}}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac{x}{1-x^2}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;sinh(x)$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = &#x5C;indicator{n = k, k^2, &#x5C;cdots}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x^k}$</span></td>
+<td><span class="mathjax-exps">$e^{kx}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = {n &#x5C;choose c}$</span></td>
+<td><span class="mathjax-exps">$ex$</span></td>
+<td><span class="mathjax-exps">$x^c &#x5C;left(&#x5C;frac{1}{1-x}&#x5C;right)^{c+1}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = {n+c &#x5C;choose n}$</span></td>
+<td><span class="mathjax-exps">$ex$</span></td>
+<td><span class="mathjax-exps">$&#x5C;left( &#x5C;frac 1 {1-x} &#x5C;right)^c$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = {c &#x5C;choose n}$</span></td>
+<td>$$</td>
+<td><span class="mathjax-exps">$(1+x)^c$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$a_n = n!$</span></td>
+<td><span class="mathjax-exps">$&#x5C;emptyset$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac{1}{1-x}$</span></td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="operations">Operations</h2>
+
+<p>A <em>linear ordered partition</em> of <span class="mathjax-exps">$[n]$</span> (say, into 2 blocks) is a set partition <div class="mathjax-exps">$$[n] = S_1 &#x5C;disjoint S_2$$</div> where <div class="mathjax-exps">$$x&#x5C;in S_1 &#x5C;implies &#x5C;forall y&#x5C;in S_2, x &#x5C;leq y.$$</div><br>
+In other words, <span class="mathjax-exps">$S_1 = [1, 2, &#x5C;cdots, m]$</span> and <span class="mathjax-exps">$S_2 = [m+1, m+2, &#x5C;cdots, n]$</span>. The <em>linear</em> part denotes the inequality, while the <em>ordered</em> part denotes the fact that we are labeling the <span class="mathjax-exps">$S_i$</span> with ordered numbers, choosing which <span class="mathjax-exps">$S_i$</span> to call &quot;1&quot;, &quot;2&quot;, and so on.</p>
+<p>An <em>arbitrary ordered partition</em> of <span class="mathjax-exps">$[n]$</span> (again into 2 parts) is a set partition as above, where we no longer require the inequality. The <em>ordered</em> portion again denotes the labels on the <span class="mathjax-exps">$S_i$</span>, so we have <span class="mathjax-exps">$[S_1, S_2] &#x5C;neq [S_2, S_1]$</span>  and distinguish these as ordered partitions.</p>
+<p><strong>Ordinary Generating Functions</strong></p>
+<table>
+<thead>
+<tr>
+<th>OGF Operation</th>
+<th>Effect</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mathjax-exps">$xA(x)$</span></td>
+<td>Right shift</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}a_{n} x^{n+1} = &#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1}a_{n-1} x^{n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$x&#x5C;inv (A(x) - a_0)$</span></td>
+<td>Left shift</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}a_{n+1} x^{n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$&#x5C;dd{}{x}A(x)$</span></td>
+<td>Multiply by index, then left shift</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1}n a_n x^{n-1} = &#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}(n+1) a_{n+1}x^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$x&#x5C;dd{}{x}A(x)$</span></td>
+<td>Multiply by index</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}n a_n x^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;int A(x)$</span></td>
+<td>Divide by index, then right shift</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}&#x5C;frac 1 {n+1} a^{n}x^{n+1} = &#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1}&#x5C;frac 1 n a_{n-1} x^{n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;int x&#x5C;inv(A(x) - a_0)$</span></td>
+<td>Divide by index</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1} &#x5C;frac{1}{n} a_n x^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$C(x) = A(x)B(x)$</span></td>
+<td>Convolution / Sum over ways to split into 2 <strong>linear</strong> parts</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} &#x5C;left( &#x5C;displaystyle&#x5C;sum_{i+j=n} a_i b_j&#x5C;right)x^n$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$D(x) = A(x)B(x)C(x)$</span></td>
+<td>Convolution / Sum over ways to split into 3 <strong>linear</strong> parts</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} &#x5C;left( &#x5C;displaystyle&#x5C;sum_{i+j+k=n} a_i b_j c_k&#x5C;right) {x^n}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$F(x) = A(B(x))$</span></td>
+<td>Partition into <strong>any number of linearly ordered blocks</strong>, put a <span class="mathjax-exps">$B$</span> structure within each block, and an <span class="mathjax-exps">$A$</span> structure on the collection of blocks</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} a_n {&#x5C;left( &#x5C;displaystyle&#x5C;sum_{m&#x5C;geq 0} b_m &#x5C;frac{x^m}{m!}&#x5C;right)^n}$</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exponential Generating Functions</strong></p>
+<table>
+<thead>
+<tr>
+<th>EGF Operation</th>
+<th>Effect</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mathjax-exps">$xA(x)$</span></td>
+<td>Index multiply, then right shift</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}a_{n} &#x5C;frac{x^{n+1}}{n!} = &#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1}n a_{n-1} &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$x&#x5C;inv (A(x) - a_0)$</span></td>
+<td>Index divide, then left shift</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}a_{n+1} &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$&#x5C;dd{}{x}A(x)$</span></td>
+<td>Left shift</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1}n a_n &#x5C;frac{x^{n-1}}{n!} = &#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}a_{n+1} &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;int A(x)$</span></td>
+<td>Right shift</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}&#x5C;frac {a^{n}} {n+1} &#x5C;frac{x^{n+1}}{n!} = &#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1} a_{n-1} &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$x&#x5C;dd{}{x}A(x)$</span></td>
+<td>Index multiply</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0}n a_{n} &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;int x&#x5C;inv (A(x) - a_0)?$</span></td>
+<td>Index divide</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 1} &#x5C;frac{a_n}{n} &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$C(x) = A(x)B(x)$</span></td>
+<td>Convolution / Sum over ways to split into 2 <strong>arbitrary</strong> blocks</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} &#x5C;left( &#x5C;displaystyle&#x5C;sum_{i+j=n} a_i b_j&#x5C;right) &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$D(x) = A(x)B(x)C(x)$</span></td>
+<td>Convolution / Sum over ways to split into 3 <strong>arbitrary</strong> blocks</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} &#x5C;left( &#x5C;displaystyle&#x5C;sum_{i+j+k=n} a_i b_j c_k&#x5C;right) &#x5C;frac{x^n}{n!}$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$F(x) = A(B(x))$</span></td>
+<td>Partition into <strong>any number of ordered blocks</strong>, put a <span class="mathjax-exps">$B$</span> structure within each block, and an <span class="mathjax-exps">$A$</span> structure on the collection of blocks</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{n&#x5C;geq 0} a_n {&#x5C;left( &#x5C;displaystyle&#x5C;sum_{m&#x5C;geq 0} b_m &#x5C;frac{x^m}{m!}&#x5C;right)^n}&#x5C;frac{1}{n!}$</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Comparisons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>OGF</th>
+<th>EGF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Right Shift</td>
+<td><span class="mathjax-exps">$xA(x)$</span></td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;int_0^x A(x)$</span></td>
+</tr>
+<tr>
+<td>Left Shift</td>
+<td><span class="mathjax-exps">$x&#x5C;inv (A(x) - a_0)$</span></td>
+<td><span class="mathjax-exps">$&#x5C;dd{}{x} A(x)$</span></td>
+</tr>
+<tr>
+<td>Index Multiply</td>
+<td><span class="mathjax-exps">$x&#x5C;dd{}{x}A(x)$</span></td>
+<td><span class="mathjax-exps">$A(x)$</span></td>
+</tr>
+<tr>
+<td>Index Divide</td>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;int_0^x x&#x5C;inv (A(x) - a_0)$</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$A(x)B(x)$</span></td>
+<td>2 linearly ordered blocks, <span class="mathjax-exps">$A&#x5C;dash$</span>structure on block 1, <span class="mathjax-exps">$B&#x5C;dash$</span>structure on block 2</td>
+<td>2 arbitrary ordered blocks, <span class="mathjax-exps">$A&#x5C;dash$</span>structure on block 1, <span class="mathjax-exps">$B&#x5C;dash$</span>structure on block 2</td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$A(x)B(x)C(x)$</span></td>
+<td>3 linearly ordered blocks, <span class="mathjax-exps">$A&#x5C;dash$</span>structure on block 1, <span class="mathjax-exps">$B&#x5C;dash$</span>structure on block 2, <span class="mathjax-exps">$C&#x5C;dash$</span>structure on block 3</td>
+<td>3 arbitrary ordered blocks, <span class="mathjax-exps">$A&#x5C;dash$</span>structure on block 1, <span class="mathjax-exps">$B&#x5C;dash$</span>structure on block 2, <span class="mathjax-exps">$C&#x5C;dash$</span>structure on block 3</td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$&#x5C;displaystyle &#x5C;prod_{i=1}^k A_i(x)$</span></td>
+<td><span class="mathjax-exps">$k$</span> linearly ordered blocks, an <span class="mathjax-exps">$A_i$</span> structure on block <span class="mathjax-exps">$i$</span></td>
+<td><span class="mathjax-exps">$k$</span> arbitrary ordered blocks, an <span class="mathjax-exps">$A_i$</span> structure on block <span class="mathjax-exps">$i$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$A(x)^k$</span></td>
+<td><span class="mathjax-exps">$k$</span> linearly ordered blocks, an <span class="mathjax-exps">$A$</span> structure on every block</td>
+<td><span class="mathjax-exps">$k$</span> arbitrary ordered blocks, an <span class="mathjax-exps">$A$</span> structure on every block</td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$&#x5C;displaystyle&#x5C;sum_{i=1}^&#x5C;infty A(x)^i = A(x) + A(x)^2 + &#x5C;cdots$</span></td>
+<td><strong>Any # of linearly ordered blocks</strong>, an <span class="mathjax-exps">$A$</span> structure on every block</td>
+<td><strong>Any # of ordered blocks</strong>, an <span class="mathjax-exps">$A$</span> structure on every block</td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$B(A(x))$</span></td>
+<td><strong>Any # of linearly ordered blocks</strong>, <span class="mathjax-exps">$A&#x5C;dash$</span>structure on each block, <span class="mathjax-exps">$B&#x5C;dash$</span>structure on <strong>collection</strong> of blocks</td>
+<td><strong>Any # of ordered blocks</strong>, an <span class="mathjax-exps">$A&#x5C;dash$</span>structure on each block, <span class="mathjax-exps">$B&#x5C;dash$</span>structure on <strong>collection</strong> of blocks</td>
+</tr>
+</tbody>
+</table>
+<p>Note that</p>
+<ul>
+<li>For OGFs, <span class="mathjax-exps">$A(x) + A(x)^2 + &#x5C;cdots = &#x5C;frac{1}{1-A(x)}$</span>, which is <span class="mathjax-exps">$B(A(x))$</span> for <span class="mathjax-exps">$B(x) = &#x5C;frac{1}{1-x}$</span></li>
+<li>For EGFs, <span class="mathjax-exps">$A(x) + &#x5C;frac{A(x)^2}{2} + &#x5C;frac{A(x)^3}{3!} + &#x5C;cdots = e^{A(x)}$</span>, which is <span class="mathjax-exps">$B(A(x))$</span> for <span class="mathjax-exps">$B(x) = e^x$</span>.</li>
+</ul>
+<h2 class="mume-header" id="structures">Structures</h2>
+
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Sequence</th>
+<th>OGF</th>
+<th>EGF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Be exactly <span class="mathjax-exps">$n$</span></td>
+<td><span class="mathjax-exps">$[0, 0, &#x5C;cdots 0, 1, 0, &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$x^n$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac {x^n} {n!}$</span></td>
+</tr>
+<tr>
+<td>Be a natural number <span class="mathjax-exps">$&#x5C;geq 0$</span></td>
+<td><span class="mathjax-exps">$[1,1,1,&#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x}$</span></td>
+<td><span class="mathjax-exps">$e^x$</span></td>
+</tr>
+<tr>
+<td>Be a natural number <span class="mathjax-exps">$&#x5C;geq 1$</span></td>
+<td><span class="mathjax-exps">$[0,1,1,&#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac x {1-x}$</span></td>
+<td><span class="mathjax-exps">$e^x - 1$</span></td>
+</tr>
+<tr>
+<td>Be an even number</td>
+<td><span class="mathjax-exps">$[1,0,1,0&#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x^2}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;cosh(x)$</span></td>
+</tr>
+<tr>
+<td>Be an odd positive number</td>
+<td><span class="mathjax-exps">$[0,1,0,1,&#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac x {1-x^2}$</span></td>
+<td><span class="mathjax-exps">$&#x5C;sinh(x)$</span></td>
+</tr>
+<tr>
+<td>Be an odd number or zero</td>
+<td><span class="mathjax-exps">$[1,1,0,1,&#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac x {1-x^2} + 1$</span></td>
+<td><span class="mathjax-exps">$&#x5C;sinh(x)+1$</span></td>
+</tr>
+<tr>
+<td>Be an even positive number</td>
+<td><span class="mathjax-exps">$[0,0,1,0&#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x^2} - 1$</span></td>
+<td><span class="mathjax-exps">$&#x5C;cosh(x) - 1$</span></td>
+</tr>
+<tr>
+<td>Be a multiple of <span class="mathjax-exps">$k$</span></td>
+<td><span class="mathjax-exps">$[1,0,&#x5C;cdots 0,1,0,&#x5C;cdots 0, 1, 0, &#x5C;cdots]$</span></td>
+<td><span class="mathjax-exps">$&#x5C;frac 1 {1-x^k}$</span></td>
+<td><span class="mathjax-exps">$1 + &#x5C;frac{x^k}{k!} + &#x5C;frac{x^{2k}}{(2k)!} + &#x5C;cdots$</span></td>
+</tr>
+</tbody>
+</table>
+<p>Note</p>
+<ul>
+<li>Zero is included as an even number.</li>
+<li><span class="mathjax-exps">$&#x5C;frac{1}{2}(e^x + e^{-x}) = &#x5C;cosh(x)$</span></li>
+<li><span class="mathjax-exps">$&#x5C;frac{1}{2}(e^x - e^{-x}) = &#x5C;sinh(x)$</span></li>
+<li><span class="mathjax-exps">$&#x5C;dd{}{x} &#x5C;sinh(x) = &#x5C;cosh(x)$</span></li>
+<li><span class="mathjax-exps">$&#x5C;dd{}{x} &#x5C;cosh(x) = &#x5C;sinh(x)$</span></li>
+</ul>
+<h3 class="mume-header" id="interpretations">Interpretations</h3>
+
+<ul>
+<li><em>Be an empty set</em>
+<ul>
+<li>Only possible if you have zero elements, so take <span class="mathjax-exps">$[1,0,0,&#x5C;cdots]$</span></li>
+</ul>
+</li>
+<li><em>Be a non-empty set</em>
+<ul>
+<li>Possible unless you have zero elements, so <span class="mathjax-exps">$[0, 1, 1, &#x5C;cdots]$</span></li>
+</ul>
+</li>
+<li><em>Be a set / trivial structure</em>
+<ul>
+<li>1 way for any collection of <span class="mathjax-exps">$n$</span> elements, so take the sequence <span class="mathjax-exps">$[1,1,1,&#x5C;cdots]$</span></li>
+<li>Alternatively, disjoint cases of “be an empty set” or “be a non-empty set”, so just add the previous two sequences.</li>
+</ul>
+</li>
+<li><em>Be a set containing <span class="mathjax-exps">$n$</span> elements</em>
+<ul>
+<li>0 ways, unless you have exactly <span class="mathjax-exps">$n$</span> elements, so take the sequence <span class="mathjax-exps">$[0, 0, &#x5C;cdots 0, 1, 0, &#x5C;cdots]$</span></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$x^k:$</span>
+<ul>
+<li>Include the integer <span class="mathjax-exps">$k$</span> exactly once.</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$(1 + x^k):$</span>
+<ul>
+<li>Either exclude <span class="mathjax-exps">$k$</span>, or include it exactly once.</li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$1 + x^k + x^{2k} + &#x5C;cdots = &#x5C;frac 1 {1-x^k}:$</span>
+<ul>
+<li>Disjoint choices: include <span class="mathjax-exps">$k$</span> 0 times, or once, or twice, or <span class="mathjax-exps">$&#x5C;cdots$</span></li>
+</ul>
+</li>
+<li><span class="mathjax-exps">$x^k(1 + x^k + x^{2k} + &#x5C;cdots) = &#x5C;frac{x^k}{1-x^k}:$</span>
+<ul>
+<li>Include <span class="mathjax-exps">$k$</span> at least once.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="some-known-generating-functions">Some Known Generating Functions</h2>
+
+<p><div class="mathjax-exps">$$&#x5C;begin{align*} &#x5C;sum_{n&#x5C;geq 0} &#x5C;stirling n k x^n &amp;= &#x5C;frac{x^k}{(1-x)(1-2x)&#x5C;cdots(1-kx)} =&amp; x^k&#x5C;prod_{i=1}^k &#x5C;frac 1 {1-ix} &#x5C;&#x5C; &#x5C;sum_{n&#x5C;geq 0} k! &#x5C;stirling n k &#x5C;frac{x^n}{n!} &amp;= (e^x-1)(e^x-1)&#x5C;cdots(e^x-1) =&amp; (e^x-1)^k &#x5C;&#x5C; &#x5C;sum_{n&#x5C;geq 0} &#x5C;#&#x5C;theset{&#x5C;text{$&#x5C;NN$ Partitions}} x^n &amp;= &#x5C;frac{1}{(1-x)(1-x^2)(1-x^3)&#x5C;cdots} =&amp; &#x5C;prod_{i=1}^&#x5C;infty &#x5C;frac 1 {1-x^i} &#x5C;&#x5C; &#x5C;sum_{n&#x5C;geq 0} &#x5C;#&#x5C;theset{&#x5C;text{$&#x5C;NN$ Partitions, only odd parts}} x^n &amp;= &#x5C;frac{1}{(1-x)(1-x^3)(1-x^5)&#x5C;cdots} =&amp; &#x5C;prod_{i=1}^&#x5C;infty &#x5C;frac{1}{1-x^{2i-1}} &#x5C;&#x5C; &#x5C;sum_{n&#x5C;geq 0} &#x5C;#&#x5C;theset{&#x5C;text{$&#x5C;NN$ Partitions, only even parts}} x^n &amp;= &#x5C;frac{1}{(1-x^2)(1-x^4)(1-x^6)&#x5C;cdots} =&amp; &#x5C;prod_{i=1}^&#x5C;infty &#x5C;frac{1}{1-x^{2i}} &#x5C;&#x5C; &#x5C;sum_{n&#x5C;geq 0} &#x5C;#&#x5C;theset{&#x5C;text{$&#x5C;NN$ Partitions, distinct parts}} x^n &amp;= {(1+x)(1+x^2)(1+x^3)&#x5C;cdots} =&amp; &#x5C;prod_{i=1}^{&#x5C;infty} {1+x^i} &#x5C;&#x5C; &#x5C;sum_{n&#x5C;geq 0} &#x5C;#&#x5C;theset{&#x5C;text{$&#x5C;NN$ Partitions, #parts $&#x5C;leq k$}} x^n =&amp; &#x5C;frac{1}{(1-x)(1-x^2)&#x5C;cdots(1-x^k)} =&amp; &#x5C;prod_{i=1}^{k} &#x5C;frac 1 {1-x^i}  &amp;&#x5C;&#x5C; &#x5C;sum_{n&#x5C;geq 0} &#x5C;#&#x5C;theset{&#x5C;text{$&#x5C;NN$ Partitions, largest part $= k$}} x^n &amp;= &#x5C;frac{x^k}{(1-x)(1-x^2)&#x5C;cdots(1-x^k)} =&amp; &#x5C;frac{x^k}{1-x^k}&#x5C;prod_{i=1}^{k-1} &#x5C;frac 1 {1-x^i} &#x5C;&#x5C; &#x5C; &#x5C;end{align*}$$</div></p>
+<blockquote>
+<p>Note that conjugation is useful for obtaining equivalent formulas involve <span class="mathjax-exps">$p(n, k)$</span>.</p>
+</blockquote>
+<h2 class="mume-header" id="worked-examples">Worked Examples</h2>
+
+<ul>
+<li>
+<p>OGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Set partitions of$</span>[n]<span class="mathjax-exps">$into$</span>k<span class="mathjax-exps">$blocks}}$</span></p>
+<ul>
+<li>Combinatorial “be a structure” interpretation: involved. Something like, break into a linear order of <span class="mathjax-exps">$k$</span> pieces, perform a 1-coloring on piece 1, a 2-coloring on piece 2, etc.</li>
+<li>Easier to use recurrence and integrate <span class="mathjax-exps">$n$</span> out to get <span class="mathjax-exps">$S(k, x) = xS(k-1, x) + kxS(k, x)$</span>, the unravel this to <span class="mathjax-exps">$S(0, x)$</span>.</li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Length$</span>n<span class="mathjax-exps">$words over$</span>\Sigma = [5]<span class="mathjax-exps">$}}$</span></p>
+<ul>
+<li>Use the <strong>product rule</strong>.</li>
+<li>Partition an <span class="mathjax-exps">$n&#x5C;dash$</span> element set into 5 arbitrary ordered blocks – partition <span class="mathjax-exps">$S_1$</span> will be where the letters &quot;1&quot; are placed, <span class="mathjax-exps">$S_2$</span> will denote where the &quot;2&quot;s go, etc.</li>
+<li>Put a “be a set” structure on each block, which has EGF <span class="mathjax-exps">$A(x) = e^x$</span>.</li>
+<li>Use the product rule to obtain<br>
+<div class="mathjax-exps">$$A(x) = (e^x)^5 = e^{5x} &#x5C;implies a_n = 5^n.$$</div></li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Length$</span>n<span class="mathjax-exps">$words over$</span>\Sigma =[3] \suchthat \cdots<span class="mathjax-exps">$restrictions}}$</span></p>
+<ul>
+<li>
+<p>Example: suppose that</p>
+<ul>
+<li>“1” should occur 0,1,2, or 3 times</li>
+<li>“2” should occur 1 or 3 times</li>
+<li>“3” should occur an even number of times</li>
+</ul>
+</li>
+<li>
+<p>Use the product rule.</p>
+</li>
+<li>
+<p>Partition <span class="mathjax-exps">$[n]$</span> into 3 arbitrary ordered blocks. Put the above structures on them, yielding the EGFs:</p>
+<ul>
+<li><span class="mathjax-exps">$A_1(x) = 1 + 1x + 1&#x5C;frac{1}{2!}x^2 + 1&#x5C;frac{1}{3!}x^3$</span></li>
+<li><span class="mathjax-exps">$A_2(x) = 0 + 1x + 0&#x5C;frac{1}{2!}x^2 + 1&#x5C;frac{1}{3!}x^3$</span></li>
+<li><span class="mathjax-exps">$A_1(x) = 1 + 0x + 1&#x5C;frac{1}{2!}x^2 + 0&#x5C;frac{1}{3!}x^3 + &#x5C;cdots = &#x5C;cosh(x)$</span></li>
+</ul>
+</li>
+<li>
+<p>Using the product rule, we obtain<br>
+<div class="mathjax-exps">$$A(x) = (1 +x + &#x5C;frac{1}{2!}x^2 + &#x5C;frac{1}{3!}x^3)(x + &#x5C;frac{1}{2!}x^3)&#x5C;cosh(x) = ?$$</div></p>
+</li>
+<li>
+<p>EGF for <div class="mathjax-exps">$$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Length $n$ words over $&#x5C;Sigma =[5] &#x5C;suchthat$}}$$</div></p>
+<ul>
+<li>Example: suppose that
+<ul>
+<li>“1”, “2” should both occur an even number of times</li>
+<li>“3” should occur a multiple of 5 times</li>
+<li>“4” occurs at least once</li>
+</ul>
+</li>
+<li>Use the product rule</li>
+<li>Partition <span class="mathjax-exps">$[n]$</span> into 5 subsets <span class="mathjax-exps">$S_i$</span>, assign letter <span class="mathjax-exps">$i$</span> to <span class="mathjax-exps">$S_i$</span>.</li>
+<li>Put a “be an even set” structure on <span class="mathjax-exps">$S_ 1, S_2$</span> which has EGF <span class="mathjax-exps">$A_1(x) A_2(x) = &#x5C;cosh(x)$</span></li>
+<li>Put a “be a set with a multiple of 3 elements” structure on <span class="mathjax-exps">$S_3$</span>, which has EGF <span class="mathjax-exps">$A_3(x) = (1 + 0x + 0x^2 + 0x^3 + 0x^4 + &#x5C;frac{1}{5!}x^5 + 0x^6 + &#x5C;cdots$</span></li>
+<li>Put a “be a nonempty set” structure on <span class="mathjax-exps">$S_4, S_5$</span> which has EGF <span class="mathjax-exps">$A_4(x) = A_5(x) = e^x - 1$</span></li>
+<li>Use the prodcut rule to obtain<br>
+<div class="mathjax-exps">$$A(x) = &#x5C;cosh^2(x)&#x5C;left(&#x5C;frac{1}{5!}x^5 + &#x5C;frac{1}{10!}x^{10} + &#x5C;cdots &#x5C;right)(e^x-1) = ?$$</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Subsets of$</span>[n]<span class="mathjax-exps">$}}$</span>:</p>
+<ul>
+<li>For any given <span class="mathjax-exps">$n$</span>, take an arbitrary set partition of <span class="mathjax-exps">$[n]$</span> into blocks <span class="mathjax-exps">$S_1 = A, S_2 = A^c$</span>. Then put a &quot;be a set&quot; structure on <span class="mathjax-exps">$A_1$</span>, and a &quot;be a set&quot; structure on <span class="mathjax-exps">$A_2$</span>. This yields<br>
+<div class="mathjax-exps">$$A(x) = (e^x)e^x &#x5C;implies a_n = 2^n.$$</div></li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Nonempty Subsets of$</span>[n]<span class="mathjax-exps">$}}$</span>:</p>
+<ul>
+<li>For any given <span class="mathjax-exps">$n$</span>, take an ordered set partition <span class="mathjax-exps">$[n]$</span> into blocks <span class="mathjax-exps">$S_1 = A, S_2 = A^c$</span>. Then put a &quot;be a non-empty set&quot; structure on <span class="mathjax-exps">$A_1$</span>, and a &quot;be a set&quot; structure on <span class="mathjax-exps">$A_2$</span>. This yields<br>
+<div class="mathjax-exps">$$A(x) = (e^x - 1)e^x &#x5C;implies a_n = 2^n - 1.$$</div></li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Ways to choose$</span>k<span class="mathjax-exps">$subsets of$</span>[n]<span class="mathjax-exps">$}}$</span></p>
+<ul>
+<li>Partition <span class="mathjax-exps">$[n]$</span> into exactly <span class="mathjax-exps">$k$</span> blocks  <span class="mathjax-exps">$S_1, &#x5C;cdots S_k$</span>, and put the &quot;be a set&quot; structure on all of them. This yields<br>
+<div class="mathjax-exps">$$A(x) = (e^x)^k &#x5C;implies a_n = k^n.$$</div></li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Partitions of$</span>[n]<span class="mathjax-exps">$into$</span>k<span class="mathjax-exps">$parts}}$</span></p>
+<ul>
+<li>Notice that <span class="mathjax-exps">$a_n = S(n, k) = &#x5C;stirling n k$</span></li>
+<li>Partition <span class="mathjax-exps">$[n]$</span> into exactly <span class="mathjax-exps">$k$</span> blocks <span class="mathjax-exps">$S_1, &#x5C;cdots S_k$</span>, and put the &quot;be a non-empty set&quot; structure on all of them. This yields<br>
+<div class="mathjax-exps">$$A(x) = (e^x-1)^k &#x5C;implies a_n = k! &#x5C;stirling{n}{k}.$$</div></li>
+<li>Note – solving for <span class="mathjax-exps">$a_n$</span> here takes some non-trivial identifications, namely that a ordered arbitrary choice of <span class="mathjax-exps">$k$</span> nonempty subsets is a set partition into <span class="mathjax-exps">$k$</span> nonempty blocks, while in this product we are introducing an ordering of the <span class="mathjax-exps">$k$</span> blocks.</li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Partions of$</span>[n]<span class="mathjax-exps">$into any # of parts}}$</span></p>
+<ul>
+<li>Notice that <span class="mathjax-exps">$a_n = &#x5C;displaystyle&#x5C;sum_k S(n, k) = &#x5C;displaystyle&#x5C;sum_k  &#x5C;stirling n k$</span>. We’ll use the <strong>composition rule</strong>.</li>
+<li>Partition <span class="mathjax-exps">$[n]$</span> into <em>any</em> number of blocks <span class="mathjax-exps">$&#x5C;theset{B_i}$</span>.</li>
+<li>Put a “be a non-empty set” structure on each block, which has EGF <span class="mathjax-exps">$B(x) = e^x - 1$</span>.</li>
+<li>Put a “be a set” structure on <em>the collection</em> of blocks, which has EGF <span class="mathjax-exps">$C(x) = e^x$</span>.<br>
+<div class="mathjax-exps">$$A(x) = C(B(x)) = e^{e^x - 1}$$</div></li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Partitions of$</span>[n]<span class="mathjax-exps">$into only even parts}}$</span></p>
+<ul>
+<li>We’ll use the <strong>composition rule</strong>.</li>
+<li>Partition <span class="mathjax-exps">$[n]$</span> into any number of blocks.</li>
+<li>Put a “be a nonempty set with an even number of elements” structure on each block, which has EGF <span class="mathjax-exps">$B(x) = &#x5C;cosh(x) -1$</span></li>
+<li>Put a “be a set” structure on the collection of blocks, which has EGF <span class="mathjax-exps">$C(x) = e^x$</span> to obtain<br>
+<div class="mathjax-exps">$$A(x) = C(B(x)) = e^{&#x5C;cosh x}.$$</div></li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Permutations$</span>\sigma \in S_n<span class="mathjax-exps">$with no fixed points}}$</span> (Derangements)</p>
+<ul>
+<li>Let the unknown EGF be <span class="mathjax-exps">$D(x)$</span>. We can enumerate the number of permutations by how many points they fix. For a given <span class="mathjax-exps">$n$</span>, partition <span class="mathjax-exps">$[n]$</span> into two arbitrary blocks <span class="mathjax-exps">$A_1, A_2$</span> where we will put a fixed-point structure on <span class="mathjax-exps">$A_1$</span> and a derangement structure on <span class="mathjax-exps">$A_2$</span>.</li>
+<li>There is only one way to write down a permutation that fixes every element, so the EGF for <span class="mathjax-exps">$A_1$</span> is <span class="mathjax-exps">$e^x$</span></li>
+<li>The EGF for <span class="mathjax-exps">$A_2$</span> is <span class="mathjax-exps">$D(x)$</span>, which is the unknown.</li>
+<li>The total number of permutations is <span class="mathjax-exps">$n!$</span>, which has EGF <span class="mathjax-exps">$&#x5C;frac 1 {1-x}$</span></li>
+<li>So we can conclude that<br>
+<div class="mathjax-exps">$$e^x D(x) = &#x5C;frac{1}{1-x} &#x5C;implies D(x) = &#x5C;frac{1}{e^x(1-x)}.$$</div></li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Words over$</span>\Sigma = \theset{\alpha, \beta, \gamma} \suchthat # \alpha, #\beta<span class="mathjax-exps">$are even }}$</span></p>
+<ul>
+<li>Split <span class="mathjax-exps">$[n]$</span> into 3 arbitrary ordered parts <span class="mathjax-exps">$A_1, A_2, A_3$</span> where <span class="mathjax-exps">$&#x5C;alpha$</span> will go in <span class="mathjax-exps">$A_1$</span>, <span class="mathjax-exps">$&#x5C;beta$</span> in <span class="mathjax-exps">$A_2$</span>, and <span class="mathjax-exps">$&#x5C;gamma &#x5C;in A_3$</span>. Put a &quot;be a set of even size&quot; structure on <span class="mathjax-exps">$A_1, A_2$</span> and a &quot;be a set&quot; structure on <span class="mathjax-exps">$A_3$</span> to obtain<br>
+<div class="mathjax-exps">$$A(x) = &#x5C;cosh(x)^2 e^x = &#x5C;frac{1}{4}(e^{3x} + 2e^x + e^{-x}) &#x5C;implies a_n = &#x5C;frac{1}{4}(3^n + 2 + (-1)^n)$$</div><br>
+<em>(Using coefficient extraction via derivatives)</em></li>
+</ul>
+</li>
+<li>
+<p>EGF for <span class="mathjax-exps">$a_n = &#x5C;#&#x5C;theset{&#x5C;text{Permutations that are products of disjoint transpositions}}$</span></p>
+<ul>
+<li>Split <span class="mathjax-exps">$[n]$</span> into <em>any number of parts</em>, and on each part put the structure of &quot;be a fixed point or be a 2-cycle&quot;. This has generating function <span class="mathjax-exps">$S_i(x) = x + &#x5C;frac{x^2}{2}$</span>, so we obtain<br>
+<div class="mathjax-exps">$$A(x) = e^{x + &#x5C;frac{x^2}{2}} &#x5C;implies a_n = &#x5C;text{ complicated}$$</div></li>
+</ul>
+</li>
+</ul>
+<h1 class="mume-header" id="posets">Posets</h1>
+
+<p>Definition: A <em>poset</em>  (partially-ordered set) is a pair <span class="mathjax-exps">$(S, &#x5C;preceq)$</span> where <span class="mathjax-exps">$&#x5C;preceq$</span> is a relation on <span class="mathjax-exps">$S$</span> that is</p>
+<ul>
+<li>Transitive:<br>
+<div class="mathjax-exps">$$&#x5C;forall a,b,c &#x5C;in S,&#x5C;quad a &#x5C;preceq b &#x5C;text{ and } b &#x5C;preceq c &#x5C;implies a &#x5C;preceq c$$</div></li>
+<li>Reflexive:<br>
+<div class="mathjax-exps">$$&#x5C;forall a&#x5C;in S,&#x5C;quad a &#x5C;preceq a$$</div></li>
+<li>Anti-symmetric<br>
+<div class="mathjax-exps">$$&#x5C;forall a,b&#x5C;in S,&#x5C;quad a &#x5C;preceq b &#x5C;text{ and } b &#x5C;preceq a &#x5C;implies a = b$$</div></li>
+</ul>
+<blockquote>
+<p>Notice that this behaves very much like <span class="mathjax-exps">$(&#x5C;ZZ, &#x5C;leq)$</span>, so we’ll often used <span class="mathjax-exps">$&#x5C;leq$</span> to denote the relation. However, there is an important distinction – there may be incomparable elements, i.e. pairs <span class="mathjax-exps">$a,b &#x5C;in S$</span> such that neither <span class="mathjax-exps">$a&#x5C;leq b$</span> or <span class="mathjax-exps">$b&#x5C;leq a$</span> holds. This is why the order is &quot;partial&quot;. Also note that it makes sense in this setting to write things like <span class="mathjax-exps">$a&lt; b$</span>, which just means <span class="mathjax-exps">$a&#x5C;leq b$</span> and <span class="mathjax-exps">$a&#x5C;neq b$</span>.</p>
+</blockquote>
+<blockquote>
+<p>If every two elements are comparable, <span class="mathjax-exps">$&#x5C;preceq$</span> is called <em>total order</em> and <span class="mathjax-exps">$(S, &#x5C;preceq)$</span> is called a <em>chain</em>. Weakening this condition slightly, if for every two elements <span class="mathjax-exps">$x,y&#x5C;in S$</span> there exists some <span class="mathjax-exps">$s&#x5C;in S$</span> such that <span class="mathjax-exps">$s&#x5C;leq x$</span> and <span class="mathjax-exps">$s &#x5C;leq y$</span>, we say <span class="mathjax-exps">$S$</span> is a <em>directed</em> poset.</p>
+</blockquote>
+<p>Examples:</p>
+<ul>
+<li><span class="mathjax-exps">$(&#x5C;ZZ, &#x5C;leq)$</span> is a chain.</li>
+<li><span class="mathjax-exps">$(&#x5C;NN, &#x5C;mid)$</span> where <span class="mathjax-exps">$a&#x5C;mid b &#x5C;iff a&#x5C;text{ divides } b$</span> is a poset.</li>
+<li><span class="mathjax-exps">$(&#x5C;mathcal{P}([n]), &#x5C;subseteq)$</span> (denoting the powerset) is a poset.</li>
+<li><span class="mathjax-exps">$(&#x5C;theset{&#x5C;text{Set partitions of$</span>[n]<span class="mathjax-exps">$}}, &#x5C;preceq)$</span> where <span class="mathjax-exps">$a &#x5C;preceq b &#x5C;iff$</span> every block of <span class="mathjax-exps">$a$</span> is contained in some block of <span class="mathjax-exps">$b$</span> is a poset.
+<ul>
+<li>Note that this says that <span class="mathjax-exps">$b$</span> can be obtained by merging some blocks of <span class="mathjax-exps">$a$</span>.</li>
+</ul>
+</li>
+</ul>
+<p>Definition: An <em>open section</em> of a poset is defined as <div class="mathjax-exps">$$S_&#x5C;alpha = &#x5C;theset{s &#x5C;in S &#x5C;suchthat s &lt; &#x5C;alpha}.$$</div> A <em>closed section</em> is defined as <div class="mathjax-exps">$$&#x5C;overline{S_&#x5C;alpha} = &#x5C;theset{s &#x5C;in S &#x5C;suchthat s &#x5C;leq &#x5C;alpha}.$$</div> The <em>complement</em> of a section is given by<br>
+<div class="mathjax-exps">$$S_x^c = &#x5C;theset{s&#x5C;in S &#x5C;suchthat s &#x5C;geq a}&#x5C;&#x5C; &#x5C;overline{S_x}^c = &#x5C;theset{s&#x5C;in S &#x5C;suchthat s &gt; a}$$</div></p>
+<p>We can define the notions of an <em>open interval from <span class="mathjax-exps">$&#x5C;alpha$</span> to <span class="mathjax-exps">$&#x5C;beta$</span></em>, <em>closed interval</em>, and <em>half-open intervals</em> respectively:<br>
+<div class="mathjax-exps">$$(&#x5C;alpha, &#x5C;beta) &#x5C;definedas &#x5C;theset{s&#x5C;in S &#x5C;suchthat &#x5C;alpha &lt; s &lt; &#x5C;beta}&#x5C;&#x5C; [&#x5C;alpha, &#x5C;beta] &#x5C;definedas &#x5C;theset{s&#x5C;in S &#x5C;suchthat &#x5C;alpha &#x5C;leq s &#x5C;leq &#x5C;beta}&#x5C;&#x5C; (&#x5C;alpha, &#x5C;beta] &#x5C;definedas &#x5C;theset{s&#x5C;in S &#x5C;suchthat &#x5C;alpha &lt; s &#x5C;leq &#x5C;beta}&#x5C;&#x5C; [&#x5C;alpha, &#x5C;beta) &#x5C;definedas &#x5C;theset{s&#x5C;in S &#x5C;suchthat &#x5C;alpha &#x5C;leq s &lt; &#x5C;beta}.$$</div></p>
+<p>Definition: we say that <span class="mathjax-exps">$y$</span> <em>covers</em> <span class="mathjax-exps">$x$</span> if<br>
+<div class="mathjax-exps">$$x &#x5C;in S_y &#x5C;text{ (so $x &lt; y$) and } (x,y) = &#x5C;emptyset.$$</div><br>
+In other words, this says that <span class="mathjax-exps">$y$</span> is an <em>upper bound</em> for <span class="mathjax-exps">$x$</span>.</p>
+<p>Definition: If <span class="mathjax-exps">$S_x = &#x5C;emptyset$</span>, <span class="mathjax-exps">$x$</span> is said to be a <em>minimal</em> element. Similarly, if <span class="mathjax-exps">$&#x5C;overline{S_y} = S$</span>, <span class="mathjax-exps">$y$</span> is said to be a <em>maximal</em> element.</p>
+<blockquote>
+<p>In a subtle distinction, if <span class="mathjax-exps">$x &#x5C;in S_s$</span> for every <span class="mathjax-exps">$s&#x5C;in S$</span>, then <span class="mathjax-exps">$x$</span> is unique and is said to be the <em>minimum element</em> and denoted <span class="mathjax-exps">$&#x5C;mathbf 0$</span>. Similarly, if <span class="mathjax-exps">$S_y = S-&#x5C;theset{y}$</span>, then <span class="mathjax-exps">$y$</span> is said to be a (not necessarily unique) <em>maximal</em> element and is denoted <span class="mathjax-exps">$&#x5C;mathbf 1$</span>.</p>
+</blockquote>
+<p>Definition: A <em>Hasse diagram</em> for a poset <span class="mathjax-exps">$(S, &#x5C;leq)$</span> is an graph obtained by letting the verticies of <span class="mathjax-exps">$G$</span> be the elements of <span class="mathjax-exps">$S$</span>, connecting a directed edge from <span class="mathjax-exps">$x&#x5C;to y$</span> iff <span class="mathjax-exps">$y$</span> covers <span class="mathjax-exps">$x$</span>, arranging this graph so all arrows point upwards and incomparable elements are lined up horizontally.</p>
+<blockquote>
+<p>These are generally written without vertex labels or edge directions, yielding an undirected graph on <span class="mathjax-exps">$&#x5C;# S$</span> vertices.</p>
+</blockquote>
+<p>Examples:</p>
+<ul>
+<li>
+<p><span class="mathjax-exps">$(D(12), &#x5C;mid)$</span>: the divisors of 12 ordered by divisibility</p>
+<p><img src="2019-06-08-23-30-20.png" alt=""></p>
+</li>
+<li>
+<p><span class="mathjax-exps">$(&#x5C;mathcal{P}([n]), &#x5C;subseteq)$</span>: Subsets of <span class="mathjax-exps">$[3]$</span> ordered by inclusion.</p>
+<p><img src="2019-06-08-23-29-44.png" alt=""></p>
+</li>
+</ul>
+<p>Definition: A subset of a poset <span class="mathjax-exps">$U &#x5C;subseteq S$</span> is called an <em>upper set</em> if it is absorbing everything above it with respect to the partial order, i.e.<br>
+<div class="mathjax-exps">$$u&#x5C;in U &#x5C;implies &#x5C;forall s&#x5C;in S, &#x5C;quad s &#x5C;geq u &#x5C;implies s &#x5C;in U,$$</div></p>
+<p>or in other words, <span class="mathjax-exps">$&#x5C;overline{S_u^c} &#x5C;subseteq U$</span></p>
+<p>and similarly, <span class="mathjax-exps">$L$</span> is called a <em>lower set</em> if absorbs everything below it:<br>
+<div class="mathjax-exps">$$l &#x5C;in L &#x5C;implies &#x5C;forall s&#x5C;in S, &#x5C;quad s &#x5C;leq u &#x5C;implies s &#x5C;in U$$</div><br>
+so <span class="mathjax-exps">$&#x5C;overline{S_u} &#x5C;subseteq L$</span></p>
+<p>Definition: A subset <span class="mathjax-exps">$L &#x5C;subseteq S$</span> is an <em>order ideal</em> if it is a non-empty directed lower set.</p>
+<p>Given any poset, we can define the <em>incidence algebra</em><br>
+<div class="mathjax-exps">$$&#x5C;Af(P) = &#x5C;theset{f: P &#x5C;cross P &#x5C;to &#x5C;RR &#x5C;suchthat f(x,y) = 0 &#x5C;iff x &#x5C;not&#x5C;leq y },$$</div><br>
+which essentially has the effect of taking some values on comparable elements and is zero otherwise. Some examples:</p>
+<ul>
+<li>The indicator function: <span class="mathjax-exps">$&#x5C;delta(x,y) = &#x5C;indicator{x=y}$</span></li>
+<li>The zeta function: <span class="mathjax-exps">$&#x5C;zeta(x,y) = &#x5C;indicator{x &#x5C;leq y}$</span></li>
+</ul>
+<p>This is an <em>algebra</em> because it is a vector space over <span class="mathjax-exps">$&#x5C;RR$</span>, and has a bilinear product:<br>
+<div class="mathjax-exps">$$(f &#x5C;ast g)(x, y) = &#x5C;sum_{t&#x5C;in[x,y]}f(x,t) g(t, y)$$</div></p>
+<p>Under this product,</p>
+<ul>
+<li><span class="mathjax-exps">$f&#x5C;ast 0 = 0$</span></li>
+<li><span class="mathjax-exps">$f&#x5C;ast&#x5C;delta = f$</span></li>
+<li><span class="mathjax-exps">$f&#x5C;ast &#x5C;zeta = &#x5C;displaystyle&#x5C;sum_{t&#x5C;in[x,y]}f(x,t)$</span></li>
+</ul>
+<p>Moreover, if <span class="mathjax-exps">$f(x,x) &#x5C;neq 0$</span>, then <span class="mathjax-exps">$f^{-1}$</span> exists such that <span class="mathjax-exps">$f&#x5C;ast f^{-1} = &#x5C;delta$</span>, so we can define <span class="mathjax-exps">$&#x5C;mu = &#x5C;zeta&#x5C;inv$</span>, which can be shown has the formula<br>
+<div class="mathjax-exps">$$&#x5C;Large &#x5C;mu(x,y) = (-1)&#x5C;sum_{ t &#x5C;in [x,y)}&#x5C;zeta(x, t)$$</div><br>
+One thus computes this function inductively up a Hasse diagram.</p>
+<h2 class="mume-header" id="example-calculation">Example Calculation</h2>
+
+<p><img src="2019-06-09-15-13-51.png" alt=""></p>
+<ul>
+<li>Level 1
+<ul>
+<li><span class="mathjax-exps">$&#x5C;mu(1,1) = 1$</span> (by definition)</li>
+</ul>
+</li>
+<li>Level 2
+<ul>
+<li><span class="mathjax-exps">$[1, 5) = &#x5C;theset{1} &#x5C;implies &#x5C;mu(1,5) = -(&#x5C;mu(1,1)) = -1$</span></li>
+<li><span class="mathjax-exps">$[1, 2) = &#x5C;theset{1} &#x5C;implies &#x5C;mu(1,2) = -(&#x5C;mu(1,1)) = -1$</span></li>
+<li><span class="mathjax-exps">$[1, 3) = &#x5C;theset{1} &#x5C;implies &#x5C;mu(1,3) = -(&#x5C;mu(1,1)) = -1$</span></li>
+</ul>
+</li>
+<li>Level 3
+<ul>
+<li><span class="mathjax-exps">$[1, 10)  = &#x5C;theset{1,5,2} &#x5C;implies &#x5C;mu(1,10) = -(&#x5C;mu(1,1)+&#x5C;mu(1,5)+&#x5C;mu(1,2))= -(1-1-1) = 1$</span></li>
+<li><span class="mathjax-exps">$[1, 15)  = &#x5C;theset{1,5,3} &#x5C;implies &#x5C;mu(1,15) = -(&#x5C;mu(1,1)+&#x5C;mu(1,5)+&#x5C;mu(1,3))= -(1-1-1) = 1$</span></li>
+<li><span class="mathjax-exps">$[1, 6)   = &#x5C;theset{1,2,3} &#x5C;implies &#x5C;mu(1,16) = -(&#x5C;mu(1,1)+&#x5C;mu(1,2)+&#x5C;mu(1,3))= -(1-1-1) = 1$</span></li>
+<li><span class="mathjax-exps">$[1, 9)   = &#x5C;theset{1,3}   &#x5C;implies &#x5C;mu(1,19) = -(&#x5C;mu(1,1)+&#x5C;mu(1,3)) = -(1-1) = 0$</span></li>
+</ul>
+</li>
+<li>Level 4
+<ul>
+<li><span class="mathjax-exps">$[1,30) = &#x5C;theset{10,15,6,5,2,3,1} &#x5C;implies &#x5C;mu(1,30) = -(1+1+1-1-1-1+1) = -1$</span></li>
+<li><span class="mathjax-exps">$[1,45) = &#x5C;theset{15,9,5,3,1}      &#x5C;implies &#x5C;mu(1,45) = -(1+0-1-1+1) = 0$</span></li>
+<li><span class="mathjax-exps">$[1,18) = &#x5C;theset{6,9,2,3,1}       &#x5C;implies &#x5C;mu(1,18) = -(1+0-1-1+1) = 0$</span></li>
+</ul>
+</li>
+<li>Level 5
+<ul>
+<li><span class="mathjax-exps">$[1, 90) = S - &#x5C;theset{90} &#x5C;implies &#x5C;mu(1,90) = -(0+0-1+0+1+1+1-1-1-1+1) = 0$</span></li>
+</ul>
+</li>
+</ul>
+<p>Note that from this, we find that for the divisibility poset,<br>
+<div class="mathjax-exps">$$&#x5C;mu(a, b) = &#x5C;cases{   (-1)^k &amp; $&#x5C;frac b a$ is a product of $k$ distinct primes&#x5C;&#x5C;   0 &amp; otherwise }$$</div></p>
+<p>In general, there is a Mobius inversion formula:<br>
+<div class="mathjax-exps">$$g ( x ) = &#x5C;sum _ { x y &#x5C;leq &#x5C;pi } f ( y ) &#x5C;quad &#x5C;forall x &#x5C;in P &#x5C;quad &#x5C;Longleftrightarrow &#x5C;quad f ( x ) = &#x5C;sum _ { x y &#x5C;leq &#x5C;pi } &#x5C;mu ( y , x ) g ( y ) &#x5C;quad &#x5C;forall x &#x5C;in P$$</div></p>
+<p>which, for finite posets, equivalently says that if <span class="mathjax-exps">$X$</span> is the incidence matrix of (a linear extension) of a poset <span class="mathjax-exps">$P$</span>, then as matrices we have <span class="mathjax-exps">$M = [&#x5C;mu(x_i, x_j)] = X&#x5C;inv$</span>.</p>
+<hr>
+<h1 class="mume-header" id="appendix">Appendix</h1>
+
+<p>Some notes on lists:</p>
+<ul>
+<li>Note that every <span class="mathjax-exps">$n&#x5C;dash$</span>element list admits an action of <span class="mathjax-exps">$S_n$</span> where you let any <span class="mathjax-exps">$&#x5C;sigma&#x5C;in S_n$</span> act on the indices (i.e. reordering the list).</li>
+<li>Note that there is a map from lists to sets, which just forms a set out of the element of the list. For example, <span class="mathjax-exps">$[a,b,c,b] &#x5C;mapsto &#x5C;theset{a,b,c}$</span>. Note that it is not injective in general, since for example <span class="mathjax-exps">$[c,b,b,a] &#x5C;mapsto &#x5C;theset{a,b,c}$</span> as well. If the <span class="mathjax-exps">$n$</span> elements of list are <em>unique</em>, however, then the action of <span class="mathjax-exps">$S_n$</span> is nice enough that you can quotient out by it, i.e. dividing counts by <span class="mathjax-exps">$n!$</span>.</li>
+<li>So one method of counting is to first form an ordered list of unique elements, then identify any two ordered lists if they differ by a permutation (i.e. take the underlying set).</li>
+</ul>
+<p>Bonus: It can be shown using ordinary generating functions that<br>
+<div class="mathjax-exps">$$&#x5C;stirlingfirst{n}{k} = &#x5C;frac { 1 } { k ! } &#x5C;ln ^ { k } &#x5C;left( &#x5C;frac { 1 } { 1 - z } &#x5C;right).$$</div></p>
+<p>Bonus: a closed formula  for the Stirling numbers of the second kind is given by<br>
+<div class="mathjax-exps">$$&#x5C;stirling n k = &#x5C;sum _ { i = 0 } ^ { k } &#x5C;frac { ( - 1 ) ^ { k - i } } { k ! } &#x5C;left( &#x5C;begin{array} { l } { k } &#x5C;&#x5C; { i } &#x5C;end{array} &#x5C;right) i ^ { n },$$</div><br>
+which can be found by using the recurrence to solve for an ordinary generating function, then using partial fraction decomposition and some gnarly algebraic manipulations. With a bit more work, you can show<br>
+<div class="mathjax-exps">$$&#x5C;sum_k &#x5C;stirling n k = &#x5C;frac 1 e &#x5C;sum_{i=0}^&#x5C;infty &#x5C;frac{i^n}{i!}.$$</div></p>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#formulae">Formulae</a>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#sets">Sets</a></li>
+<li><a href="#the-symmetric-group">The Symmetric Group</a>
+<ul>
+<li><a href="#two-line-notation">Two line notation</a></li>
+<li><a href="#one-line-notation">One line notation</a></li>
+<li><a href="#cycle-notation">Cycle Notation</a></li>
+<li><a href="#useful-facts-about-the-symmetric-group">Useful facts about the Symmetric group</a></li>
+</ul>
+</li>
+<li><a href="#permutations">Permutations:</a></li>
+<li><a href="#ordered-lists">Ordered Lists</a></li>
+<li><a href="#falling-factorial">Falling Factorial</a></li>
+<li><a href="#rising-factorial">Rising Factorial</a></li>
+<li><a href="#combinationsbinomial-coefficients">Combinations/Binomial Coefficients</a>
+<ul>
+<li><a href="#generalized-binomial-coefficients">Generalized Binomial Coefficients</a></li>
+</ul>
+</li>
+<li><a href="#multisets">Multisets</a></li>
+<li><a href="#catalan-numbers">Catalan Numbers</a></li>
+<li><a href="#stars-and-bars">Stars and Bars</a>
+<ul>
+<li><a href="#variant-1-strict">Variant 1: Strict</a></li>
+<li><a href="#variant-2-unrestricted">Variant 2: Unrestricted</a></li>
+</ul>
+</li>
+<li><a href="#stirling-numbers-of-the-first-kind">Stirling Numbers of the First Kind</a></li>
+<li><a href="#stirling-numbers-of-the-second-kind">Stirling Numbers of the Second Kind</a></li>
+<li><a href="#compositions">Compositions</a>
+<ul>
+<li><a href="#strong-compositions">Strong Compositions</a></li>
+<li><a href="#weak-compositions">Weak Compositions</a></li>
+<li><a href="#integer-partitions">Integer Partitions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#generating-functions">Generating Functions</a>
+<ul>
+<li><a href="#solving-recurrences">Solving Recurrences</a></li>
+<li><a href="#sequences-sums-and-closed-forms">Sequences, Sums, and Closed Forms</a></li>
+<li><a href="#sequence-lookup">Sequence Lookup</a></li>
+<li><a href="#operations">Operations</a></li>
+<li><a href="#structures">Structures</a>
+<ul>
+<li><a href="#interpretations">Interpretations</a></li>
+</ul>
+</li>
+<li><a href="#some-known-generating-functions">Some Known Generating Functions</a></li>
+<li><a href="#worked-examples">Worked Examples</a></li>
+</ul>
+</li>
+<li><a href="#posets">Posets</a>
+<ul>
+<li><a href="#example-calculation">Example Calculation</a></li>
+</ul>
+</li>
+<li><a href="#appendix">Appendix</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
