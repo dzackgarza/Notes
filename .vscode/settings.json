@@ -15,6 +15,7 @@
         "**/*.apkg": true,
         "**/*.bib": true,
         "**/*.js": true,
-        "**/*.sh": true
+        "**/*.sh": true,
+        "**/*.tex": true
     }
 }
