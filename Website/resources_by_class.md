@@ -250,11 +250,6 @@
 
 - :fa-book: _Bona_, **A Walk Through Combinatorics**
 
-<details markdown="1">
-**Content**
-**Notes**
-</details>
-
 
 ## Probability
 
