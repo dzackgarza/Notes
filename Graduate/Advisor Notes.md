@@ -151,7 +151,7 @@ $$
 
 Why? For any $X = K(\pi, 1)$ space, $[\wait, X] \cong$ the conjugacy classes of $[\pi_1 \wait, \pi_1 X]$(?)
 
-Someone, this all comes down to uniformization.
+Somehow, this all comes down to uniformization.
 
 > Note: Reduces problem of classification up to bundle isomorphism (solved in general by B.F.) to a group theory problem immediately.
 
