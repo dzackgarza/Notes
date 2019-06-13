@@ -336,9 +336,6 @@
 - Measure theory, sigma algebra
 - Montone and dominated convergence theorems
 - $L^p$ spaces, Holder's inequality
-
-**Notes**
- - Todo!
 </details>
 
 
@@ -353,10 +350,6 @@
 - :fa-tv: [Talk on Category Theory by Tom LaGatta](https://www.youtube.com/watch?v=o6L6XeNdd_k)
 
 <details markdown="1">
-
-**Content**
-- Todo!
-
 **Notes** Expected in some classes, but often assumed. Used in Algebraic Topology and Algebraic Geometry heavily. You can also find many full lectures online by people like Steve Awodey, Bartosz Milewski, and Eugenia Cheng.
 </details>
 
