@@ -202,6 +202,7 @@ Any characteristic class is just an element of $H^*(\mathrm{BDiff}^+ \Sigma_g) =
 Lots of papers about the "stable cohomology" of the mapping class group, given by taking $g$ big enough. We know $\chi$ of the mapping class group, it grows superexponentially and we know polynomially-many. No known unstable classes in genus 5 or higher!!
 
 What do we know?
+
 - $H^1(\mathrm{Mod} \Sigma_g; \QQ) = 0$
 - Elements of $H^2(\mathrm{Mod} \Sigma_g; \QQ)$: some known cocycles.
 
