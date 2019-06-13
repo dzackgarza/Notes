@@ -19,6 +19,7 @@
         "**/*.html": true,
         "**/*.js": true,
         "**/*.sh": true,
-        "**/*.tex": true
+        "**/*.tex": true,
+        "**/assets": true
     }
 }
