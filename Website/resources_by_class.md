@@ -71,9 +71,6 @@
   - More fantastic notes from Paul!
 
 <details markdown="1">
-**Content**
-- Todo
-
 **Notes**
 - Many Calculus books cover both single and multivariable, so most of the resources from the single variable section will be applicable here as well. However, the resources in this section focus almost entirely on multivariable cases.
 </details>
@@ -97,13 +94,6 @@
 - :fa-tv: [MIT OCW: Linear Algebra with Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
 	- Again, it's Strang, so worth checking out!
 
-<details markdown="1">
-**Content**
-- Todo
-**Notes**
-- Todo
-</details>
-
 
 
 ## Ordinary Differential Equations
@@ -113,13 +103,6 @@
 
 - :fa-tv: [MIT OCW: Differential Equations](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/index.htm)
 	- Very Physics-motivated approach, for better or worse.
-
-<details markdown="1">
-**Content**
-- Todo
-**Notes**
-- Todo
-</details>
 
 
 
@@ -153,7 +136,7 @@
 - Probability (odds for dice rolls and cards, distributions, Stirling's approximation)
 
 **Notes**
-- Highlight equation aspect of proofs, ties between recurrence relations and ODEs TODO
+- Highlights the "equational" aspect of proofs, shows ties between recurrence relations and ODEs.
 </details>
 
 ---
@@ -197,9 +180,6 @@
 <details markdown="1">
 **Content**
 - Covers groups, rings, fields, and Galois theory.
-
-**Notes**
-- Todo
 </details>
 
 
@@ -207,14 +187,6 @@
 
 - :fa-tv: :fa-star: _Matthew Salomone_, [Algebra Lectures](https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y)
 	- A portion of his Algebra series, the exposition is fantastic because the series follows a cohesive narrative that introduces some of the major results and benefits of Galois theory early on. Highly recommended.
-
-<details markdown="1">
-**Content**
-- Todo
-
-**Notes**
-- Todo
-</details>
 
 
 ## Real Analysis
@@ -237,9 +209,6 @@
 - Limits and continuity, pointwise and uniform convergence
 - The Mean Value Theorem
 - Measure theory and the Lebesgue integral
-
-**Notes**
-- Todo
 </details>
 
 
@@ -259,9 +228,6 @@
 - The complex integral
 - Residue theorems
 - Analytic vs. Holomorphic vs. Complex Differentiable functions
-
-**Notes**
-- Todo
 </details>
 
 
@@ -273,8 +239,6 @@
 <details markdown="1">
 **Content**
 - Heat/wave/Laplace equations.
-**Notes**
-- Todo
 </details>
 
 
@@ -285,9 +249,6 @@
 <details markdown="1">
 **Content**
 - Fixed points and root-finding, Newton's method, least squares.
-
-**Notes**
-- Todo
 </details>
 
 
@@ -326,9 +287,7 @@
 	- The appendix has a great uber-compressed review of point-set.
 
 <details markdown="1">
-**Content**
 **Notes**
-- Todo: Specify which chapters are useful. TODO
 - Common question: where is Topology useful?
 	- See Brouwer fixed point theorem, Lie groups in physics, links to functional analysis.
 </details>
