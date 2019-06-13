@@ -38,9 +38,9 @@ $$
 \Sigma_g \to M_f^3 \mapsvia{\pi} S^1
 $$
 
-Every 3-manifold that fibers over the circle is of this form! Why?Can remove a point from $S^1$ to get a trivial bundle.
+Every 3-manifold that fibers over the circle is of this form! Why? Can remove a point from $S^1$ to get a trivial bundle.
 
-Another way to build bundles: take a representation $\rho \pi_1 B \to \mathrm{Diff}(\Sigma_g)$, let $E = \tilde B \cross \Sigma_g / (x,y) \sim (g.x, \rho(g)(y)$ (standard construction) where $\tilde B$ is the universal cover of $B$.
+Another way to build bundles: take a representation $\rho: \pi_1 B \to \mathrm{Diff}(\Sigma_g)$, let $$E = \tilde B \cross \Sigma_g / (x,y) \sim (g.x, \rho(g)(y))$$ (standard construction) where $\tilde B$ is the universal cover of $B$.
 
 Generalizes previous example: take real line cross surface and mod out by deck transformations.
 
@@ -49,6 +49,7 @@ Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat 
 > Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$. Take the kernel of $E \mapsvia{f} B$ is obtain a "vertical" 2-plane bundle, horizontal is not well-defined and so is a choice of a 2-plane field. Flat means curvature vanishes is equivalent to Frobenius integrability theorem - the 2-plane is integrable. So curvature measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a foliation".
 
 One organizing problem: classify surface bundles over a fixed closed base manifold up to 
+
 - Bundle isomorphism
   - Fiberwise homeo, but doesn't actually permute any fibers
   - Covering the identity map
@@ -64,6 +65,7 @@ One organizing problem: classify surface bundles over a fixed closed base manifo
 B.F. proved algorithmic computability for bundle iso, homeo and even fiberwise homeo is unsolvable.
 
 Why study $\Sigma_g$ bundles?
+
 1. The simplest nonlinear bundle theory (i.e. structure group is not just $\GL(n)$, it is $S^1$)
 2. For 3-manifolds: almost all (e.g. all hyperbolic) closed 3-manifolds are finitely covered by some $M_f^3$ surface bundle
    1. Famous conjecture of Thurston! Very recent
@@ -73,7 +75,8 @@ Why study $\Sigma_g$ bundles?
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 4. AG: $\mathcal M$ moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
 
-The main invariant for these bundles: The Monodromy Representation
+The main invariant for these bundles: **The Monodromy Representation**
+
 Let $\mathrm{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\pi_0(\mathrm{Diff}^+ \Sigma_g)$) (group of homotopy/isotopy classes of diffeos on the surface).
 
 Representation from earlier can be projected:
