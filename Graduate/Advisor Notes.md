@@ -248,9 +248,9 @@ See book with Dan Margalit - all of this lives in the group $\mathrm{Mod} \Sigma
 
 [Link to Video](https://www.youtube.com/watch?v=X0XBnKBKSDI)
 
-- Work-in-progress!
+*Work-in-progress!*
 
-Geometric motivation: a map $\phi \RR^n \to \RR^n$ if there is a matrix $A \in \GL(n, \RR)$ such that 
+Geometric motivation: a map $\phi: \RR^n \to \RR^n$ if there is a matrix $A \in \GL(n, \RR)$ such that 
 $$
 \exists \vector{w} \in \RR^n :\forall \vector{v} \in \RR^n, \phi(\vector{v}) = A \vector{v} + \vector{w}.
 $$
@@ -258,7 +258,11 @@ $$
 In other words, a composition of a linear map and a translation. Takes lines to lines, planes to planes.
 
 ## Fundamental Theorem of Affine Geometry
-Suppose you have a set map that is a bijection $\Phi: \theset{\text{affine subspaces of } \RR^n, \dim \geq 0} \selfmap$ which satisfies
+Suppose you have a set map that is a bijection 
+$$
+\Phi: \theset{\text{affine subspaces of } \RR^n, \dim \geq 0} \selfmap
+$$ 
+which satisfies
 $$
 P_1 \subseteq P_2 \implies \Phi(P_1) \subseteq \Phi(P_2),
 $$
@@ -283,9 +287,12 @@ then $\Phi$ is induced by an affine map $\phi$.
 
 Remark: false if $\Phi$ only preserves double points (and not triple points).
 
-Double intersections aren't quite enough, see figure 1. #todo add from phone
+Double intersections aren't quite enough, see figure 1. 
 
-Proof:
+*todo add from phone*
+
+*Proof*:
+
 1. Construct a candidate set map bijection $\phi: \RR^2 \to \RR^2$ inducing $\Phi$.
 2. Apply Darboux's theorem: such a $\phi$ taking lines to lines and bijective is affine. (Note: many think this is the definition of affine!). Try to prove!
 
@@ -358,6 +365,7 @@ Look at embedded isotopies, $H: I \to S$ (note that we can use the compact-open 
 Getting the associated graph-theoretic property. Let $H: I \to S$ be an injective set map (want to say when it is continuous and embedded in terms of disjointness).
 
 Need four properties:
+
 - Disjointness: $H(r) \intersect H(s) \neq \emptyset \iff r=s$
 - Order-preserving: $r\leq s \leq t \implies H(s)$ is between $H(r), H(t)$.
 - No gaps: Every $\gamma \in S$ intersects some $H(t)$ for some $t\in I$.
@@ -372,6 +380,7 @@ Not as easy as it looks - want to show that the image limits to a point, as oppo
 Uses limiting families of sphere to detect separation, linking, etc!
 
 Possible extensions:
+
 - What is a symplectomorphism?
 - What is a covering map?
 - (Just go through Munkres book and list the maps!)
