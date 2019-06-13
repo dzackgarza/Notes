@@ -6,7 +6,7 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 # Advice
 
-@import "advice.md"
+@import "resources_advice.md"
 
 ---
 
