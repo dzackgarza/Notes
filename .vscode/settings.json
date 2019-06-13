@@ -12,6 +12,7 @@
     "files.exclude": {
         "**/.git*": true,
         "**/.sh": true,
-        "**/.sparkleshare": true
+        "**/.sparkleshare": true,
+        "**/*.bib": true
     }
 }
