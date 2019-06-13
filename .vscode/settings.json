@@ -8,5 +8,8 @@
         "plaintext"
     ],
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 90
+    "editor.wordWrapColumn": 90,
+    "files.exclude": {
+        "**/.git*": true
+    }
 }
