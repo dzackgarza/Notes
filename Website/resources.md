@@ -12,7 +12,7 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 # Math Course Resources
 
-@import "resources_by_class.md"
+@import "resources_byclass.md"
 
 ---
 
