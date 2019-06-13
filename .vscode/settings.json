@@ -19,6 +19,7 @@
         "**/*.dict": true,
         "**/*.html": true,
         "**/*.js": true,
+        "**/*.pdf": true,
         "**/*.sh": true,
         "**/*.tex": true,
         "**/assets": true
