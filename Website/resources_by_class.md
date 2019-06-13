@@ -313,9 +313,6 @@
 - Measure theory, sigma algebras
 - Monotone and dominated convergence theorems
 - $L^p$ spaces, Holder's inequality
-
-**Notes**
-- Todo
 </details>
 
 
