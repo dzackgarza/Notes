@@ -10,6 +10,7 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 90,
     "files.exclude": {
+        "**/.empty": true,
         "**/.git*": true,
         "**/.sparkleshare": true,
         "**/*.apkg": true,
