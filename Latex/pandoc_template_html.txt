@@ -1,4 +1,5 @@
 $if(macros)$
+MACROS
 \input{$macros$}
 $else$
 NOVARS
