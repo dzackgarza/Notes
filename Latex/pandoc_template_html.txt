@@ -1,4 +1,4 @@
-\$\$
+$\$
 \newcommand{\NN}[0]{{\mathbb{N}}}
 \newcommand{\RR}[0]{{\mathbb{R}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
@@ -19,7 +19,7 @@
 \newcommand{\GL}[0]{{\text{GL}}}
 \newcommand{\SL}[0]{{\text{SL}}}
 \newcommand{\SO}[0]{{\text{SO}}}
-\$\$
+$\$
 
 $if(title)$
 $title$
