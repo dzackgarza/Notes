@@ -50,15 +50,6 @@
 - :fa-link: [Paul's Online Notes](http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx)
   - Follows the standard curriculum very closely, with many examples and in-depth explanations.
 
-<details markdown="1">
-**Content**
-- Todo
-**Notes**
-- Todo
-</details>
-
-
-
 ## Multiviarable / Vector Calculus
 
 - :fa-book: :fa-star: _Schey_, **Div, Grad, Curl, and All That: An Informal Text on Vector Calculus**
