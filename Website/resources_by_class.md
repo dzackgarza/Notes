@@ -270,9 +270,6 @@
 - :fa-book: _Ross_, **A First Course in Probability**
 
 <details markdown="1">
-**Content**
-- Todo
-
 **Notes**
 - It is useful to take (either beforehand or concurrently) introductory classes in both statistics and combinatorics.
 </details>
