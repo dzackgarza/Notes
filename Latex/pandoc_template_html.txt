@@ -1,3 +1,4 @@
+$$
 \newcommand{\NN}[0]{{\mathbb{N}}}
 \newcommand{\RR}[0]{{\mathbb{R}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
@@ -90,6 +91,7 @@
 \newcommand{\multinomial}[1]{\left(\!\!{#1}\!\!\right)}
 \newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
 \newcommand{\indicator}[1]{{\mathbbm{1}\left[#1\right]}}
+$$
 
 $if(title)$
 $title$
