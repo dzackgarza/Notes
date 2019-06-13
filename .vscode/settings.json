@@ -20,6 +20,7 @@
         "**/*.html": true,
         "**/*.js": true,
         "**/*.pdf": true,
+        "**/*.png": true,
         "**/*.sh": true,
         "**/*.tex": true,
         "**/assets": true,
