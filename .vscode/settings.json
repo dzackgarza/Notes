@@ -11,8 +11,9 @@
     "editor.wordWrapColumn": 90,
     "files.exclude": {
         "**/.git*": true,
-        "**/.sh": true,
         "**/.sparkleshare": true,
-        "**/*.bib": true
+        "**/*.apkg": true,
+        "**/*.bib": true,
+        "**/*.sh": true
     }
 }
