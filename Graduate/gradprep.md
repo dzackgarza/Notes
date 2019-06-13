@@ -1,4 +1,18 @@
-
+- [Undergraduate](#undergraduate)
+  - [Linear Algebra](#linear-algebra)
+  - [Abstract Algebra](#abstract-algebra)
+  - [Point-set Topology](#point-set-topology)
+  - [Calculus](#calculus)
+  - [Complex Analysis:](#complex-analysis)
+  - [Real Analysis:](#real-analysis)
+  - [Other Introductory Material](#other-introductory-material)
+- [First Year Graduate](#first-year-graduate)
+  - [Algebra](#algebra)
+  - [Algebraic Geometry](#algebraic-geometry)
+  - [Complex Analysis](#complex-analysis)
+  - [Algebraic Topology](#algebraic-topology)
+  - [Differential Geometry](#differential-geometry)
+  - [Real Analysis](#real-analysis)
 
 # Undergraduate
 
