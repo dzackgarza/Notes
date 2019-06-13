@@ -10,6 +10,7 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 90,
     "files.exclude": {
-        "**/.git*": true
+        "**/.git*": true,
+        "**/.sparkleshare": true
     }
 }
