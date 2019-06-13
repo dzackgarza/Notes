@@ -1,3 +1,0 @@
-- [Low Dimensional Topology](https://ldtopology.wordpress.com/)
-  - Math blog, title is accurate!
-- [Anton's Blog](https://ahilado.wordpress.com/)
