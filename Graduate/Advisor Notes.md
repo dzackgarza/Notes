@@ -135,14 +135,14 @@ Some serious math, theorem of Eels-Earle 1969:
     - Uses Beltrami equation, measurable Riemann mapping theorem, solving PDEs, some serious Math!
     - $\mathrm{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is Teichmuller space(?), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
 
-Corrolary: we care about $\mathrm{Bdiff}$, classifying space theory doesn't really see contractible stuff. So:
+**Corrolary**: we care about $\mathrm{Bdiff}$, classifying space theory doesn't really see contractible stuff. So:
 $$
 \mathrm{Bdiff}^+ \Sigma_g \simeq \mathrm{BMod}\Sigma_g = K(\mathrm{Mod}\Sigma_g, 1)
 $$
 
 Note that the last equality follows because there's no topology on the mapping class group of a discrete group.
 
-Huge conclusion:
+**Huge conclusion**:
 
 $$
 \theset{\text{iso classes of } \Sigma_g\dash\text{bundles over } B} \iff
