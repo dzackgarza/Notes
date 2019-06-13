@@ -16,6 +16,7 @@
         "**/.vscode": true,
         "**/*.apkg": true,
         "**/*.bib": true,
+        "**/*.dict": true,
         "**/*.html": true,
         "**/*.js": true,
         "**/*.sh": true,
