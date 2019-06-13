@@ -371,12 +371,6 @@
 - :fa-tv: _NJ Wildberger_, [Introduction to Algebraic Topology](https://www.youtube.com/watch?v=Ap2c1dPyIVo&list=PL6763F57A61FE6FE8)
 	- A good undergraduate-level series, just be aware that he expresses some extremely non-mainstream views in his other videos!
 
-<details markdown="1">
-**Content**
-- Todo!
-**Notes**
-- Todo!
-</details>
 
 
 ## Algebraic Geometry
@@ -386,14 +380,6 @@
 
 - :fa-book: _Hartshone_,  **Algebraic Geometry**
 	- Seems to be regarded as a pretty standard reference.
-
-<details markdown="1">
-
-
-**Content**
-**Notes**
-</details>
-
 
 ## Differential Geometry / Manifolds
 
@@ -407,14 +393,6 @@
 	- This guy is just phenomenal!
 
 - :fa-book: _Manfredo do Carmo_, **Riemannian Geometry**
-
-<details markdown="1">
-**Content**
-- Todo
-
-**Notes**
-- Todo
-</details>
 
 ---
 
