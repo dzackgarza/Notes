@@ -157,7 +157,7 @@ Someone, this all comes down to uniformization.
 
 How are you given the bundle? Can be given as triangulation, in which case one can produce the monodromy map (huge number of steps though! $e^{e^{e^{\cdots}}}$). Or can be given the monodromy map; this determines the bundle.
 
-Theorem: The conjugacy problem in $\mathrm{Mod} \Sigma_g$ solvable.
+**Theorem**: The conjugacy problem in $\mathrm{Mod} \Sigma_g$ solvable.
 
 But this does not solve the problem for homeo $\Sigma_g \to M^3 \to S_1$.
 
