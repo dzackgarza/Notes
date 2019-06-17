@@ -34,11 +34,11 @@ $$
 $$
 \begin{align*}
 \mathbf a \cdot \mathbf b
-= \inner[\mathbf x]{\mathbf y}
+= \inner{\mathbf x}{\mathbf y}
 = \sum_{i=1}^n {x_i y_i} = x_1y_1 + x_2y_2 + \cdots
 && \text{inner/dot product}
 \\
-\norm{\mathbf x} = \sqrt{\inner[\mathbf x]{\mathbf x}}
+\norm{\mathbf x} = \sqrt{\inner{\mathbf x}{\mathbf x}}
 = \sqrt{\sum_{i=1}^n x_i^2}
 = \sqrt{x_1^2 + x_2^2 + \cdots}
 && \text{norm}
@@ -63,8 +63,7 @@ D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
 \nabla \phi
 \definedas \sum_{i=1}^n \frac{\partial \phi}{\partial x_i} ~\mathbf{e}_i
 = [\frac{\partial \phi}{\partial x_1}, \frac{\partial \phi}{\partial x_2}, \cdots, \frac{\partial \phi}{\partial x_n}]
-&& \text{gradient}
-\\
+&& \text{gradient} \\
 \Delta \phi \definedas \nabla\cdot\nabla \phi \definedas \sum_{i=1}^n \frac{\partial^2 \phi}{\partial x_i^2}
 = \frac{\partial^2 \phi}{\partial x_1^2} + \frac{\partial^2 \phi}{\partial x_2} + \cdots + \frac{\partial^2 \phi}{\partial x_n^2}
 && \text{laplacian}
@@ -79,8 +78,6 @@ D_\mathbf{u}(\phi) = \nabla \phi \cdot \mathbf{\hat u}
 \\
 \iint _ { S } ( \nabla \times \mathbf { F } ) \cdot d \mathbf { S } = \iint _ { S } ( \nabla \times \mathbf { F } ) \cdot \mathbf { n } ~dS
 && \text{surface integral}
-\\
-a
 \end{align*}
 $$
 - Note that the directional derivative uses a normalized direction vector!
@@ -145,8 +142,8 @@ $$
 - **Line Integrals of Vector Fields**
 	- If exact:
 	$$
-	\dd{y} \mathbf F_1 = \dd x \mathbf F_2 \implies
-	\int \mathbf F_1 ~dx + \mathbf F_2 ~dy = \phi(\mathbf p_1) - \phi(\mathbf p_0)
+	\dd{}{y} \mathbf{F_1} = \dd{}{x} \mathbf{F_2} \implies
+	\int \mathbf{F_1} ~dx + \mathbf{F_2} ~dy = \phi(\mathbf{p_1}) - \phi(\mathbf{p_0})
 	$$
 	The function $\phi$ can be found using the same method from ODEs.
 	- Parametrize the path $C$ as $\theset{\mathbf{r}(t): t\in[a,b]}$, then

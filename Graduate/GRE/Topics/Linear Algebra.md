@@ -76,6 +76,7 @@ $$
 Notation: $\det A$ is the determinant of a matrix; also let $\det(\vector a_1, \vector a_2, \cdots \vector a_m) \definedas \det A$, where $\vector a_i$ is the $i$th row of $A$.
 
 Let $A \in \mathrm{Mat}(m, n)$, then $\det A$ satisfies the following properties:
+
 - Product-preserving, so $\det(AB) = \det(A) \det(B)$
   - Corollary: $\det{A^k} = k\det{A}$
   - Corollary: $\det(A^{-1}) = (\det A)^{-1}$
@@ -204,3 +205,9 @@ Reformulated in terms of linear maps $T$, TFAE:
 - $T$ is surjective
 - $T$ is an isomorphism
 - The system $A\vector{x} = 0$ has infinitely many solutions
+
+## Counterexample Matrices
+$$
+A = \left[ \begin{array} { c c } { 1 } & { 1 } \\ { 0 } & { 1 } \end{array} \right] \implies A^n = \left[ \begin{array} { c c } { 1 } & { n } \\ { 0 } & { 1 } \end{array} \right],~ \spec(A) = [1,1] \\
+A = \left[ \begin{array} { c c } { 1 } & { 1 } \\ { 0 } & { - 1 } \end{array} \right] \implies A^2 = I_2,~ \spec(A) = [1, -1]
+$$

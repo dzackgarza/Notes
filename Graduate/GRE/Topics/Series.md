@@ -1,6 +1,6 @@
 ## Convergence:
 
-Notation: $\theset{a_n}_{n\in\NN}$ is a **sequence**, $\sum_{i\in\NN} a_i$ is a **series,**.
+Notation: $\theset{a_n}_{n\in\NN}$ is a **sequence**, $\displaystyle\sum_{i\in\NN} a_i$ is a **series,**.
 
 Radius of convergence: 
 $$
@@ -10,6 +10,7 @@ $$
 ### Tools for Showing Convergence
 
 The Checklist for Sequences:
+
 - Is the sequence bounded?
 	- $\theset{a_i}$ not bounded $\implies$ not convergent
 	- If bounded, is it monotone?
@@ -17,6 +18,7 @@ The Checklist for Sequences:
 - ?
 
 The Checklist for Series:
+
 - Do the terms tend to zero?
 	- $a_i \not\to 0 \implies \sum a_i = \infty$.
 		- Can check with L'Hopital's rule

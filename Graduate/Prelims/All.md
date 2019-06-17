@@ -1,0 +1,12 @@
+
+
+@import "2017 Fall.md"
+Notes to self:
+- Go through Pugh
+- Practice some $\varepsilon-\delta$ problems
+- Find a way to consistently + quickly remember the direction of injectivity
+
+@import "2016 Fall.md"
+- Review examples and counterexamples in real analysis
+- Review series tests
+- Review $\varepsilon\dash\delta$ proofs.

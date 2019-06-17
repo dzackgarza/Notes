@@ -94,6 +94,7 @@ $$
 
 ### Related Rates
 General series of steps: want to know some unknown rate $y_t$
+
 - Lay out known relation that involves $y$
 - Take derivative implicitly (say w.r.t $t$) to obtain a relation between $y_t$ and other stuff.
 - Isolate $y_t = \text{ known stuff }$
@@ -143,6 +144,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	$$
 	\int u dv = uv - \int v du
 	$$
+
 	- A more general form for repeated applications: let $v^{-1} = \int v$, $v^{-2} = \int\int v$, etc.
 	$$
 	\begin{align*}
@@ -156,6 +158,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	- Generally useful when one term's $n$th derivative is a constant.
 	- Shoelace method:
 	- Note: you can choose $u$ or $v$ equal to 1! Useful if you know the derivative of the integrand.
+
 - Differentiating under the integral
 	$$
 	\begin{align*}
@@ -164,6 +167,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)
 	\end{align*}
 	$$
+
 	- Proof: let $F(x)$ be an antiderivative and compute $F'(x)$ using the chain rule.
 	- #todo for constants, this should allow differentiating under the integral when $f, f_x$ are "jointly continuous"
 	- LIPET: Log, Inverse trig, Polynomial, Exponeitial, Trig: generally let $u$ be whichever one comes first.

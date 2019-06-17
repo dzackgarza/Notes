@@ -85,6 +85,9 @@
 - :fa-tv: [MIT OCW: Linear Algebra with Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
 	- Again, it's Strang, so worth checking out!
 
+- :fa-tv: [JJ's Nullspace Trick](https://www.youtube.com/watch?v=bqBacABVCeQ)
+  - Many computations in linear algebra boil down to computing the nullspace of a matrix, and this is an excellent shortcut that lets your write the basis of the nullspace of a matrix almost directly from its reduced row-echelon form.
+
 
 
 ## Ordinary Differential Equations
