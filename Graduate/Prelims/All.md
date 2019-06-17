@@ -2,7 +2,6 @@
 
 @import "2017 Fall.md"
 ## Notes
-Notes to self:
 - Go through Pugh
 - Practice some $\varepsilon-\delta$ problems
 - Find a way to consistently + quickly remember the direction of injectivity
