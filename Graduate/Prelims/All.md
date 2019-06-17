@@ -10,3 +10,4 @@ Notes to self:
 - Review examples and counterexamples in real analysis
 - Review series tests
 - Review $\varepsilon\dash\delta$ proofs.
+- Injectivity definition again
