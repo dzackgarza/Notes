@@ -11,3 +11,4 @@ Notes to self:
 - Review series tests
 - Review $\varepsilon\dash\delta$ proofs.
 - Injectivity definition again
+- Alternate iff proof for $P\iff Q$: prove $P \implies Q$ and $\neg P \implies \neg Q$.
