@@ -1,6 +1,7 @@
 
 
 @import "2017 Fall.md"
+## Notes
 Notes to self:
 - Go through Pugh
 - Practice some $\varepsilon-\delta$ problems
