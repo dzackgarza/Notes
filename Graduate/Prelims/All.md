@@ -7,6 +7,7 @@ Notes to self:
 - Find a way to consistently + quickly remember the direction of injectivity
 
 @import "2016 Fall.md"
+## Notes
 - Review examples and counterexamples in real analysis
 - Review series tests
 - Review $\varepsilon\dash\delta$ proofs.
