@@ -17,3 +17,4 @@ Proof that when $A_i$ are diagonalizable, $\theset{A_i}$$ commutes $\iff A,B$ ar
     - $\implies$ they're simultaneously diagonalizable by I.H.
   - But these eigenvectors for the $A_i$ are all in $E_n$, so they're eigenvectors for $A_n$ too.
   - Can do this for each eigenspace. $\qed$
+  - Details: [here](https://kconrad.math.uconn.edu/blurbs/linmultialg/minpolyandappns.pdf#page=9)
