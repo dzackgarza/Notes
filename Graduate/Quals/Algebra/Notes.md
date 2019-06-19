@@ -9,5 +9,5 @@ Finding the minimal polynomial $m(x)$ of $A$:
 
 2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$. 
 
-Proof that when $A,B$ are diagonalizable, $[A,B] = 0 \iff A,B$ are simultaneously diagonalizable:
+Proof that when $A_i$ are diagonalizable, $\theset{A_i}$$ commutes $\iff A,B$ are simultaneously diagonalizable:
   - 
