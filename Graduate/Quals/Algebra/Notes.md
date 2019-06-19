@@ -15,4 +15,4 @@ Proof that when $A_i$ are diagonalizable, $\theset{A_i}$$ commutes $\iff A,B$ ar
     - The commuted in $V$ so they commute here too
     - (Lemma) They were diagonalizable in $V$, so they're diagonalizable here too
     - $\implies$ they're simultaneously diagonalizable by I.H.
-  - 
+  - But these eigenvectors for the $A_i$ are all in $E_n$, so they're eigenvectors for $A_n$ too.
