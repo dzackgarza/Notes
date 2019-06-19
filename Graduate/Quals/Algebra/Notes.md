@@ -13,4 +13,6 @@ Proof that when $A_i$ are diagonalizable, $\theset{A_i}$$ commutes $\iff A,B$ ar
   - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
   - Restrict all $n-1$ operators $A$ to $E_n$. 
     - The commuted in $V$ so they commute here too
-    - 
+    - (Lemma) They were diagonalizable in $V$, so they're diagonalizable here too
+    - $\implies$ they're simultaneously diagonalizable by I.H.
+  - 
