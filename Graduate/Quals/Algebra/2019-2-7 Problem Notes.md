@@ -45,11 +45,11 @@ Answer to original question: can use Cauchy's theorem and the correspondence the
 
 Base case $k=1$.
 
-By Cauchy, there is an element $g$ of order $p_i$, and thus a subgroup $H \definedas <g>$ of order $p_i$
+By Cauchy, there is an element $g$ of order $p_i$, and thus a subgroup $H \definedas \generators{g}$ of order $p_i$
 
 **Key Step**: Look at the normalizer of $H$ in $G$, i.e. $N_G(H)$.
 
 Two cases:
+
 - $N_G(H) = G$.
   - In this case, $H \normal G$, so we can let $F = G/H$. Noting that $[H : G] = p_k$
-%%%%%
