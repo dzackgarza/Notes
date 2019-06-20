@@ -52,4 +52,4 @@ By Cauchy, there is an element $g$ of order $p_i$, and thus a subgroup $H \defin
 Two cases:
 
 - $N_G(H) = G$.
-  - In this case, $H \normal G$, so we can let $F = G/H$. Noting that $[H : G] = p_k$
+  - In this case, $H \normal G$, so we can let $F = G/H$. Noting that $[H : G] = p_k$...
