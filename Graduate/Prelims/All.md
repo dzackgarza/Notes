@@ -17,4 +17,6 @@
 @import "2015 Fall.md"
 ## Notes
 - Review $\varepsilon\dash\delta$ tricks, especially bounding with min.
-- 
+- Review notions of differentiability
+
+@import "2014 Fall.md"
