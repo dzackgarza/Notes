@@ -7,7 +7,7 @@
   p(x) = \prod_{i=1}^k(x-\lambda_i)^{m_i}
   $$
 
-  where $m_i$ is the multiplicity of $\lambda_i$. We can also produce another polynomial that annihilates $A^n$, namely
+  where $m_i$ is the multiplicity of $\lambda_i$ and all of the $\lambda_i$ are distinct. We can also produce another polynomial that annihilates $A^n$, namely
   $$
   q(x)= \prod_{i=1}^k(x-\lambda_i)
   $$
