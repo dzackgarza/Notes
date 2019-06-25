@@ -2,4 +2,9 @@
 
 1. We prove the stronger statement that if $A$ is invertible and $A^n$ is diagonalizable, then $A$ is diagonalizable.
 
-  With no assumptions, we know that $A^n$ has a minimal polynomial $\mu(x)$ satisfying $\mu(A^n) = 0$. It also divides the characteristic polynomial $p(x)$, and so $p(A^n) = 0$ as well. But since $A^n$ is diagonalizable, letting $D$ be its Jordan normal form, we know that every Jordan block in $D$ is of size 1.
+  With no assumptions, we know that $A^n$ has a minimal polynomial $\mu(x)$ satisfying $\mu(A^n) = 0$. It also divides the characteristic polynomial $p(x)$, and so $p(A^n) = 0$ as well. In general, $A^n$ may have eigenvalues with some multiplicity, but has $k$ distinct eigenvalues (where $1\leq k \leq n$). Since $A^n$ is diagonaliable, these yield $n$ distinct eigenvectors. So we can write 
+  $$
+  p(A) = \prod_{i=1}^k(x-\lambda_i)^{m_i}
+  $$
+
+  where $m_i$ is the multiplicity of $\lambda_i$.
