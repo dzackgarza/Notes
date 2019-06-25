@@ -17,7 +17,7 @@
   From this, we can actually produce a polynomial that annihilated $A$, namely
 
   $$
-  q'(x) = \prod_{i=1}^k(x^n-\lambda_i)
+  r(x) = \prod_{i=1}^k(x^n-\lambda_i)
   $$
 
-  which satisfies $q'(A) = q(A^n) = 0$.
+  which satisfies $r(A) = q(A^n) = 0$.
