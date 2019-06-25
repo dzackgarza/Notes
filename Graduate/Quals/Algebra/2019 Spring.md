@@ -12,4 +12,12 @@
   q(x)= \prod_{i=1}^k(x-\lambda_i)
   $$
 
-  which satisfies $q(A) = 0$ because $p(A) = 0$.
+  which satisfies $q(A^n) = 0$ precisely because $p(A^n) = 0$.
+
+  From this, we can actually produce a polynomial that annihilated $A$, namely
+
+  $$
+  q'(x) = \prod_{i=1}^k(x^n-\lambda_i)
+  $$
+
+  which satisfies $q'(A) = q(A^n) = 0$.
