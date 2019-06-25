@@ -24,4 +24,4 @@
 
   which satisfies $r(A) = q(A^n) = 0$. So $r$ divides the minimal polynomial of $A$. 
 
-  See [here](https://math.stackexchange.com/questions/3027664/if-a-is-invertible-and-an-is-diagonalizable-then-a-is-diagonalizable)
+  See [here](https://math.stackexchange.com/questions/3027664/if-a-is-invertible-and-an-is-diagonalizable-then-a-is-diagonalizable).
