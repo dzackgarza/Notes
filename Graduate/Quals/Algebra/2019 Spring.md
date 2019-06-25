@@ -2,6 +2,8 @@
 
 1. We prove the stronger statement that if $A$ is invertible and $A^n$ is diagonalizable, then $A$ is diagonalizable.
 
+  Use: $M$ is diagonalizable iff $\mu_M(x)$ splits into distinct linear factors over $\FF$.
+
   With no assumptions, we know that $A^n$ has a minimal polynomial $\mu(x)$ satisfying $\mu(A^n) = 0$. It also divides the characteristic polynomial $p(x)$, and so $p(A^n) = 0$ as well. In general, $A^n$ may have eigenvalues with some multiplicity, but has $k$ distinct eigenvalues (where $1\leq k \leq n$). Since $\CC$ is algebraically closed, $p$ will factor into linear terms, and since $A^n$ is diagonalizable, these linear factors will be distinct. We can thus write 
   $$
   p(x) = \prod_{i=1}^k(x-\lambda_i)^{m_i}
@@ -20,4 +22,4 @@
   r(x) = \prod_{i=1}^k(x^n-\lambda_i)
   $$
 
-  which satisfies $r(A) = q(A^n) = 0$.
+  which satisfies $r(A) = q(A^n) = 0$. So $r$ divides the minimal polynomial of $A$. 
