@@ -9,7 +9,7 @@
   p(x) = \prod_{i=1}^k(x-\lambda_i)^{m_i}
   $$
 
-  where $m_i$ is the multiplicity of $\lambda_i$ and all of the $\lambda_i$ are distinct. We can also produce another polynomial that annihilates $A^n$, namely
+  where $m_i$ is the multiplicity of $\lambda_i$ and all of the $\lambda_i$ are distinct. Since $A$ is invertible, $A^n$ is invertible, and so $0$ does not occur as an eigenvalue and thus $x^m_i$ does not occur in the product expansion. We can also produce another polynomial that annihilates $A^n$, namely
   $$
   q(x)= \prod_{i=1}^k(x-\lambda_i)
   $$
