@@ -12,7 +12,7 @@
   q(x)= \prod_{i=1}^k(x-\lambda_i)
   $$
 
-  which satisfies $q(A^n) = 0$ precisely because $p(A^n) = 0$. (In fact, $q(x) = \mu(x)$.)
+  which satisfies $q(A^n) = 0$ precisely because $p(A^n) = 0$. It follows that $q$ divides the minimal polynomial $\mu$. 
 
   From this, we can actually produce a polynomial that annihilated $A$, namely
 
