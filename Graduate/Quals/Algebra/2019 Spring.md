@@ -29,14 +29,18 @@
 
     which thus lets us produce a polynomial that annihilates $A$, namely
     $$
-    q_A(x) = \chi_{A^n}(x^n) = \prod_{i=1}^k (x^n-\lambda_i).
+    q_A(x) = \chi_{A^n}(x^n) = \prod_{i=1}^k (x^n-\lambda_i),
     $$
+
+    and thus $\chi_A$ divides $q_A$ by minimality.
+    
 
     Note that the complex roots of $q_A$ are the $n$th roots of $\lambda_i$; since these were distinct to begin with, their $n$th roots are distinct. But this says that 
 
     $$
     \prod_{i=1}^k \prod_{j=1}^n (x- \lambda_i^{\frac j n} ).
     $$
+
 
 
   See [here](https://math.stackexchange.com/questions/3027664/if-a-is-invertible-and-an-is-diagonalizable-then-a-is-diagonalizable).
