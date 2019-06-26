@@ -18,27 +18,18 @@
     where the last equality follows because $(M - I \lambda_i)\vector v_i = \vector 0$ and for each $i$, a factor of $(M - I \lambda_i)$ in the product will annihilate $\vector v_i$.
     
       By minimality, $\chi_M$ must divide $q$, but we must have $k\leq \deg \chi_M \leq n$, so this forces $\deg \chi_M = k$. But then we have two monic polynomials of degree $k$ with the same roots, forcing them to be identical.
-    - $\Longleftarrow$:
+    - $\Longleftarrow$: Longer proof
 
-    Using the lemma
+    Using the lemmas, since $A^n$ is diagonalizable and $\CC$ is algebraically closed, we can write
 
-  With no assumptions, we know that $A^n$ has a minimal polynomial $\mu(x)$ satisfying $\mu(A^n) = 0$. It also divides the characteristic polynomial $p(x)$, and so $p(A^n) = 0$ as well. In general, $A^n$ may have eigenvalues with some multiplicity, but has $k$ distinct eigenvalues (where $1\leq k \leq n$). Since $\CC$ is algebraically closed, $p$ will factor into linear terms, and since $A^n$ is diagonalizable, these linear factors will be distinct. We can thus write 
-  $$
-  p(x) = \prod_{i=1}^k(x-\lambda_i)^{m_i}
-  $$
+    $$
+    \chi_{A^n}(x) = \prod_{i=1}^k (x-\lambda_i)
+    $$
 
-  where $m_i$ is the multiplicity of $\lambda_i$ and all of the $\lambda_i$ are distinct. Since $A$ is invertible, $A^n$ is invertible, and so $0$ does not occur as an eigenvalue and thus $x^m_i$ does not occur in the product expansion. We can also produce another polynomial that annihilates $A^n$, namely
-  $$
-  q(x)= \prod_{i=1}^k(x-\lambda_i)
-  $$
-
-  which satisfies $q(A^n) = 0$ precisely because $p(A^n) = 0$. It follows that $q$ divides the minimal polynomial $\mu$. 
-
-  From this, we can actually produce a polynomial that annihilates $A$, namely
-
-  $$
-  r(x) = \prod_{i=1}^k(x^n-\lambda_i)
-  $$
+    which thus lets us produce a polynomial that annihilates $A$, namely
+    $$
+    q_A(x) = \prod_{i=1}^k (x^n-\lambda_i),
+    $$
 
   which satisfies $r(A) = q(A^n) = 0$. So $r$ divides the minimal polynomial of $A$. 
 
