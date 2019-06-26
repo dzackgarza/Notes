@@ -4,7 +4,8 @@
 
     Lemma: $M$ is diagonalizable iff $\mu_M(x)$ splits into distinct linear factors over $\FF$. (Equivalently, all of the roots of $\mu_M$ lie in $\FF$)
 
-    Proof: If $M$ is diagonlizable, this means that every Jordan block in the Jordan normal form of $M$ has size 1.
+    Proof: 
+    - $\implies$: If $M$ is diagonalizable, then 
 
     Using the lemma
 
