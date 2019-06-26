@@ -29,7 +29,7 @@
 
     which thus lets us produce a polynomial that annihilates $A$, namely
     $$
-    q_A(x) = \prod_{i=1}^k (x^n-\lambda_i).
+    q_A(x) = \chi_{A^n}(x^n) = \prod_{i=1}^k (x^n-\lambda_i).
     $$
 
   which satisfies $r(A) = q(A^n) = 0$. So $r$ divides the minimal polynomial of $A$. 
