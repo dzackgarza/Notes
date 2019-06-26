@@ -27,19 +27,21 @@
     \chi_{A^n}(x) = \prod_{i=1}^k (x-\lambda_i)
     $$
 
-    which thus lets us produce a polynomial that annihilates $A$, namely
+    where $\lambda_i$ are the distinct eigenvalues of $A^n$. Note that since $A$ is invertible, $A^n$ is invertible, and so we have $\lambda_i \neq 0$ for any $i$. This lets us produce a polynomial that annihilates $A$, namely
     $$
     q_A(x) = \chi_{A^n}(x^n) = \prod_{i=1}^k (x^n-\lambda_i),
     $$
 
-    and thus $\chi_A$ divides $q_A$ by minimality.
+    where $\chi_A$ divides $q_A$ by minimality.
     
 
-    Note that the complex roots of $q_A$ are the $n$th roots of $\lambda_i$; since these were distinct to begin with, their $n$th roots are distinct. But this says that 
+    Note that the complex roots of $q_A$ are the $n$th roots of $\lambda_i$; since the $\lambda_i$ were distinct to begin with, their $n$th roots are distinct. But this says that 
 
     $$
-    \prod_{i=1}^k \prod_{j=1}^n (x- \lambda_i^{\frac j n} ).
+    q_A(x) = \prod_{i=1}^k \prod_{j=1}^n (x- \lambda_i^{\frac j n} ).
     $$
+
+    is a product of distinct linear factors. Thus $\chi_A$ is also a product of distinct linear factors, and by the lemma, is thus diagonalizable. $\qed$
 
 
 
