@@ -11,7 +11,13 @@
     (Equivalently, iff all of the roots of $\mu_M$ lie in $\FF$)
 
     *Proof*: 
-    - $\implies$: If $M$ is diagonalizable, then $q(x) = \prod_{i=1}^k (x-\lambda_i)$ annihilates $M$. By minimality, $\chi_M$ must divide $q$, but we must have $k\leq \deg \chi_M \leq n$, so this forces $\deg \chi_M = k$. But then we have two monic polynomials of degree $k$ with the same roots, forcing them to be identical.
+    - $\implies$: If $M$ is diagonalizable, its domain has a basis of eigenvectors. So if $\vector x \in \mathrm{domain}(M), \vector v = \sum \alpha_i \vector v_i$ where $\vector v_i$ are eigenvectors. Then $q(x) = \prod_{i=1}^k (x-\lambda_i)$ annihilates $M$, because we have 
+    $$
+    q(M)\vector w = q(M) \sum_i\alpha_i \vector v_i = \sum_i\alpha_i\prod_j(M - I\lambda_j)\vector v_i = \vector 0 
+    $$
+    where the last equality follows because $(M - I \lambda_i)\vector v_i = \vector 0$ and for each $i$, a factor of $(M - I \lambda_i)$ in the product will annihilate $\vector v_i$.
+    
+      . By minimality, $\chi_M$ must divide $q$, but we must have $k\leq \deg \chi_M \leq n$, so this forces $\deg \chi_M = k$. But then we have two monic polynomials of degree $k$ with the same roots, forcing them to be identical.
     - $\Longleftarrow$:
 
     Using the lemma
