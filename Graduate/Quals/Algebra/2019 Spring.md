@@ -1,6 +1,10 @@
 # Spring 2019
 
-1. We prove the stronger statement that if $A$ is invertible and $A^n$ is diagonalizable over $\FF$, then $A$ is diagonalizable over $\FF$. Let $\mu_A(x)$ denote the minimal polynomial of $A$.
+1. We prove the stronger statement that if $A$ is an invertible endomorphism of $\CC^n$ and $A^m$ is diagonalizable over $\FF$ for some $m$, then $A$ itself is diagonalizable over $\FF$. Let $\mu_A(x)$ denote the minimal polynomial of $A$ and $p_A(x)$ the characteristic polynomial.
+
+    Lemma: $p_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i}$ where $1\leq k \leq n$ and $\lambda_i$ are the eigenvalues of $M$. Thus $\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i}$ where $1 \leq \ell_i \leq m_i$ for each $i$. (Note that $m_i$ is the multiplicitly of the eigenvalues $\lambda_i$)
+
+    Proof: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\chi_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\chi_M$
 
     Lemma: $M$ is diagonalizable iff $\mu_M(x)$ splits into distinct linear factors over $\FF$. (Equivalently, all of the roots of $\mu_M$ lie in $\FF$)
 
