@@ -2,11 +2,11 @@
 
 1. We prove the stronger statement that if $A$ is an invertible endomorphism of $\CC^n$ and $A^m$ is diagonalizable over $\FF$ for some $m$, then $A$ itself is diagonalizable over $\FF$. Let $\mu_A(x)$ denote the minimal polynomial of $A$ and $p_A(x)$ the characteristic polynomial.
 
-    Lemma: $p_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i}$ where $1\leq k \leq n$ and $\lambda_i$ are the eigenvalues of $M$. Thus $\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i}$ where $1 \leq \ell_i \leq m_i$ for each $i$. (Note that $m_i$ is the multiplicitly of the eigenvalues $\lambda_i$)
+    **Lemma**: $p_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i}$ where $1\leq k \leq n$ and $\lambda_i$ are the eigenvalues of $M$. Thus $\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i}$ where $1 \leq \ell_i \leq m_i$ for each $i$. (Note that $m_i$ is the multiplicitly of the eigenvalues $\lambda_i$)
 
     Proof: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\chi_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\chi_M$: let $\vector v_i$ be the eigenvector associated to $\lambda_i$, so $\vector v_i \neq \vector 0$ and $M\vector v_i = \lambda_i \vector v_i$. Then by linearity $\chi_M(\lambda_i)\vector v_i = \chi_M(M)\vector v_i = \vector 0$, which forces $\chi_M(\lambda_i) = 0$.
 
-    Lemma: $M$ is diagonalizable iff $\mu_M(x)$ splits into distinct linear factors over $\FF$. (Equivalently, all of the roots of $\mu_M$ lie in $\FF$)
+    **Lemma**: $M$ is diagonalizable iff $\mu_M(x)$ splits into distinct linear factors over $\FF$. (Equivalently, all of the roots of $\mu_M$ lie in $\FF$)
 
     Proof: 
     - $\implies$: If $M$ is diagonalizable, then 
