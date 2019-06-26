@@ -12,7 +12,7 @@
 
     *Proof*: 
     - $\implies$: If $M$ is diagonalizable, then $q(x) = \prod_{i=1}^k (x-\lambda_i)$ annihilates $M$. By minimality, $\chi_M$ must divide $q$, but we must have $k\leq \deg \chi_M \leq n$, so this forces $\deg \chi_M = k$. But then we have two monic polynomials of degree $k$ with the same roots, forcing them to be identical.
-    - $\Leftarrow$
+    - $\Longleftarrow$:
 
     Using the lemma
 
