@@ -20,6 +20,7 @@
       By minimality, $\chi_M$ must divide $q$, but we must have $k\leq \deg \chi_M \leq n$, so this forces $\deg \chi_M = k$. But then we have two monic polynomials of degree $k$ with the same roots, forcing them to be identical.
     - $\Longleftarrow$: Longer proof
 
+    
     Using the lemmas, since $A^n$ is diagonalizable and $\CC$ is algebraically closed, we can write
 
     $$
