@@ -4,7 +4,7 @@
 
     Lemma: $p_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i}$ where $1\leq k \leq n$ and $\lambda_i$ are the eigenvalues of $M$. Thus $\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i}$ where $1 \leq \ell_i \leq m_i$ for each $i$. (Note that $m_i$ is the multiplicitly of the eigenvalues $\lambda_i$)
 
-    Proof: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\chi_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\chi_M$: let $\vector v_i$ be the eigenvector associated to $\lambda_i$, so $M\vector v_i = \lambda_i \vector v_i$. Then $\chi_M(
+    Proof: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\chi_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\chi_M$: let $\vector v_i$ be the eigenvector associated to $\lambda_i$, so $M\vector v_i = \lambda_i \vector v_i$. Then $\chi_M(M)\vector v_i = \chi_M(\lambda_i)\vector v_i$
 
     Lemma: $M$ is diagonalizable iff $\mu_M(x)$ splits into distinct linear factors over $\FF$. (Equivalently, all of the roots of $\mu_M$ lie in $\FF$)
 
