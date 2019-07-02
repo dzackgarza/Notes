@@ -1,5 +1,41 @@
 # Notes
 
+## Group Theory
+
+Sylow Theorems: Write $\abs{G} = p^n m$ where $m {\notdivides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.
+
+- $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
+  - Corollary: $\forall p \divides \abs{G}$, there exists an element of order $p$.
+- All sylow$\dash p$ subgroups are conjugate for a given $p$.
+  - Corollary: $n_p = 1 \implies S_p \normal G$
+- $n_p \divides m$
+- $n_p \equiv 1 \mod p$
+- $n_p = [F : N(S_p)]$ where $N$ is the normalizer.
+
+Useful facts: 
+
+  - $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$, so coprime order subgroups are disjoint.
+  - $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
+  - Characterizing direct products: $G \cong H \times K$ when
+    - $G = HK = \theset{hk \suchthat h\in H, k\in K}$
+    - $H\intersect K = \theset{e} \subset G$
+    - $H, K \normal G$
+      - Can relax to only $H\normal G$ to get a semidirect product instead
+  
+Semidirect Products:
+$G = N \semidirect_\phi H$ where 
+$$
+\phi: H \to \Aut(N) \\
+h \mapsto h(\wait)h^{-1}
+$$
+
+Note $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
+
+Class Equation:
+$$
+\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: C_G(x_i)]
+$$
+where $C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
 
 ## Linear Algebra
 
@@ -9,7 +45,7 @@ Finding the minimal polynomial $m(x)$ of $A$:
 
 2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$. 
 
-Proof that when $A_i$ are diagonalizable, $\theset{A_i}$$ commutes $\iff A,B$ are simultaneously diagonalizable: induction on number of operators
+Proof that when $A_i$ are diagonalizable, $\theset{A_i}$ commutes $\iff A,B$ are simultaneously diagonalizable: induction on number of operators
 
   - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
   - Restrict all $n-1$ operators $A$ to $E_n$. 
