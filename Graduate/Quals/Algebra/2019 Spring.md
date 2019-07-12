@@ -243,16 +243,16 @@ $$
 
 1. Parts
    1. Let $\FF = \QQ$ and $A$ be the matrix in question, we claim that $\det A = (p-1) (-1)^n \neq 0$, which means that $A$ is non-singular and thus diagonalizable. We can diagonalize it using elementary row operations:
-   $$
-   \left[ \begin{array} { c c c c c } 
+   $$\begin{align*}
+   &\left[ \begin{array} { c c c c c } 
    { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\ 
    { 1 } & { 0 } & { 1 } & { \dots } & { 1 } \\ 
    { 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\ 
    { \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\ 
    { 1 } & { 1 } & { 1 } & { \dots } & { 0 } 
    \end{array} \right] \\
-    \longrightarrow_{R_i \mapsto R_{p-i}~\forall i\leq p}
-   \left[ \begin{array} { c c c c c } 
+    \longrightarrow_{R_i \mapsto R_{p-i}~ 1\leq i\leq p}
+   &\left[ \begin{array} { c c c c c } 
    { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
    { 1 } & { \dots } &  { 1 } & { 0 } & { 1 } \\ 
    { 1 } & { \dots } &  { 0 } & { 1 } & { 1 } \\ 
@@ -260,7 +260,7 @@ $$
    { 0 } & { 1 } & { 1 } & { \dots } & { 1 }
    \end{array} \right]  \\
    \longrightarrow_{R_i = R_i - R_1,~ 2\leq i \leq p-1}
-   \left[ \begin{array} { c c c c c } 
+   &\left[ \begin{array} { c c c c c } 
    { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
    { 0 } & { \dots } &  { 0 } & { -1 } & { 1 } \\ 
    { 0 } & { \dots } &  { -1 } & { 0 } & { 0 } \\ 
@@ -268,11 +268,11 @@ $$
    { 0 } & { 1 } & { 1 } & { \dots } & { 1 }
    \end{array} \right] \\
    \longrightarrow_{R_p = R_p - R_i,~ 2\leq i \leq p-1}
-   \left[ \begin{array} { c c c c c } 
+   &\left[ \begin{array} { c c c c c } 
    { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
    { 0 } & { \dots } &  { 0 } & { -1 } & { 1 } \\ 
    { 0 } & { \dots } &  { -1 } & { 0 } & { 0 } \\ 
    { \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\ 
    { 0 } & { 1 } & { 1 } & { \dots } & { 1 }
    \end{array} \right] \\
-   $$
+   \end{align*}$$
