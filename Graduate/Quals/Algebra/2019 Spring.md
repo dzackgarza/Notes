@@ -243,14 +243,14 @@ $$
 
 1. Parts
    1. Let $A$ be the $p\times p$ matrix in question. We claim that $\det A = (p-1) (-1)^{p-1} \neq 0$, which means that $A$ is non-singular and thus diagonalizable. We can diagonalize it using elementary row operations:
-   $$\begin{align*}
-   &\left[ \begin{array} { c c c c c } 
-   { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\ 
-   { 1 } & { 0 } & { 1 } & { \dots } & { 1 } \\ 
-   { 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\ 
-   { \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\ 
-   { 1 } & { 1 } & { 1 } & { \dots } & { 0 } 
-   \end{array} \right] \\ \\
+  $$\begin{align*}
+  &\left[ \begin{array} { c c c c c } 
+  { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\ 
+  { 1 } & { 0 } & { 1 } & { \dots } & { 1 } \\ 
+  { 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\ 
+  { \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\ 
+  { 1 } & { 1 } & { 1 } & { \dots } & { 0 } 
+  \end{array} \right] \\ \\
   %
   \xrightarrow[\displaystyle{R_i \mapsto R_{p-i}~ 1\leq i\leq p}]{}
   &\left[ \begin{array} { c c c c c c } 
