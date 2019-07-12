@@ -281,7 +281,7 @@ $$
   { 0 } & -1 &  { 0 } & { \dots } & { 0 } & { 1 } \\
   { -1 } & 0 &  { 0 } & { \dots } & { 0 } & { 1 }
   \end{array} \right]  \\ \\
-   %
+  %
   \xrightarrow[\displaystyle{R_i \mapsto R_{p-i}~ 1\leq i\leq p}]{}
   &\left[ \begin{array} { c c c c c c } 
   -1 & { 0 } & { \dots } &  { 0 } & { 0 } & { 1 } \\ 
@@ -290,9 +290,17 @@ $$
   \vdots & \vdots &  { \vdots } & { \ddots } & { \vdots } & { \vdots } \\ 
   { 0 } & 0 &  { 0 } & { \dots } & { -1 } & { 1 } \\
   { 0 } & 0 &  { 0 } & { \dots } & { 0 } & { p-1 }
-  \end{array} \right],  %
+  \end{array} \right] \\ \\
+  % 
+  \xrightarrow[\displaystyle{R_i = R_i - R_{i+1} }]{}
+  &\left[ \begin{array} { c c c c c c } 
+  -1 & { 1 } & { \dots } &  { 0 } & { 0 } & { 0 } \\ 
+  0 & { -1 } & { 1 } &  { 0 } & { 0 } & { 0 } \\ 
+  0 & { 0 } & { \ddots } &  { 1 } & { 0 } & { 0 } \\ 
+  \vdots & \vdots &  { \vdots } & { \ddots } & { \ddots } & { \vdots } \\ 
+  { 0 } & 0 &  { 0 } & { \dots } & { -1 } & { 1 } \\
+  { 0 } & 0 &  { 0 } & { \dots } & { 0 } & { p-1 }
+  \end{array} \right], 
   \end{align*}$$
 
-  which is in upper triangular form, and thus the determinant can be computer as the product of the diagonal entries.
-
-  Moreover, since we used 
+  which is in Jordan Canonical form. Noting that we did not use the 
