@@ -304,3 +304,5 @@ $$
   \end{align*}$$
 
   which is in Jordan Canonical form. Noting that we did not use any properties of $\FF$ here, this holds for both $\FF = \QQ$ and $\FF = \FF_p$, where $-1 \equiv p-1$ in $\FF_p$.
+
+  This gives us the characteristic polynomial $\chi_\QQ(A) = (-1)^{p-1}(p-1)$ and $\chi_{\FF_p}(A) = (p-1)^n$ in $\FF_p$.
