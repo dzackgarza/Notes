@@ -303,4 +303,4 @@ $$
   \end{array} \right], 
   \end{align*}$$
 
-  which is in Jordan Canonical form. Noting that we did not use any properties of $\FF$ here, this holds for both $\FF = \QQ$ and $\FF = \FF_p$.
+  which is in Jordan Canonical form. Noting that we did not use any properties of $\FF$ here, this holds for both $\FF = \QQ$ and $\FF = \FF_p$, where $-1 \equiv p-1$ in $\FF_p$.
