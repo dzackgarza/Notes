@@ -262,7 +262,3 @@ $$
   { 0 } & 1 &  { 1 } & { \dots } & { 1 } & { 1 }
   \end{array} \right]  \\ \\
   \end{align*}$$
-
-  which is diagonal and thus in Jordan Canonical form. Noting that we only used the fact that $\FF$ is a field here (and so $(p-1)\inv$ exists), this holds for both $\FF = \QQ$ and $\FF = \FF_p$, where $-1 \equiv p-1$ and $(p-1)\inv = p-1$ in $\FF_p$ and $(p-1)\inv = \frac{1}{p-1}$ in $\QQ$.
-
-  We can immediately note that the characteristic and minimal polynomials are identical, and that $\chi_\QQ(A) = (-1)^{p-1}(p-1)$ and $\chi_{\FF_p}(A) = (p-1)^n$.
