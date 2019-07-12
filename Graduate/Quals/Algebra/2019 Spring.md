@@ -261,46 +261,6 @@ $$
   { 1 } & 0 &  { 1 } & { \dots } & { 1 } & { 1 } \\
   { 0 } & 1 &  { 1 } & { \dots } & { 1 } & { 1 }
   \end{array} \right]  \\ \\
-  %
-  \xrightarrow[\displaystyle{R_i = R_i - R_1,~ 2\leq i \leq p-1}]{}
-  &\left[ \begin{array} { c c c c c c } 
-  1 & { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
-  0 & { 0 } & { \dots } &  { 0 } & { -1 } & { 1 } \\ 
-  0 & { 0 } & { \dots } &  { -1 } & { 0 } & { 1 } \\ 
-  \vdots & \vdots &  { ⋰ } & { \vdots } & { \vdots } & { \vdots } \\ 
-  { 0 } & -1 &  { 0 } & { \dots } & { 0 } & { 1 } \\
-  { -1 } & 0 &  { 0 } & { \dots } & { 0 } & { 1 }
-  \end{array} \right]  \\ \\
-  %
-  \xrightarrow[\displaystyle{R_1 = R_1 + \sum_{i=1}^p R_i}]{}
-  &\left[ \begin{array} { c c c c c c } 
-  0 & { 0 } & { \dots } &  { 0 } & { 0 } & { p-1 } \\ 
-  0 & { 0 } & { \dots } &  { 0 } & { -1 } & { 1 } \\ 
-  0 & { 0 } & { \dots } &  { -1 } & { 0 } & { 1 } \\ 
-  \vdots & \vdots &  { ⋰ } & { \vdots } & { \vdots } & { \vdots } \\ 
-  { 0 } & -1 &  { 0 } & { \dots } & { 0 } & { 1 } \\
-  { -1 } & 0 &  { 0 } & { \dots } & { 0 } & { 1 }
-  \end{array} \right]  \\ \\
-  %
-  \xrightarrow[\displaystyle{R_i \mapsto R_{p-i}~ 1\leq i\leq p}]{}
-  &\left[ \begin{array} { c c c c c c } 
-  -1 & { 0 } & { \dots } &  { 0 } & { 0 } & { 1 } \\ 
-  0 & { -1 } & { \dots } &  { 0 } & { 0 } & { 1 } \\ 
-  0 & { 0 } & { \ddots } &  { 0 } & { 0 } & { 1 } \\ 
-  \vdots & \vdots &  { \vdots } & { \ddots } & { \vdots } & { \vdots } \\ 
-  { 0 } & 0 &  { 0 } & { \dots } & { -1 } & { 1 } \\
-  { 0 } & 0 &  { 0 } & { \dots } & { 0 } & { p-1 }
-  \end{array} \right] \\ \\
-  % 
-  \xrightarrow[\displaystyle{R_i = R_i - (p-1)\inv R_p  }]{}
-  &\left[ \begin{array} { c c c c c c } 
-  -1 & { 1 } & { \dots } &  { 0 } & { 0 } & { 0 } \\ 
-  0 & { -1 } & { 1 } &  { 0 } & { 0 } & { 0 } \\ 
-  0 & { 0 } & { \ddots } &  { 1 } & { 0 } & { 0 } \\ 
-  \vdots & \vdots &  { \vdots } & { \ddots } & { \ddots } & { \vdots } \\ 
-  { 0 } & 0 &  { 0 } & { \dots } & { -1 } & { 0 } \\
-  { 0 } & 0 &  { 0 } & { \dots } & { 0 } & { p-1 }
-  \end{array} \right], 
   \end{align*}$$
 
   which is diagonal and thus in Jordan Canonical form. Noting that we only used the fact that $\FF$ is a field here (and so $(p-1)\inv$ exists), this holds for both $\FF = \QQ$ and $\FF = \FF_p$, where $-1 \equiv p-1$ and $(p-1)\inv = p-1$ in $\FF_p$ and $(p-1)\inv = \frac{1}{p-1}$ in $\QQ$.
