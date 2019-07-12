@@ -41,7 +41,7 @@ where $C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat
 **Fields:**
 $GF(p^n)$ is obtained as $\displaystyle\frac{\FF_p}{\generators{f}}$ where $f \in \FF_p[x]$ is irreducible of degree $n$.
 
-
+Eisenstein's Criterion: If 
 
 ## Linear Algebra
 
