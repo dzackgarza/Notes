@@ -242,7 +242,7 @@ $$
           contradicting $x\neq 0$. So $1-x$ can not be a unit. $\qed$
 
 1. Parts
-   1. Let $A$ be the $p\times p$ matrix in question. We claim that $\det A = (p-1) (-1)^{p-1} \neq 0$, which means that $A$ is non-singular and thus diagonalizable. We can diagonalize it using elementary row operations:
+   1. Let $A$ be the $p\times p$ matrix in question. We first compute the JCF; then 
   $$\begin{align*}
   &\left[ \begin{array} { c c c c c } 
   { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\ 
