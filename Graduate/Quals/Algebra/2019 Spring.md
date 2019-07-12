@@ -292,7 +292,7 @@ $$
   { 0 } & 0 &  { 0 } & { \dots } & { 0 } & { p-1 }
   \end{array} \right] \\ \\
   % 
-  \xrightarrow[\displaystyle{R_i = R_i - R_{i+1} }]{}
+  \xrightarrow[\displaystyle{R_i = (p-1)\inv  }]{}
   &\left[ \begin{array} { c c c c c c } 
   -1 & { 1 } & { \dots } &  { 0 } & { 0 } & { 0 } \\ 
   0 & { -1 } & { 1 } &  { 0 } & { 0 } & { 0 } \\ 
