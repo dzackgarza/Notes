@@ -22,7 +22,8 @@ Useful facts:
     - $H, K \normal G$
       - Can relax to only $H\normal G$ to get a semidirect product instead
   
-Semidirect Products:
+**Semidirect Products**:
+
 $G = N \semidirect_\phi H$ where 
 $$
 \phi: H \to \Aut(N) \\
@@ -31,11 +32,14 @@ $$
 
 Note $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
-Class Equation:
+**Class Equation**:
 $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: C_G(x_i)]
 $$
 where $C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
+
+**Fields:**
+$GF(p^n)$ is obtained as $\frac{\FF_p}{\generators{f}}$ where $f$ is irreducible of degree $n$ over $\FF_p$.
 
 ## Linear Algebra
 
