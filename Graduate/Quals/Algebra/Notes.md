@@ -39,7 +39,7 @@ $$
 where $C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
 
 **Fields:**
-$GF(p^n)$ is obtained as $\frac{\FF_p}{\generators{f}}$ where $f$ is irreducible of degree $n$ over .
+$GF(p^n)$ is obtained as $\frac{\FF_p}{\generators{f}}$ where $f$ is irreducible of degree $n$ .
 
 ## Linear Algebra
 
