@@ -242,7 +242,7 @@ $$
           contradicting $x\neq 0$. So $1-x$ can not be a unit. $\qed$
 
 1. Parts
-   1. Let $\FF = \QQ$ and $A$ be the matrix in question, we claim that $\det A = (p-1) (-1)^n \neq 0$, which means that $A$ is non-singular and thus diagonalizable. We can diagonalize it using elementary row operations:
+   1. Let $\FF = \QQ$ and $A$ be the $p\times p$ matrix in question. We claim that $\det A = (p-1) (-1)^n \neq 0$, which means that $A$ is non-singular and thus diagonalizable. We can diagonalize it using elementary row operations:
    $$\begin{align*}
    &\left[ \begin{array} { c c c c c } 
    { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\ 
@@ -252,7 +252,7 @@ $$
    { 1 } & { 1 } & { 1 } & { \dots } & { 0 } 
    \end{array} \right] \\ \\
   %
-  \xrightarrow[{R_i \mapsto R_{p-i}~ 1\leq i\leq p}]{}
+  \xrightarrow[\displaystyle{R_i \mapsto R_{p-i}~ 1\leq i\leq p}]{}
   &\left[ \begin{array} { c c c c c c } 
   1 & { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
   1 & { 1 } & { \dots } &  { 1 } & { 0 } & { 1 } \\ 
@@ -262,7 +262,7 @@ $$
   { 0 } & 1 &  { 1 } & { \dots } & { 1 } & { 1 }
   \end{array} \right]  \\ \\
   %
-  \xrightarrow[{R_i = R_i - R_1,~ 2\leq i \leq p-1}]{}
+  \xrightarrow[\displaystyle{R_i = R_i - R_1,~ 2\leq i \leq p-1}]{}
   &\left[ \begin{array} { c c c c c c } 
   1 & { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
   0 & { 0 } & { \dots } &  { 0 } & { -1 } & { 1 } \\ 
@@ -272,9 +272,9 @@ $$
   { -1 } & 0 &  { 0 } & { \dots } & { 0 } & { 1 }
   \end{array} \right]  \\ \\
   %
-  \xrightarrow[{R_1 = R_1 + \displaystyle{\sum_{i=1}^p} R_i}]{}
+  \xrightarrow[\displaystyle{R_1 = R_1 + \sum_{i=1}^p R_i}]{}
   &\left[ \begin{array} { c c c c c c } 
-  1 & { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
+  0 & { 0 } & { \dots } &  { 0 } & { 0 } & { p-1 } \\ 
   0 & { 0 } & { \dots } &  { 0 } & { -1 } & { 1 } \\ 
   0 & { 0 } & { \dots } &  { -1 } & { 0 } & { 1 } \\ 
   \vdots & \vdots &  { ⋰ } & { \vdots } & { \vdots } & { \vdots } \\ 
