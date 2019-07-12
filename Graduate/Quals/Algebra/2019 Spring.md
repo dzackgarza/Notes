@@ -250,24 +250,25 @@ $$
    { 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\ 
    { \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\ 
    { 1 } & { 1 } & { 1 } & { \dots } & { 0 } 
-   \end{array} \right] \\
-    \longrightarrow_{R_i \mapsto R_{p-i}~ 1\leq i\leq p}
-   &\left[ \begin{array} { c c c c c } 
-   { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
-   { 1 } & { \dots } &  { 1 } & { 0 } & { 1 } \\ 
-   { 1 } & { \dots } &  { 0 } & { 1 } & { 1 } \\ 
-   { \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\ 
-   { 0 } & { 1 } & { 1 } & { \dots } & { 1 }
-   \end{array} \right]  \\
-   \xrightarrow[{R_i = R_i - R_1,~ 2\leq i \leq p-1}]
+   \end{array} \right] \\ \\
+    \xrightarrow[{R_i \mapsto R_{p-i}~ 1\leq i\leq p}]{}
+   &\left[ \begin{array} { c c c c c c } 
+   1 & { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
+   1 & { 1 } & { \dots } &  { 1 } & { 0 } & { 1 } \\ 
+   1 & { 1 } & { \dots } &  { 0 } & { 1 } & { 1 } \\ 
+   1 & 1 &  { \cdots } & { \cdots } & { \cdots } & { \ldots } \\ 
+   { 1 } & 0 &  { 1 } & { 1 } & { \dots } & { 1 } \\
+   { 0 } & 1 &  { 1 } & { 1 } & { \dots } & { 1 }
+   \end{array} \right]  \\ \\
+   \xrightarrow[{R_i = R_i - R_1,~ 2\leq i \leq p-1}]{}
    &\left[ \begin{array} { c c c c c } 
    { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
    { 0 } & { \dots } &  { 0 } & { -1 } & { 1 } \\ 
    { 0 } & { \dots } &  { -1 } & { 0 } & { 0 } \\ 
    { \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\ 
    { 0 } & { 1 } & { 1 } & { \dots } & { 1 }
-   \end{array} \right] \\
-   \longrightarrow_{R_p = R_p - R_i,~ 2\leq i \leq p-1}
+   \end{array} \right] \\ \\
+   \xrightarrow[{R_p = R_p - R_i,~ 2\leq i \leq p-1}]{}
    &\left[ \begin{array} { c c c c c } 
    { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\ 
    { 0 } & { \dots } &  { 0 } & { -1 } & { 1 } \\ 
