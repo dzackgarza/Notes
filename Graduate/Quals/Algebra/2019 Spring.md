@@ -242,7 +242,7 @@ $$
           contradicting $x\neq 0$. So $1-x$ can not be a unit. $\qed$
 
 1. Parts
-   1. Let $\FF = \QQ$ and $A$ be the $p\times p$ matrix in question. We claim that $\det A = (p-1) (-1)^n \neq 0$, which means that $A$ is non-singular and thus diagonalizable. We can diagonalize it using elementary row operations:
+   1. Let $\FF = \QQ$ and $A$ be the $p\times p$ matrix in question. We claim that $\det A = (p-1) (-1)^p \neq 0$, which means that $A$ is non-singular and thus diagonalizable. We can diagonalize it using elementary row operations:
    $$\begin{align*}
    &\left[ \begin{array} { c c c c c } 
    { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\ 
@@ -282,4 +282,14 @@ $$
   { -1 } & 0 &  { 0 } & { \dots } & { 0 } & { 1 }
   \end{array} \right]  \\ \\
    %
-   \end{align*}$$
+  \xrightarrow[\displaystyle{R_i \mapsto R_{p-i}~ 1\leq i\leq p}]{}
+  &\left[ \begin{array} { c c c c c c } 
+  -1 & { 0 } & { \dots } &  { 0 } & { 0 } & { 1 } \\ 
+  0 & { -1 } & { \dots } &  { 0 } & { 0 } & { 1 } \\ 
+  0 & { 0 } & { \ddots } &  { 0 } & { 0 } & { 1 } \\ 
+  \vdots & \vdots &  { \vdots } & { \ddots } & { \vdots } & { \vdots } \\ 
+  { 0 } & 0 &  { 0 } & { \dots } & { -1 } & { 1 } \\
+  { 0 } & 0 &  { 0 } & { \dots } & { 0 } & { p-1 }
+  \end{array} \right]  \\ \\
+  %
+  \end{align*}$$
