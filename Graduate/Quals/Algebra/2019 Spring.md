@@ -294,3 +294,5 @@ $$
   \end{align*}$$
 
   which is in upper triangular form, and thus the determinant can be computer as the product of the diagonal entries.
+
+  Moreover, since we used 
