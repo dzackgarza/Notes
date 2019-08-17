@@ -237,6 +237,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 - Intersections of subgroups are also subgroups
 
 ### Isomorphisms Theorems
+
 **First Isomorphism Theorem**
 
 - Conditions:
@@ -260,7 +261,9 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
   - (Weaker) Relaxing $N \unlhd G$ to $H \subseteq N(N)$ yields
     - $N\cap H \subseteq G$ (Not normal)
     - $N\cap H \unlhd H$
-- **Third Isomorphism Theorem**
+
+**Third Isomorphism Theorem**
+
 - Conditions:
   - $N \unlhd G, N \leq A \leq G$
 - Results:
@@ -272,7 +275,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
   - $A \unlhd G \Rightarrow A/N \unlhd G/N$
     - All normal subgroups of $G/N$ are of this form for some $A$.
 
-## Others
+## Misc Results
 - $G/N$ is abelian $\iff$ $[G, G] \leq N$
 - $HK$ is not always a subgroup - see conditions in 2nd Isomorphism theorem'
 - $H \unlhd G, K \unlhd G ~\&~ H \cap K = e \Rightarrow hk =kh \forall h\in H, \in K$
@@ -293,7 +296,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
   - $N \unlhd G$ implies that $P_N \leq N$ are of the form $N\cap P_G$
   - $P \cap Q = e$
 
-# Numeric Results
+## Numeric Results
 
 - Cauchy's Theorem
 
