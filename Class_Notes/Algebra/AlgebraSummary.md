@@ -296,4 +296,87 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
   - $N \unlhd G$ implies that $P_N \leq N$ are of the form $N\intersect P_G$
   - $P \intersect Q = e$
 
+## Numeric Results
+
+### Cauchy's Theorem
+
+  - For any $p$ dividing $|G|$, there is a subgroup of order $p$.
+
+### Sylow Theorems: $|G| = p^km$ where $p \not\mid m$
+
+  -  At least one Sylow-p subgroup always exists: $\exists P \leq G$ with $|P| = p^k$
+  -  All such subgroups are conjugate: $\forall P, P', \exists g\in G : gPg^{-1} = P'$
+  -  $n_p$ satisfies:
+     - $n_p$ divides $m = [G : P]$
+     - $n_p = 1~\text{mod}~p$
+     - $n_p = [G : N_G(P)]$ (Not as useful)
+  -  Every $p$-subgroup of $G$ is a $p$-subgroup of $P$ (i.e. $P$ is maximal and contains all subgroups of order $p^l$ with $l \leq k$)
+
+### Orbit-stabilizer Theorem
+
+  - Given a group action, $G/G_x \cong \mathcal{O}_x$
+
+  - Gives the numeric result $|\mathcal{O}_x| =|G / G_x| = [G : G_x] = \frac{|G|}{|G_x|}$
+
+  - Also useful in the form $|G| = |\mathcal{O}_x| |G_x|$
+
+  - Proof:
+
+    - Use the map $$\phi :G \rightarrow X \\ g \mapsto g\sim x$$
+
+      Where $\text{im} \phi = \mathcal{O}_x$ and  $\text{ker}\phi = G_x$.
+
+### Burnside's Lemma
+
+  - $$|X_G| = \frac{1}{|G|} \sum_{g\in G} |X^g|$$
+    - $|X_G|$ is the number of orbits
+    - $X^g = \{ x\in X: g\sim x = x\}$
+
+### The class equation
+
+  - $$|G| = |Z(G)| + \sum_{a\in A} [G : C_G(a)]$$
+    - Where $A = \{a_1 , a_2, \dots ,a_n : a_1 \in [a_1], a_2\in [a_2], \dots\}$ is a set containing one element from each conjugacy class
+    - $[G: C_G(a)]$ is the number of elements in $[a]$
+    - Each element in $Z(G)$ has a singleton conjugacy class
+
+### General facts
+
+  - $|G| = p \Rightarrow G$ is cyclic
+  - $|G| = p^e \Rightarrow Z(G) \neq e$
+
+- $|G| = p^e$ (P-groups)
+
+  - $Z(G) \neq \{e\}$ (Use class equation)
+
+- $|G| = p$
+
+  - Always cyclic
+    - Proof: Any nontrivial cyclic subgroup's order is $>1$ and divides $p$, so equals $p$.
+
+- $|G| = p^2$
+  - Always abelian
+    - Proof: $|G/Z(G)| = 1, p$ . If $p$, it's cyclic, and $G$ is abelian. Otherwise it's $1$, so $G = Z(G)$.
+  - Two possibilities:
+    - $Z_{p^2}$ (cyclic)
+    - $Z_p \times Z_p$
+
+- $|G| = pq$
+  - $p \not\divides q-1 (q \neq 1 \mod p$):
+    - One possibility:
+      - $G \cong Z_{pq}$ (cyclic)
+    - Facts:
+      - $\exists P \unlhd G$ (A Sylow-$P$ subgroup)
+  - $p$ divides $q-1$ ($q = 1$ mod $p$):
+    - Two possibilities:
+      - $G \cong Z_{pq}$ (cyclic)
+      - $G\cong Z_q \rtimes Z_p$
+  - Never simple
+
+- $|G| = p^2 q$
+  - $\exists P \unlhd G$ (A Sylow-$P$ subgroup)
+
+- $|G| = p_1 p_2 p_3$ (distinct)
+
+  - Not simple
+
 
