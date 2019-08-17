@@ -249,6 +249,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
   - $\text{ker}\phi = e \Rightarrow G \cong G'$
 
 **Second Isomorphism Theorem**
+
 - Conditions:
   - $N \unlhd G, H \leq G$
 - Results:
