@@ -417,4 +417,42 @@ $S_n, n\geq 4$
     - All dihedral
 
 
+# Rings
+
+## Facts about ideals:
+
+  * Intersections, products, and sums of ideals are ideals
+  * Not necessarily unions
+  * Every ring has proper maximal ideals
+    * Apply Z.L. to $\{ I \unlhd R : I \neq R\}$
+  * Every proper ideal is contained in a maximal ideal
+
+## Maximal ideals
+$I \unlhd R$ *maximal* if $\not\exists J \unlhd R : I \subset J \subset R$
+
+  * Every nonzero ring has a maximal ideal (Krull's Theorem)
+  * $R$ commutative $\implies R/I$  a field
+  * Union of maximal ideals = $R - R^\times$
+  * $(X-a) \unlhd R[X]$ is maximal for $a\in R$
+
+## Prime ideals
+$I \unlhd R$ *prime* when $pq\in I \implies p\in I \vee q \in I$
+
+  * $I$ prime $\iff R/I$ an integral domain,
+  * (maximal $\implies$ prime)
+  * $\text{rad}(I^n) = I$
+
+## Radicals
+$I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
+
+* $$\text{nilrad}(I) = \bigcap P$$  such that $$P \unlhd R$$ prime
+
+* $\text{rad}(I) = \{ x\in  \mid \exists n : x^n \in I \}$
+
+  * $\text{rad}(0) = \text{nilrad}(R)$
+  * $\text{rad}(IJ) = \text{rad}(I) \intersect \text{rad}(J)$
+  * $$\text{rad}(I) = \bigcap J$$ such that $I \subset J, J$ prime
+    (i.e. intersection of all prime ideals containing $I$)
+  * ​
+
 
