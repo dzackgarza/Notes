@@ -139,13 +139,13 @@ Chapters 1-9 of Dummit and Foote
 - **Normal Closure** of a subgroup
 
   - $H^G = \{gHg^{-1}: g\in G\}$
-  - Equivalently, $$H^G = \bigcap \{ N: H \leq N \unlhd G \}$$ 
+  - Equivalently, $$H^G = \bigcap \{ N: H \leq N \unlhd G \}$$
     - (The smallest normal subgroup of $G$ containing $H$)
 
 - **Group Action** of a group on a set
 
-  - Given as a function $$\phi:G \times X \rightarrow X \\ (g,x) \mapsto g\sim x$$ 
-    which gives rise to a function $$\phi_g: X \rightarrow X \\ x \mapsto g\sim x$$ 
+  - Given as a function $$\phi:G \times X \rightarrow X \\ (g,x) \mapsto g\sim x$$
+    which gives rise to a function $$\phi_g: X \rightarrow X \\ x \mapsto g\sim x$$
     (which is a bijection)
     where $\sim$ denotes a group element acting on a set element, and $\forall x\in X$,
     - $e\sim x = x$
@@ -315,11 +315,12 @@ Chapters 1-9 of Dummit and Foote
 - Cyclic $\Rightarrow$ abelian
 - $G/Z(G)$ cyclic $\Rightarrow G$ is abelian
 - Intersections of subgroups are also subgroups
+
 - **Isomorphisms Theorems**
   - **First Isomorphism Theorem**
     - Conditions:
       -  $\phi:G\rightarrow G'$ is a homomorphism.
-    - Result: 
+    - Result:
       - $\text{ker}\phi \unlhd G$
       - $\text{im}\phi \leq G'$
       - $G/\text{ker}\phi \cong \text{im}\phi$.
@@ -355,16 +356,16 @@ Chapters 1-9 of Dummit and Foote
   - Characteristic is a strictly stronger condition than normality
 - $H ~\text{char}~ K ~\text{char}~G \Rightarrow H ~\text{char}~ G$
   - Characteristic is transitive
-- $H \leq G$, $K\unlhd G$, $H~\text{char}~K$ $\Rightarrow$ $H \unlhd G$ 
+- $H \leq G$, $K\unlhd G$, $H~\text{char}~K$ $\Rightarrow$ $H \unlhd G$
   - i.e., normality is **not** transitive, strengthening normality to $\text{char}$ gives "weak transitivity"
 - Recognizing (Internal) Direct Products:$H \leq G, K \leq G$
   - 1) $H\cap K = e$
   - 2) $\forall g\in G, \exists h\in H, k\in K : g = hk$
-  - 3) $H \unlhd G, K \unlhd G$ 
+  - 3) $H \unlhd G, K \unlhd G$
     - **OR** Every element in $H$ commutes with every element in $K$
 - P Groups
   - $ \cap P = O_P(G)~\text{char}~ G $. ($O_P(G) \unlhd G$ as well)
-  - $N \unlhd G$ implies that $P_N \leq N$ are of the form $N\cap P_G$ 
+  - $N \unlhd G$ implies that $P_N \leq N$ are of the form $N\cap P_G$
   - $P \cap Q = e$
 
 # Numeric Results
@@ -431,9 +432,9 @@ Chapters 1-9 of Dummit and Foote
     - $Z_{p^2}$ (cyclic)
     - $Z_p \times Z_p$
 
-- $|G| = pq$ 
+- $|G| = pq$
   - $p$ doesn't divide $q-1$ ($q \neq 1 $ mod $p$):
-    - One possibility: 
+    - One possibility:
       - $G \cong Z_{pq}$ (cyclic)
     - Facts:
       - $\exists P \unlhd G$ (A Sylow-$P$ subgroup)
@@ -476,7 +477,7 @@ Chapters 1-9 of Dummit and Foote
   - Simple for $n\geq 5$
   - Index 2 in $S_n$, so $A_n \unlhd Sn$
 
-- $D_n$ 
+- $D_n$
 
   - $< a,b \mid a^n=b^2=1, bab^{-1} = a^{-1}> \cong <r, s>$
   - $D_n / N$ is always another dihedral group for any $N \unlhd D_n$
@@ -526,7 +527,7 @@ Chapters 1-9 of Dummit and Foote
 
   - 6 *(Two groups)*
 
-    - $Z_6 \cong Z_7^\times\cong Z_9^\times\cong Z_{14}^\times$ 
+    - $Z_6 \cong Z_7^\times\cong Z_9^\times\cong Z_{14}^\times$
 
       - Cyclic, one element of order 6
 
