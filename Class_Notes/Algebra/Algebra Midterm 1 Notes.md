@@ -306,8 +306,6 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 
   * iff the ascending chain condition for ideals holds
 
-dd  ​
-
 # Structural Results
 
 - Cyclic $\Rightarrow$ abelian
