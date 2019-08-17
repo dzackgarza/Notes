@@ -298,11 +298,11 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 
 ## Numeric Results
 
-- Cauchy's Theorem
+### Cauchy's Theorem
 
   - For any $p$ dividing $|G|$, there is a subgroup of order $p$.
 
-- Sylow Theorems: $|G| = p^km$ where $p \not\mid m$
+### Sylow Theorems: $|G| = p^km$ where $p \not\mid m$
 
   -  At least one Sylow-p subgroup always exists: $\exists P \leq G$ with $|P| = p^k$
   -  All such subgroups are conjugate: $\forall P, P', \exists g\in G : gPg^{-1} = P'$
@@ -312,7 +312,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
      - $n_p = [G : N_G(P)]$ (Not as useful)
   -  Every $p$-subgroup of $G$ is a $p$-subgroup of $P$ (i.e. $P$ is maximal and contains all subgroups of order $p^l$ with $l \leq k$)
 
-- Orbit-stabilizer Theorem
+### Orbit-stabilizer Theorem
 
   - Given a group action, $G/G_x \cong \mathcal{O}_x$
 
@@ -326,20 +326,20 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 
       Where $\text{im} \phi = \mathcal{O}_x$ and  $\text{ker}\phi = G_x$.
 
-- Burnside's Lemma
+### Burnside's Lemma
 
   - $$|X_G| = \frac{1}{|G|} \sum_{g\in G} |X^g|$$
     - $|X_G|$ is the number of orbits
     - $X^g = \{ x\in X: g\sim x = x\}$
 
-- The class equation
+### The class equation
 
   - $$|G| = |Z(G)| + \sum_{a\in A} [G : C_G(a)]$$
     - Where $A = \{a_1 , a_2, \dots ,a_n : a_1 \in [a_1], a_2\in [a_2], \dots\}$ is a set containing one element from each conjugacy class
     - $[G: C_G(a)]$ is the number of elements in $[a]$
     - Each element in $Z(G)$ has a singleton conjugacy class
 
-- General facts
+### General facts
 
   - $|G| = p \Rightarrow G$ is cyclic
   - $|G| = p^e \Rightarrow Z(G) \neq e$
@@ -379,15 +379,15 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 
   - Not simple
 
-# Common Groups
+## Common Groups
 
-## $S_{3}$
+### $S_{3}$
 $S_3 = <(12), (23), (13)>$
 
 - $Z(S_3) = e$
 - $Aut(S_3) = Inn(S_3)$, since $$Z(G) = e = \text{ker}\psi \\ \Rightarrow Out(S_3) = Inn(S_3) \\ \Rightarrow Aut(S_3) \cong S_3$$
 
-## $S_{n}$
+### $S_{n}$
 $S_n, n\geq 4$
 
 - $Z(S_n) = e$
@@ -402,12 +402,12 @@ $S_n, n\geq 4$
   - Parity of the cycle equals the parity of $k-1$.
 - The order of an element is the lcm of the size of the cycles.
 
-## $A_n$
+### $A_n$
 
 - Simple for $n\geq 5$
 - Index 2 in $S_n$, so $A_n \unlhd Sn$
 
-## $D_n$
+### $D_n$
 
 - $< a,b \mid a^n=b^2=1, bab^{-1} = a^{-1}> \cong <r, s>$
 - $D_n / N$ is always another dihedral group for any $N \unlhd D_n$
