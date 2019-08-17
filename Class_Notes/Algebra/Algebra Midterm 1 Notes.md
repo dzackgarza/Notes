@@ -172,8 +172,7 @@ Chapters 1-9 of Dummit and Foote
 
 - **Orbit** of a set element
 
-  - $\mathcal{O}_x = \{ g \sim x : x\in X  \}$
-    $$= \bigcup_{g\in G} \{g \sim x \}$$
+$$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 
   - The set of all orbits is denoted $X/G$ or $X_G = \{\mathcal{O}_x: x\in X\}$
   - Partitions $X$ according to the equivalence relation $x \cong y \iff \exists g\in G : g\sim x = y$
@@ -307,7 +306,7 @@ Chapters 1-9 of Dummit and Foote
 
   * iff the ascending chain condition for ideals holds
 
-  ​
+dd  ​
 
 # Structural Results
 
