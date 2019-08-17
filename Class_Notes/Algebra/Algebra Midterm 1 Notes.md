@@ -451,7 +451,8 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 
 # Common Groups
 
-- $S_3 = <(12), (23), (13)>$
+## $S_{3}$
+$S_3 = <(12), (23), (13)>$
 
   - $Z(S_3) = e$
   - $Aut(S_3) = Inn(S_3)$, since $$Z(G) = e = \text{ker}\psi \\ \Rightarrow Out(S_3) = Inn(S_3) \\ \Rightarrow Aut(S_3) \cong S_3$$
