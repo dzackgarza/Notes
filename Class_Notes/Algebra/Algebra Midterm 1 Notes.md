@@ -360,17 +360,17 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
     - $Z_{p^2}$ (cyclic)
     - $Z_p \times Z_p$
 
-- $|G| = pq$
-  - $p \not\divides q-1 (q \neq 1 \mod p$):
-    - One possibility:
-      - $G \cong Z_{pq}$ (cyclic)
-    - Facts:
-      - $\exists P \unlhd G$ (A Sylow-$P$ subgroup)
-  - $p$ divides $q-1$ ($q = 1$ mod $p$):
-    - Two possibilities:
-      - $G \cong Z_{pq}$ (cyclic)
-      - $G\cong Z_q \rtimes Z_p$
-  - Never simple
+<!--- $|G| = pq$-->
+  <!--- $p \not\divides q-1 (q \neq 1 \mod p$):-->
+    <!--- One possibility:-->
+      <!--- $G \cong Z_{pq}$ (cyclic)-->
+    <!--- Facts:-->
+      <!--- $\exists P \unlhd G$ (A Sylow-$P$ subgroup)-->
+  <!--- $p$ divides $q-1$ ($q = 1$ mod $p$):-->
+    <!--- Two possibilities:-->
+      <!--- $G \cong Z_{pq}$ (cyclic)-->
+      <!--- $G\cong Z_q \rtimes Z_p$-->
+  <!--- Never simple-->
 
 - $|G| = p^2 q$
   - $\exists P \unlhd G$ (A Sylow-$P$ subgroup)
