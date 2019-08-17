@@ -344,6 +344,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
     - Corrolaries:
       - $A \unlhd G \Rightarrow A/N \unlhd G/N$
         - All normal subgroups of $G/N$ are of this form for some $A$.
+
 - $G/N$ is abelian $\iff$ $[G, G] \leq N$
 - $HK$ is not always a subgroup - see conditions in 2nd Isomorphism theorem'
 - $H \unlhd G, K \unlhd G ~\&~ H \cap K = e \Rightarrow hk =kh \forall h\in H, \in K$
