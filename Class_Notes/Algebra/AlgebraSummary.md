@@ -506,7 +506,7 @@ $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
 
 - 2 (One group)
 
-  - $Z_2 \cong Z_3^\times \cong Z_4^\times\cong Z_6^\times \\= \{e, a\} $
+  - $Z_2 \cong Z_3^\times \cong Z_4^\times\cong Z_6^\times \\= \{e, a\}$
     - Cyclic
     - One element of order 2
 
