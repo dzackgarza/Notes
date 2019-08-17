@@ -247,12 +247,13 @@ $I \unlhd R$ *maximal* if $\not\exists J \unlhd R : I \subset J \subset R$
   * $(X-a) \unlhd R[X]$ is maximal for $a\in R$
 
 ## Prime ideals
-* $I \unlhd R$ *prime* when $pq\in I \implies p\in I \vee q \in I$
+$I \unlhd R$ *prime* when $pq\in I \implies p\in I \vee q \in I$
 
   * $I$ prime $\iff R/I$ an integral domain,
   * (maximal $\implies$ prime)
   * $\text{rad}(I^n) = I$
 
+## Radicals
 * $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
 
 * $$\text{nilrad}(I) = \bigcap P$$  such that $$P \unlhd R$$ prime
