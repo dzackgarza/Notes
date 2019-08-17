@@ -454,4 +454,46 @@ $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
 - $$\text{rad}(I) = \bigcap J$$ such that $I \subset J, J$ prime
     (i.e. intersection of all prime ideals containing $I$)
 
+## Other ideals
+- $I \unlhd R$ *primary* when $pq \in I \implies a \in I \vee \exists n\in \mathbb{N} : b^n \in I$
+
+- Prime $\implies$ primary
+
+- $I \unlhd R$ *principal* when $\exists a\in R : I = \langle a \rangle$
+
+- $I \unlhd R$ *irreducible* when $\not\exists \{J \unlhd R : I \subset J\} : I = \bigcap J$
+
+- $I \subset R \iff 1,u \not\in I$ ($u \in R^\times$)
+
+- $\{ I : I \unlhd R\}$ is a poset
+
+- Zorn's lemma can be applied to $\{I \unlhd R : 1 \not\in I\}$
+- Every proper ideal is contained in a maximal ideal.
+
+- Facts about units
+
+- $R^\times$ is closed under multiplication, but *not* under addition.
+- $R-R^\times$ an additive group $\iff$ $R$ is a local ring
+
+- Integral Domain
+
+- Principal Ideal Domain
+
+- (Prime $\implies$ maximal) $\implies$ UFD
+
+- Unique Factorization Domain
+
+- Field
+
+- When $(0)$ is the only proper ideal
+- $R/M$ a field $\iff$ M maximal
+
+- Localization
+
+- Zorn's Lemma: For every poset $P$, every chain in $P$ has an upper bound $\implies$ $P$ has a maximal element.
+
+- Noetherian: Every ideal is finitely generated
+
+- iff the ascending chain condition for ideals holds
+
 
