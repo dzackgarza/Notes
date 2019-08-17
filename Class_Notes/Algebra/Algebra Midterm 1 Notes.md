@@ -454,9 +454,10 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 ## $S_{3}$
 $S_3 = <(12), (23), (13)>$
 
-  - $Z(S_3) = e$
-  - $Aut(S_3) = Inn(S_3)$, since $$Z(G) = e = \text{ker}\psi \\ \Rightarrow Out(S_3) = Inn(S_3) \\ \Rightarrow Aut(S_3) \cong S_3$$
+- $Z(S_3) = e$
+- $Aut(S_3) = Inn(S_3)$, since $$Z(G) = e = \text{ker}\psi \\ \Rightarrow Out(S_3) = Inn(S_3) \\ \Rightarrow Aut(S_3) \cong S_3$$
 
+## $S_{n}$
 - $S_n, n\geq 4$
 
   - $Z(S_n) = e$
