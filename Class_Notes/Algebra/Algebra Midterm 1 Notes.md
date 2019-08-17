@@ -104,7 +104,7 @@ Chapters 1-9 of Dummit and Foote
     - $C_G(H) \leq G$
     - $C_G(H) \unlhd N_G(H)$
     - $C_G(G) = Z(G)$
-    - $C_H(a) = H \cap C_G(a)$
+    - $C_H(a) = H \intersect C_G(a)$
 
 ### **Center** of a group
 
@@ -255,12 +255,12 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
   - $N \unlhd G, H \leq G$
 - Results:
   - $HN \leq G$
-  - $N \cap H \unlhd H$
-  - $$\frac{H}{H\cap N} \cong \frac{HN}{N}$$
+  - $N \intersect H \unlhd H$
+  - $$\frac{H}{H\intersect N} \cong \frac{HN}{N}$$
 - Corrolaries:
   - (Weaker) Relaxing $N \unlhd G$ to $H \subseteq N(N)$ yields
-    - $N\cap H \subseteq G$ (Not normal)
-    - $N\cap H \unlhd H$
+    - $N\intersect H \subseteq G$ (Not normal)
+    - $N\intersect H \unlhd H$
 
 **Third Isomorphism Theorem**
 
@@ -278,7 +278,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 ## Misc Results
 - $G/N$ is abelian $\iff$ $[G, G] \leq N$
 - $HK$ is not always a subgroup - see conditions in 2nd Isomorphism theorem'
-- $H \unlhd G, K \unlhd G ~\&~ H \cap K = e \Rightarrow hk =kh \forall h\in H, \in K$
+- $H \unlhd G, K \unlhd G ~\&~ H \intersect K = e \Rightarrow hk =kh \forall h\in H, \in K$
   - Normal subgroups with trivial intersection commute
 - $H~\text{char}~G \Rightarrow H \unlhd G$
   - Characteristic is a strictly stronger condition than normality
@@ -287,14 +287,14 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 - $H \leq G$, $K\unlhd G$, $H~\text{char}~K$ $\Rightarrow$ $H \unlhd G$
   - i.e., normality is **not** transitive, strengthening normality to $\text{char}$ gives "weak transitivity"
 - Recognizing (Internal) Direct Products:$H \leq G, K \leq G$
-  - 1) $H\cap K = e$
+  - 1) $H\intersect K = e$
   - 2) $\forall g\in G, \exists h\in H, k\in K : g = hk$
   - 3) $H \unlhd G, K \unlhd G$
     - **OR** Every element in $H$ commutes with every element in $K$
 - P Groups
-  - $ \cap P = O_P(G)~\text{char}~ G $. ($O_P(G) \unlhd G$ as well)
-  - $N \unlhd G$ implies that $P_N \leq N$ are of the form $N\cap P_G$
-  - $P \cap Q = e$
+  - $ \intersect P = O_P(G)~\text{char}~ G $. ($O_P(G) \unlhd G$ as well)
+  - $N \unlhd G$ implies that $P_N \leq N$ are of the form $N\intersect P_G$
+  - $P \intersect Q = e$
 
 ## Numeric Results
 
@@ -450,7 +450,7 @@ $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
 * $\text{rad}(I) = \{ x\in  \mid \exists n : x^n \in I \}$
 
   * $\text{rad}(0) = \text{nilrad}(R)$
-  * $\text{rad}(IJ) = \text{rad}(I) \cap \text{rad}(J)$
+  * $\text{rad}(IJ) = \text{rad}(I) \intersect \text{rad}(J)$
   * $$\text{rad}(I) = \bigcap J$$ such that $I \subset J, J$ prime
     (i.e. intersection of all prime ideals containing $I$)
   * ​
