@@ -287,7 +287,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 - $H \leq G$, $K\unlhd G$, $H~\text{char}~K$ $\Rightarrow$ $H \unlhd G$
   - i.e., normality is **not** transitive, strengthening normality to $\text{char}$ gives "weak transitivity"
 - Recognizing (Internal) Direct Products:$H \leq G, K \leq G$
-  - 1) $H\intersect K = e$
+  <!--- 1) $H\intersect K = e$-->
   - 2) $\forall g\in G, \exists h\in H, k\in K : g = hk$
   - 3) $H \unlhd G, K \unlhd G$
     - **OR** Every element in $H$ commutes with every element in $K$
