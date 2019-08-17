@@ -238,6 +238,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
     * Apply Z.L. to $\{ I \unlhd R : I \neq R\}$
   * Every proper ideal is contained in a maximal ideal
 
+## Maximal ideals
 $I \unlhd R$ *maximal* if $\not\exists J \unlhd R : I \subset J \subset R$
 
   * Every nonzero ring has a maximal ideal (Krull's Theorem)
@@ -245,6 +246,7 @@ $I \unlhd R$ *maximal* if $\not\exists J \unlhd R : I \subset J \subset R$
   * Union of maximal ideals = $R - R^\times$
   * $(X-a) \unlhd R[X]$ is maximal for $a\in R$
 
+## Prime ideals
 * $I \unlhd R$ *prime* when $pq\in I \implies p\in I \vee q \in I$
 
   * $I$ prime $\iff R/I$ an integral domain,
