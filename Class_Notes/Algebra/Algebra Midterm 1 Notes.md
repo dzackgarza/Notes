@@ -479,12 +479,12 @@ $S_n, n\geq 4$
 
 ## $D_n$
 
-  - $< a,b \mid a^n=b^2=1, bab^{-1} = a^{-1}> \cong <r, s>$
-  - $D_n / N$ is always another dihedral group for any $N \unlhd D_n$
-  - All subgroups:
-    - $<r^d> \cong Z_{n/d}$ where $d$ divides $n$ (index $2d$)
-    - $<r^d, r^i s> \cong D_{n/d}$ where $d$ divides $n$ and $0 \leq i \leq d-1$ (index $d$)
-      - All dihedral
+- $< a,b \mid a^n=b^2=1, bab^{-1} = a^{-1}> \cong <r, s>$
+- $D_n / N$ is always another dihedral group for any $N \unlhd D_n$
+- All subgroups:
+  - $<r^d> \cong Z_{n/d}$ where $d$ divides $n$ (index $2d$)
+  - $<r^d, r^i s> \cong D_{n/d}$ where $d$ divides $n$ and $0 \leq i \leq d-1$ (index $d$)
+    - All dihedral
 
 ## Orders less than 16:
 (Normal: Diamond, grouped by conjugacy class)
