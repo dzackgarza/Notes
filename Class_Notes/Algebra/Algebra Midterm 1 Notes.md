@@ -254,7 +254,7 @@ $I \unlhd R$ *prime* when $pq\in I \implies p\in I \vee q \in I$
   * $\text{rad}(I^n) = I$
 
 ## Radicals
-* $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
+$I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
 
 * $$\text{nilrad}(I) = \bigcap P$$  such that $$P \unlhd R$$ prime
 
@@ -266,6 +266,7 @@ $I \unlhd R$ *prime* when $pq\in I \implies p\in I \vee q \in I$
     (i.e. intersection of all prime ideals containing $I$)
   * ​
 
+## Other ideals
 * $I \unlhd R$ *primary* when $pq \in I \implies a \in I \vee \exists n\in \mathbb{N} : b^n \in I$
 
   * Prime $\implies$ primary
