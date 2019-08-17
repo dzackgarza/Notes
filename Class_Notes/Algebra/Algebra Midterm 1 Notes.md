@@ -474,10 +474,10 @@ $S_n, n\geq 4$
 
 ## $A_n$
 
-  - Simple for $n\geq 5$
-  - Index 2 in $S_n$, so $A_n \unlhd Sn$
+- Simple for $n\geq 5$
+- Index 2 in $S_n$, so $A_n \unlhd Sn$
 
-- $D_n$
+## $D_n$
 
   - $< a,b \mid a^n=b^2=1, bab^{-1} = a^{-1}> \cong <r, s>$
   - $D_n / N$ is always another dihedral group for any $N \unlhd D_n$
