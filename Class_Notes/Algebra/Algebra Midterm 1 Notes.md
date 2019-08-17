@@ -361,7 +361,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
     - $Z_p \times Z_p$
 
 - $|G| = pq$
-  - $p$ doesn't divide $q-1$ ($q \neq 1 $ mod $p$):
+  - $p \not\divides q-1 (q \neq 1 \mod p$):
     - One possibility:
       - $G \cong Z_{pq}$ (cyclic)
     - Facts:
