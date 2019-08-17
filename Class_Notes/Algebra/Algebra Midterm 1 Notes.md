@@ -292,7 +292,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
   - 3) $H \unlhd G, K \unlhd G$
     - **OR** Every element in $H$ commutes with every element in $K$
 - P Groups
-  - $ \intersect P = O_P(G)~\text{char}~ G $. ($O_P(G) \unlhd G$ as well)
+  <!--- $ \intersect P = O_P(G)~\text{char}~ G $. ($O_P(G) \unlhd G$ as well)-->
   - $N \unlhd G$ implies that $P_N \leq N$ are of the form $N\intersect P_G$
   - $P \intersect Q = e$
 
