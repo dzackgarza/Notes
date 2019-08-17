@@ -238,37 +238,38 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 
 ### Isomorphisms Theorems
 **First Isomorphism Theorem**
-  - Conditions:
-    -  $\phi:G\rightarrow G'$ is a homomorphism.
-  - Result:
-    - $\text{ker}\phi \unlhd G$
-    - $\text{im}\phi \leq G'$
-    - $G/\text{ker}\phi \cong \text{im}\phi$.
-  - Corollaries:
-    - $\text{ker}\phi = e \Rightarrow G \cong G'$
 
-    **Second Isomorphism Theorem**
-  - Conditions:
-    - $N \unlhd G, H \leq G$
-  - Results:
-    - $HN \leq G$
-    - $N \cap H \unlhd H$
-    - $$\frac{H}{H\cap N} \cong \frac{HN}{N}$$
-  - Corrolaries:
-    - (Weaker) Relaxing $N \unlhd G$ to $H \subseteq N(N)$ yields
-      - $N\cap H \subseteq G$ (Not normal)
-      - $N\cap H \unlhd H$
+- Conditions:
+  -  $\phi:G\rightarrow G'$ is a homomorphism.
+- Result:
+  - $\text{ker}\phi \unlhd G$
+  - $\text{im}\phi \leq G'$
+  - $G/\text{ker}\phi \cong \text{im}\phi$.
+- Corollaries:
+  - $\text{ker}\phi = e \Rightarrow G \cong G'$
+
+**Second Isomorphism Theorem**
+- Conditions:
+  - $N \unlhd G, H \leq G$
+- Results:
+  - $HN \leq G$
+  - $N \cap H \unlhd H$
+  - $$\frac{H}{H\cap N} \cong \frac{HN}{N}$$
+- Corrolaries:
+  - (Weaker) Relaxing $N \unlhd G$ to $H \subseteq N(N)$ yields
+    - $N\cap H \subseteq G$ (Not normal)
+    - $N\cap H \unlhd H$
 - **Third Isomorphism Theorem**
-  - Conditions:
-    - $N \unlhd G, N \leq A \leq G$
-  - Results:
-    - $A/N \leq G/N$
-      - Every subgroup of $G/N$ is of this form for *some* such $A$
-    - $$ \frac{G/N}{A/N} \cong \frac{G}{A}$$
-      - Cancel the $N$!
-  - Corrolaries:
-    - $A \unlhd G \Rightarrow A/N \unlhd G/N$
-      - All normal subgroups of $G/N$ are of this form for some $A$.
+- Conditions:
+  - $N \unlhd G, N \leq A \leq G$
+- Results:
+  - $A/N \leq G/N$
+    - Every subgroup of $G/N$ is of this form for *some* such $A$
+  - $$ \frac{G/N}{A/N} \cong \frac{G}{A}$$
+    - Cancel the $N$!
+- Corrolaries:
+  - $A \unlhd G \Rightarrow A/N \unlhd G/N$
+    - All normal subgroups of $G/N$ are of this form for some $A$.
 
 ## Others
 - $G/N$ is abelian $\iff$ $[G, G] \leq N$
