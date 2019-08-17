@@ -82,4 +82,48 @@ Chapters 1-9 of Dummit and Foote
   - Rational root test
   - Eisenstein's criterion
 
+# Groups
+
+## Definitions
+
+### **Subgroup Generated** by a set $A$
+
+  - $<A> = \{a_1^{\pm 1},a_2^{\pm 1}, \cdots a_2^{\pm 1} : a_i \in A, n \in \mathbb{N}\}$
+  - Equivalently, the intersection of all $H$ such that $A \subseteq H \leq G$
+
+### **Free Group** on a set $X$
+
+  - Equivalently, words over the alphabet $X$ made into a group via concatenation
+
+### **Centralizer** of an element or a subgroup
+
+  - $C_G(a) = \{ g\in G : ga = ag \}$
+  - $$C_G(H) = \{ g\in G : \forall h\in H, gh = hg \} = \bigcap_{h\in H} C_G(h)$$
+    - Note - requires the same $g$ on both sides!
+  - Facts:
+    - $C_G(H) \leq G$
+    - $C_G(H) \unlhd N_G(H)$
+    - $C_G(G) = Z(G)$
+    - $C_H(a) = H \intersect C_G(a)$
+
+### **Center** of a group
+
+  - $Z(G) = \{ g\in G : \forall x \in G, gx = xg\}$
+  - Facts
+    - $$Z(G) = \bigcap_{a\in G} C_G(a)$$
+
+### **Normalizer** of a subgroup
+
+  - $$N_G(H) = \{ g\in G : gHg^{-1} = H \}$$
+
+  - Equivalently, $\bigcup \{ K: H\unlhd K \leq G \}$ (the largest $K \leq G$ for which $H \unlhd K$)
+  - Equivalently, the stabilizer of $H$ under $G$ acting on its subgroups via conjugation
+  - Differs from centralizer; can have $gh = h'g$
+  - Facts:
+    - $C_G(H) \subseteq N_G(H) \leq G$
+    - $N_G(H) / C_G(H) \cong A \leq Aut(H)$
+    - Given $H\subseteq G$, let $$S(H)= \bigcup_{g\in G} gHg^{-1}$$, so $|S(H)|$ is the number of conjugates to $H$. Then $$|S(H)| = [G : N_G(H)]$$
+      - i.e. the number of subgroups conjugate to $H$ equals the index of the normalizer of $H$.
+
+
 
