@@ -379,4 +379,42 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 
   - Not simple
 
+## Common Groups
+
+### $S_{3}$
+$S_3 = <(12), (23), (13)>$
+
+- $Z(S_3) = e$
+- $Aut(S_3) = Inn(S_3)$, since $$Z(G) = e = \text{ker}\psi \\ \Rightarrow Out(S_3) = Inn(S_3) \\ \Rightarrow Aut(S_3) \cong S_3$$
+
+### $S_{n}$
+$S_n, n\geq 4$
+
+- $Z(S_n) = e$
+  - Let $\sigma(a) = b$, choose $\tau = (bc)$ so $\tau\sigma(a) = \tau(b) = c \neq b = \sigma(a0 = \sigma\tau(a)$
+- Conjugacy classes are determined entirely by cycle structure
+  - There are exactly $p(n)$ of them (partition function)
+- Disjoint cycles commute
+- $\sigma \circ (a_1 \cdots a_k)\circ \sigma^{-1} = (\sigma(a_1), \cdots \sigma(a_k))$
+- Every element is a product of disjoint cycles
+- Every element is a product of transpositions
+  - A cycle of length $k$ can be written as $k-1$ transpositions
+  - Parity of the cycle equals the parity of $k-1$.
+- The order of an element is the lcm of the size of the cycles.
+
+### $A_n$
+
+- Simple for $n\geq 5$
+- Index 2 in $S_n$, so $A_n \unlhd Sn$
+
+### $D_n$
+
+- $< a,b \mid a^n=b^2=1, bab^{-1} = a^{-1}> \cong <r, s>$
+- $D_n / N$ is always another dihedral group for any $N \unlhd D_n$
+- All subgroups:
+  - $<r^d> \cong Z_{n/d}$ where $d$ divides $n$ (index $2d$)
+  - $<r^d, r^i s> \cong D_{n/d}$ where $d$ divides $n$ and $0 \leq i \leq d-1$ (index $d$)
+    - All dihedral
+
+
 
