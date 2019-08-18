@@ -5,12 +5,15 @@ title: Math 200A Homework Question Compendium
 # One
 
 1. Given: $\forall x \in G, x^2 = e$
+
    Show: $G \in \mathbf{Ab}$
 
 2. Given: $|G|<\infty, |G| = 0\mod 2$
+
    Show: $\exists g\in G \ni o(g)  = 2$
 
 3. Given: $G\in \mathbf{Ab}$
+
    Show: $T(G) \leq G$ (where $T(G) = \{ g\in G : |g| < \infty\}$
 
 4. Show: Every finite group is finitely generated.
