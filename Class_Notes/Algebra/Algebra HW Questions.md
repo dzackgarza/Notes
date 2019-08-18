@@ -137,16 +137,21 @@ title: Math 200A Homework Question Compendium
 
 5. *Given*: $P \leq H \leq K \leq G < \infty, P \in \text{Syl}_p(G)$
    *Show*: $P, H \unlhd K \implies P \unlhd K$
+
 6. *Show*: $N_G(N_G(P)) = N_G(P)$
+
 7. *Given*: $\sigma \in Aut(G)$
    *Show*: $\sigma Inn(G) \sigma^{-1} = Inn(G)$ iff $\forall g\in G, g^{-1}\sigma(g)\in Z(G)$
+
 8. *Show*: $Inn(G) ~\text{char}~ Aut(G)$
+
 9. *Given*: $H \subseteq G, P \in \text{Syl}_p(G)$
    1. *Show*: $\exists g \in G \ni gPg^{-1} \in Syl_p(H)$
    2. *Given*: $H \unlhd G$
       *Show*: $P\cap H \in \text{Syl}_p(H)
    3. *Given*: $P  \unlhd G$
       *Show*: $P \cap H \in \text{Syl}_p(H)$ and $|\text{Syl}_p(H)| = 1$
+
 10. *Given*: $|G| = pqr, p < q < r$
    *Show*: $\exists P_i \in \text{Syl}_i(G) \unlhd G$
 11. *Given*: $|G| =595$
