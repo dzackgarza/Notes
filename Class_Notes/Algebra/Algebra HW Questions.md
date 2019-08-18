@@ -261,22 +261,33 @@ $$
 	- Show: An counterexample to 1 when $R$ is noncommutative.
 
 7. Given: $R$ a commutative ring, $R[[x]]$ its formal power series
-	- Show: $\sum_{i=0}^\infty a_i x^i \in R[[x]]^\times \iff a_0 \in R^\times$
+	- Show that
+  $$
+  \sum_{i=0}^\infty a_i x^i \in R[[x]]^\times \iff a_0 \in R^\times
+  $$
 	- Show: $R$ a domain $\implies R[[x]]$ a domain
 	- Given: $R$ a field
-      - Show: $I = \{ r \in R[[x]] : r_0 = 0\}$ is a maximal ideal of $R[[x]]$
+      - Show that
+      $$
+      I = \{ r \in R[[x]] : r_0 = 0\}
+      $$
+      is a maximal ideal of $R[[x]]$.
       - Show: $I$ is the unique maximal ideal
 
 8. Given: $R$ a commutative ring, $G$ a finite group, $RG$ a group ring.
 	- Given: $\mathcal{K} = \{ k_1, k_2, \cdots k_m\}$ a conjugacy class in $G$
       - Show: $$K = \sum_{i=1}^m k_i \in RG \implies K \in Z(RG)$$
 	- Given: $\mathcal{K}_1\cdots \mathcal{K}_r$ distinct conjugacy classes in $G$, $K_i = \sum_{j}k_j \ni k_j \in \mathcal{K}_i$
-      - Show: $Z(RG) = \{\sum a_l K_l : \forall 1 \leq l \leq r, a_l \in R \}$ (All $R$-linear combinations of the $\mathcal{K}_i$)
+      - Show that
+      $$
+      Z(RG) = \{\sum a_l K_l : \forall 1 \leq l \leq r, a_l \in R \}
+      $$
+      (All $R$-linear combinations of the $\mathcal{K}_i$)
 
 9. Given: $R$ a ring, $M_n(R)$ its matrix ring
 	- Given: $I \normal R$ (two-sided)
       - Show: $M_n(I) \normal M_n(R)$
-      - Show: $$\frac{M_n(R)}{M_n(I)} \cong M_n(\frac{R}{I})$$
+      - Show: $$\frac{M_n(R)}{M_n(I)} \cong M_n\left(\frac{R}{I}\right)$$
 	- Show: $\forall I_M \normal M_n(R), I$ is of the form  $M_n(I)$ for some $I \normal R$
       - Show: $R$ a division ring $\implies M_n(R)$ is a simple ring.
 
