@@ -31,7 +31,7 @@ title: Math 200A Homework Question Compendium
 
    Show: $G$ is abelian
 
-7. Given: $H \normal G, K \normal G,H \cap K = e$
+7. Given: $H \normal G, K \normal G,H \intersect K = e$
 
    Show: $\forall h\in H, \forall k\in K, hk = kh$
 
