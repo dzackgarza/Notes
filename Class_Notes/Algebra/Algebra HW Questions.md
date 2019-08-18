@@ -227,10 +227,10 @@ $$
 
 8. $|G| < \infty$
 	- Given: $G$ is characteristically simple
-      Show: $\exists H~(\text{simple})~ \ni G \cong H^n$.
-      Show: Whether or not the converse holds
+      - Show: $\exists H~(\text{simple})~ \ni G \cong H^n$.
+      - Show: Whether or not the converse holds
 	- Given: $N \normal G$ minimal
-      Show: $N$ is characteristically simple, $N \cong H^n$
+      - Show: $N$ is characteristically simple, $N \cong H^n$
 
 # Six
 
