@@ -95,7 +95,7 @@ title: Math 200A Homework Question Compendium
    1. *Show*: $\{ gHg^{-1} : g\in G\} = [G : N_G(H)]$
    2. *Show*: $$G \neq \bigcup_{g\in G} gHg^{-1}$$
 
-4. Prove Cauchy's Theorem. Given $p\mid o(G) <\infty$, $$X = \{ (a_i)_{i=1}^p \in G^p \mid \prod_{i=1}^p a_i = e\}$$
+4. Prove Cauchy's Theorem. Given $p\mid o(G) <\infty$, $$X = \theset{ (a_i)_{i=1}^p \in G^p \mid \prod_{i=1}^p a_i = e}$$
    1. *Show*: $(a_1 a_2\cdots a_p) = e \implies (a_2 a_3 \cdots a_p a_1) = e$
    2. *Show*: $(Z_p, +) \sim X$ and $\bar 1 \sim (a_1 a_2 \cdots a_p) = (a_2 a_3 \cdots a_p a_1)$
    3. *Show*: $|X| = |G|^{p-1}$
