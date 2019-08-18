@@ -221,9 +221,9 @@ $$
 7. Given: $|G| < \infty$, $H \leq G$ maximal $\implies [G:H] = p$, a prime.
   - Show: $|G|$ is solvable
 	- Given: $P \in Syl_p(G) \text{ and } \exists H \ni N_G(P) \leq H \leq G$
-      Show: $[G:H] = 1 \mod p$
+      - Show: $[G:H] = 1 \mod p$
 	- Given: $p \divides o(G)$, the largest such prime
-      Show: $\exists P \normal G \in Syl_p(G),$
+      - Show: $\exists P \normal G \in Syl_p(G),$
 
 8. $|G| < \infty$
 	- Given: $G$ is characteristically simple
