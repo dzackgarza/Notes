@@ -187,6 +187,7 @@ $$
 6. Show: $|G| < 60 \implies G$ is solvable
 
 7. Given: $|G| < \infty$, $H \leq G$ maximal $\implies [G:H] = p$, a prime.
+
    Show: $|G|$ is solvable
 
 	- Given: $P \in Syl_p(G) \wedge \exists H \ni N_G(P) \leq H \leq G$
