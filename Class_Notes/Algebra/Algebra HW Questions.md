@@ -95,7 +95,7 @@ title: Math 200A Homework Question Compendium
 
 1. Given: $G \sim X$ transitively, $H \normal G$
 	- Show: $H \sim X$, but possibly not transitively
-	- Show: $G$ acts transitively on $\theset{ \mathcal{O_h} : h\ \in H}$
+	- Show: $G$ acts transitively on $\theset{ \mathcal{O_ha} : h\ \in H}$
 	- Show: $\forall i, j, |\mathcal{O}_{h_i}| = |\mathcal{O}_{h_j}|$
 	- Given: $x\in \mathcal{O}_h$
       Show: $|\mathcal{O}_h| = |H : H \cap G_x|$
