@@ -120,7 +120,7 @@ title: Math 200A Homework Question Compendium
    *Show*: $\exists H [H : A_n] = n$
 
 9. *Given*: $r$ beads of $n$ colors
-   *Show*: how many distinct circular bracelets can be made
+   *Show*: How many distinct circular bracelets can be made.
 
 # Four
 
