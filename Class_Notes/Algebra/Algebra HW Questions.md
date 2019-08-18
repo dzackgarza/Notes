@@ -28,7 +28,7 @@ title: Math 200A Homework Question Compendium
    *Show*: $G$ is abelian
 
 7. *Given*: $H \unlhd G, K \unlhd G,H \cap K = e$
-   *Show*: $\forall h\in H, \forall k\in K, hk = kh $
+   *Show*: $\forall h\in H, \forall k\in K, hk = kh$
 
 8. *Given*: $|G| < \infty, H \leq G, N \unlhd G, (|H|, [G:N]) = 1$
    *Show*: $H \leq N$
