@@ -131,19 +131,23 @@ $$
    Show: $H \normal G$
 
 2. Given: $H ~\text{char}~ K \normal G$
+
    Show: $H \normal G$
 
 3. Given: $K = \langle k \rangle \normal G$
+
    Show: $H \leq K \implies H \normal G$
 
 4. *Show* $H \normal K \normal G \not\implies H \normal G$
 
 5. Given: $P \leq H \leq K \leq G < \infty, P \in \text{Syl}_p(G)$
+
    Show: $P, H \normal K \implies P \normal K$
 
 6. Show: $N_G(N_G(P)) = N_G(P)$
 
 7. Given: $\sigma \in Aut(G)$
+
    Show: $\sigma Inn(G) \sigma^{-1} = Inn(G)$ iff $\forall g\in G, g^{-1}\sigma(g)\in Z(G)$
 
 8. Show: $Inn(G) ~\text{char}~ Aut(G)$
