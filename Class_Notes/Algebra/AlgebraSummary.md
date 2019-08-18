@@ -445,7 +445,7 @@ $I \unlhd R$ *prime* when $pq\in I \implies p\in I \vee q \in I$
 ## Radicals
 $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
 
-- $$\text{nilrad}(I) = \bigcap P$$  such that $$P \unlhd R$$ prime
+- The nilradical: $\text{nilrad}(I) = \bigcap P$  such that $P \unlhd R$ is prime
 
 - $\text{rad}(I) = \{ x\in  \mid \exists n : x^n \in I \}$
 
