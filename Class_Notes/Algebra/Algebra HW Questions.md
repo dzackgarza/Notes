@@ -69,7 +69,7 @@ title: Math 200A Homework Question Compendium
 
 6. Given: $H\leq G, N \normal G, H \in \text{Hall}(G)$
 
-   Show: $$H\cap N \in \text{Hall}(N) \wedge \frac{HN}{N} \in \text{Hall}(\frac{G}{N})$$
+   Show: $$H\cap N \in \text{Hall}(N) \text{ and } \frac{HN}{N} \in \text{Hall}(\frac{G}{N})$$
 
 7. Given: $|G| = n, G$ cyclic, $\sigma_i: G \rightarrow G \ni x \mapsto x^i$
 	- Show $\sigma_i \in End(G)$
