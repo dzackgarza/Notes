@@ -116,7 +116,7 @@ $$
 X = \theset{ (a_{i})_{i=1}^p \in G^p \suchthat \prod_{i=1}^p a_i = e} \\
 $$
 	- Show: $(a_1 a_2\cdots a_p) = e \implies (a_2 a_3 \cdots a_p a_1) = e$
-	- Show: $(Z_p, +) \sim X$ and $\bar 1 \sim (a_1 a_2 \cdots a_p) = (a_2 a_3 \cdots a_p a_1)$
+	- Show: $(\ZZ_p, +) \sim X$ and $\bar 1 \sim (a_1 a_2 \cdots a_p) = (a_2 a_3 \cdots a_p a_1)$
 	- Show: $|X| = |G|^{p-1}$
 	- Show: $\{ \mathcal{O}_x : |\mathcal{O}_x| = 1 \} > 1$ and $\exists a \in G \ni a^p = e$
 
@@ -168,7 +168,7 @@ $$
 
 7. Given: $\sigma \in Aut(G)$
 
-   Show: $\sigma Inn(G) \sigma^{-1} = Inn(G)$ iff $\forall g\in G, g^{-1}\sigma(g)\in Z(G)$
+   Show: $\sigma Inn(G) \sigma^{-1} = Inn(G)$ iff $\forall g\in G, g^{-1}\sigma(g)\in \ZZ(G)$
 
 8. Show: $Inn(G) ~\text{char}~ Aut(G)$
 
