@@ -163,7 +163,7 @@ title: Math 200A Homework Question Compendium
 
 # Five
 
-1. Given: $G = H \rtimes_\psi K$
+1. Given: $G = H \semidirect_\psi K$
    $$\psi: K \rightarrow Aut(H) \\ k \mapsto \psi(k)$$
    $\theta \in Aut(H)$
    $\rho: K \rightarrow K$
@@ -171,7 +171,7 @@ title: Math 200A Homework Question Compendium
    $$\psi_2: K \rightarrow Aut(H) \\ k \mapsto (\phi_\theta \circ \psi)(k)$$
    $$\psi_3: K \rightarrow Aut(H) \\ k \mapsto (\psi \circ \rho)(k)$$
 
-   Show: $H \rtimes_\psi K \cong H \rtimes_{\psi_2} K \cong H \rtimes_{\psi_3} K$
+   Show: $H \semidirect_\psi K \cong H \semidirect_{\psi_2} K \cong H \semidirect_{\psi_3} K$
 
 2. Classify groups of order $pq, p < q, p \mid q-1$
 
