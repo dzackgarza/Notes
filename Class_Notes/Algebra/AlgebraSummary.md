@@ -522,7 +522,7 @@ $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
     - Cyclic
     - One element of order 4
 
-  - $Z_2 \times Z_2 \cong V_4 \cong D_2 \cong Z_8^\times$, which are all isomorphic to $\generators{a,b \mid a^2 = b^2 =(ab)^2 = e}\\ \cong \generators{(12)(34), (13)(24), (14)(23)}$
+  - $Z_2 \times Z_2 \cong V_4 \cong D_2 \cong Z_8^\times$, which are all isomorphic to $\generators{a,b \mid a^2 = b^2 =(ab)^2 = e} \cong \generators{(12)(34), (13)(24), (14)(23)}$
     - Not cyclic, but abelian
     - All elements have order 2
     - $V_4 \unlhd A_4 \leq S_4$
