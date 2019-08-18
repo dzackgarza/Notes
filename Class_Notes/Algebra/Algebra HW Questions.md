@@ -231,6 +231,7 @@ title: Math 200A Homework Question Compendium
    3. Given: $R$ a field
       Show: $I = \{ r \in R[[x]] : r_0 = 0\}$ is a maximal ideal of $R[[x]]$
       Show: $I$ is the unique maximal ideal
+
 8. Given: $R$ a commutative ring, $G$ a finite group, $RG$ a group ring.
    1. Given: $\mathcal{K} = \{ k_1, k_2, \cdots k_m\}$ a conjugacy class in $G$
       Show: $$K = \sum_{i=1}^m k_i \in RG \implies K \in Z(RG)$$
