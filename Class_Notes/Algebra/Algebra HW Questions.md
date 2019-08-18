@@ -159,9 +159,11 @@ $$
    Show: $\exists P_i \in \text{Syl}_i(G) \normal G$
 
 11. Given: $|G| =595$
-   Show: All sylow subgroups are normal
+
+    Show: All sylow subgroups are normal
 
 12. Given: $|G| = p(p+1)$
+
   Show: $\exists N \normal G$ where $|N| = p$ or $p+1$
 
 # Five
