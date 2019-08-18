@@ -459,7 +459,7 @@ $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
 
 - Prime $\implies$ primary
 
-- $I \unlhd R$ *principal* when $\exists a\in R : I = \generators{a} \rangle$
+- $I \unlhd R$ *principal* when $\exists a\in R : I = \generators{a}$
 
 - $I \unlhd R$ *irreducible* when $\not\exists \{J \unlhd R : I \subset J\} : I = \bigcap J$
 
