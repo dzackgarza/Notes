@@ -81,7 +81,7 @@ title: Math 200A Homework Question Compendium
 
 1. *Given*: $G \sim X$ transitively, $H \unlhd G$
    1. *Show*: $H \sim X$, but possibly not transitively
-   2. *Show*: $G$ acts transitively on $\{\mathcal{O_h} : h\ \in H\}$
+   2. *Show*: $G$ acts transitively on $\theset{ \mathcal{O_h} : h\ \in H}$
    3. *Show*: $\forall i, j, |\mathcal{O}_{h_i}| = |\mathcal{O}_{h_j}|$
    4. *Given*: $x\in \mathcal{O}_h$
       *Show*: $|\mathcal{O}_h| = |H : H \cap G_x|$
