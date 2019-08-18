@@ -97,9 +97,8 @@ title: Math 200A Homework Question Compendium
 
 4. Prove Cauchy's Theorem. Given $p\mid o(G) <\infty$
 \begin{align*}
-.\end{align*}$
 X = \theset{ (a_{i})_{i=1}^p \in G^p \suchthat \prod_{i=1}^p a_i = e}
-$
+.\end{align*}
 	- *Show*: $(a_1 a_2\cdots a_p) = e \implies (a_2 a_3 \cdots a_p a_1) = e$
 	- *Show*: $(Z_p, +) \sim X$ and $\bar 1 \sim (a_1 a_2 \cdots a_p) = (a_2 a_3 \cdots a_p a_1)$
 	- *Show*: $|X| = |G|^{p-1}$
