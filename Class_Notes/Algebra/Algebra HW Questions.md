@@ -21,7 +21,7 @@ title: Math 200A Homework Question Compendium
 	- Show: $H \leq (\QQ, +) \implies$ $H$ is cyclic
 	- Show: $\QQ$ is not finitely generated
 
-5. Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in $[0, 1) \cap \QQ$
+5. Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in $[0, 1) \intersect \QQ$
 	- Show: Every element of $\QQ/\ZZ$ has finite order.
 	- Show: There are elements in $\QQ/\ZZ$ of arbitrarily large order.
 	- Show: $\QQ/\ZZ = T(\RR/\ZZ)$
