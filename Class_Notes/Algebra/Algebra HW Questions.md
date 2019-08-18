@@ -158,7 +158,6 @@ title: Math 200A Homework Question Compendium
 11. *Given*: $|G| =595$
    *Show*: All sylow subgroups are normal
 
-
 12. *Given*: $|G| = p(p+1)$
    *Show*: $\exists N \unlhd G$ where $|N| = p$ or $p+1$
 
@@ -169,9 +168,7 @@ title: Math 200A Homework Question Compendium
    $\theta \in Aut(H)$
    $\rho: K \rightarrow K$
    $$\phi_\theta: Aut(H) \rightarrow Aut(H) \\ \rho \mapsto \theta \circ \rho \circ \theta^{-1}$$
-   ​
    $$\psi_2: K \rightarrow Aut(H) \\ k \mapsto (\phi_\theta \circ \psi)(k)$$
-   ​
    $$\psi_3: K \rightarrow Aut(H) \\ k \mapsto (\psi \circ \rho)(k)$$
 
    Show: $H \rtimes_\psi K \cong H \rtimes_{\psi_2} K \cong H \rtimes_{\psi_3} K$
@@ -202,22 +199,25 @@ title: Math 200A Homework Question Compendium
    2. Given: $N \unlhd G$ minimal
       Show: $N$ is characteristically simple, $N \cong H^n$
 
-   ​
-
 # Six
 
 1. Given: $G$ is nilpotent
    Show: $H \leq G \implies H, G/H$ are nilpotent
+
 2. Show: $G/Z(G)$ is nilpotent $\implies G$ is nilpotent
+
 3. Given: $|G| < \infty$
    Show: $|G|$ is nilpotent iff $a,b\in G, (a,b)=1 \implies ab=ba$
+
 4. Show: $D_{2n}$ is nilpotent iff $ n = 2^i$
+
 5. Given: $|G| < \infty$
    1. Show $\Phi(G)~\text{char}~ G$
    2. Show $\Phi(G)$ is nilpotent
    3. Given: $|P| = p^e$
       Show: $P / \Phi(P)$ is an elementary abelian p-group
       Show:$N \unlhd P, P/N$ is elementary abelian $\implies \Phi(P) \subseteq N$
+
 6. Given: $R$ a commutative ring, $x,y \in R$ nilpotent
    1. Show: $x+y$ is nilpotent
       Show: $\{x\in R : x \text{ is nilpotent}\} \unlhd R$
