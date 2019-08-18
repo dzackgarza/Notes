@@ -223,7 +223,8 @@ title: Math 200A Homework Question Compendium
       Show: $\{x\in R : x \text{ is nilpotent}\} \unlhd R$
    2. Given: $u\in R^\times, x\in R$ nilpotent
       Show: $u+x\in R^\times$
-   3. Show: An counterexample to 1 when $R$ is noncommutative
+   3. Show: An counterexample to 1 when $R$ is noncommutative.
+
 7. Given: $R$ a commutative ring, $R[[x]]$ its formal power series
    1. Show: $\sum_{i=0}^\infty a_i x^i \in R[[x]]^\times \iff a_0 \in R^\times$
    2. Show: $R$ a domain $\implies R[[x]]$ a domain
