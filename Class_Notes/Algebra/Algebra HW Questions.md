@@ -111,7 +111,7 @@ title: Math 200A Homework Question Compendium
 	- Show: $\{ gHg^{-1} : g\in G\} = [G : N_G(H)]$
 	- Show: $$G \neq \bigcup_{g\in G} gHg^{-1}$$
 
-4. Prove Cauchy's Theorem. Given $p\mid o(G) <\infty$
+4. Prove Cauchy's Theorem. Given $p\divides o(G) <\infty$
 $$
 X = \theset{ (a_{i})_{i=1}^p \in G^p \suchthat \prod_{i=1}^p a_i = e} \\
 $$
@@ -208,7 +208,7 @@ $$
 
    Show: $H \semidirect_\psi K \cong H \semidirect_{\psi_2} K \cong H \semidirect_{\psi_3} K$
 
-2. Classify groups of order $pq, p < q, p \mid q-1$
+2. Classify groups of order $pq, p < q, p \divides q-1$
 
 3. Classify groups of order 20.
 
@@ -222,7 +222,7 @@ $$
   - Show: $|G|$ is solvable
 	- Given: $P \in Syl_p(G) \wedge \exists H \ni N_G(P) \leq H \leq G$
       Show: $[G:H] = 1 \mod p$
-	- Given: $p \mid o(G)$, the largest such prime
+	- Given: $p \divides o(G)$, the largest such prime
       Show: $\exists P \normal G \in Syl_p(G),$
 
 8. $|G| < \infty$
