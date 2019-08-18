@@ -28,26 +28,33 @@ title: Math 200A Homework Question Compendium
 	- Show: $\QQ/\ZZ \cong \mathbb{C}^x$
 
 6. Given: $G/Z(G)$ is cyclic
+
    Show: $G$ is abelian
 
 7. Given: $H \normal G, K \normal G,H \cap K = e$
+
    Show: $\forall h\in H, \forall k\in K, hk = kh$
 
 8. Given: $|G| < \infty, \quad H \leq G, \quad N \normal G, (|H|, [G:N]) = 1$
+
    Show: $H \leq N$
 
 9. Given: $|G| < \infty, N \normal G, (|N|, [G:N]) =1$
+
    Show: $N$ is the unique subgroup of order $|N|$
 
 # Two
 
 1. Given: For every triplet in $G$, two elements commute
+
    Show: $G$ is abelian
 
 2. Given: $H_1, H_2, H_3 \leq G, G = H_1 \cup H_2$
+
    Show: $G=H_1 \vee G=H_2$
 
 3. Given: $G=H_1 \cup H_2 \cup H_3, G$ finite
+
    Show: $G=H_i \vee \forall i, [G:H_i] = 2$
 
 4. Show: TFAE; $\text{clos}(H)$ is:
@@ -57,9 +64,11 @@ title: Math 200A Homework Question Compendium
 	- $\phi: G \rightarrow -$, $\phi(H) = e$, then $\phi$ factors through $G/\text{clos}(H)$
 
 5. Given: $H, K \normal HK \leq G$
+
    Show: $$ \frac{HK}{H\cap K} \cong \frac{HK}{H}\times \frac{HK}{K}$$
 
 6. Given: $H\leq G, N \normal G, H \in \text{Hall}(G)$
+
    Show: $$H\cap N \in \text{Hall}(N) \wedge \frac{HN}{N} \in \text{Hall}(\frac{G}{N})$$
 
 7. Given: $|G| = n, G$ cyclic, $\sigma_i: G \rightarrow G \ni x \mapsto x^i$
@@ -68,10 +77,12 @@ title: Math 200A Homework Question Compendium
 	- $\sigma_i = \sigma_j$ iff $i=j\mod n$
 	- $\tau \in Aut(G) \implies \exists i \ni \tau = \sigma_i$
 	- $\sigma_i \circ \sigma_j = \sigma_{ij}$
-   6. The map $$\psi: Z_n^\times \rightarrow Aut(G)\\ i \mapsto \sigma_i$$
-      is an isomorphism.
+  - The map
+    $$\psi: Z_n^\times \rightarrow Aut(G)\\ i \mapsto \sigma_i$$
+    is an isomorphism.
 
 8. Given: $G$ is cyclic
+
    Show: $Aut(G)$ is abelian of order $\phi(n)$
 
 9. Show: $D_\infty \cong \langle a,b \mid b^2 = e, ba = a^{-1} b \rangle$
@@ -91,7 +102,9 @@ title: Math 200A Homework Question Compendium
 	- Show: $|\{\mathcal{O}_h\}_{h\in H}| = [G : HG_x]$
 
 2. Given: $\mathcal{K}$ a conjugacy class in $S_n$, $\{\mathcal{O}_{s}:s\in S_n\}$ orbits of an $A_n$-action on $S_n$
+
    Show: $\mathcal{K} = \mathcal{O}_s \vee \mathcal{K} = \mathcal{O}_{s_i} \cup \mathcal{O}_{s_j}$
+
    Show: Case 2 occurs iff  $\{k_i\}$, the cycle lengths in disjoint cycle form, are odd and distinct
 
 3. i: $|G| < \infty, H < G$
@@ -206,9 +219,7 @@ $$
 6. Show: $|G| < 60 \implies G$ is solvable
 
 7. Given: $|G| < \infty$, $H \leq G$ maximal $\implies [G:H] = p$, a prime.
-
-   Show: $|G|$ is solvable
-
+  - Show: $|G|$ is solvable
 	- Given: $P \in Syl_p(G) \wedge \exists H \ni N_G(P) \leq H \leq G$
       Show: $[G:H] = 1 \mod p$
 	- Given: $p \mid o(G)$, the largest such prime
