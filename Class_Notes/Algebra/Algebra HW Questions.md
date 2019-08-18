@@ -132,7 +132,7 @@ $$
 
 7. Given: $[H : G]= n < \infty$
 	- Show: $[\text{core}(H) : G]$ divides $n!$
-	- Show: $G$ simple $\implies o(G) \mid n! \wedge |G| < \infty$
+	- Show: $G$ simple $\implies o(G) \divides n! \wedge |G| < \infty$
 
 8. Given: $A_n$ is simple for $n\geq 5$
 
