@@ -226,7 +226,6 @@ $$
       Show: $\exists P \normal G \in Syl_p(G),$
 
 8. $|G| < \infty$
-
 	- Given: $G$ is characteristically simple
       Show: $\exists H~(\text{simple})~ \ni G \cong H^n$.
       Show: Whether or not the converse holds
@@ -236,11 +235,13 @@ $$
 # Six
 
 1. Given: $G$ is nilpotent
+
    Show: $H \leq G \implies H, G/H$ are nilpotent
 
 2. Show: $G/Z(G)$ is nilpotent $\implies G$ is nilpotent
 
 3. Given: $|G| < \infty$
+
    Show: $|G|$ is nilpotent iff $a,b\in G, (a,b)=1 \implies ab=ba$
 
 4. Show: $D_{2n}$ is nilpotent iff $n = 2^{i}$
