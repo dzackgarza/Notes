@@ -209,7 +209,7 @@ title: Math 200A Homework Question Compendium
 3. Given: $|G| < \infty$
    Show: $|G|$ is nilpotent iff $a,b\in G, (a,b)=1 \implies ab=ba$
 
-4. Show: $D_{2n}$ is nilpotent iff $ n = 2^i$
+4. Show: $D_{2n}$ is nilpotent iff $n = 2^i$
 
 5. Given: $|G| < \infty$
    1. Show $\Phi(G)~\text{char}~ G$
