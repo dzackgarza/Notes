@@ -412,7 +412,7 @@ $S_n, n\geq 4$
 - $\left\langle  a,b \mid a^n=b^2=1, bab^{-1} = a^{-1}\right\rangle  \cong \left\langle r, s\right\rangle$
 - $D_n / N$ is always another dihedral group for any $N \unlhd D_n$
 - All subgroups:
-  - $ \generators{r^d}  \cong Z_{n/d}$ where $d$ divides $n$ (index $2d$)
+  - $\generators{r^d}  \cong Z_{n/d}$ where $d$ divides $n$ (index $2d$)
   - $\generators{r^d, r^i s} \cong D_{\frac n d}$ where $d$ divides $n$ and $0 \leq i \leq d-1$ (index $d$)
     - All dihedral
 
