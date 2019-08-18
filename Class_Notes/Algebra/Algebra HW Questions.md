@@ -101,7 +101,7 @@ title: Math 200A Homework Question Compendium
    3. *Show*: $|X| = |G|^{p-1}$
    4. *Show*: $\{ \mathcal{O}_x : |\mathcal{O}_x| = 1 \} > 1$ and $\exists a \in G \ni a^p = e$
 
-5. *Given*: $G \sim X, |G| < \infty , 1 < |X| < \infty$
+5. *Given*: $G \sim X, \quad |G| < \infty , \quad 1 < |X| < \infty$
    *Show*: $\exists g\ in G \ni \forall x\in X, g\sim x \neq x$
    *Show*: This holds if $|G| = \infty$, but not if $|X| = \infty$ as well.
 
