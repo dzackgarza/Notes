@@ -78,7 +78,7 @@ title: Math 200A Homework Question Compendium
 	- $\tau \in Aut(G) \implies \exists i \ni \tau = \sigma_i$
 	- $\sigma_i \circ \sigma_j = \sigma_{ij}$
   - The map
-    $$\psi: Z_n^\times \rightarrow Aut(G)\\ i \mapsto \sigma_i$$
+    $$\psi: \ZZ_n^\times \rightarrow Aut(G)\\ i \mapsto \sigma_i$$
     is an isomorphism.
 
 8. Given: $G$ is cyclic
