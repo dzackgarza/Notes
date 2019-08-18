@@ -451,7 +451,7 @@ $I \unlhd R$ *radical* when $\forall a\in R, a^n \in I \implies a \in I$
 
 - $\text{rad}(0) = \text{nilrad}(R)$
 - $\text{rad}(IJ) = \text{rad}(I) \intersect \text{rad}(J)$
-- $$\text{rad}(I) = \bigcap J$$ such that $I \subset J, J$ prime
+- $\text{rad}(I) = \bigcap J$ such that $I \subset J, J$ prime
     (i.e. intersection of all prime ideals containing $I$)
 
 ## Other ideals
