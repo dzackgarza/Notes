@@ -119,8 +119,10 @@ $$
 	- Show: $G$ simple $\implies o(G) \mid n! \wedge |G| < \infty$
 
 8. Given: $A_n$ is simple for $n\geq 5$
+
    Show:  $\not \exists H \in A_n \ni [H : A_n] < n$
-O   Show: $\exists H [H : A_n] = n$
+
+   Show: $\exists H [H : A_n] = n$
 
 9. Given: $r$ beads of $n$ colors
 
