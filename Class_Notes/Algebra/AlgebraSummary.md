@@ -413,7 +413,7 @@ $S_n, n\geq 4$
 - $D_n / N$ is always another dihedral group for any $N \unlhd D_n$
 - All subgroups:
   - $ \generators{r^d}  \cong Z_{n/d}$ where $d$ divides $n$ (index $2d$)
-  - $\left\langle r^d, r^i s\right\rangle  \cong D_{n/d}$ where $d$ divides $n$ and $0 \leq i \leq d-1$ (index $d$)
+  - $\generators{r^d, r^i s} \cong D_{\frac n d}$ where $d$ divides $n$ and $0 \leq i \leq d-1$ (index $d$)
     - All dihedral
 
 
