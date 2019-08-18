@@ -30,7 +30,7 @@ title: Math 200A Homework Question Compendium
 7. *Given*: $H \unlhd G, K \unlhd G,H \cap K = e$
    *Show*: $\forall h\in H, \forall k\in K, hk = kh$
 
-8. *Given*: $|G| < \infty, H \leq G, N \unlhd G, (|H|, [G:N]) = 1$
+8. *Given*: $|G| < \infty, \quad H \leq G, \quad N \normal G, (|H|, [G:N]) = 1$
    *Show*: $H \leq N$
 
 9. *Given*: $|G| < \infty, N \unlhd G, (|N|, [G:N]) =1$
