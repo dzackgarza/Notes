@@ -5,7 +5,7 @@ title: Math 200A Homework Question Compendium
 # One
 
 1. *Given*: $\forall x \in G, x^2 = e$
-   *Show*: $G \in \mathbf{Ab}​$
+   *Show*: $G \in \mathbf{Ab}$
 
 2. *Given*: $|G|<\infty, |G| = 0\mod 2$
    *Show*: $\exists g\in G \ni o(g)  = 2$
@@ -242,7 +242,7 @@ title: Math 200A Homework Question Compendium
    1. Given: $I \normal R$ (two-sided)
       Show: $M_n(I) \normal M_n(R)$
       Show: $$\frac{M_n(R)}{M_n(I)} \cong M_n(\frac{R}{I})$$
-   2. Show: $\forall I_M \normal M_n(R), I​$ is of the form  $M_n(I)​$ for some $I \normal R​$
+   2. Show: $\forall I_M \normal M_n(R), I$ is of the form  $M_n(I)$ for some $I \normal R$
       Show: $R$ a division ring $\implies M_n(R)$ is a simple ring.
 
 # Seven
