@@ -102,8 +102,8 @@ title: Math 200A Homework Question Compendium
    4. *Show*: $\{ \mathcal{O}_x : |\mathcal{O}_x| = 1 \} > 1$ and $\exists a \in G \ni a^p = e$
 
 5. *Given*: $G \sim X, \quad |G| < \infty , \quad 1 < |X| < \infty$
-   *Show*: $\exists g\ in G \ni \forall x\in X, g\sim x \neq x$
-   *Show*: This holds if $|G| = \infty$, but not if $|X| = \infty$ as well.
+  - *Show*: $\exists g\ in G \ni \forall x\in X, g\sim x \neq x$
+  - *Show*: This holds if $|G| = \infty$, but not if $|X| = \infty$ as well.
 
 6. *Given*: $H \leq G$. *Show*: $\text{core}(H)$ is
    1. The largest $N \normal G, N \subseteq H$
