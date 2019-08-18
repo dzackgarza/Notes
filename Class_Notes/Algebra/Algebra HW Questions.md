@@ -120,14 +120,16 @@ $$
 
 8. Given: $A_n$ is simple for $n\geq 5$
    Show:  $\not \exists H \in A_n \ni [H : A_n] < n$
-   Show: $\exists H [H : A_n] = n$
+O   Show: $\exists H [H : A_n] = n$
 
 9. Given: $r$ beads of $n$ colors
+
    Show: How many distinct circular bracelets can be made.
 
 # Four
 
 1. Given: $H~\text{char}~G$
+
    Show: $H \normal G$
 
 2. Given: $H ~\text{char}~ K \normal G$
@@ -138,7 +140,7 @@ $$
 
    Show: $H \leq K \implies H \normal G$
 
-4. *Show* $H \normal K \normal G \not\implies H \normal G$
+4. Show $H \normal K \normal G \not\implies H \normal G$
 
 5. Given: $P \leq H \leq K \leq G < \infty, P \in \text{Syl}_p(G)$
 
