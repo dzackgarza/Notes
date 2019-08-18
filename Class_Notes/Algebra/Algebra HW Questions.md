@@ -148,14 +148,17 @@ title: Math 200A Homework Question Compendium
 9. *Given*: $H \subseteq G, P \in \text{Syl}_p(G)$
    1. *Show*: $\exists g \in G \ni gPg^{-1} \in Syl_p(H)$
    2. *Given*: $H \unlhd G$
-      *Show*: $P\cap H \in \text{Syl}_p(H)
+      *Show*: $P\cap H \in \text{Syl}_p(H)$
    3. *Given*: $P  \unlhd G$
       *Show*: $P \cap H \in \text{Syl}_p(H)$ and $|\text{Syl}_p(H)| = 1$
 
 10. *Given*: $|G| = pqr, p < q < r$
    *Show*: $\exists P_i \in \text{Syl}_i(G) \unlhd G$
+
 11. *Given*: $|G| =595$
    *Show*: All sylow subgroups are normal
+
+
 12. *Given*: $|G| = p(p+1)$
    *Show*: $\exists N \unlhd G$ where $|N| = p$ or $p+1$
 
