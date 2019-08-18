@@ -149,6 +149,7 @@ $$
 8. Show: $Inn(G) ~\text{char}~ Aut(G)$
 
 9. Given: $H \subseteq G, P \in \text{Syl}_p(G)$
+
 	- Show: $\exists g \in G \ni gPg^{-1} \in Syl_p(H)$
 
 	- Given: $H \normal G$
