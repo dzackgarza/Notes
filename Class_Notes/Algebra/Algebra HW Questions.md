@@ -237,6 +237,7 @@ title: Math 200A Homework Question Compendium
       Show: $$K = \sum_{i=1}^m k_i \in RG \implies K \in Z(RG)$$
    2. Given: $\mathcal{K}_1\cdots \mathcal{K}_r$ distinct conjugacy classes in $G$, $K_i = \sum_{j}k_j \ni k_j \in \mathcal{K}_i$
       Show: $Z(RG) = \{\sum a_l K_l : \forall 1 \leq l \leq r, a_l \in R \}$ (All $R$-linear combinations of the $\mathcal{K}_i$)
+
 9. Given: $R$ a ring, $M_n(R)$ its matrix ring
    1. Given: $I \unlhd R$ (two-sided)
       Show: $M_n(I) \unlhd M_n(R)$
