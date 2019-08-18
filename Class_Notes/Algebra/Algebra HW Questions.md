@@ -4,8 +4,6 @@ title: Math 200A Homework Question Compendium
 
 
 
-----
-
 # One
 
 1. *Given*: $\forall x \in G, x^2 = e$
