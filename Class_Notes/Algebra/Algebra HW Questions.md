@@ -14,15 +14,15 @@ title: Math 200A Homework Question Compendium
    *Show*: $T(G) \leq G$ (where $T(G) = \{ g\in G : |g| < \infty\}$
 
 4. *Show*: Every finite group is finitely generated.
-   1. *Show*: $\mathbb{Z}$ is finitely generated
-   2. *Show*: $H \leq (\mathbb{Q}, +) \implies$ $H$ is cyclic
-   3. *Show*: $\mathbb{Q}$ is not finitely generated
+   1. *Show*: $\ZZ$ is finitely generated
+   2. *Show*: $H \leq (\QQ, +) \implies$ $H$ is cyclic
+   3. *Show*: $\QQ$ is not finitely generated
 
-5. *Show*: $\mathbb{Q}/\mathbb{Z}$ has, for each coset, exactly one representative in $[0, 1) \cap \mathbb{Q}$
-   1. *Show*: Every element of $\mathbb{Q}/\mathbb{Z}$ has finite order.
-   2. *Show*: There are elements in $\mathbb{Q}/\mathbb{Z}$ of arbitrarily large order.
-   3. *Show*: $\mathbb{Q}/\mathbb{Z} = T(\mathbb{R}/\mathbb{Z})$
-   4. *Show*: $\mathbb{Q}/\mathbb{Z} \cong \mathbb{C}^x$
+5. *Show*: $\QQ/\ZZ$ has, for each coset, exactly one representative in $[0, 1) \cap \QQ$
+   1. *Show*: Every element of $\QQ/\ZZ$ has finite order.
+   2. *Show*: There are elements in $\QQ/\ZZ$ of arbitrarily large order.
+   3. *Show*: $\QQ/\ZZ = T(\RR/\ZZ)$
+   4. *Show*: $\QQ/\ZZ \cong \mathbb{C}^x$
 
 6. *Given*: $G/Z(G)$ is cyclic
    *Show*: $G$ is abelian
@@ -75,7 +75,7 @@ title: Math 200A Homework Question Compendium
 
 10. *Show*: $Q_8 \cong \langle a,b \mid a^2 = b^2, a^{-1}ba = b^{-1}\rangle$
 
-11. *Show*: $\langle x,y \mid xy^2 = y^3, yx^2 = x^3y \rangle = \lbrace e \rbrace$
+11. *Show*: $\generators{x,y \mid xy^2 = y^3, yx^2 = x^3y} = \generators{e}$
 
 # Three
 
