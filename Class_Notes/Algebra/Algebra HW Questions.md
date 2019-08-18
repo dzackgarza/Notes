@@ -4,7 +4,6 @@ title: Math 200A Homework Question Compendium
 
 
 
-
 ----
 
 # One
