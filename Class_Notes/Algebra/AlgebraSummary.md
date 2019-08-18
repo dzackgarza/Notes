@@ -128,7 +128,7 @@ Chapters 1-9 of Dummit and Foote
 ### **Normal Core** of a subgroup
 
   - $$H_G = \bigcap_{g\in G} gHg^{-1}$$
-  - Equivalently, $H_G = \left\langle  N: N \unlhd G ~\&~ N \leq H\right\rangle$
+  - Equivalently, $H_G = \left\langle  N: N \unlhd G ~\&~ N \leq H\right\rangla$
     - Largest normal subgroup that contains $H$
   - Equivalently, $H_G = \text{ker}\psi$ where $\psi: G \rightarrow Sym(G/H);~ g\sim(xH) =(gx)H$
   - Facts:
@@ -351,7 +351,7 @@ $$\mathcal{O}_x = \{ g \sim x : x\in X  \} = \bigcup_{g\in G} \{g \sim x \}$$
 - $|G| = p$
 
   - Always cyclic
-    - Proof: Any nontrivial cyclic subgroup's order is $\right\rangle 1$ and divides $p$, so equals $p$.
+    - Proof: Any nontrivial cyclic subgroup's order is $> 1$ and divides $p$, so equals $p$.
 
 - $|G| = p^2$
   - Always abelian
