@@ -1,8 +1,9 @@
-**Math 200A Homework Question Compendium**
+---
+title: Math 200A Homework Question Compendium
+---
 
------
 
-[TOC]
+
 
 ----
 
@@ -55,7 +56,7 @@
    *Show*: $$ \frac{HK}{H\cap K} \cong \frac{HK}{H}\times \frac{HK}{K}$$
 
 6. *Given*: $H\leq G, N \unlhd G, H \in \text{Hall}(G)$
-   *Show*: $$H\cap N \in \text{Hall}(N) \wedge \frac{HN}{N} \in \text{Hall}(\frac{G}{N})$$ 
+   *Show*: $$H\cap N \in \text{Hall}(N) \wedge \frac{HN}{N} \in \text{Hall}(\frac{G}{N})$$
 
 7. *Given*: $|G| = n, G$ cyclic, $\sigma_i: G \rightarrow G \ni x \mapsto x^i$
 
@@ -176,7 +177,7 @@
 8. $|G| < \infty$
 
    1. Given: $G$ is characteristically simple
-      Show: $\exists H~(\text{simple})~ \ni G \cong H^n$. 
+      Show: $\exists H~(\text{simple})~ \ni G \cong H^n$.
       Show: Whether or not the converse holds
    2. Given: $N \unlhd G$ minimal
       Show: $N$ is characteristically simple, $N \cong H^n$
@@ -215,7 +216,7 @@
    2. Given: $\mathcal{K}_1\cdots \mathcal{K}_r$ distinct conjugacy classes in $G$, $K_i = \sum_{j}k_j \ni k_j \in \mathcal{K}_i$
       Show: $Z(RG) = \{\sum a_l K_l : \forall 1 \leq l \leq r, a_l \in R \}$ (All $R$-linear combinations of the $\mathcal{K}_i$)
 9. Given: $R$ a ring, $M_n(R)$ its matrix ring
-   1. Given: $I \unlhd R$ (two-sided) 
+   1. Given: $I \unlhd R$ (two-sided)
       Show: $M_n(I) \unlhd M_n(R)$
       Show: $$\frac{M_n(R)}{M_n(I)} \cong M_n(\frac{R}{I})$$
    2. Show: $\forall I_M \unlhd M_n(R), I​$ is of the form  $M_n(I)​$ for some $I \unlhd R​$
