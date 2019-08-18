@@ -1,3 +1,7 @@
+---
+title: "Fall 2017 Algebra Review"
+---
+
 # List of Topics
 
 Chapters 1-9 of Dummit and Foote
