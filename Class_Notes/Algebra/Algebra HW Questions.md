@@ -17,18 +17,22 @@ title: Math 200A Homework Question Compendium
    1. *Show*: $\mathbb{Z}$ is finitely generated
    2. *Show*: $H \leq (\mathbb{Q}, +) \implies$ $H$ is cyclic
    3. *Show*: $\mathbb{Q}$ is not finitely generated
-   xx4.
+
 5. *Show*: $\mathbb{Q}/\mathbb{Z}$ has, for each coset, exactly one representative in $[0, 1) \cap \mathbb{Q}$
    1. *Show*: Every element of $\mathbb{Q}/\mathbb{Z}$ has finite order.
    2. *Show*: There are elements in $\mathbb{Q}/\mathbb{Z}$ of arbitrarily large order.
    3. *Show*: $\mathbb{Q}/\mathbb{Z} = T(\mathbb{R}/\mathbb{Z})$
    4. *Show*: $\mathbb{Q}/\mathbb{Z} \cong \mathbb{C}^x$
+
 6. *Given*: $G/Z(G)$ is cyclic
    *Show*: $G$ is abelian
+
 7. *Given*: $H \unlhd G, K \unlhd G,H \cap K = e$
    *Show*: $\forall h\in H, \forall k\in K, hk = kh $
+
 8. *Given*: $|G| < \infty, H \leq G, N \unlhd G, (|H|, [G:N]) = 1$
    *Show*: $H \leq N$
+
 9. *Given*: $|G| < \infty, N \unlhd G, (|N|, [G:N]) =1$
    *Show*: $N$ is the unique subgroup of order $|N|$
 
