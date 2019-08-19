@@ -6,6 +6,6 @@
 - Index
 - Normal subgroup
 - Factor group
-- Simple group
+- Simple group:
 
 
