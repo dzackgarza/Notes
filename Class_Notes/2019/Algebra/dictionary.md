@@ -23,6 +23,7 @@
 - Normal series
 - Normal subgroup
 - Normalizer
+- Normal Core: For $H \leq G$, the largest subgroup of $G$ that is *contained* in $H$.
 - Orbit
 - Orbit-Stabilizer theorem
 - Outer automorphism
