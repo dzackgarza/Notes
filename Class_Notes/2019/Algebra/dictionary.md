@@ -1,6 +1,9 @@
 - Cauchy's Theorem
 - Centralizer
+- Characteristic subgroup
 - Class Equation
+- Commutator subgroup
+- Composition series
 - Composition series
 - Conjugacy Class
 - Cosets
@@ -13,27 +16,23 @@
 - Group action
 - Index
 - Inner automorphism
+- Jordan-Holder theorem
 - Lagrange's Theorem
+- Nilpotent groups
+- Normal series
 - Normal subgroup
 - Normalizer
 - Orbit
+- Orbit-Stabilizer theorem
 - Outer automorphism
 - Second Isomorphism Theorem
 - Semidirect product
 - Simple group:
 - Solvable group
 - Stabilizer
+- Subnormal series
 - Sylow Theorems
+- Sylow p-groups
 - Third Isomorphism Theorem
-- Transitive action
-- Nilpotent groups
-- Orbit-Stabilizer theorem
 - Transitive group action
 - p-groups
-- Sylow p-groups
-- Subnormal series
-- Composition series
-- Jordan-Holder theorem
-- Characteristic subgroup
-- Commutator subgroup
-- Normal series
