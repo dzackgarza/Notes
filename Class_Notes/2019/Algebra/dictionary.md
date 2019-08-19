@@ -15,4 +15,11 @@
 - Class Equation
 - Conjugacy Class
 - Derived series
-- Composition seories
+- Composition series
+- Faithful action
+- Cauchy's Theorem
+- Lagrange's Theorem
+- Sylow Theorems
+- First Isomorphism Theorem
+- Second Isomorphism Theorem
+- Third Isomorphism Theorem
