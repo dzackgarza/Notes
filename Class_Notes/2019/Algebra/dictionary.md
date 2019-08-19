@@ -14,3 +14,5 @@
 - Normalizer
 - Class Equation
 - Conjugacy Class
+- Derived series
+- Composition series
