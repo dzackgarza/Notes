@@ -1,31 +1,29 @@
-- Binary operation
+- Cauchy's Theorem
+- Centralizer
+- Class Equation
+- Composition series
+- Conjugacy Class
 - Cosets
 - Cycle
+- Derived series
 - Equivalence relation
 - Factor group
-- Index
-- Normal subgroup
-- Orbit
-- Simple group:
-- Group action
-- Transitive action
-- Solvable group
-- Centralizer
-- Normalizer
-- Class Equation
-- Conjugacy Class
-- Derived series
-- Composition series
 - Faithful action
-- Cauchy's Theorem
-- Lagrange's Theorem
-- Sylow Theorems
 - First Isomorphism Theorem
-- Second Isomorphism Theorem
-- Third Isomorphism Theorem
-- Orbit
+- Group action
+- Index
 - Inner automorphism
+- Lagrange's Theorem
+- Normal subgroup
+- Normalizer
+- Orbit
+- Orbit
 - Outer automorphism
+- Second Isomorphism Theorem
 - Semidirect product
+- Simple group:
+- Solvable group
 - Stabilizer
--
+- Sylow Theorems
+- Third Isomorphism Theorem
+- Transitive action
