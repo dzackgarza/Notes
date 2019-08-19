@@ -1,5 +1,6 @@
 - Cauchy's Theorem
 - Centralizer
+- Center of a group
 - Characteristic subgroup
 - Class Equation
 - Commutator subgroup
