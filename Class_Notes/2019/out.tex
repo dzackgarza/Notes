@@ -1,0 +1,522 @@
+\input{"/home/zack/Dropbox/Document Archive/Latex/preamble.tex"}
+\let\Begin\begin
+\let\End\end
+\newcommand\wrapenv[1]{#1}
+
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+\title{
+\textbf{
+    Algebra
+  }
+  }
+\author{D. Zack Garza}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+% \todo{Insert title and subtitle.}
+\tableofcontents
+
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{major-theorems}{%
+\section{Major Theorems}\label{major-theorems}}
+
+\wrapenv{\Begin{theorem}[Cauchy]}
+
+For any prime \(p\) dividing the order of \(G\), there is an element
+\(x\) of order \(p\) (and thus a subgroup \(H = \generators{x}\)).
+\wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{theorem}[Lagrange]}
+
+If \(H \leq G\) is a subgroup, then \(\abs{H} \divides \abs{G}\).
+\wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{theorem}[Sylow 1]}
+
+If \(\abs{G} = n = \prod p_{i}^{a_{i}}\) as a prime factorization, then
+\(G\) has subgroups of order \(p_{i}^{a_{i}}\) for every \(i\).
+Moreover, this holds for any \(1 \leq r \leq a_{i}\).
+\wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{theorem}[Classification of finitely generated abelian groups]}
+
+If \(G\) is a finitely generated abelian group, then
+\(G \cong F \oplus T\), where \(F\) is free abelian and \(T\) is a
+torsion group. If \(\abs T = n\), then
+\(T \cong \bigoplus \ZZ_{p_{i}^{\alpha_{i}}}\) where
+\(n = \prod p_{i}^{\alpha_{i}}\) is some factorization of \(n\) with the
+\(p_{i}\) \textbf{not necessarily distinct}. \wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{theorem}}
+
+Conjugacy classes partition \(G\) \begin{align*}
+|G|=|Z(G)| + \sum_{\text{One representative in each orbit}} |C_{G}\left(g_{i}\right) |
+= \sum_{asdsa} [G: C(g_{i}) ]
+.\end{align*} \wrapenv{\End{theorem}}
+
+Some nice lemmas:
+
+\begin{itemize}
+\tightlist
+\item
+  Every subgroup of a cyclic group is itself cyclic.
+\end{itemize}
+
+\hypertarget{lecture-1-thu-15-aug-2019}{%
+\section{Lecture 1 (Thu 15 Aug 2019)}\label{lecture-1-thu-15-aug-2019}}
+
+\begin{quote}
+We'll be using Hungerford's Algebra text.Show that a finite abelian
+group that is not cyclic contains a subgroup which is isomorphic
+\end{quote}
+
+\hypertarget{definitions}{%
+\subsection{Definitions}\label{definitions}}
+
+The following definitions will be useful to know by heart:
+
+\begin{itemize}
+\tightlist
+\item
+  The order of a group
+\item
+  Cartesian product
+\item
+  Relations
+\item
+  Equivalence relation
+\item
+  Partition
+\item
+  Binary operation
+\item
+  Group
+\item
+  Isomorphism
+\item
+  Abelian group
+\item
+  Cyclic group
+\item
+  Subgroup
+\item
+  Greatest common divisor
+\item
+  Least common multiple
+\item
+  Permutation
+\item
+  Transposition
+\item
+  Orbit
+\item
+  Cycle
+\item
+  The symmetric group \(S^{n}\)
+\item
+  The alternating group \(A_{n}\)
+\item
+  Even and odd permutations
+\item
+  Cosets
+\item
+  Index
+\item
+  The direct product of groups
+\item
+  Homomorphism
+\item
+  Image of a function
+\item
+  Inverse image of a function
+\item
+  Kernel
+\item
+  Normal subgroup
+\item
+  Factor group
+\item
+  Simple group
+\end{itemize}
+
+Here is a rough outline of the course:
+
+\begin{itemize}
+\tightlist
+\item
+  Group Theory
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Groups acting on sets
+  \item
+    Sylow theorems and applications
+  \item
+    Classification
+  \item
+    Free and free abelian groups
+  \item
+    Solvable and simple groups
+  \item
+    Normal series
+  \end{itemize}
+\item
+  Galois Theory
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Field extensions
+  \item
+    Splitting fields
+  \item
+    Separability
+  \item
+    Finite fields
+  \item
+    Cyclotomic extensions
+  \item
+    Galois groups
+  \item
+    Solvability by radicals
+  \end{itemize}
+\item
+  Module theory
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Free modules
+  \item
+    Homomorphisms
+  \item
+    Projective and injective modules
+  \item
+    Finitely generated modules over a PID
+  \end{itemize}
+\item
+  Linear Algebra
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Matrices and linear transformations
+  \item
+    Rank and determinants
+  \item
+    Canonical forms
+  \item
+    Characteristic polynomials
+  \item
+    Eigenvalues and eigenvectors
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{preliminaries}{%
+\subsection{Preliminaries}\label{preliminaries}}
+
+\wrapenv{\Begin{definition}}
+
+A \textbf{group} is an ordered pair \((G, \wait: G\cross G \to G)\)
+where \(G\) is a set and \(\wait\) is a binary operation, which
+satisfies the following axioms:
+
+\begin{itemize}
+\tightlist
+\item
+  Associativity: \((g_1 g_2)g_3 = g_1(g_2 g_3)\),
+\item
+  Identity: \(\exists e\in G \suchthat ge = eg = g\),
+\item
+  Inverses: \(g\in G \implies \exists h\in G \suchthat gh = gh = e\).
+\end{itemize}
+
+\wrapenv{\End{definition}}
+
+\wrapenv{\wrapenv{\Begin{example}}}
+\hfill
+
+\begin{itemize}
+\tightlist
+\item
+  \((\ZZ, +)\)
+\item
+  \((\QQ, +)\)
+\item
+  \((\QQ\units, \times)\)
+\item
+  \((\RR\units, \times)\)
+\item
+  (\(\GL(n, \RR), \times) = \theset{A \in \mathrm{Mat}_n \suchthat \det(A) \neq 0}\)
+\item
+  \((S_n, \circ)\)
+\end{itemize}
+
+\wrapenv{\wrapenv{\End{example}}}
+
+\wrapenv{\Begin{definition}}
+
+A subset \(S \subseteq G\) is a \textbf{subgroup} of \(G\) iff
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(s_1, s_2 \in S \implies s_1 s_2 \in S\)
+\item
+  \(e\in S\)
+\item
+  \(s\in S \implies s\inv \in S\)
+\end{enumerate}
+
+\wrapenv{\End{definition}}
+
+We denote such a subgroup \(S \leq G\).
+
+Examples of subgroups:
+
+\begin{itemize}
+\tightlist
+\item
+  \((\ZZ, +) \leq (\QQ, +)\)
+\item
+  \(\SL(n, \RR) \leq \GL(n, \RR)\), where
+  \(\SL(n, \RR) = \theset{A\in \GL(n, \RR) \suchthat \det(A) = 1}\)
+\end{itemize}
+
+\hypertarget{cyclic-groups}{%
+\subsection{Cyclic Groups}\label{cyclic-groups}}
+
+\wrapenv{\Begin{definition}}
+
+A group \(G\) is \textbf{cyclic} iff \(G\) is generated by a single
+element. \wrapenv{\End{definition}}
+
+\wrapenv{\Begin{exercise}}
+
+Show
+\(\generators{g} = \theset{g^n \suchthat n\in\ZZ} \cong \intersect \theset{H \leq G \suchthat g \in H}\).
+\wrapenv{\End{exercise}}
+
+\wrapenv{\Begin{theorem}}
+
+Let \(G\) be a cyclic group, so \(G \generators{g}\).
+
+\begin{itemize}
+\tightlist
+\item
+  If \(\abs{G} = \infty\), then \(G \cong \ZZ\).
+\item
+  If \(\abs{G} = n < \infty\), then \(G \cong \ZZ_n\).
+\end{itemize}
+
+\wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{definition}}
+
+Let \(H \leq G\), and define a \textbf{right coset of \(G\)} by
+\(aH = \theset{ah \suchthat H \in H}\). A similar definition can be made
+for \textbf{left cosets}. \wrapenv{\End{definition}}
+
+Then \(aH = bH \iff b\inv a \in G\) and \(Ha = Hb \iff ab\inv \in H\).
+
+Some facts:
+
+\begin{itemize}
+\tightlist
+\item
+  Cosets partition \(H\),
+  i.e.~\(b\not\in H \implies aH \intersect bH = \theset{e}\).
+\item
+  \(\abs{H} = \abs{aH} = \abs{Ha}\) for all \(a\in G\).
+\end{itemize}
+
+\wrapenv{\Begin{theorem}[Lagrange]}
+
+If \(G\) is a finite group and \(H \leq G\), then
+\(\abs{H} \divides \abs{G}\). \wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{definition}}
+
+A subgroup \(N \leq G\) is \textbf{normal} iff \(gN = Ng\) for all
+\(g\in G\), or equivalently \(gNg\inv \subseteq N\). I denote this
+\(N \normal G\).
+
+\wrapenv{\End{definition}}
+
+When \(N \normal G\), the set of left/right cosets of \(N\) themselves
+have a group structure. So we define
+\begin{align*}G/N = \theset{gN \suchthat g\in G} \text{ where } (g_1 N)(g_2 N) = (g_1 g_2) N.
+\end{align*}
+
+Given \(H, K \leq G\), define
+\(HK = \theset{hk \suchthat h\in H, k\in K}\). We have a general
+formula,
+\begin{align*}
+\abs{HK} = \frac{\abs H \abs K}{\abs{H \intersect K}}.
+\end{align*}
+
+\hypertarget{homomorphisms}{%
+\subsection{Homomorphisms}\label{homomorphisms}}
+
+\wrapenv{\Begin{definition}}
+
+Let \(G,G'\) be groups, then \(\varphi: G \to G'\) is a
+\textbf{homomorphism} if \(\varphi(ab) = \varphi(a) \varphi(b)\).
+\wrapenv{\End{definition}}
+
+\wrapenv{\Begin{example}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(\exp: (\RR, +) \to (\RR^{> 0}, \wait)\) where
+  \(\exp(a+b) = e^{a+b} = e^a e^b = \exp(a) \exp(b)\).
+\item
+  \(\det: (\GL(n, \RR), \times) \to (\RR\units, \times)\) where
+  \(\det(AB) = \det(A) \det(B)\).
+\item
+  Let \(N \normal G\) and \(\varphi G \to G/N\) given by
+  \(\varphi(g) = gN\).
+\item
+  Let \(\varphi: \ZZ \to \ZZ_n\) where \(\phi(g) = [g] = g \mod n\)
+  where \(\ZZ_n \cong \ZZ/n\ZZ\)
+\end{itemize}
+
+\wrapenv{\End{example}}
+
+\wrapenv{\Begin{definition}}
+
+Let \(\varphi: G \to G'\). Then \(\varphi\) is a \textbf{monomorphism}
+iff it is injective, an \textbf{epimorphism} iff it is surjective, and
+an \textbf{isomorphism} iff it is bijective. \wrapenv{\End{definition}}
+
+\hypertarget{direct-products}{%
+\subsection{Direct Products}\label{direct-products}}
+
+Let \(G_1, G_2\) be groups, then define
+\begin{align*}
+G_1 \cross G_2 = \theset{(g_1, g_2) \suchthat g_1 \in G, g_2 \in G_2} \text{ where } (g_1, g_2)(h_1, h_2) = (g_1 h_1, g_2 ,h_2).
+\end{align*}
+
+We have the formula \(\abs{G_1 \cross G_2} = \abs{G_1} \abs{G_2}\).
+
+\hypertarget{finitely-generated-abelian-groups}{%
+\subsection{Finitely Generated Abelian
+Groups}\label{finitely-generated-abelian-groups}}
+
+\wrapenv{\Begin{definition}}
+
+We say a group is \textbf{abelian} if \(G\) is commutative,
+i.e.~\(g_1, g_2 \in G \implies g_1 g_2 = g_2 g_1\).
+\wrapenv{\End{definition}}
+
+\wrapenv{\Begin{definition}}
+
+A group is \textbf{finitely generated} if there exist
+\(\theset{g_1, g_2, \cdots g_n} \subseteq G\) such that
+\(G = \generators{g_1, g_2, \cdots g_n}\). \wrapenv{\End{definition}}
+
+This generalizes the notion of a cyclic group, where we can simply
+intersect all of the subgroups that contain the \(g_i\) to define it.
+
+We know what cyclic groups look like -- they are all isomorphic to
+\(\ZZ\) or \(\ZZ_n\). So now we'd like a structure theorem for abelian
+finitely generated groups.
+
+\wrapenv{\Begin{theorem}}
+
+Let \(G\) be a finitely generated abelian group. Then
+\begin{align*}G \cong \ZZ^r \times \displaystyle\prod_{i=1}^s \ZZ_{p_i^{\alpha _i}}\end{align*}
+for some finite \(r,s \in \NN\) and \(p_i\) are (not necessarily
+distinct) primes. \wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{example}}
+
+Let \(G\) be a finite abelian group of order 4. Then \(G \cong \ZZ_4\)
+or \(\ZZ_2^2\), which are not isomorphic because every element in
+\(\ZZ_2^2\) has order 2 where \(\ZZ_4\) contains an element of order 4.
+\wrapenv{\End{example}}
+
+\hypertarget{fundamental-homomorphism-theorem}{%
+\subsection{Fundamental Homomorphism
+Theorem}\label{fundamental-homomorphism-theorem}}
+
+Let \(\varphi: G \to G'\) be a group homomorphism and define
+\(\ker \varphi = \theset{g\in G \suchthat \varphi(g) = e'}\).
+
+\hypertarget{the-first-homomorphism-theorem}{%
+\subsubsection{The First Homomorphism
+Theorem}\label{the-first-homomorphism-theorem}}
+
+\wrapenv{\Begin{theorem}}
+
+There exists a map \(\varphi': G/\ker \varphi \to G'\) such that the
+following diagram commutes:
+\begin{align*}
+\begin{center}
+\begin{tikzcd}
+G \arrow[dd, "\eta"'] \arrow[rr, "\varphi", dotted] &  & G' \\
+&  &    \\
+G/\ker \varphi \arrow[rruu, "\varphi'"]             &  &
+\end{tikzcd}
+\end{center}
+\end{align*}
+
+That is, \(\varphi = \varphi' \circ \eta\), and \(\varphi'\) is an
+isomorphism onto its image, so \(G/\ker \varphi = \im \varphi\). This
+map is given by \(\varphi'(g(\ker \varphi)) = \varphi(g)\).
+\wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{exercise}}
+
+Check that \(\varphi\) is well-defined. \wrapenv{\End{exercise}}
+
+\hypertarget{the-second-theorem}{%
+\subsubsection{The Second Theorem}\label{the-second-theorem}}
+
+\wrapenv{\Begin{theorem}}
+
+Let \(K, N \leq G\) where \(N \normal G\). Then
+\begin{align*}
+\frac K {N \intersect K} \cong \frac {NK} N
+\end{align*} \wrapenv{\End{theorem}}
+
+\wrapenv{\Begin{proof}}
+
+Define a map \(K \mapsvia{\varphi} NK/N\) by \(\varphi(k) = kN\). You
+can show that \(\varphi\) is onto by looking at \(\ker \varphi\); note
+that \(kN = \varphi(k) = N \iff k \in N\), and so
+\(\ker \varphi = N \intersect K\). \wrapenv{\End{proof}}
+
+\hypertarget{lecture-2}{%
+\section{Lecture 2}\label{lecture-2}}
+
+%\listoftodos
+
+\bibliography{/home/zack/Notes/library.bib}
+
+\end{document}
