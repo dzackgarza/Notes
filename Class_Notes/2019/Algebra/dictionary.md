@@ -9,3 +9,4 @@
 - Simple group:
 - Group action
 - Transitive action
+- Solvable group
