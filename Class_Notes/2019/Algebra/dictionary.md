@@ -35,4 +35,5 @@
 - Composition series
 - Jordan-Holder theorem
 - Characteristic subgroup
--
+- Commutator subgroup
+- Normal series
