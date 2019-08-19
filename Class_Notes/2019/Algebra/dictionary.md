@@ -27,4 +27,5 @@
 - Sylow Theorems
 - Third Isomorphism Theorem
 - Transitive action
-- -Nilpotent groups
+- Nilpotent groups
+- Orbit-Stabilizer theorem
