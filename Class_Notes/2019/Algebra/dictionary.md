@@ -17,7 +17,6 @@
 - Normal subgroup
 - Normalizer
 - Orbit
-- Orbit
 - Outer automorphism
 - Second Isomorphism Theorem
 - Semidirect product
@@ -29,3 +28,11 @@
 - Transitive action
 - Nilpotent groups
 - Orbit-Stabilizer theorem
+- Transitive group action
+- p-groups
+- Sylow p-groups
+- Subnormal series
+- Composition series
+- Jordan-Holder theorem
+- Characteristic subgroup
+-
