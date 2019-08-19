@@ -7,3 +7,5 @@
 - Normal subgroup
 - Orbit
 - Simple group:
+- Group action
+- Transitive action
