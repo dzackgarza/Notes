@@ -1,11 +1,9 @@
-- Equivalence relation
 - Binary operation
-- Orbit
-- Cycle
 - Cosets
+- Cycle
+- Equivalence relation
+- Factor group
 - Index
 - Normal subgroup
-- Factor group
+- Orbit
 - Simple group:
-
-
