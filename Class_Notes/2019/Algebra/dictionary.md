@@ -1,1 +1,24 @@
+- The order of a group
+- Equivalence relation
+- Binary operation
+- Greatest common divisor
+- Least common multiple
+- Permutation
+- Transposition
+- Orbit
+- Cycle
+- The symmetric group $S^{n}$
+- The alternating group $A_{n}$
+- Even and odd permutations
+- Cosets
+- Index
+- The direct product of groups
+- Homomorphism
+- Image of a function
+- Inverse image of a function
+- Kernel
+- Normal subgroup
+- Factor group
+- Simple group
+
 
