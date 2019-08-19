@@ -15,4 +15,4 @@
 - Class Equation
 - Conjugacy Class
 - Derived series
-- Composition series
+- Composition seories
