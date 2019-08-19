@@ -10,3 +10,7 @@
 - Group action
 - Transitive action
 - Solvable group
+- Centralizer
+- Normalizer
+- Class Equation
+- Conjugacy Class
