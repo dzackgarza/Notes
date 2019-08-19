@@ -23,3 +23,7 @@
 - First Isomorphism Theorem
 - Second Isomorphism Theorem
 - Third Isomorphism Theorem
+- Orbit
+- Inner automorphism
+- Outer automorphism
+- Semidirect product
