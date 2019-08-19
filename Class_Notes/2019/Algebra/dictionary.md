@@ -27,4 +27,4 @@
 - Inner automorphism
 - Outer automorphism
 - Semidirect product
--
+- Stabilizer
