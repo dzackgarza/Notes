@@ -31,7 +31,7 @@
 - Semidirect product
 - Simple group:
 - Solvable group
-- Stabilizer: For a group action $G\actson X$, given by $G(x) = \theset{g\in G\suchthat g\actson x = x}$
+- Stabilizer: For a group action $G\actson X$, given by $G(x) = \theset{g\in G\suchthat g\actson x = x} \leq G$
 - Subnormal series
 - Sylow Theorems
 - Sylow p-groups
