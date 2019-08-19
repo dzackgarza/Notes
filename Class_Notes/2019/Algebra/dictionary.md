@@ -18,7 +18,7 @@
 - Index
 - Inner automorphism
 - Jordan-Holder theorem
-- Lagrange's Theorem
+- Lagrange's Theorem: $H \leq G \implies \# H \divides \# G$
 - Nilpotent groups
 - Normal series
 - Normal subgroup
