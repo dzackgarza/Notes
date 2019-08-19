@@ -23,7 +23,7 @@
 - Normal series
 - Normal subgroup
 - Normalizer
-- Normal Core: For $H \leq G$, the largest subgroup of $G$ that is *contained* in $H$. Given by the intersection of all conjugates of $H$, i.e. $N_{G(H)}
+- Normal Core: For $H \leq G$, the largest subgroup of $G$ that is *contained* in $H$. Given by the intersection of all conjugates of $H$, i.e. $N_{G}(H) = \intersect_{g\in G}gHg\inv$
 - Orbit
 - Orbit-Stabilizer theorem
 - Outer automorphism
