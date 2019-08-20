@@ -1,44 +1,5 @@
-\input{"/home/zack/Dropbox/Document Archive/Latex/preamble.tex"}
-\let\Begin\begin
-\let\End\end
-\newcommand\wrapenv[1]{#1}
-
-\makeatletter
-\def\ScaleWidthIfNeeded{%
- \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\def\ScaleHeightIfNeeded{%
-  \ifdim\Gin@nat@height>0.9\textheight
-    0.9\textheight
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
-
-\title{
-\textbf{
-    Title
-  }
-  }
-\author{D. Zack Garza}
-\date{\today}
-
-\begin{document}
-
-\maketitle
-% \todo{Insert title and subtitle.}
-\tableofcontents
-
-
 \hypertarget{exercises}{%
-\subsection{Exercises}\label{exercises}}
+\section{Exercises}\label{exercises}}
 
 If \(\sigma = (i_1 i_2 \cdots i_r) \in S_n\) and \(\tau \in S_n\), then
 show that
@@ -70,7 +31,7 @@ Let \(\left| G \right| = p^n q\) for some primes \(p > q\). Show that
 \(G\) contains a unique normal subgroup of index \(q\).
 
 \hypertarget{qual-problems}{%
-\subsection{Qual Problems}\label{qual-problems}}
+\section{Qual Problems}\label{qual-problems}}
 
 Let \(G\) be a finite group and \(p\) a prime number. Let \(X_p\) be the
 set of Sylow-\(p\) subgroups of \(G\) and \(n_p\) be the cardinality of
@@ -95,9 +56,3 @@ number of subgroups of \(G\) that are conjugate to \(H\). Show that
 Let \(G=S_5\), the symmetric group on 5 elements. Identify all conjugacy
 classes of elements in \(G\), provide a representative from each class,
 and prove that this list is complete.
-
-%\listoftodos
-
-\bibliography{/home/zack/Notes/library.bib}
-
-\end{document}
