@@ -150,6 +150,11 @@
     y = \sum_{k=1}^\infty y_k 2^{-k} \quad\text{where } y_k \in \theset{0, 1}.
     $$
 
-    Now note
+    Now we construct
+    $$
+    x = \sum_{k=1}^\infty a_k 3^{-k}\quad\text{where } a_k = 2y_k \implies a_k \in \theset{0, 2}.
+    $$
+
+    By the characterization given in part (1), we see that $x\in C$ because it has no 1s in its ternary expansion. Moreover, under $f$, we have $a_k \mapsto \frac 1 2 a_k = \frac 1 2 (2 a_k) = a_k$, and so $f(x) = y$ by construction.
   \end{enumerate}
 \end{solution}
