@@ -172,6 +172,15 @@
 
 \begin{solution}\hfill
 \begin{enumerate}
-  \item To show the forward direction, suppose $X$ is a $G_\delta$, so $X = \union_{i\in\NN} A_i$ with each $A_i$ a closed set.
+  \item To show the forward direction, suppose $X$ is a $G_\delta$, so $X = \union_{i\in\NN} A_i$ with each $A_i$ a closed set. By definition, each $A_i^c$ is open, and we have
+    $$
+    X^c = \left( \union_{i\in \NN}A_i \right)^c = \intersect_{i\in\NN} A_i^c,
+    $$
+    which exhibits $X^c$ as a countable intersection of open sets, making it an $F_\sigma$.
+
+    The reverse direction proceeds analogously: supposing $X^c$ is $F_\sigma$, we can write $X^c = \union B_i$ with each $B_i$ closed, where $B_i^c$ is open by definition, and
+    $$
+    X = (X^c)^c = (\union B_i)^c
+    $$
 \end{enumerate}
 \end{solution}
