@@ -60,7 +60,10 @@
 
     For the inductive step, consider $a_n$: the claim is that if $a_n = 1$, then $x \not \in C_{n+1}$ -- that is, it is contained in one of the intervals deleted at the $n+1$st stage. Writing the deleted interval at this stage as $(a,b)$, we find that $a_n = 1$ if and only if $x \in [a, b)$. Since $x\in C$, the only way $a_n$ can be 1 is if $x$ was in fact the endpoint $a$ (since no previous digit was a 1, by hypothesis). However, as shown above, every such endpoint has a ternary expansion containing no 1s. $\qed$
 
-
     \vspace{1em}\hrule
+
+    Therefore, if we can produce an $x$ that satisfies $x \neq \frac{k}{3^n}$ for any $k, n$ \textbf{and} $x$ has no 1s in its ternary expansion, we will have an $x\in C$ that is not an endpoint.
+
+    So take $x = \frac 1 4$, which is demonstrably not of the form $\frac k {3^n}$, and has ternary expansion $x = (0.020202\cdots)_3 = (0.\bar{02})$
   \end{enumerate}
 \end{solution}
