@@ -213,9 +213,14 @@
 
   Now suppose $X$ is an open set, we want to show it is an $F_\sigma$ and can thus be written as a countable union of closed sets. We can use the fact that $X^c$ is closed, and by the previous result, $X^c$ is thus a $G_\delta$. But by an earlier result, $X^c$ is a $G_\delta \iff (X^c)^c = X$ is an $F_\sigma$, and we are done.
 
-\item We want to construct a set that can be written as a countable union of closed sets, but not as a countable intersection of open sets. Note that in $\RR$ with the usual topology, singletons are closed, and so $\theset{p}^c$ is an open set for any point $p$.
+  \item We want to construct a set that can be written as a countable union of closed sets, but not as a countable intersection of open sets. Note that in $\RR$ with the usual topology, singletons are closed, and so $\theset{p}^c$ is an open set for any point $p$.
 
-  With this motivation, consider $X = \QQ$ and $X^c = \RR - \QQ$.
+  With this motivation, consider $X = \QQ$ and $X^c = \RR - \QQ$. We can write
+  $$
+  \QQ = \union_{q \in QQ} \theset{q},
+  $$
+
+  which exhibits $X$ as a countable union of closed sets because $\QQ$ itself is countable.
 
 \end{enumerate}
 \end{solution}
