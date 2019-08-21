@@ -123,11 +123,12 @@
     As shown above, we know that $\mu(C_n) = \left( \frac 2 3 \right)^n$, and so $\mu([0,1] \setminus C^n) = 1-\left( \frac 2 3 \right)^n$. Using the additivity of measure over disjoint sets, we have
     \begin{align*}
       \mu(C) &= 1 - \mu(C^c) \\
-             &= 1 - \mu((\intersect C_n)^c) \\
-             &= 1 - \mu(\disjoint C_n^c) \\
+             &= 1 - \mu((\intersect_n C_n)^c) \\
+             &= 1 - \mu(\disjoint_n C_n^c) \\
              &= 1 - \sum \mu(C_n^c) \\
-             &= 1 - \sum 1 - \left( \frac 2 3 \right)^n \\
-             &= \left( \frac 2 3 \right)^n \\
+             &= 1 - \sum_n 1 - \left( \frac 2 3 \right)^n \\
+             &= \sum_n \left( \frac 2 3 \right)^n \\
+             &=
     .\end{align*}
 
   \end{enumerate}
