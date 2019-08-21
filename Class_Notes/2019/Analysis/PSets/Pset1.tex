@@ -188,12 +188,12 @@
     For every $x\in X$ and every $n\in \NN$, define
 \[
   \begin{align*}
-    B_n(x) = \theset{y\in \RR^n \suchthat \abs{x - y} \leq \frac 1 n}, \\
-    V_n = \union_{x\in X} B_n(x), \\
-    W = \intersect_{n \in \NN} V_n
+    B_n(x) &= \theset{y\in \RR^n \suchthat \abs{x - y} \leq \frac 1 n}, \\
+    V_n &= \union_{x\in X} B_n(x), \\
+    W &= \intersect_{n \in \NN} V_n
   .\end{align*}
 \]
 
-  Explicitly, we have
+Explicitly, we have $W = \intersect_{n\in \NN} \union_{x\in X} B_n(x)$, and the claim is that $W = X$.
 \end{enumerate}
 \end{solution}
