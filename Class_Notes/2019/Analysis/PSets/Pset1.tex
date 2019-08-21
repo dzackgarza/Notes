@@ -199,7 +199,11 @@
   $$
   and the claim is that $W$ is a $G_\delta$ and $W = X$.
 
-  To see that the $V_n$ are open, note that $n$ is fixed and each $B_n(x)$ is an open ball around a point $x$. Any union of open sets is open, and thus so is $V_n$. By construction, $W$ is then a countable intersection of open sets, and thus $W$
+  To see that the $V_n$ are open, note that $n$ is fixed and each $B_n(x)$ is an open ball around a point $x$. Any union of open sets is open, and thus so is $V_n$. By construction, $W$ is then a countable intersection of open sets, and thus $W$ is a $G_\delta$ by definition.
+
+  We show $W=X$ in two parts. To see that $X \subseteq W$, note that if $x\in X$, then $x \in B_n(x)$ for every $n$ and thus $x \in V_n$ for every $n$ as well. But this means that $x \in \intersect_n V_n$, and so $x\in W$.
+
+  To see that $W \subseteq X$, let $y\in W$ be arbitrary. Since $y \in \intersect_n V_n$, it is in $V_n$ for every $n$. So pick one, say $n_0$, so $y\in V_{n_0}$. Then $y \in B_{n_0}(x)$ for some $x$
 
 \end{enumerate}
 \end{solution}
