@@ -17,5 +17,12 @@
       $$
     and so the endpoints are precisely the numbers of the form $\frac{k}{3^n}$ where $0 \leq k \leq 3^n$. Moreover, any endpoint appearing in $C_n$ is never removed in any later step, and so all endpoints remaining in $C$ are of this form where we allow $0\leq n < \infty$.
 
+    Thus, our goal is to produce a number $x\in [0,1]$ such that $x \neq \frac k {3^n}$ for any $k$ or $n$, but also satisfies $x\in C$.
+
+    To this end, we will use the fact that if $x\in C$, then one can take its ternary expansion and find that all of its digits are either $0$ or $2$, i.e.
+    $$
+    x = \sum a_k 3^{-k} \text{ where } a_k \in \theset{0, 2}.
+    $$
+
   \end{enumerate}
 \end{solution}
