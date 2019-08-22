@@ -393,9 +393,14 @@ To see that $f$ is continuous, ???
 
 \begin{solution}
 \begin{enumerate}
-  \item It suffices to show that every Cauchy sequence converges. So let $\theset{f_i}$ be a Cauchy sequence, so
+  \item It suffices to show that every Cauchy sequence converges. So let $I = [0,1]$ and $\theset{f_i}$ be a Cauchy sequence, so
   $$
   n > m \geq N \implies d_\infty(f_n, f_m) < \varepsilon
+  $$
+
+  We want to show that there is some $f$ and some $M$ such that
+  $$
+  n > M \implies d_\infty(f_n, f)  = \sup_{x\in I} \abs{f_n(x) - f(x)} < \varepsilon
   $$
 
   \item Closed if it contains its limit points, bounded if it is contained in a bigger but finite ball, and not compact iff not sequentially compact iff there is a sequence with no convergent subsequence.
