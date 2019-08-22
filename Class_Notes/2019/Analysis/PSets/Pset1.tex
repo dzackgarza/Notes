@@ -267,8 +267,10 @@
 
     We can then say that if $y,z \in B_\delta(x)$, then $\abs{f(y) - f(z)} \leq \abs{f(y)} + \abs{f(z)} \leq 2M$, and thus the set $\theset{\abs{f(y) - f(z)} \suchthat y,z \in B_\delta(x)}$ is bounded above and thus has a least upper bound (since $\RR$ has the least upper bound property). Thus the following supremum exists:
     $$
-    \sup_{y,z \in B_\delta(x)} \abs{f(y) - f(z)}.
+    S(x, \delta) = \sup_{y,z \in B_\delta(x)} \abs{f(y) - f(z)}.
     $$
+    We now just need to show that $\lim_{\delta \to 0^+} S(x, \delta)$ exists.
+
 \end{enumerate}
 \end{solution}
 
