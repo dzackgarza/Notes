@@ -264,6 +264,8 @@
     By the sequential definition of continuity, $f$ is continuous iff $\lim_{x\to c} f(x) = f(c)$. As we have shown, if $c\in I\setminus\QQ$, then $\lim_{x\to c}f(x) = 0 = f(c)$, and so $f$ is continuous there. However, for $c\in I\intersect \QQ$, since $\lim_{x\to r_n} f(x) = 0 \neq \frac 1 n$, $f$ fails to be continuous there. Taken together, this says that $D_f = I\setminus \QQ$ as desired.
 
   \item To show that this is well-defined, we need to prove that the limit exists. By definition, since $f$ is bounded, there exists some $M$ that is independent of $x$ such that $x\in \RR \implies \abs{f(x)} \leq M$. In particular, for any fixed $\delta$, it is certainly the case that $B_\delta(x) \subset \RR$, and so $x\in B_\delta(x) \implies \abs{f(x)} \leq M$ as well.
+
+  We can then say that if $y,z \in B_\delta(x)$, then $\abs{f(y) - f(z)} \leq \abs{f(y)} + \abs{f(z)} \leq 2M$, and thus the set $\theset{\abs{f(y) - f(z)} \suchthat y,z \in B_\delta(x)}$ is bounded above and thus has a least upper bound.
 \end{enumerate}
 \end{solution}
 
