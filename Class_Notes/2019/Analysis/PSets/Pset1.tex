@@ -285,15 +285,15 @@
 
   Moreover, we can write
   $$
-  \abs{f(y) - f(z)} = \abs{f(y) - f(x) + f(x) - f(z)} \leq \abs{f(y) - f(x)} + \abs{f(x) - f(z)} \leq 2\varepsilon,
+  \abs{f(y) - f(z)} = \abs{f(y) - f(x) + f(x) - f(z)} \leq \abs{f(y) - f(x)} + \abs{f(x) - f(z)} \leq \varepsilon,
   $$
 
   and thus we also have
   $$
-  \sup_{y, z \in B_\delta(x)} \abs{f(y) - f(z)} < 2\varepsilon.
+  \sup_{y, z \in B_\delta(x)} \abs{f(y) - f(z)} < \varepsilon.
   $$
 
-  We now want to take the limit as $\delta \to 0^+$; again since $\delta_1 \leq \delta_2 \implies B_{\delta_1} \subseteq B_{\delta_2}$, this can only make the left-hand-side of the above inequality smaller, and thus $\omega_f(x) \leq 2\varepsilon$. Taking $\varepsilon \to 0$ completes the proof.
+  We now want to take the limit as $\delta \to 0^+$; again since $\delta_1 \leq \delta_2 \implies B_{\delta_1} \subseteq B_{\delta_2}$, this can only make the left-hand-side of the above inequality smaller, and thus $\omega_f(x) \leq \varepsilon$. Taking $\varepsilon \to 0$ completes the proof.
 
 
   To see that $\omega_f(x) = 0 \implies f$ is continuous at $x$, let $\varepsilon > 0$ be arbitrary; we want to produce a $\delta$ to use in the definition of continuity. Since $\omega_f(x) = 0$, we can find a $\delta$ such that
