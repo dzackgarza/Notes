@@ -407,7 +407,10 @@ To see that $f$ is continuous, ???
   \abs{f_n(x) - f_m(x)} \leq \sup_{x\in I} \abs{f_n(x) - f_m(x)} = d_\infty(f_n, f_m) < \varepsilon.
   $$
 
-  Since $S$ is a Cauchy sequence in the complete metric space $\RR$, it is convergent and thus has some limit that we will call $\lim_{n\to\infty} f_n(x) \coloneqq f(x)$.
+  Since $S$ is a Cauchy sequence in the complete metric space $\RR$, it is convergent and thus has some limit that we will call $\lim_{n\to\infty} f_n(x) \coloneqq f(x)$, which satisfies
+  $$
+  n > M \implies \abs{f_n(x) - f(x)} < \varepsilon.
+  $$
 
   \item Closed if it contains its limit points, bounded if it is contained in a bigger but finite ball, and not compact iff not sequentially compact iff there is a sequence with no convergent subsequence.
 \end{enumerate}
