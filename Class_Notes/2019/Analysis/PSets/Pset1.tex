@@ -404,7 +404,7 @@ To see that $f$ is continuous, ???
   $$
   which equivalently stated says $\abs{f_n(x) - f(x)} < \varepsilon$ for all $x\in I$. So let $x$ be arbitrary but fixed, then the sequence $S = \theset{f_n(x)}_{n=1}^\infty$ is a sequence of real numbers, and since $\theset{f_n}$ is Cauchy, we claim that $S$ is also Cauchy. This follows because given any $\varepsilon$, we can choose $n,m$ large enough such that
   $$
-  \abs{f_n(x) - f_m(x)} \leq
+  \\sup_{x\in I} \abs{f_n(x) - f(x)} < \varepsilon \abs{f_n(x) - f_m(x)} \leq
   $$
 
   \item Closed if it contains its limit points, bounded if it is contained in a bigger but finite ball, and not compact iff not sequentially compact iff there is a sequence with no convergent subsequence.
