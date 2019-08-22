@@ -353,7 +353,7 @@
     S(x_j) &= \theset{x\in X \suchthat x < x_j}
   ,\end{align*}
 \]
-and note that $x_i < x_j$ forces $S(x_i) \subseteq S(x_j)$. In particular, it is worth noting that if $y\in S(x_i)$, for example, then $y = x_n$ for some $n$ where $f_n(x_i) = 1$ precisely because $x_i > x_n = y$.
+and note that $x_i < x_j$ forces $S(x_i) \subset S(x_j)$. In particular, it is worth noting that if $y\in S(x_i)$, for example, then $y = x_n$ for some $n$ where $f_n(x_i) = 1$ precisely because $x_i > x_n = y$.
 
 We can then write
 
@@ -366,7 +366,7 @@ We can then write
   from which the claim is that
 \[
   \begin{align*}
-    S(x_i) \subseteq S(x_j) \implies \sum_{x \in S(x_i)}\frac 1 {n^2} ~\leq \sum_{x\in S(x_j)} \frac 1 {n^2}
+    S(x_i) \subset S(x_j) \implies \sum_{x \in S(x_i)}\frac 1 {n^2} ~< \sum_{x\in S(x_j)} \frac 1 {n^2}
   .\end{align*}
 \]
 
