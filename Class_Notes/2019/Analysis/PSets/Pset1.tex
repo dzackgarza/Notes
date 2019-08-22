@@ -255,7 +255,9 @@
 
     To that end, let $\theset{r_n}$ be an arbitrary enumeration of $\QQ \intersect I$, let $\varepsilon$ be fixed, and let $c \in I$ be arbitrary. If $c\in I\setminus\QQ$, then $f(c) = 0 < \varepsilon$ and there's nothing to prove. Otherwise, $c\in\QQ$, so $c = r_n$ for some $n$, and $f(c) = \frac 1 n$. Let $S = \theset{r_i \suchthat i \in \NN,~ \frac 1 i > \varepsilon} \subset \QQ$, and note that $S$ is finite by the archimedean property of $\RR$. So choose
     $$
-    \delta < \min\theset{\abs{c - s} \suchthat s\in S}$, so that $S \intersect B_\delta(c) = \emptyset$.
+    \delta < \min\theset{\abs{c - s} \suchthat s\in S},
+    $$
+    so that $S \intersect B_\delta(c) = \emptyset$.
 
     This means that if $x\in \B_\delta(c) \intersect \QQ$, then $x = r_m$ where $\frac 1 m < \varepsilon$ by construction.
 \end{enumerate}
