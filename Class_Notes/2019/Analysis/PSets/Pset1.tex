@@ -349,8 +349,8 @@
   (Note that we may or may not have $i < j$.) Let $n$ be fixed, and consider the sets
 \[
   \begin{align*}
-    S(x_i) &= \theset{x\in X \suchthat x \leq x_i} \\
-    S(x_j) &= \theset{x\in X \suchthat x \leq x_j}
+    S(x_i) &= \theset{x\in X \suchthat x < x_i} \\
+    S(x_j) &= \theset{x\in X \suchthat x < x_j}
   ,\end{align*}
 \]
 and note that $x_i < x_j$ forces $S(x_i) \subseteq S(x_j)$. In particular, it is worth noting that if $y\in S(x_i)$, for example, then $y = x_n$ for some $n$ where $f_n(x_i) = 1$ precisely because $x_i > x_n = y$.
