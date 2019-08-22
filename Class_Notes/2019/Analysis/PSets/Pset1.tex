@@ -265,11 +265,15 @@
 
   \item To show that this is well-defined, we need to prove that the limit exists. By definition, since $f$ is bounded, there exists some $M$ that is independent of $x$ such that $x\in \RR \implies \abs{f(x)} \leq M$. In particular, for any fixed $\delta$, it is certainly the case that $B_\delta(x) \subset \RR$, and so $x\in B_\delta(x) \implies \abs{f(x)} \leq M$ as well.
 
-    We can then say that if $y,z \in B_\delta(x)$, then $\abs{f(y) - f(z)} \leq \abs{f(y)} + \abs{f(z)} \leq 2M$, and thus the set $\theset{\abs{f(y) - f(z)} \suchthat y,z \in B_\delta(x)}$ is bounded above and thus has a least upper bound (since $\RR$ has the least upper bound property). Thus the following supremum exists:
+    We can then say that if $y,z \in B_\delta(x)$, then
+    $$
+    \abs{f(y) - f(z)} \leq \abs{f(y)} + \abs{f(z)} \leq 2M$, and thus the set $\theset{\abs{f(y) - f(z)} \suchthat y,z \in B_\delta(x)}$ is bounded above and thus has a least upper bound (since $\RR$ has the least upper bound property). Thus the following supremum exists:
     $$
     S(x, \delta) = \sup_{y,z \in B_\delta(x)} \abs{f(y) - f(z)}.
     $$
     We now just need to show that $\lim_{\delta \to 0^+} S(x, \delta)$ exists. To this end, we can note that if $\delta_1 < \delta_2$, then $B_{\delta_1} \subset B_{\delta_2}$, and so $S$ is a monotonically decreasing function of $\delta$ that is bounded below by 0 (since $B_0(x) = \theset{x} \implies y=z=x$ are the only choices), and is thus convergent by the monotone convergence theorem. So $\omega_f$ is well-defined.
+
+
 
 \end{enumerate}
 \end{solution}
