@@ -286,7 +286,7 @@ which exhibits $X$ as a countable union of closed sets, and thus an $F_\sigma$ s
     $$
     We now just need to show that $\lim_{\delta \to 0^+} S(x, \delta)$ exists. To this end, we can note that if $\delta_1 < \delta_2$, then $B_{\delta_1} \subset B_{\delta_2}$, and so $S$ is a monotonically decreasing function of $\delta$ that is bounded below by 0 (since $y=z=x$ is a valid choice of elements in $B_\delta(x)$), and is thus convergent by the monotone convergence theorem. So $\omega_f$ is well-defined.
 
-    To see that $f$ continuous at $x \implies \omega_f(x) = 0$, let $\varepsilon$ be arbitrary; we will show that $\omega_f(x) < \varepsilon$. Since $f$ is continuous, we can pick a $\delta$ such that $y,z \in B_\delta(x) \implies f(y), f(z) \in B_{\varepsilon/2}(f(x))$. Thus we have
+    To prove the forward direction, that $f$ continuous at $x \implies \omega_f(x) = 0$, let $\varepsilon$ be arbitrary; we will show that $\omega_f(x) < \varepsilon$. Since $f$ is continuous, we can pick a $\delta$ such that $y,z \in B_\delta(x) \implies f(y), f(z) \in B_{\varepsilon/2}(f(x))$. Thus we have
 \[
   \begin{align*}
     \abs{y-x} < \delta \implies \abs{f(y) - f(x)} < \varepsilon/2 \\
