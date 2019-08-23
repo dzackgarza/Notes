@@ -344,8 +344,12 @@ which exhibits $X$ as a countable union of closed sets, and thus an $F_\sigma$ s
 
   which, unravelling definitions, says that we equivalently need to show that
   $$
+  y \in B_\delta(x) \implies \omega_f(y) < \varepsilon
+  $$
+  ,i.e,
+  $$
   \exists\delta \suchthat \abs{y - x} < \delta \implies
-  \omega_f(y) = \lim_{d \to 0^+} \sup_{a,b \in B_d(y)}\abs{f(a) - f(b)} < \varepsilon
+  \lim_{d \to 0^+} \sup_{a,b \in B_d(y)}\abs{f(a) - f(b)} < \varepsilon
   $$
 
   Since
