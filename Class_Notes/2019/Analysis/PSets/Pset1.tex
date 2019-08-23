@@ -133,7 +133,6 @@
     \]
 
     We can identify $B_n = \mu(C_n^c)$, and using the fact that $C_n^c \intersect C_{>n}^c = \emptyset$ and the fact that measures are additive over disjoint sets, we can compute
-
     \[
     \begin{align*}
       \mu(C) &= 1 - \mu(C^c) \\
@@ -190,16 +189,17 @@
 
   \item Suppose $X$ is closed, we want to then write $X$ as a countable intersection of open sets.
     For every $x\in X$ and every $n\in \NN$, define
-\[
+  \[
   \begin{align*}
     B_n(x) &= \theset{y\in \RR^n \suchthat \abs{x - y} \leq \frac 1 n}, \\
     V_n &= \union_{x\in X} B_n(x), \\
     W &= \intersect_{n \in \NN} V_n
   .\end{align*}
-\]
+  \]
 
   Explicitly, we have
-  $$W = \intersect_{n\in \NN} \union_{x\in X} B_n(x),
+  $$
+  W = \intersect_{n\in \NN} \union_{x\in X} B_n(x),
   $$
   and the claim is that $W$ is a $G_\delta$ and $W = X$.
 
