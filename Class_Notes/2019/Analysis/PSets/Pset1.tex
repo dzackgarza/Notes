@@ -356,16 +356,16 @@ which exhibits $X$ as a countable union of closed sets, and thus an $F_\sigma$ s
   $$
   \omega_f(x) < \varepsilon\ \implies \lim_{\delta \to 0^+} \sup_{s,t \in B_\delta(x)} \abs{f(s) - f(t)} < \varepsilon
   $$
-  by definition and this limit exists, we can find some \textbf{particular} $\delta_0$ such that
+  by definition and this limit exists, we can find some \textbf{particular} $\delta$ such that
   $$
-  \sup_{s, t \in B_{\delta_0}(x)} \abs{f(s) - f(t)} < \varepsilon
+  \sup_{s, t \in B_{\delta}(x)} \abs{f(s) - f(t)} < \varepsilon
   $$
   and so
   $$
-  y, z \in B_{\delta_0}(x) \implies  \abs{f(y) - f(z)} \leq \sup_{s, t \in B_{\delta_0}(x)} \abs{f(s) - f(t)} < \varepsilon.
+  y, z \in B_{\delta}(x) \implies  \abs{f(y) - f(z)} \leq \sup_{s, t \in B_{\delta}(x)} \abs{f(s) - f(t)} < \varepsilon.
   $$
 
-  Now letting $y\in B_{\delta_0}(x)$ be arbitrary, we can choose a new $\delta < \delta_0$ such that $B_\delta(y) \subset B_{\delta_0}(x)$. Since suprema can only get larger when taken over larger sets, we can write
+  Now letting $y\in B_{\delta}(x)$ be arbitrary, we can note that there always exists some $\delta_0 < \delta$ such that $B_{\delta_0}(y) \subset B_{\delta}(x)$. Since suprema can only get larger when taken over larger sets, we can write
   \[
   \begin{align*}
     \sup_{a,b \in B_\delta(y)} \abs{f(a) - f(b)}
