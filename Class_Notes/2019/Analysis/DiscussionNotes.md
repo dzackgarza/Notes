@@ -34,3 +34,7 @@ We define the *oscillation of $f$* as
 $$
 \omega_f(x) \coloneqq \lim_{\delta \to 0^+} \sup_{y,z \in B_\delta(x)} \abs{f(y) - f(z)}
 $$
+
+## Uniform Convergence
+
+We say that $f_n \to f$ *uniformly* if $\norm{f_n - f}_\infty$.
