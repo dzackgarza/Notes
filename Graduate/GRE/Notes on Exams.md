@@ -182,4 +182,3 @@ Review topology. Mostly on Rn, but a few are generic point-set. Some metric spac
   - $f(a+b) = f(a)f(b)$
 
 - Find a quicker way to do the integral in problem 55!
--
