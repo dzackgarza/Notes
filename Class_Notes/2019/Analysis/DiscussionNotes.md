@@ -123,3 +123,5 @@ This equivalently requires that
 $$
 \forall\varepsilon \exists N \suchthat n\geq m \geq N \implies \abs{s_n - s_m} = \abs{\sum_{k=m}^n f_k(x)} \leq \varepsilon \quad \forall x\in A.
 $$
+
+> Showing uniform convergence of a series: **Always use the M-test**!!!
