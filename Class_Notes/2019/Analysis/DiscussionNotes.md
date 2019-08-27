@@ -145,6 +145,7 @@ $$
 
 
 A summary of convergence results:
+
 - Functions $f_n \to f$:
   - Uniform: $M$ test. Produce a bound $\norm{f_n - f}_\infty < M_n$ which doesn't depend on $n$, where $M_n \to 0$.
   - Negating:
