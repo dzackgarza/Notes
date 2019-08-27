@@ -146,13 +146,16 @@ $$
 
 A summary of convergence results:
 
-- Functions $f_n \to f$:
-  - Uniform: $M$ test. Produce a bound $\norm{f_n - f}_\infty < M_n$ which doesn't depend on $n$, where $M_n \to 0$.
+- Functions $f_n \to^U f$:
+  - Showing:
+    - $M$ test. Produce a bound $\norm{f_n - f}_\infty < M_n$ which doesn't depend on $n$, where $M_n \to 0$.
   - Negating:
     - If $f_n$ is continuous but $f$ is not,
     - Let $n$ be arbitrary, then find a bad $x$ (which can depend on $n$) such that $\sup{\abs{f_n(x) - f(x)}}$ is bounded below.
-- Series of function $\sum f_n \to f$:
-  - Uniform: $M$ test. Produce a bound $\norm{f_n}_\infty < M_n$ where $\sum M_n < \infty$.
+- Series of function $\sum f_n \to^U f$:
+  - Showing:
+    - $M$ test. Produce a bound $\norm{f_n}_\infty < M_n$ where $\sum M_n < \infty$.
   - Negating:
     - If each partial sum is continuous, but $f$ is not.
     - If $f_n \not\to^U 0$.
+    - Find a bad $x$?
