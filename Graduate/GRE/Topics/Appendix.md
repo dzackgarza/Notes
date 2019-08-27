@@ -135,10 +135,10 @@ $$\begin{align*}
 ## Logic Identities
 - $P \implies Q \iff Q \or \lnot P$
 - $P \implies Q \iff \lnot Q \implies \lnot P$
-- $P \or(Q \and S) \iff (P \or Q) \and (P \or S)$
-- $P \and(Q \or S) \iff (P \and Q) \or (P \and S)$
-- $\lnot (P \and Q) \iff \lnot P \or \lnot Q$
-- $\lnot (P \or Q) \iff \lnot P \and \lnot Q$
+- $P \or(Q \annd S) \iff (P \or Q) \annd (P \or S)$
+- $P \annd(Q \or S) \iff (P \annd Q) \or (P \annd S)$
+- $\lnot (P \annd Q) \iff \lnot P \or \lnot Q$
+- $\lnot (P \or Q) \iff \lnot P \annd \lnot Q$
 
 ## Set Identities
 $$\begin{align*}
@@ -157,8 +157,8 @@ A - (B - C) 						&& = && (A-B) \cup (A \cap C) \\
 (A-B) \cup C 						&& = && (A \cup C) - (B-C) \\
 A\cup(B\cap C) 						&& = && (A\cup B) \cap (A\cup C) \\
 A\cap(B\cup C) 						&& = && (A\cap B) \cup (A \cap C) \\
-A \subseteq C \and B \subseteq C 	&&\implies && A \cup B \subseteq C \\
-C \subseteq A \and C \subseteq B 	&&\implies && C \subseteq A \cup B \\
+A \subseteq C \annd B \subseteq C 	&&\implies && A \cup B \subseteq C \\
+C \subseteq A \annd C \subseteq B 	&&\implies && C \subseteq A \cup B \\
 A_k ~\text{countable} 				&&\implies && \prod_{k=1}^n A_k, ~ \union_{k=1}^\infty A_k \quad\text{countable}
 \end{align*}$$
 
