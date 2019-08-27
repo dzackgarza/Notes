@@ -115,3 +115,11 @@ $$
 Note that this actually tells us that $f$ is *continuous* on $(0, \infty)$, since if we want continuity at a specific point $x$, we can take $b>x$. Since each term is a continuous function of $x$, and we have uniform convergence, the limit function is the uniform limit of continuous functions on this interval and thus also continuous here. Checking $x=0$ separately, we find that $f$ is in fact continuous on $[0, \infty)$.
 
 
+## Series of Functions
+
+Let $f_n$ be a function of $x$, then we say $\sum_{n=1}^\infty f_n$ converges uniformly to $S$ on $A$ iff the partial sums $s_n = f_1 + f_2 + \cdots$ converges to $S$ uniformly on $A$.
+
+This equivalently requires that
+$$
+\forall\varepsilon \exists N \suchthat n\geq m \geq N \implies \abs{s_n - s_m} = \abs{\sum_{k=m}^n f_k(x)} \leq \varepsilon \forall x\in A.
+$$
