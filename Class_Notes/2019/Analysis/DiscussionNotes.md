@@ -69,4 +69,4 @@ $$
 
 $\implies$: Use the triangle inequality.
 
-$\implied$: Use Bolzano-Weirstrass.
+$\implied$: Use Bolzano-Weierstrass.
