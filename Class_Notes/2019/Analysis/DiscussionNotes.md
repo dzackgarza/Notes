@@ -121,5 +121,5 @@ Let $f_n$ be a function of $x$, then we say $\sum_{n=1}^\infty f_n$ converges un
 
 This equivalently requires that
 $$
-\forall\varepsilon \exists N \suchthat n\geq m \geq N \implies \abs{s_n - s_m} = \abs{\sum_{k=m}^n f_k(x)} \leq \varepsilon \forall x\in A.
+\forall\varepsilon \exists N \suchthat n\geq m \geq N \implies \abs{s_n - s_m} = \abs{\sum_{k=m}^n f_k(x)} \leq \varepsilon \quad \forall x\in A.
 $$
