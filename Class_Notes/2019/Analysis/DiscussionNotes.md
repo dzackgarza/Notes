@@ -22,3 +22,15 @@ A = \union_{i\in \NN} A_i\quad \text{with each $A_i$ nowhere dense}
 $$
 
 A set $A$ is *null* if for any $\varepsilon$, there exists a cover of $A$ by countably many intervals of total length less than $\varepsilon$, i.e. there exists $\theset{I_k}_{j\in\NN}$ such that $A\subseteq \union_{j\in \NN} I_j$ and $\sum_{j\in \NN}\mu(I_j) < \varepsilon$. If $A$ is null, we say $\mu(A) = 0$.
+
+Some facts:
+
+- If $f_n \to f$ and each $f_n$ is continuous, then $D_f$ is meager.
+- If $f \in \mathcal{R}(a, b)$ and $f$ is bounded, then $D_f$ is null.
+- If $f$ is monotone, then $D_f$ is countable.
+- If $f$ is monotone and differentiable on $(a,b)$, then $D_f$ is null.
+
+We define the *oscillation of $f$* as
+$$
+\omega_f(x) \coloneqq \lim_{\delta \to 0^+} \sup_{y,z \in B_\delta(x)} \abs{f(y) - f(z)}
+$$
