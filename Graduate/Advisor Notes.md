@@ -70,7 +70,7 @@ Why study $\Sigma_g$ bundles?
 2. For 3-manifolds: almost all (e.g. all hyperbolic) closed 3-manifolds are finitely covered by some $M_f^3$ surface bundle
    1. Famous conjecture of Thurston! Very recent
       1. His fields medal was finding a single hyperbolic structure on a closed 3-manifold fibering over the circle.
-3. FOr 4-manifolds: huge class of symplectic mfds.
+3. For 4-manifolds: huge class of symplectic mfds.
    1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 4. AG: $\mathcal M$ moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
@@ -88,7 +88,7 @@ Take a homeomorphism to its homotopy class, Mod is finitely generated.
 
 > In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
 
-So any bundle $\Sigma_g \to E\ to B$ yields a corresponding monodromy representation 
+So any bundle $\Sigma_g \to E \to B$ yields a corresponding monodromy representation 
 $$
 \rho: \pi_1 B \to \mathrm{Mod} \Sigma_g
 $$
