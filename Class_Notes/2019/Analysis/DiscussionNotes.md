@@ -158,4 +158,4 @@ A summary of convergence results:
   - Negating:
     - If each partial sum is continuous, but $f$ is not.
     - If $f_n \not\to^U 0$.
-    - Find a bad $x$?
+    - Find a bad $x$? Work with the partial sums? (Generally difficult?)
