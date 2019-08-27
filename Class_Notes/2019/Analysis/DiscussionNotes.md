@@ -49,4 +49,9 @@ $$
 \sup_{x > 0} \abs{\frac 1 {1+nx} - 0} \geq \frac 1 2 \not\to 0.
 $$
 
-> Here, the problem is at small scales -- note that the convergence *is* unform on $[a, \infty)$ for any $a > 0$.
+Here, the problem is at small scales -- note that the convergence *is* unform on $[a, \infty)$ for any $a > 0$. To see this, note that
+$$
+x > a \implies \frac 1 x < \frac 1 a \implies \abs{\frac 1 {1 + nx}} \leq \abs{\frac 1 {nx}} \leq \frac 1 {na} \to 0
+$$
+since $a$ is fixed.
+
