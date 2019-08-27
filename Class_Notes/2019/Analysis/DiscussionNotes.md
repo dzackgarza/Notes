@@ -151,7 +151,7 @@ A summary of convergence results:
     - $M$ test. Produce a bound $\norm{f_n - f}_\infty < M_n$ which doesn't depend on $n$, where $M_n \to 0$.
   - Negating:
     - If $f_n$ is continuous but $f$ is not,
-    - Let $n$ be arbitrary, then find a bad $x$ (which can depend on $n$) such that $\sup{\abs{f_n(x) - f(x)}}$ is bounded below.
+    - Let $n$ be arbitrary, then find a bad $x$ (which can depend on $n$) and $\varepsilon$ such that $\sup{\abs{f_n(x) - f(x)}} \geq \varepsilon$.
 - Series of function $\sum f_n \to^U f$:
   - Showing:
     - $M$ test. Produce a bound $\norm{f_n}_\infty < M_n$ where $\sum M_n < \infty$.
