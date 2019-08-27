@@ -169,18 +169,28 @@ $$
 Convention: always over a field $k$, and $T: k^n \to k^m$ is a generic linear map (or $m\times n$ matrix).
 
 - Consistent
+
 	A system of linear equations is *consistent* when it has at least one solution.
 
 - Inconsistent
+
 	A system of linear equations is *inconsistent* when it has no solutions.
 
 - Rank
+
 	The number of nonzero rows in RREF
+
 - Elementary Matrix
+- 
 - Row Equivalent
+- 
 - Pivot
+- 
 - Cofactor
-$$\mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}$$
+
+$$
+\mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}
+$$
 where $M_{i, j}$ is the minor obtained by deleting the $i\dash$th row and $j\dash$th column of $A$.
 
 - Adjugate
@@ -303,21 +313,21 @@ $$
 - Skew-Symmetric: $A = -A^T$
 
 - Inner Product
-	- $\inner[\vector x]{\vector x} \geq 0$
-	- $\inner[\vector x]{\vector x} = 0 \iff \vector x = \vector 0$
-	- $\inner[\vector x]{\vector y} = \conjugate{\inner[\vector y]{\vector x}}$
-	- $\inner[k\vector x]{\vector y} = k\inner[\vector x]{\vector y} = \inner[\vector x]{k\vector y}$
-	- $\inner[\vector x + \vector y]{\vector z} = \inner[\vector x]{\vector z} + \inner[y]{\vector z}$
-	- $\inner[a\vector x]{b\vector y} = \inner[\vector x]{\vector x} + \inner[a\vector x]{y} + \inner[\vector x]{b\vector y} + \inner[\vector y]{\vector y}$
-	- Defines a norm: $\norm{\vector x} = \sqrt{\inner[\vector x]{\vector x}} \implies \norm{\vector x}^2 = \inner[\vector x]{\vector x}$
+	- $\inner{\vector x}{\vector x} \geq 0$
+	- $\inner{\vector x}{\vector x} = 0 \iff \vector x = \vector 0$
+	- $\inner{\vector x}{\vector y} = \conjugate{\inner{\vector y{\vector x}}$
+	- $\inner[k\vector x]{\vector y} = k\inner{\vector x}{\vector y} = \inner{\vector x}{k\vector y}$
+	- $\inner{\vector x + \vector y}{\vector z} = \inner{\vector x}{\vector z} + \inner[y]{\vector z}$
+	- $\inner[a\vector x]{b\vector y} = \inner{\vector x}{\vector x} + \inner[a\vector x]{y} + \inner{\vector x}{b\vector y} + \inner{\vector y}{\vector y}$
+	- Defines a norm: $\norm{\vector x} = \sqrt{\inner{\vector x}{\vector x}} \implies \norm{\vector x}^2 = \inner{\vector x}{\vector x}$
 
-- Cauchy-Schwarz Inequality: $\abs{\inner[\vector x]{\vector y}} \leq \norm{\vector x}\norm{\vector y}$
+- Cauchy-Schwarz Inequality: $\abs{\inner{\vector x}{\vector y}} \leq \norm{\vector x}\norm{\vector y}$
 
 - Orthogonality:
-	- For vectors: $\vector x \perp \vector y \iff \inner[\vector x]{\vector y} = 0$
+	- For vectors: $\vector x \perp \vector y \iff \inner{\vector x}{\vector y} = 0$
 	- For matrices: $A$ is orthogonal $\iff A^{-1} = A^T$
 
-- Orthogonal Projection of $\vector x$ onto $\vector y$: $$P(\vector x, \vector y) = \inner[\vector x]{\vector y} \hat y = \inner[\vector x]{\vector y} \frac{\vector y}{\norm{\vector y}^2}$$
+- Orthogonal Projection of $\vector x$ onto $\vector y$: $$P(\vector x, \vector y) = \inner{\vector x}{\vector y} \hat y = \inner{\vector x}{\vector y} \frac{\vector y}{\norm{\vector y}^2}$$
 	- Note $\norm{P(\vector x, \vector y)} = \norm{\vector x}\cos\theta_{x,y}$
 
 - Defective: An $n\times n$ matrix $A$ is defective $\iff$ the number of linearly independent eigenvectors of $A$ is less than $n$.
