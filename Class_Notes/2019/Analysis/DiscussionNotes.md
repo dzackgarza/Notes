@@ -73,8 +73,17 @@ $\impliedby$: Find a candidate limit $f$: first fix an $x$, so that each $f_n(x)
 
 So take $m\to \infty$, i.e.
 $$
-\abs{f_n(x) - f_m(x)} < \varepsilon \implies
+\abs{f_n(x) - f_m(x)} < \varepsilon \forall x \implies
 \lim_{m \to \infty}
 \abs{f_n(x) - f_m(x)} =
-\abs{f_n(x) - f(x)} \leq \varepsilon.
+\abs{f_n(x) - f(x)} \leq \varepsilon \forall x \implies
+f_n \to^U f.
 $$
+
+Note: $f_n \to^U f$ does not imply that $f_n' \to^U f'$.
+
+Counterexample:
+Let $f_n(x) = \frac 1 n \sin(n^2 x)$, which converges to $0$ uniformly, but $f_n'(x) = n\cos(n^2 x)$ does not even converge pointwise.
+
+To make this work, the theorem is that if $f_n' \to^U g$ for some $g$ and for at least 1 point $x$ we have $f_n(x) \to f(x)$ , then $g = \lim f_n'$.
+
