@@ -154,4 +154,4 @@ A summary of convergence results:
   - Uniform: $M$ test. Produce a bound $\norm{f_n}_\infty < M_n$ where $\sum M_n < \infty$.
   - Negating:
     - If each partial sum is continuous, but $f$ is not.
-    - If $\f_n \not\to^U 0$.
+    - If $f_n \not\to^U 0$.
