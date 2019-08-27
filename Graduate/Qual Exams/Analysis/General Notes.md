@@ -20,7 +20,7 @@ $$
 - Fubini's Theorem
 - Density Results:
   - $C_c(\RR) \subset C_0(\RR)$
-- $C_c(\RR) \intersect C^\infty(\RR) \neq \emptyset$, e.g. take $f(x) = e^{-1\frac{1}{x^2}} \chi_{(0, \infty}(x)$.
+- $C_c(\RR) \intersect C^\infty(\RR) \neq \emptyset$, e.g. take $f(x) = e^{\frac{-1}{x^2}} \chi_{(0, \infty}(x)$.
 - The Banach Algebra $L^1(\RR)$ is not a principal ideal domain.
 - Every locally compact abelian group $G$ has a unique Borel measure (up to scaling) that is positive, regular, translation-invariant (the Haar measure).
   - For $\RR, (S_1)^2$, equal to the Lebesgue measure. For $\ZZ$, the counting measure.
