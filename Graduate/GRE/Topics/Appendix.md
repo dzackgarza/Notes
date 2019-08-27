@@ -172,6 +172,7 @@ Summary
 - Image generally only results in an inequality
 
 Preimage Equations
+
 - $A \subseteq B \implies f(A) \subseteq f(B) \orr f^{-1}(A) \subseteq f^{-1}(B)$
 - $f^{-1}(\union_{i\in I}A_i) = \union_{i\in I} f^{-1}(A_i)$
 	- Also holds for $f(\union_{i\in I}A_i) = \union_{i\in I} f(A_i)$
