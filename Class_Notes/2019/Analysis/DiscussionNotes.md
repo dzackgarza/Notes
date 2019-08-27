@@ -124,4 +124,13 @@ $$
 \forall\varepsilon \exists N \suchthat n\geq m \geq N \implies \abs{s_n - s_m} = \abs{\sum_{k=m}^n f_k(x)} \leq \varepsilon \quad \forall x\in A.
 $$
 
-> Showing uniform convergence of a series: **Always use the M-test**!!!
+> Showing uniform convergence of a series: **Always use the M-test**!!! I.e. if $\abs{f_n(x)} \leq M_n$, which doesn't depend on $x$, and $\sum M_n < \infty$, then $\sum f_n$ converges uniformly.
+
+
+Example:
+Let $f(x) = \sum \frac 1 {x^2 + n^2}$.
+
+Does it converge at all? Fix $x\in \RR$, say $x=1$, then $\frac 1 {1+n^2} \leq \frac 1 {n^2}$ which is summable. So this converges pointwise. But since $x^2 > 0$, we generally have $\frac{1}{x^2 + n^2} \leq \frac{1}{n^2}$ for any $x$, so this actually converges uniformly.
+
+### Negating Uniform Convergence for Series
+???
