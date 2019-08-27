@@ -37,4 +37,11 @@ $$
 
 ## Uniform Convergence
 
-We say that $f_n \to f$ *converges uniformly on $A$* if $\norm{f_n - f}_\infty = \sup_{x\in A}\abs{f_n(x) - f(x)} \to 0$.
+We say that $f_n \to f$ *converges uniformly on $A$* if $\norm{f_n - f}_\infty = \sup_{x\in A}\abs{f_n(x) - f(x)} \to 0$. (Note that this defines a sequence of *numbers* in $\RR$.)
+
+This means that one can find an $n$ large enough that that for every $x\in A$, we have $\abs{f_n(x) - f(x)} \leq \varepsilon$ for any $\varepsilon$.
+
+- Showing uniform convergence: find some $M_n$, independent of $x$, such that $\abs{f_n(x) - f(x)} \leq M_n$ where $M_n \to 0$.
+- Negating: Fix $\varepsilon$, let $n$ be arbitrary, and find a bad $x$ (which can depend on $n$) such that $\abs{f_n(x) - f(x)} \geq \varepsilon$.
+
+Example: $\frac 1 {1 + nx} \to 0$ pointwise on $(0, \infty)$, which can be seen by fixing $x$ and taking $n \to \infty$. To see the convergence is not uniform, choose $x = \frac 1 n$ and $\varepsilon = \frac 1 2$.
