@@ -57,7 +57,7 @@ since $a$ is fixed.
 
 ## Uniformly Cauchy
 
-Let $C^0( ( [a,b], \norm{\wait}_\infty))$ be the metric space of continuous functions of $[a,b]$, endowed with the metric i
+Let $C^0( ( [a,b], \norm{\wait}_\infty))$ be the metric space of continuous functions of $[a,b]$, endowed with the metric
 $$
 d(f, g) = \norm{f - g}_\infty = \sup_{x\in [a,b]} \abs{f(x) - g(x)}
 $$
@@ -67,3 +67,6 @@ $$
 f_n \to^U f \iff \forall\varepsilon \exists N \suchthat m \geq n \geq N \implies \abs{f_n(x) - f_m(x)} \leq\varepsilon \forall x\in X
 $$
 
+$\implies$: Use the triangle inequality.
+
+$\implied$: Use Bolzano-Weirstrass.
