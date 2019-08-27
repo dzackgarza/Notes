@@ -69,4 +69,12 @@ $$
 
 $\implies$: Use the triangle inequality.
 
-$\impliedby$: Use Bolzano-Weierstrass.
+$\impliedby$: Find a candidate limit $f$: first fix an $x$, so that each $f_n(x)$ is just a number. Now we can consider the sequence $\theset{f_n(x)}_{n\in\NN}$, which (by assumption) is a Cauchy sequence in $\RR$ and thus converges. So define $f(x) \coloneqq \lim_n f_n(x)$. Aside: we note that if $a_n < \varepsilon$ for all $n$ and $a_n \to a$, then $a\leq \varepsilon$.
+
+So take $m\to \infty$, i.e.
+$$
+\abs{f_n(x) - f_m(x)} < \varepsilon \implies
+\lim_{m \to \infty}
+\abs{f_n(x) - f_m(x)} =
+\abs{f_n(x) - f(x)} \leq \varepsilon.
+$$
