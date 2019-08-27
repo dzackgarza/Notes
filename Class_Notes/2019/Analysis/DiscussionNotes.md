@@ -114,3 +114,4 @@ $$
 
 Note that this actually tells us that $f$ is *continuous* on $(0, \infty)$, since if we want continuity at a specific point $x$, we can take $b>x$. Since each term is a continuous function of $x$, and we have uniform convergence, the limit function is the uniform limit of continuous functions on this interval and thus also continuous here. Checking $x=0$ separately, we find that $f$ is in fact continuous on $[0, \infty)$.
 
+
