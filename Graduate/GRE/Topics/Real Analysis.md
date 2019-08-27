@@ -373,4 +373,3 @@ $$
 Notation:$\sum_{k\in\NN} f_k$ is a "series"
 
 - $\limsup \abs{f_k(x)} \neq 0 \implies $ not convergent
-- $\limsup \abs{f_k(x)} \neq 0 \implies $ not convergent
