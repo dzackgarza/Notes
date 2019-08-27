@@ -21,6 +21,4 @@ $$
 A = \union_{i\in \NN} A_i\quad \text{with each $A_i$ nowhere dense}
 $$
 
-A set $A$ is *null* if for any $\varepsilon$,
-
-
+A set $A$ is *null* if for any $\varepsilon$, there exists a cover of $A$ by countably many intervals of total length less than $\varepsilon$, i.e. there exists $\theset{I_k}_{j\in\NN}$ such that $A\subseteq \union_{j\in \NN} I_j$ and $\sum_{j\in \NN}\mu(I_j) < \varepsilon$. If $A$ is null, we say $\mu(A) = 0$.
