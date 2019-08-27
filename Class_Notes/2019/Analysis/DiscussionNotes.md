@@ -37,4 +37,4 @@ $$
 
 ## Uniform Convergence
 
-We say that $f_n \to f$ *uniformly* if $\norm{f_n - f}_\infty$.
+We say that $f_n \to f$ *converges uniformly on $A$* if $\norm{f_n - f}_\infty = \sup_{x\in A}\abs{f_n(x) - f(x)} \to 0$.
