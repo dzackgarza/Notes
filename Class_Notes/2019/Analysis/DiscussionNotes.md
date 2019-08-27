@@ -94,6 +94,23 @@ Does it converge at all, say on $(0, \infty)$?
 
 We can check pointwise convergence by fixing $x$, say $x=1$, and noting that
 $$
-x = 1 \implies \abs{\frac{nx^2}{n^3 + x^2}} \leq \abs{\frac n {n^3 + 1}} \leq \frac 1 {n^2} \to 0.
+x = 1 \implies \abs{\frac{nx^2}{n^3 + x^2}} \leq \abs{\frac n {n^3 + 1}} \leq \frac 1 {n^2} \coloneqq M_n,
 $$
+
+where $\sum M_n < \infty$. To see why it does not converge uniformly, we can let $x=n$. Then,
+$$
+x=n \implies \abs{\frac{nx^2}{ n^3 + x^2 }} = \frac{n^3}{2n^3} = \frac 1 2 \not\to 0,
+$$
+
+so there is a problem at large values of $x$.
+
+However, if we restrict attention to $(0, b)$ for some fixed $b$, we have $x < b$ and so
+$$
+\abs{\frac{nx^2}{n^3 + x^2}} \leq
+\frac{nb^2}{n^3 + b^2} \leq
+b^2 \left( \frac{n}{n^3} \right) =
+b^2 \frac 1 {n^2} \to 0.
+$$
+
+Note that this actually tells us that $f$ is *continuous* on $(0, \infty)$, since if we want continuity at a specific point $x$, we can take $b>x$. Since each term is a continuous function of $x$, and we have uniform convergence, the limit function is the uniform limit of continuous functions on this interval and thus also continuous here. Checking $x=0$ separately, we find that $f$ is in fact continuous on $[0, \infty)$.
 
