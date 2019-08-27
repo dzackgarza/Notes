@@ -55,3 +55,7 @@ x > a \implies \frac 1 x < \frac 1 a \implies \abs{\frac 1 {1 + nx}} \leq \abs{\
 $$
 since $a$ is fixed.
 
+## Uniformly Cauchy
+
+Let $C^0( ( [a,b], \norm{\wait}_\infty))$ be the metric space of continuous functions of $[a,b]$, endowed with the metric $d(f, g) = \norm{f - g}_\infty = \sup_{x\in [a,b]} \abs{f(x) - g(x)}$.
+
