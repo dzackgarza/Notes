@@ -44,4 +44,9 @@ This means that one can find an $n$ large enough that that for every $x\in A$, w
 - Showing uniform convergence: find some $M_n$, independent of $x$, such that $\abs{f_n(x) - f(x)} \leq M_n$ where $M_n \to 0$.
 - Negating: Fix $\varepsilon$, let $n$ be arbitrary, and find a bad $x$ (which can depend on $n$) such that $\abs{f_n(x) - f(x)} \geq \varepsilon$.
 
-Example: $\frac 1 {1 + nx} \to 0$ pointwise on $(0, \infty)$, which can be seen by fixing $x$ and taking $n \to \infty$. To see the convergence is not uniform, choose $x = \frac 1 n$ and $\varepsilon = \frac 1 2$.
+Example: $\frac 1 {1 + nx} \to 0$ pointwise on $(0, \infty)$, which can be seen by fixing $x$ and taking $n \to \infty$. To see the convergence is not uniform, choose $x = \frac 1 n$ and $\varepsilon = \frac 1 2$. Then
+$$
+\sup_{x > 0} \abs{\frac 1 {1+nx} - 0} \geq \frac 1 2 \not\to 0.
+$$
+
+> Here, the problem is at small scales -- note that the convergence *is* unform on $[a, \infty)$ for any $a > 0$.
