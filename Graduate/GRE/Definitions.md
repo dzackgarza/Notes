@@ -89,7 +89,7 @@ $$
 
 ## Analysis
 
-- Archimedean Property: $x \in \RR \implies \exists n\in \NN:~ x < n \aand x > 0 \implies \exists n:~ \frac{1}{n} < x$
+- Archimedean Property: $x \in \RR \implies \exists n\in \NN:~ x < n \annd x > 0 \implies \exists n:~ \frac{1}{n} < x$
 
 - Upper Bound (for S $\subseteq \RR$)
 	$$
@@ -105,12 +105,12 @@ $$
 
 - Least Upper Bound / Supremum (for S $\subseteq \RR$)
 	$$
-	\alpha\text{ is a LUB for } S \iff s \in S \implies s < \alpha \aand \forall t : (s \in S \implies s < t),~ \alpha < t
+	\alpha\text{ is a LUB for } S \iff s \in S \implies s < \alpha \annd \forall t : (s \in S \implies s < t),~ \alpha < t
 	$$
 
 - Greatest Lower Bound / Infimum (for S $\subseteq \RR$)
 	$$
-	\alpha\text{ is a GLB for } S \iff s \in S \implies \alpha < s \aand \forall t : (s \in S \implies t < s),~ t < \alpha
+	\alpha\text{ is a GLB for } S \iff s \in S \implies \alpha < s \annd \forall t : (s \in S \implies t < s),~ t < \alpha
 	$$
 
 - Open Set
@@ -129,7 +129,7 @@ $S$ is connected $\iff$ $\not\exists U,V\subset S$ nonempty, open, disjoint such
 - Compact:
 Every open cover has a finite subcover:
 $$
-X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty \aand X\subseteq \union_{i\in I} V_i
+X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty \annd X\subseteq \union_{i\in I} V_i
 $$
 
 - Sequential Compactness
