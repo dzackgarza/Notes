@@ -87,3 +87,13 @@ Let $f_n(x) = \frac 1 n \sin(n^2 x)$, which converges to $0$ uniformly, but $f_n
 
 To make this work, the theorem is that if $f_n' \to^U g$ for some $g$ and for at least 1 point $x$ we have $f_n(x) \to f(x)$ , then $g = \lim f_n'$.
 
+Exercise:
+Let $f(x) = \sum_{n=1}^\infty \frac{nx^2}{n^3 + x^3}$.
+
+Does it converge at all, say on $(0, \infty)$?
+
+We can check pointwise convergence by fixing $x$, say $x=1$, and noting that
+$$
+x = 1 \implies \abs{\frac{nx^2}{n^3 + x^2}} \leq \abs{\frac n {n^3 + 1}} \leq \frac 1 {n^2} \to 0.
+$$
+
