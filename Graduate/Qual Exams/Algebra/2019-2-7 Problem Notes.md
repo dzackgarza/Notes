@@ -25,9 +25,7 @@ Sylow 3: Writing $G = p_k^{\alpha_k} \prod_{i \neq k}p_i^{\alpha_i} \definedas p
 - $n_{p_k} \equiv 1 \mod p_k$,
 - $n_{p_k} = [G: N_G(P)]$ for any Sylow$\dash p_k$ subgroup $P \in \mathrm{Syl}(p_k) \leq G$.
 
-The Correspondence Theorem / 4th Isomorphism Theorem: 
-
-Suppose $N \normal G$, then there exists a correspondence:
+The Correspondence Theorem / 4th Isomorphism Theorem: suppose $N \normal G$, then there exists a correspondence:
 $$
 \left\{ 
 H < G \suchthat N \subseteq H
