@@ -164,7 +164,9 @@ A_k ~\text{countable} 				&&\implies && \prod_{k=1}^n A_k, ~ \union_{k=1}^\infty
 
 
 ## Preimage Identities
+
 Summary
+
 - Injectivity: left cancellation
 - Surjectivity: right cancellation
 - Everything commutes with unions
@@ -191,6 +193,7 @@ Preimage Equations
 	- Symmetric Difference
 
 Image Equations
+
 - $A \subset B \implies f(A) \subset f(B)$
 - $f(\union A_i) = \union f(A_i)$
 - $f(\intersect A_i) \subset \intersect f(A_i)$
@@ -198,6 +201,7 @@ Image Equations
 - $f(A^c) = \im(f) - f(A)$
 
 Equations Involving Both
+
 - $A \subseteq f^{-1}(f(A))$
 	- Equal $\iff f$ is injective
 - $f(f^{-1}(A)) \subseteq A$
@@ -215,7 +219,7 @@ $n$  | Sequence
 8  | $1,7,21,35,35,21,7,1$
 
 Obtain new entries by adding in $\rotate[180]{L}$ pattern (e.g. 7 = 1+6, 12 = 6 + 15, etc).
-Note that $n\choose i$ is given by the entry in the $n\dash$th row, $i\dash$ column.
+Note that $n\choose i$ is given by the entry in the $n\dash$th row, $i\dash$th column.
 
 ## Table of Small Factorials
 
