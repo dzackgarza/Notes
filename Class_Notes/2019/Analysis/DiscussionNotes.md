@@ -134,3 +134,11 @@ Does it converge at all? Fix $x\in \RR$, say $x=1$, then $\frac 1 {1+n^2} \leq \
 
 ### Negating Uniform Convergence for Series
 ???
+
+
+## Misc
+
+A useful inequality:
+$$
+(1+x)^n = \sum_{k=1}^n {n \choose k}x^k = 1 + nx + n^2 x \geq 1 + nx + nx^2 > 1 + nx
+$$
