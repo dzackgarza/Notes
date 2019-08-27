@@ -172,10 +172,12 @@ $$
 ## Continuity
 
 Definitions
+
 - Limit definition:
 $$
 f\text{ continuous } \iff \lim_{x \to p} f(x) = f(p)
 $$
+
 - Epsilon-Delta Definition:
 $$
 f:(X, d_X) \to (Y, d_Y) \text{ continuous } \iff \forall \varepsilon,~ \exists \delta \mid ~
@@ -185,11 +187,13 @@ $$
 - The preimage of every closed set is closed
 
 Examples:
+
 - A function discontinuous at a point: $\sin(\frac{1}{x})$ at $x=0$
 - A nowhere continuous function: $f(x) = \indicator{\QQ}$
-	- Not Riemann integrable
+  - Not Riemann integrable
 
 Some Facts:
+
 - A continuous function on a compact space attains its extrema.
 - There are functions that are continuous on $\RR-\QQ$ but discontinuous on $\QQ$.
 - There are no functions that are continuous on $\QQ$ but discontinuous on $\RR-\QQ$
