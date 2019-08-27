@@ -133,12 +133,12 @@ $$\begin{align*}
 \end{align*}$$
 
 ## Logic Identities
-- $P \implies Q \iff Q \or \lnot P$
+- $P \implies Q \iff Q \orr \lnot P$
 - $P \implies Q \iff \lnot Q \implies \lnot P$
-- $P \or(Q \annd S) \iff (P \or Q) \annd (P \or S)$
-- $P \annd(Q \or S) \iff (P \annd Q) \or (P \annd S)$
-- $\lnot (P \annd Q) \iff \lnot P \or \lnot Q$
-- $\lnot (P \or Q) \iff \lnot P \annd \lnot Q$
+- $P \orr(Q \annd S) \iff (P \orr Q) \annd (P \orr S)$
+- $P \annd(Q \orr S) \iff (P \annd Q) \orr (P \annd S)$
+- $\lnot (P \annd Q) \iff \lnot P \orr \lnot Q$
+- $\lnot (P \orr Q) \iff \lnot P \annd \lnot Q$
 
 ## Set Identities
 $$\begin{align*}
@@ -172,7 +172,7 @@ Summary
 - Image generally only results in an inequality
 
 Preimage Equations
-- $A \subseteq B \implies f(A) \subseteq f(B) \or f^{-1}(A) \subseteq f^{-1}(B)$
+- $A \subseteq B \implies f(A) \subseteq f(B) \orr f^{-1}(A) \subseteq f^{-1}(B)$
 - $f^{-1}(\union_{i\in I}A_i) = \union_{i\in I} f^{-1}(A_i)$
 	- Also holds for $f(\union_{i\in I}A_i) = \union_{i\in I} f(A_i)$
 - $f^{-1}(\intersect_{i\in I}A_i) = \intersect_{i\in I} f^{-1}(A_i)$
