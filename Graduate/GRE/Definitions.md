@@ -318,7 +318,7 @@ $$
 	- $\inner{\vector x}{\vector y} = \conjugate{\inner{\vector y{\vector x}}$
 	- $\inner[k\vector x]{\vector y} = k\inner{\vector x}{\vector y} = \inner{\vector x}{k\vector y}$
 	- $\inner{\vector x + \vector y}{\vector z} = \inner{\vector x}{\vector z} + \inner[y]{\vector z}$
-	- $\inner[a\vector x]{b\vector y} = \inner{\vector x}{\vector x} + \inner[a\vector x]{y} + \inner{\vector x}{b\vector y} + \inner{\vector y}{\vector y}$
+	- $\inner[a\vector x]{b\vector y} = \inner{\vector x}{\vector x} + \inner{a\vector x}{y} + \inner{\vector x}{b\vector y} + \inner{\vector y}{\vector y}$
 	- Defines a norm: $\norm{\vector x} = \sqrt{\inner{\vector x}{\vector x}} \implies \norm{\vector x}^2 = \inner{\vector x}{\vector x}$
 
 - Cauchy-Schwarz Inequality: $\abs{\inner{\vector x}{\vector y}} \leq \norm{\vector x}\norm{\vector y}$
