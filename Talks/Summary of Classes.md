@@ -83,11 +83,11 @@ Important! Read the [undergraduate Math student handbook](https://www.math.ucsd.
 - MATH 100B. Abstract Algebra II (4)
     - Jonathan (Kedlaya)
     - Zack (McKernan)
-        - Description: studied groups in first quarter, and usually rings/fields in second quarter - different algebraic objects with more structure, building back up to vector space structure. Most immediate uses: number theory (solve rational equations by looking at bigger spaces like $\mathbb{Q}[\sqrt{2}]$, $\mathbb{Z}_n$ is always a ring and sometimes a field, etc). Class motto: look at all of these crazy rings!
+        - Description: studied groups in first quarter, and usually rings/fields in second quarter - different algebraic objects with more structure, building back up to vector space structure. Most immediate uses: number theory (solve rational equations by looking at bigger spaces like $\mathbb{Q}[\sqrt{2}]$, $\mathbb{Z}_n$ is always a ring and sometimes a field, etc).
 - MATH 100C. Abstract Algebra III (4)
     - Jonathan (Kedlaya)
     - Zack (Rogalski)
-        - Description: Usually Galois Theory or Representation Theory. Galois Theory uses algebra to describe when polynomial equations have solutions (do their exist higher quadratic equations?), Representation Theory asks if we can encode group elements as matrices.
+        - Description: Usually Galois Theory or Representation Theory. Galois Theory uses algebra to describe when polynomial equations have solutions that are expressible using "elementary" functions of the coefficients (are there analogs of quadratic equations in higher degree?). Representation Theory asks if we can encode group elements as matrices.
 - MATH 102. Applied Linear Algebra (4)
     - Zack (Harel)
         - Description: how do matrices make our lives easier (computationally speaking)? Working with matrices that aren't invertible, interpreting transformations geometrically (e.g. projections), breaking complicated matrices down into simpler/standard forms. Motivation: systems of ODEs, matrix exponential, least squares, computer graphics, etc
