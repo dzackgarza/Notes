@@ -53,4 +53,5 @@ List of properties preserved by continuous maps:
 - Compactness
 
 Checking if a map is homeomorphism:
+
 - $f$ continuous, $X$ compact and Hausdorff $\implies f$ is a homeomorphism.
