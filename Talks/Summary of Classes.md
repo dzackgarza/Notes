@@ -78,7 +78,7 @@ Important! Read the [undergraduate Math student handbook](https://www.math.ucsd.
 - MATH 100A. Abstract Algebra I (4)
     - Jonathan (Kedlaya)
     - Zack (Rogalski)
-        - Description: linear algebra taught us that we can get a lot of mileage out of a small set of basic axioms, now we extend that idea. So we pick vector spaces apart, take 2/3 of the axioms to study in isolation and call it a group. Want to understand e.g. why the structure of $\mathbb{Q}$ with multiplication is similar to $\mathbb{Z}$ with addition, but vastly different from $\mathbb{Z}$ with multiplication (no inverses!), or how these all relate to things like modular arithmetic. Big idea: algebraic operations (iso/homomorphisms), how do disparate things relate to each other?
+        - Description: linear algebra taught us that we can get a lot of mileage out of a small set of basic axioms, now we extend that idea. So we pick vector spaces apart, take 2 or 3 of the axioms to study in isolation and call it a group. Want to understand e.g. why the structure of $\mathbb{Q}$ with multiplication is similar to $\mathbb{Z}$ with addition, but vastly different from $\mathbb{Z}$ with multiplication (no inverses!), or how these all relate to things like modular arithmetic. Big idea: algebraic operations (iso/homomorphisms), how do disparate things relate to each other?
     - Note: Basically essential for grad school.
 - MATH 100B. Abstract Algebra II (4)
     - Jonathan (Kedlaya)
