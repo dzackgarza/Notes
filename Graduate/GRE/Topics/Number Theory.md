@@ -99,6 +99,7 @@ x^{p-1} &= 1 \mod p \quad \text{ if } p \not\mid a
 - The Euclidean Algorithm
 	- todo
 - The Jacobi symbol
+- Legendre symbol
 
 Solving $ax + by = c$
 - Has solutions $\iff c = 0 \mod (a,b) \iff \gcd(a,b) \text{ divides } c$.
