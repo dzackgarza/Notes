@@ -62,7 +62,7 @@ We refer to this set as the **kernel** of $T$. In the finite dimensional setting
 
 Staying in the finite setting, we know that $Ax$ lives somewhere in $W$, and it is in fact a subspace. In a general setting, it's not *all* of $W$ - this would require that $W$ and $V$ had the same dimension (so $A$ was square), and also that $A$ had full rank (so $A$ is not singular).
 
-Note that if we were looking at groups, there is an entirely analogous procedure - $T$ would instead be a homomorphism, and the image $\text{im}~T$ would be a normal subgroup in $W$.
+> Note that if we were looking at groups, there is an entirely analogous procedure - $T$ would instead be a homomorphism, and the image $\text{im}~T$ would be a normal subgroup in $W$.
 
 In either case, we can always form the quotient $W / \text{im}~T$, and this is what we'll refer to as the **cokernel**.
 
