@@ -32,7 +32,7 @@ $$
 
 * $M(G, n)$ is a Moore space, the homotopy-unique space satisfying 
 $$
-H_k(KMG, n)) = 
+H_k(M(G, n); G) = 
 \begin{cases}
 G & k=n, \\ 
 0 & k\neq n.
