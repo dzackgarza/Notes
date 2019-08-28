@@ -1,7 +1,5 @@
 # Number Theory
 
-
-
 ## Theorem
 
 $k$ a number field, $n = [k: Q]$, Then $\exists M >0$ such that every nonzero ideal $I \in O_k$ contains and $\alpha\neq 0$ such that $|N(\alpha)| \leq M N(I)$.
