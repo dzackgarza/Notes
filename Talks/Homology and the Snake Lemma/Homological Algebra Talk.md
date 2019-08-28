@@ -41,7 +41,7 @@ $H(B^2) = (\ZZ, 0, 0 , \cdots)$
 So the filled in 2-dimensional ball has no holes.
 
 $H(S^2) = (\ZZ, 0, \ZZ, 0, \cdots)$
-So we have one connected component, no one-dimensional holes, and one two-dimensional holes.
+So we have one connected component, no one-dimensional holes, and one two-dimensional hole.
 
 $H_k(S^n) = \mathbf{1}[k = 0, n]$
 In general, the $n$-sphere has one connected component and one $n$-dimensional hole.
