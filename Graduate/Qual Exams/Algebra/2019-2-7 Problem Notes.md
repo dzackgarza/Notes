@@ -2,11 +2,8 @@
 
 
 
-Statement of converse: if $n \divides \abs G$, then there exists $H \leq G$ with $\abs H = n$.
-Counterexample to converse: $\abs A_4 = 12$ but there is no subgroup of order 6.
 
-Cauchy's Theorem: If $p \divides \abs G$, then $G$ contains an element $g$ of order $p$.
-Corollary: If $p \divides \abs G$, then there is a subgroup $H \leq G$ such that $\abs H = p$. Obtained as $H = <g>$ from above.
+
 
 Sylow Theorems:
 Definition: A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k$ for some $k$. If $\abs G < \infty$, it follows that $\abs G = p^j$ for some $j$.

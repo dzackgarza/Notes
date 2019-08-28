@@ -10,6 +10,10 @@ $H \leq G \implies \abs H \divides \abs G$.
 - Corollary: $g\in G \implies o(g) \divides o(G)$
 - Corollary: $g^{\abs G} = e$.
 
+Statement of converse: if $n \divides \abs G$, then there exists $H \leq G$ with $\abs H = n$.
+
+Counterexample to converse: $\abs A_4 = 12$ but there is no subgroup of order 6.
+
 **Sylow Theorems**
 
 Write $\abs{G} = p^n m$ where $m {\not\divides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.
