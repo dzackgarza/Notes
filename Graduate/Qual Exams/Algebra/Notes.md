@@ -2,7 +2,8 @@
 
 ## Group Theory
 
-Sylow Theorems: Write $\abs{G} = p^n m$ where $m {\notdivides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.
+## Sylow Theorems
+Write $\abs{G} = p^n m$ where $m {\notdivides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.
 
 - $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
   - Corollary: $\forall p \divides \abs{G}$, there exists an element of order $p$.
