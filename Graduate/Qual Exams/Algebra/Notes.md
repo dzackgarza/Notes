@@ -31,6 +31,20 @@ Write $\abs{G} = p^n m$ where $m {\not\divides} p$, $S_p$ a sylow$\dash p$ subgr
 - $n_p \equiv 1 \mod p$, i.e. $n_p \not\divides p$.
 - $n_p = [F : N(S_p)]$ where $N$ is the normalizer.
 
+Definition: A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k$ for some $k$. If $\abs G < \infty$, it follows that $\abs G = p^j$ for some $j$.
+Definition: A Sylow$\dash p$ subgroup is
+Notation: for any $p$, let $\mathrm{Syl}(p)$ be the set of Sylow$\dash p$ subgroups of $G$, and $n_p = \#\abs{\mathrm{Syl}(p)}$ the number of such subgroups.
+
+Sylow 1: If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
+
+Sylow 2: If $H_1, H_2$ are Sylow$\dash p$ subgroups, then they are conjugate, i.e. $\exists g\in G \suchthat H_1 = gH_2g^{-1}$.
+
+Sylow 3: Writing $G = p_k^{\alpha_k} \prod_{i \neq k}p_i^{\alpha_i} \definedas p_k^{\alpha_k}m$, then:
+- $n_{p_k}$ divides $m$, and $m = [P : G]$ for any $P \in \mathrm{Syl}(p_k)$,
+- $n_{p_k} \equiv 1 \mod p_k$,
+- $n_{p_k} = [G: N_G(P)]$ for any Sylow$\dash p_k$ subgroup $P \in \mathrm{Syl}(p_k) \leq G$.
+
+
 Useful facts: 
 
   - $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$, so coprime order subgroups are disjoint.
