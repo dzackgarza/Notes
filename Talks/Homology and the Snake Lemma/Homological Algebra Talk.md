@@ -1,6 +1,6 @@
 # Homological Algebra
 
-Goal: provide some background for this movie scene! https://www.youtube.com/watch?v=etbcKWEKnvg
+Goal: provide some background for [this movie scene](https://www.youtube.com/watch?v=etbcKWEKnvg)! 
 
 # What is homology?
 
