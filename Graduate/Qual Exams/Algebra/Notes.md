@@ -23,12 +23,12 @@ Corollary: If $p \divides \abs G$, then there is a subgroup $H \leq G$ such that
 
 Write $\abs{G} = p^n m$ where $m {\not\divides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.
 
-- $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
-  - Corollary: $\forall p \divides \abs{G}$, there exists an element of order $p$.
-- All sylow$\dash p$ subgroups are conjugate for a given $p$.
-  - Corollary: $n_p = 1 \implies S_p \normal G$
-- $n_p \divides m$
-- $n_p \equiv 1 \mod p$
+1. $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
+   1. Corollary: $\forall p \divides \abs{G}$, there exists an element of order $p$.
+2. All sylow$\dash p$ subgroups are conjugate for a given $p$.
+   1. Corollary: $n_p = 1 \implies S_p \normal G$
+- $n_p \equiv 0 \mod m$, i.e. $n_p \divides m$
+- $n_p \equiv 1 \mod p$, i.e. $n_p \not\divides p$.
 - $n_p = [F : N(S_p)]$ where $N$ is the normalizer.
 
 Useful facts: 
