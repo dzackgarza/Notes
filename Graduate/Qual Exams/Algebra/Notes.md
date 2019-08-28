@@ -1,11 +1,14 @@
 # Group Theory
 
+Definition: $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
+
+
 **Lagrange's Theorem**:
 
-$H \leq G \implies \abs H \divides \abs G$
-Corollary: $g\in G \implies o(g) \divides o(G)$
-Corollary: $g^{\abs G} = e$.
-Index: $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
+$H \leq G \implies \abs H \divides \abs G$.
+
+- Corollary: $g\in G \implies o(g) \divides o(G)$
+- Corollary: $g^{\abs G} = e$.
 
 **Sylow Theorems**
 
