@@ -1,4 +1,5 @@
 Students on Panel:
+
 - Zack
 - Jonathan
 - Yuqi
@@ -6,6 +7,7 @@ Students on Panel:
 - Yi
 
 General Panel Questions:
+
 - Why did you choose a math-related major?
 - What was the most useful class you've taken? 
     - Least useful?
