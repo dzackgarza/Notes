@@ -38,7 +38,8 @@ Makes certain degenerate cases easier - i.e. a curve intersecting a plane in an 
 
 Number of points of intersection is not exactly a homotopy invariant, since in the above example we could make the intersection number either 2 or 0. However, the *parity* can be proved to be such an invariant in the smooth setting. This leads into Morse theory. For example, look at cubic intersecting plane - perturbations will coalesce two intersection points, which would be a Morse critical point.
 
-In this world, you'll have vocabulary available like
+In this world, you'll have vocabulary available 
+
 - Generic
 - Stable
 - Regular
