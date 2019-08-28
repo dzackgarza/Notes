@@ -67,6 +67,23 @@ $$
 $$
 where $C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
 
+## Isomorphism Theorems
+
+The Correspondence Theorem / 4th Isomorphism Theorem: suppose $N \normal G$, then there exists a correspondence:
+$$
+\left\{ 
+H < G \suchthat N \subseteq H
+\right\}
+\iff
+\left\{ \begin{align*} 
+H \suchthat H < \frac G N
+\end{align*}\right\}.
+$$
+
+In words, subgroups of $G$ containing $N$ correspond to subgroup of the quotient group $G/N$. This is given by the map $H \mapsto H/N$.
+Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
+
+
 # Rings
 
 **Fields:**
