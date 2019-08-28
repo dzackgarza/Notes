@@ -1,5 +1,12 @@
 # Group Theory
 
+**Lagrange's Theorem**:
+
+$H \leq G \implies \abs H \divides \abs G$
+Corollary: $g\in G \implies o(g) \divides o(G)$
+Corollary: $g^{\abs G} = e$.
+Index: $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
+
 **Sylow Theorems**
 
 Write $\abs{G} = p^n m$ where $m {\not\divides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.

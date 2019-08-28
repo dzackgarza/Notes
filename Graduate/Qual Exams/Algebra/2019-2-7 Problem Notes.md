@@ -1,9 +1,6 @@
 **Let $p$ be a prime and $\abs{G} = p^3$. Show that $\exists N \normal G$ such that $\abs N = p^2$.**
 
-Lagrange's Theorem: $H \leq G \implies \abs H \divides \abs G$
-Corollary: $g\in G \implies o(g) \divides o(G)$
-Corollary: $g^{\abs G} = e$.
-Index: $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
+
 
 Statement of converse: if $n \divides \abs G$, then there exists $H \leq G$ with $\abs H = n$.
 Counterexample to converse: $\abs A_4 = 12$ but there is no subgroup of order 6.
