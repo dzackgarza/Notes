@@ -48,6 +48,7 @@ Example:
 - The space $\theset{\frac{1}{n}}_{n\in \NN}$
 
 List of properties preserved by continuous maps:
+
 - Connectedness
 - Compactness
 
