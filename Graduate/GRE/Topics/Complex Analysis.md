@@ -44,13 +44,15 @@ The main theorem:
 $$
 \oint_C f(z)~dz = 2\pi i \sum_k \mathrm{Res}(f, z_k)
 $$
-- Computing residues:
+
+Computing residues:
 $$
 \operatorname { Res } ( f , c ) = \frac { 1 } { ( n - 1 ) ! } \lim _ { z \rightarrow c } \frac { d ^ { n - 1 } } { d z ^ { n - 1 } } \left( ( z - c ) ^ { n } f ( z ) \right) \\
 f(z) = \frac{g(z)}{h(z)} \implies \operatorname { Res } ( f , c ) = \frac{g(c)}{h'(c)}
 $$
 
 Definitions
+
 - Analytic: differentiable everywhere
 - Entire
 - Holomorphic
