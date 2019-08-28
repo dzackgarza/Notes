@@ -24,7 +24,9 @@ $$
 
 
 ## Group Theory
+
 Notation: $H < G$ a subgroup, $N < G$ a normal subgroup, concatenation is a generic group operation.
+
 - $\ZZ_n$ the unique cyclic group of order $n$
 - $\mathbf{Q}$ the quaternion group
 - $G^n = G\times G \times \cdots G$
