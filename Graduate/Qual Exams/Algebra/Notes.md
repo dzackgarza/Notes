@@ -1,10 +1,8 @@
-# Notes
-
-## Group Theory
+# Group Theory
 
 **Sylow Theorems**
 
-Write $\abs{G} = p^n m$ where $m {\notdivides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.
+Write $\abs{G} = p^n m$ where $m {\not\divides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.
 
 - $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
   - Corollary: $\forall p \divides \abs{G}$, there exists an element of order $p$.
@@ -40,12 +38,14 @@ $$
 $$
 where $C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
 
+# Rings
+
 **Fields:**
 $GF(p^n)$ is obtained as $\displaystyle\frac{\FF_p}{\generators{f}}$ where $f \in \FF_p[x]$ is irreducible of degree $n$.
 
 Eisenstein's Criterion: If $f(x) = \sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ such that both $p\notdivides a_n$ and $p^2 \notdivides a_0$ but $p \divides a_{i\neq n}$, then $f$ is irreducible.
 
-## Linear Algebra
+# Linear Algebra
 
 Finding the minimal polynomial $m(x)$ of $A$:
 
