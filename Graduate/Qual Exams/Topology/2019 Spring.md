@@ -1,7 +1,7 @@
 # Spring 2019
 
 ## Problem 1
-Complete **totally** bounded $\implies$ compact.
+Complete and **totally** bounded $\implies$ compact.
 -  Definition: A space $X$ is *totally bounded* if for every $\varepsilon >0$, there is a finite cover $X \subseteq \union_\alpha B_\alpha(\varepsilon)$ such that the radius of each ball is less than $\varepsilon$.
 - Definition: A subset of a space $S \subset X$ is *bounded* if there exists a $B(r)$ such that $r<\infty$ and $S \subseteq B(r)$ 
 - Totally bounded $\implies$ bounded 
