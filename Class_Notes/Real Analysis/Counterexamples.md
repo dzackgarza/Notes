@@ -8,7 +8,7 @@ Questions to ask:
 
 ## The Dirichlet function
 $$
-f ( x ) = b + (a-b)~\indicator{\QQ} = \begin{cases}
+f ( x ) = b + (a-b)~\indicator{x\in \QQ} = \begin{cases}
 a, & x\in \QQ \\
 b, & \text{else}
 \end{cases}
