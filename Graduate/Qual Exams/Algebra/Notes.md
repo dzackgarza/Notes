@@ -2,6 +2,7 @@
 
 Definition: $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
+Burnside's Lemma: TODO
 
 **Lagrange's Theorem**:
 
