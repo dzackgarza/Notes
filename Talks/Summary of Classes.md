@@ -98,7 +98,7 @@ Important! Read the [undergraduate Math student handbook](https://www.math.ucsd.
     - David (Popescu)
 - MATH 104A. Number Theory I (4)
     - Zack (Popescu)
-        - Description: what's up with prime numbers?! And can we understand difficult equations by factoring everything into primes? Diophantine equations (e.g. Fermat) are simple to state but crazy hard to solve, so we start building up theory to attack them. A lot of theorems about modular arithmetic and "multiplicative" functions. Pulls in techniques from everywhere (algebra, analysis, complex analysis, geometry, everything).
+        - Description: what's up with prime numbers?! And can we understand difficult equations by factoring everything into primes? Diophantine equations (e.g. Fermat) are simple to state but extremely hard to solve, so we start building up theory to attack them. A lot of theorems about modular arithmetic and "multiplicative" functions. Pulls in techniques from everywhere (algebra, analysis, complex analysis, geometry, everything).
 - MATH 104B. Number Theory II (4)
 - MATH 104C. Number Theory III (4)
 - MATH 109. Mathematical Reasoning (4)
