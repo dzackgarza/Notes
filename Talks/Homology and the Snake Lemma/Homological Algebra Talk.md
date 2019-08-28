@@ -35,7 +35,7 @@ Intuitively, $H_0(X)$ tells you about the number of connected components, $H_1(X
 Some examples:
 
 $H(S^1) = (\ZZ, \ZZ, 0, 0, \cdots)$
-So we have 1 connected component, 1 one-dimensional holes, and that's it.
+So we have 1 connected component, 1 one-dimensional hole, and that's it.
 
 $H(B^2) = (\ZZ, 0, 0 , \cdots)$
 So the filled in 2-dimensional ball has no holes.
