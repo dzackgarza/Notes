@@ -194,7 +194,7 @@ $$
 
 * $H_i(S^n) = \indicator{i \in \theset{0, n}}$
 
-* $H_n(\bigvee_i X_i) \cong \bigoplus_i H_n(X_i)$ for "good pairs"
+* $H_n(\bigvee_i X_i) \cong \prod_i H_n(X_i)$ for "good pairs"
   * Corollary: $H_n(\bigvee_k S^n) = \ZZ^k$
 
 * $S^n / S^k \homotopic S^n \vee \Sigma S^{k}$
