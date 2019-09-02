@@ -17,13 +17,13 @@ Definition: An *n-simplex* $\sigma = (a_0, \cdots a_n) \subseteq \RR^n$ is a *co
 
 The convex hull is $\theset{\sum \lambda_i a_iL \mid 0 \leq \lambda_i \leq 1, \sum \lambda_i = 1}$, i.e. set of centers of gravity of masses placed at vertices.
 
-They are affinely independent if there is a unique expression of every point in barycentric coordinates. $\sum v_i a_i = 0 \and \sum v_i = 0 \implies v_i = 0 ~\forall i$. It follows that if $\sum \lambda_i a_i = \sum \mu_i a_i$ then $\lambda_i = \mu_i ~\forall i$.
+They are affinely independent if there is a unique expression of every point in barycentric coordinates. $\sum v_i a_i = 0 \text{ and } \sum v_i = 0 \implies v_i = 0 ~\forall i$. It follows that if $\sum \lambda_i a_i = \sum \mu_i a_i$ then $\lambda_i = \mu_i ~\forall i$.
 
 The *face* of an $n$-simplex are the subsets where the barycentric coordinates are 0. Consider a triangle with points $\lambda a, \mu b, \nu c$, then one edge is a face ($\lambda=0$), as is another $(\nu = 0$), as is the point $\mu b$ where $\nu  = \lambda = 0$. An $n$-simplex has $2^n - 1$ faces, including the entire thing ($2^n - 2$ otherwise)
 
 A *simplicial complex* is a set $K$ of simplexes in $\RR^n$, say $K = \theset{\sigma_0, \sigma_1 \cdots \sigma_n}$, such that they are pasted together correctly, i.e.
 
-1. $\sigma \in K \and \tau \subset \sigma \implies \tau \in K$
+1. $\sigma \in K \text{ and } \tau \subset \sigma \implies \tau \in K$
 2. If $\sigma, \sigma' \in K$ then they overlap in a common face, i.e. either $\sigma \intersect \sigma' = \emptyset \or \sigma\intersect\sigma'$ is a face of both $\sigma,\sigma'$.
 
 Given such a $K$, define $\abs{K} = \union_{\sigma\in K} \sigma \subseteq \RR^n$ a topological space.
@@ -34,7 +34,7 @@ For example, $S^1 \cong $ a triangle (can't allow curved stuff or multiple edges
 
 $S^2 \cong $ a tetrahedron with 14 simplexes.
 
-Definition: an *abstract simplicial complex* is a set $V$ of vertices together with a set $K \subset P(V)$ of subsets of $V$ which is closed under taking subsets ($\sigma \in K \and \tau \subseteq \sigma \implies \tau \in K$)
+Definition: an *abstract simplicial complex* is a set $V$ of vertices together with a set $K \subset P(V)$ of subsets of $V$ which is closed under taking subsets ($\sigma \in K \text{ and } \tau \subseteq \sigma \implies \tau \in K$)
 
 Example, $V = \theset{1,2,3,4}$, then a simplex $K = \theset{\theset{1}, \theset{2}, \theset{3}, \theset{4}, \theset{1,2}. \theset{2,3}, \theset{1,3}, \theset{1,2,3}}$.
 
