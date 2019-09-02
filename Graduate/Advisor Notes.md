@@ -51,13 +51,13 @@ Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat 
 One organizing problem: classify surface bundles over a fixed closed base manifold up to 
 
 - Bundle isomorphism
-  - Fiberwise homeo, but doesn't actually permute any fibers
+  - Fiber-wise homeomorphism, but doesn't actually permute any fibers
   - Covering the identity map
-- Homeo
-- Diffeo
+- Homeomorphism
+- Diffeomorphism
 - Homotopy-equivalence
-- Fiberwise homeo 
-  - Homeo that takes fiber to fiber
+- Fiber-wise Homeomorphism
+  - Homeomorphism that takes fiber to fiber
 - Symplectomorphism
 - Biholomorphism
   - Total spaces are complex manifolds
