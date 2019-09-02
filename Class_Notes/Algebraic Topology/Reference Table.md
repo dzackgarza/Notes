@@ -116,13 +116,15 @@ $$
 	* $H_1(X) = \pi_1 X / [\pi_1X, \pi_1X]$, the abelianization.
 
 * General mantra: homotopy plays nicely with products, homology with wedge products.[^pullbacks]
+
 > In general, homotopy groups behave nicely under homotopy pull-backs (e.g., fibrations and products), but not homotopy push-outs (e.g., cofibrations and wedges). Homology is the opposite.
-	* $\pi_k\prod X = \prod \pi_k X$ by LES.[^homotopyproduct]
-	* $H_k \prod X \neq \prod H_k X$ due to torsion.
-		* Nice case: $H_k (A\cross B) = \prod_{i+j=k} H_i A \tensor H_j B$ by Kunneth when all groups are torsion-free.[^kunneth]
-	* $H_k \bigvee X = \prod H_k X$ by Mayer-Vietoris.[^wedge]
-	* $\pi_k \bigvee X \neq \prod \pi_k X$ (counterexample: $S^1 \vee S^2$)
-		* Nice case: $\pi_1\bigvee X = \bigast \pi_1 X$ by Van Kampen.
+
+* $\pi_k\prod X = \prod \pi_k X$ by LES.[^homotopyproduct]
+* $H_k \prod X \neq \prod H_k X$ due to torsion.
+  * Nice case: $H_k (A\cross B) = \prod_{i+j=k} H_i A \tensor H_j B$ by Kunneth when all groups are torsion-free.[^kunneth]
+* $H_k \bigvee X = \prod H_k X$ by Mayer-Vietoris.[^wedge]
+* $\pi_k \bigvee X \neq \prod \pi_k X$ (counterexample: $S^1 \vee S^2$)
+  * Nice case: $\pi_1\bigvee X = \bigast \pi_1 X$ by Van Kampen.
 
 * $\pi_i(\hat X) \cong \pi_i(X)$ for $i\geq 2$ whenever $\hat X \surjects X$ is a universal cover.
 
