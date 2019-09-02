@@ -24,7 +24,7 @@ The *face* of an $n$-simplex are the subsets where the barycentric coordinates a
 A *simplicial complex* is a set $K$ of simplexes in $\RR^n$, say $K = \theset{\sigma_0, \sigma_1 \cdots \sigma_n}$, such that they are pasted together correctly, i.e.
 
 1. $\sigma \in K \text{ and } \tau \subset \sigma \implies \tau \in K$
-2. If $\sigma, \sigma' \in K$ then they overlap in a common face, i.e. either $\sigma \intersect \sigma' = \emptyset \or \sigma\intersect\sigma'$ is a face of both $\sigma,\sigma'$.
+2. If $\sigma, \sigma' \in K$ then they overlap in a common face, i.e. either $\sigma \intersect \sigma' = \emptyset \text{ or } \sigma\intersect\sigma'$ is a face of both $\sigma,\sigma'$.
 
 Given such a $K$, define $\abs{K} = \union_{\sigma\in K} \sigma \subseteq \RR^n$ a topological space.
 
