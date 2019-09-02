@@ -15,8 +15,9 @@ markdown:
 
 ## Lemma: There are no nontrivial homomorphisms from finite groups into free groups.
 
-In particular, homomorphisms $\ZZ_n \to \ZZ$
-Proof: homomorphisms send torsion to torsion; the former has $n\dash$torsion while the latter does not.
+In particular, any homomorphism $\ZZ_n \to \ZZ$ is trivial.
+
+Proof: homomorphisms preserve torsion; the former has $n\dash$torsion while the latter does not.
 
 This is especially useful if you have some $f: A\into B$ and you look at the induced homomorphism $f_*: \pi_1(A) \into \pi_1(B)$. If the former is finite and the latter contains a copy of $\ZZ$, then $f_*$ has to be the trivial map $f_*([\alpha]) = e \in \pi_1(B)$ for every $[\alpha] \in \pi_1(A)$.
 
