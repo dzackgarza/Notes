@@ -26,14 +26,14 @@
   - This talk: not so much related to his personal work!
   - Will revisit
 
-Throughout: $\Sigma_g$ a connected oriented $g\geq 2$ surface, will look at $\Sigma_g\dash$ bundles given by 
+Throughout: $\Sigma_g$ a connected oriented $g\geq 2$ surface, will look at $\Sigma_g\dash$ bundles given by
 $$
 \Sigma_g \to E \mapsvia{\pi} B
 $$
 
 (Fiber bundle where the base and total space will usually be compact manifolds, fiber is a surface)
 
-For any $f\in \mathrm{Diff}(\Sigma_g)$, take cylinder on $\Sigma_g$ and glue ends via $f$ to obtain a 3-manifold and the surface bundle 
+For any $f\in \mathrm{Diff}(\Sigma_g)$, take cylinder on $\Sigma_g$ and glue ends via $f$ to obtain a 3-manifold and the surface bundle
 $$
 \Sigma_g \to M_f^3 \mapsvia{\pi} S^1
 $$
@@ -48,7 +48,7 @@ Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat 
 
 > Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$. Take the kernel of $E \mapsvia{f} B$ is obtain a "vertical" 2-plane bundle, horizontal is not well-defined and so is a choice of a 2-plane field. Flat means curvature vanishes is equivalent to Frobenius integrability theorem - the 2-plane is integrable. So curvature measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a foliation".
 
-One organizing problem: classify surface bundles over a fixed closed base manifold up to 
+One organizing problem: classify surface bundles over a fixed closed base manifold up to
 
 - Bundle isomorphism
   - Fiber-wise homeomorphism, but doesn't actually permute any fibers
@@ -70,7 +70,7 @@ Why study $\Sigma_g$ bundles?
 2. For 3-manifolds: almost all (e.g. all hyperbolic) closed 3-manifolds are finitely covered by some $M_f^3$ surface bundle
    1. Famous conjecture of Thurston! Very recent
       1. His fields medal was finding a single hyperbolic structure on a closed 3-manifold fibering over the circle.
-3. For 4-manifolds: huge class of symplectic mfds.
+3. For 4-manifolds: huge class of symplectic manifolds.
    1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 4. AG: $\mathcal M$ moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
@@ -81,14 +81,14 @@ Let $\mathrm{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\p
 
 Representation from earlier can be projected:
 $$
-\pi_1 B \to \mathrm{Diff}^+ \Sigma_g \mapsvia{\pi} \mathrm{Mod(\Sigma_g)}
+\pi_1 B \to \mathrm{Diff}^+ \Sigma_g \mapsvia{\pi} \mathrm{Mod}(\Sigma_g)
 $$
 
 Take a homeomorphism to its homotopy class, Mod is finitely generated.
 
 > In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
 
-So any bundle $\Sigma_g \to E \to B$ yields a corresponding monodromy representation 
+So any bundle $\Sigma_g \to E \to B$ yields a corresponding monodromy representation
 $$
 \rho: \pi_1 B \to \mathrm{Mod} \Sigma_g
 $$
@@ -122,7 +122,7 @@ Equivalently, is every bundle flat? No, but this is an open question when the ba
 
 Classifying space theory: there exists a (crazy) space $\mathrm{BDiff}^+\Sigma_g$ such that
 $$
-\theset{\text{iso classes } \Sigma_g \to E \to B} \iff [B, \mathrm{BDiff}^+ \Sigma_g] 
+\theset{\text{iso classes } \Sigma_g \to E \to B} \iff [B, \mathrm{BDiff}^+ \Sigma_g]
 $$
 
 Model: general construction, just find any contractible space on which $\mathrm{Diff}$ acts freely and take the quotient. One that works: $\mathrm{Emb}(\Sigma_g, \RR^\infty)$.
@@ -192,7 +192,7 @@ B' \arrow[rr, "f" description] &  & B
 \end{document}
 ```
 
-and require that 
+and require that
 $$
 \tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B)).
 $$
@@ -221,7 +221,7 @@ Any 2-cycle (for any space) will be homologous to the image of a map $f$ of a su
  &  &  &  &  \\
 \Sigma_g \arrow[rr] \arrow[rruu, dotted] &  & M^4 \arrow[dd] \arrow[rruu, dotted] &  & \mathrm{BDiff}^+ \Sigma_g \\
  &  &  &  &  \\
- &  & \Sigma_h \arrow[rruu, "f" description] &  & 
+ &  & \Sigma_h \arrow[rruu, "f" description] &  &
 \end{tikzcd}
 \end{document}
 ```
@@ -232,10 +232,10 @@ Take the signature of $M_4$ (where you use the intersection pairing on $H_2$, ta
 Look at the vertical bundle over $T$, you get $\RR^2 \to E \to T$.
 > Note: can see this bundle by looking at moduli space of Riemann surfaces $\mathcal{M}_g$, covered by $\mathcal{M}_g^*$ with fiber $\Sigma_g$. There is a vertical bundle over this, everything that is tangent to the fiber, which is a 2-plane bundle over the covering space.
 
-So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so 
+So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so
 $$
 e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\mathrm{Mod} \Sigma_g; \QQ).
-$$ 
+$$
 
 Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
 
@@ -251,7 +251,7 @@ See book with Dan Margalit - all of this lives in the group $\mathrm{Mod} \Sigma
 
 *Work-in-progress!*
 
-Geometric motivation: a map $\phi: \RR^n \to \RR^n$ if there is a matrix $A \in \GL(n, \RR)$ such that 
+Geometric motivation: a map $\phi: \RR^n \to \RR^n$ if there is a matrix $A \in \GL(n, \RR)$ such that
 $$
 \exists \vector{w} \in \RR^n :\forall \vector{v} \in \RR^n, \phi(\vector{v}) = A \vector{v} + \vector{w}.
 $$
@@ -259,10 +259,10 @@ $$
 In other words, a composition of a linear map and a translation. Takes lines to lines, planes to planes.
 
 ## Fundamental Theorem of Affine Geometry
-Suppose you have a set map that is a bijection 
+Suppose you have a set map that is a bijection
 $$
 \Phi: \theset{\text{affine subspaces of } \RR^n, \dim \geq 0} \selfmap
-$$ 
+$$
 which satisfies
 $$
 P_1 \subseteq P_2 \implies \Phi(P_1) \subseteq \Phi(P_2),
@@ -288,7 +288,7 @@ then $\Phi$ is induced by an affine map $\phi$.
 
 Remark: false if $\Phi$ only preserves double points (and not triple points).
 
-Double intersections aren't quite enough, see figure 1. 
+Double intersections aren't quite enough, see figure 1.
 
 *todo add from phone*
 
@@ -306,17 +306,17 @@ Punchline: Helle's theorem, in any collection of convex subsets of $\RR^n$, if a
 
 Theorems they proved: What is a homeomorphism?
 
-Fix an $n\dash$manifold $M$, $n\geq 2$ let 
+Fix an $n\dash$manifold $M$, $n\geq 2$ let
 $$
 S = \mathrm{Emb}(S^{n-1}, M) / \mathrm{Homeo}(S^{n-1}),
 $$
 
-the space of embedded spheres in $M$ as subsets, so 
+the space of embedded spheres in $M$ as subsets, so
 $$
 S = \theset{ \text{subsets of } M \text{ homeomorphic to } S^{n-1} }.
 $$
 
-## Theorem 1: A homeomorphism takes embedded spheres to embedded spheres. 
+## Theorem 1: A homeomorphism takes embedded spheres to embedded spheres.
 
 Suppose $\Phi: S \to S$ is bijective, and $\forall X, Y \in S$,
 $$
@@ -326,13 +326,13 @@ $$
 then there exists a unique homemorphism  $\phi: M \selfmap$ inducing $\Phi$.
 
 Need manifold assumption - counterexample, take $Z$ to be two discs glued at two distinct points. Then $\exists \theset{\text{loops in } Z}\selfmap$ bijective, preserves disjointness, but is not induced by any homeomorphism.
-Take any homeomorphism of a disc $\phi$ such that $\phi^2 = \id$ that exchanges the glued points. Then do the identity on the other disc. 
+Take any homeomorphism of a disc $\phi$ such that $\phi^2 = \id$ that exchanges the glued points. Then do the identity on the other disc.
 
 Turns out this counterexample doesn't quite work! Take a figure 8 at a glue point extending into both discs, the homeomorphism will separate it into two loops.
 
 ## Theorem 2: A Homeomorphism takes loops to loops
 
-Suppose you have a bijective set map $\Phi: \theset{\text{loops in } \RR^3}$ that preserves "linking", i.e. 
+Suppose you have a bijective set map $\Phi: \theset{\text{loops in } \RR^3}$ that preserves "linking", i.e.
 $$
 L(\gamma_1, \gamma_2) \neq 0 \implies L(\Phi(\gamma_1), \Phi(\gamma_2)) \neq 0
 $$
@@ -347,7 +347,7 @@ $$
 \Aut(\Gamma_n) \cong \mathrm{Homeo}(M)
 $$
 
-### Step 1 
+### Step 1
 
 Start looking at separation and nesting properties. $X \subset M$ is separating $\iff \mathrm{Link}_{\Gamma_n}(X)$ is a join, where the Link of $X$ is the set of all vertices that are disjoint from $X$.
 
@@ -355,11 +355,11 @@ Start looking at separation and nesting properties. $X \subset M$ is separating 
 
 > Note: technique is listing topological properties that are true, then creating a dictionary  from topological properties of the manifold into properties of your graph. Similar to when working on [Tit's Buildings](https://en.wikipedia.org/wiki/Building_(mathematics)#Bruhat-Tits_trees_with_complex_multiplication).
 
-### Step 2 
+### Step 2
 
 $\Phi$ preserves "betweenness", i.e. $Y$ is between $X$ and $Z$ iff for any sphere intersecting both $X$ and $Z$ also intersects $Y$. (These preserved topological properties will be preserved under automorphisms of the graph!)
 
-### Step 3 
+### Step 3
 
 Look at embedded isotopies, $H: I \to S$ (note that we can use the compact-open on $S$) such that each $H_t \definedas H(t)$ is embedded and $\union_{t\in I} H_t(S^{n-1})$ is an embedded $S^{n-1} \cross I$ (i.e. embedded families of spheres with a preferred foliation by codimension 1 spheres.)
 
