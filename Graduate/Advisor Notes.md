@@ -239,7 +239,7 @@ $$
 
 Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
 
-Theorem (Harrer, 1980s): $H^2(\mathrm{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional! So all of these classes are scalar multiples of eachother - and in fact, sometimes not rational multiples, so sometimes you get interesting number-theoretic quantities like $\frac {\pi^2} 6$.
+Theorem (Harrer, 1980s): $H^2(\mathrm{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional! So all of these classes are scalar multiples of each other - and in fact, sometimes not rational multiples, so sometimes you get interesting number-theoretic quantities like $\frac {\pi^2} 6$.
 
 See book with Dan Margalit - all of this lives in the group $\mathrm{Mod} \Sigma_g \injects \mathrm{Homeo}^+(S^1)$
 
