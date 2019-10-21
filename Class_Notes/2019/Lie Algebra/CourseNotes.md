@@ -2,7 +2,7 @@
 title: "Lie Algebras"
 ---
 
-# Lecture 1
+# Monday August 12
 
 > The material for this class will roughly come from Humphrey, Chapters 1 to 5. There is also a useful appendix which has been uploaded to the ELC system online.
 
@@ -278,7 +278,7 @@ Use the relation $MA =  A^{tM}$ to reduce restrictions on the blocks.
 These are *all* of the isomorphisms between any of these types of algebras, in any dimension.
 \wrapenv{\End{theorem}}
 
-# Lecture 2
+# Wednesday August 14
 
 Recall from last time that a Lie Algebra is a vector space with a bilinear bracket, which importantly satisfies the Jacobi identity:
 \[
@@ -426,7 +426,7 @@ which implies that $I = \liesl(2, F)$ and thus it is simple.
 
 > Note that there is a homework coming due next Monday, about 4 questions.
 
-# Lecture 3
+# Friday August 16
 
 Last time, we looked at ideals such as $0, \lieg, Z(\lieg),$ and $[\lieg, \lieg]$.
 
@@ -523,7 +523,7 @@ Then define the Weyl group $W = \generators{s}$.
 Exercise:
 Check that $s(e) = -f, s(f) = -e, s(h) = -h$, and so the order of $s$ is 2 and $W = \theset{1, s}$.
 
-# Lecture 4
+# Monday August 19
 
 ## Solvability
 
@@ -624,8 +624,7 @@ But then $A \oplus F_y$ is a larger subalgebra than $A$, which was maximal, so i
 
 Proof to be continued on Friday!
 
-# Lecture 5
-
+# Wednesday August 21
 
 Last time: we had a theorem that said that if $\lieg \in \liegl(V)$ and every $x\in\lieg$ is nilpotent, then there exists a nonzero $v \in V$ such that $\lieg v = 0$.
 
@@ -677,7 +676,7 @@ Claim 2: $y(V_\lambda) \subseteq V_\lambda$, or $\restrictionof{y}{V_\lambda}\in
 Thus $F(\restrictionof{y}{V_\lambda}) \leq \liegl(V_\lambda)$ is a Lie algebra of dimension 1, and thus solvable. By the inductive hypothesis, we can find a $v\in V_\lambda$ and some $\mu \in F$ such that $y(v) = \mu v$. An arbitrary element $x\in\lieg$ can be written as $x = a + cy$ for some $a\in A, c\in F$ and it acts by $x(v) = a(v) + cy(v) = \lambda(a) v + c\mu v = (\lambda(a) + c)v \in V_\lambda$.
 
 
-# Lecture 6
+# Friday August 23
 
 Chapter 3: Theorems of Lie and Cartan
 
@@ -814,7 +813,7 @@ x_n = \left(\begin{array}{ll}{0} & {1} \\ {0} & {0}\end{array}\right)
 Note that $x_s x_n = x_n = x_n x_s$, $x_s = 2x - x^2$, and $x_n = x^2 - x$.
 We thus have $p(t) = 2t-t^2$ and $q(t) = t^2 - t$.
 
-# Lecture n+2
+# Monday August 26
 
 Definition (Jordan Decomposition)
 
@@ -915,11 +914,11 @@ So $[A_x, A_y]  \subseteq A_{\lambda + \mu}$ for all $x, y \in A$. But then
 
 and so $\delta_s \in \mathrm{Der}(A)$, and $\delta_n = \delta - \delta_s \in \mathrm{Der}(A)$ as well.
 
-# Lecture n+3
+# Wednesday August 28
 
 Todo
 
-# Lecture n+4
+# Friday August 30
 
 Review of bilinear forms: let $V = \FF^n$.
 
@@ -1039,7 +1038,7 @@ Note that $[\mathrm{rad}\lieg, \lieg] \subseteq \bigoplus [\mathrm{rad} \lieg, I
 
 Next time -- starting the representation theory with $\liesl(2, \FF)$.
 
-# Lecture 10?
+# Monday September 2
 
 Recall the killing form:
 \[
@@ -1134,7 +1133,7 @@ We can use this to define an abstract Jordan decomposition by pulling back decom
 
 ![Image](figures/2019-09-09-10:01.png)
 
-# Wednesday September 4th
+# Wednesday September 4
 
 ## 4.3: Cartan's Criterion
 
@@ -1248,16 +1247,16 @@ and thus $k$ has the matrix
 
 where $k_{ij} = \kappa(x_i, x_j)$ where $x_i$ is a basis of $L$.
 
-# Wednesday September 11th
+# Wednesday September 11
 
 Theorem:
 If $L$ is semisimple and $x\in L$, there exists a unique $x_s, x_n$ in $L$ such that $x = x_s + x_n$, $[x_n, x_s] = 0$, $\ad x_s$ is semisimple, and $\ad x_n$ is nilpotent.
 
-# Friday September 13th
+# Friday September 13
 
 Todo
 
-# Monday September 16th
+# Monday September 16
 
 Let $S = \exp(\ad e) \circ \exp(\ad -f) \circ \exp(\ad ei)$, which has the following matrix:
 
@@ -1388,7 +1387,7 @@ Then $h \actson V$ semisimply, or $V = \bigoplus_{\lambda \in \CC} V_\lambda$, w
 
 ![Image](figures/2019-09-16-10:05.png)
 
-# Wednesday Lecture
+# Wednesday September 18
 
 Last time:
 The abstract Jordan Decomposition coincides with the actual Jordan Decomposition.
@@ -1404,7 +1403,8 @@ Therefore $x_s \actson V$ semisimply.
 The example we saw last time was $\lieg = \liesl(2, \CC)$, with a matrix $h = [1, 0; 0, -1]$ and $V = \bigoplus_{\lambda \in \CC} V_ \lambda$.
 
 ## Finite Dimensional Representations of $\liesl(2, \CC)$
-## Weights and Maximal Vectors
+
+### Weights and Maximal Vectors
 
 Definition:
 If $V_\lambda \neq 0$, then $V_\lambda$ is a *weight space* of $V$ and $\lambda \in \CC$ is a *weight* of $h$ in $V$. We then define $W_t(V) = \theset{\text{weights in } V}$.
@@ -1533,7 +1533,7 @@ $$
 
 Then $s(v_i) = -v_{m-i}$.
 
-# Friday Lecture
+# Friday September 20
 
 Last time: 
 Construction of simple finite-dimensional $\liesl(2, \CC)$ module.
@@ -1648,7 +1648,7 @@ Note that we have $\lieg = \lieg_0 \oplus (\bigoplus_{\alpha\neq 0} \lieg_\alpha
 This implies that $\kappa(h, y) = 0 \forall y\in \lieg$.
 But then $h = 0$ because $\kappa$ is nondegenerate and $\lieg$ is semisimple.
 
-# Monday Lecture
+# Monday September 23
 
 Last time:
 $\mathfrak{h}$ is a *toral* subalgebra if it contains only semisimple elements, and implies that there is a *root space decomposition*
@@ -1783,7 +1783,7 @@ d. $[\lieg_\alpha, \lieg_{-\alpha}] = \CC t_\alpha$ (let the nonzero scalar be $
 e. $\alpha(t_\alpha) = \kappa(t_\alpha, t_\alpha) \neq 0$.
 f. For any nonzero $e_\alpha \in \lieg_\alpha$, there exists a unique $f_\alpha \in \lieg_{-\alpha}$ such that $[e_\alpha, f_\alpha] = h_\alpha \coloneqq \frac{\lambda}{\kappa(t_\alpha, t_\alpha)} t_\alpha$. Moreover, $\generators{e_\alpha, f_\alpha, h_\alpha} = \liesl(2, \CC)$.
 
-# Lecture Wednesday
+# Wednesday September 25
 
 Today: 
 Properties of the root space when the toral subalgebra is maximal.
@@ -1932,7 +1932,7 @@ But this forces $M = \lieh \oplus \liesl(2, \alpha)$.
 
 > Motto: reduce the complexity by using the $\liesl(2)$ module structure and its representation theory!
 
-# Lecture (Friday)
+# Friday September 27
 
 Last time, we saw $\Phi \subseteq \lieh^* = \theset{\alpha: \lieh \to \CC}$.
 
@@ -2072,7 +2072,7 @@ We computed $(\beta, \alpha\dual) = p-q$.
 Then $-p \leq -(\beta, \alpha\dual) = q-p \leq q$.
 So this must be something on the root stream.
 
-# Monday September 23th
+# Monday September 30
 
 Last time: 
 Let $\lieg$ be finite dimensional and $\lieh$ a maximal toral subalgebra.
@@ -2524,7 +2524,7 @@ Examples of Dynkin diagrams:
 <!--![Image](figures/2019-10-09-21:03.png)-->
 
 
-# October 11
+# Friday October 11
 
 Recall from last time the Dynkin diagrams.
 If $\Phi$ is irreducible, then its diagram is one of the following:
@@ -2567,4 +2567,334 @@ But then there is a vertex of degree 4, contracting $\deg V_i \leq 3$ for all $i
 Now we'll show that $\Gamma$ has no branching point, i.e. a vertex of degree exactly 3.
 If this occurs, then a double edge is connected to such a vertex by a path.
 Contracting this path yields a vertex of degree 4, again a contradiction.
+
+By these two statements, $\Gamma$ has the general form:
+\[
+\begin{align*}
+\Gamma = v_1 \to \circ \to \cdots \to v_p \to\to w_q \to \circ \to \cdots \to w_1
+.\end{align*}
+\]
+
+Let $v = \sum i v_i$ and $w = \sum i w_i$, then $\inner{v}{v} = \frac{1}{2} p(p+1)$, and $\inner{w}{w} = \frac 1 2 q(q+1)$.
+Note that $\inner{v_i}{w_j} = -1/\sqrt 2$ if $i=p$ and $j=q$, and 0 otherwise.
+
+Thus $\inner{v}{w} = \cdots = \frac 1 2 p^2q^2$.
+By Cauchy-Schwarz, this is strictly less than $\inner{v}{v} \inner{w}{w} = \frac 1 4 p(p+1)q(q+1)$.
+We then obtain $(p-1)(q-1) < 2$.
+Supposing wlog that $p \geq q$, we have either $p=q=2$, in which case we get $\circ \to \circ \to\to \circ \to \circ$.
+Otherwise $q=1$, and we get $\circ \to \cdots \to \circ \to\to \circ$.
+
+Case 3: $\Gamma$ has only single edges.
+We want to show $\Gamma$ has only one branching point, i.e. a vertex of degree 3.
+If it has 2, we can contract the intermediate path to get a vertex of degree 4.
+So we have the following situation:
+
+<!--![Image](figures/2019-10-11-09:41.png)-->
+
+Define $x = \sum i x_i, y = \sum i y_i, w = \sum i w_i$, and $\hat w, \hat x, \hat y$ to be their normalization.
+Then $B = \theset{b_i} \coloneqq \theset{\hat w, \hat y, \hat y, z}$ is orthonormal and linearly independent, so we can apply Gram-Schmidt.
+This yields a $z' \neq 0$ such that 
+$$
+z = \sum \inner{z}{\hat b_i} \hat b_i
+$$
+
+In particular, $\inner{z}{z'}z' \neq 0 z'$, otherwise $z$ is a linear combination of the $x_i, y_i, w_i$.
+Thus $\inner{z}{\hat w}^2 + \inner{z}{\hat x}^2 + \inner{z}{\hat y}^2 > 1$.
+We can compute $\inner{z}{\hat w} = \frac{-q/2}{\sqrt{\frac 1 2 q(q+1)}}$, and so $\inner{z}{\hat w}^2 = \frac q {2(q+1)}$.
+
+From this, we can obtain $\frac 1 {q+1} + \frac 1 {r+1} + \frac 1 {p+1} > 1$.
+We can assume $p \geq q \geq r \geq 1$, since these correspond to the lengths of paths in the above image.
+This allows us to do some case-by-case analysis.
+
+Using this, we find $\frac 3 {r+1} > 1$, and so $r=1$ must hold.
+Similarly, $\frac 2 {q+1} > \frac 1 2$, which forces $q = \in \theset{1, 2}$.
+
+Supposing $r=q=1$, then we get type $D_\ell$ because $p$ can be anything.
+Supposing otherwise that $r=1, q=2, p \in \theset{2,3,4}$, we get type $E$.
+
+# Monday October 14
+
+Last time:
+
+Theorem:
+If $\Phi$ is irreducible, then the Dynkin diagram is given by $A-G$.
+
+Definition:
+A subset $A = \theset{v_1, \cdots, v_n}$ is *admissible* if
+
+1. $A$ is a linearly independent set,
+2. $\inner{v_i}{v_i} = 1$ for all $i$, and $\inner{v_i}{v_j} \leq 0$ if $n\neq 0$.
+3. $4\inner{v_i}{v_j}^2 \in \theset{0,1,2,3}$ if $i\neq j$. 
+
+Thus the graph $\Gamma_A = (V_A, E_A)$ is given by $V_A = A$ and $E_A = \theset{v_i \mapsvia{4\inner{v_i}{v_j}^2} v_j \mid i\neq j}$.
+
+
+Lemma:
+
+a. If $A$ is admissible, then the number of edges such that $4\inner{v_i}{v_j} \neq 0$ is at most $\abs A - 1$.
+b. For every $i$, we have $\deg v_i \leq 3$.
+c. If $\Gamma_A$ contains a straight path of length $t$, then the graph $\Gamma'$ obtained by contracting this path is also admissible.
+
+Let $p$ be the point obtained by contracting such a path.
+
+<!--![Image](figures/2019-10-14-09:15.png)-->
+
+Proof of (a):
+If $\theset{p_1, \cdots, p_t}$ are linearly independent, then $p\neq 0$.
+Thus by positive-definiteness, we have
+$0 <_{pd} \inner{p}{p} =_{\# 2} t + \sum_{i < j} 2\inner{p_i}{p_j}$.
+Then $t > \sum_{i < j} (-2) \inner{p_i}{p_j} = \sum_{i < j} \sqrt{4\inner{p_i}{p_j}^2}$,
+where the quantity in the square root is the number of edges, which is thus greater than or equal to the number of pairs connected.
+
+Proof of (b):
+Fix $i$.
+Let $u_1 \cdots u_k$ be the vertices in $A$ that are connected to $v_i$ by a single edge.
+Then by (a), we have $\inner{u_i}{u_j} = 0$ for all $i\neq j$.
+
+Then the set $\theset{u_1, \cdots, u_k}$ is an orthonormal basis for their span.
+Applying Gram-Schmidt, we can write each $v_i = \sum_{j=0}^k \inner{v_i}{u_j} u_j$, where we pick $u_0$ such that the new set $\theset{u_0} \union \theset{u_1, \cdots, u_k}$.
+Then $\inner{v_i}{u_0} \neq 0$ for all $i$; otherwise we would have $\theset{u_1, \cdots, u_k, v_i}$ would be linearly dependent, since $v_i = \sum c_i u_i$ from above, which contradicts our initial axiom/assumption.
+Then $1 = \inner{v_i}{v_i}$ by A2, which equals $\sum_{j=0}^k \inner{v_i}{u_j}^2 = \inner{v_i}{u_0}^2 + \sum_{j=1}^k \inner{v_i}{u_j}^2$, where the first term is strictly positive.
+
+But then $1 > \sum_{j=1}^k \inner{v_i}{v_j}^2 \geq \frac k 4$ by A3, which then forces $k = \deg v_i \leq 3$.
+
+Proof of (c):
+The conditions of A1 are satisfied.
+For A2, we have
+$$
+\inner{p_i}{p_j} = \begin{cases} -\frac 1 2 & \abs{i-j} = 1 \\ 0 & \abs{i-j} > 1 \\ 1 & i=j.\end{cases}
+$$
+
+We then have $\inner{p}{p} = t + 2 \sum{i<j} \inner{p_i}{p_j} = t + 2\sum_{i=1}^{t-1} \inner {p_i} {p_{i+1}} = 1$.
+Thus $\inner {p} {v_i} = \sum_{j=1}^t \inner {p_j} {v_i} \leq 0$.
+
+For A3, fix $v_i \in A'$.
+Then $v_i$ is connected (by a single edge) to at most one point $p_j$, otherwise there would be a cycle.
+Thus 
+$$
+\inner {v_i} {p} = 
+\begin{cases} 
+\inner {v_i} {p_j} & \text{if $v_i$ is connected to $p_j$} \\ 
+0 & \text{else}.
+\end{cases}
+$$
+
+We thus have $4{\inner {v_i} {p}}^2 = 4{\inner {v_i} {p_j}} \in \theset{0,1,2,3} \mathrm{1}{v_i \sim p_j}$.
+
+## Construction of Root Systems and Automorphisms
+
+We'll start with the construction of types $A-G$.
+
+**Theorem:**
+For Dynkin diagrams of type $A-G$, there exists an irreducible root system having the given diagram.
+
+Proof:
+By explicit construction.
+Fix an orthonormal basis $\theset{\varepsilon_i}$.
+
+**Type $A_\ell$:**
+Let
+$$
+\Phi = \theset{\varepsilon_i - \varepsilon_j \mid 1 \leq i\neq j \leq \ell + 1}
+$$
+
+Then $\abs \Phi = \ell^2 + \ell$, and $\Pi = \theset{\alpha_i = \varepsilon_i - \varepsilon_{i+1} \mid 1 \leq i \leq \ell}$.
+We then find that $\dim \lieg = \ell^2 + 2\ell$.
+
+> Note that we don't know anything about $\lieg$ yet, but already know its dimension.
+
+Example: $A_2$.
+We have $\Pi = \theset{\alpha_1 = \varepsilon_1 - \varepsilon_2, \alpha_2 = \varepsilon_3 - \varepsilon_2}$.
+Then $A = (a_{ij})$ with $a_{ij} = \inner {a_i} {a_j\dual}$,
+and $\alpha_1\dual = \frac {2\alpha_1}{\inner {\alpha_1} {\alpha_1}} = \frac{2 (\varepsilon_1 - \varepsilon_2)}{\inner{\varepsilon_1 -\varepsilon_2}{\varepsilon_1 - \varepsilon_2}} = \varepsilon_1 - \varepsilon_2 = \alpha_1$.
+Doing the computations, it turns out that $\inner {\alpha_1} {\alpha_2\dual} = -1$, $\inner{\alpha_2} {\alpha_1\dual} = -1$, and $\inner {\alpha_i} {\alpha_i\dual} = 2$.
+
+Thus $A = [2, -1; -1, 2]$, which has Dynkin diagram given by:
+
+<!--![Image](figures/2019-10-14-09:44.png)-->
+
+**Type $B_\ell$:**
+Recall that these have one "short root":
+
+<!--![Image](figures/2019-10-14-09:45.png)-->
+
+Then $\Phi = \theset{\pm \varepsilon_j, \pm \varepsilon_j \mid 1 \leq i\neq j \leq \ell} \union \theset{\pm \varepsilon_i \mid 1 \leq i \leq \ell}$,
+and we have $\Pi = \theset{\alpha_i = \varepsilon_i - \varepsilon_{i-1} \mid 1 \leq i \leq \ell-1} \union \theset{\alpha_\ell \coloneqq \varepsilon_\ell}$.
+
+After carrying out the computation, we have the following Cartan matrix:
+
+<!--![Image](figures/2019-10-14-09:49.png)-->
+
+And $\dim \lieg = 2\ell^2 + \ell$, since $\abs \Phi = 2\ell(\ell-1) + 2\ell = 2\ell^2$.
+
+**Type $D_\ell$:**
+
+<!--![Image](figures/2019-10-14-09:51.png)-->
+
+We obtain $\Phi = \theset{\alpha_i = \varepsilon_i - \varepsilon_{i+1} \mid 1 \leq i \leq \ell-1} \union \theset{\alpha_\ell \coloneqq \varepsilon_{\ell-1} + \varepsilon_\ell}$.
+We then find $\inner {\alpha_{\ell-1}} {\alpha_\ell\dual} = 0$ and $\inner {\alpha_{\ell-2}} {\alpha_\ell\dual} = -1$.
+
+**Type $E_\ell$**:
+We have $\Pi(E_\ell) = \Pi(D_{\ell - 1}) \union \theset{\alpha_\ell \coloneqq - \frac 1 2 \sum_{i=1}^8 \varepsilon_i}$.
+
+This yields $\abs \Phi = 72, 126, 240$ and $\dim \lieg = 78, 133, 248$, corresponding to $\ell = 6,7,8$.
+
+More results on exceptional Lie Algebras:
+
+<!--![Image](figures/2019-10-14-09:59.png)-->
+
+
+# Wednesday October 16
+
+Todo
+
+# Friday October 18
+
+Todo
+
+# Monday October 21
+
+## Chapter 5: Existence Theorem
+
+### Universal Enveloping Algebra (UAE)
+
+Some applications/motivations for UAEs:
+
+1. Groups $G$ are to group algebras $F[G]$ as Lie algebras $\lieg$ are to UAE $U(\lieg)$.
+  Any $\lieg\dash$module then becomes a module over a ring, so the general theory applies.
+2. PBW theorem: this yields a concrete $F\dash$basis of $U(\lieg)$. 
+  There is a triangular decomposition $U(\lieg) = U(h) \tensor U(f) \tensor U(n)$.
+  This allows constructing the Vermo module (and hence irreducible modules) for $\lieg$,
+  allowing for a description of BGG Category $\mathcal O$.
+3. Harish-Chandra theorem: $Z)U(\lieg)) = S(\lieg)^W$.
+  This characterizes central characters $\chi: Z(U(\lieg)) \to F$,
+  which further allows describing the blocks of $\mathcal O$, i.e. when two irreducible modules have non-trivial extensions.
+4. $U(\lieg)$ deforms to a quantum group $U_q(\lieg)$.
+
+### Tensor and Symmetric Algebras
+
+Definition:
+For $V$ a f.d. vector space, the *tensor algebra* over $V$ is given by $T(V) = \bigoplus_{n\in\NN} T^n(V)$ where
+$T^n(V) = \tensor_{i=1}^n V$ with an associative multiplication $T^a \cross T^b \to T^{a+b}$ given by $(\tensor_{i=1}^a v_i, \tensor_{i=1}^b w_i) \mapsto \tensor_{i=1}^a v_i \tensor \tensor_{i=1}^b w_i$.
+
+The tensor algebra satisfies a universal property: given any $F\dash$linear map $\phi: V \to A$. (See phone image)
+
+Definition:
+The symmetric algebra on $V$ is given by $S(V) = T(V) / I$ where $I = \generators{x\tensor y - y\tensor x} \normal T(\lieg)$.
+
+Some facts:
+
+a. There is a natural grading $S(V) = \bigoplus_{n\in\NN} S^n(V)$ where $S^0(V) = F, S^1(V) = V, S^n(V) = T^n(V) / (I \intersect T^n V)$,
+b. If $\theset{x_i}^n$ is a basis of $V$, then $S(V) \cong F[x_1, \cdots, x_n]$.
+
+### Construction of UEA
+
+Definition:
+For $\lieg$ a lie algebra, define $U(\lieg) = T(\lieg)/J$ where $J = \generators{x\tensor y - y\tensor x - [x,y]} \normal T(\lieg)$.
+
+Thus we have the following type of equation that holds in $U(\lieg)$:
+
+\[
+\begin{align*}
+v_1 \tensor \cdots \tensor v_a \tensor (x\tensor y) \tensor w_1 \tensor \cdots \tensor w_b = \\
+v_1 \tensor \cdots \tensor v_a \tensor (y\tensor x) \tensor w_1 \tensor \cdots \tensor w_b +
+v_1 \tensor \cdots \tensor v_a \tensor ([x,y]) \tensor w_1 \tensor \cdots \tensor w_b
+.\end{align*}
+\]
+
+Proposition:
+$U(\lieg)$ has a universal property: given a lie algebra hom $\theta: \lieg \to \mathcal A$ where $\mathcal A$ is any unital associative $F\dash$algebra with a lie bracket,
+there exists a unique $\psi:U(\lieg) \to \mathcal A$ making the following diagram commute:
+
+\[
+\begin{center}
+\begin{tikzcd}
+\lieg \arrow[rrdd, "\theta"] \arrow[rr, "\iota"] &  & U(\lieg) \arrow[dd, "\exists \psi", dotted] \\
+                                                 &  &                                             \\
+                                                 &  & \mathcal A                                 
+\end{tikzcd}
+\end{center}
+\]
+
+
+where $\iota: \lieg \injects T(\lieg) \surjects U(\lieg)$ is given by  $x\mapsto x + J$.
+
+The upshot:
+There is a 1 to 1 correspondence 
+\[
+\begin{align*}
+\left\{ \parbox[c]{1.1in}{\centering
+  Lie algebra representations $\lieg \to \liegl(V)$
+}\right\}
+&\rightarrow
+\left\{ \parbox[c]{1.1in}{\centering
+  Algebras from $U(\lieg) \to \mathrm{End}(V)$
+}\right\} \\
+\theta &\mapsto \psi \\
+\theta = \psi\circ\iota &\mapsfrom \psi
+\end{align*}
+\]
+
+Proof (existence):
+
+$\theta: \lieg \to \mathcal A$ extends to an algebra homomorphism $\tilde\theta: T(\lieg) \to \mathcal A$ given by $\tensor_{i=1}^n x_i \mapsto \prod \theta(x_i)$.
+Note that $\tilde\theta(x\tensor y - y\tensor x - [x,y]) = \theta(x)\theta(y) - \theta(y)\theta(x) - \theta([x,y]) = 0$,
+and thus $J \normal \ker \tilde\theta$ and $\phi: T(\lieg)/J \to \mathcal A$ is well-defined.
+
+Uniqueness:
+Suppose that $\psi': U(\lieg) \to \mathcal A$ is another hom $\psi'$ such that the following diagram commutes:
+
+\[
+\begin{center}
+\begin{tikzcd}
+\lieg \arrow[rrdd, "\theta"] \arrow[rr, "\iota"] &  & U(\lieg) \arrow[dd, "\psi", bend left] \arrow[dd, "\psi'", bend right] \\
+                                                 &  &                                                                        \\
+                                                 &  & \mathcal A                                                            
+\end{tikzcd}
+\end{center}
+\]
+
+Since $T(\lieg)$ is generated by $T^1(\lieg)$, $U(\lieg)$ is generated by $\iota(\lieg) \in U(\lieg)$.
+Thus for all $x\in \lieg$, $\psi\circ \iota(x) = \theta(x) = \psi' \circ \iota(x)$ by the commuting of each triangle.
+We then have $\psi = \psi'$ on $\iota(\lieg)$, and hence on $U(\lieg)$.
+
+
+### PBW Theorem
+
+> PBW: Poincaré-Birkhoff-Witt
+
+Theorem:
+If $\lieg$ has a basis $\theset{x_i}_{i\in I}$ where $\leq$ is a total order on $I$, then let $y_i \coloneqq \iota(x_i) \in U(\lieg)$.
+Then $U(\lieg)$ has an $F\dash$basis called a *PBW basis* which is given by 
+\[
+\begin{align*}
+\theset{ y_{i_1}^{r_1} \cdots y_{i_n}^{r_n} \mid n\in \NN, r_i \in \NN, i_1 \leq \cdots \leq i_n}
+.\end{align*}
+\]
+
+We refer to each term appearing as a *PBW monomial*.
+
+Examples:
+
+Type A, $\lieg = \liesl(2, F) = \generators{f, h, e}$.
+Pick an order $x_1 = f, x_2 = h, x_3 = e$, so $f < h < e$.
+
+Then $U(\lieg)$ has a basis
+\[
+\begin{align*}
+B = \theset{1} \union 
+\theset{f^{r^1}} \theset{f^{r^1} h^{r_2}} \union \theset{f^{r_1} h^{r_2} e^{r_3}} \union
+\theset{h^{r_1}} \union \theset{f^{r_1}e^{r_2}} \union
+\theset{e^{r_1}} \union \theset{h^{r_1} e^{r_2}}
+.\end{align*}
+\]
+
+i.e. $B = \theset{f^a h^b e^c \suchthat a,b,c \in \NN}$.
+
+If you pick a different order, say $f < e < h$, then we obtain
+$B = \theset{f^a e^b h^c \suchthat a,b,c \in \NN}$.
+
+# Wednesday October 23
+
+Upcoming
 
