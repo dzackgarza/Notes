@@ -2081,5 +2081,10 @@ b. If $f,g \in L^1$ and $f,g$ are both bounded, then $\lim_{\abs{x}\to\infty} f\
 
 Note that (b) follows if $f\star g$ were uniformly continuous *and* integrable, but we don't necessarily need integrability for this result.
 
+> Note that it is possible to pointwise multiply 2 integrable functions and get something not integrable -- consider $f^2$ where $f(x) = \frac{1}{\sqrt x} \chi_{[0,1]}$.
+
 **Theorem 2:**
+If $f,g \in L^1$, then $\norm{f\star g}_1 \leq \norm{f}_1 \norm{g}_1$, and equality is attained if $f, g \geq 0$.
+(i.e. \int \abs{f\star g} \leq \int\abs{f} \int\abs{g}$.)
+
 
