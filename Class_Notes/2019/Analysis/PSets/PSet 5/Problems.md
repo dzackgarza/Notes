@@ -78,7 +78,8 @@ In particular, $\abs{F}$ is measurable and non-negative, and so we can apply Ton
 This allows us to write 
 \[
 \begin{align*}
-\int_{\RR^2} \abs{F} = \int_0^1 \int_0^t \abs{\frac{f(t)}{t}} ~dx~dt \\
+\int_{\RR^2} \abs{F} 
+&= \int_0^1 \int_0^t \abs{\frac{f(t)}{t}} ~dx~dt \\
 &=
 \int_0^1 \int_0^t {\frac{\abs{f(t)}}{t}} ~dx~dt \\
 .\end{align*}
