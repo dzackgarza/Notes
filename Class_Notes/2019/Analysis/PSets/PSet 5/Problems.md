@@ -33,6 +33,7 @@ $$
 S \coloneqq \sup_B \sum_{(k, j) \in B} a_{jk} \leq
 T.
 $$
+(Use epsilon-delta argument)
 
 An identical argument shows that $T \leq S$, yielding the desired equality. $\qed$
 
