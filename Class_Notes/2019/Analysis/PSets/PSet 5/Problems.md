@@ -52,7 +52,9 @@ Note that if we can switch the order of integration, we would have
 \[
 \begin{align*}
 \int_0^1 \int_x^1 \frac{f(t)}{t} ~dt~dx 
-=_?
-\int_0^1 \int_0^t \frac{f(t)}{t} ~dx~dt
+&=_?
+\int_0^1 \int_0^t \frac{f(t)}{t} ~dx~dt \\
+&= \int_0^1 \frac{f(t)}{t} \int_0^t ~dx ~dt \\
+&= \int_0^1 \frac{f(t)}{t} (t - 0 ~dt)
 .\end{align*}
 \]
