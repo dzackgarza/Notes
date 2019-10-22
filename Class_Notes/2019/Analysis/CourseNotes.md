@@ -2085,6 +2085,6 @@ Note that (b) follows if $f\star g$ were uniformly continuous *and* integrable, 
 
 **Theorem 2:**
 If $f,g \in L^1$, then $\norm{f\star g}_1 \leq \norm{f}_1 \norm{g}_1$, and equality is attained if $f, g \geq 0$.
-(i.e. \int \abs{f\star g} \leq \int\abs{f} \int\abs{g}$.)
+(i.e. $\int \abs{f\star g} \leq \int\abs{f} \int\abs{g}$.)
 
 
