@@ -2069,5 +2069,7 @@ f\star g (x) = \int_{\RR^n} f(x-y) g(y) ~dy
 $$
 for every $x$ for which this integral makes sense.
 
+Some remarks:
 
-
+- There are conditions on $f,g$ which can guarantee that $f\star g$ exists.
+- If for some $x$, the function $y\mapsto f(x-y)g(y)$ is measurable, then $y\mapsto f(y)g(x-y)$ is also integrable (note that this is just a translation followed by a reflection, which is still integrable since this operation is in $\GL(n, \RR)$) and $f\star g = g \star f$.
