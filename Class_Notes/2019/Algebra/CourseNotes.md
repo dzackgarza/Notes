@@ -2664,3 +2664,7 @@ We can consider images, kernels, and inverse images, so we can formulate homomor
 Theorem:
 
 1. If $M \mapsvia{f} N$ in $R\dash$mod, then $M / \ker(f) \cong \im(f)$.
+2. Let $M, N \leq L$, then $M+N \leq L$ as well. Thus $M/M\intersect N \cong (M+N)/N$
+3. If $M\leq M\leq L$, then $M/N \cong (L/M) / (L/N)$
+
+> Note that we can always quotient, since there's an underlying abelian group, and thus the "normality"/ideal condition is always satisfied for submodules. Just consider $M/N  = \theset{m + N \suchthat m\in M}$; then $R\actson (M/N)$ in a well-defined way. 
