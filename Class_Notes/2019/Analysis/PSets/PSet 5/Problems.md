@@ -103,6 +103,6 @@ $$
 and if an interchange of integrals is justified, this yields
 \[
 \begin{align*}
-\int_{\RR^2} F =_? \int_0^infty \int_y^\infty \frac{x^{1/3}}{(1+xy)^{3/2}}
+\int_{\RR^2} F =_? \int_0^\infty \int_y^\infty \frac{x^{1/3}}{(1+xy)^{3/2}}
 .\end{align*}
 \]
