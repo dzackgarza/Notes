@@ -76,6 +76,10 @@ This defines a measurable function on $\RR^2$, since characteristic functions ar
 
 In particular, $\abs{F}$ is measurable and non-negative, and so we can apply Tonelli to $\abs{F}$.
 This allows us to write 
-$$
-\int_{\RR^2} \abs{F} = \int_0^1 \int_0^t \abs{\frac{f(t)}{t}} ~dx~dt
-$$
+\[
+\begin{align*}
+\int_{\RR^2} \abs{F} = \int_0^1 \int_0^t \abs{\frac{f(t)}{t}} ~dx~dt \\
+&=
+\int_0^1 \int_0^t {\frac{\abs{f(t)}}{t}} ~dx~dt \\
+.\end{align*}
+\]
