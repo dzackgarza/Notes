@@ -2096,4 +2096,17 @@ If $f\in L^1$ and *$g$ is differentiable* with $g, \dd{g}{x_1}, \cdots, \dd{g}{x
 Corollary:
 If $f\in L^1$ and $g\in C^\infty_c \implies f\star g \in C^\infty$ and $\lim_{\abs x \to \infty} f\star g(x) = 0$. Defining $C_0$ as the functions that vanish at infinity, we have $f\star g \in C_0^\infty$.
 
-> Note that we don't necessarily obtain compact support after this convolution.
+> Note that we don't necessarily obtain compact support after this convolution. See the following picture, which looks similar for any fixed $x$ -- particularly any large $x$.
+
+![Image](figures/2019-10-22-11:55.png)
+
+Proof of Theorem 1:
+\[
+\begin{align*}
+\abs{\int f(x-y)g(y) ~dy} 
+&\leq \int \abs{f(x-y)} \abs{g(y)} ~dy \\
+&\leq M \int \abs{f(x-y)} ~dy \\
+&\leq M \norm{f}_1
+.\end{align*}
+\]
+
