@@ -2049,3 +2049,7 @@ But then $f\circ T$ is measurable.
 
 > Note that this kind of thing usually works -- just establish something Borel sets, then use this characterization to extend it to Lebesgue.
 
+# Tuesday October 22
+
+## Convolution
+
