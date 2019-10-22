@@ -2078,3 +2078,8 @@ Some remarks:
 
 a. If $f\in L^1$ and $g$ is bounded, then $f\star g$ is bounded *and* uniformly continuous.
 b. If $f,g \in L^1$ and $f,g$ are both bounded, then $\lim_{\abs{x}\to\infty} f\star g(x) = 0$.
+
+Note that (b) follows if $f\star g$ were uniformly continuous *and* integrable, but we don't necessarily need integrability for this result.
+
+**Theorem 2:**
+
