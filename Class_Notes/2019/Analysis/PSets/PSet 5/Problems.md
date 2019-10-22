@@ -37,3 +37,13 @@ $$
 An identical argument shows that $T \leq S$, yielding the desired equality. $\qed$
 
 ## Problem 2
+
+We want to show the following equality:
+$$
+\int_0^1 g(x)~dx = \int_0^1 f(x)~dx
+.$$
+
+To that end, we can rewrite this using the integral definition of $g(x)$:
+$$
+\int_0^1 \int_x^1 \frac{f(t)}{t} ~dt~dx = \int_0^1 f(x)~dx
+$$
