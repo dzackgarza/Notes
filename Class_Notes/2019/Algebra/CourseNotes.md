@@ -2639,9 +2639,16 @@ We want to combine the following two notions:
 - Vector spaces
 
 Definition:
-Let $R$ be a ring and $M$ an abelian group. Then if there is a map $R\cross M \to M$, written $(r,r) \mapsto rm$, such that
+Let $R$ be a ring and $M$ an abelian group. Then if there is a map $R\cross M \to M$, written $(r,r) \mapsto rm$, such that $\forall s,r_1,r_2 \in R, m_1,m_2 \in M$, we have
 
 - $(sr_1 + r_2)(m_1 + m_2) = sr_1m_1 + sr_1m_2 + r_2m_1 + r_2 m_2$
 - If $1\in R$, then $1m = m$.
 
 > Think of $R$ like the group acting by scalar multiplication, and $M$ the set of vectors with vector addition.
+
+Examples:
+
+1. $R = k$ a field, then a $k\dash$module is a vector space.
+2. $R = G$ an abelian group, then $R$ is a $\ZZ\dash$module where $n\actson a = \sum^n a$. (In fact, these two notions are equivalent.)
+3. $I \normal R$, then $M \coloneqq R/I$ is an ring, which has an underlying abelian group, so $M$ is an $R\dash$module where $M\actson R = r\actson(s+I) = (rs) + I$.
+4. For $M$ an abelian group, $R \coloneqq \mathrm{End}(M) = \hom_{\text{ab}}(M, M)$ is a ring, and $M$ is a left $R\dash$module where $f\actson m = f(m)$.
