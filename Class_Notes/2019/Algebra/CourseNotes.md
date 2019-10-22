@@ -2659,4 +2659,8 @@ We also have notions of *monomorphisms*, which are injective maps, *epimorphisms
 
 We can define *submodules* $N\leq M$, which are subsets that are closed under all operations.
 
+We can consider images, kernels, and inverse images, so we can formulate homomorphism theorems analogous to what was done with groups/rings:
 
+Theorem:
+
+1. If $M \mapsvia{f} N$ in $R\dash$mod, then $M / \ker(f) \cong \im(f)$.
