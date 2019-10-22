@@ -2652,3 +2652,7 @@ Examples:
 2. $R = G$ an abelian group, then $R$ is a $\ZZ\dash$module where $n\actson a = \sum^n a$. (In fact, these two notions are equivalent.)
 3. $I \normal R$, then $M \coloneqq R/I$ is an ring, which has an underlying abelian group, so $M$ is an $R\dash$module where $M\actson R = r\actson(s+I) = (rs) + I$.
 4. For $M$ an abelian group, $R \coloneqq \mathrm{End}(M) = \hom_{\text{ab}}(M, M)$ is a ring, and $M$ is a left $R\dash$module given by $f\actson m = f(m)$.
+
+Let $M, N$ be left $R\dash$modules. Then $f: M \to N$ is an $R\dash$module homomorphism iff $f(rm_1 + m_2) = rf(m_1) + f(m_2)$.
+
+We also have notions of *monomorphisms*, which are injective maps, *epimorphisms*, which are surjections, and *isomorphisms*, which are both. 
