@@ -2603,7 +2603,7 @@ where the $s_i$ are the elementary symmetric polynomials in $y_i$.
 > No polynomial relations between the transcendental elements.
 
 Let $n\geq 5$ and suppose $y_i$ are transcendental over $\RR$ and linearly independent over $\QQ$.
-Then consider
+hen consider
 \[
 \begin{align*}
 s_1 = \sum y_i \\
@@ -2612,6 +2612,6 @@ s_2 = \sum_{i\leq j} y_i y_j \\
 s_n = \prod_i y_i
 .\end{align*}
 \]
-Then $\QQ(y_1, \cdots, y_n)/ \QQ(s_1, \cdots, s_n) = S_n$.
+Then $\QQ(y_1, \cdots, y_n)/ \QQ(s_1, \cdots, s_n) = S_n$ (by previous theorem).
 For $n\geq 5$, $A_n$ is not solvable, and thus neither is $S_n$.
 Thus the polynomial is not solvable by radicals.
