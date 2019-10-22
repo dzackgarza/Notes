@@ -88,3 +88,5 @@ This allows us to write
 \]
 
 where the last inequality holds because $f$ was assumed to be measurable. So $F$ is measurable on the product space $\RR^2$, and we can thus apply Tonelli to $F$ to justify the initial switch. $\qed$
+
+# Problem 3
