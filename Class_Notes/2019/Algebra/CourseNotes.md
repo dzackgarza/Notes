@@ -2596,3 +2596,6 @@ Let $L_2$ be the splitting field of $f_2$, then $L_2$ is a finite normal radical
 
 Then $\mathrm{Gal}(L_2/F) / \mathrm{Gal}(L_2/L_1) \cong \mathrm{Gal}(L_1/F)$, which is solvable, and the denominator in this quotient is solvable, so the total group must be solvable as well. $\qed$
 
+Theorem (Insolvability of the quintic):
+Let $y_1, \cdots, y_n$ be independent transcendental elements in $\RR$, then the polynomial $f(x) = \prod (x-y_i)$ is not solvable by radicals over $\QQ(s_1, \cdots, s_n)$
+where the $s_i$ are the elementary symmetric polynomials in $y_i$.
