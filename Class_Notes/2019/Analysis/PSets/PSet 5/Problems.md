@@ -90,3 +90,5 @@ This allows us to write
 where the last inequality holds because $f$ was assumed to be measurable. So $F$ is measurable on the product space $\RR^2$, and we can thus apply Tonelli to $F$ to justify the initial switch. $\qed$
 
 # Problem 3
+
+Let $A = \theset{0 \leq x \leq y} \subset \RR^2$, and define $F(x, y) = \frac{\chi_A(x, y) x^{1/3}}{(1+xy)^{3/2}}$.
