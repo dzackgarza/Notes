@@ -2109,4 +2109,15 @@ Proof of Theorem 1:
 &\leq M \norm{f}_1
 .\end{align*}
 \]
+and
 
+\[
+\begin{align*}
+\abs{f\star g(x+h) - f\star g}
+&= \abs{
+\int f(x+h-y)g(y)~dy - \int f(x-y)g(y)~dy
+} \\
+&\leq \int \abs{f(x+h-y) - f(x-y)} \abs{g(y)}~dy \\
+&\leq M \int \abs{f(z+h) - f(z)}~dz \t0 0
+.\end{align*}
+\]
