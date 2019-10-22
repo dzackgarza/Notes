@@ -66,6 +66,6 @@ To this end, define
 \[
 \begin{align*}
 F: \RR^2 &\to \RR \\
-(x, t) &\mapsto \chi_A \frac{\hat{f}(x, t)}{t}
+(x, t) &\mapsto \frac{\chi_A(x, t) \hat{f}(x, t)}{t}
 .\end{align*}
 \]
