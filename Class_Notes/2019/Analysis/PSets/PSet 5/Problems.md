@@ -47,3 +47,10 @@ To that end, we can rewrite this using the integral definition of $g(x)$:
 $$
 \int_0^1 \int_x^1 \frac{f(t)}{t} ~dt~dx = \int_0^1 f(x)~dx
 $$
+
+Note that if we can switch the order of integration, we would have 
+$$
+\int_0^1 \int_x^1 \frac{f(t)}{t} ~dt~dx = \int_0^1 f(x)~dx 
+=_?
+\int_0^1 \int_0^t \frac{f(t)}{t} ~dx~dt
+$$
