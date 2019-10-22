@@ -2156,3 +2156,10 @@ and in the second case, take
 & \leq M \int_{A_{y}} \abs{g(y)} < M\varepsilon
 .\end{align*}
 \]
+
+Proof of Theorem 2:
+
+Since $f,g \in L^1$, we have $h(x, y) \coloneqq f(x-y)g(y)$ is measurable on $\RR^n\cross\RR^n$. 
+To see that $f$ is in fact measurable, just define $F(x-y, y) = f(x-y)$ by taking the cylinder, then just let $T = [1, -1; 0, 1]$ so $T(x, y) = (x-y, y)$, so $\cdots = F \circ t(x, y)$.
+
+
