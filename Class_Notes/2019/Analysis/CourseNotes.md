@@ -2089,3 +2089,6 @@ If $f,g \in L^1$, then $\norm{f\star g}_1 \leq \norm{f}_1 \norm{g}_1$, and equal
 
 Corollary:
 If $g$ is additionally bounded, then $\lim_{\abs x \to \infty} f\star g(x) = 0$.
+
+**Theorem 3:**
+If $f\in L^1$ and *$g$ is differentiable* with $g, \dd{g}{x_1}, \cdots, \dd{g}{x_n}$ all bounded, then $f\star g \in C^1$ and $\dd{}{x_j} (f\star g) = f\star (\dd{}{x_j} g)$.
