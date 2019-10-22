@@ -35,3 +35,5 @@ T.
 $$
 
 An identical argument shows that $T \leq S$, yielding the desired equality. $\qed$
+
+## Problem 2
