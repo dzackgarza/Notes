@@ -37,7 +37,7 @@ $$
 
 An identical argument shows that $T \leq S$, yielding the desired equality. $\qed$
 
-## Problem 2
+# Problem 2
 
 We want to show the following equality:
 $$
@@ -88,7 +88,9 @@ This allows us to write
 ,\end{align*}
 \]
 
-where the last inequality holds because $f$ was assumed to be measurable. So $F$ is measurable on the product space $\RR^2$, and we can thus apply Tonelli to $F$ to justify the initial switch. $\qed$
+where the switch is justified by Tonelli and the last inequality holds because $f$ was assumed to be measurable. 
+
+Since this shows that $F \in L^1(\RR^2)$, and we can thus apply Fubini to $F$ to justify the initial switch. $\qed$
 
 # Problem 3
 
@@ -96,15 +98,13 @@ Let $A = \theset{0 \leq x \leq y} \subset \RR^2$, and define
 $$
 F(x, y) = \chi_A(x, y) \frac{x^{1/3}}{(1+xy)^{3/2}}.
 $$
-Then $F \in L^1(\RR^2) \iff f \in L^1(\RR^2)$, and if this is true then we would have
-$$
-\int_{\RR^2} F = \int_0^\infty \int_y^\infty f(x, y) ~dx~dy
-$$
 
-and if an interchange of integrals is justified, this yields
+Then, if all iterated integrals exist and a switch of integration order is justified, we would have
 \[
 \begin{align*}
-\int_{\RR^2} F &=_? \int_0^\infty \int_x^\infty \frac{x^{1/3}}{(1+xy)^{3/2}} ~dy~dx \\
+\int_{\RR^2} F 
+&=_? \int_0^\infty \int_y^\infty f(x, y) ~dx~dy \\
+&=_? \int_0^\infty \int_x^\infty \frac{x^{1/3}}{(1+xy)^{3/2}} ~dy~dx \\
 &= 2\int_{\RR} \frac{1}{x^{2/3} \sqrt{1+x^2}} ~dx \\
 &= 2\int_0^1 \frac{1}{x^{2/3} \sqrt{1+x^2}}~dx + 2\int_1^\infty \frac{1}{x^{2/3} \sqrt{1+x^2}}~dx \\
 & \leq \int_0^1 x^{-2/3} ~dx + \int_0^\infty x^{-5/3} \\
@@ -113,7 +113,8 @@ and if an interchange of integrals is justified, this yields
 \]
 where the first term in the split integral is bounded by using the fact that $\sqrt{1 + x^2} \geq \sqrt{x^2} = x$, and the second term from $x> 1 \implies x > 0 \implies \sqrt{1 + x^2} \geq \sqrt{1}$.
 
-Since this implies that $F$ is measurable, it remains to show that this interchange of integrals is justified.
+Since $F$ is non-negative, we have $\abs F = F$, and so the above computation would thus imply that $F \in L^1(\RR^2)$. 
+It thus remains to show that $\int F$ is equal to its iterated integrals, and that the switch of integration order is justified
 
 Toward that end, we can note for $(x,y) \in A$, we have $x, y \in [0, \infty)$, and so $F(x, y)$ is a non-negative function on $\RR^2$.
 In particular, $\abs{F(x, y)} = F(x, y)$.
