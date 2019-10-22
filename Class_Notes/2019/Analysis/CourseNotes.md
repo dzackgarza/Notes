@@ -2053,3 +2053,7 @@ But then $f\circ T$ is measurable.
 
 ## Convolution
 
+Recall:
+
+- $C_c \injects L^1$ is dense.
+- Continuity in $L^1$: if $f\in L^1$,then $\norm{\tau f - f} \to 0$, i.e. $\lim_{y\to 0} \int \abs{f(x+y) - f(x)} ~dx = 0$. 
