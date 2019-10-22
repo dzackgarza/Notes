@@ -16,10 +16,15 @@ We will show that $S=T$ by showing that $S\leq T$ and $T \leq S$.
 
 ## $S \leq T$:
 Let $B \subset \NN^2$ be finite, so $B \subseteq [0, I] \cross [0, J] \subset \NN^2$. 
-Now letting $R = \max(I, J)$, we can define $C = [0, R]^2$, which satisfies $B \subseteq C \subset \NN^2$ and $\abs C < \infty$.
+Now letting $R > \max(I, J)$, we can define $C = [0, R]^2$, which satisfies $B \subseteq C \subset \NN^2$ and $\abs C < \infty$.
 Moreover, since $a_{jk} \geq 0$ for all pairs $(j, k)$, we have the following inequality:
 $$
-\sum_{(j, k) \in B} a_{jk} \leq
+\sum_{(j, k) \in B} a_{jk} <
 \sum_{(j, k) \in C} a_{jk} \leq 
-T
+T,
 $$
+
+since $T$ is a supremum over *all* such sets $C$. But since this holds for every $B$, we have
+$$
+S \coloneqq \sup_B \sum_{(j, k) \in B} a_{jk} \leq
+T,
