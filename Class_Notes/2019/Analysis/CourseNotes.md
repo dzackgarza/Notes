@@ -2171,3 +2171,16 @@ We can now note that
 &= \norm{f}_1 \norm{g}_1
 .\end{align*}
 \]
+This proves that the integrand is in $L^1(\RR^{2n})$, so Fubini implies that $f\star g(x)$ is in $L^1$ for a.e. $x$.
+
+But then
+\[
+\begin{align*}
+\int \abs{f\star g(x)}~dx 
+&\leq \int \int \abs{f(x-y) g(y)}~dy~dx \\
+&= \norm{f}_1 \norm{g}_1
+.\end{align*}
+\]
+
+> Note that equality is attained here if $f, g \geq 0$.
+
