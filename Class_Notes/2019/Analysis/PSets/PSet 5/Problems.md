@@ -111,3 +111,7 @@ and if an interchange of integrals is justified, this yields
 ,\end{align*}
 \]
 where the first term in the split integral is bounded by using the fact that $\sqrt{1 + x^2} \geq \sqrt{x^2} = x$, and the second term from $x> 1 \implies x > 0 \implies \sqrt{1 + x^2} \geq \sqrt{1}$.
+
+Since this implies that $F$ is measurable, it remains to show that this interchange of integrals is justified.
+
+Toward that end, ...
