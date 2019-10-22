@@ -73,3 +73,9 @@ F: \RR^2 &\to \RR \\
 where $A = \theset{(x, t) \subset \RR^2 \suchthat 0 \leq x \leq t \leq 1}$ and $\hat{f}(x, t) \coloneqq f(t)$ is the cylinder on $f$.
 
 This defines a measurable function on $\RR^2$, since characteristic functions are measurable, the cylinder over a measurable function is measurable, and products/quotients of measurable functions are measurable.
+
+In particular, $\abs{F}$ is measurable and non-negative, and so we can apply Tonelli to $\abs{F}$.
+This allows us to write 
+$$
+\int_{\RR^2} \abs{F} = \int_0^1 \int_0^t \abs{\frac{f(t)}{t}} ~dx~dt
+$$
