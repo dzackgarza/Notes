@@ -61,3 +61,11 @@ Note that if we can switch the order of integration, we would have
 \]
 
 which is what we wanted to show, and so we are simply left with the task of showing that this is switch of integrals is justified.
+
+To this end, define
+\[
+\begin{align*}
+F: \RR^2 &\to \RR \\
+(x, t) \mapsto \chi_A \frac{\hat{f}(x, t)}{t}
+.\end{align*}
+\]
