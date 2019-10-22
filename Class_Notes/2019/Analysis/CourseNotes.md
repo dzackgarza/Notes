@@ -2092,3 +2092,8 @@ If $g$ is additionally bounded, then $\lim_{\abs x \to \infty} f\star g(x) = 0$.
 
 **Theorem 3:**
 If $f\in L^1$ and *$g$ is differentiable* with $g, \dd{g}{x_1}, \cdots, \dd{g}{x_n}$ all bounded, then $f\star g \in C^1$ and $\dd{}{x_j} (f\star g) = f\star (\dd{}{x_j} g)$.
+
+Corollary:
+If $f\in L^1$ and $g\in C^\infty_c \implies f\star g \in C^\infty$ and $\lim_{\abs x \to \infty} f\star g(x) = 0$. Defining $C_0$ as the functions that vanish at infinity, we have $f\star g \in C_0^\infty$.
+
+> Note that we don't necessarily obtain compact support after this convolution.
