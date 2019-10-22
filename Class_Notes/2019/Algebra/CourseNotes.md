@@ -2668,3 +2668,4 @@ Theorem:
 3. If $M\leq M\leq L$, then $M/N \cong (L/M) / (L/N)$
 
 > Note that we can always quotient, since there's an underlying abelian group, and thus the "normality"/ideal condition is always satisfied for submodules. Just consider $M/N  = \theset{m + N \suchthat m\in M}$; then $R\actson (M/N)$ in a well-defined way. 
+
