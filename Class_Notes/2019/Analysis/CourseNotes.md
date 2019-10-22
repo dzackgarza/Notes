@@ -2128,7 +2128,7 @@ For (b):
 
 Let $\varepsilon > 0$, then choose $N$ such that 
 $$
-\int_{\theset{\norm y \geq N}} \abs{f(y)} ~dy < \varepsilon \quad \& \quad 
+\int_{\theset{\norm y \geq N}} \abs{f(y)} ~dy < \varepsilon \quad \text{and} \quad 
 \int_{\theset{\norm y \geq N}} \abs{g(y)} ~dy 
 .$$
 
