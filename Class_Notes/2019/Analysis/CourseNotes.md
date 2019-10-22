@@ -2056,4 +2056,10 @@ But then $f\circ T$ is measurable.
 Recall:
 
 - $C_c \injects L^1$ is dense.
-- Continuity in $L^1$: if $f\in L^1$,then $\norm{\tau f - f} \to 0$, i.e. $\lim_{y\to 0} \int \abs{f(x+y) - f(x)} ~dx = 0$. 
+- Continuity in $L^1$: if $f\in L^1$,then $\norm{\tau f - f} \to 0$, i.e. $\lim_{y\to 0} \int \abs{f(x+y) - f(x)} ~dx = 0$.
+- If $f\in L^1$, then for any $\varepsilon > 0$, 
+  - There exists a $\delta$ such that for all $E$ such that $m(E) \leq \delta$, we have $\int_E \abs{f} < \varepsilon$ (small tails).
+  - There exists an $N$ such that $\int_{\theset{\norm{x} \geq N}} \abs{f} < \varepsilon$. 
+  (Note that $\abs{f(x)} < \varepsilon \forall \norm x \geq N$ exactly when $f$ is uniformly continuous)
+
+
