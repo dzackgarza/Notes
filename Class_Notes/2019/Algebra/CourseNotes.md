@@ -2626,4 +2626,6 @@ Recall that a ring is given by $(R, +, \cdot)$, where
 
 A *subring* is a subset closed under $+. \cdot$, e.g. $\ZZ \leq \QQ \leq \RR \leq \CC \leq \CC[x, y] \leq \cdots$
 
-An *ideal* is certain type of subring that allows taking quotients, and is defined by $I \normal R \iff I\leq R$ and $IR = RI = I$.
+An *ideal* is certain type of subring that allows taking quotients, and is defined by $I \normal R \iff I\leq R$ and $RI, IR \subseteq I$.
+The quotient is given by $R/I = \theset{r + I \suchthat r\in R}$, and the ideal property is what makes this well-defined.
+
