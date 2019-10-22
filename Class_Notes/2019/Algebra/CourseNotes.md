@@ -2642,5 +2642,6 @@ Definition:
 Let $R$ be a ring and $M$ an abelian group. Then if there is a map $R\cross M \to M$, written $(r,r) \mapsto rm$, such that
 
 - $(sr_1 + r_2)(m_1 + m_2) = sr_1m_1 + sr_1m_2 + r_2m_1 + r_2 m_2$
+- If $1\in R$, then $1m = m$.
 
 > Think of $R$ like the group acting by scalar multiplication, and $M$ the set of vectors with vector addition.
