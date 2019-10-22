@@ -2593,3 +2593,7 @@ extension and $\athrm{Gal}(L_1/F)$ is a solvable group.
 Inductively continue this process, and let $f_2(x) = \prod_{\sigma \in \mathrm{Gal}(L_1/F)} x^{n_2} - \sigma(\alpha_2)^{n_2} \in F[x]$.
 Note that the action of the Galois group on this polynomial is stable.
 Let $L_2$ be the splitting field of $f_2$, then $L_2$ is a finite normal radical extension.
+
+Then $\mathrm{Gal}(L_2/F) / \mathrm{Gal}(L_2/L_1) \cong \mathrm{Gal}(L_1/F)$, which is solvable, and the denominator in this quotient is solvable, so the total group must be solvable as well. $\qed$
+
+
