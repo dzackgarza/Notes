@@ -25,8 +25,10 @@ $$
 T,
 $$
 
-since $T$ is a supremum over *all* such sets $C$. But since this holds for every $B$, we this inequality also holds for the supremum of the smaller term by order-limit laws, and so
+since $T$ is a supremum over *all* such sets $C$, and the terms of any finite sum can be rearranged. 
+
+But since this holds for every $B$, we this inequality also holds for the supremum of the smaller term by order-limit laws, and so
 $$
-S \coloneqq \sup_B \sum_{(j, k) \in B} a_{jk} \leq
+S \coloneqq \sup_B \sum_{(k, j) \in B} a_{jk} \leq
 T.
 $$
