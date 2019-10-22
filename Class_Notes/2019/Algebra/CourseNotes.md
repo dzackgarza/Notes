@@ -2588,7 +2588,7 @@ The claim is that $K$ is contained in some $L$ where $F \subset L$, $L$ is a fin
 
 Since $K$ is a radical extension of $F$, we have $F = K(\alpha_1, \cdots, \alpha_n)$ and $\alpha_i^{n_i} \in K(\alpha_1, \cdots, \alpha_{i-1})$ for each $i$ and some $n_i \in \NN$.
 Let $L_1$ be the splitting field of $f_1(x) = x^{n_1} - \alpha_1^{n_1}$, then by the previous lemma, $L_1$ is a normal 
-extension and $\mathrm{Gal}(L_1/F)$ is a solvable group.
+extension and $\athrm{Gal}(L_1/F)$ is a solvable group.
 
 Inductively continue this process, and let $f_2(x) = \prod_{\sigma \in \mathrm{Gal}(L_1/F)} x^{n_2} - \sigma(\alpha_2)^{n_2} \in F[x]$.
 Note that the action of the Galois group on this polynomial is stable.
@@ -2618,4 +2618,12 @@ Thus the polynomial is not solvable by radical, since the splitting field of $f(
 
 ## Rings and Modules
 
-Recall that a ring is given by $(R, +, \cdot)$
+Recall that a ring is given by $(R, +, \cdot)$, where
+
+1. $(R, +)$ is an abelian group,
+2. $(R, \cdot)$ is a monoid,
+3. The distributive laws hold.
+
+A *subring* is a subset closed under $+. \cdot$, e.g. $\ZZ \leq \QQ \leq \RR \leq \CC \leq \CC[x, y] \leq \cdots$
+
+An *ideal* is certain type of subring that allows taking quotients, and is defined by $I \normal R \iff I\leq R$ and $IR = RI = I$.
