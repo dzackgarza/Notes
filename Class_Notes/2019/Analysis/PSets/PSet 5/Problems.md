@@ -82,6 +82,6 @@ This allows us to write
 &= \int_0^1 \int_0^t \abs{\frac{f(t)}{t}} ~dx~dt \\
 &=
 \int_0^1 \int_0^t {\frac{\abs{f(t)}}{t}} ~dx~dt \quad\text{since } t > 0 \\
-\int_0^1 \frac{\abs{f(t)}}{t} \int_0^t ~dx~dt \\
+&= \int_0^1 \frac{\abs{f(t)}}{t} \int_0^t ~dx~dt \\
 .\end{align*}
 \]
