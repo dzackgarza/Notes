@@ -104,6 +104,6 @@ and if an interchange of integrals is justified, this yields
 \[
 \begin{align*}
 \int_{\RR^2} F &=_? \int_0^\infty \int_x^\infty \frac{x^{1/3}}{(1+xy)^{3/2}} ~dy~dx \\
-&= \int_{\RR} \frac{2}{x^{2/3} \sqrt{1+xy}} dx
+&= \int_{\RR} \frac{2}{x^{2/3} \sqrt{1+x^2}} dx
 .\end{align*}
 \]
