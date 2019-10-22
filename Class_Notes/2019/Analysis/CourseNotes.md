@@ -2029,7 +2029,7 @@ This can be proved using Fubini.
 
 Note that if we choose $f$ to be Borel measurable, then $f\circ T$ will be measurable because $T$ is continuous.
 
-(This follows because $\theset{E \suchthat T\inv(E) \in\mathcal{B}$ is in fact a $\sigma\dash$algebra that contains all open sets.)
+(This follows because $\theset{E \suchthat T\inv(E) \in\mathcal{B}}$ is in fact a $\sigma\dash$algebra that contains all open sets.)
 
 > Exercise: Run through this argument.
 
