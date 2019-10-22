@@ -2596,4 +2596,3 @@ Let $L_2$ be the splitting field of $f_2$, then $L_2$ is a finite normal radical
 
 Then $\mathrm{Gal}(L_2/F) / \mathrm{Gal}(L_2/L_1) \cong \mathrm{Gal}(L_1/F)$, which is solvable, and the denominator in this quotient is solvable, so the total group must be solvable as well. $\qed$
 
-
