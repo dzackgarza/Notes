@@ -2651,4 +2651,4 @@ Examples:
 1. $R = k$ a field, then a $k\dash$module is a vector space.
 2. $R = G$ an abelian group, then $R$ is a $\ZZ\dash$module where $n\actson a = \sum^n a$. (In fact, these two notions are equivalent.)
 3. $I \normal R$, then $M \coloneqq R/I$ is an ring, which has an underlying abelian group, so $M$ is an $R\dash$module where $M\actson R = r\actson(s+I) = (rs) + I$.
-4. For $M$ an abelian group, $R \coloneqq \mathrm{End}(M) = \hom_{\text{ab}}(M, M)$ is a ring, and $M$ is a left $R\dash$module where $f\actson m = f(m)$.
+4. For $M$ an abelian group, $R \coloneqq \mathrm{End}(M) = \hom_{\text{ab}}(M, M)$ is a ring, and $M$ is a left $R\dash$module given by $f\actson m = f(m)$.
