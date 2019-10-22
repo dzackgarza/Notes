@@ -95,10 +95,14 @@ Since this shows that $F \in L^1(\RR^2)$, and we can thus apply Fubini to $F$ to
 # Problem 3
 
 Let $A = \theset{0 \leq x \leq y} \subset \RR^2$, and define 
-$$
-F(x, y) = \chi_A(x, y) \frac{x^{1/3}}{(1+xy)^{3/2}}.
-$$
+\[
+\begin{align*}
+f(x, y) &= \frac{x^{1/3}}{(1+xy)^{3/2}} \\
+F(x, y) &= \chi_A(x, y) f(x, y)
+.\end{align*}
+\]
 
+Note that $F$ 
 Then, if all iterated integrals exist and a switch of integration order is justified, we would have
 \[
 \begin{align*}
@@ -113,10 +117,8 @@ Then, if all iterated integrals exist and a switch of integration order is justi
 \]
 where the first term in the split integral is bounded by using the fact that $\sqrt{1 + x^2} \geq \sqrt{x^2} = x$, and the second term from $x> 1 \implies x > 0 \implies \sqrt{1 + x^2} \geq \sqrt{1}$.
 
-Since $F$ is non-negative, we have $\abs F = F$, and so the above computation would thus imply that $F \in L^1(\RR^2)$. 
+Since $F$ is non-negative, we have $\abs F = F$, and so the above computation would imply that $F \in L^1(\RR^2)$. 
 It thus remains to show that $\int F$ is equal to its iterated integrals, and that the switch of integration order is justified
 
-Toward that end, we can note for $(x,y) \in A$, we have $x, y \in [0, \infty)$, and so $F(x, y)$ is a non-negative function on $\RR^2$.
-In particular, $\abs{F(x, y)} = F(x, y)$.
-But this means that Tonelli applies, and $\int F$ is equal to any iterated integral. 
-Since we computed one such iterated integral and found it to be finite, this means that $\int \abs{F} = \int F < \infty$.
+Since $F$ is non-negative, Tonelli can be applied directly if $F$ is measurable in $\RR^2$.
+But 
