@@ -2614,4 +2614,8 @@ s_n = \prod_i y_i
 \]
 Then $\QQ(y_1, \cdots, y_n)/ \QQ(s_1, \cdots, s_n) = S_n$ (by previous theorem).
 For $n\geq 5$, $A_n$ is not solvable, and thus neither is $S_n$.
-Thus the polynomial is not solvable by radicals.
+Thus the polynomial is not solvable by radical, since the splitting field of $f(x)$ is $\QQ(y_1, \cdots, y_n)$. $\qed$
+
+## Rings and Modules
+
+Recall that a ring is given by $(R, +, \cdot)$
