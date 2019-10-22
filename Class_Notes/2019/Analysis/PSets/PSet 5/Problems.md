@@ -83,6 +83,8 @@ This allows us to write
 &=
 \int_0^1 \int_0^t {\frac{\abs{f(t)}}{t}} ~dx~dt \quad\text{since } t > 0 \\
 &= \int_0^1 \frac{\abs{f(t)}}{t} \int_0^t ~dx~dt \\
-&= \int_0^1 \abs{f(t)}
-.\end{align*}
+&= \int_0^1 \abs{f(t)} < \infty
+,\end{align*}
 \]
+
+where the last inequality holds because $f$ was assumed to be measurable. So $F$ is measurable on the product space $\RR^2$, and we can thus apply Tonelli to $F$ to justify the initial switch.
