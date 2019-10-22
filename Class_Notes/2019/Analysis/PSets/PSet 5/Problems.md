@@ -21,7 +21,7 @@ Moreover, since $a_{jk} \geq 0$ for all pairs $(j, k)$, we have the following in
 $$
 \sum_{(j, k) \in B} a_{jk} <
 \sum_{(k, j) \in C} a_{jk} \leq 
-\sum_{(j, k) \in C} a_{jk} \leq 
+\sum_{(k, j) \in C} a_{jk} \leq 
 T,
 $$
 
