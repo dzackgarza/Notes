@@ -81,6 +81,6 @@ This allows us to write
 \int_{\RR^2} \abs{F} 
 &= \int_0^1 \int_0^t \abs{\frac{f(t)}{t}} ~dx~dt \\
 &=
-\int_0^1 \int_0^t {\frac{\abs{f(t)}}{t}} ~dx~dt \\
+\int_0^1 \int_0^t {\frac{\abs{f(t)}}{t}} ~dx~dt \quad\text{since } t > 0 \\
 .\end{align*}
 \]
