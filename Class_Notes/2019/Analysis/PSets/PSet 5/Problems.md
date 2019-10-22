@@ -60,4 +60,4 @@ Note that if we can switch the order of integration, we would have
 ,\end{align*}
 \]
 
-and so we are simply left with the task of showing that this is justified.
+and so we are simply left with the task of showing that this is switch of integrals is justified.
