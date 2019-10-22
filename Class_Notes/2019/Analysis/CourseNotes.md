@@ -2062,4 +2062,9 @@ Recall:
   - There exists an $N$ such that $\int_{\theset{\norm{x} \geq N}} \abs{f} < \varepsilon$. 
   (Note that $\abs{f(x)} < \varepsilon \forall \norm x \geq N$ exactly when $f$ is uniformly continuous)
 
-
+Definition:
+The *convolution* of $f,g$ measurable functions on $\RR^n$ is given by
+$$
+f\star g (x) = \int_{\RR^n} f(x-y) g(y) ~dy
+$$
+for every $x$ for which this integral makes sense.
