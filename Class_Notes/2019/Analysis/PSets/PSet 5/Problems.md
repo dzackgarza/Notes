@@ -97,12 +97,13 @@ F(x, y) = \frac{\chi_A(x, y) x^{1/3}}{(1+xy)^{3/2}}.
 $$
 Then $F \in L^1(\RR^2) \iff f \in L^1(\RR^2)$, and if this is true then we would have
 $$
-\int_{\RR^2} F = \int_0^\infty \int_0^y f(x, y) ~dx~dy
+\int_{\RR^2} F = \int_0^\infty \int_y^\infty f(x, y) ~dx~dy
 $$
 
 and if an interchange of integrals is justified, this yields
 \[
 \begin{align*}
-\int_{\RR^2} F =_? \int_0^\infty \int_y^\infty \frac{x^{1/3}}{(1+xy)^{3/2}}
+\int_{\RR^2} F &=_? \int_0^\infty \int_x^\infty \frac{x^{1/3}}{(1+xy)^{3/2}} ~dy~dx \\
+&=
 .\end{align*}
 \]
