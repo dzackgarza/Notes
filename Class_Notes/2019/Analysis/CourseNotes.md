@@ -2101,6 +2101,8 @@ If $f\in L^1$ and $g\in C^\infty_c \implies f\star g \in C^\infty$ and $\lim_{\a
 ![Image](figures/2019-10-22-11:55.png)
 
 Proof of Theorem 1:
+
+For (a):
 \[
 \begin{align*}
 \abs{\int f(x-y)g(y) ~dy} 
@@ -2121,3 +2123,11 @@ and
 &\leq M \int \abs{f(z+h) - f(z)}~dz \t0 0
 .\end{align*}
 \]
+
+For (b):
+
+Let $\varepsilon > 0$, then choose $N$ such that 
+$$
+\int_{\theset{\norm y \geq N}} \abs{f(y)} ~dy < \varepsilon \quad \& \quad 
+\int_{\theset{\norm y \geq N}} \abs{g(y)} ~dy 
+$$
