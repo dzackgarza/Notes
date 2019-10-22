@@ -71,3 +71,5 @@ F: \RR^2 &\to \RR \\
 \]
 
 where $A = \theset{(x, t) \subset \RR^2 \suchthat 0 \leq x \leq t \leq 1}$ and $\hat{f}(x, t) \coloneqq f(t)$ is the cylinder on $f$.
+
+This defines a measurable function on $\RR^2$, since characteristic functions are measurable, the cylinder over a measurable function is measurable, and products/quotients of measurable functions are measurable.
