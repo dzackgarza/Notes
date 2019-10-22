@@ -2569,3 +2569,27 @@ $$
 Thus we have a solvable group. $\qed$
 
 # Tuesday October ?
+
+Recall the definition of an extension being *radical* (see above).
+
+We say that a polynomial $f(x) \in K[x]$ is *solvable by radicals* iff its splitting field $L$ is a radical extension of $K$.
+
+Lemma:
+Let $F$ be a field of characteristic zero.
+If $K$ is a splitting field of $f(x) = x^n - a \in F[x]$, then $\mathrm{Gal}(K/F)$ is a solvable group.
+
+Theorem:
+Let $F$ be characteristic zero, and suppose $F \leq E \leq K \leq \overline F$ be algebraic extension where $E/F$ is normal
+and $K$ a radical extension of $F$. Moreover, suppose $[K:F] < \infty$.
+Then $\mathrm{Gal}(E/F)$ is solvable.
+
+Proof:
+The claim is that $K$ is contained in some $L$ where $F \subset L$, $L$ is a finite normal radical extension, and $\mathrm{Gal}{L/F}$ is solvable.
+
+Since $K$ is a radical extension of $F$, we have $F = K(\alpha_1, \cdots, \alpha_n)$ and $\alpha_i^{n_i} \in K(\alpha_1, \cdots, \alpha_{i-1})$ for each $i$ and some $n_i \in \NN$.
+Let $L_1$ be the splitting field of $f_1(x) = x^{n_1} - \alpha_1^{n_1}$, then by the previous lemma, $L_1$ is a normal 
+extension and $\athrm{Gal}(L_1/F)$ is a solvable group.
+
+Inductively continue this process, and let $f_2(x) = \prod_{\sigma \in \mathrm{Gal}(L_1/F)} x^{n_2} - \sigma(\alpha_2)^{n_2} \in F[x]$.
+Note that the action of the Galois group on this polynomial is stable.
+Let $L_2$ be the splitting field of $f_2$, then $L_2$ is a finite normal radical extension.
