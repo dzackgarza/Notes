@@ -94,7 +94,7 @@ where the last inequality holds because $f$ was assumed to be measurable. So $F$
 
 Let $A = \theset{0 \leq x \leq y} \subset \RR^2$, and define 
 $$
-F(x, y) = \frac{\chi_A(x, y) x^{1/3}}{(1+xy)^{3/2}}.
+F(x, y) = \chi_A(x, y) \frac{x^{1/3}}{(1+xy)^{3/2}}.
 $$
 Then $F \in L^1(\RR^2) \iff f \in L^1(\RR^2)$, and if this is true then we would have
 $$
