@@ -2629,4 +2629,18 @@ A *subring* is a subset closed under $+. \cdot$, e.g. $\ZZ \leq \QQ \leq \RR \le
 An *ideal* is certain type of subring that allows taking quotients, and is defined by $I \normal R \iff I\leq R$ and $RI, IR \subseteq I$.
 The quotient is given by $R/I = \theset{r + I \suchthat r\in R}$, and the ideal property is what makes this well-defined.
 
-Much like groups, we have some notion of homomorphism $\phi: R\to R'$, where $\phi(ax+y) = \phi(a)\phi(x) + \phi(y)
+Much like groups, we have some notion of homomorphism $\phi: R\to R'$, where $\phi(ax+y) = \phi(a)\phi(x) + \phi(y)$.
+
+### Modules
+
+We want to combine the following two notions:
+
+- Groups acting on sets, and
+- Vector spaces
+
+Definition:
+Let $R$ be a ring and $M$ an abelian group. Then if there is a map $R\cross M \to M$, written $(r,r) \mapsto rm$, such that
+
+- $(sr_1 + r_2)(m_1 + m_2) = sr_1m_1 + sr_1m_2 + r_2m_1 + r_2 m_2$
+
+> Think of $R$ like the group acting by scalar multiplication, and $M$ the set of vectors with vector addition.
