@@ -11,3 +11,7 @@ S \coloneqq \sum_{j=1}^\infty \sum_{k=1}^\infty a_{jk} &= \sup \theset{\sum_{(j,
 T \coloneqq \sum_{k=1}^\infty \sum_{j=1}^\infty a_{kj} &= \sup \theset{\sum_{(k, j) \in C} a_{kj} \suchthat C \subset \NN^2,~ \abs B < \infty}
 .\end{align*}
 \]
+
+We will show that $S=T$ by showing that $S\leq T$ and $T \leq S$.
+
+## $S \leq T$:
