@@ -115,4 +115,7 @@ where the first term in the split integral is bounded by using the fact that $\s
 
 Since this implies that $F$ is measurable, it remains to show that this interchange of integrals is justified.
 
-Toward that end, ...
+Toward that end, we can note for $(x,y) \in A$, we have $x, y \in [0, \infty)$, and so $F(x, y)$ is a non-negative function on $\RR^2$.
+In particular, $\abs{F(x, y)} = F(x, y)$.
+But this means that Tonelli applies, and $\int F$ is equal to any iterated integral. 
+Since we computed one such iterated integral and found it to be finite, this means that $\int \abs{F} = \int F < \infty$.
