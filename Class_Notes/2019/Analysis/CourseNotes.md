@@ -2073,3 +2073,8 @@ Some remarks:
 
 - There are conditions on $f,g$ which can guarantee that $f\star g$ exists.
 - If for some $x$, the function $y\mapsto f(x-y)g(y)$ is measurable, then $y\mapsto f(y)g(x-y)$ is also integrable (note that this is just a translation followed by a reflection, which is still integrable since this operation is in $\GL(n, \RR)$) and $f\star g = g \star f$.
+
+**Theorem 1:**
+
+a. If $f\in L^1$ and $g$ is bounded, then $f\star g$ is bounded *and* uniformly continuous.
+b. If $f,g \in L^1$ and $f,g$ are both bounded, then $\lim_{\abs{x}\to\infty} f\star g(x) = 0$.
