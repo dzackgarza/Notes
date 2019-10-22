@@ -91,4 +91,8 @@ where the last inequality holds because $f$ was assumed to be measurable. So $F$
 
 # Problem 3
 
-Let $A = \theset{0 \leq x \leq y} \subset \RR^2$, and define $F(x, y) = \frac{\chi_A(x, y) x^{1/3}}{(1+xy)^{3/2}}$.
+Let $A = \theset{0 \leq x \leq y} \subset \RR^2$, and define 
+$$
+F(x, y) = \frac{\chi_A(x, y) x^{1/3}}{(1+xy)^{3/2}}.
+$$
+
