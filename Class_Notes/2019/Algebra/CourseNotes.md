@@ -2655,4 +2655,8 @@ Examples:
 
 Let $M, N$ be left $R\dash$modules. Then $f: M \to N$ is an $R\dash$module homomorphism iff $f(rm_1 + m_2) = rf(m_1) + f(m_2)$.
 
-We also have notions of *monomorphisms*, which are injective maps, *epimorphisms*, which are surjections, and *isomorphisms*, which are both. 
+We also have notions of *monomorphisms*, which are injective maps, *epimorphisms*, which are surjections, and *isomorphisms*, which are both.
+
+We can define *submodules* $N\leq M$, which are subsets that are closed under all operations.
+
+
