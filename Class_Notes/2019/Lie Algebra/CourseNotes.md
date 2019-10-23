@@ -2911,3 +2911,9 @@ We proceed by inducting on $k$, the number of tensor factors occurring.
 The base case is clear.
 
 For $k> 1$, supposing that the element is *not* a PBW monomial, then there is some inversion in the indices $(j_1, \cdots, j_k)$, i.e. there is at least one $i$ such that $j_{i+1} < j_i$.
+Now for any two indices $a,b \in I$, we have
+$$
+\iota(x_b \tensor x_a) = \iota(x_a \tensor x_b + [x_b, x_a]) \implies  y_b y_a = y_a y_b + \iota([x_b, x_a])
+$$
+
+
