@@ -2919,3 +2919,18 @@ Since $[x_b, x_a] = \sum_t F x_t$ and $\iota[x_b, x_a] = \sum_t F y_t$.
 
 But then $y_{j_1} \cdots y_{j_k} = y_{i_1} y_{i_2} \cdots y_{j_k} + \text{ lower degree terms}$ where $i_1 \leq i_2 \cdots i_k$ is a non-decreasing rearrangement of the $j_i$.
 By the inductive hypothesis, the lower degree terms are spanned by PBW monomials, so we're done.
+
+Proof of linear independence:
+
+Claim: let $\vector x \coloneqq x_{j_1} \tensor \cdots \tensor x_{j_n}$ for an arbitrary indexing sequence, and $\vector x_{(k)}$ be this tensor with the $j_k$ and $j_{k+1}$ terms swapped, and $\vector x_{[k]}$ be this tensor with $x_{j_k}, x_{j_{k+1}}$ replaced by their bracket.
+
+Then there exists a linear map 
+\[
+\begin{align*}
+f: T(\lieg) \to R \coloneqq F[\theset{z_i}_{i\in I}] \\
+f(\x_{i_1} \tensor \cdots \tensor x_{i_n}) = z_{i_1} \cdots z_{i_n} \\
+f(\vector x - \vector x_{(k)}) = f(\vector x_{[k]})
+.\end{align*}
+\]
+
+
