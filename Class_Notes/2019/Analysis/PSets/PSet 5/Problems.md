@@ -215,13 +215,16 @@ To see that this is justified, let $I = [0, 1]$ and note that the integrand can 
 Since $f, g$ are in $L^1(I)$, their cylinders are measurable over $\RR \cross I$, and thus $\hat f, \hat g$ are measurable on $\RR^2$ as products of measurable functions.
 Then $H$ is a measurable function as a product of measurable functions as well.
 
-But then $\abs{H}$ is non-negative and measurable, so by Tonelli all iterated integrals will be equal. We want to show that $H \in L^1(\RR^2)$ in order to apply Fubini, so we compute
+But then $\abs{H}$ is non-negative and measurable, so by Tonelli all iterated integrals will be equal. We want to show that $H \in L^1(\RR^2)$ in order to apply Fubini, so we will show that $\int \abs H < \infty$.
 
+To that end, noting that $f, g \in L^1$, we have $\int_0^1 f \coloneqq C_f < \infty$ and $\int_0^1 g \coloneqq C_g < \infty$. Then,
 \[
 \begin{align*}
 \int_{\RR^2} \abs H 
 &= \int \int \abs{f(x) g(y)} ~dx ~dy \\
-&= \int \int \abs{f(x)} \abs{g(y)} ~dx ~dy
-&= \int \abs{g(y)} \left(\int \abs{f(x)} ~dx\right) ~dy
+&= \int \int \abs{f(x)} ~\abs{g(y)} ~dx ~dy \\
+&= \int \abs{g(y)} \left(\int \abs{f(x)} ~dx\right) ~dy \\
+&= \int \abs{g(y)} C_f ~dy \\
 .\end{align*}
 \]
+
