@@ -234,3 +234,13 @@ and thus by Fubini, the original interchange of integrals was justified.
 
 # Problem 6
 
+## Part (a)
+
+We have
+
+\[
+\begin{align*}
+\int_\RR \abs{A_h(f)(x)} ~dx 
+&= \int_\RR \abs{\frac{1}{2h} \int_{x-h}^{x+h} f(y)~dy} ~dx
+.\end{align*}
+\]
