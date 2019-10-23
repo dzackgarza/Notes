@@ -264,7 +264,7 @@ Thus it makes sense to write $\int \abs H$ as an iterated integral by Tonelli, a
 
 ## Part (b)
 
-We have
+Let $\varepsilon>0$; we then have
 \[
 \begin{align*}
 \int_\RR \abs{A_h(f)(x) - f(x)} ~dx 
