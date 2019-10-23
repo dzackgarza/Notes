@@ -30,6 +30,8 @@ To see that $S \leq S'$, we can just note that
 \begin{align*}
 S &= \lim_{J\to \infty} \sum_{j=1}^J \left( \lim_{K\to\infty} \sum_{k=1}^K a_{jk} \right) \\
 &= \lim_{J\to \infty} \lim_{K\to\infty} \sum_{j=1}^J \sum_{k=1}^K a_{jk} \\
+&\leq \lim_{J\to \infty} \lim_{K\to\infty} S' \quad \text{since } \abs{\theset{1, \cdots J} \cross \theset{1, \cdots, K}} < \infty \\
+&= S'
 .\end{align*}
 \]
 
