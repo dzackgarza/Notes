@@ -231,3 +231,6 @@ To that end, noting that $f, g \in L^1$, we have $\int_0^1 f \coloneqq C_f < \in
 \]
 
 and thus by Fubini, the original interchange of integrals was justified.
+
+# Problem 6
+
