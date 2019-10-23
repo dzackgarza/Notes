@@ -4,13 +4,26 @@ title: Problem Set 5
 
 # Problem 1
 
-We first make the following claim (TODO):
+We first make the following claim:
 \[
 \begin{align*}
 S \coloneqq \sum_{j=1}^\infty \sum_{k=1}^\infty a_{jk} &= \sup \theset{\sum_{(j, k) \in B} a_{jk} \suchthat B \subset \NN^2,~ \abs B < \infty} \\
 T \coloneqq \sum_{k=1}^\infty \sum_{j=1}^\infty a_{kj} &= \sup \theset{\sum_{(j, k) \in C} a_{kj} \suchthat C \subset \NN^2,~ \abs B < \infty}
 .\end{align*}
 \]
+It suffices to show the first equality holds, as the other case will follow similarly.
+Let $S = \sum_{j=1}^\infty \sum_{k=1}^\infty a_jk$ and $S' = \sup \theset{\sum_{(j, k) \in B} a_{jk} \suchthat B \subset \NN^2,~ \abs B < \infty}$.
+
+Then consider any bounded set $B \subset \NN^2$; so $B \subset \theset{1, \cdots, n_1} \cross \theset{1, \cdots, n_2}$ for some $n_1, n_2 \in \NN$.
+We then have
+\[
+\begin{align*}
+\sum_B a_{jk} \leq \sum_{j=1}^{n_1} \sum_{k=1}^{n_2} a_{jk} \leq \sum_{j=1}^\infty \sum_{k=1}^\infty a_{jk}
+.\end{align*}
+\]
+
+where the first equality holds $a+{jk} \geq 0$ for all $j, k$, so the sum can only increase if we add more terms.
+But this holds for every $B$ and thus holds if we take the supremum over all of them, so $S' \leq S$.
 
 We will show that $S=T$ by showing that $S\leq T$ and $T \leq S$.
 
