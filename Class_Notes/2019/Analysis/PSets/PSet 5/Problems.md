@@ -199,7 +199,7 @@ We have
 \begin{align*}
 \int_0^1 F(x) g(x) 
 &\coloneqq  
-\int_0^1 \left(\int_0^x f(y)~dy\right)~dx \\
+\int_0^1 \left(\int_0^x f(y)~dy\right)g(x) ~dx \\
 &= \int_0^1 \left(\int_0^x f(y)~dy\right)~dx \\
 &= \int_0^1 \left(\int_0^x f(y)~dy\right)~dx \\
 .\end{align*}
