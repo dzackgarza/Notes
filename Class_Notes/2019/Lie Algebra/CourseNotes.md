@@ -2974,7 +2974,7 @@ Let $(\ell, \ell+1)$ and $(\ell', \ell'+1)$ be two distinct inversions. Then set
 \[
 \begin{align*}
 a = x_{j_\ell} \\
-b = x_{j_{\ell+1} \\}
+b = x_{j_{\ell+1} }\\
 c = x_{j_\ell'} \\
 d = x_{j_{\ell'+1}} \\
 .\end{align*}
