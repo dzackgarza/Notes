@@ -2916,3 +2916,5 @@ $$
 \iota(x_b \tensor x_a) = \iota(x_a \tensor x_b + [x_b, x_a]) \implies  y_b y_a = y_a y_b + \iota([x_b, x_a])
 $$
 Since $[x_b, x_a] = \sum_t F x_t$ and $\iota[x_b, x_a] = \sum_t F y_t$.
+
+But then $y_{j_1} \cdots y_{j_k} = y_{i_1} y_{i_2} \cdots y_{j_k} + \text{ lower degree terms}$.
