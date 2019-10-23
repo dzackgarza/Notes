@@ -285,6 +285,6 @@ Thus, for $h<h'$, we have
 &\leq 
 \int_\RR \frac{1}{2h} \int_{x-h}^{x+h} \abs{ f(y) - f(x) ~dy}~dx \\
 &\leq \int_\RR \frac{1}{2h} \varepsilon ~dx \\
-&\leq \lim_{h\to 0} \frac{1}{2h} \varepsilon \int_\RR ~dx \\
+&\leq \frac{1}{2h} \varepsilon \int_\RR ~dx \\
 .\end{align*}
 \]
