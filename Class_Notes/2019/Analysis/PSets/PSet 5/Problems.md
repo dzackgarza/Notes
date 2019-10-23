@@ -221,10 +221,12 @@ To that end, noting that $f, g \in L^1$, we have $\int_0^1 f \coloneqq C_f < \in
 \[
 \begin{align*}
 \int_{\RR^2} \abs H 
-&= \int \int \abs{f(x) g(y)} ~dx ~dy \\
-&= \int \int \abs{f(x)} ~\abs{g(y)} ~dx ~dy \\
-&= \int \abs{g(y)} \left(\int \abs{f(x)} ~dx\right) ~dy \\
-&= \int \abs{g(y)} C_f ~dy \\
+&= \int_0^1 \int_0^1 \abs{f(x) g(y)} ~dx ~dy \\
+&= \int_0^1 \int_0^1 \abs{f(x)} ~\abs{g(y)} ~dx ~dy \\
+&= \int_0^1 \abs{g(y)} \left(\int_0^1 \abs{f(x)} ~dx\right) ~dy \\
+&= \int_0^1 \abs{g(y)} C_f ~dy \\
+&= C_f \int_0^1 \abs{g(y)} ~dy \\
+&= C_f C_g < \infty
 .\end{align*}
 \]
 
