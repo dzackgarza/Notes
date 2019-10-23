@@ -257,5 +257,4 @@ since $f$ was assumed to be in $L^1(\RR)$, where the changed bounds of integrati
 
 ![Changing the bounds of integration](figures/2019-10-22-22:32.png)
 
-To justify this change in the order of integration, we can note that if $A_h(f)$ is measurable, then by Tonelli on $\abs{A_h(f)}$, the above calculation shows that $A_h(f) \in L^1(\RR)$ and Fubini applies.
-To see that $A_h(f)$ is measurable, we can note that $h$ is a fixed constant, and
+To justify the change in the order of integration, consider the function $H(x, y) = \chi_A(x, y) f(y)$ where $A = \theset{(x, y) \in \RR^2 \suchthat -\infty < x-h \leq x, y \leq x+h}$.
