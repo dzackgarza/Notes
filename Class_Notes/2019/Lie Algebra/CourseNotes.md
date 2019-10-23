@@ -2970,3 +2970,5 @@ We'll check that $f$ is well-defined.
 
 In the above definition, note that $f(\vector x)$ can be defined using different inversions of the indices, we'd like to show that these yield the same map.
 
+# Friday October 25
+Upcoming
