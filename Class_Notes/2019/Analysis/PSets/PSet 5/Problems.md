@@ -257,4 +257,4 @@ since $f$ was assumed to be in $L^1(\RR)$, where the changed bounds of integrati
 
 ![Changing the bounds of integration](figures/2019-10-22-22:32.png)
 
-To justify the change in the order of integration, consider the function $H(x, y) = \chi_A(x, y) f(y)$ where $A = \theset{(x, y) \in \RR^2 \suchthat -\infty < x-h \leq x, y \leq x+h}$.
+To justify the change in the order of integration, consider the function $H(x, y) = \frac{1}{2h} \chi_A(x, y) f(y)$ where $A = \theset{(x, y) \in \RR^2 \suchthat -\infty < x-h \leq x, y \leq x+h}$.
