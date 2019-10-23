@@ -248,6 +248,7 @@ We have
 &=_? \frac{1}{2h} \int_\RR \int_{y-h}^{y+h} \abs{f(y)} ~\mathbf{dx} ~\mathbf{dy}    \\
 &= \frac{1}{2h} \int_\RR \abs{f(y)} \int_{y-h}^{y+h} ~{dx} ~{dy}    \\
 &= \frac{1}{2h} \int_\RR \abs{f(y)} (y+h) - (y-h) ~{dy}    \\
+&= \frac{1}{2h} \int_\RR 2h \abs{f(y)} ~{dy}    \\
 .\end{align*}
 \]
 
