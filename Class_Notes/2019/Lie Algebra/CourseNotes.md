@@ -2928,7 +2928,7 @@ Then there exists a linear map
 \[
 \begin{align*}
 f: T(\lieg) \to R \coloneqq F[\theset{z_i}_{i\in I}] \\
-f(\x_{i_1} \tensor \cdots \tensor x_{i_n}) = z_{i_1} \cdots z_{i_n} \\
+f(x_{i_1} \tensor \cdots \tensor x_{i_n}) = z_{i_1} \cdots z_{i_n} \\
 f(\vector x - \vector x_{(k)}) = f(\vector x_{[k]})
 .\end{align*}
 \]
