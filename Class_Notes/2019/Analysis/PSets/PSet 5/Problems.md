@@ -273,8 +273,9 @@ Let $\varepsilon>0$; we then have
 &\quad\quad \text{since } \frac{1}{2h}\int_{x-h}^{x+h} f(x) ~dy = \frac{1}{2h}f(x)((x+h) - (x-h)) = \frac{1}{2h}f(x) 2h = f(x) \\
 &= \int_\RR \abs{ \frac{1}{2h} \int_{B(h, x)} f(y) - f(x) ~dy}~dx \\
 &\leq \int_\RR \frac{1}{2h} \int_{x-h}^{x+h} \abs{ f(y) - f(x)} ~dy~dx \\
+&\leq \int_\RR \frac{1}{2h} \int_{-h}^{h} \abs{ f(y-x) - f(x)} ~dy~dx \\
 .\end{align*}
 \]
 
-but since $h\to 0$ will force $y\to x$ in the integral, by continuity in $L^1$, $ 
+but since $h\to 0$ will force $y\to x$ in the integral, by continuity in $L^1$, letting $\tau_x(y) = f(x)$, we have $\norm{\tau_x - f}_1 \to 0$
 
