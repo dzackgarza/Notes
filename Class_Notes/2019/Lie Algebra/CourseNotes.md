@@ -2990,7 +2990,12 @@ Then
 f(\vector x_{(\ell)}) + f(\vector x_{[\ell]}) 
 &= f( \cdots b\tensor a \cdots c\tensor d \cdots ) \\
 + f( \cdots \tensor [a, b] \tensor \cdots c\tensor d \cdots ) \\
-&= f( \cdots b\tensor a \cdots d\tensor c \cdots ) \\
-+ f( \cdots b\tensor a \cdots [c, d] \cdots ) \\
+&= f( \cdots b\tensor a \cdots d\tensor c \cdots )
++ f( \cdots b\tensor a \cdots [c, d] \cdots )
++ f( \cdots \tensor [a, b] \tensor \cdots d\tensor c \cdots ) 
++ f( \cdots \tensor [a, b] \tensor \cdots [c, d] \cdots ) \\
+&= f(\vector x_{(\ell']}) + f(\vector x_{[\ell']} )
 .\end{align*}
 \]
+
+
