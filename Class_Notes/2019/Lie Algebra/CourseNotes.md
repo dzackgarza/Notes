@@ -2957,3 +2957,38 @@ So set $T^{n, k} = \theset{\vector x \in T^n(\lieg) \suchthat \lambda(\vector x)
 
 Step 1: 
 We'll construct $f$ by induction on $n$.
+
+For $n> 0$, set $f(\vector x) = z_{j_1} \cdots z_{j_n}$ if $\lambda(\vector x) = 0$.
+We now induct on the index $k$ at a fixed power $n > 0$. 
+The base case is clear.
+
+For $k>0$, there exists an inversion $(\ell, \ell+1)$, i.e. some indices $i_{\ell} > \i_{\ell+1}$.
+Set $f(\vector x) = f(\vector x_{(\ell)}) - f(\vector x_{[\ell]})$, where the LHS is in $T^{n, k}$ and the RHS terms are in $T^{n, k-1}$ and $T^{n-1}(\lieg$ respectively.
+
+Step 2:
+We'll check that $f$ is well-defined.
+
+In the above definition, note that $f(\vector x)$ can be defined using different inversions of the indices, we'd like to show that these yield the same map.
+
+Let $(\ell, \ell+1)$ and $(\ell', \ell'+1)$ be two distinct inversions. Then set
+\[
+\begin{align*}
+a = x_{j_\ell} \\
+b = x_{j_{\ell+1} \\}
+c = x_{j_\ell'} \\
+d = x_{j_{\ell'+1} \\}
+.\end{align*}
+\]
+
+Then we have several cases:
+
+Case 1: $\ell + 1 < \ell'$. 
+
+Then
+\[
+\begin{align*}
+f(\vector x_{(\ell)}) + f(\vector x_{[\ell]}) 
+&= f( \cdots b\tensor a \cdots c\tensor d \cdots ) \\
+&= f( \cdots \tensor [a, b] \tensor \cdots c\tensor d \cdots ) \\
+.\end{align*}
+\]
