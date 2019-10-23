@@ -198,10 +198,10 @@ We have
 \[
 \begin{align*}
 \int_0^1 F(x) g(x) 
-&\coloneqq  
-\int_0^1 \left(\int_0^x f(y)~dy\right)g(x) ~dx \\
+&\coloneqq \int_0^1 \left(\int_0^x f(y)~dy\right)g(x) ~dx \\
 &= \int_0^1 \int_0^x f(y)g(x) ~dy~dx \\
-&=_? \int_0^1 \int_0^x f(y)g(x) ~\mathbf{dx}~\mathbf{dy} \\
-&= \int_0^1 \int_0^x f(y)g(x) ~dx~dy \\
+&=_? \int_0^1 \int_y^1 f(y)g(x) ~\mathbf{dx}~\mathbf{dy} \\
+&= \int_0^1 f(y)\int_y^1 g(x) ~dx~dy \\
+&= \int_0^1
 .\end{align*}
 \]
