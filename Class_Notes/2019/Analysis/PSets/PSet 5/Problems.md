@@ -268,7 +268,8 @@ We have
 \[
 \begin{align*}
 \int_\RR \abs{A_h(f)(x) - f(x)} ~dx 
-&= \int_\RR \abs{ \left(\int_{B(h, x)} f(y)~dy\right) - f(x)}~dx \\
-&= \int_\RR \abs{ \left(\int_{B(h, x)} f(y)~dy\right) - \int_{B(h, x)} f(x) ~dy}~dx \\
+&= \int_\RR \abs{ \left(\frac{1}{2h} \int_{B(h, x)} f(y)~dy\right) - f(x)}~dx \\
+&= \int_\RR \abs{ \left(\frac{1}{2h} \int_{B(h, x)} f(y)~dy\right) - \frac{1}{2h}\int_{B(h, x)} f(x) ~dy}~dx \\
+&\quad\quad \text{since} \frac{1}{2h}\int_{x-h}^{x+h} f(x) ~dy = \frac{1}{2h}f(x)((x+h) - (x-h)) = \frac{1}{2h}f(x) 2h = f(x) \\
 .\end{align*}
 \]
