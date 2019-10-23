@@ -277,5 +277,5 @@ Let $\varepsilon>0$; we then have
 .\end{align*}
 \]
 
-but since $h\to 0$ will force $y\to x$ in the integral, by continuity in $L^1$, letting $\tau_x(y) = f(x)$, we have $\norm{\tau_x - f}_1 \to 0$
+but since $h\to 0$ will force $y\to x$ in the integral, for a fixed $x$ we can let $\tau_x(y) = f(y-x)$ and we have $\norm{\tau_x - f}_1 \to 0$ by continuity in $L^1$.
 
