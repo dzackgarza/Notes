@@ -2918,3 +2918,4 @@ $$
 Since $[x_b, x_a] = \sum_t F x_t$ and $\iota[x_b, x_a] = \sum_t F y_t$.
 
 But then $y_{j_1} \cdots y_{j_k} = y_{i_1} y_{i_2} \cdots y_{j_k} + \text{ lower degree terms}$ where $i_1 \leq i_2 \cdots i_k$ is a non-decreasing rearrangement of the $j_i$.
+By the inductive hypothesis, the lower degree terms are spanned by PBW monomials, so we're done.
