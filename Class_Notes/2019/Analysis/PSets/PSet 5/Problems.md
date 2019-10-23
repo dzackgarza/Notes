@@ -25,6 +25,13 @@ We then have
 where the first equality holds $a+{jk} \geq 0$ for all $j, k$, so the sum can only increase if we add more terms.
 But this holds for every $B$ and thus holds if we take the supremum over all of them, so $S' \leq S$.
 
+To see that $S \leq S'$, we can just note that
+\[
+\begin{align*}
+S = \lim_J\to \infty \sum_{j=1}^J \left( \lim_{K\to\infty} \sum_{k=1}^K a_{jk})
+.\end{align*}
+\]
+
 We will show that $S=T$ by showing that $S\leq T$ and $T \leq S$.
 
 Let $B \subset \NN^2$ be finite, so $B \subseteq [0, I] \cross [0, J] \subset \NN^2$. 
