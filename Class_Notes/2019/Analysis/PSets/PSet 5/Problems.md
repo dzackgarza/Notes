@@ -36,7 +36,7 @@ S &= \lim_{J\to \infty} \sum_{j=1}^J \left( \lim_{K\to\infty} \sum_{k=1}^K a_{jk
 \]
 
 where the limits commute with finite sums, and we the sum can be replaced with $S'$ because the set $\theset{1, \cdots, K} \cross \theset{1, \cdots J}$ is one of the finite sets over which the supremum is taken.
-Moreover, $S'$ is a number that doesn't depend on $J, K$, yielding the final equality.
+Moreover, $S'$ is a number that doesn't depend on $J, K$, yielding the final equality. $\qed$
 
 We will show that $S=T$ by showing that $S\leq T$ and $T \leq S$.
 
