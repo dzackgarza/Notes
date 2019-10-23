@@ -29,11 +29,14 @@ To see that $S \leq S'$, we can just note that
 \[
 \begin{align*}
 S &= \lim_{J\to \infty} \sum_{j=1}^J \left( \lim_{K\to\infty} \sum_{k=1}^K a_{jk} \right) \\
-&= \lim_{J\to \infty} \lim_{K\to\infty} \sum_{j=1}^J \sum_{k=1}^K a_{jk} \quad\quad\quad \text{since limits commute with finite sums}\\
-&\leq \lim_{J\to \infty} \lim_{K\to\infty} S' \quad\quad\quad \text{since } \abs{\theset{1, \cdots J} \cross \theset{1, \cdots, K}} < \infty \\
+&= \lim_{J\to \infty} \lim_{K\to\infty} \sum_{j=1}^J \sum_{k=1}^K a_{jk} \\ 
+&\leq \lim_{J\to \infty} \lim_{K\to\infty} S' \\ 
 &= S'
-.\end{align*}
+,\end{align*}
 \]
+
+where the limits commute with finite sums, and we the sum can be replaced with $S'$ because the set $\theset{1, \cdots, K} \cross \theset{1, \cdots J}$ is one of the finite sets over which the supremum is taken.
+Moreover, $S'$ is a number that doesn't depend on $J, K$, yielding the final equality.
 
 We will show that $S=T$ by showing that $S\leq T$ and $T \leq S$.
 
