@@ -201,5 +201,6 @@ We have
 &\coloneqq  
 \int_0^1 \left(\int_0^x f(y)~dy\right)~dx \\
 &= \int_0^1 \left(\int_0^x f(y)~dy\right)~dx \\
+&= \int_0^1 \left(\int_0^x f(y)~dy\right)~dx \\
 .\end{align*}
 \]
