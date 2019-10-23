@@ -202,6 +202,6 @@ We have
 &= \int_0^1 \int_0^x f(y)g(x) ~dy~dx \\
 &=_? \int_0^1 \int_y^1 f(y)g(x) ~\mathbf{dx}~\mathbf{dy} \\
 &= \int_0^1 f(y)\int_y^1 g(x) ~dx~dy \\
-&= \int_0^1
+&= \int_0^1 f(y)(G(1) - G(y)) ~dy
 .\end{align*}
 \]
