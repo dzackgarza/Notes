@@ -2904,8 +2904,8 @@ We also described the *PBW Theorem*, which provides a basis for $U(\lieg)$.
 
 Proof of PBW Theorem:
 
-We have $T(\lieg) = \span\theset{x_{j_1} \tensor \cdots \tensor x_{j_k} \suchthat j_1, \cdots, j_k \in I}$, where we note that there are not required to be ordered.
-Thus $U(\lieg) = \span\theset{y_{j_1} \tensor \cdots \tensor y_{j_k} \suchthat j_1, \cdots, j_k \in I}$, where which are again not required to be ordered.
+We have $T(\lieg) = \spanof\theset{x_{j_1} \tensor \cdots \tensor x_{j_k} \suchthat j_1, \cdots, j_k \in I}$, where we note that there are not required to be ordered.
+Thus $U(\lieg) = \spanof\theset{y_{j_1} \tensor \cdots \tensor y_{j_k} \suchthat j_1, \cdots, j_k \in I}$, where which are again not required to be ordered.
 We would thus like to express every term here as some linear combination of monomials in the $y_{i_j}$ with increasing indices.
 We proceed by inducting on $k$, the number of tensor factors occurring.
 The base case is clear.
@@ -2915,4 +2915,4 @@ Now for any two indices $a,b \in I$, we have
 $$
 \iota(x_b \tensor x_a) = \iota(x_a \tensor x_b + [x_b, x_a]) \implies  y_b y_a = y_a y_b + \iota([x_b, x_a])
 $$
-Since $[x_b, x_a] = \sum_t F x_t$ and $\iota[x_b, x_a] \in \sum_t F y_t$.
+Since $[x_b, x_a] = \sum_t F x_t$ and $\iota[x_b, x_a]
