@@ -276,4 +276,4 @@ We have
 .\end{align*}
 \]
 
-but since $h\to 0$ will force $y\to x$ in the integral, by continuity of measure, we can choose an $h$ small enough such that $x,y \in B_h(x) \implies \int_
+but since $h\to 0$ will force $y\to x$ in the integral, by continuity of measure, we can choose an $h$ small enough such that $x,y \in B_h(x) \implies \int \abs{f(y) - f(x)} < \varepsilon$.
