@@ -269,5 +269,6 @@ We have
 \begin{align*}
 \int_\RR \abs{A_h(f)(x) - f(x)} ~dx 
 &= \int_\RR \abs{ \left(\int_{B(h, x)} f(y)~dy\right) - f(x)}~dx \\
+&= \int_\RR \abs{ \left(\int_{B(h, x)} f(y)~dy\right) - \int_{B(h, x)} f(x) ~dy}~dx \\
 .\end{align*}
 \]
