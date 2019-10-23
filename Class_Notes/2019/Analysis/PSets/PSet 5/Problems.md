@@ -122,3 +122,74 @@ It thus remains to show that $\int F$ is equal to its iterated integrals, and th
 
 Since $F$ is non-negative, Tonelli can be applied directly if $F$ is measurable in $\RR^2$.
 But $f$ is measurable on $A$, since it is continuous at almost every point in $A$, and $\chi_A$ is measurable, so $F$ is a product of measurable functions and thus measurable. 
+
+# Problem 4
+
+## Part (a)
+
+For any $x\in \RR^n$, let $A_x \coloneqq A \intersect (x-B)$.
+
+We can then write $A_t \coloneqq A \intersect (t-B)$ and $A_s \coloneqq A \intersect(s-B)$, and thus
+\[
+\begin{align*}
+g(t) - g(s) 
+&= m(A_t) - m(A_s) \\
+&= \int_{\RR^n} \chi_{A_t}(x) ~dx - \int_{\RR^n} \chi_{A_s}(x)~dx \\
+&= \int_{\RR^n} \chi_{A_t}(x) - \chi_{A_s}(x) ~dx \\
+&= \int_{\RR^n} \chi_{A_t}(x) - \chi_{A_t}(t-s+x) ~dx \\ 
+&\quad\quad (\text{since } x\in s-B \iff s-x \in B \iff t-(s-x) \in t-B)
+,\end{align*}
+\]
+
+and thus by continuity in $L^1$, we have
+\[
+\begin{align*}
+\abs{g(t) - g(s)} 
+&\leq \int_{\RR^n} \abs{\chi_{A_t}(x) - \chi_{A_t}(t-s+x)} ~dx \to 0 \quad \text{as}\quad t\to s 
+\end{align*}
+\]
+
+which means $g$ is continuous.
+
+To see that $\int g = m(A) m(B)$, if an interchange of integrals is justified, we can write
+\[
+\begin{align*}
+\int_{\RR^n} g(t) ~dt 
+&= \int_{\RR^n} \int_{\RR^{n}} \chi_{A_t}(x) ~dx ~dt \\ 
+&= \int_{\RR^n} \int_{\RR^{n}} \chi_{A}(x) \chi_{t-B}(x, t) ~dx ~dt \\ 
+&= \int_{\RR^n} \int_{\RR^{n}} \chi_{A}(x)\chi_{t-B}(x, t) ~dx ~dt \\ 
+&= \int_{\RR^n} \int_{\RR^{n}} \chi_{A}(x)~ \chi_{B}(t-x) ~dx ~dt \\ 
+&\quad\quad (\text{since } x\in t-B \iff t-x \in B) \\
+&=_? \int_{\RR^n} \int_{\RR^{n}} \chi_{A}(x)~ \chi_{B}(t-x) ~\mathbf{dt} ~\mathbf{dx} \\ 
+&= \int_{\RR^n} \chi_A(x)\int_{\RR^{n}} \chi_{B}(t-x) ~dt ~dx \\ 
+&= \int_{\RR^n} \chi_{A}(x) ~m(B) ~dt \\ 
+&\quad\quad (\text{by translation invariance of Lebesgue integral}) \\
+&= m(B) \int_{\RR^n} \chi_{A} ~dt \\ 
+&= m(B) m(A)
+.\end{align*}
+\]
+### Justification for integral switch
+To see that this is justified, we note that that the map $F(x,t) = \chi_{A}(x) ~\chi_{B}(x-t)$ is non-negative, and we claim is measurable in $\RR^{2n}$.
+
+- The first component is $\chi_A(x)$, which is measurable on $\RR^n$, and thus the cylinder over it will be measurable on $\RR^{2n}$.
+- The second component involves $\chi_B(t-x)$, which is $\chi_B(x)$ composed with a reflection (which is still measurable) followed by a translation (which is again still measurable).
+- Thus, as a product of two measurable functions, the integrand is measurable.
+
+So Tonelli applies to $\abs{F}$, and thus $\int \abs{F} = m(A) m(B) < \infty$ since $A, B$ were assumed to be bounded. But then $F$ is integrable by Fubini, and the claimed equality holds.
+
+## Part (b)
+
+Supposing that $m(A), m(B) > 0$, we have $\int g(t) ~dt > 0$, using the fact that $\int g = 0$ a.e. $\iff g=0$ a.e., we can conclude that if $T = \theset{t\suchthat g(t) \neq 0}$, then $m(T) > 0$.
+So there is some $t\in \RR^n$ such that $g(t) \neq 0$, and since $g$ is continuous, there is in fact some open ball $B_t$ containing $t$ such that $t' \in B_t \implies g(t') \neq 0$.
+So we have
+
+- $\forall t'\in B_t, ~A\intersect t'-B \neq \emptyset \iff$
+- $\forall t' \in B_t, ~\exists x \in A \intersect t' - B \iff$
+- $\forall t' \in B_t,~ \exists x$ such that $x\in A$ and $x\in t'-B \iff$ 
+- $\forall t' \in B_t,~ \exists x$ such that $x\in A$ and $x = t'-B$ for some $b\in B \iff$ 
+- $\forall t' \in B_t,~ \exists x$ such that $x\in A$ and $t' = x+B$ for some $b\in B \iff$ 
+- $\forall t' \in B_t,~ \exists t'$ such that $t'\in A+B$
+
+And thus $B_t \subseteq A+B$.
+
+# Problem 5
