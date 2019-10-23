@@ -261,3 +261,6 @@ To justify the change in the order of integration, consider the function $H(x, y
 Since $f$ is measurable, the constant function $(x, y) \mapsto \frac{1}{2h}$ is measurable, and characteristic functions are measurable, $H$ is a product of measurable functions and thus measurable.
 
 Then $\int_{\RR^2} \abs H = \int_\RR \abs{A_h(f)} < \infty$, so $H \in L^1(\RR^2)$, and Fubini applies.
+
+
+## Part (b)
