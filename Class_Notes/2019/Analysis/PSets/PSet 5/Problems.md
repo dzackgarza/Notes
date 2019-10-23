@@ -278,5 +278,5 @@ Let $\varepsilon>0$; we then have
 \]
 
 but since $h\to 0$ will force $y\to x$ in the integral, for a fixed $x$ we can let $\tau_x(y) = f(y-x)$ and we have $\norm{\tau_x - f}_1 \to 0$ by continuity in $L^1$.
-Thus $\int_{-h}^h \abs{f(y-x) - f(x)} \to 0$, forcing $\norm{A_h(f) - f}_1 \to 0$ as $h\to 0$.
+Thus $\int_{-h}^h \abs{f(y-x) - f(x)} \to 0$, forcing $\norm{A_h(f) - f}_1 \to 0$ as $h\to 0$. $\qed$
 
