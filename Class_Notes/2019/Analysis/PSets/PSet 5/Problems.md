@@ -121,4 +121,4 @@ Since $F$ is non-negative, we have $\abs F = F$, and so the above computation wo
 It thus remains to show that $\int F$ is equal to its iterated integrals, and that the switch of integration order is justified
 
 Since $F$ is non-negative, Tonelli can be applied directly if $F$ is measurable in $\RR^2$.
-But 
+But $f$ is measurable on $A$, since it is continuous at almost every point in $A$, and $\chi_A$ is measurable, so $F$ is a product of measurable functions and thus measurable. 
