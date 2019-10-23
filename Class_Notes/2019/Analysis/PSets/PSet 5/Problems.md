@@ -276,13 +276,15 @@ Let $\varepsilon>0$; we then have
 .\end{align*}
 \]
 
-but since $h\to 0$ will force $y\to x$ in the integral, by continuity in $L^1$, we can choose an $h$ small enough such that $x,y \in B_h(x) \implies \int \abs{f(y) - f(x)} < \varepsilon$, thus
+but since $h\to 0$ will force $y\to x$ in the integral, by continuity in $L^1$, we can choose an $h'$ small enough such that $x,y \in B_h(x) \implies \int \abs{f(y) - f(x)} < \varepsilon$.
+
+Thus, for $h<h'$, we have
 \[
 \begin{align*}
-\lim_{h\to 0} \int_\RR \abs{A_h(f)(x) - f(x)} ~dx 
-&\leq \lim_{h\to 0}
+\int_\RR \abs{A_h(f)(x) - f(x)} ~dx 
+&\leq 
 \int_\RR \frac{1}{2h} \int_{x-h}^{x+h} \abs{ f(y) - f(x) ~dy}~dx \\
-&\leq \lim_{h\to 0} \int_\RR \frac{1}{2h} \varepsilon ~dx \\
+&\leq \int_\RR \frac{1}{2h} \varepsilon ~dx \\
 &\leq \lim_{h\to 0} \frac{1}{2h} \varepsilon \int_\RR ~dx \\
 .\end{align*}
 \]
