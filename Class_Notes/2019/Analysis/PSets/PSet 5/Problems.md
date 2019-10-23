@@ -244,5 +244,6 @@ We have
 &= \int_\RR \abs{\frac{1}{2h} \int_{x-h}^{x+h} f(y)~dy} ~dx \\
 &= \frac{1}{2h} \int_\RR \abs{\int_{x-h}^{x+h} f(y)~dy}~dx    \\
 &\leq \frac{1}{2h} \int_\RR \left(\int_{x-h}^{x+h} \abs{f(y)}~dy\right)~dx    \\
+&= \frac{1}{2h} \int_\RR \int_{x-h}^{x+h} \abs{f(y)}~dy ~dx    \\
 .\end{align*}
 \]
