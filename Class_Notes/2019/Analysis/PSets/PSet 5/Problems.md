@@ -241,6 +241,8 @@ We have
 \[
 \begin{align*}
 \int_\RR \abs{A_h(f)(x)} ~dx 
-&= \int_\RR \abs{\frac{1}{2h} \int_{x-h}^{x+h} f(y)~dy} ~dx
+&= \int_\RR \abs{\frac{1}{2h} \int_{x-h}^{x+h} f(y)~dy} ~dx \\
+&= \frac{1}{2h} \int_\RR \abs{\int_{x-h}^{x+h} f(y)~dy}    \\
+&= \frac{1}{2h} \int_\RR    \\
 .\end{align*}
 \]
