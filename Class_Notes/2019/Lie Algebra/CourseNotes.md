@@ -3022,3 +3022,7 @@ f([[a,b], c]) \\
 \]
 
 where the last equality is found by expanding the expression backwards.
+
+# Friday October 25
+
+Upcoming
