@@ -2971,6 +2971,7 @@ We'll check that $f$ is well-defined.
 In the above definition, note that $f(\vector x)$ can be defined using different inversions of the indices, we'd like to show that these yield the same map.
 
 Let $(\ell, \ell+1)$ and $(\ell', \ell'+1)$ be two distinct inversions. Then set
+
 \[
 \begin{align*}
 a = x_{j_\ell} \\
