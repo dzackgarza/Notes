@@ -250,4 +250,4 @@ We have
 \]
 
 where the changed bounds of integration are determined by considering the following diagram:
-![Image](figures/2019-10-22-22:32.png)
+![Changing the bounds of integration](figures/2019-10-22-22:32.png)
