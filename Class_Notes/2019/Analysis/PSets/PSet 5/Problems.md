@@ -168,7 +168,6 @@ To see that $\int g = m(A) m(B)$, if an interchange of integrals is justified, w
 &= m(B) m(A)
 .\end{align*}
 \]
-### Justification for integral switch
 To see that this is justified, we note that that the map $F(x,t) = \chi_{A}(x) ~\chi_{B}(x-t)$ is non-negative, and we claim is measurable in $\RR^{2n}$.
 
 - The first component is $\chi_A(x)$, which is measurable on $\RR^n$, and thus the cylinder over it will be measurable on $\RR^{2n}$.
