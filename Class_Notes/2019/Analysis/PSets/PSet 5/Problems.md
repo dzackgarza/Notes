@@ -258,3 +258,6 @@ since $f$ was assumed to be in $L^1(\RR)$, where the changed bounds of integrati
 ![Changing the bounds of integration](figures/2019-10-22-22:32.png)
 
 To justify the change in the order of integration, consider the function $H(x, y) = \frac{1}{2h} \chi_A(x, y) f(y)$ where $A = \theset{(x, y) \in \RR^2 \suchthat -\infty < x-h \leq x, y \leq x+h}$.
+Since $f$ is measurable, the constant function $(x, y) \mapsto \frac{1}{2h}$ is measurable, and characteristic functions are measurable, $H$ is a product of measurable functions and thus measurable.
+
+Then $\int_{\RR^2} \abs H = \int_\RR \abs{A_h(f)} < \infty$, so $H \in L^1(\RR^2)$, and Fubini applies.
