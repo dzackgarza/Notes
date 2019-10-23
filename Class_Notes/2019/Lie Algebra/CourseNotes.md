@@ -2901,3 +2901,13 @@ Recall from last time:
 For $\lieg$ a lie algebra, we define $T(\lieg)$ the tensor algebra, and the universal enveloping algebra $U(\lieg) = T(\lieg)/\sim$ where $x\tensor y - y\tensor x \sim [x, y]$.
 
 We also described the *PBW Theorem*, which provides a basis for $U(\lieg)$.
+
+Proof of PBW Theorem:
+
+We have $T(\lieg) = \span\theset{x_{j_1} \tensor \cdots \tensor x_{j_k} \suchthat j_1, \cdots, j_k \in I}$, where we note that there are not required to be ordered.
+Thus $U(\lieg) = \span\theset{y_{j_1} \tensor \cdots \tensor y_{j_k} \suchthat j_1, \cdots, j_k \in I}$, where which are again not required to be ordered.
+We would thus like to express every term here as some linear combination of monomials in the $y_{i_j}$ with increasing indices.
+We proceed by inducting on $k$, the number of tensor factors occurring.
+The base case is clear.
+
+For $k> 1$, supposing that the element is *not* a PBW monomial, then there is some inversion in the indices $(j_1, \cdots, j_k)$, i.e. there is at least one $i$ such that $j_{i+1} < j_i$.
