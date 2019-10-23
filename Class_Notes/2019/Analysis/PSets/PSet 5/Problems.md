@@ -28,7 +28,7 @@ But this holds for every $B$ and thus holds if we take the supremum over all of 
 To see that $S \leq S'$, we can just note that
 \[
 \begin{align*}
-S = \lim_J\to \infty \sum_{j=1}^J \left( \lim_{K\to\infty} \sum_{k=1}^K a_{jk})
+S = \lim_J\to \infty \sum_{j=1}^J \left( \lim_{K\to\infty} \sum_{k=1}^K a_{jk} \right)
 .\end{align*}
 \]
 
