@@ -227,6 +227,7 @@ To that end, noting that $f, g \in L^1$, we have $\int_0^1 f \coloneqq C_f < \in
 &= \int_0^1 \abs{g(y)} C_f ~dy \\
 &= C_f \int_0^1 \abs{g(y)} ~dy \\
 &= C_f C_g < \infty
-.\end{align*}
+,\end{align*}
 \]
 
+and thus by Fubini, the original interchange of integrals was justified.
