@@ -201,6 +201,6 @@ We have
 &\coloneqq  
 \int_0^1 \left(\int_0^x f(y)~dy\right)g(x) ~dx \\
 &= \int_0^1 \int_0^x f(y)g(x) ~dy~dx \\
-&= \int_0^1 \int_0^x f(y)~dy~dx \\
+&=_? \int_0^1 \int_0^x f(y)g(x) ~dy~dx \\
 .\end{align*}
 \]
