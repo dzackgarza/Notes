@@ -3010,7 +3010,10 @@ f(\vector x_{(\ell)}) + f(\vector x_{[\ell]})
 f([[a,b], c]) \\
 &= f(c\tensor b \tensor a)
 + f(c\tensor [a,b])
-+ f(b\tensor [a,c]) +
++ f(b \tensor [a,c])
 f([[a,b], c]) \\
+
++ f(b\tensor [a,c]) +
+f([[a,b], c])
 .\end{align*}
 \]
