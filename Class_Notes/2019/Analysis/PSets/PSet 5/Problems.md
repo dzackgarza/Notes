@@ -204,7 +204,7 @@ We have
 &= \int_0^1 f(y) \left(\int_y^1 g(x) ~dx \right) ~dy \\
 &= \int_0^1 f(y)(G(1) - G(y)) ~dy \\
 &= G(1)\int_0^1 f(y) ~dy - \int_0^1 f(y)G(y)~dy \\
-&= G(1)(F(1) -  F(0)) - \int_0^1 f(y)G(y)~dy
+&= G(1)(F(1) -  F(0)) - \int_0^1 f(y)G(y)~dy \\
 &= G(1)F(1) - \int_0^1 f(y)G(y)~dy \quad\quad\text{since } F(0) = 0
 .\end{align*}
 \]
