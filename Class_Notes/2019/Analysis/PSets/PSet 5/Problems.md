@@ -272,5 +272,8 @@ We have
 &= \int_\RR \abs{ \left(\frac{1}{2h} \int_{B(h, x)} f(y)~dy\right) - \frac{1}{2h}\int_{B(h, x)} f(x) ~dy}~dx \\
 &\quad\quad \text{since } \frac{1}{2h}\int_{x-h}^{x+h} f(x) ~dy = \frac{1}{2h}f(x)((x+h) - (x-h)) = \frac{1}{2h}f(x) 2h = f(x) \\
 &= \int_\RR \abs{ \frac{1}{2h} \int_{B(h, x)} f(y) - f(x) ~dy}~dx \\
+&\leq \int_\RR \frac{1}{2h} \int_{B(h, x)} \abs{ f(y) - f(x) ~dy}~dx \\
 .\end{align*}
 \]
+
+but since $h\to 0$ will force $y\to x$ in the integral, by continuity of measure, we can choose an $h$ small enough such that $x,y \in B_h(x) \implies \int_
