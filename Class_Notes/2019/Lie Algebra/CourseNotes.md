@@ -2998,4 +2998,19 @@ f(\vector x_{(\ell)}) + f(\vector x_{[\ell]})
 .\end{align*}
 \]
 
+Case 2: $\ell+1 = \ell'$
 
+\[
+\begin{align*}
+f(\vector x_{(\ell)}) + f(\vector x_{[\ell]}) 
+&= f(\cdots b\tensor a\tensor x) + f(\cdots [a,b] \tensor c) \\
+&= f(b\tensor c \tensor a)
++ f(c\tensor [a,b])
++ f(b\tensor [a,c]) +
+f([[a,b], c]) \\
+&= f(c\tensor b \tensor a)
++ f(c\tensor [a,b])
++ f(b\tensor [a,c]) +
+f([[a,b], c]) \\
+.\end{align*}
+\]
