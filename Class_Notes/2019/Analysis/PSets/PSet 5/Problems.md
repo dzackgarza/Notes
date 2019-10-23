@@ -248,3 +248,5 @@ We have
 &=_? \frac{1}{2h} \int_\RR \int_{x-h}^{x+h} \abs{f(y)} ~\mathbf{dx} ~\mathbf{dy}    \\
 .\end{align*}
 \]
+
+![Image](figures/2019-10-22-22:32.png)
