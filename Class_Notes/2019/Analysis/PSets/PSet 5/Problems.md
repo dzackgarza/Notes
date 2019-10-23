@@ -220,7 +220,8 @@ But then $\abs{H}$ is non-negative and measurable, so by Tonelli all iterated in
 \[
 \begin{align*}
 \int_{\RR^2} \abs H 
-&= \int \int \abs{f(x) g(y)} ~dx dy \\
-&= \int \int \abs{f(x)} {g(y)} ~dx dy
+&= \int \int \abs{f(x) g(y)} ~dx ~dy \\
+&= \int \int \abs{f(x)} \abs{g(y)} ~dx ~dy
+&= \int \abs{g(y)} \left(\int \abs{f(x)} ~dx\right) ~dy
 .\end{align*}
 \]
