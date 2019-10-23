@@ -2896,5 +2896,8 @@ $B = \theset{f^a e^b h^c \suchthat a,b,c \in \NN}$.
 
 # Wednesday October 23
 
-Upcoming
+Recall from last time:
 
+For $\lieg$ a lie algebra, we define $T(\lieg)$ the tensor algebra, and the universal enveloping algebra $U(\lieg) = T(\lieg)/\sim$ where $x\tensor y - y\tensor x \sim [x, y]$.
+
+We also described the *PBW Theorem*, which provides a basis for $U(\lieg)$.
