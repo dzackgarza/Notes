@@ -194,7 +194,7 @@ And thus $B_t \subseteq A+B$.
 
 # Problem 5
 
-We have
+If the iterated integrals exist and are equal (so an interchange of integration order is justified), we have
 \[
 \begin{align*}
 \int_0^1 F(x) g(x) 
@@ -206,5 +206,21 @@ We have
 &= G(1)\int_0^1 f(y) ~dy - \int_0^1 f(y)G(y)~dy \\
 &= G(1)(F(1) -  F(0)) - \int_0^1 f(y)G(y)~dy \\
 &= G(1)F(1) - \int_0^1 f(y)G(y)~dy \quad\quad\quad\text{since } F(0) = 0
+,\end{align*}
+\]
+
+which is what we want to show.
+
+To see that this is justified, let $I = [0, 1]$ and note that the integrand can be written as $H(x, y) = \hat f(x, y) \hat g(x, y)$ where $\hat f(x, y) = \chi_I f(y)$ and $\hat g(x, y) = \chi_I g(x)$ are cylinders over $f$ and $g$ respectively. 
+Since $f, g$ are in $L^1(I)$, their cylinders are measurable over $\RR \cross I$, and thus $\hat f, \hat g$ are measurable on $\RR^2$ as products of measurable functions.
+Then $H$ is a measurable function as a product of measurable functions as well.
+
+But then $\abs{H}$ is non-negative and measurable, so by Tonelli all iterated integrals will be equal. We want to show that $H \in L^1(\RR^2)$ in order to apply Fubini, so we compute
+
+\[
+\begin{align*}
+\int_{\RR^2} \abs H 
+&= \int \int \abs{f(x) g(y)} ~dx dy \\
+&= \int \int \abs{f(x)} {g(y)} ~dx dy
 .\end{align*}
 \]
