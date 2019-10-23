@@ -2915,5 +2915,4 @@ Now for any two indices $a,b \in I$, we have
 $$
 \iota(x_b \tensor x_a) = \iota(x_a \tensor x_b + [x_b, x_a]) \implies  y_b y_a = y_a y_b + \iota([x_b, x_a])
 $$
-
-
+Since $[x_b, x_a] = \sum_t F x_t$ and $\iota[x_b, x_a] \in \sum_t F y_t$.
