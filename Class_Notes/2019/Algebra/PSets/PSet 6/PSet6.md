@@ -145,5 +145,11 @@ But $L$ is not the splitting field of any irreducible polynomial in $\QQ[x]$, so
 This is true. By the Galois correspondence, it suffices to show that $H \coloneqq \mathrm{Gal}(M/L)$ is a normal subgroup of $G \coloneqq \mathrm{Gal}(M/ K)$. 
 To that end, let $\phi \in G$, so $\phi: M \to M$ is a lift of $\id_K$. 
 Then $H \normal G$ iff $\phi H \phi\inv = H$.
-Letting $\sigma \in H$, we need to show that $\phi\inv \circ \sigma \circ \phi(L) = L$, i.e. that this composition is some automorphism of $M$ that fixes $L$.
+Letting $\sigma \in H$, we need to show that 
+$$
+\phi\inv \circ \sigma \circ \phi(L) = L,
+$$ 
+i.e. that this composition is some automorphism of $M$ that fixes $L$.
+
+
 
