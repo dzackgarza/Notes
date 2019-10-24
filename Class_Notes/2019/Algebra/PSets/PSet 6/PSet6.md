@@ -112,6 +112,12 @@ In particular, if $u\in L$, then $f$ splits in $L$, and so $L$ contains the spli
 ### Part 1
 If $L/K$ is a finite field extension which is both separable and a splitting field of some polynomial in $K[x]$, then $[L: K] = \abs{\Gal}{L/ K}$.
 
+### Part 2
+
+The extension $\QQ(\zeta_{43})$ is the splitting field of the cyclotomic polynomial $\Phi_{43}(x) = \sum_{i=1}^42 x^i$, which is degree $\phi(43) = 42$ since $43$ is prime.
+
+Moreover, the Galois group is isomorphic to $\ZZ_{43}\units \isomorphic \ZZ_{42}$.
+
 ## Problem 2
 
 ## Problem 3
