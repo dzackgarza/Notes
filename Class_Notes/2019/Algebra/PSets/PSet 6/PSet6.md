@@ -109,6 +109,9 @@ In particular, if $u\in L$, then $f$ splits in $L$, and so $L$ contains the spli
 
 ## Problem 1
 
+### Part 1
+If $L/K$ is a finite field extension which is both separable and a splitting field of some polynomial in $K[x]$, then $[L: K] = \abs{\Gal}{L/ K}$.
+
 ## Problem 2
 
 ## Problem 3
