@@ -21,6 +21,8 @@ We have the following subgroup diagram:
 
 where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions:
 
+![Image](figures/2019-10-24-10:25.png)
+
 
 
 ## Problem 2
