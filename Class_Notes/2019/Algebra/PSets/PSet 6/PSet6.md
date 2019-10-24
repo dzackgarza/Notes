@@ -151,5 +151,16 @@ $$
 $$ 
 i.e. that this composition is some automorphism of $M$ that fixes $L$.
 
+Consider how this acts on elements of $L$. If $\ell \in L$, then $\ell = \sum k_i \ell_i$ since $L$ is a finite-degree extension, thus algebraic, thus spanned by some basis $\ell_i \in L$ as a vector space over $K$.
 
+In particular, since $\phi$ is some $M\dash$automorphism, it restricts to an $L\dash$automorphism, which must send each $\ell_i$ to some conjugate $\ell_i'$.
 
+We thus have 
+\[
+\begin{align*}
+(\phi\inv \sigma \phi)(a) &=
+(\phi\inv \sigma \phi)(\sum k_i \ell_i) \\
+&= (\phi\inv \sigma)(\sum k_i \phi(\ell_i)) \\
+&= (\phi\inv \sigma)(\sum k_i \ell_i') \\
+.\end{align*}
+\]
