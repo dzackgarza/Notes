@@ -148,7 +148,7 @@ $$
 
 To see that $K(u)$ is not Galois, we just note that since $f$ was irreducible, and $u$ was only one root of $f$, $K(u)$ is not the splitting field of $f$, and is thus not the splitting field of any other irreducible polynomial over $K$.
 
-To see that $\mathrm{Aut}(K(u)/ K) $ is trivial,
+To see that $\mathrm{Aut}(K(u)/ K)$ is trivial,
 
 ### Part 2
 
