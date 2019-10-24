@@ -56,8 +56,8 @@ In summary, we've found that $\phi(n) = 2$ implies that
 
 - $3 \divides n$, 9 does not divide $n$, and
   - $2\divides n$, 4 does not divide $n$
-  - $2$ does not divides $n$
-- $2^2 \divides n, 2^3$ does not divides n.
+  - $2$ does not divide $n$
+- $2^2 \divides n, 2^3$ does not divide n.
 
 This reduces the possibilities to the finite set $n \in \theset{6,3,4}$, and $\phi(6) = \phi(3) = \phi(4) = 2$. $\qed$
 
