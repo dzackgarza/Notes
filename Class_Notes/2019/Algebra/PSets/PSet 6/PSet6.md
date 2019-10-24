@@ -27,7 +27,7 @@ The only remaining possibilities are $S^4$ and $D^4$. $\qed$
 
 To see that $\phi(n)$ is even for all $n>2$, we can take a prime factorization of $n$ and write
 $$
-\phi(n) = \phi\left( \prod_{i=1}^m p_i^{k_i}\right) = \prod_{i=1}^m \phi(p_i^{k_i}) = \prod_{i=1}^m p^{k_i - 1}(p - 1) = \prod_{i=1}^m p^{k_i - 1} \prd_{i=1}^m (p - 1)
+\phi(n) = \phi\left( \prod_{i=1}^m p_i^{k_i}\right) = \prod_{i=1}^m \phi(p_i^{k_i}) = \prod_{i=1}^m p^{k_i - 1}(p - 1) = \prod_{i=1}^m p^{k_i - 1} \prod_{i=1}^m (p - 1)
 $$
 
 where each $k_i \geq 1 \implies k_i-1 \geq 0$. But every prime power is odd, and $p-1$ is even for every prime, so 
