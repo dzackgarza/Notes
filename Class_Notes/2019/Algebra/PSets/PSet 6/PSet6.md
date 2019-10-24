@@ -140,6 +140,8 @@ there is some $n$ such that $L_n = L$. But then $L$ is a radical extension over 
 
 ## Problem 6
 
+### Part 1
+
 ### Part 2
 
 The normal closure $L$ of $K$ is defined as the smallest extension of $K$ such that if $\alpha$ is a root of any irreducible polynomial in $K[x]$ and $\alpha \in L$, then all of its conjugates are in $L$ as well.
