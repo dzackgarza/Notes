@@ -21,7 +21,7 @@ We have the following subgroup diagram (Figure 1).
 
 where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions (Figure 2).
 
-![Subgroups up to Conjugacy](figures/2019-10-24-10:25.png)
+![Subgroups up to Conjugacy](figures/2019-10-24-10:31.png)
 
 We can explicitly identify the relevant automorphisms:
 \[
