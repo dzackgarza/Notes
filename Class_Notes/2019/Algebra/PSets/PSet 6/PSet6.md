@@ -46,9 +46,10 @@ We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2
 \]
 
 which, up to conjugacy, fix the following intermediate field extensions:
+
 \[
 \begin{tikzcd}
-                                                         &  & \QQ \arrow[rrrrdd] \arrow[rrdd] \arrow[lldd, dashed] \arrow[dd] &                                     &                                                        &  &                                       \\
+                                                         &  & {\QQ} \arrow[rrrrdd] \arrow[rrdd] \arrow[lldd, dashed] \arrow[dd] &                                     &                                                        &  &                                       \\
                                                          &  &                                                                 &                                     &                                                        &  &                                       \\
 {\QQ(\sqrt[3] 2)} \arrow[rrrrdd] \arrow[rrdd] \arrow[dd] &  & \QQ(\sqrt 3) \arrow[rrrrdd] \arrow[lldd, dashed]                &                                     & \QQ(\zeta_3 \sqrt 3) \arrow[rrdd] \arrow[lldd, dashed] &  & \QQ(\zeta_3) \arrow[dd] \arrow[lldd]  \\
                                                          &  &                                                                 &                                     &                                                        &  &                                       \\
