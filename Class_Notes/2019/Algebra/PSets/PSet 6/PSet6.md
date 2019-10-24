@@ -120,7 +120,11 @@ Moreover, the Galois group is isomorphic to $\ZZ_{43}\units \isomorphic \ZZ_{42}
 
 ### Part 3
 
+Since proper subfields will correspond to intermediate extensions which will correspond to subgroups of the Galois group, this problem is reduced to counting the number of distinct subgroups of $\ZZ_{42}$.
+This is a cyclic group, so there is exactly one subgroup of order $d$ for each $d$ dividing 42. Since $42 = 2*3*7$, we have
 
+- A subgroup of order 2, corresponding to a field extension of degree 21.
+- A subgroup of order 3, corresponding to a field extension of degree 21.
 
 ## Problem 2
 
