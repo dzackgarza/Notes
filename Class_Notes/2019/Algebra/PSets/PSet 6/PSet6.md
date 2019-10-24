@@ -31,7 +31,7 @@ We can explicitly identify the relevant automorphisms:
 \gamma: \sqrt 3 \mapsto -\sqrt 3
 .\end{align*}
 \]
-
+We can then identify $r = \sigma\gamma$ and $s = \tau$ is the given presentation of $D_6$.
 
 
 ## Problem 2
