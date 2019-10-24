@@ -162,5 +162,8 @@ We thus have
 (\phi\inv \sigma \phi)(\sum k_i \ell_i) \\
 &= (\phi\inv \sigma)(\sum k_i \phi(\ell_i)) \\
 &= (\phi\inv \sigma)(\sum k_i \ell_i') \\
+&= (\phi\inv)(\sum k_i \sigma(\ell_i')) \\
+&= (\phi\inv)(\sum k_i \ell_i') \\
+&= \sum k_i \phi\inv(\ell_i') \\
 .\end{align*}
 \]
