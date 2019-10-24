@@ -16,11 +16,9 @@ Since we know that the splitting field of $\QQ(\sqrt[3] 2)/ \QQ$ has Galois grou
 This reduces the possibilities just $D_3 \cross \ZZ_2 \cong D_6$.
 
 We have the following subgroup diagram (Figure 1).
-
 ![Subgroup Diagram](figures/2019-10-24-10:23.png)
 
 where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions (Figure 2).
-
 ![Subgroups up to Conjugacy](figures/2019-10-24-11:25.png)
 
 We can explicitly identify the relevant automorphisms:
@@ -46,7 +44,6 @@ We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2
 \]
 
 which, up to conjugacy, fix the following intermediate field extensions (Figure 3).
-
 ![Intermediate Field Extensions up to Conjugacy](figures/2019-10-24-11:25.png)
 
 $\qed$ 
