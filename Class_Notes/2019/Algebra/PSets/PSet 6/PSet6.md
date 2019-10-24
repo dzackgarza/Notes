@@ -17,7 +17,7 @@ This reduces the possibilities just $D_3 \cross \ZZ_2 \cong D_6$.
 
 We have the following subgroup diagram (Figure 1).
 
-![Subgroup Diagram](figures/2019-10-24-10:23.png)
+![Subgroup Diagram](figures/2019-10-24-10:23.png)\
 
 where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions (Figure 2).
 
