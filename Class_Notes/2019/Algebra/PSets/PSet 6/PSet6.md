@@ -36,6 +36,11 @@ So $\phi(n)$ is the product of an even and an odd number, which is always even.
 
 
 ### Part 2
+Suppose $\phi(n) = 2$. Take a prime factorization of $n$, so we have
+$$
+2 = \phi(n) = \prod_{i=1}^m \phi(p_i^{k_i}) 
+
+$$
 
 ## Problem 4
 
