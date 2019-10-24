@@ -145,6 +145,8 @@ By construction, each $\alpha_i$ is a root, and so $E$ is a splitting field for 
 ### Part 3
 
 Since $E$ was shown to be a splitting field, it only remains to show that it is separable.
+But this follows from the fact that each $\alpha_i$ is a separable *element*, since their minimal polynomial over $F$ is $g$.
+So $E$ is a Galois extension.
 
 ## Problem 3
 
