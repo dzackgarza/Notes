@@ -132,6 +132,10 @@ This is a cyclic group, so there is exactly one subgroup of order $d$ for each $
 
 ## Problem 2
 
+### Part 1
+
+A splitting field of $f$ over $F$ is an extension $L \geq F$ that contains every root of $f$, so that $f$ can be decomposed as a product of linear factors i.e. $f(x) = \prod (x-\alpha_i)^{m_i}$ in $L[x]$.
+
 ## Problem 3
 
 ### Part 1
