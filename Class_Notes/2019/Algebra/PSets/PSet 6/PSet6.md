@@ -49,19 +49,6 @@ which, up to conjugacy, fix the following intermediate field extensions:
 
 ![Intermediate Field Extensions up to Conjugacy](figures/2019-10-24-11:25.png)
 
-<!--\[-->
-<!--\begin{tikzcd}-->
-                                                                <!--&  & \mathbb{Q} \arrow[rrrrdd] \arrow[rrdd] \arrow[lldd, dashed] \arrow[dd] &                                           &                                                              &  &                                             \\-->
-                                                                <!--&  &                                                                        &                                           &                                                              &  &                                             \\-->
-<!--{\mathbb{Q}(\sqrt[3] 2)} \arrow[rrrrdd] \arrow[rrdd] \arrow[dd] &  & \mathbb Q(\sqrt 3) \arrow[rrrrdd] \arrow[lldd, dashed]                 &                                           & \mathbb Q(\zeta_3 \sqrt 3) \arrow[rrdd] \arrow[lldd, dashed] &  & \mathbb Q(\zeta_3) \arrow[dd] \arrow[lldd]  \\-->
-                                                                <!--&  &                                                                        &                                           &                                                              &  &                                             \\-->
-<!--{\mathbb Q(\sqrt[3] 2, \sqrt 3)} \arrow[rrrdd]                  &  & {\mathbb Q(\zeta_3\sqrt 3 \sqrt[3] 2)} \arrow[rdd]                     &                                           & {\mathbb Q(\zeta_3, \sqrt[3] 2)} \arrow[ldd]                 &  & {\mathbb Q(\zeta_3, \sqrt 3)} \arrow[llldd] \\-->
-                                                                <!--&  &                                                                        &                                           &                                                              &  &                                             \\-->
-                                                                <!--&  &                                                                        & {\mathbb Q(\zeta_3, \sqrt[3] 2, \sqrt 3)} &                                                              &  &                                            -->
-<!--\end{tikzcd}-->
-<!--\]-->
-
-
 $\qed$ 
 
 ## Problem 2
