@@ -147,7 +147,7 @@ To that end, let $\phi \in G$, so $\phi: M \to M$ is a lift of $\id_K$.
 Then $H \normal G$ iff $\phi H \phi\inv = H$.
 Letting $\sigma \in H$, we need to show that 
 $$
-\phi\inv \circ \sigma \circ \phi(L) = L,
+(\phi\inv \circ \sigma \circ \phi)(L) = L,
 $$ 
 i.e. that this composition is some automorphism of $M$ that fixes $L$.
 
