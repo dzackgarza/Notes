@@ -47,7 +47,7 @@ We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2
 
 which, up to conjugacy, fix the following intermediate field extensions:
 
-![Image](figures/2019-10-24-11:24.png)
+![Image](figures/2019-10-24-11:25.png)
 
 <!--\[-->
 <!--\begin{tikzcd}-->
