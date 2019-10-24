@@ -15,11 +15,11 @@ Thus we have an extension of degree 12, and since we've constructed a Galois ext
 Since we know that the splitting field of $\QQ(\sqrt[3] 2)/ \QQ$ has Galois group $D_3$, we must have $D_3 \leq G$.
 This reduces the possibilities just $D_3 \cross \ZZ_2 \cong D_6$.
 
-We have the following subgroup diagram:
+We have the following subgroup diagram (Figure 1).
 
 ![Image](figures/2019-10-24-10:23.png)
 
-where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions:
+where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions (Figure 2).
 
 ![Image](figures/2019-10-24-10:25.png)
 
