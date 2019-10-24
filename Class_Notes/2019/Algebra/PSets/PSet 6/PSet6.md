@@ -49,7 +49,7 @@ which, up to conjugacy, fix the following intermediate field extensions:
 
 \[
 \begin{tikzcd}
-                                                         &  & {\QQ} &                                     &                                                        &  &                                       \\
+                                                         &  & \QQ &                                     &                                                        &  &                                       \\
 \end{tikzcd}
 \]
 
