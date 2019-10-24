@@ -102,6 +102,8 @@ The normal closure $L$ of $K$ is defined as the smallest extension of $K$ such t
 But this means any such polynomial splits in $L$. 
 In particular, if $u\in L$, then $f$ splits in $L$, and so $L$ contains the splitting field $F$.
 
+### Part 3
+
 
 # Qual Problems
 
