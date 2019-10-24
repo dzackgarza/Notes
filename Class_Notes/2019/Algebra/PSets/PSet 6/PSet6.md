@@ -5,6 +5,23 @@ title: Homework 6
 # Homework Problems
 
 ## Problem 1
+The splitting field of this polynomial is $\QQ(\sqrt[3]2, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a primitive third root of unity. 
+
+To get the degree of this extension, we extend fields in the indicated order.
+Since $\QQ(\sqrt[3] 2, \sqrt 3)$ is totally real, the minimal polynomial of $\zeta$ over it still has degree $\phi(3) = 2$.
+A quick check also shows that $\sqrt 3$ is not contained in $\QQ(\sqrt[3] 2)$, yielding another degree 2 extension, and finally a degree 3 extension.
+
+Thus we have an extension of degree 12, and since we've constructed a Galois extension $L$ (a separable splitting field), if we define $G \coloneqq \mathrm{Gal}(\QQ/L)$, we have $\abs G = 12$.
+Since we know that the splitting field of $\QQ(\sqrt[3] 2)/ \QQ$ has Galois group $D_3$, we must have $D_3 \leq G$.
+This reduces the possibilities just $D_3 \cross \ZZ_2 \cong D_6$.
+
+We have the following subgroup diagram:
+
+![Image](figures/2019-10-24-10:23.png)
+
+where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions:
+
+
 
 ## Problem 2
 We can note that since $f$ has 4 roots, the Galois group $G$ of its splitting field will be a subgroup of $S_4$.
