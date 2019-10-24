@@ -21,7 +21,7 @@ We have the following subgroup diagram (Figure 1).
 
 where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions (Figure 2).
 
-![Subgroups up to Conjugacy](figures/2019-10-24-10:31.png)
+![Subgroups up to Conjugacy](figures/2019-10-24-11:25.png)
 
 We can explicitly identify the relevant automorphisms:
 \[
@@ -47,7 +47,7 @@ We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2
 
 which, up to conjugacy, fix the following intermediate field extensions:
 
-![Image](figures/2019-10-24-11:25.png)
+![Intermediate Field Extensions up to Conjugacy](figures/2019-10-24-11:25.png)
 
 <!--\[-->
 <!--\begin{tikzcd}-->
