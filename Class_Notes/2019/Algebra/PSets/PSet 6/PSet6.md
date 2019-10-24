@@ -47,6 +47,7 @@ We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2
 
 which, up to conjugacy, fix the following intermediate field extensions:
 
+\[
 \begin{tikzcd}
                                                                 &  & \mathbb{Q} \arrow[rrrrdd] \arrow[rrdd] \arrow[lldd, dashed] \arrow[dd] &                                           &                                                              &  &                                             \\
                                                                 &  &                                                                        &                                           &                                                              &  &                                             \\
@@ -56,6 +57,8 @@ which, up to conjugacy, fix the following intermediate field extensions:
                                                                 &  &                                                                        &                                           &                                                              &  &                                             \\
                                                                 &  &                                                                        & {\mathbb Q(\zeta_3, \sqrt[3] 2, \sqrt 3)} &                                                              &  &                                            
 \end{tikzcd}
+\]
+$\qed$ 
 
 ## Problem 2
 We can note that since $f$ has 4 roots, the Galois group $G$ of its splitting field will be a subgroup of $S_4$.
