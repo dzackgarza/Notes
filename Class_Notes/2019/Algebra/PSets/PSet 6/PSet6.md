@@ -41,6 +41,8 @@ $$
 2 = \phi(n) = \prod_{i=1}^m \phi(p_i^{k_i}) 
 $$
 
+Since the only factors of 2 are 1 and 2, we must have $\phi(p_i^{k_i}) = 2$ for exactly one $i$.
+
 ## Problem 4
 
 ## Problem 5
