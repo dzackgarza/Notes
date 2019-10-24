@@ -34,6 +34,9 @@ where each $k_i \geq 1 \implies k_i-1 \geq 0$. But every prime power is odd, and
 It is also true that $p-1$ is even for every prime $p$, and the second term is a product of even terms and thus even.
 So $\phi(n)$ is the product of an even and an odd number, which is always even.
 
+
+### Part 2
+
 ## Problem 4
 
 ## Problem 5
