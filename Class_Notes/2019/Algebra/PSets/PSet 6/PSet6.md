@@ -96,7 +96,11 @@ there is some $n$ such that $L_n = L$. But then $L$ is a radical extension over 
 
 ## Problem 6
 
+### Part 2
 
+The normal closure $L$ of $K$ is defined as the smallest extension of $K$ such that if $\alpha$ is a root of any irreducible polynomial in $K[x]$ and $\alpha \in L$, then all of its conjugates are in $L$ as well.
+But this means any such polynomial splits in $L$. 
+In particular, if $u\in L$, then $f$ splits in $L$, and so $L$ contains the splitting field $F$.
 
 
 # Qual Problems
