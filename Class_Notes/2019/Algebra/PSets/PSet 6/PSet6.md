@@ -163,7 +163,7 @@ We thus have
 &= (\phi\inv \sigma)(\sum k_i \phi(\ell_i)) \\
 &= (\phi\inv \sigma)(\sum k_i \ell_i') \\
 &= (\phi\inv)(\sum k_i \sigma(\ell_i')) \\
-&= (\phi\inv)(\sum k_i \ell_i') \\
+&= (\phi\inv)(\sum k_i \ell_i') \quad\text{since $\sigma$ fixes $L$}\\
 &= \sum k_i \phi\inv(\ell_i') \\
 .\end{align*}
 \]
