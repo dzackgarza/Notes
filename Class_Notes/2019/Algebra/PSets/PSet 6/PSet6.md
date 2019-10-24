@@ -25,10 +25,12 @@ The only remaining possibilities are $S^4$ and $D^4$. $\qed$
 
 ### Part 1
 
-To see that $\phi(n)$ is even for all $n>2$, we can write
+To see that $\phi(n)$ is even for all $n>2$, we can take a prime factorization of $n$ and write
 $$
-\phi(n) = \phi\left( \prod_{=1}^m p_i^{k_i}\right) = \prod_{=1}^m \phi(p_i^{k_i}) 
+\phi(n) = \phi\left( \prod_{i=1}^m p_i^{k_i}\right) = \prod_{i=1}^m \phi(p_i^{k_i}) = \prod_{i=1} p^{k_i - 1}(p - 1)
 $$
+
+where each $k_i \geq 1 \implies k_i-1 \geq 0$.
 
 ## Problem 4
 
