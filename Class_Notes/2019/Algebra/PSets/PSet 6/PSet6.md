@@ -31,8 +31,7 @@ We can explicitly identify the relevant automorphisms:
 \gamma: \sqrt 3 \mapsto -\sqrt 3
 .\end{align*}
 \]
-We can then identify $r = \sigma\gamma$ and $s = \tau$ is the given presentation of $D_6$.
-
+We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2 = \gamma^2 = (\sigma\tau)^2 = [\sigma, \gamma] = [\tau, \gamma] = e}$.
 
 ## Problem 2
 We can note that since $f$ has 4 roots, the Galois group $G$ of its splitting field will be a subgroup of $S_4$.
