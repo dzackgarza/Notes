@@ -158,7 +158,7 @@ But this means any such polynomial splits in $L$.
 In particular, if $u\in L$, then $f$ splits in $L$, and so $L$ contains the splitting field $F$.
 
 ### Part 3
-
+By a theorem in class, this would force $\mathrm{Gal}(E/K)$ to be solvable, which would imply that $S_n$ is solvable -- but for $n\geq 5, S_n$ will not be solvable, a contradiction.
 
 # Qual Problems
 
