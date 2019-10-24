@@ -93,7 +93,7 @@ Consider the term that equals 2. We have $\phi(p_i^{k_i}) = p^{k_i - 1}(p-1) = 2
 - Case 2: $p^{k_i - 1} = 2$ and $(p-1) = 1$, so $p=2$ and $k_i = 2$. Thus $2^2$ divides $n$ but $2^\ell$ does not for any $\ell > 2$.
 
 In either case, it remains to check are whether the other factors where $\phi(p_j^{k_j}) = 1$ can contribute any other distinct divisors to $n$.
-We can note that $\phi(p_j^{k_j}$ iff $p^{k_j-1}(p-1) = 1$, so this forces $p=2$ and $k_j = 1$. So $n$ may or may not contain a single factor of 2, but by uniqueness of prime factorization, this can only happen in case 1.
+We can note that $\phi(p_j^{k_j}) = 1$ iff $p^{k_j-1}(p-1) = 1$, so this forces $p=2$ and $k_j = 1$. So $n$ may or may not contain a single factor of 2, but by uniqueness of prime factorization, this can only happen in case 1.
 Note that this also forces $2\divides n$ but $2^2$ does not divide $n$.
 
 In summary, we've found that $\phi(n) = 2$ implies that 
