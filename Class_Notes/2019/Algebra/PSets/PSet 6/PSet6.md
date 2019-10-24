@@ -167,5 +167,7 @@ We thus have
 &= (\phi\inv)(\sum k_i \ell_i') \quad\text{since $\sigma$ fixes $L$}\\
 &= \sum k_i \phi\inv(\ell_i') \\
 &= \sum k_i \ell_i \\
-.\end{align*}
+,\end{align*}
 \]
+
+and so this composite fixes $L$ as desired. This $H \normal G$, which is what we wanted to show.
