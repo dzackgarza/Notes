@@ -47,6 +47,12 @@ We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2
 
 which, up to conjugacy, fix the following intermediate field extensions:
 
+\[
+\begin{tikzcd}
+                                                         &  & {\QQ} \arrow[rrrrdd] \arrow[rrdd] \arrow[lldd, dashed] \arrow[dd] &                                     &                                                        &  &                                       \\
+\end{tikzcd}
+\]
+
 ## Problem 2
 We can note that since $f$ has 4 roots, the Galois group $G$ of its splitting field will be a subgroup of $S_4$.
 Moreover, $G$ must be a *transitive subgroup* of $S_4$, i.e. the action of $G$ on the roots of $f$ should be transitive.
