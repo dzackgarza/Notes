@@ -51,7 +51,7 @@ which, up to conjugacy, fix the following intermediate field extensions:
 \begin{tikzcd}
 & & & & &  & \\
 & & & & &  & \\
-& & & & &  & \\
+& & & & \QQ &  & \\
 \end{tikzcd}
 \]
 
