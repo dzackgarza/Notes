@@ -17,11 +17,11 @@ This reduces the possibilities just $D_3 \cross \ZZ_2 \cong D_6$.
 
 We have the following subgroup diagram (Figure 1).
 
-![Image](figures/2019-10-24-10:23.png)
+![Subgroup Diagram](figures/2019-10-24-10:23.png)
 
 where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions (Figure 2).
 
-![Image](figures/2019-10-24-10:25.png)
+![Subgroups up to Conjugacy](figures/2019-10-24-10:25.png)
 
 We can explicitly identify the relevant automorphisms:
 \[
