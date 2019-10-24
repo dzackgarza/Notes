@@ -118,6 +118,10 @@ The extension $\QQ(\zeta_{43})$ is the splitting field of the cyclotomic polynom
 
 Moreover, the Galois group is isomorphic to $\ZZ_{43}\units \isomorphic \ZZ_{42}$.
 
+### Part 3
+
+
+
 ## Problem 2
 
 ## Problem 3
