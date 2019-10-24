@@ -63,7 +63,7 @@ This reduces the possibilities to the finite set $n \in \theset{6,3,4}$, and $\p
 
 ## Problem 4
 
-Note that since $\zeta(\zeta+\zeta\inv) = \zeta^2 + 1$, we have the relation $\zeta_^2  - (\zeta+\zeta^\inv)\zeta + 1 = 0$. But then
+Note that since $\zeta(\zeta+\zeta\inv) = \zeta^2 + 1$, we have the relation $\zeta^2  - (\zeta+\zeta^\inv)\zeta + 1 = 0$. But then
 $$
 f(x) = x^2 - (\zeta + \zeta\inv)x + 1
 $$
