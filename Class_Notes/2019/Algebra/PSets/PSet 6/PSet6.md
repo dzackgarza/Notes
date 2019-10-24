@@ -134,3 +134,12 @@ This is a cyclic group, so there is exactly one subgroup of order $d$ for each $
 
 ## Problem 3
 
+### Part 1
+
+False: take $K \leq L \leq M$ as $\QQ \leq \QQ(\sqrt[3]2) \leq \QQ(\sqrt[3]2, \zeta_3)$. 
+Then $M$ is the splitting field of $x_3-2$, and in characteristic zero is thus Galois.
+But $L$ is not the splitting field of any irreducible polynomial in $\QQ[x]$, so it is *not* Galois.
+
+### Part 2
+
+
