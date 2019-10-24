@@ -23,6 +23,15 @@ where we can simplify things by only considering conjugacy classes of subgroups,
 
 ![Image](figures/2019-10-24-10:25.png)
 
+We can explicitly identify the relevant automorphisms:
+\[
+\begin{align*}
+\sigma: \sqrt[3] 2 \mapsto \zeta_3 \sqrt[3] 2 \\
+\tau: \zeta_3 \mapsto \zeta_3^2 \\
+\gamma: \sqrt 3 \mapsto -\sqrt 3
+.\end{align*}
+\]
+
 
 
 ## Problem 2
