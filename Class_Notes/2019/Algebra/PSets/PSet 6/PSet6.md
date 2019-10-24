@@ -141,7 +141,8 @@ there is some $n$ such that $L_n = L$. But then $L$ is a radical extension over 
 ## Problem 6
 
 ### Part 1
-Since $f$ is irreducible of degree $n$ and $u$ is a root of $f$, the minimal polynomial of $u$ over $K$ is in fact $f$, and thus the degree of the extension $K(u) / K)$ is given by
+Since $f$ is irreducible of degree $n$ and $u$ is a root of $f$, the minimal polynomial of $u$ over $K$ is in fact $f$, and thus the degree of the extension $K(u) / K$ is given by
+
 $$
 [K(u) : K] = \deg \min(u, K) = n.
 $$
