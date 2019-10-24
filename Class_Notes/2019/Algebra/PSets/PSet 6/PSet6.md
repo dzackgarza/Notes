@@ -52,7 +52,7 @@ which, up to conjugacy, fix the following intermediate field extensions:
 & & & & &  & \\
 & & & & &  & \\
 & & & & &  & \\
-& & & {Q(\zeta_3, \sqrt[3] 2, \sqrt 3)} & & & 
+& & & Q(\zeta_3, \sqrt[3] 2, \sqrt 3) & & & 
 \end{tikzcd}
 \]
 
