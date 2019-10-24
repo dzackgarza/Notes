@@ -10,7 +10,7 @@ Todo
 ## Problem 2
 We can note that since $f$ has 4 roots, the Galois group $G$ of its splitting field will be a subgroup of $S_4$.
 Moreover, $G$ must be a *transitive subgroup* of $S_4$, i.e. the action of $G$ on the roots of $f$ should be transitive.
-This reduces the possibilities to $G = S^4, A^4, D^4, \ZZ_4, \ZZ_2^2$.
+This reduces the possibilities to $G \cong S^4, A^4, D^4, \ZZ_4, \ZZ_2^2$.
 
 Since $f$ has exactly 2 real roots and thus a pair of roots that are complex conjugates, the automorphism given by complex conjugation is an element of $G$.
 But this corresponds to a 2-cycle $\tau = (ab)$, and we can then make the following conclusions:
