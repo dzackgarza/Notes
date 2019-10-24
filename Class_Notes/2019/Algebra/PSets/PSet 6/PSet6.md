@@ -49,7 +49,7 @@ which, up to conjugacy, fix the following intermediate field extensions:
 
 \[
 \begin{tikzcd}
-                                                         &  & {\QQ} \arrow[rrrrdd] \arrow[rrdd] \arrow[lldd, dashed] \arrow[dd] &                                     &                                                        &  &                                       \\
+                                                         &  & {\QQ} &                                     &                                                        &  &                                       \\
 \end{tikzcd}
 \]
 
