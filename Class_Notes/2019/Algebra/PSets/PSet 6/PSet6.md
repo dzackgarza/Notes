@@ -51,8 +51,8 @@ which, up to conjugacy, fix the following intermediate field extensions:
 \begin{tikzcd}
 & & & & &  & \\
 & & & & &  & \\
+{\QQ(\sqrt[3] 2, \sqrt 3)} \arrow[rrrdd]&  & {\QQ(\zeta_3\sqrt 3 \sqrt[3] 2)} \arrow[rdd] & & {\QQ(\zeta_3, \sqrt[3] 2)} \arrow[ldd] &  & {\QQ(\zeta_3, \sqrt 3)} \arrow[llldd] \\
 & & & & &  & \\
-& & & { $\QQ(\zeta_3, \sqrt[3] 2, \sqrt 3)$ } & & & 
 \end{tikzcd}
 \]
 
