@@ -127,7 +127,8 @@ This is a cyclic group, so there is exactly one subgroup of order $d$ for each $
 - A subgroup of order 3, corresponding to a field extension of degree 14,
 - A subgroup of order 6, corresponding to a field extension of degree 7,
 - A subgroup of order 7, corresponding to a field extension of degree 6,
-- A subgroup of order 7, corresponding to a field extension of degree 6,
+- A subgroup of order 14, corresponding to a field extension of degree 3,
+- A subgroup of order 21, corresponding to a field extension of degree 2.
 
 ## Problem 2
 
