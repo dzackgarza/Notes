@@ -31,7 +31,19 @@ We can explicitly identify the relevant automorphisms:
 \gamma: \sqrt 3 \mapsto -\sqrt 3
 .\end{align*}
 \]
-We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2 = \gamma^2 = (\sigma\tau)^2 = [\sigma, \gamma] = [\tau, \gamma] = e}$.
+We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2 = \gamma^2 = (\sigma\tau)^2 = [\sigma, \gamma] = [\tau, \gamma] = e}$, and obtain the following lattice:
+
+\[
+\begin{tikzcd}
+                                            &  & {<\sigma, \tau, \gamma>}                       &                                                         &                                      &  &                                                 \\
+                                            &  &                                                &                                                         &                                      &  &                                                 \\
+<\tau> \times <\gamma> \arrow[rruu, dashed] &  & {<\sigma, \tau>} \arrow[uu]                    &                                                         & {<\sigma, \tau\gamma>} \arrow[lluu]  &  & <\sigma> \times <\gamma> \arrow[lllluu]         \\
+                                            &  &                                                &                                                         &                                      &  &                                                 \\
+<\tau> \arrow[uu] \arrow[rruu, dashed]      &  & <\tau\gamma> \arrow[rruu, dashed] \arrow[lluu] &                                                         & <\gamma> \arrow[rruu] \arrow[lllluu] &  & <\sigma> \arrow[uu] \arrow[lluu] \arrow[lllluu] \\
+                                            &  &                                                &                                                         &                                      &  &                                                 \\
+                                            &  &                                                & <e> \arrow[llluu] \arrow[luu] \arrow[ruu] \arrow[rrruu] &                                      &  &                                                
+\end{tikzcd}
+\]
 
 ## Problem 2
 We can note that since $f$ has 4 roots, the Galois group $G$ of its splitting field will be a subgroup of $S_4$.
