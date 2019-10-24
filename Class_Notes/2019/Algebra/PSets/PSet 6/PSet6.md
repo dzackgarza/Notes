@@ -16,6 +16,9 @@ title: Homework 6
 
 ## Problem 6
 
+
+
+
 # Qual Problems
 
 ## Problem 1
