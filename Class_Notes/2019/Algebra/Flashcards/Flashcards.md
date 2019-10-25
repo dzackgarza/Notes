@@ -97,6 +97,8 @@ Alternating Group
 %
 Subgroup of *even* permutations.
 
+Example: $A_3 = \theset{e, (123), (213)}$
+
 %
 
 group theory
