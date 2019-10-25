@@ -11,7 +11,7 @@ group theory
 
 ---
 
-Prove or disprove: \(\# G = p^k \implies Z(G) \neq \{e\}\)
+Prove or disprove: \[\# G = p^k \implies Z(G) \neq \{e\}\]
 
 %
 
@@ -28,8 +28,7 @@ Class Equation
 
 %
 
-\[
-\]
+\[ \# G = \# Z(G) + \sum_{\text{one $x_i$ from each conjugacy class}} C_G(x_i) \]
 
 %
 
