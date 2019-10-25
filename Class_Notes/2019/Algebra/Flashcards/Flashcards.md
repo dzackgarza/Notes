@@ -2,7 +2,7 @@ Sylow Theorems
 %
 
 \[
-n_p \divides q \\
+n_p \mid q \\
 n_p = 1 \mod p 
 \]
 
