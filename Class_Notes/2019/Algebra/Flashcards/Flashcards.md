@@ -72,3 +72,21 @@ G \geq G_1 \geq G_2 \geq \cdots
 %
 
 group theory
+
+---
+
+Eisenstein Criterion
+%
+If $P(x) = \sum a_i x^i$ in $\mathbb{Q}[x]$, and there is some $p$ such that
+
+- $p$ divides all $a_i$ but not $a_n$, and
+- $p^2$ does not divide $a_0$,
+
+Then $P(x)$ is irreducible over $\mathbb{Q}$.
+
+(Note: you can replace $x$ with $x+a$ for any $a$ to apply this.)
+
+%
+
+group theory
+
