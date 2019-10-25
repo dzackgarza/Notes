@@ -7,12 +7,30 @@ Sylow Theorems
 
 %
 
-math, probability
+group theory
 
 ---
 
-Variance of \(f(x)\)
+Prove or disprove: \(\# G = p^k \implies Z(G) \neq \{e\}\)
 
 %
 
-\[\text{Var}(f(x)) = \mathbb{E}[(f(x) - \mathbb{E}[f(x)])^2]\]
+By the class equation. (TODO)
+
+%
+
+group theory
+
+---
+
+
+Class Equation
+
+%
+
+\[
+\]
+
+%
+
+group theory
