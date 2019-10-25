@@ -90,3 +90,30 @@ Then $P(x)$ is irreducible over $\mathbb{Q}$.
 
 group theory
 
+---
+
+Alternating Group
+
+%
+Subgroup of *even* permutations.
+
+%
+
+group theory
+
+---
+
+Even/odd permutations:
+
+%
+Parity of number of transpositions.
+
+Alternatively, as product of disjoint cycles:
+
+- Odd iff odd number of even length cycles
+- Even iff even number of even length cycles, or any number of odd length cycles.
+
+%
+
+group theory
+
