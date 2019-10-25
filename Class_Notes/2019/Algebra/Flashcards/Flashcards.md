@@ -33,3 +33,21 @@ Class Equation
 %
 
 group theory
+
+---
+
+Definition: A *simple* group.
+%
+\[H \trianglelefteq G \implies H = 1, G\]
+%
+
+group theory
+
+---
+
+Definition: A *simple* group.
+%
+\[H \trianglelefteq G \implies H = 1, G\]
+%
+
+group theory
