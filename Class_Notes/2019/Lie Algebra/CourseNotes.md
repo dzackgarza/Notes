@@ -3025,4 +3025,16 @@ where the last equality is found by expanding the expression backwards.
 
 # Friday October 25
 
-Upcoming
+Theorem (PBW):
+The universal enveloping algebra $U(\lieg)$ has a basis consisting of the PBW monomials.
+If we fix a basis $\theset{x_i \suchthat i\in I}$ of $\lieg$ with a total order, then
+$\theset{y_{i_1}^{r_1} \cdots y_{i_n}^{r_n} \suchthat n\in \NN > 0,~ i_j \in I,~ r_i \geq 1}$.
+
+We will construct a map
+\[
+\begin{align*}
+\iota: \lieg &\to U(\lieg) \\
+x_i &\mapsto x_i + J \coloneqqq y_i
+.\end{align*}
+\]
+
