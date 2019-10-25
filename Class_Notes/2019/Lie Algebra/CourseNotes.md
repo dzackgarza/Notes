@@ -3035,6 +3035,14 @@ We will construct a map
 \begin{align*}
 \iota: \lieg &\to U(\lieg) \\
 x_i &\mapsto x_i + J \coloneqqq y_i
-.\end{align*}
+,\end{align*}
 \]
 
+where we can recall that $U(\lieg) \coloneqq T(\lieg)/ J$ where $J$ was an ideal of specific relations.
+
+Corollary:
+
+a. The map $\iota$ is injective.
+b. The map $\iota$ has no *zero divisors*. 
+
+> We will use property (b) to study properties of Verma modules
