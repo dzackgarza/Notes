@@ -1,8 +1,8 @@
-Expected Value of \(f(x)\)
-
+Sylow Theorems
 %
 
-\[\mathbb{E}[f(x)] = \sum_x p(x)f(x)\]
+\[n_p = 1 \mod p\]
+\[n_p \mid m\]
 
 %
 
