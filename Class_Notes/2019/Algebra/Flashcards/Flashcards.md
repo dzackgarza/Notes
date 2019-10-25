@@ -3,6 +3,7 @@ Sylow Theorems
 
 \[n_p = 1 \mod p\]
 \[n_p \mid m\]
+\[ n_p = [G: N_G(S_p)] \]
 
 %
 
