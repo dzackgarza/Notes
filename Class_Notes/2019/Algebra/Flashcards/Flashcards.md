@@ -1,23 +1,25 @@
 Sylow Theorems
 %
 
-$$
-n_p \divides q
-n_p = 1 \mod p \\
-$$
+\[
+n_p \divides q \\
+n_p = 1 \mod p 
+\]
 
 %
 Algebra
 
 ---
 
-Reverse Triangle Inequality
+Something Else
 %
 
-$$||x|-|y|| \le |x-y|$$
+\[
+ax = b
+\]
 
 %
 
-Real Analysis
+Algebra
 
 ---
