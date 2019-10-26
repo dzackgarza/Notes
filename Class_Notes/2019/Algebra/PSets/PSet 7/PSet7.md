@@ -47,23 +47,18 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
   $$
   \abs{P \coloneqq \union_{S_p \in \mathrm{Syl}(p, G)} S_p\setminus\theset{e}} + \abs{ Q \coloneqq \union_{S_q \in \mathrm{Syl}(q, G)} S_q\setminus\theset{e}} + \abs{\theset{e}} > \abs{G}.
   $$
-
-  Towards this end, consider the contribution of $Q$, which is exactly $$n_q(q-1) = p^2(q-1) = p^2q - p^2$$ elements. 
-  Every such element is of order $q$, so this leaves $$\abs{G} - \abs{Q} = p^2q -(p^2q - p^2) = p^2$$ elements of order **not** equal to $q$.
-
-  The remaining nontrivial elements can only be of order $p$ or $p^2$.
-  We thus have
+  We have
   \[
   \begin{align*}
   \abs{P} + \abs{Q} + \abs{\theset{e}} &= n_p(q-1) + n_q(p^2 - 1) + 1 \\
   &= p^2(q-1) + q(p^2 - 1) + 1 \\
-  &= p^2(q-1) + 1(p^2 - 1) + (q-1)(p^2-1) + 1 \quad \text{(since $q > 1$) } \\
+  &= p^2(q-1) + 1(p^2 - 1) + (q-1)(p^2-1) + 1 \quad\quad \text{(since $q > 1$) } \\
   &= p^2q - p^2 + p^2 - 1  + (q-1)(p^2-1) \\
   &= p^2q + (q-1)(p^2-1) \\
-  &\geq p^2 q + (2-1)(2^2-1) \\
+  &\geq p^2 q + (2-1)(2^2-1) \quad\quad\text{(since $p, q \geq 2$)} \\
   &= p^2 q + 3  \\
-  &> p^2q = \abs{G},
-  .\end{align*}
+  &> p^2q = \abs{G}
+  ,\end{align*}
   \]
   which is a contradiction.
 
