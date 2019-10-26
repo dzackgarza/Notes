@@ -60,9 +60,12 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
   &= p^2(q-1) + 1(p^2 - 1) + (q-1)(p^2-1) + 1 \quad \text{(since $q > 1$) } \\
   &= p^2q - p^2 + p^2 - 1  + (q-1)(p^2-1) \\
   &= p^2q + (q-1)(p^2-1) \\
-  &\geq p^2 q
+  &\geq p^2 q + (2-1)(2^2-1) \\
+  &= p^2 q + 3  \\
+  &> p^2q = \abs{G},
   .\end{align*}
   \]
+  which is a contradiction.
 
 
 # Qual Problems
