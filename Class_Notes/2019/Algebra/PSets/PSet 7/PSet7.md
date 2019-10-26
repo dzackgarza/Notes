@@ -24,7 +24,7 @@ $$
 n_p \in \theset{1, q}, \quad n_1 \in \theset{1, p, p^2}.
 $$
 
-If either $n_p =1$ or $n_q = 1$, we are done, so suppose $n_p \neq 1$ and $n_1 \neq 1$. Proceeding by cases:
+If either $n_p =1$ or $n_q = 1$, we are done, so suppose $n_p \neq 1$ and $n_1 \neq 1$. This forces $n_p = q$, and we proceed by cases:
 
 ### Case 1: $p = q$.
 
@@ -38,7 +38,7 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
 - $n_q = p$: 
   If $n_q = p = 1 \mod q$ and $p < q$, this forces $p=1$.
 
-- $n_1 = p^2$:
+- $n_q = p^2$:
   We will reach a contradiction by showing that this forces 
   $$
   \abs{P \coloneqq \union_{S_p \in \mathrm{Syl}(p, G)} S_p\setminus\theset{e}} + \abs{ Q \coloneqq \union_{S_q \in \mathrm{Syl}(q, G)} S_q\setminus\theset{e}} + \abs{\theset{e}} > \abs{G}.
@@ -46,6 +46,16 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
 
   Towards this end, consider the contribution of $Q$, which is exactly $$n_q(q-1) = p^2(q-1) = p^2q - p^2$$ elements. 
   Every such element is of order $q$, so this leaves $$\abs{G} - \abs{Q} = p^2q -(p^2q - p^2) = p^2$$ elements of order **not** equal to $q$.
+
+  The remaining nontrivial elements can only be of order $p$ or $p^2$.
+  We thus have
+  \[
+  \begin{align*}
+  \abs{P} + \abs{Q} + \abs{\theset{e}} &= n_p(q-1) + n_q(p^2 - 1) + 1 \\
+  &= p^2(q-1) + q(p^2 - 1) + 1 \\
+  &= p^2(q-1) + 1(p^2 - 1) + (q-1)(p^2-1)
+  .\end{align*}
+  \]
 
 
 # Qual Problems
