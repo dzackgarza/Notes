@@ -41,10 +41,11 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
 - $n_1 = p^2$:
   We will reach a contradiction by showing that this forces 
   $$
-  \abs{S \coloneqq \union_{S_p \in \mathrm{Syl}(p, G)} S_p} + \abs{ P \coloneqq \union_{S_q \in \mathrm{Syl}(q, G)} S_q} > \abs{G}.
+  \abs{P \coloneqq \union_{S_p \in \mathrm{Syl}(p, G)} S_p\setminus\theset{e}} + \abs{ Q \coloneqq \union_{S_q \in \mathrm{Syl}(q, G)} S_q\setminus\theset{e}} + \abs{\theset{e}} > \abs{G}.
   $$
 
-  Towards this end, 
+  Towards this end, consider the contribution of $Q$, which is exactly $$n_q(q-1) = p^2(q-1) = p^2q - p^2$$ elements. 
+  Every such element is of order $q$, so this leaves $$\abs{G} - \abs{Q} = p^2q -(p^2q - p^2) = p^2$$ elements of order **not** equal to $q$.
 
 
 # Qual Problems
