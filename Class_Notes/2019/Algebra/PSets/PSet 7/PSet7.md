@@ -33,6 +33,10 @@ But every $p\dash$group has a non-trivial center $Z(G) \leq G$, and the center i
 
 ### Case 2: $p > q$.
 
+Here, since $n_p \divides q$, we must have $n_p < q$. But if $n_p < q < p$ and $n_p = 1 \mod p$, then $n_p = 1$.
+
+### Case 3: $q > p$.
+
 Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases for $n_q$:
 
 - $n_q = p$: 
