@@ -64,9 +64,13 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
 
 ## Problem 2
 
-We'll use the fact that $H \normal N(H)$ for any subgroup $H$, and thus 
+We'll use the fact that $H \normal N(H)$ for any subgroup $H$ (following directly from the closure axioms for a subgroup), and thus 
 $$
 P \normal N(P) \quad \text{and}\quad N(P) \normal N^2(P).
 $$
+Since it is then clear that $N(P) \subseteq N^2(P)$, it remains to show that $N^2(P) \subseteq N(P)$.
+
+So if we let $x \in N^2(P)$, so $x$ normalizes $N(P)$, we need to show that $x$ normalizes $P$ as well, i.e. $xPx\inv = P$.
+
 
 # Qual Problems
