@@ -91,4 +91,8 @@ By definition, $G$ is simple iff it has no non-trivial subgroups, so we will sho
 Noting that $248 = p^2 q$ where $p=2, q = 37$, we find that (for example) $n_2 \divides 37$ but $n \equiv 1 \mod 2$; but the only odd divisor of 7 is 1, forcing $n_2 = 1$. 
 So $G$ has a normal Sylow $2\dash$subgroup and we are done.
 
+##  Problem 4
+
+
+
 # Qual Problems
