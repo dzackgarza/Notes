@@ -175,7 +175,7 @@ Since $A_3$ only contains 3-cycles, this possibility is ruled out. Thus the Galo
 
 # Problem 7
 
-Definition: A field $F$ is *perfect* if every irreducible polynomial $f(x) \in F[x]$ is separable in $\overline F[x]$.
+Definition: A field $F$ is *perfect* if every irreducible polynomial $f(x) \in F[x]$ is separable in $\overline{F}[x]$.
 
 ## $\implies:$
 
