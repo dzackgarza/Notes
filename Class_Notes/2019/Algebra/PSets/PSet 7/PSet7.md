@@ -93,21 +93,30 @@ So $G$ has a normal Sylow $2\dash$subgroup and we are done.
 
 ##  Problem 4
 
-Let $\tau \coloneqq (i, j)$ denote the transposition and $\sigma = (s_1, s_2 \cdots, s_p)$ denote the $p\dash$cycle.
-Since there is some power $\sigma^k$ that sends $i$ to $1$, we can assume $\tau = (1, j)$ without loss of generality by conjugating the original $\tau$ by $\sigma^k$.
+Let $\tau \coloneqq (t_1, t_2)$ denote the transposition and $\sigma = (s_1, s_2 \cdots, s_p)$ denote the $p\dash$cycle, and let $S = \generators{\sigma, \tau}$.
+We would like to show that $S = S_p$, and since $S \subseteq S_p$ is clear, we just need to show that $S_p \subseteq S$.
 
-We can also safely assume $s_1 = 1$ by shifting the entries of $\sigma$ in cycle notation.
-Moreover, we can relabel all of the elements of $S_p$ such that $s_2 = 2, s_3 = 3, \cdots, s_p = p$.
+We first note that because $p$ is prime, $\sigma^k$ is a $p\dash$cycle for every $1\leq k \leq p$, and $\generators{\sigma} = \generators{\sigma^k}$ for any such $k$.
 
-All in all, we can assume
+Then note that $t_1=s_i$ for some $i$ and $t_2=s_j$ for some $j$, so we can take $k=j-i$ to get a cycle $\sigma^k$ that sends $t_1$ to $t_2$. 
+So without loss of generality, we can replace $\sigma$ with
 $$
-\tau = (1, j) \quad \sigma = (1,2,3,\cdots,p).
+\sigma = (t_1 t_2 \cdots )
 $$
 
-for some $2\leq j \leq p$. Let $S = \generators{\tau, \sigma}$.
+But now, we can relabel all of the elements of $S_p$ simultaneously (i.e. replace $\generators{\sigma, \tau}$ with another subgroup )n the same conjugacy class) in such a way that $t_1$ becomes 1 and $t_2$ becomes 2.
+We can then assume wlog that
+$$
+\tau = (1,2),\quad \sigma=(1,2,\cdots,p)
+$$
 
-
-We can then get all adjacent transpositions: noting that $\sigma^k(i) = i + k \mod p$, we have $\sigma^k \tau \sigma^{-k} = (\sigma^k(1), \sigma^k(2)) = (k+1 \mod p, k+2 \mod p)$ for every $1\leq k \leq p$.
+We can then get all adjacent transpositions: noting that 
+\[
+\begin{align*}
+\sigma\inv\tau\sigma = (\sigma(1), \sigma(j)) = (2, j+1)
+.\end{align*}
+\]
+$\sigma^k(i) = i + k \mod p$, we have $\sigma^k \tau \sigma^{-k} = (\sigma^k(1), \sigma^k(2)) = (k+1 \mod p, k+2 \mod p)$ for every $1\leq k \leq p$.
 So if $\tau_i = (i, i+1 \mod p)$, we have $\generators{\tau_i} \subset S$.
 
 But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j \leq p$:
