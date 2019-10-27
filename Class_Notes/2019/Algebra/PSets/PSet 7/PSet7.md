@@ -260,8 +260,8 @@ and thus
 \begin{align*}
 f(x) &= g(x^p) \\
 &= b_0^p + b_p^p x^{p} + b_{2p}^p x^{2p} + \cdots \\
-&= (b_0 + b_p x + b_{2p} x^2)^p,
-.\end{align*}
+&= (b_0 + b_p x + b_{2p} x^2)^p
+,\end{align*}
 \]
 
 # Problem 8
