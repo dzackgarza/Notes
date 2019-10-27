@@ -243,6 +243,10 @@ $$
 f(x) = c_0 + c_p x^p + c_{2p} x^{2p} + \cdots
 $$
 
+But this says we can write $f(x) \coloneqq g(x^p)$, where
+$$
+g(x) = c_0 + c_p x + c_{2p} x^2 + \cdots
+$$
 
 # Problem 8
 ?
