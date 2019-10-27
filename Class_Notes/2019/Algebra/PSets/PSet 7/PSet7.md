@@ -2,9 +2,8 @@
 title: Problem Set 7
 ---
 
-# Regular Problems
 
-## Problem 1
+# Problem 1
 
 Note that if either $p=1$ or $q=1$, $G$ is a $p\dash$group, which is a nontrivial center that is always normal. So assume $p\neq 1$ and $q\neq 1$.
 
@@ -26,16 +25,16 @@ $$
 
 If either $n_p =1$ or $n_q = 1$, we are done, so suppose $n_p \neq 1$ and $n_1 \neq 1$. This forces $n_p = q$, and we proceed by cases:
 
-### Case 1: $p = q$.
+## Case 1: $p = q$.
 
 Then $\# G = p^3$ and $G$ is a $p\dash$group. 
 But every $p\dash$group has a non-trivial center $Z(G) \leq G$, and the center is always a normal subgroup.
 
-### Case 2: $p > q$.
+## Case 2: $p > q$.
 
 Here, since $n_p \divides q$, we must have $n_p < q$. But if $n_p < q < p$ and $n_p = 1 \mod p$, then $n_p = 1$.
 
-### Case 3: $q > p$.
+## Case 3: $q > p$.
 
 Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases for $n_q$:
 
@@ -62,7 +61,7 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
   \]
   which is a contradiction. $\qed$
 
-## Problem 2
+# Problem 2
 
 We'll use the fact that $H \normal N(H)$ for any subgroup $H$ (following directly from the closure axioms for a subgroup), and thus 
 $$
@@ -84,14 +83,14 @@ Then $P' \coloneqq xPx\inv \in \mathrm{Syl}(p, N(P))$ as well, since all conjuga
 But since $P \normal N(P)$, there is only *one* Sylow $p\dash$ subgroup of $N(P)$, namely $P$.
 This forces $P = P'$, i.e. $P = xPx\inv$, which says that $x \in N(P)$ as desired. $\qed$
 
-## Problem 3
+# Problem 3
 
 By definition, $G$ is simple iff it has no non-trivial subgroups, so we will show that if $\abs G = 148$ then it must contain a normal subgroup.
 
 Noting that $248 = p^2 q$ where $p=2, q = 37$, we find that (for example) $n_2 \divides 37$ but $n \equiv 1 \mod 2$; but the only odd divisor of 7 is 1, forcing $n_2 = 1$. 
 So $G$ has a normal Sylow $2\dash$subgroup and we are done.
 
-##  Problem 4
+#  Problem 4
 
 Let $\tau \coloneqq (t_1, t_2)$ denote the transposition and $\sigma = (s_1, s_2 \cdots, s_p)$ denote the $p\dash$cycle, and let $S = \generators{\sigma, \tau}$.
 We would like to show that $S = S_p$, and since $S \subseteq S_p$ is clear, we just need to show that $S_p \subseteq S$.
@@ -141,7 +140,18 @@ $$
 
 so $\gamma \in J$. 
 Then writing any arbitrary permutation as a product of disjoint cycles, we find that 
-$S_p \subseteq J \subseteq S$, and so $S_p \subseteq S$ as desired.
+$S_p \subseteq J \subseteq S$, and so $S_p \subseteq S$ as desired. $\qed$
 
 
-# Qual Problems
+# Problem 5
+
+# Problem 6
+
+# Problem 7
+
+# Problem 8
+?
+
+# Problem 9
+
+# Problem 10
