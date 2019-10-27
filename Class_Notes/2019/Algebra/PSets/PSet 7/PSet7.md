@@ -232,7 +232,7 @@ If we thus write
 \begin{align*}
 f(x) &= \sum_{k=0}^n c_k x^k, \\
 f'(x) &= \sum_{k=1}^n k c_k x^{k-1} \\
-&\qeuiv 0
+&\equiv 0
 ,\end{align*}
 \]
 
