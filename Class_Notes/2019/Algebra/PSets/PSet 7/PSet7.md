@@ -145,9 +145,12 @@ $S_p \subseteq J \subseteq S$, and so $S_p \subseteq S$ as desired. $\qed$
 
 # Problem 5
 
+Since $G$ is a $p\dash$group, it has a nontrivial center. 
+Since $p$ is prime and $Z(G)$ is a subgroup, this forces $\# Z(G) \in \theset{p, p^2}$, where $p^3$ is ruled out because this would make $G$ abelian.
+
 # Problem 6
 
-# Problem 7
+# Problem 7}
 
 # Problem 8
 ?
