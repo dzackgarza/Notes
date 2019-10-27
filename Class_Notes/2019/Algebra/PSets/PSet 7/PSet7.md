@@ -215,6 +215,9 @@ $$
 \beta = \beta^1 = \beta^{ps + t\ell} = \beta^{st} \beta^{t\ell} = (\beta^\ell)^s (\beta^p)^t,
 $$
 
+where since $\beta^\ell, \beta^p \in F$, the entire RHS is in $F$, and thus $\beta\in F$ as well.
+
+But then $\alpha = \beta^p$ where $\beta \in F$, which is exactly what we wanted to show.
 
 # Problem 8
 ?
