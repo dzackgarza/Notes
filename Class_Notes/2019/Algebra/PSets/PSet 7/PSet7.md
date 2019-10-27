@@ -230,10 +230,16 @@ But if $\gcd(f, f') = f$, since $\deg f' < f$, we can not have $f \divides f'$ u
 If we thus write
 \[
 \begin{align*}
-f(x) &= x^n + c_{n-1}x^{n-1} + \cdots + c_2x^2 + c_1 x + c_0 \\
-f'(x) &= nx^{n-1} + (n-1)c_{n-1}x^{n-2} + \cdots + c_1 \equiv 0
+f(x) &= \sum_{k=0}^n c_k x^k, \\
+f'(x) &= \sum_{k=1}^n k c_k x^{k-1} \\
+&\qeuiv 0
 ,\end{align*}
 \]
+
+then for each $k$ we must have $c_k = 0$ or $k = 0$ in $F$, i.e. $c_k = 0$ or $p \divides k$.
+
+Thus the only terms in the expansion of $f(x)$ that can possibly be nonzero are the coefficients of $x^{kp}$ for $1 \leq p \leq 2p \leq \cdots \leq kp \leq \cdots \leq n$.
+
 
 # Problem 8
 ?
