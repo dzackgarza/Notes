@@ -60,7 +60,13 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
   &> p^2q = \abs{G}
   ,\end{align*}
   \]
-  which is a contradiction.
+  which is a contradiction. $\qed$
 
+## Problem 2
+
+We'll use the fact that $H \normal N(H)$ for any subgroup $H$, and thus 
+$$
+P \normal N(P) \quad \text{and}\quad N(P) \normal N^2(P).
+$$
 
 # Qual Problems
