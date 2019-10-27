@@ -261,11 +261,12 @@ and thus
 f(x) &= g(x^p) \\
 &= b_0^p + b_p^p x^{p} + b_{2p}^p x^{2p} + \cdots \\
 &= (b_0 + b_p x + b_{2p} x^2)^p \\
-\coloneqq \left( j(x) \right)^p
+&\coloneqq \left( j(x) \right)^p
 ,\end{align*}
 \]
 
-from which it follows that $j \divides f$. But since $f$ was irreducible, this is a contradiction, and so $f$ could not have had a repeated root. 
+from which it follows that $j \divides f$ in $F[x]$. 
+But since $f$ was irreducible, this is a contradiction, and so $f$ could not have had a repeated root. 
 Thus every irreducible polynomial is separable, which is what we wanted to show. $\qed$
 
 # Problem 8
