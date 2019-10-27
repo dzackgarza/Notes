@@ -136,9 +136,10 @@ Thus we have $J \coloneqq \generators{\{(1, j) \mid 2\leq j \leq p\}} \subseteq 
 
 But now if $\gamma = (g_1, g_2, \cdots, g_k) \in S_p$ is an arbitrary cycle, we can write
 $$
-\gamma = (g_1, g_2, \cdots, g_k) = (1, g_1)( 1, g_2), \cdots (1, g_k).
+\gamma = (g_1, g_2, \cdots, g_k) = (1, g_1)( 1, g_2), \cdots (1, g_k),
 $$
 
+so $\gamma \in J$. 
 Then writing any arbitrary permutation as a product of disjoint cycles, we find that 
 $S_p \subseteq J \subseteq S$, and so $S_p \subseteq S$ as desired.
 
