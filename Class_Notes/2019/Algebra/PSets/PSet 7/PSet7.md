@@ -116,9 +116,11 @@ We can then get all adjacent transpositions: noting that
 \sigma\inv \tau \sigma &= (2, 3) \\
 \sigma^{-2} \tau \sigma^2 &= (3, 4) \\
 &\cdots \\
-\sigma^{-k} \tau \sigma^k &= (k+1 \mod p, k+2\mod p) \quad \forall 1\leq k \leq p
-.\end{align*}
+\sigma^{-k} \tau \sigma^k &= (k+1 \mod p,~~k+2\mod p) \quad \forall 1\leq k \leq p
+,\end{align*}
 \]
+
+where we use the fact that for any $\gamma\in S_p$, we have $\gamma\tau\gamma = (\gamma(1),~\gamma(2))$.
 
 But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j \leq p$:
 \[
