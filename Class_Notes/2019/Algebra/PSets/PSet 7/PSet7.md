@@ -179,7 +179,31 @@ Definition: A field $F$ is *perfect* if every irreducible polynomial $f(x) \in F
 
 ## $\implies:$
 
-Suppose all irreducible polynomials in 
+Suppose all irreducible polynomials in $F[x]$ are separable.
+Then let $a\in K$ be arbitrary, we will show that there exists some $b \in K$ such that $b^k = a$ for some positive integer $k$.
+
+Given such an $a$, define the polynomial
+$$
+f(x) = x^p - a \in F[x].
+$$
+
+Note that $f$ is *not* separable, since $f'(x) = px^{p-1} = 0$ since $\mathrm{char}(F) = p$, which means (by assumption) that $f$ must be *reducible*.
+
+Thus we can write $f(x) = g(x)h(x)$ where $g$ is some irreducible factor that divides $f$.
+
+Noting that if $\beta \in \overline{F}$ is a any root of $f$, then
+$$
+f(\beta) = 0 \implies \beta^p = a \implies f(x) = x^p - a = x^p - \beta^p = (x-\beta)^p,
+$$
+
+and so $\beta$ is necessarily a multiple root.
+
+Moreover, since $g\divides f$, we must have $g(x) = (x-\beta)^\ell$ for some $1 \leq \ell \leq p$.
+
+But then we can expand $g$ using the binomial formula:
+$$
+g(x) = (x - \beta)^\ell = \sum_{k=1}^\ell {\ell \choose k}x^{\ell-k}(-\beta)^k
+$$
 
 # Problem 8
 ?
