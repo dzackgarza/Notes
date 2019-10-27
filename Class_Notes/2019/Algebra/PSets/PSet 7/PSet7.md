@@ -53,7 +53,7 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
   \abs{P} + \abs{Q} + \abs{\theset{e}} &= n_p(q-1) + n_q(p^2 - 1) + 1 \\
   &= p^2(q-1) + q(p^2 - 1) + 1 \\
   &= p^2(q-1) + 1(p^2 - 1) + (q-1)(p^2-1) + 1 \quad\quad \text{(since $q > 1$) } \\
-  &= (p^2q - p^2) + (p^2 - 1)  + (q-1)(p^2-1) \\
+  &= (p^2q - p^2) + (p^2 - 1)  + (q-1)(p^2-1) + 1\\
   &= p^2q + (q-1)(p^2-1) \\
   &\geq p^2 q + (2-1)(2^2-1) \quad\quad\text{(since $p, q \geq 2$)} \\
   &= p^2 q + 3  \\
