@@ -113,11 +113,12 @@ $$
 We can then get all adjacent transpositions: noting that 
 \[
 \begin{align*}
-\sigma\inv\tau\sigma = (\sigma(1), \sigma(j)) = (2, j+1)
+\sigma\inv \tau \sigma &= (2, 3) \\
+\sigma^{-2} \tau \sigma^2 &= (3, 4) \\
+&\cdots \\
+\sigma^{-k} \tau \sigma^k &= (k+1 \mod p, k+2\mod p) \quad \forall 1\leq k \leq p
 .\end{align*}
 \]
-$\sigma^k(i) = i + k \mod p$, we have $\sigma^k \tau \sigma^{-k} = (\sigma^k(1), \sigma^k(2)) = (k+1 \mod p, k+2 \mod p)$ for every $1\leq k \leq p$.
-So if $\tau_i = (i, i+1 \mod p)$, we have $\generators{\tau_i} \subset S$.
 
 But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j \leq p$:
 \[
