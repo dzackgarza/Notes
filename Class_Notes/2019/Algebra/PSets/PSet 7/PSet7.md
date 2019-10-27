@@ -240,7 +240,7 @@ then for each $k$ we must have $c_k = 0$ or $k = 0$ in $F$, i.e. $c_k = 0$ or $p
 
 Thus the only possible nonzero terms in $f$ must come from coefficients of $x^{kp}$ for each $k$ such that $1 \leq kp \leq n$, i.e.
 $$
-f(x) = c_0 + c_p x^p + x_{2p} x^{2p} + \cdots
+f(x) = c_0 + c_p x^p + c_{2p} x^{2p} + \cdots
 $$
 
 
