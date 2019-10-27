@@ -177,6 +177,8 @@ Since $A_3$ only contains 3-cycles, this possibility is ruled out. Thus the Galo
 
 Definition: A field $F$ is *perfect* if every irreducible polynomial $f(x) \in F[x]$ is separable in $\overline{F}[x]$.
 
+Note that since $F$ is a finite field, $p$ must be a prime.
+
 ## $\implies:$
 
 Suppose all irreducible polynomials in $F[x]$ are separable.
@@ -189,7 +191,7 @@ $$
 
 Note that $f$ is *not* separable, since $f'(x) = px^{p-1} = 0$ since $\mathrm{char}(F) = p$, which means (by assumption) that $f$ must be *reducible*.
 
-Thus we can write $f(x) = g(x)h(x)$ where $g$ is some irreducible factor that divides $f$.
+Thus we can write $f(x) = g(x)h(x)$ where $g \in F[x]$ is some irreducible factor that divides $f$.
 
 Noting that if $\beta \in \overline{F}$ is a any root of $f$, then
 $$
@@ -202,8 +204,17 @@ Moreover, since $g\divides f$, we must have $g(x) = (x-\beta)^\ell$ for some $1 
 
 But then we can expand $g$ using the binomial formula:
 $$
-g(x) = (x - \beta)^\ell = \sum_{k=1}^\ell {\ell \choose k}x^{\ell-k}(-\beta)^k
+g(x) = (x - \beta)^\ell = \sum_{k=1}^\ell {\ell \choose k}x^{\ell-k}(-\beta)^k = x^\ell + \cdots + (-\beta)^\ell \in F[x].
 $$
+
+But since every coefficient must be in $F$, we must have $\beta^\ell \in F$. We know that $\beta^p = a \in F$ as well, but since $p$ is prime, $\gcd(p, \ell) = 1$.
+
+We can thus find $s, t \in \ZZ$ such that $ps + t\ell = 1$. But then
+
+$$
+\beta = \beta^1 = \beta^{ps + t\ell} = \beta^{st} \beta^{t\ell} = (\beta^\ell)^s (\beta^p)^t,
+$$
+
 
 # Problem 8
 ?
