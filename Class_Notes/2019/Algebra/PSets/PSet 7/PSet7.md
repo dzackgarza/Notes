@@ -302,3 +302,9 @@ We thus have
 and so $x = \frac{\phi(n)}{2}$ as desired. $\qed$
 
 # Problem 10
+
+## Part 1
+
+Suppose that
+
+- $K / F$ is cyclic, so $\
