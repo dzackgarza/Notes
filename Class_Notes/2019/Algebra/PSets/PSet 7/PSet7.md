@@ -97,11 +97,14 @@ Let $\tau \coloneqq (i, j)$ denote the transposition and $\sigma = (s_1, s_2 \cd
 Since there is some power $\sigma^k$ that sends $i$ to $1$, we can assume $\tau = (1, j)$ without loss of generality by conjugating the original $\tau$ by $\sigma^k$.
 
 We can also safely assume $s_1 = 1$ by shifting the entries of $\sigma$ in cycle notation.
+Moreover, we can relabel all of the elements of $S_p$ such that $s_2 = 2, s_3 = 3, \cdots, s_p = p$.
 
 All in all, we can assume
 $$
-\tau = (1, s_j) \quad \sigma = (1 , s_2, \cdots s_p).
+\tau = (1, j) \quad \sigma = (1,2,3,\cdots,p).
 $$
+
+for some $2\leq j \leq p$.
 
 Let $S = \generators{\tau, \sigma}$.
 
