@@ -219,6 +219,22 @@ where since $\beta^\ell, \beta^p \in F$, the entire RHS is in $F$, and thus the 
 
 But then $\alpha = \beta^p$ where $\beta \in F$, which is exactly what we wanted to show.
 
+## $\impliedby$:
+
+Suppose every element in $F$ admits a $p$th root in $F$, and suppose $f \in F[x]$ is an irreducible polynomial which is *not* separable, so it has a repeated root in $\overline F$.
+
+Supposing that $\gcd(f, f') = g(x)$ for any polynomial $g(x)$, this would imply that $g\divides f$. But $f$ was assumed irreducible, so the only possibility is that in fact $g = f$.
+
+But if $\gcd(f, f') = f$, since $\deg f' < f$, we can not have $f \divides f'$ unless $f'$ is identically zero.
+
+If we thus write
+\[
+\begin{align*}
+f(x) &= x^n + c_{n-1}x^{n-1} + \cdots + c_2x^2 + c_1 x + c_0 \\
+f'(x) &= nx^{n-1} + (n-1)c_{n-1}x^{n-2} + \cdots + c_1 \equiv 0
+,\end{align*}
+\]
+
 # Problem 8
 ?
 
