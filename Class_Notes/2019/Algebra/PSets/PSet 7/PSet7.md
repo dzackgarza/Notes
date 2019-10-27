@@ -77,7 +77,7 @@ $$
 P \leq N(P) \leq G ~\implies ~p^k \divides \abs{N(P)} \divides p^km
 ,$$
 
-so in fact $P \in \mathrm{Syl}(p, N(P))$. 
+so in fact $P \in \mathrm{Syl}(p, N(P))$ since it is a maximal $p\dash$group. 
 
 Then $P' \coloneqq xPx\inv \in \mathrm{Syl}(p, N(P))$ as well, since all conjugates of Sylow $p\dash$subgroups are also Sylow $p\dash$subgroups.
 
