@@ -103,5 +103,34 @@ $$
 \tau = (1, s_j) \quad \sigma = (1 , s_2, s_3 \cdots s_j, \cdots s_p).
 $$
 
+Let $S = \generators{\tau, \sigma}$.
+
+...
+
+So we have $\tau \coloneqq (1, 2), \sigma \coloneqq (1,2,\cdots, p) \in S$.
+
+We can then get all adjacent transpositions: noting that $\sigma^k(i) = i + k \mod p$, we have $\sigma^k \tau \sigma^{-k} = (\sigma^k(1), \sigma^k(2)) = (k+1 \mod p, k+2 \mod p)$ for every $1\leq k \leq p$.
+So if $\tau_i = (i, i+1 \mod p)$, we have $\generators{\tau_i} \subset S$.
+
+But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j \leq p$:
+\[
+\begin{align*}
+(1, 3) &= (2, 3)\inv(1, 2)(2, 3) \\
+(1, 4) &= (3, 4)\inv (1, 3) (3, 4) \\
+\cdots \\
+(1, j) = (j-1, j)\inv (1, j-1) (j-), j)
+.\end{align*}
+\]
+
+Thus we have $\generators{(1, j) \suchthat 2\leq j \leq p} \subseteq S$.
+
+But now if $\gamma = (g_1, g_2, \cdots, g_k) \in S_p$ is an arbitrary cycle, we can write
+$$
+\gamma = (g_1, g_2, \cdots, g_k) = (1, g_1)( 1, g_2), \cdots (1, g_k).
+$$
+
+Then writing any arbitrary permutation as a product of disjoint cycles, we find that $S_p \in \generators{(1, j) \suchthat 2\leq j \leq p} \subseteq S$,
+and so $S_p \subseteq S$ as desired.
+
 
 # Qual Problems
