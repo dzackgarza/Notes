@@ -162,7 +162,7 @@ This forces $G' = Z(G)$ as desired. $\qed$
 
 # Problem 6
 
-# Problem 7}
+# Problem 7
 
 # Problem 8
 ?
