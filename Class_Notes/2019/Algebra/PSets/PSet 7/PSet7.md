@@ -139,7 +139,10 @@ $$
 \gamma = (g_1, g_2, \cdots, g_k) = (1, g_1)( 1, g_2), \cdots (1, g_k).
 $$
 
-Then writing any arbitrary permutation as a product of disjoint cycles, we find that $S_p \in \generators{(1, j) \suchthat 2\leq j \leq p} \subseteq S$,
+Then writing any arbitrary permutation as a product of disjoint cycles, we find that 
+$$
+S_p \in \generators{(1, j) \suchthat 2\leq j \leq p} \subseteq S,
+$$
 and so $S_p \subseteq S$ as desired.
 
 
