@@ -72,5 +72,17 @@ Since it is then clear that $N(P) \subseteq N^2(P)$, it remains to show that $N^
 
 So if we let $x \in N^2(P)$, so $x$ normalizes $N(P)$, we need to show that $x$ normalizes $P$ as well, i.e. $xPx\inv = P$.
 
+However, supposing that $\abs G = p^k m$ where $(p, m) = 1$, since $P \leq N(P) \leq G$, we must have $p^k \divides \abs{N(P)} \divides p^km$.
+So in fact $P \in \mathrm{Syl}(p, N(P))$. 
+We can then note that both $P$ and $P' \coloneqq xPx\inv$ are Sylow $p\dash$subgroups of $N(P)$, and since all Sylow $p\dash$subgroups are conjugate,
+there must be some $n\in N(P)$ such that $nPn\inv = P'$.
+
+But then 
+\[
+\begin{align*}
+xPx\inv =
+.\end{align*}
+\]
+
 
 # Qual Problems
