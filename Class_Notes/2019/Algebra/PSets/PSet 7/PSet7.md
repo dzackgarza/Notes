@@ -182,7 +182,7 @@ Note that since $F$ is a finite field, $p$ must be a prime.
 ## $\implies:$
 
 Suppose all irreducible polynomials in $F[x]$ are separable.
-Then let $a\in K$ be arbitrary, we will show that there exists some $b \in K$ such that $b^k = a$ for some positive integer $k$.
+Then let $a\in K$ be arbitrary, we will show that there exists some $\beta \in K$ such that $\beta^p = a$.
 
 Given such an $a$, define the polynomial
 $$
