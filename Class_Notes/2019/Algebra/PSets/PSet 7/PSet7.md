@@ -238,7 +238,11 @@ f'(x) &= \sum_{k=1}^n k c_k x^{k-1} \\
 
 then for each $k$ we must have $c_k = 0$ or $k = 0$ in $F$, i.e. $c_k = 0$ or $p \divides k$.
 
-Thus the only possible nonzero terms in $f$ must come from coefficients of $x^{kp}$ for each $k$ such that $1 \leq kp \leq n$.
+Thus the only possible nonzero terms in $f$ must come from coefficients of $x^{kp}$ for each $k$ such that $1 \leq kp \leq n$, i.e.
+$$
+f(x) = c_0 + c_p x^p + x_{2p} x^{2p} + \cdots
+$$
+
 
 # Problem 8
 ?
