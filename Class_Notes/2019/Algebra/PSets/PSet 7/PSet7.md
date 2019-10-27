@@ -126,7 +126,7 @@ But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j
 \[
 \begin{align*}
 (2, 3)\inv(1, 2)(2, 3) &= (1, 3) \\
-(3, 4)\inv (1, 3) (3, 4) &= (1, 4) \
+(3, 4)\inv (1, 3) (3, 4) &= (1, 4) \\
 &\cdots \\
 (j-1, j)\inv (1, j-1) (j-1, j) &= (1,j)
 .\end{align*}
