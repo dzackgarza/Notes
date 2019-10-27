@@ -97,7 +97,8 @@ Let $\tau \coloneqq (i, j)$ denote the transposition and $\sigma = (s_1, s_2 \cd
 Since there is some power $\sigma^k$ that sends $j$ to $1$, we can assume $\tau = (1, j)$ without loss of generality by conjugating the original $\tau$ by $\sigma^k$.
 We can also safely assume $s_1 = 1$ by shifting the entries of $\sigma$ in cycle notation.
 Moreover, since $\sigma$ contains all $p$ integers between 1 and $p$, we also have $j = s_k$ for some $k$. 
-All in all, we have
+
+All in all, we can assume
 $$
 \tau = (1, s_j) \quad \sigma = (1 , s_2, s_3 \cdots s_j, \cdots s_p).
 $$
