@@ -162,6 +162,8 @@ This forces $G' = Z(G)$ as desired. $\qed$
 
 # Problem 6
 
+Writing $f(x) = x^3 - 3x - 3 = \sum a_i x_i \in \QQ[x]$, we can conclude that $f$ is irreducible over $\QQ$ by Eisenstein with the prime $p=3$, since $p\divides a_0 = -3, a_1 = 3, a_2 = 0$, but $p^2 \nmid a_3 = 1$.
+
 # Problem 7
 
 # Problem 8
