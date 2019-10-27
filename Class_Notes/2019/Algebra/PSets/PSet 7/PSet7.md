@@ -155,7 +155,7 @@ So we must have $\#Z(G) = p$, and $\#\left(G/Z(G)\right) = p^2$.
 
 But any group of $p^2$ is abelian, and we can characterize $G' \coloneqq [G, G]$ in the following way:
 
-> $G' \leq G$ is the unique subgroup of $G$ such that if $N \normal G$ and $G/N$ is abelian, then $N \subseteq G'$.
+> $G' \leq G$ is the unique subgroup of $G$ such that if $N \normal G$ and $G/N$ is abelian, then $N \leq G'$.
 
 
 
