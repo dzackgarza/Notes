@@ -201,7 +201,7 @@ We thus have
 \[
 \begin{align*}
 [\QQ(\zeta) : \QQ] &= [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)] [\QQ(\zeta + \zeta\inv) : \QQ]
-\implies \phi(n) = 2 x \\
+\quad\implies\quad  \phi(n) = 2 x 
 ,\end{align*}
 \]
 
