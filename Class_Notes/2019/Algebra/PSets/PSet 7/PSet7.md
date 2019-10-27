@@ -158,14 +158,7 @@ But any group of $p^2$ is abelian, and we can characterize $G' \coloneqq [G, G]$
 > $G' \leq G$ is the unique subgroup of $G$ such that if $N \normal G$ and $G/N$ is abelian, then $N \leq G'$.
 
 We can thus conclude that $G' \leq Z(G)$. It can not be the case that $G' = \theset{e}$, since this would make $G$ abelian.
-This forces $G' = Z(G)$ as desired.
-
-
-
-
-
-## Case 2: $\# Z(G) = p$:
-
+This forces $G' = Z(G)$ as desired. $\qed$
 
 # Problem 6
 
