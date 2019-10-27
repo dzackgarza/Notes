@@ -125,10 +125,10 @@ where we use the fact that for any $\gamma\in S_p$, we have $\gamma\tau\gamma = 
 But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j \leq p$:
 \[
 \begin{align*}
-(1, 3) &= (2, 3)\inv(1, 2)(2, 3) \\
-(1, 4) &= (3, 4)\inv (1, 3) (3, 4) \\
+(2, 3)\inv(1, 2)(2, 3) &= (1, 3) \\
+(3, 4)\inv (1, 3) (3, 4) &= (1, 4) \
 &\cdots \\
-(1, j) &= (j-1, j)\inv (1, j-1) (j-), j)
+(j-1, j)\inv (1, j-1) (j-1, j) &= (1,j)
 .\end{align*}
 \]
 
