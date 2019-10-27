@@ -104,7 +104,7 @@ $$
 \sigma = (t_1, t_2, \cdots )
 $$
 
-But now, we can relabel all of the elements of $S_p$ simultaneously (i.e. replace $\generators{\sigma, \tau}$ with another subgroup )n the same conjugacy class) in such a way that $t_1$ becomes 1 and $t_2$ becomes 2.
+But now, we can relabel all of the elements of $S_p$ simultaneously (i.e. replace $\generators{\sigma, \tau}$ with another subgroup in the same conjugacy class) in such a way that $t_1$ becomes 1 and $t_2$ becomes 2.
 We can then assume wlog that
 $$
 \tau = (1,2),\quad \sigma=(1,2,\cdots,p)
