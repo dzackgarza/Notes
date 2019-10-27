@@ -104,9 +104,7 @@ $$
 \tau = (1, j) \quad \sigma = (1,2,3,\cdots,p).
 $$
 
-for some $2\leq j \leq p$.
-
-Let $S = \generators{\tau, \sigma}$.
+for some $2\leq j \leq p$. Let $S = \generators{\tau, \sigma}$.
 
 ...
 
