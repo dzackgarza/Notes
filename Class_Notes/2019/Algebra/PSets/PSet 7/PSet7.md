@@ -171,7 +171,7 @@ This means that complex conjugation is a nontrivial element $\tau$ of the Galois
 
 The Galois group must be a transitive subgroup of $S_3$, which restricts the possibilities to $S_3, A_3$.
 
-Since $A_3$ only contains 3-cycles, this possibility is ruled out. Thus the Galois group must be $S_3$.
+Since $A_3$ only contains 3-cycles, this possibility is ruled out. Thus the Galois group must be $S_3$. $\qed$
 
 # Problem 7
 
@@ -179,5 +179,28 @@ Since $A_3$ only contains 3-cycles, this possibility is ruled out. Thus the Galo
 ?
 
 # Problem 9
+
+Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$. 
+
+Noting that
+$$
+\zeta(\zeta + \zeta\inv) = \zeta^2 + 1,
+$$
+
+if we let $f(x) = x^2 + -)\zeta + \zeta\inv)x + 1 \in \QQ(\zeta + \zeta\inv)[x]$, then $f(\zeta) = 0$.
+
+Since $\QQ(\zeta + \zeta\inv) \subset \RR$, $\QQ(\zeta)$ is a proper extension over this field, so if $d \coloneqq [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)]$ then $d > 1$.
+The fact that $\zeta$ is a root of $f$ shows that $d \leq 2$, so $d = 2$.
+We also know that $[\QQ(\zeta) : \QQ] = \phi(n)$.
+
+We thus have
+\[
+\begin{align*}
+[\QQ(\zeta) : \QQ] &= [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)] [\QQ(\zeta + \zeta\inv) : \QQ] \\
+\implies \phi(n) =& 2 x \\
+,\end{align*}
+\]
+
+and so $x = \frac{\phi(n)}{2}$ as desired. $\qed$
 
 # Problem 10
