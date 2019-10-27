@@ -140,7 +140,7 @@ $$
 $$
 
 Then writing any arbitrary permutation as a product of disjoint cycles, we find that 
-$S_p \subseteq J$, and so $S_p \subseteq S$ as desired.
+$S_p \subseteq J \subseteq S$, and so $S_p \subseteq S$ as desired.
 
 
 # Qual Problems
