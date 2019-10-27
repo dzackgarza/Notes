@@ -101,7 +101,7 @@ We first note that because $p$ is prime, $\sigma^k$ is a $p\dash$cycle for every
 Then note that $t_1=s_i$ for some $i$ and $t_2=s_j$ for some $j$, so we can take $k=j-i$ to get a cycle $\sigma^k$ that sends $t_1$ to $t_2$. 
 So without loss of generality, we can replace $\sigma$ with
 $$
-\sigma = (t_1 t_2 \cdots )
+\sigma = (t_1, t_2 \cdots )
 $$
 
 But now, we can relabel all of the elements of $S_p$ simultaneously (i.e. replace $\generators{\sigma, \tau}$ with another subgroup )n the same conjugacy class) in such a way that $t_1$ becomes 1 and $t_2$ becomes 2.
