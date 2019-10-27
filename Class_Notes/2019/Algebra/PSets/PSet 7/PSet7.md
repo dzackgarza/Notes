@@ -106,9 +106,6 @@ $$
 
 for some $2\leq j \leq p$. Let $S = \generators{\tau, \sigma}$.
 
-...
-
-So we have $\tau \coloneqq (1, 2), \sigma \coloneqq (1,2,\cdots, p) \in S$.
 
 We can then get all adjacent transpositions: noting that $\sigma^k(i) = i + k \mod p$, we have $\sigma^k \tau \sigma^{-k} = (\sigma^k(1), \sigma^k(2)) = (k+1 \mod p, k+2 \mod p)$ for every $1\leq k \leq p$.
 So if $\tau_i = (i, i+1 \mod p)$, we have $\generators{\tau_i} \subset S$.
