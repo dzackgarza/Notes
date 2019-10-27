@@ -100,7 +100,7 @@ We can also safely assume $s_1 = 1$ by shifting the entries of $\sigma$ in cycle
 
 All in all, we can assume
 $$
-\tau = (1, s_j) \quad \sigma = (1 , s_2, s_3 \cdots s_j, \cdots s_p).
+\tau = (1, s_j) \quad \sigma = (1 , s_2, \cdots s_p).
 $$
 
 Let $S = \generators{\tau, \sigma}$.
