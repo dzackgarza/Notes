@@ -150,7 +150,7 @@ Since $p$ is prime and $Z(G)$ is a subgroup, this forces $\# Z(G) \in \theset{p,
 
 ## Case 1: $\# Z(G) = p^2$:
 
-This means that $[G: Z(G)] = p$, and since $Z(G) \normal G$, we can take the quotient and $\#\left(G/Z(G)) = p$.
+This means that $[G: Z(G)] = p$, and since $Z(G) \normal G$, we can take the quotient and $\#\left(G/Z(G)\right) = p$.
 But this means $G/Z(G)$ is cyclic, which implies that $G$ is abelian, a contradiction.
 
 # Problem 6
