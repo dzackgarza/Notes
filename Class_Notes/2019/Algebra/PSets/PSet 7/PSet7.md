@@ -148,6 +148,11 @@ $S_p \subseteq J \subseteq S$, and so $S_p \subseteq S$ as desired. $\qed$
 Since $G$ is a $p\dash$group, it has a nontrivial center. 
 Since $p$ is prime and $Z(G)$ is a subgroup, this forces $\# Z(G) \in \theset{p, p^2}$, where $p^3$ is ruled out because this would make $G$ abelian.
 
+## Case 1: $\# Z(G) = p^2$:
+
+This means that $[G: Z(G)] = p$, and since $Z(G) \normal G$, we can take the quotient and $\#\left(G/Z(G)) = p$.
+But this means $G/Z(G)$ is cyclic, which implies that $G$ is abelian, a contradiction.
+
 # Problem 6
 
 # Problem 7}
