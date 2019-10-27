@@ -95,6 +95,7 @@ So $G$ has a normal Sylow $2\dash$subgroup and we are done.
 
 Let $\tau \coloneqq (i, j)$ denote the transposition and $\sigma = (s_1, s_2 \cdots, s_p)$ denote the $p\dash$cycle.
 Since there is some power $\sigma^k$ that sends $i$ to $1$, we can assume $\tau = (1, j)$ without loss of generality by conjugating the original $\tau$ by $\sigma^k$.
+
 We can also safely assume $s_1 = 1$ by shifting the entries of $\sigma$ in cycle notation.
 Moreover, since $\sigma$ contains all $p$ integers between 1 and $p$, we also have $j = s_k$ for some $k$. 
 
