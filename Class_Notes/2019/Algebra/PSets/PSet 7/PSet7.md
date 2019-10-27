@@ -187,7 +187,11 @@ $$
 \zeta(\zeta + \zeta\inv) = \zeta^2 + 1,
 $$
 
-if we let $f(x) = x^2 - (\zeta + \zeta\inv)x + 1 \in \QQ(\zeta + \zeta\inv)[x]$, then $f(\zeta) = 0$.
+if we let 
+$$
+f(x) = x^2 - (\zeta + \zeta\inv)x + 1 \in \QQ(\zeta + \zeta\inv)[x], 
+$$ 
+then $f(\zeta) = 0$.
 
 Since $\QQ(\zeta + \zeta\inv) \subset \RR$, $\QQ(\zeta)$ is a proper extension over this field, so if $d \coloneqq [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)]$ then $d > 1$.
 The fact that $\zeta$ is a root of $f$ shows that $d \leq 2$, so $d = 2$.
