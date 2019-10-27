@@ -248,6 +248,22 @@ $$
 g(x) = c_0 + c_p x + c_{2p} x^2 + \cdots
 $$
 
+and furthermore, we can now use the assumption that $F$ is perfect to write $c_i = b_i^p$ for each $i$, yielding
+
+\[
+\begin{align*}
+g(x) &= b_0^p + b_p^p x^2 + b_{2p}^p x^{2} + \cdots \\
+.\end{align*}
+\]
+and thus
+\[
+\begin{align*}
+f(x) &= g(x^p) \\
+&= b_0^p + b_p^p x^{p} + b_{2p}^p x^{2p} + \cdots \\
+&= (b_0 + b_p x + b_{2p} x^2)^p,
+.\end{align*}
+\]
+
 # Problem 8
 ?
 
