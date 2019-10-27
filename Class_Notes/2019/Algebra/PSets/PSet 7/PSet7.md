@@ -151,6 +151,12 @@ Since $p$ is prime and $Z(G)$ is a subgroup, this forces $\# Z(G) \in \theset{p,
 Supposing that $\# Z(G) = p^2$,we would have $[G: Z(G)] = p$, and since $Z(G) \normal G$, we can take the quotient and $\#\left(G/Z(G)\right) = p$.
 But this means $G/Z(G)$ is cyclic, which implies that $G$ is abelian, a contradiction.
 
+So we must have $\#Z(G) = p$, and $\#\left(G/Z(G)\right) = p^2$.
+
+
+
+
+
 ## Case 2: $\# Z(G) = p$:
 
 
