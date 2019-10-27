@@ -132,7 +132,7 @@ But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j
 .\end{align*}
 \]
 
-Thus we have $\generators{(1, j) \suchthat 2\leq j \leq p} \subseteq S$.
+Thus we have $\generators{\{(1, j) \mid 2\leq j \leq p}} \subseteq S$.
 
 But now if $\gamma = (g_1, g_2, \cdots, g_k) \in S_p$ is an arbitrary cycle, we can write
 $$
