@@ -303,8 +303,11 @@ and so $x = \frac{\phi(n)}{2}$ as desired. $\qed$
 
 # Problem 10
 
+Suppose $K/F$ is a finite, normal, Galois extension.
+
 ## Part 1
 
-Suppose that
+We have $F \leq E \leq K$. Suppose that
 
-- $K / F$ is cyclic, so $\
+- $K / F$ is cyclic, so $\Gal(K / F)$ is a cyclic group,
+- $E / F$ is normal,
