@@ -3243,5 +3243,36 @@ Suppose $\sum c_i \pi(h_i) = 0$ in $\liegl(V)$. Then,
 \]
 since $A$ is invertible.
 
-Thus $\tilde \lieh \coloneqq \span_\CC\theset{h_i}$ is a lie subalgebra of $\tilde\lieg$.
+Thus $\tilde \lieh \coloneqq \span_\CC\theset{h_i}$ is a lie subalgebra of $\tilde\lieg$..
 
+Theorem:
+
+a. $\tilde \lieg = \bigoplus_{u\in \tilde\lieh^*} \tilde \lieg_\mu$ as vector spaces, where
+$$
+\tilde\lieg_\mu \coloneqq \theset{x\in\tilde\lieg\suchthat [h, x] = \mu(h) x \quad \forall h\in\tilde\lieh}.
+$$
+
+b. $\tilde\lieg = \tilde n^- \oplus \tilde\lieh \oplus \tilde n$ as vector spaces, where $\tilde n^- \coloneqq \generators{f_i}$ and $\tilde n \coloneqq \generators{e_i}$.
+
+Proof of (a):
+
+It's easy to check that $[\tilde\lieg_\lambda, \tilde\lieg_\mu] \subseteq \lieg_{\lambda + \mu}$ for all $\lambda,\mu \in \tilde\lieh^*$.
+Define $\alpha_i \in \tilde\lieh^*$ by $h_j \mapsto a_{ij}$. Then
+
+- $e_i \in \tilde\lieg_{\alpha_i}, f_i \in \tilde\lieg_{-\alpha_i}, h_i \in\tilde\lieg_0$ for all $i$.
+- Any $x\in \tilde\lieg$ lies in $\tilde\lieg_\mu$ for *some* $\mu$.
+- $\tilde\lieg = \sum_\mu \tilde\lieg_\mu$.
+
+We just need to show that the last sum is in fact a direct sum.
+
+Suppose that $\exists x\neq 0$ such that $x\in \tilde\lieg_\mu, x = \sum_\nu x_\nu$ where $x_\nu \in \tilde\lieg_{\nu} - \theset{0}$ and $\nu$ runs over a finite set of weights that are not equal to $\mu$.
+
+Then $[h, x] = \mu(h) x$, and so $(\ad h - \mu(h)) (x) = 0$. 
+On the other hand, $\prod_\nu (\ad h - \nu(h)) (x_\nu) = 0$.
+So pick some $h\in\tilde\lieh$ such that $\mu(h) \neq \nu(h)$ for all $\nu$.
+Then the polynomials 
+$t - \mu(h), \prod_\nu (t - \nu(h))$ 
+are coprime, and so there exist $a,b$ such that
+$$
+a(t - \mu(h) + b \prod_\nu (t - \nu(h)) = 1, 
+$$
