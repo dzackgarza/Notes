@@ -318,4 +318,7 @@ We then want to show that
 1.  $E/F$ is cyclic, and
 2.  $K/E$ is cyclic
 
+By the fundamental theorem of Galois theory, $E/F$ is normal if and only if
 
+- $\Gal(K/E) \normal \Gal(K/F)$, and
+- $\Gal(E/F) \cong \Gal(K/F) / \Gal(K/E)$.
