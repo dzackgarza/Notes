@@ -3219,4 +3219,6 @@ Let $\tilde J \normal \mathcal{FL}(\theset{e_i, f_i, h_i \mid i\in I})$ generate
 Then let $J$ be the same ideal with the additional relations $s^+, s^-$.
 Set 
 $\tilde \lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / \tilde J$,
-$\lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / J$,
+$\lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / J$.
+
+
