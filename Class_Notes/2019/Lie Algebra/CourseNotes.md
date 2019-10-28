@@ -3228,7 +3228,20 @@ a. Let $V = \mathcal{F}(\theset{f_1, \cdots, f_\ell})$. Then $\pi: \tilde \lieg 
   - $h_j: f_{i_1} \cdots f_{i_r} \mapsto (\alpha_{ji_1} + \cdots )f_{i_1} \cdots f_{i_r}$
   - $e_j: f_{i_1} \cdots f_{i_r} \mapsto (\sum \delta_{} \sum a)(\alpha_{ji_1} + \cdots )f_{i_1} \cdots f_{i_r}$
 
+b. $\theset{h_1, \cdots h_\ell}$ is linearly independent set in $\tilde \lieg$.
 
+For (a), it suffices to check $[\pi(h_i), \pi(h_j)] = 0$, $[\pi(h_i), \pi(e_j)] = a_{ji} \pi(e_j)$, etc.
+For (b), it suffices to show that $\theset{\pi(h_i) \mid i\in I}$ is linearly independent.
 
+Suppose $\sum c_i \pi(h_i) = 0$ in $\liegl(V)$. Then,
+\[
+\begin{align*}
+0 = \left( \sum_c c_i \pi(h_i) \right)(f_j) = -\left( \sum_i c_i \alpha_{ji} \right) f_j \\
+\implies \sum c_i \alpha_{ji} = 0 \quad \forall ~j \\
+\implies c_i = 0 \quad \forall~i,
+.\end{align*}
+\]
+since $A$ is invertible.
 
+Thus $\tilde \lieh \coloneqq \span_\CC\theset{h_i}$ is a lie subalgebra of $\tilde\lieg$.
 
