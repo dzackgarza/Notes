@@ -3178,3 +3178,13 @@ s^=_{ij} \coloneqq \ad(e_i)^{1 - a_{ji}} (e_j) = 0 \quad \text{ if } i\neq j\\
 s-=_{ij} \coloneqq \ad(f_i)^{1 - a_{ji}} (f_j) = 0 \quad \text{ if } i\neq j \\
 .\end{align*}
 \]
+
+Proof:
+
+1. Show that $\theset{e_i, f_i, h_i}$ generates $\lieg$.
+
+The subalgebra $\lieh$ is spanned by $\theset{ t_{\alpha_i} \mid i\in I }$ and hence spanned by $\theset{h_i \mid i\in I}$.
+So it suffices to show that $\lieg_{\alpha} \subseteq \generators{e_i}$ for all $\alpha -in \Phi^+$.
+
+Write $\alpha = \alpha_i + \beta$ for each $i\in I, \beta \in \Phi^+$. 
+Then $[\lieg_{\alpha_i}, \lieg_\beta] = \lieg_\alpha = \CC e_\alpha$, so $e_\alpha = [e_i, e_\beta]$ for some nonzero $e_\beta \in \lieg_\beta$.
