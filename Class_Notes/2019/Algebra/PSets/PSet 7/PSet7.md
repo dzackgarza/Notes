@@ -310,4 +310,12 @@ Suppose $K/F$ is a finite, normal, Galois extension.
 We have $F \leq E \leq K$. Suppose that
 
 - $K / F$ is cyclic, so $\Gal(K / F)$ is a cyclic group,
-- $E / F$ is normal,
+- $E / F$ is normal
+
+
+We then want to show that
+
+1.  $E/F$ is cyclic, and
+2.  $K/E$ is cyclic
+
+
