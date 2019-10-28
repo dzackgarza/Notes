@@ -3223,9 +3223,12 @@ Then let $J$ be the same ideal with the additional relations $s^+, s^-$, and set
 
 Proposition:
 
-a. Let $V = \mathcal{F}(\theset{f_1, \cdots, f_\ell})$. Then $\pi: \tilde \lieg \tp \liegl(V)$ is a *representation* with
+a. Let $V = \mathcal{F}(\theset{f_1, \cdots, f_\ell})$. Then $\pi: \tilde \lieg \to \liegl(V)$ is a *representation* with
   - $f_j: f_{i_1} \cdots f_{i_r} \mapsto f_j f_{i_1}$
   - $h_j: f_{i_1} \cdots f_{i_r} \mapsto (\alpha_{ji_1} + \cdots )f_{i_1} \cdots f_{i_r}$
   - $e_j: f_{i_1} \cdots f_{i_r} \mapsto (\sum \delta_{} \sum a)(\alpha_{ji_1} + \cdots )f_{i_1} \cdots f_{i_r}$
+
+
+
 
 
