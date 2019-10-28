@@ -3216,9 +3216,12 @@ Let $\tilde J \normal \mathcal{FL}(\theset{e_i, f_i, h_i \mid i\in I})$ generate
 - $[e_i, f_j] - \delta_{ij} h_i$
 - $[h_i, f_j] + a_{ji} f_j$.
 
-Then let $J$ be the same ideal with the additional relations $s^+, s^-$.
-Set 
-$\tilde \lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / \tilde J$,
-$\lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / J$.
+Then let $J$ be the same ideal with the additional relations $s^+, s^-$, and set 
+
+- $\tilde \lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / \tilde J$,
+- $\lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / J$.
+
+
+
 
 
