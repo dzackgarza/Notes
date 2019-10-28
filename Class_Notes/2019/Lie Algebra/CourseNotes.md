@@ -3284,8 +3284,9 @@ x = 1(x) = a(\ad h) (\ad h - \mu(h))(x) + b(\ad h)(\prod_\nu \ad h - \nu(h))(x) 
 ,\end{align*}
 \]
 
-and so $\tilde\lieg = \oplus_\nu \tilde\lieg_\mu$. :w
+and so $\tilde\lieg = \oplus_\nu \tilde\lieg_\mu$.
 
 
-and so $\tilde\lieg = \oplus_\nu \tilde\lieg_\mu$. :w
+# Wednesday October 30
 
+Upcoming
