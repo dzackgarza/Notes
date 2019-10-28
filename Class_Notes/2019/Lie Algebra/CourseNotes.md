@@ -3190,3 +3190,17 @@ Write $\alpha = \alpha_i + \beta$ for each $i\in I, \beta \in \Phi^+$.
 Then $[\lieg_{\alpha_i}, \lieg_\beta] = \lieg_\alpha = \CC e_\alpha$, so $e_\alpha = [e_i, e_\beta]$ for some nonzero $e_\beta \in \lieg_\beta$.
 
 By repeating this argument, we find that $e_\alpha = [ \cdots [e_{i_1}, e_{i_2}], e_{i_3}, \cdots e_{i_k} ]$.
+
+2. Verify the relations
+
+We need to check that $s^+_{ij} = 0$.
+The $\alpha_i$ root string through $\alpha_j$ is given by 
+$$
+\alpha_j p\alpha_i \to \cdots \to \alpha_j + q \alpha_i
+$$
+
+where $p\neq 0$ because $\alpha_j - \alpha_i \not\in\Phi$ for any $i$, so the smallest root must be $\alpha_j \in \Phi$.
+By prop 8.4d, this means that $-q = \alpha_j(h_i) = \alpha_{ji}$.
+
+
+
