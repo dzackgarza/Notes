@@ -332,5 +332,7 @@ Similarly, since $\Gal(K/F)$ is a cyclic group and every *quotient* of a cyclic 
 By the Galois correspondence, all intermediate fields will correspond to subgroups of $\Gal(K/F)$.
 Since this group is cyclic, we are reduced to analyzing the subgroup lattice of a generic cyclic group.
 
-But if $G = \generators{x}$ where $\# G = n$, then there is one and *only* one subgroup of order $d$ for every $d$ dividing $n$, given by $H_d \coloneqq \generators{x^{\frac n d}}$
+But if $G = \generators{x \mid x^n = e}$ where $\# G = n$, then there is one and *only* one subgroup of order $d$ for every $d$ dividing $n$, given by $H_d \coloneqq \generators{x^{\frac n d}}$.
+
+We have $[G: H_d] = d$
 
