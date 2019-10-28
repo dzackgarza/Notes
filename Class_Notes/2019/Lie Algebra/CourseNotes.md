@@ -3221,7 +3221,11 @@ Then let $J$ be the same ideal with the additional relations $s^+, s^-$, and set
 - $\tilde \lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / \tilde J$,
 - $\lieg(A) = \mathcal{FL}(\theset{e_i, f_i, h_i}) / J$.
 
+Proposition:
 
+a. Let $V = \mathcal{F}(\theset{f_1, \cdots, f_\ell})$. Then $\pi: \tilde \lieg \tp \liegl(V)$ is a *representation* with
+  - $f_{i_1} \cdots f_{i_r} \mapsto f_j f_{i_1}$
+  - $f_{i_1} \cdots f_{i_r} \mapsto f_j f_{i_1}$
 
 
 
