@@ -3243,7 +3243,7 @@ Suppose $\sum c_i \pi(h_i) = 0$ in $\liegl(V)$. Then,
 \]
 since $A$ is invertible.
 
-Thus $\tilde \lieh \coloneqq \span_\CC\theset{h_i}$ is a lie subalgebra of $\tilde\lieg$..
+Thus $\tilde \lieh \coloneqq \mathrm{span}_\CC\theset{h_i}$ is a lie subalgebra of $\tilde\lieg$..
 
 Theorem:
 
@@ -3276,3 +3276,16 @@ are coprime, and so there exist $a,b$ such that
 $$
 a(t - \mu(h) + b \prod_\nu (t - \nu(h)) = 1, 
 $$
+
+Then evaluating at $t= \ad h$, we get 
+\[
+\begin{align*}
+x = 1(x) = a(\ad h) (\ad h - \mu(h))(x) + b(\ad h)(\prod_\nu \ad h - \nu(h))(x) = 0
+,\end{align*}
+\]
+
+and so $\tilde\lieg = \oplus_\nu \tilde\lieg_\mu$. :w
+
+
+and so $\tilde\lieg = \oplus_\nu \tilde\lieg_\mu$. :w
+
