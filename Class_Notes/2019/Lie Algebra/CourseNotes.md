@@ -3202,5 +3202,6 @@ $$
 where $p\neq 0$ because $\alpha_j - \alpha_i \not\in\Phi$ for any $i$, so the smallest root must be $\alpha_j \in \Phi$.
 By prop 8.4d, this means that $-q = \alpha_j(h_i) = \alpha_{ji}$.
 
+Thus $\ad(e_i)^{1-\alpha_{ji}} (e_j) = \ad(e_i)^{1+q} \in \lieg_{\alpha_j + (q+1)\alpha_i} = \theset{0}$. 
 
 
