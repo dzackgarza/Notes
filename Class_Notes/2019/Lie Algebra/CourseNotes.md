@@ -3189,7 +3189,7 @@ So it suffices to show that $\lieg_{\alpha} \subseteq \generators{e_i}$ for all 
 Write $\alpha = \alpha_i + \beta$ for each $i\in I, \beta \in \Phi^+$. 
 Then $[\lieg_{\alpha_i}, \lieg_\beta] = \lieg_\alpha = \CC e_\alpha$, so $e_\alpha = [e_i, e_\beta]$ for some nonzero $e_\beta \in \lieg_\beta$.
 
-By repeating this argument, we find that $e_\alpha = [ \cdots [e_{i_1}, e_{i_2}], e_{i_3}, \cdots e_{i_k} ]$.
+By repeating this argument, we find that $e_\alpha = [ [ \cdots [e_{i_1}, e_{i_2}], e_{i_3}] \cdots ], \cdots e_{i_k} ]$.
 
 2. Verify the relations
 
