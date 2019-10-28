@@ -334,5 +334,6 @@ Since this group is cyclic, we are reduced to analyzing the subgroup lattice of 
 
 But if $G = \generators{x \mid x^n = e}$ where $\# G = n$, then there is one and *only* one subgroup of index $d$ and order $\frac{n}{d}$ for every $d$ dividing $n$, given by $H_d \coloneqq \generators{x^d}$.
 
-We have $[G: H_d] = d$
+So we have $[G: H_d] = d$, so $H_d$ corresponds to a field $E_d/ F$ of degree $d$ where $F \leq E_d \leq K$. 
+This can be done for every $d$ dividing $n$, and since $K/F$ is a Galois extension, $n = \abs{\Gal{K/F}} = [K: F]$, and this can be done for every divisor of $[K: F]$ as desired. $\qed$
 
