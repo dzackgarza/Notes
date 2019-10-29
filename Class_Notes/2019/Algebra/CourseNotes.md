@@ -2828,6 +2828,8 @@ Let $R = k$ be a field (or potentially a division ring).
 5. Any two bases of a vector space have the same cardinality.
 
 
-Theorem:
+Theorem (Invariant Dimension):
 Let $R$ be a commutative ring and $M$ a free $R\dash$module.
 If $X_1, X_2$ are bases for $R$, then $\abs{X_1} = \abs{X_2}$.
+
+Any ring satisfying this property is said to have the *invariant dimension property*.
