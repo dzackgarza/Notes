@@ -2211,4 +2211,10 @@ $$
 \forall \varepsilon > 0 \& h \in C_c,\quad \exists g\in C_c^\infty \suchthat \norm{h - g}_1 < \varepsilon.
 $$
 
+Let $\phi \in C_c^\infty$ be arbitrary where $\int \phi = 1$ (which exist!).
+Then $\norm{h\ast \phi_t - h}_1 < \varepsilon$ for $t$ small enough.
+It remains to show that $h\ast \phi_t \in C_c^\infty$.
 
+- This is smooth, because of theorem 3 regarding convolution applied infinitely many times.
+
+- It is compactly supported because
