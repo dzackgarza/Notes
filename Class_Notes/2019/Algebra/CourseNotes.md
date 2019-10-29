@@ -2792,4 +2792,6 @@ This is unique because $\tilde f$ is determined precisely by $f(X)$.o
 
 Proof $3 \implies 2$:
 
-We use the usual "2 diagram" trick to product a map $\tilde f: M \to \oplus_{x\in X} R$ and $\tilde g: \oplus_{x\in X}R \to M$, then commutativity forces $\tilde f \circ \tilde g = \tilde g \circ \tilde f = \id$.
+We use the usual "2 diagram" trick to product a map $\tilde f: M \to \oplus_{x\in X} R$ and $\tilde g: \oplus_{x\in X}R \to M$, then commutativity forces $\tilde f \circ \tilde g = \tilde g \circ \tilde f = \id$. 
+
+Proof $2 \implies 1$:
