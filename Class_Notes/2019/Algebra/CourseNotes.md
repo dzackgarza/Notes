@@ -2826,3 +2826,8 @@ Let $R = k$ be a field (or potentially a division ring).
 3. Every linearly independent set is contained in a basis
 4. Every spanning set contains a basis.
 5. Any two bases of a vector space have the same cardinality.
+
+
+Theorem:
+Let $R$ be a commutative ring and $M$ a free $R\dash$module.
+If $X_1, X_2$ are bases for $R$, then $\abs{X_1} = \abs{X_2}$.
