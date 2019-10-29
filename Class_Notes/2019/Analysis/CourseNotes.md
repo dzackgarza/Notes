@@ -2184,3 +2184,17 @@ But then
 
 > Note that equality is attained here if $f, g \geq 0$.
 
+# Thursday October 25?
+
+Todo
+
+# Tuesday October 29
+
+## Approximations of the Identity
+
+Theorem:
+Let $\phi \in L^1$ and $\int \phi = 1$.
+Then
+
+- If $f$ is bounded and uniformly continuous, then $f \ast \phi_t \to f$ uniformly where $\phi_t(x) \coloneqq \frac 1 {t^n} \phi(\frac x t)$
+- If $f\in L^1$, then $f \ast \phi_t \to f$ in $L_1$.
