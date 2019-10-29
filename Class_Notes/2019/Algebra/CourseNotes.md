@@ -2815,5 +2815,5 @@ Examples:
 
 - $\ZZ_n$ is not a free $\ZZ\dash$module.
 - If $V$ is a vector space over a field $k$, then $V$ is a free $k\dash$module (even if infinite dimensional).
-- Every submodule of a free module is free.
+- Every nonzero submodule of a free module over a PID is free.
 
