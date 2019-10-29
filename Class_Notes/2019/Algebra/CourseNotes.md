@@ -2709,3 +2709,12 @@ Let $0 \to M_1 \mapsvia f M_2 \mapsvia f M_3 \to 0$ be a SES. Then TFAE:
 Proof:
 Define $\phi: M_1 \oplus M_3 \to M_2$ by $\phi(m_1 + m_2) = f(m_1) + h(m_2)$.
 We need to show that this diagram commutes:
+
+\[
+\begin{tikzcd}
+0 & M_1 \arrow[dd, "\id"] & M_2                               & M_3 \arrow[dd, "\id"] & 0 \\
+  &                       &                                   &                       &   \\
+0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0
+\end{tikzcd}
+\]
+
