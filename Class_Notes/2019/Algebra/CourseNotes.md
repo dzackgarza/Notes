@@ -2710,12 +2710,11 @@ Proof:
 Define $\phi: M_1 \oplus M_3 \to M_2$ by $\phi(m_1 + m_2) = f(m_1) + h(m_2)$.
 We need to show that this diagram commutes:
 
-\[
 \begin{tikzcd}
+0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\
   &                       &                                   &                       &   \\
 0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0
 \end{tikzcd}
-\]
 
 We can check that $g\phi(m_1 + m_2) = g( f(m_1)) +  g(h(m_2)) = m_2 = \pi(m_1 + m_2)$.
 This yields $1 \implies 3$, and $2 \implies 3$ is similar.
