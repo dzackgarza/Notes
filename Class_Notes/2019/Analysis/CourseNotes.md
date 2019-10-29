@@ -2148,28 +2148,3 @@ In the first case, let $A_x = \theset{\abs x \geq N}$
 \]
 
 and in the second case, take
-
-\[
-\begin{align*}
-\abs{f\star g} 
-&\leq \int \abs{f(x-y)} \abs{g(y)} ~dy \\
-& \leq M \int_{A_{y}} \abs{g(y)} < M\varepsilon
-.\end{align*}
-\]
-
-Proof of Theorem 2:
-
-Since $f,g \in L^1$, we have $h(x, y) \coloneqq f(x-y)g(y)$ is measurable on $\RR^n\cross\RR^n$. 
-To see that $f$ is in fact measurable, just define $F(x-y, y) = f(x-y)$ by taking the cylinder, then just let $T = [1, -1; 0, 1]$ so $T(x, y) = (x-y, y)$, so $\cdots = F \circ t(x, y)$.
-
-We can now note that 
-\[
-\begin{align*}
-\int \int \abs{f(x-y)} \abs{g(y)} ~dy ~dx 
-&=_{FT} \int \int \abs{f(x-y)} \abs{g(y)} ~dx ~dy \\
-&= \int \abs{g(y)} \left( \int \abs{f(x-y)} ~dx \right) ~dy \\
-&= \norm{f}_1 \norm{g}_1
-.\end{align*}
-\]
-This proves that the integrand is in $L^1(\RR^{2n})$, so Fubini implies that $f\star g(x)$ is in $L^1$ for a.e. $x$.
-
