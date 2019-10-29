@@ -2206,4 +2206,9 @@ Applications:
 $C_c^\infty \subset L^1$ is dense, i.e. $\forall \varepsilon > 0$ and for all $f\in L^1$, there exists a $g\in C_c^\infty$ such that $\norm{f - g}_1 < g$.
 
 Proof: 
+Since $C-c$ is dense in $L^1$, it suffices to show the following:
+$$
+\forall \varepsilon > 0 \& h \in C_c,\quad \exists g\in C_c^\infty \suchthat \norm{h - g}_1 < \varepsilon.
+$$
+
 
