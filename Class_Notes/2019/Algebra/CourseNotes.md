@@ -2750,3 +2750,7 @@ $\ZZ_6$ is an abelian group and thus a $\ZZ\dash$module, but not free because $3
 
 Theorem (Characterization of Free Modules):
 Let $R$ be a unital ring and $M$ a unital $R\dash$module (so $1\actson m = m$).
+Then TFAE:
+
+- There exists a nonempty basis of $M$.
+- $M = \oplus_{i\in I} R$ for some index set $I$.
