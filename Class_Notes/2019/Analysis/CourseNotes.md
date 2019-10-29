@@ -2198,3 +2198,12 @@ Then
 
 - If $f$ is bounded and uniformly continuous, then $f \ast \phi_t \to f$ uniformly where $\phi_t(x) \coloneqq \frac 1 {t^n} \phi(\frac x t)$
 - If $f\in L^1$, then $f \ast \phi_t \to f$ in $L_1$.
+
+
+Applications:
+
+1. Theorem:
+$C_c^\infty \subset L^1$ is dense, i.e. $\forall \varepsilon > 0$ and for all $f\in L^1$, there exists a $g\in C_c^\infty$ such that $\norm{f - g}_1 < g$.
+
+Proof: 
+
