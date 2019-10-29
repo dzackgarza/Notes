@@ -2219,3 +2219,14 @@ It remains to show that $h\ast \phi_t \in C_c^\infty$.
 
 - It is compactly supported: since $h, \phi_t$ are compactly supported, so there is some large $N$ such that $\abs x > N \implies h(x) = \phi_t(x) = 0$.
   Then if $\abs x > 2N$, then since $\abs x \leq \abs{x+y} + \abs{y}$, so either $\abs{x-y}\geq 2N$ or $\abs y \geq N$.
+  But then $h \ast \phi_t(x) = \int h(x-y)\phi_t(y)~dy$, and by the previous statement, at least one term in the integrand is zero, so the integral is zero and $h \ast \phi_t$ is also compact supported.
+
+2. Theorem (Weierstrass Approximation):
+
+A function can be *uniformly* approximated by a polynomial on any closed interval, i.e.
+$$
+\forall\varepsilon > 0,~ f\in C([a, b]),\quad \exists \text{ a polynomial } P \suchthat \abs{f(x) - P(x)} < \varepsilon \quad \forall x\in [a, b].
+$$
+
+
+
