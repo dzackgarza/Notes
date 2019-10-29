@@ -2229,7 +2229,7 @@ $$
 $$
 
 Proof:
-Let $g$ be a continuous function on $[-M, M] \supseteq [a, b]$ such that $\restrictionof{g}{[a, b]} = f$.
+<!--Let $g$ be a continuous function on $[-M, M] \supseteq [a, b]$ such that $\restrictionof{g}{[a, b]} = f$.-->
 Let $\phi(x) = e^{-\pi x^2}$ be the standard Gaussian, then $g \ast \phi_t \uniformlyconverges g$ on $[-M, M ]$, and thus $g\ast \phi_t \uniformlyconverges f$ on $[a, b]$.
 The problem is that this is not a polynomial.
 
