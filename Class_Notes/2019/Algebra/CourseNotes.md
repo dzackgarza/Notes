@@ -2833,3 +2833,5 @@ Let $R$ be a commutative ring and $M$ a free $R\dash$module.
 If $X_1, X_2$ are bases for $R$, then $\abs{X_1} = \abs{X_2}$.
 
 Any ring satisfying this property is said to have the *invariant dimension property*.
+
+> Note that it's difficult to say much more about generic modules, e.g. a finitely generated module may not have an invariant number of generators.
