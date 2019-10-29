@@ -2323,3 +2323,7 @@ But now one term is converging to $\int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\x
 Then there is a subsequence of the latter term converging to $f$ almost everywhere, and thus the pointwise limit in the first is equal to the $L^1$ limit in the second.
 
 We thus obtain $f(x) = \int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ almost everywhere.
+
+# Thursday October 31
+
+
