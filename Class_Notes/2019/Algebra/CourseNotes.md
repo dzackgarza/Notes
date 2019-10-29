@@ -2770,4 +2770,21 @@ X \arrow[rr, "f"] \arrow[uu, "\iota", hook] &  & N
 Definition:
 An $R\dash$module is *free* iff any of 1,2,3 hold.
 
+Proof of $1 \implies 2$:
 
+Let $X$ be a basis for $M$, then define $M \to \oplus_{x\in X} Rx$ by $\phi(m) = \sum r_i x_i$.
+It can be checked that 
+
+- This is an $R\dash$module homomorphism,
+- $\phi(m) = 0 \implies r_j = 0 ~\forall j \implies m = 0$, so $\phi$ is injective,
+- $\phi$ is surjective, since $X$ is a spanning set.
+
+So $M \cong \oplus_{x\in X} Rx$, so it only remains to show that $Rx \cong R$.
+We can define the map $R \mapsvia{\pi_x} Rx$ by $r \mapsto rx$, then $\pi_x$ is onto, and is injective exactly because $X$ is a linearly independent set.
+Thus $M \cong \oplus R$.
+
+Proof $1 \implies 3$:
+
+Let $X$ be a basis, and suppose there are two maps $X \mapsvia{\iota} M$ and $X \mapsvia{f} M$. 
+Then define $\tilde f: M \to N$ by $\sum r_i x_i \mapsto \sum r_i f(x_i)$.
+This is clearly an $R\dash$module homomorphism, and the diagram commutes because $(\tilde f \circ \iota)(x) = f(x)$.
