@@ -2767,3 +2767,7 @@ M \arrow[rrdd, "\exists! \tilde f", dotted] &  &   \\
 X \arrow[rr, "f"] \arrow[uu, "\iota", hook] &  & N
 \end{tikzcd}
 \]
+Definition:
+An $R\dash$module is *free* iff any of 1,2,3 hold.
+
+
