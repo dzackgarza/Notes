@@ -2700,7 +2700,7 @@ We say that two exact sequences are *isomorphic* if in the following diagram, $f
 
 Theorem:
 
-Let $0 \to M_1 \mapsvia f M_2 \mapsvia f M_3 \to 0$ be a SES. Then TFAE:
+Let $0 \to M_1 \mapsvia f M_2 \mapsvia g M_3 \to 0$ be a SES. Then TFAE:
 
 - There exists an $R\dash$module homomorphisms $h: M_3 \to M_2$ such that $g\circ h = \id_{M_3}$.
 - There exists an $R\dash$module homomorphisms $k: M_2 \to M_1$ such that $k\circ f = \id_{M_1}$.
@@ -2710,24 +2710,43 @@ Proof:
 Define $\phi: M_1 \oplus M_3 \to M_2$ by $\phi(m_1 + m_2) = f(m_1) + h(m_2)$.
 We need to show that this diagram commutes:
 
-\begin{tikzcd}
-0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\
-  &                       &                                   &                       &   \\
-0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0
-\end{tikzcd}
+<!--\begin{tikzcd}-->
+<!--0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\-->
+  <!--&                       &                                   &                       &   \\-->
+<!--0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0-->
+<!--\end{tikzcd}-->
 
 We can check that $g\phi(m_1 + m_2) = g( f(m_1)) +  g(h(m_2)) = m_2 = \pi(m_1 + m_2)$.
 This yields $1 \implies 3$, and $2 \implies 3$ is similar.
 
 To see that $3 \implies 1, 2$, we attempt to define $k, h$ in the following diagram:
 
-\begin{tikzcd}
-0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\
-            &                       &                                                   &                                                                   &   \\
-0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0
-\end{tikzcd}
+<!--\begin{tikzcd}-->
+<!--0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\-->
+            <!--&                       &                                                   &                                                                   &   \\-->
+<!--0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0-->
+<!--\end{tikzcd}-->
 
 So define $\k = \pi_1 \circ \phi\inv$ and $h = \phi \circ \iota_2$.
 It can then be checked that $g \circ h = g \cric \phi \circ \iota_2 = \pi_2 \circ \iota_2 = \id_{M_3}$. $\qed$
 
+## Free Modules
 
+A free module is a module with a basis.
+
+Definition:
+A subset $X = \theset{x_i}$ is *linearly independent* iff $\sum r_i x_i = 0 \implies r_i = 0 ~\forall i$.
+
+Definition:
+A subset $X$ *spans* $M$ iff $m\in M \implies m = \sum^n r_i x_i$.
+
+Definition:
+A subset $X$ is a basis
+
+Example: 
+$\ZZ_6$ is an abelian group and thus a $\ZZ\dash$module, but not free because $3 \actson [2] = [6] = 0$, so there are torsion elements.
+
+> This might contradict linear independence?
+
+Theorem (Characterization of Free Modules):
+Let $R$ be a unital ring and $M$ a unital $R\dash$module (so $1\actson m = m$).
