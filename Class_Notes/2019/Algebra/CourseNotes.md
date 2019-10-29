@@ -2712,9 +2712,26 @@ We need to show that this diagram commutes:
 
 \[
 \begin{tikzcd}
-0 & M_1 \arrow[dd, "\id"] & M_2                               & M_3 \arrow[dd, "\id"] & 0 \\
+0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\
   &                       &                                   &                       &   \\
 0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0
 \end{tikzcd}
 \]
+
+We can check that $g\phi(m_1 + m_2) = g( f(m_1)) +  g(h(m_2)) = m_2 = \pi(m_1 + m_2)$.
+This yields $1 \implies 3$, and $2 \implies 3$ is similar.
+
+To see that $3 \implies 1, 2$, we attempt to define $k, h$ in the following diagram:
+
+\[
+\begin{tikzcd}
+0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\
+            &                       &                                                   &                                                                   &   \\
+0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0
+\end{tikzcd}
+\]
+
+So define $\k = \pi_1 \circ \phi\inv$ and $h = \phi \circ \iota_2$.
+It can then be checked that $g \circ h = g \cric \phi \circ \iota_2 = \pi_2 \circ \iota_2 = \id_{M_3}$. $\qed$
+
 
