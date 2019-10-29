@@ -2697,3 +2697,13 @@ We say that two exact sequences are *isomorphic* if in the following diagram, $f
 0 & M                 & N                 & Q                 & 0
 \end{tikzcd}
 \]
+
+Theorem:
+
+Let $0 \to M_1 \mapsvia f M_2 \mapsvia f M_3 \to 0$ be a SES. Then TFAE:
+
+- There exists an $R\dash$module homomorphisms $h: M_3 \to M_2$ such that $g\circ h = \id_{M_3}$.
+- There exists an $R\dash$module homomorphisms $k: M_2 \to M_1$ such that $k\circ f = \id_{M_1}$.
+- The sequence is isomorphic to $0 \to M_1 \to M_1 \oplus M_3 \to M_3 \to 0$.
+
+Proof:
