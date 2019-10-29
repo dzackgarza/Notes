@@ -2306,4 +2306,12 @@ $$
 $$
 
 We have
+\[
+\begin{align*}
+\int \hat f(\xi) \exp(-\pi t^2 \abs{\xi}^2) \exp(2\pi i x \cdot \xi) ~d\xi \coloneqq \int \hat f(\xi) \phi(\xi) \\
+= \int f(y) \hat \phi(y)~dy \\
+=_{DCT} \int \hat f(\xi) \exp(2\pi i x \cdot \xi) ~d\xi \quad \text{as } t\to 0
+.\end{align*}
+\]
 
+where $\phi(\xi) = \exp(2\pi i x\cdot \xi) \hat{g_t}(\xi)$. 
