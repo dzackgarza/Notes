@@ -2308,10 +2308,18 @@ $$
 We have
 \[
 \begin{align*}
-\int \hat f(\xi) \exp(-\pi t^2 \abs{\xi}^2) \exp(2\pi i x \cdot \xi) ~d\xi \coloneqq \int \hat f(\xi) \phi(\xi) \\
-= \int f(y) \hat \phi(y)~dy \\
-=_{DCT} \int \hat f(\xi) \exp(2\pi i x \cdot \xi) ~d\xi \quad \text{as } t\to 0
+\int \hat f(\xi) \exp(-\pi t^2 \abs{\xi}^2) \exp(2\pi i x \cdot \xi) ~d\xi i \\
+&\coloneqq \int \hat f(\xi) \phi(\xi) \quad \quad (= f \ast g_t(x) \to_{L_1} f) \\
+&= \int f(y) \hat \phi(y)~dy \\
+&=_{DCT} \int \hat f(\xi) \exp(2\pi i x \cdot \xi) ~d\xi \quad \text{as } t\to 0
 .\end{align*}
 \]
 
-where $\phi(\xi) = \exp(2\pi i x\cdot \xi) \hat{g_t}(\xi)$. 
+where $\phi(\xi) = \exp(2\pi i x\cdot \xi) \hat{g_t}(\xi)$.
+
+> HW: Shows $\hat \phi(y) = \hat{\hat g_t}(y-x)$, and an easy consequence is that this is in fact $g_t(x - y)$.
+
+But now one term is converging to $\int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ as $t\to 0$ pointwise, and $f\ast g_t(x) \to f$ as $t\to 0$ in $L_1$.
+Then there is a subsequence of the latter term converging to $f$ almost everywhere, and thus the pointwise limit in the first is equal to the $L^1$ limit in the second.
+
+We thus obtain $f(x) = \int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ almost everywhere.
