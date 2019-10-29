@@ -2120,7 +2120,7 @@ and
 \int f(x+h-y)g(y)~dy - \int f(x-y)g(y)~dy
 } \\
 &\leq \int \abs{f(x+h-y) - f(x-y)} \abs{g(y)}~dy \\
-&\leq M \int \abs{f(z+h) - f(z)}~dz \t0 0
+&\leq M \int \abs{f(z+h) - f(z)}~dz \to 0
 .\end{align*}
 \]
 
@@ -2128,7 +2128,126 @@ For (b):
 
 Let $\varepsilon > 0$, then choose $N$ such that 
 $$
-\int_{\theset{\norm y \geq N}} \abs{f(y)} ~dy < \varepsilon \quad \text{and} \quad 
-\int_{\theset{\norm y \geq N}} \abs{g(y)} ~dy 
+\int_{\theset{\norm{y} \geq N}} \abs{f(y)} ~dy < \varepsilon \quad \text{and} \quad 
+\int_{\theset{\norm{y} \geq N}} \abs{g(y)} ~dy 
 .$$
+
+Since $\abs{x} \leq \abs{x-y} + \abs{y}$ by the triangle inequality, if we take $\abs{x} \geq 2N$, then *either* 
+
+- $\abs{x-y} \geq N$, or
+- $\abs{y} \geq N$.
+
+In the first case, let $A_x = \theset{\abs x \geq N}$
+
+\[
+\begin{align*}
+\abs{f\star g} 
+&\leq \int \abs{f(x-y)} \abs{g(y)} ~dy \\
+&\leq M \int_{A_{x-y}} \abs{f(x-y)} < M\varepsilon
+.\end{align*}
+\]
+
+and in the second case, take
+
+\[
+\begin{align*}
+\abs{f\star g} 
+&\leq \int \abs{f(x-y)} \abs{g(y)} ~dy \\
+&\leq M \int_{A_{y}} \abs{g(y)} < M\varepsilon
+.\end{align*}
+\]
+
+Proof of Theorem 2:
+
+Since $f,g \in L^1$, we have $h(x, y) \coloneqq f(x-y)g(y)$ is measurable on $\RR^n\cross\RR^n$. 
+To see that $f$ is in fact measurable, just define $F(x-y, y) = f(x-y)$ by taking the cylinder, then just let $T = [1, -1; 0, 1]$ so $T(x, y) = (x-y, y)$, so $\cdots = F \circ t(x, y)$.
+
+We can now note that 
+
+\[
+\begin{align*}
+\int \int \abs{f(x-y)} \abs{g(y)} ~dy ~dx 
+&=_{FT} \int \int \abs{f(x-y)} \abs{g(y)} ~dx ~dy \\
+&= \int \abs{g(y)} \left( \int \abs{f(x-y)} ~dx \right) ~dy \\
+&= \norm{f}_1 \norm{g}_1
+.\end{align*}
+\]
+This proves that the integrand is in $L^1(\RR^{2n})$, so Fubini implies that $f\star g(x)$ is in $L^1$ for a.e. $x$.
+
+But then
+\[
+\begin{align*}
+\int \abs{f\star g(x)}~dx 
+&\leq \int \int \abs{f(x-y) g(y)}~dy~dx \\
+&= \norm{f}_1 \norm{g}_1
+.\end{align*}
+\]
+
+> Note that equality is attained here if $f, g \geq 0$.
+
+# Thursday October 25?
+
+Todo
+
+# Tuesday October 29
+
+## Approximations of the Identity
+
+Theorem:
+Let $\phi \in L^1$ and $\int \phi = 1$.
+Then
+
+- If $f$ is bounded and uniformly continuous, then $f \ast \phi_t \to f$ uniformly where $\phi_t(x) \coloneqq \frac 1 {t^n} \phi(\frac x t)$
+- If $f\in L^1$, then $f \ast \phi_t \to f$ in $L_1$.
+
+
+Applications:
+
+1. Theorem:
+$C_c^\infty \subset L^1$ is dense, i.e. $\forall \varepsilon > 0$ and for all $f\in L^1$, there exists a $g\in C_c^\infty$ such that $\norm{f - g}_1 < g$.
+
+Proof: 
+Since $C-c$ is dense in $L^1$, it suffices to show the following:
+$$
+\forall \varepsilon > 0 \& h \in C_c,\quad \exists g\in C_c^\infty \suchthat \norm{h - g}_1 < \varepsilon.
+$$
+
+Let $\phi \in C_c^\infty$ be arbitrary where $\int \phi = 1$ (which exist!).
+Then $\norm{h\ast \phi_t - h}_1 < \varepsilon$ for $t$ small enough.
+It remains to show that $h\ast \phi_t \in C_c^\infty$.
+
+- This is smooth, because of theorem 3 regarding convolution applied infinitely many times.
+
+- It is compactly supported: since $h, \phi_t$ are compactly supported, so there is some large $N$ such that $\abs x > N \implies h(x) = \phi_t(x) = 0$.
+  Then if $\abs x > 2N$, then since $\abs x \leq \abs{x+y} + \abs{y}$, so either $\abs{x-y}\geq 2N$ or $\abs y \geq N$.
+  But then $h \ast \phi_t(x) = \int h(x-y)\phi_t(y)~dy$, and by the previous statement, at least one term in the integrand is zero, so the integral is zero and $h \ast \phi_t$ is also compact supported.
+
+2. Theorem (Weierstrass Approximation):
+
+A function can be *uniformly* approximated by a polynomial on any closed interval, i.e.
+$$
+\forall\varepsilon > 0,~ f\in C([a, b]),\quad \exists \text{ a polynomial } P \suchthat \abs{f(x) - P(x)} < \varepsilon \quad \forall x\in [a, b].
+$$
+
+Proof:
+Let $g$ be a continuous function on $[-M, M] \supseteq [a, b]$ such that $\restrictionof{g}{[a, b]} = f$.
+Let $\phi(x) = e^{-\pi x^2}$ be the standard Gaussian, then $g \ast \phi_t \uniformlyconverges g$ on $[-M, M ]$, and thus $g\ast \phi_t \uniformlyconverges f$ on $[a, b]$.
+The problem is that this is not a polynomial.
+
+We can let $\varepsilon > 0$, then there is a $t$ such that $\abs{g\ast \phi_t(x) - g(x)} < \varepsilon \forall x\in[-M, M]$.
+Note that $\phi_t(x) = \frac 1 t e^{-\pi x^2 / t^2}$, and Maclaurin expand to obtain $\frac 1 t \sum_{n=0}^\infty \frac{(-1)^n \pi^n x^{2n}}{t^{2n} n!}$.
+
+> Note that the Maclaurin series will converge uniformly on compact sets!
+
+By uniform convergence of this series, we can truncate the series to bound the difference by, say, $\varepsilon / \norm{g}_1$.
+Let $Q(x)$ be the truncated series.
+Then
+
+$$
+\abs{g\ast\phi_t(x) - g\ast Q(x)} \leq \abs{g\ast(\phi_t - Q)(x)} \leq \norm{g} \norm{p_t(x) - Q(x)}_\infty < \varepsilon,
+$$
+
+(where $\norm{f}_\infty = \sup_{x\in [a, b]} \abs{f(x)}$) and $g\ast Q(x)$ is a polynomial. $\qed$
+
+
 
