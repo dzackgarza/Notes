@@ -2669,3 +2669,23 @@ Theorem:
 
 > Note that we can always quotient, since there's an underlying abelian group, and thus the "normality"/ideal condition is always satisfied for submodules. Just consider $M/N  = \theset{m + N \suchthat m\in M}$; then $R\actson (M/N)$ in a well-defined way. 
 
+# Thursday October 25?
+
+Find
+
+# Tuesday October 29
+
+Lemma (Short Five):
+
+Let $R$ be a ring, then if we have the following diagram:
+
+where
+
+1. $\alpha, \gamma$ mono implies $\beta$ is mono.
+2. $\alpha, \gamma$ epi implies $\beta$ is too.
+3. $\alpha, \gamma$ is iso implies $\beta$ is too.
+
+Proof:
+Check
+
+
