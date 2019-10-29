@@ -2825,3 +2825,4 @@ Let $R = k$ be a field (or potentially a division ring).
 2. Every vector space has a basis.
 3. Every linearly independent set is contained in a basis
 4. Every spanning set contains a basis.
+5. Any two bases of a vector space have the same cardinality.
