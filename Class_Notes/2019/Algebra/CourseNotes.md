@@ -2802,6 +2802,6 @@ The claim is that $X$ is a basis.
 To see this is a basis, suppose $\sum r_i \psi(1_i) = 0$, then $\psi(\sum r_i 1_i) = 0$ and thus $\sum r_i 1_i = 0$ and $r_i = 0$ for all $i$.
 Checking that it's a spanning set: exercise. $\qed$
 
-
-
+Corollary:
+Every $R\dash$module is the homomorphic image of a free module.
 
