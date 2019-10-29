@@ -2800,3 +2800,6 @@ We have $M = \oplus_{i\in I} R$ by (2).
 So there exists a $\psi: \oplus_{i\in I} R \to M$, so let $X \coloneqq \theset{\psi(1_i) \mid i\in I}$.
 The claim is that $X$ is a basis.
 To see this is a basis, suppose $\sum r_i \psi(1_i) = 0$, then $\psi(\sum r_i 1_i) = 0$ and thus $\sum r_i 1_i = 0$ and $r_i = 0$ for all $i$.
+Checking that it's a spanning set: exercise.
+
+
