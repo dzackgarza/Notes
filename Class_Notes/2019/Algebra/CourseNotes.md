@@ -2805,3 +2805,15 @@ Checking that it's a spanning set: exercise. $\qed$
 Corollary:
 Every $R\dash$module is the homomorphic image of a free module.
 
+
+Proof: 
+Let $M$ be an $R\dash$module, and let $X$ be any set of generators of $R$. 
+Then we can make a map $M \to \oplus{x\in X} R$ and there is a map $X \injects M$, so the universal property provides $\tilde f: \oplus_{x\in X} R \to M$. 
+Moreover, $\oplus_{x\in X} R$ is free.
+
+Examples:
+
+- $\ZZ_n$ is not a free $\ZZ\dash$module.
+- If $V$ is a vector space over a field $k$, then $V$ is a free $k\dash$module (even if infinite dimensional).
+- Every submodule of a free module is free.
+
