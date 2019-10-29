@@ -2712,7 +2712,8 @@ We need to show that this diagram commutes:
 
 \[
 \begin{tikzcd}
-0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\
+  &                       &                                   &                       &   \\
+0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0
 \end{tikzcd}
 \]
 
