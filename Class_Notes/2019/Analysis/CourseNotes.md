@@ -2229,7 +2229,22 @@ $$
 $$
 
 Proof:
-<!--Let $g$ be a continuous function on $[-M, M] \supseteq [a, b]$ such that $\restrictionof{g}{[a, b]} = f$.-->
+Let $g$ be a continuous function on $[-M, M] \supseteq [a, b]$ such that $\restrictionof{g}{[a, b]} = f$.
 Let $\phi(x) = e^{-\pi x^2}$ be the standard Gaussian, then $g \ast \phi_t \uniformlyconverges g$ on $[-M, M ]$, and thus $g\ast \phi_t \uniformlyconverges f$ on $[a, b]$.
 The problem is that this is not a polynomial.
+
+We can let $\varepsilon > 0$, then there is a $t$ such that $\abs{g\ast \phi_t(x) - g(x)} < \varepsilon \forall x\in[-M, M]$.
+Note that $\phi_t(x) = \frac 1 t e^{-\pi x^2 / t^2}$, and Maclaurin expand to obtain $\frac 1 t \sum_{n=0}^\infty \frac{(-1)^n \pi^n x^{2n}}{t^{2n} n!}$.
+
+> Note that the Maclaurin series will converge uniformly on compact sets!
+
+By uniform convergence of this series, we can truncate the series to bound the difference by, say, $\varepsilon / \norm{g}_1$.
+Let $Q(x)$ be the truncated series.
+Then
+
+$$
+\abs{g\ast\phi_t(x) - g\ast Q(x)} \leq \abs{g\ast(\phi_t - Q)(x)} \leq \norm{g} \norm{p_t(x) - Q(x)}_\infty < \varepsilon,
+$$
+
+(where $\norm{f}_\infty = \sup_{x\in [a, b]} \abs{f(x)}$) and $g\ast Q(x)$ is a polynomial. $\qed$
 
