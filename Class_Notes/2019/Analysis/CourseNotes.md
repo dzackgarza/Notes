@@ -2295,7 +2295,15 @@ Important example (HW):
 If $g(x) = e^{-\pi \abs{x}^2}$ then $\hat g(\xi) = e^{-\pi \abs{\xi}^2}$. 
 Note $g_t(x) = \frac{1}{t^n} \exp(-\pi \abs{x}^2 / t^2)$ is an approximation to the identity, and $\int g_t = 1$.
 By a HW exercise, have have $\hat{g_t}(\xi) = \hat{g}(t\xi) = \exp(-\pi t^2 \abs{\xi}^2)$, which is exactly the convergence factor we're looking for.
+Moreover, $f \ast g_t \to f$ in $L^1$.
 
-> This says that the fourier transform commutes with dilation in a certain way.
+> This says that the Fourier transform commutes with dilation in a certain way.
 
+Lemma (Multiplication Formula):
+If $f, g \in L^1$, then an easy application of Fubini-Tonelli yields
+$$
+\int f \hat g = \int \hat f g.
+$$
+
+We have
 
