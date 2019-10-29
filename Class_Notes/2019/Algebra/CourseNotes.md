@@ -2788,3 +2788,4 @@ Proof $1 \implies 3$:
 Let $X$ be a basis, and suppose there are two maps $X \mapsvia{\iota} M$ and $X \mapsvia{f} M$. 
 Then define $\tilde f: M \to N$ by $\sum r_i x_i \mapsto \sum r_i f(x_i)$.
 This is clearly an $R\dash$module homomorphism, and the diagram commutes because $(\tilde f \circ \iota)(x) = f(x)$.
+This is unique because $\tilde f$ is determined precisely by $f(X)$.
