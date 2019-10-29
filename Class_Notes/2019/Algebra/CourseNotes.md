@@ -2732,4 +2732,6 @@ To see that $3 \implies 1, 2$, we attempt to define $k, h$ in the following diag
 \]
 
 So define $\k = \pi_1 \circ \phi\inv$ and $h = \phi \circ \iota_2$.
-It can then be checked that $g \circ h = g \cric \phi \circ \iota_2 = \pi_2 \circ \iota_2 = \id_{M_3}$.
+It can then be checked that $g \circ h = g \cric \phi \circ \iota_2 = \pi_2 \circ \iota_2 = \id_{M_3}$. $\qed$
+
+
