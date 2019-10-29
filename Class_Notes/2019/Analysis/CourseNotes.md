@@ -2228,5 +2228,8 @@ $$
 \forall\varepsilon > 0,~ f\in C([a, b]),\quad \exists \text{ a polynomial } P \suchthat \abs{f(x) - P(x)} < \varepsilon \quad \forall x\in [a, b].
 $$
 
-
+Proof:
+Let $g$ be a continuous function on $[-M, M] \supseteq [a, b]$ such that $\restrictionof{g}{[a, b]} = f$.
+Let $\phi(x) = e^{-\pi x^2}$ be the standard Gaussian, then $g \ast \phi_t \uniformlyconverges g$ on $[-M, M ]$, and thus $g\ast \phi_t \uniformlyconverges f$ on $[a, b]$.
+The problem is that this is not a polynomial.
 
