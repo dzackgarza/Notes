@@ -2722,13 +2722,13 @@ This yields $1 \implies 3$, and $2 \implies 3$ is similar.
 To see that $3 \implies 1, 2$, we attempt to define $k, h$ in the following diagram:
 
 
-\[
-\begin{tikzcd}
-0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\
-            &                       &                                                   &                                                                   &   \\
-0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0
-\end{tikzcd}
-\]
+<!--\[-->
+<!--\begin{tikzcd}-->
+<!--0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\-->
+            <!--&                       &                                                   &                                                                   &   \\-->
+<!--0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0-->
+<!--\end{tikzcd}-->
+<!--\]-->
 
 
 So define $\k = \pi_1 \circ \phi\inv$ and $h = \phi \circ \iota_2$.
@@ -2758,3 +2758,4 @@ Then TFAE:
 
 - There exists a nonempty basis of $M$.
 - $M = \oplus_{i\in I} R$ for some index set $I$.
+- There exists a non-empty set $X$ and a map $\iota: X \injects M$ such that given $f: X \to N$ for $N$ any $R\dash$ module, $\exists! \tilde f: M \to N$ such that the following diagram commutes.
