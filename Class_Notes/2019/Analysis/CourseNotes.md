@@ -2100,3 +2100,76 @@ If $f\in L^1$ and $g\in C^\infty_c \implies f\star g \in C^\infty$ and $\lim_{\a
 
 ![Image](figures/2019-10-22-11:55.png)
 
+Proof of Theorem 1:
+
+For (a):
+\[
+\begin{align*}
+\abs{\int f(x-y)g(y) ~dy} 
+&\leq \int \abs{f(x-y)} \abs{g(y)} ~dy \\
+&\leq M \int \abs{f(x-y)} ~dy \\
+&\leq M \norm{f}_1
+.\end{align*}
+\]
+and
+
+\[
+\begin{align*}
+\abs{f\star g(x+h) - f\star g}
+&= \abs{
+\int f(x+h-y)g(y)~dy - \int f(x-y)g(y)~dy
+} \\
+&\leq \int \abs{f(x+h-y) - f(x-y)} \abs{g(y)}~dy \\
+&\leq M \int \abs{f(z+h) - f(z)}~dz \t0 0
+.\end{align*}
+\]
+
+For (b):
+
+Let $\varepsilon > 0$, then choose $N$ such that 
+$$
+\int_{\theset{\norm y \geq N}} \abs{f(y)} ~dy < \varepsilon \quad \text{and} \quad 
+\int_{\theset{\norm y \geq N}} \abs{g(y)} ~dy 
+.$$
+
+Since $\abs{x} \leq \abs{x-y} + \abs{y}$ by the triangle inequality, if we take $\abs{x} \geq 2N$, then *either* 
+
+- $\abs{x-y} \geq N$, or
+- $\abs{y} \geq N$.
+
+In the first case, let $A_x = \theset{\abs x \geq N}$
+
+\[
+\begin{align*}
+\abs{f\star g} 
+&\leq \int \abs{f(x-y)} \abs{g(y)} ~dy \\
+& \leq M \int_{A_{x-y}} \abs{f(x-y)} < M\varepsilon
+.\end{align*}
+\]
+
+and in the second case, take
+
+\[
+\begin{align*}
+\abs{f\star g} 
+&\leq \int \abs{f(x-y)} \abs{g(y)} ~dy \\
+& \leq M \int_{A_{y}} \abs{g(y)} < M\varepsilon
+.\end{align*}
+\]
+
+Proof of Theorem 2:
+
+Since $f,g \in L^1$, we have $h(x, y) \coloneqq f(x-y)g(y)$ is measurable on $\RR^n\cross\RR^n$. 
+To see that $f$ is in fact measurable, just define $F(x-y, y) = f(x-y)$ by taking the cylinder, then just let $T = [1, -1; 0, 1]$ so $T(x, y) = (x-y, y)$, so $\cdots = F \circ t(x, y)$.
+
+We can now note that 
+\[
+\begin{align*}
+\int \int \abs{f(x-y)} \abs{g(y)} ~dy ~dx 
+&=_{FT} \int \int \abs{f(x-y)} \abs{g(y)} ~dx ~dy \\
+&= \int \abs{g(y)} \left( \int \abs{f(x-y)} ~dx \right) ~dy \\
+&= \norm{f}_1 \norm{g}_1
+.\end{align*}
+\]
+This proves that the integrand is in $L^1(\RR^{2n})$, so Fubini implies that $f\star g(x)$ is in $L^1$ for a.e. $x$.
+
