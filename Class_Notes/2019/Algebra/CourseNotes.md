@@ -2759,3 +2759,11 @@ Then TFAE:
 - There exists a nonempty basis of $M$.
 - $M = \oplus_{i\in I} R$ for some index set $I$.
 - There exists a non-empty set $X$ and a map $\iota: X \injects M$ such that given $f: X \to N$ for $N$ any $R\dash$ module, $\exists! \tilde f: M \to N$ such that the following diagram commutes.
+
+\[
+\begin{tikzcd}
+M \arrow[rrdd, "\exists! \tilde f", dotted] &  &   \\
+                                            &  &   \\
+X \arrow[rr, "f"] \arrow[uu, "\iota", hook] &  & N
+\end{tikzcd}
+\]
