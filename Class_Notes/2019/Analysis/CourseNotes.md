@@ -2249,5 +2249,53 @@ $$
 
 (where $\norm{f}_\infty = \sup_{x\in [a, b]} \abs{f(x)}$) and $g\ast Q(x)$ is a polynomial. $\qed$
 
+## Fourier Transform on $\RR^n$
+
+Given $f\in L^1$, we defined the Fourier transform of $f$ by
+$$
+\hat f(\xi) = \int f(x) \exp(-2\pi i x\cdot \xi)~dx.
+$$
+
+Some things we know about the Fourier transform:
+
+- $f\in L^1 \implies \hat f$ is bounded and uniformly continuous (from an old homework)
+- $\lim {\abs \xi \to \infty} \hat f(\xi) = 0$, i.e. the Riemann-Lebesgue lemma (see current homework), i.e. $\hat f$ vanishes at infinity.
+
+> Warning: $f \in L^1 \not\implies \hat f\in L^1$ necessarily!
+
+Theorem (Inversion Formula):
+If $f, \hat f \in L^1$ then
+$$
+f(x) = \int \hat f (x) \exp(2\pi i x\cdot \xi) ~d\xi \quad \text{for a.e. } x,
+$$
+i.e. $\hat{\hat f} = f(-x)$, and the Fourier transform is 4-periodic.
+
+> Note that there is an interpretation here as writing an arbitrary function as a (continuous) sum of *characters*, where we're considering $\RR^n$ with the action of translation. Then the exponentials are certain eigenfunctions.
+
+Corollaries:
+
+1. $f, \hat f \in L^1$ implies that $f$ itself is bounded, continuous, and vanishes at infinity. (Note that this is not true for arbitrary $L^1$ functions!)
+  We will in fact show that $\theset{f \suchthat f, \hat f \in L^1}$ is dense in $L^1$.
+
+2. $f \in L^1$ and $\hat f = 0$ almost everywhere implies that $f = 0$ almost everywhere (using the Inversion formula)
+
+Proof of Inversion Formula:
+
+> Note: Fubini-Tonelli won't work here *directly*.
+
+We'll have
+$$
+f(x) = \int\int f(y) \exp(-2\pi i y\cdot \xi) \exp(2\pi i x \cdot \xi) ~dy ~d\xi,
+$$
+
+which is patently not in $L^1(\RR^{2n})$.
+So we'll introduce a "convergence factor" $\exp(-\pi t^2 \abs{\xi}^2)$, which will make the integral swap result in something integrable, then take limits.
+
+Important example (HW): 
+If $g(x) = e^{-\pi \abs{x}^2}$ then $\hat g(\xi) = e^{-\pi \abs{\xi}^2}$. 
+Note $g_t(x) = \frac{1}{t^n} \exp(-\pi \abs{x}^2 / t^2)$ is an approximation to the identity, and $\int g_t = 1$.
+By a HW exercise, have have $\hat{g_t}(\xi) = \hat{g}(t\xi) = \exp(-\pi t^2 \abs{\xi}^2)$, which is exactly the convergence factor we're looking for.
+
+> This says that the fourier transform commutes with dilation in a certain way.
 
 
