@@ -2132,19 +2132,3 @@ $$
 \int_{\theset{\norm y \geq N}} \abs{g(y)} ~dy 
 .$$
 
-Since $\abs{x} \leq \abs{x-y} + \abs{y}$ by the triangle inequality, if we take $\abs{x} \geq 2N$, then *either* 
-
-- $\abs{x-y} \geq N$, or
-- $\abs{y} \geq N$.
-
-In the first case, let $A_x = \theset{\abs x \geq N}$
-
-\[
-\begin{align*}
-\abs{f\star g} 
-&\leq \int \abs{f(x-y)} \abs{g(y)} ~dy \\
-& \leq M \int_{A_{x-y}} \abs{f(x-y)} < M\varepsilon
-.\end{align*}
-\]
-
-and in the second case, take
