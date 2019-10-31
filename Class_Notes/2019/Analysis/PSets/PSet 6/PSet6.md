@@ -44,6 +44,8 @@ Assuming an interchange of integrals is justified, we have
 .\end{align*}
 \]
 
+It thus remains to show that this swap is justified.
+
 ## Part (b)
 
 We'll use the following lemma: if $\hat f = \hat g$, then $f = g$ almost everywhere.
