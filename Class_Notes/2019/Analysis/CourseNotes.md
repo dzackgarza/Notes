@@ -2367,6 +2367,10 @@ Recall the identities:
 - $\widehat{\Delta f}(\xi) = 4\pi^2 \abs{\xi}^2 \hat{f}(\xi)$.
 
 If we take the Fourier transform in the $x$ variable, we get $\widehat{\dd{u}{t}} = \dd{}{t} \hat{u}(\xi, t) = -\pi \abs{\xi}^2 \hat{u}(\xi, t)$.
+Then the boundary conditions become $\hat{u}(\xi, 0) = \xi{f}(\xi)$.
+But note that this is now a first order ODE!
+
+This is easy to solve, we get $\hat u (\xi, t) = c(\xi) \exp(-\pi \abs{\xi}^2 t) = \hat f(\xi) \exp(-\pi \abs{\xi}^2 t)$.
 
 ## Dirichlet problem in the upper half-plane
 
