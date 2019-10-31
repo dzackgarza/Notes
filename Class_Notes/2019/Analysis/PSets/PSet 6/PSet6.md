@@ -18,8 +18,10 @@ But as an immediate consequence, this yields
 \abs{\hat f (\xi)} &= \abs{\int_{\RR^n} (f(x) - f(x-\xi')) \exp(-2\pi i x\cdot \xi) ~dx} \\
 &\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} \abs{\exp(-2\pi i x\cdot \xi)} ~dx \\
 &\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
-.\end{align*}
+&\to 0
+,\end{align*}
 \]
+which follows from continuity in $L^1$ since $f(x - \xi') \to f(x)$ as $\xi' \to 0$.
 
 # Problem 2
 
