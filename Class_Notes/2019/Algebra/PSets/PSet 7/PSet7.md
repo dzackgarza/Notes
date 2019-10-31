@@ -271,7 +271,7 @@ Thus every irreducible polynomial is separable, which is what we wanted to show.
 
 # Problem 8
 
-Let $f(x) \in F[x]$ be irreducible, then since $ p(x) \coloneqq \gcd(f, f')$ must divide $f$ and $f$ is irreducible, the only possibilities are $p(x) = 1$ or $p(x) = f(x)$.
+Let $f(x) \in F[x]$ be irreducible, then since $p(x) \coloneqq \gcd(f, f')$ must divide $f$ and $f$ is irreducible, the only possibilities are $p(x) = 1$ or $p(x) = f(x)$.
 
 If $p(x) = 1$, then $f$ is separable, so every root is distinct and $f$ itself is of the form $f(x^{p^e})$ where each $e=0$.
 
