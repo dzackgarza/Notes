@@ -2328,4 +2328,4 @@ We thus obtain $f(x) = \int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ almost ev
 
 Today: Some topics in PDEs.
 
-
+## The heat (diffusion) equation in the plane
