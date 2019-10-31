@@ -2466,3 +2466,6 @@ Note the similarities -- the first term is a rough average, the second term is a
 
 > Exercise: verify that these two solutions are actually equivalent.
 
+# Tuesday: November ?
+
+Upcoming
