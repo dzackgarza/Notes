@@ -61,7 +61,7 @@ and so by the lemma, $f\ast g = g\ast f$.
 
 Similarly, we have
 $$
-\widehat{(f\ast g) \ast h} = \widehat{f\ast g} \hat h = \hat f \hat g \hat h = \hat f \widehat{g\ast h} = f\ast (g \ast h).
+\widehat{(f\ast g) \ast h} = \widehat{f\ast g} ~\hat h = \hat f ~\hat g ~\hat h = \hat f ~\widehat{g\ast h} = f\ast (g \ast h).
 $$
 
 
