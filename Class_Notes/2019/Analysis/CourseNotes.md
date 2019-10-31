@@ -2362,9 +2362,9 @@ which is the heat equation.
 We can use Fourier transforms to help solve these. 
 Recall the identities:
 
-- $\hat{\dd{}{x_j} f}(\xi) = 2\pi i \xi_j \hat{f}(\xi)$.
-- $\hat{\dd{^2}{x_j^2} f}(\xi) = (2\pi i \xi_j)^2\hat{f}(\xi) = - 4\pi^2 \xi^2 \hat{f}(\xi)$.
-- $\hat{\Delta f}(\xi) = 4\pi^2 \abs{\xi}^2 \hat{f}(\xi)$.
+- $\widehat{\dd{}{x_j} f}(\xi) = 2\pi i \xi_j \widehat{f}(\xi)$.
+- $\widehat{\dd{^2}{x_j^2} f}(\xi) = (2\pi i \xi_j)^2\widehat{f}(\xi) = - 4\pi^2 \xi^2 \hat{f}(\xi)$.
+- $\widehat{\Delta f}(\xi) = 4\pi^2 \abs{\xi}^2 \hat{f}(\xi)$.
 
 
 ## Dirichlet problem in the upper half-plane
