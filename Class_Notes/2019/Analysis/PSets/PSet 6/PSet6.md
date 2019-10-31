@@ -52,7 +52,7 @@ We'll use the following lemma: if $\hat f = \hat g$, then $f = g$ almost everywh
 
 By part 1, we have
 $$
-\widehat{f \ast g} = \hat f \hat g = \hat g \hat f = \wide{g \ast f},
+\widehat{f \ast g} = \hat f \hat g = \hat g \hat f = \widehat{g \ast f},
 $$
 
 and so by the lemma, $f\ast g = g\ast f$.
