@@ -23,6 +23,8 @@ But as an immediate consequence, this yields
 \]
 which follows from continuity in $L^1$ since $f(x - \xi') \to f(x)$ as $\xi' \to 0$.
 
+It thus only remains to show that the hint holds, and that $\xi' \to 0$ as $\xi \to \infty$.
+
 # Problem 2
 
 # Problem 3
