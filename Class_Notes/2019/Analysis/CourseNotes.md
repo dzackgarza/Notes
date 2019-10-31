@@ -2369,3 +2369,5 @@ u(x, 0) = f(x) \\
 \]
 
 This models something like plucking a string with initial shape $f$ and initial velocity $g$.
+
+> Note that this involves a *second* derivative!
