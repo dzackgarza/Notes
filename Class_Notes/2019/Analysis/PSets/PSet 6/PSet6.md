@@ -89,6 +89,15 @@ We have
 .\end{align*}
 \]
 
+### Part (ii)
+
+We have
+\[
+\begin{align*}
+\hat h(\xi) &= \int \exp(2\pi i x\cdot y) f(x) \exp(-2\pi i x \cdot \xi) ~dx \\ 
+.\end{align*}
+\]
+
 # Problem 4
 
 # Problem 5
