@@ -2331,6 +2331,9 @@ Today: Some topics in PDEs.
 ## The heat (diffusion) equation in the plane
 
 Situation: let $\vector \in \RR^2$ be a plate, and consider it evolving over time $t$. 
+
+![Image](figures/2019-10-31-11:29.png)
+
 So we have pairs $(x, t) \in \RR^2 \cross \RR_{\geq 0}$.
 We have some initial distribution of heat on the plate, we want to know how it evolves over time.
 This is modeled by the equation
@@ -2351,5 +2354,16 @@ We want to solve
 \begin{align*}
 \Delta u = 0 \\
 u(x, 0) = f(x)
+.\end{align*}
+\]
+
+## Wave equation (Cauchy problem in)
+
+Same situation as the heat equation, but now in $\RR^n \cross \RR_{\geq 0}$:
+\[
+\begin{align*}
+\dd{^2 u}{t^2} = \Delta_x u \\
+u(x, 0) = f(x) \\
+\dd{u}{t}(x, 0) = g(x)
 .\end{align*}
 \]
