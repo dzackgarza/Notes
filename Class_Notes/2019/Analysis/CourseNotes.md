@@ -2372,6 +2372,10 @@ But note that this is now a first order ODE!
 
 This is easy to solve, we get $\hat u (\xi, t) = c(\xi) \exp(-\pi \abs{\xi}^2 t) = \hat f(\xi) \exp(-\pi \abs{\xi}^2 t)$.
 
+But then $\exp(-\pi \abs{\xi}^2 t) = \hat G (\sqrt t \xi)$ where $G(x) = \exp(-\pi \abs{x}^2)$.
+We now have $\hat u = \hat f \hat G = \widehat{f\ast G}$, but if the transforms are equal then the original functions are equal by the inversion formula.
+We thus obtain $u(x, t) = f \ast G_{\sqrt t}(x)$ where $G_{\sqrt t}(x) = \frac{1}{t^{n/2}} \exp(-\pi \abs{x}^2/ t)$.
+
 ## Dirichlet problem in the upper half-plane
 
 Situation:
