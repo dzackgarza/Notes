@@ -293,7 +293,8 @@ $$
 g(x) \coloneqq a_p x + a_{2p}x^{2} + \cdots 
 $$
 
-and we recover $f(x) = g(x^p)$.
+and we recover $f(x) = g(x^p)$. Moreover, $g$ is irreducible; otherwise if $h(x) \divides g(x)$ then $h(x^p) \divides g(x^p) = f$, where $f$ was assumed irreducible.
+It is also the case that $g$ is separable.
 # Problem 9
 
 Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$. 
