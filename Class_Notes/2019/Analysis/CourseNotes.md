@@ -2326,4 +2326,4 @@ We thus obtain $f(x) = \int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ almost ev
 
 # Thursday October 31
 
-
+Today: Some topics in PDEs
