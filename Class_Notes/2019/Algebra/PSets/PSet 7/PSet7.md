@@ -271,8 +271,17 @@ Thus every irreducible polynomial is separable, which is what we wanted to show.
 
 # Problem 8
 
-Let $f(x) \in F[x]$ be irreducible, then $\gcd(f, f')$ must be 1; otherwise $\gcd{f, f') = p$ would imply that $p \divides f$, which was assumed to be irreducible.
-Since $\deg f' < \deg f$, we can 
+Let $f(x) \in F[x]$ be irreducible, then since $ p(x) \coloneqq \gcd(f, f')$ must divide $f$ and $f$ is irreducible, the only possibilities are $p(x) = 1$ or $p(x) = f(x)$.
+
+If $p(x) = 1$, then $f$ is separable, so every root is distinct and $f$ itself is of the form $f(x^{p^e})$ where each $e=0$.
+
+Otherwise, $p(x) = f(x)$, which forces $f'(x) = 0$ in $K[x]$. If we write
+\[
+\begin{align*}
+f(x) &= \sum_{k=0}^n a_k a^k \\
+f'(x) &= \sum_{k=1}^n k a_k a^{k-1} \\
+.\end{align*}
+\]
 
 # Problem 9
 
