@@ -2449,4 +2449,9 @@ $$
 u(x, t) = f\ast \dd{}{t} W_t(x) + g\ast W_t(x), \quad \hat{W_t}(\xi) = \frac{\sin(2\pi \abs \xi t)}{2\pi \abs \xi}.
 $$
 
+From the homework problems, we know:
+
+- $n=1$ implies $\chi_{[-1, 1]} (x)$
+- $n = 2$ implies $\frac{1}{\sqrt{1 - \abs{x}^2}} \chi_{-1, 1}(x)$
+- $n=3$ implies we only get a measure, i.e. $w(x) = \sigma(x)$ where $\sigma$ is a surface measure on $S^2$.
 
