@@ -2426,5 +2426,23 @@ This models something like plucking a string with initial shape $f$ and initial 
 
 > Note that this involves a *second* derivative!
 
+### Solution
+
+Using the same technique, we have
+
+\[
+\begin{align*}
+\dd{^2}{t^2} \hat u(\xi, t) &= -4\pi^2 \abs{\xi}^2 \hat u (\xi, t) \\
+\hat u(\xi, 0) &= \hat f(\xi) \\
+\dd{}{t} \hat u(\xi, 0) = \hat g(\xi).
+.\end{align*}
+\]
+
+This is again 2nd order linear homogeneous, except there is now a complex conjugate pair of roots, so we get
+$$
+\hat u(\xi, t) = \hat f(\xi) \cos(2\pi \abs \xi t) + \frac{\hat g(\xi) \sin(2\pi \abs \xi t)}{2\pi \abs \xi}.
+$$
+
+Note that the derivative of the first term is exactly the second term.
 
 
