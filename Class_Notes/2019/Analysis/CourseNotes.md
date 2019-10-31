@@ -2336,7 +2336,8 @@ We have some initial distribution of heat on the plate, we want to know how it e
 This is modeled by the equation
 \[
 \begin{align*}
-\dd{u}{t} = \frac{1}{4\pi} \left( \dd{^2 u}{x_1^2} + \dd{^2u}{x_2^2} \right) \\
+\dd{u}{t} = \frac{1}{4\pi} \left( \dd{^2 u}{x_1^2} + \dd{^2u}{x_2^2} \right) \coloneqq \frac{1}{4\pi} \Delta u\\
 u(x, 0) = f(x)
 .\end{align*}
 \]
+
