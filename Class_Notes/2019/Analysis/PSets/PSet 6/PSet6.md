@@ -95,6 +95,8 @@ We have
 \[
 \begin{align*}
 \hat h(\xi) &= \int \exp(2\pi i x\cdot y) f(x) \exp(-2\pi i x \cdot \xi) ~dx \\ 
+&= \exp(-2\pi i x \cdot t) \int f(x) \exp(-2\pi i x\cdot \xi) ~dx \\
+&= \exp(-2\pi i x \cdot t) \hat f(\xi) 
 .\end{align*}
 \]
 
