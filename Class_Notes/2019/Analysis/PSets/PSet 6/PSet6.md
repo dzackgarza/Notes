@@ -5,9 +5,21 @@ title: "Assignment 6: The Fourier Transform"
 # Problem 1
 
 Assuming the hint, we have 
-$$
-\lim_{\abs \xi \to \infty} \hat f(\xi) = \lim_{\xi' \to 0} \frac 1 2 \int_{\RR^n} (f()) - f(x - \xi')) \exp(-2\pi i x \cdot \xi) ~dx.
-$$
+
+\[
+\begin{align*}
+\lim_{\abs \xi \to \infty} \hat f(\xi) = \lim_{\xi' \to 0} \frac 1 2 \int_{\RR^n} (f()) - f(x - \xi')) \exp(-2\pi i x \cdot \xi) ~dx \\
+.\end{align*}
+\]
+
+But as an immediate consequence, this yields
+\[
+\begin{align*}
+\abs{\hat f (\xi)} &= \abs{\int_{\RR^n} (f(x) - f(x-\xi')) \exp(-2\pi i x\cdot \xi) ~dx} \\
+&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} \abs{\exp(-2\pi i x\cdot \xi)} ~dx \\
+&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
+.\end{align*}
+\]
 
 # Problem 2
 
