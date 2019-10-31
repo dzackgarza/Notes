@@ -2367,3 +2367,5 @@ u(x, 0) = f(x) \\
 \dd{u}{t}(x, 0) = g(x)
 .\end{align*}
 \]
+
+This models something like plucking a string with initial shape $f$ and initial velocity $g$.
