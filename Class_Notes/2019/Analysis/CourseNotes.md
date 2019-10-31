@@ -2366,6 +2366,7 @@ Recall the identities:
 - $\widehat{\dd{^2}{x_j^2} f}(\xi) = (2\pi i \xi_j)^2\widehat{f}(\xi) = - 4\pi^2 \xi^2 \hat{f}(\xi)$.
 - $\widehat{\Delta f}(\xi) = 4\pi^2 \abs{\xi}^2 \hat{f}(\xi)$.
 
+If we take the Fourier transform in the $x$ variable, we get $\widehat{\dd{u}{t}} = \dd{}{t} \hat{u}(\xi, t) = -\pi \abs{\xi}^2 \hat{u}(\xi, t)$.
 
 ## Dirichlet problem in the upper half-plane
 
