@@ -288,7 +288,12 @@ We can thus rewrite $f$ by leaving out all terms where $a_k = 0$ to obtain
 $$
 f(x) = a_p x^p + a_{2p} x^{2p} + \cdots
 $$
+and we thus define
+$$
+g(x) \coloneqq a_p x + a_{2p}x^{2} + \cdots 
+$$
 
+and we recover $f(x) = g(x^p)$.
 # Problem 9
 
 Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$. 
