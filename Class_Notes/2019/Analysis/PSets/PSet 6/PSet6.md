@@ -70,8 +70,24 @@ Then $\widehat{f \ast I} = \hat f$ by the lemma, so $\hat f ~\hat I = \hat f$ by
 But this says that $\hat f(\xi) \hat I(\xi) = \hat f(\xi)$ almost everywhere, and thus $\hat I(\xi) = 1$ almost everywhere.
 Then $\lim_{\abs \xi \to \infty} \hat I (\xi) \neq 0$, which by Problem 1 shows that $I$ can not be in $L^1$, a contradiction.
 
-
 # Problem 3
+
+## Part a
+
+### Part (i)
+
+We have
+\[
+\begin{align*}
+\hat g(\xi) &= \int g(x) \exp(-2\pi i x\cdot \xi) ~dx \\
+&= \int f(x-y) \exp(-2\pi i x\cdot \xi) ~dx \\
+&= \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi) \exp(-2\pi i y\cdot \xi) ~dx \\ 
+&= \exp(-2\pi i y \cdot \xi) \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi) ~dx \\
+&\quad\quad (t = x-y, dt = dx) \\
+&= \exp(-2\pi i y \cdot \xi) \int f(t) \exp(-2\pi i t \cdot \xi) ~dt \\
+&= \exp(-2\pi i y \cdot \xi) \hat f(\xi) 
+.\end{align*}
+\]
 
 # Problem 4
 
