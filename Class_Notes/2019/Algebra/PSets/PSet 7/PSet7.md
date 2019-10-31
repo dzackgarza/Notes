@@ -295,6 +295,7 @@ $$
 
 and we recover $f(x) = g(x^p)$. Moreover, $g$ is irreducible; otherwise if $h(x) \divides g(x)$ then $h(x^p) \divides g(x^p) = f$, where $f$ was assumed irreducible.
 If $g$ is separable we are done; otherwise $g$ fulfills the same hypotheses of that applied to $f$, so we can inductively continue this process to write $g(x) = g_1(x^p)$, and thus $f(x) = g_1(x^{p^2})$, and so on.
+
 # Problem 9
 
 Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$. 
