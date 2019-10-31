@@ -2408,9 +2408,8 @@ $$
 $$
 
 In particular, we can just take the first term, since the second term won't vanish at infinity.
-We again find that $A(\xi) = \hat f(\xi)$ by checking initial conditions, so $\hat u(\xi, y) = \hat f(\xi) \hat P(y\xi) = \widehat{f \ast P_y}$ where $P(x) = \frac{1}{\pi} \frac{1}{1+x^2}$o
-
-
+We again find that $A(\xi) = \hat f(\xi)$ by checking initial conditions, so $\hat u(\xi, y) = \hat f(\xi) \hat P(y\xi) = \widehat{f \ast P_y}$ where $P(x) = \frac{1}{\pi} \frac{1}{1+x^2}$, and
+$f\ast P_y \to f$ as $y\to 0$ as desired.
 .
 ## Wave equation (Cauchy problem in $\RR^n$)
 
