@@ -2375,6 +2375,8 @@ This is easy to solve, we get $\hat u (\xi, t) = c(\xi) \exp(-\pi \abs{\xi}^2 t)
 But then $\exp(-\pi \abs{\xi}^2 t) = \hat G (\sqrt t \xi)$ where $G(x) = \exp(-\pi \abs{x}^2)$.
 We now have $\hat u = \hat f \hat G = \widehat{f\ast G}$, but if the transforms are equal then the original functions are equal by the inversion formula.
 We thus obtain $u(x, t) = f \ast G_{\sqrt t}(x)$ where $G_{\sqrt t}(x) = \frac{1}{t^{n/2}} \exp(-\pi \abs{x}^2/ t)$.
+Note that $f \ast g \to f$ as $t \to 0$, which matches with the original boundary conditions, and $f \ast g \to 0$ as $t \to \infty$, which corresponds with heat dissipating.
+
 
 ## Dirichlet problem in the upper half-plane
 
