@@ -2364,7 +2364,7 @@ Recall the identities:
 
 - $\hat{\dd{}{x_j} f}(\xi) = 2\pi i \xi_j \hat{f}(\xi)$.
 - $\hat{\dd{^2}{x_j^2} f}(\xi) = (2\pi i \xi_j)^2\hat{f}(\xi) = - 4\pi^2 \xi^2 \hat{f}(\xi)$.
-- $\hat{\Detla f}(\xi) = 4\pi^2 \abs{\xi}^2 \hat{f}(\xi)$.
+- $\hat{\Delta f}(\xi) = 4\pi^2 \abs{\xi}^2 \hat{f}(\xi)$.
 
 
 ## Dirichlet problem in the upper half-plane
