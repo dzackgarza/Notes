@@ -2341,3 +2341,4 @@ u(x, 0) = f(x)
 .\end{align*}
 \]
 
+## Dirichlet problem in the upper half-plane
