@@ -270,7 +270,9 @@ But since $f$ was irreducible, this is a contradiction, and so $f$ could not hav
 Thus every irreducible polynomial is separable, which is what we wanted to show. $\qed$
 
 # Problem 8
-?
+
+Let $f(x) \in F[x]$ be irreducible, then $\gcd(f, f')$ must be 1; otherwise $\gcd{f, f') = p$ would imply that $p \divides f$, which was assumed to be irreducible.
+Since $\deg f' < \deg f$, we can 
 
 # Problem 9
 
