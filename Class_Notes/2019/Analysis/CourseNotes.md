@@ -2358,7 +2358,7 @@ We should have
 
 which is the heat equation.
 
-
+### Solution
 We can use Fourier transforms to help solve these. 
 Recall the identities:
 
@@ -2392,6 +2392,23 @@ u(x, 0) = f(x)
 .\end{align*}
 \]
 
+### Solution
+
+We'll use the same technique as the heat equation, and obtain
+$$
+\Delta u = 0 \implies -4\pi^2 \abs{\xi}^2 \hat u (\xi ,y) + \dd{^2}{y^2} \hat u (\xi, y) = 0
+$$
+
+But this is a homogeneous second order ODE, so we can look at the auxiliary polynomial. 
+If we have distinct roots, the general solution is $c_1 e^{r_1x} + c_2 e^{r_2 x}$.
+
+We thus obtain
+$$
+\hat u(\xi, y) = A(\xi) \exp(-2\pi \abs{\xi} y) + B(\xi)\exp(2\pi \abs{\xi} y)
+$$
+
+In particular, we can just take the first term, since the second term won't vanish at infinity.
+We again find that $A(\xi) = \hat f(\xi)$ by checking initial conditions, so $\hat u(\xi, y) = \hat f(\xi) \hat P(y\xi) = \widehat{f \ast P_y}$ where $P(x) = \frac{1}{\pi} \frac{1}{1+x^2}$.
 ## Wave equation (Cauchy problem in)
 
 Same situation as the heat equation, but now in $\RR^n \cross \RR_{\geq 0}$:
