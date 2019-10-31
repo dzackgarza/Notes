@@ -288,6 +288,7 @@ We can thus rewrite $f$ by leaving out all terms where $a_k = 0$ to obtain
 $$
 f(x) = a_p x^p + a_{2p} x^{2p} + \cdots
 $$
+
 # Problem 9
 
 Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$. 
