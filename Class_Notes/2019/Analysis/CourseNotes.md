@@ -2352,7 +2352,7 @@ We should have
 \begin{align*}
 \dd{}{t} \int_{B} u(x, t) ~dx &= \text{Flux across boundary} \\
 &= \int_B \nabla \cdot \nabla_x u(x, t) ~dx \quad  \text{by Green's/Divergence theorem} \\
-&= \int_B \Delta_x u(x, t) ~dx,
+&\coloneqq \int_B \Delta_x u(x, t) ~dx,
 .\end{align*}
 \]
 
