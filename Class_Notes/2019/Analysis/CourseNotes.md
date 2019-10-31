@@ -2342,3 +2342,14 @@ u(x, 0) = f(x)
 \]
 
 ## Dirichlet problem in the upper half-plane
+
+Situation:
+![Image](figures/2019-10-31-11:28.png)
+
+We want to solve
+\[
+\begin{align*}
+\Delta u = 0 \\
+u(x, 0) = f(x)
+.\end{align*}
+\]
