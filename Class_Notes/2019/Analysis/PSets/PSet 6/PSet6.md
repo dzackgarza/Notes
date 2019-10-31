@@ -44,6 +44,27 @@ Assuming an interchange of integrals is justified, we have
 .\end{align*}
 \]
 
+## Part (b)
+
+We'll use the following lemma: if $\hat f = \hat g$, then $f = g$ almost everywhere.
+
+### (i)
+
+By part 1, we have
+$$
+\widehat{f \ast g} = \hat f \hat g = \hat g \hat f = \wide{g \ast f},
+$$
+
+and so by the lemma, $f\ast g = g\ast f$.
+
+### (ii)
+
+Similarly, we have
+$$
+\widehat{(f\ast g) \ast h} = \widehat{f\ast g} \hat h = \hat f \hat g \hat g = \hat f \widehat{g\ast h} = f\ast (g \ast h).
+$$
+
+
 # Problem 3
 
 # Problem 4
