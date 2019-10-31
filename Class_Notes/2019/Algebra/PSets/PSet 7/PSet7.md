@@ -280,9 +280,14 @@ Otherwise, $p(x) = f(x)$, which forces $f'(x) = 0$ in $K[x]$. If we write
 \begin{align*}
 f(x) &= \sum_{k=0}^n a_k a^k \\
 f'(x) &= \sum_{k=1}^n k a_k a^{k-1} \\
-.\end{align*}
+,\end{align*}
 \]
+then $f'(x) \equiv 0$ forces either $a_k = 0$, or $k = 0$ in $F$ (so $p \divides k$).
 
+We can thus rewrite $f$ by leaving out all terms where $a_k = 0$ to obtain
+$$
+f(x) = a_p x^p + a_{2p} x^{2p} + \cdots
+$$
 # Problem 9
 
 Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$. 
