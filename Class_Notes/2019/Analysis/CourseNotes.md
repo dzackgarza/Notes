@@ -2456,3 +2456,13 @@ From the homework problems, we know:
 - $n=3$ implies we only get a measure, i.e. $w(x) = \sigma(x)$ where $\sigma$ is a surface measure on $S^2$.
 - For $n > 3$, $W$ is a "distribution".
 
+
+Note that there is a solution given by D'Alembert,
+$$
+u(x, t) = \frac{1}{2} ( f(x +t) + f(x - t) ) + \frac{1}{2} \int_{x-t}^{x+t} g(y) ~dy
+$$
+
+Note the similarities -- the first term is a rough average, the second term is a more continuous average.
+
+> Exercise: verify that these two solutions are actually equivalent.
+
