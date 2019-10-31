@@ -2329,3 +2329,14 @@ We thus obtain $f(x) = \int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ almost ev
 Today: Some topics in PDEs.
 
 ## The heat (diffusion) equation in the plane
+
+Situation: let $\vector \in \RR^2$ be a plate, and consider it evolving over time $t$. 
+So we have pairs $(x, t) \in \RR^2 \cross \RR_{\geq 0}$.
+We have some initial distribution of heat on the plate, we want to know how it evolves over time.
+This is modeled by the equation
+\[
+\begin{align*}
+\dd{u}{t} = \frac{1}{4\pi} \left( \dd{^2 u}{x_1^2} + \dd{^2u}{x_2^2} \right) \\
+u(x, 0) = f(x)
+.\end{align*}
+\]
