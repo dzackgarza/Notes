@@ -2443,6 +2443,10 @@ $$
 \hat u(\xi, t) = \hat f(\xi) \cos(2\pi \abs \xi t) + \frac{\hat g(\xi) \sin(2\pi \abs \xi t)}{2\pi \abs \xi}.
 $$
 
-Note that the derivative of the first term is exactly the second term.
+Note that the derivative of the first term is exactly the second term, so we have
+
+$$
+u(x, t) = f\ast \dd{}{t} W_t(x) + g\ast W_t(x), \quad \hat{W_t}(\xi) = \frac{\sin(2\pi \abs \xi t)}{2\}i \abs \xi}.
+$$
 
 
