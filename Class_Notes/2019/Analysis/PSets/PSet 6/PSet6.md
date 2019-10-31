@@ -32,7 +32,7 @@ It thus only remains to show that the hint holds, and that $\xi' \to 0$ as $\xi 
 Assuming an interchange of integrals is justified, we have
 \[
 \begin{align*}
-\widehat(f\ast g)( \xi ) &= \int \int f(x-y) g(y) \exp(-2\pi x \cdot \xi) ~dy~dx \\
+\widehat(f\ast g)( \xi ) &\coloneqq \int \int f(x-y) g(y) \exp(-2\pi x \cdot \xi) ~dy~dx \\
 &=_? \int \int f(x-y) g(y) \exp(-2\pi x \cdot \xi) ~dx~dy \\
 &= \int \int f(t) \exp(-2\pi i (x-y) \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi) ~dx ~dy \\
 &\quad\quad (t = x-y, ~dt = ~dx) \\
@@ -79,7 +79,7 @@ Then $\lim_{\abs \xi \to \infty} \hat I (\xi) \neq 0$, which by Problem 1 shows 
 We have
 \[
 \begin{align*}
-\hat g(\xi) &= \int g(x) \exp(-2\pi i x\cdot \xi) ~dx \\
+\hat g(\xi) &\coloneqq \int g(x) \exp(-2\pi i x\cdot \xi) ~dx \\
 &= \int f(x-y) \exp(-2\pi i x\cdot \xi) ~dx \\
 &= \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi) \exp(-2\pi i y\cdot \xi) ~dx \\ 
 &= \exp(-2\pi i y \cdot \xi) \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi) ~dx \\
