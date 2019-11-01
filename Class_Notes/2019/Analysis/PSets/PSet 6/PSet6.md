@@ -174,7 +174,7 @@ Then
 and the claim is that this is zero. This happens precisely when the numerator is zero, so we can compute
 \[
 \begin{align*}
-G(\xi) \del_\xi \hat G(\xi) - G(\xi) \del_\xi \hat G(\xi)
+G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi)
 .\end{align*}
 \]
 
