@@ -114,7 +114,8 @@ where $A^{-T}$ denotes the transpose of the inverse of $A$ (or $(A\inv)^*$ if $V
 We then have
 \[
 \begin{align*}
-\frac{1}{\abs{\det T}} \hat f( T^{-T} \xi ) &= \int f(x) \exp(-2\pi i x \cdot T^{-T} \xi) ~dx
+\frac{1}{\abs{\det T}} \hat f( T^{-T} \xi ) &= \int f(x) \exp(-2\pi i x \cdot T^{-T} \xi) ~dx \\
+&\quad\quad x \mapsto Tx,~~ ~dx \mapsto \det T ~dx \\
 .\end{align*}
 \]
 
