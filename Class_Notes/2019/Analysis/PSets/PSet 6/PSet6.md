@@ -166,7 +166,7 @@ Let $G(x) = \exp(-\pi x^2)$.
 Then 
 \[
 \begin{align*}
-\dd{}{\xi} \hat G(\xi) / G(\xi) &= \left( G(\xi) \dd{}{\xi} \hat G(\xi) - G(\xi) \dd{}{\xi} \hat G(\xi) \right) / G(\xi)^2
+\del_\xi \left( \frac{\hat G(\xi)}{G(\xi)} \right) &= \left( G(\xi) \dd{}{\xi} \hat G(\xi) - G(\xi) \dd{}{\xi} \hat G(\xi) \right) / G(\xi)^2
 .\end{align*}
 \]
 # Problem 5
