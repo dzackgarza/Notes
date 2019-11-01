@@ -150,7 +150,7 @@ We have
 \begin{align*}
 \hat h(\xi) 
 &\coloneqq \int \dd{f}{x}(x) \exp(-2\pi i x \cdot \xi) ~dx \\
-&= f(x) \exp(2\pi i x \cdot \xi)\mid_{-\infty}^\infty - \int f(x) \exp(-2\pi i x \cdot \xi) ~dx
+&= f(x) \exp(2\pi i x \cdot \xi)\left. \right|_{-\infty}^\infty - \int f(x) \exp(-2\pi i x \cdot \xi) ~dx
 .\end{align*}
 \]
 
