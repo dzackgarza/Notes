@@ -74,9 +74,9 @@ Then $\lim_{\abs \xi \to \infty} \hat I (\xi) \neq 0$, which by Problem 1 shows 
 
 # Problem 3
 
-## Part a
+## (a)
 
-### Part (i)
+### (i)
 
 Let $g(x) = f(x-y)$. We then have
 \[
@@ -91,7 +91,7 @@ Let $g(x) = f(x-y)$. We then have
 .\end{align*}
 \]
 
-### Part (ii)
+### (ii)
 
 Let $h(x) = \exp(2\pi i x\ cdot y) f(x)$. We then have
 \[
@@ -102,6 +102,14 @@ Let $h(x) = \exp(2\pi i x\ cdot y) f(x)$. We then have
 &= \hat f(\xi - y)
 .\end{align*}
 \]
+## (b)
+
+We'll use the fact that if $\inner{\wait}{\wait}$ is an inner product on a vector space $V$ and $A$ is an invertible linear transformation, then for all $\vector x, \vector y }in V$ we have 
+$$
+\inner{\vector Ax}{\vector y} = \inner{\vector x}{A^{-T} \vector y}
+$$
+
+where $A^{-T}$ denotes the transpose of the inverse of $A$.
 
 # Problem 4
 
