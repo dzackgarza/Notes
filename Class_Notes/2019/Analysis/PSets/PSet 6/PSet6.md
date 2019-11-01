@@ -97,8 +97,8 @@ Let $h(x) = \exp(2\pi i x\ cdot y) f(x)$. We then have
 \[
 \begin{align*}
 \hat h(\xi) &\coloneqq \int \exp(2\pi i x\cdot y) f(x) \exp(-2\pi i x \cdot \xi) ~dx \\ 
-&= \exp(-2\pi i x \cdot y) \int f(x) \exp(-2\pi i x\cdot \xi) ~dx \\
-&= \exp(-2\pi i x \cdot y) \hat f(\xi) 
+&= \int \exp(2\pi i x\cdot y - 2\pi i x \cdot \xi) f(x) ~dx \\ 
+&= \int \exp(2\pi i (x - \xi) \cdot y) f(x) ~dx \\ 
 .\end{align*}
 \]
 
