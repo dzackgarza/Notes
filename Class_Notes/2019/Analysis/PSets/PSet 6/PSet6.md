@@ -130,10 +130,11 @@ We then have
 Let $g(x) = xf(x)$. Then
 \[
 \begin{align*}
-\dd{}{\xi} \hat f(\xi) &= \dd{}{\xi} \int f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
+\dd{}{\xi} \hat f(\xi) &\coloneqq \dd{}{\xi} \int f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= \int f(x) \dd{}{\xi} \exp(-2\pi i x \cdot \xi) ~dx \\
 &= \int f(x) 2\pi i x \exp(-2\pi i x \cdot \xi) ~dx \\
 &= 2\pi i \int x f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
+\coloneqq 2\pi i \hat g (\xi)
 .\end{align*}
 \]
 
