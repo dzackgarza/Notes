@@ -104,7 +104,7 @@ Let $h(x) = \exp(2\pi i x\ cdot y) f(x)$. We then have
 \]
 ## (b)
 
-We'll use the fact that if $\inner{\wait}{\wait}$ is an inner product on a vector space $V$ and $A$ is an invertible linear transformation, then for all $\vector x, \vector y }in V$ we have 
+We'll use the fact that if $\inner{\wait}{\wait}$ is an inner product on a vector space $V$ and $A$ is an invertible linear transformation, then for all $\vector x, \vector y \in V$ we have 
 $$
 \inner{\vector Ax}{\vector y} = \inner{\vector x}{A^{-T} \vector y}
 $$
