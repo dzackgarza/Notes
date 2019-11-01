@@ -152,7 +152,7 @@ We have
 &\coloneqq \int \dd{f}{x}(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= f(x) \left. \exp(-2\pi i x \cdot \xi) \right\rvert_{-\infty}^\infty - \int f(x) 2\pi i \xi \exp(-2\pi i x \cdot \xi) ~dx \\
 &\quad\quad\quad\text{integrating by parts)} \\
-&= f(x) \left. \exp(-2\pi i x \cdot \xi) \right\rvert_{-\infty}^\infty - \int f(x) 2\pi i \xi \exp(-2\pi i x \cdot \xi) ~dx \\
+&= - \int f(x) 2\pi i \xi \exp(-2\pi i x \cdot \xi) ~dx \\
 .\end{align*}
 \]
 
