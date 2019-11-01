@@ -78,7 +78,7 @@ Then $\lim_{\abs \xi \to \infty} \hat I (\xi) \neq 0$, which by Problem 1 shows 
 
 ### Part (i)
 
-We have
+Let $g(x) = f(x-y)$. We then have
 \[
 \begin{align*}
 \hat g(\xi) &\coloneqq \int g(x) \exp(-2\pi i x\cdot \xi) ~dx \\
