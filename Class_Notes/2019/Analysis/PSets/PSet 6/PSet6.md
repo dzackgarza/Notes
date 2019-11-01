@@ -168,8 +168,16 @@ Then
 \begin{align*}
 \del_\xi \left( \frac{\hat G(\xi)}{G(\xi)} \right) 
 &= \frac{ G(\xi) \del_\xi \hat G(\xi) - G(\xi) \del_\xi \hat G(\xi)}{G(\xi)^2} 
+,\end{align*}
+\]
+
+and the claim is that this is zero. This happens precisely when the numerator is zero, so we can compute
+\[
+\begin{align*}
+G(\xi) \del_\xi \hat G(\xi) - G(\xi) \del_\xi \hat G(\xi)
 .\end{align*}
 \]
+
 # Problem 5
 
 # Problem 6
