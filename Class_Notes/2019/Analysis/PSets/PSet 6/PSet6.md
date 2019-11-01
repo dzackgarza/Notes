@@ -109,7 +109,14 @@ $$
 \inner{A \vector x}{\vector y} = \inner{\vector x}{A^{-T} \vector y}
 $$
 
-where $A^{-T}$ denotes the transpose of the inverse of $A$.
+where $A^{-T}$ denotes the transpose of the inverse of $A$ (or $(A\inv)^*$ if $V$ is complex).
+
+We then have
+\[
+\begin{align*}
+\frac{1}{\abs{\det T}} \hat 
+.\end{align*}
+\]
 
 # Problem 4
 
