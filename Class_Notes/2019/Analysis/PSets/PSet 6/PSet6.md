@@ -150,7 +150,7 @@ We have
 \begin{align*}
 \hat h(\xi) 
 &\coloneqq \int \dd{f}{x}(x) \exp(-2\pi i x \cdot \xi) ~dx \\
-&= f(x)  \exp(-2\pi i x \cdot \xi) \bigr\rvert_{x = -\infty}^{x = \infty} - \int f(x) (2\pi i \xi) \exp(-2\pi i x \cdot \xi) ~dx \\
+&= f(x)  \exp(-2\pi i x \cdot \xi) \bigR\rvert_{x = -\infty}^{x = \infty} - \int f(x) (2\pi i \xi) \exp(-2\pi i x \cdot \xi) ~dx \\
 &\quad\quad\quad\text{(integrating by parts)} \\
 &= - \int f(x) (-2\pi i \xi) \exp(-2\pi i x \cdot \xi) ~dx \\
 &\quad\quad\quad (\text{since } f(\infty) = f(-\infty) = 0) \\
