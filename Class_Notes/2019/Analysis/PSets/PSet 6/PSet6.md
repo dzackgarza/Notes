@@ -130,7 +130,7 @@ We then have
 Let $g(x) = xf(x)$. Then
 \[
 \begin{align*}
-\hat g(\xi) = \int x f(x) \exp(-2\pi i x \cdot \xi) ~dx
+\dd{}{\xi} \hat g(\xi) = \dd{}{\xi} \int x f(x) \exp(-2\pi i x \cdot \xi) ~dx
 .\end{align*}
 \]
 
