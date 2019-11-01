@@ -154,7 +154,7 @@ We have
 &\quad\quad\quad\text{(integrating by parts)} \\
 &= - \int f(x) -2\pi i \xi \exp(-2\pi i x \cdot \xi) ~dx \\
 &=  2\pi i \xi \int f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
-\&\coloneqq 2\pi i \xi \hat f(\xi)
+&\coloneqq 2\pi i \xi \hat f(\xi)
 .\end{align*}
 \]
 
