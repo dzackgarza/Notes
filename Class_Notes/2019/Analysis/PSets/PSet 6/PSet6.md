@@ -131,7 +131,8 @@ Let $g(x) = xf(x)$. Then
 \[
 \begin{align*}
 \dd{}{\xi} \hat g(\xi) &= \dd{}{\xi} \int x f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
-&= \int x f(x) \dd{}{\xi} \exp(-2\pi i x \cdot \xi) ~dx
+&= \int x f(x) \dd{}{\xi} \exp(-2\pi i x \cdot \xi) ~dx \\
+&= \int x f(x) 2\pi i \xi \exp(-2\pi i x \cdot \xi) ~dx \\
 .\end{align*}
 \]
 
