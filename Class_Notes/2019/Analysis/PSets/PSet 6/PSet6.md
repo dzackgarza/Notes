@@ -151,7 +151,7 @@ We have
 \hat h(\xi) 
 &\coloneqq \int \dd{f}{x}(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= f(x) \left. \exp(-2\pi i x \cdot \xi) \right\rvert_{-\infty}^\infty - \int f(x) 2\pi i \xi \exp(-2\pi i x \cdot \xi) ~dx \\
-&\quad\quad\quad\text{integrating by parts)} \\
+&\quad\quad\quad\text{(integrating by parts)} \\
 &= - \int f(x) -2\pi i \xi \exp(-2\pi i x \cdot \xi) ~dx \\
 &=  2\pi i \xi \int f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 \&\coloneqq 2\pi i \xi \hat f(\xi)
