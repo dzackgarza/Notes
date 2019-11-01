@@ -127,6 +127,7 @@ We then have
 
 ## (a)
 
+### (i)
 Let $g(x) = xf(x)$. Then if an interchange of the derivative and the integral is justified, we have
 \[
 \begin{align*}
@@ -139,9 +140,17 @@ Let $g(x) = xf(x)$. Then if an interchange of the derivative and the integral is
 \]
 
 It thus remains to show that this interchange is justified.
-### (i)
+TODO
+
 
 ### (ii)
+
+We have
+\[
+\begin{align*}
+\hat h(\xi) &\coloneqq \int \dd{f}{x}(x) \exp(-2\pi i x \cdot \xi) ~dx
+.\end{align*}
+\]
 
 ## (b)
 
