@@ -115,7 +115,7 @@ We then have
 \[
 \begin{align*}
 \frac{1}{\abs{\det T}} \hat f( T^{-T} \xi ) &= \frac{1}{\abs{\det T}} \int f(x) \exp(-2\pi i x \cdot T^{-T} \xi) ~dx \\
-&\quad\quad x \mapsto Tx,~~ ~dx \mapsto \det T ~dx \\
+&\quad\quad x \mapsto Tx,~~ ~dx \mapsto \abs{\det T} ~dx \\
 &= \frac{1}{\abs{\det T}} \int f(Tx) \exp(-2\pi i Tx \cdot T^{-T} \xi) \abs{\det T} ~dx \\
 .\end{align*}
 \]
