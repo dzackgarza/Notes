@@ -125,6 +125,21 @@ We then have
 
 # Problem 4
 
+## (a)
+
+Let $g(x) = xf(x)$. Then
+\[
+\begin{align*}
+\hat g(\xi) = \int x f(x) \exp(-2\pi i x \cdot \xi) ~dx
+.\end{align*}
+\]
+
+### (i)
+
+### (ii)
+
+## (b)
+
 # Problem 5
 
 # Problem 6
