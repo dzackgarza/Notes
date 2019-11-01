@@ -160,7 +160,8 @@ We have
 \]
 
 ## (b)
-Let $G(x) = \exp(-\pi x^2)$.
+Let $G(x) = \exp(-\pi x^2)$ and $\del_\xi$ be the operator that differentiates with respect to $\xi$. 
+We can first note that $\del_\xi G(\xi) = 2\pi \xi G(\xi)$.
 
 
 Then 
