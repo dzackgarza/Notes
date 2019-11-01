@@ -167,7 +167,7 @@ Then
 \[
 \begin{align*}
 \del_\xi \left( \frac{\hat G(\xi)}{G(\xi)} \right) 
-&= \frac{ G(\xi) \del_\xi \hat G(\xi) - G(\xi) \del_\xi \hat G(\xi)}{G(\xi)^2} 
+&= \frac{ G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi)}{G(\xi)^2} 
 ,\end{align*}
 \]
 
