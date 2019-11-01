@@ -161,7 +161,6 @@ We have
 
 ## (b)
 Let $G(x) = \exp(-\pi x^2)$ and $\del_\xi$ be the operator that differentiates with respect to $\xi$. 
-We can first note that $\del_\xi G(\xi) = 2\pi \xi G(\xi)$.
 
 
 Then 
@@ -172,7 +171,11 @@ Then
 ,\end{align*}
 \]
 
-and the claim is that this is zero. This happens precisely when the numerator is zero, so we can compute
+and the claim is that this is zero. This happens precisely when the numerator is zero, and note the following facts:
+
+
+- $\del_\xi G(\xi) = 2\pi \xi G(\xi)$ by computing directly,
+- $\del_\xi \hat G(\xi) = - 2 \pi i \xi \hat G(\xi)$.
 \[
 \begin{align*}
 G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi)
