@@ -271,6 +271,17 @@ I(x) &\coloneqq \int e^{-2\pi \abs \xi} e^{2\pi i x \xi} ~d\xi \\
 &= \frac 1 {2\pi} \left( \frac 1 {1+ix} + \frac{1}{1-ix} \right) \\
 &= \frac{1} {2\pi} \frac{2}{1+x^2} \\
 &= \frac 1 \pi \frac{1}{1+x^2}
+,\end{align*}
+\]
+
+so $P(x) = I(x)$.
+
+Then, by the Fourier inversion formula, we have
+\[
+\begin{align*}
+P(x) &= \int \hat P(\xi) e^{-2\pi i \xi \cdot x} ~dx \\
+\implies \int e^{-2\pi \abs \xi} e^{2\pi i x \xi} &= \int \hat P(\xi) e^{-2\pi i \xi \cdot x} ~dx \\
+\implies e^{-2\pi \abs \xi} &= \hat P(\xi)
 .\end{align*}
 \]
 
