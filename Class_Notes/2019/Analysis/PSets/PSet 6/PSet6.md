@@ -246,7 +246,7 @@ In particular, if $f$ is an even function, then $f(\xi) = -f(\xi)$ and $\mathcal
 In this case, letting $F$ be the box function, $F$ can be seen to be even from its definition. 
 Since $f \coloneqq \mathcal{F}(F)$ by part (i), we have 
 $$
-\mathcal{F}(f) = \mathcal{F}(\mathcal{F} (F)) = \mathcal{F}^2(F) = F,
+\hat f \coloneqq \mathcal{F}(f) = \mathcal{F}(\mathcal{F} (F)) = \mathcal{F}^2(F) = F,
 $$ 
 
 which says that $\hat f(x) = F(x)$, the original box function.
