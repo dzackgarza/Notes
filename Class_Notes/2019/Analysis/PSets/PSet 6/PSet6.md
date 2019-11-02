@@ -240,7 +240,7 @@ Since $F(x) = D(x) \ast D(x)$, we have $\hat F(\xi) = (\hat D(\xi))^2$ by questi
 
 ### (ii)
 
-Letting $\mathcal F$ denote the Fourier transform operator, we have $\mathcal{F}^2(f)(\xi) = f(-\xi)$ for any $f\in L^1$.
+Letting $\mathcal F$ denote the Fourier transform operator, we have $\mathcal{F}^2(h)(\xi) = h(-\xi)$ for any $h\in L^1$.
 In particular, if $f$ is an even function, then $f(\xi) = -f(\xi)$ and $\mathcal{F}^2(f) = f$.
 
 In this case, letting $F$ be the box function, $F$ can be seen to be even from its definition. 
