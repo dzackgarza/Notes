@@ -240,11 +240,6 @@ Since $F(x) = D(x) \ast D(x)$, we have $\hat F(\xi) = (\hat D(\xi))^2$ by questi
 
 ### (ii)
 
-By a direct computation, we have
-\[
-\begin{align*}
-\hat f(\xi) &\coloneqq \int \left( \frac{\sin \pi x}{\pi x} \right)^2 e^{-2\pi x\cdot \xi} ~dx
-.\end{align*}
-\]
+Letting $\mathcal F$ denote the Fourier transform operator, we have $\mathcal{F}^2(f)(\xi) = f(-\xi)$ for any $f\in L^1$.
 
 # Problem 6
