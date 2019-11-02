@@ -243,7 +243,7 @@ Since $F(x) = D(x) \ast D(x)$, we have $\hat F(\xi) = (\hat D(\xi))^2$ by questi
 By a direct computation, we have
 \[
 \begin{align*}
-\hat f(\xi) &\coloneqq \int \leftq \right)
+\hat f(\xi) &\coloneqq \int \left( \frac{\sin \pi x}{\pi x} \right)^2 e^{-2\pi x\cdot \xi} ~dx
 .\end{align*}
 \]
 
