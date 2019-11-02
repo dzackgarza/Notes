@@ -308,6 +308,6 @@ If an interchange of integrals is justified, we can compute
 &= \int_0^\infty e^{-\pi t^2(1 + \abs{\xi}^2)} t^{2\varepsilon -1} ~dt \\
 \cdots \\
 &= \frac{1}{1 + \abs{\xi}^2} \int G_t(x) e^{-\pi t^2} e^{2\varepsilon - 1} ~dt \\
-&\coloneqq F(\xi) \norm{f}_1})
+&\coloneqq F(\xi) \norm{f}_1
 .\end{align*}
 \]
