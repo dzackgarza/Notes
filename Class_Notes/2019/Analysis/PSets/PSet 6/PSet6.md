@@ -265,8 +265,8 @@ I(x) &\coloneqq \int e^{-2\pi \abs \xi} e^{2\pi i x \xi} ~d\xi \\
 &= \frac{1}{2\pi} \int_{0}^\infty e^{-u} e^{-ixu} + e^{-u} e^{ixu} ~du \\ 
 &= \frac{1}{2\pi} \int_{0}^\infty e^{-u(1+ix)} + e^{-u(1-ix)} ~du \\ 
 &= \frac 1 {2\pi} \left( 
+\frac{-e^{-u(1+ix)}}{1+ix} \Bigr\rvert_{u=0}^{u=\infty} + 
 \frac{-e^{-u(1+ix)}}{1+ix} \Bigr\rvert_{u=0}^{u=\infty}
-\frac{-e^{-u(1iix)}}{1+ix} \Bigr\rvert_{u=0}^{u=\infty}
 \right)
 .\end{align*}
 \]
