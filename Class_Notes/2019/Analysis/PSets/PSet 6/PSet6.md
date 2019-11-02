@@ -215,4 +215,16 @@ Using the fact that $G(0) = 1$ by direct evaluation and $\hat G(0) = \int G(x) ~
 
 # Problem 5
 
+## (a)
+
+By a direct computation. we have
+
+\[
+\begin{align*}
+\hat D(\xi) 
+&\coloneqq \int_{-\frac 1 2}^{\frac 1 2} 1 e^{-2\pi i x \cdot \xi} ~dx \\
+&= \int_{-\frac 1 2}^{\frac 1 2} e^{-2\pi i x \cdot \xi} ~dx \\
+.\end{align*}
+\]
+
 # Problem 6
