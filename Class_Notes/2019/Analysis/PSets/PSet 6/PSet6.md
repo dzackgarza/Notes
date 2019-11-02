@@ -292,6 +292,8 @@ where equality is almost everywhere and follows from the fact that if $\int f = 
 
 # Problem 6
 
+We first note that if $G_t(x) \coloneqq t^{-n} e^{-\pi \abs{x}^2 / t^2}$, then $\hat G_t (\xi) = e^{-\pi t^2 \xi^2}$.
+
 If an interchange of integrals is justified, we can compute
 
 \[
