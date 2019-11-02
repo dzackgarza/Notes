@@ -279,8 +279,8 @@ so $P(x) = I(x)$.
 Then, by the Fourier inversion formula, we have
 \[
 \begin{align*}
-I(x) = P(x) &= \int \hat P(\xi) e^{-2\pi i \xi \cdot x} ~dx \\
-\implies \int e^{-2\pi \abs \xi} e^{2\pi i x \xi} &= \int \hat P(\xi) e^{-2\pi i \xi \cdot x} ~dx \\
+I(x) = P(x) &= \int \hat P(\xi) e^{-2\pi i x \xi} ~dx \\
+\implies \int e^{-2\pi \abs \xi} e^{2\pi i x \xi} &= \int \hat P(\xi) e^{-2\pi i x \xi} ~dx \\
 \implies e^{-2\pi \abs \xi} &= \hat P(\xi)
 .\end{align*}
 \]
