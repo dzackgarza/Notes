@@ -174,7 +174,7 @@ Then
 and the claim is that this is zero. This happens precisely when the numerator is zero, and note the following facts:
 
 
-- $\del_\xi G(\xi) = 2\pi \xi G(\xi)$ by computing directly,
+- $\del_\xi G(\xi) = -2\pi \xi G(\xi)$ by computing directly,
 - $\del_\xi \hat G(\xi) = - 2 \pi i \xi \hat G(\xi)$.
 \[
 \begin{align*}
