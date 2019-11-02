@@ -309,7 +309,6 @@ If an interchange of integrals is justified, we can compute
 \cdots \\
 &= \frac{1}{1 + \abs{\xi}^2} \int G_t(x) e^{-\pi t^2} e^{2\varepsilon - 1} ~dt \\
 &= \frac{1}{1 + \abs{\xi}^2} \int_{-\infty}^\infty \abs{G_t(x) e^{-\pi t^2} e^{2\varepsilon - 1}} ~dt \\
-&\quad\quad\quad\text{since the integrand is positive on $}
 &\coloneqq F(\xi) \norm{f}_1
 .\end{align*}
 \]
