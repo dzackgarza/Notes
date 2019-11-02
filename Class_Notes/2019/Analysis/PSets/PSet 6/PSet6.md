@@ -251,4 +251,14 @@ $$
 
 which says that $\hat f(x) = F(x)$, the original box function.
 
+## (c)
+
+By a direct computation of the integral in question, we have
+
+\[
+\begin{align*}
+I(x) &\coloneqq \int e^{-2\pi \abs \xi} e^{2\pi i x \xi} ~d\xi
+.\end{align*}
+\]
+
 # Problem 6
