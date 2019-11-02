@@ -185,8 +185,9 @@ and the claim is that this is zero. This happens precisely when the numerator is
 &= \int G(x) (-2\pi i x)\exp(-2\pi i x \cdot \xi) ~dx \\
 &= i \int 2\pi x G(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= i \int \del_x G(x) \exp(-2\pi i x \cdot \xi) ~ dx \\
-&\coloneqq i \widehat{\del_x G(x)} (\xi) \\
-&= i (2\pi i \xi \hat G(\xi))
+&\coloneqq i ~\widehat{\del_x G(x)} (\xi) \\
+&= i ~(2\pi i \xi \hat G(\xi)) \\
+&= -2\pi \xi \hat G(\xi)
 .\end{align*}
 \]
 \[
