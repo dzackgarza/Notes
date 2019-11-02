@@ -284,8 +284,9 @@ I(x) = P(x) &= \int \hat P(\xi) e^{-2\pi i x \xi} ~dx \\
 \implies \int e^{-2\pi \abs \xi} e^{2\pi i x \xi}  - \hat P(\xi) e^{-2\pi i x \xi} ~dx  &= 0\\
 \implies \int \left( e^{-2\pi \abs \xi}  - \hat P(\xi)\right) e^{-2\pi i x \xi} ~dx  &= 0\\
 \implies \left( e^{-2\pi \abs \xi}  - \hat P(\xi)\right) e^{-2\pi i x \xi} &=_{a.e.} 0\\
-\implies e^{-2\pi \abs \xi} &= \hat P(\xi)
-.\end{align*}
+\implies e^{-2\pi \abs \xi} &=_{a.e} \hat P(\xi)
+,\end{align*}
 \]
 
+where equality is almost everywhere and follows from the fact that if $\int f = 0$ then $f=0$ almost everywhere.
 # Problem 6
