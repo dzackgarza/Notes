@@ -226,7 +226,7 @@ By a direct computation. we have
 &= \int_{-\frac 1 2}^{\frac 1 2} \cos(-2\pi x\cdot \xi) + i \sin(-2\pi x\cdot \xi) ~dx \\
 &= \int_{-\frac 1 2}^{\frac 1 2} \cos(-2\pi x\cdot \xi) ~dx \\
 &\quad\quad\quad\text{(since $\sin$ is odd and the domain is symmetric about 0)} \\
-&= \frac{1}{2\pi\xi} \sin(-2\pi x\cdot \xi) \Bigr\rvert_{x=-\frac 1 2}^{\frac 1 2} \\
+&= \frac{1}{2\pi\xi} \sin(-2\pi x\cdot \xi) \Bigr\rvert_{x=-\frac 1 2}^{x = \frac 1 2} \\
 .\end{align*}
 \]
 
