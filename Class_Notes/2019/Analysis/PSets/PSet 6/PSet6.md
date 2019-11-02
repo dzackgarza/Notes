@@ -208,6 +208,10 @@ G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi)
 
 which is patently zero.
 
+It follows that $\frac{\hat G(\xi)}{G(\xi)} = c_0$ for some constant $c_0$, from which it follows that $\hat G(\xi) = c_0 G(\xi)$.
+
+Using the fact that $G(0) = 1$ by direct evaluation and $\hat G(0) = \int G(x) ~dx = 1$, we can conclude that $c_0 = 1$ and thus $\hat G(\xi) = G(\xi)$.
+
 
 # Problem 5
 
