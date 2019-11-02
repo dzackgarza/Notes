@@ -289,4 +289,14 @@ I(x) = P(x) &= \int \hat P(\xi) e^{-2\pi i x \xi} ~dx \\
 \]
 
 where equality is almost everywhere and follows from the fact that if $\int f = 0$ then $f=0$ almost everywhere.
+
 # Problem 6
+
+If an interchange of integrals is justified, we can compute
+
+\[
+\begin{align*}
+\hat f(\xi) 
+&\coloneqq \int_\RR \left( \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} ~dt \right) e^{-2\pi i x \cdot \xi} ~dx
+.\end{align*}
+\]
