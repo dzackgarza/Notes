@@ -270,7 +270,7 @@ I(x) &\coloneqq \int e^{-2\pi \abs \xi} e^{2\pi i x \xi} ~d\xi \\
 \right) \\
 &= \frac 1 {2\pi} \left( \frac 1 {1+ix} + \frac{1}{1-ix} \right) \\
 &= \frac{1} {2\pi} \frac{2}{1+x^2} \\
-&= \frac 1 \pi \frac{1}{1+x^2} \\
+&= \frac 1 \pi \frac{1}{1+x^2}
 .\end{align*}
 \]
 
