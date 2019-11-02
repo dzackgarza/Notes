@@ -298,5 +298,6 @@ If an interchange of integrals is justified, we can compute
 \begin{align*}
 \hat f(\xi) 
 &\coloneqq \int_\RR \left( \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} ~dt \right) e^{-2\pi i x \cdot \xi} ~dx
+&\coloneqq \int_\RR \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} e^{-2\pi i x \cdot \xi} ~dt ~dx
 .\end{align*}
 \]
