@@ -202,10 +202,11 @@ we can thus write
 \[
 \begin{align*}
 G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi) 
-= G(\xi)(-2\pi \xi \hat G(\xi)) - \hat G(\xi)(-2\pi \xi G(\xi)) = 0
-.\end{align*}
+= G(\xi)(-2\pi \xi \hat G(\xi)) - \hat G(\xi)(-2\pi \xi G(\xi)) 
+,\end{align*}
 \]
 
+which is patently zero.
 
 
 # Problem 5
