@@ -262,7 +262,7 @@ I(x) &\coloneqq \int e^{-2\pi \abs \xi} e^{2\pi i x \xi} ~d\xi \\
 &= \int_{0}^\infty e^{-2\pi \xi} e^{-2\pi i x \xi} ~d\xi + \int_0^\infty e^{2\pi \xi} e^{2\pi i x \xi} ~d\xi \\
 &\quad\quad\quad \text{by the change of variables $\xi \mapsto -\xi,~d\xi \mapsto -d\xi$ and swapping integration bounds} \\
 &= \int_{0}^\infty e^{-2\pi \xi} e^{-2\pi i x \xi} + e^{2\pi \xi} e^{2\pi i x \xi} ~d\xi \\
-&= \frac{1}{2\pi} \int_{0}^\infty e^{-u} e^{-ixu} + e^{-u} e^{ixu}$ ~du \\ 
+&= \frac{1}{2\pi} \int_{0}^\infty e^{-u} e^{-ixu} + e^{-u} e^{ixu} ~du \\ 
 .\end{align*}
 \]
 
