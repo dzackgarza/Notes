@@ -235,6 +235,6 @@ By a direct computation. we have
 
 ## (b)
 
-Since $F(x) = D(x) \ast D(x)$, we have $\hat F(\xi) = (\hat D(\xi))^2 = \left( \frac{\sin(\pi \xi)}{\pi \xi} \right)$.
+Since $F(x) = D(x) \ast D(x)$, we have $\hat F(\xi) = (\hat D(\xi))^2 = \left( \frac{\sin(\pi \xi)}{\pi \xi} \right)^2$.
 
 # Problem 6
