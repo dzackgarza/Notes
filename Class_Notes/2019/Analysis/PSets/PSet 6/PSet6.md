@@ -171,8 +171,15 @@ Then
 ,\end{align*}
 \]
 
-and the claim is that this is zero. This happens precisely when the numerator is zero, and note the following facts:
+and the claim is that this is zero. This happens precisely when the numerator is zero, so we'd like to show that 
 
+\[
+\begin{align*}
+G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi) = 0
+.\end{align*}
+\]
+
+Using the following facts, 
 
 - $\del_\xi G(\xi) = -2\pi \xi G(\xi)$ by computing directly,
 - $\del_\xi \hat G(\xi) = - 2 \pi \xi \hat G(\xi)$, which follows from the following computation
@@ -188,13 +195,18 @@ and the claim is that this is zero. This happens precisely when the numerator is
 &\coloneqq i ~\widehat{\del_x G(x)} (\xi) \\
 &= i ~(2\pi i \xi \hat G(\xi)) \\
 &= -2\pi \xi \hat G(\xi)
-.\end{align*}
+,\end{align*}
 \]
+
+we can thus write
 \[
 \begin{align*}
-G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi)
+G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi) 
+= G(\xi)(-2\pi \xi \hat G(\xi)) - \hat G(\xi)(-2\pi \xi G(\xi)) = 0
 .\end{align*}
 \]
+
+
 
 # Problem 5
 
