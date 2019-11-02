@@ -235,6 +235,16 @@ By a direct computation. we have
 
 ## (b)
 
+### (i)
 Since $F(x) = D(x) \ast D(x)$, we have $\hat F(\xi) = (\hat D(\xi))^2$ by question 2a, and so $\hat F(\xi) = \left( \frac{\sin(\pi \xi)}{\pi \xi} \right)^2$.
+
+### (ii)
+
+By a direct computation, we have
+\[
+\begin{align*}
+\hat f(\xi) &\coloneqq \int \leftq \right)
+.\end{align*}
+\]
 
 # Problem 6
