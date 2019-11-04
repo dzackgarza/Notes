@@ -305,6 +305,7 @@ Moreover,
 &\quad\quad \text{By Tonelli} \\
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( \int_\RR G_t(x) ~dx \right) ~dt \\
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( 1 \right) ~dt \\
+&= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} ~dt \\
 .\end{align*}
 \]
 
