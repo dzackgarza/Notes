@@ -3416,5 +3416,18 @@ Thus for any $\alpha \in \Phi$, we have $\alpha = w \alpha_i$ for some element o
 By parts (a) and (c), we have $\dim \lieg_{\alpha} = 1$, so $\dim \lieg_{k\alpha}$ satisfies the same cases as $\dim \lieg_{k\alpha_{ii}}$ above.
 
 It remains to show that there are no other root spaces, i.e. $\lieg_\mu = 0$ if $\mu \not\in \ZZ\alpha$ for all $\alpha \in \Phi$.
-We can show this by considering reflections about hyperplanes again.
 
+We can show this by considering reflections about hyperplanes again, i.e. that $\alpha \in \Phi \implies H_\mu \neq H_\alpha$.
+
+If this is the case, it implies that there exists an $h \in \lieh$ such that $h \in H_\mu \setminus H_\alpha$ for all $\alpha \in \Phi$.
+But then $\mu(h) = 0$ when $h \not\in H_\alpha$ for all $\alpha \in \Phi$, so pick $w\in W$ such that $w\inv a_i(h) \in C(\Pi)$, the fundamental chamber.
+Thus $w\inv \alpha_i (h) > 0$ for all $i$, and is equal to $\alpha_i(w \cdot h)$, and
+$$
+0 = \mu(h) = \kappa(t_\mu, h) = \cdots = (w\mu)(w \cdot h)
+$$
+
+Writing $w_\mu = \sum{i=1}^\ell m_i \alpha_i$, we have $0 = \sum_{i=1}^\ell m_i \alpha_i(w\cdot h)$, we find that note all $m_i$ have the same sign, which is a contradiction. $\qed$
+
+# Wednesday November 6th
+
+Upcoming
