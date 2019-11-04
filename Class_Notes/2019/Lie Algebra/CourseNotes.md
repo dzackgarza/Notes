@@ -3389,4 +3389,21 @@ Then for all $h\in \lieh$, we have
 ,\end{align*}
 \]
 
-so $\Theta_i(x) \in \lieg_{s_i\lambda}$.
+so $\Theta_i(x) \in \lieg_{s_i\lambda}$, and thus $\Theta_i(\lieg_\lambda) \subseteq \lieg_{s_i\lambda}$.
+
+Replacing $\Theta_i$ with $\Theta_i\inv$ and $\lambda$ by $s_i \lambda$, we find $\Theta_i\inv (\lieg_{s_i \lambda}) \subseteq \lieg_{s_i s_i \lambda} = \lieg_\lambda$,
+and so $\lieg_\lambda \cong \lieg_{s_i \lambda}$, i.e. $\lieg_{s_i \lambda} \subseteq \Theta_i(\lieg)$.
+
+Proof of (d):
+
+By Corollary 18.2b, we have
+\[
+\begin{align*}
+\dim \lieg_{k \alpha_{ii}} =
+\begin{cases}
+1, & k= \pm 1 \\
+0, & k\not in \theset{0, \pm 1} \\
+\ell, & k = 0
+\end{cases}
+.\end{align*}
+\]
