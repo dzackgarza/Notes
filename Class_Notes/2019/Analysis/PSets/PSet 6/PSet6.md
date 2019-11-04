@@ -297,8 +297,9 @@ We first note that if $G_t(x) \coloneqq t^{-n} e^{-\pi \abs{x}^2 / t^2}$, then $
 Moreover,
 \[
 \begin{align*}
-\norm{f}_1 \coloneqq
-\int_\RR \abs{\int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt  } ~dx
+\norm{f}_1 &\coloneqq
+\int_\RR \abs{\int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt  } ~dx \\
+&= \int_\RR \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt ~dx \\
 .\end{align*}
 \]
 
