@@ -3410,9 +3410,11 @@ By Corollary 18.2b, we have
 
 Thus $\tilde \lieg_0 = \tilde \lieh$.
 
-Since $s_{ij}^+$ is of height $1+a_{ji} \geq 2$, we have $\dim \lieg_\alpha_i = \dim \tilde \lieg_{\alpha_i} = 1$ for all $i\in I$.
+Since $s_{ij}^+$ is of height $1+a_{ji} \geq 2$, we have $\dim \lieg_{\alpha_i} = \dim \tilde \lieg_{\alpha_i} = 1$ for all $i\in I$.
 Thus for any $\alpha \in \Phi$, we have $\alpha = w \alpha_i$ for some element of the Weyl group $w\in W$.
 
 By parts (a) and (c), we have $\dim \lieg_{\alpha} = 1$, so $\dim \lieg_{k\alpha}$ satisfies the same cases as $\dim \lieg_{k\alpha_{ii}}$ above.
 
 It remains to show that there are no other root spaces, i.e. $\lieg_\mu = 0$ if $\mu \not\in \ZZ\alpha$ for all $\alpha \in \Phi$.
+
+
