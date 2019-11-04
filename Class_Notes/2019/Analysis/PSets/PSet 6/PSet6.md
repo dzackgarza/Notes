@@ -299,6 +299,7 @@ Moreover,
 \[
 \begin{align*}
 \norm_1{f} &= 
+\int_{-\infty}^\infty \abs{ \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} dt } dx \\
 &= \int_\RR \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt ~dx
 .\end{align*}
 \]
