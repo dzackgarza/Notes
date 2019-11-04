@@ -3367,3 +3367,26 @@ c. $\dim \lieg_\lambda = \dim \lieg_\mu$ if $\lambda \in W_\mu$,
 d. $\dim \lieg = \ell + \abs \Phi$,
 e. $\lieg$ is semisimple,
 f. $\lieh$ is a Cartan subalgebra with root system $\Phi$.
+
+Proofs:
+
+a. Follows from Theorem 18.2b and Lemma b.
+b. Similar to Theorem 18.2a.
+
+Proof of (c):
+
+We may assume that $\lambda = s_i \mu$.
+Pick $x\in \lieg_\lambda$.
+Then for all $h\in \lieh$, we have
+
+\[
+\begin{align*}
+[\Theta_i(h), \Theta_i(x)] &= \Theta_i(h, x) \\
+&= \lambda(h)\Theta_i(x) \\
+&= \lambda(\Theta_i\inv (h)) \Theta_i(x) \\
+&= \lambda(s_i\inv \cdot h) \Theta_i(x) \\
+&= (s_i\lambda) \Theta_i(x)
+,\end{align*}
+\]
+
+so $\Theta_i(x) \in \lieg_{s_i\lambda}$.
