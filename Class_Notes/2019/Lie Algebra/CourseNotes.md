@@ -3301,13 +3301,13 @@ such that $\lambda(w\cdot h) = (w\inv \lambda ) (h) \forall \lambda \in \lieh^*$
 
 We then get compatible squares:
 
-\[
-\begin{tikzcd}
-\lieh^* \arrow[dd, "w"] \arrow[rr] &  & \lieh \arrow[dd, "w\cdot"] &  & \alpha \arrow[dd] \arrow[rr] &  & t_\alpha \arrow[dd]            \\
-                                   &  &                            &  &                              &  &                                \\
-\lieh^* \arrow[rr]                 &  & \lieh                      &  & w\alpha \arrow[rr]           &  & w \cdot t_\alpha = t_{w\alpha}
-\end{tikzcd}
-\]
+<!--\[-->
+<!--\begin{tikzcd}-->
+<!--\lieh^* \arrow[dd, "w"] \arrow[rr] &  & \lieh \arrow[dd, "w\cdot"] &  & \alpha \arrow[dd] \arrow[rr] &  & t_\alpha \arrow[dd]            \\-->
+                                   <!--&  &                            &  &                              &  &                                \\-->
+<!--\lieh^* \arrow[rr]                 &  & \lieh                      &  & w\alpha \arrow[rr]           &  & w \cdot t_\alpha = t_{w\alpha}-->
+<!--\end{tikzcd}-->
+<!--\]-->
 
 Proposition:
 
