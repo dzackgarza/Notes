@@ -3340,3 +3340,18 @@ We also find that $\ad e_i (h_j) = [e_i, h_j] = -[h_j, e_i] = -a_{ij} e_i$, and 
 
 We have $\ad e_i (h_j) = 0$, and applying $\ad e_i h_i$ multiple times yields $h_i, [e_i, h_i], 0$, so $\ad^{3} e_i(h_i) = 0$.
 
+Proof of (b):
+
+By a direct computation, we have $\Theta_i(h_j) = h_j - a_{ij} h_i \in \lieh$. (See CJ's notes for full computation.)
+
+Proof of (c):
+
+Consider computing $s_i \cdot h_j$. 
+This is the unique element satisfying $\lambda(s_i \cdot h_j) = (s_i\inv \lambda)(h_j)$, but we can compute
+\[
+\begin{align*}
+(s_i\inv \lambda) (h_j) &= h_j - a_{ij} h_i = \Theta_i(h_j)
+.\end{align*}
+\]
+
+
