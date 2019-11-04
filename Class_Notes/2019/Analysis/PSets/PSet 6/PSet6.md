@@ -296,6 +296,12 @@ We first note that if $G_t(x) \coloneqq t^{-n} e^{-\pi \abs{x}^2 / t^2}$, then $
 
 Moreover,
 
+\[
+\begin{align*}
+\norm_1{f} &= 
+.\end{align*}
+\]
+
 If an interchange of integrals is justified, we can compute
 
 \[
