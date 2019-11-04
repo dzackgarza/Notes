@@ -3314,3 +3314,9 @@ Proposition:
 a. $\Theta_i \coloneqq \exp(\ad e_i) \circ \exp(\ad (-f_i)) \circ \exp(\ad e_i)$,
 b. $\Theta_i(\lieh) = \lieh$,
 c. $\Theta_i\mid_\lieh = s_i$.
+
+Proof of (a):
+
+We want to show that $\exp(\ad e_i)$ is well-defined as an automorphism of $\lieg$. 
+It suffices to check that $\ad e_i$ is *locally nilpotent*, i.e. for all $x\in \lieg$, there exists some $n_x > 0$ such that $\ad(e_i)^n = 0$.
+We will also need to check that $\exp \ad e_i$ is a derivation.
