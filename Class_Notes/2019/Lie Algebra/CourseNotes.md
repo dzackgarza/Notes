@@ -3312,8 +3312,8 @@ We then get compatible squares:
 Proposition:
 
 a. $\Theta_i \coloneqq \exp(\ad e_i) \circ \exp(\ad (-f_i)) \circ \exp(\ad e_i)$,
-b. $\Theta_i(\lieh) = \lieh$,
-c. $\Theta_i\mid_\lieh = s_i$.
+b. $\Theta_i(\lieh) = \lieh$, so it fixes Cartan subalgebra.
+c. $\Theta_i\mid_\lieh = s_i$ where $s_i$ is the Weyl group action
 
 Proof of (a):
 
@@ -3339,3 +3339,4 @@ A direct computation shows $\ad e_i = [e_i, e_i] = 0$, and $(\ad e_i)^{1 - a_{ji
 We also find that $\ad e_i (h_j) = [e_i, h_j] = -[h_j, e_i] = -a_{ij} e_i$, and applying it again yields $(\ad e_i)^2(h_j) = -a_{ij}[e_i, e_i] = 0$.
 
 We have $\ad e_i (h_j) = 0$, and applying $\ad e_i h_i$ multiple times yields $h_i, [e_i, h_i], 0$, so $\ad^{3} e_i(h_i) = 0$.
+
