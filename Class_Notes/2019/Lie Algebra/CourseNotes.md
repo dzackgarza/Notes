@@ -3331,3 +3331,11 @@ To see the local nilpotency, we can check
 for all $x, y \in \lieg$. 
 
 If $x,y$ are locally nilpotent, then $[x, y]$ is as well.
+
+It thus suffices to check that $\ad e_i$ acts on generators in a nilpotent way.
+
+A direct computation shows $\ad e_i = [e_i, e_i] = 0$, and $(\ad e_i)^{1 - a_{ji}}(e_j) = 0$ by the Serre relations.
+
+We also find that $\ad e_i (h_j) = [e_i, h_j] = -[h_j, e_i] = -a_{ij} e_i$, and applying it again yields $(\ad e_i)^2(h_j) = -a_{ij}[e_i, e_i] = 0$.
+
+We have $\ad e_i (h_j) = 0$, and applying $\ad e_i h_i$ multiple times yields $h_i, [e_i, h_i], 0$, so $\ad^{3} e_i(h_i) = 0$.
