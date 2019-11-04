@@ -303,7 +303,8 @@ Moreover,
 &\quad\quad \text{since the integrand and thus integral is positive.} \\
 &= \int_0^\infty \int_\RR G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dx ~dt \\
 &\quad\quad \text{By Tonelli} \\
-&= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( \int_0^\infty G_t(x) ~dx \right) ~dt \\
+&= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( \int_\RR G_t(x) ~dx \right) ~dt \\
+&= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( 1 \right) ~dt \\
 .\end{align*}
 \]
 
