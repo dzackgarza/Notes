@@ -294,6 +294,16 @@ where equality is almost everywhere and follows from the fact that if $\int f = 
 
 We first note that if $G_t(x) \coloneqq t^{-n} e^{-\pi \abs{x}^2 / t^2}$, then $\hat G_t (\xi) = e^{-\pi t^2 \abs{\xi}^2}$.
 
+Moreover,
+\[
+\begin{align*}
+\norm_1{f} &= \int_{-\infty}^\infty \abs{
+\int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} dt
+} dx \\
+&= \int_\RR \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt ~dx
+.\end{align*}
+\]
+
 If an interchange of integrals is justified, we can compute
 
 \[
