@@ -3426,7 +3426,7 @@ $$
 0 = \mu(h) = \kappa(t_\mu, h) = \cdots = (w\mu)(w \cdot h)
 $$
 
-Writing $w_\mu = \sum{i=1}^\ell m_i \alpha_i$, we have $0 = \sum_{i=1}^\ell m_i \alpha_i(w\cdot h)$, we find that note all $m_i$ have the same sign, which is a contradiction. $\qed$
+Writing $w_\mu = \sum_{i=1}^\ell m_i \alpha_i$, we have $0 = \sum_{i=1}^\ell m_i \alpha_i(w\cdot h)$, we find that note all $m_i$ have the same sign, which is a contradiction. $\qed$
 
 # Wednesday November 6th
 
