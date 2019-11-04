@@ -3364,6 +3364,6 @@ Then
 a. $\lieg = n^- \oplus \lieh \oplus n$ as vector spaces, where $n^- \cong \tilde n^- / s^-$, $\lieh \cong \tilde\lieh$, and $n \cong \tilde n / s^+$. 
 b. $\lieg = \oplus_{\mu \in \lieh^*} \lieg_\mu$ as vector spaces, where $\lieg_\mu = \theset{x\in\lieg \suchthat [h, x] = \mu(h) x \forall h\in \lieh}$
 c. $\dim \lieg_\lambda = \dim \lieg_\mu$ if $\lambda \in W_\mu$,
-d. $\sim \lieg = \ell + \abs \Phi$,
+d. $\dim \lieg = \ell + \abs \Phi$,
 e. $\lieg$ is semisimple,
 f. $\lieh$ is a Cartan subalgebra with root system $\Phi$.
