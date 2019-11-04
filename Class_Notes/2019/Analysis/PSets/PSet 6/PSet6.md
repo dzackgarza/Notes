@@ -329,3 +329,5 @@ If an interchange of integrals is justified, we can compute
 &\coloneqq F(\xi) \norm{f}_1
 .\end{align*}
 \]
+
+Thus $F(\xi)$ is the Fourier transform of the function $g(x) \coloneqq f(x)/\norm{f}_1$.
