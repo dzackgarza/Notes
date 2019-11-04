@@ -3402,7 +3402,7 @@ By Corollary 18.2b, we have
 \dim \lieg_{k \alpha_{ii}} =
 \begin{cases}
 1, & k= \pm 1 \\
-0, & k\not in \theset{0, \pm 1} \\
+0, & k\not \in \theset{0, \pm 1} \\
 \ell, & k = 0
 \end{cases}
 .\end{align*}
@@ -3416,5 +3416,5 @@ Thus for any $\alpha \in \Phi$, we have $\alpha = w \alpha_i$ for some element o
 By parts (a) and (c), we have $\dim \lieg_{\alpha} = 1$, so $\dim \lieg_{k\alpha}$ satisfies the same cases as $\dim \lieg_{k\alpha_{ii}}$ above.
 
 It remains to show that there are no other root spaces, i.e. $\lieg_\mu = 0$ if $\mu \not\in \ZZ\alpha$ for all $\alpha \in \Phi$.
-
+We can show this by considering reflections about hyperplanes again.
 
