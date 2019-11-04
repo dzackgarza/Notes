@@ -307,7 +307,7 @@ If an interchange of integrals is justified, we can compute
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon -1} e^{-\pi t^2 \abs{\xi}^2} ~dt \\
 &= \int_0^\infty e^{-\pi t^2(1 + \abs{\xi}^2)} t^{2\varepsilon -1} ~dt \\
 &= \int_0^\infty e^{-\pi (t\sqrt{1 + \abs{\xi}^2})^2 } t^{2\varepsilon -1} ~dt \\
-&=\quad\quad s = t\sqrt{1 + \abs{\xi}^2},~ ds = \sqrt{1+\abs{\xi}^2} dt \\
+&\quad\quad s = t\sqrt{1 + \abs{\xi}^2},~ ds = \sqrt{1+\abs{\xi}^2} dt \\
 &= \int_0^\infty e^(-\pi s^2)
 \cdots \\
 &= \frac{1}{1 + \abs{\xi}^2} \int G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt \\
