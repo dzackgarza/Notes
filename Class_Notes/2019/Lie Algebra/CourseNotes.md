@@ -3320,3 +3320,14 @@ Proof of (a):
 We want to show that $\exp(\ad e_i)$ is well-defined as an automorphism of $\lieg$. 
 It suffices to check that $\ad e_i$ is *locally nilpotent*, i.e. for all $x\in \lieg$, there exists some $n_x > 0$ such that $\ad(e_i)^n = 0$.
 We will also need to check that $\exp \ad e_i$ is a derivation.
+
+To see the local nilpotency, we can check
+\[
+\begin{align*}
+(\ad e_i)^n([x, y]) = \sum_{t=0}^n {n \choose t} \left[ (\ad e_i)^t, (\ad e_i)^{n-t} \right]
+\end{align*}
+\]
+
+for all $x, y \in \lieg$. 
+
+If $x,y$ are locally nilpotent, then $[x, y]$ is as well.
