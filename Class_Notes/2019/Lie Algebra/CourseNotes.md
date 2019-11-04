@@ -3309,4 +3309,8 @@ We then get compatible squares:
 \end{tikzcd}
 \]
 
+Proposition:
 
+a. $\Theta_i \coloneqq \exp(\ad e_i) \circ \exp(\ad (-f_i)) \circ \exp(\ad e_i)$,
+b. $\Theta_i(\lieh) = \lieh$,
+c. $\Theta_i\mid_\lieh = s_i$.
