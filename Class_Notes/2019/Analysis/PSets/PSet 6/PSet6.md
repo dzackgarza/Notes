@@ -294,7 +294,7 @@ where equality is almost everywhere and follows from the fact that if $\int f = 
 
 We first note that if $G_t(x) \coloneqq t^{-n} e^{-\pi \abs{x}^2 / t^2}$, then $\hat G_t (\xi) = e^{-\pi t^2 \abs{\xi}^2}$.
 
-Moreover,
+Moreover, if an interchange of integrals is justified, we have have
 \[
 \begin{align*}
 \norm{f}_1 &\coloneqq
@@ -306,8 +306,21 @@ Moreover,
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( \int_\RR G_t(x) ~dx \right) ~dt \\
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( 1 \right) ~dt \\
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} ~dt
+,\end{align*}
+\]
+
+which we claim is finite, so $f\in L^1$.
+To see this, we note that $t \geq 0 \implies e^{-\pi t^2} < 1$, and if we take $\varepsilon < \frac 1 2$, we $2 \varepsilon - 1 < 0$ and thus $t \in [1, \infty) \implies t^{2\varepsilon - 1} \leq 1$.
+Thus
+\[
+\begin{align*}
+\int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} ~dt
+&= \int_0^1 e^{-\pi t^2} t^{2\varepsilon - 1} ~dt
++ \int_1^\infty e^{-\pi t^2} t^{2\varepsilon - 1} ~dt \\
+& \leq \
 .\end{align*}
 \]
+
 
 If an interchange of integrals is justified, we can compute
 
