@@ -48,7 +48,7 @@ Assuming an interchange of integrals is justified, we have
 > The exponential is continuous, and thus measurable on $\RR^n$.
 > Thus the integrand $F(x, y)$ is a product of measurable functions and thus measurable. In particular, $\abs{F} = \abs{fg }$ is measurable, and ths computation shows that one iterated integral is finite.
 > From a previous homework question, we know that $f\in L^1 \implies \hat f$ is bounded, and thus $\hat f \hat g$ is bounded.
-> Since $\abs{F}$ is measurable and one iterated integrable was finite, Fubini-Tonelli applies
+> Since $\abs{F}$ is measurable and one iterated integrable was finite, Fubini-Tonelli applies. 
 
 ## Part (b)
 
