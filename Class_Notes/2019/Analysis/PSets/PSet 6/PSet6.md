@@ -351,7 +351,7 @@ If an interchange of integrals is justified, we can compute
 \]
 
 
-> To see that the interchange is justified, note that if we compute $\int \abs{\cdots} ~ dt$.
+> To see that the interchange is justified, note that 
 \[
 \begin{align*}
 \int_{\RR^n} \int_0^\infty \abs{G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} e^{-2\pi i x \cdot \xi} }~dt ~dx =
