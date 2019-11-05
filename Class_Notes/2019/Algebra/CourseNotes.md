@@ -2680,3 +2680,228 @@ Lemma (Short Five):
 Let $R$ be a ring, then if we have the following diagram:
 
 where
+<!-- Todo -->
+
+1. $\alpha, \gamma$ mono implies $\beta$ is mono.
+2. $\alpha, \gamma$ epi implies $\beta$ is too.
+3. $\alpha, \gamma$ is iso implies $\beta$ is too.
+
+Proof:
+Check
+
+We say that two exact sequences are *isomorphic* if in the following diagram, $f,g,h$ are isomorphisms.
+
+\[
+\begin{tikzcd}
+0 & M \arrow[dd, "f"] & N \arrow[dd, "g"] & Q \arrow[dd, "h"] & 0 \\
+  &                   &                   &                   &   \\
+0 & M                 & N                 & Q                 & 0
+\end{tikzcd}
+\]
+
+Theorem:
+
+Let $0 \to M_1 \mapsvia f M_2 \mapsvia g M_3 \to 0$ be a SES. Then TFAE:
+
+- There exists an $R\dash$module homomorphisms $h: M_3 \to M_2$ such that $g\circ h = \id_{M_3}$.
+- There exists an $R\dash$module homomorphisms $k: M_2 \to M_1$ such that $k\circ f = \id_{M_1}$.
+- The sequence is isomorphic to $0 \to M_1 \to M_1 \oplus M_3 \to M_3 \to 0$.
+
+Proof:
+Define $\phi: M_1 \oplus M_3 \to M_2$ by $\phi(m_1 + m_2) = f(m_1) + h(m_2)$.
+We need to show that this diagram commutes:
+
+<!--\begin{tikzcd}-->
+<!--0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\-->
+  <!--&                       &                                   &                       &   \\-->
+<!--0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0-->
+<!--\end{tikzcd}-->
+
+We can check that $g\phi(m_1 + m_2) = g( f(m_1)) +  g(h(m_2)) = m_2 = \pi(m_1 + m_2)$.
+This yields $1 \implies 3$, and $2 \implies 3$ is similar.
+
+To see that $3 \implies 1, 2$, we attempt to define $k, h$ in the following diagram:
+
+
+<!--\[-->
+<!--\begin{tikzcd}-->
+<!--0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\-->
+            <!--&                       &                                                   &                                                                   &   \\-->
+<!--0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0-->
+<!--\end{tikzcd}-->
+<!--\]-->
+
+
+So define $\k = \pi_1 \circ \phi\inv$ and $h = \phi \circ \iota_2$.
+It can then be checked that $g \circ h = g \circ \phi \circ \iota_2 = \pi_2 \circ \iota_2 = \id_{M_3}$. $\qed$
+
+## Free Modules
+
+A free module is a module with a basis.
+
+Definition:
+A subset $X = \theset{x_i}$ is *linearly independent* iff $\sum r_i x_i = 0 \implies r_i = 0 ~\forall i$.
+
+Definition:
+A subset $X$ *spans* $M$ iff $m\in M \implies m = \sum^n r_i x_i$.
+
+Definition:
+A subset $X$ is a basis
+
+Example: 
+$\ZZ_6$ is an abelian group and thus a $\ZZ\dash$module, but not free because $3 \actson [2] = [6] = 0$, so there are torsion elements.
+
+> This might contradict linear independence?
+
+Theorem (Characterization of Free Modules):
+Let $R$ be a unital ring and $M$ a unital $R\dash$module (so $1\actson m = m$).
+Then TFAE:
+
+- There exists a nonempty basis of $M$.
+- $M = \oplus_{i\in I} R$ for some index set $I$.
+- There exists a non-empty set $X$ and a map $\iota: X \injects M$ such that given $f: X \to N$ for $N$ any $R\dash$ module, $\exists! \tilde f: M \to N$ such that the following diagram commutes.
+
+\[
+\begin{tikzcd}
+M \arrow[rrdd, "\exists! \tilde f", dotted] &  &   \\
+                                            &  &   \\
+X \arrow[rr, "f"] \arrow[uu, "\iota", hook] &  & N
+\end{tikzcd}
+\]
+Definition:
+An $R\dash$module is *free* iff any of 1,2,3 hold.
+
+Proof of $1 \implies 2$:
+
+Let $X$ be a basis for $M$, then define $M \to \oplus_{x\in X} Rx$ by $\phi(m) = \sum r_i x_i$.
+It can be checked that 
+
+- This is an $R\dash$module homomorphism,
+- $\phi(m) = 0 \implies r_j = 0 ~\forall j \implies m = 0$, so $\phi$ is injective,
+- $\phi$ is surjective, since $X$ is a spanning set.
+
+So $M \cong \oplus_{x\in X} Rx$, so it only remains to show that $Rx \cong R$.
+We can define the map $R \mapsvia{\pi_x} Rx$ by $r \mapsto rx$, then $\pi_x$ is onto, and is injective exactly because $X$ is a linearly independent set.
+Thus $M \cong \oplus R$.
+
+Proof $1 \implies 3$:
+
+Let $X$ be a basis, and suppose there are two maps $X \mapsvia{\iota} M$ and $X \mapsvia{f} M$. 
+Then define $\tilde f: M \to N$ by $\sum r_i x_i \mapsto \sum r_i f(x_i)$.
+This is clearly an $R\dash$module homomorphism, and the diagram commutes because $(\tilde f \circ \iota)(x) = f(x)$.
+This is unique because $\tilde f$ is determined precisely by $f(X)$.o
+
+Proof $3 \implies 2$:
+
+We use the usual "2 diagram" trick to produce a map $\tilde f: M \to \oplus_{x\in X} R$ and $\tilde g: \oplus_{x\in X}R \to M$, then commutativity forces $\tilde f \circ \tilde g = \tilde g \circ \tilde f = \id$. 
+
+Proof $2 \implies 1$:
+
+We have $M = \oplus_{i\in I} R$ by (2).
+So there exists a $\psi: \oplus_{i\in I} R \to M$, so let $X \coloneqq \theset{\psi(1_i) \mid i\in I}$.
+The claim is that $X$ is a basis.
+To see this is a basis, suppose $\sum r_i \psi(1_i) = 0$, then $\psi(\sum r_i 1_i) = 0$ and thus $\sum r_i 1_i = 0$ and $r_i = 0$ for all $i$.
+Checking that it's a spanning set: exercise. $\qed$
+
+Corollary:
+Every $R\dash$module is the homomorphic image of a free module.
+
+
+Proof: 
+Let $M$ be an $R\dash$module, and let $X$ be any set of generators of $R$. 
+Then we can make a map $M \to \oplus{x\in X} R$ and there is a map $X \injects M$, so the universal property provides $\tilde f: \oplus_{x\in X} R \to M$. 
+Moreover, $\oplus_{x\in X} R$ is free.
+
+Examples:
+
+- $\ZZ_n$ is not a free $\ZZ\dash$module.
+- If $V$ is a vector space over a field $k$, then $V$ is a free $k\dash$module (even if infinite dimensional).
+- Every nonzero submodule of a free module over a PID is free.
+
+Some facts:
+
+Let $R = k$ be a field (or potentially a division ring).
+
+1. Every maximal linearly independent subset is a basis for $V$.
+2. Every vector space has a basis.
+3. Every linearly independent set is contained in a basis
+4. Every spanning set contains a basis.
+5. Any two bases of a vector space have the same cardinality.
+
+
+Theorem (Invariant Dimension):
+Let $R$ be a commutative ring and $M$ a free $R\dash$module.
+If $X_1, X_2$ are bases for $R$, then $\abs{X_1} = \abs{X_2}$.
+
+Any ring satisfying this property is said to have the *invariant dimension property*.
+
+> Note that it's difficult to say much more about generic modules, e.g. a finitely generated module may not have an invariant number of generators.
+
+# Tuesday November 5
+
+Let $R$ be a PID. 
+Then any nonzero submodule of a free module over a PID is free, and any projective module over $R$ is free.
+
+In general, free implies projective, where a module is projective iff it is a direct summand of a free module, but projective does not imply free.
+
+Example:
+
+Consider $\ZZ_6 = \ZZ_2 \oplus \ZZ_3$ as a $\ZZ\dash$module.
+Is this free as a $\ZZ\dash$module?
+Note that $\ZZ_2$ is a submodule, but is not itself a free module over $\ZZ$.
+What fails here is that $\ZZ_6$ is not a PID, because it is not a domain.
+
+Definition:
+Let $m\in M$ a module, then define
+$$
+\mathrm{Ann}_m \coloneqq \theset{r\in R \suchthat r.m = 0 } \normal R.
+$$
+We can then define a map
+\[
+\begin{align*}
+\phi: R \to R.m \\
+r \mapsto r.m
+.\end{align*}
+\]
+
+Then $\ker \phi = \mathrm{Ann}_m$, and $R/\mathrm{Ann} \cong R.m$.
+
+We can also define 
+$$
+M_t \coloneqq \theset{m\in M \suchthat \mathrm{Ann}_m \neq 0} \leq M.
+$$
+
+Lemma:
+Let $R$ be a PID and $p$ a prime element. Then
+
+- If $p^i m = 0$ then $\mathrm{Ann}_m = (p^j)$ where $0\leq j\leq i$.
+- If $\mathrm{Ann}_m = (p^i)$, then $p^jm \neq 0$ for any $j < m$.
+
+Proof of (1):
+
+Since we are in a PID and the annihilator is an ideal, we have $\mathrm{Ann}_m \coloneqq (r)$ for some $r\in M$.
+Then $p^i \in (r)$, so $r \divides p^i$.
+But $p$ was prime, to up to scaling by units, we have $r = p^j$ for some $j \leq i$.
+
+Proof of (2):
+
+Towards a contradiction, suppose that $\mathrm{Ann}_m = (p^i)$ and $p^jm = 0$ for some $j < i$.
+Then $p^j \in \mathrm{Ann}_m$, so $p^j \divides p^i$.
+But this forces $j \leq i$, a contradiction.
+
+Some terminology:
+
+- $\mathrm{Ann}_m$ is the *order ideal* of $m$
+- $M_t$ is the *torsion* submodule of $M$
+- $M$ is *torsion* iff $M = M_t$
+- $M$ is *torsion free* iff $M_t = 0$.
+- $\mathrm{Ann}_m = (r)$ is said to have *order* $r$
+- $Rm$ is a *cyclic module generated by $m$*
+
+Theorem:
+A finitely generated torsion-free module over a PID is free.
+
+Proof:
+Let $M = \generators{X}$ for some finite generating set.
+We can assume $M \neq (0)$.
+If $m\neq 0 \in M$, with $rm = 0$ iff $r=0$.
