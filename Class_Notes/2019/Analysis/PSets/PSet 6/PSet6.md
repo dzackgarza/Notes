@@ -310,7 +310,7 @@ Moreover, if an interchange of integrals is justified, we have have
 \]
 
 which we claim is finite, so $f\in L^1$.
-To see this, we note that $t \geq 0 \implies e^{-\pi t^2} < 1$, and if we take $\varepsilon < \frac 1 2$, we $2 \varepsilon - 1 < 0$ and thus $t \in [1, \infty) \implies t^{2\varepsilon - 1} \leq 1$.
+To see this, we note that $$t \geq 0 \implies e^{-\pi t^2} < 1$$, and if we take $\varepsilon < \frac 1 2$, we $2 \varepsilon - 1 < 0$ and thus $$t \in [1, \infty) \implies t^{2\varepsilon - 1} \leq 1.$$
 Thus
 \[
 \begin{align*}
