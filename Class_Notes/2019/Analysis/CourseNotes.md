@@ -2569,4 +2569,9 @@ In this situation, we say $x,y$ are orthogonal.
 Corollary: 
 If $\theset{x_i}$ are all pairwise orthogonal, then $\norm{\sum x_i}^2 = \sum \norm{x_i}^2$.
 
+Orthonormal Sets:
 
+A countable collection $U_n$ is *orthonormal* iff 
+
+1. $\inner{u_j}{u_k} = 0$ for $j\neq k$, and
+2. $\inner{u_j}{u_j} = 1$ for all $j$.
