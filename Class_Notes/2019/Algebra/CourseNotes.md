@@ -2925,3 +2925,11 @@ Thus $M \cong rM \subseteq F$, making $M$ free.
 Theorem:
 Let $M$ be a finitely generated module over a PID $R$.
 Then $M$ can be decomposed as $M \cong M_t \oplus F$ where $M_t$ is torsion and $F$ is free of finite rank and $F \cong M/M_t$.
+
+> Note: we also have $M/F \cong F_t$ since this is a direct sum.
+
+Proof:
+The module $M/M_t$ is torsion free.
+Suppose that $r(m + M_t) = M_t$, so that $r$ acting on a coset is the zero coset.
+Then $rm + M_t = M_t$, so $rm \in M_t$, so there exists some $r'$ such that $r'(rm) = 0$ by definition of $M_t$.
+But then $(r'r)m = 0$, so in fact $m\in M_t$ and thus $m + M_t = M_t$, making $M/M_t$ torsion free.
