@@ -16,8 +16,8 @@ But as an immediate consequence, this yields
 \[
 \begin{align*}
 \abs{\hat f (\xi)} &= \frac 1 2 \abs{\int_{\RR^n} \left[ f(x) - f(x-\xi')\right] e^{-2\pi i x\cdot \xi} ~dx} \\
-&\leq \frac 1 2 \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~~\abs{e^{-2\pi i x\cdot \xi}} ~dx \\
-&\leq \frac 1 2 \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
+&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~~\abs{e^{-2\pi i x\cdot \xi}} ~dx \\
+&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
 &\to 0
 ,\end{align*}
 \]
