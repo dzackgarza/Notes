@@ -2550,3 +2550,5 @@ We have
 &\leq \norm{x_n - x}\norm{y} + \norm{x} \norm{y_n - y}\quad\quad\text{by Schwarz}
 .\end{align*}
 \]
+
+> Exercise: Show $\norm{y_n - y} \to 0$ iff $\norm{y_n} \to \norm{y}$.
