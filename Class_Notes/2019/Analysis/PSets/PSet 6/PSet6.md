@@ -8,15 +8,15 @@ Assuming the hint, we have
 
 \[
 \begin{align*}
-\lim_{\abs \xi \to \infty} \hat f(\xi) = \lim_{\xi' \to 0} \frac 1 2 \int_{\RR^n} (f()) - f(x - \xi')) \exp(-2\pi i x \cdot \xi) ~dx \\
+\lim_{\abs \xi \to \infty} \hat f(\xi) = \lim_{\xi' \to 0} \frac 1 2 \int_{\RR^n} (f()) - f(x - \xi')) e^{-2\pi i x \cdot \xi} ~dx \\
 .\end{align*}
 \]
 
 But as an immediate consequence, this yields
 \[
 \begin{align*}
-\abs{\hat f (\xi)} &= \abs{\int_{\RR^n} (f(x) - f(x-\xi')) \exp(-2\pi i x\cdot \xi) ~dx} \\
-&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} \abs{\exp(-2\pi i x\cdot \xi)} ~dx \\
+\abs{\hat f (\xi)} &= \abs{\int_{\RR^n} (f(x) - f(x-\xi')) e^{-2\pi i x\cdot \xi} ~dx} \\
+&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} \abs{e^{-2\pi i x\cdot \xi}} ~dx \\
 &\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
 &\to 0
 ,\end{align*}
@@ -32,14 +32,14 @@ It thus only remains to show that the hint holds, and that $\xi' \to 0$ as $\xi 
 Assuming an interchange of integrals is justified, we have
 \[
 \begin{align*}
-\widehat(f\ast g)( \xi ) &\coloneqq \int \int f(x-y) g(y) \exp(-2\pi x \cdot \xi) ~dy~dx \\
-&=_? \int \int f(x-y) g(y) \exp(-2\pi x \cdot \xi) ~dx~dy \\
-&= \int \int f(t) \exp(-2\pi i (x-y) \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi) ~dx ~dy \\
+\widehat(f\ast g)( \xi ) &\coloneqq \int \int f(x-y) g(y) e^{-2\pi x \cdot \xi} ~dy~dx \\
+&=_? \int \int f(x-y) g(y) e^{-2\pi x \cdot \xi} ~dx~dy \\
+&= \int \int f(t) e^{-2\pi i (x-y) \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi} ~dx ~dy \\
 &\quad\quad (t = x-y, ~dt = ~dx) \\
-&= \int \int f(t) \exp(-2\pi i t \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi) ~dt~dy \\
-&= \int f(t) \exp(-2\pi i t \cdot \xi) \left( \int g(y) \exp(-2\pi i y \cdot \xi) ~dy \right) ~dt \\
-&= \int f(t) \exp(-2\pi i t \cdot \xi) \hat g(\xi) ~dt \\
-&= \hat g(\xi) \int f(t) \exp(-2\pi i t \cdot \xi) ~dt \\
+&= \int \int f(t) e^{-2\pi i t \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi} ~dt~dy \\
+&= \int f(t) e^{-2\pi i t \cdot \xi) \left( \int g(y) \exp(-2\pi i y \cdot \xi) ~dy \right} ~dt \\
+&= \int f(t) e^{-2\pi i t \cdot \xi) \hat g(\xi} ~dt \\
+&= \hat g(\xi) \int f(t) e^{-2\pi i t \cdot \xi} ~dt \\
 &= \hat g(\xi) \hat f(\xi) 
 .\end{align*}
 \]
@@ -81,24 +81,24 @@ Then $\lim_{\abs \xi \to \infty} \hat I (\xi) \neq 0$, which by Problem 1 shows 
 Let $g(x) = f(x-y)$. We then have
 \[
 \begin{align*}
-\hat g(\xi) &\coloneqq \int g(x) \exp(-2\pi i x\cdot \xi) ~dx \\
-&= \int f(x-y) \exp(-2\pi i x\cdot \xi) ~dx \\
-&= \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi) \exp(-2\pi i y\cdot \xi) ~dx \\ 
-&= \exp(-2\pi i y \cdot \xi) \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi) ~dx \\
+\hat g(\xi) &\coloneqq \int g(x) e^{-2\pi i x\cdot \xi} ~dx \\
+&= \int f(x-y) e^{-2\pi i x\cdot \xi} ~dx \\
+&= \int f(x-y) e^{-2\pi i (x-y) \cdot \xi) \exp(-2\pi i y\cdot \xi} ~dx \\ 
+&= e^{-2\pi i y \cdot \xi) \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi} ~dx \\
 &\quad\quad (t = x-y, dt = dx) \\
-&= \exp(-2\pi i y \cdot \xi) \int f(t) \exp(-2\pi i t \cdot \xi) ~dt \\
-&= \exp(-2\pi i y \cdot \xi) \hat f(\xi) 
+&= e^{-2\pi i y \cdot \xi) \int f(t) \exp(-2\pi i t \cdot \xi} ~dt \\
+&= e^{-2\pi i y \cdot \xi) \hat f(\xi} 
 .\end{align*}
 \]
 
 ### (ii)
 
-Let $h(x) = \exp(2\pi i x\ cdot y) f(x)$. We then have
+Let $h(x) = e^{2\pi i x\ cdot y) f(x}$. We then have
 \[
 \begin{align*}
-\hat h(\xi) &\coloneqq \int \exp(2\pi i x\cdot y) f(x) \exp(-2\pi i x \cdot \xi) ~dx \\ 
-&= \int \exp(2\pi i x\cdot y - 2\pi i x \cdot \xi) f(x) ~dx \\ 
-&= \int f(\xi -y) \exp(-2\pi i x \cdot (\xi - y)) ~dx\\
+\hat h(\xi) &\coloneqq \int e^{2\pi i x\cdot y) f(x) \exp(-2\pi i x \cdot \xi} ~dx \\ 
+&= \int e^{2\pi i x\cdot y - 2\pi i x \cdot \xi) f(x} ~dx \\ 
+&= \int f(\xi -y) e^{-2\pi i x \cdot (\xi - y)} ~dx\\
 &= \hat f(\xi - y)
 .\end{align*}
 \]
@@ -114,10 +114,10 @@ where $A^{-T}$ denotes the transpose of the inverse of $A$ (or $(A\inv)^*$ if $V
 We then have
 \[
 \begin{align*}
-\frac{1}{\abs{\det T}} \hat f( T^{-T} \xi ) &= \frac{1}{\abs{\det T}} \int f(x) \exp(-2\pi i x \cdot T^{-T} \xi) ~dx \\
+\frac{1}{\abs{\det T}} \hat f( T^{-T} \xi ) &= \frac{1}{\abs{\det T}} \int f(x) e^{-2\pi i x \cdot T^{-T} \xi} ~dx \\
 &\quad\quad\quad x \mapsto Tx,~~ ~dx \mapsto \abs{\det T} ~dx \\
-&= \frac{1}{\abs{\det T}} \int f(Tx) \exp(-2\pi i Tx \cdot T^{-T} \xi) \abs{\det T} ~dx \\
-&= \int f(Tx) \exp(-2\pi i x \cdot \xi) ~dx \\
+&= \frac{1}{\abs{\det T}} \int f(Tx) e^{-2\pi i Tx \cdot T^{-T} \xi} \abs{\det T} ~dx \\
+&= \int f(Tx) e^{-2\pi i x \cdot \xi} ~dx \\
 &\quad\quad\quad \text{since } Tx \cdot T^{-T}\xi = T\inv T x \cdot \xi = x\cdot \xi \\
 &= \widehat{(f\circ T)}(\xi)
 .\end{align*}
@@ -131,10 +131,10 @@ We then have
 Let $g(x) = xf(x)$. Then if an interchange of the derivative and the integral is justified, we have
 \[
 \begin{align*}
-\dd{}{\xi} \hat f(\xi) &\coloneqq \dd{}{\xi} \int f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
-&=_? \int f(x) \dd{}{\xi} \exp(-2\pi i x \cdot \xi) ~dx \\
-&= \int f(x) 2\pi i x \exp(-2\pi i x \cdot \xi) ~dx \\
-&= 2\pi i \int x f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
+\dd{}{\xi} \hat f(\xi) &\coloneqq \dd{}{\xi} \int f(x) e^{-2\pi i x \cdot \xi} ~dx \\
+&=_? \int f(x) \dd{}{\xi} e^{-2\pi i x \cdot \xi} ~dx \\
+&= \int f(x) 2\pi i x e^{-2\pi i x \cdot \xi} ~dx \\
+&= 2\pi i \int x f(x) e^{-2\pi i x \cdot \xi} ~dx \\
 &\coloneqq 2\pi i \hat g (\xi)
 .\end{align*}
 \]
@@ -149,18 +149,18 @@ We have
 \[
 \begin{align*}
 \hat h(\xi) 
-&\coloneqq \int \dd{f}{x}(x) \exp(-2\pi i x \cdot \xi) ~dx \\
-&= f(x)  \exp(-2\pi i x \cdot \xi) \Bigr\rvert_{x = -\infty}^{x = \infty} - \int f(x) (2\pi i \xi) \exp(-2\pi i x \cdot \xi) ~dx \\
+&\coloneqq \int \dd{f}{x}(x) e^{-2\pi i x \cdot \xi} ~dx \\
+&= f(x)  e^{-2\pi i x \cdot \xi) \Bigr\rvert_{x = -\infty}^{x = \infty} - \int f(x) (2\pi i \xi) \exp(-2\pi i x \cdot \xi} ~dx \\
 &\quad\quad\quad\text{(integrating by parts)} \\
-&= - \int f(x) (-2\pi i \xi) \exp(-2\pi i x \cdot \xi) ~dx \\
+&= - \int f(x) (-2\pi i \xi) e^{-2\pi i x \cdot \xi} ~dx \\
 &\quad\quad\quad (\text{since } f(\infty) = f(-\infty) = 0) \\
-&=  2\pi i \xi \int f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
+&=  2\pi i \xi \int f(x) e^{-2\pi i x \cdot \xi} ~dx \\
 &\coloneqq 2\pi i \xi \hat f(\xi)
 .\end{align*}
 \]
 
 ## (b)
-Let $G(x) = \exp(-\pi x^2)$ and $\del_\xi$ be the operator that differentiates with respect to $\xi$. 
+Let $G(x) = e^{-\pi x^2}$ and $\del_\xi$ be the operator that differentiates with respect to $\xi$. 
 
 
 Then 
@@ -187,12 +187,12 @@ Using the following facts,
 \[
 \begin{align*}
 \del_\xi \hat G(\xi) 
-&\coloneqq \del_\xi \int G(x) \exp(-2\pi i x \cdot \xi) ~dx \\
-&= \int G(x) \del_\xi \exp(-2\pi i x \cdot \xi) ~dx \\
-&= \int G(x) (-2\pi i x)\exp(-2\pi i x \cdot \xi) ~dx \\
-&= \int (2\pi i x G(x)) \exp(-2\pi i x \cdot \xi) ~dx \\
-&= -i \int 2\pi x G(x) \exp(-2\pi i x \cdot \xi) ~dx \\
-&= -i \int \del_x G(x) \exp(-2\pi i x \cdot \xi) ~ dx \\
+&\coloneqq \del_\xi \int G(x) e^{-2\pi i x \cdot \xi} ~dx \\
+&= \int G(x) \del_\xi e^{-2\pi i x \cdot \xi} ~dx \\
+&= \int G(x) (-2\pi i x)e^{-2\pi i x \cdot \xi} ~dx \\
+&= \int (2\pi i x G(x)) e^{-2\pi i x \cdot \xi} ~dx \\
+&= -i \int 2\pi x G(x) e^{-2\pi i x \cdot \xi} ~dx \\
+&= -i \int \del_x G(x) e^{-2\pi i x \cdot \xi} ~ dx \\
 &\coloneqq -i ~\widehat{\del_x G(x)} (\xi) \\
 &= -i ~(2\pi i \xi \hat G(\xi)) \\
 &= -2\pi \xi \hat G(\xi)
