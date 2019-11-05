@@ -311,7 +311,9 @@ Moreover, if an interchange of integrals is justified, we have have
 
 which we claim is finite, so $f\in L^1$.
 
-> Justifying the interchange: we note that the integrand is non-negative, so Tonelli will apply if the integrand is measurable. But each term appearing is a continuous function on $\RR$, and all continuous functions are measurable. 
+> Justifying the interchange: we note that the integrand is non-negative, so Tonelli will apply if the integrand is measurable. But $G_t(x)$ is a continuous function on $\RR^n$ and the remaining terms are continuous on $\RR$, so
+> it suffices to show that their product is measurable on $\RR^n \cross \RR$.
+
 To see this, we note that $$t \in [0, 1] \implies e^{-\pi t^2} < 1$$, and if we take $\varepsilon < \frac 1 2$, we $2 \varepsilon - 1 < 0$ and thus $$t \in [1, \infty) \implies t^{2\varepsilon - 1} \leq 1.$$
 Thus
 \[
