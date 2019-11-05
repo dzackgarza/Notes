@@ -2509,3 +2509,5 @@ We'll use the following computation often:
 
 Definition:
 An inner product space that is *complete* with respect to $\norm{\wait}$ induced from its inner product is a *Hilbert space*.
+
+> Recall that a Banach space is a complete normed space.
