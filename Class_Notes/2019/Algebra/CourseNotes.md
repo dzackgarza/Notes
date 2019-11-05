@@ -2979,5 +2979,6 @@ Then for any $r\in R$, we have $rsu + rvt = r$, so for any given $r\in R$ we can
 
 Now suppose $tx + sy \in (st)$, then $tx + sy  = stz$. We have $su + vt = 1$, and thus $utx + usy  = ustz$ and $utx + (y-tvy) = ustz$.
 
-We can thus write $y = ustv - utx + tvy  \in (t)$. Similarly, $x\in (t)$, so $\ker \alpha = 0$.
+We can thus write $y = ustv - utx + tvy  \in (t)$. Similarly, $x\in (t)$, so $\ker \alpha = 0$. $\qed$
+
 
