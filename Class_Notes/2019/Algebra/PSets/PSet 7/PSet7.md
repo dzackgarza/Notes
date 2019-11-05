@@ -58,3 +58,13 @@ r \actson (x + IA \oplus y + IA)
 &\coloneqq (r \actson x + IA) \oplus (r\actson y + IA)
 .\end{align*}
 \]
+
+\[
+\begin{align*}
+(r + s) \actson x + IA 
+&\coloneqq (r+s)x + IA \\
+&\coloneqq rx + sx + IA \\
+&\coloneqq rx + IA \oplus sx + IA \\
+&\coloneqq (rs \actson IA) \oplus (sx \actson IA)
+.\end{align*}
+\]
