@@ -15,7 +15,7 @@ Assuming the hint, we have
 But as an immediate consequence, this yields
 \[
 \begin{align*}
-\abs{\hat f (\xi)} &= \abs{\int_{\RR^n} \left[ f(x) - f(x-\xi')right] e^{-2\pi i x\cdot \xi} ~dx} \\
+\abs{\hat f (\xi)} &= \abs{\int_{\RR^n} \left[ f(x) - f(x-\xi')\right] e^{-2\pi i x\cdot \xi} ~dx} \\
 &\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~~\abs{e^{-2\pi i x\cdot \xi}} ~dx \\
 &\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
 &\to 0
