@@ -2981,4 +2981,11 @@ Now suppose $tx + sy \in (st)$, then $tx + sy  = stz$. We have $su + vt = 1$, an
 
 We can thus write $y = ustv - utx + tvy  \in (t)$. Similarly, $x\in (t)$, so $\ker \alpha = 0$. $\qed$
 
+Theorem (Classification of Finitely Generated Modules over a PID):
 
+Let $M$ be a finitely generated $R\dash$module where $R$ is a PID. 
+Then
+
+a. $M \cong F \bigoplus_{i=1}^t R/(r_i)$ where $F$ is free of finite rank and $r_1 \divides r_2 \divides \cdots \divides r_t$.
+  The rank and list of ideals occurring is uniquely determined by $M$. 
+  The $r_i$ are referred to as the *invariant factors*.
