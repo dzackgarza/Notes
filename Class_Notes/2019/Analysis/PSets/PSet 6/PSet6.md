@@ -93,7 +93,7 @@ Let $g(x) = f(x-y)$. We then have
 
 ### (ii)
 
-Let $h(x) = \exp(2\pi i x\ cdot y) f(x)$. We then have
+Let $h(x) = e^{2\pi i x\cdot y) f(x}$. We then have
 \[
 \begin{align*}
 \hat h(\xi) &\coloneqq \int e^{2\pi i x\cdot y} f(x) e^{-2\pi i x \cdot \xi} ~dx \\ 
