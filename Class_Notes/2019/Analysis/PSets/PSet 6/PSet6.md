@@ -190,6 +190,7 @@ Using the following facts,
 &\coloneqq \del_\xi \int G(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= \int G(x) \del_\xi \exp(-2\pi i x \cdot \xi) ~dx \\
 &= \int G(x) (-2\pi i x)\exp(-2\pi i x \cdot \xi) ~dx \\
+&= \int (2\pi i x G(x)) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= -i \int 2\pi x G(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= -i \int \del_x G(x) \exp(-2\pi i x \cdot \xi) ~ dx \\
 &\coloneqq -i ~\widehat{\del_x G(x)} (\xi) \\
