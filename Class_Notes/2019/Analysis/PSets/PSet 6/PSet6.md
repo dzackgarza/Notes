@@ -314,7 +314,7 @@ which we claim is finite, so $f\in L^1$.
 > they are all measurable on $\RR^n$ and $\RR$ respectively 
 > But then taking cylinders on them all still yields measurable functions, and the product of measurable functions is measurable.
 
-To see that the norm is finite, we note that $$t \in [0, 1] \implies e^{-\pi t^2} < 1$$ and if we take $\varepsilon < \frac 1 2$, we $2 \varepsilon - 1 < 0$ and thus $$t \in [1, \infty) \implies t^{2\varepsilon - 1} \leq 1.$$
+To see that the norm is finite, we note that $$t \in [0, 1] \implies e^{-\pi t^2} < 1$$ and if we take $\varepsilon < \frac 1 2$, we have $2 \varepsilon - 1 < 0$ and thus $$t \in [1, \infty) \implies t^{2\varepsilon - 1} \leq 1.$$
 Thus
 \[
 \begin{align*}
