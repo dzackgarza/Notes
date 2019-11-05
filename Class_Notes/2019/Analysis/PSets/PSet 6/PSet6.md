@@ -46,9 +46,9 @@ Assuming an interchange of integrals is justified, we have
 > To see that this swap is justified, we'll apply Fubini-Tonelli. Note that if $f, g \in L^1(\RR^n)$, then the map $(x, y) \mapsto f(x - y)$ is measurable on $\RR^n \cross \RR^n$. 
 > Since $g$ is measurable as well, taking the cylinder on $g$ is also measurable on $\RR^n\cross \RR^n$.
 > The exponential is continuous, and thus measurable on $\RR^n$.
-> Thus the integrand is a product of measurable functions and thus measurable. In particular, $\abs{fg }$ is also measurable.
+> Thus the integrand $F(x, y)$ is a product of measurable functions and thus measurable. In particular, $\abs{F} = \abs{fg }$ is measurable, and ths computation shows that one iterated integral is finite.
 > From a previous homework question, we know that $f\in L^1 \implies \hat f$ is bounded, and thus $\hat f \hat g$ is bounded.
-> Since $\abs{fg}$ is measurable and one iterated integrable was finite, Fubini-Tonelli applies
+> Since $\abs{F}$ is measurable and one iterated integrable was finite, Fubini-Tonelli applies
 
 ## Part (b)
 
