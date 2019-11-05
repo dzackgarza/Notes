@@ -2468,4 +2468,10 @@ Note the similarities -- the first term is a rough average, the second term is a
 
 # Tuesday: November ?
 
-Upcoming
+Today: Hilbert Spaces
+
+> See notes on the webpage.
+
+An *inner product* on a vector space satisfies
+
+- $\inner{ax + by}{z} = a \inner{x}{z} + b\inner{y}{z}$.
