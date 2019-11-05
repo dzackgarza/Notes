@@ -2571,7 +2571,10 @@ If $\theset{x_i}$ are all pairwise orthogonal, then $\norm{\sum x_i}^2 = \sum \n
 
 Orthonormal Sets:
 
-A countable collection $U_n$ is *orthonormal* iff 
+A countable collection $\theset{u_n}$ is *orthonormal* iff 
 
 1. $\inner{u_j}{u_k} = 0$ for $j\neq k$, and
-2. $\inner{u_j}{u_j} = 1$ for all $j$.
+2. $\inner{u_j}{u_j} = \norma{u_j}^2 = 1$ for all $j$.
+
+Definition:
+We say $\theset{u_n}$ is an orthonormal *basis* for $H$ if $\span \theset{u_n}$ is dense in $H$.
