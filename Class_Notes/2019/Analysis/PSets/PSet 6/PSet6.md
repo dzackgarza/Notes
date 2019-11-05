@@ -152,9 +152,9 @@ We have
 &\coloneqq \int \dd{f}{x}(x) e^{-2\pi i x \cdot \xi} ~dx \\
 &= f(x)  e^{-2\pi i x \cdot \xi} \Bigr\rvert_{x = -\infty}^{x = \infty} - \int f(x) (2\pi i \xi) e^{-2\pi i x \cdot \xi} ~dx \\
 &\quad\quad\quad\text{(integrating by parts)} \\
-&= - \int f(x) (-2\pi i \xi) \exp(-2\pi i x \cdot \xi) ~dx \\
+&= - \int f(x) (-2\pi i \xi) e^{-2\pi i x \cdot \xi} ~dx \\
 &\quad\quad\quad (\text{since } f(\infty) = f(-\infty) = 0) \\
-&=  2\pi i \xi \int f(x) \exp(-2\pi i x \cdot \xi) ~dx \\
+&=  2\pi i \xi \int f(x) e^{-2\pi i x \cdot \xi} ~dx \\
 &\coloneqq 2\pi i \xi \hat f(\xi)
 .\end{align*}
 \]
