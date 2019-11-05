@@ -2915,9 +2915,13 @@ Then $S \union \theset{y}$ can not be linearly independent, so there exists $r_y
 Thus $r_y y = - \sum r_i x^i$, where $r_y \neq 0$.
 
 Since $\abs X < \infty$, let $r = \prod_{y \in X\setminus S} r_y$. 
-Then $rX = \theset{rx \suchthat x\in X} \subseteq F$.
+Then $rX = \theset{rx \suchthat x\in X} \subseteq F$, and $rM \leq F$.
 
 Now define $f: M \to M$ by $f(m) \coloneqq rm$ with the particular $r$ we've just defined.
 Then $\im f = r.M$.
 Since $M$ is torsion-free, $\ker f = (0)$. 
-Thus $M \cong rM$.
+Thus $M \cong rM \subseteq F$, making $M$ free.
+
+Theorem:
+Let $M$ be a finitely generated module over a PID $R$.
+Then $M$ can be decomposed as $M \cong M_t \oplus F$ where $M_t$ is torsion and $F$ is free of finite rank and $F \cong M/M_t$.
