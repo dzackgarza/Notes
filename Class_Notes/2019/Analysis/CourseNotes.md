@@ -2479,4 +2479,12 @@ An *inner product* on a vector space satisfies
 - $\inner{x}{y} = \overline{\inner{y}{x}}$
 - $\inner{x}{x} \in (0, \infty)$
 
+This induces a *norm*, $\norm{x} = \inner{x}{x}^{1/2}$.
+
+Proposition 1: 
+The map $x \mapsto \norm{x}$ does in fact define a norm.
+
+> The key to establishing this is the triangle inequality, since many of the other necessary properties fall out easily.
+
+
 
