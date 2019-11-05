@@ -222,13 +222,13 @@ By a direct computation. we have
 \[
 \begin{align*}
 \hat D(\xi) 
-&\coloneqq \int_{-\frac 1 2}^{\frac 1 2} 1 e^{-2\pi i x \cdot \xi} ~dx \\
-&= \int_{-\frac 1 2}^{\frac 1 2} \cos(-2\pi x\cdot \xi) + i \sin(-2\pi x\cdot \xi) ~dx \\
-&= \int_{-\frac 1 2}^{\frac 1 2} \cos(-2\pi x\cdot \xi) ~dx \\
+&\coloneqq \int_{-\frac 1 2}^{\frac 1 2} 1 e^{-2\pi i x \xi} ~dx \\
+&= \int_{-\frac 1 2}^{\frac 1 2} \cos(-2\pi x\xi) + i \sin(-2\pi x\xi) ~dx \\
+&= \int_{-\frac 1 2}^{\frac 1 2} \cos(-2\pi x\xi) ~dx \\
 &\quad\quad\quad\text{(since $\sin$ is odd and the domain is symmetric about 0)} \\
-&= 2\int_{0}^{\frac 1 2} \cos(-2\pi x\cdot \xi) ~dx \\
+&= 2\int_{0}^{\frac 1 2} \cos(-2\pi x\xi) ~dx \\
 &\quad\quad\quad\text{(since $\cos$ is even and the domain is symmetric about 0)} \\
-&= 2\left( \frac{1}{2\pi\xi} \sin(-2\pi x\cdot \xi) \Bigr\rvert_{x=0}^{x = \frac 1 2} \right) \\
+&= 2\left( \frac{1}{2\pi\xi} \sin(-2\pi x\xi) \Bigr\rvert_{x=0}^{x = \frac 1 2} \right) \\
 &= \frac{\sin(\pi \xi)}{\pi \xi} 
 .\end{align*}
 \]
