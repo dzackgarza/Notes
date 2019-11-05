@@ -310,10 +310,6 @@ Moreover, if an interchange of integrals is justified, we have have
 
 which we claim is finite, so $f\in L^1$.
 
-> Justifying the interchange: we note that the integrand $G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1}$ is non-negative, so Tonelli will apply if the integrand is measurable. But $G_t(x)$ is a continuous function on $\RR^n$ and the remaining terms are continuous on $\RR$, so
-> they are all measurable on $\RR^n$ and $\RR$ respectively 
-> But then taking cylinders on them all still yields measurable functions, and the product of measurable functions is measurable.
-
 To see that the norm is finite, we note that $$t \in [0, 1] \implies e^{-\pi t^2} < 1$$ and if we take $\varepsilon < \frac 1 2$, we have $2 \varepsilon - 1 < 0$ and thus $$t \in [1, \infty) \implies t^{2\varepsilon - 1} \leq 1.$$
 Thus
 \[
@@ -328,6 +324,11 @@ Thus
 \]
 
 where the first term is obtained by directly evaluating the integral, and the second is derived from the fact that its integral over the real line is 1 and it is an even function.
+
+> Justifying the interchange: we note that the integrand $G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1}$ is non-negative, so Tonelli will apply if the integrand is measurable. But $G_t(x)$ is a continuous function on $\RR^n$ and the remaining terms are continuous on $\RR$, so
+> they are all measurable on $\RR^n$ and $\RR$ respectively 
+> But then taking cylinders on them all still yields measurable functions, and the product of measurable functions is measurable. Since we also showed that the integrand was absolutely integrable, Tonelli applies.
+
 
 If an interchange of integrals is justified, we can compute
 
