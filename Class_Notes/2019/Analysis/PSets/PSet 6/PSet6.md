@@ -318,6 +318,7 @@ Thus
 &= \int_0^1 e^{-\pi t^2} t^{2\varepsilon - 1} ~dt
 + \int_1^\infty e^{-\pi t^2} t^{2\varepsilon - 1} ~dt \\
 & \leq \int_0^1 t^{2\varepsilon - 1} ~dt + \int_1^\infty e^{-\pi t^2} ~dt \\
+& \leq \int_0^1 t^{2\varepsilon - 1} ~dt + \int_0^\infty e^{-\pi t^2} ~dt \\
 &= \frac 1 {2\varepsilon} + \frac{1}{2}
 ,\end{align*}
 \]
