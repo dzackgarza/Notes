@@ -2908,4 +2908,11 @@ If $m\neq 0 \in M$, with $rm = 0$ iff $r=0$.
 
 So choose $S = \theset{x_1, \cdots , x_n} \subseteq X$ to be a maximal linearly independent subset of generators, so $\sum r_i x_i = 0 \implies r_i = 0 ~\forall i$.
 
-Consider the submodule $F \coloneqq \generators{x_1, \cdots, x_n} \leq M$, then $S$ is a basis for $F$.
+Consider the submodule $F \coloneqq \generators{x_1, \cdots, x_n} \leq M$, then $S$ is a basis for $F$ and thus $F$ is free.
+The claim is that $M \cong F$.
+Supposing otherwise, let $y\in X\setminus S$.
+Then $S \union \theset{y}$ can not be linearly independent, so there exists $r_y, r_i \in R$ such that $r_y y + \sum r_i x^i = 0$.
+Thus $r_y y = - \sum r_i x^i$, where $r_y \neq 0$.
+
+Since $\abs X < \infty$, let $r = \prod_{y \in X\setminus S} r_y$. 
+Then $rX = \theset{rx \suchthat x\in X} \subseteq F$.
