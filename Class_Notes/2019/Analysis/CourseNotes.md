@@ -2593,3 +2593,5 @@ Proof:
 \norm{x - \sum a_n u_n}^2 &= \norm{x}^2 - 2\mathrm{Re} \sum \inner{x}{u_n}a_n + \sum \abs{a_n}^2
 .\end{align*}
 \]
+
+> Hint: these are equalities, which are somehow simpler to show -- they necessarily involve direct computations.
