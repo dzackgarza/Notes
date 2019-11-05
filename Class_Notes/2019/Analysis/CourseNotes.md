@@ -2576,5 +2576,12 @@ A countable collection $\theset{u_n}$ is *orthonormal* iff
 1. $\inner{u_j}{u_k} = 0$ for $j\neq k$, and
 2. $\inner{u_j}{u_j} = \norma{u_j}^2 = 1$ for all $j$.
 
+> Note: we only consider countable collections; a *separable* Hilbert space always has such a basis. (?)
+
 Definition:
 We say $\theset{u_n}$ is an orthonormal *basis* for $H$ if $\span \theset{u_n}$ (i.e. *finite* linear combinations of $u_n$) is dense in $H$.
+
+Theorem:
+Let $\theset{u_n}$ be a countable orthonormal basis of $H$.
+Then for any $x\in H$, the *best approximation* to $x$ by a sum $\sum_{n=1}^N a_n u_n$.
+
