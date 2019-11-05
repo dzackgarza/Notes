@@ -188,10 +188,10 @@ Using the following facts,
 \begin{align*}
 \del_\xi \hat G(\xi) 
 &\coloneqq \del_\xi \int G(x) e^{-2\pi i x \cdot \xi} ~dx \\
-&= \int G(x) \del_\xi \exp(-2\pi i x \cdot \xi) ~dx \\
-&= \int G(x) (-2\pi i x)\exp(-2\pi i x \cdot \xi) ~dx \\
-&= \int G(x) (-2\pi i x)\exp(-2\pi i x \cdot \xi) ~dx \\
-&= -i \int 2\pi x G(x) \exp(-2\pi i x \cdot \xi) ~dx \\
+&= \int G(x) \del_\xi e^{-2\pi i x \cdot \xi} ~dx \\
+&= \int G(x) (-2\pi i x)e^{-2\pi i x \cdot \xi} ~dx \\
+&= \int G(x) (-2\pi i x)e^{-2\pi i x \cdot \xi} ~dx \\
+&= -i \int 2\pi x G(x) e^{-2\pi i x \cdot \xi} ~dx \\
 &= -i \int \del_x G(x) \exp(-2\pi i x \cdot \xi) ~ dx \\
 &\coloneqq -i ~\widehat{\del_x G(x)} (\xi) \\
 &= -i ~(2\pi i \xi \hat G(\xi)) \\
