@@ -2916,3 +2916,7 @@ Thus $r_y y = - \sum r_i x^i$, where $r_y \neq 0$.
 
 Since $\abs X < \infty$, let $r = \prod_{y \in X\setminus S} r_y$. 
 Then $rX = \theset{rx \suchthat x\in X} \subseteq F$.
+
+Now define $f: M \to M$ by $f(m) \coloneqq rm$ with the particular $r$ we've just defined.
+Then $\im f = r.M$.
+Since $M$ is torsion-free, $\ker f = (0)$.
