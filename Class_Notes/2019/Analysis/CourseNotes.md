@@ -2616,4 +2616,6 @@ The map $x \mapsvia{\hat} \inner{x}{u_n} \coloneqq \hat x(n)$ maps $H$ onto $\el
 If $\theset{u_n}^\infty$ is orthonormal in $H$ and $\theset{a_n}^\infty \in \ell^2(\NN)$, then there exists an $x\in H$ such that $\inner{x}{u_n} = a_n$ for all $n\in N$.
 Moreover, $x$ can be chosen such that $\norm{x} = \sqrt{\sum \abs{a_n}^2}$.
 
-> Note: this is not a bijection, there may not be a unique $x$.
+> Note: this is not a bijection, there may not be a unique $x$, and $a_n$ are referred to as the Fourier coefficient.
+> Also note that if in fact $a_n = 0$ for all $n$ implies $x=0$, the set $\theset{u_n}$ is said to be *complete*. 
+> This turns out to be equivalent to $\theset{u_n}$ being a basis.
