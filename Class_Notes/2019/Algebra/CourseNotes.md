@@ -2680,7 +2680,6 @@ Lemma (Short Five):
 Let $R$ be a ring, then if we have the following diagram:
 
 where
-<!-- Todo -->
 
 1. $\alpha, \gamma$ mono implies $\beta$ is mono.
 2. $\alpha, \gamma$ epi implies $\beta$ is too.
