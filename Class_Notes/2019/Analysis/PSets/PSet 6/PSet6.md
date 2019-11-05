@@ -32,8 +32,8 @@ It thus only remains to show that the hint holds, and that $\xi' \to 0$ as $\xi 
 Assuming an interchange of integrals is justified, we have
 \[
 \begin{align*}
-\widehat(f\ast g)( \xi ) &\coloneqq \int \int f(x-y) ~g(y)~ e^{-2\pi x \cdot \xi} ~dy~dx \\
-&=_? \int \int f(x-y) ~g(y)~ e^{-2\pi x \cdot \xi} ~dx~dy \\
+\widehat(f\ast g)( \xi ) &\coloneqq \int \int f(x-y) g(y)~ e^{-2\pi x \cdot \xi} ~dy~dx \\
+&=_? \int \int f(x-y) g(y)~ e^{-2\pi x \cdot \xi} ~dx~dy \\
 &= \int \int f(t) e^{-2\pi i (x-y) \cdot \xi} ~g(y) ~e^{-2\pi i y \cdot \xi} ~dx ~dy \\
 &\quad\quad (t = x-y, ~dt = ~dx) \\
 &= \int \int f(t) \exp(-2\pi i t \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi) ~dt~dy \\
