@@ -2590,8 +2590,13 @@ Then for any $x\in H$, the *best approximation* to $x$ by a sum $\sum_{n=1}^N a_
 Proof:
 \[
 \begin{align*}
-\norm{x - \sum a_n u_n}^2 &= \norm{x}^2 - 2\mathrm{Re} \sum \inner{x}{u_n}a_n + \sum \abs{a_n}^2
-.\end{align*}
+\norm{x - \sum a_n u_n}^2 
+&= \norm{x}^2 - 2\mathrm{Re} \sum \inner{x}{u_n}a_n + \sum \abs{a_n}^2 \\
+&= \norm{x}^2 - \sum \abs{\inner{x}{u_n}}^2 + \sum\left( \abs{\inner{x}{u_n}}^2 - 2\mathrm{Re}\inner{x}{u_n}a_n + \abs{a_n}^2  \right) \\
+&= \norm{x}^2 - \sum \abs{\inner{x}{u_n}}^2 + \abs{\inner{x}{u_n} - a_n  }^2 
+&\geq 0
+,\end{align*}
 \]
+where equality is attained iff $a_n = \inner{x}{u_n} = a_n$.
 
 > Hint: these are equalities, which are somehow simpler to show -- they necessarily involve direct computations.
