@@ -70,7 +70,8 @@ Suppose that there exists some $I \in L^1$ such that $f\ast I = f$.
 Then $\widehat{f \ast I} = \hat f$ by the lemma, so $\hat f ~\hat I = \hat f$ by the above result.
 
 But this says that $\hat f(\xi) \hat I(\xi) = \hat f(\xi)$ almost everywhere, and thus $\hat I(\xi) = 1$ almost everywhere.
-Then $\lim_{\abs \xi \to \infty} \hat I (\xi) \neq 0$, which by Problem 1 shows that $I$ can not be in $L^1$, a contradiction.
+Then $$\lim_{\abs \xi \to \infty} \hat I (\xi) \neq 0,$$ 
+which by Problem 1 shows that $I$ can not be in $L^1$, a contradiction.
 
 # Problem 3
 
