@@ -2565,3 +2565,6 @@ $$
 $$
 
 In this situation, we say $x,y$ are orthogonal.
+
+Corollary: 
+If $\theset{x_i}$ are all pairwise orthogonal, then $\norm{\sum x_i}^2 = \sum \norm{x_i}^2$.
