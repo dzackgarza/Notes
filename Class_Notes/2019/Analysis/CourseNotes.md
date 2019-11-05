@@ -2519,3 +2519,13 @@ Examples:
   Note that this is finite by AMGM, since $\sum x_i y_i \leq \frac 1 2 (\sum x_i + \sum y_i) < \infty$ by assumption.
 - $L^2(\RR^n)$ with $\inner{f}{g} = \int f \overline{g}$.
   This is also finite because $\abs{f\overline g} \leq \frac 1 2 (\int f + \int g)$.
+
+Proof of Schwarz Inequality:
+
+- If $x= \lambda y$ for some $\lambda \in \CC$, we have equality since $\inner{x}{y} = \inner{\lambda y}{y} = \abs{\lambda} \norm{y}^2 = \norm{x}\norm{y}$.
+- So we can assume $x-\lambda y \neq 0$ for *any* $\lambda \in CC$, so $\inner{x-\lambda y} {x-\lambda y} > 0$.
+  This equals $\norm{x}^2 - 2\overline{\lambda} \mathrm{Re}\inner{x}{y} + \abs{\lambda^2} \norm{y}$.
+  Now let $\lambda = tu$ where $t\in \RR$ and $u =\inner{x}{y} / \abs{\inner{x}{y}}$.
+  Then we get $0 < \norm{x}^2 - 2t\abs{\inner{x}{y}} + t^2 \norm{y}^2$
+  But this is quadratic in $t$ and doesn't have a real root, so its discriminant must be negative.
+  Thus $4\abs{\inner{x}{y}}^2 - 4\norm{y}^2 \norm{x}^2$, which yields Cauchy-Schwarz.
