@@ -2577,4 +2577,4 @@ A countable collection $\theset{u_n}$ is *orthonormal* iff
 2. $\inner{u_j}{u_j} = \norma{u_j}^2 = 1$ for all $j$.
 
 Definition:
-We say $\theset{u_n}$ is an orthonormal *basis* for $H$ if $\span \theset{u_n}$ is dense in $H$.
+We say $\theset{u_n}$ is an orthonormal *basis* for $H$ if $\span \theset{u_n}$ (i.e. *finite* linear combinations of $u_n$) is dense in $H$.
