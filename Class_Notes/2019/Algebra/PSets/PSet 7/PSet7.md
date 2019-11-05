@@ -9,7 +9,7 @@ title: Homework 7
 
 In order for $IS$ to be a submodule of $A$, we need to show the following implication:
 $$
-x\in IS,~a\in A \implies xa \in IS.
+x\in IS,~a\in A \implies xa, ax \in IS.
 $$
 
 Suppose $x\in IS$.
@@ -36,4 +36,5 @@ ax &= a \left( \sum_{i=1}^n r_i a_i \right)\\
 \end{align*}
 \]
 
+and so $ax \in IS$ as well.
 
