@@ -2601,3 +2601,19 @@ where equality is attained iff $a_n = \inner{x}{u_n} = a_n$.
 So this is the best approximation.
 
 > Hint: the pieces that are equalities are somehow easier to show -- they necessarily involve direct computations.
+
+But then
+$$
+0 \leq \norm{x - \sum \inner{x}{u_n} u_n}^2 = \norm{x}^2 - \sum \abs{\inner{x}{u_n}}^2,
+$$
+
+so $\sum \abs{\inner{x}{u_n}}^2 \leq \norm{x}^2$ holds for every $N$, and thus for the infinite sum, which is **Bessel's inequality**.
+
+
+Theorem (Riesz-Fischer):
+
+The map $x \mapsvia{\hat} \inner{x}{u_n} \coloneqq \hat x(n)$ maps $H$ onto $\ell^2$.
+If $\theset{u_n}^\infty$ is orthonormal in $H$ and $\theset{a_n}^\infty \in \ell^2(\NN)$, then there exists an $x\in H$ such that $\inner{x}{u_n} = a_n$ for all $n\in N$.
+Moreover, $x$ can be chosen such that $\norm{x} = \sqrt{\sum \abs{a_n}^2}$.
+
+> Note: this is not a bijection, there may not be a unique $x$.
