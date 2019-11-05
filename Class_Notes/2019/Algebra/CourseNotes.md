@@ -992,3 +992,1972 @@ Note that $b^2 \in H = \generators a$.
 If $b^2=a, a^3$ then $b$ will have order 8, making $G$ cyclic. So $b^2 = 1, a^2$ (these are both valid options!)
 
 Since $H \normal G$, we have $b\generators a b\inv = \generators a$, and since $a$ has order 4, so does $bab\inv$. So $bab\inv = a, a^3$, but $a$ is not an option because this would make $G$ abelian.
+
+So we have two options:
+\[
+\begin{align*}
+G_1 = \generators{a, b \mid a^4 = 1, b^2=1, bab\inv = a^3} \\
+G_2 = \generators{a, b \mid a^4 = 1, b^2 = a^2, bab\inv = a^3}
+.\end{align*}
+\]
+
+Exercise: prove $G_1 \not\cong G_2$.
+
+Now to realize these groups:
+
+- $G_1$ is the group of symmetries of the square, where $a = (1~2~3~4), b=(1~3)$.
+
+- $G_2 \cong Q$, the quaternions, where $Q = \theset{\pm 1,\pm i, \pm j, \pm k}$, and there are relations (add picture here).
+
+## Some Nice Facts
+
+- If and $\phi: G\ to G'$, then
+  - $N \normal G \implies N \normal \phi(G)$, although not necessarily in $G$.
+  - $N' \normal G' \implies \phi\inv(N') \normal G$
+
+**Definition**: 
+A *maximal normal subgroup* is a normal subgroup $M \normal G$ that is properly contained in $G$, and if $M \leq N \normal G$ (where $N$ is proper) then $M = N$.
+
+Theorem: $M$ is a maximal normal subgroup of $G$ iff $G/M$ is simple.
+
+## Simple Groups
+
+**Definition**: 
+A group $G$ is simple iff $N \normal G \implies N = \theset e, G$.
+
+Note that if an abelian group has *any* subgroups, then it is not simple, so $G = \ZZ_p$ is the only simple abelian group. Another example of a simple group is $A_n$ for $n\geq 5$.
+
+Theorem (Feit-Thompson, 1964):
+Every finite nonabelian simple group has even order.
+
+> Note that this is a consequence of the "odd order theorem".
+
+## Series of Groups
+
+A composition series is a descending series of pairwise normal subgroups such that each successive quotient is simple:
+\[
+\begin{align*}
+G_0 \normal G_1 \normal G_2 \cdots \normal \theset e \\
+G_i/G_{i+1}~\text{ simple}
+.\end{align*}
+\]
+Example:
+\[
+\begin{align*}
+\ZZ_9 \normal \ZZ_3 \normal \theset e \\
+\ZZ_9 / \ZZ_3 = \ZZ_3,\\
+\ZZ_3 / \theset e = \ZZ_3
+.\end{align*}
+\]
+
+Example:
+\[
+\begin{align*}
+\ZZ_6 \normal \ZZ_3 \normal \theset e \\
+\ZZ_6 / \ZZ_3 = \ZZ_2 \\
+\ZZ_2 / \theset e = \ZZ_2
+.\end{align*}
+\]
+
+but also
+\[
+\begin{align*}
+\ZZ_6 \normal \ZZ_2 \normal \theset e \\
+\ZZ_6 / \ZZ_2 = \ZZ_3 \\
+\ZZ_3 / \theset e = \ZZ_3
+.\end{align*}
+\]
+
+**Theorem (Jordan-Holder):**
+Any two composition series are "isomorphic" in the sense that the same quotients appear in both series, up to a permutation.
+
+**Definition:**
+A group is *solvable* iff it has a composition series where all factors are abelian.
+
+Exercise: Show that any abelian group is solvable.
+
+Example: $S_n$ is *not* solvable for $n\geq 5$, since
+
+\[
+\begin{align*}
+S_n &\normal A_n \normal \theset e \\
+S_n / A_n &= \ZZ_2~\text{simple} \\
+A_n / \theset{e} &= A_n~\text{simple} \iff n\geq 5
+.\end{align*}
+\]
+
+Example:
+\[
+\begin{align*}
+S_4 &\normal A_4 \normal G \normal \theset e \quad \text{where } \abs H = 4 \\
+S_4 / A_4 &= \ZZ_2 \\
+A_4 / H &= \ZZ_3 \\
+H / \theset e &= \theset{a, b}?
+.\end{align*}
+\]
+
+# Lecture 8: Series of Groups
+
+Recall that a simple group has no nontrivial normal subgroups.
+
+Example:
+\[
+\begin{align*}
+\ZZ_6 \normal \generators{[3]} \normal \generators{[0]} \\
+\ZZ_6 / \generators{[3]} = \ZZ_3 \\
+\generators{[3]} / \generators{[0]} = \ZZ_2
+.\end{align*}
+\]
+
+**Definition:**
+A *normal series* (or an *invariant series*) of a group $G$ is a finite sequence $H_i \leq G$ such that $H_i \normal H_{i+1}$ and $H_n = G$, so we obtain
+$$
+H_1 \normal H_2 \normal \cdots \normal H_n = G
+.$$
+
+**Definition:**
+A normal series $\theset{K_i}$ is a *refinement* of $\theset{H_i}$ if $K_i \leq H_i$ for each $i$.
+
+**Definition:**
+We say two normal series of the same group $G$ are isomorphic if there is a bijection from
+$$
+\theset{H_i / H_{i+1}} \iff \theset{K_j / K_{j+1}}
+$$
+
+Theorem (Schreier):
+Two normal series of $G$ has isomorphic refinements.
+
+**Definition:**
+A normal series of $G$ is a *composition series* iff all of the successive quotients $H_i / H_{i+1}$ are simple.
+
+Note that every finite group has a composition series, because any group as a maximal normal subgroup.
+
+Theorem (Jordan-Holder):
+Any two composition series of a group $G$ are isomorphic.
+
+Proof:
+Apply Schreier's refinement theorem.
+
+Example:
+Consider $S_n \normal A_n \normal \theset e$. This is a composition series, with quotients $Z_2, A_n$, which are both simple.
+
+**Definition:**
+A group $G$ is *solvable* iff it has a composition series in which all of the successive quotients are abelian.
+
+Examples:
+
+- Any abelian group is solvable.
+- $S_n$ is not solvable for $n\geq 5$, since $A_n$ is not abelian for $n\geq 5$.(?)
+
+Recall Feit-Thompson:
+Any nonabelian simple group is of *even* order.
+
+Consequence:
+Every group of *odd* order is solvable.
+
+## The Commutator Subgroup
+
+Let $G$ be a group, and let $[G, G] \leq G$ be the subgroup of $G$ generated by elements $aba\inv b\inv$, i.e. every element is a *product* of commutators. So $[G, G]$ is called *the commutator subgroup*.
+
+**Theorem:**
+Let $G$ be a group, then $[G,G] \normal G$ and $G/[G, G]$ is abelian. Also, $[G,G]$ is the smallest normal subgroup such that the quotient is abelian, i.e. if $H \normal G$ and $G/N$ is abelian then $[G, G] \leq N$.
+
+Proof:
+
+1. $[G, G]$ is a subgroup.
+  - Closure is clear from definition as generators.
+  - The identity is $e = e e\inv e e\inv$.
+  - So it suffices to show that $(aba\inv b\inv)\inv \in [G, G]$, but this is given by $bab\inv a\inv$ which is of the correct form.
+
+2. $[G, G]$ is normal
+
+Let $x_i \in [G, G]$, then we want to show $g \prod x_i g\inv \in [G, G]$, but this reduces to just showing $gx g\inv \in [G, G]$ for a single $x\in [G, G]$. Then,
+\[
+\begin{align*}
+g(aba\inv b\inv ) g\inv &= (g\inv aba\inv) e (b\inv g) \\
+&= (g\inv aba\inv)(gb\inv b g\inv)(b\inv g) \\
+&= [(g\inv a)b (g\inv a)\inv b\inv] [bg\inv b\inv g] \\
+&\in [G, G]
+.\end{align*}
+\]
+
+3. The quotient is abelian
+
+Let $H = [G, G]$. We have $aH bH = (ab) H$ and $bH aH = (ba)H$. But $abH = baH$ because $(ba)\inv(ab) = a\inv b\inv a b \in [G, G]$.
+
+4. Suppose $G/N$ is abelian. Let $aba\inv b\inv \in [G, G]$.
+Then $abN = baN$, so $aba\inv b\inv \in N$ and thus $[G, G] \subseteq N$.
+
+## Free Abelian Groups
+
+Example: $\ZZ \cross \ZZ$.
+
+Take $e_1 = (1, 0), e_2 = (0, 1)$. Then $(x,y) \in \ZZ^2$ can be written $x(1,0) + y(0, 1)$, so $\theset{e_i}$ behaves like a basis for a vector space.
+
+**Definition:**
+A group $G$ is *free abelian* if there is a subset $X\subseteq G$ such that every $g \in G$ can be represented as
+$$
+g = \sum_{i=1}^r n_i x_i,\quad x_i \in X,~n_i \in \ZZ.
+$$
+
+Equivalently, $X$ generates $G$, so $G = \generators{X}$, and if $\sum n_i x_i = 0 \implies n_i = 0~~\forall i$.
+
+If this is the case, we say $X$ is a *basis* for $G$.
+
+Examples:
+
+- $\ZZ^n$ is free abelian
+- $\ZZ_n$ is not free abelian, since $n [1] = 0$ and $n\neq 0$. In general, you can replace $\ZZ_n$ by any finite group and replace $n$ with the order of the group.
+
+**Theorem:**
+If $G$ is free abelian on $X$ where $\abs X = r$, then $G \cong \ZZ^r$.
+
+**Theorem:**
+If $X = \theset{x_i}_{i=1}^r$, then a basis for $\ZZ^r$ is given by
+$$
+\theset{(1, 0, 0, \cdots), (0, 1, 0, \cdots), \cdots, (0, \cdots, 0, 1)} \coloneqq \theset{e_1, e_2, \cdots, e_r}
+$$
+Proof:
+Use the map $\phi: G \to \ZZ^r$ where $x_i \mapsto e_i$, and check that this is an isomorphism of groups.
+
+**Theorem:**
+Let $G$ be free abelian with two bases $X, X'$, then $\abs X = \abs X'$.
+
+**Definition:**
+Let $G$ be free abelian, then if $X$ is a basis then $\abs X$ is called the *rank* of of $G$.
+
+# Another Lecture: On to Rings
+
+Recall the definition of a ring:
+A ring $(R, +, \times)$ is a set with binary operations such that
+
+1. $(R, +)$ is a group,
+2. $(R, \times)$ is a monoid.
+
+Examples:
+$R = \ZZ, \QQ, \RR, \CC$, or the ring of $n\times n$ matrices, or $\ZZ_n$.
+
+A ring is *commutative* iff $ab = ba$ for every $a,b\in R$, and *a ring with unity* is a ring such that $\exists 1 \in R$ such that $a1 = 1a = a$. Exercise: show that $1$ is unique if it exists.
+
+In a ring with unity, an element $a\in R$ is a *unit* iff $\exists b\in R$ such that $ab = ba = 1$.
+
+A ring with unity is a *division ring* iff every nonzero element is a unit. A division ring is said to be a *field* iff it is commutative.
+
+Suppose that $a,b \neq 0$ with $ab = 0$. Then $a,b$ are said to be *zero divisors*. A commutative ring without zero divisors is an *integral domain*.
+
+In $\ZZ_n$, an element $a$ is a zero divisor iff $\gcd(a, n) \neq 1$.
+
+Fact:
+In a ring with no zero divisors, we have $ab = ac,~a\neq 0 \implies b=c$.
+
+**Theorem:**
+Every field is an integral domain.
+
+Proof:
+Let $R$ be a field. If $ab=0$ and $a\neq 0$, then $a\inv$ exists and so $b=0$.
+
+**Theorem:**
+Any finite integral domain is a field.
+
+Proof:
+(Similar to a pigeonhole principle) Let $D = \theset{0, 1, a_1, \cdots, a_n}$ be an integral domain. Let $a_j \neq 0, 1$ be arbitrary, and consider $a_j D = \theset{a_j x \suchthat x\in D\setminus\theset{0}}$.
+
+Then $a_j D = D\setminus\theset{0}$ as sets. But
+$$
+a_j D = \theset{a_j, a_j a_1, a_j a_2, \cdots, a_j a_n}.
+$$
+
+Since there are no zero divisors, $0$ does not occur among these elements, so some $a_j a_k$ must be equal to 1. $\qed$.
+
+## Extension Fields
+
+If $F \leq E$ are fields, then $E$ is a vector space over $F$, for which the dimension turns out to be important.
+
+We can consider
+$$
+\aut(E/F) = \theset{\sigma: E \selfmap \suchthat f\in F \implies \sigma(f) = f},
+$$
+i.e. the field automorphisms of $E$ that fix $F$.
+
+Examples of field extensions:
+
+- $\CC \to \RR \to \QQ$
+
+Let $F(x)$ be the smallest field containing both $F$ and $x$. Given this, we can form a diagram
+![Image](figures/2019-09-10-10:06.png)
+
+Let $F[x]$ the polynomials with coefficents in $F$.
+
+**Theorem:**
+Let $F$ be a field and $f(x) \in F[x]$ be a non-constant polynomial. Then there exists an $F \to E$ and some $\alpha \in E$ such that $f(\alpha) = 0$.
+
+Proof:
+Since $F[x]$ is a unique factorization domain, given $f(x)$ we can find an irreducible $p(x)$ such that $f(x) = p(x) g(x)$ for some $g(x)$.
+So consider $E = F[x] / (p)$.
+Since $p$ is irreducible, $(p)$ is a prime ideal, but in $F[x]$ prime ideals are maximal and so $E$ is a field.
+
+Then define $\psi: F \to E$ by $\psi(a) = a + (p)$.
+Then $\psi$ is a homomorphism of rings: supposing $\psi(\alpha) = 0$, we must have $\alpha \in (p)$.
+But all such elements are multiples of a polynomial of degree $d \geq 1$, and $\alpha$ is a scalar, so this can only happen if $\alpha = 0$.
+
+Then consider $\alpha = x + (p)$; the claim is that $p(\alpha) = 0$ and thus $f(\alpha) = 0$. We can compute
+\[
+\begin{align*}
+p(x + (p)) &= a_0 + a_1(x + (p)) + \cdots + a_n(x + (p))^n \\
+&= p(x) + (p) = 0
+.\end{align*}
+\]
+Example:
+$\RR[x] / (x^2 + 1) \to \RR \cong \CC$ as fields.
+
+## Algebraic and Transcendental Elements
+
+An element $\alpha \in E$ with $F \to E$ is *algebraic* over $F$ iff there is a nonzero polynomial in $f \in F[x]$ such that $f(\alpha) = 0$. Otherwise, $\alpha$ is said to be *transcendental*.
+
+Examples:
+
+- $\sqrt 2 \in \RR \from \QQ$ is algebraic, since it satisfies $x^2 - 2$.
+- $\sqrt{-1} \in \CC \from \QQ$ is algebraic, since it satisfies $x^2 + 1$.
+- $\pi, e \in \RR \from \QQ$ are transcendental (this takes some work to show).
+
+An *algebraic number* $\alpha \in \CC$ is an element that is algebraic over $\QQ$.
+
+Fact:
+The set of algebraic numbers forms a field.
+
+**Theorem:**
+Let $F \leq E$ be a field extension and $\alpha \in E$. Define $\phi_\alpha: F[x] \to E$ by $\phi_\alpha(f) = f(\alpha)$; this is a homomorphism of rings and referred to as the *evaluation homomorphism*. Then $\phi_\alpha$ is injective iff $\alpha$ is transcendental.
+
+> Note: otherwise, this map will have a kernel, which will be generated by a single element that is referred to as the *minimal polynomial* of $\alpha$.
+
+## Minimal Polynomial
+
+**Theorem:**
+Let $F\leq E$ be a field extension and $\alpha \in E$ algebraic over $F$. Then
+
+1. There exists a polynomial $p\in F[x]$ of minimal degree such that $p(\alpha) = 0$.
+2. $p$ is irreducible.
+3. $p$ is unique up to a constant.
+
+Proof:
+
+Since $\alpha$ is algebraic, $f(\alpha) = 0$. So write $f$ in terms of its irreducible factors, so $f(x) = \prod p_j(x)$ with each $p_j$ irreducible.
+Then $p_i(\alpha) = 0$ for some $i$ because we are in a field and thus don't have zero divisors.
+
+So there exists at least one $p_i(x)$ such that $p(\alpha) = 0$, so let $q$ be one such polynomial of minimal degree.
+
+Suppose that $\deg q < \deg p_i$.
+Using the Euclidean algorithm, we can write $p(x) = q(x) c(x) + r(x)$ for some $c$, and some $r$ where $\deg r < \deg q$.
+But then $0 = p(\alpha) = q(\alpha)c(\alpha) + r(\alpha)$, but if $q(\alpha) = 0$, then $r(\alpha) = 0$. So $r(x)$ is identically zero, and so $p(x) - q(x) = c(x) = c$, a constant. $\qed$
+
+**Definition:**
+Let $\alpha \in E$ be algebraic over $F$, then the unique monic polynomial $p\in F[x]$ of minimal degree such that $p(\alpha) = 0$ is the *minimal polynomial* of $\alpha$.
+
+Example:
+$\sqrt{1 + \sqrt 2}$ has minimal polynomial $x^4 + x^2 - 1$, which can be found by raising it to the 2nd and 4th power and finding a linear combination that is constant.
+
+# Lecture ?
+
+## Vector Spaces
+
+**Definition:**
+Let $\FF$ be a field. A *vector space* is an abelian group with a map $\FF \cross V \to V$ such that
+
+- $\alpha(\beta \vector v) = (\alpha \beta) \vector v$
+- $(\alpha + \beta)\vector v = \alpha \vector v + \beta \vector v$,
+- $\alpha(\vector v + \vector w) = \alpha \vector v + \alpha \vector w$
+- $1\vector v = \vector v$
+
+Examples:
+$\RR^n, \CC^n , F[x] = \mathrm{span}(\theset{1, x, x^2, \cdots}), L^2(\RR)$
+
+**Definition:**
+Let $V$ be a vector space over $\FF$; then a set $W \subseteq V$ *spans* $V$ iff for every $\vector v\in V$, one can write $\vector v = \sum \alpha_i \vector w_i$ where $\alpha_i \in \FF,~\vector w_i \in W$.
+
+**Definition:**
+$V$ is *finite dimensional* if there exists a finite spanning set.
+
+**Definition:**
+A set $W \subseteq V$ is *linearly independent* if $\sum \alpha_i \vector w_i = \vector 0 \implies \alpha_i = 0$ for all $i$.
+
+**Definition:**
+A *basis* for $V$ is a set $W \subseteq V$ such that
+
+1. $W$ is linearly independent, and
+2. $W$ spans $V$.
+
+> Note a basis is a midpoint between a spanning set and a linearly independent set. We can add vectors to a set until it is spanning, and we can throw out vectors until the remaining set is linearly independent.
+
+**Theorem:**
+If $W$ spans $V$ then some subset of $W$ spans $V$.
+
+**Theorem:**
+If $W$ is a set of linearly independent vectors, then some superset of $W$ is a basis for $V$.
+
+Fact:
+Any finite-dimensional vector spaces has a finite basis.
+
+**Theorem:**
+If $W$ is a linearly independent set and $B$ is a basis, then $\abs{B} \leq \abs W$.
+
+Corollary:
+Any two bases have the same number of elements.
+
+> So we define the dimension of $V$ to be the number of elements in any basis, which is a unique number.
+
+## Algebraic Extensions
+
+**Definition:**
+$E \geq F$ is an algebraic extension iff every $\alpha \in E$ is algebraic of $F$.
+
+**Definition:**
+$E \geq F$ is a *finite extension* iff $E$ is finite-dimensional as an $F\dash$vector space.
+
+Notation: 
+$[E: F] = \dim_F E$, the dimension of $E$ as an $F\dash$vector space.
+
+Observation: 
+If $E = F(\alpha)$ where $\alpha$ is algebraic over $F$, then $E$ is an algebraic extension of $F$.
+
+Observation:
+If $E\geq F$ and $[E: F] = 1$, then $E=F$.
+
+**Theorem:**
+If $E \geq F$ is a finite extension, then $E$ is algebraic over $F$.
+
+Proof:
+Let $\beta \in E$. 
+Then the set $\theset{1, \beta, \beta^2, \cdots}$ is not linearly independent.
+So $\sum_{i=0}^n c_i \beta^i = 0$ for some $n$ and some $c_i$.
+But then $\beta$ is algebraic.
+
+> Note that the converse is not true in general. Example: Let $E = \overline \RR$ be the algebraic numbers. Then $E \geq \QQ$ is algebraic, but $[E : \QQ] = \infty$.
+
+**Theorem:**
+Let $K \geq E \geq F$, then $[K: F] = [K: E] [E: F]$.
+
+Proof:
+Let $\theset{\alpha_i}^m$ be a basis for $E/F$
+Let $\theset{\beta_i}^n$ be a basis for $K / E$.
+Then the RHS is $mn$.
+
+Claim:
+$\theset{\alpha_i \beta_j}^{m, n}$ is a basis for $K/ F$.
+
+Linear independence:
+\[
+\begin{align*}
+\sum_{i, j} c_{ij} \alpha _i \beta_j &= 0 \\
+\implies \sum_j \sum_i c_{ij} \alpha_i \beta_j &= 0 \\
+\implies \sum_i c_{ij} \alpha_i &= 0 \quad \text{since $\beta$ form a basis} \\
+\implies \sum c_{ij} &= 0 \quad \text{since $\alpha$ form a basis}
+.\end{align*}
+
+\]
+
+**Exercise**:
+Show this is also a spanning set.
+
+
+Corollary:
+Let $E_r \geq E_{r-1} \geq \cdots \geq E_1 \geq F$, then $[E_r: F]= [E_r: E_{r-1}][E_{r-1}:E_{r-2}] \cdots [E_2: E_1][E_1 : F]$.
+
+Observation:
+If $\alpha \in E \geq F$ and $\alpha$ is algebraic over $F$ where $E \geq F(\alpha) \geq F$, then $F(\alpha)$ is algebraic (since $[F(\alpha): F] < \infty$) and $[F(\alpha): F]$ is the degree of the minimal polynomial of $\alpha$ over $F$. 
+
+Corollary:
+Let $E = F(\alpha) \geq F$ where $\alpha$ is algebraic. Suppose $\beta \in F(\alpha)$. Then $\deg \min(\beta, F) \divides \deg \min(\alpha, F)$.
+
+Proof:
+Since $F(\alpha) \geq F(\beta) \geq F$, we have $[F(\alpha): F] = [F(\alpha): F(\beta)][F(\beta): F]$.
+But just note that $[F(\alpha): F] = \deg \min (\alpha, F)$ and $[F(\beta): F] = \deg \min (\beta, F)$. 
+
+**Theorem:**
+Let $E \geq F$ be algebraic, then $[E: F] < \infty \iff E = F(\alpha_1, \cdots, \alpha_n)$ for some $\alpha_n \in E$.
+
+## Algebraic Closures
+
+**Definition:**
+Let $E \geq F$, and define $\overline{F_E} = \theset{\alpha \in E \suchthat \alpha \text{ is algebraic over } F}$ to be *the algebraic closure of $F$ in $E$*.
+
+Example:
+$\QQ \leq \CC$, and $\overline \QQ = \overline {\RR_\CC}$ the algebraic numbers (?).
+
+Claim: 
+$\overline{F_E}$ is a field.
+
+Proof:G
+Let $\alpha, \beta \in \overline(F_E)$, so $[F(\alpha, \beta): F] < \infty$. 
+Then $F(\alpha, \beta) \subseteq \overline{F_E}$ is algebraic over $F$ and $\alpha\pm \beta, \alpha\beta, \frac \alpha \beta \in F(\alpha, \beta)$.
+So $\overline(F_E)$ is a subfield of $E$.
+
+**Definition:**
+A field $F$ is *algebraically closed* iff every non-constant polynomial in $F[x]$ is a root in $F$.
+Equivalently, every polynomial in $F[x]$ can be factored into linear factors.
+
+If $F$ is algebraically closed and $E\geq F$ and $E$ is algebraic, then $E=F$.
+
+
+**Theorem** (Fundamental Theorem of Algebra):
+$\CC$ is an algebraically closed field.
+
+Proof: 
+Liouville's theorem: A bounded entire function $f: \CC \selfmap$ is constant.
+Bounded means $\exists M \suchthat z\in \CC \implies \abs{f(z)} \leq M$.
+Entire means analytic everywhere.
+
+Let $f(z) \in \CC[z]$ be a polynomial without a zero which is non-constant.
+
+Then $\frac 1 {f(z)}: \CC \selfmap$ is analytic and bounded, and thus constant, and contradiction.
+
+## Geometric Constructions:
+
+Given the tools of a straightedge and compass, what real numbers can be constructed? Let $C$ be the set of such numbers.
+
+**Theorem:**
+$C$ is a subfield of $\RR$.
+
+# Tuesday Lecture
+
+Today: geometric constructions.
+
+**Definition:**
+A real number $\alpha$ is said to be *constructible* iff $\abs \alpha$ is constructible using a ruler and compass. 
+Let $\mathcal C$ be the set of constructible numbers.
+
+Note that $\pm 1$ is constructible, and thus so is $\ZZ$.
+
+**Theorem:**
+$\mathcal C$ is a field.
+
+Proof:
+It suffices to construct $\alpha \pm \beta, \alpha\beta, \alpha/\beta$.
+
+Showing $pm$ and inverses is relatively easy. Showing closure under products:
+
+[Image](figures/2019-09-17-09:48.png)
+
+Corollary: $\QQ \leq \mathcal C$ is a subfield.
+
+Can we get all of $\RR$ with $\mathcal C$? The operations we have are
+
+1. Intersect 2 lines (gives nothing new)
+2. Intersect a line and a circle
+3. Intersect 2 circles
+
+(3) reduces to (2) by subtracting two equations of a circle ($x^2 + y^2 + ax + by + c$) to get an equation of a line.
+(2) reduces to solving quadratic equations.
+
+**Theorem:**
+$\mathcal C$ contains precisely the real numbers obtained by adjoining finitely many square roots of elements in $\QQ$.
+
+Proof:
+Need to show that $\alpha \in \mathcal C \implies \sqrt \alpha \in \mathcal C$.
+
+- Bisect $PA$ to get $B$.
+- Draw a circle centered at $B$.
+- Let $Q$ be intersection of circle with $y$ axis and $O$ be the origin.
+- Note triangles 1 and 2 are similar, so $\frac{OQ}{OA} = \frac{PO}{OQ} \implies (OQ)^2 = (PO)(OA) = 1\alpha$. $\qed$.
+
+
+Corollary: Let $\gamma \in \mathcal{C}$ be constructible. Then there exist $\theset{\alpha_i}_{i=1}^n$ such that $\gamma = \prod \alpha_i$, $[\QQ(\alpha_1, \cdots, \alpha_j): \QQ(\alpha_1, \cdots, \alpha_{j-1})] = 2$, and $[\QQ(\alpha): \QQ] = 2^d$ for some $d$.
+
+Applications:
+
+Doubling the cube:
+Given a cube of size 1, can we construct one of size 2?
+To do this, we'd need $x^3 = 2$.
+But note that $\min(\sqrt[3]{2}, \QQ) = x^3 - 2 = f(x)$ is irreducible over $\QQ$.
+So $[\QQ(\sqrt[3]{2}): \QQ] = 3 \neq 2^d$ for any $d$, so this can not be constructible.
+
+
+Trisections of angles:
+We want to construct regular polygons, so we'll need to construct angles.
+We can get some by bisecting known angles, but can we get all of them?
+
+Example: attempt to construct $20^\circ$ by trisecting the known angle $60^\circ$, which is constructible using a triangle of side lengths $1,2,\sqrt 3$.
+
+If $20^\circ$ were constructible, $\cos 20^\circ$ would be as well.
+There is an identity $\cos 3\theta = 4\cos^3 \theta - 3\cos \theta$.
+Letting $\theta = 20^\circ$ so $3\theta = 60^\circ$, we obtain
+$$
+\frac 1 2 = 4(\cos 20^\circ)^3 - 3\cos 20^\circ,
+$$
+
+so if we let $x = \cos 20^\circ$ then $x$ satisfies the polynomial $f(x) = 8x^3 - 6x - 1$, which is irreducible.
+But then $[\QQ(20^\circ):\QQ] = 3 \neq 2^d$, so $\cos 20^\circ \not\in\mathcal C$.
+
+## Finite Fields
+
+**Definition:**
+The *characteristic* of $F$ is the smallest $n\geq 0$ such that $n1 = 0$, or $0$ if such an $n$ does not exist.
+
+Exercise: for a field $F$, $\ch F = 0, p$ where $p$ is a prime.
+
+Note that if $\ch F = 0$, then $\ZZ \in F$ since $1, 1+1, 1+1+1, \cdots$ are all in $F$.
+Since inverses must also exist in $F$, we must have $\QQ \in F$ as well.
+So $\ch F = 0 \iff F$ is infinite.
+
+If $\ch F = p$, $\ZZ_p \subset F$.
+
+**Theorem:**
+Let $E \geq F$ where $[E: F] = n$ and $F$ is finite. If $\abs F = q$, then $\abs E = q^n$.
+
+Proof:
+$E$ is a vector space over $F$. 
+Let $\theset{v_i}^n$ be a basis.
+Then $\alpha \in E \implies \alpha = \sum^n a_i v_i$ where each $a_i \in F$.
+There are $q$ choices for each $a_i$, and $n$ coefficients, yielding $q^n$ distinct elements.
+
+Corollary:
+Let $E$ be a finite field where $\ch E = p$. Then $\abs E = p^n$ for some $n$.
+
+**Theorem:**
+Let $\ZZ_p \leq E$ with $\abs E = p^n$.
+If $\alpha \in E$, then $\alpha$ satisfies
+$$
+x^{p^n} - x \in \ZZ_p[x].
+$$
+
+Proof:
+If $\alpha = 0$, we're done.
+So suppose $\alpha \neq 0$, then $\alpha \in E\units$, which is a group of order $p^n - 1$.
+So $\alpha^{p^n - 1} = 1$, and thus $\alpha \alpha^{p^n - 1} = \alpha 1 \implies \alpha^{p^n} = \alpha$. $\qed$.
+
+**Definition:**
+$\alpha \in F$ is an *$n$th root of unity* iff $\alpha^n = 1$.
+It is a *primitive* root of unity of $n$ iff $k\leq n \implies \alpha^k \neq 1$ (so $n$ is the smallest power for which this holds).
+
+Fact:
+If $F$ is a finite field, then $F\units$ is a cyclic group.
+
+Corollary: 
+If $E \geq F$ with $[E: F] = n$, then $E = F(\alpha)$ for just a single element $\alpha$.
+
+Proof:
+Choose $\alpha \in E\units$ such that $\generators \alpha = E\units$.
+Then $E = F(\alpha)$. $\qed$
+
+Next time:
+Showing the existence of a field with $p^n$ elements.
+
+For now: derivatives.
+
+Let $f(x) \in F[x]$ by a polynomial with a multiple zero $\alpha \in E$ for some $E \geq F$.
+So if it has multiplicity $m \geq 2$, then note that
+$$
+f(x) = (x-\alpha)^m g(x) \implies f'(x) m(x-\alpha)^{m-1}g(x) + g'(x)(x-\alpha)^m \implies f'(\alpha) = 0.
+$$
+So $\alpha$ a multiple zero of $f \implies f'(\alpha) = 0$. 
+The converse is also useful.
+
+Application:
+Let $f(x) = x^{p^n} - x$, then $f'(x) = p^n x^{p^n - 1} - 1 = -1 \neq 0$, so all of the roots are distinct.
+
+# Lecture (Tuesday)
+
+Last time:
+Let $\FF$ be a finite field. Then $\FF\units = \FF\setminus\theset{0}$ is *cyclic* (this requires some proof).
+Let $f \in \FF[x]$ with $f(\alpha) = 0$. Then $\alpha$ is a *multiple root* if $f'(\alpha) = 0$.
+
+Lemma:
+Let $\FF$ be a finite field with characteristic $p > 0$. Then $f(x) = x^{p^n}-x \in \FF[x]$ has $p^n$ distinct roots.
+
+Proof:
+$f'(x) = p^n x^{p^n-1}-1 = -1$ since we are in char $p$.
+This is identically -1, so $f'(x) \neq 0$ for any $x$.
+So there are no multiple roots.
+Since there are at most $p^n$ roots, this gives exactly $p^n$ distinct roots.
+
+**Theorem:**
+A field with $p^n$ elements exists (denoted $\mathbb{GF}(p^n)$) for every prime $p$ and every $n > 0$.
+
+Consider $\ZZ_p \subseteq K \subseteq \overline{\ZZ}_p$ where $K$ is the set of zeros of $x^{p^n}-x$.
+Then we claim $K$ is a field.
+Suppose $\alpha, \beta \in K$.
+Then $(\alpha \pm \beta)^{p^n} = \alpha^{p^n} \pm \beta^{p^n}$.
+We also have $(\alpha\beta)^{p^n} = \alpha^{p^n}\beta^{p^n} - \alpha\beta$
+and $\alpha^{-p^n} = \alpha\inv$.
+So $K$ is a field and $\abs K = p^n$.
+
+
+Corollary:
+Let $F$ be a finite field. If $n\in\NN^+$, then there exists an $f(x) \in F[x]$ that is irreducible of degree $n$.
+
+Proof:
+Let $F$ be a finite field, so $\abs F = p^r$.
+By the previous lemma, there exists a $K$ such that $\ZZ_p \subseteq k \subseteq \overline F$.
+$K$ is defined as $K \coloneqq \theset{\alpha \in F \suchthat \alpha^{p^n} - \alpha = 0}$.
+
+
+We also have $F  = \theset{\alpha \in \overline F \suchthat \alpha^{p^n} - \alpha = 0}$.
+Moreover, $p^{rs} = p^r p^{r(s-1)}$. 
+Let $\alpha \in F$. 
+Then $\alpha^{p^r} - \alpha = 0$.
+
+So then $\alpha^{p^{rn}} = \alpha^{p^r p^{r(n-1)}} = (\alpha^{p^r})^{p^{r(n-1)}} = \alpha^{p^{r(n-1)}}$.
+
+And we can continue reducing this way to show that this is equal to $\alpha^{p^r} = \alpha$.
+
+So $\alpha \in K$, and thus $F \leq K$.
+We have $[K:F] = n$ by counting elements.
+Now $K$ is simple, because $K\units$ is cyclic.
+Let $\beta$ be the generator, then $K = F(\beta)$.
+This the minimal polynomial of $\beta$ in $F$ has degree $n$, so take this to be the desired $f(x)$. $\qed$
+
+## Simple Extensions
+Let $\phi_\alpha: F[x] \to E$ where $F \leq E$ be the evaluation map, i.e $\phi_\alpha(f(x)) = f(\alpha)$.
+
+Case 1: Suppose $\alpha$ is algebraic over $F$.
+
+There is a kernel for this map, and since $F[x]$ is a PID, this ideal is generated by a single element -- namely, the minimal polynomial of $\alpha$.
+Thus (applying the first isomorphism theorem), we have $F(\alpha) \supseteq E$ isomorphic for $F[x] / \min(\alpha, F)$.
+Moreover, $F(\alpha)$ is the smallest subfield of $E$ containing $F$ and $\alpha$.
+
+Case 2: Suppose $\alpha$ is transcendental over $F$.
+
+Then $\ker \phi_\alpha = 0$, so $F[x] \injects E$.
+Thus $F[x] \cong F[\alpha]$.
+
+**Definition:**
+$E \geq F$ is a *simple extension* if $E = F(\alpha)$ for some $\alpha \in E$.
+
+**Theorem:**
+Let $E = F(\alpha)$ be a simple extension of $F$ where $\alpha$ is algebraic over $F$. 
+Then every $\beta \in E$ can be uniquely expressed as $\beta = \sum_{i=0}^{n-1} c_i \alpha^i$ where $n = \deg \min(\alpha, F)$.
+
+Proof:
+
+Existence:
+
+We have $F(\alpha) = \theset{\sum_{i=1}^r \beta_i \alpha^i \suchthat \beta_i \in F}$.
+So all elements look like polynomials in $\alpha$.
+Using the minimal polynomial, we can reduce the degree of any such element by rewriting $\alpha^n$ in terms of lower degree terms:
+\[
+\begin{align*}
+f(x) = \sum_{i=0}^n a_i x^i &, f(\alpha = 0)\\ 
+&\implies \sum_{i=0}^n a_i \alpha^i = 0 \\
+&\implies \alpha^n = -\sum_{i=0}^{n-1} a_i \alpha^i
+.\end{align*}
+\]
+
+Uniqueness:
+Suppose $\sum c_i \alpha^i = \sum^{n-1} d_i \alpha^i$. 
+Then $\sum^{n-1} (c_i - d_i) \alpha^i = 0$.
+But by minimality of the minimal polynomial, this forces $c_i - d_i = 0$ for all $i$. $\qed$
+
+Note that if $\alpha$ is algebraic over $F$, then $\theset{1, \alpha, \cdots \alpha^{n-1}}$ is a basis for $F(\alpha)$ over $F$ where $n = \deg \min(\alpha, F)$.
+Moreover, $[F(\alpha):F] = \dim_F F(\alpha) = \deg\min(\alpha, F)$.
+
+> Note that adjoining any root of a minimal polynomial will yield isomorphic (usually not identical) fields. These are distinguished as subfields of (say) the algebraic closure of the base field.
+
+**Theorem:**
+Let $F \leq E$ with $\alpha \in E$ algebraic over $F$.
+If $\deg\min(\alpha, F) = n$, then $F(\alpha)$ has dimension $n$ over $F$, then $\theset{1, \alpha, \cdots, \alpha^{n-1}}$ is a basis for $F(\alpha)$ over $F$.
+Moreover, if $\beta \in F(\alpha)$, then $\beta$ is also algebraic over $F$ and $\deg\min(\beta, F) \divides \deg \min(\alpha, F)$.
+
+Proof:
+
+$\beta$ is algebraic over $F$:
+
+We have $[F(\alpha):F] = [F(\alpha): F(\beta)][F(\beta): F]$, so $[F(\beta) : F]$ is less than $n$ since this is a finite extension, and the division of degrees falls out immediately. $\qed$
+
+## Automorphisms and Galois Theory
+
+Let $F$ be a field and $\overline F$ be its algebraic closure. 
+Consider subfields of the algebraic closure, i.e. $E$ such that $F \leq E \leq \overline F$.
+Then $E \geq F$ is an algebraic extension.
+
+**Definition:**
+$\alpha, \beta \in E$ are *conjugates* iff $\min(\alpha, F) = \min(\beta, F)$.
+
+Examples:
+
+- $\sqrt[3]{3}, \sqrt[3]{3}\zeta, \sqrt[3]{3}\zeta^2$ are all conjugates, where $\zeta = \exp(2\pi i/3)$.
+- $\alpha = a+bi \in \CC$ has conjugate $a-bi$, and $\min(\alpha, \RR) = x^2 - 2ax + (a^2 + b^2)$
+
+# Lecture Thursday
+
+## Conjugates
+
+Let $E \geq F$ be a field extension. Then $\alpha,\beta \in E$ are *conjugate* iff $\min(\alpha, F) = \min(\beta, F)$.
+
+Example:
+$a + bi, a-bi$ are conjugate in $\CC/\RR$, since they both have minimal polynomial $x^2 - 2ax + (a^2 + b^2)$ over $\RR$.
+
+**Theorem:**
+Let $F$ be a field and $\alpha, \beta \in E \geq F$ with $\deg \min (\alpha, F) = \deg \min(\beta, F)$, i.e. $[F(\alpha): F] = ]F(\beta): F]$.
+Then $\alpha, \beta$ are conjugates iff $F(\alpha) \cong F(\beta)$ under the map
+$$
+\phi: F(\alpha) \to F(\beta)\\
+\sum a_i \alpha^i \mapsto \sum a_i \beta^i.
+$$
+
+Proof:
+Suppose $\phi$ is an isomorphism.
+Let $f \coloneqq \min (\alpha, F) = \sum c_i x^i$ where $c_i \in F$, so $f(\alpha) = 0$.
+Then
+\[
+\begin{align*}
+0 = f(\alpha) = f(\sum c_i \alpha^i) = \sum c_i \beta^i
+,\end{align*}
+\]
+so $\beta$ satisfies $f$ as well, and thus $f = \min(\alpha, F) \divides \min(\beta, F)$.
+
+But we can repeat this argument with $f\inv$ and $g(x) \coloneqq \min(\beta, F)$, and so we get an equality.
+Thus $\alpha, \beta$ are conjugates.
+
+Conversely, suppose $\alpha, \beta$ are conjugates so that $f = g$.
+Check that $\phi$ is a homomorphism of fields, so that $\phi(x + y) = \phi(x) + \phi(y)$ and $\phi(xy) = \phi(x) \phi(y)$.
+Then $\phi$ is clearly surjective, so it remains to check injectivity.
+
+To see that $\phi$ is injective, suppose $f(z) = 0$.
+Then $\sum a_i \beta^i = 0$.
+But by linear independence, this forces $a_i = 0$ for all $i$, which forces $z=0$. $\qed$
+
+
+
+Corollary:
+Let $\alpha \in \overline F$ be algebraic over $F$. 
+Then
+
+1. $\phi: F(\alpha) \injects \overline F$ for which $\phi(f) = f$ for all $f\in F$ maps $\alpha$ to one of its conjugates.
+2. If $\beta \in \overline F$ is a conjugate of $\alpha$, then there exists one isomorphism $\psi: F(\alpha) \to F(\beta)$ such that $\psi(f) = f$ for all $f\in F$.
+
+Corollary:
+Let $f \in \RR[x]$ and suppose $f(a+bi) = 0$.
+Then $f(a - bi) = 0$ as well.
+
+Proof:
+We know $i, -i$ are conjugates since they both have minimal polynomial $f(x) = x^2 + 1$.
+By (2), we have an isomorphism $\RR[i] \mapsvia{\psi} \RR[-i]$.
+We have $\psi(a+bi) = a-bi$, and if $f(a+bi) = 0$. 
+This isomorphism commutes with $f$, so we have $0 = \psi(f(a+bi)) = f(\psi(a-bi)) = f(a-bi)$.
+
+## Fixed Fields and Automorphisms
+
+**Definition:**
+Let $F$ be a field and $\psi: F \selfmap$ is an *automorphism* iff $\psi$ is an isomorphism (note that the domain and range are the same).
+
+**Definition:**
+Let $\sigma: E\selfmap$ be an automorphism.
+Then $\sigma$ is said to *fix* $a\in E$ iff $\sigma(a) = a$.
+For any subset $F \subseteq E$, $\sigma$ fixes $F$ iff $\sigma$ fixes every element of $F$.
+
+Example:
+Let $E = \QQ(\sqrt 2, \sqrt 5) \supseteq \QQ = F$.
+A basis for $E/F$ is given by $\theset{1, \sqrt 2, \sqrt 5, \sqrt {10}}$.
+Suppose $\psi: E\selfmap$ fixes $\QQ$.
+By the previous theorem, we must have $\psi(\sqrt 2) = \pm \sqrt 2$ and $\psi(\sqrt 5) = \pm \sqrt 5$.
+
+What is fixed by $\psi$?
+Suppose we define $\psi$ on generators, $\psi(\sqrt 2) = -\sqrt 2$ and $\psi(\sqrt 5) = \sqrt 5$.
+Then $f(c_0 + c_1 \sqrt 2 + c_2 \sqrt 5 + c_3 \sqrt{10}) = c_0 - c_1\sqrt 2 + c_2 \sqrt 5 - c_3\sqrt{10}$.
+This forces $c_1 = 0, c_3 = 0$, and so $\psi$ fixes $\theset{ c_0 + c_2 \sqrt 5  } = \QQ(\sqrt 5)$.
+
+**Theorem:**
+Let $I$ be a set of automorphisms of $E$ and define
+$$
+E_I = \theset{\alpha \in E \suchthat \sigma(a) = a ~\forall \sigma \in I}
+$$
+
+Then $E_I \leq E$ is a subfield.
+
+Proof:
+Let $a,b \in E_i$.
+We need to show $a \pm b, ab, b\neq 0 \implies b\inv \in I$.
+
+We have $\sigma(a\pm b) = \sigma(a) \pm \sigma(b) = a + b \in I$ since $\sigma$ fixes everything in $I$.
+Moreover $\sigma(ab) = \sigma(a)\sigma(b) = ab \in I$, and $\sigma(b\inv) = \sigma(b)\inv = b\inv \in I$.
+
+**Definition:**
+Given a set $I$ of automorphisms of $F$, $E_I$ is called the *fixed field* of $E$ under $I$.
+
+**Theorem:**
+Let $E$ be a field and $A = \theset{\sigma:E \selfmap \suchthat \sigma\text{ is an automorphism }}$. 
+Then $A$ is a group under function composition.
+
+**Theorem:**
+Let $E/F$ be a field extension, and define $G(E/F) = \theset{\sigma:E\selfmap \suchthat f\in F \implies \sigma(f) = f}$.
+Then $G(E/F) \leq A$ is a subgroup which contains $F$.
+
+Proof:
+This contains the identity function, if $\sigma(f) = f$ then $f = \sigma\inv(f)$, and $\sigma, \tau \in G(E/F) \implies (\sigma \circ \tau)(f) = \sigma(\tau(f)) = \sigma(f) = f$.
+
+> Note $G(E/F)$ is called the group of automorphisms of $E$ fixing $F$, i.e. the Galois Group.
+
+**Theorem (Isomorphism Extension):**
+Suppose $F \leq E \leq \overline F$, so $E$ is an algebraic extension of $F$.
+Suppose similarly that we have $F' \leq E' \leq \overline F'$, where we want to find $E'$.
+
+Then any $\sigma: F \to F'$ that is an isomorphism can be lifted to some $\tau: E \to E'$, where $\tau(f) = \sigma(f)$ for all $f\in F$.
+
+![Image](figures/2019-09-29-19:10.png)
+
+# Tuesday, October 1
+
+Today:
+Isomorphism Extension Theorem
+
+Suppose we have $F\leq E \leq \overline F$ and $F' \leq E' \leq \overline{F}'$.
+Supposing also that we have an isomorphism $\sigma: F \to F'$, we want to extend this to an isomorphism from $E$ to *some* subfield of $\overline{F}'$ over $F'$.
+
+**Theorem:**
+Let $E$ be an algebraic extension of $F$ and $\sigma: F \to F'$ be an isomorphism of fields.
+Let $\overline{F}'$ be the algebraic closure of $F'$. 
+Then there exists a $\tau: E \to E'$ where $E' \leq F'$ such that $\tau(f) = \sigma(f)$ for all $f \in F$.
+
+Proof:
+See Fraleigh. Uses Zorn's lemma.
+
+Corollary:
+Let $F$ be a field and $\overline F, \overline F'$ be algebraic closures of $F$.
+Then $\overline F \cong \overline F'$.
+
+Proof:
+Take the identity $F \to F$ and lift it to some $\tau: \overline F \to E = \tau(\overline F)$ inside $\overline F '$.
+![Image](figures/2019-10-01-09:40.png)
+
+Then $\tau(\overline F)$ is algebraically closed, and $\overline F' \geq \tau(\overline F)$ is an algebraic extension.
+But then $\overline F' = \tau(\overline F)$. $\qed$
+
+Corollary:
+Let $E \geq F$ be an algebraic extension with $\alpha, \beta \in E$ conjugates. Then the conjugation isomorphism that sends $\alpha \to \beta$ can be extended to $E$. 
+
+Proof:
+![Image](figures/2019-10-01-09:45.png)
+
+> Note: Any isomorphism needs to send algebraic elements to algebraic elements, and even more strictly, conjugates to conjugates.
+
+Counting the number of isomorphisms:
+
+Let $E \geq F$ be a finite extension. We want to count the number of isomorphisms from $E$ to a subfield of $\overline F$ that leave $F$ fixed.
+
+I.e., how many ways can we fill in the following diagram?
+
+![Image](figures/2019-10-01-09:51.png)
+
+Let $G(E/F) \coloneqq \mathrm{Gal}(E/F)$; this will be a finite group if $[E: F] < \infty$.
+
+**Theorem:**
+Let $E \geq F$ with $[E: F] < \infty$ and $\sigma: F \to F'$ be an isomorphism.
+Then the number of isomorphisms $\tau: E \to E'$ extending $\sigma$ is *finite*.
+
+Proof:
+Since $[E: F]$ is finite, we have $F_0 \coloneqq F(\alpha_1, \alpha_2, \cdots, \alpha_t)$ for some $t\in \NN$.
+Let $\tau: F_0 \to E'$ be an isomorphism extending $\sigma$.
+Then $\tau(\alpha_i)$ must be a conjugate of $\alpha_i$, of which there are only finitely many since $\deg \min(\alpha_j, F)$ is finite.
+So there are at most $\prod_i \deg\min(\alpha_i, F)$ isomorphisms.
+
+Example:
+$f(x) = x^3 - 2$, which has roots $\sqrt[3] 2, \sqrt[3] 2 \zeta, \sqrt[3] \zeta^2$.
+
+Two other concepts to address:
+
+- Separability (multiple roots)
+- Splitting Fields (containing all roots)
+
+**Definition:**
+Let 
+$$
+\theset{E: F} \coloneqq \abs{\theset{\sigma: E \to E' \suchthat \sigma \text{ is an isomorphism extending } \id: F \to F}},
+$$
+and define this to be the *index*.
+
+**Theorem:**
+Suppose $F \leq E \leq K$, then
+$$
+\theset{K: F} = \theset{K: E} \theset{E: F}.
+$$
+
+Proof: 
+Exercise.
+
+Example:
+$\QQ(\sqrt 2, \sqrt 5)/\QQ$, which is an extension of *degree* 4.
+It also turns out that $\theset{\QQ(\sqrt 2, \sqrt 5) : \QQ} = 4$ as well.
+
+Questions:
+
+1. When does $[E: F] = \theset{E: F}$? (This is always true in characteristic zero.)
+2. When is $\theset{E: F} = \abs{\mathrm{Gal}(E/F)}$?
+
+Note that in this example, $\sqrt 5 \mapsto \pm \sqrt 5$ and likewise for $\sqrt 2$, so any isomorphism extending the identity must in fact be an *automorphism*.
+
+We have automorphisms $\sigma_1: (\sqrt 2, \sqrt 5) \mapsto (-\sqrt 2,\sqrt 5)$ and $\sigma_2: (\sqrt 2, \sqrt 5) \mapsto (\sqrt 2, -\sqrt 5)$, as well as $\id, \sigma_1 \circ \sigma_2$.
+Thus $\mathrm{Gal}(E/F) = \ZZ_2^2$.
+
+
+## Separable Extensions
+
+Goal: When is $\theset{E: F} = [E: F]$? 
+We'll first see what happens for simple extensions.
+
+**Definition:**
+Let $f \in F[x]$ and $\alpha$ be a zero of $f$ in $\overline F$.
+The maximum $\nu$ such that $(x-\alpha)^\nu \divides f$ is called the *multiplicity* of $f$.
+
+**Theorem:**
+Let $f$ be irreducible.
+Then all zeros of $f$ in $\overline F$ have the same multiplicity.
+
+Proof:
+Let $\alpha, \beta$ satisfy $f$, where $f$ is irreducible.
+Then consider the following lift:
+
+![Image](figures/2019-10-01-10:24.png)
+
+This induces a map $F(\alpha)[x] \mapsvia{\tau} F(\beta)[x]$ which sends $\sum c_i x^i \mapsto \sum \psi(c_i) x^i$, so $x\mapsto x$ and $\alpha \mapsto \beta$, so $x\mapsto x$ and $\alpha \mapsto \beta$..
+
+Then $\tau(f(x)) = f(x)$ and $\tau((x-\alpha)^\nu) = (x-\beta)^\nu$.
+So write $f(x) = (x-\alpha)^\nu h(x)$, then $\tau(f(x)) = \tau((x-\alpha)^\nu) \tau(h(x))$.
+Since $\tau(f(x)) = f(x)$, we then have $f(x) = (x-\beta)^\nu \tau(h(x))$.
+So we get $\mathrm{mult}(\alpha) \leq \mathrm{mult}(\beta)$.
+But repeating the argument with $\alpha, \beta$ switched yields the reverse inequality, so they are equal. $\qed$
+
+Observation:
+If $F(\alpha) \to E'$ extends the identity on $F$, then $E' = F(\beta)$ where $\beta$ is a root of $f \coloneqq \min(\alpha, F)$.
+Thus we have $\theset{F(\alpha): F} = \abs{\theset{\text{distinct roots of } f}}$.
+Moreover,
+$$
+[F(\alpha): F] = \theset{F(\alpha) : F} \nu
+$$
+where $\nu$ is the multiplicity of a root of $\min(\alpha, F)$.
+
+**Theorem:**
+Let $E \geq F$, then $\theset{E: F} \divides [E: F]$.
+
+# Thursday October 3
+
+When can we guarantee that there is a $\tau: E\selfmap$ lifting the identity?
+
+If $E$ is separable, we have $\abs{ \mathrm{Gal} (E/F) } = \theset{E: F} [E: F]$.
+
+Fact:
+$\{F(\alpha): F \}$ is equal to number of *distinct* zeros of $\mathrm{min}(\alpha, F)$. 
+If $F$ is algebraic, then $[F(\alpha): F]$ is the degree and $\theset{F(\alpha): F} \divides [F(\alpha): F]$.
+
+**Theorem:**
+Let $E \geq F$ be finite, then $\theset{E: F} \divides [E:F]$.
+
+Proof:
+If $E \geq F$ is finite, $E = F(\alpha_1, \cdots, \alpha_n) \coloneqq F$.
+Then $\mathrm{min}(\alpha_i, F)$ has $a_j$ as a root, $n_j$ distinct roots, and $v_j$ common multiplicities?
+Then $[F: F(\alpha_1, \cdots, \alpha_{n-1})] = n_j v_j = v_j \theset{F: F(\alpha_1, \cdots, \alpha_{n-1})}$.
+Then $[E: F] = \prod n_j v_j$ and $\theset{E:F} = \prod n_j$, so we obtain divisibility.
+
+**Definitions:**
+
+1. $E \geq F$ is *separable* iff $[E:F] = \{E: F\}$
+2. $\alpha \in E$ is *separable* iff $F(\alpha) \geq F$ is separable.
+3. $f(x) \in F[x]$ is *separable* iff $f(\alpha) = 0 \implies \alpha$ is separable over $F$.
+
+Lemma:
+
+1. $\alpha$ is separable over $F$ iff $\min(\alpha, F)$ has zeros of multiplicity one.
+2. Any irreducible polynomial $f(x) \in F[x]$ is separable iff $f(x)$ has zeros of multiplicity one.
+
+Proof of (1):
+Note that $[F(\alpha): F] = \deg \min(\alpha, F)$, and $\theset{F(\alpha): F}$ is the number of distinct zeros of $\min(\alpha, F)$.
+Since all zeros have multiplicity 1, we have $[F(\alpha): F] = \theset{F(\alpha): F}$.
+
+Proof of (2):
+If $f(x) \in F[x]$ is irreducible and $\alpha\in \overline F$ a root, then $\min(\alpha, F) \divides f(\alpha)$.
+But then $f(x) = c \min(\alpha, F)$ for some constant $c\in F$, since $\min(\alpha, F)$ was monic and only had zeros of multiplicity one.
+
+**Theorem:**
+If $K \geq E \geq F$ and $[K:F] < \infty$, then $K$ is separable over $F$ iff $K$ is separable over $E$ and $E$ is separable over $F$.
+
+Proof:
+\[
+\begin{align*}
+[K: F] 
+&= [K:E] [E: F] \\
+&= \{K:E\} \{E: F\} \\
+&= \{K: F\}
+.\end{align*}
+\]
+Corollary:
+Let $E \geq F$ be a finite extension. 
+Then $E$ is separable over $F$ iff every $\alpha \in E$ is separable over $F$.
+
+Proof:
+Suppose $E \geq F$ is separable, then $E \geq F(\alpha) \geq F$ implies that $F(\alpha)$ is separable over $F$ and thus $\alpha$ is separable.
+
+Conversely, suppose every $\alpha \in E$ is separable over $F$.
+Since $E = F(\alpha_1, \cdots, \alpha_n)$, build a tower of extensions over $F$.
+For the first step, consider $F(\alpha_1, \alpha_2) \to F(\alpha_1) \to F$.
+We know $F(\alpha_1)$ is separable over $F$.
+To see that $F(\alpha_1, \alpha_2)$ is separable over $F(\alpha_1)$, consider $\alpha_2$.
+It is separable over $F$ iff $\min(\alpha_2, F)$ has roots of multiplicity one.
+Then $\min(\alpha_2, F(\alpha_1)) \divides \min(\alpha_2, F)$.
+So $\min(\alpha_2, F(\alpha))$ has roots of multiplicity one.
+So $F(\alpha_1, \alpha_2)$ is separable over $F(\alpha_1)$.
+
+## Perfect Fields
+
+Lemma: 
+$f(x) \in F[x]$ has a multiple root iff $f(x), f'(x)$ have a nontrivial (multiple) common factor.
+
+Let $K\geq F$ be an extension field of $F$.
+Suppose $f(x), g(x)$ have a common factor in $K[x]$; then $f,g$ also have a common factor in $F[x]$.
+
+If $f, g$ do not have a common factor in $F[x]$, then $\gcd(f, g) = 1$ in $F[x]$, and we can find $p(x), q(x) \in F[x]$ such that $f(x)p(x) + g(x)q(x) = 1$.
+But this equation holds in $K[x]$ as well, so $\gcd(f, g) = 1$ in $K[x]$.
+
+We can therefore assume that the roots of $f$ lie in $F$.
+Let $\alpha\in F$ be a root of $f$.
+Then
+
+\[
+\begin{align*}
+f(x) = (x-\alpha)^m g(x) \\
+f'(x) = m(x-\alpha)^{m-1} g(x) + (x-\alpha)^m g'(x)
+.\end{align*}
+\]
+
+If $\alpha$ is a multiple root, $m > 2$, and thus $(x-\alpha) \divides f'$.
+
+Conversely, suppose $f$ does not have a multiple root.
+We can assume all of the roots are in $F$, so we can split $f$ into linear factors.
+Then
+
+\[
+\begin{align*}
+f(x) = \prod_{i=1}^n (x-\alpha_i) \\
+f'(x) = \sum_{i=1}^n \prod_{j\neq i} (x-\alpha_j)
+.\end{align*}
+\]
+
+But then $f'(\alpha_k) = \prod{j\neq k} (x - \alpha_j) \neq 0$.
+Thus $f, f'$ can not have a common root. $\qed$
+
+> Thus we can test separability by taking derivatives.
+
+**Definition:**
+A field $F$ is *perfect* if every finite extension of $F$ is separable.
+
+**Theorem**:
+Every field of characteristic zero is perfect.
+
+Proof:
+Let $F$ be a field with $\mathrm{char}(F) = 0$, and let $E \geq F$ be a finite extension.
+Let $\alpha \in E$, we want to show that $\alpha$ is separable.
+Consider $f = \min(\alpha, F)$.
+We know that $f$ is irreducible over $F$, and so its only factors are $1, f$.
+If $f$ has a multiple root, then $f, f'$ have a common factor in $F[x]$.
+By irreducibility, $f \divides f'$, but $\deg f' < \deg f$, which implies that $f'(x) = 0$.
+But this forces $f(x) = c$ for some constant $c\in F$, which means $f$ has no roots -- a contradiction.
+
+So $\alpha$ separable for all $\alpha \in E$, so $E$ is separable over $F$, and $F$ is thus perfect.
+
+**Theorem:**
+Every finite field is perfect.
+
+Proof:
+Let $F$ be a finite field with $\mathrm{char} F = p > 0$ and let $E \geq F$ be finite.
+Then $E = F(\alpha)$ for some $\alpha\in E$, since $E$ is a simple extension (look at $E^*$?)
+So $E$ is separable over $F$ iff $\min(\alpha, F)$ has distinct roots.
+
+So $E\units = E\setminus\theset{0}$, and so $\abs{E} = p^n \implies \abs{E} = p^{n-1}$.
+Thus all elements of $E$ satisfy $f(x) \coloneqq x^{p^n} - x \in \ZZ_p[x]$.
+So $\min(\alpha, F) \divides f(x)$.
+One way to see this is that *every* element of $E$ satisfies $f$, since there are exactly $p^n$ distinct roots.
+Another way is to note that $f'(x) = p^nx^{p^n - 1} - 1 = -1 \neq 0$.
+Since $f(x)$ has no multiple roots, $\min(\alpha, F)$ can not have multiple roots either. $\qed$
+
+Note that $[E: F] < \infty \implies F(\alpha_1, \cdots, \alpha_n)$ for some $\alpha_i \in E$ that are algebraic over $F$.
+
+**Theorem (Primitive Element):**
+Let $E\geq F$ be a finite extension and separable.
+Then there exists an $\alpha \in E$ such that $E = F(\alpha)$.
+
+Proof:
+See textbook.
+
+Corollary:
+Every finite extension of a field of characteristic zero is simple.
+
+# Tuesday October 8
+
+## Splitting Fields
+
+For $\overline F \geq E \geq F$, we can use the lifting theorem to get a $\tau: E \to E'$.
+What conditions guarantee that $E =E'$?
+
+If $E = F(\alpha)$, then $E' = F(\beta)$ for some $\beta$ a conjugate of $\alpha$.
+Thus we need $E$ to contain conjugates of all of its elements.
+
+Definition:
+Let $\theset{f_i(x) \in F[x] \suchthat i\in I}$ be any collection of polynomials.
+We way that $E$ is a *splitting field* iff $E$ is the smallest subfield of $\overline F$ containing all roots of the $f_i$.
+
+Examples:
+
+- $\QQ(\sqrt 2, \sqrt 3)$ is a splitting field for $\theset{x^-2, x^2 - 5}$.
+- $\CC$ is a splitting field for $\theset{x^2 + 1}$.
+- $\QQ(\sqrt[3] 2)$ is *not* a splitting field for any collection of polynomials.
+
+Theorem:
+Let $F \leq E \leq \overline F$.
+Then $E$ is a splitting field over $F$ for some set of polynomials iff every isomorphism of $E$ fixing $F$ is in fact an automorphism.
+
+Proof:
+
+$\implies:$ Let $E$ be a splitting field of $\theset{f_i(x) \suchthat f_i(x) \in F[x], i\in I}$.
+Then $E = \generators{\alpha_j \mid j\in J}$ where $\alpha_j$ are the roots of all of the $f_i$.
+
+Suppose $\sigma: E \to E'$ is an isomorphism fixing $F$.
+Then consider $\sigma(\alpha_j)$ for some $j \in J$.
+We have $\min(\alpha, F) = p(x) = a_0 + a_1 x + \cdots a_{n-1}x^{n-1} + a_n x^n$, and so $p(x) = 0, 0\in F \implies 0 = \sigma(p(\alpha_j)) = \sum a_i \sigma(\alpha_j)^i$.
+Thus $\sigma(\alpha_j)$ is a conjugate, and thus a root of some $f_i(x)$.
+
+
+$\impliedby:$ Suppose any isomorphism of $E$ leaving $F$ fixed is an automorphism.
+Let $g(x)$ be an irreducible polynomial and $\alpha \in E$ a root.
+
+![Image](figures/2019-10-08-09:54.png)
+
+Using the lifting theorem, where $F(\alpha \leq E$, we get a map $\tau: E \to E'$ lifting the identity and the conjugation homomorphism.
+But this says that $E'$ must contain every conjugate of $\alpha$.
+Therefore we can take the collection $S = \theset{g_i(x) \in F[x] \suchthat g_i \text{ irreducible and has a root in } E}$.
+This defines a splitting field for $\theset{g_j}$, and we're done. $\qed$
+
+Examples:
+
+1. $x^2 + 1 \in \RR[x]$ splits in $\CC$, i.e. $x^2 + 1 = (x+i)(x-i)$.
+2. $x^2 - 2 \in \QQ[x]$ splits in $\QQ(\sqrt 2)$.
+
+
+Corollary:
+Let $E$ be a splitting field over $F$. 
+Then every **irreducible** polynomial in $F[x]$ with a root $\alpha \in E$ splits in $E[x]$.
+
+Corollary:
+The index $\{ E: F \}$ (the number of distinct lifts of the identity).
+If $E$ is a splitting field and $\tau:E \to E'$ lifts the identity on $F$, then $E = E'$.
+Thus $\{ E : F \}$ is the number of automorphisms, i.e. $\abs{\mathrm{Gal}(E/F)}$.
+
+When is it the case that 
+$$
+[E: F] = \{E: F\} = \abs{\mathrm{Gal}(E/F)}?
+$$
+The first equality occurs when $E$ is separable.
+The second equality occurs when $E$ is a splitting field.
+
+> Characteristic zero implies separability
+
+If $E$ satisfies both of these conditions, it is said to be a *Galois extension*.
+
+Some cases where this holds:
+
+- $E \geq F$ a finite algebraic extension with $E$ characteristic zero
+- $E$ a finite field, since it is a splitting field for $x^{p^n} - x$.
+
+Examples:
+
+1. $\QQ(\sqrt 2, \sqrt 5)$ is a degree 4 extension, the number of automorphisms was 4, and the Galois group was $\ZZ_2^2$.
+
+2. $E$ the splitting field of $x^3 - 3$ over $\QQ$, which has roots $\sqrt[3] 3, \zeta_3 \sqrt[3] 3, \zeta_3^2 \sqrt[3] 3$ where $\zeta_3^3 = 1$.
+  Then $E = \QQ(\sqrt[3] 3, \zeta_3)$, where $\min(\sqrt[3] 3, \QQ) = x^3 - 3, \min(\zeta_3, \QQ) = x^2 + x + 1$, and thus this is a degree 6 extension.
+  Since $\mathrm{char} \QQ = 0$, we have $[E: \QQ] = \{E: \QQ\}$ for free.
+  We know that any automorphism has to map $\sqrt[3] 3 \mapsto \sqrt[3] 3, \sqrt[3] 3 \zeta_3, \sqrt[3] 3 \zeta_3^2$ and $\zeta_3 \mapsto \zeta_3, \zeta_3^2$.
+  You can show this is nonabelian by composing a few of these; thus the Galois group is $S^3$.
+ 
+3. If $[E: F] = 2$, then $E$ is automatically a splitting field.
+  Since it's a finite extension, it's algebraic, so let $\alpha \in E\setminus F$.
+  Then $\min(\alpha, F)$ has degree 2, and thus $E = F(\alpha)$ contains all of its roots, making $E$ a splitting field.
+
+## Galois Correspondence
+
+Three players: $[E: F], \{E: F\}, \mathrm{Gal}(E/F)$.
+
+Definition:
+Let $E \geq F$ be a finite extension.
+$E$ is **normal** (or Galois) over $F$ iff $E$ is a separable splitting field over $F$.
+
+Examples:
+
+1. $\QQ(\sqrt 2, \sqrt 3)$ is normal over $\QQ$.
+2. $\QQ(\sqrt[3] 3)$ is not normal (not a splitting field of any irreducible polynomial in $\QQ[x]$).
+3. $\QQ(\sqrt[3] 3, \zeta_3)$ is normal
+
+Theorem:
+Let $F \leq E \leq K \leq \overline F$, where $K$ is a finite normal extension of $F$.
+Then
+
+1. $K$ is a normal extension of $E$ as well,
+2. $\mathrm{Gal}(K/E) \leq \mathrm{Gal}(K/F)$.
+3. For $\sigma, \tau \in \mathrm{Gal}(K/F)$, $\sigma\mid_E = \tau\mid_E$ iff $\sigma, \tau$ are in the same left coset of $\mathrm{Gal}(K/F) / \mathrm{Gal}(K/E)$.
+
+
+Proof of (1):
+Since $K$ is separable over $F$, we have $K$ separable over $E$.
+Then $K$ is a splitting field for polynomials in $F[x] \subseteq E[x]$.
+Thus $K$ is normal over $E$.
+
+Proof of (2):
+
+[Image](figures/2019-10-08-10:35.png)
+
+So this follows by definition.
+
+Proof of (3):
+Let $\sigma, \tau \in \mathrm{Gal}(K/F)$ be in the same left coset.
+Then $\tau\inv\sigma \in \mathrm{Gal}(K/E)$, so let $\tau\inv\sigma \coloneqq \mu$.
+Note that $\mu$ fixes $E$ by definition.
+Then $\sigma = \tau \mu$, and so $\sigma(e) = \tau(\mu(e)) = \tau(e)$ for all $e\in E$.
+
+
+> Note: We don't know if the intermediate field $E$ is actually a normal extension of $F$. Standard example: $K \geq E \geq F$ where $K = \QQ(\sqrt[3] 3, \zeta_3), E = \QQ(\sqrt[3] 3), F = \QQ$. Then $K \normal E, K\normal F$, but $E\not\normal F$.
+
+
+# Thursday ???
+
+See notes
+
+# Tuesday October 15th
+
+## Cyclotomic Extensions
+
+Definition:
+Let $K$ denote the splitting field of $x^n-1$ over $F$.
+Then $K$ is called the *$n$th cyclotomic extension of $F$*.
+
+If we set $f(x) = x^n-1$, then $f'(x) = nx^{n-1}$. 
+So if $\mathrm{char} F$ does not divide $n$, then the splitting field is separable.
+So this splitting field is normal.
+
+So suppose that $\mathrm{char} F$ doesn't divide $n$, then $f(x)$ has $n$ zeros.
+Let $\zeta_1, \zeta_2$ be two zeros.
+Then $(\zeta_1 \zeta_2)^n = \zeta_1^n \zeta_2^n = 1$, so the product is a zero as well.
+So the zeros form a subgroup in $K^*$.
+
+So let's specialize to $F = \QQ$.
+
+Then the roots of $f$ are the $n$th roots of unity, i.e. $\zeta_n = \exp(\frac{2\pi i}{n})$, and is given by $\theset{\zeta_n, \zeta_n^2, \zeta_n^3, \cdots}$.
+The *primitive* roots of unity are given by $\theset{\zeta_n^m \suchthat \gcd(m, n) = 1}$.
+
+Definition:
+Let $\Phi_n(x) = \prod_{i=1}^{\varphi(n)} (x-\alpha_i)$, where this product runs over all of the primitive $n$th roots of unity.
+
+Let $G$ be the Galois group of $K$ over $\QQ$.
+Then any $\sigma\in G$ will permute the primitive $n$th roots of unity.
+Moreover, it only permutes primitive roots, so every $\sigma$ fixes $\Phi_n(x)$.
+But this means that the coefficients must lie in $\QQ$.
+
+Since $\zeta$ generates all of the roots of $\Phi_n$, we in fact have $K = \QQ(\zeta)$.
+But what is the group structure of $G$?
+
+Since any automorphism is determined by where it sends a generator, we have automorphisms $\tau_m(\zeta) = \zeta^m$ for each $m$ such that $\gcd(m, n) = 1$.
+But then $\tau_{m_1} \circ \tau_{m_2} = \tau_{m_1 + m_2}$, and so $G \cong G_m \leq \ZZ_n$ as a ring, where
+$G_m = \theset{[m] \suchthat \gcd(m, n) = 1}$ and $\abs G = \varphi(n)$.
+
+> Note that as a *set*, these are the units in $\ZZ_n$.
+
+Theorem:
+The Galois group of the $n$th cyclotomic extension over $\QQ$ has $\varphi(n)$ elements and is isomorphic to $G_m$.
+
+Special case: $n=p$ where $p$ is a prime.
+Then $\phi(p) = p-1$, and $\Phi_p(x) = \frac{x^p - 1}{x-1} = x^{p-1} + x^{p-2} + \cdots + x + 1$.
+Note that $\ZZ_p\units$ is in fact cyclic, although this may not always happen.
+In this case, we have $\mathrm{Gal}(K/\QQ) \cong \ZZ_p\units$.
+
+## Construction of n-gons
+
+To construct the vertices of an n-gon, we will need to construct the angle $2\pi/n$, or equivalently, $\zeta_n$.
+Note that if $[\QQ(\zeta_n) : \QQ] \neq 2^\ell$ for some $\ell\in\NN$, then the $n\dash$gon is *not* constructible.
+
+Example: 
+An 11-gon. Noting that $[\QQ(\zeta_{11}) : \QQ] = 10 \neq 2^\ell$, the 11-gon is not constructible.
+
+Since this is only a sufficient condition, we'll refine this.
+
+Definition:
+A prime of the form $p = 2^{2^k}+1$ are called *Fermat primes*.
+
+Theorem:
+The regular $n\dash$gon is constructible iff all odd primes dividing $n$ are *Fermat primes* $p$ where $p^2$ does not divide $n$.
+
+Example:
+Consider $\Phi_5(x) = x^4 + x^3 + x^2 + x + 1$.
+Then take $\zeta = \zeta_5$; we then obtain the roots as $\theset{1, \zeta, \zeta^2, \zeta^3, \zeta^4}$ and $\QQ(\zeta)$ is the splitting field.
+Any automorphism is of the form $\sigma_r: \zeta \mapsto \zeta^r$ for $r=1,2,3,4$.
+So $\abs{\mathrm{Gal}(K/\QQ)} = 4$, and is cyclic and thus isomorphic to $\ZZ_4$.
+Corresponding to $0 \to \ZZ_2 \to \ZZ_4$, we have the extensions $\QQ \to \QQ(\zeta^2) \to \QQ(\zeta)$.
+
+How can we get a basis for the degree 2 extension $\QQ(\zeta^2)/\QQ$?
+Let $\lambda(E) = \theset{\sigma \in \mathrm{Gal}(\QQ(\zeta)/\QQ) \suchthat \sigma(e) = e \forall e\in E }$ and
+$\lambda(K_H) = H$ where $H$ is a subgroup of $\mathrm{Gal}(\QQ(\zeta)/\QQ)$ and $K_H = \theset{x\in K \suchthat \sigma(x) = x \forall \sigma\in H}$.
+
+Note that if $\ZZ_4 = \generators{\psi}$, then $\ZZ_2 \leq \ZZ_4$ is given by $\ZZ_2 = \generators{\psi^2}$.
+We can compute that if $\psi(\zeta) = \zeta^2$, then $\psi^2(\zeta) = \zeta\inv, \psi^2(\zeta^2) = \zeta^{-2}$, and $\psi^2(\zeta^3) = \zeta^{-3}$.
+Noting that $\zeta_4$ is a linear combination of the other $\zeta$s, we have a basis $\theset{1, \zeta, \zeta^2, \zeta^3}$.
+
+Then you can explicitly compute the fixed field by writing $\sigma(a + b\zeta + c\zeta^2 + d\zeta^3) = ?$ and checking the restrictions on the coefficients.
+In this case, it yields $\QQ(\zeta^2 + \zeta^3)$.
+
+## Frobenius Automorphism
+Let $p$ be a prime and $F$ be a field of characteristic $p>0$. 
+Then $\sigma_p: F \to F$ defined by $\sigma_p(x) = x^p$ is denoted the *Frobenius map*.
+
+Theorem:
+Let $F$ be a finite field of characteristic $p > 0$. 
+Then the Frobenius is an automorphism and fixes $F_{\sigma_p} = \ZZ_p$.
+
+Proof:
+Since $\sigma_p$ is a field homomorphism, we have $\sigma_p(x+y) = )x+y)^p = x^p + y^p$ and $\sigma(xy) = (xy)^p = x^p y^p$.
+Note that $\sigma_p$ is injective, since $\sigma_p(x) =0 \implies x^p=0 \implies x=0$ since we are in a field.
+Since $F$ is finite, $\sigma_p$ is also surjective, and is thus an automorphism.
+To see the last part, not that if $\sigma(x) = x$, then $x^p = x \implies x^p-x = 0$, which implies that $x$ is a root of $f(x) = x^p - x$.
+But these are exactly the elements in the prime ring $\ZZ_p$. $\qed$
+
+
+# Thursday October 17
+
+> Note: A total of 10 HWs for the class, plus one more midterm and then a final. Midterm covers up to HW7.
+
+Example:
+What is the Galois group of $x^4-2$ over $\QQ$?
+
+First step: find the roots.
+We can find directly that they are $\theset{\pm \sqrt[4] 2, \pm i \sqrt[4] 2} = \theset{r_i}$.
+The splitting field will then be $\QQ(\sqrt[4] 2, i)$, which is separable because we are in characteristic zero.
+So this is a normal extension.
+We can find 4 automorphisms: $\sqrt[4] 2 \mapsto r_i; i \mapsto \pm i$.
+
+So $\abs G = 8$, and we can see that $G$ can't be abelian because this would require every subgroup to be abelian and thus normal, which would force every intermediate extension to be normal.
+But the intermediate extension $\QQ(\sqrt[4] 2)/\QQ$ is not a normal extension since it's not a splitting field.
+So the group must be $D_4$. $\qed$
+
+## Insolubility of the Quintic
+
+### Symmetric Functions
+
+Let $F$ be a field, and let $F(y_1, \cdots , y_n) = \theset{\frac{f(y_1, \cdots, y_n)}{g(y_1, \cdots, y_n)} \suchthat f, g \in F[y_1, \cdots, y_n]}$ be the set of *rational* functions over $F$.
+Then $S_n \actson F(y_1, \cdots, y_n)$ by permuting the $y_i$, i.e.
+\[
+\begin{align*}
+\sigma(\frac{
+f(y_1, \cdots, y_n)
+}{
+g(y_1, \cdots, y_n)
+}) = \frac{
+f(\sigma(y_1), \cdots, \sigma(y_n))
+}{
+g(\sigma(y_1), \cdots, \sigma(y_n))
+}
+.\end{align*}
+\]
+
+**Definition:**
+A function $f \in F(\alpha_1, \cdots, \alpha_n)$ is *symmetric* iff $\sigma\actson f = f$ for all $\sigma \in S_n$.
+
+Examples:
+
+1. $f(y_1, \cdots, y_n) = \prod y_i$
+2. $f(y_1, \cdots, y_n) = \sum y_i$.
+
+### Elementary Symmetric Functions
+
+Consider $f(x) \in F(y_1, \cdots, y_n)[x]$ given by $\prod (x-y_i)$.
+Then $\sigma f = f$, so $f$ is a symmetric function.
+Moreover, all coefficients are fixed by $S_n$.
+So the coefficients themselves are symmetric functions.
+
+Concretely, we have
+
+
+Coefficient | Term
+---
+1         | $(-1)^n$
+$x^{n-1}$   | $-y_1 - y_2 - \cdots - y_n$
+$x^{n-2}$   | $y_1y_2 + y_1y_3 + \cdots + y_2y_3 + \cdots$
+
+The coefficient of $x^{n-i}$ is referred to as the *$i$th elementary symmetric function*.
+
+Consider an intermediate extension $E$ given by joining all of the elementary symmetric functions:
+
+![Image](figures/2019-10-17-09:56.png)
+
+Then $K \coloneqq$ the field adjoined *all* symmetric functions is an intermediate extension, and we have the following results:
+
+1. $E \leq K$ is a field extension.
+2. $E \leq F(y_1, \cdots, y_n)$ is a finite, normal extension since it is the splitting field of $f(x) = \prod (x-y_i)$, which is separable.
+  We thus have $[F(y_1, \cdots, y_n): E] \leq n! < \infty$.
+
+We'll show that in fact $E = K$, so all symmetric functions are generated by the elementary symmetric functions.
+
+By definition of symmetric functions, $K$ is exactly the fixed field $F(y_1, \cdots, y_n)_{S_n}$, and $\abs S_n = n!$.
+So we have
+
+\[
+\begin{align*}
+n! &= \abs{ \mathrm{Gal}(F(y_1, \cdots, y_n / K))} \\
+& \leq \{F(y_1, \cdots, y_n) : K\} \\
+& \leq [F(y_1, \cdots, y_n): K]
+.\end{align*}
+\]
+
+But now we have
+$$
+n! \leq [F(y_1, \cdots, y_n):K] \leq [F(y_1, \cdots, y_n) : E] \leq n!
+$$
+which forces $K=E$.
+
+**Theorem**:
+
+1. Every symmetric function can be written as some combination of sums and products (and possibly quotients) of elementary symmetric functions.
+2. $F(y_1, \cdots, y_n)$ is a finite normal extension of $F(s_1, \cdots, s_n)$ of degree $n!$.
+3. $\mathrm{Gal}(F(y_1, \cdots, y_n) / F(s_1, \cdots, s_n)) \cong S_n$.
+
+We know that every group $G \injects S_n$.
+So there exists an intermediate extension $F(s_1, \cdots, s_n) \leq L \leq F(y_1, \cdots, y_n)$ such that $G = \mathrm{Gal}(F(y_1, \cdots, y_n) / L)$.
+
+> Open question: which groups can be realized as Galois groups over $\QQ$? Old/classic question, possibly some results in the other direction (i.e. which groups *can't* be realized as such Galois groups).
+
+### Insolubility of the Quintic
+
+Let $p(x) = \sum a_i x^i \in \QQ[x]$ be a polynomial of degree $n$.
+Can we find a formula for the roots as a function of the coefficients, possibly involving radicals?
+
+For $n = 1$ this is clear, and for $n=2$ we have the quadratic formula.
+For $n = 3$, there is a formula by work of Cardano.
+For $n = 4$, this is true by work of Ferrari.
+For $n \geq 5$, there can *not* be a general equation.
+
+**Definition:**
+Let $K \geq F$ be a field extension.
+Then $K$ is *an extension of $F$ by radicals* (or a *radical extension*) iff $K = \alpha_1, \cdots, \alpha_n$ for some $\alpha_i$ such that
+
+1. Each $\alpha_i^{m_i} \in F$ for some $m_i > 0$.
+2. For each $i$, $\alpha_i^{\ell_i} \in F(\alpha_1, \cdots, \alpha_{i-1})$ for some $\ell_i < m_i$ (?).
+
+**Definition:**
+A polynomial $f(x) \in F[x]$ is *solvable by radicals* over $F$ iff the splitting field of $f$ is contained in some radical extension.
+
+Example:
+Over $\QQ$, the polynomials $x^5-1$ and $x^3-2$ are solvable by radicals.
+
+Recall that $G$ is *solvable* if there exists a normal series $1 \normal H_1 \normal H_2 \cdots \normal H_n \normal G$ such that $H_n/H_{n-1}$ are all abelian.
+
+**Lemma**:
+Let $\mathrm{char}(F) = 0$ and $a\in F$.
+If $K$ is the splitting field of $p(x) = x^n-a$, then the Galois group is a solvable group.
+
+Example:
+Let $p(x) = x^4-2 / \QQ$, which had Galois group $D_4$.
+
+Proof:
+Suppose that $F$ contains all $n$th roots of unity, $\theset{1, \zeta, \zeta^2, \cdots, \zeta^[n-1]}$ where $\zeta$ is a primitive $n$th root of unity.
+If $\beta$ is any root of $p(x)$, then $\zeta^i\beta$ is also a root for any $1\leq i \leq n-1$.
+This in fact yields $n$ distinct roots, and is thus all of the them.
+Since the splitting field $K$ is of the form $F(\beta)$, then if $\sigma \in \mathrm{Gal}(K/F)$, then $\sigma(\beta) = \zeta^i \beta$ for some $i$.
+Then if $\tau \in \mathrm{Gal}(K/F)$ is any other automorphism, then $\tau(\beta) = \zeta^k \beta$ and thus (exercise) the Galois group is abelian and thus solvable.
+
+Suppose instead that $F$ does not contain all $n$th roots of unity.
+So let $F' = F(\zeta)$, so $F \leq F(\zeta) = F' \leq K$.
+Then $F \leq F(\zeta)$ is a splitting field (of $x^n-1$) and separable since we are in characteristic zero and this is a finite extension.
+Thus this is a normal extension.
+
+We thus have $\mathrm{Gal}(K/F) / \mathrm{Gal}(K/F(\zeta)) \cong \mathrm{Gal}(F(\zeta)/ F)$.
+We know that $\mathrm{Gal}(F(\zeta)/ F)$ is abelian since this is a cyclotomic extension, and so is $\mathrm{Gal}(K/F(\zeta))$.
+We thus obtain a normal series
+$$
+1 \normal \mathrm{Gal}(K/F(\zeta)) \normal \mathrm{Gal}(K/F)
+$$
+Thus we have a solvable group. $\qed$
+
+# Tuesday October ?
+
+Recall the definition of an extension being *radical* (see above).
+
+We say that a polynomial $f(x) \in K[x]$ is *solvable by radicals* iff its splitting field $L$ is a radical extension of $K$.
+
+Lemma:
+Let $F$ be a field of characteristic zero.
+If $K$ is a splitting field of $f(x) = x^n - a \in F[x]$, then $\mathrm{Gal}(K/F)$ is a solvable group.
+
+Theorem:
+Let $F$ be characteristic zero, and suppose $F \leq E \leq K \leq \overline F$ be algebraic extension where $E/F$ is normal
+and $K$ a radical extension of $F$. Moreover, suppose $[K:F] < \infty$.
+Then $\mathrm{Gal}(E/F)$ is solvable.
+
+Proof:
+The claim is that $K$ is contained in some $L$ where $F \subset L$, $L$ is a finite normal radical extension, and $\mathrm{Gal}{L/F}$ is solvable.
+
+Since $K$ is a radical extension of $F$, we have $F = K(\alpha_1, \cdots, \alpha_n)$ and $\alpha_i^{n_i} \in K(\alpha_1, \cdots, \alpha_{i-1})$ for each $i$ and some $n_i \in \NN$.
+Let $L_1$ be the splitting field of $f_1(x) = x^{n_1} - \alpha_1^{n_1}$, then by the previous lemma, $L_1$ is a normal 
+extension and $\mathrm{Gal}(L_1/F)$ is a solvable group.
+
+Inductively continue this process, and let $f_2(x) = \prod_{\sigma \in \mathrm{Gal}(L_1/F)} x^{n_2} - \sigma(\alpha_2)^{n_2} \in F[x]$.
+Note that the action of the Galois group on this polynomial is stable.
+Let $L_2$ be the splitting field of $f_2$, then $L_2$ is a finite normal radical extension.
+
+Then $\mathrm{Gal}(L_2/F) / \mathrm{Gal}(L_2/L_1) \cong \mathrm{Gal}(L_1/F)$, which is solvable, and the denominator in this quotient is solvable, so the total group must be solvable as well. $\qed$
+
+Theorem (Insolvability of the quintic):
+Let $y_1, \cdots, y_n$ be independent transcendental elements in $\RR$, then the polynomial $f(x) = \prod (x-y_i)$ is not solvable by radicals over $\QQ(s_1, \cdots, s_n)$
+where the $s_i$ are the elementary symmetric polynomials in $y_i$.
+
+> No polynomial relations between the transcendental elements.
+
+Let $n\geq 5$ and suppose $y_i$ are transcendental over $\RR$ and linearly independent over $\QQ$.
+hen consider
+\[
+\begin{align*}
+s_1 = \sum y_i \\
+s_2 = \sum_{i\leq j} y_i y_j \\
+\cdots \\
+s_n = \prod_i y_i
+.\end{align*}
+\]
+Then $\QQ(y_1, \cdots, y_n)/ \QQ(s_1, \cdots, s_n) = S_n$ (by previous theorem).
+For $n\geq 5$, $A_n$ is not solvable, and thus neither is $S_n$.
+Thus the polynomial is not solvable by radical, since the splitting field of $f(x)$ is $\QQ(y_1, \cdots, y_n)$. $\qed$
+
+## Rings and Modules
+
+Recall that a ring is given by $(R, +, \cdot)$, where
+
+1. $(R, +)$ is an abelian group,
+2. $(R, \cdot)$ is a monoid,
+3. The distributive laws hold.
+
+A *subring* is a subset closed under $+. \cdot$, e.g. $\ZZ \leq \QQ \leq \RR \leq \CC \leq \CC[x, y] \leq \cdots$
+
+An *ideal* is certain type of subring that allows taking quotients, and is defined by $I \normal R \iff I\leq R$ and $RI, IR \subseteq I$.
+The quotient is given by $R/I = \theset{r + I \suchthat r\in R}$, and the ideal property is what makes this well-defined.
+
+Much like groups, we have some notion of homomorphism $\phi: R\to R'$, where $\phi(ax+y) = \phi(a)\phi(x) + \phi(y)$.
+
+### Modules
+
+We want to combine the following two notions:
+
+- Groups acting on sets, and
+- Vector spaces
+
+Definition:
+Let $R$ be a ring and $M$ an abelian group. Then if there is a map $R\cross M \to M$, written $(r,r) \mapsto rm$, such that $\forall s,r_1,r_2 \in R, m_1,m_2 \in M$, we have
+
+- $(sr_1 + r_2)(m_1 + m_2) = sr_1m_1 + sr_1m_2 + r_2m_1 + r_2 m_2$
+- If $1\in R$, then $1m = m$.
+
+> Think of $R$ like the group acting by scalar multiplication, and $M$ the set of vectors with vector addition.
+
+Examples:
+
+1. $R = k$ a field, then a $k\dash$module is a vector space.
+2. $R = G$ an abelian group, then $R$ is a $\ZZ\dash$module where $n\actson a = \sum^n a$. (In fact, these two notions are equivalent.)
+3. $I \normal R$, then $M \coloneqq R/I$ is an ring, which has an underlying abelian group, so $M$ is an $R\dash$module where $M\actson R = r\actson(s+I) = (rs) + I$.
+4. For $M$ an abelian group, $R \coloneqq \mathrm{End}(M) = \hom_{\text{ab}}(M, M)$ is a ring, and $M$ is a left $R\dash$module given by $f\actson m = f(m)$.
+
+Let $M, N$ be left $R\dash$modules. Then $f: M \to N$ is an $R\dash$module homomorphism iff $f(rm_1 + m_2) = rf(m_1) + f(m_2)$.
+
+We also have notions of *monomorphisms*, which are injective maps, *epimorphisms*, which are surjections, and *isomorphisms*, which are both.
+
+We can define *submodules* $N\leq M$, which are subsets that are closed under all operations.
+
+We can consider images, kernels, and inverse images, so we can formulate homomorphism theorems analogous to what was done with groups/rings:
+
+Theorem:
+
+1. If $M \mapsvia{f} N$ in $R\dash$mod, then $M / \ker(f) \cong \im(f)$.
+2. Let $M, N \leq L$, then $M+N \leq L$ as well. Thus $M/M\intersect N \cong (M+N)/N$
+3. If $M\leq M\leq L$, then $M/N \cong (L/M) / (L/N)$
+
+> Note that we can always quotient, since there's an underlying abelian group, and thus the "normality"/ideal condition is always satisfied for submodules. Just consider $M/N  = \theset{m + N \suchthat m\in M}$; then $R\actson (M/N)$ in a well-defined way. 
+
+# Thursday October 25?
+
+Find
+
+# Tuesday October 29
+
+Lemma (Short Five):
+
+Let $R$ be a ring, then if we have the following diagram:
+
+where
+<!-- Todo -->
+
+1. $\alpha, \gamma$ mono implies $\beta$ is mono.
+2. $\alpha, \gamma$ epi implies $\beta$ is too.
+3. $\alpha, \gamma$ is iso implies $\beta$ is too.
+
+Proof:
+Check
+
+We say that two exact sequences are *isomorphic* if in the following diagram, $f,g,h$ are isomorphisms.
+
+\[
+\begin{tikzcd}
+0 & M \arrow[dd, "f"] & N \arrow[dd, "g"] & Q \arrow[dd, "h"] & 0 \\
+  &                   &                   &                   &   \\
+0 & M                 & N                 & Q                 & 0
+\end{tikzcd}
+\]
+
+Theorem:
+
+Let $0 \to M_1 \mapsvia f M_2 \mapsvia g M_3 \to 0$ be a SES. Then TFAE:
+
+- There exists an $R\dash$module homomorphisms $h: M_3 \to M_2$ such that $g\circ h = \id_{M_3}$.
+- There exists an $R\dash$module homomorphisms $k: M_2 \to M_1$ such that $k\circ f = \id_{M_1}$.
+- The sequence is isomorphic to $0 \to M_1 \to M_1 \oplus M_3 \to M_3 \to 0$.
+
+Proof:
+Define $\phi: M_1 \oplus M_3 \to M_2$ by $\phi(m_1 + m_2) = f(m_1) + h(m_2)$.
+We need to show that this diagram commutes:
+
+<!--\begin{tikzcd}-->
+<!--0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\-->
+  <!--&                       &                                   &                       &   \\-->
+<!--0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0-->
+<!--\end{tikzcd}-->
+
+We can check that $g\phi(m_1 + m_2) = g( f(m_1)) +  g(h(m_2)) = m_2 = \pi(m_1 + m_2)$.
+This yields $1 \implies 3$, and $2 \implies 3$ is similar.
+
+To see that $3 \implies 1, 2$, we attempt to define $k, h$ in the following diagram:
+
+
+<!--\[-->
+<!--\begin{tikzcd}-->
+<!--0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\-->
+            <!--&                       &                                                   &                                                                   &   \\-->
+<!--0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0-->
+<!--\end{tikzcd}-->
+<!--\]-->
+
+
+So define $\k = \pi_1 \circ \phi\inv$ and $h = \phi \circ \iota_2$.
+It can then be checked that $g \circ h = g \circ \phi \circ \iota_2 = \pi_2 \circ \iota_2 = \id_{M_3}$. $\qed$
+
+## Free Modules
+
+A free module is a module with a basis.
+
+Definition:
+A subset $X = \theset{x_i}$ is *linearly independent* iff $\sum r_i x_i = 0 \implies r_i = 0 ~\forall i$.
+
+Definition:
+A subset $X$ *spans* $M$ iff $m\in M \implies m = \sum^n r_i x_i$.
+
+Definition:
+A subset $X$ is a basis
+
+Example: 
+$\ZZ_6$ is an abelian group and thus a $\ZZ\dash$module, but not free because $3 \actson [2] = [6] = 0$, so there are torsion elements.
+
+> This might contradict linear independence?
+
+Theorem (Characterization of Free Modules):
+Let $R$ be a unital ring and $M$ a unital $R\dash$module (so $1\actson m = m$).
+Then TFAE:
+
+- There exists a nonempty basis of $M$.
+- $M = \oplus_{i\in I} R$ for some index set $I$.
+- There exists a non-empty set $X$ and a map $\iota: X \injects M$ such that given $f: X \to N$ for $N$ any $R\dash$ module, $\exists! \tilde f: M \to N$ such that the following diagram commutes.
+
+\[
+\begin{tikzcd}
+M \arrow[rrdd, "\exists! \tilde f", dotted] &  &   \\
+                                            &  &   \\
+X \arrow[rr, "f"] \arrow[uu, "\iota", hook] &  & N
+\end{tikzcd}
+\]
+Definition:
+An $R\dash$module is *free* iff any of 1,2,3 hold.
+
+Proof of $1 \implies 2$:
+
+Let $X$ be a basis for $M$, then define $M \to \oplus_{x\in X} Rx$ by $\phi(m) = \sum r_i x_i$.
+It can be checked that 
+
+- This is an $R\dash$module homomorphism,
+- $\phi(m) = 0 \implies r_j = 0 ~\forall j \implies m = 0$, so $\phi$ is injective,
+- $\phi$ is surjective, since $X$ is a spanning set.
+
+So $M \cong \oplus_{x\in X} Rx$, so it only remains to show that $Rx \cong R$.
+We can define the map $R \mapsvia{\pi_x} Rx$ by $r \mapsto rx$, then $\pi_x$ is onto, and is injective exactly because $X$ is a linearly independent set.
+Thus $M \cong \oplus R$.
+
+Proof $1 \implies 3$:
+
+Let $X$ be a basis, and suppose there are two maps $X \mapsvia{\iota} M$ and $X \mapsvia{f} M$. 
+Then define $\tilde f: M \to N$ by $\sum r_i x_i \mapsto \sum r_i f(x_i)$.
+This is clearly an $R\dash$module homomorphism, and the diagram commutes because $(\tilde f \circ \iota)(x) = f(x)$.
+This is unique because $\tilde f$ is determined precisely by $f(X)$.o
+
+Proof $3 \implies 2$:
+
+We use the usual "2 diagram" trick to produce a map $\tilde f: M \to \oplus_{x\in X} R$ and $\tilde g: \oplus_{x\in X}R \to M$, then commutativity forces $\tilde f \circ \tilde g = \tilde g \circ \tilde f = \id$. 
+
+Proof $2 \implies 1$:
+
+We have $M = \oplus_{i\in I} R$ by (2).
+So there exists a $\psi: \oplus_{i\in I} R \to M$, so let $X \coloneqq \theset{\psi(1_i) \mid i\in I}$.
+The claim is that $X$ is a basis.
+To see this is a basis, suppose $\sum r_i \psi(1_i) = 0$, then $\psi(\sum r_i 1_i) = 0$ and thus $\sum r_i 1_i = 0$ and $r_i = 0$ for all $i$.
+Checking that it's a spanning set: exercise. $\qed$
+
+Corollary:
+Every $R\dash$module is the homomorphic image of a free module.
+
+
+Proof: 
+Let $M$ be an $R\dash$module, and let $X$ be any set of generators of $R$. 
+Then we can make a map $M \to \oplus{x\in X} R$ and there is a map $X \injects M$, so the universal property provides $\tilde f: \oplus_{x\in X} R \to M$. 
+Moreover, $\oplus_{x\in X} R$ is free.
+
+Examples:
+
+- $\ZZ_n$ is not a free $\ZZ\dash$module.
+- If $V$ is a vector space over a field $k$, then $V$ is a free $k\dash$module (even if infinite dimensional).
+- Every nonzero submodule of a free module over a PID is free.
+
+Some facts:
+
+Let $R = k$ be a field (or potentially a division ring).
+
+1. Every maximal linearly independent subset is a basis for $V$.
+2. Every vector space has a basis.
+3. Every linearly independent set is contained in a basis
+4. Every spanning set contains a basis.
+5. Any two bases of a vector space have the same cardinality.
+
+
+Theorem (Invariant Dimension):
+Let $R$ be a commutative ring and $M$ a free $R\dash$module.
+If $X_1, X_2$ are bases for $R$, then $\abs{X_1} = \abs{X_2}$.
+
+Any ring satisfying this property is said to have the *invariant dimension property*.
+
+> Note that it's difficult to say much more about generic modules, e.g. a finitely generated module may not have an invariant number of generators.
+
+# Tuesday November 5
+
+Let $R$ be a PID. 
+Then any nonzero submodule of a free module over a PID is free, and any projective module over $R$ is free.
+
+In general, free implies projective, where a module is projective iff it is a direct summand of a free module, but projective does not imply free.
+
+Example:
+
+Consider $\ZZ_6 = \ZZ_2 \oplus \ZZ_3$ as a $\ZZ\dash$module.
+Is this free as a $\ZZ\dash$module?
+Note that $\ZZ_2$ is a submodule, but is not itself a free module over $\ZZ$.
+What fails here is that $\ZZ_6$ is not a PID, because it is not a domain.
+
+Definition:
+Let $m\in M$ a module, then define
+$$
+\mathrm{Ann}_m \coloneqq \theset{r\in R \suchthat r.m = 0 } \normal R.
+$$
+We can then define a map
+\[
+\begin{align*}
+\phi: R \to R.m \\
+r \mapsto r.m
+.\end{align*}
+\]
+
+Then $\ker \phi = \mathrm{Ann}_m$, and $R/\mathrm{Ann} \cong R.m$.
+
+We can also define 
+$$
+M_t \coloneqq \theset{m\in M \suchthat \mathrm{Ann}_m \neq 0} \leq M.
+$$
+
+Lemma:
+Let $R$ be a PID and $p$ a prime element. Then
+
+- If $p^i m = 0$ then $\mathrm{Ann}_m = (p^j)$ where $0\leq j\leq i$.
+- If $\mathrm{Ann}_m = (p^i)$, then $p^jm \neq 0$ for any $j < m$.
+
+Proof of (1):
+
+Since we are in a PID and the annihilator is an ideal, we have $\mathrm{Ann}_m \coloneqq (r)$ for some $r\in M$.
+Then $p^i \in (r)$, so $r \divides p^i$.
+But $p$ was prime, to up to scaling by units, we have $r = p^j$ for some $j \leq i$.
+
+Proof of (2):
+
+Towards a contradiction, suppose that $\mathrm{Ann}_m = (p^i)$ and $p^jm = 0$ for some $j < i$.
+Then $p^j \in \mathrm{Ann}_m$, so $p^j \divides p^i$.
+But this forces $j \leq i$, a contradiction.
+
+Some terminology:
+
+- $\mathrm{Ann}_m$ is the *order ideal* of $m$
+- $M_t$ is the *torsion* submodule of $M$
+- $M$ is *torsion* iff $M = M_t$
+- $M$ is *torsion free* iff $M_t = 0$.
+- $\mathrm{Ann}_m = (r)$ is said to have *order* $r$
+- $Rm$ is a *cyclic module generated by $m$*
+
+Theorem:
+A finitely generated torsion-free module over a PID is free.
+
+Proof:
+Let $M = \generators{X}$ for some finite generating set.
+We can assume $M \neq (0)$.
+If $m\neq 0 \in M$, with $rm = 0$ iff $r=0$.
+
+So choose $S = \theset{x_1, \cdots , x_n} \subseteq X$ to be a maximal linearly independent subset of generators, so $\sum r_i x_i = 0 \implies r_i = 0 ~\forall i$.
+
+Consider the submodule $F \coloneqq \generators{x_1, \cdots, x_n} \leq M$, then $S$ is a basis for $F$ and thus $F$ is free.
+The claim is that $M \cong F$.
+Supposing otherwise, let $y\in X\setminus S$.
+Then $S \union \theset{y}$ can not be linearly independent, so there exists $r_y, r_i \in R$ such that $r_y y + \sum r_i x^i = 0$.
+Thus $r_y y = - \sum r_i x^i$, where $r_y \neq 0$.
+
+Since $\abs X < \infty$, let $r = \prod_{y \in X\setminus S} r_y$. 
+Then $rX = \theset{rx \suchthat x\in X} \subseteq F$, and $rM \leq F$.
+
+Now define $f: M \to M$ by $f(m) \coloneqq rm$ with the particular $r$ we've just defined.
+Then $\im f = r.M$.
+Since $M$ is torsion-free, $\ker f = (0)$. 
+Thus $M \cong rM \subseteq F$, making $M$ free.
+
+Theorem:
+Let $M$ be a finitely generated module over a PID $R$.
+Then $M$ can be decomposed as $M \cong M_t \oplus F$ where $M_t$ is torsion and $F$ is free of finite rank and $F \cong M/M_t$.
+
+> Note: we also have $M/F \cong F_t$ since this is a direct sum.
+
+Proof:
+The module $M/M_t$ is torsion free.
+Suppose that $r(m + M_t) = M_t$, so that $r$ acting on a coset is the zero coset.
+Then $rm + M_t = M_t$, so $rm \in M_t$, so there exists some $r'$ such that $r'(rm) = 0$ by definition of $M_t$.
+But then $(r'r)m = 0$, so in fact $m\in M_t$ and thus $m + M_t = M_t$, making $M/M_t$ torsion free.
+
+So we have a SES
+\[
+\begin{align*}
+0 \to M_t \to M \to M/M_t \coloneqq F \to 0
+,\end{align*}
+\]
+
+and since we've shown that $F$ is torsion-free, by the previous theorem $F$ is free.
+Moreover, every SES with a free module in the right-hand slot splits.
+
+\[
+\begin{tikzcd}
+             &  &                &  &                    &  & X \arrow[dd, "\iota", hook] \arrow[lldd, "f", tail]          &  &   \\
+             &  &                &  &                    &  &                                                              &  &   \\
+0 \arrow[rr] &  & M_t \arrow[rr] &  & M \arrow[rr, "f"'] &  & F \arrow[rr] \arrow[ll, "h" description, dotted, bend right] &  & 0
+\end{tikzcd}
+\]
+
+For $X = \theset{x_j}$ a generating set of $F$, we can choose elements $\theset{y_i} \in \pi\inv(\iota(X))$ to construct a set map $f: X \to M$.
+By the universal property of free modules, we get a map $h: F \to M$.
+It remains to check that this is actually a splitting, but we have
+$$
+\pi \circ h (x_j) = \pi(h(\iota(x_j))) = \pi(f(x_j)) = \pi(y_j) = x_j.
+$$
+
+
+
