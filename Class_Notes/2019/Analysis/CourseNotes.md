@@ -2487,4 +2487,9 @@ The map $x \mapsto \norm{x}$ does in fact define a norm.
 > The key to establishing this is the triangle inequality, since many of the other necessary properties fall out easily.
 
 
+We'll need the Schwarz inequality, i.e.
+$$
+\abs{\inner{x}{y}} \leq \norm{x} \norm{y},
+$$
 
+with equality iff $x = \lambda y$.
