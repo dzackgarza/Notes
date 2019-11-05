@@ -181,7 +181,12 @@ G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi) = 0
 
 Using the following facts, 
 
-- $\del_\xi G(\xi) = -2\pi \xi G(\xi)$ by computing directly,
+\[
+\begin{align}
+\del_\xi G(\xi) = -2\pi \xi G(\xi)
+.\end{align}
+\]
+
 - $\del_\xi \hat G(\xi) = - 2 \pi \xi \hat G(\xi)$, which follows from the following computation
 
 \[
