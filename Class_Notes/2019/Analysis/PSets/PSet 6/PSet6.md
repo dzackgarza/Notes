@@ -352,3 +352,5 @@ If an interchange of integrals is justified, we can compute
 
 Thus $F(\xi)$ is the Fourier transform of the function $g(x) \coloneqq f(x)/\norm{f}_1$.
 
+> To see that the interchange is justified, note that if we compute $\int \abs{\cdots} ~ dt$.
+
