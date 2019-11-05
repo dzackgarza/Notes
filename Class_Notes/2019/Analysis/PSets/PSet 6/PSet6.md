@@ -86,8 +86,8 @@ Let $g(x) = f(x-y)$. We then have
 &= \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi) \exp(-2\pi i y\cdot \xi) ~dx \\ 
 &= \exp(-2\pi i y \cdot \xi) \int f(x-y) \exp(-2\pi i (x-y) \cdot \xi) ~dx \\
 &\quad\quad (t = x-y, dt = dx) \\
-&= \exp(-2\pi i y \cdot \xi) \int f(t) \exp(-2\pi i t \cdot \xi) ~dt \\
-&= \exp(-2\pi i y \cdot \xi) \hat f(\xi) 
+&= e^{-2\pi i y \cdot \xi} \int f(t) e^{-2\pi i t \cdot \xi} ~dt \\
+&= e^{-2\pi i y \cdot \xi} \hat f(\xi) 
 .\end{align*}
 \]
 
