@@ -14,7 +14,7 @@ Assuming the hint, we have
 
 The fact that the limit as $\xi \to \infty$ is equivalent to the limit $\xi' \to 0$ is a direct consequence of computing
 $$
-\lim_{\xi \to \infty} \frac{\xi}{2\abs{\xi}^2 }
+\lim_{\abs{\xi} \to \infty} \frac{\xi}{2\abs{\xi}^2 }
 $$
 
 But as an immediate consequence, this yields
