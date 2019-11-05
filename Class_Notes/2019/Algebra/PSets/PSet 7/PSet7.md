@@ -20,5 +20,20 @@ But then
 \begin{align*}
 xa &= \left( \sum_{i=1}^n r_i a_i \right) a \\
 &= \sum_{i=1}^n r_i a_i a \\
-.\end{align*}
+&\coloneqq \sum_{i=1}^n r_i a_i',
+\end{align*}
 \]
+
+where $a_i' \coloneqq a_i a$ for each $i$, which is still an element of $A$ since $A$ itself is a module and thus closed under multiplication.
+
+But this expresses $xa$ as an element of $IS$. Similarly, we have
+\[
+\begin{align*}
+ax &= a \left( \sum_{i=1}^n r_i a_i \right)\\
+&= \sum_{i=1}^n a r_i a_i a \\
+&\coloneqq \sum_{i=1}^n r_i a a_i,
+&\coloneqq \sum_{i=1}^n r_i a_i',
+\end{align*}
+\]
+
+
