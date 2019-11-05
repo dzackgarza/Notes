@@ -81,8 +81,8 @@ Then $\lim_{\abs \xi \to \infty} \hat I (\xi) \neq 0$, which by Problem 1 shows 
 Let $g(x) = f(x-y)$. We then have
 \[
 \begin{align*}
-\hat g(\xi) &\coloneqq \int g(x) \exp(-2\pi i x\cdot \xi) ~dx \\
-&= \int f(x-y) \exp(-2\pi i x\cdot \xi) ~dx \\
+\hat g(\xi) &\coloneqq \int g(x) e^{-2\pi i x\cdot \xi} ~dx \\
+&= \int f(x-y) e^{-2\pi i x\cdot \xi} ~dx \\
 &= \int f(x-y) e^{-2\pi i (x-y) \cdot \xi} e^{-2\pi i y\cdot \xi} ~dx \\ 
 &= e^{-2\pi i y \cdot \xi} \int f(x-y) e^{-2\pi i (x-y) \cdot \xi} ~dx \\
 &\quad\quad (t = x-y, dt = dx) \\
