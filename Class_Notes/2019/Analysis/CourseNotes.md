@@ -2547,7 +2547,8 @@ We have
 } \\
 &\leq
 \abs{\inner{x_n - x}{y}} + \abs{\inner{x}{y_n - y}} \\
-&\leq \norm{x_n - x}\norm{y} + \norm{x} \norm{y_n - y}\quad\quad\text{by Schwarz}
+&\leq \norm{x_n - x}\norm{y} + \norm{x} \norm{y_n - y}\quad\quad\text{by Schwarz} \\
+& \to 0
 .\end{align*}
 \]
 
