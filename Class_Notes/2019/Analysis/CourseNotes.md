@@ -2511,3 +2511,8 @@ Definition:
 An inner product space that is *complete* with respect to $\norm{\wait}$ induced from its inner product is a *Hilbert space*.
 
 > Recall that a Banach space is a complete normed space.
+
+Examples:
+
+- $\CC^n$ with $\inner{x}{y} = \sum x_j \overline{y_j}$
+- $\ell^2(\NN)$ with $\inner{x}{y} = \sum^\infty x_j y_j$ with $\sum \abs{x_j} < \infty$ and similarly for $y$.
