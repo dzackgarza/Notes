@@ -195,10 +195,10 @@ and we claim that $\del_\xi \hat G(\xi) = - 2 \pi \xi \hat G(\xi)$ as well, whic
 &= \int G(x) \del_\xi e^{-2\pi i x \cdot \xi} ~dx \\
 &= \int G(x) (-2\pi i x)e^{-2\pi i x \cdot \xi} ~dx \\
 &= \int G(x) (-2\pi i x)e^{-2\pi i x \cdot \xi} ~dx \\
-&= -i \int 2\pi x G(x) e^{-2\pi i x \cdot \xi} ~dx \\
-&= -i \int \del_x G(x) e^{-2\pi i x \cdot \xi} ~ dx \quad\quad\text{by (1)} \\
-&\coloneqq -i ~\widehat{\del_x G(x)} (\xi) \\
-&= -i ~(2\pi i \xi \hat G(\xi))\quad\quad\text{by part (i)}  \\
+&= i \int 2\pi x G(x) e^{-2\pi i x \cdot \xi} ~dx \\
+&= i \int \del_x G(x) e^{-2\pi i x \cdot \xi} ~ dx \quad\quad\text{by (1)} \\
+&\coloneqq i ~\widehat{\del_x G(x)} (\xi) \\
+&= i ~(2\pi i \xi \hat G(\xi))\quad\quad\text{by part (i)}  \\
 &= -2\pi \xi \hat G(\xi)
 ,\end{align*}
 \]
