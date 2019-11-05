@@ -8,15 +8,15 @@ Assuming the hint, we have
 
 \[
 \begin{align*}
-\lim_{\abs \xi \to \infty} \hat f(\xi) = \lim_{\xi' \to 0} \frac 1 2 \int_{\RR^n} (f()) - f(x - \xi')) \exp(-2\pi i x \cdot \xi) ~dx \\
+\lim_{\abs \xi \to \infty} \hat f(\xi) = \lim_{\xi' \to 0} \frac 1 2 \int_{\RR^n} (f()) - f(x - \xi')) e^{-2\pi i x \cdot \xi} ~dx \\
 .\end{align*}
 \]
 
 But as an immediate consequence, this yields
 \[
 \begin{align*}
-\abs{\hat f (\xi)} &= \abs{\int_{\RR^n} (f(x) - f(x-\xi')) \exp(-2\pi i x\cdot \xi) ~dx} \\
-&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} \abs{\exp(-2\pi i x\cdot \xi)} ~dx \\
+\abs{\hat f (\xi)} &= \abs{\int_{\RR^n} (f(x) - f(x-\xi')) e^{-2\pi i x\cdot \xi} ~dx} \\
+&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} \abs{e^{-2\pi i x\cdot \xi}} ~dx \\
 &\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
 &\to 0
 ,\end{align*}
