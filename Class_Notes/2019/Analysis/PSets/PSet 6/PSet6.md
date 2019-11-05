@@ -138,10 +138,7 @@ Let $g(x) = xf(x)$. Then if an interchange of the derivative and the integral is
 &\coloneqq 2\pi i \hat g (\xi)
 .\end{align*}
 \]
-
-It thus remains to show that this interchange is justified.
-TODO
-
+> To see that the interchange is justified, we just note that we can apply the dominated convergence theorem, since $\int \abs{f(x) e^{-2\pi i x \cdot \xi}} \leq \int \abs{f} < \infty$, where we assumed $f\in L^1$.
 
 ### (ii)
 
