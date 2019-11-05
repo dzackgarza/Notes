@@ -2561,6 +2561,7 @@ Proof: Use $\norm{x \pm y}^2 + \norm{x}^2 \pm 2\mathrm{Re}\inner{x}{y} + \norm{y
 
 Proposition (Pythagorean):
 $$
-\inner{x}{y} = 0 \implies \norm{x+y}^2 = \norm{x}^2 + \norm{y}^2
+\inner{x}{y} = 0 \implies \norm{x+y}^2 = \norm{x}^2 + \norm{y}^2.
 $$
 
+In this situation, we say $x,y$ are orthogonal.
