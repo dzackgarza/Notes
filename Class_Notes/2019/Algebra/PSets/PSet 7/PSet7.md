@@ -38,3 +38,4 @@ ax &= a \left( \sum_{i=1}^n r_i a_i \right)\\
 
 and so $ax \in IS$ as well.
 
+## Part 2
