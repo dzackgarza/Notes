@@ -8,7 +8,7 @@ Assuming the hint, we have
 
 \[
 \begin{align*}
-\lim_{\abs \xi \to \infty} \hat f(\xi) = \lim_{\xi' \to 0} \frac 1 2 \int_{\RR^n} \left[ f(x)) - f(x - \xi') \right] e^{-2\pi i x \cdot \xi} ~dx \\
+\lim_{\abs \xi \to \infty} \hat f(\xi) = \lim_{\abs{\xi'} \to 0} \frac 1 2 \int_{\RR^n} \left[ f(x)) - f(x - \xi') \right] e^{-2\pi i x \cdot \xi} ~dx \\
 .\end{align*}
 \]
 
