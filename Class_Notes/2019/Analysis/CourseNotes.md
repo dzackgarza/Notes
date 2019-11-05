@@ -2516,3 +2516,4 @@ Examples:
 
 - $\CC^n$ with $\inner{x}{y} = \sum x_j \overline{y_j}$
 - $\ell^2(\NN)$ with $\inner{x}{y} = \sum^\infty x_j y_j$ with $\sum \abs{x_j} < \infty$ and similarly for $y$.
+  Note that this is finite by AMGM, since $\sum x_i y_i \leq \frac 1 2 (\sum x_i + \sum y_i) < \infty$ by assumption.
