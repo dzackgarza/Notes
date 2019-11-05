@@ -2507,4 +2507,5 @@ We'll use the following computation often:
 .\end{align*}
 \]
 
-
+Definition:
+An inner product space that is *complete* with respect to $\norm{\wait}$ induced from its inner product is a *Hilbert space*.
