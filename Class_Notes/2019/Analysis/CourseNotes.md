@@ -2494,4 +2494,17 @@ $$
 
 with equality iff $x = \lambda y$.
 
+We'll use the following computation often:
+
+\[
+\begin{align*}
+\norm{x + y}^2 
+&= \inner{x+y}{x+y} \\
+&= \norm{x}^2 + 2\mathrm{Re}\inner{x}{y} + \norm{y}^2 \\
+&\leq \norm{x}^2 + \abs{\inner{x}{y}} + \norm{y}^2 \\
+&\leq \norm{x}^2 + 2\norm{x}\norm{y} + \norm{y}^2 \quad\quad\text{by Schwarz} \\
+&= (\norm{x} + \norm{y})^2
+.\end{align*}
+\]
+
 
