@@ -31,7 +31,7 @@ But this expresses $xa$ as an element of $IS$. Similarly, we have
 \begin{align*}
 ax &= a \left( \sum_{i=1}^n r_i a_i \right)\\
 &= \sum_{i=1}^n a r_i a_i a \\
-&\coloneqq \sum_{i=1}^n r_i a a_i,
+&\coloneqq \sum_{i=1}^n r_i a a_i, \\
 &\coloneqq \sum_{i=1}^n r_i a_i',
 \end{align*}
 \]
