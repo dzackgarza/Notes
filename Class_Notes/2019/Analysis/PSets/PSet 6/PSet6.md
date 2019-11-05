@@ -200,10 +200,10 @@ and we claim that $\del_\xi \hat G(\xi) = - 2 \pi \xi \hat G(\xi)$ as well, whic
 &\coloneqq i ~\widehat{\del_x G(x)} (\xi) \\
 &= i ~(2\pi i \xi \hat G(\xi))\quad\quad\text{by part (i)}  \\
 &= -2\pi \xi \hat G(\xi)
-,\end{align*}
+.\end{align*}
 \]
 
-we can thus write
+We can thus write
 \[
 \begin{align*}
 G(\xi) \del_\xi \hat G(\xi) - \hat G(\xi) \del_\xi G(\xi) 
