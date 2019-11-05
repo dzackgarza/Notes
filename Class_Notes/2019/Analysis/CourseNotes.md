@@ -2475,4 +2475,8 @@ Today: Hilbert Spaces
 An *inner product* on a vector space satisfies
 
 - $\inner{ax + by}{z} = a \inner{x}{z} + b\inner{y}{z}$
-- $\inner{x}{y} = \overline{\inner{y}{x}}$.
+  i.e., for all fixed $z\in V$, the map $x \mapsto \inner{x}{z}$ is a *linear functional*.
+- $\inner{x}{y} = \overline{\inner{y}{x}}$
+- $\inner{x}{x} \in (0, \infty)$
+
+
