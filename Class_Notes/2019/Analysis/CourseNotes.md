@@ -2474,4 +2474,5 @@ Today: Hilbert Spaces
 
 An *inner product* on a vector space satisfies
 
-- $\inner{ax + by}{z} = a \inner{x}{z} + b\inner{y}{z}$.
+- $\inner{ax + by}{z} = a \inner{x}{z} + b\inner{y}{z}$
+- $\inner{x}{y} = \overline{\inner{y}{x}}$.
