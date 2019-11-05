@@ -37,7 +37,7 @@ Assuming an interchange of integrals is justified, we have
 &= \int \int f(t) e^{-2\pi i (x-y) \cdot \xi} ~g(y) ~e^{-2\pi i y \cdot \xi} ~dx ~dy \\
 &\quad\quad (t = x-y, ~dt = ~dx) \\
 &= \int \int f(t) e^{-2\pi i t \cdot \xi} g(y) e^{-2\pi i y \cdot \xi} ~dt~dy \\
-&= \int f(t) e^{-2\pi i t \cdot \xi} \left( \int g(y) e^{-2\pi i y \cdot \xi} ~dy \right) ~dt \\
+&= \int f(t) e^{-2\pi i t \cdot \xi} \left( \int ~g(y)~ e^{-2\pi i y \cdot \xi} ~dy \right) ~dt \\
 &= \int f(t) \exp(-2\pi i t \cdot \xi) \hat g(\xi) ~dt \\
 &= \hat g(\xi) \int f(t) \exp(-2\pi i t \cdot \xi) ~dt \\
 &= \hat g(\xi) \hat f(\xi) 
