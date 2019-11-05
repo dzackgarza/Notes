@@ -32,14 +32,14 @@ It thus only remains to show that the hint holds, and that $\xi' \to 0$ as $\xi 
 Assuming an interchange of integrals is justified, we have
 \[
 \begin{align*}
-\widehat(f\ast g)( \xi ) &\coloneqq \int \int f(x-y) g(y) e^{-2\pi x \cdot \xi} ~dy~dx \\
-&=_? \int \int f(x-y) g(y) e^{-2\pi x \cdot \xi} ~dx~dy \\
-&= \int \int f(t) e^{-2\pi i (x-y) \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi} ~dx ~dy \\
+\widehat(f\ast g)( \xi ) &\coloneqq \int \int f(x-y) g(y) \exp(-2\pi x \cdot \xi) ~dy~dx \\
+&=_? \int \int f(x-y) g(y) \exp(-2\pi x \cdot \xi) ~dx~dy \\
+&= \int \int f(t) \exp(-2\pi i (x-y) \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi) ~dx ~dy \\
 &\quad\quad (t = x-y, ~dt = ~dx) \\
-&= \int \int f(t) e^{-2\pi i t \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi} ~dt~dy \\
-&= \int f(t) e^{-2\pi i t \cdot \xi) \left( \int g(y) \exp(-2\pi i y \cdot \xi) ~dy \right} ~dt \\
-&= \int f(t) e^{-2\pi i t \cdot \xi) \hat g(\xi} ~dt \\
-&= \hat g(\xi) \int f(t) e^{-2\pi i t \cdot \xi} ~dt \\
+&= \int \int f(t) \exp(-2\pi i t \cdot \xi) g(y) \exp(-2\pi i y \cdot \xi) ~dt~dy \\
+&= \int f(t) \exp(-2\pi i t \cdot \xi) \left( \int g(y) \exp(-2\pi i y \cdot \xi) ~dy \right) ~dt \\
+&= \int f(t) \exp(-2\pi i t \cdot \xi) \hat g(\xi) ~dt \\
+&= \hat g(\xi) \int f(t) \exp(-2\pi i t \cdot \xi) ~dt \\
 &= \hat g(\xi) \hat f(\xi) 
 .\end{align*}
 \]
@@ -190,7 +190,7 @@ Using the following facts,
 &\coloneqq \del_\xi \int G(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= \int G(x) \del_\xi \exp(-2\pi i x \cdot \xi) ~dx \\
 &= \int G(x) (-2\pi i x)\exp(-2\pi i x \cdot \xi) ~dx \\
-&= \int (2\pi i x G(x)) \exp(-2\pi i x \cdot \xi) ~dx \\
+&= \int G(x) (-2\pi i x)\exp(-2\pi i x \cdot \xi) ~dx \\
 &= -i \int 2\pi x G(x) \exp(-2\pi i x \cdot \xi) ~dx \\
 &= -i \int \del_x G(x) \exp(-2\pi i x \cdot \xi) ~ dx \\
 &\coloneqq -i ~\widehat{\del_x G(x)} (\xi) \\
