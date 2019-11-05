@@ -2583,5 +2583,5 @@ We say $\theset{u_n}$ is an orthonormal *basis* for $H$ if $\span \theset{u_n}$ 
 
 Theorem:
 Let $\theset{u_n}$ be a countable orthonormal basis of $H$.
-Then for any $x\in H$, the *best approximation* to $x$ by a sum $\sum_{n=1}^N a_n u_n$.
+Then for any $x\in H$, the *best approximation* to $x$ by a sum $\sum_{n=1}^N a_n u_n$ when $a_n = \inner{x}{u_n}$.
 
