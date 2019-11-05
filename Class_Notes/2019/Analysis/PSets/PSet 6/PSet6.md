@@ -325,9 +325,10 @@ Thus
 
 where the first term is obtained by directly evaluating the integral, and the second is derived from the fact that its integral over the real line is 1 and it is an even function.
 
-> Justifying the interchange: we note that the integrand $G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1}$ is non-negative, so Tonelli will apply if the integrand is measurable. But $G_t(x)$ is a continuous function on $\RR^n$ and the remaining terms are continuous on $\RR$, so
+> Justifying the interchange: we note that the integrand $G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1}$ is non-negative, and we've just showed that one of the iterated integrals is absolutely convergent, so Tonelli will apply if the integrand is measurable. 
+> But $G_t(x)$ is a continuous function on $\RR^n$ and the remaining terms are continuous on $\RR$, so
 > they are all measurable on $\RR^n$ and $\RR$ respectively 
-> But then taking cylinders on them all still yields measurable functions, and the product of measurable functions is measurable. Since we also showed that the integrand was absolutely integrable, Tonelli applies.
+> But then taking cylinders on everything in sight yields measurable functions, and the product of measurable functions is measurable. 
 
 
 If another interchange of integrals is justified, we can compute
