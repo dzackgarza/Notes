@@ -39,3 +39,22 @@ ax &= a \left( \sum_{i=1}^n r_i a_i \right)\\
 and so $ax \in IS$ as well.
 
 ## Part 2
+
+Letting $R/I \actson A/IA$ be the action given by $r+I \actions a + IA \coloneqq ra + IA$, we need to show the following:
+
+- $r.(x + y) = r.x + r.y$,
+- $(r + r').x = r.x + r'.x$,
+- $(rs).x = r.(s.x)$, and
+- $1.x = x$.
+
+Letting $\oplus$ denote the addition defined on cosets, we have
+\[
+\begin{align*}
+r \actson (x + IA \oplus y + IA) 
+&\coloneqq r \actson x + y + IA \\
+&\coloneqq r(x+y) + IA \\
+&= rx + ry + IA \\
+&\coloneqq rx + IA \oplus ry + IA \\
+&\coloneqq (r \actson x + IA) \oplus (r\actson y + IA)
+.\end{align*}
+\]
