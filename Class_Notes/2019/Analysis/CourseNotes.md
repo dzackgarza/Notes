@@ -2529,3 +2529,24 @@ Proof of Schwarz Inequality:
   Then we get $0 < \norm{x}^2 - 2t\abs{\inner{x}{y}} + t^2 \norm{y}^2$
   But this is quadratic in $t$ and doesn't have a real root, so its discriminant must be negative.
   Thus $4\abs{\inner{x}{y}}^2 - 4\norm{y}^2 \norm{x}^2$, which yields Cauchy-Schwarz.
+
+Application of the Schwarz Inequality:
+
+If $x_n \to x$ in $V$, i.e. $\norm{x_n - x} \to 0$, and similarly $y_n \to y$, we have $\inner{x_n}{y_n} \to \inner{x}{y}$ in $\CC$.
+
+Proof:
+
+We have
+\[
+\begin{align*}
+\abs{
+\inner{x_n}{y_n} - \inner{x}{y}
+}
+&= \abs{
+\inner{x_n - x}{y} + \inner{x}{y_n - y}
+} \\
+&\leq
+\abs{\inner{x_n - x}{y}} + \abs{\inner{x}{y_n - y}} \\
+&\leq \norm{x_n - x}\norm{y} + \norm{x} \norm{y_n - y}\quad\quad\text{by Schwarz}
+.\end{align*}
+\]
