@@ -2598,5 +2598,6 @@ Proof:
 ,\end{align*}
 \]
 where equality is attained iff $a_n = \inner{x}{u_n} = a_n$.
+So this is the best approximation.
 
 > Hint: these are equalities, which are somehow simpler to show -- they necessarily involve direct computations.
