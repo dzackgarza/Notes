@@ -2933,3 +2933,30 @@ The module $M/M_t$ is torsion free.
 Suppose that $r(m + M_t) = M_t$, so that $r$ acting on a coset is the zero coset.
 Then $rm + M_t = M_t$, so $rm \in M_t$, so there exists some $r'$ such that $r'(rm) = 0$ by definition of $M_t$.
 But then $(r'r)m = 0$, so in fact $m\in M_t$ and thus $m + M_t = M_t$, making $M/M_t$ torsion free.
+
+So we have a SES
+\[
+\begin{align*}
+0 \to M_t \to M \to M/M_t \coloneqq F \to 0
+,\end{align*}
+\]
+
+and since we've shown that $F$ is torsion-free, by the previous theorem $F$ is free.
+Moreover, every SES with a free module in the right-hand slot splits.
+
+\[
+\begin{tikzcd}
+             &  &                &  &                    &  & X \arrow[dd, "\iota", hook] \arrow[lldd, "f", tail]          &  &   \\
+             &  &                &  &                    &  &                                                              &  &   \\
+0 \arrow[rr] &  & M_t \arrow[rr] &  & M \arrow[rr, "f"'] &  & F \arrow[rr] \arrow[ll, "h" description, dotted, bend right] &  & 0
+\end{tikzcd}
+\]
+
+For $X = \theset{x_j}$ a generating set of $F$, we can choose elements $\theset{y_i} \in \pi\inv(\iota(X))$ to construct a set map $f: X \to M$.
+By the universal property of free modules, we get a map $h: F \to M$.
+It remains to check that this is actually a splitting, but we have
+$$
+\pi \circ h (x_j) = \pi(h(\iota(x_j))) = \pi(f(x_j)) = \pi(y_j) = x_j.
+$$
+
+
