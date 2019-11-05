@@ -360,6 +360,6 @@ If another interchange of integrals is justified, we can compute
 \int_{\RR^n} \int_0^\infty \abs{G_t(x) e^{-\pi t^2} t^{2\varepsilon -1}} ~dt ~dx 
 ,\end{align*}
 \]
-> since $\abs{e^{2\pi i x \cdot \xi}} = 1$. The integrand appearing is precisely what we showed was measurable when computed $\norm{f}_1$ above. So Tonelli applies.
+> since $\abs{e^{2\pi i x \cdot \xi}} = 1$. The integrand appearing is precisely what we showed was measurable when computed $\norm{f}_1$ above, so Tonelli applies.
 
 Thus $F(\xi)$ is the Fourier transform of the function $g(x) \coloneqq f(x)/\norm{f}_1$. $\qed$
