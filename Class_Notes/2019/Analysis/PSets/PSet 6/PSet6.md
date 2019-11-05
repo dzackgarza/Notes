@@ -355,7 +355,8 @@ Thus $F(\xi)$ is the Fourier transform of the function $g(x) \coloneqq f(x)/\nor
 > To see that the interchange is justified, note that if we compute $\int \abs{\cdots} ~ dt$.
 \[
 \begin{align*}
-\int_{\RR^n} \int_0^\infty \abs{G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} e^{-2\pi i x \cdot \xi} }~dt ~dx \\
+\int_{\RR^n} \int_0^\infty \abs{G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} e^{-2\pi i x \cdot \xi} }~dt ~dx =
 \int_{\RR^n} \int_0^\infty \abs{G_t(x) e^{-\pi t^2} t^{2\varepsilon -1}} ~dt ~dx 
-.\end{align*}
+,\end{align*}
 \]
+> where the integrand is now precisely what we showed was measurable when compute $\norm{f}_1$ above.
