@@ -330,7 +330,7 @@ where the first term is obtained by directly evaluating the integral, and the se
 > But then taking cylinders on them all still yields measurable functions, and the product of measurable functions is measurable. Since we also showed that the integrand was absolutely integrable, Tonelli applies.
 
 
-If an interchange of integrals is justified, we can compute
+If another interchange of integrals is justified, we can compute
 
 \[
 \begin{align*}
