@@ -2905,3 +2905,7 @@ Proof:
 Let $M = \generators{X}$ for some finite generating set.
 We can assume $M \neq (0)$.
 If $m\neq 0 \in M$, with $rm = 0$ iff $r=0$.
+
+So choose $S = \theset{x_1, \cdots , x_n} \subseteq X$ to be a maximal linearly independent subset of generators, so $\sum r_i x_i = 0 \implies r_i = 0 ~\forall i$.
+
+Consider the submodule $F \coloneqq \generators{x_1, \cdots, x_n} \leq M$, then $S$ is a basis for $F$.
