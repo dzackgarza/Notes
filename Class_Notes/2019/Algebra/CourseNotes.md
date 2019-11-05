@@ -2919,4 +2919,5 @@ Then $rX = \theset{rx \suchthat x\in X} \subseteq F$.
 
 Now define $f: M \to M$ by $f(m) \coloneqq rm$ with the particular $r$ we've just defined.
 Then $\im f = r.M$.
-Since $M$ is torsion-free, $\ker f = (0)$.
+Since $M$ is torsion-free, $\ker f = (0)$. 
+Thus $M \cong rM$.
