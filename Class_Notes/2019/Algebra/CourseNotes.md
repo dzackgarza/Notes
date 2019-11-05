@@ -2839,6 +2839,7 @@ Any ring satisfying this property is said to have the *invariant dimension prope
 
 # Tuesday November 5
 
+
 Let $R$ be a PID. 
 Then any nonzero submodule of a free module over a PID is free, and any projective module over $R$ is free.
 
@@ -2955,9 +2956,19 @@ Moreover, every SES with a free module in the right-hand slot splits.
 For $X = \theset{x_j}$ a generating set of $F$, we can choose elements $\theset{y_i} \in \pi\inv(\iota(X))$ to construct a set map $f: X \to M$.
 By the universal property of free modules, we get a map $h: F \to M$.
 It remains to check that this is actually a splitting, but we have
+
 $$
 \pi \circ h (x_j) = \pi(h(\iota(x_j))) = \pi(f(x_j)) = \pi(y_j) = x_j.
 $$
+Lemma:
+Let $R$ be a PID, and $r\in R$ factor as $r = \prod p_i^{k_i}$ as a prime factorization. 
+Then
+$$
+R/(r) \cong \bigoplus R/(p_i^{k_i}).
+$$
 
+Since we have a UFD, suppose that $\gcd(s ,t) = 1$. 
+Then the claim is that $R/(st) = R/(s) \oplus R/(t)$, which will prove the lemma by induction.
 
+Define a map $R/(s) \oplus R/(t) \to R/(st)$ by $(x + (s), y+(t)) \mapsto tx + sy + (st)$.
 
