@@ -40,7 +40,7 @@ and so $ax \in IS$ as well.
 
 ## Part 2
 
-Letting $R/I \actson A/IA$ be the action given by $r+I \actions a + IA \coloneqq ra + IA$, we need to show the following:
+Letting $R/I \actson A/IA$ be the action given by $r+I \actson + IA \coloneqq ra + IA$, we need to show the following:
 
 - $r.(x + y) = r.x + r.y$,
 - $(r + r').x = r.x + r'.x$,
