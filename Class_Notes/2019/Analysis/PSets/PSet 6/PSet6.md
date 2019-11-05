@@ -32,8 +32,8 @@ It thus only remains to show that the hint holds, and that $\xi' \to 0$ as $\xi 
 Assuming an interchange of integrals is justified, we have
 \[
 \begin{align*}
-\widehat{f\ast g}( \xi ) &\coloneqq \int \int f(x-y) g(y)~ e^{-2\pi x \cdot \xi} ~dy~dx \\
-&=_? \int \int f(x-y) g(y)~ e^{-2\pi x \cdot \xi} ~dx~dy \\
+\widehat{f\ast g}( \xi ) &\coloneqq \int \int f(x-y) g(y)~ e^{-2\pi ix \cdot \xi} ~dy~dx \\
+&=_? \int \int f(x-y) g(y)~ e^{-2\pi i x \cdot \xi} ~dx~dy \\
 &= \int \int f(t) e^{-2\pi i (x-y) \cdot \xi} ~g(y) ~e^{-2\pi i y \cdot \xi} ~dx ~dy \\
 &\quad\quad (t = x-y, ~dt = ~dx) \\
 &= \int \int f(t) e^{-2\pi i t \cdot \xi} g(y) e^{-2\pi i y \cdot \xi} ~dt~dy \\
@@ -45,7 +45,8 @@ Assuming an interchange of integrals is justified, we have
 \]
 > To see that this swap is justified, we'll apply Fubini-Tonelli. Note that if $f, g \in L^1(\RR^n)$, then the map $(x, y) \mapsto f(x - y)$ is measurable on $\RR^n \cross \RR^n$. 
 > Since $g$ is measurable as well, taking the cylinder on $g$ is also measurable on $\RR^n\cross \RR^n$.
-> Thus the integrand is a product of measurable functions and thus measurable. In particular, $\abs{fg}$ is also measurable.
+> The exponential is continuous, and thus measurable on $\RR^n$.
+> Thus the integrand is a product of measurable functions and thus measurable. In particular, $\abs{fg }$ is also measurable.
 > From a previous homework question, we know that $f\in L^1 \implies \hat f$ is bounded, and thus $\hat f \hat g$ is bounded.
 > Since $\abs{fg}$ is measurable and one iterated integrable was finite, Fubini-Tonelli applies
 
