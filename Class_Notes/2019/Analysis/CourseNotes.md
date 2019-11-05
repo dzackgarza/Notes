@@ -2609,6 +2609,8 @@ $$
 
 so $\sum \abs{\inner{x}{u_n}}^2 \leq \norm{x}^2$ holds for every $N$, and thus for the infinite sum, which is **Bessel's inequality**.
 
+> If this is an equality, then this is exactly Parseval's theorem.
+
 
 Theorem (Riesz-Fischer):
 
@@ -2618,4 +2620,9 @@ Moreover, $x$ can be chosen such that $\norm{x} = \sqrt{\sum \abs{a_n}^2}$.
 
 > Note: this is not a bijection, there may not be a unique $x$, and $a_n$ are referred to as the Fourier coefficient.
 > Also note that if in fact $a_n = 0$ for all $n$ implies $x=0$, the set $\theset{u_n}$ is said to be *complete*. 
-> This turns out to be equivalent to $\theset{u_n}$ being a basis.
+> This turns out to be equivalent to $\theset{u_n}$ being a basis, which is equivalent to the convergence of Fourier series, which is also equivalent to something else.
+
+
+# 
+
+
