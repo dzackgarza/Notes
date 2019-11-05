@@ -2539,17 +2539,28 @@ Proof:
 We have
 \[
 \begin{align*}
-\abs{
-\inner{x_n}{y_n} - \inner{x}{y}
-}
-&= \abs{
-\inner{x_n - x}{y} + \inner{x}{y_n - y}
-} \\
-&\leq
-\abs{\inner{x_n - x}{y}} + \abs{\inner{x}{y_n - y}} \\
+\abs{ \inner{x_n}{y_n} - \inner{x}{y} } &= \abs{ \inner{x_n - x}{y} + \inner{x}{y_n - y} } \\
+&\leq \abs{\inner{x_n - x}{y}} + \abs{\inner{x}{y_n - y}} \\
 &\leq \norm{x_n - x}\norm{y} + \norm{x} \norm{y_n - y}\quad\quad\text{by Schwarz} \\
 & \to 0
 .\end{align*}
 \]
 
 > Exercise: Show $\norm{y_n - y} \to 0$ iff $\norm{y_n} \to \norm{y}$.
+
+Proposition (Parallelogram Law):
+
+Let $H$ be an inner product space, then 
+$$
+\norm{x+y}^2 + \norm{x-y}^2 = 2(\norm{x}^2 + \norm{y}^2)
+$$
+
+> Exercise: Prove using parallelogram diagram.
+
+Proof: Use $\norm{x \pm y}^2 + \norm{x}^2 \pm 2\mathrm{Re}\inner{x}{y} + \norm{y}^2$, so just add and the cross-terms will cancel.
+
+Proposition (Pythagorean):
+$$
+\inner{x}{y} = 0 \implies \norm{x+y}^2 = \norm{x}^2 + \norm{y}^2
+$$
+
