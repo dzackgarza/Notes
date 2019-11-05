@@ -353,4 +353,9 @@ If an interchange of integrals is justified, we can compute
 Thus $F(\xi)$ is the Fourier transform of the function $g(x) \coloneqq f(x)/\norm{f}_1$.
 
 > To see that the interchange is justified, note that if we compute $\int \abs{\cdots} ~ dt$.
-
+\[
+\begin{align*}
+\int_{\RR^n} \int_0^\infty \abs{G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} e^{-2\pi i x \cdot \xi} }~dt ~dx \\
+\int_{\RR^n} \int_0^\infty \abs{G_t(x) e^{-\pi t^2} t^{2\varepsilon -1}} ~dt ~dx 
+.\end{align*}
+\]
