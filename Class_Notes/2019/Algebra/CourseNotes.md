@@ -2989,3 +2989,7 @@ Then
 a. $M \cong F \bigoplus_{i=1}^t R/(r_i)$ where $F$ is free of finite rank and $r_1 \divides r_2 \divides \cdots \divides r_t$.
   The rank and list of ideals occurring is uniquely determined by $M$. 
   The $r_i$ are referred to as the *invariant factors*.
+
+b. $M \cong F \bigoplus_{i=1}^k R/(p_i^{s_i})$ where $F$ is free of finite rank and $p_i$ are primes that need not be distinct.
+  The rank and ideals are uniquely determined by $M$.
+  The $p_i^{s_i}$ are referred to as *elementary divisors*.
