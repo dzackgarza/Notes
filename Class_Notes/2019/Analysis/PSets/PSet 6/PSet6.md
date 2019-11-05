@@ -15,15 +15,17 @@ Assuming the hint, we have
 But as an immediate consequence, this yields
 \[
 \begin{align*}
-\abs{\hat f (\xi)} &= \abs{\int_{\RR^n} \left[ f(x) - f(x-\xi')\right] e^{-2\pi i x\cdot \xi} ~dx} \\
-&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~~\abs{e^{-2\pi i x\cdot \xi}} ~dx \\
-&\leq \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
+\abs{\hat f (\xi)} &= \frac 1 2 \abs{\int_{\RR^n} \left[ f(x) - f(x-\xi')\right] e^{-2\pi i x\cdot \xi} ~dx} \\
+&\leq \frac 1 2 \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~~\abs{e^{-2\pi i x\cdot \xi}} ~dx \\
+&\leq \frac 1 2 \int_{\RR^n} \abs{f(x) - f(x-\xi')} ~dx \\
 &\to 0
 ,\end{align*}
 \]
 which follows from continuity in $L^1$ since $f(x - \xi') \to f(x)$ as $\xi' \to 0$.
 
 It thus only remains to show that the hint holds, and that $\xi' \to 0$ as $\xi \to \infty$.
+
+
 
 # Problem 2
 
