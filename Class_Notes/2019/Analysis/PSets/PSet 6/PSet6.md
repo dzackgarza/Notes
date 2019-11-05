@@ -298,18 +298,20 @@ Moreover, if an interchange of integrals is justified, we have have
 \[
 \begin{align*}
 \norm{f}_1 &\coloneqq
-\int_\RR \abs{\int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt  } ~dx \\
-&= \int_\RR \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt ~dx \\
+\int_{\RR^n} \abs{\int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt  } ~dx \\
+&= \int_{\RR^n} \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dt ~dx \\
 &\quad\quad \text{since the integrand and thus integral is positive.} \\
-&= \int_0^\infty \int_\RR G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dx ~dt \\
+&= \int_0^\infty \int_{\RR^n} G_t(x) e^{-\pi t^2} t^{2\varepsilon - 1} ~dx ~dt \\
 &\quad\quad \text{By Tonelli} \\
-&= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( \int_\RR G_t(x) ~dx \right) ~dt \\
+&= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( \int_{\RR^n} G_t(x) ~dx \right) ~dt \\
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} \left( 1 \right) ~dt \\
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon - 1} ~dt
 ,\end{align*}
 \]
 
 which we claim is finite, so $f\in L^1$.
+
+> Justifying the interchange: we note that the integrand is non-negative, so Tonelli will apply if the integrand is measurable. But each term appearing is a continuous function on $\RR$, and all continuous functions are measurable. 
 To see this, we note that $$t \in [0, 1] \implies e^{-\pi t^2} < 1$$, and if we take $\varepsilon < \frac 1 2$, we $2 \varepsilon - 1 < 0$ and thus $$t \in [1, \infty) \implies t^{2\varepsilon - 1} \leq 1.$$
 Thus
 \[
@@ -332,8 +334,8 @@ If an interchange of integrals is justified, we can compute
 \hat f(\xi) 
 &\coloneqq \int_\RR \left( \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} ~dt \right) e^{-2\pi i x \cdot \xi} ~dx \\
 &= \int_\RR \int_0^\infty G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} e^{-2\pi i x \cdot \xi} ~dt ~dx \\
-&=_? \int_0^\infty \int_\RR G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} e^{-2\pi i x \cdot \xi} ~dx ~dt \\
-&= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon -1} \left( \int_\RR G_t(x) e^{-2\pi i x \cdot \xi} ~dx \right) ~dt \\
+&=_? \int_0^\infty \int_{\RR^n} G_t(x) e^{-\pi t^2} t^{2\varepsilon -1} e^{-2\pi i x \cdot \xi} ~dx ~dt \\
+&= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon -1} \left( \int_{\RR^n} G_t(x) e^{-2\pi i x \cdot \xi} ~dx \right) ~dt \\
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon -1} \hat G_t(\xi) ~dt \\
 &= \int_0^\infty e^{-\pi t^2} t^{2\varepsilon -1} e^{-\pi t^2 \abs{\xi}^2} ~dt \\
 &= \int_0^\infty e^{-\pi t^2(1 + \abs{\xi}^2)} t^{2\varepsilon -1} ~dt \\
