@@ -14,8 +14,10 @@ Assuming the hint, we have
 
 The fact that the limit as $\xi \to \infty$ is equivalent to the limit $\xi' \to 0$ is a direct consequence of computing
 $$
-\lim_{\abs{\xi} \to \infty} \frac{\xi}{2\abs{\xi}^2 } = \lim {\abs{\xi} \to \infty} \frac{1}{2\abs{\xi}} \frac{\xi}{\abs \xi}
+\lim_{\abs{\xi} \to \infty} \frac{\xi}{2\abs{\xi}^2 } = \lim_{\abs{\xi} \to \infty} \frac{1}{2\abs{\xi}} \frac{\xi}{\abs \xi} = 0,
 $$
+
+since $\frac \xi {\abs{\xi}}$ is a unit vector.
 
 But as an immediate consequence, this yields
 \[
