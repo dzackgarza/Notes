@@ -2588,4 +2588,8 @@ Then for any $x\in H$, the *best approximation* to $x$ by a sum $\sum_{n=1}^N a_
 > Note: these $a_n$ will be Fourier coefficients later!
 
 Proof:
-
+\[
+\begin{align*}
+\norm{x - \sum a_n u_n}^2 &= \norm{x}^2 - 2\mathrm{Re} \sum \inner{x}{u_n}a_n + \sum \abs{a_n}^2
+.\end{align*}
+\]
