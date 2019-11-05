@@ -2970,7 +2970,7 @@ $$
 Since we have a UFD, suppose that $\gcd(s ,t) = 1$. 
 Then the claim is that $R/(st) = R/(s) \oplus R/(t)$, which will prove the lemma by induction.
 
-Define a map $R/(s) \oplus R/(t) \to R/(st)$ by $(x + (s), y+(t)) \mapsto tx + sy + (st)$.
+Define a map $\alpha: R/(s) \oplus R/(t) \to R/(st)$ by $(x + (s), y+(t)) \mapsto tx + sy + (st)$.
 
 *Exercise: show this map is well-defined.*
 
@@ -2978,4 +2978,6 @@ Since $\gcd(s, t) = 1$, there exist $u, v$ such that $su + vt = 1$.
 Then for any $r\in R$, we have $rsu + rvt = r$, so for any given $r\in R$ we can pick $x, y$ appropriately to equal this, so the map is onto. (??)
 
 Now suppose $tx + sy \in (st)$, then $tx + sy  = stz$. We have $su + vt = 1$, and thus $utx + usy  = ustz$ and $utx + (y-tvy) = ustz$.
+
+We can thus write $y = ustv - utx + tvy  \in (t)$. Similarly, $x\in (t)$, so $\ker \alpha = 0$.
 
