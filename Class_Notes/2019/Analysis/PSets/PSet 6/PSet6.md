@@ -114,10 +114,10 @@ where $A^{-T}$ denotes the transpose of the inverse of $A$ (or $(A\inv)^*$ if $V
 We then have
 \[
 \begin{align*}
-\frac{1}{\abs{\det T}} \hat f( T^{-T} \xi ) &= \frac{1}{\abs{\det T}} \int f(x) \exp(-2\pi i x \cdot T^{-T} \xi) ~dx \\
+\frac{1}{\abs{\det T}} \hat f( T^{-T} \xi ) &= \frac{1}{\abs{\det T}} \int f(x) e^{-2\pi i x \cdot T^{-T} \xi} ~dx \\
 &\quad\quad\quad x \mapsto Tx,~~ ~dx \mapsto \abs{\det T} ~dx \\
-&= \frac{1}{\abs{\det T}} \int f(Tx) \exp(-2\pi i Tx \cdot T^{-T} \xi) \abs{\det T} ~dx \\
-&= \int f(Tx) \exp(-2\pi i x \cdot \xi) ~dx \\
+&= \frac{1}{\abs{\det T}} \int f(Tx) e^{-2\pi i Tx \cdot T^{-T} \xi} \abs{\det T} ~dx \\
+&= \int f(Tx) e^{-2\pi i x \cdot \xi} ~dx \\
 &\quad\quad\quad \text{since } Tx \cdot T^{-T}\xi = T\inv T x \cdot \xi = x\cdot \xi \\
 &= \widehat{(f\circ T)}(\xi)
 .\end{align*}
