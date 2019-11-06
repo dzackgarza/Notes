@@ -16,7 +16,7 @@ Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 
 > The $ n=2 $ case was proven by Poincare.
 
-> The $ n=3 $ case was recently proven by Perelman.
+> The $ n=3 $ case was recently proven by Perelman (Ricci flow, Ben Chow).
 
 > The $ n=4 $ case is the only outstanding case
 
