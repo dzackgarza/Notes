@@ -70,7 +70,8 @@ If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k
 > - $H_3 X = \ZZ$ since $X$ is orientable
 > - $H_2 X = H^1 X$ by Poincare duality. What group is this?
 >   - $0 \rightarrow \operatorname{Ext}_{\Sigma}^{1}\left(H_{0}(X ; \mathbb{Z}), \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(H_{1}(X ; \mathbb{Z}), \mathbb{Z}\right) \rightarrow 0$ yields
->   - $0 \rightarrow \operatorname{Ext}_{\Sigma}^{1}\left(\ZZ, \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(H_{1}(X ; \mathbb{Z}), \mathbb{Z}\right) \rightarrow 0$
+>   - $0 \rightarrow \operatorname{Ext}_{\Sigma}^{1}\left(\ZZ, \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(0, \mathbb{Z}\right) \rightarrow 0$
+> - $0 \rightarrow \operatorname{Ext}_{\Sigma}^{1}\left(\ZZ, \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(0, \mathbb{Z}\right) \rightarrow 0$
 
 # Theorems
 
