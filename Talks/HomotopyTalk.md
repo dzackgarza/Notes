@@ -65,6 +65,8 @@ H(\wait, 0) = P_1(\wait)\\
 H(\wait, 1) = P_2(\wait)\\
 $$
 
+such that the associated function 
+
 **Definition (Homotopic Maps)**
 Given two maps $f, g: X \to Y$
 
