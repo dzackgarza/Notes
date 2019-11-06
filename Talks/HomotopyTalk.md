@@ -49,11 +49,12 @@ is a graded isomorphism.
 
 # Theorems
 
-**Theorem (Whitehead):**
 
 **Theorem (CW Approximation)**:
 For every topological space $X$, there exists a CW complex $\tilde X$ and a weak homotopy equivalence $f: X \to \tilde X$.:w
 
+**Theorem (Whitehead):**
+If $f: X\to Y$ is a weak equivalence between CW complexes, then it is a homotopy equivalence.
 
 **Theorem (Hurewicz):**
 
