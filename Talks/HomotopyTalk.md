@@ -18,6 +18,7 @@
 **Definition (CW Complex)**
 
 **Definition (Cellular Map)**
+A map between $f:X \to Y$ between CW complex is *cellular* if $f(X^k) \subseteq Y^k$ for every $k$.
 
 **Definition (Homotopy Equivalence)**
 Two spaces $X, Y$ are said to be *homotopy equivalent* if there exists a maps $f: X \to Y$ and $f\inv: Y \to X$ such that
