@@ -175,6 +175,8 @@ $$
 
 $X = S^n$ yields *stable homotopy groups of spheres*, ties back to initial motivation.
 
+Noting that $\Sigma S^n = S^{n+1}$, we could alternatively define $\mathbb{S} \definedas \lim_k \Sigma^k S^1$
+
 - The homotopy hypothesis
 - Generalized Cohomology theories
 - Stable Homotopy Theory
