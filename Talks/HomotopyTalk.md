@@ -49,6 +49,7 @@ is a graded isomorphism.
 
 > Note: 
 
+
 **Definition (Connectedness):**
 A space is said to be $n\dash$connected if $\pi_{\leq n} X = 0$.
 
@@ -86,6 +87,8 @@ For every topological space $X$, there exists a CW complex $\tilde X$ and a weak
 
 **Theorem (Whitehead):**
 If $f: X\to Y$ is a weak equivalence between CW complexes, then it is a homotopy equivalence.
+
+> Corollary (Relative Whitehead): If $f:X\to Y$ 
 
 
 
