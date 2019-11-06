@@ -28,7 +28,7 @@ Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 
 > It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth $ 4 $-dimensional Poincare conjecture would have an affirmative answer. 
 
-> Current line of attack: Gluck twists on on $S^4$
+> Current line of attack: Gluck twists on on $S^4$. Yield homeomorphic spheres, *suspected* not to be diffeomorphic, but 
 
 Generalized by Thurston's Geometrization
 
