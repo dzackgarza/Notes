@@ -67,7 +67,8 @@ If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k
 
 > - $H_0 X = \ZZ$ since $X$ is path-connected
 > - $H_3 X = \ZZ$ since $X$ is orientable
-> - 
+> - $H_2 X = H^1 X$ by Poincare duality. What group is this?
+>   - asd
 
 # Theorems
 
