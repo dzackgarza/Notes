@@ -45,7 +45,7 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 - The Kervaire invariant is an invariant of a framed manifold that measures whether the manifold could be surgically converted into a sphere. 0 if true, 1 otherwise.
 - Hill/Hopkins/Ravenel (2016): =0 for $n \geq 254$.
 - Kervaire invariant = 1 only in 2, 6, 14, 30, 62. Open case: 126. 
-- Kervaire invariant = 0 implies $\# bP_{n+1} = 2$
+- Kervaire invariant = 0 implies $\# bP_{n+1} = 2$. (Neat fact: often a Bernoulli number!)
 
 > Parallelizable/framed: Trivial tangent bundle, i.e. the principal frame bundle has a smooth global section. Parallelizable spheres $S^0, S^1, S^3, S^7$ corresponding to $\RR, \CC, \mathbb{H}, \mathbb{O}$.
 
