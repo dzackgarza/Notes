@@ -6,27 +6,25 @@ Poincare, *Analysis Situs* in 1895
 
 Generalized Topological Poincare Conjecture: When is a homology sphere also a topological sphere? i.e. when does $\pi_* X \cong_{Grp} \pi_* S^n \implies X \cong_{Top} S^n$?
 
-- $n=1$: Trivial
-- $n=2$: Proved by Poincare, classical
-- $n=3$: Perelman (2006) using Ricci flow + surgery
-- $n=4$: Freedman (1982), Fields medal!
-- $n=5$: Zeeman (1961)
-- $n=6$: Stalling (1962)
-- $n\geq 7$: Smale, 1961
-
-> The n=1 case of the generalized conjecture is trivial, the n=2 case is classical (and was known to 19th century mathematicians), n=3 (the original conjecture) appears to have been proved by recent work by G. Perelman (although the proof has not yet been fully verified), n=4 was proved by Freedman (1982) (for which he was awarded the 1986 Fields medal), n=5 was demonstrated by Zeeman (1961), n=6 was established by Stallings (1962), and n>=7 was shown by Smale in 1961.
+- $n=1$: True. Trivial
+- $n=2$: True. Proved by Poincare, classical
+- $n=3$: True. Perelman (2006) using Ricci flow + surgery
+- $n=4$: True. Freedman (1982), Fields medal!
+- $n=5$: True. Zeeman (1961)
+- $n=6$: True. Stalling (1962)
+- $n\geq 7$: True. Smale, 1961
 
 Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 
-> $n \geq 5$: True 
-> By the work of Smale and Stallings, the topological Poincare conjecture was shown to be true provided $ n \geq 5 $. But for $ n \geq 7 $ Milnor and Kervaire showed that $ S^n $ admits non-standard smooth structures so the smooth Poincare conjecture is false in general.
 
-> The generalized Poincare conjecture is an undergraduate-level point-set topology problem for $ n=1 $.
-
-> The $ n=2 $ case was proven by Poincare.
-
-
-> The $ n=4 $ case is the only outstanding case
+- $n=1$: True. Trivial
+- $n=2$: True. Proved by Poincare, classical
+- $n=3$: True.  Perelman (2006) using Ricci flow + surgery
+- $n=4$: **Open**
+- $n=5$: Zeeman (1961)
+- $n=6$: Stalling (1962)
+- $n\geq 7$: False in general (Milnor and Kervaire), Exotic $S^n$
+  
 
 > It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth $ 4 $-dimensional Poincare conjecture would have an affirmative answer.
 
