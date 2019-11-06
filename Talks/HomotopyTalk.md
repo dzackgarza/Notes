@@ -95,6 +95,12 @@ $$
 \pi_n(X) \definedas [S^n, X].
 $$
 
+**Theorem**:
+$$
+n\geq 2 \implies [S^n, X] \in \mathrm{Ab}.
+$$
+In words, higher homotopy groups are abelian. We have a complete classification of abelian groups, so we know $\pi_n(X) = F \oplus T$ for some free and torsion parts.
+
 **Theorem (Hopf, 1931):**
 $$[S^3, S^2] = \ZZ \neq 0$$
 > Recall that homology vanishes above the dimension of a given manifold!
