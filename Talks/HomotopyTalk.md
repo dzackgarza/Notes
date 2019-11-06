@@ -1,5 +1,7 @@
 # History
 
+Poincare, *Analysis Situs* in 1890s
+
 # Motivation
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
