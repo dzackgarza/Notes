@@ -56,9 +56,11 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 # Background
 
 **Definition (Homotopy)**
-Given two maps $f, g: X \to Y$
+Given two paths $P_1, P_2: I \to X$ (where we identify the paths with their images under these maps),
 
 **Definition (Homotopic Maps)**
+Given two maps $f, g: X \to Y$
+
 
 **Definition (Fundamental Group)**
 
