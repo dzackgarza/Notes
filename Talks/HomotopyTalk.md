@@ -41,7 +41,7 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 
 > Application: what spheres admit unique smooth structures?
 
-Define $bP_{n+1} \leq \Theta_n$
+Define $bP_{n+1} \leq \Theta_n$ the subgroup of spheres that bound *parallelizable* manifolds,
 
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
