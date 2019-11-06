@@ -60,7 +60,9 @@ Given two paths $P_1, P_2: I \to X$ (where we identify the paths with their imag
 $$
 H: I \to (I \to X) \\
 H(0, \wait) = x_0 \\
+H(\wait, 0) = P_1(\wait)\\
 H(1, \wait) = x_1 \\
+H(\wait, 2) = P_1(\wait)\\
 $$
 
 **Definition (Homotopic Maps)**
