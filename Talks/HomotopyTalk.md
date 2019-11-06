@@ -16,6 +16,15 @@
 **Definition (Cellular Map)**
 
 **Definition (Weak Equivalence)**
+A continuous map
+$$
+f: X \to Y 
+$$
+is called a *weak homotopy equivalence* if the induced map
+$$
+f_*: \pi_*(X) \to \pi_*(Y)
+$$
+is a graded isomorphism.
 
 # Theorems
 
