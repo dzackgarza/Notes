@@ -64,6 +64,7 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 **Definition (Higher Homotopy Groups)**
 
 **Definition (CW Complex)**
+A CW complex
 
 **Definition (Cellular Map)**
 A map between $f:X \to Y$ between CW complex is *cellular* if $f(X_{(k)}) \subseteq Y_{(k)}$ for every $k$.
