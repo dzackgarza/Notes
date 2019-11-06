@@ -282,3 +282,5 @@ B_2 \arrow[r]                                   & B_3 \arrow[r]                 
 \end{tikzcd}
 \end{center}
 ```
+
+Let $y \in B_3$; we want to then show that there exists an $x\in A_3$ such that $f(x) = y$.
