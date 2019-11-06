@@ -10,6 +10,16 @@ Generalized Topological Poincare Conjecture: When is a homology sphere also a to
 
 Smooth Poincare Conjecture: When is a homology sphere a smooth sphere?
 
+> By the work of Smale and Stallings, the topological Poincare conjecture was shown to be true provided $ n \geq 5 $. But for $ n \geq 7 $ Milnor and Kervaire showed that $ S^n $ admits non-standard smooth structures so the smooth Poincare conjecture is false in general.
+
+> The generalized Poincare conjecture is an undergraduate-level point-set topology problem for $ n=1 $.
+
+> The $ n=2 $ case was proven by Poincare.
+
+> The $ n=3 $ case was recently proven by Perelman.
+
+> The $ n=4 $ case is the only outstanding case
+
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
 - Framed Bordism Classes of manifolds -- $\pi_n^S$
