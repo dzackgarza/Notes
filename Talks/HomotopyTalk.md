@@ -20,6 +20,9 @@
 **Definition (Cellular Map)**
 A map between $f:X \to Y$ between CW complex is *cellular* if $f(X_{(k)}) \subseteq Y_{(k)}$ for every $k$.
 
+**Theorem (Cellular Approximation):**
+Any map $f: X \to Y$ is homotopic to a cellular map.
+
 > Application: $\pi_k S^n = 0$ if $k < n$. Use $f\in \pi_kS^n \iff f\in [S_k, S_n]$, deform $f$ to be cellular, then $f(S^k_{(k)}) \injects S^n_{(k)} = \pt$, so $f \homotopic c_0$, a constant map.
 
 **Definition (Homotopy Equivalence)**
@@ -48,11 +51,8 @@ is a graded isomorphism.
 
 **Theorem (Whitehead):**
 
-**Theorem (Cellular Approximation):**
-Any map $f: X \to Y$ is homotopic to a cellular map.
-
 **Theorem (CW Approximation)**:
-For 
+For every topological space $X$
 
 **Theorem (Hurewicz):**
 
