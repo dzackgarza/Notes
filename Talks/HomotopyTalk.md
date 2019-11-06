@@ -126,9 +126,11 @@ Example: Every graph is a 1-dimensional CW complex
 
 Example: Identification polyhedra for surfaces
 
-Example: $S_n = e_0 + e_n$ by gluing $B^{n+1}$ to a point by mapping $\del B^{n+1} \to \pt$, i.e. $B^{n+1} / B^n \cong S^n$. Can also attach two hemispheres at each $i\leq n$ to get $S^n = e_0 + e_1 + 2e_2 + \cdots + 2e_n$.
+Example: $S_n = e_0 + e_n$ by gluing $B^{n+1}$ to a point by a map $\phi: \del B^{n+1} \to \pt$, i.e. $B^{n+1} / B^n \cong S^n$. Can also attach two hemispheres at each $i\leq n$ to get $S^n = e_0 + e_1 + 2e_2 + \cdots + 2e_n$.
 
 > Note: Cellular homology is very easy to compute!
+
+> Note: Replacing $\phi$ with a homotopic map yields an equivalent CW complex. So understanding CW complexes boils down to understanding $[S^n, S^m]$ for $m < n$, i.e. higher homotopy groups of spheres.
 
 **Definition (Cellular Map)**
 A map between $f:X \to Y$ between CW complex is *cellular* if $f(X_{(k)}) \subseteq Y_{(k)}$ for every $k$.
