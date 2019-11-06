@@ -1,0 +1,522 @@
+<!DOCTYPE html><html><head>
+      <title>HomotopyTalk</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"displayMath":[["$$","$$"],["\\[","\\]"]],"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true,"processEnvironments":false},"TeX":{"extensions":["noUndefined.js","autoload-all.js","AMSmath.js","AMSsymbols.js"],"equationNumbers":{"autoNumber":"AMS"},"Macros":{"NN":["{\\mathbb{N}}",0],"RR":["{\\mathbb{R}}",0],"ZZ":["{\\mathbb{Z}}",0],"CC":["{\\mathbb{C}}",0],"QQ":["{\\mathbb{Q}}",0],"RP":["{\\mathbb{RP}}",0],"CP":["{\\mathbb{CP}}",0],"HP":["{\\mathbb{HP}}",0],"OP":["{\\mathbb{OP}}",0],"FF":["{\\mathbb{F}}",0],"PP":["{\\mathbb{P}}",0],"Af":["{\\mathbb{A}}",0],"MM":["{\\mathbb{M}}",0],"TT":["{\\mathbb{T}}",0],"Sp":["{\\mathbb{S}}",0],"KK":["{\\mathbb{K}}",0],"Gr":["{\\text{Gr}}",0],"GL":["{\\text{GL}}",0],"liegl":["{\\mathfrak{gl}}",0],"lieg":["{\\mathfrak{g}}",0],"SL":["{\\text{SL}}",0],"liesl":["{\\mathfrak{sl}}",0],"SP":["{\\text{SP}}",0],"liesp":["{\\mathfrak{sp}}",0],"SO":["{\\text{SO}}",0],"lieso":["{\\mathfrak{so}}",0],"OO":["{\\mathcal{O}}",0],"mltext":["\\left\\{\\begin{array}{c}#1\\end{array}\\right\\}",1],"dual":["\\vee",0,""],"Tr":["\\mathrm{Tr}",0],"divides":["{~\\Bigm| ~}",0],"notdivides":["{~\\not\\Bigm| ~}",0],"sym":["\\mathrm{Sym}",0],"aut":["\\mathrm{Aut}",0],"grad":["\\mathrm{grad}",0],"spec":["{\\mathrm{Spec}}",0],"suchthat":["{~\\backepsilon ~}",0],"uniformlyconverges":["\\rightrightarrows",0],"mapsvia":["\\xrightarrow{#1}",1],"generators":["\\langle{#1}\\rangle",1],"theset":["\\left\\{{#1}\\right\\}",1],"too":["{\\xrightarrow{#1}}",1,""],"norm":["{{\\lVert}{#1}{\\rVert}}",1],"restrictionof":["{\\left.{#1}\\right|_{#2}}",2],"inner":["{\\left\\langle {#1},~{#2} \\right\\rangle}",2],"indicator":["{\\unicode{x1D7D9}\\left[#1\\right]}",1],"equalsbecause":["{\\stackrel{\\mbox{$\\tiny{\\text{ #1 }}$}}{=}}",1],"conjugate":["{\\overline{{#1}}}",1],"strike":["{\\enclose{horizontalstrike}{#1}}",1],"realpart":["{\\mathcal{Re}({#1})}",1],"imaginarypart":["{\\mathcal{Im}({#1})}",1],"dd":["{\\frac{\\partial #1}{\\partial #2}}",2],"rotate":["{\\style{display: inline-block; transform: rotate(#1deg)}{#2}}",2,"90"],"stirling":["\\genfrac\\{\\}{0pt}{}{#1}{#2}",2],"thevector":["{\\left[ {#1} \\right]}",1],"intersect":["\\bigcap",0],"union":["\\bigcup",0],"coker":["\\operatorname{coker}",0],"rank":["\\operatorname{rank}",0],"tensor":["\\otimes",0],"semidirect":["\\rtimes",0],"pt":["\\{\\text{pt}\\}",0],"bd":["{\\del}",0],"wait":["{\\,\\cdot\\,}",0],"selfmap":["{\\circlearrowleft}",0],"tor":["\\text{Tor}",0],"ext":["\\text{Ext}",0],"actson":["\\curvearrowright",0],"actsonl":["\\curvearrowleft",0],"disjoint":["{\\coprod}",0],"dash":["{\\hbox{-}}",0],"bigast":["{\\mathop{\\Large \\ast}}",0],"from":["\\leftarrow",0],"covers":["\\twoheadrightarrow",0],"Zp":["\\mathbb{Z}_{(p)}",0],"Qp":["\\mathbb{Q}_{(p)}",0],"ZpZ":["\\mathbb{Z}/p\\mathbb{Z}",0],"ZnZ":["\\mathbb{Z}/n\\mathbb{Z}",0],"Sm":["{\\text{Sm}_k}",0],"GG":["{\\mathbb{G}}",0],"bung":["\\text{Bun}_G",0],"Aut":["{\\text{Aut}}",0],"del":["{\\partial}",0],"im":["{\\text{im}~}",0],"homotopic":["\\simeq",0],"into":["\\to",0],"cross":["\\times",0],"definedas":["\\mathrel{\\vcenter{:}}=",0],"surjects":["\\twoheadrightarrow",0],"onto":["\\twoheadrightarrow",0],"injects":["\\hookrightarrow",0],"id":["\\text{id}",0],"inv":["^{-1}",0],"normal":["{~\\trianglelefteq~}",0],"units":["^{\\times}",0],"annd":["{\\text{ and }}",0],"orr":["{\\text{ or }}",0],"arcsec":["\\mathrm{arcsec}",0],"multinomial":["\\left(\\!\\!{#1}\\!\\!\\right)",1],"stirlingfirst":["\\genfrac{[}{]}{0pt}{}{#1}{#2}",2],"floor":["{\\left\\lfloor #1 \\right\\rfloor}",1],"ad":["\\mathrm{ad}",0],"ch":["\\mathrm{char}~",0],"abs":["{\\left\\lvert #2 \\right\\rvert_{\\text{#1}}}",2,""],"vector":["{\\mathbf{ {#1} }}",1],"hom":["\\text{Hom}",0],"qed":["{\\tag*{$\\blacksquare$}}",0],"char":["\\text{char}",0]}},"HTML-CSS":{"availableFonts":["TeX"],"imageFont":null},"root":"vscode-resource:///home/zack/.vscode-oss/extensions/shd101wyy.markdown-preview-enhanced-0.5.0/node_modules/@shd101wyy/mume/dependencies/mathjax"});
+        </script>
+        <script type="text/javascript" async src="file:////home/zack/.vscode-oss/extensions/shd101wyy.markdown-preview-enhanced-0.5.0/node_modules/@shd101wyy/mume/dependencies/mathjax/MathJax.js" charset="UTF-8"></script>
+        
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 id="history">History</h1>
+<p>Poincare, <em>Analysis Situs</em> papers in 1895. Coined &#x201C;homeomorphism&#x201D;, defined homology, gave rigorous definition of homotopy, established &#x201C;method of invariants&#x201D; and essentially kicked off algebraic topology.</p>
+<h1 id="motivation">Motivation</h1>
+<p>Generalized Topological Poincare Conjecture: When is a homotopy sphere also a topological sphere? i.e.&#xA0;when does <span class="math inline">\(\pi_* X \cong_{Grp} \pi_* S^n \implies X \cong_{Top} S^n\)</span>?</p>
+<ul>
+<li><span class="math inline">\(n=1\)</span>: True. Trivial</li>
+<li><span class="math inline">\(n=2\)</span>: True. Proved by Poincare, classical</li>
+<li><span class="math inline">\(n=3\)</span>: True. Perelman (2006) using Ricci flow + surgery</li>
+<li><span class="math inline">\(n=4\)</span>: True. Freedman (1982), Fields medal!</li>
+<li><span class="math inline">\(n=5\)</span>: True. Zeeman (1961)</li>
+<li><span class="math inline">\(n=6\)</span>: True. Stalling (1962)</li>
+<li><span class="math inline">\(n\geq 7\)</span>: True. Smale (1961) using h-cobordism theorem, uses handle decomposition + Morse functions</li>
+</ul>
+<p>Smooth Poincare Conjecture: When is a homotopy sphere a <em>smooth</em> sphere?</p>
+<ul>
+<li><span class="math inline">\(n=1\)</span>: True. Trivial</li>
+<li><span class="math inline">\(n=2\)</span>: True. Proved by Poincare, classical</li>
+<li><span class="math inline">\(n=3\)</span>: True. (Top = PL = Smooth)</li>
+<li><span class="math inline">\(n=4\)</span>: <strong>Open</strong></li>
+<li><span class="math inline">\(n=5\)</span>: Zeeman (1961)</li>
+<li><span class="math inline">\(n=6\)</span>: Stalling (1962)</li>
+<li><span class="math inline">\(n\geq 7\)</span>: False in general (Milnor and Kervaire, 1963), Exotic <span class="math inline">\(S^n\)</span>, 28 smooth structures on <span class="math inline">\(S^7\)</span></li>
+</ul>
+<blockquote>
+<p>It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth $ 4 $-dimensional Poincare conjecture would have an affirmative answer.</p>
+</blockquote>
+<blockquote>
+<p>Current line of attack: Gluck twists on on <span class="math inline">\(S^4\)</span>. Yield homeomorphic spheres, <em>suspected</em> not to be diffeomorphic, but no known invariants can distinguish smooth structures on <span class="math inline">\(S^4\)</span>.</p>
+</blockquote>
+<p>Relation to homotopy: Define a monoid <span class="math inline">\(G_n\)</span> with</p>
+<ul>
+<li>Objects: smooth structures on the <span class="math inline">\(n\)</span> sphere (identified as oriented smooth <span class="math inline">\(n\dash\)</span>manifolds which are homeomorphic to <span class="math inline">\(S^n\)</span>)</li>
+<li>Binary operation: Connect sum</li>
+</ul>
+<p>For <span class="math inline">\(n\neq 4\)</span>, this is a group. Turns out to be isomorphic to <span class="math inline">\(\Theta_n\)</span>, the group of <span class="math inline">\(h\dash\)</span>cobordism classes of &#x201C;homotopy <span class="math inline">\(S^n\)</span>s&#x201D;</p>
+<p>Recently (almost) resolved question: what is <span class="math inline">\(\Theta_n\)</span> for all <span class="math inline">\(n\)</span>?</p>
+<blockquote>
+<p>Application: what spheres admit unique smooth structures?</p>
+</blockquote>
+<ul>
+<li>Define <span class="math inline">\(bP_{n+1} \leq \Theta_n\)</span> the subgroup of spheres that bound <em>parallelizable</em> manifolds (define in a moment).</li>
+<li>The Kervaire invariant is an invariant of a framed manifold that measures whether the manifold could be surgically converted into a sphere. 0 if true, 1 otherwise.</li>
+<li>Hill/Hopkins/Ravenel (2016): = 0 for <span class="math inline">\(n \geq 254\)</span>.</li>
+<li>Kervaire invariant = 1 only in 2, 6, 14, 30, 62. Open case: 126.</li>
+<li>Punchline: there is a map <span class="math inline">\(\Theta_n/bP_{n+1} \to \pi_n^S/ J\)</span>, (to be defined) and the Kervaire invariant influences the size of <span class="math inline">\(bP_{n+1}\)</span>. This reduces the differential topology problem of classifying smooth structures to (essentially) computing homotopy groups of spheres.</li>
+<li>Open question: is there a manifold of dimension 126 with Kervaire invariant 1?</li>
+</ul>
+<blockquote>
+<p>Parallelizable/framed: Trivial tangent bundle, i.e.&#xA0;the principal frame bundle has a smooth global section. Parallelizable spheres <span class="math inline">\(S^0, S^1, S^3, S^7\)</span> corresponding to <span class="math inline">\(\RR, \CC, \mathbb{H}, \mathbb{O}\)</span>.</p>
+</blockquote>
+<ul>
+<li>Framed Bordism Classes of manifolds &#x2013; <span class="math inline">\(\Omega^{fr}_n \cong \pi_n^S\)</span> &gt; Note: bordism is one of the coarsest equivalence relations we can put on manifolds. Hope to understand completely!</li>
+</ul>
+<h1 id="background">Background</h1>
+<p><strong>Definition (Homotopy)</strong> Given two paths <span class="math inline">\(P_1, P_2: I \to X\)</span> (where we identify the paths with their images under these maps), then a <em>homotopy</em> from <span class="math inline">\(P_1\)</span> to <span class="math inline">\(P_2\)</span> is a function <span class="math display">\[
+H: I \to (I \to X) \\
+H(0, \wait) = x_0 \\
+H(1, \wait) = x_1 \\ \\
+H(\wait, 0) = P_1(\wait)\\
+H(\wait, 1) = P_2(\wait)\\
+\]</span></p>
+<p>such that the associated &#x201C;partially applied&#x201D; function <span class="math inline">\(H_t: I \to X\)</span> is continuous.</p>
+<p><strong>Definition (Homotopic Maps)</strong> Given two maps <span class="math inline">\(f, g: X \to Y\)</span>, we say <span class="math inline">\(f\)</span> is <em>homotopic</em> to <span class="math inline">\(g\)</span> and write <span class="math inline">\(f \sim g\)</span> if there is a homotopy <span class="math display">\[
+H: I \to (X \to Y) \\
+H(0, \wait) = f(\wait)\\
+H(1, \wait) = g(\wait)\\
+\]</span></p>
+<p>such that <span class="math inline">\(H_t: X \to Y\)</span> is continuous.</p>
+<blockquote>
+<p>Can think of this as a map from the cylinder on <span class="math inline">\(X\)</span> into <span class="math inline">\(Y\)</span>, or deformations through continuous functions.</p>
+</blockquote>
+<blockquote>
+<p>Note: This is an equivalence relation. If <span class="math inline">\(f: X \to Y\)</span> is a map, we write <span class="math inline">\([X, Y]\)</span> to denote the homotopy classes of maps <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span>.</p>
+</blockquote>
+<p><strong>Definition (Fundamental Group)</strong> <span class="math display">\[
+\pi_1(X) \definedas [S^1, X].
+\]</span></p>
+<blockquote>
+<p>Note that this actually measures homotopy classes of <em>loops</em> in <span class="math inline">\(X\)</span>.</p>
+</blockquote>
+<p>Example: <span class="math inline">\(\pi_1 T^2 = \ZZ^{\ast 2}\)</span>, a <em>free</em> abelian group of rank 2.</p>
+<p><strong>Definition (Higher Homotopy Groups)</strong> <span class="math display">\[
+\pi_n(X) \definedas [S^n, X].
+\]</span></p>
+<p>Introduced by Cech in 1932, Alexandrov reportedly told him to withdraw because it couldn&#x2019;t possibly be the right generalization due to the following theorem:</p>
+<p><strong>Theorem</strong>: <span class="math display">\[
+n\geq 2 \implies [S^n, X] \in \mathrm{Ab}.
+\]</span> In words, higher homotopy groups are abelian. We have a complete classification of abelian groups, so we know <span class="math inline">\(\pi_n(X) = F \oplus T\)</span> for some free and torsion parts.</p>
+<p><strong>Theorem (Hopf, 1931):</strong> <span class="math display">\[[S^3, S^2] = \ZZ \neq 0\]</span></p>
+<blockquote>
+<p>Recall that homology vanishes above the dimension of a given manifold!</p>
+</blockquote>
+<p>This group is generated by the <em>Hopf fibration</em>, and provides infinitely many ways of &#x201C;wrapping&#x201D; a 3-sphere around a 2-sphere nontrivially! This was surprising and unexpected</p>
+<p><strong>Definition (CW Complex)</strong> A CW complex is any space built from the following inductive process:</p>
+<blockquote>
+<p>Denote <span class="math inline">\(X_n\)</span> the <span class="math inline">\(n\dash\)</span>skeleton.</p>
+</blockquote>
+<ul>
+<li><p>Let <span class="math inline">\(X_0\)</span> by a discrete set of points.</p></li>
+<li><p>Let <span class="math inline">\(X_{n+1}\)</span> be obtained from <span class="math inline">\(X_n\)</span> by taking a collection of <span class="math inline">\(n\dash\)</span> balls and glue them to <span class="math inline">\(X_n\)</span> by maps <span class="math display">\[\phi: \del B^n \to X_n\]</span>.</p></li>
+<li><p>If infinitely many stages, let <span class="math inline">\(X = \union X_n\)</span> with the weak topology</p>
+<p>(i.e.&#xA0;a set <span class="math inline">\(A \subset X\)</span> is open iff <span class="math inline">\(A \intersect X_n\)</span> is open for all <span class="math inline">\(n\)</span>)</p></li>
+</ul>
+<p>Example: Every graph is a 1-dimensional CW complex</p>
+<p>Example: Identification polyhedra for surfaces</p>
+<p>Example: <span class="math inline">\(S_n = e_0 + e_n\)</span> by gluing <span class="math inline">\(B^{n+1}\)</span> to a point by a map <span class="math inline">\(\phi: \del B^{n+1} \to \pt\)</span>, i.e.&#xA0;<span class="math inline">\(B^{n+1} / B^n \cong S^n\)</span>. Can also attach two hemispheres at each <span class="math inline">\(i\leq n\)</span> to get <span class="math inline">\(S^n = e_0 + e_1 + 2e_2 + \cdots + 2e_n\)</span>.</p>
+<blockquote>
+<p>Note: Cellular homology is very easy to compute!</p>
+</blockquote>
+<blockquote>
+<p>Note: Replacing <span class="math inline">\(\phi\)</span> with a homotopic map yields an equivalent CW complex. So understanding CW complexes boils down to understanding <span class="math inline">\([S^n, S^m]\)</span> for <span class="math inline">\(m &lt; n\)</span>, i.e.&#xA0;higher homotopy groups of spheres.</p>
+</blockquote>
+<p><strong>Definition (Cellular Map)</strong> A map between <span class="math inline">\(f:X \to Y\)</span> between CW complex is <em>cellular</em> if <span class="math inline">\(f(X_{(k)}) \subseteq Y_{(k)}\)</span> for every <span class="math inline">\(k\)</span>.</p>
+<p><strong>Theorem (Cellular Approximation):</strong> Any map <span class="math inline">\(f: X \to Y\)</span> is homotopic to a cellular map.</p>
+<blockquote>
+<p>Application: <span class="math inline">\(\pi_k S^n = 0\)</span> if <span class="math inline">\(k &lt; n\)</span>. Use <span class="math inline">\(f\in \pi_kS^n \iff f\in [S_k, S_n]\)</span>, deform <span class="math inline">\(f\)</span> to be cellular, then <span class="math inline">\(f(S^k_{(k)}) \injects S^n_{(k)} = \pt\)</span>, so <span class="math inline">\(f \homotopic c_0\)</span>, a constant map.</p>
+</blockquote>
+<p><strong>Definition (Homotopy Equivalence)</strong> Two spaces <span class="math inline">\(X, Y\)</span> are said to be <em>homotopy equivalent</em> if there exists a maps <span class="math inline">\(f: X \to Y\)</span> and <span class="math inline">\(f\inv: Y \to X\)</span> such that <span class="math display">\[
+f\circ f\inv \homotopic \id_Y \\
+f\inv \circ f \homotopic \id_X
+\]</span></p>
+<p><strong>Definition (Weak Equivalence)</strong> A continuous map <span class="math display">\[
+f: X \to Y 
+\]</span> is called a <em>weak homotopy equivalence</em> if the induced map <span class="math display">\[
+f_*: \pi_*(X) \to \pi_*(Y)
+\]</span> is a graded isomorphism.</p>
+<blockquote>
+<p>Note that this is a strictly weaker notion than homotopy equivalence &#x2013; we don&#x2019;t require an explicit inverse.</p>
+</blockquote>
+<blockquote>
+<p>Note that a weak homotopy equivalence also induces isomorphisms on all homology and cohomology.</p>
+</blockquote>
+<p><strong>Theorem (Whitehead):</strong> If <span class="math inline">\(f: X\to Y\)</span> is a weak equivalence between CW complexes, then it is a homotopy equivalence.</p>
+<blockquote>
+<p>Corollary (Relative Whitehead): If <span class="math inline">\(f:X\to Y\)</span> between CW complexes induces an isomorphism <span class="math inline">\(H_* X \cong H_* Y\)</span>, then <span class="math inline">\(f\)</span> is a weak equivalence.</p>
+</blockquote>
+<p><strong>Theorem (CW Approximation)</strong>: For every topological space <span class="math inline">\(X\)</span>, there exists a CW complex <span class="math inline">\(\tilde X\)</span> and a weak homotopy equivalence <span class="math inline">\(f: X \to \tilde X\)</span>.</p>
+<blockquote>
+<p>Note: Weak equivalences = equivalences for CW complexes, which means we can essentially throw out the distinction!</p>
+</blockquote>
+<blockquote>
+<p>Note: This says that if we understand CW complexes, we essentially understand the category hoTop completely. Moreover, we only have to understand spaces up to <em>weak</em> equivalence, i.e.&#xA0;we just need to check induced maps on <span class="math inline">\(\pi_*\)</span> instead of checking for inverse maps.</p>
+</blockquote>
+<p><strong>Definition (Connectedness):</strong> A space is said to be <span class="math inline">\(n\dash\)</span>connected if <span class="math inline">\(\pi_{\leq n} X = 0\)</span>.</p>
+<blockquote>
+<p>Recall that a space is <em>simply connected</em> iff <span class="math inline">\(\pi_1 X = 0\)</span>.</p>
+</blockquote>
+<p><strong>Theorem (Hurewicz):</strong> Given a fixed space <span class="math inline">\(X\)</span>, any map <span class="math inline">\(f \in \pi_kX = [S^k, X]\)</span> has the type <span class="math inline">\(f: S^k \to X\)</span>. This induces a map <span class="math inline">\(f_*: H_* S^k \to H_* X\)</span>. Since <span class="math inline">\(H_k S^k \cong \ZZ \cong \generators{\mu}\)</span>, define a family of maps <span class="math display">\[
+h_k: \pi_k X \to H_k X \\
+[f] \mapsto f_*(\mu)
+\]</span></p>
+<p>If <span class="math inline">\(n\geq 2\)</span> and <span class="math inline">\(X\)</span> is <span class="math inline">\(n-1\)</span> connected, then <span class="math inline">\(h_k\)</span> is an isomorphism for all <span class="math inline">\(k\leq n\)</span>.</p>
+<blockquote>
+<p>Note: If <span class="math inline">\(k=1\)</span>, then <span class="math inline">\(h_1\)</span> is the abelianization of <span class="math inline">\(\pi_1\)</span>.</p>
+</blockquote>
+<h2 id="application">Application</h2>
+<p>If <span class="math inline">\(X\)</span> a simply connected, closed 3-manifold is a homology sphere, then it is a homotopy sphere.</p>
+<ul>
+<li><span class="math inline">\(H_0 X = \ZZ\)</span> since <span class="math inline">\(X\)</span> is path-connected</li>
+<li><span class="math inline">\(H_1 X = 0\)</span> since <span class="math inline">\(X\)</span> is simply-connected</li>
+<li><span class="math inline">\(H_3 X = \ZZ\)</span> since <span class="math inline">\(X\)</span> is orientable</li>
+<li><span class="math inline">\(H_2 X = H^1 X\)</span> by <strong>Poincare duality</strong>. What group is this?
+<ul>
+<li><span class="math inline">\(0 \rightarrow \operatorname{Ext}_{\ZZ}^{1}\left(H_{0}(X ; \mathbb{Z}), \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(H_{1}(X ; \mathbb{Z}), \mathbb{Z}\right) \rightarrow 0\)</span> yields</li>
+<li><span class="math inline">\(0 \rightarrow \operatorname{Ext}_{\ZZ}^{1}\left(\ZZ, \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(0, \mathbb{Z}\right) \rightarrow 0\)</span></li>
+<li>Then <span class="math inline">\(\operatorname{Ext}_{\ZZ}^{1}\left(\ZZ, \mathbb{Z}\right) = 0\)</span> because <span class="math inline">\(\ZZ\)</span> is a projective <span class="math inline">\(\ZZ\dash\)</span>module, so <span class="math inline">\(H^1 X = 0\)</span>.</li>
+</ul></li>
+<li>So <span class="math inline">\(H_*(X) = [\ZZ, 0, 0, \ZZ, 0, \cdots ]\)</span></li>
+<li>So <span class="math inline">\(h_3: \pi_3 X \to H_3 X\)</span> is an isomorphism by <strong>Hurewicz</strong>. Pick some <span class="math inline">\(f\in \pi_3 X \cong \ZZ\)</span>. By partial application, this induces an isomorphism <span class="math inline">\(H_* S^3 \to H_* X\)</span>.</li>
+<li>Taking <strong>CW approximations</strong> for <span class="math inline">\(S^3, X\)</span>, we find that <span class="math inline">\(f\)</span> is a homotopy equivalence.</li>
+</ul>
+<h1 id="other-topics">Other Topics</h1>
+<p><strong>Theorem (Freudenthal Suspension):</strong> If <span class="math inline">\(X\)</span> is an <span class="math inline">\(n\dash\)</span>connected CW complex, then there is a map <span class="math display">\[
+\Sigma: \pi_i X \to \pi_{i+1}\Sigma X
+\]</span></p>
+<p>which is an isomorphism for <span class="math inline">\(i \leq 2n\)</span> and a surjection for <span class="math inline">\(i=2n+1\)</span>.</p>
+<blockquote>
+<p>Note: <span class="math inline">\([S^k, X] \mapsto [\Sigma S^k, \Sigma X] = [S^{k+1}, \Sigma X]\)</span></p>
+</blockquote>
+<blockquote>
+<p>Application: <span class="math inline">\(\pi_2 S^2 = \pi_3 S^3 = \cdots\)</span> since <span class="math inline">\(2\)</span> is already in the stable range.</p>
+</blockquote>
+<p>A consequence: <span class="math inline">\(\pi_1 X \to \pi_2 \Sigma X \to \pi_3 \Sigma^2 X \to \cdots\)</span> is eventually constant, we say the homotopy groups <em>stabilize</em>. So define the *stable homotopy groups <span class="math display">\[
+\pi_i^S \definedas \lim_{k\to\infty} \pi_{i+k} X
+\]</span></p>
+<p><span class="math inline">\(X = S^n\)</span> yields <em>stable homotopy groups of spheres</em>, ties back to initial motivation.</p>
+<p>Noting that <span class="math inline">\(\Sigma S^n = S^{n+1}\)</span>, we could alternatively define <span class="math inline">\(\mathbb{S} \definedas \lim_k \Sigma^k S^0\)</span>, then it turns out that <span class="math inline">\(\pi_n \mathbb{S} = \pi_n^S\)</span>.</p>
+<p>This object is a <em>spectrum</em>, which vaguely resembles a chain complex with a differential: <span class="math display">\[
+X_0 \mapsvia{\Sigma} X_2 \mapsvia{\Sigma} X_3 \mapsvia{\Sigma} \cdots
+\]</span></p>
+<p>Spectra <em>represent</em> invariant theories (like cohomology) in a precise way. For example, <span class="math display">\[
+HG \definedas \left(K(G, 1) \mapsvia{\Sigma} K(G, 2) \mapsvia{\Sigma} \cdots \right)
+\]</span></p>
+<p>then <span class="math inline">\(H^n(X; G) \cong [X, K(G, 1)]\)</span>, and we can similarly extract <span class="math inline">\(H^*(X; G)\)</span> from (roughly) <span class="math inline">\(\pi_* HG \definedas [\mathbb{S}, HG \bigwedge X]\)</span>.</p>
+<blockquote>
+<p>Note: this glosses over some important details! Also, smash product basically just looks like the tensor product in the category of spectra.</p>
+</blockquote>
+<p>A modern direction is cooking up spectra that represent <em>extraordinary</em> cohomology theories. There are Eilenberg&#x2013;Steenrod axioms that uniquely characterize homology on spaces; if we drop <span class="math inline">\(H^* \pt = 0\)</span>, we get generalized alternatives.</p>
+<h1 id="other-topics-1">Other Topics</h1>
+<ul>
+<li>The homotopy hypothesis</li>
+<li>Generalized Cohomology theories</li>
+<li>Stable Homotopy Theory</li>
+<li>Infinity Categories</li>
+<li>Higher Homotopy Groups of Spheres</li>
+<li>Eilenberg Mclane and Moore Spaces</li>
+</ul>
+<figure>
+<img src="figures/2019-11-06-11:51.png" alt><figcaption>Image</figcaption>
+</figure>
+<ul>
+<li>Below jagged line: Zero by cellular approximation, or stable by Freudenthal suspension.</li>
+<li>Above line: Unstable range. Need to throw everything in the book at these guys to compute!</li>
+</ul>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#history">History</a></li>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#background">Background</a>
+<ul>
+<li><a href="#application">Application</a></li>
+</ul>
+</li>
+<li><a href="#other-topics">Other Topics</a></li>
+<li><a href="#other-topics-1">Other Topics</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
