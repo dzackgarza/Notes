@@ -64,7 +64,10 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 **Definition (Higher Homotopy Groups)**
 
 **Definition (CW Complex)**
-A CW complex
+A CW complex is any space built from the following inductive process:
+
+- Let $X_0$ by a discrete set of points.
+- Let
 
 **Definition (Cellular Map)**
 A map between $f:X \to Y$ between CW complex is *cellular* if $f(X_{(k)}) \subseteq Y_{(k)}$ for every $k$.
