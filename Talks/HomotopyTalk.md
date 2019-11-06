@@ -1,6 +1,6 @@
 # History
 
-Poincare, *Analysis Situs* in 1895. Defined homology, gave rigorous definition of homotopy.
+Poincare, *Analysis Situs* in 1895. Defined homology, gave rigorous definition of homotopy, established "method of invariants" and essentially kicked off algebraic topoloy.
 
 # Motivation
 
