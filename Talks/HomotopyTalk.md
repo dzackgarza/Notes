@@ -74,6 +74,8 @@ A CW complex is any space built from the following inductive process:
   
   (i.e. a set $A \subset X$ is open iff $A \intersect X_n$ is open for all $n$)
 
+Example: Every graph is a 1-dimensional CW complex
+
 Example: Identification polyhedra for surfaces
 
 Example: $S_n = e_0 + e_n$
