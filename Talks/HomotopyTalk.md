@@ -88,7 +88,7 @@ $$
 
 **Definition (Higher Homotopy Groups)**
 $$
-\pi_1(X) \definedas [S^n, X].
+\pi_n(X) \definedas [S^n, X].
 $$
 
 **Definition (CW Complex)**
