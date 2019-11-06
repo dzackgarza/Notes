@@ -20,6 +20,10 @@
 **Definition (Cellular Map)**
 
 **Definition (Homotopy Equivalence)**
+Two spaces $X, Y$ are said to be *homotopy equivalent* if there exists a maps $f: X \to Y$ and $g: Y \to X$ such that
+$$
+
+$$
 
 **Definition (Weak Equivalence)**
 A continuous map
