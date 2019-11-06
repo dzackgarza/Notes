@@ -242,7 +242,9 @@ then $H^n(X; G) \cong [X, K(G, 1)]$, and we can similarly extract $H^*(X; G)$ fr
 
 > Note: this glosses over some important details! Also, smash product basically just looks like the tensor product in the category of spectra.
 
-A modern direction is cooking up spectra that represent *extraordinary* cohomology theories.
+A modern direction is cooking up spectra that represent *extraordinary* cohomology theories, i.e.
+
+- 
 
 # Other Topics
 - The homotopy hypothesis
