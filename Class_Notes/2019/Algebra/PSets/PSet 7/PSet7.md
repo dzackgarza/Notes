@@ -242,12 +242,15 @@ We have the following situation:
 ```{=latex}
 \begin{center}
 \begin{tikzcd}
+a'                                              & a                                          & x                             & 0                                     \\
 A_1 \arrow[dd, "\alpha_1", two heads] \arrow[r] & A_2 \arrow[dd, "\alpha_2", hook] \arrow[r] & A_3 \arrow[dd, "f"] \arrow[r] & A_4 \arrow[dd, "\alpha_4", two heads] \\
                                                 &                                            &                               &                                       \\
-B_1 \arrow[r]                                   & B_2 \arrow[r]                              & B_3 \arrow[r]                 & B_4                                  
+B_1 \arrow[r]                                   & B_2 \arrow[r]                              & B_3 \arrow[r]                 & B_4                                   \\
+0                                               & \alpha_2(a)                                & y = f(x) = 0                  & 0                                    
 \end{tikzcd}
 \end{center}
 ```
+
 where we would like to show that $f$ is a monomorphism, i.e. that $\ker f = 0$. So let $x\in \ker f$, so $y \coloneqq f(x) = 0 \in B_3$. 
 
 We will show that $x=0 \in A_3$:
