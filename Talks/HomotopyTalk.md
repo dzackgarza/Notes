@@ -189,7 +189,7 @@ $$
 
 then $H^n(X; G) \cong [X, K(G, 1)]$, and we can similarly extract $H^*(X; G)$ from (roughly) $\pi_* HG \definedas [\mathbb{S}, HG \bigwedge X]$.
 
-> Note: this glosses over some important details!
+> Note: this glosses over some important details! Also, smash product basically just looks like the tensor product in the category of spectra.
 
 - The homotopy hypothesis
 - Generalized Cohomology theories
