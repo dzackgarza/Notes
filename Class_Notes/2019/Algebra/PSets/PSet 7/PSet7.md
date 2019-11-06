@@ -284,3 +284,19 @@ B_2 \arrow[r]                                   & B_3 \arrow[r]                 
 ```
 
 Let $y \in B_3$; we want to then show that there exists an $x\in A_3$ such that $f(x) = y$.
+
+- Apply $B_3 \to B_4$ to $y$ to obtain $y_4 \in B_4$.
+- By surjectivity of $\alpha_4$, this pulls back to some $a_4 \in A_4$.
+- Also by exactness of $B_3 \to B_4 \to B_5$, $y_4$ pushes forward to $0 \in B_5$
+- By injectivity of $\alpha_5$, this pulls back to $0\in A_5$.
+- By commutativity of the right square, $y_4 \mapsto 0$ under $A_4 \to A_5$.
+- Since $a_4 \in \ker(A_4 \to A_5)$, it pulls back to some $x\in A_3$ by exactness of $A_3 \to A_4 \to A_5$.
+- Then $f(x) \in B_3$, and it remains to show that $f(x) = y$.
+- By commutativity of the middle square, $f(x) \mapsto y_4$ under $B_3 \to B_4$.
+- Since $a \mapsto y_4$ we as well, we have $z \coloneqq f(x) - y \in B_3$ maps to $0\in B_4$.
+- Since $z\in \ker(B_3 \to B_4)$, by exactness it pulls back to some $b_2 \in B_2$.
+- By surjectivity of $\alpha_2$, this pulls back to some $a_2 \in A_2$.
+- By commutativity of the first square, $a_2 \mapsto z \in B_3$.
+- $a_2 \mapsto a_3 \in A_3$, where $a_3$ may not equal $x$, but $f(a_3) = z \coloneqq f(a) - y$.
+- Then $f(a_3) = f(x) - y \implies y = f(x) - f(a_3) = f(x - a_3)$
+- This shows that $x-a_3 \mapsto y$ under $f$, which is the element we wanted to produce.
