@@ -88,6 +88,8 @@ $$
 
 > Note that this actually measures homotopy classes of *loops* in $X$.
 
+Example: $\pi_1 T^2 = \ZZ^2$.
+
 **Definition (Higher Homotopy Groups)**
 $$
 \pi_n(X) \definedas [S^n, X].
