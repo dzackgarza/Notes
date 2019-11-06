@@ -41,7 +41,9 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 
 > Application: what spheres admit unique smooth structures?
 
-Define $bP_{n+1} \leq \Theta_n$ the subgroup of spheres that bound *parallelizable* manifolds,
+Define $bP_{n+1} \leq \Theta_n$ the subgroup of spheres that bound *parallelizable* manifolds (define in a moment),
+
+> Parallelizable: Trivial tangent bundle, i.e. the principal frame bundle has a smooth global section.
 
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
