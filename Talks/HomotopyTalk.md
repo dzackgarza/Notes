@@ -100,6 +100,5 @@ which is an isomorphism for $i \leq 2n$ and a surjection for $i=2n+1$.
 
 > Note: $[S^k, X] \mapsto [\Sigma S^k, \Sigma X] = [S^{k+1}, \Sigma X]$
 
-> Application: 
-# Applications
+> Application: $\pi_2 S^2 = \pi_3 S^3 = \cdots$ since $2$ is already in the stable range.
 
