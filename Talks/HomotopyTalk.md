@@ -90,12 +90,12 @@ $$
 
 Example: $\pi_1 T^2 = \ZZ^{\ast 2}$, a *free* abelian group of rank 2.
 
-Introduced by Cech around 
-
 **Definition (Higher Homotopy Groups)**
 $$
 \pi_n(X) \definedas [S^n, X].
 $$
+
+Introduced by Cech in 1932, Alexandrov reportedly told him to withdraw because it couldn't possibly be the right generalization due to the following theorem:
 
 **Theorem**:
 $$
