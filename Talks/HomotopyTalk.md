@@ -47,6 +47,8 @@ is a graded isomorphism.
 
 > Note that a weak homotopy equivalence also induces isomorphisms on all homology and cohomology.
 
+> Note: 
+
 **Definition (Connectedness):**
 A space is said to be $n\dash$connected if $\pi_{\leq n} X = 0$.
 
@@ -63,7 +65,7 @@ If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k
 
 > Note: If $k=1$, then $h_1$ is the abelianization of $\pi_1$.
 
-*Application*: If a simply connected, closed 3-manifold is a homology sphere, then it is a homotopy sphere. 
+*Application*: If $X$ a simply connected, closed 3-manifold is a homology sphere, then it is a homotopy sphere. 
 
 > - $H_0 X = \ZZ$ since $X$ is path-connected
 > - $H_1 X = 0$ since $X$ is simply-connected
