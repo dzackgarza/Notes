@@ -66,8 +66,10 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 **Definition (CW Complex)**
 A CW complex is any space built from the following inductive process:
 
-- Let $X_0$ by a discrete set of points.
-- Let $X_{n+1}$ be obtained from $X_n$ by taking a collection of $n\dash$ balls and 
+> Denote $X_n$ the $n\dash$skeleton.
+> 
+- Let $X_0$ by a discrete set of points. 
+- Let $X_{n+1}$ be obtained from $X_n$ by taking a collection of $n\dash$ balls and glue them to $X_n$ by maps $\phi: \del B^n \to X_n$.
 
 **Definition (Cellular Map)**
 A map between $f:X \to Y$ between CW complex is *cellular* if $f(X_{(k)}) \subseteq Y_{(k)}$ for every $k$.
