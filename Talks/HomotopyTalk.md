@@ -129,4 +129,6 @@ which is an isomorphism for $i \leq 2n$ and a surjection for $i=2n+1$.
 # Other Topics
 
 - The homotopy hypothesis
-- 
+- Generalized Cohomology theories
+- Stable Homotopy Theory
+- Infinity Categories
