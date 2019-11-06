@@ -86,6 +86,8 @@ $$
 \pi_1(X) \definedas [S^1, X].
 $$
 
+> Note that this actually measures homotopy classes of *loops* in $X$.
+
 **Definition (Higher Homotopy Groups)**
 $$
 \pi_n(X) \definedas [S^n, X].
