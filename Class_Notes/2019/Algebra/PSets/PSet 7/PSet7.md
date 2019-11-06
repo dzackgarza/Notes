@@ -300,5 +300,5 @@ Let $y \in B_3$; we want to then show that there exists an $x\in A_3$ such that 
 - By surjectivity of $\alpha_2$, this pulls back to some $a_2 \in A_2$.
 - By commutativity of the first square, $a_2 \mapsto z \in B_3$.
 - $a_2 \mapsto a_3 \in A_3$, where $a_3$ may not equal $x$, but $f(a_3) = z \coloneqq f(a) - y$.
-- Then $f(a_3) = f(x) - y \implies y = f(x) - f(a_3) = f(x - a_3)$
+- Then $f(a_3) = f(x) - y \implies y = f(x) - f(a_3) = f(x - a_3)$ since $f$ is a homomorphism.
 - This shows that $x-a_3 \mapsto y$ under $f$, which is the element we wanted to produce.
