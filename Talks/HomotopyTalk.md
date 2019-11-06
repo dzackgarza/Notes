@@ -50,7 +50,7 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 
 > Parallelizable/framed: Trivial tangent bundle, i.e. the principal frame bundle has a smooth global section. Parallelizable spheres $S^0, S^1, S^3, S^7$ corresponding to $\RR, \CC, \mathbb{H}, \mathbb{O}$.
 
-- Framed Bordism Classes of manifolds -- $\pi_n^S$
+- Framed Bordism Classes of manifolds -- $\Omega^{fr}_n \cong \pi_n^S$
 
 # Background
 
