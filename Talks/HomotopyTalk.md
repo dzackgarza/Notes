@@ -76,7 +76,7 @@ A CW complex is any space built from the following inductive process:
 
 Example: Identification polyhedra for surfaces
 
-Example: $S_n = e_0 + e_n$.
+Example: $S_n = e_0 + e_n$
 
 **Definition (Cellular Map)**
 A map between $f:X \to Y$ between CW complex is *cellular* if $f(X_{(k)}) \subseteq Y_{(k)}$ for every $k$.
