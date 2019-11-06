@@ -77,7 +77,7 @@ $$
 
 such that $H_t: X \to Y$ is continuous.
 
-> Can think of this as a map from the cylinder on $X$ into
+> Can think of this as a map from the cylinder on $X$ into $Y$, or deformations through continuous functions.
 
 **Definition (Fundamental Group)**
 
