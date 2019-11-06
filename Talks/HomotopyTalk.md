@@ -47,7 +47,15 @@ is a graded isomorphism.
 
 > Note that a weak homotopy equivalence also induces isomorphisms on all homology and cohomology.
 
-> Note: 
+**Theorem (Whitehead):**
+If $f: X\to Y$ is a weak equivalence between CW complexes, then it is a homotopy equivalence.
+
+> Corollary (Relative Whitehead): If $f:X\to Y$ between CW complexes induces an isomorphism $H_* X \cong H_* Y$, then $f$ is a weak equivalence.
+
+**Theorem (CW Approximation)**:
+For every topological space $X$, there exists a CW complex $\tilde X$ and a weak homotopy equivalence $f: X \to \tilde X$.
+
+> Note: Weak equivalences = equivalences for CW complexes, which means we can essentially throw out the distinction!
 
 
 **Definition (Connectedness):**
@@ -77,18 +85,13 @@ If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k
 >   - Then $\operatorname{Ext}_{\ZZ}^{1}\left(\ZZ, \mathbb{Z}\right) = 0$ because $\ZZ$ is a projective $\ZZ\dash$module, so $H^1 X = 0$.
 > - So $H_*(X) = [\ZZ, 0, 0, \ZZ, 0, \cdots ]$
 > - So $h_3: \pi_3 X \to H_3 X$ is an isomorphism. Pick some $f\in \pi_3 X \cong \ZZ$. By partial application, this induces an isomorphism $H_* S^3 \to H_* X$.
-> - Since $S^3, X$ have the homotopy type of CW complexes, $f$ is a homotopy equivalence.
+> - Taking CW approximations for $S^3, X$, we find that $f$ is a homotopy equivalence.
 
 # Theorems
 
 
-**Theorem (CW Approximation)**:
-For every topological space $X$, there exists a CW complex $\tilde X$ and a weak homotopy equivalence $f: X \to \tilde X$.:w
 
-**Theorem (Whitehead):**
-If $f: X\to Y$ is a weak equivalence between CW complexes, then it is a homotopy equivalence.
 
-> Corollary (Relative Whitehead): If $f:X\to Y$ 
 
 
 
