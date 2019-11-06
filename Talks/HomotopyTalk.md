@@ -95,6 +95,12 @@ $$
 \pi_n(X) \definedas [S^n, X].
 $$
 
+**Theorem:**
+$\pi_3 S^2 =
+> Recall that homology vanishes above the dimension of a given manifold!
+
+
+
 **Definition (CW Complex)**
 A CW complex is any space built from the following inductive process:
 
