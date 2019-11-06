@@ -154,8 +154,7 @@ If $X$ a simply connected, closed 3-manifold is a homology sphere, then it is a 
 - So $h_3: \pi_3 X \to H_3 X$ is an isomorphism by Hurewicz. Pick some $f\in \pi_3 X \cong \ZZ$. By partial application, this induces an isomorphism $H_* S^3 \to H_* X$.
 - Taking CW approximations for $S^3, X$, we find that $f$ is a homotopy equivalence.
 
-# Theorems
-
+# Other Topics
 
 **Theorem (Freudenthal Suspension):**
 If $X$ is an $n\dash$connected CW complex, then there is a map
@@ -169,8 +168,7 @@ which is an isomorphism for $i \leq 2n$ and a surjection for $i=2n+1$.
 
 > Application: $\pi_2 S^2 = \pi_3 S^3 = \cdots$ since $2$ is already in the stable range.
 
-
-# Other Topics
+A consequence: $\pi_1 X \to \pi_2 \Sigma X \to \pi_3 \Sigma^2 X \to \cdots$ is eventually constant, we say the homotopy groups *stabilize*.
 
 - The homotopy hypothesis
 - Generalized Cohomology theories
