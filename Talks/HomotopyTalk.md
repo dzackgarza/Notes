@@ -50,6 +50,8 @@ is a graded isomorphism.
 **Definition (Connectedness):**
 A space is said to be $n\dash$connected if $\pi_{\leq n} X = 0$.
 
+> Recall that a space is *simply connected
+
 **Theorem (Hurewicz):**
 Given a fixed space $X$, any map $f \in \pi_kX = [S^k, X]$ has the type $f: S^k \to X$. This induces a map $f_*: H_* S^k \to H_* X$. Since $H_k S^k \cong \ZZ \cong \generators{\mu}$, define a family of maps
 $$
