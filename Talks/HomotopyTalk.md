@@ -41,7 +41,7 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 
 > Application: what spheres admit unique smooth structures?
 
-Define $bP_{n+1} \leq \Theta_n$ the subgroup of spheres that bound *parallelizable* manifolds (define in a moment). The Kervaire invariant is an invariant of a framed manifold that measures whether the manifold could be surgically converted into a sphere.
+Define $bP_{n+1} \leq \Theta_n$ the subgroup of spheres that bound *parallelizable* manifolds (define in a moment). The Kervaire invariant is an invariant of a framed manifold that measures whether the manifold could be surgically converted into a sphere. 0 if true, 1 otherwise.
 
 > Parallelizable/framed: Trivial tangent bundle, i.e. the principal frame bundle has a smooth global section. Parallelizable spheres $S^0, S^1, S^3, S^7$ corresponding to $\RR, \CC, \mathbb{H}, \mathbb{O}$.
 
