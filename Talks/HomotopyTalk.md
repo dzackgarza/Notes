@@ -1,6 +1,6 @@
 # History
 
-Poincare, *Analysis Situs* in 1890s
+Poincare, *Analysis Situs* in 1895
 
 # Motivation
 - Smooth structures on $S^n$ -- $\pi_n^S$
