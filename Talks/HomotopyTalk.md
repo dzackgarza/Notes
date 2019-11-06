@@ -56,6 +56,7 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 # Background
 
 **Definition (Homotopy)**
+Given two maps $f, g: X \to Y$
 
 **Definition (Homotopic Maps)**
 
