@@ -48,7 +48,7 @@ is a graded isomorphism.
 > Note that a weak homotopy equivalence also induces isomorphisms on all homology and cohomology.
 
 **Definition (Connectedness):**
-A space is said to be $n\dash$connected if
+A space is said to be $n\dash$connected if $\pi_{\leq n} X = 0$.
 
 **Theorem (Hurewicz):**
 Given a fixed space $X$, any map $f \in \pi_kX = [S^k, X]$ has the type $f: S^k \to X$. This induces a map $f_*: H_* S^k \to H_* X$. Since $H_k S^k \cong \ZZ \cong \generators{\mu}$, define a family of maps
