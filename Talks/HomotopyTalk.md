@@ -184,8 +184,10 @@ $$
 
 Spectra *represent* invariant theories (like cohomology) in a precise way. For example, 
 $$
-
+HG \definedas \left(K(G, 1) \mapsvia{\Sigma} K(G, 2) \mapsvia{\Sigma} \cdots \right)
 $$
+
+then $H^n(X; G) \cong [X, K(G, 1)]$, and we can similarly extract $H^*(X; G)$ from
 
 > Note: this glosses over some important details!
 
