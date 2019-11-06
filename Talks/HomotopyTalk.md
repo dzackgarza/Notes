@@ -20,9 +20,10 @@
 **Definition (Cellular Map)**
 
 **Definition (Homotopy Equivalence)**
-Two spaces $X, Y$ are said to be *homotopy equivalent* if there exists a maps $f: X \to Y$ and $g: Y \to X$ such that
+Two spaces $X, Y$ are said to be *homotopy equivalent* if there exists a maps $f: X \to Y$ and $f\inv: Y \to X$ such that
 $$
-
+f\circ f\inv \homotopic \id_Y \\
+f\inv \circ f \homotopic \id_X
 $$
 
 **Definition (Weak Equivalence)**
@@ -36,7 +37,7 @@ f_*: \pi_*(X) \to \pi_*(Y)
 $$
 is a graded isomorphism.
 
-> Note that this is a strictly weaker notion than homotopy
+> Note that this is a strictly weaker notion than homotopy equivalence -- we don't require an explicit inverse.
 
 # Theorems
 
