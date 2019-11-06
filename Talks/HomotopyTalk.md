@@ -23,7 +23,7 @@ Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 - $n=4$: **Open**
 - $n=5$: Zeeman (1961)
 - $n=6$: Stalling (1962)
-- $n\geq 7$: False in general (Milnor and Kervaire), Exotic $S^n$
+- $n\geq 7$: False in general (Milnor and Kervaire), Exotic $S^n$, 28 smooth structures on $S^7$
   
 
 > It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth $ 4 $-dimensional Poincare conjecture would have an affirmative answer.
