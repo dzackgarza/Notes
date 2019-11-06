@@ -1,0 +1,109 @@
+\input{"/home/zack/Dropbox/Document Archive/Latex/preamble.tex"}
+\let\Begin\begin
+\let\End\end
+\newcommand\wrapenv[1]{#1}
+
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+\title{
+\textbf{
+    Homework 7
+  }
+  }
+\author{D. Zack Garza}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+% \todo{Insert title and subtitle.}
+\tableofcontents
+
+
+<h1 id="problem-1">Problem 1</h1>
+<h2 id="part-1">Part 1</h2>
+<p>In order for <span class="math inline"><em>I</em><em>S</em></span> to be a submodule of <span class="math inline"><em>A</em></span>, we need to show the following implication: <br /><span class="math display"><em>x</em> ∈ <em>I</em><em>S</em>, <em>a</em> ∈ <em>A</em> ⟹ <em>x</em><em>a</em>, <em>a</em><em>x</em> ∈ <em>I</em><em>S</em>.</span><br /></p>
+<p>Suppose <span class="math inline"><em>x</em> ∈ <em>I</em><em>S</em></span>. Then by definition, <span class="math inline">$x = \sum_{i=1}^n r_i a_i$</span> for some <span class="math inline"><em>r</em><sub><em>i</em></sub> ∈ <em>R</em>, <em>a</em><sub><em>i</em></sub> ∈ <em>A</em></span>.</p>
+<p>But then [  ]</p>
+<p>where <span class="math inline"><em>a</em><sub><em>i</em></sub>′ ≔ <em>a</em><sub><em>i</em></sub><em>a</em></span> for each <span class="math inline"><em>i</em></span>, which is still an element of <span class="math inline"><em>A</em></span> since <span class="math inline"><em>A</em></span> itself is a module and thus closed under multiplication.</p>
+<p>But this expresses <span class="math inline"><em>x</em><em>a</em></span> as an element of <span class="math inline"><em>I</em><em>S</em></span>. Similarly, we have [  ]</p>
+<p>and so <span class="math inline"><em>a</em><em>x</em> ∈ <em>I</em><em>S</em></span> as well.</p>
+<h2 id="part-2">Part 2</h2>
+<p>Letting <span class="math inline">$R/I \actson A/IA$</span> be the action given by <span class="math inline">$r+I \actson + IA \coloneqq ra + IA$</span>, we need to show the following:</p>
+<ul>
+<li><span class="math inline"><em>r</em>.(<em>x</em> + <em>y</em>) = <em>r</em>.<em>x</em> + <em>r</em>.<em>y</em></span>,</li>
+<li><span class="math inline">(<em>r</em> + <em>r</em>′).<em>x</em> = <em>r</em>.<em>x</em> + <em>r</em>′.<em>x</em></span>,</li>
+<li><span class="math inline">(<em>r</em><em>s</em>).<em>x</em> = <em>r</em>.(<em>s</em>.<em>x</em>)</span>, and</li>
+<li><span class="math inline">1.<em>x</em> = <em>x</em></span>.</li>
+</ul>
+<p>Letting <span class="math inline">⊕</span> denote the addition defined on cosets, we have [  ]</p>
+<p>[  ]</p>
+<p>[  ]</p>
+<p>[  ]</p>
+<h1 id="problem-2">Problem 2</h1>
+<h2 id="part-1-1">Part 1</h2>
+<p>We want to show that every simple <span class="math inline">$R\dash$</span>module <span class="math inline"><em>M</em></span> is cyclic, i.e. if the only ideals of <span class="math inline"><em>M</em></span> are <span class="math inline">(0)</span> and <span class="math inline"><em>M</em></span> itself, that <span class="math inline">$M = \generators{m}$</span> for some element <span class="math inline"><em>m</em> ∈ <em>M</em></span>.</p>
+<p>Towards a contradiction, let <span class="math inline"><em>M</em></span> be a simple <span class="math inline">$R\dash$</span>module and suppose <span class="math inline"><em>M</em></span> is not cyclic, so <span class="math inline">$M\neq \generators{m}$</span> for any <span class="math inline"><em>m</em> ∈ <em>M</em></span>. But then let <span class="math inline"><em>a</em> ∈ <em>M</em></span> be an arbitrary nontrivial element; then <span class="math inline">(<em>a</em>)</span> is a non-empty ideal (since it contains <span class="math inline"><em>a</em></span>), so <span class="math inline">(<em>a</em>) ≠ 0</span>. Since <span class="math inline"><em>M</em></span> is simple, we must have <span class="math inline">(<em>a</em>) = <em>M</em></span>, a contradiction.</p>
+<h2 id="part-2-1">Part 2</h2>
+<p>Let <span class="math inline"><em>ϕ</em> : <em>A</em> → <em>A</em></span> be a module endomorphism on a simple module <span class="math inline"><em>A</em></span>. Then <span class="math inline">$\im \phi \coloneqq \phi(A)$</span> is a submodule of <span class="math inline"><em>A</em></span>. Since <span class="math inline"><em>A</em></span> is simple, we have either <span class="math inline">$\im \phi = 0$</span>, in which case <span class="math inline"><em>ϕ</em></span> is the zero map, or <span class="math inline">$\im \phi = A$</span>, so <span class="math inline"><em>ϕ</em></span> is surjective. In this case, we can also consider <span class="math inline">ker <em>ϕ</em></span>, which is a submodule of <span class="math inline"><em>A</em></span>. Since <span class="math inline"><em>A</em></span> is simple, we can again only have <span class="math inline">ker <em>ϕ</em> = <em>A</em></span>, which can not happen if <span class="math inline"><em>ϕ</em></span> is not the zero map, or <span class="math inline">ker <em>ϕ</em> = 0</span>, in which case <span class="math inline"><em>ϕ</em></span> is both a surjective and an injective map and thus an isomorphism of modules.</p>
+<h1 id="problem-3">Problem 3</h1>
+<h2 id="part-1-2">Part 1</h2>
+<p>We want to show that if <span class="math inline"><em>A</em>, <em>B</em></span> are <span class="math inline">$R\dash$</span>modules then <span class="math inline">$X = (\hom_{R\dash\text{mod}}(A, B), +$</span> is an abelian group. Let <span class="math inline"><em>f</em>, <em>g</em>, <em>h</em> ∈ <em>X</em></span>, we then need to show the following:</p>
+<ol type="a">
+<li>Closure: <span class="math inline"><em>f</em> + <em>g</em> ∈ <em>X</em></span></li>
+<li>Associativity: <span class="math inline"><em>f</em> + (<em>g</em> + <em>h</em>) = (<em>f</em> + <em>g</em>) + <em>h</em></span></li>
+<li>Identity: <span class="math inline">$\id \in X$</span></li>
+<li>Inverses: <span class="math inline">$f\inv \in X$</span></li>
+<li>Commutativity: <span class="math inline"><em>f</em> + <em>g</em> = <em>g</em> + <em>f</em></span></li>
+</ol>
+<p>Closure: This follows from the definition, because <span class="math inline">$(f + g) \actson x \coloneqq f(x) + g(x)$</span> pointwise, which is well-defined homomorphism <span class="math inline"><em>A</em> → <em>B</em></span>.</p>
+<p>Associativity: We have [  ]</p>
+<p>Identity: We can define <span class="math inline">$\vector 0: A \to B$</span> by <span class="math inline">$\vector 0(x) = 0 \in B$</span>. Then <br /><span class="math display">$$(f + \vector 0)\actson x = f(x) + 0 = f(x) = 0 + f(x) = (\vector 0 + f) \actson x.$$</span><br /></p>
+<p>Inverses: Given <span class="math inline"><em>f</em> ∈ <em>X</em></span>, we can define <span class="math inline"> − <em>f</em> : <em>A</em> → <em>B</em></span> as <span class="math inline"> − <em>f</em>(<em>x</em>) =  − <em>x</em></span>. Then [  ]</p>
+<p>Commutativity: Since <span class="math inline"><em>B</em></span> is a module, by definition <span class="math inline">(<em>B</em>,  + )</span> is an abelian group. Thus</p>
+<p>[  ] ## Part 2</p>
+<p>By part 1, <span class="math inline">$(\hom_{R\dash\text{mod}}(A, A), +)$</span> is an abelian group, We just need to check that <span class="math inline">(hom<sub><em>R</em></sub>(<em>A</em>, <em>A</em>),  ∘ )</span> is a monoid, i.e.:</p>
+<ul>
+<li>Associativity: <span class="math inline"><em>f</em> ∘ (<em>g</em> ∘ <em>h</em>) = (<em>f</em> ∘ <em>g</em>) ∘ <em>h</em></span></li>
+<li>Identity: <span class="math inline">$\id \circ f = f$</span></li>
+<li>Closure: <span class="math inline">$f\circ g \in \hom_{R\dash\text{mod}}(A, A)$</span></li>
+</ul>
+<p>Associativity: We have [  ]</p>
+<p>Identity: Take <span class="math inline">$\id_A: A \to A$</span> given by <span class="math inline">$\id_A(x) = x$</span>, then [  ]</p>
+<p>Closure: If <span class="math inline"><em>f</em> : <em>A</em> → <em>A</em></span> and <span class="math inline"><em>g</em> : <em>A</em> → <em>A</em></span> are homomorphisms, then <span class="math inline"><em>f</em> ∘ <em>g</em> : <em>A</em> → <em>A</em></span> as a set map, and is an <span class="math inline">$R\dash$</span>module homomorphism because [  ] ## Part 3</p>
+<p>For arbitrary <span class="math inline"><em>x</em>, <em>y</em> ∈ <em>A</em></span>, we need to check the following:</p>
+<ol type="a">
+<li><span class="math inline">$f\actson (x+y) = f\actson x + f \actson y$</span></li>
+<li><span class="math inline">$(f+g)\actson x = f \actson x + g \actson x$</span></li>
+<li><span class="math inline">$f\circ g \actson x = f \actson (g \actson x)$</span></li>
+<li><span class="math inline">$\id_a \actson x = x$</span></li>
+</ol>
+<p>For (a): [  ]</p>
+<p>For (b): [  ]</p>
+<p>For (c): [  ]</p>
+<p>For (d): [  ]</p>
+<h1 id="problem-4">Problem 4</h1>
+<p>We have the following situation:</p>
+
+%\listoftodos
+
+\bibliography{/home/zack/Notes/library.bib}
+
+\end{document}
