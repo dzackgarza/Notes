@@ -11,9 +11,15 @@
 
 **Definition (Homotopic Maps)**
 
+**Definition (Fundamental Group)**
+
+**Definition (Higher Homotopy Groups)**
+
 **Definition (CW Complex)**
 
 **Definition (Cellular Map)**
+
+**Definition (Homotopy Equivalence)**
 
 **Definition (Weak Equivalence)**
 A continuous map
@@ -25,6 +31,8 @@ $$
 f_*: \pi_*(X) \to \pi_*(Y)
 $$
 is a graded isomorphism.
+
+> Note that this is a strictly weaker notion than homotopy
 
 # Theorems
 
