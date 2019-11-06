@@ -140,8 +140,6 @@ Any map $f: X \to Y$ is homotopic to a cellular map.
 
 > Application: $\pi_k S^n = 0$ if $k < n$. Use $f\in \pi_kS^n \iff f\in [S_k, S_n]$, deform $f$ to be cellular, then $f(S^k_{(k)}) \injects S^n_{(k)} = \pt$, so $f \homotopic c_0$, a constant map.
 
-> Note: so if we understand CW complexes, we essentially understand the category hoTop completely.
-
 **Definition (Homotopy Equivalence)**
 Two spaces $X, Y$ are said to be *homotopy equivalent* if there exists a maps $f: X \to Y$ and $f\inv: Y \to X$ such that
 $$
@@ -174,6 +172,7 @@ For every topological space $X$, there exists a CW complex $\tilde X$ and a weak
 
 > Note: Weak equivalences = equivalences for CW complexes, which means we can essentially throw out the distinction!
 
+> Note: This says that if we understand CW complexes, we essentially understand the category hoTop completely. Moreover, we only have to understand spaces up to *weak* equivalence, i.e. we just need to check induced maps on $\pi_*$ instead of checking for inverse maps.
 
 **Definition (Connectedness):**
 A space is said to be $n\dash$connected if $\pi_{\leq n} X = 0$.
