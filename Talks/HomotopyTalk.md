@@ -242,9 +242,7 @@ then $H^n(X; G) \cong [X, K(G, 1)]$, and we can similarly extract $H^*(X; G)$ fr
 
 > Note: this glosses over some important details! Also, smash product basically just looks like the tensor product in the category of spectra.
 
-A modern direction is cooking up spectra that represent *extraordinary* cohomology theories, i.e.
-
-- 
+A modern direction is cooking up spectra that represent *extraordinary* cohomology theories. There are Eilenberg–Steenrod axioms that uniquely characterize homology on spaces; if we drop $H^* \pt = 0$, we get generalized versions.
 
 # Other Topics
 - The homotopy hypothesis
