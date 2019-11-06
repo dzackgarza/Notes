@@ -4,7 +4,7 @@ Poincare, *Analysis Situs* in 1895
 
 # Motivation
 
-Original Poincare Conjecture: $X 
+Generalized Poincare Conjecture: When is a homology sphere also a topological sphere? i.e. when does $H_* X \cong_{Grp} H_* S^n \implies X \cong_{Top} S^n$? 
 
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
