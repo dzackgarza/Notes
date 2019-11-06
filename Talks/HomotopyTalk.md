@@ -175,10 +175,12 @@ $$
 
 $X = S^n$ yields *stable homotopy groups of spheres*, ties back to initial motivation.
 
-Noting that $\Sigma S^n = S^{n+1}$, we could alternatively define $\mathbb{S} \definedas \lim_k \Sigma^k S^0$, then $\pi_n \mathbb{S} = \pi_n^S$. This object is a *spectrum*, which somehow resembles a chain complex with a differential:
+Noting that $\Sigma S^n = S^{n+1}$, we could alternatively define $\mathbb{S} \definedas \lim_k \Sigma^k S^0$, then $\pi_n \mathbb{S} = \pi_n^S$. This object is a *spectrum*, which vaguely resembles a chain complex with a differential:
 $$
 X_0 \mapsvia{\Sigma} X_2 \mapsvia{\Sigma} X_3 \mapsvia{\Sigma} \cdots
 $$
+
+> Note: this glosses over some important details!
 
 - The homotopy hypothesis
 - Generalized Cohomology theories
