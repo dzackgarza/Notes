@@ -179,7 +179,7 @@ which is an isomorphism for $i \leq 2n$ and a surjection for $i=2n+1$.
 - Higher Homotopy Groups of Spheres
 - Eilenberg Mclane and Moore Spaces
 
-![Image](figures/2019-11-06-11:48.png)
+![Image](figures/2019-11-06-11:50.png)
 
 - Below jagged line: Zero by cellular approximation, or stable by Freudenthal suspension.
 - 
