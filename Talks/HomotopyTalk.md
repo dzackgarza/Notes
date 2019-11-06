@@ -46,6 +46,7 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 - Hill/Hopkins/Ravenel (2016): = 0 for $n \geq 254$.
 - Kervaire invariant = 1 only in 2, 6, 14, 30, 62. Open case: 126. 
 - Point: there is a map $\Theta_n/bP_{n+1} \to \pi_n^S/ J$
+- Open question: is there a manifold of dimension 126 with Kervaire invariant 1?
 
 > Parallelizable/framed: Trivial tangent bundle, i.e. the principal frame bundle has a smooth global section. Parallelizable spheres $S^0, S^1, S^3, S^7$ corresponding to $\RR, \CC, \mathbb{H}, \mathbb{O}$.
 
