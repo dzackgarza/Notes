@@ -52,7 +52,8 @@ is a graded isomorphism.
 **Theorem (Whitehead):**
 
 **Theorem (CW Approximation)**:
-For every topological space $X$
+For every topological space $X$, there exists a CW complex $\tilde X$ and a weak homotopy equivalence $f: X \to \tilde X$.:w
+
 
 **Theorem (Hurewicz):**
 
