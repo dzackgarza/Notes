@@ -70,11 +70,9 @@ such that the associated "partially applied" function $H_t: I \to X$ is continuo
 **Definition (Homotopic Maps)**
 Given two maps $f, g: X \to Y$, we say $f$ is *homotopic* to $g$ and write $f \sim g$ if there is a homotopy
 $$
-H: X \to (I \to X) \\
-H(0, \wait) = x_0 \\
-H(1, \wait) = x_1 \\ \\
-H(\wait, 0) = P_1(\wait)\\
-H(\wait, 1) = P_2(\wait)\\
+H: I \to (X \to y) \\
+H(\wait, 0) = f(\wait)\\
+H(\wait, 1) = g(\wait)\\
 $$
 
 **Definition (Fundamental Group)**
