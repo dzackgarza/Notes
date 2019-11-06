@@ -65,7 +65,7 @@ H(\wait, 0) = P_1(\wait)\\
 H(\wait, 1) = P_2(\wait)\\
 $$
 
-such that the associated function 
+such that the associated "partially applied" function $H_t: I \to X$ is continuous.
 
 **Definition (Homotopic Maps)**
 Given two maps $f, g: X \to Y$
