@@ -1,31 +1,31 @@
+# History
 
-
+# Motivation
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
 - Framed Bordism Classes of manifolds -- $\pi_n^S$
 
-\section{Background}
+# Background
 
-Definition: Homotopy
+**Definition (Homotopy)**
 
-Definition: Homotopic Maps
+**Definition (Homotopic Maps)**
 
-Definition: CW Complex
+**Definition (CW Complex)**
 
-Definition: Cellular Map
+**Definition (Cellular Map)**
 
-\textbf{Definition (Weak Equivalence)}
+**Definition (Weak Equivalence)**
 
-\section{Theorems}
+# Theorems
 
-Theorem (Whitehead):
+**Theorem (Whitehead):**
 
-Theorem (Cellular Approximation):
+**Theorem (Cellular Approximation):**
 
-Theorem (Hurewicz):
+**Theorem (Hurewicz):**
 
-Theorem (Freudenthal Suspension):
+**Theorem (Freudenthal Suspension):**
 
-\section{Applications}Tm
+# Applications
 
-\end{document}
