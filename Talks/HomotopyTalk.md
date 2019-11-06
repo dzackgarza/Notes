@@ -90,6 +90,8 @@ $$
 
 Example: $\pi_1 T^2 = \ZZ^{\ast 2}$, a *free* abelian group of rank 2.
 
+Introduced by Cech around 
+
 **Definition (Higher Homotopy Groups)**
 $$
 \pi_n(X) \definedas [S^n, X].
