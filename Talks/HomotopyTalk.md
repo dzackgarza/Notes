@@ -59,7 +59,8 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 Given two paths $P_1, P_2: I \to X$ (where we identify the paths with their images under these maps), then a *homotopy* from $P_1$ to $P_2$ is a function
 $$
 H: I \to (I \to X) \\
-H
+H(0, \wait) = x_0 \\
+H(1, \wait) = x_1 \\
 $$
 
 **Definition (Homotopic Maps)**
