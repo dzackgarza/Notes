@@ -4,9 +4,11 @@ Poincare, *Analysis Situs* in 1895
 
 # Motivation
 
-Generalized Poincare Conjecture: When is a homology sphere also a topological sphere? i.e. when does $H_* X \cong_{Grp} H_* S^n \implies X \cong_{Top} S^n$?
+Generalized Topological Poincare Conjecture: When is a homology sphere also a topological sphere? i.e. when does $H_* X \cong_{Grp} H_* S^n \implies X \cong_{Top} S^n$?
 
 > The n=1 case of the generalized conjecture is trivial, the n=2 case is classical (and was known to 19th century mathematicians), n=3 (the original conjecture) appears to have been proved by recent work by G. Perelman (although the proof has not yet been fully verified), n=4 was proved by Freedman (1982) (for which he was awarded the 1986 Fields medal), n=5 was demonstrated by Zeeman (1961), n=6 was established by Stallings (1962), and n>=7 was shown by Smale in 1961.
+
+Smooth Poincare Conjecture: When is a homology sphere a smooth sphere?
 
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
