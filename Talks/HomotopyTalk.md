@@ -19,7 +19,7 @@ Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 
 - $n=1$: True. Trivial
 - $n=2$: True. Proved by Poincare, classical
-- $n=3$: True.  Perelman (2006) using Ricci flow + surgery
+- $n=3$: True.  (Top = PL = Smooth)
 - $n=4$: **Open**
 - $n=5$: Zeeman (1961)
 - $n=6$: Stalling (1962)
