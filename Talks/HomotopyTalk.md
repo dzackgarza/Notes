@@ -168,7 +168,12 @@ which is an isomorphism for $i \leq 2n$ and a surjection for $i=2n+1$.
 
 > Application: $\pi_2 S^2 = \pi_3 S^3 = \cdots$ since $2$ is already in the stable range.
 
-A consequence: $\pi_1 X \to \pi_2 \Sigma X \to \pi_3 \Sigma^2 X \to \cdots$ is eventually constant, we say the homotopy groups *stabilize*.
+A consequence: $\pi_1 X \to \pi_2 \Sigma X \to \pi_3 \Sigma^2 X \to \cdots$ is eventually constant, we say the homotopy groups *stabilize*. So define the *stable homotopy groups
+$$
+\pi_i^S \definedas \lim_{k\to\infty} \pi_{i+k} X
+$$
+
+$X = S^n$ yields *stable homotopy groups of spheres*, ties back to initial motivation.
 
 - The homotopy hypothesis
 - Generalized Cohomology theories
