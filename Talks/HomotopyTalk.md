@@ -1,6 +1,6 @@
 # History
 
-Poincare, *Analysis Situs* in 1895
+Poincare, *Analysis Situs* in 1895. Defined homology, gave rigorous definition of homotopy.
 
 # Motivation
 
