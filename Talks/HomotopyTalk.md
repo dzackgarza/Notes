@@ -75,6 +75,8 @@ H(0, \wait) = f(\wait)\\
 H(1, \wait) = g(\wait)\\
 $$
 
+such that $H_t: X \to Y$ is continuous.
+
 > Can think of this as a map from the cylinder on $X$ into
 
 **Definition (Fundamental Group)**
