@@ -47,6 +47,18 @@ is a graded isomorphism.
 
 > Note that a weak homotopy equivalence also induces isomorphisms on all homology and cohomology.
 
+**Definition (Connectedness):**
+A space is said to be $n\dash$connected if
+
+**Theorem (Hurewicz):**
+Given a fixed space $X$, any map $f \in \pi_kX = [S^k, X]$ has the type $f: S^k \to X$. This induces a map $f_*: H_* S^k \to H_* X$. Since $H_k S^k \cong \ZZ \cong \generators{\mu}$, define a family of maps
+$$
+h_k: \pi_k X \to H_k X \\
+[f] \mapsto f_*(\mu)
+$$
+
+If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k\leq n$.
+
 # Theorems
 
 
@@ -56,11 +68,7 @@ For every topological space $X$, there exists a CW complex $\tilde X$ and a weak
 **Theorem (Whitehead):**
 If $f: X\to Y$ is a weak equivalence between CW complexes, then it is a homotopy equivalence.
 
-**Theorem (Hurewicz):**
-Given a fixed space $X$, any map $f \in \pi_kX = [S^k, X]$ has the type $f: S^k \to X$. This induces a map $f_*: H_* S^k \to H_* X$. Since $H_k S^k \cong \ZZ \cong \generators{\mu}$, define a family of maps
-$$
-h_k: \pi_k X \to H_k X
-$$ 
+
 
 **Theorem (Freudenthal Suspension):**
 
