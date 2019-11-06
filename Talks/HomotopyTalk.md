@@ -8,7 +8,11 @@ Generalized Topological Poincare Conjecture: When is a homology sphere also a to
 
 - $n=1$: Trivial
 - $n=2$: Proved by Poincare, classical
-- $n=3$: Perelman
+- $n=3$: Perelman (2006) using Ricci flow + surgery
+- $n=4$: Freedman (1982), Fields medal!
+- $n=5$: Zeeman (1961)
+- $n=6$: Stalling (1962)
+- $n\geq 7$: Smale, 1961
 
 > The n=1 case of the generalized conjecture is trivial, the n=2 case is classical (and was known to 19th century mathematicians), n=3 (the original conjecture) appears to have been proved by recent work by G. Perelman (although the proof has not yet been fully verified), n=4 was proved by Freedman (1982) (for which he was awarded the 1986 Fields medal), n=5 was demonstrated by Zeeman (1961), n=6 was established by Stallings (1962), and n>=7 was shown by Smale in 1961.
 
@@ -21,7 +25,6 @@ Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 
 > The $ n=2 $ case was proven by Poincare.
 
-> The $ n=3 $ case was recently proven by Perelman (Ricci flow, Ben Chow).
 
 > The $ n=4 $ case is the only outstanding case
 
