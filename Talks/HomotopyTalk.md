@@ -57,6 +57,10 @@ For every topological space $X$, there exists a CW complex $\tilde X$ and a weak
 If $f: X\to Y$ is a weak equivalence between CW complexes, then it is a homotopy equivalence.
 
 **Theorem (Hurewicz):**
+Given a fixed space $X$, define a family of maps
+$$
+h_k: \pi_kX \to H_k X = \generators{\mu_k}
+$$
 
 **Theorem (Freudenthal Suspension):**
 
