@@ -63,7 +63,11 @@ If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k
 
 > Note: If $k=1$, then $h_1$ is the abelianization of $\pi_1$.
 
-> Application: If a simply connected, closed 3-manifold is a homology sphere, then it is a homotopy sphere.
+> Application: If a simply connected, closed 3-manifold is a homology sphere, then it is a homotopy sphere. 
+
+> - $H_0 X = \ZZ$ since $X$ is path-connected
+> - $H_3 X = \ZZ$ since $X$ is orientable
+> - 
 
 # Theorems
 
