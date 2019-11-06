@@ -3,6 +3,9 @@
 Poincare, *Analysis Situs* in 1895
 
 # Motivation
+
+Original Poincare Conjecture: $X 
+
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
 - Framed Bordism Classes of manifolds -- $\pi_n^S$
