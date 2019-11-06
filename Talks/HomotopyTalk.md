@@ -82,6 +82,9 @@ such that $H_t: X \to Y$ is continuous.
 > Note: This is an equivalence relation. If $f: X \to Y$ is a map, we write $[X, Y]$ to denote the homotopy classes of maps $X$ to $Y$. 
 
 **Definition (Fundamental Group)**
+$$
+\pi_1(X) \definedas [S^1, X].
+$$
 
 **Definition (Higher Homotopy Groups)**
 
