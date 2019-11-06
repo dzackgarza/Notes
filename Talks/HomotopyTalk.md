@@ -87,6 +87,9 @@ $$
 $$
 
 **Definition (Higher Homotopy Groups)**
+$$
+\pi_1(X) \definedas [S^n, X].
+$$
 
 **Definition (CW Complex)**
 A CW complex is any space built from the following inductive process:
