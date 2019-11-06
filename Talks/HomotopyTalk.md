@@ -30,7 +30,10 @@ Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 
 > Current line of attack: Gluck twists on on $S^4$. Yield homeomorphic spheres, *suspected* not to be diffeomorphic, but no known invariants can distinguish smooth structures on $S^4$.
 
-Relation to homotopy: Define a monoid $G_n$ with objects smooth structures on the $n$ sphere (identified as oriented smooth $n\dash$manifolds
+Relation to homotopy: Define a monoid $G_n$ with 
+
+- Objects: smooth structures on the $n$ sphere (identified as oriented smooth $n\dash$manifolds which are homeomorphic to $S^n$)
+- Binary operation: Connect sum
 
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
