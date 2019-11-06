@@ -79,6 +79,8 @@ such that $H_t: X \to Y$ is continuous.
 
 > Can think of this as a map from the cylinder on $X$ into $Y$, or deformations through continuous functions.
 
+> Note: This is an equivalence relation. If $f: X \to Y$ is a map, we write $[X, Y]$ to denote the homotopy classes of maps $X$ to $Y$. 
+
 **Definition (Fundamental Group)**
 
 **Definition (Higher Homotopy Groups)**
