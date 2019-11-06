@@ -237,6 +237,7 @@ For (d):
 
 # Problem 4
 
+**Injectivity**:
 We have the following situation:
 
 ```{=latex}
@@ -268,5 +269,8 @@ We will show that $x=0 \in A_3$:
 - So $a \mapsto x$ under $A_1 \to A_3$.
 - But then $a \in \im(A_1 \to A_2) = \ker(A_2 \to A_3)$, so $a \mapsto 0$ under $A_1 \to A_3$.
 - So $x=0$ as desired.
+
+**Surjectivity:**
+We now have this situation:
 
 
