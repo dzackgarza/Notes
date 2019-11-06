@@ -39,11 +39,17 @@ is a graded isomorphism.
 
 > Note that this is a strictly weaker notion than homotopy equivalence -- we don't require an explicit inverse.
 
+> Note that a weak homotopy equivalence also induces isomorphisms on all homology and cohomology.
+
 # Theorems
 
 **Theorem (Whitehead):**
 
 **Theorem (Cellular Approximation):**
+Any map $f: X \to Y$ is homotopic to a cellular map.
+
+**Theorem (CW Approximation)**:
+For 
 
 **Theorem (Hurewicz):**
 
