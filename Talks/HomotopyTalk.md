@@ -71,9 +71,11 @@ such that the associated "partially applied" function $H_t: I \to X$ is continuo
 Given two maps $f, g: X \to Y$, we say $f$ is *homotopic* to $g$ and write $f \sim g$ if there is a homotopy
 $$
 H: I \to (X \to Y) \\
-H(\wait, 0) = f(\wait)\\
-H(\wait, 1) = g(\wait)\\
+H(0, \wait) = f(\wait)\\
+H(1, \wait) = g(\wait)\\
 $$
+
+> Can think of this as a map from the cylinder on $X$ into
 
 **Definition (Fundamental Group)**
 
