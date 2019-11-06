@@ -73,7 +73,7 @@ If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k
 >   - $0 \rightarrow \operatorname{Ext}_{\ZZ}^{1}\left(\ZZ, \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(0, \mathbb{Z}\right) \rightarrow 0$
 >   - Then $\operatorname{Ext}_{\ZZ}^{1}\left(\ZZ, \mathbb{Z}\right) = 0$ because $\ZZ$ is a projective $\ZZ\dash$module, so $H^1 X = 0$.
 > - So $H_*(X) = [\ZZ, 0, 0, \ZZ, 0, \cdots ]$
-> - So $h_3: \pi_3 X \to H_3 X$ is an isomorphism. Pick some $f\in \pi_3 X$ 
+> - So $h_3: \pi_3 X \to H_3 X$ is an isomorphism. Pick some $f\in \pi_3 X \cong \ZZ$ 
 
 # Theorems
 
