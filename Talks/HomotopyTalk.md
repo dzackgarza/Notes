@@ -20,6 +20,8 @@ Smooth Poincare Conjecture: When is a homology sphere a smooth sphere?
 
 > The $ n=4 $ case is the only outstanding case
 
+> It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth $ 4 $-dimensional Poincare conjecture would have an affirmative answer.
+
 - Smooth structures on $S^n$ -- $\pi_n^S$
 
 - Framed Bordism Classes of manifolds -- $\pi_n^S$
