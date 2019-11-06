@@ -4,7 +4,7 @@ Poincare, *Analysis Situs* in 1895
 
 # Motivation
 
-Generalized Topological Poincare Conjecture: When is a homology sphere also a topological sphere? i.e. when does $\pi_* X \cong_{Grp} \pi_* S^n \implies X \cong_{Top} S^n$?
+Generalized Topological Poincare Conjecture: When is a homotopy sphere also a topological sphere? i.e. when does $\pi_* X \cong_{Grp} \pi_* S^n \implies X \cong_{Top} S^n$?
 
 - $n=1$: True. Trivial
 - $n=2$: True. Proved by Poincare, classical
