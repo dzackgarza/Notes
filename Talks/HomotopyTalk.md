@@ -96,7 +96,7 @@ $$
 $$
 
 **Theorem (Hopf, 1931):**
-$$[S^3, S^2] \neq 0$$
+$$[S^3, S^2] = \ZZ \neq 0$$
 > Recall that homology vanishes above the dimension of a given manifold!
 
 
