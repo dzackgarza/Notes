@@ -255,9 +255,10 @@ We will show that $x=0 \in A_3$:
 - Since $y = 0 \in B_3$, applying $B_3 \to B_4$ yields $y \mapsto 0 \in B_4$ since these maps are homomorphisms and always map zero to zero.
 - Pull back $0 \in B_4$ to $0 \in B_3$ along $\alpha_4$, which can be done since $\alpha_4$ is injective, giving $0 \in A_4$.
 - Since this is $0$ in $A_4$, it is in the kernel of $A_3 \to A_4$, yielding some $x\in A_3$.
-- $x\in \ker (A_3 \to A_4) = \im(A_2 \to A_3)$ by exactness, so there is some $\alpha \in A_2$ such that $\alpha_2(a) = x \in A_3$.
+- By commutativity of the third square, $x\mapsto f(x)$ under $f: A_3 \to B_3$.
+- Since $x\in \ker (A_3 \to A_4) = \im(A_2 \to A_3)$ by exactness, there is some $\alpha \in A_2$ such that $\alpha_2(a) = x \in A_3$.
 - By injectivity of $\alpha_2$, $a$ maps to a unique element $\alpha_2(a) \in B_2$.
-- By commutativity of the middle square, since $a \in A_2 \mapsto 0 \in B_3$, we must have $\alpha_2(a) \mapsto 0$ under $B_2 \to B_3$.
+- By commutativity of the middle square, since $a \in A_2 \mapsto 0 \in B_3$, we must have $\alpha_2(a) \mapsto 0 f(x)$ under $B_2 \to B_3$.
 - Then $\alpha_2(a) \in \ker(B_2 \to B_3) = \im (B_1 \to B_2)$, so it pulls back to some $b\in B_1$.
 - By surjectivity of $\alpha_1$, $b$ pulls back to some $a' \in A_1$.
 - By commutativity of square 1, $a' \mapsto a$ under $A_1 \to A_2$.
