@@ -90,12 +90,13 @@ If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k
 # Theorems
 
 
-
-
-
-
-
 **Theorem (Freudenthal Suspension):**
+If $X$ is an $n\dash$connected CW complex, then there is a map
+$$
+\Sigma: \pi_i X \to \pi_{i+1}\Sigma X
+$$
+
+which is an isomorphism for $i \leq 2n$ and a surjection for $i=2n+1$.
 
 # Applications
 
