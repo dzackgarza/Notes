@@ -18,7 +18,9 @@
 **Definition (CW Complex)**
 
 **Definition (Cellular Map)**
-A map between $f:X \to Y$ between CW complex is *cellular* if $f(X^k) \subseteq Y^k$ for every $k$.
+A map between $f:X \to Y$ between CW complex is *cellular* if $f(X_{(k)}) \subseteq Y_{(k)}$ for every $k$.
+
+Application: $\pi_k S^n = 0$ if $k < n$. Use $f\in \pi_kS^n \iff f\in [S_k, S_n]$, deform $f$ to be cellular, then $f(S^k_{(k)}) \injects S^n_{(k)} = \emptyset$
 
 **Definition (Homotopy Equivalence)**
 Two spaces $X, Y$ are said to be *homotopy equivalent* if there exists a maps $f: X \to Y$ and $f\inv: Y \to X$ such that
