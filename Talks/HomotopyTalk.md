@@ -26,9 +26,9 @@ Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 - $n\geq 7$: False in general (Milnor and Kervaire), Exotic $S^n$, 28 smooth structures on $S^7$
   
 
-> It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth $ 4 $-dimensional Poincare conjecture would have an affirmative answer.
+> It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth $ 4 $-dimensional Poincare conjecture would have an affirmative answer. 
 
-> Current line of attack: Gluck twists on 
+> Current line of attack: Gluck twists on on $S^4$
 
 Generalized by Thurston's Geometrization
 
