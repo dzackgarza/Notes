@@ -12,7 +12,7 @@ Generalized Topological Poincare Conjecture: When is a homotopy sphere also a to
 - $n=4$: True. Freedman (1982), Fields medal!
 - $n=5$: True. Zeeman (1961)
 - $n=6$: True. Stalling (1962)
-- $n\geq 7$: True. Smale (1961) using h-cobordism theorem
+- $n\geq 7$: True. Smale (1961) using h-cobordism theorem, uses handle decomposition + Morse functions
 
 Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
 
