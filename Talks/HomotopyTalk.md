@@ -175,7 +175,7 @@ $$
 
 $X = S^n$ yields *stable homotopy groups of spheres*, ties back to initial motivation.
 
-Noting that $\Sigma S^n = S^{n+1}$, we could alternatively define $\mathbb{S} \definedas \lim_k \Sigma^k S^0$
+Noting that $\Sigma S^n = S^{n+1}$, we could alternatively define $\mathbb{S} \definedas \lim_k \Sigma^k S^0$, then $\pi_n \mathbb{S} = \pi_n^S$.
 
 - The homotopy hypothesis
 - Generalized Cohomology theories
