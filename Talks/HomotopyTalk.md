@@ -96,7 +96,7 @@ $$
 $$
 
 **Theorem:**
-$\pi_3 S^2 =
+$$[S^3, S^2] \neq 0$$
 > Recall that homology vanishes above the dimension of a given manifold!
 
 
