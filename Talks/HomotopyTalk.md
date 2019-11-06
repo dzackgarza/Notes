@@ -95,7 +95,7 @@ $$
 \pi_n(X) \definedas [S^n, X].
 $$
 
-**Theorem:**
+**Theorem (Hopf, 1931):**
 $$[S^3, S^2] \neq 0$$
 > Recall that homology vanishes above the dimension of a given manifold!
 
