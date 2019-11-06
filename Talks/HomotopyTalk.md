@@ -182,6 +182,11 @@ $$
 X_0 \mapsvia{\Sigma} X_2 \mapsvia{\Sigma} X_3 \mapsvia{\Sigma} \cdots
 $$
 
+Spectra *represent* invariant theories (like cohomology) in a precise way. For example, 
+$$
+
+$$
+
 > Note: this glosses over some important details!
 
 - The homotopy hypothesis
