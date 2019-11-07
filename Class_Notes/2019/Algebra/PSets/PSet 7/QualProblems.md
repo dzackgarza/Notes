@@ -41,3 +41,10 @@ But by maximality, $\ann_{y\mu} \subseteq I$, so $x\in I$.
 
 
 # Problem 3
+Let $I \normal R$, then since $R$ is a PID we have $I = \generators{b}$ for some $b\in R$.
+We can write $\generators{b} = Rb$; if $a\in I$ is an irreducible element, we'd like to show that $Rb = Ra$.
+
+Since $a\in Rb$, we have $Ra \subseteq Rb$, and we also have $a = rb$ for some $r\in R$.
+Since $a$ is irreducible, either $r$ is a unit or $b$ is a unit.
+
+If $r$ is a unit, then $a = rb \implies r\inv a = b$. But then $x\in Rb \implies x = r'b = r'r\inv a \in Ra$.
