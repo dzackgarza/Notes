@@ -454,5 +454,11 @@ To see that this is a spanning set, let $\vector x \in V^{\oplus m}$, so $\vecto
 
 Then each $\vector v_i \in \mathcal B$, so $\vector v_i = \sum_{k=1}^n \alpha_{k, i} \vector b_k$. But then
 $$
-\vector x = [\sum_{k=1}^n \alpha_{k, 1} \vector b_k, \sum_{k=1}^n \alpha_{k, 2} \vector b_k, \cdots, \sum_{k=1}^n \alpha_{k, m} \vector b_k] \coloneqq \sum_{i=1}^m \sum_{k=1}^n \alpha_{k, i} \vector b_k \vector e_i.
+\vector x = [\sum_{k=1}^n \alpha_{k, 1} \vector b_k, \sum_{k=1}^n \alpha_{k, 2} \vector b_k, \cdots, \sum_{k=1}^n \alpha_{k, m} \vector b_k] \coloneqq \sum_{i=1}^m \sum_{k=1}^n \alpha_{k, i} \vector b_k \vector e_i,
 $$
+
+which exhibits $\vector x \in \mathcal{B}^m$.
+
+To see that it is linearly independent, supposing that $\vector x = \sum_i \sum_k \alpha_{k, i} \vector b_k \vector e_i = 0$, this says that $\vector x = [0, 0, \cdots, 0]$, which forces $\sum_k \alpha_{k, i} \vector b_k$ to be zero for each $i$.
+
+But since $\theset{\vector b_k}$ was a basis for $V$, this means that $\alpha_{k, i} = 0$ for all $k$. But then $\alpha_{k, i} = 0$ for all pairs $i, k$.
