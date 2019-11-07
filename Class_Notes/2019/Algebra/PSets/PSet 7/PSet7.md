@@ -365,9 +365,21 @@ r + (p) \actson x + pA + y + pA &\coloneqq r + (p) \actson x + y + pA \\
 $(r + s)\cdot x = rx + sx$:
 \[
 \begin{align*}
-r +s + (p) \actson x + pA &\coloneqq (r+s)x + pA \\
+r + (p) \oplus s + (p) \actson x + pA &\coloneqq
+r + s + (p) \actson x + pA \\
+&\coloneqq (r+s)x + pA \\
 &= rx + sx + pA \\
 &\coloneqq rx + pA \oplus sx + pA \\
-&\coloneqq r\actson x + pA \oplus s \actsons x + pA
+&\coloneqq r+(p) \actson x + pA \oplus s+(p) \actsons x + pA
+.\end{align*}
+\]
+
+$rs\cdot x = r\cdot (s\cdot x)$:
+\[
+\begin{align*}
+r+ (p) \cdot s + (p) \actson  x + pA &\coloneqq rs + (p) \actson x + pA \\
+&= rsx + pA \\
+&\coloneqq r + (p) \actson sx + pA \\
+&\coloneqq r + (p) \actson s + (p) \actson x + pA
 .\end{align*}
 \]
