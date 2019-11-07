@@ -3093,5 +3093,9 @@ So $\bigoplus P_i$ is a direct summand of a free module, and thus projective.
 > Direct sum: finitely many nonzero. Can use the fact that direct sum of free is still free by taking a union of bases.
 
 Example:
-A projective module that is not free. Take $R = \ZZ_6$, which is not a PID and not a domain. Then $\ZZ_6 = \ZZ_2 \oplus \ZZ_3$, then $\ZZ_2, \ZZ_3$ are projective $R\dash$modules.
+A projective module that is not free. 
+Take $R = \ZZ_6$, which is not a PID and not a domain. 
+Then $\ZZ_6 = \ZZ_2 \oplus \ZZ_3$, then $\ZZ_2, \ZZ_3$ are projective $R\dash$modules.
+
+
 
