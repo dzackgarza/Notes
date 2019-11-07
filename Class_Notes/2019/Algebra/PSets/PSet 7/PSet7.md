@@ -428,7 +428,6 @@ $1\cdot x = x$:
 
 # Problem 6
 
-Let $\vector x \in V^{\oplus m}$, so $\vector x = [\vector v_1, \vector v_2, \cdots, \vector v_m]$ where each $\vector v_i \in V$.
 
 Supposing that $\dim V = n$, let $\mathcal B \coloneqq \theset{\vector b_k \mid 1 \leq k \leq n}$ be a basis for $V$, and define
 $$
@@ -449,4 +448,8 @@ Elements in $\mathcal{B}^{m}$ are of the form
 ,\end{align*}
 \]
 
-and by construction, $\abs{\mathcal B} = mn = m~\dim V$.
+and by construction, $\abs{\mathcal B} = mn = m\dim V$.
+
+To see that this is a spanning set, let $\vector x \in V^{\oplus m}$, so $\vector x = [\vector v_1, \vector v_2, \cdots, \vector v_m]$ where each $\vector v_i \in V$.
+
+Then each $\vector v_i \in \mathcal B$, so $\vector v_i = \sum_{k=1}^n \alpha_{k, i} \vector b_k$.
