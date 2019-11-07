@@ -302,3 +302,30 @@ Let $y \in B_3$; we want to then show that there exists an $x\in A_3$ such that 
 - $a_2 \mapsto a_3 \in A_3$, where $a_3$ may not equal $x$, but $f(a_3) = z \coloneqq f(a) - y$.
 - Then $f(a_3) = f(x) - y \implies y = f(x) - f(a_3) = f(x - a_3)$ since $f$ is a homomorphism.
 - This shows that $x-a_3 \mapsto y$ under $f$, which is the element we wanted to produce.
+
+# Problem 5
+
+## Part (a)
+
+We want to show that if $(p) \normal R$ is a prime ideal then $R/(p)$ is a field, so we'll proceed by letting $x + (p) \in R/(p)$ be arbitrary where $x\not \in (p)$ and producing a multiplicative inverse.
+
+Since $R$ is a principal ideal domain, prime ideals are maximal, so $(p)$ is maximal.
+Then $x\in R \setminus (p)$, so define
+$$
+I \coloneqq \theset{p + rx \suchthat p\in (p), r\in R} \normal R,
+$$
+
+which is an ideal in $R$.
+
+In particular, since $x\not\in (p)$, we have a strict containment $(p) < I$, but since $(p)$ was maximal this forces $I = R$.
+
+Then $1 \in I$, so there exists some $p, r$ such that $p + rx = 1$, i.e. $rx - 1 \in (p)$.
+
+But then
+
+$$
+r + (p) \cdot x + (p) = rx + (p) = 1 + (p),
+$$
+
+which says that $(x + (p))\inv = r + (p)$ in $R/(p)$.
+
