@@ -465,7 +465,7 @@ But for a fixed $i$, since $\theset{\vector b_k}$ was a basis for $V$, this mean
 
 # Problem 7
 
-Let $F_1, F_2$ be free, so they have bases $\mathcal B_1 = \theset{b_{1, k}}, \mathcal B_2 = \theset{b_{2, k}}$. 
+Let $F_1, F_2$ be free, so they have bases $\mathcal B_1 = \theset{\vector b_{1, k}}, \mathcal B_2 = \theset{\vector b_{2, k}}$. 
 Supposing that they have the invariant dimension property, we can assume that $\#\mathcal B_1 \coloneqq \rank F_1$ and similarly $\#\mathcal B_2 \coloneqq \rank F_2$.
 
 The claim is that the set 
@@ -473,4 +473,4 @@ $$\mathcal B = \theset{(v, 0) \mid v\in \mathcal{B}_1 } \union \theset{(0, w) \m
 is a basis for $F_1 \oplus F_2$, where $\# \mathcal B = \# \mathcal B_1 + \# \mathcal B_2 = \rank F_1 + \rank F_2$.
 
 So see that $\mathcal B$ spans $F_1 \oplus F_2$, let $x\in F_1 \oplus F_2 = (f_1, f_2)$ be arbitrary. 
-Since $f_1 \in F_1$, we have $f_1 = \sum_i r_i b_{1, i}$.
+Since $f_1 \in F_1$, we have $f_1 = \sum_i r_i \vector b_{1, i}$.
