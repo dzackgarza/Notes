@@ -3060,4 +3060,15 @@ Suppose we have $0 \to M \to N \to P \to 0$ a SES which splits, then $N \cong M 
 
 $c\implies a$:
 
+We have the following situation:
+```{=latex}
+\begin{tikzcd}
+                        &  & F = P \oplus K \arrow[dd, "\pi", bend right] \arrow[lldddd, "\exists h", dotted]               \\
+                        &  &                                                                                                \\
+                        &  & P \arrow[uu, "\iota", bend right] \arrow[dd, "f"] \arrow[lldd, "\phi = \iota \circ h", dotted] \\
+                        &  &                                                                                                \\
+M \arrow[rr, two heads] &  & N                                                                                             
+\end{tikzcd}
+```
 
+By the previous argument, 
