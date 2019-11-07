@@ -475,3 +475,7 @@ is a basis for $F_1 \oplus F_2$, where $\# \mathcal B = \# \mathcal B_1 + \# \ma
 So see that $\mathcal B$ spans $F_1 \oplus F_2$, let $x\in F_1 \oplus F_2 = (f_1, f_2)$ be arbitrary. 
 Since $f_1 \in F_1$, we have $f_1 = \sum_i r_i \vector b_{1, i}$, and similarly $f_2 = \sum_j s_j \vector b_{2, j}$.
 
+We can then write
+$$
+x = (f_1, f_2) = (f_1, 0) + (0, f_2) = (\sum_i r_i \vector b_{1, i}, 0) + (0, \sum_j s_j \vector b_{2, j})
+$$
