@@ -2638,7 +2638,7 @@ or equivalently $\theset{ \inner{x}{u_n} } \in \ell^2 \NN$.
 
 Proof:
 
-We have 
+We have (equation 1)
 \[
 \begin{align*}
 0 \leq \norm{
@@ -2680,3 +2680,5 @@ We now need to argue that $a_n = \inner{x}{u_n}$
 If $N$ is large enough, in particular $N \geq n$, then we have the identity $\abs{\inner{x}{u_n} - a_n} = \abs{\inner{x}{u_n} - \inner{S_N}{u_n}  } = \abs{ \inner{x - S_N}{u_n} } \leq \norm{x - S_N} \to 0$.
 
 > Note: should be able to translate this to statements about epsilons almost immediately!
+
+But then equation 1 holds in the limit as $N \to \infty$, which is what we wanted to show.
