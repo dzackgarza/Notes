@@ -1,5 +1,5 @@
 ---
-title: Assignment 6 Qual Problems
+title: Assignment 7 Qual Problems
 ---
 
 # Problem 1
