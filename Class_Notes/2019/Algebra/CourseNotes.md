@@ -3110,7 +3110,8 @@ $$
 [S \circ T]_{\beta_v, \beta_z} = [T]_{\beta_v, \beta_w} [S]_{\beta_w, \beta_z}
 $$
 
-Proof: Exercise! Show that $(S \circ T)(v_i) = \sum_j^t \sum_k^m a_{ik} b_{kj} z_j$
+Proof: 
+Exercise! Show that $(S \circ T)(v_i) = \sum_j^t \sum_k^m a_{ik} b_{kj} z_j$
 
 
 Suppose $\Gamma: \hom_R(V, V) \to M_n(R)$ and $V$ is a free left $R\dash$module.
