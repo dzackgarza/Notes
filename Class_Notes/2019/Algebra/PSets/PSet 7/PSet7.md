@@ -370,7 +370,7 @@ r + s + (p) \actson x + pA \\
 &\coloneqq (r+s)x + pA \\
 &= rx + sx + pA \\
 &\coloneqq rx + pA \oplus sx + pA \\
-&\coloneqq r+(p) \actson x + pA \oplus s+(p) \actsons x + pA
+&\coloneqq r+(p) \actson x + pA \oplus s+(p) \actson x + pA
 .\end{align*}
 \]
 
