@@ -2687,11 +2687,18 @@ Proof of characterization of basis:
 
 $1 \implies 2$: 
 Let $\varepsilon > 0, x\in H, \inner{x}{u_n} = 0$ for all $n$. We will attempt to show that $\norm{x} < \varepsilon$, so $x = 0$.
+
+
+
 By (1), there is a $y\in \mathrm{span}\theset{u_n}$ such that $\norm{x - y}< \varepsilon$.
-But then $\inner{x}{y} = 0$, so $\norm{x}^2 = \inner{x}{x} = \inner{x}{x-y} \leq \norm{x}{x-y} \leq \varepsilon \norm {x} \to 0$.
+But then $\inner{x}{y} = 0$, so $\norm{x}^2 = \inner{x}{x} = \inner{x}{x-y} \leq \norm{x}{x-y} \leq \varepsilon \norm {x} \to 0$. $\qed$
 
 > Note: $\inner{x}{x} = \inner{x}{x} - \inner{x}{y} = \inner{x}{x-y}$ since $\inner{x}{y} = 0$.
 
 
+$2 \implies 3$: 
+By Bessel, we have $\theset{\inner{x}{u_n}  } \in \ell^2 \NN$ (and we know that its norm is bounded by $\norm{x}$).
+By Riesz-Fischer, there exists a $y\in H$ such that $\inner{y}{u_n} = \inner{x}{u_n}$ and $\norm{y} = \sqrt{ \sum \abs{\inner{x}{u_n}}^2  }$.
+By completeness, we get $x=y$. $\qed$
 
 
