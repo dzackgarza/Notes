@@ -3125,4 +3125,8 @@ If $R$ is commutative, then $R = R^{op}$.
 Let $R$ be a unital ring and $V$ an $R\dash$module. 
 Then $\hom_R(V, V) \cong M_n(R^{op})$ as rings.
 
+Proof:
+Since $\Gamma(S \circ T) = \Gamma(T) \Gamma(S)$, define a map $\Theta: M_{n, n}(R) \to M_{n, n}(R^{op})$ by $\Theta(A) \coloneqq A^t$.
+Then $\Theta(AB) = (AB)^t = B^t A^t = \Theta(B) \Theta(A)$, so $\Theta$ is an anti-isomorphism.
 
+Then $\Theta\circ \Gamma$ is an anti-anti-homomorphism, i.e. a usual homomorphism.
