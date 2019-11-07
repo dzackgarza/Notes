@@ -446,5 +446,7 @@ Elements in $\mathcal{B}^{m}$ are of the form
 [0, \vector b_1, 0, \cdots, 0]\\
 [0, \vector b_2, 0, \cdots, 0]\\
 \cdots
-.\end{align*}
+,\end{align*}
 \]
+
+and by construction, $\abs{\mathcal B} = mn = m~\dim V$.
