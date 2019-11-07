@@ -390,3 +390,37 @@ $1\cdot x = x$:
 1_R + (p) \actson x + pA &= 1_R x + pA = x + pA
 .\end{align*}
 \]
+
+## Part (d)
+
+$r\cdot(x + y) = rx + ry$:
+\[
+\begin{align*}
+r + (p) \actson (a + a') &\coloneqq r(a + a') 
+&= ra + ra' \\
+&= r\actson a + r\actson a'
+.\end{align*}
+\]
+$(r + s)\cdot x = rx + sx$:
+\[
+\begin{align*}
+r + s + (p) \actson a &= (r+s)a \\
+&= ra + sa \\
+&= r\actson a + s\actson a
+.\end{align*}
+\]
+
+$rs\cdot x = r\cdot (s\cdot x)$:
+\[
+\begin{align*}
+rs + (p) \actson a &= rsa \\
+&= r \actson sa \\
+&= r \actson s \actson a
+.\end{align*}
+\]
+$1\cdot x = x$:
+\[
+\begin{align*}
+1_R + (p) \actson a &= 1a = a
+.\end{align*}
+\]
