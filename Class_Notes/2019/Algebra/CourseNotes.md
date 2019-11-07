@@ -3105,3 +3105,23 @@ Then $\ZZ_6 = \ZZ_2 \oplus \ZZ_3$, then $\ZZ_2, \ZZ_3$ are projective $R\dash$mo
 
 Let $M_{m, n}(\RR)$ denote $m\times n$ matrices with coefficients in $R$.
 This is an $R\dashR$ bimodule, and since $R$ is not necessarily a commutative ring, these two module actions may not be equivalent.
+
+If $m=n$, then $M_{n,n}(R)$ is a ring under the usual notions of matrix addition and multiplication.
+
+**Theorem:**
+Let $V, W$ be vector spaces where $\dim V = m, \dim V = n$. Let $\hom_k(V, W)$ be the set of linear transformations between them.
+Then $\hom_k(V, W) \cong M_{m, n}(k)$ as $k\dash$vector spaces.
+
+Proof:
+Choose bases of $V, W$.
+Then look at
+\[
+\begin{align*}
+T: V \to W \\
+v_1 \mapsto \sum_i^n a_{1, i} w_i \\
+v_2 \mapsto \sum_i^n a_{2, i} w_i \\
+\cdots
+.\end{align*}
+\]
+
+This produces a map $f: \hom_k(V, W) \to M_{m, n}(k)$ defined by $T \mapsto (a_{i, j})$, which is a matrix.
