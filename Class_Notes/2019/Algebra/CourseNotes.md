@@ -3128,6 +3128,19 @@ This produces a map $f: \hom_k(V, W) \to M_{m, n}(k)$ defined by $T \mapsto (a_{
 
 *Exercise: Check that this is bijective.*
 
-Theorem:
+**Theorem:**
 Let $M, N$ be free left $R\dash$modules of rank $m, n$ respectively.
 Then $\hom_R(M, N) \cong M_{m, n}(R)$ as $R\dash R$ bimodules.
+
+Notation: 
+Suppose $M, N$ are free $R\dash$modules, then denote $\beta_m, \beta_n$ be fixed respective bases.
+We then write $[T]_{\beta_m, \beta_n} \coloneqq (a_{i, j})$ to be its *matrix representation*.
+
+**Theorem**:
+Let $R$ be a ring and let $V, W, Z$ be three free left $R\dash$modules with bases $\beta_v, \beta_w, \beta_z$ respectively.
+If $T: V \to W, S: W\to Z$ are $R\dash$module homomorphisms, then $S \circ T: V \to Z$ exists and 
+$$
+[S \circ T]_{\beta_v, \beta_z} = [T]_{\beta_v, \beta_w} [S]_{\beta_w, \beta_z}
+$$
+
+
