@@ -2657,4 +2657,5 @@ TFAE?
 - $\sqrt{ \sum_n \abs{ \inner{x}{u_n}  }^2  } = \norm{x} \forall x\in H$, i.e. Parseval's identity
 - $\lim_{N\to\infty} \norm{ x - \sum_n^N \inner{x}{u_n}  } = 0$, i.e. the Fourier series converges in $H$.
 
-
+Recall the Riesz-Fischer theorem: if $\theset u_n$ is orthonormal in $H$ and $\theset a_n \in \ell^2 \NN$, then $\exists x\in H$ such that $a_n = \inner{x}{u_n}$ and $\norm{x}^2 = \sum_n \abs{a_n}^2$.
+Moreover, the map $x \mapsto \hat x(u) \coloneqq \inner{x, u_n}$ maps $H$ onto $\ell^2 \NN$ surjectively.
