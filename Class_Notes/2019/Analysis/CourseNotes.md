@@ -2739,3 +2739,5 @@ If $\theset u-N$ is an orthonormal basis in $H$, then the map $x \mapsto \hat x(
 So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
 
 > Subspaces in hilbert spaces don't have to be closed, but perps always are!
+
+![Image](figures/2019-11-07-12:22.png)
