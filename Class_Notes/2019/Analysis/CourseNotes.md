@@ -2733,3 +2733,9 @@ Then $\norm{Ux} = \norm{x}$, i.e. $U$ is an isometry.
 If $U$ is surjective, this implication can be reversed.
 
 For example, taking the Fourier transform yields $\sum \abs{\hat f(u)}^2 = \norm{f}_2^2 = \int\abs{f}^2$, and $\sum \hat f(u) \overline{\hat g(u)} = \int f \overline{g}$.
+
+A corollary of Riesz-Fischer:
+If $\theset u-N$ is an orthonormal basis in $H$, then the map $x \mapsto \hat x(u) \coloneqq \inner{x}{u_n}$ is a *unitary* map from $H$ to $\ell^2$.
+So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
+
+
