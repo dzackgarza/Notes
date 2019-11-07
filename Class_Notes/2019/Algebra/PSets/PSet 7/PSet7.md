@@ -427,3 +427,5 @@ $1\cdot x = x$:
 \]
 
 # Problem 6
+
+Let $\vector x \in V^{\oplus m}$, so $\vector x = [\vector v_1, \vector v_2, \cdots, \vector v_m]$ where each $\vector v_i \in V$. 
