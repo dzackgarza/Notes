@@ -2692,13 +2692,13 @@ Check
 
 We say that two exact sequences are *isomorphic* if in the following diagram, $f,g,h$ are isomorphisms.
 
-\[
+```{=latex}
 \begin{tikzcd}
 0 & M \arrow[dd, "f"] & N \arrow[dd, "g"] & Q \arrow[dd, "h"] & 0 \\
   &                   &                   &                   &   \\
 0 & M                 & N                 & Q                 & 0
 \end{tikzcd}
-\]
+```
 
 Theorem:
 
