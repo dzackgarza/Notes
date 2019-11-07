@@ -3111,8 +3111,7 @@ $$
 $$
 
 Proof: 
-Exercise! Show that $(S \circ T)(v_i) = \sum_j^t \sum_k^m a_{ik} b_{kj} z_j$
-
+Exercise! Show that $(S \circ T)(v_i) = \sum_j^t \sum_k^m a_{ik} b_{kj} z_j$. $\qed$
 
 Suppose $\Gamma: \hom_R(V, V) \to M_n(R)$ and $V$ is a free left $R\dash$module.
 Under the theorem, we have $\Gamma(T \circ S) = \Gamma(S) \Gamma(T)$. 
@@ -3126,7 +3125,7 @@ If $R$ is commutative, then $R = R^{op}$.
 Let $R$ be a unital ring and $V$ an $R\dash$module. 
 Then $\hom_R(V, V) \cong M_n(R^{op})$ as rings.
 
-Proof:
+*Proof*:
 Since $\Gamma(S \circ T) = \Gamma(T) \Gamma(S)$, define a map $\Theta: M_{n, n}(R) \to M_{n, n}(R^{op})$ by $\Theta(A) \coloneqq A^t$.
 Then $\Theta(AB) = (AB)^t = B^t A^t = \Theta(B) \Theta(A)$, so $\Theta$ is an anti-isomorphism.
 
