@@ -345,6 +345,19 @@ This is a module homomorphism, and
 \im \phi &\coloneqq \theset{px \suchthat x \in A} \coloneqq pA,\\
 \ker \phi &\coloneqq \theset{a\in A \suchthat pA = 0} \coloneqq A[p]
 .\end{align*}
+\]
 
 ## Part (c)
+
+Since $R/(p)$ is a field, we just need to show that $A/pA \actson R/(p)$ defines a module.
+
+$r\cdot(x + y) = rx + ry$:
+\[
+\begin{align*}
+r + (p) \actson x + pA + y + pA &\coloneqq r + (p) \actson x + y + pA \\
+&\coloneqq r(x+y) + pA \\
+&= rx + ry + pA \\
+&\coloneqq rx + pA + ry + pA \\
+&\coloneqq r\actson x + pA \oplus r \actson y + pA
+.\end{align*}
 \]
