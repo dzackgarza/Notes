@@ -2730,3 +2730,4 @@ Unitary Maps:
 
 Let $U: H_1 \to H_2$ such that $\inner{Ux}{Uy} = \inner{x}{y}$ (i.e. $U$ preserves angles).
 Then $\norm{Ux} = \norm{x}$, i.e. $U$ is an isometry.
+If $U$ is surjective, this implication can be reversed.
