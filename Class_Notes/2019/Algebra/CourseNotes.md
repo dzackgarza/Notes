@@ -3103,3 +3103,5 @@ Then $\ZZ_6 = \ZZ_2 \oplus \ZZ_3$, then $\ZZ_2, \ZZ_3$ are projective $R\dash$mo
 
 > See section 7.1
 
+Let $M_{m, n}(\RR)$ denote $m\times n$ matrices with coefficients in $R$.
+This is an $R\dashR$ bimodule, and since $R$ is not necessarily a commutative ring, these two module actions may not be equivalent.
