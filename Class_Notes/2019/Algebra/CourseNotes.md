@@ -2714,13 +2714,13 @@ It can then be checked that $g \circ h = g \circ \phi \circ \iota_2 = \pi_2 \cir
 
 A free module is a module with a basis.
 
-Definition:
+**Definition:**
 A subset $X = \theset{x_i}$ is *linearly independent* iff $\sum r_i x_i = 0 \implies r_i = 0 ~\forall i$.
 
-Definition:
+**Definition:**
 A subset $X$ *spans* $M$ iff $m\in M \implies m = \sum^n r_i x_i$.
 
-Definition:
+**Definition:**
 A subset $X$ is a basis
 
 Example: 
@@ -2728,7 +2728,7 @@ $\ZZ_6$ is an abelian group and thus a $\ZZ\dash$module, but not free because $3
 
 > This might contradict linear independence?
 
-Theorem (Characterization of Free Modules):
+**Theorem (Characterization of Free Modules):**
 Let $R$ be a unital ring and $M$ a unital $R\dash$module (so $1\actson m = m$).
 Then TFAE:
 
