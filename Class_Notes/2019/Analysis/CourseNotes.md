@@ -2712,3 +2712,21 @@ Some examples of orthonormal bases:
 - $\ell^2 \NN$: $u_n(k) = 1 \iff n=k$ and $0$ otherwise, i.e. $\vector e_i$.
 - $L^2([0,1])$: $e_n(x) \coloneqq e^{2\pi i n x}$.
   Normed: by Cauchy-Schwarz, but need to show it's complete. Can use the fact that $L^1$ is complete.
+  Note that $\inner{f}{e_n} = \int_0^1 f(x) e^{-2\pi i n x} ~dx$, which is exactly the Fourier coefficient.
+
+Sketch proof that $L^2([0, 1])$ is complete:
+
+Note that $L^2([0, 1]) \subseteq L^1([0, 1])$, since $f\in L^2 \implies \int_0^1 \abs{f} 1 ~dx \leq \sqrt{\int_0^1 \abs{f}^2}$ by C-S. 
+This also shows that $\norm{f}_1 \leq \norm{f}_2$.
+
+Let $f_n$ be Cauchy in $L_2$.
+Then $f_n$ is Cauchy in $L^1$, and since $L^1$ is complete, there is a subsequence converging to $f$ almost everywhere.
+
+Now $\int \liminf_k \abs{f_{n_j} - f_{n_k}}^2 \leq \liminf \int \abs{f_{n_j} - f_{n_k}}$ by Fatou.
+But the LHS goes to $\int \abs{f_{n_j} - f}$ and the RHS is $\norm{f_{n_j} - f_{n_k}} \to 0$, so less than $\varepsilon$ if $j$ is big enough.
+So $f_{n_j} \to f$ in $L^2$ as $j\to\infty$, and thus $f_n \to f\in L^2$ as $n\to\infty$.
+
+Unitary Maps:
+
+Let $U: H_1 \to H_2$ such that $\inner{Ux}{Uy} = \inner{x}{y}$ (i.e. $U$ preserves angles).
+Then $\norm{Ux} = \norm{x}$, i.e. $U$ is an isometry.
