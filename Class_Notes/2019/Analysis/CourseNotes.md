@@ -2705,3 +2705,8 @@ Existence of Bases
 
 - Every Hilbert space has an orthonormal basis (possibly uncountable)
 - $H$ *separable* Hilbert space $\iff$ $H$ has a *countable* basis (separable = countable dense subset).
+
+
+Some examples of orthonormal bases:
+
+- $\ell^2 \NN$: $u_n(k) = 1 \iff n=k$ and $0$ otherwise, i.e. $\vector e_i$.
