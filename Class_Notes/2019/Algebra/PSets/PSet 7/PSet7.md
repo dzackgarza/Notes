@@ -493,4 +493,4 @@ x &= (0, 0) \\
 ,\end{align*}
 \]
 
-but since the $v_i$ were a basis of $F_1$ and the $w_j$ a basis of $F_2$, this forces $r_i = 0, w_j = 0$ for all $i$ and $j$.
+but since the $v_i$ were a basis of $F_1$ and the $w_j$ a basis of $F_2$, this forces $r_i = 0, w_j = 0$ for all $i, j$.
