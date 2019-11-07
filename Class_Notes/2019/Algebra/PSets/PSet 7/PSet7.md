@@ -383,3 +383,10 @@ r+ (p) \cdot s + (p) \actson  x + pA &\coloneqq rs + (p) \actson x + pA \\
 &\coloneqq r + (p) \actson s + (p) \actson x + pA
 .\end{align*}
 \]
+
+$1\cdotx = x$:
+\[
+\begin{align*}
+1_R + (p) \actson x + pA &= 1_R x + pA = x + pA
+.\end{align*}
+\]
