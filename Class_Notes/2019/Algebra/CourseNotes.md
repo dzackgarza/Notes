@@ -3137,3 +3137,13 @@ Since $\Gamma(S \circ T) = \Gamma(T) \Gamma(S)$, define a map $\Theta: M_{n, n}(
 Then $\Theta(AB) = (AB)^t = B^t A^t = \Theta(B) \Theta(A)$, so $\Theta$ is an anti-isomorphism.
 
 Then $\Theta\circ \Gamma$ is an anti-anti-homomorphism, i.e. a usual homomorphism.
+
+Definition:
+A matrix $A$ is *invertible* iff there exists a $B$ such that $AB = BA = \id_n$.
+
+Proposition:
+Let $R$ be a unital ring and $V, W$ free $R\dash$modules with $\dim V = n, \dim W = m$.
+Then
+
+1. $T \in \hom_R(V, W)$ is an isomorphisms iff $[T]_{\beta_v, \beta_w}$ is invertible.
+2. $[T\inv]_{\beta_v, \beta_w} = [T]_{\beta_v, \beta_w}\inv$.
