@@ -39,3 +39,5 @@ If $y\mu = 0$, then $y\in I$.
 Otherwise, $y\mu \neq 0$ and $x\in \ann_{y\mu}$.
 But by maximality, $\ann_{y\mu} \subseteq I$, so $x\in I$.
 
+
+# Problem 3
