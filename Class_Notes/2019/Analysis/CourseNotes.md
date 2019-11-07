@@ -2710,3 +2710,5 @@ Existence of Bases
 Some examples of orthonormal bases:
 
 - $\ell^2 \NN$: $u_n(k) = 1 \iff n=k$ and $0$ otherwise, i.e. $\vector e_i$.
+- $L^2([0,1])$: $e_n(x) \coloneqq e^{2\pi i n x}$.
+  Normed: by Cauchy-Schwarz, but need to show it's complete. Can use the fact that $L^1$ is complete.
