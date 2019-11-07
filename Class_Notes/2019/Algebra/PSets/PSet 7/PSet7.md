@@ -452,4 +452,7 @@ and by construction, $\abs{\mathcal B} = mn = m\dim V$.
 
 To see that this is a spanning set, let $\vector x \in V^{\oplus m}$, so $\vector x = [\vector v_1, \vector v_2, \cdots, \vector v_m]$ where each $\vector v_i \in V$.
 
-Then each $\vector v_i \in \mathcal B$, so $\vector v_i = \sum_{k=1}^n \alpha_{k, i} \vector b_k$.
+Then each $\vector v_i \in \mathcal B$, so $\vector v_i = \sum_{k=1}^n \alpha_{k, i} \vector b_k$. But then
+$$
+\vector x = [\sum_{k=1}^n \alpha_{k, 1} \vector b_k, \sum_{k=1}^n \alpha_{k, 2} \vector b_k, \cdots, \sum_{k=1}^n \alpha_{k, m} \vector b_k,]
+$$
