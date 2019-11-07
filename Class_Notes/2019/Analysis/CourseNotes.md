@@ -2704,4 +2704,4 @@ By completeness, we get $x=y$. $\qed$
 Existence of Bases
 
 - Every Hilbert space has an orthonormal basis (possibly uncountable)
-- Every *separable* Hilbert space has a *countable* basis (separable = countable dense subset).
+- $H$ *separable* Hilbert space $\iff$ $H$ has a *countable* basis (separable = countable dense subset).
