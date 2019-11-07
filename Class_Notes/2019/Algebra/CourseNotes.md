@@ -3043,3 +3043,21 @@ Let $P$ be an $R\dash$module. Then TFAE:
 a. $P$ is projective.
 b. Every SES $0 \to M \to N \to P \to 0$ splits.
 c. There exists a free module $F$ such that $F = P \oplus K$ for some other module $K$.
+
+Proof:
+
+$a \implies b$:
+We set up the following situation, where $s$ is produced by the universal property:
+```{=latex}
+\begin{tikzcd}
+            &             &                        & P \arrow[d, "\id", two heads, hook] \arrow[ld, "\exists s"] &   \\
+0 \arrow[r] & M \arrow[r] & N \arrow[r, two heads] & P \arrow[r]                                                 & 0
+\end{tikzcd}
+```
+
+$b \implies c$:
+Suppose we have $0 \to M \to N \to P \to 0$ a SES which splits, then $N \cong M \oplus P$ by a previous theorem.
+
+$c\implies a$:
+
+
