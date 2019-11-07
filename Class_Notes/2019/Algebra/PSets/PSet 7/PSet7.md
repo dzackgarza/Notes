@@ -331,10 +331,20 @@ which says that $(x + (p))\inv = r + (p)$ in $R/(p)$.
 
 ## Part (b)
 
-We'll apply the submodule criterion: $N \subseteq R$ is a submodule iff $N + RN \subseteq N$.
+Images and kernels of module homomorphisms are always submodules, so define
+\[
+\begin{align*}
+\phi: A \to A \\
+x \mapsto px
+.\end{align*}
+\]
 
-Let $z \in pA + RpA$, so $z = pa_1 + rpa_2$ for some $a_1, a_2 \in A$ and $r\in R$. 
-Then 
-$$
-z = pa_1 + rpa_2 = p(a_1 + ra_2) \coloneqq pa_3 \in pA.
-$$
+This is a module homomorphism, and
+\[
+\begin{align*}
+\im \phi \coloneqq \theset{px \suchthat x \in A} \coloneqq pA,\\
+\ker \phi \coloneqq \theset{a\in A \suchthat pA = 0} \coloneqq A[p]
+.\end{align*}
+
+## Part (c)
+\]
