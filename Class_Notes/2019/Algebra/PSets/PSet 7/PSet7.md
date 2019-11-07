@@ -354,7 +354,7 @@ Since $R/(p)$ is a field, we just need to show that $A/pA \actson R/(p)$ defines
 $r\cdot(x + y) = rx + ry$:
 \[
 \begin{align*}
-r + (p) \actson x + pA + y + pA &\coloneqq r + (p) \actson x + y + pA \\
+r + (p) \actson x + pA \oplus y + pA &\coloneqq r + (p) \actson x + y + pA \\
 &\coloneqq r(x+y) + pA \\
 &= rx + ry + pA \\
 &\coloneqq rx + pA \oplus ry + pA \\
