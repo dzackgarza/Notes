@@ -428,4 +428,11 @@ $1\cdot x = x$:
 
 # Problem 6
 
-Let $\vector x \in V^{\oplus m}$, so $\vector x = [\vector v_1, \vector v_2, \cdots, \vector v_m]$ where each $\vector v_i \in V$. 
+Let $\vector x \in V^{\oplus m}$, so $\vector x = [\vector v_1, \vector v_2, \cdots, \vector v_m]$ where each $\vector v_i \in V$.
+
+Supposing that $\dim V = n$, let $\mathcal B \coloneqq \theset{\beta_k \mid 1 \leq k \leq n}$ be a basis for $V$, and define
+$$
+\vector e_i \coloneq [0, 0, \cdots, 1, \cdots, 0] \in V^{\oplus m}
+$$
+
+where the $1$ occurs in the $i$th position.
