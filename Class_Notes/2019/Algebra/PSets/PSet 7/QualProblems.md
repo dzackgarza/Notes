@@ -30,4 +30,8 @@ The polynomial $f$ is separable, since $f'(x) = p^{kn}x^{p^{kn}-1} - 1 = -1$ sin
 Since $E$ is a finite extension, $E$ is thus a separable extension.
 Then, since $E$ is a separable splitting field, it is a Galois extension by definition.
 
+# Problem 2
 
+We have $I = \union_{\mu \in M} \mathrm{Ann}_\mu$, and we want to show that $xy \in I \implies x\in I$ or $y\in I$.
+
+So suppose $xy \in I$. Then $xy \in \mathrm{Ann}_\mu$ for some $\mu \in M$, so $xy\mu = 0$ and thus $x\in \mathrm{Ann}_{y\mu} \subset I$.
