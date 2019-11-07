@@ -342,8 +342,8 @@ x \mapsto px
 This is a module homomorphism, and
 \[
 \begin{align*}
-\im \phi \coloneqq \theset{px \suchthat x \in A} \coloneqq pA,\\
-\ker \phi \coloneqq \theset{a\in A \suchthat pA = 0} \coloneqq A[p]
+\im \phi &\coloneqq \theset{px \suchthat x \in A} \coloneqq pA,\\
+\ker \phi &\coloneqq \theset{a\in A \suchthat pA = 0} \coloneqq A[p]
 .\end{align*}
 
 ## Part (c)
