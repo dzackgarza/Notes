@@ -392,6 +392,7 @@ $1\cdot x = x$:
 \]
 
 ## Part (d)
+Similarly, since $R/(p)$ is a field, it suffices to show that $R/(p)\actson A[p]$ defines a module.
 
 $r\cdot(x + y) = rx + ry$:
 \[
