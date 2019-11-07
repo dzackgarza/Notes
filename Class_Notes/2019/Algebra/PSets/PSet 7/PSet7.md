@@ -473,3 +473,5 @@ $$\mathcal B = \theset{(v, 0) \mid v\in \mathcal{B}_1 } \union \theset{(0, w) \m
 is a basis for $F_1 \oplus F_2$, where $\# \mathcal B = \# \mathcal B_1 + \# \mathcal B_2 = \rank F_1 + \rank F_2$.
 
 So see that $\mathcal B$ spans $F_1 \oplus F_2$, let $x\in F_1 \oplus F_2 = (f_1, f_2)$ be arbitrary. 
+Since $f_1 \in F_1$, we have $f_1 = \sum_i r_i \vector b_{1, i}$, and similarly $f_2 = \sum_j s_j \vector b_{2, j}$.
+
