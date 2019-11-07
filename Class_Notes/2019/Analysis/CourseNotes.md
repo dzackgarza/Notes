@@ -2738,6 +2738,6 @@ A corollary of Riesz-Fischer:
 If $\theset u-N$ is an orthonormal basis in $H$, then the map $x \mapsto \hat x(u) \coloneqq \inner{x}{u_n}$ is a *unitary* map from $H$ to $\ell^2$.
 So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
 
-> Subspaces in hilbert spaces don't have to be closed, but perps always are!
 
 ![Image](figures/2019-11-07-12:22.png)
+> Subspaces in hilbert spaces don't have to be closed, but perps always are!
