@@ -436,3 +436,15 @@ $$
 $$
 
 where the $1$ occurs in the $i$th position. The claim is that $\mathcal{B}^{m} \coloneqq \theset{\vector e_i \vector b_k \mid 1 \leq i \leq n,~~1\leq k \leq m}$ forms a basis for $V^{\oplus m}$.
+
+Elements in $\mathcal{B}^{m}$ are of the form
+\[
+\begin{align*}
+[\vector b_1, 0, 0, \cdots, 0]\\
+[\vector b_2, 0, 0, \cdots, 0]\\
+\cdots \\
+[0, \vector b_1, 0, \cdots, 0]\\
+[0, \vector b_2, 0, \cdots, 0]\\
+\cdots
+.\end{align*}
+\]
