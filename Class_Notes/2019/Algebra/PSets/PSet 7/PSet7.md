@@ -461,4 +461,4 @@ which exhibits $\vector x \in \mathcal{B}^m$.
 
 To see that it is linearly independent, supposing that $\vector x = \sum_i \sum_k \alpha_{k, i} \vector b_k \vector e_i = 0$, this says that $\vector x = [0, 0, \cdots, 0]$, which forces $\sum_k \alpha_{k, i} \vector b_k$ to be zero for each $i$.
 
-But since $\theset{\vector b_k}$ was a basis for $V$, this means that $\alpha_{k, i} = 0$ for all $k$. But then $\alpha_{k, i} = 0$ for all pairs $i, k$.
+But for a fixed $i$, since $\theset{\vector b_k}$ was a basis for $V$, this means that $\alpha_{k, i} = 0$ for all $k$. But then $\alpha_{k, i} = 0$ for all pairs $i, k$.
