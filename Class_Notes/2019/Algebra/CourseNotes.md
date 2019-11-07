@@ -3071,7 +3071,7 @@ Then $\ZZ_6 = \ZZ_2 \oplus \ZZ_3$, then $\ZZ_2, \ZZ_3$ are projective $R\dash$mo
 > See section 7.1
 
 Let $M_{m, n}(\RR)$ denote $m\times n$ matrices with coefficients in $R$.
-This is an $R\dashR$ bimodule, and since $R$ is not necessarily a commutative ring, these two module actions may not be equivalent.
+This is an $R\dash R$ bimodule, and since $R$ is not necessarily a commutative ring, these two module actions may not be equivalent.
 
 If $m=n$, then $M_{n,n}(R)$ is a ring under the usual notions of matrix addition and multiplication.
 
@@ -3110,5 +3110,19 @@ $$
 [S \circ T]_{\beta_v, \beta_z} = [T]_{\beta_v, \beta_w} [S]_{\beta_w, \beta_z}
 $$
 
-Proof:
+Proof: Exercise! Show that $(S \circ T)(v_i) = \sum_j^t \sum_k^m a_{ik} b_{kj} z_j$
+
+
+Suppose $\Gamma: \hom_R(V, V) \to M_n(R)$ and $V$ is a free left $R\dash$module.
+Under the theorem, we have $\Gamma(T \circ S) = \Gamma(S) \Gamma(T)$. 
+We say that $\Gamma$ is an *anti-homomorphism*.
+
+To address this mix-up, given a ring $R$ we can define $R^{op}$ which has the underlying set of $R$ but $x \cdot y \coloneq yx \in R$ as the multiplication.
+If $R$ is commutative, then $R = R^{op}$.
+
+
+**Theorem**:
+Let $R$ be a unital ring and $V$ an $R\dash$module. 
+Then $\hom_R(V, V) \cong M_n(R^{op})$ as rings.
+
 
