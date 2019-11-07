@@ -28,4 +28,4 @@ The roots of $f$ are exactly the elements of $E$, so $f$ splits in $E$.
 
 The polynomial $f$ is separable, since $f'(x) = p^{kn}x^{p^{kn}-1} - 1 = -1$ since $\mathrm{char}E = p$.
 Since $E$ is a finite extension, $E$ is thus a separable extension.
-Then, since $E$ is a separable splitting field, it is a Galois extension.
+Then, since $E$ is a separable splitting field, it is a Galois extension by definition.
