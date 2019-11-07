@@ -303,7 +303,8 @@ $\ker \varphi = \theset{g\in G \suchthat \varphi(g) = e'}$.
 ### The First Homomorphism Theorem
 \wrapenv{\Begin{theorem}}
 There exists a map $\varphi': G/\ker \varphi \to G'$ such that the following diagram commutes:
-\[
+
+```{=latex}
 \begin{center}
 \begin{tikzcd}
 G \arrow[dd, "\eta"'] \arrow[rr, "\varphi", dotted] &  & G' \\
@@ -311,7 +312,7 @@ G \arrow[dd, "\eta"'] \arrow[rr, "\varphi", dotted] &  & G' \\
 G/\ker \varphi \arrow[rruu, "\varphi'"]             &  &
 \end{tikzcd}
 \end{center}
-\]
+```
 
 That is, $\varphi = \varphi' \circ \eta$, and $\varphi'$ is an isomorphism onto its image, so $G/\ker \varphi = \im \varphi$. This map is given by $\varphi'(g(\ker \varphi)) = \varphi(g)$.
 \wrapenv{\End{theorem}}
