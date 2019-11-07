@@ -3147,3 +3147,6 @@ Then
 
 1. $T \in \hom_R(V, W)$ is an isomorphisms iff $[T]_{\beta_v, \beta_w}$ is invertible.
 2. $[T\inv]_{\beta_v, \beta_w} = [T]_{\beta_v, \beta_w}\inv$.
+
+Definition:
+We'll say that two matrices $A, B$ are *equivalent* iff there exist $P, Q$ invertible such that $PAQ = B$.
