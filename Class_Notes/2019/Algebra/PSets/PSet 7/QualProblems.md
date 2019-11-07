@@ -51,4 +51,4 @@ Since $a$ is irreducible, either $r$ is a unit or $b$ is a unit.
 
 If $r$ is a unit, then $a = rb \implies r\inv a = b$. But then $x\in Rb \implies x = r'b = r'r\inv a \in Ra$, so $Rb \subseteq Ra$ and thus $Ra = Rb = I$.
 
-Otherwise, if $b$ is a unit, $Rb = R$.
+Otherwise, if $b$ is a unit, $a = rb \implies Ra = R$. But any ideal containing a unit is the entire ring, so $Rb = (b) = R$ as well, so again $Ra = I$.
