@@ -425,3 +425,5 @@ $1\cdot x = x$:
 1_R + (p) \actson a &= 1a = a
 .\end{align*}
 \]
+
+# Problem 6
