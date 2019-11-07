@@ -465,4 +465,5 @@ But for a fixed $i$, since $\theset{\vector b_k}$ was a basis for $V$, this mean
 
 # Problem 7
 
-
+Let $F_1, F_2$ be free, so they have bases $\mathcal B_1, \mathcal B_2$. 
+Supposing that they have the invariant dimension property, we can assume that $\#\mathcal B_1 = n \coloneqq \rank F_1$.
