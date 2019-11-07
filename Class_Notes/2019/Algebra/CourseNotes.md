@@ -3125,3 +3125,9 @@ v_2 \mapsto \sum_i^n a_{2, i} w_i \\
 \]
 
 This produces a map $f: \hom_k(V, W) \to M_{m, n}(k)$ defined by $T \mapsto (a_{i, j})$, which is a matrix.
+
+*Exercise: Check that this is bijective.*
+
+Theorem:
+Let $M, N$ be free left $R\dash$modules of rank $m, n$ respectively.
+Then 
