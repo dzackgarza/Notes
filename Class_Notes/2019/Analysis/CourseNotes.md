@@ -2678,3 +2678,5 @@ Since $H$ is complete, $S_N \to x$ for some $x\in H$.
 We now need to argue that $a_n = \inner{x}{u_n}$
 
 If $N$ is large enough, in particular $N \geq n$, then we have the identity $\abs{\inner{x}{u_n} - a_n} = \abs{\inner{x}{u_n} - \inner{S_N}{u_n}  } = \abs{ \inner{x - S_N}{u_n} } \leq \norm{x - S_N} \to 0$.
+
+> Note: should be able to translate this to statements about epsilons almost immediately!
