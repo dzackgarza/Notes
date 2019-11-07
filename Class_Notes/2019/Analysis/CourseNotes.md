@@ -2612,7 +2612,7 @@ so $\sum \abs{\inner{x}{u_n}}^2 \leq \norm{x}^2$ holds for every $N$, and thus f
 > If this is an equality, then this is exactly Parseval's theorem.
 
 
-Theorem (Riesz-Fischer):
+**Theorem (Riesz-Fischer):**
 
 The map $x \mapsvia{\hat} \inner{x}{u_n} \coloneqq \hat x(n)$ maps $H$ onto $\ell^2$.
 If $\theset{u_n}^\infty$ is orthonormal in $H$ and $\theset{a_n}^\infty \in \ell^2(\NN)$, then there exists an $x\in H$ such that $\inner{x}{u_n} = a_n$ for all $n\in N$.
@@ -2623,6 +2623,38 @@ Moreover, $x$ can be chosen such that $\norm{x} = \sqrt{\sum \abs{a_n}^2}$.
 > This turns out to be equivalent to $\theset{u_n}$ being a basis, which is equivalent to the convergence of Fourier series, which is also equivalent to something else.
 
 
-# 
+# Thursday November 7 
+
+Let $H$ be a hilbert space, then we have 
+
+**Theorem (Bessel's inequality)**:
+
+If $\theset{u_n}$ is orthonormal in $H$, then for any $x \in H$ we have
+$$
+\sum_n \abs{\inner{x}{u_n}}^2 \leq \norm{x}^2,
+$$
+
+or equivalently $\theset{ \inner{x}{u_n} } \in \ell^2 \NN$.
+
+Proof:
+
+We have 
+\[
+\begin{align*}
+0 \leq \norm{
+x - \sum_{n=1}^N \inner{x}{u_n} u_n
+}^2 =
+\norm{x}^2 - \sum_{n=1}^N \abs{
+\inner{x}{u_n}
+}^2 \forall N
+.\end{align*}
+\]
+
+Remark:
+TFAE?
+
+- $\span \theset{u_n} = H$, i.e. $u_n$ is a basis.
+- $\sqrt{ \sum_n \abs{ \inner{x}{u_n}  }^2  } = \norm{x} \forall x\in H$, i.e. Parseval's identity
+- $\lim_{N\to\infty} \norm{ x - \sum_n^N \inner{x}{u_n}  } = 0$, i.e. the Fourier series converges in $H$.
 
 
