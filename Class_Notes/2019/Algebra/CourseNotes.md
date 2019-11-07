@@ -3081,9 +3081,12 @@ $\bigoplus P_i$ is projective iff each $P_i$ is projective.
 
 Proof:
 
-$\implies$: Suppose $\oplus P_i$ is projective. 
+$\implies$: 
+Suppose $\oplus P_i$ is projective. 
 Then there exists some $F = K \oplus \bigoplus P_i$ where $F$ is free.
 But then $P_i$ is a direct summand of $F$, and is thus projective.
 
 $\impliedby$:
+Suppose each $P_i$ is projective, then there exists $F_i = P_i \oplus K_i$, so $F \coloneqq \bigoplus F_i = \bigoplus (P_i \oplus K_i) = \bigoplus P_i \oplus \bigoplus K_i$.
+So $\bigoplus P_i$ is a direct summand of a free module, and thus projective.
 
