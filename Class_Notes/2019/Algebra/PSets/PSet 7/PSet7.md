@@ -396,7 +396,7 @@ $1\cdot x = x$:
 $r\cdot(x + y) = rx + ry$:
 \[
 \begin{align*}
-r + (p) \actson (a + a') &\coloneqq r(a + a') 
+r + (p) \actson (a + a') &\coloneqq r(a + a') \\
 &= ra + ra' \\
 &= r\actson a + r\actson a'
 .\end{align*}
