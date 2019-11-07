@@ -3076,4 +3076,5 @@ Set $\phi = h\circ \iota$.
 
 > Exercise: Check that $g\circ \phi = f$.
 
-
+**Theorem:**
+$\bigoplus P_i$ is projective iff each $P_i$ is projective.
