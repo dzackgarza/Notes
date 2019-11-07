@@ -2660,11 +2660,13 @@ Check
 We say that two exact sequences are *isomorphic* if in the following diagram, $f,g,h$ are isomorphisms.
 
 ```{=latex}
+\begin{center}
 \begin{tikzcd}
 0 & M \arrow[dd, "f"] & N \arrow[dd, "g"] & Q \arrow[dd, "h"] & 0 \\
   &                   &                   &                   &   \\
 0 & M                 & N                 & Q                 & 0
 \end{tikzcd}
+\end{center}
 ```
 
 Theorem:
@@ -2679,25 +2681,30 @@ Proof:
 Define $\phi: M_1 \oplus M_3 \to M_2$ by $\phi(m_1 + m_2) = f(m_1) + h(m_2)$.
 We need to show that this diagram commutes:
 
-<!--\begin{tikzcd}-->
-<!--0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\-->
-  <!--&                       &                                   &                       &   \\-->
-<!--0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0-->
-<!--\end{tikzcd}-->
+```{=latex}
+\begin{center}
+\begin{tikzcd}
+0 & M_1 \arrow[dd, "id"] & M_2                               & M_3 \arrow[dd, "id"] & 0 \\
+	&                       &                                   &                       &   \\
+0 & M_1                   & M_1 \oplus M_3 \arrow[uu, "\phi"] & M_3                   & 0
+\end{tikzcd}
+\end{center}
+```
 
 We can check that $g\phi(m_1 + m_2) = g( f(m_1)) +  g(h(m_2)) = m_2 = \pi(m_1 + m_2)$.
 This yields $1 \implies 3$, and $2 \implies 3$ is similar.
 
 To see that $3 \implies 1, 2$, we attempt to define $k, h$ in the following diagram:
 
-
-<!--\[-->
-<!--\begin{tikzcd}-->
-<!--0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\-->
-            <!--&                       &                                                   &                                                                   &   \\-->
-<!--0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0-->
-<!--\end{tikzcd}-->
-<!--\]-->
+```{=latex}
+\begin{center}
+\begin{tikzcd}
+0 \arrow[r] & M_1 \arrow[dd, "\id"] & M_1 \oplus M_3 \arrow[l, "\pi_1"', bend right]    & M_3 \arrow[dd, "\id"] \arrow[l, "\iota_2"', bend right] \arrow[r] & 0 \\
+						&                       &                                                   &                                                                   &   \\
+0 \arrow[r] & M_1                   & M_2 \arrow[uu, "\phi"'] \arrow[l, "k", bend left] & M_3 \arrow[l, "h", bend left] \arrow[r]                           & 0
+\end{tikzcd}
+\end{center}
+```
 
 
 So define $\k = \pi_1 \circ \phi\inv$ and $h = \phi \circ \iota_2$.
