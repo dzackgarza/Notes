@@ -2661,3 +2661,16 @@ Recall the Riesz-Fischer theorem: if $\theset u_n$ is orthonormal in $H$ and $\t
 Moreover, the map $x \mapsto \hat x(u) \coloneqq \inner{x, u_n}$ maps $H$ onto $\ell^2 \NN$ surjectively.
 
 > Remark: This $x$ is only unique if $\theset u_n$ is *complete*, i.e. $\inner{y}{u_n} = 0 \forall n \implies y = 0$.
+
+Proof;
+Let $S_N \coloneqq \sum_{n=1}^N a_n u_n$. 
+Then $S_N$ is Cauchy, so
+\[
+\begin{align*}
+\norm{S_N - S_M}^2 &= \norm{ \sum_{n=M+1}^N a_n u_n }^2 \\
+&= \sum_{n=M+1}^N  \norm{a_n u_n}^2 \quad\quad\text{by Pythagoras since the $u_n$ are orthogonal} \\
+&= \sum_{n=M+1}^n \abs{a_n} \to 0
+,\end{align*}
+\]
+
+since $\sum \abs{a_n} < \infty$ implies that the sum is Cauchy.
