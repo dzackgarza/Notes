@@ -357,7 +357,17 @@ $r\cdot(x + y) = rx + ry$:
 r + (p) \actson x + pA + y + pA &\coloneqq r + (p) \actson x + y + pA \\
 &\coloneqq r(x+y) + pA \\
 &= rx + ry + pA \\
-&\coloneqq rx + pA + ry + pA \\
+&\coloneqq rx + pA \oplus ry + pA \\
 &\coloneqq r\actson x + pA \oplus r \actson y + pA
+.\end{align*}
+\]
+
+$(r + s)\cdot x = rx + sx$:
+\[
+\begin{align*}
+r +s + (p) \actson x + pA &\coloneqq (r+s)x + pA \\
+&= rx + sx + pA \\
+&\coloneqq rx + pA \oplus sx + pA \\
+&\coloneqq r\actson x + pA \oplus s \actsons x + pA
 .\end{align*}
 \]
