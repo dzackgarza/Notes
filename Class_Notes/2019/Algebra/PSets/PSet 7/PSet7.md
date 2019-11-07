@@ -477,5 +477,14 @@ Since $f_1 \in F_1$, we have $f_1 = \sum_i r_i \vector b_{1, i}$, and similarly 
 
 We can then write
 $$
-x = (f_1, f_2) = (f_1, 0) + (0, f_2) = (\sum_i r_i \vector b_{1, i}, 0) + (0, \sum_j s_j \vector b_{2, j})
+x = (f_1, f_2) = (f_1, 0) + (0, f_2) = (\sum_i r_i \vector b_{1, i}, 0) + (0, \sum_j s_j \vector b_{2, j}),
 $$
+
+which exhibits $x$ as a linear combination of elements in $\mathcal B$.
+
+To see linear independence, we just note that
+$$
+x = (0, 0) = \sum_i r_i (v_i, 0) + \sum_j s_j (0, w_j) = \sum_i (r_i v_i, 0) + \sum_j (0, s_j w_j) = (\sum r_i v_i, \sum s_j w_j) \implies \sum_i r_i v_i = 0 \quad \& \quad \sum_j s_j w_j = 0,
+$$
+
+but since the $v_i$ were a basis of $F_1$ and the $w_j$ a basis of $F_2$, this forces $r_i = 0, w_j = 0$ for all $i$ and $j$.
