@@ -3143,4 +3143,5 @@ $$
 [S \circ T]_{\beta_v, \beta_z} = [T]_{\beta_v, \beta_w} [S]_{\beta_w, \beta_z}
 $$
 
+Proof:
 
