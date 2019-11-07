@@ -32,6 +32,10 @@ Then, since $E$ is a separable splitting field, it is a Galois extension by defi
 
 # Problem 2
 
-We have $I = \union_{\mu \in M} \mathrm{Ann}_\mu$, and we want to show that $xy \in I \implies x\in I$ or $y\in I$.
+We can write $I = \ann_\mu$ for some $\mu \in R$, so suppose $xy \in I$ so $xy\mu = 0$.
 
-So suppose $xy \in I$. Then $xy \in \mathrm{Ann}_\mu$ for some $\mu \in M$, so $xy\mu = 0$ and thus $x\in \mathrm{Ann}_{y\mu} \subset I$.
+If $y\mu = 0$, then $y\in I$. 
+
+Otherwise, $y\mu \neq 0$ and $x\in \ann_{y\mu}$.
+But by maximality, $\ann_{y\mu} \subseteq I$, so $x\in I$.
+
