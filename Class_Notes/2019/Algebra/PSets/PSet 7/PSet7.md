@@ -489,8 +489,8 @@ x &= (0, 0) \\
 &= \sum_i r_i (v_i, 0) + \sum_j s_j (0, w_j) \\&
 = \sum_i (r_i v_i, 0) + \sum_j (0, s_j w_j) \\
 &= (\sum_i r_i v_i, \sum_j s_j w_j)  \\
-& \implies \sum_i r_i v_i = 0 \quad \& \quad \sum_j s_j w_j = 0,
-.\end{align*}
+& \implies \sum_i r_i v_i = 0 \quad \& \quad \sum_j s_j w_j = 0
+,\end{align*}
 \]
 
 but since the $v_i$ were a basis of $F_1$ and the $w_j$ a basis of $F_2$, this forces $r_i = 0, w_j = 0$ for all $i$ and $j$.
