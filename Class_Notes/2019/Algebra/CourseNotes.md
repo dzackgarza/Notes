@@ -2948,13 +2948,13 @@ So we have a SES
 and since we've shown that $F$ is torsion-free, by the previous theorem $F$ is free.
 Moreover, every SES with a free module in the right-hand slot splits.
 
-\[
+```{=latex}
 \begin{tikzcd}
              &  &                &  &                    &  & X \arrow[dd, "\iota", hook] \arrow[lldd, "f", tail]          &  &   \\
              &  &                &  &                    &  &                                                              &  &   \\
 0 \arrow[rr] &  & M_t \arrow[rr] &  & M \arrow[rr, "f"'] &  & F \arrow[rr] \arrow[ll, "h" description, dotted, bend right] &  & 0
 \end{tikzcd}
-\]
+```
 
 For $X = \theset{x_j}$ a generating set of $F$, we can choose elements $\theset{y_i} \in \pi\inv(\iota(X))$ to construct a set map $f: X \to M$.
 By the universal property of free modules, we get a map $h: F \to M$.
