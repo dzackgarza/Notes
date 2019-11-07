@@ -3078,3 +3078,12 @@ Set $\phi = h\circ \iota$.
 
 **Theorem:**
 $\bigoplus P_i$ is projective iff each $P_i$ is projective.
+
+Proof:
+
+$\implies$: Suppose $\oplus P_i$ is projective. 
+Then there exists some $F = K \oplus \bigoplus P_i$ where $F$ is free.
+But then $P_i$ is a direct summand of $F$, and is thus projective.
+
+$\impliedby$:
+
