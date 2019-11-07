@@ -435,4 +435,4 @@ $$
 \vector e_i \coloneq [0, 0, \cdots, 1, \cdots, 0] \in V^{\oplus m}
 $$
 
-where the $1$ occurs in the $i$th position.
+where the $1$ occurs in the $i$th position. The claim is that $\mathcal{B}^{m} \coloneqq \theset{\vector e_i \vector \beta_k \mid 1 \leq i \leq n,~~1\leq k \leq m}$ forms a basis for $V^{\oplus m}$.
