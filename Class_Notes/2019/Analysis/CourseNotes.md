@@ -2701,4 +2701,7 @@ By Bessel, we have $\theset{\inner{x}{u_n}  } \in \ell^2 \NN$ (and we know that 
 By Riesz-Fischer, there exists a $y\in H$ such that $\inner{y}{u_n} = \inner{x}{u_n}$ and $\norm{y} = \sqrt{ \sum \abs{\inner{x}{u_n}}^2  }$.
 By completeness, we get $x=y$. $\qed$
 
+Existence of Bases
 
+- Every Hilbert space has an orthonormal basis (possibly uncountable)
+- Every *separable* Hilbert space has a *countable* basis (separable = countable dense subset).
