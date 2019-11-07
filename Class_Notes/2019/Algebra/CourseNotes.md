@@ -3071,4 +3071,7 @@ M \arrow[rr, two heads] &  & N
 \end{tikzcd}
 ```
 
-By the previous argument, 
+By the previous argument, there exists an $h: F\to M$ such that $g\circ h = f \circ \pi$.
+Set $\phi = h\circ \iota$.
+
+*Exercise: Check that $g\circ \phi = f$.*
