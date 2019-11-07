@@ -3130,4 +3130,4 @@ This produces a map $f: \hom_k(V, W) \to M_{m, n}(k)$ defined by $T \mapsto (a_{
 
 Theorem:
 Let $M, N$ be free left $R\dash$modules of rank $m, n$ respectively.
-Then 
+Then $\hom_R(M, N) \cong M_{m, n}(R)$ as $R\dash R$ bimodules.
