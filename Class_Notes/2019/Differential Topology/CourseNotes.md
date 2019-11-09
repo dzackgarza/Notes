@@ -67,7 +67,7 @@ A vector field is $X$ *complete* iff every flow curve of $X$ exists for all time
 
 *Example: An Incomplete Vector Field*
 
-Let $M = \RR$, and $X: M \to TM \cong \RR$ be defined by $X(p) = p^2$. Then if $\gamma'(p) = X(\gamma(p))$
+Let $M = \RR$, and $X: M \to TM \cong \RR$ be defined by $X(p) = p^2$. Then if a curve $\gamma: \RR \to M$ is defined by $\dd{}{t} \gamma(t) = X(\gamma(t))$
 
 **Theorem**
 Let $M$ be a compact manifold without boundary. Then every smooth vector field on $M$ is complete.
