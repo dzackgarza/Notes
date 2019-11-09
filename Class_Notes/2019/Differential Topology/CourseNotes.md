@@ -22,8 +22,14 @@ $$
 
 
 Example: 
-Let $f: \RR^n \to \RR^n$ be differentiable and $\vector v \in \RR^n$. The *directional derivative* of $\vector x$ in the direction $\vector b$ is defined as
+Let $f: \RR^n \to \RR$ be differentiable and $\vector v \in \RR^n$. The *directional derivative* of $\vector x$ in the direction $\vector b$ is defined as
 $$
 D_vf (\vector x) = \dd{}{t}f(\vector x + t\vector v) \Bigm|_{t=0}
-= \sum_{i=1}^n v_i \dd{f}{x_i}(\vector{x})
+= \sum_{i=1}^n v_i \dd{f}{x_i}(\vector{x}) \in \RR^n
+$$
+
+and the *tangent vector* at $\vector x$ is defined as 
+$$
+\vector v: C^\infty(\RR^n) \to \RR^n \\
+f \mapsto (D_{v} \circ f) (\vector x)
 $$
