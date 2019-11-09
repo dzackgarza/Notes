@@ -65,4 +65,4 @@ Definition (Complete):
 A vector field is $X$ *complete* iff every flow curve of $X$ exists for all time.
 
 **Theorem**
-Let $M$ be a compact manifold without boundary. Then every vector field on $M$ is complete.
+Let $M$ be a compact manifold without boundary. Then every smooth vector field on $M$ is complete.
