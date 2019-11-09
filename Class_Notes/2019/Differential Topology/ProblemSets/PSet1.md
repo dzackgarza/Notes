@@ -71,5 +71,5 @@ we have $\chi(S^2) = 2 \neq 0$, and thus $\phi_1$ has a fixed point, so
 \begin{align*}
 \phi_1(p) =& p \\
 \implies \dd{}{t} \phi_1(p) =& \dd{}{t} p = 0 \\
-\implies \dd{}{t} \phi_1(p) \Bigm|_{t = 0} &= X(
+\implies \dd{}{t} \phi_1(p) \Bigm|_{t = 0} &= X(p)
 \end{align*}
