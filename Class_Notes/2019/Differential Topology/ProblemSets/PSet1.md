@@ -32,5 +32,9 @@ H: M \cross I &\to M \\
 
 We can now apply the Lefschetz fixed-point theorem to $\phi_0$ and $\phi_1$. For an arbitrary map $f: M \to M$, we have
 $$
-\Lambda(f) = \sum \Tr\left( f_* \Bigm|_{H_k(X; \ZZ)} \right)
+\Lambda(f) = \sum_k \Tr\left( f_* \Bigm|_{H_k(X; \QQ)} \right).
 $$
+
+where $f_*: H_*(X; \QQ) \to H_*(X; \QQ)$ is the induced map on homology, and $\Lambda_f = 0$ iff $f$ has a fixed point.
+
+It can be show that $\Lambda(\id_M) = \chi(M)$, the Euler characteristic
