@@ -64,5 +64,10 @@ which (by Picard-Lindelof, if $X$ is Lipschitz) has a unique $C^1(\RR)$ solution
 Definition (Complete):
 A vector field is $X$ *complete* iff every flow curve of $X$ exists for all time.
 
+
+Example: An Incomplete Vector Field
+
+
+
 **Theorem**
 Let $M$ be a compact manifold without boundary. Then every smooth vector field on $M$ is complete.
