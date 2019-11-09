@@ -32,5 +32,5 @@ H: M \cross I &\to M \\
 
 We can now apply the Lefschetz fixed-point theorem to $\phi_0$ and $\phi_1$. For an arbitrary map $f: M \to M$, we have
 $$
-\Lambda(f) = \sum \Tr
+\Lambda(f) = \sum \Tr\left( f_* \Bigm|_{H_k()} \right)
 $$
