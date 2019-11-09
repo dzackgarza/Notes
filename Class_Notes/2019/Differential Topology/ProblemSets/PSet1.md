@@ -16,7 +16,7 @@ $$
 $$ 
 and thus a one-parameter family 
 $$
-\phi_t: M \to M \in \mathrm{Diff{M, M}}.
+\phi_t: M \to M \in \mathrm{Diff(M, M)}.
 $$ 
 
 In particular, $\phi_0 = \id_M$, and $\phi_1$ is an arbitrary diffeomorphism of $M$, and moreover $\phi_0$ is homotopic to $\phi_1$ with homotopy given by 
