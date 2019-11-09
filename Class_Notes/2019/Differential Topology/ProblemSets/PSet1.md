@@ -46,3 +46,5 @@ $$
 the Euler characteristic of $M$.
 
 Since homotopic maps induce equal maps on homology, we also have $\Lambda(\phi_1) = \chi(M)$.
+
+We can compute $\chi(S^2)$
