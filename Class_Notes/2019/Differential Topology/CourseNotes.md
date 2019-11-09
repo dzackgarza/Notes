@@ -32,3 +32,7 @@ $$
 \vector v: C^\infty(\RR^n) \to \RR^n \\
 f \mapsto (D_{v} \circ f) (\vector x)
 $$
+
+
+*Definition 2 (Tangent Vector):*
+
