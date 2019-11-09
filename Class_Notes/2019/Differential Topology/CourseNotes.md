@@ -65,7 +65,7 @@ Definition (Complete):
 A vector field is $X$ *complete* iff every flow curve of $X$ exists for all time.
 
 
-Example: An Incomplete Vector Field
+*Example: An Incomplete Vector Field*
 
 Let $M = \RR$, and $X: M \to TM \cong \RR$ be defined by $X(p) = p^2$. Then if $\gamma'(p) = X(\gamma(p))$
 
