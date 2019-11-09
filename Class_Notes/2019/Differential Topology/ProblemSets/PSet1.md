@@ -67,12 +67,15 @@ H_k(S^2) = \begin{cases}
 \end{cases}
 $$
 
-we have $\chi(S^2) = 2 \neq 0$, and thus $\phi_1$ has a fixed point $p_0$, thus $\phi_1(p_0) = p_0$ and we have $\dd{}{t} \phi_t(p_0) = \dd{}{t} p_0 = 0$
+we have $\chi(S^2) = 2 \neq 0$, and thus $\phi_1$ has a fixed point $p_0$, thus
 
 $\dd{}{t} \phi_t(p_0)\Bigm|_{t=1}$
 so 
 \begin{align*}
 \phi_t(p) =& p \\
 \implies \dd{}{t} \phi_t(p) =& \dd{}{t} p = 0 \\
-\implies \dd{}{t} \phi_t(p) \Bigm|_{t = 1} &= X(\phi_1(p))
+\implies \dd{}{t} \phi_t(p) \Bigm|_{t = 1} &= 0 \Bigm|_{t=0} = 0 \\
+\implies X(\phi_1(p_0)) \definedas \dd{}{t} \phi_t(p) \Bigm|_{t = 1} &= 0,
 \end{align*}
+
+so $X(\phi_1(p_0)) = 0$, which shows that $p_0$ 
