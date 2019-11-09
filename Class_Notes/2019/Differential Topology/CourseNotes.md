@@ -16,4 +16,6 @@ f,g \in C^\infty(M) \implies D_{v}(af+bg)=aD_{v}(f)+bD_{v}(g)
 $$
 Note that the derivation will by definition have the Leibniz property
 
-{\displaystyle D_{v}(f\cdot g)=D_{v}(f)\cdot g(x)+f(x)\cdot D_{v}(g)\,.}D_{v}(f\cdot g)=D_{v}(f)\cdot g(x)+f(x)\cdot D_{v}(g)\,.
+$$ 
+{\displaystyle D_{v}(f\cdot g)(x) =D_{v}(f)\cdot g(x)+f(x)\cdot D_{v}(g)\,.}
+$$
