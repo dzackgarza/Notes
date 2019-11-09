@@ -22,3 +22,7 @@ $$
 
 
 Example: 
+Let $f: \RR^n \to \RR^n$ be differentiable and $\vector v \in \RR^n$. Define the *directional derivative* of $\vector x$ in the direction $\vector b$ by
+$$
+D_vf (\vector x) = \dd{}{t}f(\vector x + t\vector v \mid_{t=0}
+$$
