@@ -35,7 +35,11 @@ $$
 \Lambda(f) = \sum_k \Tr\left( f_* \Bigm|_{H_k(X; \QQ)} \right).
 $$
 
-where $f_*: H_*(X; \QQ) \to H_*(X; \QQ)$ is the induced map on homology, and $\Lambda_f = 0$ iff $f$ has a fixed point.
+where $f_*: H_*(X; \QQ) \to H_*(X; \QQ)$ is the induced map on homology, and 
+
+$$
+\lambda(f) \neq 0 \iff f\text{ has at least one fixed point.}
+$$
 
 In particular, we have
 $$
