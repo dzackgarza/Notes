@@ -37,5 +37,12 @@ $$
 
 where $f_*: H_*(X; \QQ) \to H_*(X; \QQ)$ is the induced map on homology, and $\Lambda_f = 0$ iff $f$ has a fixed point.
 
-Since the trace of the identity map is 1, 
-$\Lambda(\id_M) = \chi(M)$, the Euler characteristic
+In particular, we have
+$$
+\Lambda(\id_M) = \sum_k \Tr(\id_{H_k(X; \QQ)}) \\
+= \sum_k \dim H_k(X; \QQ) \\
+= \chi(M),
+$$
+the Euler characteristic of $M$.
+
+Since homotopic maps induce equal maps on homology, we also have $\Lambda(\phi_1) = \chi(M)$.
