@@ -43,7 +43,7 @@ $$
 
 where $\gamma \sim \gamma'$ iff $d(\phi \circ \gamma) = d(\phi \circ \gamma')$
 
-and define a map
+Then each equivalence class is a *tangent vector* at $p$. and define a map
 $$
 d\phi: T_p M \to \RR^n \\
 \gamma'(0) \mapsto \dd{}{t} (\phi \circ \gamma)\Bigm|_{t=0}
