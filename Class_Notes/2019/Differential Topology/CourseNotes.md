@@ -12,7 +12,7 @@ $$
 
 which satisfies the Leibniz property
 $$ 
-{\displaystyle D_{v}(f\cdot g)(x) =D_{v}(f)\cdot g(x)+f(x)\cdot D_{v}(g)\,.}
+{\displaystyle D_{v}(f g)(x) =D_{v}(f)\cdot g(x)+f(x)\cdot D_{v}(g)\,.}
 $$
 
 > Note: tangent vectors are in $C^\infty(M)\dual$
