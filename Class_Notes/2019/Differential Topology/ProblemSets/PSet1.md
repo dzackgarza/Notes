@@ -23,8 +23,9 @@ $$
 \phi_t: M \to M \in \mathrm{Diff}(M, M).
 $$ 
 
-In particular, $\phi_0 = \id_M$, and $\phi_1 \in \mathrm{Diff}(M, M)$. Moreover $\phi_0$ is homotopic to $\phi_1$ via the homotopy 
-$$
-H: M \cross I \to M \\
-(p, t) \mapsto \phi_t(p)
-$$
+In particular, $\phi_0 = \id_M$, and $\phi_1 \in \mathrm{Diff}(M, M)$. Moreover $\phi_0$ is homotopic to $\phi_1$ via the homotopy
+
+\begin{align*}
+H: M \cross I &\to M \\
+(p, t) &\mapsto \phi_t(p)
+\end{align*}
