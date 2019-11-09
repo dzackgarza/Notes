@@ -8,12 +8,14 @@ Let $M$ be a differentiable manifold and let $C^\infty(M)$ be the algebra of rea
 Then the tangent vector to $M$ at a point $\vector x$ in the manifold is given by a linear *derivation* 
 $$
 D_{v}: C^\infty (M)\rightarrow {\mathbb  {R}}.
-$$ 
+$$
 
 which satisfies the Leibniz property
 $$ 
 {\displaystyle D_{v}(f g)(x) =D_{v}(f)\cdot g(x)+f(x)\cdot D_{v}(g)\,.}
 $$
+
+> Note: this is the derivation property.
 
 > Note: tangent vectors are in $C^\infty(M)\dual$
 
