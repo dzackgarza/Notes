@@ -17,8 +17,16 @@ Every vector field on a compact manifold without boundary is complete, and since
 Thus every integral curve of $X$ exists for all time, yielding a well-defined flow 
 $$
 \phi: M \cross \RR \to M
-$$ 
-and thus a one-parameter family 
+$$
+
+given by solving the initial value problems
+$$
+\dd{}{s} \phi_s(p) \Bigm|_{s = t} = X(\phi_t(p)),\\
+\phi_0(p) = p
+$$
+at every point $p\in M$.
+
+This yields a one-parameter family 
 $$
 \phi_t: M \to M \in \mathrm{Diff}(M, M).
 $$ 
