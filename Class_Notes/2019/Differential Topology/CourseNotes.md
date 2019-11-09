@@ -53,7 +53,7 @@ $$
 
 Given $X$ a vector field on a manifold $M$, a *flow curve* of $X$ at a point $p\in X$ is a curve $\gamma: \RR \to M$ defined by the ordinary differential equation
 $$
-\gamma'(t) = X(\gamma(t)) \\
+\dd{}{t}\gamma(t) = X(\gamma(t)) \\
 \gamma(0) = 0
 $$
 
