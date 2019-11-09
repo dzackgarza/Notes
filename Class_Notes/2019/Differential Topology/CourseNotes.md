@@ -48,3 +48,21 @@ $$
 d\phi: T_p M \to \RR^n \\
 \gamma'(0) \mapsto \dd{}{t} (\phi \circ \gamma)\Bigm|_{t=0}
 $$
+
+*Definition (Flow Curve):*
+
+Given $X$ a vector field on a manifold $M$, a *flow curve* of $X$ at a point $p\in X$ is a curve $\gamma: \RR \to M$ defined by the ordinary differential equation
+$$
+\gamma'(t) = X(\gamma(t)) \\
+\gamma(0) = 0
+$$
+
+which (by Picard-Lindelof, if $X$ is Lipschitz) has a unique $C^1(\RR)$ solution at each point $\gamma_p: \RR \to M$ for some interval $I_p \definedas (-\varepsilon, \varepsilon) \in \RR$ depending on $p$.
+
+> Note: these are also called *integral curves*?
+
+Definition (Complete):
+A vector field is $X$ *complete* iff every flow curve of $X$ exists for all time.
+
+**Theorem**
+Let $M$ be a compact manifold without boundary. Then every vector field on $M$ is complete.
