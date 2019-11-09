@@ -78,4 +78,6 @@ so
 \implies X(\phi_1(p_0)) \definedas \dd{}{t} \phi_t(p) \Bigm|_{t = 1} &= 0 &\text{by definition of $\phi_1$} 
 \end{align*}
 
-so $X(\phi_1(p_0)) = 0$, which shows that $p_0$ is a zero of $X$.
+so $X(\phi_1(p_0)) = 0$, which shows that $p_0$ is a zero of $X$. So $X$ has at least one zero, as desired. $\qed$
+
+## Part 2
