@@ -30,4 +30,7 @@ H: M \cross I &\to M \\
 (p, t) &\mapsto \phi_t(p).
 \end{align*}
 
-We can now apply the Lefschetz fixed-point theorem to $\phi_0$ and $\phi_1$. For an arbitrary map $f:
+We can now apply the Lefschetz fixed-point theorem to $\phi_0$ and $\phi_1$. For an arbitrary map $f: M \to M$, we have
+$$
+\Lambda(f) = \sum \Tr
+$$
