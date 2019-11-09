@@ -72,10 +72,10 @@ we have $\chi(S^2) = 2 \neq 0$, and thus $\phi_1$ has a fixed point $p_0$, thus
 $\dd{}{t} \phi_t(p_0)\Bigm|_{t=1}$
 so 
 \begin{align*}
-\phi_t(p) =& p \\
-\implies \dd{}{t} \phi_t(p) =& \dd{}{t} p = 0 \\
-\implies \dd{}{t} \phi_t(p) \Bigm|_{t = 1} &= 0 \Bigm|_{t=0} = 0 \\
-\implies X(\phi_1(p_0)) \definedas \dd{}{t} \phi_t(p) \Bigm|_{t = 1} &= 0,
+\phi_t(p) =& p  &\\
+\implies \dd{}{t} \phi_t(p) =& \dd{}{t} p = 0 &\text{by differentiating wrt $t$}\\
+\implies \dd{}{t} \phi_t(p) \Bigm|_{t = 1} &= 0 \Bigm|_{t=0} = 0 &\text{by evaluating at $t=0$}\\
+\implies X(\phi_1(p_0)) \definedas \dd{}{t} \phi_t(p) \Bigm|_{t = 1} &= 0 &\text{by definition of $\phi_1$} 
 \end{align*}
 
-so $X(\phi_1(p_0)) = 0$, which shows that $p_0$ 
+so $X(\phi_1(p_0)) = 0$, which shows that $p_0$ is a zero of $X$.
