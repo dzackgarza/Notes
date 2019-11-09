@@ -27,5 +27,7 @@ In particular, $\phi_0 = \id_M$, and $\phi_1 \in \mathrm{Diff}(M, M)$. Moreover 
 
 \begin{align*}
 H: M \cross I &\to M \\
-(p, t) &\mapsto \phi_t(p)
+(p, t) &\mapsto \phi_t(p).
 \end{align*}
+
+We can now apply the Lefschetz fixed-point theorem to $\phi_0$ and $\phi_1$. 
