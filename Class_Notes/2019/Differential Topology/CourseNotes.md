@@ -51,10 +51,10 @@ $$
 
 *Definition (Flow Curve):*
 
-Given $X$ a vector field on a manifold $M$, a *flow curve* of $X$ at a point $p\in X$ is a curve $\gamma: \RR \to M$ defined by the ordinary differential equation
+Given $X: M \to TM$ a vector field on a manifold $M$, a *flow curve* of $X$ at a point $p\in X$ is a curve $\gamma: \RR \to M$ defined by the ordinary differential equation
 $$
 \dd{}{t}\gamma(t) = X(\gamma(t)) \\
-\gamma(0) = 0
+\gamma(0) = p
 $$
 
 which (by Picard-Lindelof, if $X$ is Lipschitz) has a unique $C^1(\RR)$ solution at each point $\gamma_p: \RR \to M$ for some interval $I_p \definedas (-\varepsilon, \varepsilon) \in \RR$ depending on $p$.
