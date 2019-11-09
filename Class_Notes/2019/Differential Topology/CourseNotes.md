@@ -36,3 +36,14 @@ $$
 
 *Definition 2 (Tangent Vector):*
 
+Let $M$ be a smooth manifold and $p\in U \subseteq M$ a point. Let $(U, \phi: U \to \RR^n)$ be a chart, let $\gamma_1, \gamma_2: \RR \to \MM$ be two paths satisfying $p = \gamma_1(0) = \gamma_2(0)$  and define 
+$$
+\gamma'(0) \definedas \theset{\gamma: \RR \to M}/\sim
+$$
+
+where $\gamma \sim \gamma'$ iff $d(\phi \circ \gamma) = d(\phi \circ \gamma')$
+
+and define a map
+$$
+d\phi: T_p M \to \RR^n
+$$
