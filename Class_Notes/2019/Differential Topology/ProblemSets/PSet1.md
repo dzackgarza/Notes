@@ -38,7 +38,7 @@ $$
 where $f_*: H_*(X; \QQ) \to H_*(X; \QQ)$ is the induced map on homology, and 
 
 $$
-\lambda(f) \neq 0 \iff f\text{ has at least one fixed point.}
+\Lambda(f) \neq 0 \iff f\text{ has at least one fixed point.}
 $$
 
 In particular, we have
