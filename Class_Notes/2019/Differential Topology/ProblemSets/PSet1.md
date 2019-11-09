@@ -42,11 +42,11 @@ $$
 $$
 
 In particular, we have
-$$
-\Lambda(\id_M) = \sum_k \Tr(\id_{H_k(X; \QQ)}) \\
-= \sum_k \dim H_k(X; \QQ) \\
-= \chi(M),
-$$
+\begin{align*}
+\Lambda(\id_M) &= \sum_k \Tr(\id_{H_k(X; \QQ)}) \\
+&= \sum_k \dim H_k(X; \QQ) \\
+&= \chi(M),
+\end{align*}
 the Euler characteristic of $M$.
 
 Since homotopic maps induce equal maps on homology, we also have $\Lambda(\phi_1) = \chi(M)$.
@@ -59,4 +59,4 @@ H_k(S^2) = \begin{cases}
 \end{cases}
 $$
 
-we have $\chi(S^2) = 2 \neq 0$, and ht
+we have $\chi(S^2) = 2 \neq 0$, and thus $\phi_1$ has a fixed point.
