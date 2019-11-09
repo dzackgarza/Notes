@@ -12,11 +12,11 @@ X: M \to TM
 $$
 We want to show that there is a point $p\in M$ such that $X(p) = 0$.
 
-Every vector field on a compact manifold without boundary is complete, and since $S^2$ is compact with $\del S^2 = \emptyset$, $X$ is complete.
+Every vector field on a compact manifold without boundary is complete, and since $S^2$ is compact with $\del S^2 = \emptyset$, $X$ is necessarily a complete vector field.
 
 Thus every integral curve of $X$ exists for all time, yielding a well-defined flow 
 $$
-\phi: M \cross \RR \to M,
+\phi: M \cross \RR \to M
 $$ 
 and thus a one-parameter family 
 $$
