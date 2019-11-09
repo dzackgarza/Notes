@@ -6,13 +6,13 @@ title: Problem Set 1
 
 ## Part 1
 
-Let $M = S^2$ as a smooth manifold, and consider a vector field 
+Let $M = S^2$ as a smooth manifold, and consider a vector field on $M$,
 $$
-X: M \to TM$ on $M
+X: M \to TM
 $$
 We want to show that there is a point $p\in M$ such that $X(p) = 0$.
 
-Every vector field on a compact manifold without boundary is complete, and since $S^2$ is compact with $\del S^2 = \emptyset$, the vector field $X$ is complete.
+Every vector field on a compact manifold without boundary is complete, and since $S^2$ is compact with $\del S^2 = \emptyset$, $X$ is complete.
 
 Thus every integral curve of $X$ exists for all time, yielding a well-defined flow 
 $$
