@@ -39,7 +39,7 @@ g^i: T\phi_i(U_i) \cross T\phi_i(U_i) \to \RR \\
 $$
 which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n \cong \RR^n = \mathrm{span}_\RR \theset{\partial x_i}_{i=1}^n$ on basis vectors as the Kronecker delta and extended linearly.
 
-Let $G^i$ be the pullback of $g^i$ along $\phi_i$, so 
+Let $G^i$ be the pullback of $g^i$ along the coordinate functions $\phi_i$, so 
 $$
 G^i: T U_i \cross TU_i \to \RR \\
 G^i(p, q) \definedas \left(\phi_i\right)^*g^i(p, q) = g^i(\phi_i(p), \phi_i(q))
