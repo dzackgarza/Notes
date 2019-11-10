@@ -24,6 +24,8 @@ $$
 (U_2, \psi) \definedas \theset{[1, x] \suchthat x \in \CC},\quad U_2 \subseteq \CP^1 \setminus \theset{0} \\
 $$
 
+where we identify $0 = [1, 0], \infty = [0, 1]$ in $\CP^1$ in homogeneous coordinates.
+
 # Problem 3
 
 ## Part 1
