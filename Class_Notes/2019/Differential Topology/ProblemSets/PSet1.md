@@ -24,11 +24,21 @@ $$
 
 We'd like to show that this yields a well-defined element of $T_p M = C^\infty(M)$. So for some fixed $v \in T_pM$, define a map
 $$
-\phi_h: C^\infty(N) \to \RR \\
+\phi_v: C^\infty(N) \to \RR \\
 h \mapsto v(h \circ f),
 $$
 
 which will be an element of $TM$ if it is a derivation.
+
+$$ 
+{\displaystyle D_{v}(f g)(x) =D_{v}(f)\cdot g(x)+f(x)\cdot D_{v}(g)\,.}
+$$
+
+\begin{align*}
+\phi_v(h_1 h_2) &= v( (h_1 h_2) \circ f) \\
+&= v((h_1 \circ f) (h_2 \circ f)) \\
+&= \phi_v(h_1)\cdot h_2 + h_1 \cdot \phi_v(h_2)
+\end{align*}
 
 
 # Problem 4
