@@ -19,6 +19,8 @@ But $\dim V = \dim V\dual$, so any injective linear map will necessarily be surj
 
 ## Part 2
 
+Let 
+
 # Problem 5
 
 ## Part 1
