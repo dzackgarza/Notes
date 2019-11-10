@@ -13,7 +13,9 @@ v &\mapsto (\phi_v: w \mapsto \inner{v}{gw})
 
 The claim is that $\phi$ is an isomorphism.
 
-To see that $\ker \phi = 0$, so that only the zero gets sent to the zero map, we can suppose that $x \neq 0 \in \ker \phi$. Then $\phi_x: w \to \inner{x}{gw}$ is the zero map. But the inner product is nondegenerate by definition, i.e. $\inner{x}{y} = 0 ~~\forall y \implies x = 0$.
+To see that $\ker \phi = 0$, so that only the zero gets sent to the zero map, we can suppose that $x \in \ker \phi$. Then $\phi_x: w \to \inner{x}{gw}$ is the zero map. But the inner product is nondegenerate by definition, i.e. $\inner{x}{y} = 0 ~~\forall y \implies x = 0$. So $x$ could only have been the zero vector to begin with.
+
+To see that $\phi$ is surjective,
 
 ## Part 2
 
