@@ -5,10 +5,11 @@ title: Problem Set 1
 
 ## Part 1
 
-Let $V$$g$ be a nonsingular matrix, and define a map
-$$
-\phi: 
-$$
+Let $V = \RR^n$ as a vector space, let $g$ be a nonsingular matrix, and define a map
+\begin{align*}
+\phi: V &\to V\dual \\
+v &\mapsto (w \mapsto \inner{v}{gw})
+\end{align*}
 
 ## Part 2
 
