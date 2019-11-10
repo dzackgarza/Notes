@@ -20,7 +20,7 @@ $$
 (h, g_v) \mapsto g_v(h \circ f)
 $$
 
-
+We'd like to show that this yields a well-defined element of $T_p M = C^\infty(M)\dual$.
 
 
 # Problem 4
