@@ -11,6 +11,8 @@ Let $V = \RR^n$ as a vector space, let $g$ be a nonsingular matrix, and define a
 v &\mapsto (w \mapsto \inner{v}{gw})
 \end{align*}
 
+The claim is that $\phi$ is an isomorphism.
+
 ## Part 2
 
 # Problem 5
