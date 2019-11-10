@@ -42,9 +42,9 @@ $$
 \gamma'(0) \definedas \theset{\gamma: \RR \to M \mid \gamma \in C^1(\RR)}/\sim
 $$
 
-where $\gamma \sim \gamma'$ iff $d(\phi \circ \gamma) = d(\phi \circ \gamma')$
+where $\gamma \sim \gamma'$ iff $\dd{}{t}(\phi \circ \gamma)(t)\Bigm|_{t=0} = \dd{}{t}(\phi \circ \gamma')(t)\Bigm|_{t=0}$
 
-Then each equivalence class is a *tangent vector* at $p$. and define a map
+Then each equivalence class is a *tangent vector* at $p$. and defines a map
 $$
 d\phi: T_p M \to \RR^n \\
 \gamma'(0) \mapsto \dd{}{t} (\phi \circ \gamma)\Bigm|_{t=0}
