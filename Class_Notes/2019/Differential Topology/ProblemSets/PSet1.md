@@ -77,6 +77,7 @@ Since $\CP^1 = U \union V$, we can note that if $p\in M$ then either $p\in U$ or
 
 We can compute
 \begin{align*}
+\phi \circ \tilde f \circ \phi\inv
 \end{align*}
 
 # Problem 3
