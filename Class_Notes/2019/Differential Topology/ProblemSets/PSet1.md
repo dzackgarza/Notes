@@ -64,7 +64,10 @@ $$
 then $g$ can be expressed as 
 $$g = \sum_{i\in I} f_i G^i.$$
 
+We can check that this is positive definite by considering
+$$
 
+$$
 
 # Problem 6
 
