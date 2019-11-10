@@ -30,7 +30,7 @@ which follows directly from
 
 ## Part 2
 
-Let $M$ be a smooth manifold with a maximal smooth atlas $\mathcal{A}$, and let $
+Let $M$ be a smooth manifold with a maximal smooth atlas $\mathcal{A}$, and choose a covering of $M$ by charts $(U_i, \phi_i) \subseteq \mathcal A$ such that $M \subseteq \union_i U_i$.
 
 # Problem 6
 
