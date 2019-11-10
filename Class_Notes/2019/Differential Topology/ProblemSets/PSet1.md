@@ -10,7 +10,7 @@ title: Problem Set 1
 
 Let $M, N$ be smooth manifolds and $f: M \to N$ be a fixed smooth map, and define a map
 $$
-\phi: C^\infty(N) \cross T_pM \to \RR \\
+\phi: C^\infty(N) \cross TM \to \RR \\
 (h, v) \mapsto v(h \circ f)
 $$
 
@@ -19,10 +19,16 @@ $$
 Using the derivation definition, we can identify this assignment as a map
 $$
 \phi: C^\infty(N) \cross C^\infty(M)\dual \to \RR \\
-(h, g_v) \mapsto g_v(h \circ f)
+(h, v) \mapsto v(h \circ f)
 $$
 
-We'd like to show that this yields a well-defined element of $T_p M = C^\infty(M)\dual$.
+We'd like to show that this yields a well-defined element of $T_p M = C^\infty(M)$. So for some fixed $v \in T_pM$, define a map
+$$
+\phi_h: C^\infty(N) \to \RR \\
+h \mapsto v(h \circ f),
+$$
+
+which will be an element of $TM$ if it is a derivation.
 
 
 # Problem 4
