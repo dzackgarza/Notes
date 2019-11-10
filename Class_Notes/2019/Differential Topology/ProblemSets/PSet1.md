@@ -9,7 +9,7 @@ title: Problem Set 1
 Let $M$ be a smooth manifold and define a map
 $$
 \phi: C^\infty(M) \cross T_pM \to \RR \\
-(h, v) \mapsto h(f \circ v)
+(h, v) \mapsto v(h \circ f)
 $$
 
 # Problem 4
