@@ -98,4 +98,6 @@ s: S^2 \to S^2 \cross \RR^2 \\
 \vector x \to (\vector x, [1, 1])
 $$
 
-which is the identity on the $S^2$ component and assigns the constant vector $[1, 1]$ to every point.
+which is the identity on the $S^2$ component and assigns the constant vector $[1, 1]$ to every point. 
+
+However, as part 1 shows, the bundle
