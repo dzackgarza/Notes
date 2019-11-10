@@ -6,7 +6,11 @@ title: Problem Set 1
 
 ## Part 1
 
-Let $A \in \mathrm{Mat}(n, n)$ be a positive definite $n\times n$ matrix, so $\inner{v}{Av} > 0$ for all $v\in \RR^n$, and $B\in \mathrm{Math}(n, n)$ be 
+Let $A \in \mathrm{Mat}(n, n)$ be a positive definite $n\times n$ matrix, so 
+$$
+\inner{v}{Av} > 0 \forall v\in \RR^n,
+$$
+and $B\in \mathrm{Math}(n, n)$ be non-negative definite 
 
 ## Part 2
 
