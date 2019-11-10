@@ -28,16 +28,13 @@ $$
 h \mapsto v(h \circ f),
 $$
 
-which will be an element of $TM$ if it is a derivation.
-
-$$ 
-{\displaystyle D_{v}(f g)(x) =D_{v}(f)\cdot g(x)+f(x)\cdot D_{v}(g)\,.}
-$$
+which will be an element of $TM$ if it is a derivation. For $x\in N$, we have
 
 \begin{align*}
-\phi_v(h_1 h_2) &= v( (h_1 h_2) \circ f) \\
-&= v((h_1 \circ f) (h_2 \circ f)) \\
-&= \phi_v(h_1)\cdot h_2 + h_1 \cdot \phi_v(h_2)
+\phi_v(h_1\cdot h_2)(x) &\definedas v( (h_1 h_2) \circ f)(x) \\
+&= v((h_1 \circ f) (h_2 \circ f))(x) \\
+&= v(h_1 \circ f)(x) \cdot h_2(x) + h_1(x) \cdot v(h_2 \circ f)(x) \quad \text{since $v$ is a derivation} \\
+&= \phi_v(h_1)(x) \cdot h_2(x) + h_1(x) \cdot \phi_v(h_2)(x)
 \end{align*}
 
 
