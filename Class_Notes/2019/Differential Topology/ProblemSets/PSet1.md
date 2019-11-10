@@ -12,11 +12,14 @@ $$
 (h, v) \mapsto v(h \circ f)
 $$
 
-Using the derivation definition, we can identify this as a map
+## Part 1
+
+Using the derivation definition, we can identify this assignment as a map
 $$
 \phi: C^\infty(N) \cross C^\infty(M)\dual \to \RR \\
 (h, g_v) \mapsto g_v(h \circ f)
 $$
+
 
 
 # Problem 4
