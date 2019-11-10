@@ -34,9 +34,10 @@ Let $M$ be a smooth manifold with a maximal smooth atlas $\mathcal{A}$, and choo
 
 Then choose a partition of unity $\theset{f_i}_{i\in I}$ subordinate to $\mathcal C$. In each copy of $\phi_i(U_i) \cong \RR^n$, let $g^i$ be the Euclidean metric given by the identity matrix, i.e. $g^i_{jk} \definedas \delta_{jk}$. We thus have
 $$
-g^i: T\phi_i(U) \cross T\phi_i(U) \to \RR \\
+g^i: T\phi_i(U_i) \cross T\phi_i(U_i) \to \RR \\
 (\partial x_i, \partial x_j) \mapsto \begin{cases} 1 & i = j \\ 0 & \text{otherwise} \end{cases}
 $$
+which takes pairs in $T \phi_i(U_i) \cong T \RR^n \cong \RR^n$, which is spanned by $\theset{\partial x_i}$, and is defined as the kronecker delta on basis vectors and extended linearly.
 
 Let $G^i \definedas \left(\phi_i\right)_*g^i(p, q) = = g^i(\phi_i(p), \phi_i(q))$
 
