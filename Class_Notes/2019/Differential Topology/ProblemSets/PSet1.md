@@ -69,7 +69,7 @@ $$g = \sum_{i\in I} f_i G^i.$$
 We can check that this is positive definite by considering $x\in T_p M$ and computing
 \begin{align*}
 g(x, x) &\definedas g_p(x, x) \\
-&= \sum_{i\in I} f_i(p) G^i(v, v) \\ 
+&= \sum_{i\in I} f_i(p) ~G^i(v, v) \\ 
 &= \sum_{i\in I} f_i(p) ~g^i(\tilde \phi_i(x), \tilde \phi_i(y))
 \end{align*}
 
