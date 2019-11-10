@@ -13,7 +13,10 @@ Definition: Let $M, N$ be smooth manifolds of dimensions $m,n$ respectively and 
 $$
 \tilde f: \phi(U) \to \psi(V) \\ 
 \tilde f = \psi \circ f \circ \phi\inv
-$$ is smooth as a map from $\RR^m \to \RR^n$,
+$$ 
+is smooth as a map from $\RR^m \to \RR^n$.
+
+We will thus show that both $f$ and $f\inv$
 
 # Problem 3
 
