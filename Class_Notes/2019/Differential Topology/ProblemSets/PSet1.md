@@ -10,7 +10,7 @@ Let $A \in \mathrm{Mat}(n, n)$ be a positive definite $n\times n$ matrix, so
 $$
 \inner{v}{Av} > 0 \quad \forall v\in \RR^n,
 $$
-and $B\in \mathrm{Math}(n, n)$ be non-negative definite, so
+and $B\in \mathrm{Math}(n, n)$ be positive semi-definite, so
 $$
 \inner{v}{Bv} \geq 0 \quad \forall v\in \RR^n.
 $$
