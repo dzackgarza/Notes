@@ -30,7 +30,7 @@ which follows directly from
 
 ## Part 2
 
-Let $M$ be a smooth manifold with tangent space $TM$, a maximal smooth atlas $\mathcal{A}$, and choose a covering of $M$ by charts $\mathcal C = \theset{(U_i, \phi_i) \mid i\in I} \subseteq \mathcal A$ such that $M \subseteq \union_{i\in I} U_i$.
+Let $M$ be a smooth manifold with tangent space $TM$ and a maximal smooth atlas $\mathcal{A}$. Choose a covering of $M$ by charts $\mathcal C = \theset{(U_i, \phi_i) \mid i\in I} \subseteq \mathcal A$ such that $M \subseteq \union_{i\in I} U_i$.
 
 Then choose a partition of unity $\theset{f_i}_{i\in I}$ subordinate to $\mathcal C$. In each copy of $\phi_i(U_i) \cong \RR^n$, let $g^i$ be the Euclidean metric given by the identity matrix, i.e. $g^i_{jk} \definedas \delta_{jk}$. We thus have
 $$
