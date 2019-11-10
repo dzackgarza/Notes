@@ -48,7 +48,7 @@ Note that each coordinate function $\phi_i: U_i \to \RR^n$ induces a map $\tilde
 Let $G^i$ be the pullback of $g^i$ along these induced maps $\tilde \phi_i$, so 
 $$
 G^i: T U_i \tensor TU_i \to \RR \\
-G^i(x, y) \definedas \left( \left(\phi_i\right)^*g^i\right) (x, y) \definedas g^i(\phi_i(x), \phi_i(y))
+G^i(x, y) \definedas \left( \left(\tilde \phi_i\right)^*g^i\right) (x, y) \definedas g^i(\tilde \phi_i(x), \tilde \phi_i(y))
 $$
 
 Then, for a point $p \in M$, define the following map:
@@ -69,7 +69,7 @@ $$g = \sum_{i\in I} f_i G^i.$$
 We can check that this is positive definite by considering
 $$
 g_p(x, x) = \sum_{i\in I} f_i(p) G^i(v, v) \\ 
-= \sum_{i\in I} f_i(p) ~g^i(\phi_i(x), \phi_i(y))
+= \sum_{i\in I} f_i(p) ~g^i(\tilde \phi_i(x), \tilde \phi_i(y))
 $$
 
 # Problem 6
