@@ -6,9 +6,9 @@ title: Problem Set 1
 
 ## Part 1
 
-Define a map
+Let $M$ be a smooth manifold and define a map
 $$
-\phi: C^\infty(M) \to \RR \\
+\phi: C^\infty(M) \cross T_pM \to \RR \\
 
 $$
 
