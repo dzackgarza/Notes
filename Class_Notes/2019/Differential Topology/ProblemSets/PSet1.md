@@ -109,4 +109,4 @@ However, as part 1 shows, the bundle
 \end{tikzcd}
 ```
 
-can not have a nowhere vanishing section. $\qed$
+can *not* have a nowhere vanishing section. $\qed$
