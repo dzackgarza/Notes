@@ -39,7 +39,7 @@ g^i: T\phi_i(U_i) \cross T\phi_i(U_i) \to \RR \\
 $$
 which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n \cong \RR^n$, which is spanned by $\theset{\partial x_i}_{i=1}^n$, and is defined on basis vectors as the Kronecker delta and extended linearly.
 
-Let $G^i \definedas \left(\phi_i\right)_*g^i(p, q) = = g^i(\phi_i(p), \phi_i(q))$
+Let $G^i \definedas \left(\phi_i\right)^*g^i(p, q) = = g^i(\phi_i(p), \phi_i(q))$
 
 # Problem 6
 
