@@ -5,7 +5,10 @@ title: Problem Set 1
 
 ## Part 1
 
-
+Let $V$$g$ be a nonsingular matrix, and define a map
+$$
+\phi: 
+$$
 
 ## Part 2
 
