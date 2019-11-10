@@ -51,7 +51,7 @@ $$
 
 Then, for a point $\in M$, define the following map:
 $$
-g_p: T_pM \cross T_pM \to \RR\\
+g_p: T_pM \tensor T_pM \to \RR\\
 (x, y) \mapsto \sum_{i\in I} f_i(p) G^i(x, y).
 $$
 
