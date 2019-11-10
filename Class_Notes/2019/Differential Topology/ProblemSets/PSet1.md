@@ -49,10 +49,10 @@ G^i: T U_i \cross TU_i \to \RR \\
 G^i(p, q) \definedas \left( \left(\phi_i\right)^*g^i\right) (p, q) \definedas g^i(\phi_i(p), \phi_i(q))
 $$
 
-Then define the following inner product on $M$ which is defined by
+Then, for a point $\in M$, define the following map:
 $$
-g: TM \cross TM \to \RR\\
-(p, q) \mapsto \sum_{i\in I} f_i G^i(p, q)
+g: T_pM \cross T_pM \to \RR\\
+(x, y) \mapsto \sum_{i\in I} f_i(p) G^i(x, y)
 $$
 
 # Problem 6
