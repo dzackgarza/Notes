@@ -70,7 +70,7 @@ p \in V \implies p = [a, b],~a,b,\in \CC, &~a\neq 0 \\
 &= [a, b + ac]
 \end{align*}
 
-Since $\CP^1 = U \union V$, we can note that if $p\in M$ then either $p\in U$ or $p\in V$. Moreover, $p\in U \implies \tilde f(p) \in \tilde f(U) = U$, since $p = [a, b]$ with $b\neq 0 \implies f(p) = [a + bc, b]$ where $b\neq 0$ as well, so $\tilde f(p) \in U$ and $\tilde f(U) \subseteq U$. Similarly, $\tilde f(V) \subseteq V$
+Since $\CP^1 = U \union V$, we can note that if $p\in M$ then either $p\in U$ or $p\in V$. Moreover, $p\in U \implies \tilde f(p) \in \tilde f(U) = U$, since $p = [a, b]$ with $b\neq 0 \implies f(p) = [a + bc, b]$ where $b\neq 0$ as well, so $\tilde f(p) \in U$ and $\tilde f(U) \subseteq U$. Similarly, $\tilde f(V) \subseteq V$. So it only remains to check that the following two compositions are smooth:
 
 - $f_U: \CC \to \CC, f_U \definedas \phi \circ \tilde f \circ \phi\inv$, and
 - $f_V: \CC \to \CC, f_V \definedas \psi \circ \tilde f \circ \psi\inv$.
