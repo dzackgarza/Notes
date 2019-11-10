@@ -11,8 +11,8 @@ Definition: Let $M, N$ be smooth manifolds of dimensions $m,n$ respectively and 
 - $f(U) \subseteq V$, and
 - The induced map 
 $$
-\tilde f: \phi(U) \to \psi(V) \\ 
-\tilde f = \psi \circ f \circ \phi\inv
+\overline f: \phi(U) \to \psi(V) \\ 
+\overline f = \psi \circ f \circ \phi\inv
 $$ 
 is smooth as a map from $\RR^m \to \RR^n$.
 
