@@ -34,7 +34,7 @@ $$
 V = \CP^1 \setminus \theset{0} = \theset{[x, y] \mid x,y \in \CC,~ x\neq 0}\\
 \psi: \CP^1 \to \CC \\
 [x, y] \mapsto x/y. \\ \\
-\phi\inv: \CC \to \CP^1 \\
+\psi\inv: \CC \to \CP^1 \\
 z \mapsto [1, z]. \\
 $$
 
