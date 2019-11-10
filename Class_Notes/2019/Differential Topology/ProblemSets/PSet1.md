@@ -47,7 +47,7 @@ $$
 
 Then define the following inner product on $M$ which is defined by
 $$
-g: TM \cross TM \to \RR \\
+g: TM \tensor TM \to \RR \\
 (p, q) \mapsto \sum_{i\in I} f_i G^i(p, q)
 $$
 
