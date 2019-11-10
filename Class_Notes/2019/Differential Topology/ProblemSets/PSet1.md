@@ -70,8 +70,10 @@ We can check that this is positive definite by considering $x\in T_p M$ and comp
 \begin{align*}
 g(x, x) &\definedas g_p(x, x) \\
 &= \sum_{i\in I} f_i(p) ~G^i(v, v) \\ 
-&= \sum_{i\in I} f_i(p) ~g^i(\tilde \phi_i(x), \tilde \phi_i(y))
+&= \sum_{i\in I} f_i(p) ~g^i(\tilde \phi_i(x), \tilde \phi_i(y)),
 \end{align*}
+
+where each term is positive semi-definite, and *at least one term* is positive definite.
 
 # Problem 6
 
