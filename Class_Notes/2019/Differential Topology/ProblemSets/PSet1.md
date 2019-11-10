@@ -84,6 +84,14 @@ so $X(\phi_1(p_0)) = 0$, which shows that $p_0$ is a zero of $X$. So $X$ has at 
 
 The trivial bundle
 
+```{=latex}
+\begin{tikzcd}
+\RR^2 \arrow[rr] &  & S^2 \cross \RR^2 \arrow[dd]                         \\
+                 &  &                                                     \\
+                 &  & S^2 \arrow[uu, "s" description, dotted, bend right]
+\end{tikzcd}
+```
+
 has a nowhere vanishing section, namely 
 $$
 s: S^2 \to S^2 \cross \RR^2 \\
