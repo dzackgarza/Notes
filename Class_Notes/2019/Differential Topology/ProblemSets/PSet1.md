@@ -38,7 +38,14 @@ V = \CP^1 \setminus \theset{0} = \theset{[x, y] \mid x,y \in \CC,~ x\neq 0}\\
 z \mapsto [1, z]. \\
 $$
 
-
+Now define
+$$
+f: \CP^1 \to \CP^1 \\
+p \mapsto \begin{cases}
+p, & p = \infty \\ 
+p + c & \text{otherwise}
+\end{cases}
+$$
 # Problem 3
 
 ## Part 1
