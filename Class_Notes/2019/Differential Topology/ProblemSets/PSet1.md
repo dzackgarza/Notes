@@ -23,9 +23,9 @@ $$
 (U, \phi) \definedas \\
 U = \CP^1 \setminus \theset{\infty} = \theset{[x, y] \mid x,y \in \CC,~ y\neq 0}  \\
 \phi: \CP^1 \to \CC \\
-[x, y] \mapsto y/x. \\
+[x, y] \mapsto y/x. \\ \\
 \phi\inv: \CC \to \CP^1 \\
-z \mapsto [x, 1]. \\
+z \mapsto [z, 1]. \\
 $$
 
 and 
@@ -33,9 +33,9 @@ $$
 (V, \psi) \definedas \\
 V = \CP^1 \setminus \theset{0} = \theset{[x, y] \mid x,y \in \CC,~ x\neq 0}\\
 \psi: \CP^1 \to \CC \\
-[x, y] \mapsto x/y. \\
+[x, y] \mapsto x/y. \\ \\
 \phi\inv: \CC \to \CP^1 \\
-z \mapsto [1, x]. \\
+z \mapsto [1, z]. \\
 $$
 
 where we identify $0 = [1, 0]$ and $\infty = [0, 1]$ in $\CP^1$ in homogeneous coordinates.
