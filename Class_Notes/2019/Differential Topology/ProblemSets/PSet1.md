@@ -16,7 +16,7 @@ $$
 $$ 
 is smooth as a map from $\RR^m \to \RR^n$.
 
-We will thus show that both $f$ and $f\inv$
+We will thus show that both $f: \CP^1 \to \CP^1$ and $f\inv: \CP^1 \to \CP^1$ are both smooth, from which we can conclude that $f$ is a diffeomorphism.
 
 # Problem 3
 
