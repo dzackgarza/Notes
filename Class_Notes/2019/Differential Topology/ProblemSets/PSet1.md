@@ -46,7 +46,7 @@ which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n = \mathrm{
 Let $G^i$ be the pullback of $g^i$ along the coordinate functions $\phi_i$, so 
 $$
 G^i: T U_i \tensor TU_i \to \RR \\
-G^i(p, q) \definedas \left( \left(\phi_i\right)^*g^i\right) (p, q) \definedas g^i(\phi_i(p), \phi_i(q))
+G^i(x, y) \definedas \left( \left(\phi_i\right)^*g^i\right) (x, y) \definedas g^i(\phi_i(x), \phi_i(y))
 $$
 
 Then, for a point $p \in M$, define the following map:
@@ -66,7 +66,8 @@ $$g = \sum_{i\in I} f_i G^i.$$
 
 We can check that this is positive definite by considering
 $$
-
+g_p(x, x) = \sum_{i\in I} f_i(p) G^i(v, v) \\ 
+= \sum_{i\in I} f_i(p) ~g^i(\phi_i(x), \phi_i(y))
 $$
 
 # Problem 6
