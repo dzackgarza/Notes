@@ -7,14 +7,14 @@ title: Problem Set 1
 We'll use the following definition of a smooth map between manifolds:
 
 > Definition: Let $M, N$ be smooth manifolds of dimensions $m,n$ respectively and $f: M \to N$ a continuous map. Then $f$ is *smooth* iff for every $p \in M$, there exists a chart $(U, \phi)$ with $p \in U$ and a chart $(V, \psi)$ with $f(p) \in V$ such that 
-
-- $f(U) \subseteq V$, and
-- The induced map 
-$$
-\overline f: \phi(U) \to \psi(V) \\ 
-\overline f = \psi \circ f \circ \phi\inv
-$$ 
-is smooth as a map from $\RR^m \to \RR^n$.
+  
+  - $f(U) \subseteq V$, and
+  - The induced map 
+  $$
+  \overline f: \phi(U) \to \psi(V) \\ 
+  \overline f = \psi \circ f \circ \phi\inv
+  $$ 
+  is smooth as a map from $\RR^m \to \RR^n$.
 
 We will thus show that both $f: \CP^1 \to \CP^1$ and $f\inv: \CP^1 \to \CP^1$ are both smooth bijections, from which we can conclude that $f$ is a diffeomorphism.
 
