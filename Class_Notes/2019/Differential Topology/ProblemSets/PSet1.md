@@ -49,7 +49,7 @@ G^i: T U_i \tensor TU_i \to \RR \\
 G^i(p, q) \definedas \left( \left(\phi_i\right)^*g^i\right) (p, q) \definedas g^i(\phi_i(p), \phi_i(q))
 $$
 
-Then, for a point $\in M$, define the following map:
+Then, for a point $p \in M$, define the following map:
 $$
 g_p: T_pM \tensor T_pM \to \RR\\
 (x, y) \mapsto \sum_{i\in I} f_i(p) G^i(x, y).
