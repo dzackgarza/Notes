@@ -2,7 +2,7 @@
 title: Differential Geometry
 ---
 
-*Definition 1 (Tangent Vector):*
+**Definition 1 (Tangent Vector):**
 
 Let $M$ be a differentiable manifold and let $C^\infty(M)$ be the algebra of real-valued differentiable functions on $M$. 
 Then the tangent vector to $M$ at a point $\vector x$ in the manifold is given by a linear *derivation* 
@@ -20,7 +20,8 @@ $$
 > Note: tangent vectors are in $C^\infty(M)\dual$
 
 
-Example: 
+*Example: *
+
 Let $f: \RR^n \to \RR$ be differentiable and $\vector v \in \RR^n$. The *directional derivative* of $\vector x$ in the direction $\vector b$ is defined as
 $$
 D_vf (\vector x) = \dd{}{t}f(\vector x + t\vector v) \Bigm|_{t=0}
@@ -34,7 +35,7 @@ f \mapsto (D_{v} \circ f) (\vector x)
 $$
 
 
-*Definition 2 (Tangent Vector):*
+**Definition 2 (Tangent Vector):**
 
 Let $M$ be a smooth manifold and $p\in U \subseteq M$ a point. Let $(U, \phi: U \to \RR^n)$ be a chart, let $\gamma_1, \gamma_2: \RR \to \MM$ be two paths satisfying $p = \gamma_1(0) = \gamma_2(0)$  and define 
 $$
