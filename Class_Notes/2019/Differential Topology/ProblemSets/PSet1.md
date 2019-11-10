@@ -40,14 +40,22 @@ $$
 
 Now define
 $$
-f: \CP^1 \to \CP^1 \\
+\tilde f: \CP^1 \to \CP^1 \\
 p \mapsto \begin{cases}
 p, & p = \infty \\ 
 p + c & \text{otherwise}
 \end{cases}
 $$
 
-We then need to examine the coordinate representations of $f$
+We then need to determine a formula for $\tilde f$ in homogeneous coordinates. We compute
+
+\begin{align*}
+p \in U \implies p = [a, b],~a,b,\in \CC, &~b\neq 0 \\
+\implies \tilde f([a, b]) 
+&= (\phi\inv \circ f \circ \phi)([a, b]) \\
+&= \phi\inv \circ f([b/a
+\end{align*}
+
 # Problem 3
 
 ## Part 1
