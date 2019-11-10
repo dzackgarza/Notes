@@ -20,8 +20,22 @@ We will thus show that both $f: \CP^1 \to \CP^1$ and $f\inv: \CP^1 \to \CP^1$ ar
 
 So choose the following charts on $\CP^1$:
 $$
-(U_1, \phi) \definedas \theset{[x, 1] \suchthat x \in \CC},\quad U_1 \subseteq \CP^1 \setminus \theset{\infty} \\
-(U_2, \psi) \definedas \theset{[1, x] \suchthat x \in \CC},\quad U_2 \subseteq \CP^1 \setminus \theset{0} \\
+(U, \phi) \definedas \\
+U = \CP^1 \setminus \theset{\infty} = \theset{[x, y] \mid x,y \in \CC,~ y\neq 0}  \\
+\phi: \CP^1 \to \CC \\
+[x, y] \mapsto y/x. \\
+\phi\inv: \CC \to \CP^1 \\
+z \mapsto [x, 1]. \\
+$$
+
+and 
+$$
+(V, \psi) \definedas \\
+V = \CP^1 \setminus \theset{0} = \theset{[x, y] \mid x,y \in \CC,~ x\neq 0}\\
+\psi: \CP^1 \to \CC \\
+[x, y] \mapsto x/y. \\
+\phi\inv: \CC \to \CP^1 \\
+z \mapsto [1, x]. \\
 $$
 
 where we identify $0 = [1, 0]$ and $\infty = [0, 1]$ in $\CP^1$ in homogeneous coordinates.
