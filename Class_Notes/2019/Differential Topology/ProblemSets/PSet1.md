@@ -52,8 +52,10 @@ $$
 Then, for a point $\in M$, define the following map:
 $$
 g: T_pM \cross T_pM \to \RR\\
-(x, y) \mapsto \sum_{i\in I} f_i(p) G^i(x, y)
+(x, y) \mapsto \sum_{i\in I} f_i(p) G^i(x, y).
 $$
+
+The claim is that this defines a metric on $
 
 # Problem 6
 
