@@ -101,3 +101,12 @@ $$
 which is the identity on the $S^2$ component and assigns the constant vector $[1, 1]$ to every point. 
 
 However, as part 1 shows, the bundle
+```{=latex}
+\begin{tikzcd}
+\RR^2 \arrow[rr] &  & TS^2 \arrow[dd]                                     \\
+                 &  &                                                     \\
+                 &  & S^2 \arrow[uu, "s" description, dotted, bend right]
+\end{tikzcd}
+```
+
+can not have a nonvanishing section. $\qed
