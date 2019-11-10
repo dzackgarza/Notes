@@ -37,7 +37,7 @@ $$
 g^i: T\phi_i(U_i) \cross T\phi_i(U_i) \to \RR \\
 (\partial x_i, \partial x_j) \mapsto \begin{cases} 1 & i = j \\ 0 & \text{otherwise} \end{cases}
 $$
-which takes pairs in $T \phi_i(U_i) \cong T \RR^n \cong \RR^n$, which is spanned by $\theset{\partial x_i}$, and is defined as the kronecker delta on basis vectors and extended linearly.
+which takes pairs in $T \phi_i(U_i) \cong T \RR^n \cong \RR^n$, which is spanned by $\theset{\partial x_i}_{i=1}^n$, and is defined as the Kronecker delta on basis vectors and extended linearly.
 
 Let $G^i \definedas \left(\phi_i\right)_*g^i(p, q) = = g^i(\phi_i(p), \phi_i(q))$
 
