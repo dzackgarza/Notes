@@ -30,7 +30,7 @@ which follows directly from
 
 ## Part 2
 
-Let $M$ be a smooth manifold with a maximal smooth atlas $\mathcal{A}$, and choose a covering of $M$ by charts $\mathcal C = \theset{(U_i, \phi_i) \mid i\in I} \subseteq \mathcal A$ such that $M \subseteq \union_{i\in I} U_i$.
+Let $M$ be a smooth manifold with tangent space $TM$, a maximal smooth atlas $\mathcal{A}$, and choose a covering of $M$ by charts $\mathcal C = \theset{(U_i, \phi_i) \mid i\in I} \subseteq \mathcal A$ such that $M \subseteq \union_{i\in I} U_i$.
 
 Then choose a partition of unity $\theset{f_i}_{i\in I}$ subordinate to $\mathcal C$. In each copy of $\phi_i(U_i) \cong \RR^n$, let $g^i$ be the Euclidean metric given by the identity matrix, i.e. $g^i_{jk} \definedas \delta_{jk}$. We thus have
 $$
@@ -39,7 +39,11 @@ g^i: T\phi_i(U_i) \cross T\phi_i(U_i) \to \RR \\
 $$
 which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n \cong \RR^n$, which is spanned by $\theset{\partial x_i}_{i=1}^n$, and is defined on basis vectors as the Kronecker delta and extended linearly.
 
-Let $G^i \definedas \left(\phi_i\right)^*g^i(p, q) = = g^i(\phi_i(p), \phi_i(q))$
+Let $G^i$ be the pullback of $g^i$ along $\phi_i$, so 
+$$
+G^i: T U_i \cross TU_i \to \RR \\
+G^i \definedas \left(\phi_i\right)^*g^i(p, q) = = g^i(\phi_i(p), \phi_i(q))
+$$
 
 # Problem 6
 
