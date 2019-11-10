@@ -18,7 +18,7 @@ is smooth as a map from $\RR^m \to \RR^n$.
 
 We will thus show that both $f: \CP^1 \to \CP^1$ and $f\inv: \CP^1 \to \CP^1$ are both smooth bijections, from which we can conclude that $f$ is a diffeomorphism.
 
-So identify $0 = [1, 0]$ and $\infty = [0, 1]$ in $\CP^1$ and choose the following charts on $\CP^1$ in terms of homogeneous coordinates:
+So identify $0 = [0, 1]$ and $\infty = [1, 0]$ in $\CP^1$ and choose the following charts on $\CP^1$ in terms of homogeneous coordinates:
 $$
 (U, \phi) \definedas \\
 U = \CP^1 \setminus \theset{\infty} = \theset{[x, y] \mid x,y \in \CC,~ y\neq 0}  \\
