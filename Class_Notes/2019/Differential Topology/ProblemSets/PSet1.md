@@ -46,6 +46,8 @@ p, & p = \infty \\
 p + c & \text{otherwise}
 \end{cases}
 $$
+
+We then need to examine the coordinate representations of $f$
 # Problem 3
 
 ## Part 1
