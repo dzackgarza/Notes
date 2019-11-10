@@ -34,7 +34,7 @@ Let $M$ be a smooth manifold with tangent bundle $TM$ and a maximal smooth atlas
 
 In each copy of $\phi_i(U_i) \cong \RR^n$, let $g^i$ be the Euclidean metric given by the identity matrix, i.e. $g^i_{jk} \definedas \delta_{jk}$. We then have
 $$
-g^i: T\phi_i(U_i) \cross T\phi_i(U_i) \to \RR \\
+\inner{\wait}{\wait}: T\phi_i(U_i) \cross T\phi_i(U_i) \to \RR \\
 (\partial x_i, \partial x_j) \mapsto \begin{cases} 1 & i = j \\ 0 & \text{otherwise} \end{cases}
 $$
 which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n \cong \RR^n = \mathrm{span}_\RR \theset{\partial x_i}_{i=1}^n$ on basis vectors as the Kronecker delta and extended linearly.
