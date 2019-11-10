@@ -17,8 +17,15 @@ $$
 
 We'd like to show
 $$
-\inner{v}{ABv} > 0 \quad \forall v\in \RR^n,
+\inner{v}{(A + B)v} \geq 0 \quad \forall v\in \RR^n,
 $$
+
+which follows directly from
+\begin{align*}
+\inner{v}{(A + B)v} &= \inner{v}{Av} + \inner{v}{Bv} \\
+&> \inner{v}{Av} + 0 \\
+&\geq 0 + 0 = 0
+\end{align*}
 
 ## Part 2
 
