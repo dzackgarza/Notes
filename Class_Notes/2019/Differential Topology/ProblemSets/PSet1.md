@@ -81,3 +81,13 @@ so
 so $X(\phi_1(p_0)) = 0$, which shows that $p_0$ is a zero of $X$. So $X$ has at least one zero, as desired. $\qed$
 
 ## Part 2
+
+The trivial bundle
+
+has a nowhere vanishing section, namely 
+$$
+s: S^2 \to S^2 \cross \RR^2 \\
+\vector x \to (\vector x, [1, 1])
+$$
+
+which is the identity on the $S^2$ component and assigns the constant vector $[1, 1]$ to every point.
