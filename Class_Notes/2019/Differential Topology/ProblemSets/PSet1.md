@@ -6,7 +6,10 @@ title: Problem Set 1
 
 We'll use the following definition of a smooth map between manifolds:
 
-Definition: Let $M, N$ be smooth manifolds and $f: M \to N$ a map. Then $f$ is *smooth* iff for every $p \in M$, there exists a chart $(U, \phi)$ containing $p$ and a chart $(V, \psi)$ containing $f(p)$ such that the induced map $\tilde f: \phi(U) \to \psi(V)$ defined as $\tilde f = \psi \circ f \circ \phi\inv$ is smooth as a map from $\RR^m \to \RR^n$,
+Definition: Let $M, N$ be smooth manifolds and $f: M \to N$ a map. Then $f$ is *smooth* iff for every $p \in M$, there exists a chart $(U, \phi)$ with $p \in U$ and a chart $(V, \psi)$ with $f(p) \in V$ such that 
+
+- $f(U) \subseteq V$, and
+- The induced map $\tilde f: \phi(U) \to \psi(V)$ defined as $\tilde f = \psi \circ f \circ \phi\inv$ is smooth as a map from $\RR^m \to \RR^n$,
 
 # Problem 3
 
