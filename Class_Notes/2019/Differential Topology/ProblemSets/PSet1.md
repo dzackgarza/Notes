@@ -90,6 +90,8 @@ f_V(z) &\definedas (\phi \circ \tilde f \circ \phi\inv) (z) \\
 &= z + c
 \end{align*}
 
+Thus $\dd{}{z} f_U(z) = \dd{}{z}f_V(z) = 1$, so these are smooth maps on their domains.
+
 # Problem 3
 
 ## Part 1
