@@ -34,8 +34,12 @@ which will be an element of $TM$ if it is a derivation. For $x\in N$, we have
 \phi_v(h_1\cdot h_2)(x) &\definedas v( (h_1 h_2) \circ f)(x) \\
 &= v((h_1 \circ f) (h_2 \circ f))(x) \\
 &= v(h_1 \circ f)(x) \cdot h_2(x) + h_1(x) \cdot v(h_2 \circ f)(x) \quad \text{since $v$ is a derivation} \\
-&= \phi_v(h_1)(x) \cdot h_2(x) + h_1(x) \cdot \phi_v(h_2)(x)
+&= \phi_v(h_1)(x) \cdot h_2(x) + h_1(x) \cdot \phi_v(h_2)(x).
 \end{align*}
+
+## Part 2
+
+Using the integral curve definition, 
 
 
 # Problem 4
