@@ -30,6 +30,8 @@ which follows directly from
 
 ## Part 2
 
+Let $M$ be a smooth manifold with a maximal smooth atlas $\mathcal{A}$
+
 # Problem 6
 
 ## Part 1
