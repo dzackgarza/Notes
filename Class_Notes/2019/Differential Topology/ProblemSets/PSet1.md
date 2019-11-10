@@ -70,7 +70,7 @@ p \in V \implies p = [a, b],~a,b,\in \CC, &~a\neq 0 \\
 &= [b, a + bc]
 \end{align*}
 
-Noting that $\CP^1 = U \union V$, we can note that if $p\in M$ then either $p\in U$ or $p\in V$. So in order for $\tilde f$ to be smooth, we just need to check that the following two maps are smooth
+Since $\CP^1 = U \union V$, we can note that if $p\in M$ then either $p\in U$ or $p\in V$. So in order for $\tilde f$ to be smooth, we just need to check that the following two maps are smooth
 
 - $f_U: \CC \to \CC, f_1 \definedas \phi \circ \tilde f \circ \phi\inv$.
 - $f_V: \CC \to \CC, f_1 \definedas \psi \circ \tilde f \circ \psi\inv$.
