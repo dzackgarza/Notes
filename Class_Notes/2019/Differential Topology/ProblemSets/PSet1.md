@@ -25,7 +25,7 @@ which follows directly from
 \inner{v}{(A + B)v} &= \inner{v}{Av} + \inner{v}{Bv} \\
 &> \inner{v}{Av} + 0 \\
 &\geq 0 + 0 \\
-&= 0
+&= 0.
 \end{align*}
 
 ## Part 2
