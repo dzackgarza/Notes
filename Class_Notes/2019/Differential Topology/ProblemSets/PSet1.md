@@ -42,7 +42,7 @@ which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n \cong \RR^
 Let $G^i$ be the pullback of $g^i$ along the coordinate functions $\phi_i$, so 
 $$
 G^i: T U_i \cross TU_i \to \RR \\
-G^i(p, q) \definedas \left( \left(\phi_i\right)^*g^i\right) (p, q) = g^i(\phi_i(p), \phi_i(q))
+G^i(p, q) \definedas \left( \left(\phi_i\right)^*g^i\right) (p, q) \definedas g^i(\phi_i(p), \phi_i(q))
 $$
 
 Then define the following inner product on $M$ which is defined by
