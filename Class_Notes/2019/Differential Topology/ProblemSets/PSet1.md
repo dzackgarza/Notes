@@ -73,7 +73,7 @@ g(x, x) &\definedas g_p(x, x) \\
 &= \sum_{i\in I} f_i(p) ~g^i(\tilde \phi_i(x), \tilde \phi_i(y)),
 \end{align*}
 
-where each term is positive semi-definite, and *at least one term* is positive definite.
+where each term is positive semi-definite, and *at least one term* is positive definite because $\sum_i f_i(p)$ must equal 1. By part 1, this means that the entire expression is positive definite, so this yields a metric. $\qed$
 
 # Problem 6
 
