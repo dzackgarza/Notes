@@ -8,10 +8,12 @@ title: Problem Set 1
 Let $V = \RR^n$ as a vector space, let $g$ be a nonsingular matrix, and define a map
 \begin{align*}
 \phi: V &\to V\dual \\
-v &\mapsto (w \mapsto \inner{v}{gw})
+v &\mapsto (\phi_v: w \mapsto \inner{v}{gw})
 \end{align*}
 
 The claim is that $\phi$ is an isomorphism.
+
+To see that $\ker \phi = 0$, so that only the zero gets sent to the zero map, we can suppose that $x \neq 0 \in \ker \phi$. Then $\phi_x: w \to \inner{x}{gw}$ is the zero map. But the inner product is nondegenerate by definition, i.e. $\inner{x}{y} = 0 ~~\forall y \implies x = 0$.
 
 ## Part 2
 
