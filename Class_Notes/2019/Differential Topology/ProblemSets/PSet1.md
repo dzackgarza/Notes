@@ -8,9 +8,17 @@ title: Problem Set 1
 
 Let $A \in \mathrm{Mat}(n, n)$ be a positive definite $n\times n$ matrix, so 
 $$
-\inner{v}{Av} > 0 \forall v\in \RR^n,
+\inner{v}{Av} > 0 \quad \forall v\in \RR^n,
 $$
-and $B\in \mathrm{Math}(n, n)$ be non-negative definite 
+and $B\in \mathrm{Math}(n, n)$ be non-negative definite, so
+$$
+\inner{v}{Bv} \geq 0 \quad \forall v\in \RR^n.
+$$
+
+We'd like to show
+$$
+\inner{v}{ABv} > 0 \quad \forall v\in \RR^n,
+$$
 
 ## Part 2
 
