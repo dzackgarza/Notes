@@ -19,7 +19,7 @@ But $\dim V = \dim V\dual$, so any injective linear map will necessarily be surj
 
 ## Part 2
 
-Let $g: TM \tensor TM \to \RR$ be a metric, and consider the tangent space $TM$. By definition, the cotangent space $T
+Let $g: TM \tensor TM \to \RR$ be a metric, and consider the tangent space $TM$. By definition, the cotangent space $T^*_pM = (T_p M)\dual$
 
 # Problem 5
 
