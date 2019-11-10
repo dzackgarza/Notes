@@ -43,7 +43,9 @@ g^i: T\phi_i(U_i) \tensor T\phi_i(U_i) \to \RR \\
 $$
 which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n = \mathrm{span}_\RR \theset{\partial x_i}_{i=1}^n$ on basis vectors as the Kronecker delta and extended linearly.
 
-Let $G^i$ be the pullback of $g^i$ along the coordinate functions $\phi_i$, so 
+Note that each coordinate function $\phi_i: U_i \to \RR^n$ induces a map $\tilde \phi_i: TU_i \to T\RR^n$.
+
+Let $G^i$ be the pullback of $g^i$ along these induced maps $\tilde \phi_i$, so 
 $$
 G^i: T U_i \tensor TU_i \to \RR \\
 G^i(x, y) \definedas \left( \left(\phi_i\right)^*g^i\right) (x, y) \definedas g^i(\phi_i(x), \phi_i(y))
