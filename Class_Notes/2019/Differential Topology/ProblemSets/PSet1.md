@@ -23,7 +23,7 @@ $$
 (U, \phi) \definedas \\
 U = \CP^1 \setminus \theset{\infty} = \theset{[x, y] \mid x,y \in \CC,~ y\neq 0}  \\
 \phi: \CP^1 \to \CC \\
-[x, y] \mapsto y/x. \\ \\
+[x, y] \mapsto x/y. \\ \\
 \phi\inv: \CC \to \CP^1 \\
 z \mapsto [z, 1]. \\
 $$
@@ -33,7 +33,7 @@ $$
 (V, \psi) \definedas \\
 V = \CP^1 \setminus \theset{0} = \theset{[x, y] \mid x,y \in \CC,~ x\neq 0}\\
 \psi: \CP^1 \to \CC \\
-[x, y] \mapsto x/y. \\ \\
+[x, y] \mapsto y/x. \\ \\
 \psi\inv: \CC \to \CP^1 \\
 z \mapsto [1, z]. \\
 $$
