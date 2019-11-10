@@ -18,7 +18,11 @@ is smooth as a map from $\RR^m \to \RR^n$.
 
 We will thus show that both $f: \CP^1 \to \CP^1$ and $f\inv: \CP^1 \to \CP^1$ are both smooth bijections, from which we can conclude that $f$ is a diffeomorphism.
 
-
+So choose the following charts on $\CP^1$:
+$$
+(U_1, \phi) \definedas \theset{[x, 1] \suchthat x \in \CC},\quad U_1 \subseteq \CP^1 \setminus \theset{\infty} \\
+(U_2, \psi) \definedas \theset{[1, x] \suchthat x \in \CC},\quad U_2 \subseteq \CP^1 \setminus \theset{0} \\
+$$
 
 # Problem 3
 
