@@ -1,6 +1,17 @@
 ---
 title: Problem Set 1
 ---
+
+# Problem 3
+
+## Part 1
+
+Define a map
+$$
+\phi: C^\infty(M) \to \RR \\
+
+$$
+
 # Problem 4
 
 ## Part 1
