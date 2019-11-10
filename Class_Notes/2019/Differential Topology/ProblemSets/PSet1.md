@@ -77,7 +77,17 @@ Since $\CP^1 = U \union V$, we can note that if $p\in M$ then either $p\in U$ or
 
 We can compute
 \begin{align*}
-\phi \circ \tilde f \circ \phi\inv
+f_U(z) &\definedas (\phi \circ \tilde f \circ \phi\inv) (z)\\ 
+&= (\phi \circ \tilde f) ([z, 1]) \\
+&= \phi([z + c, 1]) \\
+&= z + c
+\end{align*}
+
+\begin{align*}
+f_V(z) &\definedas (\phi \circ \tilde f \circ \phi\inv) (z) \\
+&= (\phi \circ \tilde f) ([1, z]) \\
+&= \phi([1, z+c]) \\
+&= z + c
 \end{align*}
 
 # Problem 3
