@@ -85,11 +85,13 @@ so $X(\phi_1(p_0)) = 0$, which shows that $p_0$ is a zero of $X$. So $X$ has at 
 The trivial bundle
 
 ```{=latex}
+\begin{center}
 \begin{tikzcd}
 \RR^2 \arrow[rr] &  & S^2 \cross \RR^2 \arrow[dd]                         \\
                  &  &                                                     \\
                  &  & S^2 \arrow[uu, "s" description, dotted, bend right]
 \end{tikzcd}
+\end{center}
 ```
 
 has a nowhere vanishing section, namely 
@@ -102,11 +104,13 @@ which is the identity on the $S^2$ component and assigns the constant vector $[1
 
 However, as part 1 shows, the bundle
 ```{=latex}
+\begin{center}
 \begin{tikzcd}
 \RR^2 \arrow[rr] &  & TS^2 \arrow[dd]                                     \\
                  &  &                                                     \\
                  &  & S^2 \arrow[uu, "s" description, dotted, bend right]
 \end{tikzcd}
+\end{center}
 ```
 
 can *not* have a nowhere vanishing section. $\qed$
