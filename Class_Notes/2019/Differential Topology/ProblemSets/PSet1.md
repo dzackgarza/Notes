@@ -6,7 +6,7 @@ title: Problem Set 1
 
 We'll use the following definition of a smooth map between manifolds:
 
-Definition: Let $M, N$ be smooth manifolds of dimensions $m,n$ respectively and $f: M \to N$ a map. Then $f$ is *smooth* iff for every $p \in M$, there exists a chart $(U, \phi)$ with $p \in U$ and a chart $(V, \psi)$ with $f(p) \in V$ such that 
+Definition: Let $M, N$ be smooth manifolds of dimensions $m,n$ respectively and $f: M \to N$ a continuous map. Then $f$ is *smooth* iff for every $p \in M$, there exists a chart $(U, \phi)$ with $p \in U$ and a chart $(V, \psi)$ with $f(p) \in V$ such that 
 
 - $f(U) \subseteq V$, and
 - The induced map 
