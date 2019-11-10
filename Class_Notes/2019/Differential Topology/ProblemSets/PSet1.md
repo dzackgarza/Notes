@@ -55,7 +55,7 @@ g_p: T_pM \cross T_pM \to \RR\\
 (x, y) \mapsto \sum_{i\in I} f_i(p) G^i(x, y).
 $$
 
-The claim is that $g_p$ defines a metric on $M$, and thus the family $\theset{g_p \mid p \in M}$ yields a metric tensor and thus a Riemannian metric on $M$. 
+The claim is that $g_p$ defines a metric on $M$, and thus the family $\theset{g_p \mid p \in M}$ yields a tensor field and thus a Riemannian metric on $M$. 
 
 # Problem 6
 
