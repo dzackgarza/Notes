@@ -41,7 +41,7 @@ $$
 g^i: T\phi_i(U_i) \tensor T\phi_i(U_i) \to \RR \\
 (\partial x_i, \partial x_j) \mapsto \begin{cases} 1 & i = j \\ 0 & \text{otherwise} \end{cases}
 $$
-which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n \cong \RR^n = \mathrm{span}_\RR \theset{\partial x_i}_{i=1}^n$ on basis vectors as the Kronecker delta and extended linearly.
+which is defined for pairs of vectors in $T \phi_i(U_i) \cong T \RR^n = \mathrm{span}_\RR \theset{\partial x_i}_{i=1}^n$ on basis vectors as the Kronecker delta and extended linearly.
 
 Let $G^i$ be the pullback of $g^i$ along the coordinate functions $\phi_i$, so 
 $$
