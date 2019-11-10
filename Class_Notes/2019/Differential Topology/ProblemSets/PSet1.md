@@ -51,9 +51,23 @@ We then need to determine a formula for $\tilde f$ in homogeneous coordinates. W
 
 \begin{align*}
 p \in U \implies p = [a, b],~a,b,\in \CC, &~b\neq 0 \\
-\implies \tilde f([a, b]) 
+\implies \tilde f([a, b]) \Bigm|_{U}
 &= (\phi\inv \circ f \circ \phi)([a, b]) \\
-&= \phi\inv \circ f([b/a
+&= (\phi\inv \circ f)(\frac b a) \\
+&= \phi\inv(\frac b a + c) \\
+&= [\frac b a + c, 1] \\
+&= [b + ac, a]
+\end{align*}
+
+and
+\begin{align*}
+p \in V \implies p = [a, b],~a,b,\in \CC, &~a\neq 0 \\
+\implies \tilde f([a, b]) \Bigm|_{V} 
+&= (\psi\inv \circ f \circ \psi)([a, b]) \\
+&= (\psi\inv \circ f)(\frac a b) \\
+&= (\psi \inv)(\frac a b + c) \\
+&= [1, \frac a b + c] \\
+&= [b, a + bc]
 \end{align*}
 
 # Problem 3
