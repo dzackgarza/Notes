@@ -64,6 +64,8 @@ $$
 then $g$ can be expressed as 
 $$g = \sum_{i\in I} f_i G^i.$$
 
+
+
 # Problem 6
 
 ## Part 1
