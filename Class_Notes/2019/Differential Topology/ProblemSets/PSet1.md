@@ -51,11 +51,11 @@ $$
 
 Then, for a point $\in M$, define the following map:
 $$
-g: T_pM \cross T_pM \to \RR\\
+g_p: T_pM \cross T_pM \to \RR\\
 (x, y) \mapsto \sum_{i\in I} f_i(p) G^i(x, y).
 $$
 
-The claim is that this defines a metric on $M$.
+The claim is that $g_p$ defines a metric on $M$, and thus the family $\theset{g_p \mid p \in M}$ yields a metric tensor and thus a Riemannian metric on $M$. 
 
 # Problem 6
 
