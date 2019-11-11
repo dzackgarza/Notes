@@ -3498,4 +3498,5 @@ d. Submodules of $M$ are weight modules.
 e. If $M$ has a *unique* submodule, then $M$ has a unique simple quotient and $M$ is indecomposable.
 f. Every non-zero homomorphic image of $M$ is a highest weight module of weight $\lambda$.
 
-Proof of (a)
+Proof of (a):
+$M = U(\lieg)v^+$, which is in $\sum \CC f \ldots h \ldots e \ldots v^+$ where $e\ldots v^+ = 0$, which is in $\sum \CCC f \ldots v^+$.
