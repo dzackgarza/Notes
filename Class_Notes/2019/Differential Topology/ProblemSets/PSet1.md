@@ -106,6 +106,8 @@ By cases,
 
 # Problem 2
 
+Following the example in Lee's Smooth Manifolds (pp.
+
 # Problem 3
 
 ## Part 1
