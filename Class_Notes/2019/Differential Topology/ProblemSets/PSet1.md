@@ -125,7 +125,7 @@ where
 
 Define 
 $$
-F: \phi(U) \to \psi(V) \\
+F: \varphi(U) \to \psi(V) \\
 F(v) = (\psi \circ \phi\inv)(v)
 $$
 and thus 
