@@ -3430,4 +3430,15 @@ Writing $w_\mu = \sum_{i=1}^\ell m_i \alpha_i$, we have $0 = \sum_{i=1}^\ell m_i
 
 # Wednesday November 6th
 
-Upcoming
+Last time: 
+We considered the finite dimensional representation theory of $\lieg$ a semisimple Lie algebra over $\CC$.
+We showed Weyl's complete reducibility theorem: any finite dimensional $\lieg$ module is semisimple and $\lieg = \bigoplus \mathfrak{s}_i$, a sum of simple modules.
+
+Therefore, it suffices to understand the *characters* for simple modules, i.e. what are the dimensions of the weight spaces?
+
+We can answer this question for $\lieg = \liesl(2, \CC)$: we have $L(\lambda) = \mathrm{span}_\CC \theset{v_i}_{i=1}^\lambda$ where
+$$
+\dim L(\lambda)_\mu = \begin{cases} 1 & \mu \in \theset{\lambda, \lambda-2, \cdots, -\lambda} \\ 0 & otherwise \end{cases}
+$$
+
+For an arbitrary $\lieg$, what is $L(\lambda)$? We'll describe this using Weyl's character theorem, the Verma module (which is an infinite-dimensional highest weight module), and the PBW theorem of the universal enveloping algebra.
