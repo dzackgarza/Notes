@@ -163,9 +163,7 @@ But this precisely says that
 $$
 \dd{}{x_i} \Bigm|_{\varphi(p)}
 =
-\left(
-  \sum_k \dd{F_k}{x_i}(p) ~~\dd{}{y_k}\Bigm|_{F(p)}
-  \right)
+\sum_k \dd{F_k}{x_i}(p) ~~\dd{}{y_k}\Bigm|_{F(p)}
 $$
 
 
