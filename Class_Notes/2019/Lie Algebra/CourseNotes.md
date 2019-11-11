@@ -3471,7 +3471,7 @@ Definition:
 A $\lieg\dash$Module $M$ is a *highest weight module* of weight $\lambda$ if $M = U(\lieg)v^+$ for some maximal vector $v^+$.
 
 Example:
-Consider $\liesl(2, \CC)$ and let $L(\lambda)$, we have the following situation:
+Consider $\liesl(2, \CC)$ and $L(\lambda)$, we have the following situation:
 
 ```{=latex}
 \begin{tikzcd}
@@ -3486,3 +3486,12 @@ v_{-\lambda} \arrow[u, "e"', bend right] \arrow[d, "f"', bend right] \\
 ```
 
 Then a similar picture holds for $M(\lambda)$, thus $v_0$ is a maximal vector, and $L(\lambda), M(\lambda)$ are weight modules.
+
+Theorem:
+Let $M$ by a highest weight module of weight $\lambda$ with maximal vector $v^+$. 
+Fix an ordering $\Phi^+ = \theset{\beta_1, \beta_2, \cdots, \beta_m}$ where $m = \abs \Phi^+$.
+Pick a nonzero $e_i \in \lieg_{\beta_i}$, then there exists a nonzero $f_i \in \lieg_{-\beta_i}$ such that $[e_i, f_i] = h_i$ (a Cartan element) for all $i$.
+
+a. We can write a basis for the highest weight module, $M = \span_\CC\theset{ \prod_{i=1}^m f_i^{r_i} v^+  \mid r_I \in \ZZ_{\geq 0} }$ and $\mathrm{Wt}(M) \subseteq \theset{\mu \in \lieh^* \mid \mu \leq \lambda}$.
+
+
