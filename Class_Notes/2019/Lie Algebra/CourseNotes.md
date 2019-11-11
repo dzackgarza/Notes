@@ -3450,3 +3450,5 @@ This was first proved using perverse sheaves and $D\dash$modules in the 1980s (g
 This was obtained using something called the Soergel bimodule.
 This is all over $\CC$, and there are some generalizations that work for characteristic $p$. 
 It was thought that the original polynomial would work here, but it turns out that there is another one called the $p-KL$ polynomial.
+
+> These come from the KLR algebra, where there is a change of basis that induces a change of basis on the Hecke algebra, where the $KL$ polynomial takes that standard basis to the $KL$ basis.
