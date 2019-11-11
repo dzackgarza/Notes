@@ -159,7 +159,7 @@ dF_p (\dd{}{x_i} \Bigm|_{\varphi(p)} ) \actson f
   \right) \actson f
 \end{align*}
 
-But this precisely says that 
+But then we can write 
 $$
 \dd{}{x_i} \Bigm|_{\varphi(p)}
 =
