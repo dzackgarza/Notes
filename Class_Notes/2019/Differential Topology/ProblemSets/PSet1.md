@@ -160,11 +160,11 @@ dF_p (\dd{}{x_i} \Bigm|_{\varphi(p)} ) \actson f
 \end{align*}
 
 But then we can write 
-$$
+\begin{align*}
 \dd{}{x_i} \Bigm|_{\varphi(p)}
 =
 \sum_k \dd{F_k}{x_i}(p) ~~\dd{}{y_k}\Bigm|_{F(p)}.
-$$
+\end{align*}
 
 
 # Problem 3
