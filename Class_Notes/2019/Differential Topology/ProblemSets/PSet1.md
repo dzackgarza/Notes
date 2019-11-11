@@ -210,7 +210,7 @@ so this is indeed a derivation.
 
 ## Part 2
 
-Given $c(t) \subset M$, we define the map
+Given $c(t): I \to M$, we define the map
 $$
 \psi: TM \to TN \\
 [c(t)] \mapsto [(f \circ c)(t)]
