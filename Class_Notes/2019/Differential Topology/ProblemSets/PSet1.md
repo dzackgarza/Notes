@@ -226,8 +226,10 @@ $$
 and similarly we can define
 $$
 D_{f\circ c}: C^\infty(N) \to \RR \\
-g \mapsto \dd{}{t}(g \circ (f\circ c))(t)\Bigm|_{t=0}
+h \mapsto \dd{}{t}(h \circ (f\circ c))(t)\Bigm|_{t=0}
 $$
+
+and the question now is whether 
 
 # Problem 4
 
