@@ -141,7 +141,7 @@ Identifying elements in the tangent space as derivations, we can compute a formu
 
 \begin{align*}
 dF_p (\dd{}{x_i} \Bigm|_{\varphi(p)} ) \actson f 
-&\definedas 
+&\definedas \dd{}{x_i} ()
 \end{align*}
 
 
