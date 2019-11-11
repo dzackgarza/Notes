@@ -3492,6 +3492,10 @@ Let $M$ by a highest weight module of weight $\lambda$ with maximal vector $v^+$
 Fix an ordering $\Phi^+ = \theset{\beta_1, \beta_2, \cdots, \beta_m}$ where $m = \abs \Phi^+$.
 Pick a nonzero $e_i \in \lieg_{\beta_i}$, then there exists a nonzero $f_i \in \lieg_{-\beta_i}$ such that $[e_i, f_i] = h_i$ (a Cartan element) for all $i$.
 
-a. We can write a basis for the highest weight module, $M = \span_\CC\theset{ \prod_{i=1}^m f_i^{r_i} v^+  \mid r_I \in \ZZ_{\geq 0} }$ and $\mathrm{Wt}(M) \subseteq \theset{\mu \in \lieh^* \mid \mu \leq \lambda}$.
-
+a. We can write a basis for the highest weight module, $M = \span_\CC\theset{ \prod_{i=1}^m f_i^{r_i} v^+  \mid r_I \in \ZZ_{\geq 0} }$, 
+b. $\mathrm{Wt}(M) \subseteq \theset{\mu \in \lieh^* \mid \mu \leq \lambda}$.
+c. $\dim M_\lambda = 1$ and $\dim M_\mu < \infty$ for all $\mu \in \lieh^*$.
+d. Submodules of $M$ are weight modules.
+e. If $M$ has a *unique* submodule, then $M$ has a unique simple quotient and $M$ is indecomposable.
+f. Every non-zero homomorphic image of $M$ is a highest weight module of weight $\lambda$.
 
