@@ -3444,3 +3444,7 @@ $$
 For an arbitrary $\lieg$, what is $L(\lambda)$? We'll describe this using Weyl's character theorem, the Verma module (which is an infinite-dimensional highest weight module), and the PBW theorem of the universal enveloping algebra.
 
 In general, the representation of $\lieg$ is complicated, so we restrict ourselves to a subcategory $BGG$ category $\mathcal O$, which contains the simple and Verma modules.
+Here, the irreducible character problem is solved if we know that the *multiplicity* of simple modules in any Verma module. 
+The multiplicity is the number of simple modules occurring in a filtration, and the Kazhdan-Lustig conjecture says that this multiplicity should be the evaluation of a certain $KL$ polynomial at 1.
+This was first proved using perverse sheaves and $D\dash$modules in the 1980s (geometric), and then with purely algebraic proof is due to Williamson around 2013.
+This was obtained using something called the Soegel bimodule.
