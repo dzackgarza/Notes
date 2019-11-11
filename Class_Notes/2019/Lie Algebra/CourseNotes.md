@@ -3469,3 +3469,20 @@ A *maximal vector* $v^+ \in M$ is a nonzero vector such that $\eta v^+ = 0$, i.e
 
 Definition:
 A $\lieg\dash$Module $M$ is a *highest weight module* of weight $\lambda$ if $M = U(\lieg)v^+$ for some maximal vector $v^+$.
+
+Example:
+Consider $\liesl(2, \CC)$ and let $L(\lambda)$, we have the following situation:
+
+```{=latex}
+\begin{tikzcd}
+0                                                                    \\
+v_0 \arrow[u, "e"', bend right] \arrow[d, "f"', bend right]          \\
+v_1 \arrow[u, "e"', bend right] \arrow[d, "f"', bend right]          \\
+v_2 \arrow[u, "e"', bend right] \arrow[d, "f"', bend right]          \\
+\vdots \arrow[d, "f"', bend right]                                   \\
+v_{-\lambda} \arrow[u, "e"', bend right] \arrow[d, "f"', bend right] \\
+                                                                    
+\end{tikzcd}
+```
+
+Then a similar picture holds for $M(\lambda)$, thus $v_0$ is a maximal vector, and $L(\lambda), M(\lambda)$ are weight modules.
