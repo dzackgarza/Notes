@@ -3466,3 +3466,6 @@ So it is not a weight module.
 
 Definition:
 A *maximal vector* $v^+ \in M$ is a nonzero vector such that $\eta v^+ = 0$, i.e. $\lieg_\alpha v^+$ for all $\alpha \in \Phi^+$.
+
+Definition:
+A $\lieg\dash$Module $M$ is a *highest weight module* of weight $\lambda$ if $M = U(\lieg)v^+$ for some maximal vector $v^+$.
