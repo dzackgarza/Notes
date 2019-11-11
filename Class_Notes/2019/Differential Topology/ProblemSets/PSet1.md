@@ -110,7 +110,7 @@ Following the example in Lee's Smooth Manifolds (pp. 63), we want to show the fo
 
 \begin{align*}
 d\left(\psi \circ \varphi^{-1}\right)_{\varphi(p)} \left(
-  \frac{\partial}{\partial x^{i}} 
+  \frac{\partial}{\partial x^{i}} \BBigm|_{a} 
   \right) = 
 \end{align*}
 
