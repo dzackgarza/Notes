@@ -13,7 +13,7 @@ We'll use the following definition of a smooth map between manifolds:
   $$ 
   is smooth as a map from $\RR^m \to \RR^n$.
 
-We will thus show that both $f: \CP^1 \to \CP^1$ and $f\inv: \CP^1 \to \CP^1$ are both smooth bijections, from which we can conclude that $f$ is a diffeomorphism.
+We will thus show that both $\tilde f: \CP^1 \to \CP^1$ and $\tilde f\inv: \CP^1 \to \CP^1$ are both smooth bijections, from which we can conclude that $f$ is a diffeomorphism.
 
 So identify $0 = [0, 1]$ and $\infty = [1, 0]$ in $\CP^1$ and choose the following charts on $\CP^1$ in terms of homogeneous coordinates:
 $$
@@ -89,7 +89,13 @@ f_V(z) &\definedas (\phi \circ \tilde f \circ \phi\inv) (z) \\
 
 And $\dd{}{z} f_U(z) = \dd{}{z}f_V(z) = 1$, so these are smooth maps on their domains.
 
-To summarize, suppose $p\in M$
+**To Summarize**:
+Let $p\in M$ be arbitrary. The map $\tilde f$ will be smooth iff there are charts $(U_\alpha, \varphi_\alpha: U_\alpha \to \CC), (U_\beta, \varphi_\beta: U_\beta \to \CC)$ with $U_\alpha, \beta \subseteq \CP^1$ such that
+
+- $p\in U_\alpha$,
+- $\tilde f(p) \in U_\beta$,
+- $\tilde f(U_\alpha) \subseteq U_\beta$
+- $\varphi_\beta \circ \tilde f \circ \varphi_\alpha\inv$ is smooth.
 
 # Problem 3
 
