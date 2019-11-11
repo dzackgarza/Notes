@@ -144,7 +144,7 @@ dF_p: T_p M \to T_{F(p)}N \\
 dF_p(v) \actson f \definedas v(f \circ F)
 $$
 
-where it suffices to show how the derivation called $dF_p(v)$ acts on functions $f: C^\infty(N) \to \RR$.
+where it suffices to show how the derivation called $dF_p(v)$ acts on smooth functions $f: N \to \RR$.
 
 We can then compute a formula for $F$ in coordinates by computing its action on smooth functions $f: M \to \RR$:
 
