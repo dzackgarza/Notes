@@ -213,7 +213,7 @@ so this is indeed a derivation.
 Given $c(t): I \to M$, we define the map
 $$
 \psi: TM \to TN \\
-[c(t)] \mapsto [(f \circ c)(t)]
+v \definedas [c(t)] \mapsto v_c \definedas [(f \circ c)(t)]
 $$
 
 where $c_1 \sim c_2 \iff \dd{}{t}c_1(t)\Bigm|_{t=0} = \dd{}{t}c_2(t)\Bigm|_{t=0}$. We can then associate $[c(t)]$ with the derivation 
@@ -229,9 +229,9 @@ D_{f\circ c}: C^\infty(N) \to \RR \\
 h \mapsto \dd{}{t}(h \circ (f\circ c))(t)\Bigm|_{t=0}
 $$
 
-and the question now is whether $v_c(h\circ f) = \dd{}{t}(h \circ (f\circ c))(t)\Bigm|_{t=0}$.
+and the question now is whether $v_c(h\circ f) = \dd{}{t}(h \circ (f\circ c))(t)\Bigm|_{t=0}$, where $v_c \in TN$ is the tangent vector obtained by applying $\psi$. 
 
-By definition, we have 
+Thus the preimage of $v_c$ under $\psi$ is a class $[c(t)]$, and by definition we have
 $$
 v(h \circ f) = \dd{}{t} (h \circ f)(t) \Bigm|_{t=0}
 $$
