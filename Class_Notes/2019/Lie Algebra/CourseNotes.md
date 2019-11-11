@@ -3453,4 +3453,16 @@ It was thought that the original polynomial would work here, but it turns out th
 
 > These come from the KLR algebra, where there is a change of basis that induces a change of basis on the Hecke algebra, where the $KL$ polynomial takes that standard basis to the $KL$ basis.
 
+Recall that $M$ is a weight module if $M = \oplus_\lambda M_\lambda$, where $M_\lambda \coloneqq \theset{m\in M \mid h.m = \lambda(h)m ~\forall h\in\lieg}$.
 
+Non-example:
+Take $\lieg = \liesl(2, \CC) = \generators{e, h, f}$ and $M = U(\lieg)/ I$ where $I = U(\lieg) (1-e) \normal U(\lieg)$ is a left ideal.
+Then $M$ has basis $\theset{f^a h^b + I \mid a, b \in \ZZ_{\geq 0}}$.
+The claim is that $h + I$ is not in any weight space.
+If so, we would have $h \actson (h+I) = h^2 + I$, which is not a multiple of $h +I$, i.e. it's not in $\CC(h+I)$.
+So it is not a weight module.
+
+## Section 20.2: Highest Weight Modules
+
+Definition:
+A *maximal vector* $v^+ \in M$ is a nonzero vector such that $\eta v^+ = 0$, i.e. $\lieg_\alpha v^+$ for all $\alpha \in \Phi^+$.
