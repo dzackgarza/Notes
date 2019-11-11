@@ -128,7 +128,8 @@ $$
 F: \varphi(U) \to \psi(V) \\
 F(v) = (\psi \circ \phi\inv)(v)
 $$
-which, at the point $\phi(p)$, induces a map
+
+which, at the point $\varphi(p)$, induces a map
 $$
 dF_p: T_{\varphi(p)}\RR^n \to T_{\psi(p)}\RR^n \\
 dF(v) = d(\psi \circ \varphi\inv)(v)
