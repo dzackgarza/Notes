@@ -232,9 +232,14 @@ $$
 and the question now is whether $v_c(h\circ f) = \dd{}{t}(h \circ (f\circ c))(t)\Bigm|_{t=0}$, where $v_c \in TN$ is the tangent vector obtained by applying $\psi$. 
 
 Thus the preimage of $v_c$ under $\psi$ is a class $[c(t)]$, and by definition we have
-$$
-v(h \circ f) = \dd{}{t} (h \circ f)(t) \Bigm|_{t=0}
-$$
+
+\begin{align*}
+v(h \circ f) &= \dd{}{t} ((h \circ f) \circ c)(t) \Bigm|_{t=0} \\
+&= \dd{}{t} (h \circ (f \circ c))(t) \Bigm|_{t=0} \\
+&= D_{f\circ c}(h),
+\end{align*}
+
+which is what we wanted to show.
 
 # Problem 4
 
