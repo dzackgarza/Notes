@@ -169,8 +169,6 @@ $$
 
 # Problem 3
 
-## Part 1
-
 > Note: Throughout this question, we will identify $\theset{f: C^\infty(M) \to \RR} \cong C^\infty(M)\dual$ as vector spaces.
 
 Let $M, N$ be smooth manifolds and $f: M \to N$ be a fixed smooth map, and define a map
