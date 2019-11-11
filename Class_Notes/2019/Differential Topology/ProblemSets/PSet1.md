@@ -210,7 +210,11 @@ so this is indeed a derivation.
 
 ## Part 2
 
-Using the integral curve definition, 
+Given $c(t) \subset M$, we define the map
+$$
+\psi: TM \to TN \\
+[c(t)] \mapsto [(f \circ c)(t)]
+$$
 
 
 # Problem 4
