@@ -144,7 +144,7 @@ dF_p: T_p M_1 \to T_{F(p)}M_2 \\
 dF_p(v) \actson (f: M_2 \to \RR) \definedas v(f \circ F: M_1 \to \RR)
 $$
 
-which is well-defined because $v\in \T_p M_1$ implies that $v: C^\infty(M_1)$ is a derivation, and $f\circ F \in C^\infty(M_1)$.
+which is well-defined because $v\in T_p M_1$ implies that $v: C^\infty(M_1)$ is a derivation, and $f\circ F \in C^\infty(M_1)$.
 
 We can then compute a formula for $F$ in coordinates by computing its action on smooth functions $f: M \to \RR$ where $f \in C^\infty(M)$:
 
