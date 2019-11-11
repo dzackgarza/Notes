@@ -112,8 +112,17 @@ Following the example in Lee's Smooth Manifolds (pp. 63), we want to show the fo
 d\left(\psi \circ \varphi^{-1}\right)_{\varphi(p)} \left(
   \frac{\partial}{\partial x^{i}} \Biggm|_{\varphi(p)} 
   \right) = 
-  \left.\frac{\partial {y}^{j}}{\partial x^{i}}(\varphi(p)) \frac{\partial}{\partial {y}^{j}}\right|_{\psi(p)}
+  \left.\frac{\partial {y}^{j}}{\partial x^{i}}(\varphi(p)) 
+  \frac{\partial}{\partial {y}^{j}}\right|_{\psi(p)}
 \end{align*}
+
+where 
+
+- $(U, \phi)$ and $(V, \psi)$ are charts containing $p$, 
+- $\theset{\frac{\partial}{\partial x^{i}} \Bigm|_{\varphi(p)}}_{i=1}^n$ are the basis vectors spanning $T\varphi(U \intersect V) \cong T\RR^n$ at the point $\varphi(p) \in \varphi(U \intersect V)$, and
+- $\theset{\frac{\partial}{\partial {y}^{j}} \bigm|_{\psi(p)}}_{i=1}^n$ are the basis vector spanning $T\psi(U\intersect V)$ at the point $\psi(p) \in \psi(U \intersect V)$.
+
+
 
 
 
