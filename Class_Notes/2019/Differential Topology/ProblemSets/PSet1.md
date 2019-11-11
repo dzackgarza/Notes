@@ -106,7 +106,11 @@ By cases,
 
 # Problem 2
 
-Following the example in Lee's Smooth Manifolds (pp.
+Following the example in Lee's Smooth Manifolds (pp. 63), we want to show the following:
+
+$$
+d\left(\psi \circ \varphi^{-1}\right)_{\varphi(p)}\left(\left.\frac{\partial}{\partial x^{i}}\right|_{\varphi(p)_ { \varphi ( p ) }\right)=\left.\frac{\partial \widetilde{x}^{j}}{\partial x^{i}}(\varphi(p)) \frac{\partial}{\partial \widetilde{x}^{j}}\right|_{\psi(p)}
+$$
 
 # Problem 3
 
