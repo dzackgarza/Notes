@@ -3442,3 +3442,5 @@ $$
 $$
 
 For an arbitrary $\lieg$, what is $L(\lambda)$? We'll describe this using Weyl's character theorem, the Verma module (which is an infinite-dimensional highest weight module), and the PBW theorem of the universal enveloping algebra.
+
+In general, the representation of $\lieg$ is complicated, so we restrict ourselves to a subcategory $BGG$ category $\mathcal O$, which contains the simple and Verma modules.
