@@ -153,7 +153,7 @@ dF_p (\dd{}{x_i} \Bigm|_{\varphi(p)} ) \actson f
 &\definedas \dd{}{x_i} (f \circ F) &\text{by equation (1)}\\
 &= \sum_k \dd{f}{y_k}(F(p)) ~~\dd{F_k}{x_i}(p) &\text{by the chain rule} \\
 &= \sum_k \dd{F_k}{x_i}(p) ~~\dd{f}{y_k}(F(p)) &\\
-&= \left(
+&\definedas \left(
   \sum_k \dd{F_k}{x_i}(p) ~~\dd{}{y_k}\Bigm|_{F(p)}
   \right) \actson f
 \end{align*}
