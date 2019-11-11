@@ -138,6 +138,8 @@ $$
 
 since $F(\varphi(p)) = \psi(p)$.
 
+We first note that given any 
+
 Identifying elements in the tangent space as derivations, we can compute a formula for $F$ in coordinates by computing its action on functions $f: C^\infty(M) \to \RR$:
 
 \begin{align*}
