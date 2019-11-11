@@ -216,7 +216,12 @@ $$
 [c(t)] \mapsto [(f \circ c)(t)]
 $$
 
-where $c_1 \sim c_2 \iff \dd{}{t}c_1(t)\Bigm|_{t=0} = \dd{}{t}c_2(t)\Bigm|_{t=0}$. We can then associate $[c(t)]$ with the derivation $
+where $c_1 \sim c_2 \iff \dd{}{t}c_1(t)\Bigm|_{t=0} = \dd{}{t}c_2(t)\Bigm|_{t=0}$. We can then associate $[c(t)]$ with the derivation 
+
+$$
+D_c: C^\infty(N) \to \RR \\
+h \mapsto \dd{}{t}(h \circ c)(t)\Bigm|_{t=0}
+$$
 
 
 # Problem 4
