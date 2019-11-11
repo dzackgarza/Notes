@@ -3481,7 +3481,6 @@ v_1 \arrow[u, "e"', bend right] \arrow[d, "f"', bend right]          \\
 v_2 \arrow[u, "e"', bend right] \arrow[d, "f"', bend right]          \\
 \vdots \arrow[d, "f"', bend right]                                   \\
 v_{-\lambda} \arrow[u, "e"', bend right] \arrow[d, "f"', bend right] \\
-                                                                    
 \end{tikzcd}
 ```
 
