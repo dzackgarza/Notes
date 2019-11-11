@@ -139,17 +139,17 @@ $$
 since $F(\varphi(p)) = \psi(p)$.
 
 Identifying elements in the tangent space as derivations, we first note that given any $F: M_1 \to M_2$, at a point $p\in M_1$ we define
-$$
+\begin{align}
 dF_p: T_p M_1 \to T_{F(p)}M_2 \\
 dF_p(v) \actson (f: M_2 \to \RR) \definedas v(f \circ F: M_1 \to \RR)
-$$
+\end{align}
 
 which is well-defined because $v\in T_p M_1$ means that $v: C^\infty(M_1) \to \RR$ is a derivation, and $f\circ F \in C^\infty(M_1)$, so it makes sense to evaluate $v$ on this composition.
 
 We can then compute a formula for $F$ in coordinates by computing its action on smooth functions $f: M \to \RR$ where $f \in C^\infty(M)$:
 
 \begin{align*}
-dF_p (\dd{}{x_i} \Bigm|_{\varphi(p)} ) \actson f 
+dF_p (\dd{}{x_i} \Bigm|_{\varphi(p)} ) \actson f \quad\quad\text{}
 &\definedas \dd{}{x_i} (f \circ F) \\
 &= \sum_k \dd{f}{y_k}(F(p)) ~~\dd{F_k}{x_i}(p) \quad\quad\text{by the chain rule} \\
 &= \sum_k \dd{F_k}{x_i}(p) ~~\dd{f}{y_k}(F(p)) \\
