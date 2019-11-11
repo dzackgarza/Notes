@@ -123,7 +123,11 @@ where
 - $\theset{\frac{\partial}{\partial x^{i}} \Bigm|_{\varphi(p)}}_{i=1}^n$ are the basis vectors spanning $T\varphi(U \intersect V) \cong T\RR^n$ at the point $\varphi(p) \in \varphi(U \intersect V)$, and
 - $\theset{\frac{\partial}{\partial {y}^{j}} \bigm|_{\psi(p)}}_{i=1}^n$ are the basis vector spanning $T\psi(U\intersect V)$ at the point $\psi(p) \in \psi(U \intersect V)$.
 
-Let $F = \psi \circ \phi\inv$. 
+Define 
+$$
+F: T_{\varphi(p)}\RR^n \to T_{\psi(p)}\RR^n \\
+F(v) = (\psi \circ \phi\inv)(v)
+$$
 
 
 
