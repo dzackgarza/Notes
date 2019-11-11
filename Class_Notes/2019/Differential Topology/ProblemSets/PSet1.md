@@ -97,6 +97,11 @@ Let $p\in M$ be arbitrary. The map $\tilde f$ will be smooth iff there are chart
 - $\tilde f(U_\alpha) \subseteq U_\beta$
 - $\varphi_\beta \circ \tilde f \circ \varphi_\alpha\inv$ is smooth.
 
+By cases, 
+
+- If $p \neq \infty$, then choose $U_\alpha = U_\beta = U$ and $\varphi_\alpha = \varphi_\beta = \phi$. Then $\tilde f(p) \neq \infty$, so $\tilde f(U) \subseteq U$, and the composition $\phi \circ \tilde f \circ \phi \inv (z) = z + c$ is smooth.
+- If $p = \infty$, then choose $U_\alpha = U_\beta = V$ and $\varphi_\alpha = \varphi_\beta = \psi$. Then $\tilde f(p) \neq 0$, so $\tilde f(V) \subseteq V$, and the composition $\psi \circ \tilde f \circ \psi \inv (z) = z + c$ is again smooth.
+
 # Problem 3
 
 ## Part 1
