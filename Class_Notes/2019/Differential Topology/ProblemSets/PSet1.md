@@ -140,7 +140,8 @@ since $F(\varphi(p)) = \psi(p)$.
 
 We first note that given any $F: M \to N$, at a point $p\in M$ we define
 $$
-dF_p
+dF_p: T_p M \to T_{F(p)}N \\
+
 $$
 
 Identifying elements in the tangent space as derivations, we can compute a formula for $F$ in coordinates by computing its action on functions $f: C^\infty(M) \to \RR$:
