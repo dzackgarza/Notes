@@ -138,13 +138,15 @@ $$
 
 since $F(\varphi(p)) = \psi(p)$.
 
-We first note that given any $F: M \to N$, at a point $p\in M$ we define
+Identifying elements in the tangent space as derivations, we first note that given any $F: M \to N$, at a point $p\in M$ we define
 $$
 dF_p: T_p M \to T_{F(p)}N \\
-dF_p(v) \actson f \definedas v(F \circ f)
+dF_p(v) \actson f \definedas v(f \circ F)
 $$
 
-Identifying elements in the tangent space as derivations, we can compute a formula for $F$ in coordinates by computing its action on functions $f: C^\infty(M) \to \RR$:
+where it suffices to show how the derivation called $dF_p(v)$ acts on functions $f: C^\infty(N) \to \RR$.
+
+We can then compute a formula for $F$ in coordinates by computing its action on functions $f: C^\infty(M) \to \RR$:
 
 \begin{align*}
 dF_p (\dd{}{x_i} \Bigm|_{\varphi(p)} ) \actson f 
