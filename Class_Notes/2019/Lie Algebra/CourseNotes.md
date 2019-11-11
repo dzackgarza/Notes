@@ -3447,4 +3447,4 @@ In general, the representation of $\lieg$ is complicated, so we restrict ourselv
 Here, the irreducible character problem is solved if we know that the *multiplicity* of simple modules in any Verma module. 
 The multiplicity is the number of simple modules occurring in a filtration, and the Kazhdan-Lustig conjecture says that this multiplicity should be the evaluation of a certain $KL$ polynomial at 1.
 This was first proved using perverse sheaves and $D\dash$modules in the 1980s (geometric), and then with purely algebraic proof is due to Williamson around 2013.
-This was obtained using something called the Soegel bimodule.
+This was obtained using something called the Soergel bimodule.
