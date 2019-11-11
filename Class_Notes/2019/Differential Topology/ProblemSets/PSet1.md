@@ -231,7 +231,10 @@ $$
 
 and the question now is whether $v(h\circ f) = \dd{}{t}(h \circ (f\circ c))(t)\Bigm|_{t=0}$.
 
-By definition, we have $v(h \circ f) = 
+By definition, we have 
+$$
+v(h \circ f) = \dd{}{t} (h \circ f)(t) \Bigm|_{t=0}
+$$
 
 # Problem 4
 
