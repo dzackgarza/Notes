@@ -168,8 +168,10 @@ But then we can write
 &= d(\psi\inv) \Bigm|_{\psi(p)} \circ ~d(\psi \circ \varphi\inv) \Bigm|_{\varphi(p)} \left(\dd{}{x_i} \Bigm|_{\varphi(p)}\right) \quad\text{by Lee Proposition 3.6b}\\
 &= d(\psi\inv) \left( \sum_k \dd{F_k}{x_i}(p) ~~\dd{}{y_k}\Bigm|_{F(p)} \right) \quad\text{by previous computation} \\
 &\definedas
-\sum_k \dd{F_k}{x_i}(p) ~~\dd{}{y_k}\Bigm|_{p}
+\sum_k \dd{F_k}{x_i}(p) ~~\dd{}{y_k}\Bigm|_{p},
 \end{align*}
+
+which is what we wanted to show. $\qed$
 
 
 # Problem 3
