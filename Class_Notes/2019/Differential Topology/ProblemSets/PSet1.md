@@ -241,6 +241,10 @@ v(h \circ f) &= \dd{}{t} ((h \circ f) \circ c)(t) \Bigm|_{t=0} \\
 
 which is what we wanted to show.
 
+## Part 3
+
+> Not sure how to proceed.
+
 # Problem 4
 
 ## Part 1
