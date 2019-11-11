@@ -173,7 +173,6 @@ But then we can write
 
 which is what we wanted to show. $\qed$
 
-
 # Problem 3
 
 > Note: Throughout this question, we will identify $\theset{f: C^\infty(M) \to \RR} \cong C^\infty(M)\dual$ as vector spaces.
