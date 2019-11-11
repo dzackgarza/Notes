@@ -112,9 +112,10 @@ Following the example in Lee's Smooth Manifolds (pp. 63), we want to show the fo
 d\left(\psi \circ \varphi^{-1}\right)_{\varphi(p)} \left(
   \frac{\partial}{\partial x^{i}} \Biggm|_{\varphi(p)} 
   \right) = 
+  \left.\frac{\partial {y}^{j}}{\partial x^{i}}(\varphi(p)) \frac{\partial}{\partial {y}^{j}}\right|_{\psi(p)}
 \end{align*}
 
-\left.\frac{\partial \widetilde{x}^{j}}{\partial x^{i}}(\varphi(p)) \frac{\partial}{\partial \widetilde{x}^{j}}\right|_{\psi(p)}
+
 
 # Problem 3
 
