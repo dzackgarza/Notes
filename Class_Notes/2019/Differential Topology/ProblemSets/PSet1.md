@@ -146,7 +146,7 @@ $$
 
 where it suffices to show how the derivation called $dF_p(v)$ acts on functions $f: C^\infty(N) \to \RR$.
 
-We can then compute a formula for $F$ in coordinates by computing its action on functions $f: C^\infty(M) \to \RR$:
+We can then compute a formula for $F$ in coordinates by computing its action on smooth functions $f: M \to \RR$:
 
 \begin{align*}
 dF_p (\dd{}{x_i} \Bigm|_{\varphi(p)} ) \actson f 
