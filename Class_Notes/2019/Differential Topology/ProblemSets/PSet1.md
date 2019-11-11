@@ -229,7 +229,9 @@ D_{f\circ c}: C^\infty(N) \to \RR \\
 h \mapsto \dd{}{t}(h \circ (f\circ c))(t)\Bigm|_{t=0}
 $$
 
-and the question now is whether 
+and the question now is whether $v(h\circ f) = \dd{}{t}(h \circ (f\circ c))(t)\Bigm|_{t=0}$.
+
+By definition, we have $v(h \circ f) = 
 
 # Problem 4
 
