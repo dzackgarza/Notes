@@ -2307,10 +2307,10 @@ where $\phi(\xi) = \exp(2\pi i x\cdot \xi) \hat{g_t}(\xi)$.
 
 > HW: Shows $\hat{\phi}(y) = \hat{\hat{g}_t}(y-x)$, and an easy consequence is that this is in fact $g_t(x - y)$.
 
-But now one term is converging to $\int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ as $t\to 0$ pointwise, and $f\ast g_t(x) \to f$ as $t\to 0$ in $L_1$.
+But now one term is converging to $\int \hat{f}(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ as $t\to 0$ pointwise, and $f\ast g_t(x) \to f$ as $t\to 0$ in $L_1$.
 Then there is a subsequence of the latter term converging to $f$ almost everywhere, and thus the pointwise limit in the first is equal to the $L^1$ limit in the second.
 
-We thus obtain $f(x) = \int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ almost everywhere.
+We thus obtain $f(x) = \int \hat{f}(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ almost everywhere.
 
 # Thursday October 31
 
@@ -2358,10 +2358,10 @@ If we take the Fourier transform in the $x$ variable, we get $\widehat{\dd{u}{t}
 Then the boundary conditions become $\hat{u}(\xi, 0) = \xi{f}(\xi)$.
 But note that this is now a first order ODE!
 
-This is easy to solve, we get $\hat u (\xi, t) = c(\xi) \exp(-\pi \abs{\xi}^2 t) = \hat f(\xi) \exp(-\pi \abs{\xi}^2 t)$.
+This is easy to solve, we get $\hat{u} (\xi, t) = c(\xi) \exp(-\pi \abs{\xi}^2 t) = \hat{f}(\xi) \exp(-\pi \abs{\xi}^2 t)$.
 
-But then $\exp(-\pi \abs{\xi}^2 t) = \hat G (\sqrt t \xi)$ where $G(x) = \exp(-\pi \abs{x}^2)$.
-We now have $\hat u = \hat f \hat G = \widehat{f\ast G}$, but if the transforms are equal then the original functions are equal by the inversion formula.
+But then $\exp(-\pi \abs{\xi}^2 t) = \hat{G} (\sqrt t \xi)$ where $G(x) = \exp(-\pi \abs{x}^2)$.
+We now have $\hat{u} = \hat{f} \hat{G} = \widehat{f\ast G}$, but if the transforms are equal then the original functions are equal by the inversion formula.
 We thus obtain $u(x, t) = f \ast G_{\sqrt t}(x)$ where $G_{\sqrt t}(x) = \frac{1}{t^{n/2}} \exp(-\pi \abs{x}^2/ t)$.
 Note that $f \ast g \to f$ as $t \to 0$, which matches with the original boundary conditions, and $f \ast g \to 0$ as $t \to \infty$, which corresponds with heat dissipating.
 
@@ -2384,7 +2384,7 @@ u(x, 0) = f(x)
 
 We'll use the same technique as the heat equation, and obtain
 $$
-\Delta u = 0 \implies -4\pi^2 \abs{\xi}^2 \hat u (\xi ,y) + \dd{^2}{y^2} \hat u (\xi, y) = 0
+\Delta u = 0 \implies -4\pi^2 \abs{\xi}^2 \hat{u} (\xi ,y) + \dd{^2}{y^2} \hat{u} (\xi, y) = 0
 $$
 
 But this is a homogeneous second order ODE, so we can look at the auxiliary polynomial. 
@@ -2392,11 +2392,11 @@ If we have distinct roots, the general solution is $c_1 e^{r_1x} + c_2 e^{r_2 x}
 
 We thus obtain
 $$
-\hat u(\xi, y) = A(\xi) \exp(-2\pi \abs{\xi} y) + B(\xi)\exp(2\pi \abs{\xi} y)
+\hat{u}(\xi, y) = A(\xi) \exp(-2\pi \abs{\xi} y) + B(\xi)\exp(2\pi \abs{\xi} y)
 $$
 
 In particular, we can just take the first term, since the second term won't vanish at infinity.
-We again find that $A(\xi) = \hat f(\xi)$ by checking initial conditions, so $\hat u(\xi, y) = \hat f(\xi) \hat P(y\xi) = \widehat{f \ast P_y}$ where $P(x) = \frac{1}{\pi} \frac{1}{1+x^2}$, and
+We again find that $A(\xi) = \hat{f}(\xi)$ by checking initial conditions, so $\hat{u}(\xi, y) = \hat{f}(\xi) \hat{P}(y\xi) = \widehat{f \ast P_y}$ where $P(x) = \frac{1}{\pi} \frac{1}{1+x^2}$, and
 $f\ast P_y \to f$ as $y\to 0$ as desired.
 .
 ## Wave equation (Cauchy problem in $\RR^n$)
@@ -2420,15 +2420,15 @@ Using the same technique, we have
 
 \[
 \begin{align*}
-\dd{^2}{t^2} \hat u(\xi, t) &= -4\pi^2 \abs{\xi}^2 \hat u (\xi, t) \\
-\hat u(\xi, 0) &= \hat f(\xi) \\
-\dd{}{t} \hat u(\xi, 0) = \hat g(\xi).
+\dd{^2}{t^2} \hat{u}(\xi, t) &= -4\pi^2 \abs{\xi}^2 \hat{u} (\xi, t) \\
+\hat{u}(\xi, 0) &= \hat{f}(\xi) \\
+\dd{}{t} \hat{u}(\xi, 0) = \hat{g}(\xi).
 .\end{align*}
 \]
 
 This is again 2nd order linear homogeneous, except there is now a complex conjugate pair of roots, so we get
 $$
-\hat u(\xi, t) = \hat f(\xi) \cos(2\pi \abs \xi t) + \frac{\hat g(\xi) \sin(2\pi \abs \xi t)}{2\pi \abs \xi}.
+\hat{u}(\xi, t) = \hat{f}(\xi) \cos(2\pi \abs \xi t) + \frac{\hat{g}(\xi) \sin(2\pi \abs \xi t)}{2\pi \abs \xi}.
 $$
 
 Note that the derivative of the first term is exactly the second term, so we have
