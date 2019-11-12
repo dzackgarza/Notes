@@ -92,13 +92,12 @@ Every $E \subseteq \RR$ can be written as $E = A \disjoint B$ where $A$ is null 
 
 > This gives some information about how nullity and meagerness interact -- in particular, $\RR$ itself is neither meager nor null. Idea: if meager $\implies$ null, this theorem allows you to write $\RR$ as the union of two null sets. This is bad!
 
-\wrapenv{\Begin{proof}}
+*Proof*:
 We can assume $E = \RR$. Take an enumeration of the rationals, so $\QQ = \theset{q_j}_{j=1}^\infty$. Around each $q_j$, put an interval around it of size $1/2^{j+k}$ where we'll allow $k$ to vary, yielding multiple intervals around $q_j$. To do this, define $I_{j, k} = (q_j - 1/2^{j+k}, q_j + 2^{j+k})$. Now let $G_k = \union_j I_{j, k}$. Finally, let $A = \intersect_k G_k$; we claim that $A$ is null.
 
 Note that $\sum_j \abs{I_{j, k}} = \frac{1} {2^k}$, so just pick $k$ such that $\frac 1 {2^k} < \varepsilon$.
 
 Now we need to show that $A^c \definedas B$ is meager. Note that $G_k$ covers the rationals, and is a countable union of open sets, so it is dense. So $G_k$ is an open and dense set. By one of the equivalent formulations of meagerness, this means that $G_k^c$ is nowhere dense. But then $B = \union_k G_k^c$ is meager.
-\wrapenv{\End{proof}}
 
 ## $\RR$ is not small
 
