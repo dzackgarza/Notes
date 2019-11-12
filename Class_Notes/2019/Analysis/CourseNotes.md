@@ -2794,6 +2794,11 @@ which yields
 \begin{align*}
 \norm{y_n - y_m}^2 
 &= 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\norma{\frac 1 2 (y_n + y_m) - x}^2 \\
-&\leq 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\delta^2 \to 0
-.\end{align*}
+&\leq 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\delta^2 \to 0,
+\end{align*}
 \]
+
+since $\norm{y_n - x}_H \to 0$ since $y_n \to_H x$.
+
+It follows that $\theset{y_n}$ is Cauchy in $H$, so $y_n \to_H y \in H$. 
+But since the $y_n$ were in $M$ and $M$ is closed, we in fact have $y\in M$.
