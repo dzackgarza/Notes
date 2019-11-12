@@ -3203,6 +3203,14 @@ Recall that finding a basis of the row space involves doing Gaussian Elimination
 For a basis of the column space, you take the corresponding columns in the *original* matrix.
 Note that in this case, $\dim R(A) = \dim C(A)$, and in fact these are always equal.
 
-Theorem (Rank and Equivalence):
+**Theorem (Rank and Equivalence):**
 Let $\phi: V\to W$ be a linear transformation and $A$ be the matrix of $\phi$ relative to $\beta_v, \beta_v'$.
 Then $\dim \im \pi = \dim \C(A) = \dim R(A)$.
+
+*Proof*:
+Construct the matrix $A = [\phi]_{\beta_v, \beta_w}$. 
+Then $\phi: V \to W$ descends to a map $A: D^m \to D^n$.
+Writing the matrix $A$ out and letting $v\in D^m$ a row vector act on $A$ from the *left* yields a column vector $Av \in D^n$.
+But then $\im \phi$ corresponds to $R(A)$, so $\dim \im \phi = \dim R(A) = \dim C(A)$.
+
+
