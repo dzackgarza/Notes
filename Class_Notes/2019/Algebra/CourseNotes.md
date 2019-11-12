@@ -3224,4 +3224,11 @@ Let $A, B \in M_{m,n}(D)$. Then
 - $A$ is equivalent to $B$ iff $\rank A = \rank B$.
 - $E_r$ for $r = 0, 1, \cdots, \min(m,n)$ is a complete set of representatives for the relation of matrix equivalence on $M_{m, n}(D)$.
 
+Let $X = M_{m, n}(D)$ and $G = \GL_m(D) \cross \GL_n(D)$, then $G \actson X$ by $(P, Q) \actson A \definedas PAQ\inv$.
+Then the orbits under this action are exactly $\theset{E_r \mid 0 \leq r \leq \min(m, n)}$.
 
+*Proof*:
+
+Note that 2 and 3 follow from 1, so we'll show 1.
+Let $A$ be an $m\times n$ matrix for some linear transformation $\phi: D^m \to D^n$ relative to some basis.
+Assume $\rank A = \dim \im \phi = r$.
