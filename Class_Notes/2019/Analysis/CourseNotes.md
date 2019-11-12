@@ -2761,3 +2761,4 @@ Let $M$ be a closed subspace of $H$ and $x\in H$.
 Then
 
 1. There exists a unique $y \in M$ that is *closest* to $y$, i.e. $\norm{x - y} = \inf_{y' \in M}\norm{x - y'}$.
+2. Defining $z \coloneqq x-y$, then $z\in M^\perp$.
