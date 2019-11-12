@@ -45,3 +45,8 @@ and as a corollary, we have
 $$
 \Re(\inner{x}{iy}) =  \Re(-i\inner{x}{y}) = \Im(\inner{x}{y}).
 $$
+
+We can compute the following:
+\begin{align*}
+\norm{x + y}^2 &=
+\end{align*}
