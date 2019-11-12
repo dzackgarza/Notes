@@ -2562,7 +2562,7 @@ Orthonormal Sets:
 A countable collection $\theset{u_n}$ is *orthonormal* iff 
 
 1. $\inner{u_j}{u_k} = 0$ for $j\neq k$, and
-2. $\inner{u_j}{u_j} = \norma{u_j}^2 = 1$ for all $j$.
+2. $\inner{u_j}{u_j} = \norm{u_j}^2 = 1$ for all $j$.
 
 > Note: we only consider countable collections; a *separable* Hilbert space always has such a basis. (?)
 
