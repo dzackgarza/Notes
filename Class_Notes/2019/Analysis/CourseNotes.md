@@ -2784,7 +2784,7 @@ which yields
 \[
 \begin{align*}
 \norm{y_n - y_m}^2 
-&= 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\norma{\frac 1 2 (y_n + y_m) - x}^2 \\
+&= 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\norm{\frac 1 2 (y_n + y_m) - x}^2 \\
 &\leq 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\delta^2 \to 0,
 \end{align*}
 \]
