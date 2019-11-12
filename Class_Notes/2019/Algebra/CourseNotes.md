@@ -3238,3 +3238,12 @@ But then $A$ is equivalent to $E_r$.
 
 Conversely, if $A = PE_r Q$ with $P, Q$ invertible, then $\dim \im A = \dim \im E_r$, and thus $\rank A = \rank E_r = r$. 
 $\qed$
+
+How do we do this? 
+Recall the row operations:
+
+- Interchange rows
+- Multiply a row by a unit
+- Add one row to another
+
+
