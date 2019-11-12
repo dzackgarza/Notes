@@ -2603,6 +2603,7 @@ so $\sum \abs{\inner{x}{u_n}}^2 \leq \norm{x}^2$ holds for every $N$, and thus f
 **Theorem (Riesz-Fischer):**
 
 The map $x \mapsvia{hat} \inner{x}{u_n} \coloneqq \hat{x}(n)$ maps $H$ onto $\ell^2$.
+
 If $\theset{u_n}^\infty$ is orthonormal in $H$ and $\theset{a_n}^\infty \in \ell^2(\NN)$, then there exists an $x\in H$ such that $\inner{x}{u_n} = a_n$ for all $n\in N$.
 Moreover, $x$ can be chosen such that $\norm{x} = \sqrt{\sum \abs{a_n}^2}$.
 
