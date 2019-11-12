@@ -2750,15 +2750,28 @@ Let $H$ be a Hilbert space, then a subspace $M \subseteq H$ is *closed* if $x_n 
 
 > Note that finite-dimensional subspaces are *always* closed, so this is a purely infinite-dimensional phenomenon.
 
-Proposition:
+**Proposition:**
 Given any *set* $M$, then $M^\perp \coloneqq \theset{x\in H \suchthat \inner{x}{y} = 0 ~\forall y\in M}$ is always a closed subspace.
 
-Proof:
+*Proof:*
 Homework problem.
 
-Lemma:
+**Lemma:**
 Let $M$ be a closed subspace of $H$ and $x\in H$.
 Then
 
 1. There exists a unique $y \in M$ that is *closest* to $y$, i.e. $\norm{x - y} = \inf_{y' \in M}\norm{x - y'}$.
 2. Defining $z \coloneqq x-y$, then $z\in M^\perp$.
+
+**Consequence 1:**
+If $M \subseteq H$ is a closed subspace, then $(M^\perp)^\perp = M$.
+
+> Note that $M \subseteq M^{\perp \perp}$ by definition. (Easy to check)
+
+To show that $M^{\perp \perp} \subseteq M$, let $x\in M^{\perp \perp}$, then $x = y + z$ where $y\in M$ and $z\in M^\perp$.
+Then $\inner{x}{z} = \innner {y}{z} + \inner{z}{z} \implies \norm{z}^2 = 0 \implies z = 0 \implies x=y$.
+
+**Consequence 2:**
+
+Theorem:
+If $M \subseteq H$ is a closed subspace, then $H = M \oplus M^\perp$, i.e. $x\in H \implies x  = y + z, y\in M, z\in M^\perp$, and $y,z$ are the unique elements in $M, M^\perp$ that are closest to $x$.
