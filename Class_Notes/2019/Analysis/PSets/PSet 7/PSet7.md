@@ -107,5 +107,7 @@ Let $x_n \to x$ and $y_n \to y$, then
   \inner{x_n - x}{y_n} + \inner{x}{y_n - y} 
 } \\
 &\leq \norm{x_n - x} \norm{y_n} + \norm{x} \norm{y_n - y} \\
-& \to 0\cdot M + 
+& \to 0\cdot M +  C \cdot 0 < \infty,
 \end{align*}
+
+where $\norm{y_n} \to M$ since $y_n \to y$ implies that $\norm{y_n}$ is bounded.
