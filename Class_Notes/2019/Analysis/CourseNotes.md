@@ -2802,3 +2802,4 @@ since $\norm{y_n - x}_H \to 0$ since $y_n \to_H x$.
 
 It follows that $\theset{y_n}$ is Cauchy in $H$, so $y_n \to_H y \in H$. 
 But since the $y_n$ were in $M$ and $M$ is closed, we in fact have $y\in M$.
+Since $\norm{x - y_n} \to \norm{x - y} = \delta$, we have the existence of $x$.
