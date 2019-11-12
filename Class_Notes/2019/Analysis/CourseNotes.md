@@ -261,8 +261,8 @@ Some good properties:
 
 - Good for approximation (vertical strips)
 - Many functions are in $\mathcal R$, e.g. continuous functions.
-- $\mathcal R([a, b])$ is a vector space
-- The integral is an element of $\mathcal{R}^\dual$.
+- $\mathcal{R} ([a, b])$ is a vector space
+- The integral is an element of $\mathcal{R}^*$.
 - FTC
 - $\mathcal R$ is closed under uniform convergence.
 
