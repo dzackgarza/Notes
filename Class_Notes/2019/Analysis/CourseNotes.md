@@ -2880,3 +2880,19 @@ Note that the numerator is less than 2, so the entire term is a constant that is
 So this goes to zero exponentially, the question now depends on the growth of $c_k$.
 It turns out that $c_k \leq (k+1)\pi$, so it only grows linearly.
 So the whole quantity indeed goes to zero.
+
+We can now write
+\[
+\begin{align*}
+1 &= 2c_k \int_0^{1/2} \left( \frac{1 + \cos(2\pi x)}{2} \right)^k dx \\
+&= 2c_k \int_0^{1/2} \left( \frac{1 + \cos(2\pi x)}{2} \right)^k \sin(2\pi x) dx \\
+&= \frac{2c_k}{\pi} 
+\int_0^1 u^k ~du 
+= 
+\frac{2c_k}{\pi(k+1)}
+.\end{align*}
+\]
+
+> Note: this is a nice proof!
+
+> Note: Question: when is a function equal to its Fourier series? We have $L^2$ convergence, but when do we get pointwise? Theorem from the 60s: any $L^2$ function (in particular continuous functions) converge almost everywhere.
