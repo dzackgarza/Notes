@@ -75,6 +75,17 @@ Assuming now that $U$ is an isometry, by the polarization identity we can write
 \begin{align*}
 \inner{Ux}{Uy} &= \frac 1 4 
 \left(
-  \norm{Ux + Uy}^2
-\right)
+  \norm{Ux + Uy}^2 + \norm{Ux - Uy}^2 + i\norm{Ux + Uy}^2 - i\norm{Ux + Uy}^2
+\right) \\
+&= \frac 1 4
+\left(
+  \norm{U(x + y)}^2 + \norm{U(x - y)}^2 + i\norm{U(x + y)}^2 - i\norm{U(x + y)}^2
+\right) \\
+&= \frac 1 4
+\left(
+  \norm{x + y}^2 + \norm{x - y}^2 + i\norm{x + y}^2 - i\norm{x + y}^2
+\right) \\
+&= \inner{x}{y}.
 \end{align*}
+
+$\qed$
