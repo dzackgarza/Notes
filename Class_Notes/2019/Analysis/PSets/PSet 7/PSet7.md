@@ -34,7 +34,7 @@ It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vec
 where $\norm{\vector x_i - x^j}_{\ell^2} \to 0$ and the second sum is finite because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} \definedas M < \infty$. $\qed$
 
 # Part b
-Let $H$ be a Hilbert space with inner product $\inner{\wait}{\wait}$ and induced norm $\norm{\wait}_H$.
+Let $H$ be a Hilbert space with inner product $\inner{\wait}{\wait}$ and induced norm $\norm{\wait}$.
 
 
 **Lemma**: 
@@ -50,5 +50,12 @@ $$
 
 We can compute the following:
 \begin{align*}
-\norm{x + y}^2 &=
+\norm{x + y}^2 &= \norm{x}^2 + \norm{y}^2 + 2~\Re \left( \inner{x}{y} \right) \\ \\
+\norm{x - y}^2 &= \norm{x}^2 + \norm{y}^2 - 2~\Re \left( \inner{x}{y} \right) \\ \\
+\norm{x + iy}^2 &= \norm{x}^2 + \norm{y}^2 + 2~\Re \left( \inner{x}{iy} \right) \\
+&= \norm{x}^2 + \norm{y}^2 + \Im(\inner{x}{y})
+\\ \\
+\norm{x - iy}^2 &= \norm{x}^2 + \norm{y}^2 - 2~\Re \left( \inner{x}{iy} \right) \\
+&= \norm{x}^2 + \norm{y}^2 + \Im(\inner{x}{y})
+\\ \\
 \end{align*}
