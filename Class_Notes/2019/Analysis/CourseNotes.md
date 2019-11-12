@@ -2835,3 +2835,45 @@ But these are two orthogonal terms, so we can apply Pythagoras to obtain
 **Theorem:**
 Let $e_n(x) \definedas e^{2\pi n x}$ for all $x\in [0, 1]$ and $n\in \ZZ$.
 Then $\theset{e_n}_{n\in \ZZ}$ is an *orthonormal basis* for $L^2([0, 1])$.
+
+> Note: Orthonormality is easily check, so the crux of the proof is showing it's a basis.
+
+> Note: Elements in $\span\theset{e_n}$ are referred to as *trigonometric polynomials*.
+
+Goal:
+We'll show that the span of the trigonometric polynomials are dense in $L^2([0, 1])$. 
+This will be a consequence of the following theorem:
+
+**Theorem (Periodic Analogue of the Weierstrass Approximation Theorem):**
+If $f\in C(\Pi)$ (where $\Pi$ is a torus) and $\varepsilon > 0$, then there exists a trigonometric polynomial $P$ such that $\abs{f(x) - P(x)} < \varepsilon$ for all $x\in \Pi$.
+
+> Note that this measures closes in the *uniform* norm. We can relate these by $\norm{f(x) -P(x)}_{L^2} \leq \norm{f(x) - P(x)}_{\sup}$, i.e. $\int_0^1 \abs{f(x) - P(x)}^2 \leq \sup_x \abs{f(x) - P(x)}^2$.
+
+*Proof:*
+Identify $\Pi = [- \frac ] 2, \frac 1 2)]$.
+Suppose there exists a sequence $\theset{Q_k}$ of trigonometric polynomials such that
+
+- $Q_k(x) \geq 0$ for all $x, k$,
+- $\int_{-1/2}^{1/2} Q_k(x) ~dx = 1$ for all $k$,
+- $\forall \delta>0$, we have $Q_k(x) \to 0$ uniformly on $\Pi\setminus[-\delta, \delta]$.
+
+> Note that these properties are similar to what we wanted from approximations to the identity.
+
+Define $P_k(x) = \int_{-1/2}^{1/2} f(y) Q_k(x - y) ~dy$ by convolving on the circle, then $P_k$ is also a trigonometric polynomial.
+
+We then have
+\[
+\begin{align*}
+I = \abs{
+P_k(x) - f(x)
+} \leq 
+\int_{-1/2}^{1/2} \abs{
+f(x-y) - f(x)
+}
+Q_k(y) ~dy \quad \text{by Property 2} 
+.\end{align*}
+\]
+
+We can now note that $f$ is continuous on a compact set, so it is uniformly continuous, and thus for $y$ small enough, we can find a $\delta$ such that $\abs{f(x-y) - f(x)} < \varepsilon/2$ for all $x$ in the $\delta$ ball.
+But this lets us break the integral into two pieces, $I = \int_{y \in B_\delta} \cdots ~dy + \int{y \in B_\delta^c} \cdots ~dy$,
+where the second term can be made smaller than $\varepsilon/2$ by taking $k$ large enough.
