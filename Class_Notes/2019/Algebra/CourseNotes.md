@@ -3232,3 +3232,6 @@ Then the orbits under this action are exactly $\theset{E_r \mid 0 \leq r \leq \m
 Note that 2 and 3 follow from 1, so we'll show 1.
 Let $A$ be an $m\times n$ matrix for some linear transformation $\phi: D^m \to D^n$ relative to some basis.
 Assume $\rank A = \dim \im \phi = r$.
+We can find a basis such that $\phi(u_i) = v_i$ for $1 \leq i \leq r$, and $\phi(u_i) = 0$ otherwise.
+Relative to this basis, $[\phi] = E_r$.
+But then $A$ is equivalent to $E_r$.
