@@ -111,3 +111,12 @@ Let $x_n \to x$ and $y_n \to y$, then
 \end{align*}
 
 where $\norm{y_n} \to M$ since $y_n \to y$ implies that $\norm{y_n}$ is bounded.
+
+# Part 1:
+
+Using the lemma, letting $\theset{e_n}$ be a sequence in $E^\perp$, so $y\in E \implies \inner{e_n}{y} = 0$. Since $H$ is complete, $e_n \to e \in H$; we can show that $e \in E^\perp$ by letting $y\in E$ be arbitrary and computing
+\begin{align*}
+\inner{e}{y} = \inner{\lim_n e_n}{y} = \lim_n \inner{e_n}{y} = \lim_n 0 = 0,
+\end{align*}
+
+so $e\in E^\perp$.
