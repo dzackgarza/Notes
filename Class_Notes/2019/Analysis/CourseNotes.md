@@ -2740,7 +2740,7 @@ So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
 
 
 ![Image](figures/2019-11-07-12:22.png)
-> Subspaces in hilbert spaces don't have to be closed, but perps always are!
+> Subspaces in Hilbert spaces don't have to be closed, but orthogonal complements are always closed! See homework problem.
 
 # Tuesday November 12
 
@@ -2749,3 +2749,15 @@ So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
 Let $H$ be a Hilbert space, then a subspace $M \subseteq H$ is *closed* if $x_n \to_H x$ with $\theset{x_n} \subset M$ implies that $x\in M$.
 
 > Note that finite-dimensional subspaces are *always* closed, so this is a purely infinite-dimensional phenomenon.
+
+Proposition:
+Given any *set* $M$, then $M^\perp \coloneqq \theset{x\in H \suchthat \inner{x}{y} = 0 ~\forall y\in M}$ is always a closed subspace.
+
+Proof:
+Homework problem.
+
+Lemma:
+Let $M$ be a closed subspace of $H$ and $x\in H$.
+Then
+
+1. There exists a unique $y \in M$ that is *closest* to $y$, i.e. $\norm{x - y} = \inf_{y' \in M}\norm{x - y'}$.
