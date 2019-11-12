@@ -2810,4 +2810,22 @@ Since $\norm{x - y_n} \to \norm{x - y} = \delta$, we have the existence of $x$.
 Part 2: Let $u\in M$, we want to show that $\inner{z}{u} = \inner{x-y}{u} = 0$.
 
 Wlog we can assume that $\inner{z}{u} \in \RR$, since $u$ satisfies this property iff any complex scalar multiple does.
+Let $f(t) = \inner{z + tu}^2$ where $t\in \RR$.
+Then $f(t) = \norm{z}^2 + zt\inner{z}{y} = t^2 \inner{u}^2$.
 
+We know that $t$ attains a minimum at $t=0$, since $z + tu = x - (y + u)$, but $y$ was the closest element to $x$ and thus the norm is minimized exactly when $z + tu = x - y \implies t=0$.
+Because of this fact, we know that $f'(0) = 0$.
+But by using Calculus, we can compute that $f'(0) = 2 \inner{z}{u}$, so $\inner{z}{u}$ must equal zero.
+
+Now to show uniqueness, let $y' \in M$ and suppose $y' \neq u$ but $\norm{x-y'} = \delta$.
+Then $x- y' = (x-y) + (y-y')$.
+But these are two orthogonal terms, so we can apply Pythagoras to obtain
+\[
+\begin{align*}
+\norm{x-y'}^2 = \norm{x-y}^2 + \norm{y-y'}^2 \\
+&\implies \delta = \delta + c \implies c = 0 \\
+&\implies \norm{y-y'} = 0 \implies y = y'
+.\end{align*}
+\]
+
+> Note: the statement is the important things here, less so this proof.
