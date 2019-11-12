@@ -91,3 +91,21 @@ Assuming now that $U$ is an isometry, by the polarization identity we can write
 $\qed$
 
 # Problem 2
+
+Lemma: The map $\inner{\wait}{\wait}: H \cross H \to \RR$ is continuous.
+
+Proof:
+
+Let $x_n \to x$ and $y_n \to y$, then
+\begin{align*}
+\abs{
+  \inner{x_n}{y_n} - \inner{x}{y}
+} &= \abs{
+  \inner{x_n}{y_n} - \inner{x}{y_n} + \inner{x}{y_n} - \inner{x}{y}
+} \\
+&= \abs{
+  \inner{x_n - x}{y_n} + \inner{x}{y_n - y} 
+} \\
+&\leq \norm{x_n - x} \norm{y_n} + \norm{x} \norm{y_n - y} \\
+& \to 0\cdot M + 
+\end{align*}
