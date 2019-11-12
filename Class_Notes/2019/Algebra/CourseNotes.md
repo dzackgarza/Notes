@@ -3203,4 +3203,6 @@ Recall that finding a basis of the row space involves doing Gaussian Elimination
 For a basis of the column space, you take the corresponding columns in the *original* matrix.
 Note that in this case, $\dim R(A) = \dim C(A)$, and in fact these are always equal.
 
-
+Theorem (Rank and Equivalence):
+Let $\phi: V\to W$ be a linear transformation and $A$ be the matrix of $\phi$ relative to $\beta_v, \beta_v'$.
+Then $\dim \im \pi = \dim \C(A) = \dim R(A)$.
