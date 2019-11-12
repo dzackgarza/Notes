@@ -3150,3 +3150,20 @@ Then
 
 Definition:
 We'll say that two matrices $A, B$ are *equivalent* iff there exist $P, Q$ invertible such that $PAQ = B$.
+
+# Tuesday November 12
+
+Recall from last time: if $V, W$ are free left $R\dash$modules of ranks $m,n$ respectively and bases $\beta_v, \beta_w$ respectively. 
+Then $\hom_R(V, W) \cong M_{m, n}(R)$.
+
+Definition:
+Two matrices $A, B \in M_{m, n}$ are *equivalent* if there exist invertible matrices $P \in M_m(R)$, $Q \in M_n(R)$ such $A = PBQ$.
+
+Definition:
+These matrices are *similar* iff there exists a single $P\in M_m(R)$ such that $A = P\inv B P$.
+
+Theorem:
+Let $T: V\to W$ be an $R\dash$module homomorphism. 
+Then $T$ has an $m\times n$ matrix relative to other bases for $V, W$ iff $B = P [T]_{\beta_v, \beta_w} Q$.
+
+
