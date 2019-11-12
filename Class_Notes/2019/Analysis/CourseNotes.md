@@ -2241,31 +2241,31 @@ $$
 
 Given $f\in L^1$, we defined the Fourier transform of $f$ by
 $$
-\hat f(\xi) = \int f(x) \exp(-2\pi i x\cdot \xi)~dx.
+\hat{f}(\xi) = \int f(x) \exp(-2\pi i x\cdot \xi)~dx.
 $$
 
 Some things we know about the Fourier transform:
 
-- $f\in L^1 \implies \hat f$ is bounded and uniformly continuous (from an old homework)
-- $\lim {\abs \xi \to \infty} \hat f(\xi) = 0$, i.e. the Riemann-Lebesgue lemma (see current homework), i.e. $\hat f$ vanishes at infinity.
+- $f\in L^1 \implies \hat{f}$ is bounded and uniformly continuous (from an old homework)
+- $\lim {\abs \xi \to \infty} \hat{f}(\xi) = 0$, i.e. the Riemann-Lebesgue lemma (see current homework), i.e. $\hat{f}$ vanishes at infinity.
 
-> Warning: $f \in L^1 \not\implies \hat f\in L^1$ necessarily!
+> Warning: $f \in L^1 \not\implies \hat{f}\in L^1$ necessarily!
 
 Theorem (Inversion Formula):
-If $f, \hat f \in L^1$ then
+If $f, \hat{f} \in L^1$ then
 $$
-f(x) = \int \hat f (x) \exp(2\pi i x\cdot \xi) ~d\xi \quad \text{for a.e. } x,
+f(x) = \int \hat{f} (x) \exp(2\pi i x\cdot \xi) ~d\xi \quad \text{for a.e. } x,
 $$
-i.e. $\hat{\hat f} = f(-x)$, and the Fourier transform is 4-periodic.
+i.e. $\hat{\hat{f}} = f(-x)$, and the Fourier transform is 4-periodic.
 
 > Note that there is an interpretation here as writing an arbitrary function as a (continuous) sum of *characters*, where we're considering $\RR^n$ with the action of translation. Then the exponentials are certain eigenfunctions.
 
 Corollaries:
 
-1. $f, \hat f \in L^1$ implies that $f$ itself is bounded, continuous, and vanishes at infinity. (Note that this is not true for arbitrary $L^1$ functions!)
-  We will in fact show that $\theset{f \suchthat f, \hat f \in L^1}$ is dense in $L^1$.
+1. $f, \hat{f} \in L^1$ implies that $f$ itself is bounded, continuous, and vanishes at infinity. (Note that this is not true for arbitrary $L^1$ functions!)
+  We will in fact show that $\theset{f \suchthat f, \hat{f} \in L^1}$ is dense in $L^1$.
 
-2. $f \in L^1$ and $\hat f = 0$ almost everywhere implies that $f = 0$ almost everywhere (using the Inversion formula)
+2. $f \in L^1$ and $\hat{f} = 0$ almost everywhere implies that $f = 0$ almost everywhere (using the Inversion formula)
 
 Proof of Inversion Formula:
 
@@ -2280,7 +2280,7 @@ which is patently not in $L^1(\RR^{2n})$.
 So we'll introduce a "convergence factor" $\exp(-\pi t^2 \abs{\xi}^2)$, which will make the integral swap result in something integrable, then take limits.
 
 Important example (HW): 
-If $g(x) = e^{-\pi \abs{x}^2}$ then $\hat g(\xi) = e^{-\pi \abs{\xi}^2}$. 
+If $g(x) = e^{-\pi \abs{x}^2}$ then $\hat{g}(\xi) = e^{-\pi \abs{\xi}^2}$. 
 Note $g_t(x) = \frac{1}{t^n} \exp(-\pi \abs{x}^2 / t^2)$ is an approximation to the identity, and $\int g_t = 1$.
 By a HW exercise, have have $\hat{g_t}(\xi) = \hat{g}(t\xi) = \exp(-\pi t^2 \abs{\xi}^2)$, which is exactly the convergence factor we're looking for.
 Moreover, $f \ast g_t \to f$ in $L^1$.
@@ -2290,22 +2290,22 @@ Moreover, $f \ast g_t \to f$ in $L^1$.
 Lemma (Multiplication Formula):
 If $f, g \in L^1$, then an easy application of Fubini-Tonelli yields
 $$
-\int f \hat g = \int \hat f g.
+\int f \hat{g} = \int \hat{f} g.
 $$
 
 We have
 \[
 \begin{align*}
-\int \hat f(\xi) \exp(-\pi t^2 \abs{\xi}^2) \exp(2\pi i x \cdot \xi) ~d\xi i \\
-&\coloneqq \int \hat f(\xi) \phi(\xi) \quad \quad (= f \ast g_t(x) \to_{L_1} f) \\
-&= \int f(y) \hat \phi(y)~dy \\
-&=_{DCT} \int \hat f(\xi) \exp(2\pi i x \cdot \xi) ~d\xi \quad \text{as } t\to 0
+\int \hat{f}(\xi) \exp(-\pi t^2 \abs{\xi}^2) \exp(2\pi i x \cdot \xi) ~d\xi i \\
+&\coloneqq \int \hat{f}(\xi) \phi(\xi) \quad \quad (= f \ast g_t(x) \to_{L_1} f) \\
+&= \int f(y) \hat{\phi}(y)~dy \\
+&=_{DCT} \int \hat{f}(\xi) \exp(2\pi i x \cdot \xi) ~d\xi \quad \text{as } t\to 0
 .\end{align*}
 \]
 
 where $\phi(\xi) = \exp(2\pi i x\cdot \xi) \hat{g_t}(\xi)$.
 
-> HW: Shows $\hat \phi(y) = \hat{\hat g_t}(y-x)$, and an easy consequence is that this is in fact $g_t(x - y)$.
+> HW: Shows $\hat{\phi}(y) = \hat{\hat{g}_t}(y-x)$, and an easy consequence is that this is in fact $g_t(x - y)$.
 
 But now one term is converging to $\int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ as $t\to 0$ pointwise, and $f\ast g_t(x) \to f$ as $t\to 0$ in $L_1$.
 Then there is a subsequence of the latter term converging to $f$ almost everywhere, and thus the pointwise limit in the first is equal to the $L^1$ limit in the second.
