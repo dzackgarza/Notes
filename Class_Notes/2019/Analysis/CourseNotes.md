@@ -2776,5 +2776,6 @@ Then $\inner{x}{z} = \innner {y}{z} + \inner{z}{z} \implies \norm{z}^2 = 0 \impl
 **Theorem:**
 If $M \subseteq H$ is a closed subspace, then $H = M \oplus M^\perp$, i.e. $x\in H \implies x  = y + z, y\in M, z\in M^\perp$, and $y,z$ are the unique elements in $M, M^\perp$ that are closest to $x$.
 
-Proof of Lemma:
-
+*Proof of Lemma:*
+Let $\delta \definedas \inf_{y' \in M} \norm{x - y'}$, which is a sequence of real numbers that is bounded below, and thus this infimum is attained.
+Then there is a sequence $\theset{y_n} \subseteq M$ such that $\norm{x - y_n} \to \delta$.
