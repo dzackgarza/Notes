@@ -3218,4 +3218,8 @@ But then $\im \phi$ corresponds to $R(A)$, so $\dim \im \phi = \dim R(A) = \dim 
 Let $1 \leq r \leq \min(m, n)$, and define $E_r$ to be the $m\times n$ matrix with the $r\times r$ identity matrix in the top-left block.
 
 **Theorem**:
+Let $A, B \in M_{m,n}(D)$. Then
 
+- $A$ is equivalent to $E_r$ iff $\rank A = r$ (i.e. $\exists P,Q$ such that $E_r = PAQ$)
+- $A$ is equivalent to $B$ iff $\rank A = \rank B$.
+- $E_r$ for $r = 0, 1, \cdots, \min(m,n)$ is a complete set of representatives for the relation of matrix equivalence on $M_{m, n}(D)$.
