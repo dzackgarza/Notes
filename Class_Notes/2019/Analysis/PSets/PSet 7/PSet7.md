@@ -68,5 +68,13 @@ and summing these all
 
 To conclude that a linear map $U$ is an isometry iff $U$ is unitary, if we assume $U$ is unitary then we can write
 $$
-\norm{x}^2 \definedas \inner{x}{x} = \inner{Ux}{Ux} \definedas \norm{Ux}^2
+\norm{x}^2 \definedas \inner{x}{x} = \inner{Ux}{Ux} \definedas \norm{Ux}^2.
 $$
+
+Assuming now that $U$ is an isometry, by the polarization identity we can write
+\begin{align*}
+\inner{Ux}{Uy} &= \frac 1 4 
+\left(
+  \norm{Ux + Uy}
+\right)
+\end{align*}
