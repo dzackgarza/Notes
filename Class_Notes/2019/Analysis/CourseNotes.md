@@ -2641,7 +2641,7 @@ x - \sum_{n=1}^N \inner{x}{u_n} u_n
 Remark (Characterization of Basis):
 TFAE?
 
-- $\span \theset{u_n} = H$, i.e. $u_n$ is a basis.
+- $\mathrm{span} \theset{u_n} = H$, i.e. $u_n$ is a basis.
 - $\sqrt{ \sum_n \abs{ \inner{x}{u_n}  }^2  } = \norm{x} \forall x\in H$, i.e. Parseval's identity
 - $\lim_{N\to\infty} \norm{ x - \sum_n^N \inner{x}{u_n}  } = 0$, i.e. the Fourier series converges in $H$.
 
@@ -2826,7 +2826,7 @@ Then $\theset{e_n}_{n\in \ZZ}$ is an *orthonormal basis* for $L^2([0, 1])$.
 
 > Note: Orthonormality is easily check, so the crux of the proof is showing it's a basis.
 
-> Note: Elements in $\span\theset{e_n}$ are referred to as *trigonometric polynomials*.
+> Note: Elements in $\mathrm{span}\theset{e_n}$ are referred to as *trigonometric polynomials*.
 
 Goal:
 We'll show that the span of the trigonometric polynomials are dense in $L^2([0, 1])$. 
