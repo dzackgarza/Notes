@@ -17,6 +17,10 @@ This is well-defined since $\norm{x^j - x^k}_{\ell^2} = \sum_i \abs{x^j_i - x^k_
 
 It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vector x_i}^2 < \infty$. To this end, we write
 
-\begin{\align*}
-\sum_i \abs{\vector x_i}^2
+\begin{align*}
+\sum_i \abs{\vector x_i}^2 &= \sum_i \abs{\vector x_i - x^j_i + x^j_i} \\
+&\leq  \sum_i \abs{\vector x_i - x^j_i} + \sum_i \abs{x^j_i} \\
+&< 0 + \infty,
 \end{align*}
+
+where
