@@ -2187,3 +2187,723 @@ But then
 
 # Thursday October 25?
 
+Todo
+
+# Tuesday October 29
+
+## Approximations of the Identity
+
+Theorem:
+Let $\phi \in L^1$ and $\int \phi = 1$.
+Then
+
+- If $f$ is bounded and uniformly continuous, then $f \ast \phi_t \to f$ uniformly where $\phi_t(x) \coloneqq \frac 1 {t^n} \phi(\frac x t)$
+- If $f\in L^1$, then $f \ast \phi_t \to f$ in $L_1$.
+
+
+Applications:
+
+1. Theorem:
+$C_c^\infty \subset L^1$ is dense, i.e. $\forall \varepsilon > 0$ and for all $f\in L^1$, there exists a $g\in C_c^\infty$ such that $\norm{f - g}_1 < g$.
+
+Proof: 
+Since $C-c$ is dense in $L^1$, it suffices to show the following:
+$$
+\forall \varepsilon > 0 \& h \in C_c,\quad \exists g\in C_c^\infty \suchthat \norm{h - g}_1 < \varepsilon.
+$$
+
+Let $\phi \in C_c^\infty$ be arbitrary where $\int \phi = 1$ (which exist!).
+Then $\norm{h\ast \phi_t - h}_1 < \varepsilon$ for $t$ small enough.
+It remains to show that $h\ast \phi_t \in C_c^\infty$.
+
+- This is smooth, because of theorem 3 regarding convolution applied infinitely many times.
+
+- It is compactly supported: since $h, \phi_t$ are compactly supported, so there is some large $N$ such that $\abs x > N \implies h(x) = \phi_t(x) = 0$.
+  Then if $\abs x > 2N$, then since $\abs x \leq \abs{x+y} + \abs{y}$, so either $\abs{x-y}\geq 2N$ or $\abs y \geq N$.
+  But then $h \ast \phi_t(x) = \int h(x-y)\phi_t(y)~dy$, and by the previous statement, at least one term in the integrand is zero, so the integral is zero and $h \ast \phi_t$ is also compact supported.
+
+2. Theorem (Weierstrass Approximation):
+
+A function can be *uniformly* approximated by a polynomial on any closed interval, i.e.
+$$
+\forall\varepsilon > 0,~ f\in C([a, b]),\quad \exists \text{ a polynomial } P \suchthat \abs{f(x) - P(x)} < \varepsilon \quad \forall x\in [a, b].
+$$
+
+Proof:
+Let $g$ be a continuous function on $[-M, M] \supseteq [a, b]$ such that $\restrictionof{g}{[a, b]} = f$.
+Let $\phi(x) = e^{-\pi x^2}$ be the standard Gaussian, then $g \ast \phi_t \uniformlyconverges g$ on $[-M, M ]$, and thus $g\ast \phi_t \uniformlyconverges f$ on $[a, b]$.
+The problem is that this is not a polynomial.
+
+We can let $\varepsilon > 0$, then there is a $t$ such that $\abs{g\ast \phi_t(x) - g(x)} < \varepsilon \forall x\in[-M, M]$.
+Note that $\phi_t(x) = \frac 1 t e^{-\pi x^2 / t^2}$, and Maclaurin expand to obtain $\frac 1 t \sum_{n=0}^\infty \frac{(-1)^n \pi^n x^{2n}}{t^{2n} n!}$.
+
+> Note that the Maclaurin series will converge uniformly on compact sets!
+
+By uniform convergence of this series, we can truncate the series to bound the difference by, say, $\varepsilon / \norm{g}_1$.
+Let $Q(x)$ be the truncated series.
+Then
+
+$$
+\abs{g\ast\phi_t(x) - g\ast Q(x)} \leq \abs{g\ast(\phi_t - Q)(x)} \leq \norm{g} \norm{p_t(x) - Q(x)}_\infty < \varepsilon,
+$$
+
+(where $\norm{f}_\infty = \sup_{x\in [a, b]} \abs{f(x)}$) and $g\ast Q(x)$ is a polynomial. $\qed$
+
+## Fourier Transform on $\RR^n$
+
+Given $f\in L^1$, we defined the Fourier transform of $f$ by
+$$
+\hat f(\xi) = \int f(x) \exp(-2\pi i x\cdot \xi)~dx.
+$$
+
+Some things we know about the Fourier transform:
+
+- $f\in L^1 \implies \hat f$ is bounded and uniformly continuous (from an old homework)
+- $\lim {\abs \xi \to \infty} \hat f(\xi) = 0$, i.e. the Riemann-Lebesgue lemma (see current homework), i.e. $\hat f$ vanishes at infinity.
+
+> Warning: $f \in L^1 \not\implies \hat f\in L^1$ necessarily!
+
+Theorem (Inversion Formula):
+If $f, \hat f \in L^1$ then
+$$
+f(x) = \int \hat f (x) \exp(2\pi i x\cdot \xi) ~d\xi \quad \text{for a.e. } x,
+$$
+i.e. $\hat{\hat f} = f(-x)$, and the Fourier transform is 4-periodic.
+
+> Note that there is an interpretation here as writing an arbitrary function as a (continuous) sum of *characters*, where we're considering $\RR^n$ with the action of translation. Then the exponentials are certain eigenfunctions.
+
+Corollaries:
+
+1. $f, \hat f \in L^1$ implies that $f$ itself is bounded, continuous, and vanishes at infinity. (Note that this is not true for arbitrary $L^1$ functions!)
+  We will in fact show that $\theset{f \suchthat f, \hat f \in L^1}$ is dense in $L^1$.
+
+2. $f \in L^1$ and $\hat f = 0$ almost everywhere implies that $f = 0$ almost everywhere (using the Inversion formula)
+
+Proof of Inversion Formula:
+
+> Note: Fubini-Tonelli won't work here *directly*.
+
+We'll have
+$$
+f(x) = \int\int f(y) \exp(-2\pi i y\cdot \xi) \exp(2\pi i x \cdot \xi) ~dy ~d\xi,
+$$
+
+which is patently not in $L^1(\RR^{2n})$.
+So we'll introduce a "convergence factor" $\exp(-\pi t^2 \abs{\xi}^2)$, which will make the integral swap result in something integrable, then take limits.
+
+Important example (HW): 
+If $g(x) = e^{-\pi \abs{x}^2}$ then $\hat g(\xi) = e^{-\pi \abs{\xi}^2}$. 
+Note $g_t(x) = \frac{1}{t^n} \exp(-\pi \abs{x}^2 / t^2)$ is an approximation to the identity, and $\int g_t = 1$.
+By a HW exercise, have have $\hat{g_t}(\xi) = \hat{g}(t\xi) = \exp(-\pi t^2 \abs{\xi}^2)$, which is exactly the convergence factor we're looking for.
+Moreover, $f \ast g_t \to f$ in $L^1$.
+
+> This says that the Fourier transform commutes with dilation in a certain way.
+
+Lemma (Multiplication Formula):
+If $f, g \in L^1$, then an easy application of Fubini-Tonelli yields
+$$
+\int f \hat g = \int \hat f g.
+$$
+
+We have
+\[
+\begin{align*}
+\int \hat f(\xi) \exp(-\pi t^2 \abs{\xi}^2) \exp(2\pi i x \cdot \xi) ~d\xi i \\
+&\coloneqq \int \hat f(\xi) \phi(\xi) \quad \quad (= f \ast g_t(x) \to_{L_1} f) \\
+&= \int f(y) \hat \phi(y)~dy \\
+&=_{DCT} \int \hat f(\xi) \exp(2\pi i x \cdot \xi) ~d\xi \quad \text{as } t\to 0
+.\end{align*}
+\]
+
+where $\phi(\xi) = \exp(2\pi i x\cdot \xi) \hat{g_t}(\xi)$.
+
+> HW: Shows $\hat \phi(y) = \hat{\hat g_t}(y-x)$, and an easy consequence is that this is in fact $g_t(x - y)$.
+
+But now one term is converging to $\int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ as $t\to 0$ pointwise, and $f\ast g_t(x) \to f$ as $t\to 0$ in $L_1$.
+Then there is a subsequence of the latter term converging to $f$ almost everywhere, and thus the pointwise limit in the first is equal to the $L^1$ limit in the second.
+
+We thus obtain $f(x) = \int \hat f(\xi) \exp(2\pi i x\cdot \xi) ~d\xi$ almost everywhere.
+
+# Thursday October 31
+
+Today: Some topics in PDEs.
+
+## The heat (diffusion) equation in the plane
+
+Situation: let $\vector \in \RR^2$ be a plate, and consider it evolving over time $t$. 
+
+![Image](figures/2019-10-31-11:29.png)\
+
+So we have pairs $(x, t) \in \RR^2 \cross \RR_{\geq 0}$.
+We have some initial distribution of heat on the plate, we want to know how it evolves over time.
+This is modeled by the equation
+\[
+\begin{align*}
+\dd{u}{t} = \frac{1}{4\pi} \left( \dd{^2 u}{x_1^2} + \dd{^2u}{x_2^2} \right) \coloneqq \frac{1}{4\pi} \Delta u\\
+u(x, 0) = f(x)
+.\end{align*}
+\]
+
+Consider a point and a small ball around that point. 
+Then heat flow at any point $x_0$ is given by $\nabla_x u(x_0, t)$. 
+Now think about the change in energy contained in this ball. 
+We should have
+\[
+\begin{align*}
+\dd{}{t} \int_{B} u(x, t) ~dx &= \text{Flux across boundary} \\
+&= \int_B \nabla \cdot \nabla_x u(x, t) ~dx \quad  \text{by Green's/Divergence theorem} \\
+&\coloneqq \int_B \Delta_x u(x, t) ~dx,
+.\end{align*}
+\]
+
+which is the heat equation.
+
+### Solution
+We can use Fourier transforms to help solve these. 
+Recall the identities:
+
+- $\widehat{\dd{}{x_j} f}(\xi) = 2\pi i \xi_j \widehat{f}(\xi)$.
+- $\widehat{\dd{^2}{x_j^2} f}(\xi) = (2\pi i \xi_j)^2\widehat{f}(\xi) = - 4\pi^2 \xi^2 \hat{f}(\xi)$.
+- $\widehat{\Delta f}(\xi) = 4\pi^2 \abs{\xi}^2 \hat{f}(\xi)$.
+
+If we take the Fourier transform in the $x$ variable, we get $\widehat{\dd{u}{t}} = \dd{}{t} \hat{u}(\xi, t) = -\pi \abs{\xi}^2 \hat{u}(\xi, t)$.
+Then the boundary conditions become $\hat{u}(\xi, 0) = \xi{f}(\xi)$.
+But note that this is now a first order ODE!
+
+This is easy to solve, we get $\hat u (\xi, t) = c(\xi) \exp(-\pi \abs{\xi}^2 t) = \hat f(\xi) \exp(-\pi \abs{\xi}^2 t)$.
+
+But then $\exp(-\pi \abs{\xi}^2 t) = \hat G (\sqrt t \xi)$ where $G(x) = \exp(-\pi \abs{x}^2)$.
+We now have $\hat u = \hat f \hat G = \widehat{f\ast G}$, but if the transforms are equal then the original functions are equal by the inversion formula.
+We thus obtain $u(x, t) = f \ast G_{\sqrt t}(x)$ where $G_{\sqrt t}(x) = \frac{1}{t^{n/2}} \exp(-\pi \abs{x}^2/ t)$.
+Note that $f \ast g \to f$ as $t \to 0$, which matches with the original boundary conditions, and $f \ast g \to 0$ as $t \to \infty$, which corresponds with heat dissipating.
+
+
+## Dirichlet problem in the upper half-plane
+
+Situation:
+
+![Image](figures/2019-10-31-11:28.png)\
+
+We want to solve
+\[
+\begin{align*}
+\Delta u = 0 \\
+u(x, 0) = f(x)
+.\end{align*}
+\]
+
+### Solution
+
+We'll use the same technique as the heat equation, and obtain
+$$
+\Delta u = 0 \implies -4\pi^2 \abs{\xi}^2 \hat u (\xi ,y) + \dd{^2}{y^2} \hat u (\xi, y) = 0
+$$
+
+But this is a homogeneous second order ODE, so we can look at the auxiliary polynomial. 
+If we have distinct roots, the general solution is $c_1 e^{r_1x} + c_2 e^{r_2 x}$.
+
+We thus obtain
+$$
+\hat u(\xi, y) = A(\xi) \exp(-2\pi \abs{\xi} y) + B(\xi)\exp(2\pi \abs{\xi} y)
+$$
+
+In particular, we can just take the first term, since the second term won't vanish at infinity.
+We again find that $A(\xi) = \hat f(\xi)$ by checking initial conditions, so $\hat u(\xi, y) = \hat f(\xi) \hat P(y\xi) = \widehat{f \ast P_y}$ where $P(x) = \frac{1}{\pi} \frac{1}{1+x^2}$, and
+$f\ast P_y \to f$ as $y\to 0$ as desired.
+.
+## Wave equation (Cauchy problem in $\RR^n$)
+
+Same situation as the heat equation, but now in $\RR^n \cross \RR_{\geq 0}$:
+\[
+\begin{align*}
+\dd{^2 u}{t^2} = \Delta_x u \\
+u(x, 0) = f(x) \\
+\dd{u}{t}(x, 0) = g(x)
+.\end{align*}
+\]
+
+This models something like plucking a string with initial shape $f$ and initial velocity $g$.
+
+> Note that this involves a *second* derivative!
+
+### Solution
+
+Using the same technique, we have
+
+\[
+\begin{align*}
+\dd{^2}{t^2} \hat u(\xi, t) &= -4\pi^2 \abs{\xi}^2 \hat u (\xi, t) \\
+\hat u(\xi, 0) &= \hat f(\xi) \\
+\dd{}{t} \hat u(\xi, 0) = \hat g(\xi).
+.\end{align*}
+\]
+
+This is again 2nd order linear homogeneous, except there is now a complex conjugate pair of roots, so we get
+$$
+\hat u(\xi, t) = \hat f(\xi) \cos(2\pi \abs \xi t) + \frac{\hat g(\xi) \sin(2\pi \abs \xi t)}{2\pi \abs \xi}.
+$$
+
+Note that the derivative of the first term is exactly the second term, so we have
+
+$$
+u(x, t) = f\ast \dd{}{t} W_t(x) + g\ast W_t(x), \quad \hat{W_t}(\xi) = \frac{\sin(2\pi \abs \xi t)}{2\pi \abs \xi}.
+$$
+
+From the homework problems, we know:
+
+- $n=1$ implies $\chi_{[-1, 1]} (x)$
+- $n = 2$ implies $\frac{1}{\sqrt{1 - \abs{x}^2}} \chi_{-1, 1}(x)$
+- $n=3$ implies we only get a measure, i.e. $w(x) = \sigma(x)$ where $\sigma$ is a surface measure on $S^2$.
+- For $n > 3$, $W$ is a "distribution".
+
+
+Note that there is a solution given by D'Alembert,
+$$
+u(x, t) = \frac{1}{2} ( f(x +t) + f(x - t) ) + \frac{1}{2} \int_{x-t}^{x+t} g(y) ~dy
+$$
+
+Note the similarities -- the first term is a rough average, the second term is a more continuous average.
+
+> Exercise: verify that these two solutions are actually equivalent.
+
+# Tuesday: November ?
+
+Today: Hilbert Spaces
+
+> See notes on the webpage.
+
+An *inner product* on a vector space satisfies
+
+- $\inner{ax + by}{z} = a \inner{x}{z} + b\inner{y}{z}$
+  i.e., for all fixed $z\in V$, the map $x \mapsto \inner{x}{z}$ is a *linear functional*.
+- $\inner{x}{y} = \overline{\inner{y}{x}}$
+- $\inner{x}{x} \in (0, \infty)$
+
+This induces a *norm*, $\norm{x} = \inner{x}{x}^{1/2}$.
+
+Proposition 1: 
+The map $x \mapsto \norm{x}$ does in fact define a norm.
+
+> The key to establishing this is the triangle inequality, since many of the other necessary properties fall out easily.
+
+
+We'll need the Schwarz inequality, i.e.
+$$
+\abs{\inner{x}{y}} \leq \norm{x} \norm{y},
+$$
+
+with equality iff $x = \lambda y$.
+
+We'll use the following computation often:
+
+\[
+\begin{align*}
+\norm{x + y}^2 
+&= \inner{x+y}{x+y} \\
+&= \norm{x}^2 + 2\mathrm{Re}\inner{x}{y} + \norm{y}^2 \\
+&\leq \norm{x}^2 + \abs{\inner{x}{y}} + \norm{y}^2 \\
+&\leq \norm{x}^2 + 2\norm{x}\norm{y} + \norm{y}^2 \quad\quad\text{by Schwarz} \\
+&= (\norm{x} + \norm{y})^2
+.\end{align*}
+\]
+
+Definition:
+An inner product space that is *complete* with respect to $\norm{\wait}$ induced from its inner product is a *Hilbert space*.
+
+> Recall that a Banach space is a complete normed space.
+
+Examples:
+
+- $\CC^n$ with $\inner{x}{y} = \sum x_j \overline{y_j}$
+- $\ell^2(\NN)$ with $\inner{x}{y} = \sum^\infty x_j y_j$ with $\sum \abs{x_j} < \infty$ and similarly for $y$.
+  Note that this is finite by AMGM, since $\sum x_i y_i \leq \frac 1 2 (\sum x_i + \sum y_i) < \infty$ by assumption.
+- $L^2(\RR^n)$ with $\inner{f}{g} = \int f \overline{g}$.
+  This is also finite because $\abs{f\overline g} \leq \frac 1 2 (\int f + \int g)$.
+
+Proof of Schwarz Inequality:
+
+- If $x= \lambda y$ for some $\lambda \in \CC$, we have equality since $\inner{x}{y} = \inner{\lambda y}{y} = \abs{\lambda} \norm{y}^2 = \norm{x}\norm{y}$.
+- So we can assume $x-\lambda y \neq 0$ for *any* $\lambda \in CC$, so $\inner{x-\lambda y} {x-\lambda y} > 0$.
+  This equals $\norm{x}^2 - 2\overline{\lambda} \mathrm{Re}\inner{x}{y} + \abs{\lambda^2} \norm{y}$.
+  Now let $\lambda = tu$ where $t\in \RR$ and $u =\inner{x}{y} / \abs{\inner{x}{y}}$.
+  Then we get $0 < \norm{x}^2 - 2t\abs{\inner{x}{y}} + t^2 \norm{y}^2$
+  But this is quadratic in $t$ and doesn't have a real root, so its discriminant must be negative.
+  Thus $4\abs{\inner{x}{y}}^2 - 4\norm{y}^2 \norm{x}^2$, which yields Cauchy-Schwarz.
+
+Application of the Schwarz Inequality:
+
+If $x_n \to x$ in $V$, i.e. $\norm{x_n - x} \to 0$, and similarly $y_n \to y$, we have $\inner{x_n}{y_n} \to \inner{x}{y}$ in $\CC$.
+
+Proof:
+
+We have
+\[
+\begin{align*}
+\abs{ \inner{x_n}{y_n} - \inner{x}{y} } &= \abs{ \inner{x_n - x}{y} + \inner{x}{y_n - y} } \\
+&\leq \abs{\inner{x_n - x}{y}} + \abs{\inner{x}{y_n - y}} \\
+&\leq \norm{x_n - x}\norm{y} + \norm{x} \norm{y_n - y}\quad\quad\text{by Schwarz} \\
+& \to 0
+.\end{align*}
+\]
+
+> Exercise: Show $\norm{y_n - y} \to 0$ iff $\norm{y_n} \to \norm{y}$.
+
+Proposition (Parallelogram Law):
+
+Let $H$ be an inner product space, then 
+$$
+\norm{x+y}^2 + \norm{x-y}^2 = 2(\norm{x}^2 + \norm{y}^2)
+$$
+
+> Exercise: Prove using parallelogram diagram.
+
+Proof: Use $\norm{x \pm y}^2 + \norm{x}^2 \pm 2\mathrm{Re}\inner{x}{y} + \norm{y}^2$, so just add and the cross-terms will cancel.
+
+Proposition (Pythagorean):
+$$
+\inner{x}{y} = 0 \implies \norm{x+y}^2 = \norm{x}^2 + \norm{y}^2.
+$$
+
+In this situation, we say $x,y$ are orthogonal.
+
+Corollary: 
+If $\theset{x_i}$ are all pairwise orthogonal, then $\norm{\sum x_i}^2 = \sum \norm{x_i}^2$.
+
+Orthonormal Sets:
+
+A countable collection $\theset{u_n}$ is *orthonormal* iff 
+
+1. $\inner{u_j}{u_k} = 0$ for $j\neq k$, and
+2. $\inner{u_j}{u_j} = \norma{u_j}^2 = 1$ for all $j$.
+
+> Note: we only consider countable collections; a *separable* Hilbert space always has such a basis. (?)
+
+Definition:
+We say $\theset{u_n}$ is an orthonormal *basis* for $H$ if $\span \theset{u_n}$ (i.e. *finite* linear combinations of $u_n$) is dense in $H$.
+
+Theorem:
+Let $\theset{u_n}$ be a countable orthonormal basis of $H$.
+Then for any $x\in H$, the *best approximation* to $x$ by a sum $\sum_{n=1}^N a_n u_n$ when $a_n = \inner{x}{u_n}$.
+
+> Note: these $a_n$ will be Fourier coefficients later!
+
+Proof:
+\[
+\begin{align*}
+\norm{x - \sum a_n u_n}^2 
+&= \norm{x}^2 - 2\mathrm{Re} \sum \inner{x}{u_n}a_n + \sum \abs{a_n}^2 \\
+&= \norm{x}^2 - \sum \abs{\inner{x}{u_n}}^2 + \sum\left( \abs{\inner{x}{u_n}}^2 - 2\mathrm{Re}\inner{x}{u_n}a_n + \abs{a_n}^2  \right) \\
+&= \norm{x}^2 - \sum \abs{\inner{x}{u_n}}^2 + \abs{\inner{x}{u_n} - a_n  }^2 
+&\geq 0
+,\end{align*}
+\]
+where equality is attained iff $a_n = \inner{x}{u_n} = a_n$.
+So this is the best approximation.
+
+> Hint: the pieces that are equalities are somehow easier to show -- they necessarily involve direct computations.
+
+But then
+$$
+0 \leq \norm{x - \sum \inner{x}{u_n} u_n}^2 = \norm{x}^2 - \sum \abs{\inner{x}{u_n}}^2,
+$$
+
+so $\sum \abs{\inner{x}{u_n}}^2 \leq \norm{x}^2$ holds for every $N$, and thus for the infinite sum, which is **Bessel's inequality**.
+
+> If this is an equality, then this is exactly Parseval's theorem.
+
+
+**Theorem (Riesz-Fischer):**
+
+The map $x \mapsvia{\hat} \inner{x}{u_n} \coloneqq \hat x(n)$ maps $H$ onto $\ell^2$.
+If $\theset{u_n}^\infty$ is orthonormal in $H$ and $\theset{a_n}^\infty \in \ell^2(\NN)$, then there exists an $x\in H$ such that $\inner{x}{u_n} = a_n$ for all $n\in N$.
+Moreover, $x$ can be chosen such that $\norm{x} = \sqrt{\sum \abs{a_n}^2}$.
+
+> Note: this is not a bijection, there may not be a unique $x$, and $a_n$ are referred to as the Fourier coefficient.
+> Also note that if in fact $a_n = 0$ for all $n$ implies $x=0$, the set $\theset{u_n}$ is said to be *complete*. 
+> This turns out to be equivalent to $\theset{u_n}$ being a basis, which is equivalent to the convergence of Fourier series, which is also equivalent to something else.
+
+
+# Thursday November 7 
+
+Let $H$ be a hilbert space, then we have 
+
+**Theorem (Bessel's inequality)**:
+
+If $\theset{u_n}$ is orthonormal in $H$, then for any $x \in H$ we have equation 0
+$$
+\sum_n \abs{\inner{x}{u_n}}^2 \leq \norm{x}^2,
+$$
+
+or equivalently $\theset{ \inner{x}{u_n} } \in \ell^2 \NN$.
+
+Proof:
+
+We have (equation 1)
+\[
+\begin{align*}
+0 \leq \norm{
+x - \sum_{n=1}^N \inner{x}{u_n} u_n
+}^2 =
+\norm{x}^2 - \sum_{n=1}^N \abs{
+\inner{x}{u_n}
+}^2 \forall N
+.\end{align*}
+\]
+
+Remark (Characterization of Basis):
+TFAE?
+
+- $\span \theset{u_n} = H$, i.e. $u_n$ is a basis.
+- $\sqrt{ \sum_n \abs{ \inner{x}{u_n}  }^2  } = \norm{x} \forall x\in H$, i.e. Parseval's identity
+- $\lim_{N\to\infty} \norm{ x - \sum_n^N \inner{x}{u_n}  } = 0$, i.e. the Fourier series converges in $H$.
+
+Recall the Riesz-Fischer theorem: if $\theset u_n$ is orthonormal in $H$ and $\theset a_n \in \ell^2 \NN$, then $\exists x\in H$ such that $a_n = \inner{x}{u_n}$ and $\norm{x}^2 = \sum_n \abs{a_n}^2$.
+Moreover, the map $x \mapsto \hat x(u) \coloneqq \inner{x, u_n}$ maps $H$ onto $\ell^2 \NN$ surjectively.
+
+> Remark: This $x$ is only unique if $\theset u_n$ is *complete*, i.e. $\inner{y}{u_n} = 0 \forall n \implies y = 0$.
+
+Proof;
+Let $S_N \coloneqq \sum_{n=1}^N a_n u_n$. 
+Then $S_N$ is Cauchy, so
+\[
+\begin{align*}
+\norm{S_N - S_M}^2 &= \norm{ \sum_{n=M+1}^N a_n u_n }^2 \\
+&= \sum_{n=M+1}^N  \norm{a_n u_n}^2 \quad\quad\text{by Pythagoras since the $u_n$ are orthogonal} \\
+&= \sum_{n=M+1}^n \abs{a_n} \to 0
+,\end{align*}
+\]
+
+since $\sum \abs{a_n} < \infty$ implies that the sum is Cauchy.
+Since $H$ is complete, $S_N \to x$ for some $x\in H$.
+We now need to argue that $a_n = \inner{x}{u_n}$
+
+If $N$ is large enough, in particular $N \geq n$, then we have the identity $\abs{\inner{x}{u_n} - a_n} = \abs{\inner{x}{u_n} - \inner{S_N}{u_n}  } = \abs{ \inner{x - S_N}{u_n} } \leq \norm{x - S_N} \to 0$.
+
+> Note: should be able to translate this to statements about epsilons almost immediately!
+
+But then equation 1 holds in the limit as $N \to \infty$, which establishes equation 0. $\qed$
+
+Proof of characterization of basis:
+
+$1 \implies 2$: 
+Let $\varepsilon > 0, x\in H, \inner{x}{u_n} = 0$ for all $n$. We will attempt to show that $\norm{x} < \varepsilon$, so $x = 0$.
+
+
+
+By (1), there is a $y\in \mathrm{span}\theset{u_n}$ such that $\norm{x - y}< \varepsilon$.
+But then $\inner{x}{y} = 0$, so $\norm{x}^2 = \inner{x}{x} = \inner{x}{x-y} \leq \norm{x}{x-y} \leq \varepsilon \norm {x} \to 0$. $\qed$
+
+> Note: $\inner{x}{x} = \inner{x}{x} - \inner{x}{y} = \inner{x}{x-y}$ since $\inner{x}{y} = 0$.
+
+
+$2 \implies 3$: 
+By Bessel, we have $\theset{\inner{x}{u_n}  } \in \ell^2 \NN$ (and we know that its norm is bounded by $\norm{x}$).
+By Riesz-Fischer, there exists a $y\in H$ such that $\inner{y}{u_n} = \inner{x}{u_n}$ and $\norm{y} = \sqrt{ \sum \abs{\inner{x}{u_n}}^2  }$.
+By completeness, we get $x=y$. $\qed$
+
+Existence of Bases
+
+- Every Hilbert space has an orthonormal basis (possibly uncountable)
+- $H$ *separable* Hilbert space $\iff$ $H$ has a *countable* basis (separable = countable dense subset).
+
+
+Some examples of orthonormal bases:
+
+- $\ell^2 \NN$: $u_n(k) = 1 \iff n=k$ and $0$ otherwise, i.e. $\vector e_i$.
+- $L^2([0,1])$: $e_n(x) \coloneqq e^{2\pi i n x}$.
+  Normed: by Cauchy-Schwarz, but need to show it's complete. Can use the fact that $L^1$ is complete.
+  Note that $\inner{f}{e_n} = \int_0^1 f(x) e^{-2\pi i n x} ~dx$, which is exactly the Fourier coefficient.
+
+Sketch proof that $L^2([0, 1])$ is complete:
+
+Note that $L^2([0, 1]) \subseteq L^1([0, 1])$, since $f\in L^2 \implies \int_0^1 \abs{f} 1 ~dx \leq \sqrt{\int_0^1 \abs{f}^2}$ by C-S. 
+This also shows that $\norm{f}_1 \leq \norm{f}_2$.
+
+Let $f_n$ be Cauchy in $L_2$.
+Then $f_n$ is Cauchy in $L^1$, and since $L^1$ is complete, there is a subsequence converging to $f$ almost everywhere.
+
+Now $\int \liminf_k \abs{f_{n_j} - f_{n_k}}^2 \leq \liminf \int \abs{f_{n_j} - f_{n_k}}$ by Fatou.
+But the LHS goes to $\int \abs{f_{n_j} - f}$ and the RHS is $\norm{f_{n_j} - f_{n_k}} \to 0$, so less than $\varepsilon$ if $j$ is big enough.
+So $f_{n_j} \to f$ in $L^2$ as $j\to\infty$, and thus $f_n \to f\in L^2$ as $n\to\infty$.
+
+Unitary Maps:
+
+Let $U: H_1 \to H_2$ such that $\inner{Ux}{Uy} = \inner{x}{y}$ (i.e. $U$ preserves angles).
+Then $\norm{Ux} = \norm{x}$, i.e. $U$ is an isometry.
+If $U$ is surjective, this implication can be reversed.
+
+For example, taking the Fourier transform yields $\sum \abs{\hat f(u)}^2 = \norm{f}_2^2 = \int\abs{f}^2$, and $\sum \hat f(u) \overline{\hat g(u)} = \int f \overline{g}$.
+
+A corollary of Riesz-Fischer:
+If $\theset u-N$ is an orthonormal basis in $H$, then the map $x \mapsto \hat x(u) \coloneqq \inner{x}{u_n}$ is a *unitary* map from $H$ to $\ell^2$.
+So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
+
+
+![Image](figures/2019-11-07-12:22.png)
+> Subspaces in Hilbert spaces don't have to be closed, but orthogonal complements are always closed! See homework problem.
+
+# Tuesday November 12
+
+## Closed Subspaces and Orthogonal Projections
+
+Let $H$ be a Hilbert space, then a subspace $M \subseteq H$ is *closed* if $x_n \to_H x$ with $\theset{x_n} \subset M$ implies that $x\in M$.
+
+> Note that finite-dimensional subspaces are *always* closed, so this is a purely infinite-dimensional phenomenon.
+
+**Proposition:**
+Given any *set* $M$, then $M^\perp \coloneqq \theset{x\in H \suchthat \inner{x}{y} = 0 ~\forall y\in M}$ is always a closed subspace.
+
+*Proof:*
+Homework problem.
+
+**Lemma:**
+Let $M$ be a closed subspace of $H$ and $x\in H$.
+Then
+
+1. There exists a unique $y \in M$ that is *closest* to $y$, i.e. $\norm{x - y} = \inf_{y' \in M}\norm{x - y'}$.
+2. Defining $z \coloneqq x-y$, then $z\in M^\perp$.
+
+**Consequence 1:**
+If $M \subseteq H$ is a closed subspace, then $(M^\perp)^\perp = M$.
+
+> Note that $M \subseteq M^{\perp \perp}$ by definition. (Easy to check)
+
+To show that $M^{\perp \perp} \subseteq M$, let $x\in M^{\perp \perp}$, then $x = y + z$ where $y\in M$ and $z\in M^\perp$.
+Then $\inner{x}{z} = \innner {y}{z} + \inner{z}{z} \implies \norm{z}^2 = 0 \implies z = 0 \implies x=y$.
+
+**Consequence 2:**
+
+**Theorem:**
+If $M \subseteq H$ is a closed subspace, then $H = M \oplus M^\perp$, i.e. $x\in H \implies x  = y + z, y\in M, z\in M^\perp$, and $y,z$ are the unique elements in $M, M^\perp$ that are closest to $x$.
+
+*Proof of Lemma:*
+
+Part 1: Let $\delta \definedas \inf_{y' \in M} \norm{x - y'}$, which is a sequence of real numbers that is bounded below, and thus this infimum is attained.
+Then there is a sequence $\theset{y_n} \subseteq M$ such that $\norm{x - y_n} \to \delta$.
+
+For the following parallelogram:
+
+![Image](figures/2019-11-12-11:25.png)
+
+Then by the parallelogram law, we  have 
+$$
+2(\norm{y_n - x}^2 + \norm{y_m - x}^2) = \norm{y_n - y_m}^2 + \norm{y_n + y_m - 2x}^2.
+$$
+
+which yields
+\[
+\begin{align*}
+\norm{y_n - y_m}^2 
+&= 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\norma{\frac 1 2 (y_n + y_m) - x}^2 \\
+&\leq 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\delta^2 \to 0,
+\end{align*}
+\]
+
+since $\norm{y_n - x}_H \to 0$ since $y_n \to_H x$.
+
+It follows that $\theset{y_n}$ is Cauchy in $H$, so $y_n \to_H y \in H$. 
+But since the $y_n$ were in $M$ and $M$ is closed, we in fact have $y\in M$.
+Since $\norm{x - y_n} \to \norm{x - y} = \delta$, we have the existence of $x$.
+
+> We'll establish uniqueness after part 2.
+
+Part 2: Let $u\in M$, we want to show that $\inner{z}{u} = \inner{x-y}{u} = 0$.
+
+Wlog we can assume that $\inner{z}{u} \in \RR$, since $u$ satisfies this property iff any complex scalar multiple does.
+Let $f(t) = \inner{z + tu}^2$ where $t\in \RR$.
+Then $f(t) = \norm{z}^2 + zt\inner{z}{y} = t^2 \inner{u}^2$.
+
+We know that $t$ attains a minimum at $t=0$, since $z + tu = x - (y + u)$, but $y$ was the closest element to $x$ and thus the norm is minimized exactly when $z + tu = x - y \implies t=0$.
+Because of this fact, we know that $f'(0) = 0$.
+But by using Calculus, we can compute that $f'(0) = 2 \inner{z}{u}$, so $\inner{z}{u}$ must equal zero.
+
+Now to show uniqueness, let $y' \in M$ and suppose $y' \neq u$ but $\norm{x-y'} = \delta$.
+Then $x- y' = (x-y) + (y-y')$.
+But these are two orthogonal terms, so we can apply Pythagoras to obtain
+\[
+\begin{align*}
+\norm{x-y'}^2 = \norm{x-y}^2 + \norm{y-y'}^2 \\
+&\implies \delta = \delta + c \implies c = 0 \\
+&\implies \norm{y-y'} = 0 \implies y = y'
+.\end{align*}
+\]
+
+> Note: the statement is the important things here, less so this proof.
+
+## Trigonometric Series
+
+**Theorem:**
+Let $e_n(x) \definedas e^{2\pi n x}$ for all $x\in [0, 1]$ and $n\in \ZZ$.
+Then $\theset{e_n}_{n\in \ZZ}$ is an *orthonormal basis* for $L^2([0, 1])$.
+
+> Note: Orthonormality is easily check, so the crux of the proof is showing it's a basis.
+
+> Note: Elements in $\span\theset{e_n}$ are referred to as *trigonometric polynomials*.
+
+Goal:
+We'll show that the span of the trigonometric polynomials are dense in $L^2([0, 1])$. 
+This will be a consequence of the following theorem:
+
+**Theorem (Periodic Analogue of the Weierstrass Approximation Theorem):**
+If $f\in C(\Pi)$ (where $\Pi$ is a torus) and $\varepsilon > 0$, then there exists a trigonometric polynomial $P$ such that $\abs{f(x) - P(x)} < \varepsilon$ for all $x\in \Pi$.
+
+> Note that this measures closes in the *uniform* norm. We can relate these by $\norm{f(x) -P(x)}_{L^2} \leq \norm{f(x) - P(x)}_{\sup}$, i.e. $\int_0^1 \abs{f(x) - P(x)}^2 \leq \sup_x \abs{f(x) - P(x)}^2$.
+
+*Proof:*
+Identify $\Pi = [- \frac ] 2, \frac 1 2)]$.
+Suppose there exists a sequence $\theset{Q_k}$ of trigonometric polynomials such that
+
+- $Q_k(x) \geq 0$ for all $x, k$,
+- $\int_{-1/2}^{1/2} Q_k(x) ~dx = 1$ for all $k$,
+- $\forall \delta>0$, we have $Q_k(x) \to 0$ uniformly on $\Pi\setminus[-\delta, \delta]$.
+
+> Note that these properties are similar to what we wanted from approximations to the identity.
+
+Define $P_k(x) = \int_{-1/2}^{1/2} f(y) Q_k(x - y) ~dy$ by convolving on the circle, then $P_k$ is also a trigonometric polynomial.
+
+We then have
+\[
+\begin{align*}
+I = \abs{
+P_k(x) - f(x)
+} \leq 
+\int_{-1/2}^{1/2} \abs{
+f(x-y) - f(x)
+}
+Q_k(y) ~dy \quad \text{by Property 2} 
+.\end{align*}
+\]
+
+We can now note that $f$ is continuous on a compact set, so it is uniformly continuous, and thus for $y$ small enough, we can find a $\delta$ such that $\abs{f(x-y) - f(x)} < \varepsilon/2$ for all $x$ in the $\delta$ ball.
+But this lets us break the integral into two pieces, $I = \int_{y \in B_\delta} \cdots ~dy + \int{y \in B_\delta^c} \cdots ~dy$,
+where the second term can be made smaller than $\varepsilon/2$ by taking $k$ large enough.
+
+Constructing $Q_k$:
+
+Define
+$$
+Q_k(x) = c_k \left( \frac {1 + \cos(2\pi x)}{2} \right)^k,
+$$
+
+where $c_k$ is chosen to normalize the integral to 1 to satisfy property 2. 
+Property 1 is clear, so we just need to show 3,
+
+Since cosine is decreasing on $[\delta, \frac 1 2]$, so $Q_k(x) \leq Q_k(\delta) = c_k \left( \frac{1 + \cos(2\pi \delta)}{2} \right)^k$.
+Note that the numerator is less than 2, so the entire term is a constant that is less than 1 being raised to the $k$ power. 
+So this goes to zero exponentially, the question now depends on the growth of $c_k$.
+It turns out that $c_k \leq (k+1)\pi$, so it only grows linearly.
+So the whole quantity indeed goes to zero.
+
+We can now write
+\[
+\begin{align*}
+1 
+&= 2c_k \int_0^{1/2} \left( \frac{1 + \cos(2\pi x)}{2} \right)^k dx \\
+&= 2c_k \int_0^{1/2} \left( \frac{1 + \cos(2\pi x)}{2} \right)^k \sin(2\pi x) dx \\
+&= \frac{2c_k}{\pi} \int_0^1 u^k ~du = \frac{2c_k}{\pi(k+1)}$,
+.\end{align*}
+\]
+
+> Note: this is a nice proof!
+
+> Note: Question: when is a function equal to its Fourier series? We have $L^2$ convergence, but when do we get pointwise? Theorem from the 60s: any $L^2$ function (in particular continuous functions) converge almost everywhere.
