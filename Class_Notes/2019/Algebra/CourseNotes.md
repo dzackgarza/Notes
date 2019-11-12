@@ -3215,3 +3215,7 @@ But then $\im \phi$ corresponds to $R(A)$, so $\dim \im \phi = \dim R(A) = \dim 
 
 ## Canonical Forms
 
+Let $1 \leq r \leq \min(m, n)$, and define $E_r$ to be the $m\times n$ matrix with the $r\times r$ identity matrix in the top-left block.
+
+**Theorem**:
+
