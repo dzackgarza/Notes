@@ -2759,7 +2759,7 @@ If $M \subseteq H$ is a closed subspace, then $(M^\perp)^\perp = M$.
 > Note that $M \subseteq M^{\perp \perp}$ by definition. (Easy to check)
 
 To show that $M^{\perp \perp} \subseteq M$, let $x\in M^{\perp \perp}$, then $x = y + z$ where $y\in M$ and $z\in M^\perp$.
-Then $\inner{x}{z} = \innner{y}{z} + \inner{z}{z} \implies \norm{z}^2 = 0 \implies z = 0 \implies x=y$.
+Then $\inner{x}{z} = \inner{y}{z} + \inner{z}{z} \implies \norm{z}^2 = 0 \implies z = 0 \implies x=y$.
 
 **Consequence 2:**
 
