@@ -2861,4 +2861,35 @@ Q_k(y) ~dy \quad \text{by Property 2}
 .\end{align*}
 \]
 
+We can now note that $f$ is continuous on a compact set, so it is uniformly continuous, and thus for $y$ small enough, we can find a $\delta$ such that $\abs{f(x-y) - f(x)} < \varepsilon/2$ for all $x$ in the $\delta$ ball.
+But this lets us break the integral into two pieces, $I = \int_{y \in B_\delta} \cdots ~dy + \int{y \in B_\delta^c} \cdots ~dy$,
+where the second term can be made smaller than $\varepsilon/2$ by taking $k$ large enough.
 
+Constructing $Q_k$:
+
+Define
+$$
+Q_k(x) = c_k \left( \frac {1 + \cos(2\pi x)}{2} \right)^k,
+$$
+
+where $c_k$ is chosen to normalize the integral to 1 to satisfy property 2. 
+Property 1 is clear, so we just need to show 3,
+
+Since cosine is decreasing on $[\delta, \frac 1 2]$, so $Q_k(x) \leq Q_k(\delta) = c_k \left( \frac{1 + \cos(2\pi \delta)}{2} \right)^k$.
+Note that the numerator is less than 2, so the entire term is a constant that is less than 1 being raised to the $k$ power. 
+So this goes to zero exponentially, the question now depends on the growth of $c_k$.
+It turns out that $c_k \leq (k+1)\pi$, so it only grows linearly.
+So the whole quantity indeed goes to zero.
+
+We can now write
+\[
+\begin{align*}
+1 &= 2c_k \int_0^{1/2} \left( \frac{1 + \cos(2\pi x)}{2} \right)^k dx \\
+&= 2c_k \int_0^{1/2} \left( \frac{1 + \cos(2\pi x)}{2} \right)^k \sin(2\pi x) dx \\
+&= \frac{2c_k}{\pi} \int_0^1 u^k ~du = \frac{2c_k}{\pi(k+1)}$,
+.\end{align*}
+\]
+
+> Note: this is a nice proof!
+
+> Note: Question: when is a function equal to its Fourier series? We have $L^2$ convergence, but when do we get pointwise? Theorem from the 60s: any $L^2$ function (in particular continuous functions) converge almost everywhere.
