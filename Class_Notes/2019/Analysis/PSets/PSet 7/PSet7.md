@@ -28,9 +28,20 @@ It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vec
 \begin{align*}
 \norm{\vector x}_{\ell^2} &= \norm{\vector x - x^j + x^j}_{\ell^2} \\
 &\leq \norm{\vector x - x^j}_{\ell^2} + \norm{x^j}_{\ell^2}\\
-&< 0 + \infty,
+& \to M < \infty,
 \end{align*}
 
-where $\norm{\vector x_i - x^j}_{\ell^2} \to 0$ and the second sum is finite because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} < \infty$. $\qed$
+where $\norm{\vector x_i - x^j}_{\ell^2} \to 0$ and the second sum is finite because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} \definedas M < \infty$. $\qed$
 
 # Part b
+
+**Lemma**: 
+For any complex number $z$, we have
+$$
+\Im(z) = \Re(-iz),
+$$
+
+and as a corollary, we have
+$$
+\Re(\inner{x}{iy}) =  \Re(-i\inner{x}{y}) = \Im(\inner{x}{y}).
+$$
