@@ -3201,5 +3201,4 @@ Let $A\in M_{m, n}(D)$. Then define
 
 Recall that finding a basis of the row space involves doing Gaussian Elimination and taking the rows which have nonzero pivots. 
 For a basis of the column space, you take the corresponding columns in the *original* matrix.
-
-
+Note that in this case, $\dim R(A) = \dim C(A)$.
