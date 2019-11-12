@@ -2832,4 +2832,6 @@ But these are two orthogonal terms, so we can apply Pythagoras to obtain
 
 ## Trigonometric Series
 
-
+**Theorem:**
+Let $e_n(x) \definedas e^{2\pi n x}$ for all $x\in [0, 1]$ and $n\in \ZZ$.
+Then $\theset{e_n}_{n\in \ZZ}$ is an *orthonormal basis* for $L^2([0, 1])$.
