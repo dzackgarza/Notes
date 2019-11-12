@@ -66,4 +66,7 @@ and summing these all
 &= 4 \inner{x}{y}.
 \end{align*}
 
-$\qed$
+To conclude that a linear map $U$ is an isometry iff $U$ is unitary, if we assume $U$ is unitary then we can write
+$$
+\norm{x}^2 \definedas \inner{x}{x} = \inner{Ux}{Ux} \definedas \norm{Ux}^2
+$$
