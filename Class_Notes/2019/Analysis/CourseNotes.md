@@ -2851,3 +2851,14 @@ Suppose there exists a sequence $\theset{Q_k}$ of trigonometric polynomials such
 > Note that these properties are similar to what we wanted from approximations to the identity.
 
 Define $P_k(x) = \int_{-1/2}^{1/2} f(y) Q_k(x - y) ~dy$ by convolving on the circle, then $P_k$ is also a trigonometric polynomial.
+
+We then have
+\[
+\begin{align*}
+I = \abs{ P_k(x) - f(x) } \leq 
+\int_{-1/2}^{1/2} \abs{ f(x-y) - f(x) }
+Q_k(y) ~dy \quad \text{by Property 2} 
+.\end{align*}
+\]
+
+
