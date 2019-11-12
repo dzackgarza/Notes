@@ -2567,7 +2567,7 @@ A countable collection $\theset{u_n}$ is *orthonormal* iff
 > Note: we only consider countable collections; a *separable* Hilbert space always has such a basis. (?)
 
 Definition:
-We say $\theset{u_n}$ is an orthonormal *basis* for $H$ if $\span \theset{u_n}$ (i.e. *finite* linear combinations of $u_n$) is dense in $H$.
+We say $\theset{u_n}$ is an orthonormal *basis* for $H$ if $\mathrm{span} \theset{u_n}$ (i.e. *finite* linear combinations of $u_n$) is dense in $H$.
 
 Theorem:
 Let $\theset{u_n}$ be a countable orthonormal basis of $H$.
