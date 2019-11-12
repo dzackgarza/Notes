@@ -3246,4 +3246,8 @@ Recall the row operations:
 - Multiply a row by a unit
 - Add one row to another
 
+But each corresponds to left-multiplication by an elementary matrix, each of which is invertible.
+If you proceed this way until the matrix is in RREF, you produce $P \prod P_i A$.
+You can now multiply on the *right* by elementary matrices to do column operations and move all pivots to the top-left block, which gives you $E_r$.
 
+and the column operations
