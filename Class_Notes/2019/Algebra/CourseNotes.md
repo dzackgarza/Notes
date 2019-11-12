@@ -3235,3 +3235,6 @@ Assume $\rank A = \dim \im \phi = r$.
 We can find a basis such that $\phi(u_i) = v_i$ for $1 \leq i \leq r$, and $\phi(u_i) = 0$ otherwise.
 Relative to this basis, $[\phi] = E_r$.
 But then $A$ is equivalent to $E_r$.
+
+Conversely, if $A = PE_r Q$ with $P, Q$ invertible, then $\dim \im A = \dim \im E_r$, and thus $\rank A = \rank E_r = r$. 
+$\qed$
