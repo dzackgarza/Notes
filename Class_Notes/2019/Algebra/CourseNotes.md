@@ -3181,4 +3181,20 @@ Then $T: V\to V$ has an $n\times n$ matrix relative to $\beta_v$ relative to ano
 
 > Note how this specializes to the case of linear transformations, especially when $B$ is diagonalizable.
 
+Review of linear algebra:
 
+Let $D$ be a division ring. Recall the notions of rank and nullity, and the statement of the rank-nullity theorem.
+
+Note that we can always factor a linear transformation $\phi: E\to F$ as the following short exact sequence:
+
+$$
+0 \to \ker \phi \to E \mapsvia{\phi} \im \phi \to 0,
+$$
+
+and since every module over a division ring is free, this sequence splits and $E \cong \ker\phi \oplus \im \phi$. 
+Taking dimensions yields the rank-nullity theorem.
+
+Let $A\in M_{m, n}(D)$. Then define
+
+- $R(A) \in D^n$ is the span of the rows of $A$
+- $C(A) \in D^m$ is the span of the columns of $A$.
