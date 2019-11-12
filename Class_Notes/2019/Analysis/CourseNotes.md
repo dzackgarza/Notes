@@ -2829,3 +2829,7 @@ But these are two orthogonal terms, so we can apply Pythagoras to obtain
 \]
 
 > Note: the statement is the important things here, less so this proof.
+
+## Trigonometric Series
+
+
