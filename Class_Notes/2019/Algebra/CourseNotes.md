@@ -3175,4 +3175,10 @@ Conversely, suppose $B = P [T]_{\beta_v, \beta_w} Q$ for some $P, Q$.
 Let $g: V\to V$ be the transformation associated to $P$, and $h: W \to W$ associated to $Q\inv$.
 Then $P = [\id]_{g(\beta_v), \beta_v}$, $Q\inv = [\id]_{h(\beta_w), \beta_w}$, so $Q = [id]_{\beta_w, h(\beta_w)}$ and $B = [T]_{g(\beta_v), h(\beta_w)}$.
 
+Corollary: 
+Let $V$ be a free $R\dash$module and $\beta_v$ a basis of size $n$. 
+Then $T: V\to V$ has an $n\times n$ matrix relative to $\beta_v$ relative to another basis iff $B = P [T]_{\beta_v, \beta_v} P\inv$.
+
+> Note how this specializes to the case of linear transformations, especially when $B$ is diagonalizable.
+
 
