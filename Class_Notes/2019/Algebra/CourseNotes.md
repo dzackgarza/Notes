@@ -3250,4 +3250,8 @@ But each corresponds to left-multiplication by an elementary matrix, each of whi
 If you proceed this way until the matrix is in RREF, you produce $P \prod P_i A$.
 You can now multiply on the *right* by elementary matrices to do column operations and move all pivots to the top-left block, which gives you $E_r$.
 
+**Theorem:**
+Let $A \in M_{m, n}(R)$ where $R$ is a PID. 
+Then $A$ is equivalent to a matrix with $L_r$ in the top-left block, where $L_r$ is a diagonal matrix where $d_1 \divides d_2 \divides \cdots \divides d_r$, where each $(d_i)$ is uniquely determined.
+
 and the column operations
