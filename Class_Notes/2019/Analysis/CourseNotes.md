@@ -2775,3 +2775,6 @@ Then $\inner{x}{z} = \innner {y}{z} + \inner{z}{z} \implies \norm{z}^2 = 0 \impl
 
 **Theorem:**
 If $M \subseteq H$ is a closed subspace, then $H = M \oplus M^\perp$, i.e. $x\in H \implies x  = y + z, y\in M, z\in M^\perp$, and $y,z$ are the unique elements in $M, M^\perp$ that are closest to $x$.
+
+Proof of Lemma:
+
