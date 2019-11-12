@@ -2801,7 +2801,7 @@ Part 2: Let $u\in M$, we want to show that $\inner{z}{u} = \inner{x-y}{u} = 0$.
 
 Wlog we can assume that $\inner{z}{u} \in \RR$, since $u$ satisfies this property iff any complex scalar multiple does.
 Let $f(t) = \norm{z + tu}^2$ where $t\in \RR$.
-Then $f(t) = \norm{z}^2 + zt\inner{z}{y} = t^2 \inner{u}^2$.
+Then $f(t) = \norm{z}^2 + zt\inner{z}{y} = t^2 \norm{u}^2$.
 
 We know that $t$ attains a minimum at $t=0$, since $z + tu = x - (y + u)$, but $y$ was the closest element to $x$ and thus the norm is minimized exactly when $z + tu = x - y \implies t=0$.
 Because of this fact, we know that $f'(0) = 0$.
