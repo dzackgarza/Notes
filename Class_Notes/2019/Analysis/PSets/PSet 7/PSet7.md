@@ -75,6 +75,6 @@ Assuming now that $U$ is an isometry, by the polarization identity we can write
 \begin{align*}
 \inner{Ux}{Uy} &= \frac 1 4 
 \left(
-  \norm{Ux + Uy}
+  \norm{Ux + Uy}^2
 \right)
 \end{align*}
