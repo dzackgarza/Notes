@@ -2647,7 +2647,7 @@ TFAE?
 - $\lim_{N\to\infty} \norm{ x - \sum_n^N \inner{x}{u_n}  } = 0$, i.e. the Fourier series converges in $H$.
 
 Recall the Riesz-Fischer theorem: if $\theset u_n$ is orthonormal in $H$ and $\theset a_n \in \ell^2 \NN$, then $\exists x\in H$ such that $a_n = \inner{x}{u_n}$ and $\norm{x}^2 = \sum_n \abs{a_n}^2$.
-Moreover, the map $x \mapsto \hat x(u) \coloneqq \inner{x, u_n}$ maps $H$ onto $\ell^2 \NN$ surjectively.
+Moreover, the map $x \mapsto \hat{x}(u) \coloneqq \inner{x, u_n}$ maps $H$ onto $\ell^2 \NN$ surjectively.
 
 > Remark: This $x$ is only unique if $\theset u_n$ is *complete*, i.e. $\inner{y}{u_n} = 0 \forall n \implies y = 0$.
 
@@ -2721,14 +2721,15 @@ Let $U: H_1 \to H_2$ such that $\inner{Ux}{Uy} = \inner{x}{y}$ (i.e. $U$ preserv
 Then $\norm{Ux} = \norm{x}$, i.e. $U$ is an isometry.
 If $U$ is surjective, this implication can be reversed.
 
-For example, taking the Fourier transform yields $\sum \abs{\hat f(u)}^2 = \norm{f}_2^2 = \int\abs{f}^2$, and $\sum \hat f(u) \overline{\hat g(u)} = \int f \overline{g}$.
+For example, taking the Fourier transform yields $\sum \abs{\hat{f}(u)}^2 = \norm{f}_2^2 = \int\abs{f}^2$, and $\sum \hat{f}(u) \overline{\hat{g}(u)} = \int f \overline{g}$.
 
 A corollary of Riesz-Fischer:
-If $\theset u-N$ is an orthonormal basis in $H$, then the map $x \mapsto \hat x(u) \coloneqq \inner{x}{u_n}$ is a *unitary* map from $H$ to $\ell^2$.
+If $\theset u-N$ is an orthonormal basis in $H$, then the map $x \mapsto \hat{x}(u) \coloneqq \inner{x}{u_n}$ is a *unitary* map from $H$ to $\ell^2$.
 So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
 
 
 ![Image](figures/2019-11-07-12:22.png)
+
 > Subspaces in Hilbert spaces don't have to be closed, but orthogonal complements are always closed! See homework problem.
 
 # Tuesday November 12
