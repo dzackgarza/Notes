@@ -2747,3 +2747,5 @@ So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
 ## Closed Subspaces and Orthogonal Projections
 
 Let $H$ be a Hilbert space, then a subspace $M \subseteq H$ is *closed* if $x_n \to_H x$ with $\theset{x_n} \subset M$ implies that $x\in M$.
+
+> Note that finite-dimensional subspaces are *always* closed, so this is a purely infinite-dimensional phenomenon.
