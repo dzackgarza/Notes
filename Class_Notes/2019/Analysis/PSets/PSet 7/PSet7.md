@@ -59,3 +59,8 @@ We can compute the following:
 &= \norm{x}^2 + \norm{y}^2 + \Im(\inner{x}{y})
 \\ \\
 \end{align*}
+
+and summing these all appropriately yields
+\begin{align*}
+\norm{x + y}^2 - \norm{x - y}^2 + i\norm{x + iy}^2 + i\norm{x + iy}
+\end{align*}
