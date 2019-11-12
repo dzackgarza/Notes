@@ -2777,7 +2777,8 @@ Then $\inner{x}{z} = \innner {y}{z} + \inner{z}{z} \implies \norm{z}^2 = 0 \impl
 If $M \subseteq H$ is a closed subspace, then $H = M \oplus M^\perp$, i.e. $x\in H \implies x  = y + z, y\in M, z\in M^\perp$, and $y,z$ are the unique elements in $M, M^\perp$ that are closest to $x$.
 
 *Proof of Lemma:*
-Let $\delta \definedas \inf_{y' \in M} \norm{x - y'}$, which is a sequence of real numbers that is bounded below, and thus this infimum is attained.
+
+Part 1: Let $\delta \definedas \inf_{y' \in M} \norm{x - y'}$, which is a sequence of real numbers that is bounded below, and thus this infimum is attained.
 Then there is a sequence $\theset{y_n} \subseteq M$ such that $\norm{x - y_n} \to \delta$.
 
 For the following parallelogram:
@@ -2803,3 +2804,10 @@ since $\norm{y_n - x}_H \to 0$ since $y_n \to_H x$.
 It follows that $\theset{y_n}$ is Cauchy in $H$, so $y_n \to_H y \in H$. 
 But since the $y_n$ were in $M$ and $M$ is closed, we in fact have $y\in M$.
 Since $\norm{x - y_n} \to \norm{x - y} = \delta$, we have the existence of $x$.
+
+> We'll establish uniqueness after part 2.
+
+Part 2: Let $u\in M$, we want to show that $\inner{z}{u} = \inner{x-y}{u} = 0$.
+
+Wlog we can assume that $\inner{z}{u} \in \RR$, since $u$ satisfies this property iff any complex scalar multiple does.
+
