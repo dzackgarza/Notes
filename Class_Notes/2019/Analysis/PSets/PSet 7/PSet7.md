@@ -90,3 +90,4 @@ Assuming now that $U$ is an isometry, by the polarization identity we can write
 
 $\qed$
 
+# Problem 2
