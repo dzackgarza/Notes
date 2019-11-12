@@ -3117,7 +3117,7 @@ $$
 [S \circ T]_{\beta_v, \beta_z} = [T]_{\beta_v, \beta_w} [S]_{\beta_w, \beta_z}
 $$
 
-Proof: 
+*Proof:*
 Exercise! Show that $(S \circ T)(v_i) = \sum_j^t \sum_k^m a_{ik} b_{kj} z_j$. $\qed$
 
 Suppose $\Gamma: \hom_R(V, V) \to M_n(R)$ and $V$ is a free left $R\dash$module.
@@ -3138,10 +3138,10 @@ Then $\Theta(AB) = (AB)^t = B^t A^t = \Theta(B) \Theta(A)$, so $\Theta$ is an an
 
 Then $\Theta\circ \Gamma$ is an anti-anti-homomorphism, i.e. a usual homomorphism.
 
-Definition:
+**Definition:**
 A matrix $A$ is *invertible* iff there exists a $B$ such that $AB = BA = \id_n$.
 
-Proposition:
+**Proposition:**
 Let $R$ be a unital ring and $V, W$ free $R\dash$modules with $\dim V = n, \dim W = m$.
 Then
 
@@ -3156,14 +3156,23 @@ We'll say that two matrices $A, B$ are *equivalent* iff there exist $P, Q$ inver
 Recall from last time: if $V, W$ are free left $R\dash$modules of ranks $m,n$ respectively and bases $\beta_v, \beta_w$ respectively. 
 Then $\hom_R(V, W) \cong M_{m, n}(R)$.
 
-Definition:
+**Definition:**
 Two matrices $A, B \in M_{m, n}$ are *equivalent* if there exist invertible matrices $P \in M_m(R)$, $Q \in M_n(R)$ such $A = PBQ$.
 
-Definition:
+**Definition:**
 These matrices are *similar* iff there exists a single $P\in M_m(R)$ such that $A = P\inv B P$.
 
-Theorem:
+**Theorem:**
 Let $T: V\to W$ be an $R\dash$module homomorphism. 
 Then $T$ has an $m\times n$ matrix relative to other bases for $V, W$ iff $B = P [T]_{\beta_v, \beta_w} Q$.
+
+
+*Proof*:
+Let $\beta_v', \beta_w'$ be other bases.
+Then we want $B = [T]_{\beta_v', \beta_w'}$, so just let $P = [\id]_{\beta_v', \beta_v}$, $Q = [\id]_{\beta_w, \beta_w'}$.
+
+Conversely, suppose $B = P [T]_{\beta_v, \beta_w} Q$ for some $P, Q$.
+Let $g: V\to V$ be the transformation associated to $P$, and $h: W \to W$ associated to $Q\inv$.
+Then $P = [\id]_{g(\beta_v), \beta_v}$, $Q\inv = [\id]_{h(\beta_w), \beta_w}$, so $Q = [id]_{\beta_w, h(\beta_w)}$ and $B = [T]_{g(\beta_v), h(\beta_w)}$.
 
 
