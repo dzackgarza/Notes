@@ -2741,3 +2741,9 @@ So all Hilbert spaces are unitarily equivalent to $\ell^2 \NN$.
 
 ![Image](figures/2019-11-07-12:22.png)
 > Subspaces in hilbert spaces don't have to be closed, but perps always are!
+
+# Tuesday November 12
+
+## Closed Subspaces and Orthogonal Projections
+
+Let $H$ be a Hilbert space, then a subspace $M \subseteq H$ is *closed* if $x_n \to_H x$ with $\theset{x_n} \subset M$ implies that $x\in M$.
