@@ -43,23 +43,20 @@ Possible first day question: how can we "measure" a subset of $\RR$? We'd like b
 
 ## Notions of "smallness" in $\RR$
 
-\wrapenv{\Begin{definition}}
-Let $E$ be a set, then $E$ is *countable* if it is in a one-to-one correspondence with $E' \subseteq \NN$, which includes $\emptyset, \NN$.
-\wrapenv{\End{definition}}
+**Definition**Let $E$ be a set, then $E$ is *countable* if it is in a one-to-one correspondence with $E' \subseteq \NN$, which includes $\emptyset, \NN$.
 
-\wrapenv{\Begin{definition}}
-A set $E$ is *meager* (or of *1st category*) if it can be written as a countable union of **nowhere dense** sets.
-\wrapenv{\End{definition}}
 
-\wrapenv{\Begin{exercise}}
+**Definition**A set $E$ is *meager* (or of *1st category*) if it can be written as a countable union of **nowhere dense** sets.
+
+
+*Exercise*:
 Show that any finite subset of $\RR$ is meager.
-\wrapenv{\End{exercise}}
+
 
 Intuitively, a set is *nowhere dense* if it is full of holes. Recall that a $X \subseteq Y$ is dense in $Y$ iff the closure of $X$ is all of $Y$. So we'll make the following definition:
 
-\wrapenv{\Begin{definition}}
-A set $A \subseteq \RR$ is *nowhere dense* if every interval $I$ contains a subinterval $S \subseteq I$ such that $S \subseteq A^c$.
-\wrapenv{\End{definition}}
+**Definition**A set $A \subseteq \RR$ is *nowhere dense* if every interval $I$ contains a subinterval $S \subseteq I$ such that $S \subseteq A^c$.
+
 
 Note that a finite union of nowhere dense sets is also nowhere dense, which is why we're giving a name to such a countable union above. For example, $\QQ$ is an infinite, countable union of nowhere dense sets that is not itself nowhere dense.
 
@@ -70,29 +67,28 @@ Equivalently,
 
 We'd like to say something is measure zero exactly when it can be covered by intervals whose lengths sum to less than $\varepsilon$.
 
-\wrapenv{\Begin{definition}}
-Definition: $E$ is a *null set* (or has *measure zero*) if $\forall \varepsilon >0$, there exists a sequence of intervals $\theset{I_j}_{j=1}^\infty$ such that
+**Definition**Definition: $E$ is a *null set* (or has *measure zero*) if $\forall \varepsilon >0$, there exists a sequence of intervals $\theset{I_j}_{j=1}^\infty$ such that
 $$
 E \subseteq \union_{j=1}^\infty \text{ and } \sum \abs{I_j} < \varepsilon.
 $$
-\wrapenv{\End{definition}}
 
-\wrapenv{\Begin{exercise}}
+
+*Exercise*:
 Show that a countable union of null sets is null.
-\wrapenv{\End{exercise}}
+
 
 We have several relationships
 
 - Countable $\implies$ Meager, but not the converse.
 - Countable $\implies$ Null, but not the converse.
 
-\wrapenv{\Begin{exercise}}
+*Exercise*:
 Show that the "middle third" Cantor set is not countable, but is both null and meager. Key point: the Cantor set does not contain any intervals.
-\wrapenv{\End{exercise}}
 
-\wrapenv{\Begin{theorem}}
+
+**Theorem**:
 Every $E \subseteq \RR$ can be written as $E = A \disjoint B$ where $A$ is null and $B$ is meager.
-\wrapenv{\End{theorem}}
+
 
 > This gives some information about how nullity and meagerness interact -- in particular, $\RR$ itself is neither meager nor null. Idea: if meager $\implies$ null, this theorem allows you to write $\RR$ as the union of two null sets. This is bad!
 
@@ -106,17 +102,17 @@ Now we need to show that $A^c \definedas B$ is meager. Note that $G_k$ covers th
 
 ## $\RR$ is not small
 
-\wrapenv{\Begin{theorem}[A, Cantor]}
+**Theorem**:
 $\RR$ is not countable.
-\wrapenv{\End{theorem}}
 
-\wrapenv{\Begin{theorem}[B, Baire]}
+
+**Theorem**:
 $\RR$ is not meager. (Baire Category Theorem)
-\wrapenv{\End{theorem}}
 
-\wrapenv{\Begin{theorem}[C, Borel]}
+
+**Theorem**:
 $\RR$ is not null.
-\wrapenv{\End{theorem}}
+
 
 Note that theorems B and C imply theorem A. You can also replace $\RR$ with any nonempty interval $I = [a,b]$ where $a< b$. This is a strictly stronger statement -- if any subset of $\RR$ is not countable, then certainly $\RR$ isn't, and so on.
 
@@ -145,9 +141,9 @@ Some facts:
 - There is a continuous nowhere differentiable function: let $f(x) = \sum_n \frac{\norm{10^n x}}{10^n}$, and in fact *most* functions are like this.
 - If $f$ is continuous and monotone, the discontinuities are null.
 
-\wrapenv{\Begin{theorem}}
+**Theorem**:
 Let $I = [a,b]$. If $I \subseteq \union_{i=1}^\infty I_i$, then $\abs{I} \leq \sum_{i=1}^\infty \abs{I_i}$.
-\wrapenv{\End{theorem}}
+
 
 \wrapenv{\Begin{proof}}
 The proof is by induction. Assume $I \subseteq \union_n^{N+1} I_n$, where wlog we can assume that $a < a_{N+1} < b \leq b_{N+1}$, then $[a, a_{N+1}] \subset \union_{n=1}^N I_n$ so the inductive hypothesis applies. But then $b-a \leq b_{N+1} - a = (b_{N+1} - a_{N+1}) + (a_{N+1} - a) \leq \sum_{n=1}^{N+1} \abs{I_n}$.
@@ -392,7 +388,7 @@ which is what we wanted to show.
 
 Exercise: Let $Q$ be open, show $m_*(Q) = \abs Q$.
 
-4. $m_*(\RR^n) = \infty$
+1. $m_*(\RR^n) = \infty$
 This would follow if we could show that $\abs{Q} \leq m_*(\RR^n)$ for any $Q$, and we can take $Q$ to be arbitrarily large.
 
 This is because any covering of $\RR^n$ is also a covering of $Q$.
