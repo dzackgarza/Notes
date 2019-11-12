@@ -32,3 +32,5 @@ It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vec
 \end{align*}
 
 where $\norm{\vector x_i - x^j}_{\ell^2} \to 0$ and the second sum is finite because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} < \infty$. $\qed$
+
+# Part b
