@@ -2807,3 +2807,47 @@ We know that $t$ attains a minimum at $t=0$, since $z + tu = x - (y + u)$, but $
 Because of this fact, we know that $f'(0) = 0$.
 But by using Calculus, we can compute that $f'(0) = 2 \inner{z}{u}$, so $\inner{z}{u}$ must equal zero.
 
+Now to show uniqueness, let $y' \in M$ and suppose $y' \neq u$ but $\norm{x-y'} = \delta$.
+Then $x- y' = (x-y) + (y-y')$.
+
+But these are two orthogonal terms, so we can apply Pythagoras to obtain
+\[
+\begin{align*}
+\norm{x-y'}^2 = \norm{x-y}^2 + \norm{y-y'}^2 \\
+&\implies \delta = \delta + c \implies c = 0 \\
+&\implies \norm{y-y'} = 0 \implies y = y'
+.\end{align*}
+\]
+
+> Note: the statement is the important things here, less so this proof.
+
+## Trigonometric Series
+
+**Theorem:**
+Let $e_n(x) \definedas e^{2\pi n x}$ for all $x\in [0, 1]$ and $n\in \ZZ$.
+Then $\theset{e_n}_{n\in \ZZ}$ is an *orthonormal basis* for $L^2([0, 1])$.
+
+> Note: Orthonormality is easily check, so the crux of the proof is showing it's a basis.
+
+> Note: Elements in $\mathrm{span}\theset{e_n}$ are referred to as *trigonometric polynomials*.
+
+Goal:
+We'll show that the span of the trigonometric polynomials are dense in $L^2([0, 1])$. 
+This will be a consequence of the following theorem:
+
+**Theorem (Periodic Analogue of the Weierstrass Approximation Theorem):**
+If $f\in C(\Pi)$ (where $\Pi$ is a torus) and $\varepsilon > 0$, then there exists a trigonometric polynomial $P$ such that $\abs{f(x) - P(x)} < \varepsilon$ for all $x\in \Pi$.
+
+> Note that this measures closes in the *uniform* norm. We can relate these by $\norm{f(x) -P(x)}_{L^2} \leq \norm{f(x) - P(x)}_{\sup}$, i.e. $\int_0^1 \abs{f(x) - P(x)}^2 \leq \sup_x \abs{f(x) - P(x)}^2$.
+
+*Proof:*
+Identify $\Pi = [- \frac ] 2, \frac 1 2)]$.
+Suppose there exists a sequence $\theset{Q_k}$ of trigonometric polynomials such that
+
+- $Q_k(x) \geq 0$ for all $x, k$,
+- $\int_{-1/2}^{1/2} Q_k(x) ~dx = 1$ for all $k$,
+- $\forall \delta>0$, we have $Q_k(x) \to 0$ uniformly on $\Pi\setminus[-\delta, \delta]$.
+
+> Note that these properties are similar to what we wanted from approximations to the identity.
+
+Define $P_k(x) = \int_{-1/2}^{1/2} f(y) Q_k(x - y) ~dy$ by convolving on the circle, then $P_k$ is also a trigonometric polynomial.
