@@ -13,4 +13,4 @@ $$
 \vector x_i \definedas \lim_{n\to\infty} x_i^n.
 $$
 
-This is well-defined since $x^n \in \ell^2(\NN) \iff \sum_i \abs{x_i^n}^2 < \infty$, which is a convergent sum of real numbers, so $
+This is well-defined since $\norm{x^j - x^k}_{\ell^2} = \sum_i \abs{x^j_i - x^k_i}^2 \to 0$, and since this is a sum of positive real numbers that approaches zero
