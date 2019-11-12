@@ -2779,3 +2779,21 @@ If $M \subseteq H$ is a closed subspace, then $H = M \oplus M^\perp$, i.e. $x\in
 *Proof of Lemma:*
 Let $\delta \definedas \inf_{y' \in M} \norm{x - y'}$, which is a sequence of real numbers that is bounded below, and thus this infimum is attained.
 Then there is a sequence $\theset{y_n} \subseteq M$ such that $\norm{x - y_n} \to \delta$.
+
+For the following parallelogram:
+
+![Image](figures/2019-11-12-11:25.png)
+
+Then by the parallelogram law, we  have 
+$$
+2(\norm{y_n - x}^2 + \norm{y_m - x}^2) = \norm{y_n - y_m}^2 + \norm{y_n + y_m - 2x}^2.
+$$
+
+which yields
+\[
+\begin{align*}
+\norm{y_n - y_m}^2 
+&= 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\norma{\frac 1 2 (y_n + y_m) - x}^2 \\
+&\leq 2 \norm{y_n - x}^2 + 2\norm{y_m - x}^2 - 4\delta^2 \to 0
+.\end{align*}
+\]
