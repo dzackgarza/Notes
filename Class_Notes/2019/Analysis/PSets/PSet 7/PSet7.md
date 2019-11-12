@@ -60,9 +60,9 @@ We can compute the following:
 \\ \\
 \end{align*}
 
-and summing these all appropriately yields
+and summing these all 
 \begin{align*}
-\norm{x + y}^2 - \norm{x - y}^2 + i\norm{x + iy}^2 - i\norm{x + iy} &= 4~\Re \left( \inner{x}{y} \right) + 4~\Im \left( \inner{x}{y} \right) \\
+\norm{x + y}^2 - \norm{x - y}^2 + i\norm{x + iy}^2 - i\norm{x + iy} &= 4~\Re \left( \inner{x}{y} \right) + 4i~\Im \left( \inner{x}{y} \right) \\
 &= 4 \inner{x}{y}.
 \end{align*}
 
