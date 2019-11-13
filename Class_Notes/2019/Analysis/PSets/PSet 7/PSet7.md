@@ -231,7 +231,7 @@ We use the following algorithm: given $\theset v_i$, we set
 
 The result set $\theset{\hat{e_i}}$ is the orthonormalized basis.
 
-We set $e_1 = 1$, and check that $\norm{e_1}^2 = 2$, and thus set $\hat e_1 = \frac 1 \sqrt 2$.
+We set $e_1 = 1$, and check that $\norm{e_1}^2 = 2$, and thus set $\hat e_1 = \frac{1}{\sqrt 2}$.
 
 We then set
 \[
@@ -277,7 +277,7 @@ We can then check that $\norm{e_3}^2 = \frac 8 {45}$, so we set
 In summary, this yields
 \[
 \begin{align*}
-\hat e_1 &= \frac 1 {\sqrt 2} \\
+\hat e_1 &= \frac{1}{\sqrt 2} \\
 \hat e_2 &= x \\
 \hat e_3 &= \frac 1 3 \sqrt{\frac{45}{2}} \left( \frac{3x^2 - 1}{2} \right)
 .\end{align*}
