@@ -216,6 +216,6 @@ We can also compute
 \norm{f-g}^2 
 &= \int_0^1 (x^2 - x + \frac 1 6)^2 ~dx \\
 &= \frac 1 {180} \\
-&\implies \norm{f-g} = \frac 1 {\sqrt{180}}
+\implies \norm{f-g} &= \frac 1 {\sqrt{180}}
 .\end{align*}
 \]
