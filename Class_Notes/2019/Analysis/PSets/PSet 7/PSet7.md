@@ -33,7 +33,7 @@ It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vec
 
 where $\norm{\vector x_i - x^j}_{\ell^2} \to 0$ and the second sum is finite because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} \definedas M < \infty$. $\qed$
 
-# Part b
+## Part b
 Let $H$ be a Hilbert space with inner product $\inner{\wait}{\wait}$ and induced norm $\norm{\wait}$.
 
 
