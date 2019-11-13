@@ -306,3 +306,7 @@ So only one term doesn't vanish:
 \]
 
 And thus $p(x) = \frac 2 5 x$ is the minimizer.
+
+## Part c
+
+Todo
