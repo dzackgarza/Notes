@@ -296,3 +296,13 @@ $$
 p(x) \in \mathrm{span}\theset{1, x, x^2} = \mathrm{span}\theset{P_0(x), P_1(x), P_2(x)}, 
 $$ 
 we can conclude that $p(x)$ will be the projection of $x^3$ onto this subspace of $L^2([0, 1])$. Thus $p(x) = \sum_{i=0}^2 \inner{x^3}{\hat e_i}\hat e_i$.
+
+Proceeding to compute the terms in this expansion, we can note that $\inner{x^3}{f}$ for any $f$ that is even will result in integrating an odd function over a symmetric interval, yielding zero.
+So only one term doesn't vanish:
+\[
+\begin{align*}
+\inner{x^3}{x}x &= x\int_{-1}^1 \int_{-1}^1 x^4 ~dx = \frac 2 5 x \\
+.\end{align*}
+\]
+
+And thus $p(x) = \frac 2 5 x$ is the minimizer.
