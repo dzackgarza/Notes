@@ -24,12 +24,13 @@ $$
 where the limit can be passed through the norm because the map $t \mapsto \norm{t}_{\ell^2}$ is continuous. So $x^j \to \vector x$ in $\ell^2$ as well.
 
 It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vector x_i}^2 < \infty$. To this end, we write
-
+\[
 \begin{align*}
 \norm{\vector x}_{\ell^2} &= \norm{\vector x - x^j + x^j}_{\ell^2} \\
 &\leq \norm{\vector x - x^j}_{\ell^2} + \norm{x^j}_{\ell^2}\\
 & \to M < \infty,
 \end{align*}
+\]
 
 where $\norm{\vector x_i - x^j}_{\ell^2} \to 0$ and the second sum is finite because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} \definedas M < \infty$. $\qed$
 
