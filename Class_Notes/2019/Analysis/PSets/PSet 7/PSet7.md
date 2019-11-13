@@ -258,7 +258,9 @@ We continue to compute
 e_3 
 &= x^2 - \inner{x^2}{\hat e_1}\hat e_1 - \inner{x^2}{\hat e_2} \hat e_2 \\
 &= x^2 - \frac 1 2 \int_{-1}^1 x^2 ~dx - \frac 3 2 x\int_{-1}^1 x^3 ~dx \\
-&= x^2 - \frac 1 6 \bigr|_{-1}^1 + \int_{-1}^1 \text{odd function} \\
+&= x^2 - \left( \frac 1 6 x^3 \right) \bigr|_{-1}^1 + \frac 3 2 x \int_{-1}^1 \text{odd function} \\
 &= x^2 - \frac 1 3
 .\end{align*}
 \]
+
+We can then check that $\norm{e_3} = \frac 8/45$.
