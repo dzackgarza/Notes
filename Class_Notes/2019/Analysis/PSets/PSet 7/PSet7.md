@@ -154,12 +154,12 @@ where we've used continuity of the inner product.
 $E^{\perp \perp} \subseteq \overline{S}$:
 
 Suppose that there is an element in $x \in \overline{S} \setminus E^{\perp\perp}$.
-Noting that $\overline S$ is closed, we can define $P_S$, the operator projecting elements onto $\overline{S}$, and write
+Noting that $\overline S$ is closed, we can define $P$, the operator projecting elements onto $\overline{S}$, and write
 $$
-x = P_Sx + (x - P_Sx).
+x = Px + (x - Px).
 $$
 But then
 $$
-y\in E^\perp \implies \inner{x}{y} = \inner{P_Sx + (x-{P_Sx})}{y} = \inner{P_Sx}{y} + \inner{x - P_Sx}{y}
+y\in E^\perp \implies \inner{x}{y} = \inner{Px + (x-{Px})}{y} = \inner{Px}{y} + \inner{x - Px}{y}
 $$
 
