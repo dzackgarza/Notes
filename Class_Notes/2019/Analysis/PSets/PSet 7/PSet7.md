@@ -280,5 +280,8 @@ In summary, this yields
 \hat e_1 &= \frac{1}{\sqrt 2} \\
 \hat e_2 &= x \\
 \hat e_3 &= \frac 1 3 \sqrt{\frac{45}{2}} \left( \frac{3x^2 - 1}{2} \right)
-.\end{align*}
+,\end{align*}
 \]
+
+which are proportional to the listed functions.
+
