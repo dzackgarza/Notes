@@ -291,4 +291,8 @@ which are scalar multiples of the first three Legendre polynomials.
 ## Part b
 
 Let $p(x) = a + bx + cx^2$, we are then looking for $p$ such that $\norm{x^3 - p(x)}_2^2$ is minimized.
-Noting that $p(x) \in \mathrm{span}\theset{1, x, x^2} = \mathrm{span}\theset{P_0(x), P_1(x), P_2(x)}$, we can conclude that $p(x)$ will be the projection of $x^3$ onto this subspace of $L^2([0, 1])$.
+Noting that 
+$$
+p(x) \in \mathrm{span}\theset{1, x, x^2} = \mathrm{span}\theset{P_0(x), P_1(x), P_2(x)}, 
+$$ 
+we can conclude that $p(x)$ will be the projection of $x^3$ onto this subspace of $L^2([0, 1])$. Thus $p(x) = \sum_{i=0}^2 \inner{x^3}{\hat e_i}\hat e_i$.
