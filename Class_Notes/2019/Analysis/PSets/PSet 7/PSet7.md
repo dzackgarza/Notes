@@ -62,10 +62,13 @@ We can compute the following:
 \end{align*}
 
 and summing these all 
+
+\[
 \begin{align*}
 \norm{x + y}^2 - \norm{x - y}^2 + i\norm{x + iy}^2 - i\norm{x + iy} &= 4~\Re \left( \inner{x}{y} \right) + 4i~\Im \left( \inner{x}{y} \right) \\
 &= 4 \inner{x}{y}.
 \end{align*}
+\]
 
 To conclude that a linear map $U$ is an isometry iff $U$ is unitary, if we assume $U$ is unitary then we can write
 $$
@@ -73,6 +76,7 @@ $$
 $$
 
 Assuming now that $U$ is an isometry, by the polarization identity we can write
+\[
 \begin{align*}
 \inner{Ux}{Uy} &= \frac 1 4 
 \left(
@@ -88,6 +92,7 @@ Assuming now that $U$ is an isometry, by the polarization identity we can write
 \right) \\
 &= \inner{x}{y}.
 \end{align*}
+\]
 
 $\qed$
 
@@ -98,6 +103,7 @@ Lemma: The map $\inner{\wait}{\wait}: H \cross H \to \RR$ is continuous.
 Proof:
 
 Let $x_n \to x$ and $y_n \to y$, then
+\[
 \begin{align*}
 \abs{
   \inner{x_n}{y_n} - \inner{x}{y}
@@ -110,16 +116,19 @@ Let $x_n \to x$ and $y_n \to y$, then
 &\leq \norm{x_n - x} \norm{y_n} + \norm{x} \norm{y_n - y} \\
 & \to 0\cdot M +  C \cdot 0 < \infty,
 \end{align*}
+\]
 
 where $\norm{y_n} \to M$ since $y_n \to y$ implies that $\norm{y_n}$ is bounded.
 
-# Part a:
+## Part a:
 
 Using the lemma, letting $\theset{e_n}$ be a sequence in $E^\perp$, so $y\in E \implies \inner{e_n}{y} = 0$. Since $H$ is complete, $e_n \to e \in H$; we can show that $e \in E^\perp$ by letting $y\in E$ be arbitrary and computing
+\[
 \begin{align*}
 \inner{e}{y} = \inner{\lim_n e_n}{y} = \lim_n \inner{e_n}{y} = \lim_n 0 = 0,
 \end{align*}
+\]
 
 so $e\in E^\perp$.
 
-# Part b:
+## Part b:
