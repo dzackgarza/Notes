@@ -263,4 +263,4 @@ e_3
 .\end{align*}
 \]
 
-We can then check that $\norm{e_3} = \frac 8/45$.
+We can then check that $\norm{e_3} = \frac 8 {45}$.
