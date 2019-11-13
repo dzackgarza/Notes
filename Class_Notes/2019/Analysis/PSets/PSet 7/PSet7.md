@@ -210,4 +210,11 @@ f(x)
 .\end{align*}
 \]
 
-
+We can also compute
+\[
+\begin{align*}
+\norm{f-g}^2 
+&= \int_0^1 (x^2 - x + \frac 1 6)^2 ~dx \\
+&=
+.\end{align*}
+\]
