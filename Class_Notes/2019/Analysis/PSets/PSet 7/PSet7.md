@@ -189,3 +189,10 @@ which verifies that this is an orthonormal system.
 ## Part b
 
 We first note that this system spans the degree 1 polynomials in $L^2([0, 1])$, since the matrix sending ${1, x}$ to ${e_0, e_1}$ is given by 
+
+\[
+\left(\begin{array}{rr}
+1 & 0 \\
+2 \, \sqrt{3} & \sqrt{3}
+\end{array}\right)
+\]
