@@ -245,4 +245,9 @@ e_2
 ,\end{align*}
 \]
 
-and so $e_2 = x$.
+and so $e_2 = x$. We can then check that 
+$$
+\norm{e_2} = \left( \int_{-1}^1 x^2 ~dx \right)^{1/2} = \sqrt{\frac 2 3},
+$$
+
+and so we set $\hat e_2 = \sqrt{\frac 3 2} x$.
