@@ -219,4 +219,3 @@ We can also compute
 &\implies \norm{f-g}^2 = \frac 1 {\sqrt{180}}
 .\end{align*}
 \]
-
