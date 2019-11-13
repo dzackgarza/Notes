@@ -206,6 +206,8 @@ f(x)
 &= \inner{x^3}{1} 1 + \inner{x^3}{\sqrt 3 (2x-1)}\sqrt 3(2x-1) \\
 &= \int_0^1 x^2 ~dx + \sqrt 3 (2x-1) \int_0^1 \sqrt 3 x^2 (2x-1) ~dx \\
 &= \frac 1 3 + \sqrt 3 (2x-1) \frac{\sqrt 3}{6} \\
-&= x - \frac 1 6.
+&= x - \frac 1 6
 .\end{align*}
 \]
+
+
