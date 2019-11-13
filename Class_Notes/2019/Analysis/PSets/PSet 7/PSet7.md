@@ -232,3 +232,17 @@ We use the following algorithm: given $\theset v_i$, we set
 The result set $\theset{\hat{e_i}}$ is the orthonormalized basis.
 
 We set $e_1 = 1$, and check that $\norm{e_1} = 1$, and thus set $\hat e_1 = 1$.
+
+We then set
+\[
+\begin{align*}
+e_2 
+&= x - \inner{x}{\hat e_1}\hat e_1 \\
+&= x - \inner{x}{1}1 \\
+&= x - \int_{-1}^1 \frac 1 \sqrt{2} x ~dx \\
+&= x - \int \text{odd function} \\
+&= x
+,\end{align*}
+\]
+
+and so $e_2 = x$.
