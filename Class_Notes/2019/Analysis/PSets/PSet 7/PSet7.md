@@ -146,5 +146,7 @@ $$
 
 It remains to show that $x\in E^{\perp \perp}$, which follows from
 $$
-y\in E^{\perp} \implies \inner{x}{y} = \inner{\lim_n x_n}{y} = \lim_n \inner{x_n}{y} = 0.
+y\in E^{\perp} \implies \inner{x}{y} = \inner{\lim_n x_n}{y} = \lim_n \inner{x_n}{y} = 0 \implies x\in (E^\perp)^\perp,
 $$
+
+where we've used continuity of the inner product.
