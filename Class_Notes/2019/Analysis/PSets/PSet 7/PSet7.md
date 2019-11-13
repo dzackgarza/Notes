@@ -139,7 +139,12 @@ $\overline{S} \subseteq E^{\perp\perp}$:
 
 Let $\theset{x_n}$ be a sequence in $S$, so $x_n \to x \in \overline{S}$.
 
-First, each $x_n$ is in $E^{\perp \perp}$ be definition, since if we write $x_n = \sum a_i e_i$ where $e_i \in E$, we have
+First, each $x_n$ is in $E^{\perp \perp}$, since if we write $x_n = \sum a_i e_i$ where $e_i \in E$, we have
 $$
 y\in E^\perp \implies \inner{x_n}{y} = \inner{\sum_i a_i e_i}{y} = \sum_i a_i \inner{e_i}{y} = 0 \implies x_n \in (E^\perp)^\perp.
+$$
+
+It remains to show that $x\in E^{\perp \perp}$, which follows from
+$$
+y\in E^{\perp} \implies \inner{x}{y} = \inner{\lim_n x_n}{y} = \lim_n \inner{x_n}{y} = 0.
 $$
