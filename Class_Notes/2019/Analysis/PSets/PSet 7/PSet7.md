@@ -227,6 +227,8 @@ We can also compute
 We use the following algorithm: given $\theset v_i$, we set
 
 - $e_1 = v_1$, and then normalize to obtain $\hat{e_1} = e_1 / \norm{e_1}$
-- $e_{i} = v_{i} - \sum_{k \leq i-1} \inner{v_i}{\hat{e_i}}\hat{e_i}$
+- $e_{i} = v_{i} - \sum_{k \leq i-1} \inner{v_i}{\hat{e_i}}\hat{e_i}$ 
 
-We set $e_1 = 1$, and check that $\norm{e_1} = 1$, and 
+The result set $\theset{\hat{e_i}}$ is the orthonormalized basis.
+
+We set $e_1 = 1$, and check that $\norm{e_1} = 1$, and thus set $\hat e_1 = 1$.
