@@ -251,3 +251,12 @@ $$
 $$
 
 and so we set $\hat e_2 = \sqrt{\frac 3 2} x$.
+
+We continue to compute
+\[
+\begin{align*}
+e_3 
+&= x^2 - \inner{x^2}{\hat e_1}\hat e_1 - \inner{x^2}{\hat e_2} \hat e_2 \\
+&= x^2 - \frac 1 2 \int_{-1}^1 x^2 ~dx - \frac 3 2 x\int_{-1}^1 x^3 ~dx
+.\end{align*}
+\]
