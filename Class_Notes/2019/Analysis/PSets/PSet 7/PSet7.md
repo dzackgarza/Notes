@@ -167,5 +167,4 @@ $$
 
 where we can note that the first term is zero because $Px \in S$ and $x-Px \in S^\perp$, and the second term is $\norm{x-Px}^2$.
 
-But this says $\norm{x-Px}^2 = 0$, so $x-Px = 0$ and thus $x=Px$. 
-This expresses $x$ as an element of $S$, which is what we wanted to show.
+But this says $\norm{x-Px}^2 = 0$, so $x-Px = 0$ and thus $x=Px\in S$, which is what we wanted to show.
