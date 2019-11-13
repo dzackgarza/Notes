@@ -135,9 +135,11 @@ so $e\in E^\perp$.
 Let $S \coloneqq \mathrm{span}_H(E)$; then the smallest closed subspace containing $E$ is $\overline{S}$, the closure of $S$.
 We will proceed by showing that $E^{\perp \perp} = \overline{S}$.
 
-We first note that $S \subseteq E^{\perp\perp}$: let $y \in E^{\perp}$ be arbitrary.
-Then, if $e\in E$, we have $\inner{e}{y} = 0$ since $y\in E^{\perp}$.
-But if $e$ is orthogonal to every $y\in E^\perp$, then $e\in E^{\perp \perp}$ by definition.
-It then follows that $\overline{S} \subseteq \overline{E^{\perp\perp}} = E^{\perp\perp}$, since by (1), any orthogonal complement is a closed subspace.
+$\overline{S} \subseteq E^{\perp\perp}$: 
 
-We now want to show that $E^{\perp \perp} \subseteq \overline S$.
+Let $\theset{x_n}$ be a sequence in $S$, so $x_n \to x \in \overline{S}$.
+
+First, each $x_n$ is in $E^{\perp \perp}$ be definition, since if we write $x_n = \sum a_i e_i$ where $e_i \in E$, we have
+$$
+y\in E^\perp \implies \inner{x_n}{y} = \inner{\sum a_i e_i}{y} = \sum a_i \inner{e_i}{y} = 0 \implies x_n \in (E^\perp)^\perp.
+$$
