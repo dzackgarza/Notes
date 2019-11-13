@@ -132,3 +132,12 @@ Using the lemma, letting $\theset{e_n}$ be a sequence in $E^\perp$, so $y\in E \
 so $e\in E^\perp$.
 
 ## Part b:
+Let $S \coloneqq \mathrm{span}_H(E)$; then the smallest closed subspace containing $E$ is $\overline{S}$, the closure of $S$.
+We will proceed by showing that $E^{\perp \perp} = \overline{S}$.
+
+We first note that $S \subseteq E^{\perp\perp}$: let $y \in E^{\perp}$ be arbitrary.
+Then, if $e\in E$, we have $\inner{e}{y} = 0$ since $y\in E^{\perp}$.
+But if $e$ is orthogonal to every $y\in E^\perp$, then $e\in E^{\perp \perp}$ by definition.
+It then follows that $\overline{S} \subseteq \overline{E^{\perp\perp}} = E^{\perp\perp}$, since by (1), any orthogonal complement is a closed subspace.
+
+We now want to show that $E^{\perp \perp} \subseteq \overline S$.
