@@ -220,4 +220,3 @@ We can also compute
 .\end{align*}
 \]
 
-and so $\norm{f-g} = \frac 1 {\sqrt{180}}
