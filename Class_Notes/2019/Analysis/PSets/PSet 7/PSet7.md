@@ -171,3 +171,13 @@ But this says $\norm{x-Px}^2 = 0$, so $x-Px = 0$ and thus $x=Px\in S$, which is 
 
 
 # Problem 3
+
+## Part a
+
+We compute
+\[
+\begin{align*}
+\norm{e_0}^2 = \int_0^1 1^2 ~dx = 1,\\
+\norm{e_1}^2 = \int_0^1 3(2x-1)^2 = \frac 1 2 (2x-1)^2 \Bigr_{0}^1 = 1,
+.\end{align*}
+\]
