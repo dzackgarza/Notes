@@ -283,5 +283,5 @@ In summary, this yields
 ,\end{align*}
 \]
 
-which are proportional to the listed functions.
+which are scalar multiples of the first three Legendre polynomials.
 
