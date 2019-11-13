@@ -154,15 +154,10 @@ where we've used continuity of the inner product.
 $E^{\perp \perp} \subseteq \overline{S}$:
 
 For notation convenience, we'll just write $S$ for $\overline S$.
-Let $x\in S$, and note that $E^\perp = S^\perp$.
+Let $x\in E^{\perp\perp}$.
 Noting that $S$ is closed, we can define $P$, the operator projecting elements onto ${S}$, and write
 $$
 x = Px + (x - Px) \in S \oplus S^\perp
 $$
-But then
-$$
-y\in E^\perp \implies 0 = \inner{x}{y} = \inner{Px + (x-{Px})}{y} = \inner{Px}{y} + \inner{x - Px}{y}
-$$
 
-But $Px \in S$ and $y\in E^\perp$, so $Px$ is orthogonal to $y$ and the first term vanishes.
-So $\inner{x-Px}{y} = 0$, which says that 
+But since 
