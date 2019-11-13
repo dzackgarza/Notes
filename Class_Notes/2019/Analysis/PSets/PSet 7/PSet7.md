@@ -263,4 +263,12 @@ e_3
 .\end{align*}
 \]
 
-We can then check that $\norm{e_3} = \frac 8 {45}$.
+We can then check that $\norm{e_3}^2 = \frac 8 {45}$, so we set 
+\[
+\begin{align*}
+\hat e_3 
+&= \sqrt{\frac{45}{8}} (x^2 - \frac 1 3) \\
+&= \frac 1 2 \sqrt{\frac{45}{2}} \frac 1 3 (3x^2 - 1) \\
+&= \frac 1 3 \sqrt{\frac{45}{2}} \left( \frac{3x^2 - 1}{2} \right)
+.\end{align*}
+\]
