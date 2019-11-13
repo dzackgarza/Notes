@@ -156,6 +156,6 @@ $E^{\perp \perp} \subseteq \overline{S}$:
 Suppose that there is an element in $x \in \overline{S} \setminus E^{\perp\perp}$.
 Noting that $\overline S$ is closed, we can define $P_S$, the operator projecting elements onto $\overline{S}$, and write
 $$
-x = P_S(x) + (x - P_S(x))
+x = P_Sx + (x - P_Sx)
 $$
 
