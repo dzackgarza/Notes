@@ -222,7 +222,7 @@ We can also compute
 
 # Problem 5
 
-# Part 1
+## Part 1
 
 We use the following algorithm: given $\theset v_i$, we set
 
@@ -284,4 +284,6 @@ In summary, this yields
 \]
 
 which are scalar multiples of the first three Legendre polynomials.
+
+## Part b
 
