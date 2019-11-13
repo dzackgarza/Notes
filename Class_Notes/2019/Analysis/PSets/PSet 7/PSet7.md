@@ -197,3 +197,13 @@ $$
 \end{array}\right] [1, x]^t = [e_0, e_1]
 $$
 which exhibits a matrix that changes basis from $\theset{1, x}$ to $\theset{e_0, e_1}$ which is invertible, so both sets span the same subspace.
+
+Thus the closest degree 1 polynomial $f$ to $x^3$ is given by the projection onto this subspace, and since $\theset{e_i}$ is orthonormal this is given by
+\[
+\begin{align*}
+f 
+&= \sum_i \inner{x^3}{e_i}e_i \\
+&= \inner{x^3}{1} 1 + \inner{x^3}{\sqrt 3 (2x-1)}\sqrt 3(2x-1) \\
+&= \int_0^1 x^2 ~dx + \sqrt 3 (2x-1) \int_0^1 \sqrt 3 x^2 (2x-1) ~dx
+.\end{align*}
+\]
