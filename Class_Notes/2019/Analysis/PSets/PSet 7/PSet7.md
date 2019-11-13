@@ -277,7 +277,7 @@ We can then check that $\norm{e_3}^2 = \frac 8 {45}$, so we set
 In summary, this yields
 \[
 \begin{align*}
-\hat e_1 &= \frac 1 \sqrt 2 \\
+\hat e_1 &= \frac 1 {\sqrt 2} \\
 \hat e_2 &= x \\
 \hat e_3 &= \frac 1 3 \sqrt{\frac{45}{2}} \left( \frac{3x^2 - 1}{2} \right)
 .\end{align*}
