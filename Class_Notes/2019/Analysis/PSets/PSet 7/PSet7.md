@@ -278,7 +278,7 @@ We have
 \int_0^1 e^{2\pi i kx} \overline{e^{2\pi i \ell x}} ~dx \\
 &= \int_0^1 e^{2\pi i kx} e^{-2\pi i \ell x} ~dx \\
 &= \int_0^1 e^{2\pi i (k-\ell) x} ~dx \\
-&= \frac{1}{2\pi i (k-\ell)} e^{2\pi i (k-\ell) x}  \bigr|_{0}^1
+&= \frac{e^{2\pi i (k-\ell) x} }{2\pi i (k-\ell)}  \bigr|_{0}^1
 .\end{align*}
 \]
 
