@@ -260,7 +260,10 @@ Similarly,
 \inner{\sin(2\pi n x)}{\sin(2\pi m x)}
 &= \int_0^1 \sin(2\pi n x) \sin(2\pi m x) ~dx \\
 &= \frac 1 2 \int_0^1 \cos(2\pi(m-n)x) + \cos(2\pi (m+n) x) ~dx \\
-&= 0
+\begin{cases}
+\frac 1 2 \int_0^1 \cos(4\pi nx) + 1 ~dx = 1 & m=n\\
+0 & m\neq n \\
+\end{cases}
 .\end{align*}
 \]
 
