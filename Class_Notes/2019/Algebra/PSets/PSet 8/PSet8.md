@@ -51,5 +51,13 @@ Expanding definitions, we have
 &= \theset{x \in \ZZ_n \suchthat o(x) \divides m ~\text{ and }~ o(x) \divides n} \\
 &= \theset{x \in \ZZ_n \suchthat o(x) \divides \gcd(m, n)} \\
 &\cong \ZZ_{\gcd(m, n)}
-.\end{align*}
+,\end{align*}
 \]
+
+where the latter identification can be made by constructing
+$$
+\phi: \ZZ \to \ZZ_n[m] \\ 
+x \mapsto x\mod n
+$$
+
+Then $\ker \phi = \theset{x\in \ZZ \suchthat x \equiv 0 \mod n ~\text{ and }~ mx = 0}$
