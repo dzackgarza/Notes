@@ -48,7 +48,8 @@ Expanding definitions, we have
 \[
 \begin{align*}
 \ZZ_n[m] &= \theset{x \in \ZZ_n \suchthat mx = 0} \\
-&= \theset{x \in \ZZ_n \suchthat o(x) } \\
-&= \theset{x \in \ZZ_n} 
+&= \theset{x \in \ZZ_n \suchthat o(x) \divides m ~\text{ and }~ o(x) \divides n} \\
+&= \theset{x \in \ZZ_n \suchthat o(x) \divides \gcd(m, n)} \\
+&\cong \ZZ_{\gcd(m, n)}
 .\end{align*}
 \]
