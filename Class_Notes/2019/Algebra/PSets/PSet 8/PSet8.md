@@ -64,3 +64,10 @@ By the first isomorphism theorem, we have
 $$
 \frac{\ZZ}{\ker \phi} \cong \im \phi \implies \ZZ_{\gcd(m, n)} \definedas \frac{\ZZ}{\gcd(m, n)\ZZ} \cong \ZZ_n[m].
 $$
+
+## Part 3
+
+We identify
+$$
+\ZZ^* = \hom(\ZZ, \ZZ)
+$$
