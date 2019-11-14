@@ -275,7 +275,9 @@ We have
 \[
 \begin{align*}
 \inner{e^{2\pi k x}}{e^{-2\pi i \ell x}} &=
-\int_0^1 e^{2\pi i kx} \overline{e^{2\pi i \ell x}} ~dx
+\int_0^1 e^{2\pi i kx} \overline{e^{2\pi i \ell x}} ~dx \\
+&= \int_0^1 e^{2\pi i kx} e^{-2\pi i \ell x} ~dx \\
+&= \int_0^1 e^{2\pi i (k-\ell) x} ~dx
 .\end{align*}
 \]
 
