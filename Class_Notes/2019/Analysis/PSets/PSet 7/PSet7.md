@@ -246,7 +246,7 @@ Similarly,
 \begin{align*}
 \inner{\cos(2\pi n x)}{\cos(2\pi m x)}
 &= \int_0^1 \cos(2\pi n x) \cos(2\pi m x) ~dx \\
-&= \frac 1 2 \int_0^1 \cos(2\pi(m+n)x) + \cos(2\pi (m-n) x) ~dx
+&= \frac 1 2 \int_0^1 \cos(2\pi(m+n)x) + \cos(2\pi (m-n) x) ~dx \\
 &= 0
 .\end{align*}
 \]
@@ -255,7 +255,7 @@ Similarly,
 \begin{align*}
 \inner{\sin(2\pi n x)}{\sin(2\pi m x)}
 &= \int_0^1 \sin(2\pi n x) \sin(2\pi m x) ~dx \\
-&= \frac 1 2 \int_0^1 \cos(2\pi(m-n)x) + \cos(2\pi (m+n) x) ~dx
+&= \frac 1 2 \int_0^1 \cos(2\pi(m-n)x) + \cos(2\pi (m+n) x) ~dx \\
 &= 0
 .\end{align*}
 \]
