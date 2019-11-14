@@ -3279,3 +3279,51 @@ $2\implies 3$: $A = PI_n Q = PQ$ where $P, Q$ are invertible, so $PQ = A$ is inv
 $3\implies 1$: If $A$ is invertible, then $A: D^n \to D^n$ is bijective and thus surjective, so $\dim \im A = n$.
 
 > Note: image is row space because action is done on the left.
+
+## Determinants
+
+**Definition:**
+Let $M_1, \cdots, M_n$ be $R\dash$modules, and then $f: \Prod M_i \to R$ is $n\dash$linear iff 
+\[
+\begin{align*}
+f(
+m_1, m_2, \cdots, rm_k + sm_k', \cdots, m_n
+) = r f(m_1, \cdots, m_k, \cdots m_k) + sf(m_1, \cdots, m_k', \cdots, m_n)
+.\end{align*}
+\]
+Example:
+The inner product is a 2-linear form.
+
+**Definition:**
+$f$ is *symmetric* iff $f(m_1, \cdots, m_n) = f(m_{\sigma(1)}, \cdots, m_{\sigma(n)})$ for every $\sigma \in S_n$.
+
+$f$ is *skew-symmetric* iff$ f(m_1, \cdots, m_n) = \mathrm{sgn}(\sigma) f(m_{\sigma(1)}, \cdots, m_{\sigma(n)})$ for every $\sigma \in S_n$,
+where $\mathrm{sgn}(\sigma) = 1$ if $\sigma$ is even and $-1$ if $\sigma$ is odd.
+
+$f$ is *alternating* iff $m_i = m_j$ for some pair $i, j$ implies $f(m_1, \cdots, m_n) = 0$.
+
+**Theorem:**
+Let $f$ be an $n\dash$linear form.
+If $f$ is alternating, then $f$ is skew-symmetric.
+
+*Proof:*
+It suffices to show this to the $n=2$ case.
+We have
+\[
+\begin{align*}
+0 
+&= f(m+1 + m_2, m_1 + m_2) \\
+&= f(m_1, m_1) + f(m_1, m_2) + f(m_2, m_1) + f(m_2, m_2) \\
+&= f(m_1, m_2) + f(m_2, m_1)\\
+&\implies f(m_1, m_2) = - f(m_2, m_1)
+.\end{align*}
+\]
+**Theorem:**
+Let $R$ be a unital commutative ring and let $r\in R$ be arbitrary.
+Then $\exists! f: \prod_{i=1}^n R^n$, an alternating $R\dash$form such that $f(\vector e_i) = r$, where $\vector e_i = [0, 0, \cdots, 0, 1, 0, \cdots, 0, 0]$.
+
+> $R^n$ is a free module, so $f$ will essentially look like a matrix.
+
+*Proof*:
+
+Existence: Let $x_i = [a_{i1}, a_{i2], \cdots, a_{in}]$ and define $f(x_1, \cdots, x_n) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) r \prod_i a_{i \sigma(i)}$.
