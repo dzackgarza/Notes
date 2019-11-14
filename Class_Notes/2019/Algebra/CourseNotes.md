@@ -3326,7 +3326,7 @@ Then $\exists! f: \prod_{i=1}^n R^n$, an alternating $R\dash$form such that $f(\
 
 *Proof*:
 
-Existence: Let $x_i = [a_{i1}, a_{i2], \cdots, a_{in}]$ and define $f(x_1, \cdots, x_n) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) r \prod_i a_{i \sigma(i)}$.
+Existence: Let $x_i = [a_{i1}, a_{i2}, \cdots, a_{in}]$ and define $f(x_1, \cdots, x_n) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) r \prod_i a_{i \sigma(i)}$.
 You can check that $f(\vector e_1, \cdots, \vector e_n) = r$ and $f$ is $n\dash$linear.
 Moreover, $f$ is alternating: consider $f(x_1, \cdots, x_n)$ where $x_i = x_j$ for some $i\neq j$.
 Let $\pho = (i, j)$, we can write $S_n = A_n \disjoint A_n \rho$.
