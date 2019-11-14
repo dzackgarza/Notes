@@ -3335,12 +3335,11 @@ If $\sigma$ is even, then the summand is $(+1)r a_{1\sigma(1)} \cdots a_{n\sigma
 
 Since $x_i = x_j$, we'll have $\prod_k a_{ik} = \prod a_{jk}$.
 Then consider applying $\sigma \rho$.
-We have $
+We have $$
 -r \prod a_{i\sigma(i)} = -r a_{1\sigma(1)} \cdots a_{j \sigma(j)} \cdots a_{i \sigma(i)} \cdots a_{n, \sigma(n)}
 =
-
 -r \prod a_{i\sigma(i)} = -r a_{1\sigma(1)} \cdots a_{i \sigma(i)} \cdots a_{j \sigma(j)} \cdots a_{n, \sigma(n)}
-$,
+$$
 and so these two terms cancel. (Note that the remaining terms are untouched.)
 
 Uniqueness: let $x_i = \sum_j a_{ij} \vector e_j$. Then
