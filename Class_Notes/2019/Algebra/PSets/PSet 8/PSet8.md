@@ -69,5 +69,5 @@ $$
 
 We identify
 $$
-\ZZ^* = \hom(\ZZ, \ZZ)
+\ZZ^* = \hom_\ZZ(\ZZ, \ZZ)
 $$
