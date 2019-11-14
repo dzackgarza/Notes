@@ -44,23 +44,13 @@ $$
 
 The claim is that $\ZZ_n[m] \cong \ZZ_{(m, n)}$, from which the result immediately follows by part 1.
 
-Expanding definitions, we have
-\[
-\begin{align*}
-\ZZ_n[m] &= \theset{x \in \ZZ_n \suchthat mx = 0} \\
-&= \theset{x \in \ZZ_n \suchthat o(x) \divides m ~\text{ and }~ o(x) \divides n} \\
-&= \theset{x \in \ZZ_n \suchthat o(x) \divides \gcd(m, n)} \\
-&\cong \ZZ_{\gcd(m, n)}
-,\end{align*}
-\]
-
-where the latter identification can be made by constructing
+Define a map
 $$
 \phi: \ZZ \to \ZZ_n[m] \\ 
 x \mapsto x\mod n
 $$
 
-Then 
+Then $\phi$ is clearly surjective, since it is a quotient map, and
 \[
 \begin{align*}
 \ker \phi &= \theset{x\in \ZZ \suchthat x \equiv 0 \mod n ~\text{ and }~ mx = 0} \\
@@ -69,3 +59,8 @@ Then
 &= \ZZ_{\gcd(m, n)}
 .\end{align*}
 \]
+
+By the first isomorphism theorem, we have
+$$
+\frac{\ZZ}{\ker \phi} \cong \im \phi \implies \ZZ_{\gcd(m, n)} \definedas \frac{\ZZ}{\gcd(m, n)\ZZ} \cong \ZZ_n[m].
+$$
