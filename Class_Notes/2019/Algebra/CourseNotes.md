@@ -3254,4 +3254,14 @@ You can now multiply on the *right* by elementary matrices to do column operatio
 Let $A \in M_{m, n}(R)$ where $R$ is a PID. 
 Then $A$ is equivalent to a matrix with $L_r$ in the top-left block, where $L_r$ is a diagonal matrix where $d_1 \divides d_2 \divides \cdots \divides d_r$, where each $(d_i)$ is uniquely determined.
 
-and the column operations
+# Thursday November 14
+
+Let $D$ be a division ring and $k$ a field.
+Then $A$ is *equivalent* to $B$ iff $\exists P, Q$ such that $PBQ=A$.
+If $\rank(A) = r$, then $A$ is equivalent to a matrix with $I_r$ in the top-left block.
+
+**Theorem:**
+Let $A$ be a matrix over a PID $R$. 
+Then $A$ is equivalent to a matrix with $L_r$ in the top-left corner, where $L_r = \diag(d_1, d_2, \cdots, d_r)$ and $d_1 \divides d_2 \divides \cdots \divides d_r$, and the $d_i$ are uniquely determined.
+
+
