@@ -48,7 +48,7 @@ Expanding definitions, we have
 \[
 \begin{align*}
 \ZZ_n[m] &= \theset{x \in \ZZ_n \suchthat mx = 0} \\
-&= \theset{x \in \ZZ_n \suchthat n \divides mx} \\
+&= \theset{x \in \ZZ_n \suchthat o(x) } \\
 &= \theset{x \in \ZZ_n} 
 .\end{align*}
 \]
