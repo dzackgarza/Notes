@@ -3327,3 +3327,44 @@ Then $\exists! f: \prod_{i=1}^n R^n$, an alternating $R\dash$form such that $f(\
 *Proof*:
 
 Existence: Let $x_i = [a_{i1}, a_{i2], \cdots, a_{in}]$ and define $f(x_1, \cdots, x_n) = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) r \prod_i a_{i \sigma(i)}$.
+You can check that $f(\vector e_1, \cdots, \vector e_n) = r$ and $f$ is $n\dash$linear.
+Moreover, $f$ is alternating: consider $f(x_1, \cdots, x_n)$ where $x_i = x_j$ for some $i\neq j$.
+Let $\pho = (i, j)$, we can write $S_n = A_n \disjoint A_n \rho$.
+
+If $\sigma$ is even, then the summand is $(+1)r a_{1\sigma(1)} \cdots a_{n\sigma(n)}$.
+
+Since $x_i = x_j$, we'll have $\prod_k a_{ik} = \prod a_{jk}$.
+Then consider applying $\sigma \rho$.
+We have $
+-r \prod a_{i\sigma(i)} = -r a_{1\sigma(1)} \cdots a_{j \sigma(j)} \cdots a_{i \sigma(i)} \cdots a_{n, \sigma(n)}
+=
+
+-r \prod a_{i\sigma(i)} = -r a_{1\sigma(1)} \cdots a_{i \sigma(i)} \cdots a_{j \sigma(j)} \cdots a_{n, \sigma(n)}
+$,
+and so these two terms cancel. (Note that the remaining terms are untouched.)
+
+Uniqueness: let $x_i = \sum_j a_{ij} \vector e_j$. Then
+
+\[
+\begin{align*}
+f(x_1, \cdots, x_n) 
+&= f(\sum_{j_1} a^1_j \vector e_j, \cdots, \sum_{j_n} a^n_j \vector e_j)
+&= \sum_{j_1} \cdots \sum_{j_n} f(\vector e_{j_1}, \cdots, \vector e_{j_n} ) a_{1, j_1} \cdots a_{n, j_n} \\
+&= \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) f(\vector e_1, \cdots, \vector e_n) a_{1, \sigma(1)} \cdots a_{n, \sigma(n)}
+&= \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) r a_{1, \sigma(1)} \cdots a_{n, \sigma(n)}
+.\end{align*}
+\]
+
+**Definition:**
+Let $R$ be a commutative unital ring and define $d \coloneqq \mathrm{det}: M_n(R) \to R$ is the unique $n\dash$alternating form with $\det(I) = 1$, and is called the *determinant*.
+
+**Theorem:**
+Let $A, B \in M_{n}(R)$. Then
+
+- $\abs{AB} = \abs A \abs B$
+- $A$ is invertible iff $\abs{A} \in R\units$
+- $A \sim B$ implies that $\abs A = \abs B$.
+- $\abs{A^t} = \abs A$.
+- If $A$ is triangular, then $\abs A$ is the product of the diagonal entries.
+
+
