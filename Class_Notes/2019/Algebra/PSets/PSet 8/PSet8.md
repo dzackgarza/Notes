@@ -10,5 +10,5 @@ Define a map
 
 $$
 \phi: A \to \ZZ_m \\
-a \mapsto 
+a \mapsto m\cdot a
 $$
