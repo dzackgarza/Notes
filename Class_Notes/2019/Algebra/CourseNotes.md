@@ -3283,7 +3283,7 @@ $3\implies 1$: If $A$ is invertible, then $A: D^n \to D^n$ is bijective and thus
 ## Determinants
 
 **Definition:**
-Let $M_1, \cdots, M_n$ be $R\dash$modules, and then $f: \Prod M_i \to R$ is $n\dash$linear iff 
+Let $M_1, \cdots, M_n$ be $R\dash$modules, and then $f: \prod M_i \to R$ is $n\dash$linear iff 
 \[
 \begin{align*}
 f(
@@ -3374,5 +3374,8 @@ Then this is an alternating form, so by the theorem, $\Delta_B = r \mathrm{det}$
 But then $\Delta_B(C) = r\abs{C}$, so $r\abs{C} = \abs{CB}$.
 So pick $C = I$, then $r = \abs{B}$.
 
+Proof of b:
+Suppose $A$ is invertible. 
+Then $AA\inv = I$, so $\abs{AA\inv} = \abs{A}\abs{A\inv} = 1$, which shows that $\abs A$ is a unit.
 
 
