@@ -45,3 +45,8 @@ $$
 The claim is that $\ZZ_n[m] \cong \ZZ_{(m, n)}$, from which the result immediately follows by part 1.
 
 Expanding definitions, we have
+\[
+\begin{align*}
+
+.\end{align*}
+\]
