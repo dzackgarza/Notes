@@ -9,6 +9,8 @@ title: Problem Set 8
 Define a map
 
 $$
-\phi: A \to \ZZ_m \\
-a \mapsto m\cdot a
+\phi: \hom_R(\ZZ_m, A) \to A \\
+(f: \ZZ_m \to A) \mapsto f(1)
 $$
+
+Then noting that homomorphisms preserve orders, this forces $m f(1) = 0_A$
