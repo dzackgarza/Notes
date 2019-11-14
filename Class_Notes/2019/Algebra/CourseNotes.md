@@ -3397,3 +3397,4 @@ Let $A = (a_{ij})$, so $B = (b_{ij}) = (a_{ji})$. Then
 
 Proof of e:
 Let $A$ be upper-triangular.
+
