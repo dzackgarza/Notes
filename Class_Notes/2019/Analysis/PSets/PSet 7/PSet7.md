@@ -292,6 +292,7 @@ Thus this set is orthonormal.
 
 ### i
 
+By the Weierstrass approximation theorem for functions in $L^1$, we can find a polynomials $P_n(x)$ such that $\norm{f - P_n}_\infty \to 0$
 ### ii
 # Problem 5
 
