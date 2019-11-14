@@ -3264,4 +3264,18 @@ If $\rank(A) = r$, then $A$ is equivalent to a matrix with $I_r$ in the top-left
 Let $A$ be a matrix over a PID $R$. 
 Then $A$ is equivalent to a matrix with $L_r$ in the top-left corner, where $L_r = \diag(d_1, d_2, \cdots, d_r)$ and $d_1 \divides d_2 \divides \cdots \divides d_r$, and the $d_i$ are uniquely determined.
 
+**Theorem:**
+Let $A$ be an $n\times n$ matrix over a division ring $D$.
+TFAE:
 
+1. $\rank A = n$
+2. $A$ is equivalent to $I_n$
+3. $A$ is invertible
+
+$1\implies 2$: Use Gaussian elimination.
+
+$2\implies 3$: $A = PI_n Q = PQ$ where $P, Q$ are invertible, so $PQ = A$ is invertible.
+
+$3\implies 1$: If $A$ is invertible, then $A: D^n \to D^n$ is bijective and thus surjective, so $\dim \im A = n$.
+
+> Note: image is row space because action is done on the left.
