@@ -3297,7 +3297,7 @@ The inner product is a 2-linear form.
 **Definition:**
 $f$ is *symmetric* iff $f(m_1, \cdots, m_n) = f(m_{\sigma(1)}, \cdots, m_{\sigma(n)})$ for every $\sigma \in S_n$.
 
-$f$ is *skew-symmetric* iff$ f(m_1, \cdots, m_n) = \mathrm{sgn}(\sigma) f(m_{\sigma(1)}, \cdots, m_{\sigma(n)})$ for every $\sigma \in S_n$,
+$f$ is *skew-symmetric* iff $f(m_1, \cdots, m_n) = \mathrm{sgn}(\sigma) f(m_{\sigma(1)}, \cdots, m_{\sigma(n)})$ for every $\sigma \in S_n$,
 where $\mathrm{sgn}(\sigma) = 1$ if $\sigma$ is even and $-1$ if $\sigma$ is odd.
 
 $f$ is *alternating* iff $m_i = m_j$ for some pair $i, j$ implies $f(m_1, \cdots, m_n) = 0$.
