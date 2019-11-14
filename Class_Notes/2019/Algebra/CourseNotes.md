@@ -3378,4 +3378,16 @@ Proof of b:
 Suppose $A$ is invertible. 
 Then $AA\inv = I$, so $\abs{AA\inv} = \abs{A}\abs{A\inv} = 1$, which shows that $\abs A$ is a unit.
 
+Proof of c:
+Let $A = PBP\inv$. 
+Then $\abs A = \abs{PBP\inv} = \abs P \abs B \abs{P\inv} = \abs{P} \abs{P\inv} \abs B = \abs B$.
 
+Proof of d:
+Let $A = (a_{ij})$, so $B = (b_{ij}) = (a_{ji})$. Then
+\[
+\begin{align*}
+\abs{A^t} 
+&= \sum \mathrm{sgn}(\sigma) \prod_k b_{k \sigma(k)} \\
+&= \sum \mathrm{sgn}(\sigma) \prod_k b_{k \sigma(k)} \\
+.\end{align*}
+\]
