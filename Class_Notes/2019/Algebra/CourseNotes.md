@@ -3397,3 +3397,11 @@ Let $A = (a_{ij})$, so $B = (b_{ij}) = (a_{ji})$. Then
 Proof of e:
 Let $A$ be upper-triangular.
 Then $\abs A = \sum_\sigma \mathrm{sgn}(\sigma) \prod_k a_{k \sigma(k)} = a_{11} a_{22} \cdots a_{nn}$.
+
+Next time:
+
+- Calculate determinants
+	- Gaussian elimination
+	- Cofactors
+- Formulas for $A\inv$
+- Cramer's rule
