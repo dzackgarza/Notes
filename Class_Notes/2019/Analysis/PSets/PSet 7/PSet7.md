@@ -13,7 +13,7 @@ $$
 \vector x_i \definedas \lim_{n\to\infty} x_i^n.
 $$
 
-This is well-defined since $\norm{x^j - x^k}_{\ell^2} = \sum_i \abs{x^j_i - x^k_i}^2 \to 0$, and since this is a sum of positive real numbers that approaches zero, each term must approach zero. But then for a fixed $i$, the sequence $\abs{x_i^j - x^k_i}^2$ is a Cauchy sequence of real numbers which necessarily converges in $\RR$.
+This is well-defined since $\norm{x^j - x^k}_{\ell^2} = \sum_i \abs{x^j_i - x^k_i}^2 \to 0$, and since this is a sum of positive real numbers that approaches zero, each term must approach zero. But then for a fixed $i$, the sequence $\abs{x_i^j - x^k_i}^2$ is a Cauchy sequence of real numbers which necessarily converges by completeness of $\RR$.
 
 We also have $\norm{\vector x - x^j}_{\ell^2} \to 0$ since 
 $$
@@ -32,7 +32,7 @@ It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vec
 \end{align*}
 \]
 
-where $\norm{\vector x_i - x^j}_{\ell^2} \to 0$ and the second sum is finite because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} \definedas M < \infty$. $\qed$
+where $\lim_j \norm{\vector x - x^j}_{\ell^2} = 0$ by the previous argument, and the second term is bounded because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} \definedas M < \infty$. $\qed$
 
 ## Part b
 Let $H$ be a Hilbert space with inner product $\inner{\wait}{\wait}$ and induced norm $\norm{\wait}$.
@@ -44,7 +44,7 @@ $$
 \Im(z) = \Re(-iz),
 $$
 
-and as a corollary, we have
+and as a corollary, since the inner product on $H$ takes values in $\CC$, we have
 $$
 \Re(\inner{x}{iy}) =  \Re(-i\inner{x}{y}) = \Im(\inner{x}{y}).
 $$
@@ -98,9 +98,10 @@ $\qed$
 
 # Problem 2
 
-Lemma: The map $\inner{\wait}{\wait}: H \cross H \to \RR$ is continuous.
+**Lemma:**
+The map $\inner{\wait}{\wait}: H \cross H \to \RR$ is continuous.
 
-Proof:
+*Proof:*
 
 Let $x_n \to x$ and $y_n \to y$, then
 \[
@@ -122,6 +123,7 @@ where $\norm{y_n} \to M$ since $y_n \to y$ implies that $\norm{y_n}$ is bounded.
 
 ## Part a:
 
+We want to show that sequences in $E^\perp$ converge to elements of $E^\perp$.
 Using the lemma, letting $\theset{e_n}$ be a sequence in $E^\perp$, so $y\in E \implies \inner{e_n}{y} = 0$. Since $H$ is complete, $e_n \to e \in H$; we can show that $e \in E^\perp$ by letting $y\in E$ be arbitrary and computing
 \[
 \begin{align*}
@@ -221,8 +223,31 @@ We can also compute
 \]
 # Problem 4
 
-Todo
+## Part a
 
+### i
+
+We can first note that $\inner{1/\sqrt{2}}{\cos(2\pi nx)} = \inner{1/\sqrt{2}}{\sin(2\pi m x)} = 0$ for any $n$ or $m$, since this involves integrating either sine or cosine over a complete period.
+
+Letting $m,n \in \ZZ$, we can then compute
+\[
+\begin{align*}
+\inner{\cos(2\pi n x)}{\sin(2\pi m x)}
+&= \int_0^1 \cos(2\pi n x) \sin(2\pi m x) ~dx \\
+&= \frac 1 2 \int_0^1 \sin(2\pi(n+m)x) - \sin(2\pi (n-m)x) ~dx \\
+&= \frac 1 2 \int_0^1 \sin(4\pi n x) ~ dx \quad \text{if $n=m$} \\
+&= \frac 1 2 \frac{-1}{4\pi n} \cos(4\pi n x)\bigr|_{x=0}^{x=1} \\
+&= 
+.\end{align*}
+\]
+
+### ii
+
+## Part b
+
+### i
+
+### ii
 # Problem 5
 
 ## Part 1
@@ -309,4 +334,3 @@ And thus $p(x) = \frac 2 5 x$ is the minimizer.
 
 ## Part c
 
-Todo
