@@ -227,7 +227,7 @@ We can also compute
 
 ### i
 
-We can first note that $\inner{1/\sqrt{2}}{\cos(2\pi nx)} = \inner{1/\sqrt{2}}{\sin(2\pi m x)} = 0$ for any $n$ or $m$, since this involves integrating either sine or cosine over a complete period.
+We can first note that $\inner{1/\sqrt{2}}{\cos(2\pi nx)} = \inner{1/\sqrt{2}}{\sin(2\pi m x)} = 0$ for any $n$ or $m$, since this involves integrating either sine or cosine over an integer multiple of its period.
 
 Letting $m,n \in \ZZ$, we can then compute
 \[
@@ -239,7 +239,7 @@ Letting $m,n \in \ZZ$, we can then compute
 &= 0
 ,\end{align*}
 \]
-which again follows from integration of sine over an entire period, where we note that $m+n, m-n \in \ZZ$.
+which again follows from integration of sine over a multiple of its period (where we use the fact that $m+n, m-n \in \ZZ$).
 
 Similarly,
 \[
@@ -247,6 +247,16 @@ Similarly,
 \inner{\cos(2\pi n x)}{\cos(2\pi m x)}
 &= \int_0^1 \cos(2\pi n x) \cos(2\pi m x) ~dx \\
 &= \frac 1 2 \int_0^1 \cos(2\pi(m+n)x) + \cos(2\pi (m-n) x) ~dx
+&= 0
+.\end{align*}
+\]
+
+\[
+\begin{align*}
+\inner{\cos(2\pi n x)}{\cos(2\pi m x)}
+&= \int_0^1 \cos(2\pi n x) \cos(2\pi m x) ~dx \\
+&= \frac 1 2 \int_0^1 \cos(2\pi(m+n)x) + \cos(2\pi (m-n) x) ~dx
+&= 0
 .\end{align*}
 \]
 
