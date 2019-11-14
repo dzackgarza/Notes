@@ -61,3 +61,8 @@ x \mapsto x\mod n
 $$
 
 Then $\ker \phi = \theset{x\in \ZZ \suchthat x \equiv 0 \mod n ~\text{ and }~ mx = 0}$
+\[
+\begin{align*}
+
+.\end{align*}
+\]
