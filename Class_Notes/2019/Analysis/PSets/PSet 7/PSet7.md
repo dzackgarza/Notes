@@ -236,6 +236,7 @@ Letting $m,n \in \ZZ$, we can then compute
 &= \int_0^1 \cos(2\pi n x) \sin(2\pi m x) ~dx \\
 &= \frac 1 2 \int_0^1 \sin(2\pi(n+m)x) - \sin(2\pi (n-m)x) ~dx \\
 &= \frac 1 2 \int_0^1 \sin(2\pi(n+m)x) - \frac 1 2 \int_0^1 \sin(2\pi (n-m)x) ~dx \\
+&= \frac 1 2 \frac{-\cos(2\pi(n+m))}{2\pi(n+m)} - \frac 1 2 \frac{\cos(2\pi (n-m))}{2\pi(n-m)}
 .\end{align*}
 \]
 
