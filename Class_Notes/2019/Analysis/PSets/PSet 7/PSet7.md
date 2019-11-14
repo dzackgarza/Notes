@@ -292,7 +292,13 @@ Thus this set is orthonormal.
 
 ### i
 
-By the Weierstrass approximation theorem for functions in $L^1$, we can find a polynomials $P_n(x)$ such that $\norm{f - P_n}_\infty \to 0$
+By the Weierstrass approximation theorem for functions in $L^1$, we can find a polynomials $P_n(x)$ such that $\norm{f - P_n}_\infty \to 0$, i.e. the $P_n$ uniformly approximate $f$.
+
+Letting $\varepsilon > 0$, we can thus choose a $P$ such that $\norm{f - P}_\infty < \varepsilon$, so we can write
+$$
+f(x) = P(x) + (f(x) - P(x))
+$$
+
 ### ii
 # Problem 5
 
