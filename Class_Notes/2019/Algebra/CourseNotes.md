@@ -3262,7 +3262,7 @@ If $\rank(A) = r$, then $A$ is equivalent to a matrix with $I_r$ in the top-left
 
 **Theorem:**
 Let $A$ be a matrix over a PID $R$. 
-Then $A$ is equivalent to a matrix with $L_r$ in the top-left corner, where $L_r = \diag(d_1, d_2, \cdots, d_r)$ and $d_1 \divides d_2 \divides \cdots \divides d_r$, and the $d_i$ are uniquely determined.
+Then $A$ is equivalent to a matrix with $L_r$ in the top-left corner, where $L_r = \mathrm{diag}(d_1, d_2, \cdots, d_r)$ and $d_1 \divides d_2 \divides \cdots \divides d_r$, and the $d_i$ are uniquely determined.
 
 **Theorem:**
 Let $A$ be an $n\times n$ matrix over a division ring $D$.
@@ -3361,10 +3361,18 @@ Let $R$ be a commutative unital ring and define $d \coloneqq \mathrm{det}: M_n(R
 **Theorem:**
 Let $A, B \in M_{n}(R)$. Then
 
-- $\abs{AB} = \abs A \abs B$
-- $A$ is invertible iff $\abs{A} \in R\units$
-- $A \sim B$ implies that $\abs A = \abs B$.
-- $\abs{A^t} = \abs A$.
-- If $A$ is triangular, then $\abs A$ is the product of the diagonal entries.
+a. $\abs{AB} = \abs A \abs B$
+b. $A$ is invertible iff $\abs{A} \in R\units$
+c. $A \sim B$ implies that $\abs A = \abs B$.
+d. $\abs{A^t} = \abs A$.
+e. If $A$ is triangular, then $\abs A$ is the product of the diagonal entries.
+
+Proof of a:
+Let $B$ be fixed.
+Let $\Delta_B: M_n(R) \to R$ be defined as $C \mapsto \abs{CB}$.
+Then this is an alternating form, so by the theorem, $\Delta_B = r \mathrm{det}$.
+But then $\Delta_B(C) = r\abs{C}$, so $r\abs{C} = \abs{CB}$.
+So pick $C = I$, then $r = \abs{B}$.
+
 
 
