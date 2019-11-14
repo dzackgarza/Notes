@@ -47,6 +47,7 @@ The claim is that $\ZZ_n[m] \cong \ZZ_{(m, n)}$, from which the result immediate
 Expanding definitions, we have
 \[
 \begin{align*}
-
+\ZZ_n[m] &= \theset{x \in \ZZ_n \mid mx = 0} \\
+&= \theset{}
 .\end{align*}
 \]
