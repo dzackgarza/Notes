@@ -285,7 +285,7 @@ We have
 ,\end{align*}
 \]
 
-since $e^{2\pi k} = 1$ for every $k\in Z$, and $k-\ell \in \ZZ$.
+since $e^{2\pi i k} = 1$ for every $k\in Z$, and $k-\ell \in \ZZ$.
 
 ## Part b
 
