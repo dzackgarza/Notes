@@ -41,3 +41,5 @@ $$
 $$
 
 ## Part 2
+
+The claim is that $\ZZ_m[n]
