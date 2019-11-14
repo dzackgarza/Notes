@@ -294,12 +294,22 @@ Thus this set is orthonormal.
 
 By the Weierstrass approximation theorem for functions on a bounded interval, we can find a polynomials $P_n(x)$ such that $\norm{f - P_n}_\infty \to 0$, i.e. the $P_n$ uniformly approximate $f$ on $[0, 1]$.
 
-Letting $\varepsilon > 0$, we can thus choose a $P$ such that $\norm{f - P}_\infty < \varepsilon$, so we can write
+Letting $\varepsilon > 0$, we can thus choose a $P$ such that $\norm{f - P}_\infty < \varepsilon$, which necessarily implies that $\norm{f - P}_{L^1} < \varepsilon$ since we have
+$$
+\int_0^1 \abs{f(x) - P(x)}~ dx \leq \int_0^1 \varepsilon ~dx = \varepsilon.
+$$
+
+
+Thus we can write
 $$
 f(x) = P(x) + (f(x) - P(x))
 $$
 
-It only remains to show that $P \in L^2([0, 1])$, but this follows from the fact that any polynomial on a compact interval is continuous
+where $h(x) \coloneqq f(x) - P(x)$ satisfies $\norm{h}_{L^1} < \varepsilon$.
+It only remains to show that $P \in L^2([0, 1])$, but this follows from the fact that any polynomial on a compact interval is uniformly bounded, say $\abs{P(x)} \leq M < \infty$ for all $x\in [0, 1]$, and thus
+$$
+\norm{P}_{L^2}^2 = \int_0^1 \abs{P(x)}^2 ~dx \leq \int_0^1 M^2 ~dx = M^2 < \infty.
+$$
 
 ### ii
 
