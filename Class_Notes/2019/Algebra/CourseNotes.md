@@ -3205,7 +3205,7 @@ Note that in this case, $\dim R(A) = \dim C(A)$, and in fact these are always eq
 
 **Theorem (Rank and Equivalence):**
 Let $\phi: V\to W$ be a linear transformation and $A$ be the matrix of $\phi$ relative to $\beta_v, \beta_v'$.
-Then $\dim \im \pi = \dim \C(A) = \dim R(A)$.
+Then $\dim \im \pi = \dim C(A) = \dim R(A)$.
 
 *Proof*:
 Construct the matrix $A = [\phi]_{\beta_v, \beta_w}$. 
