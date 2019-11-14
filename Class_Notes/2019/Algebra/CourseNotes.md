@@ -3388,6 +3388,8 @@ Let $A = (a_{ij})$, so $B = (b_{ij}) = (a_{ji})$. Then
 \begin{align*}
 \abs{A^t} 
 &= \sum \mathrm{sgn}(\sigma) \prod_k b_{k \sigma(k)} \\
-&= \sum \mathrm{sgn}(\sigma) \prod_k a_{k \sigma(k)} \\
+&= \sum \mathrm{sgn}(\sigma) \prod_k a_{\sigma(k) k} \\
+&= \sum \mathrm{sgn}(\sigma) \prod_k a_{k \sigma\inv(k)} \\
+&= \sum \mathrm{sgn}(\sigma) \prod_k a_{k \sigma\inv(k)} \\
 .\end{align*}
 \]
