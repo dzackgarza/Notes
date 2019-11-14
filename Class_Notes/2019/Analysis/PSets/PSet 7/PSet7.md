@@ -267,7 +267,17 @@ Similarly,
 .\end{align*}
 \]
 
+Thus each pairwise combination of elements are orthonormal, making the entire set orthonormal.
+
 ### ii
+
+We have
+\[
+\begin{align*}
+\inner{e^{2\pi k x}}{e^{-2\pi i \ell x}} &=
+\int_0^1 e^{2\pi i kx} \overline{e^{2\pi i \ell x}} ~dx
+.\end{align*}
+\]
 
 ## Part b
 
