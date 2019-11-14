@@ -311,7 +311,11 @@ $$
 \norm{P}_{L^2}^2 = \int_0^1 \abs{P(x)}^2 ~dx \leq \int_0^1 M^2 ~dx = M^2 < \infty.
 $$
 
+It follows that we can let $g = P$ and $h = f - p$ to obtain the desired result.
+
 ### ii
+
+
 
 # Problem 5
 
