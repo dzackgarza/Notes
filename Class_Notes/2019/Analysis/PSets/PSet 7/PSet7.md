@@ -280,10 +280,12 @@ We have
 &= \int_0^1 e^{2\pi i (k-\ell) x} ~dx \\
 &(= \int_0^1 1 ~dx = 1 \quad \text{if $k=\ell$, otherwise:}) \\
 &= \frac{e^{2\pi i (k-\ell) x} }{2\pi i (k-\ell)}  \Bigr|_{0}^1 \\
-&= \frac{e^{2\pi i (k-\ell)} }{2\pi i (k-\ell)} - \frac{1}{2\pi i (k-\ell)} \\
-&= ?
-.\end{align*}
+&= \frac{e^{2\pi i (k-\ell)} - 1}{2\pi i (k-\ell)} \\ 
+&= 0
+,\end{align*}
 \]
+
+since $e^{2\pi k} = 1$ for every $k\in Z$, and $k-\ell \in \ZZ$.
 
 ## Part b
 
