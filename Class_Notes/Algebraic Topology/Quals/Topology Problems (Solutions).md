@@ -329,7 +329,7 @@ To see what the boundary curve is, label the corners $a,b$ with the suitable ide
 
 2. Theorem: if $M_g \surjects M_h$ is an $n-$sheeted covering space, then $g = n(h-1) +1$.
 
-![](file:///C:/Users/Zack/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
+![](assets/clip_image001.png)
 
 3. Draw CW square for $T$ and cut down the center to see two copies of $K$.
 
