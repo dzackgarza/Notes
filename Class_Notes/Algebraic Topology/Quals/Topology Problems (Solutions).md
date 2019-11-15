@@ -473,7 +473,7 @@ H_0 \partial M \arrow[rr, "{(i^*, -j^*)_0}"] &  & H_0 M \oplus H_0 D^2 \arrow[rr
 
 and plugging in what is known yields
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```{=latex}
 \documentclass[crop, tikz]{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
@@ -532,7 +532,7 @@ We will show that $\ker \delta_2 = \im \delta_2 = 0$. By the first isomorphism t
   But then $\ker (i^1, -j^1) = \im \delta_2 = 0$ by exactness.
 
 So now we have:
-```latex {cmd:true, hide:false, run_on_save:true}
+```{=latex}
 \documentclass[crop, tikz]{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
@@ -578,7 +578,7 @@ Note that $l^1 - r^1$ is a nontrivial homomorphism from $2\ZZ\cong \ZZ$ to $\ZZ_
 There is also no nontrivial homomorphism from $\ZZ_2 \to \ZZ$, so $\delta_1 = 0$.
 
 We now have:
-```latex {cmd:true, hide:false, run_on_save:true}
+```{=latex}
 \documentclass[crop, tikz]{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
@@ -621,7 +621,7 @@ By a similar argument used earlier, the double covering of the boundary circle $
 
 With all of this information, we finally have
 
-```latex {cmd:true, hide:false, run_on_save:true}
+```{=latex} 
 \documentclass[crop, tikz]{standalone}
 \usepackage{tikz}
 \usepackage{dsfont}
