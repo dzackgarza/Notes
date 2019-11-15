@@ -306,10 +306,13 @@ Now we have all we need - let $X = S^2 - \theset{p_1, p_2}$ and $Y = S^3 - \thes
 
 8. Here we go:
 
-1. Let $\alpha(t) = e^{2\pi it}$ where $t \in [0, 1]$, be a loop in $S^1$ parameterized by $t$, which goes around $S^1$ exactly once. Then under the map $f: z \mapsto z^n$, we obtain $f(\alpha(t)) = e^{2\pi n i t}$ where $t \in [0,1]$. This resulting loop then goes around $S^1$ $n$ times, so the induced homomorphism on $\pi_1(S^1) = \ZZ$ is the map $f^*: \ZZ \into \ZZ$ given by $f^*(a) = na$.
-2. Define $\alpha$ as above, and define $f: S^1 \into S^1$ to be the antipodal map, so $f(z) = -z$ for $z \in S^1 \subset \CC$. We then left $\alpha$ to the fundamental group, and define $f_*([\alpha]) = [f \circ \alpha]$. Computing, we have $(f\circ \alpha)(t) = f(\alpha(t)) = -e^{2\pi i t}$. Where $\alpha(0) = \alpha(1) = 1 + 0i$, we have $(f\circ \alpha)(0) = (f\circ \alpha)(1) = -1 + 0i$. But note that $\alpha$ was a counter-clockwise loop in $S^1$, and the image of $\alpha$ is also a counter-clockwise loop. So this maps the generator $[\alpha] \in \pi_1(S^1, 1)$ to the generator $[\alpha'] \in \pi_1(S^1, -1)$. But since $S^1$ is path-connected, the fundamental groups at these two base points are isomorphic.
+
+  1. Let $\alpha(t) = e^{2\pi it}$ where $t \in [0, 1]$, be a loop in $S^1$ parameterized by $t$, which goes around $S^1$ exactly once. Then under the map $f: z \mapsto z^n$, we obtain $f(\alpha(t)) = e^{2\pi n i t}$ where $t \in [0,1]$. This resulting loop then goes around $S^1$ $n$ times, so the induced homomorphism on $\pi_1(S^1) = \ZZ$ is the map $f^*: \ZZ \into \ZZ$ given by $f^*(a) = na$.
+
+  2. Define $\alpha$ as above, and define $f: S^1 \into S^1$ to be the antipodal map, so $f(z) = -z$ for $z \in S^1 \subset \CC$. We then left $\alpha$ to the fundamental group, and define $f_*([\alpha]) = [f \circ \alpha]$. Computing, we have $(f\circ \alpha)(t) = f(\alpha(t)) = -e^{2\pi i t}$. Where $\alpha(0) = \alpha(1) = 1 + 0i$, we have $(f\circ \alpha)(0) = (f\circ \alpha)(1) = -1 + 0i$. But note that $\alpha$ was a counter-clockwise loop in $S^1$, and the image of $\alpha$ is also a counter-clockwise loop. So this maps the generator $[\alpha] \in \pi_1(S^1, 1)$ to the generator $[\alpha'] \in \pi_1(S^1, -1)$. But since $S^1$ is path-connected, the fundamental groups at these two base points are isomorphic.
   Alternatively: the antipodal map on $S^1$ is homotopic to the identity map (since $n=1$ is odd), so $[f\circ \alpha] = [f][\alpha] = [\id][\alpha] = [\alpha]$, so the induced homomorphism on $\pi_1(S^1)$ is the identity map.
-3. Let $\alpha(t) = e^{it}$ where $t\in [0, 2\pi]$ be a counter-clockwise loop in $S^1$; then $[\alpha]$ generates the fundamental group. Then $f^*([\alpha]) = [(f\circ \alpha) (t)] = [e^{it} \mapsto e^{2\pi i \sin t}]$. Then just consider how $\sin$ behaves in each quadrant. In quadrant 1, as $t$ ranges from $0, \pi/2$ then $\sin t$ ranges from 0 to 1, so $\alpha$ is exactly traced out. In quadrant two, $\bar\alpha$ is traced out, since $\sin t$ decreases from 1 to 0. This happens again in the bottom quadrants, so we have $f^*([\alpha]) = [\alpha\bar\alpha\alpha\bar\alpha] = [\alpha][\alpha]^{-1}[\alpha][\alpha]^{-1} = [\id]$. But the identity element in $\ZZ$ is  0, so the induced homomorphism on $\ZZ$ is $f^*(a) = 0$, the homomorphism sending everything to 0.
+
+  3. Let $\alpha(t) = e^{it}$ where $t\in [0, 2\pi]$ be a counter-clockwise loop in $S^1$; then $[\alpha]$ generates the fundamental group. Then $f^*([\alpha]) = [(f\circ \alpha) (t)] = [e^{it} \mapsto e^{2\pi i \sin t}]$. Then just consider how $\sin$ behaves in each quadrant. In quadrant 1, as $t$ ranges from $0, \pi/2$ then $\sin t$ ranges from 0 to 1, so $\alpha$ is exactly traced out. In quadrant two, $\bar\alpha$ is traced out, since $\sin t$ decreases from 1 to 0. This happens again in the bottom quadrants, so we have $f^*([\alpha]) = [\alpha\bar\alpha\alpha\bar\alpha] = [\alpha][\alpha]^{-1}[\alpha][\alpha]^{-1} = [\id]$. But the identity element in $\ZZ$ is  0, so the induced homomorphism on $\ZZ$ is $f^*(a) = 0$, the homomorphism sending everything to 0.
 
 9. From complex analysis, $W(f(\alpha(t))) = Z_f - P_f = 4 - 1 = 3$. No idea how to approach with induced maps on the fundamental group of $S^1$ or $\CC - \theset{0}$.
 
@@ -401,9 +404,9 @@ Relevant covers:
   $\del_0 = 0$
 
   And so
-  $H_0 = \ker \del_0/\image\del_1 = \frac{C_0}{<\del_1([ij])>}$, but from the above calculation we have $[5] = [4] = [3] = [2] = [1]$ in the quotient, so there is just one generator and $H_0  \cong \ZZ$.
+  $H_0 = \ker \del_0/\im\del_1 = \frac{C_0}{<\del_1([ij])>}$, but from the above calculation we have $[5] = [4] = [3] = [2] = [1]$ in the quotient, so there is just one generator and $H_0  \cong \ZZ$.
 
-  Note that $\del_2$ is an injection from 0 into $C_1$, since there are no 2-simplices. Moreover, one can generate two 1-cycles, so we have $H_1 = \frac{\ker \del_1}{\image \del_2} =\frac{<[23]-[31] + [12],~[45] - [35] + [34]>}{0} \cong \ZZ^2$.
+  Note that $\del_2$ is an injection from 0 into $C_1$, since there are no 2-simplices. Moreover, one can generate two 1-cycles, so we have $H_1 = \frac{\ker \del_1}{\im \del_2} =\frac{<[23]-[31] + [12],~[45] - [35] + [34]>}{0} \cong \ZZ^2$.
 
   One way to see that these are the generators is to pretend there are two 2-simplices, $[123], [345]$ and compute $\del_2$ of both of them. Since $\del_1\del_2 = 0$, anything in the image of $\del_2$ would have to go to zero anyways, and would thus be in the kernel of $\del_1$. Since it's not actually the boundary of any 2-chain, it doesn't become trivial in homology.
 
@@ -423,10 +426,10 @@ Relevant covers:
 
   We know in advance we should have $\prod H_n = (\cdots,0, \ZZ, 0, \ZZ)$.
   
-  For $H_0 = \frac{\ker \del_0}{\image \del_1} = \frac{C_0}{\left<\theset{j-i \mid i < j}\right>}$. In the quotient, we see $1=6=3=2=5=4$ by just taking the indicated walk on the graph, so there is one generator in the quotient and $H_0 \cong \ZZ$.
+  For $H_0 = \frac{\ker \del_0}{\im \del_1} = \frac{C_0}{\left<\theset{j-i \mid i < j}\right>}$. In the quotient, we see $1=6=3=2=5=4$ by just taking the indicated walk on the graph, so there is one generator in the quotient and $H_0 \cong \ZZ$.
 
-  For $H_1 = \frac{\ker \del_1}{\image \del_2}$, we just note that there are 6 2-cycles, so each are in the kernel of $\del_1$, but each of them comes from a 2-cell, so is in the image of $\del_2$. So both groups in question are $\ZZ^8$, and the quotient is zero.
-  For $H_3 = \frac{\ker\del_2}{\image\del_3}$, since $\image\del_3 = 0$, we can just look at $\del_3([123456]) = 23456 - 13456 + 12456 - 12356 +12346 - 12345$. This is an element (and the only one) that goes to zero under $\del_2$, it generates $\ker\del_2$. So there is one generator, and $H_3 =\ZZ$.
+  For $H_1 = \frac{\ker \del_1}{\im \del_2}$, we just note that there are 6 2-cycles, so each are in the kernel of $\del_1$, but each of them comes from a 2-cell, so is in the image of $\del_2$. So both groups in question are $\ZZ^8$, and the quotient is zero.
+  For $H_3 = \frac{\ker\del_2}{\im\del_3}$, since $\im\del_3 = 0$, we can just look at $\del_3([123456]) = 23456 - 13456 + 12456 - 12356 +12346 - 12345$. This is an element (and the only one) that goes to zero under $\del_2$, it generates $\ker\del_2$. So there is one generator, and $H_3 =\ZZ$.
 
 3. $\RP^2$
 
