@@ -344,7 +344,8 @@ Then
 &\to 0
 ,\end{align*}
 \]
-
+with a similar computation for $\int f(x) \sin(2\pi k x)$. 
+$\qed$
 
 # Problem 5
 
