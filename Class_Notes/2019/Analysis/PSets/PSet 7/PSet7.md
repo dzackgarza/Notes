@@ -445,3 +445,17 @@ $$
 
 by Cauchy-Schwarz, with equality precisely when $g = \lambda(x^3 - p)$ for some scalar $\lambda$.
 However, the restriction $\norm{g} = 1$ forces $\lambda = \norm{x^3-p}\inv$.
+
+A computation shows that 
+\[
+\begin{align*}
+\norm{x^3 - p}^2
+&= \int_0^1 (x^3 - \frac 2 5 x)^2 ~dx \\
+&= \frac{19}{525}
+,\end{align*}
+\]
+
+and so we can take
+$$
+g(x) \coloneq \frac{25}{\sqrt{19}} \left( x^3 - \frac 2 5 x \right).
+$$
