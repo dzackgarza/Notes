@@ -444,4 +444,4 @@ $$
 $$
 
 by Cauchy-Schwarz, with equality precisely when $g = \lambda(x^3 - p)$ for some scalar $\lambda$.
-However, the restriction $\norm{g} = 1$ forces $\lambda = 
+However, the restriction $\norm{g} = 1$ forces $\lambda = 1$
