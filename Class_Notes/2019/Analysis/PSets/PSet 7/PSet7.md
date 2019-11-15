@@ -332,6 +332,8 @@ By Bessel's inequality, we know that $\theset{\hat{f}(k)}_{k\in \NN} \in \ell^1(
 But this is a convergent sequence of real numbers, which necessarily implies that $\abs{\hat{f}(k)} \to 0$.
 In particular, this also means that its real and imaginary parts tend to zero, which is exactly what we wanted to show.
 
+If we instead have $f\in L^1$, write $f = g + h$ where $g\in L^2$ and $\norm{h}_{L^1} \to 0$.
+
 # Problem 5
 
 ## Part 1
