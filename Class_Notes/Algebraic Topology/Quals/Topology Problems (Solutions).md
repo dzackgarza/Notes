@@ -67,7 +67,7 @@ title: Topology Qual Problems
    This is because $I$ is contractible, so $I \homotopic \theset{*}$. (Maybe needs further proof)
 
    Claim: $M \homotopic S^1 \cross \theset{*}$.
-   ​
+   
 
    If both of these claims hold, then we will have $M \homotopic S^1 \cross I$ as two spaces that deformation retract onto a common space.
    Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$.
@@ -185,7 +185,7 @@ title: Topology Qual Problems
    $$
 	 f: S^1 \into X\\
    g: S^1 \into X
-	 ​$$
+	 $$
 
    where $f \homotopic g$. Then there exists a homotopy
 
@@ -203,7 +203,7 @@ title: Topology Qual Problems
 
    With $H$ in hand, we can define the space $R = X \coprod_H B^2 \cross I$, where we recognize $S^1 = \bd B^2$. In particular, $S^1$ is a subspace of $B^2$.
 
-   Claim: Both $P​$ and $Q​$ are subspaces of $R​$.
+   Claim: Both $P$ and $Q$ are subspaces of $R$.
    Since $H(z, 0) = f(z)$. So considering $X \coprod_H B^2 \times \theset{0} \cong X \coprod_f B^2 = P$. A similar argument holds at the point $1\in I$. (*Not a strong argument*)
 
    But note that $B^2 \cross I$ is a solid cylinder, and so can be deformation retracted onto the outer shell plus one of the "lids". Formally, this would be given by $S^1 \times I \cup B^2 \cross \theset{p}$ for some $p\in [0,1]$.
@@ -324,7 +324,7 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
 
 # Group Actions
 
-1. ​
+1. 
 
 # Covering Spaces
 
@@ -337,7 +337,7 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
 3. Draw CW square for $T$ and cut down the center to see two copies of $K$.
 
 4. Let $p: \tilde G \surjects G$ be such a covering, $a,b\in \tilde G$, we then want to show that $p(a)p(b) = p(a\star b)$ for some group operation $\star$ which we need to construct.
-   ​
+   
 
    Pick a basepoint $x\in G$ and any point $\tilde x \in p^{-1}(x)$. Since $\tilde G$ is path connected, pick two paths $\alpha, \beta$ from $\tilde x$ to $a,b$ respectively.
 
@@ -428,14 +428,14 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
       We have $\del_1([ij]) = j-i$ and $\del_2([ijk]) = jk -ik +ij$.
 
       We know in advance we should have $\prod H_n = (\cdots,0, \ZZ, 0, \ZZ)$.
-      ​
+      
       For $H_0 = \frac{\ker \del_0}{\image \del_1} = \frac{C_0}{\left<\theset{j-i \mid i < j}\right>}$. In the quotient, we see $1=6=3=2=5=4$ by just taking the indicated walk on the graph, so there is one generator in the quotient and $H_0 \cong \ZZ$.
 
       For $H_1 = \frac{\ker \del_1}{\image \del_2}$, we just note that there are 6 2-cycles, so each are in the kernel of $\del_1$, but each of them comes from a 2-cell, so is in the image of $\del_2$. So both groups in question are $\ZZ^8$, and the quotient is zero.
       For $H_3 = \frac{\ker\del_2}{\image\del_3}$, since $\image\del_3 = 0$, we can just look at $\del_3([123456]) = 23456 - 13456 + 12456 - 12356 +12346 - 12345$. This is an element (and the only one) that goes to zero under $\del_2$, it generates $\ker\del_2$. So there is one generator, and $H_3 =\ZZ$.
 
    3. $\RP^2$
-      ​
+      
 
    4. $S^2 \union_f D^2$, where $f$ attaches to the equator
 
