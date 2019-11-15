@@ -15,7 +15,23 @@ $$
 
 Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism, 
 
-- $(n \actson f)(1) = f(n\cdot 1) = n f(1) = n\actson f(1)$
+$r.(x+y) = rx + ry:$
+
+\[
+\begin{align*}
+n \actson (f + g)
+\end{align*}
+\]
+
+\[
+\begin{align*}
+\end{align*}
+\]
+
+\[
+\begin{align*}
+\end{align*}
+\]
 
 Then noting that $\phi_\mathrm{ev}$ is a homomorphism, forcing $f(\overline 0) = 0_A$ (where $\overline 0: \ZZ_m \to A$ is the zero map), we have
 $$
