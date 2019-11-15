@@ -71,8 +71,10 @@ We claim that $\ZZ_n[m] \cong \ZZ_{(m, n)}$, from which the result immediately f
 Define a map
 $$
 \phi: \ZZ \to \ZZ_n[m] \\ 
-x \mapsto x\mod n
+1 \mapsto \frac n {\gcd(n, m)}
 $$
+
+The claim is that this is an isomorphism.
 
 Then $\phi$ is clearly surjective (since $\ZZ\to \ZZ_n$ is a quotient map and $\ZZ_n[m]$ is a subgroup of $\ZZ_n$) and
 
