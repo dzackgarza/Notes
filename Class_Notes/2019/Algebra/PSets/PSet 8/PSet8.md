@@ -17,13 +17,18 @@ Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism,
 
 \[
 \begin{align*}
-\phi_\mathrm{ev}(f + g) = \phi_\mathrm{ev}(f) + \phi_\mathrm{ev}(g)
+\phi_\mathrm{ev}(f + g) 
+&= (f + g)(1) \\
+&= f(1) + g(2) \\
+&= \phi_\mathrm{ev}(f) + \phi_\mathrm{ev}(g)
 \end{align*}
 \]
 
 \[
 \begin{align*}
-\phi_\mathrm{ev}(nf) = n ~\phi_\mathrm{ev}(f)
+\phi_\mathrm{ev}(nf) &= (nf)(1) \\
+&\definedas n f(1) \\
+&= n ~\phi_\mathrm{ev}(f)
 \end{align*}
 \]
 
