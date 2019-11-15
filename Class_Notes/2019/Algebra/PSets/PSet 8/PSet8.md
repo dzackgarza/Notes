@@ -15,11 +15,9 @@ $$
 
 Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism, 
 
-$r.(x+y) = rx + ry:$
-
 \[
 \begin{align*}
-n \actson (f + g)
+\phi_\mathrm{ev}(f + g)
 \end{align*}
 \]
 
