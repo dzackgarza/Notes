@@ -235,13 +235,13 @@ So let $H:S^1 \cross I \into X$ be this homotopy. We know that $H(z, 0) = f(z)$ 
 
 Claim: Consider quotient $\frac{S^1\cross I}{S^1 \cross \theset{1}}$ with the projection map $p: S^1 \cross I \into S^1 \cross \theset{1}$. Then $H$ factors through the quotient uniquely (why?), and there exists a unique $\hat H$ making this diagram commute:
 
-![universal1](assets\universal1.png)
+![universal1](assets/universal1.png)
 
 This follow from the universal property of the quotient in $\mathbf{Top}$, where it is sufficient that $H$ is constant on $S^1 \cross \theset{1}$ - but this is exactly what was deduced above.
 
 However, the quotient object constructed is homeomorphic to $D^2$, as per the following diagram
 
-![2017-11-24 14_59_29-Untitled page - OneNote](assets\2017-11-24 14_59_29-Untitled page - OneNote.png)
+![2017-11-24 14_59_29-Untitled page - OneNote](assets/2017-11-24 14_59_29-Untitled page - OneNote.png)
 
 Here, we just recognize that $S^1 \cross I$ is a cylinder, and quotienting at the $t=1$ point in $I$ simply collapses the top portion of the cylinder to a point, forming a cone. We then take the flattening map to just project every point on the cone directly downwards onto the base circle, yielding $D^2$.
 
