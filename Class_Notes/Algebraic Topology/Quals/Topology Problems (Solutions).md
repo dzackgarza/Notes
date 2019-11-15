@@ -365,14 +365,14 @@ This is the universal cover, because $T$ is connected and acyclic (i.e. a tree).
 
 Relevant covers:
 
-1. ![1512964258737](assets/512964258737.png)
-2. ![1512964650272](assets/512964650272.png)
-3. ![1512965253808](assets/512965253808.png)
-4. ![1512965792844](assets/512965792844.png)
+1. ![1512964258737](assets/1512964258737.png)
+2. ![1512964650272](assets/1512964650272.png)
+3. ![1512965253808](assets/1512965253808.png)
+4. ![1512965792844](assets/1512965792844.png)
 5. Let $T$ be a copy of the Cayley Tree on two on the two generators $a, b$, then:
-  ![1512966232873](assets/512966232873.png)
+  ![1512966232873](assets/1512966232873.png)
 
-8. This is just the Cayley graph over $\ZZ \cross \ZZ$, or essentially the integer lattice:![1512966445331](assets/512966445331.png)
+8. This is just the Cayley graph over $\ZZ \cross \ZZ$, or essentially the integer lattice:![1512966445331](assets/1512966445331.png)
 
 9. It's helpful to note that $\left< (1,0), (0, p) \right> \subset \left< (1,0), (0,1) \right> \cong \ZZ \cross \ZZ \subset \RR \cross \RR$ is an index $p$ subgroup.
 
@@ -381,7 +381,7 @@ Relevant covers:
 1. Todo 
 
 1. Figure 8
-  ![1513072050945](assets/513072050945.png)
+  ![1513072050945](assets/1513072050945.png)
   Here we have:
   $C_3 = \emptyset$
   $C_1 = [12], [23], [13], [34], [35], [45] \cong \ZZ^6$
@@ -410,7 +410,7 @@ Relevant covers:
   So we have $H_2 \into H_1 \into H_0 = 0 \into \ZZ^2 \into \ZZ$.
 
 2. $S^2$
-  ![1513072379449](assets/513072379449.png)
+  ![1513072379449](assets/1513072379449.png)
   So we have
   $C_0 = 1,2,3,4,5,6$
   $C_1 = 12,14,15,16,23,25,26,34,35,36,45,46$
