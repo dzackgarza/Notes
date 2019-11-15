@@ -13,12 +13,12 @@ $$
 (f: \ZZ_m \to A) \mapsto f(1)
 $$
 
-Then $\phi_\mathrm{ev}$ is a homomorphism, since
+Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism, since
 
 \[
 \begin{align*}
-\phi_\mathrm{ev}(f\circ g) 
-&= (f\circ g)(1) \\
+\phi_\mathrm{ev}(g) 
+&= (f)(1) \\
 &= f(g(1))
 \end{align*}
 \]
