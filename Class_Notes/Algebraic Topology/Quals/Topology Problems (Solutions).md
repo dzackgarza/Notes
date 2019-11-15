@@ -468,13 +468,6 @@ H_0 \partial M \arrow[rr, "{(i^*, -j^*)_0}"] &  & H_0 M \oplus H_0 D^2 \arrow[rr
 and plugging in what is known yields
 
 ```{=latex}
-\documentclass[crop, tikz]{standalone}
-\usepackage{tikz}
-\usepackage{dsfont}
-\usepackage{amsmath, amsthm, amssymb}
-\usetikzlibrary{matrix, cd}
-\begin{document}
-
 \begin{tikzcd}
 &  &  &  & 0 \arrow[lllldd, out=0, in=-180, "\delta_3"'] \\
 &  &  &  &  \\
@@ -486,8 +479,6 @@ and plugging in what is known yields
 &  &  &  &  \\
 0 &  &  &  &
 \end{tikzcd}
-
-\end{document}
 ```
 
 where $i: S^1 \into M$ and $j: S^1 \into D^2$.
@@ -526,14 +517,8 @@ We will show that $\ker \delta_2 = \im \delta_2 = 0$. By the first isomorphism t
   But then $\ker (i^1, -j^1) = \im \delta_2 = 0$ by exactness.
 
 So now we have:
-```{=latex}
-\documentclass[crop, tikz]{standalone}
-\usepackage{tikz}
-\usepackage{dsfont}
-\usepackage{amsmath, amsthm, amssymb}
-\usetikzlibrary{matrix, cd}
-\begin{document}
 
+```{=latex}
 \begin{tikzcd}
 &  &  &  & 0 \arrow[lllldd, out=0, in=-180, "0"'] \\
 &  &  &  &  \\
@@ -545,8 +530,6 @@ So now we have:
 &  &  &  &  \\
 0 &  &  &  &
 \end{tikzcd}
-
-\end{document}
 ```
 
 ## Claim: $H_1(\RP^2) = \ZZ_2$
@@ -572,14 +555,8 @@ Note that $l^1 - r^1$ is a nontrivial homomorphism from $2\ZZ\cong \ZZ$ to $\ZZ_
 There is also no nontrivial homomorphism from $\ZZ_2 \to \ZZ$, so $\delta_1 = 0$.
 
 We now have:
-```{=latex}
-\documentclass[crop, tikz]{standalone}
-\usepackage{tikz}
-\usepackage{dsfont}
-\usepackage{amsmath, amsthm, amssymb}
-\usetikzlibrary{matrix, cd}
-\begin{document}
 
+```{=latex}
 \begin{tikzcd}
 &  &  &  & 0 \arrow[lllldd, out=0, in=-180, "0"'] \\
 &  &  &  &  \\
@@ -591,8 +568,6 @@ We now have:
 &  &  &  &  \\
 0 &  &  &  &
 \end{tikzcd}
-
-\end{document}
 ```
 
 ## Claim: $H_0(\RP^2) = \ZZ$
@@ -616,13 +591,6 @@ By a similar argument used earlier, the double covering of the boundary circle $
 With all of this information, we finally have
 
 ```{=latex} 
-\documentclass[crop, tikz]{standalone}
-\usepackage{tikz}
-\usepackage{dsfont}
-\usepackage{amsmath, amsthm, amssymb}
-\usetikzlibrary{matrix, cd}
-\begin{document}
-
 \begin{tikzcd}
 &  &  &  & 0 \arrow[lllldd, out=0, in=-180, "0"'] \\
 &  &  &  &  \\
@@ -634,8 +602,6 @@ With all of this information, we finally have
 &  &  &  &  \\
 0 &  &  &  &
 \end{tikzcd}
-
-\end{document}
 ```
 
 And so we find $H_*(\RP^2) = \ZZ \delta_0 + \ZZ_2\delta_1$
