@@ -156,11 +156,11 @@ where we've used continuity of the inner product.
 
 $E^{\perp \perp} \subseteq \overline{S}$:
 
-For notation convenience, we'll just write $S$ for $\overline S$.
+For notational convenience, let $S_c$ denote the closure $\overline S$.
 Let $x\in E^{\perp\perp}$.
-Noting that $S$ is closed, we can define $P$, the operator projecting elements onto ${S}$, and write
+Noting that $S_c$ is closed, we can define $P$, the operator projecting elements onto ${S_c}$, and write
 $$
-x = Px + (x - Px) \in S \oplus S^\perp
+x = Px + (x - Px) \in S_c \oplus S_c^\perp
 $$
 
 But since $\inner{x}{x - Px} = 0$ because $x - Px \in E^\perp$ and $x\in (E^\perp)^\perp$, we can rewrite the first term in this inner product to obtain
@@ -168,9 +168,9 @@ $$
 0 = \inner{x}{x - Px} = \inner{Px + (x-Px)}{x-Px} = \inner{Px}{x-Px} + \inner{x-Px}{x-Px},
 $$
 
-where we can note that the first term is zero because $Px \in S$ and $x-Px \in S^\perp$, and the second term is $\norm{x-Px}^2$.
+where we can note that the first term is zero because $Px \in S_c$ and $x-Px \in S_c^\perp$, and the second term is $\norm{x-Px}^2$.
 
-But this says $\norm{x-Px}^2 = 0$, so $x-Px = 0$ and thus $x=Px\in S$, which is what we wanted to show.
+But this says $\norm{x-Px}^2 = 0$, so $x-Px = 0$ and thus $x=Px\in S_c$, which is what we wanted to show.
 
 
 # Problem 3
