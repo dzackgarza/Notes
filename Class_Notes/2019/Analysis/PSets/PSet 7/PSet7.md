@@ -120,7 +120,7 @@ Let $x_n \to x$ and $y_n \to y$, then
 \end{align*}
 \]
 
-where $\norm{y_n} \to \norm{y} \coloneqq M$ since $y_n \to y$ implies that $\norm{y}$ is finite.
+where $\norm{y_n} \to \norm{y} \coloneqq M < \infty$ since $y \in H$ implies that $\norm{y}$ is finite.
 
 ## Part a:
 
