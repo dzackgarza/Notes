@@ -13,6 +13,16 @@ $$
 (f: \ZZ_m \to A) \mapsto f(1)
 $$
 
+Then $\phi_\mathrm{ev}$ is a homomorphism, since
+
+\[
+\begin{align*}
+\phi_\mathrm{ev}(f\circ g) 
+&= (f\circ g)(1) \\
+&= f(g(1))
+\end{align*}
+\]
+
 Then noting that $\phi_\mathrm{ev}$ is a homomorphism, forcing $f(\overline 0) = 0_A$ (where $\overline 0: \ZZ_m \to A$ is the zero map), we have
 $$
 0 = f(0) = f(m) = m f(1),
