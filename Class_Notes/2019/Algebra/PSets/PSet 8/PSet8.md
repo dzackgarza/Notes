@@ -79,8 +79,8 @@ Then $\phi$ is clearly surjective (since $Z\to \ZZ_n$ is a quotient map and $\ZZ
 \[
 \begin{align*}
 \ker \phi &= \theset{x\in \ZZ \suchthat x \equiv 0 \mod n ~\text{ and }~ mx = 0} \\
-&= \theset{x \in \ZZ \suchthat x \equiv 0 \mod m ~\text{ and }~ x \equiv 0 \mod n} \\
-&= \theset{x \in \ZZ \suchthat x  \equiv 0 \mod \gcd(m, n)} \\
+&= \theset{x \in \ZZ \suchthat x \equiv 0 \mod n ~\text{ and }~ x \equiv 0 \mod m} \\
+&= \theset{x \in \ZZ \suchthat n \divides x ~\text{ and }~ m \divides x} \\
 &= \ZZ_{\gcd(m, n)}
 .\end{align*}
 \]
