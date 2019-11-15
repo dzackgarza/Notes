@@ -419,7 +419,8 @@ Noting that
 $$
 p(x) \in \mathrm{span}\theset{1, x, x^2} = \mathrm{span}\theset{P_0(x), P_1(x), P_2(x)} \coloneqq S, 
 $$ 
-we can conclude that $p(x)$ will be the projection of $x^3$ onto this subspace of $L^2([0, 1])$. Thus $p(x) = \sum_{i=0}^2 \inner{x^3}{\hat e_i}\hat e_i$.
+we can conclude that $p(x)$ will be the projection of $x^3$ onto $S$. 
+Thus $p(x) = \sum_{i=0}^2 \inner{x^3}{\hat e_i}\hat e_i$.
 
 Proceeding to compute the terms in this expansion, we can note that $\inner{x^3}{f}$ for any $f$ that is even will result in integrating an odd function over a symmetric interval, yielding zero.
 So only one term doesn't vanish:
