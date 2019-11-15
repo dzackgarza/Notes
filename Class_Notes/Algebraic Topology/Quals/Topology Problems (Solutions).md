@@ -435,7 +435,6 @@ But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
       For $H_3 = \frac{\ker\del_2}{\image\del_3}$, since $\image\del_3 = 0$, we can just look at $\del_3([123456]) = 23456 - 13456 + 12456 - 12356 +12346 - 12345$. This is an element (and the only one) that goes to zero under $\del_2$, it generates $\ker\del_2$. So there is one generator, and $H_3 =\ZZ$.
 
    3. $\RP^2$
-      
 
    4. $S^2 \union_f D^2$, where $f$ attaches to the equator
 
