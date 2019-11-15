@@ -163,7 +163,7 @@ $$
 x = Px + (x - Px) \in S_c \oplus S_c^\perp
 $$
 
-But since $\inner{x}{x - Px} = 0$ because $x - Px \in E^\perp$ and $x\in (E^\perp)^\perp$, we can rewrite the first term in this inner product to obtain
+But since $\inner{x}{x - Px} = 0$ (because $x - Px \in E^\perp$ and $x\in (E^\perp)^\perp$), we can rewrite the first term in this inner product to obtain
 $$
 0 = \inner{x}{x - Px} = \inner{Px + (x-Px)}{x-Px} = \inner{Px}{x-Px} + \inner{x-Px}{x-Px},
 $$
