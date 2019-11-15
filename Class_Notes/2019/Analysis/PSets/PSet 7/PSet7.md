@@ -450,8 +450,7 @@ A computation shows that
 \[
 \begin{align*}
 \norm{x^3 - p}^2
-&= \int_0^1 (x^3 - \frac 2 5 x)^2 ~dx \\
-&= \frac{19}{525}
+&= \int_0^1 (x^3 - \frac 2 5 x)^2 ~dx = \frac{19}{525}
 ,\end{align*}
 \]
 
