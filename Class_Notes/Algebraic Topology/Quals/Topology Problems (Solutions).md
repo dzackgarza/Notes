@@ -146,9 +146,9 @@ Compute the homology of these spaces
 6. This identification space:
    ![assets/2018-02-11 16_28_51-290.pdf](assets/2018-02-11 16_28_51-290.pdf.png)
 7. This identification space:
-   ![assets/1518395440173](1518395440173.png)
+   ![assets/1518395440173](assets/1518395440173.png)
 8. This identification space:
-   ![assets/1518395458668](1518395458668.png)
+   ![assets/1518395458668](assets/1518395458668.png)
 9. Describe a CW complex structure for the lens space $L(p, 1)$ and compute $\pi_1, H_*$ for it.
 
 
