@@ -13,15 +13,9 @@ $$
 (f: \ZZ_m \to A) \mapsto f(1)
 $$
 
-Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism, since
+Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism, 
 
-\[
-\begin{align*}
-\phi_\mathrm{ev}(g) 
-&= (f)(1) \\
-&= f(g(1))
-\end{align*}
-\]
+- $n \actson $
 
 Then noting that $\phi_\mathrm{ev}$ is a homomorphism, forcing $f(\overline 0) = 0_A$ (where $\overline 0: \ZZ_m \to A$ is the zero map), we have
 $$
