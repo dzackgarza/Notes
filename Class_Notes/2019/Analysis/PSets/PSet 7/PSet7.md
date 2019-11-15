@@ -472,4 +472,14 @@ To see that $g\in \mathcal C$, we can compute
 .\end{align*}
 \]
 
+To see that $\mathcal C = g + S^\perp$, let $f\in \mathcal C$, so $\inner{f}{1} = 1$ and $\inner{f}{x} = 2$.
+We can then conclude that $f-g \in S^\perp$, since we have
+\[
+\begin{align*}
+\inner{f-g}{1} = \inner{f}{1} - \inner{g}{1} = 1 - 1 = 0 \\
+\inner{f-g}{x} = \inner{f}{x} - \inner{g}{x} = 2 - 2 = 0 \\
+.\end{align*}
+\]
+
+
 ## Part b
