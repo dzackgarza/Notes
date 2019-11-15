@@ -322,12 +322,14 @@ In this case, we can identify
 \begin{align*}
 \int_0^1 f(x) \cos(2\pi k x) ~ dx \coloneqq \Re(\hat{f}(k)) \\
 \int_0^1 f(x) \sin(2\pi k x) ~ dx \coloneqq \Im(\hat{f}(k))
-.\end{align*}
+,\end{align*}
 \]
 
-the $k$th Fourier coefficient of $f$.
+the real and imaginary parts of the $k$th Fourier coefficient of $f$ respectively.
 
-By Bessel's inequality, we know that $\theset{\hat{f}(k)}_{k\in \NN} \in \ell^1(\NN)$, and so
+By Bessel's inequality, we know that $\theset{\hat{f}(k)}_{k\in \NN} \in \ell^1(\NN)$, and so $\sum_k \abs{\hat{f)}k)} < \infty$.
+But this is a convergent sequence of real numbers, which necessarily implies that $\abs{\hat{f}(k)} \to 0$.
+In particular, this also means that its real and imaginary parts tend to zero, which is exactly what we wanted to show.
 
 # Problem 5
 
