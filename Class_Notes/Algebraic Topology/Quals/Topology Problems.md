@@ -188,7 +188,7 @@ Compute the homology of these spaces
 3. Find a free resolution of $\QQ$ as a $\ZZ$-module.
 4. Compute $\tor(\QQ, A)$
    1. Compute $\tor(\QQ/\ZZ, A)$
-5. ​
+5. 
 6. Let $R = \ZZ[x,y]$, and $M = R/(x-y), N = R/(x,y)$. Construct free resolutions of $M,N$ to compute:
    - $\ext_R^*(M, M)$
    - $\ext_R^*(M, N)$
@@ -205,4 +205,4 @@ Compute the homology of these spaces
 
 # Cohomology Ring (Sheet 12)
 
-1. ​
+1. 
