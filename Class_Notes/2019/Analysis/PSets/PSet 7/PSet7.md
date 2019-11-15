@@ -315,7 +315,16 @@ It follows that we can let $g = P$ and $h = f - p$ to obtain the desired result.
 
 ### ii
 
+By part (i), the claim is that it suffices to show this is true for $f\in L^2$. 
+In this case, we can identify
+$$
+\int_0^1 f(x) \cos(2\pi k x) ~ dx \coloneqq \Re \hat{f}(k),
+\int_0^1 f(x) \sin(2\pi k x) ~ dx \coloneqq \Im \hat{f}(k),
+$$
 
+the $k$th Fourier coefficient of $f$.
+
+By Bessel's inequality, we know that $\theset{\hat{f}(k)}_{k\in \NN} \in \ell^1(\NN)$, and so
 
 # Problem 5
 
