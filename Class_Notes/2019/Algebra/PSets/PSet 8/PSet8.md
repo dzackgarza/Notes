@@ -17,12 +17,13 @@ Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism,
 
 \[
 \begin{align*}
-\phi_\mathrm{ev}(f + g)
+\phi_\mathrm{ev}(f + g) = \phi_\mathrm{ev}(f) + \phi_\mathrm{ev}(g)
 \end{align*}
 \]
 
 \[
 \begin{align*}
+\phi_\mathrm{ev}
 \end{align*}
 \]
 
