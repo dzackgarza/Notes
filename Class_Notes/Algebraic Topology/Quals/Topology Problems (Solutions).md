@@ -218,7 +218,7 @@ title: Topology Qual Problems
 ## Fundamental Group
 
 1. **Main idea**: just algebraic manipulations using the $\pi_1$ functor and unravelling definitions.
-   ​
+
    Let $X$ be path connected and simply connected, and let $x,y \in X$ be two arbitrary points. Then consider two paths,
    $\gamma: I \into X, \gamma(0) = x, \gamma(1) = y$
    $\alpha: I \into X, \alpha(0) = x, \alpha(1) = y$.
