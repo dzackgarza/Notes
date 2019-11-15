@@ -458,3 +458,9 @@ and so we can take
 $$
 g(x) \coloneqq \frac{25}{\sqrt{19}} \left( x^3 - \frac 2 5 x \right).
 $$
+
+# Problem 6
+
+## Part a
+
+## Part b
