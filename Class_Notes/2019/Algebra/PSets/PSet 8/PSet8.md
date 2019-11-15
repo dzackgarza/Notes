@@ -90,7 +90,7 @@ Then $\phi$ is clearly surjective (since $\ZZ\to \ZZ_n$ is a quotient map and $\
 \begin{align*}
 \ker \phi &= \theset{x\in \ZZ_n \suchthat  mx = 0} \\
 &= \theset{x \in \ZZ_n \suchthat x \divides m} \\
-&= \theset{x \in \ZZ \suchthat x \divides n ~\text{ and }~ o(x) \divides m} \\
+&= \theset{x \in \ZZ \suchthat x \divides n ~\text{ and }~ x \divides m} \\
 &= \theset{x \in \ZZ \suchthat x \divides d} \quad \text{by the lemma} \\
 &= d\ZZ~
 .\end{align*}
