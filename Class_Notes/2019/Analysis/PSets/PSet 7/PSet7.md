@@ -489,8 +489,9 @@ Letting $f_0 \in \mathcal{C}$, be arbitrary and noting that by part (a) we have 
 \[
 \begin{align*}
 \norm{f_0}^2 &= \inner{f_0}{f_0} \\
-&= \inner{f_0}{g + s} \\
-&= \inner{f_0}{g} + \inner{f_0}{s},
-\end{align*}
+&= \inner{g+s}{g + s} \\
+&= \norm{g}^2 + 2\Re \inner{g}{s} + \norm{s}^2
+,\end{align*}
 \]
 
+which can be minimized by taking $s=0$, which forces $\norm{s}^2 = 0$ and $\inner{g}{s} = 0$.
