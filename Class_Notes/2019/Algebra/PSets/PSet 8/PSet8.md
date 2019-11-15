@@ -23,7 +23,7 @@ Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism,
 
 \[
 \begin{align*}
-\phi_\mathrm{ev}
+\phi_\mathrm{ev}(nf) = n ~\phi_\mathrm{ev}(f)
 \end{align*}
 \]
 
