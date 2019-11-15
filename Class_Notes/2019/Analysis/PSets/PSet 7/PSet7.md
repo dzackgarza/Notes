@@ -327,7 +327,7 @@ In this case, we can identify
 
 the real and imaginary parts of the $k$th Fourier coefficient of $f$ respectively.
 
-By Bessel's inequality, we know that $\theset{\hat{f}(k)}_{k\in \NN} \in \ell^1(\NN)$, and so $\sum_k \abs{\hat{f)}k)} < \infty$.
+By Bessel's inequality, we know that $\theset{\hat{f}(k)}_{k\in \NN} \in \ell^1(\NN)$, and so $\sum_k \abs{\hat{f}(k)} < \infty$.
 
 But this is a convergent sequence of real numbers, which necessarily implies that $\abs{\hat{f}(k)} \to 0$.
 In particular, this also means that its real and imaginary parts tend to zero, which is exactly what we wanted to show.
