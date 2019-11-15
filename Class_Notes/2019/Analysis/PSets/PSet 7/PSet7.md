@@ -14,7 +14,7 @@ $$
 \vector x_i \definedas \lim_{n\to\infty} x_i^n.
 $$
 
-This is well-defined since $\norm{x^j - x^k}_{\ell^2} = \sum_i \abs{x^j_i - x^k_i}^2 \to 0$, and since this is a sum of positive real numbers that approaches zero, each term must approach zero. But then for a fixed $i$, the sequence $\abs{x_i^j - x^k_i}^2$ is a Cauchy sequence of real numbers which necessarily converges by the completeness of $\RR$.
+This is well-defined since $\norm{x^j - x^k}_{\ell^2} = \sum_i \abs{x^j_i - x^k_i}^2 \to 0$, and since this is a sum of positive real numbers that approaches zero, each term must approach zero. But then for a fixed $i$, the sequence $\abs{x_i^j - x^k_i}^2$ is a Cauchy sequence of real numbers which necessarily converges by thethe  completeness of $\RR$.
 
 We also have $\norm{\vector x - x^j}_{\ell^2} \to 0$ since 
 $$
@@ -120,7 +120,7 @@ Let $x_n \to x$ and $y_n \to y$, then
 \end{align*}
 \]
 
-where $\norm{y_n} \to M$ since $y_n \to y$ implies that $\norm{y_n}$ is bounded.
+where $\norm{y_n} \to M$ since $y_n \to y$ implies that $\norm{y_n}$ is finite.
 
 ## Part a:
 
