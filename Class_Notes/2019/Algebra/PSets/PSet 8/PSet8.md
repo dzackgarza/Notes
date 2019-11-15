@@ -74,14 +74,14 @@ $$
 x \mapsto x\mod n
 $$
 
-Then $\phi$ is clearly surjective (since $Z\to \ZZ_n$ is a quotient map and $\ZZ_n[m]$ is a subgroup of $\ZZ_n$) and
+Then $\phi$ is clearly surjective (since $\ZZ\to \ZZ_n$ is a quotient map and $\ZZ_n[m]$ is a subgroup of $\ZZ_n$) and
 
 \[
 \begin{align*}
-\ker \phi &= \theset{x\in \ZZ \suchthat x \equiv 0 \mod n ~\text{ and }~ mx = 0} \\
-&= \theset{x \in \ZZ \suchthat x \equiv 0 \mod n ~\text{ and }~ x \equiv 0 \mod m} \\
-&= \theset{x \in \ZZ \suchthat n \divides x ~\text{ and }~ m \divides x} \\
-&= \theset{x \in \ZZ \suchthat n \divides x ~\text{ and }~ m \divides x} \\
+\ker \phi &= \theset{x\in \ZZ_n \suchthat  mx = 0} \\
+&= \theset{x \in \ZZ_n \suchthat o(x) \divides m} \\
+&= \theset{x \in \ZZ \suchthat o(x) \divides n ~\text{ and }~ o(x) \divides m} \\
+&= \theset{x \in \ZZ \suchthat o(x) \divides \gcd(n, m)} \\
 .\end{align*}
 \]
 
