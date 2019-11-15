@@ -336,10 +336,12 @@ If we instead have $f\in L^1$, write $f = g + h$ where $g\in L^2$ and $\norm{h}_
 Then
 \[
 \begin{align*}
-\abs{ \int_0^1 f(x) \cos(2\pi k x) ~ dx} \\ 
+\abs{ \int_0^1 f(x) \cos(2\pi k x) ~ dx}
 &= \abs{\int_0^1 (g(x) + h(x)) \cos(2\pi k x) ~ dx} \\
 &\leq \abs{\int_0^1 g(x) \cos(2\pi k x) ~ dx}  + \abs{\int_0^1 h(x) \cos(2\pi k x) ~ dx} \\
-&\leq \abs{\hat{g}(k)} + \varepsilon \to 0
+&\leq \abs{\int_0^1 g(x) \cos(2\pi k x) ~ dx}  + \int_0^1 \abs{h(x)} \abs{\cos(2\pi k x)} ~ dx \\
+&= \abs{\hat{g}(k)} + \varepsilon \\ 
+&\to 0
 ,\end{align*}
 \]
 
