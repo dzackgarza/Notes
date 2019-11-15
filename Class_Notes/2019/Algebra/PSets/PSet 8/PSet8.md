@@ -15,7 +15,7 @@ $$
 
 Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism, 
 
-- $n \actson $
+- $(n \actson f)(1) = f(n\cdot 1) = n f(1) = n\actson f(1)$
 
 Then noting that $\phi_\mathrm{ev}$ is a homomorphism, forcing $f(\overline 0) = 0_A$ (where $\overline 0: \ZZ_m \to A$ is the zero map), we have
 $$
