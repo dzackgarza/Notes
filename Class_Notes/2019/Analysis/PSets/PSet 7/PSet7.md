@@ -317,10 +317,13 @@ It follows that we can let $g = P$ and $h = f - P$ to obtain the desired result.
 
 By part (i), the claim is that it suffices to show this is true for $f\in L^2$. 
 In this case, we can identify
-$$
-\int_0^1 f(x) \cos(2\pi k x) ~ dx \coloneqq \Re \hat{f}(k),
-\int_0^1 f(x) \sin(2\pi k x) ~ dx \coloneqq \Im \hat{f}(k),
-$$
+
+\[
+\begin{align*}
+\int_0^1 f(x) \cos(2\pi k x) ~ dx \coloneqq \Re(\hat{f}(k)) \\
+\int_0^1 f(x) \sin(2\pi k x) ~ dx \coloneqq \Im(\hat{f}(k))
+.\end{align*}
+\]
 
 the $k$th Fourier coefficient of $f$.
 
