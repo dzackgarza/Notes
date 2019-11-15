@@ -211,7 +211,6 @@ Compute the homology of these spaces
 
 Todo 
 
----
 
 # Topology Problems: Solutions
 
