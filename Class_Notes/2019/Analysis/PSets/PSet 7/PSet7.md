@@ -495,3 +495,5 @@ Letting $f_0 \in \mathcal{C}$, be arbitrary and noting that by part (a) we have 
 \]
 
 which can be minimized by taking $s=0$, which forces $\norm{s}^2 = 0$ and $\inner{g}{s} = 0$.
+But this imposes the condition $f_0 = g + 0 = g$. 
+$\qed$
