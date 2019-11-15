@@ -452,13 +452,6 @@ We start with a few known facts. Let $A=M$, the Mobius strip, and $B= D^2$, the 
 From Mayer-Vietoris, we have
 
 ```{=latex} 
-\documentclass[crop, tikz]{standalone}
-\usepackage{tikz}
-\usepackage{dsfont}
-\usepackage{amsmath, amsthm, amssymb}
-\usetikzlibrary{matrix, cd}
-\begin{document}
-
 \begin{tikzcd}
 &  &  &  & \cdots 0 \arrow[lllldd, out=0, in=-180, "\delta_3"'] \\
 &  &  &  &  \\
@@ -470,8 +463,6 @@ H_0 \partial M \arrow[rr, "{(i^*, -j^*)_0}"] &  & H_0 M \oplus H_0 D^2 \arrow[rr
 &  &  &  &  \\
 0 &  &  &  &
 \end{tikzcd}
-
-\end{document}
 ```
 
 and plugging in what is known yields
