@@ -145,7 +145,7 @@ Then take a geodesic between the endpoints of the diameter on $S^2$, pick any po
 
 This results in a partition of the alphabet into the following homotopy types:
 
-- $\theset{A,D, O, P, Q, R, S^1} $
+- $\theset{A, D, O, P, Q, R, S^1}$
   $\union \theset{a,b,d,e,g,o,p,q}$
 - $\theset{C, E, F, G, H, I, J, K, L, M, N, S, T, U, V, W, X ,Y, Z, *}$
   $\union \theset{c,f,h,k,l,m,n,r,s,t,u,v,w,x,y,z}$
