@@ -1,5 +1,5 @@
 ---
-typora-copy-images-to:  .
+title: Topology Qual Problems
 ---
 
 # Topology Problems: Solutions
