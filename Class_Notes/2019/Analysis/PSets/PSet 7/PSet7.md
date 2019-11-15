@@ -463,4 +463,13 @@ $$
 
 ## Part a
 
+To see that $g\in \mathcal C$, we can compute
+
+\[
+\begin{align*}
+\inner{g}{1} &= \int_0^1 18x^2 - 5 ~dx = 6 - 5 = 1 \\
+\inner{g}{x} &= \int_0^1 18x^3 - 5x ~dx = \frac{18}{4} - \frac{5}{2} = 2 \\
+.\end{align*}
+\]
+
 ## Part b
