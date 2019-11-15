@@ -532,11 +532,11 @@ To see what the boundary curve is, label the corners $a,b$ with the suitable ide
 
 11. First note that $\pi_1(S^1\cross S^1) \cong F^2$, the free group on two generators, say $[\alpha], [\beta]$ corresponding to the two nontrivial loops on the torus - say $\alpha$ is the longitudinal loop, and $\beta$ is the meridian. Then if $\gamma$ is a loop on a torus, then you can just count how many times it winds longitudinally and around the meridian, say $m$ and $n$ times respectively. Then $\gamma$ can be homotoped into $m$ copies of $\alpha$ and $n$ copies of $\beta$ based at $x_0$. So the induced map is $f_\sharp: F^2 \into F^2$ given by $\alpha \mapsto \alpha^m, \beta \mapsto \beta^n$. Since $F^2 \cong Z\cross Z$, we equivalently have $[\alpha] = (1,0), [\beta] = (0,1)$, and then $f_\sharp : Z^2 \into Z^2$ is given by $(1,0) \mapsto (m,0)$ and $(0,1) \mapsto (0,n)$.
 
-# Group Actions
+## Group Actions
 
 1. 
 
-# Covering Spaces
+## Covering Spaces
 
 1. Any covering map $p: S^1\cross S^1 \into \RP^2$ would induce an injection on fundamental groups, but $\pi_1(T) = \ZZ^2$ and $\pi_1(\ZZ_2)$ - but there are no homomorphisms between these groups. Why? One of them has an element of order 2, the other does not.
 
@@ -648,9 +648,9 @@ Relevant covers:
 5. $T\union_f D^2$, where $f$ attaches inside the torus
 
 
-# Mayer Vietoris Problems
+## Mayer Vietoris Problems
 
-# $\RP^2$
+### $\RP^2$
 We start with a few known facts. Let $A=M$, the Mobius strip, and $B= D^2$, the solid disk.
 
 - $\RP^2 = M \disjoint_\del D^2$
@@ -707,7 +707,7 @@ So we can that the only nontrivial maps are $j^0, i^0, i^1$.
 
 
 
-## Claim: $H_2(\RP^2) = 0$:
+**Claim: $H_2(\RP^2) = 0$:**
 
 We consider the portion of the sequence $$\cdots 0 \mapsvia{} H_2{\RP^2} \mapsvia{\delta_2} H_1 \del M \mapsvia{(i^1, -j^1)} H_1M \oplus H_1 D^2 \cdots\\
 \cdots 0 \mapsvia{} H_2\RP^2 \mapsvia{\delta_2} \ZZ \mapsvia{(i^1, -j^1)} \ZZ \oplus 0 \cdots$$
@@ -742,7 +742,7 @@ So now we have:
 \end{tikzcd}
 ```
 
-## Claim: $H_1(\RP^2) = \ZZ_2$
+**Claim: $H_1(\RP^2) = \ZZ_2$**
 
 Here we are examining this portion of the sequence:
 
@@ -796,7 +796,7 @@ We also have $\delta_0 = 0$ and $\ker \delta_0 = H_0 \RP^2 = \im l^0 + r^0$ maki
 
 By a similar argument used earlier, the double covering of the boundary circle $\del M$ over $S^1$ yields the map $(i^0, j^0): \ZZ \into \ZZ \oplus \ZZ$ given by $x \mapsto (2x, 2x)$ with
 
-## Summary
+**Summary:**
 
 With all of this information, we finally have
 
@@ -816,10 +816,10 @@ With all of this information, we finally have
 
 And so we find $H_*(\RP^2) = \ZZ \delta_0 + \ZZ_2\delta_1$
 
-# Cellular Homology
+## Cellular Homology
 
-# Degree
+## Degree
 
-# UCT
+## UCT
 
-# Homological Algebra
+## Homological Algebra
