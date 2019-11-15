@@ -435,4 +435,13 @@ And thus $p(x) = \frac 2 5 x$ is the minimizer.
 ## Part c
 
 The first three conditions necessitate $g \in S^\perp$ and $\norm{g} = 1$. 
-Since $S$ is a closed subspace, we can write $x^3 = p(x) + (x^3 - p(x)) \in S \oplus S^\perp$.
+Since $S$ is a closed subspace, we can write $x^3 = p(x) + (x^3 - p(x)) \in S \oplus S^\perp$, and so $x^3 - p(x) \in S^\perp$.
+
+The claim is that $g(x) \coloneqq x^3 - p(x)$ is the desired maximizer. 
+This follows from the fact that
+$$
+\inner{x^3 - p}{g} \leq \norm{x^3 - p} \norm{g}
+$$
+
+by Cauchy-Schwarz, with equality precisely when $g = \lambda(x^3 - p)$ for some scalar $\lambda$.
+
