@@ -425,7 +425,7 @@ Proceeding to compute the terms in this expansion, we can note that $\inner{x^3}
 So only one term doesn't vanish:
 \[
 \begin{align*}
-\inner{x^3}{x}x &= x\int_{-1}^1 \int_{-1}^1 x^4 ~dx = \frac 2 5 x \\
+\inner{x^3}{x}x &= x\int_{-1}^1 x^4 ~dx = \frac 2 5 x \\
 .\end{align*}
 \]
 
