@@ -483,4 +483,14 @@ We can then conclude that $f-g \in S^\perp$, since we have
 
 ## Part b
 
+Note that this equivalent to finding an $f_0 \in \mathcal{C}$ such that $\norm{f_0}$ is minimized. 
+
+Letting $f_0 \in \mathcal{C}$, be arbitrary and noting that by part (a) we have $f_0 = g + s$ where $s\in S^\perp$, we can compute
+\[
+\begin{align*}
+\norm{f_0}^2 &= \inner{f_0}{f_0} \\
+&= \inner{f_0}{g + s} \\
+&= \inner{f_0}{g} + \inner{f_0}{s},
+\end{align*}
+\]
 
