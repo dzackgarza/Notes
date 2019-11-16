@@ -249,5 +249,9 @@ f &\mapsto f(1)
 \]
 
 When attempting to check that this is a homomorphism, we have
-
+\[
+\begin{align*}
+\phi(f + g) 
+\end{align*}
+\]
 
