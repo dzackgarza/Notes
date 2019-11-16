@@ -241,3 +241,8 @@ For example, one can define $\id_{\ZZ_2}: \ZZ_2 \to \ZZ_2,~ [x]_2 \to [x]_2$, wh
 # Problem 3
 
 Let $R$ be a unital ring, and define
+\[
+\begin{align*}
+\phi: \
+\end{align*}
+\]
