@@ -208,4 +208,4 @@ f_\ell: \ZZ_m &\to \ZZ_{mk} \\
 \end{align*}
 \]
 
-which makes sense because $\ZZ_m \injects \ZZ_{mk}$, and is well-defined because $[m\ell]_m = [0]_m \implies [m\ell]_{mk}$
+which makes sense and is well-defined because $\ZZ_m \injects \ZZ_{mk}$, and the map is defined on the generator.
