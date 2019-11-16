@@ -261,10 +261,30 @@ r &\mapsto r \cdot x_f
 \end{align*}
 \]
 
+and so we can attempt to define 
+\[
+\begin{align*}
+\phi: \hom_R(R, R) &\to R \\
+f &\mapsto x_f \definedas f(1_R)
+\end{align*}
+\]
+
 We can now check that 
 $$
-(g\circ f(r)) = g(f(r)) = g(r\cdot x_f) = r \cdot x_f \cdot x_g
+(g\circ f(r)) = g(f(r)) = g(r\cdot x_f) = r \cdot x_f \cdot x_g,
 $$
+
+which shows that in fact 
+$$
+\phi(g \circ f) = x_f \cdot x_g,
+$$
+which reverses the multiplication. So the correct codomain is $R^{op}$, and we amend the definition:
+\[
+\begin{align*}
+\phi: \hom_R(R, R) &\to R^{op} \\
+f &\mapsto x_f \definedas f(1_R)
+\end{align*}
+\]
 
 When attempting to check that this is a ring homomorphism, we have
 \[
