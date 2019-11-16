@@ -261,6 +261,11 @@ r &\mapsto r \cdot x_f
 \end{align*}
 \]
 
+We can now check that 
+$$
+(g\circ f(r)) = g(f(r)) = g(r\cdot x_f) = r \cdot x_f \cdot x_g
+$$
+
 When attempting to check that this is a ring homomorphism, we have
 \[
 \begin{align*}
