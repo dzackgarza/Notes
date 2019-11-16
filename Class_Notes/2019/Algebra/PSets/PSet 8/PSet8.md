@@ -200,11 +200,11 @@ $$
 
 so $f$ must be the zero map.
 
-**$\phi$ is surjective**, since if $[ell]_m \in \ZZ_m$, we can define
-
-f_x: \ZZ_m &\to \ZZ_{mk} \\
+**$\phi$ is surjective**, since if $[\ell]_m \in \ZZ_m$, we can define
+\[
+\begin{align*}
+f_\ell: \ZZ_m &\to \ZZ_{mk} \\
 [1]_m &\mapsto [\ell]_{mk}
-$$
+\end{align*}
+\]
 
-
-Let $f: \ZZ_m \to \ZZ_{mk}$ and consider $f([1]_m)$. Since $[0]_m = [m]_m = m[1]_m$, we must have $m f([1]_m] = [0]_{mk}$.
