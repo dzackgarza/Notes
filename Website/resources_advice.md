@@ -1,11 +1,15 @@
 ## For Incoming Math Majors
 - Start thinking about whether or not grad school as an option. You don't have to *decide* within your first year, but you'll want to pick courses accordingly.
+
 - Get an idea of what Math is all about - there are great things beyond Calculus!
 	- To get an idea of what you're in for as a Math major, take a look at the GRE Mathematics Subject Exam. It covers a broad array of pretty standardized topics.
 	- Also take a look Garrity's book ([linked in the resources section](#garrity)) for a short, condensed survey of some of the major topics and theorems you'll encounter.
 	- One thing that was helpful to me was to make [graphs and diagrams](world-of-math) of different areas of Math I encountered. Take a look, knowing the landscape you're traversing is valuable.
-- Learn Latex and Mathjax early, and then make efforts regularly typeset your written notes.
-- It may be intimidating, but try to find ways to talk to your professors outside of class! Don't hesitate to ask for advice on just about anything related to Math or your academic career, in my experience they are always happy to help.
+
+- Learn Latex and Mathjax early, and then make efforts to regularly typeset your written notes.
+
+- It may be intimidating, but try to find ways to talk to your professors outside of class. Don't hesitate to ask for advice related to Math or your academic career. In my experience, they are usually happy to help.
+
 - For those aiming for grad school, particularly in pure Math: here are what I would consider some of the most essential, core classes to take:
 	- Calculus (of course)
 	- Linear Algebra
