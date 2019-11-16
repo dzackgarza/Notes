@@ -228,6 +228,6 @@ which induces the map
 \[
 \begin{align*}
 \overline{\pi}: \hom_\ZZ(\ZZ_2, \ZZ) &\to \hom_\ZZ(\ZZ, \ZZ) \\
-f &\mapsto 
+f &\mapsto \pi \circ f
 \end{align*}
 \]
