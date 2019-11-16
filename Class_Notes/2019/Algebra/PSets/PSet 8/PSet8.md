@@ -236,7 +236,9 @@ The claim is that $\overline{\pi}$ is *not* a surjection, and thus not an epimor
 
 To see that this is the case, we can simply note that $\hom_\ZZ(\ZZ_2, \ZZ) = 0$ by part 3 of Problem 1, whereas $\hom_\ZZ(\ZZ_2, \ZZ_2) \neq 0$. 
 
-For example, one can define $\id_{\ZZ_2}: \ZZ_2 \to \ZZ_2,~ [x]_2 \to [x]_2$, which is a nontrivial module homomorphisms. $\qed$
+For example, one can define $\id_{\ZZ_2}: \ZZ_2 \to \ZZ_2,~ [x]_2 \to [x]_2$, which is a nontrivial module homomorphisms. 
+
+So any such $f$ appearing must be the zero map, and thus $\overline{\pi}$ is also the zero map. $\qed$
 
 # Problem 3
 
