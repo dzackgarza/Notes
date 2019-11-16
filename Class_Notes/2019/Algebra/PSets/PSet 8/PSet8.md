@@ -223,11 +223,13 @@ x &\mapsto [x]_2
 \end{align*}
 \]
 
-which is a surjection, induces the map
+which is a surjection and thus an epimorphism in the category $\ZZ\dash\mathrm{Mod}$, which induces the map
 
 \[
 \begin{align*}
 \overline{\pi}: \hom_\ZZ(\ZZ_2, \ZZ) &\to \hom_\ZZ(\ZZ, \ZZ) \\
 f &\mapsto f \circ \pi
-\end{align*}
+.\end{align*}
 \]
+
+The claim is that $\overline{pi}$ is *not* a surjection, and thus not an epimorphism (in the same category).
