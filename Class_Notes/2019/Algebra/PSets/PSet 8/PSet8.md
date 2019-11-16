@@ -232,4 +232,7 @@ f &\mapsto f \circ \pi
 .\end{align*}
 \]
 
-The claim is that $\overline{pi}$ is *not* a surjection, and thus not an epimorphism (in the same category).
+The claim is that $\overline{\pi}$ is *not* a surjection, and thus not an epimorphism (in the same category).
+
+To see that this is the case, we can simply note that $\hom_\ZZ(\ZZ_2, \ZZ) = 0$, because 
+
