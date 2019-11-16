@@ -254,7 +254,7 @@ r &\mapsto r \cdot x_f
 and so we can attempt to define 
 \[
 \begin{align*}
-\phi: \hom_R(R, R) &\to R \\
+\phi_1: \hom_R(R, R) &\to R \\
 f &\mapsto x_f \definedas f(1_R)
 \end{align*}
 \]
@@ -271,10 +271,10 @@ $$
 which reverses the multiplication. So the correct codomain is $R^{op}$, and we amend the definition:
 \[
 \begin{align*}
-\phi: \hom_R(R, R) &\to R^{op} \\
+\phi_2: \hom_R(R, R) &\to R^{op} \\
 f &\mapsto x_f \definedas f(1_R)
 \end{align*}
 \]
 
-By construction, this is now a ring homomorphism.
+By construction, $\phi_s$ is a ring homomorphism. If $R$ is commutative, then $x_f \cdot x_g = x_g \cdot x_f$, which makes $\phi_1$ a ring homomorphism as well.
 
