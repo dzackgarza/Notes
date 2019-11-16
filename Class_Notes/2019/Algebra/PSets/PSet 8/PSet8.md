@@ -240,9 +240,14 @@ For example, one can define $\id_{\ZZ_2}: \ZZ_2 \to \ZZ_2,~ [x]_2 \to [x]_2$, wh
 
 # Problem 3
 
-Let $R$ be a unital ring, and define
+Let $R$ be a unital ring, and first attempt to define
 \[
 \begin{align*}
-\phi: \
+\phi: \hom_R(R, R) &\to R \\
+f &\mapsto f(1)
 \end{align*}
 \]
+
+When attempting to check that this is a homomorphism, we have
+
+
