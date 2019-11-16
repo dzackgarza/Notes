@@ -313,7 +313,7 @@ a &\mapsto f(a)
 \[
 \begin{align*}
 (f\dual)\dual: (A\dual)\dual &\to (B\dual)\dual \\
-g \mapsto f \circ g
+g &\mapsto f \circ g
 \end{align*}
 \]
 
