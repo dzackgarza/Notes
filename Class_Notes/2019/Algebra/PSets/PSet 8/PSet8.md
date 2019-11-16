@@ -276,5 +276,5 @@ f &\mapsto x_f \definedas f(1_R)
 \end{align*}
 \]
 
-
+By construction, this is a ring homomorphism.
 
