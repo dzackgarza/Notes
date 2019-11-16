@@ -149,4 +149,9 @@ which shows that their resulting actions on $\ZZ_m$ are equal.
 
 The fact that this defines a module follows from straightforward calculations:
 
-- $
+- $r.(x+y) = r.x + r.y$:
+$$
+[r]_{mk} \actson ([x]_m + [y]_m)  = [r]_{mk} \actson [x+y]_m = [r(x+y)]_m = [rx]_m + [ry]_m.
+$$
+
+- 
