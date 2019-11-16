@@ -250,7 +250,11 @@ f &\mapsto f(1)
 \end{align*}
 \]
 
-in the category of rings.
+in the category of rings. 
+
+Let $f: \R \to R$ be an endomorphism of $R$ in the category of rings. 
+We can then check that for any $r\in R$, we have $f(r) = f(r 1_R) = rf(1_R)$, which says that $f$ is given by right-multiplication by some fixed element $x \coloneqq f(1_r)$, i.e.
+
 
 When attempting to check that this is a ring homomorphism, we have
 \[
