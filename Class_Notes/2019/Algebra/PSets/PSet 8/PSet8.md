@@ -250,6 +250,8 @@ f &\mapsto f(1)
 \end{align*}
 \]
 
+in the category of rings.
+
 When attempting to check that this is a homomorphism, we have
 \[
 \begin{align*}
