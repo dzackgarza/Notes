@@ -159,4 +159,11 @@ $$
 [r]_{mk} + [s]_{mk} \actson [x]_m = [r + s]_{mk} \actson [x]_m = [(r+s)x]_m = [rx]_m + [sx]_m.
 $$
 
-- $$
+- $(rs).x = r.s.x$:
+\begin{align*}
+[r]_{mk} \cdot [s]_{mk} \actson [x]_m 
+&= [rs]_{mk} \actson [x]_m \\
+&= [(rs)x]_m  \\
+&= [r]_{mk} \actson [sx]_m \\
+&= [r]_{mk} \actson ( [s]_{mk} \actson [x]_m).
+\end{align*}
