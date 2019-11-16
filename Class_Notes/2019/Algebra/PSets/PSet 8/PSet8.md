@@ -291,7 +291,8 @@ We have maps
 
 \[
 \begin{align*}
-\theta_A: 
+\theta_A: A \to (A\dual)\dual \\
+a \mapsto ()
 \end{align*}
 \]
 
