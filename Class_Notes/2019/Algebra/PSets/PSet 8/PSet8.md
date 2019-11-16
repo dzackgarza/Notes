@@ -189,7 +189,7 @@ This is a homomorphism, as
 \[
 \begin{align*}
 \phi(f + g) &= [(f+g)([1]_m)]_m = [f([1]_m) + g([1]_m)]_m  = [f([1]_m)]_m + [g([1]_m)]_m, \\
-\phi([r]_{mk}f) &= [[r]_{mk} f([1]_m)]_m = [r]_m \cdot [f([1]_m)]_m = [r]_{mk}\cdot \phi(f)
+\phi([r]_{mk}f) &= [[r]_{mk} f([1]_m)]_m = [r]_m \cdot [f([1]_m)]_m = [r]_{mk}\actson \phi(f)
 \end{align*}
 \]
 
