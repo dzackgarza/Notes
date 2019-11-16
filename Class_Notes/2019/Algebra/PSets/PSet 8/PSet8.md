@@ -188,7 +188,8 @@ This is a homomorphism, as
 
 \[
 \begin{align*}
-\phi(f + g) = [(f+g)([1]_m)]_m 
+\phi(f + g) &= [(f+g)([1]_m)]_m = [f([1]_m) + g([1]_m)]_m  = [f([1]_m)]_m + [g([1]_m)]_m, \\
+\phi(rf) &=
 \end{align*}
 \]
 
