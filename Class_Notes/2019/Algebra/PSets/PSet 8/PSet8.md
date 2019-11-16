@@ -223,11 +223,11 @@ x &\mapsto [x]_2
 \end{align*}
 \]
 
-which is a surjection and thus an epimorphism in the category $\ZZ\dash\mathrm{Mod}$, which induces the map
+which is a surjection and thus an epimorphism in the category ${\ZZ_2}\dash\mathrm{Mod}$, which induces the map
 
 \[
 \begin{align*}
-\overline{\pi}: \hom_\ZZ(\ZZ_2, \ZZ) &\to \hom_\ZZ(\ZZ, \ZZ) \\
+\overline{\pi}: \hom_{\ZZ_2}(\ZZ_2, \ZZ) &\to \hom_{\ZZ_2}(\ZZ, \ZZ) \\
 f &\mapsto f \circ \pi
 .\end{align*}
 \]
