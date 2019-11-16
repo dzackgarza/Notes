@@ -126,3 +126,6 @@ which forces $f([1]) \in \ZZ[m] = \theset{0}$, so $f$ must be the zero map and $
 
 Define a map
 
+\begin{align*}
+\phi: \ZZ_{mk} &\to \ZZ_{m}
+\end{align*}
