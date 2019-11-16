@@ -289,5 +289,9 @@ $\qed$
 
 We have maps
 
-
+\[
+\begin{align*}
+\theta_A: 
+\end{align*}
+\]
 
