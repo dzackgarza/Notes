@@ -252,7 +252,7 @@ f &\mapsto f(1)
 
 in the category of rings.
 
-When attempting to check that this is a homomorphism, we have
+When attempting to check that this is a ring homomorphism, we have
 \[
 \begin{align*}
 \phi(f \circ g) = (f \circ g)(1) = f(g(1)) 
