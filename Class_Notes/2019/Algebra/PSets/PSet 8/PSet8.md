@@ -167,3 +167,8 @@ $$
 &= [r]_{mk} \actson [sx]_m \\
 &= [r]_{mk} \actson ( [s]_{mk} \actson [x]_m).
 \end{align*}
+
+- $1.x = x$:
+$$
+[1]_mk \actson [x]_m = [1x]_m = [x]_m.
+$$
