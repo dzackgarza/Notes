@@ -146,3 +146,7 @@ But then
 \end{align*}
 
 which shows that their resulting actions on $\ZZ_m$ are equal.
+
+The fact that this defines a module follows from straightforward calculations:
+
+- $
