@@ -223,11 +223,11 @@ x &\mapsto [x]_2
 \end{align*}
 \]
 
-which induces the map
+which is a surjection, induces the map
 
 \[
 \begin{align*}
 \overline{\pi}: \hom_\ZZ(\ZZ_2, \ZZ) &\to \hom_\ZZ(\ZZ, \ZZ) \\
-f &\mapsto \pi \circ f
+f &\mapsto f \circ \pi
 \end{align*}
 \]
