@@ -184,6 +184,10 @@ Define a map
 f \mapsto [f([1]_m)]_m
 \end{align*}
 
+This is a homomorphism, as
+
+
+
 We can then check that if $[f([1]_m)]_m = [0]_m$, then for any $1 \leq \ell \leq m$, we have
 $$
 [f([\ell]_m)]_m = [\ell f([1]_m)]_m = \ell [f([1]_m)]_m = \ell[0]_m = [0]_m,
