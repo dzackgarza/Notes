@@ -154,4 +154,9 @@ $$
 [r]_{mk} \actson ([x]_m + [y]_m)  = [r]_{mk} \actson [x+y]_m = [r(x+y)]_m = [rx]_m + [ry]_m.
 $$
 
-- 
+- $(r+s).x = r.x + s.x$: 
+$$
+[r]_{mk} + [s]_{mk} \actson [x]_m = [r + s]_{mk} \actson [x]_m = [(r+s)x]_m = [rx]_m + [sx]_m.
+$$
+
+- $$
