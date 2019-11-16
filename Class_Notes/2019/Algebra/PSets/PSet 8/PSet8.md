@@ -285,3 +285,5 @@ By construction, **$\phi_s$ is a ring homomorphism**. If $R$ is commutative, the
 By the first isomorphism theorem for rings, we thus have $\hom_R(R, R) \cong R$.
 $\qed$
 
+# Problem 4
+
