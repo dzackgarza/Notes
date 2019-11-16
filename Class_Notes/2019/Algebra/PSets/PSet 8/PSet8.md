@@ -238,4 +238,5 @@ To see that this is the case, we can simply note that $\hom_\ZZ(\ZZ_2, \ZZ) = 0$
 
 For example, one can define $\id_{\ZZ_2}: \ZZ_2 \to \ZZ_2,~ [x]_2 \to [x]_2$, which is a nontrivial module homomorphisms. $\qed$
 
+# Problem 3
 
