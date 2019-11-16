@@ -234,5 +234,5 @@ f &\mapsto f \circ \pi
 
 The claim is that $\overline{\pi}$ is *not* a surjection, and thus not an epimorphism (in the same category).
 
-To see that this is the case, we can simply note that $\hom_\ZZ(\ZZ_2, \ZZ) = 0$, because 
+To see that this is the case, we can simply note that $\hom_\ZZ(\ZZ_2, \ZZ) = 0$ by part 3 of Problem 1, i.e. $\ZZ_2^* = 0$. But $\ZZ^* \neq 0$; for example, one can define $\id_\ZZ: \ZZ \to \ZZ,~ x \to x$, or $f_2: \ZZ \to \ZZ,~ x \mapsto 2x$, which are nontrivial module homomorphisms. $\qed$
 
