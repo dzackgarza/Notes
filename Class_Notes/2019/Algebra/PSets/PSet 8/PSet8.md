@@ -276,5 +276,9 @@ f &\mapsto x_f \definedas f(1_R)
 \end{align*}
 \]
 
-By construction, $\phi_s$ is a ring homomorphism. If $R$ is commutative, then $x_f \cdot x_g = x_g \cdot x_f$, which makes $\phi_1$ a ring homomorphism as well.
+By construction, $\phi_s$ is a ring homomorphism. If $R$ is commutative, then $x_f \cdot x_g = x_g \cdot x_f$, which makes $\phi_1$ a ring homomorphism as well. It remains to check that it is an isomorphism/
+
+**$\phi_1$ is in injective**: We can check that $\ker \phi_1 = 0$ as a ring. To that end, suppose $\phi_1(f) = x_f = 0$. Then $f(r) = r \cdot 0 = 0$, so $f$ can only be the zero map.
+
+**$\phi_1$ is surjective**: Let $x\in R$ be arbitrary, then we can define $f: R \to R$ by $f(1_R) = x$, so $f(r) = r\cdot x$. This is an endomorphism of $R$, and thus an element of $\hom_R(R, R)$.
 
