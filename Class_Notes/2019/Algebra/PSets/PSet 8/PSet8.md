@@ -178,4 +178,13 @@ $$
 
 $\ZZ_m^* \definedas \hom_{\ZZ_{mk}}(\ZZ_m, \ZZ_{mk}) \cong \ZZ_m$:
 
+Define a map
+\begin{align*}
+\phi: \hom_{\ZZ_{mk}}(\ZZ_m, \ZZ_{mk}) &\to \ZZ_m \\
+f \mapsto [f([1]_m)]_m
+\end{align*}
+
+We can then check
+
+
 Let $f: \ZZ_m \to \ZZ_{mk}$ and consider $f([1]_m)$. Since $[0]_m = [m]_m = m[1]_m$, we must have $m f([1]_m] = [0]_{mk}$.
