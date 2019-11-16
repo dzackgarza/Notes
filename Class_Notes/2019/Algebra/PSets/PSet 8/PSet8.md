@@ -131,4 +131,4 @@ To see that $\ZZ_m$ is a $\ZZ_{mk}$ module, we define an action
 [x]_{mk} \actson [y]_m &\definedas [xy]_m
 \end{align*}
 
-- This is well-defined: if $[x_1]_{mk} = [x_2]_{mk}$ are two representatives of the same equivalence class, then $[x_1]_{mk} - [x_2]_{mk} = [x_1-x_2]_{mk}$
+- This is well-defined: if $[x_1]_{mk} = [x_2]_{mk}$ are two representatives of the same equivalence class, then $[x_1]_{mk} - [x_2]_{mk} = [x_1-x_2]_{mk}$.
