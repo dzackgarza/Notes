@@ -276,10 +276,5 @@ f &\mapsto x_f \definedas f(1_R)
 \end{align*}
 \]
 
-When attempting to check that this is a ring homomorphism, we have
-\[
-\begin{align*}
-\phi(f \circ g) = (f \circ g)(1) = f(g(1)) 
-\end{align*}
-\]
+
 
