@@ -242,18 +242,8 @@ So any such $f$ appearing must be the zero map, and thus $\overline{\pi}$ is als
 
 # Problem 3
 
-Let $R$ be a unital ring, and first attempt to define
-\[
-\begin{align*}
-\phi: \hom_R(R, R) &\to R \\
-f &\mapsto f(1)
-\end{align*}
-\]
-
-in the category of rings. 
-
 Let $f: R \to R$ be an endomorphism of $R$ in the category of rings. 
-We can then check that for any $r\in R$, we have $f(r) = f(r 1_R) = rf(1_R)$, which says that $f$ is given by right-multiplication by some fixed element $x_f \definedas f(1_r)$, i.e.
+We can then check that for any $r\in R$, we have $f(r) = f(r 1_R) = rf(1_R)$, which says that $f$ is given by right-multiplication by some fixed element $x_f \definedas f(1_R)$, i.e.
 \[
 \begin{align*}
 f: R &\to R \\
