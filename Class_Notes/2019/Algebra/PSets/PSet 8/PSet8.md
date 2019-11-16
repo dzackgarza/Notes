@@ -127,8 +127,22 @@ which forces $f([1]) \in \ZZ[m] = \theset{0}$, so $f$ must be the zero map and $
 To see that $\ZZ_m$ is a $\ZZ_{mk}$ module, we define an action
 
 \begin{align*}
-\phi: \ZZ_{mk} &\actson \ZZ_{m} \\
+\ZZ_{mk} &\actson \ZZ_{m} \\
 [x]_{mk} \actson [y]_m &\definedas [xy]_m
 \end{align*}
 
-- This is well-defined: if $[x_1]_{mk} = [x_2]_{mk}$ are two representatives of the same equivalence class, then $[x_1]_{mk} - [x_2]_{mk} = [x_1-x_2]_{mk} = [0]_{mk}$, so $m \divides x_1 - x_2$. But then $[x_1]\actson [y] = [x_1 y
+**Well-defined**: 
+If $[x_1]_{mk} = [x_2]_{mk}$ are two representatives of the same equivalence class, then 
+$$
+[x_1]_{mk} - [x_2]_{mk} = [x_1-x_2]_{mk} = [0]_{mk} \implies m \divides x_1 - x_2.
+$$ 
+
+But then
+\begin{align*}
+([x_1]_{mk}\actson [y]_m) - ([x_2]_{mk} \actson [y]_m) 
+&= [x_1 y]_m - [x_2 y]_m \\
+&= [(x_1 - x_2)y]_m \\
+&= [0]_m,
+\end{align*}
+
+which shows that their resulting actions on $\ZZ_m$ are equal.
