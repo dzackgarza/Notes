@@ -122,4 +122,6 @@ which forces $f([1]) \in \ZZ[m] = \theset{0}$, so $f$ must be the zero map and $
 
 > Note: $\ZZ[m] = 0$ because $\ZZ$ is an integral domain, so $mx = 0$ forces $m=0$ or $x=0$.
 
+## Part 4
+
 
