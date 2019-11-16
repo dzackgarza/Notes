@@ -124,8 +124,9 @@ which forces $f([1]) \in \ZZ[m] = \theset{0}$, so $f$ must be the zero map and $
 
 ## Part 4
 
-Define a map
+To see that $\ZZ_m$ is a $\ZZ_{mk}$ module, we define an action
 
 \begin{align*}
-\phi: \ZZ_{mk} &\to \ZZ_{m}
+\phi: \ZZ_{mk} \actson \ZZ_{m} \\
+[x]_{mk} \actson [y]_m \definedas [xy]_m
 \end{align*}
