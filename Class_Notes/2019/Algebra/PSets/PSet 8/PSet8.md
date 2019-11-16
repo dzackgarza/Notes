@@ -186,7 +186,11 @@ f \mapsto [f([1]_m)]_m
 
 This is a homomorphism, as
 
-
+\[
+\begin{align*}
+\phi(f + g) = [(f+g)([1]_m)]_m 
+\end{align*}
+\]
 
 We can then check that if $[f([1]_m)]_m = [0]_m$, then for any $1 \leq \ell \leq m$, we have
 $$
