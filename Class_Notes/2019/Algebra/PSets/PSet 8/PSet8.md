@@ -213,3 +213,6 @@ which makes sense and is well-defined because $\ZZ_m \injects \ZZ_{mk}$, and the
 So we have the desired bijection. $\qed$
 
 # Problem 2
+
+We have the map
+
