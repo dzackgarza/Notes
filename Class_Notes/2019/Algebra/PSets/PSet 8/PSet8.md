@@ -291,8 +291,15 @@ We have maps
 
 \[
 \begin{align*}
-\theta_A: A \to (A\dual)\dual \\
-a \mapsto ()
+\theta_A: A &\to (A\dual)\dual \\
+a &\mapsto (\mathrm{ev}_a: f \mapsto f(a) )
+\end{align*}
+\]
+
+\[
+\begin{align*}
+\theta_B: B &\to (B\dual)\dual \\
+b &\mapsto (\mathrm{ev}_b: g \mapsto g(b) )
 \end{align*}
 \]
 
