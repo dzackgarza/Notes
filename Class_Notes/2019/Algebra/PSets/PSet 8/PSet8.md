@@ -305,7 +305,10 @@ b &\mapsto (\mathrm{ev}_b: g \mapsto g(b) )
 
 \[
 \begin{align*}
-f: A \to B
+f: A &\to B \\
+a &\mapsto f(a)
 \end{align*}
 \]
+
+
 
