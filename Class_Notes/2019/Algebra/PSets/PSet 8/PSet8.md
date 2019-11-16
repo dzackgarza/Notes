@@ -253,8 +253,13 @@ f &\mapsto f(1)
 in the category of rings. 
 
 Let $f: \R \to R$ be an endomorphism of $R$ in the category of rings. 
-We can then check that for any $r\in R$, we have $f(r) = f(r 1_R) = rf(1_R)$, which says that $f$ is given by right-multiplication by some fixed element $x \coloneqq f(1_r)$, i.e.
-
+We can then check that for any $r\in R$, we have $f(r) = f(r 1_R) = rf(1_R)$, which says that $f$ is given by right-multiplication by some fixed element $x_f \definedas f(1_r)$, i.e.
+\[
+\begin{align*}
+f: R &\to R \\
+r &\mapsto r \cdot x_f
+\end{align*}
+\]
 
 When attempting to check that this is a ring homomorphism, we have
 \[
