@@ -303,3 +303,9 @@ b &\mapsto (\mathrm{ev}_b: g \mapsto g(b) )
 \end{align*}
 \]
 
+\[
+\begin{align*}
+f: A \to B
+\end{align*}
+\]
+
