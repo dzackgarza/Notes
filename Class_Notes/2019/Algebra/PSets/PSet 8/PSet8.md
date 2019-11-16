@@ -176,3 +176,4 @@ $$
 [1]_{mk} \actson [x]_m = [1x]_m = [x]_m.
 $$
 
+$\ZZ_m^* \definedas \hom_{Z_{m}} \cong \ZZ_m$:
