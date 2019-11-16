@@ -176,4 +176,4 @@ $$
 [1]_{mk} \actson [x]_m = [1x]_m = [x]_m.
 $$
 
-$\ZZ_m^* \definedas \hom_{Z_{mk}}(\ZZ_{mk}, \ZZ_m) \cong \ZZ_m$:
+$\ZZ_m^* \definedas \hom_{\ZZ_{mk}}(\ZZ_m, \ZZ_{mk}) \cong \ZZ_m$:
