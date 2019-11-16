@@ -251,7 +251,7 @@ f &\mapsto f(1)
 When attempting to check that this is a homomorphism, we have
 \[
 \begin{align*}
-\phi(f + g) 
+\phi(f \circ g) = (f \circ g)(1) = f(g(1)) 
 \end{align*}
 \]
 
