@@ -184,22 +184,23 @@ Define a map
 f \mapsto [f([1]_m)]_m
 \end{align*}
 
-This is a homomorphism, as
+**$\phi$ is a homomorphism**, as
 
 \[
 \begin{align*}
 \phi(f + g) &= [(f+g)([1]_m)]_m = [f([1]_m) + g([1]_m)]_m  = [f([1]_m)]_m + [g([1]_m)]_m, \\
-\phi([r]_{mk}f) &= [[r]_{mk} f([1]_m)]_m = [r]_m \cdot [f([1]_m)]_m = [r]_{mk}\actson \phi(f)
+\phi([r]_{mk} \actson f) &= [[r]_{mk} f([1]_m)]_m = [r]_m \cdot [f([1]_m)]_m = [r]_{mk}\actson \phi(f).
 \end{align*}
 \]
 
-We can then check that if $[f([1]_m)]_m = [0]_m$, then for any $1 \leq \ell \leq m$, we have
+**$\phi$ is injective**, as $[f([1]_m)]_m = [0]_m$, then for any $1 \leq \ell \leq m$, we have
 $$
 [f([\ell]_m)]_m = [\ell f([1]_m)]_m = \ell [f([1]_m)]_m = \ell[0]_m = [0]_m,
 $$
 
-so $f$ must be the zero map and thus $\phi$ is injective.
+so $f$ must be the zero map.
 
+**$\phi$ is surjective**,
 
 
 Let $f: \ZZ_m \to \ZZ_{mk}$ and consider $f([1]_m)$. Since $[0]_m = [m]_m = m[1]_m$, we must have $m f([1]_m] = [0]_{mk}$.
