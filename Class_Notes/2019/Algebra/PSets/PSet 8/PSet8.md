@@ -131,7 +131,8 @@ To see that $\ZZ_m$ is a $\ZZ_{mk}$ module, we define an action
 [x]_{mk} \actson [y]_m &\definedas [xy]_m
 \end{align*}
 
-**Well-defined**: 
+**This is a well-defined action**:
+
 If $[x_1]_{mk} = [x_2]_{mk}$ are two representatives of the same equivalence class, then 
 $$
 [x_1]_{mk} - [x_2]_{mk} = [x_1-x_2]_{mk} = [0]_{mk} \implies m \divides x_1 - x_2.
@@ -147,7 +148,9 @@ But then
 
 which shows that their resulting actions on $\ZZ_m$ are equal.
 
-The fact that this defines a module follows from straightforward calculations:
+
+
+**This action yields a module structure:**
 
 - $r.(x+y) = r.x + r.y$:
 $$
