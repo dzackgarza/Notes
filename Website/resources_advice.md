@@ -47,10 +47,14 @@
 
 - **Get the definitions down cold**: Record every single definition you come across and just do whatever you have to do to memorize them! Some people like flash cards, I personally make a "dictionary" document for each subject. Meaning and understanding is often a gradual process, but knowing the full statement of a definition should just be automatic. I like to think of definitions as the analog "multiplication tables" within higher Mathematics -- is it essential to memorize? Well no, but you also wouldn't want to waste time stopping to multiply out $12^2$ when you're trying to solve an integral.
 
-- **Synthesize often:** This includes things like revising class notes, making your own "cheat sheets", writing up explanations of particular theorems or motivations for certain concepts, etc. Even better, find ways to give talks or teach other people! Present things as if you were trying to teach yourself the topic 6-12 months in the past.
+- **Synthesize often:** This includes things like revising class notes, making your own "cheat sheets", writing up explanations of particular theorems or motivations for certain concepts, etc. Even better, find ways to give talks or teach other people. 
+  Present things as if you were trying to teach yourself the topic 6-12 months in the past.
 
-- **Google for notes**: For just about any topic at any level of specificity, someone has probably written up notes or expository explanations and shared them online. So it can be extremely beneficial to look through the first page or two of Google results using `filetype:pdf` for any concept or proof you happen to be studying and see how other mathematicians think about and present them.
+- **Google for notes**: For just about any topic at any level of specificity, someone has *probably* written up notes or expository articles and posted them online. 
+  So it can be extremely beneficial to look through the first page or two of Google results using `filetype:pdf` for any concept or proof you happen to be studying and see how other mathematicians think about and present them.
 
-- **Work a lot of problems/proofs**: Do more than you are assigned, but be judicious with your time! If you stare at a problem for more than an hour or two without making progress, pivot. Sometimes the best way to make progress on a problem is to take a break, work on something different, or sleep on it. A relevant quote from Alexander Grothendieck:
+- **Work many problems and proofs**: Do more than you are assigned, but be judicious with your time.
+  If you stare at a problem for more than an hour or two without making progress, pivot. 
+  Sometimes the best way to make progress on a problem is to take a break, work on something different, or sleep on it. 
  
 - **Work the exams**, and if possible, do them in a timed setting.
