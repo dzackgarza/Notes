@@ -216,3 +216,17 @@ So we have the desired bijection. $\qed$
 
 We have the map
 
+\[
+\begin{align*}
+\pi: \ZZ &\to \ZZ_2 \\
+x &\mapsto [x]_2
+\end{align*}
+\]
+
+which induces the map
+
+\[
+\begin{align*}
+\overline{\pi}: \hom_\ZZ(\ZZ, \ZZ) \to \hom_\ZZ(\ZZ_2, \ZZ)
+\end{align*}
+\]
