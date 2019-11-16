@@ -252,7 +252,7 @@ f &\mapsto f(1)
 
 in the category of rings. 
 
-Let $f: \R \to R$ be an endomorphism of $R$ in the category of rings. 
+Let $f: R \to R$ be an endomorphism of $R$ in the category of rings. 
 We can then check that for any $r\in R$, we have $f(r) = f(r 1_R) = rf(1_R)$, which says that $f$ is given by right-multiplication by some fixed element $x_f \definedas f(1_r)$, i.e.
 \[
 \begin{align*}
@@ -269,7 +269,7 @@ f &\mapsto x_f \definedas f(1_R)
 \end{align*}
 \]
 
-We can now check that 
+We can check that 
 $$
 (g\circ f(r)) = g(f(r)) = g(r\cdot x_f) = r \cdot x_f \cdot x_g,
 $$
