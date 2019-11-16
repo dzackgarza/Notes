@@ -287,3 +287,7 @@ $\qed$
 
 # Problem 4
 
+We have maps
+
+
+
