@@ -185,6 +185,12 @@ f \mapsto [f([1]_m)]_m
 \end{align*}
 
 We can then check
-
+\[
+\begin{align*}
+\ker \phi 
+&= \theset{f: \ZZ_m \to \ZZ_{mk} \suchthat [f([1]_m)]_m = [0]_m} \\
+&= \theset{f: \ZZ_m \to \ZZ_{mk} \suchthat m \divides f([1]_m) \in \ZZ_{mk} } \\
+\end{align*}
+\]
 
 Let $f: \ZZ_m \to \ZZ_{mk}$ and consider $f([1]_m)$. Since $[0]_m = [m]_m = m[1]_m$, we must have $m f([1]_m] = [0]_{mk}$.
