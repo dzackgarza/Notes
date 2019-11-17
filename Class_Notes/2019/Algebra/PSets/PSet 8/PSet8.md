@@ -416,6 +416,7 @@ $\qed$
 
 ## Part 2
 
+Suppose $r = sk$. 
 Toward an application of the first isomorphism theorem, define a map
 \[
 \begin{align*}
