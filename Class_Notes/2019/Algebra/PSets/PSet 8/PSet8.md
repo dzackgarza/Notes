@@ -482,10 +482,18 @@ It suffices to check that $\im \psi \subseteq A[s]$ (since we will show surjecti
 $$
 s (kxa) = (sk)xa = rxa = x(ra) = 0,
 $$
-
 since $ra = 0$ by assumption.
 
-**$\ker \psi = (k)$**:
+
+**$\psi$ is an $R\dash$module homomorphism:**
+
+We can check
+$$
+\psi(tr_1 + r_2) = k(tr_1 + r_2)s = tkr_1s + kr_2 s = t\psi(r_1) + \psi(r_2)
+$$
+
+
+**$\ker \psi = (s)$**:
 
 
 
