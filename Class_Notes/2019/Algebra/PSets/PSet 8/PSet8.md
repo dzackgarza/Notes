@@ -365,7 +365,9 @@ But this exhibits either $m$ or $r_j$ as a zero divisor, and since the only zero
 
 So $x$ can not be a torsion element. But since $x \in E$ was arbitrary, $E$ must be torsion-free.
 
-For an example of a torsion-free module over an integral domain that is *not* free, consider $\QQ$ as a $\ZZ\dash$module. Then $\QQ$ is clearly torsion-free, since it is an integral domain and the same argument as above applies. But $\QQ$ is not free as $\ZZ\dash$module
+For an example of a torsion-free module over an integral domain that is *not* free, consider $\QQ$ as a $\ZZ\dash$module. Then $\QQ$ is clearly torsion-free, since it is an integral domain and the same argument as above applies. 
+
+But $\QQ$ is not free as $\ZZ\dash$module. Supposing that 
 
 # Problem 6
 
