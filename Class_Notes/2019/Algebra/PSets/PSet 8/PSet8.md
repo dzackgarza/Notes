@@ -532,5 +532,6 @@ $$
 R/\ker \psi \cong \im \psi \implies R/(s) \cong A[s].
 $$
 
+$\qed$
 
 # Problem 7
