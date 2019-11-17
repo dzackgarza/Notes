@@ -346,7 +346,10 @@ which shows that these actions agree, and thus the diagram commutes.
 
 # Problem 5
 
-Let $F$ be a free module 
+Let $F$ be a free module over $D$ an integral domain. Then $F$ has a $D\dash$basis, so if $x\in F$, we have
+$$
+x = \sum_ d_i
+$$
 
 # Problem 6
 
