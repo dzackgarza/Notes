@@ -398,11 +398,15 @@ which implies that $a \in sA$ and thus $A \subseteq sA$. However, we always have
 
 To see that $A[s] = \theset{x\in A \mid sx = 0} = 0$, let $x\in A[s]$; we will show $x=0$. Since $x\in A = Ra$, we have $x = r_1 a$, and in particular 
 $$
-ra = 0 \implies rx = r r_1 a = r_1 ra = 0.
+ra = 0 \implies rx = r r_1 a = r_1 (ra) = 0.
 $$
 
 But then we can write
+\[
+\begin{align*}
 
+\end{align*}
+\]
 
 ## Part 2
 
