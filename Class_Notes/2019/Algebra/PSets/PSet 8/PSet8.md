@@ -417,6 +417,10 @@ $\qed$
 ## Part 2
 
 Toward an application of the first isomorphism theorem, define a map
-
+\[
+\begin{align*}
+\phi: 
+\end{align*}
+\]
 
 # Problem 7
