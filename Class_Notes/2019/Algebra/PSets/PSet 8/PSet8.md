@@ -501,7 +501,8 @@ Suppose $x\in \ker\psi$, so $kxa = 0$. Then $kx \in \mathcal O_a = (r)$, so $kx 
 \[
 \begin{align*}
 & kxa = 0_A  \\
-&\implies kxa = (t_1 r) a
+&\implies kxa = (t_1 r) a \\
+&\implies kxa = t_1 (sk) a
 \end{align*}
 \]
 
