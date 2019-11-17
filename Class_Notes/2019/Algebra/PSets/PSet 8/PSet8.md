@@ -540,4 +540,4 @@ Lemma:
 If $M$ is a cyclic module over a PID, then $M$ has exactly 1 invariant factor.
 
 Lemma:
-
+Let $A$ be a cyclic module, so $A = Ra$. If the order of $A$ is $r$, so $\mathcal O_a = (r)$, then $A \cong R/(r)$.
