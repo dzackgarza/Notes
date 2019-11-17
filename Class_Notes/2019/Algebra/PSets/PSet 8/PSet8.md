@@ -319,17 +319,17 @@ g &\mapsto g \circ f
 
 \[
 \begin{align*}
-(f\dual)\dual: (A\dual)\dual &\to (B\dual)\dual \\
+f^{\vee\vee}: A^{\vee\vee} &\to B^{\vee\vee} \\
 h &\mapsto h \circ f\dual
 \end{align*}
 \]
 
-We can now check that $(f\dual)\dual \circ \theta_A = \theta_B \circ f$, we can compute
+We can now check that $(f\dual)\dual \circ \theta_A = \theta_B \circ f$ as maps from $A$ to $B^{\vee\vee}$. Let $a\in A$, and $h\in B^{\vee\vee}$ so $h: B\dual \to R$
 
 \[
 \begin{align*}
-((f\dual)\dual \circ \theta_A)(a) \actson h 
-&= (f\dual)\dual(\mathrm{ev}_a)\actson h \\
+(f^{\vee\vee} \circ \theta_A)(a) \actson h 
+&= f^{\vee\vee}(\mathrm{ev}_a)\actson h \\
 &=(\mathrm{ev}_a \circ f\dual)\actson h \\
 &= \mathrm{ev}_a \circ h \circ f \\
 &= \mathrm{ev}_{f(a)}\actson h \\
