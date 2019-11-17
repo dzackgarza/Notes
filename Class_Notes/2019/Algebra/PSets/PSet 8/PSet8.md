@@ -425,9 +425,9 @@ x &\mapsto sxa
 .\end{align*}
 \]
 
-**$\phi$ is well-defined**:
+**$\phi$ is well-defined**: This follows from that fact that $a\in A \implies xA \in A$ for any $x\in R$, so the codomain is in fact $sA$. Since it is defined only in terms of the multiplication on $A$, it is clearly a homomorphism of $R\dash$modules as well.
 
-**$\ker \phi = (k)$**:
+**$\ker \phi = (k)$**: Suppose $sxa=0$.
 
 **$\phi$ is surjective:**
 
