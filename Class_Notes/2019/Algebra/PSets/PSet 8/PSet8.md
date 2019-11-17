@@ -502,7 +502,9 @@ Suppose $x\in \ker\psi$, so $kxa = 0$. Then $kx \in \mathcal O_a = (r)$, so $kx 
 \begin{align*}
 & kxa = 0_A  \\
 &\implies kxa = (r t_1) a \\
-&\implies kxa = (sk)t_1 a
+&\implies kxa = (sk)t_1 a \\
+&\implies kxa = k(st_1 a) &\text{because $R$ is commutative} \\
+&\implies 
 \end{align*}
 \]
 
