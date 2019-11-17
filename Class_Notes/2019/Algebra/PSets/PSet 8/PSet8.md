@@ -326,4 +326,8 @@ h &\mapsto h \circ f\dual
 
 We can now check that $\theta_A \circ (f\dual)\dual = f\circ \theta_B$, we can compute
 
-
+\[
+\begin{align*}
+(\theta_A \circ (f\dual)\dual)(a)
+\end{align*}
+\]
