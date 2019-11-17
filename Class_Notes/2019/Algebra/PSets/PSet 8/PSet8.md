@@ -472,7 +472,7 @@ Similarly, define a map
 \[
 \begin{align*}
 \psi: R &\to A[s] \\
-x &\mapsto sxa
+x &\mapsto kxa
 \end{align*}
 \]
 
