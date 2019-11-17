@@ -329,6 +329,10 @@ We can now check that $(f\dual)\dual \circ \theta_A = \theta_B \circ f$, we can 
 \[
 \begin{align*}
 ((f\dual)\dual \circ \theta_A)(a) 
-&= (f\dual)\dual(\mathrm{ev}_a)
+&= (f\dual)\dual(\mathrm{ev}_a) \\
+&=\mathrm{ev}_a \circ f\dual \\
+&= \mathrm{ev}_{f(a)} \\
+&= \theta_B(f(a)) \\
+&= (\theta_B \circ f)(a) 
 \end{align*}
 \]
