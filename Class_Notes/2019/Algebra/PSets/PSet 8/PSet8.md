@@ -328,11 +328,12 @@ We can now check that $(f\dual)\dual \circ \theta_A = \theta_B \circ f$, we can 
 
 \[
 \begin{align*}
-((f\dual)\dual \circ \theta_A)(a) 
-&= (f\dual)\dual(\mathrm{ev}_a) \\
-&=\mathrm{ev}_a \circ f\dual \\
-&= \mathrm{ev}_{f(a)} \\
-&= \theta_B(f(a)) \\
-&= (\theta_B \circ f)(a) 
+((f\dual)\dual \circ \theta_A)(a) \actson h 
+&= (f\dual)\dual(\mathrm{ev}_a)\actson h \\
+&=(\mathrm{ev}_a \circ f\dual)\actson h \\
+&= \mathrm{ev}_a \circ h \circ f \\
+&= \mathrm{ev}_{f(a)}\actson h \\
+&= \theta_B(f(a))\actson h \\
+&= (\theta_B \circ f)(a)\actson h
 \end{align*}
 \]
