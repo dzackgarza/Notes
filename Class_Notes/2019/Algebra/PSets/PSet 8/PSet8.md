@@ -324,4 +324,6 @@ h &\mapsto h \circ f\dual
 \end{align*}
 \]
 
-We can now check that $(f\dual)\dual \circ \theta_A$
+We can now check that $\theta_A \circ (f\dual)\dual = f\circ \theta_B$, we can compute
+
+
