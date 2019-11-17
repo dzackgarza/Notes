@@ -511,7 +511,7 @@ and so $x\in (s)$ as desired.
 
 **$\psi$ is surjective:**
 
-Letting $y \in A[s]$ be arbitrary, since $y\in A$ we have $y = xa$ for some $x\in R$. Since $sy = 0$, we have $y 
+Letting $y \in A[s]$ be arbitrary, since $y\in A$ we have $y = xa$ for some $x\in R$. Since $sy = 0$, we have $y = t_1 r$ for some $t_1 \in R$.
 
 
 # Problem 7
