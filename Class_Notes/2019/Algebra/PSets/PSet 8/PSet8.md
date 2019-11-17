@@ -324,16 +324,20 @@ h &\mapsto h \circ f\dual
 \end{align*}
 \]
 
-We can now check that $(f\dual)\dual \circ \theta_A = \theta_B \circ f$ as maps from $A$ to $B^{\vee\vee}$. Let $a\in A$, and $h\in B^{\vee\vee}$ so $h: B\dual \to R$
+We can now check that $f^{\vee\vee} \circ \theta_A = \theta_B \circ f$ as maps from $A$ to $B^{\vee\vee}$. Letting $a\in A$, and $h\in B^{\vee\vee}$ (so $h: B\dual \to R$), we will show that both maps act on $h$ in the same way.
+
+For notation convenience, write $\phi \actson h \definedas h\circ \phi$. We then have
 
 \[
 \begin{align*}
 (f^{\vee\vee} \circ \theta_A)(a) \actson h 
-&= f^{\vee\vee}(\theta_A(a)) \actson h \\
+&\definedas f^{\vee\vee}(\theta_A(a)) \actson h \\
 &= f^{\vee\vee}(\mathrm{ev}_a)\actson h \\
 &=(\mathrm{ev}_a \circ f\dual)\actson h \\
-&= \mathrm{ev}_a \circ h \circ f \\
-&= \mathrm{ev}_{f(a)}\actson h \\
+&\definedas h \circ (\mathrm{ev}_a  \circ f) \\
+&\definedas h(f(a)) \\
+&= (h \circ f)(a) \\
+&\definedas \mathrm{ev}_{f(a)}\actson h \\
 &= \theta_B(f(a))\actson h \\
 &= (\theta_B \circ f)(a)\actson h
 \end{align*}
