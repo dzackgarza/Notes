@@ -509,6 +509,9 @@ Suppose $x\in \ker\psi$, so $kxa = 0$. Then $kx \in \mathcal O_a = (r)$, so $kx 
 \]
 and so $x\in (s)$ as desired.
 
+**$\psi$ is surjective:**
+
+Letting $y \in A[s]$ be arbitrary, since $y\in A$ we have $y = xa$ for some $x\in R$. Since $sy = 0$, we have $y 
 
 
 # Problem 7
