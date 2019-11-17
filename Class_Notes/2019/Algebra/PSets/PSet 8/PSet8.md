@@ -419,9 +419,15 @@ $\qed$
 Toward an application of the first isomorphism theorem, define a map
 \[
 \begin{align*}
-\phi: R &\to sA \\
-x \mapsto 
-\end{align*}
+\phi: R &\to sA = sRa \\
+x &\mapsto sxa
+.\end{align*}
 \]
+
+**$\phi$ is well-defined**:
+
+**$\ker \phi = (k)$**:
+
+**$\phi$ is surjective:**
 
 # Problem 7
