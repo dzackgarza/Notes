@@ -378,7 +378,7 @@ $\qed$
 
 # Problem 6
 
-If $A$ is a cyclic submodule of $R$, we have $A = Ra$ for some $a\in A$. By Hungerford's definition, $A$ has order $r$ iff $a$ has order $r$ iff the order ideal $\mathcal{O}_a \definedas \theset{} = (r)$.
+If $A$ is a cyclic submodule of $R$, we have $A = Ra$ for some $a\in A$. By Hungerford's definition, the submodule $A$ has order $r$ iff the element $a$ has order $r$ iff the order ideal $\mathcal{O}_a \definedas \theset{x\in R \mid xa = 0} = (r)$.
 
 ## Part 1
 
