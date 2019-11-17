@@ -389,7 +389,7 @@ Since $(r, s) = (1)$, we can find $t_1, t_2 \in R$ such that
 \begin{align*}
 t_1r + t_2 s = 1 &\implies t_1ra + t_2 sa = 1a  \\
 &\implies t_1(ra) + t_2 sa = a \\
-&\implies t_2 sa = a \\
+&\implies t_2 sa = a \quad\quad\quad\quad\text{since $ra=0$}\\
 &\implies s(t_2 a) = a
 ,\end{align*}
 \]
