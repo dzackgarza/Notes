@@ -471,7 +471,8 @@ R/\ker \phi \cong \im \phi \implies R/(k) \cong sA.
 Similarly, define a map
 \[
 \begin{align*}
-\psi: 
+\psi: R &\to A[s] \\
+x &\mapsto sxa
 \end{align*}
 \]
 
