@@ -396,7 +396,13 @@ t_1r + t_2 s = 1 &\implies t_1ra + t_2 sa = 1a  &\\
 
 which implies that $a \in sA$ and thus $A \subseteq sA$. However, we always have $sA \subseteq A$ for modules, so this shows that $A = sA$.
 
-To see that $A[s] = \theset{x\in A \mid sx = 0} = 0$, 
+To see that $A[s] = \theset{x\in A \mid sx = 0} = 0$, let $x\in A[s]$; we will show $x=0$. Since $x\in A = Ra$, we have $x = r_1 a$, and in particular 
+$$
+ra = 0 \implies rx = r r_1 a = r_1 ra = 0.
+$$
+
+But then we can write
+
 
 ## Part 2
 
