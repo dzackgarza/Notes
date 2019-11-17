@@ -329,6 +329,7 @@ We can now check that $(f\dual)\dual \circ \theta_A = \theta_B \circ f$ as maps 
 \[
 \begin{align*}
 (f^{\vee\vee} \circ \theta_A)(a) \actson h 
+&= f^{\vee\vee}(\theta_A(a)) \actson h \\
 &= f^{\vee\vee}(\mathrm{ev}_a)\actson h \\
 &=(\mathrm{ev}_a \circ f\dual)\actson h \\
 &= \mathrm{ev}_a \circ h \circ f \\
