@@ -378,6 +378,8 @@ $\qed$
 
 # Problem 6
 
+By Hungerford's definition, 
+
 ## Part 1
 
 ## Part 2
