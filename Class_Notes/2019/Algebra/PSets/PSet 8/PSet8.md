@@ -476,8 +476,12 @@ x &\mapsto kxa
 \end{align*}
 \]
 
-**$\psi$ is well-defined**: 
+**$\psi$ is well-defined**:
 
+It suffices to check that $\im \psi \subseteq A[s]$ (since we will show surjectivity shortly), i.e. that $s$ annihilates anything in the image. This follows from
+$$
+s (kxa) = (sk)xa = rxa
+$$
 
 
 
