@@ -529,7 +529,7 @@ so $\psi(x) = y$.
 
 We can then apply the first isomorphism theorem
 $$
-R/\ker \psi \cong \im \psi \implies R/(k) \cong A[s].
+R/\ker \psi \cong \im \psi \implies R/(s) \cong A[s].
 $$
 
 
