@@ -419,7 +419,8 @@ $\qed$
 Toward an application of the first isomorphism theorem, define a map
 \[
 \begin{align*}
-\phi: R \to 
+\phi: R &\to sA \\
+x \mapsto 
 \end{align*}
 \]
 
