@@ -312,8 +312,16 @@ a &\mapsto f(a)
 
 \[
 \begin{align*}
-(f\dual)\dual: (A\dual)\dual &\to (B\dual)\dual \\
-g &\mapsto f \circ g
+f\dual: B\dual &\to A\dual \\
+g &\mapsto g \circ f
 \end{align*}
 \]
 
+\[
+\begin{align*}
+(f\dual)\dual: (A\dual)\dual &\to (B\dual)\dual \\
+h &\mapsto h \circ f\dual
+\end{align*}
+\]
+
+We can now check that $\
