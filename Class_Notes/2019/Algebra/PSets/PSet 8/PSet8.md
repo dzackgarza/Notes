@@ -338,6 +338,8 @@ For notational convenience, write $\phi \actson h \definedas h\circ \phi$. We th
 &\definedas h(f(a)) \\
 &= \mathrm{ev}_{f(a)}\actson h \\
 &\definedas \theta_B(f(a))\actson h \\
-&\definedas (\theta_B \circ f)(a)\actson h
+&\definedas (\theta_B \circ f)(a)\actson h,
 \end{align*}
 \]
+
+which shows that these actions agree, and thus the diagram commutes.
