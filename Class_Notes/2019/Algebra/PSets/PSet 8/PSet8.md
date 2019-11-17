@@ -352,7 +352,7 @@ $$
 x = \sum_i r_i \vector e_i
 $$
 
-where each $r_i \in R$ and since $x\neq 0$, at least one $r_i \neq 0$. Let $r_j$ be the nonzero coefficient.
+where each $r_i \in R$. Moreover, since $x\neq 0$, at least one $r_i \neq 0$, so let $r_j$ denote a nonzero coefficient.
 
 Now suppose $x$ is a torsion element, so $mx = 0$ for some $m\neq 0 \in E$. We can then write
 $$
