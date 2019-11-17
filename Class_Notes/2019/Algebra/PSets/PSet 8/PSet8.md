@@ -345,3 +345,7 @@ For notational convenience, write $\phi \actson h \definedas h\circ \phi$. We th
 which shows that these actions agree, and thus the diagram commutes.
 
 # Problem 5
+
+# Problem 6
+
+# Problem 7
