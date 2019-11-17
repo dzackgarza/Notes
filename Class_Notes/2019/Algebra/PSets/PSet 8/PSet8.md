@@ -514,7 +514,7 @@ and so $x\in (s)$ as desired.
 Letting $y \in A[s]$ be arbitrary. We have
 \[
 \begin{align*}
-y \in A[s] \implies x = t_1 a,\quad sx = 0 \\
+y \in A[s] &\implies x = t_1 a,\quad sx = 0 \\
 &\implies s(t_1 a) = 0 \\
 &\implies st_1 \in \mathcal O_a \implies \exists x\in R \suchthat st_1 = xr = x (sk) \\
 &\implies st_1 = sxk \\
