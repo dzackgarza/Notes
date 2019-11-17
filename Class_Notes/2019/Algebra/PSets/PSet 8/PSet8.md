@@ -461,4 +461,7 @@ which exhibits $x = t_1 k \implies x\in (k)$ as desired.
 
 Since $A=Ra$, we have $sA =sRA$ and thus $x\in sA \implies x = sra$ for some $r\in R$; but then $\phi(r) = sra = x$.
 
+We thus have
+
+
 # Problem 7
