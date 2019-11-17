@@ -411,7 +411,7 @@ x &= (t_1 r + t_2 s)x \\
 .\end{align*}
 \]
 
-So $A[s] = 0$.
+So $x = 0$ and thus $A[s] = 0$.
 $\qed$
 
 ## Part 2
