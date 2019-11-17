@@ -444,7 +444,7 @@ x,y \in R \implies \phi(x + y) &= s(x+y)a = sxa + sya + \phi(x) + \phi(y)
 
 Suppose $x\in \ker\phi$ so $sxa = 0_A$; we'd like to show $x \in (k)$.
 
-By definition, $sx \in \mathcal O_a$, and by assumption $\mathcal O_a = (r)$, so $sx = t_1 r$ for some $t_1 \in R$. 
+By definition $sx \in \mathcal O_a$, and by assumption $\mathcal O_a = (r)$, so $sx = t_1 r$ for some $t_1 \in R$. 
 But then we also have $r = sk$, and so
 \[
 \begin{align*}
