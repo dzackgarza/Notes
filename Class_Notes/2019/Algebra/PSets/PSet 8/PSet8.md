@@ -373,7 +373,7 @@ $$
 q_1 p_2 \vector b_1 + q_2 p_1 \vector b_2 = p_2 p_1 - p_1 p_2 = 0, 
 $$
 
-while $q_1 p_2, q_2 p_1 \neq 0 \in \ZZ$. 
+while $q_1 p_2, ~q_2 p_1 \neq 0 \in \ZZ$. 
 $\qed$
 
 # Problem 6
