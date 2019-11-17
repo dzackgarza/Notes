@@ -346,7 +346,7 @@ which shows that these actions agree, and thus the diagram commutes.
 
 # Problem 5
 
-Since 
+Let $F$ be a free module 
 
 # Problem 6
 
