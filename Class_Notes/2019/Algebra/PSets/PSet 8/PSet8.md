@@ -419,7 +419,7 @@ $\qed$
 Toward an application of the first isomorphism theorem, define a map
 \[
 \begin{align*}
-\phi: 
+\phi: R \to 
 \end{align*}
 \]
 
