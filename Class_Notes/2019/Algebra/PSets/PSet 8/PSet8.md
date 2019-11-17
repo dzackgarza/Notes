@@ -496,13 +496,13 @@ which follows because elements of $R$ commute with those from $A$ under multipli
 
 **$\ker \psi = (s)$**:
 
-Suppose $x\in \ker\psi$, so $kxa = 0$. Then $kx \in \mathcal O_a = (r)$, so $kx = t_1 r$. Then
+Suppose $x\in \ker\psi$, so $kxa = 0$. Then $kx \in \mathcal O_a = (r)$, so $kx = r t_1$. Then
 
 \[
 \begin{align*}
 & kxa = 0_A  \\
-&\implies kxa = (t_1 r) a \\
-&\implies kxa = t_1 (sk) a
+&\implies kxa = (r t_1) a \\
+&\implies kxa = (sk)t_1 a
 \end{align*}
 \]
 
