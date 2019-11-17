@@ -492,6 +492,7 @@ $$
 \psi(tr_1 + r_2) = k(tr_1 + r_2)s = tkr_1s + kr_2 s = t\psi(r_1) + \psi(r_2)
 $$
 
+which follows because elements of $R$ commute with those from $A$ under multiplication.
 
 **$\ker \psi = (s)$**:
 
