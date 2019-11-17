@@ -352,7 +352,7 @@ $$
 x = \sum_i r_i \vector e_i
 $$
 
-where each $r_i \in R$ and at least one $r_i \neq 0$.
+where each $r_i \in R$ and since $x\neq 0$, at least one $r_i \neq 0$.
 
 # Problem 6
 
