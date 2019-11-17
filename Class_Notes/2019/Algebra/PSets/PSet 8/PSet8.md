@@ -535,3 +535,9 @@ $$
 $\qed$
 
 # Problem 7
+
+Lemma:
+If $M$ is a cyclic module over a PID, then $M$ has exactly 1 invariant factor.
+
+Lemma:
+
