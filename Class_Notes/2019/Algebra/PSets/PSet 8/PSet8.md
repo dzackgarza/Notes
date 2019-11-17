@@ -396,6 +396,8 @@ t_1r + t_2 s = 1 &\implies t_1ra + t_2 sa = 1a  &\\
 
 which implies that $a \in sA$ and thus $A \subseteq sA$. However, we always have $sA \subseteq A$ for modules, so this shows that $A = sA$.
 
+To see that $A[s] = 0$.
+
 ## Part 2
 
 # Problem 7
