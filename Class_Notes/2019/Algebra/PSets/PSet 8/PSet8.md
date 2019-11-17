@@ -416,4 +416,7 @@ $\qed$
 
 ## Part 2
 
+Toward an application of the first isomorphism theorem, define a map
+
+
 # Problem 7
