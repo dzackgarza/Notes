@@ -410,6 +410,8 @@ x &= (t_1 r + t_2 s)x \\
 &= 0
 .\end{align*}
 \]
+
+So $A[s] = 0$.
 $\qed$
 
 ## Part 2
