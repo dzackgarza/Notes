@@ -361,6 +361,9 @@ $$
 
 But by linear independence, this forces $mr_i = 0$ for all $i$. 
 In particular, $mr_j = 0$ where $r_j \neq 0$.
+But this exhibits either $m$ or $r_j$ as a zero divisor, and since the only zero divisor in an integral domain is zero, we must have $m=0$ or $r_j = 0$, a contradiction.
+
+So $x$ can not be a torsion element. But since $x \in E$ was arbitrary, $E$ must be torsion-free. 
 
 # Problem 6
 
