@@ -352,7 +352,15 @@ $$
 x = \sum_i r_i \vector e_i
 $$
 
-where each $r_i \in R$ and since $x\neq 0$, at least one $r_i \neq 0$.
+where each $r_i \in R$ and since $x\neq 0$, at least one $r_i \neq 0$. Let $r_j$ be the nonzero coefficient.
+
+Now suppose $x$ is a torsion element, so $mx = 0$ for some $m\neq 0 \in E$. We can then write
+$$
+mx = m\sum_i r_i \vector e_i = \sum_i mr_i \vector e_i = 0
+$$
+
+But by linear independence, this forces $mr_i = 0$ for all $i$. 
+In particular, $mr_j = 0$ where $r_j \neq 0$.
 
 # Problem 6
 
