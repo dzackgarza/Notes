@@ -324,4 +324,4 @@ h &\mapsto h \circ f\dual
 \end{align*}
 \]
 
-We can now check that $\
+We can now check that $(f\dual)\dual \circ \theta_A$
