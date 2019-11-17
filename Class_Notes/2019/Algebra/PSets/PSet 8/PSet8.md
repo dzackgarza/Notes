@@ -469,6 +469,10 @@ R/\ker \phi \cong \im \phi \implies R/(k) \cong sA.
 \]
 
 Similarly, define a map
-
+\[
+\begin{align*}
+\psi: 
+\end{align*}
+\]
 
 # Problem 7
