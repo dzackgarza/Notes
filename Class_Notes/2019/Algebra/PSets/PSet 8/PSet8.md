@@ -378,7 +378,7 @@ $\qed$
 
 # Problem 6
 
-By Hungerford's definition, 
+By Hungerford's definition, if $A$ is a cyclic submodule of order $r$,
 
 ## Part 1
 
