@@ -401,12 +401,16 @@ $$
 ra = 0 \implies rx = r r_1 a = r_1 (ra) = 0.
 $$
 
-But then we can write
+So we now have $rx = 0$ and $sx=0$, and we can write
 \[
 \begin{align*}
-
-\end{align*}
+x &= (t_1 r + t_2 s)x \\
+&= t_1 (rx) + t_2 (sx) \\
+&= t_1 0 + t_2 0 \\
+&= 0
+.\end{align*}
 \]
+$\qed$
 
 ## Part 2
 
