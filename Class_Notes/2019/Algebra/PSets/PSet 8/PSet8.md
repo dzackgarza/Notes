@@ -499,4 +499,5 @@ which follows because elements of $R$ commute with those from $A$ under multipli
 
 
 
+
 # Problem 7
