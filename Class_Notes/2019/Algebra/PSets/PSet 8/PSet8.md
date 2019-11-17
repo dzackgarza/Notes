@@ -476,4 +476,10 @@ x &\mapsto sxa
 \end{align*}
 \]
 
+**$\psi$ is well-defined**: 
+
+
+
+
+
 # Problem 7
