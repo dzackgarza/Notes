@@ -518,7 +518,7 @@ y \in A[s] &\implies x = t_1 a,\quad sx = 0 \\
 &\implies s(t_1 a) = 0 \\
 &\implies st_1 \in \mathcal O_a \implies \exists x\in R \suchthat st_1 = xr = x (sk) \\
 &\implies st_1 = sxk \\
-&\implies t_1 = xk \qquad\text{since $R$ is a domain} \\
+&\implies t_1 = xk \qquad\qquad\text{since $R$ is a domain} \\
 &\implies y = t_1 a = (x k)a = kxa, 
 \end{align*}
 \]
