@@ -346,10 +346,12 @@ which shows that these actions agree, and thus the diagram commutes.
 
 # Problem 5
 
-Let $F$ be a free module over $D$ an integral domain. Then $F$ has a $D\dash$basis, so if $x\in F$, we have
+Let $F$ be a free module over $R$ an integral domain. Then $F$ has an $R\dash$basis $\theset{\vector e_i}$, so if $x \neq 0 \in F$, we have
 $$
-x = \sum_ d_i
+x = \sum_i r_i \vector e_i
 $$
+
+where each $r_i \in R$ and at least one $r_i \neq 0$.
 
 # Problem 6
 
