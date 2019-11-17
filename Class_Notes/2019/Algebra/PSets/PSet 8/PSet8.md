@@ -545,5 +545,5 @@ Let $A$ be a cyclic module, so $A = Ra$. If the order of $A$ is $r$, so $\mathca
 Proof: 
 We have a split exact sequence
 $$
-0 \to \mathrm{Ann}(a)
+0 \to \mathcal O_a \to A \mapsvia{x \mapsto }
 $$
