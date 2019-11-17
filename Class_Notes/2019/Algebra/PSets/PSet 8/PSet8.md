@@ -378,6 +378,8 @@ $\qed$
 
 # Problem 6
 
+## Part 1
 
+## Part 2
 
 # Problem 7
