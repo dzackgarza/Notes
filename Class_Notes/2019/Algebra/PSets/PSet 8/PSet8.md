@@ -468,6 +468,8 @@ R/\ker \phi \cong \im \phi \implies R/(k) \cong sA.
 \end{align*}
 \]
 
+---
+
 Similarly, define a map
 \[
 \begin{align*}
@@ -524,6 +526,11 @@ y \in A[s] &\implies x = t_1 a,\quad sx = 0 \\
 \]
 
 so $\psi(x) = y$.
+
+We can then apply the first isomorphism theorem
+$$
+R/\ker \psi \cong \im \psi \implies R/(k) \cong A[s].
+$$
 
 
 # Problem 7
