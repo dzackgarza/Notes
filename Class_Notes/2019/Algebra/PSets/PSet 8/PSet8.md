@@ -428,8 +428,13 @@ x &\mapsto sxa
 **$\phi$ is well-defined**: This follows from that fact that $a\in A \implies xA \in A$ for any $x\in R$, so the codomain is in fact $sA$. 
 
 **$\phi$ is an $R\dash$module homomorphism:** For $t\in R$, we have 
+\[
+\begin{align*}
+t\in R \implies \phi(tx) &= s(tx)a = t(sxa) = t\phi(x) \\
+x,y \in R \implies \phi(x + y) &= s(x+y)a = sxa + sya + \phi(x) + \phi(y)
+\end{align*}
+\]
 
-$\phi(tx) = s(tx)a = t(sxa) = t\phi(x)$, and $\phi(x + y) =s(x+y)a = sxa + sya + \phi(x) + \phi(y).$
 
 **$\ker \phi = (k)$**: Suppose $sxa = 0_A$; we'd like to show $x = 0_R$. By definition, $sx \in \mathcal O_a$, and by assumption $\mathcal O_a = (r)$, so $sx = t_1 r$ for some $t_1 \in R$. But then
 $$
