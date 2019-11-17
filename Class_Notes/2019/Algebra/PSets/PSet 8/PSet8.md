@@ -427,7 +427,10 @@ x &\mapsto sxa
 
 **$\phi$ is well-defined**: This follows from that fact that $a\in A \implies xA \in A$ for any $x\in R$, so the codomain is in fact $sA$. Since it is defined only in terms of the multiplication on $A$, it is clearly a homomorphism of $R\dash$modules as well.
 
-**$\ker \phi = (k)$**: Suppose $sxa = 0_A$; we'd like to show $x = 0_R$.
+**$\ker \phi = (k)$**: Suppose $sxa = 0_A$; we'd like to show $x = 0_R$. By definition, $sx \in \mathcal O_a$, and by assumption $\mathcal O_a = (r)$, so $sx = t_1 r$ for some $t_1 \in R$. But then
+$$
+sx = t_1 r = t_1 (sk) = s (t_1 k) \implies x = t_1 k
+$$
 
 **$\phi$ is surjective:**
 
