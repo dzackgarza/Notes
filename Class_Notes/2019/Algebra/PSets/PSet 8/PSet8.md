@@ -614,4 +614,4 @@ $$
 M \cong F \oplus \bigoplus_{i=1}^n R/(d_i)
 $$
 
-where $F$ is free of finite rank and $R/(d_i)$ is a cyclic
+where $F$ is free of finite rank and $R/(d_i)$ are cyclic torsion modules satisfying $d_1 \divides d_2 \divides \cdots \divides d_n$.
