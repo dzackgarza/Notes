@@ -2,9 +2,11 @@
 title: Problem Set 8
 ---
 
-# Problem 1
+# Regular Problems
 
-## Part a
+## Problem 1
+
+### Part a
 
 Define a map
 
@@ -548,3 +550,6 @@ We can now write
 $$
 A \oplus B = R/(a) \oplus R/(b)
 $$
+
+
+# Qual Problems
