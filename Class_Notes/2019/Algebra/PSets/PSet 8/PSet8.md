@@ -629,7 +629,7 @@ where $F$ is free of finite rank, $p^i \in R$ are (not necessarily distinct) pri
 
 ### Part 2
 
-Since $\ZZ^4$ is a finitely generated module over the PID $\ZZ$, the structure theorem applies, and we can write $$
+Since $\ZZ^4$ is a finitely generated module over the PID $\ZZ$, the structure theorem applies, and we can write $M \cong \ZZ^k \oplus \bigoplus \ZZ/(r_i)$ for some $k\leq 4$ and some collection $r_i$ of invariant factors.
 
 We have the following system of equations
 $$
