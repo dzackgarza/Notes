@@ -641,4 +641,4 @@ $$ A_L =
 \end{array}\right)
 $$
 
-Then $\im A_L \cong N$
+Then $\im A_L \cong N$, 
