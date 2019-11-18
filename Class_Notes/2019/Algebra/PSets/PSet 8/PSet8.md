@@ -580,4 +580,6 @@ where $n-k \geq 1$. This is not a torsion module, because it contains a free sum
 
 ### Part 2
 
-By the above observation
+Identifying $F[x] = F \oplus Fx$ and thus $F[x]^n = F^n \oplus F^n x$, the above observation shows that
+
+
