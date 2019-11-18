@@ -588,9 +588,15 @@ SNF(A) =
 $$
 
 where $d_1 \divides d_2 \divides \cdots d_n$, and thus
+\[
+\begin{align*}
+M = \im A &\cong d_1 R \oplus d_2 R \oplus \cdots d_n R \\  \\
+\implies R^n/\im A &\cong \frac{R^n}{d_1 R \oplus d_2 R \oplus \cdots d_n R} \\ \\
+&\cong R/(d_1) \oplus R/(d_2) \cdots \oplus R/(d_n)
+\end{align*}
+\]
 
-\im A \cong d_1 R \oplus d_2 R \oplus \cdots d_n R \implies R^n/\im A \cong \frac{R^n}{d_1 R \oplus d_2 R \oplus \cdots d_n R} \cong R/(d_1) \oplus R/(d_2) \cdots \oplus R/(d_n)
-$$
+where $R/(d_i)$ is a cyclic torsion module $\iff d_i \neq 0$. If instead some $d_i = 0$, we then have $R/(d_i) \cong R$, which is a free $R\dash$module, yielding non-torsion elements in $M$.
 
 
 ### Part 2
