@@ -613,8 +613,16 @@ $$
 (F[x])^2/\im A \cong \frac{ F[x] }{(d_1)} \oplus \frac{F[x]}{(d_2)} = F[x] \oplus \frac{F[x]}{(f)}
 $$
 
-So we can choose $n=2$, and say $f(x) = x+1$, and then pick
-
+So we can choose $n=2$, and say $f(x) = x+1$, and then just pick a matrix that is already in Smith normal form:
+\[
+\begin{align*}
+A = 
+\left[ \begin{array}{cc}
+x+1 & 0 \\
+0 & 0
+\end{array}\right].
+\end{align*}
+\]
 
 ## Problem 9
 
