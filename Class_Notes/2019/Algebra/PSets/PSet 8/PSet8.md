@@ -629,6 +629,8 @@ where $F$ is free of finite rank, $p^i \in R$ are (not necessarily distinct) pri
 
 ### Part 2
 
+Since $\ZZ^4$ is a finitely generated module over the PID $\ZZ$, the structure theorem applies.
+
 We have the following system of equations
 $$
 \left(\begin{array}{rrrr}
