@@ -587,6 +587,11 @@ SNF(A) =
 \end{array}\right]
 $$
 
+where $d_1 \divides d_2 \divides \cdots d_n$, and thus
+$$
+im A \cong d_1 R \oplus d_2 R \oplus \cdots d_n R \implies R^n/\im A \cong \frac{R^n}{d_1 R \oplus d_2 R \oplus \cdots d_n R}
+$$
+
 
 ### Part 2
 
