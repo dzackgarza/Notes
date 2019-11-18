@@ -619,5 +619,7 @@ where $F$ is free of finite rank and $R/(d_i)$ are cyclic torsion modules satisf
 Equivalently,
 
 $$
-M \cong F \oplus \bigoplus_{i=1}^n R/(p_i)
+M \cong F \oplus \bigoplus_{i=1}^n R/(p_i^{s_i})
 $$
+
+where $F$ is free of finite rank and 
