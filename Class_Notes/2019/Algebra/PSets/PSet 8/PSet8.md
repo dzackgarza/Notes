@@ -588,8 +588,8 @@ the observation in part 1 shows that
 
 \[
 \begin{align*}
-\frac{R^n}{\im A} \cong F[x] \oplus F \\
-\implies \frac{F^n \oplus F^nx}{\im A} \cong F^2 \oplus Fx \\
-\implies \im A \cong F^{n-2} \oplus F^{n-1}x.
+&\frac{R^n}{\im A} \cong F[x] \oplus F \\
+&\implies \frac{F^n \oplus F^nx}{\im A} \cong F^2 \oplus Fx \\
+&\implies \im A \cong F^{n-2} \oplus F^{n-1}x \cong F[x]^{n-1} \oplus Fx
 \end{align*}
 \]
