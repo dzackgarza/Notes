@@ -560,30 +560,31 @@ TODO
 
 ### Part 1
 
-The claim is that every element in $M \definedas R^n/\im A$ is torsion $\iff$ $\rank( \im A ) = \rank (R^n) = n$ as an $R\dash$module.
+The claim is that every element in $M \definedas R^n/\im A$ is torsion $\iff$ $\rank( \im A ) = \rank (R^n) = n$ as an $R\dash$module $\iff$ the Smith normal form of $A$ has $n$ nonzero invariant factors.
 
 To see that this is the case, we can apply the structure theorem for finitely-generated modules over a PID. This gives us
 $$
 M \cong F \oplus \bigoplus R/(r_i)
 $$
 
-To see that this is the case, note that if $\rank(\im A) = n$, then $\im A \subseteq R^n$ is spanned by a linearly independent set of $n$ elements, say $\im A = \mathrm{span}_R(a_1, a_2, \cdots, a_n) \leq R^n$.  
+where $F$ is free of finite rank, $R/(r_i)$ is cyclic torsion, and $r_i \divides r_{i+1} \divides \cdots $ are the invariant factors of $M$. 
 
-In particular, writing $R = F \oplus T$ where $F$ is free and $T$ is torsion, we have $R^n \cong F^n \oplus T^n$ as $R\dash$modules. Noting that $T^n$ is still a free module and is of rank $n$, we have $F^n= \mathrm{span}_R(f_1, f_2, \cdots f_n)$, and we can thus construct an isomorphism $\im A \cong F^n$ by mapping $a_i$ to $f_i$.
-
-But then we have
+We thus have
 $$
-\frac{R^n}{\im A} \cong \frac{F^n \oplus T^n}{F^n} \cong T^n,
+M \cong R^n/\im A \cong F \oplus \bigoplus R/(r_i),
 $$
 
-which is a torsion module. 
+which will be pure torsion iff $F = 0$.
 
-This shows that the condition $\rank(\im A) = n$ is sufficient; to see that it is necessary, suppose that $\rank(\im A) = k < n$. Then we have
+But if we compute the smith normal for of $A$, we obtain
 $$
-\frac{R^n}{\im A} \cong \frac{F^n \oplus T^n}{F^k} \cong F^{n-k} \oplus T^n,
+SNF(A) = 
+\left[ \begin{array}{rrrr}
+ d_1 & 0 & \cdots & 0 \\
+0 & d_2 & \cdot & 0
+\end{array}\right]
 $$
 
-where $n-k \geq 1$. This is not a torsion module, because it contains a free summand.
 
 ### Part 2
 
