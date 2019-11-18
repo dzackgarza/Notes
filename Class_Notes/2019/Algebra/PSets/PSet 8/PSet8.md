@@ -582,7 +582,7 @@ where $n-k \geq 1$. This is not a torsion module, because it contains a free sum
 
 Identifying $F[x] = F \oplus Fx$ and thus $F[x]^n = F^n \oplus F^n x$ and thus 
 $$
-R \cross F = F[x] \cross F \cong F \oplus Fx \oplus F = F^2 \oplus Fx, 
+R \cross F = F[x] \cross F \cong (F \oplus Fx) \oplus F = F^2 \oplus Fx, 
 $$
 the observation in part 1 shows that
 
@@ -593,3 +593,11 @@ the observation in part 1 shows that
 &\implies \im A \cong F^{n-2} \oplus F^{n-1}x \cong F[x]^{n-1} \oplus Fx
 \end{align*}
 \]
+
+This suggests that the smallest $n$ possible will be $n=3$, so we are looking for a matrix $A \in M_3(F[x])$ such that $\im A \cong F[x]^2 \oplus F \leq F[x]^3$.
+
+Write 
+
+F[x]^3 = F^3 \oplus F^3x = 
+\mathrm{span}_F([1, 0, 0], [0, 1, 0], [0,0,1], [x, 0, 0], [0, x, 0], [0, 0, x]) 
+$$
