@@ -560,7 +560,12 @@ TODO
 
 ### Part 1
 
-The claim is that every element in $R^n/\im A$ is torsion if and only if $\rank( \im A ) = \rank (R^n) = n$ as a module.
+The claim is that every element in $M \definedas R^n/\im A$ is torsion $\iff$ $\rank( \im A ) = \rank (R^n) = n$ as an $R\dash$module.
+
+To see that this is the case, we can apply the structure theorem for finitely-generated modules over a PID. This gives us
+$$
+M \cong F \oplus \bigoplus R/(r_i)
+$$
 
 To see that this is the case, note that if $\rank(\im A) = n$, then $\im A \subseteq R^n$ is spanned by a linearly independent set of $n$ elements, say $\im A = \mathrm{span}_R(a_1, a_2, \cdots, a_n) \leq R^n$.  
 
