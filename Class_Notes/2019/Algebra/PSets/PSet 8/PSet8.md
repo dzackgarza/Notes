@@ -603,28 +603,11 @@ But $\det(A) = \det(SNF(A)) = \prod_{i=1}^n d_i$, and so if $d_i=0$ for some $i$
 
 ### Part 2
 
-Identifying $F[x] = F \oplus Fx$ and thus $F[x]^n = F^n \oplus F^n x$ and thus 
+Identifying 
 $$
-R \cross F = F[x] \cross F \cong (F \oplus Fx) \oplus F = F^2 \oplus Fx, 
+R \cross F = F[x] \oplus F \cong F[x] \oplus F[x]/(f)
 $$
-the observation in part 1 shows that
-
-\[
-\begin{align*}
-&\frac{R^n}{\im A} \cong F[x] \oplus F \\
-&\implies \frac{F^n \oplus F^nx}{\im A} \cong F^2 \oplus Fx \\
-&\implies \im A \cong F^{n-2} \oplus F^{n-1}x \cong F[x]^{n-1} \oplus Fx
-\end{align*}
-\]
-
-This suggests that the smallest $n$ possible will be $n=3$, so we are looking for a matrix $A \in M_3(F[x])$ such that 
-$$
-\im A \cong F[x]^2 \oplus F \cong F[x] \oplus F[x] \oplus \frac{F[x]}{(f)} \leq F[x]^3,
-$$
-
-where $f$ is a degree 1 polynomial.
-
-TODO
+where $f$ is any degree 1 polynomial.
 
 ## Problem 9
 
