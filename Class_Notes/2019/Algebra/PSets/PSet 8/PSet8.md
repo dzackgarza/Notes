@@ -685,8 +685,8 @@ An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such tha
 
 ### Part 2
 
-Let $R = \RR$ as a ring and take 
+Let $R = \FF_7$ as a ring and take 
 $$
-M = \frac{\RR[x]}{(x^2+1)}
+M = \frac{\FF_7[x]}{(x^2+1)}
 $$
 ### Part 3
