@@ -543,3 +543,8 @@ If $M$ is a cyclic module over a PID, then $M$ has exactly 1 invariant factor.
 Let $A$ be a cyclic module, so $A = Ra$. If the order of $A$ is $r$, so $\mathcal O_a = (r)$, then $A \cong R/(r)$.
 
 This means that we can write $A = R/(a)$ and $B = R/(b)$, and $a, b$ are the invariant factors of $A, B$ respectively.
+
+We can now write
+$$
+A \oplus B = R/(a) \oplus R/(b)
+$$
