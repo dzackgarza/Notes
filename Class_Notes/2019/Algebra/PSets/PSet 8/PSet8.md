@@ -606,3 +606,8 @@ where $f$ is a degree 1 polynomial.
 TODO
 
 ## Problem 9
+
+Let $M$ be a finitely generated module over $R$ a PID. Then
+$$
+M =
+$$
