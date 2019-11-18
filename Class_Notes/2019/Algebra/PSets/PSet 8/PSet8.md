@@ -582,7 +582,7 @@ SNF(A) =
 \left[ \begin{array}{rrrrrr}
  d_1 & 0 & \cdots & 0 & \cdots & 0 \\
 0 & d_2 & \cdot & 0 & \cdots & 0\\
-\vdots & \vdots & \nwdots & \vdots & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots & \cdots & 0\\
 0 & 0 & \cdots & d_n & \cdots & 0
 \end{array}\right]
 $$
