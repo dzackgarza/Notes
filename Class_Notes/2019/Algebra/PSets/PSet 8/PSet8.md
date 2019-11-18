@@ -554,7 +554,7 @@ $$
 
 # Qual Problems
 
-## Problem 1
+## Problem 8
 
 ### Part 1
 
@@ -600,3 +600,5 @@ $$
 $$
 
 where $f$ is a degree 1 polynomial.
+
+## Problem 9
