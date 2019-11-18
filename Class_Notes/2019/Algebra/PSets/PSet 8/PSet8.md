@@ -607,7 +607,9 @@ TODO
 
 ## Problem 9
 
-Let $M$ be a finitely generated module over $R$ a PID. Then
+Let $M$ be a finitely generated module over $R$ a PID. 
+
+Then there is an increasing sequence of ideals $(d_1)
 $$
 M =
 $$
