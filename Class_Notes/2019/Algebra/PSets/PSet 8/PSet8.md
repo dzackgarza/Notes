@@ -577,3 +577,6 @@ $$
 $$
 
 where $n-k \geq 1$. This is not a torsion module, because it contains a free summand.
+
+### Part 2
+
