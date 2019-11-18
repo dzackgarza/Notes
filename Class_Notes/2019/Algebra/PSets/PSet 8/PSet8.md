@@ -555,3 +555,7 @@ $$
 # Qual Problems
 
 ## Problem 1
+
+### Part 1
+
+The claim is that $M$ is torsion-free if and only if $\rank A = n$
