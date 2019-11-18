@@ -611,5 +611,5 @@ Let $M$ be a finitely generated module over $R$ a PID.
 
 Then there is an increasing sequence of proper ideals $(d_1) \supseteq (d_2) \supseteq \cdots (d_n)$, where some $d_i$ may be zero, such that 
 $$
-M = \bigoplus_{i=1}^n R/(d_i)
+M \cong \bigoplus_{i=1}^n R/(d_i)
 $$
