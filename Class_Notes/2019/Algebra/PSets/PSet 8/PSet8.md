@@ -580,6 +580,16 @@ where $n-k \geq 1$. This is not a torsion module, because it contains a free sum
 
 ### Part 2
 
-Identifying $F[x] = F \oplus Fx$ and thus $F[x]^n = F^n \oplus F^n x$, the above observation shows that
+Identifying $F[x] = F \oplus Fx$ and thus $F[x]^n = F^n \oplus F^n x$ and thus 
+$$
+R \cross F = F[x] \cross F \cong F \oplus Fx \oplus F = F^2 \oplus Fx, 
+$$
+the observation in part 1 shows that
 
-
+\[
+\begin{align*}
+\frac{R^n}{\im A} \cong F[x] \oplus F \\
+\implies \frac{F^n \oplus F^nx}{\im A} \cong F^2 \oplus Fx \\
+\implies \im A \cong F^{n-2} \oplus F^{n-1}x.
+\end{align*}
+\]
