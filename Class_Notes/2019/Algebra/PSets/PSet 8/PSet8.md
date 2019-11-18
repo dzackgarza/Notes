@@ -605,9 +605,9 @@ But $\det(A) = \det(SNF(A)) = \prod_{i=1}^n d_i$, and so if $d_i=0$ for some $i$
 
 Identifying 
 $$
-R \cross F = F[x] \oplus F \cong F[x] \oplus F[x]/(f)
+R \cross F = F[x] \oplus F \cong F[x] \oplus \frac{F[x]}{(f)}
 $$
-where $f$ is any degree 1 polynomial.
+where $f$ is any degree 1 polynomial in $F[x]$, by the structure theorem we can pick a matrix $A \in M_2(F[x])$ with invariant factors $0, f$. Then
 
 ## Problem 9
 
