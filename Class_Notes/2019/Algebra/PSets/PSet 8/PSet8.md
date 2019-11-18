@@ -607,6 +607,9 @@ TODO
 
 ## Problem 9
 
+
+### Part 1
+
 Let $M$ be a finitely generated module over $R$ a PID. 
 
 Then
@@ -623,3 +626,18 @@ M \cong F \oplus \bigoplus_{i=1}^n R/(p_i^{s_i})
 $$
 
 where $F$ is free of finite rank, $p^i \in R$ are (not necessarily distinct) prime elements (the *elementary divisors*), and $s_i \in \ZZ^{\geq 1}$. 
+
+### Part 2
+
+We have the following system of equations
+$$
+\left(\begin{array}{rrrr}
+3 & 12 & 3 & 6 \\
+0 & 6 & 0 & 0 \\
+-3 & 6 & -3 & 0 \\
+0 & 0 & 0 & 0
+\end{array}\right)
+\left(\begin{array}{rrrr}
+x \\ y \\ z \\ w
+\end{array}\right)
+$$
