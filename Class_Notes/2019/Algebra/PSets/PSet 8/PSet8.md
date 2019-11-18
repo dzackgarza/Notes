@@ -560,7 +560,7 @@ TODO
 
 ### Part 1
 
-The claim is that every element in $M \definedas R^n/\im A$ is torsion $\iff$ the matrix rank of $A$ is $n \iff$ the Smith normal form of $A$ has $n$ nonzero invariant factors.
+The claim is that every element in $M \definedas R^n/\im A$ is torsion $\iff$ the matrix rank of $A$ is exactly $n \iff$ the Smith normal form of $A$ has exactly $n$ nonzero invariant factors.
 
 To see that this is the case, we can apply the structure theorem for finitely-generated modules over a PID. This gives us
 $$
@@ -598,7 +598,7 @@ where $d_1 \divides d_2 \divides \cdots \divides d_n$, and thus
 
 where $R/(d_i)$ is a cyclic torsion module precisely when $d_i \neq 0$. If instead some $d_i = 0$, we then have $R/(d_i) \cong R$, which is a free $R\dash$module, yielding non-torsion elements in $M$.
 
-But $\det A = \det SNF(A) = \Prod d_i$, and so $\rank A \leq
+But $\det(A) = \det(SNF(A)) = \prod_{i=1}^n d_i$, and so if $d_i=0$ for some $i$ iff $\det A = 0$ iff $\rank A < n$.
 
 
 ### Part 2
