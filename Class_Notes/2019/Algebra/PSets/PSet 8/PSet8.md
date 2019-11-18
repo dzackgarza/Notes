@@ -681,7 +681,7 @@ $$
 
 ### Part 1
 
-An element $x\in M$ is *torsion* iff there exists some 
+An element $x\in M$ is *torsion* iff there exists some nonzero
 
 ### Part 2
 
