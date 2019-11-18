@@ -638,6 +638,10 @@ $$
 0 & 0 & 0 & 0
 \end{array}\right)
 \left(\begin{array}{rrrr}
-x \\ y \\ z \\ w
+w \\ y \\ x \\ z
+\end{array}\right)
+=
+\left(\begin{array}{rrrr}
+0 \\ 0 \\ 0 \\ 0
 \end{array}\right)
 $$
