@@ -574,7 +574,7 @@ $$
 M \cong R^n/\im A \cong F \oplus \bigoplus R/(r_i),
 $$
 
-which will be pure torsion iff $F = 0$.
+which will be pure torsion if and only if $F = 0$.
 
 But if we compute the smith normal for of $A$, we obtain
 $$
