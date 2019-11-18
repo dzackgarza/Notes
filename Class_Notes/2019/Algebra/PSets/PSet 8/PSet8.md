@@ -614,7 +614,7 @@ $$
 M \cong F \oplus \bigoplus_{i=1}^n R/(d_i)
 $$
 
-where $F$ is free of finite rank and $R/(d_i)$ are cyclic torsion modules satisfying $d_1 \divides d_2 \divides \cdots \divides d_n$.
+where $F$ is free of finite rank and $R/(d_i)$ are cyclic torsion modules (the *invariant factors*) satisfying $d_1 \divides d_2 \divides \cdots \divides d_n$.
 
 Equivalently,
 
@@ -622,4 +622,4 @@ $$
 M \cong F \oplus \bigoplus_{i=1}^n R/(p_i^{s_i})
 $$
 
-where $F$ is free of finite rank, $p^i \in R$ are (not necessarily distinct) prime elements, and $s_i \in \ZZ^{\geq 1}$. 
+where $F$ is free of finite rank, $p^i \in R$ are (not necessarily distinct) prime elements (the *elementary divisors*), and $s_i \in \ZZ^{\geq 1}$. 
