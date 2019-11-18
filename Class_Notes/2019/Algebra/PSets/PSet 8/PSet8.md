@@ -551,6 +551,8 @@ $$
 A \oplus B = R/(a) \oplus R/(b)
 $$
 
+TODO
+
 
 # Qual Problems
 
@@ -600,5 +602,7 @@ $$
 $$
 
 where $f$ is a degree 1 polynomial.
+
+TODO
 
 ## Problem 9
