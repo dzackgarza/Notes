@@ -558,7 +558,7 @@ $$
 
 ### Part 1
 
-The claim is that $M$ is torsion-free if and only if $\rank( \im A ) = \rank (R^n) = n$ as a module.
+The claim is that $R^n/\im A$ is torsion-free if and only if $\rank( \im A ) = \rank (R^n) = n$ as a module.
 
 To see that this is the case, note that if $\rank(\im A) = n$, then $\im A \subseteq R^n$ is spanned by a linearly independent set of $n$ elements, say $\im A = \mathrm{span}_R(a_1, a_2, \cdots, a_n)$. 
 
