@@ -579,9 +579,11 @@ which will be pure torsion iff $F = 0$.
 But if we compute the smith normal for of $A$, we obtain
 $$
 SNF(A) = 
-\left[ \begin{array}{rrrr}
- d_1 & 0 & \cdots & 0 \\
-0 & d_2 & \cdot & 0
+\left[ \begin{array}{rrrrrr}
+ d_1 & 0 & \cdots & 0 & \cdots & 0 \\
+0 & d_2 & \cdot & 0 & \cdots & 0\\
+\vdots & \vdots & \nwdots & \vdots & \cdots & 0\\
+0 & 0 & \cdots & d_n & \cdots & 0
 \end{array}\right]
 $$
 
