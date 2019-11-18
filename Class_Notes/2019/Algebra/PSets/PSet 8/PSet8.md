@@ -569,6 +569,11 @@ $$
 \frac{R^n}{\im A} \cong \frac{F^n \oplus T^n}{F^n} \cong T^n,
 $$
 
-which is a torsion module precisely because it 
+which is a torsion module. 
 
+This shows that the condition $\rank(\im A) = n$ is sufficient; to see that it is necessary, suppose that $\rank(\im A) = k < n$. Then we have
+$$
+\frac{R^n}{\im A} \cong \frac{F^n \oplus T^n}{F^k} \cong F^{n-k} \oplus T^n,
+$$
 
+where $n-k \geq 1$. This is not a torsion module, because it contains a free summand.
