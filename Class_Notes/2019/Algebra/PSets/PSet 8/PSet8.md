@@ -611,5 +611,5 @@ Let $M$ be a finitely generated module over $R$ a PID.
 
 Then there is an increasing sequence of ideals $(d_1) \supseteq (d_2) \supseteq \cdots (d_n)$ such that 
 $$
-M =
+M = \bigoplus_{i=1}^n R/(d_i)
 $$
