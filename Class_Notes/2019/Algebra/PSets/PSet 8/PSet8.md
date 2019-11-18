@@ -597,7 +597,10 @@ the observation in part 1 shows that
 This suggests that the smallest $n$ possible will be $n=3$, so we are looking for a matrix $A \in M_3(F[x])$ such that $\im A \cong F[x]^2 \oplus F \leq F[x]^3$.
 
 Write 
-
-F[x]^3 = F^3 \oplus F^3x = 
-\mathrm{span}_F([1, 0, 0], [0, 1, 0], [0,0,1], [x, 0, 0], [0, x, 0], [0, 0, x]) 
-$$
+\[
+\begin{align*}
+F[x]^3 &= F^3 \oplus F^3x \\
+&= \mathrm{span}_F([1, 0, 0], [0, 1, 0], [0,0,1], [x, 0, 0], [0, x, 0], [0, 0, x]) \\
+&\definedas \theset{\vector e_i \mid 1 \leq i \leq 6}. 
+\end{align*}
+\]
