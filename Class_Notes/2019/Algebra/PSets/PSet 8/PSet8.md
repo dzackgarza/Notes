@@ -681,6 +681,8 @@ $$
 
 ### Part 1
 
+If $m\in M$ is a torsion element,
+
 ### Part 2
 
 ### Part 3
