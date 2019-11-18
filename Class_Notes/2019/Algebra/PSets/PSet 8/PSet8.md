@@ -656,3 +656,7 @@ which shows that the invariant factors are $3, 6, 6, 0$. We can thus write $\im 
 $$
 M \cong \frac{\ZZ^4}{3\ZZ \oplus 6\ZZ \oplus 6\ZZ} \cong \ZZ \oplus \ZZ/(3) \oplus \ZZ/(6) \oplus \ZZ/(6).
 $$
+
+## Problem 10
+
+### Part 1
