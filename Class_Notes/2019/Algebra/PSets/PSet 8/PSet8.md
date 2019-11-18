@@ -681,7 +681,7 @@ $$
 
 ### Part 1
 
-If $m\in M$ is a torsion element,
+An element $x\in M$ is *torsion* iff there exists some 
 
 ### Part 2
 
