@@ -560,7 +560,10 @@ $$
 
 The claim is that $M$ is torsion-free if and only if $\rank( \im A ) = \rank (R^n) = n$ as a module.
 
-To see that this is the case, note that if $\rank(\im A) = n$, then $\im A \subseteq R^n$ is spanned by a linearly independent set of $n$ elements, say $\im A = \mathrm{span}_R(r_1, r_2, \cdots, r_n)$. 
+To see that this is the case, note that if $\rank(\im A) = n$, then $\im A \subseteq R^n$ is spanned by a linearly independent set of $n$ elements, say $\im A = \mathrm{span}_R(a_1, a_2, \cdots, a_n)$. 
 
-Writing $R = F \oplus T$, we have $R^n \cong F^n \oplus T^n$ as $R\dash$modules.
+Writing $R = F \oplus T$, we have $R^n = F^n \oplus T^n$ as $R\dash$modules, and $$
+\im A \cong F^n \implies \frac{R^n}{\im A} \cong \frac{F^n \oplus T^n}{F^n} \cong T^n
+$$
+where the isomorphism appearing on the left is the result of sending the $a_i$ to any basis of 
 
