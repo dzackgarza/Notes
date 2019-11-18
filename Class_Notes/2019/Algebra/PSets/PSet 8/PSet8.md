@@ -608,10 +608,13 @@ $$
 R \cross F = F[x] \oplus F \cong F[x] \oplus \frac{F[x]}{(f)}
 $$
 where $f$ is any degree 1 polynomial in $F[x]$, by the structure theorem we can pick a matrix $A \in M_2(F[x])$ with invariant factors $d_1 = 0, d_2 = f$. 
-Then by the same argument given in part 1, we have 
+Then by the same argument given in part 1, we would have 
 $$
-(F[x])^2/\im A \cong F[x]/(d_1) \oplus F[x]/(d_2) = F[x] \oplus F[x]/(f)
+(F[x])^2/\im A \cong \frac{ F[x] }{(d_1)} \oplus \frac{F[x]}{(d_2)} = F[x] \oplus \frac{F[x]}{(f)}
 $$
+
+So we can choose $n=2$, and say $f(x) = x+1$, and then pick
+
 
 ## Problem 9
 
