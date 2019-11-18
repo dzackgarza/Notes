@@ -558,4 +558,4 @@ $$
 
 ### Part 1
 
-The claim is that $M$ is torsion-free if and only if $\rank A = n$
+The claim is that $M$ is torsion-free if and only if $\rank A = \rank R^n = n$.
