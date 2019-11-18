@@ -590,8 +590,8 @@ $$
 where $d_1 \divides d_2 \divides \cdots \divides d_n$, and thus
 \[
 \begin{align*}
-M = \im A &\cong d_1 R \oplus d_2 R \oplus \cdots d_n R \\  \\
-\implies R^n/\im A &\cong \frac{R^n}{d_1 R \oplus d_2 R \oplus \cdots d_n R} \\ \\
+\im A \cong \im SNF(A) &\cong d_1 R \oplus d_2 R \oplus \cdots \oplus d_n R \\  \\
+\implies M = R^n/\im A &\cong \frac{R^n}{d_1 R \oplus d_2 R \oplus \cdots d_n R} \\ \\
 &\cong R/(d_1) \oplus R/(d_2) \cdots \oplus R/(d_n)
 \end{align*}
 \]
