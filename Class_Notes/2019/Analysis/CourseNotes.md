@@ -3067,6 +3067,13 @@ Proof of Minkowski:
 &\leq ( \abs{f} + \abs{g} ) \abs{f+g}^{p-1} \\
 &\implies \int \abs{f+g}^p \leq \int \abs{f} \abs{f+g}^{p-1} + \int \abs{g} \abs{f + g}^{p-1} \\
 &\leq \norm{f}_p ( \int \abs{f+g}^{(p-1)q}  )^{1/q}
-+ \norm{f}_p ( \int \abs{f+g}^{(p-1)q}  )^{1/q}
-.\end{align*}
++ \norm{g}_p ( \int \abs{f+g}^{(p-1)q}  )^{1/q} \\
+&= (\norm{f}_p + \norm{g}_p) + ( \int\abs{f+g}^p )^{1 - 1/p}
+&= (\norm{f}_p + \norm{g}_p) + ( \int\abs{f+g}^p )^{1/q}
+,\end{align*}
 \]
+
+and taking $p$th roots yields the result. (?? Revisit)
+$\qed$
+
+Note: For $1\leq p \leq \infty$, $L^p$ is a Banach space.
