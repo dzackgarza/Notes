@@ -103,10 +103,10 @@ So let $f([1]_m) = n \in \ZZ$.
 Since $f$ is a module homomorphism, we have $f([0]_m) = 0$, and in particular we have
 \[
 \begin{align*}
-0 &= f([0]_{\small \mod m}) \\
-&= f([m]_{\small \mod m}) \\
-&= f([1 m]_{\small \mod m}) \\
-&= m f([1]_{\small \mod m}),
+0 &= f([0]_m) \\
+&= f([m]_m) \\
+&= f([1 m]_m) \\
+&= m f([1]_m),
 \end{align*}
 \]
 
