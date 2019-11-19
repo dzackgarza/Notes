@@ -685,13 +685,15 @@ An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such tha
 
 ### Part 2
 
-Let $T: \CC^2 \to \CC^2$ with a matrix representation $A \in \GL(2, \CC)$, now take $R = \CC[x]$ and $M = \CC^2$, then $\CC^2$ is a module over $\CC[x]$ with action given by 
+Let $T: \CC^2 \to \CC^2$ with a matrix representation $A \in \GL(2, \CC)$, say $A = I_2$, and let $R = \CC[x]$ and $M = \CC^2$.
+
+Then $\CC^2$ is a module over $\CC[x]$ with action given by 
 $$
 p(x) \actson \vector v \definedas p(A)\vector v
 $$
 
 (i.e. by evaluation at $A$.)
 
-Then $M$ is cyclic as an $R\dash$module
+$M$ is cyclic as an $R\dash$module, since $
 
 ### Part 3
