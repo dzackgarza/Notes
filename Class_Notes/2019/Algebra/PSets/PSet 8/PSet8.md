@@ -761,4 +761,8 @@ $$
 
 ### Part 3
 
-Suppose $R$ is a domain, and let $T(R) = \theset{m
+Suppose $R$ is a domain, $M$ an $R\dash$module, and define a map 
+$$
+\phi: M \to R \\
+m \mapsto 
+$$
