@@ -540,14 +540,26 @@ If $M$ is a cyclic module over a PID, then $M$ has exactly 1 invariant factor.
 **Lemma:**
 Let $A$ be a cyclic module, so $A = Ra$. If the order of $A$ is $r$, so $\mathcal O_a = (r)$, then $A \cong R/(r)$.
 
-This means that we can write $A = R/(a)$ and $B = R/(b)$, and $a, b$ are the invariant factors of $A, B$ respectively.
+This means that we can write $A = R/(a)$ and $B = R/(b)$, and $a, b$ are the invariant factors of $A, B$ respectively, and $M\definedas A \oplus B \cong R/(ab)$.
 
-We can now write
+Since $R$ is a PID, there is unique factorization, so we can write
+\[
+\begin{align*}
+r &= \prod_{i=1}^n p_i^{k_i} \\
+s &= \prod_{i=1}^n p_i^{\ell_i} \\
+\implies rs &= \prod_{i=1}^n p_i^{k_i + \ell_i},
+\end{align*}
+\]
+
+which means that $\theset{p_i}{k_i + \ell_i} \mid 1\leq i \leq n}$ are the elementary divisors of $M$.
+
+By definition, the first invariant factor is obtained from the elementary divisors as 
 $$
-A \oplus B = R/(a) \oplus R/(b)
+d_1 \definedas \prod_{\theset{i \suchthat k_i,\ell_i \neq 0}} p_i^{\max{k_i, \ell_i}},
 $$
 
-TODO
+which is exactly $\gcd(r, s)$.
+
 
 
 # Qual Problems
