@@ -685,15 +685,14 @@ An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such tha
 
 ### Part 2
 
-Let 
-$$
-A = \[
+Let $R = \CC,~ M = \CC^2$, and  
+$$ 
+A = 
 \left[\begin{array}{ccc}
 1 & 2 \\ 2 & 1
 \end{array}\right]
-\] \in 
+ \in M_2(\CC).
 $$
-let $R = \CC[x]$ and $M = \CC^2$.
 
 Then $\CC^2$ is a module over $\CC[x]$ with action given by 
 $$
