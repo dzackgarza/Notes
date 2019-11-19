@@ -249,7 +249,7 @@ For example, one can define
 \[
 \begin{align*}
 \id_{\ZZ_2}: \ZZ_2 &\to \ZZ_2\\
-[x]_2 &\mapsto [x]_2$, 
+[x]_2 &\mapsto [x]_2 
 ,\end{align*}
 \]
 which is a nontrivial module homomorphisms. 
