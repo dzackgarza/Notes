@@ -3051,7 +3051,7 @@ f, g\in L^p \implies \norm{f+g}_p \leq \norm{f}_p + \norm{g}_p.
 $$
 For $p=2$, this boiled down to Cauchy-Schwarz, here we'll need a souped-up version.
 
-Holder's Inequality:
+**Holder's Inequality:**
 If $1 \leq p \leq \infty$, we define the *conjugate exponent* of $p$ as the $q$ satisfying $\frac 1 p + \frac 1 q  = 1$.
 We immediately get $q = \frac{p}{p-1}$.
 If $f, g$ are measurable functions then 
@@ -3098,3 +3098,39 @@ $$
 \int \abs{f} \abs{g} \leq \int \frac{\abs{f}^p}{p} \frac{\abs{g}^q}{q} = \frac 1 p + \frac 1 q = 1.
 $$
 $\qed$
+
+## Dual of $L^p$
+
+Given $g\in L^q$, define an operation
+\[
+\begin{align*}
+\Lambda_g(f): L^p \to \CC \\
+f \mapsto \int f g
+.\end{align*}
+\]
+
+Note that this makes sense by Holder's inequality, i.e. $fg$ is integrable.
+This defines a linear functional on $L^p$, which is continuous by Holder, since we have $\abs{\Lambda_g(f)} \leq \norm{g}_q \norm{f}_p$ where $\norm{g}_q$ is a constant that works for all $f \in L^p$, and linear functionals are continuous iff bounded.
+
+We have $\norm{\Lambda_g}_{(L^p)\dual} \definedas \sup_{\norm{f}_p = 1} \abs{\int fg} \leq \norm{g}_q$. (In fact, we have equality here for every $g\in L^q$.)
+
+> This is sometimes referred to as the converse of Holder.
+
+Thus the map $g \mapsto \Lambda_g$ is an *isometric* map $L^q \injects (L^p)\dual$ for $1 \leq p,q \leq \infty$.
+By Riesz representation, it turns out that this is a surjection as well for $p\neq \infty$.
+
+**Big Fact**: 
+This breaks for $p=\infty$, but for $1 \leq p < \infty$, this mapping is surjective.
+
+**Theorem (Riesz Representation):**
+Suppose $1\leq p < \infty$ and let $q$ be its conjugate exponent, and let $X\subseteq \RR^n$ be measurable.
+
+Given any $\Lambda \in (L^p(X))\dual$, there exists a unique $g\in L^q(X)$ such that for all $f\in L^p(X)$, we have $\Lambda(f) = \int_X fg$
+and $\norm{(L^p(X))\dual} = \norm{g}_{L^q(X)}$.
+
+Summary:
+
+- If $1\leq p < \infty$, we have $(L^p)\dual = L^q$.
+- $(L^\infty)\dual \supset L^1$, since the isometric mapping is always injective, but *never* surjective, so this containment is always proper (requires Hahn-Banach Theorem).
+
+
