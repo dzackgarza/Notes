@@ -761,8 +761,9 @@ $$
 
 ### Part 3
 
-Suppose $R$ is a domain, $M$ an $R\dash$module, and define a map 
+Suppose $R$ is a domain, $M$ an $R\dash$module, and let 
 $$
-\phi: M \to R \\
-m \mapsto 
+T(R) = \theset{m \in M \suchthat rm = 0 \text{ for some $r\neq 0 \in R$}}.
 $$
+
+Then
