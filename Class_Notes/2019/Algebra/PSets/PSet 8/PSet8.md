@@ -767,3 +767,9 @@ T(M) = \theset{m \in M \suchthat rm = 0 \text{ for some $r\neq 0 \in R$}}.
 $$
 
 Then $T(R)$ is a submodule iff for all $r\in R$ and all $m,n\in T(M)$ we have $rm + n \in T(M)$.
+
+So pick annihilators $a_m, a_n \in R$ where $a_m m = 0$ and $a_n n = 0$. Then
+
+$$
+a_m a_n (rm + n) = a_m a_n r m + a_m a_n n
+$$
