@@ -692,6 +692,6 @@ $$
 
 (i.e. by evaluation at $A$.)
 
-
+Then $M$ is cyclic as an $R\dash$module
 
 ### Part 3
