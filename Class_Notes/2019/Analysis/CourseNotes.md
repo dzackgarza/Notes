@@ -3045,3 +3045,9 @@ which is morally the "best upper bound almost everywhere".
 Note that $\abs{f(x)} \leq \norm{f}_\infty$ almost everywhere, and if $\abs{f(x)} \leq M$ almost everywhere, then $\norm{f}_\infty \leq M$.
 
 For $1 \leq p \leq \infty$, $( L^p, \norm{\wait}_p)$ yields a complete normed vector space.
+Scaling and non-degeneracy are fairly clear, it just remains to show the triangle inequality (sometimes referred to as Minkowski's inequality), i.e. 
+$$
+f, g\in L^p \implies \norm{f+g}_p \leq \norm{f}_p + \norm{g}_p.
+$$
+
+
