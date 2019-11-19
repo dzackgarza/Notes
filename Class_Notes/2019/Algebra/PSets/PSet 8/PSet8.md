@@ -729,12 +729,33 @@ s \\ 0
 &=
 \left[\begin{array}{cc}
 x \\ y
-\end{array}\right]
-.\end{align*} \\
+\end{array}\right] \\
+
 \implies 
- \left[\begin{array}{cc}
-t + s \\ y
+\left[\begin{array}{cc}
+t + s \\ 2t
 \end{array}\right]
+&=
+\left[\begin{array}{cc}
+x \\ y
+\end{array}\right] \\
+
+\implies 
+\left[\begin{array}{cc}
+1 & 1 \\ 2 & 0
+\end{array}\right]
+\left[\begin{array}{cc}
+t \\ s
+\end{array}\right] 
+&=
+\left[\begin{array}{cc}
+x \\ y
+\end{array}\right] \\
+,\end{align*}
 \]
+
+which is a linear system of equations represented by an invertible matrix, which always has a solution. So every $\vector v\in CC^2$ is the image of some polynomial in $A$.
+
+It is then easy to see that $A$ is a torsion element of $C
 
 ### Part 3
