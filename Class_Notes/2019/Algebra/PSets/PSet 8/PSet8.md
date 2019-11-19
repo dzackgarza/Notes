@@ -685,7 +685,11 @@ An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such tha
 
 ### Part 2
 
-Let $T: \CC^2 \to \CC^2$ with a matrix representation $A \in \GL(2, \CC)$, say $A = I_2$, and let $R = \CC[x]$ and $M = \CC^2$.
+Let 
+$$
+A = 
+$$
+let $R = \CC[x]$ and $M = \CC^2$.
 
 Then $\CC^2$ is a module over $\CC[x]$ with action given by 
 $$
