@@ -555,14 +555,12 @@ where we allow some $k_i, \ell_i = 0$ so that we can take the product over the s
 
 However, means that the elementary divisors of $M$ are given by $\theset{p_i^{k_i + \ell_i} \mid 1\leq i \leq n}$.
 
-The first invariant factor $d_1$ of $M$ is obtained from the elementary divisors
+The largest invariant factor $d_1$ of $M$ is obtained from the elementary divisors
 by collecting all of the prime powers that divide both $r$ and $s$, then taking the highest power of each prime occurring, then letting $d_1$ be the product.
 
-However, yields exactly $d_1 = \gcd(r, s)$. 
+However, yields exactly $d_1 = \lcm(r, s)$. 
 
-Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the second invariant factor is obtained by performing the same process on ${rs}\{\gcd(r,s)} = \mathrm{lcm}(r,s)$.
-
-But we can note here that there is at least 
+Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the second invariant factor is obtained by performing the same process on ${rs}\{\gcd(r,s)} = \mathrm{lcm}(r,s)$ -- by construction, if we
 
 
 
