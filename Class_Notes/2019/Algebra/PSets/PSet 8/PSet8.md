@@ -470,7 +470,6 @@ R/\ker \phi \cong \im \phi \implies R/(k) \cong sA.
 \end{align*}
 \]
 
-***
 
 Similarly, define a map
 \[
