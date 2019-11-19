@@ -785,3 +785,4 @@ a_m a_n (rm + n)
 \]
 
 where the commutativity of $r, a_n, a_m$ follows from the fact that these are all elements of $R$, which is a domain, and in particular is commutative.
+$\qed$
