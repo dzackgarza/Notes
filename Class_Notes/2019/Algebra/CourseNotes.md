@@ -3437,4 +3437,5 @@ Decomposition of a single linear transformation:
 
 Let $\phi: V \to V$ be a linear transformation of vector spaces.
 Let $R = \hom_k(V, V)$, then this is a ring, and let $f(x) = \sum a_j x^j \in k[x]$ be an arbitrary polynomial.
-Then for $\phi \in R$, it makes sense to evaluate $f(\phi)$ where $\phi^n$ denotes an $n\dash$fold composition.
+Then for $\phi \in R$, it makes sense to evaluate $f(\phi)$ where $\phi^n$ denotes an $n\dash$fold composition,
+and $f(\phi): V \to V$.
