@@ -766,4 +766,4 @@ $$
 T(R) = \theset{m \in M \suchthat rm = 0 \text{ for some $r\neq 0 \in R$}}.
 $$
 
-Then
+Then $T(R)$ is a submodule iff for all $r\in R$ and all $m,n\in M$ we have $
