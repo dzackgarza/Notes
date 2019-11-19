@@ -685,5 +685,5 @@ An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such tha
 
 ### Part 2
 
-Let $A: \CC^2 \to \CC^2$
+Let $T: \CC^2 \to \CC^2$ with a matrix representation $A \in M_2(\CC)$, now take $R = 
 ### Part 3
