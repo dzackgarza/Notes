@@ -3049,5 +3049,22 @@ Scaling and non-degeneracy are fairly clear, it just remains to show the triangl
 $$
 f, g\in L^p \implies \norm{f+g}_p \leq \norm{f}_p + \norm{g}_p.
 $$
+For $p=2$, this boiled down to Cauchy-Schwarz, here we'll need a souped-up version.
 
+Holder's Inequality:
+If $1 \leq p \leq \infty$, we define the *conjugate exponent* of $p$ as the $q$ satisfying $\frac 1 p + \frac 1 q  = 1$.
+We immediately get $q = \frac{p}{p-1}$.
+If $f, g$ are measurable functions then 
+$$
+\norm{fg}_1 \leq \norm{f}_p \norm{g}_q.
+$$
+Proof of Minkowski:
 
+\[
+\begin{align*}
+\abs{f + g}^p 
+&= \abs{f+g} \abs{f+g}^{p-1} \\
+&\leq ( \abs{f} + \abs{g} ) \abs{f+g}^{p-1} \\
+&\implies \int \abs{f+g}^p \leq \int \abs{f} \abs{f+g}^{p-1} + \int \abs{g} \abs{f + g}^{p-1} \\
+.\end{align*}
+\]
