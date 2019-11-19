@@ -70,10 +70,10 @@ Define a map
 \begin{align*}
 \phi: \ZZ &\to \ZZ_n[m] \\ 
 1 &\mapsto [1]_{\mod n}
-.\end{align*}
+,\end{align*}
 \]
 
-The claim is that this is an isomorphism.
+which we claim is an isomorphism.
 
 Then $\phi$ is clearly surjective (since $\ZZ\to \ZZ_n$ is a quotient map and $\ZZ_n[m]$ is a subgroup of $\ZZ_n$) and if we let $d \definedas \gcd(m, n)$, we have
 
