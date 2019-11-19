@@ -568,8 +568,8 @@ We can write
 $$
 \frac{rs}{\gcd(r,s)} = \prod_{i=1}^n p_i^{k_i + \ell_i - \max(k_i, \ell_i)}
 $$
-But we can note that there is at least one prime power $p_j^{s_j}$ dividing $\gcd(r,s)$ which *does not* divide $\mathrm{lcm}(r, s)$. 
-Otherwise, if 
+
+But we can note here that there is at least one $p_i$ such that the exponent $k_i + \ell_i - \max(k_i, \ell_i) = 0$.
 
 
 
