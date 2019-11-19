@@ -37,9 +37,11 @@ $$
 $$
 
 It is also the case that
+\[
 \begin{align*}
 \ker \phi_{\mathrm{ev}} &= \theset{f \in \hom_\ZZ(\ZZ_m, A) \mid f(1) = 0} = \theset{\overline 0},
 \end{align*}
+\]
 
 which follows from the fact that $\ZZ_m = \generators{1 \mod m}$ and $A = \generators{1_A}$ as $\ZZ\dash$modules, so if $f(1 \mod m) = 0_A$ then 
 $$
