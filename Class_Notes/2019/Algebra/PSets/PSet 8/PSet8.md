@@ -303,6 +303,8 @@ $\qed$
 
 ## Problem 4
 
+> Note: Let $X\dual \definedas \hom_R(X, R)$ denote the dual.
+
 We have maps
 
 \[
