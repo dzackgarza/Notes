@@ -760,3 +760,5 @@ $$
 $$
 
 ### Part 3
+
+Suppose $R$ is a domain.
