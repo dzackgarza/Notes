@@ -89,7 +89,7 @@ $\phi$ is clearly surjective since $\ZZ\to \ZZ_n$ is a quotient map and $\ZZ_n[m
 
 Then by the first isomorphism theorem, we have
 $$
-\frac{\ZZ}{\ker \phi} \cong \im \phi \implies \frac{\ZZ}{\gcd(m, n)\ZZ} \definedas \ZZ_{\gcd(m, n)} \cong \ZZ_n[m].
+\frac{\ZZ}{\ker \phi} \cong \im \phi \implies \frac{\ZZ}{d\ZZ} \definedas \ZZ_{\gcd(m, n)} \cong \ZZ_n[m].
 $$
 
 ### Part 3
