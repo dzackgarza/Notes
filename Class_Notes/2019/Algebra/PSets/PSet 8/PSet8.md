@@ -563,7 +563,7 @@ $$
 i.e., we collect all of the prime powers that divide both $r$ and $s$, and take the highest power of each prime occuring.
 However, this is exactly $\gcd(r, s)$. 
 
-Since $rs = \gcd(r,s) \cdot \lcm(r, s)$.
+Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$.
 
 
 
