@@ -202,7 +202,8 @@ f \mapsto [f([1]_m)]_m
 \begin{align*}
 [f([\ell]_m)]_m &= [\ell f([1]_m)]_m \\
 &= \ell [f([1]_m)]_m \\
-&= \ell[0]_m = [0]_m
+&= \ell[0]_m \\
+&= [0]_m
 ,\end{align*}
 \]
 
