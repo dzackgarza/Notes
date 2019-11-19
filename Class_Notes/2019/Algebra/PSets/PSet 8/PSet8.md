@@ -685,5 +685,5 @@ An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such tha
 
 ### Part 2
 
-Let 
+Let $A: \CC^2 \to \CC^2$
 ### Part 3
