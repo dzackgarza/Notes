@@ -553,21 +553,28 @@ s &= \prod_{i=1}^n p_i^{\ell_i} \\
 
 where we allow some $k_i, \ell_i = 0$ so that we can take the product over the same set of primes.
 
-However, means that the elementary divisors of $M$ are given by the multiset $\theset{p_i^{k_i}} \union \theset{p_i^{\ell_i}}$.
+However, means that the elementary divisors of $M$ are given by the multiset $L \coloneqq \theset{p_i^{k_i}} \union \theset{p_i^{\ell_i}}$.
 
 The largest invariant factor $d_1$ of $M$ is obtained from the elementary divisors
 by 
 
-- Forming the multiset of elementary divisors,
-- Selecting the highest power of each prime occurring, say $s_i \coloneqq p_i^{\max(k_i, \ell_i)}$,
-- Deleting $s_i$ from the multiset,
-- Then letting $d_1 = \prod s_i$.
+a. Forming the multiset $L$ of elementary divisors,
+b. Selecting the highest power of each prime occurring, say $s_i \coloneqq p_i^{\max(k_i, \ell_i)}$,
+c. Removing $s_i$ from $L$,
+d. Then letting $d_1 = \prod s_i$.
 
-However, this process yields $d_1 = \mathrm{lcm}(r, s)$ by construction, since $\mathrm{lcm}(r_s) = \prod_{i=1}^n p_i^{\max(k_i, \ell_i)}$.
+However, this process yields $d_1 = \mathrm{lcm}(r, s)$ by construction, since 
+$$
+d_1 = \prod_{i=1}^n s_i = \prod_{i=1}^n p_i^{\max(k_i, \ell_i)} \coloneqq \mathrm{lcm}(r_s).
+$$
 
-Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the next largest invariant factor is obtained by performing the same process on on the remaining prime powers. 
-But every prime $p_i$ that only divides one of $r$ or $s$ is absorbed into $d_1$, so the only remaining primes divide both $r$ and $s$, and thus divide $\gcd(r, s)$.
+The next largest invariant factor is obtained by performing the same process on the remaining prime powers in $L$.
+However, we can note that after obtaining $d_1$, we have $L = \theset{p_i^{\min(k_i, \ell_i)}}$, since there were only two choices for each $p_i$ occurring and we chose the copy with the maximal exponent.
 
+But this means when we perform step (b), there is only one choice, and thus each $s_i = p_i^{\min(k_i, \ell_i)}$ and 
+$$
+d_2 = \prod_{i=1}^n s_i = \prod_i p_i^{\min(k_i, \ell_i)} \coloneqq \gcd(r, s).
+$$
 
 
 
