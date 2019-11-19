@@ -3526,10 +3526,25 @@ with ones on the super-diagonal
 
 *Proof:*
 
-$\implies$: Let $V = k[x].v = \generators{v, \phi(v), \cdots, \phi^{n-1}(v)}$ where $\deg q(x) = n$.
+$\impliedby$: 
+Let $V = k[x].v = \generators{v, \phi(v), \cdots, \phi^{n-1}(v)}$ where $\deg q(x) = n$.
 The claim is that this is a linearly independent spanning set.
 
 Linear independence: suppose $\sum_{j=0}^{n-1} k_j \phi^j(v) = 0$ with some $k_j \neq 0$.
 Then $f(x) = \sum k_j x^j$ is a polynomial where $f(\phi) = 0$, but this contradicts the minimality of $q(x)$.
 
 But then we have $n$ linearly independent vectors in $V$ which is dimension $n$, so this is a spanning set.
+
+$\implies$:
+We can just check where basis elements are sent. 
+Set $\mathcal{B} = \theset{v, \phi(v), \cdots, \phi^{n-1}(v)}$. Then
+\[
+\begin{align*}
+v &\mapsto \phi(v) \\
+\phi(v) &\mapsto \phi^2(v) \\
+\vdots \\
+\phi{n-1}(v) &\mapsto \phi^n(v)  = -\sum a_i \phi^i(v) \\
+.\end{align*}
+\]
+
+
