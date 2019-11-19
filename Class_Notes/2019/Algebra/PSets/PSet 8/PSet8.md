@@ -763,7 +763,7 @@ $$
 
 Suppose $R$ is a domain, $M$ an $R\dash$module, and let 
 $$
-T(R) = \theset{m \in M \suchthat rm = 0 \text{ for some $r\neq 0 \in R$}}.
+T(M) = \theset{m \in M \suchthat rm = 0 \text{ for some $r\neq 0 \in R$}}.
 $$
 
-Then $T(R)$ is a submodule iff for all $r\in R$ and all $m,n\in M$ we have $
+Then $T(R)$ is a submodule iff for all $r\in R$ and all $m,n\in T(M)$ we have $rm + n \in T(M)$.
