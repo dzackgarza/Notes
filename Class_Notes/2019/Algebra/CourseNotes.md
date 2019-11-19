@@ -3430,3 +3430,5 @@ This satisfies a number of properties:
 2. Cofactors
 	Let $A_{ij}$ be the $(n-1)\times (n-1)$ minor obtained by deleting row $i$ and column $j$, and $C_{ij} = (-1)^{i+j} \det A_{ij}$. 
 	Then (theorem) $\det A = \sum_{j=1}^n a_{ij} C_{ij}$ by expanding along either a row or column.
+	**Theorem**: $A \mathrm{Adj}(A) = \det (A) I_n$, where $\mathrm{Adj} = (C_{ij})^t$. If $A\inv$ is a unit, then $A\inv = \mathrm{Adj}(A) / \det(A)$.
+
