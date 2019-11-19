@@ -563,7 +563,7 @@ by
 - Deleting $s_i$ from the multiset,
 - Then letting $d_1 = \prod s_i$.
 
-However, this process exactly yields $d_1 = \lcm(r, s)$ by construction, since $\lcm(r_s) = \prod{i=1}^n p_i^{\max(k_i, \ell_i)}$.
+However, this process yields $d_1 = \mathrm{lcm}(r, s)$ by construction, since $\lcm(r_s) = \prod{i=1}^n p_i^{\max(k_i, \ell_i)}$.
 
 Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the next largest invariant factor is obtained by performing the same process on on the remaining prime powers. 
 But every prime $p_i$ that only divides one of $r$ or $s$ is absorbed into $d_1$, so the only remaining primes divide both $r$ and $s$, and thus divide $\gcd(r, s)$.
