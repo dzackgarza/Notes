@@ -560,7 +560,7 @@ by collecting all of the prime powers that divide both $r$ and $s$, then taking 
 
 However, yields exactly $d_1 = \lcm(r, s)$. 
 
-Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the second invariant factor is obtained by performing the same process on ${rs}\{\gcd(r,s)} = \mathrm{lcm}(r,s)$ -- by construction, if we
+Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the second invariant factor is obtained by performing the same process on ${rs}\{\lcm(r,s)} = \gcd(r,s)$ -- by construction, if we
 
 
 
