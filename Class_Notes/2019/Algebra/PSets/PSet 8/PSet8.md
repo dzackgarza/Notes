@@ -547,7 +547,7 @@ Since $R$ is a PID, there is unique factorization, so we can write
 \begin{align*}
 r &= \prod_{i=1}^n p_i^{k_i} \\
 s &= \prod_{i=1}^n p_i^{\ell_i} \\
-\implies m\coloneqq rs &= \prod_{i=1}^n p_i^{k_i + \ell_i},
+\implies rs &= \prod_{i=1}^n p_i^{k_i + \ell_i},
 \end{align*}
 \]
 
@@ -555,21 +555,14 @@ where we allow some $k_i, \ell_i = 0$ so that we can take the product over the s
 
 However, means that the elementary divisors of $M$ are given by $\theset{p_i^{k_i + \ell_i} \mid 1\leq i \leq n}$.
 
-By definition, the first invariant factor is obtained from the elementary divisors as 
-$$
-d_1 \definedas \prod_{\theset{i \mid k_i,\ell_i \neq 0}} p_i^{\max(k_i, \ell_i)}
-$$
+The first invariant factor $d_1$ of $M$ is obtained from the elementary divisors
+by collecting all of the prime powers that divide both $r$ and $s$, then taking the highest power of each prime occurring.
 
-i.e., we collect all of the prime powers that divide $m$, and take the highest power of each prime occuring.
-However, this is exactly $\gcd(r, s)$. 
+However, yields exactly $d_1 = \gcd(r, s)$. 
 
 Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the second invariant factor is obtained by performing the same process on $\frac{rs}{\gcd(r,s)} = \mathrm{lcm}(r,s)$.
-We can write
-$$
-\frac{rs}{\gcd(r,s)} = \prod_{i=1}^n p_i^{k_i + \ell_i - \max(k_i, \ell_i)}
-$$
 
-But we can note here that there is at least one $p_i$ such that the exponent $k_i + \ell_i - \max(k_i, \ell_i) = 0$, i.e., 
+But we can note here that there is at least 
 
 
 
