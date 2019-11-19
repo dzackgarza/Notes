@@ -3546,5 +3546,17 @@ v &\mapsto \phi(v) \\
 \phi{n-1}(v) &\mapsto \phi^n(v)  = -\sum a_i \phi^i(v) \\
 .\end{align*}
 \]
+$\impliedby$
+Fix a basis $B = \theset{v_1, \cdots, v_n}$ and $A = [\phi]_B$, then
 
+\[
+\begin{align*}
+v_1 &\mapsto v_2 = \phi(v_1) \\
+v_1 &\mapsto v_3 = \phi^2(v_1) \\
+v_{n-2} &\mapsto v_{n-1} = \phi^2(v_1) 
+.\end{align*}
+\]
 
+and $\\phi^n(v) = -a_k v_1 \neq -a_1 \phi(v_1), \cdots -a_{n-1} \phi^{n-1}(v_1)$.
+
+Thus $V = k[x].v_1$, since $\dim V = n$, and $\theset{v_1, \phi(v_1), \cdots, \phi^{n-1}(v_1)}$.
