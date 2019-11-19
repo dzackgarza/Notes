@@ -3405,3 +3405,28 @@ Next time:
 	- Cofactors
 - Formulas for $A\inv$
 - Cramer's rule
+
+# Tuesday November 19
+
+## Determinants
+
+Let $A\in M_n(R)$, where $R$ is a commutative unital ring. 
+Given $A = (a_{ij})$, recall that $\det A = \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma) \prod a_{i, \sigma(i)}$.
+
+This satisfies a number of properties:
+
+- $\det(AB) = \det A \det B$
+- $A$ invertible $\implies$ $\det A$ is a unit in $R$
+- $A \sim B \implies \det(A) = \det(B)$
+- $\det A^t = \det A$
+- $A$ is triangular $\implies \det A = \prod a_{ii}$.
+
+### Calculating Determinants
+
+1. Gaussian Elimination
+	a. $B$ is obtained from $A$ by interchanging rows: $\det B = -\det A$
+	b. $B$ is obtained from $A$ by multiplying $\det B = r \det A$
+	c. $B$ is obtained from $A$ by adding a scalar multiple of one row to another: $\det B = \det A$.
+2. Cofactors
+	Let $A_{ij}$ be the $(n-1)\times (n-1)$ minor obtained by deleting row $i$ and column $j$, and $C_{ij} = (-1)^{i+j} \det A_{ij}$. 
+	Then (theorem) $\det A = \sum_{j=1}^n a_{ij} C_{ij}$ by expanding along either a row or column.
