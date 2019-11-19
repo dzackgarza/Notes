@@ -3137,4 +3137,41 @@ Summary:
 
 Proof (in the special case where $1\leq p < 2$ and $m(X) < \infty$):
 
+> We'll use the fact that we know this for $p=2$ already.
 
+Let $\Lambda \in (L^p)\dual$, then we know $\abs{\Lambda(f)} \leq \norm{\Lambda}_{(L^p)\dual} \norm{f}_p$, since $\norm{\Lambda}$ is the best upper bound.
+
+> Note: in general, there are no inclusions between $L_p, L_q$, but restricting to a compact set changes this fact. E.g. from homework, $L^2(X) \subseteq L^1(X)$ for $m(X) < \infty$.
+> This follows from $\norm{f}_1 \leq \norm{f}_2 \norm{1}_2 = m(X)^{1/2} \norm{f}$. But this works for $L^2(X) \subseteq L^p(X)$ by taking $\norm{f}_p^p = \int \abs{f}^p \leq ( \int \abs{f}^2 )^{p/2} (\int \abs{1}^{?})^{1 - \frac 2 p}$ by Holder with $\frac 2 p$.
+
+So we can write
+$$
+\abs{\Lambda(f)} = \norm{\Lambda} m(X)^{\frac 1 p - \frac 1 2} \norm{f}_2 \forall f\in L^2,
+$$
+
+which verifies that $\Lambda$ is a continuous linear functional on $L^2$, so $\Lambda \in (L^2)\dual$, and by Riesz Representation, $\exists g \in L^2$ such that $\Lambda(f) = \int fg$ for all $f\in L^2$.
+
+This is almost what we want, but we need $g\in L^q$ and $f\in L^p$. 
+We also want to show that $\norm{\Lambda} = \norm{g}_q$.
+
+Claim:
+$g\in L^q$ and $\norm{g}_q \leq \norm{\Lambda}$.
+
+> Pause on the proof, we'll come back to it!
+
+Note that since $L_2 \subseteq L^p$ and both have simple functions as a dense subset, $L^2$ is in fact dense in $L^p$.
+So let $f \in L^p$ and pick a sequence $f_n \subset L^2$ converging to $f$ in the $L^p$ norm.
+Then $\Lambda(f_n) \to \Lambda(f)$ by continuity, and since $g\in L^q$, integrating against $g$ is a linear functional $\Lambda_q (f_n)$ on $L^q$ converging to $\int f g$, so $\Lambda(f) = \int fg$. 
+$\qed$
+
+> Definitely need to know: $(L^1)\dual = L^\infty$!
+
+Proof of claim:
+
+Suppose it's not true, so $\norm{g}_\infty > \norm{\Lambda}_{(L^1)\dual}$.
+Using the fact that $\norm{g}$ is the best lower bound, there must be a positive measure set such that $\abs{g(x)} \geq \norm{\Lambda}$.
+So there is some set $E = \theset{x \suchthat \abs{g(x) > \norm{\Lambda}}}$ with $m(E) > 0$.
+
+Let $h = \overline{g}/\abs{g} \chi_E / m(E)$. 
+Then $h\in L^2$ and $\norm{h} = 1$.
+Then $\Lambda(h) = \frac{1}{m(E)} \int_E \abs{g} \geq \norm{\Lambda} O(1)$, which is a contradiction.
