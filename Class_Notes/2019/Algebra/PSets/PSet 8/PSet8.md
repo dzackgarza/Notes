@@ -34,11 +34,6 @@ Then $\phi_\mathrm{ev}$ is a $\ZZ\dash$module homomorphism, since
 \end{align*}
 \]
 
-\[
-\begin{align*}
-\end{align*}
-\]
-
 But this forces $f(\overline 0) = 0_A$ (where $\overline 0: \ZZ_m \to A$ is the zero map), we have
 $$
 0 = f(0) = f(m) = m f(1),
