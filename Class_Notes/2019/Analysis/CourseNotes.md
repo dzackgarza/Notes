@@ -3133,4 +3133,8 @@ Summary:
 - If $1\leq p < \infty$, we have $(L^p)\dual = L^q$.
 - $(L^\infty)\dual \supset L^1$, since the isometric mapping is always injective, but *never* surjective, so this containment is always proper (requires Hahn-Banach Theorem).
 
+> For qual, supposed to know this for $p=1$. $p=2$ case is easy by Riesz Representation for Hilbert spaces.
+
+Proof (in the special case where $1\leq p < 2$ and $m(X) < \infty$):
+
 
