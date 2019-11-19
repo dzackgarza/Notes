@@ -3066,5 +3066,7 @@ Proof of Minkowski:
 &= \abs{f+g} \abs{f+g}^{p-1} \\
 &\leq ( \abs{f} + \abs{g} ) \abs{f+g}^{p-1} \\
 &\implies \int \abs{f+g}^p \leq \int \abs{f} \abs{f+g}^{p-1} + \int \abs{g} \abs{f + g}^{p-1} \\
+&\leq \norm{f}_p ( \int \abs{f+g}^{(p-1)q}  )^{1/q}
++ \norm{f}_p ( \int \abs{f+g}^{(p-1)q}  )^{1/q}
 .\end{align*}
 \]
