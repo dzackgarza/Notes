@@ -569,14 +569,24 @@ d_1 = \prod_{i=1}^n s_i = \prod_{i=1}^n p_i^{\max(k_i, \ell_i)} \coloneqq \mathr
 $$
 
 The next largest invariant factor is obtained by performing the same process on the remaining prime powers in $L$.
-However, we can note that after obtaining $d_1$, we have $L = \theset{p_i^{\min(k_i, \ell_i)}}$, since there were only two choices for each $p_i$ occurring and we chose the copy with the maximal exponent.
+However, we can note that after obtaining $d_1$, we have $L = \theset{p_i^{\min(k_i, \ell_i)}}$, since *there were only two choices* for each $p_i$ occurring and we chose the copy with the maximal exponent.
 
-But this means when we perform step (b), there is only one choice, and thus each $s_i = p_i^{\min(k_i, \ell_i)}$ and 
+But this means when we perform step (b) to obtain $d_2$, **there is now only one choice**, and thus each $s_i = p_i^{\min(k_i, \ell_i)}$ and we have
 $$
 d_2 = \prod_{i=1}^n s_i = \prod_i p_i^{\min(k_i, \ell_i)} \coloneqq \gcd(r, s).
 $$
+> Note: by construction, $d_2 \divides d_1$, since we are choosing from the same prime powers but with smaller exponents.
 
+Since there were only at most two copies of each prime occurring in $L$, where one of them was chosen for $d_1$ and the other was chosen for $d_2$, this exhausts all of the elements in $L$. But this means $M$ has only two invariant divisors,
+\[
+\begin{align*}
+d_1 &= \lcm(r, s) \\
+d_2 &= \gcd(r, s)
+,\end{align*}
+\]
 
+which is what we wanted to show.
+$\qed$
 
 # Qual Problems
 
