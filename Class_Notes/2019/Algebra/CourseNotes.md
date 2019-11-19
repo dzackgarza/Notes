@@ -3442,5 +3442,9 @@ and $f(\phi): V \to V$.
 
 Lemma:
 
-- There exists a unique monic polynomial $q_\phi(x) \in k[x]$ such that $q_\phi(\phi) = 0$ and $f(\phi) = 0 \implies q_\phi \divides f$. $q_\phi$ is referred to as the *minimal polynomial* of $\phi$.
-- The exact same conclusion with $\phi$ replaced by a matrix $A$.
+- There exists a unique monic polynomial $q_\phi(x) \in k[x]$ such that $q_\phi(\phi) = 0$ and $f(\phi) = 0 \implies q_\phi \divides f$. 
+	$q_\phi$ is referred to as the *minimal polynomial* of $\phi$.
+- The exact same conclusion holds with $\phi$ replaced by a matrix $A$, yielding $q_A$.
+- If $A$ is the matrix of $\phi$ relative to a fixed basis, then $q_\phi =  q_A$.
+
+
