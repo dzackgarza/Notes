@@ -74,8 +74,7 @@ Define a map
 \]
 
 which we claim is an isomorphism.
-
-Then $\phi$ is clearly surjective (since $\ZZ\to \ZZ_n$ is a quotient map and $\ZZ_n[m]$ is a subgroup of $\ZZ_n$) and if we let $d \definedas \gcd(m, n)$, we have
+$\phi$ is clearly surjective since $\ZZ\to \ZZ_n$ is a quotient map and $\ZZ_n[m]$ is a subgroup of $\ZZ_n$, and if we let $d \definedas \gcd(m, n)$, we have
 
 \[
 \begin{align*}
