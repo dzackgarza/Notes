@@ -756,6 +756,6 @@ x \\ y
 
 which is a linear system of equations represented by an invertible matrix, which always has a solution. So every $\vector v\in CC^2$ is the image of some polynomial in $A$.
 
-It is then easy to see that $\CC^2$ is torsion as a module over $\CC[x]$, since by Cayley-Hamilton we have $\mathrm{Ann}(A) = (\mathrm{minpoly}(A)) = ()$ 
+It is then easy to see that $\CC^2$ is torsion as a module over $\CC[x]$, since by Cayley-Hamilton we have $\mathrm{Ann}(A) = (\mathrm{minpoly}(A)) = (x^2)$ 
 
 ### Part 3
