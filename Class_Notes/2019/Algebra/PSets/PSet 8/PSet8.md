@@ -553,12 +553,17 @@ s &= \prod_{i=1}^n p_i^{\ell_i} \\
 
 where we allow some $k_i, \ell_i = 0$ so that we can take the product over the same set of primes.
 
-However, means that the elementary divisors of $M$ are given by $\theset{p_i^{k_i + \ell_i} \mid 1\leq i \leq n}$.
+However, means that the elementary divisors of $M$ are given by the multiset $\theset{p_i^{k_i}} \union \theset{p_i^{\ell_i}}$.
 
 The largest invariant factor $d_1$ of $M$ is obtained from the elementary divisors
-by collecting all of the prime powers that divide both $r$ and $s$, then taking the highest power of each prime occurring, then letting $d_1$ be the product.
+by 
 
-However, yields exactly $d_1 = \lcm(r, s)$. 
+- Forming the multiset of elementary divisors,
+- Selecting the highest power of each prime occurring, say $s_i \coloneqq p_i^{\max(k_i, \ell_i)}$,
+- Deleting $s_i$ from the multiset,
+- Then letting $d_1 = \prod s_i$.
+
+However, this process exactly yields $d_1 = \lcm(r, s)$ by construction, since $\lcm(r_s) = \prod{i=1}^n p_i^{\max(k_i, \ell_i)}$.
 
 Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the next largest invariant factor is obtained by performing the same process on on the remaining prime powers. 
 But every prime $p_i$ that only divides one of $r$ or $s$ is absorbed into $d_1$, so the only remaining primes divide both $r$ and $s$, and thus divide $\gcd(r, s)$.
