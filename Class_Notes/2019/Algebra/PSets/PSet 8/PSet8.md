@@ -551,6 +551,8 @@ s &= \prod_{i=1}^n p_i^{\ell_i} \\
 \end{align*}
 \]
 
+where we way have some $k_i, \ell_i = 0$.
+
 which means that $\theset{p_i^{k_i + \ell_i} \mid 1\leq i \leq n}$ are the elementary divisors of $M$.
 
 By definition, the first invariant factor is obtained from the elementary divisors as 
