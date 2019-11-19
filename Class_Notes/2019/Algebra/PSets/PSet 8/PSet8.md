@@ -565,8 +565,7 @@ Since $R$ is a PID, there is unique factorization, so we can write
 \[
 \begin{align*}
 r &= \prod_{i=1}^n p_i^{k_i} \\
-s &= \prod_{i=1}^n p_i^{\ell_i} \\
-\implies rs &= \prod_{i=1}^n p_i^{k_i + \ell_i},
+s &= \prod_{i=1}^n p_i^{\ell_i}
 \end{align*}
 \]
 
