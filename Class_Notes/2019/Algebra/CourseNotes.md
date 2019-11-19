@@ -3447,4 +3447,10 @@ Lemma:
 - The exact same conclusion holds with $\phi$ replaced by a matrix $A$, yielding $q_A$.
 - If $A$ is the matrix of $\phi$ relative to a fixed basis, then $q_\phi =  q_A$.
 
+Proof of a:
+Fix $\phi$, and let $\Gamma: k[x] \to \hom_k(V, V) = V\dual$ be defined by $f \mapsvia{\Gamma} f(\phi)$.
+Since $\dim_k V\dual = \dim_k V < \infty$ and $\dim_k k[x] = \infty$, we must have $\ker \Gamma \neq 0$.
+Since $k[x]$ is a PID, we have $\ker \Gamma = (q)$ for some $q\in k[x]$.
+Then if $f(\phi) = 0$, we have $f(x) \in \ker \Gamma \implies q \divides f$.
+We can then rescale $q$ to be monic, which makes it unique.
 
