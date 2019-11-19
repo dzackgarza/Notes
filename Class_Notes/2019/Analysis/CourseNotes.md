@@ -3021,3 +3021,27 @@ Upcoming:
 - Dual of $L^1$, dual of $L^\infty$.
 - Abstract measure theory
 - Hahn-Banach, Radon-Nikodym, Lebesgue Density from the perspective of differentiation theorems.
+
+# Tuesday November 19
+
+## Lp Spaces
+
+Given $f:\RR^n \to \CC$ and $0 < p < \infty$, we define
+$$
+\norm{f}_p = \left( \int \abs{f}^p \right)^{1/p}.
+$$
+
+and $L^p(\RR^n) = \theset{f \suchthat \norm{f}_p \infty }$.
+
+We also define 
+$$
+\norm{f}_\infty = \inf_{a \geq 0} \theset{ m(\theset{x \suchthat f(x) > a}) = 0 }
+$$
+
+which is morally the "best upper bound almost everywhere".
+
+> Qual problem alert: If $X \subseteq \RR^n$ with $\mu(X) < \infty$ then $\norm{f}_p \to \norm{f}_\infty$.
+
+Note that $\abs{f(x)} \leq \norm{f}_\infty$ almost everywhere, and if $\abs{f(x)} \leq M$ almost everywhere, then $\norm{f}_\infty \leq M$.
+
+For $1 \leq p \leq \infty$, $( L^p, \norm{\wait}_p)$ yields a complete normed vector space.
