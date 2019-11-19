@@ -547,7 +547,7 @@ Since $R$ is a PID, there is unique factorization, so we can write
 \begin{align*}
 r &= \prod_{i=1}^n p_i^{k_i} \\
 s &= \prod_{i=1}^n p_i^{\ell_i} \\
-\implies rs &= \prod_{i=1}^n p_i^{k_i + \ell_i},
+\implies m\coloneqq rs &= \prod_{i=1}^n p_i^{k_i + \ell_i},
 \end{align*}
 \]
 
@@ -560,7 +560,7 @@ $$
 d_1 \definedas \prod_{\theset{i \mid k_i,\ell_i \neq 0}} p_i^{\max(k_i, \ell_i)}
 $$
 
-i.e., we collect all of the prime powers that divide both $r$ and $s$, and take the highest power of each prime occuring.
+i.e., we collect all of the prime powers that divide $m$, and take the highest power of each prime occuring.
 However, this is exactly $\gcd(r, s)$. 
 
 Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the second invariant factor is obtained by performing the same process on $\frac{rs}{\gcd(r,s)} = \mathrm{lcm}(r,s)$.
@@ -569,7 +569,7 @@ $$
 \frac{rs}{\gcd(r,s)} = \prod_{i=1}^n p_i^{k_i + \ell_i - \max(k_i, \ell_i)}
 $$
 
-But we can note here that there is at least one $p_i$ such that the exponent $k_i + \ell_i - \max(k_i, \ell_i) = 0$.
+But we can note here that there is at least one $p_i$ such that the exponent $k_i + \ell_i - \max(k_i, \ell_i) = 0$, i.e., 
 
 
 
