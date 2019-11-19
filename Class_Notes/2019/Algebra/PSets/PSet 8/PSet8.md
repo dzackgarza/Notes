@@ -685,8 +685,5 @@ An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such tha
 
 ### Part 2
 
-Let $R = \FF$ as a ring and take 
-$$
-M = \frac{\FF[x]}{(x^2+1)} \cong \mathrm{Ann}(x^2+1)\FF[x]
-$$
+Let 
 ### Part 3
