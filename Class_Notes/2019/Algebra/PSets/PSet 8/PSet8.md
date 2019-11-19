@@ -658,3 +658,14 @@ A_L =
 \end{array}\right)
 $$
 
+Then $\im A_L \cong N$, and we can compute the Smith normal form,
+$$
+SNF(A_L) = 
+\left(\begin{array}{rrrr}
+3 & 0 & 0 & 0 \\
+0 & 6 & 0 & 0 \\
+0 & 0 & 6 & 0 \\
+0 & 0 & 0 & 0
+\end{array}\right)
+$$
+
