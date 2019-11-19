@@ -553,11 +553,11 @@ s &= \prod_{i=1}^n p_i^{\ell_i} \\
 
 where we allow some $k_i, \ell_i = 0$ so that we can take the product over the same set of primes.
 
-which means that $\theset{p_i^{k_i + \ell_i} \mid 1\leq i \leq n}$ are the elementary divisors of $M$.
+However, means that the elementary divisors of $M$ are given by $\theset{p_i^{k_i + \ell_i} \mid 1\leq i \leq n}$.
 
 By definition, the first invariant factor is obtained from the elementary divisors as 
 $$
-d_1 \definedas \prod_{\theset{i \suchthat k_i,\ell_i \neq 0}} p_i^{\max{k_i, \ell_i}},
+d_1 \definedas \prod_{\theset{i \mid k_i,\ell_i \neq 0}} p_i^{\max{k_i, \ell_i}},
 $$
 
 which is exactly $\gcd(r, s)$.
