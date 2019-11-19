@@ -575,6 +575,7 @@ But this means when we perform step (b) to obtain $d_2$, **there is now only one
 $$
 d_2 = \prod_{i=1}^n s_i = \prod_i p_i^{\min(k_i, \ell_i)} \coloneqq \gcd(r, s).
 $$
+
 > Note: by construction, $d_2 \divides d_1$, since we are choosing from the same prime powers but with smaller exponents.
 
 Since there were only at most two copies of each prime occurring in $L$, where one of them was chosen for $d_1$ and the other was chosen for $d_2$, this exhausts all of the elements in $L$. But this means $M$ has only two invariant divisors,
@@ -587,6 +588,8 @@ d_2 &= \gcd(r, s)
 
 which is what we wanted to show.
 $\qed$
+
+> Note: the indexing convention for $d_i$ is opposite the usual one here, since we are choosing the largest invariant factor first, and so we have $d_n \divides d_{n-1} \divides \cdots$
 
 # Qual Problems
 
