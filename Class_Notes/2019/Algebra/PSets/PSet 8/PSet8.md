@@ -569,7 +569,7 @@ d_1 = \prod_{i=1}^n s_i = \prod_{i=1}^n p_i^{\max(k_i, \ell_i)} \coloneqq \mathr
 $$
 
 The next largest invariant factor is obtained by performing the same process on the remaining prime powers in $L$.
-However, we can note that after obtaining $d_1$, we have $L = \theset{p_i^{\min(k_i, \ell_i)}}$, since *there were only two choices* for each $p_i$ occurring and we chose the copy with the maximal exponent.
+However, we can note that after obtaining $d_1$, we have $L = \theset{p_i^{\min(k_i, \ell_i)}}$, since **there were only two choices** for each $p_i$ occurring and we chose the copy with the maximal exponent.
 
 But this means when we perform step (b) to obtain $d_2$, **there is now only one choice**, and thus each $s_i = p_i^{\min(k_i, \ell_i)}$ and we have
 $$
@@ -589,7 +589,7 @@ d_2 &= \gcd(r, s)
 which is what we wanted to show.
 $\qed$
 
-> Note: the indexing convention for $d_i$ is opposite the usual one here, since we are choosing the largest invariant factor first, and so we have $d_n \divides d_{n-1} \divides \cdots$
+> Note: the indexing convention for $d_i$ is opposite the usual one here, since we are choosing the largest invariant factor first, and so we have $d_n \divides d_{n-1} \divides \cdots \divides d_1$.
 
 # Qual Problems
 
