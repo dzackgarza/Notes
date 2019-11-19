@@ -696,7 +696,7 @@ $$
 
 $M$ is cyclic as an $R\dash$module, since the equation
 $$
-(aA + b)[0, 1]^t = [x, y]
+(aI + b)[0, 1]^t = [x, y]
 $$
 
 ### Part 3
