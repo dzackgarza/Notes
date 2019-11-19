@@ -761,4 +761,4 @@ $$
 
 ### Part 3
 
-Suppose $R$ is a domain.
+Suppose $R$ is a domain, and let $T(R) = \theset{m
