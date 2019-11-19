@@ -770,6 +770,6 @@ Then $T(R)$ is a submodule iff for all $r\in R$ and all $m,n\in T(M)$ we have $r
 
 So pick annihilators $a_m, a_n \in R$ where $a_m m = 0$ and $a_n n = 0$. Then
 
-$$
+
 a_m a_n (rm + n) = a_m a_n r m + a_m a_n n
 $$
