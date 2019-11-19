@@ -687,7 +687,11 @@ An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such tha
 
 Let 
 $$
-A = 
+A = \[
+\left[\begin{array}{ccc}
+1 & 2 \\ 2 & 1
+\end{array}\right]
+\] \in 
 $$
 let $R = \CC[x]$ and $M = \CC^2$.
 
