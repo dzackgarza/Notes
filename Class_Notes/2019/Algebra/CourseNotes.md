@@ -3433,7 +3433,7 @@ This satisfies a number of properties:
 	**Theorem**: $A \mathrm{Adj}(A) = \det (A) I_n$, where $\mathrm{Adj} = (C_{ij})^t$. If $A\inv$ is a unit, then $A\inv = \mathrm{Adj}(A) / \det(A)$.
 	
 
-Decomposition of a single linear transformation:
+### Decomposition of a Linear Transformation:
 
 Let $\phi: V \to V$ be a linear transformation of vector spaces.
 Let $R = \hom_k(V, V)$, then this is a ring, and let $f(x) = \sum a_j x^j \in k[x]$ be an arbitrary polynomial.
@@ -3469,5 +3469,15 @@ Then $\hom_k(V, V) \cong M_n(k)$, so we have the following commutative diagram:
 \end{tikzcd}
 \end{center}
 ```
+
+### Finitely Generated Modules over a PID
+
+Let $M$ be a finitely generated module over $R$ a PID.
+\[
+\begin{align*}
+M \cong F \oplus \bigoplus_{i=1}^n R/(r_i) \quad r_1 \divides r_2 \divides \cdots r_n \\
+M \cong F \oplus \bigoplus_{i=1}^n R/(p_i^{s_i}) \quad p_i \text{ not necessarily distinct primes. }
+.\end{align*}
+\]
 
 
