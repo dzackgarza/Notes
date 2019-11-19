@@ -557,7 +557,7 @@ However, means that the elementary divisors of $M$ are given by $\theset{p_i^{k_
 
 By definition, the first invariant factor is obtained from the elementary divisors as 
 $$
-d_1 \definedas \prod_{\theset{i \mid k_i,\ell_i \neq 0}} p_i^{\max{k_i, \ell_i}},
+d_1 \definedas \prod_{\theset{i \mid k_i,\ell_i \neq 0}} p_i^{\max(k_i, \ell_i)},
 $$
 
 which is exactly $\gcd(r, s)$.
