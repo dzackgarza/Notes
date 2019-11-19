@@ -3076,4 +3076,25 @@ Proof of Minkowski:
 and taking $p$th roots yields the result. (?? Revisit)
 $\qed$
 
-Note: For $1\leq p \leq \infty$, $L^p$ is a Banach space.
+> Note: For $1\leq p \leq \infty$, $L^p$ is a Banach space.
+
+> AM-GM: $\sqrt{ab} \leq \frac{a+b}{2}$.
+
+Proof of Holder:
+
+We'll use the following key fact:
+$$
+a^\lambda b^{1-\lambda} \leq \lambda a + (1-\lambda)b
+$$
+
+with equality iff $a=b$. This can be verified by the first derivative test.
+
+We can assume that $\norm{f}_p = \norm{g}_q = 1$, since $\norm{fg}_1 \leq \norm{f}_p \norm{f}_q \iff \int \frac{\abs{f}}{\norm{f}_p} \frac{\abs{g}}{\norm{g}_q}$.
+
+Applying the key fact, we can choose $\lambda = \frac 1 p, a =\abs{f}^p, b = \abs{g}^q$.
+
+We then obtain
+$$
+\int \abs{f} \abs{g} \leq \int \frac{\abs{f}^p}{p} \frac{\abs{g}^q}{q} = \frac 1 p + \frac 1 q = 1.
+$$
+$\qed$
