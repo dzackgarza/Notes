@@ -564,6 +564,12 @@ i.e., we collect all of the prime powers that divide both $r$ and $s$, and take 
 However, this is exactly $\gcd(r, s)$. 
 
 Since $rs = \gcd(r,s) \cdot \mathrm{lcm}(r, s)$, the second invariant factor is obtained by performing the same process on $\frac{rs}{\gcd(r,s)} = \mathrm{lcm}(r,s)$.
+We can write
+$$
+\frac{rs}{\gcd(r,s)} = \prod_{i=1}^n p_i^{k_i + \ell_i - \max(k_i, \ell_i)}
+$$
+But we can note that there is at least one prime power $p_j^{s_j}$ dividing $\gcd(r,s)$ which *does not* divide $\mathrm{lcm}(r, s)$. 
+Otherwise, if 
 
 
 
