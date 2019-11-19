@@ -694,6 +694,9 @@ $$
 
 (i.e. by evaluation at $A$.)
 
-$M$ is cyclic as an $R\dash$module, since $
+$M$ is cyclic as an $R\dash$module, since the equation
+$$
+(aA + b)[0, 1]^t = [x, y]
+$$
 
 ### Part 3
