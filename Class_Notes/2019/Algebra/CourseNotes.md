@@ -3501,4 +3501,35 @@ Let $\phi: V\to V$ be a linear transformation. Then
 Apply the classification theorem to write $V = \bigoplus R/(r_i)$ as an invariant factor decomposition.
 Then $R/(q_i) \cong V_i$, some vector space, and since there is a direct sum decomposition, the invariant factors are minimal polynomials for $\phi_i: V_i \to V_i$, and thus $k[x]/(q_i)$.
 
+### Canonical Forms for Matrices
 
+We'll look at
+
+- Rational Canonical Form
+- Jordan Canonical Form
+
+**Theorem**:
+Let $\phi: V\to V$ be linear, then $V$ is a cyclic $k[x]\dash$module and $\phi: V\to V$ has minimal polynomial $q(x) = \sum_j a_j x^j$ iff $\dim V = n$ and $V$ has an ordered basis of the form
+\[
+\begin{align*}
+[\phi]_{\mathcal{B}} = 
+\begin{array}{ccccc}
+0 & 1 & 0 & \cdots & 0
+0 & 0 & 1 & \cdots & 0
+\vdot & \vdots & \vdots & \cdots & \vdots
+-a_0 & -a_1 & -a_2 & \cdots & -a_{n-1}
+\end{array}
+.,\end{align*}
+\]
+
+with ones on the super-diagonal
+
+*Proof:*
+
+$\implies$: Let $V = k[x].v = \generators{v, \phi(v), \cdots, \phi^{n-1}(v)}$ where $\deg q(x) = n$.
+The claim is that this is a linearly independent spanning set.
+
+Linear independence: suppose $\sum_{j=0}^{n-1} k_j \phi^j(v) = 0$ with some $k_j \neq 0$.
+Then $f(x) = \sum k_j x^j$ is a polynomial where $f(\phi) = 0$, but this contradicts the minimality of $q(x)$.
+
+But then we have $n$ linearly independent vectors in $V$ which is dimension $n$, so this is a spanning set.
