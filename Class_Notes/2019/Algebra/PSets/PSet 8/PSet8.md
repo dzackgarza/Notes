@@ -566,7 +566,7 @@ $$
 M \cong F \oplus \bigoplus R/(r_i)
 $$
 
-where $F$ is free of finite rank, $R/(r_i)$ is cyclic torsion, and $r_i \divides r_{i+1} \divides \cdots $ are the invariant factors of $M$. 
+where $F$ is free of finite rank, $R/(r_i)$ is cyclic torsion, and $r_i \divides r_{i+1} \divides \cdots$ are the invariant factors of $M$. 
 
 We thus have
 $$
