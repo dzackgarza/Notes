@@ -3461,11 +3461,13 @@ Suppose $A = [\phi]_\mathcal{B}$ for some fixed basis $\mathcal B$.
 Then $\hom_k(V, V) \cong M_n(k)$, so we have the following commutative diagram:
 
 ```{=latex}
+\begin{center}
 \begin{tikzcd}
 {k[x]} \arrow[rr, "\Gamma_\phi"] \arrow[rrdd, "\Gamma_A"] &  & {\hom_k(V, V)} \arrow[dd, "\cong", two heads, hook] \\
                                                           &  &                                                     \\
                                                           &  & M_n(k)                                             
 \end{tikzcd}
+\end{center}
 ```
 
 
