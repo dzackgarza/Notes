@@ -669,3 +669,8 @@ SNF(A_L) =
 \end{array}\right)
 $$
 
+which shows that the invariant factors are $3, 6, 6, 0$. We can thus write $\im A_L \cong 3\ZZ \oplus 6\ZZ \oplus 6\ZZ$, and so
+$$
+M \cong \frac{\ZZ^4}{3\ZZ \oplus 6\ZZ \oplus 6\ZZ} \cong \ZZ \oplus \ZZ/(3) \oplus \ZZ/(6) \oplus \ZZ/(6).
+$$
+
