@@ -3554,11 +3554,53 @@ Postponed.
 
 > $\mathrm{ch}$ are characters, $L(\lambda)$ is a Verma module.
 
-Remark:
+Remark: if we sum over $\mu \leq \lambda$, we obtain
 \[
 \begin{align*}
-\mathrm{ch} M(\lambda) = \sum_{\mu \in W \cdot \lambda}a_{\lambda \mu} \mathrm{ch} L(\mu)$ \\
-\mathrm{ch} L(\lambda) = \sum_{\mu \in W \cdot \lambda} b_{\lambda \mu} \mathrm{ch} M(\mu)$ \\
+\mathrm{ch} M(\lambda) &= \sum_{\mu \in W \cdot \lambda}a_{\lambda \mu} \mathrm{ch} L(\mu)$ \\
+\mathrm{ch} L(\lambda) &= \sum_{\mu \in W \cdot \lambda} b_{\lambda \mu} \mathrm{ch} M(\mu)$ 
+&= \sum_{\W\cdot \lambda \in \lambda} c_{\lambda W} \mathrm{ch} M(w\cdot \lambda)
+.\end{align*}
+\]
 
+**Theorem (Weyl's Character Formula):**
+If $\lambda \in \Lambda^+$, then 
+$$
+\mathrm{ch} L(\lambda) = \frac{
+\sum_{w\in W} (-1)^{\ell(w)} e(w \cdot \lambda)
+}{
+\sum_{w\in W} (-1)^{\ell(w)} e(w\cdot 0)
+}
+$$
+
+*Proof*:
+
+We have $\mathrm{ch} L(\lambda) = \sum_{w} c_{\lambda w} \mathrm{ch} M(w\cdot \lambda)$, and so by the lemma, 
+$$
+q \ast \mathrm{ch} L(\lambda) = \sum c_{\lambda w} q \star \mathrm{ch} M(W(\lambda + \rho) - \rho)$ = \sum_w c_{\lambda w} e_{W(\lambda + p)}
+$$
+
+Thus for all $\alpha \in \Phi^+$, we have
+$$
+s_\alpha(q \star \mathrm{ch} L(\lambda)) = \sum_w c_{\lambda, s_\alpha w} e_{w(\lambda + \rho)}
+$$
+
+
+On the other hand, by part (c) of the lemma, we have 
+$$
+(s_\alpha \star \q) \star \mathrm{ch} L(\lambda) = -q \star \mathrm{ch} L(\lambda) = \sum_w -c_{\lambda, w} e_{w(\lambda+\rho)}$
+$$
+
+which implies that $c_{\lambda, s_\alpha w} = -c_{\lambda, w}$ by comparing term-by-term, and thus $c_{\lambda, w} = (-1)^{\ell(w)}$ because $c_{\lambda e} = 1$.
+
+In particular, $q = q \star e(0) = q \star \mathrm{ch} L(0) = \sum_{w\in W} (-1)^{\ell(w)} e_{w(\rho)}$, and thus
+\[
+\begin{align*}
+\mathrm{ch} L(\lambda) = 
+\frac {
+\sum_w (-1)^{\ell(w)} e_{w(\lambda+p)}
+}{
+\sum_w (-1)^{\ell(w)} e_{w(p)}
+}
 .\end{align*}
 \]
