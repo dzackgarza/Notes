@@ -3601,6 +3601,40 @@ In particular, $q = q \star e(0) = q \star \mathrm{ch} L(0) = \sum_{w\in W} (-1)
 \sum_w (-1)^{\ell(w)} e_{w(\lambda+p)}
 }{
 \sum_w (-1)^{\ell(w)} e_{w(p)}
-}
+} \\
+=
+\frac {
+\sum_w (-1)^{\ell(w)} e(w\cdot \lambda) 
+}{
+\sum_w (-1)^{\ell(w)} e(w \cdot 0)
+} .\end{align*}
+\]
+
+$\qed$
+
+Example: 
+For type $A1$, we have $W = \Sigma_2 = \thset{\mathbf{1}, s}$.
+Take $\lambda = 3$ under
+\[
+\begin{align*}
+\Lambda \equiv \ZZ \\
+\alpha_1 \to 2 \\
+w_1 = \rho \to 1
+,\end{align*}
+\]
+
+from which we obtain 
+\[
+\begin{align*}
+\mathrm{ch} L(3) = 
+\frac {
+e(\mathbf{1} \cdot 3) - e(s\cdot 3)
+}{
+e(\mathbf{1} \cdot 0) - e(s\cdot 0)
+} \\
+=
+\frac{e(3) - e(-5)}{e(0) - e(-2)} \\
+= e(3) + e(1) + e(-1) + e(-3) \quad\text{by long division}
 .\end{align*}
 \]
+
