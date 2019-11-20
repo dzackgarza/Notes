@@ -3651,7 +3651,7 @@ Then $p(w\cdot \lambda - \mu)$ is the coefficient for $e(\mu)$ in $\mathrm{ch} M
 Thus $\dim L(\lambda)_\mu = \sum_{w\in W} (-1)^{\ell(w)} \dim M(w\cdot \lambda)_\mu$.
 
 
-Corollary (Weyl's Dimension Formula):
+**Corollary (Weyl's Dimension Formula):**
 
 If $\lambda \in \Lambda^+$, then 
 $$
@@ -3662,3 +3662,30 @@ $$
 \prod_{\alpha\in\Phi^+} (\rho, \alpha\dual)
 }
 $$
+
+*Proof (sketch)*:
+
+Define an operator $\del = \prod_{\alpha\in\Phi^+} \del_a$, where $\del_a: e(\mu) \mapsto (u, \alpha\dual) e(\mu)$.
+Then $\del$ is well-defined since $\del_\alpha \del_\beta = \del_\beta \del_\alpha$ for all $\alpha, \beta$, and (exercise) $\del$ is a derivation.
+
+Define an evaluation homomorphism $\nu: \sum_\mu c_\mu e(\mu) \mapsto \prod_\mu c_\mu$. 
+Note that $\nu (\mathrm{ch} L(\lambda)) = \dim L(\lambda)$, and $\nu(q) = 0$ because $\nu(e_{\alpha_i - 1}) = 0$.
+
+Claim:
+$$
+\nu(
+\del(
+q \star \mathrm{ch} L(\mu - \rho)
+)
+) = 
+\abs{w} \prod_{\alpha\in\Phi^+} (\mu, \alpha\dual)
+$$
+
+This is relatively straightforward once you know that you have a derivation and a homomorphism.
+
+With this claim, we have
+$$
+\nu(\del(q \star \mathrm{ch} L(\lambda))) = \nu(\del q) \nu(\mathrm{ch} L(\lambda)) + \nu(q) \nu(\del \mathrm{ch} L(\lambda))
+$$
+
+where we can identify a number of terms, and then taking ratios yields Weyl's dimension formula.
