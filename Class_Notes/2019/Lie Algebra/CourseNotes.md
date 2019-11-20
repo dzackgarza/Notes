@@ -3501,3 +3501,64 @@ f. Every non-zero homomorphic image of $M$ is a highest weight module of weight 
 Proof of (a):
 $M = U(\lieg)v^+$, which is in $\sum \CC f \ldots h \ldots e \ldots v^+$ where $e\ldots v^+ = 0$, which is in $\sum \CCC f \ldots v^+$.
 
+# Wednesday
+
+Todo
+
+# Friday
+
+Todo
+
+# Monday
+
+Todo
+
+# Wednesday November 20
+
+Last time:
+
+$$
+\ZZ \Lambda \iff \theset{ \lieh^* \to \ZZ_{\geq 0} \mid \sim  } \\
+e(\mu) \mapsto e_\mu \\
+e(\lambda) e(\mu) = e(\lambda + \mu) \mapsto f \star g(\lambda) = \sum_{a+b=\lambda} f(a) g(b)
+$$
+
+and $\mathrm{ch} L(\lambda) = \sum_{\mu \in \Lambda} \dim L(\lambda)_\mu e(\mu)$.
+
+We have the Kostant function $p(\lambda) = \# \theset{ (k_\alpha)_\alpha \mid -\lambda = \sum_{\alpha\in\Phi^+} k_\alpha \alpha  }$ 
+and the Weyl function $q = e_\pho \star \prod_{\alpha\in\Phi^+}(1 - e_{-\alpha}) = \prod_{\alpha\in\Phi^+} (e_{\alpha/2} - e_{-\alpha/2})$.
+
+Lemma:
+$p\star e_\lambda = \mathrm{ch} M(\lambda)$, so $q \star \mathrm{ch} M(\lambda) = e_{\lambda + \rho}$ and $q \star p = e_\rho$.
+
+## Weyl's Character Formula  (24.2-3)
+
+Definition: 
+The *dot action* of $W$ is given by $w\cdot \lambda = w(\lambda + \rho) - \rho$, i.e. a reflection for hyperplanes passing through $-\rho$.
+
+E.g. for type $A2$, where $W(0) = 0$, we have:
+
+![Type A2](figures/2019-11-20-09:19.png)
+
+And for the dot action, we have
+
+![Image](figures/2019-11-20-09:22.png)
+
+where $W \cdot 0 = 0$ and $s(\alpha_1) = -\alpha_1$.
+
+**Theorem (Harish-Chandra):**
+If $L(\mu)$ is a composition factor of $M(\lambda)$, then $\mu \in W\cdot \lambda$ for $\mu \leq \lambda$.
+
+Proof:
+Postponed.
+
+> $\mathrm{ch}$ are characters, $L(\lambda)$ is a Verma module.
+
+Remark:
+\[
+\begin{align*}
+\mathrm{ch} M(\lambda) = \sum_{\mu \in W \cdot \lambda}a_{\lambda \mu} \mathrm{ch} L(\mu)$ \\
+\mathrm{ch} L(\lambda) = \sum_{\mu \in W \cdot \lambda} b_{\lambda \mu} \mathrm{ch} M(\mu)$ \\
+
+.\end{align*}
+\]
