@@ -3637,4 +3637,28 @@ e(\mathbf{1} \cdot 0) - e(s\cdot 0)
 = e(3) + e(1) + e(-1) + e(-3) \quad\text{by long division}
 .\end{align*}
 \]
+**Corollary (Kostant's Dimension Formula):**
 
+If $\mu \leq \lambda \in \Lambda^+$, then 
+$$
+\dim L(\lambda)_\mu = \sum_{w\in W} (-1)^{\ell(w)} P(w\cdot \lambda - \mu).
+$$
+
+*Proof:*
+$p\star e_\mu(w \cdot \lambda) = \sum_{a+b = w\cdot \lambda} p(a) e_\mu(h) = p(w\cdot \lambda - \mu)$, since this is the only term that survives.
+
+Then $p(w\cdot \lambda - \mu)$ is the coefficient for $e(\mu)$ in $\mathrm{ch} M(w\cdot \lambda) = \dim M(\lambda)_\mu$.
+Thus $\dim L(\lambda)_\mu = \sum_{w\in W} (-1)^{\ell(w)} \dim M(w\cdot \lambda)_\mu$.
+
+
+Corollary (Weyl's Dimension Formula):
+
+If $\lambda \in \Lambda^+$, then 
+$$
+\dim L(\lambda) = 
+\frac{
+\prod_{\alpha\in\Phi^+} (\lambda+\rho, \alpha\dual)
+}{
+\prod_{\alpha\in\Phi^+} (\rho, \alpha\dual)
+}
+$$
