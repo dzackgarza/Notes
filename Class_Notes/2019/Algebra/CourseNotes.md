@@ -3675,4 +3675,5 @@ Let $A$ be an $n\times n$ matrix over $k$.
 Then the matrix $xI_n - A \in M_n(k[x])$ is equivalent in $k[x]$ to a diagonal matrix $D$ with non-zero entries $f_1, f_2, \cdots f_t \in k[x]$ such that the $f_i$ are monic and $f_i \divides f_{i+1}$.
 The non-constant polynomials among the $f_i$ are the invariant factors of $A$.
 
-
+*Proof (Sketch)*:
+Let $V = k^n$ and $\phi: k^n \to k^n$ correspond to $A$ under the fixed standard basis.
