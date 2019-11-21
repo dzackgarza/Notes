@@ -85,11 +85,16 @@ $\exists f \in L^1(X)\setminus L^2(X)$: Let $E_k = X \intersect B(t_k)$ where $B
 > (Note: since $m(X) < \infty$, $X \subseteq \union A_k$.)
 
 Then define $f: X \to \RR$ by $f(x) = \sum_k s(k) ~\chi_{A_k}$, so we have
+\[
+\begin{align*}
+&\norm{f}_1 = \int_X \abs {f} = \sum_k \int_{A_k} s(k) = \sum_k s(k) \int_{A_k} 1 = \sum_k s(k) \\
+&\norm{f}_2 = \sum_k s(k)^2 
+.\end{align*}
+\]
 
-\norm{f}_1 = \int_X \abs {f} = \sum_k \int_{A_k} s(k) = \sum_k s(k) \int_{A_k} 1 = \sum s(k).
 $$
 
-Now letting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields a convergent sum
+Now letting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$.
 
 ## Part b
 
