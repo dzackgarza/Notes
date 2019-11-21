@@ -106,7 +106,12 @@ Let $X = (0, 1]$ and $f(x) = x^{-1/4}$. Then $\norm{f}_2 = \int_0^1 \frac{1}{x^{
 
 ### Part ii
 
-$\exists f \in L^1(X)\setminus L^2(X)$: 
+$\exists f \in L^2(X)\setminus L^1(X)$ when $m(X) = \infty$:
+
+Take $X = [1, \infty)$ and let $f(x) = x\inv$. Then $\norm{f}_2 < \infty$ but $\norm{f}_1 = \infty$ by the $p$-test.
+
+$\exists f \in L^\infty(X)\setminus L^1(X)$ when $m(X) = \infty$:
+
 
 
 
