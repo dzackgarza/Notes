@@ -68,7 +68,7 @@ We also have
 ,\end{align*}
 \]
 
-and combining these yields the desired inequality.
+and combining these yields the desired inequality, from which we can immediately conclude 
 
 ## Part b
 
