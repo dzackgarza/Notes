@@ -3599,3 +3599,4 @@ Let $\delta = \phi - b 1_V$. Then
 
 - $q(x)$ is the minimal polynomial for $\phi \iff x^n$ is the minimal polynomial for $\delta$.
 - $V$ has two $k[x]$ structures -- one given by $\phi$, and one by $\delta$.
+- (Exercise) $V$ is cyclic wrt the $\phi$ structure $\iff$ it is cyclic wrt the $\delta$ structure.
