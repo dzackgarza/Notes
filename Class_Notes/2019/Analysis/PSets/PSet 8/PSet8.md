@@ -36,7 +36,7 @@ Then there is a sequence $s_n$ of simple functions such that $\norm{s_n - g}_\in
 
 ![](2019-11-20-22-52-04.png)
 
-$C^0_c(X)$ is dense $L^\infty(X) \iff$ 
+However, $C^0_c(X)$ is dense $L^\infty(X) \iff$ 
 
 # Problem 2
 
