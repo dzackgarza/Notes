@@ -20,7 +20,7 @@ which means that $\norm{f+g}_\infty \leq \norm{f}_\infty + \norm{g}_\infty$ as d
 
 ## Part b
 
-$\implies$: Suppose $\norm{f_n - f}_\infty \to 0$, then for every $\varepsilon$, $N$ can be chosen large enough such that $\abs{f_n(x) - f(x)} < \varepsilon$ a.e., which precisely means that there is a set $E$ such that $x\in E \implies \abs{f_n(x) - f(x)} < \varepsilon$ and $m(E^c) = 0$. But then $f_n \uniformlyconverges f$ uniformly on $E$ by definition.
+$\implies$: Suppose $\norm{f_n - f}_\infty \to 0$, then for every $\varepsilon$, $N$ can be chosen large enough such that $\abs{f_n(x) - f(x)} < \varepsilon$ a.e., which precisely means that there exist sets $E_n$ such that $x\in E \implies \abs{f_n(x) - f(x)} < \varepsilon$ and $m(E^c) = 0$. But then $f_n \uniformlyconverges f$ uniformly on $E \definedas \intersect_n E_n$ by definition, and $E^c = \union_n E_n^c$ is still a null set.
 
 $\impliedby$:
 
