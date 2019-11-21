@@ -42,6 +42,10 @@ Since every $g_n$ has compact support, say $E$, then $\restrictionof{g_n}{E^c} \
 
 # Problem 2
 
+## Part a
+
+## Part b
+
 # Problem 3
 
 # Problem 4
