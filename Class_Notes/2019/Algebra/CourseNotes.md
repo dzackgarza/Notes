@@ -3635,4 +3635,4 @@ Application:
 Let $V = \bigoplus V_i$ with $q_i$ the minimal polynomials of $\phi: V_i \to V_i$ with $q_i \divides q_{i+1}$.
 Then there exists a basis where $[\phi]_B$ is block diagonal with $M_i$s where each $M_i$ is in rational canonical form with minimal polynomial $q_i(x)$.
 If $k$ is algebraically closed, we can obtain elementary divisors $p_i(x) = (x - b_i)^{m_i}$.
-Then there exists a similar basis where now each $M_i$ is a Jordan block with $b_i$ on the diagonals and 1 on the superdiagonal.
+Then there exists a similar basis where now each $M_i$ is a Jordan block with $b_i$ on the diagonals and 1 on the super-diagonal.
