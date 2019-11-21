@@ -3602,4 +3602,4 @@ Let $\delta = \phi - b 1_V$. Then
 - (Exercise) $V$ is cyclic wrt the $\phi$ structure $\iff$ it is cyclic wrt the $\delta$ structure.
 
 
-Then the matrix relative to an ordered basis for $\delta$ is with only zeros on the diagonal and 1s on the super-diagonal.
+Then the matrix $[\delta]_B$ relative to an ordered basis for $\delta$ is with only zeros on the diagonal and 1s on the super-diagonal, and $[\phi]_B$ is the same but with $b$ on the diagonal.
