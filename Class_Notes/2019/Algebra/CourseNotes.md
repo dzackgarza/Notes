@@ -3631,7 +3631,7 @@ If $B = \theset{v_1, v_2, \cdots, v_n}$, then take $B_1 = \theset{v_1, \cdots, v
 Then $[\phi_i]_{B_i} = M_i$ as desired. 
 $\qed$
 
-Application:
+*Application:*
 Let $V = \bigoplus V_i$ with $q_i$ the minimal polynomials of $\phi: V_i \to V_i$ with $q_i \divides q_{i+1}$.
 Then there exists a basis where $[\phi]_B$ is block diagonal with $M_i$s where each $M_i$ is in rational canonical form with minimal polynomial $q_i(x)$.
 If $k$ is algebraically closed, we can obtain elementary divisors $p_i(x) = (x - b_i)^{m_i}$.
@@ -3643,7 +3643,7 @@ When $A$ is diagonalizable, the $P$ contain the eigenvectors of $A$.
 **Corollary:**
 Two matrices are similar $\iff$ they have the same invariant factors and elementary divisors.
 
-Example:
+*Example:*
 Let $\phi: V\to V$ have invariant factors $q_1(x) = (x-1)$ and $q_2(x) = (x-1)(x-2)$.
 
 Then $\dim V = 3$, $V = V_1 \oplus V_2$ where $\dim V_1 = 1$ and $\dim V_2 = 2$.
@@ -3676,4 +3676,30 @@ Then the matrix $xI_n - A \in M_n(k[x])$ is equivalent in $k[x]$ to a diagonal m
 The non-constant polynomials among the $f_i$ are the invariant factors of $A$.
 
 *Proof (Sketch)*:
-Let $V = k^n$ and $\phi: k^n \to k^n$ correspond to $A$ under the fixed standard basis.
+Let $V = k^n$ and $\phi: k^n \to k^n$ correspond to $A$ under the fixed standard basis $\theset{e_i}$.
+Then $V$ has a $k[x]\dash$module structure induced by $\phi$. 
+Let $F$ be the free $k[x]$ module with basis $\theset{u_i}_{i=1}^n$, and define a map
+$$
+F \mapsvia{\pi} k^n \\
+u_i \mapsto e_i.
+$$
+Now define 
+$$
+\psi: F \to F \\
+u_i \mapsto xu_i - \sum_j a_{ij} u_j
+$$
+
+Then $\psi$ relative to the basis $\theset{u_i}$ is $xI_n - A$.
+Then (Exercise) the sequence $F \mapsvia{\psi} F \mapsvia{\pi} k^n \to 0$ is exact, and $\im \pi = k^n$ and $\im \psi = \ker \pi$.
+We then have $k^n \cong F/\ker \pi = F / \im \psi$, and since $k[x]$ is a PID, we have
+\[
+\begin{align*}
+xI_n - A \cong 
+\begin{array}
+L_r & 0 \\
+0 & 0
+\end{array}
+.\end{align*}
+\]
+
+where $L_r$ is diagonal with $f_i$s where $f_i \divides f_{i+1}$.
