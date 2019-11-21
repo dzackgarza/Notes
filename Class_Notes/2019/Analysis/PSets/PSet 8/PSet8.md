@@ -98,7 +98,7 @@ $$
 
 Now letting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$.
 
-$\exists f \in L^\infty(X)\setminus L^1(X)$:
+$\exists f \in L^2(X)\setminus L^\infty(X)$:
 
 ## Part b
 
