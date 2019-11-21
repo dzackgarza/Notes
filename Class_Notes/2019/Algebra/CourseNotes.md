@@ -3603,3 +3603,18 @@ Let $\delta = \phi - b 1_V$. Then
 
 
 Then the matrix $[\delta]_B$ relative to an ordered basis for $\delta$ is with only zeros on the diagonal and 1s on the super-diagonal, and $[\phi]_B$ is the same but with $b$ on the diagonal.
+
+**Lemma:**
+
+Let $\phi: V\to V$ with $V = \bigoplus_i^t V_i$ as $k[x]\dash$modules. 
+Then $M_i$ is a matrix of $\restrictionof{\phi}_{V_i}: V_i \to V_i$ relative to some basis for $V_i \iff$the matrix of $\phi$ wrt some ordered basis is given by
+\[
+\begin{align*}
+[\phi]_B = \begin{array}{cccc}
+M_1 &  & & \\
+& M_2 & & \\
+& & \ddots & \\
+& & & M_t 
+\end{array}
+.\end{align*}
+\]
