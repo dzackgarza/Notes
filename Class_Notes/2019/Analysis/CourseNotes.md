@@ -3175,3 +3175,18 @@ So there is some set $E = \theset{x \suchthat \abs{g(x) > \norm{\Lambda}}}$ with
 Let $h = \overline{g}/\abs{g} \chi_E / m(E)$. 
 Then $h\in L^2$ and $\norm{h} = 1$.
 Then $\Lambda(h) = \frac{1}{m(E)} \int_E \abs{g} \geq \norm{\Lambda} O(1)$, which is a contradiction.
+
+
+# Thursday November 21
+
+Today: some abstract measure theory.
+
+Let $X$ be a set and $\mathcal M$ be a $\sigma\dash$algebra of subsets of $X$.
+Then $(X, \mathcal M)$ is referred to as a *measurable* space, noting that we have not yet equipped it with a measure $\mu$.
+
+A *measure* $\mu$ on $(X, \mathcal M)$ is a function $\mu: \mathcal M \to [0, \infty]$ such that
+
+- The silly condition, $\mu(\emptyset) = 0$
+- The important condition, $\mu(\union_{i\in \NN} E_i) \leq \sum_{i\in\NN} \mu(E_i)$.
+
+Then $(X, \mathcal M, \mu)$ is called a *measure space*.
