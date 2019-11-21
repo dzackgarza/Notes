@@ -10,7 +10,11 @@ It follows from the definition that $\norm{f}_\infty = 0 \iff f = 0$ almost ever
 
 So it remains to show the triangle inequality. We have
 
+\[
+\begin{align*}
 
+.\end{align*}
+\]
 
 ## Part b
 
