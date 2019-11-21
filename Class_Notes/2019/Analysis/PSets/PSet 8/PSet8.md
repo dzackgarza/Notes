@@ -30,7 +30,9 @@ $\impliedby$: Suppose $f_n \uniformlyconverges f$ uniformly on some set $E$ and 
 
 To see that simple functions are dense in $L^\infty(X)$, we can use the fact that $f\in L^\infty(X) \iff$ there exists a $g$ that $f=g$ a.e. and $g$ is bounded. We want to show that there is a sequence $s_n$ of simple functions such that $\norm{s_n - g}_\infty \to 0$.
 
-This follows from the fact that if $-M \leq g(x)\leq M$ then we can define $s_n$ by partitioning $[-M, M]$ into $n$ subintervals with endpoints $\theset{x_k \mid 1\leq k \leq n}$ and then letting $I_k = f^{-1}([x_{k-1}, x_k])$ and $s_n = \sum_k x_k \chi_{I_k}$. Then $s_n \to g$ pointwise
+This follows from the fact that $g$ can be approximated from below:
+
+
 
 $C^0_c(X)$ is dense $L^\infty(X) \iff$ 
 
