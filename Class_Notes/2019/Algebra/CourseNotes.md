@@ -3636,3 +3636,36 @@ Let $V = \bigoplus V_i$ with $q_i$ the minimal polynomials of $\phi: V_i \to V_i
 Then there exists a basis where $[\phi]_B$ is block diagonal with $M_i$s where each $M_i$ is in rational canonical form with minimal polynomial $q_i(x)$.
 If $k$ is algebraically closed, we can obtain elementary divisors $p_i(x) = (x - b_i)^{m_i}$.
 Then there exists a similar basis where now each $M_i$ is a Jordan block with $b_i$ on the diagonals and 1 on the super-diagonal.
+
+Moreover, in each case, there is a basis such that $A = P [M_i] P\inv$ (where $M_i$ are the block matrices obtained).
+When $A$ is diagonalizable, the $P$ contain the eigenvectors of $A$.
+
+**Corollary:**
+Two matrices are similar $\iff$ they have the same invariant factors and elementary divisors.
+
+Example:
+Let $\phi: V\to V$ have invariant factors $q_1(x) = (x-1)$ and $q_2(x) = (x-1)(x-2)$.
+
+Then $\dim V = 3$, $V = V_1 \oplus V_2$ where $\dim V_1 = 1$ and $\dim V_2 = 2$.
+We thus have
+\[
+\begin{align*}
+[\phi]_B = 
+\left(\begin{array}{rrr}
+1 & 0 & 0 \\
+0 & 0 & 1 \\
+0 & -2 & 3
+\end{array}\right)
+.\end{align*}
+\]
+
+Moreover, we have
+\[
+\begin{align*}
+V \cong k[x]/(x-1) \oplus k[x]/(x-1)(x-2) \cong k[x]/(x-1) \oplus k[x]/(x-1) \oplus k[x]/(x-2)
+,\end{align*}
+\]
+
+so the elementary divisors are $x-1, x-1, x-2$.
+
+> Invariant factor decompositions should correspond to RCF blocks, and elementary divisors should correspond to Jordan blocks.
