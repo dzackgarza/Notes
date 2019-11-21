@@ -4,6 +4,11 @@ title: Problem Set 8
 
 # Problem 1
 
+## Part a
+
+## Part b
+
+## Part c
 
 # Problem 2
 
