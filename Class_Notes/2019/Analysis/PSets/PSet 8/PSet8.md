@@ -32,7 +32,7 @@ To see that simple functions are dense in $L^\infty(X)$, we can use the fact tha
 
 This follows from the fact that $g$ can be approximated from below:
 
-
+![](2019-11-20-22-52-04.png)
 
 $C^0_c(X)$ is dense $L^\infty(X) \iff$ 
 
