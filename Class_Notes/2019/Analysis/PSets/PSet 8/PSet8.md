@@ -116,6 +116,8 @@ Take $X = \RR$ and $f(x) = 1$. Then $\norm{f}_\infty = 1 < \infty$ but $\norm{f}
 
 $L^2(X) \subseteq L^1(X) \implies m(X) < \infty$:
 
+Suppose $f\
+
 
 
 
