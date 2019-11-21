@@ -3694,7 +3694,7 @@ Then (Exercise) the sequence $F \mapsvia{\psi} F \mapsvia{\pi} k^n \to 0$ is exa
 We then have $k^n \cong F/\ker \pi = F / \im \psi$, and since $k[x]$ is a PID, we have
 \[
 \begin{align*}
-xI_n - A \cong 
+xI_n - A \sim
 \begin{array}
 L_r & 0 \\
 0 & 0
