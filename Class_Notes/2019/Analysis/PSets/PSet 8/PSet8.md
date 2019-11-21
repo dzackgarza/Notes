@@ -96,9 +96,11 @@ Then define $f: X \to \RR$ by $f(x) = \sum_k s(k) ~\chi_{A_k}$, so we have
 
 $$
 
-Now letting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$.
+Now setting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$.
 
 $\exists f \in L^2(X)\setminus L^\infty(X)$:
+
+Let $X = (0, 1]$ and $f(x) = x^{-1/4}$. Then $\norm{f}_2 = \int_0^1 \frac{1}{x^{1/4}} < \infty$ by the $p$-test
 
 ## Part b
 
