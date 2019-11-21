@@ -28,7 +28,7 @@ $\impliedby$: Suppose $f_n \uniformlyconverges f$ uniformly on some set $E$ and 
 
 ## Part c
 
-$C^0_c(X)$ is dense $L^2(X)$
+$C^0_c(X)$ is dense $L^\infty(X)$
 
 # Problem 2
 
