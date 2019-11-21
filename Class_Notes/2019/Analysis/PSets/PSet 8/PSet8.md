@@ -59,7 +59,11 @@ By Holder with $p=q=2$, we can now write
 
 and similarly
 
-
+\[
+\begin{align*}
+\norm{f}_2 
+.\end{align*}
+\]
 
 ## Part b
 
