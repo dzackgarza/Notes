@@ -68,7 +68,7 @@ We also have
 ,\end{align*}
 \]
 
-and combining these yields the desired inequality, from which we can immediately conclude $L^\infty \subseteq L^2
+and combining these yields the desired inequality, from which we can immediately conclude that if $m(X) < \infty$, we have $L^\infty \subseteq L^2 \subseteq L^1$.
 
 ## Part b
 
