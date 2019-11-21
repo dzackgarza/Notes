@@ -6,7 +6,10 @@ title: Problem Set 8
 
 ## Part a
 
-It follows from the definition that $\norm{f}_\infty = 0 \iff f = 0$ almost everywhere, 
+It follows from the definition that $\norm{f}_\infty = 0 \iff f = 0$ almost everywhere, and we have
+$$
+\norm{cf}_\infty =  
+$$
 
 ## Part b
 
