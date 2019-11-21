@@ -3560,3 +3560,35 @@ v_{n-2} &\mapsto v_{n-1} = \phi^2(v_1)
 and $\\phi^n(v) = -a_k v_1 \neq -a_1 \phi(v_1), \cdots -a_{n-1} \phi^{n-1}(v_1)$.
 
 Thus $V = k[x].v_1$, since $\dim V = n$, and $\theset{v_1, \phi(v_1), \cdots, \phi^{n-1}(v_1)}$.
+
+# Thursday November 21
+
+Let $\phi: V\to V$ be a linear transformation; then $V$ is a $k[x]$ module under $f(x) \actson v \coloneqq f(\phi)(v)$.
+
+By the structure theorem, since $k[x]$ is a PID, we have an invariant factor decomposition $V = \bigoplus V_i$ where each $V_i$ is a cyclic $k[x]\dash$module.
+If $q_i$ is the minimal polynomial for $\phi_i: V_i \to V_i$, then $q_{i} \divides q_{i+1}$ for all $i$.
+
+We also have an elementary divisor decomposition where $p_i^{m_i}$ are the minimal polynomials for $\phi_i$.
+
+> Note: one is only for the restriction to the subspaces? Check.
+
+Recall that if $\phi$ has minimal polynomial $q(x)$. 
+Then if $\dim V = n$, there exists a basis of $B$ if $V$ such that $[\phi]_B$ is given by the *companion matrix* of $q(x)$.
+This is the rational canonical form.
+
+Corollary:
+Let $\phi: V\to V$ be a linear transformation. Then $V$ is a cyclic $k[x]\dash$module and $\phi$ has minimal polynomial $(x-b)^n$ iff $\dim V = n$ and there exists a basis such that
+\[
+\begin{align*}
+[\phi]_B = \begin{array}{ccc}
+b & 1 & 0 &\cdots & 0 & 0\\
+0 & b & 1 & \cdots & 0 & 0\\
+0 & 0 & b & 1 &\cdots & 0 & 0\\
+0 & 0 & 0 & 0 & \cdots & b & 1
+\end{array}
+.\end{align*}
+\]
+
+This is the *Jordan Canonical form*.
+
+> Note that if $k$ is not algebraically closed, we can only reduce to RCF. If $k$ *is* closed, we can reduce to JCF, which is slightly nicer.
