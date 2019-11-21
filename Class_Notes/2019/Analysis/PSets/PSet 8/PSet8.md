@@ -16,7 +16,7 @@ So it remains to show the triangle inequality. Suppose that $\abs{f(x)} \leq \no
 ,\end{align*}
 \]
 
-which precisely say
+which means that $\norm{f+g}_\infty \leq \norm{f}_\infty + \norm{g}_\infty$ as desired.
 
 ## Part b
 
