@@ -80,7 +80,16 @@ and combining these yields
 
 To see that the inclusion is strict in general, we'll use the fact that $\sum_k k^{-2} < \infty$ and $\sum_k k\inv = \infty$:
 
-- $\exists f \in L^1(X)\setminus L^2(X)$: 
+$\exists f \in L^1(X)\setminus L^2(X)$: Let $E_k = X \intersect B(t_k)$ where $B(t_k)$ is a ball centered at the origin (with radius depending on a parameter), $A_k = E_{k}\setminus E_{k-1}$ to be disjoint annuli where $t_k$ is chosen for each $k$ such that $m(A_k) = 1$. 
+
+> (Note: since $m(X) < \infty$, $X \subseteq \union A_k$.)
+
+Then define $f: X \to \RR$ by $f(x) = \sum_k s(k) ~\chi_{A_k}$, so we have
+
+\norm{f}_1 = \int_X \abs {f} = \sum_k \int_{A_k} s(k) = \sum_k s(k) \int_{A_k} 1 = \sum s(k).
+$$
+
+Now letting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields a convergent sum
 
 ## Part b
 
