@@ -72,7 +72,7 @@ and combining these yields
 
 \[
 \begin{align*}
-\norm{f}_1 \leq m(X) \norm{f}_2 \leq m(X) \norm{f}_\infty
+\norm{f}_1 \leq m(X)^{1/2} \norm{f}_2 \leq m(X) \norm{f}_\infty
 .\end{align*}
 \]
 
