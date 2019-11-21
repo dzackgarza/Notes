@@ -44,13 +44,22 @@ Since every $g_n$ has compact support, say $E$, then $\restrictionof{g_n}{E^c} \
 
 ## Part a
 
-By Holder with $p=q=2$, we have
+**Lemma:** $\norm{1}_p = m(X)^{1/p}$
+
+This follows from $\norm{1}_p^p = \int_X \abs {1}^p = \int_X 1 = m(X)$ and taking $p$th roots.
+
+
+By Holder with $p=q=2$, we can now write
 
 \[
 \begin{align*}
-\norm{f}_1
-.\end{align*}
+\norm{f}_1 &= \norm{1 \cdot f}_1 \leq \norm{1}_2 \norm{f}_2 = m(X)^{1/2} \norm{f}_2
+,\end{align*}
 \]
+
+and similarly
+
+
 
 ## Part b
 
