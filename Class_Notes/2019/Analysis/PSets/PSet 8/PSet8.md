@@ -70,7 +70,11 @@ We also have
 
 and combining these yields 
 
-
+\[
+\begin{align*}
+\norm{f}_1 \leq m(X) \norm{f}_
+.\end{align*}
+\]
 
 , from which we can immediately conclude that if $m(X) < \infty$, we have $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
 
