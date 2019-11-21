@@ -3269,4 +3269,46 @@ Then we say $\nu \ll \mu \iff \nu(E) = 0$ whenever $E\in\mathcal M$ and $\mu(E) 
 *Exercise:*
 If $\nu$ is finite, i.e. $\nu(X) < \infty$, then $\nu \ll \mu \iff \forall\varepsilon >0\exists\delta>0\suchthat \mu(E) < \delta\implies \nu(E) < \varepsilon$, which explains the terminology.
 
+**Theorem (Partial Radon-Nikodym):**
+If $\mu, \nu$ are two $\sigma\dash$finite measures on $(X, \mathcal M)$ such that $\nu \ll \mu$, then there exists a unique non-negative function $f\in L^1(X, \mu)$ such that $d\nu = f d\mu$, so $\nu(E) = \int_E f d\mu$ for all $E\in \mathcal M$.
+> Note: this is a representation theorem. This somehow all traces back to the Riesz Representation theorem for Hilbert spaces, which was a trivial proof! Worth recalling.
 
+*Proof (Sketch)*:
+We can assume $\mu, \nu$ are $\sigma\dash$finite (there are standard techniques to do this).
+
+Now define the measure $\rho: \nu + \mu$ and $L(\psi) = \int_X \psi d\nu$ for all $\psi \in L^2(X, \rho)$.
+Then $L$ turns out to be a *continuous* linear functional on $L^2(X, \rho)$, which isn't completely obvious.
+This follows because it is bounded, since for all $\psi \in L^2(\rho)$ we have
+\[
+\begin{align*}
+\int \abs{\psi} d\nu 
+&\leq \int \abs{\psi} d\rho \\
+&\leq \norm{\psi}_{L^2(\rho)} \rho(X)^{1/2} \\
+&\leq C \norm{\psi}_{L^2(\rho)}
+,\end{align*}
+\]
+which follows from an application of Cauchy-Schwarz.
+
+Then there exists a $g\in L^1(\rho)$ such that $\int \psi d\nu = \int \psi g d\rho = \int \psi g d\nu + \int \psi g d\mu$.
+By collecting terms, we obtain
+$$
+\int_X \psi(1-g) d\nu = \int_X \psi g d\mu \quad \forall \psi\in L^2(\rho).
+$$
+
+Now consider letting $\psi = \chi_E$ for some set. 
+Then $\nu(E) = \int_E g d\rho$, from which it can be deduced that $0\leq g \leq 1$ almost everywhere.
+
+Since $\nu \ll \mu$, we actually have $0\leq g < 1~ \rho\dash$a.e.  instead. 
+This follows from taking $B = \theset{g(x) = 1}$ and $\psi = \chi_B$ and using the above identity we found to deduce that $\mu(B) = 0$ and thus $\nu(B) = 0$ and $\rho(B) = 0$.
+
+Now let $\psi = \chi_E(1 ) g + g^2 + \cdots g^n)$, yielding
+\[
+\begin{align*}
+\int_E (1-g^{n+1}) d\nu &= \int_E (1 + g + \cdots + g^n) d\mu \\
+\to_{DCT} \nu(E) &= \int_E \frac{g}{1-g} d\mu
+,\end{align*}
+\]
+
+so we can take the integrand on the RHS to be our $f$.
+
+> Beautiful proof! Due to Von Neumann.
