@@ -96,7 +96,7 @@ Then define $f: X \to \RR$ by $f(x) = \sum_k s(k) ~\chi_{A_k}$, so we have
 
 $$
 
-Now setting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$.
+Now setting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$, so $f\not\in L^2(X)$.
 
 $\exists f \in L^2(X)\setminus L^\infty(X)$:
 
