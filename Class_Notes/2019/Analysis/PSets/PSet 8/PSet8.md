@@ -116,7 +116,7 @@ Take $X = \RR$ and $f(x) = 1$. Then $\norm{f}_\infty = 1 < \infty$ but $\norm{f}
 
 $L^2(X) \subseteq L^1(X) \implies m(X) < \infty$:
 
-Suppose $f\
+Suppose we have $f \in L^2(X)$, then by assumption there is some constant $M$ such that $\norm{f}_2 \leq M \norm{f}_1$.
 
 
 
