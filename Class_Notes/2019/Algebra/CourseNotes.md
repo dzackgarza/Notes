@@ -3618,3 +3618,17 @@ M_1 &  & & \\
 \end{array}
 .\end{align*}
 \]
+
+*Proof*:
+
+$\implies$:
+Suppose $B_i$ is a basis for $V_i$ and $[\phi]_{B_i} = M_i$. Then let $B = \union_i B_i$; then $B$ is a basis for $V$ and the matrix is of the desired form.
+
+$\impliedby$:
+Suppose that we have a basis $B$ and $[\phi]_B$ is given by a block diagonal matrix filled with blocks $M_i$.
+Suppose $\dim M_i = n_i$.
+If $B = \theset{v_1, v_2, \cdots, v_n}$, then take $B_1 = \theset{v_1, \cdots, v_{n_1}}$ and so on.
+Then $[\phi_i]_{B_i} = M_i$ as desired. 
+$\qed$
+
+
