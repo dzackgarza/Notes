@@ -57,11 +57,11 @@ By Holder with $p=q=2$, we can now write
 ,\end{align*}
 \]
 
-and similarly
+and if $
 
 \[
 \begin{align*}
-\norm{f}_2 
+\norm{f}_2^2 = \int_X \abs{f} \leq \int_X \abs{\norm{f}_\infty} = \norm{f}_\infty \int_X 1 = \norm{f}_\infty m(X)
 .\end{align*}
 \]
 
