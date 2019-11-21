@@ -3669,3 +3669,10 @@ V \cong k[x]/(x-1) \oplus k[x]/(x-1)(x-2) \cong k[x]/(x-1) \oplus k[x]/(x-1) \op
 so the elementary divisors are $x-1, x-1, x-2$.
 
 > Invariant factor decompositions should correspond to RCF blocks, and elementary divisors should correspond to Jordan blocks.
+
+**Theorem:**
+Let $A$ be an $n\times n$ matrix over $k$.
+Then the matrix $xI_n - A \in M_n(k[x])$ is equivalent in $k[x]$ to a diagonal matrix $D$ with non-zero entries $f_1, f_2, \cdots f_t \in k[x]$ such that the $f_i$ are monic and $f_i \divides f_{i+1}$.
+The non-constant polynomials among the $f_i$ are the invariant factors of $A$.
+
+
