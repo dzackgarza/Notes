@@ -72,7 +72,7 @@ and combining these yields the desired inequality, from which we can immediately
 
 To see that the inclusion is strict in general:
 
-- $\exists f \in L^1(X)\setminus L^2(X)$: L
+- $\exists f \in L^1(X)\setminus L^2(X)$: Let $f(x) = x^{-1/2}$
 
 ## Part b
 
