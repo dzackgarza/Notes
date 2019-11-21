@@ -20,7 +20,7 @@ which means that $\norm{f+g}_\infty \leq \norm{f}_\infty + \norm{g}_\infty$ as d
 
 ## Part b
 
-$\implies$: Suppose $\norm{f_n - f}_\infty \to 0$, then for every $\varepsilon$, $N$ can be chosen large enough such that $\abs{f_n(x) - f(x)} < \varepsilon$ a.e., which precisely means that there is a set $E$ such that $\abs{f_n(x) - f(x)} < \varepsilon$ on $E$ and $m(E^c) = 0$.
+$\implies$: Suppose $\norm{f_n - f}_\infty \to 0$, then for every $\varepsilon$, $N$ can be chosen large enough such that $\abs{f_n(x) - f(x)} < \varepsilon$ a.e., which precisely means that there is a set $E$ such that $x\in E \implies \abs{f_n(x) - f(x)} < \varepsilon$ and $m(E^c) = 0$.
 
 ## Part c
 
