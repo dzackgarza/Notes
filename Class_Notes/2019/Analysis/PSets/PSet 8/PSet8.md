@@ -44,6 +44,8 @@ Since every $g_n$ has compact support, say $E$, then $\restrictionof{g_n}{E^c} \
 
 ## Part a
 
+### Part i
+
 **Lemma:** $\norm{1}_p = m(X)^{1/p}$
 
 This follows from $\norm{1}_p^p = \int_X \abs {1}^p = \int_X 1 = m(X)$ and taking $p$th roots.
@@ -101,6 +103,8 @@ Now setting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$
 $\exists f \in L^2(X)\setminus L^\infty(X)$:
 
 Let $X = (0, 1]$ and $f(x) = x^{-1/4}$. Then $\norm{f}_2 = \int_0^1 \frac{1}{x^{1/4}} < \infty$ by the $p$-test, but $f$ is unbounded near 0. In particular, for any upper bound $M$, we have $m(\theset{x \suchthat f(x) > M}) > 0$, so $\norm{f}_\infty = \infty$ and $f\not\in L^\infty(X)$.
+
+### Part ii
 
 ## Part b
 
