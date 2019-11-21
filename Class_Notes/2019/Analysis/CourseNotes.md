@@ -3230,3 +3230,43 @@ Fix a measure space $(X, \mathcal M, \mu)$.
 
 **Definition:**
 A measure space is *complete* iff when $F \in \mathcal M$ is measurable, $\mu(F) = 0$, and $E\subseteq F$, we have $E \in \mathcal M$.
+
+> Recall that the Lebesgue measure is complete, and the Borel measure is not. Review why this is the case!
+
+## Construction of Measures
+
+Given an $(X, \mathcal M)$, we construct $\mu$ in the following way:
+
+1. Define an outer measure (or premeasure) $\mu^*$ on $\mathcal P(X)$.
+2. Caratheodory: A set $E\subseteq X$ is measurable $\iff \mu_*(A) = \mu_*(A\intersect E) + \mu_*(A\intersect E^c)$ is true for every $A$.
+
+> Note: worth recalling why this is equivalent to the usual "open set" definition, i.e. $\exists G$ open such that $\mu_*(G\setminus E$ < \varepsilon$, where we really needed a topology to talk about open sets.
+
+3. Let $\mathcal M \definedas \theset{\text{Caratheodory measurable sets}}$ forms a $\sigma\dash$algebra and $\restrictionof{\mu_*}{\mathcal M}$ is a measure.
+
+Next up: define integrability, by first defining what it means for a function to be measurable.
+
+**Definition:**
+A function $f: X \to \overline{\RR}$ is *measurable* $\iff$ $\mu(\theset{x\in X \suchthat f(x) > a}) \in \mathcal M$ for all $a\in \RR$.
+We say two functions are equal almost everywhere if they disagree on a measure zero set, and we can define simple functions in a similar way.
+
+**Definition:**
+If $\phi$ is simple, i.e. $\phi = \sum_{j=1}^N a_j \chi_{E_j} \in L^+$ (is non-negative), then $\int \phi d\mu \definedas \sum a_j \mu(E_j)$.
+Then if $f\in L^+$, we define $\int f d\mu = \sup \theset{\int \phi d\mu \suchthat 0\leq \phi \leq f, \phi\text{ is simple. }}$.
+Then for $f$ arbitrary and measurable, write $f = f_+ - f_-$, and define $\int f d\mu = \int f_+ d\mu - \int f_- d\mu$ whenever it makes sense (i.e. both are not infinite)
+
+
+Consider an earlier example:
+Given $(X, \mathcal M, \mu)$ and $f\in L^+(X, \mu)$, we can define $\mu_f(E) \definedas \int_E f d\mu \in \overline{\RR}$.
+This always yields a measure, and moreover has the property $\mu(E) = 0 \implies \mu_f(E) = 0$.
+
+> Note that we can actually generalize and let $f\in L^+$. Then the measure defined here can take on negative or even complex numbers, which turns out to be a useful ("signed measures"). This is closely related to the usual notion of signed area between a curve and the $x\dash$axis we deal with in Calculus.
+
+**Definition**
+Let $\mu, \nu$ be two measures on $(X, \mathcal M)$.
+Then we say $\nu \ll \mu \iff \nu(E) = 0$ whenever $E\in\mathcal M$ and $\mu(E) = 0$, and that *$\nu$ is *absolutely continuous with respect to $\mu$*.
+
+*Exercise:*
+If $\nu$ is finite, i.e. $\nu(X) < \infty$, then $\nu \ll \mu \iff \forall\varepsilon >0\exists\delta>0\suchthat \mu(E) < \delta\implies \nu(E) < \varepsilon$, which explains the terminology.
+
+
