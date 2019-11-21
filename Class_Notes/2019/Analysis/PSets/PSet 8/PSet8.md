@@ -80,7 +80,7 @@ and combining these yields
 
 To see that the inclusion is strict in general:
 
-- $\exists f \in L^1(X)\setminus L^2(X)$: Let $f(x) = x^{-1/2}$
+- $\exists f \in L^1(X)\setminus L^2(X)$: Define $f: X \to \RR$ by $f(x) = x^
 
 ## Part b
 
