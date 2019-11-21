@@ -6,7 +6,7 @@ title: Problem Set 8
 
 ## Part a
 
-It's clear that $\norm{f}_\infty = 0 \iff$
+It's clear that $\norm{f}_\infty = 0 \iff f = 0$ almost everywhere
 
 ## Part b
 
