@@ -24,7 +24,7 @@ $\implies$: Suppose $\norm{f_n - f}_\infty \to 0$, then for every $\varepsilon$,
 
 But then $f_n \uniformlyconverges f$ uniformly on $E \definedas \intersect_n E_n$ by definition, and $E^c = \union_n E_n^c$ is still a null set.
 
-$\impliedby$:
+$\impliedby$: Suppose $f_n \uniformlyconverges f$ uniformly on some set $E$ and 
 
 ## Part c
 
