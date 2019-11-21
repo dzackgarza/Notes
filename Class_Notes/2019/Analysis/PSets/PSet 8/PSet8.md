@@ -68,7 +68,7 @@ We also have
 ,\end{align*}
 \]
 
-and combining these yields the desired inequality, from which we can immediately conclude 
+and combining these yields the desired inequality, from which we can immediately conclude $L^\infty \subseteq L^2
 
 ## Part b
 
