@@ -3576,7 +3576,7 @@ Recall that if $\phi$ has minimal polynomial $q(x)$.
 Then if $\dim V = n$, there exists a basis of $B$ if $V$ such that $[\phi]_B$ is given by the *companion matrix* of $q(x)$.
 This is the rational canonical form.
 
-Corollary:
+**Corollary:**
 Let $\phi: V\to V$ be a linear transformation. Then $V$ is a cyclic $k[x]\dash$module and $\phi$ has minimal polynomial $(x-b)^n$ iff $\dim V = n$ and there exists a basis such that
 \[
 \begin{align*}
@@ -3592,3 +3592,10 @@ b & 1 & 0 &\cdots & 0 & 0\\
 This is the *Jordan Canonical form*.
 
 > Note that if $k$ is not algebraically closed, we can only reduce to RCF. If $k$ *is* closed, we can reduce to JCF, which is slightly nicer.
+
+*Proof:*
+
+Let $\delta = \phi - b 1_V$. Then
+
+- $q(x)$ is the minimal polynomial for $\phi \iff x^n$ is the minimal polynomial for $\delta$.
+- $V$ has two $k[x]$ structures -- one given by $\phi$, and one by $\delta$.
