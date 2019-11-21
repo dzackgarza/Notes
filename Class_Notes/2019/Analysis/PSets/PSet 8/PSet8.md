@@ -78,9 +78,9 @@ and combining these yields
 
 , from which we can immediately conclude that if $m(X) < \infty$, we have $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
 
-To see that the inclusion is strict in general:
+To see that the inclusion is strict in general, we'll use the fact that $\sum_k k^{-2} < \infty$ and $\sum_k k\inv = \infty$:
 
-- $\exists f \in L^1(X)\setminus L^2(X)$: Define $f: X \to \RR$ by $f(x) = x^
+- $\exists f \in L^1(X)\setminus L^2(X)$: 
 
 ## Part b
 
