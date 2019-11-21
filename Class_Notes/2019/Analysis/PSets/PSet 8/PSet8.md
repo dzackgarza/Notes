@@ -28,6 +28,8 @@ $\impliedby$: Suppose $f_n \uniformlyconverges f$ uniformly on some set $E$ and 
 
 ## Part c
 
+To see that simple functions are dense in $L^\infty(X)$, 
+
 $C^0_c(X)$ is dense $L^\infty(X) \iff$ 
 
 # Problem 2
