@@ -114,6 +114,8 @@ $\exists f \in L^\infty(X)\setminus L^2(X)$ when $m(X) = \infty$:
 
 Take $X = \RR$ and $f(x) = 1$. Then $\norm{f}_\infty = 1 < \infty$ but $\norm{f}_2 = \int_\RR 1 = \infty$.
 
+$L^2(X) \subseteq L^1(X) \implies m(X) < \infty$:
+
 
 
 
