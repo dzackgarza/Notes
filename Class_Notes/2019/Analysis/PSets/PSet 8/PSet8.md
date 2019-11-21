@@ -116,7 +116,10 @@ Take $X = \RR$ and $f(x) = 1$. Then $\norm{f}_\infty = 1 < \infty$ but $\norm{f}
 
 $L^2(X) \subseteq L^1(X) \implies m(X) < \infty$:
 
-Pick a sequence of finite measure sets $E_k \increasingto X$ there is some constant $M$ such that $\norm{f}_2 \leq M \norm{f}_1$. 
+First pick a sequence of sets $E_k \nearrow X$ such that $m(E_k) < \infty$ for all $k$. By assumption, for every $f\in L^2(X)$, we can find a constant $C$ such that $\norm{f}_2 \leq M \norm{f}_1$. So let $f_k = \chi_{E_k}$, then by the lemma, $\norm{\chi_{E_k}}_p^p = m(E)$, so we have
+$$
+\norm{\chi_{E_k}}_2 \leq M \norm{\chi_{E_k}}_1 \implies \frac{\norm{\chi_{E_k}}_2}{\norm{\chi_{E_k}}_1} \leq M \implies 
+$$
 
 
 
