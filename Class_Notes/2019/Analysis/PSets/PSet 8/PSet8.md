@@ -106,6 +106,8 @@ Let $X = (0, 1]$ and $f(x) = x^{-1/4}$. Then $\norm{f}_2 = \int_0^1 \frac{1}{x^{
 
 ### Part ii
 
+
+
 ## Part b
 
 # Problem 3
