@@ -3314,3 +3314,9 @@ Now let $\psi = \chi_E(1 ) g + g^2 + \cdots g^n)$, yielding
 so we can take the integrand on the RHS to be our $f$.
 
 > Beautiful proof! Due to Von Neumann.
+
+To show: the fundamental theorem of Calculus for measures, i.e. the Lebesgue differentiation theorem, which looks like $\lim_{r\to 0} \frac{1}{m(B_r(x))} \int_{B_r(x)} f(y) ~dy = f(x) a.e.$, and specializes when $f = \chi_E$.
+
+# Tuesday November 26
+
+Upcoming
