@@ -20,6 +20,8 @@ which means that $\norm{f+g}_\infty \leq \norm{f}_\infty + \norm{g}_\infty$ as d
 
 ## Part b
 
+$\implies$: Suppose $\norm{f_n - f}_\infty \to 0$
+
 ## Part c
 
 # Problem 2
