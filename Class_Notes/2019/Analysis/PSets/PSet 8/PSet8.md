@@ -134,9 +134,7 @@ Then pick a sequence of sets $E_k \nearrow X$ such that $m(E_k) < \infty$ for al
 
 
 and by continuity of measure, we have $\lim_K m(E_k) = m(X) \leq M^2 < \infty$.
-
-
-
+$\qed$
 
 ## Part b
 
