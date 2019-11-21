@@ -53,7 +53,8 @@ By Holder with $p=q=2$, we can now write
 
 \[
 \begin{align*}
-\norm{f}_1 &= \norm{1 \cdot f}_1 \leq \norm{1}_2 \norm{f}_2 = m(X)^{1/2} \norm{f}_2
+&\norm{f}_1 = \norm{1 \cdot f}_1 \leq \norm{1}_2 \norm{f}_2 = m(X)^{1/2} \norm{f}_2 \\
+\implies &\norm{f}_1 \leq m(X)^{1/2} \norm{f}_2
 .\end{align*}
 \]
 
@@ -61,8 +62,8 @@ We also have
 
 \[
 \begin{align*}
-\norm{f}_2^2 = \int_X \abs{f}^2 \leq \int_X \abs{\norm{f}_\infty}^2 = \norm{f}_\infty \int_X 1 = \norm{f}_\infty^2 m(X) \\
-\norm{f}_2 \leq \norm{f}_\infty 
+&\norm{f}_2^2 = \int_X \abs{f}^2 \leq \int_X \abs{\norm{f}_\infty}^2 = \norm{f}_\infty \int_X 1 = \norm{f}_\infty^2 m(X) \\
+\implies &\norm{f}_2 \leq m(X)^{1/2} \norm{f}_\infty 
 \end{align*}
 \]
 
