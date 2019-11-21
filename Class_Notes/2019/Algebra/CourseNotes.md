@@ -3708,7 +3708,18 @@ But $\det{xI_n - A} = \det(D)$, so this means that $L_r$ must take up the entire
 Thus $L_r = D$, and $D$ is the matrix of $\psi$ with respect to $B_1 = \theset{v_i}$ and $B_2 = \theset{w_i}$ with $\psi(v_i) = f_i w_i$.
 Thus
 $$
-\im \psi = \bigoplus k[x] f_i w_i.
+\im \psi = \bigoplus_{i=1}^n k[x] f_i w_i.
 $$
 
+But then 
+\[
+\begin{align*}
+V = k^n \cong F/ \im \psi &\cong \frac{k[x] w_1 \oplus \cdots \oplus k[x] w_n} {k[x] f_1 w_1 \oplus \cdots \oplus k[x] f_n w_n} \\
+&\cong \bigoplus_{i=1}^n k[x]/(f_i)
+.\end{align*}
 
+\]
+
+
+Tuesday:
+An example, characteristic polynomial, eigenvalues and diagonalization.
