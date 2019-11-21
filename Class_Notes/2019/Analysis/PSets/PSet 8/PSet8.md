@@ -106,6 +106,8 @@ Let $X = (0, 1]$ and $f(x) = x^{-1/4}$. Then $\norm{f}_2 = \int_0^1 \frac{1}{x^{
 
 ### Part ii
 
+$\exists f \in L^1(X)\setminus L^2(X)$: 
+
 
 
 ## Part b
