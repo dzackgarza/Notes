@@ -6,7 +6,7 @@ title: Problem Set 8
 
 ## Part a
 
-
+It's clear that $\norm{f}_\infty = 0 \iff$
 
 ## Part b
 
