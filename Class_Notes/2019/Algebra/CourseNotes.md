@@ -3694,7 +3694,7 @@ Then (Exercise) the sequence $F \mapsvia{\psi} F \mapsvia{\pi} k^n \to 0$ is exa
 We then have $k^n \cong F/\ker \pi = F / \im \psi$, and since $k[x]$ is a PID, we have
 \[
 \begin{align*}
-xI_n - A \sim
+xI_n - A \sim D \definedas
 \begin{array}
 L_r & 0 \\
 0 & 0
@@ -3703,3 +3703,12 @@ L_r & 0 \\
 \]
 
 where $L_r$ is diagonal with $f_i$s where $f_i \divides f_{i+1}$.
+However, $\det(xI_n - A) \neq 0$ because  $x I_n - A$ is a monic polynomial of degree $n$. 
+But $\det{xI_n - A} = \det(D)$, so this means that $L_r$ must take up the entire matrix of $D$, so there is no zero in the bottom-right corner.
+Thus $L_r = D$, and $D$ is the matrix of $\psi$ with respect to $B_1 = \theset{v_i}$ and $B_2 = \theset{w_i}$ with $\psi(v_i) = f_i w_i$.
+Thus
+$$
+\im \psi = \bigoplus k[x] f_i w_i.
+$$
+
+
