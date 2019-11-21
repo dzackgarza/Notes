@@ -100,7 +100,7 @@ Now setting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$
 
 $\exists f \in L^2(X)\setminus L^\infty(X)$:
 
-Let $X = (0, 1]$ and $f(x) = x^{-1/4}$. Then $\norm{f}_2 = \int_0^1 \frac{1}{x^{1/4}} < \infty$ by the $p$-test
+Let $X = (0, 1]$ and $f(x) = x^{-1/4}$. Then $\norm{f}_2 = \int_0^1 \frac{1}{x^{1/4}} < \infty$ by the $p$-test with $p<1$.
 
 ## Part b
 
