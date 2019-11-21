@@ -28,7 +28,7 @@ $\impliedby$: Suppose $f_n \uniformlyconverges f$ uniformly on some set $E$ and 
 
 ## Part c
 
-To see that simple functions are dense in $L^\infty(X)$, 
+To see that simple functions are dense in $L^\infty(X)$, we can use the fact that $f\in L^\infty(X) \iff$ there exists a $g$ that 
 
 $C^0_c(X)$ is dense $L^\infty(X) \iff$ 
 
