@@ -3269,6 +3269,8 @@ Then we say $\nu \ll \mu \iff \nu(E) = 0$ whenever $E\in\mathcal M$ and $\mu(E) 
 *Exercise:*
 If $\nu$ is finite, i.e. $\nu(X) < \infty$, then $\nu \ll \mu \iff \forall\varepsilon >0\exists\delta>0\suchthat \mu(E) < \delta\implies \nu(E) < \varepsilon$, which explains the terminology.
 
+> Worth looking at. Should be in textbook.
+
 **Theorem (Partial Radon-Nikodym):**
 If $\mu, \nu$ are two $\sigma\dash$finite measures on $(X, \mathcal M)$ such that $\nu \ll \mu$, then there exists a unique non-negative function $f\in L^1(X, \mu)$ such that $d\nu = f d\mu$, so $\nu(E) = \int_E f d\mu$ for all $E\in \mathcal M$.
 > Note: this is a representation theorem. This somehow all traces back to the Riesz Representation theorem for Hilbert spaces, which was a trivial proof! Worth recalling.
