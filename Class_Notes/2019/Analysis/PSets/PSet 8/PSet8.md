@@ -63,9 +63,12 @@ We also have
 \[
 \begin{align*}
 &\norm{f}_2^2 = \int_X \abs{f}^2 \leq \int_X \abs{\norm{f}_\infty}^2 = \norm{f}_\infty \int_X 1 = \norm{f}_\infty^2 m(X) \\
-\implies &\norm{f}_2 \leq m(X)^{1/2} \norm{f}_\infty 
-\end{align*}
+\implies &\norm{f}_2 \leq m(X)^{1/2} \norm{f}_\infty \\
+\implies m(X)^{1/2} &\norm{f}_2 \leq m(X) \norm{f}_\infty
+,\end{align*}
 \]
+
+and combining these yields the desired inequality.
 
 ## Part b
 
