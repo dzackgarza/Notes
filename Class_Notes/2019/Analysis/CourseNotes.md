@@ -3187,6 +3187,46 @@ Then $(X, \mathcal M)$ is referred to as a *measurable* space, noting that we ha
 A *measure* $\mu$ on $(X, \mathcal M)$ is a function $\mu: \mathcal M \to [0, \infty]$ such that
 
 - The silly condition, $\mu(\emptyset) = 0$
-- The important condition, $\mu(\union_{i\in \NN} E_i) \leq \sum_{i\in\NN} \mu(E_i)$.
+- The important condition, $\mu(\disjoint_{i\in \NN} E_i) = \sum_{i\in\NN} \mu(E_i)$.
 
 Then $(X, \mathcal M, \mu)$ is called a *measure space*.
+Things can be measured in this setting, but more importantly, an integral can be defined.
+
+**Definition:**
+A measure is *$\sigma\dash$finite* iff $X = \union E_j$ with $m(E_j) < \infty$ for each $j$.
+
+> Note: most measures encountered in practice seem to be $\sigma\dash$finite, so we could just as well incorporate this into our definition.
+
+Examples:
+
+- The Lebesgue measure (of course)
+- Let $X = \theset{x_n}_{n=1}^\infty$ a countable collection of objects, $\theset{\mu_n \in [0,\infty]}$, and define $\mu(x_n) \definedas \mu_n$.
+  Then we can take the $\sigma\dash$algebra $\mathcal M = \mathcalP(X)$, so 
+  \[
+  \begin{align*}
+  \mu: \mathcal P(X) \to [0, \infty] \\
+  E \mapsto \sum_{n \suchthat x_n \in E} \mu_n
+  .\end{align*}
+  \]
+  In the special case $\mu_n = 1$ for all $n$, we have $\mu(E) = \# E$, the number of elements in $E$, which is the counting measure.
+- Let $X = \RR^n$ and let $\mathcal M$ be the Lebesgue measurable subsets, and let $\mu(E) = \int_E f$ for some fixed $f \in L^+$.
+  This defines a measure (Exercise). 
+  In the special case $f \equiv 1$, we get the usual Lebesgue measure $\mu = m$. 
+  We write $d\mu \definedas f dx$.
+  Note that $m(E) = 0 \iff \mu(E) = 0$, which is referred to as *absolute continuity*.
+
+  > Note that all absolutely continuous measures occur in this way! But there are more exotic measures. Thinking about representability theorems, this says that measures are like "generalized integrable functions", but the collection of measures is richer.
+
+- The Dirac mass: $\delta_0(E) = 1 \iff 0\in E$ and 0 otherwise.
+
+## Basic Properties of Measures
+
+Fix a measure space $(X, \mathcal M, \mu)$.
+
+1. Monotonicity: $E_1 \subseteq E_2 \implies \mu(E_1) \leq \mu(E_2)$.
+  This follows from $E_2 = E_1 \disjoint (E_2 \setminus E_1)$ and taking measures, which are always $\geq 0$.
+2. Subadditivity: $\mu(\union E_i) \leq \sum \mu(E_i)$
+3. Continuity from above and below: $E_j \nearrow E \implies \mu(E_j) \to \mu(E)$ and $E_j \searrow E, \mu(E_1) < \infty \implies \mu(E_j) \to \mu(E)$.
+
+**Definition:**
+A measure space is *complete* iff when $F \in \mathcal M$ is measurable, $\mu(F) = 0$, and $E\subseteq F$, we have $E \in \mathcal M$.
