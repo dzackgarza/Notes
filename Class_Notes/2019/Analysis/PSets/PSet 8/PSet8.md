@@ -70,7 +70,9 @@ We also have
 
 and combining these yields the desired inequality, from which we can immediately conclude that if $m(X) < \infty$, we have $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
 
-To see that the inclusion is strict in general
+To see that the inclusion is strict in general:
+
+- $\exists f \in L^1(X)\setminus L^2(X)$: L
 
 ## Part b
 
