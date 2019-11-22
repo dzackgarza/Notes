@@ -3827,6 +3827,18 @@ The *twisted Harish-Chandra homomorphism* is the algebra homomorphism $\psi = \z
 \]
 
 Example:
-$\xi(\Omega) = h^2 + 2h$. so $\psi(\Omega) = \zeta(h^2 + 2h) = (h-1)^2 + 2(h-1) = h^2 - 1$.
+$\xi(\Omega) = h^2 + 2h$, so $\psi(\Omega) = \zeta(h^2 + 2h) = (h-1)^2 + 2(h-1) = h^2 - 1$.
 
+**Theorem (Harish-Chandra)**:
+For all $\lambda, \mu \in \lieh^*$, we have $\chi_\lambda = \chi_\mu \iff \mu = W \cdot \lambda$.
+
+**Corollary:**
+If $L(\mu)$ is a composition factor of $M(\lambda)$, then $Z \actson M(\lambda)$ by the same scalar $\chi_\lambda(z) = \chi_\mu(z)$ for all $z$.
+
+Then $\chi_\lambda = \chi_\mu \implies \mu = W \cdot \lambda$.
+
+Remark:
+Assuming this theorem, this completes the proof of the Weyl Character Formula.
+
+# Monday November 24
 
