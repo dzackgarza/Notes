@@ -3814,7 +3814,7 @@ Now by writing $t_\lambda = \sum_i a_i h_i = \sum_i b_i h_j'$, where $\kappa(t_\
 \]
 $\qed$
 
-Example:
+*Example:*
 $\lambda(\xi(\Omega)) = \lambda(h^2 + h) = \lambda^2 + 2\lambda = (\lambda+2, \lambda)$ under $\lieh^* \equiv \ZZ$ where $\alpha \mapsto 2, \rho \mapsto 1$.
 
 **Definition:**
@@ -3826,7 +3826,7 @@ The *twisted Harish-Chandra homomorphism* is the algebra homomorphism $\psi = \z
 .\end{align*}
 \]
 
-Example:
+*Example:*
 $\xi(\Omega) = h^2 + 2h$, so $\psi(\Omega) = \zeta(h^2 + 2h) = (h-1)^2 + 2(h-1) = h^2 - 1$.
 
 **Theorem (Harish-Chandra)**:
@@ -3837,7 +3837,7 @@ If $L(\mu)$ is a composition factor of $M(\lambda)$, then $Z \actson M(\lambda)$
 
 Then $\chi_\lambda = \chi_\mu \implies \mu = W \cdot \lambda$.
 
-Remark:
+*Remark:*
 Assuming this theorem, this completes the proof of the Weyl Character Formula.
 
 # Monday November 24
