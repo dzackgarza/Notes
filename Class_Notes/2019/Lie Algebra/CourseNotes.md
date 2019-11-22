@@ -3841,4 +3841,4 @@ Then $\chi_\lambda = \chi_\mu \implies \mu = W \cdot \lambda$.
 Assuming this theorem, this completes the proof of the Weyl Character Formula.
 
 # Monday November 24
-a
+
