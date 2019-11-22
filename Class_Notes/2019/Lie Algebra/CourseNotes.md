@@ -20,6 +20,7 @@ Here is a short overview of the topics we expect to cover:
 ### Chapter 3-4
 We will describe the following series of correspondences:
 
+```{=latex}
 \begin{tikzcd}
 \text{Semisimple algebras} \arrow[rr, Leftrightarrow] &  & \text{Root systems} \arrow[rr, Leftrightarrow] & & \text{Dynkin diagrams} \\
 & & & & \\
@@ -29,6 +30,7 @@ We will describe the following series of correspondences:
 ## Classification
 The classical Lie algebras can be essentially classified by certain classes of diagrams:
 
+```{=latex}
 \begin{tikzpicture}
 \tikzset{vertex/.style = {shape=circle,draw,minimum size=0.2em,fill=black!60}}
 \tikzset{edge/.style = {->,> = latex'}}
@@ -41,7 +43,9 @@ The classical Lie algebras can be essentially classified by certain classes of d
 \draw[edge] (c) to (d);
 \node at ($(b)!0.5!(c)$) {$\cdots$};
 \end{tikzpicture}
+```
 
+```{=latex}
 \begin{tikzpicture}
 \tikzset{vertex/.style = {shape=circle,draw,minimum size=0.2em,fill=black!60}}
 \tikzset{edge/.style = {->,> = latex'}}
@@ -55,7 +59,9 @@ The classical Lie algebras can be essentially classified by certain classes of d
 \draw[edge, bend right] (c) to (d);
 \node at ($(b)!0.5!(c)$) {$\cdots$};
 \end{tikzpicture}
+```
 
+```{=latex}
 \begin{tikzpicture}
 \tikzset{vertex/.style = {shape=circle,draw,minimum size=0.2em,fill=black!60}}
 \tikzset{edge/.style = {->,> = latex'}}
@@ -69,7 +75,9 @@ The classical Lie algebras can be essentially classified by certain classes of d
 \draw[edge, bend right] (d) to (c);
 \node at ($(b)!0.5!(c)$) {$\cdots$};
 \end{tikzpicture}
+```
 
+```{=latex}
 \begin{tikzpicture}
 \tikzset{vertex/.style = {shape=circle,draw,minimum size=0.2em,fill=black!60}}
 \tikzset{edge/.style = {->,> = latex'}}
@@ -84,7 +92,9 @@ The classical Lie algebras can be essentially classified by certain classes of d
 \draw[edge] (c) to (e);
 \node at ($(b)!0.5!(c)$) {$\cdots$};
 \end{tikzpicture}
+```
 
+```{=latex}
 \begin{tikzpicture}
 \tikzset{vertex/.style = {shape=circle,draw,minimum size=0.2em,fill=black!60}}
 \tikzset{edge/.style = {->,> = latex'}}
@@ -102,7 +112,9 @@ The classical Lie algebras can be essentially classified by certain classes of d
 %\draw[edge] (d) to (c);
 \node at ($(c)!0.5!(d)$) {$\cdots$};
 \end{tikzpicture}
+```
 
+```{=latex}
 \begin{tikzpicture}
 \tikzset{vertex/.style = {shape=circle,draw,minimum size=0.2em,fill=black!60}}
 \tikzset{edge/.style = {->,> = latex'}}
@@ -116,6 +128,7 @@ The classical Lie algebras can be essentially classified by certain classes of d
 \draw[edge, bend right] (b) to (c);
 \draw[edge] (c) to (d);
 \end{tikzpicture}
+```
 
 ## Chapters 4-5
 These cover the following topics:
