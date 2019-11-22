@@ -3799,3 +3799,34 @@ Recall that $\Omega = \sum_{j=1}^\ell h_j h'_j + \sum_{i=1}^m (e_i t_i + f_i e_i
 Then if we have a basis $\theset{h_i, e_i, f_i}$, we can produce a dual basis $\theset{h'_i, e'_i, f'_i}$ with respect to the killing form.
 Thus $\Omega = \sum_j h_j h_j' + \sum_{i=1}^m h_i + 2f_i e_i$ and $\xi(\Omega) = \sum_j h_j h'_j + \sum{i=1}^m h_i$.
 
+Now by writing $t_\lambda = \sum_i a_i h_i = \sum_i b_i h_j'$, where $\kappa(t_\lambda, h_j) = b_j, \kappa(t_\lambda, h'_j)$, and $\kappa(t_\lambda, t_\lambda) = \sum a_i b_i$, we can write
+\[
+\begin{align*}
+\lambda(\xi(\Omega)) = \sum_j \lambda(h_j) \lambda(h'_j) + \sum_i \lambda(h_i) 
+&= \sum_j \kappa(t_\lambda, h_j)\kappa(t_\lambda, h]_j) + \sum_i \lambda(h_i) \\
+&= \kappa(t_\lambda, t_\lambda) + \sum_i \lambda(h_i) \\
+&= \kappa(t_\lambda, t_\lambda) + \sum_{i=1}^m (\lambda, \alpha_i) \\
+&= \kappa(t_\lambda, t_\lambda) + (\lambda, \sum_{\alpha\in\Phi^+} \alpha) \\
+&= \kappa(t_\lambda, t_\lambda) + (\lambda, 2\rho\\
+&= (\lambda, \lambda) + (\lambda, 2\rho)  \\
+&= (\lambda + 2\rho, \lambda)
+.\end{align*}
+\]
+$\qed$
+
+Example:
+$\lambda(\xi(\Omega)) = \lambda(h^2 + h) = \lambda^2 + 2\lambda = (\lambda+2, \lambda)$ under $\lieh^* \equiv \ZZ$ where $\alpha \mapsto 2, \rho \mapsto 1$.
+
+**Definition:**
+The *twisted Harish-Chandra homomorphism* is the algebra homomorphism $\psi = \zeta \circ \xi: Z \to S(\lieh)$ where 
+\[
+\begin{align*}
+\zeta: U(\lieh) \cong S(\lieh) \to S(\lieh) \\
+\rho)h_1, \cdots, h_\ell) \mapsto \rho(h_1-1, \cdots, h_\ell - 1)
+.\end{align*}
+\]
+
+Example:
+$\xi(\Omega) = h^2 + 2h$. so $\psi(\Omega) = \zeta(h^2 + 2h) = (h-1)^2 + 2(h-1) = h^2 - 1$.
+
+
