@@ -3765,4 +3765,37 @@ Let $\lieg = \liessl(2, \CC)$ and $\Omega = h^2 + 2h + fe \in Z$.
 Take $\lambda \in \Lambda^+ \equiv \ZZ_{\geq 0}$ and $v^+ \in M(\lambda)_\lambda$.
 Then $\Omega.v^+ = (h^2 + 2h + fe)v^+ = (\lambda^2 + 2\lambda)v^+$, which means that $\chi_\lambda(\Omega) = \lambda(\lambda+2) \in \CC$.
 
+### Harish-Chandra Theorem
+
+*Definition:*
+The *Harish-Chandra* homomorphism is the algebra homomorphism 
+\[
+\begin{align*}
+\xi: Z \to U(\lieh) \\
+\vector{f}^{\vector a} \vector h^{\vector b} \vector e^{\vector c} \mapsto 
+\begin{cases}
+\vector h^{\vector b} & if \vector a = \vector 0 = \vector c \\
+0 & else
+\end{cases}
+.\end{align*}
+\]
+
+*Example:*
+$\xi(\Omega) = h^2 + 2h$.
+
+*Lemma:*
+$\chi_\lambda(z) = \lambda(\xi(z))$ implies that $\Omega \actson L(\lambda), M(\lambda)$ by $(\lambda + \rho, \lambda)$.
+
+*Proof*:
+If $z = \vector f^{\vector a}\vector h^{\vector b}\vector e^{\vector c}$ with $\vector c \neq \vector 0$, the $z.v^+ = 0$ which implies that both sides are zero.
+If $\vector c = \vector 0$, then $\vector a = \vector 0$.
+Otherwise $z\in U(\lieg)_\beta$ for some $\beta\neq 0$, so there exists an $h\in\lieh$ such that $[h, z] = \beta(h) z \neq 0$, while $[h, z] = 0$ and $z\in Z$.
+
+Thus $\chi_\lambda(z) = \lambda(\vector h^{\vector b}) = \lambda(\xi(z))$ if $z = \vector h^{\vector b}$. 
+$\qed$
+
+Recall that $\Omega = \sum_{j=1}^\ell h_j h'_j + \sum_{i=1}^m (e_i t_i + f_i e_i)$ for $h_i = [e_i, f_i] = e_if_i - f_i e_i$.
+
+Then if we have a basis $\theset{h_i, e_i, f_i}$, we can produce a dual basis $\theset{h'_i, e'_i, f'_i}$ with respect to the killing form.
+Thus $\Omega = \sum_j h_j h_j' + \sum_{i=1}^m h_i + 2f_i e_i$ and $\xi(\Omega) = \sum_j h_j h'_j + \sum{i=1}^m h_i$.
 
