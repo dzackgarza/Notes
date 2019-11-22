@@ -3689,3 +3689,67 @@ $$
 $$
 
 where we can identify a number of terms, and then taking ratios yields Weyl's dimension formula.
+
+# Friday November 22
+
+Remark:
+For $\lieg$ semisimple, studying $\mathrm{Rep}(\lieg)$ is too hard. 
+So we study category $\mathcal O$, which contains simple modules $L(\lambda)$ for $\lambda \in \lieg^*$.
+
+Case 1, $\lambda \in \Lambda^+$:
+In the finite-dimensional setting, we use Weyl's character formula.
+
+Case 2, $\lambda \not\in\Lambda^+$:
+If suffices to consider $\lambda \in \Lambda$, then we apply Soergel's translation functor $\Bbb V$.
+Then $\L(\lambda)$ for $\lieg$ corresponds to $L(\lambda^\sharp)$ for $\lieg^\sharp$ such that $\lambda^\sharp \in \Lambda(\lieg^\sharp)$.
+
+For $\lambda \in \Lambda$, it suffices to consider $\lambda \in W\cdot 0$ using Jantzen's translation functor.
+
+Then $\mathrm{ch} L(w\cdot 0) = \sum_{x\leq W} (-1)^{\ell(w) - \ell(x)} P_{w_0w, w_0x}(1) \mathrm{ch}M(x\cdot 0)$.
+
+The $x\leq w$ index indicates the Bruhat order on $W$, and $P$ is the Kazhdan-Lusztig polynomial and $w_0$ is the longest element in $W$.
+
+Example:
+Type $A_2$, the $W = \Sigma_3, w_0 = s_{\alpha_1} s_{\alpha_2} s_{\alpha_1} = s_{\alpha_2} s_{\alpha_1} s_{\alpha_2} = \abs{3~2~1}$.
+
+Last time:
+If $L(\mu)$ is a composition factor of $M(\lambda)$, then $\mu \in W\cdot \lambda$.
+
+## Central Characters (Ch. 23)
+
+### Action of the Center (23.2)
+
+Let $Z \definedas Z(U(\lieg))$ be the center of the universal enveloping algebra.
+Then there is a Casimir element $\Omega \in Z$, and $\Omega \actson L(\lambda)$ by scalar multiplication.
+
+**Definition/Proposition:**
+For $\lambda \in \lieh^*$, its *central character* is $\chi_\lambda: Z \to \CC$ such that $z\cdot m = \chi_\lambda(z)m$ for all $z\in Z, m\in M$, where $M$ is a highest weight module with highest weight $\lambda$ and $v^+$ is a highest weight vector.
+
+*Proof:*
+For all $h\in \lieh$, we have
+$h.(z.v^+) = z.(h.v^+)$ since $z\in Z$, but this equals $\lambda(h) z.v^+$.
+Then $z.v^+ \in M_\lambda = \CC v^+$, so $z.v^+ = \chi_\lambda(z) v^+$ for some $\chi_\lambda(z)\in \CC$.
+
+An arbitrary element in $M = U(\lieg).v^+$ is $m=x.v^+$ for $x\in U(\lieg)$.
+Then
+
+\[
+\begin{align*}
+z.m &= z.(x.v^+) \\
+&= x.(z.v^+) \\
+&= \chi_\lambda(z) x.v^+ \\
+&= \chi_\lambda (z) m
+.\end{align*}
+\]
+$\qed$
+
+*Remark:*
+We also have $Z\actson M(\lambda)$ and any submodule or composition factor by the same scalar.
+
+*Example:*
+Let $\lieg = \liessl(2, \CC)$ and $\Omega = h^2 + 2h + fe \in Z$.
+
+Take $\lambda \in \Lambda^+ \equiv \ZZ_{\geq 0}$ and $v^+ \in M(\lambda)_\lambda$.
+Then $\Omega.v^+ = (h^2 + 2h + fe)v^+ = (\lambda^2 + 2\lambda)v^+$, which means that $\chi_\lambda(\Omega) = \lambda(\lambda+2) \in \CC$.
+
+
