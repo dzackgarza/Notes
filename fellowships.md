@@ -17,3 +17,9 @@ The Harvard Graduate School of Arts and Sciences (GSAS) offers fellowship inform
 Finally, check the Web sites of the universities where you plan to apply. Like GSAS, many graduate schools offer graduate funding options specific to their institutions.
 
 Generally, undergraduates are urged to try their luck in all nationwide fellowships. Harvard students have been very successful in winning these awards. Some fellowships have early deadlines (as early as October) and some pay more attention to the GRE scores and grades than university admissions offices.
+
+There are many fellowships and scholarships for study abroad. Information about them can be obtained on the Office of Career Services (OCS) website, under ``Global Opportunities'', or from your House Fellowships Tutor. Particularly useful are the Guide to Grants and the Guide to Study Abroad, published annually by OCS. Some of the math/science oriented fellowships are the:
+
+Churchill Scholarship (for study at Cambridge University),
+Herschel Smith Harvard Scholarship (also Cambridge),
+Weizmann Institute of Science Scholarship (the Weizmann Institute in Rehovot, Israel).
