@@ -54,13 +54,13 @@ title: Asdasdas
 
 !include sections/2019-10-16.md
 
-!include sections/2019-10-18.md
+<!--!include sections/2019-10-18.md-->
 
-!include sections/2019-10-21.md
+<!--!include sections/2019-10-21.md-->
 
-!include sections/2019-10-23.md
+<!--!include sections/2019-10-23.md-->
 
-!include sections/2019-10-25.md
+<!--!include sections/2019-10-25.md-->
 
 <!--!include sections/2019-10-28.md-->
 
