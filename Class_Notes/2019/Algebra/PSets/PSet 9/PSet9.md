@@ -14,6 +14,7 @@ $$
 A \vector e_{ij} = [0, 0, \cdots, \vector a_i^t, 0, \cdots, 0]
 $$
 as a block matrix where $\vector a_i^t$ occurs as the $j$th column. 
+
 In other words, right-multiplication by $\vector e_{ij}$ selects column $i$ from $A$, placing it in column $j$ of a matrix of zeros.
 
 For example, for $(i, j) = (3, 2)$ we have
