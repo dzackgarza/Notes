@@ -55,3 +55,5 @@ title: "Algebra"
 !include sections/2019-11-19.md
 
 !include sections/2019-11-21.md
+
+!include sections/2019-11-26.md
