@@ -50,7 +50,17 @@ A = \left(\begin{matrix}r&0&0&\cdots&0\\0&r&0&\cdots&0\\\vdots&\vdots&\vdots&\dd
 $$
 
 To see that we must have $r\in Z(G)$, let $sI_n \in Z(M_n(R))$ be arbitrary, where $s$ is not assumed to be in $Z(R)$. 
-Then $rI_n sI_n = sI_n rI_n$ by definition, but $M_n(R)$ is an $R\dash$module, the scalars $r,s$ commute with the module elements $I_n$, so we can rewrite this equality as $rs I_n^2 = sr I_n^2$, and so $rs I_n = sr I_n$ and $(rs - sr) I_n = 0_n$.
+Then $(rI_n)(sI_n) = (sI_n)(rI_n)$ by assumption, since these are matrices in the center of $M_n(R)$.
+But $M_n(R)$ is an $R\dash$module, and so the scalars $r,s$ commute with the module elements $I_n$.
+This means that we in fact have
+
+\begin{align*}
+
+(r I_n) (s I_n) = (rs) I_n^2 = (rs)I_n \\
+(s I_n) (r I_n) = (sr) I_n^2 = (sr)I_n \\
+\implies (rs) I_n = (sr) I_n \\
+\implies (rs -sr) I_n = 0
+.\end{align*}
 
 By equating (for example) the $1,1$ entry, we find $rs - sr = 0_R$, which means $rs = sr \in R$.
 Now since $s\in R$ was arbitrary, we find that $r\in Z(R)$ as desired.
