@@ -155,10 +155,18 @@ We say $A \sim B$ in $M(n\times n, R)$ $\iff$ $B = PAQ$ with $P \in \GL(n, R), Q
 
 $\implies$:
 Suppose toward the contrapositive that $\rank(A) < m$, so $A$ has at least one pair of linearly dependent columns.
-So wlog write $A = [\vector a_1, \vector a_2, \cdots, \vector a_m]$ in block form with each $\vector a_i$ a column vector, and we can assume that $\vector a_1, \vector a_2$ are linearly dependent.
+So wlog write 
+$$
+A = [\vector a_1^t, \vector a_2^t, \cdots, \vector a_m^t]
+$$ 
+in block form with each $\vector a_i$ a column vector, and we can assume that $\vector a_1, \vector a_2$ are linearly dependent.
 
 Now suppose such a left inverse $B$ were to exist. 
-Write it in block form as $B =[\vector b_1, \vector b_2, \cdots, \vector b_n]^t$, so each $\vector b_i$ is a row of $B$.
+Write it in block form as 
+$$
+B =[\vector b_1, \vector b_2, \cdots, \vector b_n]^t,
+$$ 
+so each $\vector b_i$ is a row of $B$.
 
 Now if $BA = I_m$ is to hold, noting that $(BA)_{ij} = \inner{\vector b_i}{\vector a_j}$, we must have
 
