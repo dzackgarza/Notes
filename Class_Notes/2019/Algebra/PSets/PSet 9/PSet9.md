@@ -28,7 +28,7 @@ $$
 
 which is a matrix that contains column $3$ of $A$ (the $i$ value) as its $2$nd column (the $j$ value).
 
-On the other hand, *left* multiplication by $\vector e_{ij}$ selects the $j$th *row* of $A$ and places it the $i$th row of a zero matrix, so for example we have
+On the other hand, *left* multiplication by $\vector e_{ij}$ selects the $j$th **row** of $A$ and places it the $i$th **row** of a zero matrix, so for example we have
 
 $$
 \vector e_{32} A = 
