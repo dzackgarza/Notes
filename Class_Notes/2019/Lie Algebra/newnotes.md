@@ -16,9 +16,9 @@ title: Asdasdas
 
 !include sections/2019-08-26.md
 
-<!--!include sections/2019-08-28.md-->
+!include sections/2019-08-28.md
 
-<!--!include sections/2019-08-30.md-->
+!include sections/2019-08-30.md
 
 <!--!include sections/2019-09-02.md-->
 
