@@ -185,7 +185,7 @@ I_{2, 3} &= \inner{\vector b_2}{\vector a_3} = 0 \\
 
 But the claim is that this can *not* happen if $\vector a_1, \vector a_2$ are linearly dependent.
 To see why, note that the linear dependence supplies elements $d_1, d_2 \neq 0 \in D$ such that $d_1 \vector a_1 + d_2 \vector a_2 = \vector 0$. 
-But then taking inner products against, e.g. $\vector b_1$ (that is, applying $\inner{\wait}{\vector b_i}$ to every term), we obtain
+But then taking inner products against, e.g. $\vector b_1$ (that is, applying $\inner{\vector b_i}{\wait}$ to every term), we obtain
 
 \begin{align*}
 c_1 \vector a_1 + c_2 \vector a_2 = \vector 0 
