@@ -72,11 +72,11 @@ title: Asdasdas
 
 !include sections/2019-11-15.md
 
-!include sections/2019-11-18.md
+<!--!include sections/2019-11-18.md-->
 
-<!--!include sections/2019-11-20.md-->
+!include sections/2019-11-20.md
 
-<!--!include sections/2019-11-22.md-->
+!include sections/2019-11-22.md
 
-<!--!include sections/2019-11-25.md-->
+!include sections/2019-11-25.md
 
