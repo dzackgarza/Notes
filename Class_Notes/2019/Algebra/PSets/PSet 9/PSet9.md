@@ -2,6 +2,7 @@
 title: Problem Set 9
 ---
 
+> Note: I use the convention that $\vector a$ denotes a column vector and $\vector a^t$ a row vector.
 
 # Problem 1
 
