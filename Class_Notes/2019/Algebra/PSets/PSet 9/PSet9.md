@@ -188,7 +188,8 @@ To see why, note that the linear dependence supplies elements $d_1, d_2 \neq 0 \
 But then taking inner products against, e.g. $\vector b_1$ (that is, applying $\inner{\vector b_1}{\wait}$ to everything in sight), we obtain
 
 \begin{align*}
-d_1 \vector a_1 + d_2 \vector a_2 = \vector 0 
+d_1 \vector a_1 + d_2 \vector a_2 = \vector 0 \\
+\implies \inner{\vector b_1}{d1 \vector a_1} + \inner{\vector b_1}{d_2 \vector a_2} = \inner{\vector b_1}{\vector 0} = 0 \\
 \implies d_1 \inner{\vector b_1}{\vector a_1} + d_2\inner{\vector b_1}{\vector a_2} = \inner{\vector b_1}{\vector 0} = 0 \\
 \implies d_1 \inner{\vector b_1}{\vector a_1} + d_2\inner{\vector b_1}{\vector a_2}  = 0 \\
 \implies d_1 + d_2\inner{\vector b_1}{\vector a_2}  = 0 \\
