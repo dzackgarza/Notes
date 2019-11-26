@@ -1,3 +1,7 @@
+---
+title: Asdasdas
+---
+
 !include sections/2019-08-12.md
 
 !include sections/2019-08-14.md
