@@ -32,5 +32,19 @@ title: Asdasdas
 
 !include sections/2019-09-18.md
 
+!include sections/2019-09-20.md
+
+!include sections/2019-09-23.md
+
+!include sections/2019-09-25.md
+
+!include sections/2019-09-27.md
+
 !include sections/2019-09-30.md
+
+!include sections/2019-10-02.md
+
+!include sections/2019-10-07.md
+
+!include sections/2019-10-09.md
 
