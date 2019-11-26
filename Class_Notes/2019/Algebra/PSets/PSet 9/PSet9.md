@@ -9,7 +9,7 @@ title: Problem Set 9
 
 Let $A = (a_{ij})$ and consider $\vector \epsilon_{ij}$, the matrix with a $1$ in the $i$th row and $j$th column and zeros elsewhere.
 
-Then, for a fixed $(i, j)$, if we write $A = [\vector a_1^t, \vector a_2^t, \cdots, \vector a_n^t]$ as a matrix of column vectors, we have 
+Then, for a fixed $(i, j)$, if we write $A = [\vector a_1^t, \vector a_2^t, \cdots, \vector a_n^t]$ as a block matrix of column vectors, we have 
 $$
 A \vector e_{ij} = [0, 0, \cdots, \vector a_i^t, 0, \cdots, 0]
 $$
