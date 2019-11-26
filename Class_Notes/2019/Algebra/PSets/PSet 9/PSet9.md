@@ -51,7 +51,7 @@ $$
 A = \left(\begin{matrix}r&0&0&\cdots&0\\0&r&0&\cdots&0\\\vdots&\vdots&\vdots&\ddots&\vdots\\0&0&0&\cdots&r\end{matrix}\right) \definedas r I_n.
 $$
 
-To see that we must have $r\in Z(G)$, let $sI_n \in Z(M_n(R))$ be arbitrary, where $s$ is not assumed to be in $Z(R)$. 
+To see that we must have $r\in Z(R)$, let $sI_n \in Z(M_n(R))$ be arbitrary, where $s$ is not assumed to be in $Z(R)$. 
 Then $(rI_n)(sI_n) = (sI_n)(rI_n)$ by assumption, since these are matrices in the center of $M_n(R)$.
 But $M_n(R)$ is an $R\dash$module, and so the scalars $r,s$ commute with the module elements $I_n$.
 This means that we in fact have
