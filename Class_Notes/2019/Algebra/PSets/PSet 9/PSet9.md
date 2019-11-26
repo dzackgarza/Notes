@@ -204,7 +204,7 @@ Suppose $\rank(A) = m$, so $A$ has $m$ linearly independent columns -- note that
 
 > Note: since row ranks equal column ranks, this also says that $A$ has $m$ linearly independent rows, so we must have $n\geq m$.
 
-Viewing $A$ as a map from $D^m \to D^n$, we find that $\rank \im A = m \leq n$.
+Viewing $A$ as a map from $D^m \to D^n$, we find that $\dim \im A = m \leq n$.
 In particular, $\ker A = \theset{\vector 0}$; otherwise this would force $\dim \im A < m$. 
 So $A$ represents an injective map $f_A: D^m \to D^n$.
 
