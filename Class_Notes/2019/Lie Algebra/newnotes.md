@@ -42,11 +42,11 @@ title: Asdasdas
 
 !include sections/2019-09-30.md
 
-!include sections/2019-10-02.md
+<!--!include sections/2019-10-02.md-->
 
-!include sections/2019-10-07.md
+<!--!include sections/2019-10-07.md-->
 
-!include sections/2019-10-09.md
+<!--!include sections/2019-10-09.md-->
 
 <!--!include sections/2019-10-11.md-->
 
