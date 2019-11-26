@@ -203,7 +203,7 @@ $\impliedby$:
 Suppose $\rank(A) = m$, so $A$ has $m$ linearly independent columns -- note that this is *all* of its columns.
 Since row ranks equal column ranks, this also says that $A$ has $m$ linearly independent rows, so we must have $n\geq m$.
 Then viewing $A$ as a map from $D^m \to D^n$, we find that $\rank \im A = m \leq n$.
-In particular, $\ker A = \theset{\vector 0}$; otherwise this would force $\rank \im A < m$. 
+In particular, $\ker A = \theset{\vector 0}$; otherwise this would force $\dim \im A < m$. 
 So $A$ represents an injective map $f_A: D^m \to D^n$.
 
 But any injective set map $f: S_1\to S_2$ has a left-inverse $g$ such that $g\circ f = \id_{S_1}$. 
