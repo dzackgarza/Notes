@@ -58,10 +58,12 @@ This means that we in fact have
 (r I_n) (s I_n) &= (rs) I_n^2 = (rs)I_n, \\
 (s I_n) (r I_n) &= (sr) I_n^2 = (sr)I_n \\
 &\implies (rs) I_n = (sr) I_n \\
-&\implies (rs -sr) I_n = 0
-.\end{align*}
+&\implies (rs -sr) I_n = 0_n,
+\end{align*}
 
-But then by equating (for example) the $1,1$ entry of the matrix $(rs -sr) I_n$, we find $rs - sr = 0_R$, which means $rs = sr \in R$.
+the $n\times n$ zero matrix.
+
+But then by equating (for example) the $1,1$ entry of the matrix $(rs -sr) I_n$ with the corresponding entry in $0_n$, we find $rs - sr = 0_R$, which means $rs = sr \in R$.
 
 Now since $s\in R$ was arbitrary, we find that $r\in Z(R)$ as desired.
 
