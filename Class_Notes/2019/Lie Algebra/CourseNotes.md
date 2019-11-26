@@ -6,8 +6,6 @@ title: "Lie Algebras"
 
 !include sections/2019-09-14.md
 
-!include sections/2019-09-16.md
-
 # Monday August 19
 
 ## Solvability
