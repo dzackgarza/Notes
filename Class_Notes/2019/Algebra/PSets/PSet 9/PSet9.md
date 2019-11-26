@@ -37,7 +37,8 @@ $$
 \left(\begin{matrix}0&0&0\\0&0&0\\a_{21}&a_{22}&a_{23}\end{matrix}\right)
 $$
 
-In general, these two products will not be equal, since the first has a nontrivial column and the latter has a nontrivial row.If $A \in Z(M_n(R))$, these two must be equal, so we can equate corresponding entries to find that 
+In general, these two products will not be equal, since the first has a nontrivial column and the latter has a nontrivial row.
+If $A \in Z(M_n(R))$, these two must be equal, so we can equate corresponding entries to find that 
 
 - $a_{21} = 0$, from comparing entries in row 3, column 1,
 - $a_{23} = 0$, from comparing entries in row 3, column 3
