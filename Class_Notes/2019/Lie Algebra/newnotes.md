@@ -70,7 +70,7 @@ title: Asdasdas
 
 !include sections/2019-11-13.md
 
-!include sections/2019-11-15.md
+<!--!include sections/2019-11-15.md-->
 
 <!--!include sections/2019-11-18.md-->
 
