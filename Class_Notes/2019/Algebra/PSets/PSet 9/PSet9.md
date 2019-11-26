@@ -38,7 +38,7 @@ $$
 
 In general, these two products will not be equal, since the first has a nontrivial column and the latter has a nontrivial row.If $A \in Z(M_n(R))$, these two must be equal, so we can equate correspond entries to find that we must have $a_{22} = a_{33}$ and the remaining entries appearing must be zero.
 
-Letting the multiplication run over all possibilities for $\vector e_{ij}$ yields $a_ii = a_{jj}$ for every pair $i, j$ and $a_{ij} = 0$ whenever $i\neq j$. 
+Letting the multiplication run over all possibilities for $\vector e_{ij}$ yields $a_{ii} = a_{jj}$ for every pair $i, j$ and $a_{ij} = 0$ whenever $i\neq j$. 
 Setting $r = a_{ii} = a_{jj}$ for all $1\leq i,j \leq n$ forces $A$ to be a matrix of the form
 
 $$
