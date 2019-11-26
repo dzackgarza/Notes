@@ -22,5 +22,5 @@ title: Asdasdas
 
 !include sections/2019-09-02.md
 
-<!--!include sections/2019-09-30.md-->
+!include sections/2019-09-30.md
 
