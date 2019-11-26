@@ -55,7 +55,6 @@ But $M_n(R)$ is an $R\dash$module, and so the scalars $r,s$ commute with the mod
 This means that we in fact have
 
 \begin{align*}
-
 (r I_n) (s I_n) &= (rs) I_n^2 = (rs)I_n, \\
 (s I_n) (r I_n) &= (sr) I_n^2 = (sr)I_n \\
 &\implies (rs) I_n = (sr) I_n \\
