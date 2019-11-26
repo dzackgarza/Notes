@@ -32,3 +32,5 @@ Measure and integration theory with relevant examples from Lebesgue integration,
 - A sequence of continuous functions converging to a discontinuous function: $f(x) = x^n$ on $[0, 1]$.
 
 !include sections/2019-08-15.md
+
+!include sections/2019-11-26.md
