@@ -4,13 +4,13 @@ title: Asdasdas
 
 !include sections/2019-08-12.md
 
-!include sections/2019-08-14.md
+<!--!include sections/2019-08-14.md-->
 
-!include sections/2019-08-16.md
+<!--!include sections/2019-08-16.md-->
 
-!include sections/2019-08-19.md
+<!--!include sections/2019-08-19.md-->
 
-!include sections/2019-08-21.md
+<!--!include sections/2019-08-21.md-->
 
 <!--!include sections/2019-08-23.md-->
 
