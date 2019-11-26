@@ -3201,7 +3201,7 @@ Examples:
 
 - The Lebesgue measure (of course)
 - Let $X = \theset{x_n}_{n=1}^\infty$ a countable collection of objects, $\theset{\mu_n \in [0,\infty]}$, and define $\mu(x_n) \definedas \mu_n$.
-  Then we can take the $\sigma\dash$algebra $\mathcal M = \mathcalP(X)$, so 
+  Then we can take the $\sigma\dash$algebra $\mathcal M = \mathcal P(X)$, so 
   \[
   \begin{align*}
   \mu: \mathcal P(X) \to [0, \infty] \\
@@ -3240,7 +3240,7 @@ Given an $(X, \mathcal M)$, we construct $\mu$ in the following way:
 1. Define an outer measure (or premeasure) $\mu^*$ on $\mathcal P(X)$.
 2. Caratheodory: A set $E\subseteq X$ is measurable $\iff \mu_*(A) = \mu_*(A\intersect E) + \mu_*(A\intersect E^c)$ is true for every $A$.
 
-> Note: worth recalling why this is equivalent to the usual "open set" definition, i.e. $\exists G$ open such that $\mu_*(G\setminus E$ < \varepsilon$, where we really needed a topology to talk about open sets.
+> Note: worth recalling why this is equivalent to the usual "open set" definition, i.e. $\exists G$ open such that $\mu_*(G\setminus E < \varepsilon$, where we really needed a topology to talk about open sets.
 
 3. Let $\mathcal M \definedas \theset{\text{Caratheodory measurable sets}}$ forms a $\sigma\dash$algebra and $\restrictionof{\mu_*}{\mathcal M}$ is a measure.
 
@@ -3254,7 +3254,6 @@ We say two functions are equal almost everywhere if they disagree on a measure z
 If $\phi$ is simple, i.e. $\phi = \sum_{j=1}^N a_j \chi_{E_j} \in L^+$ (is non-negative), then $\int \phi d\mu \definedas \sum a_j \mu(E_j)$.
 Then if $f\in L^+$, we define $\int f d\mu = \sup \theset{\int \phi d\mu \suchthat 0\leq \phi \leq f, \phi\text{ is simple. }}$.
 Then for $f$ arbitrary and measurable, write $f = f_+ - f_-$, and define $\int f d\mu = \int f_+ d\mu - \int f_- d\mu$ whenever it makes sense (i.e. both are not infinite)
-
 
 Consider an earlier example:
 Given $(X, \mathcal M, \mu)$ and $f\in L^+(X, \mu)$, we can define $\mu_f(E) \definedas \int_E f d\mu \in \overline{\RR}$.
