@@ -448,3 +448,8 @@ $$
 \left(\prod_i Q_i \right) A \left( \prod_i P_i \right) = 
 \left[\begin{array}{cc} d & x \\ y & z \end{array}\right]
 $$
+
+where either 
+
+- $x=0$ and $y$ divides $d$, or
+- $y = 0$ and $x$ divides $d$.
