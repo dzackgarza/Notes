@@ -134,9 +134,7 @@ Take $X = \RR$ and $f(x) = 1$. then
 .\end{align*}
 
 
-$L^2(X) \subseteq L^1(X) \implies m(X) < \infty$:
-
-
+3. $L^2(X) \subseteq L^1(X) \implies m(X) < \infty$:
 
 Let $f = \chi_X$, by assumption we can find a constant $M$ such that $\norm{\chi_X}_2 \leq M \norm{\chi_X}_1$. 
 
