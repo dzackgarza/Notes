@@ -1,4 +1,6 @@
-
+---
+title: Qualifying Exam Review
+---
 
 !include "2017 Fall.md"
 
