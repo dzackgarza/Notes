@@ -2,16 +2,6 @@
 title: Combinatorics Review
 subtitle: UCSD Math 184
 date: June 10, 2019
-output:
-  custom_document:
-    path: Review.tex
-    toc: true
-    pdf_engine: xelatex
-    template: /home/zack/Notes/Latex/pandoc_template.tex
-    pandoc_args: ["-t", "latex", "-r", "markdown+tex_math_single_backslash+simple_tables+table_captions+yaml_metadata_block+smart+blank_before_blockquote+backtick_code_blocks", "--toc", "--toc-depth=2"]
-export_on_save:
-  pandoc: true
-  custom_document: true
 ---
 
 # Formulae
