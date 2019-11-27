@@ -409,7 +409,9 @@ P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array
 \left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
 \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array}\right] \\
 &=
-.\end{align*}
+\left[\begin{array}{cc} s\ell_2 - t\ell_1 & -ts + st \\ \ell_1 \ell_2 - \ell_2 \ell_1 & -t\ell_1 + s\ell_2  \end{array}\right]
+,\end{align*}
 
+which just says that we need to pick $\ell_1, \ell_2$ such that $s\ell_1 - t\ell_2 = 1$.
 
 
