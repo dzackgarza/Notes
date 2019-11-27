@@ -47,6 +47,8 @@ Some other notions to look up:
 - Conformal maps
 - Analytic
 - Theorem: Analytic $\implies$ conformal
+- The Sterographic projection. Is it conformal?
+- Branch points and branch cuts
 - 
 
 # Preliminary Notions
