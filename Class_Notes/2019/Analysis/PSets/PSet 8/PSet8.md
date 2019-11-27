@@ -219,7 +219,7 @@ To see that the inclusion is strict, take $\vector a \definedas \theset{j\inv}_{
 
 2. $\ell^2(\NN) \subset \ell^\infty(\NN)$:
 
-This follows from the contrapositive: if $\vector a$ is a sequence with unbounded terms, then $\norm{\vector a}_2 = \sum a_j^2$ can not be finite, since convergence would require that $a_j^2 \to 0$ and thus $a_j \to 0$.
+This follows from the contrapositive: if $\vector a$ is a sequence with unbounded terms, then $\norm{\vector a}_2 = \sum \abs{a_j}^2$ can not be finite, since convergence would require that $\abs{a_j}^2 \to 0$ and thus $\abs{a_j} \to 0$.
 
 # Problem 4
 
