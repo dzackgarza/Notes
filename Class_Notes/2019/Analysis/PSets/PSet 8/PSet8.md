@@ -182,7 +182,10 @@ The claim is that we can choose $N$ large enough such that when we write $f = (f
 
 To see that $g_N \in L^\infty(X)$, we can just note that since each $g_n$ is $C_c^0$, they are all **bounded**, say by $M <\infty$, in which case $\norm{g_N}_\infty \leq M < \infty$.
 
-Letting $\varepsilon > 0$, we can now take $N$ large enough such that $\norm{f - g_N}_2 < \varepsilon$ and write $f = (f- g_N) + g_N$
+To see that $g_N \in L^1(X)$, we can use the fact that $\norm{f-g_N}_2 \leq \norm{f}_2 + \norm{g_N}_2 < \infty$, so $f-g_N \in L^2(X)$.
+
+TODO
+
 
 
 # Problem 3
