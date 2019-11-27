@@ -446,5 +446,5 @@ In a PID, "to divide is to contain" for ideals, so this generates a sequence of 
 This means that after finitely many steps, we obtain a matrix
 $$
 \left(\prod_i Q_i \right) A \left( \prod_i P_i \right) = 
-\left[\begin{array}{cc} d & 0 \\ 0 & 0 \end{array}\right]
+\left[\begin{array}{cc} d & x \\ y & z \end{array}\right]
 $$
