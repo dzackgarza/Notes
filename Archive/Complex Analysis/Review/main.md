@@ -44,7 +44,8 @@ $\mathbb{H}$, $f$ will denote a complex function.
 
 Some other notions to look up:
 
-- 
+- Conformal maps
+- Analytic
 
 # Preliminary Notions
 
