@@ -109,7 +109,7 @@ $$
 \norm{f}_2^2 = \int_0^1 x^{-\frac 1 4} < \infty \qquad \text{by the $p$ test,}
 $$
 
-while $\norm{f}_\infty > M$ for any finite $M$, since $f$ is unbounded in neighborhoods of 0. 
+while $\norm{f}_\infty > M$ for any finite $M$, since $f$ is unbounded in neighborhoods of 0, so $\norm{f}_\infty = \infty$.
 
 
 ### Part ii
