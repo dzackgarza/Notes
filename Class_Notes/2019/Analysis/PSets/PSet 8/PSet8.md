@@ -89,18 +89,29 @@ $$
 
 $\exists f \in L^1(X)\setminus L^2(X)$: 
 
-Let $E_k = X \intersect B(t_k)$ where $B(t_k)$ is a ball centered at the origin (with radius depending on a parameter), $A_k = E_{k}\setminus E_{k-1}$ to be disjoint annuli where $t_k$ is chosen for each $k$ such that $m(A_k) = 1$. 
+Let $X = [-1, 1]$ and consider $f(x) = \abs{x}^{-\frac 1 2}$. Then 
+$$
+\norm{f}_1 = \int_{-1}^1 \abs{f} = 2 \int_0^1 x^{-\frac 1 2} = 4 < \infty$,
+$$
 
-> (Note: since $m(X) < \infty$, $X \subseteq \union A_k$.)
+while 
 
-Let $s: \NN \to \CC$ be arbitrary, then define $f: X \to \CC$ by $f(x) = \sum_k s(k) ~\chi_{A_k}$ so we have
+$$
+\norm{f}_2^2 = \int_{-1}^1 \abs{x} = 2 \lim_{\varepsilon \to 0} \int_\varepsilon^1 \frac 1 x = ?
+$$
 
-\begin{align*}
-&\norm{f}_1 = \int_X \abs {f} = \sum_k \int_{A_k} s(k) = \sum_k s(k) \int_{A_k} 1 = \sum_k s(k) \\
-&\norm{f}_2 = \sum_k s(k)^2 
-.\end{align*}
+<!--Let $E_k = X \intersect B(t_k)$ where $B(t_k)$ is a ball centered at the origin (with radius depending on a parameter), $A_k = E_{k}\setminus E_{k-1}$ to be disjoint annuli where $t_k$ is chosen for each $k$ such that $m(A_k) = 1$. -->
 
-Now setting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$, so $f\not\in L^2(X)$.
+<!--> (Note: since $m(X) < \infty$, $X \subseteq \union A_k$.)-->
+
+<!--Let $s: \NN \to \CC$ be arbitrary, then define $f: X \to \CC$ by $f(x) = \sum_k s(k) ~\chi_{A_k}$ so we have-->
+
+<!--\begin{align*}-->
+<!--&\norm{f}_1 = \int_X \abs {f} = \sum_k \int_{A_k} s(k) = \sum_k s(k) \int_{A_k} 1 = \sum_k s(k) \\-->
+<!--&\norm{f}_2 = \sum_k s(k)^2 -->
+<!--.\end{align*}-->
+
+<!--Now setting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$, so $f\not\in L^2(X)$.-->
 
 $\exists f \in L^2(X)\setminus L^\infty(X)$:
 
