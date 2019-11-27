@@ -60,15 +60,15 @@ Exponential Generating Functions
 ## Sequence Lookup
 | Sequence  | OGF  | EGF
 |---|---| ---|
-| $a_n = \indicator{n=k}$  | $x^k$  | $\frac{x^k}{k!}$
-| $a_n = \indicator{n \geq 0} (\NN)$  | $\frac 1 {1-x}$  | $e^x$
-| $a_n = \indicator{n \geq 1} (\NN_{\geq 1})$  | $\frac x {1-x}$  | $e^x - 1$
-| $a_n = \indicator{n \geq 2} (\NN_{\geq 2})$  | $\frac {x^2} {1-x}$  | $e^x - 1 - x$
-| $a_n = \indicator{n \geq k}$  | $\frac {x^k} {1-x}$  | $e^x - \displaystyle\sum_{n=0}^k \frac{x^n}{n!} =\displaystyle\sum_{n=k+1}^\infty \frac{x^n}{n!}$
-| $a_n = \indicator{n \leq k}$ | $1+x+x^2+\cdots +x^k$ |$1 + x + \frac{x^2}{2} + \cdots +\frac{x^k}{k!}$
-| $a_n = \indicator{n\text{ even}}$  | $\frac{1}{1-x^2}$  | $\cosh(x)$
-| $a_n = \indicator{n\text{ odd}}$  | $\frac{x}{1-x^2}$  | $\sinh(x)$
-| $a_n = \indicator{n = k, k^2, \cdots}$  | $\frac 1 {1-x^k}$  | $e^{kx}$
+| $a_n = \indic{n=k}$  | $x^k$  | $\frac{x^k}{k!}$
+| $a_n = \indic{n \geq 0} (\NN)$  | $\frac 1 {1-x}$  | $e^x$
+| $a_n = \indic{n \geq 1} (\NN_{\geq 1})$  | $\frac x {1-x}$  | $e^x - 1$
+| $a_n = \indic{n \geq 2} (\NN_{\geq 2})$  | $\frac {x^2} {1-x}$  | $e^x - 1 - x$
+| $a_n = \indic{n \geq k}$  | $\frac {x^k} {1-x}$  | $e^x - \displaystyle\sum_{n=0}^k \frac{x^n}{n!} =\displaystyle\sum_{n=k+1}^\infty \frac{x^n}{n!}$
+| $a_n = \indic{n \leq k}$ | $1+x+x^2+\cdots +x^k$ |$1 + x + \frac{x^2}{2} + \cdots +\frac{x^k}{k!}$
+| $a_n = \indic{n\text{ even}}$  | $\frac{1}{1-x^2}$  | $\cosh(x)$
+| $a_n = \indic{n\text{ odd}}$  | $\frac{x}{1-x^2}$  | $\sinh(x)$
+| $a_n = \indic{n = k, k^2, \cdots}$  | $\frac 1 {1-x^k}$  | $e^{kx}$
 | $a_n = {n \choose c}$  | $x^c \left(\frac{1}{1-x}\right)^{c+1}$  | $\frac{1}{c!}x^ce^x$
 | $a_n = {n+c \choose n}$  | $ex$  | $\left( \frac 1 {1-x} \right)^c$
 | $a_n = {c \choose n}$  | $$  | $(1+x)^c$
