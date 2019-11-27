@@ -12,4 +12,4 @@ date: June 10, 2019
 
 !include sections/Appendix.md
 
-<!--!include sections/Dictionary.md-->
+!include sections/Dictionary.md
