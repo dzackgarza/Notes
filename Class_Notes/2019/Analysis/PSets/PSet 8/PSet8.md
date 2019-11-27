@@ -97,7 +97,7 @@ $$
 while 
 
 $$
-\norm{f}_2^2 = \int_{-1}^1 \abs{x} = 2 \lim_{\varepsilon \to 0} \int_\varepsilon^1 \frac 1 x = ?
+\norm{f}_2^2 = \int_{-1}^1 \abs{x} = 2 \int_0^1 \frac 1 x \to \infty.
 $$
 
 <!--Let $E_k = X \intersect B(t_k)$ where $B(t_k)$ is a ball centered at the origin (with radius depending on a parameter), $A_k = E_{k}\setminus E_{k-1}$ to be disjoint annuli where $t_k$ is chosen for each $k$ such that $m(A_k) = 1$. -->
