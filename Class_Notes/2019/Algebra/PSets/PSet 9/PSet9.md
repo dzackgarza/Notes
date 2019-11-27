@@ -396,7 +396,10 @@ P_1 A = \left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
 
 where we now only have to choose $\ell_1, \ell_2$ so that the first matrix appearing is invertible.
 
-But this can be done by writing $a = d t_1$ and $c = d t_2$; then $t_1, t_2$ are coprime by construction (since $d$ was the greatest common divisor of $a,c$), so we can find $\ell_1, \ell_2$ such that $t_1 \ell_1 + t_2 \ell_2 = 1$ and taking these to be our $\ell_1, \ell_2$.
+But this can be done by writing $a = d \ell_1$ and $c = d \ell_2$; then 
+$$
+d = sa + tc =  s d\ell_1 + t d \ell_2 \implies 1 = s \ell_1 + t \ell_2 
+$$
 
 This lets us engineer an inverse matrix
 
