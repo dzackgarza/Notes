@@ -46,6 +46,8 @@ Some other notions to look up:
 
 - Conformal maps
 - Analytic
+- Theorem: Analytic $\implies$ conformal
+- 
 
 # Preliminary Notions
 
