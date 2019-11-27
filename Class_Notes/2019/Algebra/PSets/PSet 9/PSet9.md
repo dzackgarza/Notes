@@ -361,7 +361,7 @@ which shows that any solution is unique.
 We want to show that $A\vector x = \vector b$ has a nontrivial solution $\iff \rank(A) < m$.
 
 $\implies$:
-Suppose $A\vector v = \vector 
+Suppose $A\vector v = \vector b$.
 
 
 # Problem 6
