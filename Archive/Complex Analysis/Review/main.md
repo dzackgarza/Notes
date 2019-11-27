@@ -148,8 +148,7 @@ Can also be used for integrals of the form $\int f(z) \cos az dz$ or
 $\int f(z) \sin az dz$, just take real/imaginary parts of $e^{iaz}$
 respectively.
 
-Conformal Maps
---------------
+# Conformal Maps
 
 1.  Linear Fractional Transformations:
 
