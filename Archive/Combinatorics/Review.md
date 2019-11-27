@@ -10,6 +10,6 @@ date: June 10, 2019
 
 !include sections/Posets.md
 
-<!--!include sections/Appendix.md-->
+!include sections/Appendix.md
 
 <!--!include sections/Dictionary.md-->
