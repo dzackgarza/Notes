@@ -72,10 +72,11 @@ Italian school producing incorrect proofs:
 
 # The Math
 
-$\textbf{Definition}:$ Given a field $\mathbb{K}$ and a projective space $\mathbb{P}^n = \{ (a_i)_n \in \mathbb{K} / 0 \} /\sim$ where $(a_i)_n \sim (\lambda a_i)_n$ for $\lambda \in \mathbb{K}/0$, if $F \in \mathbb{K}[\{x_i\}_n]$ is a polynomial in $n$ variables, a **projective variety** is given by $Z(F) = \{ (a_i)_n \in \mathbb{P}^n \vert F((a_i)_n) = 0\}$, the zero set of this polynomial.
+**Definition**:
+Given a field $\mathbb{K}$ and a projective space $\mathbb{P}^n = \{ (a_i)_n \in \mathbb{K} / 0 \} /\sim$ where $(a_i)_n \sim (\lambda a_i)_n$ for $\lambda \in \mathbb{K}/0$, if $F \in \mathbb{K}[\{x_i\}_n]$ is a polynomial in $n$ variables, a **projective variety** is given by $Z(F) = \{ (a_i)_n \in \mathbb{P}^n \vert F((a_i)_n) = 0\}$, the zero set of this polynomial.
 
 *Examples*:
- 
+
 $$\mathbb{P}(\mathbb{C}) = \mathbb{C}\cup\inf \cong S^2$$
 $$ \mathbb{P}^2(\mathbb{C}) \cong S^1 \times S^1 $$
 
