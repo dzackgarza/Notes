@@ -217,7 +217,7 @@ where we just note that the first portion of the sum is a finite sum of finite n
 
 To see that the inclusion is strict, take $\vector a \definedas \theset{j\inv}_{j=1}^\infty$; then $\norm{\vector a}_2 < \infty$ by the $p$-test by $\norm{\vector a}_1 = \infty$ since it yields the harmonic series.
 
-2. $\ell^2(\NN) \subset \ell^\infy(\NN)$:
+2. $\ell^2(\NN) \subset \ell^\infty(\NN)$:
 
 This follows from the contrapositive: if $\vector a$ is a sequence with unbounded terms, then $\norm{\vector a}_2 = \sum a_j^2$ can not be finite, since convergence would require that $a_j^2 \to 0$ and thus $a_j \to 0$.
 
