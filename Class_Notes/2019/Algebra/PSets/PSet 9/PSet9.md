@@ -152,6 +152,28 @@ We say $A \sim B$ in $M(n\times n, R)$ $\iff$ $B = PAQ$ with $P \in \GL(n, R), Q
 
 # Problem 4
 
+
+**Lemma**:
+The rank-nullity theorem holds over division rings.
+
+Proof:
+A linear map $\phi: D^m \to D^n$ induces a short exact sequence:
+$$
+0 \to \ker \phi \to D^m \mapsvia{\phi} \im\phi \to 0
+$$
+
+But every module over a division ring is free; in particular, $\im \phi \leq D^n$ is a module over $D$ and is thus free.
+So by a lemma in class, since the right-most term is a free module, this sequence splits and we have
+$$
+D^m \cong \ker \phi \oplus \im \phi
+$$
+
+and taking dimensions yields 
+$$
+m = \dim \ker(\phi) + \rank(\phi).
+$$
+$$
+
 1. $A \in M(n\times m, D)$ has a left inverse $B \iff \rank(A) = m$:
 
 $\implies$:
