@@ -446,16 +446,32 @@ then doing column operations (i.e. right-multiplying by some $R_1$) to obtain a 
 $$
 Q_1 P_1 A R_1 \definedas 
 \left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
-\left[\begin{array}{cc} s' & \ell_3 \\ t' & \ell_4 \end{array}\right]
-\left[\begin{array}{cc} d_1 &  \\ ? & ? \end{array}\right]
+\left[\begin{array}{cc} s' & \ell_3 \\ t' & \ell_4 \end{array}\right] = 
+\left[\begin{array}{cc} d_1 &  d\ell_3 + (sb + td)\ell_4 \\ ? & ? \end{array}\right]
 $$
 
 where again $\ell_3, \ell_4$ are parameters that can be chosen to make $R_1$ invertible.
 
-We can then repeat the first part again to obtain a $d_2$ that divides $d_1$, doing row operations, and obtaining a matrix of the form
-$$Q_2Q_1 P_1 A  P_2 \definedas \left[\begin{array}{cc} d & ? \\ 0 & ? \end{array}\right]$$
+We can again observe that $d_1$ divides the top-left and (now) the top-right entry, which means we can find a $k'$ such that 
 
-In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals $(d) \supseteq (d_1) \supseteq (d_2) \supseteq \cdots$, and since every PID is Noetherian, this increasing chain of ideals eventually stabilizes.
+\begin{align*}
+Q_1 P_1 A R_1 R_2 \definedas 
+\left[\begin{array}{cc} d_1 &  d\ell_3 + (sb + td)\ell_4 \\ ? & ? \end{array}\right]
+\left[\begin{array}{cc} 1 & 0 \\ -k' & 1 \end{array}\right] =
+\left[\begin{array}{cc} d_1 & 0 \\ ? & ? \end{array}\right]
+,\end{align*}
+
+which puts us back in the original situation.
+
+We can then continue by obtaining a $d_2$ that divides $d_1$, doing row operations, and obtaining a matrix of the form
+$$Q_2Q_1 P_1 A  P_2 \definedas \left[\begin{array}{cc} d_2 & ? \\ 0 & ? \end{array}\right],$$
+and so on.
+
+In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals 
+$$
+(d) \supseteq (d_1) \supseteq (d_2) \supseteq \cdots
+$$ 
+and since every PID is Noetherian, this increasing chain of ideals eventually stabilizes.
 
 This means that after finitely many steps, we find $d_{i+1} \definedas \gcd(d_i, \cdots) = d_i$, 
 
