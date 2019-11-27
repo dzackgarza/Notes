@@ -342,11 +342,11 @@ $\impliedby$:
 
 Suppose that $\rank(A) = m$. 
 Then by rank-nullity, $\dim \ker A = 0$, so $\ker A = \theset{\vector 0}$.
-Now suppose $\vector v_1, \vector v_2$ are potentially distinct solutions to $A\vector x = \vector 0$.
+Now suppose $\vector v_1, \vector v_2$ are potentially distinct solutions to $A\vector x = \vector b$.
 
 Then,
 \begin{align*}
-A \vector v_1 &= A \vector v_2 = \vector 0 \\
+A \vector v_1 &= A \vector v_2 = \vector b \\
 &\implies A \vector v_1 - A \vector v_2 =  \vector 0 \\
 &\implies A (\vector v_1 - \vector v_2) = 0 \\
 &\implies \vector v_1 - \vector v_2 \in \ker A \\
@@ -358,7 +358,10 @@ which shows that any solution is unique.
 
 ## Part 4
 
+We want to show that $A\vector x = \vector b$ has a nontrivial solution $\iff \rank(A) < m$.
 
+$\implies$:
+Suppose $A\vector v = \vector 
 
 
 # Problem 6
