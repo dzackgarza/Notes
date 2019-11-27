@@ -186,9 +186,17 @@ To see that $g_N \in L^1(X)$, we can use the fact that $\norm{f-g_N}_2 \leq \nor
 
 TODO
 
-
-
 # Problem 3
+
+For notational convenience, it suffices to prove this for $\ell^p(\NN)$, where we re-index each sequence in $\ell^p(\ZZ)$ using a bijection $\ZZ \to \NN$.
+
+> Note: this technically reorders all sums appearing, but since we are assuming absolute convergence everywhere, this can be done. One can also just replace $\sum_{j=n}^m \abs{a_j}^p$ with $\sum_{n\leq \abs{j} \leq m} \abs{a_j}^p$ in what follows.
+
+1. $\ell^1(\NN) \subset \ell^2(\NN)$:
+
+Suppose $\sum_j \abs a_j < \infty$, then its tails go to zero, so choose $N$ large enough so that $\sum_{n=N}^\infty \abs a_j < \varepsilon$.
+It is then the case that $\sum_{n=1}^{N-1} \abs {a_j} \definedas M < \infty$, since this is a sum of finitely many finite numbers.
+$$
 
 # Problem 4
 
