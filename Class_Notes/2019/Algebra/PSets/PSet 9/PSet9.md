@@ -384,12 +384,13 @@ Then the sub-matrix obtained by deleting the row and column containing $d_1$ is 
 Moreover, note that if we are able to perform this reduction by a series of left and right multiplications, this will yields $A_1 = P_1 A Q_1$, and inductively we will have $A_{r} = (P_r \cdots P_2 P_1) A (Q_1 Q_2 \cdots Q_R)$, so each matrix will remain equivalent at every step.
 
 Since $R$ is a PID, it is also a Euclidean domain, so we can compute greatest common divisors.
-Let $d = \gcd(a, b)$, so we can write $d = as + bt$ for some $s, t\in R$.
+Let $d = \gcd(a, b)$, so we can write $d = sa + tb$ for some $s, t\in R$.
 We would like to construct an operation that replaces $a$ in $M$ with $d$.
-So we consider
+So let $\ell_1, \ell_2$ be parameters to be determined; we can then compute
 
 \begin{align*}
-\left[\begin{array} 0 & 0 \\ 0 & 0 \end{array}\right]
+\left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
+\left[\begin{array}{cc} a & b \\ c & d \end{array}\right]
 .\end{align*}
 
 
