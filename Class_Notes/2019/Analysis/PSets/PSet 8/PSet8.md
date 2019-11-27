@@ -162,6 +162,13 @@ Let $f\in L^1(X) \intersect L^\infty(X)$ and $M \definedas \norm{f}_\infty$, the
 \norm{f}_2^2 = \int_X \abs{f}^2 = \int_X \abs{f} \abs{f} \leq \int_X M \abs{f} = M \int \abs{f} \definedas \norm{f}_\infty \norm{f}_1 < \infty.
 \end{equation}
 
+Note that taking square roots in (1) immediately yields
+
+\begin{align*}
+\|f\|_{L^{2}(X)} \leq\|f\|_{L^{1}(X)}^{1 / 2}\|f\|_{L^{\infty}(X)}^{1 / 2}
+.\end{align*}
+
+
 2. $L^2(X) \subset L^1(X) + L^\infty(X)$:
 
 # Problem 3
