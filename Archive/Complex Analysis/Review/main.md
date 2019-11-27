@@ -41,6 +41,8 @@ $\mathbb{H}$, $f$ will denote a complex function.
     A function $u(x,y)$ is harmonic if it satisfies Laplace's equation,
     $$\Delta u = u_{xx} + u_{yy} = 0$$
 
+# Preliminary Notions
+
 What is the Complex Derivative?
 -------------------------------
 
