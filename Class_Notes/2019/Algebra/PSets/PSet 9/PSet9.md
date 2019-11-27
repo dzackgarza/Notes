@@ -385,7 +385,8 @@ Moreover, note that if we are able to perform this reduction by a series of left
 
 > Note: since $R$ is a PID, it is also a Euclidean domain, so we can compute greatest common divisors.
 
-Our first goal is to reduce the top-left entry and eliminate the bottom-left entry.
+We'll first reduce the top-left entry and eliminate the bottom-left entry.
+
 Let $d = \gcd(a, c)$, so we can write $d = sa + tc$ for some $s, t\in R$.
 We would like to construct an operation that replaces $a$ in $M$ with $d$.
 
@@ -431,4 +432,6 @@ Q_1 A P_1 \definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
 \left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
 .\end{align*}
 
-Now we can consider eli
+We now carry out the same process with the top *row* instead of the first *column*.
+This begins by computing $d^1 = \gcd(d, sb + td)$, where we can immediately note that $d^1$ divides $d$, and then right-multiplying to obtain a matrix of the form 
+$\left[\begin{array}{cc} d & 0 \\ ? & ? \end{array}\right]$.
