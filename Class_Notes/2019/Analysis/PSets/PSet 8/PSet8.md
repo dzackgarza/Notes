@@ -159,7 +159,7 @@ $\qed$
 
 Let $f\in L^1(X) \intersect L^\infty(X)$ and $M \definedas \norm{f}_\infty$, then
 $$
-\norm{f}_2 = \int_X \abs{f}^2 = \int_X \abs{f} \abs{f} \leq \int_X M \abs{f} = M \int \abs{f} \definedas \norm{f}_\infty \norm{f}_1 < \infty.
+\norm{f}_2^2 = \int_X \abs{f}^2 = \int_X \abs{f} \abs{f} \leq \int_X M \abs{f} = M \int \abs{f} \definedas \norm{f}_\infty \norm{f}_1 < \infty.
 $$
 
 # Problem 3
