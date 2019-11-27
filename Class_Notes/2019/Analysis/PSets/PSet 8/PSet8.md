@@ -194,8 +194,16 @@ For notational convenience, it suffices to prove this for $\ell^p(\NN)$, where w
 
 1. $\ell^1(\NN) \subset \ell^2(\NN)$:
 
-Suppose $\sum_j \abs a_j < \infty$, then its tails go to zero, so choose $N$ large enough so that $\sum_{n=N}^\infty \abs a_j < \varepsilon$.
-It is then the case that $\sum_{n=1}^{N-1} \abs {a_j} \definedas M < \infty$, since this is a sum of finitely many finite numbers.
+Suppose $\sum_j \abs a_j < \infty$, then its tails go to zero, so choose $N$ large enough so that $j\geq N \implies \abs{a_j} < 1$. 
+But then $\abs{a_j}^2 < \abs{a_j}$, and thus we have
+
+\begin{align*}
+\sum_j \abs{a_j}^2 &= \sum_{j=1}^N \abs{a_j}^2 + \sum_{j=N+1}^\infty \abs{a_j}^2 \\
+&\leq \sum_{j=1}^N \abs{a_j}^2 + \sum_{j=N+1}^\infty \abs{a_j}  \\
+&\leq M + \sum_{j=N+1}^\infty \abs{a_j}  \\
+&\leq M + \sum_{j=1}^\infty \abs{a_j}  \\
+.\end{align*}
+
 $$
 
 # Problem 4
