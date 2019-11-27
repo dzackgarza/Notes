@@ -88,8 +88,8 @@ $$
 $$
 which are all of the functions on pairs of elements in the poset that take some values on comparable elements and are just zero otherwise. Some examples:
 
-- The indicator/"dirac delta" function: $\delta(x,y) = \indicator{x=y}$
-- The zeta function: $\zeta(x,y) = \indicator{x \leq y}$
+- The indicator/"dirac delta" function: $\delta(x,y) = \indic{x=y}$
+- The zeta function: $\zeta(x,y) = \indic{x \leq y}$
 
 This is an *algebra* because it is a vector space over $\RR$, and has a bilinear product:
 $$
