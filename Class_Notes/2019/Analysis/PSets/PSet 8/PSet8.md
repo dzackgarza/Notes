@@ -174,7 +174,16 @@ Note that taking square roots in (1) immediately yields
 2. $L^2(X) \subset L^1(X) + L^\infty(X)$:
 
 Let $f\in L^2(X)$. 
-Noting that continuous functions with compact support are dense in $L^2(X)$, take an approximating sequence $\theset{g_n} \subseteq C_c^0(X)$ with $\norm{g_n - f} \to 0$.
+Noting that continuous functions with compact support are dense in $L^2(X)$, take an approximating sequence $\theset{g_n} \subseteq C_c^0(X)$ with $\norm{g_n - f}_2 \to 0$.
+
+
+The claim is that we can choose $N$ large enough such that when we write $f = (f - g_N) + g_N$, we will have $\norm{f - g_N}_1 < \infty$ and $\norm{g_N}_\infty < \infty$, which establishes the desired result.
+
+
+To see that $g_N \in L^\infty(X)$, we can just note that since each $g_n$ is $C_c^0$, they are all **bounded**, say by $M <\infty$, in which case $\norm{g_N}_\infty \leq M < \infty$.
+
+Letting $\varepsilon > 0$, we can now take $N$ large enough such that $\norm{f - g_N}_2 < \varepsilon$ and write $f = (f- g_N) + g_N$
+
 
 # Problem 3
 
