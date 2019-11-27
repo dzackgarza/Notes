@@ -5,9 +5,6 @@ date: June 2017
 title: Complex Analysis
 ---
 
-Notes
-=====
-
 # Definitions
 
 In these notes, $C$ generally denotes some closed contour, $\mathbb{H}$
