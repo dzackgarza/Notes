@@ -182,11 +182,11 @@ Conformal Maps
       Rectangles          $\mapsto$  portions of wedges/sectors
       ------------------ ----------- ----------------------------
 
-    ![image](ez-line){width="\\linewidth"}
+    ![image](ez-line.png){width="\\linewidth"}
 
-    ![image](ez-grid){width="\\linewidth"}
+    ![image](ez-grid.png){width="\\linewidth"}
 
-    ![image](ez-rect){width="\\linewidth"}
+    ![image](ez-rect.png){width="\\linewidth"}
 
 5.  $\log: \mathbb{H} \mapsto \mathbb{R} + i[0, \pi]$
 
