@@ -408,7 +408,7 @@ P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array
 \left[\begin{array}{cc} s\ell_2 - t\ell_1 & -ts + st \\ \ell_1 \ell_2 - \ell_2 \ell_1 & -t\ell_1 + s\ell_2  \end{array}\right]
 ,\end{align*}
 
-which just says that we need to pick $\ell_1, \ell_2$ such that $s\ell_1 - t\ell_2 = 1$.
+which just says that we need to pick $\ell_1, \ell_2$ such that $s\ell_1 - t\ell_2 = 1$, since the off-diagonal entries vanish because $R$ is commutative.
 
 
 But this can be done by writing $a = d \ell_1$ and $c = d \ell_2$; then 
