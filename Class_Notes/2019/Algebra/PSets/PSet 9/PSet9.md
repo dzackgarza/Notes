@@ -434,4 +434,4 @@ Q_1 A P_1 \definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
 
 We now carry out the same process with the top *row* instead of the first *column*.
 This begins by computing $d^1 = \gcd(d, sb + td)$, where we can immediately note that $d^1$ divides $d$, and then right-multiplying to obtain a matrix of the form 
-$\left[\begin{array}{cc} d & 0 \\ ? & ? \end{array}\right]$.
+$Q_1 A P_1 P_2 \definedas \left[\begin{array}{cc} d & 0 \\ ? & ? \end{array}\right]$.
