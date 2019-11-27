@@ -97,7 +97,7 @@ $$
 while 
 
 $$
-\norm{f}_2^2 = \int_{-1}^1 \abs{x}\inv  = 2 \int_0^1 x\inv \to \infty \qquad \text{ by the $p$ test. }
+\norm{f}_2^2 = \int_{-1}^1 {x}\inv  \to \infty \qquad \text{ by the $p$ test. }
 $$
 
 2. $\exists f \in L^2(X)\setminus L^\infty(X)$:
