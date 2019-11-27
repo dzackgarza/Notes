@@ -429,17 +429,31 @@ So write $k_1 d = \ell_1 a + \ell_2 c$, we can then perform a row operation by l
 
 
 \begin{align*}
-Q_1 A P_1 \definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
+Q_1  P_1 A\definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
 \left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right] =
 \left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
 .\end{align*}
 
 We now carry out the same process with the top *row* instead of the first *column*.
-This begins by computing $d_1 = \gcd(d, sb + td)$, where we can immediately note that $d_1$ divides $d$, and then doing column operations (i.e. right-multiplying by some $P_2$) to obtain a matrix of the form 
-$$Q_1 A P_1 P_2 \definedas \left[\begin{array}{cc} d_1 & 0 \\ ? & ? \end{array}\right]$$
+This begins by computing $d_1 = \gcd(d, sb + td)$, where we can immediately note that $d_1$ divides $d$.
+
+We then write 
+$$
+d_1 = d s' + (sb + td)t'
+$$,
+
+then doing column operations (i.e. right-multiplying by some $R_1$) to obtain a matrix of the form 
+$$
+Q_1 P_1 A R_1 \definedas 
+\left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
+\left[\begin{array}{cc} s' & \ell_3 \\ t' & \ell_4 \end{array}\right]
+\left[\begin{array}{cc} d_1 &  \\ ? & ? \end{array}\right]
+$$
+
+where again $\ell_3, \ell_4$ are parameters that can be chosen to make $R_1$ invertible.
 
 We can then repeat the first part again to obtain a $d_2$ that divides $d_1$, doing row operations, and obtaining a matrix of the form
-$$Q_2Q_1 A P_1 P_2 \definedas \left[\begin{array}{cc} d & ? \\ 0 & ? \end{array}\right]$$
+$$Q_2Q_1 P_1 A  P_2 \definedas \left[\begin{array}{cc} d & ? \\ 0 & ? \end{array}\right]$$
 
 In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals $(d) \supseteq (d_1) \supseteq (d_2) \supseteq \cdots$, and since every PID is Noetherian, this increasing chain of ideals eventually stabilizes.
 
