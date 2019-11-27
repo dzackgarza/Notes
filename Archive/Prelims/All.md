@@ -2,7 +2,7 @@
 title: Qualifying Exam Review
 ---
 
-!include "sections/2017 Fall.md"
+!include sections/2017 Fall.md
 
 ## Notes
 - Go through Pugh
