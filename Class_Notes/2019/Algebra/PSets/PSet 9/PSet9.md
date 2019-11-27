@@ -438,3 +438,5 @@ $$Q_1 A P_1 P_2 \definedas \left[\begin{array}{cc} d & 0 \\ ? & ? \end{array}\ri
 
 We can then repeat the first part again to obtain a $d_2$ that divides $d_1$, doing row operations, and obtaining a matrix of the form
 $$Q_2Q_1 A P_1 P_2 \definedas \left[\begin{array}{cc} d & ? \\ 0 & ? \end{array}\right]$$
+
+In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals $(d) \divides (d_1) \supseteq (d_2) \supseteq \cdots$, and since every PID is Noetherian, this increasing chain of ideals eventually stabilizes.
