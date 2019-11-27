@@ -172,6 +172,7 @@ and taking dimensions yields
 $$
 m = \dim \ker(\phi) + \rank(\phi).
 $$
+$\qed$
 
 1. $A \in M(n\times m, D)$ has a left inverse $B \iff \rank(A) = m$:
 
@@ -223,14 +224,14 @@ which contradicts $\inner{\vector b_1}{\vector a_2} = 0$ as required by the prev
 $\impliedby$:
 Suppose $\rank(A) = m$, so $A$ has $m$ linearly independent columns -- note that this is *all* of its columns.
 
-> Note: since row ranks equal column ranks, this also says that $A$ has $m$ linearly independent rows, so we must have $n\geq m$.
+> Note: since row rank equals column rank, this also says that $A$ has $m$ linearly independent rows, so we must have $n\geq m$.
 
 Viewing $A$ as a map from $D^m \to D^n$, we find that $\dim \im A = m \leq n$.
-In particular, $\ker A = \theset{\vector 0}$; otherwise this would force $\dim \im A < m$. 
-So $A$ represents an injective map $f_A: D^m \to D^n$.
+In particular, from the rank nullity theorem, we have $m = \dim \ker \phi + \rank(\phi) = \dim \ker \phi + m \implies \dim \ker \phi = 0$.
+So $\ker A = \theset{\vector 0}$, and  $A$ represents an injective map $f_A: D^m \to D^n$.
 
-But any injective set map $f: S_1\to S_2$ has a left-inverse $g$ such that $g\circ f = \id_{S_1}$. 
-So $f_A: D^m \to D^n$ as a set map has a left inverse $g_B: D^n \to D^m$ set map satisfying $g_B\circ f_A = \id_{D^m}$.
+But any injective *set* map $f: S_1\to S_2$ has a left-inverse $g$ such that $g\circ f = \id_{S_1}$. 
+So $f_A: D^m \to D^n$ *as a set map* has a left inverse $g_B: D^n \to D^m$ satisfying $g_B\circ f_A = \id_{D^m}$.
 But then taking the matrix associated to $g_B$ yields a matrix $B \in M(m\times n, D)$ such that $BA = I_m$ as desired.
 $\qed$
 
