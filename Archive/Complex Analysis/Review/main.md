@@ -52,7 +52,10 @@ Some other notions to look up:
 - Loxodromic transformations
 - Horocycles
 - Analytic Continuation
-- 
+- The complex logarithm
+- Mobius transformations
+- Curvature
+- Angular Excess
 
 # Preliminary Notions
 
