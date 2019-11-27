@@ -25,7 +25,7 @@
   - Wiles and Fermat's Last Theorem
 
 Narrative - building Algebraic Geometry in the 20th century
-Include contributions of 
+Include contributions of
 Weil, Zariski, Serre
 Italian school: Castelnuovo, Enriques and Severi
 
@@ -43,19 +43,13 @@ The general idea is to shift from considering points of a manifold to certain id
 
 Contributions: Unified many cohomology theories, schemes
 
-
-
-> Schemes are important even for geometry over the complex numbers. Ancient Greek geometers already debated whether or not a circle tangent to a line meets it in a "bigger" point than when two lines cross. In scheme theory the answer is simply "yes." With schemes a point of tangency includes an infinitesimal neighborhood of an ordinary point. 
-
-
+> Schemes are important even for geometry over the complex numbers. Ancient Greek geometers already debated whether or not a circle tangent to a line meets it in a "bigger" point than when two lines cross. In scheme theory the answer is simply "yes." With schemes a point of tangency includes an infinitesimal neighborhood of an ordinary point.
 
 Italian school producing incorrect proofs:
 
 > As for a result that was not simply incorrectly proved, but actually false, there is the case of the [Severi bound](http://www.ams.org/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=PC&pg7=MR&pg8=ET&r=1&review_format=html&s4=severi&s5=massimo&s6=&s7=&s8=All&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq)(*) for the maximum number of singular double points of a surface in P^3. The prediction implies that there are no surfaces in P^3 **of degree 6** with more than 52 nodes, but in fact there are such surfaces in P^3 with 65 nodes such as the Barth sextic
 
 ![img](http://mathworld.wolfram.com/images/gifs/BarthSexticNodes.gif)
-
-
 
 # References
 
@@ -80,8 +74,5 @@ Given a field $\mathbb{K}$ and a projective space $\mathbb{P}^n = \{ (a_i)_n \in
 $$\mathbb{P}(\mathbb{C}) = \mathbb{C}\cup\inf \cong S^2$$
 $$ \mathbb{P}^2(\mathbb{C}) \cong S^1 \times S^1 $$
 
-**Definition** 
+**Definition**
 Singularity
-
-
-
