@@ -121,7 +121,7 @@ Then $\norm{f}_2 < \infty$ but $\norm{f}_1 = \infty$ by the $p$-test.
 
 
 \begin{equation*}
-\norm{f}_2^2 = \int_0^\infty x{-2} < \infty \qquad\text{by the $p$ test,}
+\norm{f}_2^2 = \int_0^\infty x^{-2} < \infty \qquad\text{by the $p$ test,}
 \norm{f}_1 = \int_0^\infty x{-1} \to\infty \qquad\text{by the $p$ test,}
 .\end{equation*}
 
