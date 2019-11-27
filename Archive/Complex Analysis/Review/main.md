@@ -203,7 +203,7 @@ Conformal Maps
 
     Maps the infinite strip to the first quadrant.
 
-    ![$z \mapsfrom \sin w$](sin){width="\\linewidth"}
+    ![$z \mapsfrom \sin w$](sin.png){width="\\linewidth"}
 
 7.  $z\mapsto\frac{i-z}{i+z}: \mathbb{H} \mapsto D^\circ$.
 
