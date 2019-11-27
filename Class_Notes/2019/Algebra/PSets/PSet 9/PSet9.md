@@ -389,7 +389,7 @@ We would like to construct an operation that replaces $a$ in $M$ with $d$.
 So we consider
 
 \begin{align*}
-
+\left[\begin{array} 0 & 0 \\ 0 & 0 \end{array}\right]
 .\end{align*}
 
 
