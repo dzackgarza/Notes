@@ -9,13 +9,13 @@ Students on Panel:
 General Panel Questions:
 
 - Why did you choose a math-related major?
-- What was the most useful class you've taken? 
+- What was the most useful class you've taken?
     - Least useful?
-- Who was your favorite professor? 
+- Who was your favorite professor?
     - Least favorite?
 - Are there any courses you wish you would have taken earlier?
-- What advice (if any) did you receive from Math advisors? 
-    - What advice was particularly useful or true? 
+- What advice (if any) did you receive from Math advisors?
+    - What advice was particularly useful or true?
     - Was there anything that wasn't that useful?
     - How did you act on any advice you were given?
 - Were your surprised by the content of any courses? I.e. were there any that didn't match up with the catalogue description or what your advisors told you about them?
@@ -27,8 +27,8 @@ General Panel Questions:
     - What about courses you wish you'd paired together in the same quarter?
     - What about courses you wish you HADN'T taken at the same time?
 
-
 Format:
+
 - First 30 mins: Panelists talk about classes
 - First 30 mins: Open Q&A session
 
@@ -227,7 +227,7 @@ Important! Read the [undergraduate Math student handbook](https://www.math.ucsd.
 - MATH 195. Introduction to Teaching in Mathematics (4)
 - MATH 196. Student Colloquium (1)
     - Zack (Novak)
-        - Description: One professors comes in each week and speaks for about an hour on a cool topic, usually involving their actual research. 
+        - Description: One professors comes in each week and speaks for about an hour on a cool topic, usually involving their actual research.
         - Note: Necessary for honors program! Take it early!
 - MATH 197. Mathematics Internship (2 or 4)
 - MATH 199. Independent Study for Undergraduates (2 or 4)
