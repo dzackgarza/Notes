@@ -91,7 +91,7 @@ $$
 
 Let $X = [0, 1]$ and consider $f(x) = {x}^{-\frac 1 2}$. Then 
 $$
-\norm{f}_1 = \int_{0}^1 \abs{f} = \int_0^1 x^{-\frac 1 2} < \infty \qquad \text{by the $p$ test,}
+\norm{f}_1 = \int_0^1 x^{-\frac 1 2} < \infty \qquad \text{by the $p$ test,}
 $$
 
 while 
