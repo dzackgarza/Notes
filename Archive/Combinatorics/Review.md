@@ -337,10 +337,9 @@ $$\begin{aligned}
 \#\theset{\text{Any number of distinct, odd parts}} &= \#\theset{\text{Self-conjugate partitions}}
 \end{aligned}$$
 
+!include GeneratingFunctions.md
 
-@import "./GeneratingFunctions.md"
-
-@import "./Posets.md"
+!include Posets.md
 
 
 # Appendix
