@@ -71,9 +71,10 @@ So generally, using Minkowski bound gives $N(I) \leq M_2 \iff I = (1) ~\text{or}
 $y^2=x^3-5$ has no solutions over $Z$.
 
 
-*Proof*
+*Proof*:
 
 Observation: $x$ must be odd, else $y^2 = -1 \mod 4$.
+
 Observation: $x,y$ coprime. If $d|x$ and $d|y$ then $d=5$, but read equation mod 25.
 
 Factor in $Z[\sqrt{-5}]$, equals $x^3 = y^2 + 5 = (y+\sqrt{-5})(y-\sqrt{-5})$, coprime. Why?
