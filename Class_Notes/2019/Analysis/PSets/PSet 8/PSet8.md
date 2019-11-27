@@ -114,11 +114,11 @@ while $\norm{f}_\infty > M$ for any finite $M$, since $f$ is unbounded in neighb
 
 ### Part ii
 
-$\exists f \in L^2(X)\setminus L^1(X)$ when $m(X) = \infty$:
+1. $\exists f \in L^2(X)\setminus L^1(X)$ when $m(X) = \infty$:
 
 Take $X = [1, \infty)$ and let $f(x) = x\inv$. Then $\norm{f}_2 < \infty$ but $\norm{f}_1 = \infty$ by the $p$-test.
 
-$\exists f \in L^\infty(X)\setminus L^2(X)$ when $m(X) = \infty$:
+2. $\exists f \in L^\infty(X)\setminus L^2(X)$ when $m(X) = \infty$:
 
 Take $X = \RR$ and $f(x) = 1$. Then $\norm{f}_\infty = 1 < \infty$ but $\norm{f}_2 = \int_\RR 1 = \infty$.
 
