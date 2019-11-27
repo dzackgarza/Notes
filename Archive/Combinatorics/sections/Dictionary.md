@@ -29,18 +29,24 @@
 - Permutation
 - Pigeon-Hole Principle
 - Stirling Number of the First Kind
-  $$s(n, k) = \#\theset{\text{$\sigma \in S^n \suchthat \sigma$ has exactly $k$ cycles}}$$
+  $$
+  s(n, k) = \#\theset{\text{$\sigma \in S^n \suchthat \sigma$ has exactly $k$ cycles}}
+  $$
   - No easy closed formula.
-  - Satisfies $$s(n, k) = s(n-1, k-1) + (n-1)s(n-1, k)$$
+  - Satisfies 
+  $$
+  s(n, k) = s(n-1, k-1) + (n-1)s(n-1, k)
+  $$
 - Stirling Number of the Second Kind
-  $$S(n, k) = \#\theset{\text{Set partitions of $[n]$ into $k$ parts}}$$
+  $$
+  S(n, k) = \#\theset{\text{Set partitions of $[n]$ into $k$ parts}}
+  $$
     - No easy closed formula.
     - Such a partition is a collection of subsets $S_1, \cdots , S_k$ such that $S_i \intersect S_j = \emptyset$ and $\coprod_i S_i = [n]$
 - Symmetric Group
 
 # Dictionary of Interpretations
 
-$$
 \begin{align*}
 n! &\qquad \text{Strings of length $n$ over an alphabet of size $n$ with no duplicates,}\\
 &\qquad \text{Ways to arrange $n$ distinct objects in a line, or}\\
@@ -49,4 +55,3 @@ n! &\qquad \text{Strings of length $n$ over an alphabet of size $n$ with no dupl
 n^{\underline k} = n(n-1)\cdots(n-k+1) &\qquad \text{Strings of length $k$ over an alphabet of size $n$ with no duplicates, or} \\
 &\qquad \text{}\\
 \end{align*}
-$$
