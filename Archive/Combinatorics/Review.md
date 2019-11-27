@@ -6,10 +6,10 @@ date: June 10, 2019
 
 !include sections/Introductory.md
 
-!include sections/GeneratingFunctions.md
+<!--!include sections/GeneratingFunctions.md-->
 
-!include sections/Posets.md
+<!--!include sections/Posets.md-->
 
-!include sections/Appendix.md
+<!--!include sections/Appendix.md-->
 
-!include sections/Dictionary.md
+<!--!include sections/Dictionary.md-->
