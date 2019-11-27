@@ -213,6 +213,7 @@ $$
 &< \infty
 .\end{align*}
 
+where we just note that the first portion of the sum is a finite sum of finite numbers and thus bounded.
 $$
 
 # Problem 4
