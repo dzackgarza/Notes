@@ -404,7 +404,7 @@ $$
 This lets us engineer an inverse matrix
 
 \begin{align*}
-P_1\inv \definedas \left[\begin{array}{cc} 0 & 0 \\ 0 & 0 \end{array}\right]
+P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array}\right]
 .\end{align*}
 
 
