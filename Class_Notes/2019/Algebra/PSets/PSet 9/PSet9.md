@@ -257,7 +257,7 @@ $\qed$
 
 $\impliedby$: Suppose that $A\vector x = \vector b$ has a solution $\vector x$.
 
-Write $A = [\vector a_i]$ in block form with each $\vector a_i$ a row of $A$.
+Write $A = [\vector a_1, \vector a_2, \cdots \vector a_m]^t$ in block form with each $\vector a_i$ a row of $A$.
 By definition, a solution to this equation is a $\vector x = (x_i)$ such that for each $i$, we have $\inner{\vector a_i}{\vector x} = b_i$ (by carrying out the matrix multiplication).
 
 But 
