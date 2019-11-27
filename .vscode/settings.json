@@ -22,7 +22,7 @@
         "**/*.pdf": true,
         "**/*.png": true,
         "**/*.sh": true,
-        "**/*.tex": true,
+        "**/*.tex": false,
         "**/assets": true,
         "Zotero Report 2019-02-08_files": true
     },
