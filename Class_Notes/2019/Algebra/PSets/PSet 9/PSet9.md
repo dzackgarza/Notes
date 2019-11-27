@@ -491,6 +491,8 @@ where either
 Without loss of generality, supposing the first case holds, we can write $d_N = \alpha y$; then
 
 \begin{align*}
+\left[\begin{array}{cc} 1 & 0 \\ 1 & -\alpha \end{array}\right]
 \left[\begin{array}{cc} d_N & 0 \\ y & z \end{array}\right]
+\left[\begin{array}{cc} d_N & 0 \\ 0 & z \end{array}\right]
 .\end{align*}
 
