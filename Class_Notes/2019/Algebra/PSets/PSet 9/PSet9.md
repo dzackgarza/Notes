@@ -439,8 +439,8 @@ This begins by computing $d_1 = \gcd(d, sb + td)$, where we can immediately note
 
 We then write 
 $$
-d_1 = d s' + (sb + td)t'
-$$,
+d_1 = d s' + (sb + td)t',
+$$
 
 then doing column operations (i.e. right-multiplying by some $R_1$) to obtain a matrix of the form 
 $$
@@ -471,19 +471,26 @@ and so on.
 
 In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals 
 $$
-(d) \supseteq (d_1) \supseteq (d_2) \supseteq \cdots
+(d) \subseteq (d_1) \subseteq (d_2) \subseteq \cdots
 $$ 
 and since every PID is Noetherian, this increasing chain of ideals eventually stabilizes.
 
-This means that after finitely many steps, we find $d_{i+1} \definedas \gcd(d_i, \cdots) = d_i$, 
+This means that after finitely many steps, we find $d_{N+1} \definedas \gcd(d_N, \cdots) = d_N$, 
 
 obtain a matrix
 $$
-\left(\prod_i Q_i \right) A \left( \prod_i P_i \right) = 
-\left[\begin{array}{cc} d & x \\ y & z \end{array}\right]
+N \definedas \left(\prod_i Q_i P_i \right) A \left( \prod_i R_i S_i \right) = 
+\left[\begin{array}{cc} d_N & x \\ y & z \end{array}\right]
 $$
 
 where either 
 
-- $x=0$ and $y$ divides $d$, or
-- $y = 0$ and $x$ divides $d$.
+- $x=0$ and $y$ divides $d_N$, or
+- $y = 0$ and $x$ divides $d_N$.
+
+Without loss of generality, supposing the first case holds, we can write $d_N = \alpha y$; then
+
+\begin{align*}
+\left[\begin{array}{cc} d_N & 0 \\ y & z \end{array}\right]
+.\end{align*}
+
