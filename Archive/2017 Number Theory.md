@@ -182,7 +182,7 @@ First case, due to Kumar. Here's what we'll show:
 **Theorem:**
 Take a prime $p > 3$, assume $p$ is *regular* (i.e. $p\not\mid h_{\QQ(\zeta_p)}$the class number). Then $x^p + y^p = z^p \implies xyz = 0 \mod p$.
 
-**Krummer's Criterion:**
+**Kummer's Criterion:**
 $p$ is irregular (so $p \mid h_{\QQ(\zeta_p)})$ iff $\text{ord}_p(B_k) > 0$ for some $k = 2,3,\cdots p-3$, where $B_k$ is a Bernoulli Number.
 $\frac{z}{e^z-1} = \sum_{n=0}^\infty B_n \frac{z^n}{n!}, \abs{z} < 2\pi$.
 
