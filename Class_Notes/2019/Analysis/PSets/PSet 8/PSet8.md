@@ -195,13 +195,14 @@ For notational convenience, it suffices to prove this for $\ell^p(\NN)$, where w
 1. $\ell^1(\NN) \subset \ell^2(\NN)$:
 
 Suppose $\sum_j \abs a_j < \infty$, then its tails go to zero, so choose $N$ large enough so that $j\geq N \implies \abs{a_j} < 1$. 
-But then $\abs{a_j}^2 < \abs{a_j}$, and thus we have
+But then $j\geq N \implies \abs{a_j}^2 < \abs{a_j}$, and 
 
 \begin{align*}
 \sum_j \abs{a_j}^2 &= \sum_{j=1}^N \abs{a_j}^2 + \sum_{j=N+1}^\infty \abs{a_j}^2 \\
 &\leq \sum_{j=1}^N \abs{a_j}^2 + \sum_{j=N+1}^\infty \abs{a_j}  \\
 &\leq M + \sum_{j=N+1}^\infty \abs{a_j}  \\
 &\leq M + \sum_{j=1}^\infty \abs{a_j}  \\
+&< \infty
 .\end{align*}
 
 $$
