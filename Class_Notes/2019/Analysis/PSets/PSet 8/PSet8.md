@@ -79,7 +79,10 @@ and combining these yields
 ,\end{align*}
 \]
 
-from which it immediately follows that if $m(X) < \infty$, we have $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
+from which it immediately follows 
+$$
+m(X) < \infty \implies L^\infty(X) \subseteq L^2(X) \subseteq L^1(X).
+$$
 
 
 **The Inclusions Are Strict:**
