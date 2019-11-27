@@ -226,6 +226,10 @@ Then $\norm{\vector a}_\infty = 1$, but the corresponding sum does not converge.
 
 3. $\norm{\vector a}_\infty \leq \norm{\vector a}_2 \leq \norm{\vector a}_1$:
 
+
+
+
+
 # Problem 4
 
 # Problem 5
