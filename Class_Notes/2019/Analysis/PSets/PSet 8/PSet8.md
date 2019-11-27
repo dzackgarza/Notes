@@ -61,11 +61,11 @@ By Holder with $p=q=2$, we can now write
 .\end{align*}
 \]
 
-We also have 
+Letting $M\definedas \norm{f}_\infty$, We also have 
 
 \[
 \begin{align*}
-&\norm{f}_2^2 = \int_X \abs{f}^2 \leq \int_X \abs{\norm{f}_\infty}^2 = \norm{f}_\infty \int_X 1 = \norm{f}_\infty^2 m(X) \\
+&\norm{f}_2^2 = \int_X \abs{f}^2 \leq \int_X \abs{M}^2 = M^2 \int_X 1 = M^2 m(X) \\
 \implies &\norm{f}_2 \leq m(X)^{1/2} \norm{f}_\infty \\
 \implies m(X)^{1/2} &\norm{f}_2 \leq m(X) \norm{f}_\infty
 ,\end{align*}
