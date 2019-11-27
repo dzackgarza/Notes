@@ -80,6 +80,8 @@ In this case, $$f'(x+iy) = u_x(x,y) + iv_x(x,y)$$ or in polar
 coordinates,
 $$f'(re^{i\theta}) = e^{i\theta}(u_r(r,\theta) + iv_r(r,\theta))$$
 
+# Integration
+
 The Residue Theorem
 -------------------
 
@@ -100,7 +102,8 @@ $$\oint_C f(z) dz = 2\pi i \sum_{z_k} \underset{z=0}{\text{Res}} ~z^{-2}f(z^{-1}
 Computing Residues
 ------------------
 
-### Simple Poles
+Simple Poles
+------------------
 
 If $z_0$ is a pole of order $m$, define $g(z) := (z-z_0)^m f(z)$.
 
@@ -116,7 +119,8 @@ $$f(z) = \frac{\phi(z)}{(z-z_0)^m}$$
 
 where $\phi$ only needs to be analytic at $z_0$.
 
-### Rational Functions
+Rational Functions
+------------------
 
 If $f(z) = \frac{p(z)}{q(z)}$ where
 
