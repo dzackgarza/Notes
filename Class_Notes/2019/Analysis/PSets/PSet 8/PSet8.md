@@ -49,6 +49,7 @@ Since every $g_n$ has compact support, say $\mathrm{supp}(g_n) \definedas E_n$, 
 **Lemma:** $\norm{1}_p = m(X)^{1/p}$
 
 This follows from $\norm{1}_p^p = \int_X \abs {1}^p = \int_X 1 = m(X)$ and taking $p$th roots.
+$\qed$
 
 
 By Holder with $p=q=2$, we can now write
