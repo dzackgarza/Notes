@@ -386,6 +386,7 @@ Moreover, note that if we are able to perform this reduction by a series of left
 Since $R$ is a PID, it is also a Euclidean domain, so we can compute greatest common divisors.
 Let $d = \gcd(a, c)$, so we can write $d = sa + tc$ for some $s, t\in R$.
 We would like to construct an operation that replaces $a$ in $M$ with $d$.
+
 So let $\ell_1, \ell_2$ be parameters to be determined; we can then compute
 
 \begin{align*}
@@ -416,4 +417,15 @@ $$
 d = sa + tc =  s dk_1 + t d k_2 \implies 1 = s k_1 + t k_2,
 $$
 
-so just choose $\ell_1  = k_1, \ell_2 = -k_2$.
+so just choose $\ell_1  = k_1, \ell_2 = -k_2$ to yield $P_1 P_1\inv = I_2$.
+
+We can now use the fact that in the matrix $P_1 A$, we can observe that since $d$ divides $a$ and $c$, it divides $\ell_1a+\ell_2 c$.
+So write $k_1 d = \ell_1 a + \ell_2 c$, we can then perform a row operation by left-multiplying:
+
+
+\begin{align*}
+\left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
+\left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right] =
+\left[\begin{array}{cc} d & sb + td \\ 0 & \ell_1 b + \ell_1 d \end{array}\right] =
+.\end{align*}
+
