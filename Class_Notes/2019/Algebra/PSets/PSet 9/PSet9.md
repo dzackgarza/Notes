@@ -370,5 +370,7 @@ Suppose $\rank(A) < m$. Then again by rank nullity, this forces $\dim \ker A \ge
 
 # Problem 6
 
+The goal is to show that any matrix $A \in M(m\times n, R)$ is *equivalent* to a matrix $D$ of the described form, so $A = PDQ$ for some matrices $P,Q$.
+Since $S$ is in fact the set of Smith Normal Forms for such matrices, it suffices to show that $SNF(A)$ can be obtained by left and right multiplication by invertible matrices.
 
 
