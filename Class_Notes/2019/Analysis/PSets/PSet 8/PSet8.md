@@ -155,6 +155,13 @@ $\qed$
 
 ## Part b
 
+1. $L_1(X) \intersect L^\infty(X) \subset L^2(X)$:
+
+Let $f\in L^1(X) \intersect L^\infty(X)$ and $M \definedas \norm{f}_\infty$, then
+$$
+\norm{f}_2 = \int_X \abs{f}^2 = \int_X \abs{f} \abs{f} \leq \int_X M \abs{f} = M \int \abs{f} \definedas \norm{f}_\infty \norm{f}_1 < \infty.
+$$
+
 # Problem 3
 
 # Problem 4
