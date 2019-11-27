@@ -216,7 +216,7 @@ Conformal Maps
 
 8.  $z\mapsto z + z^{-1}: \partial D \mapsto \mathbb{R}$
 
-    ![$z \mapsto z+z^{-1}$](fluid-cylinder){width="0.5\\linewidth"}
+    ![$z \mapsto z+z^{-1}$](fluid-cylinder.png){width="0.5\\linewidth"}
 
     Maps the boundary of the circle to the real axis, and the plane to
     $\mathbb{H}$.
