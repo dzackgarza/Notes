@@ -119,8 +119,8 @@ while $\norm{f}_\infty > M$ for any finite $M$, since $f$ is unbounded in neighb
 Take $X = [1, \infty)$ and let $f(x) = x\inv$, then
 
 \begin{align*}
-\norm{f}_2^2 = \int_0^\infty x^{-2} < \infty \qquad\text{by the $p$ test,} \\
-\norm{f}_1 = \int_0^\infty x^{-1} \to\infty \qquad\text{by the $p$ test,}
+\norm{f}_2^2 &= \int_0^\infty x^{-2} < \infty \qquad\text{by the $p$ test,} \\
+\norm{f}_1 &= \int_0^\infty x^{-1} \to\infty \qquad\text{by the $p$ test,}
 .\end{align*}
 
 
