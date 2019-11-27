@@ -391,6 +391,7 @@ So let $\ell_1, \ell_2$ be parameters to be determined; we can then compute
 \begin{align*}
 \left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
 \left[\begin{array}{cc} a & b \\ c & d \end{array}\right]
+\left[\begin{array}{cc} d & \ast \\ \ast & \ast \end{array}\right]
 .\end{align*}
 
 
