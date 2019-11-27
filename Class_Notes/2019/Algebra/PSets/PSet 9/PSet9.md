@@ -426,6 +426,6 @@ So write $k_1 d = \ell_1 a + \ell_2 c$, we can then perform a row operation by l
 \begin{align*}
 Q_1 A P_1 \definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
 \left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right] =
-\left[\begin{array}{cc} d & sb + td \\ 0 & \ell_1 b + \ell_1 d \end{array}\right]
+\left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
 .\end{align*}
 
