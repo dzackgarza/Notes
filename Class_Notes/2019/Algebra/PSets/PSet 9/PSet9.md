@@ -333,10 +333,28 @@ $\qed$
 
 2. The solution is unique $\iff \rank(A) = m$.
 
+$\implies$:
+To the contrapositive, Suppose $\rank(A) < m$.
+Then by rank-nullity, $\dim \ker A > 0$, so there is a vector $\vector v \neq 0$ such that $A\vector v = 0$.
+But noting that $\vector x = \vector 0$ is always *a* solution to $A\vector x = \vector 0$, this yields two distinct solutions.
+
 $\impliedby$:
 
-Suppose that $\rank(A) = m$ and a solution to $AX=B$ exists.
-Then $\rank(C) = m$ as well
+Suppose that $\rank(A) = m$. 
+Then by rank-nullity, $\dim \ker A = 0$, so $\ker A = \theset{\vector 0}$.
+Now suppose $\vector v_1, \vector v_2$ are potentially distinct solutions to $A\vector x = \vector 0$.
+
+
+\begin{align*}
+A \vector v_1 = A \vector v_2 = \vector 0 \\
+&\implies A \vector v_1 - A \vector v_2 =  \vector 0 \\
+&\implies A (\vector v_1 - \vector v_2) = 0 \\
+&\implies \vector v_1 - \vector v_2 \in \ker A \\
+&\implies \vector v_1 - \vector v_2 = \vector 0 \\
+&\implies \vector v_1 = \vector v_2
+,\end{align*}
+
+which shows that any solution is unique.
 
 ## Part 4
 
