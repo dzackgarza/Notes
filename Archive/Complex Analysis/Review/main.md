@@ -49,6 +49,9 @@ Some other notions to look up:
 - Theorem: Analytic $\implies$ conformal
 - The Sterographic projection. Is it conformal?
 - Branch points and branch cuts
+- Loxodromic transformations
+- Horocycles
+- Analytic Continuation
 - 
 
 # Preliminary Notions
