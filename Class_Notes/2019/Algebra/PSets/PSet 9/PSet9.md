@@ -370,6 +370,8 @@ Suppose $\rank(A) < m$. Then again by rank nullity, this forces $\dim \ker A \ge
 
 # Problem 6
 
+> Proof following http://sierra.nmsu.edu/morandi/notes/SmithNormalForm.pdf
+
 The goal is to show that any matrix $A \in M(m\times n, R)$ is *equivalent* to a matrix $D$ of the described form, so $A = PDQ$ for some matrices $P,Q$.
 Since $S$ is in fact the set of Smith Normal Forms for such matrices, it suffices to show that $SNF(A)$ can be obtained by left and right multiplication by invertible matrices.
 Moreover, since row operations can be performed by left-multiplication of elementary matrices, and column operations by right-multiplication.
@@ -440,3 +442,9 @@ We can then repeat the first part again to obtain a $d_2$ that divides $d_1$, do
 $$Q_2Q_1 A P_1 P_2 \definedas \left[\begin{array}{cc} d & ? \\ 0 & ? \end{array}\right]$$
 
 In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals $(d) \divides (d_1) \supseteq (d_2) \supseteq \cdots$, and since every PID is Noetherian, this increasing chain of ideals eventually stabilizes.
+
+This means that after finitely many steps, we obtain a matrix
+$$
+\left(\prod_i Q_i \right) A \left( \prod_i P_i \right) = 
+\left[\begin{array}{cc} d & 0 \\ 0 & 0 \end{array}\right]
+$$
