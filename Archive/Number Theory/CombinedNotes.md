@@ -2,7 +2,7 @@
 title: Algebraic Number Theory, Fall 2017
 ---
 
-# 10/20/2017
+# October 20th, 2017
 
 **Theorem**:
 If you have a Dedekind ring, on the level of ideals there is unique factorization. $R$ dedekind, $I \neq 0$ then $I$ factors uniquely into prime ideals.
@@ -71,7 +71,7 @@ Proof: For $c \ in \text{Cl}_K$, say $c^{-1} = [I]$ with $I \in \mathcal{O}_K$. 
 
 Will be able to compute $M$ explicitly (the Minkowski bound).
 
-# October
+# October 25th , 2017 (?)
 
 **Theorem**
 Let $k$ be a number field, $n = [k: Q]$.
