@@ -91,7 +91,7 @@ $\exists f \in L^1(X)\setminus L^2(X)$:
 
 Let $X = [-1, 1]$ and consider $f(x) = \abs{x}^{-\frac 1 2}$. Then 
 $$
-\norm{f}_1 = \int_{-1}^1 \abs{f} = 2 \int_0^1 x^{-\frac 1 2} = 4 < \infty$,
+\norm{f}_1 = \int_{-1}^1 \abs{f} = 2 \int_0^1 x^{-\frac 1 2} = 4 < \infty,
 $$
 
 while 
