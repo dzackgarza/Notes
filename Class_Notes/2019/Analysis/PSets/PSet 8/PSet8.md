@@ -162,6 +162,8 @@ Let $f\in L^1(X) \intersect L^\infty(X)$ and $M \definedas \norm{f}_\infty$, the
 \norm{f}_2^2 = \int_X \abs{f}^2 = \int_X \abs{f} \abs{f} \leq \int_X M \abs{f} = M \int \abs{f} \definedas \norm{f}_\infty \norm{f}_1 < \infty.
 \end{equation}
 
+The inclusion is strict, since we know from above that there is a function in $L^2(X)$ that is not in $L^\infty(X)$.
+
 Note that taking square roots in (1) immediately yields
 
 \begin{align*}
@@ -170,6 +172,9 @@ Note that taking square roots in (1) immediately yields
 
 
 2. $L^2(X) \subset L^1(X) + L^\infty(X)$:
+
+Let $f\in L^2(X)$. 
+Noting that continuous functions with compact support are dense in $L^2(X)$, take an approximating sequence $\theset{g_n} \subseteq C_c^0(X)$ with $\norm{g_n - f} \to 0$.
 
 # Problem 3
 
