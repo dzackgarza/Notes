@@ -344,7 +344,7 @@ Suppose that $\rank(A) = m$.
 Then by rank-nullity, $\dim \ker A = 0$, so $\ker A = \theset{\vector 0}$.
 Now suppose $\vector v_1, \vector v_2$ are potentially distinct solutions to $A\vector x = \vector 0$.
 
-
+Then,
 \begin{align*}
 A \vector v_1 &= A \vector v_2 = \vector 0 \\
 &\implies A \vector v_1 - A \vector v_2 =  \vector 0 \\
