@@ -491,8 +491,18 @@ where either
 Without loss of generality, supposing the first case holds, we can write $d_N = \alpha y$; then
 
 \begin{align*}
+E N \definedas
 \left[\begin{array}{cc} 1 & 0 \\ 1 & -\alpha \end{array}\right]
-\left[\begin{array}{cc} d_N & 0 \\ y & z \end{array}\right]
+\left[\begin{array}{cc} d_N & 0 \\ y & z \end{array}\right] = 
 \left[\begin{array}{cc} d_N & 0 \\ 0 & z \end{array}\right]
-.\end{align*}
+,\end{align*}
+
+where $E$ is again invertible, yielding a diagonal matrix.
+
+> Note: in the general case of an $m\times n$ matrix, this eliminates entries $1,2$ and $2,1$. Eliminating the remaining entries in row 1 and column 1 proceed similarly, and never perturb entries that were made zero in a previous step.
+
+Since it is not necessarily the case that $d_N$ divides $z$ here, a small additional modification is needed. This is accomplished by a series of row operations, as described here:
+
+![Image](figures/2019-11-26-22:38.png)
+
 
