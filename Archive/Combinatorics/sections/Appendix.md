@@ -1,3 +1,27 @@
+# Appendix
+
+Some notes on lists:
+
+- Note that every $n\dash$element list admits an action of $S_n$ where you let any $\sigma\in S_n$ act on the indices (i.e. reordering the list).
+- Note that there is a map from lists to sets, which just forms a set out of the element of the list. For example, $[a,b,c,b] \mapsto \theset{a,b,c}$. Note that it is not injective in general, since for example $[c,b,b,a] \mapsto \theset{a,b,c}$ as well. If the $n$ elements of list are *unique*, however, then the action of $S_n$ is nice enough that you can quotient out by it, i.e. dividing counts by $n!$.
+- So one method of counting is to first form an ordered list of unique elements, then identify any two ordered lists if they differ by a permutation (i.e. take the underlying set).
+
+Bonus: It can be shown using ordinary generating functions that
+$$
+\stirlingfirst{n}{k} = \frac { 1 } { k ! } \ln ^ { k } \left( \frac { 1 } { 1 - z } \right).
+$$
+
+Bonus: a closed formula  for the Stirling numbers of the second kind is given by
+$$
+\stirling n k = \sum _ { i = 0 } ^ { k } \frac { ( - 1 ) ^ { k - i } } { k ! } \left( \begin{array} { l } { k } \\ { i } \end{array} \right) i ^ { n },
+$$
+which can be found by using the recurrence to solve for an ordinary generating function, then using partial fraction decomposition and some gnarly algebraic manipulations. With a bit more work, you can show
+$$
+\sum_k \stirling n k = \frac 1 e \sum_{i=0}^\infty \frac{i^n}{i!}.
+$$
+
+
+
 ## The 12-fold Way
 
 
