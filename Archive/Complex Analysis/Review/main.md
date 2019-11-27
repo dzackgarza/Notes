@@ -8,7 +8,7 @@ title: Complex Analysis
 Notes
 =====
 
-Definitions
+# Definitions
 -----------
 
 In these notes, $C$ generally denotes some closed contour, $\mathbb{H}$
