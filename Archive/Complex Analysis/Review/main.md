@@ -9,7 +9,6 @@ Notes
 =====
 
 # Definitions
------------
 
 In these notes, $C$ generally denotes some closed contour, $\mathbb{H}$
 is the upper half-plane, $C_R$ is a semicircle of radius $R$ in
