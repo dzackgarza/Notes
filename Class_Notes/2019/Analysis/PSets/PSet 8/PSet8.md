@@ -201,9 +201,9 @@ $$
 
 But then 
 $$
-j\geq N \implies \abs{a_j}^2 < \abs{a_j}
+j\geq N \implies \abs{a_j}^2 < \abs{a_j},
 $$
-, and 
+and 
 
 \begin{align*}
 \sum_j \abs{a_j}^2 &= \sum_{j=1}^N \abs{a_j}^2 + \sum_{j=N+1}^\infty \abs{a_j}^2 \\
