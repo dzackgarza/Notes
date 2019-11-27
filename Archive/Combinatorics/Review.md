@@ -31,7 +31,6 @@ Problems are the best practice!
   - Equivalently, this can be thought of as a **word** from some **alphabet** of symbols. In this case, we may write $[a,b,c]$ as $abc$ instead.
   - Rigorously, if $A$ is the set of elements we're interested in, an ordered list is an element of the $k\dash$fold product set $A \cross A \cross \cdots A = A^k$.
 
----
 
 ## Sets
 For any given $n$, there is essentially **one** set of size $n$, the set $[n] = \theset{1,2,\cdots n}$. It is a theorem that every set admits a *well-ordering*, and a consequence of this is that any set $S$ of countable size $n$ admits a bijective map $S \to [n]$. So $S \cong [n]$ in the category of Sets, "up to relabeling" of elements.
@@ -353,7 +352,6 @@ $$\begin{aligned}
 
 @import "./Posets.md"
 
----
 
 # Appendix
 
