@@ -378,7 +378,7 @@ We proceed by induction on $m+n$.
 
 For the base case $m + n = 2$, this can only yield a $1\times 1$ matrix, and the result holds vacuously.
 
-For the inductive step, we will proceed by considering the top-left $2\times 2$ block, say $\left[ \begin{array} a & b \\ c & d \end{array}\right]$, and showing it can be reduced to a block of the form $\left[ \begin{array} d_1 & 0 \\ 0 & d_2 \end{array}\right]$ where $d_1 \divides d_2$. 
+For the inductive step, we will proceed by considering the top-left $2\times 2$ block, say $\left[ \begin{array}{cc} a & b \\ c & d \end{array}\right]$, and showing it can be reduced to a block of the form $\left[ \begin{array}{cc} d_1 & 0 \\ 0 & d_2 \end{array}\right]$ where $d_1 \divides d_2$. 
 Then the sub-matrix obtained by deleting the row and column containing $d_1$ is a strictly smaller matrix, allowing the inductive hypothesis to be applied.
 
 
