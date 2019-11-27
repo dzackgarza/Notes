@@ -215,6 +215,10 @@ and
 
 where we just note that the first portion of the sum is a finite sum of finite numbers and thus bounded.
 
+To see that the inclusion is strict, take $\vector a \definedas \theset{j\inv}_{j=1}^\infty$; then $\norm{\vector a}_2 < \infty$ by the $p$-test by $\norm{\vector a}_1 = \infty$ since it yields the harmonic series.
+
+2. $\ell^2(\NN) \subset \ell^\infy(\NN)$:
+
 # Problem 4
 
 # Problem 5
