@@ -197,7 +197,7 @@ Conformal Maps
       Wedges    $\mapsto$  Horizontal Strips
       -------- ----------- -------------------
 
-    ![$z \mapsto \log z$](log){width="\\linewidth"}
+    ![$z \mapsto \log z$](log.png){width="\\linewidth"}
 
 6.  $\sin: [0, \pi/2] + i\mathbb{R} \mapsto \mathbb{H}_{\mathcal{R}(z)>0}$
 
