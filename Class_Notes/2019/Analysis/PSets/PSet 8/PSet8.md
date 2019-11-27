@@ -89,14 +89,11 @@ Let $E_k = X \intersect B(t_k)$ where $B(t_k)$ is a ball centered at the origin 
 > (Note: since $m(X) < \infty$, $X \subseteq \union A_k$.)
 
 Then define $f: X \to \RR$ by $f(x) = \sum_k s(k) ~\chi_{A_k}$, so we have
-\[
+
 \begin{align*}
 &\norm{f}_1 = \int_X \abs {f} = \sum_k \int_{A_k} s(k) = \sum_k s(k) \int_{A_k} 1 = \sum_k s(k) \\
 &\norm{f}_2 = \sum_k s(k)^2 
 .\end{align*}
-\]
-
-$$
 
 Now setting $s(k) = \left( \frac 1 k \right)^{1/2}$ yields $\norm{f}_1 < \infty$ but $\norm{f}_2 = \infty$, so $f\not\in L^2(X)$.
 
@@ -123,14 +120,12 @@ Let $f = \chi_X$, by assumption we can find a constant $M$ such that $\norm{\chi
 
 Then pick a sequence of sets $E_k \nearrow X$ such that $m(E_k) < \infty$ for all $k$, $\chi_{E_k} \nearrow \chi_X$, and thus $\norm{ \chi_{E_k}}_p \leq M \norm{\chi_E}_p$. By the lemma, $\norm{\chi_{E_k}}_p = m(E)^{1/p}$, so we have
 
-\[
 \begin{align*}
 \norm{\chi_{E_k}}_2 \leq M \norm{\chi_{E_k}}_1 &\implies \frac{\norm{\chi_{E_k}}_2}{\norm{\chi_{E_k}}_1} \leq M \\
 &\implies \frac{m(E_k)^{1/2}}{m(E_k)} \leq M \\
 &\implies m(E_k)^{-1/2} \leq M \\
 &\implies m(E_k) \leq M^2 < \infty
 .\end{align*}
-\]
 
 
 and by continuity of measure, we have $\lim_K m(E_k) = m(X) \leq M^2 < \infty$.
