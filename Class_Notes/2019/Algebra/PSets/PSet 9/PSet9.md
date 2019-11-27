@@ -442,7 +442,7 @@ $$
 d_1 = d s' + (sb + td)t',
 $$
 
-then doing column operations (i.e. right-multiplying by some $R_1$) to obtain a matrix of the form 
+then perform column operations (i.e. right-multiplying by some $R_1$) to obtain a matrix of the form 
 $$
 Q_1 P_1 A R_1 \definedas 
 \left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
