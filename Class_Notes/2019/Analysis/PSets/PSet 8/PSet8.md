@@ -221,7 +221,10 @@ To see that the inclusion is strict, take $\vector a \definedas \theset{j\inv}_{
 
 This follows from the contrapositive: if $\vector a$ is a sequence with unbounded terms, then $\norm{\vector a}_2 = \sum \abs{a_j}^2$ can not be finite, since convergence would require that $\abs{a_j}^2 \to 0$ and thus $\abs{a_j} \to 0$.
 
-To see that the inclusion is strict, take $\vector a  = \theset{1}_{j=1}^\infty$. Then $\norm{\vector a}_\infty = 1$, but the corresponding sum does not converge.
+To see that the inclusion is strict, take $\vector a  = \theset{1}_{j=1}^\infty$. 
+Then $\norm{\vector a}_\infty = 1$, but the corresponding sum does not converge.
+
+3. $\norm{\vector a}_\infty \leq \norm{\vector a}_2 \leq \norm{\vector a}_1$:
 
 # Problem 4
 
