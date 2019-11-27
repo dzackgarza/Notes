@@ -411,7 +411,9 @@ P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array
 which just says that we need to pick $\ell_1, \ell_2$ such that $s\ell_1 - t\ell_2 = 1$, since the off-diagonal entries vanish because $R$ is commutative.
 
 
-But this can be done by writing $a = d \ell_1$ and $c = d \ell_2$; then 
+But this can be done by writing $a = d k_1$ and $c = d k_2$; then 
 $$
-d = sa + tc =  s d\ell_1 + t d \ell_2 \implies 1 = s \ell_1 + t \ell_2 
+d = sa + tc =  s dk_1 + t d k_2 \implies 1 = s k_1 + t k_2,
 $$
+
+so just choose $\ell_1  = k_1, \ell_2 = -k_2$.
