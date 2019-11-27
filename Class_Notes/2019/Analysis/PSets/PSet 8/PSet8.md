@@ -76,10 +76,10 @@ and combining these yields
 \[
 \begin{align*}
 \norm{f}_1 \leq m(X)^{1/2} \norm{f}_2 \leq m(X) \norm{f}_\infty
-.\end{align*}
+,\end{align*}
 \]
 
-, from which we can immediately conclude that if $m(X) < \infty$, we have $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
+from which it immediately follows that if $m(X) < \infty$, we have $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
 
 To see that the inclusion is strict in general, we'll use the fact that $\sum_k k^{-2} < \infty$ and $\sum_k k\inv = \infty$:
 
