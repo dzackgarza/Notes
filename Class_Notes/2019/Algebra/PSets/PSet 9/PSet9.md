@@ -424,7 +424,7 @@ $$
 
 so just choose $\ell_1  = k_1, \ell_2 = -k_2$ to yield $P_1 P_1\inv = I_2$.
 
-We can now use the fact that in the matrix $P_1 A$, we can observe that since $d$ divides $a$ and $c$, it divides $\ell_1a+\ell_2 c$.
+We can observe that in the matrix $P_1 A$, since $d$ divides $a$ and $c$, $d$ also divides $\ell_1a+\ell_2 c$.
 So write $k_1 d = \ell_1 a + \ell_2 c$, we can then perform a row operation by left-multiplying:
 
 
@@ -503,6 +503,6 @@ where $E$ is again invertible, yielding a diagonal matrix.
 
 Since it is not necessarily the case that $d_N$ divides $z$ here, a small additional modification is needed. This is accomplished by a series of row operations, as described here:
 
-![Image](figures/2019-11-26-22:38.png)
+![Image](figures/2019-11-26-22:38.png)\
 
-
+This yields the desired form in the top-left $2\times 2$ block, zeroing out the first column and row, so the inductive hypothesis applies to the remaining block. $\qed$
