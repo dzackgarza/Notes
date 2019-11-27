@@ -227,7 +227,10 @@ Suppose $\rank(A) = m$, so $A$ has $m$ linearly independent columns -- note that
 > Note: since row rank equals column rank, this also says that $A$ has $m$ linearly independent rows, so $n\geq m$.
 
 Viewing $A$ as a representative of a map $\phi: D^m \to D^n$, we find that $\dim \im \phi = m \leq n$.
-In particular, from the rank nullity theorem, we have $m = \dim \ker \phi + \rank(\phi) = \dim \ker \phi + m \implies \dim \ker \phi = 0$.
+In particular, from the rank nullity theorem, we have 
+$$
+m = \dim \ker \phi + \rank(\phi) = \dim \ker \phi + m \implies \dim \ker \phi = 0.
+$$
 So $\ker A = \theset{\vector 0}$, and $A$ represents an injective map $f_A: D^m \to D^n$.
 
 But any injective *set* map $f: S_1\to S_2$ has a left-inverse $g$ such that $g\circ f = \id_{S_1}$. 
