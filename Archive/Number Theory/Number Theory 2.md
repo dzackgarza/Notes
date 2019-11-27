@@ -95,7 +95,7 @@ Similar arguments will be mimicked for Fermat's Last Theorem.
 
 Define Grothendieck group of a ring ($k$ theory) $K_O(O_k) = Z \oplus \text{Cl}_k$. Monoid of finite projective modules, modded out by stuff. $[P] + [Q] = [P \oplus Q]$.
 
-If $R$ is dedekind,
+If $R$ is Dedekind,
 
 - Every fractional ideal is a finitely generated projective module
 - Every f.g. proj. module $a_1 \oplus \cdots \oplus a_r$ a fractional ideal.
