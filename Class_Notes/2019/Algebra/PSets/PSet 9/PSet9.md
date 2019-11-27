@@ -400,7 +400,7 @@ P_1 A = \left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
 \left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right]
 ,\end{align*}
 
-where we now only have to choose $\ell_1, \ell_2$ so that the first matrix appearing is invertible.
+where we now only have to choose $\ell_1, \ell_2$ so that $P_1$ is invertible.
 
 
 This lets us engineer an inverse matrix
@@ -435,15 +435,17 @@ Q_1 A P_1 \definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
 .\end{align*}
 
 We now carry out the same process with the top *row* instead of the first *column*.
-This begins by computing $d^1 = \gcd(d, sb + td)$, where we can immediately note that $d^1$ divides $d$, and then doing column operations (i.e. right-multiplying by some $P_2$) to obtain a matrix of the form 
+This begins by computing $d_1 = \gcd(d, sb + td)$, where we can immediately note that $d_1$ divides $d$, and then doing column operations (i.e. right-multiplying by some $P_2$) to obtain a matrix of the form 
 $$Q_1 A P_1 P_2 \definedas \left[\begin{array}{cc} d & 0 \\ ? & ? \end{array}\right]$$
 
 We can then repeat the first part again to obtain a $d_2$ that divides $d_1$, doing row operations, and obtaining a matrix of the form
 $$Q_2Q_1 A P_1 P_2 \definedas \left[\begin{array}{cc} d & ? \\ 0 & ? \end{array}\right]$$
 
-In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals $(d) \divides (d_1) \supseteq (d_2) \supseteq \cdots$, and since every PID is Noetherian, this increasing chain of ideals eventually stabilizes.
+In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals $(d) \supseteq (d_1) \supseteq (d_2) \supseteq \cdots$, and since every PID is Noetherian, this increasing chain of ideals eventually stabilizes.
 
-This means that after finitely many steps, we obtain a matrix
+This means that after finitely many steps, we find $d_{i+1} \definedas \gcd(d_i, \cdots) = d_i$, 
+
+obtain a matrix
 $$
 \left(\prod_i Q_i \right) A \left( \prod_i P_i \right) = 
 \left[\begin{array}{cc} d & x \\ y & z \end{array}\right]
