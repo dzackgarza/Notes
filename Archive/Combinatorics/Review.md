@@ -8,8 +8,8 @@ date: June 10, 2019
 
 !include sections/GeneratingFunctions.md
 
-!include sections/ Posets.md
+!include sections/Posets.md
 
-!import sections/Appendix.md
+!include sections/Appendix.md
 
-!import sections/Dictionary.md
+!include sections/Dictionary.md
