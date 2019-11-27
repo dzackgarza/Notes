@@ -396,10 +396,6 @@ P_1 A = \left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
 
 where we now only have to choose $\ell_1, \ell_2$ so that the first matrix appearing is invertible.
 
-But this can be done by writing $a = d \ell_1$ and $c = d \ell_2$; then 
-$$
-d = sa + tc =  s d\ell_1 + t d \ell_2 \implies 1 = s \ell_1 + t \ell_2 
-$$
 
 This lets us engineer an inverse matrix
 
@@ -415,3 +411,7 @@ P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array
 which just says that we need to pick $\ell_1, \ell_2$ such that $s\ell_1 - t\ell_2 = 1$.
 
 
+But this can be done by writing $a = d \ell_1$ and $c = d \ell_2$; then 
+$$
+d = sa + tc =  s d\ell_1 + t d \ell_2 \implies 1 = s \ell_1 + t \ell_2 
+$$
