@@ -383,7 +383,9 @@ Then the sub-matrix obtained by deleting the row and column containing $d_1$ is 
 
 Moreover, note that if we are able to perform this reduction by a series of left and right multiplications, this will yields $A_1 = P_1 A Q_1$, and inductively we will have $A_{r} = (P_r \cdots P_2 P_1) A (Q_1 Q_2 \cdots Q_R)$, so each matrix will remain equivalent at every step.
 
-Since $R$ is a PID, it is also a Euclidean domain, so we can compute greatest common divisors.
+> Note: since $R$ is a PID, it is also a Euclidean domain, so we can compute greatest common divisors.
+
+Our first goal is to reduce the top-left entry and eliminate the bottom-left entry.
 Let $d = \gcd(a, c)$, so we can write $d = sa + tc$ for some $s, t\in R$.
 We would like to construct an operation that replaces $a$ in $M$ with $d$.
 
@@ -429,3 +431,4 @@ Q_1 A P_1 \definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
 \left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
 .\end{align*}
 
+Now we can consider eli
