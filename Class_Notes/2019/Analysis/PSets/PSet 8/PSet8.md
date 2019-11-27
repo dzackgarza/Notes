@@ -102,7 +102,15 @@ $$
 
 2. $\exists f \in L^2(X)\setminus L^\infty(X)$:
 
-Let $X = (0, 1]$ and $f(x) = x^{-1/4}$. Then $\norm{f}_2 = \int_0^1 \frac{1}{x^{1/4}} < \infty$ by the $p$-test, but $f$ is unbounded near 0. In particular, for any upper bound $M$, we have $m(\theset{x \suchthat f(x) > M}) > 0$, so $\norm{f}_\infty = \infty$ and $f\not\in L^\infty(X)$.
+Take $X = [0, 1]$ and $f(x) = x^{-\frac 1 4}$. 
+Then
+
+$$
+\norm{f}_2^2 = \int_0^1 x^{-\frac 1 4} < \infty \qquad \text{by the $p$ test,}
+$$
+
+while $\norm{f}_\infty > M$ for any finite $M$, since $f$ is unbounded in neighborhoods of 0. 
+
 
 ### Part ii
 
