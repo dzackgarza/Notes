@@ -394,6 +394,6 @@ So let $\ell_1, \ell_2$ be parameters to be determined; we can then compute
 \left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right]
 ,\end{align*}
 
-where it 
+where we now only have to choose $\ell_1, \ell_2$ so that the first matrix appearing is invertible.
 
 
