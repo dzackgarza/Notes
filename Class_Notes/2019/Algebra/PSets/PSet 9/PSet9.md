@@ -404,7 +404,11 @@ $$
 This lets us engineer an inverse matrix
 
 \begin{align*}
-P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array}\right]
+P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array}\right] \\
+\implies P_1 P_1\inv &=
+\left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
+P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array}\right] \\
+&=
 .\end{align*}
 
 
