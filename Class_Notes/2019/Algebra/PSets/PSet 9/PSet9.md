@@ -172,7 +172,6 @@ and taking dimensions yields
 $$
 m = \dim \ker(\phi) + \rank(\phi).
 $$
-$$
 
 1. $A \in M(n\times m, D)$ has a left inverse $B \iff \rank(A) = m$:
 
