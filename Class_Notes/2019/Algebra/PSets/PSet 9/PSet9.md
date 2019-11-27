@@ -57,12 +57,12 @@ Then $(rI_n)(sI_n) = (sI_n)(rI_n)$ by assumption, since these are matrices in th
 But $M_n(R)$ is an $R\dash$module, and so the scalars $r,s$ commute with the module elements $I_n$.
 This means that we in fact have
 
-\begin{align*}
+\begin{equation*}
 (r I_n) (s I_n) &= (rs) I_n^2 = (rs)I_n, \\
 (s I_n) (r I_n) &= (sr) I_n^2 = (sr)I_n \\
 &\implies (rs) I_n = (sr) I_n \\
 &\implies (rs -sr) I_n = 0_n,
-\end{align*}
+\end{equation*}
 
 the $n\times n$ zero matrix.
 
@@ -74,10 +74,10 @@ Now since $s\in R$ was arbitrary, we find that $r\in Z(R)$ as desired.
 
 Define a map
 
-\begin{align*}
+\begin{equation*}
 \phi: Z(R) &\to Z(M_n(R) \\
 r &\mapsto r I_n
-.\end{align*}
+.\end{equation*}
 
 By part 1, this map is surjective.
 To see that it is also injective, we can consider $\ker \phi = \theset{r \in Z(r) \suchthat r I_n = 0_n}$, which clearly forces $r=0_R$.
@@ -193,7 +193,7 @@ so each $\vector b_i$ is a row of $B$.
 
 Now if $BA = I_m$ is to hold, noting that $(BA)_{ij} = \inner{\vector b_i}{\vector a_j}$, we must have
 
-\begin{align*}
+\begin{equation*}
 I_{1,1}  &= \inner{\vector b_1}{\vector a_1} = 1 \\
 I_{1, 2} &= \inner{\vector b_1}{\vector a_2} = 0 \\
 I_{1, 3} &= \inner{\vector b_1}{\vector a_3} = 0 \\
@@ -202,21 +202,21 @@ I_{2, 1} &= \inner{\vector b_2}{\vector a_1} = 0 \\
 I_{2, 2} &= \inner{\vector b_2}{\vector a_2} = 1 \\
 I_{2, 3} &= \inner{\vector b_2}{\vector a_3} = 0 \\
 &\vdots
-.\end{align*}
+.\end{equation*}
 
 
 But the claim is that this can *not* happen if $\vector a_1, \vector a_2$ are linearly dependent.
 To see why, note that the linear dependence supplies elements $d_1, d_2 \neq 0 \in D$ such that $d_1 \vector a_1 + d_2 \vector a_2 = \vector 0$. 
 But then taking inner products against, e.g. $\vector b_1$ (that is, applying $\inner{\vector b_1}{\wait}$ to everything in sight), we obtain
 
-\begin{align*}
+\begin{equation*}
 d_1 \vector a_1 + d_2 \vector a_2 = \vector 0 \\
 \implies \inner{\vector b_1}{d_1 \vector a_1} + \inner{\vector b_1}{d_2 \vector a_2} = \inner{\vector b_1}{\vector 0} = 0 \\
 \implies d_1 \inner{\vector b_1}{\vector a_1} + d_2\inner{\vector b_1}{\vector a_2} = \inner{\vector b_1}{\vector 0} = 0 \\
 \implies d_1 \inner{\vector b_1}{\vector a_1} + d_2\inner{\vector b_1}{\vector a_2}  = 0 \\
 \implies d_1 + d_2\inner{\vector b_1}{\vector a_2}  = 0 \\
 \implies \inner{\vector b_1}{\vector a_2} = -\frac{d_1}{d_2} \neq 0 
-,\end{align*}
+,\end{equation*}
 
 which contradicts $\inner{\vector b_1}{\vector a_2} = 0$ as required by the previous equations.
 
@@ -262,10 +262,10 @@ By definition, a solution to this equation is a $\vector x = (x_i)$ such that fo
 
 But 
 
-\begin{align*}
+\begin{equation*}
 \inner{\vector a_i}{\vector x} &= b_i \\
 \implies \sum_{j=1}^m a_{ij} x_j &= b_i
-,\end{align*}
+,\end{equation*}
 
 which says that the collection $x_1, \cdots, x_n$ solves the equation
 $$
@@ -295,14 +295,14 @@ $B_1 = \left( \prod_{i=1}^\ell E_i \right) B$,
 
 thus
 
-\begin{align*}
+\begin{equation*}
 A \vector x &= \vector b \\
 \implies E_\ell A \vector x &= E_\ell \vector b \\
 \implies E_{\ell-1} E_\ell A \vector x &= E_{\ell-1} E_\ell \vector b \\
 &\vdots \\
 \implies E_1 E_2 \cdots E_\ell A \vector x &= E_1 E_2 \cdots E_\ell A \vector b \\
 \implies A_1 \vector x &= B_1
-\end{align*}
+\end{equation*}
 
 ## Part 3
 
@@ -345,14 +345,14 @@ Then by rank-nullity, $\dim \ker A = 0$, so $\ker A = \theset{\vector 0}$.
 Now suppose $\vector v_1, \vector v_2$ are potentially distinct solutions to $A\vector x = \vector b$.
 
 Then,
-\begin{align*}
+\begin{equation*}
 A \vector v_1 &= A \vector v_2 = \vector b \\
 &\implies A \vector v_1 - A \vector v_2 =  \vector b - \vector b = \vector 0 \\
 &\implies A (\vector v_1 - \vector v_2) = \vector 0 \\
 &\implies \vector v_1 - \vector v_2 \in \ker A \\
 &\implies \vector v_1 - \vector v_2 = \vector 0 \\
 &\implies \vector v_1 = \vector v_2
-,\end{align*}
+,\end{equation*}
 
 which shows that any solution is unique.
 
@@ -394,25 +394,25 @@ We would like to construct an operation that replaces $a$ in $M$ with $d$.
 
 So let $\ell_1, \ell_2$ be parameters to be determined; we can then compute
 
-\begin{align*}
+\begin{equation*}
 P_1 A = \left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
 \left[\begin{array}{cc} a & b \\ c & d \end{array}\right] =
 \left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right]
-,\end{align*}
+,\end{equation*}
 
 where we now only have to choose $\ell_1, \ell_2$ so that $P_1$ is invertible.
 
 
 This lets us engineer an inverse matrix
 
-\begin{align*}
+\begin{equation*}
 P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array}\right] \\
 \implies P_1 P_1\inv &=
 \left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
 \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array}\right] \\
 &=
 \left[\begin{array}{cc} s\ell_2 - t\ell_1 & -ts + st \\ \ell_1 \ell_2 - \ell_2 \ell_1 & -t\ell_1 + s\ell_2  \end{array}\right]
-,\end{align*}
+,\end{equation*}
 
 which just says that we need to pick $\ell_1, \ell_2$ such that $s\ell_1 - t\ell_2 = 1$, since the off-diagonal entries vanish because $R$ is commutative.
 
@@ -428,11 +428,11 @@ We can observe that in the matrix $P_1 A$, since $d$ divides $a$ and $c$, $d$ al
 So write $k_1 d = \ell_1 a + \ell_2 c$, we can then perform a row operation by left-multiplying:
 
 
-\begin{align*}
+\begin{equation*}
 Q_1  P_1 A\definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
 \left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right] =
 \left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
-.\end{align*}
+.\end{equation*}
 
 We now carry out the same process with the top *row* instead of the first *column*.
 This begins by computing $d_1 = \gcd(d, sb + td)$, where we can immediately note that $d_1$ divides $d$.
@@ -454,12 +454,12 @@ where again $\ell_3, \ell_4$ are parameters that can be chosen to make $R_1$ inv
 
 We can again observe that $d_1$ divides the top-left and (now) the top-right entry, which means we can find a $k'$ such that 
 
-\begin{align*}
+\begin{equation*}
 Q_1 P_1 A R_1 S_1 \definedas 
 \left[\begin{array}{cc} d_1 &  d\ell_3 + (sb + td)\ell_4 \\ ? & ? \end{array}\right]
 \left[\begin{array}{cc} 1 & 0 \\ -k' & 1 \end{array}\right] =
 \left[\begin{array}{cc} d_1 & 0 \\ ? & ? \end{array}\right]
-,\end{align*}
+,\end{equation*}
 
 which puts us back in the original situation.
 
@@ -490,12 +490,12 @@ where either
 
 Without loss of generality, supposing the first case holds, we can write $d_N = \alpha y$; then
 
-\begin{align*}
+\begin{equation*}
 E N \definedas
 \left[\begin{array}{cc} 1 & 0 \\ 1 & -\alpha \end{array}\right]
 \left[\begin{array}{cc} d_N & 0 \\ y & z \end{array}\right] = 
 \left[\begin{array}{cc} d_N & 0 \\ 0 & z \end{array}\right]
-,\end{align*}
+,\end{equation*}
 
 where $E$ is again invertible, yielding a diagonal matrix.
 
