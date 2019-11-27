@@ -348,7 +348,7 @@ Then,
 \begin{align*}
 A \vector v_1 &= A \vector v_2 = \vector b \\
 &\implies A \vector v_1 - A \vector v_2 =  \vector b - \vector b = \vector 0 \\
-&\implies A (\vector v_1 - \vector v_2) = 0 \\
+&\implies A (\vector v_1 - \vector v_2) = \vector 0 \\
 &\implies \vector v_1 - \vector v_2 \in \ker A \\
 &\implies \vector v_1 - \vector v_2 = \vector 0 \\
 &\implies \vector v_1 = \vector v_2
