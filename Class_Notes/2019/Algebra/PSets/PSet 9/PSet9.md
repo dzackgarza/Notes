@@ -455,7 +455,7 @@ where again $\ell_3, \ell_4$ are parameters that can be chosen to make $R_1$ inv
 We can again observe that $d_1$ divides the top-left and (now) the top-right entry, which means we can find a $k'$ such that 
 
 \begin{align*}
-Q_1 P_1 A R_1 R_2 \definedas 
+Q_1 P_1 A R_1 S_1 \definedas 
 \left[\begin{array}{cc} d_1 &  d\ell_3 + (sb + td)\ell_4 \\ ? & ? \end{array}\right]
 \left[\begin{array}{cc} 1 & 0 \\ -k' & 1 \end{array}\right] =
 \left[\begin{array}{cc} d_1 & 0 \\ ? & ? \end{array}\right]
@@ -464,7 +464,9 @@ Q_1 P_1 A R_1 R_2 \definedas
 which puts us back in the original situation.
 
 We can then continue by obtaining a $d_2$ that divides $d_1$, doing row operations, and obtaining a matrix of the form
-$$Q_2Q_1 P_1 A  P_2 \definedas \left[\begin{array}{cc} d_2 & ? \\ 0 & ? \end{array}\right],$$
+$$
+P_2 Q_1P_1 A R_1 S_1 \definedas \left[\begin{array}{cc} d_2 & ? \\ 0 & ? \end{array}\right],
+$$
 and so on.
 
 In a PID, "to divide is to contain" for ideals, so this generates a sequence of ideals 
