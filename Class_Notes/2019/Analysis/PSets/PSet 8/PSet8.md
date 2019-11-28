@@ -231,6 +231,8 @@ $$
 \norm{\vector a}_2^2 \leq \norm{\vector a}_1^2 \iff \frac{\norm{\vector a}_2^2}{M^2} \leq 1 \iff \sum_j \abs{\frac{a_j}{M}}^2 \leq 1.
 $$
 
+But then we can use the fact that $\frac{a_j}{M} \leq 1$, and so $\frac{a_j}{M}^2 \leq \frac{a_j}{M}$
+
 
 
 
