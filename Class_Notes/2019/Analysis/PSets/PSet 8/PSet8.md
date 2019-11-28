@@ -272,7 +272,13 @@ This is immediate though, since $f_n \to f$ uniformly by construction, and the u
 
 ## Part b
 
-It suffices to produce a Cauchy sequence of $L^1$ functions that converges to a function that is not in $L^1$.
+It suffices to produce a Cauchy sequence of continuous functions $f_k$ such that $\norm{f_j - f_j}_1 \to 0$ but if we define $f(x) \definedas \lim f_k(x)$, we have either $\norm{f}_1 = \infty$ or $f$ is not continuous.
+
+To this end, take $f_k(x) = x^{k}$ for $k=1,2,\cdots,\infty$.
+Then 
+$$
+f_k \to \begin{cases} 0 & x\in [0, 1) \\ 1 & x =  1 \end{cases}.
+$$
 
 
 
