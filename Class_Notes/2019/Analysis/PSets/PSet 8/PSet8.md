@@ -277,10 +277,10 @@ It suffices to produce a Cauchy sequence of continuous functions $f_k$ such that
 To this end, take $f_k(x) = x^{k}$ for $k=1,2,\cdots,\infty$.
 Then 
 $$
-f_k \to \begin{cases} 0 & x\in [0, 1) \\ 1 & x =  1 \end{cases}.
+f_k \to \begin{cases} 0 & x\in [0, 1) \\ 1 & x =  1 \end{cases},
 $$
 
-
+which has a clear discontinuity, but $\int_0^1 x^k - x^j ~dx = \frac{1}{k+1} - \frac{1}{j+1}$.
 
 
 # Problem 5
