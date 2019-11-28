@@ -246,13 +246,13 @@ to obtain
 
 4. $\norm{\vector a}_\infty \leq \norm{\vector a}_2$:
 
-This follows from the fact that for any $n$, we have
+This follows from the fact that, we have
 $$
-\norm{\vector a}_\infty^n 
-\definedas \left(\sup_j \abs{a_j}\right)^n 
-= \sup_j \abs{a_j}^n
-\leq \sum_j \abs{a_j}^n 
-= \norm{\vector a}_2^n
+\norm{\vector a}_\infty^2 
+\definedas \left(\sup_j \abs{a_j}\right)^2 
+= \sup_j \abs{a_j}^2
+\leq \sum_j \abs{a_j}^2 
+= \norm{\vector a}_2^2
 $$
 
 and taking $n$th roots yields the desired inequality.
