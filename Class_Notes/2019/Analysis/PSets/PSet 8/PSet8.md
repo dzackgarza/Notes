@@ -228,7 +228,7 @@ Then $\norm{\vector a}_\infty = 1$, but the corresponding sum does not converge.
 
 Let $M = \norm{\vector a}_1^2$, then
 $$
-\norm{\vector a}_2^2 \leq \norm{\vector a}_1^2 \iff \frac{\norm{\vector a}_2^2}{M} \leq 1 \iff \sum \frac{\abs{a_j}^2}{M} < 1.
+\norm{\vector a}_2^2 \leq \norm{\vector a}_1^2 \iff \frac{\norm{\vector a}_2^2}{M} \leq 1 \iff \sum_j \frac{\abs{a_j}^2}{M} < 1.
 $$
 
 
