@@ -244,6 +244,8 @@ to obtain
 = \frac{1}{M} \sum_j \abs{a_j} \definedas 1
 .\end{align*}
 
+4. $\norm{\vector a}_\infty \leq \norm{\vector a}_2$:
+
 
 
 
