@@ -282,7 +282,7 @@ $$
 
 which has a clear discontinuity, but 
 $$
-\norm{f_k - f_j}_1 \definedas \int_0^1 x^k - x^j ~dx = \frac{1}{k+1} - \frac{1}{j+1} \to 0.
+\norm{f_k - f_j}_1 \definedas \int_0^1 x^k - x^j = \frac{1}{k+1} - \frac{1}{j+1} \to 0.
 $$
 
 
