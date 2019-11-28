@@ -255,7 +255,7 @@ $$
 = \norm{\vector a}_2^2
 $$
 
-and taking $n$th roots yields the desired inequality.
+and taking square roots yields the desired inequality.
 
 > Note: the middle inequality follows from the fact that if the sum were any smaller than the sup, then every term would have to be smaller.
 
