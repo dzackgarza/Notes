@@ -248,8 +248,12 @@ to obtain
 
 This follows from the fact that for any $n$, we have
 $$
-\norm{\vector a}_\infty^n \definedas \left(\sup_j \abs{a_j}\right)^n \leq \sum_j \abs{a_j}^n = \norm{\vector a}_2.
+\norm{\vector a}_\infty^n \definedas \left(\sup_j \abs{a_j}\right)^n \leq \left(\sum_j \abs{a_j} \right)^n = \norm{\vector a}_2^n
 $$
+
+and taking $n$th roots yields the desired inequality.
+
+> Note: the middle inequality follows from the fact that if the sum were any smaller than the sup, then every term would have to be smaller.
 
 
 
