@@ -246,6 +246,11 @@ to obtain
 
 4. $\norm{\vector a}_\infty \leq \norm{\vector a}_2$:
 
+This follows from the fact that for any $n$, we have
+$$
+\norm{\vector a}_\infty^n \definedas \left(\sup_j \abs{a_j}\right)^n \leq \sum_j \abs{a_j}^n = \norm{\vector a}_2.
+$$
+
 
 
 
