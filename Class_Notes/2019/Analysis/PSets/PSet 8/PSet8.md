@@ -257,7 +257,7 @@ $$
 
 and taking square roots yields the desired inequality.
 
-> Note: the middle inequality follows from the fact that if the sum were any smaller than the sup, then every term would have to be smaller. TODO
+> Note: the middle inequality follows from the fact that the supremum $S$ is the least upper bound of all of the $a_j$, so for all $j$, we have $a_j + \varepsilon > S$ for every $\varepsilon > 0$. But in particular, $a_k + a_j > a_j$ for any pair $a_j, a_k$ where $a_k \neq 0$, so $a_k + a_j > S$ and thus so is the entire sum.
 
 # Problem 4
 
