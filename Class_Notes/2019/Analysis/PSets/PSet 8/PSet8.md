@@ -226,9 +226,9 @@ Then $\norm{\vector a}_\infty = 1$, but the corresponding sum does not converge.
 
 3. $\norm{\vector a}_2 \leq \norm{\vector a}_1$:
 
-Let $M = \norm{\vector a}_1^2$, then
+Let $M = \norm{\vector a}_1$, then
 $$
-\norm{\vector a}_2^2 \leq \norm{\vector a}_1^2 \iff \frac{\norm{\vector a}_2^2}{M} \leq 1 \iff \sum_j \frac{\abs{a_j}^2}{M} < 1.
+\norm{\vector a}_2^2 \leq \norm{\vector a}_1^2 \iff \frac{\norm{\vector a}_2^2}{M^2} \leq 1 \iff \sum_j \abs{\frac{a_j}{M}}^2 < 1.
 $$
 
 
