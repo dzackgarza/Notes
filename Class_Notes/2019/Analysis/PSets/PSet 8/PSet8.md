@@ -224,8 +224,12 @@ This follows from the contrapositive: if $\vector a$ is a sequence with unbounde
 To see that the inclusion is strict, take $\vector a  = \theset{1}_{j=1}^\infty$. 
 Then $\norm{\vector a}_\infty = 1$, but the corresponding sum does not converge.
 
-3. $\norm{\vector a}_\infty \leq \norm{\vector a}_2 \leq \norm{\vector a}_1$:
+3. $\norm{\vector a}_2 \leq \norm{\vector a}_1$:
 
+Let $M = \norm{\vector a}_1^2$, then
+$$
+\norm{\vector a}_2^2 \leq \norm{\vector a}_1^2 \iff \frac{\norm{\vector a}_2^2}{M} \leq 1 \iff \sum \frac{\abs{a_j}^2}{M} < 1.
+$$
 
 
 
