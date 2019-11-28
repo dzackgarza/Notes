@@ -233,7 +233,7 @@ $$
 
 But then we can use the fact that 
 $$
-\frac{a_j}{M} \leq 1 \implies \frac{a_j}{M}^2 \leq \frac{a_j}{M}
+\abs{\frac{a_j}{M}} \leq 1 \implies \abs{\frac{a_j}{M}}^2 \leq \abs{\frac{a_j}{M}}
 $$
 
 
