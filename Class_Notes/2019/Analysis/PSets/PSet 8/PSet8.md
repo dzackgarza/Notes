@@ -272,6 +272,10 @@ This is immediate though, since $f_n \to f$ uniformly by construction, and the u
 
 ## Part b
 
+It suffices to produce a Cauchy sequence of $L^1$ functions that converges to a function that is not in $L^1$.
+
+
+
 
 # Problem 5
 
