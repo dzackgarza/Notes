@@ -261,6 +261,14 @@ and taking square roots yields the desired inequality.
 
 # Problem 4
 
+## Part a
+
+Let $\theset{f_k}$ be a Cauchy sequence, then $\norm{f_k - f_j}_u \to 0$.
+Define a candidate limit by fixing $x$, then using the fact that $\abs{f_j(x) - f_k(x)} \to 0$ as a Cauchy sequence in $\RR$, which converges to some $f(x)$.
+
+We want to show that and $\norm{f_n - f}_u \to 0$ and $f\in C([0, 1])$.
+
+
 
 
 # Problem 5
