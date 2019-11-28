@@ -270,7 +270,7 @@ We want to show that and $\norm{f_n - f}_u \to 0$ and $f\in C([0, 1])$.
 
 This is immediate though, since $f_n \to f$ uniformly by construction, and the uniform limit of continuous functions is continuous.
 
-
+## Part b
 
 
 # Problem 5
