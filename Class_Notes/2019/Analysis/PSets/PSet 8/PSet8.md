@@ -280,7 +280,10 @@ $$
 f_k \to \begin{cases} 0 & x\in [0, 1) \\ 1 & x =  1 \end{cases},
 $$
 
-which has a clear discontinuity, but $\int_0^1 x^k - x^j ~dx = \frac{1}{k+1} - \frac{1}{j+1}$.
+which has a clear discontinuity, but 
+$$
+\int_0^1 x^k - x^j ~dx = \frac{1}{k+1} - \frac{1}{j+1}
+$$
 
 
 # Problem 5
