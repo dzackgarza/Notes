@@ -251,7 +251,8 @@ $$
 \norm{\vector a}_\infty^n 
 \definedas \left(\sup_j \abs{a_j}\right)^n 
 = \sup_j \abs{a_j}^n
-\leq \sum_j \abs{a_j}^n = \norm{\vector a}_2^n
+\leq \sum_j \abs{a_j}^n 
+= \norm{\vector a}_2^n
 $$
 
 and taking $n$th roots yields the desired inequality.
