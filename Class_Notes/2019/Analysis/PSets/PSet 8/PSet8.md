@@ -239,7 +239,9 @@ $$
 to obtain
 
 \begin{align*}
-
+\sum_j \abs{\frac{a_j}{M}}^2 
+\leq \sum_j \abs{\frac{a_j}{M}} 
+= \frac{1}{M} \sum \abs{a_j} = 1
 .\end{align*}
 
 
