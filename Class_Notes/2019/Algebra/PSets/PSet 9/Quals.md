@@ -55,12 +55,13 @@ We also have $\chi_A(\lambda_i) = 0$ for all eigenvalues $\lambda_i$ by construc
 
 
 $\implies$:
-If every eigenvalue is distinct, then $\chi_A(x) = \prod_i (x-\lambda_i)$ in $\overline{k}[x]$.
+If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod_{i=1}^n (x-\lambda_i)$ in $\overline{k}[x]$.
 
-Take an invariant factor decomposition of $A$ with factors $f_1 \divides f_2 \divides \cdots \divides f_n$, we have $f_n(x) = m_A(x)$.
-Moreover, if $\lambda_i$ is an eigenvalue of $A$, then $f_j(\lambda_i) = 0$ for some $f_j$.
+Take an invariant factor decomposition of $A$ with factors $f_1 \divides f_2 \divides \cdots \divides f_n$; then $f_n(x) = m_A(x)$.
+Importantly, the multiplicity of each factor occurring is exactly 1.
 
-But then $m_A(\lambda_i) = 0$ for all $\lambda_i$, since each $f_j$ divides $m_A$.
+If $\lambda_i$ is an eigenvalue of $A$, then $\lambda_i$ is a root of some $f_j$.
+But then $m_A(\lambda_i) = 0$ for all $\lambda_i$, since each $f_j$ divides $f_n = m_A$.
 So every eigenvalue is a root of $m_A(x)$, and thus $\prod_i (x-\lambda_i) \divides m_A(x)$.
 
 But then we have both $m_A(x) \divides \chi_A(x)$ and $\chi_A(x) \divides m_A(x)$, so these polynomials are equal.
