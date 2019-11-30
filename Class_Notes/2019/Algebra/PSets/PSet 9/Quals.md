@@ -87,7 +87,7 @@ $$
 Then it is always the case that 
 
 - $m_A(x) = f_n(x)$, i.e. the minimal polynomial is the invariant factor of largest degree,
-- $p_A(x) = \prod_{i=j}^n f_j(x)$, i.e. the characteristic polynomial is the product of all of the invariant factors.
+- $\chi_A(x) = \prod_{i=j}^n f_j(x)$, i.e. the characteristic polynomial is the product of all of the invariant factors.
 
 $\qed$
 
@@ -131,6 +131,7 @@ Thus by lemma 1, the matrix $[A]_{\mathcal{B}}$ has distinct eigenvalues.
 
 
 $(2) \implies (1)$:
+
 Suppose $A$ has distinct eigenvalues, then by Lemma 1 we have 
 $$
 f_n(x) = \prod_{j=1}^n f_j(x),
