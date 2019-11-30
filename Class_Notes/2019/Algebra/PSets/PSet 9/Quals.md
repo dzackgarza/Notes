@@ -155,11 +155,15 @@ A = \left[\begin{array}{ccccc}{0} & {0} & {\dots} & {0} & {c_{0}} \\ {1} & {0} &
 \implies
 A \vector w_i = \begin{cases}
 \vector w_{i+1} & 0 \leq i < n-2 \\
-\sum_{i=0}^{n-1} c_i \vector w_i & i = n-1
-\end{cases}.
+\sum_{i=0}^{n-1} c_i \vector w_i & i = n-1,
+\end{cases}
 $$
 
+and thus we have
 
+$$
+V = \spanof_k \mathcal{B} = \spanof_k\theset{\vector w_0, \cdots \vector w_{n-1}} = \spanof_k\theset{\vector w_0, A\vector w_0, A^2\vector w_0, \cdots, A^{n-1} \vector w_0}.
+$$
 
 $\qed$
 
