@@ -133,9 +133,9 @@ Thus by lemma 1, the matrix $[A]_{\mathcal{B}}$ has distinct eigenvalues.
 $(2) \implies (1)$:
 
 Suppose $A$ has distinct eigenvalues. 
-By Lemma 2 we have 
+By Lemma 1, $\chi_A(x) = m_A(x)$, and so we have 
 $$
-f_n(x) = \prod_{j=1}^n f_j(x),
+\chi_A(x) = f_n(x) = \prod_{j=1}^n f_j(x) = m_A(x),
 $$
 
 which can only happen if $f_1(x) = f_2(x) = \cdots = f_{n-1}(x) = 1$, in which case there is only one nontrivial invariant factor and we have
