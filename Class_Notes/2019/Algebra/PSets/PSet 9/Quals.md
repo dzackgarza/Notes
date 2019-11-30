@@ -92,7 +92,9 @@ as an invariant factor decomposition of $V$ as a $k[x]$ module (defined by $p(x)
 
 $\qed$
 
-$\impliedby$:
+Now to prove the main result:
+
+$(2) \implies (1)$:
 Suppose $A$ has distinct eigenvalues, then by Lemma 1 we have 
 $$
 f_n(x) = \prod_{j=1}^n f_j(x),
