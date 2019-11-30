@@ -94,32 +94,7 @@ $\qed$
 
 Now to prove the main result:
 
-$(2) \implies (1)$:
-Suppose $A$ has distinct eigenvalues, then by Lemma 1 we have 
-$$
-f_n(x) = \prod_{j=1}^n f_j(x),
-$$
-
-which can only happen if $f_1(x) = f_2(x) = \cdots = f_{n-1}(x) = 1$, in which case there is only one nontrivial invariant factor and we have
-$$
-V \cong \frac{k[x]}{(f_n)}, \quad \ann(V) = (f_n)
-$$
-
-which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vector v$ for some $\vector v \in V$.
-
-
-We can now note that if $\deg f_n = \dim V = m$, we have
-
-\begin{align*}
-k[x]/(f_n) = \spanof_{k[x]}\theset{1, x, \cdots, x^{m-1}} 
-\iff 
-V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, \cdots x^{m-1}\vector v}
-,\end{align*}
-
-But then noting that the $k[x] \actson V$ by $w \mapsto xw$, so $k[T] \actson V$ by $w \mapsto Tw$.
-
-
-$\implies$:
+$(1) \implies (2)$:
 
 Suppose 
 $$
@@ -154,6 +129,32 @@ This means that with respect to the basis $\mathcal B$, $A$ has the following ma
 But this is the companion matrix for $p(x) = \sum_{i=0}^{n-1} c_i x^i$, which always satisfy the property that $p(x)$ equals both the characteristic *and* the minimal polynomial of $A$.
 
 Thus by lemma 1, the matrix $[A]_{\mathcal{B}}$ has distinct eigenvalues. 
+
+
+$(2) \implies (1)$:
+Suppose $A$ has distinct eigenvalues, then by Lemma 1 we have 
+$$
+f_n(x) = \prod_{j=1}^n f_j(x),
+$$
+
+which can only happen if $f_1(x) = f_2(x) = \cdots = f_{n-1}(x) = 1$, in which case there is only one nontrivial invariant factor and we have
+$$
+V \cong \frac{k[x]}{(f_n)}, \quad \ann(V) = (f_n)
+$$
+
+which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vector v$ for some $\vector v \in V$.
+
+
+We can now note that if $\deg f_n = \dim V = m$, we have
+
+\begin{align*}
+k[x]/(f_n) = \spanof_{k[x]}\theset{1, x, \cdots, x^{m-1}} 
+\iff 
+V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, \cdots x^{m-1}\vector v}
+,\end{align*}
+
+But then noting that the $k[x] \actson V$ by $w \mapsto xw$, so $k[T] \actson V$ by $w \mapsto Tw$.
+
 
 $\qed$
 
