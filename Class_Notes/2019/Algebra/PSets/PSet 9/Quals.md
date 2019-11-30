@@ -70,7 +70,14 @@ But then $m_A(x) = \prod_{i=1}^n (x-\lambda_i) = \chi_A(x)$.
 $\qed$
 
 $\impliedby$:
-Id $m_A(x) = \chi_A(x)$, then we must have $p_i = q_i$ for all $i$.
+If $m_A(x) = \chi_A(x)$, then we must have $p_i = q_i$ for all $i$.
+If we then consider $JCF(A)$, we then have
+
+- The number of Jordan block $J_{\lambda_i}$ is the dimension of the eigenspace $E_{\lambda_i}$,
+- $q_i = $ the sum of the sizes of all Jordan blocks $J_{\lambda_i}$, and
+- $p_i = $ the size of the largest Jordan block $J_{\lambda_i}$.
+
+So if $p_i = q_i$ for every $i$, there can only be a single Jordan block for every $\lambda_i$.
 
 
 **Lemma**
