@@ -45,7 +45,7 @@ However, $x\not\in k$ (nor $y$), which is a contradiction.
 # Problem 2
 
 **Lemma 1:**
-Then $A$ has $n$ distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
+$A$ has $n$ distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
 *Proof:*
 
