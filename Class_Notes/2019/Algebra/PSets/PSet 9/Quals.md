@@ -151,6 +151,8 @@ In particular, if we take the Rational Canonical Form of $A$, this says that $RC
 
 Thus $[A]_{\mathcal B}$ is the companion matrix to $f_k(x) \definedas \sum_{i=0}^n c_i x^i$ in this basis, which by construction satisfies 
 $$
+A = \left[\begin{array}{ccccc}{0} & {0} & {\dots} & {0} & {c_{0}} \\ {1} & {0} & {\dots} & {0} & {c_{1}} \\ {0} & {1} & {\dots} & {0} & {c_{2}} \\ {} & {} & {\ddots} & {} & {\vdots} \\ {0} & {0} & {\dots} & {1} & {c_{n-1}}\end{array}\right] 
+\implies
 A \vector w_i = \begin{cases}
 \vector w_{i+1} & 0 \leq i < n-2 \\
 \sum_{i=0}^{n-1} \vector w_i & i = n-1
