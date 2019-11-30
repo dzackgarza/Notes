@@ -151,12 +151,19 @@ which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vec
 We can now note that since $\deg f_n = \dim V = m$, we have
 
 \begin{align*}
-k[x]/(f_n) = \spanof_{k[x]}\theset{1, x, \cdots, x^{m-1}} 
+k[x]/(f_n) = \spanof_{k[x]}\theset{1, x, \cdots, x^{n-1}} 
 \iff 
-V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, \cdots x^{m-1}\vector v}
+V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, x^2 \vector v, \cdots x^{n-1}\vector v}
 ,\end{align*}
 
-But then noting that the $k[x] \actson V$ by $w \mapsto xw$, so $k[T] \actson V$ by $w \mapsto Tw$.
+But then noting that $k[x] \actson V$ by $\vector w \mapsto x \vector w$, so $k[A] \actson V$ by $\vector w \mapsto A\vector w$, which yields
+\begin{align*}
+V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, \cdots x^{n-1}\vector v}
+\iff 
+V \cong k[x] \vector v = \spanof_{k}\theset{\vector v, A\vector v, A^2\vector v, \cdots A^{n-1}\vector v}
+,\end{align*}
+
+
 
 
 $\qed$
