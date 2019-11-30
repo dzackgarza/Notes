@@ -44,7 +44,7 @@ However, $x\not\in k$ (nor $y$), which is a contradiction.
 
 # Problem 2
 
-**Lemma:**
+**Lemma 1:**
 Then $A$ has $n$ distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
 *Proof:*
@@ -78,8 +78,8 @@ Since $\chi_A(x)$ is a degree $n$ polynomial, this says that $\chi_A$ has $n$ di
 $\qed$
 
 
-**Lemma**
-If $A$ is a linear operator, let $k[x] \actson V$ in the usual way to obtain an invariant factor decomposition
+**Lemma 2:**
+Let $k[x] \actson V$ in the usual way with $A$ to obtain an invariant factor decomposition
 $$
 V = \frac{k[x]}{(f_1)} \oplus \frac{k[x]}{(f_2)} \oplus \cdots \oplus \frac{k[x]}{(f_n)}, \quad  f_1 \divides f_2 \divides \cdots \divides f_n.
 $$
