@@ -6,10 +6,10 @@ title: Qual Problems
 
 ## Part 1
 
-Definition:
+*Definition:*
 An element $r\in R$ is *irreducible* if whenever $r=st$, then either $s$ or $t$ is a unit.
 
-Definition:
+*Definition:*
 Two elements $r,s\in R$ are *associates* if $r = \ell s$ for some unit $\ell$.
 
 A ring $R$ is a *unique factorization domain* iff for every $r\in R$, there exists a set $\theset{p_i \mid 1\leq i \leq n}$ such that $r = u \prod_{i=1}^n p_i$ where $u$ is a unit and each $p_i$ is irreducible.
@@ -19,7 +19,7 @@ Moreover, this factorization is unique in the sense that if $r = w \prod_{i=1}^n
 
 ## Part 2
 
-A ring $R$ is a *principal ideal domain* iff whenever $I \normal R$ is an ideal of $R$, there is a single element $r_i \in R$ such that $I = \generators{r_i}$.
+A ring $R$ is a *principal ideal domain* iff whenever $I \normal R$ is an ideal of $R$, there is a single element $r_i \in R$ such that $I = (r_i)$.
 
 ## Part 3
 
@@ -27,18 +27,166 @@ An example of a UFD that is not a PID is given by $R = k[x, y]$ for $k$ a field.
 
 That $R$ is a UFD follows from the fact that if $k$ is a field, then $k$ has no prime elements since every non-zero element is a unit.
 So the factorization condition holds vacuously for $k$, and $k$ is a UFD.
-But then we can use the following theorem:
+But then we can use the following result:
 
-Theorem:
-If $R$ is a UFD, then $R[x]$ is a UFD.
+> **Theorem**: If $R$ is a UFD, then $R[x]$ is a UFD.
 
-Since $k$ is a UFD, the theorem implies that $k[x]$ is a UFD, from which it follows that $k[x][y] = [kx, y]$ is also a UFD.
+Since $k$ is a UFD, the theorem implies that $k[x]$ is a UFD, from which it follows that $k[x][y] = k[x, y]$ is also a UFD.
 
-To see that $R$ is not a PID, consider the ideal $I = \generators{x, y}$, and suppose $I = \generators{g}$ for some single $g\in k[x, y]$.
+To see that $R$ is not a PID, consider the ideal $I = (x, y)$, and suppose $I = (g)$ for some single $g\in k[x, y]$.
 
 Note that $I \neq R$, since $I$ contains no degree zero polynomials.
-Moreover, since $\generators{x} \subset I = \generators{g}$ (and similarly for $y$), we have $g\divides x$ and $g\divides y$, which forces $\deg g = 0$. 
-So in fact $g\in k$, but then $\generators{g} = g\inv \generators{g} = \generators{1} = k$, so this forces $I = k \normal k[x, y]$.
-However, it is also the case that $x\not\in k$ (nor $y$), which is a contradiction.
+Moreover, since $(x) \subset I = (g)$ (and similarly for $y$), we have $g\divides x$ and $g\divides y$, which forces $\deg g = 0$. 
+
+So in fact $g\in k$ and thus $g$ is invertible, but then $(g) = g\inv (g) = (1) = k$, so this forces $I = k \normal k[x, y]$.
+However, $x\not\in k$ (nor $y$), which is a contradiction.
 
 
+# Problem 2
+
+**Lemma:**
+Let $A$ be a linear operator, $m_A(x)$ its minimal polynomial, and $p_A(x)$ its characteristic polynomial.
+Then $A$ has distinct eigenvalues $\iff m_A(x) = p_A(x)$.
+
+
+Proof:
+We always have $m_A(x) \divides p_A(x)$, since $p_A(A) = 0$ by Cayley-Hamilton and $m_A(x)$ is the *minimal* polynomial for which this holds.
+We can also note that $p_A(\lambda_i) = 0$ for all eigenvalues $\lambda_i$ by construction.
+Moreover, if every eigenvalue is distinct, then we have $p_A(x) = \prod_i (x-\lambda_i)$ in $\overline{k}[x]$.
+
+Given an invariant factor decomposition of $A$ with factors $f_1 \divides f_2 \divides \cdots \divides f_n \definedas m_A(x)$,
+it is the case that if $\lambda_i$ is an eigenvalue of $A$, then $f_j(\lambda_i) = 0$ for some $f_j$.
+
+But then $m_A(\lambda_i) = 0$ for all $\lambda_i$, since each $f_j$ divides $m_A$. 
+So every eigenvalue is a root of $m_A(x)$, and thus $\prod_i (x-\lambda_i) \divides m_A(x)$.
+
+But then we have both $m_A(x) \divides p_A(x)$ and $p_A(x) \divides m_A(x)$, so these polynomials are equal.
+
+$\qed$
+
+**Lemma**
+If $A$ is a linear operator and we write
+$$
+V = \frac{k[x]}{(f_1)} \oplus \frac{k[x]}{(f_2)} \oplus \cdots \oplus \frac{k[x]}{(f_n)}
+$$
+
+as an invariant factor decomposition of $V$ as a $k[x]$ module (defined by $p(x) \actson \vector v \definedas p(A)(\vector v))$, with $f_1 \divides f_2 \divides \cdots$, then we always have
+
+- $m_A(x) = f_n(x)$, i.e. the minimal polynomial is the invariant factor of largest degree,
+- $p_A(x) = \prod_{i=j}^n f_j(x)$, i.e. the characteristic polynomial is the product of all of the invariant factors.
+
+$\qed$
+
+$\impliedby$:
+Suppose $A$ has distinct eigenvalues, then by Lemma 1 we have 
+$$
+f_n(x) = \prod_{j=1}^n f_j(x),
+$$
+
+which can only happen if $f_1(x) = f_2(x) = \cdots = f_{n-1}(x) = 1$, in which case there is only one nontrivial invariant factor and we have
+$$
+V \cong \frac{k[x]}{(f_n)}, \quad \ann(V) = (f_n)
+$$
+
+which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vector v$ for some $\vector v \in V$.
+
+
+We can now note that if $\deg f_n = \dim V = m$, we have
+
+\begin{align*}
+k[x]/(f_n) = \spanof_{k[x]}\theset{1, x, \cdots, x^{m-1}} 
+\iff 
+V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, \cdots x^{m-1}\vector v}
+,\end{align*}
+
+But then noting that the $k[x] \actson V$ by $w \mapsto xw$, so $k[T] \actson V$ by $w \mapsto Tw$.
+
+
+$\implies$:
+
+Suppose 
+$$
+V = \spanof_k\theset{\vector v, A\vector v, A^2 \vector v, \cdots A^{n-1}\vector v} \definedas \spanof_k \mathcal B
+$$ 
+where $\dim_k V = n$.
+
+Then $A^n \vector v$ is necessarily a linear combination of these basis elements, and in particular, there are coefficients $c_i$ (not all zero) such that
+$$
+A^n \vector v = \sum_{i=0}^{n-1} c_i A^i \vector v.
+$$
+
+This means that with respect to the basis $\mathcal B$, $A$ has the following matrix representation:
+
+
+\begin{align*}
+[A]_{\mathcal B} = 
+\left[\begin{array}{ccccc}{0} & {0} & {\dots} & {0} & {c_{0}} \\ {1} & {0} & {\dots} & {0} & {c_{1}} \\ {0} & {1} & {\dots} & {0} & {c_{2}} \\ {} & {} & {\ddots} & {} & {\vdots} \\ {0} & {0} & {\dots} & {1} & {c_{n-1}}\end{array}\right]
+,\end{align*}
+
+which we compute by considering the images of all basis elements under $A$. 
+Letting $\mathcal B = \theset{\vector w_i \definedas A^i \vector v \mid 0\leq i \leq n-1}$, we have
+
+\begin{align*}
+\vector w_0 \definedas \vector v &\mapsto A\vector v \definedas \vector w_1 \\
+\vector w_1 \definedas A\vector v &\mapsto A^2\vector v \definedas \vector w_2 \\
+\vector w_2 \definedas A^2\vector v &\mapsto A^3\vector v \definedas \vector w_3 \\
+\vdots \quad & \quad \vdots \\
+\vector w_{n-2} \definedas A^{n-2}\vector v &\mapsto A^{n-1}\vector v \definedas \vector w_{n-1} \\
+\vector w_{n-1} \definedas A^{n-1}\vector v &\mapsto A^n\vector v = \sum_{i=0}^{n-1} c_i A^i \vector v_i \definedas \sum_{i=0}^{n-1} c_i \vector w_i
+.\end{align*}
+
+
+# Problem 3
+
+## Part 1
+
+Let $\vector v = [0,1,0]^t$, We compute
+
+\begin{align*}
+M\vector v =
+\left[\begin{array}{ccc}
+     1 & 0 & x \\
+     0 & 1 & 0 \\
+     y & 0 & 1
+\end{array}\right]
+\left[\begin{array}{c} 0  \\ 1  \\ 0 \end{array}\right] = 
+\left[\begin{array}{cc} 1(0) + 0(1) + x(0)  \\ 0(0) + 1(1) + 0(0) \\ y(0) + 0(1) + 1(0) \end{array}\right] = 
+\left[\begin{array}{cc} 0 \\ 1 \\ 0 \end{array}\right] = 
+1 \left[\begin{array}{cc} 0 \\ 1 \\ 0 \end{array}\right]
+,\end{align*}
+
+
+which shows that $\vector v$ is an eigenvector of $M$ with eigenvalue $\lambda = 1$.
+
+## Part 2
+
+Noting that the rank is the dimension of the column space, we find that 
+
+- $\rank(M) \geq 1$, since it is not the zero matrix, 
+- $\rank(M) \geq 2$, since neither $[1,0,y]^t$ or $[x,0,1]^t$ can be in the span of $[0,1,0]^t$, and
+- $\rank(M) = 3 \iff \det(M) \neq 0$.
+
+So we compute
+
+\begin{align*}
+\det_M(x, y) = \left|\begin{array}{ccc}
+     1 & 0 & x \\
+     0 & 1 & 0 \\
+     y & 0 & 1
+\end{array}\right| = 1(1-0) - 0(1-xy) + x(-y) = 1 - xy
+,\end{align*}
+
+and so $\det_M(x, y) = 0 \iff xy = 1$.
+Thus
+
+\begin{align*}
+\rank(M) = \begin{cases} 3 & xy = 1 \\ 2 & \text{else.} \end{cases}
+\end{align*}
+
+
+## Part 3
+
+Since $M$ is diagonalizable $\iff M$ is full rank, which in this case means $\rank(M) = 3$, we have
+$$
+S = \theset{(x, y) \in \RR^2 \mid M \text{ is diagonalizable }} = \theset{ \left( x, \frac 1 x \right) \mid x\in \RR\setminus\theset{0} } \subset \RR^2.
+$$

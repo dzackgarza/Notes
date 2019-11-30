@@ -173,18 +173,16 @@ Note that taking square roots in (1) immediately yields
 
 2. $L^2(X) \subset L^1(X) + L^\infty(X)$:
 
-Let $f\in L^2(X)$. 
-Noting that continuous functions with compact support are dense in $L^2(X)$, take an approximating sequence $\theset{g_n} \subseteq C_c^0(X)$ with $\norm{g_n - f}_2 \to 0$.
+Let $f\in L^2(X)$, then write $S = \theset{x \suchthat \abs{f(x)} \geq 1}$ and $f = \chi_{S} f + \chi_{S^c} f \definedas g + h$.
 
+Since $x\geq 1 \implies x^2 \geq x$, we have
+$$
+\norm{g}_1^2 = \int_X \abs{g} = \int_S \abs{f} \leq \int_S \abs{f}^2 \leq \int_X \abs{f}^2 = \norm{f}_2^2 < \infty,
+$$
+and so $g\in L^1(X)$.
 
-The claim is that we can choose $N$ large enough such that when we write $f = (f - g_N) + g_N$, we will have $\norm{f - g_N}_1 < \infty$ and $\norm{g_N}_\infty < \infty$, which establishes the desired result.
+To see that $h \in L^\infty(X)$, we just note that $h$ is bounded by 1 by construction, and so $\norm{h}_\infty \leq 1 < \infty$.
 
-
-To see that $g_N \in L^\infty(X)$, we can just note that since each $g_n$ is $C_c^0$, they are all **bounded**, say by $M <\infty$, in which case $\norm{g_N}_\infty \leq M < \infty$.
-
-To see that $g_N \in L^1(X)$, we can use the fact that $\norm{f-g_N}_2 \leq \norm{f}_2 + \norm{g_N}_2 < \infty$, so $f-g_N \in L^2(X)$.
-
-TODO
 
 # Problem 3
 
@@ -286,8 +284,154 @@ $$
 \norm{f_k - f_j}_1 \definedas \int_0^1 x^k - x^j = \frac{1}{k+1} - \frac{1}{j+1} \to 0.
 $$
 
-
-
 # Problem 5
 
+## Part a
+
+$\impliedby$: It suffices to show that the map
+
+\begin{align*}
+H &\surjects \ell^2(\NN) \\
+\vector x &\mapsto \theset{ \inner{\vector x}{\vector u_n}  }_{n=1}^\infty \definedas \theset{a_n}_{n=1}^\infty
+\end{align*}
+
+is a surjection, and for every $\vector a \in \ell^2(\NN)$, we can pull back to some $\vector x \in H$ such that $\norm{\vector x}_H = \norm{\vector a}_{\ell^2(\NN)}$.
+
+
+Following the proof in Neil's notes, let $\vector a \in \ell^2(\NN)$ be given by $\vector a = \theset{a_j}$, and define $S_N = \sum_{n=1}^N a_n \vector u_n$.
+We then have
+
+
+\begin{align*}
+\norm{S_N - S_M}_H 
+&= \norm{\sum_{n=M+1}^N a_n \vector u_n}_H & \\
+&= \sum_{n=M+1}^N \norm{a_n \vector u_n}_H &\text{by Pythagoras, since the $\vector u_n$ are orthogonal} \\
+&= \sum_{n=M+1}^N \abs{a_n}_\CC ~~~~\norm{\vector u_n}_H \\ 
+&= \sum_{n=M+1}^N \abs{a_n}_\CC &\text{since the $\vector u_n$ are orthonormal} \\
+&\to 0 &\text{as $N,M \to \infty$}
+,\end{align*}
+
+which goes to zero because it is the tail of a convergent sum in $\RR$.
+
+Since $H$ is complete, every Cauchy sequence converges, and in particular $S_N \to \vector x \in H$ for some $\vector x$.
+
+We now have
+
+\begin{align*}
+\abs{\inner{\vector x}{\vector u_n} }
+&= \abs{\inner{\vector x - S_N + S_N}{\vector u_n}} &\forall n, N\\
+&= \abs{ \inner{\vector x - S_N}{\vector u_n} + \inner{S_N}{\vector u_n} } &\forall n, N \\
+&\leq \norm{\vector x - S_N}_H \norm{\vector u_n}_H + \abs{ \inner{S_N}{\vector u_n} } &\forall n, N \text{ by Cauchy-Schwartz } \\
+&= \norm{\vector x - S_N}_H + \abs{ \inner{S_N}{\vector u_n} } &\forall n, N \\ 
+&= \norm{\vector x - S_N}_H + \abs{ a_n } &\forall N \geq n  \\
+&\to 0 + \abs{a_n} &\text{as $N\to\infty$}
+,\end{align*}
+
+where we just note that 
+$$
+\inner{S_N}{\vector u_n} 
+= \inner{\sum_{j=1}^N a_j \vector u_j}{\vector u_n} = \sum_{j=1}^N a_j \inner{\vector u_j}{\vector u_n} = a_n \iff N\geq n
+$$
+
+since $\inner{\vector u_j}{\vector u_n} = \delta_{j, n}$ and so the $a_n$ term is extracted iff $\vector u_n$ actually appears as a summand.
+
+We thus have
+$$
+\inner{\vector x}{\vector u_n} = \abs{a_n} \quad\forall n,
+$$
+
+and since $\theset{\vector u_n}$ is a basis, we can apply Parseval's identity to obtain
+
+
+\begin{align*}
+\norm{\vector x}_H^2 = \sum_{n=1}^\infty \abs{\inner{\vector x}{\vector u_n}} \definedas \sum_{n=1}^\infty \abs{a_n} 
+.\end{align*}
+
+$\implies$:
+Given a vector $\vector x = \sum_n a_n \vector u_n$, we can immediately note that both $\norm{\vector x}_H < \infty$ and $\inner{\vector x}{\vector u_n} = a_n$.
+Since $\theset{\vector u_n}$ being a basis is equivalent to Parseval's identity holding, we immediately obtain 
+$$
+\sum_{n=1}^\infty \abs{a_n} = \sum_{n=1}^\infty \abs{ \inner{\vector x}{\vector u_n} } =  
+\norm{\vector x}_H^2 < \infty.
+$$
+
+## Part b
+
+In both cases, suppose such a linear functional exists.
+
+1. Using part (a), we know that $H$ is isometrically isomorphic to $\ell^2(\NN)$, and thus $H\dual_f \cong (\ell^2(\NN))\dual \cong_d \ell^2(\NN)$.
+
+> Note: this follows since $\ell^p(\NN)\dual \cong \ell^q(\NN)$ where $p, q$ are Holder conjugates.
+
+But then, since $L \in H\dual$, under the isometry $f$ it maps to the functional
+
+\begin{align*}
+L_\ell: \ell^2(\ZZ) \to \CC \\
+\vector a = \theset{a_n} \mapsto \sum_{n\in \NN} a_n n\inv
+,\end{align*}
+
+which under the identification of dual spaces $g$ identifies $L_\ell$ with the vector $\vector b \definedas \theset{n\inv}_{n\in \NN}$.
+
+Most importantly, these are all isometries, so we have the equalities 
+$$
+\norm{L}_H = \norm{L_\ell}_{\ell^2(\NN)\dual} = \norm{\vector b}_{\ell^2(\NN)},
+$$
+
+so it suffices to compute the $\ell^2$ norm of the sequence $b_n = \frac 1 n$.
+To this end, we have
+
+\begin{align*}
+\norm{\vector b}_{\ell^2(\NN)}^2 
+&= \sum_n \abs{\frac 1 n }^2 \\
+&= \sum_n \frac 1 {n^2} \\
+&= \frac{\pi^2}{6}
+,\end{align*}
+
+which shows that $\norm{L}_H = \pi/\sqrt 6$.
+
+2. Using the same argument, we obtain $\vector b = \theset{n^{-1/2}}_{n\in \NN}$, and thus
+
+\begin{align*}
+\norm{L}_H^2 = \norm{\vector b}_{\ell^2(\NN)}^2 = \sum_n \abs{n^{-1/2}}^2 \to \infty
+.\end{align*}
+
+which shows that $L$ is unbounded, and thus can not be a continuous linear functional.
+$\qed$
+
+
 # Problem 6
+
+We can use the fact that $\Lambda_p \in (L^p)\dual \cong L^q$, where this is an isometric isomorphism given by the map
+
+\begin{align*}
+I: L^q \to (L^p)\dual \\
+g \mapsto (f \mapsto \int fg)
+.\end{align*}
+
+Under this identification, for any $\Lambda \in (L^p)\dual$, to any $\Lambda \in (L^p)\dual$ we can associate a $g\in L^q$, where we have 
+$$
+\norm{\Lambda}_{(L^p)\dual} = \norm{g}_{L^q}.
+$$
+In this case, we can identify $\Lambda_p = I(g)$, where $g(x) = x^2$ and we can verify that $g\in L^q$ by computing its norm:
+
+
+\begin{align*}
+\norm{g}_{L^q}^q 
+&= \int_0^1 (x^2)^q ~dx \\
+&= \frac{x^{2q+1}}{2q+1} \Bigg|_{0}^1 \\
+&= \frac{1}{2q+1} \\
+&= \frac{p-1}{3p-1} < \infty
+,\end{align*}
+
+where we identify $q = \frac p {p-1}$, and note that this is finite for all $1\leq p \leq \infty$ since it limits to $\frac 1 3$.
+
+But then
+
+$$
+\norm{\Lambda_p}_{(L^p)\dual} = \norm{g}_{L^q} 
+= \left( \frac{p-1}{3p-1} \right)^{\frac 1 q}
+= \left( \frac{p-1}{3p-1} \right)^{\frac {p-1}{p} },
+$$
+
+which shows that $\Lambda_p$ is bounded and thus a continuous linear functional.
+$\qed$
