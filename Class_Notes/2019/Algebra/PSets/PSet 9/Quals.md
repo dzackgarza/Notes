@@ -147,22 +147,15 @@ $$
 
 which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vector v$ for some $\vector v \in V$.
 
+In particular, if we take the Rational Canonical Form of $A$, this says that $RCF(A)$ has only a single block in a suitable ordered basis $\mathcal B = \theset{\vector w_0, \cdots, \vector w_{n-1}}$.
 
-We can now note that since $\deg f_n = \dim V = m$, we have
-
-\begin{align*}
-k[x]/(f_n) = \spanof_{k[x]}\theset{1, x, \cdots, x^{n-1}} 
-\iff 
-V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, x^2 \vector v, \cdots x^{n-1}\vector v}
-,\end{align*}
-
-But then noting that $k[x] \actson V$ by $\vector w \mapsto x \vector w$, so $k[A] \actson V$ by $\vector w \mapsto A\vector w$, this yields
-\begin{align*}
-V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, \cdots x^{n-1}\vector v}
-\iff 
-V \cong k[x] \vector v = \spanof_{k}\theset{\vector v, A\vector v, A^2\vector v, \cdots A^{n-1}\vector v}
-,\end{align*}
-
+Thus $A$ is the companion matrix to $f_k(x) \definedas \sum_{i=0}^n c_i x^i$ in this basis, which by construction satisfies 
+$$
+A \vector w_i = \begin{cases}
+\vector w_{i+1} & 0 \leq i < n-2 \\
+\sum{i=0}^{n-1} \vector w_i & i = n-1
+\end{cases}.
+$$
 
 
 
