@@ -115,18 +115,9 @@ $$
 A^n \vector v = \sum_{i=0}^{n-1} c_i A^i \vector v.
 $$
 
-This means that with respect to the basis $\mathcal B$, $A$ has the following matrix representation:
-
-
-\begin{align*}
-[A]_{\mathcal B} = 
-\left[\begin{array}{ccccc}{0} & {0} & {\dots} & {0} & {c_{0}} \\ {1} & {0} & {\dots} & {0} & {c_{1}} \\ {0} & {1} & {\dots} & {0} & {c_{2}} \\ {} & {} & {\ddots} & {} & {\vdots} \\ {0} & {0} & {\dots} & {1} & {c_{n-1}}\end{array}\right]
-,\end{align*}
-
-which we compute by considering the images of all basis elements under $A$. 
+The consider computing the matrix of $A$ in $\mathcal B$ by considering the images of all basis elements under $A$. 
 
 Letting $\mathcal B = \theset{\vector w_i \definedas A^i \vector v \mid 0\leq i \leq n-1}$, we have
-
 \begin{align*}
 \vector w_0 \definedas \vector v &\mapsto A\vector v \definedas \vector w_1 \\
 \vector w_1 \definedas A\vector v &\mapsto A^2\vector v \definedas \vector w_2 \\
@@ -135,6 +126,12 @@ Letting $\mathcal B = \theset{\vector w_i \definedas A^i \vector v \mid 0\leq i 
 \vector w_{n-2} \definedas A^{n-2}\vector v &\mapsto A^{n-1}\vector v \definedas \vector w_{n-1} \\
 \vector w_{n-1} \definedas A^{n-1}\vector v &\mapsto A^n\vector v = \sum_{i=0}^{n-1} c_i A^i \vector v_i \definedas \sum_{i=0}^{n-1} c_i \vector w_i
 .\end{align*}
+
+This means that with respect to the basis $\mathcal B$, $A$ has the following matrix representation:
+\begin{align*}
+[A]_{\mathcal B} = 
+\left[\begin{array}{ccccc}{0} & {0} & {\dots} & {0} & {c_{0}} \\ {1} & {0} & {\dots} & {0} & {c_{1}} \\ {0} & {1} & {\dots} & {0} & {c_{2}} \\ {} & {} & {\ddots} & {} & {\vdots} \\ {0} & {0} & {\dots} & {1} & {c_{n-1}}\end{array}\right]
+,\end{align*}
 
 
 # Problem 3
