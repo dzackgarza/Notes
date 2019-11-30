@@ -64,8 +64,8 @@ If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod_{i=1}^n (x-\lambda_
 Noting that every exponent is 1, we have $q_i = 1$ for all $i$, which forces $p_i = 1$ and thus $m_A(x) = \chi_A(x)$.
 
 $\impliedby$:
-If $m_A(x) = \chi_A(x)$, then we must have $p_i = q_i$ for all $i$.
-If we then consider $JCF(A)$, we then have
+If $m_A(x) = \chi_A(x)$, then $p_i = q_i$ for all $i$.
+If we then consider $JCF(A)$, we have
 
 - The number of Jordan block $J_{\lambda_i}$ is the dimension of the eigenspace $E_{\lambda_i}$,
 - $q_i =$ the sum of the sizes of all Jordan blocks $J_{\lambda_i}$, and
