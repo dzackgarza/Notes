@@ -61,7 +61,7 @@ m_A(x) = \prod_i (x-\lambda_i)^{p_i} \\
 where $1 \leq p_i \leq q_i$ for every $i$.
 
 $\implies$:
-If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod{i=1}^n (x-\lambda_i)$ in $\overline{k} [x]$. 
+If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod_{i=1}^n (x-\lambda_i)$ in $\overline{k} [x]$. 
 Noting that every exponent is 1, we have $q_i = 1$ for all $i$, which forces $p_i = 1$.
 
 But then $m_A(x) = \prod_{i=1}^n (x-\lambda_i) = \chi_A(x)$.
