@@ -162,7 +162,7 @@ $$
 and thus we have
 
 $$
-V = \spanof_k \mathcal{B} = \spanof_k\theset{\vector w_0, \cdots \vector w_{n-1}} = \spanof_k\theset{\vector w_0, A\vector w_0, A^2\vector w_0, \cdots, A^{n-1} \vector w_0}.
+V \cong \spanof_k \mathcal{B} = \spanof_k\theset{\vector w_0, \cdots \vector w_{n-1}} \cong \spanof_k\theset{\vector w_0, A\vector w_0, A^2\vector w_0, \cdots, A^{n-1} \vector w_0}.
 $$
 
 $\qed$
