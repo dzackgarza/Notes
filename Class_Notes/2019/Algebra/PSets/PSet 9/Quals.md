@@ -131,8 +131,14 @@ This means that with respect to the basis $\mathcal B$, $A$ has the following ma
 \begin{align*}
 [A]_{\mathcal B} = 
 \left[\begin{array}{ccccc}{0} & {0} & {\dots} & {0} & {c_{0}} \\ {1} & {0} & {\dots} & {0} & {c_{1}} \\ {0} & {1} & {\dots} & {0} & {c_{2}} \\ {} & {} & {\ddots} & {} & {\vdots} \\ {0} & {0} & {\dots} & {1} & {c_{n-1}}\end{array}\right]
-,\end{align*}
+\end{align*}
 
+
+But this is the companion matrix for $p(x) = \sum c_i x^i$, which always satisfy the property that their characteristic polynomials equal their minimal polynomials.
+
+So by lemma 1, the matrix $[A]_{\mathcal{B}}$ has distinct eigenvalues. 
+
+$\qed$
 
 # Problem 3
 
