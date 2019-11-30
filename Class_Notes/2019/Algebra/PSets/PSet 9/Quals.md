@@ -142,12 +142,11 @@ which can only happen if $f_1(x) = f_2(x) = \cdots = f_{n-1}(x) = 1$, in which c
 
 So we have
 $$
-V \cong \frac{k[x]}{(f_k)}, \quad \ann(V) = (f_k), \quad \deg f_k = n,
+V \cong \frac{k[x]}{(f_k)}, \quad \ann(V) = (f_k), \quad \deg f_k = n.
 $$
 
-which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vector v$ for some $\vector v \in V$.
 
-In particular, if we take the Rational Canonical Form of $A$, this says that $RCF(A)$ has only a single block in a suitable ordered basis $\mathcal B = \theset{\vector w_0, \cdots, \vector w_{n-1}}$.
+If we now take the Rational Canonical Form of $A$, it follows that $RCF(A)$ has only a *single* block in a suitable ordered basis $\mathcal B = \theset{\vector w_0, \cdots, \vector w_{n-1}}$.
 
 So write $f_k(x) = \sum_{i=0}^n c_i x^i$; then $[A]_{\mathcal B}$ is the companion matrix to $f_k(x)$ in the basis $\mathcal B$, which by construction satisfies 
 $$
