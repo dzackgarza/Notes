@@ -49,7 +49,7 @@ $A$ has $n$ distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
 *Proof:*
 
-We'll use the fact that every eigenvalue is a always root of both $m_A(x)$ and $\chi_A(x)$ (potentially with differing multiplicities), so we can write
+The eigenvalues are always root of both $m_A(x)$ and $\chi_A(x)$ (potentially with differing multiplicities), so we can write
 
 \begin{align*}
 m_A(x) = \prod_i (x-\lambda_i)^{p_i} \\
