@@ -142,7 +142,7 @@ which can only happen if $f_1(x) = f_2(x) = \cdots = f_{n-1}(x) = 1$, in which c
 
 So we have
 $$
-V \cong \frac{k[x]}{(f_n)}, \quad \ann(V) = (f_n)
+V \cong \frac{k[x]}{(f_k)}, \quad \ann(V) = (f_k), \quad \def f_k = n,
 $$
 
 which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vector v$ for some $\vector v \in V$.
