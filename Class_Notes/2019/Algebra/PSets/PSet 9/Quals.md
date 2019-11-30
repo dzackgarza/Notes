@@ -46,21 +46,21 @@ However, $x\not\in k$ (nor $y$), which is a contradiction.
 
 **Lemma:**
 Let $A$ be a linear operator, $m_A(x)$ its minimal polynomial, and $p_A(x)$ its characteristic polynomial.
-Then $A$ has distinct eigenvalues $\iff m_A(x) = p_A(x)$.
+Then $A$ has distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
 
 Proof:
-We always have $m_A(x) \divides p_A(x)$, since $p_A(A) = 0$ by Cayley-Hamilton and $m_A(x)$ is the *minimal* polynomial for which this holds.
-We can also note that $p_A(\lambda_i) = 0$ for all eigenvalues $\lambda_i$ by construction.
-Moreover, if every eigenvalue is distinct, then we have $p_A(x) = \prod_i (x-\lambda_i)$ in $\overline{k}[x]$.
+We always have $m_A(x) \divides \chi_A(x)$, since $\chi_A(A) = 0$ by Cayley-Hamilton and $m_A(x)$ is the *minimal* polynomial for which this holds.
+We can also note that $\chi_A(\lambda_i) = 0$ for all eigenvalues $\lambda_i$ by construction.
+Moreover, if every eigenvalue is distinct, then we have $\chi_A(x) = \prod_i (x-\lambda_i)$ in $\overline{k}[x]$.
 
-Given an invariant factor decomposition of $A$ with factors $f_1 \divides f_2 \divides \cdots \divides f_n \definedas m_A(x)$,
-it is the case that if $\lambda_i$ is an eigenvalue of $A$, then $f_j(\lambda_i) = 0$ for some $f_j$.
+Given an invariant factor decomposition of $A$ with factors $f_1 \divides f_2 \divides \cdots \divides f_n$, we have $f_n(x) = m_A(x)$.
+Moreover, if $\lambda_i$ is an eigenvalue of $A$, then $f_j(\lambda_i) = 0$ for some $f_j$.
 
-But then $m_A(\lambda_i) = 0$ for all $\lambda_i$, since each $f_j$ divides $m_A$. 
+But then $m_A(\lambda_i) = 0$ for all $\lambda_i$, since each $f_j$ divides $m_A$.
 So every eigenvalue is a root of $m_A(x)$, and thus $\prod_i (x-\lambda_i) \divides m_A(x)$.
 
-But then we have both $m_A(x) \divides p_A(x)$ and $p_A(x) \divides m_A(x)$, so these polynomials are equal.
+But then we have both $m_A(x) \divides \chi_A(x)$ and $\chi_A(x) \divides m_A(x)$, so these polynomials are equal.
 
 $\qed$
 
