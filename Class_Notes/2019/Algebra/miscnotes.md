@@ -34,6 +34,12 @@ then
   - $f_n(x) = \min_T(x)$ (i.e., the minimal polynomial is the invariant factor of highest degree)
   - $\prod_{j=1}^n f_j(x) = \ch_T(x)$.
 
+- The following are equivalent for a linear operator on a vector space of nonzero finite dimension.
+  - The minimal polynomial is equal to the characteristic polynomial.
+  - The list of invariant factors has length one.
+  - The Rational Canonical Form has a single block.
+  - The operator has a matrix similar to a companion matrix.
+  - There exists a (so-called cyclic) vector whose images by the operator span the whole space.
 
 # Some Matrix Examples
 
