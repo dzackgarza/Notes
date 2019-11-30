@@ -134,7 +134,7 @@ This means that with respect to the basis $\mathcal B$, $A$ has the following ma
 \end{align*}
 
 
-But this is the companion matrix for $p(x) = \sum c_i x^i$, which always satisfy the property that their characteristic polynomials equal their minimal polynomials.
+But this is the companion matrix for $p(x) = \sum_{i=0}^{n-1} c_i x^i$, which always satisfy the property that $p(x)$ equals both the characteristic *and* minimal polynomial.
 
 So by lemma 1, the matrix $[A]_{\mathcal{B}}$ has distinct eigenvalues. 
 
