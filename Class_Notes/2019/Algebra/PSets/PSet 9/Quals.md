@@ -45,8 +45,7 @@ However, $x\not\in k$ (nor $y$), which is a contradiction.
 # Problem 2
 
 **Lemma:**
-Let $A$ be a linear operator, $m_A(x)$ its minimal polynomial, and $p_A(x)$ its characteristic polynomial.
-Then $A$ has distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
+Then $A$ has $n$ distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
 
 *Proof:*
