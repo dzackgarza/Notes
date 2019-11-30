@@ -65,13 +65,13 @@ Noting that every exponent is 1, we have $q_i = 1$ for all $i$, which forces $p_
 
 $\impliedby$:
 If $m_A(x) = \chi_A(x)$, then $p_i = q_i$ for all $i$.
-If we then consider $JCF(A)$, we have
+If we then consider $JCF(A)$, we have 
 
 - The number of Jordan block $J_{\lambda_i}$ is the dimension of the eigenspace $E_{\lambda_i}$,
 - $q_i =$ the sum of the sizes of all Jordan blocks $J_{\lambda_i}$, and
 - $p_i =$ the size of the largest Jordan block $J_{\lambda_i}$.
 
-So if $p_i = q_i$ for every $i$, there can only be a single Jordan block for every $\lambda_i$, and thus $\dim E_{\lambda_i} = 1$ for every $i$.
+So if $p_i = q_i$ for every $i$, there can only be one Jordan block for every $\lambda_i$, and thus $\dim E_{\lambda_i} = 1$ for every $i$.
 
 But $\dim E_{\lambda_i}$ is precisely the multiplicity of $\lambda_i$ in $\chi_A(x)$, which means that $\chi_A(x) = \prod_{i} (x-\lambda_i)$.
 Since $\chi_A(x)$ is a degree $n$ polynomial, this says that $\chi_A$ has $n$ distinct linear factors, corresponding to $n$ distinct eigenvalues of $A$.
