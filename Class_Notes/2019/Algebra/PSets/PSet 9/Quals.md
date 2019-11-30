@@ -132,7 +132,8 @@ Thus by lemma 1, the matrix $[A]_{\mathcal{B}}$ has distinct eigenvalues.
 
 $(2) \implies (1)$:
 
-Suppose $A$ has distinct eigenvalues, then by Lemma 1 we have 
+Suppose $A$ has distinct eigenvalues. 
+By Lemma 2 we have 
 $$
 f_n(x) = \prod_{j=1}^n f_j(x),
 $$
