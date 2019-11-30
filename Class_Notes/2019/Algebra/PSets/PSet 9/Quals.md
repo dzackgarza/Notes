@@ -47,7 +47,6 @@ However, $x\not\in k$ (nor $y$), which is a contradiction.
 **Lemma:**
 Then $A$ has $n$ distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
-
 *Proof:*
 
 We'll use the fact that every eigenvalue is a always root of both $m_A(x)$ and $\chi_A(x)$ (potentially with differing multiplicities), so we can write
@@ -80,12 +79,12 @@ $\qed$
 
 
 **Lemma**
-If $A$ is a linear operator and we write
+If $A$ is a linear operator, let $k[x] \actson V$ in the usual way to obtain an invariant factor decomposition
 $$
-V = \frac{k[x]}{(f_1)} \oplus \frac{k[x]}{(f_2)} \oplus \cdots \oplus \frac{k[x]}{(f_n)}
+V = \frac{k[x]}{(f_1)} \oplus \frac{k[x]}{(f_2)} \oplus \cdots \oplus \frac{k[x]}{(f_n)}, \quad  f_1 \divides f_2 \divides \cdots \divides f_n.
 $$
 
-as an invariant factor decomposition of $V$ as a $k[x]$ module (defined by $p(x) \actson \vector v \definedas p(A)(\vector v))$, with $f_1 \divides f_2 \divides \cdots$, then we always have
+Then it is always the case that 
 
 - $m_A(x) = f_n(x)$, i.e. the minimal polynomial is the invariant factor of largest degree,
 - $p_A(x) = \prod_{i=j}^n f_j(x)$, i.e. the characteristic polynomial is the product of all of the invariant factors.
