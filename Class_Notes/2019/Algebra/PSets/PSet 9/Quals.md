@@ -1,5 +1,5 @@
 ---
-title: Problem Set 9: Qual Problems
+title: "Problem Set 9: Qual Problems"
 ---
 
 # Problem 1
