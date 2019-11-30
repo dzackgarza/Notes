@@ -91,7 +91,7 @@ Then it is always the case that
 
 $\qed$
 
-Now to prove the main result:
+**Main Result:**
 
 $(1) \implies (2)$:
 
