@@ -149,11 +149,11 @@ which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vec
 
 In particular, if we take the Rational Canonical Form of $A$, this says that $RCF(A)$ has only a single block in a suitable ordered basis $\mathcal B = \theset{\vector w_0, \cdots, \vector w_{n-1}}$.
 
-Thus $A$ is the companion matrix to $f_k(x) \definedas \sum_{i=0}^n c_i x^i$ in this basis, which by construction satisfies 
+Thus $[A]_{\mathcal B}$ is the companion matrix to $f_k(x) \definedas \sum_{i=0}^n c_i x^i$ in this basis, which by construction satisfies 
 $$
 A \vector w_i = \begin{cases}
 \vector w_{i+1} & 0 \leq i < n-2 \\
-\sum{i=0}^{n-1} \vector w_i & i = n-1
+\sum_{i=0}^{n-1} \vector w_i & i = n-1
 \end{cases}.
 $$
 
