@@ -41,6 +41,16 @@ then
   - The operator has a matrix similar to a companion matrix.
   - There exists a (so-called cyclic) vector whose images by the operator span the whole space.
 
+
+- Two matrices $A,B$ are *similar* (i.e. $A = PBP\inv$) $\iff$
+  - $A,B$ has the same JCF
+
+- Two matrices $A, B$ are *equivalent* (i.e. $A = PBQ$) $\iff$
+  - They have the same rank
+  - They have the same invariant factors
+  - They have the same JCF
+
+
 # Some Matrix Examples
 
 1.
