@@ -60,22 +60,18 @@ m_A(x) = \prod_i (x-\lambda_i)^{p_i} \\
 \chi_A(x) = \prod_i (x-\lambda_i)^{q_i} \\
 \end{align*}
 
-where every $p_i \leq q_i$.
+where $1 \leq p_i \leq q_i$ for every $i$.
+
 
 
 $\implies$:
-If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod_{i=1}^n (x-\lambda_i)$ in $\overline{k}[x]$.
-
-Take an invariant factor decomposition of $A$ with factors $f_1 \divides f_2 \divides \cdots \divides f_n$; then $f_n(x) = m_A(x)$.
-Importantly, the multiplicity of each factor occurring is exactly 1.
-
-If $\lambda_i$ is an eigenvalue of $A$, then $\lambda_i$ is a root of some $f_j$.
-But since each $f_j$ divides $f_n = m_A$, $m_A(\lambda_i) = 0$ for all $\lambda_i$, 
-So every eigenvalue is a root of $m_A(x)$, and thus $\prod_{i=1}^n (x-\lambda_i) \divides m_A(x)$.
-
-But then we have both $m_A(x) \divides \chi_A(x)$ and $\chi_A(x) \divides m_A(x)$, so these polynomials are equal.
-
+If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod{i=1}^n (x-\lambda_i)$. 
+Noting that every exponent is 1, we have $q_i = 1$ for all $i$, which forces $p_i = 1$.
+But then $m_A(x) = \prod_{i=1}^n (x-\lambda_i) = \chi_A(x)$.
 $\qed$
+
+$\impliedby$:
+
 
 **Lemma**
 If $A$ is a linear operator and we write
