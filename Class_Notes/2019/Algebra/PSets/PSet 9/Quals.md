@@ -81,13 +81,13 @@ $\qed$
 **Lemma 2:**
 Let $k[x] \actson V$ in the usual way with $A$ to obtain an invariant factor decomposition
 $$
-V = \frac{k[x]}{(f_1)} \oplus \frac{k[x]}{(f_2)} \oplus \cdots \oplus \frac{k[x]}{(f_n)}, \quad  f_1 \divides f_2 \divides \cdots \divides f_n.
+V = \frac{k[x]}{(f_1)} \oplus \frac{k[x]}{(f_2)} \oplus \cdots \oplus \frac{k[x]}{(f_k)}, \quad  f_1 \divides f_2 \divides \cdots \divides f_k.
 $$
 
 Then it is always the case that 
 
-- $m_A(x) = f_n(x)$, i.e. the minimal polynomial is the invariant factor of largest degree,
-- $\chi_A(x) = \prod_{i=j}^n f_j(x)$, i.e. the characteristic polynomial is the product of all of the invariant factors.
+- $m_A(x) = f_k(x)$, i.e. the minimal polynomial is the invariant factor of largest degree,
+- $\chi_A(x) = \prod_{i=1}^k f_i(x)$, i.e. the characteristic polynomial is the product of all of the invariant factors.
 
 $\qed$
 
@@ -135,10 +135,12 @@ $(2) \implies (1)$:
 Suppose $A$ has distinct eigenvalues. 
 By Lemma 1, $\chi_A(x) = m_A(x)$, and so we have 
 $$
-\chi_A(x) = f_n(x) = \prod_{j=1}^n f_j(x) = m_A(x),
+\chi_A(x) = f_k(x) = \prod_{i=1}^k f_i(x) = m_A(x),
 $$
 
-which can only happen if $f_1(x) = f_2(x) = \cdots = f_{n-1}(x) = 1$, in which case there is only one nontrivial invariant factor and we have
+which can only happen if $f_1(x) = f_2(x) = \cdots = f_{n-1}(x) = 1$, in which case there is only one nontrivial invariant factor.
+
+So we have
 $$
 V \cong \frac{k[x]}{(f_n)}, \quad \ann(V) = (f_n)
 $$
@@ -146,7 +148,7 @@ $$
 which exhibits $V$ as a cyclic $k[x]\dash$module and thus we have $V = k[x] \vector v$ for some $\vector v \in V$.
 
 
-We can now note that if $\deg f_n = \dim V = m$, we have
+We can now note that since $\deg f_n = \dim V = m$, we have
 
 \begin{align*}
 k[x]/(f_n) = \spanof_{k[x]}\theset{1, x, \cdots, x^{m-1}} 
