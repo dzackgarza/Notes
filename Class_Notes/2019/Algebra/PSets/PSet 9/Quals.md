@@ -53,6 +53,15 @@ Then $A$ has distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 > Note that We always have $m_A(x) \divides \chi_A(x)$, since $\chi_A(A) = 0$ by Cayley-Hamilton and $m_A(x)$ is the *minimal* polynomial for which this holds.
 We also have $\chi_A(\lambda_i) = 0$ for all eigenvalues $\lambda_i$ by construction.
 
+Using the fact that every eigenvalue is a always root of both $m_A(x)$ and $\chi_A(x)$ (potentially with differing multiplicities), we can write
+
+\begin{align*}
+m_A(x) = \prod_i (x-\lambda_i)^{p_i} \\
+\chi_A(x) = \prod_i (x-\lambda_i)^{q_i} \\
+\end{align*}
+
+where every $p_i \leq q_i$.
+
 
 $\implies$:
 If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod_{i=1}^n (x-\lambda_i)$ in $\overline{k}[x]$.
