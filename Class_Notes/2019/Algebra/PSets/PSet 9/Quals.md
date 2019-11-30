@@ -124,6 +124,7 @@ This means that with respect to the basis $\mathcal B$, $A$ has the following ma
 ,\end{align*}
 
 which we compute by considering the images of all basis elements under $A$. 
+
 Letting $\mathcal B = \theset{\vector w_i \definedas A^i \vector v \mid 0\leq i \leq n-1}$, we have
 
 \begin{align*}
