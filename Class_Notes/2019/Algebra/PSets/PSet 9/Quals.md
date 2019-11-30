@@ -156,7 +156,7 @@ k[x]/(f_n) = \spanof_{k[x]}\theset{1, x, \cdots, x^{n-1}}
 V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, x^2 \vector v, \cdots x^{n-1}\vector v}
 ,\end{align*}
 
-But then noting that $k[x] \actson V$ by $\vector w \mapsto x \vector w$, so $k[A] \actson V$ by $\vector w \mapsto A\vector w$, which yields
+But then noting that $k[x] \actson V$ by $\vector w \mapsto x \vector w$, so $k[A] \actson V$ by $\vector w \mapsto A\vector w$, this yields
 \begin{align*}
 V \cong k[x] \vector v = \spanof_{k[x]}\theset{1 \vector v, x\vector v, \cdots x^{n-1}\vector v}
 \iff 
