@@ -62,10 +62,7 @@ where $1 \leq p_i \leq q_i$ for every $i$.
 
 $\implies$:
 If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod_{i=1}^n (x-\lambda_i)$ in $\overline{k} [x]$. 
-Noting that every exponent is 1, we have $q_i = 1$ for all $i$, which forces $p_i = 1$.
-
-But then $m_A(x) = \prod_{i=1}^n (x-\lambda_i) = \chi_A(x)$.
-$\qed$
+Noting that every exponent is 1, we have $q_i = 1$ for all $i$, which forces $p_i = 1$ and thus $m_A(x) = \chi_A(x)$.
 
 $\impliedby$:
 If $m_A(x) = \chi_A(x)$, then we must have $p_i = q_i$ for all $i$.
@@ -79,6 +76,8 @@ So if $p_i = q_i$ for every $i$, there can only be a single Jordan block for eve
 
 But $\dim E_{\lambda_i}$ is precisely the multiplicity of $\lambda_i$ in $\chi_A(x)$, which means that $\chi_A(x) = \prod_{i} (x-\lambda_i)^1$.
 Since $\chi_A(x)$ is a degree $n$ polynomial, this says that $\chi_A$ has $n$ distinct linear factors, corresponding to $n$ distinct eigenvalues of $A$.
+
+$\qed$
 
 
 **Lemma**
