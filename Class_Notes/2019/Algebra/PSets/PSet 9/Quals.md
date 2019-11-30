@@ -50,11 +50,14 @@ Then $A$ has distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
 
 *Proof:*
-We always have $m_A(x) \divides \chi_A(x)$, since $\chi_A(A) = 0$ by Cayley-Hamilton and $m_A(x)$ is the *minimal* polynomial for which this holds.
-We can also note that $\chi_A(\lambda_i) = 0$ for all eigenvalues $\lambda_i$ by construction.
-Moreover, if every eigenvalue is distinct, then we have $\chi_A(x) = \prod_i (x-\lambda_i)$ in $\overline{k}[x]$.
+> Note that We always have $m_A(x) \divides \chi_A(x)$, since $\chi_A(A) = 0$ by Cayley-Hamilton and $m_A(x)$ is the *minimal* polynomial for which this holds.
+We also have $\chi_A(\lambda_i) = 0$ for all eigenvalues $\lambda_i$ by construction.
 
-Given an invariant factor decomposition of $A$ with factors $f_1 \divides f_2 \divides \cdots \divides f_n$, we have $f_n(x) = m_A(x)$.
+
+$\implies$:
+If every eigenvalue is distinct, then $\chi_A(x) = \prod_i (x-\lambda_i)$ in $\overline{k}[x]$.
+
+Take an invariant factor decomposition of $A$ with factors $f_1 \divides f_2 \divides \cdots \divides f_n$, we have $f_n(x) = m_A(x)$.
 Moreover, if $\lambda_i$ is an eigenvalue of $A$, then $f_j(\lambda_i) = 0$ for some $f_j$.
 
 But then $m_A(\lambda_i) = 0$ for all $\lambda_i$, since each $f_j$ divides $m_A$.
