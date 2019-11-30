@@ -49,7 +49,7 @@ Let $A$ be a linear operator, $m_A(x)$ its minimal polynomial, and $p_A(x)$ its 
 Then $A$ has distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
 
-Proof:
+*Proof:*
 We always have $m_A(x) \divides \chi_A(x)$, since $\chi_A(A) = 0$ by Cayley-Hamilton and $m_A(x)$ is the *minimal* polynomial for which this holds.
 We can also note that $\chi_A(\lambda_i) = 0$ for all eigenvalues $\lambda_i$ by construction.
 Moreover, if every eigenvalue is distinct, then we have $\chi_A(x) = \prod_i (x-\lambda_i)$ in $\overline{k}[x]$.
