@@ -26,3 +26,12 @@ Suppose $\phi$ is skew-symmetric, so $\phi(a,b) = -\phi(b, a)$ for all $a, b\in 
 Then $\phi(b, b) = - \phi(b, b)$ by transposing the terms, which says that $\phi(b, b) = 0$ for all $b\in B$ and thus $\phi$ is alternating.
 
 # Problem 2
+
+Let $f(x) = \det(P + xQ) \in R[x]$, then $f$ is a polynomial in $x$ which is not identically zero. 
+
+To see that $f \not \equiv 0$, we can use that fact that $P$ is invertible to evaluate $f(0) = \det(P) \neq 0$.
+
+We can now note that $f$ has finite degree, and thus finitely many zeroes in $R$.
+
+
+# Problem 3
