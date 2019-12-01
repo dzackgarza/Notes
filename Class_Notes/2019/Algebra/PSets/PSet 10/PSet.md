@@ -35,3 +35,18 @@ We can now note that $f$ has finite degree, and thus finitely many zeroes in $R$
 
 
 # Problem 3
+
+Letting $k[x] \actson_\phi E$ to yield a $k[x]\dash$module structure on $E$ and take an invariant factor decomposition,
+$$
+E = E_1 \oplus E_2 \oplus \cdots \oplus E_t \quad q_1 \divides q_2 \divides \cdots \divides q_t
+$$
+
+where $E_i = k[x] / (q_i)$. 
+Then $q_t = q$, the minimal polynomial of $E$.
+
+In particular, $E_t$ is a $\phi\dash$invariant subspace of $E$, and if $\deg q_t = m$, then $E_t$ is in fact an $m\dash$dimensional cyclic module with basis $\theset{\vector v, \phi(\vector v), \phi^2(\vector v), \cdots, \phi^{m-1}(\vector v)}$ for some $\vector v \in E_t$.
+
+But since $E_t \leq E$ is a subspace, $\dim E_t \leq \dim E$, and since $m = \deg q$, this yields the desired result.
+
+# Problem 4
+
