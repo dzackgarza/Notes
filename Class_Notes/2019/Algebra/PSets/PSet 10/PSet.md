@@ -23,6 +23,4 @@ which shows that $\phi$ is skew-symmetric.
 
 $\impliedby$
 Suppose $\phi$ is skew-symmetric, so $\phi(a,b) = -\phi(b, a)$ for all $a, b\in B$.
-
-
-
+Then $\phi(b, b) = - \phi(b, b)$ by transposing the terms, which says that $\phi(b, b) = 0$ for all $b\in B$ and thus $\phi$ is alternating.
