@@ -53,3 +53,6 @@ $$
 
 # Problem 4
 
+$\implies$:
+Suppose $A \sim D$ where $D$ is diagonal.
+
