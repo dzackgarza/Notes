@@ -60,4 +60,9 @@ Then $JCF(A) = JCF(D) = D$, which means that every Jordan block of $A$ has size 
 Since the elementary divisors of $A$ are precisely the minimal polynomials of the Jordan blocks of $A$, and the minimal polynomial of any $1\times 1$ matrix $[a_{ij}]$ is given by the linear polynomial $x - a_{ij}$, every elementary divisor of $A$ must be linear.
 
 $\impliedby$:
+Suppose all of the elementary divisors of $A$ are linear. 
+Every elementary divisor is the minimal polynomial of a Jordan block of $A$, and so if we write $JCF(A) = \bigoplus M_i$, then the minimal polynomial of each $M_i$ is linear.
+
+If we can show that each Jordan block $M_i$ is in fact diagonal, then $A$ itself will be similar to a diagonal matrix.
+
 
