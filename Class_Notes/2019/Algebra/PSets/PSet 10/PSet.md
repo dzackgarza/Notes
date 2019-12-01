@@ -63,6 +63,14 @@ $\impliedby$:
 Suppose all of the elementary divisors of $A$ are linear. 
 Every elementary divisor is the minimal polynomial of a Jordan block of $A$, and so if we write $JCF(A) = \bigoplus M_i$, then the minimal polynomial of each $M_i$ is linear.
 
-If we can show that each Jordan block $M_i$ is in fact diagonal, then $A$ itself will be similar to a diagonal matrix.
+Supposing that $M_i$ has minimal polynomial $p_i(x) = x - c$ for some scalar $c$, we have
+$$
+p_i(M_i) = 0 \implies M_i - c I_n = 0 \implies M_i = cI_n,
+$$
 
+which shows that $M_i$ is a diagonal matrix with only $c$ on its diagonal.
+
+But if every Jordan block of $A$ is diagonal,then $JCF(A) = D$ is diagonal and $A \sim D$.
+
+# Problem 5
 
