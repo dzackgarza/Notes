@@ -17,8 +17,8 @@ title: Miscellaneous Notes
 - For characteristic polynomials $p(x) = \det(A - x1))= \det(SNF(A - x1))$.
 - Writing 
 \begin{align*}
-\ch_A(x) = \prod (x-\lambda_i)^{a_i} \\
 \min_A(x) = \prod (x-\lambda_i)^{b_i}
+\chi_A(x) = \prod (x-\lambda_i)^{a_i} \\
 \end{align*}
 then $b_i \leq a_i$, and
 
