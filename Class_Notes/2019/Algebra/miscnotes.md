@@ -34,7 +34,7 @@ $$
 then 
 
   - $f_n(x) = \min_T(x)$ (i.e., the minimal polynomial is the invariant factor of highest degree)
-  - $\prod_{j=1}^n f_j(x) = \ch_T(x)$.
+  - $\prod_{j=1}^n f_j(x) = \chi_T(x)$.
 
 - The following are equivalent for a linear operator on a vector space of nonzero finite dimension.
   - The minimal polynomial is equal to the characteristic polynomial.
