@@ -88,7 +88,7 @@ M = \left(\begin{array}{rr}
 
 - Not diagonalizable over $\CC$
 - Eigenvalues $[1, 1]$ (repeated, multiplicity 2)
-- $\min_M(x) = \ch_M(x) = x^2-2x+1$
+- $\min_M(x) = \chi_M(x) = x^2-2x+1$
 
 
 3. Non-similar matrices with the same characteristic polynomial
