@@ -55,4 +55,9 @@ $$
 
 $\implies$:
 Suppose $A \sim D$ where $D$ is diagonal.
+Then $JCF(A) = JCF(D) = D$, which means that every Jordan block of $A$ has size exactly 1.
+
+Since the elementary divisors of $A$ are precisely the minimal polynomials of the Jordan blocks of $A$, and the minimal polynomial of any $1\times 1$ matrix $[a_{ij}]$ is given by the linear polynomial $x - a_{ij}$, every elementary divisor of $A$ must be linear.
+
+$\impliedby$:
 
