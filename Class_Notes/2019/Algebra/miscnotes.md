@@ -59,7 +59,7 @@ then
 
 \begin{align*}
 M = \left[\begin{array}{rr}
-0 & 1 \\
+0  & 1 \\
 -1 & 0
 \end{array}\right] \sim
 \left(\begin{array}{r|r}
@@ -71,7 +71,7 @@ M = \left[\begin{array}{rr}
 
 - Not diagonalizable over $\RR$, diagonalizable over $\CC$
 - No eigenvalues in $\RR$, distinct eigenvalues over $\CC$
-- $\min_M(x) = \ch_M(x) = x^2+1$
+- $\min_M(x) = \chi_M(x) = x^2+1$
 
 2.
 
