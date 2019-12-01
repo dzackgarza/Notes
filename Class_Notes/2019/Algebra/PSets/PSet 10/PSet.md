@@ -48,7 +48,7 @@ In particular, $E_t$ is a $\phi\dash$invariant subspace of $E$, and if $\deg q_t
 
 But since $E_t \leq E$ is a subspace, we have 
 $$
-m = \deg q_t(x) = \dim E_t \leq \dim E.
+m = \deg q(x) = \deg q_t(x) = \dim E_t \leq \dim E.
 $$
 
 # Problem 4
