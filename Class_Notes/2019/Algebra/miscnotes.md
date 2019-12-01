@@ -12,6 +12,8 @@ title: Miscellaneous Notes
     - WRT the basis $\overline x$, $T$ then acts via the companion matrix on this summand.
     - Each invariant factor corresponds to a block of the RCF.
   - Jordan Canonical Form: Elementary Divisor Decomposition of $T$
+    - Deriving: ?
+    - The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
 - For characteristic polynomials $p(x) = \det(A - x1))= \det(SNF(A - x1))$.
 - Writing 
 \begin{align*}
