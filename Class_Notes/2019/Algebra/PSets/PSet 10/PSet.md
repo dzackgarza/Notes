@@ -124,5 +124,6 @@ R_3 = \left[\begin{array}{c|cc|ccc}
 0 & 0 & 0 & 1 & 0 & -16 \\ 
 0 & 0 & 0 & 0 & 1 & 7 \\ 
 \end{array}\right]
-\end{align*}
+.\end{align*}
 
+> Note: these are perhaps transposed from Hungerford's notation.
