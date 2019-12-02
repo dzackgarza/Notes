@@ -111,6 +111,14 @@ these choices correspond to the matrices
 \left[\begin{array}{c|cc|ccc} 
 2 & 0 & 0 & 0 & 0 & 0 \\ \hline 
 0 & 0 & 0 & 0 & 0 & 0 \\ 
+0 & 1 & 0 & 0 & 0 & 0 \\ \hline 
+0 & 0 & 0 & 0 & 0 & 12 \\ 
+0 & 0 & 0 & 1 & 0 & -16 \\ 
+0 & 0 & 0 & 0 & 1 & 7 \\ 
+\end{array}\right]
+\left[\begin{array}{c|cc|ccc} 
+3 & 0 & 0 & 0 & 0 & 0 \\ \hline 
+0 & 0 & 0 & 0 & 0 & 0 \\ 
 0 & 0 & 0 & 0 & 0 & 0 \\ \hline 
 0 & 0 & 0 & 0 & 0 & 12 \\ 
 0 & 0 & 0 & 1 & 0 & -16 \\ 
