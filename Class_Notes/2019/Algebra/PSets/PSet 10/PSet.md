@@ -44,7 +44,7 @@ $$
 where $E_i = k[x] / (q_i)$. 
 Then $q_t = q$, the minimal polynomial of $E$.
 
-In particular, $E_t$ is a $\phi\dash$invariant subspace of $E$, and if $\deg q_t = m$, then $E_t$ is in fact an $m\dash$dimensional cyclic module with basis $\theset{\vector v, \phi(\vector v), \phi^2(\vector v), \cdots, \phi^{m-1}(\vector v)}$ for some $\vector v \in E_t$.
+In particular, $E_t$ is a $\phi\dash$invariant subspace of $E$, and if $\deg q_t = m$, then $E_t$ is in fact an $m\dash$dimensional cyclic module with basis $\theset{\vector{v}, \phi(\vector{v}), \phi^2(\vector{v}), \cdots, \phi^{m-1}(\vector{v})}$ for some $\vector{v} \in E_t$.
 
 But since $E_t \leq E$ is a subspace, we have 
 $$
