@@ -95,7 +95,7 @@ a_1 = (x-3), && a_2 = (x-2)(x-3), && a_3 = q(x).
 These correspond to the matrices
 
 \begin{align*}
-\left[\begin{array}{cc} 
+\left[\begin{array}{cccccc} 
 2 & 0 & 0 & 0 & 0 & 0 \\ 
 2 & 0 & 0 & 0 & 0 & 0 \\ 
 2 & 0 & 0 & 0 & 0 & 0 \\ 
