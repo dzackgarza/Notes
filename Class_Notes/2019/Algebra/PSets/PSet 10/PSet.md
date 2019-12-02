@@ -86,9 +86,9 @@ We can restrict this list by noting that the characteristic polynomial satisfies
 These are:
 
 \begin{align*}
-a_1 = (x-2), && a_2 = (x-2)^2,    && a_3 = q(x), \\
-a_1 = (x-2), && a_2 = (x-2)(x-3), && a_3 = q(x), \\
-a_1 = (x-3), && a_2 = (x-2)(x-3), && a_3 = q(x). 
+R_1: a_1 = (x-2), && a_2 = (x-2)^2,    && a_3 = q(x), \\
+R_2: a_1 = (x-2), && a_2 = (x-2)(x-3), && a_3 = q(x), \\
+R_3: a_1 = (x-3), && a_2 = (x-2)(x-3), && a_3 = q(x). 
 \end{align*}
 
 Noting that 
@@ -100,23 +100,23 @@ Noting that
 these choices correspond to the matrices
 
 \begin{align*}
-\left[\begin{array}{c|cc|ccc} 
+R_1 = \left[\begin{array}{c|cc|ccc} 
 2 & 0 & 0 & 0 & 0 & 0 \\ \hline 
 0 & 0 & -4 & 0 & 0 & 0 \\ 
 0 & 1 & 4 & 0 & 0 & 0 \\ \hline 
 0 & 0 & 0 & 0 & 0 & 12 \\ 
 0 & 0 & 0 & 1 & 0 & -16 \\ 
 0 & 0 & 0 & 0 & 1 & 7 \\ 
-\end{array}\right] 
-\left[\begin{array}{c|cc|ccc} 
+\end{array}\right] ,
+R_2 = \left[\begin{array}{c|cc|ccc} 
 2 & 0 & 0 & 0 & 0 & 0 \\ \hline 
 0 & 0 & -6 & 0 & 0 & 0 \\ 
 0 & 1 & 5 & 0 & 0 & 0 \\ \hline 
 0 & 0 & 0 & 0 & 0 & 12 \\ 
 0 & 0 & 0 & 1 & 0 & -16 \\ 
 0 & 0 & 0 & 0 & 1 & 7 \\ 
-\end{array}\right]
-\left[\begin{array}{c|cc|ccc} 
+\end{array}\right],
+R_3 = \left[\begin{array}{c|cc|ccc} 
 3 & 0 & 0 & 0 & 0 & 0 \\ \hline 
 0 & 0 & -6 & 0 & 0 & 0 \\ 
 0 & 1 & 5 & 0 & 0 & 0 \\ \hline 
