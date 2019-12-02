@@ -44,7 +44,7 @@ $$
 where $E_i = k[x] / (q_i)$. 
 Then $q_t = q$, the minimal polynomial of $E$.
 
-In particular, $E_t$ is a $\phi\dash$invariant subspace of $E$, and if $\deg q_t = m$, then $E_t$ is in fact an $m\dash$dimensional cyclic module with basis $\theset{\vector{v}, \phi(\vector{v}), \phi^2(\vector{v}), \cdots, \phi^{m-1}(\vector{v})}$ for some $\vector{v} \in E_t$.
+In particular, $E_t$ is a $\phi\dash$invariant subspace of $E$, and if $\deg q_t = m$, then $E_t$ is in fact an $m\dash$dimensional cyclic module with basis $\theset{\vector v, \phi(\vector v), \phi^2(\vector v), \cdots, \phi^{m-1}(\vector v)}$ for some $\vector v \in E_t$.
 
 But since $E_t \leq E$ is a subspace, we have 
 $$
@@ -73,4 +73,9 @@ which shows that $M_i$ is a diagonal matrix with only $c$ on its diagonal.
 But if every Jordan block of $A$ is diagonal,then $JCF(A) = D$ is diagonal and $A \sim D$.
 
 # Problem 5
+
+## Part 1
+
+We'll use the fact that the minimal polynomial $q$ is the invariant factor of highest degree, and so every other invariant factor must divide $q$.
+Moreover, $RCF(A) = C_1 \oplus C_2 \oplus \cdots \oplus C_k$ where each $C_i$ is the companion matrix of the $i$th invariant factor if we write $V \cong \bigoplus_{i=1}^k k[x]/(a_i)$.
 
