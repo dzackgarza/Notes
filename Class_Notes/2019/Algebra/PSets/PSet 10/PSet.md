@@ -84,10 +84,10 @@ So it suffices to determine all of the possible distinct combinations of invaria
 These are:
 
 - $a_1 = (x-2), a_2 = q(x)$
-- $a_1 = (x-3), a_2 = q(x)$
 - $a_1 = (x-2), a_2 = (x-2)^2, a_3 = q(x)$
 - $a_1 = (x-2), a_2 = (x-2)(x-3), a_3 = q(x)$
 - $a_1 = (x-3), a_2 = (2-x)(x-3), a_3 = q(x)$
+- $a_1 = (x-3), a_2 = q(x)$
 
 
 
