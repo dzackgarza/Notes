@@ -81,6 +81,8 @@ We'll use the fact that the minimal polynomial $q$ is the invariant factor of hi
 Moreover, $RCF(A) = C_1 \oplus C_2 \oplus \cdots \oplus C_k$ where each $C_i$ is the companion matrix of the $i$th invariant factor if we write $V \cong \bigoplus_{i=1}^k k[x]/(a_i)$. 
 So it suffices to determine all of the possible distinct combinations of invariant factors.
 
+We can restrict this list by noting that the characteristic polynomial satisfies $\chi_A(x) = \prod a_i$, and in particular, $\deg \chi_A(x) = 6$.
+
 These are:
 
 - $a_1 = (x-2), a_2 = q(x)$
