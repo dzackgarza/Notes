@@ -130,3 +130,7 @@ R_3 = \left[\begin{array}{c|cc|ccc}
 .\end{align*}
 
 > Note: these are perhaps transposed from Hungerford's notation.
+
+Since none of the associated polynomials were irreducible over $\QQ$, $RCF(A)$ takes these forms over $\CC$ as well.
+
+## Part 2
