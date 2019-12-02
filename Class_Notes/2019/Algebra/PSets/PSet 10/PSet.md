@@ -110,8 +110,8 @@ these choices correspond to the matrices
 \end{array}\right] \\
 \left[\begin{array}{c|cc|ccc} 
 2 & 0 & 0 & 0 & 0 & 0 \\ \hline 
-0 & 0 & -4 & 0 & 0 & 0 \\ 
-0 & 1 & 4 & 0 & 0 & 0 \\ \hline 
+0 & 0 & 0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0 & 0 & 0 \\ \hline 
 0 & 0 & 0 & 0 & 0 & 12 \\ 
 0 & 0 & 0 & 1 & 0 & -16 \\ 
 0 & 0 & 0 & 0 & 1 & 7 \\ 
