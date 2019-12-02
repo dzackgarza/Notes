@@ -134,3 +134,16 @@ R_3 = \left[\begin{array}{c|cc|ccc}
 Since none of the associated polynomials were irreducible over $\QQ$, $RCF(A)$ takes these forms over $\CC$ as well.
 
 ## Part 2
+
+We'll first exhibit the possibilities over $\CC$, then show what subset can be obtained over $\QQ$.
+
+Over $CC$, we have $x^2 + 1 = (x-i)(x+i)$.
+By the same argument used in Part 1, we know that $q(x)$ is the largest invariant factor, and since $\deg q = 3$, the degrees of the remaining factors must sum to 4 (since the degree $\chi_A$ will be 7, and it's the product of these factors).
+
+The possibilities are thus
+
+
+\begin{align*}
+
+.\end{align*}
+
