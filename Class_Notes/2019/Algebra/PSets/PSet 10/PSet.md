@@ -93,8 +93,9 @@ a_1 = (x-3), && a_2 = (x-2)(x-3), && a_3 = q(x).
 
 Noting that 
 
-- $(x-2)^2 = x^2-4x+4$, and
-- $(x-2)(x-3) = x^2-5x+6$,
+- $(x-2)^2 = x^2-4x+4$, 
+- $(x-2)(x-3) = x^2-5x+6$, and
+- $q(x) = x^3-7x^2+16x-12$,
 
 these choices correspond to the matrices
 
@@ -103,9 +104,9 @@ these choices correspond to the matrices
 2 & 0 & 0 & 0 & 0 & 0 \\ 
 0 & 0 & -4 & 0 & 0 & 0 \\ 
 0 & 1 & 4 & 0 & 0 & 0 \\ 
-0 & 0 & 0 & 0 & 0 & 0 \\ 
-0 & 0 & 0 & 0 & 0 & 0 \\ 
-0 & 0 & 0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0 & 0 & 12 \\ 
+0 & 0 & 0 & 1 & 0 & -16 \\ 
+0 & 0 & 0 & 0 & 1 & 7 \\ 
 \end{array}\right]
 .\end{align*}
 
