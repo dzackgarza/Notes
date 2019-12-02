@@ -93,9 +93,12 @@ R_3: a_1 = (x-3), && a_2 = (x-2)(x-3), && a_3 = q(x).
 
 Noting that 
 
-- $(x-2)^2 = x^2-4x+4$, 
-- $(x-2)(x-3) = x^2-5x+6$, and
-- $q(x) = x^3-7x^2+16x-12$,
+\begin{align*}
+(x-2)^2 &= x^2-4x+4$, 
+(x-2)(x-3) &= x^2-5x+6$, and
+q(x) &= x^3-7x^2+16x-12$,
+,\end{align*}
+
 
 these choices correspond to the matrices
 
