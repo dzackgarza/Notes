@@ -15,7 +15,7 @@ title: Miscellaneous Notes
     - Deriving: ?
     - The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
 - For characteristic polynomials $p(x) = \det(A - x1))= \det(SNF(A - x1))$.
-- Invariant factors of $A$ are the invariant factors of $xI - A$ over $k[x]$.
+- Invariant factors of $A$ are the invariant factors of $xI - A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
 - Writing 
 \begin{align*}
 \min_A(x) = \prod (x- \lambda_i)^{b_i}
