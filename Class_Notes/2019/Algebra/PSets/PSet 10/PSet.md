@@ -78,5 +78,4 @@ But if every Jordan block of $A$ is diagonal,then $JCF(A) = D$ is diagonal and $
 
 We'll use the fact that the minimal polynomial $q$ is the invariant factor of highest degree, and so every other invariant factor must divide $q$.
 
-Moreover, $RCF(A) = C_1 \oplus C_2 \oplus \cdots \oplus C_k$ where each $C_i$ is the companion matrix of the $i$th invariant factor if we write $V \cong \bigoplus_{i=1}^k k[x]/(a_i)$.
-
+Moreover, $RCF(A) = C_1 \oplus C_2 \oplus \cdots \oplus C_k$ where each $C_i$ is the companion matrix of the $i$th invariant factor if we write $V \cong \bigoplus_{i=1}^k k[x]/(a_i)$. So it suffices to determine all of the possible combinations of invariant factors.
