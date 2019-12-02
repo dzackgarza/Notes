@@ -100,7 +100,7 @@ Noting that
 these choices correspond to the matrices
 
 \begin{align*}
-\left[\begin{array}{cccccc} 
+\left[\begin{array}{c|cc|ccc} 
 2 & 0 & 0 & 0 & 0 & 0 \\ 
 0 & 0 & -4 & 0 & 0 & 0 \\ 
 0 & 1 & 4 & 0 & 0 & 0 \\ 
