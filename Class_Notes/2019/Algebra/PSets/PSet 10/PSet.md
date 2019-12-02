@@ -91,3 +91,17 @@ a_1 = (x-2), && a_2 = (x-2)(x-3), && a_3 = q(x), \\
 a_1 = (x-3), && a_2 = (x-2)(x-3), && a_3 = q(x). 
 \end{align*}
 
+
+These correspond to the matrices
+
+\begin{align*}
+\left[\begin{array}{cc} 
+2 & 0 & 0 & 0 & 0 & 0 \\ 
+2 & 0 & 0 & 0 & 0 & 0 \\ 
+2 & 0 & 0 & 0 & 0 & 0 \\ 
+2 & 0 & 0 & 0 & 0 & 0 \\ 
+2 & 0 & 0 & 0 & 0 & 0 \\ 
+2 & 0 & 0 & 0 & 0 & 0 \\ 
+\end{array}\right]
+.\end{align*}
+
