@@ -146,7 +146,6 @@ The possibilities are thus
 \begin{align*}
 a_1 = (x-i) && a_2 = (x-i)(x+i) && a_3 = q(x) \\
 a_1 = (x+i) && a_2 = (x-i)(x+i) && a_3 = q(x) \\
-a_1 = 
 .\end{align*}
 
 
