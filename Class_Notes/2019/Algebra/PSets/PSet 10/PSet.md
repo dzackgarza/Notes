@@ -91,8 +91,12 @@ a_1 = (x-2), && a_2 = (x-2)(x-3), && a_3 = q(x), \\
 a_1 = (x-3), && a_2 = (x-2)(x-3), && a_3 = q(x). 
 \end{align*}
 
+Noting that 
 
-These correspond to the matrices
+- $(x-2)^2 = x^2-4x+4$, and
+- $(x-2)(x-3) = x^2-5x+6$,
+
+these choices correspond to the matrices
 
 \begin{align*}
 \left[\begin{array}{cccccc} 
