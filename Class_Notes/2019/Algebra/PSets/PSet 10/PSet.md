@@ -86,11 +86,8 @@ We can restrict this list by noting that the characteristic polynomial satisfies
 These are:
 
 \begin{align*}
-a_1 = (x-2), &a_2 = (x-2)^2,    &a_3 = q(x) \\
-a_1 = (x-2), &a_2 = (x-2)(x-3), &a_3 = q(x) \\
-a_1 = (x-3), &a_2 = (x-2)(x-3), &a_3 = q(x) 
-.\end{align*}
-
-
-
+&a_1 = (x-2), &a_2 = (x-2)^2,    &a_3 = q(x) \\
+&a_1 = (x-2), &a_2 = (x-2)(x-3), &a_3 = q(x) \\
+&a_1 = (x-3), &a_2 = (x-2)(x-3), &a_3 = q(x) 
+\end{align*}
 
