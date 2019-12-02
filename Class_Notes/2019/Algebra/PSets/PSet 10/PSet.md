@@ -81,5 +81,13 @@ We'll use the fact that the minimal polynomial $q$ is the invariant factor of hi
 Moreover, $RCF(A) = C_1 \oplus C_2 \oplus \cdots \oplus C_k$ where each $C_i$ is the companion matrix of the $i$th invariant factor if we write $V \cong \bigoplus_{i=1}^k k[x]/(a_i)$. 
 So it suffices to determine all of the possible distinct combinations of invariant factors.
 
+These are:
+
+- $a_1 = (x-2), a_2 = q(x)$
+- $a_1 = (x-3), a_2 = q(x)$
+- $a_1 = (x-2), a_2 = (x-2)^2, a_3 = q(x)$
+- $a_1 = (x-2), a_2 = (x-2)(x-3), a_3 = q(x)$
+- $a_1 = (x-3), a_2 = (2-x)(x-3), a_3 = q(x)$
+
 
 
