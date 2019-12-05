@@ -31,6 +31,11 @@ Measure and integration theory with relevant examples from Lebesgue integration,
 - Limit of integrals may not equal integral of limit: $\sum \indic{x = q_n \in \QQ}$.
 - A sequence of continuous functions converging to a discontinuous function: $f(x) = x^n$ on $[0, 1]$.
 
+
 !include sections/2019-08-15.md
 
 !include sections/2019-11-26.md
+
+!include sections/2019-12-03.md
+
+

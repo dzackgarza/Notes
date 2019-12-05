@@ -2,8 +2,6 @@
 title: "Algebra"
 ---
 
-!include sections/summary.md
-
 !include sections/2019-08-15.md
 
 !include sections/2019-08-20.md
@@ -57,3 +55,7 @@ title: "Algebra"
 !include sections/2019-11-21.md
 
 !include sections/2019-11-26.md
+
+!include sections/2019-12-03.md
+
+!include sections/summary.md

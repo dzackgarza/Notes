@@ -80,4 +80,6 @@ title: "Lie Algebras"
 
 !include sections/2019-11-25.md
 
+!include sections/2019-12-02.md
 
+!include sections/2019-12-04.md
