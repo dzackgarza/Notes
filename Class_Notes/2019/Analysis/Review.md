@@ -55,6 +55,8 @@ $$
 
 ## 5
 
+See Problem Set 5.
+
 **Heine-Cantor theorem:**
 Every continuous function on a compact set is uniformly continuous.
 
@@ -64,4 +66,7 @@ Uniform continuity:
     &\forall \varepsilon \quad \exists \delta(\varepsilon) \mid \quad \forall x, y, \quad \abs{x - y} < \delta \implies \abs{f(x) - f(y)} < \varepsilon \\
  \iff &\forall \varepsilon \quad \exists \delta(\varepsilon) \mid \quad \forall x, y, \quad \abs{y} < \delta \implies \abs{f(x-y) - f(y)} < \varepsilon \\
 .\end{align*}
+
+
+
 
