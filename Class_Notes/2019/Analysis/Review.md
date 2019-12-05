@@ -7,15 +7,15 @@ title: Review
 
 ## 1
 
-?
+See phone photo?
 
 ## 2
 
-?
+DCT?
 
 ## 3
 
-?
+"Follow your nose."
 
 ## 4
 
