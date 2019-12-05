@@ -4,6 +4,19 @@ title: Review
 
 # Fall 2019
 
+
+## 1
+
+?
+
+## 2
+
+?
+
+## 3
+
+?
+
 ## 4
 
 > See Problem Set 8.
