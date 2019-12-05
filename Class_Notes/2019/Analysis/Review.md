@@ -69,4 +69,9 @@ Uniform continuity:
 
 Fubini-Tonelli interchange of integrals, where the change of bounds becomes very important.
 
+Continuity in $L^1$: 
+$$
+\lim_{y\to 0} \norm{\tau_y f - f}_1 = 0.
+$$
+
 
