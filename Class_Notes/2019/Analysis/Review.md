@@ -67,6 +67,6 @@ Uniform continuity:
  \iff &\forall \varepsilon \quad \exists \delta(\varepsilon) \mid \quad \forall x, y, \quad \abs{y} < \delta \implies \abs{f(x-y) - f(y)} < \varepsilon \\
 .\end{align*}
 
-
+Fubini-Tonelli interchange of integrals, where the change of bounds becomes very important.
 
 
