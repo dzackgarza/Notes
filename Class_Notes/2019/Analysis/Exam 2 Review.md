@@ -5,6 +5,9 @@ title: Exams 2 Review
 - [Exam 2 (Practice)](#exam-2-practice)
   - [1: Fubini-Tonelli](#1-fubini-tonelli)
   - [2: Convolutions and the Fourier Transform](#2-convolutions-and-the-fourier-transform)
+  - [3: Hilbert Spaces](#3-hilbert-spaces)
+  - [4: Lp Spaces](#4-lp-spaces)
+  - [5: Dual Spaces](#5-dual-spaces)
 - [Exam 2 (2018)](#exam-2-2018)
 - [Exam 2 (2014)](#exam-2-2014)
 - [Qual: Fall 2019](#qual-fall-2019)
@@ -14,12 +17,20 @@ title: Exams 2 Review
   - [4](#4)
   - [5](#5)
 
+
 # Exam 2 (Practice)
 [Link to PDF File](./Review/Exam2&#32;Practice.pdf)
 
 ## 1: Fubini-Tonelli
 
 ## 2: Convolutions and the Fourier Transform
+
+## 3: Hilbert Spaces
+
+## 4: Lp Spaces
+
+## 5: Dual Spaces
+
 
 # Exam 2 (2018)
 [Link to PDF File](./Review/Exam2&#32;2018.pdf)
