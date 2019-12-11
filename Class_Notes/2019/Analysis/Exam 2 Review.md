@@ -48,9 +48,13 @@ is measurable on $\RR^{n_1}$
 
 3. The function
 \begin{align*}
-G(y) = \int_{\RR^n} F(x) ~dx = \int_{\RR^{n_1}} \int_{\RR^{n_2}} f(x, y) ~dy ~dx
+G(y) = \int_{\RR^n} F(x) ~dx 
 \end{align*}
-is measurable
+is measurable and
+$$
+G(y) = \int_{\RR^n} f = \int_{\RR^{n_1}} \int_{\RR^{n_2}} f(x, y) ~dy ~dx
+$$
+for any iterated version of this integral.
 
 
 ## 2: Convolutions and the Fourier Transform
