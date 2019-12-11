@@ -163,9 +163,13 @@ f,g \in L^1 \text{ and  bounded}  \implies \lim _{|x| \rightarrow \infty} (f * g
 
 - Choose $M \geq f,g$.
 - By small tails, choose $N$ such that $\int_{B_N^c} \abs{f}, \int_{B_n^c} \abs{g} < \varepsilon$
+
 - Note $$\abs{f \ast g} \leq \displaystyle\int \abs{f(x-y)} ~\abs{g(y)} ~dy \definedas I$$
-- Use $\abs{x} \leq \abs{x-y} + \abs{y}$, take $\abs{x}\geq 2n$ so either
+
+- Use $\abs{x} \leq \abs{x-y} + \abs{y}$, take $\abs{x}\geq 2N$ so either
+  
   - $$\abs{x-y} \geq N \implies I \leq \int_{\theset{x-y \geq N}} \abs{f(x-y)}M ~dy\leq \varepsilon M \to 0$$
+  
   - $$\abs{y} \geq N \implies I \leq \int_{\theset{y \geq N}} M\abs{g(y)} ~dy\leq  M \varepsilon \to 0$$
 
 
