@@ -171,7 +171,7 @@ Proof:
 
 **Theorem (Fourier Inversion):**
 \begin{align*}
-
+f(x)=\int_{\mathbb{R}^{n}} \widehat{f}(x) e^{2 \pi i x \cdot \xi} d \xi
 .\end{align*}
 
 
