@@ -170,6 +170,9 @@ Proof:
 - Multiplication lemma: $f,g \in L^1 \implies \int \hat f g = \int f \hat g$.
 
 **Theorem (Fourier Inversion):**
+\begin{align*}
+
+.\end{align*}
 
 
 ## 3: Hilbert Spaces
