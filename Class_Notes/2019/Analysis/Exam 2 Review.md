@@ -156,7 +156,7 @@ Proof:
 
 **Theorem (Convolutions Vanish at Infinity)**
 \begin{align*}
-\lim _{|x| \rightarrow \infty} f * g(x) = 0
+\lim _{|x| \rightarrow \infty} (f * g)(x) = 0
 .\end{align*}
 
 
