@@ -28,7 +28,11 @@ Theorem (Fubini):
 Suppose
 
 - $f: \RR^{n_1 + n_2} \to \RR$ is measurable on its domain
-- 
+- $f$ is non-negative
+
+Then
+
+1. 
 
 ## 2: Convolutions and the Fourier Transform
 
