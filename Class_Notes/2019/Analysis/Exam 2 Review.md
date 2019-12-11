@@ -161,7 +161,7 @@ Proof:
 \hat{f}(\xi) = \int f(x) e^{-2\pi i x \cdot \xi} ~dx
 .\end{align*}
 
-Facts:
+**Facts:**
 
 - **Riemann-Lebesgue lemma:** $\hat{f}$ vanishes at infinity
 - $f\in L^1 \implies \hat{f}$ is bounded and uniformly continuous
