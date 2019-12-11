@@ -154,7 +154,10 @@ Proof:
 &\to 0
 .\end{align*}
 
-Theorem (Convolutions Vanish at Infinity)
+**Theorem (Convolutions Vanish at Infinity)**
+\begin{align*}
+\lim _{|x| \rightarrow \infty} f * g(x) = 0
+.\end{align*}
 
 
 ### c
