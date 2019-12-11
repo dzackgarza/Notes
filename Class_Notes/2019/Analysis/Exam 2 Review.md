@@ -135,7 +135,7 @@ $$
 \norm{f \ast \phi_t - f}_1 \mapsvia{t\to 0} 0.
 $$
 
-Proof:
+*Proof:*
 \begin{align*}
 \norm{f - f\ast \phi_t}_1 
 &= \int f(x) - \int f(x-y)\phi_t(y) ~dy dx \\
