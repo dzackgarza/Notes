@@ -156,8 +156,13 @@ Proof:
 
 **Theorem (Convolutions Vanish at Infinity)**
 \begin{align*}
-\lim _{|x| \rightarrow \infty} (f * g)(x) = 0
+f,g \in L^1 \implies \lim _{|x| \rightarrow \infty} (f * g)(x) = 0
 .\end{align*}
+
+Proof:
+
+- By small tails 
+- 
 
 
 ### c
