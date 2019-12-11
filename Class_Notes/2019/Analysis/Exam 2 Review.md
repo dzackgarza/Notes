@@ -144,7 +144,8 @@ Proof:
 \int_{y \geq \delta} \phi_t(y) \left( \norm{f}_1 + \norm{\tau_y f}_1 \right) dy \quad\text{by continuity in } L^1 \\
 &\leq \varepsilon + 
 2\norm{f}_1 \int_{y \geq \delta} \phi_t(y) dy \\
-&\leq \varepsilon + 2\norm{f}_1 \varepsilon \quad\text{since $\phi_t$ has small tails} 
+&\leq \varepsilon + 2\norm{f}_1 \varepsilon \quad\text{since $\phi_t$ has small tails} \\
+&\to 0
 .\end{align*}
 
 
