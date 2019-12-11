@@ -37,7 +37,7 @@ Then
 f_x: \RR^{n_2} &\to \RR \\
 y &\mapsto f(x, y)
 \end{align*}
-is measurable.
+is measurable on $\RR^{n_2}$.
 
 2. The function
 \begin{align*}
