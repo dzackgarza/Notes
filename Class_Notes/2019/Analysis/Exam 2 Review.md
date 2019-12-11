@@ -183,7 +183,7 @@ f,g \in L^1 \text{ and  bounded}  \implies \lim _{|x| \rightarrow \infty} (f * g
 
 **Facts:**
 
-- **Riemann-Lebesgue lemma:** $\hat{f}$ vanishes at infinity
+- *Riemann-Lebesgue lemma:* $\hat{f}$ vanishes at infinity
 - $f\in L^1 \implies \hat{f}$ is bounded and uniformly continuous
 - $f, \hat f \in L^1 \implies f$ is bounded, uniformly continuous, and vanishes at infinity
 - $f\in L^1$ and $\hat f = 0$ almost everywhere $\implies f = 0$ almost everywhere.
