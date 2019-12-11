@@ -47,7 +47,10 @@ x &\mapsto \int_{\RR^{n_2}} f_x(y) ~dy
 is measurable on $\RR^{n_1}$
 
 3. The function
-
+\begin{align*}
+G(y) = \int_{\RR^n} F(x) ~dx = \int_{\RR^{n_1}} \int_{\RR^{n_2}} f(x, y) ~dy ~dx
+\end{align*}
+is 
 
 
 ## 2: Convolutions and the Fourier Transform
