@@ -30,6 +30,8 @@ $$
 \norm{f - \tau_h f}_1 \mapsvia{h\to 0} 0
 $$
 
+Notation: $C_0$ is the set of functions that vanish at infinity.
+
 ## 1: Fubini-Tonelli
 
 **Theorem (Fubini):**
