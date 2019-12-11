@@ -159,7 +159,7 @@ Proof:
 f,g \in L^1 \implies \lim _{|x| \rightarrow \infty} (f * g)(x) = 0
 .\end{align*}
 
-Proof:
+*Proof:*
 
 - By small tails 
 - 
