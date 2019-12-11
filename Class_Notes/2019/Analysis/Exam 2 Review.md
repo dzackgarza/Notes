@@ -174,6 +174,8 @@ Proof:
 f(x)=\int_{\mathbb{R}^{n}} \widehat{f}(x) e^{2 \pi i x \cdot \xi} d \xi
 .\end{align*}
 
+Proof:
+
 
 ## 3: Hilbert Spaces
 
