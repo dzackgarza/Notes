@@ -37,15 +37,12 @@ If $\spanof \theset{u_n}$ is dense in $\mathcal{H}$, so it is a basis, then this
 
 **Riesz-Fischer:**
 
-1. The map
+1. There is an isometric surjection
 
 \begin{align*}
-
-mathcal{H} &\to \ell^2(\NN) \\
+\mathcal{H} &\to \ell^2(\NN) \\
 \vector x &\mapsto \theset{\inner{\vector x}{\vector u_n}}_{n=1}^\infty
 \end{align*}
-
-is surjective.
 
 2. If $\theset{\vector u_n}$ is orthonormal and $\theset{a_n} \in \ell^2(\NN)$, then there exists a $\vector x \in \mathcal{H}$ such that
 $$
