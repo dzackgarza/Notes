@@ -42,8 +42,11 @@ is measurable on $\RR^{n_2}$.
 2. The function
 \begin{align*}
 F: \RR^{n_1} &\to \RR \\
-x &\mapsto \int_{\RR^{n_2}} f(x, y) ~dy
+x &\mapsto \int_{\RR^{n_2}} f_x(y) ~dy
 \end{align*}
+is measurable on $\RR^{n_1}$
+
+3. 
 
 
 ## 2: Convolutions and the Fourier Transform
