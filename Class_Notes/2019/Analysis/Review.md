@@ -50,7 +50,7 @@ $$
 a_n = \inner{\vector x}{\vector u_n} \quad \forall n.
 $$
 
-1. $\vector x$ can be chosen such that
+2. $\vector x$ can be chosen such that
 $$
 \norm{\vector x}^2 = \sum \abs{a_n}^2
 $$
