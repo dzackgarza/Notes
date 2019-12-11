@@ -143,7 +143,8 @@ Proof:
 &\leq \int_{y < \delta} \phi_t(y) \varepsilon +
 \int_{y \geq \delta} \phi_t(y) \left( \norm{f}_1 + \norm{\tau_y f}_1 \right) dy \quad\text{by continuity in } L^1 \\
 &\leq \varepsilon + 
-2\norm{f}_1 \int_{y \geq \delta} \phi_t(y) dy
+2\norm{f}_1 \int_{y \geq \delta} \phi_t(y) dy \\
+&\leq \varepsilon + 2\norm{f}_1 
 .\end{align*}
 
 
