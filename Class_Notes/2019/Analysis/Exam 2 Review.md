@@ -56,6 +56,10 @@ G(y) = \int_{\RR^n} f = \int_{\RR^{n_1}} \int_{\RR^{n_2}} f(x, y) ~dy ~dx
 $$
 for any iterated version of this integral.
 
+$\implies$:
+
+- $f_y(x)
+
 
 ## 2: Convolutions and the Fourier Transform
 
@@ -64,6 +68,9 @@ Definition (Convolution):
 \begin{align*}
 (f \ast g)(x) = \int_{\RR^n} f(x-y) g(y) ~dy
 .\end{align*}
+
+Facts:
+
 
 
 ## 3: Hilbert Spaces
