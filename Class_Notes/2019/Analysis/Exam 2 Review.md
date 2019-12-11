@@ -163,7 +163,7 @@ f,g \in L^1 \implies \lim _{|x| \rightarrow \infty} (f * g)(x) = 0
 
 - By small tails, choose $N$ such that $\int_{B_N^c} \abs{f}, \int_{B_n^c} \abs{g} < \varepsilon$
 - Use $\abs{x} \leq \abs{x-y} + \abs{y}$, take $\abs{x}\geq 2n$ so either
-  - 
+  - $|abs{x-y} 
 
 
 ### c
