@@ -33,11 +33,13 @@ Suppose
 Then
 
 1. Every slice 
-\[
 \begin{align*}
-f_x: \RR^{n_2} \to \RR$
-.\end{align*}
-\]
+f_x: \RR^{n_2} &\to \RR \\
+y &\mapsto f(x, y)
+\end{align*}
+is measurable.
+
+2. 
 
 ## 2: Convolutions and the Fourier Transform
 
