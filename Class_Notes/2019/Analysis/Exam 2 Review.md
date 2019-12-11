@@ -39,7 +39,11 @@ y &\mapsto f(x, y)
 \end{align*}
 is measurable.
 
-2. 
+2. The function
+\begin{align*}
+F
+.\end{align*}
+
 
 ## 2: Convolutions and the Fourier Transform
 
