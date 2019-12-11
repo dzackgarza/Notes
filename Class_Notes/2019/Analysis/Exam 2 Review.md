@@ -61,6 +61,10 @@ for any iterated version of this integral.
 
 Definition (Convolution):
 
+\begin{align*}
+(f \ast g)(x) = \int_{\RR^n} f(x-y) g(y) ~dy
+.\end{align*}
+
 
 ## 3: Hilbert Spaces
 
