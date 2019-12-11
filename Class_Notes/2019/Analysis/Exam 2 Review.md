@@ -32,7 +32,12 @@ Suppose
 
 Then
 
-1. 
+1. Every slice 
+\[
+\begin{align*}
+f_x: \RR^{n_2} \to \RR$
+.\end{align*}
+\]
 
 ## 2: Convolutions and the Fourier Transform
 
