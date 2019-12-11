@@ -162,9 +162,9 @@ f,g \in L^1 \implies \lim _{|x| \rightarrow \infty} (f * g)(x) = 0
 *Proof:*
 
 - By small tails, choose $N$ such that $\int_{B_N^c} \abs{f}, \int_{B_n^c} \abs{g} < \varepsilon$
-- Note $\abs{f \ast g} \leq \int \abs{f(x-y)} \abs{g(y)} ~dy$
+- Note $\abs{f \ast g} \leq \displaystyle\int \abs{f(x-y)} \abs{g(y)} ~dy \definedas I$
 - Use $\abs{x} \leq \abs{x-y} + \abs{y}$, take $\abs{x}\geq 2n$ so either
-  - $$\abs{x-y} \geq N \implies $$
+  - $$\abs{x-y} \geq N \implies I \leq $$
   - $\abs{x} \geq N$
 
 
