@@ -154,6 +154,8 @@ Proof:
 &\to 0
 .\end{align*}
 
+Theorem (Convolutions Vanish at Infinity)
+
 
 ### c
 **Definition (The Fourier Transform):**
