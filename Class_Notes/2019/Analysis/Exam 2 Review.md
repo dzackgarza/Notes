@@ -23,7 +23,7 @@ title: Exams 2 Review
 
 ## 1: Fubini-Tonelli
 
-Theorem (Fubini):
+**Theorem (Fubini):**
 
 Suppose
 
