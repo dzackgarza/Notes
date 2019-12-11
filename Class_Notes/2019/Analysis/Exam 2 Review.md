@@ -194,7 +194,7 @@ f,g \in L^1 \text{ and  bounded}  \implies \lim _{|x| \rightarrow \infty} (f * g
 f(x)=\int_{\mathbb{R}^{n}} \widehat{f}(x) e^{2 \pi i x \cdot \xi} d \xi
 .\end{align*}
 
-Proof:
+*Proof:*
 
 
 ## 3: Hilbert Spaces
