@@ -46,7 +46,8 @@ x &\mapsto \int_{\RR^{n_2}} f_x(y) ~dy
 \end{align*}
 is measurable on $\RR^{n_1}$
 
-3. 
+3. The function
+
 
 
 ## 2: Convolutions and the Fourier Transform
