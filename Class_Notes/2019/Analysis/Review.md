@@ -33,7 +33,7 @@ $$
 $$
 
 **Corollary (Parseval's Identity):**
-If $\span \theset{u_n}$ is dense in $\mathcal{H}$, so it is a basis, then this is an equality.
+If $\spanof \theset{u_n}$ is dense in $\mathcal{H}$, so it is a basis, then this is an equality.
 
 **Riesz-Fischer:**
 
