@@ -197,7 +197,7 @@ f(x)=\int_{\mathbb{R}^{n}} \widehat{f}(x) e^{2 \pi i x \cdot \xi} d \xi
 *Proof:*
 Idea: Fubini-Tonelli doesn't work directly, so introduce a convergence factor, take limits, and use uniqueness of limits.
 \begin{align*}
-\int \hat f(\xi) e^{2\pi i x \cdot \xi} e^{-\pi t^2 \abs{\xi}^2} dx
+\int \hat f(\xi) e^{2\pi i x \cdot \xi} e^{-\pi t^2 \abs{\xi}^2} ~d\xi
 .\end{align*}
 
 
