@@ -24,6 +24,12 @@ title: Exams 2 Review
 # Exam 2 (Practice)
 [Link to PDF File](./Review/Exam2&#32;Practice.pdf)
 
+
+Proving uniform continuity: show
+$$
+\norm{f - \tau_h f}_1 \mapsvia{h\to 0} 0
+$$
+
 ## 1: Fubini-Tonelli
 
 **Theorem (Fubini):**
