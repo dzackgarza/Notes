@@ -156,12 +156,12 @@ Proof:
 
 **Theorem (Convolutions Vanish at Infinity)**
 \begin{align*}
-f,g \in L^1 \implies \lim _{|x| \rightarrow \infty} (f * g)(x) = 0
+f,g \in L^1 \text{ and  bounded}  \implies \lim _{|x| \rightarrow \infty} (f * g)(x) = 0
 .\end{align*}
 
 *Proof:*
 
-- Choose
+- Choose $M \geq f,g$.
 - By small tails, choose $N$ such that $\int_{B_N^c} \abs{f}, \int_{B_n^c} \abs{g} < \varepsilon$
 - Note $\abs{f \ast g} \leq \displaystyle\int \abs{f(x-y)} \abs{g(y)} ~dy \definedas I$
 - Use $\abs{x} \leq \abs{x-y} + \abs{y}$, take $\abs{x}\geq 2n$ so either
