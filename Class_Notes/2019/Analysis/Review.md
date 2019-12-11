@@ -45,12 +45,12 @@ Let $U = \theset{u_n}_{n=1}^\infty$ be an orthonormal set (not necessarily a bas
 \vector x &\mapsto \theset{\inner{\vector x}{\vector u_n}}_{n=1}^\infty
 \end{align*}
 
-1. If $\theset{a_n} \in \ell^2(\NN)$, then there exists a $\vector x \in \mathcal{H}$ such that
+i.e. if $\theset{a_n} \in \ell^2(\NN)$, so $\sum \abs{a_n}^2 < \infty$, then there exists a $\vector x \in \mathcal{H}$ such that
 $$
 a_n = \inner{\vector x}{\vector u_n} \quad \forall n.
 $$
 
-3. $\vector x$ can be chosen such that
+1. $\vector x$ can be chosen such that
 $$
 \norm{\vector x}^2 = \sum \abs{a_n}^2
 $$
