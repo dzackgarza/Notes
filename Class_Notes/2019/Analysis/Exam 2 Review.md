@@ -130,7 +130,7 @@ $$
 - $\int \phi = \int \phi_t = 1$
 - $f$ bounded and uniformly continuous $\implies f \ast \phi_t \uniformlyconverges f$
 
-**Theorem:**
+**Theorem (Norm Converge of Approximate Identites):**
 $$
 \norm{f \ast \phi_t - f}_1 \mapsvia{t\to 0} 0.
 $$
