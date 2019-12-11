@@ -30,7 +30,7 @@ Suppose
 - $f: \RR^{n_1 + n_2} \to \RR$ is measurable on its domain
 - $f$ is non-negative
 
-Then
+Then for almost every $x\in 
 
 1. Every slice 
 \begin{align*}
