@@ -41,8 +41,9 @@ is measurable.
 
 2. The function
 \begin{align*}
-F
-.\end{align*}
+F: \RR^{n_1} &\to \RR \\
+x &\mapsto \int_{\RR^{n_2}} f(x, y) ~dy
+\end{align*}
 
 
 ## 2: Convolutions and the Fourier Transform
