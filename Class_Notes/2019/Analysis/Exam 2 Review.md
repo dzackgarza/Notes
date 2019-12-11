@@ -50,7 +50,7 @@ is measurable on $\RR^{n_1}$
 \begin{align*}
 G(y) = \int_{\RR^n} F(x) ~dx = \int_{\RR^{n_1}} \int_{\RR^{n_2}} f(x, y) ~dy ~dx
 \end{align*}
-is 
+is measurable
 
 
 ## 2: Convolutions and the Fourier Transform
