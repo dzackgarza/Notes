@@ -169,6 +169,8 @@ Proof:
 - $f\in L^1$ and $\hat f = 0$ almost everywhere $\implies f = 0$ almost everywhere.
 - Multiplication lemma: $f,g \in L^1 \implies \int \hat f g = \int f \hat g$.
 
+**Theorem (Fourier Inversion):**
+
 
 ## 3: Hilbert Spaces
 
