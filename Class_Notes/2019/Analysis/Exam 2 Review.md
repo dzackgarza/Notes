@@ -187,7 +187,6 @@ f,g \in L^1 \text{ and  bounded}  \implies \lim _{|x| \rightarrow \infty} (f * g
 - $f\in L^1 \implies \hat{f}$ is bounded and uniformly continuous
 - $f, \hat f \in L^1 \implies f$ is bounded, uniformly continuous, and vanishes at infinity
 - $f\in L^1$ and $\hat f = 0$ almost everywhere $\implies f = 0$ almost everywhere.
-- Multiplication lemma: $f,g \in L^1 \implies \int \hat f g = \int f \hat g$.
 
 **Theorem (Fourier Inversion):**
 \begin{align*}
@@ -202,6 +201,7 @@ Use the following facts:
 - $g(x) \definedas e^{-\pi \abs{t}^2} \implies \hat g(\xi) = g(\xi)$
 - $g_t(x) = t^{-n} g(x/t) = t^{-n}e^{-\pi \abs{x}^2/t^2}$
 - $\hat g_t(x) = g(tx) = e^{-\pi t^2 \abs{x}^2}$
+- $f,g \in L^1 \implies \int \hat f g = \int f \hat g$.
 
 \begin{align*}
 f(x) 
