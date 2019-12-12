@@ -375,6 +375,10 @@ We first note
 .\end{align*}
 
 Note that if $p,q$ are conjugate exponents then
+\begin{align*}
+\frac 1 q &= 1 - \frac 1 p = \frac{p-1} p \\
+q &= \frac p {p-1} 
+.\end{align*}
 
 Then taking integrals yields
 \begin{align*}
