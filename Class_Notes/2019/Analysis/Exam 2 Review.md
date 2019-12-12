@@ -337,7 +337,9 @@ p-test for integrals:
 Inclusions and relationships:
 
 \begin{align*}
-m(X) < \infty \implies L^\infty \subset L^2 \subset L^1
+m(X) < \infty \implies 
+&L^\infty \subset L^2 \subset L^1 \\
+&\ell^2(\ZZ) \subset \ell^1(\ZZ) \subset \ell^\infty(\ZZ)
 .\end{align*}
 
 
