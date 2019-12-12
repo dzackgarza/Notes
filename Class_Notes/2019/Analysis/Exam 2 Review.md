@@ -351,6 +351,9 @@ m(X) < \infty \implies
 .\end{align*}
 
 *Proof:*
+\begin{align*}
+\int|f \| g| \leq \int \frac{|f|^{p}}{p} \frac{|g|^{q}}{q}=\frac{1}{p}+\frac{1}{q}=1
+.\end{align*}
 
 
 
