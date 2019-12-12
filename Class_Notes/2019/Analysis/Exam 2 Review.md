@@ -291,7 +291,7 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 - Define $x = \displaystyle\lim_{N\to\infty} S_N$ where $S_N = \sum_{k=1}^N a_k u_k$
 - $\theset{S_N}$ is Cauchy and $H$ is complete, so $x\in H$.
 - By construction, $\inner{x}{u_n} = \inner{\sum_k a_k u_k}{u_n} = \sum_k a_k \inner{u_k}{u_n} = a_n$ since the $u_k$ are all orthogonal.
-- 
+- $\norm{x}^2 = \norm{\sum_k a_k u_k}^2 = \sum_k \norm{a_k u_k}^2 = \sum \abs{a_k}^2$ by Pythagoras since the $u_k$ are normal.
 
 ## c
 
