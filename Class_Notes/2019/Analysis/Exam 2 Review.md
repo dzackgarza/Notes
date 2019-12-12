@@ -367,7 +367,7 @@ Using $AB \leq \frac 1 p A^p + \frac 1 q B^q$, we have
 \|f+g\|_{p} \leq\|f\|_{p}+\|g\|_{p}
 .\end{align*}
 
-
+*Proof:*
 
 
 ## 5: Dual Spaces
