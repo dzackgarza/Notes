@@ -429,7 +429,7 @@ For any $L < M$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0$ and
 \norm{f}_p &= \left( \int_X \abs{f}^p \right)^{\frac 1 p} \\
 &\geq \left( \int_S \abs{f}^p \right)^{\frac 1 p} \\
 &\geq L ~m(S)^{\frac 1 p} \mapsvia{p\to\infty} L \\
-&\implies \liminf_p \norm{f}_p \geq L
+&\implies \liminf_p \norm{f}_p \geq M
 .\end{align*}
 
 We also have
