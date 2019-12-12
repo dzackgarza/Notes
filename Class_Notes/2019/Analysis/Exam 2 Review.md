@@ -252,6 +252,12 @@ $$
 $$
 
 *Proof:*
+Let $S_N = \sum_{n=1}^N \inner{x}{u_n} u_n$
+\begin{align*}
+\norm{x - S_N}^2 
+&= \inner{x - S_n}{x - S_N} \\
+&= \norm{x}^2 -
+.\end{align*}
 
 
 ## b
