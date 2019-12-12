@@ -199,7 +199,7 @@ Idea: Fubini-Tonelli doesn't work directly, so introduce a convergence factor, t
 
 Use the following facts:
 
-- 
+- $g(t) \definedas e^{
 
 \begin{align*}
 f(x) 
