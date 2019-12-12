@@ -408,12 +408,12 @@ and canceling common terms yields
 
 ### c
 
-Definition:
+**Definition (Infinity Norm):**
 
 \begin{align*}
 L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 &\text{where} \\
-\norm{f}_\infty &= \inf \theset{\alpha \geq 0 \suchthat m\theset{} = 0}
+\norm{f}_\infty &= \inf_{\alpha \geq 0} \theset{\alpha \suchthat m\theset{\abs{f} \geq \alpha} = 0}
 .\end{align*}
 
 
