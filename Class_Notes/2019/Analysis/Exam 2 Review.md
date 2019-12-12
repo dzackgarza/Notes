@@ -418,7 +418,7 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 
 **Theorem:**
 \begin{align*}
-\lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty 
+m(X) < \infty \implies \lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty 
 .\end{align*}
 
 *Proof:*
