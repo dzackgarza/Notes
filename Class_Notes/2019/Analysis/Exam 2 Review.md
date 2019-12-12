@@ -209,7 +209,8 @@ f(x)
 &= \int \hat f(\xi) e^{2\pi i x \cdot \xi}  \\
 &= \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} \\
 &= \int \hat f(\xi) \phi(\xi) \\
-&=\int f(\xi) \hat \phi(\xi)
+&=\int f(\xi) \hat \phi(\xi) \\
+&= \int f(\xi) g(
 .\end{align*}
 
 
