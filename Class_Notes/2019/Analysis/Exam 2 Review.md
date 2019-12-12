@@ -207,7 +207,8 @@ Use the following facts:
 \begin{align*}
 f(x) 
 &= \int \hat f(\xi) e^{2\pi i x \cdot \xi} ~d\xi \\
-&= \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} ~d\xi
+&= \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} ~d\xi \\
+&= \int \hat f(\xi) \phi(\xi)
 .\end{align*}
 
 
