@@ -361,6 +361,8 @@ Using $AB \leq \frac 1 p A^p + \frac 1 q B^q$, we have
 \int|f \| g| \leq \int \frac{|f|^{p}}{p} \frac{|g|^{q}}{q}=\frac{1}{p}+\frac{1}{q}=1
 .\end{align*}
 
+**Theorem (Minkowski's Inequality):**
+
 
 
 
