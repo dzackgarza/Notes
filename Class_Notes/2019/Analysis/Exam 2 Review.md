@@ -201,6 +201,7 @@ Use the following facts:
 
 - $g(x) \definedas e^{-\pi \abs{t}^2} \implies \hat g(\xi) = g(\xi)$
 - $g_t(x) = t^{-n} g(x/t) = t^{-n}e^{-\pi \abs{x}^2/t^2}$
+- $\hat g_t(x) = g(tx) = $
 
 \begin{align*}
 f(x) 
