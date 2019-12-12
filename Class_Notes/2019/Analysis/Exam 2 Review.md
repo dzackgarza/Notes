@@ -237,7 +237,7 @@ $$
 I_t(x) \to \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~\text{ pointwise and }~\norm{I_t(x) - f(x)}_1 \to 0.
 $$
 
-So there is a subsequence $I_{t_n}$ such that $I_{t_n}(x) \to f(x)$ almost everywhere, so $f(x) = \int \hat f(\xi) ~e^{2\pi i x \cdot \xi}$ almost everywhere by uniqueness of limits.
+So there is a subsequence $I_{t_n}$ such that $I_{t_n}(x) \to f(x)$ almost everywhere, so $f(x) = \int \hat f(\xi) ~e^{2\pi i x \cdot \xi}$ almost everywhere by uniqueness of limits. $\qed$
 
 ## 3: Hilbert Spaces
 
@@ -283,7 +283,7 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 \sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2 \\
 \implies 
 \sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2 &\leq 
-\norm{x}^2
+\norm{x}^2 \qed
 .\end{align*}
 
 ## b
@@ -320,7 +320,7 @@ So
 $$
 x = \sum_{k=1}^\infty \inner{x}{u_k} u_k
 \implies
-\norm{x}^2 = \sum_{k=1}^\infty \abs{\inner{x}{u_k}}^2
+\norm{x}^2 = \sum_{k=1}^\infty \abs{\inner{x}{u_k}}^2. \qed
 $$
 
 
@@ -359,7 +359,7 @@ m(X) < \infty \implies
 
 Using $AB \leq \frac 1 p A^p + \frac 1 q B^q$, we have
 \begin{align*}
-\int|f \| g| \leq \int \frac{|f|^{p}}{p} \frac{|g|^{q}}{q}=\frac{1}{p}+\frac{1}{q}=1
+\int|f \| g| \leq \int \frac{|f|^{p}}{p} \frac{|g|^{q}}{q}=\frac{1}{p}+\frac{1}{q}=1 \qed
 .\end{align*}
 
 **Theorem (Minkowski's Inequality):**
@@ -400,7 +400,7 @@ and canceling common terms yields
 1 &\leq \left( \norm{f}_p + \norm{g}_p \right) \frac{1}{\norm{f+g}_p} \\
 &\implies 
 \norm{f+g}_p
-\leq \norm{f}_p + \norm{g}_p
+\leq \norm{f}_p + \norm{g}_p \qed
 .\end{align*}
 
 
