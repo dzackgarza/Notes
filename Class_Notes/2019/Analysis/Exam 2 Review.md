@@ -368,9 +368,14 @@ Using $AB \leq \frac 1 p A^p + \frac 1 q B^q$, we have
 .\end{align*}
 
 *Proof:*
+
+We first note
 \begin{align*}
 \abs{f+g}^p = \abs{f+g}\abs{f+g}^{p-1} \leq \left( \abs{f} + \abs{g}\right) \abs{f+g}^{p-1}
 .\end{align*}
+
+Then taking integrals yields
+
 
 
 ## 5: Dual Spaces
