@@ -202,7 +202,7 @@ Use the following facts:
 - $g_t(x) = t^{-n} g(x/t) = t^{-n}e^{-\pi \abs{x}^2/t^2}$
 - $\hat g_t(x) = g(tx) = e^{-\pi t^2 \abs{x}^2}$
 - $f,g \in L^1 \implies \int \hat f g = \int f \hat g$.
-- $\phi(\xi) \definedas e^{2\pi i x \cdot \xi)
+- $\phi(\xi) \definedas e^{2\pi i x \cdot \xi}$
 
 \begin{align*}
 f(x) 
