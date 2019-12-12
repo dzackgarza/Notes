@@ -228,7 +228,8 @@ but we also have
 \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} \\
 .\end{align*}
 
-So $I_t(x) \to \int \hat f(\xi) ~e^{2\pi i x \cdot \xi}$ pointwise and $I_t(x) \to f(x)$ in $L^1$. So
+So $I_t(x) \to \int \hat f(\xi) ~e^{2\pi i x \cdot \xi}$ pointwise and $\norm{I_t(x) - f(x)}_1 \to 0$. 
+So there is a subsequence $I_{t_n}$ such that $I_{t_n}(x) \to f(x)$ almost everywhere, so $f(x) = \int \hat f(\xi) ~e^{2\pi i x \cdot \xi}$ almost everywhere by uniqueness of limits.
 
 ## 3: Hilbert Spaces
 
