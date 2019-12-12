@@ -213,7 +213,9 @@ I(x)
 &=\int f(\xi) \hat \phi(\xi) \\
 &= \int f(\xi) \widehat{\hat g}(\xi - x) \\
 &= \int f(\xi) g_t(x - y)  \quad = (f \ast g_t) \uniformlyconverges f
-.\end{align*}
+,\end{align*}
+
+but we also have
 
 
 ## 3: Hilbert Spaces
