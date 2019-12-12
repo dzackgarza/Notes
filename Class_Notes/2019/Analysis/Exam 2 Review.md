@@ -363,6 +363,9 @@ Using $AB \leq \frac 1 p A^p + \frac 1 q B^q$, we have
 .\end{align*}
 
 **Theorem (Minkowski's Inequality):**
+\begin{align*}
+\|f+g\|_{p} \leq\|f\|_{p}+\|g\|_{p}
+.\end{align*}
 
 
 
