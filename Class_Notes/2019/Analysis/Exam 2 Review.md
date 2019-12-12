@@ -157,7 +157,7 @@ $$
 &\leq \varepsilon + 
 2\norm{f}_1 \int_{y \geq \delta} \phi_t(y) dy \\
 &\leq \varepsilon + 2\norm{f}_1 \varepsilon \quad\text{since $\phi_t$ has small tails} \\
-&\to 0
+&\to 0 \qed
 .\end{align*}
 
 **Theorem (Convolutions Vanish at Infinity)**
@@ -178,6 +178,7 @@ f,g \in L^1 \text{ and  bounded}  \implies \lim _{|x| \rightarrow \infty} (f * g
   
   - $$\abs{y} \geq N \implies I \leq \int_{\theset{y \geq N}} M\abs{g(y)} ~dy\leq  M \varepsilon \to 0$$
 
+$\qed$
 
 ### c
 **Definition (The Fourier Transform):**
