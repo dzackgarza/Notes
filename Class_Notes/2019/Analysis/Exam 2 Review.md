@@ -203,7 +203,7 @@ Use the following facts:
 - $\hat g_t(x) = g(tx) = e^{-\pi t^2 \abs{x}^2}$
 - $f,g \in L^1 \implies \int \hat f g = \int f \hat g$.
 - $\phi(\xi) \definedas e^{2\pi i x \cdot \xi} ~\hat g_t(\xi)$
-- $\hat\phi(\xi) = \mathcal{F}$
+- $\hat\phi(\xi) = \mathcal{F}(\hat g($
 
 \begin{align*}
 f(x) 
