@@ -13,6 +13,7 @@ title: Exams 2 Review
   - [b](#b-1)
   - [c](#c-1)
   - [4: Lp Spaces](#4-lp-spaces)
+    - [a](#a-2)
   - [5: Dual Spaces](#5-dual-spaces)
 - [Exam 2 (2018)](#exam-2-2018)
 - [Exam 2 (2014)](#exam-2-2014)
@@ -341,6 +342,8 @@ m(X) < \infty \implies
 &L^\infty \subset L^2 \subset L^1 \\
 &\ell^2(\ZZ) \subset \ell^1(\ZZ) \subset \ell^\infty(\ZZ)
 .\end{align*}
+
+### a
 
 
 ## 5: Dual Spaces
