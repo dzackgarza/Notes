@@ -275,7 +275,15 @@ And by continuity of the norm and inner product, we have
 \sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2
 .\end{align*}
 
-Then noting that $\norm{x - S_N}^2 \geq 0$, we have
+Then noting that $0 \leq \norm{x - S_N}^2$, we have
+\begin{align*}
+0 \leq 
+\norm{x}^2 - 
+\sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2 \\
+\implies
+\norm{x}^2 \geq 
+\sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2
+.\end{align*}
 
 
 
