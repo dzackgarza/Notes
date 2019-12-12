@@ -217,9 +217,17 @@ I_t(x)
 
 but we also have
 \begin{align*}
-\lim_{t\to 0} I_t(x) =
+\lim_{t\to 0} I_t(x)
+&= 
+\lim_{t\to 0} \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} \\
+&=_{DCT}
+\int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~\lim_{t\to 0} e^{-\pi t^2 \abs{\xi}^2} \\
+&=
+\int \hat f(\xi) ~e^{2\pi i x \cdot \xi} \\
+&= f(x)
 .\end{align*}
 
+So $I_t(x) \to f(x)$ pointwise
 
 ## 3: Hilbert Spaces
 
