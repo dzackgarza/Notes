@@ -200,6 +200,7 @@ Idea: Fubini-Tonelli doesn't work directly, so introduce a convergence factor, t
 Use the following facts:
 
 - $g(x) \definedas e^{-\pi \abs{t}^2} \implies \hat g(\xi) = g(\xi)$
+- $g_t(x) = t^{-n} g(x/t) = 
 
 \begin{align*}
 f(x) 
