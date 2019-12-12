@@ -368,6 +368,9 @@ Using $AB \leq \frac 1 p A^p + \frac 1 q B^q$, we have
 .\end{align*}
 
 *Proof:*
+\begin{align*}
+\abs{f+g}
+.\end{align*}
 
 
 ## 5: Dual Spaces
