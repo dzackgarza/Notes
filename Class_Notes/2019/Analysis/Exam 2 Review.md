@@ -228,7 +228,7 @@ but we also have
 \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} \\
 .\end{align*}
 
-So $\int \hat f(\xi) ~e^{2\pi i x \cdot \xi}$ pointwise and $I_t(x) \to f(x)$ in $L^1$.
+So $I_t(x) \to \int \hat f(\xi) ~e^{2\pi i x \cdot \xi}$ pointwise and $I_t(x) \to f(x)$ in $L^1$. So
 
 ## 3: Hilbert Spaces
 
