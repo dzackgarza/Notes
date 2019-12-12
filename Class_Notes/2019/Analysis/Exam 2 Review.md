@@ -417,6 +417,9 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 .\end{align*}
 
 Theorem:
+\begin{align*}
+\lim_{p\to\infty} = 
+.\end{align*}
 
 
 
