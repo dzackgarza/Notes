@@ -352,6 +352,10 @@ m(X) < \infty \implies
 
 *Proof:*
 It suffices to show this when $\norm{f}_p = \norm{g}_q = 1$, since
+\begin{align*}
+
+.\end{align*}
+
 
 \begin{align*}
 \int|f \| g| \leq \int \frac{|f|^{p}}{p} \frac{|g|^{q}}{q}=\frac{1}{p}+\frac{1}{q}=1
