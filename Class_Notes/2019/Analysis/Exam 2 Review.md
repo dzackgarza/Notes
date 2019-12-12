@@ -256,7 +256,13 @@ Let $S_N = \sum_{n=1}^N \inner{x}{u_n} u_n$
 \begin{align*}
 \norm{x - S_N}^2 
 &= \inner{x - S_n}{x - S_N} \\
-&= \norm{x}^2 -
+&= \norm{x}^2 + \norm{S_N}^2 - 2\Re\inner{x}{S_N} \\
+&= \norm{x}^2 + \norm{S_N}^2 - 2\Re \inner{x}{\sum_{n=1}^N \inner{x}{u_n}u_n} \\
+&= \norm{x}^2 + \norm{S_N}^2 - 2\Re \sum_{n=1}^N \inner{x}{ \inner{x}{u_n}u_n} \\
+&= \norm{x}^2 + \norm{S_N}^2 - 2\Re \sum_{n=1}^N \overline{\inner{x}{u_n}}\inner{x}{u_n} \\
+&= \norm{x}^2 + \left\|\sum_{n=1}^N \inner{x}{u_n} u_n\right\|^2 - 2 \sum_{n=1}^N \abs{\inner{x}{u_n}}^2 \\
+&= \norm{x}^2 + \sum_{n=1}^N \abs{\inner{x}{u_n}}^2 - 2 \sum_{n=1}^N \abs{\inner{x}{u_n}}^2 \\
+&= \norm{x}^2 - \sum_{n=1}^N \abs{\inner{x}{u_n}}^2
 .\end{align*}
 
 
