@@ -277,12 +277,12 @@ And by continuity of the norm and inner product, we have
 
 Then noting that $0 \leq \norm{x - S_N}^2$, we have
 \begin{align*}
-0 \leq 
+0 &\leq 
 \norm{x}^2 - 
 \sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2 \\
-\implies
-\norm{x}^2 \geq 
-\sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2
+\implies 
+\sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2 &\leq 
+\norm{x}^2
 .\end{align*}
 
 
