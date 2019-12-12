@@ -426,7 +426,7 @@ For any $L < \norm{f}_\infty$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0
 \begin{align*}
 \norm{f}_p &= \left( \int_X \abs{f}^p \right)^{\frac 1 p} \\
 &\geq \left( \int_S \abs{f}^p \right)^{\frac 1 p} \\
-
+&\geq L 
 .\end{align*}
 
 ## 5: Dual Spaces
