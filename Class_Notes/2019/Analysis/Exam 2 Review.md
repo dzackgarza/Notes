@@ -345,6 +345,9 @@ m(X) < \infty \implies
 
 ### a
 
+Theorem (Holder's Inequality):
+
+
 
 ## 5: Dual Spaces
 
