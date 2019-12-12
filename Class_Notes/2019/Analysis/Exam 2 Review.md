@@ -328,9 +328,10 @@ $$
 p-test for integrals:
 \begin{align*}
 \int_0^1 x^{-p} < \infty \iff  p < 1 \\
-\int_1^\infty x^{-p} < \infty \iff  p > 1 \\
-
+\int_1^\infty x^{-p} < \infty \iff  p > 1 
 .\end{align*}
+
+> Yields a general technique: break integrals apart at $x=1$.
 
 
 Inclusions and relationships:
