@@ -327,6 +327,9 @@ $$
 
 Inclusions and relationships:
 
+\begin{align*}
+
+.\end{align*}
 
 
 ## 5: Dual Spaces
