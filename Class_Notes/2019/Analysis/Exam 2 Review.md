@@ -422,7 +422,7 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 .\end{align*}
 
 *Proof:*
-
+Let $S = \theset{
 
 
 ## 5: Dual Spaces
