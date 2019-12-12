@@ -212,7 +212,9 @@ I_t(x)
 &= \int \hat f(\xi) \phi(\xi) \\
 &=\int f(\xi) \hat \phi(\xi) \\
 &= \int f(\xi) \widehat{\hat g}(\xi - x) \\
-&= \int f(\xi) g_t(x - y)  \quad = (f \ast g_t) \uniformlyconverges f \text{ as }t \to 0
+&= \int f(\xi) g_t(x - y)  \\
+&= (f \ast g_t) \\
+&\to f \text{ in $L^1$ as }t \to 0
 ,\end{align*}
 
 but we also have
@@ -227,7 +229,7 @@ but we also have
 &= f(x)
 .\end{align*}
 
-So $I_t(x) \to f(x)$ pointwise, and since $I_t \to f
+So $I_t(x) \to f(x)$ pointwise, and since $I_t \to f$
 
 ## 3: Hilbert Spaces
 
