@@ -242,11 +242,16 @@ So there is a subsequence $I_{t_n}$ such that $I_{t_n}(x) \to f(x)$ almost every
 
 ## a
 
-Theorem (Bessel's Inequality):
+**Theorem (Bessel's Inequality):**
 $$
 \left\|x-\sum_{n=1}^{N}\left\langle x, u_{n}\right\rangle u_{n}\right\|^{2}=\|x\|^{2}-\sum_{n=1}^{N}\left|\left\langle x, u_{n}\right\rangle\right|^{2}
 $$
 and thus
+$$
+\sum_{n=1}^{\infty}\left|\left\langle x, u_{n}\right\rangle\right|^{2} \leq\|x\|^{2}
+$$
+
+*Proof:*
 
 
 ## b
