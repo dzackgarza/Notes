@@ -416,6 +416,7 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 \norm{f}_\infty &= \inf_{\alpha \geq 0} \theset{\alpha \suchthat m\theset{\abs{f} \geq \alpha} = 0}
 .\end{align*}
 
+Theorem:
 
 
 ## 5: Dual Spaces
