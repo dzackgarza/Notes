@@ -382,14 +382,15 @@ q &= \frac p {p-1}
 
 Then taking integrals yields
 \begin{align*}
-\norm{(f+g\int \abs{f+g}^p 
+\norm{f+g}_p^p &=
+\int \abs{f+g}^p \\
 &\leq \int \left( \abs{f} + \abs{g}\right) \abs{f+g}^{p-1} \\ 
 &= \int \abs{f} \abs{f+g}^{p-1} + \int \abs{g} \abs{f+g}^{p-1} \\
 &= \norm{f(f+g)^{p-1}}_1 + \norm{g(f+g)^{p-1}}_1 \\
 &\leq \norm{f}_p ~\norm{(f+g)^{p-1})}_q + \norm{g}_p ~\norm{(f+g)^{p-1})}_q \\
-&= \left( \norm{f}_p + \norm{g}_p \right) \norm{(f+g)^{p-1})}_q \\
-&= \left( \norm{f}_p + \norm{g}_p \right) \left( \int (f+g)^{(p-1)q} \right)^{\frac 1 q} \\
-&= \left( \norm{f}_p + \norm{g}_p \right) \left( \int (f+g)^{(p-1)q} \right)^{1 - \frac 1 p}
+&= \left( \norm{f}_p + \norm{g}_p \right) \norm{ (f+g)^{p-1})}_q \\
+&= \left( \norm{f}_p + \norm{g}_p \right) \left( \int \abs{f+g}^{(p-1)q} \right)^{\frac 1 q} \\
+&= \left( \norm{f}_p + \norm{g}_p \right) \left( \int \abs{f+g}^{p} \right)^{1 - \frac 1 p}
 .\end{align*}
 
 
