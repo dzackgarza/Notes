@@ -382,7 +382,7 @@ q &= \frac p {p-1}
 
 Then taking integrals yields
 \begin{align*}
-\int \abs{f+g}^p 
+\norm{(f+g\int \abs{f+g}^p 
 &\leq \int \left( \abs{f} + \abs{g}\right) \abs{f+g}^{p-1} \\ 
 &= \int \abs{f} \abs{f+g}^{p-1} + \int \abs{g} \abs{f+g}^{p-1} \\
 &= \norm{f(f+g)^{p-1}}_1 + \norm{g(f+g)^{p-1}}_1 \\
