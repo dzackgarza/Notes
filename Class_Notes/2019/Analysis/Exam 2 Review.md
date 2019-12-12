@@ -265,7 +265,8 @@ Let $S_N = \sum_{n=1}^N \inner{x}{u_n} u_n$
 &= \norm{x}^2 - \sum_{n=1}^N \abs{\inner{x}{u_n}}^2
 .\end{align*}
 
-Now using the fact that $\
+And thus
+
 
 
 ## b
