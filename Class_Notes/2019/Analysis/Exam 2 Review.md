@@ -295,9 +295,25 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 
 ## c
 Let $u_n$ be arbitrary. Then
+
 \begin{align*}
 \inner{x - \sum_{k=1}^\infty \inner{x}{u_k}u_k }{u_n}
+&=
+\inner{x}{u_n}
+-
+\inner{\sum_{k=1}^\infty \inner{x}{u_k}u_k }{u_n} \\
+&=
+\inner{x}{u_n}
+-
+\sum_{k=1}^\infty  \inner{\inner{x}{u_k}u_k }{u_n} \\
+&=
+\inner{x}{u_n}
+-
+\sum_{k=1}^\infty  \inner{x}{u_k} \inner{u_k }{u_n} \\
+&= \inner{x}{u_n} - \inner{x}{u_n} = 0
 .\end{align*}
+
+So $x = 
 
 
 ## 4: Lp Spaces
