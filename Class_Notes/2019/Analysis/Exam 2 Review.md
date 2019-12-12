@@ -285,10 +285,10 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 \norm{x}^2
 .\end{align*}
 
-
-
-
 ## b
+
+- Take $\theset{a_n} \in \ell^2$, then note that $\sum \abs{a_n}^2 < \infty \implies$ the tails vanish.
+- 
 
 ## c
 
