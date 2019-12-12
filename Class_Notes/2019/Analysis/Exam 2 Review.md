@@ -211,7 +211,8 @@ f(x)
 &= \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} \\
 &= \int \hat f(\xi) \phi(\xi) \\
 &=\int f(\xi) \hat \phi(\xi) \\
-&= \int f(\xi) \widehat{\hat g}(\xi - x) \quad = 
+&= \int f(\xi) \widehat{\hat g}(\xi - x) \\
+&= \int f(\xi) g_t(\xi - x) 
 .\end{align*}
 
 
