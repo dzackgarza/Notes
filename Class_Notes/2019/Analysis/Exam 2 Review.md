@@ -227,7 +227,7 @@ but we also have
 &= f(x)
 .\end{align*}
 
-So $I_t(x) \to f(x)$ pointwise
+So $I_t(x) \to f(x)$ pointwise, and since $I_t \to f
 
 ## 3: Hilbert Spaces
 
