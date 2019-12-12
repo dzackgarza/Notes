@@ -345,7 +345,12 @@ m(X) < \infty \implies
 
 ### a
 
-Theorem (Holder's Inequality):
+*Theorem (Holder's Inequality):*
+\begin{align*}
+\norm{fg}_1 \leq \norm{f}_p \norm{g}_q
+.\end{align*}
+
+Proof:
 
 
 
