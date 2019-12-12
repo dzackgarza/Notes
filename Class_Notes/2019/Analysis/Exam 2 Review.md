@@ -212,7 +212,7 @@ f(x)
 &= \int \hat f(\xi) \phi(\xi) \\
 &=\int f(\xi) \hat \phi(\xi) \\
 &= \int f(\xi) \widehat{\hat g}(\xi - x) \\
-&= \int f(\xi) g_t(\xi - x) 
+&= \int f(\xi) g_t(x - y) 
 .\end{align*}
 
 
