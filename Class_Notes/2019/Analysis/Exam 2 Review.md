@@ -409,8 +409,8 @@ and canceling common terms yields
 ### c
 
 Definition:
-$$
-L^\infty(X) 
+
+L^\infty(X) = \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty
 $$
 
 
