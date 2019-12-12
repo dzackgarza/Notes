@@ -395,7 +395,13 @@ Then taking integrals yields
 &= \left( \norm{f}_p + \norm{g}_p \right)  \frac{\norm{f+g}_p^p}{\norm{f+g}_p}
 \end{align*}
 
-and thus
+and canceling common terms yields
+\begin{align*}
+1 &\leq \left( \norm{f}_p + \norm{g}_p \right) \frac{1}{\norm{f+g}_p} \\
+&\implies 
+\norm{f+g}_p
+\leq \norm{f}_p + \norm{g}_p
+.\end{align*}
 
 
 
