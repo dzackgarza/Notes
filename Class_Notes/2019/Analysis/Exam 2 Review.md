@@ -416,10 +416,12 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 \norm{f}_\infty &= \inf_{\alpha \geq 0} \theset{\alpha \suchthat m\theset{\abs{f} \geq \alpha} = 0}
 .\end{align*}
 
-Theorem:
+**Theorem:**
 \begin{align*}
-\lim_{p\to\infty} = 
+\lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty 
 .\end{align*}
+
+*Proof:*
 
 
 
