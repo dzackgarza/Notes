@@ -408,7 +408,10 @@ and canceling common terms yields
 
 ### c
 
-Theorem:
+Definition:
+$$
+L^\infty(X) 
+$$
 
 
 ## 5: Dual Spaces
