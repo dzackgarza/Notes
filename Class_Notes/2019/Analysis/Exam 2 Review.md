@@ -432,7 +432,7 @@ For any $L < \norm{f}_\infty$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0
 
 We also have
 \begin{align*}
-
+\norm{f}_p &\leq \left( \right)^{\frac 1 p}
 .\end{align*}
 
 
