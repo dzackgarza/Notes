@@ -328,7 +328,7 @@ $$
 Inclusions and relationships:
 
 \begin{align*}
-
+m(X) < \infty \implies L^\infty \subset L^2 \subset L^1
 .\end{align*}
 
 
