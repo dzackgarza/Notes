@@ -294,9 +294,9 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 - $\norm{x}^2 = \norm{\sum_k a_k u_k}^2 = \sum_k \norm{a_k u_k}^2 = \sum_k \abs{a_k}^2$ by Pythagoras since the $u_k$ are normal.
 
 ## c
-
+Let $u_n$ be arbitrary. Then
 \begin{align*}
-\inner{}{}
+\inner{x - \sum_{k=1}^\infty \inner{x}{u_k}u_k }{u_n}
 .\end{align*}
 
 
