@@ -375,6 +375,12 @@ We first note
 .\end{align*}
 
 Then taking integrals yields
+\begin{align*}
+\int \abs{f+g}^p 
+&\leq \int \left( \abs{f} + \abs{g}\right) \abs{f+g}^{p-1} \\
+&= \int \abs{f} \abs{f+g}^{p-1} + \int \abs{g} \abs{f+g}^{p-1} \\
+&=
+.\end{align*}
 
 
 
