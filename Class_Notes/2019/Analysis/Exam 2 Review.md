@@ -271,8 +271,12 @@ And by continuity of the norm and inner product, we have
 &= \lim_{N\to\infty} \norm{x}^2 - \sum_{n=1}^N \abs{\inner{x}{u_n}}^2 \\
 \implies \norm{x - \lim_{N\to\infty} S_N}^2 &= \norm{x}^2 - \lim_{N\to\infty}\sum_{n=1}^N \abs{\inner{x}{u_n}}^2\\
 \implies 
-\norm{x - \sum_{n=1}^\infty \inner{x}{u_n}}^2
+\norm{x - \sum_{n=1}^\infty \inner{x}{u_n} u_n}^2 &= \norm{x}^2 - 
+\sum_{n=1}^\infty \abs{\inner{x}{u_n}}^2
 .\end{align*}
+
+Then noting that $\norm{x - S_N}^2 \geq 0$, we have
+
 
 
 
