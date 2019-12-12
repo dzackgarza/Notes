@@ -407,7 +407,7 @@ and canceling common terms yields
 
 
 ### c
-Break integral up into sets where $f\leq 1, f=1, f\geq 1$.
+
 
 ## 5: Dual Spaces
 
