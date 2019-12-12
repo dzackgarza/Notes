@@ -313,7 +313,12 @@ Let $x$ and $u_n$ be arbitrary. Then
 &= \inner{x}{u_n} - \inner{x}{u_n} = 0
 .\end{align*}
 
-So $x = 
+So 
+$$
+x = \sum_{k=1}^\infty \inner{x}{u_k} u_k
+\implies
+\norm{x} = \sum_{k=1}^\infty \abs{\inner{x}{u_k}}
+$$
 
 
 ## 4: Lp Spaces
