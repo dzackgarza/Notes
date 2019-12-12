@@ -422,7 +422,8 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 .\end{align*}
 
 *Proof:*
-For any $L < \norm{f}_\infty$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0$ and
+Let $M = \norm{f}_\infty$.
+For any $L < M$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0$ and
 \begin{align*}
 \norm{f}_p &= \left( \int_X \abs{f}^p \right)^{\frac 1 p} \\
 &\geq \left( \int_S \abs{f}^p \right)^{\frac 1 p} \\
@@ -432,7 +433,7 @@ For any $L < \norm{f}_\infty$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0
 
 We also have
 \begin{align*}
-\norm{f}_p &\leq \left( \int_X M^p \right)^{\frac 1 p}
+\norm{f}_p &\leq \left( \int_X ()^p \right)^{\frac 1 p}
 .\end{align*}
 
 
