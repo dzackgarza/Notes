@@ -434,7 +434,9 @@ For any $L < M$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0$ and
 
 We also have
 \begin{align*}
-\norm{f}_p &\leq \left( \int_X M^p \right)^{\frac 1 p}
+\norm{f}_p 
+&=  \left( \int_X \abs{f}^p \right)^{\frac 1 p} \\
+&\leq \left( \int_X M^p \right)^{\frac 1 p}
 .\end{align*}
 
 
