@@ -356,7 +356,7 @@ It suffices to show this when $\norm{f}_p = \norm{g}_q = 1$, since
 \|f g\|_{1} \leq\|f\|_{p}\|f\|_{q} \Longleftrightarrow \int \frac{|f|}{\|f\|_{p}} \frac{|g|}{\|g\|_{q}} \leq 1
 .\end{align*}
 
-Using $AB \leq \frac 1 p A + \frac 1 q B$, we have
+Using $AB \leq \frac 1 p A^p + \frac 1 q B^q$, we have
 \begin{align*}
 \int|f \| g| \leq \int \frac{|f|^{p}}{p} \frac{|g|^{q}}{q}=\frac{1}{p}+\frac{1}{q}=1
 .\end{align*}
