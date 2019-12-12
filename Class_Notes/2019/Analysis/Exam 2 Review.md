@@ -14,6 +14,7 @@ title: Exams 2 Review
   - [c](#c-1)
   - [4: Lp Spaces](#4-lp-spaces)
     - [a](#a-2)
+    - [c](#c-2)
   - [5: Dual Spaces](#5-dual-spaces)
 - [Exam 2 (2018)](#exam-2-2018)
 - [Exam 2 (2014)](#exam-2-2014)
@@ -405,6 +406,7 @@ and canceling common terms yields
 .\end{align*}
 
 
+### c
 
 
 ## 5: Dual Spaces
