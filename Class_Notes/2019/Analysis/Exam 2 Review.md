@@ -199,7 +199,7 @@ Idea: Fubini-Tonelli doesn't work directly, so introduce a convergence factor, t
 
 Use the following facts:
 
-- $g(t) \definedas e^{-\pi \abs{t}^2}$
+- $g(x) \definedas e^{-\pi \abs{t}^2} \implies \hat g(\xi) = g(\xi)$
 
 \begin{align*}
 f(x) 
