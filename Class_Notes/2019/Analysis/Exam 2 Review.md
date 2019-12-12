@@ -205,14 +205,14 @@ Use the following facts:
 - $\phi(\xi) \definedas e^{2\pi i x \cdot \xi} ~\hat g_t(\xi)$
 - $\hat\phi(\xi) = \mathcal{F}(\hat g(\xi - x))$
 
+Take the modified integral:
 \begin{align*}
-f(x) 
-&= \int \hat f(\xi) e^{2\pi i x \cdot \xi}  \\
+I(x)
 &= \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} \\
 &= \int \hat f(\xi) \phi(\xi) \\
 &=\int f(\xi) \hat \phi(\xi) \\
 &= \int f(\xi) \widehat{\hat g}(\xi - x) \\
-&= \int f(\xi) g_t(x - y) 
+&= \int f(\xi) g_t(x - y)  \quad = (f \ast g_t) \uniformlyconverges f
 .\end{align*}
 
 
