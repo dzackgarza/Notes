@@ -207,15 +207,18 @@ Use the following facts:
 
 Take the modified integral:
 \begin{align*}
-I(x)
+I_t(x)
 &= \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} \\
 &= \int \hat f(\xi) \phi(\xi) \\
 &=\int f(\xi) \hat \phi(\xi) \\
 &= \int f(\xi) \widehat{\hat g}(\xi - x) \\
-&= \int f(\xi) g_t(x - y)  \quad = (f \ast g_t) \uniformlyconverges f
+&= \int f(\xi) g_t(x - y)  \quad = (f \ast g_t) \uniformlyconverges f \text{ as }t \to 0
 ,\end{align*}
 
 but we also have
+\begin{align*}
+\lim_{t\to 0} I_t(x) =
+.\end{align*}
 
 
 ## 3: Hilbert Spaces
