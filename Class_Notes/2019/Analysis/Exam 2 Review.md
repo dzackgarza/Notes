@@ -424,7 +424,9 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 *Proof:*
 For any $L < \norm{f}_\infty$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0$ and
 \begin{align*}
-\norm{f}_p = \left( \int \abs{f}^p \right)^{\frac 1 p}
+\norm{f}_p &= \left( \int_X \abs{f}^p \right)^{\frac 1 p} \\
+&\geq \left( \int_S \abs{f}^p \right)^{\frac 1 p} \\
+
 .\end{align*}
 
 ## 5: Dual Spaces
