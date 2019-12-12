@@ -369,7 +369,7 @@ Using $AB \leq \frac 1 p A^p + \frac 1 q B^q$, we have
 
 *Proof:*
 \begin{align*}
-\abs{f+g}^p
+\abs{f+g}^p = \abs{f+g}\abs{f+g}^{p-1}
 .\end{align*}
 
 
