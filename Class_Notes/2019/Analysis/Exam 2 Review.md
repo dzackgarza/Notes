@@ -380,7 +380,8 @@ Then taking integrals yields
 &\leq \int \left( \abs{f} + \abs{g}\right) \abs{f+g}^{p-1} \\
 &= \int \abs{f} \abs{f+g}^{p-1} + \int \abs{g} \abs{f+g}^{p-1} \\
 &= \norm{f(f+g)^{p-1}}_1 + \norm{g(f+g)^{p-1}}_1 \\
-&\leq \norm{f}_p \norm{(f+g)^{p-1})}_q + \norm{g}_p \norm{(f+g)^{p-1})}_q
+&\leq \norm{f}_p ~\norm{(f+g)^{p-1})}_q + \norm{g}_p ~\norm{(f+g)^{p-1})}_q \\
+&=
 .\end{align*}
 
 
