@@ -325,6 +325,12 @@ $$
 
 ## 4: Lp Spaces
 
+p-test for integrals:
+\begin{align*}
+
+.\end{align*}
+
+
 Inclusions and relationships:
 
 \begin{align*}
