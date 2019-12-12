@@ -265,7 +265,14 @@ Let $S_N = \sum_{n=1}^N \inner{x}{u_n} u_n$
 &= \norm{x}^2 - \sum_{n=1}^N \abs{\inner{x}{u_n}}^2
 .\end{align*}
 
-And thus
+And by continuity of the norm and inner product, we have
+\begin{align*}
+\lim_{N\to\infty} \norm{x - S_N}^2 
+&= \lim_{N\to\infty} \norm{x}^2 - \sum_{n=1}^N \abs{\inner{x}{u_n}}^2 \\
+\implies \norm{x - \lim_{N\to\infty} S_N}^2 &= \norm{x}^2 - \lim_{N\to\infty}\sum_{n=1}^N \abs{\inner{x}{u_n}}^2\\
+\implies 
+\norm{x - \sum_{n=1}^\infty \inner{x}{u_n}}^2
+.\end{align*}
 
 
 
