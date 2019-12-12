@@ -437,7 +437,8 @@ We also have
 \norm{f}_p 
 &=  \left( \int_X \abs{f}^p \right)^{\frac 1 p} \\
 &\leq \left( \int_X M^p \right)^{\frac 1 p} \\
-&= M ~m(X)^{\frac 1 p} \mapsvia{p\to\infty} M
+&= M ~m(X)^{\frac 1 p} \mapsvia{p\to\infty} M \\
+&\implies \limsup_p \norm{f}_p 
 .\end{align*}
 
 
