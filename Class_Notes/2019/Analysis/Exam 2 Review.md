@@ -347,7 +347,7 @@ m(X) < \infty \implies
 
 **Theorem (Holder's Inequality):**
 \begin{align*}
-\norm{fg}_1 \leq \norm{f}_p \norm{g}_q
+f \in L^p, g\in L^q\norm{fg}_1 \leq \norm{f}_p \norm{g}_q
 .\end{align*}
 
 *Proof:*
