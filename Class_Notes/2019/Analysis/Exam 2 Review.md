@@ -424,7 +424,7 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 *Proof:*
 For any $L < \norm{f}_\infty$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0$ and
 \begin{align*}
-\norm{f}_p \geq 
+\norm{f}_p = 
 .\end{align*}
 
 ## 5: Dual Spaces
