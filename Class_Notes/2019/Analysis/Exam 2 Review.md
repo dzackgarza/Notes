@@ -408,6 +408,8 @@ and canceling common terms yields
 
 ### c
 
+Theorem:
+
 
 ## 5: Dual Spaces
 
