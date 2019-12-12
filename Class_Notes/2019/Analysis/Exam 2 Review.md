@@ -327,7 +327,7 @@ $$
 
 p-test for integrals:
 \begin{align*}
-\int
+\int_0^1 x^{-p} < \infty \iff 
 .\end{align*}
 
 
