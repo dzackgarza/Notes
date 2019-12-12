@@ -410,8 +410,12 @@ and canceling common terms yields
 
 Definition:
 
-L^\infty(X) = \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty
-$$
+\begin{align*}
+L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
+&\text{where} \\
+\norm{f}_\infty &= \inf \theset{\alpha \geq 0 \suchthat m\theset{} = 0}
+.\end{align*}
+
 
 
 ## 5: Dual Spaces
