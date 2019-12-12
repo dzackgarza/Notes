@@ -422,7 +422,11 @@ L^\infty(X) &= \theset{f: X \to \CC \suchthat \norm{f}_\infty < \infty} \\
 .\end{align*}
 
 *Proof:*
-For any $L < \norm{f}_\infty$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0$.
+For any $L < \norm{f}_\infty$, let $S = \theset{\abs{f} \geq L}$. Then $m(S) > 0$ and
+\begin{align*}
+
+.\end{align*}
+
 
 
 ## 5: Dual Spaces
