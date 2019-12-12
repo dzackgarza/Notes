@@ -311,15 +311,15 @@ Let $x$ and $u_n$ be arbitrary. Then
 -
 \sum_{k=1}^\infty  \inner{x}{u_k} \inner{u_k }{u_n} \\
 &= \inner{x}{u_n} - \inner{x}{u_n} = 0 \\
-&\implies 
-x - \sum_{k=1}^\infty \inner{x}{u_k}u_k = 0 \quad\text{by completeness}
+\implies 
+x - \sum_{k=1}^\infty \inner{x}{u_k}u_k &= 0 \quad\text{by completeness}
 .\end{align*}
 
 So 
 $$
 x = \sum_{k=1}^\infty \inner{x}{u_k} u_k
 \implies
-\norm{x}^2 = \sum_{k=1}^\infty \abs{\inner{x}{u_k}}
+\norm{x}^2 = \sum_{k=1}^\infty \abs{\inner{x}{u_k}}^2
 $$
 
 
