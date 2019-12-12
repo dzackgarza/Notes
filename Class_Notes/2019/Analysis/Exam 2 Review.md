@@ -296,7 +296,7 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 ## c
 
 \begin{align*}
-
+\inner{}{}
 .\end{align*}
 
 
