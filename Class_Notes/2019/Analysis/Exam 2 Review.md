@@ -288,7 +288,8 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 ## b
 
 - Take $\theset{a_n} \in \ell^2$, then note that $\sum \abs{a_n}^2 < \infty \implies$ the tails vanish.
-- Define $x = \lim_{N\to\infty} \sum_{n=1}^N a_n u_n$
+- Define $x = \displaystyle\lim_{N\to\infty} S_N$ where $S_N = \sum_{n=1}^N a_n u_n$
+- $\theset{S_N}$ is Cauchy and $H$ is complete, so $x\in H$.
 
 ## c
 
