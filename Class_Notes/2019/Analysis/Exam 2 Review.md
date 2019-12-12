@@ -374,6 +374,8 @@ We first note
 \abs{f+g}^p = \abs{f+g}\abs{f+g}^{p-1} \leq \left( \abs{f} + \abs{g}\right) \abs{f+g}^{p-1}
 .\end{align*}
 
+Note that if $p,q$ are conjugate exponents then
+
 Then taking integrals yields
 \begin{align*}
 \int \abs{f+g}^p 
@@ -383,7 +385,7 @@ Then taking integrals yields
 &\leq \norm{f}_p ~\norm{(f+g)^{p-1})}_q + \norm{g}_p ~\norm{(f+g)^{p-1})}_q \\
 &= \left( \norm{f}_p + \norm{g}_p \right) \norm{(f+g)^{p-1})}_q \\
 &= \left( \norm{f}_p + \norm{g}_p \right) \left( \int (f+g)^{(p-1)q} \right)^{\frac 1 q} \\
-&= \left( \norm{f}_p + \norm{g}_p \right) \left( \int (f+g)^{(p-1)q} \right)^{\frac 1 q}
+&= \left( \norm{f}_p + \norm{g}_p \right) \left( \int (f+g)^{(p-1)q} \right)^{1 - \frac 1 p}
 .\end{align*}
 
 
