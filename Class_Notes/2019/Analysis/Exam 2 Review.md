@@ -392,8 +392,11 @@ Then taking integrals yields
 &= \left( \norm{f}_p + \norm{g}_p \right) \left( \int \abs{f+g}^{(p-1)q} \right)^{\frac 1 q} \\
 &= \left( \norm{f}_p + \norm{g}_p \right) \left( \int \abs{f+g}^{p} \right)^{1 - \frac 1 p} \\
 &= \left( \norm{f}_p + \norm{g}_p \right) \frac{\int \abs{f+g}^{p} }{\left( \int \abs{f+g}^{p} \right)^{\frac 1 p}} \\
-&= \left( \norm{f}_p + \norm{g}_p \right)  \frac{\norm{f+g}_p^p}{}
-.\end{align*}
+&= \left( \norm{f}_p + \norm{g}_p \right)  \frac{\norm{f+g}_p^p}{\norm{f+g}_p}
+\end{align*}
+
+and thus
+
 
 
 
