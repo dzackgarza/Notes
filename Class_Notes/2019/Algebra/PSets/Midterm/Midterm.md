@@ -44,7 +44,7 @@ Since $n_p \neq 1$ by assumption, we must have $n_p = q$. Now consider sub-cases
 - $n_q = p^2$:
   We will reach a contradiction by showing that this forces 
   $$
-  \abs{P \coloneqq \union_{S_p \in \mathrm{Syl}(p, G)} S_p\setminus\theset{e}} + \abs{ Q \coloneqq \union_{S_q \in \mathrm{Syl}(q, G)} S_q\setminus\theset{e}} + \abs{\theset{e}} > \abs{G}.
+  \abs{P \definedas \union_{S_p \in \mathrm{Syl}(p, G)} S_p\setminus\theset{e}} + \abs{ Q \definedas \union_{S_q \in \mathrm{Syl}(q, G)} S_q\setminus\theset{e}} + \abs{\theset{e}} > \abs{G}.
   $$
   We have
   \[
@@ -78,7 +78,7 @@ P \leq N(P) \leq G ~\implies ~p^k \divides \abs{N(P)} \divides p^km
 
 so in fact $P \in \mathrm{Syl}(p, N(P))$ since it is a maximal $p\dash$subgroup. 
 
-Then $P' \coloneqq xPx\inv \in \mathrm{Syl}(p, N(P))$ as well, since all conjugates of Sylow $p\dash$subgroups are also Sylow $p\dash$subgroups.
+Then $P' \definedas xPx\inv \in \mathrm{Syl}(p, N(P))$ as well, since all conjugates of Sylow $p\dash$subgroups are also Sylow $p\dash$subgroups.
 
 But since $P \normal N(P)$, there is only *one* Sylow $p\dash$ subgroup of $N(P)$, namely $P$.
 This forces $P = P'$, i.e. $P = xPx\inv$, which says that $x \in N(P)$ as desired. $\qed$
@@ -92,7 +92,7 @@ So $G$ has a normal Sylow $2\dash$subgroup and we are done.
 
 #  Problem 4
 
-Let $\tau \coloneqq (t_1, t_2)$ denote the transposition and $\sigma = (s_1, s_2 \cdots, s_p)$ denote the $p\dash$cycle, and let $S = \generators{\sigma, \tau}$.
+Let $\tau \definedas (t_1, t_2)$ denote the transposition and $\sigma = (s_1, s_2 \cdots, s_p)$ denote the $p\dash$cycle, and let $S = \generators{\sigma, \tau}$.
 We would like to show that $S = S_p$, and since $S \subseteq S_p$ is clear, we just need to show that $S_p \subseteq S$.
 
 We first note that because $p$ is prime, $\sigma^k$ is a $p\dash$cycle for every $1\leq k \leq p$, and $\generators{\sigma} = \generators{\sigma^k}$ for any such $k$.
@@ -131,7 +131,7 @@ But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j
 .\end{align*}
 \]
 
-Thus we have $J \coloneqq \generators{\{(1, j) \mid 2\leq j \leq p\}} \subseteq S$.
+Thus we have $J \definedas \generators{\{(1, j) \mid 2\leq j \leq p\}} \subseteq S$.
 
 But now if $\gamma = (g_1, g_2, \cdots, g_k) \in S_p$ is an arbitrary cycle, we can write
 $$
@@ -153,7 +153,7 @@ But this means $G/Z(G)$ is cyclic, which implies that $G$ is abelian, a contradi
 
 So we must have $\#Z(G) = p$, and $\#\left(G/Z(G)\right) = p^2$.
 
-But any group of $p^2$ is abelian, and we can characterize $G' \coloneqq [G, G]$ in the following way:
+But any group of $p^2$ is abelian, and we can characterize $G' \definedas [G, G]$ in the following way:
 
 > $G' \leq G$ is the unique subgroup of $G$ such that if $N \normal G$ and $G/N$ is abelian, then $N \leq G'$.
 
@@ -243,7 +243,7 @@ $$
 f(x) = c_0 + c_p x^p + c_{2p} x^{2p} + \cdots
 $$
 
-But this says we can write $f(x) \coloneqq g(x^p)$, where
+But this says we can write $f(x) \definedas g(x^p)$, where
 $$
 g(x) = c_0 + c_p x + c_{2p} x^2 + \cdots
 $$
@@ -261,7 +261,7 @@ and thus
 f(x) &= g(x^p) \\
 &= b_0^p + b_p^p x^{p} + b_{2p}^p x^{2p} + \cdots \\
 &= (b_0 + b_p x + b_{2p} x^2)^p \\
-&\coloneqq \left( j(x) \right)^p
+&\definedas \left( j(x) \right)^p
 ,\end{align*}
 \]
 
@@ -271,7 +271,7 @@ Thus every irreducible polynomial is separable, which is what we wanted to show.
 
 # Problem 8
 
-Let $f(x) \in F[x]$ be irreducible, then since $p(x) \coloneqq \gcd(f, f')$ must divide $f$ and $f$ is irreducible, the only possibilities are $p(x) = 1$ or $p(x) = f(x)$.
+Let $f(x) \in F[x]$ be irreducible, then since $p(x) \definedas \gcd(f, f')$ must divide $f$ and $f$ is irreducible, the only possibilities are $p(x) = 1$ or $p(x) = f(x)$.
 
 If $p(x) = 1$, then $f$ is separable, so every root is distinct and $f$ itself is of the form $f(x^{p^e})$ where each $e=0$.
 
@@ -290,7 +290,7 @@ f(x) = a_p x^p + a_{2p} x^{2p} + \cdots
 $$
 and we thus define
 $$
-g(x) \coloneqq a_p x + a_{2p}x^{2} + \cdots 
+g(x) \definedas a_p x + a_{2p}x^{2} + \cdots 
 $$
 
 and we recover $f(x) = g(x^p)$. Moreover, $g$ is irreducible; otherwise if $h(x) \divides g(x)$ then $h(x^p) \divides g(x^p) = f$, where $f$ was assumed irreducible.
@@ -315,7 +315,7 @@ f(x) = x^2 - (\zeta + \zeta\inv)x + 1 \in \QQ(\zeta + \zeta\inv)[x],
 $$ 
 then $f(\zeta) = 0$.
 
-Since $\QQ(\zeta + \zeta\inv) \subset \RR$, $\QQ(\zeta)$ is a proper extension over this field, so if $d \coloneqq [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)]$ then $d > 1$.
+Since $\QQ(\zeta + \zeta\inv) \subset \RR$, $\QQ(\zeta)$ is a proper extension over this field, so if $d \definedas [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)]$ then $d > 1$.
 The fact that $\zeta$ is a root of $f$ shows that $d \leq 2$, so $d = 2$.
 We also know that $[\QQ(\zeta) : \QQ] = \phi(n)$.
 
@@ -360,7 +360,7 @@ Similarly, since $\Gal(K/F)$ is a cyclic group and every *quotient* of a cyclic 
 By the Galois correspondence, all intermediate fields will correspond to subgroups of $\Gal(K/F)$.
 Since this group is cyclic, we are reduced to analyzing the subgroup lattice of a generic cyclic group.
 
-But if $G = \generators{x \mid x^n = e}$ where $\# G = n$, then there is one and *only* one subgroup of index $d$ and order $\frac{n}{d}$ for every $d$ dividing $n$, given by $H_d \coloneqq \generators{x^d}$.
+But if $G = \generators{x \mid x^n = e}$ where $\# G = n$, then there is one and *only* one subgroup of index $d$ and order $\frac{n}{d}$ for every $d$ dividing $n$, given by $H_d \definedas \generators{x^d}$.
 
 So we have $[G: H_d] = d$, so $H_d$ corresponds to a field $E_d/ F$ of degree $d$ where $F \leq E_d \leq K$. 
 This can be done for every $d$ dividing $n$, and since $K/F$ is a Galois extension, $n = \abs{\Gal(K/F)} = [K: F]$, and this can be done for every divisor of $[K: F]$ as desired. $\qed$

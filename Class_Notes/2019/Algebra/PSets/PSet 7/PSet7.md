@@ -20,19 +20,19 @@ But then
 \begin{align*}
 xa &= \left( \sum_{i=1}^n r_i a_i \right) a \\
 &= \sum_{i=1}^n r_i a_i a \\
-&\coloneqq \sum_{i=1}^n r_i a_i',
+&\definedas \sum_{i=1}^n r_i a_i',
 \end{align*}
 \]
 
-where $a_i' \coloneqq a_i a$ for each $i$, which is still an element of $A$ since $A$ itself is a module and thus closed under multiplication.
+where $a_i' \definedas a_i a$ for each $i$, which is still an element of $A$ since $A$ itself is a module and thus closed under multiplication.
 
 But this expresses $xa$ as an element of $IS$. Similarly, we have
 \[
 \begin{align*}
 ax &= a \left( \sum_{i=1}^n r_i a_i \right)\\
 &= \sum_{i=1}^n a r_i a_i a \\
-&\coloneqq \sum_{i=1}^n r_i a a_i, \\
-&\coloneqq \sum_{i=1}^n r_i a_i',
+&\definedas \sum_{i=1}^n r_i a a_i, \\
+&\definedas \sum_{i=1}^n r_i a_i',
 \end{align*}
 \]
 
@@ -40,7 +40,7 @@ and so $ax \in IS$ as well.
 
 ## Part 2
 
-Letting $R/I \actson A/IA$ be the action given by $r+I \actson + IA \coloneqq ra + IA$, we need to show the following:
+Letting $R/I \actson A/IA$ be the action given by $r+I \actson + IA \definedas ra + IA$, we need to show the following:
 
 - $r.(x + y) = r.x + r.y$,
 - $(r + r').x = r.x + r'.x$,
@@ -51,29 +51,29 @@ Letting $\oplus$ denote the addition defined on cosets, we have
 \[
 \begin{align*}
 r \actson (x + IA \oplus y + IA) 
-&\coloneqq r \actson x + y + IA \\
-&\coloneqq r(x+y) + IA \\
+&\definedas r \actson x + y + IA \\
+&\definedas r(x+y) + IA \\
 &= rx + ry + IA \\
-&\coloneqq rx + IA \oplus ry + IA \\
-&\coloneqq (r \actson x + IA) \oplus (r\actson y + IA)
+&\definedas rx + IA \oplus ry + IA \\
+&\definedas (r \actson x + IA) \oplus (r\actson y + IA)
 .\end{align*}
 \]
 
 \[
 \begin{align*}
 (r + s) \actson x + IA 
-&\coloneqq (r+s)x + IA \\
-&\coloneqq rx + sx + IA \\
-&\coloneqq rx + IA \oplus sx + IA \\
-&\coloneqq (rs \actson IA) \oplus (sx \actson IA)
+&\definedas (r+s)x + IA \\
+&\definedas rx + sx + IA \\
+&\definedas rx + IA \oplus sx + IA \\
+&\definedas (rs \actson IA) \oplus (sx \actson IA)
 .\end{align*}
 \]
 
 \[
 \begin{align*}
-(rs) \actson x + IA &\coloneqq rsx + IA \\
+(rs) \actson x + IA &\definedas rsx + IA \\
 &= r(sx) + IA \\
-&\coloneqq r \actson(sx + IA) \\
+&\definedas r \actson(sx + IA) \\
 &= r \actson (s \actson x + IA)
 .\end{align*}
 \]
@@ -81,7 +81,7 @@ r \actson (x + IA \oplus y + IA)
 
 \[
 \begin{align*}
-1 \actson x + IA &\coloneqq 1x + IA = x + IA
+1 \actson x + IA &\definedas 1x + IA = x + IA
 .\end{align*}
 \]
 
@@ -95,7 +95,7 @@ But then let $a\in M$ be an arbitrary nontrivial element; then $(a)$ is a non-em
 
 ## Part 2
 Let $\phi: A \to A$ be a module endomorphism on a simple module $A$.
-Then $\im \phi \coloneqq \phi(A)$ is a submodule of $A$. 
+Then $\im \phi \definedas \phi(A)$ is a submodule of $A$. 
 Since $A$ is simple, we have either $\im \phi = 0$, in which case $\phi$ is the zero map, or $\im \phi = A$, so $\phi$ is surjective.
 In this case, we can also consider $\ker \phi$, which is a submodule of $A$. 
 Since $A$ is simple, we can again only have $\ker \phi = A$, which can not happen if $\phi$ is not the zero map, or $\ker \phi = 0$, in which case $\phi$ is both a surjective and an injective map and thus an isomorphism of modules.
@@ -114,14 +114,14 @@ d. Inverses: $f\inv \in X$
 e. Commutativity: $f + g = g + f$
 
 Closure: 
-This follows from the definition, because $(f + g) \actson x \coloneqq f(x) + g(x)$ pointwise, which is well-defined homomorphism $A \to B$.
+This follows from the definition, because $(f + g) \actson x \definedas f(x) + g(x)$ pointwise, which is well-defined homomorphism $A \to B$.
 
 Associativity:
 We have 
 \[
 \begin{align*}
-f + (g + h) \actson x &\coloneqq f(x) + (g + h)(x) \\
-&\coloneqq f(x) + (g(x) + h(x)) \\
+f + (g + h) \actson x &\definedas f(x) + (g + h)(x) \\
+&\definedas f(x) + (g(x) + h(x)) \\
 &= (f(x) + g(x)) + h(x) \\
 &= (f+g) + h \actson x
 .\end{align*}
@@ -163,12 +163,12 @@ Associativity:
 We have 
 \[
 \begin{align*}
-f\circ (g\circ h) \actson x &\coloneqq (f \circ (g \circ h))(x) \\
+f\circ (g\circ h) \actson x &\definedas (f \circ (g \circ h))(x) \\
 &= f((g\circ h)(x)) \\
 &= f(g(h(x))) \\
 &= (f\circ g)(h(x)) \\
 &= ((f\circ g) \circ h)(x)\\
-&\coloneqq (f \circ g) \circ h \actson x
+&\definedas (f \circ g) \circ h \actson x
 .\end{align*}
 \]
 
@@ -203,7 +203,7 @@ d. $\id_a \actson x = x$
 For (a):
 \[
 \begin{align*}
-f \actson (x + y) &\coloneqq f(x + y) \\
+f \actson (x + y) &\definedas f(x + y) \\
 &= f(x) + f(y)\quad\quad\text{since $f$ is a homomorphism} \\
 &= f\actson x + f \actson y \\
 .\end{align*}
@@ -252,7 +252,7 @@ B_1 \arrow[r]                                   & B_2 \arrow[r]                 
 \end{center}
 ```
 
-where we would like to show that $f$ is a monomorphism, i.e. that $\ker f = 0$. So let $x\in \ker f$, so $y \coloneqq f(x) = 0 \in B_3$. 
+where we would like to show that $f$ is a monomorphism, i.e. that $\ker f = 0$. So let $x\in \ker f$, so $y \definedas f(x) = 0 \in B_3$. 
 
 We will show that $x=0 \in A_3$:
 
@@ -295,11 +295,11 @@ Let $y \in B_3$; we want to then show that there exists an $x\in A_3$ such that 
 - Since $a_4 \in \ker(A_4 \to A_5)$, it pulls back to some $x\in A_3$ by exactness of $A_3 \to A_4 \to A_5$.
 - Then $f(x) \in B_3$, and it remains to show that $f(x) = y$.
 - By commutativity of the middle square, $f(x) \mapsto y_4$ under $B_3 \to B_4$.
-- Since $a \mapsto y_4$ we as well, we have $z \coloneqq f(x) - y \in B_3$ maps to $0\in B_4$.
+- Since $a \mapsto y_4$ we as well, we have $z \definedas f(x) - y \in B_3$ maps to $0\in B_4$.
 - Since $z\in \ker(B_3 \to B_4)$, by exactness it pulls back to some $b_2 \in B_2$.
 - By surjectivity of $\alpha_2$, this pulls back to some $a_2 \in A_2$.
 - By commutativity of the first square, $a_2 \mapsto z \in B_3$.
-- $a_2 \mapsto a_3 \in A_3$, where $a_3$ may not equal $x$, but $f(a_3) = z \coloneqq f(a) - y$.
+- $a_2 \mapsto a_3 \in A_3$, where $a_3$ may not equal $x$, but $f(a_3) = z \definedas f(a) - y$.
 - Then $f(a_3) = f(x) - y \implies y = f(x) - f(a_3) = f(x - a_3)$ since $f$ is a homomorphism.
 - This shows that $x-a_3 \mapsto y$ under $f$, which is the element we wanted to produce.
 
@@ -312,7 +312,7 @@ We want to show that if $(p) \normal R$ is a prime ideal then $R/(p)$ is a field
 Since $R$ is a principal ideal domain, prime ideals are maximal, so $(p)$ is maximal.
 Then $x\in R \setminus (p)$, so define
 $$
-I \coloneqq \theset{p + rx \suchthat p\in (p), r\in R} \normal R,
+I \definedas \theset{p + rx \suchthat p\in (p), r\in R} \normal R,
 $$
 
 which is an ideal in $R$.
@@ -342,8 +342,8 @@ x \mapsto px
 This is a module homomorphism, and
 \[
 \begin{align*}
-\im \phi &\coloneqq \theset{px \suchthat x \in A} \coloneqq pA,\\
-\ker \phi &\coloneqq \theset{a\in A \suchthat pA = 0} \coloneqq A[p]
+\im \phi &\definedas \theset{px \suchthat x \in A} \definedas pA,\\
+\ker \phi &\definedas \theset{a\in A \suchthat pA = 0} \definedas A[p]
 .\end{align*}
 \]
 
@@ -354,33 +354,33 @@ Since $R/(p)$ is a field, we just need to show that $A/pA \actson R/(p)$ defines
 $r\cdot(x + y) = rx + ry$:
 \[
 \begin{align*}
-r + (p) \actson x + pA \oplus y + pA &\coloneqq r + (p) \actson x + y + pA \\
-&\coloneqq r(x+y) + pA \\
+r + (p) \actson x + pA \oplus y + pA &\definedas r + (p) \actson x + y + pA \\
+&\definedas r(x+y) + pA \\
 &= rx + ry + pA \\
-&\coloneqq rx + pA \oplus ry + pA \\
-&\coloneqq r\actson x + pA \oplus r \actson y + pA
+&\definedas rx + pA \oplus ry + pA \\
+&\definedas r\actson x + pA \oplus r \actson y + pA
 .\end{align*}
 \]
 
 $(r + s)\cdot x = rx + sx$:
 \[
 \begin{align*}
-r + (p) \oplus s + (p) \actson x + pA &\coloneqq
+r + (p) \oplus s + (p) \actson x + pA &\definedas
 r + s + (p) \actson x + pA \\
-&\coloneqq (r+s)x + pA \\
+&\definedas (r+s)x + pA \\
 &= rx + sx + pA \\
-&\coloneqq rx + pA \oplus sx + pA \\
-&\coloneqq r+(p) \actson x + pA \oplus s+(p) \actson x + pA
+&\definedas rx + pA \oplus sx + pA \\
+&\definedas r+(p) \actson x + pA \oplus s+(p) \actson x + pA
 .\end{align*}
 \]
 
 $rs\cdot x = r\cdot (s\cdot x)$:
 \[
 \begin{align*}
-r+ (p) \cdot s + (p) \actson  x + pA &\coloneqq rs + (p) \actson x + pA \\
+r+ (p) \cdot s + (p) \actson  x + pA &\definedas rs + (p) \actson x + pA \\
 &= rsx + pA \\
-&\coloneqq r + (p) \actson sx + pA \\
-&\coloneqq r + (p) \actson s + (p) \actson x + pA
+&\definedas r + (p) \actson sx + pA \\
+&\definedas r + (p) \actson s + (p) \actson x + pA
 .\end{align*}
 \]
 
@@ -397,7 +397,7 @@ Similarly, since $R/(p)$ is a field, it suffices to show that $R/(p)\actson A[p]
 $r\cdot(x + y) = rx + ry$:
 \[
 \begin{align*}
-r + (p) \actson (a + a') &\coloneqq r(a + a') \\
+r + (p) \actson (a + a') &\definedas r(a + a') \\
 &= ra + ra' \\
 &= r\actson a + r\actson a'
 .\end{align*}
@@ -429,12 +429,12 @@ $1\cdot x = x$:
 # Problem 6
 
 
-Supposing that $\dim V = n$, let $\mathcal B \coloneqq \theset{\vector b_k \mid 1 \leq k \leq n}$ be a basis for $V$, and define
+Supposing that $\dim V = n$, let $\mathcal B \definedas \theset{\vector b_k \mid 1 \leq k \leq n}$ be a basis for $V$, and define
 $$
-\vector e_i \coloneqq [0, 0, \cdots, 1, \cdots, 0] \in V^{\oplus m}
+\vector e_i \definedas [0, 0, \cdots, 1, \cdots, 0] \in V^{\oplus m}
 $$
 
-where the $1$ occurs in the $i$th position. The claim is that $\mathcal{B}^{m} \coloneqq \theset{\vector e_i \vector b_k \mid 1 \leq i \leq n,~~1\leq k \leq m}$ forms a basis for $V^{\oplus m}$.
+where the $1$ occurs in the $i$th position. The claim is that $\mathcal{B}^{m} \definedas \theset{\vector e_i \vector b_k \mid 1 \leq i \leq n,~~1\leq k \leq m}$ forms a basis for $V^{\oplus m}$.
 
 Elements in $\mathcal{B}^{m}$ are of the form
 \[
@@ -454,7 +454,7 @@ To see that this is a spanning set, let $\vector x \in V^{\oplus m}$, so $\vecto
 
 Then each $\vector v_i \in \mathcal B$, so $\vector v_i = \sum_{k=1}^n \alpha_{k, i} \vector b_k$. But then
 $$
-\vector x = [\sum_{k=1}^n \alpha_{k, 1} \vector b_k, \sum_{k=1}^n \alpha_{k, 2} \vector b_k, \cdots, \sum_{k=1}^n \alpha_{k, m} \vector b_k] \coloneqq \sum_{i=1}^m \sum_{k=1}^n \alpha_{k, i} \vector b_k \vector e_i,
+\vector x = [\sum_{k=1}^n \alpha_{k, 1} \vector b_k, \sum_{k=1}^n \alpha_{k, 2} \vector b_k, \cdots, \sum_{k=1}^n \alpha_{k, m} \vector b_k] \definedas \sum_{i=1}^m \sum_{k=1}^n \alpha_{k, i} \vector b_k \vector e_i,
 $$
 
 which exhibits $\vector x \in \mathcal{B}^m$.
@@ -466,7 +466,7 @@ But for a fixed $i$, since $\theset{\vector b_k}$ was a basis for $V$, this mean
 # Problem 7
 
 Let $F_1, F_2$ be free, so they have bases $\mathcal B_1 = \theset{\vector b_{1, k}}, \mathcal B_2 = \theset{\vector b_{2, k}}$. 
-Supposing that they have the invariant dimension property, we can assume that $\#\mathcal B_1 \coloneqq \rank F_1$ and similarly $\#\mathcal B_2 \coloneqq \rank F_2$.
+Supposing that they have the invariant dimension property, we can assume that $\#\mathcal B_1 \definedas \rank F_1$ and similarly $\#\mathcal B_2 \definedas \rank F_2$.
 
 The claim is that the set 
 $$\mathcal B = \theset{(v, 0) \mid v\in \mathcal{B}_1 } \union \theset{(0, w) \mid w \in \mathcal{B}_2}$$ 

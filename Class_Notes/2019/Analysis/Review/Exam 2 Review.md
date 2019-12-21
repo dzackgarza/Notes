@@ -2,32 +2,8 @@
 title: Exams 2 Review
 ---
 
-- [Exam 2 (Practice)](#exam-2-practice)
-  - [1: Fubini-Tonelli](#1-fubini-tonelli)
-  - [2: Convolutions and the Fourier Transform](#2-convolutions-and-the-fourier-transform)
-    - [a](#a)
-    - [b](#b)
-    - [c](#c)
-  - [3: Hilbert Spaces](#3-hilbert-spaces)
-  - [a](#a-1)
-  - [b](#b-1)
-  - [c](#c-1)
-  - [4: Lp Spaces](#4-lp-spaces)
-    - [a](#a-2)
-    - [c](#c-2)
-  - [5: Dual Spaces](#5-dual-spaces)
-- [Exam 2 (2018)](#exam-2-2018)
-- [Exam 2 (2014)](#exam-2-2014)
-- [Qual: Fall 2019](#qual-fall-2019)
-  - [1](#1)
-  - [2](#2)
-  - [3](#3)
-  - [4](#4)
-  - [5](#5)
-
-
 # Exam 2 (Practice)
-[Link to PDF File](./Review/Exam2&#32;Practice.pdf)
+[Link to PDF File](./Exam2&#32;Practice.pdf)
 
 
 Proving uniform continuity: show
@@ -83,7 +59,7 @@ Let $E$ be a measurable subset of $\RR^n$. Then
 F: \RR^{n_1} &\to \RR \\
 x &\mapsto m(E_x) = \int_{\RR^{n_2}} \chi_{E_x} ~dy
 \end{align*}
-and 
+is measurable and 
 $$
 m(E) = \int_{\RR^{n_1}} m(E_x) ~dx 
 = \int_{\RR^{n_1}} \int_{\RR^{n_2}} \chi_{E_x} ~dy ~dx
@@ -95,12 +71,17 @@ $\implies$:
 - Then the cylinders $F(x, y) = f(x)$ and $G(x, y) = f(y)$ are both measurable on $\RR^{n+1}$.
 - Write $\mathcal{A} = \theset{G \leq F} \intersect \theset{G \geq 0}$; both are measurable.
 
+
 $\impliedby$:
 
 - Let $A$ be measurable in $\RR^{n+1}$.
 - Define $A_x = \theset{y\in \RR \mid (x, y) \in \mathcal{A}}$, then $m(A_x) = f(x)$.
 - By the corollary, $A_x$ is measurable set, $x \mapsto A_x$ is a measurable function, and $m(A) = \int f(x) ~dx$.
-- Define $A_y = \theset{x\in \RR^n \mid (x, y) = A}$, and notice that $A_y = \theset{x\in \RR^n \mid 0\leq y \leq f(x)}$.
+- Then explicitly, $f(x) = \chi_{A}$, which makes $f$ a measurable function.
+
+### b
+
+- Define $A_y = \theset{x\in \RR^n \mid (x, y) \in A}$, and notice that $A_y = \theset{x\in \RR^n \mid 0\leq y \leq f(x)}$.
 - By the corollary, $A_y$ is measurable and 
 $$
 m(\mathcal{A})=\int m\left(\mathcal{A}_{y}\right) d y=\int_{0}^{y} m\left(\left\{x \in \mathbb{R}^{n} \ni f(x) \geq y\right\}\right) d y
@@ -117,7 +98,7 @@ $$
 
 **Facts:**
 
- -$f,g \in L^1 \implies f\ast g \in L^1$
+- $f,g \in L^1 \implies f\ast g \in L^1$
 - $f\in L^1, g \leq M \implies f\ast g \leq M'$ and is uniformly continuous.
 - $f, g\in L^1, f \leq M, g \leq M' \implies  f\ast g \mapsvia{x\to\infty} 0$.2
 - $\norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1$
@@ -137,7 +118,7 @@ $$
 - $\int \phi = \int \phi_t = 1$
 - $f$ bounded and uniformly continuous $\implies f \ast \phi_t \uniformlyconverges f$
 
-**Theorem (Norm Converge of Approximate Identites):**
+**Theorem (Norm Convergence of Approximate Identities):**
 $$
 \norm{f \ast \phi_t - f}_1 \mapsvia{t\to 0} 0.
 $$
@@ -204,21 +185,23 @@ Idea: Fubini-Tonelli doesn't work directly, so introduce a convergence factor, t
 
 Use the following facts:
 
+- $f,g \in L^1 \implies \int \hat f g = \int f \hat g$.
 - $g(x) \definedas e^{-\pi \abs{t}^2} \implies \hat g(\xi) = g(\xi)$
 - $g_t(x) = t^{-n} g(x/t) = t^{-n}e^{-\pi \abs{x}^2/t^2}$
 - $\hat g_t(x) = g(tx) = e^{-\pi t^2 \abs{x}^2}$
-- $f,g \in L^1 \implies \int \hat f g = \int f \hat g$.
 - $\phi(\xi) \definedas e^{2\pi i x \cdot \xi} ~\hat g_t(\xi)$
-- $\hat\phi(\xi) = \mathcal{F}(\hat g(\xi - x))$
+- $\hat\phi(\xi) = \mathcal{F}(\hat g_t(\xi - x)) = g_t(x-\xi)$
+- $\lim_{t\to 0} \phi(\xi) = e^{2\pi i x \cdot \xi}$
 
 Take the modified integral:
 \begin{align*}
 I_t(x)
 &= \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} \\
 &= \int \hat f(\xi) \phi(\xi) \\
-&=\int f(\xi) \hat \phi(\xi) \\
+&= \int f(\xi) \hat \phi(\xi) \\
 &= \int f(\xi) \widehat{\hat g}(\xi - x) \\
-&= \int f(\xi) g_t(x - y)  \\
+&= \int f(\xi) g_t(x - \xi)  ~d\xi \\
+&= \int f(y-x) g_t(y) ~dy  \quad (\xi = y-x)\\
 &= (f \ast g_t) \\
 &\to f \text{ in $L^1$ as }t \to 0
 ,\end{align*}
@@ -228,8 +211,10 @@ but we also have
 \lim_{t\to 0} I_t(x)
 &= 
 \lim_{t\to 0} \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~e^{-\pi t^2 \abs{\xi}^2} \\
-&=_{DCT}
-\int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~\lim_{t\to 0} e^{-\pi t^2 \abs{\xi}^2} \\
+&= 
+\lim_{t\to 0} \int \hat f(\xi) \phi(\xi) \\
+&=_{DCT} 
+\int \hat f(\xi) \lim_{t\to 0} \phi(\xi) \\
 &=
 \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} \\
 .\end{align*}
@@ -243,7 +228,7 @@ So there is a subsequence $I_{t_n}$ such that $I_{t_n}(x) \to f(x)$ almost every
 
 ## 3: Hilbert Spaces
 
-## a
+### a
 
 **Theorem (Bessel's Inequality):**
 $$
@@ -288,7 +273,7 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 \norm{x}^2 \qed
 .\end{align*}
 
-## b
+### b
 
 - Take $\theset{a_n} \in \ell^2$, then note that $\sum \abs{a_n}^2 < \infty \implies$ the tails vanish.
 - Define $x = \displaystyle\lim_{N\to\infty} S_N$ where $S_N = \sum_{k=1}^N a_k u_k$
@@ -296,7 +281,7 @@ Then noting that $0 \leq \norm{x - S_N}^2$, we have
 - By construction, $\inner{x}{u_n} = \inner{\sum_k a_k u_k}{u_n} = \sum_k a_k \inner{u_k}{u_n} = a_n$ since the $u_k$ are all orthogonal.
 - $\norm{x}^2 = \norm{\sum_k a_k u_k}^2 = \sum_k \norm{a_k u_k}^2 = \sum_k \abs{a_k}^2$ by Pythagoras since the $u_k$ are normal.
 
-## c
+### c
 Let $x$ and $u_n$ be arbitrary. Then
 
 \begin{align*}
@@ -355,6 +340,7 @@ m(X) < \infty \implies
 *Proof:*
 
 > It suffices to show this when $\norm{f}_p = \norm{g}_q = 1$, since
+
 \begin{align*}
 \|f g\|_{1} \leq\|f\|_{p}\|f\|_{q} \Longleftrightarrow \int \frac{|f|}{\|f\|_{p}} \frac{|g|}{\|g\|_{q}} \leq 1
 .\end{align*}
@@ -441,8 +427,143 @@ We also have
 &\implies \limsup_p \norm{f}_p \leq M \qed
 .\end{align*}
 
+> Note: this doesn't help with this problem at all.
+
+Solution:
+
+\begin{align*}
+\int f^p 
+&= \int_{x \leq 1} f^p + \int_{x=1}f^p + \int_{x\geq 1} f^p\\
+&= \int_{x \leq 1} f^p + \int_{x=1}1 + \int_{x\geq 1} f^p \\
+&= \int_{x \leq 1} f^p + m(\theset{f = 1}) + \int_{x\geq 1} f^p \\
+&\mapsvia{p\to\infty} 0  + m(\theset{f = 1}) + 
+\begin{cases} 
+0 & m(\theset{x\geq 1}) = 0 \\ 
+\infty & m(\theset{x\geq 1}) > 0.
+\end{cases}
+\end{align*}
+
+
 
 ## 5: Dual Spaces
+
+**Definition:**
+A map $L: X \to \CC$ is a linear functional iff
+$$
+L(\alpha\vector x + \vector y) = \alpha L(\vector x) + L(\vector y).
+$$
+
+**Theorem (Riesz Representation for Hilbert Spaces):**
+If $\Lambda$ is a continuous linear functional on a Hilbert space $H$, then there exists a unique $y \in H$ such that
+$$
+\forall x\in H,\quad \Lambda(x) = \inner{x}{y}.
+$$
+
+*Proof:*
+
+- Define $M \definedas \ker \Lambda$.
+- Then $M$ is a closed subspace and so $H = M \oplus M^\perp$
+- There is some $z\in M^\perp$ such that $\norm{z} = 1$.
+- Set $u \definedas \Lambda(x) z - \Lambda(z) x$
+- Check 
+
+$$\Lambda(u) = \Lambda(\Lambda(x) z - \Lambda(z) x) = \Lambda(x) \Lambda(z) - \Lambda(z) \Lambda(x) = 0 \implies u\in M$$
+
+- Compute
+
+\begin{align*}
+0 &= \inner{u}{z} \\ 
+&= \inner{\Lambda(x) z - \Lambda(z) x}{z} \\
+&= \inner{\Lambda(x) z}{z} - \inner{\Lambda(z) x}{z} \\
+&= \Lambda(x) \inner{z}{z} - \Lambda(z) \inner{x}{z} \\
+&= \Lambda(x) \norm{z}^2 - \Lambda(z) \inner{x}{z} \\
+&= \Lambda(x) - \Lambda(z) \inner{x}{z} \\
+&= \Lambda(x) -  \inner{x}{\overline{\Lambda(z)} z}
+,\end{align*}
+
+- Choose $y \definedas \overline{\Lambda(z)} z$.
+- Check uniqueness:
+
+\begin{align*}
+\inner{x}{y} &= \inner{x}{y'} \quad\forall x \\
+\implies  \inner{x}{y-y'} &= 0 \quad\forall x \\
+\implies \inner{y-y'}{y-y'} &= 0 \\
+\implies \norm{y-y'} &= 0 \\
+\implies y-y' &= \vector 0 \implies y = y'
+.\end{align*}
+
+### b
+
+**Theorem (Continuous iff Bounded):**
+Let $L:X \to \CC$ be a linear functional, then the following are equivalent:
+
+1. $L$ is continuous
+2. $L$ is continuous at zero
+3. $L$ is bounded, i.e. $\exists c\geq 0 \suchthat \abs{L(x)} \leq c \norm{x}$ for all $x\in H$
+
+$2 \implies 3$:
+Choose $\delta < 1$ such that 
+$$
+\norm{x} \leq \delta \implies \abs{L(x)} < 1.
+$$
+Then
+\begin{align*}
+\abs{L(x)} 
+&= \abs{L\left( \frac{\norm x}{\delta} \frac{\delta }{\norm x} x \right)} \\
+&= \frac{\norm x}{\delta} ~\abs{L\left( \delta \frac{x }{\norm x} \right)} \\
+&\leq \frac{\norm x}{\delta} 1
+,\end{align*}
+so we can take $c = \frac 1 \delta$. $\qed$
+
+$3 \implies 1$:
+
+We have $\abs{L(x-y)} \leq c\norm{x-y}$, so given $\varepsilon \geq 0$ simply choose $\delta = \frac \varepsilon c$.
+
+### c
+
+**Definition (Dual Space):**
+$$
+X\dual \definedas \theset{L :X\to \CC \suchthat L \text{ is continuous }}
+$$
+
+**Definition (Operator Norm):**
+$$
+\norm{L}_{X\dual} \definedas \sup_{ \substack{x\in X \\ \norm{x} = 1} } \abs{L(x)}
+$$
+
+**Theorem: (Operator Norm is a Norm)**
+
+*Proof:* 
+The only nontrivial property is the triangle inequality, but
+\begin{align*}
+\norm{L_1 + L_2} = \sup \abs{L_1(x) + L_2(x)} \leq \sup L_1(x) + \sup L_2(x) = \norm{L_1} + \norm{L_2}
+.\end{align*}
+
+**Theorem (Completeness in Operator Norm):**
+
+$X\dual$ equipped with the operator norm is a Banach space.
+
+*Proof:*
+
+- Let $\theset{L_n}$ be Cauchy in $X\dual$.
+- Then for all $x\in C$, $\theset{L_n(x)} \subset \CC$ is Cauchy and converges to something denoted $L(x)$.
+- Need to show $L$ is continuous and $\norm{L_n - L} \to 0$.
+- Since $\theset{L_n}$ is Cauchy in $X\dual$, choose $N$ large enough so that
+\begin{align*}
+n, m \geq N \implies \norm{L_n - L_m} < \varepsilon \implies \abs{L_m(x) - L_n(x)} < \varepsilon \quad \forall x \suchthat \norm{x} = 1
+.\end{align*}
+- Take $n\to \infty$ to obtain
+\begin{align*}m \geq N 
+&\implies \abs{L_m(x) - L(x)} < \varepsilon \quad \forall x \suchthat \norm{x} = 1\\
+&\implies \norm{L_m - L} < \varepsilon \to 0
+.\end{align*}
+- Continuity:
+\begin{align*}
+\abs{L(x)} &= \abs{L(x) - L_n(x) + L_n(x)} \\
+&\leq  \abs{L(x) - L_n(x)} + \abs{L_n(x)} \\
+&\leq \varepsilon \norm{x} + c\norm{x} \\
+&= (\varepsilon + c)\norm{x} \qed
+.\end{align*}
 
 
 # Exam 2 (2018)

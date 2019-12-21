@@ -50,8 +50,8 @@ Definition: *Upper Central Series*.
 "Higher Centers":
 \[
 Z_1 = Z(G) \\
-Z_2 \coloneqq Z_2 \leq G \suchthat Z_2/Z_1 = Z(G/Z(G)) \\
-Z_{i+1} \coloneqq Z_{i+1} \leq G \suchthat Z_{i+1}/Z_i = Z(G/Z_i) \\
+Z_2 \definedas Z_2 \leq G \suchthat Z_2/Z_1 = Z(G/Z(G)) \\
+Z_{i+1} \definedas Z_{i+1} \leq G \suchthat Z_{i+1}/Z_i = Z(G/Z_i) \\
 1 \leq Z_1 \leq Z_2 \leq \cdots
 \]
 %
@@ -64,9 +64,9 @@ Definition: *Lower Central Series*.
 %
 "Iterated Commutators"
 \[
-G_1 \coloneqq [G, G] \\
-G_2 \coloneqq [G_1, G]\\
-G_{i+1} \coloneqq [G_i, G] \\
+G_1 \definedas [G, G] \\
+G_2 \definedas [G_1, G]\\
+G_{i+1} \definedas [G_i, G] \\
 G \geq G_1 \geq G_2 \geq \cdots
 \]
 %

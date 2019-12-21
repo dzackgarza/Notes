@@ -2,18 +2,23 @@
 title: Study Guide for Real Analysis Exam
 ---
 
+# Qualifying Exam Syllabus
 
-# Undergraduate Analysis
+## Undergraduate Analysis
 
-> References: [2] Chapters 2, 3, 4, 5, 7; [1] Sections 0.6.
+> - **References**
+>   - Rudin: Chapters 2, 3, 4, 5, 7
+>   - Folland: Section 0.6 
 
-- Continuity and differentiation in one real variable
+- Continuity and differentiation of functions $f: \RR \to \RR$
 
-- Metric spaces and compactness in analysis
+- Metric spaces 
+
+- Compactness in analysis
 
 - Sequences and series
 
-- Uniform convergence 
+- Uniform convergence
 
 - Uniform continuity
 
@@ -22,7 +27,12 @@ title: Study Guide for Real Analysis Exam
 - Weierstrass Approximation Theorem
 
 
-# Measure and Integration
+## Measure and Integration
+
+> - **References**: 
+>   - Folland, Chapters 1, 2 
+>   - Stein and Sharkchi, Chapters 1, 2, 6
+
 
 - Measures on $\RR^n$ and on $\sigma\dash$algebras
 
@@ -45,9 +55,12 @@ title: Study Guide for Real Analysis Exam
 
 - Fubini and Tonelli theorems
 
-> References: [1] Chapters 1, 2; [3] Chapters 1, 2, 6.
 
-# Function Spaces
+## Function Spaces
+
+> - **References**: 
+>   - Folland: Sections 5.2, 5.5, 6.2; 
+>   - Stein and Shakarchi: Chapter 4.
 
 - The Banach spaces $L^1$ and $L^\infty$:
 
@@ -59,7 +72,11 @@ title: Study Guide for Real Analysis Exam
 - Linear functionals and 
   - $L^\infty$ as the dual of $L^1$
 
-# Hilbert space and $L^2$ spaces:
+## Hilbert space and $L^2$ spaces:
+
+> - **References**: 
+>   - Folland: Sections 5.2, 5.5, 6.2; 
+>   - Stein and Shakarchi: Chapter 4.
 
 - Schwarz inequality 
   - Orthogonality
@@ -74,13 +91,3 @@ title: Study Guide for Real Analysis Exam
 - Trigonometric series: 
   - Trigonometric polynomials are dense in $( C([0, 1]), \norm{\wait}_\infty)$ 
   - Trigonometric polynomials are dense in $( L^2([0, 1]), \norm{\wait}_2 )$
-
-> References: [1] Sections 5.2, 5.5, 6.2; [3] Chapter 4.
-
-References
-
-[1] G. B. Folland, Real Analysis, 2nd edition, John Wiley & Sons, Inc.
-
-[2] W. Rudin, Principles of Mathematical Analysis, 3rd edition, Macmillan.
-
-[3] E. M. Stein and R. Shakarchi, Real Analysis, Princeton University Press.

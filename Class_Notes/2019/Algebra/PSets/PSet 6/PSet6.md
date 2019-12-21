@@ -11,7 +11,7 @@ To get the degree of this extension, we extend fields in the indicated order.
 Since $\QQ(\sqrt[3] 2, \sqrt 3)$ is totally real, the minimal polynomial of $\zeta$ over it still has degree $\phi(3) = 2$.
 A quick check also shows that $\sqrt 3$ is not contained in $\QQ(\sqrt[3] 2)$, yielding another degree 2 extension, and finally a degree 3 extension.
 
-Thus we have an extension of degree 12, and since we've constructed a Galois extension $L$ (a separable splitting field), if we define $G \coloneqq \mathrm{Gal}(\QQ/L)$, we have $\abs G = 12$.
+Thus we have an extension of degree 12, and since we've constructed a Galois extension $L$ (a separable splitting field), if we define $G \definedas \Gal(\QQ/L)$, we have $\abs G = 12$.
 Since we know that the splitting field of $\QQ(\sqrt[3] 2)/ \QQ$ has Galois group $D_3$, we must have $D_3 \leq G$.
 This reduces the possibilities just $D_3 \cross \ZZ_2 \cong D_6$.
 
@@ -132,7 +132,7 @@ We want to show that $F = E[\beta_1, \cdots \beta_m]$ where each $\beta_i$ satis
 
 Let $A = \theset{\alpha_i \suchthat \alpha_i \not\in E}$, then it is since $E \injects F$, adjoining all elements of $A$ to $E$ will yield exactly $F$.
 Using the order of $\alpha_i$ given by the definition of $F$ as a radical extension, let $\beta_1$ be the $\alpha_i \in A$ with the smallest index $i$.
-Then by assumption, there is some $m_1$ such that $\beta^{m_1} \in K[\alpha_1, \cdots, \alpha_{i-1}] \subset F$, so we can construct $F_1 \coloneqq E[\beta_1]$ which will be a radical extension.
+Then by assumption, there is some $m_1$ such that $\beta^{m_1} \in K[\alpha_1, \cdots, \alpha_{i-1}] \subset F$, so we can construct $F_1 \definedas E[\beta_1]$ which will be a radical extension.
 
 Inductively letting $A_2 = A \setminus\theset{\beta_1}$ and repeating this process to construct $L_2$ will yield radical extensions at every step, and since $A$ is finite,
 there is some $n$ such that $L_n = L$. But then $L$ is a radical extension over $E$ as desired.
@@ -158,14 +158,14 @@ But this means any such polynomial splits in $L$.
 In particular, if $u\in L$, then $f$ splits in $L$, and so $L$ contains the splitting field $F$.
 
 ### Part 3
-By a theorem in class, this would force $\mathrm{Gal}(E/K)$ to be solvable, which would imply that $S_n$ is solvable -- but for $n\geq 5, S_n$ will not be solvable, a contradiction.
+By a theorem in class, this would force $\Gal(E/K)$ to be solvable, which would imply that $S_n$ is solvable -- but for $n\geq 5, S_n$ will not be solvable, a contradiction.
 
 # Qual Problems
 
 ## Problem 1
 
 ### Part 1
-If $L/K$ is a finite field extension which is both separable and a splitting field of some polynomial in $K[x]$, then $[L: K] = \abs{\mathrm{Gal}}{L/ K}$.
+If $L/K$ is a finite field extension which is both separable and a splitting field of some polynomial in $K[x]$, then $[L: K] = \abs{\Gal}{L/ K}$.
 
 ### Part 2
 
@@ -213,7 +213,7 @@ But $L$ is not the splitting field of any irreducible polynomial in $\QQ[x]$, so
 
 ### Part 2
 
-This is true. By the Galois correspondence, it suffices to show that $H \coloneqq \mathrm{Gal}(M/L)$ is a normal subgroup of $G \coloneqq \mathrm{Gal}(M/ K)$. 
+This is true. By the Galois correspondence, it suffices to show that $H \definedas \Gal(M/L)$ is a normal subgroup of $G \definedas \Gal(M/ K)$. 
 To that end, let $\phi \in G$, so $\phi: M \to M$ is a lift of $\id_K$. 
 Then $H \normal G$ iff $\phi H \phi\inv = H$.
 Letting $\sigma \in H$, we need to show that 

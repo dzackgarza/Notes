@@ -572,19 +572,19 @@ s &= \prod_{i=1}^n p_i^{\ell_i} \\
 
 where we allow some $k_i, \ell_i = 0$ so that we can take the product over the same set of primes.
 
-However, means that the elementary divisors of $M$ are given by the multiset $L \coloneqq \theset{p_i^{k_i}} \union \theset{p_i^{\ell_i}}$.
+However, means that the elementary divisors of $M$ are given by the multiset $L \definedas \theset{p_i^{k_i}} \union \theset{p_i^{\ell_i}}$.
 
 The largest invariant factor $d_1$ of $M$ is obtained from the elementary divisors
 by 
 
 a. Forming the multiset $L$ of elementary divisors,
-b. Selecting the highest power of each prime occurring, say $s_i \coloneqq p_i^{\max(k_i, \ell_i)}$,
+b. Selecting the highest power of each prime occurring, say $s_i \definedas p_i^{\max(k_i, \ell_i)}$,
 c. Removing $s_i$ from $L$,
 d. Then letting $d_1 = \prod s_i$.
 
 However, this process yields $d_1 = \mathrm{lcm}(r, s)$ by construction, since 
 $$
-d_1 = \prod_{i=1}^n s_i = \prod_{i=1}^n p_i^{\max(k_i, \ell_i)} \coloneqq \mathrm{lcm}(r_s).
+d_1 = \prod_{i=1}^n s_i = \prod_{i=1}^n p_i^{\max(k_i, \ell_i)} \definedas \mathrm{lcm}(r_s).
 $$
 
 The next largest invariant factor is obtained by performing the same process on the remaining prime powers in $L$.
@@ -592,7 +592,7 @@ However, we can note that after obtaining $d_1$, we have $L = \theset{p_i^{\min(
 
 But this means when we perform step (b) to obtain $d_2$, **there is now only one choice**, and thus each $s_i = p_i^{\min(k_i, \ell_i)}$ and we have
 $$
-d_2 = \prod_{i=1}^n s_i = \prod_i p_i^{\min(k_i, \ell_i)} \coloneqq \gcd(r, s).
+d_2 = \prod_{i=1}^n s_i = \prod_i p_i^{\min(k_i, \ell_i)} \definedas \gcd(r, s).
 $$
 
 > Note: by construction, $d_2 \divides d_1$, since we are choosing from the same prime powers but with smaller exponents.

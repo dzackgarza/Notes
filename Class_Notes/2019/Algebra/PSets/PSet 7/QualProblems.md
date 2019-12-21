@@ -18,7 +18,7 @@ Then any finite extension of $E/F$ is an $F\dash$vector space, and contains $q^n
 Thus $E \cong \FF_{p^{kn}}$
 Then if $\alpha \in E$, we have $\alpha^{p^{kn}} = \alpha$, so we can define 
 $$
-f(x) \coloneqq x^{p^{kn}} - x \in F[x].
+f(x) \definedas x^{p^{kn}} - x \in F[x].
 $$
 
 The roots of $f$ are exactly the elements of $E$, so $f$ splits in $E$. 

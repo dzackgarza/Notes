@@ -1,0 +1,164 @@
+
+# Summary
+
+- Measure and integration theory with relevant examples from Lebesgue integration
+- Hilbert spaces (only with regard to $L^2$), 
+- $L^p$ spaces and the related Riesz representation theorem. 
+- Hahn, Jordan and Lebesgue decomposition theorems, 
+- Radon-Nikodym Theorem
+- Fubini's Theorem.
+
+*Texts*
+
+- Real Analysis, by E. M. Stein and R. Shakarchi
+- Real Analysis, by G. B. Folland
+- An introduction to measure theory, by Terrence Tao
+- Real and Complex Analysis, by W. Rudin
+
+[An old course page](http://alpha.math.uga.edu/~lyall/8100Fall2014/index.html)
+
+## Definitions
+
+- **Convolution**
+$$
+f * g(x)=\int f(x-y) g(y) d y
+$$
+
+- **Dilation**
+$$
+\phi_{t}(x)=t^{-n} \phi\left(t^{-1} x\right)
+$$
+
+- The Fourier Transform (todo)
+
+## Convergence Theorems
+
+- **Monotone Convergence Theorem (MCT)**: If $f_n \in L^+$ and $f_n \nearrow f$ a.e., then
+
+$$
+\lim \int f_n 
+= \int \lim f_n = \int f
+.$$
+
+- **Dominated Convergence Theorem (DCT)**: 
+If $f_n \in L^1$ and $f_n \to f$ a.e. with $\abs {f_n} \leq \abs g$ for some $g\in L^1$, then
+
+$$
+\lim \int f_n = \int \lim f_n = \int f
+.$$
+
+- **Fatou**:
+$$
+f_n \in L^1 \implies \int \liminf f_n \leq \liminf \int f_n
+.$$
+
+## Inequalities and Equalities
+
+- **Chebyshev's Inequality**
+\begin{align*}
+\mu(\{x:|f(x)|>\alpha\}) \leq\left(\frac{\|f\|_{p}}{\alpha}\right)^{p}
+.\end{align*}
+
+
+- ? Inequality
+$$
+a^{\lambda} b^{1-\lambda} \leq \lambda a+(1-\lambda) b
+$$
+with equality iff $a=b$.
+
+- **Holder's Inequality:**
+For $p,q$ conjugate exponents,
+\begin{align*}
+\|f g\|_{1} \leq\|f\|_{p}\|g\|_{q}, \quad \text{i.e.} \int \abs{fg} 
+\leq \left( \int \abs{f}^p \right)^{\frac 1 p} \left( \int \abs{g}^q \right)^{\frac 1 q}
+.\end{align*}
+
+- **Cauchy-Schwarz**:
+Set $p=q=2$ in Holder's inequality to obtain
+\begin{align*}
+\abs{\inner{f}{g}} = \norm{fg}_1 \leq \norm{f}_2 \norm{g}_2 
+,\end{align*}
+with equality $\iff f \neq \lambda g$.
+
+- **Minkowski's Inequality:**
+For $1\leq p < \infty$,
+$$
+\|f+g\|_{p} \leq\|f\|_{p}+\|g\|_{p}
+$$
+
+- **Young's Inequality**:
+$$
+\|f * g\|_{p} \leq\|f\|_{1}\|g\|_{p}
+$$
+
+- **Bessel's Inequality:**
+For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
+\begin{align*}
+\sum_{k=1}^{\infty}\left|\left\langle x, e_{k}\right\rangle\right|^{2} \leq\|x\|^{2}
+.\end{align*}
+
+- **Parseval's identity:**
+Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete. 
+
+
+### Other
+
+- **Borel-Cantelli Lemma:**
+Let $\{E_k\}$ be a countable collection of measurable sets. 
+Then 
+$$
+\sum_k m(E_k) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_k
+.$$
+
+- **Egorov's Theorem**
+Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty}(x) < \infty$ exists almost everywhere.
+
+  Then $f_k \to f$ *almost uniformly*, i.e.
+\begin{align*}
+\forall\varepsilon > 0, ~\exists F \subseteq E ~\text{closed such that } & 
+m(E\setminus F) < \varepsilon ~\text{ and }~ f_k \mapsvia{u}  f ~\text{on}~ F
+.\end{align*}
+
+- Fubini
+
+- Tonelli
+
+- Fubini/Tonelli
+
+- **Riemann-Lebesgue Lemma:**
+\begin{align*}
+f\in L^1 \implies 
+\hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty
+.\end{align*}
+
+
+## Important Comments
+
+**Measurability**:
+
+> Best way to show measurability: use Borel characterization, or show that it's an $H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
+
+> Just establish something for Borel sets, then use this characterization to extend it to Lebesgue.
+
+> AM-GM Inequality:
+$$
+\sqrt{ab} \leq \frac{a+b}{2}
+.$$
+
+- For finite measure spaces,
+$$
+1 \leq p < q \leq \infty \implies L^q \subset L^p \quad \text{ and } \ell^p \subset \ell^q
+$$
+
+- $C_0([0, 1]) \injects L^2([0, 1])$ is dense.
+
+**Dual Spaces:**
+In general, $(L^p)\dual \cong L^q$
+
+- For qual, supposed to know the $p=1$ case, i.e. $(L^1)\dual \cong L^\infty$
+  - For the analogous $p=\infty$ case: $L^1 \subset (L^\infty)\dual$, since the isometric mapping is always injective, but *never* surjective. So this containment is always proper (requires Hahn-Banach Theorem).
+- The $p=2$ case: Easy by the Riesz Representation for Hilbert spaces.
+
+**Fourier Series**:
+
+- $\hat f = \hat g \implies f=g$ almost everywhere.
