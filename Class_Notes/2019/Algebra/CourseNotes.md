@@ -32,6 +32,8 @@ title: "Algebra"
 
 !include sections/2019-10-08.md
 
+!include sections/2019-10-10.md
+
 !include sections/2019-10-15.md
 
 !include sections/2019-10-17.md
