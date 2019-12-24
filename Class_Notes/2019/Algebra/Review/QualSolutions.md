@@ -314,7 +314,7 @@ Thus $\theta$ is surjective.
 
 **Part 2:**
 
-We have $\phi(20) = 8$
+We have $K \cong \ZZ_{20}\units$ and $\phi(20) = 8$, so $K \cong \ZZ_8$.
 
 ## 8
 
