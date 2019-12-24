@@ -8,7 +8,7 @@ If $A\in \GL(n, \CC)$ and $A^m$ is diagonalizable over $\FF$ for some $m$, then 
 Since $A^n$ is diagonalizable (and $\CC$ is algebraically closed), we can write $\mu_{A^n}(x)$ as a product of *distinct* linear factors:
 
 $$
-\mu_{A^n}(x) = \prod_{i=1}^k (x-\lambda_i)
+\min_{A^n}(x) = \prod_{i=1}^k (x-\lambda_i), \quad \min_{A^n}(A^n) = 0
 $$
 
 where $\lambda_i$ are the distinct eigenvalues of $A^n$. 
