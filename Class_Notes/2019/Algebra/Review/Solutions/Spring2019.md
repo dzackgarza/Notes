@@ -2,7 +2,8 @@
 
 ## 1
 
-> $A$ is diagonalizable iff $\min_A(x)$ is separable.
+> $A$ is diagonalizable iff $\min_A(x)$ is separable.\
+> See [further discussion here](https://math.stackexchange.com/questions/3027664/if-a-is-invertible-and-an-is-diagonalizable-then-a-is-diagonalizable).
 
 Since $A^n$ is diagonalizable (and $\CC$ is algebraically closed), we can write $\min_{A^n}(x)$ as a product of **distinct** linear factors:
 
@@ -26,10 +27,6 @@ where we can note that $q_A(A) = \min_{A^n}(A^n) = 0$, and so $\min_A(x) \divide
 But then $\min_A(x)$ must have distinct linear factors, so $A$ is diagonalizable.
 
 $\qed$
-
-See [here](https://math.stackexchange.com/questions/3027664/if-a-is-invertible-and-an-is-diagonalizable-then-a-is-diagonalizable).
-
-
 
 1. Parts
   1. Since $\pi(x)$ is irreducible, we can consider the quotient $K = \displaystyle{\frac{\FF_p[x]}{\generators{\pi(x)}}}$, which is an extension of $\FF_p$ of degree $d$ (i.e. $[K_d : \FF_p] = d~$) and is thus a field of size $p^d$. We also have a natural quotient map $f: \FF_p \to K_d$. Since $K$ is also a group of size $p^d$, we know that for any $y \in K_d$, we have by Lagrange's theorem that the order of $y$ divides $\abs{K_d} = p^d$, and so $y^{p^d} = y$.
