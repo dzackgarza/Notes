@@ -64,6 +64,12 @@ Note that by (a), $\pi(x) \divides \phi_d(x)$ and $\gamma(x) \divides \phi_n(x)$
 Then **(claim)** $\phi_n(x)$ splits in $L$.
 Since $\pi(x) \divides \phi_n(x)$, $\pi(x)$ also splits in $L$.
 
+Let $\alpha \in L$ be a root of $\pi(x)$. 
+Since $\pi(x)$ is irreducible, $\deg\min(\alpha, \FF_p) = d$.
+
+Then $\FF_p \leq \FF_p(\alpha) \leq L$, and so
+
+
 ## 3
 
 1. Sylow theorems
