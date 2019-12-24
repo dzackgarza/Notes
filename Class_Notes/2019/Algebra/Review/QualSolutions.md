@@ -267,6 +267,8 @@ But then $r\not\in \mathfrak{p}$, a contradiction.
 > 
 > $\phi(p^k) = p^{k-1}(p-1)$
 
+> The lattice: 
+
 Let $K = \QQ(\zeta)$. 
 Then $K$ is the splitting field of $f(x) = x^n - 1$, which is irreducible over $\QQ$, so $K/\QQ$ is normal.
 We also have $f'(x) = nx^{n-1}$ and $\gcd(f, f') = 1$ since they can not share any roots.
