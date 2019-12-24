@@ -256,6 +256,8 @@ But then $r\not\in \mathfrak{p}$, a contradiction.
 ## 7
 
 > Galois Theory.
+> Galois = normal + separable
+> Normal: 
 
 > Definition: $\zeta$ is a primitive root of unity iff $o(\zeta) = n$ in $F\units$.
 
