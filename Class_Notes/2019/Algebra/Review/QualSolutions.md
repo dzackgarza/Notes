@@ -243,16 +243,15 @@ Since $R$ is commutative, $\mathfrak{p}$ is prime.
 
 ### c
 
-Suppose $R$ has a unique prime ideal.
+Suppose $R$ has a unique prime ideal $\mathfrak{p}$.
 
 Suppose $r\in R$ is not a unit, and toward a contradiction, suppose that $r$ is also not nilpotent.
 
-Since $r$ is not a unit, $r$ is contained in some maximal (and thus prime) ideal $\mathfrak{m}$.
+Since $r$ is not a unit, $r$ is contained in some maximal (and thus prime) ideal, and thus $r \in \mathfrak{p}$.
 
 Then $r\not\in N$, so by (b), there is a maximal ideal $\mathfrak{p}$ that avoids all positive powers of $r$.
 
-In particular, $r\not\in \mathfrak{p}$, so $\mathfrak{p} \neq \mathfrak{m}$.
-But this exhibits two distinct prime ideals of $R$, a contradiction, so $r$ must be nilpotent.
+But then $r\not\in \mathfrak{p}$, a contradiction.
 
 ## 7
 
