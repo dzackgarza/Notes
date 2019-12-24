@@ -58,9 +58,11 @@ $\qed$
 Define $K$ as in (a), then $K \cong GF(p^d)$.
 Now letting $\gamma$ be an irreducible degree $n$ polynomial, we can form $\FF[x]/\generators{\gamma} \cong GF(p^n)$.
 
-(Lemma) $GF(p^d) \leq GF(p^n)$ for any $d$ dividing $n$, and so
+(Lemma) $GF(p^d) \leq \GF(p^n)$ for any $d$ dividing $n$, and so
+\begin{align*}
+n = [GF(p^n) : \FF_p] = [K_n : K_d][K_d: \FF_p] = m d
+.\end{align*}
 
-n = [K_n : \FF_p] = [K_n : K_d][K_d: \FF_p] = m d
 
 
 Now consider $K_n = \displaystyle{\frac{\FF_p[x]}{\generators{\gamma(x)}}}$, which is an extension of $\FF_p$ of degree $n$ so $[K_n : \FF_p] = n$. If we can show that $K_d$ is an intermediate extension between $\FF_p$ and $K_n$, we would then have
