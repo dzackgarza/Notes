@@ -289,7 +289,7 @@ Letting $\sigma \in K$ be arbitrary, noting that $[K: \QQ]$ has a basis $\theset
 
 In particular, $\sigma(\zeta)$ satisfies the polynomial $x^n - 1$, since $\sigma(\zeta)^n = \sigma(\zeta^n) = \sigma(1) = 1$, which means $\sigma(\zeta)$ is another root of unity and $\sigma(\zeta) = \zeta^k$ for some $1\leq k \leq n$.
 
-
+Moreover, since $o(\zeta) = n \in K\units$, we must have $o(\zeta^k) = n \in K^\units$ as well.
 
 
 ## 8
