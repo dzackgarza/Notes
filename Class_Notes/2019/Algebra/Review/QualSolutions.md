@@ -249,7 +249,8 @@ Suppose $r\in R$ is not a unit, and toward a contradiction, suppose that $r$ is 
 
 Since $r$ is not a unit, $r$ is contained in some maximal (and thus prime) ideal, and thus $r \in \mathfrak{p}$.
 
-Then $r\not\in N$, so by (b), there is a maximal ideal $\mathfrak{p}$ that avoids all positive powers of $r$.
+Then $r\not\in N$, so by (b), there is a maximal ideal $\mathfrak{m}$ that avoids all positive powers of $r$. 
+Since $\mathfrak{m}$ is prime, we must have $\mathfrak{p} = \mathfrak{m}$.
 
 But then $r\not\in \mathfrak{p}$, a contradiction.
 
