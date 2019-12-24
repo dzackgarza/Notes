@@ -58,7 +58,7 @@ $\qed$
 Define $K$ as in (a), then $K \cong \GF(p^d)$.
 Now letting $\gamma$ be an irreducible degree $n$ polynomial, we can form $\FF[x]/\generators{\gamma} \cong \GF(p^n)$.
 
-(Lemma) $GF(p^d) \leq \GF(p^n)$ for any $d$ dividing $n$, and so
+(Lemma) $\GF(p^d) \leq \GF(p^n)$ for any $d$ dividing $n$, and so
 \begin{align*}
 n &= [\GF(p^n) : \FF_p] \\
 &= [\GF(p^n): \GF(p^d)][\GF(p^d): \FF_p] \\
@@ -66,13 +66,6 @@ n &= [\GF(p^n) : \FF_p] \\
 ,\end{align*}
 
 and so $d \divides n$.
-
-Now consider $K_n = \displaystyle{\frac{\FF_p[x]}{\generators{\gamma(x)}}}$, which is an extension of $\FF_p$ of degree $n$ so $[K_n : \FF_p] = n$. If we can show that $K_d$ is an intermediate extension between $\FF_p$ and $K_n$, we would then have
-$$
-$$
-for some $m \in \NN$, so $d$ divides $n$.
-
-How do we show that $\FF_p \leq K_d \leq K_n$ as field extensions? We have $\pi(x) \divides x^{p^n} - x$ and moreover, applying part 1 to $d=n$, we also have $\gamma(x) \divides x^{p^n} - x$. ????
 
 ## 3
 
