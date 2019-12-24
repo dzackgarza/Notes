@@ -297,7 +297,7 @@ Thus $\phi$ is surjective.
 
 **Homomorphism:**
 
-We need to show that $\phi(
+We need to show that $\phi(jk) = \tau_j \circ \tau_k$.
 
 ## 8
 
