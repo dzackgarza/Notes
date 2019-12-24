@@ -64,7 +64,6 @@ n = [GF(p^n) : \FF_p] = [K_n : K_d][K_d: \FF_p] = m d
 .\end{align*}
 
 
-
 Now consider $K_n = \displaystyle{\frac{\FF_p[x]}{\generators{\gamma(x)}}}$, which is an extension of $\FF_p$ of degree $n$ so $[K_n : \FF_p] = n$. If we can show that $K_d$ is an intermediate extension between $\FF_p$ and $K_n$, we would then have
 $$
 $$
