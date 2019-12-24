@@ -188,7 +188,7 @@ Corresponds to the **Invariant Factor Decomposition** of $T$
 
 - Each invariant factor corresponds to a block of the RCF.
   
-### Jordan Canonical Form: 
+### Jordan Canonical Form
 
 Corresponds to the **Elementary Divisor Decomposition** of $T$
 
@@ -247,10 +247,14 @@ p(x) = \det(A - x1))= \det(SNF(A - x1))
   - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
 
 
-- Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff$
-  - $A,B$ has the same JCF
+**Definition:**
+Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff$
+  
+  - $A,B$ have the same JCF
 
-- Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
+**Definition:**
+Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
+  
   - They have the same rank,
   - They have the same invariant factors, *and *
   - They have the same JCF
