@@ -32,9 +32,12 @@ $\qed$
 
 ### (a)
 
+> Go to a field extension.
+> Orders of multiplicative groups for finite fields are known.
+
 Since $\pi(x)$ is irreducible, we can consider the quotient $K = \displaystyle{\frac{\FF_p[x]}{\generators{\pi(x)}}}$, which is an extension of $\FF_p$ of degree $d$ and thus a field of size $p^d$ with a natural quotient map $\rho: \FF_p[x] \to K$.
 
-Since $K\units$ a group of size $p^d-1$, we know that for any $y \in K\units$, we have by Lagrange's theorem that the order of $y$ divides $p^d-1$ and so $y^{p^d} = y$.
+Since $K\units$ is a group of size $p^d-1$, we know that for any $y \in K\units$, we have by Lagrange's theorem that the order of $y$ divides $p^d-1$ and so $y^{p^d} = y$.
 
 So every element in $K$ satisfies $q(x) = x^{p^d}-x$.
 
