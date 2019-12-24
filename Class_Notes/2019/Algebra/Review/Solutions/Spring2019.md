@@ -62,7 +62,7 @@ Let $\gamma$ be an irreducible degree $n$ polynomial over $\FF_p$, then $L\defin
 Note that by (a), $\pi(x) \divides \phi_d(x)$ and $\gamma(x) \divides \phi_n(x)$.
 
 Then **(claim)** $\phi_n(x)$ splits in $L$.
-Since $\pi(x) \divides \phi_d(x) \divides \phi_n(x)$.
+Since $\pi(x) \divides \phi_n(x)$, $\pi(x)$ also splits in $L$.
 
 ## 3
 
