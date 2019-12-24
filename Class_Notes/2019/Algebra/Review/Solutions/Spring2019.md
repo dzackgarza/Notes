@@ -61,13 +61,13 @@ Now consider $K_n = \displaystyle{\frac{\FF_p[x]}{\generators{\gamma(x)}}}$, whi
 $$
 n = [K_n : \FF_p] = [K_n : K_d][K_d: \FF_p] = m d
 $$
-for some unknown $m \in \NN$, which equivalently states that $d$ divides $n$.
+for some $m \in \NN$, so $d$ divides $n$.
 
 How do we show that $\FF_p \leq K_d \leq K_n$ as field extensions? We have $\pi(x) \divides x^{p^n} - x$ and moreover, applying part 1 to $d=n$, we also have $\gamma(x) \divides x^{p^n} - x$. ????
 
-2. Sylow theorems
+1. Sylow theorems
 
-3. Define a sample space $\Omega = G^2$ from which we will pick random pairs of elements of $G$. For each pair $(g, h)$, we will consider $G\actson G$ by $g \actson h = ghg\inv$. Then $g$ and $h$ commute precisely when $ghg = g$, so when $g\actson h = h$ and $h$ is a fixed point under the action of $g$.
+2. Define a sample space $\Omega = G^2$ from which we will pick random pairs of elements of $G$. For each pair $(g, h)$, we will consider $G\actson G$ by $g \actson h = ghg\inv$. Then $g$ and $h$ commute precisely when $ghg = g$, so when $g\actson h = h$ and $h$ is a fixed point under the action of $g$.
 
   We have Burnside's formula,
 $$
