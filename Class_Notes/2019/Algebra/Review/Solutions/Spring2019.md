@@ -68,7 +68,15 @@ Let $\alpha \in L$ be a root of $\pi(x)$.
 Since $\pi(x)$ is irreducible, $\deg\min(\alpha, \FF_p) = d$.
 
 Then $\FF_p \leq \FF_p(\alpha) \leq L$, and so
+\begin{align*}
+n &= [L: \FF_p] \\
+&= [L: \FF_p(\alpha)]~[\FF_p(\alpha): \FF_p] \\
+&= \ell d
+,\end{align*}
 
+so $d$ divides $n$.
+
+$\qed$
 
 ## 3
 
