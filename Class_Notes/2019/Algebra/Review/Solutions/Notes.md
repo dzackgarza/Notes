@@ -332,3 +332,8 @@ $$
 
 **Lemma:**
 $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
+
+Proof:
+
+Suppose $f$ is irreducible of degree $d$. 
+Then $f \divides x^{p^d} - x$
