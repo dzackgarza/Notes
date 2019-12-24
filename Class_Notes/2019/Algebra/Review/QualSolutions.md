@@ -259,7 +259,7 @@ But then $r\not\in \mathfrak{p}$, a contradiction.
 
 Let $K = \QQ(\zeta)$. 
 Then $K$ is the splitting field of $f(x) = x^n - 1$, which is irreducible over $\QQ$, so $K/\QQ$ is normal.
-We also have $f'(x) = nx^{n-1}$ and $\gcd(f, f') = 1$.
+We also have $f'(x) = nx^{n-1}$ and $\gcd(f, f') = 1$ since they can not share any roots.
 
 > Or equivalently, $f$ splits into distinct linear factors $f(x) = \prod_{k\leq n}(x-\zeta^k)$.
 
