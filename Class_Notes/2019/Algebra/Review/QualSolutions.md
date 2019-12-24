@@ -298,6 +298,7 @@ Thus $\phi$ is surjective.
 **Homomorphism:**
 
 We need to show that $\phi(jk) = \tau_j \circ \tau_k$.
+Considering $\tau_j \circ \tau_k (\zeta) =\tau_j(\zeta^k) = \zeta^{jk}$
 
 ## 8
 
