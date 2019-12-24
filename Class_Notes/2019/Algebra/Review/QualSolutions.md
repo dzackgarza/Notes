@@ -284,6 +284,8 @@ So define a map
 
 The claim is that this is a surjective homomorphism, and since both groups are the same size, an isomorphism.
 
+Letting $\sigma \in \Gal(\QQ(\zeta)/\QQ)$ be arbitrary, 
+
 
 ## 8
 
