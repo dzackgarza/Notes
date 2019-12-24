@@ -57,11 +57,12 @@ $\qed$
 
 Let $\phi_n(x) = x^{p^n} - x$ and $\phi_d(x) = x^{p^d} - x$. 
 
-Let $\gamma$ be an irreducible degree $n$ polynomial over $\FF_p$, then $\FF[x]/\generators \gamma \cong \GF(p^n)$.
+Let $\gamma$ be an irreducible degree $n$ polynomial over $\FF_p$, then $L\definedas \FF[x]/\generators \gamma \cong \GF(p^n)$.
 
 Note that by (a), $\pi(x) \divides \phi_d(x)$ and $\gamma(x) \divides \phi_n(x)$.
 
- and **(claim)**
+Then **(claim)** $\phi_n(x)$ splits in $L$.
+Since $\pi(x) \divides \phi_d(x) \divides \phi_n(x)$.
 
 ## 3
 
