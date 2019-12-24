@@ -344,4 +344,4 @@ Then $f(x) \divides \phi_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 > Then $f \divides x^{p^d} - x$ (consider $F[x]/\generators{f}$) and $x^{p^d} - x \divides x^{p^n} - x \iff d\divides n$.
 >
 > $\implies$:
-> $\alpha \in \GF(p^n) \iff alpha^{p^n} - alpha = 0$, so every element is a root of $\phi_n$ and $\deg \min(alpha, \FF_p) \divides n$.
+> $\alpha \in \GF(p^n) \iff \alpha^{p^n} - \alpha = 0$, so every element is a root of $\phi_n$ and $\deg \min(\alpha, \FF_p) \divides n$.
