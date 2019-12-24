@@ -1,3 +1,6 @@
+Let $\mu_M(x)$ denote the minimal polynomial of $A$ and $p_M(x)$ the characteristic polynomial.
+
+
 **Lemma**: 
 $$
 p_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i} \implies \mu_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i} \text{ where } 1 \leq \ell_i \leq m_i,
