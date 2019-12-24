@@ -55,7 +55,8 @@ $\qed$
 
 ### (b)
 
-> Some potentially useful facts that weren't used:
+> Some potentially useful facts:
+> $\GF(p^n)$ is the splitting field of $x^{p^n} - x$
 > 
 
 Let $\phi_n(x) = x^{p^n} - x$ and $\phi_d(x) = x^{p^d} - x$. 
