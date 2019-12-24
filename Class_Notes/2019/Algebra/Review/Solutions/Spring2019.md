@@ -30,7 +30,7 @@ $\qed$
 
 ## 2
 
-### Part 1
+### (a)
 
 Since $\pi(x)$ is irreducible, we can consider the quotient $K = \displaystyle{\frac{\FF_p[x]}{\generators{\pi(x)}}}$, which is an extension of $\FF_p$ of degree $d$ (i.e. $[K_d : \FF_p] = d~$) and is thus a field of size $p^d$. We also have a natural quotient map $f: \FF_p \to K_d$. Since $K$ is also a group of size $p^d$, we know that for any $y \in K_d$, we have by Lagrange's theorem that the order of $y$ divides $\abs{K_d} = p^d$, and so $y^{p^d} = y$.
 
@@ -48,7 +48,7 @@ and thus the polynomial $x^{p^d}-x \in \ker f$, since it is identically zero in 
 
 $\qed$
 
-### Part 2
+### (b)
 
 Let $\gamma(x)$ be an irreducible polynomial of degree $n$ over $\FF_p$ and $\pi(x)$ be irreducible of degree $d$ where $\pi(x) \divides x^{p^d}-x$ and $K_d = \frac{\FF_p[x]}{\generators{\pi(x)}}$ as in part 1.
 
