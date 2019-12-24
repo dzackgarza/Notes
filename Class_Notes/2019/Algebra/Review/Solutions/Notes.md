@@ -256,7 +256,9 @@ Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff$
 Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
   
   - They have the same rank,
-  - They have the same invariant factors, *and *
+
+  - They have the same invariant factors, *and*
+  
   - They have the same JCF
 
 
