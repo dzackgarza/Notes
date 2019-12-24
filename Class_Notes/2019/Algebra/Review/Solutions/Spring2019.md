@@ -2,7 +2,7 @@
 
 ## 1
 
-> $A$ is diagonalizable iff $\min_A(x)$ splits into distinct linear factors.
+> $A$ is diagonalizable iff $\min_A(x)$ is separable.
 
 **Theorem:**
 If $A\in \GL(n, \CC)$ and $A^m$ is diagonalizable over $\FF$ for some $m$, then $A$ itself is diagonalizable over $\FF$.
