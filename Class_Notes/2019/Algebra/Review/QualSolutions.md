@@ -285,6 +285,9 @@ So define a map
 The claim is that this is a surjective homomorphism, and since both groups are the same size, an isomorphism.
 
 Letting $\sigma \in K$ be arbitrary, noting that $[K: \QQ]$ has a basis $\theset{1, \zeta, \zeta^2, \cdots, \zeta^{n-1}}$, it suffices to specify $\sigma(\zeta)$ to fully determine the automorphism.
+(Since $\sigma(\zeta^k) = \sigma(\zeta)^k$.)
+
+
 
 
 ## 8
