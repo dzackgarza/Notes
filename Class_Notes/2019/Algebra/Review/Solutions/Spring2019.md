@@ -55,7 +55,9 @@ $\qed$
 
 ### (b)
 
-Let $\gamma(x)$ be an irreducible polynomial of degree $n$ over $\FF_p$ and $\pi(x)$ be irreducible of degree $d$ where $\pi(x) \divides x^{p^d}-x$ and $K_d = \frac{\FF_p[x]}{\generators{\pi(x)}}$ as in part 1.
+Let $\gamma(x)$ be an irreducible polynomial of degree $n$ over $\FF_p$ and $\pi(x)$ be irreducible of degree $d$ where $\pi(x) \divides x^{p^d}-x$ and $K= \frac{\FF_p[x]}{\generators{\pi(x)}}$ as in part 1.
+
+Then $K \cong GF(p^d)$.
 
 Now consider $K_n = \displaystyle{\frac{\FF_p[x]}{\generators{\gamma(x)}}}$, which is an extension of $\FF_p$ of degree $n$ so $[K_n : \FF_p] = n$. If we can show that $K_d$ is an intermediate extension between $\FF_p$ and $K_n$, we would then have
 $$
