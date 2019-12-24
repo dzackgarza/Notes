@@ -264,6 +264,8 @@ But then $r\not\in \mathfrak{p}$, a contradiction.
 > **Normal (if separable)**: Splitting field of an irreducible polynomial.
 
 > Definition: $\zeta$ is a primitive root of unity iff $o(\zeta) = n$ in $F\units$.
+> 
+> $\phi(p^k) = p^{k-1}
 
 Let $K = \QQ(\zeta)$. 
 Then $K$ is the splitting field of $f(x) = x^n - 1$, which is irreducible over $\QQ$, so $K/\QQ$ is normal.
