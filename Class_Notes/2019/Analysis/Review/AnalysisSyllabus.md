@@ -8,11 +8,11 @@ title: Study Guide for Real Analysis Exam
 
 > - **References**
 >   - Rudin: Chapters 2, 3, 4, 5, 7
->   - Folland: Section 0.6 
+>   - Folland: Section 0.6
 
 - Continuity and differentiation of functions $f: \RR \to \RR$
 
-- Metric spaces 
+- Metric spaces
 
 - Compactness in analysis
 
@@ -29,10 +29,9 @@ title: Study Guide for Real Analysis Exam
 
 ## Measure and Integration
 
-> - **References**: 
->   - Folland, Chapters 1, 2 
->   - Stein and Sharkchi, Chapters 1, 2, 6
-
+> - **References**:
+>   - Folland, Chapters 1, 2
+>   - Stein and Shakarchi, Chapters 1, 2, 6
 
 - Measures on $\RR^n$ and on $\sigma\dash$algebras
 
@@ -47,47 +46,48 @@ title: Study Guide for Real Analysis Exam
 
 - Egorov's theorem
 
-- Notions of convergence: 
-  - Uniform 
-  - Pointwise 
-  - Almost everywhere 
+- Notions of convergence:
+  - Uniform
+  - Pointwise
+  - Almost everywhere
   - In norm
 
 - Fubini and Tonelli theorems
 
-
 ## Function Spaces
 
-> - **References**: 
->   - Folland: Sections 5.2, 5.5, 6.2; 
+> - **References**:
+>   - Folland: Sections 5.2, 5.5, 6.2;
 >   - Stein and Shakarchi: Chapter 4.
 
 - The Banach spaces $L^1$ and $L^\infty$:
 
 - Completeness
 
-- Convolutions 
+- Convolutions
   - Approximations to the identity
 
-- Linear functionals and 
+- Linear functionals and
   - $L^\infty$ as the dual of $L^1$
 
 ## Hilbert space and $L^2$ spaces:
 
-> - **References**: 
->   - Folland: Sections 5.2, 5.5, 6.2; 
+> - **References**:
+>   - Folland: Sections 5.2, 5.5, 6.2;
 >   - Stein and Shakarchi: Chapter 4.
 
-- Schwarz inequality 
-  - Orthogonality
+- Schwarz inequality
 
-- Linear functionals 
--   The Riesz representation theorem
+- Orthogonality
+
+- Linear functionals
+
+- The Riesz representation theorem
 
 - Bessel's inequality
-  - Orthonormal bases 
+  - Orthonormal bases
   - Parseval's identity
 
-- Trigonometric series: 
-  - Trigonometric polynomials are dense in $( C([0, 1]), \norm{\wait}_\infty)$ 
+- Trigonometric series:
+  - Trigonometric polynomials are dense in $( C([0, 1]), \norm{\wait}_\infty)$
   - Trigonometric polynomials are dense in $( L^2([0, 1]), \norm{\wait}_2 )$

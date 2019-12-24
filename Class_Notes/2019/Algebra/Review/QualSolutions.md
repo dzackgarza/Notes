@@ -1,0 +1,375 @@
+# Fall 2019
+
+## 1
+
+> Centralizer: 
+$$
+C_G(h) = Z(h) = \theset{g\in G \suchthat [g,h] = 1}
+\quad\text{Centralizer}
+$$
+>
+> Class equation: 
+$$
+\abs{G} = \sum_{\substack{\text{One $h$ from each } \\ \text{ conjugacy class}}} \frac{\abs{G}}{\abs{Z(h)}}
+$$
+> Notation:
+> \begin{align*}
+h^g &= ghg\inv \\
+h^G &= \theset{ h^g \suchthat g\in G} \quad\text{Conjugacy Class}\\
+H^g &= \theset{h^g \suchthat h\in H} \\
+N_G(H) &= \theset{g\in G \suchthat H^g = H} \supseteq H \quad\text{Normalizer}
+.\end{align*}
+>
+> **Theorem 1**: $\abs{h^G} = [G: Z(h)]$
+> 
+> **Theorem 2**: $\abs{\theset{H^g \suchthat g\in G}} = [G: N_G(H)]$
+
+> Use the fact that $\union_{g\in G} H^g = \union_{g\in G} gHg\inv \subsetneq G$ for any proper $H \leq G$.
+> Proof: By theorem 2,
+\begin{align*}
+\abs{\union_{g\in G} H^g} 
+&< \abs{H} [G: N_G(H)]  \quad\text{since $e$ is in every conjugate}\\
+&= \abs H \frac{\abs G}{ \abs{N_G(H)}} \\
+&\leq \abs H \frac{\abs G}{ \abs{H}} \\
+&= \abs{G} 
+.\end{align*}
+
+
+Since $[g_i, g_j] = 1$, we have $g_i \in Z(g_j)$ for every $i, j$.
+
+Then
+\begin{align*}
+g\in G 
+&\implies g = g_i^h \quad \text{ for some } h \\
+&\implies g \in Z(g_\mathbf{j})^h \quad\text{for every } j \text{ since }g_i \in Z(g_j) ~\forall j \\
+&\implies g \in \union_{h\in G} Z(g_j)^h \quad\text{for every } j\\
+&\implies G \subseteq \union_{h\in G} Z(g_j)^h \quad\text{for every } j
+,\end{align*}
+
+which can only happen if $Z(g_j) = G$ for every $j$.
+But this says that $g_j \in Z(G)$, and so $[g_j] = \theset{g_j}$, i.e. each conjugacy class is size one, so every element of $g$ is some $g_j$, and thus $g\in Z(G)$, so $G\subseteq Z(G)$ and $G$ is abelian.
+
+> Todo: Revisit. I don't get it!
+
+
+## 2
+
+> $pqr$ Theorem.
+
+### a
+
+> Recall $n_p \divides m$ and $n_p \cong 1 \mod p$.
+
+An easy check:
+\begin{align*}
+n_3 \in \theset{1, 7} \quad n_5 \in \theset{1, 21} \quad n_7 \in \theset{1, 15}
+.\end{align*}
+
+Toward a contradiction, if $n_5\neq 1$ and $n_7 \neq 1$, then $Q, R$ contribute
+\begin{align*}
+(5-1)n_5 + (7-1)n_7 + 1 
+&= 4(21) + 6(15) > 105 \text{ elements}
+.\end{align*}
+
+### b
+
+> If $H, K \leq G$ and $H\normal G$ then $HK \leq G$ is a subgroup.
+> Proof: Check closure under products, needs normality.
+> 
+> **Theorem**: For a positive integer $n$, all groups of order $n$ are cyclic $\iff n$ is
+squarefree and, for each pair of distinct primes $p$ and $q$ dividing $n$, $q - 1 \neq 0 \mod p$.
+>
+> Theorem: If $G = A_1 A_2 \cdots A_n = \prod A_k$ and $A_i \intersect \prod_{k\neq i}A_i = \theset{e}$ for all $i$, then $A \cong A_1 \cross \cdots \cross A_n$.
+
+Either $Q$ or $R$ is normal, so $QR \leq G$ is a subgroup of order $\abs{Q} \cdot \abs{R} = 5\cdot 7 = 35$.
+
+By the theorem, since $5 \notdivides 7-1$, $QR$ is cyclic.
+
+### c
+
+In $QR$, there are 
+
+- $35 - 5 + 1$ elements of order *not* equal to 5,
+- $5 - 7 + 1$ elements of order *not* equal to 7.
+
+Since $QR \leq G$, there are *at least* this many such elements in $G$.
+
+Suppose $n_5 = 21$ or $n_7 = 15$.
+
+- Combining elements of order 5 with elements *not* of order 5 yields at least 31 elements of order *not* 5 with $n_5(5-1) = 21(4) = 84$ elements of order 5, this contributes $31 + 84 > 105$ elements -- contradiction.
+
+- Similarly, there are at least $29$ elements of order *not* 7, plus $n_7(7-1) = 15(6) = 90$ elements of order 7, yielding $29 + 90 > 105$ elements.
+
+So both $n_5=1, n_7 = 1$.
+
+### d
+If $P$ is normal, then $G=PQR$ with all intersections of the form $AB\intersect C = \theset{e}$, and since $P,Q,R$ are all normal we have $G \cong P\times Q \times R \cong \ZZ_3 \times \ZZ_5 \times \ZZ_7 \cong \ZZ_{105}$ by characterization of direct products and the Chinese Remainder theorem (which is cyclic).
+
+
+## 3
+
+> Just fiddling with computations.
+> Context hints that we should be considering things like $x^2$ and $a+b$.
+
+### a
+\begin{align*}
+2a  = (2a)^2 = 4a^2 = 4a \implies 2a = 0
+.\end{align*}
+
+Note that this implies $x = -x$ for all $x\in R$.
+
+### b
+\begin{align*}
+a+b = (a+b)^2 &= a^2 + ab + ba + b^2 = a + ab + ba + b \\
+&\implies ab + ba = 0 \\
+&\implies ab = -ba \\
+&\implies ab = ba \quad\text{by (a)}
+.\end{align*}
+
+## 4
+
+> Theorem: $F\units$ is always cyclic for $F$ a field
+> 
+
+### a
+
+Since $\abs{F} = q$ and $[E:F] = k$, we have $\abs{E} = q^k$ and $\abs{E\units} = q^k-1$.
+Noting that $\zeta \in E\units$ we must have $n = o(\zeta) \divides \abs{E\units} = q^k-1$ by Lagrange's theorem.
+
+### b
+
+Rephrasing (a), we have 
+\begin{align*}
+n \divides q^k-1 
+&\iff q^k-1 \cong 0 \mod n \\
+&\iff q^k \cong 1 \mod n \\
+&\iff m \definedas o(q) \divides k
+.\end{align*}
+
+### c
+
+Since $m\divides k \iff k = \ell m$, (**claim**) there is an intermediate subfield $M$ such that
+\begin{align*}
+E \leq M \leq F \quad k = [F:E] = [F:M] [M:E] = \ell m
+,\end{align*}
+
+so $M$ is a degree $m$ extension of $E$.
+
+Now consider $M\units$. 
+By the argument in (a), $n$ divides $q^m - 1 = \abs{M\units}$, and $M\units$ is cyclic, so it contains a cyclic subgroup $H$ of order $n$.
+
+But then $x\in H \implies p(x)\definedas x^n-1 = 0$, and since $p(x)$ has at most $n$ roots in a field. 
+So $H = \theset{x \in M \suchthat x^n-1 = 0}$, i.e. $H$ contains all solutions to $x^n-1$ in $E[x]$.
+
+But $\zeta$ is one such solution, so $\zeta \in H \subset M\units \subset M$.
+Since $F[\zeta]$ is the smallest field extension containing $\zeta$, we must have $F = M$, so $\ell = 1$, and $k = m$.
+
+> Todo: **revisit**, tricky!
+
+## 5
+
+> One-step submodule test.
+
+### a
+
+It suffices to show that 
+$$
+r\in R, ~t_1, t_2\in \Tor(M) \implies rt_1 + t_2 \in \Tor(M)
+.$$
+
+We have
+\begin{align*}
+t_1 \in \Tor(M) &\implies \exists s_1 \neq 0 \text{ such that } s_1 t_1  = 0 \\
+t_2 \in \Tor(M) &\implies \exists s_2 \neq 0 \text{ such that } s_2 t_2  = 0 
+.\end{align*}
+
+Since $R$ is an integral domain, $s_1 s_2 \neq 0$.
+Then
+\begin{align*}
+s_1 s_2(rt_1 + t_2) 
+&= s_1 s_2 r t_1 + s_1 s_2t_2 \\
+&= s_2 r (s_1 t_1) + s_1 (s_2 t_2)  \quad\text{since $R$ is commutative} \\
+&=  s_2 r(0) + s_1(0) \\
+&= 0
+.\end{align*}
+
+### b
+
+Let $R = \ZZ/6\ZZ$ as a $\ZZ/6\ZZ \dash$module, which is not an integral domain as a ring.
+
+Then $[3]_6\actson [2]_6 = [0]_6$ and $[2]_6\actson [3]_6 = [0]_6$, but $[2]_6 + [3]_6 = [5]_6$, where 5 is coprime to 6, and thus $[n]_6\actson [5]_6 = [0] \implies [n]_6 = [0]_6$. So $[5]_6$ is *not* a torsion element.
+
+So the set of torsion elements are not closed under addition, and thus not a submodule.
+
+### c
+Suppose $R$ has zero divisors $a,b \neq 0$ where $ab = 0$.
+Then for any $m\in M$, we have $b\actson m \definedas bm \in M$ as well, but then 
+$$
+a\actson bm = (ab)\actson m = 0\actson m = 0_M
+,$$ 
+so $m$ is a torsion element for any $m$.
+
+$\qed$
+
+## 6
+
+> Prime ideal: $\mathfrak{p}$ is prime iff $ab \in \mathfrak{p} \implies a\in \mathfrak{p}$ or $b\in \mathfrak{p}$.
+> Silly fact: 0 is in every ideal!
+> 
+> Zorn's Lemma: Given a poset, if every chain has an upper bound, then there is a maximal element. (Chain: totally ordered subset.)
+> 
+> Corollary: If $S\subset R$ is multiplicatively closed with $0\not\in S$ then $\theset{I \normal R \suchthat J\intersect S = \emptyset}$ has a maximal element.
+> (TODO: PROVE)
+>
+> Theorem: If $R$ is commutative, maximal $\implies$ prime for ideals.
+> (TODO: PROVE)
+>
+> Theorem: Non-units are contained in a maximal ideal. (See HW?)
+
+### a
+
+Let $\mathfrak{p}$ be prime and $x\in N$.
+Then $x^k = 0$ for some $k$, and thus $x^k = x x^{k-1} \in \mathfrak p$.
+Since $\mathfrak p$ is prime, inductively we obtain $x\in\mathfrak p$.
+
+### b
+
+Let $S = \theset{r^k \mid k\in \NN}$ be the set of positive powers of $r$. 
+Then $S^2 \subseteq S$, since $r^{k_1}r^{k_2} = r^{k_1+k_2}$ is also a positive power of $r$, and $0\not\in S$ since $r\neq 0$ and $r\not\in N$.
+
+By the corollary, $\theset{I \normal R \suchthat I\intersect S = \emptyset}$ has a maximal element $\mathfrak{p}$.
+
+Since $R$ is commutative, $\mathfrak{p}$ is prime.
+
+### c
+
+Suppose $R$ has a unique prime ideal.
+
+Suppose $r\in R$ is not a unit, and toward a contradiction, suppose that $r$ is also not nilpotent.
+
+Since $r$ is not a unit, $r$ is contained in some maximal (and thus prime) ideal $\mathfrak{m}$.
+
+Then $r\not\in N$, so by (b), there is a maximal ideal $\mathfrak{p}$ that avoids all positive powers of $r$.
+
+In particular, $r\not\in \mathfrak{p}$, so $\mathfrak{p} \neq \mathfrak{m}$.
+But this exhibits two distinct prime ideals of $R$, a contradiction, so $r$ must be nilpotent.
+
+## 7
+
+> Galois Theory.
+
+Let $K = \QQ(\zeta)$. 
+Then $K$ is the splitting field of $f(x) = x^n - 1$, which is irreducible over $\QQ$, so $K/\QQ$ is normal.
+We also have $f'(x) = nx^{n-1}$ and $\gcd(f, f') = 1$.
+
+> Or equivalently, $f$ splits into distinct linear factors $f(x) = \prod_{k\leq n}(x-\zeta^k)$.
+
+Since it is a Galois extension, $\abs{\Gal(K/\QQ)} = [K: \QQ] = \phi(n)$ for the totient function.
+
+We can now define maps
+\begin{align*}
+\tau_j: K &\to K \\
+\zeta &\mapsto \zeta^j 
+\end{align*}
+
+and if we restrict to $j$ such that $\gcd(n, j) = 1$, this yields $\phi(n)$ maps.
+Noting that $\zeta$ is a primitive root implies that when $(n, j) = 1$ that $\zeta^j$ is also a primitive root, and hence another root of $\min(\zeta, \QQ)$, and so these are in fact automorphisms of $K$ that fix $\QQ$ and thus elements of $\Gal(K/\QQ)$.
+
+The claim is that this is injective, and hence bijective because the sets are the same size.
+
+## 8
+
+### a.
+
+Let $\vector v \in \Lambda$, so $\vector v = \sum r_i \vector e_i$ where $r_i \in \ZZ$.
+
+Then if $\vector x = \sum s_i \vector e_i \in \Lambda$, we have
+\begin{align*}
+\vector v \cdot \vector x = \sum r_i s_i \in \ZZ
+\end{align*}
+
+since each term is just a product of integers, so $\vector v \in \Lambda\dual$ by definition.
+
+### b. 
+
+
+**$\det M \neq 0$**:
+
+Suppose $\det M = 0$. Then $\ker M \neq \vector 0$, so let $\vector v \in \ker M$ be given by $\vector v = [v_1, \cdots, v_n]$.
+
+Note that 
+\begin{align*}
+M\vector v = 0 &\implies
+\left[
+\begin{array}{ccc}
+\vector e_1 \cdot \vector e_1 & \vector e_1 \cdot \vector e_2 & \cdots \\
+\vector e_2 \cdot \vector e_1 & \vector e_2 \cdot \vector e_2 & \cdots \\
+\vdots & \vdots & \ddots
+\end{array}
+\right]
+\left[\begin{array}{c}
+v_1 \\ v_2 \\ \vdots
+\end{array}\right] = \vector 0 \\ \\
+&\implies \sum_j (\vector e_1 \cdot  \vector e_j) v_j = 0 \quad \forall j
+.\end{align*}
+
+Let $\vector w = \sum v_i \vector e_i$. 
+Then $\vector e_k \cdot \vector w = \sum_j v_j \vector e_k \cdot \vector e_j = 0$ for every $k$, so $\vector w$ is orthogonal to every $\vector e_k$, and thus its span.
+
+But $\vector w$ is in the span of the $\vector e_i$ by definition, so 
+$$
+\vector w \cdot \vector w = 0 \implies \vector w = 0 \implies\theset{\vector e_i} \text{ is linearly dependent}
+,$$ 
+a contradiction.
+
+$\qed$
+
+*Alternative proof:*
+
+Write $M = A^tA$ where $A$ has the $\vector e_i$ as columns. Then
+\begin{align*}
+M\vector x = 0 
+&\implies A^t A \vector x = 0 \\
+&\implies \vector x^t A^t A \vector x = 0 \\
+&\implies \norm{A \vector x}^2  = 0 \\
+&\implies A\vector x = 0 \\
+&\implies \vector x = 0
+,\end{align*}
+
+since $A$ has full rank because the $\vector e_i$ are linearly independent.
+
+$\qed$
+
+**The rows of $M\inv$ span $\Lambda\dual$**:
+
+Equivalently, the columns of $M^{-t}$ span $\Lambda\dual$.
+
+> Possibly an error -- should be the rows of $A\inv$ instead of $M\inv$?
+
+Let $B = A^{-t}$ and let $\vector b_i$ denote the columns of $B$, i.e. the span of $\im B$.
+
+
+Since $A \in \GL(n, \ZZ)$ which is a group, $A\inv, A^t, A^{-t} \in \GL(n, \ZZ)$ as well.
+
+\begin{align*}
+\vector v \in \Lambda\dual 
+&\implies \vector e_i \cdot \vector v = z_i \in \ZZ \quad \forall i \\
+&\implies A^t \vector v = \vector z \in \ZZ^n \\
+&\implies \vector v = A^{-t} \vector z \definedas B\vector z \in \im B \\
+&\implies \spanof~\Lambda\dual \subseteq \im B
+,\end{align*}
+
+and
+
+\begin{align*}
+B^t A = (A^{-t})^t A = A\inv A = I \\
+\implies \vector b_i \cdot \vector e_j = \delta_{ij} \in \ZZ \\
+\implies \im B \subseteq \spanof~ \Lambda\dual
+.\end{align*}
+
+$\qed$
+
+### c.
+
+?
+

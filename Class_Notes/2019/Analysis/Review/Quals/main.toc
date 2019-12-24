@@ -1,0 +1,80 @@
+\contentsline {section}{Fall 2019}{4}{section*.2}% 
+\contentsline {subsection}{1.}{4}{section*.3}% 
+\contentsline {subsection}{2.}{4}{section*.4}% 
+\contentsline {subsection}{3.}{4}{section*.5}% 
+\contentsline {subsection}{4.}{5}{section*.6}% 
+\contentsline {subsection}{5.}{5}{section*.7}% 
+\contentsline {section}{Spring 2019}{5}{section*.8}% 
+\contentsline {subsection}{1}{5}{section*.9}% 
+\contentsline {subsection}{2}{6}{section*.10}% 
+\contentsline {subsection}{3}{6}{section*.11}% 
+\contentsline {subsection}{4}{6}{section*.12}% 
+\contentsline {subsection}{5}{6}{section*.13}% 
+\contentsline {section}{Fall 2018}{7}{section*.14}% 
+\contentsline {subsection}{1}{7}{section*.15}% 
+\contentsline {subsection}{2}{7}{section*.16}% 
+\contentsline {subsection}{3}{7}{section*.17}% 
+\contentsline {subsection}{4}{7}{section*.18}% 
+\contentsline {subsection}{5}{8}{section*.19}% 
+\contentsline {subsection}{6}{8}{section*.20}% 
+\contentsline {section}{Spring 2018}{8}{section*.21}% 
+\contentsline {subsection}{1}{8}{section*.22}% 
+\contentsline {subsection}{2}{8}{section*.23}% 
+\contentsline {subsection}{3}{8}{section*.24}% 
+\contentsline {subsection}{4}{9}{section*.25}% 
+\contentsline {subsection}{5}{9}{section*.26}% 
+\contentsline {section}{Fall 2017}{9}{section*.27}% 
+\contentsline {subsection}{1}{9}{section*.28}% 
+\contentsline {subsection}{2}{9}{section*.29}% 
+\contentsline {subsection}{3}{10}{section*.30}% 
+\contentsline {subsection}{4}{10}{section*.31}% 
+\contentsline {subsection}{5}{10}{section*.32}% 
+\contentsline {subsection}{6}{11}{section*.33}% 
+\contentsline {section}{Spring 2017}{11}{section*.34}% 
+\contentsline {subsection}{1}{11}{section*.35}% 
+\contentsline {subsection}{2}{11}{section*.36}% 
+\contentsline {subsection}{3}{12}{section*.37}% 
+\contentsline {subsection}{4}{12}{section*.38}% 
+\contentsline {subsection}{5}{12}{section*.39}% 
+\contentsline {subsection}{5}{12}{section*.40}% 
+\contentsline {section}{Fall 2016 (Neil-ish)}{12}{section*.41}% 
+\contentsline {subsection}{1}{12}{section*.42}% 
+\contentsline {subsection}{2}{13}{section*.43}% 
+\contentsline {subsection}{3}{13}{section*.44}% 
+\contentsline {subsection}{4}{13}{section*.45}% 
+\contentsline {subsection}{5}{13}{section*.46}% 
+\contentsline {subsection}{6}{14}{section*.47}% 
+\contentsline {section}{Spring 2016 (Neil-ish)}{14}{section*.48}% 
+\contentsline {subsection}{1}{14}{section*.49}% 
+\contentsline {subsection}{2}{14}{section*.50}% 
+\contentsline {subsection}{3}{14}{section*.51}% 
+\contentsline {subsection}{4}{15}{section*.52}% 
+\contentsline {subsection}{5}{15}{section*.53}% 
+\contentsline {subsection}{6}{15}{section*.54}% 
+\contentsline {section}{Fall 2015}{15}{section*.55}% 
+\contentsline {subsection}{1}{15}{section*.56}% 
+\contentsline {subsection}{2}{15}{section*.57}% 
+\contentsline {subsection}{3}{16}{section*.58}% 
+\contentsline {subsection}{4}{16}{section*.59}% 
+\contentsline {subsection}{5}{16}{section*.60}% 
+\contentsline {subsection}{6}{16}{section*.61}% 
+\contentsline {section}{Spring 2015}{16}{section*.62}% 
+\contentsline {subsection}{1}{16}{section*.63}% 
+\contentsline {subsection}{2}{17}{section*.64}% 
+\contentsline {subsection}{3}{17}{section*.65}% 
+\contentsline {subsection}{4}{17}{section*.66}% 
+\contentsline {subsection}{5}{17}{section*.67}% 
+\contentsline {subsection}{6}{18}{section*.68}% 
+\contentsline {section}{Fall 2014}{18}{section*.69}% 
+\contentsline {subsection}{1}{18}{section*.70}% 
+\contentsline {subsection}{2}{18}{section*.71}% 
+\contentsline {subsection}{3}{18}{section*.72}% 
+\contentsline {subsection}{4}{18}{section*.73}% 
+\contentsline {subsection}{5}{19}{section*.74}% 
+\contentsline {subsection}{6}{19}{section*.75}% 
+\contentsline {section}{Spring 2014}{19}{section*.76}% 
+\contentsline {subsection}{1}{19}{section*.77}% 
+\contentsline {subsection}{2}{19}{section*.78}% 
+\contentsline {subsection}{3}{19}{section*.79}% 
+\contentsline {subsection}{4}{20}{section*.80}% 
+\contentsline {subsection}{5}{20}{section*.81}% 

@@ -27,7 +27,7 @@ Let \(\{a_n\}_{n=1}^\infty\) be a sequence of real numbers.
 \def\labelenumi{\alph{enumi}.}
 \item
   Prove that if \(\displaystyle\lim_{n\to\infty} a_n = 0\), then
-  \(\displaystyle\lim_{n\to\infty} a_1 + \cdots + a_n = 0\). \[
+  \[
   \lim _{n \rightarrow \infty} \frac{a_{1}+\cdots+a_{n}}{n}=0
   \]
 \item
@@ -63,10 +63,10 @@ Hint: Consider \(\displaystyle\int_0^1 \cos(tx) dt\)
 \hypertarget{section-2}{%
 \subsection{3.}\label{section-2}}
 
-Let \((X, \mathcal B, µ)\) be a measure space with \(µ(X) = 1\) and
+Let \(( X, \mathcal B, \mu )\) be a measure space with \(\mu(X) = 1\) and
 \(\{B_n\}_{n=1}^\infty\) be a sequence of \(\mathcal B\)-measurable
 subsets of \(X\), and \[
-B \coloneqq \theset{x\in X \suchthat x\in B_n \text{ for infinitely many } n}.
+B \coloneqq \theset{x\in X \mid x\in B_n \text{ for infinitely many } n}.
 \]
 
 \begin{enumerate}
@@ -83,7 +83,7 @@ B \coloneqq \theset{x\in X \suchthat x\in B_n \text{ for infinitely many } n}.
   \[
   \mu\left(\bigcap_{n=k}^{K} B_{n}^{c}\right)=\prod_{n=k}^{K}\left(1-\mu\left(B_{n}\right)\right)
   \] for all positive integers \(k\) and \(K\) with \(k < K\), then
-  \(µ(B) = 1\).
+  \(\mu(B) = 1\).
 \end{enumerate}
 
 \begin{quote}
@@ -135,15 +135,15 @@ Let \(\{u_n\}_{n=1}^\infty\) be an orthonormal sequence in a Hilbert space
   Let \(f\in L^1(\RR)\) and for each \(h > 0\) let \[
   \mathcal{A}_{h} f(x):=\frac{1}{2 h} \int_{|y| \leq h} f(x-y) d y
   \]
-\item
-  Prove that \(\left\|\mathcal{A}_{h} f\right\|_{1} \leq\|f\|_{1}\) for
-  all \(h > 0\).
 \end{enumerate}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
-\setcounter{enumi}{1}
+\setcounter{enumi}{0}
 \tightlist
+\item
+  Prove that \(\left\|\mathcal{A}_{h} f\right\|_{1} \leq\|f\|_{1}\) for
+  all \(h > 0\).
 \item
   Prove that \(\mathcal{A}_h f \to f\) in \(L^1(\RR)\) as \(h \to 0^+\).
 \end{enumerate}
@@ -189,10 +189,10 @@ Let \(\mathcal B\) denote the set of all Borel subsets of \(\RR\) and
     \lim _{k \rightarrow \infty} \mu\left(F_{k}\right)=\mu\left(\bigcap_{k=1}^{\infty} F_{k}\right)
     \]
 \item
-  Suppose \(µ\) has the property that \(µ(E) = 0\) for every
+  Suppose \(\mu\) has the property that \(\mu(E) = 0\) for every
   \(E \in \mathcal B\) with Lebesgue measure \(m(E) = 0\). Prove that
   for every \(\varepsilon > 0\) there exists \(\delta > 0\) so that if
-  \(E \in \mathcal B\) with \(m(E) < \delta\), then \(µ(E) < \varepsilon\).
+  \(E \in \mathcal B\) with \(m(E) < \delta\), then \(\mu(E) < \varepsilon\).
 \end{enumerate}
 
 \hypertarget{section-2}{%
@@ -640,13 +640,13 @@ Let \(f\in L^1(\RR)\). Show that \[
 \hypertarget{section-3}{%
 \subsection{4}\label{section-3}}
 
-Let \((X, \mathcal M, \mu)\) be a measure space and suppose
+Let \(( X, \mathcal{M}, \mu )\) be a measure space and suppose
 \(\theset{E_n} \subset \mathcal M\) satisfies \[
 \lim _{n \rightarrow \infty} \mu\left(X \backslash E_{n}\right)=0.
 \]
 
 Define \[
-G \coloneqq \theset{x\in X \suchthat x\in E_n \text{ for only finitely many  } n}.
+G \coloneqq \theset{x\in X : x \in E_n \text{ for only finitely many  } n}.
 \]
 
 Show that \(G \in \mathcal M\) and \(\mu(G) = 0\).
