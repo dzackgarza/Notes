@@ -314,7 +314,10 @@ Thus $\theta$ is surjective.
 
 **Part 2:**
 
-We have $K \cong \ZZ_{20}\units$ and $\phi(20) = 8$, so $K \cong \ZZ_8$.
+We have $K \cong \ZZ_{20}\units$ and $\phi(20) = 8$, so $K \cong \ZZ_8$ which has subgroups
+
+- $\ZZ_2$
+- $\ZZ_4$
 
 ## 8
 
