@@ -314,10 +314,13 @@ Thus $\theta$ is surjective.
 
 **Part 2:**
 
-We have $K \cong \ZZ_{20}\units$ and $\phi(20) = 8$, so $K \cong \ZZ_8$ which has subgroups
+We have $K \cong \ZZ_{20}\units$ and $\phi(20) = 8$, so $K \cong \ZZ_8$, so we have the following subgroups and corresponding intermediate fields:
 
-- $\ZZ_2$
-- $\ZZ_4$
+- $0 \sim \QQ$
+- $\ZZ_2 \sim \QQ(\omega_1)$
+- $\ZZ_4 \sim \QQ(\omega_2)$
+- $\ZZ_8 \sim \QQ(\zeta_{20})$
+
 
 ## 8
 
