@@ -60,7 +60,7 @@ $\qed$
 > - $\GF(p^n)$ is the splitting field of $x^{p^n} - x$
 > - $x^{p^d} - x \divides x^{p^n} - x \iff d \divides n$
 > - $\GF(p^d) \leq \GF(p^n) \iff d\divides n$
-> - $x^{p^n} - x = \prod f_i$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
+> - $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
 
 Let $\phi_n(x) = x^{p^n} - x$ and $\phi_d(x) = x^{p^d} - x$. 
 
@@ -87,7 +87,7 @@ $\qed$
 
 
 > Proof of converse:
-> Suppose $d\divides n$, then $n = \ell d$ so $
+> Suppose $d\divides n$, then $n = \ell d$ so 
 
 ## 3
 
