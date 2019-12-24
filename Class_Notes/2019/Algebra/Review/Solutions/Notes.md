@@ -264,49 +264,66 @@ Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
 
 ## Matrix Counterexamples
 
-1.
+1. A matrix that is:
 
+- Not diagonalizable over $\RR$ but diagonalizable over $\CC$
+
+- No eigenvalues in $\RR$ but distinct eigenvalues over $\CC$
+
+- $\min_M(x) = \chi_M(x) = x^2 + 1$
+
+$$
 \begin{align*}
 M = \left[\begin{array}{rr}
 0  & 1 \\
 -1 & 0
 \end{array}\right] \sim
-\left(\begin{array}{r|r}
+\left[\begin{array}{r|r}
 -1 \sqrt{-1} & 0 \\
 \hline
 0 & 1 \sqrt{-1}
-\end{array}\right)
+\end{array}\right]
 .\end{align*}
+$$
 
-- Not diagonalizable over $\RR$, diagonalizable over $\CC$
-- No eigenvalues in $\RR$, distinct eigenvalues over $\CC$
-- $\min_M(x) = \chi_M(x) = x^2+1$
 
 2.
 
+$$
 \begin{align*}
-M = \left(\begin{array}{rr}
+M = \left[\begin{array}{rr}
 1 & 1 \\
 0 & 1
-\end{array}\right) \sim
-\left(\begin{array}{rr}
+\end{array}\right] \sim
+\left[\begin{array}{rr}
 1 & 1 \\
 0 & 1
-\end{array}\right)
+\end{array}\right]
 .\end{align*}
+$$
 
 - Not diagonalizable over $\CC$
 - Eigenvalues $[1, 1]$ (repeated, multiplicity 2)
 - $\min_M(x) = \chi_M(x) = x^2-2x+1$
 
 
-3. Non-similar matrices with the same characteristic polynomial
+1. Non-similar matrices with the same characteristic polynomial
 
 $$
-\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right) \text { and }\left(\begin{array}{ll}{1} & {1} \\ {0} & {1}\end{array}\right)
+\left[\begin{array}{ll}{1}
+ & {0} \\ {0} & {1}
+ \end{array}\right] 
+ \text { and }
+ \left[\begin{array}{ll}{1}
+  & {1} \\ {0} & {1}
+  \end{array}\right]
 $$
 
 4. A full-rank matrix that is not diagonalizable:
 \begin{align*}
-
+\left[\begin{array}{ccc}
+1 & 1 & 0 \\
+0 & 1 & 1 \\
+0 & 0 & 1 \\
+\end{array}\right]?
 .\end{align*}
