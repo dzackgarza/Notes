@@ -286,7 +286,7 @@ Noting that if $\zeta$ is a primitive root, then $(n, j) = 1$ implies that that 
 
 So define a map
 \begin{align*}
-\phi: \ZZ_n\units &\to K \\
+\theta: \ZZ_n\units &\to K \\
 [j]_n &\mapsto \tau_j
 .\end{align*}
 
@@ -303,14 +303,18 @@ In particular, $\sigma(\zeta)$ satisfies the polynomial $x^n - 1$, since $\sigma
 
 Moreover, since $o(\zeta) = n \in K\units$, we must have $o(\zeta^k) = n \in K\units$ as well. Noting that $\theset{\zeta^i}$ forms a cyclic subgroup $H\leq K\units$, then $o(\zeta^k) = n \iff (n, k) = 1$ (by general theory of cyclic groups).
 
-Thus $\phi$ is surjective.
+Thus $\theta$ is surjective.
 
 **Homomorphism:**
 
 \begin{align*}
 \tau_j \circ \tau_k (\zeta) =\tau_j(\zeta^k) = \zeta^{jk} \implies
-\tau_{jk} = \phi(jk) = \tau_j \circ \tau_k
+\tau_{jk} = \theta(jk) = \tau_j \circ \tau_k
 .\end{align*}
+
+**Part 2:**
+
+We have $\phi(20) = 8$
 
 ## 8
 
