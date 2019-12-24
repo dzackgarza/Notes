@@ -84,6 +84,10 @@ so $d$ divides $n$.
 
 $\qed$
 
+
+> Proof of converse:
+> 
+
 ## 3
 
 1. Sylow theorems
