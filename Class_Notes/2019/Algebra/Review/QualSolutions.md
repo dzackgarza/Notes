@@ -276,7 +276,8 @@ We can now define maps
 and if we restrict to $j$ such that $\gcd(n, j) = 1$, this yields $\phi(n)$ maps.
 Noting that if $\zeta$ is a primitive root, then $(n, j) = 1$ implies that that $\zeta^j$ is also a primitive root, and hence another root of $\min(\zeta, \QQ)$, and so these are in fact automorphisms of $K$ that fix $\QQ$ and thus elements of $\Gal(K/\QQ)$.
 
-The claim is that this is injective, and hence bijective because the sets are the same size.
+So define a map
+
 
 ## 8
 
