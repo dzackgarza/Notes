@@ -297,7 +297,7 @@ Thus $\phi$ is surjective.
 
 **Homomorphism:**
 
-
+We need to show that $\phi(
 
 ## 8
 
