@@ -284,6 +284,8 @@ So define a map
 
 The claim is that this is a surjective homomorphism, and since both groups are the same size, an isomorphism.
 
+**Surjectivity:**
+
 Letting $\sigma \in K$ be arbitrary, noting that $[K: \QQ]$ has a basis $\theset{1, \zeta, \zeta^2, \cdots, \zeta^{n-1}}$, it suffices to specify $\sigma(\zeta)$ to fully determine the automorphism.
 (Since $\sigma(\zeta^k) = \sigma(\zeta)^k$.)
 
@@ -292,6 +294,8 @@ In particular, $\sigma(\zeta)$ satisfies the polynomial $x^n - 1$, since $\sigma
 Moreover, since $o(\zeta) = n \in K\units$, we must have $o(\zeta^k) = n \in K\units$ as well. Noting that $\theset{\zeta^i}$ forms a cyclic subgroup $H\leq K\units$, then $o(\zeta^k) = n \iff (n, k) = 1$ (by general theory of cyclic groups).
 
 Thus $\phi$ is surjective.
+
+**Homomorphism:**
 
 
 ## 8
