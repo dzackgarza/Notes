@@ -111,11 +111,12 @@ Lemma: $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagon
 > 
 > - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
 > - Restrict all $n-1$ operators $A$ to $E_n$. 
-> - The commuted in $V$ so they commute here too
-> - (Lemma) They were diagonalizable in $V$, so they're diagonalizable here too
-> - $\implies$ they're simultaneously diagonalizable by I.H.
+> - The commuted in $V$ so they commute in $E_n$
+> - **(Lemma)** They were diagonalizable in $V$, so they're diagonalizable in $E_n$
+> - So they're simultaneously diagonalizable by I.H.
 > - But these eigenvectors for the $A_i$ are all in $E_n$, so they're eigenvectors for $A_n$ too.
-> - Can do this for each eigenspace. $\qed$
+> - Can do this for each eigenspace. 
+> $\qed$
   
 ## Characterizations if Diagonalizability
 
