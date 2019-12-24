@@ -344,3 +344,4 @@ Then $f(x) \divides \phi_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 > Then $f \divides x^{p^d} - x$ (consider $F[x]/\generators{f}$) and $x^{p^d} - x \divides x^{p^n} - x \iff d\divides n$.
 >
 > $\implies$:
+> $\GF(p^n) = \theset{
