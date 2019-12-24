@@ -87,7 +87,9 @@ $\qed$
 
 
 > Proof of converse:
-> Suppose $d\divides n$, then $n = \ell d$ so 
+> If $d\divides n$, use the fact that $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$. So $f = f_i$ for some $i$.
+> Proof of that fact:
+> 
 
 ## 3
 
