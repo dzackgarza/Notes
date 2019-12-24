@@ -103,11 +103,10 @@ Finding the minimal polynomial $m(x)$ of $A$:
 
 ## Simultaneous Diagonalizability
 
-> [Full details here](https://kconrad.math.uconn.edu/blurbs/linmultialg/minpolyandappns.pdf#page=9)
+**Lemma**: 
+$\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
 
-Lemma: $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
-
-> Proof: By induction on number of operators
+> *Proof*: By induction on number of operators
 > 
 > - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
 > - Restrict all $n-1$ operators $A$ to $E_n$. 
@@ -117,6 +116,8 @@ Lemma: $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagon
 > - But these eigenvectors for the $A_i$ are all in $E_n$, so they're eigenvectors for $A_n$ too.
 > - Can do this for each eigenspace. 
 > $\qed$
+
+> [Full details here](https://kconrad.math.uconn.edu/blurbs/linmultialg/minpolyandappns.pdf#page=9)
   
 ## Characterizations if Diagonalizability
 
