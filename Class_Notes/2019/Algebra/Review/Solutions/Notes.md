@@ -258,11 +258,11 @@ Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
   - They have the same rank,
 
   - They have the same invariant factors, *and*
-  
+
   - They have the same JCF
 
 
-# Some Matrix Examples
+## Matrix Counterexamples
 
 1.
 
@@ -303,4 +303,8 @@ M = \left(\begin{array}{rr}
 3. Non-similar matrices with the same characteristic polynomial
 
 $$
-\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right) \text { and }\left(\begin{array}{ll}{1} & {1} \\ {0} & {1}\end{array}\right)$$
+\left(\begin{array}{ll}{1} & {0} \\ {0} & {1}\end{array}\right) \text { and }\left(\begin{array}{ll}{1} & {1} \\ {0} & {1}\end{array}\right)
+$$
+
+4. A full-rank matrix that is not diagonalizable:
+5. 
