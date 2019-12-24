@@ -86,7 +86,7 @@ $\qed$
 
 
 > Proof of converse:
-> 
+> Suppose $d\divides n$, then $n = \ell d$ so $
 
 ## 3
 
