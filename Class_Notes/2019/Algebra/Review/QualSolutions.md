@@ -282,6 +282,8 @@ So define a map
 [j]_n &\mapsto \tau_j
 .\end{align*}
 
+from the *multiplicative* group of units to the Galois group.
+
 The claim is that this is a surjective homomorphism, and since both groups are the same size, an isomorphism.
 
 **Surjectivity:**
@@ -298,7 +300,7 @@ Thus $\phi$ is surjective.
 **Homomorphism:**
 
 We need to show that $\phi(jk) = \tau_j \circ \tau_k$.
-Considering $\tau_j \circ \tau_k (\zeta) =\tau_j(\zeta^k) = \zeta^{jk}$
+But $\tau_j \circ \tau_k (\zeta) =\tau_j(\zeta^k) = \zeta^{jk}$
 
 ## 8
 
