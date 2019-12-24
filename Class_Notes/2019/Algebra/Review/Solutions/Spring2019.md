@@ -55,6 +55,9 @@ $\qed$
 
 ### (b)
 
+> Some potentially useful facts that weren't used:
+> 
+
 Let $\phi_n(x) = x^{p^n} - x$ and $\phi_d(x) = x^{p^d} - x$. 
 
 Let $\gamma$ be an irreducible degree $n$ polynomial over $\FF_p$, then $L\definedas \FF[x]/\generators \gamma \cong \GF(p^n)$.
