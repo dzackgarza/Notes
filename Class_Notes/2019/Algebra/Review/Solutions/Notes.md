@@ -288,7 +288,6 @@ $$
 
 
 2.
-
 $$
 \begin{align*}
 M = \left[\begin{array}{rr}
@@ -303,11 +302,12 @@ M = \left[\begin{array}{rr}
 $$
 
 - Not diagonalizable over $\CC$
+
 - Eigenvalues $[1, 1]$ (repeated, multiplicity 2)
+
 - $\min_M(x) = \chi_M(x) = x^2-2x+1$
 
-
-1. Non-similar matrices with the same characteristic polynomial
+3. Non-similar matrices with the same characteristic polynomial
 
 $$
 \left[\begin{array}{ll}{1}
@@ -325,5 +325,5 @@ $$
 1 & 1 & 0 \\
 0 & 1 & 1 \\
 0 & 0 & 1 \\
-\end{array}\right]?
+\end{array}\right] \mathbf{????}
 .\end{align*}
