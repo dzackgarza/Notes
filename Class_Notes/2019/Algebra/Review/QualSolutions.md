@@ -257,6 +257,8 @@ But then $r\not\in \mathfrak{p}$, a contradiction.
 
 > Galois Theory.
 
+> Definition: $\zeta$ is a primitive root of unity iff $o(\zeta) = n$ in $F\units$.
+
 Let $K = \QQ(\zeta)$. 
 Then $K$ is the splitting field of $f(x) = x^n - 1$, which is irreducible over $\QQ$, so $K/\QQ$ is normal.
 We also have $f'(x) = nx^{n-1}$ and $\gcd(f, f') = 1$ since they can not share any roots.
