@@ -301,7 +301,7 @@ Thus $\phi$ is surjective.
 
 \begin{align*}
 \tau_j \circ \tau_k (\zeta) =\tau_j(\zeta^k) = \zeta^{jk} \implies
-\tau_jk} = \phi(jk) = \tau_j \circ \tau_k
+\tau_{jk} = \phi(jk) = \tau_j \circ \tau_k
 .\end{align*}
 
 ## 8
