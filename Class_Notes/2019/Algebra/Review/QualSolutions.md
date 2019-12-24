@@ -277,6 +277,12 @@ and if we restrict to $j$ such that $\gcd(n, j) = 1$, this yields $\phi(n)$ maps
 Noting that if $\zeta$ is a primitive root, then $(n, j) = 1$ implies that that $\zeta^j$ is also a primitive root, and hence another root of $\min(\zeta, \QQ)$, and so these are in fact automorphisms of $K$ that fix $\QQ$ and thus elements of $\Gal(K/\QQ)$.
 
 So define a map
+\begin{align*}
+\phi: \ZZ_n\units &\to \Gal(\QQ(\zeta)/\QQ) \\
+[j]_n &\mapsto \tau_j
+.\end{align*}
+
+The claim is that this is a surjective homomorphism, and since both groups are the same size, an isomorphism.
 
 
 ## 8
