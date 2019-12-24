@@ -129,7 +129,6 @@ a+b = (a+b)^2 &= a^2 + ab + ba + b^2 = a + ab + ba + b \\
 ## 4
 
 > Theorem: $F\units$ is always cyclic for $F$ a field
-> 
 
 ### a
 
@@ -202,6 +201,7 @@ Then $[3]_6\actson [2]_6 = [0]_6$ and $[2]_6\actson [3]_6 = [0]_6$, but $[2]_6 +
 So the set of torsion elements are not closed under addition, and thus not a submodule.
 
 ### c
+
 Suppose $R$ has zero divisors $a,b \neq 0$ where $ab = 0$.
 Then for any $m\in M$, we have $b\actson m \definedas bm \in M$ as well, but then 
 $$
@@ -216,15 +216,15 @@ $\qed$
 > Prime ideal: $\mathfrak{p}$ is prime iff $ab \in \mathfrak{p} \implies a\in \mathfrak{p}$ or $b\in \mathfrak{p}$.
 > Silly fact: 0 is in every ideal!
 > 
-> Zorn's Lemma: Given a poset, if every chain has an upper bound, then there is a maximal element. (Chain: totally ordered subset.)
+> **Zorn's Lemma:** Given a poset, if every chain has an upper bound, then there is a maximal element. (Chain: totally ordered subset.)
 > 
-> Corollary: If $S\subset R$ is multiplicatively closed with $0\not\in S$ then $\theset{I \normal R \suchthat J\intersect S = \emptyset}$ has a maximal element.
+> **Corollary:** If $S\subset R$ is multiplicatively closed with $0\not\in S$ then $\theset{I \normal R \suchthat J\intersect S = \emptyset}$ has a maximal element.
 > (TODO: PROVE)
 >
-> Theorem: If $R$ is commutative, maximal $\implies$ prime for ideals.
+> **Theorem:** If $R$ is commutative, maximal $\implies$ prime for ideals.
 > (TODO: PROVE)
 >
-> Theorem: Non-units are contained in a maximal ideal. (See HW?)
+> **Theorem:** Non-units are contained in a maximal ideal. (See HW?)
 
 ### a
 
