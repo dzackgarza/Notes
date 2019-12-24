@@ -5,9 +5,6 @@
 **Theorem:** 
 If $A\in \GL(n, \CC)$ and $A^m$ is diagonalizable over $\FF$ for some $m$, then $A$ itself is diagonalizable over $\FF$. 
 
-Let $\mu_M(x)$ denote the minimal polynomial of $A$ and $p_M(x)$ the characteristic polynomial.
-
-
 
 **Lemma**: 
 $$M \text{ is diagonalizable } \iff ~\mu_M(x) \text{ splits into distinct linear factors over } \FF.
