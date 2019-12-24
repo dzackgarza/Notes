@@ -327,3 +327,8 @@ $$
 0 & 0 & 1 \\
 \end{array}\right] \mathbf{????}
 .\end{align*}
+
+# Fields
+
+**Lemma:**
+$x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
