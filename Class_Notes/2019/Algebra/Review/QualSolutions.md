@@ -256,9 +256,12 @@ But then $r\not\in \mathfrak{p}$, a contradiction.
 ## 7
 
 > Galois Theory.
-> Galois = normal + separable
-> Separable: Minimal polynomial of every element has distinct roots.
-> Normal (if separable): Splitting field of an irreducible polynomial.
+> 
+> **Galois** = normal + separable.
+> 
+> **Separable**: Minimal polynomial of every element has distinct roots.
+> 
+> **Normal (if separable)**: Splitting field of an irreducible polynomial.
 
 > Definition: $\zeta$ is a primitive root of unity iff $o(\zeta) = n$ in $F\units$.
 
