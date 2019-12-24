@@ -331,13 +331,16 @@ $$
 # Fields
 
 **Lemma:**
-$\phi_n \definedas x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
+Let $\phi_n \definedas x^{p^n} - x$. 
+Then $f(x) \divides \phi_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
-*Proof:*
+(So $\phi_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.)
 
-$f ~\text{irr} \implies f \divides \phi_{n}$:
-
-Suppose $f$ is irreducible of degree $d$. 
-Then $f \divides x^{p^d} - x$ (consider $F[x]/\generators{f}$) and $x^{p^d} - x \divides x^{p^n} - x \iff d\divides n$.
-
-$
+> *Proof:*
+> 
+> $\impliedby$:
+>
+> Suppose $f$ is irreducible of degree $d$. 
+> Then $f \divides x^{p^d} - x$ (consider $F[x]/\generators{f}$) and $x^{p^d} - x \divides x^{p^n} - x \iff d\divides n$.
+>
+> $\implies$:
