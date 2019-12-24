@@ -229,7 +229,7 @@ $\qed$
 ### a
 
 Let $\mathfrak{p}$ be prime and $x\in N$.
-Then $x^k = 0$ for some $k$, and thus $x^k = x x^{k-1} \in \mathfrak p$.
+Then $x^k = 0 \in \mathfrak{p}$ for some $k$, and thus $x^k = x x^{k-1} \in \mathfrak p$.
 Since $\mathfrak p$ is prime, inductively we obtain $x\in\mathfrak p$.
 
 ### b
