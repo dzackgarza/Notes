@@ -307,4 +307,6 @@ $$
 $$
 
 4. A full-rank matrix that is not diagonalizable:
-5. 
+\begin{align*}
+
+.\end{align*}
