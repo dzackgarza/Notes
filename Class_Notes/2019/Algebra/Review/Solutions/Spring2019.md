@@ -60,7 +60,9 @@ Now letting $\gamma$ be an irreducible degree $n$ polynomial, we can form $\FF[x
 
 By part (a)
 
-(Lemma) $\GF(p^d) \leq \GF(p^n)$ for any $d$ dividing $n$, and so
+(Lemma) $\GF(p^d) \leq \GF(p^n)$ for any $d$ dividing $n$.
+
+So
 \begin{align*}
 n &= [\GF(p^n) : \FF_p] \\
 &= [\GF(p^n): \GF(p^d)][\GF(p^d): \FF_p] \\
