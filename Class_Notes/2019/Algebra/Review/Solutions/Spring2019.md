@@ -32,9 +32,10 @@ $\qed$
 
 ### (a)
 
-Since $\pi(x)$ is irreducible, we can consider the quotient $K = \displaystyle{\frac{\FF_p[x]}{\generators{\pi(x)}}}$, which is an extension of $\FF_p$ of degree $d$ (i.e. $[K : \FF_p] = d~$) and is thus a field of size $p^d$. 
+Since $\pi(x)$ is irreducible, we can consider the quotient $K = \displaystyle{\frac{\FF_p[x]}{\generators{\pi(x)}}}$, which is an extension of $\FF_p$ of degree $d$ (i.e. $[K : \FF_p] = d~$) and is thus a field of size $p^d$.
 
-We also have a natural quotient map $f: \FF_p[x] \to K$. Since $K$ is also a group of size $p^d$, we know that for any $y \in K_d$, we have by Lagrange's theorem that the order of $y$ divides $\abs{K_d} = p^d$, and so $y^{p^d} = y$.
+We also have a natural quotient map $f: \FF_p[x] \to K$. 
+Since $K$ is also a group of size $p^d$, we know that for any $y \in K_d$, we have by Lagrange's theorem that the order of $y$ divides $\abs{K_d} = p^d$, and so $y^{p^d} = y$.
 
 But this says that
 $$
