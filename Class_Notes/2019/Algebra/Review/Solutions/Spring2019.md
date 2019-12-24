@@ -19,7 +19,7 @@ $$
 
 *(Equivalently, iff all of the roots of $\mu_M$ lie in $\FF$)*
 
-*Proof*: 
+*Proof*:
 
 - $\implies$: If $M$ is diagonalizable, its domain has a basis of eigenvectors. So if $\vector x \in \mathrm{domain}(M), \vector v = \sum \alpha_i \vector v_i$ where $\vector v_i$ are eigenvectors. Then $q(x) = \prod_{i=1}^k (x-\lambda_i)$ annihilates $M$, because we have 
 $$
@@ -29,8 +29,6 @@ where the last equality follows because $(M - I \lambda_i)\vector v_i = \vector 
 By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq n$, so this forces $\deg \mu_M = k$. But then we have two monic polynomials of degree $k$ with the same roots, forcing them to be identical.
 
 - $\Longleftarrow$: Longer proof, omitted here.
-
-
 
 Using the lemmas, since $A^n$ is diagonalizable (and $\CC$ is algebraically closed), we can write $\mu_{A^n}(x)$ as a product of *distinct* linear factors:
 
