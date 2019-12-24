@@ -4,18 +4,16 @@
 
 > $A$ is diagonalizable iff $\min_A(x)$ is separable.
 
-**Theorem:**
-If $A\in \GL(n, \CC)$ and $A^m$ is diagonalizable over $\FF$ for some $m$, then $A$ itself is diagonalizable over $\FF$.
-
-Since $A^n$ is diagonalizable (and $\CC$ is algebraically closed), we can write $\mu_{A^n}(x)$ as a product of *distinct* linear factors:
+Since $A^n$ is diagonalizable (and $\CC$ is algebraically closed), we can write $\min_{A^n}(x)$ as a product of **distinct** linear factors:
 
 $$
 \min_{A^n}(x) = \prod_{i=1}^k (x-\lambda_i), \quad \min_{A^n}(A^n) = 0
 $$
 
-where $\lambda_i$ are the distinct eigenvalues of $A^n$.
+where $\lambda_i$ are the **distinct** eigenvalues of $A^n$.
 
 Moreover $A\in \GL(n,\CC) \implies A^n \in \GL(n,\CC)$, so $\lambda_i \neq 0$ for any $i$. 
+
 This implies that there are no roots with multiplicity, since $x^k$ is not a factor of $\mu_{A^n}(x)$, meaning that the $k$ terms in the product correspond to exactly $k$ **distinct** factors.
 
 We can now construct a polynomial that annihilates $A$, namely
@@ -25,14 +23,9 @@ $$
 
 where we can note that $q_A(A) = \min_{A^n}(A^n) = 0$, and so $\min_A(x) \divides q_A(x)$ by minimality.
 
+But then $\min_A(x)$ must have distinct linear factors, so $A$ is diagonalizable.
 
-Note that the complex roots of $q_A$ are the $n$th roots of $\lambda_i$; since the $\lambda_i$ were distinct to begin with, their $n$th roots are distinct. But this says that
-
-$$
-q_A(x) = \prod_{i=1}^k \prod_{j=1}^n (x- \lambda_i^{\frac j n} ).
-$$
-
-is a product of distinct linear factors. Thus $\mu_A$ is also a product of distinct linear factors (again using lemma 2), and by the lemma, is thus diagonalizable. $\qed$
+$\qed$
 
 See [here](https://math.stackexchange.com/questions/3027664/if-a-is-invertible-and-an-is-diagonalizable-then-a-is-diagonalizable).
 
