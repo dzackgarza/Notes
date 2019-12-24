@@ -60,9 +60,12 @@ Now letting $\gamma$ be an irreducible degree $n$ polynomial, we can form $\FF[x
 
 (Lemma) $GF(p^d) \leq \GF(p^n)$ for any $d$ dividing $n$, and so
 \begin{align*}
-n = [GF(p^n) : \FF_p] = [K_n : K_d][K_d: \FF_p] = m d
-.\end{align*}
+n &= [\GF(p^n) : \FF_p] \\
+&= [\GF(p^n): \GF(p^d)][\GF(p^d): \FF_p] \\
+&= \ell d \quad \text{ for some }\ell
+,\end{align*}
 
+and so $d \divides n$.
 
 Now consider $K_n = \displaystyle{\frac{\FF_p[x]}{\generators{\gamma(x)}}}$, which is an extension of $\FF_p$ of degree $n$ so $[K_n : \FF_p] = n$. If we can show that $K_d$ is an intermediate extension between $\FF_p$ and $K_n$, we would then have
 $$
