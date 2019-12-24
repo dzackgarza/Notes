@@ -55,7 +55,7 @@ $\qed$
 
 ### (b)
 
-Note that 
+Let $\gamma$ be an irreducible degree $n$ polynomial over $\FF_p$, then note that $\FF[x]/\generators \gamma \cong \GF(p^n)$
 
 ## 3
 
