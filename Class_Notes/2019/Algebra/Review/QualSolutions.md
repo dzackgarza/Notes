@@ -269,6 +269,8 @@ But then $r\not\in \mathfrak{p}$, a contradiction.
 
 > The lattice: 
 
+![](2019-12-24-13-19-15.png)
+
 Let $K = \QQ(\zeta)$. 
 Then $K$ is the splitting field of $f(x) = x^n - 1$, which is irreducible over $\QQ$, so $K/\QQ$ is normal.
 We also have $f'(x) = nx^{n-1}$ and $\gcd(f, f') = 1$ since they can not share any roots.
@@ -318,10 +320,12 @@ Thus $\theta$ is surjective.
 
 We have $K \cong \ZZ_{20}\units$ and $\phi(20) = 8$, so $K \cong \ZZ_8$, so we have the following subgroups and corresponding intermediate fields:
 
-- $0 \sim \QQ$
+- $0 \sim \QQ(\zeta_{20})$
 - $\ZZ_2 \sim \QQ(\omega_1)$
 - $\ZZ_4 \sim \QQ(\omega_2)$
-- $\ZZ_8 \sim \QQ(\zeta_{20})$
+- $\ZZ_8 \sim \QQ$
+
+For some elements $\omega_i$ which exist by the primitive element theorem.
 
 
 ## 8
