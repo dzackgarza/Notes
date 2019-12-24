@@ -35,7 +35,9 @@ $\qed$
 Since $\pi(x)$ is irreducible, we can consider the quotient $K = \displaystyle{\frac{\FF_p[x]}{\generators{\pi(x)}}}$, which is an extension of $\FF_p$ of degree $d$ (i.e. $[K : \FF_p] = d~$) and is thus a field of size $p^d$.
 
 We also have a natural quotient map $f: \FF_p[x] \to K$. 
-Since $K$ is also a group of size $p^d$, we know that for any $y \in K_d$, we have by Lagrange's theorem that the order of $y$ divides $\abs{K_d} = p^d$, and so $y^{p^d} = y$.
+Since $K\units$ a group of size $p^d-1$, we know that for any $y \in K$, we have by Lagrange's theorem that the order of $y$ divides $p^d-1$ and so $y^{p^d} = y$.
+
+So every element in $K$ satisfies $f(x) = x^{p^d}-x$.
 
 But this says that
 $$
