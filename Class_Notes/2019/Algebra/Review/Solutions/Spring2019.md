@@ -355,7 +355,8 @@ $\qed$
 
 > Work with matrix of all ones instead.
 > Eyeball eigenvectors.
-> Coefficients in minimal polynomial
+> Coefficients in minimal polynomial: size of largest Jordan block
+> Size of eigenspaces: 
 
 ### a
 
