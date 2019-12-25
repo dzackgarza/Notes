@@ -396,3 +396,5 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 0& 0 & 0 & \cdots & 0 & -1 \\
 \end{array}\right]
 .\end{align*}
+
+For $F = \FF_p$, note that all eigenvalues/vectors lie in $\FF_p$
