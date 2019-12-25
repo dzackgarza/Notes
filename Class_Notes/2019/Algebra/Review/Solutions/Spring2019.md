@@ -180,12 +180,17 @@ $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x$ from each} \\ \text{conjugacy class}}}[G: Z(x)]
 $$
 
+Now note
+
+- Each element of $Z(G)$ is in its own conjugacy class, so 
+
 ## 4
 
 
-- 
+We can now use the fact that every element in $Z(G)$ is in its own conjugacy class, contributing $\abs{Z(G)}$ to $n$, while on the other hand every other class has at least two elements, which contributes at least $\frac 1 2 \abs{G - Z(G)}$ to $n- 
+$. 
 
-We can now use the fact that every element in $Z(G)$ is in its own conjugacy class, contributing $\abs{Z(G)}$ to $n$, while on the other hand every other class has at least two elements, which contributes at least $\frac 1 2 \abs{G - Z(G)}$ to $n$. Thus
+Thus
 $$
 n \leq \abs{Z(G)} + \frac 1 2\abs{G - Z(G)} = \abs{Z(G)} + \frac 1 2\abs{G} - \frac 1 2 \abs{Z(G)} = \frac 1 2 \abs{G} + \frac 1 2 \abs{Z(G)}
 \\ \implies \frac n {\abs G} \leq \frac 1 2 \frac{\abs{G}}{\abs{G}}  + \frac 1 2 \frac{\abs{Z(G)}}{\abs{G}}
