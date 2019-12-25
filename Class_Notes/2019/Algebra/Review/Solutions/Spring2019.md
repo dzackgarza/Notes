@@ -357,11 +357,7 @@ $\qed$
 
 ### a
 
-Let $A$ be the $p\times p$ matrix in question.
-
-By inspection, $[1,1,\cdots, 1]^t$ is an eigenvector with eigenvalue $p-1$.
-
-We first compute the JCF; then
+Let $A$ be the $p\times p$ matrix in question,
 $$
 \begin{align*}
 A = \left[ \begin{array} { c c c c c }
@@ -373,3 +369,7 @@ A = \left[ \begin{array} { c c c c c }
 \end{array} \right]
 \end{align*}
 $$
+
+By inspection, $[1,1,\cdots, 1]^t$ is an eigenvector with eigenvalue $p-1$.
+
+We first compute the JCF; then
