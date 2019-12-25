@@ -246,16 +246,23 @@ $$
   2. Let $0 < I < R$ be a proper ideal, and consider the set $S = \theset{J \suchthat I   \subseteq J < R}$. The claim is that $S$ contains a maximal element $M$. Note $I\in S$, so $S$ is nonempty. Moreover, since $I \neq R$ is proper and all $J\in S$ are proper, any maximal element will also be proper, and thus a maximal ideal of $R$ containing $I$.  We can now use the fact $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
 To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$. To see that $\hat C$ is an upper bound for $C$, it suffices to show $C_i \in C \implies C_i \leq \hat C$ in the partial ordering. This amounts to $C_i \in C \implies C_i \subset \hat C$, which is always true because $C_i$ occurs as one of terms in the union defining $\hat C$. To see that $\hat C \in S$, note that $I \subseteq C_i < R$ for every $C_i$, and in particular, since no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper. It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$. Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
 
-  2. Parts
-    1. $\Longrightarrow$: We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$. Suppose $x\in J(R)$ and suppose towards a contradiction that $1+x$ is not a unit. Then consider the ideal $M = \generators{1+x}$. Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in M$. This means $M < R$ is a proper ideal, and it is thus contained in some (proper) maximal ideal $M' < R$ by part (1), and so we have $1+x \in M'$. However, since $x\in J(R)$, we must have $x\in M'$. This means that $(1+x) - x = 1 \in M'$, since ideals are closed under sums, but this forces $M' = R$ which contradicts $M' < R$.
+## 6
 
-    > Gist: $\Longrightarrow$: WLOG look at $1-rx$ instead. If $1-rx \not\in R\units$, then $1-rx \in M$, some maximal ideal. Then $x\in R\intersect M$, so $rx \in M$, so $(1-rx) + rx = 1 \in M \implies M = R$, a contradiction.
+### a
+$\Longrightarrow$: 
 
-    1. $\Longleftarrow$: Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$. Suppose towards a contradiction that there is a maximal ideal $M$ such that $x\not \in M$ (and thus $x\not\in J(R)$). Then consider $Rx + M = \theset{rx + m \suchthat r\in R, m\in M}$. Since $M$ was maximal, $M \subsetneq Rx + M \implies Rx + M = R$. So every element in $R$ can be written as $rx + m$ for some $r\in R, m\in M$. But $1\in R$, so we have $1 = rx + m$. Since $R$ is a ring and closed under additive inverses, we can let $s = -r$ and write $1 = sx - m$, and so $m = 1 + sx$. Since $s\in R$, by assumption, $1+sx$ is a unit and so $m$ is a unit -- but this forces $M=R$, contradicting the fact that $M$ is proper. So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $x\in J(R)$ by definition.
+We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$. Suppose $x\in J(R)$ and suppose towards a contradiction that $1+x$ is not a unit. Then consider the ideal $M = \generators{1+x}$. Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in M$. This means $M < R$ is a proper ideal, and it is thus contained in some (proper) maximal ideal $M' < R$ by part (1), and so we have $1+x \in M'$. However, since $x\in J(R)$, we must have $x\in M'$. This means that $(1+x) - x = 1 \in M'$, since ideals are closed under sums, but this forces $M' = R$ which contradicts $M' < R$.
+
+> Gist: $\Longrightarrow$: WLOG look at $1-rx$ instead. If $1-rx \not\in R\units$, then $1-rx \in M$, some maximal ideal. Then $x\in R\intersect M$, so $rx \in M$, so $(1-rx) + rx = 1 \in M \implies M = R$, a contradiction.
+
+### b 
+$\Longleftarrow$: 
+
+Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$. Suppose towards a contradiction that there is a maximal ideal $M$ such that $x\not \in M$ (and thus $x\not\in J(R)$). Then consider $Rx + M = \theset{rx + m \suchthat r\in R, m\in M}$. Since $M$ was maximal, $M \subsetneq Rx + M \implies Rx + M = R$. So every element in $R$ can be written as $rx + m$ for some $r\in R, m\in M$. But $1\in R$, so we have $1 = rx + m$. Since $R$ is a ring and closed under additive inverses, we can let $s = -r$ and write $1 = sx - m$, and so $m = 1 + sx$. Since $s\in R$, by assumption, $1+sx$ is a unit and so $m$ is a unit -- but this forces $M=R$, contradicting the fact that $M$ is proper. So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $x\in J(R)$ by definition.
 
     > Gist: $\not\Longrightarrow: x \not\in J(R) \implies \exists M \suchthat x\not\in M \implies R = \generators{M, x} \implies \exists r \suchthat 1 = m + rx \implies m = 1-rx$ and so $1-rx\not\in R\units$, since otherwise $m$ would be a unit and force $M=R$. Note: not sure why this holds for all $r$..
 
-  3. Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$ (and since here $R$ is commutative, $Z(R) = R$). This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
+  1. Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$ (and since here $R$ is commutative, $Z(R) = R$). This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
 
     To see that $J(R) \subseteq N(R)$ when $R$ is finite, we will first claim that for every $x\in R$, there is some power $n$ such that $x^n$ is idempotent and thus $x^{2n} = x^n$. Then fixing $x \in J(R)$, from part (2), we will have $u = 1+rx$ a unit for any $r\in R$. So we'll pick $r=-x^{n-1}$, so $u = 1-x^n$ will remain a unit. In particular, we'll have
     $$
@@ -307,8 +314,8 @@ To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subsete
       $$
         contradicting $x\neq 0$. So $1-x$ can not be a unit. $\qed$
 
-1. Parts
-  1. Let $A$ be the $p\times p$ matrix in question. We first compute the JCF; then
+2. Parts
+  2. Let $A$ be the $p\times p$ matrix in question. We first compute the JCF; then
 $$\begin{align*}
 &\left[ \begin{array} { c c c c c }
 { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\
