@@ -447,5 +447,9 @@ To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vecto
 &= - \vector p_p
 .\end{align*}
 
+We still have a linearly independent set given by the first $p-1$ columns of $P$, so we can extend this to a basis by finding one linearly independent generalized eigenvector.
+
+Making a choice to solve $A\vector x = \vector p_2$ for simplicity
+
 
 ## 8
