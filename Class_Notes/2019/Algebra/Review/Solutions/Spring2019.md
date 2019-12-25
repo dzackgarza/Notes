@@ -371,5 +371,3 @@ A = \left[ \begin{array} { c c c c c }
 $$
 
 By inspection, $[1,1,\cdots, 1]^t$ is an eigenvector with eigenvalue $p-1$.
-
-We first compute the JCF; then
