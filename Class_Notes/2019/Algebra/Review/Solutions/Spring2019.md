@@ -359,6 +359,11 @@ $\qed$
 
 Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in every entry. 
 Noting that $B = A+I$, we have 
+\begin{align*}
+&B\vector x 
+= \lambda \vector x \\
+&\iff (A+I) \vector x = \lambda \vector x \\
+&\iff A \vector x = (\lambda - 1) \vector x
+,\end{align*}
 
-B\vector x = \lambda \vector x
-$$
+so it suffices to find the eigenvalues of $B$.
