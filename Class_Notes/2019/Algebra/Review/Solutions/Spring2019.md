@@ -116,16 +116,18 @@ $\qed$
 > - Notation: $X^g = \theset{x\in x\suchthat g\actson x = x}$
 > - Burnside's formula: $\abs G \abs{X/G} = \sum \abs {X^g}$.
 
-Define a sample space $\Omega = G^2$ from which we will pick random pairs of elements of $G$.
+Letting $n$ be the number of conjugacy classes, what we want to show is that
+$$
+P([g, h] = 1) = \frac n {\abs G}
+$$
+
+Define a sample space $\Omega = G^2$ from which we will pick random pairs of elements of $G$, so $\abs{\Omega} = \abs{G}^2$.
 
 For each pair $(g, h)$, we will consider $G\actson G$ by $g \actson h = ghg\inv$.
 
 Let $G$ act on itself by conjugation, which partitions $G$ into conjugacy classes.
 
-Letting $n$ be the number of conjugacy classes, what we want to show is that
-$$
-P([g, h] = 1) = \frac n {\abs G}
-$$
+
 
 We have Burnside's formula,
 $$
@@ -136,16 +138,14 @@ Note that $\mathcal{O}_x$ is the conjugacy class of $x$, so $\abs{X/G} = n$.
 
 > And $X^g = C_G(x) = Z(x)$.
 
-In this case, $X = G$, and so $X^g = \theset{x\in G \suchthat gxg\inv = x}$. It is also the case that the orbit of an action given by conjugation is precisely a conjugacy class, i.e. if we define the orbit of $x$ as $\mathcal O_x = \theset{g\actson x \suchthat g\in G}$, then
-$$
-\abs{X/G} = \sum_{\substack{\text{one $x$ in each} \\ \text{conjugacy class}}{}} \abs{O_x} = ~\#~\text{Conjugacy Classes}
-$$
 
 
 
-  We can rearrange Burnside's formula to obtain
+We can rearrange Burnside's formula to obtain
 $$
-n \abs{G} = \abs{X/G} \abs{G} = \sum _ { g \in G } \left| X ^ { g } \right|
+\abs{X/G} \abs{G} 
+= n \abs{G}
+= \sum _ { g \in G } \left| X ^ { g } \right|
 $$
 
 
