@@ -353,14 +353,18 @@ $\qed$
 
 ## 7
 
+> $\det(A-Ix)$ helps find eigenvalues, and $\Tr(A) = \sum \lambda_i$.
+
 ### a
 
-Let $A$ be the $p\times p$ matrix in question. 
+Let $A$ be the $p\times p$ matrix in question.
+
+By inspection, $[1,1,\cdots, 1]^t$ is an eigenvector with eigenvalue $p-1$.
 
 We first compute the JCF; then
 $$
 \begin{align*}
-&\left[ \begin{array} { c c c c c }
+A = \left[ \begin{array} { c c c c c }
 { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\
 { 1 } & { 0 } & { 1 } & { \dots } & { 1 } \\
 { 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\
