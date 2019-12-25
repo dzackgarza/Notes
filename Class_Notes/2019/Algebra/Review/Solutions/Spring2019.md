@@ -123,11 +123,13 @@ $$
 
 Define a sample space $\Omega = G^2$, so $\abs{\Omega} = \abs{G}^2$.
 
-For each pair $(g, h)$, we will consider $G\actson G$ by $g \actson h = ghg\inv$.
-
 Let $G$ act on itself by conjugation, which partitions $G$ into conjugacy classes.
 
+What are the orbits?
+$\mathcal{O}_g = \theset{hgh\inv \suchthat h\in G}$, which is the conjugacy class of $g$.
 
+What are the fixed points?
+$X^g = \theset{h\in G \suchthat hgh\inv = g}$, which are the elements of $G$ that commute with $g$.
 
 We have Burnside's formula,
 $$
