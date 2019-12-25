@@ -439,10 +439,13 @@ JCF_{\FF_p}(A)
 \end{array}\right]
 .\end{align*}
 
-To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector p_1, \cdots , \vector p_p]$ from part (a)$ is now singular, since
+To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector p_1, \cdots , \vector p_p]$ from part (a) is singular over $\FF_p$, since
+\begin{align*}
+\vector p_1 + \vector p_2 + \cdots + \vector p_{p-1} 
+&= [p-1, 0, 0, \cdots, 0, 1] \\
+&= [-1, 0,0,\cdots, 0, 1] \\
+&= - \vector p_p
+.\end{align*}
 
-\vector p_1 + \vector p_2 + \cdots + \vector p_{p-1} =
- [p-1, 0, 0, \cdots, 0, 1] = [-1, 0,0,\cdots, 0, 1]
-$$
 
 ## 8
