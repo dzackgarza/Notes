@@ -188,6 +188,15 @@ Now note
   - Claim: each such class contributes **at least** $\frac 1 2 \abs{G - Z(G)}$.
 
 Thus
+\begin{align*}
+n \leq \abs{Z(G)} + \frac 1 2\abs{G - Z(G)} 
+&= \abs{Z(G)} + \frac 1 2\abs{G} - \frac 1 2 \abs{Z(G)} \\
+&= \frac 1 2 \abs{G} + \frac 1 2 \abs{Z(G)} \\
+\\ 
+\implies \frac n {\abs G} 
+&\leq \frac 1 2 \frac{\abs{G}}{\abs{G}}  + \frac 1 2 \frac{\abs{Z(G)}}{\abs{G}} \\
+&= \frac 1 2 + \frac 1 2 \frac 1 {[G: Z(G)]}
+.\end{align*}
 
 
 ## 4
