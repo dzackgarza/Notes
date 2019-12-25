@@ -404,8 +404,13 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 The matrix $P$ such that $A = PJP\inv$ will have columns the bases of the generalized eigenspaces. 
 In this case, the generalized eigenspaces are the usual eigenspaces, so
 \begin{align*}
-\left[\begin{array}{rrrrr}
-1 & 1 & 0 & 0 & 0 \\
+P = \left[\begin{array}{rrrrr}
+1 & 1 & 1 & 1 & 1 & 1  \\
+1 & -1 & 0 & 0 & 0 & 0 \\
+1 & 0 & -1 & 0 & 0 & 0 \\
+1 & 0 & 0 & -1 & 0 & 0 \\
+1 & \vdots & \vdots & \vdots & \ddots & \vdots\\
+1 & 0 & 0 & 0 & 0 & -1 \\
 \end{array}\right]
 .\end{align*}
 
