@@ -439,6 +439,6 @@ JCF_{\FF_p}(A)
 \end{array}\right]
 .\end{align*}
 
-
+To obtain a basis for $E_{\lambda = 0}$, first note that $\dim \ker(A -I(-1)) = $
 
 ## 8
