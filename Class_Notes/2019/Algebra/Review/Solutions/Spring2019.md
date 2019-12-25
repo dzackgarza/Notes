@@ -242,20 +242,22 @@ $$
 
 1. Now letting $M \normal R$ be non-principal, we can conclude that $M$ is not a free $R\dash$module. Repeating the argument in (1), since $M$ is not a principal ideal, there are at least 2 generating elements -- however, these are linearly dependent because $R$ is commutative, so the rank is at most 1. The rank is at least 1, because $R$ is an integral domain and letting $m\neq 0$ be one of the generating elements of $M$, we have $\alpha m = 0 \implies \alpha = 0$ and so $\theset{m}$ is linearly independent. So the rank is exactly 1. Finally, $M$ is torsion-free: let $x\in M$, then if $x \in \tor M$, there exists some $r\neq 0\in R$ such that $rx = 0$. Since $R$ is an integral domain, this forces $x=0$, so 0 is the only torsion element and thus $M$ is torsion-free. $\qed$
 
-2. Parts
-  2. Let $0 < I < R$ be a proper ideal, and consider the set $S = \theset{J \suchthat I   \subseteq J < R}$. The claim is that $S$ contains a maximal element $M$. Note $I\in S$, so $S$ is nonempty. Moreover, since $I \neq R$ is proper and all $J\in S$ are proper, any maximal element will also be proper, and thus a maximal ideal of $R$ containing $I$.  We can now use the fact $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
-To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$. To see that $\hat C$ is an upper bound for $C$, it suffices to show $C_i \in C \implies C_i \leq \hat C$ in the partial ordering. This amounts to $C_i \in C \implies C_i \subset \hat C$, which is always true because $C_i$ occurs as one of terms in the union defining $\hat C$. To see that $\hat C \in S$, note that $I \subseteq C_i < R$ for every $C_i$, and in particular, since no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper. It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$. Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
-
 ## 6
 
-### a
+### a  
+
+1. Let $0 < I < R$ be a proper ideal, and consider the set $S = \theset{J \suchthat I   \subseteq J < R}$. The claim is that $S$ contains a maximal element $M$. Note $I\in S$, so $S$ is nonempty. Moreover, since $I \neq R$ is proper and all $J\in S$ are proper, any maximal element will also be proper, and thus a maximal ideal of $R$ containing $I$.  We can now use the fact $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
+   
+To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$. To see that $\hat C$ is an upper bound for $C$, it suffices to show $C_i \in C \implies C_i \leq \hat C$ in the partial ordering. This amounts to $C_i \in C \implies C_i \subset \hat C$, which is always true because $C_i$ occurs as one of terms in the union defining $\hat C$. To see that $\hat C \in S$, note that $I \subseteq C_i < R$ for every $C_i$, and in particular, since no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper. It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$. Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
+
+### b
 $\Longrightarrow$: 
 
 We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$. Suppose $x\in J(R)$ and suppose towards a contradiction that $1+x$ is not a unit. Then consider the ideal $M = \generators{1+x}$. Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in M$. This means $M < R$ is a proper ideal, and it is thus contained in some (proper) maximal ideal $M' < R$ by part (1), and so we have $1+x \in M'$. However, since $x\in J(R)$, we must have $x\in M'$. This means that $(1+x) - x = 1 \in M'$, since ideals are closed under sums, but this forces $M' = R$ which contradicts $M' < R$.
 
 > Gist: $\Longrightarrow$: WLOG look at $1-rx$ instead. If $1-rx \not\in R\units$, then $1-rx \in M$, some maximal ideal. Then $x\in R\intersect M$, so $rx \in M$, so $(1-rx) + rx = 1 \in M \implies M = R$, a contradiction.
 
-### b 
+### c
 $\Longleftarrow$: 
 
 Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$. Suppose towards a contradiction that there is a maximal ideal $M$ such that $x\not \in M$ (and thus $x\not\in J(R)$). Then consider $Rx + M = \theset{rx + m \suchthat r\in R, m\in M}$. Since $M$ was maximal, $M \subsetneq Rx + M \implies Rx + M = R$. So every element in $R$ can be written as $rx + m$ for some $r\in R, m\in M$. But $1\in R$, so we have $1 = rx + m$. Since $R$ is a ring and closed under additive inverses, we can let $s = -r$ and write $1 = sx - m$, and so $m = 1 + sx$. Since $s\in R$, by assumption, $1+sx$ is a unit and so $m$ is a unit -- but this forces $M=R$, contradicting the fact that $M$ is proper. So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $x\in J(R)$ by definition.
