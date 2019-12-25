@@ -93,7 +93,9 @@ $\qed$
 
 ## 3
 
-> Sylow theorems
+> Sylow theorems:
+> $n_p \cong 1 \mod p$
+> $n_p \divides m$.
 
 
 ## 4
