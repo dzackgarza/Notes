@@ -163,8 +163,11 @@ $\qed$
 
 Class equation:
 \begin{align*}
+\abs G = Z(G) + \sum_{\substack{\text{One $x$ from each} \\ \text{conjugacy class}}}[G: Z(x)]
+\end{align*}
 
-.\end{align*}
+where $Z(x) = \theset{g\in G \suchthat gx = xg}$.
+
 
 
 ### c
