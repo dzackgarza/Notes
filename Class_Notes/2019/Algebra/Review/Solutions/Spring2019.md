@@ -288,7 +288,7 @@ So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $
 
 > Gist: $\not\Longrightarrow: x \not\in J(R) \implies \exists M \suchthat x\not\in M \implies R = \generators{M, x} \implies \exists r \suchthat 1 = m + rx \implies m = 1-rx$ and so $1-rx\not\in R\units$, since otherwise $m$ would be a unit and force $M=R$. Note: not sure why this holds for all $r$..
 
-  1. Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$ (and since here $R$ is commutative, $Z(R) = R$). This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
+1. Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$ (and since here $R$ is commutative, $Z(R) = R$). This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
 
     To see that $J(R) \subseteq N(R)$ when $R$ is finite, we will first claim that for every $x\in R$, there is some power $n$ such that $x^n$ is idempotent and thus $x^{2n} = x^n$. Then fixing $x \in J(R)$, from part (2), we will have $u = 1+rx$ a unit for any $r\in R$. So we'll pick $r=-x^{n-1}$, so $u = 1-x^n$ will remain a unit. In particular, we'll have
     $$
@@ -341,7 +341,7 @@ So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $
         contradicting $x\neq 0$. So $1-x$ can not be a unit. $\qed$
 
 2. Parts
-  2. Let $A$ be the $p\times p$ matrix in question. We first compute the JCF; then
+  1. Let $A$ be the $p\times p$ matrix in question. We first compute the JCF; then
 $$\begin{align*}
 &\left[ \begin{array} { c c c c c }
 { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\
