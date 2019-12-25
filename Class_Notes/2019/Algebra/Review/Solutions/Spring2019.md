@@ -376,4 +376,4 @@ Note that $A+I$ is a matrix of all ones, which reduces to a single row of ones$,
 
 So $\lambda_i = -1$ occurs $p-1$ times.
 
-So $\chi_A(x) = (p-1)(-1)^{p-1}$.
+So $\chi_A(x) = (p-1)(-1)^{p-1}$.`2
