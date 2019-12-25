@@ -170,6 +170,8 @@ where $Z(x) = \theset{g\in G \suchthat [g, x] = 1}$.
 
 ### c
 
+> Todo: revisit.
+
 As shown in part 1, 
 $$
 \mathcal{O}_x = \theset{g\actson x \suchthat g\in G} = \theset{h\in G \suchthat ghg\inv = h} = C_G(g)
