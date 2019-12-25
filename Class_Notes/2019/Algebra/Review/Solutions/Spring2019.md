@@ -168,9 +168,10 @@ Class equation:
 
 where $Z(x) = \theset{g\in G \suchthat [g, x] = 1}$.
 
-
-
 ### c
+
+
+
 ## 4
 
 
