@@ -367,3 +367,8 @@ Noting that $B = A+I$, we have
 ,\end{align*}
 
 so it suffices to find the eigenvalues of $B$.
+
+The vector $\vector v_1 = \sum \vector e_i$ (the vector of all 1's) is clearly an eigenvector with eigenvalue $\lambda = 1$.
+
+Similarly, any vector of the form $\vector e_i - \vector e_j$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda = 0$.
+This supplies the remaining $n-1$ 
