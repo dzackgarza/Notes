@@ -97,6 +97,8 @@ H \suchthat H < \frac G N
 \correspond{
   \text{Subgroups of $G$} \\ 
   \text{containing $N$}
+} \iff 
+\correspond{
 }
 .$$
 
