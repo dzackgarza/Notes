@@ -116,6 +116,8 @@ $\qed$
 > - Notation: $X^g = \theset{x\in x\suchthat g\actson x = x}$
 > - Burnside's formula: $\abs G \abs{X/G} = \sum \abs {X^g}$.
 
+### a
+
 Letting $n$ be the number of conjugacy classes, what we want to show is that
 $$
 P([g, h] = 1) = \frac n {\abs G}
@@ -157,9 +159,17 @@ P([g, h] = 1)
 
 $\qed$
 
+### b
+
+Class equation:
+\begin{align*}
+
+.\end{align*}
+
+
+### c
 ## 4
 
-> Class equation:
 
 - State the class equation: see notes.
 - As shown in part 1, $\mathcal{O}_x = \theset{g\actson x \suchthat g\in G} = \theset{h\in G \suchthat ghg\inv = h} = C_G(g)$, and by the class equation\
