@@ -354,6 +354,8 @@ $\qed$
 ## 7
 
 > Work with matrix of all ones instead.
+> Eyeball eigenvectors.
+> 
 
 ### a
 
