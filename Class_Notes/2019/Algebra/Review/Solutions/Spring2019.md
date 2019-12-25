@@ -381,7 +381,7 @@ So
 &\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)}
 \end{align*}
 
-and geometric multiplicites are preserved, so
+and geometric multiplicities are preserved, so
 \begin{align*}
 JCF_\QQ(A) 
 =  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
