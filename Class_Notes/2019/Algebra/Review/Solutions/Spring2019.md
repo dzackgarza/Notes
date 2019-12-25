@@ -370,16 +370,6 @@ A = \left[ \begin{array} { c c c c c }
 { 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\
 { \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\
 { 1 } & { 1 } & { 1 } & { \dots } & { 0 }
-\end{array} \right] \\ \\
-%
-\xrightarrow[\displaystyle{R_i \mapsto R_{p-i}~ 1\leq i\leq p}]{}
-&\left[ \begin{array} { c c c c c c }
-1 & { 1 } & { \dots } &  { 1 } & { 1 } & { 0 } \\
-1 & { 1 } & { \dots } &  { 1 } & { 0 } & { 1 } \\
-1 & { 1 } & { \dots } &  { 0 } & { 1 } & { 1 } \\
-\vdots & \vdots &  { ⋰ } & { \vdots } & { \vdots } & { \vdots } \\
-{ 1 } & 0 &  { 1 } & { \dots } & { 1 } & { 1 } \\
-{ 0 } & 1 &  { 1 } & { \dots } & { 1 } & { 1 }
-\end{array} \right]  \\ \\
+\end{array} \right]
 \end{align*}
 $$
