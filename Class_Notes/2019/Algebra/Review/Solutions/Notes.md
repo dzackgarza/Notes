@@ -1,6 +1,6 @@
 # Group Theory
 
-**Definition:** 
+**Definition:**
 $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
 **Burnside's Formula:**
@@ -45,25 +45,25 @@ Definition: A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k
    2. $n_p \equiv 1 \mod p$, i.e. $n_p \not\divides p$.
    3. $n_p = [G : N_G(P)]$ where $N$ is the normalizer.
 
-Some facts that are useful when doing Sylow theory: 
+Some facts that are useful when doing Sylow theory:
 
   - $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$, so coprime order subgroups are disjoint.
 
   - $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
-  
+
   - Characterizing direct products: $G \cong H \times K$ when
-    
+
     - $G = HK = \theset{hk \suchthat h\in H, k\in K}$
-    
+
     - $H\intersect K = \theset{e} \subset G$
-    
+
     - $H, K \normal G$
-    
+
     > Can relax to only $H\normal G$ to get a semidirect product instead
-  
+
 **Semidirect Products**:
 
-$G = N \semidirect_\phi H$ where 
+$G = N \semidirect_\phi H$ where
 $$
 \phi: H \to \Aut(N) \\
 h \mapsto h(\wait)h^{-1}
@@ -81,11 +81,11 @@ where $C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat
 
 The Correspondence Theorem / 4th Isomorphism Theorem: suppose $N \normal G$, then there exists a correspondence:
 $$
-\left\{ 
+\left\{
 H < G \suchthat N \subseteq H
 \right\}
 \iff
-\left\{ \begin{align*} 
+\left\{ \begin{align*}
 H \suchthat H < \frac G N
 \end{align*}\right\}.
 $$
@@ -108,57 +108,57 @@ Finding the minimal polynomial $m(x)$ of $A$:
 
 1. Find the characteristic polynomial $\chi(x)$; this annihilates $A$ by Cayley-Hamilton. Then $m(x) \divides \chi(x)$, so just test the finitely many products of irreducible factors.
 
-2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$. 
+2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$.
 
 ## Simultaneous Diagonalizability
 
-**Lemma**: 
+**Lemma**:
 $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
 
 > *Proof*: By induction on number of operators
-> 
+>
 > - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
-> - Restrict all $n-1$ operators $A$ to $E_n$. 
+> - Restrict all $n-1$ operators $A$ to $E_n$.
 > - The commuted in $V$ so they commute in $E_n$
 > - **(Lemma)** They were diagonalizable in $V$, so they're diagonalizable in $E_n$
 > - So they're simultaneously diagonalizable by I.H.
 > - But these eigenvectors for the $A_i$ are all in $E_n$, so they're eigenvectors for $A_n$ too.
-> - Can do this for each eigenspace. 
+> - Can do this for each eigenspace.
 > $\qed$
 
 > [Full details here](https://kconrad.math.uconn.edu/blurbs/linmultialg/minpolyandappns.pdf#page=9)
-  
+
 ## Characterizations if Diagonalizability
 
 Let $\min_M(x)$ denote the minimal polynomial of $A$ and $\chi_M(x)$ the characteristic polynomial.
 
-**Lemma**: 
+**Lemma**:
 $$
-\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i} 
-\implies 
-\min_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i} 
+\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i}
+\implies
+\min_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i}
 \text{ where } 1 \leq \ell_i \leq m_i,
 $$
 
-where $\lambda_i$ are eigenvalues of $M$, $m_i$ is the multiplicity of $\lambda_i$. 
+where $\lambda_i$ are eigenvalues of $M$, $m_i$ is the multiplicity of $\lambda_i$.
 
 > *Proof*: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\mu_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\mu_M$: let $\vector v_i$ be the eigenvector associated to $\lambda_i$, so $\vector v_i \neq \vector 0$ and $M\vector v_i = \lambda_i \vector v_i$. Then by linearity $\mu_M(\lambda_i)\vector v_i = \mu_M(M)\vector v_i = \vector 0$, which forces $\mu_M(\lambda_i) = 0$.
 
-**Lemma**: 
-$$M \text{ is diagonalizable over }\FF 
+**Lemma**:
+$$M \text{ is diagonalizable over }\FF
 \iff \\
 \min_M(x) \text{ splits into distinct linear factors over } \FF.
-$$ 
+$$
 
 *(Equivalently, iff all of the roots of $\min_M$ lie in $\FF$)*
 
 > *Proof*:
 >
-> $\implies$: 
+> $\implies$:
 >
-> If $M$ is diagonalizable, its domain has a basis of eigenvectors. So if $\vector x \in \mathrm{domain}(M), \vector v = \sum \alpha_i \vector v_i$ where $\vector v_i$ are eigenvectors. Then $q(x) = \prod_{i=1}^k (x-\lambda_i)$ annihilates $M$, because we have 
+> If $M$ is diagonalizable, its domain has a basis of eigenvectors. So if $\vector x \in \mathrm{domain}(M), \vector v = \sum \alpha_i \vector v_i$ where $\vector v_i$ are eigenvectors. Then $q(x) = \prod_{i=1}^k (x-\lambda_i)$ annihilates $M$, because we have
 $$
-q(M)\vector w = q(M) \sum_i\alpha_i \vector v_i = \sum_i\alpha_i\prod_j(M - I\lambda_j)\vector v_i = \vector 0 
+q(M)\vector w = q(M) \sum_i\alpha_i \vector v_i = \sum_i\alpha_i\prod_j(M - I\lambda_j)\vector v_i = \vector 0
 $$
 where the last equality follows because $(M - I \lambda_i)\vector v_i = \vector 0$ and for each $i$, a factor of $(M - I \lambda_i)$ in the product will annihilate $\vector v_i$.
 By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq n$, so this forces $\deg \mu_M = k$. But then we have two monic polynomials of degree $k$ with the same roots, forcing them to be identical.
@@ -185,7 +185,7 @@ Corresponds to the **Invariant Factor Decomposition** of $T$
 
 **Derivation**:
 
-- Let $k[x] \actson V$ using $T$, take invariant factors $a_i$, 
+- Let $k[x] \actson V$ using $T$, take invariant factors $a_i$,
 
 - Note that $T\actson V$ by multiplication by $x$
 
@@ -196,7 +196,7 @@ Corresponds to the **Invariant Factor Decomposition** of $T$
 - WRT the basis $\overline x$, $T$ then acts via the companion matrix on this summand.
 
 - Each invariant factor corresponds to a block of the RCF.
-  
+
 ### Jordan Canonical Form
 
 Corresponds to the **Elementary Divisor Decomposition** of $T$
@@ -207,12 +207,12 @@ Todo
 **Facts**:
 
 - The following can be read directly off of the invariant factor decomposition:
-  
+
   - The minimal polynomial is the *invariant factor of highest degree*, i.e.
   $$
   \min_T(x) = f_n(x)
   .$$
-  
+
   - The characteristic polynomial is the *product of the invariant factors*, i.e.
   $$
   \chi_T(x) = \prod_{j=1}^n f_j(x)
@@ -220,22 +220,22 @@ Todo
 
 - Both $\min_T(x)$ and $\chi_T(x)$ have roots precisely the eigenvalues of $T$, with potentially different multiplicities.
 
-- Writing 
+- Writing
 \begin{align*}
 \min_A(x) = \prod (x- \lambda_i)^{a_i} \\
-\chi_A(x) = \prod (x- \lambda_i)^{b_i} 
-\end{align*}  
+\chi_A(x) = \prod (x- \lambda_i)^{b_i}
+\end{align*}
 then $a_i \leq b_i$, and
 
     - $a_i$ tells you the size of the **largest** Jordan block associated to $\lambda_i$,
 
     - $b_i$ is the **sum of sizes** of all Jordan blocks associated to $\lambda_i$
-    
+
     - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
 
 - The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
 
-- For characteristic polynomials 
+- For characteristic polynomials
 $$
 p(x) = \det(A - x1))= \det(SNF(A - x1))
 .$$
@@ -246,24 +246,24 @@ p(x) = \det(A - x1))= \det(SNF(A - x1))
 - For a linear operator on a vector space of nonzero finite dimension, TFAE:
 
   - The minimal polynomial is equal to the characteristic polynomial.
-  
+
   - The list of invariant factors has length one.
-  
+
   - The Rational Canonical Form has a single block.
-  
+
   - The operator has a matrix similar to a companion matrix.
-  
+
   - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
 
 
 **Definition:**
 Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff$
-  
+
   - $A,B$ have the same JCF
 
 **Definition:**
 Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
-  
+
   - They have the same rank,
 
   - They have the same invariant factors, *and*
@@ -321,7 +321,7 @@ $$
 $$
 \left[\begin{array}{ll}{1}
  & {0} \\ {0} & {1}
- \end{array}\right] 
+ \end{array}\right]
  \text { and }
  \left[\begin{array}{ll}{1}
   & {1} \\ {0} & {1}
@@ -340,20 +340,20 @@ $$
 # Fields
 
 **Lemma:**
-Let $\phi_n \definedas x^{p^n} - x$. 
+Let $\phi_n \definedas x^{p^n} - x$.
 Then $f(x) \divides \phi_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
 (So $\phi_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.)
 
 > *Proof:*
-> 
+>
 > $\impliedby$:
 >
-> Suppose $f$ is irreducible of degree $d$. 
+> Suppose $f$ is irreducible of degree $d$.
 > Then $f \divides x^{p^d} - x$ (consider $F[x]/\generators{f}$) and $x^{p^d} - x \divides x^{p^n} - x \iff d\divides n$.
 >
 > $\implies$:
-> 
+>
 > - $\alpha \in \GF(p^n) \iff \alpha^{p^n} - \alpha = 0$, so every element is a root of $\phi_n$ and $\deg \min(\alpha, \FF_p) \divides n$ since $\FF_p(\alpha)$ is an intermediate extension.
 > - So if $f$ is an irreducible factor of $\phi_n$, $f$ is the minimal polynomial of some root $\alpha$ of $\phi_n$, so $\deg f \divides n$.
 > $\phi_n'(x) = p^nx^{p^{n-1}} \neq 0$, so $\phi_n$ has distinct roots and thus no repeated factors. So $\phi_n$ is the product of all such irreducible $f$.
