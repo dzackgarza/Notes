@@ -383,7 +383,7 @@ So
 
 Thus
 \begin{align*}
-JCF(A) 
+JCF_\QQ(A) 
 =  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
 =
 \left[\begin{array}{c|ccccc}
