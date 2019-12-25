@@ -182,14 +182,14 @@ $$
 
 Now note
 
-- Each element of $Z(G)$ is in its own conjugacy class, contributing $abs{Z(G)}$ classes to $n$.
+- Each element of $Z(G)$ is in its own conjugacy class, contributing $\abs{Z(G)}$ classes to $n$.
 
-- Every other class has at least 2 elements
-  - Claim: each such class contributes **at least** $\frac 1 2 \abs{G - Z(G)}$.
+- Every other class of elements in $G\setminus Z(G)$ contains at least 2 elements
+  - Claim: each such class contributes **at least** $\frac 1 2 \abs{G \setminus Z(G)}$.
 
 Thus
 \begin{align*}
-n &\leq \abs{Z(G)} + \frac 1 2\abs{G - Z(G)} \\
+n &\leq \abs{Z(G)} + \frac 1 2\abs{G \setminus Z(G)} \\
 &= \abs{Z(G)} + \frac 1 2\abs{G} - \frac 1 2 \abs{Z(G)} \\
 &= \frac 1 2 \abs{G} + \frac 1 2 \abs{Z(G)} \\
 \\ 
