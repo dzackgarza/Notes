@@ -97,6 +97,11 @@ $\qed$
 > $n_p \cong 1 \mod p$
 > $n_p \divides m$.
 
+It turns out that $n_3 = 1$ and $n_5 = 1$, so $G \cong S_3 \cross S_5$ since both subgroups are normal.
+
+There is only one possibility for $S_5$, namely $S_5\cong \ZZ/(5)$.
+
+There are two possibilities for $S_3$, namely $S_3 \cong \ZZ/(3^2)$ and $\ZZ/(3)^2$.
 
 ## 4
 
