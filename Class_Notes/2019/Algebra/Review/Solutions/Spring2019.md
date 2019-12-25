@@ -380,7 +380,18 @@ So
 &\spec(A) = \theset{(\lambda_1 = 0, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} 
 .\end{align*}
 
-So $JCF(A)$ has 
+Thus
 \begin{align*}
-
+JCF(A) 
+= J_{\lambda = 0}^1 \oplus J_{\lambda = -1}^{p-1}
+=
+\left[\begin{array}{c|ccccc}
+0& 0 & 0 & \cdots & 0 & 0 \\ 
+\hline
+0& -1 & 1 & 0 & 0 & 0 \\
+0& 0 & -1 & 1 & 1 & 0 \\
+0& 0 & 0 & \ddots & \ddots & 0 \\
+0& 0 & 0 & \cdots & -1 & 1 \\
+0& 0 & 0 & \cdots & 0 & -1 \\
+\end{array}\right]
 .\end{align*}
