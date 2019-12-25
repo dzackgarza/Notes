@@ -381,7 +381,7 @@ So
 .\end{align*}
 
 It remains to find the size of the eigenspaces corresponding to $\lambda = -1$.
-
+1
 Thus
 \begin{align*}
 JCF(A) 
