@@ -400,4 +400,4 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 
 For $F = \FF_p$, all eigenvalues/vectors still lie in $\FF_p$, but now $-1 = p-1$, $\chi_{A, \FF_p}(x) = (x+1)^p$, and the Jordan blocks may merge. 
 
-But we can check that $(A+I)^2 = pA = 0$, and since $p=0$ in $\FF_p$, $\min_{A, \FF_p}(x) = (x+1)^2$
+But we can check that $(A+I)^2 = pA = 0 \in M_p(\FF_p)$ and $(A+I) \neq 0$, so $\min_{A, \FF_p}(x) = (x+1)^2$.
