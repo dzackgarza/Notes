@@ -77,9 +77,9 @@ Modifying the codomain: **TODO**
 
 **Class Equation**:
 $$
-\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: C_G(x_i)]
+\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: Z(x_i)]
 $$
-where $C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
+where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
 
 ## Isomorphism Theorems
 
