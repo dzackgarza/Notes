@@ -99,6 +99,8 @@ H \suchthat H < \frac G N
   \text{containing $N$}
 } \iff 
 \correspond{
+  \text{Subgroups of the } \\
+  \text{quotient $G/N$}
 }
 .$$
 
