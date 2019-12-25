@@ -371,3 +371,5 @@ A = \left[ \begin{array} { c c c c c }
 $$
 
 By inspection, $[1,1,\cdots, 1]^t$ is an eigenvector with eigenvalue $p-1$.
+
+Note that $A+I$ is a matrix of all ones, so $(A+I)\vector v = \vector v$ for any vector, and $A \vector v = -I \vector v = -1 \vector v$.
