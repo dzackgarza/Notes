@@ -373,7 +373,7 @@ so it suffices to find the eigenvalues of $B$.
 
 The vector $\vector v_1 = \sum \vector e_i$ (the vector of all 1's) is an eigenvector with eigenvalue $\lambda = p$ and $\dim E_{\lambda = p} = 1$.
 
-Similarly, any vector of the form $\vector e_i - \vector e_j$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda = 0$.
+Similarly, any vector of the form $\vector p_i \definedas \vector e_1 - \vector e_{i+1}$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda = 0$.
 This supplies the remaining $p-1$ possibilities.
 Note that this also supplies $p-1$ linearly independent vectors that span the corresponding eigenspace, so $\dim E_{\lambda = 0} = p-1$.
 
@@ -404,7 +404,10 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 The matrix $P$ such that $A = PJP\inv$ will have columns the bases of the generalized eigenspaces. 
 In this case, the generalized eigenspaces are the usual eigenspaces, so
 \begin{align*}
-P = \left[\begin{array}{rrrrr}
+P = 
+[\vector v_1, \vector p_1, \cdots, \vector p_{p-1}] 
+=
+\left[\begin{array}{rrrrr}
 1 & 1 & 1 & 1 & 1 & 1  \\
 1 & -1 & 0 & 0 & 0 & 0 \\
 1 & 0 & -1 & 0 & 0 & 0 \\
@@ -439,21 +442,31 @@ JCF_{\FF_p}(A)
 \end{array}\right]
 .\end{align*}
 
-To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector p_1, \cdots , \vector p_p]$ from part (a) is singular over $\FF_p$, since
+To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector v_1, \vector p_1, \cdots , \vector p_{p-1}]$ from part (a) is singular over $\FF_p$, since
 \begin{align*}
-\vector p_1 + \vector p_2 + \cdots + \vector p_{p-1} 
+\vector v_1 + \vector p_1 + \vector p_2 + \cdots + \vector p_{p-2} 
 &= [p-1, 0, 0, \cdots, 0, 1] \\
 &= [-1, 0,0,\cdots, 0, 1] \\
-&= - \vector p_p
+&= - \vector p_{p-1}
 .\end{align*}
 
 We still have a linearly independent set given by the first $p-1$ columns of $P$, so we can extend this to a basis by finding one linearly independent generalized eigenvector.
 
-Making a choice to solve $(A-I\lambda)\vector x = \vector p_1$ is our only option (the others won't yield solutions).
-This amounts to solving $B\vector x = \vector p_1$, which imposes the condition $\sum x_i = 1$, so we can choose $\vector x = [1, 0, \cdots, 0]$.
+Solving $(A-I\lambda)\vector x = \vector v_1$ is our only option (the others won't yield solutions).
+This amounts to solving $B\vector x = \vector v_1$, which imposes the condition $\sum x_i = 1$, so we can choose $\vector x = [1, 0, \cdots, 0]$.
 
 Thus 
-
+\begin{align*}
+P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] = 
+\left[\begin{array}{rrrrr}
+1 & 1 & 1 & 1 & 1 & 1  \\
+1 & 0 & -1 & 0 & 0 & 0 \\
+1 & 0 & 0 & -1 & 0 & 0 \\
+1 & \vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & 0 & 0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0 & 0 & 0 \\
+\end{array}\right]
+.\end{align*}
 
 
 ## 8
