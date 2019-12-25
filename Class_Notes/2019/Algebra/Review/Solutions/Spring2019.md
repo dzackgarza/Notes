@@ -439,8 +439,10 @@ JCF_{\FF_p}(A)
 \end{array}\right]
 .\end{align*}
 
-To obtain a basis for $E_{\lambda = 0}$, first note that we're considering $A - \lambda I = A + I$, which is the matrix of all ones. 
-This clearly has rank 1 and nullity $p-1$, with basis spanned by $\vector e_i - \vector e_j$.
-We need 1 generalized eigenvector, so we consider $\ker (A+I)^2$, and note that $(A+I)^2$
+To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector p_1, \cdots , \vector p_p]$ from part (a)$ is now singular, since
+
+\vector p_1 + \vector p_2 + \cdots + \vector p_{p-1} =
+ [p-1, 0, 0, \cdots, 0, 1] = [-1, 0,0,\cdots, 0, 1]
+$$
 
 ## 8
