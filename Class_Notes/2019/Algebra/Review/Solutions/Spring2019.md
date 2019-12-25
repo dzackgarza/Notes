@@ -397,4 +397,4 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 \end{array}\right]
 .\end{align*}
 
-For $F = \FF_p$, note that all eigenvalues/vectors lie in $\FF_p$, and $p-1 \neq 0$ in $\FF_p$
+For $F = \FF_p$, all eigenvalues/vectors lie in $\FF_p$, but now $-1 = p-1$ and the Jordan blocks may merge.
