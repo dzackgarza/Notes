@@ -166,7 +166,7 @@ Class equation:
 \abs G = Z(G) + \sum_{\substack{\text{One $x$ from each} \\ \text{conjugacy class}}}[G: Z(x)]
 \end{align*}
 
-where $Z(x) = \theset{g\in G \suchthat gx = xg}$.
+where $Z(x) = \theset{g\in G \suchthat [g, x] = 1}$.
 
 
 
