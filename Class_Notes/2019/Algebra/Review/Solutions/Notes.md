@@ -47,19 +47,19 @@ Definition: A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k
 
 Some facts that are useful when doing Sylow theory:
 
-  - $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$, so coprime order subgroups are disjoint.
+- $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$, so coprime order subgroups are disjoint.
 
-  - $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
+- $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
 
-  - Characterizing direct products: $G \cong H \times K$ when
+- Characterizing direct products: $G \cong H \times K$ when
 
-    - $G = HK = \theset{hk \suchthat h\in H, k\in K}$
+  - $G = HK = \theset{hk \suchthat h\in H, k\in K}$
 
-    - $H\intersect K = \theset{e} \subset G$
+  - $H\intersect K = \theset{e} \subset G$
 
-    - $H, K \normal G$
+  - $H, K \normal G$
 
-    > Can relax to only $H\normal G$ to get a semidirect product instead
+ > Can relax to only $H\normal G$ to get a semidirect product instead
 
 **Semidirect Products**:
 
