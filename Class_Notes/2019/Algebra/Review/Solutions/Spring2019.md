@@ -389,10 +389,10 @@ JCF(A)
 \left[\begin{array}{c|ccccc}
 p-1 & 0 & 0 & \cdots & 0 & 0 \\ 
 \hline
-0& -1 & 1 & 0 & 0 & 0 \\
-0& 0 & -1 & 1 & 0 & 0 \\
+0& -1 & 0 & 0 & 0 & 0 \\
+0& 0 & -1 & 0 & 0 & 0 \\
 0& 0 & 0 & \ddots & \ddots & 0 \\
-0& 0 & 0 & \cdots & -1 & 1 \\
+0& 0 & 0 & \cdots & -1 & 0 \\
 0& 0 & 0 & \cdots & 0 & -1 \\
 \end{array}\right]
 .\end{align*}
