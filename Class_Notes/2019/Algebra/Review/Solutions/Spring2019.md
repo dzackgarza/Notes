@@ -370,6 +370,10 @@ A = \left[ \begin{array} { c c c c c }
 \end{align*}
 $$
 
-By inspection, $[1,1,\cdots, 1]^t$ is an eigenvector with eigenvalue $p-1$.
+By inspection, $[1,1,\cdots, 1]^t$ is an eigenvector with eigenvalue $\lambda_p = p-1$.
 
-Note that $A+I$ is a matrix of all ones, so $(A+I)\vector v = \vector v$ for any vector, and $A \vector v = -I \vector v = -1 \vector v$.
+Note that $A+I$ is a matrix of all ones, which reduces to a single row of ones$, and so $A \vector v = -I \vector v = -1 \vector v$ for at least $p-1$ vectors $\vector v$.
+
+So $\lambda_i = -1$ occurs $p-1$ times.
+
+So $\chi_A(x) = (p-1)(-1)^{p-1}$.
