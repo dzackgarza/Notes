@@ -385,13 +385,13 @@ It remains to find the size of the eigenspaces corresponding to $\lambda = -1$.
 Thus
 \begin{align*}
 JCF(A) 
-= J_{\lambda = p-1}^1 \oplus J_{\lambda = -1}^{p-1}
+=  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
 =
 \left[\begin{array}{c|ccccc}
 p-1 & 0 & 0 & \cdots & 0 & 0 \\ 
 \hline
 0& -1 & 1 & 0 & 0 & 0 \\
-0& 0 & -1 & 1 & 1 & 0 \\
+0& 0 & -1 & 1 & 0 & 0 \\
 0& 0 & 0 & \ddots & \ddots & 0 \\
 0& 0 & 0 & \cdots & -1 & 1 \\
 0& 0 & 0 & \cdots & 0 & -1 \\
