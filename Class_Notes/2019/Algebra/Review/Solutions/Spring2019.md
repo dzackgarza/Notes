@@ -353,7 +353,7 @@ $\qed$
 
 ## 7
 
-> $\det(A-Ix)$ helps find eigenvalues, and $\Tr(A) = \sum \lambda_i$.
+> Work with matrix of all ones instead.
 
 ### a
 
@@ -387,13 +387,13 @@ and geometric multiplicities are preserved, so
 JCF_\QQ(A) 
 =  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
 =
-\left[\begin{array}{c|ccccc}
+\left[\begin{array}{r|r|r|r|r|r}
 p-1 & 0 & 0 & \cdots & 0 & 0 \\ 
 \hline
-0& -1 & 0 & 0 & 0 & 0 \\
-0& 0 & -1 & 0 & 0 & 0 \\
-0& 0 & 0 & \ddots & \ddots & 0 \\
-0& 0 & 0 & \cdots & -1 & 0 \\
+0& -1 & 0 & 0 & 0 & 0 \\ \hline
+0& 0 & -1 & 0 & 0 & 0 \\ \hline
+0& 0 & 0 & \ddots & \ddots & 0 \\ \hline
+0& 0 & 0 & \cdots & -1 & 0 \\ \hline
 0& 0 & 0 & \cdots & 0 & -1 \\
 \end{array}\right]
 .\end{align*}
@@ -402,4 +402,20 @@ For $F = \FF_p$, all eigenvalues/vectors still lie in $\FF_p$, but now $-1 = p-1
 
 But a computation shows that $(A+I)^2 = pA = 0 \in M_p(\FF_p)$ and $(A+I) \neq 0$, so $\min_{A, \FF_p}(x) = (x+1)^2$.
 
-So the largest Jordan block corresponding to $\lambda = 0$ is of size 2, and we can check that $\dim E_{\lambda = 0} = \dim \theset{\vector e_i - \vector e_j \suchthat i\neq j} = p-1$.
+So the largest Jordan block corresponding to $\lambda = 0$ is of size 2, and we can check that $\dim E_{\lambda = 0} = \dim \theset{\vector e_i - \vector e_j \suchthat i\neq j} = p-1$, so there are $p-1$ total Jordan blocks.
+
+Thus
+\begin{align*}
+JCF_{\FF_p}(A) 
+=  J_{\lambda = -1}^{2} \oplus (p-2)J_{\lambda = -1}^1
+=
+\left[\begin{array}{rr|r|r|r|r}
+-1 & 1 & 0 & \cdots & 0 & 0 \\ 
+0& -1 & 0 & 0 & 0 & 0 \\
+\hline
+0& 0 & -1 & 0 & 0 & 0 \\ \hline
+0& 0 & 0 & \ddots & \ddots & 0 \\ \hline
+0& 0 & 0 & \cdots & -1 & 0 \\ \hline
+0& 0 & 0 & \cdots & 0 & -1 \\
+\end{array}\right]
+.\end{align*}
