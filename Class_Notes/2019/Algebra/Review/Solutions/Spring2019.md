@@ -371,4 +371,9 @@ so it suffices to find the eigenvalues of $B$.
 The vector $\vector v_1 = \sum \vector e_i$ (the vector of all 1's) is clearly an eigenvector with eigenvalue $\lambda = 1$.
 
 Similarly, any vector of the form $\vector e_i - \vector e_j$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda = 0$.
-This supplies the remaining $n-1$ 
+This supplies the remaining $p-1$ eigenvalues.
+
+So
+
+\spec(B) = \theset{(\lambda_1 = 1, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)}
+$$
