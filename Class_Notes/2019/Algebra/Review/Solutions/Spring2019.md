@@ -157,6 +157,10 @@ P([g, h] = 1)
 
 $\qed$
 
+## 4
+
+> Class equation:
+
 - State the class equation: see notes.
 - As shown in part 1, $\mathcal{O}_x = \theset{g\actson x \suchthat g\in G} = \theset{h\in G \suchthat ghg\inv = h} = C_G(g)$, and by the class equation\
 $$
