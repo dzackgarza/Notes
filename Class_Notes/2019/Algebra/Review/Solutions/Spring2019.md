@@ -288,59 +288,70 @@ So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $
 
 > Gist: $\not\Longrightarrow: x \not\in J(R) \implies \exists M \suchthat x\not\in M \implies R = \generators{M, x} \implies \exists r \suchthat 1 = m + rx \implies m = 1-rx$ and so $1-rx\not\in R\units$, since otherwise $m$ would be a unit and force $M=R$. Note: not sure why this holds for all $r$..
 
-1. Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$ (and since here $R$ is commutative, $Z(R) = R$). This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
+Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$ (and since here $R$ is commutative, $Z(R) = R$). This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
 
-    To see that $J(R) \subseteq N(R)$ when $R$ is finite, we will first claim that for every $x\in R$, there is some power $n$ such that $x^n$ is idempotent and thus $x^{2n} = x^n$. Then fixing $x \in J(R)$, from part (2), we will have $u = 1+rx$ a unit for any $r\in R$. So we'll pick $r=-x^{n-1}$, so $u = 1-x^n$ will remain a unit. In particular, we'll have
-    $$
-    (1-x^n)^2 = 1 -2x^n + x^{2n} = 1 - 2x^n + x^n = 1 -x^n
-    $$
-    where since $x^n$ is idempotent, $u$ is idempotent as well.
+To see that $J(R) \subseteq N(R)$ when $R$ is finite, we will first claim that for every $x\in R$, there is some power $n$ such that $x^n$ is idempotent and thus $x^{2n} = x^n$. Then fixing $x \in J(R)$, from part (2), we will have $u = 1+rx$ a unit for any $r\in R$. So we'll pick $r=-x^{n-1}$, so $u = 1-x^n$ will remain a unit. In particular, we'll have
+$$
+(1-x^n)^2 = 1 -2x^n + x^{2n} = 1 - 2x^n + x^n = 1 -x^n
+$$
+where since $x^n$ is idempotent, $u$ is idempotent as well.
 
-    We then claim that $y\in R$ is idempotent and $y\neq 0$ $\implies 1-y \not\in R\units$, so that $y$ idempotent and $1-y$ a unit forces $y=0$.
+We then claim that $y\in R$ is idempotent and $y\neq 0$ $\implies 1-y \not\in R\units$, so that $y$ idempotent and $1-y$ a unit forces $y=0$.
 
-    Applying this to $y=x^n$ an idempotent and $u=1-x^n$ a unit, we conclude that $x^n = 0$. But then by definition, $x\in N(R)$. So $J(R) \subseteq N(R)$.
+Applying this to $y=x^n$ an idempotent and $u=1-x^n$ a unit, we conclude that $x^n = 0$. But then by definition, $x\in N(R)$. So $J(R) \subseteq N(R)$.
 
-    We now have two claims to prove:
-    - $R$ finite $\implies \forall x\in R,~ \exists n \suchthat (x^n)^2 = x^{2n} = x^n$
-      - Fix $x$, and consider $x^n$ where $n$ varies. Since $R$ is finite, $\theset{x^n : x\in \NN} \subseteq R$ must also be finite, so there must exist two indices (WLOG) $1 < n_1 < n_2 \in \NN$ such that $x^{n_1} = x^{n_2}$. We can write $n_2 = n_1 + \ell$ for some $\ell$, where we can note that
-      $$
-      x^{n_1} = x^{n_1 + \ell} \implies x^{n_1 + t} = x^{n_1 + \ell + t} ~~ \forall t > 0 \tag{1}
-      $$
+We now have two claims to prove:
 
-        We can than take $t = \ell$ to obtain
-      $$
-      x^{n_1} = x^{n_1 + \ell} = x^{n_1 + t} = x^{n_1 + \ell + t} = x^{n_1 + 2\ell}
-      \implies x^{n_1} = x^{n_1 + k\ell}~~\forall k>0
-      \tag{2}
-      $$
-        which follows inductively.
+- $R$ finite $\implies \forall x\in R,~ \exists n \suchthat (x^n)^2 = x^{2n} = x^n$
 
-        So pick $k>0$ such that $k\ell > n_1$, say $k\ell  = n_1 + t$. Then by (1) we have
-      $$
-      x^{n_1+t} = x^{n_1+\ell + t} \implies x^{k\ell} = x^{k\ell + \ell}
-      $$
+- Fix $x$, and consider $x^n$ where $n$ varies. Since $R$ is finite, $\theset{x^n : x\in \NN} \subseteq R$ must also be finite, so there must exist two indices (WLOG) $1 < n_1 < n_2 \in \NN$ such that $x^{n_1} = x^{n_2}$. We can write $n_2 = n_1 + \ell$ for some $\ell$, where we can note that
+$$
+x^{n_1} = x^{n_1 + \ell} \implies x^{n_1 + t} = x^{n_1 + \ell + t} ~~ \forall t > 0 \tag{1}
+$$
 
-        But now by (2) we can replace $\ell$ by $k \ell$, which is just a multiple of $\ell$, yielding
-      $$
-      x^{k\ell} = x^{k\ell + k\ell} = x^{2(k\ell)} = (x^{k\ell})^2
-      $$
-        and thus $x^{k\ell}$ is idempotent. $\qed$
-    - $x\neq 0 \in R$ idempotent $\implies 1-x$ is not a unit.
-      - Suppose $x \neq 0$ is idempotent. Note that
-      $$
-      x^2 = x \implies (1-x)^2 = 1 - 2x + x^2 = 1 - 2x + x = 1-x,
-      $$
-        so $1-x$ is idempotent as well. Suppose towards a contradiction that $1-x$ is a unit, then there is some $r\in R$ such that $r(1-x) = 1$. But then
-      $$
-      (r(1-x))^2 = 1^2 \implies r^2(1-x)^2 = 1 \implies r^2(1-x) = 1
-      $$
-        and thus
-      $$
-      r r(1-x) = 1 \implies r = 1 \implies (1-x)r = 1-x \implies 1 = 1- x \implies x = 0,
-      $$
-        contradicting $x\neq 0$. So $1-x$ can not be a unit. $\qed$
+We can than take $t = \ell$ to obtain
+$$
+x^{n_1} = x^{n_1 + \ell} = x^{n_1 + t} = x^{n_1 + \ell + t} = x^{n_1 + 2\ell}
+\implies x^{n_1} = x^{n_1 + k\ell}~~\forall k>0
+\tag{2}
+$$
+which follows inductively.
 
-2. Parts
+So pick $k>0$ such that $k\ell > n_1$, say $k\ell  = n_1 + t$. Then by (1) we have
+$$
+x^{n_1+t} = x^{n_1+\ell + t} \implies x^{k\ell} = x^{k\ell + \ell}
+$$
+
+But now by (2) we can replace $\ell$ by $k \ell$, which is just a multiple of $\ell$, yielding
+$$
+x^{k\ell} = x^{k\ell + k\ell} = x^{2(k\ell)} = (x^{k\ell})^2
+$$
+
+and thus $x^{k\ell}$ is idempotent. 
+
+$\qed$
+
+- $x\neq 0 \in R$ idempotent $\implies 1-x$ is not a unit.
+- Suppose $x \neq 0$ is idempotent. Note that
+$$
+x^2 = x \implies (1-x)^2 = 1 - 2x + x^2 = 1 - 2x + x = 1-x,
+$$
+
+so $1-x$ is idempotent as well. Suppose towards a contradiction that $1-x$ is a unit, then there is some $r\in R$ such that $r(1-x) = 1$. But then
+$$
+(r(1-x))^2 = 1^2 \implies r^2(1-x)^2 = 1 \implies r^2(1-x) = 1
+$$
+
+and thus
+$$
+r r(1-x) = 1 \implies r = 1 \implies (1-x)r = 1-x \implies 1 = 1- x \implies x = 0,
+$$
+
+contradicting $x\neq 0$. So $1-x$ can not be a unit. 
+
+$\qed$
+
+1. Parts
   1. Let $A$ be the $p\times p$ matrix in question. We first compute the JCF; then
 $$\begin{align*}
 &\left[ \begin{array} { c c c c c }
