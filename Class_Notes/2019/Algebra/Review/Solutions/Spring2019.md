@@ -378,10 +378,10 @@ So
 \begin{align*}
 &\spec(B) = \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} 
 \iff \\
-&\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} 
-.\end{align*}
+&\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)}
+\end{align*}
 
-Thus
+and geometric multiplicites are preserved, so
 \begin{align*}
 JCF_\QQ(A) 
 =  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
@@ -397,4 +397,6 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 \end{array}\right]
 .\end{align*}
 
-For $F = \FF_p$, all eigenvalues/vectors lie in $\FF_p$, but now $-1 = p-1$ and the Jordan blocks may merge.
+For $F = \FF_p$, all eigenvalues/vectors lie in $\FF_p$, but now $-1 = p-1$ and the Jordan blocks may merge. 
+
+But we can check that $A^2 = pA$, and since $p=0$ in $\FF_p$, w
