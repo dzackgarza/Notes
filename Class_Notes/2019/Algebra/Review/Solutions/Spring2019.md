@@ -355,7 +355,7 @@ $\qed$
 
 > Work with matrix of all ones instead.
 > Eyeball eigenvectors.
-> 
+> Coefficients in minimal polynomial
 
 ### a
 
