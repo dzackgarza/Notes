@@ -378,7 +378,8 @@ So
 \begin{align*}
 &\spec(B) = \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} 
 \iff \\
-&\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)}
+&\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)}\\
+&\implies \chi_{A, \QQ}(x) = (x - (p-1))(x - (-1))^{p-1}
 \end{align*}
 
 and geometric multiplicities are preserved, so
