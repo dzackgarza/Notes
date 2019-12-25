@@ -401,3 +401,5 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 For $F = \FF_p$, all eigenvalues/vectors still lie in $\FF_p$, but now $-1 = p-1$, $\chi_{A, \FF_p}(x) = (x+1)^p$, and the Jordan blocks may merge. 
 
 But a computation shows that $(A+I)^2 = pA = 0 \in M_p(\FF_p)$ and $(A+I) \neq 0$, so $\min_{A, \FF_p}(x) = (x+1)^2$.
+
+So the largest Jordan block corresponding to $\lambda = 0$ is of size 2,
