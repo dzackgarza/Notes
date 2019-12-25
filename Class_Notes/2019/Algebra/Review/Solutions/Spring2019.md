@@ -121,7 +121,7 @@ $$
 P([g, h] = 1) = \frac n {\abs G}
 $$
 
-Define a sample space $\Omega = G^2$ from which we will pick random pairs of elements of $G$, so $\abs{\Omega} = \abs{G}^2$.
+Define a sample space $\Omega = G^2$, so $\abs{\Omega} = \abs{G}^2$.
 
 For each pair $(g, h)$, we will consider $G\actson G$ by $g \actson h = ghg\inv$.
 
