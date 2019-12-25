@@ -146,25 +146,16 @@ $$
 $$
 
 and so 
+\begin{align*}
+P([g, h] = 1)
+&= \frac{\abs{\theset{(g,h) \suchthat [g,h] = 1}}}{\abs{G}^2} \\ \\
+&= \frac{\sum _ { g \in G } \left| X ^ { g } \right|}{\abs{G}^2} \\
+&= \frac{\abs{X/G}\abs{G}}{\abs{G}^2} \\
+&= \frac{n \abs{G}}{\abs{G}^2} \\
+&= \frac n {\abs G}
+.\end{align*}
 
-
-
-  But we can express when two elements commute precisely in terms of fixed points of this action, and thus
-$$
-\abs{\theset{(g,h) \suchthat [g,h] = e}}
-\\ = \sum_{g\in G} \abs{\theset{h\in G \suchthat g \actson h = h}}
-\\ = \sum_{g\in G} \abs{X^g}
-$$
-
-  And so
-$$
-P(g,h \text{ commute} )
-= \frac{\abs{\theset{(g,h) \suchthat [g,h] = e}}}{\abs{G}^2}
-= \frac{\sum _ { g \in G } \left| X ^ { g } \right|}{\abs{G}^2}
-= \frac{\abs{X/G}\abs{G}}{\abs{G}^2}
-= \frac{n \abs{G}}{\abs{G}^2} = \frac n {\abs G}. \qed
-$$
-
+$\qed$
 
 - State the class equation: see notes.
 - As shown in part 1, $\mathcal{O}_x = \theset{g\actson x \suchthat g\in G} = \theset{h\in G \suchthat ghg\inv = h} = C_G(g)$, and by the class equation\
