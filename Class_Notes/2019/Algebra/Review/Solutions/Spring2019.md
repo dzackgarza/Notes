@@ -351,9 +351,15 @@ contradicting $x\neq 0$. So $1-x$ can not be a unit.
 
 $\qed$
 
-1. Parts
-  1. Let $A$ be the $p\times p$ matrix in question. We first compute the JCF; then
-$$\begin{align*}
+## 7
+
+### a
+
+Let $A$ be the $p\times p$ matrix in question. 
+
+We first compute the JCF; then
+$$
+\begin{align*}
 &\left[ \begin{array} { c c c c c }
 { 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\
 { 1 } & { 0 } & { 1 } & { \dots } & { 1 } \\
@@ -371,4 +377,5 @@ $$\begin{align*}
 { 1 } & 0 &  { 1 } & { \dots } & { 1 } & { 1 } \\
 { 0 } & 1 &  { 1 } & { \dots } & { 1 } & { 1 }
 \end{array} \right]  \\ \\
-\end{align*}$$
+\end{align*}
+$$
