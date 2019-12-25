@@ -59,7 +59,7 @@ Some facts that are useful when doing Sylow theory:
 
   - $H, K \normal G$
 
- > Can relax to only $H\normal G$ to get a semidirect product instead
+  > Can relax to only $H\normal G$ to get a semidirect product instead
 
 **Semidirect Products**:
 
@@ -70,6 +70,10 @@ h \mapsto h(\wait)h^{-1}
 $$
 
 Note $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
+
+Modifying the domain: TODO
+
+Modifying the codomain: TODO
 
 **Class Equation**:
 $$
