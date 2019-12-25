@@ -357,23 +357,8 @@ $\qed$
 
 ### a
 
-Let $A$ be the $p\times p$ matrix in question,
+Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in every entry. 
+Noting that $B = A+I$, we have 
+
+B\vector x = \lambda \vector x
 $$
-\begin{align*}
-A = \left[ \begin{array} { c c c c c }
-{ 0 } & { 1 } & { 1 } & { \dots } & { 1 } \\
-{ 1 } & { 0 } & { 1 } & { \dots } & { 1 } \\
-{ 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\
-{ \cdots } & { \cdots } & { \cdots } & { \cdots } & { \ldots } \\
-{ 1 } & { 1 } & { 1 } & { \dots } & { 0 }
-\end{array} \right]
-\end{align*}
-$$
-
-By inspection, $[1,1,\cdots, 1]^t$ is an eigenvector with eigenvalue $\lambda_p = p-1$.
-
-Note that $A+I$ is a matrix of all ones, which reduces to a single row of ones$, and so $A \vector v = -I \vector v = -1 \vector v$ for at least $p-1$ vectors $\vector v$.
-
-So $\lambda_i = -1$ occurs $p-1$ times.
-
-So $\chi_A(x) = (p-1)(-1)^{p-1}$.`2
