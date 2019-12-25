@@ -368,25 +368,25 @@ Noting that $B = A+I$, we have
 
 so it suffices to find the eigenvalues of $B$.
 
-The vector $\vector v_1 = \sum \vector e_i$ (the vector of all 1's) is clearly an eigenvector with eigenvalue $\lambda = 1$.
+The vector $\vector v_1 = \sum \vector e_i$ (the vector of all 1's) is an eigenvector with eigenvalue $\lambda = p$.
 
 Similarly, any vector of the form $\vector e_i - \vector e_j$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda = 0$.
-This supplies the remaining $p-1$ eigenvalues.
+This supplies the remaining $p-1$ possibilities.
 
 So
 \begin{align*}
-&\spec(B) = \theset{(\lambda_1 = 1, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} 
+&\spec(B) = \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} 
 \iff \\
-&\spec(A) = \theset{(\lambda_1 = 0, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} 
+&\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} 
 .\end{align*}
 
 Thus
 \begin{align*}
 JCF(A) 
-= J_{\lambda = 0}^1 \oplus J_{\lambda = -1}^{p-1}
+= J_{\lambda = p-1}^1 \oplus J_{\lambda = -1}^{p-1}
 =
 \left[\begin{array}{c|ccccc}
-0& 0 & 0 & \cdots & 0 & 0 \\ 
+p-1 & 0 & 0 & \cdots & 0 & 0 \\ 
 \hline
 0& -1 & 1 & 0 & 0 & 0 \\
 0& 0 & -1 & 1 & 1 & 0 \\
