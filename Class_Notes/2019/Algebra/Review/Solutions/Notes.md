@@ -95,8 +95,9 @@ H \suchthat H < \frac G N
 \end{align*}\right\}.
 $$
 
-In words, subgroups of $G$ containing $N$ correspond to subgroup of the quotient group $G/N$. This is given by the map $H \mapsto H/N$.
-Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
+In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotient group $G/N$. This is given by the map $H \mapsto H/N$.
+
+> Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
 
 
 # Rings
