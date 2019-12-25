@@ -131,17 +131,12 @@ $\mathcal{O}_g = \theset{hgh\inv \suchthat h\in G}$, which is the conjugacy clas
 What are the fixed points?
 $X^g = \theset{h\in G \suchthat hgh\inv = g}$, which are the elements of $G$ that commute with $g$.
 
-We have Burnside's formula,
+Then $\abs{X/G} = n$, the number of conjugacy classes.
+
+We have Burnside's formula:
 $$
 | X / G | = \frac { 1 } { | G | } \sum _ { g \in G } \left| X ^ { g } \right|,
 $$
-
-Note that $\mathcal{O}_x$ is the conjugacy class of $x$, so $\abs{X/G} = n$.
-
-> And $X^g = C_G(x) = Z(x)$.
-
-
-
 
 We can rearrange Burnside's formula to obtain
 $$
