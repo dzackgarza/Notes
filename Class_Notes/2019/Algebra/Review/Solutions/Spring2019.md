@@ -112,7 +112,7 @@ $\qed$
 
 ## 4
 
-> 
+> Burnside's formula: let $X^g = \theset{x\in x\suchthat g\actson x = x}$, then $\abs G \abs{
 
 Define a sample space $\Omega = G^2$ from which we will pick random pairs of elements of $G$. For each pair $(g, h)$, we will consider $G\actson G$ by $g \actson h = ghg\inv$. Then $g$ and $h$ commute precisely when $ghg = g$, so when $g\actson h = h$ and $h$ is a fixed point under the action of $g$.
 
