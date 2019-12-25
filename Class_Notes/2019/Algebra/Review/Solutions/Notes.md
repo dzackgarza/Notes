@@ -83,7 +83,8 @@ where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \th
 
 ## Isomorphism Theorems
 
-The Correspondence Theorem / 4th Isomorphism Theorem: suppose $N \normal G$, then there exists a correspondence:
+**The Correspondence Theorem / 4th Isomorphism Theorem:** 
+Suppose $N \normal G$, then there exists a correspondence:
 $$
 \left\{
 H < G \suchthat N \subseteq H
