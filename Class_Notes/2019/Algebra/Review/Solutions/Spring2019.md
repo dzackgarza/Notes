@@ -368,11 +368,11 @@ Noting that $B = A+I$, we have
 
 so it suffices to find the eigenvalues of $B$.
 
-The vector $\vector v_1 = \sum \vector e_i$ (the vector of all 1's) is an eigenvector with eigenvalue $\lambda = p$.
+The vector $\vector v_1 = \sum \vector e_i$ (the vector of all 1's) is an eigenvector with eigenvalue $\lambda = p$ and $\dim E_{\lambda = p} = 1$.
 
 Similarly, any vector of the form $\vector e_i - \vector e_j$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda = 0$.
 This supplies the remaining $p-1$ possibilities.
-Note that this also supplies $p-1$ linearly independent vectors that span the corresponding eigenspace.
+Note that this also supplies $p-1$ linearly independent vectors that span the corresponding eigenspace, so $\dim E_{\lambda = 0} = p-1$.
 
 So
 \begin{align*}
@@ -380,8 +380,6 @@ So
 \iff \\
 &\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} 
 .\end{align*}
-
-It remains to find the size of the eigenspaces corresponding to $\lambda = -1$.
 
 Thus
 \begin{align*}
