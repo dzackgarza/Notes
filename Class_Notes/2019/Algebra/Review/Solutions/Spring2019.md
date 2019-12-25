@@ -397,6 +397,6 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 \end{array}\right]
 .\end{align*}
 
-For $F = \FF_p$, all eigenvalues/vectors lie in $\FF_p$, but now $-1 = p-1$ and the Jordan blocks may merge. 
+For $F = \FF_p$, all eigenvalues/vectors still lie in $\FF_p$, but now $-1 = p-1$, $\chi_{A, \FF_p}(x) = (x+1)^p$, and the Jordan blocks may merge. 
 
-But we can check that $A^2 = pA$, and since $p=0$ in $\FF_p$, w
+But we can check that $A^2 = pA$, and since $p=0$ in $\FF_p$, $\min_{A, \FF_p}(x) = (x+1)^2$
