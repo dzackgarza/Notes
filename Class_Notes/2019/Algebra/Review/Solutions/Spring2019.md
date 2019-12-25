@@ -145,6 +145,9 @@ $$
 = \sum _ { g \in G } \left| X ^ { g } \right|
 $$
 
+and so 
+
+
 
   But we can express when two elements commute precisely in terms of fixed points of this action, and thus
 $$
