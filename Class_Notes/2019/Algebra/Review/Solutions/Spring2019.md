@@ -189,7 +189,7 @@ Now note
 
 Thus
 \begin{align*}
-n \leq \abs{Z(G)} + \frac 1 2\abs{G - Z(G)} 
+n &\leq \abs{Z(G)} + \frac 1 2\abs{G - Z(G)} \\
 &= \abs{Z(G)} + \frac 1 2\abs{G} - \frac 1 2 \abs{Z(G)} \\
 &= \frac 1 2 \abs{G} + \frac 1 2 \abs{Z(G)} \\
 \\ 
@@ -201,13 +201,6 @@ n \leq \abs{Z(G)} + \frac 1 2\abs{G - Z(G)}
 
 ## 4
 
-
-We can now use the fact that every element in $Z(G)$ is in its own conjugacy class, contributing $\abs{Z(G)}$ to $n$, while on the other hand every other class has at least two elements, which contributes at least $\frac 1 2 \abs{G - Z(G)}$ to $n$. 
-
-Thus
-$$
-
-$$
 
 1. Parts
   1. Recall that a set is linearly dependent in an $R\dash$module iff $\sum s_i \vector r_i = \vector 0 \implies s_i = 0 ~\forall i$ where $\vector r_i \in R$ and $s_i$ are scalars from the underlying abelian group. However, if $\vector r$ is torsion, then by definition there exists an $s\neq 0$ that annihilates $\vector r$, i.e. $s \vector r = \vector 0$. Since $s\neq 0$, the set $\theset{\vector r}$ can not be linearly independent. But this holds for arbitrary $\vector r \in \tor(M)$, so the largest linearly independent set is $\emptyset$ and thus the rank is zero.
