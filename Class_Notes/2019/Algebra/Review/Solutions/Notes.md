@@ -92,8 +92,10 @@ H < G \suchthat N \subseteq H
 \iff
 \left\{ \begin{align*}
 H \suchthat H < \frac G N
-\end{align*}\right\}.
-$$
+\end{align*}\right\}
+\\
+\theset{\substack{\text{Subgroups of $G$} \\ \text{containing $N$} }}
+.$$
 
 In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotient group $G/N$. This is given by the map $H \mapsto H/N$.
 
