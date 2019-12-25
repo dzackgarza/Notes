@@ -71,9 +71,9 @@ $$
 
 Note $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
-Modifying the domain: TODO
+Modifying the domain: **TODO**
 
-Modifying the codomain: TODO
+Modifying the codomain: **TODO**
 
 **Class Equation**:
 $$
