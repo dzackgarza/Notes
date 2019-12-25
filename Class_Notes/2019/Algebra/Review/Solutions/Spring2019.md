@@ -170,16 +170,20 @@ where $Z(x) = \theset{g\in G \suchthat [g, x] = 1}$.
 
 ### c
 
+As shown in part 1, 
+$$
+\mathcal{O}_x = \theset{g\actson x \suchthat g\in G} = \theset{h\in G \suchthat ghg\inv = h} = C_G(g)
+,$$ 
+and by the class equation
 
+$$
+\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x$ from each} \\ \text{conjugacy class}}}[G: Z(x)]
+$$
 
 ## 4
 
 
-- State the class equation: see notes.
-- As shown in part 1, $\mathcal{O}_x = \theset{g\actson x \suchthat g\in G} = \theset{h\in G \suchthat ghg\inv = h} = C_G(g)$, and by the class equation\
-$$
-\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: C_G(x_i)]
-$$
+- 
 
 We can now use the fact that every element in $Z(G)$ is in its own conjugacy class, contributing $\abs{Z(G)}$ to $n$, while on the other hand every other class has at least two elements, which contributes at least $\frac 1 2 \abs{G - Z(G)}$ to $n$. Thus
 $$
