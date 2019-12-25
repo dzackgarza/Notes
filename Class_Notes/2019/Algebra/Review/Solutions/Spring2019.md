@@ -380,6 +380,8 @@ So
 &\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} 
 .\end{align*}
 
+It remains to find the size of the eigenspaces corresponding to $\lambda = -1$.
+
 Thus
 \begin{align*}
 JCF(A) 
