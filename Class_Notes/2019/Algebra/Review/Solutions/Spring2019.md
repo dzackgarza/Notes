@@ -201,22 +201,24 @@ n &\leq \abs{Z(G)} + \frac 1 2\abs{G \setminus Z(G)} \\
 .\end{align*}
 
 
-## 4
+## 5
 
+### a 
 
-1. Parts
-  1. Recall that a set is linearly dependent in an $R\dash$module iff $\sum s_i \vector r_i = \vector 0 \implies s_i = 0 ~\forall i$ where $\vector r_i \in R$ and $s_i$ are scalars from the underlying abelian group. However, if $\vector r$ is torsion, then by definition there exists an $s\neq 0$ that annihilates $\vector r$, i.e. $s \vector r = \vector 0$. Since $s\neq 0$, the set $\theset{\vector r}$ can not be linearly independent. But this holds for arbitrary $\vector r \in \tor(M)$, so the largest linearly independent set is $\emptyset$ and thus the rank is zero.
+Recall that a set is linearly dependent in an $R\dash$module iff $\sum s_i \vector r_i = \vector 0 \implies s_i = 0 ~\forall i$ where $\vector r_i \in R$ and $s_i$ are scalars from the underlying abelian group. However, if $\vector r$ is torsion, then by definition there exists an $s\neq 0$ that annihilates $\vector r$, i.e. $s \vector r = \vector 0$. Since $s\neq 0$, the set $\theset{\vector r}$ can not be linearly independent. But this holds for arbitrary $\vector r \in \tor(M)$, so the largest linearly independent set is $\emptyset$ and thus the rank is zero.
 
-  2. Let $n = \rank M$, and let $B = \theset{\vector r_i}_{i=1}^n \subseteq R$ be a generating set. The claim is that $B$ descends to a generating set for the quotient module $M' \definedas M/\tor M$, i.e. its image is $R\dash$linearly independent in $M'$ as well. Denote the image $B' = \theset{\vector r_i + \tor M}_{i=1}^n$ as a set of cosets, and suppose toward a contradiction that $B$ is linearly independent in $M$ but $B'$ linearly **dependent** in $M/\tor M$.
+### b
 
-    Then one can exhibit a collection $s_i$ satisfying $\sum s_i (\vector r_i + \tor M) = \vector 0$ where not every $s_i$ is zero.
+Let $n = \rank M$, and let $B = \theset{\vector r_i}_{i=1}^n \subseteq R$ be a generating set. The claim is that $B$ descends to a generating set for the quotient module $M' \definedas M/\tor M$, i.e. its image is $R\dash$linearly independent in $M'$ as well. Denote the image $B' = \theset{\vector r_i + \tor M}_{i=1}^n$ as a set of cosets, and suppose toward a contradiction that $B$ is linearly independent in $M$ but $B'$ linearly **dependent** in $M/\tor M$.
 
-    But $x = 0 \in M/\tor M \iff x \in \tor M$, and so if we have
-    $$\sum s_i (\vector r_i + \tor M) = \sum (s_i\vector r_i + \tor M) = \vector 0 \in M/\tor M,
-    $$
-    this means that $\sum s_i \vector r_i \in \tor R.$ But this means that we can produce an element $\alpha_i\neq 0 \in M$ such that $\alpha_i \sum s_i \vector r_i = \vector 0 \in R$. However, then letting $s_i' = \alpha_i s_i$, we would have $\sum s_i' \vector r_i = \vector 0 \in R$. Since $R$ is an integral domain and we had $\alpha_i\neq 0$ and not all $s_i=0$, there is at least one nonzero $s_i'$ -- but this says that $B$ is linearly *dependent* in $M$, a contradiction. So $B'$ is linearly independent in $M'$, and $\rank M' \leq n$.
+Then one can exhibit a collection $s_i$ satisfying $\sum s_i (\vector r_i + \tor M) = \vector 0$ where not every $s_i$ is zero.
 
-    Conversely, to see that $\rank M' \geq n$, towards a contradiction suppose that $B'' = \theset{\vector x_i + \tor M}_{i=1}^{n+1}$ is linearly independent in $M'$. Then the lift of this to $M$ given by $\theset{\vector x_i}_{i=1}^{n+1}$ is a set of $n+1 > \rank M$ elements, and thus has a linear dependence. But any linear dependence in $M$ descends to a linear dependence in $M'$: with this dependence, we can produce $s_i$ such that $\sum s_i \vector x_i = \vector 0 \in M$ where not all $s_i=0$. But $\vector 0 \in \tor M$, so $\sum s_i \vector x_i \in \tor M$, which exactly means $\sum s_i \vector x_i = 0$ in the quotient $M/\tor M$.
+But $x = 0 \in M/\tor M \iff x \in \tor M$, and so if we have
+$$\sum s_i (\vector r_i + \tor M) = \sum (s_i\vector r_i + \tor M) = \vector 0 \in M/\tor M,
+$$
+this means that $\sum s_i \vector r_i \in \tor R.$ But this means that we can produce an element $\alpha_i\neq 0 \in M$ such that $\alpha_i \sum s_i \vector r_i = \vector 0 \in R$. However, then letting $s_i' = \alpha_i s_i$, we would have $\sum s_i' \vector r_i = \vector 0 \in R$. Since $R$ is an integral domain and we had $\alpha_i\neq 0$ and not all $s_i=0$, there is at least one nonzero $s_i'$ -- but this says that $B$ is linearly *dependent* in $M$, a contradiction. So $B'$ is linearly independent in $M'$, and $\rank M' \leq n$.
+
+Conversely, to see that $\rank M' \geq n$, towards a contradiction suppose that $B'' = \theset{\vector x_i + \tor M}_{i=1}^{n+1}$ is linearly independent in $M'$. Then the lift of this to $M$ given by $\theset{\vector x_i}_{i=1}^{n+1}$ is a set of $n+1 > \rank M$ elements, and thus has a linear dependence. But any linear dependence in $M$ descends to a linear dependence in $M'$: with this dependence, we can produce $s_i$ such that $\sum s_i \vector x_i = \vector 0 \in M$ where not all $s_i=0$. But $\vector 0 \in \tor M$, so $\sum s_i \vector x_i \in \tor M$, which exactly means $\sum s_i \vector x_i = 0$ in the quotient $M/\tor M$.
 
     1. Claim: $M \normal R$ is a free $R\dash$module iff $M$ is principal. From this, we will be able to conclude that if $M$ is non-principal then $M$ is not free as an $R\dash$module.
       1. $\Longrightarrow$: Suppose $M$ is free as an $R\dash$module, and let $B = \theset{\vector m_i}_{i\in I}$ be a basis so we can write $M = \generators{B}$.
@@ -241,7 +243,7 @@ n &\leq \abs{Z(G)} + \frac 1 2\abs{G \setminus Z(G)} \\
       1. Now letting $M \normal R$ be non-principal, we can conclude that $M$ is not a free $R\dash$module. Repeating the argument in (1), since $M$ is not a principal ideal, there are at least 2 generating elements -- however, these are linearly dependent because $R$ is commutative, so the rank is at most 1. The rank is at least 1, because $R$ is an integral domain and letting $m\neq 0$ be one of the generating elements of $M$, we have $\alpha m = 0 \implies \alpha = 0$ and so $\theset{m}$ is linearly independent. So the rank is exactly 1. Finally, $M$ is torsion-free: let $x\in M$, then if $x \in \tor M$, there exists some $r\neq 0\in R$ such that $rx = 0$. Since $R$ is an integral domain, this forces $x=0$, so 0 is the only torsion element and thus $M$ is torsion-free. $\qed$
 
 2. Parts
-  3. Let $0 < I < R$ be a proper ideal, and consider the set $S = \theset{J \suchthat I   \subseteq J < R}$. The claim is that $S$ contains a maximal element $M$. Note $I\in S$, so $S$ is nonempty. Moreover, since $I \neq R$ is proper and all $J\in S$ are proper, any maximal element will also be proper, and thus a maximal ideal of $R$ containing $I$.  We can now use the fact $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
+  2. Let $0 < I < R$ be a proper ideal, and consider the set $S = \theset{J \suchthat I   \subseteq J < R}$. The claim is that $S$ contains a maximal element $M$. Note $I\in S$, so $S$ is nonempty. Moreover, since $I \neq R$ is proper and all $J\in S$ are proper, any maximal element will also be proper, and thus a maximal ideal of $R$ containing $I$.  We can now use the fact $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
 To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$. To see that $\hat C$ is an upper bound for $C$, it suffices to show $C_i \in C \implies C_i \leq \hat C$ in the partial ordering. This amounts to $C_i \in C \implies C_i \subset \hat C$, which is always true because $C_i$ occurs as one of terms in the union defining $\hat C$. To see that $\hat C \in S$, note that $I \subseteq C_i < R$ for every $C_i$, and in particular, since no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper. It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$. Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
 
   2. Parts
