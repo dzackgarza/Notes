@@ -1,8 +1,10 @@
 # Group Theory
 
-Definition: $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
+**Definition:** 
+$[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
-Burnside's Lemma: TODO
+**Burnside's Formula:**
+Let $X^g = \theset{x\in x\suchthat g\actson x = x}$, then $\abs G \abs{X/G} = \sum \abs {X^g}$.
 
 **Lagrange's Theorem**:
 
@@ -31,6 +33,7 @@ Definition: A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k
 
 1. $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
    1. Corollary: $\forall p \divides \abs{G}$, there exists an element of order $p$.
+
    > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
 
 2. All sylow$\dash p$ subgroups are conjugate for a given $p$.
@@ -45,12 +48,18 @@ Definition: A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k
 Some facts that are useful when doing Sylow theory: 
 
   - $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$, so coprime order subgroups are disjoint.
+
   - $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
+  
   - Characterizing direct products: $G \cong H \times K$ when
+    
     - $G = HK = \theset{hk \suchthat h\in H, k\in K}$
+    
     - $H\intersect K = \theset{e} \subset G$
+    
     - $H, K \normal G$
-      - Can relax to only $H\normal G$ to get a semidirect product instead
+    
+    > Can relax to only $H\normal G$ to get a semidirect product instead
   
 **Semidirect Products**:
 
