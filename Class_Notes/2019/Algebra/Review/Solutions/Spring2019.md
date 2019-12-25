@@ -381,3 +381,6 @@ So
 .\end{align*}
 
 So $JCF(A)$ has 
+\begin{align*}
+
+.\end{align*}
