@@ -374,6 +374,10 @@ Similarly, any vector of the form $\vector e_i - \vector e_j$ where $i\neq j$ is
 This supplies the remaining $p-1$ eigenvalues.
 
 So
+\begin{align*}
+&\spec(B) = \theset{(\lambda_1 = 1, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} 
+\iff \\
+&\spec(A) = \theset{(\lambda_1 = 0, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} 
+.\end{align*}
 
-\spec(B) = \theset{(\lambda_1 = 1, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)}
-$$
+So $JCF(A)$ has 
