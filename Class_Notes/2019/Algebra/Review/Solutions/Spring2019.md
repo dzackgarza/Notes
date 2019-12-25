@@ -103,6 +103,13 @@ There is only one possibility for $S_5$, namely $S_5\cong \ZZ/(5)$.
 
 There are two possibilities for $S_3$, namely $S_3 \cong \ZZ/(3^2)$ and $\ZZ/(3)^2$.
 
+Thus
+
+- $G \cong \ZZ/(9) \cross \ZZ/(5)$, or
+- $G \cong \ZZ/(3)^2 \cross \ZZ/(5)$.
+
+$\qed$
+
 ## 4
 
 Define a sample space $\Omega = G^2$ from which we will pick random pairs of elements of $G$. For each pair $(g, h)$, we will consider $G\actson G$ by $g \actson h = ghg\inv$. Then $g$ and $h$ commute precisely when $ghg = g$, so when $g\actson h = h$ and $h$ is a fixed point under the action of $g$.
