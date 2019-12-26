@@ -33,9 +33,11 @@ $$
 g^{\abs G} = e
 .$$
 
-Statement of converse: if $n \divides \abs G$, then there exists $H \leq G$ with $\abs H = n$.
+**Warning:** 
+If $n \divides \abs G$, then there does **not** necessarily exist $H \leq G$ with $\abs H = n$.
 
-Counterexample to converse: $\abs A_4 = 12$ but there is no subgroup of order 6.
+> Key example: 
+> $G = A_4$ is size 12 but there is no subgroup of order 6.
 
 **Cauchy's Theorem**
 
