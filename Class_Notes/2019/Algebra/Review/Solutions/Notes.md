@@ -113,6 +113,9 @@ $n_p = 1 \iff P \normal G$
 **Lemma:**
 Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
+> *Proof:*
+> 
+
 ## Products
 
 **Characterizing direct products**:
