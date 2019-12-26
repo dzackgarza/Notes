@@ -56,7 +56,7 @@ $$
 
 **Orbit-Stabilizer**:
 $$
-\abs{G\cdot x} = 
+\abs{G\cdot x} = [G: G_x]
 $$
 
 ## Sylow Theorems
