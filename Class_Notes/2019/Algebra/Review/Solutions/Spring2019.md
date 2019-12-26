@@ -470,10 +470,7 @@ P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] =
 
 ## 8
 
-> Let $\zeta_n = e^{2\pi i/n}$, then
-$$
-\Phi_{n}(x)=\prod_{k=1 \atop (j, n)=1}^{n}\left(x- \zeta_n^k\right)
-$$
+
 
 
 
