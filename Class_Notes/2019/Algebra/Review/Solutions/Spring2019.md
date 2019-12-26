@@ -229,8 +229,7 @@ $$
 \sum_{i=1}^n s_i (\vector r_i + \tor M) = \vector 0_{M'}
 .$$ 
 
-
-But $x = 0 \in M' \iff x \in \tor(M)$, and so 
+Since $x = 0 \in M' \iff x \in \tor(M)$,
 $$
 \sum_{i=1}^n s_i \vector r_i \in \tor(M) \implies \exists \alpha \neq 0_R \in R \text{ such that }
 \alpha_i \sum s_i \vector r_i = \vector 0_M
