@@ -117,13 +117,13 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
 > *Proof:*
 > Let $H\leq G$ be a $p\dash$subgroup of size $p^k$, and let $H\actson \mathrm{Syl}_p(G) \definedas\theset{S_p^i}$ by conjugation.
-> Denote the orbits $H\cdot S_p^i$, and note that the stabilizer is $H_{S_p^i} = N_H(S_p^i)$.
+> Denote the orbits $H\cdot S_p^i$, and note that the stabilizer is $H_{S_p^i} = H \intersect N_G(S_p^i)$.
 > .
-> By Orbit-Stabilizer, $\abs{H \cdot S_p^i} = [H: N_H(S_p^i)]$.
+> By Orbit-Stabilizer, $\abs{H \cdot S_p^i} = [H: H \intersect N_G(S_p^i)]$.
 > But the RHS must divide $\abs{H} = p^k$, so the size of every orbit must divide $p^k$.
 >
 > But $n_p = \sum_i \abs{H\cdot S_p^i}$ and $p$ does not divide $n_p$, so we must have $\abs{H\cdot S_p^i} = 1$ at least one $i$.
-> But this says $[H: N_H(S_p^i)] = 1$, so $N_H(S_p^i) = H$ and thus $S_p^i \normal H$.
+> But this says $[H: H \intersect N_G(S_p^i)] = 1$, so $H \intersect N_G(S_p^i)= H$ and thus $S_p^i \normal H$.
 
 ## Products
 
