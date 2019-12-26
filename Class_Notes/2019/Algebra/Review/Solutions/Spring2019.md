@@ -495,3 +495,6 @@ We can use the fact that $K = \QQ(i, \sqrt 2)$ and thus $L = \QQ(i, \sqrt 2, \sq
 We can also use the fact that $\QQ(\sqrt 2) \subseteq \QQ(\sqrt[4] 2)$, and so $L = \QQ(i, \sqrt[4] 2)$.
 
 But then
+\begin{align*}
+[L: \QQ] = [L: \QQ(\sqrt[4] 2)] ~[\QQ(\sqrt[4] 2): \QQ] = 2 \cdot 4 = 8
+.\end{align*}
