@@ -290,10 +290,14 @@ $\qed$
 
 ### a
 
-Define 
+Define the set of proper ideals
 $$
 S = \theset{J \suchthat I   \subseteq J < R}
-.$$
+,$$
+
+which is a poset under set inclusion.
+
+Given a chain $J_1 \subseteq \cdots$, there is an upper bound $J \definedas \union J_i$, so Zorn's lemma applies.
 
 ### b
 $\Longrightarrow$:
