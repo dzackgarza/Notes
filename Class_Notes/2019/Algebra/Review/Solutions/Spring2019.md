@@ -469,6 +469,11 @@ P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] =
 .\end{align*}
 
 ## 8
+
+> - Galois theory.
+> - $\deg \Phi_n(x) = \phi(n)$
+> - $\Gal(\QQ(\zeta)/\QQ) \cong \ZZ/(n)\units$
+
 Let $K = \QQ(\zeta)$
 
 ### a
@@ -478,7 +483,6 @@ So $[K: \QQ] = 4$.
 
 ### b
 We have $\Gal(K/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(4)$, which is exactly one subgroup of index 2. 
-Thus there is exactly one intermediate field of degree 2.
-
+Thus there is exactly **one** intermediate field of degree 2.
 
 ### c
