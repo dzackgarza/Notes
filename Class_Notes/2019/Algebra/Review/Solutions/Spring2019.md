@@ -469,14 +469,15 @@ P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] =
 .\end{align*}
 
 ## 8
+Let $K = \QQ(\zeta)$
 
 ### a
 Note that $\zeta$ is a primitive 8th root of unity, so we are looking for the degree of $\Phi_8$, the 8th cyclotomic polynomial, which is $\phi(8) = \phi(2^3) = 2^2(1) = 4$.
 
-So $[\QQ(\zeta): \QQ] = 4$.
+So $[K: \QQ] = 4$.
 
 ### b
-
+We have $\Gal(K/\QQ) \cong \ZZ/(4)\units \cong \ZZ_2$.
 
 
 ### c
