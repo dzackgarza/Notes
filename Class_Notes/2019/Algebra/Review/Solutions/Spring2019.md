@@ -205,7 +205,8 @@ n &\leq \abs{Z(G)} + \frac 1 2\abs{G \setminus Z(G)} \\
 
 ### a
 
-Suppose $M$ has 
+Suppose $\tor(M)$ has rank $n \geq 1$.
+Then let $\vector r$ be 
 
 Recall that a set is linearly dependent in an $R\dash$module iff $\sum s_i \vector r_i = \vector 0 \implies s_i = 0 ~\forall i$ where $\vector r_i \in R$ and $s_i$ are scalars from the underlying abelian group. 
 
