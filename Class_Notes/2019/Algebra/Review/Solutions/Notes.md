@@ -67,7 +67,7 @@ For any $p$, let $\mathrm{Syl}_p(G)$ be the set of Sylow$\dash p$ subgroups of $
 Write
 
 - $\abs{G} = p^n m$ where $(m, p) = 1$,
-- $S_p$ a sylow$\dash p$ subgroup, and
+- $S_p$ a Sylow$\dash p$ subgroup, and
 - $n_p$ the number of sylow$\dash p$ subgroups.
 
 **Definition**:
