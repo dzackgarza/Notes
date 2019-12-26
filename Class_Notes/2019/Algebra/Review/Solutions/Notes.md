@@ -62,11 +62,11 @@ $$
 ## Sylow Theorems
 
 **Notation**:
-For any $p$, let $\mathrm{Syl}_p(G)$ be the set of Sylow$\dash p$ subgroups of $G$, and let $n_p = \abs{\mathrm{Syl}_p(G)}$ the number of such subgroups.
+For any $p$, let $\mathrm{Syl}_p(G)$ be the set of Sylow$\dash p$ subgroups of $G$.
 
 Write
 
-- $\abs{G} = p^n m$ where $m {\notdivides} p$,
+- $\abs{G} = p^n m$ where $(m, p) = 1$,
 - $S_p$ a sylow$\dash p$ subgroup, and
 - $n_p$ the number of sylow$\dash p$ subgroups.
 
