@@ -93,9 +93,9 @@ $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
 ### Sylow 2
 
 All sylow$\dash p$ subgroups are conjugate for a given $p$, i.e.
-
-
-$P_1, P_2$ are Sylow$\dash p$ subgroups, then they are conjugate, i.e. $\exists g\in G \suchthat P_1 = gP_2g^{-1}$.
+\begin{align*}
+S_p^1, S_p^2 \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^1g\inv = S_p^2
+.\end{align*}
 
 **Corollary**: $n_p = 1 \implies P \normal G$
 
