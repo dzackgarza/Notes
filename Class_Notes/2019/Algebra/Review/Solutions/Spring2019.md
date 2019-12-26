@@ -290,22 +290,7 @@ $\qed$
 
 ### a
 
-Let $0 < I < R$ be a proper ideal, and consider the set $S = \theset{J \suchthat I   \subseteq J < R}$.
-The claim is that $S$ contains a maximal element $M$.
-Note $I\in S$, so $S$ is nonempty.
-
-Moreover, since $I \neq R$ is proper and all $J\in S$ are proper, any maximal element will also be proper, and thus a maximal ideal of $R$ containing $I$.
-
-We can now use the fact $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
-
-To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$.
-
-To see that $\hat C$ is an upper bound for $C$, it suffices to show $C_i \in C \implies C_i \leq \hat C$ in the partial ordering.
-This amounts to $C_i \in C \implies C_i \subset \hat C$, which is always true because $C_i$ occurs as one of terms in the union defining $\hat C$.
-
-To see that $\hat C \in S$, note that $I \subseteq C_i < R$ for every $C_i$, and in particular, since no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper.
-It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$.
-Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
+?
 
 ### b
 $\Longrightarrow$:
