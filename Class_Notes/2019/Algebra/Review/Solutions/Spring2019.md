@@ -310,7 +310,6 @@ Then consider $I = \generators{1+x} \normal R$.
 Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in I$ and $I\neq R$
 
 So $I < R$ is proper and thus contained in some maximal proper ideal $\mathfrak{m} < R$ by part (1), and so we have $1+x \in \mathfrak{m}$.
-
 Since $x\in J(R)$, $x\in \mathfrak{m}$ as well.
 
 But then $(1+x) - x = 1 \in \mathfrak{m}$ which forces $\mathfrak{m} = R$.
