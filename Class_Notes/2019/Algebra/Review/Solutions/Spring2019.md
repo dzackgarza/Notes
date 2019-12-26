@@ -316,10 +316,10 @@ But then $(1+x) - x = 1 \in \mathfrak{m}$ which forces $\mathfrak{m} = R$.
 
 $\impliedby$
 
-### c
-$\Longleftarrow$:
+Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$.
 
-Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$. Suppose towards a contradiction that there is a maximal ideal $M$ such that $x\not \in M$ (and thus $x\not\in J(R)$).
+ 
+Suppose towards a contradiction that there is a maximal ideal $M$ such that $x\not \in M$ (and thus $x\not\in J(R)$).
 Then consider $Rx + M = \theset{rx + m \suchthat r\in R, m\in M}$.
 Since $M$ was maximal, $M \subsetneq Rx + M \implies Rx + M = R$.
 So every element in $R$ can be written as $rx + m$ for some $r\in R, m\in M$.
@@ -327,6 +327,8 @@ But $1\in R$, so we have $1 = rx + m$. Since $R$ is a ring and closed under addi
 So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $x\in J(R)$ by definition.
 
 > Gist: $\not\Longrightarrow: x \not\in J(R) \implies \exists M \suchthat x\not\in M \implies R = \generators{M, x} \implies \exists r \suchthat 1 = m + rx \implies m = 1-rx$ and so $1-rx\not\in R\units$, since otherwise $m$ would be a unit and force $M=R$. Note: not sure why this holds for all $r$..
+
+### c
 
 Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$ (and since here $R$ is commutative, $Z(R) = R$). This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
 
