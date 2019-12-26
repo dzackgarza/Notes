@@ -165,6 +165,12 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 
 # Rings
 
+**Lemma:**
+If $I\normal R$ is a proper ideal, then $I$ contains no units.
+
+Proof:
+$r\in R\units \intersect I \implies r\inv r \in I \implies 1\in I \implies x\cdot 1 \in I \quad \forall x\in R$.
+
 **Example Application of Zorn's Lemma:**
 Every proper ideal is contained in a maximal ideal.
 
@@ -182,10 +188,11 @@ $S$ is a poset, ordered by set inclusion, so if we can show that every chain has
 To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$.
 
 **$\hat C$ is an upper bound for $C$:**
-It suffices to show $C_i \in C \implies C_i \leq \hat C$ in the partial ordering.
-This amounts to $C_i \in C \implies C_i \subset \hat C$, which is always true because $C_i$ occurs as one of terms in the union defining $\hat C$.
+This follows because every $C_i \subseteq \hat C$.
 
-To see that $\hat C \in S$, note that $I \subseteq C_i < R$ for every $C_i$, and in particular, since no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper.
+**$\hat C \in S$:**
+Use the fact that $I \subseteq C_i < R$ for every $C_i$, and no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper.
+
 It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$.
 Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
 
