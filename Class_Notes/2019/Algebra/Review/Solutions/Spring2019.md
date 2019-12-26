@@ -477,7 +477,7 @@ Note that $\zeta$ is a primitive 8th root of unity, so we are looking for the de
 So $[K: \QQ] = 4$.
 
 ### b
-We have $\Gal(K/\QQ) \cong \ZZ/(4)\units \cong \ZZ_2$ since $\phi(4) = \phi(2^2) = 2(2-1) = 2$.
+We have $\Gal(K/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(4)$
 
 
 
