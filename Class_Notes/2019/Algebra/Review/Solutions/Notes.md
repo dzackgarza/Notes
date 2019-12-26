@@ -73,6 +73,14 @@ Write
 **Definition**:
 A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k$ for some $k$. If $\abs G < \infty$, it follows that $\abs G = p^j$ for some $j$.
 
+
+Some facts that are useful when doing Sylow theory:
+
+- Coprime order subgroups are disjoint, or more generally $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$.
+
+- The Chinese Remainder theorem: $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
+
+
 ### Sylow 1
 
 $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
@@ -89,19 +97,14 @@ All sylow$\dash p$ subgroups are conjugate for a given $p$.
 
 **Corollary**: $n_p = 1 \implies P \normal G$
 
-1. Numerical Constraints
+### Sylow 3
+Numerical Constraints
 
-   1. $n_p \equiv 0 \mod m$, i.e. $n_p \divides m$
+ 1. $n_p \equiv 0 \mod m$, i.e. $n_p \divides m$
 
-   2. $n_p \equiv 1 \mod p$, i.e. $n_p \not\divides p$.
+ 2. $n_p \equiv 1 \mod p$, i.e. $n_p \not\divides p$.
 
-   3. $n_p = [G : N_G(P)]$ where $N$ is the normalizer.
-
-Some facts that are useful when doing Sylow theory:
-
-- $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$, so coprime order subgroups are disjoint.
-
-- $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
+ 3. $n_p = [G : N_G(P)]$ where $N$ is the normalizer.
 
 ## Products
 
