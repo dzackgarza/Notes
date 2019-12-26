@@ -381,7 +381,7 @@ $$
 \Phi_{n}(x)=\prod_{k=1 \atop (j, n)=1}^{n}\left(x- \zeta_n^k\right)
 $$
 
-Corollary:
+**Corollary:**
 $\deg \Phi_n(x) = \phi(n)$ for $\phi$ the totient function.
 
 
