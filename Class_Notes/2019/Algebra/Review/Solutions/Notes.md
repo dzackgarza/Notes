@@ -372,3 +372,5 @@ Then $f(x) \divides \phi_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 > - $\alpha \in \GF(p^n) \iff \alpha^{p^n} - \alpha = 0$, so every element is a root of $\phi_n$ and $\deg \min(\alpha, \FF_p) \divides n$ since $\FF_p(\alpha)$ is an intermediate extension.
 > - So if $f$ is an irreducible factor of $\phi_n$, $f$ is the minimal polynomial of some root $\alpha$ of $\phi_n$, so $\deg f \divides n$.
 > $\phi_n'(x) = p^nx^{p^{n-1}} \neq 0$, so $\phi_n$ has distinct roots and thus no repeated factors. So $\phi_n$ is the product of all such irreducible $f$.
+
+## Cyclotomic Polynomials
