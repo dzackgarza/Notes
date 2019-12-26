@@ -67,13 +67,14 @@ Characterizing semidirect products:
 
 - $G =  NH$
 - $N \normal G$
-- $H \acston N$ by conjugation via a map $\psi$
+- $H \actson N$ by conjugation via a map $\psi$
 
-$G = N \semidirect_\phi H$ where
-
+$G = N \semidirect_\psi H$ where
+\begin{align*}
 \psi: H \to \Aut(N) \\
 h \mapsto h(\wait)h^{-1}
-$$
+.\end{align*}
+
 
 Note $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
