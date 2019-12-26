@@ -22,9 +22,10 @@ Counterexample to converse: $\abs A_4 = 12$ but there is no subgroup of order 6.
 If $p \divides \abs G$, then $G$ contains an element $g$ of order $p$.
 Corollary: If $p \divides \abs G$, then there is a subgroup $H \leq G$ such that $\abs H = p$. Obtained as $H = <g>$ from above.
 
-**Sylow Theorems**
+## Sylow Theorems
 
-Notation: for any $p$, let $\mathrm{Syl}(p)$ be the set of Sylow$\dash p$ subgroups of $G$, and $n_p = \#\abs{\mathrm{Syl}(p)}$ the number of such subgroups.
+**Notation**: 
+For any $p$, let $\mathrm{Syl}(p)$ be the set of Sylow$\dash p$ subgroups of $G$, and $n_p = \#\abs{\mathrm{Syl}(p)}$ the number of such subgroups.
 
 Write $\abs{G} = p^n m$ where $m {\not\divides} p$, $S_p$ a sylow$\dash p$ subgroup, and $n_p$ the number of sylow$\dash p$ subgroups.
 
@@ -50,7 +51,6 @@ Some facts that are useful when doing Sylow theory:
 - $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$, so coprime order subgroups are disjoint.
 
 - $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
-
 
 ## Products
 
