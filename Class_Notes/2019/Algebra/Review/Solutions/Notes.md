@@ -63,9 +63,15 @@ Some facts that are useful when doing Sylow theory:
 
 **Semidirect Products**:
 
+Characterizing semidirect products:
+
+- $G =  NH$
+- $N \normal G$
+- $H \acston N$ by conjugation via a map $\psi$
+
 $G = N \semidirect_\phi H$ where
-$$
-\phi: H \to \Aut(N) \\
+
+\psi: H \to \Aut(N) \\
 h \mapsto h(\wait)h^{-1}
 $$
 
