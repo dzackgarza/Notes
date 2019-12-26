@@ -400,14 +400,22 @@ This supplies the remaining $p-1$ possibilities.
 Note that this also supplies $p-1$ linearly independent vectors that span the corresponding eigenspace, so $\dim E_{\lambda = 0} = p-1$.
 
 So
-\begin{align*}
-\spec(B) &= \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} \\
-\implies \spec(A) &= \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} \\
-&\implies \chi_{A, \QQ}(x) = (x - (p-1))(x - (-1))^{p-1}
-\end{align*}
 
 and geometric multiplicities are preserved, so
-
+\begin{align*}
+JCF_\QQ(A)
+=  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
+=
+\left[\begin{array}{r|r|r|r|r|r}
+p-1 & 0 & 0 & \cdots & 0 & 0 \\
+\hline
+0& -1 & 0 & 0 & 0 & 0 \\ \hline
+0& 0 & -1 & 0 & 0 & 0 \\ \hline
+0& 0 & 0 & \ddots & \ddots & 0 \\ \hline
+0& 0 & 0 & \cdots & -1 & 0 \\ \hline
+0& 0 & 0 & \cdots & 0 & -1 \\
+\end{array}\right]
+.\end{align*}
 
 The matrix $P$ such that $A = PJP\inv$ will have columns the bases of the generalized eigenspaces.
 In this case, the generalized eigenspaces are the usual eigenspaces, so
