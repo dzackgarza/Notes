@@ -166,6 +166,9 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 # Rings
 
 **Example Application of Zorn's Lemma:**
+Every proper ideal is contained in a maximal ideal
+
+*Proof:*
 
 
 # Modules
