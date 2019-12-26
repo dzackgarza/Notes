@@ -82,7 +82,7 @@ Some useful facts:
 - The Chinese Remainder theorem: $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
 
 
-### Sylow 1
+### Sylow 1 ()
 
 $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
 
@@ -91,7 +91,7 @@ $\forall p \divides \abs{G}$, there exists an element of order $p$.
 
 > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
 
-### Sylow 2
+### Sylow 2 (Conjugates)
 
 All sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
 \begin{align*}
