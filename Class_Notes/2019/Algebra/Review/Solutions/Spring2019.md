@@ -314,8 +314,6 @@ Since $x\in J(R)$, $x\in \mathfrak{m}$ as well.
 
 But then $(1+x) - x = 1 \in \mathfrak{m}$ which forces $\mathfrak{m} = R$.
 
-> Gist: $\Longrightarrow$: WLOG look at $1-rx$ instead. If $1-rx \not\in R\units$, then $1-rx \in M$, some maximal ideal. Then $x\in R\intersect M$, so $rx \in M$, so $(1-rx) + rx = 1 \in M \implies M = R$, a contradiction.
-
 ### c
 $\Longleftarrow$:
 
