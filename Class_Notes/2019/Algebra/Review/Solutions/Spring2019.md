@@ -342,74 +342,36 @@ So $x\in \mathfrak{m}$ for every $\mathfrak{m}$ and thus $x\in J(R)$.
 
 ### c
 
-Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$.
-Since here $R$ is commutative, $Z(R) = R$ amd $N(R) \subseteq J(R)$.
+> - $\mathfrak N(R) = \theset{x\in R \suchthat x^n = 0 \text{ for some } n}$.
+> - $J(R) = \spec_{\text{max}}(R) = \displaystyle\intersect_{\mm \text{ maximal}} \mm$.
 
-> This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
+We want to show $J(R) = \mathfrak N(R)$.
 
-To see that $J(R) \subseteq N(R)$ when $R$ is finite, we will first claim that for every $x\in R$, there is some power $n$ such that $x^n$ is idempotent and thus $x^{2n} = x^n$. 
-Then fixing $x \in J(R)$, from part (2), we will have $u = 1+rx$ a unit for any $r\in R$. 
+$\mathfrak N(R) \subseteq J(R)$:
 
-So we'll pick $r=-x^{n-1}$, so $u = 1-x^n$ will remain a unit. In particular, we'll have
+We'll use the fact $x\in \mathfrak N(R) \implies x^n = 0 \implies 1 + rx$ is a unit $\iff x\in J(R)$ by (b):
 $$
-(1-x^n)^2 = 1 -2x^n + x^{2n} = 1 - 2x^n + x^n = 1 -x^n
-$$
-where since $x^n$ is idempotent, $u$ is idempotent as well.
+\sum_{k=1}^{n-1} (-x)^k = \frac{1 - (-x)^n}{1- (-x)} = (1+x)\inv
+.$$
 
-We then claim that $y\in R$ is idempotent and $y\neq 0$ $\implies 1-y \not\in R\units$, so that $y$ idempotent and $1-y$ a unit forces $y=0$.
+$J(R) \subseteq \mathfrak N(R)$:
 
-Applying this to $y=x^n$ an idempotent and $u=1-x^n$ a unit, we conclude that $x^n = 0$. But then by definition, $x\in N(R)$. So $J(R) \subseteq N(R)$.
+Let $x \in J(R) \setminus \mathfrak N(R)$.
 
-We now have two claims to prove:
+Since $R$ is finite, $x^m = x$ for some $m > 0$.
+Without loss of generality, we can suppose $x^2 = x$ by replacing $x^m$ with $x^{2m}$.
 
-- $R$ finite $\implies \forall x\in R,~ \exists n \suchthat (x^n)^2 = x^{2n} = x^n$
+If $1-x$ is not a unit, then $\generators{1-x}$ is a nontrivial proper ideal, which by (a) is contained in some maximal ideal $\mm$. 
+But then $x\in \mm$ and $1-x \in \mm \implies x + (1-x) = 1 \in \mm$, a contradiction.
 
-- Fix $x$, and consider $x^n$ where $n$ varies. Since $R$ is finite, $\theset{x^n : x\in \NN} \subseteq R$ must also be finite, so there must exist two indices (WLOG) $1 < n_1 < n_2 \in \NN$ such that $x^{n_1} = x^{n_2}$. We can write $n_2 = n_1 + \ell$ for some $\ell$, where we can note that
-$$
-x^{n_1} = x^{n_1 + \ell} \implies x^{n_1 + t} = x^{n_1 + \ell + t} ~~ \forall t > 0 \tag{1}
-$$
+So $1-x$ is a unit, so let $u = (1-x)\inv$.
 
-We can than take $t = \ell$ to obtain
-$$
-x^{n_1} = x^{n_1 + \ell} = x^{n_1 + t} = x^{n_1 + \ell + t} = x^{n_1 + 2\ell}
-\implies x^{n_1} = x^{n_1 + k\ell}~~\forall k>0
-\tag{2}
-$$
-which follows inductively.
-
-So pick $k>0$ such that $k\ell > n_1$, say $k\ell  = n_1 + t$. Then by (1) we have
-$$
-x^{n_1+t} = x^{n_1+\ell + t} \implies x^{k\ell} = x^{k\ell + \ell}
-$$
-
-But now by (2) we can replace $\ell$ by $k \ell$, which is just a multiple of $\ell$, yielding
-$$
-x^{k\ell} = x^{k\ell + k\ell} = x^{2(k\ell)} = (x^{k\ell})^2
-$$
-
-and thus $x^{k\ell}$ is idempotent.
-
-$\qed$
-
-- $x\neq 0 \in R$ idempotent $\implies 1-x$ is not a unit.
-- Suppose $x \neq 0$ is idempotent. Note that
-$$
-x^2 = x \implies (1-x)^2 = 1 - 2x + x^2 = 1 - 2x + x = 1-x,
-$$
-
-so $1-x$ is idempotent as well. Suppose towards a contradiction that $1-x$ is a unit, then there is some $r\in R$ such that $r(1-x) = 1$. But then
-$$
-(r(1-x))^2 = 1^2 \implies r^2(1-x)^2 = 1 \implies r^2(1-x) = 1
-$$
-
-and thus
-$$
-r r(1-x) = 1 \implies r = 1 \implies (1-x)r = 1-x \implies 1 = 1- x \implies x = 0,
-$$
-
-contradicting $x\neq 0$. So $1-x$ can not be a unit.
-
-$\qed$
+Then
+\begin{align*}
+(1-x)x &= x - x^2 = x - x = 0 \\
+&\implies u (1-x)x = x = 0 \\
+&\implies x=0
+.\end{align*}
 
 ## 7
 
@@ -421,10 +383,10 @@ $\qed$
 ### a
 
 Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in every entry.
+
 Noting that $B = A+I$, we have
 \begin{align*}
-&B\vector x
-= \lambda \vector x \\
+&B\vector x = \lambda \vector x \\
 &\iff (A+I) \vector x = \lambda \vector x \\
 &\iff A \vector x = (\lambda - 1) \vector x
 ,\end{align*}
@@ -439,35 +401,19 @@ Note that this also supplies $p-1$ linearly independent vectors that span the co
 
 So
 \begin{align*}
-&\spec(B) = \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)}
-\iff \\
-&\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)}\\
+\spec(B) &= \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} \\
+\implies \spec(A) &= \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} \\
 &\implies \chi_{A, \QQ}(x) = (x - (p-1))(x - (-1))^{p-1}
 \end{align*}
 
 and geometric multiplicities are preserved, so
-\begin{align*}
-JCF_\QQ(A)
-=  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
-=
-\left[\begin{array}{r|r|r|r|r|r}
-p-1 & 0 & 0 & \cdots & 0 & 0 \\
-\hline
-0& -1 & 0 & 0 & 0 & 0 \\ \hline
-0& 0 & -1 & 0 & 0 & 0 \\ \hline
-0& 0 & 0 & \ddots & \ddots & 0 \\ \hline
-0& 0 & 0 & \cdots & -1 & 0 \\ \hline
-0& 0 & 0 & \cdots & 0 & -1 \\
-\end{array}\right]
-.\end{align*}
+
 
 The matrix $P$ such that $A = PJP\inv$ will have columns the bases of the generalized eigenspaces.
 In this case, the generalized eigenspaces are the usual eigenspaces, so
 \begin{align*}
-P =
-[\vector v_1, \vector p_1, \cdots, \vector p_{p-1}]
-=
-\left[\begin{array}{rrrrr}
+P = [\vector v_1, \vector p_1, \cdots, \vector p_{p-1}] =
+\left[\begin{array}{rrrrrr}
 1 & 1 & 1 & 1 & 1 & 1  \\
 1 & -1 & 0 & 0 & 0 & 0 \\
 1 & 0 & -1 & 0 & 0 & 0 \\
@@ -476,7 +422,6 @@ P =
 1 & 0 & 0 & 0 & 0 & -1 \\
 \end{array}\right]
 .\end{align*}
-
 
 ### b
 
@@ -490,8 +435,7 @@ Thus
 \begin{align*}
 JCF_{\FF_p}(A)
 =  J_{\lambda = -1}^{2} \oplus (p-2)J_{\lambda = -1}^1
-=
-\left[\begin{array}{rr|r|r|r|r}
+= \left[\begin{array}{rr|r|r|r|r}
 -1 & 1 & 0 & \cdots & 0 & 0 \\
 0& -1 & 0 & 0 & 0 & 0 \\
 \hline

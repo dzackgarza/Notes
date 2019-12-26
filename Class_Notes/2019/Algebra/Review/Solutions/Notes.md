@@ -21,16 +21,16 @@ For a group $G$ acting on a set $X$,
 $H \leq G \implies \abs H \divides \abs G$.
 
 
-**Corollary**: 
-The order of every element divides the size of $G$, i.e. 
+**Corollary**:
+The order of every element divides the size of $G$, i.e.
 $$
 g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 .$$
 
-**Warning:** 
+**Warning:**
 If $n \divides \abs G$, then there does **not** necessarily exist $H \leq G$ with $\abs H = n$.
 
-> Key example: 
+> Key example:
 > $G = A_4$ is size 12 but there is no subgroup of order 6.
 
 **Cauchy's Theorem**:
@@ -61,35 +61,35 @@ $$
 
 ## Sylow Theorems
 
-**Notation**: 
+**Notation**:
 For any $p$, let $\mathrm{Syl}(p)$ be the set of Sylow$\dash p$ subgroups of $G$, and $n_p = \#\abs{\mathrm{Syl}(p)}$ the number of such subgroups.
 
-Write 
+Write
 
-- $\abs{G} = p^n m$ where $m {\notdivides} p$, 
-- $S_p$ a sylow$\dash p$ subgroup, and 
+- $\abs{G} = p^n m$ where $m {\notdivides} p$,
+- $S_p$ a sylow$\dash p$ subgroup, and
 - $n_p$ the number of sylow$\dash p$ subgroups.
 
-**Definition**: 
+**Definition**:
 A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k$ for some $k$. If $\abs G < \infty$, it follows that $\abs G = p^j$ for some $j$.
 
 1. $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
-   
+
   - **Corollary**: $\forall p \divides \abs{G}$, there exists an element of order $p$.
 
      > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
 
 2. All sylow$\dash p$ subgroups are conjugate for a given $p$.
    > If $P_1, P_2$ are Sylow$\dash p$ subgroups, then they are conjugate, i.e. $\exists g\in G \suchthat P_1 = gP_2g^{-1}$.
-   
+
    - Corollary: $n_p = 1 \implies P \normal G$
 
 3. Numerical Constraints
-   
+
    1. $n_p \equiv 0 \mod m$, i.e. $n_p \divides m$
-   
+
    2. $n_p \equiv 1 \mod p$, i.e. $n_p \not\divides p$.
-   
+
    3. $n_p = [G : N_G(P)]$ where $N$ is the normalizer.
 
 Some facts that are useful when doing Sylow theory:
@@ -100,7 +100,7 @@ Some facts that are useful when doing Sylow theory:
 
 ## Products
 
-**Characterizing direct products**: 
+**Characterizing direct products**:
 $G \cong H \times K$ when
 
 - $G = HK = \theset{hk \suchthat h\in H, k\in K}$
@@ -117,7 +117,7 @@ $G = N \semidirect_\psi H$ when
 - $G =  NH$
 
 - $N \normal G$
-  
+
 - $H \actson N$ by conjugation via a map
 \begin{align*}
 \psi: H \to \Aut(N) \\
@@ -127,17 +127,17 @@ h \mapsto h(\wait)h^{-1}
 
 > Note: $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
-Modifying the domain: 
+Modifying the domain:
 **TODO**
 
-Modifying the codomain: 
+Modifying the codomain:
 **TODO**
 
 
 
 ## Isomorphism Theorems
 
-**The Correspondence Theorem / 4th Isomorphism Theorem:** 
+**The Correspondence Theorem / 4th Isomorphism Theorem:**
 Suppose $N \normal G$, then there exists a correspondence:
 $$
 \left\{
@@ -149,9 +149,9 @@ H \suchthat H < \frac G N
 \end{align*}\right\}
 \\
 \correspond{
-  \text{Subgroups of $G$} \\ 
+  \text{Subgroups of $G$} \\
   \text{containing $N$}
-} \iff 
+} \iff
 \correspond{
   \text{Subgroups of the } \\
   \text{quotient $G/N$}
@@ -165,46 +165,145 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 
 # Rings
 
+## Definitions and Basics
+
+**Definition:**
+$\mathfrak{p}$ is a **prime** ideal $\iff ab\in \mathfrak p \implies a\in \mathfrak p$ or $b\in \mathfrak p$.
+
+**Definition:**
+$\spec(R) = \theset{\pr \normal R \suchthat \pr \text{ is prime}}$ is the **spectrum** of $R$.
+
+**Definition:**
+$\mathfrak m$ is **maximal** $\iff I \normalneq R \implies I \subseteq \mathfrak m$.
+
+**Definition:**
+$\spec_{\text{max}}(R) = \theset{\mm \normal R \suchthat \mm \text{ is maximal}}$ is the **max-spectrum** of $R$.
+
+> Note: nonstandard notation / definition.
+
+**Lemma:**
+Field $\implies$ Euclidean Domain $\implies$ PID $\implies$ UFD $\implies$ Integral Domain.
+
+## Maximal and Prime Ideals
+
+**Lemma:**
+Maximal $\implies$ prime, but generally not the converse.
+
+> *Counterexample*: $(0) \in \ZZ$ is prime since $\ZZ$ is a domain, but not maximal since it is properly contained in any other ideal.
+
+> *Proof:*
+> Suppose $\mm$ is maximal, $ab\in \mm$, and $b\not\in \mm$.
+> Then there is a containment of ideals $\mm \subsetneq \mm + (b) \implies \mm + (b) = R$.
+>
+> So
+$$
+1 = m + rb \implies a = am + r(ab)
+,$$
+> but $am\in \mm$ and $ab\in \mm \implies a\in \mm$.
+>
+> $\qed$
+
+**Lemma:**
+If $x$ is not a unit, then $x$ is contained in some maximal ideal $\mm$.
+
+> *Proof:*
+> Zorn's lemma.
+
+**Lemma:**
+$R/\mm$ is a field $\iff \mm$ is maximal.
+
+**Lemma:**
+$R/\pr$ is an integral domain $\iff \pr$ is prime.
+
+
+## Nilradical and Jacobson Radical
+
+**Definition:**
+$\mathfrak{N} \definedas \theset{x\in R \suchthat x^n=0\text{ for some } n}$ is the **nilradical** of $R$.
+
+**Lemma:**
+The nilradical is the intersection of all **prime** ideals, i.e.
+$$
+\mathfrak{N}(R) = \intersect_{\mathfrak{p} \in \spec(R)} \mathfrak{p}
+$$
+
+> *Proof:*
+> 
+> $\mathfrak{N} \subseteq \intersect \mathfrak{p}$:
+> $x \in \mathfrak{N} \implies x^n = 0 \in \mathfrak p \implies x\in \mathfrak{p} \text{ or } x^{n-1}\in\mathfrak p$.
+>
+> $\mathfrak{N}^c \subseteq \union \mathfrak{p}^c$:
+> Define $S = \theset{I\normal R \suchthat a^n\not\in I \text{ for any } n}$.
+> Then apply Zorn's lemma to get a maximal ideal $\mm$, and maximal $\implies$ prime.
+
+**Lemma:**
+$R/\mathfrak N(R)$ has no nonzero nilpotent elements.
+
+> *Proof:*
+\begin{align*}
+a + \mathfrak N(R)\text{ nilpotent } &\implies (a+ \mathfrak N(R))^n \definedas a^n + \mathfrak N(R)= \mathfrak N(R) \\
+&\implies a^n \in \mathfrak N(R) \\
+&\implies \exists \ell \text{ such that } (a^n)^\ell = 0 \\
+&\implies a\in \mathfrak N(R)
+.\end{align*}
+
+**Definition:**
+The **Jacobson radical** is the intersection of all **maximal** ideals, i.e.
+$$
+J(R) = \intersect_{\mm \in \spec_{\text{max}}} \mm
+$$
+
+**Lemma:**
+$\mathfrak N(R) \subseteq J(R)$.
+
+> *Proof:*
+> Maximal $\implies$ prime, and so if $x$ is in every prime ideal, it is necessarily in every maximal ideal as well.
+
+
+## Zorn's Lemma
+
+**Lemma**:
+A field has no nontrivial proper ideals.
+
 **Lemma:**
 If $I\normal R$ is a proper ideal $\iff I$ contains no units.
 
-*Proof:*
-$r\in R\units \intersect I \implies r\inv r \in I \implies 1\in I \implies x\cdot 1 \in I \quad \forall x\in R$.
+> *Proof:*
+> $r\in R\units \intersect I \implies r\inv r \in I \implies 1\in I \implies x\cdot 1 \in I \quad \forall x\in R$.
 
 **Lemma:**
-If $I_1 \subseteq I_2 \substeq \cdots$ are ideals then $\union_j I_j$ is an ideal.
+If $I_1 \subseteq I_2 \subseteq \cdots$ are ideals then $\union_j I_j$ is an ideal.
 
 **Example Application of Zorn's Lemma:**
 Every proper ideal is contained in a maximal ideal.
 
-*Proof:*
-Let $0 < I < R$ be a proper ideal, and consider the set 
+> *Proof:*
+> Let $0 < I < R$ be a proper ideal, and consider the set
 $$
 S = \theset{J \suchthat I   \subseteq J < R}
 .$$
-
-Note $I\in S$, so $S$ is nonempty.
-The claim is that $S$ contains a maximal element $M$.
-
-$S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
-
-Let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$ and define $\hat C = \union_i C_i$.
-
-**$\hat C$ is an upper bound for $C$:**
-
-This follows because every $C_i \subseteq \hat C$.
-
-**$\hat C$ is in $S$:**
-
-Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ contains a unit, $\hat C$ doesn't contain a unit, and is thus proper.
-
-$\qed$
-
+>
+> Note $I\in S$, so $S$ is nonempty.
+> The claim is that $S$ contains a maximal element $M$.
+>
+> $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
+>
+> Let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$ and define $\hat C = \union_i C_i$.
+> 
+> **$\hat C$ is an upper bound for $C$:**
+>
+> This follows because every $C_i \subseteq \hat C$.
+>
+> **$\hat C$ is in $S$:**
+>
+> Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ contains a unit, $\hat C$ doesn't contain a unit, and is thus proper.
+> 
+> $\qed$
 
 # Modules
 
-**Lemma:** 
-$I \normal R$ is a free $R\dash$module iff $I$ is a principal ideal. 
+**Lemma:**
+$I \normal R$ is a free $R\dash$module iff $I$ is a principal ideal.
 
 $\implies$:
 
@@ -224,13 +323,13 @@ $$
 
 However, this exhibits a linear dependence between $\vector m_1$ and $\vector m_2$, namely that there exist $\alpha_1, \alpha_2 \neq 0_R$ such that $\alpha_1 \vector m_1 + \alpha_2 \vector m_2 = \vector 0_M$; this follows because $M \subset R$ means that we can take $\alpha_1 = -m_2, \alpha_2 = m_1$. This contradicts the assumption that $B$ was a basis, so we must have $\abs{B} = 1$ and so $B = \theset{\vector m}$ for some $\vector m \in I$. But then $M = \generators{B} = \generators{\vector m}$ is generated by a single element, so $M$ is principal.
 
-$\impliedby$: 
+$\impliedby$:
 
-Suppose $M\normal R$ is principal, so $M = \generators{\vector m}$ for some $\vector m \neq \vector{0}_M \in M \subset R$. 
+Suppose $M\normal R$ is principal, so $M = \generators{\vector m}$ for some $\vector m \neq \vector{0}_M \in M \subset R$.
 
 Then $x\in M \implies x = \alpha\vector m$ for some element $\alpha\in R$ and we just need to show that $\alpha\vector m = \vector 0_M \implies \alpha = 0_R$ in order for $\theset{\vector m}$ to be a basis for $M$, making $M$ a free $R\dash$module.
 
-But since $M \subset R$, we have $\alpha, m \in R$ and $\vector 0_M = 0_R$, and since $R$ is an integral domain, we have $\alpha m = 0_R \implies \alpha = 0_R$ or $m = 0_R$. 
+But since $M \subset R$, we have $\alpha, m \in R$ and $\vector 0_M = 0_R$, and since $R$ is an integral domain, we have $\alpha m = 0_R \implies \alpha = 0_R$ or $m = 0_R$.
 
 Since $m \neq 0_R$, this forces $\alpha = 0_R$, which allows $\theset{m}$ to be a linearly independent set and thus a basis for $M$ as an $R\dash$module.
 
@@ -507,7 +606,7 @@ $\deg \Phi_n(x) = \phi(n)$ for $\phi$ the totient function.
 
 **Computing $\Phi_n$:**
 
-1. 
+1.
 $$
 \Phi_{n}(z)=\prod_{d | n, d>0}\left(z^{d}-1\right)^{\mu\left(\frac{n}{d}\right)}
 $$
@@ -516,7 +615,7 @@ $$
 \mu(n) \equiv\left\{\begin{array}{ll}{0} & {\text { if } n \text { has one or more repeated prime factors }} \\ {1} & {\text { if } n=1} \\ {(-1)^{k}} & {\text { if } n \text { is a product of } k \text { distinct primes, }}\end{array}\right.
 $$
 
-2. 
+2.
 $$
 x^{n}-1=\prod_{d | n} \Phi_{d}(x) \implies \Phi_n(x) = \frac{x^n-1}{\prod_{d | n \atop d < n} \Phi_{d}(x)},
 $$
@@ -542,10 +641,10 @@ $\Gal(\QQ(\zeta_n)/\QQ) \cong \ZZ/(n)\units$ and is generated by maps of the for
 **Theorem:**
 $\GF(p^n)$ is obtained as $\displaystyle\frac{\FF_p}{\generators{f}}$ where $f \in \FF_p[x]$ is irreducible of degree $n$.
 
-**Eisenstein's Criterion:** 
-If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ such that 
+**Eisenstein's Criterion:**
+If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ such that
 
-- $p\notdivides a_n$ and 
-- $p^2 \notdivides a_0$ but $p \divides a_{i\neq n}$, 
-   
+- $p\notdivides a_n$ and
+- $p^2 \notdivides a_0$ but $p \divides a_{i\neq n}$,
+
 then $f$ is irreducible.
