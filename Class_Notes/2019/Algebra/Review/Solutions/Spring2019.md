@@ -224,7 +224,7 @@ Denote the image $B' = \theset{\vector r_i + \tor(M)}_{i=1}^n$ and suppose towar
 
 Then there exist $s_i$ such that $\sum s_i (\vector r_i + \tor M) = \vector 0_{M'}$ where not all $s_i$ are zero.
 
-But $x = 0 \in M' \iff x \in \tor M$, and so 
+But $x = 0 \in M' \iff x \in \tor(M)$, and so 
 $$
 \sum s_i \vector r_i \in \tor M
 .$$
