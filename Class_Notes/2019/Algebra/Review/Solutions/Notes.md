@@ -8,8 +8,7 @@ $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 - $G\cdot x = \theset{g\actson x \suchthat g\in G}$ is the orbit
 - $G_x = \theset{g\in G \suchthat g\actson x = x}$ is the stabilizer
 - $X/G$ is the set of orbits
-
-> - Notation: $X^g = \theset{x\in X \suchthat g\actson x = x}$
+- $X^g = \theset{x\in X \suchthat g\actson x = x}$ are the fixed points
 
 ## Counting Theorems
 
