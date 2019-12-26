@@ -256,8 +256,7 @@ which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$
 
 ### c
 
-
-Now letting $M \normal R$ be non-principal, we can conclude that $M$ is not a free $R\dash$module. 
+If $M \normal R$ is not principal, then $M$ is not a free $R\dash$module.
 
 Repeating the argument in (1), since $M$ is not a principal ideal, there are at least 2 generating elements -- however, these are linearly dependent because $R$ is commutative, so the rank is at most 1. 
 
