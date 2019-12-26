@@ -216,7 +216,11 @@ $\qed$
 
 ### b
 
-Let $n = \rank M$, and let $B = \theset{\vector r_i}_{i=1}^n \subseteq R$ be a generating set. The claim is that $B$ descends to a generating set for the quotient module $M' \definedas M/\tor M$, i.e. its image is $R\dash$linearly independent in $M'$ as well. Denote the image $B' = \theset{\vector r_i + \tor M}_{i=1}^n$ as a set of cosets, and suppose toward a contradiction that $B$ is linearly independent in $M$ but $B'$ linearly **dependent** in $M/\tor M$.
+Let $n = \rank M$, and let $B = \theset{\vector r_i}_{i=1}^n \subseteq R$ be a generating set. 
+
+The claim is that $B$ descends to a generating set for the quotient module $M' \definedas M/\tor(M)$, i.e. its image is $R\dash$linearly independent in $M'$ as well. 
+
+Denote the image $B' = \theset{\vector r_i + \tor(M)}_{i=1}^n$ as a set of cosets, and suppose toward a contradiction that $B$ is linearly independent in $M$ but $B'$ linearly **dependent** in $M/\tor M$.
 
 Then one can exhibit a collection $s_i$ satisfying $\sum s_i (\vector r_i + \tor M) = \vector 0$ where not every $s_i$ is zero.
 
