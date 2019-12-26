@@ -382,54 +382,7 @@ Then
 
 ### a
 
-Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in every entry.
 
-
-
-so it suffices to find the eigenvalues of $B$.
-
-The vector $\vector v_1 = \sum \vector e_i$ (the vector of all 1's) is an eigenvector with eigenvalue $\lambda = p$ and $\dim E_{\lambda = p} = 1$.
-
-Similarly, any vector of the form $\vector p_i \definedas \vector e_1 - \vector e_{i+1}$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda = 0$.
-This supplies the remaining $p-1$ possibilities.
-Note that this also supplies $p-1$ linearly independent vectors that span the corresponding eigenspace, so $\dim E_{\lambda = 0} = p-1$.
-
-So
-\begin{align*}
-\spec(B) &= \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} \\
-\implies \spec(A) &= \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} \\
-&\implies \chi_{A, \QQ}(x) = (x - (p-1))(x - (-1))^{p-1}
-\end{align*}
-
-and geometric multiplicities are preserved, so
-\begin{align*}
-JCF_\QQ(A)
-=  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
-=
-\left[\begin{array}{r|r|r|r|r|r}
-p-1 & 0 & 0 & \cdots & 0 & 0 \\
-\hline
-0& -1 & 0 & 0 & 0 & 0 \\ \hline
-0& 0 & -1 & 0 & 0 & 0 \\ \hline
-0& 0 & 0 & \ddots & \ddots & 0 \\ \hline
-0& 0 & 0 & \cdots & -1 & 0 \\ \hline
-0& 0 & 0 & \cdots & 0 & -1 \\
-\end{array}\right]
-.\end{align*}
-
-The matrix $P$ such that $A = PJP\inv$ will have columns the bases of the generalized eigenspaces.
-In this case, the generalized eigenspaces are the usual eigenspaces, so
-\begin{align*}
-P = [\vector v_1, \vector p_1, \cdots, \vector p_{p-1}] =
-\left[\begin{array}{rrrrrr}
-1 & 1 & 1 & 1 & 1 & 1  \\
-1 & -1 & 0 & 0 & 0 & 0 \\
-1 & 0 & -1 & 0 & 0 & 0 \\
-1 & 0 & 0 & -1 & 0 & 0 \\
-1 & \vdots & \vdots & \vdots & \ddots & \vdots\\
-1 & 0 & 0 & 0 & 0 & -1 \\
-\end{array}\right]
-.\end{align*}
 
 ### b
 
