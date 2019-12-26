@@ -314,6 +314,8 @@ Since $x\in J(R)$, $x\in \mathfrak{m}$ as well.
 
 But then $(1+x) - x = 1 \in \mathfrak{m}$ which forces $\mathfrak{m} = R$.
 
+$\impliedby$
+
 ### c
 $\Longleftarrow$:
 
