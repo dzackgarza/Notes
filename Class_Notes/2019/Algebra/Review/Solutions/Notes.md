@@ -105,9 +105,9 @@ $n_p = 1 \iff P \normal G$
 
 Numerical Constraints
 
- 1. $n_p \equiv 0 \mod m$, i.e. $n_p \divides m$
+ 1. $n_p \divides m$ (in particular, $n_p \leq m$),
 
- 2. $n_p \equiv 1 \mod p$, i.e. $n_p \not\divides p$.
+ 2. $n_p \equiv 1 \mod p$,
 
  3. $n_p = [G : N_G(P)]$ where $N$ is the normalizer.
 
