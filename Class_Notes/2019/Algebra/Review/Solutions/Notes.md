@@ -50,7 +50,7 @@ $$
 where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
 
 **Burnside's Formula:**
-Let $X^g = \theset{x\in x\suchthat g\actson x = x}$, then 
+
 $$
 \abs G \abs{X/G} = \sum_{g\in G} \abs {X^g}
 .$$
