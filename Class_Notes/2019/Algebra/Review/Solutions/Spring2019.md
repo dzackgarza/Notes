@@ -239,11 +239,20 @@ But since $R$ is an integral domain and $\alpha \neq 0$, we must have $s_i = 0$ 
 
 **Spanning:**
 
+Write $\pi(\mathcal B) = \theset{\vector r_i + \Tor(M)}_{i=1}^n$.
+
 Letting $\vector x \in M'$ be arbitrary, we can write $\vector x = \vector m + \tor(M)$ for some $\vector m \in M$ where $\pi(\vector m) = \vector x$.
 
 But since $\mathcal B$ is a basis for $M$, we have $\vector m = \sum_{i=1}^n s_i \vector r_i$, and so 
+\begin{align*}
+\vector x 
+&= \pi(\vector m) \\
+&= \pi(\sum_{i=1}^n s_i \vector r_i) \\
+&= \sum_{i=1}^n s_i \pi(\vector r_i) \\
+&= \sum_{i=1}^n s_i \vector (\vector r_i + \tor(M)) \\
+,\end{align*}
 
-\pi(\vector m)
+which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$.
 
 
 Conversely, to see that $\rank M' \geq n$, towards a contradiction suppose that $B'' = \theset{\vector x_i + \tor M}_{i=1}^{n+1}$ is linearly independent in $M'$. Then the lift of this to $M$ given by $\theset{\vector x_i}_{i=1}^{n+1}$ is a set of $n+1 > \rank M$ elements, and thus has a linear dependence. But any linear dependence in $M$ descends to a linear dependence in $M'$: with this dependence, we can produce $s_i$ such that $\sum s_i \vector x_i = \vector 0 \in M$ where not all $s_i=0$. But $\vector 0 \in \tor M$, so $\sum s_i \vector x_i \in \tor M$, which exactly means $\sum s_i \vector x_i = 0$ in the quotient $M/\tor M$.
