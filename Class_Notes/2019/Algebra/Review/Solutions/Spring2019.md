@@ -267,8 +267,7 @@ Thus the rank of $M$ is at least 1, since $\theset{m}$ is a subset of a spanning
 It can not be linearly dependent, since $R$ is an integral domain and $M\subseteq R$, so $\alpha m = 0 \implies \alpha = 0$.
 
 However, the rank is at most 1 since $R$ is commutative.
-If we take two elements $\vector m, \vector n \in M$, then since $m, n\in R$ can be regarded as ring elements as well, we have $nm = mn$. 
-So 
+If we take two elements $\vector m, \vector n \in M$, then since $m, n\in R$ as well, we have $nm = mn$ and so 
 $$
 (n)\vector m + (-m)\vector n = 0_R = 0_M
 $$ 
