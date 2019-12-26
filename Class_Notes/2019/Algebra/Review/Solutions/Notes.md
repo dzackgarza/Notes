@@ -72,7 +72,7 @@ Write
 
 **Definition**:
 A $p\dash$group is a group $G$ such that every element is order $p^k$ for some $k$. 
-If $\abs G < \infty$, it follows that $\abs G = p^j$ for some $j$.
+If $G$ is finite, then $\abs G = p^j$ for some $j$.
 
 
 Some facts that are useful when doing Sylow theory:
