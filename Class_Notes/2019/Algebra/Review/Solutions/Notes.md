@@ -413,3 +413,6 @@ so just use polynomial long division.
 $$
 k\divides n \implies \Phi_{n k}(x)=\Phi_{n}\left(x^{k}\right)
 $$
+
+**Theorem:**
+$\Gal(\QQ(\zeta_n)/\QQ) \cong \ZZ/(n)\units$.
