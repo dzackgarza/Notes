@@ -474,6 +474,11 @@ P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] =
 $$
 \Phi_{n}(x)=\prod_{k=1 \atop (j, n)=1}^{n}\left(x- \zeta_n^k\right)
 $$
+> Potentially not needed, but
+$$
+\Phi_{n}(z)=\prod_{d | n, d>0}\left(z^{d}-1\right)^{\mu\left(\frac{n}{d}\right)}
+$$
+where
 
 ### a
 Note that $\zeta$ is a primitive 8th root of unity, so we are looking for the degree of $\Phi_8$, the 8th cyclotomic polynomial, which is $\phi(8) = \phi(2^3) = 2^2(1) = 4$.
