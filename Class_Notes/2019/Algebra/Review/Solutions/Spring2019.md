@@ -445,15 +445,21 @@ But a computation shows that $(A+I)^2 = pA = 0 \in M_p(\FF_p)$ and $(A+I) \neq 0
 So the largest Jordan block corresponding to $\lambda = 0$ is of size 2, and we can check that $\dim E_{\lambda = 0} = \dim \theset{\vector e_i - \vector e_j \suchthat i\neq j} = p-1$, so there are $p-1$ Jordan blocks for $\lambda = 0$.
 
 Thus
-
+\begin{align*}
+JCF_{\FF_p}(A)
+=  J_{\lambda = -1}^{2} \oplus (p-2)J_{\lambda = -1}^1
+= \left[\begin{array}{rr|r|r|r|r}
+-1 & 1 & 0 & \cdots & 0 & 0 \\
+0& -1 & 0 & 0 & 0 & 0 \\
+\hline
+0& 0 & -1 & 0 & 0 & 0 \\ \hline
+0& 0 & 0 & \ddots & \ddots & 0 \\ \hline
+0& 0 & 0 & \cdots & -1 & 0 \\ \hline
+0& 0 & 0 & \cdots & 0 & -1 \\
+\end{array}\right]
+.\end{align*}
 
 To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector v_1, \vector p_1, \cdots , \vector p_{p-1}]$ from part (a) is singular over $\FF_p$, since
-\begin{align*}
-\vector v_1 + \vector p_1 + \vector p_2 + \cdots + \vector p_{p-2}
-&= [p-1, 0, 0, \cdots, 0, 1] \\
-&= [-1, 0,0,\cdots, 0, 1] \\
-&= - \vector p_{p-1}
-.\end{align*}
 
 We still have a linearly independent set given by the first $p-1$ columns of $P$, so we can extend this to a basis by finding one linearly independent generalized eigenvector.
 
