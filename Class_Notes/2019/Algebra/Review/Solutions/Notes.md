@@ -86,7 +86,8 @@ Some useful facts:
 
 $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
 
-**Corollary (Partial Converse to Lagrange)**: $\forall p \divides \abs{G}$, there exists an element of order $p$.
+**Corollary (Partial Converse to Lagrange)**: 
+$\forall p \divides \abs{G}$, there exists an element of order $p$.
 
 > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
 
@@ -97,9 +98,11 @@ All sylow$\dash p$ subgroups are conjugate for a given $p$, i.e.
 S_p^1, S_p^2 \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^1g\inv = S_p^2
 .\end{align*}
 
-**Corollary**: $n_p = 1 \iff P \normal G$
+**Corollary**: 
+$n_p = 1 \iff P \normal G$
 
 ### Sylow 3
+
 Numerical Constraints
 
  1. $n_p \equiv 0 \mod m$, i.e. $n_p \divides m$
