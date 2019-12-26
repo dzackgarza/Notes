@@ -396,3 +396,6 @@ $$
 x^{n}-1=\prod_{d | n} \Phi_{d}(x) \implies \Phi_n(x) = \frac{x^n-1}{\prod_{d | n \atop d < n} \Phi_{d}(x)},
 $$
 so just use polynomial long division.
+
+
+Lemma:
