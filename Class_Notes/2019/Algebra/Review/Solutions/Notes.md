@@ -375,6 +375,11 @@ Then $f(x) \divides \phi_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
 ## Cyclotomic Polynomials
 
+> Let $\zeta_n = e^{2\pi i/n}$, then
+$$
+\Phi_{n}(x)=\prod_{k=1 \atop (j, n)=1}^{n}\left(x- \zeta_n^k\right)
+$$
+
 Computing $\Phi_n$:
 
 1. 
@@ -385,7 +390,9 @@ where
 $$
 \mu(n) \equiv\left\{\begin{array}{ll}{0} & {\text { if } n \text { has one or more repeated prime factors }} \\ {1} & {\text { if } n=1} \\ {(-1)^{k}} & {\text { if } n \text { is a product of } k \text { distinct primes, }}\end{array}\right.
 $$
-OR use
+
+2. 
 $$
-x^{n}-1=\prod_{d | n} \Phi_{d}(x) \implies \Phi_n(x) = \frac{x^n-1}{\prod_{d | n \atop d < n} \Phi_{d}(x)}.
+x^{n}-1=\prod_{d | n} \Phi_{d}(x) \implies \Phi_n(x) = \frac{x^n-1}{\prod_{d | n \atop d < n} \Phi_{d}(x)},
 $$
+so just use polynomial long division.
