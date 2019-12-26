@@ -68,14 +68,14 @@ Write
 
 - $\abs{G} = p^n m$ where $(m, p) = 1$,
 - $S_p$ a Sylow$\dash p$ subgroup, and
-- $n_p$ the number of sylow$\dash p$ subgroups.
+- $n_p$ the number of Sylow$\dash p$ subgroups.
 
 **Definition**:
 A $p\dash$group is a group $G$ such that every element is order $p^k$ for some $k$. 
 If $G$ is finite, then $\abs G = p^j$ for some $j$.
 
 
-Some facts that are useful when doing Sylow theory:
+Some useful facts:
 
 - Coprime order subgroups are disjoint, or more generally $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$.
 
