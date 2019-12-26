@@ -22,7 +22,7 @@ $H \leq G \implies \abs H \divides \abs G$.
 
 
 **Corollary**: 
-$g\in G \implies o(g) \divides o(G)$
+$g\in G \implies o(g) \divides o(G)$.
   
 **Corollary**: 
 $g^{\abs G} = e$.
