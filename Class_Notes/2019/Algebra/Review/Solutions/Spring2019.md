@@ -208,7 +208,7 @@ n &\leq \abs{Z(G)} + \frac 1 2\abs{G \setminus Z(G)} \\
 Suppose $\tor(M)$ has rank $n \geq 1$.
 Then let $\vector r$ be a generating element.
 
-However, since $\vector r\in \tor(M)$, there exists an $s\in R\setminus 0_R$ such that $s\vector r = 0_M$. 
+However, since $\vector r\in \tor(M)$, there exists an $s\in R\setminus 0_R$ such that $s\vector r = 0_M$.
 
 But then $s\vector r = 0$ with $s\neq 0$, so $\theset{\vector r}$ is by definition not linearly independent.
 
@@ -219,7 +219,7 @@ $\qed$
 Let $n = \rank M$, and let $\mathcal B = \theset{\vector r_i}_{i=1}^n \subseteq R$ be a generating set.
 Let $M' \definedas M/\tor(M)$ and $\pi: M \to M'$ be the canonical quotient map.
 
-**Claim:** 
+**Claim:**
 $\pi(\mathcal B)$ is a basis for $M'$.
 
 **Linearly Independent:**
@@ -227,7 +227,7 @@ $\pi(\mathcal B)$ is a basis for $M'$.
 Let $\mathcal B' = \pi(\mathcal B) = \theset{\vector r_i + \tor(M)}_{i=1}^n$ and suppose that
 $$
 \sum_{i=1}^n s_i (\vector r_i + \tor M) = \vector 0_{M'}
-.$$ 
+.$$
 
 Since $x = 0 \in M' \iff x \in \tor(M)$,
 $$
@@ -243,9 +243,9 @@ Write $\pi(\mathcal B) = \theset{\vector r_i + \Tor(M)}_{i=1}^n$.
 
 Letting $\vector x \in M'$ be arbitrary, we can write $\vector x = \vector m + \tor(M)$ for some $\vector m \in M$ where $\pi(\vector m) = \vector x$.
 
-But since $\mathcal B$ is a basis for $M$, we have $\vector m = \sum_{i=1}^n s_i \vector r_i$, and so 
+But since $\mathcal B$ is a basis for $M$, we have $\vector m = \sum_{i=1}^n s_i \vector r_i$, and so
 \begin{align*}
-\vector x 
+\vector x
 &= \pi(\vector m) \\
 &= \pi(\sum_{i=1}^n s_i \vector r_i) \\
 &= \sum_{i=1}^n s_i \pi(\vector r_i) \\
@@ -263,20 +263,20 @@ If $M \normal R$ is not principal, then $M$ is not a free $R\dash$module.
 **$M$ is rank 1**:
 For any module, we can take an element $M\neq 0_M$ and consider its cyclic module $Rm$.
 
-Thus the rank of $M$ is at least 1, since $\theset{m}$ is a subset of a spanning set. 
+Thus the rank of $M$ is at least 1, since $\theset{m}$ is a subset of a spanning set.
 It can not be linearly dependent, since $R$ is an integral domain and $M\subseteq R$, so $\alpha m = 0 \implies \alpha = 0$.
 
 However, the rank is at most 1 since $R$ is commutative.
-If we take two elements $\vector m, \vector n \in M$, then since $m, n\in R$ as well, we have $nm = mn$ and so 
+If we take two elements $\vector m, \vector n \in M$, then since $m, n\in R$ as well, we have $nm = mn$ and so
 $$
 (n)\vector m + (-m)\vector n = 0_R = 0_M
-$$ 
+$$
 is a linear dependence.
 
 **$M$ is torsion-free**:
 
-Let $x \in \tor M$, then there exists some $r\neq 0\in R$ such that $rx = 0$. 
-But $x\in R$ and $R$ is an integral domain, so $x=0$, and thus $\tor(M) = \theset{0_R}$. 
+Let $x \in \tor M$, then there exists some $r\neq 0\in R$ such that $rx = 0$.
+But $x\in R$ and $R$ is an integral domain, so $x=0$, and thus $\tor(M) = \theset{0_R}$.
 
 $\qed$
 
@@ -284,31 +284,31 @@ $\qed$
 
 ### a
 
-Let $0 < I < R$ be a proper ideal, and consider the set $S = \theset{J \suchthat I   \subseteq J < R}$. 
-The claim is that $S$ contains a maximal element $M$. 
-Note $I\in S$, so $S$ is nonempty. 
+Let $0 < I < R$ be a proper ideal, and consider the set $S = \theset{J \suchthat I   \subseteq J < R}$.
+The claim is that $S$ contains a maximal element $M$.
+Note $I\in S$, so $S$ is nonempty.
 
-Moreover, since $I \neq R$ is proper and all $J\in S$ are proper, any maximal element will also be proper, and thus a maximal ideal of $R$ containing $I$.  
+Moreover, since $I \neq R$ is proper and all $J\in S$ are proper, any maximal element will also be proper, and thus a maximal ideal of $R$ containing $I$.
 
 We can now use the fact $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
 
-To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$. 
+To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$.
 
-To see that $\hat C$ is an upper bound for $C$, it suffices to show $C_i \in C \implies C_i \leq \hat C$ in the partial ordering. 
-This amounts to $C_i \in C \implies C_i \subset \hat C$, which is always true because $C_i$ occurs as one of terms in the union defining $\hat C$. 
+To see that $\hat C$ is an upper bound for $C$, it suffices to show $C_i \in C \implies C_i \leq \hat C$ in the partial ordering.
+This amounts to $C_i \in C \implies C_i \subset \hat C$, which is always true because $C_i$ occurs as one of terms in the union defining $\hat C$.
 
-To see that $\hat C \in S$, note that $I \subseteq C_i < R$ for every $C_i$, and in particular, since no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper. 
-It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$. 
+To see that $\hat C \in S$, note that $I \subseteq C_i < R$ for every $C_i$, and in particular, since no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper.
+It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$.
 Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
 
 ### b
 $\Longrightarrow$:
 
-We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$. 
+We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$.
 
-Suppose $x\in J(R)$ and suppose towards a contradiction that $1+x$ is not a unit. 
-Then consider the ideal $M = \generators{1+x}$. Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in M$. 
-This means $M < R$ is a proper ideal, and it is thus contained in some (proper) maximal ideal $M' < R$ by part (1), and so we have $1+x \in M'$. 
+Suppose $x\in J(R)$ and suppose towards a contradiction that $1+x$ is not a unit.
+Then consider the ideal $M = \generators{1+x}$. Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in M$.
+This means $M < R$ is a proper ideal, and it is thus contained in some (proper) maximal ideal $M' < R$ by part (1), and so we have $1+x \in M'$.
 However, since $x\in J(R)$, we must have $x\in M'$.
 This means that $(1+x) - x = 1 \in M'$, since ideals are closed under sums, but this forces $M' = R$ which contradicts $M' < R$.
 
@@ -317,11 +317,11 @@ This means that $(1+x) - x = 1 \in M'$, since ideals are closed under sums, but 
 ### c
 $\Longleftarrow$:
 
-Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$. Suppose towards a contradiction that there is a maximal ideal $M$ such that $x\not \in M$ (and thus $x\not\in J(R)$). 
-Then consider $Rx + M = \theset{rx + m \suchthat r\in R, m\in M}$. 
-Since $M$ was maximal, $M \subsetneq Rx + M \implies Rx + M = R$. 
-So every element in $R$ can be written as $rx + m$ for some $r\in R, m\in M$. 
-But $1\in R$, so we have $1 = rx + m$. Since $R$ is a ring and closed under additive inverses, we can let $s = -r$ and write $1 = sx - m$, and so $m = 1 + sx$. Since $s\in R$, by assumption, $1+sx$ is a unit and so $m$ is a unit -- but this forces $M=R$, contradicting the fact that $M$ is proper. 
+Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$. Suppose towards a contradiction that there is a maximal ideal $M$ such that $x\not \in M$ (and thus $x\not\in J(R)$).
+Then consider $Rx + M = \theset{rx + m \suchthat r\in R, m\in M}$.
+Since $M$ was maximal, $M \subsetneq Rx + M \implies Rx + M = R$.
+So every element in $R$ can be written as $rx + m$ for some $r\in R, m\in M$.
+But $1\in R$, so we have $1 = rx + m$. Since $R$ is a ring and closed under additive inverses, we can let $s = -r$ and write $1 = sx - m$, and so $m = 1 + sx$. Since $s\in R$, by assumption, $1+sx$ is a unit and so $m$ is a unit -- but this forces $M=R$, contradicting the fact that $M$ is proper.
 So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $x\in J(R)$ by definition.
 
 > Gist: $\not\Longrightarrow: x \not\in J(R) \implies \exists M \suchthat x\not\in M \implies R = \generators{M, x} \implies \exists r \suchthat 1 = m + rx \implies m = 1-rx$ and so $1-rx\not\in R\units$, since otherwise $m$ would be a unit and force $M=R$. Note: not sure why this holds for all $r$..
@@ -365,7 +365,7 @@ $$
 x^{k\ell} = x^{k\ell + k\ell} = x^{2(k\ell)} = (x^{k\ell})^2
 $$
 
-and thus $x^{k\ell}$ is idempotent. 
+and thus $x^{k\ell}$ is idempotent.
 
 $\qed$
 
@@ -385,7 +385,7 @@ $$
 r r(1-x) = 1 \implies r = 1 \implies (1-x)r = 1-x \implies 1 = 1- x \implies x = 0,
 $$
 
-contradicting $x\neq 0$. So $1-x$ can not be a unit. 
+contradicting $x\neq 0$. So $1-x$ can not be a unit.
 
 $\qed$
 
@@ -398,10 +398,10 @@ $\qed$
 
 ### a
 
-Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in every entry. 
-Noting that $B = A+I$, we have 
+Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in every entry.
+Noting that $B = A+I$, we have
 \begin{align*}
-&B\vector x 
+&B\vector x
 = \lambda \vector x \\
 &\iff (A+I) \vector x = \lambda \vector x \\
 &\iff A \vector x = (\lambda - 1) \vector x
@@ -417,7 +417,7 @@ Note that this also supplies $p-1$ linearly independent vectors that span the co
 
 So
 \begin{align*}
-&\spec(B) = \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} 
+&\spec(B) = \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)}
 \iff \\
 &\spec(A) = \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)}\\
 &\implies \chi_{A, \QQ}(x) = (x - (p-1))(x - (-1))^{p-1}
@@ -425,11 +425,11 @@ So
 
 and geometric multiplicities are preserved, so
 \begin{align*}
-JCF_\QQ(A) 
+JCF_\QQ(A)
 =  J_{\lambda = p-1}^{1} \oplus (p-1)J_{\lambda = -1}^1
 =
 \left[\begin{array}{r|r|r|r|r|r}
-p-1 & 0 & 0 & \cdots & 0 & 0 \\ 
+p-1 & 0 & 0 & \cdots & 0 & 0 \\
 \hline
 0& -1 & 0 & 0 & 0 & 0 \\ \hline
 0& 0 & -1 & 0 & 0 & 0 \\ \hline
@@ -439,11 +439,11 @@ p-1 & 0 & 0 & \cdots & 0 & 0 \\
 \end{array}\right]
 .\end{align*}
 
-The matrix $P$ such that $A = PJP\inv$ will have columns the bases of the generalized eigenspaces. 
+The matrix $P$ such that $A = PJP\inv$ will have columns the bases of the generalized eigenspaces.
 In this case, the generalized eigenspaces are the usual eigenspaces, so
 \begin{align*}
-P = 
-[\vector v_1, \vector p_1, \cdots, \vector p_{p-1}] 
+P =
+[\vector v_1, \vector p_1, \cdots, \vector p_{p-1}]
 =
 \left[\begin{array}{rrrrr}
 1 & 1 & 1 & 1 & 1 & 1  \\
@@ -458,7 +458,7 @@ P =
 
 ### b
 
-For $F = \FF_p$, all eigenvalues/vectors still lie in $\FF_p$, but now $-1 = p-1$, $\chi_{A, \FF_p}(x) = (x+1)^p$, and the Jordan blocks may merge. 
+For $F = \FF_p$, all eigenvalues/vectors still lie in $\FF_p$, but now $-1 = p-1$, $\chi_{A, \FF_p}(x) = (x+1)^p$, and the Jordan blocks may merge.
 
 But a computation shows that $(A+I)^2 = pA = 0 \in M_p(\FF_p)$ and $(A+I) \neq 0$, so $\min_{A, \FF_p}(x) = (x+1)^2$.
 
@@ -466,11 +466,11 @@ So the largest Jordan block corresponding to $\lambda = 0$ is of size 2, and we 
 
 Thus
 \begin{align*}
-JCF_{\FF_p}(A) 
+JCF_{\FF_p}(A)
 =  J_{\lambda = -1}^{2} \oplus (p-2)J_{\lambda = -1}^1
 =
 \left[\begin{array}{rr|r|r|r|r}
--1 & 1 & 0 & \cdots & 0 & 0 \\ 
+-1 & 1 & 0 & \cdots & 0 & 0 \\
 0& -1 & 0 & 0 & 0 & 0 \\
 \hline
 0& 0 & -1 & 0 & 0 & 0 \\ \hline
@@ -482,7 +482,7 @@ JCF_{\FF_p}(A)
 
 To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector v_1, \vector p_1, \cdots , \vector p_{p-1}]$ from part (a) is singular over $\FF_p$, since
 \begin{align*}
-\vector v_1 + \vector p_1 + \vector p_2 + \cdots + \vector p_{p-2} 
+\vector v_1 + \vector p_1 + \vector p_2 + \cdots + \vector p_{p-2}
 &= [p-1, 0, 0, \cdots, 0, 1] \\
 &= [-1, 0,0,\cdots, 0, 1] \\
 &= - \vector p_{p-1}
@@ -493,9 +493,9 @@ We still have a linearly independent set given by the first $p-1$ columns of $P$
 Solving $(A-I\lambda)\vector x = \vector v_1$ is our only option (the others won't yield solutions).
 This amounts to solving $B\vector x = \vector v_1$, which imposes the condition $\sum x_i = 1$, so we can choose $\vector x = [1, 0, \cdots, 0]$.
 
-Thus 
+Thus
 \begin{align*}
-P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] = 
+P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] =
 \left[\begin{array}{rrrrr}
 1 & 1 & 1 & 1 & 1 & 1  \\
 1 & 0 & -1 & 0 & 0 & 0 \\
@@ -520,7 +520,7 @@ Note that $\zeta$ is a primitive 8th root of unity, so we are looking for the de
 So $[K: \QQ] = 4$.
 
 ### b
-We have $\Gal(K/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(4)$, which is exactly one subgroup of index 2. 
+We have $\Gal(K/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(4)$, which is exactly one subgroup of index 2.
 Thus there is exactly **one** intermediate field of degree 2.
 
 ### c
