@@ -5,7 +5,7 @@ $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
 **Notation:**
 
-- $
+- $G\cdot x = \theset{gx \suchthat g\in G}$
 
 > - Notation: $X/G$ is the set of $G\dash$orbits
 > - Notation: $X^g = \theset{x\in x\suchthat g\actson x = x}$
