@@ -123,7 +123,8 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 > But the RHS must divide $\abs{H} = p^k$, so the size of every orbit must divide $p^k$.
 >
 > But $n_p = \sum_i \abs{H\cdot S_p^i}$ and $p$ does not divide $n_p$, so we must have $\abs{H\cdot S_p^i} = 1$ at least one $i$.
-> But this says $[H: H \intersect N_G(S_p^i)] = 1$, so $H \intersect N_G(S_p^i)= H$ and thus $S_p^i \normal H$.
+> But this says $[H: H \intersect N_G(S_p^i)] = 1$, so $H \intersect N_G(S_p^i)= H$.
+> Moreover, $H = H \intersect N_G(S_p^i) = H \intersect S_p^i$, so $H \leq S_p^i$.
 
 ## Products
 
