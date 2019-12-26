@@ -206,11 +206,13 @@ n &\leq \abs{Z(G)} + \frac 1 2\abs{G \setminus Z(G)} \\
 ### a
 
 Suppose $\tor(M)$ has rank $n \geq 1$.
-Then let $\vector r$ be 
+Then let $\vector r$ be a generating element.
 
-Recall that a set is linearly dependent in an $R\dash$module iff $\sum s_i \vector r_i = \vector 0 \implies s_i = 0 ~\forall i$ where $\vector r_i \in R$ and $s_i$ are scalars from the underlying abelian group. 
+However, since $\vector r\in \tor(M)$, there exists an $s\in R\setminus 0_R$ such that $s\vector r = 0_M$. 
 
-However, if $\vector r$ is torsion, then by definition there exists an $s\neq 0$ that annihilates $\vector r$, i.e. $s \vector r = \vector 0$. Since $s\neq 0$, the set $\theset{\vector r}$ can not be linearly independent. But this holds for arbitrary $\vector r \in \tor(M)$, so the largest linearly independent set is $\emptyset$ and thus the rank is zero.
+But then $s\vector r = 0$ with $s\neq 0$, so $\theset{\vector r}$ is by definition not linearly independent.
+
+$\qed$
 
 ### b
 
