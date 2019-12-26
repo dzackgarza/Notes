@@ -172,7 +172,7 @@ Eisenstein's Criterion: If $f(x) = \sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\e
 
 # Modules
 
-Lemma: 
+**Lemma:** 
 $I \normal R$ is a free $R\dash$module iff $I$ is a principal ideal. 
 
 $\implies$: 
