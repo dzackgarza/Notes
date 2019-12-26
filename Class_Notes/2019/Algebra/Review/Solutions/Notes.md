@@ -116,7 +116,7 @@ $p$ does not divide $n_p$.
 If $G$ is finite, every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
 > *Proof:*
-> 
+> Suppose toward a contradiction that $H$ is 
 
 ## Products
 
