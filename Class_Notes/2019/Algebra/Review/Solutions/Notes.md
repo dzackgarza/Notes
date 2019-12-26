@@ -119,6 +119,8 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 > Let $H\leq G$ be a $p\dash$subgroup, and let $H\actson \mathrm{Syl}_p(G) \definedas\theset{S_p^i}$ by conjugation.
 > Denote the orbits $H\cdot S_p^i$, and note that the stabilizer is $H_{S_p^i} = N_H(S_p^i)$.
 > 
+> Note that $n_p = \sum_i \abs{H\cdot S_p^i}$.
+> 
 > By Orbit-Stabilizer, $\abs{H \cdot S_p^i} = [H: N_H(S_p^i)]$.
 
 ## Products
