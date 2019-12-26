@@ -256,7 +256,7 @@ which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$
 
 ### c
 **Claim**: 
-$M \normal R$ is a free $R\dash$module iff $M$ is principal. 
+$M \normal R$ is a free $R\dash$module iff $M$ is a principal ideal. 
 
 1. $\Longrightarrow$: Suppose $M$ is free as an $R\dash$module, and let $B = \theset{\vector m_i}_{i\in I}$ be a basis so we can write $M = \generators{B}$.
 Suppose that $\abs{B} \geq 2$, so we can pick at least 2 basis elements $\vector m_1\neq \vector m_2$, and consider
