@@ -88,7 +88,6 @@ $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
 
 **Corollary (Partial Converse to Lagrange)**: $\forall p \divides \abs{G}$, there exists an element of order $p$.
 
-
 > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
 
 ### Sylow 2
