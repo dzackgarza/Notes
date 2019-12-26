@@ -274,11 +274,7 @@ $$
 $$ 
 is a linear dependence.
 
-
-Repeating the argument in (1), since $M$ is not a principal ideal, there are at least 2 generating elements -- however, these are linearly dependent because $R$ is commutative, so the rank is at most 1. 
-
-
-So the rank is exactly 1. 
+**$M$ is torsion-free**:
 
 Finally, $M$ is torsion-free: let $x\in M$, then if $x \in \tor M$, there exists some $r\neq 0\in R$ such that $rx = 0$. Since $R$ is an integral domain, this forces $x=0$, so 0 is the only torsion element and thus $M$ is torsion-free. 
 
