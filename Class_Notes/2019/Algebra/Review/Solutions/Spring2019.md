@@ -290,7 +290,10 @@ $\qed$
 
 ### a
 
-?
+Define 
+$$
+S = \theset{J \suchthat I   \subseteq J < R}
+.$$
 
 ### b
 $\Longrightarrow$:
