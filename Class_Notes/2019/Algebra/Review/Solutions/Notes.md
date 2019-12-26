@@ -33,10 +33,15 @@ If $n \divides \abs G$, then there does **not** necessarily exist $H \leq G$ wit
 > Key example: 
 > $G = A_4$ is size 12 but there is no subgroup of order 6.
 
-**Cauchy's Theorem**
+**Cauchy's Theorem**:
 
-If $p \divides \abs G$, then $G$ contains an element $g$ of order $p$.
-Corollary: If $p \divides \abs G$, then there is a subgroup $H \leq G$ such that $\abs H = p$. Obtained as $H = <g>$ from above.
+> Partial converse to Lagrange's theorem.
+
+For $p$ a prime,
+$$
+p \divides \abs{G} \implies \exists g\in G \text{ such that } o(g) = p \text{ and } \exists H \definedas \generators{g} \leq G \text{ with } \abs{H} = p
+.$$
+
 
 **Class Equation**:
 $$
@@ -45,7 +50,10 @@ $$
 where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
 
 **Burnside's Formula:**
-Let $X^g = \theset{x\in x\suchthat g\actson x = x}$, then $\abs G \abs{X/G} = \sum \abs {X^g}$.
+Let $X^g = \theset{x\in x\suchthat g\actson x = x}$, then 
+$$
+\abs G \abs{X/G} = \sum \abs {X^g}
+.$$
 
 ## Sylow Theorems
 
