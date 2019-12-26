@@ -229,7 +229,9 @@ $$
 \sum_{i=1}^n s_i \vector r_i \in \tor(M)
 .$$
 
-But this means that we can produce an element $\alpha_i\neq 0 \in M$ such that $\alpha_i \sum s_i \vector r_i = \vector 0 \in R$. However, then letting $s_i' = \alpha_i s_i$, we would have $\sum s_i' \vector r_i = \vector 0 \in R$. Since $R$ is an integral domain and we had $\alpha_i\neq 0$ and not all $s_i=0$, there is at least one nonzero $s_i'$ -- but this says that $B$ is linearly *dependent* in $M$, a contradiction. So $B'$ is linearly independent in $M'$, and $\rank M' \leq n$.
+But this means that we can produce an element $\alpha_i\neq 0 \in M$ such that $\alpha_i \sum s_i \vector r_i = \vector 0_M$. 
+
+However, then letting $s_i' = \alpha_i s_i$, we would have $\sum s_i' \vector r_i = \vector 0 \in R$. Since $R$ is an integral domain and we had $\alpha_i\neq 0$ and not all $s_i=0$, there is at least one nonzero $s_i'$ -- but this says that $B$ is linearly *dependent* in $M$, a contradiction. So $B'$ is linearly independent in $M'$, and $\rank M' \leq n$.
 
 Conversely, to see that $\rank M' \geq n$, towards a contradiction suppose that $B'' = \theset{\vector x_i + \tor M}_{i=1}^{n+1}$ is linearly independent in $M'$. Then the lift of this to $M$ given by $\theset{\vector x_i}_{i=1}^{n+1}$ is a set of $n+1 > \rank M$ elements, and thus has a linear dependence. But any linear dependence in $M$ descends to a linear dependence in $M'$: with this dependence, we can produce $s_i$ such that $\sum s_i \vector x_i = \vector 0 \in M$ where not all $s_i=0$. But $\vector 0 \in \tor M$, so $\sum s_i \vector x_i \in \tor M$, which exactly means $\sum s_i \vector x_i = 0$ in the quotient $M/\tor M$.
 
