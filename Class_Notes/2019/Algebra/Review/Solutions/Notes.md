@@ -73,18 +73,23 @@ Write
 **Definition**:
 A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k$ for some $k$. If $\abs G < \infty$, it follows that $\abs G = p^j$ for some $j$.
 
-1. $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
+### Sylow 1
 
-  - **Corollary**: $\forall p \divides \abs{G}$, there exists an element of order $p$.
+$\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
 
-     > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
+**Corollary**: $\forall p \divides \abs{G}$, there exists an element of order $p$.
 
-2. All sylow$\dash p$ subgroups are conjugate for a given $p$.
-   > If $P_1, P_2$ are Sylow$\dash p$ subgroups, then they are conjugate, i.e. $\exists g\in G \suchthat P_1 = gP_2g^{-1}$.
+> If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
 
-   - Corollary: $n_p = 1 \implies P \normal G$
+### Sylow 2
 
-3. Numerical Constraints
+All sylow$\dash p$ subgroups are conjugate for a given $p$.
+
+> If $P_1, P_2$ are Sylow$\dash p$ subgroups, then they are conjugate, i.e. $\exists g\in G \suchthat P_1 = gP_2g^{-1}$.
+
+**Corollary**: $n_p = 1 \implies P \normal G$
+
+1. Numerical Constraints
 
    1. $n_p \equiv 0 \mod m$, i.e. $n_p \divides m$
 
