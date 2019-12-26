@@ -400,5 +400,6 @@ so just use polynomial long division.
 
 Lemma:
 \begin{align*}
-\Phi_{p}(x)=x^{p-1}+x^{p-2}+\cdots+x+1
+\Phi_{p}(x)   &=  x^{p-1}+x^{p-2}+\cdots+x+1 \\
+\Phi_{2 p}(x) &=  x^{p-1}-x^{p-2}+\cdots-x+1
 .\end{align*}
