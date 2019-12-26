@@ -114,6 +114,7 @@ $n_p = 1 \iff P \normal G$
 Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
 > *Proof:*
+> Let $H\leq G$ be a $p\dash$subgroup, and let $H\actson \mathrm{Syl}_p(G)$ by conjugation.
 > 
 
 ## Products
