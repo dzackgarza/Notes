@@ -340,8 +340,6 @@ Since $s\in R$ by assumption $1+sx$ is a unit and thus $m \in \mathfrak{m}$ is a
 
 So $x\in \mathfrak{m}$ for every $\mathfrak{m}$ and thus $x\in J(R)$.
 
-> Gist: $\not\Longrightarrow: x \not\in J(R) \implies \exists M \suchthat x\not\in M \implies R = \generators{M, x} \implies \exists r \suchthat 1 = m + rx \implies m = 1-rx$ and so $1-rx\not\in R\units$, since otherwise $m$ would be a unit and force $M=R$. Note: not sure why this holds for all $r$..
-
 ### c
 
 Letting $N(R)$ denote the nilradical of $R$ (the ideal of nilpotent elements), we generally have $N(R)\intersect Z(R) \subseteq J(R)$ (and since here $R$ is commutative, $Z(R) = R$). This can be shown by demonstrating that if $x^n=0$, then $1+rx^n$ is a unit.
