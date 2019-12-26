@@ -319,12 +319,26 @@ $\impliedby$
 Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$.
 
  
-Suppose towards a contradiction that there is a maximal ideal $M$ such that $x\not \in M$ (and thus $x\not\in J(R)$).
-Then consider $Rx + M = \theset{rx + m \suchthat r\in R, m\in M}$.
-Since $M$ was maximal, $M \subsetneq Rx + M \implies Rx + M = R$.
+Suppose towards a contradiction that there is a maximal ideal $\mathfrak{m}$ such that $x\not \in \mathfrak{m}$ and thus $x\not\in J(R)$.
+
+Consider 
+$$
+M' \definedas \theset{rx + m \suchthat r\in R,~ m\in M}
+.$$
+
+Since $\mathfrak{m}$ was maximal, $\mathfrak{m} \subsetneq M'$ and so $M' = R$.
+
 So every element in $R$ can be written as $rx + m$ for some $r\in R, m\in M$.
-But $1\in R$, so we have $1 = rx + m$. Since $R$ is a ring and closed under additive inverses, we can let $s = -r$ and write $1 = sx - m$, and so $m = 1 + sx$. Since $s\in R$, by assumption, $1+sx$ is a unit and so $m$ is a unit -- but this forces $M=R$, contradicting the fact that $M$ is proper.
-So we must have $x\in M$. Since $M$ was arbitrary, $x$ is in every $M$, and so $x\in J(R)$ by definition.
+But $1\in R$, so we have 
+$$
+1 = rx + m
+.$$ 
+
+So let $s = -r$ and write $1 = sx - m$, and so $m = 1 + sx$.
+
+Since $s\in R$ by assumption $1+sx$ is a unit and thus $m \in \mathfrak{m}$ is a unit, a contradiction.
+
+So $x\in \mathfrak{m}$, and since $\mathfrak{m}$ was arbitrary $x\in J(R)$.
 
 > Gist: $\not\Longrightarrow: x \not\in J(R) \implies \exists M \suchthat x\not\in M \implies R = \generators{M, x} \implies \exists r \suchthat 1 = m + rx \implies m = 1-rx$ and so $1-rx\not\in R\units$, since otherwise $m$ would be a unit and force $M=R$. Note: not sure why this holds for all $r$..
 
