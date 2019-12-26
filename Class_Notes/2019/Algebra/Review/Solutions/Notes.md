@@ -175,8 +175,9 @@ Eisenstein's Criterion: If $f(x) = \sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\e
 **Lemma:** 
 $I \normal R$ is a free $R\dash$module iff $I$ is a principal ideal. 
 
-$\implies$: 
-Suppose $M$ is free as an $R\dash$module, and let $B = \theset{\vector m_i}_{i\in I}$ be a basis so we can write $M = \generators{B}$.
+$\implies$:
+
+Suppose $I$ is free as an $R\dash$module, and let $B = \theset{\vector m_j}_{j\in J} \subseteq I$ be a basis so we can write $M = \generators{B}$.
 
 Suppose that $\abs{B} \geq 2$, so we can pick at least 2 basis elements $\vector m_1\neq \vector m_2$, and consider
 $$
