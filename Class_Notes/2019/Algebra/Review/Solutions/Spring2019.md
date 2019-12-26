@@ -300,7 +300,7 @@ which is a poset under set inclusion.
 Given a chain $J_1 \subseteq \cdots$, there is an upper bound $J \definedas \union J_i$, so Zorn's lemma applies.
 
 ### b
-$\Longrightarrow$:
+$\implies$:
 
 We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$.
 
