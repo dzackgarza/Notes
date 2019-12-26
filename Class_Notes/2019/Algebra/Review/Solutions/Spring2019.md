@@ -257,7 +257,10 @@ which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$
 ### c
 
 **$M$ is not free:**
-If $M \normal R$ is not principal, then $M$ is not a free $R\dash$module.
+**Claim**: If $I \normal R$ is a free $R\dash$module, then $I$ is a principal ideal.
+
+> Then the result follows by the contrapositive. 
+
 
 
 **$M$ is rank 1**:
