@@ -121,7 +121,7 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 > 
 > Note that $n_p = \sum_i \abs{H\cdot S_p^i}$.
 > By Orbit-Stabilizer, $\abs{H \cdot S_p^i} = [H: N_H(S_p^i)]$.
-> But the RHS must divide $\abs{H} = p^k$
+> But the RHS must divide $\abs{H} = p^k$, so the size of every orbit must divide $p^k$.
 
 ## Products
 
