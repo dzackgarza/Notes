@@ -477,7 +477,8 @@ Note that $\zeta$ is a primitive 8th root of unity, so we are looking for the de
 So $[K: \QQ] = 4$.
 
 ### b
-We have $\Gal(K/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(4)$, which is exactly one subgroup of index 2,
+We have $\Gal(K/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(4)$, which is exactly one subgroup of index 2. 
+Thus there is exactly one intermediate field of degree 2
 
 
 ### c
