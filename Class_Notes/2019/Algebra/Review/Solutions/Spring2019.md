@@ -460,6 +460,12 @@ JCF_{\FF_p}(A)
 .\end{align*}
 
 To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector v_1, \vector p_1, \cdots , \vector p_{p-1}]$ from part (a) is singular over $\FF_p$, since
+\begin{align*}
+\vector v_1 + \vector p_1 + \vector p_2 + \cdots + \vector p_{p-2}
+&= [p-1, 0, 0, \cdots, 0, 1] \\
+&= [-1, 0,0,\cdots, 0, 1] \\
+&= - \vector p_{p-1}
+.\end{align*}
 
 We still have a linearly independent set given by the first $p-1$ columns of $P$, so we can extend this to a basis by finding one linearly independent generalized eigenvector.
 
@@ -469,7 +475,7 @@ This amounts to solving $B\vector x = \vector v_1$, which imposes the condition 
 Thus
 \begin{align*}
 P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] =
-\left[\begin{array}{rrrrr}
+\left[\begin{array}{rrrrrr}
 1 & 1 & 1 & 1 & 1 & 1  \\
 1 & 0 & -1 & 0 & 0 & 0 \\
 1 & 0 & 0 & -1 & 0 & 0 \\
