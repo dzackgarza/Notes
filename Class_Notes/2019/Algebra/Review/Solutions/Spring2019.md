@@ -304,16 +304,16 @@ $\Longrightarrow$:
 
 We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$.
 
-Let $x\in J(R)$ and suppose toward a contradiction that $1+x \not\in R\units$.
+Let $x\in J(R)$, so it is in every maximal ideal, and suppose toward a contradiction that $1+x \not\in R\units$.
 
 Then consider $I = \generators{1+x} \normal R$. 
 Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in I$ and $I\neq R$
 
-So $I < R$ is proper and thus contained in some maximal ideal $\mathfrak{m} < R$ by part (1), and so we have $1+x \in \mathfrak{m}$.
+So $I < R$ is proper and thus contained in some maximal proper ideal $\mathfrak{m} < R$ by part (1), and so we have $1+x \in \mathfrak{m}$.
 
-However, since $x\in J(R)$, we must have $x\in \mathfrak{m}$.
+Since $x\in J(R)$, $x\in \mathfrak{m}$ as well.
 
-This means that $(1+x) - x = 1 \in \mathfrak{m}$ which forces $\mathfrak{m} = R$ which contradicts $\mathfrak{m} < R$.
+But then $(1+x) - x = 1 \in \mathfrak{m}$ which forces $\mathfrak{m} = R$.
 
 > Gist: $\Longrightarrow$: WLOG look at $1-rx$ instead. If $1-rx \not\in R\units$, then $1-rx \in M$, some maximal ideal. Then $x\in R\intersect M$, so $rx \in M$, so $(1-rx) + rx = 1 \in M \implies M = R$, a contradiction.
 
