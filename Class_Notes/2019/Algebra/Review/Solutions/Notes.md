@@ -32,7 +32,6 @@ Write $\abs{G} = p^n m$ where $m {\not\divides} p$, $S_p$ a sylow$\dash p$ subgr
 **Definition**: 
 A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k$ for some $k$. If $\abs G < \infty$, it follows that $\abs G = p^j$ for some $j$.
 
-
 1. $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
    
   - **Corollary**: $\forall p \divides \abs{G}$, there exists an element of order $p$.
