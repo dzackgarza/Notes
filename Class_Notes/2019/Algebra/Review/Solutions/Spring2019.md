@@ -266,10 +266,13 @@ For any module, we can take an element $M\neq 0_M$ and consider its cyclic modul
 Thus the rank of $M$ is at least 1, since $\theset{m}$ is a subset of a spanning set. 
 It can not be linearly dependent, since $R$ is an integral domain and $M\subseteq R$, so $\alpha m = 0 \implies \alpha = 0$.
 
+However, the rank is at most 1 since $R$ is commutative.
+If we take two elements $\vector m, \vector n \in M$, then since $m, n\in R$ can be regarded as ring elements as well, we have $nm = mn$. 
+So $n\vector m + m\vector n = 0_R = 0_M$ is a linear dependence.
+
 
 Repeating the argument in (1), since $M$ is not a principal ideal, there are at least 2 generating elements -- however, these are linearly dependent because $R$ is commutative, so the rank is at most 1. 
 
-The rank is at least 1, because $R$ is an integral domain and letting $m\neq 0$ be one of the generating elements of $M$, we have $\alpha m = 0 \implies \alpha = 0$ and so $\theset{m}$ is linearly independent. 
 
 So the rank is exactly 1. 
 
