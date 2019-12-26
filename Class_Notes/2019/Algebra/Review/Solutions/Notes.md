@@ -52,8 +52,7 @@ Some facts that are useful when doing Sylow theory:
 - $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
 
 
-
-**Products**:
+## Products
 
 **Characterizing direct products**: 
 $G \cong H \times K$ when
