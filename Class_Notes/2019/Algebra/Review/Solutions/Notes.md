@@ -24,13 +24,7 @@ $H \leq G \implies \abs H \divides \abs G$.
 **Corollary**: 
 The order of every element divides the size of $G$, i.e. 
 $$
-g\in G \implies o(g) \divides o(G)
-.$$
-  
-**Useful Corollary**: 
-Any element raised to the (size of $G$) power is the identity, i.e
-$$
-g^{\abs G} = e
+g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 .$$
 
 **Warning:** 
