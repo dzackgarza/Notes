@@ -22,10 +22,16 @@ $H \leq G \implies \abs H \divides \abs G$.
 
 
 **Corollary**: 
-$g\in G \implies o(g) \divides o(G)$.
+The order of every element divides the size of $G$, i.e. 
+$$
+g\in G \implies o(g) \divides o(G)
+.$$
   
-**Corollary**: 
-$g^{\abs G} = e$.
+**Useful Corollary**: 
+Any element raised to the (size of $G$) power is the identity, i.e
+$$
+g^{\abs G} = e
+.$$
 
 Statement of converse: if $n \divides \abs G$, then there exists $H \leq G$ with $\abs H = n$.
 
