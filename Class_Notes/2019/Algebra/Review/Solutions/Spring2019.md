@@ -256,7 +256,15 @@ which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$
 
 ### c
 
+**$M$ is not free:**
 If $M \normal R$ is not principal, then $M$ is not a free $R\dash$module.
+
+
+**$M$ is rank 1**:
+For any module, we can take an element $M\neq 0_M$ and consider its cyclic module $Rm$.
+
+Thus the rank
+
 
 Repeating the argument in (1), since $M$ is not a principal ideal, there are at least 2 generating elements -- however, these are linearly dependent because $R$ is commutative, so the rank is at most 1. 
 
