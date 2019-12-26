@@ -304,7 +304,7 @@ $\Longrightarrow$:
 
 We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$.
 
-Suppose $x\in J(R)$ and suppose towards a contradiction that $1+x$ is not a unit.
+Let $x\in J(R)$ and suppose toward a contradiction that $1+x \not\in R\units$.
 Then consider the ideal $M = \generators{1+x}$. Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in M$.
 This means $M < R$ is a proper ideal, and it is thus contained in some (proper) maximal ideal $M' < R$ by part (1), and so we have $1+x \in M'$.
 However, since $x\in J(R)$, we must have $x\in M'$.
