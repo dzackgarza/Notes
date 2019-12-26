@@ -384,12 +384,7 @@ Then
 
 Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in every entry.
 
-Noting that $B = A+I$, we have
-\begin{align*}
-&B\vector x = \lambda \vector x \\
-&\iff (A+I) \vector x = \lambda \vector x \\
-&\iff A \vector x = (\lambda - 1) \vector x
-,\end{align*}
+
 
 so it suffices to find the eigenvalues of $B$.
 
@@ -400,6 +395,11 @@ This supplies the remaining $p-1$ possibilities.
 Note that this also supplies $p-1$ linearly independent vectors that span the corresponding eigenspace, so $\dim E_{\lambda = 0} = p-1$.
 
 So
+\begin{align*}
+\spec(B) &= \theset{(\lambda_1 = p, m_1 = 1), (\lambda_2 = 0, m_2 = p-1)} \\
+\implies \spec(A) &= \theset{(\lambda_1 = p-1, m_1 = 1), (\lambda_2 = -1, m_2 = p-1)} \\
+&\implies \chi_{A, \QQ}(x) = (x - (p-1))(x - (-1))^{p-1}
+\end{align*}
 
 and geometric multiplicities are preserved, so
 \begin{align*}
