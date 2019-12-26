@@ -249,7 +249,7 @@ But since $\mathcal B$ is a basis for $M$, we have $\vector m = \sum_{i=1}^n s_i
 &= \pi(\vector m) \\
 &= \pi(\sum_{i=1}^n s_i \vector r_i) \\
 &= \sum_{i=1}^n s_i \pi(\vector r_i) \\
-&= \sum_{i=1}^n s_i \vector (\vector r_i + \tor(M)) \\
+&= \sum_{i=1}^n s_i \vector (\vector r_i + \tor(M))
 ,\end{align*}
 
 which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$.
