@@ -185,7 +185,7 @@ The claim is that $S$ contains a maximal element $M$.
 
 $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
 
-To this end, let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$. Let $\hat C = \union_i C_i$, the claim is that $\hat C \in S$ and $\hat C$ is an upper bound for $C$.
+Let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$ and define $\hat C = \union_i C_i$.
 
 **$\hat C$ is an upper bound for $C$:**
 This follows because every $C_i \subseteq \hat C$.
