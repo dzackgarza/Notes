@@ -20,8 +20,12 @@ For a group $G$ acting on a set $X$,
 
 $H \leq G \implies \abs H \divides \abs G$.
 
-- Corollary: $g\in G \implies o(g) \divides o(G)$
-- Corollary: $g^{\abs G} = e$.
+
+**Corollary**: 
+$g\in G \implies o(g) \divides o(G)$
+  
+**Corollary**: 
+$g^{\abs G} = e$.
 
 Statement of converse: if $n \divides \abs G$, then there exists $H \leq G$ with $\abs H = n$.
 
