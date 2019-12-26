@@ -3,8 +3,8 @@
 **Definition:**
 $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
-**Burnside's Formula:**
-Let $X^g = \theset{x\in x\suchthat g\actson x = x}$, then $\abs G \abs{X/G} = \sum \abs {X^g}$.
+
+## Counting Theorems
 
 **Lagrange's Theorem**:
 
@@ -22,6 +22,15 @@ Counterexample to converse: $\abs A_4 = 12$ but there is no subgroup of order 6.
 If $p \divides \abs G$, then $G$ contains an element $g$ of order $p$.
 Corollary: If $p \divides \abs G$, then there is a subgroup $H \leq G$ such that $\abs H = p$. Obtained as $H = <g>$ from above.
 
+**Class Equation**:
+$$
+\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: Z(x_i)]
+$$
+where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
+
+**Burnside's Formula:**
+Let $X^g = \theset{x\in x\suchthat g\actson x = x}$, then $\abs G \abs{X/G} = \sum \abs {X^g}$.
+
 ## Sylow Theorems
 
 **Notation**: 
@@ -36,7 +45,7 @@ A $p\dash$group is a group $G$ such that $g\in G \implies o(g) = p^k$ for some $
    
   - **Corollary**: $\forall p \divides \abs{G}$, there exists an element of order $p$.
 
-   > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
+     > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
 
 2. All sylow$\dash p$ subgroups are conjugate for a given $p$.
    > If $P_1, P_2$ are Sylow$\dash p$ subgroups, then they are conjugate, i.e. $\exists g\in G \suchthat P_1 = gP_2g^{-1}$.
@@ -84,7 +93,7 @@ h \mapsto h(\wait)h^{-1}
 .\end{align*}
 
 
-> Note $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
+> Note: $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
 Modifying the domain: 
 **TODO**
@@ -92,11 +101,7 @@ Modifying the domain:
 Modifying the codomain: 
 **TODO**
 
-**Class Equation**:
-$$
-\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: Z(x_i)]
-$$
-where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
+
 
 ## Isomorphism Theorems
 
