@@ -4,11 +4,15 @@
 $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
 **Notation:**
+For a group $G$ acting on a set $X$,
 
-- $G\cdot x = \theset{g\actson x \suchthat g\in G}$ is the orbit
-- $G_x = \theset{g\in G \suchthat g\actson x = x}$ is the stabilizer
-- $X/G$ is the set of orbits
-- $X^g = \theset{x\in X \suchthat g\actson x = x}$ are the fixed points
+- $G\cdot x = \theset{g\actson x \suchthat g\in G} \subseteq X$ is the orbit
+
+- $G_x = \theset{g\in G \suchthat g\actson x = x} \subseteq G$ is the stabilizer
+
+- $X/G \subset \mathcal P(X)$ is the set of orbits
+
+- $X^g = \theset{x\in X \suchthat g\actson x = x} \subseteq X$ are the fixed points
 
 ## Counting Theorems
 
