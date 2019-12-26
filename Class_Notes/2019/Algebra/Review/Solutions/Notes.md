@@ -92,9 +92,10 @@ $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
 
 ### Sylow 2
 
-All sylow$\dash p$ subgroups are conjugate for a given $p$.
+All sylow$\dash p$ subgroups are conjugate for a given $p$, i.e.
 
-> If $P_1, P_2$ are Sylow$\dash p$ subgroups, then they are conjugate, i.e. $\exists g\in G \suchthat P_1 = gP_2g^{-1}$.
+
+$P_1, P_2$ are Sylow$\dash p$ subgroups, then they are conjugate, i.e. $\exists g\in G \suchthat P_1 = gP_2g^{-1}$.
 
 **Corollary**: $n_p = 1 \implies P \normal G$
 
