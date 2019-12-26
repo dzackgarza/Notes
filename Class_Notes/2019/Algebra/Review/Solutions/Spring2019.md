@@ -93,9 +93,9 @@ $\qed$
 
 ## 3
 
-> Sylow theorems:
-> $n_p \cong 1 \mod p$
-> $n_p \divides m$.
+> - Sylow theorems:
+> - $n_p \cong 1 \mod p$
+> - $n_p \divides m$.
 
 It turns out that $n_3 = 1$ and $n_5 = 1$, so $G \cong S_3 \cross S_5$ since both subgroups are normal.
 
