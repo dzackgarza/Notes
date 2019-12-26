@@ -403,8 +403,13 @@ $$
 so just use polynomial long division.
 
 
-Lemma:
+**Lemma:**
 \begin{align*}
 \Phi_{p}(x)   &=  x^{p-1}+x^{p-2}+\cdots+x+1 \\
 \Phi_{2 p}(x) &=  x^{p-1}-x^{p-2}+\cdots-x+1
 .\end{align*}
+
+**Lemma:**
+$$
+k\divides n \implies \Phi_{n k}(x)=\Phi_{n}\left(x^{k}\right)
+$$
