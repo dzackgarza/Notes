@@ -166,7 +166,7 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 # Rings
 
 **Lemma:**
-If $I\normal R$ is a proper ideal, then $I$ contains no units.
+If $I\normal R$ is a proper ideal $\iff I$ contains no units.
 
 Proof:
 $r\in R\units \intersect I \implies r\inv r \in I \implies 1\in I \implies x\cdot 1 \in I \quad \forall x\in R$.
@@ -190,8 +190,8 @@ Let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subset
 **$\hat C$ is an upper bound for $C$:**
 This follows because every $C_i \subseteq \hat C$.
 
-**$\hat C \in S$:**
-Use the fact that $I \subseteq C_i < R$ for every $C_i$, and no $C_i$ contains a unit (since it would otherwise be all of $R$), $\hat C$ doesn't contain a unit, and is thus proper.
+**$\hat C$ is in $S$:**
+Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ contains a unit, $\hat C$ doesn't contain a unit, and is thus proper.
 
 It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$.
 Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
