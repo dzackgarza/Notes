@@ -165,7 +165,7 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 
 # Rings
 
-Zorn's Lemma:
+**Example Application of Zorn's Lemma:**
 
 
 # Modules
