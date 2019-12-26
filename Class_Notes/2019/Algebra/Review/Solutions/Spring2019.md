@@ -263,7 +263,8 @@ If $M \normal R$ is not principal, then $M$ is not a free $R\dash$module.
 **$M$ is rank 1**:
 For any module, we can take an element $M\neq 0_M$ and consider its cyclic module $Rm$.
 
-Thus the rank
+Thus the rank of $M$ is at least 1, since $\theset{m}$ is a subset of a spanning set. 
+It can not be linearly dependent, since $R$ is an integral domain and $M\subseteq R$, so $\alpha m = 0 \implies \alpha = 0$.
 
 
 Repeating the argument in (1), since $M$ is not a principal ideal, there are at least 2 generating elements -- however, these are linearly dependent because $R$ is commutative, so the rank is at most 1. 
