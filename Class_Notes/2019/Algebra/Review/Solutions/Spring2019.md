@@ -264,7 +264,7 @@ which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$
 *Proof:*
 Let $I = \generators{B}$ for some basis -- if $B$ contains more than 1 element, say $m_1$ and $m_2$, then $m_2m_1 - m_1 m_2 = 0$ is a linear dependence, so $B$ has only one element $m$.
 
-But if $I = \generators{m}$ as an $R\dash$ module, then $I = Rm$ is cyclic
+But then $I = \generators{m} = R_m$ is cyclic as an $R\dash$ module and thus principal as an ideal of $R$.
 
 
 **$M$ is rank 1**:
