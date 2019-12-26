@@ -117,6 +117,8 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
 > *Proof:*
 > Let $H\leq G$ be a $p\dash$subgroup, and let $H\actson \mathrm{Syl}_p(G) \definedas\theset{S_p^i}$ by conjugation.
+> Denote the orbits $G\cdot S_p^i$, and note that the stabilizer is $G_{S_p^i} = H \intersect N_G(S_p^i)$.
+> 
 > By Orbit-Stabilizer, $\abs{G\cdot S_p^i} = [G: G_x] = \abs{G} / \abs{G_x}$
 
 ## Products
