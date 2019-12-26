@@ -109,6 +109,10 @@ $n_p = 1 \iff P \normal G$
 
  3. $n_p = [G : N_G(S_p)]$ where $N_G$ is the normalizer.
 
+
+**Lemma:**
+Every $p\dash$group is contained in a Sylow $p\dash$subgroup.
+
 ## Products
 
 **Characterizing direct products**:
