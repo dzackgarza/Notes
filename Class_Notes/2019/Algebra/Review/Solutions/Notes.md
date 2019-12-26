@@ -51,36 +51,42 @@ Some facts that are useful when doing Sylow theory:
 
 - $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
 
-- Characterizing direct products: $G \cong H \times K$ when
 
-  - $G = HK = \theset{hk \suchthat h\in H, k\in K}$
 
-  - $H\intersect K = \theset{e} \subset G$
+**Products**:
 
-  - $H, K \normal G$
+**Characterizing direct products**: 
+$G \cong H \times K$ when
 
-  > Can relax to only $H\normal G$ to get a semidirect product instead
+- $G = HK = \theset{hk \suchthat h\in H, k\in K}$
 
-**Semidirect Products**:
+- $H\intersect K = \theset{e} \subset G$
 
-Characterizing semidirect products:
+- $H, K \normal G$
+
+> Can relax to only $H\normal G$ to get a semidirect product instead
+
+**Characterizing semidirect products**:
+$G = N \semidirect_\psi H$ when
 
 - $G =  NH$
-- $N \normal G$
-- $H \actson N$ by conjugation via a map $\psi$
 
-$G = N \semidirect_\psi H$ where
+- $N \normal G$
+  
+- $H \actson N$ by conjugation via a map
 \begin{align*}
 \psi: H \to \Aut(N) \\
 h \mapsto h(\wait)h^{-1}
 .\end{align*}
 
 
-Note $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
+> Note $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
-Modifying the domain: **TODO**
+Modifying the domain: 
+**TODO**
 
-Modifying the codomain: **TODO**
+Modifying the codomain: 
+**TODO**
 
 **Class Equation**:
 $$
