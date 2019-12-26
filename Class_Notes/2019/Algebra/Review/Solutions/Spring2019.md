@@ -492,4 +492,6 @@ We can use the fact that $K = \QQ(i, \sqrt 2)$ and thus $L = \QQ(i, \sqrt 2, \sq
 
 > *Proof:* $\zeta_8^2 = i$, and $\zeta_8 = \sqrt{2}\inv + i\sqrt{2}\inv$ so $\zeta_8 + \zeta_8 \inv = 2/\sqrt{2} = \sqrt{2}$.
 
-We can also use the fact that $\QQ(\sqrt 2) \subseteq \QQ(\sqrt[4] 2)$, and so $L = \QQ(i, \sqrt[4] 2)$
+We can also use the fact that $\QQ(\sqrt 2) \subseteq \QQ(\sqrt[4] 2)$, and so $L = \QQ(i, \sqrt[4] 2)$.
+
+But then
