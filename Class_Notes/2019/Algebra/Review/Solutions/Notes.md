@@ -375,12 +375,13 @@ Then $f(x) \divides \phi_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
 ## Cyclotomic Polynomials
 
-> Let $\zeta_n = e^{2\pi i/n}$, then
+**Definition:**
+Let $\zeta_n = e^{2\pi i/n}$, then
 $$
 \Phi_{n}(x)=\prod_{k=1 \atop (j, n)=1}^{n}\left(x- \zeta_n^k\right)
 $$
 
-Computing $\Phi_n$:
+**Computing $\Phi_n$:**
 
 1. 
 $$
