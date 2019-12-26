@@ -119,7 +119,7 @@ If $G$ is finite, every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$
 > Let $H \leq G$ be a $p\dash$subgroup. 
 > If $H$ is not *properly* contained in any other $p\dash$subgroup, it is a Sylow $p\dash$subgroup by definition.
 > Otherwise, it is contained in some $p\dash$subgroup $H^1$.
-> Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and $\union_i H^i$ is by definition a Sylow $p\dash$subgroup.
+> Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and (by Zorn's lemma?) $\union_i H^i$ is by definition a Sylow $p\dash$subgroup.
 
 ## Products
 
