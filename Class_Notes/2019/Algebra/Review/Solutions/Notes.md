@@ -101,9 +101,9 @@ S_p^1, S_p^2 \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^1
 **Corollary**: 
 $n_p = 1 \iff P \normal G$
 
-### Sylow 3
+### Sylow 3 (Numerical Constraints)
 
-Numerical Constraints
+
 
  1. $n_p \divides m~$ (in particular, $n_p \leq m$),
 
