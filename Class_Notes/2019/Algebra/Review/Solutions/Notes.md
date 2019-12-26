@@ -116,7 +116,9 @@ $p$ does not divide $n_p$.
 If $G$ is finite, every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
 > *Proof:*
-> Suppose toward a contradiction that $H$ is 
+> Let $H \leq G$ be a $p\dash$subgroup. 
+> If $H$ is not properly contained in any other $p\dash$subgroup, it is a Sylow $p\dash$subgroup by definition.
+> Otherwise, it is contained in some $p\dash$subgroup $H^1$.
 
 ## Products
 
