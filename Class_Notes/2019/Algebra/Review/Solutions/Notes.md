@@ -62,7 +62,7 @@ $$
 ## Sylow Theorems
 
 **Notation**:
-For any $p$, let $\mathrm{Syl}_p(G)$ be the set of Sylow$\dash p$ subgroups of $G$, and $n_p = \abs{\mathrm{Syl}_p(G)}$ the number of such subgroups.
+For any $p$, let $\mathrm{Syl}_p(G)$ be the set of Sylow$\dash p$ subgroups of $G$, and let $n_p = \abs{\mathrm{Syl}_p(G)}$ the number of such subgroups.
 
 Write
 
