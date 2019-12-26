@@ -498,3 +498,5 @@ But then
 \begin{align*}
 [L: \QQ] = [L: \QQ(\sqrt[4] 2)] ~[\QQ(\sqrt[4] 2): \QQ] = 2 \cdot 4 = 8
 .\end{align*}
+
+> Here we use the fact that the minimal polynomial of $i$ over any subfield of $\RR$ is always $x^2 + 1$.
