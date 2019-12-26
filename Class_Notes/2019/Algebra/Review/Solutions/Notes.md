@@ -113,7 +113,7 @@ $n_p = 1 \iff P \normal G$
 $p$ does not divide $n_p$.
 
 **Lemma:**
-Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
+If $G$ is finite, every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
 > *Proof:*
 > 
