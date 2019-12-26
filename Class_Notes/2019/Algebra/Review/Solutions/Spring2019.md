@@ -254,9 +254,7 @@ But since $\mathcal B$ is a basis for $M$, we have $\vector m = \sum_{i=1}^n s_i
 
 which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$.
 
-
-Conversely, to see that $\rank M' \geq n$, towards a contradiction suppose that $B'' = \theset{\vector x_i + \tor M}_{i=1}^{n+1}$ is linearly independent in $M'$. Then the lift of this to $M$ given by $\theset{\vector x_i}_{i=1}^{n+1}$ is a set of $n+1 > \rank M$ elements, and thus has a linear dependence. But any linear dependence in $M$ descends to a linear dependence in $M'$: with this dependence, we can produce $s_i$ such that $\sum s_i \vector x_i = \vector 0 \in M$ where not all $s_i=0$. But $\vector 0 \in \tor M$, so $\sum s_i \vector x_i \in \tor M$, which exactly means $\sum s_i \vector x_i = 0$ in the quotient $M/\tor M$.
-
+### c
 1. Claim: $M \normal R$ is a free $R\dash$module iff $M$ is principal. From this, we will be able to conclude that if $M$ is non-principal then $M$ is not free as an $R\dash$module.
 2. $\Longrightarrow$: Suppose $M$ is free as an $R\dash$module, and let $B = \theset{\vector m_i}_{i\in I}$ be a basis so we can write $M = \generators{B}$.
 Suppose that $\abs{B} \geq 2$, so we can pick at least 2 basis elements $\vector m_1\neq \vector m_2$, and consider
