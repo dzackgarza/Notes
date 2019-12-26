@@ -50,10 +50,12 @@ $$
 where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
 
 **Burnside's Formula:**
-
 $$
 \abs G \abs{X/G} = \sum_{g\in G} \abs {X^g}
 .$$
+
+**Orbit-Stabilizer**:
+
 
 ## Sylow Theorems
 
