@@ -55,7 +55,9 @@ $$
 .$$
 
 **Orbit-Stabilizer**:
-
+$$
+\abs{G\cdot x} = 
+$$
 
 ## Sylow Theorems
 
