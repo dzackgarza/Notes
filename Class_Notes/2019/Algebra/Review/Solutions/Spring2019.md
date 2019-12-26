@@ -226,7 +226,12 @@ $\rank M' \leq n$:
 
 Let $\mathcal B' = \pi(\mathcal B) = \theset{\vector r_i + \tor(M)}_{i=1}^n$, and suppose toward a contradiction that $\mathcal B'$ is linearly dependent.
 
-Then there exist $s_i$ such that $\sum s_i (\vector r_i + \tor M) = \vector 0_{M'}$ where not all $s_i$ are zero.
+Then 
+$$
+\exists \theset{s_i}_{i=1}^n \text{ not all $0_R$ such that }
+\sum_{i=1}^n s_i (\vector r_i + \tor M) = \vector 0_{M'}
+.$$ 
+
 
 But $x = 0 \in M' \iff x \in \tor(M)$, and so 
 $$
