@@ -5,11 +5,11 @@ $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
 **Notation:**
 
-- $G\cdot x = \theset{gx \suchthat g\in G}$ is the orbit
-- $G_x = \theset{}
+- $G\cdot x = \theset{g\actson x \suchthat g\in G}$ is the orbit
+- $G_x = \theset{g\in G \suchthat g\actson x = x}$ is the stabilizer
+- $X/G$ is the set of orbits
 
-> - Notation: $X/G$ is the set of $G\dash$orbits
-> - Notation: $X^g = \theset{x\in x\suchthat g\actson x = x}$
+> - Notation: $X^g = \theset{x\in X \suchthat g\actson x = x}$
 
 ## Counting Theorems
 
