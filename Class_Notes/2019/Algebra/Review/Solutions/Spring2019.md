@@ -255,8 +255,10 @@ But since $\mathcal B$ is a basis for $M$, we have $\vector m = \sum_{i=1}^n s_i
 which expresses $\vector x$ as a linear combination of elements in $\mathcal B'$.
 
 ### c
-1. Claim: $M \normal R$ is a free $R\dash$module iff $M$ is principal. From this, we will be able to conclude that if $M$ is non-principal then $M$ is not free as an $R\dash$module.
-2. $\Longrightarrow$: Suppose $M$ is free as an $R\dash$module, and let $B = \theset{\vector m_i}_{i\in I}$ be a basis so we can write $M = \generators{B}$.
+**Claim**: 
+$M \normal R$ is a free $R\dash$module iff $M$ is principal. 
+
+1. $\Longrightarrow$: Suppose $M$ is free as an $R\dash$module, and let $B = \theset{\vector m_i}_{i\in I}$ be a basis so we can write $M = \generators{B}$.
 Suppose that $\abs{B} \geq 2$, so we can pick at least 2 basis elements $\vector m_1\neq \vector m_2$, and consider
 $$
 \vector c = \vector m_1 \vector m_2 - \vector m_2 \vector m_1,
