@@ -489,3 +489,7 @@ Thus there is exactly **one** intermediate field of degree 2.
 Let $L = \QQ(\zeta, \sqrt[4] 2)$.
 
 We can use the fact that $K = \QQ(i, \sqrt 2)$ and thus $L = \QQ(i, \sqrt 2, \sqrt[4] 2)$.
+
+> *Proof:* $\zeta_8^2 = i, \zeta_8 = \sqrt{2}\inv + i\sqrt{2}\inv, \zeta_8 + \zeta_8 \inv = 
+
+We can also use the fact that $\QQ(\sqrt 2) \subseteq \QQ(\sqrt[4] 2)$, and so $L = \QQ(i, \sqrt[4] 2)$
