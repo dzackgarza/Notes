@@ -486,5 +486,6 @@ We have $\Gal(K/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(4)$, which is exactly one su
 Thus there is exactly **one** intermediate field of degree 2.
 
 ### c
+Let $L = \QQ(\zeta, \sqrt[4] 2)$
 
 We can use the fact that $K = \QQ(i, \sqrt 2)$ and thus $
