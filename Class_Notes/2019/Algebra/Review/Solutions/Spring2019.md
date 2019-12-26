@@ -304,7 +304,7 @@ $\implies$:
 
 We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$.
 
-Let $x\in J(R)$, so it is in every maximal ideal, and suppose toward a contradiction that $1+x \not\in R\units$.
+Let $x\in J(R)$, so it is in every maximal ideal, and suppose toward a contradiction that $1+x$ is **not** a unit.
 
 Then consider $I = \generators{1+x} \normal R$. 
 Since $1+x$ is not a unit, we can't write $s(1+x) = 1$ for any $s\in R$, and so $1 \not\in I$ and $I\neq R$
