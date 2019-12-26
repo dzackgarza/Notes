@@ -82,7 +82,7 @@ Some useful facts:
 - The Chinese Remainder theorem: $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
 
 
-### Sylow 1 (Converse Lagrange)
+### Sylow 1 (Converse Lagrange for Primes)
 
 $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
 
