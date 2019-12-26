@@ -168,8 +168,11 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 **Lemma:**
 If $I\normal R$ is a proper ideal $\iff I$ contains no units.
 
-Proof:
+*Proof:*
 $r\in R\units \intersect I \implies r\inv r \in I \implies 1\in I \implies x\cdot 1 \in I \quad \forall x\in R$.
+
+Lemma:
+If $I_1 \subseteq I_2 \substeq \cdots$ are ideals then $\union_j I_j$ is an ideal.
 
 **Example Application of Zorn's Lemma:**
 Every proper ideal is contained in a maximal ideal.
