@@ -103,8 +103,6 @@ $n_p = 1 \iff P \normal G$
 
 ### Sylow 3 (Numerical Constraints)
 
-
-
  1. $n_p \divides m~$ (in particular, $n_p \leq m$),
 
  2. $n_p \equiv 1 \mod p$,
