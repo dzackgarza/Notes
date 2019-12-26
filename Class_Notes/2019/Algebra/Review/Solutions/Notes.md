@@ -165,10 +165,8 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 
 # Rings
 
-**Fields:**
-$GF(p^n)$ is obtained as $\displaystyle\frac{\FF_p}{\generators{f}}$ where $f \in \FF_p[x]$ is irreducible of degree $n$.
+Zorn's Lemma:
 
-Eisenstein's Criterion: If $f(x) = \sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ such that both $p\notdivides a_n$ and $p^2 \notdivides a_0$ but $p \divides a_{i\neq n}$, then $f$ is irreducible.
 
 # Modules
 
