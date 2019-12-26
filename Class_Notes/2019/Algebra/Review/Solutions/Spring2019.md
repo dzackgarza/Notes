@@ -479,6 +479,9 @@ $$
 \Phi_{n}(z)=\prod_{d | n, d>0}\left(z^{d}-1\right)^{\mu\left(\frac{n}{d}\right)}
 $$
 where
+$$
+\mu(n) \equiv\left\{\begin{array}{ll}{0} & {\text { if } n \text { has one or more repeated prime factors }} \\ {1} & {\text { if } n=1} \\ {(-1)^{k}} & {\text { if } n \text { is a product of } k \text { distinct primes, }}\end{array}\right.
+$$
 
 ### a
 Note that $\zeta$ is a primitive 8th root of unity, so we are looking for the degree of $\Phi_8$, the 8th cyclotomic polynomial, which is $\phi(8) = \phi(2^3) = 2^2(1) = 4$.
