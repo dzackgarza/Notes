@@ -188,9 +188,11 @@ $S$ is a poset, ordered by set inclusion, so if we can show that every chain has
 Let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$ and define $\hat C = \union_i C_i$.
 
 **$\hat C$ is an upper bound for $C$:**
+
 This follows because every $C_i \subseteq \hat C$.
 
 **$\hat C$ is in $S$:**
+
 Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ contains a unit, $\hat C$ doesn't contain a unit, and is thus proper.
 
 It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$.
