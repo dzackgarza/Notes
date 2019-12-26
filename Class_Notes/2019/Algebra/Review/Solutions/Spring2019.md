@@ -268,7 +268,11 @@ It can not be linearly dependent, since $R$ is an integral domain and $M\subsete
 
 However, the rank is at most 1 since $R$ is commutative.
 If we take two elements $\vector m, \vector n \in M$, then since $m, n\in R$ can be regarded as ring elements as well, we have $nm = mn$. 
-So $n\vector m + m\vector n = 0_R = 0_M$ is a linear dependence.
+So 
+$$
+(n)\vector m + (-m)\vector n = 0_R = 0_M
+$$ 
+is a linear dependence.
 
 
 Repeating the argument in (1), since $M$ is not a principal ideal, there are at least 2 generating elements -- however, these are linearly dependent because $R$ is commutative, so the rank is at most 1. 
