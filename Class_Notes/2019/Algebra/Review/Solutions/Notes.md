@@ -109,6 +109,8 @@ $n_p = 1 \iff P \normal G$
 
  3. $n_p = [G : N_G(S_p)]$ where $N_G$ is the normalizer.
 
+**Corollary:**
+$p$ does not divide $n_p$.
 
 **Lemma:**
 Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
