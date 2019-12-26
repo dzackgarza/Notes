@@ -278,7 +278,7 @@ $$
 (n)\vector m + (-m)\vector n = 0_R = 0_M
 $$
 is a linear dependence.
-
+2
 **$M$ is torsion-free**:
 
 Let $x \in \tor M$, then there exists some $r\neq 0\in R$ such that $rx = 0$.
