@@ -226,7 +226,7 @@ Then there exist $s_i$ such that $\sum s_i (\vector r_i + \tor M) = \vector 0_{M
 
 But $x = 0 \in M' \iff x \in \tor(M)$, and so 
 $$
-\sum s_i \vector r_i \in \tor M
+\sum_i=1}^n s_i \vector r_i \in \tor (M)
 .$$
 
 But this means that we can produce an element $\alpha_i\neq 0 \in M$ such that $\alpha_i \sum s_i \vector r_i = \vector 0 \in R$. However, then letting $s_i' = \alpha_i s_i$, we would have $\sum s_i' \vector r_i = \vector 0 \in R$. Since $R$ is an integral domain and we had $\alpha_i\neq 0$ and not all $s_i=0$, there is at least one nonzero $s_i'$ -- but this says that $B$ is linearly *dependent* in $M$, a contradiction. So $B'$ is linearly independent in $M'$, and $\rank M' \leq n$.
