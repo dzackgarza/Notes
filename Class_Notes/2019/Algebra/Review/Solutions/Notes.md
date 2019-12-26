@@ -93,7 +93,7 @@ $\forall p \divides \abs{G}$, there exists an element of order $p$.
 
 ### Sylow 2
 
-All sylow$\dash p$ subgroups are conjugate for a given $p$, i.e.
+All sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
 \begin{align*}
 S_p^1, S_p^2 \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^1g\inv = S_p^2
 .\end{align*}
@@ -109,7 +109,7 @@ Numerical Constraints
 
  2. $n_p \equiv 1 \mod p$,
 
- 3. $n_p = [G : N_G(P)]$ where $N_G$ is the normalizer.
+ 3. $n_p = [G : N_G(S_p)]$ where $N_G$ is the normalizer.
 
 ## Products
 
