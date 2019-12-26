@@ -56,7 +56,7 @@ $$
 
 **Orbit-Stabilizer**:
 $$
-\abs{G\cdot x} = [G: G_x]
+\abs{G\cdot x} = [G: G_x] = \abs{G} / \abs{G_x} \text{if $G$ is finite}
 $$
 
 ## Sylow Theorems
@@ -116,8 +116,8 @@ $p$ does not divide $n_p$.
 Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
 > *Proof:*
-> Let $H\leq G$ be a $p\dash$subgroup, and let $H\actson \mathrm{Syl}_p(G)$ by conjugation.
-> 
+> Let $H\leq G$ be a $p\dash$subgroup, and let $H\actson \mathrm{Syl}_p(G) \definedas\theset{S_p^i}$ by conjugation.
+> By Orbit-STabilizer, $n_p = \sum 
 
 ## Products
 
