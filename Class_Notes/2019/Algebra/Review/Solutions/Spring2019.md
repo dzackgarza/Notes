@@ -276,7 +276,8 @@ is a linear dependence.
 
 **$M$ is torsion-free**:
 
-Finally, $M$ is torsion-free: let $x\in M$, then if $x \in \tor M$, there exists some $r\neq 0\in R$ such that $rx = 0$. Since $R$ is an integral domain, this forces $x=0$, so 0 is the only torsion element and thus $M$ is torsion-free. 
+Let $x \in \tor M$, then there exists some $r\neq 0\in R$ such that $rx = 0$. 
+But $x\in R$ and $R$ is an integral domain, so $x=0$, and thus $\tor(M) = \theset{0_R}$. 
 
 $\qed$
 
