@@ -171,7 +171,7 @@ If $I\normal R$ is a proper ideal $\iff I$ contains no units.
 *Proof:*
 $r\in R\units \intersect I \implies r\inv r \in I \implies 1\in I \implies x\cdot 1 \in I \quad \forall x\in R$.
 
-Lemma:
+**Lemma:**
 If $I_1 \subseteq I_2 \substeq \cdots$ are ideals then $\union_j I_j$ is an ideal.
 
 **Example Application of Zorn's Lemma:**
@@ -198,8 +198,7 @@ This follows because every $C_i \subseteq \hat C$.
 
 Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ contains a unit, $\hat C$ doesn't contain a unit, and is thus proper.
 
-It is an ideal because given any $r\in R$ and any $x\in \hat C$, we have $x\in C_i$ for some $i$ and thus $rx \in C_i \subset \hat C$.
-Since $C$ was an arbitrary chain, we've shown that every chain has an upper bound.
+$\qed$
 
 
 # Modules
