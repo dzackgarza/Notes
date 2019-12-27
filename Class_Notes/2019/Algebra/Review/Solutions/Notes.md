@@ -361,7 +361,8 @@ S = \theset{J \suchthat I   \subseteq J < R}
 **Lemma:**
 Every $r\in R$ is either a unit or a zero divisor.
 
-> *Proof:* 
+> *Proof:*
+>  
 
 # Modules
 
