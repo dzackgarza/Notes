@@ -687,7 +687,7 @@ A field extension $L/k$ is **normal** iff
 A field extension $L/k$ is **separable** iff
 
 - For every $\alpha \in L, \min(\alpha, k)$ equivalently has 
-  - No multiple roots
+  - No repeated factors/roots
   - Nonzero derivative
 
 **Definition:**
