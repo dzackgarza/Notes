@@ -469,6 +469,21 @@ Corresponds to the **Invariant Factor Decomposition** of $T$
 
 - Each invariant factor corresponds to a block of the RCF.
 
+**Lemma**:
+For a linear operator on a vector space of nonzero finite dimension, TFAE:
+
+  - The minimal polynomial is equal to the characteristic polynomial.
+
+  - The list of invariant factors has length one.
+
+  - The Rational Canonical Form has a single block.
+
+  - The operator has a matrix similar to a companion matrix.
+
+  - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
+  
+  - $T$ has $\dim V$ distinct eigenvalues
+
 ### Jordan Canonical Form
 
 Corresponds to the **Elementary Divisor Decomposition** of $T$
@@ -512,25 +527,9 @@ $$
 p(x) = \det(A - x1))= \det(SNF(A - x1))
 .$$
 
-- ? Invariant factors of $A$ are the invariant factors of $xI - A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
+- ? Invariant factors of $A$ are the invariant factors of $xI 
 
-
-**Lemma**:
-For a linear operator on a vector space of nonzero finite dimension, TFAE:
-
-  - The minimal polynomial is equal to the characteristic polynomial.
-
-  - The list of invariant factors has length one.
-
-  - The Rational Canonical Form has a single block.
-
-  - The operator has a matrix similar to a companion matrix.
-
-  - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
-  
-  - $T$ has $\dim V$ distinct eigenvalues
-
-
+- A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
 
 
 ## Matrix Counterexamples
