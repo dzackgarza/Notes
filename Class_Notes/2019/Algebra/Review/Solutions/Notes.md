@@ -686,10 +686,10 @@ A field extension $L/k$ is **normal** iff
 **Definition:**
 A field extension $L/k$ is **separable** iff
 
-- For every $\alpha \in L, \min(\alpha, k)$ equivalently has 
+- For every $\alpha \in L, f(x) \definedas\min(\alpha, k)$ equivalently has 
   - No repeated factors/roots
-  - Nonzero derivative
-  - $\gcd(f, f') = 1$
+  - $f' \not\equiv 0$, or
+  - $\gcd(f, f') = 1$.
 
 **Definition:**
 
