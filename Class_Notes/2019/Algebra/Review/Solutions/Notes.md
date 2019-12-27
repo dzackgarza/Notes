@@ -694,7 +694,7 @@ A field extension $L/k$ is **separable** iff
   - $f' \not\equiv 0$, or
   - $\gcd(f, f') = 1$.
 
-Lemma:
+**Lemma:**
 If $\ch k = 0$ then every *algebraic* extension $L/k$ is separable.
 
 **Definition:**
