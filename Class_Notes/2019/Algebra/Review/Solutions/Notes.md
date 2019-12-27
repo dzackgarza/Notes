@@ -687,4 +687,10 @@ Definition:
 A field extension $L/k$ is **separable** iff
 
 **Definition:**
-A finite field extension $L/k$ is *Galois* $\iff L$ is normal and separable.
+
+Let $L/k$ be a finite field extension.
+TFAE:
+
+- $L/k$ is **Galois**
+- $L/k$ is normal and separable.
+- $L/k$ is the splitting field of a separable polynomial
