@@ -359,11 +359,11 @@ S = \theset{J \suchthat I   \subseteq J < R}
 ## Unsorted
 
 **Lemma:**
-Every $a\in R$ is either a unit or a zero divisor.
+Every $a\in R$ for a finite ring is either a unit or a zero divisor.
 
 > *Proof:*
 > Let $a\in R$ and define $\phi(x) = ax$.
-> If $\phi$ is 
+> If $\phi$ is injective
 
 # Modules
 
