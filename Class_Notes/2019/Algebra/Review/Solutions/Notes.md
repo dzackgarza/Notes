@@ -469,12 +469,6 @@ Corresponds to the **Invariant Factor Decomposition** of $T$
 
 - Each invariant factor corresponds to a block of the RCF.
 
-**Lemma:**
-
-TFAE:
-
-
-
 ### Jordan Canonical Form
 
 Corresponds to the **Elementary Divisor Decomposition** of $T$
