@@ -677,7 +677,7 @@ then $f$ is irreducible.
 Definition:
 A field extension $L/k$ is **normal** iff
 
-- Every embedding $L \inject \overline k$
+- Every embedding $\sigma: L \injects \overline k$
 
 Definition:
 A field extension $F/k$ is *Galois* $\iff$ $F$ is 
