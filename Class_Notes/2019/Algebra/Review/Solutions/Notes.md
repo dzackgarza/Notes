@@ -595,7 +595,7 @@ $$
 1 & 1 & 0 \\
 0 & 1 & 1 \\
 0 & 0 & 1 \\
-\end{array}\right] \mathbf{????}
+\end{array}\right]
 .\end{align*}
 
 1. Matrix roots of unity:
