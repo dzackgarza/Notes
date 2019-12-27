@@ -689,6 +689,7 @@ A field extension $L/k$ is **separable** iff
 - For every $\alpha \in L, \min(\alpha, k)$ equivalently has 
   - No repeated factors/roots
   - Nonzero derivative
+  - $\gcd(f, f') = 1$
 
 **Definition:**
 
