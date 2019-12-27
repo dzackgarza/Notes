@@ -675,9 +675,9 @@ then $f$ is irreducible.
 ## Galois Theory
 
 Definition:
-A field extension is normal iff
+A field extension $L/k$ is **normal** iff
 
-- 
+- Every embedding $L \inject \overline k$
 
 Definition:
 A field extension $F/k$ is *Galois* $\iff$ $F$ is 
