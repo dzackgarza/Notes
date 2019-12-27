@@ -199,7 +199,7 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 > Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
 
 
-## Series
+## Series of Groups
 
 Definition:
 Simple
@@ -355,6 +355,13 @@ S = \theset{J \suchthat I   \subseteq J < R}
 > Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ contains a unit, $\hat C$ doesn't contain a unit, and is thus proper.
 > 
 > $\qed$
+
+## Unsorted
+
+**Lemma:**
+Every $r\in R$ is either a unit or a zero divisor.
+
+> *Proof:* 
 
 # Modules
 
