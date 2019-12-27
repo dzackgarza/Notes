@@ -697,7 +697,7 @@ TFAE:
 - $\abs{\aut(L/k)} = [L: k]$
 
 **Lemmas about towers:**
-Let $k \injects F \injects L$ be a tower of field extensions
+Let $L/F/k$ be a tower of field extensions
 
 - $L/k$ normal $\implies L/F$ normal.
 - $L/k$ Galois $\implies L/F$ Galois.
