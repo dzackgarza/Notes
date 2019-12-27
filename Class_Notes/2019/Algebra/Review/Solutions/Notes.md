@@ -671,3 +671,12 @@ If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ su
 - $p^2 \notdivides a_0$ but $p \divides a_{i\neq n}$,
 
 then $f$ is irreducible.
+
+## Galois Theory
+
+Definition:
+A field extension $F/k$ is *Galois* $\iff$ $F$ is 
+
+- **Normal**:
+
+- **Separable**:
