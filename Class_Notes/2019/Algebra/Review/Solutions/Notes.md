@@ -364,7 +364,7 @@ Every $a\in R$ for a finite ring is either a unit or a zero divisor.
 > *Proof:*
 > Let $a\in R$ and define $\phi(x) = ax$.
 > If $\phi$ is injective, then it is surjective, so $1 = ax$ for some $x \implies x\inv = a$.
-> Otherwise,
+> Otherwise, $ax_1 = ax_2$ with $x_1 \neq x_2 \implies a(x_1 - x_2) = 0$ and $x_1 - x_2 \neq 0$, so $a$ is a zero divisor.
 
 # Modules
 
