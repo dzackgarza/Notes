@@ -359,10 +359,10 @@ S = \theset{J \suchthat I   \subseteq J < R}
 ## Unsorted
 
 **Lemma:**
-Every $r\in R$ is either a unit or a zero divisor.
+Every $a\in R$ is either a unit or a zero divisor.
 
 > *Proof:*
->  
+> Let $a\in R$ and define $\phi(a) = 
 
 # Modules
 
