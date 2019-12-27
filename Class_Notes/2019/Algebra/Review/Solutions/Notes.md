@@ -2,7 +2,7 @@
 
 Definitions:
 
-- Parity of a permutation: 
+- Parity of a permutation: Even $\iff$ product of an even number of transpositions.
 
 **Definition**
 $A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sign(\sigma) = (-1)^{m}$ where $m$ is the number of cycles of even length.
