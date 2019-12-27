@@ -362,7 +362,8 @@ S = \theset{J \suchthat I   \subseteq J < R}
 Every $a\in R$ is either a unit or a zero divisor.
 
 > *Proof:*
-> Let $a\in R$ and define $\phi(a) = 
+> Let $a\in R$ and define $\phi(x) = ax$.
+> If $\phi$ is 
 
 # Modules
 
