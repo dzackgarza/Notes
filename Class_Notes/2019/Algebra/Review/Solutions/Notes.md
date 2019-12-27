@@ -675,7 +675,7 @@ then $f$ is irreducible.
 ## Galois Theory
 
 Definition:
-A field extension $L/k$ is algebraic iff 
+A field extension $L/k$ is algebraic iff every $\alpha \in L$ is the root of some $f\in k[x]$.
 
 **Definition:**
 A field extension $L/k$ is **normal** iff
