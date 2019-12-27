@@ -1,5 +1,6 @@
 # Group Theory
 
+## The Symmetric Group
 **Definitions:**
 
 - Parity of a permutation: Even $\iff$ product of an even number of transpositions.
@@ -16,6 +17,7 @@ If $\sigma$ has an *even* number of *odd* cycles (i.e. an even number of *even-l
 **Definition:**
 $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
+## Group Actions
 **Notation:**
 For a group $G$ acting on a set $X$,
 
