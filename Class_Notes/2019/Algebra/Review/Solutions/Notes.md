@@ -599,8 +599,11 @@ $$
 .\end{align*}
 
 5. A square root
-\begin{align*}
-
+\begin{align*} \sqrt{I_2} = 
+\left[\begin{array}{ccc}
+0 & 1\\
+1 & 0
+\end{array}\right]
 .\end{align*}
 
 
