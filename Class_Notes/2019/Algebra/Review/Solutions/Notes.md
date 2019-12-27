@@ -1,5 +1,9 @@
 # Group Theory
 
+Definitions:
+
+- Parity of a permutation: 
+
 **Definition**
 $A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sign(\sigma) = (-1)^{m}$ where $m$ is the number of cycles of even length.
 
