@@ -5,6 +5,7 @@ Definitions:
 - Parity of a permutation: Even $\iff$ product of an even number of transpositions.
 
 **Definition**
+The **alternating group** is the subgroup of **even** permutations, i.e.
 $A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sign(\sigma) = (-1)^{m}$ where $m$ is the number of cycles of even length.
 
 **Definition:**
