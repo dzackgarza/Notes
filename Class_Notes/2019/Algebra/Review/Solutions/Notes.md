@@ -674,7 +674,7 @@ then $f$ is irreducible.
 
 ## Galois Theory
 
-Definition:
+**Definition:**
 A field extension $L/k$ is **normal** iff
 
 - Every embedding $\sigma: L \injects \overline k$ that is a lift of the identity over $k$ satisfies $\sigma(L) = L$.
@@ -684,8 +684,7 @@ A field extension $L/k$ is **normal** iff
 - If $L$ is separable: $L$ is the splitting field of some irreducible $f\in k[x]$.
 
 Definition:
-A field extension $F/k$ is *Galois* $\iff$ $F$ is 
+A field extension $L/k$ is **separable** iff
 
-- **Normal**:
-
-- **Separable**:
+**Definition:**
+A finite field extension $L/k$ is *Galois* $\iff L$ is normal and separable.
