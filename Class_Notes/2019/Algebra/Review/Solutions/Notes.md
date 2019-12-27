@@ -674,6 +674,9 @@ then $f$ is irreducible.
 
 ## Galois Theory
 
+Definition:
+A field extension $L/k$ is algebraic iff 
+
 **Definition:**
 A field extension $L/k$ is **normal** iff
 
