@@ -681,7 +681,7 @@ A field extension $L/k$ is **normal** iff
 
 - Every irreducible $f\in k[x]$ that has one root in $L$ has all of its roots in $L$
 
-- If $L$ is separable: 
+- If $L$ is separable: $L$ is the splitting field of some irreducible $f\in k[x]$.
 
 Definition:
 A field extension $F/k$ is *Galois* $\iff$ $F$ is 
