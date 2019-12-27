@@ -697,7 +697,6 @@ A field extension $L/k$ is **separable** iff
 **Lemma:**
 If $\ch k = 0$ or $k$ is finite, then every *algebraic* extension $L/k$ is separable.
 
-
 **Definition:**
 
 Let $L/k$ be a finite field extension.
