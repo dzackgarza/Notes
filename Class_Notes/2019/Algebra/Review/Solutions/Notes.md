@@ -10,6 +10,9 @@ Definitions:
 The **alternating group** is the subgroup of **even** permutations, i.e.
 $A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sign(\sigma) = (-1)^{m}$ where $m$ is the number of cycles of even length.
 
+**Corollary:**
+If $\sigma$ has 
+
 **Definition:**
 $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
