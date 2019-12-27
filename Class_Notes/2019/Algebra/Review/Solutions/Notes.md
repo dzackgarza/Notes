@@ -436,6 +436,21 @@ Fix some notation:
 \min_T(x): \quad & \text{The minimal polynomial of } A
 .\end{align*}
 
+
+**Definition:**
+Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff$
+
+  - $A,B$ have the same JCF
+
+**Definition:**
+Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
+
+  - They have the same rank,
+
+  - They have the same invariant factors, *and*
+
+  - They have the same JCF
+
 ### Rational Canonical Form
 
 Corresponds to the **Invariant Factor Decomposition** of $T$
@@ -506,7 +521,8 @@ p(x) = \det(A - x1))= \det(SNF(A - x1))
 - ? Invariant factors of $A$ are the invariant factors of $xI - A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
 
 
-- For a linear operator on a vector space of nonzero finite dimension, TFAE:
+**Lemma**:
+For a linear operator on a vector space of nonzero finite dimension, TFAE:
 
   - The minimal polynomial is equal to the characteristic polynomial.
 
@@ -519,19 +535,6 @@ p(x) = \det(A - x1))= \det(SNF(A - x1))
   - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
 
 
-**Definition:**
-Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff$
-
-  - $A,B$ have the same JCF
-
-**Definition:**
-Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
-
-  - They have the same rank,
-
-  - They have the same invariant factors, *and*
-
-  - They have the same JCF
 
 
 ## Matrix Counterexamples
