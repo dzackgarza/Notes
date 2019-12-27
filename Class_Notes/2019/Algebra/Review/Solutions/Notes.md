@@ -713,4 +713,4 @@ Let $L/F/k$ be a tower of field extensions
 - $L/k$ Galois $\implies L/F$ Galois.
 - $F/k$ is Galois $\iff \Gal(L/F) \normal \Gal(L/k)$
   - $\implies \Gal(F/k) \cong \frac{\Gal(L/k)}{\Gal(L/F)}$
-- **Every** quadratic extension is Galois
+- **Every** quadratic extension is Galois.
