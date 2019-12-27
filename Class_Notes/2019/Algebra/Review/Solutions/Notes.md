@@ -455,7 +455,7 @@ Corresponds to the **Invariant Factor Decomposition** of $T$
 - Each invariant factor corresponds to a block of the RCF.
 
 **Lemma:**
-If $\chi_A(x) = \min_A(x)$, then $A$ is similar to the companion matrix for $\chi_A$ and there exists a cyclic vector $\vector v$ such that $V \cong \spanof_k(\theset{A^k \vector v})$.
+If $\chi_A(x) = \min_A(x)$, then $A$ is similar to the companion matrix for $\chi_A$ and there exists a cyclic vector $\vector v$ such that $V \cong \spanof_k(\theset{A^j \vector v})$.
 
 ### Jordan Canonical Form
 
