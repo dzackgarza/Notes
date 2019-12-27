@@ -695,3 +695,8 @@ TFAE:
 - $L/k$ is normal and separable.
 - $L/k$ is the splitting field of a separable polynomial
 - $\abs{\aut(L/k)} = [L: k]$
+
+**Lemmas about towers:**
+Let $k \injects F \injects L$ be a tower of field extensions
+
+- $L/k$ Galois $\implies L/F$ Galois.
