@@ -199,6 +199,26 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 > Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
 
 
+## Series
+
+Definition:
+Simple
+
+Definition:
+Irreducible
+
+Definition:
+Composition Series
+
+Definition:
+Normal Series
+
+Definition:
+Derived Series
+
+Theorem:
+x series terminates iff $G$ is simple?
+
 # Rings
 
 ## Definitions and Basics
