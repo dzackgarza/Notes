@@ -156,8 +156,6 @@ Modifying the domain:
 Modifying the codomain:
 **TODO**
 
-
-
 ## Isomorphism Theorems
 
 **The Correspondence Theorem / 4th Isomorphism Theorem:**
