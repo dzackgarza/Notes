@@ -244,7 +244,7 @@ For each of the following assertions, give a proof or a counterexample.
 
 Let $V$ be a finite dimensional vector space over a field (the field is not necessarily algebraically closed).
 
-Let $\phi : V \to V$ be a linear transformation. Prove that there exists a decomposition of $V as $V = U \oplus W$ , where $U$ and $W$ are $\phi\dash$invariant subspaces of $V$ , $\restrictionof{\phi}{U}$ is nilpotent, and $\restrictionof{\phi}{W}$ is nonsingular.
+Let $\phi : V \to V$ be a linear transformation. Prove that there exists a decomposition of $V$ as $V = U \oplus W$ , where $U$ and $W$ are $\phi\dash$invariant subspaces of $V$ , $\restrictionof{\phi}{U}$ is nilpotent, and $\restrictionof{\phi}{W}$ is nonsingular.
 
 ## 5.
 
