@@ -675,6 +675,11 @@ then $f$ is irreducible.
 ## Galois Theory
 
 Definition:
+A field extension is normal iff
+
+- 
+
+Definition:
 A field extension $F/k$ is *Galois* $\iff$ $F$ is 
 
 - **Normal**:
