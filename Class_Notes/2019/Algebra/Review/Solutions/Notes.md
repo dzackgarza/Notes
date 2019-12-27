@@ -694,3 +694,4 @@ TFAE:
 - $L/k$ is **Galois**
 - $L/k$ is normal and separable.
 - $L/k$ is the splitting field of a separable polynomial
+- $\abs{\aut(L/k)} = 
