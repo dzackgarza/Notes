@@ -686,6 +686,8 @@ A field extension $L/k$ is **normal** iff
 **Definition:**
 A field extension $L/k$ is **separable** iff
 
+- For every $\alpha \in L, \min(\alpha, k)
+
 **Definition:**
 
 Let $L/k$ be a finite field extension.
