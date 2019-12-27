@@ -683,7 +683,7 @@ A field extension $L/k$ is **normal** iff
 
 - If $L$ is separable: $L$ is the splitting field of some irreducible $f\in k[x]$.
 
-Definition:
+**Definition:**
 A field extension $L/k$ is **separable** iff
 
 **Definition:**
