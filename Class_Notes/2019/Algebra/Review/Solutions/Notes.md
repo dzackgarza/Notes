@@ -527,6 +527,8 @@ For a linear operator on a vector space of nonzero finite dimension, TFAE:
   - The operator has a matrix similar to a companion matrix.
 
   - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
+  
+  - $T$ has $\dim V$ distinct eigenvalues
 
 
 
