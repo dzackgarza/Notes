@@ -712,4 +712,4 @@ Let $L/F/k$ be a tower of field extensions
 - $L/k$ normal $\implies L/F$ normal.
 - $L/k$ Galois $\implies L/F$ Galois.
 - $F/k$ is Galois $\iff \Gal(L/F) \normal \Gal(F/k)$
-  - And   
+  - $\implies \Gal(F/k) \cong \frac{\Gal(F/k)}{\Gal(L/F)}$
