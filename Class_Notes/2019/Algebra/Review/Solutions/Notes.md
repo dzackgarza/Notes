@@ -679,7 +679,9 @@ A field extension $L/k$ is **normal** iff
 
 - Every embedding $\sigma: L \injects \overline k$ that is a lift of the identity over $k$ satisfies $\sigma(L) = L$.
 
-- Every irreducible $f\in 
+- Every irreducible $f\in k[x]$ that has one root in $L$ has all of its roots in $L$
+
+- If $L$ is separable: 
 
 Definition:
 A field extension $F/k$ is *Galois* $\iff$ $F$ is 
