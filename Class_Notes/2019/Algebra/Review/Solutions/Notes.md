@@ -458,16 +458,7 @@ Corresponds to the **Invariant Factor Decomposition** of $T$
 
 TFAE:
 
-- $\chi_A(x) = \min_A(x)$
 
-- $A$ is similar to the companion matrix for $\chi_A$
-
-- there exists a cyclic vector $\vector v$ such that $V \cong 
-\spanof_k(\theset{A^j \vector v})$
-
-- $RCF(A)$ has a single block
-
-- There is only one invariant factor
 
 ### Jordan Canonical Form
 
