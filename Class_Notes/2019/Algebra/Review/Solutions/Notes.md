@@ -1,5 +1,8 @@
 # Group Theory
 
+**Definition**
+$A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$
+
 **Definition:**
 $[H : G]$ is equal to the number of left cosets of $H$ in $G$.
 
