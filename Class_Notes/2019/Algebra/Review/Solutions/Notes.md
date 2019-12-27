@@ -1,6 +1,6 @@
 # Group Theory
 
-Definitions:
+**Definitions:**
 
 - Parity of a permutation: Even $\iff$ product of an even number of transpositions.
 - A cycle of even length is odd
