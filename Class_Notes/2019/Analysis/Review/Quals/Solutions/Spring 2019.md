@@ -15,3 +15,6 @@ so we can define $f(x) \definedas \lim_k f_k(x)$.
 To see that $\norm{f_k - f}_\infty \to 0$, we can use the fact that $\abs{f_k(x) - f(x)} \to 0$ in $\RR$ (by the definition of $f$ as a limit) and $\abs{f_k(x) - f_j(x)} \to 0$ since these are Cauchy.
 
 But then
+\begin{align*}
+\abs{f_k(x) - f(x)} \leq 
+.\end{align*}
