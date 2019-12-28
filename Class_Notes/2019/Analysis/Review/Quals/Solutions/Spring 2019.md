@@ -54,5 +54,8 @@ Then $F_1 = F \disjoint A$, so
 &= \mu(F) + \mu(A) \\
 &= \mu(F) + \lim_{N\to\infty} \sum_k^N \mu(A_k) \\
 &= \mu(F) + \lim_{N\to\infty} \sum_k^N \mu(F_k) - \mu(F_{k+1}) \\
-&= \mu(F) + \lim_{N\to\infty} \left( \mu(F_1) - \mu(F_N) \right)
-.\end{align*}
+&= \mu(F) + \lim_{N\to\infty} \left( \mu(F_1) - \mu(F_N) \right) \\
+&=\mu(F) + \mu(F_1) - \lim_{N\to\infty} \mu(F_N)
+,\end{align*}
+
+and so
