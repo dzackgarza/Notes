@@ -98,10 +98,5 @@ However, again by part (a), we have
 
 ## 3
 
-For $k$ large enough, we have
-\begin{align*}
-\norm{f}_2 \leq \norm{f - f_k}_2 + \norm{f_k} \leq \varepsilon + M \quad \forall \varepsilon
-,\end{align*}
 
-so $f \in L^2$ with $\norm{f}_2 \leq M$.
 
