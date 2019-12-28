@@ -83,6 +83,8 @@ So choose the sequence $\delta_n = \frac 1 {2^n}$ and define $A_n$ accordingly, 
 A = \limsup_n A_n = \intersect_{n=1}^\infty \union_{k = n}^\infty A_k
 .\end{align*}
 
+Since $\mu
+
 By part (a), $m(A) = 0$, and so by assumption, we should thus have $\mu(A) = 0$ as well.
 
 However, again by part (a), we have
