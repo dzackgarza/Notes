@@ -41,4 +41,4 @@ f(x) =
 \end{cases}
 ,\end{align*}
 
-which is Cauchy but not $L^1$ equivalent to any continuous function.
+which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{f - g}_1 = 0$.
