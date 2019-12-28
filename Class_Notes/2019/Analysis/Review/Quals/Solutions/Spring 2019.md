@@ -26,7 +26,7 @@ $\qed$
 
 ### b
 
-It suffices to produce a Cauchy sequence that does not converge. Take
+It suffices to produce a Cauchy sequence that does not converge to a continuous function. Take
 \begin{align*}
 f_k(x) = 
 \begin{cases}
