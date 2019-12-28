@@ -83,12 +83,14 @@ So choose the sequence $\delta_n = \frac 1 {2^n}$ and define $A_n$ accordingly, 
 A = \limsup_n A_n = \intersect_{n=1}^\infty \union_{k = n}^\infty A_k
 .\end{align*}
 
-Since $\mu
-
-By part (a), $m(A) = 0$, and so by assumption, we should thus have $\mu(A) = 0$ as well.
+Since 
+$$
+\mu\left( \union_{k=n}^\infty A_k \right) \leq \sum_{k=n}^\infty \mu(A_k) \approx \frac {1}{2^k} \to 0,
+$$
+by part (a) we have $m(A) = 0$. 
+Now by assumption, we should thus have $\mu(A) = 0$ as well.
 
 However, again by part (a), we have
-
 \begin{align*}
 \mu(A) = \lim_n \mu\left( \union_{k=n}^\infty A_k \right)
 \geq \lim_n \mu(A_n) = \lim_n \varepsilon = \varepsilon > 0
