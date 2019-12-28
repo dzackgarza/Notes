@@ -26,4 +26,4 @@ $\qed$
 
 ### b
 
-It suffices to produce a Cauchy sequence that does not converge.
+It suffices to produce a Cauchy sequence that does not converge. Take
