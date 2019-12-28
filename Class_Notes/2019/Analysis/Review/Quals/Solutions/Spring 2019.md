@@ -4,4 +4,4 @@
 
 ### a
 
-Let $\theset{f_k}$ be 
+Let $\theset{f_k}$ be  a Cauchy
