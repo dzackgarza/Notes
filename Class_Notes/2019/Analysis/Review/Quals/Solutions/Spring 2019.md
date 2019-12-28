@@ -48,7 +48,10 @@ which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{
 Let $A_k = F_k \setminus F_{k+1}$, so the $A_k$ are disjoint, and let $A = \disjoint_k A_k$.
 Let $F = \intersect_k F_k$.
 
-Then $F_1 = A \disjoint F$, so
+Then $F_1 = F \disjoint A$, so
 \begin{align*}
-\mu(F_1) = \sum_
+\mu(F_1) 
+&= \mu(F) + \mu(A) \\
+&= \mu(F) + \sum_k \mu(A_k) \\
+&= \mu(F) + \sum_k
 .\end{align*}
