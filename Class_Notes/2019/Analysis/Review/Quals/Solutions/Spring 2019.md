@@ -80,7 +80,7 @@ Choose $n$ such that $\frac 1 {2^n} < \delta$, and choose a set $A_1$ such that 
 
 Now similarly define $A_k$ where $m(A_k) < \frac 1 {2^{n+k}}$ but $\mu(A_k) > \varepsilon$, and define
 \begin{align*}
-A = 
+A = \limsup
 .\end{align*}
 
 
