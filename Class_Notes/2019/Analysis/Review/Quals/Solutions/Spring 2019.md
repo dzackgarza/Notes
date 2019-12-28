@@ -98,8 +98,7 @@ However, again by part (a), we have
 
 ## 3
 
-Since $f_k \to f$ almost everywhere, we have $\liminf_k f_k(x) = f(x)$ and thus
-
+Since $f_k \to f$ almost everywhere, we have $\liminf_k f_k(x) = f(x)$ and since $\abs{f}^2 \in L^+$ we can apply Fatou:
 \begin{align*}
 \norm{f}_2^2
 &= \norm{\liminf_k f_k}_2^2 \\
