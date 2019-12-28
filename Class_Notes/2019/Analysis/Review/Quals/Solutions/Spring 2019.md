@@ -39,4 +39,6 @@ f(x) =
 0 & x \in [0, \frac 1 2) \\
 1 & x \in [\frac 1 2, 1]
 \end{cases}
-.\end{align*}
+,\end{align*}
+
+which is not $L^1$ equivalent to any continuous function.
