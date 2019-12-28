@@ -43,3 +43,5 @@ f(x) =
 
 which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{f - g}_1 = 0$.
 
+## 2
+
