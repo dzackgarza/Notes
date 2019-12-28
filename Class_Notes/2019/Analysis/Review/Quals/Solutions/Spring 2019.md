@@ -45,11 +45,12 @@ which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{
 
 ## 2
 
-> Lemma: $\mu(\disjoint_k E_k) = \lim_k \mu$
+> Lemma: $\mu(\disjoint_{k=1}^\infty E_k) = \lim_{N\to\infty} \sum_{k=1}^N \mu(E_k)$
 
 Let $A_k = F_k \setminus F_{k+1}$, so the $A_k$ are disjoint, and let $A = \disjoint_k A_k$.
-Let $F = \intersect_k F_k$.
 
+
+Let $F = \intersect_k F_k$. 
 Then $F_1 = F \disjoint A$, so
 \begin{align*}
 \mu(F_1) 
