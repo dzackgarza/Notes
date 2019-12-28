@@ -41,4 +41,4 @@ f(x) =
 \end{cases}
 ,\end{align*}
 
-which is not $L^1$ equivalent to any continuous function.
+which is Cauchy but not $L^1$ equivalent to any continuous function.
