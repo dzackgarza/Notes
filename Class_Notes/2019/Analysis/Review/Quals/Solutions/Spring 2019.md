@@ -45,6 +45,9 @@ which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{
 
 ## 2
 
+
+### a
+
 > Lemma 1: $\mu(\disjoint_{k=1}^\infty E_k) = \lim_{N\to\infty} \sum_{k=1}^N \mu(E_k)$.
 > 
 > Lemma 2: $A = A\setminus B ~\disjoint~ A\intersect B$.
@@ -68,3 +71,5 @@ and since the measure is finite, $\mu(F_1) < \infty$ and can be subtracted, yiel
 \mu(F_1) &= \mu(F) + \mu(F_1) - \lim_{N\to\infty} \mu(F_N) \\
 \implies \mu(F) &= \lim_{N\to\infty} \mu(F_N)
 .\end{align*}
+
+### b
