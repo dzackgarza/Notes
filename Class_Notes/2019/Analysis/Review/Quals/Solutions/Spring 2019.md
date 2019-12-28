@@ -89,7 +89,7 @@ However, again by part (a), we have
 
 \begin{align*}
 \mu(A) = \lim_n \mu\left( \union_{k=n}^\infty A_k \right)
-\geq \mu(A_n)
+\geq \lim_n \mu(A_n) = \lim_n \varepsilon = \varepsilon > 0
 .\end{align*}
 
 
