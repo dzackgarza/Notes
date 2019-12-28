@@ -45,4 +45,4 @@ which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{
 
 ## 2
 
-Let 
+Let $A_1 = 
