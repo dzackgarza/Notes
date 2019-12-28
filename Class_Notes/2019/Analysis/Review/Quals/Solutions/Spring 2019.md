@@ -47,4 +47,4 @@ which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{
 
 Let $A_k = F_k \setminus F_{k+1}$, so the $A_k$ are disjoint, and let $A = \disjoint_k A_k$.
 Let $F = \intersect_k F_k$.
-Then 
+Then $F_1 = 
