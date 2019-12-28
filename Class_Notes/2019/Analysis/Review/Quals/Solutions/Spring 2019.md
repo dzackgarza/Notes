@@ -98,5 +98,6 @@ However, again by part (a), we have
 
 ## 3
 
-Since $f_k \to f$ almost everywhere, we have 
+Since $f_k \to f$ almost everywhere, we have $\liminf_k f_k(x) = f(x)$ and thus
+
 
