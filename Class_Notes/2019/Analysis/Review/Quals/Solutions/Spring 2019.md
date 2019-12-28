@@ -76,4 +76,4 @@ and since the measure is finite, $\mu(F_1) < \infty$ and can be subtracted, yiel
 
 Suppose toward a contradiction that there is some $\varepsilon > 0$ for which no such $\delta$ exists.
 
-Choose $n$ such that 
+Choose $n$ such that $\frac 1 {2^n} < \delta$, and choose a set $A$ such that $
