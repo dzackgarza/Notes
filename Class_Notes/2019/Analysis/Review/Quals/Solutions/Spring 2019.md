@@ -110,5 +110,5 @@ Since $f_k \to f$ almost everywhere, we have $\liminf_k f_k(x) = f(x)$ and since
 &= M^2
 ,\end{align*}
 
-so $\norm{f} \leq M$.
+so $\norm{f} \leq M < \infty$ and $f\in L^2$.
 
