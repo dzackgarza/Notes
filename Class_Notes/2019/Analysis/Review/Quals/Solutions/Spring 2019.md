@@ -27,3 +27,16 @@ $\qed$
 ### b
 
 It suffices to produce a Cauchy sequence that does not converge. Take
+\begin{align*}
+f_k(x) = 
+\begin{cases}
+(x + \frac 1 2)^k & x \in [0, \frac 1 2) \\
+1 & x \in [\frac 1 2, 1]
+\end{cases}
+\quad \mapsvia{k\to\infty} \quad
+f(x) = 
+\begin{cases}
+0 & x \in [0, \frac 1 2) \\
+1 & x \in [\frac 1 2, 1]
+\end{cases}
+.\end{align*}
