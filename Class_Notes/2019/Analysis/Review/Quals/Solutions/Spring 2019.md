@@ -89,7 +89,7 @@ However, again by part (a), we have
 
 \begin{align*}
 \mu(A) = \lim_n \mu\left( \union_{k=n}^\infty A_k \right)
-\geq \mu(A_1)
+\geq \mu(A_n)
 .\end{align*}
 
 
