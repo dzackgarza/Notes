@@ -59,3 +59,7 @@ Then $F_1 = F \disjoint A$, so
 ,\end{align*}
 
 and so
+\begin{align*}
+\mu(F_1) &= \mu(F) + \mu(F_1) - \lim_{N\to\infty} \mu(F_N) \\
+\implies \mu(F) &= \lim_{N\to\infty} \mu(F_N)
+.\end{align*}
