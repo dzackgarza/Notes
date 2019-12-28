@@ -80,7 +80,7 @@ Choose $n$ such that $\frac 1 {2^n} < \delta$, and choose a set $A_1$ such that 
 
 Now similarly define $A_k$ for $k\geq n$ where $m(A_k) < \frac 1 {2^{k}}$ but $\mu(A_k) > \varepsilon$, and define
 \begin{align*}
-A = \limsup A_k = 
+A = \limsup A_k = \intersect{} \union_{k = n}^\infty A_k
 .\end{align*}
 
 
