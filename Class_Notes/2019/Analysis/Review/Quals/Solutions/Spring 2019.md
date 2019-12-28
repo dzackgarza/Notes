@@ -73,3 +73,5 @@ and since the measure is finite, $\mu(F_1) < \infty$ and can be subtracted, yiel
 .\end{align*}
 
 ### b
+
+Suppose toward a contradiction
