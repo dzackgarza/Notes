@@ -4,4 +4,4 @@
 
 ### a
 
-Let $\theset{f_k}$ be  a Cauchy
+Let $\theset{f_k}$ be  a Cauchy sequence in $C([0, 1])$.
