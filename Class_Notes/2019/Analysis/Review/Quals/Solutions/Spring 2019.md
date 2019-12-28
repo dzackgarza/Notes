@@ -88,7 +88,7 @@ By part (a), $m(A) = 0$, and so by assumption, we should thus have $\mu(A) = 0$ 
 However,
 
 \begin{align*}
-\mu(A) = \lim_k 
+\mu(A) = \lim_k \mu
 .\end{align*}
 
 
