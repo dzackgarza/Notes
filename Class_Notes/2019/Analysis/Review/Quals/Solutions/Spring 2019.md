@@ -53,5 +53,5 @@ Then $F_1 = F \disjoint A$, so
 \mu(F_1) 
 &= \mu(F) + \mu(A) \\
 &= \mu(F) + \sum_k \mu(A_k) \\
-&= \mu(F) + \sum_k
+&= \mu(F) + \sum_k \mu(F_k) - \mu(F_{k+1})
 .\end{align*}
