@@ -85,10 +85,11 @@ A = \limsup_n A_n = \intersect_{n=1}^\infty \union_{k = n}^\infty A_k
 
 By part (a), $m(A) = 0$, and so by assumption, we should thus have $\mu(A) = 0$ as well.
 
-However,
+However, again by part (a), we have
 
 \begin{align*}
-\mu(A) = \lim_k \mu
+\mu(A) = \lim_n \mu\left( \union_{k=n}^\infty A_k \right)
+\leq 
 .\end{align*}
 
 
