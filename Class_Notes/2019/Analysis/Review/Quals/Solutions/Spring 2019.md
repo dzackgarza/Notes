@@ -25,3 +25,5 @@ Finally, $f$ is the uniform limit of continuous functions and thus continuous.
 $\qed$
 
 ### b
+
+It suffices to produce a Cauchy sequence that does not converge.
