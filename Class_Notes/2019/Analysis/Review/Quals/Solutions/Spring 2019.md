@@ -83,4 +83,6 @@ So choose the sequence $\delta_n = \frac 1 {2^n}$ and define $A_n$ accordingly, 
 A = \limsup_n A_n = \intersect_{n=1}^\infty \union_{k = n}^\infty A_k
 .\end{align*}
 
+Then 
+
 
