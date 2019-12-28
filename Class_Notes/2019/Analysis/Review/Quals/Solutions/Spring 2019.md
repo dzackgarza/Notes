@@ -45,4 +45,4 @@ which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{
 
 ## 2
 
-Let $A_k = 
+Let $A_k = F_k \setminus F_{k+1}$. Then $
