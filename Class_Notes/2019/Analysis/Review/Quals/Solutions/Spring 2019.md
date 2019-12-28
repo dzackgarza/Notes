@@ -98,4 +98,5 @@ However, again by part (a), we have
 
 ## 3
 
+We have
 
