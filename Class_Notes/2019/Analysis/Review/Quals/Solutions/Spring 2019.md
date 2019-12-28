@@ -76,11 +76,11 @@ and since the measure is finite, $\mu(F_1) < \infty$ and can be subtracted, yiel
 
 Suppose toward a contradiction that there is some $\varepsilon > 0$ for which no such $\delta$ exists.
 
-Choose $n$ such that $\frac 1 {2^n} < \delta$, and choose a set $A_1$ such that $m(A_1) <  \frac 1 {2^n}$ but $\mu(A_1) > \varepsilon$.
+This means that we can take any sequence $\delta_n \to 0$ and produce sets $A_n$ such $m(A) < \delta_n$ but $\mu(A) > \varepsilon$.
 
-Now similarly define $A_k$ for $k\geq n$ where $m(A_k) < \frac 1 {2^{k}}$ but $\mu(A_k) > \varepsilon$, and define
+So choose the sequence $\delta_n = \frac 1 {2^n}$ and define $A_n$ accordingly, and let
 \begin{align*}
-A = \limsup_k A_k = \intersect{} \union_{k = n}^\infty A_k
+A = \limsup_n A_n = \intersect_{n=1}^\infty \union_{k = n}^\infty A_k
 .\end{align*}
 
 
