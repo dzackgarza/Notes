@@ -79,5 +79,8 @@ Suppose toward a contradiction that there is some $\varepsilon > 0$ for which no
 Choose $n$ such that $\frac 1 {2^n} < \delta$, and choose a set $A_1$ such that $m(A_1) <  \frac 1 {2^n}$ but $\mu(A_1) > \varepsilon$.
 
 Now similarly define $A_k$ where $m(A_k) < \frac 1 {2^{n+k}}$ but $\mu(A_k) > \varepsilon$, and define
+\begin{align*}
+A = 
+.\end{align*}
 
 
