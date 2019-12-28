@@ -85,7 +85,7 @@ A = \limsup_n A_n = \intersect_{n=1}^\infty \union_{k = n}^\infty A_k
 
 Since 
 $$
-\mu\left( \union_{k=n}^\infty A_k \right) \leq \sum_{k=n}^\infty \mu(A_k) \approx \frac {1}{2^k} \to 0,
+\mu\left( \union_{k=n}^\infty A_k \right) \leq \sum_{k=n}^\infty \mu(A_k) \approx \frac {1}{2^n} \to 0,
 $$
 by part (a) we have $m(A) = 0$. 
 Now by assumption, we should thus have $\mu(A) = 0$ as well.
