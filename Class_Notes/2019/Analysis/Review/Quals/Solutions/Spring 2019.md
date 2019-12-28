@@ -99,12 +99,16 @@ However, again by part (a), we have
 ## 3
 
 Since $f_k \to f$ almost everywhere, we have $\liminf_k f_k(x) = f(x)$ and since $\abs{f}^2 \in L^+$ we can apply Fatou:
+
 \begin{align*}
 \norm{f}_2^2
-&= \norm{\liminf_k f_k}_2^2 \\
-&\underset{\text{Fatou}}\leq \liminf_k \norm{f_k}_2^2 \\
+&= \int \abs{f(x)}^2  \\
+&= \int \liminf_k \abs{f_k(x)}^2 \\
+&\underset{\text{Fatou}}\leq\liminf_k \int \abs{f_k(x)}^2 \\
+&=\liminf_k \norm{f_k}_2^2 \\
 &\leq \liminf_k M^2 \\
 &= M^2
-.\end{align*}
+,\end{align*}
 
+so $\norm{f} \leq M$.
 
