@@ -59,7 +59,7 @@ Then $F_1 = F \disjoint A$ by lemma 2, so
 &= \mu(F) + \mu(A) \\
 &= \mu(F) + \lim_{N\to\infty} \sum_k^N \mu(A_k) \quad \text{by Lemma 1}\\
 &= \mu(F) + \lim_{N\to\infty} \sum_k^N \mu(F_k) - \mu(F_{k+1}) \\
-&= \mu(F) + \lim_{N\to\infty} \left( \mu(F_1) - \mu(F_N) \right) \\
+&= \mu(F) + \lim_{N\to\infty} \left( \mu(F_1) - \mu(F_N) \right) \quad\text{(Telescoping)} \\
 &=\mu(F) + \mu(F_1) - \lim_{N\to\infty} \mu(F_N)
 ,\end{align*}
 
