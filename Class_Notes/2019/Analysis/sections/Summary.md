@@ -111,7 +111,7 @@ $$
 .$$
 
 - **Egorov's Theorem**
-Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty}(x) < \infty$ exists almost everywhere.
+Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty} f_k(x) < \infty$ exists almost everywhere.
 
   Then $f_k \to f$ *almost uniformly*, i.e.
 \begin{align*}
