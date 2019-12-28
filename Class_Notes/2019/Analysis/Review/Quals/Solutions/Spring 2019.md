@@ -75,3 +75,5 @@ and since the measure is finite, $\mu(F_1) < \infty$ and can be subtracted, yiel
 ### b
 
 Suppose toward a contradiction that there is some $\varepsilon > 0$ for which no such $\delta$ exists.
+
+Choose sets $A_n
