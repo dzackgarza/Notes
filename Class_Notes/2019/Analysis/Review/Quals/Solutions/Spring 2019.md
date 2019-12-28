@@ -45,17 +45,19 @@ which is Cauchy, but there is no $g\in L^1$ that is continuous such that $\norm{
 
 ## 2
 
-> Lemma: $\mu(\disjoint_{k=1}^\infty E_k) = \lim_{N\to\infty} \sum_{k=1}^N \mu(E_k)$
+> Lemma 1: $\mu(\disjoint_{k=1}^\infty E_k) = \lim_{N\to\infty} \sum_{k=1}^N \mu(E_k)$.
+> 
+> Lemma 2: $A = A\setminus B ~\disjoint~ A\intersect B$.
 
 Let $A_k = F_k \setminus F_{k+1}$, so the $A_k$ are disjoint, and let $A = \disjoint_k A_k$.
 
 
 Let $F = \intersect_k F_k$. 
-Then $F_1 = F \disjoint A$, so
+Then $F_1 = F \disjoint A$ by lemma 2, so
 \begin{align*}
 \mu(F_1) 
 &= \mu(F) + \mu(A) \\
-&= \mu(F) + \lim_{N\to\infty} \sum_k^N \mu(A_k) \\
+&= \mu(F) + \lim_{N\to\infty} \sum_k^N \mu(A_k) \quad \text{by Lemma 1}\\
 &= \mu(F) + \lim_{N\to\infty} \sum_k^N \mu(F_k) - \mu(F_{k+1}) \\
 &= \mu(F) + \lim_{N\to\infty} \left( \mu(F_1) - \mu(F_N) \right) \\
 &=\mu(F) + \mu(F_1) - \lim_{N\to\infty} \mu(F_N)
