@@ -62,6 +62,7 @@ Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$:
 
 ### The Converse to the DCT does not hold
 
+> $L^p$ boundedness does not imply a.e. boundedness.
 I.e. it is not true that $\lim \int f_k = \int f$ implies that $\exists g\in L^p$ such that $f_k < g$ a.e. for every $k$.
 
 Take
