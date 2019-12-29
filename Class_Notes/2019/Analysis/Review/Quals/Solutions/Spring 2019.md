@@ -138,6 +138,9 @@ Then $\mathcal{A} = \theset{H \geq 0} \intersect \theset{G \geq 0}$ which is an 
 $\impliedby$:
 
 By F.T., 
+\begin{align*}
+\mathcal{A}_x \
+.\end{align*}
 
 
 ### b
