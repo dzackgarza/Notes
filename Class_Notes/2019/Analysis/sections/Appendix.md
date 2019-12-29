@@ -171,4 +171,5 @@ f_k \converges{a.e.}\to f ,\quad
 .\end{align*}
 
 **Lemma:**
-If $f$1
+If $f$ is uniformly continuous, then
+
