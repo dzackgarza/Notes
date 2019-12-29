@@ -3,6 +3,9 @@
 Modes of convergence:
 Uniform $\implies$ pointwise $\implies$ almost everywhere.
 
+> See notes section 17.3.
+
+
 ## Fatou
 
 **Theorem (Fatou)**:
