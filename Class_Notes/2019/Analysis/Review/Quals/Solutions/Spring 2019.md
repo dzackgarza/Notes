@@ -137,13 +137,12 @@ Then $\mathcal{A} = \theset{H \geq 0} \intersect \theset{G \geq 0}$ which is an 
 
 $\impliedby$:
 
-By F.T., 
+By F.T., for almost every $x\in \RR^n$, the $x\dash$slices are measurable, so
 \begin{align*}
 \mathcal{A}_x \definedas \theset{t\in \RR \suchthat (x, t) \in \mathcal{A}} = [0, f(x)] \implies m(\mathcal A_x) = f(x)
 \end{align*}
-is measurable for almost every $x\in \RR^n$.
 
-Since $g(x) = m(\mathcal{A}_x)$ is a measurable function, we have
+But since $x \mapsto m(\mathcal A_x)$ is a measurable function, we have
 \begin{align*}
 \int_{\RR^n} g(x) ~dx 
 = \int_{\RR^n} m(\mathcal{A}_x) ~dx 
