@@ -34,5 +34,6 @@ f_k \overset{a.e.}\converges f ,\quad
 
 ## Counterexamples:
 
+###  Almost everywhere convergence does not imply $L^p$ convergence
 
-$f_k \overset{a.e.}\converges f$ but 
+$f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges} f$: the skateboard to infinity $f_k = \chi_{[k, k+1]}$.
