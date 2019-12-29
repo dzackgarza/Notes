@@ -130,4 +130,4 @@ $\implies$:
 
 Define $F(x, t) = f(x)$, $G(x, t) = t$, and $H(x, y) = F(x, t) - G(x, t)$, which are all measurable functions.
 
-Then $\mathcal{A} = \theset{}
+Then $\mathcal{A} = \theset{H \geq 0} \intersect \theset{}$
