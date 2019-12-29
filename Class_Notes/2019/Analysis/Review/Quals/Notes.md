@@ -54,7 +54,6 @@ I.e. it is not true that $\lim \int f_k = \int f$ implies that $\exists g\in L^p
 
 Take
 
-- $X = \RR$,
 - $b_k = \sum_{j=1}^k \frac 1 j$
 - $f_k = \chi_{[b_k, b_{k+1}]}$
 
