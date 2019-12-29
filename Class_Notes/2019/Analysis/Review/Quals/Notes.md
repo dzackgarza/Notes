@@ -62,4 +62,4 @@ Then
 
 - $f_k \converges{a.e.}\to 0$,
 - $\int f_k = \frac 1 k \to 0$,
-- 
+- $g > f_k \implies g > 1
