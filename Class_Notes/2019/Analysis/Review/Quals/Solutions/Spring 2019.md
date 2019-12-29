@@ -142,13 +142,13 @@ $\impliedby$:
 \begin{align*}
 \int_{\RR^n} f(x) ~dx 
 &= \int_{\RR^n} \int_0^{f(x)} 1 ~dt~dx \\
-&= \int_{\RR^n} \int_{\RR} \chi_S ~dt~dx
-\quad \text{where}~ S = \theset{(x, t) \in \RR^n\cross \RR \suchthat 0 \leq t \leq f(x)} \\
-&\overset{F.T.}= \int_{\RR} \int_{\RR^n} \chi_S ~dx~dt\\
-&= \int_0^\infty \int_{\RR^n} \chi_S ~dx~dt\\
-&= \int_0^\infty m(S_t) ~dt
-\quad \text{where }~ S_t = \theset{x
+&= \int_{\RR^n} \int_{\RR} \chi_\mathcal{A} ~dt~dx
+\quad \text{where}~ \mathcal{A} = \theset{(x, t) \in \RR^n\cross \RR \suchthat 0 \leq t \leq f(x)} \\
+&\overset{F.T.}= \int_{\RR} \int_{\RR^n} \chi_\mathcal{A} ~dx~dt\\
+&= \int_0^\infty \int_{\RR^n} \chi_\mathcal{A} ~dx~dt\\
+&= \int_0^\infty m(\mathcal{A}_t) ~dt
+\quad \text{where }~ \mathcal{A}_t = \theset{x
 \in \RR^n \suchthat t\leq f(x) }
 ,\end{align*}
 
-where we can just note that $S_t$ is a slice of $\mathcal A$
+where we just note that $\int \int \chi_\mathcal{A} = m(\mathcal{A})$, and by Fubini-Tonelli, all of these integrals are equal.
