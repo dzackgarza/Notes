@@ -2,9 +2,11 @@
 
 ## 1
 
-Let $\QQ = \theset{q_j} = \theset{\frac {p_j} {q_j}}$ be an enumeration of the rationals, and define
+Let $\QQ = \theset{\frac {p_j} {q_j}}_{j\in\NN}$ be an enumeration of the rationals, and define
 \begin{align*}
 E_j \definedas \theset{x\in \RR \suchthat \abs{x - \frac{p_j}{q_j} } < \frac 1 {q^3}}
 .\end{align*}
+
+Note that $E_j \subseteq B_{q^3}(\frac {p_j}{q_j})$
 
 Since $\theset{E_j}$ is a countable collection 
