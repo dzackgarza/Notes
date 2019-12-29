@@ -1,5 +1,8 @@
 # Notes
 
+Modes of convergence:
+Uniform $\implies$ 
+
 ## Fatou
 
 **Theorem (Fatou)**:
