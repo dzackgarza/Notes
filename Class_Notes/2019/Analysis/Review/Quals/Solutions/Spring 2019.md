@@ -181,3 +181,5 @@ since $X = [0, 1] \implies m(X) = 1$.
 So $L^2(X) \subseteq L^1(X)$, and since simple functions are dense in both spaces, $L^2$ is dense in $L^1$.
 
 ### b
+
+Let $\Lambda \in 
