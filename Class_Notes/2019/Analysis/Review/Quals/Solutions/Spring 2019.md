@@ -224,3 +224,5 @@ since $\norm{\Lambda}_{p\dual}$ is the best upper bound, and thus
 So $\Lambda \in (L^2)\dual$.
 
 #### Step 2
+
+We want to show that $g\in L^\infty$
