@@ -228,8 +228,9 @@ By Riesz Representation for $L^2$, there is a $g \in L^2$ such that for all $f\i
 
 #### Step 2
 
+Pick $f\in L^2$, then
 We want to show that $g\in L^\infty$
 
 \begin{align*}
-\norm{\Lambda}
+\norm{\Lambda}_{}
 .\end{align*}
