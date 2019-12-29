@@ -26,4 +26,4 @@ m(E_j) \leq 2 \cdot \mathrm{radius} \left(B_{q^3}\left(\frac {p_j}{q_j}\right)\r
 
 which converges by the $p\dash$test for sums.
 
-Since $\theset{E_j}$ is a countable collection 
+Since $\theset{E_j}$ is a countable collection of measurable sets such that $\sum m(E_j) < \infty$, so Borel-Cantelli applies.
