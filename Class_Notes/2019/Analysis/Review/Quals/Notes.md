@@ -22,7 +22,7 @@ Using Fatou to compute the limit of a sequence of integrals:
 
 **Lemma:**
 \begin{align*}
-f_k \overset{a.e.}\converges f ,\quad
+f_k \converges{a.e.}\to f ,\quad
 \norm{f_k}_p \leq M  
 \implies f\in L^p \text{ and } \norm{f}_p \leq M
 .\end{align*}
@@ -36,7 +36,7 @@ f_k \overset{a.e.}\converges f ,\quad
 
 ###  Almost everywhere convergence does not imply $L^p$ convergence for any $1\leq p \leq \infty$
 
-Sequences $f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges} f$: 
+Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$: 
 
 - For $1\leq p < \infty$:
 	The skateboard to infinity, $f_k = \chi_{[k, k+1]}$.
@@ -44,9 +44,8 @@ Sequences $f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges
 	Then $f_k \converges{a.e.}\to 0$ but $\int \abs{f_k}^p = 1$ for all $k$.
 
 - For $p = \infty$:
-  
-	The marching boxes $k \cdot \chi_{[0, \frac 1 k]}$.
+  The marching boxes $f_k = k \cdot \chi_{[0, \frac 1 k]}$.
 	
-	Then similarly $f_k \overset{a.e.}\$
+	Then similarly $f_k \converges{a.e.}\to 0$ and $
 
 
