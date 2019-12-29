@@ -139,7 +139,7 @@ $\impliedby$:
 
 By F.T., 
 \begin{align*}
-\mathcal{A}_x \definedas \theset{t\in \RR \suchthat (x, t) \in \mathcal{A}} = [0, f(x)]
+\mathcal{A}_x \definedas \theset{t\in \RR \suchthat (x, t) \in \mathcal{A}} = [0, f(x)] \implies m(\mathcal A_x) = f(x)
 \end{align*}
 is measurable for almost every $x\in \RR^n$.
 
