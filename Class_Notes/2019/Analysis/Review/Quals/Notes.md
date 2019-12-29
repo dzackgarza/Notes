@@ -39,6 +39,8 @@ f_k \converges{a.e.}\to f ,\quad
 
 ###  Almost everywhere convergence does not imply $L^p$ convergence for any $1\leq p \leq \infty$
 
+> See notes section 17.3.
+
 Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$: 
 
 - For $1\leq p < \infty$:
