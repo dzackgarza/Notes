@@ -139,8 +139,10 @@ $\impliedby$:
 
 By F.T., 
 \begin{align*}
-\mathcal{A}_x \definedas \theset{t\in \RR \suchthat (x, t) \in \mathcal{A}}
-.\end{align*}
+\mathcal{A}_x \definedas \theset{t\in \RR \suchthat (x, t) \in \mathcal{A}} = [0, f(x)]
+\end{align*}
+is measurable for almost every $x\in \RR^n$.
+
 
 
 ### b
