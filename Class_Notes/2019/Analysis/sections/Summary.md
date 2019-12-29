@@ -140,6 +140,8 @@ F(t) = \int f(x, t) ~dt
 &= \int \dd{}{t} f(x, t) ~dx
 .\end{align*}
 
+Let $h_k \to 0$ be any sequence and define $f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}$, so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
+
 
 
 ## Important Comments
