@@ -45,6 +45,8 @@ Sequences $f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges
 
 - For $p = \infty$:
   
-	The marching boxes $k \cdot \chi_{[0, \frac 1 k]}$
+	The marching boxes $k \cdot \chi_{[0, \frac 1 k]}$.
+	
+	Then similarly $f_k \overset{a.e.}\$
 
 
