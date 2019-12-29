@@ -232,5 +232,12 @@ Pick $f\in L^2$, then
 We want to show that $g\in L^\infty$
 
 \begin{align*}
-\norm{\Lambda}_{}
-.\end{align*}
+\norm{\Lambda}_{1\dual} 
+&= \sup_{\norm{f}_1 = 1} \abs{\Lambda(f)} \\
+&= \sup_{\norm{f}_1 = 1} \abs{\int_X fg} \\
+&\leq \sup_{\norm{f}_1 = 1} \norm{fg}_1 \\
+&\leq \sup_{\norm{f}_1 = 1} \norm{f}_1 \norm{g}_\infty \\
+&= \norm{g}_\infty
+,\end{align*}
+
+so it just remains to show that $\norm{g}_\infty \leq \norm{\Lambda}_{1\dual}$
