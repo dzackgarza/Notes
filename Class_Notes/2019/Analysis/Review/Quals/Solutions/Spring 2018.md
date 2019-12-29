@@ -85,4 +85,10 @@ and so for $n > 2$ the integral will converge by the $p\dash$test.
 ## 3
 
 Since $\abs{f(x)} \leq \norm{f}_\infty$ almost everywhere, we have
+\begin{align*}
+\norm{f}_p^p = \int_X \abs{f(x)}^p ~dx \leq \int_X \norm{f}_\infty^p ~dx = \norm{f}_\infty^p \cdot m(X) = \norm{f}_\infty^p
+,\end{align*}
 
+so $\norm{f}_p \leq \norm{f}_\infty$ for all $p$ and taking $\lim_{p\to\infty}$ preserves this inequality.
+
+Conversely, let $\varepsilon > 0$.
