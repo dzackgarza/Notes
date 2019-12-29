@@ -196,3 +196,7 @@ Since $\norm{\Lambda}_{p\dual} \definedas \displaystyle\sup_{\norm{f} = 1} \abs{
 
 since $\norm{\Lambda}_{p\dual}$ is the best upper bound, and thus
 
+\begin{align*}
+\frac{\abs{\Lambda(f)}}{\norm{f}_p} = \abs{\Lambda(\hat f)} \leq \norm{\Lambda}_{p\dual} \\
+\implies \abs{\Lambda(f)} \leq \norm{\Lambda}_{p\dual} \norm{f}_p 
+.\end{align*}
