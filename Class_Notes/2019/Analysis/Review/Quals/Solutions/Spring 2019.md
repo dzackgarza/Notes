@@ -105,8 +105,6 @@ Since $f_k \to f$ almost everywhere, we have $\liminf_k f_k(x) = f(x)$ and since
 &= \int \abs{f(x)}^2  \\
 &= \int \liminf_k \abs{f_k(x)}^2 \\
 &\underset{\text{Fatou}}\leq\liminf_k \int \abs{f_k(x)}^2 \\
-&=\liminf_k \norm{f_k}_2^2 \\
-&\leq \liminf_k M^2 \\
 &= M^2
 ,\end{align*}
 
