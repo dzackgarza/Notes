@@ -170,3 +170,5 @@ f_k \converges{a.e.}\to f ,\quad
 \int \abs{f}^p = \int \liminf \abs{f_k}^p \leq \liminf \int \abs{f_k}^p = M
 .\end{align*}
 
+**Lemma:**
+If $f$1
