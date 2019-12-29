@@ -39,6 +39,8 @@ Since $\theset{E_j}$ is a countable collection of measurable sets such that $\su
 
 ## 2
 
+### a
+
 Since $x < 1 \implies x^n \to 0$ and $x>1 \implies x^n \to \infty$, we have
 \begin{align*}
 f_n(x) = \frac{x}{1+ x^n}\converges{n\to\infty}\longrightarrow
@@ -52,3 +54,4 @@ x, & x < 1 \\
 
 Since each $f_n(x)$ is clearly continuous on $(0, \infty)$, if the convergence was uniform then $f$ would be continuous, but $f$ has a clear discontinuity at $x=1$.
 
+### b
