@@ -133,6 +133,7 @@ f\in L^1 \implies
 
 - **Differentiating under the integral**:
 
+If $\dd{}{t}f(x, t)
 \begin{align*}
 F(t) = \int f(x, t) ~dt 
 &\implies \dd{}{t} F(t)\definedas \lim _{h \rightarrow 0} \int \frac{f(x, t+h)-f(x, t)}{h} d x \\
