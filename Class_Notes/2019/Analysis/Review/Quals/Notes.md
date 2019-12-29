@@ -55,4 +55,5 @@ I.e. it is not true that $\lim \int f_k = \int f$ implies that $\exists g\in L^p
 Take
 
 - $X = \RR$,
+- $b_n = \sum_{k=1}^n \frac 1 n$
 - 
