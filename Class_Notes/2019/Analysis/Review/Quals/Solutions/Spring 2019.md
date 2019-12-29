@@ -137,6 +137,8 @@ Then $\mathcal{A} = \theset{H \geq 0} \intersect \theset{G \geq 0}$ which is an 
 
 $\impliedby$:
 
+By F.T., for almost every $
+
 ### b
 
 \begin{align*}
@@ -151,4 +153,4 @@ $\impliedby$:
 \in \RR^n \suchthat t\leq f(x) }
 ,\end{align*}
 
-where we just note that $\int \int \chi_\mathcal{A} = m(\mathcal{A})$, and by Fubini-Tonelli, all of these integrals are equal.
+where we just note that $\int \int \chi_\mathcal{A} = m(\mathcal{A})$, and by F.T., all of these integrals are equal.
