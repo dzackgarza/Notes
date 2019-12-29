@@ -143,7 +143,7 @@ By F.T.,
 \end{align*}
 is measurable for almost every $x\in \RR^n$.
 
-
+Since $g(x) = m(\mathcal{A}_x)$ is a measurable function, we have $\int_{\RR^n} g(x) ~dx$
 
 ### b
 
