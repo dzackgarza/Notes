@@ -100,10 +100,16 @@ S_\varepsilon \definedas \theset{x\in \RR \suchthat \abs{f(x)} \geq \norm{f}_\in
 
 Then
 \begin{align*}
-\norm{f}_p 
+\norm{f}_p^p 
 &= \int_X \abs{f(x)}^p ~dx \\
 &\geq \int_{S_\varepsilon} \abs{f(x)}^p ~dx \\
 &\geq \int_{S_\varepsilon} \abs{\norm{f}_\infty - \varepsilon}^p ~dx \\
-&= \abs{\norm{f}_\infty - \varepsilon}^p \cdot m(S_\varepsilon)
+&= \abs{\norm{f}_\infty - \varepsilon}^p \cdot m(S_\varepsilon)\\
+\implies \norm{f}_p &\geq \abs{\norm{f}_\infty - \varepsilon} \cdot m(S_\varepsilon)^{\frac 1 p} \\
+&\converges{p\to\infty}\to \abs{\norm{f}_\infty - \varepsilon} \\ 
+&\converges{\varepsilon \to 0}\to \norm{f}_\infty
 .\end{align*}
 
+So $\norm{f}_p \geq \norm{f}_\infty$.
+
+$\qed$
