@@ -139,7 +139,7 @@ $\impliedby$:
 
 By F.T., 
 \begin{align*}
-\mathcal{A}_x \
+\mathcal{A}_x \definedas \theset{t\in \RR \suchthat }
 .\end{align*}
 
 
