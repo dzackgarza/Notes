@@ -142,7 +142,7 @@ By F.T., for almost every $x\in \RR^n$, the $x\dash$slices are measurable, so
 \mathcal{A}_x \definedas \theset{t\in \RR \suchthat (x, t) \in \mathcal{A}} = [0, f(x)] \implies m(\mathcal A_x) = f(x)
 \end{align*}
 
-But $x \mapsto m(\mathcal A_x)$ is a measurable function, and is exactly equal to $x \mapsto f(x)$, so $f$ is measurable.
+But $x \mapsto m(\mathcal A_x)$ is a measurable function, and is exactly to $x \mapsto f(x)$, so $f$ is measurable.
 
 
 ### b
