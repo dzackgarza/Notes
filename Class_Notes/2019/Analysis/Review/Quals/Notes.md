@@ -41,7 +41,7 @@ Sequences $f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges
 - For $1\leq p < \infty$:
 	The skateboard to infinity, $f_k = \chi_{[k, k+1]}$.
 
-	Then $f_k \overset{a.e.}\converges 0$ but $\int \abs{f_k}^p = 1$ for all $k$.
+	Then $f_k \converges{a.e.}\to 0$ but $\int \abs{f_k}^p = 1$ for all $k$.
 
 - For $p = \infty$:
   
