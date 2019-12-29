@@ -80,4 +80,4 @@ On the other hand,
 x \in (1, \infty) \implies \frac{x}{1+x^n} \approx O\left(\frac 1 {x^{n-1}}\right)
 ,\end{align*}
 
-and so for $n > 
+and so for $n > 2$ the integral will converge by the $p\dash$test.
