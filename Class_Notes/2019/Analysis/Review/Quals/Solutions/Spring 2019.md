@@ -141,6 +141,6 @@ $\impliedby$:
 &= \int_{\RR^n} \int_0^{f(x)} 1 ~dt~dx \\
 &= \int_{\RR^n} \int_{\RR} \chi_S 
 \quad \text{where}~ S = \theset{t \in \RR \suchthat 0 \leq t \leq f(x)} \\
-&\overset{F.T.}= \int_{\RR} \int_{\RR^n} \chi_T
-\quad \text{where}~ T = \theset{x \in \RR^n \suchthat 0 \leq t \leq f(x)}
+&\overset{F.T.}= \int_{\RR} \int_{\RR^n} \chi_S \\
+&= \int
 .\end{align*}
