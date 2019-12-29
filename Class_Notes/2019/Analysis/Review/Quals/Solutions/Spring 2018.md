@@ -120,3 +120,4 @@ By Stone-Weierstrass, polynomials are dense in $C_0([0, 1])$, and $C_0([0, 1])$ 
 
 Since $m(X) < \infty$, we have $L^2(X) \subset L^1(X)$, so in fact $\norm{f - P_n}_1 \to 0$.
 
+But then 
