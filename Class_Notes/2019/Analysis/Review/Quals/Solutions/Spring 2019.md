@@ -228,7 +228,7 @@ By Riesz Representation for $L^2$, there is a $g \in L^2$ such that for all $f\i
 
 #### Step 2
 
-We already have
+By Holder, we already have
 
 \begin{align*}
 \norm{\Lambda}_{1\dual} 
