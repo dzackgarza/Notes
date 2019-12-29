@@ -12,4 +12,4 @@ Using Fatou to compute the limit of a sequence of integrals:
 
 
 Lemma:
-$f_k \to f$ a.e. and 
+$f_k \to f$ a.e. and $\norm{f_k}_p \leq M$
