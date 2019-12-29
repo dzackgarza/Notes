@@ -3,3 +3,6 @@
 ## 1
 
 Let $\QQ = \theset{q_j} = \theset{\frac {p_j} {q_j}}$ be an enumeration of the rationals, and define
+\begin{align*}
+E_j \definedas \theset{x\in \RR \suchthat \abs{x - \frac{p_j}{q_j} } }
+.\end{align*}
