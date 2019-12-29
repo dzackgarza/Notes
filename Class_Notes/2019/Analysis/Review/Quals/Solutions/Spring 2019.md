@@ -188,6 +188,13 @@ Let $\Lambda \in L^1(X)\dual$; we'll show that in fact $\Lambda \in L^2(X)\dual$
 
 It suffices to show that the $L^2$ operator norm of $\Lambda$ is bounded.
 
+Lemma: 
+$m(X) < \infty \implies L^p(X) \subset L^2(X)$.
+
+Proof:
+Write Holder's inequality as $\norm{fg}_1 \leq \norm{f}_a \norm{g}_b$ where $\frac 1 a + \frac 1 b = 1$.
+Now take $a = 
+
 Since $\norm{\Lambda}_{p\dual} \definedas \displaystyle\sup_{\norm{f} = 1} \abs{\Lambda(f)}$, given an arbitrary $f\in L^p$, we can define $\hat f = f/\norm{f}_p$, so $\norm{\hat f}_p = 1$, and obtain
 
 \begin{align*}
