@@ -38,3 +38,5 @@ Since $\theset{E_j}$ is a countable collection of measurable sets such that $\su
 
 
 ## 2
+
+A check shows that
