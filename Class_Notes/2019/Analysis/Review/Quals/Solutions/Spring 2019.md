@@ -193,7 +193,8 @@ $m(X) < \infty \implies L^p(X) \subset L^2(X)$.
 
 Proof:
 Write Holder's inequality as $\norm{fg}_1 \leq \norm{f}_a \norm{g}_b$ where $\frac 1 a + \frac 1 b = 1$.
-Now take $a = 
+Now take $\frac 1 a = \frac p 2$, so $\frac 1 b = 1 - \frac p 2$, then 
+
 
 Since $\norm{\Lambda}_{p\dual} \definedas \displaystyle\sup_{\norm{f} = 1} \abs{\Lambda(f)}$, given an arbitrary $f\in L^p$, we can define $\hat f = f/\norm{f}_p$, so $\norm{\hat f}_p = 1$, and obtain
 
