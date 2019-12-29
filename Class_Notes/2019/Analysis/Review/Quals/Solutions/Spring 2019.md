@@ -136,6 +136,9 @@ Then $\mathcal{A} = \theset{H \geq 0} \intersect \theset{G \geq 0}$ which is an 
 
 
 $\impliedby$:
+
+### b
+
 \begin{align*}
 \int_{\RR^n} f(x) ~dx 
 &= \int_{\RR^n} \int_0^{f(x)} 1 ~dt~dx \\
