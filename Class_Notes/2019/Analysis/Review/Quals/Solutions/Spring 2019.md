@@ -169,3 +169,4 @@ where we just note that $\int \int \chi_\mathcal{A} = m(\mathcal{A})$, and by F.
 
 ## 5
 
+By Holder's inequality with $p=q=2$, we have
