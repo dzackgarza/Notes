@@ -192,7 +192,7 @@ It suffices to show that the $L^2$ operator norm of $\Lambda$ is bounded.
 **Lemma**: 
 $m(X) < \infty \implies L^p(X) \subset L^2(X)$.
 
-> Proof:
+> *Proof:*
 > Write Holder's inequality as $\norm{fg}_1 \leq \norm{f}_a \norm{g}_b$ where $\frac 1 a + \frac 1 b = 1$, then
 \begin{align*}
 \norm{f}_p^p = \norm{\abs f^p}_1 \leq \norm{\abs f^p}_a ~\norm{1}_b
@@ -204,7 +204,7 @@ $m(X) < \infty \implies L^p(X) \subset L^2(X)$.
 \implies \norm{f}_p &\leq \norm{f}_2 \cdot O(m(X)) < \infty
 .\end{align*}
 
-
+By this lemma, $\norm{f}_1 \leq \norm{f}_2 C$ for some constant $C$.
 
 Since $\norm{\Lambda}_{p\dual} \definedas \displaystyle\sup_{\norm{f} = 1} \abs{\Lambda(f)}$, given an arbitrary $f\in L^p$, we can define $\hat f = f/\norm{f}_p$, so $\norm{\hat f}_p = 1$, and obtain
 
@@ -221,7 +221,7 @@ since $\norm{\Lambda}_{p\dual}$ is the best upper bound, and thus
 &\leq \norm{\Lambda}_{p\dual} \norm{f}_2 \cdot O(m(X))
 .\end{align*}
 
-So $\Lambda \in (L^2)\dual$.
+Now set $p=1$; then $\Lambda \in (L^2)\dual$.
 
 #### Step 2
 
