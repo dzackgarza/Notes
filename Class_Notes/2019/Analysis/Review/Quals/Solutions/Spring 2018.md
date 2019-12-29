@@ -76,3 +76,8 @@ and $\int_0^1 1 ~dx = 1 < \infty$.
 
 On the other hand,
 
+\begin{align*}
+x \in (1, \infty) \implies \frac{x}{1+x^n} \approx O\left(\frac 1 {x^{n-1}}\right)
+,\end{align*}
+
+and so for $n > 
