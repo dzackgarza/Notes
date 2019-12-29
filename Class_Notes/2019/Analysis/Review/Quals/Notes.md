@@ -57,4 +57,8 @@ Take
 - $X = \RR$,
 - $b_k = \sum_{j=1}^k \frac 1 j$
 - $f_k = \chi_{[b_k, b_{k+1}]}$
+
+Then
+
+- $f_k \converges{a.e.}\to 0$,
 - 
