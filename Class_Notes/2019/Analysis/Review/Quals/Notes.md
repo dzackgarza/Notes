@@ -9,3 +9,7 @@ Using Fatou to compute the limit of a sequence of integrals:
 .\end{align*}
 
 > Note that MCT might work, but showing that this is non-decreasing in $n$ is difficult.
+
+
+Lemma:
+$f_k \to f$ a.e. and 
