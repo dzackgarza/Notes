@@ -240,3 +240,5 @@ By Holder, we already have
 ,\end{align*}
 
 so it just remains to show that $\norm{g}_\infty \leq \norm{\Lambda}_{1\dual}$.
+
+Suppose otherwise, so $\norm{g}_\infty > \norm{\Lambda}_{1\dual}$.
