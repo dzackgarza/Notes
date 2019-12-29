@@ -113,3 +113,6 @@ Then
 So $\norm{f}_p \geq \norm{f}_\infty$.
 
 $\qed$
+
+## 4
+
