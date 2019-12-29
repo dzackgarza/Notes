@@ -137,7 +137,8 @@ Then $\mathcal{A} = \theset{H \geq 0} \intersect \theset{G \geq 0}$ which is an 
 
 $\impliedby$:
 
-By F.T., for almost every $
+By F.T., 
+
 
 ### b
 
