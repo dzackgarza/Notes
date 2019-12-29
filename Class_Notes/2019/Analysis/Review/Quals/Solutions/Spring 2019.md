@@ -182,6 +182,10 @@ So $L^2(X) \subseteq L^1(X)$, and since simple functions are dense in both space
 
 ### b
 
+
+
 Let $\Lambda \in L^1(X)\dual$; we'll show that in fact $\Lambda \in L^2(X)\dual$, and by Riesz Representation for $L^2$ there will be a $g\in L^2$ such that $\Lambda(f) = \inner{f}{g}$.
 
-It suffices to show that the $L^2$ operator norm of $\Lambda$ is bounded
+It suffices to show that the $L^2$ operator norm of $\Lambda$ is bounded.
+
+Since $\norm{\Lambda}_{p\dual} \definedas \displaystyle\sup_{\norm{f} = 1} \abs{\Lambda(f)}$, given an arbitrary $f\in L^p$, we can define $\hat f = f/\norm{f}_p$ and obtain
