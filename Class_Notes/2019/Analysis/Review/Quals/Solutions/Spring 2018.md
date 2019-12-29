@@ -52,6 +52,8 @@ x, & x < 1 \\
 \end{cases}
 .\end{align*}
 
+If $f_n \to f$ uniformly on $[0, \infty)$, it would converge uniformly on every subset.
+
 Since each $f_n(x)$ is clearly continuous on $(0, \infty)$, if the convergence was uniform then $f$ would be continuous, but $f$ has a clear discontinuity at $x=1$.
 
 ### b
