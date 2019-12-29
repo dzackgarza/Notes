@@ -133,6 +133,9 @@ f\in L^1 \implies
 
 - **Differentiating under the integral**:
 
+\begin{align*}
+F(t)
+.\end{align*}
 
 
 
