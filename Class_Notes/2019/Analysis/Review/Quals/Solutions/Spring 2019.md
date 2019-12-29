@@ -188,4 +188,11 @@ Let $\Lambda \in L^1(X)\dual$; we'll show that in fact $\Lambda \in L^2(X)\dual$
 
 It suffices to show that the $L^2$ operator norm of $\Lambda$ is bounded.
 
-Since $\norm{\Lambda}_{p\dual} \definedas \displaystyle\sup_{\norm{f} = 1} \abs{\Lambda(f)}$, given an arbitrary $f\in L^p$, we can define $\hat f = f/\norm{f}_p$ and obtain
+Since $\norm{\Lambda}_{p\dual} \definedas \displaystyle\sup_{\norm{f} = 1} \abs{\Lambda(f)}$, given an arbitrary $f\in L^p$, we can define $\hat f = f/\norm{f}_p$, so $\norm{\hat f}_p = 1$, and obtain
+
+\begin{align*}
+\abs{\Lambda(\hat f)} \leq \norm{\Lambda}_{p\dual}
+,\end{align*}
+
+since $\norm{\Lambda}_{p\dual}$ is the best upper bound, and thus
+
