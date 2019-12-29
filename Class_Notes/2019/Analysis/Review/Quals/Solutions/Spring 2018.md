@@ -68,3 +68,11 @@ To justify the DCT, write
 .\end{align*}
 
 Then
+\begin{align*}
+x \in [0, 1] \implies \frac{x}{1+x^n} < \frac{1}{1+x^n} < 1
+\end{align*}
+
+and $\int_0^1 1 ~dx = 1 < \infty$.
+
+On the other hand,
+
