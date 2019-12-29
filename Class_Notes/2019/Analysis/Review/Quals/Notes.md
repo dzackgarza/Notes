@@ -51,7 +51,7 @@ Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$:
 	
 	Then similarly $f_k \converges{a.e.}\to 0$, but $\norm{f_k}_p = 1$ and $\norm{f_k}_\infty = k \to \infty$
 
-	> Converges a.e., but not uniformly and not pointwise
+	> Converges a.e., but not uniformly and not pointwise.
 
 ### The Converse to the DCT does not hold
 
