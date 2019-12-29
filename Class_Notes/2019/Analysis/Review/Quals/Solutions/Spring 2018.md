@@ -116,4 +116,4 @@ $\qed$
 
 ## 4
 
-By Stone-Weirstrauss,
+By Stone-Weirstrauss, polynomials are dense in $C_0([0, 1])$, and $C_0([0, 1])$ is dense in $L^2([0, 1])$, so there exists a sequence of polynomials $P_n(x)$ such that $
