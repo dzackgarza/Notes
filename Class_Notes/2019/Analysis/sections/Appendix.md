@@ -172,4 +172,7 @@ f_k \converges{a.e.}\to f ,\quad
 
 **Lemma:**
 If $f$ is uniformly continuous, then
+\begin{align*}
+\norm{\tau_h f - f}_p \converges{L^p}\to 0 \quad \text{for all } p
+.\end{align*}
 
