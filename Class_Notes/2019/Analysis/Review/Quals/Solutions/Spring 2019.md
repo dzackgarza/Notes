@@ -169,6 +169,8 @@ where we just note that $\int \int \chi_\mathcal{A} = m(\mathcal{A})$, and by F.
 
 ## 5
 
+### a
+
 By Holder's inequality with $p=q=2$, we have
 \begin{align*}
 \norm{f}_1 = \norm{f\cdot 1}_1 \leq \norm{f}_2 \norm{1}_2 = \norm{f}_2 m(X)^{\frac 1 2} = \norm{f}_2,
@@ -177,3 +179,5 @@ By Holder's inequality with $p=q=2$, we have
 since $X = [0, 1] \implies m(X) = 1$.
 
 So $L^2(X) \subseteq L^1(X)$, and since simple functions are dense in both spaces, $L^2$ is dense in $L^1$.
+
+### b
