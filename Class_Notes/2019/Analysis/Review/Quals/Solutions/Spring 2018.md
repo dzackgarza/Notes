@@ -100,6 +100,8 @@ S_\varepsilon \definedas \theset{x\in \RR \suchthat \abs{f(x)} \geq \norm{f}_\in
 
 Then
 \begin{align*}
-\norm{f}
+\norm{f}_p 
+= \int_X \abs{f(x)}^p
+
 .\end{align*}
 
