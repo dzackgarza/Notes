@@ -112,4 +112,14 @@ Since $f_k \to f$ almost everywhere, we have $\liminf_k f_k(x) = f(x)$ and since
 
 so $\norm{f} \leq M < \infty$ and $f\in L^2$.
 
-Applying Egorov's theorem, we have
+Let $I = [0, 1]$.
+Applying Egorov's theorem to produce sets $F_\varepsilon$ such that $f_k\converges{u}\to f$ on $F_\varepsilon$ and taking $F = \intersect F_\varepsilon$, we have
+\begin{align*}
+\int_I f_k 
+&= \int_{F_\varepsilon}f_k + \int_{F_\varepsilon^c} f_k 
+\quad \converges{\varepsilon \to 0}\to \quad 
+\int_F f_k + 0 
+\quad  \converges{k\to\infty}\to \quad 
+\int_F f
+,\end{align*}
+using that fact that uniform converges allows commuting limits and integrals.
