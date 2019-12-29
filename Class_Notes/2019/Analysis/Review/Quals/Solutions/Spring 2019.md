@@ -247,5 +247,7 @@ Then there exists some $E\subseteq X$ with $m(E) > 0$ such that $x\in E \implies
 
 Define 
 \begin{align*}
-h = \frac{1}{m(E)} \frac{\overline{g}}{\abs g} 
+h = \frac{1}{m(E)} \frac{\overline{g}}{\abs g} \chi_E
 .\end{align*}
+
+Then $
