@@ -123,3 +123,5 @@ Applying Egorov's theorem to produce sets $F_\varepsilon$ such that $f_k\converg
 using that fact that uniform converges allows commuting limits and integrals.
 
 ## 4
+
+Define 
