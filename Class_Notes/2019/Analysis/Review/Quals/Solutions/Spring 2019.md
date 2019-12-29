@@ -187,7 +187,6 @@ So $L^2(X) \subseteq L^1(X)$, and since simple functions are dense in both space
 
 Let $\Lambda \in L^1(X)\dual$; we'll show that in fact $\Lambda \in L^2(X)\dual$, and by Riesz Representation for $L^2$ there will be a $g\in L^2$ such that $\Lambda(f) = \inner{f}{g}$.
 
-It suffices to show that the $L^2$ operator norm of $\Lambda$ is bounded.
 
 **Lemma**: 
 $m(X) < \infty \implies L^p(X) \subset L^2(X)$.
@@ -204,24 +203,28 @@ $m(X) < \infty \implies L^p(X) \subset L^2(X)$.
 \implies \norm{f}_p &\leq \norm{f}_2 \cdot O(m(X)) < \infty
 .\end{align*}
 
-By this lemma, $\norm{f}_1 \leq \norm{f}_2 C$ for some constant $C$.
+Let $f\in L^2$ be arbitrary --
+by the lemma, $\norm{f}_1 \leq C\norm{f}_2$ for some constant $C = O(m(X))$.
 
-Since $\norm{\Lambda}_{p\dual} \definedas \displaystyle\sup_{\norm{f} = 1} \abs{\Lambda(f)}$, given an arbitrary $f\in L^p$, we can define $\hat f = f/\norm{f}_p$, so $\norm{\hat f}_p = 1$, and obtain
+Since $\norm{\Lambda}_{1\dual} \definedas \displaystyle\sup_{\norm{f}_1 = 1} \abs{\Lambda(f)}$, given an arbitrary $f\in L^1$, we can define $\hat f = f/\norm{f}_1$, so $\norm{\hat f}_1 = 1$, and obtain
 
 \begin{align*}
-\abs{\Lambda(\hat f)} \leq \norm{\Lambda}_{p\dual}
+\abs{\Lambda(\hat f)} \leq \norm{\Lambda}_{1\dual}
 ,\end{align*}
 
-since $\norm{\Lambda}_{p\dual}$ is the best upper bound, and thus
+since $\norm{\Lambda}_{1\dual}$ is the *least* such bound over all $f\in L^1$, and thus
 
 \begin{align*}
-\frac{\abs{\Lambda(f)}}{\norm{f}_p} &= \abs{\Lambda(\hat f)} \leq \norm{\Lambda}_{p\dual} \\
+\frac{\abs{\Lambda(f)}}{\norm{f}_1} &= \abs{\Lambda(\hat f)} \leq \norm{\Lambda}_{1\dual} \\
 \implies \abs{\Lambda(f)} 
-&\leq \norm{\Lambda}_{p\dual} \norm{f}_p \\
-&\leq \norm{\Lambda}_{p\dual} \norm{f}_2 \cdot O(m(X))
-.\end{align*}
+&\leq \norm{\Lambda}_{1\dual} \cdot \norm{f}_1 \\
+&\leq \norm{\Lambda}_{1\dual} \cdot C \norm{f}_2 
+,\end{align*}
 
-Now set $p=1$; then $\Lambda \in (L^2)\dual$.
+which is finite by assumption.
+So $\Lambda \in (L^2)\dual$ since it is bounded and thus continuous.
+
+By Riesz Representation for $L^2$, there is a $g \in L^2$ such that for all $f\in L^2$,  $\Lambda(f) = \inner{f}{g}$ 
 
 #### Step 2
 
