@@ -250,9 +250,13 @@ Define
 h = \frac{1}{m(E)} \frac{\overline{g}}{\abs g} \chi_E
 .\end{align*}
 
-Then $\norm{h}_1 = 1$, and
 \begin{align*}
 \Lambda(h) &= \int_X hg \\
 &= \int_X \frac{1}{m(E)} \frac{g \overline g}{\abs g} \chi_E \\
-&= \frac{1}{m(E)} \int_E \abs{g}
-.\end{align*}
+&= \frac{1}{m(E)} \int_E \abs{g} \\
+&\geq \frac{1}{m(E)} \norm{g}_\infty m(E) \\
+&= \norm{g}_\infty \\
+&> \norm{\Lambda}_{1\dual}
+,\end{align*}
+
+a contradiction.
