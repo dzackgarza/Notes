@@ -37,3 +37,5 @@ f_k \overset{a.e.}\converges f ,\quad
 ###  Almost everywhere convergence does not imply $L^p$ convergence
 
 $f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges} f$: the skateboard to infinity $f_k = \chi_{[k, k+1]}$.
+
+Then $f_k \overset{a.e.}\converges 0$ but $\int \abs{f_k}^p = 1$ for all $k$.
