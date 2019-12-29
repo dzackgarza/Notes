@@ -56,4 +56,5 @@ Take
 
 - $X = \RR$,
 - $b_k = \sum_{j=1}^k \frac 1 j$
-- $f_k = \chi_{}
+- $f_k = \chi_{[b_k, b_{k+1}]}$
+- 
