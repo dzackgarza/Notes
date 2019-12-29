@@ -175,3 +175,5 @@ By Holder's inequality with $p=q=2$, we have
 \end{align*}
 
 since $X = [0, 1] \implies m(X) = 1$.
+
+So $L^2(X) \subseteq L
