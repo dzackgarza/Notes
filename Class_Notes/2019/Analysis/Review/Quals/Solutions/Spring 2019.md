@@ -182,4 +182,5 @@ So $L^2(X) \subseteq L^1(X)$, and since simple functions are dense in both space
 
 ### b
 
-Let $\Lambda \in 
+Let $\Lambda \in L^1(X)\dual$; we'll show that in fact $
+Lambda \in 
