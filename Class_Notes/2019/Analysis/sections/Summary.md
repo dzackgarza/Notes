@@ -34,7 +34,6 @@ $$
 ## Convergence Theorems
 
 - **Monotone Convergence Theorem (MCT)**: If $f_n \in L^+$ and $f_n \nearrow f$ a.e., then
-
 $$
 \lim \int f_n 
 = \int \lim f_n = \int f
@@ -42,14 +41,14 @@ $$
 
 - **Dominated Convergence Theorem (DCT)**: 
 If $f_n \in L^1$ and $f_n \to f$ a.e. with $\abs {f_n} \leq \abs g$ for some $g\in L^1$, then
-
 $$
 \lim \int f_n = \int \lim f_n = \int f
 .$$
 
 - **Fatou**:
+If $f_n \in L^+$, then
 $$
-f_n \in L^1 \implies \int \liminf f_n \leq \liminf \int f_n
+\int \liminf f_n \leq \liminf \int f_n
 .$$
 
 ## Inequalities and Equalities

@@ -1,14 +1,19 @@
 # Appendix
 
-## Undergraduate Analysis Review 
+An alternative characterization of **uniform continuity**:
+$$
+\left\|\tau_{y} f-f\right\|_{u} \rightarrow 0 \text { as } y \rightarrow 0
+$$
 
-- **Bolzano-Weierstrass**: 
+## Undergraduate Analysis Review
+
+- **Bolzano-Weierstrass**:
 Every bounded sequence has a convergent subsequence.
 
 - **Heine-Borel**:
 $$
-X \subseteq \RR^n \text{ is compact } 
-\iff 
+X \subseteq \RR^n \text{ is compact }
+\iff
 X \text{ is closed and bounded}
 .$$
 
@@ -18,7 +23,7 @@ If $X$ is a complete metric space, then
 - For any sequence $\theset{U_k}$ of open, dense sets, $\intersect_k U_k$ is also dense.
 - $X$ is *not* a countable union of nowhere-dense sets
 
-- **Nested Interval Characterization of Completeness:** 
+- **Nested Interval Characterization of Completeness:**
 $\RR$ being complete $\implies$ for any sequence of intervals $\theset{I_n}$ such that $I_{n+1} \subseteq I_n$, $\intersect I_n \neq \emptyset$.
 
 - **Convergence Characterization of Completeness:**
@@ -40,16 +45,16 @@ For any two sets $A, B$ in a metric space or compact Hausdorff space $X$, there 
 
 - Closed subsets of compact sets are compact.
 
-- Every compact subset of a Hausdorff space is closed 
+- Every compact subset of a Hausdorff space is closed
 
-- Showing that a series converges: 
+- Showing that a series converges:
 (Todo)
 
 ## Big Counterexamples
 
 ### For Limits
 
-- Differentiability $\implies$ continuity but not the converse: 
+- Differentiability $\implies$ continuity but not the converse:
 
   - The Weierstrass function is continuous but nowhere differentiable.
 
@@ -61,12 +66,12 @@ For any two sets $A, B$ in a metric space or compact Hausdorff space $X$, there 
   $$
   - Also shows that a sum of differentiable functions may not be differentiable.
 
-- Limit of integrals may not equal integral of limit: 
+- Limit of integrals may not equal integral of limit:
 $$
 \sum \indic{x = q_n \in \QQ}
 .$$
 
-- A sequence of continuous functions converging to a discontinuous function: 
+- A sequence of continuous functions converging to a discontinuous function:
 $$
 f(x) = x^n \text{ on } [0, 1]
 .$$
@@ -75,16 +80,55 @@ f(x) = x^n \text{ on } [0, 1]
 
 ### For Convergence
 
-- Notions of convergence: 
-  - Uniform 
-  - Pointwise 
-  - Almost everywhere 
-  - In norm
+- Notions of convergence:
+  1. Uniform
+  2. Pointwise
+  3. Almost everywhere
+  4. In norm
 
-- Uniform Continuity:
-$$
-\left\|\tau_{y} f-f\right\|_{u} \rightarrow 0 \text { as } y \rightarrow 0
-$$
+Uniform $\implies$ pointwise $\implies$ almost everywhere.
+
+> See Section 17.3.
+
+
+####  Almost everywhere convergence does not imply $L^p$ convergence for any $1\leq p \leq \infty$
+
+> See notes section 17.3.
+
+Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$:
+
+- For $1\leq p < \infty$:
+	The skateboard to infinity, $f_k = \chi_{[k, k+1]}$.
+
+	Then $f_k \converges{a.e.}\to 0$ but $\norm{f_k}_p = 1$ for all $k$.
+
+	> Converges pointwise and a.e., but not uniformly and not in norm.
+
+- For $p = \infty$:
+  The sliding boxes $f_k = k \cdot \chi_{[0, \frac 1 k]}$.
+
+	Then similarly $f_k \converges{a.e.}\to 0$, but $\norm{f_k}_p = 1$ and $\norm{f_k}_\infty = k \to \infty$
+
+	> Converges a.e., but not uniformly, not pointwise, and not in norm.
+
+#### The Converse to the DCT does not hold
+
+> $L^p$ boundedness does not imply a.e. boundedness.
+
+I.e. it is not true that $\lim \int f_k = \int f$ implies that $\exists g\in L^p$ such that $f_k < g$ a.e. for every $k$.
+
+Take
+
+- $b_k = \sum_{j=1}^k \frac 1 j \to \infty$
+- $f_k = \chi_{[b_k, b_{k+1}]}$
+
+Then
+
+- $f_k \converges{a.e.}\to f = 0$,
+- $\int f_k = \frac 1 k \to 0 \implies \norm{f_k}_p \to 0$,
+- $0 = \int f = \lim \int f_k = 0$
+- But $g > f_k \implies g > \norm{f_k}_\infty = 1$ a.e. $\implies g\not\in L^p(\RR)$.
+
 
 ## Less Important Errata
 
@@ -100,4 +144,29 @@ If $\mathcal{F}$ is pointwise bounded and equicontinuous, then $\mathcal{F}$ is 
 
 - **Arzela - Ascoli 2**:
 If $\theset{f_k}$ is pointwise bounded and equicontinuous, then there exists a continuous $f$ such that $f_k \mapsvia{u} f$ on every compact set.
+
+
+**Example:**
+Using Fatou to compute the limit of a sequence of integrals:
+
+\begin{align*}
+\lim _{n \rightarrow \infty} \int_{0}^{\infty} \frac{n^{2}}{1+n^{2} x^{2}} e^{-\frac{x^{2}}{n^{3}}} d x 
+\overset{\text{Fatou}}\geq 
+\int_{0}^{\infty} \lim _{n \rightarrow \infty}  \frac{n^{2}}{1+n^{2} x^{2}} e^{-\frac{x^{2}}{n^{3}}} d x \to \int \infty
+.\end{align*}
+
+> Note that MCT might work, but showing that this is non-decreasing in $n$ is difficult.
+
+
+**Lemma:**
+\begin{align*}
+f_k \converges{a.e.}\to f ,\quad
+\norm{f_k}_p \leq M  
+\implies f\in L^p \text{ and } \norm{f}_p \leq M
+.\end{align*}
+
+> *Proof:* Apply Fatou to $\abs{f}^p$:
+\begin{align*}
+\int \abs{f}^p = \int \liminf \abs{f_k}^p \leq \liminf \int \abs{f_k}^p = M
+.\end{align*}
 
