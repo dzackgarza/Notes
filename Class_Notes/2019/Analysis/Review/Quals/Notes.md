@@ -31,3 +31,8 @@ f_k \overset{a.e.}\converges f ,\quad
 \begin{align*}
 \int \abs{f}^p = \int \liminf \abs{f_k}^p \leq \liminf \int \abs{f_k}^p = M
 .\end{align*}
+
+## Counterexamples:
+
+
+$f_k \overset{a.e.}\converges f$ but 
