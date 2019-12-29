@@ -34,12 +34,19 @@ f_k \overset{a.e.}\converges f ,\quad
 
 ## Counterexamples:
 
-###  Almost everywhere convergence does not imply $L^p$ convergence
+###  Almost everywhere convergence does not imply $L^p$ convergence for any $1\leq p \leq \infty$
 
-$f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges} f$: the skateboard to infinity $f_k = \chi_{[k, k+1]}$.
+Sequences $f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges} f$: 
 
-Then $f_k \overset{a.e.}\converges 0$ but $\int \abs{f_k}^p = 1$ for all $k$.
+- For $1\leq p < \infty$:
+	The skateboard to infinity, $f_k = \chi_{[k, k+1]}$.
 
-###  Almost everywhere convergence does not imply $L^\infty$ convergence:
+	Then $f_k \overset{a.e.}\converges 0$ but $\int \abs{f_k}^p = 1$ for all $k$.
+
+- For $p = \infty$:
+  
+	The marching boxes $k \cdot \chi
+
+###  Almost everywhere convergence does not imply $L^\infty$ convergence
 
 
