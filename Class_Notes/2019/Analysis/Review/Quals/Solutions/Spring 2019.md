@@ -124,4 +124,6 @@ using that fact that uniform converges allows commuting limits and integrals.
 
 ## 4
 
-Define 
+Define $F(x, t) = f(x)$, $G(x, t) = t$, and $H(x, y) = F(x, t) - G(x, t)$, which are all measurable functions.
+
+Then $
