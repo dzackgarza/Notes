@@ -144,8 +144,13 @@ By F.T.,
 is measurable for almost every $x\in \RR^n$.
 
 Since $g(x) = m(\mathcal{A}_x)$ is a measurable function, we have
+\begin{align*}
+\int_{\RR^n} g(x) ~dx 
+= \int_{\RR^n} m(\mathcal{A}_x) ~dx 
+= m(\mathcal A)
+.\end{align*}
 
-\int_{\RR^n} g(x) ~dx
+
 
 ### b
 
