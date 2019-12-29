@@ -170,3 +170,8 @@ where we just note that $\int \int \chi_\mathcal{A} = m(\mathcal{A})$, and by F.
 ## 5
 
 By Holder's inequality with $p=q=2$, we have
+\begin{align*}
+\norm{f}_1 = \norm{f\cdot 1}_1 \leq \norm{f}_2 \norm{1}_2 = \norm{f}_2 m(X)^{\frac 1 2} = \norm{f}_2,
+\end{align*}
+
+since $X = [0, 1] \implies m(X) = 1$.
