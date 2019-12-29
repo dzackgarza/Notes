@@ -61,3 +61,4 @@ However $f$ has a clear discontinuity at $x=1$.
 
 If the DCT applies, we can interchange the limit and integral, and the value would be the area under the graph of $f$ which is $\int_0^1 x ~dx = \frac 1 2$.
 
+To justify the DCT, write 
