@@ -4,7 +4,9 @@
 
 Let $\QQ = \theset{\frac {p_j} {q_j}}_{j\in\NN}$ be an enumeration of the rationals, and define
 \begin{align*}
-E_j \definedas \theset{x\in \RR \suchthat \abs{x - \frac{p_j}{q_j} } < \frac 1 {q^3}}
+E_j \definedas \theset{x\in \RR \suchthat \abs{x - \frac{p_j}{q_j} } < \frac 1 {q^3}} 
+\definedas
+B_{q^3}\left(\frac {p_j}{q_j}\right)
 .\end{align*}
 
 Each $E_j$ is an open interval,
