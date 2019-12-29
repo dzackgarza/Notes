@@ -32,7 +32,7 @@ f_k \overset{a.e.}\converges f ,\quad
 \int \abs{f}^p = \int \liminf \abs{f_k}^p \leq \liminf \int \abs{f_k}^p = M
 .\end{align*}
 
-## Counterexamples:
+## Counterexamples
 
 ###  Almost everywhere convergence does not imply $L^p$ convergence for any $1\leq p \leq \infty$
 
@@ -46,7 +46,5 @@ Sequences $f_k \overset{a.e.}\converges f$ but $f_k \overset{L^p}{\not\converges
 - For $p = \infty$:
   
 	The marching boxes $k \cdot \chi_{[0, \frac 1 k]}$
-
-###  Almost everywhere convergence does not imply $L^\infty$ convergence
 
 
