@@ -16,5 +16,5 @@ $f_k \to f$ a.e. and $\norm{f_k}_p \leq M$ uniformly $\implies f\in L^p$ and $\n
 
 Proof: Apply Fatou to $\abs{f}^p$:
 \begin{align*}
-\int \abs{f}^p
+\int \abs{f}^p = \int \liminf \abs{f_k}^p \leq \liminf \int \abs{f_k}^p = M
 .\end{align*}
