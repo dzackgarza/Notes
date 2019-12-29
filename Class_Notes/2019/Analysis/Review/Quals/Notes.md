@@ -3,6 +3,9 @@
 ## Fatou
 
 **Theorem (Fatou)**:
+\begin{align*}
+f\in L^+ \implies \int \liminf f_k
+.\end{align*}
 
 
 Using Fatou to compute the limit of a sequence of integrals:
