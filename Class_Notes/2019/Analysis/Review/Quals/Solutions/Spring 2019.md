@@ -149,4 +149,6 @@ $\impliedby$:
 &= \int_0^\infty m(S_t) ~dt
 \quad \text{where }~ S_t = \theset{x
 \in \RR^n \suchthat t\leq f(x) }
-.\end{align*}
+,\end{align*}
+
+where we can just note that $S_t$ is a slice of $\mathcal A$
