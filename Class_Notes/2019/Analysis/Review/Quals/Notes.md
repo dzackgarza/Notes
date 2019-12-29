@@ -20,6 +20,7 @@ Using Fatou to compute the limit of a sequence of integrals:
 
 
 **Lemma:**
+
 $f_k \to f$ a.e. and $\norm{f_k}_p \leq M$ uniformly $\implies f\in L^p$ and $\norm{f}_p \leq M$. (?)
 
 > *Proof:* Apply Fatou to $\abs{f}^p$:
