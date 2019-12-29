@@ -9,7 +9,7 @@ E_j \definedas \theset{x\in \RR \suchthat \abs{x - \frac{p_j}{q_j} } < \frac 1 {
 
 Each $E_j$ is measurable, since
 \begin{align*}
-E_j = \union_{1 \leq p \leq q_j} \left(\frac{p}{q_j} - ?, \frac{p}{q_j} + ? \right)
+E_j = \union_{1 \leq p \leq q_j} \left(\frac{p}{q_j} - \frac{1}{q_j^2},~ \frac{p}{q_j} + \frac{1}{q_j^2} \right)
 ,\end{align*}
 
 which is a union of open intervals, thus Borel, thus Lebesgue measurable.
