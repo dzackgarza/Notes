@@ -128,6 +128,8 @@ using that fact that uniform converges allows commuting limits and integrals.
 
 $\implies$:
 
+Idea: $\mathcal{A} = \theset{f(x) - t \geq 0} \intersect \theset{t \geq 0}$.
+
 Define $F(x, t) = f(x)$, $G(x, t) = t$, and $H(x, y) = F(x, t) - G(x, t)$, which are all measurable functions.
 
-Then $\mathcal{A} = \theset{H \geq 0} \intersect \theset{}$
+Then $\mathcal{A} = \theset{H \geq 0} \intersect \theset{G \geq 0}$ which is an intersection of measurable sets.
