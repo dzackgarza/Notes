@@ -93,4 +93,7 @@ so $\norm{f}_p \leq \norm{f}_\infty$ for all $p$ and taking $\lim_{p\to\infty}$ 
 
 Conversely, let $\varepsilon > 0$.
 Define 
+\begin{align*}
+S_\varepsilon \definedas \theset{x\in \RR \suchthat }
+.\end{align*}
 
