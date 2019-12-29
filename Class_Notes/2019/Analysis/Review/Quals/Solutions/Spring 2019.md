@@ -243,4 +243,4 @@ so it just remains to show that $\norm{g}_\infty \leq \norm{\Lambda}_{1\dual}$.
 
 Suppose otherwise, so $\norm{g}_\infty > \norm{\Lambda}_{1\dual}$.
 
-Then there exists some $E\subseteq X$ with $m(E) > 0$ such that $x\in E \implies \abs{g{x}} >
+Then there exists some $E\subseteq X$ with $m(E) > 0$ such that $x\in E \implies \abs{g(x)} > \norm{\Lambda}_{1\dual}$.
