@@ -17,6 +17,4 @@ m(E_j) \leq 2 \cdot \mathrm{radius} \left(B_{q^3}\left(\frac {p_j}{q_j}\right)\r
 
 which converges by the $p\dash$test for sums.
 
-Thus $
-
 Since $\theset{E_j}$ is a countable collection 
