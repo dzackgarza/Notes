@@ -102,6 +102,7 @@ Then
 \begin{align*}
 \norm{f}_p 
 = \int_X \abs{f(x)}^p
-
+\geq \int_{S_\varepsilon} \abs{f(x)}^p
+\geq \int_{S_\varepsilon} \abs{\norm{f}_\infty - \varepsilon}^p
 .\end{align*}
 
