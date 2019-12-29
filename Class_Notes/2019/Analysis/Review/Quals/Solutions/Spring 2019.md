@@ -228,8 +228,7 @@ By Riesz Representation for $L^2$, there is a $g \in L^2$ such that for all $f\i
 
 #### Step 2
 
-Pick $f\in L^2$, then
-We want to show that $g\in L^\infty$
+We already have
 
 \begin{align*}
 \norm{\Lambda}_{1\dual} 
@@ -240,4 +239,4 @@ We want to show that $g\in L^\infty$
 &= \norm{g}_\infty
 ,\end{align*}
 
-so it just remains to show that $\norm{g}_\infty \leq \norm{\Lambda}_{1\dual}$
+so it just remains to show that $\norm{g}_\infty \leq \norm{\Lambda}_{1\dual}$.
