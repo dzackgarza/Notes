@@ -1,7 +1,7 @@
 # Notes
 
 Modes of convergence:
-Uniform $\implies$ 
+Uniform $\implies$ pointwise $\implies$ almost everywhere.
 
 ## Fatou
 
