@@ -112,3 +112,4 @@ Since $f_k \to f$ almost everywhere, we have $\liminf_k f_k(x) = f(x)$ and since
 
 so $\norm{f} \leq M < \infty$ and $f\in L^2$.
 
+Applying Egorov's theorem, we have
