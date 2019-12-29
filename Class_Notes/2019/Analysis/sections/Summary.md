@@ -131,6 +131,9 @@ f\in L^1 \implies
 .\end{align*}
 
 
+- **Differentiating under the integral**:
+
+
 ## Important Comments
 
 **Measurability**:
