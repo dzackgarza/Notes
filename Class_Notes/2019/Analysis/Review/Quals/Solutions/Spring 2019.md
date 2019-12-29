@@ -250,4 +250,4 @@ Define
 h = \frac{1}{m(E)} \frac{\overline{g}}{\abs g} \chi_E
 .\end{align*}
 
-Then $
+Then $\norm{h}_
