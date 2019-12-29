@@ -99,4 +99,7 @@ S_\varepsilon \definedas \theset{x\in \RR \suchthat \abs{f(x)} \geq \norm{f}_\in
 
 
 Then
+\begin{align*}
+\norm{f}
+.\end{align*}
 
