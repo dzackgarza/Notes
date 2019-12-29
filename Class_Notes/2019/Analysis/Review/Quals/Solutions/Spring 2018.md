@@ -15,4 +15,6 @@ m(E_j) \leq 2 \cdot \mathrm{radius} \left(B_{q^3}\left(\frac {p_j}{q_j}\right)\r
 .\end{align*}
 
 
+Thus $m()
+
 Since $\theset{E_j}$ is a countable collection 
