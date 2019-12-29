@@ -252,5 +252,5 @@ h = \frac{1}{m(E)} \frac{\overline{g}}{\abs g} \chi_E
 
 Then $\norm{h}_1 = 1$, and
 \begin{align*}
-
+\Lambda(h) = \int_X hg = \int_X
 .\end{align*}
