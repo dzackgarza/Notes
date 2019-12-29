@@ -7,12 +7,12 @@ Let $\QQ = \theset{\frac {p_j} {q_j}}_{j\in\NN}$ be an enumeration of the ration
 E_j \definedas \theset{x\in \RR \suchthat \abs{x - \frac{p_j}{q_j} } < \frac 1 {q^3}}
 .\end{align*}
 
-Each $E_j$ is measurable, since
+Each $E_j$ is an open interval,
 \begin{align*}
-E_j = \union_{1 \leq p \leq q_j} \left(\frac{p}{q_j} - \frac{1}{q_j^3},~ \frac{p}{q_j} + \frac{1}{q_j^3} \right)
+E_j = \left(\frac{p_j}{q_j} - \frac{1}{q_j^3},~ \frac{p_j}{q_j} + \frac{1}{q_j^3} \right)
 ,\end{align*}
 
-which is a union of open intervals, thus Borel, thus Lebesgue measurable.
+and is Borel and thus Lebesgue measurable.
 
 Note that 
 \begin{align*}
