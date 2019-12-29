@@ -147,11 +147,14 @@ But $x \mapsto m(\mathcal A_x)$ is a measurable function, and is exactly to $x \
 
 ### b
 
+We first note
+
+
 \begin{align*}
 \int_{\RR^n} f(x) ~dx 
 &= \int_{\RR^n} \int_0^{f(x)} 1 ~dt~dx \\
 &= \int_{\RR^n} \int_{\RR} \chi_\mathcal{A} ~dt~dx
-\quad \text{where}~ \mathcal{A} = \theset{(x, t) \in \RR^n\cross \RR \suchthat 0 \leq t \leq f(x)} \\
+\quad \text{where}~  \\
 &\overset{F.T.}= \int_{\RR} \int_{\RR^n} \chi_\mathcal{A} ~dx~dt\\
 &= \int_0^\infty \int_{\RR^n} \chi_\mathcal{A} ~dx~dt\\
 &= \int_0^\infty m(\mathcal{A}_t) ~dt
