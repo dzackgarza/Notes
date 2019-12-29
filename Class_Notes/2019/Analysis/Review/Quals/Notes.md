@@ -41,7 +41,7 @@ Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$:
 - For $1\leq p < \infty$:
 	The skateboard to infinity, $f_k = \chi_{[k, k+1]}$.
 
-	Then $f_k \converges{a.e.}\to 0$ but $\int \abs{f_k}^p = 1$ for all $k$.
+	Then $f_k \converges{a.e.}\to 0$ but $\norm{f_k}_p = 1$ for all $k$.
 
 - For $p = \infty$:
   The marching boxes $f_k = k \cdot \chi_{[0, \frac 1 k]}$.
