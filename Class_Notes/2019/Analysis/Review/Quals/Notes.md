@@ -62,4 +62,4 @@ Then
 
 - $f_k \converges{a.e.}\to 0$,
 - $\int f_k = \frac 1 k \to 0$,
-- $g > f_k \implies g > 1
+- $g > f_k \implies g > \norm{f_k}_\infty = 1$ a.e. $\implies g\not\in L^p$.
