@@ -229,3 +229,7 @@ By Riesz Representation for $L^2$, there is a $g \in L^2$ such that for all $f\i
 #### Step 2
 
 We want to show that $g\in L^\infty$
+
+\begin{align*}
+\norm{\Lambda}
+.\end{align*}
