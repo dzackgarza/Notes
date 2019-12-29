@@ -46,6 +46,6 @@ Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$:
 - For $p = \infty$:
   The marching boxes $f_k = k \cdot \chi_{[0, \frac 1 k]}$.
 	
-	Then similarly $f_k \converges{a.e.}\to 0$
+	Then similarly $f_k \converges{a.e.}\to 0$ but $\sup
 
 
