@@ -198,6 +198,9 @@ Write Holder's inequality as $\norm{fg}_1 \leq \norm{f}_a \norm{g}_b$ where $\fr
 .\end{align*}
 
 Now take $a = \frac 2 p$ and this reduces to 
+\begin{align*}
+\norm{f}_p
+.\end{align*}
 
 
 
