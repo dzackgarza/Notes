@@ -92,3 +92,5 @@ Since $\abs{f(x)} \leq \norm{f}_\infty$ almost everywhere, we have
 so $\norm{f}_p \leq \norm{f}_\infty$ for all $p$ and taking $\lim_{p\to\infty}$ preserves this inequality.
 
 Conversely, let $\varepsilon > 0$.
+Define 
+
