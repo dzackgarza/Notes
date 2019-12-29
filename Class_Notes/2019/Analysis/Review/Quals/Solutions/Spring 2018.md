@@ -7,6 +7,9 @@ Let $\QQ = \theset{\frac {p_j} {q_j}}_{j\in\NN}$ be an enumeration of the ration
 E_j \definedas \theset{x\in \RR \suchthat \abs{x - \frac{p_j}{q_j} } < \frac 1 {q^3}}
 .\end{align*}
 
+We can note that $E_j$ is measurable, since
+
+
 Note that 
 \begin{align*}
 E_j \subseteq B_{q^3}(\frac {p_j}{q_j})
