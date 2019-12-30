@@ -145,4 +145,4 @@ $\qed$
 
 ## 5
 
-It suffices to consider $f = 0$ by replacing $f_n$ with $f_n - f$, which means we need to show that $f_n \to 0 ~a.e. \implies 
+It suffices to consider $f = 0$ by replacing $f_n$ with $f_n - f$, which means we need to show that $f_n \to 0 ~a.e. \implies \norm{f_n}_1 \to 0$.
