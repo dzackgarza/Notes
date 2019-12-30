@@ -10,6 +10,8 @@ $$
 - Some inclusions on the real line:
     
     > Differentiable with a bounded derivative $\subset$ Lipschitz continuous $\subset$ absolutely continuous $\subset$ uniformly continuous $\subset$ continuous
+    > 
+    > Proofs: Mean Value Theorem, Triangle inequality, Definition of absolute continuity specialized to one interval, Definition of uniform continuity
 
 - **Bolzano-Weierstrass**:
 Every bounded sequence has a convergent subsequence.
