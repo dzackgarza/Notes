@@ -125,5 +125,12 @@ Note that $\int f(x) x^n = 0 ~\forall n \implies \int f(x) P_\ell(x) = 0$ for al
 
 But then the $k$th Fourier coefficient of $f$ is given by
 \begin{align*}
-\inner{f}{e_k} = \int f(x) e^{-2\pi i k}
+\inner{f}{e_k} = \int_0^1 f(x) e^{-2\pi i k x} ~dx
+= \int_0^1 f(x) \lim_{\ell \to \infty} P_\ell(x) \\
+= \lim_{\ell \to \infty}  \int_0^1 f(x) P_\ell(x) \\
+= \lim_{\ell \to \infty} 0 = 0
 .\end{align*}
+
+Thus $\hat f = 0$ is the zero function, and $\hat f = 0 \iff f = 0$ almost everywhere.
+
+$\qed$
