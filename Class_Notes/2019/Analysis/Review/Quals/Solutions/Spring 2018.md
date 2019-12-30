@@ -116,4 +116,4 @@ $\qed$
 
 ## 4
 
-Noting that $\theset{e^{2\pi i k x} \mid k\in \ZZ}$ is an orthonormal basis for $L^2$, $e^{2\pi i k x} = \cos(2\pi k x) + i \sin(2\pi k x)$
+Noting that trigonometric polynomials are dense in $L^2([0, 1])$, we can write $f(x) = 
