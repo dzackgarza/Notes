@@ -162,3 +162,4 @@ g_n &= \abs{f_n} + \abs{f} &&\to 2\abs {f} ~a.e.
 
 which forces $\int h_n = \int \abs{f_n - f} \to 0$.
 
+But then 
