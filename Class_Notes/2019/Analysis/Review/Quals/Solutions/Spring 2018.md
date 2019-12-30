@@ -139,6 +139,6 @@ But then the $k$th Fourier coefficient of $f$ is given by
 &= 0 \quad \forall k\in \ZZ
 ,\end{align*}
 
-so $\hat f = 0$ is the zero function, and $\hat f = 0 \iff f = 0$ almost everywhere.
+so $\hat f$ is the zero function, and $\hat f = 0 \iff f = 0$ almost everywhere.
 
 $\qed$
