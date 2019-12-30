@@ -127,8 +127,8 @@ Note that the result clearly holds if $f(x)$ is a polynomial, since if $f(x) = \
 .\end{align*}
 
 
-By Stone-Weierstrass, polynomials are dense in $C_0([0, 1])$, and $C_0([0, 1])$ is dense in $L^2([0, 1])$, so there exists a sequence of polynomials $P_n(x)$ such that $P_n \converges{L^2}\to f$.
+By Stone-Weierstrass, polynomials are dense in $C_0([0, 1])$, and $C_0([0, 1])$ is dense in $L^2([0, 1])$, so there exists a sequence of polynomials $P_k(x)$ such that $P_k \converges{L^2}\to f$.
 
-Since $m(X) < \infty$, we have $L^2(X) \subset L^1(X)$, so $P_n \converges{L^1}\to f$ as well.
+Since $m(X) < \infty$, we have $L^2(X) \subset L^1(X)$, so $P_k \converges{L^1}\to f$ as well.
 
-But $\norm{P_n \cdot x^n}_1 = 0$ by the previous argument
+But $\norm{f\cdot x^n}_1 = 0 ~\forall n \implies \norm{P_k \cdot x^n}_1 = 0$  by the previous argument
