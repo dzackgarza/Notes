@@ -120,10 +120,10 @@ Note that the result clearly holds if $f(x)$ is a polynomial, since if $f(x) = \
 
 \begin{align*}
 \int_0^1 f(x) x^n 
-= \int_0^1 \sum_{j=0}^N c_j x^j x^n 
+&= \int_0^1 \sum_{j=0}^N c_j x^j x^n 
 = \sum_{j=0}^N c_j \int_0^1 x^{j+n} 
-= \sum_{j=0}^N \frac{c_j}{j + n+1} = 0  \\
-\implies c_j = 0 \quad \forall j \implies f(x) = 0
+= \sum_{j=0}^N \frac{c_j}{j + n+1} = 0  \quad \forall n \\
+&\implies c_j = 0 \quad \forall j \implies f(x) = 0
 .\end{align*}
 
 
