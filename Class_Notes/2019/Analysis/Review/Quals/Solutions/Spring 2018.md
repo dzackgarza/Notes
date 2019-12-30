@@ -156,8 +156,9 @@ g_n &= \abs{f_n} + \abs{f} &&\to 2\abs {f} ~a.e.
 \int 2 \abs {f} 
 &= \int \liminf~ (g_n - h_n) \\
 &= \int \liminf~ g_n - \int \liminf~ h_n \\
-&= \int 2 \abs{f} - \int \liminf~ h_n
-&\overset{Fatou}\leq
-.\end{align*}
+&= \int 2 \abs{f} - \int \liminf~ h_n \\
+&\overset{Fatou}\leq \int 2\abs{f} + \limsup \int h_n
+,\end{align*}
 
+which forces $\int h_n \to 0$.
 
