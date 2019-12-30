@@ -145,4 +145,4 @@ $\qed$
 
 ## 5
 
-It suffices to
+It suffices to consider $f_n
