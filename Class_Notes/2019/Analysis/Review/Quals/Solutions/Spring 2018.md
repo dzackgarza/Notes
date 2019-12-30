@@ -171,4 +171,4 @@ But then
 \leq \int \abs{f_n - f} \to 0
 ,\end{align*}
 
-so $\int f_n = \int f$.
+so $\int f_n \to \int f$.
