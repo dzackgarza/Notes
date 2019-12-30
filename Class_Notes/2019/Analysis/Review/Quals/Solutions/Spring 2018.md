@@ -166,5 +166,5 @@ which forces $\int h_n = \int \abs{f_n - f} \to 0$.
 
 But then 
 \begin{align*}
-
+\abs{\int f_n - f}
 .\end{align*}
