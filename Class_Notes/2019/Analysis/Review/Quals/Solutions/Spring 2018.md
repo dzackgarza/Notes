@@ -125,5 +125,5 @@ Note that $\int f(x) x^n = 0 ~\forall n \implies \int f(x) P_\ell(x) = 0$ for al
 
 But then the $k$th Fourier coefficient of $f$ is given by
 \begin{align*}
-\inner{f}{e_k} = \int f(x) e^{2}
+\inner{f}{e_k} = \int f(x) e^{-2\pi i k}
 .\end{align*}
