@@ -160,5 +160,5 @@ g_n &= \abs{f_n} + \abs{f} &&\to 2\abs {f} ~a.e.
 &\overset{Fatou}\leq \int 2\abs{f} + \limsup \int h_n
 ,\end{align*}
 
-which forces $\int h_n \to 0$.
+which forces $\int h_n = \int \abs{f_n - f} \to 0$.
 
