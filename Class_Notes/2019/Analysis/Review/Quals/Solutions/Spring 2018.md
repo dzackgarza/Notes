@@ -146,10 +146,18 @@ $\qed$
 ## 5
 
 We can note that $\int\abs{f_n - f} \to 0$, since if $\int \abs{f_n} \to \int \abs{f}$ then we can define
+\begin{align*}
+h_n &= \abs{f_n - f} &&\to 0 ~a.e.\\
+g_n &= \abs{f_n} + \abs{f} &&\to 2\abs {f} ~a.e.
+\end{align*}
 
 
 \begin{align*}
-
+\int 2 \abs {f} 
+&= \int \liminf~ (g_n - h_n) \\
+&= \int \liminf~ g_n - \int \liminf~ h_n \\
+&= \int 2 \abs{f} - \int \liminf~ h_n
+&\overset{Fatou}\leq
 .\end{align*}
 
 
