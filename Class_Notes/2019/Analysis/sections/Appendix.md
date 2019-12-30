@@ -5,6 +5,11 @@ $$
 \left\|\tau_{y} f-f\right\|_{u} \rightarrow 0 \text { as } y \rightarrow 0
 $$
 
+Lemma:
+Measurability is not preserved by homeomorphisms.
+
+> Counterexample: there is a homeomorphism that takes that Cantor set (measure zero) to a fat Cantor set
+
 ## Undergraduate Analysis Review
 
 - Some inclusions on the real line:
