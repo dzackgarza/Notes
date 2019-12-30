@@ -116,4 +116,4 @@ $\qed$
 
 ## 4
 
-Noting that trigonometric polynomials are dense in $L^2([0, 1])$, 
+Noting that trigonometric polynomials are dense in $L^2([0, 1])$, we can write $f_N(x) = \sum
