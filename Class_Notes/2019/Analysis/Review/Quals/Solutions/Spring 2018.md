@@ -116,21 +116,29 @@ $\qed$
 
 ## 4
 
-Noting that exponentials are dense in $L^2([0, 1])$, we can find a function $F_N =  \sum_{\abs K \leq N} c_k e^{2\pi i k x}$ such that $F_N \converges{L^2}\to f$.
+Fix $k \in \ZZ$.
+Since $e^{2\pi i k x}$ is continuous on the compact interval $[0, 1]$, it is uniformly continuous, and is thus there is a sequence of polynomials $P_\ell$ such that 
+$$
+P_{\ell, k} \converges{\ell\to\infty}\to e^{2\pi i k x} \text{ uniformly on } [0,1]
+.$$
 
-Since $e^{2\pi i k x}$ is continuous on the compact interval $[0, 1]$, it is uniformly continuous, and is thus there is a sequence of polynomials $P_\ell$ such that $P_\ell \to e^{2\pi i k x}$ uniformly on $[0,1]$.
-
-Note that $\int f(x) x^n = 0 ~\forall n \implies \int f(x) P_\ell(x) = 0$ for all $\ell$ by linearity.
+Note that by linearity,
+$$
+\int f(x) x^n = 0 ~\forall n \implies \int f(x) P_{\ell, k}(x) = 0
+\quad \forall \ell \in \NN
+$$
 
 
 But then the $k$th Fourier coefficient of $f$ is given by
 \begin{align*}
-\inner{f}{e_k} = \int_0^1 f(x) e^{-2\pi i k x} ~dx
-= \int_0^1 f(x) \lim_{\ell \to \infty} P_\ell(x) \\
-= \lim_{\ell \to \infty}  \int_0^1 f(x) P_\ell(x) \\
-= \lim_{\ell \to \infty} 0 = 0
-.\end{align*}
+\inner{f}{e_k} 
+&= \int_0^1 f(x) e^{-2\pi i k x} ~dx \\
+&= \int_0^1 f(x) \lim_{\ell \to \infty} P_\ell(x) \\
+&= \lim_{\ell \to \infty}  \int_0^1 f(x) P_\ell(x) \\
+&= \lim_{\ell \to \infty} 0 
+&= 0 \quad \forall k\in \ZZ
+,\end{align*}
 
-Thus $\hat f = 0$ is the zero function, and $\hat f = 0 \iff f = 0$ almost everywhere.
+so $\hat f = 0$ is the zero function, and $\hat f = 0 \iff f = 0$ almost everywhere.
 
 $\qed$
