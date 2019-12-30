@@ -62,6 +62,9 @@ $$
 
 ## Inequalities and Equalities
 
+- **Reverse Triangle Inequality**
+
+
 - **Chebyshev's Inequality**
 \begin{align*}
 \mu(\{x:|f(x)|>\alpha\}) \leq\left(\frac{\|f\|_{p}}{\alpha}\right)^{p}
