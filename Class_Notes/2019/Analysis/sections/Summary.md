@@ -51,11 +51,7 @@ $$
   \int \abs{f_n - f} \to 0
   $$
 
-- **Generalized Dominated Convergence Theorem**: 
-If $f_n \in L^1$ and $f_n \to f$ a.e. with $\abs {f_n} \leq {g_n}$ for some $g_n \to g\in L^1$, then
-$$
-\lim \int f_n = \int \lim f_n = \int f
-.$$
+  > Generalized DCT: can relax $\abs {f_n} < g$ to $\abs{f_n} < g_n \to g\in L^1$.
 
 
 - **Fatou**:
