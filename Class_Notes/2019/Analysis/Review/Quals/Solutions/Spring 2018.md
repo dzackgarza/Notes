@@ -134,8 +134,8 @@ But then the $k$th Fourier coefficient of $f$ is given by
 \inner{f}{e_k} 
 &= \int_0^1 f(x) e^{-2\pi i k x} ~dx \\
 &= \int_0^1 f(x) \lim_{\ell \to \infty} P_\ell(x) \\
-&= \lim_{\ell \to \infty}  \int_0^1 f(x) P_\ell(x) \\
-&= \lim_{\ell \to \infty} 0 
+&= \lim_{\ell \to \infty}  \int_0^1 f(x) P_\ell(x) \quad\quad \text{by uniform convergence} \\
+&= \lim_{\ell \to \infty} 0 \\
 &= 0 \quad \forall k\in \ZZ
 ,\end{align*}
 
