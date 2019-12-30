@@ -144,3 +144,5 @@ so $\hat f$ is the zero function, and $\hat f = 0 \iff f = 0$ almost everywhere.
 $\qed$
 
 ## 5
+
+It suffices to
