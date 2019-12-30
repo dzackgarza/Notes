@@ -117,3 +117,7 @@ $\qed$
 ## 4
 
 Noting that exponentials are dense in $L^2([0, 1])$, we can find a function $F_N =  \sum_{\abs K \leq N} c_k e^{2\pi i k x}$ such that $F_N \converges{L^2}\to f$.
+
+Since $e^{2\pi i k x}$ is continuous on the compact interval $[0, 1]$, it is uniformly continuous, and is thus there is a sequence of polynomials $P_\ell$ such that $P_\ell \to e^{2\pi i k x$ uniformly on $[0,1]$.
+
+Note that $\int f(x) x^n = 0 ~\forall n \implies \int f(x) P_\ell(x) = 0$ for all $\ell$
