@@ -145,7 +145,8 @@ $\qed$
 
 ## 5
 
-We can note that $\int\abs{f_n - f} \to 0$, since
+We can note that $\int\abs{f_n - f} \to 0$, since if $\int \abs{f_n} \to \int \abs{f}$ then we can define
+
 
 \begin{align*}
 
