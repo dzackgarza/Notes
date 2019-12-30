@@ -45,6 +45,13 @@ $$
 \lim \int f_n = \int \lim f_n = \int f
 .$$
 
+- **Generalized Dominated Convergence Theorem (DCT)**: 
+If $f_n \in L^1$ and $f_n \to f$ a.e. with $\abs {f_n} \leq \abs g$ for some $g\in L^1$, then
+$$
+\lim \int f_n = \int \lim f_n = \int f
+.$$
+
+
 - **Fatou**:
 If $f_n \in L^+$, then
 $$
