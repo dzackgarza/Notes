@@ -7,6 +7,10 @@ $$
 
 ## Undergraduate Analysis Review
 
+- Some inclusions on the real line:
+    
+    > Differentiable with a bounded derivative $\subset$ Lipschitz continuous $\subset$ absolutely continuous $\subset$ uniformly continuous $\subset$ continuous
+
 - **Bolzano-Weierstrass**:
 Every bounded sequence has a convergent subsequence.
 
