@@ -172,3 +172,5 @@ But then
 ,\end{align*}
 
 so $\int f_n \to \int f$.
+
+$\qed$
