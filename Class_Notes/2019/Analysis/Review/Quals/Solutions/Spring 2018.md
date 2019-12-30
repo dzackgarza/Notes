@@ -166,5 +166,9 @@ which forces $\int h_n = \int \abs{f_n - f} \to 0$.
 
 But then 
 \begin{align*}
-\abs{\int f_n - f}
-.\end{align*}
+\abs{\int f_n - \int f}
+= \abs{\int f_n -f} 
+\leq \int \abs{f_n - f} \to 0
+,\end{align*}
+
+so $\int f_n = \int f$.
