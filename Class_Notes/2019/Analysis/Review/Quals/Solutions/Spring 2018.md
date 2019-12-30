@@ -118,6 +118,12 @@ $\qed$
 
 Note that the result clearly holds if $f(x)$ is a polynomial, since if $f(x) = \sum c_j x^j$ and $\int f(x)x^n = 0$ for all $n$, then
 
+\begin{align*}
+\int_0^1 f(x) x^n 
+= \int_0^1 \sum_{j=0}^N c_j x^j x^n 
+= \sum_{j=0}^N c_j \int_0^1 x^{j+n} 
+= \sum c_j
+.\end{align*}
 
 
 By Stone-Weierstrass, polynomials are dense in $C_0([0, 1])$, and $C_0([0, 1])$ is dense in $L^2([0, 1])$, so there exists a sequence of polynomials $P_n(x)$ such that $\norm{f - P_n}_2 \converges{n\to\infty}\to 0$.
