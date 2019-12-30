@@ -145,7 +145,7 @@ $\qed$
 
 ## 5
 
-> Moral: $\int \abs{f_n - f} \to \implies \int f_n = \int f$.
+> Moral: $\int \abs{f_n - f} \to \iff \int f_n = \int f$.
 
 Since if $\int \abs{f_n} \to \int \abs{f}$ then we can define
 \begin{align*}
