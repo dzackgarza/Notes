@@ -145,4 +145,4 @@ $\qed$
 
 ## 5
 
-It suffices to consider $f_n
+It suffices to consider $f = 0$ by replacing $f_n$ with $f_n - f$, which means we need to show that 
