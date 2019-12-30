@@ -123,4 +123,4 @@ Since $e^{2\pi i k x}$ is continuous on the compact interval $[0, 1]$, it is uni
 Note that $\int f(x) x^n = 0 ~\forall n \implies \int f(x) P_\ell(x) = 0$ for all $\ell$ by linearity.
 
 
-But then 
+But then
