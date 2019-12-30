@@ -116,19 +116,4 @@ $\qed$
 
 ## 4
 
-Note that the result clearly holds if $f(x)$ is a polynomial, since if $f(x) = \sum c_j x^j$ and $\int f(x)x^n = 0$ for all $n$, then
-
-\begin{align*}
-\int_0^1 f(x) x^n 
-&= \int_0^1 \sum_{j=0}^N c_j x^j x^n 
-= \sum_{j=0}^N c_j \int_0^1 x^{j+n} 
-= \sum_{j=0}^N \frac{c_j}{j + n+1} = 0  \quad \forall n \\
-&\implies c_j = 0 \quad \forall j \implies f(x) = 0
-.\end{align*}
-
-
-By Stone-Weierstrass, polynomials are dense in $C_0([0, 1])$, and $C_0([0, 1])$ is dense in $L^2([0, 1])$, so there exists a sequence of polynomials $P_k(x)$ such that $P_k \converges{L^2}\to f$.
-
-Since $m(X) < \infty$, we have $L^2(X) \subset L^1(X)$, so $P_k \converges{L^1}\to f$ as well.
-
-But $\norm{f\cdot x^n}_1 = 0 ~\forall n \implies \norm{P_k \cdot x^n}_1 = 0$  by the previous argument
+Noting that $e^{2\pi i n x} = \cos(nx) + i\sin(nx)$ are both continuous on $[0, 1]$
