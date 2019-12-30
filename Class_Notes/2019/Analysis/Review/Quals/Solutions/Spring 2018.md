@@ -124,3 +124,6 @@ Note that $\int f(x) x^n = 0 ~\forall n \implies \int f(x) P_\ell(x) = 0$ for al
 
 
 But then
+\begin{align*}
+\int f(x) e^{2}
+.\end{align*}
