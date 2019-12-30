@@ -63,6 +63,9 @@ $$
 ## Inequalities and Equalities
 
 - **Reverse Triangle Inequality**
+\begin{align*}
+\abs{\norm{x} - \norm{y}} \leq \norm{x - y}
+.\end{align*}
 
 
 - **Chebyshev's Inequality**
