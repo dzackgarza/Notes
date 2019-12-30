@@ -116,4 +116,4 @@ $\qed$
 
 ## 4
 
-Noting that $e^{2\pi n x} = \cos(nx) + i\sin(nx)$ are both continuous on $[0, 1]$
+Noting that $e^{2\pi n x}$ is an orthonormal basis for $L^2([0, 1])$ and $e^{2\pi n x} = \cos(2\pi n )
