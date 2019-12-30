@@ -116,4 +116,4 @@ $\qed$
 
 ## 4
 
-Noting that $e^{2\pi i n x} = \cos(nx) + i\sin(nx)$ are both continuous on $[0, 1]$
+Noting that $e^{2\pi n x} = \cos(nx) + i\sin(nx)$ are both continuous on $[0, 1]$
