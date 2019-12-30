@@ -147,5 +147,8 @@ $\qed$
 
 We can note that $\int\abs{f_n - f} \to 0$, since
 
+\begin{align*}
+
+.\end{align*}
 
 
