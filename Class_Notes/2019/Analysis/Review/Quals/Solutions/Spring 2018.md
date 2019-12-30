@@ -145,6 +145,8 @@ $\qed$
 
 ## 5
 
+> Moral: $\int \abs{f_n - f} \to \implies \int f_n = \int f$.
+
 Since if $\int \abs{f_n} \to \int \abs{f}$ then we can define
 \begin{align*}
 h_n &= \abs{f_n - f} &&\to 0 ~a.e.\\
@@ -163,3 +165,6 @@ g_n &= \abs{f_n} + \abs{f} &&\to 2\abs {f} ~a.e.
 which forces $\int h_n = \int \abs{f_n - f} \to 0$.
 
 But then 
+\begin{align*}
+
+.\end{align*}
