@@ -202,4 +202,7 @@ Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 
 **Lemma:**
 $f\ast g$ is uniformly continuous.
+\begin{align*}
+\norm{f\ast g}
+.\end{align*}
 
