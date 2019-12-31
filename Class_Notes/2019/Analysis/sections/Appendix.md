@@ -200,3 +200,6 @@ Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 .\end{align*}
 
 
+**Lemma:**
+$f\ast g$ is uniformly continuous.
+
