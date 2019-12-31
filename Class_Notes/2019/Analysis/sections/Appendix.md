@@ -201,8 +201,9 @@ Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 
 
 **Lemma:**
-$f\ast g$ is uniformly continuous.
+For $f\in L^p, g\in L^q$, $f\ast g$ is uniformly continuous.
 \begin{align*}
-\norm{f\ast g}
+\norm{\tau_h(f\ast g) - f\ast g}_\infty 
+&= \norm{(\tau_h f - f) \ast g}_\infty \leq \norm{\tau_hf - f}_p \norm{g}_q \to 0
 .\end{align*}
 
