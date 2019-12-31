@@ -192,8 +192,8 @@ If $f$ is uniformly continuous, then
 **Lemma**:
 $\norm{\tau_h f - f}_p \to 0$ for every $p$.
 
-> - i.e. "Continuity in $L^1$" holds for all $L^p$
-> - i.e. Translation operators are continuous
+> - i.e. "Continuity in $L^1$" holds for all $L^p$.
+> - i.e. Translation operators are continuous.
 
 > *Proof:*
 > Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
