@@ -192,3 +192,5 @@ If $f$ is uniformly continuous, then
 **Lemma**:
 $\norm{\tau_h f - f}_p \to 0$ for every $p$, i.e. "continuity in $L^1$" holds for all $L^p$.
 
+
+
