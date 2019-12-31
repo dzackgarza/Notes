@@ -101,9 +101,9 @@ $$
 $$
 
 - **Young's Inequality**:
-$$
+
 \frac 1 p + \frac 1 q = \frac 1 r + 1 \implies
-\|f * g\|_{p} \leq\|f\|_{1}\|g\|_{p}
+\|f * g\|_{r} \leq\|f\|_{p}\|g\|_{q}
 $$
 
 > Useful specific cases:
