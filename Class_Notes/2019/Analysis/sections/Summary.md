@@ -100,6 +100,7 @@ $$
 \|f+g\|_{p} \leq\|f\|_{p}+\|g\|_{p}
 $$
 
+
 - **Young's Inequality**:
 \begin{align*}
 \frac 1 p + \frac 1 q = \frac 1 r + 1 \implies
@@ -110,7 +111,8 @@ $$
 > Useful specific cases:
 \begin{align*}
 \|f * g\|_{p} &\leq\|f\|_{1}\|g\|_{p}, \\
-\norm{f\ast g}_1 &\leq \norm{f}_1 \norm{g}_1 
+\norm{f\ast g}_1 &\leq \norm{f}_1 \norm{g}_1 \\
+\norm{f\ast g}_\infty &\leq \norm{f}_2 \norm{g}_2
 .\end{align*}
 
 
