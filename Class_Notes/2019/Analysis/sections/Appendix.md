@@ -222,4 +222,4 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 > *Proof:*
 > Let $A$ be an interval, choose $\phi_k \to \chi_A$, then $\int f \chi_A = 0$ for all intervals.
 > So this holds for any Borel set $A$.
-> Then just take $A_1 = \theset{f > 0} and $A_2 = \theset{f < 0}$
+> Then just take $A_1 = \theset{f > 0}$ and $A_2 = \theset{f < 0}$, then $\int 
