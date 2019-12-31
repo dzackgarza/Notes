@@ -190,18 +190,26 @@ If $f$ is uniformly continuous, then
 .\end{align*}
 
 **Lemma**:
-$\norm{\tau_h f - f}_p \to 0$ for every $p$, i.e. "continuity in $L^1$" holds for all $L^p$.
+$\norm{\tau_h f - f}_p \to 0$ for every $p$.
 
-*Proof:*
-Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
+> - "Continuity in $L^1$" holds for all $L^p$"
+> - "Translation operators are continuous"
+
+> *Proof:*
+> Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 \begin{align*}
 \norm{\tau_h f - f}_p 
 \leq \norm{\tau_h f - \tau_h g}_p + \norm{\tau_h g - g}_p + \norm{g - f}_p \to 0
 .\end{align*}
 
 
+
+
 **Lemma:**
 For $f\in L^p, g\in L^q$, $f\ast g$ is uniformly continuous.
+
+> *Proof*: 
+> Use Young's inequality
 \begin{align*}
 \norm{\tau_h(f\ast g) - f\ast g}_\infty 
 &= \norm{(\tau_h f - f) \ast g}_\infty \leq \norm{\tau_hf - f}_p \norm{g}_q \to 0
