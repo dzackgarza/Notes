@@ -106,7 +106,7 @@ $$
 $$
 
 > Useful specific cases:
-> 
+
 
 - **Bessel's Inequality:**
 For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
