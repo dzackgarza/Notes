@@ -215,3 +215,6 @@ For $f\in L^p, g\in L^q$, $f\ast g$ is uniformly continuous.
 &= \norm{(\tau_h f - f) \ast g}_\infty \leq \norm{\tau_hf - f}_p \norm{g}_q \to 0
 .\end{align*}
 
+
+**Lemma**:
+If $
