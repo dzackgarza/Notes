@@ -190,5 +190,5 @@ If $f$ is uniformly continuous, then
 .\end{align*}
 
 **Lemma**:
-
+$f\in L^2
 
