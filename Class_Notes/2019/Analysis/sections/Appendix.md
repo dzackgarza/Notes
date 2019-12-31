@@ -219,4 +219,5 @@ For $f\in L^p, g\in L^q$, $f\ast g$ is uniformly continuous.
 **Lemma**:
 If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 
-*Proof:*
+> *Proof:*
+> Let $I$ be an interval, choose $\phi_k \to \chi_A$
