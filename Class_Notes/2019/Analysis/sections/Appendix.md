@@ -189,3 +189,6 @@ If $f$ is uniformly continuous, then
 \norm{\tau_h f - f}_p \converges{L^p}\to 0 \quad \text{for all } p
 .\end{align*}
 
+**Lemma**:
+
+
