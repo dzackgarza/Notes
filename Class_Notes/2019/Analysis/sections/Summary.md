@@ -113,6 +113,7 @@ $$
 \norm{f\ast g}_1 &\leq \norm{f}_1 \norm{g}_1 \\
 \|f * g\|_{p} &\leq\|f\|_{1}\|g\|_{p}, \\
 \norm{f\ast g}_\infty &\leq \norm{f}_2 \norm{g}_2
+\norm{f\ast g}_\infty &\leq \norm{f}_p \norm{g}_q
 .\end{align*}
 
 
