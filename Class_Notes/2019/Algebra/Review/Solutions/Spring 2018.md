@@ -96,7 +96,7 @@ Take
 .\end{align*}
 
 
-A computation shows that 
+Computations show that 
 
 - $\alpha_1^2 \alpha_2^2 = 2$, so $\alpha_1 \alpha_2 = \sqrt 2$
 - $\alpha_1^2 = 2 + \sqrt 2 \implies \sqrt 2 = \alpha_1^2 - 2$
@@ -110,7 +110,7 @@ and thus
 &= \frac{\alpha_2^2 - 2}{\alpha_2} \\
 &= \alpha_2 -2\alpha_2\inv \\
 &= \alpha_2 - \frac{2\alpha_1}{\sqrt 2} \\
-&= \alpha_2 -\alpha_1 \sqrt 2 
+&= \alpha_2 -\alpha_1 \sqrt 2 \\
 &\neq \alpha_1
 ,\end{align*}
 
