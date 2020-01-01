@@ -127,4 +127,4 @@ and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\
 
 ?? The subgroup of index 2 $\generators{\sigma^2}$ corresponds to the field extension $Q(\sqrt 2) / \QQ$.
 
-## 5
+## 3
