@@ -32,3 +32,7 @@ This could have three possible orders:
 - $p^2$: Not possible, since $\abs {Z(G)} > 1$
 - $p$: Then $G/Z(G)$ is cyclic, and (theorem) thus $G$ is abelian
 - $1$: Then $G = Z(G)$ and $G$ is abelian.
+
+### c
+
+
