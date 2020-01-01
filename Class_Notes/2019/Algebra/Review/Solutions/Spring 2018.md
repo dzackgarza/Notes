@@ -142,7 +142,7 @@ If $\sigma$ fixes $E_i$ and if $e_1 e_2 \in E_1 E_2$ then $\sigma(e_1 e_2) = \si
 
 ### b
 
-That $H_1 H_2 \subseteq G$ is clear, since if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an automorphism of $K$ that fixes $E_i$, and $\QQ \subseteq E_i$, so each $\tau_i$ fixes $\QQ$ and thus $\sigma$ fixes $\QQ$.
+That $H_1 H_2 \subseteq G$ is clear, since if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an automorphism of $K$ that fixes $E_i \supseteq \QQ$, so each $\tau_i$ fixes $\QQ$ and thus $\sigma$ fixes $\QQ$.
 
 
 
