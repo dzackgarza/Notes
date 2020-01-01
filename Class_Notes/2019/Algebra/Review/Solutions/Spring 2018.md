@@ -131,14 +131,7 @@ and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\
 
 ### a
 
-$H \subseteq H_1 \intersect H_2$:
-
-Let $\sigma \in H = \Gal(K/E_1 E_2)$, and noting that $E_1, E_2 \subseteq E_1E_2$, if $\sigma$ fixes $E_1 E_2$ then it fixes any subset, so $\sigma \in \Gal(K/E_i)$ for $i=1,2$, and thus $\sigma \in \Gal(K/E_1) \intersect \Gal(K/E_2) = H_1 \intersect H_2$.
-
-
-$H_1 \intersect H_2 \subseteq H$:
-
-If $\sigma$ fixes $E_i$ and if $e_1 e_2 \in E_1 E_2$ then $\sigma(e_1 e_2) = \sigma(e_1) \sigma(e_2) = e_1 e_2$, so $\sigma$ fixes $E_1 E_2$.
+By the Galois correspondence, it suffices to show that 
 
 ### b
 
