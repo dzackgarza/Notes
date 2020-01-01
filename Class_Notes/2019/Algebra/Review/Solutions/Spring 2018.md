@@ -71,8 +71,8 @@ and splitting field $K = \QQ(\theset{\alpha_i})$.
 
 ### b
 
-Since $f$ is irreducible by Eisenstein with $p=2$, $K$ is the splitting field of a separable irreducible polynomial and thus Galois over $\QQ$.
-Moreover, the Galois group is a transitive subgroup of $S^4$, so the possibilities are:
+$K$ is the splitting field of a separable polynomial and thus Galois over $\QQ$.
+Moreover, Since $f$ is irreducible by Eisenstein with $p=2$, the Galois group is a transitive subgroup of $S^4$, so the possibilities are:
 
 - $S_4$
 - $A_4$
