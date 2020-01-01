@@ -200,8 +200,8 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 
 ## Series of Groups
 
-Definition:
-Simple
+**Definition:**
+A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
 
 Definition:
 Irreducible
