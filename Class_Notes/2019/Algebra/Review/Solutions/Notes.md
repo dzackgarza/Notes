@@ -57,7 +57,6 @@ $$
 p \divides \abs{G} \implies \exists g\in G \text{ such that } o(g) = p \text{ and } \exists H \definedas \generators{g} \leq G \text{ with } \abs{H} = p
 .$$
 
-
 **Class Equation**:
 $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: Z(x_i)]
