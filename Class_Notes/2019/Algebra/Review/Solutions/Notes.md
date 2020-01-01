@@ -238,9 +238,9 @@ A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian
 Equivalently, $G$ is solvable iff $G$ has a terminating *derived series*.
 
 **Definition:**
-A group $G$ is **nilpotent** iff $G$ has a terminating upper central series.
+A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper central series, or lower central series.
 
-> Moral: the "higher centers" are eventually zero
+> Moral: the adjoint map is nilpotent.
 
 > Nilpotent $\implies$ solvable, direct product of Sylows, and every maximal subgroup is properly contained in its normalizer.
 
