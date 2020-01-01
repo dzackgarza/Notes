@@ -172,7 +172,7 @@ Modifying the codomain:
 
 ## Isomorphism Theorems
 
-**Diamond Theorem / 3rd Isomorphism Theorem**:
+**Diamond Theorem / 2nd Isomorphism Theorem**:
 
 If $S \leq G$ and $N \normal G$, then
 
