@@ -215,6 +215,9 @@ A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \c
 > The derived series terminates iff $G$ is solvable.
 
 **Definition:**
+A central series for a group $G$ is a series
+
+**Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
 
 > If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
@@ -230,14 +233,6 @@ Nilpotent
 **Definition:**
 Irreducible
 
-**Definition:**
-Composition Series
-
-**Definition:**
-Normal Series
-
-**Definition:**
-Derived Series
 
 Theorem:
 x series terminates iff $G$ is simple?
