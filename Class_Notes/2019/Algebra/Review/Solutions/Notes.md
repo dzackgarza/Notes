@@ -215,7 +215,7 @@ A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \c
 > The derived series terminates iff $G$ is solvable.
 
 **Definition:**
-A central series for a group $G$ is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that each quotient is central, i.e. $[G, G^i]
+A central series for a group $G$ is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that each quotient is central, i.e. $[G, G^i] \leq G^{i+1}$
 
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
