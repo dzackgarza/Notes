@@ -136,7 +136,13 @@ and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\
 By the Galois correspondence, it suffices to show that the fixed field of $H_1 \intersect H_2$ is $E_1 E_2$.
 
 Let $\sigma \in H_1 \intersect H_2$; then $\sigma \in \Aut(K)$ fixes both $E_1$ and $E_2$.
-Writing $x \in 
+
+> Not sure if this works -- compositum is not literally product..?
+
+Writing $x \in E_1E_2$ as $x=e_1 e_2$, we have 
+$$
+\sigma(x) = \sigma(e_1 e_2) = \sigma(e_1) \sigma(e_2) = e_1 e_2  =x
+$$
 
 ### b
 
