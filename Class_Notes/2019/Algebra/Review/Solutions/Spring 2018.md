@@ -79,3 +79,5 @@ We then have
 \begin{align*}
 [K: \QQ] = [K: L] [L : \QQ] = (2)(2) = 4
 .\end{align*}
+
+This $\abs{\Gal(K/\QQ)} = 4$, 
