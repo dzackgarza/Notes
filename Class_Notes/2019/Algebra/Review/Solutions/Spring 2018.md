@@ -62,3 +62,6 @@ Noting that $g$ is irreducible by Eisenstein with $p=2$, there is a nontrivial q
 We can now note that $\min(\alpha, K)$ is given by $p(x) = x^2 - (2\pm \sqrt 2)$, and so $[\QQ(\alpha): K] = 2$.
 
 We then have
+\begin{align*}
+[\QQ(\alpha): \QQ] = [\QQ(\alpha): K ] [K : \QQ] = (2)(2) = 4
+.\end{align*}
