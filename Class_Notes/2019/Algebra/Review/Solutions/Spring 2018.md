@@ -90,3 +90,10 @@ This $\abs{\Gal(K/\QQ)} = 4$, which leaves only two possibilities:
 
 We can next check orders of elements.
 Take
+\begin{align*}
+\sigma &\in \Gal(K/\QQ) \\
+\alpha_1 &\mapsto \alpha_2
+,\end{align*}
+
+
+and consider $\sigma^2(\alpha_1) = \sigma(\alpha_2)$.
