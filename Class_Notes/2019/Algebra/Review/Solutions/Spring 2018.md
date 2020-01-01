@@ -129,7 +129,8 @@ and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\
 
 ## 3
 
-> Moral
+> Moral: $H_1 \intersect H_2 \iff E_1 E_2$, $H_1 H_2 \iff E_1 \intersect E_2$.
+> 
 
 ### a
 
