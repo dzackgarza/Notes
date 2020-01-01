@@ -68,7 +68,7 @@ Moreover, the Galois group is a transitive subgroup of $S^4$, so the possibiliti
 - $S_4$
 - $A_4$
 - $D_4$
-- $\ZZ/(2)^2$
+- $\ZZ/(2) \cross \ZZ/(2)$
 - $\ZZ/(4)$
 
 We can note that $g$ splits over $L \definedas \QQ(\sqrt 2)$, an extension of degree 2.
