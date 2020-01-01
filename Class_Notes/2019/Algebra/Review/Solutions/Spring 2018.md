@@ -144,6 +144,8 @@ If $\sigma$ fixes $E_1, E_2$, then if $e_1 e_2 \in E_1 E_2$ then $\sigma(e_1 e_2
 
 That $H_1 H_2 \subseteq G$ is clear, since if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an automorphism of $K$ that fixes $E_i$, and $\QQ \subseteq E_i$, so each $\tau_i$ fixes $\QQ$ and thus $\sigma$ fixes $\QQ$.
 
+
+
 ### c
 
 By the Galois correspondence, the subgroup $H_1H_2 \leq G$ will correspond to an intermediate field $E$ such that $K/E/\QQ$ and $E$ is the fixed field of $H_1 H_2$.
