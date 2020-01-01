@@ -131,7 +131,7 @@ and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\
 
 ### a
 
-By the Galois correspondence, it suffices to show that 
+By the Galois correspondence, it suffices to show that the fixed field of $H_1 \intersect H_2$ is 
 
 ### b
 
