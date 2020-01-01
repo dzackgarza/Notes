@@ -55,9 +55,11 @@ $\qed$
 
 ## 2
 
-Note that $g(x) = x^2 - 4x + 2$ has roots $x = 2 \pm \sqrt{2}$, and so the $f$ has roots $\alpha = \pm \sqrt{2 \pm \sqrt{2}}$ and splitting field $K = \QQ(\alpha)$.
+Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so the $f$ has roots $\alpha = \pm \sqrt{2 \pm \sqrt{2}}$ and splitting field $K = \QQ(\alpha)$.
 
-Noting that $g$ is irreducible by Eisenstein with $p=2$, there is a nontrivial quadratic extension $L \definedas \QQ(2 + \sqrt 2) / \QQ$ which has degree 2.
+We can note that $g$ splits over $L \definedas \QQ(\sqrt 2)$.
+
+Noting that $g$ is irreducible by Eisenstein with $p=2$, there is a nontrivial quadratic extension $L \definedas \QQ(\) / \QQ$ which has degree 2.
 
 We can now note that $\min(\alpha, L)$ is given by $p(x) = x^2 - (2 + \sqrt 2)$, and so $[\QQ(\alpha): K] = 2$.
 
