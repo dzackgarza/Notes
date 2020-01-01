@@ -80,4 +80,7 @@ We then have
 [K: \QQ] = [K: L] [L : \QQ] = (2)(2) = 4
 .\end{align*}
 
-This $\abs{\Gal(K/\QQ)} = 4$, 
+This $\abs{\Gal(K/\QQ)} = 4$, which leaves only two possibilities:
+
+- $\ZZ/(2) \cross \ZZ/(2)$
+- $\ZZ/(4)$
