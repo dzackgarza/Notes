@@ -153,11 +153,16 @@ That $H_1 H_2 \subseteq G$ is clear, since if $\sigma = \tau_1 \tau_2 \in H_1 H_
 That it is a subgroup follows from the fact that elements commute. 
 To see this, let $e \in E_1$ and $\sigma = \sigma_1 \sigma_2 \in H_1 H_2$.
 
-Then $\sigma_1(e) = e \in E_1$ by definition, and $\sigma_1 \sigma_2(e) = \sigma_2(e)$, so
+Then 
+$$
+\sigma_1(e) = e \in E_1 \implies \sigma_2\sigma_1(e) = \sigma_1(e)
+$$  
+and $\sigma_1 \sigma_2(e) = \sigma_2(e)$, so
 \begin{align*}
+\sigma_1 \sigma_2(e) = \sigma_2 \sigma_1(e)
+,\end{align*}
 
-.\end{align*}
-
+where a similar proof holds for $e\in E_2$ and thus for arbitrary $x\in E_1 E_2$.
 
 
 
