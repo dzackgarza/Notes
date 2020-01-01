@@ -55,3 +55,5 @@ $\qed$
 
 ## 2
 
+Note that $f(x) = x^2 - 4x + 2$ has roots $x = 2 \pm \sqrt{2}$, and so the original polynomial has roots $\pm \sqrt{2 \pm \sqrt{2}}$.
+
