@@ -138,7 +138,7 @@ Let $\sigma \in H = \Gal(K/E_1 E_2)$, and noting that $E_1, E_2 \subseteq E_1E_2
 
 $H_1 \intersect H_2 \subseteq H$:
 
-If $\sigma$ fixes $E_1, E_2$, then if $e_1 e_2 \in E_1 E_2$ then $\sigma(e_1 e_2) = \sigma(e_1) \sigma(e_2) = e_1 e_2$, so $\sigma$ fixes $E_1 E_2$.
+If $\sigma$ fixes $E_i$ and if $e_1 e_2 \in E_1 E_2$ then $\sigma(e_1 e_2) = \sigma(e_1) \sigma(e_2) = e_1 e_2$, so $\sigma$ fixes $E_1 E_2$.
 
 ### b
 
