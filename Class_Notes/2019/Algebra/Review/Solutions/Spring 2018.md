@@ -49,7 +49,7 @@ By the classification of finite abelian groups and the Chinese Remainder theorem
 
 - $\ZZ/(5)^2 \cross \ZZ/(7^2)$
 
-- $\ZZ/(5^2) \cross \ZZ(7^2)$
+- $\ZZ/(5^2) \cross \ZZ/(7^2)$
 
 $\qed$
 
