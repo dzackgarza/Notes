@@ -114,6 +114,6 @@ and thus
 &\neq \alpha_1
 ,\end{align*}
 
-and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\Gal(K/\QQ) \cong \ZZ/(4)$.
+and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\Gal(K/\QQ) = \theset{\sigma^k \suchthat 1\leq k \leq 4} \cong \ZZ/(4)$.
 
 $\qed$
