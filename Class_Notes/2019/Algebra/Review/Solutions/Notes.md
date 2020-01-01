@@ -242,6 +242,8 @@ A group $G$ is **nilpotent** iff $G$ has a terminating upper central series.
 
 > Moral: the "higher centers" are eventually zero
 
+> Nilpotent $\implies$ direct product of Sylows,
+
 **Definition:**
 Irreducible
 
