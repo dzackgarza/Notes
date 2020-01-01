@@ -88,4 +88,5 @@ This $\abs{\Gal(K/\QQ)} = 4$, which leaves only two possibilities:
 - $\ZZ/(2) \cross \ZZ/(2)$
 - $\ZZ/(4)$
 
-Let $\sigma \in \Gal(K/\QQ)$, and suppose 
+We can next check orders of elements.
+Take
