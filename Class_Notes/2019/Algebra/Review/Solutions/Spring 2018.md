@@ -142,6 +142,7 @@ If $\sigma$ fixes $E_1, E_2$, then if $e_1 e_2 \in E_1 E_2$ then $\sigma(e_1 e_2
 
 ### b
 
+That $H_1 H_2 \subseteq G$ is clear, since if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an 
 
 ### c
 
