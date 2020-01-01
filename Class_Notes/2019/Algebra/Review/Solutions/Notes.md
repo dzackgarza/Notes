@@ -223,7 +223,7 @@ A **lower central series** is a terminating normal series $G \to G^1 \to \cdots 
 > Moral: Iterate the adjoint map $[\wait, G]$.
 
 **Definition:**
-An **upper central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that 
+An **upper central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^1 = Z(G)$ and 
 
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
