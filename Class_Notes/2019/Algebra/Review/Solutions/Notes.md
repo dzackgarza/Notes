@@ -207,7 +207,7 @@ A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ 
 A **composition series** of a group $G$ is a finite normal series such that $G^{i+1}$ is a *maximal proper* normal subgroup of $G^i$.
 
 **Theorem (Jordan-Holder)**:
-Any two composition series of a group have the same length
+Any two composition series of a group have the same length and isomorphic factors (up to permutation).
 
 **Definition**
 A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \cdots$ where $G^{i+1} = [G^i, G^i]$ is the commutator subgroup.
