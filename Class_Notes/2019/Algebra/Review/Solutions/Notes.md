@@ -203,6 +203,7 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
 
+> If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
 
 **Definition:**
 Solvable
