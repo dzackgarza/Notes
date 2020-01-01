@@ -56,8 +56,12 @@ $\qed$
 ## 2
 
 Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ has roots 
+\begin{align*}
+\alpha_1 &= \pm \sqrt{2 \pm \sqrt{2}} \\
+\alpha_2 &= \pm \sqrt{2 \pm \sqrt{2}}
+.\end{align*}
 
-$\alpha = \pm \sqrt{2 \pm \sqrt{2}}$ and splitting field $K = \QQ(\alpha)$.
+$$ and splitting field $K = \QQ(\alpha)$.
 
 We can note that $g$ splits over $L \definedas \QQ(\sqrt 2)$.
 
