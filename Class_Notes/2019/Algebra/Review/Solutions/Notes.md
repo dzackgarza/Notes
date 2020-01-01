@@ -206,7 +206,7 @@ A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
 > If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
 
 **Definition:**
-A group $G$ is **solvable** iff $G$ has a normal series $
+A group $G$ is **solvable** iff $G$ has a normal series with abelian factors.
 
 **Definition:**
 Nilpotent
