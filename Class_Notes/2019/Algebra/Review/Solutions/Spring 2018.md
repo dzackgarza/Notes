@@ -55,6 +55,6 @@ $\qed$
 
 ## 2
 
-Note that $f(x) = x^2 - 4x + 2$ has roots $x = 2 \pm \sqrt{2}$, and so the original polynomial has roots $\pm \sqrt{2 \pm \sqrt{2}}$.
+Note that $g(x) = x^2 - 4x + 2$ has roots $x = 2 \pm \sqrt{2}$, and so the $f$ has roots $\pm \sqrt{2 \pm \sqrt{2}}$.
 
-Noting that $f$ is irreducible by Eisenstein with $p=2$, there is a nontrivial quadratic extension $\QQ(2 \pm \sqrt 2) / \QQ$ which has degree 2.
+Noting that $g$ is irreducible by Eisenstein with $p=2$, there is a nontrivial quadratic extension $\QQ(2 \pm \sqrt 2) / \QQ$ which has degree 2.
