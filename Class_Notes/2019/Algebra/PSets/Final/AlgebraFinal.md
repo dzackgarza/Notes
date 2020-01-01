@@ -247,6 +247,7 @@ where $\inner{\vector w}{\vector y} \definedas c_i \neq 0$ because $\vector y \i
 
 $\qed$
 
+
 # 7
 
 ## a
