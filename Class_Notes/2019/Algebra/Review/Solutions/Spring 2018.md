@@ -62,6 +62,8 @@ Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ h
 
 and splitting field $K = \QQ(\theset{\alpha_i})$.
 
+Since $f$ is irreducible by Eisenstein with $p=2$, $K$ is the splitting field of a separable irreducible polynomial and thus Galois over $\QQ$.
+
 We can note that $g$ splits over $L \definedas \QQ(\sqrt 2)$, an extension of degree 2.
 
 We can now note that $\min(\alpha, L)$ is given by $p(x) = x^2 - (2 + \sqrt 2)$, and so $[\QQ(\alpha): K] = 2$.
