@@ -217,8 +217,13 @@ A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \c
 **Definition:**
 A **central series** for a group $G$ is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that each quotient is **central**, i.e. $[G, G^i] \leq G^{i-1}$ for all $i$.
 
-Definition:
-A **lower central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^{i+1} = [G^i, G]$, i.e. the terms are given by iterating the adjoint map $[\wait, G]$.
+**Definition:**
+A **lower central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^{i+1} = [G^i, G]$
+
+> Moral: Iterate the adjoint map $[\wait, G]$.
+
+**Definition:**
+An **upper central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that 
 
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
