@@ -57,7 +57,10 @@ $\qed$
 
 Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ has roots 
 \begin{align*}
-\alpha_i \in \theset{\pm \sqrt{2 \pm \sqrt{2}}} 
+\alpha_1 &= \sqrt{2 + \sqrt 2} \\
+\alpha_2 &= \sqrt{2 + \sqrt 2} \\
+\alpha_3 &= -\alpha_1 \\
+\alpha_4 &= -\alpha_2
 .\end{align*}
 
 and splitting field $K = \QQ(\theset{\alpha_i})$.
@@ -85,4 +88,4 @@ This $\abs{\Gal(K/\QQ)} = 4$, which leaves only two possibilities:
 - $\ZZ/(2) \cross \ZZ/(2)$
 - $\ZZ/(4)$
 
-Let $\sigma \in \Gal(K/\QQ)$
+Let $\sigma \in \Gal(K/\QQ)$, and suppose 
