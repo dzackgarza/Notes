@@ -239,7 +239,7 @@ ST\vector x
 &\definedas S \vector y \\
 &= \vector v \vector w^t \vector y \\
 &= \inner{\vector w}{\vector y} \vector v \\
-&= c_i \vector v \\
+&= c_i \vector v_i \\
 &\neq \vector 0,
 \end{align*}
 
