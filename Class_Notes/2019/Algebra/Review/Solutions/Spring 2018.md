@@ -42,3 +42,8 @@ Since the sizes of both of these groups are $p^2$ for a prime, by (b) they are a
 ### d
 
 
+- $\ZZ/(5)^2 \cross \ZZ/(7)^2$
+- $\ZZ/(5^2) \cross \ZZ/(7)^2$
+- $\ZZ/(5)^2 \cross \ZZ/(7^2)$
+- $\ZZ/(5^2) \cross \ZZ(7^2)$
+
