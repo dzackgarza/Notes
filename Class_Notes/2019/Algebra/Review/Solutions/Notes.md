@@ -215,7 +215,7 @@ A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \c
 > The derived series terminates iff $G$ is solvable.
 
 **Definition:**
-A central series for a group $G$ is a series
+A central series for a group $G$ is a series $
 
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
