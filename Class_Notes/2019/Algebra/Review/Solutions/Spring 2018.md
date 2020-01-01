@@ -93,10 +93,14 @@ Take
 \begin{align*}
 \sigma &\in \Gal(K/\QQ) \\
 \alpha_1 &\mapsto \alpha_2
-,\end{align*}
+.\end{align*}
 
-
-and consider $\sigma^2(\alpha_1) = \sigma(\alpha_2)$.
 
 A computation shows that $\alpha_1^2 \alpha_2^2 = 2$, so $\alpha_1 \alpha_2 = \sqrt 2$, and thus
+\begin{align*}
+\sigma^2(\alpha_1) &= \sigma(\alpha_2) \\
+&= \sigma\left(\frac{\sqrt 2}{\alpha_1}\right) \\
+&=  \frac{\sqrt 2}{\sigma(\alpha_1)} \\
+&= \sqrt 2 ~\alpha_2\inv \\
+.\end{align*}
 
