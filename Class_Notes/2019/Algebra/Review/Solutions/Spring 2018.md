@@ -19,6 +19,7 @@ Since $p\divides \abs{G}$, we must have $p\divides \abs{Z(G)} \neq 0$ and so $\a
 >
 > *Proof:*
 > 
+> $G/Z(G) = \generators{x + Z} \iff g\in G \implies
 
 Since $G$ is a $p\dash$group, $G$ has a nontrivial center, so consider $G/Z(G)$. 
 
