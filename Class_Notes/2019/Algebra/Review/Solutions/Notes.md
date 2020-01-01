@@ -242,7 +242,7 @@ A group $G$ is **nilpotent** iff $G$ has a terminating upper central series.
 
 > Moral: the "higher centers" are eventually zero
 
-> Nilpotent $\implies$ direct product of Sylows,
+> Nilpotent $\implies$ direct product of Sylows, and every maximal subgroup is properly contained in its normalizer. 
 
 **Definition:**
 Irreducible
