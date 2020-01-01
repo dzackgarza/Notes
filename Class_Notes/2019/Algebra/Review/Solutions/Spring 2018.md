@@ -41,6 +41,7 @@ Since the sizes of both of these groups are $p^2$ for a prime, by (b) they are a
 
 ### d
 
+By the classification of finite abelian groups and the Chinese Remainder theorem,
 
 - $\ZZ/(5)^2 \cross \ZZ/(7)^2$
 - $\ZZ/(5^2) \cross \ZZ/(7)^2$
