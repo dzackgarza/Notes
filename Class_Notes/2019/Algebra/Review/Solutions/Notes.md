@@ -172,6 +172,16 @@ Modifying the codomain:
 
 ## Isomorphism Theorems
 
+**Diamond Theorem / 3rd Isomorphism Theorem**:
+
+If $S \leq G$ and $N \normal G$, then
+
+- $SN \leq G$,
+- $S\intersect N \normal S$,
+- $SN/N \cong S/S\intersect N$
+
+
+
 **The Correspondence Theorem / 4th Isomorphism Theorem:**
 Suppose $N \normal G$, then there exists a correspondence:
 $$
