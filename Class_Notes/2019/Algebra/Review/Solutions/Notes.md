@@ -238,7 +238,7 @@ A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian
 Equivalently, $G$ is solvable iff $G$ has a terminating *derived series*.
 
 **Definition:**
-Nilpotent
+A group $G$ is **nilpotent** iff $G$ has a terminating upper central series.
 
 **Definition:**
 Irreducible
