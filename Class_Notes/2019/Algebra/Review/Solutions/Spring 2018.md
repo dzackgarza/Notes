@@ -63,6 +63,10 @@ Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ h
 and splitting field $K = \QQ(\theset{\alpha_i})$.
 
 Since $f$ is irreducible by Eisenstein with $p=2$, $K$ is the splitting field of a separable irreducible polynomial and thus Galois over $\QQ$.
+Moreover, the Galois group is a transitive subgroup of $S^4$, so the possibilities are:
+
+- $S^4$
+- 
 
 We can note that $g$ splits over $L \definedas \QQ(\sqrt 2)$, an extension of degree 2.
 
