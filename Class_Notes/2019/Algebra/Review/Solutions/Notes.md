@@ -200,15 +200,23 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 
 ## Series of Groups
 
-**Definition:**
-A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
+**Definition**:
+A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
 
-> If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
+**Definition**
+A **composition series** of a group $G$ is a finite normal series.
 
 **Definition**
 A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \cdots$ where $G^{i+1} = [G^i, G^i]$ is the commutator subgroup.
 
 > Terminates iff $G$ is solvable.
+
+**Definition:**
+A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
+
+> If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
+
+
 
 **Definition:**
 A group $G$ is **solvable** iff $G$ has a normal series with abelian factors, i.e. $\theset{e} \normal G_1 \normal \cdots \normal G_n = G$ with $G_{i+1}/G_i$ abelian for every $i$.
