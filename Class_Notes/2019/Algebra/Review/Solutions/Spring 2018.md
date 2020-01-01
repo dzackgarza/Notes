@@ -142,3 +142,7 @@ If $\sigma$ fixes $E_1, E_2$, then if $e_1 e_2 \in E_1 E_2$ then $\sigma(e_1 e_2
 
 ### b
 
+
+### c
+
+By the Galois correspondence, 
