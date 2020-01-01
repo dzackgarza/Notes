@@ -209,7 +209,7 @@ A **composition series** of a group $G$ is a finite normal series such that $G^{
 **Definition**
 A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \cdots$ where $G^{i+1} = [G^i, G^i]$ is the commutator subgroup.
 
-> Terminates iff $G$ is solvable.
+> The derived series terminates iff $G$ is solvable.
 
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
