@@ -14,10 +14,16 @@ Since $p\divides \abs{G}$, we must have $p\divides \abs{Z(G)} \neq 0$ and so $\a
 
 ### b
 
+> **Lemma:** 
+> $G/Z(G)$ cyclic $\implies G$ is abelian.
+>
+> *Proof:*
+> 
+
 Since $G$ is a $p\dash$group, $G$ has a nontrivial center, so consider $G/Z(G)$. 
 
-Can not have order $p^2$, since $\abs {Z(G)} > 1$.
+This could have three possible orders:
 
-The claim is that it can also not have order $p$, in which case it would have order $1$, which would imply $G = Z(G)$ and $G$ is abelian.
-
-To see this is the case
+- $p^2$: Not possible, since $\abs {Z(G)} > 1$
+- $p$: Then $G/Z(G)$ is cyclic, and (theorem) thus $G$ is abelian
+- $1$: Then $G = Z(G)$ and $G$ is abelian.
