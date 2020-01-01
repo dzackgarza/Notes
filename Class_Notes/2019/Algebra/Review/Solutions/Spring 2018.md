@@ -57,6 +57,8 @@ $\qed$
 
 > Not the nicest proof! Would be better to replace the ad-hoc computations at the end..
 
+### a
+
 Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ has roots 
 \begin{align*}
 \alpha_1 &= \sqrt{2 + \sqrt 2} \\
@@ -66,6 +68,8 @@ Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ h
 .\end{align*}
 
 and splitting field $K = \QQ(\theset{\alpha_i})$.
+
+### b
 
 Since $f$ is irreducible by Eisenstein with $p=2$, $K$ is the splitting field of a separable irreducible polynomial and thus Galois over $\QQ$.
 Moreover, the Galois group is a transitive subgroup of $S^4$, so the possibilities are:
