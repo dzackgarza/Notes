@@ -155,7 +155,7 @@ To see this, let $e \in E_1$ and $\sigma = \sigma_1 \sigma_2 \in H_1 H_2$.
 
 Then 
 $$
-\sigma_1(e) = e \in E_1 \implies \sigma_2\sigma_1(e) = \sigma_1(e)
+\sigma_1(e) = e \in E_1 \implies \sigma_2\sigma_1(e) = \sigma_2(e) 
 $$  
 
 
