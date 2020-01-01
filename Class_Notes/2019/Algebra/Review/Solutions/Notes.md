@@ -242,7 +242,7 @@ A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper cen
 
 > Moral: the adjoint map is nilpotent.
 
-> Nilpotent $\implies$ solvable, direct product of Sylows, and every maximal subgroup is properly contained in its normalizer.
+> Nilpotent $\implies$ solvable, direct product of Sylows, normalizers grow,
 
 
 **Definition:**
