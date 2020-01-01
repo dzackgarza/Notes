@@ -240,6 +240,8 @@ Equivalently, $G$ is solvable iff $G$ has a terminating *derived series*.
 **Definition:**
 A group $G$ is **nilpotent** iff $G$ has a terminating upper central series.
 
+> Moral: the "higher centers" are eventually zero
+
 **Definition:**
 Irreducible
 
