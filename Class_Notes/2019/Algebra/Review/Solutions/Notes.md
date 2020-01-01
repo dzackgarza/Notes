@@ -204,7 +204,7 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
 
 **Definition**
-A **composition series** of a group $G$ is a finite normal series.
+A **composition series** of a group $G$ is a finite normal series such that $G^{i+1}$ is a maximal normal subgroup of $G^i$
 
 **Definition**
 A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \cdots$ where $G^{i+1} = [G^i, G^i]$ is the commutator subgroup.
