@@ -88,8 +88,8 @@ Write
 A $p\dash$group is a group $G$ such that every element is order $p^k$ for some $k$. 
 If $G$ is a finite $p\dash$group, then $\abs G = p^j$ for some $j$.
 
-**Lemma:**
-$p\dash$groups have nontrivial centers.
+> **Lemma:**
+> $p\dash$groups have nontrivial centers.
 
 Some useful facts:
 
