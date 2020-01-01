@@ -60,7 +60,7 @@ Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ h
 \alpha_i \in \theset{\pm \sqrt{2 \pm \sqrt{2}}} 
 .\end{align*}
 
-and wlog splitting field $K = \QQ(\alpha_1)$.
+and splitting field $K = \QQ(\theset{\alpha_i})$.
 
 We can note that $g$ splits over $L \definedas \QQ(\sqrt 2)$.
 
