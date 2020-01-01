@@ -97,3 +97,6 @@ Take
 
 
 and consider $\sigma^2(\alpha_1) = \sigma(\alpha_2)$.
+
+A computation shows that $\alpha_1^2 \alpha_2^2 = 2$, so $\alpha_1 \alpha_2 = \sqrt 2$, and thus
+
