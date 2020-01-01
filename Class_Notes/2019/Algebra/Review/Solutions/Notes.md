@@ -252,7 +252,7 @@ A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper cen
 
 > Moral: the adjoint map is nilpotent.
 
-> Nilpotent $\implies$ solvable, normalizers grow, equal to direct product of Sylows, normal subgroups of $d$ for every divisor $d$ of $\abs G$.
+> Nilpotent $\implies$ nontrivial center, solvable, normalizers grow, equal to direct product of Sylows, normal subgroups of $d$ for every divisor $d$ of $\abs G$.
 
 
 **Definition:**
