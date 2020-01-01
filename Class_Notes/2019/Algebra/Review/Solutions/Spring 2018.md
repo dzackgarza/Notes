@@ -115,3 +115,5 @@ and thus
 ,\end{align*}
 
 and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\Gal(K/\QQ) \cong \ZZ/(4)$.
+
+$\qed$
