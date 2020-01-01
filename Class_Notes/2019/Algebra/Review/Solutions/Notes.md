@@ -180,7 +180,7 @@ If $S \leq G$ and $N \normal G$, then
 - $S\intersect N \normal S$,
 - $SN/N \cong S/S\intersect N$
 
-
+![](2020-01-01-15-20-27.png)
 
 **The Correspondence Theorem / 4th Isomorphism Theorem:**
 Suppose $N \normal G$, then there exists a correspondence:
