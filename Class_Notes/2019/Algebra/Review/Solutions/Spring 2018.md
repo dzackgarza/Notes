@@ -145,4 +145,5 @@ If $\sigma$ fixes $E_1, E_2$, then if $e_1 e_2 \in E_1 E_2$ then $\sigma(e_1 e_2
 
 ### c
 
-By the Galois correspondence, the subgroup $H_1H_2 \leq G$ will correspond to an intermediate field $
+By the Galois correspondence, the subgroup $H_1H_2 \leq G$ will correspond to an intermediate field $E$ such that $K/E/\QQ$ such that $E$ is the field fixed by $H_1 H_2$.
+
