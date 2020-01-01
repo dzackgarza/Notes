@@ -157,7 +157,8 @@ Then
 $$
 \sigma_1(e) = e \in E_1 \implies \sigma_2\sigma_1(e) = \sigma_1(e)
 $$  
-and $\sigma_1 \sigma_2(e) = \sigma_2(e)$, so
+
+
 \begin{align*}
 \sigma_1 \sigma_2(e) = \sigma_2 \sigma_1(e)
 ,\end{align*}
