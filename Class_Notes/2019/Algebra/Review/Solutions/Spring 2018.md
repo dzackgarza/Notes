@@ -55,6 +55,8 @@ $\qed$
 
 ## 2
 
+> Not the nicest proof! Would be better to replace the ad-hoc computations at the end..
+
 Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ has roots 
 \begin{align*}
 \alpha_1 &= \sqrt{2 + \sqrt 2} \\
