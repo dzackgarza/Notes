@@ -141,8 +141,10 @@ Let $\sigma \in H_1 \intersect H_2$; then $\sigma \in \Aut(K)$ fixes both $E_1$ 
 
 Writing $x \in E_1E_2$ as $x=e_1 e_2$, we have 
 $$
-\sigma(x) = \sigma(e_1 e_2) = \sigma(e_1) \sigma(e_2) = e_1 e_2  =x
+\sigma(x) = \sigma(e_1 e_2) = \sigma(e_1) \sigma(e_2) = e_1 e_2  =x,
 $$
+
+so $\sigma$ fixes $E_1 E_2$.
 
 ### b
 
