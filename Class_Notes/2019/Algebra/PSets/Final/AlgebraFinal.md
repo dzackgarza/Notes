@@ -239,7 +239,8 @@ ST\vector x
 &\definedas S \vector y \\
 &= \vector v \vector w^t \vector y \\
 &= \inner{\vector w}{\vector y} \vector v \\
-&= c_i \vector v_i, 
+&= c_i \vector v_i \\
+&\neq \vector 0,
 \end{align*}
 
 where $\inner{\vector w}{\vector y} \definedas c_i \neq 0$ because $\vector y \in \im(T) = (\im(T)\perp)\perp$, so $\vector y$ and $\vector w$ can not be orthogonal.
