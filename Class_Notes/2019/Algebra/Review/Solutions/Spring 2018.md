@@ -58,7 +58,7 @@ $\qed$
 Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ has roots 
 \begin{align*}
 \alpha_1 &= \sqrt{2 + \sqrt 2} \\
-\alpha_2 &= \sqrt{2 + \sqrt 2} \\
+\alpha_2 &= \sqrt{2 - \sqrt 2} \\
 \alpha_3 &= -\alpha_1 \\
 \alpha_4 &= -\alpha_2
 .\end{align*}
