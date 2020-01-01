@@ -96,11 +96,22 @@ Take
 .\end{align*}
 
 
-A computation shows that $\alpha_1^2 \alpha_2^2 = 2$, so $\alpha_1 \alpha_2 = \sqrt 2$, and thus
+A computation shows that 
+
+- $\alpha_1^2 \alpha_2^2 = 2$, so $\alpha_1 \alpha_2 = \sqrt 2$
+- $\alpha_1^2 = 2 + \sqrt 2 \implies \sqrt 2 = \alpha_1^2 - 2$
+
+and thus
 \begin{align*}
 \sigma^2(\alpha_1) &= \sigma(\alpha_2) \\
 &= \sigma\left(\frac{\sqrt 2}{\alpha_1}\right) \\
-&=  \frac{\sqrt 2}{\sigma(\alpha_1)} \\
-&= \sqrt 2 ~\alpha_2\inv \\
-.\end{align*}
+&= \frac{\sigma(\sqrt 2)}{\sigma(\alpha_1)} \\
+&= \frac{\sigma(\alpha_1^2 - 2)}{\alpha_2} \\
+&= \frac{\alpha_2^2 - 2}{\alpha_2} \\
+&= \alpha_2 -2\alpha_2\inv \\
+&= \alpha_2 - \frac{2\alpha_1}{\sqrt 2} \\
+&= \alpha_2 -\alpha_1 \sqrt 2 
+&\neq \alpha_1
+,\end{align*}
 
+and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\Gal(K/\QQ) \cong \ZZ/(4)$.
