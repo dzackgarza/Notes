@@ -18,8 +18,12 @@ Since $p\divides \abs{G}$, we must have $p\divides \abs{Z(G)} \neq 0$ and so $\a
 > $G/Z(G)$ cyclic $\implies G$ is abelian.
 >
 > *Proof:*
-> 
-> $G/Z(G) = \generators{x + Z} \iff g\in G \implies
+\begin{align*}
+G/Z(G) = \generators{x + Z} 
+&\iff g\in G \implies g + Z = x^m + Z \\
+&\iff g(x^m)\inv = z \iff g = x^m z \\
+&\implies gh = x^mz_1 x^n z_2 = x^n z_2 x^m z_1 = hg
+.\end{align*}
 
 Since $G$ is a $p\dash$group, $G$ has a nontrivial center, so consider $G/Z(G)$. 
 
