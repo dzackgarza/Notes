@@ -208,6 +208,8 @@ A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
 **Definition:**
 A group $G$ is **solvable** iff $G$ has a normal series with abelian factors, i.e. $\theset{e} \normal G_1 \normal \cdots \normal G_n = G$ with $G_{i+1}/G_i$ abelian for every $i$.
 
+Equivalently, $G$ is solvable iff 
+
 **Definition:**
 Nilpotent
 
