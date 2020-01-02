@@ -160,14 +160,13 @@ $$
 \sigma_1(e) = e \quad \forall e \in E_1 \implies \sigma_1(\sigma_2(e)) = \sigma_2(e) 
 $$  
 
+and substituting $e = \sigma_1(e)$ on the RHS yields
 
 \begin{align*}
 \sigma_1 \sigma_2(e) = \sigma_2 \sigma_1(e)
 ,\end{align*}
 
 where a similar proof holds for $e\in E_2$ and thus for arbitrary $x\in E_1 E_2$.
-
-
 
 
 ### c
