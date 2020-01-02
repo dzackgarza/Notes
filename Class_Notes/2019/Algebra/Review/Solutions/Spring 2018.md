@@ -150,7 +150,8 @@ so $\sigma$ fixes $E_1 E_2$.
 
 That $H_1 H_2 \subseteq G$ is clear, since if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an automorphism of $K$ that fixes $E_i \supseteq \QQ$, so each $\tau_i$ fixes $\QQ$ and thus $\sigma$ fixes $\QQ$.
 
-That it is a subgroup follows from the fact that elements commute. 
+That it is a subgroup follows from the fact that elements commute. (?)
+ 
 To see this, let $\sigma = \sigma_1 \sigma_2 \in H_1 H_2$.
 
 Note that $\sigma_1(e) = e$ for all $e\in E_1$ by definition, since $H_1$ fixes $E_1$, and $\sigma_2(e) \in E_1$ (?).
