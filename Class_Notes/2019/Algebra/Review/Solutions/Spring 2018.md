@@ -157,7 +157,7 @@ Note that $\sigma_1(e) = e$ for all $e\in E_1$ by definition, since $H_1$ fixes 
 
 Then 
 $$
-\sigma_1(e) = e \forall e \in E_1 \implies \sigma_1\sigma_2(e) = \sigma_2(e) 
+\sigma_1(e) = e \quad \forall e \in E_1 \implies \sigma_1(\sigma_2(e)) = \sigma_2(e) 
 $$  
 
 
