@@ -24,19 +24,18 @@ But then $K^c = \union_x B_r(x)$ is a union of open sets and thus open.
 
 Since $K$ is closed, we'll show that $K$ can not properly contain any interval, so $(\overline K)^\circ = \emptyset$.
 
-Write $x\in K$ as $x = \sum d_j 10^{-j}$ where $d_j \not\in\theset{4}$.
+As in the construction of the Cantor set, let 
 
-Now define 
-\begin{align*}
-C_1 
-&= \theset{d_1 = 4} 
-&=
-\left[\frac 4 {10}, \frac{5}{10}\right] \\
-C_2 
-&= \theset{d_1 = 4 \text{ or } d_2 = 4}
-&= \left[\frac{4}{100}, \frac{5}{100}\right] \union \left[\frac{44}{100}, \frac{45}{100}\right] \\
-.\end{align*}
+- $K_1$ denote $[0, 1]$ with 1 interval $[0.4, 0.5]$ of length $\frac{1}{10}$ deleted
+- $K_2$ denote $K_1$ with 9 intervals $[0.04, 0.05], ~[0.14, 0.15], \cdots [0.94, 0.95]$ length $\frac 1 {100}$ deleted
+- $K_n$ denote $K_{n-1}$ with $9^{n-1}$ such intervals of length $10^{-n}$ deleted.
 
+Then $K = \intersect K_n$, and 
+$$
+m(K) = 1 - m(K^c) = 1 - \sum_{j=0}^\infty \frac{9^n}{10^{n+1}} = 1 - \frac{1}{10} \left( \frac{1}{1 - \frac 1 {10}} \right) = 0,
+$$
+
+and since any interval has strictly positive measure, $K$ can not contain any interval.
 
 
 
