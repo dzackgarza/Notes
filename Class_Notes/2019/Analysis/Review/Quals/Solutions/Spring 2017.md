@@ -37,7 +37,7 @@ K_2
 0.4\ldots \\
 0.d_1 4\ldots
 \end{cases}}
-&= [0,1] \setminus
+&= [0,1] \setminus [\frac{4}{100}, \frac{5}{100}] \union [\frac{40}{100}, \frac{50}{100}]
 .\end{align*}
 
 
