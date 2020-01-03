@@ -227,5 +227,6 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 ## Useful Properties of the Fourier Transform
 
 \begin{align*}
-\widehat{\tau_h f}(\xi) &=
+\widehat{\tau_h f}(\xi) &= e^{2\pi i \xi \cdot h}\widehat{f}(\xi) \\
+
 .\end{align*}
