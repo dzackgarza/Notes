@@ -249,6 +249,15 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 
 \begin{align*}
 \text{Dirichlet}:
-&& \chi_\theset{-\frac 1 2 \leq x \leq \frac 1 2}
+&& \chi_\theset{-\frac 1 2 \leq x \leq \frac{1}{2}}
 &\iff \mathrm{sinc}(\xi) \\
+\text{Fejer}:
+&& \chi_\theset{-1 \leq x \leq 1} (1 - \abs{x})
+&\iff \mathrm{sinc}^2(\xi) \\
+\text{Poisson}
+&& \frac{1}{\pi} \frac{1}{1+x^2}
+&\iff e^{2\pi \abs{\xi}} \\
+\text{Gauss-Weierstrass}
+&& e^{-\pi x^2}
+&\iff e^{-\pi \xi^2}
 .\end{align*}
