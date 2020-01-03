@@ -155,7 +155,7 @@ Then
 If $\mathcal F \subset C(X)$ is a family of continuous functions on $X$, then $\mathcal F$ *equicontinuous* at $x$ iff
 
 \begin{align*}
-\forall \varepsilon > 0 ~~\exists U \ni x \text{ such that } y\in U \implies \abs{f(y) — f(x)} < \varepsilon \quad \forall f\in \mathcal{F}
+\forall \varepsilon > 0 ~~\exists U \ni x \text{ such that } y\in U \implies \abs{f(y) - f(x)} < \varepsilon \quad \forall f\in \mathcal{F}
 .\end{align*}
 
 - **Arzela - Ascoli 1**:
@@ -245,19 +245,3 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 &= 2\pi i \xi \cdot \widehat{f}(\xi)
 .\end{align*}
 
-**Some Useful Transform Pairs:**
-
-\begin{align*}
-\text{Dirichlet}:
-&& \chi_\theset{-\frac 1 2 \leq x \leq \frac 1 2}
-&\iff \mathrm{sinc}(\xi) \\
-\text{Fejer}:
-&& \chi_\theset{-1 \leq x \leq 1} (1 - \abs{x})
-&\iff \mathrm{sinc}^2(\xi) \\
-\text{Poisson}
-&& \frac 1 \pi \frac{1}{1+x^2}
-&\iff e^{2\pi \abs{\xi}} \\
-\text{Gauss-Weierstrass}
-&& e^{-\pi x^2}
-&\iff e^{-\pi \xi^2}
-.\end{align*}
