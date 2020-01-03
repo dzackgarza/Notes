@@ -243,7 +243,10 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 
 Some useful transforms:
 \begin{align*}
-\chi_\theset{x \leq \frac 1 2}(x)
-&\iff \mathrm{sinc}(\xi)
+\text{Box}:
+& \chi_\theset{-\frac 1 2 \leq x \leq \frac 1 2}(x)
+&\iff \mathrm{sinc}(\xi) \\
+\text{Tent}:
+& \
 .\end{align*}
 
