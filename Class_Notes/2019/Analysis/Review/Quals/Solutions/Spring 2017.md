@@ -28,7 +28,8 @@ Write $x\in K$ as $x = \sum d_j 10^{-j}$ where $d_j \in \theset{0,1,2,3,5,6,7,8,
 
 Now define 
 \begin{align*}
-K_1 = [0, 1] \setminus 
+K_1 &= [0, 1] \setminus \left[\frac 4 {10}, \frac{5}{10}\right] \\
+K_2
 .\end{align*}
 
 
