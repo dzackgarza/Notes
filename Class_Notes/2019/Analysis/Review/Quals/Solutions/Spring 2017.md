@@ -61,6 +61,9 @@ By Radon-Nikodym, if $\lambda \ll \mu$ then $d\lambda = f d\mu$, which would yie
 
 So let $E$ be measurable and suppose $\mu(E) = 0$.
 Then
+\begin{align*}
+\lambda(E) \definedas \int_E f ~d\mu \leq 
+.\end{align*}
 
 
 ### b
