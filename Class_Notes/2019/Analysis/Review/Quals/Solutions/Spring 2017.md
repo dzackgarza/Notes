@@ -39,7 +39,7 @@ and since any interval has strictly positive measure, $K$ can not contain any in
 
 **$K$ has no isolated points**:
 
-A point $x\in K$ is isolated iff there there is an open ball $B_r(x)$ containing $x$ such that $B_r(x) \intersect K = \emptyset$, so every point in this ball
+A point $x\in K$ is isolated iff there there is an open ball $B_r(x)$ containing $x$ such that $B_r(x) \intersect K = \emptyset$, so every point in this ball has a 4 in its decimal expansion.
 
 
 ## 2
