@@ -2,6 +2,8 @@
 
 ## 1
 
+> $S$ is nowhere dense $\iff$ 
+
 **$K$ is compact:**
 
 It suffices to show that $K^c \definedas [0, 1]\setminus K$ is open; then $K$ will be a closed and bounded subset of $\RR$ and thus compact by Heine-Borel.
