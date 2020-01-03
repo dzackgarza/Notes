@@ -73,4 +73,4 @@ This are notes from the Fall 2019 Qualifying Exam course for Real Analysis at th
 
 !include sections/2019-12-03.md
 
-!include sections/Appendix.md
+<!-- !include sections/Appendix.md -->
