@@ -32,7 +32,7 @@ As in the construction of the Cantor set, let
 
 Then $K = \intersect K_n$, and 
 $$
-m(K) = 1 - m(K^c) = 1 - \sum_{j=0}^\infty \frac{9^n}{10^{n+1}} = 1 - \frac{1}{10} \left( \frac{1}{1 - \frac 1 {10}} \right) = 0,
+m(K) = 1 - m(K^c) = 1 - \sum_{j=0}^\infty \frac{9^n}{10^{n+1}} = 1 - \frac{1}{10} \left( \frac{1}{1 - \frac 9 {10}} \right) = 0,
 $$
 
 and since any interval has strictly positive measure, $K$ can not contain any interval.
@@ -40,6 +40,8 @@ and since any interval has strictly positive measure, $K$ can not contain any in
 **$K$ has no isolated points**:
 
 A point $x\in K$ is isolated iff there there is an open ball $B_r(x)$ containing $x$ such that $B_r(x) \intersect K = \emptyset$, so every point in this ball has a 4 in its decimal expansion.
+
+Note that $m(K_n) = 
 
 
 ## 2
