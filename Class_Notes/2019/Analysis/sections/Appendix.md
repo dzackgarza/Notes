@@ -203,8 +203,6 @@ $\norm{\tau_h f - f}_p \to 0$ for every $p$.
 .\end{align*}
 
 
-
-
 **Lemma:**
 For $f\in L^p, g\in L^q$, $f\ast g$ is uniformly continuous.
 
@@ -227,6 +225,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 ## The Fourier Transform
 
 **Some Useful Properties**
+
 \begin{align*}
 \widehat{f\ast g}(\xi) 
 &= \hat f(\xi) \cdot \hat g (\xi) \\
@@ -243,6 +242,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 .\end{align*}
 
 **Some Useful Transform Pairs:**
+
 \begin{align*}
 \text{Dirichlet}:
 && \chi_\theset{-\frac 1 2 \leq x \leq \frac 1 2}
