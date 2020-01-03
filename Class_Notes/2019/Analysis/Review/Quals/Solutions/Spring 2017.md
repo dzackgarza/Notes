@@ -37,6 +37,14 @@ $$
 
 and since any interval has strictly positive measure, $K$ can not contain any interval.
 
+**$K$ has no isolated points**:
+
+Let $x\in K = \sum d_j 10^{-j}$, then define a sequence of approximations 
+$$
+x_n \definedas \sum_{j=1}^n d_j 10^{-j} +4\cdot 10^{-{n+1}}
+.$$
+
+Then clear $x_n \to x$ in $\RR$, but every $x_n$ is in $K^c$
 
 
 
