@@ -250,7 +250,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 \text{Tent}:
 && \chi_\theset{-1 \leq x \leq 1} (1 - \abs{x}) 
 &\iff \mathrm{sinc}^2(\xi) \\
-\text{?}
+\text{Poisson}
 && \frac 1 \pi \frac{1}{1+x^2} 
 &\iff e^{2\pi \abs{\xi}} \\
 \text{Erf} 
