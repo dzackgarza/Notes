@@ -236,5 +236,6 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 \widehat{f \circ T}(\xi) 
 &= \abs{\det T}\inv (\hat f \circ T^{-t})(\xi) \\
 \dd{}{\xi} \hat{f}(\xi) 
-&= -2\pi i \cdot \widehat {\xi f} (\xi)
+&= -2\pi i \cdot \widehat {\xi f} (\xi) \\
+\widehat{\dd{}{\xi} f}(\xi)
 .\end{align*}
