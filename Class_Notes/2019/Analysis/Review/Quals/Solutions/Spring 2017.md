@@ -50,7 +50,7 @@ $\qed$
 
 ## 2
 
-> $\lambda \ll \mu \iff 
+> $\lambda \ll \mu \iff E\in\mathcal{M}, \mu(E) = 0 \implies \lambda(E) = 0$.
 
 ### a
 
