@@ -22,7 +22,8 @@ But then $K^c = \union_x B_r(x)$ is a union of open sets and thus open.
 
 **$K$ is nowhere dense:**
 
-We'll show that $K$ can not properly contain any interval.
+Since $K$ is closed, we'll show that $K$ can not properly contain any interval, so $(\overline K)^\circ = \emptyset$.
+
 Write $x\in K$ as $x = \sum d_j 10^{-j}$ where $d_j \in \theset{0,1,2,3,5,6,7,8,9}$.
 
 
