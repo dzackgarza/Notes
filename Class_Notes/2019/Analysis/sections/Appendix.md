@@ -242,4 +242,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 .\end{align*}
 
 Some useful transforms:
+\begin{align*}
+\chi_{x \geq 1}
+.\end{align*}
 
