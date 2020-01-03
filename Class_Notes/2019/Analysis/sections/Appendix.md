@@ -224,9 +224,9 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 > So this holds for any Borel set $A$.
 > Then just take $A_1 = \theset{f > 0}$ and $A_2 = \theset{f < 0}$, then $\int_\RR f = \int_{A_1} f + \int_{A_2}f = 0$.
 
-## Useful Properties of the Fourier Transform
+## The Fourier Transform
 
-
+**Some Useful Properties**
 \begin{align*}
 \widehat{f\ast g}(\xi) 
 &= \hat f(\xi) \cdot \hat g (\xi) \\
@@ -242,7 +242,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 &= 2\pi i \xi \cdot \widehat{f}(\xi)
 .\end{align*}
 
-**Some useful transforms:**
+**Some Useful Transform Pairs:**
 \begin{align*}
 \text{Box}:
 && \chi_\theset{-\frac 1 2 \leq x \leq \frac 1 2}
