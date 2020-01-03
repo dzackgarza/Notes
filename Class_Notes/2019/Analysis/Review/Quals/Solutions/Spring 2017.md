@@ -57,6 +57,7 @@ By Radon-Nikodym, if $\lambda \ll \mu$ then $d\lambda = f d\mu$, which would yie
 \int g ~d\lambda = \int g f ~d\mu
 .\end{align*}
 
+So let $E$ 
 
 ### b
 
