@@ -249,6 +249,7 @@ Some useful transforms:
 \text{Tent}:
 && \chi_\theset{-1 \leq x \leq 1} (1 - \abs{x}) 
 &\iff \mathrm{sinc}^2(x) \\
-\frac 1 \pi \frac{1}{
+\frac 1 \pi \frac{1}{1+x^2} 
+&\iff 
 .\end{align*}
 
