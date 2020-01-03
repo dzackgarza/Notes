@@ -41,7 +41,10 @@ and since any interval has strictly positive measure, $K$ can not contain any in
 
 A point $x\in K$ is isolated iff there there is an open ball $B_r(x)$ containing $x$ such that $B_r(x) \intersect K = \emptyset$, so every point in this ball has a 4 in its decimal expansion.
 
-Note that $m(K_n) = \left( \frac 9 {10} \right)^n$ and that the endpoints of intervals are never removed.
+Note that $m(K_n) = \left( \frac 9 {10} \right)^n \to 0$ and that the endpoints of intervals are never removed and are thus elements of $K$.
+Then for every $\varepsilon$, we can choose $n$ such that $\left( \frac 9 {10} \right)^n < \varepsilon$; then there is an endpoint of a removed interval $e_n$ satisfying $\abs{x - e_n} \leq  \left( \frac 9 {10} \right)^n < \varepsilon$. 
+
+So every ball containing $x$ contains an endpoint of a removed interval and thus an element of $K$.
 
 
 ## 2
