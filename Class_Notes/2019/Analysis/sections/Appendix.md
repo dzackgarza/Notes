@@ -253,7 +253,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 \text{?}
 && \frac 1 \pi \frac{1}{1+x^2} 
 &\iff e^{2\pi \abs{\xi}} \\
-\text{?} 
+\text{Erf} 
 && e^{-\pi x^2}
 &\iff e^{-\pi \xi^2}
 .\end{align*}
