@@ -251,6 +251,8 @@ Some useful transforms:
 &\iff \mathrm{sinc}^2(\xi) \\
 \text{?}
 && \frac 1 \pi \frac{1}{1+x^2} 
-&\iff e^{2\pi \abs{\xi}}
+&\iff e^{2\pi \abs{\xi}} \\
+\text{?} 
+&& e^{-
 .\end{align*}
 
