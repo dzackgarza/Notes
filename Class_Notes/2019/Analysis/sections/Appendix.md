@@ -232,10 +232,11 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 \widehat{\tau_h f}(\xi) 
 &= e^{2\pi i \xi \cdot h}\widehat{f}(\xi) \\
 \widehat{e^{2\pi i \xi \cdot h}f(\xi)} 
-&= \tau_{-h}\hat f(\xi) \\
+&= \tau_{-h}\widehat f(\xi) \\
 \widehat{f \circ T}(\xi) 
 &= \abs{\det T}\inv (\hat f \circ T^{-t})(\xi) \\
-\dd{}{\xi} \hat{f}(\xi) 
+\dd{}{\xi} \widehat{f}(\xi) 
 &= -2\pi i \cdot \widehat {\xi f} (\xi) \\
-\widehat{\dd{}{\xi} f}(\xi)
+\widehat{\dd{}{\xi} f}(\xi) 
+&= 2\pi i \xi \cdot \widehat{f}(\xi)
 .\end{align*}
