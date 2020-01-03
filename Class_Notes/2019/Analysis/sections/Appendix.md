@@ -13,9 +13,9 @@ Measurability is not preserved by homeomorphisms.
 ## Undergraduate Analysis Review
 
 - Some inclusions on the real line:
-    
+
     > Differentiable with a bounded derivative $\subset$ Lipschitz continuous $\subset$ absolutely continuous $\subset$ uniformly continuous $\subset$ continuous
-    > 
+    >
     > Proofs: Mean Value Theorem, Triangle inequality, Definition of absolute continuity specialized to one interval, Definition of uniform continuity
 
 - **Bolzano-Weierstrass**:
@@ -163,8 +163,8 @@ If $\theset{f_k}$ is pointwise bounded and equicontinuous, then there exists a c
 Using Fatou to compute the limit of a sequence of integrals:
 
 \begin{align*}
-\lim _{n \rightarrow \infty} \int_{0}^{\infty} \frac{n^{2}}{1+n^{2} x^{2}} e^{-\frac{x^{2}}{n^{3}}} d x 
-\overset{\text{Fatou}}\geq 
+\lim _{n \rightarrow \infty} \int_{0}^{\infty} \frac{n^{2}}{1+n^{2} x^{2}} e^{-\frac{x^{2}}{n^{3}}} d x
+\overset{\text{Fatou}}\geq
 \int_{0}^{\infty} \lim _{n \rightarrow \infty}  \frac{n^{2}}{1+n^{2} x^{2}} e^{-\frac{x^{2}}{n^{3}}} d x \to \int \infty
 .\end{align*}
 
@@ -174,7 +174,7 @@ Using Fatou to compute the limit of a sequence of integrals:
 **Lemma:**
 \begin{align*}
 f_k \converges{a.e.}\to f ,\quad
-\norm{f_k}_p \leq M  
+\norm{f_k}_p \leq M
 \implies f\in L^p \text{ and } \norm{f}_p \leq M
 .\end{align*}
 
@@ -198,7 +198,7 @@ $\norm{\tau_h f - f}_p \to 0$ for every $p$.
 > *Proof:*
 > Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 \begin{align*}
-\norm{\tau_h f - f}_p 
+\norm{\tau_h f - f}_p
 \leq \norm{\tau_h f - \tau_h g}_p + \norm{\tau_h g - g}_p + \norm{g - f}_p \to 0
 .\end{align*}
 
@@ -206,10 +206,10 @@ $\norm{\tau_h f - f}_p \to 0$ for every $p$.
 **Lemma:**
 For $f\in L^p, g\in L^q$, $f\ast g$ is uniformly continuous.
 
-> *Proof*: 
+> *Proof*:
 > Use Young's inequality
 \begin{align*}
-\norm{\tau_h(f\ast g) - f\ast g}_\infty 
+\norm{\tau_h(f\ast g) - f\ast g}_\infty
 &= \norm{(\tau_h f - f) \ast g}_\infty \leq \norm{\tau_hf - f}_p \norm{g}_q \to 0
 .\end{align*}
 
@@ -227,17 +227,17 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 **Some Useful Properties**
 
 \begin{align*}
-\widehat{f\ast g}(\xi) 
+\widehat{f\ast g}(\xi)
 &= \hat f(\xi) \cdot \hat g (\xi) \\
-\widehat{\tau_h f}(\xi) 
+\widehat{\tau_h f}(\xi)
 &= e^{2\pi i \xi \cdot h}\widehat{f}(\xi) \\
-\widehat{e^{2\pi i \xi \cdot h}f(\xi)} 
+\widehat{e^{2\pi i \xi \cdot h}f(\xi)}
 &= \tau_{-h}\widehat f(\xi) \\
-\widehat{f \circ T}(\xi) 
+\widehat{f \circ T}(\xi)
 &= \abs{\det T}\inv (\hat f \circ T^{-t})(\xi) \\
-\dd{}{\xi} \widehat{f}(\xi) 
+\dd{}{\xi} \widehat{f}(\xi)
 &= -2\pi i \cdot \widehat {\xi f} (\xi) \\
-\widehat{\dd{}{\xi} f}(\xi) 
+\widehat{\dd{}{\xi} f}(\xi)
 &= 2\pi i \xi \cdot \widehat{f}(\xi)
 .\end{align*}
 
@@ -248,12 +248,12 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 && \chi_\theset{-\frac 1 2 \leq x \leq \frac 1 2}
 &\iff \mathrm{sinc}(\xi) \\
 \text{Fejer}:
-&& \chi_\theset{-1 \leq x \leq 1} (1 - \abs{x}) 
+&& \chi_\theset{-1 \leq x \leq 1} (1 - \abs{x})
 &\iff \mathrm{sinc}^2(\xi) \\
 \text{Poisson}
-&& \frac 1 \pi \frac{1}{1+x^2} 
+&& \frac 1 \pi \frac{1}{1+x^2}
 &\iff e^{2\pi \abs{\xi}} \\
-\text{Gauss-Weierstrass} 
+\text{Gauss-Weierstrass}
 && e^{-\pi x^2}
 &\iff e^{-\pi \xi^2}
 .\end{align*}
