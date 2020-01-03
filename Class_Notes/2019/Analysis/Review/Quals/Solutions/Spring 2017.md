@@ -63,9 +63,12 @@ So let $E$ be measurable and suppose $\mu(E) = 0$.
 Then
 \begin{align*}
 \lambda(E) \definedas \int_E f ~d\mu 
-&= \sup \theset{ \phi \definedas \sum_j c_j \mu(E_j), \quad E_j  } 
-.\end{align*}
+&= \lim_n \theset{\phi_n \definedas \sum_j c_j \mu(E_j) }
+,\end{align*}
 
+where we take a sequence of simple functions increasing to $f$.
+
+But since each $E_j \subseteq E$, we must have $\mu(E_j) = 0$ for any such $E_j$, so every such $\phi_n$ must be zero and thus $\lambda(E) = 0$.
 
 ### b
 
