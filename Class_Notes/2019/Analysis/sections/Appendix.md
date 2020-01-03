@@ -241,7 +241,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 &= 2\pi i \xi \cdot \widehat{f}(\xi)
 .\end{align*}
 
-Some useful transforms:
+**Some useful transforms:**
 \begin{align*}
 \text{Box}:
 && \chi_\theset{-\frac 1 2 \leq x \leq \frac 1 2}
