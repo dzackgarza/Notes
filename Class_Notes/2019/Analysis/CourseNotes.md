@@ -43,7 +43,7 @@ This are notes from the Fall 2019 Qualifying Exam course for Real Analysis at th
 
 !include sections/2019-10-03.md
 
-<!-- !include sections/2019-10-08.md
+!include sections/2019-10-08.md
 
 !include sections/2019-10-15.md
 
@@ -59,7 +59,7 @@ This are notes from the Fall 2019 Qualifying Exam course for Real Analysis at th
 
 !include sections/2019-11-05.md
 
-!include sections/2019-11-07.md
+<!-- !include sections/2019-11-07.md
 
 !include sections/2019-11-12.md
 
