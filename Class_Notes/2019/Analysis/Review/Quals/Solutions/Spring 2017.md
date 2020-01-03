@@ -44,7 +44,7 @@ $$
 x_n \definedas \sum_{j=1}^n d_j 10^{-j} +4\cdot 10^{-{n+1}}
 .$$
 
-Then clear $x_n \to x$ in $\RR$, but every $x_n$ is in $K^c$
+Then clear $\abs{x_n - x} \to 0$ in $\RR$, but every $x_n$ is in $K$, so every open ball around $x$ contains another point of $K$.
 
 
 
