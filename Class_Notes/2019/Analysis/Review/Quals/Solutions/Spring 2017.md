@@ -2,7 +2,7 @@
 
 ## 1
 
-> $S$ is nowhere dense $\iff$ every interval $I$ contains a subinterval
+> $A$ is nowhere dense $\iff$ every interval $I$ contains a subinterval $S \subset
 
 **$K$ is compact:**
 
