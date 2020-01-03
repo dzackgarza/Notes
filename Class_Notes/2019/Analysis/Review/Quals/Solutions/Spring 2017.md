@@ -52,9 +52,9 @@ $\qed$
 
 ### a
 
-By Radon-Nikodym, if $\lambda \ll \mu$ then $d\lambda = f d\mu$, which would yield
+By Radon-Nikodym, if $\lambda \ll \mu$ then $d\lambda = f d\mu$, which would yield 
 \begin{align*}
-
+\int g ~d\lambda = \int g f ~d\mu
 .\end{align*}
 
 
