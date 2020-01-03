@@ -52,7 +52,8 @@ $\qed$
 
 ### a
 
-By Radon-Nikodym, if $\lambda \ll \mu$ then $d\lambda = f d\mu$
+By Radon-Nikodym, if $\lambda \ll \mu$ then $d\lambda = f d\mu$, which would yield
+
 
 ### b
 
