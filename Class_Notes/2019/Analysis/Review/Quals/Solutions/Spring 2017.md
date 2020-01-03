@@ -2,7 +2,7 @@
 
 ## 1
 
-> $A$ is nowhere dense $\iff$ every interval $I$ contains a subinterval $S \subset
+> $A$ is nowhere dense $\iff$ every interval $I$ contains a subinterval $S \subseteq A^c$.
 
 **$K$ is compact:**
 
@@ -21,6 +21,8 @@ If we write $y = \sum_{j=1}^\infty c_j 10^{-j}$, this means that for all $j \leq
 But then $K^c = \union_x B_r(x)$ is a union of open sets and thus open.
 
 **$K$ is nowhere dense:**
+
+Let $I \subset [0, 1]$ be arbitrary, then $K$ is nowhere dense iff there exists some $S \subseteq I$ such that $S \subseteq K^c$.
 
 ## 2
 
