@@ -249,4 +249,6 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 
 \begin{align*}
 \text{Dirichlet:}
+&& \chi_{\theset{-\frac{1}{2} \leq x \leq \frac{1}{2}}}
+&\iff \mathrm{sinc}(\xi) \\
 .\end{align*}
