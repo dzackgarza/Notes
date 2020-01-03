@@ -52,7 +52,7 @@ $\qed$
 
 ### a
 
-By Radon-Nikodym, if $\lambda \lleq \mu
+By Radon-Nikodym, if $\lambda \lleq \mu$ then $d\lambda = f d\mu$
 
 ### b
 
