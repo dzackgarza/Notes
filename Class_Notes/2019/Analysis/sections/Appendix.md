@@ -256,4 +256,3 @@ Some useful transforms:
 && e^{-\pi x^2}
 &\iff e^{-\pi \xi^2}
 .\end{align*}
-
