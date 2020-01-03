@@ -228,7 +228,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 
 ## The Fourier Transform
 
-**Some Useful Properties**:
+**Some Useful Properties:**
 
 \begin{align*}
 \widehat{f\ast g}(\xi)
