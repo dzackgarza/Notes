@@ -240,3 +240,6 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 \widehat{\dd{}{\xi} f}(\xi) 
 &= 2\pi i \xi \cdot \widehat{f}(\xi)
 .\end{align*}
+
+Some useful transforms:
+
