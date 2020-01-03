@@ -247,3 +247,6 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 
 **Some Useful Transform Pairs:**
 
+\begin{align*}
+\text{Dirichlet:}
+.\end{align*}
