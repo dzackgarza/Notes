@@ -50,6 +50,8 @@ $\qed$
 
 ## 2
 
+> $\lambda \ll \mu \iff 
+
 ### a
 
 By Radon-Nikodym, if $\lambda \ll \mu$ then $d\lambda = f d\mu$, which would yield 
@@ -57,7 +59,7 @@ By Radon-Nikodym, if $\lambda \ll \mu$ then $d\lambda = f d\mu$, which would yie
 \int g ~d\lambda = \int g f ~d\mu
 .\end{align*}
 
-So let $E$ 
+So let $E$  
 
 ### b
 
