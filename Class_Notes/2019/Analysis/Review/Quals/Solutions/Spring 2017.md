@@ -20,7 +20,7 @@ If we write $y = \sum_{j=1}^\infty c_j 10^{-j}$, this means that for all $j \leq
 
 But then $K^c = \union_x B_r(x)$ is a union of open sets and thus open.
 
-**$K$ is nowhere dense:**
+**$K$ is nowhere dense and $m(K) = 0$:**
 
 Since $K$ is closed, we'll show that $K$ can not properly contain any interval, so $(\overline K)^\circ = \emptyset$.
 
@@ -39,8 +39,7 @@ and since any interval has strictly positive measure, $K$ can not contain any in
 
 **$K$ has no isolated points**:
 
-A point $x\in K$ is isolated iff there there is an open ball $B_r(x)$ containing $x$ such that $B_r(x) \subset K^c$, so every point in this ball has a 
-
+A point $x\in K$ is isolated iff there there is an open ball $B_r(x)$ containing $x$ such that $B_r(x) \intersect K = \emptyset$, so every point in this ball
 
 
 ## 2
