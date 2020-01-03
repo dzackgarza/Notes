@@ -9,7 +9,7 @@ This are notes from the Fall 2019 Qualifying Exam course for Real Analysis at th
 
 !include Review/AnalysisSyllabus.md
 
-<!-- !include sections/Summary.md
+!include sections/Summary.md
 
 !include sections/DiscussionNotes.md
 
@@ -43,7 +43,7 @@ This are notes from the Fall 2019 Qualifying Exam course for Real Analysis at th
 
 !include sections/2019-10-03.md
 
-!include sections/2019-10-08.md
+<!-- !include sections/2019-10-08.md
 
 !include sections/2019-10-15.md
 
