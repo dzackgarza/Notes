@@ -2,7 +2,7 @@
 
 ## 1
 asd
-sadsa { }  
+sadsa {| }   
 
 ## 2
 
