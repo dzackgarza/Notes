@@ -26,6 +26,8 @@ Since $K$ is closed, we'll show that $K$ can not properly contain any interval, 
 
 Write $x\in K$ as $x = \sum d_j 10^{-j}$ where $d_j \in \theset{0,1,2,3,5,6,7,8,9}$.
 
+Now define 
+
 
 
 
