@@ -22,7 +22,7 @@ But then $K^c = \union_x B_r(x)$ is a union of open sets and thus open.
 
 **$K$ is nowhere dense:**
 
-Let $I \subset [0, 1]$ be arbitrary, then $K$ is nowhere dense iff there exists some $S \subseteq I$ such that $S \subseteq K^c$.
+Let $I \subset [0, 1]$ be arbitrary, then $K$ is nowhere dense iff there exists some $S \subseteq I$ such that $S \subseteq K^c$, so every $s\in S$ **does** have a 4 in its decimal expansion.
 
 ## 2
 
