@@ -248,6 +248,7 @@ Some useful transforms:
 &\iff \mathrm{sinc}(\xi) \\
 \text{Tent}:
 && \chi_\theset{-1 \leq x \leq 1} (1 - \abs{x}) 
-&\iff \mathrm{sinc}^2(x)
+&\iff \mathrm{sinc}^2(x) \\
+\frac 1 \pi \frac{1}{
 .\end{align*}
 
