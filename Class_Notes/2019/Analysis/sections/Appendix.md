@@ -225,3 +225,4 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 > Then just take $A_1 = \theset{f > 0}$ and $A_2 = \theset{f < 0}$, then $\int_\RR f = \int_{A_1} f + \int_{A_2}f = 0$.
 
 ## Useful Properties of the Fourier Transform
+
