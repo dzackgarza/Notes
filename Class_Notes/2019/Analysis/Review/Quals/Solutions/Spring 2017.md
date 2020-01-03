@@ -48,8 +48,9 @@ So every ball containing $x$ contains some endpoint of a removed interval, and t
 
 $\qed$
 
-
 ## 2
+
+
 
 ## 3
 
