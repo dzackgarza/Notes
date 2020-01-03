@@ -50,7 +50,11 @@ $\qed$
 
 ## 2
 
+### a
 
+By Radon-Nikodym, if $\lambda \lleq \mu
+
+### b
 
 ## 3
 
