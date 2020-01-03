@@ -46,6 +46,8 @@ Then for every $\varepsilon$, we can choose $n$ such that $\left( \frac 9 {10} \
 
 So every ball containing $x$ contains some endpoint of a removed interval, and thus an element of $K$.
 
+$\qed$
+
 
 ## 2
 
