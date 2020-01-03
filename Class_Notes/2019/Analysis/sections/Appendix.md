@@ -61,7 +61,7 @@ For any two sets $A, B$ in a metric space or compact Hausdorff space $X$, there 
 - Every compact subset of a Hausdorff space is closed
 
 - Showing that a series converges:
-(Todo)
+*(Todo)*
 
 ## Big Counterexamples
 
@@ -77,6 +77,7 @@ For any two sets $A, B$ in a metric space or compact Hausdorff space $X$, there 
   $$
   f(x) = \frac{\sin(nx)}{n^c} \text{ where } 0 < c < 1.
   $$
+  
   - Also shows that a sum of differentiable functions may not be differentiable.
 
 - Limit of integrals may not equal integral of limit:
@@ -89,7 +90,8 @@ $$
 f(x) = x^n \text{ on } [0, 1]
 .$$
 
-- The Thomae function (todo)
+- The Thomae function 
+*(todo)*
 
 ### For Convergence
 
@@ -104,7 +106,7 @@ Uniform $\implies$ pointwise $\implies$ almost everywhere.
 > See Section 17.3.
 
 
-####  Almost everywhere convergence does not imply $L^p$ convergence for any $1\leq p \leq \infty$
+#### Almost everywhere convergence does not imply $L^p$ convergence for any $1\leq p \leq \infty$
 
 > See notes section 17.3.
 
@@ -133,17 +135,21 @@ I.e. it is not true that $\lim \int f_k = \int f$ implies that $\exists g\in L^p
 Take
 
 - $b_k = \sum_{j=1}^k \frac 1 j \to \infty$
+
 - $f_k = \chi_{[b_k, b_{k+1}]}$
 
 Then
 
 - $f_k \converges{a.e.}\to f = 0$,
+
 - $\int f_k = \frac 1 k \to 0 \implies \norm{f_k}_p \to 0$,
+
 - $0 = \int f = \lim \int f_k = 0$
+
 - But $g > f_k \implies g > \norm{f_k}_\infty = 1$ a.e. $\implies g\not\in L^p(\RR)$.
 
 
-## Less Important Errata
+## Errata
 
 - **Equicontinuity**:
 If $\mathcal F \subset C(X)$ is a family of continuous functions on $X$, then $\mathcal F$ *equicontinuous* at $x$ iff
@@ -202,7 +208,6 @@ $\norm{\tau_h f - f}_p \to 0$ for every $p$.
 \leq \norm{\tau_h f - \tau_h g}_p + \norm{\tau_h g - g}_p + \norm{g - f}_p \to 0
 .\end{align*}
 
-
 **Lemma:**
 For $f\in L^p, g\in L^q$, $f\ast g$ is uniformly continuous.
 
@@ -212,7 +217,6 @@ For $f\in L^p, g\in L^q$, $f\ast g$ is uniformly continuous.
 \norm{\tau_h(f\ast g) - f\ast g}_\infty
 &= \norm{(\tau_h f - f) \ast g}_\infty \leq \norm{\tau_hf - f}_p \norm{g}_q \to 0
 .\end{align*}
-
 
 **Lemma**:
 If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
@@ -224,7 +228,7 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 
 ## The Fourier Transform
 
-**Some Useful Properties**
+**Some Useful Properties**:
 
 \begin{align*}
 \widehat{f\ast g}(\xi)
