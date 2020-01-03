@@ -1,8 +1,7 @@
 # Spring 2017
 
 ## 1
-asd
-sadsa {| }   
+as  
 
 ## 2
 
