@@ -247,6 +247,7 @@ Some useful transforms:
 & \chi_\theset{-\frac 1 2 \leq x \leq \frac 1 2}(x)
 &\iff \mathrm{sinc}(\xi) \\
 \text{Tent}:
-& \
+& \chi_{-1 \leq x \leq 1} (1 - \abs{x}) 
+&\iff \mathrm{sinc}(x)
 .\end{align*}
 
