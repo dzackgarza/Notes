@@ -231,6 +231,6 @@ If $\int f \phi = 0$ for every $\phi \in C_c^0$, then $f = 0$ almost everywhere.
 &= \hat f(\xi) \cdot \hat g (\xi) \\
 \widehat{\tau_h f}(\xi) 
 &= e^{2\pi i \xi \cdot h}\widehat{f}(\xi) \\
-\widehat{e^{2\pi i }}
+\widehat{e^{2\pi i \xi \cdot h}}
 
 .\end{align*}
