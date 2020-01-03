@@ -24,20 +24,17 @@ But then $K^c = \union_x B_r(x)$ is a union of open sets and thus open.
 
 Since $K$ is closed, we'll show that $K$ can not properly contain any interval, so $(\overline K)^\circ = \emptyset$.
 
-Write $x\in K$ as $x = \sum d_j 10^{-j}$ where $d_j \in \theset{0,1,2,3,5,6,7,8,9}$.
+Write $x\in K$ as $x = \sum d_j 10^{-j}$ where $d_j \not\in\theset{4}$.
 
 Now define 
 \begin{align*}
-K_1 
-&= \theset{x \neq 0.4\ldots} 
+C_1 
+&= \theset{d_1 = 4} 
 &=
-[0, 1] \setminus \left[\frac 4 {10}, \frac{5}{10}\right] \\
-K_2 
-&= \theset{x \neq \begin{cases}
-0.4\ldots \\
-0.d_1 4\ldots
-\end{cases}}
-&= [0,1] \setminus [\frac{4}{100}, \frac{5}{100}] \union [\frac{40}{100}, \frac{50}{100}]
+\left[\frac 4 {10}, \frac{5}{10}\right] \\
+C_2 
+&= \theset{d_1 = 4 \text{ or } d_2 = 4}
+&= \left[\frac{4}{100}, \frac{5}{100}\right] \union \left[\frac{44}{100}, \frac{45}{100}\right] \\
 .\end{align*}
 
 
