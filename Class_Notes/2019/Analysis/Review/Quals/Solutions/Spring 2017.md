@@ -39,12 +39,7 @@ and since any interval has strictly positive measure, $K$ can not contain any in
 
 **$K$ has no isolated points**:
 
-Let $x\in K = \sum d_j 10^{-j}$, then define a sequence of approximations 
-$$
-x_n \definedas \sum_{j=1}^n d_j 10^{-j} +4\cdot 10^{-{n+1}}
-.$$
-
-Then clear $\abs{x_n - x} \to 0$ in $\RR$, but every $x_n$ is in $K$, so every open ball around $x$ contains another point of $K$.
+A point $x\in K$ is isolated iff there there is an open ball $B_r(x)$ containing $x$ such that $B_r(x) \subset K^c$, so every point in this ball has a 
 
 
 
