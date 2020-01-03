@@ -18,7 +18,7 @@ If we write $y = \sum_{j=1}^\infty c_j 10^{-j}$, this means that for all $j \leq
 
 But then $K^c = \union_x B_r(x)$ is a union of open sets and thus open.
 
-
+**$K$ is nowhere dense:**
 
 ## 2
 
