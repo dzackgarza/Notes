@@ -114,8 +114,6 @@ In particular, $\sup_{x} \abs{f_n(x)} \not\to 0$, so the terms do not go to zero
 
 ### b
 
-We have
-
 \begin{align*}
 \int \sum f_n &= \int (a-b) + (a e^{-ax} - b e^{-bx}) + (a e^{-2ax} - b e^{-2bx}) + \cdots  \\
 &= \int a \sum_{j} e^{-jax} - b \sum_{j} e^{-jbx} \\
