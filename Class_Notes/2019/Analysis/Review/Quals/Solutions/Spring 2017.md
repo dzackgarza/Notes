@@ -72,14 +72,7 @@ But since each $E_j \subseteq E$, we must have $\mu(E_j) = 0$ for any such $E_j$
 
 ### b
 
-Define $\lambda(E) = \int_E f ~dm$ where $f(x) = x^2$.
-By part (a), we have
-
-\begin{align*}
-0 = \int_E x^2 ~dm = \lambda(E)
-,\end{align*}
-
-and so it suffices to show that $m \ll \lambda$
+Define $A_k = \theset{x\in X \suchthat m
 
 ## 3
 
