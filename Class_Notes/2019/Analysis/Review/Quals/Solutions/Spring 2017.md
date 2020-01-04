@@ -139,7 +139,7 @@ So $f_n \to f$ uniformly, and $f_n' \to g$ uniformly for some $g$.
 
 By the FTC,
 \begin{align*}
-\int_a^x f'_n = 
+\int_a^x f'_n = f_n(x) - f_n(a) \converges{u}\to f(x) - f(a)
 .\end{align*}
 
 
