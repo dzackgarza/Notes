@@ -93,7 +93,11 @@ Then noting that $A_k \searrow A \definedas \theset{x\in E \suchthat x^2  > 0}$,
 x\in E \iff gf\chi_E(x) > 0 \iff x\in A
 ,\end{align*}
 
-so $E = A$ and $m(E)$ 
+so $E = A$ and $\mu(E) = \mu(A)$.
+
+But since $m \ll \mu$ by construction, we can conclude that $m(E) = 0$.
+
+$\qed$
 
 ## 3
 
