@@ -137,11 +137,13 @@ Then noting that $\norm{f_n}_\infty, \norm{f_n'}\infty \leq \norm{f_n}_u < \inft
 
 So $f_n \to f$ uniformly, and $f_n' \to g$ uniformly for some $g$.
 
-By the FTC,
+We thus have
 \begin{align*}
-\int_a^x f'_n = f_n(x) - f_n(a) \converges{u}\to f(x) - f(a)
-.\end{align*}
-
+f_n(x) - f_n(a) \quad &\converges{u}\to f(x) - f(a) \\
+\int_a^x f'_n  \quad &\converges{u}\to \int_a^x  g
+,\end{align*}
+ 
+ and by the FTC, the left-hand sides are equal, and by uniqueness of limits so are the right-hand sides.
 
 
 Blah, so $f$ is differentiable.
