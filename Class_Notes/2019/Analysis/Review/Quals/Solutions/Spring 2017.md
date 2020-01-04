@@ -77,16 +77,18 @@ By Radon-Nikodym, there exists a positive $f$ such that
 \int g ~dm = \int gf ~d\mu 
 ,\end{align*}
 
-where we can take 
+where we can take $g(x) = x^2$, then the LHS is zero by assumption and thus so is the RHS.
 
-Define $A_k = \theset{x\in X \suchthat x^2\chi_E(x) > \frac 1 k}$, then by Chebyshev
+Note that $gf$ is positive.
+
+Define $A_k = \theset{x\in X \suchthat gf \chi_E > \frac 1 k}$, then by Chebyshev
 \begin{align*}
-m(A_k) \leq k \int_E x^2 ~dm = 0
+\mu(A_k) \leq k \int_E gf ~d\mu = 0
 ,\end{align*}
 
 which holds for every $k$.
 
-Then noting that $A_k \searrow \theset{x\in E \suchthat x^2  > 0}$, and since $f(x) = x^2$ is non-negative
+Then noting that $A_k \searrow \theset{x\in E \suchthat x^2  > 0}$, and $gf$ is positive, we have
 
 ## 3
 
