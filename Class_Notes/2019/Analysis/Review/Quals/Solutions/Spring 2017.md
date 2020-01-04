@@ -127,10 +127,6 @@ so $f$ is not integrable.
 
 ## 5
 
-The only nontrivial thing to show is the triangle inequality:
+This is clearly a norm.
 
-\begin{align*}
-\norm{f+g} 
-&= \sup_x \abs{(f+g)(x)} + \abs{(f'+g')(x)} \\
-&\leq \sup_x \abs{f(x)} + \abs{g(x)} + \abs{f'(x)} + \abs{g'(x)} = \norm{f} + \norm{g}$ 
-.\end{align*}
+Let $f_n \in 
