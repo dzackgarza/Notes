@@ -129,9 +129,11 @@ so $f$ is not integrable.
 
 > See https://math.stackexchange.com/questions/507263/prove-that-c1a-b-with-the-c1-norm-is-a-banach-space
 
-This is clearly a norm.
+This is clearly a norm, which we'll write $\norm{\wait}_u$
 
 Let $f_n$ be a Cauchy sequence and define a candidate limit $f(x) = \lim_n f_n(x)$.
+
+Then 
 
 By definition, $f_n \to f$ uniformly, so $f$ is continuous.
 
