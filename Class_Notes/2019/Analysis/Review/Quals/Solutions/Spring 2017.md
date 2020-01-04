@@ -132,3 +132,5 @@ This is clearly a norm.
 Let $f_n$ be a Cauchy sequence and define a candidate limit $f(x) = \lim_n f_n(x)$.
 
 By definition, $f_n \to f$ uniformly, so $f$ is continuous.
+
+Blah, so $f$ is differentiable.
