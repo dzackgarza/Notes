@@ -79,7 +79,7 @@ m(A_k) \leq k \int_E x^2 ~dm = 0
 
 which holds for every $k$.
 
-Then noting that $A_k \searrow E$
+Then noting that $A_k \searrow \theset{x\in X \suchthat $
 
 ## 3
 
