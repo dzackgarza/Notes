@@ -133,8 +133,9 @@ This is clearly a norm, which we'll write $\norm{\wait}_u$
 
 Let $f_n$ be a Cauchy sequence and define a candidate limit $f(x) = \lim_n f_n(x)$.
 
-Then 
+Then noting that $\norm{f_n}_\infty, \norm{f_n'}\infty \leq \norm{f_n}_u < \infty$, both $f_n, f_n$ are Cauchy sequences in $C([a, b], \norm{\wait}_\infty)$, which is a Banach space.
 
-By definition, $f_n \to f$ uniformly, so $f$ is continuous.
+So $f_n \to f$ uniformly, and $f_n' \to g$ uniformly for some $g$.
+
 
 Blah, so $f$ is differentiable.
