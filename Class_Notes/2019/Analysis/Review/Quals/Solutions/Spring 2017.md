@@ -130,5 +130,7 @@ so $f$ is not integrable.
 The only nontrivial thing to show is the triangle inequality:
 
 \begin{align*}
-\norm{f+g} = \sup_x
+\norm{f+g} 
+&= \sup_x \abs{(f+g)(x)} + \abs{(f'+g')(x)} \\
+&\leq \sup_x \abs{f(x)} + \abs{g(x)} + \abs{f'(x)} + \abs{g'(x)} = \norm{f} + \norm{g}$ 
 .\end{align*}
