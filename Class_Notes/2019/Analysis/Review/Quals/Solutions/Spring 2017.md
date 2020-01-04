@@ -137,7 +137,7 @@ Then noting that $\norm{f_n}_\infty, \norm{f_n'}\infty \leq \norm{f_n}_u < \inft
 
 So $f_n \to f$ uniformly, and $f_n' \to g$ uniformly for some $g$.
 
-If we define $f
+The claim is that $\int g = f$
 
 
 Blah, so $f$ is differentiable.
