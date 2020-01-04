@@ -126,3 +126,6 @@ Switching to polar coordinates and integrating over a half-circle contained in $
 so $f$ is not integrable.
 
 ## 5
+
+The only nontrivial thing to show is the triangle inequality:
+
