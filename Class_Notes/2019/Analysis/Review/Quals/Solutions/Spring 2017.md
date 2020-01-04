@@ -74,9 +74,10 @@ But since each $E_j \subseteq E$, we must have $\mu(E_j) = 0$ for any such $E_j$
 
 By Radon-Nikodym, there exists a positive $f$ such that
 \begin{align*}
-\int g ~dm = \int fd ~d\mu 
-.\end{align*}
+\int g ~dm = \int gf ~d\mu 
+,\end{align*}
 
+where we can take 
 
 Define $A_k = \theset{x\in X \suchthat x^2\chi_E(x) > \frac 1 k}$, then by Chebyshev
 \begin{align*}
