@@ -143,7 +143,4 @@ f_n(x) - f_n(a) \quad &\converges{u}\to f(x) - f(a) \\
 \int_a^x f'_n  \quad &\converges{u}\to \int_a^x  g
 ,\end{align*}
  
- and by the FTC, the left-hand sides are equal, and by uniqueness of limits so are the right-hand sides.
-
-
-Blah, so $f$ is differentiable.
+ and by the FTC, the left-hand sides are equal, and by uniqueness of limits so are the right-hand sides, so $f' = g$.
