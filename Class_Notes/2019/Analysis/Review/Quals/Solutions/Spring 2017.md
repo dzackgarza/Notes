@@ -108,6 +108,10 @@ To see that $\sum \abs{f_n} \not\in L^1$, it suffices to show that it is *not* t
 
 Letting $x_n \definedas \frac 1 n$, we have
 
+\begin{align*}
+\sum_{k=1}^\infty \abs{f_k(x)} \geq \abs{f_n(x_n)} 
+=\abs{ae^{-ax} - be^{-bx}}
+.\end{align*}
 
 
 ## 4
