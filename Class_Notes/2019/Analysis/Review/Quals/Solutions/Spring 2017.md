@@ -88,11 +88,12 @@ Define $A_k = \theset{x\in X \suchthat gf \chi_E > \frac 1 k}$, then by Chebyshe
 
 which holds for every $k$.
 
-Then noting that $A_k \searrow \theset{x\in E \suchthat x^2  > 0}$, and $gf$ is positive, we have 
+Then noting that $A_k \searrow A \definedas \theset{x\in E \suchthat x^2  > 0}$, and $gf$ is positive, we have 
 \begin{align*}
-x\in E \iff
-.\end{align*}
+x\in E \iff gf\chi_E(x) > 0 \iff x\in A
+,\end{align*}
 
+so $E = A$ and $m(E)$ 
 
 ## 3
 
