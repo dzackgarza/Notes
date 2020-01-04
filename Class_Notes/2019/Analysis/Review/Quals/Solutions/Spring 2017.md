@@ -73,7 +73,11 @@ But since each $E_j \subseteq E$, we must have $\mu(E_j) = 0$ for any such $E_j$
 ### b
 
 Define $A_k = \theset{x\in X \suchthat x^2\chi_E(x) > \frac 1 k}$, then by Chebyshev
+\begin{align*}
+m(A_k) \leq k \int_E x^2 ~dm = 0
+,\end{align*}
 
+which holds for every $k$.
 
 ## 3
 
