@@ -110,9 +110,10 @@ Letting $x_n \definedas \frac 1 n$, we have
 
 \begin{align*}
 \sum_{k=1}^\infty \abs{f_k(x)} \geq \abs{f_n(x_n)} 
-=\abs{ae^{-ax} - be^{-bx}}
+=\abs{ae^{-ax} - be^{-bx}} \definedas M
 .\end{align*}
 
+In particular, $\abs{f_n(x)} \not\to 0$, so the terms do not go to zero and the sum can not converge.
 
 ## 4
 
