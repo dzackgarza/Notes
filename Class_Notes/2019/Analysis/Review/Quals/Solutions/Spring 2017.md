@@ -103,8 +103,11 @@ $\qed$
 
 ### a
 
-\begin{align*}
+We first compute
 
+
+\begin{align*}
+\int_0^\infty \sum \abs{
 .\end{align*}
 
 ## 4
