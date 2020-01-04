@@ -103,16 +103,8 @@ $\qed$
 
 ### a
 
-We first compute
-\begin{align*}
-\int \abs{f_n} = \int \abs{ae^{-nax} - be^{-nbx} }
-.\end{align*}
 
-
-\begin{align*}
-\int_0^\infty \sum \abs{
-.\end{align*}
-
+To see that $\sum \abs{f_n} \not\in L^1$, it suffices to find 
 ## 4
 
 ## 5
