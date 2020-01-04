@@ -112,6 +112,12 @@ Letting $x_n \definedas \frac 1 n$, we have
 
 In particular, $\sup_{x} \abs{f_n(x)} \not\to 0$, so the terms do not go to zero and the sum can not converge.
 
+### b
+
+We have
+
+
+
 ## 4
 
 ## 5
