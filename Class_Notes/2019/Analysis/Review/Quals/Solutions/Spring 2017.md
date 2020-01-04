@@ -105,6 +105,11 @@ $\qed$
 
 
 To see that $\sum \abs{f_n} \not\in L^1$, it suffices to show that it is *not* the case that $\sum \abs {f_n(x)} < \infty$ for almost every $x\in [0, \infty)$.
+
+Letting $x_n \definedas \frac 1 n$, we have
+
+
+
 ## 4
 
 ## 5
