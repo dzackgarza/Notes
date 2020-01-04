@@ -120,7 +120,7 @@ In particular, $\sup_{x} \abs{f_n(x)} \not\to 0$, so the terms do not go to zero
 
 Switching to polar coordinates, we have
 \begin{align*}
-\int_{I^2} f = \
+\int_{I^2} f \geq \int_0^\pi \int_0^1 \frac{\cos(\theta)\sin(\theta)}{}
 .\end{align*}
 
 
