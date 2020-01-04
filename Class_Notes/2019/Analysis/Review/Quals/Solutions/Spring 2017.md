@@ -145,4 +145,6 @@ f_n(x) - f_n(a) \quad &\converges{u}\to f(x) - f(a) \\
  
 and by the FTC, the left-hand sides are equal, and by uniqueness of limits so are the right-hand sides, so $f' = g$.
 
+This means that $\norm{f_n - f}_u \to 0$.
+
 Since $f, f'\in C^0([a, b])$, they are bounded, and so $\norm{f}_u < \infty$.
