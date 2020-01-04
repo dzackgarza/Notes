@@ -121,7 +121,8 @@ We have
 &= \int a \sum_{j} e^{-jax} + b \sum_{j} e^{-jbx} \\
 &= a \int \sum_{j} e^{-jax} + b \int \sum_{j} e^{-jbx} \\
 &= a\sum_j \int e^{-jax} + b\sum_j \int e^{-jbx} \\
-&= a \sum_j \frac{-e^{-ajx}}{aj} \mid_{x=0}^{x=\infty} + b \sum_j \frac{-e^{-bjx}}{bj}
+&= a \sum_j \frac{-e^{-ajx}}{aj} \Big|_{x=0}^{x=\infty} + b \sum_j \frac{-e^{-bjx}}{bj}\Big|_{x=0}^{x=\infty} \\
+&=
 .\end{align*}
 
 
