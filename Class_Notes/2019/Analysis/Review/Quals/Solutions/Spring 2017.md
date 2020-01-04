@@ -119,6 +119,9 @@ In particular, $\sup_{x} \abs{f_n(x)} \not\to 0$, so the terms do not go to zero
 ## 4
 
 Switching to polar coordinates, we have
+\begin{align*}
+\int_{I^2} f = \
+.\end{align*}
 
 
 ## 5
