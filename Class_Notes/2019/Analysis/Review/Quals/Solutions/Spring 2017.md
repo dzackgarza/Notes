@@ -129,3 +129,6 @@ so $f$ is not integrable.
 
 The only nontrivial thing to show is the triangle inequality:
 
+\begin{align*}
+\norm{f+g} = \sup_x
+.\end{align*}
