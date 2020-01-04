@@ -133,9 +133,9 @@ This is clearly a norm, which we'll write $\norm{\wait}_u$
 
 Let $f_n$ be a Cauchy sequence and define a candidate limit $f(x) = \lim_n f_n(x)$.
 
-Then noting that $\norm{f_n}_\infty, \norm{f_n'}\infty \leq \norm{f_n}_u < \infty$, both $f_n, f_n$ are Cauchy sequences in $C([a, b], \norm{\wait}_\infty)$, which is a Banach space.
+Then noting that $\norm{f_n}_\infty, \norm{f_n'}\infty \leq \norm{f_n}_u < \infty$, both $f_n, f_n$ are Cauchy sequences in $C^0([a, b], \norm{\wait}_\infty)$, which is a Banach space.
 
-So $f_n \to f$ uniformly, and $f_n' \to g$ uniformly for some $g$.
+So $f_n \to f$ uniformly, and $f_n' \to g$ uniformly for some $g$, and moreover $f, g\in C^0([a, b])$.
 
 We thus have
 \begin{align*}
@@ -143,4 +143,6 @@ f_n(x) - f_n(a) \quad &\converges{u}\to f(x) - f(a) \\
 \int_a^x f'_n  \quad &\converges{u}\to \int_a^x  g
 ,\end{align*}
  
- and by the FTC, the left-hand sides are equal, and by uniqueness of limits so are the right-hand sides, so $f' = g$.
+and by the FTC, the left-hand sides are equal, and by uniqueness of limits so are the right-hand sides, so $f' = g$.
+
+Since $f, f'\in C^0([a, b])$, they are bounded, and so $\norm{f}_u < \infty$.
