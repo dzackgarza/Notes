@@ -127,6 +127,8 @@ so $f$ is not integrable.
 
 ## 5
 
+> See https://math.stackexchange.com/questions/507263/prove-that-c1a-b-with-the-c1-norm-is-a-banach-space
+
 This is clearly a norm.
 
 Let $f_n$ be a Cauchy sequence and define a candidate limit $f(x) = \lim_n f_n(x)$.
