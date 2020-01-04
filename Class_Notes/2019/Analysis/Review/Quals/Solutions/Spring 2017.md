@@ -72,7 +72,7 @@ But since each $E_j \subseteq E$, we must have $\mu(E_j) = 0$ for any such $E_j$
 
 ### b
 
-Define $A_k = \theset{x\in X \suchthat m
+Define $A_k = \theset{x\in X \suchthat x^2 > \frac 1 k}$
 
 ## 3
 
