@@ -104,6 +104,9 @@ $\qed$
 ### a
 
 We first compute
+\begin{align*}
+\int \abs{f_n} = \int \abs{ae^{-nax} - be^{-nbx} }
+.\end{align*}
 
 
 \begin{align*}
