@@ -79,7 +79,7 @@ m(A_k) \leq k \int_E x^2 ~dm = 0
 
 which holds for every $k$.
 
-Then noting that $A_k \searrow \theset{x\in E \suchthat x^2  > 0}$, and since $f(x) = x^2$ is a positive 
+Then noting that $A_k \searrow \theset{x\in E \suchthat x^2  > 0}$, and since $f(x) = x^2$ is non-negative
 
 ## 3
 
