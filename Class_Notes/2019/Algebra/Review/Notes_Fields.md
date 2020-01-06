@@ -41,7 +41,7 @@ $GF(p^n)$ is the splitting field of $x^{p^n} - x$ .
 Let $\rho_n \definedas x^{p^n} - x$.
 Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
-*Lemma:* 
+**Lemma:**
 $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i \in \FF_p[x]$ of degree $d$ dividing $n$.
 
 > *Proof:*
