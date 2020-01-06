@@ -158,6 +158,15 @@ $$
 \chi_T(x) = \prod_{j=1}^n f_j(x)
 .$$
 
+Writing
+\begin{align*}
+\min_A(x) = \prod (x- \lambda_i)^{a_i} \\
+\chi_A(x) = \prod (x- \lambda_i)^{b_i}
+\end{align*}
+
+- $a_i \leq b_i$
+- The roots both polynomials are precisely the eigenvalues of $A$.
+
 **Lemma**:
 Both $\min_T(x)$ and $\chi_T(x)$ have roots precisely the eigenvalues of $T$, with potentially different multiplicities.
 
