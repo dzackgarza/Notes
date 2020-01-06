@@ -205,7 +205,7 @@ Corresponds to the **Elementary Divisor Decomposition** of $T$.
 
 - For characteristic polynomials
 $$
-p(x) = \det(A - xI))= \det(SNF(A - xI))
+\chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
 .$$
 
 - ? Invariant factors of $A$ are the invariant factors of $xI
