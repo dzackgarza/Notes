@@ -96,7 +96,7 @@ $$
 
 ### Examples of Orbit-Stabilizer
 
-1. Let $G$ act on itself by conjugation
+1. Let $G$ act on itself by conjugation.
 
 - $G \cdot x$ is the **conjugacy class** of $x$
 
