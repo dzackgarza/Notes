@@ -105,7 +105,9 @@ $$
 
 1. For a fixed $H\leq G$, let $G$ act on its cosets $G/H = \theset{gH}$ by left-multiplication.
 
-- $G\cdot gH = G$, i.e.
+- $G\cdot gH = G/H$, i.e. this is a *transitive* action.
+
+- 
 
 **Burnside's Formula:**
 $$
