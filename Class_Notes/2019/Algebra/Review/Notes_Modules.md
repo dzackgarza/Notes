@@ -114,9 +114,7 @@ Fix some notation:
 
 
 **Definition:**
-Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff$
-
-  - $A,B$ have the same JCF
+Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same JCF
 
 **Definition:**
 Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
@@ -256,12 +254,14 @@ $$
 3. Non-similar matrices with the same characteristic polynomial
 
 $$
-\left[\begin{array}{ll}{1}
- & {0} \\ {0} & {1}
+\left[\begin{array}{ll}
+{1}  & {0} \\ 
+{0} & {1}
  \end{array}\right]
  \text { and }
- \left[\begin{array}{ll}{1}
-  & {1} \\ {0} & {1}
+ \left[\begin{array}{ll}
+ {1} & {1} \\ 
+ {0} & {1}
   \end{array}\right]
 $$
 
@@ -276,14 +276,14 @@ $$
 
 1. Matrix roots of unity:
 \begin{align*} \sqrt{I_2} =
-\left[\begin{array}{ccc}
+\left[\begin{array}{cc}
 0 & 1\\
 1 & 0
 \end{array}\right]
 .\end{align*}
 
 \begin{align*} \sqrt{-I_2} =
-\left[\begin{array}{ccc}
+\left[\begin{array}{cc}
 0 & -1\\
 1 & 0
 \end{array}\right]
