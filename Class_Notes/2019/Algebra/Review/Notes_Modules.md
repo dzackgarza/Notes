@@ -64,85 +64,6 @@ Let $m(x)$ denote the minimal polynomial $A$.
 
 2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$.
 
-## Diagonalizability
-
-*Notation:*
-$A^*$ denotes the conjugate tranpose of $A$.
-
-**Lemma:**
-Let $V$ be a vector space over $k$ an algebraically closed and $A \in \mathrm{End}(V)$.
-Then if $W \subseteq V$ is an invariant subspace, so $A(W) \subseteq W$, the $A$ has an eigenvector in $W$.
-
-**Theorem (The Spectral Theorem)**:
-
-1. Hermitian matrices (i.e. $A^* = A$) are diagonalizable over $\CC$.
-2. Symmetric matrices (i.e. $A^t = A$) are diagonalizable over $\RR$.
-
-> *Proof:*
-> Suppose $A$ is Hermitian.
-> Since $V$ itself is an invariant subspace, $A$ has an eigenvector $\vector v_1 \in V$.
-> Let $W_1 = \spanof_k\theset{\vector v_1}^\perp$.
-> Then for any $\vector w_1 \in W_1$, 
-$$
-\inner{\vector v_1}{ A \vector w_1} =
-\inner{A \vector v_1}{\vector w_1} =
-\lambda \inner{\vector v_1}{\vector w_1} = 0,
-$$
-> so $A(W_1) \subseteq W_1$ is an invariant subspace, etc.
->
-> Suppose now that $A$ is symmetric.
-> Then there is an eigenvector of norm 1, $\vector v \in V$.
-\begin{align*}
-\lambda = \lambda\inner{\vector v}{\vector v} = \inner{A\vector v}{\vector v} = \inner{\vector v}{A\vector v} = \overline{\lambda} \implies \lambda \in \RR
-.\end{align*}
-
-
-**Lemma**:
-$\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
-
-> *Proof*: By induction on number of operators
->
-> - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
-> - Restrict all $n-1$ operators $A$ to $E_n$.
-> - The commute in $V$ so they commute in $E_n$
-> - **(Lemma)** They were diagonalizable in $V$, so they're diagonalizable in $E_n$
-> - So they're simultaneously diagonalizable by I.H.
-> - But these eigenvectors for the $A_i$ are all in $E_n$, so they're eigenvectors for $A_n$ too.
-> - Can do this for each eigenspace.
-> $\qed$
-
-> [Full details here](https://kconrad.math.uconn.edu/blurbs/linmultialg/minpolyandappns.pdf#page=9)
-
-**Characterizations of Diagonalizability**
-
-Let $\min_M(x)$ denote the minimal polynomial of $A$ and $\chi_M(x)$ the characteristic polynomial.
-
-**Lemma**:
-$$
-\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i}
-\implies
-\min_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i}
-\text{ where } 1 \leq \ell_i \leq m_i,
-$$
-
-where $\lambda_i$ are eigenvalues of $M$, $m_i$ is the multiplicity of $\lambda_i$.
-
-> *Proof*: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\mu_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\mu_M$: let $\vector v_i$ be the eigenvector associated to $\lambda_i$, so $\vector v_i \neq \vector 0$ and $M\vector v_i = \lambda_i \vector v_i$. Then by linearity $\mu_M(\lambda_i)\vector v_i = \mu_M(M)\vector v_i = \vector 0$, which forces $\mu_M(\lambda_i) = 0$.
-
-**Lemma**:
-$M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear factors over $\FF$.
-
-> Equivalently, iff all of the roots of $\min_M$ lie in $\FF$.
-
-> *Proof*:
-> $\implies$:
-> If $\min_A$ factors into linear factors, so does each invariant factor, so every elementary divisor is linear and $JCF(A)$ is diagonal.
-> 
-> $\impliedby$:
-> If $A$ is diagonalizable, every elementary divisor is linear, so every invariant factor factors into linear pieces. 
-> But the minimal polynomial is just the largest invariant factor.
-
-
 
 ## Canonical Forms
 
@@ -263,6 +184,83 @@ For a linear operator on a vector space of nonzero finite dimension, TFAE:
 
   - $T$ has $\dim V$ distinct eigenvalues
 
+## Diagonalizability
+
+*Notation:*
+$A^*$ denotes the conjugate tranpose of $A$.
+
+**Lemma:**
+Let $V$ be a vector space over $k$ an algebraically closed and $A \in \mathrm{End}(V)$.
+Then if $W \subseteq V$ is an invariant subspace, so $A(W) \subseteq W$, the $A$ has an eigenvector in $W$.
+
+**Theorem (The Spectral Theorem)**:
+
+1. Hermitian matrices (i.e. $A^* = A$) are diagonalizable over $\CC$.
+2. Symmetric matrices (i.e. $A^t = A$) are diagonalizable over $\RR$.
+
+> *Proof:*
+> Suppose $A$ is Hermitian.
+> Since $V$ itself is an invariant subspace, $A$ has an eigenvector $\vector v_1 \in V$.
+> Let $W_1 = \spanof_k\theset{\vector v_1}^\perp$.
+> Then for any $\vector w_1 \in W_1$, 
+$$
+\inner{\vector v_1}{ A \vector w_1} =
+\inner{A \vector v_1}{\vector w_1} =
+\lambda \inner{\vector v_1}{\vector w_1} = 0,
+$$
+> so $A(W_1) \subseteq W_1$ is an invariant subspace, etc.
+>
+> Suppose now that $A$ is symmetric.
+> Then there is an eigenvector of norm 1, $\vector v \in V$.
+\begin{align*}
+\lambda = \lambda\inner{\vector v}{\vector v} = \inner{A\vector v}{\vector v} = \inner{\vector v}{A\vector v} = \overline{\lambda} \implies \lambda \in \RR
+.\end{align*}
+
+
+**Lemma**:
+$\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
+
+> *Proof*: By induction on number of operators
+>
+> - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
+> - Restrict all $n-1$ operators $A$ to $E_n$.
+> - The commute in $V$ so they commute in $E_n$
+> - **(Lemma)** They were diagonalizable in $V$, so they're diagonalizable in $E_n$
+> - So they're simultaneously diagonalizable by I.H.
+> - But these eigenvectors for the $A_i$ are all in $E_n$, so they're eigenvectors for $A_n$ too.
+> - Can do this for each eigenspace.
+> $\qed$
+
+> [Full details here](https://kconrad.math.uconn.edu/blurbs/linmultialg/minpolyandappns.pdf#page=9)
+
+**Characterizations of Diagonalizability**
+
+Let $\min_M(x)$ denote the minimal polynomial of $A$ and $\chi_M(x)$ the characteristic polynomial.
+
+**Lemma**:
+$$
+\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i}
+\implies
+\min_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i}
+\text{ where } 1 \leq \ell_i \leq m_i,
+$$
+
+where $\lambda_i$ are eigenvalues of $M$, $m_i$ is the multiplicity of $\lambda_i$.
+
+> *Proof*: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\mu_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\mu_M$: let $\vector v_i$ be the eigenvector associated to $\lambda_i$, so $\vector v_i \neq \vector 0$ and $M\vector v_i = \lambda_i \vector v_i$. Then by linearity $\mu_M(\lambda_i)\vector v_i = \mu_M(M)\vector v_i = \vector 0$, which forces $\mu_M(\lambda_i) = 0$.
+
+**Lemma**:
+$M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear factors over $\FF$.
+
+> Equivalently, iff all of the roots of $\min_M$ lie in $\FF$.
+
+> *Proof*:
+> $\implies$:
+> If $\min_A$ factors into linear factors, so does each invariant factor, so every elementary divisor is linear and $JCF(A)$ is diagonal.
+> 
+> $\impliedby$:
+> If $A$ is diagonalizable, every elementary divisor is linear, so every invariant factor factors into linear pieces. 
+> But the minimal polynomial is just the largest invariant factor.
 
 ## Matrix Counterexamples
 
