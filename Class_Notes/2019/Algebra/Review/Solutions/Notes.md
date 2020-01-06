@@ -103,9 +103,9 @@ $$
 
 - $S^G$ is the set of **normal subgroups** of $G$
 
-1. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
+1. For a fixed $H\leq G$, let $G$ act on its cosets $G/H = \theset{gH}$ by left-multiplication.
 
-
+- $G\cdot gH = G$, i.e.
 
 **Burnside's Formula:**
 $$
