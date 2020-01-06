@@ -42,8 +42,7 @@ $$
 H \leq G \implies \abs H \divides \abs G
 .$$
 
-
-***Corollary**:*
+*Corollary*:
 The order of every element divides the size of $G$, i.e.
 $$
 g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
@@ -52,7 +51,7 @@ g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 > **Warning:**
 If $n \divides \abs G$, then there does **not** necessarily exist $H \leq G$ with $\abs H = n$.
 > 
-> Key example:
+> Counterexample:
 > $G = A_4$ is size 12 but there is no subgroup of order 6.
 
 **Cauchy's Theorem**:
