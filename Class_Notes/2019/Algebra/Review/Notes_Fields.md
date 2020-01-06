@@ -190,3 +190,6 @@ I.e., the following map is an isomorphism:
 \ZZ/(n)\units &\to \Gal(\QQ(\zeta_n), \QQ) \\
 r \mod n &\mapsto (\phi_r: \zeta_n \mapsto \zeta_n^r )
 .\end{align*}
+
+**Theorem**:
+$\Gal(GF(p^n)/\FF_p)
