@@ -101,7 +101,7 @@ $$
 
 - $G_H = N_G(H)$ is the **normalizer** of in $G$ of $H$
 
-- $S^G
+- $S^G$ is the set of **normal subgroups** of $G$
 
 1. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
 
