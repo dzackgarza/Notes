@@ -198,9 +198,8 @@ For a linear operator on a vector space of nonzero finite dimension, TFAE:
 
 Corresponds to the **Elementary Divisor Decomposition** of $T$.
 
-**Facts**:
-
-- The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
+**Lemma:**
+The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
 
 
 
