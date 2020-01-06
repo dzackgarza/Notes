@@ -91,7 +91,10 @@ $$
 > so $A(W_1) \subseteq W_1$ is an invariant subspace, etc.
 >
 > Suppose now that $A$ is symmetric.
-> Then
+> Then there is an eigenvector of norm 1, $\vector v \in V$.
+\begin{align*}
+\lambda = \lambda\inner{\vector v}{\vector v} = \inner{A\vector v}{\vector v} = \inner{\vector v}{A\vector v} = \overline{\lambda} \implies \lambda \in \RR
+.\end{align*}
 
 
 **Lemma**:
