@@ -204,3 +204,4 @@ x &\mapsto x^p
 An extension $F/k$ is **simple** if $F = k[\alpha]$ for a single element $\alpha$.
 
 **Theorem (Primitive Element):**
+If $F/k$ is a finite 
