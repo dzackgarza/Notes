@@ -216,7 +216,6 @@ p(x) = \det(A - x1))= \det(SNF(A - x1))
 
 - $\min_M(x) = \chi_M(x) = x^2 + 1$
 
-$$
 \begin{align*}
 M = \left[\begin{array}{rr}
 0  & 1 \\
@@ -228,6 +227,60 @@ M = \left[\begin{array}{rr}
 0 & 1 \sqrt{-1}
 \end{array}\right]
 .\end{align*}
+
+
+2.
+\begin{align*}
+M = \left[\begin{array}{rr}
+1 & 1 \\
+0 & 1
+\end{array}\right] \sim
+\left[\begin{array}{rr}
+1 & 1 \\
+0 & 1
+\end{array}\right]
+.\end{align*}
+
+- Not diagonalizable over $\CC$
+
+- Eigenvalues $[1, 1]$ (repeated, multiplicity 2)
+
+- $\min_M(x) = \chi_M(x) = x^2-2x+1$
+
+3. Non-similar matrices with the same characteristic polynomial
+
+$$
+\left[\begin{array}{ll}
+{1}  & {0} \\ 
+{0} & {1}
+ \end{array}\right]
+ \text { and }
+ \left[\begin{array}{ll}
+ {1} & {1} \\ 
+ {0} & {1}
+  \end{array}\right]
 $$
 
+4. A full-rank matrix that is not diagonalizable:
+\begin{align*}
+\left[\begin{array}{ccc}
+1 & 1 & 0 \\
+0 & 1 & 1 \\
+0 & 0 & 1 \\
+\end{array}\right]
+.\end{align*}
 
+1. Matrix roots of unity:
+\begin{align*} \sqrt{I_2} =
+\left[\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right]
+.\end{align*}
+
+\begin{align*} \sqrt{-I_2} =
+\left[\begin{array}{cc}
+0 & -1\\
+1 & 0
+\end{array}\right]
+.\end{align*}
