@@ -1,9 +1,12 @@
 # Modules
 
-# Linear Algebra
+## Linear Algebra
 
-## Minimal / Characteristic Polynomial
-Finding the minimal polynomial $m(x)$ of $A$:
+### Minimal / Characteristic Polynomial
+
+**Finding the minimal polynomial** 
+
+Let $m(x)$ denote the minimal polynomial $A$.
 
 1. Find the characteristic polynomial $\chi(x)$; this annihilates $A$ by Cayley-Hamilton. Then $m(x) \divides \chi(x)$, so just test the finitely many products of irreducible factors.
 
