@@ -141,7 +141,6 @@ $\mathfrak N(R) \subseteq J(R)$.
 > *Proof:*
 > Maximal $\implies$ prime, and so if $x$ is in every prime ideal, it is necessarily in every maximal ideal as well.
 
-
 ## Zorn's Lemma
 
 **Lemma**:
