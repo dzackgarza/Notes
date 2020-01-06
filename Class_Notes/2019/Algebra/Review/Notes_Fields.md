@@ -212,7 +212,7 @@ Every quadratic extension is Galois.
 If $K$ is the splitting field of an irreducible polynomial of degree $n$, then $\Gal(K/\QQ) \leq S_n$ is a transitive subgroup.
 
 > Corollary:
-> The order $\abs{ \Gal(K/\QQ)}$ divides $n$.
+> $n$ divides the order $\abs{ \Gal(K/\QQ)}$.
 
 **Definition:**
 TFAE
