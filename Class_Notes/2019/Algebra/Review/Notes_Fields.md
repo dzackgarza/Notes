@@ -48,7 +48,7 @@ $\GF(p^n)\cong \displaystyle\frac{\FF_p}{(f)}$ where $f \in \FF_p[x]$ is any irr
 **Lemma:**
 Every finite field $F$ is isomorphic to a unique field of the form $\GF(p^n)$ and if $\ch F = p$, it has prime subfield $\FF_p$.
 
-**Lemma:**
+**Lemma (Containment of Finite Fields):**
 $\GF(p^\ell) \leq \GF(p^k) \iff \ell$ divides $k$.
 
 **Lemma:**
