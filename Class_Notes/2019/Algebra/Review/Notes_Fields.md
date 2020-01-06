@@ -3,11 +3,8 @@
 **Definition:**
 A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
 
-Lemma:
-$R$ a finite integral domain $\implies R$ is a field.
 
 Lemma:
-$R$ is a field $\iff R$ is a commutative simple ring.
 
 Lemmas:
 
@@ -15,10 +12,13 @@ Lemmas:
 - $R/I$ is a field $\iff I$ is maximal.
 - For $R$ a PID, $I$ is prime $\iff I$ is maximal
 
-**Lemma:** 
+**Lemma (Characterizations of Rings):** 
 
+- $R$ a finite integral domain $\implies R$ is a field.
 - $\FF$ a field $\implies \FF[x]$ is a Euclidean domain.
 - $R[x]$ a PID $\implies R$ is a field.
+- $R$ is a field $\iff R$ is a commutative simple ring.
+- $R$ is a UFD $\iff R[x]$ is a UFD.
 
 **Lemma:**
 Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
@@ -29,7 +29,7 @@ Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Int
   - Proof: complicated.
 - A UFD that is not a PID: $\FF[x, y]$
   - Proof: $\generators{x, y}$ is not principal
--  
+-  An integral domain that is not a UFD: $\ZZ[\sqrt{-5}]$
 
 
 ## Finite Fields
