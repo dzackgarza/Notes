@@ -42,10 +42,10 @@ The prime subfield of any field is isomorphic to either $\QQ$ or $\FF_p$ for som
 **Lemma:**
 If $\ch k = p$ then $(a+b)^p = a^p + b^p$ and $(ab)^p = a^p b^p$.
 
-**Theorem:**
+**Theorem (Construction of Finite Fields):**
 $\GF(p^n)\cong \displaystyle\frac{\FF_p}{(f)}$ where $f \in \FF_p[x]$ is any irreducible of degree $n$, and $\GF(p^n) \cong \FF[\alpha] \cong \spanof_\FF\theset{1, \alpha, \cdots, \alpha^{n-1}}$ for any root $\alpha$ of $f$.
 
-**Lemma:**
+**Lemma (Prime Subfields of Finite Fields):**
 Every finite field $F$ is isomorphic to a unique field of the form $\GF(p^n)$ and if $\ch F = p$, it has prime subfield $\FF_p$.
 
 **Lemma (Containment of Finite Fields):**
