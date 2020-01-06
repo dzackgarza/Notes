@@ -359,6 +359,7 @@ G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 
 *Example:*
 
+
 *Going from elementary divisors to invariant factors:*
 
 - Bin up by primes occurring (keeping exponents)
