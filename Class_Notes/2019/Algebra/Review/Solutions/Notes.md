@@ -81,7 +81,7 @@ $$
 ### Examples of Orbit-Stabilizer
 
  
-1. Let $G$ act on its subgroups by conjugation
+1. Let $G$ act on itself by conjugation
 
 - $G \cdot x$ is the **conjugacy class** of $x$
 
@@ -96,8 +96,10 @@ $$
 
 
 2. Let $G$ act on its subgroups by left-multiplication
+  
+- $G\cdot H$ is the set of conjugate subgroups of $H$
 
-1. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
+3. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
 
 
 
