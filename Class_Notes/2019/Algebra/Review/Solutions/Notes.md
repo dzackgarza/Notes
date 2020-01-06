@@ -1,5 +1,15 @@
 # Group Theory
 
+Definition **(Centralizer)**:
+$$
+C_G(H) = \theset{g\in G \suchthat ghg\inv = h ~\forall h\in H}
+$$
+
+Definition **(Normalizer)**:
+$$
+N_G(H) = \theset{g\in G \suchthat gHg\inv = H}
+$$
+
 ## The Symmetric Group
 
 **Definitions:**
@@ -80,7 +90,6 @@ $$
 
 ### Examples of Orbit-Stabilizer
 
- 
 1. Let $G$ act on itself by conjugation
 
 - $G \cdot x$ is the **conjugacy class** of $x$
