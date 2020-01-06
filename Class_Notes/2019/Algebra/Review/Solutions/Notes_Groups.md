@@ -407,29 +407,27 @@ A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper cen
 
 > Moral: the adjoint map is nilpotent.
 
-**Properties:**
-
-- $G$ nilpotent $\implies G$ solvable
-- Nilpotent groups satisfy the 2 out of 3 property.
-- $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$
-- $G$ nilpotent $\implies Z(G) \neq 0$
-
 **Lemma:**
-TFAE
+For $G$ a finite group, TFAE:
 
 - $G$ is nilpotent
 - Normalizers grow (i.e.$H < N_G(H)$ whenever $H$ is proper)
 - Every Sylow-p subgroup is normal
 - $G$ is the direct product of its Sylow p-subgroups
+- Every maximal subgroup is normal
 - $G$ has a terminating *Lower* Central Series
 - $G$ has a terminating *Upper* Central Series
 
-**Lemmas**:
+**Lemmas:**
 
-- Finite abelian groups are nilpotent
-- Finite p-groups are nilpotent
-- A finite group is nilpotent iff maximals are normal
+- $G$ nilpotent $\implies G$ solvable
 - Nilpotent groups satisfy the 2 out of 3 property.
+- $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$
+- $G$ nilpotent $\implies Z(G) \neq 0$
+- Abelian $\implies$ nilpotent
+- p-groups $\implies$ nilpotent
+
+
 
 ## Series of Groups
 
