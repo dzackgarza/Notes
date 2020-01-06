@@ -382,11 +382,22 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 - p-groups are *nilpotent*
 
 **Definition:**
+A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
+
+> If $G$ is not simple, then for any $N\normal G$, $G \cong E$, an extension of the form $N\to E\to G/N$.
+
+**Definition:**
+A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. $G \to G^1 \to \cdots \to \theset{e}$ with $G^{i}/G^{i+1}$ abelian for all $i$.
+
+> **Lemma:**
+> $G$ is solvable iff $G$ has a terminating *derived series*.
+
+**Definition:**
 A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper central series, or lower central series.
 
 > Moral: the adjoint map is nilpotent.
 
-**Lemmas:**
+**Properties:**
 
 - $G$ nilpotent $\implies G$ solvable
 - Nilpotent groups satisfy the 2 out of 3 property.
@@ -408,18 +419,6 @@ TFAE
 - Finite p-groups are nilpotent
 - A finite group is nilpotent iff maximals are normal
 - Nilpotent groups satisfy the 2 out of 3 property.
-
-
-**Definition:**
-A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
-
-> If $G$ is not simple, then for any $N\normal G$, $G \cong E$, an extension of the form $N\to E\to G/N$.
-
-**Definition:**
-A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. $G \to G^1 \to \cdots \to \theset{e}$ with $G^{i}/G^{i+1}$ abelian for all $i$.
-
-> **Lemma:**
-> $G$ is solvable iff $G$ has a terminating *derived series*.
 
 ## Series of Groups
 
