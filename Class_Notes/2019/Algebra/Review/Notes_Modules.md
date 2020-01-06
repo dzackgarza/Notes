@@ -55,7 +55,18 @@ $$
 > *Useful lemma:*
 > If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
 
+**Lemma:**
+Writing
+\begin{align*}
+\min_A(x) = \prod (x- \lambda_i)^{a_i} \\
+\chi_A(x) = \prod (x- \lambda_i)^{b_i}
+\end{align*}
 
+- $a_i \leq b_i$
+- The roots both polynomials are precisely the eigenvalues of $A$.
+
+**Corollary (Cayley-Hamilton):**
+The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
 
 **Definition:**
 Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same Jordan Canonical Form (JCF).
@@ -89,19 +100,6 @@ C_p \definedas
 0 & 0 & \dots & 1 & -a_{n-1} 
 \end{bmatrix}
 .\end{align*}
-
-**Lemma:**
-Writing
-\begin{align*}
-\min_A(x) = \prod (x- \lambda_i)^{a_i} \\
-\chi_A(x) = \prod (x- \lambda_i)^{b_i}
-\end{align*}
-
-- $a_i \leq b_i$
-- The roots both polynomials are precisely the eigenvalues of $A$.
-
-**Corollary (Cayley-Hamilton):**
-The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
 
 ## Canonical Forms
 
