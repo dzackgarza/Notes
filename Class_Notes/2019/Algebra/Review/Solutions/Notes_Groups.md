@@ -408,12 +408,13 @@ TFAE
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
 
-> If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
+> If $G$ is not simple, then for any $N\normal G$, $G \cong E$, an extension of the form $N\to E\to G/N$.
 
 **Definition:**
 A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. $G \to G^1 \to \cdots \to \theset{e}$ with $G^{i}/G^{i+1}$ abelian for all $i$.
 
-Equivalently, $G$ is solvable iff $G$ has a terminating *derived series*.
+> **Lemma:**
+> $G$ is solvable iff $G$ has a terminating *derived series*.
 
 ## Series of Groups
 
