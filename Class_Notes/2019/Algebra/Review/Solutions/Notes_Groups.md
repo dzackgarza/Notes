@@ -359,7 +359,7 @@ G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 
 *Example:*
 \begin{align*}
-\ZZ/(2) \oplus \ZZ/(2) \oplus \ZZ/(2^3
+\ZZ/(2) \oplus \ZZ/(2) \oplus \ZZ/(2^3\cdot 5^2\cdot 7)
 .\end{align*}
 
 
