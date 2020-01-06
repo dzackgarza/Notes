@@ -143,6 +143,9 @@ $$
 \chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
 .$$
 
+Lemma:
+If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
+
 **Lemma**:
 The minimal polynomial is the *invariant factor of highest degree*, i.e.
 $$
