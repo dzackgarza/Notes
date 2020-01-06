@@ -265,3 +265,78 @@ All sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
 \begin{align*}
 S_p^1, S_p^2 \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^1g\inv = S_p^2
 .\end{align*}
+
+**Corollary**:
+$n_p = 1 \iff S_p \normal G$
+
+### Sylow 3 (Numerical Constraints)
+
+ 1. $n_p \divides m~$ (in particular, $n_p \leq m$),
+
+ 2. $n_p \equiv 1 \mod p$,
+
+ 3. $n_p = [G : N_G(S_p)]$ where $N_G$ is the normalizer.
+
+**Corollary:**
+$p$ does not divide $n_p$.
+
+**Lemma:**
+Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
+
+> *Proof:*
+> Let $H \leq G$ be a $p\dash$subgroup.
+> If $H$ is not *properly* contained in any other $p\dash$subgroup, it is a Sylow $p\dash$subgroup by definition.
+>
+> Otherwise, it is contained in some $p\dash$subgroup $H^1$.
+> Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and by Zorn's lemma $H\definedas \union_i H^i$ is maximal and thus a Sylow $p\dash$subgroup.
+
+**Fratini's Argument**:
+If $H\normal G$ and $P \in \mathrm{Syl}_p(G)$, then $H N_G(P) = G$ and $[G: H]$ divides $\abs{N_G(P)}$.
+
+## Products
+
+**Characterizing direct products**:
+$G \cong H \times K$ when
+
+- $G = HK = \theset{hk \suchthat h\in H, k\in K}$
+
+- $H\intersect K = \theset{e} \subset G$
+
+- $H, K \normal G$
+
+> Can relax to only $H\normal G$ to get a semidirect product instead
+
+**Characterizing semidirect products**:
+$G = N \semidirect_\psi H$ when
+
+- $G =  NH$
+
+- $N \normal G$
+
+- $H \actson N$ by conjugation via a map
+\begin{align*}
+\psi: H \to \Aut(N) \\
+h \mapsto h(\wait)h^{-1}
+.\end{align*}
+
+
+> *Lemma:* If $\sigma \in \Aut(H)$, then $N \semidirect_\psi H \cong N \semidirect_{\psi \circ \sigma} H$.
+
+**Useful Facts**
+
+- $\Aut(\prod_{k=1}^n \ZZ/(p)) = \GL(n, \ZZ/(p))$
+  - If this occurs in a semidirect product, it suffices to consider similarity classes of matrices (i.e. just use canonical forms)
+- $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
+
+
+## Isomorphism Theorems
+
+**Lemma:**
+If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a subgroup.
+
+**Diamond Theorem / 2nd Isomorphism Theorem**:
+
+If $S \leq G$ and $N \normal G$, then
+$$
+\frac{SN}{N} \cong \frac{S}{S\intersect N}
+$$
