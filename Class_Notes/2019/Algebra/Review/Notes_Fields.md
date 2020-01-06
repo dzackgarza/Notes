@@ -1,23 +1,5 @@
 # Fields
 
-**Lemma:**
-Let $\rho_n \definedas x^{p^n} - x$.
-Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
-
-(So $\rho_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.)
-
-> *Proof:*
->
-> $\impliedby$:
->
-> Suppose $f$ is irreducible of degree $d$.
-> Then $f \divides x^{p^d} - x$ (consider $F[x]/\generators{f}$) and $x^{p^d} - x \divides x^{p^n} - x \iff d\divides n$.
->
-> $\implies$:
->
-> - $\alpha \in \GF(p^n) \iff \alpha^{p^n} - \alpha = 0$, so every element is a root of $\phi_n$ and $\deg \min(\alpha, \FF_p) \divides n$ since $\FF_p(\alpha)$ is an intermediate extension.
-> - So if $f$ is an irreducible factor of $\phi_n$, $f$ is the minimal polynomial of some root $\alpha$ of $\phi_n$, so $\deg f \divides n$.
-> $\phi_n'(x) = p^nx^{p^{n-1}} \neq 0$, so $\phi_n$ has distinct roots and thus no repeated factors. So $\phi_n$ is the product of all such irreducible $f$.
 
 ## Cyclotomic Polynomials
 
@@ -75,6 +57,25 @@ If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ su
 - $p^2 \notdivides a_0$,
 
 then $f$ is irreducible.
+
+**Lemma:**
+Let $\rho_n \definedas x^{p^n} - x$.
+Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
+
+(So $\rho_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.)
+
+> *Proof:*
+>
+> $\impliedby$:
+>
+> Suppose $f$ is irreducible of degree $d$.
+> Then $f \divides x^{p^d} - x$ (consider $F[x]/\generators{f}$) and $x^{p^d} - x \divides x^{p^n} - x \iff d\divides n$.
+>
+> $\implies$:
+>
+> - $\alpha \in \GF(p^n) \iff \alpha^{p^n} - \alpha = 0$, so every element is a root of $\phi_n$ and $\deg \min(\alpha, \FF_p) \divides n$ since $\FF_p(\alpha)$ is an intermediate extension.
+> - So if $f$ is an irreducible factor of $\phi_n$, $f$ is the minimal polynomial of some root $\alpha$ of $\phi_n$, so $\deg f \divides n$.
+> $\phi_n'(x) = p^nx^{p^{n-1}} \neq 0$, so $\phi_n$ has distinct roots and thus no repeated factors. So $\phi_n$ is the product of all such irreducible $f$.
 
 ## Galois Theory
 
