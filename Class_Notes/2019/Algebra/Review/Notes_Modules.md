@@ -37,6 +37,25 @@ and similarly an elementary divisor decomposition.
 
 ## Minimal / Characteristic Polynomial
 
+Fix some notation:
+\begin{align*}
+\chi_T(x): \quad & \text{The characteristic polynomial of } A \\
+\min_T(x): \quad & \text{The minimal polynomial of } A
+.\end{align*}
+
+
+**Definition:**
+Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same JCF
+
+**Definition:**
+Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
+
+  - They have the same rank,
+
+  - They have the same invariant factors, *and*
+
+  - They have the same JCF
+
 **Finding the minimal polynomial:** 
 
 Let $m(x)$ denote the minimal polynomial $A$.
@@ -109,32 +128,6 @@ By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq 
 
 ## Canonical Forms
 
-Fix $T: V\to V$, and decompositions
-
-\begin{align*}
-V = \bigoplus_{j=1}^n \frac{k[x]}{(f_j)} &\quad \text{(invariant factors)}\\
-V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors)}
-.\end{align*}
-
-Fix some notation:
-\begin{align*}
-\chi_T(x): \quad & \text{The characteristic polynomial of } A \\
-\min_T(x): \quad & \text{The minimal polynomial of } A
-.\end{align*}
-
-
-**Definition:**
-Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same JCF
-
-**Definition:**
-Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
-
-  - They have the same rank,
-
-  - They have the same invariant factors, *and*
-
-  - They have the same JCF
-
 ## Polynomial Information
 
 - The following can be read directly off of the invariant factor decomposition:
@@ -164,7 +157,16 @@ then $a_i \leq b_i$, and
 
     - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
 
-## Rational Canonical Form
+## Canonical Forms
+
+Fix $T: V\to V$, and decompositions
+
+\begin{align*}
+V = \bigoplus_{j=1}^n \frac{k[x]}{(f_j)} &\quad \text{(invariant factors)}\\
+V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors)}
+.\end{align*}
+
+### Rational Canonical Form
 
 Corresponds to the **Invariant Factor Decomposition** of $T$
 
