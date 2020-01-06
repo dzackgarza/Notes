@@ -5,7 +5,8 @@
 **Definition**: 
 A module is **simple** iff it has no nontrivial proper submodules.
 
-
+Definition:
+A nonzero unital ring $R$ is **semisimple** iff $R \cong \bigoplis_{i=1}^n M_i$ with each $M_i$ a simple module.
 
 **Definition:**
 A **free** module is a module with a basis (i.e. a spanning, linearly independent set).
