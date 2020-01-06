@@ -13,6 +13,9 @@ $$
 **Lemma:**
 $C_G(H) \leq N_G(H)$
 
+**Lemma:**
+The size of the conjugacy class of $H$ is the index of the centralizer, $[G: C_G(H)]$.
+
 ## The Symmetric Group
 
 **Definitions:**
