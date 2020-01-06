@@ -74,7 +74,7 @@ For $R$ a UFD, a polynomial $p\in R[x]$ is **primitive** iff the greatest common
 Let $R$ be a UFD and $F$ its field of fractions.
 Then a primitive $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $F[x]$.
 
-> Corollary:
+> *Corollary:*
 > A primitive polynomial $p\in \QQ[x]$ is irreducible iff $p$ is irreducible in $\ZZ[x]$.
 
 **Lemma:**
