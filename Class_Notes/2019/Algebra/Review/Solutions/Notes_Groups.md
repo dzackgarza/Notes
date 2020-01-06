@@ -386,7 +386,12 @@ A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper cen
 
 > Moral: the adjoint map is nilpotent.
 
-> Nilpotent $\implies$ nontrivial center, solvable, normalizers grow, equal to direct product of Sylows, normal subgroups of $d$ for every divisor $d$ of $\abs G$.
+**Lemmas:**
+
+- $G$ nilpotent $\implies G$ solvable
+- Nilpotent groups satisfy the 2 out of 3 property.
+- $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$
+- $G$ nilpotent $\implies Z(G) \neq 0$
 
 **Lemma:**
 TFAE
