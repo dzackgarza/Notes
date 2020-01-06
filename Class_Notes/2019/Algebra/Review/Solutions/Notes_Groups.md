@@ -277,6 +277,8 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 > Otherwise, it is contained in some $p\dash$subgroup $H^1$.
 > Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and by Zorn's lemma $H\definedas \union_i H^i$ is maximal and thus a Sylow $p\dash$subgroup.
 
+**Fratini's Argument**:
+
 ## Products
 
 **Characterizing direct products**:
