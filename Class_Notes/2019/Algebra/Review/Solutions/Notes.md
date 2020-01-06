@@ -14,10 +14,14 @@
 The **alternating group** is the subgroup of **even** permutations, i.e.
 $A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sign(\sigma) = (-1)^{m}$ where $m$ is the number of cycles of even length.
 
-> Example:
+>  *Corollary:*
+Every $\sigma \in A_n$ has an even number of *odd* cycles (i.e. an even number of *even-length* cycles).
+
+> *Example:*
 \begin{align*}
-A_4 &= \id, \\
-(1,3)(2,4),
+A_4 = 
+&\{\id, \\
+&(1,3)(2,4),
 (1,2)(3,4),
 (1,4)(2,3), \\
 & (1,2,3),
@@ -27,42 +31,27 @@ A_4 &= \id, \\
 & (1,3,4),
 (1,4,3), \\
 & (2,3,4),
-(2,4,3),
+(2,4,3)\}
 .\end{align*}
-
-
->  **Corollary:**
-Every $\sigma \in A_n$ has an even number of *odd* cycles (i.e. an even number of *even-length* cycles).
-
-## Group Actions
-
-**Notation:**
-For a group $G$ acting on a set $X$,
-
-- $G\cdot x = \theset{g\actson x \suchthat g\in G} \subseteq X$ is the orbit
-
-- $G_x = \theset{g\in G \suchthat g\actson x = x} \subseteq G$ is the stabilizer
-
-- $X/G \subset \mathcal P(X)$ is the set of orbits
-
-- $X^g = \theset{x\in X \suchthat g\actson x = x} \subseteq X$ are the fixed points
 
 ## Counting Theorems
 
 **Lagrange's Theorem**:
 
-$H \leq G \implies \abs H \divides \abs G$.
+$$
+H \leq G \implies \abs H \divides \abs G
+.$$
 
 
-**Corollary**:
+***Corollary**:*
 The order of every element divides the size of $G$, i.e.
 $$
 g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 .$$
 
-**Warning:**
+> **Warning:**
 If $n \divides \abs G$, then there does **not** necessarily exist $H \leq G$ with $\abs H = n$.
-
+> 
 > Key example:
 > $G = A_4$ is size 12 but there is no subgroup of order 6.
 
@@ -74,6 +63,17 @@ For $p$ a prime,
 $$
 p \divides \abs{G} \implies \exists g\in G \text{ such that } o(g) = p \text{ and } \exists H \definedas \generators{g} \leq G \text{ with } \abs{H} = p
 .$$
+
+**Notation:**
+For a group $G$ acting on a set $X$,
+
+- $G\cdot x = \theset{g\actson x \suchthat g\in G} \subseteq X$ is the orbit
+
+- $G_x = \theset{g\in G \suchthat g\actson x = x} \subseteq G$ is the stabilizer
+
+- $X/G \subset \mathcal P(X)$ is the set of orbits
+
+- $X^g = \theset{x\in X \suchthat g\actson x = x} \subseteq X$ are the fixed points
 
 **Class Equation**:
 $$
