@@ -42,7 +42,7 @@ In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
 > 
 > Example of a prime that is not irreducible: $x^2 \mod (x^2 + x) \in \QQ[x]/(x^2 + x)$
 > a
-> Example of an irreducible that is not prime: $3\in \ZZ
+> Example of an irreducible that is not prime: $3\in \ZZ[\sqrt{-5}]$
 
 
 ## Finite Fields
