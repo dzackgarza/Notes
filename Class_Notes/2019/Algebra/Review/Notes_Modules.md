@@ -11,6 +11,8 @@ A nonzero unital ring $R$ is **semisimple** iff $R \cong \bigoplus_{i=1}^n M_i$ 
 **Theorem (Artin-Wedderubrn)**:
 If $R$ is a nonzero, unital, *semisimple* ring then $R \cong \bigoplus_{i=1}^m \mathrm{Mat}(n_i, D_i)$, a finite sum of matrix rings over division rings.
 
+> Corollary: If $M$ is simple
+
 **Definition:**
 A **free** module is a module with a basis (i.e. a spanning, linearly independent set).
 
