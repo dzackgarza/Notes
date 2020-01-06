@@ -128,8 +128,15 @@ By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq 
 
 ## Canonical Forms
 
-## Polynomial Information
 
+Fix $T: V\to V$, and decompositions
+
+\begin{align*}
+V = \bigoplus_{j=1}^n \frac{k[x]}{(f_j)} &\quad \text{(invariant factors)}\\
+V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors)}
+.\end{align*}
+
+### Polynomial Information
 
 **Lemma**:
 The minimal polynomial is the *invariant factor of highest degree*, i.e.
@@ -159,15 +166,6 @@ Writing
   - $b_i$ is the **sum of sizes** of all Jordan blocks associated to $\lambda_i$
 
   - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
-
-## Canonical Forms
-
-Fix $T: V\to V$, and decompositions
-
-\begin{align*}
-V = \bigoplus_{j=1}^n \frac{k[x]}{(f_j)} &\quad \text{(invariant factors)}\\
-V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors)}
-.\end{align*}
 
 ### Rational Canonical Form
 
