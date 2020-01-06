@@ -169,7 +169,7 @@ Let $L/k$ be a Galois extension, then there is a correspondence:
 &\iff
 \correspond{\text{Fields }  F \text{ such}\\ \text{that } L/F/k} \\
 H &\rightarrow \correspond{E^H \definedas ~\text{The fixed field of $H$}} \\
-\correspond{\sigma \in \Gal(L/k) \suchthat \sigma(F) = F} &\leftarrow F
+\correspond{\Gal(L/F) \definedas \theset{ \sigma \in \Gal(L/k) \suchthat \sigma(F) = F}} &\leftarrow F
 .\end{align*}
 
 - This is contravariant wrt subgroups/subfields.
