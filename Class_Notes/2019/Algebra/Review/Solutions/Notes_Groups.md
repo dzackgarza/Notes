@@ -359,3 +359,7 @@ Going from elementary divisors to invariant factors:
 - Take highest power from all remaining primes as next, etc
 
 Example
+\begin{align*}
+G = {\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{3}\times\mathbb{Z}_{3}\times\mathbb{Z}_{25}},
+.\end{align*}
+
