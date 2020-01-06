@@ -35,7 +35,7 @@ M \cong F \bigoplus R/(r_i) \quad\text{where } r_1 \divides r_2 \divides \cdots
 
 and similarly an elementary divisor decomposition.
 
-## Minimal / Characteristic Polynomial
+## Minimal / Characteristic Polynomials
 
 Fix some notation:
 \begin{align*}
@@ -54,7 +54,7 @@ Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
 
   - They have the same invariant factors, *and*
 
-  - They have the same JCF
+  - They have the same Jordan Canonical Form (JCF)
 
 **Finding the minimal polynomial:**
 
