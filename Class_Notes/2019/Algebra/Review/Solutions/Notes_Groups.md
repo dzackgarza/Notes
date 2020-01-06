@@ -370,7 +370,7 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 ## Special Classes of Groups
 
 **Definition:**
-The "2 out of 3 property" is satisfied by a class of groups $\mathcal G$ iff whenever $G \in \mathcal G$, then $N, G/N \in \mathcal{G}$ for any $N \normal G$.
+The **"2 out of 3 property"** is satisfied by a class of groups $\mathcal G$ iff whenever $G \in \mathcal G$, then $N, G/N \in \mathcal{G}$ for any $N \normal G$.
 
 **Definition:**
 If $\abs{G} = p^k$, then $G$ is a **p-group.**
