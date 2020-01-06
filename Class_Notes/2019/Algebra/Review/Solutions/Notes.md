@@ -7,7 +7,7 @@
 - A cycle is **even** $\iff$ product of an *even* number of transpositions.
 
   - A cycle of even *length* is **odd**
-  
+
   - A cycle of odd *length* is **even**
 
 **Definition**
@@ -19,7 +19,7 @@ Every $\sigma \in A_n$ has an even number of *odd* cycles (i.e. an even number o
 
 > *Example:*
 \begin{align*}
-A_4 = 
+A_4 =
 &\{\id, \\
 &(1,3)(2,4),
 (1,2)(3,4),
@@ -50,7 +50,7 @@ g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 
 > **Warning:**
 Rhere does **not** necessarily exist $H \leq G$ with $\abs H = n$ for every $n \divides \abs{G}$.
-> 
+>
 > Counterexample:
 > $\abs{A_4} = 12$ but has no subgroup of order 6.
 
@@ -99,7 +99,7 @@ Write
 - $n_p$ the number of Sylow$\dash p$ subgroups.
 
 **Definition**:
-A $p\dash$group is a group $G$ such that every element is order $p^k$ for some $k$. 
+A $p\dash$group is a group $G$ such that every element is order $p^k$ for some $k$.
 If $G$ is a finite $p\dash$group, then $\abs G = p^j$ for some $j$.
 
 > **Lemma:**
@@ -116,7 +116,7 @@ Some useful facts:
 
 $\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
 
-**Corollary (Partial Converse to Lagrange)**: 
+**Corollary (Partial Converse to Lagrange)**:
 $\forall p \divides \abs{G}$, there exists an element of order $p$.
 
 > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
@@ -128,7 +128,7 @@ All sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
 S_p^1, S_p^2 \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^1g\inv = S_p^2
 .\end{align*}
 
-**Corollary**: 
+**Corollary**:
 $n_p = 1 \iff P \normal G$
 
 ### Sylow 3 (Numerical Constraints)
@@ -146,7 +146,7 @@ $p$ does not divide $n_p$.
 Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 
 > *Proof:*
-> Let $H \leq G$ be a $p\dash$subgroup. 
+> Let $H \leq G$ be a $p\dash$subgroup.
 > If $H$ is not *properly* contained in any other $p\dash$subgroup, it is a Sylow $p\dash$subgroup by definition.
 > Otherwise, it is contained in some $p\dash$subgroup $H^1$.
 > Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and (by Zorn's lemma?) $\union_i H^i$ is maximal and thus by definition a Sylow $p\dash$subgroup.
@@ -187,6 +187,9 @@ Modifying the codomain:
 **TODO**
 
 ## Isomorphism Theorems
+
+**Lemma:**
+If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a subgroup.
 
 **Diamond Theorem / 2nd Isomorphism Theorem**:
 
@@ -343,7 +346,7 @@ $$
 $$
 
 > *Proof:*
-> 
+>
 > $\mathfrak{N} \subseteq \intersect \mathfrak{p}$:
 > $x \in \mathfrak{N} \implies x^n = 0 \in \mathfrak p \implies x\in \mathfrak{p} \text{ or } x^{n-1}\in\mathfrak p$.
 >
@@ -404,7 +407,7 @@ S = \theset{J \suchthat I   \subseteq J < R}
 > $S$ is a poset, ordered by set inclusion, so if we can show that every chain has an upper bound, we can apply Zorn's lemma to produce $M$.
 >
 > Let $C \subseteq S$ be a chain in $S$, so $C = \theset{C_1 \subseteq C_2 \subseteq \cdots}$ and define $\hat C = \union_i C_i$.
-> 
+>
 > **$\hat C$ is an upper bound for $C$:**
 >
 > This follows because every $C_i \subseteq \hat C$.
@@ -412,7 +415,7 @@ S = \theset{J \suchthat I   \subseteq J < R}
 > **$\hat C$ is in $S$:**
 >
 > Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ contains a unit, $\hat C$ doesn't contain a unit, and is thus proper.
-> 
+>
 > $\qed$
 
 ## Unsorted
@@ -583,7 +586,7 @@ For a linear operator on a vector space of nonzero finite dimension, TFAE:
   - The operator has a matrix similar to a companion matrix.
 
   - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
-  
+
   - $T$ has $\dim V$ distinct eigenvalues
 
 ### Jordan Canonical Form
@@ -629,7 +632,7 @@ $$
 p(x) = \det(A - x1))= \det(SNF(A - x1))
 .$$
 
-- ? Invariant factors of $A$ are the invariant factors of $xI 
+- ? Invariant factors of $A$ are the invariant factors of $xI
 
 - A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
 
@@ -701,14 +704,14 @@ $$
 .\end{align*}
 
 1. Matrix roots of unity:
-\begin{align*} \sqrt{I_2} = 
+\begin{align*} \sqrt{I_2} =
 \left[\begin{array}{ccc}
 0 & 1\\
 1 & 0
 \end{array}\right]
 .\end{align*}
 
-\begin{align*} \sqrt{-I_2} = 
+\begin{align*} \sqrt{-I_2} =
 \left[\begin{array}{ccc}
 0 & -1\\
 1 & 0
@@ -811,7 +814,7 @@ A field extension $L/k$ is **normal** iff
 **Definition:**
 A field extension $L/k$ is **separable** iff
 
-- For every $\alpha \in L, f(x) \definedas\min(\alpha, k)$ equivalently has 
+- For every $\alpha \in L, f(x) \definedas\min(\alpha, k)$ equivalently has
   - No repeated factors/roots
   - $f' \not\equiv 0$, or
   - $\gcd(f, f') = 1$.
