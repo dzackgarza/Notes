@@ -34,8 +34,8 @@ Then a primitive $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $
 **Theorem:**
 $\GF(p^n)\cong \displaystyle\frac{\FF_p}{(f)}$ where $f \in \FF_p[x]$ is any irreducible of degree $n$, and $\GF(p^n) \cong \FF[\alpha] \cong \spanof_\FF\theset{1, \alpha, \cdots, \alpha^{n-1}}$ for any root $\alpha$ of $f$.
 
-Lemma:
-$GF(p^n)$ is the splitting field of $x^{p^n} - x$ 
+**Lemma:**
+$GF(p^n)$ is the splitting field of $x^{p^n} - x$ .
 
 **Lemma:**
 Let $\rho_n \definedas x^{p^n} - x$.
