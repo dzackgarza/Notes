@@ -1,10 +1,13 @@
 # Fields
 
+**Definition:**
+A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
+
 Lemma:
 $R$ a finite integral domain $\implies R$ is a field.
 
 Lemma:
-$R$ is a field $\iff$ 
+$R$ is a field $\iff R$ is a commutative simple ring.
 
 ## Finite Fields
 
