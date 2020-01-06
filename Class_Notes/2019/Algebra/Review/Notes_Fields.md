@@ -46,9 +46,11 @@ In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
 
 > Note: For $R$ an integral domain, prime $\implies$ irreducible, but generally not the converse.
 >
-> Example of a prime that is not irreducible: $x^2 \mod (x^2 + x) \in \QQ[x]/(x^2 + x)$. Check that $x$ is prime directly, but $x=x\cdot x$ and $x$ is not a unit.
+> *Example of a prime that is not irreducible:* 
+> $x^2 \mod (x^2 + x) \in \QQ[x]/(x^2 + x)$. Check that $x$ is prime directly, but $x=x\cdot x$ and $x$ is not a unit.
 > 
-> Example of an irreducible that is not prime: $3\in \ZZ[\sqrt{-5}]$. Check norm to see irreducibility, but $3 \divides 9 = (2+\sqrt{-5})(2-\sqrt{-5})$ and doesn't divide either factor.
+> *Example of an irreducible that is not prime:* 
+> $3\in \ZZ[\sqrt{-5}]$. Check norm to see irreducibility, but $3 \divides 9 = (2+\sqrt{-5})(2-\sqrt{-5})$ and doesn't divide either factor.
 
 
 ## Finite Fields
