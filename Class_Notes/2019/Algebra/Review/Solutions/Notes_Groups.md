@@ -370,6 +370,18 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 ## Series of Groups
 
 **Definition:**
+If $\abs{G} = p^k$, then $G$ is a **p-group.**
+
+**Properties:**
+
+- p-groups have nontrivial centers
+- Every normal subgroup is contained in the center
+- Normalizers grow
+- Every maximal is normal
+- Every maximal has index $p$
+- p-groups are *nilpotent*
+
+**Definition:**
 A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper central series, or lower central series.
 
 > Moral: the adjoint map is nilpotent.
@@ -390,21 +402,6 @@ TFAE
 - Finite p-groups are nilpotent
 - A finite group is nilpotent iff maximals are normal
 - Nilpotent groups satisfy the 2 out of 3 propert.
-
-
-## p-Groups
-
-**Definition:**
-If $\abs{G} = p^k$, then $G$ is a **p-group.**
-
-**Properties:**
-
-- p-groups have nontrivial centers
-- Every normal subgroup is contained in the center
-- Normalizers grow
-- Every maximal is normal
-- Every maximal has index $p$
-- p-groups are *nilpotent*
 
 **Definition**:
 A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
