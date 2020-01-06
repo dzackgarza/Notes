@@ -168,7 +168,7 @@ Let $L/k$ be a Galois extension, then there is a correspondence:
 \correspond{\text{Subgroups } H \leq \Gal(L/k)}
 &\iff
 \correspond{\text{Fields }  F \text{ such}\\ \text{that } L/F/k} \\
-H &\rightarrow \correspond{E^H \definedas ~\text{The subfield fixed by $H$}} \\
+H &\rightarrow \correspond{E^H \definedas ~\text{The fixed field of $H$}} \\
 \correspond{\sigma \in \Gal(L/k) \suchthat \sigma(F) = F} &\leftarrow F
 .\end{align*}
 
