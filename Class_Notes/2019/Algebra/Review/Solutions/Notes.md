@@ -95,13 +95,13 @@ $$
 $$
 
 
-2. Let $G$ act on its set of *subgroups* by conjugation
+2. Let $G$ act on $S$, its set of *subgroups*, by conjugation
   
 - $G\cdot H$ is the **set of conjugate subgroups** of $H$
 
 - $G_H = N_G(H)$ is the **normalizer** of in $G$ of $H$
 
-- 
+- $S^G
 
 1. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
 
