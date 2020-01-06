@@ -89,7 +89,7 @@ $$
 
 - $G^g$ (the fixed points) is the center $Z(G)$.
 
-This yields the **Class Equation**:
+> This yields the **Class Equation**:
 $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
 $$
