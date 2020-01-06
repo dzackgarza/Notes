@@ -56,10 +56,7 @@ Rhere does **not** necessarily exist $H \leq G$ with $\abs H = n$ for every $n \
 
 **Cauchy's Theorem**:
 
-For $p$ a prime,
-$$
-p \divides \abs{G} \implies \exists g\in G \text{ such that } o(g) = p \text{ and } \exists H \definedas \generators{g} \leq G \text{ with } \abs{H} = p
-.$$
+For every prime $p$ dividing $\abs{G}$. there is an element (and thus a subgroup) of order $p$.
 
 > This is a partial converse to Lagrange's theorem.
 
