@@ -14,6 +14,13 @@ Lemmas:
 - $R/I$ is a domain $\iff I$ is prime
 - $R/I$ is a field $\iff I$ is maximal.
 
+**Lemma:**
+Fields $\subset$ Euclidean domains  $\subset$  PIDs  $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
+
+- A Euclidean Domain that is not a field: $\FF[x]$
+- A 
+
+
 ## Finite Fields
 
 **Theorem:**
