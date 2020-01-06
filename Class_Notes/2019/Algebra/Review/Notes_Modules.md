@@ -149,13 +149,13 @@ $$
 **Lemma:**
 The characteristic polynomial is the *product of the invariant factors*, i.e.
 $$
-\chi_T(x) = \prod_{j=1}^n f_j(x)
+\chi_A(x) = \prod_{j=1}^n f_j(x)
 .$$
 
 **Lemma**:
-The minimal polynomial is the *invariant factor of highest degree*, i.e.
+The minimal polynomial of $A$ is the *invariant factor of highest degree*, i.e.
 $$
-\min_T(x) = f_n(x)
+\min_A(x) = f_n(x)
 .$$
 
 **Lemma:**
@@ -167,6 +167,9 @@ Writing
 
 - $a_i \leq b_i$
 - The roots both polynomials are precisely the eigenvalues of $A$.
+
+> Corollary (Cayley-Hamilton):
+> The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
 
 ### Rational Canonical Form
 
