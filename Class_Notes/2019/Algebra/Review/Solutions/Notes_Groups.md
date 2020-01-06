@@ -237,12 +237,12 @@ h \mapsto h(\wait)h^{-1}
 .\end{align*}
 
 
-> Note: $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
+> *Lemma:* If $\sigma \in \Aut(H)$, then $N \semidirect_\psi H \cong N \semidirect_{\psi \circ \sigma} H$
 
 **Useful Facts**
 
 - $\Aut(\prod_{k=1}^n \ZZ/(p)) = \GL(n, \ZZ/(p))$
-- If $\sigma \in 
+- $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
 
 ## Isomorphism Theorems
