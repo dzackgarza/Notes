@@ -15,7 +15,9 @@ Lemmas:
 - $R/I$ is a field $\iff I$ is maximal.
 
 **Lemma:** 
-$\FF$ a field $\implies \FF[x]$ a Euclidean domain.
+
+- $\FF$ a field $\implies \FF[x]$ is a Euclidean domain.
+- $R[x]$ a PID $\implies R$ is a field.
 
 **Lemma:**
 Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
