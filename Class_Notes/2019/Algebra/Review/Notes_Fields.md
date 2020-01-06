@@ -105,9 +105,9 @@ Let $L/F/k$ be a finite tower of field extensions
 - Multiplicativity: $[L : k] = [L: F][F: k]$
 - $L/k$ normal $\implies L/F$ normal.
   - Proof: $\min(\alpha, F) \divides \min(\alpha, k)$, so if the latter splits in $L$ then so does the former.
-- $L/k$ Galois $\implies L/F$ Galois.
 - $L/k$ algebraic $\implies L/F$ algebraic
 - $F/k$ algebraic and $L/F$ algebraic $\implies L/k$ algebraic.
+- $L/k$ Galois $\implies L/F$ Galois.
 - $F/k$ Galois and $L/K$ Galois $\implies F/k$  Galois **only if** $\Gal(L/F) \normal \Gal(L/k)$
   - $\implies \Gal(F/k) \cong \frac{\Gal(L/k)}{\Gal(L/F)}$
 - $\alpha \in L$ algebraic over $k \implies \alpha$ algebraic over $F$.
