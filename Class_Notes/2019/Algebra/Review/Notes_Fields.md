@@ -250,8 +250,8 @@ TFAE
 Lemma (Composite extensions):
 If $K/F$ is finite and Galois and $L/F$ is arbitrary, then $KL/L$ is Galois and
 $$
-\Gal(KL/L) = \Gal(K / K\intersect L)
-$$
+\Gal(KL/L) = \Gal(K / K\intersect L) \subset \Gal(K/F)
+.$$
 
 ## Cyclotomic Polynomials
 
