@@ -94,6 +94,9 @@ $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
 $$
 
+
+2. Let $G$ act on its subgroups by left-multiplication
+
 1. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
 
 
