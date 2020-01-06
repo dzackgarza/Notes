@@ -114,7 +114,7 @@ Let $L/F/k$ be a finite tower of field extensions
 
 **Common Counterexamples**:
 
-- $\QQ(\zeta_3, 2^{1/3})$ is normal but $\QQ(2^{1/3})$ is not.
+- $\QQ(\zeta_3, 2^{1/3})$ is normal but $\QQ(2^{1/3})$ is not since the irreducible polynomial $x^3 - 2$ has only one root in it.
 
 **Lemma:**
 **Every** quadratic extension is Galois.
