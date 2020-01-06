@@ -1,5 +1,7 @@
 # Rings
 
+## Definitions
+
 **Definition:**
 A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
 
@@ -66,8 +68,19 @@ In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
 > *Example of an irreducible that is not prime:*
 > $3\in \ZZ[\sqrt{-5}]$. Check norm to see irreducibility, but $3 \divides 9 = (2+\sqrt{-5})(2-\sqrt{-5})$ and doesn't divide either factor.
 
+## Nontrivial Properties
 
-## Maximal and Prime Ideals
+**Lemma:**
+Every $a\in R$ for a finite ring is either a unit or a zero divisor.
+
+> *Proof:*
+> Let $a\in R$ and define $\phi(x) = ax$.
+> If $\phi$ is injective, then it is surjective, so $1 = ax$ for some $x \implies x\inv = a$.
+> Otherwise, $ax_1 = ax_2$ with $x_1 \neq x_2 \implies a(x_1 - x_2) = 0$ and $x_1 - x_2 \neq 0$, so $a$ is a zero divisor.
+
+## Ideals
+
+### Maximal and Prime Ideals
 
 **Lemma:**
 Maximal $\implies$ prime, but generally not the converse.
@@ -98,7 +111,7 @@ $R/\mm$ is a field $\iff \mm$ is maximal.
 **Lemma:**
 $R/\pr$ is an integral domain $\iff \pr$ is prime.
 
-## Nilradical and Jacobson Radical
+### Nilradical and Jacobson Radical
 
 **Definition:**
 $\mathfrak{N} \definedas \theset{x\in R \suchthat x^n=0\text{ for some } n}$ is the **nilradical** of $R$.
@@ -141,7 +154,7 @@ $\mathfrak N(R) \subseteq J(R)$.
 > *Proof:*
 > Maximal $\implies$ prime, and so if $x$ is in every prime ideal, it is necessarily in every maximal ideal as well.
 
-## Zorn's Lemma
+### Zorn's Lemma
 
 **Lemma**:
 A field has no nontrivial proper ideals.
@@ -180,15 +193,3 @@ S = \theset{J \suchthat I   \subseteq J < R}
 > Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ contains a unit, $\hat C$ doesn't contain a unit, and is thus proper.
 >
 > $\qed$
-
-## Unsorted
-
-**Lemma:**
-Every $a\in R$ for a finite ring is either a unit or a zero divisor.
-
-> *Proof:*
-> Let $a\in R$ and define $\phi(x) = ax$.
-> If $\phi$ is injective, then it is surjective, so $1 = ax$ for some $x \implies x\inv = a$.
-> Otherwise, $ax_1 = ax_2$ with $x_1 \neq x_2 \implies a(x_1 - x_2) = 0$ and $x_1 - x_2 \neq 0$, so $a$ is a zero divisor.
-
-
