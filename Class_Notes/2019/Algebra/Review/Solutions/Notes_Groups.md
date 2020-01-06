@@ -355,11 +355,14 @@ G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 *Going from invariant divisors to elementary divisors:*
 
 - Take prime factorization of each factor
-- Decompose each factor into coprime pieces, then order
+- Split into coprime pieces
 
 *Example:*
 \begin{align*}
-\ZZ/(2) \oplus \ZZ/(2) \oplus \ZZ/(2^3\cdot 5^2\cdot 7)
+&\ZZ/(2) \oplus \ZZ/(2) \oplus \ZZ/(2^3\cdot 5^2\cdot 7) \\
+\cong 
+&\ZZ/(2) \oplus \ZZ/(2)\oplus
+\ZZ/(2^3) \oplus \ZZ/(5^2) \oplus \ZZ/(7) \\
 .\end{align*}
 
 
