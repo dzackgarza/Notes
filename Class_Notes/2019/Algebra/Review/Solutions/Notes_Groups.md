@@ -1,0 +1,336 @@
+# Group Theory
+
+**Definition (Centralizer)**:
+$$
+C_G(H) = \theset{g\in G \suchthat ghg\inv = h ~\forall h\in H}
+$$
+
+**Definition (Normalizer)**:
+$$
+N_G(H) = \theset{g\in G \suchthat gHg\inv = H}
+$$
+
+**Lemma:**
+$C_G(H) \leq N_G(H)$
+
+**Lemma:**
+The size of the conjugacy class of $H$ is the index of the centralizer, i.e. 
+$$
+\abs{\theset{gHg\inv \suchthat g\in G}} = [G: C_G(H)]
+.$$
+
+## The Symmetric Group
+
+**Definitions:**
+
+- A cycle is **even** $\iff$ product of an *even* number of transpositions.
+
+  - A cycle of even *length* is **odd**
+
+  - A cycle of odd *length* is **even**
+
+**Definition**
+The **alternating group** is the subgroup of **even** permutations, i.e.
+$A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sign(\sigma) = (-1)^{m}$ where $m$ is the number of cycles of even length.
+
+>  *Corollary:*
+Every $\sigma \in A_n$ has an even number of *odd* cycles (i.e. an even number of *even-length* cycles).
+
+> *Example:*
+\begin{align*}
+A_4 =
+&\{\id, \\
+&(1,3)(2,4),
+(1,2)(3,4),
+(1,4)(2,3), \\
+& (1,2,3),
+(1,3,2), \\
+& (1,2,4),
+(1,4,2), \\
+& (1,3,4),
+(1,4,3), \\
+& (2,3,4),
+(2,4,3)\}
+.\end{align*}
+
+## Counting Theorems
+
+**Lagrange's Theorem**:
+
+$$
+H \leq G \implies \abs H \divides \abs G
+.$$
+
+*Corollary*:
+The order of every element divides the size of $G$, i.e.
+$$
+g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
+.$$
+
+> **Warning:**
+Rhere does **not** necessarily exist $H \leq G$ with $\abs H = n$ for every $n \divides \abs{G}$.
+>
+> Counterexample:
+> $\abs{A_4} = 12$ but has no subgroup of order 6.
+
+**Cauchy's Theorem**:
+
+For every prime $p$ dividing $\abs{G}$. there is an element (and thus a subgroup) of order $p$.
+
+> This is a partial converse to Lagrange's theorem.
+
+**Notation:**
+For a group $G$ acting on a set $X$,
+
+- $G\cdot x = \theset{g\actson x \suchthat g\in G} \subseteq X$ is the orbit
+
+- $G_x = \theset{g\in G \suchthat g\actson x = x} \subseteq G$ is the stabilizer
+
+- $X/G \subset \mathcal P(X)$ is the set of orbits
+
+- $X^g = \theset{x\in X \suchthat g\actson x = x} \subseteq X$ are the fixed points
+
+**Orbit-Stabilizer**:
+$$
+\abs{G\cdot x} = [G: G_x] = \abs{G} / \abs{G_x}\quad \text{if $G$ is finite}
+$$
+
+> Mnemonic: $G/G_x \cong G\cdot x$.
+
+### Examples of Orbit-Stabilizer
+
+1. Let $G$ act on itself by conjugation.
+
+- $G \cdot x$ is the **conjugacy class** of $x$
+
+- $G_x = Z(x) \definedas C_G(x) = \theset{g \suchthat [g, x] = e}$, the **centralizer** of $x$.
+
+- $G^g$ (the fixed points) is the **center** $Z(G)$.
+
+> *Corollary:*
+> The size of a conjugacy class is the index of the centralizer.
+> 
+> *Corollary*: the **Class Equation**:
+$$
+\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
+$$
+
+1. Let $G$ act on $S$, its set of *subgroups*, by conjugation.
+  
+- $G\cdot H = \theset{gHg\inv}$ is the **set of conjugate subgroups** of $H$
+
+- $G_H = N_G(H)$ is the **normalizer** of in $G$ of $H$
+
+- $S^G$ is the set of **normal subgroups** of $G$
+
+3. For a fixed proper subgroup $H< G$, let $G$ act on its cosets $G/H = \theset{gH\suchthat g\in G}$ by left-multiplication.
+
+- $G\cdot gH = G/H$, i.e. this is a *transitive* action.
+
+- $G_{gH} = gHg\inv$ is a *conjugate subgroup* of $H$
+
+- $(G/H)^G = \emptyset$
+
+> *Application:* If $G$ is simple, $H < G$ proper, and $[G:H] = n$, then there exists an injective map $\phi: G \injects S_n$.
+> 
+> *Proof:* This action induces $\phi$; it is nontrivial since $gH = H$ for all $g$ implies $H = G$; $\ker \phi \normal G$ and $G$ simple implies $\ker \phi = 1$.
+
+**Burnside's Formula:**
+$$
+\abs{X/G} = \frac{1}{\abs G }\sum_{g\in G} \abs {X^g}
+.$$
+
+
+### Sylow Theorems
+
+**Notation**:
+For any $p$, let $\mathrm{Syl}_p(G)$ be the set of Sylow$\dash p$ subgroups of $G$.
+
+Write
+
+- $\abs{G} = p^n m$ where $(m, p) = 1$,
+- $S_p$ a Sylow$\dash p$ subgroup, and
+- $n_p$ the number of Sylow$\dash p$ subgroups.
+
+**Definition**:
+A $p\dash$group is a group $G$ such that every element is order $p^k$ for some $k$.
+If $G$ is a finite $p\dash$group, then $\abs G = p^j$ for some $j$.
+
+> **Lemma:**
+> $p\dash$groups have nontrivial centers.
+
+Some useful facts:
+
+- Coprime order subgroups are disjoint, or more generally $\ZZ_p, \ZZ_q \subset G \implies \ZZ_p \intersect \ZZ_q = \ZZ_{(p,q)}$.
+
+- The Chinese Remainder theorem: $(p, q) = 1 \implies \ZZ_p \times \ZZ_q \cong \ZZ_{pq}$
+
+
+### Sylow 1 (Converse Lagrange for Primes)
+
+$\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
+
+**Corollary (Partial Converse to Lagrange)**:
+$\forall p \divides \abs{G}$, there exists an element of order $p$.
+
+> If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
+
+### Sylow 2 (Conjugates)
+
+All sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
+\begin{align*}
+S_p^1, S_p^2 \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^1g\inv = S_p^2
+.\end{align*}
+
+**Corollary**:
+$n_p = 1 \iff P \normal G$
+
+### Sylow 3 (Numerical Constraints)
+
+ 1. $n_p \divides m~$ (in particular, $n_p \leq m$),
+
+ 2. $n_p \equiv 1 \mod p$,
+
+ 3. $n_p = [G : N_G(S_p)]$ where $N_G$ is the normalizer.
+
+**Corollary:**
+$p$ does not divide $n_p$.
+
+**Lemma:**
+Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
+
+> *Proof:*
+> Let $H \leq G$ be a $p\dash$subgroup.
+> If $H$ is not *properly* contained in any other $p\dash$subgroup, it is a Sylow $p\dash$subgroup by definition.
+> Otherwise, it is contained in some $p\dash$subgroup $H^1$.
+> Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and (by Zorn's lemma?) $\union_i H^i$ is maximal and thus by definition a Sylow $p\dash$subgroup.
+
+## Products
+
+**Characterizing direct products**:
+$G \cong H \times K$ when
+
+- $G = HK = \theset{hk \suchthat h\in H, k\in K}$
+
+- $H\intersect K = \theset{e} \subset G$
+
+- $H, K \normal G$
+
+> Can relax to only $H\normal G$ to get a semidirect product instead
+
+**Characterizing semidirect products**:
+$G = N \semidirect_\psi H$ when
+
+- $G =  NH$
+
+- $N \normal G$
+
+- $H \actson N$ by conjugation via a map
+\begin{align*}
+\psi: H \to \Aut(N) \\
+h \mapsto h(\wait)h^{-1}
+.\end{align*}
+
+
+> Note: $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
+
+Modifying the domain:
+**TODO**
+
+Modifying the codomain:
+**TODO**
+
+## Isomorphism Theorems
+
+**Lemma:**
+If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a subgroup.
+
+**Diamond Theorem / 2nd Isomorphism Theorem**:
+
+If $S \leq G$ and $N \normal G$, then
+
+- $SN \leq G$,
+- $S\intersect N \normal S$,
+- $SN/N \cong S/S\intersect N$
+
+![](2020-01-01-15-20-27.png)
+
+**The Correspondence Theorem / 4th Isomorphism Theorem:**
+Suppose $N \normal G$, then there exists a correspondence:
+$$
+\left\{
+H < G \suchthat N \subseteq H
+\right\}
+\iff
+\left\{ \begin{align*}
+H \suchthat H < \frac G N
+\end{align*}\right\}
+\\
+\correspond{
+  \text{Subgroups of $G$} \\
+  \text{containing $N$}
+} \iff
+\correspond{
+  \text{Subgroups of the } \\
+  \text{quotient $G/N$}
+}
+.$$
+
+In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotient group $G/N$. This is given by the map $H \mapsto H/N$.
+
+> Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
+
+
+## Series of Groups
+
+**Definition**:
+A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
+
+**Definition**
+A **composition series** of a group $G$ is a finite normal series such that $G^{i+1}$ is a *maximal proper* normal subgroup of $G^i$.
+
+**Theorem (Jordan-Holder)**:
+Any two composition series of a group have the same length and isomorphic factors (up to permutation).1
+
+**Definition**
+A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \cdots$ where $G^{i+1} = [G^i, G^i]$ is the commutator subgroup.
+
+> The derived series terminates iff $G$ is solvable.
+
+**Definition:**
+A **central series** for a group $G$ is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that each quotient is **central**, i.e. $[G, G^i] \leq G^{i-1}$ for all $i$.
+
+**Definition:**
+A **lower central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^{i+1} = [G^i, G]$
+
+> Moral: Iterate the adjoint map $[\wait, G]$.
+
+**Definition:**
+An **upper central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^1 = Z(G)$ and $G^{i+1}$ is defined such that $G^{i+1}/G^i = Z(G^i)$.
+
+> Moral: Iterate taking "higher centers".
+
+**Definition:**
+A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
+
+> If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
+
+**Definition:**
+A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. $G \to G^1 \to \cdots \to \theset{e}$ with $G^{i}/G^{i+1}$ abelian for all $i$.
+
+Equivalently, $G$ is solvable iff $G$ has a terminating *derived series*.
+
+**Definition:**
+A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper central series, or lower central series.
+
+> Moral: the adjoint map is nilpotent.
+
+> Nilpotent $\implies$ nontrivial center, solvable, normalizers grow, equal to direct product of Sylows, normal subgroups of $d$ for every divisor $d$ of $\abs G$.
+
+
+**Definition:**
+Irreducible
+
+
+Theorem:
+x series terminates iff $G$ is simple?
