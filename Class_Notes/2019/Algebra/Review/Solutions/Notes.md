@@ -103,11 +103,11 @@ $$
 
 - $S^G$ is the set of **normal subgroups** of $G$
 
-1. For a fixed $H\leq G$, let $G$ act on its cosets $G/H = \theset{gH}$ by left-multiplication.
+1. For a fixed $H\leq G$, let $G$ act on its cosets $G/H = \theset{gH\suchthat g\in G}$ by left-multiplication.
 
 - $G\cdot gH = G/H$, i.e. this is a *transitive* action.
 
-- $G_{gH} = gHg\inv$
+- $G_{gH} = gHg\inv$ is a *conjugate subgroup* of $H$
 
 **Burnside's Formula:**
 $$
