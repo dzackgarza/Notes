@@ -236,6 +236,7 @@ h \mapsto h(\wait)h^{-1}
 
 **Useful Facts**
 
+- $\Aut(\prod_{k=1}^n \ZZ/(p)) = \GL(n, \ZZ/(p))$
 
 Modifying the domain:
 **TODO**
