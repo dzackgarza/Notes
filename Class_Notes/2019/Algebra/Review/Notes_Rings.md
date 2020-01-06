@@ -33,12 +33,15 @@ $\spec_{\text{max}}(R) = \theset{\mm \normal R \suchthat \mm \text{ is maximal}}
 
 **Lemma (Characterizations of Rings):**
 
+- $R$ a commutative division ring $\implies R$ is a field
 - $R$ a finite integral domain $\implies R$ is a field.
 - $\FF$ a field $\implies \FF[x]$ is a Euclidean domain.
-- $R[x]$ a PID $\implies R$ is a field.
+- $\FF$ a field $\implies \FF[x]$ is a PID.
 - $\FF$ is a field $\iff \FF$ is a commutative simple ring.
 - $R$ is a UFD $\iff R[x]$ is a UFD.
+- $R$ a PID $\implies R[x]$ is a UFD
 - $R$ a PID $\implies R$ Noetherian
+- $R[x]$ a PID $\implies R$ is a field.
 
 **Lemma:**
 Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
