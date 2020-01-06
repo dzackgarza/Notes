@@ -84,7 +84,7 @@ A field extension $L/k$ is **separable** iff
 > **Lemma:**
 If $\ch k = 0$ or $k$ is finite, then every *algebraic* extension $L/k$ is separable.
 
-Definition:
+**Definition:**
 $\aut(L/k) = \theset{\sigma: L \to L \suchthat \restrictionof{\sigma}{k} = \id_k}$
 
 **Lemma:**
@@ -121,6 +121,7 @@ Let $L/F/k$ be a finite tower of field extensions
 Every quadratic extension is Galois.
 
 **Fundamental Theorem of Galois Theory:**
+
 
 ### Cyclotomic Polynomials
 
