@@ -126,7 +126,7 @@ k
 
 - $F/k$ algebraic and $L/F$ algebraic $\implies L/k$ algebraic.
 
-- If $
+- If $L/k$ is algebraic, then $F/k$ separable and $L/F$ separable $\iff L/k$ separable 
 
 \begin{center}
 \begin{tikzcd}
