@@ -237,11 +237,12 @@ h \mapsto h(\wait)h^{-1}
 .\end{align*}
 
 
-> *Lemma:* If $\sigma \in \Aut(H)$, then $N \semidirect_\psi H \cong N \semidirect_{\psi \circ \sigma} H$
+> *Lemma:* If $\sigma \in \Aut(H)$, then $N \semidirect_\psi H \cong N \semidirect_{\psi \circ \sigma} H$.
 
 **Useful Facts**
 
 - $\Aut(\prod_{k=1}^n \ZZ/(p)) = \GL(n, \ZZ/(p))$
+  - If this occurs in a semidirect product, it suffices to consider similarity classes of matrices (i.e. just use canonical forms)
 - $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
 
