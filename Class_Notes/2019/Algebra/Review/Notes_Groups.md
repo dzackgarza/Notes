@@ -359,7 +359,8 @@ $$
 
 **The Correspondence Theorem / 4th Isomorphism Theorem:**
 Suppose $N \normal G$, then there exists a correspondence:
-$$
+
+
 \left\{
 H < G \suchthat N \subseteq H
 \right\}
