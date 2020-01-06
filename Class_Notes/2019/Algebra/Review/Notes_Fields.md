@@ -9,6 +9,11 @@ $R$ a finite integral domain $\implies R$ is a field.
 Lemma:
 $R$ is a field $\iff R$ is a commutative simple ring.
 
+Lemmas:
+
+- $R/I$ is a domain $\iff I$ is prime
+- $R/I$ is a field $\iff I$ is maximal.
+
 ## Finite Fields
 
 **Theorem:**
