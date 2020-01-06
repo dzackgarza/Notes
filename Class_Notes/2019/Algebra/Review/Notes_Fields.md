@@ -30,6 +30,7 @@ Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Int
 - A UFD that is not a PID: $\FF[x, y]$
   - Proof: $\generators{x, y}$ is not principal
 -  An integral domain that is not a UFD: $\ZZ[\sqrt{-5}]$
+   -  Proof: $(2+\sqrt{-5})(2-\sqrt{-5})=9=3\cdot 3$.
 
 
 ## Finite Fields
