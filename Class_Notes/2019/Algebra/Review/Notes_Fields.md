@@ -67,7 +67,8 @@ If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ su
 then $f$ is irreducible.
 
 **Gauss' Lemma**:
-
+Let $R$ be a UFD and $F$ its field of fractions. 
+Then $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $F[x]$ and 
 
 **Lemma:**
 Let $\rho_n \definedas x^{p^n} - x$.
