@@ -2,7 +2,6 @@
 
 Let $k$ denote a field.
 
-
 **Lemmas:**
 
 - The characteristic of $\FF$ is either 0 or $p$ a prime.
@@ -10,11 +9,6 @@ Let $k$ denote a field.
 - Any homomorphism of fields is either 0 or injective
 - If $L/k$ is algebraic, then $\min(\alpha, L)$ divides $\min(\alpha, k)$.
 - Every finite extension is algebraic
-
-## Finite Fields
-
-**Theorem:**
-$\GF(p^n)$ is obtained as $\displaystyle\frac{\FF_p}{(f)}$ where $f \in \FF_p[x]$ is any irreducible of degree $n$, and $\GF(p^n) \cong \FF[\alpha] \cong \spanof_\FF\theset{1, \alpha, \cdots, \alpha^{n-1}}$ for any root $\alpha$ of $f$.
 
 **Eisenstein's Criterion:**
 If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ such that
@@ -35,11 +29,20 @@ Then a primitive $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $
 > *Corollary:*
 > A primitive polynomial $p\in \QQ[x]$ is irreducible iff $p$ is irreducible in $\ZZ[x]$.
 
+## Finite Fields
+
+**Theorem:**
+$\GF(p^n)\cong \displaystyle\frac{\FF_p}{(f)}$ where $f \in \FF_p[x]$ is any irreducible of degree $n$, and $\GF(p^n) \cong \FF[\alpha] \cong \spanof_\FF\theset{1, \alpha, \cdots, \alpha^{n-1}}$ for any root $\alpha$ of $f$.
+
+Lemma:
+$GF(p^n)$ is the splitting field of $x^{p^n} - x$ 
+
 **Lemma:**
 Let $\rho_n \definedas x^{p^n} - x$.
 Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
-> *Corollary:* $\rho_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
+*Lemma:* 
+$x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i \in \FF_p[x]$ of degree $d$ dividing $n$.
 
 > *Proof:*
 >
