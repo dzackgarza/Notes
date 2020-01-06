@@ -103,9 +103,6 @@ C_p \definedas
 
 ## Canonical Forms
 
-
-### Polynomial Information
-
 ### Rational Canonical Form
 
 Corresponds to the **Invariant Factor Decomposition** of $T$.
