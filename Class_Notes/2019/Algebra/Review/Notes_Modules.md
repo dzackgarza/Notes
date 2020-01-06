@@ -137,7 +137,7 @@ V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors
 
 ### Polynomial Information
 
-Definition:
+**Definition:**
 The **characteristic polynomial** of $A$ is given by
 $$
 \chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
