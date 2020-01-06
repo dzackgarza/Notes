@@ -6,6 +6,9 @@ A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
 Definition:
 An element $r\in R$ is **prime** iff $ab \divides r \implies a\divides r$ or $b\divides r$ whenever $a,b$ are nonzero and not units.
 
+Definition:
+An element $r\in R$ is irreducible iff $
+
 
 Lemmas:
 
