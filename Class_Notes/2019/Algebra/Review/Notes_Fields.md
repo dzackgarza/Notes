@@ -66,7 +66,7 @@ If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ su
 
 then $f$ is irreducible.
 
-Definition:
+**Definition:**
 For $R$ a UFD, a polynomial $p\in R[x]$ is **primitive** iff the greatest common divisors of its coefficients is a unit.
 
 
