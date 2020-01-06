@@ -208,7 +208,7 @@ Writing
 \chi_A(x) = \prod (x- \lambda_i)^{b_i}
 \end{align*}
 
-  - $a_i \leq b_i$, and
+  - $a_i \leq b_i$
 
   - $a_i$ tells you the size of the **largest** Jordan block associated to $\lambda_i$,
 
