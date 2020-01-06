@@ -97,7 +97,7 @@ TFAE:
 Let $L/F/k$ be a tower of field extensions
 
 - $L/k$ normal $\implies L/F$ normal.
-  - Proof: $\min(\alpha, L)
+  - Proof: $\min(\alpha, F)
 - $L/k$ Galois $\implies L/F$ Galois.
 - $F/k$ algebraic and $L/F$ algebraic $\implies L/k$ algebraic.
 - $F/k$ Galois and $L/K$ Galois $\implies F/k$  Galois **only if** $\Gal(L/F) \normal \Gal(L/k)$
