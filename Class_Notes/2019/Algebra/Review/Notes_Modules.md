@@ -187,7 +187,10 @@ The minimal polynomial divides the characteristic polynomial, and in particular 
 
 ### Rational Canonical Form
 
-Corresponds to the **Invariant Factor Decomposition** of $T$
+Corresponds to the **Invariant Factor Decomposition** of $T$.
+
+**Lemma:**
+$RCF(A)$ is a block matrix where each block is the companion matrix of an invariant factor of $A$.
 
 > **Derivation**:
 >
