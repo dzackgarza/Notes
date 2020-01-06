@@ -73,13 +73,26 @@ $A^*$ denotes the conjugate tranpose of $A$.
 Let $V$ be a vector space over $k$ an algebraically closed and $A \in \mathrm{End}(V)$.
 Then if $W \subseteq V$ is an invariant subspace, so $A(W) \subseteq W$, the $A$ has an eigenvector in $W$.
 
-> *Proof:*
-> 
-
 **Theorem (The Spectral Theorem)**:
 
 1. Hermitian matrices (i.e. $A^* = A$) are diagonalizable over $\CC$.
 2. Symmetric matrices (i.e. $A^t = A$) are diagonalizable over $\RR$.
+
+> *Proof:*
+> Suppose $A$ is Hermitian.
+> Since $V$ itself is an invariant subspace, $A$ has an eigenvector $\vector v_1 \in V$.
+> Let $W_1 = \spanof_k\theset{\vector v_1}^\perp$.
+> Then for any $\vector w_1 \in W_1$, 
+$$
+\inner{\vector v_1}{ A \vector w_1} =
+\inner{A \vector v_1}{\vector w_1} =
+\lambda \inner{\vector v_1}{\vector w_1} = 0,
+$$
+> so $A(W_1) \subseteq W_1$ is an invariant subspace, etc.
+>
+> Suppose now that $A$ is symmetric.
+> Then
+
 
 **Lemma**:
 $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
