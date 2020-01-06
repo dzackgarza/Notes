@@ -32,18 +32,63 @@ $$
 [G,G] \leq H \text{ and } H \normal G \implies G/H \text{ is abelian. }
 $$
 
-## p-Groups
 
-**Definition:**
-If $\abs{G} = p^k$, then $G$ is a **p-group.**
+## Finitely Generated Abelian Groups
 
-**Properties:**
+Invariant factor decomposition:
+$$
+G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j) 
+\quad \text{ where } n_1 \divides \cdots \divides n_m
+.$$
 
-- p-groups have nontrivial centers
-- Every normal subgroup is contained in the center
-- Normalizers grow
-- Every maximal is normal
-- Every maximal has index $p$
+**Going from invariant divisors to elementary divisors:**
+
+- Take prime factorization of each factor
+- Split into coprime pieces
+
+*Example:*
+\begin{align*}
+&\ZZ/(2) \oplus \ZZ/(2) \oplus \ZZ/(2^3\cdot 5^2\cdot 7) \\
+\cong 
+&\ZZ/(2) \oplus \ZZ/(2)\oplus
+\ZZ/(2^3) \oplus \ZZ/(5^2) \oplus \ZZ/(7) \\
+.\end{align*}
+
+
+**Going from elementary divisors to invariant factors:**
+
+- Bin up by primes occurring (keeping exponents)
+- Take highest power from each prime as *last* invariant factor
+- Take highest power from all remaining primes as next, etc
+
+*Example:*
+Given the invariant factor decomposition
+\begin{align*}
+G = {\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{3}\times\mathbb{Z}_{3}\times\mathbb{Z}_{25}},
+.\end{align*}
+
+| $p = 2$  | $p= 3$  | $p =5$ |
+|---|---|---|
+|  $2,2,2$ |  $3,3$ | $5^2$
+
+$\implies n_m = 5^2 \cdot 3 \cdot 2$
+
+| $p = 2$  | $p= 3$  | $p =5$ |
+|---|---|---|
+|  $2,2$ |  $3$ | $\emptyset$
+
+$\implies n_{m-1} = 3 \cdot 2$
+
+| $p = 2$  | $p= 3$  | $p =5$ |
+|---|---|---|
+|  $2$ |  $\emptyset$ | $\emptyset$
+
+$\implies n_{m-2} = 2$
+
+and thus 
+\begin{align*}
+G \cong \ZZ/(2) \oplus \ZZ/(3\cdot 2) \oplus \ZZ/(5^2 \cdot 3 \cdot 2)
+.\end{align*}
 
 ## The Symmetric Group
 
@@ -368,59 +413,19 @@ A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper cen
 
 > Nilpotent $\implies$ nontrivial center, solvable, normalizers grow, equal to direct product of Sylows, normal subgroups of $d$ for every divisor $d$ of $\abs G$.
 
-## Finitely Generated Abelian Groups
 
-Invariant factor decomposition:
-$$
-G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j) 
-\quad \text{ where } n_1 \divides \cdots \divides n_m
-.$$
+## p-Groups
 
-**Going from invariant divisors to elementary divisors:**
+**Definition:**
+If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
-- Take prime factorization of each factor
-- Split into coprime pieces
+**Properties:**
 
-*Example:*
-\begin{align*}
-&\ZZ/(2) \oplus \ZZ/(2) \oplus \ZZ/(2^3\cdot 5^2\cdot 7) \\
-\cong 
-&\ZZ/(2) \oplus \ZZ/(2)\oplus
-\ZZ/(2^3) \oplus \ZZ/(5^2) \oplus \ZZ/(7) \\
-.\end{align*}
+- p-groups have nontrivial centers
+- Every normal subgroup is contained in the center
+- Normalizers grow
+- Every maximal is normal
+- Every maximal has index $p$
+- p-groups are nilpotent
 
 
-**Going from elementary divisors to invariant factors:**
-
-- Bin up by primes occurring (keeping exponents)
-- Take highest power from each prime as *last* invariant factor
-- Take highest power from all remaining primes as next, etc
-
-*Example:*
-Given the invariant factor decomposition
-\begin{align*}
-G = {\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{3}\times\mathbb{Z}_{3}\times\mathbb{Z}_{25}},
-.\end{align*}
-
-| $p = 2$  | $p= 3$  | $p =5$ |
-|---|---|---|
-|  $2,2,2$ |  $3,3$ | $5^2$
-
-$\implies n_m = 5^2 \cdot 3 \cdot 2$
-
-| $p = 2$  | $p= 3$  | $p =5$ |
-|---|---|---|
-|  $2,2$ |  $3$ | $\emptyset$
-
-$\implies n_{m-1} = 3 \cdot 2$
-
-| $p = 2$  | $p= 3$  | $p =5$ |
-|---|---|---|
-|  $2$ |  $\emptyset$ | $\emptyset$
-
-$\implies n_{m-2} = 2$
-
-and thus 
-\begin{align*}
-G \cong \ZZ/(2) \oplus \ZZ/(3\cdot 2) \oplus \ZZ/(5^2 \cdot 3 \cdot 2)
-.\end{align*}
