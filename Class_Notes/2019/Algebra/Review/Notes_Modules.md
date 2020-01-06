@@ -143,7 +143,7 @@ $$
 \chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
 .$$
 
-Lemma:
+**Lemma:**
 If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
 
 **Lemma**:
