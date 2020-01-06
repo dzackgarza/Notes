@@ -206,4 +206,28 @@ p(x) = \det(A - x1))= \det(SNF(A - x1))
 - A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
 
 
+## Matrix Counterexamples
+
+1. A matrix that is:
+
+- Not diagonalizable over $\RR$ but diagonalizable over $\CC$
+
+- No eigenvalues in $\RR$ but distinct eigenvalues over $\CC$
+
+- $\min_M(x) = \chi_M(x) = x^2 + 1$
+
+$$
+\begin{align*}
+M = \left[\begin{array}{rr}
+0  & 1 \\
+-1 & 0
+\end{array}\right] \sim
+\left[\begin{array}{r|r}
+-1 \sqrt{-1} & 0 \\
+\hline
+0 & 1 \sqrt{-1}
+\end{array}\right]
+.\end{align*}
+$$
+
 
