@@ -85,7 +85,9 @@ $$
 > Mnemonic: $G/G_x \cong G\cdot x$.
 
 > Examples:
-> - 
+> 
+> - $G \actson \theset{H \suchthat H\leq G}$
+>   - $G_
 
 **Burnside's Formula:**
 $$
