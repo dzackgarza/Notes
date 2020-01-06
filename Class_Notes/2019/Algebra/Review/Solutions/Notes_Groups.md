@@ -403,6 +403,7 @@ G \to G^1 \to \cdots \to \theset{e} \text{ with } G^{i}/G^{i+1}\text{ abelian fo
 
 - $G$ is solvable iff $G$ has a terminating *derived series*.
 - Solvable groups satisfy the 2 out of 3 property
+- Abelian $\implies$ solvable
 
 
 **Definition:**
