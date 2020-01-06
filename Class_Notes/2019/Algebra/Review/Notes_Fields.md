@@ -34,6 +34,9 @@ Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Int
 -  A ring that is not an integral domain: $\ZZ/(4)$.
    -  *Proof*: $2 \mod 4$ is a zero divisor.
 
+Lemma:
+In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
+
 
 ## Finite Fields
 
