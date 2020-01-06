@@ -251,13 +251,26 @@ If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a sub
 
 **Diamond Theorem / 2nd Isomorphism Theorem**:
 
-If $S \leq G$ and $N \normal G$, then
-
-- $SN \leq G$,
-- $S\intersect N \normal S$,
-- $SN/N \cong S/S\intersect N$
+If $S \leq G$ and $N \normal G$, then 
+$$
+\frac{SN}{N} \cong \frac{S}{S\intersect N}
+$$
 
 ![](2020-01-01-15-20-27.png)
+
+> Note: for this to make sense, we also have
+> 
+> - $SN \leq G$,
+> - $S\intersect N \normal S$,
+
+**Cancellation/ 3rd Isomorphism Theorem**
+
+If $H, K \normal G$ with $H \normal K$, then
+$$
+\frac{G/H}{G/K} \cong \frac{G}{K}
+$$
+
+> Note: for this to make sense, we also have $G/K \normal G/H$.
 
 **The Correspondence Theorem / 4th Isomorphism Theorem:**
 Suppose $N \normal G$, then there exists a correspondence:
