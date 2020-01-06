@@ -112,10 +112,14 @@ Let $L/F/k$ be a finite tower of field extensions
   - $\implies \Gal(F/k) \cong \frac{\Gal(L/k)}{\Gal(L/F)}$
 - $\alpha \in L$ algebraic over $k \implies \alpha$ algebraic over $F$.
 
+**Common Counterexamples**:
+
+- $\QQ(\zeta_3, \sqrt
+
 **Lemma:**
 **Every** quadratic extension is Galois.
 
-Fundamental Theorem of Galois Theory
+**Fundamental Theorem of Galois Theory:**
 
 ### Cyclotomic Polynomials
 
