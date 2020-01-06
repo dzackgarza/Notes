@@ -87,12 +87,14 @@ $$
 
 - $G_x = Z(x) \definedas C_G(x) = \theset{g \suchthat [g, x] = e}$, the **centralizer** of $x$.
 
+- $G^g$ (the fixed points) is the center $Z(G)$.
+
 - Yields **Class Equation**:
 $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
 $$
 
-2. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
+1. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
 
 
 
