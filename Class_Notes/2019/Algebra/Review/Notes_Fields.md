@@ -81,7 +81,7 @@ Then a primitive $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $
 Let $\rho_n \definedas x^{p^n} - x$.
 Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
-(So $\rho_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.)
+> *Corollary:* $\rho_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
 
 > *Proof:*
 >
