@@ -138,6 +138,7 @@ V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors
 Definition:
 Given $p(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n$, the companion matrix of $p$ is given by
 
+
 ### Polynomial Information
 
 **Definition:**
