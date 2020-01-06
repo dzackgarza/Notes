@@ -68,7 +68,7 @@ then $f$ is irreducible.
 
 **Gauss' Lemma**:
 Let $R$ be a UFD and $F$ its field of fractions. 
-Then $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $F[x]$ and 
+Then $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $F[x]$ and $p$ is primitive in $R[x]$, i.e. 
 
 **Lemma:**
 Let $\rho_n \definedas x^{p^n} - x$.
