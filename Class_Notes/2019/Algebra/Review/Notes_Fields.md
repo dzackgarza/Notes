@@ -7,7 +7,7 @@ Definition:
 An element $r\in R$ is **prime** iff $ab \divides r \implies a\divides r$ or $b\divides r$ whenever $a,b$ are nonzero and not units.
 
 Definition:
-An element $r\in R$ is irreducible iff $r$ can not be decomposed as $r=ab$
+An element $r\in R$ is irreducible iff $r = ab \implies
 
 
 Lemmas:
