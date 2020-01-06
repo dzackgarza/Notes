@@ -87,7 +87,7 @@ $$
 > Examples:
 > 
 > - $G \actson \theset{H \suchthat H\leq G}$
->   - $G_
+>   - $G \cdot x 
 
 **Burnside's Formula:**
 $$
