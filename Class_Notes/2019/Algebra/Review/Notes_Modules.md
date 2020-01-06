@@ -55,6 +55,10 @@ $$
 > *Useful lemma:*
 > If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
 
+
+**Theorem (Cayley-Hamilton):**
+The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
+
 **Lemma:**
 Writing
 \begin{align*}
@@ -65,8 +69,16 @@ Writing
 - $a_i \leq b_i$
 - The roots both polynomials are precisely the eigenvalues of $A$.
 
-**Corollary (Cayley-Hamilton):**
-The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
+> *Proof*:
+> By Cayley-Hamilton, $\min_A$ divides $\chi_A$. 
+> Every $\lambda_i$ is a root of $\mu_M$: 
+> 
+> Let $(\vector v_i, \lambda_i)$ be a nontrivial eigenpair. 
+> Then by linearity,
+$$
+\min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0
+,$$ 
+> which forces $\min_A(\lambda_i) = 0$.
 
 **Definition:**
 Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same Jordan Canonical Form (JCF).
@@ -229,25 +241,9 @@ $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizabl
 Let $\min_M(x)$ denote the minimal polynomial of $A$ and $\chi_M(x)$ the characteristic polynomial.
 
 **Lemma**:
-$$
-\chi_M(x) = \prod_{i=1}^k(x - \lambda_i)^{m_i}
-\implies
-\min_M(x) = \prod_{i=1}^k(x - \lambda_i)^{\ell_i}
-\text{ where } 1 \leq \ell_i \leq m_i,
-$$
 
-where $\lambda_i$ are eigenvalues of $M$, $m_i$ is the multiplicity of $\lambda_i$.
 
-> *Proof*:
-> By Cayley-Hamilton, $\min_A$ divides $\chi_A$. 
-> Every $\lambda_i$ is a root of $\mu_M$: 
-> 
-> Let $(\vector v_i, \lambda_i)$ be a nontrivial eigenpair. 
-> Then by linearity,
-$$
-\min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0
-,$$ 
-> which forces $\min_A(\lambda_i) = 0$.
+
 
 **Lemma**:
 $M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear factors over $\FF$.
