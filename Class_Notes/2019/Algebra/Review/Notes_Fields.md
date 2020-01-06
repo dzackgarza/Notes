@@ -3,7 +3,7 @@
 Let $k$ denote a field.
 
 
-Lemmas:
+**Lemmas:**
 
 - The characteristic of $\FF$ is either 0 or $p$ a prime.
 - All fields are simple rings
