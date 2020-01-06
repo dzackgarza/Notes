@@ -45,7 +45,7 @@ Fix some notation:
 
 
 **Definition:**
-Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same JCF
+Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same Jordan Canonical Form (JCF).
 
 **Definition:**
 Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
@@ -54,7 +54,7 @@ Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
 
   - They have the same invariant factors, *and*
 
-  - They have the same Jordan Canonical Form (JCF)
+  - They have the same (JCF)
 
 **Finding the minimal polynomial:**
 
