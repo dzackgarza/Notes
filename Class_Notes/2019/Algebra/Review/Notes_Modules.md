@@ -43,6 +43,19 @@ Fix some notation:
 \min_T(x): \quad & \text{The minimal polynomial of } A
 .\end{align*}
 
+**Definition:**
+The minimal polynomial is the unique polynomial $\min_A(x)$ of minimal degree such that $\min_A(A) = 0$.
+
+**Definition:**
+The **characteristic polynomial** of $A$ is given by
+$$
+\chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
+.$$
+
+> *Useful lemma:*
+> If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
+
+
 
 **Definition:**
 Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same Jordan Canonical Form (JCF).
@@ -62,17 +75,7 @@ Let $m(x)$ denote the minimal polynomial $A$.
 
 1. Find the characteristic polynomial $\chi(x)$; this annihilates $A$ by Cayley-Hamilton. Then $m(x) \divides \chi(x)$, so just test the finitely many products of irreducible factors.
 
-2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$.
-
-
-## Canonical Forms
-
-Fix $A: V\to V$, and decompositions
-
-\begin{align*}
-V = \bigoplus_{j=1}^n \frac{k[x]}{(f_j)} &\quad \text{(invariant factors)}\\
-V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors)}
-.\end{align*}
+2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\min_A(x) \divides p(x)$.
 
 **Definition:**
 Given a monic $p(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1} x^{n-1} + x^n$, the **companion matrix** of $p$ is given by
@@ -87,17 +90,24 @@ C_p \definedas
 \end{bmatrix}
 .\end{align*}
 
+**Lemma:**
+Writing
+\begin{align*}
+\min_A(x) = \prod (x- \lambda_i)^{a_i} \\
+\chi_A(x) = \prod (x- \lambda_i)^{b_i}
+\end{align*}
+
+- $a_i \leq b_i$
+- The roots both polynomials are precisely the eigenvalues of $A$.
+
+**Corollary (Cayley-Hamilton):**
+The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
+
+## Canonical Forms
+
 
 ### Polynomial Information
 
-**Definition:**
-The **characteristic polynomial** of $A$ is given by
-$$
-\chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
-.$$
-
-> *Useful lemma:*
-> If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
 
 **Lemma:**
 The characteristic polynomial is the *product of the invariant factors*, i.e.
@@ -111,18 +121,7 @@ $$
 \min_A(x) = f_n(x)
 .$$
 
-**Lemma:**
-Writing
-\begin{align*}
-\min_A(x) = \prod (x- \lambda_i)^{a_i} \\
-\chi_A(x) = \prod (x- \lambda_i)^{b_i}
-\end{align*}
 
-- $a_i \leq b_i$
-- The roots both polynomials are precisely the eigenvalues of $A$.
-
-**Corollary (Cayley-Hamilton):**
-The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
 
 ### Rational Canonical Form
 
