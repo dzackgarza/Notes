@@ -168,7 +168,9 @@ Some useful facts:
 
 ### Sylow 1 (Cauchy for Prime Powers)
 
-$\forall p^n \divides \abs{G}$, there exists a subgroup of size $p^n$.
+\begin{align*}
+\forall p^n \text{ dividing } \abs{G} \quad \text{ there exists a subgroup of size } p^n
+.\end{align*}
 
 **Corollary (Partial Converse to Lagrange)**:
 $\forall p \divides \abs{G}$, there exists an element of order $p$.
