@@ -234,6 +234,9 @@ h \mapsto h(\wait)h^{-1}
 
 > Note: $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
 
+**Useful Facts**
+
+
 Modifying the domain:
 **TODO**
 
