@@ -348,11 +348,18 @@ A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper cen
 
 Invariant factor decomposition:
 $$
-G \cong \ZZ^r \prod_{j=1}^m \ZZ/(n_j) 
+G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j) 
 \quad \text{ where } n_1 \divides \cdots \divides n_m
 .$$
 
-Going from elementary divisors to invariant factors:
+*Going from invariant divisors to elementary divisors:*
+
+- Take prime factorization of each factor
+- Decompose each factor into coprime pieces, then order
+
+*Example:*
+
+*Going from elementary divisors to invariant factors:*
 
 - Bin up by primes occurring (keeping exponents)
 - Take highest power from each prime as *last* invariant factor
