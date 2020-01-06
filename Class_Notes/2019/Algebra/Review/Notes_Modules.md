@@ -12,7 +12,15 @@ Let $m(x)$ denote the minimal polynomial $A$.
 
 2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$.
 
-### Simultaneous Diagonalizability
+### Diagonalizability
+
+*Notation:* 
+$A^*$ denotes the conjugate tranpose of $A$.
+
+**Theorem (The Spectral Theorem)**:
+
+1. Hermitian matrices (i.e. $A^* = A$) are diagonalizable over $\CC$.
+2. Symmetric matrices (i.e. $A^t = A$) are diagonalizable over $\RR$.
 
 **Lemma**:
 $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
