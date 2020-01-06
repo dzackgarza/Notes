@@ -263,7 +263,7 @@ $$
 > - $SN \leq G$,
 > - $S\intersect N \normal S$,
 
-**Cancellation/ 3rd Isomorphism Theorem**
+**Cancellation / 3rd Isomorphism Theorem**
 
 If $H, K \normal G$ with $H \normal K$, then
 $$
