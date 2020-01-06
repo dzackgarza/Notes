@@ -56,7 +56,7 @@ Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
 
   - They have the same JCF
 
-**Finding the minimal polynomial:** 
+**Finding the minimal polynomial:**
 
 Let $m(x)$ denote the minimal polynomial $A$.
 
@@ -66,7 +66,7 @@ Let $m(x)$ denote the minimal polynomial $A$.
 
 ## Diagonalizability
 
-*Notation:* 
+*Notation:*
 $A^*$ denotes the conjugate tranpose of $A$.
 
 **Theorem (The Spectral Theorem)**:
@@ -149,13 +149,14 @@ By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq 
 \min_A(x) = \prod (x- \lambda_i)^{a_i} \\
 \chi_A(x) = \prod (x- \lambda_i)^{b_i}
 \end{align*}
-then $a_i \leq b_i$, and
 
-    - $a_i$ tells you the size of the **largest** Jordan block associated to $\lambda_i$,
+  - $a_i \leq b_i$, and
 
-    - $b_i$ is the **sum of sizes** of all Jordan blocks associated to $\lambda_i$
+  - $a_i$ tells you the size of the **largest** Jordan block associated to $\lambda_i$,
 
-    - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
+  - $b_i$ is the **sum of sizes** of all Jordan blocks associated to $\lambda_i$
+
+  - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
 
 ## Canonical Forms
 
@@ -258,12 +259,12 @@ M = \left[\begin{array}{rr}
 
 $$
 \left[\begin{array}{ll}
-{1}  & {0} \\ 
+{1}  & {0} \\
 {0} & {1}
  \end{array}\right]
  \text { and }
  \left[\begin{array}{ll}
- {1} & {1} \\ 
+ {1} & {1} \\
  {0} & {1}
   \end{array}\right]
 $$
@@ -298,16 +299,16 @@ $$
 **Lemma:**
 $I \normal R$ is a free $R\dash$module iff $I$ is a principal ideal.
 
-> Proof: 
+> Proof:
 > $\implies$:
 >
 > Suppose $I$ is free as an $R\dash$module, and let $B = \theset{\vector m_j}_{j\in J} \subseteq I$ be a basis so we can write $M = \generators{B}$.
-> 
+>
 > Suppose that $\abs{B} \geq 2$, so we can pick at least 2 basis elements $\vector m_1\neq \vector m_2$, and consider
 $$
 \vector c = \vector m_1 \vector m_2 - \vector m_2 \vector m_1,
 $$
-> 
+>
 > which is also an element of $M$ .
 >
 > Since $R$ is an integral domain, $R$ is commutative, and so
@@ -324,7 +325,7 @@ $$
 > Then $x\in M \implies x = \alpha\vector m$ for some element $\alpha\in R$ and we just need to show that $\alpha\vector m = \vector 0_M \implies \alpha = 0_R$ in order for $\theset{\vector m}$ to be a basis for $M$, making $M$ a free $R\dash$module.
 >
 > But since $M \subset R$, we have $\alpha, m \in R$ and $\vector 0_M = 0_R$, and since $R$ is an integral domain, we have $\alpha m = 0_R \implies \alpha = 0_R$ or $m = 0_R$.
-> 
+>
 > Since $m \neq 0_R$, this forces $\alpha = 0_R$, which allows $\theset{m}$ to be a linearly independent set and thus a basis for $M$ as an $R\dash$module.
 >
 >$\qed$
