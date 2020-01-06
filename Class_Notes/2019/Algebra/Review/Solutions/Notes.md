@@ -99,6 +99,8 @@ $$
   
 - $G\cdot H$ is the set of conjugate subgroups of $H$
 
+- $G_H$
+
 3. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
 
 
