@@ -2,6 +2,9 @@
 
 ## General Modules
 
+**Definition**: 
+A module is **simple** iff it has no nontrivial proper submodules.
+
 **Definition:**
 A **free** module is a module with a basis (i.e. a spanning, linearly independent set).
 
