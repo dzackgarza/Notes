@@ -148,8 +148,6 @@ k
 \end{tikzcd}
 \end{center}
 
-- $E, F$ normal over $k \implies EF,E\intersect F$ normal over $k$.
-
 **Common Counterexamples**:
 
 - $\QQ(\zeta_3, 2^{1/3})$ is normal but $\QQ(2^{1/3})$ is not since the irreducible polynomial $x^3 - 2$ has only one root in it.
