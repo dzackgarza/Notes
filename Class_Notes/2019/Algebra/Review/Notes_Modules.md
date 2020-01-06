@@ -143,8 +143,14 @@ $$
 \chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
 .$$
 
+> *Useful lemma:*
+> If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
+
 **Lemma:**
-If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
+The characteristic polynomial is the *product of the invariant factors*, i.e.
+$$
+\chi_T(x) = \prod_{j=1}^n f_j(x)
+.$$
 
 **Lemma**:
 The minimal polynomial is the *invariant factor of highest degree*, i.e.
@@ -153,11 +159,6 @@ $$
 .$$
 
 **Lemma:**
-The characteristic polynomial is the *product of the invariant factors*, i.e.
-$$
-\chi_T(x) = \prod_{j=1}^n f_j(x)
-.$$
-
 Writing
 \begin{align*}
 \min_A(x) = \prod (x- \lambda_i)^{a_i} \\
@@ -166,9 +167,6 @@ Writing
 
 - $a_i \leq b_i$
 - The roots both polynomials are precisely the eigenvalues of $A$.
-
-**Lemma**:
-Both $\min_T(x)$ and $\chi_T(x)$ have roots precisely the eigenvalues of $T$, with potentially different multiplicities.
 
 ### Rational Canonical Form
 
