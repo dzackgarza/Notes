@@ -1,7 +1,5 @@
 # Fields
 
-
-
 ## Finite Fields
 
 **Theorem:**
