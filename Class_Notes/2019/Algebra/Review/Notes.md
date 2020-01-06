@@ -8,4 +8,4 @@ title: Algebra Notes
 
 !include Notes_Fields.md
 
-<!-- !include Notes_Modules.md -->
+!include Notes_Modules.md
