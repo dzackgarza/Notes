@@ -21,8 +21,9 @@ $\FF$ a field $\implies \FF[x]$ a Euclidean domain.
 Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
 
 - A Euclidean Domain that is not a field: $\FF[x]$ for $\FF$ a field
-  - $x$ is not invertible
+  - Proof: Lemma, and $x$ is not invertible
 - A PID that is not a Euclidean Domain: $\ZZ\left[\frac{1 + \sqrt{-19}}{2}\right]$
+  - Proof: complicated.
 - A UFD that is not a PID: $\FF[x, y]$
 
 
