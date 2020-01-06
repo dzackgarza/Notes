@@ -1,10 +1,10 @@
 # Fields
 
 **Lemma:**
-Let $\phi_n \definedas x^{p^n} - x$.
-Then $f(x) \divides \phi_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
+Let $\rho_n \definedas x^{p^n} - x$.
+Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
-(So $\phi_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.)
+(So $\rho_n = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.)
 
 > *Proof:*
 >
