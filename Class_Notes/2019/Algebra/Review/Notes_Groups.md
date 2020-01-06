@@ -360,7 +360,7 @@ $$
 **The Correspondence Theorem / 4th Isomorphism Theorem:**
 Suppose $N \normal G$, then there exists a correspondence:
 
-
+\begin{align*}
 \left\{
 H < G \suchthat N \subseteq H
 \right\}
@@ -377,7 +377,7 @@ H \suchthat H < \frac G N
   \text{Subgroups of the } \\
   \text{quotient $G/N$}
 }
-.$$
+.\end{align*}
 
 In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotient group $G/N$. This is given by the map $H \mapsto H/N$.
 
