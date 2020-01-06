@@ -128,8 +128,7 @@ By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq 
 
 ## Canonical Forms
 
-
-Fix $T: V\to V$, and decompositions
+Fix $A: V\to V$, and decompositions
 
 \begin{align*}
 V = \bigoplus_{j=1}^n \frac{k[x]}{(f_j)} &\quad \text{(invariant factors)}\\
@@ -137,6 +136,12 @@ V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors
 .\end{align*}
 
 ### Polynomial Information
+
+Definition:
+The **characteristic polynomial** of $A$ is given by
+$$
+\chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
+.$$
 
 **Lemma**:
 The minimal polynomial is the *invariant factor of highest degree*, i.e.
@@ -152,20 +157,6 @@ $$
 
 **Lemma**:
 Both $\min_T(x)$ and $\chi_T(x)$ have roots precisely the eigenvalues of $T$, with potentially different multiplicities.
-
-Writing
-\begin{align*}
-\min_A(x) = \prod (x- \lambda_i)^{a_i} \\
-\chi_A(x) = \prod (x- \lambda_i)^{b_i}
-\end{align*}
-
-  - $a_i \leq b_i$, and
-
-  - $a_i$ tells you the size of the **largest** Jordan block associated to $\lambda_i$,
-
-  - $b_i$ is the **sum of sizes** of all Jordan blocks associated to $\lambda_i$
-
-  - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
 
 ### Rational Canonical Form
 
@@ -208,11 +199,21 @@ Corresponds to the **Elementary Divisor Decomposition** of $T$.
 
 - The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
 
-- For characteristic polynomials
-$$
-\chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
-.$$
 
+
+Writing
+\begin{align*}
+\min_A(x) = \prod (x- \lambda_i)^{a_i} \\
+\chi_A(x) = \prod (x- \lambda_i)^{b_i}
+\end{align*}
+
+  - $a_i \leq b_i$, and
+
+  - $a_i$ tells you the size of the **largest** Jordan block associated to $\lambda_i$,
+
+  - $b_i$ is the **sum of sizes** of all Jordan blocks associated to $\lambda_i$
+
+  - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
 
 ## Matrix Counterexamples
 
