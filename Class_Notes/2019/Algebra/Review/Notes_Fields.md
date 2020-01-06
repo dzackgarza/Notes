@@ -57,7 +57,7 @@ Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 ## Galois Theory
 
 **Definition:**
-A field extension $L/k$ is **algebraic** iff every $\alpha \in L$ is the root of some $f\in k[x]$.
+A field extension $L/k$ is **algebraic** iff every $\alpha \in L$ is the root of some polynomial $f\in k[x]$.
 
 **Definition:**
 Let $L/k$ be a finite extension.
