@@ -389,7 +389,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 - p-groups are *solvable*
 
 **Definition:**
-A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
+A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it has no non-trivial proper subgroups.
 
 > **Lemma:**
 > If $G$ is *not* simple, then for any $N\normal G$, it is the case that $G \cong E$ for an extension of the form $N\to E\to G/N$.
