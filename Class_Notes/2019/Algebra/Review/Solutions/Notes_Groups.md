@@ -178,6 +178,7 @@ Some useful facts:
 .\end{align*}
 
 > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
+> In particular, Sylow $p\dash$subgroups exist.
 
 ### Sylow 2 (Sylows are Conjugate)
 
