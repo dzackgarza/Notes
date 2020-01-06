@@ -109,7 +109,7 @@ Let $L/F/k$ be a finite tower of field extensions
 - $F/k$ algebraic and $L/F$ algebraic $\implies L/k$ algebraic.
 - $F/k$ Galois and $L/K$ Galois $\implies F/k$  Galois **only if** $\Gal(L/F) \normal \Gal(L/k)$
   - $\implies \Gal(F/k) \cong \frac{\Gal(L/k)}{\Gal(L/F)}$
-- $\alpha \in L$ algebraic over $F \implies \alpha$ algebraic over $L$
+- $\alpha \in L$ algebraic over $k \implies \alpha$ algebraic over $F$.
 
 Lemma:
 **Every** quadratic extension is Galois.
