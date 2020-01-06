@@ -39,17 +39,17 @@ Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Int
    - *Proof*: $(2+\sqrt{-5})(2-\sqrt{-5})=9=3\cdot 3$, where all factors are irreducible (check norm).
 
 -  A ring that is not an integral domain: $\ZZ/(4)$.
-   -  *Proof*: $2 \mod 4$ is a zero divisor.
+   - *Proof*: $2 \mod 4$ is a zero divisor.
 
 **Lemma:**
 In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
 
 > Note: For $R$ an integral domain, prime $\implies$ irreducible, but generally not the converse.
 >
-> *Example of a prime that is not irreducible:* 
+> *Example of a prime that is not irreducible:*
 > $x^2 \mod (x^2 + x) \in \QQ[x]/(x^2 + x)$. Check that $x$ is prime directly, but $x=x\cdot x$ and $x$ is not a unit.
-> 
-> *Example of an irreducible that is not prime:* 
+>
+> *Example of an irreducible that is not prime:*
 > $3\in \ZZ[\sqrt{-5}]$. Check norm to see irreducibility, but $3 \divides 9 = (2+\sqrt{-5})(2-\sqrt{-5})$ and doesn't divide either factor.
 
 
@@ -71,7 +71,7 @@ For $R$ a UFD, a polynomial $p\in R[x]$ is **primitive** iff the greatest common
 
 
 **Gauss' Lemma**:
-Let $R$ be a UFD and $F$ its field of fractions. 
+Let $R$ be a UFD and $F$ its field of fractions.
 Then a primitive $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $F[x]$.
 
 > Corollary:
