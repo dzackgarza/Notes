@@ -201,8 +201,7 @@ Corresponds to the **Elementary Divisor Decomposition** of $T$.
 **Lemma:**
 The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
 
-
-
+**Lemma:**
 Writing
 \begin{align*}
 \min_A(x) = \prod (x- \lambda_i)^{a_i} \\
