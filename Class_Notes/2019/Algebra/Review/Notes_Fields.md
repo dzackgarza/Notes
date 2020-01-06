@@ -1,5 +1,15 @@
 # Fields
 
+Let $\FF$ denote a field.
+
+
+Lemmas:
+
+- The characteristic of $\FF$ is either 0 or $p$ a prime.
+- All fields are simple rings
+- Any homomorphism of fields is either 0 or injective
+- If $L/\FF$ is algebraic, then $\min(\alpha, L)$ divides $\min(\alpha, \FF)$.
+
 ## Finite Fields
 
 **Theorem:**
