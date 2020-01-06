@@ -13,7 +13,7 @@ Lemmas:
 
 - $R/I$ is a domain $\iff I$ is prime
 - $R/I$ is a field $\iff I$ is maximal.
-- In PIDs, $I$ is prime $\iff$ maximal
+- For $R$ a PID, $I$ is prime $\iff$ maximal
 
 **Lemma:** 
 
