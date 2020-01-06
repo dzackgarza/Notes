@@ -343,7 +343,10 @@ $$
 
 ![](2020-01-01-15-20-27.png)
 
+![Image](figures/2020-01-06-02:11.png)
+
 > Note: for this to make sense, we also have
+%%%%
 >
 > - $SN \leq G$,
 > - $S\intersect N \normal S$,
