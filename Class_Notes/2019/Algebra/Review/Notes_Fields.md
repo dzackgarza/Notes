@@ -132,6 +132,7 @@ H &\rightarrow \correspond{\text{The subfield fixed by $H$}} \\
 
 - $[F: k] = [G: H]$, so degrees of extensions over the base field correspond to indices of subgroups.
 - $[K : F] = \abs{H}$
+- $K/F$ is Galois
 
 
 ### Cyclotomic Polynomials
