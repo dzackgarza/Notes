@@ -4,7 +4,7 @@
 
 ### Minimal / Characteristic Polynomial
 
-**Finding the minimal polynomial** 
+**Finding the minimal polynomial:** 
 
 Let $m(x)$ denote the minimal polynomial $A$.
 
@@ -12,7 +12,7 @@ Let $m(x)$ denote the minimal polynomial $A$.
 
 2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$.
 
-## Simultaneous Diagonalizability
+### Simultaneous Diagonalizability
 
 **Lemma**:
 $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
@@ -30,7 +30,7 @@ $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizabl
 
 > [Full details here](https://kconrad.math.uconn.edu/blurbs/linmultialg/minpolyandappns.pdf#page=9)
 
-## Characterizations if Diagonalizability
+**Characterizations of Diagonalizability**
 
 Let $\min_M(x)$ denote the minimal polynomial of $A$ and $\chi_M(x)$ the characteristic polynomial.
 
