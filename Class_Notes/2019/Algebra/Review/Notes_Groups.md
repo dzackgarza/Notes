@@ -364,9 +364,9 @@ $$
 H < G \suchthat N \subseteq H
 \right\}
 \iff
-\left\{ \begin{align*}
+\left\{
 H \suchthat H < \frac G N
-\end{align*}\right\}
+\right\}
 \\
 \correspond{
   \text{Subgroups of $G$} \\
@@ -382,3 +382,100 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 
 > Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
 
+
+## Special Classes of Groups
+
+**Definition:**
+The **"2 out of 3 property"** is satisfied by a class of groups $\mathcal C$ iff whenever $G \in \mathcal C$, then $N, G/N \in \mathcal{C}$ for any $N \normal G$.
+
+**Definition:**
+If $\abs{G} = p^k$, then $G$ is a **p-group.**
+
+**Lemmas:**
+
+- p-groups have nontrivial centers
+- Every normal subgroup is contained in the center
+- Normalizers grow
+- Every maximal is normal
+- Every maximal has index $p$
+- p-groups are *nilpotent*
+- p-groups are *solvable*
+
+**Definition:**
+A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it has no non-trivial proper subgroups.
+
+> **Lemma:**
+> If $G$ is *not* simple, then for any $N\normal G$, it is the case that $G \cong E$ for an extension of the form $N\to E\to G/N$.
+> >
+
+**Definition:**
+A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e.
+$$
+G \to G^1 \to \cdots \to \theset{e} \text{ with } G^{i}/G^{i+1}\text{ abelian for all } i
+.$$
+
+**Lemmas:**
+
+- $G$ is solvable iff $G$ has a terminating *derived series*.
+- Solvable groups satisfy the 2 out of 3 property
+- Abelian $\implies$ solvable
+- Every group of order less than 60 is solvable.
+
+
+**Definition:**
+A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper central series, or lower central series.
+
+> Moral: the adjoint map is nilpotent.
+
+**Lemma:**
+For $G$ a finite group, TFAE:
+
+- $G$ is nilpotent
+- Normalizers grow (i.e.$H < N_G(H)$ whenever $H$ is proper)
+- Every Sylow-p subgroup is normal
+- $G$ is the direct product of its Sylow p-subgroups
+- Every maximal subgroup is normal
+- $G$ has a terminating *Lower* Central Series
+- $G$ has a terminating *Upper* Central Series
+
+**Lemmas:**
+
+- $G$ nilpotent $\implies G$ solvable
+- Nilpotent groups satisfy the 2 out of 3 property.
+- $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$
+- $G$ nilpotent $\implies Z(G) \neq 0$
+- Abelian $\implies$ nilpotent
+- p-groups $\implies$ nilpotent
+
+
+
+## Series of Groups
+
+**Definition**:
+A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
+
+**Definition**
+A **composition series** of a group $G$ is a finite normal series such that $G^{i+1}$ is a *maximal proper* normal subgroup of $G^i$.
+
+**Theorem (Jordan-Holder)**:
+Any two composition series of a group have the same length and isomorphic factors (up to permutation).1
+
+**Definition**
+A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \cdots$ where $G^{i+1} = [G^i, G^i]$ is the commutator subgroup.
+
+> The derived series terminates iff $G$ is *solvable*.
+
+**Definition:**
+A **central series** for a group $G$ is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that each quotient is **central**, i.e. $[G, G^i] \leq G^{i-1}$ for all $i$.
+
+**Definition:**
+A **lower central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^{i+1} = [G^i, G]$
+
+> Moral: Iterate the adjoint map $[\wait, G]$.
+
+> $G$ is nilpotent $\iff$ the LCS terminates.
+
+**Definition:**
+An **upper central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^1 = Z(G)$ and $G^{i+1}$ is defined such that $G^{i+1}/G^i = Z(G^i)$.
+
+> Moral: Iterate taking "higher centers".
