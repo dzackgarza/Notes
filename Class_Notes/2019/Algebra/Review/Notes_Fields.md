@@ -172,7 +172,7 @@ H &\rightarrow \correspond{E^H \definedas ~\text{The fixed field of $H$}} \\
 \correspond{\Gal(L/F) \definedas \theset{ \sigma \in \Gal(L/k) \suchthat \sigma(F) = F}} &\leftarrow F
 .\end{align*}
 
-- This is contravariant wrt subgroups/subfields.
+- This is contravariant with respect to subgroups/subfields.
 
 - $[F: k] = [G: H]$, so degrees of extensions over the base field correspond to indices of subgroups.
 
