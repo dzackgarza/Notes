@@ -1,6 +1,7 @@
 # Group Theory
 
 ## The Symmetric Group
+
 **Definitions:**
 
 - Parity of a permutation: Even $\iff$ product of an even number of transpositions.
@@ -14,10 +15,8 @@ $A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sig
 **Corollary:**
 If $\sigma$ has an *even* number of *odd* cycles (i.e. an even number of *even-length* cycles) then $\sigma \in A_n$.
 
-**Definition:**
-$[H : G]$ is equal to the number of left cosets of $H$ in $G$.
-
 ## Group Actions
+
 **Notation:**
 For a group $G$ acting on a set $X$,
 
