@@ -60,6 +60,12 @@ For every prime $p$ dividing $\abs{G}$. there is an element (and thus a subgroup
 
 > This is a partial converse to Lagrange's theorem.
 
+**Class Equation**:
+$$
+\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: Z(x_i)]
+$$
+where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
+
 **Notation:**
 For a group $G$ acting on a set $X$,
 
@@ -71,21 +77,17 @@ For a group $G$ acting on a set $X$,
 
 - $X^g = \theset{x\in X \suchthat g\actson x = x} \subseteq X$ are the fixed points
 
-**Class Equation**:
-$$
-\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: Z(x_i)]
-$$
-where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
-
-**Burnside's Formula:**
-$$
-\abs G \abs{X/G} = \sum_{g\in G} \abs {X^g}
-.$$
-
 **Orbit-Stabilizer**:
 $$
 \abs{G\cdot x} = [G: G_x] = \abs{G} / \abs{G_x}\quad \text{if $G$ is finite}
 $$
+
+> Mnemonic: $G/G_x \cong G\cdot x$
+
+**Burnside's Formula:**
+$$
+\abs{X/G} = \frac{1}{\abs G }\sum_{g\in G} \abs {X^g}
+.$$
 
 ## Sylow Theorems
 
