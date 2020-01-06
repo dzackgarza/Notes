@@ -126,6 +126,8 @@ k
 
 - $F/k$ algebraic and $L/F$ algebraic $\implies L/k$ algebraic.
 
+- If $
+
 \begin{center}
 \begin{tikzcd}
 L \arrow[d, bend right=49] \arrow[dd, dashed, bend left=49] \\
