@@ -238,7 +238,16 @@ $$
 
 where $\lambda_i$ are eigenvalues of $M$, $m_i$ is the multiplicity of $\lambda_i$.
 
-> *Proof*: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\mu_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\mu_M$: let $\vector v_i$ be the eigenvector associated to $\lambda_i$, so $\vector v_i \neq \vector 0$ and $M\vector v_i = \lambda_i \vector v_i$. Then by linearity $\mu_M(\lambda_i)\vector v_i = \mu_M(M)\vector v_i = \vector 0$, which forces $\mu_M(\lambda_i) = 0$.
+> *Proof*:
+> By Cayley-Hamilton, $\min_A$ divides $\chi_A$. 
+> Every $\lambda_i$ is a root of $\mu_M$: 
+> 
+> Let $(\vector v_i, \lambda_i)$ be a nontrivial eigenpair. 
+> Then by linearity 
+$$
+\min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0
+,$$ 
+> which forces $\min_A(\lambda_i) = 0$.
 
 **Lemma**:
 $M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear factors over $\FF$.
