@@ -121,6 +121,7 @@ TFAE:
 - The fixed field of $\mathrm{Aut}(L/k)$ is exactly $k$.
 
 **Fundamental Theorem of Galois Theory:**
+There is an contravariant correspondence
 
 
 ### Cyclotomic Polynomials
