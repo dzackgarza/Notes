@@ -38,6 +38,7 @@ $\spec_{\text{max}}(R) = \theset{\mm \normal R \suchthat \mm \text{ is maximal}}
 - $R[x]$ a PID $\implies R$ is a field.
 - $\FF$ is a field $\iff \FF$ is a commutative simple ring.
 - $R$ is a UFD $\iff R[x]$ is a UFD.
+- $R$ a PID $\implies R$ Noetherian
 
 **Lemma:**
 Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
