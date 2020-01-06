@@ -386,6 +386,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 - Every maximal is normal
 - Every maximal has index $p$
 - p-groups are *nilpotent*
+- p-groups are *solvable*
 
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
