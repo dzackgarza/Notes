@@ -1,5 +1,10 @@
 # Fields
 
+Lemma:
+$R$ a finite integral domain $\implies R$ is a field.
+
+Lemma:
+$R$ is a field $\iff$ 
 
 ## Finite Fields
 
