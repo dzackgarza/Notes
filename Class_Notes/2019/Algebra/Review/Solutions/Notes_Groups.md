@@ -358,6 +358,9 @@ G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 - Decompose each factor into coprime pieces, then order
 
 *Example:*
+\begin{align*}
+\mathbb{Z}_{26}\oplus\mathbb{Z}_{42}\oplus\mathbb{Z}_{49}\oplus\mathbb{Z}_{200}\oplus\mathbb{Z}_{1000}
+.\end{align*}
 
 
 *Going from elementary divisors to invariant factors:*
