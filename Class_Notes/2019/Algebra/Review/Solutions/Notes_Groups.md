@@ -418,7 +418,8 @@ TFAE
 - Normalizers grow (i.e.$H < N_G(H)$ whenever $H$ is proper)
 - Every Sylow-p subgroup is normal
 - $G$ is the direct product of its Sylow p-subgroups
-- $G$ has a terminating Lower Central Series
+- $G$ has a terminating *Lower* Central Series
+- $G$ has a terminating *Upper* Central Series
 
 **Lemmas**:
 
