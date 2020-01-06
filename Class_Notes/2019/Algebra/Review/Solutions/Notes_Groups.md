@@ -367,7 +367,7 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 > Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
 
 
-## Series of Groups
+## Special Classes of Groups
 
 **Definition:**
 If $\abs{G} = p^k$, then $G$ is a **p-group.**
@@ -395,13 +395,27 @@ TFAE
 - Normalizers grow (i.e.$H < N_G(H)$ whenever $H$ is proper)
 - Every Sylow-p subgroup is normal
 - $G$ is the direct product of its Sylow p-subgroups
+- $G$ has a terminating Lower Central Series
 
 **Lemmas**:
 
 - Finite abelian groups are nilpotent
 - Finite p-groups are nilpotent
 - A finite group is nilpotent iff maximals are normal
-- Nilpotent groups satisfy the 2 out of 3 propert.
+- Nilpotent groups satisfy the 2 out of 3 property.
+
+
+**Definition:**
+A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
+
+> If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
+
+**Definition:**
+A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. $G \to G^1 \to \cdots \to \theset{e}$ with $G^{i}/G^{i+1}$ abelian for all $i$.
+
+Equivalently, $G$ is solvable iff $G$ has a terminating *derived series*.
+
+## Series of Groups
 
 **Definition**:
 A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
@@ -415,7 +429,7 @@ Any two composition series of a group have the same length and isomorphic factor
 **Definition**
 A **derived series** of a group $G$ is a normal series $G \to G^1 \to G^2 \to \cdots$ where $G^{i+1} = [G^i, G^i]$ is the commutator subgroup.
 
-> The derived series terminates iff $G$ is solvable.
+> The derived series terminates iff $G$ is *solvable*.
 
 **Definition:**
 A **central series** for a group $G$ is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that each quotient is **central**, i.e. $[G, G^i] \leq G^{i-1}$ for all $i$.
@@ -432,15 +446,6 @@ An **upper central series** is a terminating normal series $G \to G^1 \to \cdots
 
 > Moral: Iterate taking "higher centers".
 
-**Definition:**
-A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
-
-> If $G$ is not simple, it is an extension of $N, G/N$ for any $N\normal G$.
-
-**Definition:**
-A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. $G \to G^1 \to \cdots \to \theset{e}$ with $G^{i}/G^{i+1}$ abelian for all $i$.
-
-Equivalently, $G$ is solvable iff $G$ has a terminating *derived series*.
 
 
 
