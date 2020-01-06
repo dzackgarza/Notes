@@ -115,6 +115,7 @@ Let $L/F/k$ be a finite tower of field extensions
   - *Proof (normal):* 
   $\min(\alpha, F) \divides \min(\alpha, k)$, so if the latter splits in $L$ then so does the former.
   - *Corollary:* $\alpha \in L$ algebraic over $k \implies \alpha$ algebraic over $F$.
+  - *Corollary:* $E_1/k$ normal and $E_2/k$ normal $\implies $E_1E_2/k$ normal.
 
 \begin{center}
 \begin{tikzcd}
