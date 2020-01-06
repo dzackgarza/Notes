@@ -111,7 +111,7 @@ Let $L/F/k$ be a finite tower of field extensions
 - $F/k$ Galois and $L/K$ Galois $\implies F/k$  Galois **only if** $\Gal(L/F) \normal \Gal(L/k)$
   - $\implies \Gal(F/k) \cong \frac{\Gal(L/k)}{\Gal(L/F)}$
 - $\alpha \in L$ algebraic over $k \implies \alpha$ algebraic over $F$.
-- $E, F$ normal over $k \implies $EF,E\intersect F$ normal over $k$.
+- $E, F$ normal over $k \implies EF,E\intersect F$ normal over $k$.
 
 **Common Counterexamples**:
 
