@@ -112,7 +112,7 @@ $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
 $$
 
-1. Let $G$ act on $S$, its set of *subgroups*, by conjugation
+1. Let $G$ act on $S$, its set of *subgroups*, by conjugation.
   
 - $G\cdot H$ is the **set of conjugate subgroups** of $H$
 
