@@ -9,7 +9,7 @@ A module is **simple** iff it has no nontrivial proper submodules.
 A nonzero unital ring $R$ is **semisimple** iff $R \cong \bigoplus_{i=1}^n M_i$ with each $M_i$ a simple module.
 
 **Theorem (Artin-Wedderubrn)**:
-If $R$ is a nonzero, unital, *semisimple* ring then $R \cong \bigoplus 
+If $R$ is a nonzero, unital, *semisimple* ring then $R \cong \bigoplus_{i=1}^m \mathrm{Mat}(n_i, D_i)$, a finite sum of matrix 
 
 **Definition:**
 A **free** module is a module with a basis (i.e. a spanning, linearly independent set).
