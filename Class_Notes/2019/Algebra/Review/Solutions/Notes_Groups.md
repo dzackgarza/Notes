@@ -14,7 +14,7 @@ $$
 $C_G(H) \leq N_G(H)$
 
 **Lemma:**
-The size of the conjugacy class of $H$ is the index of the centralizer, i.e. 
+The size of the conjugacy class of $H$ is the index of the centralizer, i.e.
 $$
 \abs{\theset{gHg\inv \suchthat g\in G}} = [G: C_G(H)]
 .$$
@@ -109,14 +109,14 @@ $$
 
 > *Corollary:*
 > The size of a conjugacy class is the index of the centralizer.
-> 
+>
 > *Corollary*: the **Class Equation**:
 $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
 $$
 
 1. Let $G$ act on $S$, its set of *subgroups*, by conjugation.
-  
+
 - $G\cdot H = \theset{gHg\inv}$ is the **set of conjugate subgroups** of $H$
 
 - $G_H = N_G(H)$ is the **normalizer** of in $G$ of $H$
@@ -132,7 +132,7 @@ $$
 - $(G/H)^G = \emptyset$
 
 > *Application:* If $G$ is simple, $H < G$ proper, and $[G:H] = n$, then there exists an injective map $\phi: G \injects S_n$.
-> 
+>
 > *Proof:* This action induces $\phi$; it is nontrivial since $gH = H$ for all $g$ implies $H = G$; $\ker \phi \normal G$ and $G$ simple implies $\ker \phi = 1$.
 
 **Burnside's Formula:**
