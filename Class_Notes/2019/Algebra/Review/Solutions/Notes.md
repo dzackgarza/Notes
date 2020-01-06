@@ -84,6 +84,9 @@ $$
 
 > Mnemonic: $G/G_x \cong G\cdot x$.
 
+> Examples:
+> - 
+
 **Burnside's Formula:**
 $$
 \abs{X/G} = \frac{1}{\abs G }\sum_{g\in G} \abs {X^g}
