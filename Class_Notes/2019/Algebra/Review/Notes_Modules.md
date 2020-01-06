@@ -24,6 +24,17 @@ If $0 \to A \to B \to C \to 0$ is a short exact sequence, then
 
 Moreover, if this sequence splits, then $B \cong A \oplus C$.
 
+## Classification of Modules over a PID
+
+Let $M$ be a finitely generated modules over a PID $R$.
+Then there is an invariant factor decomposition
+
+\begin{align*}
+M \cong F \bigoplus R/(r_i) \quad\text{where } r_1 \divides r_2 \divides \cdots
+,\end{align*}
+
+and similarly an elementary divisor decomposition.
+
 ## Minimal / Characteristic Polynomial
 
 **Finding the minimal polynomial:** 
@@ -94,16 +105,7 @@ By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq 
 >
 > $\Longleftarrow$: Longer proof, omitted.
 
-## Classification of Modules over a PID
 
-Let $M$ be a finitely generated modules over a PID $R$.
-Then there is an invariant factor decomposition
-
-\begin{align*}
-M \cong F \bigoplus R/(r_i) \quad\text{where } r_1 \divides r_2 \divides \cdots
-,\end{align*}
-
-and similarly an elementary divisor decomposition.
 
 ## Canonical Forms
 
