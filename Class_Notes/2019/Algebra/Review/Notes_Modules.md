@@ -1,5 +1,7 @@
 # Modules
 
+## General Modules
+
 **Definition:**
 A **free** module is a module with a basis (i.e. a spanning, linearly independent set).
 
@@ -22,9 +24,7 @@ If $0 \to A \to B \to C \to 0$ is a short exact sequence, then
 
 Moreover, if this sequence splits, then $B \cong A \oplus C$.
 
-## Linear Algebra
-
-### Minimal / Characteristic Polynomial
+## Minimal / Characteristic Polynomial
 
 **Finding the minimal polynomial:** 
 
@@ -34,7 +34,7 @@ Let $m(x)$ denote the minimal polynomial $A$.
 
 2. Pick any $\vector v$ and compute $T\vector v, T^2\vector v, \cdots T^k\vector v$ until a linear dependence is introduced. Write this as $p(T) = 0$; then $\chi(x) \ p(x)$.
 
-### Diagonalizability
+## Diagonalizability
 
 *Notation:* 
 $A^*$ denotes the conjugate tranpose of $A$.
@@ -162,7 +162,7 @@ then $a_i \leq b_i$, and
 
     - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
 
-### Rational Canonical Form
+## Rational Canonical Form
 
 Corresponds to the **Invariant Factor Decomposition** of $T$
 
