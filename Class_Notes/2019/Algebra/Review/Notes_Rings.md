@@ -27,9 +27,9 @@ $\spec_{\text{max}}(R) = \theset{\mm \normal R \suchthat \mm \text{ is maximal}}
 
 **Lemmas (Quotienting):**
 
-- $R/I$ is a domain $\iff I$ is prime
+- $R/I$ is a domain $\iff I$ is prime,
 - $R/I$ is a field $\iff I$ is maximal.
-- For $R$ a PID, $I$ is prime $\iff I$ is maximal
+- For $R$ a PID, $I$ is prime $\iff I$ is maximal.
 
 **Lemma (Characterizations of Rings):**
 
@@ -67,6 +67,9 @@ In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
 >
 > *Example of an irreducible that is not prime:*
 > $3\in \ZZ[\sqrt{-5}]$. Check norm to see irreducibility, but $3 \divides 9 = (2+\sqrt{-5})(2-\sqrt{-5})$ and doesn't divide either factor.
+
+**Lemma:**
+If $R$ is a PID, then every element in $R$ has a unique prime factorization.
 
 ## Nontrivial Properties
 

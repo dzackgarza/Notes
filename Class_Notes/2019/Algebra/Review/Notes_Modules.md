@@ -1,5 +1,27 @@
 # Modules
 
+**Definition:**
+A **free** module is a module with a basis (i.e. a spanning, linearly independent set).
+
+> *Example*: $\ZZ/(6)$ is a $\ZZ\dash$module that is *not* free.
+
+**Definition:**
+A module $M$ is **projective** iff $M$ is a direct summand of a free module $F = M \oplus \cdots$.
+
+> Free implies projective, but not the converse.
+
+**Definition:**
+A sequence of homomorphisms $0 \mapsvia{d_1} A \mapsvia{d_2} B \mapsvia{d_3} C \to 0$ is *exact* iff $\im d_i = \ker d_{i+1}$.
+
+**Lemma:**
+If $0 \to A \to B \to C \to 0$ is a short exact sequence, then
+
+- $C$ free $\implies$ the sequence splits
+- $C$ projective $\implies$ the sequence splits
+- $A$ injective $\implies$ the sequence splits
+
+Moreover, if this sequence splits, then $B \cong A \oplus C$.
+
 ## Linear Algebra
 
 ### Minimal / Characteristic Polynomial
@@ -55,13 +77,9 @@ where $\lambda_i$ are eigenvalues of $M$, $m_i$ is the multiplicity of $\lambda_
 > *Proof*: Since $\CC$ is algebraically closed, $p_M$ splits into linear factors where $\sum m_i = n$. By Cayley-Hamilton, $p_M$ annihilates $M$, and so by definition, $\mu_M$ divides $p_M$. Finally, every $\lambda_i$ is a root of $\mu_M$: let $\vector v_i$ be the eigenvector associated to $\lambda_i$, so $\vector v_i \neq \vector 0$ and $M\vector v_i = \lambda_i \vector v_i$. Then by linearity $\mu_M(\lambda_i)\vector v_i = \mu_M(M)\vector v_i = \vector 0$, which forces $\mu_M(\lambda_i) = 0$.
 
 **Lemma**:
-$$
-M \text{ is diagonalizable over }\FF
-\iff \\
-\min_M(x) \text{ splits into distinct linear factors over } \FF.
-$$
+$M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear factors over $\FF$.
 
-*(Equivalently, iff all of the roots of $\min_M$ lie in $\FF$)*
+> Equivalently, iff all of the roots of $\min_M$ lie in $\FF$.
 
 > *Proof*:
 >
@@ -75,6 +93,17 @@ where the last equality follows because $(M - I \lambda_i)\vector v_i = \vector 
 By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq n$, so this forces $\deg \mu_M = k$. But then we have two monic polynomials of degree $k$ with the same roots, forcing them to be identical.
 >
 > $\Longleftarrow$: Longer proof, omitted.
+
+## Classification of Modules over a PID
+
+Let $M$ be a finitely generated modules over a PID $R$.
+Then there is an invariant factor decomposition
+
+\begin{align*}
+M \cong F \bigoplus R/(r_i) \quad\text{where } r_1 \divides r_2 \divides \cdots
+,\end{align*}
+
+and similarly an elementary divisor decomposition.
 
 ## Canonical Forms
 

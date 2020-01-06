@@ -8,7 +8,9 @@ Let $k$ denote a field.
 - All fields are simple rings
 - Any homomorphism of fields is either 0 or injective
 - If $L/k$ is algebraic, then $\min(\alpha, L)$ divides $\min(\alpha, k)$.
-- Every finite extension is algebraic
+
+**Lemma:**
+Every finite extension is algebraic.
 
 **Eisenstein's Criterion:**
 If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ such that
@@ -31,11 +33,16 @@ Then a primitive $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $
 
 ## Finite Fields
 
+**Lemma:**
+If $\ch k = p$ then $(a+b)^p = a^p + b^p$ and $(ab)^p = a^p b^p$.
+
 **Theorem:**
 $\GF(p^n)\cong \displaystyle\frac{\FF_p}{(f)}$ where $f \in \FF_p[x]$ is any irreducible of degree $n$, and $\GF(p^n) \cong \FF[\alpha] \cong \spanof_\FF\theset{1, \alpha, \cdots, \alpha^{n-1}}$ for any root $\alpha$ of $f$.
 
 **Lemma:**
-$GF(p^n)$ is the splitting field of $x^{p^n} - x$ .
+$\GF(p^n)$ is the splitting field of $x^{p^n} - x$ .
+
+> Every element is a root by Cauchy's theorem, and the $p^n$ roots are distinct since its derivative is identically $-1$.
 
 **Lemma:**
 Let $\rho_n \definedas x^{p^n} - x$.
@@ -68,50 +75,81 @@ Then TFAE:
 
 - $L/k$ is **normal**.
 
-- Every embedding $\sigma: L \injects \overline k$ that is a lift of the identity on $k$ satisfies $\sigma(L) = L$.
-
 - Every irreducible $f\in k[x]$ that has one root in $L$ has *all* of its roots in $L$
   - i.e. every polynomial splits into linear factors
+
+- Every embedding $\sigma: L \injects \overline k$ that is a lift of the identity on $k$ satisfies $\sigma(L) = L$.
 
 - If $L$ is separable: $L$ is the splitting field of some irreducible $f\in k[x]$.
 
 **Definition:**
-A field extension $L/k$ is **separable** iff
+Let $L/k$ be a field extension, $\alpha \in L$ be arbitrary, and $f(x) \definedas\min(\alpha, k)$.
+TFAE:
 
-- For every $\alpha \in L, f(x) \definedas\min(\alpha, k)$ equivalently has
-  - No repeated factors/roots
-  - $f' \not\equiv 0$, or
-  - $\gcd(f, f') = 1$.
+- $L/k$ is **separable**
+- $f$ has no repeated factors/roots 
+- $\gcd(f, f') = 1$, i.e. $f$ is coprime to its derivative
+- $f' \not\equiv 0$
 
 > **Lemma:**
 If $\ch k = 0$ or $k$ is finite, then every *algebraic* extension $L/k$ is separable.
 
 **Definition:**
-$\aut(L/k) = \theset{\sigma: L \to L \suchthat \restrictionof{\sigma}{k} = \id_k}$
+$\aut(L/k) = \theset{\sigma: L \to L \suchthat \restrictionof{\sigma}{k} = \id_k}$.
+
+**Lemma:**
+If $L/k$ is algebraic, then $\Aut(L/k)$ permutes the roots of irreducible polynomials.
 
 **Lemma:**
 $\abs{\aut(L/k)} \leq [L: k]$ with equality precisely when $L/k$ is normal.
+
+**Definition:**
+If $L/k$ is Galois, we define $\Gal(L/k) \definedas \Aut(L/k)$.
 
 **Lemmas about towers:**
 Let $L/F/k$ be a finite tower of field extensions
 
 - Multiplicativity: $[L : k] = [L: F][F: k]$
-- $L/k$ normal $\implies L/F$ normal.
-  - Proof: $\min(\alpha, F) \divides \min(\alpha, k)$, so if the latter splits in $L$ then so does the former.
-- $L/k$ algebraic $\implies L/F$ algebraic
+
+- $L/k$ normal/algebraic/Galois $\implies L/F$ normal/algebraic/Galois.
+  - *Proof (normal):* 
+  $\min(\alpha, F) \divides \min(\alpha, k)$, so if the latter splits in $L$ then so does the former.
+  - *Corollary:* $\alpha \in L$ algebraic over $k \implies \alpha$ algebraic over $F$.
+
+\begin{center}
+\begin{tikzcd}
+L \arrow[d, dotted, bend right=49] \arrow[dd, bend left=49] \\
+F                                                           \\
+k                                                          
+\end{tikzcd}
+\end{center}
+
 - $F/k$ algebraic and $L/F$ algebraic $\implies L/k$ algebraic.
-- $L/k$ Galois $\implies L/F$ Galois.
+
+\begin{center}
+\begin{tikzcd}
+L \arrow[d, bend right=49] \arrow[dd, dashed, bend left=49] \\
+F \arrow[d, bend right=49]                                  \\
+k                                                          
+\end{tikzcd}
+\end{center}
+
 - $F/k$ Galois and $L/K$ Galois $\implies F/k$  Galois **only if** $\Gal(L/F) \normal \Gal(L/k)$
   - $\implies \Gal(F/k) \cong \frac{\Gal(L/k)}{\Gal(L/F)}$
-- $\alpha \in L$ algebraic over $k \implies \alpha$ algebraic over $F$.
+
+\begin{center}
+\begin{tikzcd}
+L \arrow[d, dotted, bend right=49] \arrow[dd, bend left=49] \\
+F \arrow[d, bend right=49]                                  \\
+k                                                          
+\end{tikzcd}
+\end{center}
+
 - $E, F$ normal over $k \implies EF,E\intersect F$ normal over $k$.
 
 **Common Counterexamples**:
 
 - $\QQ(\zeta_3, 2^{1/3})$ is normal but $\QQ(2^{1/3})$ is not since the irreducible polynomial $x^3 - 2$ has only one root in it.
-
-**Lemma:**
-Every quadratic extension is Galois.
 
 **Definition (Characterizations of Galois Extensions):**
 Let $L/k$ be a finite field extension.
@@ -134,24 +172,72 @@ H &\rightarrow \correspond{\text{The subfield fixed by $H$}} \\
 .\end{align*}
 
 - This is contravariant wrt subgroups/subfields.
+
 - $[F: k] = [G: H]$, so degrees of extensions over the base field correspond to indices of subgroups.
+
 - $[K : F] = \abs{H}$
+
 - $L/F$ is Galois and $Gal(K/F) = H$
+
 - $F/k$ is Galois $\iff H$ is normal, and $\Gal(F/k) = \Gal(L/k)/H$.
+
 - The compositum $F_1 F_2$ corresponds to $H_1 \intersect H_2$.
+
 - The subfield $F_1 \intersect F_2$ corresponds to $H_1 H_2$.
 
-### Cyclotomic Polynomials
+
+### Examples
+
+1. 
+$\Gal(\QQ(\zeta_n)/\QQ) \cong \ZZ/(n)\units$ and is generated by maps of the form $\zeta_n \mapsto \zeta_n^j$ where $(j, n) = 1$.
+
+    I.e., the following map is an isomorphism:
+\begin{align*}
+\ZZ/(n)\units &\to \Gal(\QQ(\zeta_n), \QQ) \\
+r \mod n &\mapsto (\phi_r: \zeta_n \mapsto \zeta_n^r )
+.\end{align*}
+
+2.
+$\Gal(\GF(p^n)/\FF_p) \cong \ZZ/(n)$, a cyclic group generated by powers of the Frobenius automorphism:
+\begin{align*}
+\varphi_p: \GF(p^n) &\to \GF(p^n) \\
+x &\mapsto x^p
+.\end{align*}
+
+**Theorem:**
+Every quadratic extension is Galois.
+
+**Definition:**
+TFAE
+
+- $k$ is a **perfect** field.
+
+- Every irreducible polynomial $p\in k[x]$ is separable
+
+- Every finite extension $F/k$ is separable.
+
+- If $\ch k > 0$, the Frobenius is an automorphism of $k$.
+
+**Theorem:**
+
+- If $\ch k = 0$ or $k$ is finite, then $k$ is perfect.
+
+- $k = \QQ, \FF_p$ are perfect, and any finite normal extension is Galois. 
+
+- Every splitting field of a polynomial over a perfect field is Galois.
+
+## Cyclotomic Polynomials
 
 **Definition:**
 Let $\zeta_n = e^{2\pi i/n}$, then
 $$
 \Phi_{n}(x)=\prod_{k=1 \atop (j, n)=1}^{n}\left(x- \zeta_n^k\right)
-$$
+,$$
+
+which is a product over primitive roots of unity.
 
 **Lemma:**
 $\deg \Phi_n(x) = \phi(n)$ for $\phi$ the totient function.
-
 
 **Computing $\Phi_n$:**
 
@@ -182,24 +268,6 @@ $$
 k\divides n \implies \Phi_{n k}(x)=\Phi_{n}\left(x^{k}\right)
 $$
 
-**Theorem:**
-$\Gal(\QQ(\zeta_n)/\QQ) \cong \ZZ/(n)\units$ and is generated by maps of the form $\zeta_n \mapsto \zeta_n^j$ where $(j, n) = 1$.
-
-I.e., the following map is an isomorphism:
-\begin{align*}
-\ZZ/(n)\units &\to \Gal(\QQ(\zeta_n), \QQ) \\
-r \mod n &\mapsto (\phi_r: \zeta_n \mapsto \zeta_n^r )
-.\end{align*}
-
-**Theorem**:
-$\Gal(\GF(p^n)/\FF_p) \cong \ZZ/(n)$, a cyclic group generated by the Frobenius
-\begin{align*}
-\varphi_p: \GF(p^n) &\to \GF(p^n) \\
-x &\mapsto x^p
-.\end{align*}
-
-- 
-
 **Definition:**
 An extension $F/k$ is **simple** if $F = k[\alpha]$ for a single element $\alpha$.
 
@@ -208,3 +276,4 @@ If $F/k$ is a finite separable extension, then it is simple.
 
 **Corollary:**
 $\GF(p^n)$ is a simple extension over $\FF_p$.
+

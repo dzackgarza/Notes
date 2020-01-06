@@ -1,0 +1,128 @@
+\contentsline {section}{\numberline {1}Thursday August 15th}{4}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Definitions}{4}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Preliminaries}{6}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Cyclic Groups}{6}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Homomorphisms}{7}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.5}Direct Products}{8}{subsection.1.5}% 
+\contentsline {subsection}{\numberline {1.6}Finitely Generated Abelian Groups}{8}{subsection.1.6}% 
+\contentsline {subsection}{\numberline {1.7}Fundamental Homomorphism Theorem}{8}{subsection.1.7}% 
+\contentsline {subsubsection}{\numberline {1.7.1}The First Homomorphism Theorem}{9}{subsubsection.1.7.1}% 
+\contentsline {subsubsection}{\numberline {1.7.2}The Second Theorem}{9}{subsubsection.1.7.2}% 
+\contentsline {section}{\numberline {2}Tuesday August 20th}{9}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}The Fundamental Homomorphism Theorems}{9}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Permutation Groups}{10}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Orbits and the Symmetric Group}{11}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Groups Acting on Sets}{12}{subsection.2.4}% 
+\contentsline {section}{\numberline {3}Thursday August 22nd}{13}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Group Actions}{13}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Burnside's Theorem}{13}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Sylow Theory}{14}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Class Functions}{15}{subsubsection.3.3.1}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Cauchy's Theorem}{16}{subsubsection.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Normalizers}{16}{subsubsection.3.3.3}% 
+\contentsline {section}{\numberline {4}Tuesday August 27th}{17}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Sylow Theorems}{17}{subsection.4.1}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Sylow 1}{17}{subsubsection.4.1.1}% 
+\contentsline {subsubsection}{\numberline {4.1.2}Sylow 2}{18}{subsubsection.4.1.2}% 
+\contentsline {subsubsection}{\numberline {4.1.3}Sylow 3}{18}{subsubsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.2}Applications of Sylow Theorems}{19}{subsection.4.2}% 
+\contentsline {section}{\numberline {5}Thursday August 29th}{20}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Classification of Groups of Certain Orders}{20}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Groups of Order 6}{21}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Groups of Order 10}{22}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.4}Groups of Order 8}{22}{subsection.5.4}% 
+\contentsline {subsection}{\numberline {5.5}Some Nice Facts}{23}{subsection.5.5}% 
+\contentsline {subsection}{\numberline {5.6}Simple Groups}{23}{subsection.5.6}% 
+\contentsline {subsection}{\numberline {5.7}Series of Groups}{24}{subsection.5.7}% 
+\contentsline {section}{\numberline {6}August 30th}{25}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Internal Direct Products}{25}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}Determination of groups of a given order}{26}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.3}Free Groups}{27}{subsection.6.3}% 
+\contentsline {subsection}{\numberline {6.4}Generators and Relations}{28}{subsection.6.4}% 
+\contentsline {section}{\numberline {7}September 9th}{28}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}Series of Groups}{28}{subsection.7.1}% 
+\contentsline {subsection}{\numberline {7.2}The Commutator Subgroup}{29}{subsection.7.2}% 
+\contentsline {subsection}{\numberline {7.3}Free Abelian Groups}{30}{subsection.7.3}% 
+\contentsline {section}{\numberline {8}Thursday September 5th}{31}{section.8}% 
+\contentsline {subsection}{\numberline {8.1}Rings}{31}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Field Extensions}{32}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}Algebraic and Transcendental Elements}{34}{subsection.8.3}% 
+\contentsline {subsection}{\numberline {8.4}Minimal Polynomials}{34}{subsection.8.4}% 
+\contentsline {section}{\numberline {9}Tuesday September 10th}{35}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Vector Spaces}{35}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Algebraic Extensions}{36}{subsection.9.2}% 
+\contentsline {subsection}{\numberline {9.3}Algebraic Closures}{37}{subsection.9.3}% 
+\contentsline {subsubsection}{\numberline {9.3.1}The Fundamental Theorem of Algebra}{37}{subsubsection.9.3.1}% 
+\contentsline {subsection}{\numberline {9.4}Geometric Constructions:}{38}{subsection.9.4}% 
+\contentsline {section}{\numberline {10}Thursday September 12th}{38}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}Geometric Constructions}{38}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {10.2}Finite Fields}{40}{subsection.10.2}% 
+\contentsline {section}{\numberline {11}Tuesday September 17th}{41}{section.11}% 
+\contentsline {subsection}{\numberline {11.1}Finite Fields and Roots of Polynomials}{41}{subsection.11.1}% 
+\contentsline {subsection}{\numberline {11.2}Simple Extensions}{42}{subsection.11.2}% 
+\contentsline {subsection}{\numberline {11.3}Automorphisms and Galois Theory}{43}{subsection.11.3}% 
+\contentsline {section}{\numberline {12}Thursday September 19th}{44}{section.12}% 
+\contentsline {subsection}{\numberline {12.1}Conjugates}{44}{subsection.12.1}% 
+\contentsline {subsection}{\numberline {12.2}Fixed Fields and Automorphisms}{45}{subsection.12.2}% 
+\contentsline {section}{\numberline {13}Tuesday October 1st}{47}{section.13}% 
+\contentsline {subsection}{\numberline {13.1}Isomorphism Extension Theorem}{47}{subsection.13.1}% 
+\contentsline {subsection}{\numberline {13.2}Separable Extensions}{51}{subsection.13.2}% 
+\contentsline {section}{\numberline {14}Thursday October 3rd}{53}{section.14}% 
+\contentsline {subsection}{\numberline {14.1}Perfect Fields}{55}{subsection.14.1}% 
+\contentsline {subsection}{\numberline {14.2}Primitive Elements}{56}{subsection.14.2}% 
+\contentsline {section}{\numberline {15}Tuesday October 8th}{56}{section.15}% 
+\contentsline {subsection}{\numberline {15.1}Splitting Fields}{56}{subsection.15.1}% 
+\contentsline {subsection}{\numberline {15.2}The Galois Correspondence}{60}{subsection.15.2}% 
+\contentsline {section}{\numberline {16}October 10th}{62}{section.16}% 
+\contentsline {subsection}{\numberline {16.1}Computation of Automorphisms}{62}{subsection.16.1}% 
+\contentsline {subsection}{\numberline {16.2}Fundamental Theorem of Galois Theory}{63}{subsection.16.2}% 
+\contentsline {section}{\numberline {17}Tuesday October 15th}{66}{section.17}% 
+\contentsline {subsection}{\numberline {17.1}Cyclotomic Extensions}{66}{subsection.17.1}% 
+\contentsline {subsection}{\numberline {17.2}Construction of n-gons}{67}{subsection.17.2}% 
+\contentsline {subsection}{\numberline {17.3}The Frobenius Automorphism}{68}{subsection.17.3}% 
+\contentsline {section}{\numberline {18}Thursday October 17th}{69}{section.18}% 
+\contentsline {subsection}{\numberline {18.1}Example Galois Group Computation}{69}{subsection.18.1}% 
+\contentsline {subsection}{\numberline {18.2}Insolubility of the Quintic}{69}{subsection.18.2}% 
+\contentsline {subsubsection}{\numberline {18.2.1}Symmetric Functions}{69}{subsubsection.18.2.1}% 
+\contentsline {subsubsection}{\numberline {18.2.2}Elementary Symmetric Functions}{70}{subsubsection.18.2.2}% 
+\contentsline {subsubsection}{\numberline {18.2.3}Extensions by Radicals}{71}{subsubsection.18.2.3}% 
+\contentsline {subsubsection}{\numberline {18.2.4}The Splitting Field of \(x^n-a\) is Solvable}{72}{subsubsection.18.2.4}% 
+\contentsline {section}{\numberline {19}Tuesday October 22nd}{72}{section.19}% 
+\contentsline {subsection}{\numberline {19.1}Certain Radical Extensions are Solvable}{72}{subsection.19.1}% 
+\contentsline {subsection}{\numberline {19.2}Proof: Insolubility of the Quintic}{73}{subsection.19.2}% 
+\contentsline {subsection}{\numberline {19.3}Rings and Modules}{74}{subsection.19.3}% 
+\contentsline {subsubsection}{\numberline {19.3.1}Modules}{74}{subsubsection.19.3.1}% 
+\contentsline {section}{\numberline {20}Thursday October 24}{75}{section.20}% 
+\contentsline {subsection}{\numberline {20.1}Conjugates}{75}{subsection.20.1}% 
+\contentsline {section}{\numberline {21}Tuesday October 29th}{77}{section.21}% 
+\contentsline {subsection}{\numberline {21.1}Exact Sequences}{77}{subsection.21.1}% 
+\contentsline {subsection}{\numberline {21.2}Free Modules}{78}{subsection.21.2}% 
+\contentsline {section}{\numberline {22}Tuesday November 5th}{81}{section.22}% 
+\contentsline {subsection}{\numberline {22.1}Free vs Projective Modules}{81}{subsection.22.1}% 
+\contentsline {subsection}{\numberline {22.2}Annihilators}{82}{subsection.22.2}% 
+\contentsline {subsection}{\numberline {22.3}Classification of Finitely Generated Modules Over a PID}{85}{subsection.22.3}% 
+\contentsline {section}{\numberline {23}Thursday November 7th}{85}{section.23}% 
+\contentsline {subsection}{\numberline {23.1}Projective Modules}{85}{subsection.23.1}% 
+\contentsline {subsection}{\numberline {23.2}Endomorphisms as Matrices}{87}{subsection.23.2}% 
+\contentsline {subsection}{\numberline {23.3}Matrices and Opposite Rings}{88}{subsection.23.3}% 
+\contentsline {section}{\numberline {24}Tuesday November 12th}{89}{section.24}% 
+\contentsline {subsection}{\numberline {24.1}Equivalence and Similarity}{89}{subsection.24.1}% 
+\contentsline {subsection}{\numberline {24.2}Review of Linear Algebra:}{90}{subsection.24.2}% 
+\contentsline {subsection}{\numberline {24.3}Canonical Forms}{91}{subsection.24.3}% 
+\contentsline {section}{\numberline {25}Thursday November 14th}{92}{section.25}% 
+\contentsline {subsection}{\numberline {25.1}Equivalence to Canonical Forms}{92}{subsection.25.1}% 
+\contentsline {subsection}{\numberline {25.2}Determinants}{92}{subsection.25.2}% 
+\contentsline {section}{\numberline {26}Tuesday November 19th}{95}{section.26}% 
+\contentsline {subsection}{\numberline {26.1}Determinants}{95}{subsection.26.1}% 
+\contentsline {subsubsection}{\numberline {26.1.1}Calculating Determinants}{96}{subsubsection.26.1.1}% 
+\contentsline {subsubsection}{\numberline {26.1.2}Decomposition of a Linear Transformation:}{96}{subsubsection.26.1.2}% 
+\contentsline {subsubsection}{\numberline {26.1.3}Finitely Generated Modules over a PID}{97}{subsubsection.26.1.3}% 
+\contentsline {subsubsection}{\numberline {26.1.4}Canonical Forms for Matrices}{98}{subsubsection.26.1.4}% 
+\contentsline {section}{\numberline {27}Thursday November 21}{99}{section.27}% 
+\contentsline {subsection}{\numberline {27.1}Cyclic Decomposition}{99}{subsection.27.1}% 
+\contentsline {section}{\numberline {28}Tuesday November 26th}{102}{section.28}% 
+\contentsline {subsection}{\numberline {28.1}Minimal and Characteristic Polynomials}{102}{subsection.28.1}% 
+\contentsline {subsection}{\numberline {28.2}Eigenvalues and Eigenvectors}{102}{subsection.28.2}% 
+\contentsline {section}{\numberline {29}Tuesday December 3rd}{103}{section.29}% 
+\contentsline {subsection}{\numberline {29.1}Similarity and Diagonalizability}{103}{subsection.29.1}% 
+\contentsline {section}{\numberline {30}Summary}{105}{section.30}% 

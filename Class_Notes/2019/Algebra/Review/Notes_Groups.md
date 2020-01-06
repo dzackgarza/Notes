@@ -1,5 +1,22 @@
 # Group Theory
 
+
+## Big List of Notation
+
+\begin{align*}
+C(x) 			=       &&  \theset{g\in G \mid gxg^{-1} = x}                 &&  \subseteq G       &&  \text{Centralizer} \\
+C_G(h) 		=       &&  \theset{ghg^{-1} \mid g\in G}                     &&  \subseteq G       &&  \text{Conjugacy Class} \\
+Gx 			=       &&  \theset{g.x \mid x\in X}                          &&  \subseteq X       &&  \text{Orbit} \\
+G_x 			=       &&  \theset{g\in G \mid g.x = x}                      &&  \subseteq G       &&  \text{Stabilizer} \\
+X_{g} = && \theset{x\in X \suchthat \forall g\in G,~ g.x = x} && \subseteq X && \text{Fixed Points} \\
+Z(G) 			=       &&  \theset{x\in G \mid \forall g\in G,~ gxg^{-1} = x} &&  \subseteq G       &&  \text{Center} \\
+\mathrm{Inn}(G) = &&  \theset{\phi_g(x) = gxg^{-1} }                 &&  \subseteq \Aut(G) &&  \text{Inner Aut.} \\
+\mathrm{Out}(G) = &&  \Aut(G) / \mathrm{Inn}(G)                      &&  \injects \Aut(G)  &&  \text{Outer Aut.} \\
+N(H) 			=       &&  \theset{g\in G \mid gHg^{-1} = H}                  &&  \subseteq G       &&  \text{Normalizer}
+\end{align*}
+
+## Basics
+
 **Definition (Centralizer)**:
 $$
 C_G(H) = \theset{g\in G \suchthat ghg\inv = h ~\forall h\in H}
@@ -14,23 +31,47 @@ $$
 $C_G(H) \leq N_G(H)$
 
 **Lemma:**
-The size of the conjugacy class of $H$ is the index of the centralizer, i.e.
+The size of the conjugacy class of $H$ is the index of its centralizer, i.e.
 $$
 \abs{\theset{gHg\inv \suchthat g\in G}} = [G: C_G(H)]
 .$$
+
+> Proof: Orbit-stabilizer.
 
 **Lemma ("The Fundamental Theorem of Cosets")**:
 $$
 aH = bH \iff a\inv b \in H \text{ or } aH \intersect bH = \emptyset
 $$
 
-Definition:
+**Definition**:
 $[x, y] = x\inv y\inv xy$ is the **commutator**, and $[G, G] \definedas \theset{[x, y] \suchthat x,y\in G}$ is the **commutator subgroup**.
 
 **Lemma:**
 $$
 [G,G] \leq H \text{ and } H \normal G \implies G/H \text{ is abelian. }
 $$
+
+
+**Lemmas:**
+
+- Every subgroup of a cyclic group is itself cyclic.
+- Intersections of subgroups are still subgroups
+  - Intersections of distinct coprime-order subgroups are trivial
+  - Intersections of subgroups of the same prime order are either trivial or equality
+
+- The Quaternion group has only one element of order 2, namely $-1$.
+
+  - They also have the presentation
+  \begin{align*}
+  Q &= \generators{x,y,z \mid x^2 = y^2 = z^2 = xyz = -1} \\
+    &= \generators{x, y \mid x^4 = y^4 = e, x^2 = y^2, yxy\inv = x\inv}
+  .\end{align*}
+
+- A dihedral group always has a presentation of the form
+  $$
+  D_n = \generators{x, y \mid x^n = y^2 = (xy)^2 = e}
+  ,$$
+  yielding at least 2 distinct elements of order 2.
 
 
 ## Finitely Generated Abelian Groups
@@ -128,14 +169,14 @@ A_4 =
 
 - The transitive subgroups of $S_3$ are $S_3, A_3$
 - The transitive subgroups of $S_4$ are $S_4, A_4, D_4, \ZZ_2^2, \ZZ_4$.
-- For $n=4, S_n$ has two normal subgroups: $A_4, \ZZ_2^2$.
-- For $n\geq 5, S_n$ one normal subgroup: $A_n$.
+- $S_4$ has two normal subgroups: $A_4, \ZZ_2^2$.
+- $S_{n\geq 5}$ has one normal subgroup: $A_n$.
 - $Z(S_n) = 1$ for $n\geq 3$
 - $Z(A_n) = 1$ for $n\geq 4$
 - $[S_n, S_n] = A_n$
 - $[A_4, A_4] \cong \ZZ_2^2$
-- $[A_n, A_n] = A_n$ for $n\geq 5$
-- $A_n$ is *simple* for $n\geq 5$.
+- $[A_n, A_n] = A_n$ for $n\geq 5$, so $A_{n\geq 5}$ is nonabelian.
+- $A_{n\geq 5}$ is *simple*.
 
 ## Counting Theorems
 
@@ -152,7 +193,7 @@ g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 .$$
 
 > **Warning:**
-Rhere does **not** necessarily exist $H \leq G$ with $\abs H = n$ for every $n \divides \abs{G}$.
+There does **not** necessarily exist $H \leq G$ with $\abs H = n$ for every $n \divides \abs{G}$.
 >
 > Counterexample:
 > $\abs{A_4} = 12$ but has no subgroup of order 6.
@@ -161,7 +202,7 @@ Rhere does **not** necessarily exist $H \leq G$ with $\abs H = n$ for every $n \
 
 For every prime $p$ dividing $\abs{G}$. there is an element (and thus a subgroup) of order $p$.
 
-> This is a partial converse to Lagrange's theorem.
+> This is a partial converse to Lagrange's theorem, and strengthened by Sylow's theorem.
 
 **Notation:**
 For a group $G$ acting on a set $X$,
@@ -192,7 +233,7 @@ $$
 - $G^g$ (the fixed points) is the **center** $Z(G)$.
 
 > *Corollary:*
-> The size of a conjugacy class is the index of the centralizer.
+> The number of conjugates of an element (i.e. the size of its conjugacy class) is the index of its centralizer, $[G: C_G(x)]$.
 >
 > *Corollary*: the **Class Equation**:
 $$
@@ -207,7 +248,9 @@ $$
 
 - $S^G$ is the set of **normal subgroups** of $G$
 
-3. For a fixed proper subgroup $H< G$, let $G$ act on its cosets $G/H = \theset{gH\suchthat g\in G}$ by left-multiplication.
+> Corollary: Given $H \leq G$, the number of conjugate subgroups is $[G: N_G(H)]$.
+
+1. For a fixed proper subgroup $H< G$, let $G$ act on its cosets $G/H = \theset{gH\suchthat g\in G}$ by left-multiplication.
 
 - $G\cdot gH = G/H$, i.e. this is a *transitive* action.
 
@@ -319,14 +362,14 @@ $G = N \semidirect_\psi H$ when
 h \mapsto h(\wait)h^{-1}
 .\end{align*}
 
-
-> *Lemma:* If $\sigma \in \Aut(H)$, then $N \semidirect_\psi H \cong N \semidirect_{\psi \circ \sigma} H$.
-
 **Useful Facts**
 
-- $\Aut(\prod_{k=1}^n \ZZ/(p)) = \GL(n, \ZZ/(p))$
+-  If $\sigma \in \Aut(H)$, then $N \semidirect_\psi H \cong N \semidirect_{\psi \circ \sigma} H$.
+- $\Aut((\ZZ/(p)^n) \cong \GL(n, \FF_p)$
   - If this occurs in a semidirect product, it suffices to consider similarity classes of matrices (i.e. just use canonical forms)
-- $\Aut(\ZZ_n) \cong (\ZZ^n)\units \cong \ZZ^{\varphi(n)}$ where $\varphi$ is the totient function.
+- $\Aut(\ZZ/(n)) \cong \ZZ/(n)\units \cong \ZZ/({\varphi(n)})$ where $\varphi$ is the totient function.
+  - $\varphi(p^k) = p^{k-1}(p-1)$
+- If $G, H$ have coprime order then $\Aut(G\oplus H) \cong \Aut(G) \oplus \Aut(H)$.
 
 
 ## Isomorphism Theorems
@@ -338,10 +381,11 @@ If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a sub
 
 If $S \leq G$ and $N \normal G$, then
 $$
-\frac{SN}{N} \cong \frac{S}{S\intersect N}
+\frac{SN}{N} \cong \frac{S}{S\intersect N} \quad \text{ and }\quad \abs{SN} = \frac{\abs S \abs N}{\abs{S\intersect N}}
 $$
 
-![Image](figures/2020-01-01-15-20-27.png)
+Mnemonic:
+![Image](figures/2020-01-01-15-20-27.png)\
 
 > Note: for this to make sense, we also have
 >
@@ -392,14 +436,20 @@ The **"2 out of 3 property"** is satisfied by a class of groups $\mathcal C$ iff
 **Definition:**
 If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
-**Lemmas:**
+**Facts about p-groups:**
 
 - p-groups have nontrivial centers
+
 - Every normal subgroup is contained in the center
+
 - Normalizers grow
+
 - Every maximal is normal
+
 - Every maximal has index $p$
+
 - p-groups are *nilpotent*
+
 - p-groups are *solvable*
 
 **Definition:**
