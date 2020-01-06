@@ -346,3 +346,8 @@ A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper cen
 
 ## Finitely Generated Abelian Groups
 
+Invariant factor decomposition:
+$$
+G \cong \ZZ^r \prod_{j=1}^m \ZZ/(n_j) 
+\quad \text{ where } n_1 \divides \cdots \divides n_m
+$$
