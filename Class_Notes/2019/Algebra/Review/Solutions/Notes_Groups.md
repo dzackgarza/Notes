@@ -351,3 +351,5 @@ $$
 G \cong \ZZ^r \prod_{j=1}^m \ZZ/(n_j) 
 \quad \text{ where } n_1 \divides \cdots \divides n_m
 .$$
+
+Going from elementary divisors to invariant factors
