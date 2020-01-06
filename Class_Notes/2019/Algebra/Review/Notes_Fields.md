@@ -33,6 +33,9 @@ Then a primitive $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $
 
 ## Finite Fields
 
+Definition:
+
+
 **Lemma:**
 If $\ch k = p$ then $(a+b)^p = a^p + b^p$ and $(ab)^p = a^p b^p$.
 
