@@ -66,9 +66,13 @@ If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ su
 
 then $f$ is irreducible.
 
+Definition:
+For $R$ a A polynomial $p\in R[x]$ is **primitive**
+
+
 **Gauss' Lemma**:
 Let $R$ be a UFD and $F$ its field of fractions. 
-Then $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $F[x]$ and $p$ is primitive in $R[x]$, i.e. 
+Then a primitive $p\in R[x]$ is irreducible in $R[x] \iff p$ is irreducible in $F[x]$.
 
 **Lemma:**
 Let $\rho_n \definedas x^{p^n} - x$.
