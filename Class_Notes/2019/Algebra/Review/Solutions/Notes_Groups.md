@@ -19,6 +19,11 @@ $$
 \abs{\theset{gHg\inv \suchthat g\in G}} = [G: C_G(H)]
 .$$
 
+**Lemma ("The Fundamental Theorem of Cosets")**:
+$$
+aH = bH \iff a\inv b \in H \text{ or } aH \intersect bH = \emptyset
+$$
+
 ## The Symmetric Group
 
 **Definitions:**
@@ -238,11 +243,6 @@ h \mapsto h(\wait)h^{-1}
 
 - $\Aut(\prod_{k=1}^n \ZZ/(p)) = \GL(n, \ZZ/(p))$
 
-Modifying the domain:
-**TODO**
-
-Modifying the codomain:
-**TODO**
 
 ## Isomorphism Theorems
 
