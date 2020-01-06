@@ -94,8 +94,7 @@ $$
 .$$
 
 
-
-## Sylow Theorems
+### Sylow Theorems
 
 **Notation**:
 For any $p$, let $\mathrm{Syl}_p(G)$ be the set of Sylow$\dash p$ subgroups of $G$.
