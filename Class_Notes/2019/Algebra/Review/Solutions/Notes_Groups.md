@@ -354,11 +354,12 @@ G \cong \ZZ^r \prod_{j=1}^m \ZZ/(n_j)
 
 Going from elementary divisors to invariant factors:
 
-- Collect by primes
+- Bin up by primes ocurring 
 - Take highest power from each prime as *last* invariant factor
 - Take highest power from all remaining primes as next, etc
 
-Example
+*Example:*
+Given the invariant factor decomposition
 \begin{align*}
 G = {\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{3}\times\mathbb{Z}_{3}\times\mathbb{Z}_{25}},
 .\end{align*}
@@ -367,17 +368,21 @@ G = {\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{3}\
 |---|---|---|
 |  2,2,2 |  3,3 | 5^2
 
-$n_m = 5^2 \cdot 3 \cdot 2$
+$\implies n_m = 5^2 \cdot 3 \cdot 2$
 
 | $p = 2$  | $p= 3$  | $p =5$ |
 |---|---|---|
 |  2,2 |  3 | $\emptyset$
 
-$n_{m-1} = 3 \cdot 2$
+$\implies n_{m-1} = 3 \cdot 2$
 
 | $p = 2$  | $p= 3$  | $p =5$ |
 |---|---|---|
 |  2 |  $\emptyset$ | $\emptyset$
 
-$n_{m-2} = 2$
+$\implies n_{m-2} = 2$
 
+and thus 
+\begin{align*}
+G \cong \ZZ/(2) \oplus \ZZ/(3\cdot 2) \oplus \ZZ/(5^2 \cdot 3 \cdot 2)
+.\end{align*}
