@@ -208,9 +208,6 @@ $$
 \chi_A(x) = \det(A - xI))= \det(SNF(A - xI))
 .$$
 
-- ? Invariant factors of $A$ are the invariant factors of $xI
-
-- $A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
 
 ## Matrix Counterexamples
 
