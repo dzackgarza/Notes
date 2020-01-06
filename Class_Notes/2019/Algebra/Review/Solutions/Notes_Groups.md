@@ -124,6 +124,11 @@ A_4 =
 (2,4,3)\}
 .\end{align*}
 
+Lemma:
+
+- The transitive subgroups of $S_3$ are $S_3, A_3$
+- The transitive subgroups of $S_4$ are $S_4, A_4, D_4, \ZZ_2^2, \ZZ_4$.
+
 ## Counting Theorems
 
 **Lagrange's Theorem**:
