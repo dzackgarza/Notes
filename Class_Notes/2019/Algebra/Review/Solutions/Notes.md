@@ -61,10 +61,7 @@ For every prime $p$ dividing $\abs{G}$. there is an element (and thus a subgroup
 > This is a partial converse to Lagrange's theorem.
 
 **Class Equation**:
-$$
-\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy class}}} [G: Z(x_i)]
-$$
-where $Z(x) \definedas C_G(x)$ is the centralizer of $x$, given by $C_G(x) = \theset{g \suchthat [g, x] = e}$.
+
 
 **Notation:**
 For a group $G$ acting on a set $X$,
@@ -87,7 +84,12 @@ $$
 > Examples:
 > 
 > - $G \actson \theset{H \suchthat H\leq G}$
->   - $G \cdot x 
+>   - $G \cdot x$ is the **conjugacy class** of $x$
+>   - $G_x = Z(x) \definedas C_G(x) = \theset{g \suchthat [g, x] = e}$, the **centralizer** of $x$.
+>   - Yields **Class Equation**:
+$$
+\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
+$$
 
 **Burnside's Formula:**
 $$
