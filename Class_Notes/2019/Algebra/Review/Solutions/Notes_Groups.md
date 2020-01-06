@@ -370,6 +370,9 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 ## Special Classes of Groups
 
 **Definition:**
+The "2 out of 3 property" is satisfied by a class of groups $\mathcal G$ iff whenever $G \in \mathcal G$, then $N, G/N \in \mathcal{G}$ for any $N \normal G$.
+
+**Definition:**
 If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
 **Properties:**
@@ -389,8 +392,11 @@ A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
 **Definition:**
 A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. $G \to G^1 \to \cdots \to \theset{e}$ with $G^{i}/G^{i+1}$ abelian for all $i$.
 
-> **Lemma:**
-> $G$ is solvable iff $G$ has a terminating *derived series*.
+**Lemmas:**
+
+- $G$ is solvable iff $G$ has a terminating *derived series*.
+- Solvable groups satisfy the 2 out of 3 property
+
 
 **Definition:**
 A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper central series, or lower central series.
