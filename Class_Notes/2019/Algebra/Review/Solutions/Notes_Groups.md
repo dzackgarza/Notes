@@ -363,3 +363,21 @@ Example
 G = {\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{3}\times\mathbb{Z}_{3}\times\mathbb{Z}_{25}},
 .\end{align*}
 
+| $p = 2$  | $p= 3$  | $p =5$ |
+|---|---|---|
+|  2,2,2 |  3,3 | 5^2
+
+$n_m = 5^2 \cdot 3 \cdot 2$
+
+| $p = 2$  | $p= 3$  | $p =5$ |
+|---|---|---|
+|  2,2 |  3 | $\emptyset$
+
+$n_{m-1} = 3 \cdot 2$
+
+| $p = 2$  | $p= 3$  | $p =5$ |
+|---|---|---|
+|  2 |  $\emptyset$ | $\emptyset$
+
+$n_{m-2} = 2$
+
