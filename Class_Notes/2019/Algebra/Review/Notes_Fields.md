@@ -1,6 +1,6 @@
 # Fields
 
-Let $\FF$ denote a field.
+Let $k$ denote a field.
 
 
 Lemmas:
@@ -8,7 +8,8 @@ Lemmas:
 - The characteristic of $\FF$ is either 0 or $p$ a prime.
 - All fields are simple rings
 - Any homomorphism of fields is either 0 or injective
-- If $L/\FF$ is algebraic, then $\min(\alpha, L)$ divides $\min(\alpha, \FF)$.
+- If $L/k$ is algebraic, then $\min(\alpha, L)$ divides $\min(\alpha, k)$.
+- Every finite extension is algebraic
 
 ## Finite Fields
 
@@ -94,7 +95,9 @@ Let $L/F/k$ be a tower of field extensions
 - $L/k$ Galois $\implies L/F$ Galois.
 - $F/k$ is Galois $\iff \Gal(L/F) \normal \Gal(L/k)$
   - $\implies \Gal(F/k) \cong \frac{\Gal(L/k)}{\Gal(L/F)}$
-- **Every** quadratic extension is Galois.
+
+Lemma:
+**Every** quadratic extension is Galois.
 
 ### Cyclotomic Polynomials
 
