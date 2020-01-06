@@ -38,6 +38,8 @@ Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Int
 Lemma:
 In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
 
+> Note: For $R$ an integral domain, prime $\implies$ irreducible, but generally not the converse.
+
 
 ## Finite Fields
 
