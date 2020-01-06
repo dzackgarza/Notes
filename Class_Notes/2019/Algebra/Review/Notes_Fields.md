@@ -27,7 +27,7 @@ An element $r\in R$ is irreducible iff $r = ab \implies a$ is a unit or $b$ is a
 Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
 
 - A Euclidean Domain that is not a field: $\FF[x]$ for $\FF$ a field
-  - *Proof*: Lemma, and $x$ is not invertible
+  - *Proof*: Use previous lemma, and $x$ is not invertible
 
 - A PID that is not a Euclidean Domain: $\ZZ\left[\frac{1 + \sqrt{-19}}{2}\right]$.
   - *Proof*: complicated.
