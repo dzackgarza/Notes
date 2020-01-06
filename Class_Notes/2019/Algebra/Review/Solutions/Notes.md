@@ -82,12 +82,14 @@ $$
 \abs{G\cdot x} = [G: G_x] = \abs{G} / \abs{G_x}\quad \text{if $G$ is finite}
 $$
 
-> Mnemonic: $G/G_x \cong G\cdot x$
+> Mnemonic: $G/G_x \cong G\cdot x$.
 
 **Burnside's Formula:**
 $$
 \abs{X/G} = \frac{1}{\abs G }\sum_{g\in G} \abs {X^g}
 .$$
+
+
 
 ## Sylow Theorems
 
