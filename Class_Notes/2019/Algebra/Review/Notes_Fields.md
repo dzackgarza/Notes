@@ -121,7 +121,16 @@ TFAE:
 - The fixed field of $\mathrm{Aut}(L/k)$ is exactly $k$.
 
 **Fundamental Theorem of Galois Theory:**
-There is an contravariant correspondence
+Let $L/k$ be a Galois extension, then there is an contravariant correspondence:
+\begin{align*}
+\correspond{\text{Subgroups } H \leq \Gal(L/k)}
+&\iff
+\correspond{\text{Fields }  F \text{ such}\\ \text{that } k~ \subseteq  F~ \leq L} \\
+H &\rightarrow \correspond{\text{The subfield fixed by $H$}} \\
+\correspond{\sigma \in \Gal(L/k) \suchthat \sigma(E) = E} &\leftarrow E
+.\end{align*}
+
+- $[K : E] = \abs{H}$, i.e. degrees correspond to sizes of subgroups
 
 
 ### Cyclotomic Polynomials
