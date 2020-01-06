@@ -51,7 +51,7 @@ Every finite field $F$ is isomorphic to a unique field of the form $\GF(p^n)$ an
 **Lemma (Containment of Finite Fields):**
 $\GF(p^\ell) \leq \GF(p^k) \iff \ell$ divides $k$.
 
-**Lemma:**
+**Lemma (Identification of Finite Fields as Splitting Fields):**
 $\GF(p^n)$ is the splitting field of $\rho(x) = x^{p^n} - x$, and the elements are exactly the roots of $\rho$.
 
 > Every element is a root by Cauchy's theorem, and the $p^n$ roots are distinct since its derivative is identically $-1$.
