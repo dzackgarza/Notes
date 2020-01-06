@@ -135,7 +135,12 @@ $M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear
 > Equivalently, iff all of the roots of $\min_M$ lie in $\FF$.
 
 > *Proof*:
+> $\implies$:
+> If $\min_A$ factors into linear factors, so does each invariant factor, so every elementary divisor is linear and $JCF(A)$ is diagonal.
 > 
+> $\impliedby$:
+> If $A$ is diagonalizable, every elementary divisor is linear, so every invariant factor factors into linear pieces. 
+> But the minimal polynomial is just the largest invariant factor.
 
 
 
