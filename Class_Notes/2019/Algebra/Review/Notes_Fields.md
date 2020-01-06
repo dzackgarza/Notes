@@ -46,7 +46,9 @@ If $\ch k = p$ then $(a+b)^p = a^p + b^p$ and $(ab)^p = a^p b^p$.
 $\GF(p^n)\cong \displaystyle\frac{\FF_p}{(f)}$ where $f \in \FF_p[x]$ is any irreducible of degree $n$, and $\GF(p^n) \cong \FF[\alpha] \cong \spanof_\FF\theset{1, \alpha, \cdots, \alpha^{n-1}}$ for any root $\alpha$ of $f$.
 
 **Lemma:**
-Every finite field $F$ is isomorphic to a unique field of the form $\GF(p^n)$ and if $\ch F = p$, it has prime subfield $\FF_p$. 
+Every finite field $F$ is isomorphic to a unique field of the form $\GF(p^n)$ and if $\ch F = p$, it has prime subfield $\FF_p$.
+
+
 
 **Lemma:**
 $\GF(p^n)$ is the splitting field of $\rho(x) = x^{p^n} - x$, and the elements are exactly the roots of $\rho$.
