@@ -199,3 +199,8 @@ x &\mapsto x^p
 .\end{align*}
 
 - Subfields
+
+**Definition:**
+An extension $F/k$ is **simple** if $F = k[\alpha]$ for a single element $\alpha$.
+
+**Theorem (Primitive Element):**
