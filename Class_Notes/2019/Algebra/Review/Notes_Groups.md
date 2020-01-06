@@ -37,7 +37,7 @@ $$
 
 Invariant factor decomposition:
 $$
-G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j) 
+G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 \quad \text{ where } n_1 \divides \cdots \divides n_m
 .$$
 
@@ -49,7 +49,7 @@ G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 *Example:*
 \begin{align*}
 &\ZZ/(2) \oplus \ZZ/(2) \oplus \ZZ/(2^3\cdot 5^2\cdot 7) \\
-\cong 
+\cong
 &\ZZ/(2) \oplus \ZZ/(2)\oplus
 \ZZ/(2^3) \oplus \ZZ/(5^2) \oplus \ZZ/(7) \\
 .\end{align*}
@@ -85,7 +85,7 @@ $\implies n_{m-1} = 3 \cdot 2$
 
 $\implies n_{m-2} = 2$
 
-and thus 
+and thus
 \begin{align*}
 G \cong \ZZ/(2) \oplus \ZZ/(3\cdot 2) \oplus \ZZ/(5^2 \cdot 3 \cdot 2)
 .\end{align*}
@@ -409,7 +409,7 @@ A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it h
 > >
 
 **Definition:**
-A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. 
+A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e.
 $$
 G \to G^1 \to \cdots \to \theset{e} \text{ with } G^{i}/G^{i+1}\text{ abelian for all } i
 .$$
@@ -479,8 +479,3 @@ A **lower central series** is a terminating normal series $G \to G^1 \to \cdots 
 An **upper central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^1 = Z(G)$ and $G^{i+1}$ is defined such that $G^{i+1}/G^i = Z(G^i)$.
 
 > Moral: Iterate taking "higher centers".
-
-
-
-
-
