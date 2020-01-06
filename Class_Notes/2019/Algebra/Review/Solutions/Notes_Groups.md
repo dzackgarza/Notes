@@ -124,13 +124,10 @@ A_4 =
 (2,4,3)\}
 .\end{align*}
 
-Lemma:
+**Lemmas:**
 
 - The transitive subgroups of $S_3$ are $S_3, A_3$
 - The transitive subgroups of $S_4$ are $S_4, A_4, D_4, \ZZ_2^2, \ZZ_4$.
-
-Lemma:
-
 - For $n=4, S_n$ has two normal subgroups: $A_4, \ZZ_2^2$.
 - For $n\geq 5, S_n$ one normal subgroup: $A_n$.
 - $Z(S_n) = 1$ for $n\geq 3$
