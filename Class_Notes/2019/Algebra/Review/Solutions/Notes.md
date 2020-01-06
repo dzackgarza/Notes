@@ -109,6 +109,8 @@ $$
 
 - $G_{gH} = gHg\inv$ is a *conjugate subgroup* of $H$
 
+- $(G/H)^G = \theset{e}
+
 **Burnside's Formula:**
 $$
 \abs{X/G} = \frac{1}{\abs G }\sum_{g\in G} \abs {X^g}
