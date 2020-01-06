@@ -14,8 +14,8 @@
 The **alternating group** is the subgroup of **even** permutations, i.e.
 $A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sign(\sigma) = (-1)^{m}$ where $m$ is the number of cycles of even length.
 
-**Corollary:**
-If $\sigma$ has an *even* number of *odd* cycles (i.e. an even number of *even-length* cycles) then $\sigma \in A_n$.
+>  **Corollary:**
+Every $\sigma \in A_n$ has an even number of *odd* cycles (i.e. an even number of *even-length* cycles).
 
 ## Group Actions
 
