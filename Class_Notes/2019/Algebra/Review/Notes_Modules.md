@@ -243,7 +243,7 @@ where $\lambda_i$ are eigenvalues of $M$, $m_i$ is the multiplicity of $\lambda_
 > Every $\lambda_i$ is a root of $\mu_M$: 
 > 
 > Let $(\vector v_i, \lambda_i)$ be a nontrivial eigenpair. 
-> Then by linearity 
+> Then by linearity,
 $$
 \min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0
 ,$$ 
