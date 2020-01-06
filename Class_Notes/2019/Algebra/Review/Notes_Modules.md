@@ -168,8 +168,8 @@ Writing
 - $a_i \leq b_i$
 - The roots both polynomials are precisely the eigenvalues of $A$.
 
-> Corollary (Cayley-Hamilton):
-> The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
+**Corollary (Cayley-Hamilton):**
+The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
 
 ### Rational Canonical Form
 
