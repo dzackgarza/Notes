@@ -24,15 +24,15 @@ Lemmas:
 Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
 
 - A Euclidean Domain that is not a field: $\FF[x]$ for $\FF$ a field
-  - Proof: Lemma, and $x$ is not invertible
+  - *Proof*: Lemma, and $x$ is not invertible
 - A PID that is not a Euclidean Domain: $\ZZ\left[\frac{1 + \sqrt{-19}}{2}\right]$.
-  - Proof: complicated.
+  - *Proof*: complicated.
 - A UFD that is not a PID: $\FF[x, y]$.
-  - Proof: $\generators{x, y}$ is not principal
+  - *Proof*: $\generators{x, y}$ is not principal
 -  An integral domain that is not a UFD: $\ZZ[\sqrt{-5}]$.
-   -  Proof: $(2+\sqrt{-5})(2-\sqrt{-5})=9=3\cdot 3$, where all factors are irreducible (check norm)
+   - *Proof*: $(2+\sqrt{-5})(2-\sqrt{-5})=9=3\cdot 3$, where all factors are irreducible (check norm)
 -  A ring that is not an integral domain: $\ZZ/(4)$.
-   -  Proof: $2 \mod 4$ is a zero divisor.
+   -  *Proof*: $2 \mod 4$ is a zero divisor.
 
 
 ## Finite Fields
