@@ -49,7 +49,7 @@ g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 .$$
 
 > **Warning:**
-If $n \divides \abs G$, then there does **not** necessarily exist $H \leq G$ with $\abs H = n$.
+Rhere does **not** necessarily exist $H \leq G$ with $\abs H = n$ for every $n \divides \abs{G}$.
 > 
 > Counterexample:
 > $G = A_4$ is size 12 but there is no subgroup of order 6.
