@@ -209,7 +209,7 @@ x &\mapsto x^p
 Every quadratic extension is Galois.
 
 **Lemma:**
-If $K$ is the splitting field of an irreducible polynomial $f\in \QQ[x]$, then $\Gal(K/\QQ) \leq S_n$ is a transitive subgroup.
+If $K$ is the splitting field of an irreducible polynomial of degree $n$, then $\Gal(K/\QQ) \leq S_n$ is a transitive subgroup.
 
 **Definition:**
 TFAE
