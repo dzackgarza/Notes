@@ -24,6 +24,27 @@ $$
 aH = bH \iff a\inv b \in H \text{ or } aH \intersect bH = \emptyset
 $$
 
+Definition:
+$[x, y] = x\inv y\inv xy$ is the **commutator**, and $[G, G] \definedas \theset{[x, y] \suchthat x,y\in G}$ is the **commutator subgroup**.
+
+**Lemma:**
+$$
+[G,G] \leq H \text{ and } H \normal G \implies G/H \text{ is abelian. }
+$$
+
+## p-Groups
+
+**Definition:**
+If $\abs{G} = p^k$, then $G$ is a **p-group.**
+
+**Properties:**
+
+- p-groups have nontrivial centers
+- Every normal subgroup is contained in the center
+- Normalizers grow
+- Every maximal is normal
+- Every maximal has index $p$
+
 ## The Symmetric Group
 
 **Definitions:**
