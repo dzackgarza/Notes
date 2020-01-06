@@ -60,18 +60,16 @@ $\GF(p^n)$ is the splitting field of $\rho(x) = x^{p^n} - x$, and the elements a
 Let $\rho_n \definedas x^{p^n} - x$.
 Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
-**Lemma:**
+> **Corollary:**
 $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i \in \FF_p[x]$ of degree $d$ dividing $n$.
-
+>
 > *Proof:*
 >
 > $\impliedby$:
->
 > Suppose $f$ is irreducible of degree $d$.
 > Then $f \divides x^{p^d} - x$ (consider $F[x]/\generators{f}$) and $x^{p^d} - x \divides x^{p^n} - x \iff d\divides n$.
 >
 > $\implies$:
->
 > - $\alpha \in \GF(p^n) \iff \alpha^{p^n} - \alpha = 0$, so every element is a root of $\phi_n$ and $\deg \min(\alpha, \FF_p) \divides n$ since $\FF_p(\alpha)$ is an intermediate extension.
 > - So if $f$ is an irreducible factor of $\phi_n$, $f$ is the minimal polynomial of some root $\alpha$ of $\phi_n$, so $\deg f \divides n$.
 > $\phi_n'(x) = p^nx^{p^{n-1}} \neq 0$, so $\phi_n$ has distinct roots and thus no repeated factors. So $\phi_n$ is the product of all such irreducible $f$.
