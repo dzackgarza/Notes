@@ -95,7 +95,7 @@ $$
 $$
 
 
-2. Let $G$ act on its subgroups by left-multiplication
+2. Let $G$ act on its set of *subgroups* by conjugation
   
 - $G\cdot H$ is the set of conjugate subgroups of $H$
 
