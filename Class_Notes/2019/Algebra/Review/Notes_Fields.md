@@ -20,7 +20,7 @@ An element $r\in R$ is irreducible iff $r = ab \implies a$ is a unit or $b$ is a
 - $R$ a finite integral domain $\implies R$ is a field.
 - $\FF$ a field $\implies \FF[x]$ is a Euclidean domain.
 - $R[x]$ a PID $\implies R$ is a field.
-- $R$ is a field $\iff R$ is a commutative simple ring.
+- $\FF$ is a field $\iff \FF$ is a commutative simple ring.
 - $R$ is a UFD $\iff R[x]$ is a UFD.
 
 **Lemma:**
