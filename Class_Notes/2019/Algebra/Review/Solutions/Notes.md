@@ -80,34 +80,39 @@ $$
 
 ### Examples of Orbit-Stabilizer
 
+ 
 1. Let $G$ act on itself by conjugation
 
-   - $G \cdot x$ is the **conjugacy class** of $x$
+- $G \cdot x$ is the **conjugacy class** of $x$
 
-   - $G_x = Z(x) \definedas C_G(x) = \theset{g \suchthat [g, x] = e}$, the **centralizer** of $x$.
+- $G_x = Z(x) \definedas C_G(x) = \theset{g \suchthat [g, x] = e}$, the **centralizer** of $x$.
 
-   - $G^g$ (the fixed points) is the **center** $Z(G)$.
+- $G^g$ (the fixed points) is the **center** $Z(G)$.
 
-   > This yields the **Class Equation**:
-   $$
-   \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
-   $$
+> This yields the **Class Equation**:
+$$
+\abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
+$$
 
 2. Let $G$ act on $S$, its set of *subgroups*, by conjugation
+  
+- $G\cdot H$ is the **set of conjugate subgroups** of $H$
 
-  - $G\cdot H$ is the **set of conjugate subgroups** of $H$
+- $G_H = N_G(H)$ is the **normalizer** of in $G$ of $H$
 
-  - $G_H = N_G(H)$ is the **normalizer** of in $G$ of $H$
-
-  - $S^G$ is the set of **normal subgroups** of $G$
+- $S^G$ is the set of **normal subgroups** of $G$
 
 3. For a fixed proper subgroup $H< G$, let $G$ act on its cosets $G/H = \theset{gH\suchthat g\in G}$ by left-multiplication.
 
-  - $G\cdot gH = G/H$, i.e. this is a *transitive* action.
+- $G\cdot gH = G/H$, i.e. this is a *transitive* action.
 
-  - $G_{gH} = gHg\inv$ is a *conjugate subgroup* of $H$
+- $G_{gH} = gHg\inv$ is a *conjugate subgroup* of $H$
 
-  - $(G/H)^G = \emptyset$
+- $(G/H)^G = \emptyset$
+
+> *Application:* If $G$ is simple, $H < G$ proper, and $[G:H] = n$, then there exists an injective map $\phi: G \injects S_n$.
+> 
+> *Proof:* The above action induces $\phi$; it is nontrivial since $gH = H$ for all $g$ implies $H = G$; $\ker \phi \normal G$ and $G$ simple implies $\ker \phi = 1$.
 
 **Burnside's Formula:**
 $$
