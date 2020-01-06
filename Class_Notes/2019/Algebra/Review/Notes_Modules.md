@@ -236,19 +236,9 @@ $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizabl
 
 > [Full details here](https://kconrad.math.uconn.edu/blurbs/linmultialg/minpolyandappns.pdf#page=9)
 
-**Characterizations of Diagonalizability**
+**Theorem (Characterizations of Diagonalizability)**
 
-Let $\min_M(x)$ denote the minimal polynomial of $A$ and $\chi_M(x)$ the characteristic polynomial.
-
-**Lemma**:
-
-
-
-
-**Lemma**:
-$M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear factors over $\FF$.
-
-> Equivalently, iff all of the roots of $\min_M$ lie in $\FF$.
+$M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear factors over $\FF$, or equivalently iff all of the roots of $\min_M$ lie in $\FF$.
 
 > *Proof*:
 > $\implies$:
