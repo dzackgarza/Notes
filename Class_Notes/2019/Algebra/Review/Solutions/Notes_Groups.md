@@ -172,12 +172,9 @@ Some useful facts:
 \forall p^n \text{ dividing } \abs{G} \quad \text{ there exists a subgroup of size } p^n
 .\end{align*}
 
-**Corollary (Partial Converse to Lagrange)**:
-$\forall p \divides \abs{G}$, there exists an element of order $p$.
-
 > If $\abs G = \prod p_i^{\alpha_i}$, then there exist subgroups of order $p_i^{\beta_i}$ for every $i$ and every $0 \leq \beta_i \leq \alpha_i$.
 
-### Sylow 2 (Conjugates)
+### Sylow 2 (Sylows are Conjugate)
 
 All sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
 \begin{align*}
@@ -185,7 +182,7 @@ S_p^1, S_p^2 \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^1
 .\end{align*}
 
 **Corollary**:
-$n_p = 1 \iff P \normal G$
+$n_p = 1 \iff S_p \normal G$
 
 ### Sylow 3 (Numerical Constraints)
 
@@ -204,8 +201,9 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 > *Proof:*
 > Let $H \leq G$ be a $p\dash$subgroup.
 > If $H$ is not *properly* contained in any other $p\dash$subgroup, it is a Sylow $p\dash$subgroup by definition.
+> 
 > Otherwise, it is contained in some $p\dash$subgroup $H^1$.
-> Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and (by Zorn's lemma?) $\union_i H^i$ is maximal and thus by definition a Sylow $p\dash$subgroup.
+> Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and by Zorn's lemma $H\definedas \union_i H^i$ is maximal and thus a Sylow $p\dash$subgroup.
 
 ## Products
 
