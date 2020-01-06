@@ -278,6 +278,7 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 > Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and by Zorn's lemma $H\definedas \union_i H^i$ is maximal and thus a Sylow $p\dash$subgroup.
 
 **Fratini's Argument**:
+If $H\normal G$ and $P \in \mathrm{Syl}_p(G)$, then $H N_G(P) = G$ and $[G: H]$ divides $\abs{N_G(P)}$.
 
 ## Products
 
