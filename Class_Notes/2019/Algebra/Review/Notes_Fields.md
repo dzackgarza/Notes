@@ -248,7 +248,7 @@ TFAE
 - Every splitting field of a polynomial over a perfect field is Galois.
 
 Lemma (Composite extensions):
-If $K/F$ is finite and Galois and $L/F$ is arbitrary, then 
+If $K/F$ is finite and Galois and $L/F$ is arbitrary, then $KL/L$ is Galois
 
 ## Cyclotomic Polynomials
 
