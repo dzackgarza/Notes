@@ -4,11 +4,11 @@
 
 **Definitions:**
 
-- Parity of a permutation: Even $\iff$ product of an even number of transpositions.
+- A cycle is **even** $\iff$ product of an *even* number of transpositions.
 
-  - A cycle of even length is odd
+  - A cycle of even *length* is **odd**
   
-  - A cycle of odd length is even
+  - A cycle of odd *length* is **even**
 
 **Definition**
 The **alternating group** is the subgroup of **even** permutations, i.e.
