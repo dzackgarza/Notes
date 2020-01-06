@@ -370,12 +370,12 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 ## Special Classes of Groups
 
 **Definition:**
-The **"2 out of 3 property"** is satisfied by a class of groups $\mathcal G$ iff whenever $G \in \mathcal G$, then $N, G/N \in \mathcal{G}$ for any $N \normal G$.
+The **"2 out of 3 property"** is satisfied by a class of groups $\mathcal C$ iff whenever $G \in \mathcal C$, then $N, G/N \in \mathcal{C}$ for any $N \normal G$.
 
 **Definition:**
 If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
-**Properties:**
+**Lemmas:**
 
 - p-groups have nontrivial centers
 - Every normal subgroup is contained in the center
@@ -387,7 +387,8 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$.
 
-> If $G$ is not simple, then for any $N\normal G$, $G \cong E$, an extension of the form $N\to E\to G/N$.
+**Lemma:**
+If $G$ is *not* simple, then for any $N\normal G$, $G \cong E$, an extension of the form $N\to E\to G/N$.
 
 **Definition:**
 A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. $G \to G^1 \to \cdots \to \theset{e}$ with $G^{i}/G^{i+1}$ abelian for all $i$.
