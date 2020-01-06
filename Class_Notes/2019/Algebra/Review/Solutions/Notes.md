@@ -1,11 +1,11 @@
 # Group Theory
 
-Definition **(Centralizer)**:
+**Definition (Centralizer)**:
 $$
 C_G(H) = \theset{g\in G \suchthat ghg\inv = h ~\forall h\in H}
 $$
 
-Definition **(Normalizer)**:
+**Definition (Normalizer)**:
 $$
 N_G(H) = \theset{g\in G \suchthat gHg\inv = H}
 $$
