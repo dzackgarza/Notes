@@ -89,15 +89,6 @@ $\aut(L/k) = \theset{\sigma: L \to L \suchthat \restrictionof{\sigma}{k} = \id_k
 **Lemma:**
 $\abs{\aut(L/k)} \leq [L: k]$ with equality precisely when $L/k$ is normal.
 
-**Definition (Characterizations of Galois Extensions):**
-Let $L/k$ be a finite field extension.
-TFAE:
-
-- $L/k$ is **Galois**
-- $L/k$ is finite, normal, and separable.
-- $L/k$ is the splitting field of a separable polynomial
-- $\abs{\aut(L/k)} = [L: k]$
-
 **Lemmas about towers:**
 Let $L/F/k$ be a finite tower of field extensions
 
@@ -118,6 +109,16 @@ Let $L/F/k$ be a finite tower of field extensions
 
 **Lemma:**
 Every quadratic extension is Galois.
+
+**Definition (Characterizations of Galois Extensions):**
+Let $L/k$ be a finite field extension.
+TFAE:
+
+- $L/k$ is **Galois**
+- $L/k$ is finite, normal, and separable.
+- $L/k$ is the splitting field of a separable polynomial
+- $\abs{\aut(L/k)} = [L: k]$
+- The fixed field of $\mathrm{Aut}(L/k)$ is exactly $k$.
 
 **Fundamental Theorem of Galois Theory:**
 
