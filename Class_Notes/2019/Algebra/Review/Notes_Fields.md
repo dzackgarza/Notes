@@ -130,7 +130,7 @@ H &\rightarrow \correspond{\text{The subfield fixed by $H$}} \\
 \correspond{\sigma \in \Gal(L/k) \suchthat \sigma(F) = F} &\leftarrow F
 .\end{align*}
 
-- This is contravariant wrt set inclusion
+- This is contravariant wrt subgroups/subfields.
 - $[F: k] = [G: H]$, so degrees of extensions over the base field correspond to indices of subgroups.
 - $[K : F] = \abs{H}$
 - $L/F$ is Galois and $Gal(K/F) = H$
