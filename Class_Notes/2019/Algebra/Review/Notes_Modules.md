@@ -110,7 +110,8 @@ and similarly an elementary divisor decomposition.
 Fix $T: V\to V$, and decompositions
 
 \begin{align*}
-V = \bigoplus_{j=1}^n \frac{k[x]}{(f_j)} \quad \text{(invariant factors)}
+V = \bigoplus_{j=1}^n \frac{k[x]}{(f_j)} &\quad \text{(invariant factors)}\\
+V = \bigoplus_{j=1}^n \frac{k[x]}{(p_j^{k_j})} &\quad \text{(elementary divisors)}
 .\end{align*}
 
 Fix some notation:
@@ -132,47 +133,7 @@ Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
 
   - They have the same JCF
 
-### Rational Canonical Form
-
-Corresponds to the **Invariant Factor Decomposition** of $T$
-
-**Derivation**:
-
-- Let $k[x] \actson V$ using $T$, take invariant factors $a_i$,
-
-- Note that $T\actson V$ by multiplication by $x$
-
-- Write $\overline x = \pi(x)$ where $F[x] \mapsvia{\pi} F[x]/(a_i)$; then $\spanof\theset{\overline x} = F[x]/(a_i)$.
-
-- Write $a_i(x) = \sum b_i x^i$, note that $V \to F[x]$ pushes $T\actson V$ to $T\actson k[x]$ by multiplication by $\overline x$
-
-- WRT the basis $\overline x$, $T$ then acts via the companion matrix on this summand.
-
-- Each invariant factor corresponds to a block of the RCF.
-
-**Lemma**:
-For a linear operator on a vector space of nonzero finite dimension, TFAE:
-
-  - The minimal polynomial is equal to the characteristic polynomial.
-
-  - The list of invariant factors has length one.
-
-  - The Rational Canonical Form has a single block.
-
-  - The operator has a matrix similar to a companion matrix.
-
-  - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
-
-  - $T$ has $\dim V$ distinct eigenvalues
-
-### Jordan Canonical Form
-
-Corresponds to the **Elementary Divisor Decomposition** of $T$
-
-**Derivation**
-Todo
-
-**Facts**:
+## Polynomial Information
 
 - The following can be read directly off of the invariant factor decomposition:
 
@@ -201,16 +162,55 @@ then $a_i \leq b_i$, and
 
     - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
 
+### Rational Canonical Form
+
+Corresponds to the **Invariant Factor Decomposition** of $T$
+
+> **Derivation**:
+>
+>- Let $k[x] \actson V$ using $T$, take invariant factors $a_i$,
+>
+>- Note that $T\actson V$ by multiplication by $x$
+>
+>- Write $\overline x = \pi(x)$ where $F[x] \mapsvia{\pi} F[x]/(a_i)$; then $\spanof\theset{\overline x} = F[x]/(a_i)$.
+>
+> - Write $a_i(x) = \sum b_i x^i$, note that $V \to F[x]$ pushes $T\actson V$ to $T\actson k[x]$ by multiplication by $\overline x$
+>
+> - WRT the basis $\overline x$, $T$ then acts via the companion matrix on this summand.
+>
+> - Each invariant factor corresponds to a block of the RCF.
+
+**Lemma**:
+For a linear operator on a vector space of nonzero finite dimension, TFAE:
+
+  - The minimal polynomial is equal to the characteristic polynomial.
+
+  - The list of invariant factors has length one.
+
+  - The Rational Canonical Form has a single block.
+
+  - The operator has a matrix similar to a companion matrix.
+
+  - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
+
+  - $T$ has $\dim V$ distinct eigenvalues
+
+### Jordan Canonical Form
+
+Corresponds to the **Elementary Divisor Decomposition** of $T$.
+
+**Facts**:
+
 - The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
 
 - For characteristic polynomials
 $$
-p(x) = \det(A - x1))= \det(SNF(A - x1))
+p(x) = \det(A - xI))= \det(SNF(A - xI))
 .$$
 
 - ? Invariant factors of $A$ are the invariant factors of $xI
 
-- A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
+- $A$ over $k[x]$, and $\prod a_i = \det(xI - A)$.
 
 ## Matrix Counterexamples
 
