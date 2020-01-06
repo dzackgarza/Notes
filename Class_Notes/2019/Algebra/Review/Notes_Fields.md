@@ -125,13 +125,13 @@ Let $L/k$ be a Galois extension, then there is an contravariant correspondence:
 \begin{align*}
 \correspond{\text{Subgroups } H \leq \Gal(L/k)}
 &\iff
-\correspond{\text{Fields }  F \text{ such}\\ \text{that } k~ \subseteq  F~ \leq L} \\
+\correspond{\text{Fields }  F \text{ such}\\ \text{that } L/F/k} \\
 H &\rightarrow \correspond{\text{The subfield fixed by $H$}} \\
 \correspond{\sigma \in \Gal(L/k) \suchthat \sigma(F) = F} &\leftarrow F
 .\end{align*}
 
 - $[F: k] = [G: H]$, so degrees of extensions over the base field correspond to indices of subgroups.
-- $[K : F] = \abs{H}$, i.e. degrees correspond to sizes of subgroups
+- $[K : F] = \abs{H}$
 
 
 ### Cyclotomic Polynomials
