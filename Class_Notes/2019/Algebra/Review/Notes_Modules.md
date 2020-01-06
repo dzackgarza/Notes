@@ -39,8 +39,8 @@ and similarly an elementary divisor decomposition.
 
 Fix some notation:
 \begin{align*}
-\chi_T(x): \quad & \text{The characteristic polynomial of } A \\
-\min_T(x): \quad & \text{The minimal polynomial of } A
+\min_A(x): \quad & \text{The minimal polynomial of } A \\
+\chi_A(x): \quad & \text{The characteristic polynomial of } A
 .\end{align*}
 
 **Definition:**
