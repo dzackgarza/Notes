@@ -56,7 +56,7 @@ $\GF(p^n)$ is the splitting field of $\rho(x) = x^{p^n} - x$, and the elements a
 
 > Every element is a root by Cauchy's theorem, and the $p^n$ roots are distinct since its derivative is identically $-1$.
 
-**Lemma (Finite Fields ):**
+**Lemma:**
 Let $\rho_n \definedas x^{p^n} - x$.
 Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 
