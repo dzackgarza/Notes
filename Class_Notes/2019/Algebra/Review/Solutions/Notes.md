@@ -107,7 +107,7 @@ $$
 
 - $G\cdot gH = G/H$, i.e. this is a *transitive* action.
 
-- 
+- $G_{gH} = gHg\inv$
 
 **Burnside's Formula:**
 $$
