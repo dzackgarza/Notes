@@ -1,6 +1,13 @@
 # Rings
 
-## Definitions and Basics
+**Definition:**
+A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
+
+**Definition:**
+An element $r\in R$ is **irreducible** iff $r = ab \implies a$ is a unit or $b$ is a unit.
+
+**Definition:**
+An element $r\in R$ is **prime** iff $ab \divides r \implies a\divides r$ or $b\divides r$ whenever $a,b$ are nonzero and not units.
 
 **Definition:**
 $\mathfrak{p}$ is a **prime** ideal $\iff ab\in \mathfrak p \implies a\in \mathfrak p$ or $b\in \mathfrak p$.
@@ -15,15 +22,6 @@ $\mathfrak m$ is **maximal** $\iff I \normalneq R \implies I \subseteq \mathfrak
 $\spec_{\text{max}}(R) = \theset{\mm \normal R \suchthat \mm \text{ is maximal}}$ is the **max-spectrum** of $R$.
 
 > Note: nonstandard notation / definition.
-
-**Definition:**
-A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
-
-**Definition:**
-An element $r\in R$ is **prime** iff $ab \divides r \implies a\divides r$ or $b\divides r$ whenever $a,b$ are nonzero and not units.
-
-**Definition:**
-An element $r\in R$ is **irreducible** iff $r = ab \implies a$ is a unit or $b$ is a unit.
 
 **Lemmas (Quotienting):**
 
