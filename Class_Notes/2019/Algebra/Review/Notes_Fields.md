@@ -1,56 +1,5 @@
 # Fields
 
-**Definition:**
-A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
-
-**Definition:**
-An element $r\in R$ is **prime** iff $ab \divides r \implies a\divides r$ or $b\divides r$ whenever $a,b$ are nonzero and not units.
-
-**Definition:**
-An element $r\in R$ is irreducible iff $r = ab \implies a$ is a unit or $b$ is a unit.
-
-**Lemmas:**
-
-- $R/I$ is a domain $\iff I$ is prime
-- $R/I$ is a field $\iff I$ is maximal.
-- For $R$ a PID, $I$ is prime $\iff I$ is maximal
-
-**Lemma (Characterizations of Rings):**
-
-- $R$ a finite integral domain $\implies R$ is a field.
-- $\FF$ a field $\implies \FF[x]$ is a Euclidean domain.
-- $R[x]$ a PID $\implies R$ is a field.
-- $\FF$ is a field $\iff \FF$ is a commutative simple ring.
-- $R$ is a UFD $\iff R[x]$ is a UFD.
-
-**Lemma:**
-Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
-
-- A Euclidean Domain that is not a field: $\FF[x]$ for $\FF$ a field
-  - *Proof*: Use previous lemma, and $x$ is not invertible
-
-- A PID that is not a Euclidean Domain: $\ZZ\left[\frac{1 + \sqrt{-19}}{2}\right]$.
-  - *Proof*: complicated.
-
-- A UFD that is not a PID: $\FF[x, y]$.
-  - *Proof*: $\generators{x, y}$ is not principal
-
--  An integral domain that is not a UFD: $\ZZ[\sqrt{-5}]$
-   - *Proof*: $(2+\sqrt{-5})(2-\sqrt{-5})=9=3\cdot 3$, where all factors are irreducible (check norm).
-
--  A ring that is not an integral domain: $\ZZ/(4)$
-   - *Proof*: $2 \mod 4$ is a zero divisor.
-
-**Lemma:**
-In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
-
-> Note: For $R$ an integral domain, prime $\implies$ irreducible, but generally not the converse.
->
-> *Example of a prime that is not irreducible:*
-> $x^2 \mod (x^2 + x) \in \QQ[x]/(x^2 + x)$. Check that $x$ is prime directly, but $x=x\cdot x$ and $x$ is not a unit.
->
-> *Example of an irreducible that is not prime:*
-> $3\in \ZZ[\sqrt{-5}]$. Check norm to see irreducibility, but $3 \divides 9 = (2+\sqrt{-5})(2-\sqrt{-5})$ and doesn't divide either factor.
 
 
 ## Finite Fields
