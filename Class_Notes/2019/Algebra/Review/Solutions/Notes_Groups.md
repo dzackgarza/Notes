@@ -133,6 +133,12 @@ Lemma:
 
 - For $n=4, S_n$ has two normal subgroups: $A_4, \ZZ_2^2$.
 - For $n\geq 5, S_n$ one normal subgroup: $A_n$.
+- $Z(S_n) = 1$ for $n\geq 3$
+- $Z(A_n) = 1$ for $n\geq 4$
+- $[S_n, S_n] = A_n$
+- $[A_4, A_4] \cong \ZZ_2^2$
+- $[A_n, A_n] = A_n$ for $n\geq 5$
+- $A_n$ is *simple* for $n\geq 5$.
 
 ## Counting Theorems
 
