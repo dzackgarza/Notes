@@ -106,21 +106,6 @@ C_p \definedas
 
 ### Polynomial Information
 
-
-**Lemma:**
-The characteristic polynomial is the *product of the invariant factors*, i.e.
-$$
-\chi_A(x) = \prod_{j=1}^n f_j(x)
-.$$
-
-**Lemma**:
-The minimal polynomial of $A$ is the *invariant factor of highest degree*, i.e.
-$$
-\min_A(x) = f_n(x)
-.$$
-
-
-
 ### Rational Canonical Form
 
 Corresponds to the **Invariant Factor Decomposition** of $T$.
@@ -165,6 +150,18 @@ Writing
   - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
 
 ## Using Canonical Forms
+
+**Lemma:**
+The characteristic polynomial is the *product of the invariant factors*, i.e.
+$$
+\chi_A(x) = \prod_{j=1}^n f_j(x)
+.$$
+
+**Lemma**:
+The minimal polynomial of $A$ is the *invariant factor of highest degree*, i.e.
+$$
+\min_A(x) = f_n(x)
+.$$
 
 **Lemma**:
 For a linear operator on a vector space of nonzero finite dimension, TFAE:
