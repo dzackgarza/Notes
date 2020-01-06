@@ -206,7 +206,7 @@ Every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
 > *Proof:*
 > Let $H \leq G$ be a $p\dash$subgroup.
 > If $H$ is not *properly* contained in any other $p\dash$subgroup, it is a Sylow $p\dash$subgroup by definition.
-> 
+>
 > Otherwise, it is contained in some $p\dash$subgroup $H^1$.
 > Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and by Zorn's lemma $H\definedas \union_i H^i$ is maximal and thus a Sylow $p\dash$subgroup.
 
@@ -251,7 +251,7 @@ If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a sub
 
 **Diamond Theorem / 2nd Isomorphism Theorem**:
 
-If $S \leq G$ and $N \normal G$, then 
+If $S \leq G$ and $N \normal G$, then
 $$
 \frac{SN}{N} \cong \frac{S}{S\intersect N}
 $$
@@ -259,7 +259,7 @@ $$
 ![](2020-01-01-15-20-27.png)
 
 > Note: for this to make sense, we also have
-> 
+>
 > - $SN \leq G$,
 > - $S\intersect N \normal S$,
 
