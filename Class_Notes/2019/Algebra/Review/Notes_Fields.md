@@ -100,8 +100,9 @@ TFAE:
 - $\abs{\aut(L/k)} = [L: k]$
 
 **Lemmas about towers:**
-Let $L/F/k$ be a tower of field extensions
+Let $L/F/k$ be a finite tower of field extensions
 
+- Multiplicativity: $[L : k] = [L: F][F: k]$
 - $L/k$ normal $\implies L/F$ normal.
   - Proof: $\min(\alpha, F) \divides \min(\alpha, k)$, so if the latter splits in $L$ then so does the former.
 - $L/k$ Galois $\implies L/F$ Galois.
