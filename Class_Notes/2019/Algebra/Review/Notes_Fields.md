@@ -86,7 +86,7 @@ If $\ch k = 0$ or $k$ is finite, then every *algebraic* extension $L/k$ is separ
 
 Definition:
 
-Lemma:
+**Lemma:**
 $\abs{\aut(L/k)} \leq [L: k]$ with equality precisely when $L/k$ is normal.
 
 **Definition (Characterizations of Galois Extensions):**
