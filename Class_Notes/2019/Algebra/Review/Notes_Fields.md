@@ -67,7 +67,7 @@ If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ su
 then $f$ is irreducible.
 
 Definition:
-For $R$ a A polynomial $p\in R[x]$ is **primitive**
+For $R$ a GCD domain, A polynomial $p\in R[x]$ is **primitive**
 
 
 **Gauss' Lemma**:
