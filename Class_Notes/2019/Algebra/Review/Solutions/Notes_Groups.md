@@ -369,6 +369,43 @@ In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotien
 
 ## Series of Groups
 
+**Definition:**
+A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper central series, or lower central series.
+
+> Moral: the adjoint map is nilpotent.
+
+> Nilpotent $\implies$ nontrivial center, solvable, normalizers grow, equal to direct product of Sylows, normal subgroups of $d$ for every divisor $d$ of $\abs G$.
+
+**Lemma:**
+TFAE
+
+- $G$ is nilpotent
+- Normalizers grow (i.e.$H < N_G(H)$ whenever $H$ is proper)
+- Every Sylow-p subgroup is normal
+- $G$ is the direct product of its Sylow p-subgroups
+
+**Lemmas**:
+
+- Finite abelian groups are nilpotent
+- Finite p-groups are nilpotent
+- A finite group is nilpotent iff maximals are normal
+- Nilpotent groups satisfy the 2 out of 3 propert.
+
+
+## p-Groups
+
+**Definition:**
+If $\abs{G} = p^k$, then $G$ is a **p-group.**
+
+**Properties:**
+
+- p-groups have nontrivial centers
+- Every normal subgroup is contained in the center
+- Normalizers grow
+- Every maximal is normal
+- Every maximal has index $p$
+- p-groups are *nilpotent*
+
 **Definition**:
 A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
 
@@ -391,6 +428,8 @@ A **lower central series** is a terminating normal series $G \to G^1 \to \cdots 
 
 > Moral: Iterate the adjoint map $[\wait, G]$.
 
+> $G$ is nilpotent $\iff$ the LCS terminates.
+
 **Definition:**
 An **upper central series** is a terminating normal series $G \to G^1 \to \cdots \to \theset{e}$ such that $G^1 = Z(G)$ and $G^{i+1}$ is defined such that $G^{i+1}/G^i = Z(G^i)$.
 
@@ -406,34 +445,6 @@ A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian
 
 Equivalently, $G$ is solvable iff $G$ has a terminating *derived series*.
 
-**Definition:**
-A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper central series, or lower central series.
 
-> Moral: the adjoint map is nilpotent.
-
-> Nilpotent $\implies$ nontrivial center, solvable, normalizers grow, equal to direct product of Sylows, normal subgroups of $d$ for every divisor $d$ of $\abs G$.
-
-**Lemma:**
-TFAE
-
-- $G$ is nilpotent
-- Normalizers grow (i.e.$H < N_G(H)$ whenever $H$ is proper)
-- Every Sylow-p subgroup is normal
-- $G$ is the direct product of its Sylow p-subgroups
-
-
-## p-Groups
-
-**Definition:**
-If $\abs{G} = p^k$, then $G$ is a **p-group.**
-
-**Properties:**
-
-- p-groups have nontrivial centers
-- Every normal subgroup is contained in the center
-- Normalizers grow
-- Every maximal is normal
-- Every maximal has index $p$
-- p-groups are nilpotent
 
 
