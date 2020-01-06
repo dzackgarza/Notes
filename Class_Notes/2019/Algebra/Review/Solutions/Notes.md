@@ -10,6 +10,9 @@ $$
 N_G(H) = \theset{g\in G \suchthat gHg\inv = H}
 $$
 
+**Lemma:**
+$C_G(H) \leq N_G(H)$
+
 ## The Symmetric Group
 
 **Definitions:**
