@@ -354,7 +354,7 @@ G \cong \ZZ^r \prod_{j=1}^m \ZZ/(n_j)
 
 Going from elementary divisors to invariant factors:
 
-- Bin up by primes ocurring 
+- Bin up by primes occurring (keeping exponents)
 - Take highest power from each prime as *last* invariant factor
 - Take highest power from all remaining primes as next, etc
 
@@ -366,19 +366,19 @@ G = {\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{2}\times\mathbb{Z}_{3}\
 
 | $p = 2$  | $p= 3$  | $p =5$ |
 |---|---|---|
-|  2,2,2 |  3,3 | 5^2
+|  $2,2,2$ |  $3,3$ | $5^2$
 
 $\implies n_m = 5^2 \cdot 3 \cdot 2$
 
 | $p = 2$  | $p= 3$  | $p =5$ |
 |---|---|---|
-|  2,2 |  3 | $\emptyset$
+|  $2,2$ |  $3$ | $\emptyset$
 
 $\implies n_{m-1} = 3 \cdot 2$
 
 | $p = 2$  | $p= 3$  | $p =5$ |
 |---|---|---|
-|  2 |  $\emptyset$ | $\emptyset$
+|  $2$ |  $\emptyset$ | $\emptyset$
 
 $\implies n_{m-2} = 2$
 
