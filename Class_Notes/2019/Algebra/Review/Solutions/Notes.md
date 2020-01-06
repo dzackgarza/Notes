@@ -60,9 +60,6 @@ For every prime $p$ dividing $\abs{G}$. there is an element (and thus a subgroup
 
 > This is a partial converse to Lagrange's theorem.
 
-**Class Equation**:
-
-
 **Notation:**
 For a group $G$ acting on a set $X$,
 
