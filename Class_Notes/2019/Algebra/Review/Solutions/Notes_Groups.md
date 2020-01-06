@@ -393,6 +393,9 @@ A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it h
 
 > **Lemma:**
 > If $G$ is *not* simple, then for any $N\normal G$, it is the case that $G \cong E$ for an extension of the form $N\to E\to G/N$.
+> >
+> Lemma:
+> Every group of order less than 60 is simple
 
 **Definition:**
 A group $G$ is **solvable** iff $G$ has a terminating normal series with abelian factors, i.e. 
