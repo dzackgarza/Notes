@@ -60,11 +60,15 @@ Then $f(x) \divides \rho_n(x) \iff \deg f \divides n$ and $f$ is irreducible.
 A field extension $L/k$ is **algebraic** iff every $\alpha \in L$ is the root of some $f\in k[x]$.
 
 **Definition:**
-A field extension $L/k$ is **normal** iff
 
-- Every embedding $\sigma: L \injects \overline k$ that is a lift of the identity over $k$ satisfies $\sigma(L) = L$.
+Let $L/k$ be a finite extension.
+Then TFAE:
 
-- Every irreducible $f\in k[x]$ that has one root in $L$ has all of its roots in $L$
+- $L/k$ is **normal**.
+
+- Every embedding $\sigma: L \injects \overline k$ that is a lift of the identity on $k$ satisfies $\sigma(L) = L$.
+
+- Every irreducible $f\in k[x]$ that has one root in $L$ has *all* of its roots in $L$
 
 - If $L$ is separable: $L$ is the splitting field of some irreducible $f\in k[x]$.
 
@@ -76,7 +80,7 @@ A field extension $L/k$ is **separable** iff
   - $f' \not\equiv 0$, or
   - $\gcd(f, f') = 1$.
 
-**Lemma:**
+> **Lemma:**
 If $\ch k = 0$ or $k$ is finite, then every *algebraic* extension $L/k$ is separable.
 
 **Definition (Characterizations of Galois Extensions):**
