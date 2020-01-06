@@ -52,7 +52,7 @@ g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 Rhere does **not** necessarily exist $H \leq G$ with $\abs H = n$ for every $n \divides \abs{G}$.
 > 
 > Counterexample:
-> $G = A_4$ is size 12 but has no subgroup of order 6.
+> $\abs{A_4} = 12$ but has no subgroup of order 6.
 
 **Cauchy's Theorem**:
 
