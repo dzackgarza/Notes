@@ -247,6 +247,9 @@ TFAE
 
 - Every splitting field of a polynomial over a perfect field is Galois.
 
+Lemma (Composite extensions):
+
+
 ## Cyclotomic Polynomials
 
 **Definition:**
