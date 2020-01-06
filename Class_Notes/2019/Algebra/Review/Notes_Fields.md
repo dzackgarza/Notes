@@ -134,7 +134,8 @@ H &\rightarrow \correspond{\text{The subfield fixed by $H$}} \\
 - $[K : F] = \abs{H}$
 - $L/F$ is Galois and $Gal(K/F) = H$
 - $F/k$ is Galois $\iff H$ is normal, and $\Gal(F/k) = \Gal(L/k)/H$.
-
+- The compositum $F_1 F_2$ corresponds to $H_1 \intersect H_2$.
+- The subfield $F_1 \intersect F_2$ corresponds to $H_1 H_2$.
 
 ### Cyclotomic Polynomials
 
