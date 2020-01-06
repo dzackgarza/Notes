@@ -121,7 +121,7 @@ TFAE:
 - The fixed field of $\mathrm{Aut}(L/k)$ is exactly $k$.
 
 **Fundamental Theorem of Galois Theory:**
-Let $L/k$ be a Galois extension, then there is an contravariant correspondence:
+Let $L/k$ be a Galois extension, then there is a correspondence:
 \begin{align*}
 \correspond{\text{Subgroups } H \leq \Gal(L/k)}
 &\iff
@@ -130,6 +130,7 @@ H &\rightarrow \correspond{\text{The subfield fixed by $H$}} \\
 \correspond{\sigma \in \Gal(L/k) \suchthat \sigma(F) = F} &\leftarrow F
 .\end{align*}
 
+- This is contravariant wrt set inclusion
 - $[F: k] = [G: H]$, so degrees of extensions over the base field correspond to indices of subgroups.
 - $[K : F] = \abs{H}$
 - $L/F$ is Galois and $Gal(K/F) = H$
