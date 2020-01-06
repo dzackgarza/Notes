@@ -98,7 +98,6 @@ $R/\mm$ is a field $\iff \mm$ is maximal.
 **Lemma:**
 $R/\pr$ is an integral domain $\iff \pr$ is prime.
 
-
 ## Nilradical and Jacobson Radical
 
 **Definition:**
