@@ -18,7 +18,7 @@ Lemmas:
 Fields $\subset$ Euclidean domains  $\subset$  PIDs  $\subset$ UFDs $\subset$ Integral Domains  $\subset$ Rings
 
 - A Euclidean Domain that is not a field: $\FF[x]$
-- A 
+- A PID that is not a Euclidean Domain: $\ZZ
 
 
 ## Finite Fields
