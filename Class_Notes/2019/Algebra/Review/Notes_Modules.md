@@ -206,21 +206,6 @@ $RCF(A)$ is a block matrix where each block is the companion matrix of an invari
 >
 > - Each invariant factor corresponds to a block of the RCF.
 
-**Lemma**:
-For a linear operator on a vector space of nonzero finite dimension, TFAE:
-
-  - The minimal polynomial is equal to the characteristic polynomial.
-
-  - The list of invariant factors has length one.
-
-  - The Rational Canonical Form has a single block.
-
-  - The operator has a matrix similar to a companion matrix.
-
-  - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
-
-  - $T$ has $\dim V$ distinct eigenvalues
-
 ### Jordan Canonical Form
 
 Corresponds to the **Elementary Divisor Decomposition** of $T$.
@@ -242,6 +227,24 @@ Writing
   - $b_i$ is the **sum of sizes** of all Jordan blocks associated to $\lambda_i$
 
   - $\dim E_{\lambda_i}$ is the **number of Jordan blocks** associated to $\lambda_i$
+
+## Using Canonical Forms
+
+**Lemma**:
+For a linear operator on a vector space of nonzero finite dimension, TFAE:
+
+  - The minimal polynomial is equal to the characteristic polynomial.
+
+  - The list of invariant factors has length one.
+
+  - The Rational Canonical Form has a single block.
+
+  - The operator has a matrix similar to a companion matrix.
+
+  - There exists a *cyclic vector* $v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
+
+  - $T$ has $\dim V$ distinct eigenvalues
+
 
 ## Matrix Counterexamples
 
