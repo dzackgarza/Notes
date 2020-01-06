@@ -25,6 +25,8 @@ Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Int
 - A PID that is not a Euclidean Domain: $\ZZ\left[\frac{1 + \sqrt{-19}}{2}\right]$
   - Proof: complicated.
 - A UFD that is not a PID: $\FF[x, y]$
+  - Proof: $\generators{x, y}$ is not principal
+-  
 
 
 ## Finite Fields
