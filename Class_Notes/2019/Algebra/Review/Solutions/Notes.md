@@ -15,6 +15,20 @@ The **alternating group** is the subgroup of **even** permutations, i.e.
 $A_n \definedas \theset{\sigma \in S_n \suchthat \sign(\sigma) = 1}$ where $\sign(\sigma) = (-1)^{m}$ where $m$ is the number of cycles of even length.
 
 > Example:
+\begin{align*}
+A_4 &= \id, \\
+(1,3)(2,4),
+(1,2)(3,4),
+(1,4)(2,3), \\
+& (1,2,3),
+(1,3,2), \\
+& (1,2,4),
+(1,4,2), \\
+& (1,3,4),
+(1,4,3), \\
+& (2,3,4),
+(2,4,3),
+.\end{align*}
 
 
 >  **Corollary:**
