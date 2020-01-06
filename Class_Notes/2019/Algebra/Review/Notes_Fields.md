@@ -274,7 +274,7 @@ $$
 An extension $F/k$ is **simple** if $F = k[\alpha]$ for a single element $\alpha$.
 
 **Theorem (Primitive Element):**
-If $F/k$ is a finite separable extension, then it is simple.
+Every finite separable extension is simple.
 
 **Corollary:**
 $\GF(p^n)$ is a simple extension over $\FF_p$.
