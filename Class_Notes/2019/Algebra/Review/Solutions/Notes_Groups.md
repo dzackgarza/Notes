@@ -359,7 +359,7 @@ G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 
 *Example:*
 \begin{align*}
-\mathbb{Z}_{2\cdot 13}\oplus\mathbb{Z}_{42}\oplus\mathbb{Z}_{49}\oplus\mathbb{Z}_{200}\oplus\mathbb{Z}_{1000}
+\mathbb{Z}_{2\cdot 13}\oplus\mathbb{Z}_{2\cdot 3 \cdot 7}\oplus\mathbb{Z}_{7^2}\oplus\mathbb{Z}_{200}\oplus\mathbb{Z}_{1000}
 .\end{align*}
 
 
