@@ -413,6 +413,14 @@ A group $G$ is **nilpotent** iff $G$ has a terminating central series, upper cen
 
 > Nilpotent $\implies$ nontrivial center, solvable, normalizers grow, equal to direct product of Sylows, normal subgroups of $d$ for every divisor $d$ of $\abs G$.
 
+**Lemma:**
+TFAE
+
+- $G$ is nilpotent
+- Normalizers grow (i.e.$H < N_G(H)$ whenever $H$ is proper)
+- Every Sylow-p subgroup is normal
+- $G$ is the direct product of its Sylow p-subgroups
+
 
 ## p-Groups
 
