@@ -340,3 +340,45 @@ If $S \leq G$ and $N \normal G$, then
 $$
 \frac{SN}{N} \cong \frac{S}{S\intersect N}
 $$
+
+![](2020-01-01-15-20-27.png)
+
+> Note: for this to make sense, we also have
+>
+> - $SN \leq G$,
+> - $S\intersect N \normal S$,
+
+**Cancellation / 3rd Isomorphism Theorem**
+
+If $H, K \normal G$ with $H \normal K$, then
+$$
+\frac{G/H}{G/K} \cong \frac{G}{K}
+$$
+
+> Note: for this to make sense, we also have $G/K \normal G/H$.
+
+**The Correspondence Theorem / 4th Isomorphism Theorem:**
+Suppose $N \normal G$, then there exists a correspondence:
+$$
+\left\{
+H < G \suchthat N \subseteq H
+\right\}
+\iff
+\left\{ \begin{align*}
+H \suchthat H < \frac G N
+\end{align*}\right\}
+\\
+\correspond{
+  \text{Subgroups of $G$} \\
+  \text{containing $N$}
+} \iff
+\correspond{
+  \text{Subgroups of the } \\
+  \text{quotient $G/N$}
+}
+.$$
+
+In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotient group $G/N$. This is given by the map $H \mapsto H/N$.
+
+> Note: $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
+
