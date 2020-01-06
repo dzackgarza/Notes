@@ -352,7 +352,7 @@ G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 \quad \text{ where } n_1 \divides \cdots \divides n_m
 .$$
 
-*Going from invariant divisors to elementary divisors:*
+**Going from invariant divisors to elementary divisors:**
 
 - Take prime factorization of each factor
 - Split into coprime pieces
@@ -366,7 +366,7 @@ G \cong \ZZ^r \times \prod_{j=1}^m \ZZ/(n_j)
 .\end{align*}
 
 
-*Going from elementary divisors to invariant factors:*
+**Going from elementary divisors to invariant factors:**
 
 - Bin up by primes occurring (keeping exponents)
 - Take highest power from each prime as *last* invariant factor
