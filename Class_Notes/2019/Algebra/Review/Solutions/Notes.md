@@ -87,7 +87,7 @@ $$
 
 - $G_x = Z(x) \definedas C_G(x) = \theset{g \suchthat [g, x] = e}$, the **centralizer** of $x$.
 
-- $G^g$ (the fixed points) is the center $Z(G)$.
+- $G^g$ (the fixed points) is the **center** $Z(G)$.
 
 > This yields the **Class Equation**:
 $$
