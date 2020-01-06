@@ -130,21 +130,23 @@ By minimality, $\mu_M$ must divide $q$, but we must have $k\leq \deg \mu_M \leq 
 
 ## Polynomial Information
 
-- The following can be read directly off of the invariant factor decomposition:
 
-  - The minimal polynomial is the *invariant factor of highest degree*, i.e.
-  $$
-  \min_T(x) = f_n(x)
-  .$$
+**Lemma**:
+The minimal polynomial is the *invariant factor of highest degree*, i.e.
+$$
+\min_T(x) = f_n(x)
+.$$
 
-  - The characteristic polynomial is the *product of the invariant factors*, i.e.
-  $$
-  \chi_T(x) = \prod_{j=1}^n f_j(x)
-  .$$
+**Lemma:**
+The characteristic polynomial is the *product of the invariant factors*, i.e.
+$$
+\chi_T(x) = \prod_{j=1}^n f_j(x)
+.$$
 
-- Both $\min_T(x)$ and $\chi_T(x)$ have roots precisely the eigenvalues of $T$, with potentially different multiplicities.
+**Lemma**:
+Both $\min_T(x)$ and $\chi_T(x)$ have roots precisely the eigenvalues of $T$, with potentially different multiplicities.
 
-- Writing
+Writing
 \begin{align*}
 \min_A(x) = \prod (x- \lambda_i)^{a_i} \\
 \chi_A(x) = \prod (x- \lambda_i)^{b_i}
