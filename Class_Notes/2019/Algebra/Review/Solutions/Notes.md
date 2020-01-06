@@ -78,15 +78,23 @@ $$
 
 > Mnemonic: $G/G_x \cong G\cdot x$.
 
-> Examples:
-> 
-> - $G \actson \theset{H \suchthat H\leq G}$
->   - $G \cdot x$ is the **conjugacy class** of $x$
->   - $G_x = Z(x) \definedas C_G(x) = \theset{g \suchthat [g, x] = e}$, the **centralizer** of $x$.
->   - Yields **Class Equation**:
+### Examples of Orbit-Stabilizer
+
+ 
+1. Let $G$ act on its subgroups by conjugation
+
+- $G \cdot x$ is the **conjugacy class** of $x$
+
+- $G_x = Z(x) \definedas C_G(x) = \theset{g \suchthat [g, x] = e}$, the **centralizer** of $x$.
+
+- Yields **Class Equation**:
 $$
 \abs{G} = \abs{Z(G)} + \sum_{\substack{\text{One $x_i$ from} \\ \text{each conjugacy} \\ \text{class}}} [G: Z(x_i)]
 $$
+
+2. For a fixed $H\leq G$, let $G$ act on cosets $gH$ by left-multiplication.
+
+
 
 **Burnside's Formula:**
 $$
