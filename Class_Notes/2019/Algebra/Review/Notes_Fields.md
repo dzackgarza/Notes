@@ -9,14 +9,13 @@ An element $r\in R$ is **prime** iff $ab \divides r \implies a\divides r$ or $b\
 **Definition:**
 An element $r\in R$ is irreducible iff $r = ab \implies a$ is a unit or $b$ is a unit.
 
-
 **Lemmas:**
 
 - $R/I$ is a domain $\iff I$ is prime
 - $R/I$ is a field $\iff I$ is maximal.
 - For $R$ a PID, $I$ is prime $\iff I$ is maximal
 
-**Lemma (Characterizations of Rings):** 
+**Lemma (Characterizations of Rings):**
 
 - $R$ a finite integral domain $\implies R$ is a field.
 - $\FF$ a field $\implies \FF[x]$ is a Euclidean domain.
@@ -42,7 +41,7 @@ Fields $\subset$ Euclidean domains  $\subset$  PIDs $\subset$ UFDs $\subset$ Int
 In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
 
 > Note: For $R$ an integral domain, prime $\implies$ irreducible, but generally not the converse.
-> 
+>
 > Example of a prime that is not irreducible: $x^2 \mod (x^2 + x) \in \QQ[x]/(x^2 + x)$
 > a
 > Example of an irreducible that is not prime: $3\in \ZZ[\sqrt{-5}]$. Check norm to see irreducibility, but $3 \divides 9 = (2+\sqrt{-5})(2-\sqrt{-5})$ and doesn't divide either factor.
