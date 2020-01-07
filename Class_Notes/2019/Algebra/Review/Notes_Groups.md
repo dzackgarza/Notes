@@ -470,6 +470,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
   > Note: Such groups are never simple.
 
 - $\abs{G} = p^2q$:
+  - Two abelian: $\ZZ/(p) \times \ZZ(q^2)$, or $\ZZ(pq) \times \ZZ/(q)$.
   
 
 **Definition:**
