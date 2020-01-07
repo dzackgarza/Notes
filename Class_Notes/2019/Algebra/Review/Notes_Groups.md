@@ -377,6 +377,8 @@ h \mapsto h(\wait)h^{-1}
 **Lemma:**
 If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a subgroup.
 
+> Note that this implies that $HK$ is not always a subgroup.
+
 **Diamond Theorem / 2nd Isomorphism Theorem**:
 
 If $S \leq G$ and $N \normal G$, then
