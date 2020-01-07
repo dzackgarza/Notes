@@ -461,6 +461,8 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
 **Facts about other special order groups:**
 
+General strategy: find a normal subgroup (usually a Sylow) and use recognition of semidirect products.
+
 - $\abs{G} = pq$: Two possibilities. By cases:
   - If $p$ divides $q-1$, two cases:
     - $G\cong \ZZ/(pq)$ or $\ZZ(p)\cross \ZZ/(q)$
@@ -470,7 +472,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
   > Note: Such groups are never simple.
 
 - $\abs{G} = p^2q$:
-  - Two abelian: $\ZZ/(p) \times \ZZ/(q^2)$, or $\ZZ/(pq) \times \ZZ/(q)$.
+  - $q \divides p^2 - 1$: Two abelian possibilities, $\ZZ/(p) \times \ZZ/(q^2)$, or $\ZZ/(pq) \times \ZZ/(q)$.
   - 
   
 
