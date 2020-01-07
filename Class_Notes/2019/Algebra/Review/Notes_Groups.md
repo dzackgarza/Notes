@@ -458,7 +458,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
 - p-groups are *solvable*
 
-- $\abs{\Aut(\ZZ/(p)^n)} ] (p^n-1)($
+- $\abs{\Aut(\ZZ/(p)^n)} ] (p^n-1)(p^n-p)\cdots(p^n-p^{n-1})$
 
 
 **Facts about other special order groups:**
