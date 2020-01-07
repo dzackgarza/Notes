@@ -440,6 +440,8 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
 **Facts about p-groups:**
 
+- If $k=1$ then $G$ is cyclic
+
 - p-groups have nontrivial centers
 
 - Every normal subgroup is contained in the center
