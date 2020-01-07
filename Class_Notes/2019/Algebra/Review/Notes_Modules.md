@@ -330,8 +330,7 @@ $$
 \end{array}\right]
 .\end{align*}
 
-
-## Unsorted
+## Miscellaneous
 
 **Lemma:**
 $I \normal R$ is a free $R\dash$module iff $I$ is a principal ideal.
