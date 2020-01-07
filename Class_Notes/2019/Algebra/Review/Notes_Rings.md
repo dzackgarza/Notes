@@ -3,7 +3,7 @@
 ## Definitions
 
 Lemma:
-
+Intersections, products, and sums (but not necessarily unions) of ideals are ideals.
 
 **Definition:**
 A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
