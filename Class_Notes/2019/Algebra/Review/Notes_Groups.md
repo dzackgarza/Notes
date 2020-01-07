@@ -461,7 +461,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
 **Facts about other special order groups:**
 
-- $\abs{G} = pq$: Three possibilities
+- $\abs{G} = pq$: Two possibilities. By cases:
   - If $p$ divides $q-1$, two cases:
     - $G\cong \ZZ/(pq)$ or $\ZZ(p)\cross \ZZ/(q)$
   - Otherwise,
