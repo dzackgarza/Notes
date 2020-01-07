@@ -469,7 +469,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
   > Proof: Sylow theorems.
   > Note: Such groups are never simple.
 
-- $\abs{G} = p^2q$
+- $\abs{G} = p^2q$:
   
 
 **Definition:**
