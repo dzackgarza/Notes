@@ -475,7 +475,8 @@ General strategy: find a normal subgroup (usually a Sylow) and use recognition o
   - Otherwise, the sylow-q subgroup $H$ is normal and order $q^2$, so either $\ZZ/(q)^2$ or $\ZZ/(q^2)$.
     - Case 2: $\abs{\aut(\ZZ/(q)^2)} = q(q-1)$, so only trivial action
     - Case 1: $\abs{\aut(\ZZ/(q^2))} = q(q-1)^2(q+1)$
-      - $p$ divides
+      - If $p$ doesn't divide $q+1$, noting new
+      - Otherwise, a nontrivial semidirect product.
   
 
 **Definition:**
