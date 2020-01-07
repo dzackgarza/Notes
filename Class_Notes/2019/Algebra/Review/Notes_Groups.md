@@ -462,7 +462,8 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 **Facts about other special order groups:**
 
 - $\abs{G} = pq$: Three possibilities
-  - If $p$ divides $q-1$, two 
+  - If $p$ divides $q-1$, two cases:
+    - 
 
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it has no non-trivial proper subgroups.
