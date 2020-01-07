@@ -2,10 +2,10 @@
 
 ## Definitions
 
-Lemma:
+**Lemma:**
 Intersections, products, and sums (but not necessarily unions) of ideals are ideals.
 
-Lemma:
+**Theorem (Krull):**
 Every ring has proper maximal ideals, and any proper ideal is contained in a maximal ideal.
 
 **Definition:**
