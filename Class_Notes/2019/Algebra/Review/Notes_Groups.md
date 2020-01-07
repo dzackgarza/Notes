@@ -365,7 +365,7 @@ h \mapsto h(\wait)h^{-1}
 **Useful Facts**
 
 -  If $\sigma \in \Aut(H)$, then $N \semidirect_\psi H \cong N \semidirect_{\psi \circ \sigma} H$.
-- $\Aut((\ZZ/(p)^n) \cong \GL(n, \FF_p)$
+- $\Aut((\ZZ/(p)^n) \cong \GL(n, \FF_p)$, which has size $- $\abs{\Aut(\ZZ/(p)^n)} = (p^n-1)(p^n-p)\cdots(p^n-p^{n-1})$.
   - If this occurs in a semidirect product, it suffices to consider similarity classes of matrices (i.e. just use canonical forms)
 - $\Aut(\ZZ/(n)) \cong \ZZ/(n)\units \cong \ZZ/({\varphi(n)})$ where $\varphi$ is the totient function.
   - $\varphi(p^k) = p^{k-1}(p-1)$
@@ -457,9 +457,6 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 - p-groups are *nilpotent*
 
 - p-groups are *solvable*
-
-- $\abs{\Aut(\ZZ/(p)^n)} ] (p^n-1)(p^n-p)\cdots(p^n-p^{n-1})$
-
 
 **Facts about other special order groups:**
 
