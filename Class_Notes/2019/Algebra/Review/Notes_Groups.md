@@ -473,7 +473,8 @@ General strategy: find a normal subgroup (usually a Sylow) and use recognition o
 
 - $\abs{G} = p^2q$:
   - $q \divides p^2 - 1$: Two abelian possibilities, $\ZZ/(p) \times \ZZ/(q^2)$, or $\ZZ/(pq) \times \ZZ/(q)$.
-  - Otherwise, the sylow-q subgroup $H$ is normal
+  - Otherwise, the sylow-q subgroup $H$ is normal and order $q^2$, so either $\ZZ/(q)^2$ or $\ZZ/(q^2)$.
+    - 
   
 
 **Definition:**
