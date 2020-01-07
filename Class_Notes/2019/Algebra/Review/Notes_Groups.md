@@ -443,6 +443,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 - If $k=1$ then $G$ is cyclic
 
 - p-groups have nontrivial centers
+  - Proof: Use class equation.
 
 - Every normal subgroup is contained in the center
 
