@@ -473,7 +473,8 @@ General strategy: find a normal subgroup (usually a Sylow) and use recognition o
 - $\abs{G} = p^2q$:
   - $q \divides p^2 - 1$: Two abelian possibilities, $\ZZ/(p) \times \ZZ/(q^2)$, or $\ZZ/(pq) \times \ZZ/(q)$.
   - Otherwise, the sylow-q subgroup $H$ is normal and order $q^2$, so either $\ZZ/(q)^2$ or $\ZZ/(q^2)$.
-    - But $\abs{\ZZ
+    - Case 2: $\abs{\aut(\ZZ/(q)^2)} = q(q-1)$, so only trivial action
+    - Case 1:
   
 
 **Definition:**
