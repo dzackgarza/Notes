@@ -458,6 +458,11 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 
 - p-groups are *solvable*
 
+
+**Facts about other special order groups:**
+
+- 
+
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it has no non-trivial proper subgroups.
 
