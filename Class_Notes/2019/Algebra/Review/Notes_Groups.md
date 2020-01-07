@@ -464,7 +464,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 - $\abs{G} = pq$: Three possibilities
   - If $p$ divides $q-1$, two cases:
     - $G\cong \ZZ/(pq)$ or $\ZZ(p)\cross \ZZ/(q)$
-  - 
+  - Otherwise,
 
 **Definition:**
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it has no non-trivial proper subgroups.
