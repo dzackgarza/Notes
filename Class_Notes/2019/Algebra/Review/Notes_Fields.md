@@ -120,7 +120,8 @@ $\abs{\aut(L/k)} \leq [L: k]$ with equality precisely when $L/k$ is normal.
 **Definition:**
 If $L/k$ is Galois, we define $\Gal(L/k) \definedas \Aut(L/k)$.
 
-**Lemmas about towers:**
+### Lemmas About Towers
+
 Let $L/F/k$ be a finite tower of field extensions
 
 - Multiplicativity: $[L : k] = [L: F][F: k]$
@@ -199,7 +200,6 @@ H &\rightarrow \correspond{E^H \definedas ~\text{The fixed field of $H$}} \\
 - The compositum $F_1 F_2$ corresponds to $H_1 \intersect H_2$.
 
 - The subfield $F_1 \intersect F_2$ corresponds to $H_1 H_2$.
-
 
 ### Examples
 
