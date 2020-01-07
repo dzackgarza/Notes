@@ -28,7 +28,7 @@ N_G(H) = \theset{g\in G \suchthat gHg\inv = H}
 $$
 
 **Lemma:**
-$C_G(H) \leq G, N_G(H)$
+$C_G(H) \normal N_G(H)$
 
 **Lemma:**
 The size of the conjugacy class of $H$ is the index of its centralizer, i.e.
