@@ -441,6 +441,7 @@ If $\abs{G} = p^k$, then $G$ is a **p-group.**
 **Facts about p-groups:**
 
 - If $k=1$ then $G$ is cyclic
+- If $k=2$
 
 - p-groups have nontrivial centers
   - Proof: Use class equation.
