@@ -5,6 +5,9 @@
 Lemma:
 Intersections, products, and sums (but not necessarily unions) of ideals are ideals.
 
+Lemma:
+Every ring has proper maximal ideals, and any proper ideal is contained in a maximal ideal.
+
 **Definition:**
 A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
 
