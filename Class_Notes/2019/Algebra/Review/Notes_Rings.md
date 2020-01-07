@@ -12,7 +12,7 @@ Every ring has proper maximal ideals, and any proper ideal is contained in a max
 A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
 
 **Definition:**
-An element $r\in R$ is **irreducible** iff $r = ab \implies a$ is a unit or $b$ is a unit.
+An element $r\in R$ is **irreducible** iff $r = ab \implies a$ is a unit or $b$ is a unit.F
 
 **Definition:**
 An element $r\in R$ is **prime** iff $ab \divides r \implies a\divides r$ or $b\divides r$ whenever $a,b$ are nonzero and not units.
@@ -25,6 +25,8 @@ $\spec(R) = \theset{\pr \normal R \suchthat \pr \text{ is prime}}$ is the **spec
 
 **Definition:**
 $\mathfrak m$ is **maximal** $\iff I \normalneq R \implies I \subseteq \mathfrak m$.
+
+> Example: Maximal ideals of $R[x]$ are of the form $I = (x - a_i)$ for some $a_i \in R$.
 
 **Definition:**
 $\spec_{\text{max}}(R) = \theset{\mm \normal R \suchthat \mm \text{ is maximal}}$ is the **max-spectrum** of $R$.
