@@ -1,5 +1,10 @@
 # Basics
 
+
+**Useful Technique:**
+$\lim f_n(x) = \limsup f_n(x) = \liminf f_n(x)$ if the limit exists, so if $\limsup f_n \leq g \leq \liminf f_n$ then $g = \lim f$. 
+Similarly, a limit does not exist iff $\liminf f_n > \limsup f_n$.
+
 **Lemma:**
 $\sum a_n < \infty \implies a_n \to 0$ and $\sum_{k=N}^\infty \converges{N\to\infty}\to 0$, i.e. the terms/tails of convergent sums go to zero.
 
