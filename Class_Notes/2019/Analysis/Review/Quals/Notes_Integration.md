@@ -47,6 +47,43 @@ If $f_n \in L^+$, then
 
 > Only need positivity.
 
+**Theorem (Tonelli):**
+For $f(x, y)$ **non-negative and measurable**, for almost every $x\in \RR^n$, 
+
+- $f_x(y)$ is a **measurable** function
+- $F(x) = \int f(x, y) ~dy$ is a **measurable** function,
+- For $E$ measurable, the slices $E_x \definedas \theset{y \suchthat (x, y) \in E}$ are measurable.
+- $\int f = \int \int F$, i.e. any iterated integral is equal to the original.
+
+**Theorem (Fubini):**
+For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$, 
+
+- $f_x(y)$ is an **integrable** function
+- $F(x) = \int f(x, y) ~dy$ is an **integrable** function,
+- For $E$ measurable, the slices $E_x \definedas \theset{y \suchthat (x, y) \in E}$ are measurable.
+- $\int f = \int \int f(x,y)$, i.e. any iterated integral is equal to the original
+
+**Theorem (Fubini/Tonelli):**
+If any iterated integral is **absolutely integrable**, i.e. $\int \int \abs{f(x, y)} < \infty$, then $f$ is integrable and $\int f$ equals any iterated integral.
+
+**Differentiating under the integral**:
+
+If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) ~dt$,
+\begin{align*}
+\dd{}{t} F(t)
+&\definedas \lim _{h \rightarrow 0} \int \frac{f(x, t+h)-f(x, t)}{h} d x \\
+&= \int \dd{}{t} f(x, t) ~dx
+.\end{align*}
+
+Let $h_k \to 0$ be any sequence and define
+$$
+f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
+,$$
+so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
+
+**Lemma (Summing Integrals)**
+If $f_n$ are non-negative and $\sum \int \abs f_n < \infty$, then $\sum \int f_n = \int \sum f_n$.
+
 ## $L^1$ Facts
 
 **Lemma:**

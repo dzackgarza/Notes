@@ -25,3 +25,5 @@ f\in L^1 \implies
 .\end{align*}
 
 > Motto: Fourier transforms decay.
+
+Lemma:
