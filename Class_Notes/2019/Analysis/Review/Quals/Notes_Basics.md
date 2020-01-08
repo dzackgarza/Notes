@@ -62,7 +62,17 @@ There *do not* exist functions that are discontinuous precisely on $\RR\setminus
 **Lemma:**
 Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
 
-## Uniform Convergence 
+## Uniform Convergence
+
+**Theorem (Egorov)**:
+
+Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty} f_k(x) < \infty$ exists almost everywhere.
+
+Then $f_k \to f$ *almost uniformly*, i.e.
+\begin{align*}
+\forall\varepsilon > 0, ~\exists F \subseteq E ~\text{closed such that } &
+m(E\setminus F) < \varepsilon ~\text{ and }~ f_k \mapsvia{u}  f ~\text{on}~ F
+.\end{align*}
 
 **Theorem (Important Example):**
 The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped with the norm $\norm{f} = \sup_{x\in [0, 1]} \abs{f(x)}$, is a **complete** metric space.
