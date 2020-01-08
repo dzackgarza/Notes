@@ -150,7 +150,6 @@ If $f_n \in L^+$, then
 
 > Only need positivity.
 
-
 ### Inequalities and Equalities
 
 **AM-GM Inequality**:
@@ -233,10 +232,7 @@ For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
 
 Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete, i.e. the span of its closure is all of $H$.
 
-### Other
-
-
-
+### Integration
 
 **Theorem (Tonelli):**
 For $f(x, y)$ **non-negative and measurable**, for almost every $x\in \RR^n$, 
@@ -257,14 +253,6 @@ For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$,
 **Theorem (Fubini/Tonelli):**
 If any iterated integral is **absolutely integrable**, i.e. $\int \int \abs{f(x, y)} < \infty$, then $f$ is integrable and $\int f$ equals any iterated integral.
 
-**Lemma (Riemann-Lebesgue)**
-\begin{align*}
-f\in L^1 \implies
-\hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty
-.\end{align*}
-
-> Motto: Fourier transforms have small tails.
-
 **Differentiating under the integral**:
 
 If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) ~dt$,
@@ -279,6 +267,10 @@ $$
 f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
 ,$$
 so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
+
+### Other
+
+
 
 
 ## $L^p$ Spaces
@@ -317,5 +309,11 @@ $$
 **Lemma:**
 $\hat f = \hat g \implies f=g$ almost everywhere.
 
+**Lemma (Riemann-Lebesgue)**
+\begin{align*}
+f\in L^1 \implies
+\hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty
+.\end{align*}
 
+> Motto: Fourier transforms have small tails.
 
