@@ -168,3 +168,6 @@ F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d 
 
 > *Proof:* Fubini-Tonelli, and sketch region to change integration bounds.
 
+**Theorem (Lebesgue Density)**:
+
+
