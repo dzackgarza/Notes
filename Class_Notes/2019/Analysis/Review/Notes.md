@@ -35,3 +35,4 @@ Lemma:
 There is a function discontinuous precisely on $\QQ$.
 
 **Proof:** $f(x) = \frac 1 n$ if $x = r_n \in \QQ$ is an enumeration of the rationals, and zero otherwise.
+The limit at every point is 0.
