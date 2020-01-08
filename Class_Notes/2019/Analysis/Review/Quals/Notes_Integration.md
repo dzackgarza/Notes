@@ -44,3 +44,4 @@ If $f_n \in L^+$, then
 
 
 Lemma:
+If $f \in L^1$ and $f$ is uniformly continuous, then $f$ 
