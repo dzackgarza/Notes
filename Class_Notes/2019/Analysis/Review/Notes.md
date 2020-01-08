@@ -10,7 +10,7 @@ A set $S$ is nowhere dense iff the closure of $S$ has empty interior.
 **Lemma:**
 The Cantor set is closed with empty interior.
 
-> Proof: Its complement is a union of open intervals
+> Proof: Its complement is a union of open intervals, and can't contain an interval since intervals have positive measure and $m(C_n)$ tends to zero.
 
 **Corollary:**
 The Cantor set is nowhere dense.
