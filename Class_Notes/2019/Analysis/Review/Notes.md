@@ -90,6 +90,9 @@ $$
 $$
 
 > Proof: 
+\begin{align*}
+\norm{f}_p = \norm{f\cdot 1}_p 
+.\end{align*}
 
 
 **Cauchy-Schwarz**:
