@@ -36,7 +36,7 @@ An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersec
 **Lemma:**
 Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
 
-**Lemma:**
+**Theorem (Baire):**
 $\RR$ is a Baire space, i.e. countable intersections of open, dense sets are still dense.
 
 **Lemma:**
