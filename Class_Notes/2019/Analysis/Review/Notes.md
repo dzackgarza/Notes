@@ -93,7 +93,7 @@ $$
 > Then let $h = \abs{f}^p.
 \begin{align*}
 \norm{f}_p^p = \norm{h\cdot 1}_1 \leq \norm{1}_s \norm{h}_r = \mu(X)^{\frac 1 s} \norm{f}_q^{\frac q r} \\
-\implies \norm{f}_p \leq \mu(X)^{1 - \frac q p}  
+\implies \norm{f}_p \leq \mu(X)^{\frac 1 p - \frac 1 q}\norm{f}_q  
 .\end{align*}
 
 
