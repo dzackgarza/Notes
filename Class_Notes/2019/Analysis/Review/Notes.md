@@ -45,3 +45,6 @@ There *do not* exist functions that are discontinuous precisely on $\RR\setminus
 
 **Lemma:**
 Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
+
+**Lemma:**
+A uniform limit of continuous functions is continuous.
