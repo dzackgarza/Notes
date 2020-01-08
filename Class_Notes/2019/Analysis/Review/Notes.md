@@ -80,14 +80,16 @@ For $p,q$ conjugate exponents,
 \leq \left( \int \abs{f}^p \right)^{\frac 1 p} \left( \int \abs{g}^q \right)^{\frac 1 q}
 .\end{align*}
 
-- **Cauchy-Schwarz**:
+**Cauchy-Schwarz**:
 Set $p=q=2$ in Holder's inequality to obtain
 \begin{align*}
 \abs{\inner{f}{g}} = \norm{fg}_1 \leq \norm{f}_2 \norm{g}_2 
 ,\end{align*}
 with equality $\iff f \neq \lambda g$.
 
-- **Minkowski's Inequality:**
+> Relates inner product to norm, and only happens to relate norms in $L^1$.
+
+**Minkowski's Inequality:**
 For $1\leq p < \infty$,
 $$
 \|f+g\|_{p} \leq\|f\|_{p}+\|g\|_{p}
