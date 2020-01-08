@@ -109,8 +109,7 @@ Then $f_k \to f$ *almost uniformly*, i.e.
 m(E\setminus F) < \varepsilon ~\text{ and }~ f_k \mapsvia{u}  f ~\text{on}~ F
 .\end{align*}
 
-
-## Integrability
+## Integration
 
 ### Convergence Theorems
 
