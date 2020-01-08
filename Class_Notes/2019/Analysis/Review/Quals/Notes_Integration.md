@@ -52,3 +52,6 @@ If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that 
 
 **Lemma ($L^1$ functions are bounded a.e.):**
 If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
+
+> Proof:
+> Let $A = \theset{f(x) = \infty}$, then $\int f = \int_A f + \int_{A^c} f$
