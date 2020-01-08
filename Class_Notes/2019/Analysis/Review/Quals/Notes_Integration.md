@@ -54,4 +54,4 @@ If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that 
 If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
 
 > Proof:
-> Let $A = \theset{f(x) = \infty}$, then $\int f = \int_A f + \int_{A^c} f$
+> Let $A = \theset{f(x) = \infty}$, then $\infty > \int f = \int_A f + \int_{A^c} f = \infty \cdot m(A) + \int_{A^c} f$, so $m(X) =0$.
