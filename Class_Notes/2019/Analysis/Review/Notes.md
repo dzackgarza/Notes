@@ -91,7 +91,7 @@ $$
 
 > Proof: 
 \begin{align*}
-\norm{f}_p = \norm{f\cdot 1}_p 
+\norm{f}_p = \norm{f^p\cdot 1}_1 \leq \norm 
 .\end{align*}
 
 
