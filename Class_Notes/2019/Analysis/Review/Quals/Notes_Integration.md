@@ -90,14 +90,16 @@ If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) 
 \begin{align*}
 \dd{}{t} F(t)
 &\definedas \lim _{h \rightarrow 0} \int \frac{f(x, t+h)-f(x, t)}{h} d x \\
-&= \int \dd{}{t} f(x, t) ~dx
+&\equalsbecause{DCT} \int \dd{}{t} f(x, t) ~dx
 .\end{align*}
 
-Let $h_k \to 0$ be any sequence and define
+To justify passing the limit, let $h_k \to 0$ be any sequence and define
 $$
 f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
 ,$$
 so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
+
+Apply the MVT to $f_k$ on $[0, h_k]$
 
 
 **Lemma (Summing Integrals)**
