@@ -92,7 +92,7 @@ m\left(\theset{x \text{ such that $\exists$ inf. many $\frac p q$ with } \left|x
 If $f_n$ are measurable, so are $\abs{f_n}, \limsup f_n, \liminf f_n, \lim f_n$. Sums and differences of measurable functions are measurable. Cones are measurable.
 
 **Lemma:**
-If $x\mapsto f(x)$ is measurable on $\RR$, then $(x,y) \mapsto f(x-y)$ is measurable on $\RR\cross \RR$.
+If $f$ is measurable on $\RR$, then $(x,y) \mapsto f(x-y)$ is measurable on $\RR\cross \RR$.
 
 
 **Theorem (Egorov)**:
