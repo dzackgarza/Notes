@@ -1,0 +1,27 @@
+# Fourier Series and Convolution
+
+**Definition (Convolution)**
+$$
+f * g(x)=\int f(x-y) g(y) d y
+.$$
+
+**Definition (Dilation)**
+$$
+\phi_{t}(x)=t^{-n} \phi\left(t^{-1} x\right)
+.$$
+
+**Definition (The Fourier Transform):**
+\begin{align*}
+\hat f(\xi) = \int f(x) ~e^{2\pi i x \cdot \xi} ~dx
+.\end{align*}
+
+**Lemma:**
+$\hat f = \hat g \implies f=g$ almost everywhere.
+
+**Lemma (Riemann-Lebesgue)**
+\begin{align*}
+f\in L^1 \implies
+\hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty
+.\end{align*}
+
+> Motto: Fourier transforms decay.
