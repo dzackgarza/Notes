@@ -169,5 +169,9 @@ F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d 
 > *Proof:* Fubini-Tonelli, and sketch region to change integration bounds.
 
 **Theorem (Lebesgue Density)**:
+\begin{align*}
+A_{h}(f)(x):=\frac{1}{2 h} \int_{x-h}^{x+h} f(y) d y
+\implies \norm{A_h(f) - f}
+.\end{align*}
 
 
