@@ -79,6 +79,9 @@ $$
 
 Application:
 There exist infinitely m
+\begin{align*}
+\left|x-\frac{a}{q}\right| \leq \frac{1}{q^{3}}
+.\end{align*}
 
 
 **Theorem (Egorov)**:
