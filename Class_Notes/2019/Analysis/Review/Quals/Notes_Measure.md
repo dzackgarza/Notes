@@ -64,6 +64,12 @@ If $E$ is Lebesgue measurable, then $E = H \disjoint N$ where $H \in F_\sigma$ a
 \liminf_n A_n = \union_n \intersect_{j\geq n} A_j &= \theset{x \suchthat x\in A_n \text{ for all except fin. many $n$}}  \\
 .\end{align*}
 
+Lemma:
+If $A_n$ are all measurable, $\limsup A_n$ and $\liminf A_n$ are measurable.
+
+> *Proof:* 
+> Measurable sets form a sigma algebra, and these are expressed as countable unions/intersections of measurable sets.
+
 **Lemma (Borel-Cantelli)**:
 
 Let $\{E_k\}$ be a countable collection of measurable sets.
