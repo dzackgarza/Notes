@@ -40,4 +40,4 @@ The limit at every point is 0.
 **Lemma:**
 There are not functions that are discontinuous precisely on $\RR\setminus \QQ$.
 
-> *Proof:* $D_f$ is always a ? set.
+> *Proof:* $D_f$ is always an $F_\sigma$ set.
