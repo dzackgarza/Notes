@@ -4,6 +4,9 @@ title: Analysis Review Notes
 
 ## Basics
 
+**Lemma (Geometric Series):**
+
+
 **Definition:**
 A set $S$ is **nowhere dense** iff the closure of $S$ has empty interior.
 
