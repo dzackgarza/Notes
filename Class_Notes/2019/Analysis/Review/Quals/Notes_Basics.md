@@ -1,6 +1,5 @@
 # Basics
 
-
 **Lemma (Heine-Borel):**
 A subset of $\RR^n$ is compact iff it is closed and bounded.
 
@@ -8,6 +7,9 @@ A subset of $\RR^n$ is compact iff it is closed and bounded.
 \begin{align*}
 \sum_{k=0}^\infty x^k = \frac 1 {1-x} \iff \abs{x} < 1
 .\end{align*}
+
+**Lemma:**
+$\sum a_n < \infty \implies a_n \to 0$ and $\sum_{k=N}^\infty \converges{N\to\infty}\to 0$.
 
 > *Corollary:* 
 > $\sum_{k=0}^\infty \frac 1 {2^k} = 1$.
