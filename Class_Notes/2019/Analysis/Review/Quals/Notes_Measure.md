@@ -94,12 +94,10 @@ If $f_n$ are measurable, so are
 - $\abs{f_n}, \limsup f_n, \liminf f_n, \lim f_n$, 
 - Sums and differences of measurable functions, 
 - Cones $F(x,y) = f(x)$, 
-- Compositions $f\circ T$ for $T$ a linear transformation
+- Compositions $f\circ T$ for $T$ a linear transformation,
+- "Convolution-y" transformations $(x,y) \mapsto f(x-y)$
 
-**Lemma:**
-If $f$ is measurable on $\RR$, then $(x,y) \mapsto f(x-y)$ is measurable on $\RR\cross \RR$.
-
-> **Proof:**
+> **Proof (Convolution):**
 > Take the cone on $f$ to get $F(x, y) = f(x)$, then compose $F$ with the linear transformation $T = [1, -1; 1, 0]$.
 
 
