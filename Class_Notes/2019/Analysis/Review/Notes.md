@@ -9,6 +9,8 @@ title: Analysis Review Notes
 \sum_{k=0}^\infty x^k = \frac 1 {1-x} \iff \abs{x} < 1
 .\end{align*}
 
+> *Corollary:* $\sum \frac 1 {2^k} = 1$.
+
 
 **Definition:**
 A set $S$ is **nowhere dense** iff the closure of $S$ has empty interior.
