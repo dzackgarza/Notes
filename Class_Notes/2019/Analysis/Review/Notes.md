@@ -83,7 +83,7 @@ If $f_n \in L^+$, then
 \begin{align*}
 \abs{\inner{f}{g}} = \norm{fg}_1 \leq \norm{f}_2 \norm{g}_2 
 ,\end{align*}
-with equality $\iff f \neq \lambda g$.
+with equality $\iff f = \lambda g$.
 
 > Relates inner product to norm, and only happens to relate norms in $L^1$.
 
