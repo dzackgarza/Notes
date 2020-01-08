@@ -45,7 +45,7 @@ If $f\in L^1$, then
 
 > *Proof:* Let $g_n = \abs{f_n} - \abs{f - f_n}$, then $g_n \to \abs{f}$ and 
 \begin{align*}
-
+\abs{g_n} = \abs{ \abs{f_n} - \abs{f - f_n} } \leq \abs{f_n - (f - f_n)}
 .\end{align*}
 
 
