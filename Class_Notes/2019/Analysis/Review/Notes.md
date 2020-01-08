@@ -88,11 +88,11 @@ with equality $\iff f = \lambda g$.
 > Relates inner product to norm, and only happens to relate norms in $L^1$.
 
 **Minkowski's Inequality:**
+$$
+1\leq p < \infty \implies \|f+g\|_{p} \leq\|f\|_{p}+\|g\|_{p}
+$$
 
-For $1\leq p < \infty$,
-$$
-\|f+g\|_{p} \leq\|f\|_{p}+\|g\|_{p}
-$$
+> Note: does not handle $p=\infty$ case.
 
 **Young's Inequality**:
 \begin{align*}
