@@ -123,17 +123,18 @@ For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
 
 Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete, i.e. the span of its closure is all of $H$.
 
-
 ### Other
 
-- **Borel-Cantelli Lemma:**
+**Lemma (Borel-Cantelli)**:
+
 Let $\{E_k\}$ be a countable collection of measurable sets. 
 Then 
 $$
 \sum_k m(E_k) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_k
 .$$
 
-- **Egorov's Theorem**
+**Theorem (Egorov)**:
+
 Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty} f_k(x) < \infty$ exists almost everywhere.
 
   Then $f_k \to f$ *almost uniformly*, i.e.
@@ -142,20 +143,21 @@ Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \R
 m(E\setminus F) < \varepsilon ~\text{ and }~ f_k \mapsvia{u}  f ~\text{on}~ F
 .\end{align*}
 
-- Fubini
+Theorem (Fubini):
 
-- Tonelli
+Theorem (Tonelli):
 
-- Fubini/Tonelli
+Theorem (Fubini/Tonelli):
 
-- **Riemann-Lebesgue Lemma:**
+**Lemma (Riemann-Lebesgue)**
 \begin{align*}
 f\in L^1 \implies 
 \hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty
 .\end{align*}
 
+> Motto: Fourier transforms have small tails.
 
-- **Differentiating under the integral**:
+**Differentiating under the integral**:
 
 If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then
 \begin{align*}
@@ -164,7 +166,11 @@ F(t) = \int f(x, t) ~dt
 &= \int \dd{}{t} f(x, t) ~dx
 .\end{align*}
 
-Let $h_k \to 0$ be any sequence and define $f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}$, so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
+Let $h_k \to 0$ be any sequence and define 
+$$
+f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
+,$$
+so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 
 
 
