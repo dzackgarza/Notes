@@ -4,6 +4,9 @@ title: Analysis Review Notes
 
 ## Basics
 
+**Lemma (Heine-Borel):**
+A subset of $\RR^n$ is compact iff it is closed and bounded.
+
 **Lemma (Geometric Series):**
 \begin{align*}
 \sum_{k=0}^\infty x^k = \frac 1 {1-x} \iff \abs{x} < 1
@@ -151,10 +154,25 @@ m_*(E) = \inf_{\substack{\theset{Q_i} \rightrightarrows E \\ \text{closed cubes}
 - Montonicity: $E\subseteq F \implies m_*(E) \leq m_*(F)$.
 - Countable Subadditivity: $m_*(\union E_i) \leq \sum m_*(E_i)$.
 - Approximation: For all $E$ there exists a $G \supseteq E$ such that $m_*(G) \leq m_*(E) + \varepsilon$.
-- [Almost] Disjoint Additivity: $m_*(A \disjoint B) = m_*(A) + m_*(B)$. 
+- Disjoint* Additivity: $m_*(A \disjoint B) = m_*(A) + m_*(B)$. 
+  
+	> Note: this holds for outer measure **iff** $\mathrm{dist}(A, B) > 0$.
 
 **Lemma (Subtraction of Measure):**
 $m(A) = m(B) + m(C)$ and $m(C) < \infty$ implies that $m(A) - m(C) = m(B)$.
+
+**Lemma (Continuity of Measure):**
+\begin{align*}
+E_i \nearrow E &\implies m(E_i) \to m(E) \\
+m(E_1) < \infty \text{ and } E_i \searrow E &\implies m(E_i) \to m(E)
+.\end{align*}
+
+**Theorem (Non-Measurable Sets)**:
+There is a non-measurable set.
+
+> *Proof:*
+>
+> - Enumerate
 
 
 *Comments:*
