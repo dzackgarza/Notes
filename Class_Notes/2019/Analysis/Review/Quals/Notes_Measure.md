@@ -89,9 +89,9 @@ m\left(\theset{x \text{ such that $\exists$ inf. many $\frac p q$ with } \left|x
 > Write $E_j$ to be the above set with $p, q$ replaced by $p_j, q_j$ where $r_j = \frac {p_j}{q_j}$ is an enumeration of $\QQ$, then $m(E_j) \leq \frac{2}{q^3}$ and $\sum \frac{1}{q^3} < \infty$.
 
 **Lemma:**
-If $f_n$ are measurable, so are 
 
-- $\abs{f_n}, \limsup f_n, \liminf f_n, \lim f_n$, 
+- Characteristic functions are measurable
+- If $f_n$ are measurable, so are $\abs{f_n}, \limsup f_n, \liminf f_n, \lim f_n$, 
 - Sums and differences of measurable functions, 
 - Cones $F(x,y) = f(x)$, 
 - Compositions $f\circ T$ for $T$ a linear transformation,
