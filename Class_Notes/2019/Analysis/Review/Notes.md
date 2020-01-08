@@ -86,7 +86,7 @@ $$
 > *Application:*
 >For finite measure spaces,
 $$
-1 \leq p < q \leq \infty \implies L^q \subset L^p \quad \text{ and } \ell^p \subset \ell^q
+1 \leq p < q \leq \infty \implies L^q \subset L^p \quad (\text{ and } \ell^p \subset \ell^q)
 $$
 
 > *Proof:* Fix $p, q$, let $r = \frac q p$ and $s = \frac{r}{r-1}$ so $r\inv + s\inv = 1$. 
