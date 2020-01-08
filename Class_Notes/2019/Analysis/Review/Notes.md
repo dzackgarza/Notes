@@ -131,7 +131,8 @@ The following are dense subspaces of $L^2([0, 1])$:
 - Simple functions
 - Step functions
 - $C_0([0, 1])$
-- $C_0^\infty([0, 1])$
+- Smoothly differentiable functions $C_0^\infty([0, 1])$
+- Smooth compactly supported functions $C_c^\infty$
 
 **Dual Spaces:**
 In general, $(L^p)\dual \cong L^q$
