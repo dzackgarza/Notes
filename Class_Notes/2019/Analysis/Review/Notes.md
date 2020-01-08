@@ -49,9 +49,11 @@ $$
 **Fatou's Lemma**:
 
 If $f_n \in L^+$, then
+\begin{align*}
+\int \liminf_n f_n &\leq \liminf_n \int f_n \\
+\limsup_n \int f_n &\leq \int \limsup_n f_n
+.\end{align*}
 
-\int \liminf f_n \leq \liminf \int f_n
-.$$
 
 ## Inequalities and Equalities
 
