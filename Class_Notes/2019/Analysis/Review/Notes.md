@@ -132,6 +132,9 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 
 **Definition**:
 The outer measure of a set is given by
+\begin{align*}
+m_*(E) = \inf_{\theset{Q_i} \rightrightarrows E} \sum \abs{Q_i}
+.\end{align*}
 
 
 *Comments:*
