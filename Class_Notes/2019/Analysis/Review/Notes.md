@@ -12,7 +12,6 @@ title: Analysis Review Notes
 > *Corollary:* 
 > $\sum_{k=0}^\infty \frac 1 {2^k} = 1$.
 
-
 **Definition:**
 A set $S$ is **nowhere dense** iff the closure of $S$ has empty interior.
 
