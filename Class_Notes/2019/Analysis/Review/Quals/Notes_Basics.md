@@ -1,6 +1,5 @@
 # Basics
 
-
 **Useful Technique:**
 $\lim f_n = \limsup f_n = \liminf f_n$ iff the limit exists, so $\limsup f_n \leq g \leq \liminf f_n$ implies that $g = \lim f$. 
 Similarly, a limit does not exist iff $\liminf f_n > \limsup f_n$.
@@ -62,7 +61,7 @@ There *do not* exist functions that are discontinuous precisely on $\RR\setminus
 **Lemma:**
 Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
 
-## Uniform Convergence
+# Uniform Convergence
 
 **Theorem (Egorov)**:
 
