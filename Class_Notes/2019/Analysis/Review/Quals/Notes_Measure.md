@@ -77,6 +77,10 @@ $$
 \sum_k m(E_k) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_k
 .$$
 
+Application:
+There exist infinitely m
+
+
 **Theorem (Egorov)**:
 
 Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty} f_k(x) < \infty$ exists almost everywhere.
