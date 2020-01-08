@@ -166,4 +166,4 @@ f\in L^1 \implies
 \hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty
 .\end{align*}
 
-> Motto: Fourier transforms have small tails.
+> Motto: Fourier transforms decay.
