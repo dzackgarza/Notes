@@ -90,9 +90,9 @@ $$
 $$
 
 > Proof: Fix $p, q$, let $r = \frac q p$ and $s = \frac{r}{r-1}$ so $r\inv + s\inv = 1$. 
-> Then
+> Then let $h = \abs{f}^p.
 \begin{align*}
-
+\norm{h}
 .\end{align*}
 
 
