@@ -45,7 +45,6 @@ $$
 
 > Generalized DCT: can relax $\abs {f_n} < g$ to $\abs{f_n} < g_n \to g\in L^1$.
 
-
 **Fatou's Lemma**:
 
 If $f_n \in L^+$, then
@@ -53,6 +52,8 @@ If $f_n \in L^+$, then
 \int \liminf_n f_n &\leq \liminf_n \int f_n \\
 \limsup_n \int f_n &\leq \int \limsup_n f_n
 .\end{align*}
+
+> Only need positivity.
 
 
 ## Inequalities and Equalities
