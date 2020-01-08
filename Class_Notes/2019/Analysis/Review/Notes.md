@@ -255,7 +255,8 @@ For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$,
 - $\int f = \int \int f(x,y)$, i.e. any iterated integral is equal to the original
 
 
-Theorem (Fubini/Tonelli):
+**Theorem (Fubini/Tonelli):**
+If any iterated integral is **absolutely integrable**, 
 
 **Lemma (Riemann-Lebesgue)**
 \begin{align*}
