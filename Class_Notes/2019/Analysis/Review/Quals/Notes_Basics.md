@@ -146,8 +146,8 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 .\end{align*}
 
 **Lemma (p-tests in $\RR^n$)**:
-Let $B = \
+Let $B = \theset{x\in \RR^n \suchthat \norm{x} \leq 1}$
 \begin{align*}
-
+\int_B \frac{}{}
 .\end{align*}
 
