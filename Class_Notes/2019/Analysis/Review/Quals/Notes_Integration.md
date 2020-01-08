@@ -43,7 +43,7 @@ If $f\in L^1$, then
 \int{f_n - f} \to 0 \iff \int \abs{f_n} \to \abs{f}
 .\end{align*}
 
-> *Proof:* Let $g_n = 
+> *Proof:* Let $g_n = \abs{f_n} - \abs{f - f_n}$, then $g_n \to \abs{f}
 
 
 
