@@ -14,7 +14,8 @@ $$
 \phi_{t}(x)=t^{-n} \phi\left(t^{-1} x\right)
 $$
 
-- The Fourier Transform (todo)
+Definition (The Fourier Transform):
+
 
 ## Convergence Theorems
 
