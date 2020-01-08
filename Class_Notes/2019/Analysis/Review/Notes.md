@@ -82,6 +82,11 @@ The unit ball in $C([0, 1])$ with the sup norm is not compact.
 
 > *Proof:* Take $f_k(x) = x^n$, which converges to a dirac delta at 1. The limit is not continuous, so no subsequence can converge.
 
+**Lemma:**
+If $f_n \to f$ uniformly, then $\int f_n = \int f$.
+
+
+
 
 ## Measure Theory
 
