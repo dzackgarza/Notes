@@ -99,6 +99,7 @@ f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
 ,$$
 so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 
+
 **Lemma (Summing Integrals)**
 If $f_n$ are non-negative and $\sum \int \abs f_n < \infty$, then $\sum \int f_n = \int \sum f_n$.
 
