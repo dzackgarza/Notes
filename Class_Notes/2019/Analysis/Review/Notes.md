@@ -32,4 +32,4 @@ Singleton sets in $\RR$ are closed.
 $\QQ$ is an $F_\sigma$ set.
 
 **Definition:**
-$X$ is a Baire space iff countable intersections of open, dense sets are still
+$X$ is a Baire space iff countable intersections of open, dense sets are still dense.
