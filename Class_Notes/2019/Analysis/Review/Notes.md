@@ -24,3 +24,4 @@ The Cantor set is closed with empty interior.
 An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersection of opens.
 
 > Mnemonic: "F" stands for *ferme*, which is "closed" in French, and $\sigma$ corresponds to a "sum", i.e. a union.
+
