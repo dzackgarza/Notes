@@ -99,7 +99,7 @@ f_k(x, t) = \frac{f(x, t+h_k)-f(x, t)}{h_k}
 ,$$
 so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 
-Apply the MVT to $f_k$ to get $f_k(x, t) = f_k(\xi, t)$ for some $\xi \in [0, h_k]$.
+Apply the MVT to $f_k$ to get $f_k(x, t) = f_k(\xi, t)$ for some $\xi \in [0, h_k]$, and show that $\abs{f_k(\xi, t)} \in L_1$.
 
 
 **Lemma (Summing Integrals)**
