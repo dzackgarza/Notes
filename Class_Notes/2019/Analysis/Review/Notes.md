@@ -179,8 +179,9 @@ There is a non-measurable set.
 > *Proof:*
 >
 > - Use AOC to choose one representative from every coset of $\RR/\QQ$ on $[0, 1)$, which is countable, and assemble them into a set $N$
-> - Enumerate the rationals in $[0, 1]$ as $q_j$, and define $N_j = N + q_j$. These intersect trivially
-> By translation invariance, $m(N_j) = m(N)$, and 
+> - Enumerate the rationals in $[0, 1]$ as $q_j$, and define $N_j = N + q_j$. These intersect trivially.
+> - Define $M \definedas \disjoint N_j$, then $[0, 1) \subseteq  \subseteq [-1, 2)$, so the measure must be between 1 and 3.
+> By translation invariance, $m(N_j) = m(N)$, and disjoint additivity forces $m(M) = 0$, a contradiction.
 
 
 *Comments:*
