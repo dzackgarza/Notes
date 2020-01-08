@@ -57,7 +57,9 @@ The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped wi
 > *Step 0:* Let $\theset{f_k}$ be Cauchy in $X$. 
 > 
 > *Step 1*: Define a candidate limit using pointwise convergence.
-> Since $\norm{f_k - f_j} \to 0$, equivalently $\sup_x \abs{f_k(x) - f_j(x)} \to 0$, so for a fixed $x, \theset{f_k(x)}$ is Cauchy in $\RR$.
+> Fix an $x$; since 
+$$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
+,$$ $\theset{f_k(x)}$ is Cauchy in $\RR$.
 > So define $f(x) \definedas \lim_k f_k(x)$.
 > ?
 > *Step 2:*
