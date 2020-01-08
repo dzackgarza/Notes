@@ -41,3 +41,6 @@ If $f_n \in L^+$, then
 .\end{align*}
 
 > Only need positivity.
+
+
+Lemma:
