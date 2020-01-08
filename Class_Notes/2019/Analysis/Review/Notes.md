@@ -2,12 +2,6 @@
 title: Analysis Review Notes
 ---
 
-## Basics
-
-
-
-## Integration
-
 ### Convergence Theorems
 
 **Monotone Convergence Theorem (MCT)**:
@@ -130,9 +124,6 @@ For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
 Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete, i.e. the span of its closure is all of $H$.
 
 ### Integration
-
-
-
 **Theorem (Tonelli):**
 For $f(x, y)$ **non-negative and measurable**, for almost every $x\in \RR^n$, 
 
