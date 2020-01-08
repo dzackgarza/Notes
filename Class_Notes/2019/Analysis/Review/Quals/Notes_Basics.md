@@ -144,3 +144,6 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 \int_0^1 \frac 1 {x^p} < \infty 
 &\iff p<1
 .\end{align*}
+
+**Lemma (p-tests in $\RR^n$)**:
+
