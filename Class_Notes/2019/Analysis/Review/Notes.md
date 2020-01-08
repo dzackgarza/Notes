@@ -185,6 +185,15 @@ There is a non-measurable set.
 > By translation invariance, $m(N_j) = m(N)$, and disjoint additivity forces $m(M) = 0$, a contradiction.
 
 
+**Lemma (Borel Characterization of Measurable Sets)**
+
+If $E$ is Lebesgue measurable, then $E = $H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
+
+> **Useful technique:** $F_\sigma$ sets are Borel, so establish something for Borel sets and use this to extend it to Lebesgue.
+
+> Just establish something for Borel sets, then use this characterization to extend it to Lebesgue.
+
+
 **Lemma:**
 \begin{align*}
 \limsup_n A_n = \intersect_n \union_{j\geq n} A_j&= \theset{x \suchthat x\in A_n \text{ for inf. many $n$}}  \\
@@ -193,11 +202,7 @@ There is a non-measurable set.
 
 
 
-*Comments:*
 
-> Best way to show measurability: use Borel characterization, or show that it's an $H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
-
-> Just establish something for Borel sets, then use this characterization to extend it to Lebesgue.
 
 **Lemma (Borel-Cantelli)**:
 
