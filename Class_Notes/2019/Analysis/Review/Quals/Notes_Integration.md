@@ -1,5 +1,8 @@
 # Integration
 
+**Definition:**
+$f\in L^+$ iff $f$ is measurable and non-negative.
+
 > Useful techniques: 
 >
 > - Break integration domain up into disjoint annuli.
@@ -59,7 +62,6 @@ so the DCT applies to $g_n$ and
 \to_{DCT} \lim \int \abs{f_n} - \int \abs{f}
 .\end{align*}
 
-
 **Fatou's Lemma**:
 
 If $f_n \in L^+$, then
@@ -107,43 +109,63 @@ so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 Apply the MVT to $f_k$ to get $f_k(x, t) = f_k(\xi, t)$ for some $\xi \in [0, h_k]$, and show that $f_k(\xi, t) \in L_1$.
 
 
-**Lemma (Summing Integrals)**
+**Lemma (Swapping Sum and Integral)**
 If $f_n$ are non-negative and $\sum \int \abs f_n < \infty$, then $\sum \int f_n = \int \sum f_n$.
+
+> *Proof: MCT.* 
+> Let $F_N = \sum^N f_n$ be a finite partial sum; then there are simple functions $\phi_n \nearrow f_n$ and so $\sum^N \phi_n \nearrow F_N$, so apply MCT.
+
+**Lemma:**
+If $f_k \in L^1$ and $\sum \norm{f_k}_1 < \infty$ then $\sum f_k$ converges almost everywhere and in $L^1$.
+
+> *Proof:*
+> Define $F_N = \sum^N f_k$ and $F = \lim_N F_N$, then $\norm{F_N}_1 \leq \sum^N \norm{f_k} < \infty$ so $F\in L^1$ and $\norm{F_N - F}_1 \to 0$ so the sum converges in $L^1$.
+> Almost everywhere convergence: ?
 
 ## $L^1$ Facts
 
-**Lemma:**
+**Lemma (Translation Invariance):**
 The Lebesgue integral is translation invariant, i.e. 
 $\int f(x) ~dx = \int f(x + h) ~dx$ for any $h$.
 
-> *Proof:* ?
+> *Proof:* 
+> 
+> - For characteristic functions, $\int_E f(x+h) = \int_{E + h} f(x) = m(E+h) = m(E) = \int_E f$ by translation invariance of measure.
+> - So this also holds for simple functions by linearity
+> - For $f\in L^+$, choose $\phi_n \nearrow f$ so $\int \phi_n \to \int f$.
+> - Similarly, $\tau_h \phi_n \nearrow \tau_h f$ so $\int \tau_h f \to \int f$
+> - Finally $\theset{\int \tau_h \phi} = \theset{\int \phi}$ by step 1, and the suprema are equal by uniqueness of limits.
 
-**Lemma:**
+**Lemma (Integrals Distribute Over Disjoint Sets):**
+
 If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
 
 
-
 **Lemma ($L^1$ functions may Decay Rapidly):**
+
 If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to\infty}\to 0$.
 
 > Doesn't hold for general $L^1$ functions, take any train of triangles with height 1 and summable areas.
 
 **Lemma ($L^1$ functions have Small Tails):**
+
 If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that if $A = B_R(0)^c$, then $\int_A \abs f < \varepsilon$. 
 
 > *Proof: Approximate with compactly supported functions.* 
 > Take $g\converges{L_1}\to f$ with $g\in C_c$, then choose $N$ large enough so that $g=0$ on $E\definedas B_N(0)^c$, then $\int_E \abs{f} \leq \int_E\abs{f-g} + \int_E \abs{g}$.
 
 **Lemma ($L^1$ functions have absolutely continuity):**
+
 $m(E) \to 0 \implies \int_E f \to 0$.
 
 > *Proof: Approximate with compactly supported functions.*
 > Take $g\converges{L_1}\to f$, then $g \leq M$ so $\int_E{f} \leq \int_E{f-g} + \int_E g \to 0 + M \cdot m(E) \to 0$.
 
-**Lemma ($L^1$ functions are bounded a.e.):**
+**Lemma ($L^1$ functions are finite almost everywhere):**
+
 If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
 
-> *Proof:*
+> *Proof (Split up domain2):*
 > Let $A = \theset{f(x) = \infty}$, then $\infty > \int f = \int_A f + \int_{A^c} f = \infty \cdot m(A) + \int_{A^c} f \implies m(X) =0$.
 
 **Lemma (Continuity in $L^1$)**:
