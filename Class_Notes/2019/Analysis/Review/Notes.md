@@ -46,10 +46,7 @@ There *do not* exist functions that are discontinuous precisely on $\RR\setminus
 **Lemma:**
 Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
 
-## Convergence 
-
-**Lemma:**
-A uniform limit of continuous functions is continuous.
+## Uniform Convergence 
 
 **Theorem (Important Example):**
 The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped with the norm $\norm{f} = \sup_{x\in [0, 1]} \abs{f(x)}$, is a **complete** metric space.
@@ -86,13 +83,16 @@ The unit ball in $C([0, 1])$ with the sup norm is not compact.
 
 > *Proof:* Take $f_k(x) = x^n$, which converges to a dirac delta at 1. The limit is not continuous, so no subsequence can converge.
 
-**Lemma (Baby Commuting Limits with Integrals):**
-If $f_n \to f$ uniformly, then $\int f_n = \int f$.
+**Lemma:**
+A uniform limit of continuous functions is continuous.
 
 **Lemma (Testing Uniform Convergence):**
 $f_n \to f$ uniformly iff there exists an $M_n$ such that $\norm{f_n - f}_\infty \leq M_n \to 0$.
 
 > Negating: find an $x$ which depends on $n$ for which the norm is bounded below.
+
+**Lemma (Baby Commuting Limits with Integrals):**
+If $f_n \to f$ uniformly, then $\int f_n = \int f$.
 
 **Lemma (Uniform Convergence and Derivatives)**
 If $f_n' \to g$ uniformly for some $g$ and $f_n \to f$ pointwise (or at least at one point), then $g = f'$.
