@@ -16,5 +16,3 @@
 - Real and Complex Analysis, by W. Rudin
 
 [An old course page](http://alpha.math.uga.edu/~lyall/8100Fall2014/index.html)
-
-
