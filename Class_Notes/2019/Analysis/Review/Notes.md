@@ -105,8 +105,10 @@ $\sum \frac 1 {n^p} < \infty \iff p>1$.
 
 **Lemma (p-test for Integrals)**:
 \begin{align*}
-\int_\varepsilon^\infty \frac 1 {x^p} < \infty \iff p>1 \\
-\int_0^1 \frac 1 {x^p} < \infty \iff p<1
+\int_\varepsilon^\infty \frac 1 {x^p} < \infty 
+&\iff p>1 \\
+\int_0^1 \frac 1 {x^p} < \infty 
+&\iff p<1
 .\end{align*}
 
 ## Measure Theory
