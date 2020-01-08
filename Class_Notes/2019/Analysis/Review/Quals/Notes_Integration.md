@@ -42,8 +42,8 @@ If $f_n \in L^+$, then
 
 > Only need positivity.
 
-Lemma (Sufficient Condition for Decay):
+**Lemma (Sufficient Condition for Decay):**
 If $f \in L^1$ and $f$ is uniformly continuous, then $f$ 
 
-Lemma (Small Tails):
-If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that if $A = B_R(0)^c$, then $\int_A f 
+**Lemma ($L^1$ has Small Tails):**
+If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that if $A = B_R(0)^c$, then $\int_A \abs f < \varepsilon$. 
