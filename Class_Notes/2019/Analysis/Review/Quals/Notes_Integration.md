@@ -42,7 +42,12 @@ If $f_n \in L^+$, then
 
 > Only need positivity.
 
-**Lemma (Sufficient Condition for Decay):**
+**Lemma:**
+If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
+
+> Useful technique: break integration domain up into disjoint annuli.
+
+**Lemma ($L^1$ functions may Decay Rapidly):**
 If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to\infty}\to 0$.
 
 > Doesn't hold for general $L^1$ functions, take any train of triangles with height 1 and summable areas.
@@ -50,14 +55,11 @@ If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to
 **Lemma ($L^1$ functions have Small Tails):**
 If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that if $A = B_R(0)^c$, then $\int_A \abs f < \varepsilon$. 
 
-**Lemma:**
-If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
-
-> Useful technique: break integration domain up into disjoint annuli.
-
 **Lemma ($L^1$ functions are bounded a.e.):**
 If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
 
 > Proof:
 > Let $A = \theset{f(x) = \infty}$, then $\infty > \int f = \int_A f + \int_{A^c} f = \infty \cdot m(A) + \int_{A^c} f \implies m(X) =0$.
+
+Lemma ($L^1$ functions :
 
