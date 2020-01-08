@@ -95,8 +95,8 @@ $f_n \to f$ uniformly iff there exists an $M_n$ such that $\norm{f_n - f}_\infty
 **Lemma**
 If $f_n' \to g$ uniformly for some $g$ and $f_n \to f$ pointwise (or at least at one point), then $g = f'$.
 
-Lemma:
-A series 
+**Lemma:**
+If $f_n(x) \leq M_n$ where $\sum M_n < \infty$, then the series $f(x) = \sum f_n(x)$ converges pointwise.
 
 ## Measure Theory
 
