@@ -30,4 +30,4 @@ f\in L^1 \implies
 If $f \in L^1$, then $\hat f$ is continuous and bounded.
 
 > *Proof:*
-> $\abs{\hat f} \leq \int \abs{f}\cdot \abs{e^{\cdots}} \leq \norm{f}_1$, and the DCT shows that $\lim_{\xi_n \to \xi}
+> $\abs{\hat f} \leq \int \abs{f}\cdot \abs{e^{\cdots}} \leq \norm{f}_1$, and the DCT shows that $\abs{\hat f(\xi_n) - \hat f(\xi)} \to 0$.
