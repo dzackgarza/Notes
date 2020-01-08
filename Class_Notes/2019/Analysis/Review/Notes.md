@@ -80,5 +80,5 @@ Metric spaces are compact iff they are sequentially compact, (i.e. every sequenc
 **Corollary:**
 The unit ball in $C([0, 1])$ with the sup norm is not compact.
 
-> *Proof:* Take triangles of height 1 converging to the dirac delta, then $\norm{f_k - f} = 1$ for all $k$.
+> *Proof:* Take $f_k(x) = x^n$, which converges to a dirac delta at 1. The limit is not continuous, so no subsequence can converge.
 
