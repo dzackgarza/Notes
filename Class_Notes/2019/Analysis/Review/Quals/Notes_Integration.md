@@ -76,6 +76,9 @@ If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
 > Let $A = \theset{f(x) = \infty}$, then $\infty > \int f = \int_A f + \int_{A^c} f = \infty \cdot m(A) + \int_{A^c} f \implies m(X) =0$.
 
 **Lemma (Continuity in $L^1$)**:
+$\norm{\tau_h f - f}_1 \to 0$ as $h\to 0$.
 
+> *Proof:*
+> 
 
 
