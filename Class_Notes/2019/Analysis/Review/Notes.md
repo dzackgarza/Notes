@@ -27,6 +27,8 @@ $$
 \quad \text{i.e.}~~ \int f_n \to \int f
 .$$
 
+> Needs to be positive and increasing.
+
 **Dominated Convergence Theorem (DCT)**:
 
 If $f_n \in L^1$ and $f_n \to f$ a.e. with $\abs {f_n} \leq g$ for some $g\in L^1$, then
@@ -34,12 +36,14 @@ $$
 \lim \int f_n = \int \lim f_n = \int f \quad \text{i.e.}~~ \int f_n \to \int f
 ,$$
 
-  and more generally,
-  $$
-  \int \abs{f_n - f} \to 0
-  $$
+and more generally,
+$$
+\int \abs{f_n - f} \to 0
+.$$
 
-  > Generalized DCT: can relax $\abs {f_n} < g$ to $\abs{f_n} < g_n \to g\in L^1$.
+> Positivity *not* needed.
+
+> Generalized DCT: can relax $\abs {f_n} < g$ to $\abs{f_n} < g_n \to g\in L^1$.
 
 
 - **Fatou's Lemma**:
