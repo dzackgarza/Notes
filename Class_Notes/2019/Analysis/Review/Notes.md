@@ -30,3 +30,8 @@ Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
 
 **Lemma:**
 $\RR$ is a Baire space, i.e. countable intersections of open, dense sets are still dense.
+
+Lemma:
+There is a function discontinuous precisely on $\QQ$.
+
+Proof: $f(x) = \frac 1 n$
