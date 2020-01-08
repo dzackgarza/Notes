@@ -38,6 +38,7 @@ $$
 > Generalized DCT: can relax $\abs {f_n} < g$ to $\abs{f_n} < g_n \to g\in L^1$.
 
 **Lemma:**
+If $f\in L^1$, then
 \begin{align*}
 \int{f_n - f} \to 0 \iff \int \abs{f_n} \to \abs{f}
 .\end{align*}
