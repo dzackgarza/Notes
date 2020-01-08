@@ -57,7 +57,6 @@ If $E$ is Lebesgue measurable, then $E = H \disjoint N$ where $H \in F_\sigma$ a
 
 > **Useful technique:** $F_\sigma$ sets are Borel, so establish something for Borel sets and use this to extend it to Lebesgue.
 
-
 **Lemma:**
 \begin{align*}
 \limsup_n A_n = \intersect_n \union_{j\geq n} A_j&= \theset{x \suchthat x\in A_n \text{ for inf. many $n$}}  \\
