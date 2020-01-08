@@ -146,8 +146,10 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 .\end{align*}
 
 **Lemma (p-tests in $\RR^n$)**:
-Let $B = \theset{x\in \RR^n \suchthat \norm{x} \leq 1}$
+Let $n$ be a fixed dimension and set $B = \theset{x\in \RR^n \suchthat \norm{x} \leq 1}$. 
+Then
 \begin{align*}
-\int_B \frac{1}{\abs{x}^p} < \infty \iff  
+\int_B \frac{1}{\abs{x}^p} < \infty \iff p < n \\
+\int_{B^c} \frac{1}{\abs{x}^p} < \infty \iff p > n \\
 .\end{align*}
 
