@@ -172,7 +172,7 @@ There is a non-measurable set.
 
 > *Proof:*
 >
-> - Enumerate
+> - Use AOC to choose one representative from every coset of $\RR/\QQ$.
 
 
 *Comments:*
