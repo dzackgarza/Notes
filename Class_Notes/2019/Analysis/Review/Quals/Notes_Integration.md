@@ -174,5 +174,5 @@ A_{h}(f)(x):=\frac{1}{2 h} \int_{x-h}^{x+h} f(y) d y
 \implies \norm{A_h(f) - f} \converges{h\to 0}\to 0
 .\end{align*}
 
-> *Proof*:
+> *Proof*: Fubini-Tonelli, and sketch region to change integration bounds.
 
