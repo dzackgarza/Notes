@@ -49,7 +49,7 @@ $$
 **Fatou's Lemma**:
 
 If $f_n \in L^+$, then
-$$
+
 \int \liminf f_n \leq \liminf \int f_n
 .$$
 
