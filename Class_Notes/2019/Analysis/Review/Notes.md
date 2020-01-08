@@ -2,25 +2,117 @@
 title: Analysis Review Notes
 ---
 
-## Definitions
+## Basics
 
-**Definition (Convolution)**
+**Definition:**
+A set $S$ is **nowhere dense** iff the closure of $S$ has empty interior.
+
+**Definition:**
+A set is **meager** if it is a *countable* union of nowhere dense sets.
+
+> Note that a *finite* union of nowhere dense is still nowhere dense.
+
+**Lemma:**
+The Cantor set is closed with empty interior.
+
+> Proof: Its complement is a union of open intervals, and can't contain an interval since intervals have positive measure and $m(C_n)$ tends to zero.
+
+> **Corollary:**
+> The Cantor set is nowhere dense.
+
+**Definition:**
+An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersection of opens.
+
+> Mnemonic: "F" stands for *ferme*, which is "closed" in French, and $\sigma$ corresponds to a "sum", i.e. a union.
+
+**Lemma:**
+Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
+
+**Lemma:**
+$\RR$ is a Baire space, i.e. countable intersections of open, dense sets are still dense.
+
+**Lemma:**
+There is a function discontinuous precisely on $\QQ$.
+
+> *Proof:* $f(x) = \frac 1 n$ if $x = r_n \in \QQ$ is an enumeration of the rationals, and zero otherwise.
+The limit at every point is 0.
+
+**Lemma:**
+There *do not* exist functions that are discontinuous precisely on $\RR\setminus \QQ$.
+
+> *Proof:* $D_f$ is always an $F_\sigma$ set, which follows by considering the oscillation $\omega_f$.
+> $\omega_f(x) = 0 \iff f$ is continuous at $x$, and $D_f = \union_n A_{\frac 1 n}$ where $A_\varepsilon = \theset{\omega_f \geq \varepsilon}$ is closed.
+
+**Lemma:**
+Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
+
+**Lemma:**
+A uniform limit of continuous functions is continuous.
+
+**Theorem (Important Example):**
+The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped with the norm $\norm{f} = \sup_{x\in [0, 1]} \abs{f(x)}$, is a **complete** metric space.
+
+> *Proof:*
+>
+> *Step 0:* Let $\theset{f_k}$ be Cauchy in $X$.
+>
+> *Step 1*: Define a candidate limit using pointwise convergence:
+>
+> Fix an $x$; since
+$$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
+,$$ $\theset{f_k(x)}$ is Cauchy in $\RR$.
+> So define $f(x) \definedas \lim_k f_k(x)$.
+>
+>
+> *Step 2:* Show that $\norm{f_k - f} \to 0$:
+>
+> $$\norm{f_k - f} = \lim_{j} \norm{f_k - f_j} \to 0$$
+> Alternatively, $\norm{f_k-f} \leq \norm{f_k - f_N} + \norm{f_N - f_j}$, where $N, j$ can be chosen large enough to bound each term by $\varepsilon/2$.
+>
+> *Step 3:* Show that $f\in X$:
+>
+> The uniform limit of continuous functions is continuous. (Note: in other cases, you may need to show the limit is bounded, or has bounded derivative, or whatever other conditions define $X$.)
+> $\qed$
+
+**Lemma:**
+Metric spaces are compact iff they are sequentially compact, (i.e. every sequence has a convergent subsequence).
+
+**Corollary:**
+The unit ball in $C([0, 1])$ with the sup norm is not compact.
+
+> *Proof:* Take $f_k(x) = x^n$, which converges to a dirac delta at 1. The limit is not continuous, so no subsequence can converge.
+
+
+## Measure Theory
+
+*Comments:*
+
+> Best way to show measurability: use Borel characterization, or show that it's an $H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
+
+> Just establish something for Borel sets, then use this characterization to extend it to Lebesgue.
+
+**Lemma (Borel-Cantelli)**:
+
+Let $\{E_k\}$ be a countable collection of measurable sets.
+Then
 $$
-f * g(x)=\int f(x-y) g(y) d y
+\sum_k m(E_k) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_k
 .$$
 
-**Definition (Dilation)**
-$$
-\phi_{t}(x)=t^{-n} \phi\left(t^{-1} x\right)
-.$$
+**Theorem (Egorov)**:
 
-**Definition (The Fourier Transform):**
+Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty} f_k(x) < \infty$ exists almost everywhere.
+
+Then $f_k \to f$ *almost uniformly*, i.e.
 \begin{align*}
-\hat f(\xi) = \int f(x) ~e^{2\pi i x \cdot \xi} ~dx
+\forall\varepsilon > 0, ~\exists F \subseteq E ~\text{closed such that } &
+m(E\setminus F) < \varepsilon ~\text{ and }~ f_k \mapsvia{u}  f ~\text{on}~ F
 .\end{align*}
 
 
-## Convergence Theorems
+## Integrability
+
+### Convergence Theorems
 
 **Monotone Convergence Theorem (MCT)**:
 
@@ -60,7 +152,7 @@ If $f_n \in L^+$, then
 > Only need positivity.
 
 
-## Inequalities and Equalities
+### Inequalities and Equalities
 
 **AM-GM Inequality**:
 $$
@@ -145,23 +237,7 @@ Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e.
 
 ### Other
 
-**Lemma (Borel-Cantelli)**:
 
-Let $\{E_k\}$ be a countable collection of measurable sets.
-Then
-$$
-\sum_k m(E_k) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_k
-.$$
-
-**Theorem (Egorov)**:
-
-Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty} f_k(x) < \infty$ exists almost everywhere.
-
-Then $f_k \to f$ *almost uniformly*, i.e.
-\begin{align*}
-\forall\varepsilon > 0, ~\exists F \subseteq E ~\text{closed such that } &
-m(E\setminus F) < \varepsilon ~\text{ and }~ f_k \mapsvia{u}  f ~\text{on}~ F
-.\end{align*}
 
 Theorem (Fubini):
 
@@ -193,14 +269,9 @@ f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
 so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 
 
+## $L^p$ Spaces
 
 ## Important Comments
-
-**Measurability**:
-
-> Best way to show measurability: use Borel characterization, or show that it's an $H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
-
-> Just establish something for Borel sets, then use this characterization to extend it to Lebesgue.
 
 
 
@@ -214,86 +285,25 @@ In general, $(L^p)\dual \cong L^q$
   - For the analogous $p=\infty$ case: $L^1 \subset (L^\infty)\dual$, since the isometric mapping is always injective, but *never* surjective. So this containment is always proper (requires Hahn-Banach Theorem).
 - The $p=2$ case: Easy by the Riesz Representation for Hilbert spaces.
 
-**Fourier Series**:
+## Fourier Series and Convolution
 
-- $\hat f = \hat g \implies f=g$ almost everywhere.
+**Definition (Convolution)**
+$$
+f * g(x)=\int f(x-y) g(y) d y
+.$$
 
+**Definition (Dilation)**
+$$
+\phi_{t}(x)=t^{-n} \phi\left(t^{-1} x\right)
+.$$
 
-**Definition:**
-A set $S$ is **nowhere dense** iff the closure of $S$ has empty interior.
-
-**Definition:**
-A set is **meager** if it is a *countable* union of nowhere dense sets.
-
-> Note that a *finite* union of nowhere dense is still nowhere dense.
-
-**Lemma:**
-The Cantor set is closed with empty interior.
-
-> Proof: Its complement is a union of open intervals, and can't contain an interval since intervals have positive measure and $m(C_n)$ tends to zero.
-
-> **Corollary:**
-> The Cantor set is nowhere dense.
-
-**Definition:**
-An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersection of opens.
-
-> Mnemonic: "F" stands for *ferme*, which is "closed" in French, and $\sigma$ corresponds to a "sum", i.e. a union.
+**Definition (The Fourier Transform):**
+\begin{align*}
+\hat f(\xi) = \int f(x) ~e^{2\pi i x \cdot \xi} ~dx
+.\end{align*}
 
 **Lemma:**
-Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
+$\hat f = \hat g \implies f=g$ almost everywhere.
 
-**Lemma:**
-$\RR$ is a Baire space, i.e. countable intersections of open, dense sets are still dense.
 
-**Lemma:**
-There is a function discontinuous precisely on $\QQ$.
-
-> *Proof:* $f(x) = \frac 1 n$ if $x = r_n \in \QQ$ is an enumeration of the rationals, and zero otherwise.
-The limit at every point is 0.
-
-**Lemma:**
-There *do not* exist functions that are discontinuous precisely on $\RR\setminus \QQ$.
-
-> *Proof:* $D_f$ is always an $F_\sigma$ set, which follows by considering the oscillation $\omega_f$.
-> $\omega_f(x) = 0 \iff f$ is continuous at $x$, and $D_f = \union_n A_{\frac 1 n}$ where $A_\varepsilon = \theset{\omega_f \geq \varepsilon}$ is closed.
-
-**Lemma:**
-Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
-
-**Lemma:**
-A uniform limit of continuous functions is continuous.
-
-**Theorem (Important Example):**
-The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped with the norm $\norm{f} = \sup_{x\in [0, 1]} \abs{f(x)}$, is a **complete** metric space.
-
-> *Proof:*
->
-> *Step 0:* Let $\theset{f_k}$ be Cauchy in $X$.
->
-> *Step 1*: Define a candidate limit using pointwise convergence:
->
-> Fix an $x$; since
-$$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
-,$$ $\theset{f_k(x)}$ is Cauchy in $\RR$.
-> So define $f(x) \definedas \lim_k f_k(x)$.
->
->
-> *Step 2:* Show that $\norm{f_k - f} \to 0$:
->
-> $$\norm{f_k - f} = \lim_{j} \norm{f_k - f_j} \to 0$$
-> Alternatively, $\norm{f_k-f} \leq \norm{f_k - f_N} + \norm{f_N - f_j}$, where $N, j$ can be chosen large enough to bound each term by $\varepsilon/2$.
->
-> *Step 3:* Show that $f\in X$:
->
-> The uniform limit of continuous functions is continuous. (Note: in other cases, you may need to show the limit is bounded, or has bounded derivative, or whatever other conditions define $X$.)
-> $\qed$
-
-**Lemma:**
-Metric spaces are compact iff they are sequentially compact, (i.e. every sequence has a convergent subsequence).
-
-**Corollary:**
-The unit ball in $C([0, 1])$ with the sup norm is not compact.
-
-> *Proof:* Take $f_k(x) = x^n$, which converges to a dirac delta at 1. The limit is not continuous, so no subsequence can converge.
 
