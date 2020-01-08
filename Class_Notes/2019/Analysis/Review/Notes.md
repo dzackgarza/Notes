@@ -31,8 +31,13 @@ Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
 **Lemma:**
 $\RR$ is a Baire space, i.e. countable intersections of open, dense sets are still dense.
 
-Lemma:
+**Lemma:**
 There is a function discontinuous precisely on $\QQ$.
 
-**Proof:** $f(x) = \frac 1 n$ if $x = r_n \in \QQ$ is an enumeration of the rationals, and zero otherwise.
+> *Proof:* $f(x) = \frac 1 n$ if $x = r_n \in \QQ$ is an enumeration of the rationals, and zero otherwise.
 The limit at every point is 0.
+
+**Lemma:**
+There are not functions that are discontinuous precisely on $\RR\setminus \QQ$.
+
+> *Proof:* $D_f$ is always a ? set.
