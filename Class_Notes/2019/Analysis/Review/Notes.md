@@ -254,7 +254,6 @@ For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$,
 - For $E$ measurable, the slices $E_x \definedas \theset{y \suchthat (x, y) \in E}$ are measurable.
 - $\int f = \int \int f(x,y)$, i.e. any iterated integral is equal to the original
 
-
 **Theorem (Fubini/Tonelli):**
 If any iterated integral is **absolutely integrable**, i.e. $\int \int \abs{f(x, y)} < \infty$, then $f$ is integrable and $\int f$ equals any iterated integral.
 
