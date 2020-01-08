@@ -47,5 +47,8 @@ If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to
 
 > Doesn't hold for general $L^1$ functions, take any train of triangles with height 1 and summable areas.
 
-**Lemma ($L^1$ has Small Tails):**
+**Lemma ($L^1$ functions have Small Tails):**
 If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that if $A = B_R(0)^c$, then $\int_A \abs f < \varepsilon$. 
+
+**Lemma ($L^1$ functions are bounded a.e.):**
+If 
