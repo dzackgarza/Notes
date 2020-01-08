@@ -95,11 +95,11 @@ If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) 
 
 To justify passing the limit, let $h_k \to 0$ be any sequence and define
 $$
-f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
+f_k(x, t) = \frac{f(x, t+h_k)-f(x, t)}{h_k}
 ,$$
 so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 
-Apply the MVT to $f_k$ on $[0, h_k]$
+Apply the MVT to $f_k$ to get $f_k(x, t) = f_k(\xi, t)$ for some $\xi \in [0, h_k]$.
 
 
 **Lemma (Summing Integrals)**
