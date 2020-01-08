@@ -137,19 +137,14 @@ For a fixed $x$, if $f = \sum f_n$ converges *uniformly* on some $B_r(x)$ and ea
 If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converges uniformly.
 
 **Lemma (p-tests)**:
+Let $n$ be a fixed dimension and set $B = \theset{x\in \RR^n \suchthat \norm{x} \leq 1}$. 
 \begin{align*}
 \sum \frac 1 {n^p} < \infty &\iff p>1 \\
 \int_\varepsilon^\infty \frac 1 {x^p} < \infty 
 &\iff p>1 \\
 \int_0^1 \frac 1 {x^p} < \infty 
-&\iff p<1
-.\end{align*}
-
-**Lemma (p-tests in $\RR^n$)**:
-Let $n$ be a fixed dimension and set $B = \theset{x\in \RR^n \suchthat \norm{x} \leq 1}$. 
-Then
-\begin{align*}
-\int_B \frac{1}{\abs{x}^p} < \infty \iff p < n \\
-\int_{B^c} \frac{1}{\abs{x}^p} < \infty \iff p > n \\
+&\iff p<1 \\
+\int_B \frac{1}{\abs{x}^p} < \infty &\iff p < n \\
+\int_{B^c} \frac{1}{\abs{x}^p} < \infty &\iff p > n \\
 .\end{align*}
 
