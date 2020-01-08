@@ -149,7 +149,7 @@ m_*(E) = \inf_{\substack{\theset{Q_i} \rightrightarrows E \\ \text{closed cubes}
 **Lemma (Properties of Outer Measure)**:
 
 - Montonicity: $E\subseteq F \implies m_*(E) \leq m_*(F)$.
-- 
+- Countable Subadditivity: $m_*(\union E_i) \leq \sum m_*(E_i)$.
 
 
 *Comments:*
