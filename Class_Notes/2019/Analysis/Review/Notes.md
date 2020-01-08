@@ -56,18 +56,18 @@ The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped wi
 >
 > *Step 0:* Let $\theset{f_k}$ be Cauchy in $X$. 
 > 
-> *Step 1*: Define a candidate limit using pointwise convergence.
+> *Step 1*: Define a candidate limit using pointwise convergence:
 > 
 > Fix an $x$; since 
 $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
 ,$$ $\theset{f_k(x)}$ is Cauchy in $\RR$.
 > So define $f(x) \definedas \lim_k f_k(x)$.
 > 
-> *Step 2:* Show that $f\in X$.
+> *Step 2:* Show that $f\in X$:
 > 
 > The uniform limit of continuous functions is continuous.
 > 
-> *Step 3:* Show that $\norm{f_k - f} \to 0$.
+> *Step 3:* Show that $\norm{f_k - f} \to 0$:
 > 
-> $\norm{f_k - f} = \lim_{j} \norm{f_k - f_j} \to 0$
+> $$\norm{f_k - f} = \lim_{j} \norm{f_k - f_j} \to 0$$
 > Alternatively, $\norm{f_k-f} \leq \norm{f_k - f_N} + \norm{f_N - f_j}$, where $N, j$ can be chosen large enough to bound each term by $\varepsilon/2$.
