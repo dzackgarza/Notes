@@ -37,7 +37,8 @@ An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersec
 Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
 
 **Theorem (Baire):**
-$\RR$ is a Baire space, i.e. countable intersections of open, dense sets are still dense.
+$\RR$ is a Baire space, i.e. countable intersections of open, dense sets are still dense. 
+Thus $\RR$ can not be written as a countable union of nowhere dense sets.
 
 **Lemma:**
 There is a function discontinuous precisely on $\QQ$.
