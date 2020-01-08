@@ -119,8 +119,9 @@ For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
 
 > Note: this does not need to be a basis.
 
-- **Parseval's identity:**
-Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete. 
+**Parseval's identity:**
+
+Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete, i.e. the span of its closure is all of $H$.
 
 
 ### Other
