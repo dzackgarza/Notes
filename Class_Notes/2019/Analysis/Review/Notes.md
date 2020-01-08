@@ -14,7 +14,7 @@ $$
 \phi_{t}(x)=t^{-n} \phi\left(t^{-1} x\right)
 .$$
 
-Definition (The Fourier Transform):
+**Definition (The Fourier Transform):**
 \begin{align*}
 \hat f(\xi) = \int f(x) ~e^{2\pi i x \cdot \xi} ~dx
 .\end{align*}
