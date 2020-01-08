@@ -187,8 +187,8 @@ There is a non-measurable set.
 
 Lemma:
 \begin{align*}
-\limsup_n A_n = \theset{x \suchthat x\in A_n \text{ for inf. many $n$}} = \intersect_n \union_{j\geq n} A_j \\
-\liminf_n A_n = \theset{x \suchthat x\in A_n \text{ for inf. many $n$}} = \intersect_n \union_{j\geq n} A_j \\
+\limsup_n A_n = \intersect_n \union_{j\geq n} A_j&= \theset{x \suchthat x\in A_n \text{ for inf. many $n$}}  \\
+\liminf_n A_n = \union_n \intersect_{j\geq n} A_j &= \theset{x \suchthat x\in A_n \text{ for all except fin. many $n$}}  \\
 .\end{align*}
 
 
