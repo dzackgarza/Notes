@@ -73,3 +73,6 @@ $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
 > 
 > The uniform limit of continuous functions is continuous. (Note: in other cases, you may need to show the limit is bounded, or has bounded derivative, or whatever other conditions define $X$.)
 > $\qed$
+
+**Lemma:**
+Metric spaces are compact iff they are sequentially compact, (i.e. every sequence has a convergent subsequence)
