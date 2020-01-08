@@ -240,7 +240,10 @@ Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e.
 Theorem (Fubini):
 
 **Theorem (Tonelli):**
-For $f$ *positive and measurable*, for almost every $x\in \RR^n$
+For $f(x, y)$ *positive and measurable*, for almost every $x\in \RR^n$, 
+
+- $f_x(y)$ is a measurable function
+- 
 
 Theorem (Fubini/Tonelli):
 
