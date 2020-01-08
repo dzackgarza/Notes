@@ -131,6 +131,9 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 
 ## Measure Theory
 
+Lemma:
+Every open subset of $\RR$ 
+
 **Definition**:
 The outer measure of a set is given by
 \begin{align*}
