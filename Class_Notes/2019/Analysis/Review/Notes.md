@@ -7,6 +7,9 @@ title: Analysis Review Notes
 **Definition:**
 A set $S$ is nowhere dense iff the closure of $S$ has empty interior.
 
+Definition:
+A set is meager if it is a 
+
 **Lemma:**
 The Cantor set is closed with empty interior.
 
