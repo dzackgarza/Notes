@@ -169,9 +169,10 @@ m(E_1) < \infty \text{ and } E_i \searrow E &\implies m(E_i) \to m(E)
 
 
 **Lemma:**
-Measure is translation and dilation invariant.
+Lebesgue measure is translation and dilation invariant.
 
-> *Proof:*
+> *Proof:* 
+> Obvious for cubes; if $Q_i \rightrightarrows E$ then $Q_i + k \rightrightarrows E + k$, etc.
 
 **Theorem (Non-Measurable Sets)**:
 There is a non-measurable set.
@@ -182,6 +183,13 @@ There is a non-measurable set.
 > - Enumerate the rationals in $[0, 1]$ as $q_j$, and define $N_j = N + q_j$. These intersect trivially.
 > - Define $M \definedas \disjoint N_j$, then $[0, 1) \subseteq  M \subseteq [-1, 2)$, so the measure must be between 1 and 3.
 > By translation invariance, $m(N_j) = m(N)$, and disjoint additivity forces $m(M) = 0$, a contradiction.
+
+
+Lemma:
+\begin{align*}
+\limsup_n A_n = \theset{x \suchthat x\in A_n \text{for inf. many $n$}}
+.\end{align*}
+
 
 
 *Comments:*
