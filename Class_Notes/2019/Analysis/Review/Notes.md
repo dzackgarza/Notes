@@ -88,6 +88,10 @@ If $f_n \to f$ uniformly, then $\int f_n = \int f$.
 **Lemma:**
 $f_n \to f$ uniformly iff there exists an $M_n$ such that $\norm{f_n - f}_\infty \leq M_n \to 0$.
 
+> Negating: find an $x$ which depends on $n$ for which the norm is bounded below.
+
+
+
 
 ## Measure Theory
 
