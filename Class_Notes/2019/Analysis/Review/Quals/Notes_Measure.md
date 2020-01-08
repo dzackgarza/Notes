@@ -99,14 +99,3 @@ If $f_n$ are measurable, so are
 
 > **Proof (Convolution):**
 > Take the cone on $f$ to get $F(x, y) = f(x)$, then compose $F$ with the linear transformation $T = [1, -1; 1, 0]$.
-
-
-**Theorem (Egorov)**:
-
-Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \RR}$ be measurable functions such that $f(x) \definedas \displaystyle\lim_{k\to\infty} f_k(x) < \infty$ exists almost everywhere.
-
-Then $f_k \to f$ *almost uniformly*, i.e.
-\begin{align*}
-\forall\varepsilon > 0, ~\exists F \subseteq E ~\text{closed such that } &
-m(E\setminus F) < \varepsilon ~\text{ and }~ f_k \mapsvia{u}  f ~\text{on}~ F
-.\end{align*}
