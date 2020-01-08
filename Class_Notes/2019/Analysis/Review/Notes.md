@@ -46,6 +46,8 @@ There *do not* exist functions that are discontinuous precisely on $\RR\setminus
 **Lemma:**
 Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
 
+## Convergence 
+
 **Lemma:**
 A uniform limit of continuous functions is continuous.
 
@@ -60,12 +62,12 @@ The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped wi
 >
 > Fix an $x$; since
 $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
-,$$ $\theset{f_k(x)}$ is Cauchy in $\RR$.
+,$$ 
+> the sequence $\theset{f_k(x)}$ is Cauchy in $\RR$.
 > So define $f(x) \definedas \lim_k f_k(x)$.
 >
 >
 > *Step 2:* Show that $\norm{f_k - f} \to 0$:
->
 $$
 \abs{f_k(x) - f_j(x)} < \varepsilon ~\forall x \implies \lim_{j} \abs{f_k(x) - f_j(x)} <\varepsilon ~\forall x
 $$
