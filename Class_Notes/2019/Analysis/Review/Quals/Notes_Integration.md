@@ -161,6 +161,8 @@ $\norm{\tau_h f - f}_1 \to 0$ as $h\to 0$.
 
 **Theorem (Integration by Parts, Special Case)**:
 \begin{align*}
-F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d y
+F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d y \\ 
+\implies
+\int_{0}^{1} F(x) g(x) d x=F(1) G(1)-\int_{0}^{1} f(x) G(x) d x
 .\end{align*}
 
