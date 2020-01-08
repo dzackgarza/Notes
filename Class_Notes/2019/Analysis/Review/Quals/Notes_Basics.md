@@ -146,4 +146,8 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 .\end{align*}
 
 **Lemma (p-tests in $\RR^n$)**:
+Let $B = \
+\begin{align*}
+
+.\end{align*}
 
