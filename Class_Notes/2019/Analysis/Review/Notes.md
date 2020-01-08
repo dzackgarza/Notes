@@ -30,3 +30,6 @@ Singleton sets in $\RR$ are closed.
 
 **Corollary:**
 $\QQ$ is an $F_\sigma$ set.
+
+**Definition:**
+A Baire space
