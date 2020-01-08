@@ -20,3 +20,5 @@ The Cantor set is closed with empty interior.
 > **Corollary:**
 > The Cantor set is nowhere dense.
 
+
+
