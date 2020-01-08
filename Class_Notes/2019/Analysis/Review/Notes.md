@@ -80,5 +80,5 @@ Metric spaces are compact iff they are sequentially compact, (i.e. every sequenc
 **Corollary:**
 The unit ball in $C([0, 1])$ with the sup norm is not compact.
 
-> *Proof:*
+> *Proof:* Take triangles of height 1 converging to the dirac delta.
 
