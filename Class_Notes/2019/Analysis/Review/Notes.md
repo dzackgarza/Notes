@@ -83,6 +83,15 @@ $$
 \frac 1 p + \frac 1 q = 1 \implies \|f g\|_{1} \leq\|f\|_{p}\|g\|_{q}
 .\end{align*}
 
+**Application:**
+For finite measure spaces,
+$$
+1 \leq p < q \leq \infty \implies L^q \subset L^p \quad \text{ and } \ell^p \subset \ell^q
+$$
+
+> Proof: 
+
+
 **Cauchy-Schwarz**:
 
 \begin{align*}
@@ -186,10 +195,7 @@ so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 
 > Just establish something for Borel sets, then use this characterization to extend it to Lebesgue.
 
-For finite measure spaces,
-$$
-1 \leq p < q \leq \infty \implies L^q \subset L^p \quad \text{ and } \ell^p \subset \ell^q
-$$
+
 
 **Lemma:**
 $C_0([0, 1]) \injects L^2([0, 1])$ is dense.
