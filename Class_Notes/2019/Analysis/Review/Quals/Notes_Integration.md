@@ -1,5 +1,10 @@
 # Integration
 
+> Useful techniques: 
+>
+> - Break integration domain up into disjoint annuli.
+> - Break real integrals up into $x < 1$ and $x>1$.
+
 **Definition:**
 A measurable function is integrable iff $\norm{f}_1 < \infty$.
 
@@ -116,7 +121,7 @@ $\int f(x) ~dx = \int f(x + h) ~dx$ for any $h$.
 **Lemma:**
 If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
 
-> Useful technique: break integration domain up into disjoint annuli.
+
 
 **Lemma ($L^1$ functions may Decay Rapidly):**
 If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to\infty}\to 0$.
