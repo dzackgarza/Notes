@@ -74,13 +74,12 @@ If $f_n \in L^+$, then
 .\end{align*}
 
 **Holder's Inequality:**
-For $p,q$ conjugate exponents,
 \begin{align*}
-\|f g\|_{1} \leq\|f\|_{p}\|g\|_{q}
+\frac 1 p + \frac 1 q = 1 \implies \|f g\|_{1} \leq\|f\|_{p}\|g\|_{q}
 .\end{align*}
 
 **Cauchy-Schwarz**:
-Set $p=q=2$ in Holder's inequality to obtain
+
 \begin{align*}
 \abs{\inner{f}{g}} = \norm{fg}_1 \leq \norm{f}_2 \norm{g}_2 
 ,\end{align*}
@@ -91,18 +90,17 @@ with equality $\iff f \neq \lambda g$.
 > *Proof:* Holder's with $p=q=2$.
 
 **Minkowski's Inequality:**
+
 For $1\leq p < \infty$,
 $$
 \|f+g\|_{p} \leq\|f\|_{p}+\|g\|_{p}
 $$
 
-
-- **Young's Inequality**:
+**Young's Inequality**:
 \begin{align*}
 \frac 1 p + \frac 1 q = \frac 1 r + 1 \implies
 \|f \ast g\|_{r} \leq\|f\|_{p}\|g\|_{q}
 .\end{align*}
-
 
 > Useful specific cases:
 \begin{align*}
@@ -113,7 +111,7 @@ $$
 .\end{align*}
 
 
-- **Bessel's Inequality:**
+**Bessel's Inequality:**
 For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
 \begin{align*}
 \sum_{k=1}^{\infty}\left|\left\langle x, e_{k}\right\rangle\right|^{2} \leq\|x\|^{2}
