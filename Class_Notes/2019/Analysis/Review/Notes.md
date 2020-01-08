@@ -244,7 +244,7 @@ For $f(x, y)$ **non-negative and measurable**, for almost every $x\in \RR^n$,
 - $f_x(y)$ is a **measurable** function
 - $F(x) = \int f(x, y) ~dy$ is a **measurable** function,
 - For $E$ measurable, the slices $E_x \definedas \theset{y \suchthat (x, y) \in E}$ are measurable.
-- $\int f = \int \int F$, i.e. the iterated integrals are equal.
+- $\int f = \int \int F$, i.e. any iterated integral is equal to the original.
 
 **Theorem (Fubini):**
 For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$, 
@@ -252,7 +252,7 @@ For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$,
 - $f_x(y)$ is an **integrable** function
 - $F(x) = \int f(x, y) ~dy$ is an **integrable** function,
 - For $E$ measurable, the slices $E_x \definedas \theset{y \suchthat (x, y) \in E}$ are measurable.
-- $\int f = \int \int F$, i.e. the iterated integrals are equal.
+- $\int f = \int \int f(x,y)$, i.e. any iterated integral is equal to the original
 
 
 Theorem (Fubini/Tonelli):
