@@ -89,7 +89,7 @@ $$
 1 \leq p < q \leq \infty \implies L^q \subset L^p \quad \text{ and } \ell^p \subset \ell^q
 $$
 
-> Proof: 
+> Proof: Fix $p, q$, let 
 \begin{align*}
 \norm{f}_p^p = \norm{(\abs{f^p})\cdot 1}_1^p \leq m(X)^{1 - \frac p q}\cdot \norm{\abs{f^p}}_q^p 
 .\end{align*}
