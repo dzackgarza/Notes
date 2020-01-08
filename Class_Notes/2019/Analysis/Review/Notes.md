@@ -88,7 +88,7 @@ with equality $\iff f \neq \lambda g$.
 
 > Relates inner product to norm, and only happens to relate norms in $L^1$.
 
-> Proof: Holder's with $p=q=2$.
+> *Proof:* Holder's with $p=q=2$.
 
 **Minkowski's Inequality:**
 For $1\leq p < \infty$,
