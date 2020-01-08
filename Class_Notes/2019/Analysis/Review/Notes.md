@@ -62,25 +62,18 @@ If $f_n \in L^+$, then
 
 ## Inequalities and Equalities
 
-- **Reverse Triangle Inequality**
+**Reverse Triangle Inequality**
 \begin{align*}
 \abs{\norm{x} - \norm{y}} \leq \norm{x - y}
 .\end{align*}
 
 
-- **Chebyshev's Inequality**
+**Chebyshev's Inequality**
 \begin{align*}
 \mu(\{x:|f(x)|>\alpha\}) \leq\left(\frac{\|f\|_{p}}{\alpha}\right)^{p}
 .\end{align*}
 
-
-- ? Inequality
-$$
-a^{\lambda} b^{1-\lambda} \leq \lambda a+(1-\lambda) b
-$$
-with equality iff $a=b$.
-
-- **Holder's Inequality:**
+**Holder's Inequality:**
 For $p,q$ conjugate exponents,
 \begin{align*}
 \|f g\|_{1} \leq\|f\|_{p}\|g\|_{q}, \quad \text{i.e.} \int \abs{fg} 
