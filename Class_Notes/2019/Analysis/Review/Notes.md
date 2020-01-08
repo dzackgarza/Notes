@@ -270,8 +270,14 @@ so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 
 
 ## $L^p$ Spaces
+
 **Lemma:**
-$C_0([0, 1]), C_0^\infty([0, 1]) \injects L^2([0, 1])$ are dense.
+The following are dense subspaces of $L^2([0, 1])$:
+
+- Simple functions
+- Step functions
+- $C_0([0, 1])$
+- $C_0^\infty([0, 1])$
 
 **Dual Spaces:**
 In general, $(L^p)\dual \cong L^q$
