@@ -56,7 +56,7 @@ If $E$ is Lebesgue measurable, then $E = H \disjoint N$ where $H \in F_\sigma$ a
 
 > **Useful technique:** $F_\sigma$ sets are Borel, so establish something for Borel sets and use this to extend it to Lebesgue.
 
-> *Proof:* For every $\frac 1 n$ there exists a closed set $K_n \subset E$ such that $m(E\setminus K_n) \leq \frac 1 n$. 
+> *Proof:* For every $\frac 1 n$ there exists a closed set $K_n \subset E$ such that $m(E\setminus K_n) \leq \frac 1 n$.
 > Take $K = \union K_n$, wlog $K_n \nearrow K$ so $m(K) = \lim m(K_n) = m(E)$.
 > Take $N\definedas E\setminus K$, then $m(N) = 0$.
 
