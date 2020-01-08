@@ -32,4 +32,4 @@ Singleton sets in $\RR$ are closed.
 $\QQ$ is an $F_\sigma$ set.
 
 **Definition:**
-A Baire space
+$X$ is a Baire space iff 
