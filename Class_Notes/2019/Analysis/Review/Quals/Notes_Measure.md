@@ -50,12 +50,13 @@ There is a non-measurable set.
 > - Define $M \definedas \disjoint N_j$, then $[0, 1) \subseteq  M \subseteq [-1, 2)$, so the measure must be between 1 and 3.
 > By translation invariance, $m(N_j) = m(N)$, and disjoint additivity forces $m(M) = 0$, a contradiction.
 
-
 **Lemma (Borel Characterization of Measurable Sets)**
 
 If $E$ is Lebesgue measurable, then $E = H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
 
 > **Useful technique:** $F_\sigma$ sets are Borel, so establish something for Borel sets and use this to extend it to Lebesgue.
+
+> Proof: 
 
 **Lemma:**
 \begin{align*}
