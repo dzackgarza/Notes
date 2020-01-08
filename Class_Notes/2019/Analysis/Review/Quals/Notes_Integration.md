@@ -53,7 +53,7 @@ If $f_n \in L^+$, then
 The Lebesgue integral is translation invariant, i.e. 
 $\int f(x) ~dx = \int f(x + h) ~dx$ for any $h$.
 
-> *Proof:*
+> *Proof:* ?
 
 **Lemma:**
 If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
