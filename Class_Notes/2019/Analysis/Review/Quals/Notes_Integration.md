@@ -1,5 +1,8 @@
 # Integraion
 
+**Definition:**
+A measurable function is integrable iff $\norm{f}_1 < \infty$.
+
 ## Convergence Theorems
 
 **Monotone Convergence Theorem (MCT)**:
