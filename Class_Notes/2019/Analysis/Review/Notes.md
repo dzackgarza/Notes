@@ -101,7 +101,7 @@ If $f_n' \to g$ uniformly for some $g$ and $f_n \to f$ pointwise (or at least at
 If $f_n(x) \leq M_n$ **for a fixed $x$** where $\sum M_n < \infty$, then the series $f(x) = \sum f_n(x)$ converges pointwise.
 
 Lemma:
-
+If $\sum f_n$ converges then $\
 
 **Lemma (M-test for Series)**:
 If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converges uniformly.
