@@ -40,7 +40,8 @@ The limit at every point is 0.
 **Lemma:**
 There *do not* exist functions that are discontinuous precisely on $\RR\setminus \QQ$.
 
-> *Proof:* $D_f$ is always an $F_\sigma$ set.
+> *Proof:* $D_f$ is always an $F_\sigma$ set, which follows by considering the oscillation $\omega_f$. 
+> $\omega_f(x) = 0
 
 **Lemma:**
 Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
