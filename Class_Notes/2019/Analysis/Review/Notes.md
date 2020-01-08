@@ -93,7 +93,7 @@ $f_n \to f$ uniformly iff there exists an $M_n$ such that $\norm{f_n - f}_\infty
 > Negating: find an $x$ which depends on $n$ for which the norm is bounded below.
 
 **Lemma**
-
+If $f_n' \to g$ for some $g$ and $f_n \to f$ pointwise (or at least at one point), then $g = f'$.
 
 
 ## Measure Theory
