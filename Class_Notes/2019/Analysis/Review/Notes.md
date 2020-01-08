@@ -46,8 +46,8 @@ $$
 > Generalized DCT: can relax $\abs {f_n} < g$ to $\abs{f_n} < g_n \to g\in L^1$.
 
 
-- **Fatou's Lemma**:
-- 
+**Fatou's Lemma**:
+
 If $f_n \in L^+$, then
 $$
 \int \liminf f_n \leq \liminf \int f_n
