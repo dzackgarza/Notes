@@ -26,4 +26,5 @@ f\in L^1 \implies
 
 > Motto: Fourier transforms decay.
 
-Lemma:
+**Lemma:**
+If $f \in L^1$, then $\hat f$ is continuous and bounded.
