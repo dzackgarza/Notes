@@ -240,6 +240,7 @@ Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e.
 Theorem (Fubini):
 
 Theorem (Tonelli):
+For $f$
 
 Theorem (Fubini/Tonelli):
 
