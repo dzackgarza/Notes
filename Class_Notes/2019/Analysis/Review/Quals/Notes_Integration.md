@@ -1,7 +1,12 @@
-# Integraion
+# Integration
 
 **Definition:**
 A measurable function is integrable iff $\norm{f}_1 < \infty$.
+
+Useful facts about $C_c$ functions:
+
+- Bounded almost everywhere
+- Uniformly continuous
 
 ## Convergence Theorems
 
