@@ -77,3 +77,8 @@ $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
 **Lemma:**
 Metric spaces are compact iff they are sequentially compact, (i.e. every sequence has a convergent subsequence).
 
+**Corollary:**
+The unit ball in $C([0, 1])$ with the sup norm is not compact.
+
+> *Proof:*
+
