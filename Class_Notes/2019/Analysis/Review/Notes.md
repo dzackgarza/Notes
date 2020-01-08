@@ -61,5 +61,5 @@ The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped wi
 $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
 ,$$ $\theset{f_k(x)}$ is Cauchy in $\RR$.
 > So define $f(x) \definedas \lim_k f_k(x)$.
-> ?
+> 
 > *Step 2:*
