@@ -89,7 +89,7 @@ $$
 1 \leq p < q \leq \infty \implies L^q \subset L^p \quad \text{ and } \ell^p \subset \ell^q
 $$
 
-> Proof: Fix $p, q$, let $r = \frac q p$ and $s = \frac{r}{r-1}$ so $r\inv + s\inv = 1$. 
+> *Proof:* Fix $p, q$, let $r = \frac q p$ and $s = \frac{r}{r-1}$ so $r\inv + s\inv = 1$. 
 > Then let $h = \abs{f}^p$:
 \begin{align*}
 \norm{f}_p^p = \norm{h\cdot 1}_1 \leq \norm{1}_s \norm{h}_r = \mu(X)^{\frac 1 s} \norm{f}_q^{\frac q r}
