@@ -66,7 +66,7 @@ $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
 >
 > *Step 2:* Show that $\norm{f_k - f} \to 0$:
 >
-> $$\norm{f_k - f} = \lim_{j} \norm{f_k - f_j} \to 0$$
+> $$\abs{f_k(x) - f(x)} = \lim_{j} \norm{f_k - f_j} \to 0$$
 > Alternatively, $\norm{f_k-f} \leq \norm{f_k - f_N} + \norm{f_N - f_j}$, where $N, j$ can be chosen large enough to bound each term by $\varepsilon/2$.
 >
 > *Step 3:* Show that $f\in X$:
