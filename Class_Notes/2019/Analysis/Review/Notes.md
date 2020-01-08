@@ -153,8 +153,8 @@ m_*(E) = \inf_{\substack{\theset{Q_i} \rightrightarrows E \\ \text{closed cubes}
 - Approximation: For all $E$ there exists a $G \supseteq E$ such that $m_*(G) \leq m_*(E) + \varepsilon$.
 - [Almost] Disjoint Additivity: $m_*(A \disjoint B) = m_*(A) + m_*(B)$. 
 
-Lemma:
-
+**Lemma (Subtraction of Measure):**
+$m(A) = m(B) + m(C)$ and $m(C) < \infty$ implies that $m(A) - m(C) = m(B)$.
 
 
 *Comments:*
