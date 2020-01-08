@@ -137,7 +137,7 @@ Every open subset of $\RR$ (resp $\RR^n$) can be written as a unique countable u
 **Definition**:
 The outer measure of a set is given by
 \begin{align*}
-m_*(E) = \inf_{\theset{Q_i} \rightrightarrows E} \sum \abs{Q_i}
+m_*(E) = \inf_{\substack{\theset{Q_i} \rightrightarrows E \\ \text{closed cubes}}} \sum \abs{Q_i}
 .\end{align*}
 
 
