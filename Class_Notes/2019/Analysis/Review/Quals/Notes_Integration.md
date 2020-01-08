@@ -43,10 +43,11 @@ If $f\in L^1$, then
 \int{f_n - f} \to 0 \iff \int \abs{f_n} \to \abs{f}
 .\end{align*}
 
-> *Proof:* Let $g_n = \abs{f_n} - \abs{f - f_n}$, then $g_n \to \abs{f}$ and 
+> *Proof:* Let $g_n = \abs{f_n} - \abs{f_n - f}$, then $g_n \to \abs{f}$ and 
 \begin{align*}
-\abs{g_n} = \abs{ \abs{f_n} - \abs{f - f_n} } \leq \abs{f_n - (f - f_n)}
-.\end{align*}
+\abs{g_n} = \abs{ \abs{f_n} - \abs{f_n - f} } \leq \abs{f_n - (f_n - f)} = \abs{f} \in L^1
+,\end{align*}
+so the DCT applies to $g_n$ and
 
 
 
