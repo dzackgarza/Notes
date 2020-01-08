@@ -4,17 +4,20 @@ title: Analysis Review Notes
 
 ## Definitions
 
-- **Convolution**
+**Definition (Convolution)**
 $$
 f * g(x)=\int f(x-y) g(y) d y
-$$
+.$$
 
-- **Dilation**
+**Definition (Dilation)**
 $$
 \phi_{t}(x)=t^{-n} \phi\left(t^{-1} x\right)
-$$
+.$$
 
 Definition (The Fourier Transform):
+\begin{align*}
+\hat f(\xi) = \int f(x) ~e^{2\pi i x \cdot \xi} ~dx
+.\end{align*}
 
 
 ## Convergence Theorems
