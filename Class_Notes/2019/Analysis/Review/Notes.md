@@ -167,12 +167,20 @@ E_i \nearrow E &\implies m(E_i) \to m(E) \\
 m(E_1) < \infty \text{ and } E_i \searrow E &\implies m(E_i) \to m(E)
 .\end{align*}
 
+
+**Lemma:**
+Measure is translation and dilation invariant.
+
+> *Proof:*
+
 **Theorem (Non-Measurable Sets)**:
 There is a non-measurable set.
 
 > *Proof:*
 >
-> - Use AOC to choose one representative from every coset of $\RR/\QQ$.
+> - Use AOC to choose one representative from every coset of $\RR/\QQ$ on $[0, 1)$, which is countable, and assemble them into a set $N$
+> - Enumerate the rationals in $[0, 1]$ as $q_j$, and define $N_j = N + q_j$. These intersect trivially
+> By translation invariance, $m(N_j) = m(N)$, and 
 
 
 *Comments:*
