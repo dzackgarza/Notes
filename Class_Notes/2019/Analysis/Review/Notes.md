@@ -62,6 +62,11 @@ If $f_n \in L^+$, then
 
 ## Inequalities and Equalities
 
+**AM-GM Inequality**:
+$$
+\sqrt{ab} \leq \frac{a+b}{2}
+.$$
+
 **Reverse Triangle Inequality**
 \begin{align*}
 \abs{\norm{x} - \norm{y}} \leq \norm{x - y}
@@ -108,7 +113,6 @@ $$
 \norm{f\ast g}_\infty &\leq \norm{f}_2 \norm{g}_2 \\
 \norm{f\ast g}_\infty &\leq \norm{f}_p \norm{g}_q
 .\end{align*}
-
 
 **Bessel's Inequality:**
 
@@ -159,10 +163,10 @@ f\in L^1 \implies
 
 **Differentiating under the integral**:
 
-If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then
+If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) ~dt$, 
 \begin{align*}
-F(t) = \int f(x, t) ~dt 
-&\implies \dd{}{t} F(t)\definedas \lim _{h \rightarrow 0} \int \frac{f(x, t+h)-f(x, t)}{h} d x \\
+\dd{}{t} F(t)
+&\definedas \lim _{h \rightarrow 0} \int \frac{f(x, t+h)-f(x, t)}{h} d x \\
 &= \int \dd{}{t} f(x, t) ~dx
 .\end{align*}
 
@@ -181,11 +185,6 @@ so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 > Best way to show measurability: use Borel characterization, or show that it's an $H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
 
 > Just establish something for Borel sets, then use this characterization to extend it to Lebesgue.
-
-> AM-GM Inequality:
-$$
-\sqrt{ab} \leq \frac{a+b}{2}
-.$$
 
 - For finite measure spaces,
 $$
