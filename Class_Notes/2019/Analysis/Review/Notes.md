@@ -104,7 +104,7 @@ If $f_n(x) \leq M_n$ where $\sum M_n < \infty$, then the series $f(x) = \sum f_n
 $\sum \frac 1 {n^p} < \infty \iff p>1$.
 
 **Lemma (p-test for Integrals)**:
-$\int_\varepsilon^\infty \frac 1 {x^p} < \infty \iff $
+$\int_\varepsilon^\infty \frac 1 {x^p} < \infty \iff p>1$.
 
 ## Measure Theory
 
