@@ -38,6 +38,6 @@ There is a function discontinuous precisely on $\QQ$.
 The limit at every point is 0.
 
 **Lemma:**
-There are not functions that are discontinuous precisely on $\RR\setminus \QQ$.
+There *do not* exist functions that are discontinuous precisely on $\RR\setminus \QQ$.
 
 > *Proof:* $D_f$ is always an $F_\sigma$ set.
