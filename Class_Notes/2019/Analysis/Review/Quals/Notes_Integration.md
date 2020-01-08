@@ -67,7 +67,7 @@ If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that 
 $m(E) \to 0 \implies \int_E f \to 0$.
 
 > *Proof:*
-> Take $g\converges{L_1}\to f$, then $g \leq M$ so $\int_E{f} \leq \int_E{f-g} + \int_E g \to 0 + M$
+> Take $g\converges{L_1}\to f$, then $g \leq M$ so $\int_E{f} \leq \int_E{f-g} + \int_E g \to 0 + M \cdot m(E) \to 0$.
 
 **Lemma ($L^1$ functions are bounded a.e.):**
 If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
