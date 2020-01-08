@@ -159,4 +159,5 @@ $\norm{\tau_h f - f}_1 \to 0$ as $h\to 0$.
 ,\end{align*}
 > which follows because we can enlarge the support of $g$ to $K$ where the integrand is zero on $K^c$, then apply uniform continuity on $K$.
 
+**Theorem (Integration by Parts, Special Case)**:
 
