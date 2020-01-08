@@ -244,7 +244,7 @@ For $f(x, y)$ *positive and measurable*, for almost every $x\in \RR^n$,
 
 - $f_x(y)$ is a measurable function
 - $F(x) = \int f(x, y) ~dy$ is a measurable function,
-- 
+- The slice $E_x
 
 Theorem (Fubini/Tonelli):
 
