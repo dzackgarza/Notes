@@ -53,6 +53,8 @@ If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that 
 **Lemma:**
 If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
 
+> Useful technique: break integration domain up into disjoint annuli.
+
 **Lemma ($L^1$ functions are bounded a.e.):**
 If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
 
