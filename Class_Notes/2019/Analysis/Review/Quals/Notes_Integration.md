@@ -40,7 +40,7 @@ $$
 **Lemma:**
 If $f\in L^1$, then
 \begin{align*}
-\int{f_n - f} \to 0 \iff \int \abs{f_n} \to \abs{f}
+\int\abs{f_n - f} \to 0 \iff \int \abs{f_n} \to \abs{f}
 .\end{align*}
 
 > *Proof:* Let $g_n = \abs{f_n} - \abs{f_n - f}$, then $g_n \to \abs{f}$ and 
@@ -53,8 +53,6 @@ so the DCT applies to $g_n$ and
 = \int \abs{f_n} - g_n\\
 \to_{DCT} \lim \int \abs{f_n} - \int \abs{f}
 .\end{align*}
-
-
 
 
 **Fatou's Lemma**:
