@@ -111,10 +111,13 @@ $$
 
 
 **Bessel's Inequality:**
+
 For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
 \begin{align*}
 \sum_{k=1}^{\infty}\left|\left\langle x, e_{k}\right\rangle\right|^{2} \leq\|x\|^{2}
 .\end{align*}
+
+> Note: this does not need to be a basis.
 
 - **Parseval's identity:**
 Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete. 
