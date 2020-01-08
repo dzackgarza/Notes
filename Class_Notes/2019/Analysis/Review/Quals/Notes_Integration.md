@@ -72,7 +72,7 @@ $m(E) \to 0 \implies \int_E f \to 0$.
 **Lemma ($L^1$ functions are bounded a.e.):**
 If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
 
-> Proof:
+> *Proof:*
 > Let $A = \theset{f(x) = \infty}$, then $\infty > \int f = \int_A f + \int_{A^c} f = \infty \cdot m(A) + \int_{A^c} f \implies m(X) =0$.
 
 
