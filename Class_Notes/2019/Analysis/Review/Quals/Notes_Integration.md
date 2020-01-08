@@ -60,7 +60,7 @@ If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to
 **Lemma ($L^1$ functions have Small Tails):**
 If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that if $A = B_R(0)^c$, then $\int_A \abs f < \varepsilon$. 
 
-> Proof: 
+> *Proof:* 
 > Take $g\converges{L_1}\to f$ with $g\in C_c$, then choose $N$ large enough so that $g=0$ on $E\definedas B_N(0)^c$, then $\int_E \abs{f} \leq \int_E\abs{f-g} + \int_E \abs{g}$
 
 **Lemma ($L^1$ functions are bounded a.e.):**
