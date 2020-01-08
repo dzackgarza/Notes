@@ -91,7 +91,7 @@ $f_n \to f$ uniformly iff there exists an $M_n$ such that $\norm{f_n - f}_\infty
 
 > Negating: find an $x$ which depends on $n$ for which the norm is bounded below.
 
-**Useful Technique**: If
+**Useful Technique**: If $f_n$ has a global maximum (computed using $f_n'$ and the first derivative test) $M_n \to 0$, then 
 
 **Lemma (Baby Commuting Limits with Integrals):**
 If $f_n \to f$ uniformly, then $\int f_n = \int f$.
