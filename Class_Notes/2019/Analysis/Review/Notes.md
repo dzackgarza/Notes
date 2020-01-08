@@ -50,6 +50,11 @@ Any nonempty set which is bounded from above (resp. below) has a well-defined su
 A uniform limit of continuous functions is continuous.
 
 **Theorem (Important Example):**
-$C([0, 1])$, the space of continuous functions $f: [0, 1] \to \RR$, equipped with the norm $\norm{f} = \sup_{x\in [0, 1]} \abs{f(x)}$, is a **complete** metric space.
+The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped with the norm $\norm{f} = \sup_{x\in [0, 1]} \abs{f(x)}$, is a **complete** metric space.
 
 > *Proof:*
+>
+> *Step 0:* Let $\theset{f_k}$ be Cauchy in $X$. 
+> *Step 1*: Define a candidate limit using pointwise convergence.
+> Since $\norm{f_k - f_j} \to 0$, equivalently $\sup_x \abs{f_k(x) - f_j(x)} \to 0$, so for a fixed $x, \theset{f_k(x)}$ is Cauchy in $\RR$.
+> So define $f(x) \definedas \lim_k f_k(x)$.
