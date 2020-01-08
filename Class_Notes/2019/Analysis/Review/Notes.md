@@ -146,6 +146,10 @@ The outer measure of a set is given by
 m_*(E) = \inf_{\substack{\theset{Q_i} \rightrightarrows E \\ \text{closed cubes}}} \sum \abs{Q_i}
 .\end{align*}
 
+**Lemma (Properties of Outer Measure)**:
+
+- 
+
 
 *Comments:*
 
