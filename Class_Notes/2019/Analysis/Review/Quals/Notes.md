@@ -89,21 +89,4 @@ Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e.
 
 
 
-## $L^p$ Spaces
-
-**Lemma:**
-The following are dense subspaces of $L^2([0, 1])$:
-
-- Simple functions
-- Step functions
-- $C_0([0, 1])$
-- Smoothly differentiable functions $C_0^\infty([0, 1])$
-- Smooth compactly supported functions $C_c^\infty$
-
-**Dual Spaces:**
-In general, $(L^p)\dual \cong L^q$
-
-- For qual, supposed to know the $p=1$ case, i.e. $(L^1)\dual \cong L^\infty$
-  - For the analogous $p=\infty$ case: $L^1 \subset (L^\infty)\dual$, since the isometric mapping is always injective, but *never* surjective. So this containment is always proper (requires Hahn-Banach Theorem).
-- The $p=2$ case: Easy by the Riesz Representation for Hilbert spaces.
 
