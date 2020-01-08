@@ -51,3 +51,5 @@ A uniform limit of continuous functions is continuous.
 
 **Theorem (Important Example):**
 $C([0, 1])$, the space of continuous functions $f: [0, 1] \to \RR$, equipped with the norm $\norm{f} = \sup_{x\in [0, 1]} \abs{f(x)}$, is a **complete** metric space.
+
+> *Proof:*
