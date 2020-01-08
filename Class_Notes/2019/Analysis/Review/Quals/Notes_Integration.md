@@ -50,7 +50,7 @@ If $f\in L^1$, then
 so the DCT applies to $g_n$ and
 \begin{align*}
 \norm{f_n - f}_1 = \int \abs{f_n - f} + \abs{f_n} - \abs{f_n}
-
+= \int \abs
 .\end{align*}
 
 
