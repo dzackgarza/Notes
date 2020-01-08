@@ -47,6 +47,12 @@ If $f_n \in L^+$, then
 
 > Only need positivity.
 
+## $L^1$ Facts
+
+**Lemma:**
+The Lebesgue integral is translation invariant, i.e. 
+$\int f(x) ~dx = \int f(x + h) ~dx$ for any $h>0$. 
+
 **Lemma:**
 If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
 
