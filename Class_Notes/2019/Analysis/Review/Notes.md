@@ -92,7 +92,7 @@ $$
 > Proof: Fix $p, q$, let $r = \frac q p$ and $s = \frac{r}{r-1}$ so $r\inv + s\inv = 1$. 
 > Then let $h = \abs{f}^p.
 \begin{align*}
-\norm{h}
+\norm{f}_p^p = 
 .\end{align*}
 
 
