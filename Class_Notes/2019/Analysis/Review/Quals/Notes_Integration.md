@@ -175,4 +175,3 @@ A_{h}(f)(x):=\frac{1}{2 h} \int_{x-h}^{x+h} f(y) d y
 .\end{align*}
 
 > *Proof*: Fubini-Tonelli, and sketch region to change integration bounds, and continuity in $L^1$.
-
