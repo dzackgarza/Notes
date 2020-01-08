@@ -191,8 +191,6 @@ If $E$ is Lebesgue measurable, then $E = $H \disjoint N$ where $H \in F_\sigma$ 
 
 > **Useful technique:** $F_\sigma$ sets are Borel, so establish something for Borel sets and use this to extend it to Lebesgue.
 
-> Just establish something for Borel sets, then use this characterization to extend it to Lebesgue.
-
 
 **Lemma:**
 \begin{align*}
