@@ -91,7 +91,7 @@ $$
 
 > Proof: 
 \begin{align*}
-\norm{f}_p = \norm{f^p\cdot 1}_1 \leq \norm 
+\norm{f}_p = \norm{f^p\cdot 1}_1 \leq \norm{f}_q  m(X)^{\frac 1 p}
 .\end{align*}
 
 
