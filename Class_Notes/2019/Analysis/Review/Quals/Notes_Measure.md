@@ -95,7 +95,7 @@ If $f_n$ are measurable, so are
 - Sums and differences of measurable functions, 
 - Cones $F(x,y) = f(x)$, 
 - Compositions $f\circ T$ for $T$ a linear transformation,
-- "Convolution-y" transformations $(x,y) \mapsto f(x-y)$
+- "Convolution-ish" transformations $(x,y) \mapsto f(x-y)$
 
 > **Proof (Convolution):**
 > Take the cone on $f$ to get $F(x, y) = f(x)$, then compose $F$ with the linear transformation $T = [1, -1; 1, 0]$.
