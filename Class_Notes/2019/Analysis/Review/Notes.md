@@ -22,11 +22,11 @@ $$
 
 ## Convergence Theorems
 
-**Monotone Convergence Theorem (MCT)**: 
+**Monotone Convergence Theorem (MCT)**:
 
 If $f_n \in L^+$ and $f_n \nearrow f$ a.e., then
 $$
-\lim \int f_n 
+\lim \int f_n
 = \int \lim f_n = \int f
 \quad \text{i.e.}~~ \int f_n \to \int f
 .$$
@@ -89,19 +89,20 @@ $$
 1 \leq p < q \leq \infty \implies L^q \subset L^p \quad (\text{ and } \ell^p \subset \ell^q)
 $$
 
-> *Proof:* Fix $p, q$, let $r = \frac q p$ and $s = \frac{r}{r-1}$ so $r\inv + s\inv = 1$. 
+> *Proof:* Fix $p, q$, let $r = \frac q p$ and $s = \frac{r}{r-1}$ so $r\inv + s\inv = 1$.
 > Then let $h = \abs{f}^p$:
 \begin{align*}
 \norm{f}_p^p = \norm{h\cdot 1}_1 \leq \norm{1}_s \norm{h}_r = \mu(X)^{\frac 1 s} \norm{f}_q^{\frac q r}
-\implies \norm{f}_p \leq \mu(X)^{\frac 1 p - \frac 1 q}\norm{f}_q  
+\implies \norm{f}_p \leq \mu(X)^{\frac 1 p - \frac 1 q}\norm{f}_q
 .\end{align*}
+>
 > Note: doesn't work for $\ell$ spaces, but just note that $\sum \abs{x_n} < \infty \implies x_n < 1$ for large enough $n$, and thus $p<q \implies \abs{x_n}^q \leq \abs{x_n}^q$.
 
 
 **Cauchy-Schwarz**:
 
 \begin{align*}
-\abs{\inner{f}{g}} = \norm{fg}_1 \leq \norm{f}_2 \norm{g}_2 
+\abs{\inner{f}{g}} = \norm{fg}_1 \leq \norm{f}_2 \norm{g}_2
 ,\end{align*}
 with equality $\iff f = \lambda g$.
 
@@ -146,8 +147,8 @@ Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e.
 
 **Lemma (Borel-Cantelli)**:
 
-Let $\{E_k\}$ be a countable collection of measurable sets. 
-Then 
+Let $\{E_k\}$ be a countable collection of measurable sets.
+Then
 $$
 \sum_k m(E_k) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_k
 .$$
@@ -158,7 +159,7 @@ Let $E \subseteq \RR^n$ be measurable with $m(E) > 0$ and $\theset{f_k: E \to \R
 
 Then $f_k \to f$ *almost uniformly*, i.e.
 \begin{align*}
-\forall\varepsilon > 0, ~\exists F \subseteq E ~\text{closed such that } & 
+\forall\varepsilon > 0, ~\exists F \subseteq E ~\text{closed such that } &
 m(E\setminus F) < \varepsilon ~\text{ and }~ f_k \mapsvia{u}  f ~\text{on}~ F
 .\end{align*}
 
@@ -170,7 +171,7 @@ Theorem (Fubini/Tonelli):
 
 **Lemma (Riemann-Lebesgue)**
 \begin{align*}
-f\in L^1 \implies 
+f\in L^1 \implies
 \hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty
 .\end{align*}
 
@@ -178,14 +179,14 @@ f\in L^1 \implies
 
 **Differentiating under the integral**:
 
-If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) ~dt$, 
+If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) ~dt$,
 \begin{align*}
 \dd{}{t} F(t)
 &\definedas \lim _{h \rightarrow 0} \int \frac{f(x, t+h)-f(x, t)}{h} d x \\
 &= \int \dd{}{t} f(x, t) ~dx
 .\end{align*}
 
-Let $h_k \to 0$ be any sequence and define 
+Let $h_k \to 0$ be any sequence and define
 $$
 f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
 ,$$
@@ -254,7 +255,7 @@ The limit at every point is 0.
 **Lemma:**
 There *do not* exist functions that are discontinuous precisely on $\RR\setminus \QQ$.
 
-> *Proof:* $D_f$ is always an $F_\sigma$ set, which follows by considering the oscillation $\omega_f$. 
+> *Proof:* $D_f$ is always an $F_\sigma$ set, which follows by considering the oscillation $\omega_f$.
 > $\omega_f(x) = 0 \iff f$ is continuous at $x$, and $D_f = \union_n A_{\frac 1 n}$ where $A_\varepsilon = \theset{\omega_f \geq \varepsilon}$ is closed.
 
 **Lemma:**
@@ -268,23 +269,23 @@ The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped wi
 
 > *Proof:*
 >
-> *Step 0:* Let $\theset{f_k}$ be Cauchy in $X$. 
-> 
+> *Step 0:* Let $\theset{f_k}$ be Cauchy in $X$.
+>
 > *Step 1*: Define a candidate limit using pointwise convergence:
-> 
-> Fix an $x$; since 
+>
+> Fix an $x$; since
 $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
 ,$$ $\theset{f_k(x)}$ is Cauchy in $\RR$.
 > So define $f(x) \definedas \lim_k f_k(x)$.
-> 
-> 
+>
+>
 > *Step 2:* Show that $\norm{f_k - f} \to 0$:
-> 
+>
 > $$\norm{f_k - f} = \lim_{j} \norm{f_k - f_j} \to 0$$
 > Alternatively, $\norm{f_k-f} \leq \norm{f_k - f_N} + \norm{f_N - f_j}$, where $N, j$ can be chosen large enough to bound each term by $\varepsilon/2$.
-> 
+>
 > *Step 3:* Show that $f\in X$:
-> 
+>
 > The uniform limit of continuous functions is continuous. (Note: in other cases, you may need to show the limit is bounded, or has bounded derivative, or whatever other conditions define $X$.)
 > $\qed$
 
