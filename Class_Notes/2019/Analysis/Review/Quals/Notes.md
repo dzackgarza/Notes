@@ -2,8 +2,7 @@
 title: Analysis Review Notes
 ---
 
-
-### Inequalities and Equalities
+# Inequalities and Equalities
 
 **AM-GM Inequality**:
 $$
@@ -85,8 +84,10 @@ For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
 
 Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete, i.e. the span of its closure is all of $H$.
 
-### Integration
+!include Notes_Basics.md
 
+!include Notes_Measure.md
 
+!include Notes_Integration.md
 
-
+!include Notes_Fourier.md
