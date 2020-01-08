@@ -104,7 +104,7 @@ If $f_n(x) \leq M_n$ **for a fixed $x$** where $\sum M_n < \infty$, then the ser
 If $\sum f_n$ converges then $f_n \to 0$ uniformly.
 
 **Useful Technique:**
-For a fixed $x$, if $f = \sum f_n$ converges uniformly on some $B_r(x)$, then $f$ is continuous at $x$ .
+For a fixed $x$, if $f = \sum f_n$ converges *uniformly* on some $B_r(x)$ and each $f_n$ is continuous at $x$, then $f$ is continuous at $x$ .
 
 **Lemma (M-test for Series)**:
 If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converges uniformly.
