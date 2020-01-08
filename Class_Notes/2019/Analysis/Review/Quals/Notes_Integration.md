@@ -171,7 +171,7 @@ F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d 
 **Theorem (Lebesgue Density)**:
 \begin{align*}
 A_{h}(f)(x):=\frac{1}{2 h} \int_{x-h}^{x+h} f(y) d y
-\implies \norm{A_h(f) - f}
+\implies \norm{A_h(f) - f} \converges{h\to 0}\to 0
 .\end{align*}
 
 
