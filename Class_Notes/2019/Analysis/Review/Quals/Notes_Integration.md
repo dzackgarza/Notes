@@ -48,6 +48,9 @@ If $f\in L^1$, then
 \abs{g_n} = \abs{ \abs{f_n} - \abs{f_n - f} } \leq \abs{f_n - (f_n - f)} = \abs{f} \in L^1
 ,\end{align*}
 so the DCT applies to $g_n$ and
+\begin{align*}
+\norm{f_n - f}_1 = \norm{}
+.\end{align*}
 
 
 
