@@ -2,7 +2,7 @@
 
 
 **Useful Technique:**
-$\lim f_n(x) = \limsup f_n(x) = \liminf f_n(x)$ if the limit exists, so if $\limsup f_n \leq g \leq \liminf f_n$ then $g = \lim f$. 
+$\lim f_n = \limsup f_n = \liminf f_n$ iff the limit exists, so $\limsup f_n \leq g \leq \liminf f_n$ implies that $g = \lim f$. 
 Similarly, a limit does not exist iff $\liminf f_n > \limsup f_n$.
 
 **Lemma:**
