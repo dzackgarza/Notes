@@ -148,6 +148,6 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 **Lemma (p-tests in $\RR^n$)**:
 Let $B = \theset{x\in \RR^n \suchthat \norm{x} \leq 1}$
 \begin{align*}
-\int_B \frac{}{}
+\int_B \frac{1}{\abs{x}^p} < \infty \iff 
 .\end{align*}
 
