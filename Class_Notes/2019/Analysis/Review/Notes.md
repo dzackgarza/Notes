@@ -91,7 +91,7 @@ $$
 
 > Proof: 
 \begin{align*}
-\norm{f}_p = \norm{\abs{f^p}\cdot 1}_1 \leq m(X)^{\frac 1 p}\norm{\abs{f^p}}_q 
+\norm{f}_p^p = \norm{\abs{f^p}\cdot 1}_1^p \leq m(X)^{\frac 1 p}\norm{\abs{f^p}}_q 
 .\end{align*}
 
 
