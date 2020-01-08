@@ -256,7 +256,7 @@ For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$,
 
 
 **Theorem (Fubini/Tonelli):**
-If any iterated integral is **absolutely integrable**, 
+If any iterated integral is **absolutely integrable**, i.e. $\int \int \abs{f(x, y)} < \infty$, then $f$ is integrable.
 
 **Lemma (Riemann-Lebesgue)**
 \begin{align*}
