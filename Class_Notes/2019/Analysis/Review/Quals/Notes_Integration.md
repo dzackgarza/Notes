@@ -51,4 +51,4 @@ If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to
 If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that if $A = B_R(0)^c$, then $\int_A \abs f < \varepsilon$. 
 
 **Lemma ($L^1$ functions are bounded a.e.):**
-If 
+If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
