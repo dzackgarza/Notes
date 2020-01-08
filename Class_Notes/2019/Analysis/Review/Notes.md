@@ -268,19 +268,10 @@ f_k = \frac{f(x, t+h_k)-f(x, t)}{h_k}
 ,$$
 so $f_k \converges{\text{pointwise}}\to \dd{}{t}f$.
 
-### Other
-
-
-
 
 ## $L^p$ Spaces
-
-## Important Comments
-
-
-
 **Lemma:**
-$C_0([0, 1]) \injects L^2([0, 1])$ is dense.
+$C_0([0, 1]), C_0^\infty([0, 1]) \injects L^2([0, 1])$ are dense.
 
 **Dual Spaces:**
 In general, $(L^p)\dual \cong L^q$
