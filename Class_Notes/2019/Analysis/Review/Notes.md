@@ -189,7 +189,6 @@ $$
 >
 > Note: doesn't work for $\ell$ spaces, but just note that $\sum \abs{x_n} < \infty \implies x_n < 1$ for large enough $n$, and thus $p<q \implies \abs{x_n}^q \leq \abs{x_n}^q$.
 
-
 **Cauchy-Schwarz**:
 
 \begin{align*}
