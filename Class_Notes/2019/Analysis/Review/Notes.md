@@ -26,10 +26,7 @@ An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersec
 > Mnemonic: "F" stands for *ferme*, which is "closed" in French, and $\sigma$ corresponds to a "sum", i.e. a union.
 
 **Lemma:**
-Singleton sets in $\RR$ are closed.
+Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
 
-**Corollary:**
-$\QQ$ is an $F_\sigma$ set.
-
-**Definition:**
-$X$ is a Baire space iff countable intersections of open, dense sets are still dense.
+**Lemma:**
+$\RR$ is a Baire space, i.e. countable intersections of open, dense sets are still dense.
