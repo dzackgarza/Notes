@@ -150,7 +150,8 @@ m_*(E) = \inf_{\substack{\theset{Q_i} \rightrightarrows E \\ \text{closed cubes}
 
 - Montonicity: $E\subseteq F \implies m_*(E) \leq m_*(F)$.
 - Countable Subadditivity: $m_*(\union E_i) \leq \sum m_*(E_i)$.
-- Approximation: For all $E$ there exists a $G \supseteq E$ such that $m_*(
+- Approximation: For all $E$ there exists a $G \supseteq E$ such that $m_*(G) \leq m_*(E) + \varepsilon$.
+- 
 
 
 *Comments:*
