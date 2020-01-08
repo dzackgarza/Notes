@@ -76,8 +76,7 @@ If $f_n \in L^+$, then
 **Holder's Inequality:**
 For $p,q$ conjugate exponents,
 \begin{align*}
-\|f g\|_{1} \leq\|f\|_{p}\|g\|_{q}, \quad \text{i.e.} \int \abs{fg} 
-\leq \left( \int \abs{f}^p \right)^{\frac 1 p} \left( \int \abs{g}^q \right)^{\frac 1 q}
+\|f g\|_{1} \leq\|f\|_{p}\|g\|_{q}
 .\end{align*}
 
 **Cauchy-Schwarz**:
