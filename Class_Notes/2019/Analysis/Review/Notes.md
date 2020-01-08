@@ -13,7 +13,7 @@ title: Analysis Review Notes
 > $\sum_{k=0}^\infty \frac 1 {2^k} = 1$.
 
 **Definition:**
-A set $S$ is **nowhere dense** iff the closure of $S$ has empty interior iff 
+A set $S$ is **nowhere dense** iff the closure of $S$ has empty interior iff every interval contains a subinterval that entirely misses $S$.
 
 **Definition:**
 A set is **meager** if it is a *countable* union of nowhere dense sets.
