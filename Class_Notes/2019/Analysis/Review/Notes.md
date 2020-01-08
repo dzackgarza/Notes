@@ -34,4 +34,4 @@ $\RR$ is a Baire space, i.e. countable intersections of open, dense sets are sti
 Lemma:
 There is a function discontinuous precisely on $\QQ$.
 
-Proof: $f(x) = \frac 1 n$
+**Proof:** $f(x) = \frac 1 n$ if $x = r_n \in \QQ$ is an enumeration of the rationals, and zero otherwise.
