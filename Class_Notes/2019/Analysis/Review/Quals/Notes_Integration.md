@@ -89,8 +89,10 @@ $\norm{\tau_h f - f}_1 \to 0$ as $h\to 0$.
 > *Proof: Approximate with compactly supported functions*.
 > Take $g\converges{L_1}\to f$ with $g\in C_c$.
 \begin{align*}
-\int f(x+h) - f(x) \leq \int f(x+h) - g(x+h) + \int g(x+h) - g(x)
-.\end{align*}
-
+\int f(x+h) - f(x) \leq \\ 
+\int f(x+h) - g(x+h) + \int g(x+h) - g(x) + \int g(x) - f(x) \\
+\to 2 \varepsilon + \int g(x+h) - g(x) \to 0
+,\end{align*}
+> which follows because 
 
 
