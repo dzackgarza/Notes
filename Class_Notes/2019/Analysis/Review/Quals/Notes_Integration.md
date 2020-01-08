@@ -42,6 +42,8 @@ $$
 \int{f_n - f} \to 0 \iff \int \abs{f_n} \to \abs{f}
 .\end{align*}
 
+> *Proof:* Write 
+
 
 
 **Fatou's Lemma**:
