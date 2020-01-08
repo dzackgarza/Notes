@@ -71,5 +71,5 @@ $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
 > 
 > *Step 3:* Show that $f\in X$:
 > 
-> The uniform limit of continuous functions is continuous.
+> The uniform limit of continuous functions is continuous. (Note: in other cases, you might need to show the limit is bounded, or has bounded derivative, or whatever other conditions define $X$.)
 > $\qed$
