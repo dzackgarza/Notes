@@ -79,10 +79,11 @@ $$
 
 **Application:**
 \begin{align*}
-m\left(\theset{x \text{ such that } \left|x-\frac{a}{q}\right| \leq \frac{1}{q^{3}}}\right) = 0
+m\left(\theset{x \text{ such that $\exists$ inf. many $\frac p q$ with } \left|x-\frac{p}{q}\right| \leq \frac{1}{q^{3}}}\right) = 0
 .\end{align*}
 
 > *Proof:*
+> Write $E_j$ to be the above set with $p, q$ replaced by $p_j, q_j$ where $r_j = \frac {p_j}{q_j}$ is an enumeration of $\QQ$, then $m(E_j) \leq \frac{2}{q^3}$ and $\sum \frac{1}{q^3} < \infty$.
 
 
 **Theorem (Egorov)**:
