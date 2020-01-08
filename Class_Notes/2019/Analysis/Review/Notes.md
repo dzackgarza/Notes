@@ -100,7 +100,8 @@ If $f_n' \to g$ uniformly for some $g$ and $f_n \to f$ pointwise (or at least at
 **Lemma:**
 If $f_n(x) \leq M_n$ where $\sum M_n < \infty$, then the series $f(x) = \sum f_n(x)$ converges pointwise.
 
-
+Lemma:
+$\sum \frac 1 {n^p} < \infty \iff p>1$.
 
 ## Measure Theory
 
