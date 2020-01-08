@@ -93,6 +93,7 @@ $$
 $$
 
 > Note: does not handle $p=\infty$ case.
+> Use to prove $L^p$ is a normed space.
 
 **Young's Inequality**:
 \begin{align*}
