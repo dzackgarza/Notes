@@ -187,7 +187,7 @@ There is a non-measurable set.
 
 **Lemma (Borel Characterization of Measurable Sets)**
 
-If $E$ is Lebesgue measurable, then $E = $H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
+If $E$ is Lebesgue measurable, then $E = H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
 
 > **Useful technique:** $F_\sigma$ sets are Borel, so establish something for Borel sets and use this to extend it to Lebesgue.
 
