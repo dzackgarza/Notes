@@ -87,7 +87,7 @@ If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
 $\norm{\tau_h f - f}_1 \to 0$ as $h\to 0$.
 
 > *Proof: Approximate with compactly supported functions*.
-> Take $g\converges{L_1}\to f$ with $g\in C_c$, 
-> 
+> Take $g\converges{L_1}\to f$ with $g\in C_c$.
+
 
 
