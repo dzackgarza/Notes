@@ -27,3 +27,6 @@ An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersec
 
 **Lemma:**
 Singleton sets in $\RR$ are closed.
+
+**Corollary:**
+$\QQ$ is an $F_\sigma$ set.
