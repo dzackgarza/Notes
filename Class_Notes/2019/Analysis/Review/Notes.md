@@ -245,7 +245,7 @@ For $f(x, y)$ *positive and measurable*, for almost every $x\in \RR^n$,
 - $f_x(y)$ is a measurable function
 - $F(x) = \int f(x, y) ~dy$ is a measurable function,
 - For $E$ measurable, the slices $E_x \definedas \theset{y \suchthat (x, y) \in E}$ are measurable.
-- $\int f = 
+- $\int f = \int \int
 
 Theorem (Fubini/Tonelli):
 
