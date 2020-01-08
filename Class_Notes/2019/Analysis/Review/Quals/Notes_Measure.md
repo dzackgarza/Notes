@@ -77,11 +77,12 @@ $$
 \sum_k m(E_k) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_k
 .$$
 
-Application:
-There exist infinitely m
+**Application:**
 \begin{align*}
-\left|x-\frac{a}{q}\right| \leq \frac{1}{q^{3}}
+m\left(\theset{x \text{ such that } \left|x-\frac{a}{q}\right| \leq \frac{1}{q^{3}}}\right) = 0
 .\end{align*}
+
+> *Proof:*
 
 
 **Theorem (Egorov)**:
