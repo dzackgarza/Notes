@@ -146,12 +146,12 @@ The outer measure of a set is given by
 m_*(E) = \inf_{\substack{\theset{Q_i} \rightrightarrows E \\ \text{closed cubes}}} \sum \abs{Q_i}
 .\end{align*}
 
-**Lemma (Properties of Outer Measure)**:
+**Lemma (Properties of [Outer] Measure)**:
 
 - Montonicity: $E\subseteq F \implies m_*(E) \leq m_*(F)$.
 - Countable Subadditivity: $m_*(\union E_i) \leq \sum m_*(E_i)$.
 - Approximation: For all $E$ there exists a $G \supseteq E$ such that $m_*(G) \leq m_*(E) + \varepsilon$.
-- 
+- [Almost] Disjoint Additivity: $m_*(A \disjoint B) = m_*(A) + m_*(B)$. 
 
 
 *Comments:*
