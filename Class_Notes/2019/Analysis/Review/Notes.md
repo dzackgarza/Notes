@@ -63,4 +63,5 @@ $$\abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
 > So define $f(x) \definedas \lim_k f_k(x)$.
 > 
 > *Step 2:* Show that $f\in X$.
+> 
 > *Step 3:* Show that $\norm{f_k - f} \to 0$.
