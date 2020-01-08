@@ -92,10 +92,10 @@ m\left(\theset{x \text{ such that $\exists$ inf. many $\frac p q$ with } \left|x
 
 - Characteristic functions are measurable
 - If $f_n$ are measurable, so are $\abs{f_n}, \limsup f_n, \liminf f_n, \lim f_n$, 
-- Sums and differences of measurable functions, 
-- Cones $F(x,y) = f(x)$, 
-- Compositions $f\circ T$ for $T$ a linear transformation,
-- "Convolution-ish" transformations $(x,y) \mapsto f(x-y)$
+- Sums and differences of measurable functions are measurable, 
+- Cones $F(x,y) = f(x)$ are measurable, 
+- Compositions $f\circ T$ for $T$ a linear transformation are measurable,
+- "Convolution-ish" transformations $(x,y) \mapsto f(x-y)$ are measurable
 
 > **Proof (Convolution):**
 > Take the cone on $f$ to get $F(x, y) = f(x)$, then compose $F$ with the linear transformation $T = [1, -1; 1, 0]$.
