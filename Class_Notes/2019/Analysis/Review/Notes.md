@@ -95,7 +95,7 @@ $$
 \norm{f}_p^p = \norm{h\cdot 1}_1 \leq \norm{1}_s \norm{h}_r = \mu(X)^{\frac 1 s} \norm{f}_q^{\frac q r}
 \implies \norm{f}_p \leq \mu(X)^{\frac 1 p - \frac 1 q}\norm{f}_q  
 .\end{align*}
-> Note: doesn't work for $\ell$ spaces, but just note that $\sum \abs{x_n} < \infty \implies x_n < 1$ for large enough $n$, and thus $
+> Note: doesn't work for $\ell$ spaces, but just note that $\sum \abs{x_n} < \infty \implies x_n < 1$ for large enough $n$, and thus $p<q \implies$
 
 
 **Cauchy-Schwarz**:
