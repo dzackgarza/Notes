@@ -132,7 +132,7 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 ## Measure Theory
 
 Lemma:
-Every open subset of $\RR$ 
+Every open subset of $\RR$ (resp $\RR^n$) can be written as a unique countable union of disjoint (resp. almost disjoint) intervals (resp. cubes).
 
 **Definition**:
 The outer measure of a set is given by
