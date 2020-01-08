@@ -130,6 +130,10 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 
 ## Measure Theory
 
+**Definition**:
+The outer measure of a set is given by
+
+
 *Comments:*
 
 > Best way to show measurability: use Borel characterization, or show that it's an $H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
