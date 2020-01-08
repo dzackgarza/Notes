@@ -243,7 +243,7 @@ Theorem (Fubini):
 For $f(x, y)$ *positive and measurable*, for almost every $x\in \RR^n$, 
 
 - $f_x(y)$ is a measurable function
-- 
+- $F(x) = \int
 
 Theorem (Fubini/Tonelli):
 
