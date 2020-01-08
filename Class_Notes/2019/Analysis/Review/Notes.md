@@ -131,7 +131,7 @@ If $\abs{f_n(x)} \leq M_n$ which does not depend on $x$, then $\sum f_n$ converg
 
 ## Measure Theory
 
-Lemma:
+**Lemma:**
 $s = \inf\theset{x\in X} \implies$ for every $\varepsilon$ there is an $x\in X$ such that $x \leq s + \varepsilon$.
 
 **Lemma:**
