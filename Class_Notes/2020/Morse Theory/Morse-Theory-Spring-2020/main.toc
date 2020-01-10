@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Lecture 1}{3}% 
+\contentsline {subsection}{\numberline {1.1}Motivation for Morse theory}{3}% 
+\contentsline {subsection}{\numberline {1.2}Handle Decompositions}{3}% 
+\contentsline {subsection}{\numberline {1.3}Morse Functions and Cobordisms: an introduction.}{5}% 
