@@ -1,5 +1,5 @@
 ---
-title: Algebra Notes
+title: UGA Qualifying Exam Review 
 ---
 
 !include Notes_Groups.md
