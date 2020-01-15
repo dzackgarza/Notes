@@ -1,11 +1,11 @@
 {
   "app": {
-    "config": "./settings.json",
     "cwd": "./",
-    "src": "sections",
-    "filePattern": "**/*.md",
-    "ignore": "*(icon|input)*",
     "dist": "./output/out.json",
+    "filePattern": "**/*.md",
+    "config": "./settings.json",
+    "src": "sections",
+    "ignore": "*(icon|input)*",
     "display": true,
     "server": false,
     "port": 3001,
