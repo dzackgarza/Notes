@@ -2,7 +2,7 @@
   "app": {
     "config": "./settings.json",
     "cwd": "./",
-    "src": "./sections",
+    "src": "sections",
     "filePattern": "**/*.md",
     "ignore": "*(icon|input)*",
     "dist": "./output/out.json",
