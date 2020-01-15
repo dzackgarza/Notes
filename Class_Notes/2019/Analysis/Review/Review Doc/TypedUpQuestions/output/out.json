@@ -1,12 +1,12 @@
 {
   "app": {
-    "display": true,
     "config": "./settings.json",
     "cwd": "./",
     "src": "sections/",
     "filePattern": "*.md",
     "ignore": "*(icon|input)*",
     "dist": "./output/out.json",
+    "display": true,
     "server": false,
     "port": 3001,
     "name": "markdown-json",
