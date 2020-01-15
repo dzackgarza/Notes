@@ -1,3 +1,7 @@
+# Appendix
+
+> Collection of facts used on problem sets
+
 Standard forms of conic sections:
 
 - Circle: $x^2 + y^2 = r^2$
