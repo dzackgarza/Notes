@@ -82,3 +82,7 @@ Suppose $S$ is not connected, then choose $A$ as above.
 Then $B = S\setminus A$ yields a pair $A, B$ that disconnects $S$.
 Since $A$ is closed in $S$, $\bar A = A$ and thus $\bar A \cap B = A \cap B = \emptyset$.
 Similarly, since $A$ is open, $B$ is closed, and $\bar B = B \implies \bar B \cap A = B \cap A = \emptyset$.
+
+
+Next time:
+19,22,23,27,30
