@@ -26,9 +26,17 @@ x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
 .\end{align*}
 
 
-**Properties of complex numbers**
+**Useful Properties**
 
 - $\Re(z) = \frac 1 2 (z + \bar z)$ and $\Im(z) = \frac{1}{2i}(z - \bar z)$.
 - $z\bar z = \abs{z}^2$
 - $\cos(\theta) = \frac 1 2 \qty{e^{i\theta} + e^{-i\theta}}$
 - $\sin(\theta) = \frac{1}{2i}\qty{e^{i\theta} - e^{-i\theta}}$.
+
+**Useful Series**
+
+
+\begin{align*}
+\sum_{k=1}^n = \frac 1 2 (n)(n+1)
+.\end{align*}
+
