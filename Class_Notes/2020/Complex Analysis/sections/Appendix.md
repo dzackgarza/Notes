@@ -7,7 +7,7 @@
 - Circle: $x^2 + y^2 = r^2$
 - Ellipse: $\qty{\frac x a}^2  + \qty{\frac y b}^2 = 1$
 - Hyperbola: $\qty{\frac x a}^2  - \qty{\frac y b}^2 = 1$
-- Rectangular Hyperbola: $xy = \frac{c^2}{2}$.
+  - Rectangular Hyperbola: $xy = \frac{c^2}{2}$.
 - Parabola: $-4ax + y^2 = 0$.
 
 > Mnemonic: 
