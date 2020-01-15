@@ -86,3 +86,5 @@ Similarly, since $A$ is open, $B$ is closed, and $\bar B = B \implies \bar B \ca
 
 Next time:
 19,22,23,27,30
+
+Usually (1/3) of problems related to point set (usually 8 problems)
