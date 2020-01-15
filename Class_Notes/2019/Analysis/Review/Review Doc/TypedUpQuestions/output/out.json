@@ -4,7 +4,7 @@
     "config": "./settings.json",
     "cwd": "./",
     "src": "sections",
-    "filePattern": "**/*.md",
+    "filePattern": "*.md",
     "ignore": "*(icon|input)*",
     "dist": "./output/out.json",
     "server": false,
