@@ -1,0 +1,10 @@
+{
+  "name": "markdown-json",
+  "cwd": "./",
+  "src": "./",
+  "filePattern": "**/*.md",
+  "ignore": "*(icon|input)*",
+  "dist": "output.json",
+  "server": true,
+  "port": 3001
+}
