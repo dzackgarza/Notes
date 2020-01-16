@@ -43,6 +43,15 @@ x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
 \end{aligned}
 
 
+Cauchy-Riemann
+
+\begin{align*}
+u_x = v_y \quad\text{and}\quad u_y = -v_x \\
+\frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \quad \text { and } \quad \frac{\partial v}{\partial r}=-\frac{1}{r} \frac{\partial u}{\partial \theta} \\
+.\end{align*}
+
+
+
 ## Useful Techniques
 
 Showing a function is constant:
