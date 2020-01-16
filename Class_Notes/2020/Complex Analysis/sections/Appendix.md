@@ -42,3 +42,8 @@ x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
 \sum_{k=1}^{n} k^{3} &=\frac{n^{2}(n+1)^{2}}{4} 
 \end{aligned}
 
+
+## Useful Techniques
+
+Showing a function is constant:
+Write $f = u + iv$ and use Cauchy-Riemann to show $u_x, u_y = 0$, etc.
