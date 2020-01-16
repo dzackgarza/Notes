@@ -43,7 +43,7 @@ x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
 \end{aligned}
 
 
-**Cauchy-Riemann**
+**Cauchy-Riemann Equations**
 
 \begin{align*}
 u_x = v_y \quad\text{and}\quad u_y = -v_x \\
@@ -54,9 +54,9 @@ u_x = v_y \quad\text{and}\quad u_y = -v_x \\
 
 ## Useful Techniques
 
-Showing a function is constant:
+**Showing a function is constant:**
 Write $f = u + iv$ and use Cauchy-Riemann to show $u_x, u_y = 0$, etc.
 
-Deriving Polar Cauchy-Riemann:
+**Deriving Polar Cauchy-Riemann:**
 Take derivative along two paths, along a ray with constant angle $\theta_0$ and along a circular arc of constant radius $r_0$.
 Then equate real and imaginary parts.
