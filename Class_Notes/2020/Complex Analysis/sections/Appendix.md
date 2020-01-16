@@ -36,7 +36,7 @@ x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
 **Useful Series**
 
 
-\begin{align*}
-\sum_{k=1}^n = \frac 1 2 (n)(n+1)
-.\end{align*}
+\begin{aligned} 
+\sum_{k=1}^{n} k &=\frac{n(n+1)}{2} \\ \sum_{k=1}^{n} k^{2} &=\frac{n(n+1)(2 n+1)}{6} \\ \sum_{k=1}^{n} k^{3} &=\frac{n^{2}(n+1)^{2}}{4} 
+\end{aligned}
 
