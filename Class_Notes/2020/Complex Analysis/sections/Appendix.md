@@ -62,3 +62,6 @@ See [walkthrough here](https://users.math.msu.edu/users/shapiro/Teaching/classes
 Take derivative along two paths, along a ray with constant angle $\theta_0$ and along a circular arc of constant radius $r_0$.
 Then equate real and imaginary parts.
 See problem set 1.
+
+Computing Arguments:
+$\Arg(z/w) = \Arg(z) - \Arg(w)$.
