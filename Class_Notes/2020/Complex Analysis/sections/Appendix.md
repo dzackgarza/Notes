@@ -61,3 +61,4 @@ Write $f = u + iv$ and use Cauchy-Riemann to show $u_x, u_y = 0$, etc.
 See [walkthrough here](https://users.math.msu.edu/users/shapiro/Teaching/classes/425/crpolar.pdf).
 Take derivative along two paths, along a ray with constant angle $\theta_0$ and along a circular arc of constant radius $r_0$.
 Then equate real and imaginary parts.
+See problem set 1.
