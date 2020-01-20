@@ -56,3 +56,7 @@ Proof:
 
 Proposition:
 If $f\in k[x_1, \cdots x_n]$ is irreducible over $k$, then $(f)$ is prime.
+
+
+Proposition:
+$\ZZ$ is a PID, and $(p)$ is prime iff $p$ is prime.
