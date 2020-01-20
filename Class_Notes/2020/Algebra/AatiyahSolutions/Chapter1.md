@@ -2,7 +2,7 @@
 
 ## Within Chapter
 
-Proposition 1.1:
+**Proposition 1.1:**
 Fix an ideal $\mfa \normal R$.
 There is a correspondence
 
@@ -11,7 +11,7 @@ There is a correspondence
 \theset{\tilde \mfb \normal R/\mfa}
 .\end{align*}
 
-Proof:
+*Proof:*
 Adapted from proof for groups here: [https://math.stackexchange.com/a/955413/147053](https://math.stackexchange.com/a/955413/147053).
 
 Let $f: R \to T$ be any ring homomorphism and let $S(R), S(T)$ denote the lattices of subrings of $R, T$ respectively.
@@ -61,7 +61,7 @@ Moreover, $\ker \pi = \mfa$ so $S'(R)$ is the set of ideals containing $\mfa$, a
 
 $\qed$
 
-Proposition 1.2:
+**Proposition 1.2:**
 TFAE
 
 - $R$ is a field
