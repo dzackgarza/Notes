@@ -66,4 +66,4 @@ See problem set 1.
 Computing Arguments:
 $\Arg(z/w) = \Arg(z) - \Arg(w)$.
 
-The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$.
+The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle is $\frac{n-2}{n}\pi$.
