@@ -21,3 +21,13 @@ TFAE
 
 Proof:
 ?
+
+Proposition:
+Maximal ideals are prime.
+
+Proof:
+?
+
+Proposition:
+If $\mfp \normal R$ is prime, $R/\mfp$ is a domain.
+If $\mfm \normal R$ is maximal, $R/\mfr$ is a field.
