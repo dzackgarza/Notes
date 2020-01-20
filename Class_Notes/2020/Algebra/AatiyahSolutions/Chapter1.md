@@ -98,7 +98,7 @@ $\qed$
 Maximal ideals are prime.
 
 Proof:
-Let $\mfm \normal R$ be maximal and suppose $ab\in \mfm$.
+Let $\mfm \normal A$ be maximal, then $R/\mfm$ is simple and thus a field, so $\mfm$ is prime.
 
 Proposition:
 If $\mfp \normal R$ is prime, $R/\mfp$ is a domain.
