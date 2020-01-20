@@ -110,6 +110,7 @@ $R/\mfm$ is a field $\iff$ $R/\mfm$ is simple $\iff$ there are no nontrivial ide
 $\mfp \normal R$ is prime iff $R/\mfp$ is a domain.
 
 Proof:
+$\implies$: $(x + \pr)(y+ \pr) = (xy) + \pr = 0_\pr \iff xy \in \pr \iff x\in pr \iff x + \pr = 0_\pr$
 
 
 **Proposition:**
