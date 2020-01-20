@@ -6,7 +6,7 @@
 > Maximal $\implies$ prime $\implies$ radical
 > Field $\implies$ domain $\implies$ reduced
 
-**Proposition 1.1:**
+***Proposition 1.1:***
 Fix an ideal $\mfa \normal R$.
 There is a correspondence
 
@@ -133,40 +133,40 @@ Prime does not imply maximal in general.
 Take $(0) \in \ZZ$, then $ab = 0 \implies a=0$ or $b=0$, so this is prime. 
 It is not maximal, because $(0) \in (n)$ for any $n$.
 
-Theorem 1.3:
+**Theorem 1.3:**
 Every ring $R$ has a nontrivial maximal ideal $I \neq 0$, and every ideal is contained in a maximal ideal.
 
-Proof:
+*Proof:*
 ?
 
-Corollary 1.5:
+**Corollary 1.5:**
 Every non-unit of $R$ is contained in a maximal ideal.
 
 Proof:
 ?
 
-Proposition 1.6:
+**Proposition 1.6:**
 If $A\setminus \mfm \subset R\units$, then $A$ is a local ring with $\mfm$ its maximal ideal.
 If $\mfm$ is maximal and $1+m \in R\units$ for all $m\in \mfm$, then $A$ is a local ring.
 
 Proof:
 ?
 
-Proposition:
+**Proposition:**
 If $f\in k[x_1, \cdots x_n]$ is irreducible over $k$, then $(f)$ is prime.
 
 
-Proposition:
+**Proposition:**
 $\ZZ$ is a PID, and $(p)$ is prime iff $p$ is zero or a prime number, and every such ideal is maximal.
 
-Proposition:
+**Proposition:**
 $k[\theset{x_i}]$ has maximal ideals that are not principal iff $n>1$.
 
-Exercise:
+**Exercise:**
 Characterize the maximal and prime ideals of $k[x_1, \cdots, x_n]$? 
 Is this a field, domain, PID, UFD, a local ring, ...?
 
-Proposition:
+**Proposition:**
 Every nonzero prime ideal in a PID is maximal.
 
 Proof:
@@ -176,22 +176,22 @@ Definition:
 The set $\nil(A)$ of all nilpotent elements in a ring $A$ is the nilradical of $A$.
 The set $J(A) = \intersect_{\mm \in \spec_{\text{max}}(A)} \mm$ is the Jacobson radical., 
 
-Proposition 1.7:
+**Proposition 1.7:**
 $\nil(A) \normal R$ is an ideal and $A/\mathfrak{R}$ has no nonzero nilpotent elements.
 
 Proof:
 ?
 
-Proposition 1.8:
+**Proposition 1.8:**
 $\nil(A) = \intersect{\pr \in \spec(A)} \pr$ is the intersection of all prime ideals of $A$.
 
 Proof:
 ?
 
-Proposition 1.9:
+**Proposition 1.9:**
 $x\in J(A)$ iff $1-xa \in A\units$ for all $a\in A$.
 
-Proposition:
+**Proposition:**
 If $(m), (n) \normal \ZZ$ then $(m)\intersect (n) = (\gcd(m, n))$ and $(m)(n) = (mn)$.
 
 Exercise:
@@ -200,7 +200,7 @@ If $\mfa \normal k[x_1, \cdots, x_m]$, characterize $\mfa^n$.
 Exercise:
 Show that $\mfa, \mfb \normal A$ are coprime iff there exist $a\in \mfa, b\in \mfb$ such that $a+b = 1$.
 
-Proposition 1.10:
+**Proposition 1.10:**
 Let $\theset{mfa_i} \normal A$ be a family of ideals and define $\phi: A \to \prod A/\mfa_i$. 
 
 1. If $\theset{\mfa_i}$ are pairwise coprime, then $\prod \mfa_i = \intersect \mfa_i$
@@ -210,7 +210,7 @@ Let $\theset{mfa_i} \normal A$ be a family of ideals and define $\phi: A \to \pr
 Exercise:
 Show that the union of ideals is not necessarily an ideal.
 
-Proposition 1.11:
+**Proposition 1.11:**
 
 a. Let $\theset{\pr_i}$ be a set of prime ideals and let $\mfa \in \union \pr$.
   Then $\mfa \subseteq \pr_i$ for some $i$.
@@ -229,7 +229,7 @@ Exercise 1.12:
 4. $(\intersect \mfa_i: \mfb) = \intersect (\mfa_i: \mfb)$
 5. $(\mfa: \sum \mfb_i) = \intersect(\mfa: \mfb_i)$
 
-Proposition:
+**Proposition:**
 For $\mfa \normal A$, $\sqrt{\mfa}$ is an ideal.
 
 Exercise 1.13:
@@ -241,17 +241,17 @@ Exercise 1.13:
 5. $\sqrt{\mfa + \mfb} = \sqrt{\sqrt\mfa + \sqrt \mfb}$.
 6. For $\mfp$ prime, $\sqrt{\mfp^n} = \mfp$ for all $n\geq 1$.
 
-Proposition 1.14:
+**Proposition 1.14:**
 $\sqrt{\mfa} = \intersect_{\mfa \subseteq \pr \in \spec(A)} \pr$
 
-Proposition 1.15:
+**Proposition 1.15:**
 Let $D$ be the set of zero-divisors in $A$. 
 Then $D = \union_{x\neq 0}\sqrt{\ann(x)}$.
 
 Exercise:
 Let $(m) \normal \ZZ$ where $m = \prod p_i^{k_i}$, and show that $\sqrt{(m)} = (p_1 p_2 \cdots) = \intersect (p_i)$.
 
-Proposition 1.16:
+**Proposition 1.16:**
 If $\sqrt\mfa, \sqrt \mfb$ are coprime then $\mfa, \mfb$ are coprime.
 
 Exercise:
@@ -269,7 +269,7 @@ Let $f: \ZZ \to \ZZ[i]$ be the inclusion, and show that
 - If $p=3\mod 4$ then $\pr^e$ is prime.
 
 
-Proposition:
+**Proposition:**
 Let $C = \theset{\mfb^c \suchthat \mfb \normal B}$ and $E = \theset{\mfa^e \suchthat \mfa \normal A}$.
 Then
 
