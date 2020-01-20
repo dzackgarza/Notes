@@ -19,7 +19,7 @@ Let $\pi_a: R \to R/\mfa$ be the quotient map, this induces a map
 T &\mapsto \pi_A(T)
 .\end{align*}
 
-where $S_A(R) = \theset{\mfb \suchthat \mfa \subseteq \mfb\normal R}$ and $S(R/\mfa)$ is the set of ideals of $R/\mfa$.
+where $S_A(R) = \theset{\mfb \suchthat \mfa \subseteq \mfb\normal R}$ is the set of ideals of $R$ containing $\mfa$ and $S(R/\mfa)$ is the set of ideals of $R/\mfa$.
 
 
 Proposition 1.2:
