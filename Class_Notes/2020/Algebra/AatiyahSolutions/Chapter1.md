@@ -150,3 +150,9 @@ Proposition 1.15:
 Let $D$ be the set of zero-divisors in $A$. 
 Then $D = \union_{x\neq 0}\sqrt{\ann(x)}$.
 
+Exercise:
+Let $(m) \normal \ZZ$ where $m = \prod p_i^{k_i}$, and show that $\sqrt{(m)} = (p_1 p_2 \cdots) = \intersect (p_i)$.
+
+Proposition 1.16:
+If $\sqrt\mfa, \sqrt \mfb$ are coprime then $\mfa, \mfb$ are coprime.
+
