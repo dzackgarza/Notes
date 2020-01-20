@@ -159,3 +159,6 @@ If $\sqrt\mfa, \sqrt \mfb$ are coprime then $\mfa, \mfb$ are coprime.
 Exercise:
 Show that if $f: A\to B$ and $\mfa \normal A$, it is not necessarily the case that $f(\mfa) \normal B$.
 
+Exercise:
+Show that if $\mfb$ is prime then $f\inv(\mfb)$ is prime, but if $\mfa$ is prime then $f(\mfa)$ need not be prime.
+
