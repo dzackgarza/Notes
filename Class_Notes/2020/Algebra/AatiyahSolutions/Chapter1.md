@@ -119,3 +119,6 @@ a. Let $\theset{\pr_i}$ be a set of prime ideals and let $\mfa \in \union \pr$.
 
 b. Let $\theset{\mfa_i}$ be ideals and $\pr \supseteq \intersect \mfa_i$ be prime.
   $\pr \supseteq \mfa_i$ for some $i$, and if $\pr = \intersect \mfa_i$, then $\pr = \mfa_i$ for some $i$.
+
+Exercise:
+Let $A = \ZZ$, and characterize the ideal quotient $(m : n)$.
