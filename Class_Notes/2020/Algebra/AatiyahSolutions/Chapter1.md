@@ -88,8 +88,8 @@ $\ker \phi \normal R$ is an ideal, so $\ker \phi = 0$.
 
 $3 \implies 2$:
 
-Suppose $\mfa \normalneq R$ is a proper ideal and take $S = R/\mfa$ and $\phi: R\to S$ the natural projection.
-$\phi$ is always a surjection, and since it's an injection, bijective.
+Take $\mfa \normalneq R$ a proper ideal and let $S = R/\mfa$ with $\phi: R\to S$ the projection.
+$\phi$ is a bijection, since it's always a surjection and assumed injective.
 So $R \cong S = R/\mfa$, forcing $\mfa = (0)$.
 
 Proposition:
