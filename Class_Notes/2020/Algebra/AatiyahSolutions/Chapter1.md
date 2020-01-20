@@ -114,6 +114,13 @@ Maximal ideals are prime.
 *Proof:*
 Let $\mfm \normal A$ be maximal, then $R/\mfm$ is simple and thus a field, so $\mfm$ is prime.
 
+**Proposition:**
+Prime does not imply maximal in general.
+
+Proof:
+Take $(0) \in \ZZ$, then $ab = 0 \implies a=0$ or $b=0$, so this is prime. 
+It is not maximal, because $(0) \in (n)$ for any $n$.
+
 Theorem 1.3:
 Every ring $R$ has a nontrivial maximal ideal $I \neq 0$, and every ideal is contained in a maximal ideal.
 
