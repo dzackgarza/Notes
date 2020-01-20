@@ -12,6 +12,7 @@ There is a correspondence
 .\end{align*}
 
 Proof:
+Adapted from proof for groups here: [https://math.stackexchange.com/a/955413/147053](https://math.stackexchange.com/a/955413/147053).
 Let $f: R \to T$ be any ring homomorphism and let $S(R), S(T)$ denote the lattices of subrings of $R, T$ respectively.
 Then $f$ induces two maps:
 
