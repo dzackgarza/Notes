@@ -179,7 +179,7 @@ Then
 2. $\mfb^c = \mfb^{cec}$ and $\mfa^e = \mfa^{ece}$
 3. $C = \theset{\mfa\normal A \suchthat \mfa^{ec} = \mfa}$ and $E = \theset{\mfb \normal B \suchthat \mfb^{ce} = \mfb}$.
 4. The map $\phi: C\to E$ given by $\phi(\mfa) = \mfa^{ec}$ is a bijection with inverse $\mfb \mapsto \mfb^c$.
-4. If $\mfa \in C$ then $\mfa = \mfb^c = \mfb^{cec} = \mfa^{ec}$, and if $\mfa = \mfa^{ec}$ then 
+5. If $\mfa \in C$ then $\mfa = \mfb^c = \mfb^{cec} = \mfa^{ec}$, and if $\mfa = \mfa^{ec}$ then $\mfa$ is the contraction of $\mfa^e$.
 
 
 
