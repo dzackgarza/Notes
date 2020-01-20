@@ -156,5 +156,6 @@ Let $(m) \normal \ZZ$ where $m = \prod p_i^{k_i}$, and show that $\sqrt{(m)} = (
 Proposition 1.16:
 If $\sqrt\mfa, \sqrt \mfb$ are coprime then $\mfa, \mfb$ are coprime.
 
-
+Exercise:
+Show that if $f: A\to B$ and $\mfa \normal A$, it is not necessarily the case that $f(\mfa) \normal B$.
 
