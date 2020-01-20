@@ -2,6 +2,10 @@
 
 ## Within Chapter
 
+> Nice mnemonic:
+> Maximal $\implies$ prime $\implies$ radical
+> Field $\implies$ domain $\implies$ reduced
+
 **Proposition 1.1:**
 Fix an ideal $\mfa \normal R$.
 There is a correspondence
