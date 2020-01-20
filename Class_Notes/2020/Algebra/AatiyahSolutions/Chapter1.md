@@ -108,3 +108,10 @@ Let $\theset{mfa_i} \normal A$ be a family of ideals and define $\phi: A \to \pr
 1. If $\theset{\mfa_i}$ are pairwise coprime, then $\prod \mfa_i = \intersect \mfa_i$
 2. $\phi$ is surjective iff $\theset{\mfa_i}$ are pairwise coprime.
 3. $\phi$ is injective iff $\intersect \mfa_i = (0)$.
+
+Exercise:
+Show that the union of ideals is not necessarily an ideal.
+
+Proposition 1.11:
+Let $\theset{\pr_i}$ be a set of prime ideals and let $\mfa \in \union \pr$.
+Then $\mfa \subseteq \pr_i$ for some $i$.
