@@ -26,7 +26,7 @@ K &\mapsto f\inv(K)
 
 It follows that
 
-- $F(H) \leq \im f$, by the subring test (contains 1, )losed under multiplication/subtraction) 
+- $H \leq R \implies F(H) \leq \im f$, by the subring test (contains 1, )losed under multiplication/subtraction) 
 
 It can be shown that 
 
