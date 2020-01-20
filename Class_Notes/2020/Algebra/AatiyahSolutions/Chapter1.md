@@ -122,3 +122,11 @@ b. Let $\theset{\mfa_i}$ be ideals and $\pr \supseteq \intersect \mfa_i$ be prim
 
 Exercise:
 Let $A = \ZZ$, and characterize the ideal quotient $(m : n)$.
+
+Exercise 1.12:
+
+1. $\mfa \subseteq (\mfa: \mfb)$
+2. $(\mfa: \mfb)\mfb \subseteq \mfa$
+3. $((\mfa:\mfb): \mfc) = (\mfa: \mfb\mfc) = ((\mfa:\mfc): \mfb)$
+4. $(\intersect \mfa_i: \mfb) = \intersect (\mfa_i: \mfb)$
+5. $(\mfa: \sum \mfb_i) = \intersect(\mfa: \mfb_i)
