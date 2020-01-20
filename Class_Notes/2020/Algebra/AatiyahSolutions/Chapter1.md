@@ -34,11 +34,12 @@ It follows that
   - Follows because subrings contain 0, and $H\in \ker F\implies f(H) = 0_T \in K$.
   - Thus if there is any subring $H$ that *doesn't* contain $\ker f$, $F\inv$ is not surjective.
 
-It can be shown that 
+The claim is that if you restrict to 
 
-- $F \circ F\inv  (K) = K \intersect \im f$
-- $F\inv \circ F (H) = H \intersect \ker f$.
+- $S'(R) \definedas\theset{H \leq R \suchthat \ker f \subseteq H}$ and
+- $S'(T) \definedas\theset{K\leq T \suchthat T \subseteq \im f}$, 
 
+this is a bijection.
 
 
 
