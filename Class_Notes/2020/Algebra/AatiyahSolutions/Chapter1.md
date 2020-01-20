@@ -16,7 +16,7 @@ Let $\pi_a: R \to R/\mfa$ be the quotient map, this induces a map
 
 \begin{align*}
 \Phi: S(R) &\to S(R/\mfa)\\
-T &\mapsto \pi(T)
+T &\mapsto \pi_A(T)
 .\end{align*}
 
 
