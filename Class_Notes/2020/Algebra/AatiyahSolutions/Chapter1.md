@@ -134,10 +134,11 @@ Take $(0) \in \ZZ$, then $ab = 0 \implies a=0$ or $b=0$, so this is prime.
 It is not maximal, because $(0) \in (n)$ for any $n$.
 
 **Theorem 1.3:**
-Every ring $R$ has a nontrivial maximal ideal $I \neq 0$, and every ideal is contained in a maximal ideal.
+Every ring $R$ has a nontrivial nonzero maximal ideal, and every ideal is contained in a maximal ideal.
 
 *Proof:*
-?
+Take the sublattice of the ideal lattice given by proper ideals; every chain has an upper bound given by union, so apply Zorn's lemma.
+Similarly, for a fixed $\mfa$, take the sublattice of ideals containing $\mfa$.
 
 **Corollary 1.5:**
 Every non-unit of $R$ is contained in a maximal ideal.
