@@ -106,7 +106,7 @@ $R/\mfm$ is a field $\iff$ $R/\mfm$ is simple $\iff$ there are no nontrivial ide
 $\mfp \normal R$ is prime iff $R/\mfp$ is a domain.
 
 Proof:
-?
+
 
 **Proposition:**
 Maximal ideals are prime.
@@ -117,7 +117,7 @@ Let $\mfm \normal A$ be maximal, then $R/\mfm$ is simple and thus a field, so $\
 **Proposition:**
 Prime does not imply maximal in general.
 
-Proof:
+*Proof:*
 Take $(0) \in \ZZ$, then $ab = 0 \implies a=0$ or $b=0$, so this is prime. 
 It is not maximal, because $(0) \in (n)$ for any $n$.
 
