@@ -103,8 +103,11 @@ Ideals of $R/\mfm$ correspond to ideals $\mfa \normal R$ such that $\mfm \subset
 By maximality, the only such ideal is $R$ itself, corresponding to the ideal $R/\mfm \normal R/\mfm$.
 Moreover, $(0)$ is an ideal of any ring.
 
-Proposition
+**Proposition:**
 If $\mfm \normal R$ is maximal iff $R/\mfm$ is a field.
+
+Proof:
+?
 
 **Proposition:**
 Maximal ideals are prime.
