@@ -191,5 +191,5 @@ Exercise 1.18:
 .\end{align*}
 
 
-# End of Chapter Exercises
+## End of Chapter Exercises
 
