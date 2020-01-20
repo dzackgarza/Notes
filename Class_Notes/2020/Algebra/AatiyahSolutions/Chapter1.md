@@ -140,6 +140,7 @@ Exercise 1.13:
 2. $\sqrt{\sqrt \mfa} = \sqrt \mfa$
 3. $\sqrt{\mfa\mfb} = \sqrt{\mfa\intersect\mfb} = \sqrt\mfa \intersect \sqrt\mfb$
 4. $\sqrt\mfa = (1) \iff \mfa = (1)$
-5. \sqrt{\mfa + \mfb} = \sqrt{\sqrt\mfa + \sqrt \mfb}$.
+5. $\sqrt{\mfa + \mfb} = \sqrt{\sqrt\mfa + \sqrt \mfb}$.
+6. For $\mfp$ prime, $\sqrt{\mfp^n} = \mfp$ for all $n\geq 1$
 
 
