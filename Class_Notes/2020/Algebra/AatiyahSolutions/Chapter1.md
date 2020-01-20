@@ -41,7 +41,10 @@ The claim is that if you restrict to
 
 this is a bijection.
 
+This follows from the fact that
 
+- $(F\circ F\inv)(K) = K \intersect \im f$
+- $(F\inv \circ F)(H) = \generators{H, \ker f}$.
 
 
 Proposition 1.2:
