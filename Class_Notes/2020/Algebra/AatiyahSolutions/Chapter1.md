@@ -16,7 +16,7 @@ Define a map
 
 \begin{align*}
 \Phi: S(R) &\to S(R/\mfa)\\
-
+T &\mapsto T + \mfa
 .\end{align*}
 
 
