@@ -64,14 +64,18 @@ $\qed$
 **Proposition 1.2:**
 TFAE
 
-- $R$ is a field
-- $R$ is simple, i.e. the only ideals of $R$ are $0, R$.
-- Every homomorphism $\phi: R\to S$ for $S$ an arbitrary ring is injective.
+1. $R$ is a field
+2. $R$ is simple, i.e. the only ideals of $R$ are $0, R$.
+3. Every homomorphism $\phi: R\to S$ for $S$ an arbitrary ring is injective.
 
-Proof:
+*Proof:*
 
-Lemma: $I \normal R$ and $1\in I \implies I = R$. 
+**Lemma:** 
+$I \normal R$ and $1\in I \implies I = R$. 
 This is because $RI \subseteq I$, and $r\in R \implies r\cdot 1 \in I \implies r\in I \implies R \subseteq I$.
+
+$1 \implies 2$:
+Let $0\neq I \normal R$ for $R$ a field, then pick any $x\in I$, since $x\inv \in R$, we have $x\inv x = 1 \in I \implies I = R$.
 
 Proposition:
 Maximal ideals are prime.
