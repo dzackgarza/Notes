@@ -113,5 +113,9 @@ Exercise:
 Show that the union of ideals is not necessarily an ideal.
 
 Proposition 1.11:
-Let $\theset{\pr_i}$ be a set of prime ideals and let $\mfa \in \union \pr$.
-Then $\mfa \subseteq \pr_i$ for some $i$.
+
+a. Let $\theset{\pr_i}$ be a set of prime ideals and let $\mfa \in \union \pr$.
+  Then $\mfa \subseteq \pr_i$ for some $i$.
+
+b. Let $\theset{\mfa_i}$ be ideals and $\pr \supseteq \intersect \mfa_i$ be prime.
+  $\pr \supseteq \mfa_i$ for some $i$, and if $\pr = \intersect \mfa_i$, then $\pr = \mfa_i$ for some $i$.
