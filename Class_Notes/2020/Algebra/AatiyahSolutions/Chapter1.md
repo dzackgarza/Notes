@@ -92,3 +92,6 @@ Proof:
 
 Proposition 1.9:
 $x\in J(A)$ iff $1-xa \in A\units$ for all $a\in A$.
+
+Proposition:
+If $(m), (n) \normal \ZZ$ then $(m)(n) = (\gcd(m, n))$.
