@@ -12,7 +12,7 @@ There is a correspondence
 .\end{align*}
 
 Proof:
-Let $f: R \to T$ be any ring homomorphism and let $S(R), S(T)$ denote the sets of subrings of $R, T$ respectively.
+Let $f: R \to T$ be any ring homomorphism and let $S(R), S(T)$ denote the lattices of subrings of $R, T$ respectively.
 Then $f$ induces two maps:
 
 \begin{align*}
