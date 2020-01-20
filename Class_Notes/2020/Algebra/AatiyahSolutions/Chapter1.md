@@ -75,12 +75,19 @@ $I \normal R$ and $1\in I \implies I = R$.
 This is because $RI \subseteq I$, and $r\in R \implies r\cdot 1 \in I \implies r\in I \implies R \subseteq I$.
 
 $1 \implies 2$:
+
 Let $0\neq I \normal R$ for $R$ a field, then pick any $x\in I$, since $x\inv \in R$, we have $x\inv x = 1 \in I \implies I = R$.
 
+$\not 1 \implies \not 2$:
+
+If $R$ is not a field, pick a non-unit element $r$; then $(r) \normal R$ is a proper ideal.
+
 $2\implies 3$:
+
 $\ker \phi \normal R$ is an ideal, so $\ker \phi = 0$.
 
 $3 \implies 2$:
+
 Suppose $\mfa \normalneq R$ is a proper ideal and take $S = R/\mfa$ and $\phi: R\to S$ the natural projection.
 $\phi$ is always a surjection, and since it's an injection, bijective.
 So $R \cong S = R/\mfa$, forcing $\mfa = (0)$.
