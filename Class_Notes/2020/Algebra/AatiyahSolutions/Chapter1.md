@@ -13,6 +13,7 @@ There is a correspondence
 
 Proof:
 Adapted from proof for groups here: [https://math.stackexchange.com/a/955413/147053](https://math.stackexchange.com/a/955413/147053).
+
 Let $f: R \to T$ be any ring homomorphism and let $S(R), S(T)$ denote the lattices of subrings of $R, T$ respectively.
 Then $f$ induces two maps:
 
@@ -44,9 +45,9 @@ this is a bijection.
 
 This follows from the fact that
 
-- $(F\circ F\inv)(K) = K \intersect \im f$
+- $(F\circ F\inv)(K) = K \intersect \im f \leq T$
   - No clear motivation for why it's *this* specific thing, but the inclusions are easy to check.
-- $(F\inv \circ F)(H) = \generators{H, \ker f}$.
+- $(F\inv \circ F)(H) = \generators{H, \ker f} \leq S$.
   - ?
 
 Proposition 1.2:
