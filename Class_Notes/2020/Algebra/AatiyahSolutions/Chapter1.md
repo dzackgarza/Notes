@@ -109,11 +109,15 @@ $R/\mfm$ is a field $\iff$ $R/\mfm$ is simple $\iff$ there are no nontrivial ide
 **Proposition:**
 $\mfp \normal R$ is prime iff $R/\mfp$ is a domain.
 
-Proof:
+*Proof:*
 
-$\implies$: $(x + \pr)(y+ \pr) = (xy) + \pr = 0_\pr \iff xy \in \pr \iff x\in pr \iff x + \pr = 0_\pr$
+$\implies$:
+
+WLOG, $(x + \pr)(y+\pr) = xy + \pr = 0 \iff xy\in \pr \iff x\in \pr \iff (x+\pr) = 0$.
 
 $\impliedby$:
+
+WLOG, $xy\in \pr \implies (x+\pr)(y+\pr) = 0 \implies x+\pr = 0 \implies x\in \pr$.
 
 
 **Proposition:**
