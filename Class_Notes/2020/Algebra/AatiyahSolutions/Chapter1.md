@@ -21,7 +21,7 @@ H  &\mapsto f(H) \\
 \\
 \\
 \Psi: S(T) &\to S(R) \\
-K \mapsto &f\inv(K)
+K &\mapsto f\inv(K)
 .\end{align*}
 
 
