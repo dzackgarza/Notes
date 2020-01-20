@@ -101,3 +101,10 @@ If $\mfa \normal k[x_1, \cdots, x_m]$, characterize $\mfa^n$.
 
 Exercise:
 Show that $\mfa, \mfb \normal A$ are coprime iff there exist $a\in \mfa, b\in \mb$ such that $a+b = 1$.
+
+Proposition 1.10:
+Let $\theset{mfa_i} \normal A$ be a family of ideals and define $\phi: A \to \prod A/\mfa_i$. 
+
+1. If $\theset{\mfa_i}$ are pairwise coprime, then $\prod \mfa_i = \intersect \mfa_i$
+2. $\phi$ is surjective iff $\theset{\mfa_i}$ are pairwise coprime.
+3. $\phi$ is injective iff $\intersect \mfa_i = (0)$.
