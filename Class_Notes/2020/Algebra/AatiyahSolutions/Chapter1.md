@@ -12,11 +12,11 @@ There is a correspondence
 .\end{align*}
 
 Proof:
-Define a map
+Let $\pi_a: R \to R/\mfa$ be the quotient map, this induces a map
 
 \begin{align*}
 \Phi: S(R) &\to S(R/\mfa)\\
-T &\mapsto T + \mfa
+T &\mapsto \pi(T)
 .\end{align*}
 
 
