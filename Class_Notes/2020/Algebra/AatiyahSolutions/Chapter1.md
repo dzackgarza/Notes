@@ -37,3 +37,7 @@ Proof:
 
 Theorem 1.3:
 Every ring $R$ has a nontrivial maximal ideal $I \neq 0$, and every ideal is contained in a maximal ideal.
+
+
+Corollary 1.5:
+Every non-unit of $R$ is contained in a maximal ideal.
