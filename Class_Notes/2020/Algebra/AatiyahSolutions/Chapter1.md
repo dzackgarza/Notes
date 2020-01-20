@@ -92,6 +92,8 @@ Take $\mfa \normalneq R$ a proper ideal and let $S = R/\mfa$ with $\phi: R\to S$
 $\phi$ is a bijection, since it's always a surjection and assumed injective.
 So $R \cong S = R/\mfa$, forcing $\mfa = (0)$.
 
+$\qed$
+
 Proposition:
 Maximal ideals are prime.
 
