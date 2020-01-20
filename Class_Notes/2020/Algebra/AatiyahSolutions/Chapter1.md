@@ -172,10 +172,14 @@ Let $f: \ZZ \to \ZZ[i]$ be the inclusion, and show that
 
 Proposition:
 Write $\mfa^e \definedas \generators{f(\mfa)}$ and $\mfb^c = \generators{f\inv(\mfb)}$. 
+Let $C = \theset{\mfb^c \suchthat \mfb \normal B}$ and $E = \theset{\mfa^e \suchthat \mfa \normal A}$.
 Then
 
 1. $\mfa \subseteq \mfa^{ec}$ and $\mfb \supset \mfb^{ce}$,
 2. $\mfb^c = \mfb^{cec}$ and $\mfa^e = \mfa^{ece}$
+3. $C = \theset{\mfa\normal A \suchthat \mfa^{ec} = \mfa}$ and $E = \theset{\mfb \normal B \suchthat \mfb^{ce} = \mfb}$.
+4. The map $\phi: C\to E$ given by $\phi(\mfa) = \mfa^{ec}$ is a bijection with inverse $\mfb \mapsto \mfb^c$.
+4. If $\mfa \in C$ then $\mfa = \mfb^c = \mfb^{cec} = \mfa^{ec}$, and if $\mfa = \mfa^{ec}$ then 
 
 
 
