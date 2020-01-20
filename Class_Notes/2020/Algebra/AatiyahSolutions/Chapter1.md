@@ -36,4 +36,4 @@ Proof:
 ?
 
 Theorem 1.3:
-Every ring $R$ has a nontrivial maximal ideal $I \neq 0$.
+Every ring $R$ has a nontrivial maximal ideal $I \neq 0$, and every ideal is contained in a maximal ideal.
