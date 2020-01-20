@@ -24,7 +24,10 @@ H  &\mapsto f(H) \\
 K &\mapsto f\inv(K)
 .\end{align*}
 
-It can be shown that $\Phi \Psi K = K \intersect \im f$ 
+It can be shown that 
+
+- $\Phi \Psi (K) = K \intersect \im f$
+- $\Psi \Phi (H) = H \intersect \ker f
 
 
 
