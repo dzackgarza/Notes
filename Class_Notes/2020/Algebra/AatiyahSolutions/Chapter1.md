@@ -66,4 +66,4 @@ $k[\theset{x_i}]$ has maximal ideals that are not principal iff $n>1$.
 
 Exercise:
 Characterize the maximal and prime ideals of $k[x_1, \cdots, x_n]$? 
-Is this a field, domain, PID, UFD, a local ring?
+Is this a field, domain, PID, UFD, a local ring, ...?
