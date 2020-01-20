@@ -39,7 +39,7 @@ It follows that
 The claim is that if you restrict to 
 
 - $S'(R) \definedas\theset{H \leq R \suchthat \ker f \subseteq H}$ and
-- $S'(T) \definedas\theset{K\leq T \suchthat T \subseteq \im f}$, 
+- $S'(T) \definedas\theset{K\leq T \suchthat K \subseteq \im f}$, 
 
 this is a bijection.
 
@@ -49,6 +49,8 @@ This follows from the fact that
   - No clear motivation for why it's *this* specific thing, but the inclusions are easy to check.
 - $(F\inv \circ F)(H) = \generators{H, \ker f} \leq S$.
   - Inclusions easy to check, need to take subring generated since $F(H)$ is a pushforward/direct image, which don't preserve sub-structures in general.
+
+So we take the projection $f = \pi: R \to R/\mfa$, then if $K \subseteq \im \pi \implies K \intersect \im \pi = K$
 
 Proposition 1.2:
 TFAE
