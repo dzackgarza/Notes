@@ -15,9 +15,11 @@ Proof:
 Let $\pi_a: R \to R/\mfa$ be the quotient map, this induces a map
 
 \begin{align*}
-\Phi: S(R) &\to S(R/\mfa)\\
+\Phi: S_A(R) &\to S(R/\mfa)\\
 T &\mapsto \pi_A(T)
 .\end{align*}
+
+where $S_A(R) = \theset{\mfb \suchthat \mfa \subseteq \mfb\normal R}$ and $S(R/\mfa)$ is the set of ideals of $R/\mfa$.
 
 
 Proposition 1.2:
