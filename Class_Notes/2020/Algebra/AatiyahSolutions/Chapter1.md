@@ -95,3 +95,6 @@ $x\in J(A)$ iff $1-xa \in A\units$ for all $a\in A$.
 
 Proposition:
 If $(m), (n) \normal \ZZ$ then $(m)\intersect (n) = (\gcd(m, n))$ and $(m)(n) = (mn)$.
+
+Exercise:
+If $\mfa \normal k[x_1, \cdots, x_m]$, characterize $\mfa^n$.
