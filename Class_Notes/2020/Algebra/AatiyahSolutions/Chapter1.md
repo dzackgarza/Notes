@@ -160,5 +160,7 @@ Exercise:
 Show that if $f: A\to B$ and $\mfa \normal A$, it is not necessarily the case that $f(\mfa) \normal B$.
 
 Exercise:
-Show that if $\mfb$ is prime then $f\inv(\mfb)$ is prime, but if $\mfa$ is prime then $f(\mfa)$ need not be prime.
+Show that if $\mfb$ is prime then $A\cdot f\inv(\mfb)$ is prime, but if $\mfa$ is prime then $B\cdotf(\mfa)$ need not be prime.
+
+
 
