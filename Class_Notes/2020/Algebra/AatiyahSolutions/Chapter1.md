@@ -59,4 +59,4 @@ If $f\in k[x_1, \cdots x_n]$ is irreducible over $k$, then $(f)$ is prime.
 
 
 Proposition:
-$\ZZ$ is a PID, and $(p)$ is prime iff $p$ is a prime number.
+$\ZZ$ is a PID, and $(p)$ is prime iff $p$ is zero or a prime number, and every such ideal is maximal.
