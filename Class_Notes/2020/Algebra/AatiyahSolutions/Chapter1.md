@@ -54,3 +54,5 @@ If $\mfm$ is maximal and $1+m \in R\units$ for all $m\in \mfm$, then $A$ is a lo
 Proof:
 ?
 
+Proposition:
+If $f\in k[x_1, \cdots x_n]$ is irreducible over $k$, then $(f)$ is prime.
