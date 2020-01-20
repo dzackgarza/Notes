@@ -30,6 +30,7 @@ It follows that
   - Subring test: contains 1, closed under multiplication/subtraction.
   - Properties of ring homomorphisms: $f(sa + b) = sf(a) + f(b)$ and $f(1) = 1$.
 - $K \leq T \implies \ker f\subseteq F\inv K$.
+  - Follows because subrings contain 0, and $H\in \ker F\implies f(H) = 0_T \in K$.
 
 It can be shown that 
 
