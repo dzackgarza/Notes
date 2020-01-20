@@ -80,6 +80,8 @@ Let $0\neq I \normal R$ for $R$ a field, then pick any $x\in I$, since $x\inv \i
 $2\implies 3$:
 $\ker \phi \normal R$ is an ideal, so $\ker \phi = 0$.
 
+$3 \implies 1$:
+
 Proposition:
 Maximal ideals are prime.
 
