@@ -197,7 +197,7 @@ If $(m), (n) \normal \ZZ$ then $(m)\intersect (n) = (\gcd(m, n))$ and $(m)(n) = 
 **Exercise:**
 If $\mfa \normal k[x_1, \cdots, x_m]$, characterize $\mfa^n$.
 
-Exercise:
+**Exercise:**
 Show that $\mfa, \mfb \normal A$ are coprime iff there exist $a\in \mfa, b\in \mfb$ such that $a+b = 1$.
 
 **Proposition 1.10:**
