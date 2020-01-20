@@ -12,7 +12,13 @@ There is a correspondence
 .\end{align*}
 
 Proof:
-?
+Define a map
+
+\begin{align*}
+\Phi: S(R) &\to S(R/\mfa)\\
+
+.\end{align*}
+
 
 Proposition 1.2:
 TFAE
