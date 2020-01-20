@@ -16,18 +16,18 @@ Let $f: R \to T$ be any ring homomorphism and let $S(R), S(T)$ denote the sets o
 Then $f$ induces two maps:
 
 \begin{align*}
-\Phi: S(R) &\to S(T) \\
+F: S(R) &\to S(T) \\
 H  &\mapsto f(H) \\
 \\
 \\
-\Psi: S(T) &\to S(R) \\
+F\inv: S(T) &\to S(R) \\
 K &\mapsto f\inv(K)
 .\end{align*}
 
 It can be shown that 
 
-- $\Phi \circ \Psi (K) = K \intersect \im f$
-- $\Psi \circ \Phi (H) = H \intersect \ker f$.
+- $F \circ F\inv  (K) = K \intersect \im f$
+- $F\inv \circ F (H) = H \intersect \ker f$.
 
 
 
