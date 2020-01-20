@@ -16,8 +16,12 @@ Let $f: R \to T$ be any ring homomorphism and let $S(R), S(T)$ denote the sets o
 Then $f$ induces two maps:
 
 \begin{align*}
-\Phi: S(R) \to S(T) \\
-R \mapsto f(R)
+\Phi: S(R) &\to S(T) \\
+H  &\mapsto f(H) \\
+\\
+\\
+\Psi: S(T) &\to S(R) \\
+K \mapsto &f\inv(K)
 .\end{align*}
 
 
