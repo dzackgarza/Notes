@@ -80,10 +80,10 @@ Let $0\neq I \normal R$ for $R$ a field, then pick any $x\in I$, since $x\inv \i
 $2\implies 3$:
 $\ker \phi \normal R$ is an ideal, so $\ker \phi = 0$.
 
-$3 \implies 1$:
-Let $r\in R$ be arbitrary, define $\phi_r: R\to R$ by $x \to rx$.
-Since $\phi_r$ is injective, it has a left inverse $\psi$ such that $\psi \phi_r(x) = x$.
-But then $x = \psi \phi_r(x) = \psi(rx) = \psi(r) \psi(x)
+$3 \implies 2$:
+Suppose $\mfa \normal R$ and take $S = R/\mfa$ and $\phi: R\to S$ the natural projection.
+$\phi$ is always a surjection, and since it's an injection, bijective.
+So $R \cong S = R/\mfa$, forcing $\mfa = (0)$.
 
 Proposition:
 Maximal ideals are prime.
