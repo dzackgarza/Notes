@@ -69,7 +69,9 @@ TFAE
 - Every homomorphism $\phi: R\to S$ for $S$ an arbitrary ring is injective.
 
 Proof:
-?
+
+Lemma: $I \normal R$ and $1\in I \implies I = R$. 
+This is because $RI \subseteq I$, and $r\in R \implies r\cdot 1 \in I \implies r\in I \implies R \subseteq I$.
 
 Proposition:
 Maximal ideals are prime.
