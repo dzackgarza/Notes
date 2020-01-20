@@ -141,6 +141,12 @@ Exercise 1.13:
 3. $\sqrt{\mfa\mfb} = \sqrt{\mfa\intersect\mfb} = \sqrt\mfa \intersect \sqrt\mfb$
 4. $\sqrt\mfa = (1) \iff \mfa = (1)$
 5. $\sqrt{\mfa + \mfb} = \sqrt{\sqrt\mfa + \sqrt \mfb}$.
-6. For $\mfp$ prime, $\sqrt{\mfp^n} = \mfp$ for all $n\geq 1$
+6. For $\mfp$ prime, $\sqrt{\mfp^n} = \mfp$ for all $n\geq 1$.
 
+Proposition 1.14:
+$\sqrt{\mfa} = \intersect_{\mfa \subseteq \pr \in \spec(A)} \pr$
+
+Proposition 1.15:
+Let $D$ be the set of zero-divisors in $A$. 
+Then $D = \union_{x\neq 0}\sqrt{\ann(x)}$.
 
