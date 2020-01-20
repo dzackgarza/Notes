@@ -26,8 +26,8 @@ K &\mapsto f\inv(K)
 
 It can be shown that 
 
-- $\Phi \Psi (K) = K \intersect \im f$
-- $\Psi \Phi (H) = H \intersect \ker f$.
+- $\Phi \circ \Psi (K) = K \intersect \im f$
+- $\Psi \circ \Phi (H) = H \intersect \ker f$.
 
 
 
