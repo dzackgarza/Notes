@@ -80,4 +80,13 @@ The set $\nil(A)$ of all nilpotent elements in a ring $A$ is the nilradical of $
 Proposition 1.7:
 $\nil(A) \normal R$ is an ideal and $A/\mathfrak{R}$ has no nonzero nilpotent elements.
 
+Proof:
+?
+
+Proposition 1.8:
+$\nil(A) = \intersect{\pr \in \spec(A)} \pr$ is the intersection of all prime ideals of $A$.
+
+Proof:
+?
+
 
