@@ -11,3 +11,9 @@ There is a correspondence
 
 Proof:
 ?
+
+Proposition 1.2:
+TFAE
+
+- $R$ is a field
+- $R$ is simple, i.e. the only ideals of $R$ are $0, R$.
