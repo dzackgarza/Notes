@@ -26,7 +26,10 @@ K &\mapsto f\inv(K)
 
 It follows that
 
-- $H \leq R \implies F(H) \leq \im f$, by the subring test (contains 1, closed under multiplication/subtraction) 
+- $H \leq R \implies F(H) \leq \im f$, by the subring test 
+  - Subring test: contains 1, closed under multiplication/subtraction.
+  - Properties of ring homomorphisms: $f(sa + b) = sf(a) + f(b)$ and $f(1) = 1$.
+- 
 
 It can be shown that 
 
