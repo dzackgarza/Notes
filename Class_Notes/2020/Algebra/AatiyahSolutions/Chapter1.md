@@ -170,4 +170,12 @@ Let $f: \ZZ \to \ZZ[i]$ be the inclusion, and show that
 - If $p=3\mod 4$ then $\generators{f(\generators{p})}$ is prime.
 
 
+Proposition:
+Write $\mfa^e \definedas \generators{f(\mfa)}$ and $\mfb^c = \generators{f\inv(\mfb)}$. 
+Then
+
+1. $\mfa \subseteq \mfa^{ec}$ and $\mfb \supset \mfb^{ce}$,
+2. $\mfb^c = \mfb^{cec}$ and $\mfa^e = \mfa^{ece}$
+
+
 
