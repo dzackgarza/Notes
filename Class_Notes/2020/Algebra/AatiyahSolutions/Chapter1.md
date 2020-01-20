@@ -71,3 +71,5 @@ Is this a field, domain, PID, UFD, a local ring, ...?
 Proposition:
 Every nonzero prime ideal in a PID is maximal.
 
+Proof:
+?
