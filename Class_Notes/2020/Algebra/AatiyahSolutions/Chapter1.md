@@ -24,6 +24,7 @@ H  &\mapsto f(H) \\
 K &\mapsto f\inv(K)
 .\end{align*}
 
+It can be shown that $\Phi \Psi K = K \intersect \im f$ 
 
 
 
