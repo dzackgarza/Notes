@@ -75,7 +75,8 @@ Proof:
 ?
 
 Definition:
-The set $\nil(A)$ of all nilpotent elements in a ring $A$ is the nilradical of $A$
+The set $\nil(A)$ of all nilpotent elements in a ring $A$ is the nilradical of $A$.
+The set $J(A) = \intersect_{\mm \in \spec_{\text{max}}(A)} \mm$ is the Jacobson radical., 
 
 Proposition 1.7:
 $\nil(A) \normal R$ is an ideal and $A/\mathfrak{R}$ has no nonzero nilpotent elements.
@@ -89,4 +90,5 @@ $\nil(A) = \intersect{\pr \in \spec(A)} \pr$ is the intersection of all prime id
 Proof:
 ?
 
-
+Proposition 1.9:
+$x\in J(A)$ iff $1-xa \in A\units$ for all $a\in A$.
