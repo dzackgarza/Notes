@@ -24,6 +24,10 @@ F\inv: S(T) &\to S(R) \\
 K &\mapsto f\inv(K)
 .\end{align*}
 
+It follows that
+
+- $F(H) \leq \im f$, by the subring test (contains 1, )losed under multiplication/subtraction) 
+
 It can be shown that 
 
 - $F \circ F\inv  (K) = K \intersect \im f$
