@@ -50,7 +50,12 @@ This follows from the fact that
 - $(F\inv \circ F)(H) = \generators{H, \ker f} \leq S$.
   - Inclusions easy to check, need to take subring generated since $F(H)$ is a pushforward/direct image, which don't preserve sub-structures in general.
 
-So we take the projection $f = \pi: R \to R/\mfa$, then if $K \subseteq \im \pi \implies K \intersect \im \pi = K$
+So we take the projection $f = \pi: R \to R/\mfa$, then 
+
+- $K \subseteq \im \pi \implies K \intersect \im \pi = K \implies (F\circ F\inv)(K) = K$,
+- $\ker \pi \subseteq H \implies \generators{H, \ker \pi} = H \implies (F\inv \circ F)(H) = H$,
+
+so both directions are surjections.
 
 Proposition 1.2:
 TFAE
