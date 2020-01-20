@@ -182,4 +182,9 @@ Then
 5. If $\mfa \in C$ then $\mfa = \mfb^c = \mfb^{cec} = \mfa^{ec}$, and if $\mfa = \mfa^{ec}$ then $\mfa$ is the contraction of $\mfa^e$.
 
 
+Exercise 1.18:
+
+\begin{align*}
+\begin{array}{ll}{\left(\mathfrak{a}_{1}+\mathfrak{a}_{2}\right)^{\mathfrak{e}}=\mathfrak{a}_{1}^{\mathfrak{e}}+\mathfrak{a}_{2}^{\mathfrak{e}},} & {\left(\mathfrak{b}_{1}+\mathfrak{b}_{2}\right)^{c} \geq \mathfrak{b}_{1}^{\mathfrak{c}}+\mathfrak{b}_{2}^{\mathfrak{c}}} \\ {\left(\mathfrak{a}_{1} \cap \mathfrak{a}_{2}\right)^{e} \subseteq \mathfrak{a}_{1}^{\mathfrak{e}} \cap \mathfrak{a}_{2}^{e},} & {\left(\mathfrak{b}_{1} \cap \mathfrak{b}_{2}\right)^{\mathfrak{c}}=\mathfrak{b}_{1}^{\mathfrak{c}} \cap \mathfrak{b}_{\mathfrak{z}}^{\mathfrak{c}}} \\ {\left(\mathfrak{a}_{1} \mathfrak{a}_{2}\right)^{\mathfrak{e}}=\mathfrak{a}_{1}^{\mathfrak{e}} \mathfrak{a}_{2}^{\mathfrak{e}},} & {\left(\mathfrak{b}_{1} \mathfrak{b}_{2}\right)^{\mathfrak{c}} \supseteq \mathfrak{b}_{1}^{\mathfrak{c}} \mathfrak{b}_{2}^{\mathfrak{c}}} \\ {\left(\mathfrak{a}_{1}: \mathfrak{a}_{2}\right)^{\mathfrak{e}} \subseteq\left(\mathfrak{a}_{1}^{\mathfrak{e}}: \mathfrak{a}_{2}^{\mathfrak{e}}\right),} & {\left(\mathfrak{b}_{1}: \mathfrak{b}_{2}\right)^{\mathfrak{c}} \subseteq\left(\mathfrak{b}_{1}^{\mathfrak{c}}: \mathfrak{b}_{2}^{\mathfrak{c}}\right)} \\ {r(\mathfrak{a})^{e} \subseteq r\left(\mathfrak{a}^{e}\right),} & {r(\mathfrak{b})^{c}=r\left(\mathfrak{b}^{c}\right)}\end{array}
+.\end{align*}
 
