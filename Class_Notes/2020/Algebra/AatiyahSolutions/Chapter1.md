@@ -48,7 +48,7 @@ This follows from the fact that
 - $(F\circ F\inv)(K) = K \intersect \im f \leq T$
   - No clear motivation for why it's *this* specific thing, but the inclusions are easy to check.
 - $(F\inv \circ F)(H) = \generators{H, \ker f} \leq S$.
-  - ?
+  - Inclusions easy to check, need to take subring generated since $F(H)$ is a pushforward/direct image, which don't preserve sub-structures.
 
 Proposition 1.2:
 TFAE
