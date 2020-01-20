@@ -162,5 +162,12 @@ Show that if $f: A\to B$ and $\mfa \normal A$, it is not necessarily the case th
 Exercise:
 Show that if $\mfb$ is prime then $A\cdot f\inv(\mfb)$ is prime, but if $\mfa$ is prime then $B\cdotf(\mfa)$ need not be prime.
 
+Exercise:
+Let $f: \ZZ \to \ZZ[i]$ be the inclusion, and show that
+
+- $\generators(f(\generators{2})) = \generators{(1+i)^2}$, which is not prime in $\ZZ[i]$
+- (Nontrivial) If $p = 1\mod 4$, then $\generators{f(\generators{p})}$ is the product of two distinct prime ideals
+- If $p=3\mod 4$ then $\generators{f(\generators{p})}$ is prime.
+
 
 
