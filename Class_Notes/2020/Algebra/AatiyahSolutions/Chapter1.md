@@ -97,10 +97,10 @@ $\qed$
 **Proposition:**
 Maximal ideals are prime.
 
-Proof:
+*Proof:*
 Let $\mfm \normal A$ be maximal, then $R/\mfm$ is simple and thus a field, so $\mfm$ is prime.
 
-Proposition:
+**Proposition:**
 If $\mfp \normal R$ is prime, $R/\mfp$ is a domain.
 If $\mfm \normal R$ is maximal, $R/\mfr$ is a field.
 
