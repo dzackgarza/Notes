@@ -81,6 +81,9 @@ $2\implies 3$:
 $\ker \phi \normal R$ is an ideal, so $\ker \phi = 0$.
 
 $3 \implies 1$:
+Let $r\in R$ be arbitrary, define $\phi_r: R\to R$ by $x \to rx$.
+Since $\phi_r$ is injective, it has a left inverse $\psi$ such that $\psi \phi_r(x) = x$.
+But then $x = \psi \phi_r(x) = \psi(rx) = \psi(r) \psi(x)
 
 Proposition:
 Maximal ideals are prime.
