@@ -46,7 +46,7 @@ This follows from the fact that
 - $(F\circ F\inv)(K) = K \intersect \im f$
   - No clear motivation for why it's *this* specific thing, but the inclusions are easy to check.
 - $(F\inv \circ F)(H) = \generators{H, \ker f}$.
-
+  - ?
 
 Proposition 1.2:
 TFAE
