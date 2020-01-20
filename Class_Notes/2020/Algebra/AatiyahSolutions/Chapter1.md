@@ -12,14 +12,16 @@ There is a correspondence
 .\end{align*}
 
 Proof:
-Let $\pi_a: R \to R/\mfa$ be the quotient map, this induces a map
+Let $f: R \to T$ be any ring homomorphism and let $S(R), S(T)$ denote the sets of subrings of $R, T$ respectively.
+Then $f$ induces two maps:
 
 \begin{align*}
-\Phi: S_A(R) &\to S(R/\mfa)\\
-T &\mapsto \pi_A(T)
+\Phi: S(R) \to S(T) \\
+R \mapsto f(R)
 .\end{align*}
 
-where $S_A(R) = \theset{\mfb \suchthat \mfa \subseteq \mfb\normal R}$ is the set of ideals of $R$ containing $\mfa$ and $S(R/\mfa)$ is the set of ideals of $R/\mfa$.
+
+
 
 
 
