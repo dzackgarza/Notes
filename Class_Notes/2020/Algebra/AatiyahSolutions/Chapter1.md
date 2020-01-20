@@ -66,7 +66,7 @@ TFAE
 
 1. $R$ is a field
 2. $R$ is simple, i.e. the only ideals of $R$ are $0, R$.
-3. Every homomorphism $\phi: R\to S$ for $S$ an arbitrary ring is injective.
+3. Every nonzero homomorphism $\phi: R\to S$ for $S$ an arbitrary ring is injective.
 
 *Proof:*
 
@@ -77,7 +77,8 @@ This is because $RI \subseteq I$, and $r\in R \implies r\cdot 1 \in I \implies r
 $1 \implies 2$:
 Let $0\neq I \normal R$ for $R$ a field, then pick any $x\in I$, since $x\inv \in R$, we have $x\inv x = 1 \in I \implies I = R$.
 
-$2\implies 3$
+$2\implies 3$:
+$\ker \phi \normal R$ is an ideal, so $\ker \phi = 0$.
 
 Proposition:
 Maximal ideals are prime.
