@@ -129,4 +129,17 @@ Exercise 1.12:
 2. $(\mfa: \mfb)\mfb \subseteq \mfa$
 3. $((\mfa:\mfb): \mfc) = (\mfa: \mfb\mfc) = ((\mfa:\mfc): \mfb)$
 4. $(\intersect \mfa_i: \mfb) = \intersect (\mfa_i: \mfb)$
-5. $(\mfa: \sum \mfb_i) = \intersect(\mfa: \mfb_i)
+5. $(\mfa: \sum \mfb_i) = \intersect(\mfa: \mfb_i)$
+
+Proposition:
+For $\mfa \normal A$, $\sqrt{\mfa}$ is an ideal.
+
+Exercise 1.13:
+
+1. $\sqrt\mfa \supseteq \mfa$
+2. $\sqrt{\sqrt \mfa} = \sqrt \mfa$
+3. $\sqrt{\mfa\mfb} = \sqrt{\mfa\intersect\mfb} = \sqrt\mfa \intersect \sqrt\mfb$
+4. $\sqrt\mfa = (1) \iff \mfa = (1)$
+5. \sqrt{\mfa + \mfb} = \sqrt{\sqrt\mfa + \sqrt \mfb}$.
+
+
