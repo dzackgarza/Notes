@@ -27,7 +27,7 @@ K &\mapsto f\inv(K)
 It can be shown that 
 
 - $\Phi \Psi (K) = K \intersect \im f$
-- $\Psi \Phi (H) = H \intersect \ker f
+- $\Psi \Phi (H) = H \intersect \ker f$.
 
 
 
