@@ -21,6 +21,8 @@ T &\mapsto \pi_A(T)
 
 where $S_A(R) = \theset{\mfb \suchthat \mfa \subseteq \mfb\normal R}$ is the set of ideals of $R$ containing $\mfa$ and $S(R/\mfa)$ is the set of ideals of $R/\mfa$.
 
+- Injectivity: If $I_1, I_2 \normal R/\mfa$ then write $I_1 = H_1 + \mfa, I_2 = H_2 + \mfa$.
+
 
 Proposition 1.2:
 TFAE
