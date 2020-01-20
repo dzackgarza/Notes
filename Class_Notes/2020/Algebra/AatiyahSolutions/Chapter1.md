@@ -34,3 +34,6 @@ If $\mfm \normal R$ is maximal, $R/\mfr$ is a field.
 
 Proof:
 ?
+
+Theorem 1.3:
+Every ring $R$ has a nontrivial maximal ideal $I \neq 0$.
