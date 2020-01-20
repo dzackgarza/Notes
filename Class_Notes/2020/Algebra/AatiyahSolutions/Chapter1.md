@@ -17,3 +17,7 @@ TFAE
 
 - $R$ is a field
 - $R$ is simple, i.e. the only ideals of $R$ are $0, R$.
+- Every homomorphism $\phi: R\to S$ for $S$ an arbitrary ring is injective.
+
+Proof:
+?
