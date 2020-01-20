@@ -78,6 +78,6 @@ Definition:
 The set $\nil(A)$ of all nilpotent elements in a ring $A$ is the nilradical of $A$
 
 Proposition 1.7:
-s an ideal and $A/\mathfrak{R}$ has no nonzero nilpotent elements.
+$\nil(A) \normal R$ is an ideal and $A/\mathfrak{R}$ has no nonzero nilpotent elements.
 
 
