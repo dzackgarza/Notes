@@ -142,14 +142,14 @@ Every ring $R$ has a nontrivial maximal ideal $I \neq 0$, and every ideal is con
 **Corollary 1.5:**
 Every non-unit of $R$ is contained in a maximal ideal.
 
-Proof:
+**Proof:**
 ?
 
 **Proposition 1.6:**
 If $A\setminus \mfm \subset R\units$, then $A$ is a local ring with $\mfm$ its maximal ideal.
 If $\mfm$ is maximal and $1+m \in R\units$ for all $m\in \mfm$, then $A$ is a local ring.
 
-Proof:
+**Proof:**
 ?
 
 **Proposition:**
@@ -169,7 +169,7 @@ Is this a field, domain, PID, UFD, a local ring, ...?
 **Proposition:**
 Every nonzero prime ideal in a PID is maximal.
 
-Proof:
+**Proof:**
 ?
 
 Definition:
@@ -179,13 +179,13 @@ The set $J(A) = \intersect_{\mm \in \spec_{\text{max}}(A)} \mm$ is the Jacobson 
 **Proposition 1.7:**
 $\nil(A) \normal R$ is an ideal and $A/\mathfrak{R}$ has no nonzero nilpotent elements.
 
-Proof:
+**Proof:**
 ?
 
 **Proposition 1.8:**
 $\nil(A) = \intersect{\pr \in \spec(A)} \pr$ is the intersection of all prime ideals of $A$.
 
-Proof:
+**Proof:**
 ?
 
 **Proposition 1.9:**
@@ -207,7 +207,7 @@ Let $\theset{mfa_i} \normal A$ be a family of ideals and define $\phi: A \to \pr
 2. $\phi$ is surjective iff $\theset{\mfa_i}$ are pairwise coprime.
 3. $\phi$ is injective iff $\intersect \mfa_i = (0)$.
 
-Exercise:
+**Exercise:**
 Show that the union of ideals is not necessarily an ideal.
 
 **Proposition 1.11:**
@@ -218,10 +218,10 @@ a. Let $\theset{\pr_i}$ be a set of prime ideals and let $\mfa \in \union \pr$.
 b. Let $\theset{\mfa_i}$ be ideals and $\pr \supseteq \intersect \mfa_i$ be prime.
   $\pr \supseteq \mfa_i$ for some $i$, and if $\pr = \intersect \mfa_i$, then $\pr = \mfa_i$ for some $i$.
 
-Exercise:
+**Exercise:**
 Let $A = \ZZ$, and characterize the ideal quotient $(m : n)$.
 
-Exercise 1.12:
+**Exercise 1.12:**
 
 1. $\mfa \subseteq (\mfa: \mfb)$
 2. $(\mfa: \mfb)\mfb \subseteq \mfa$
@@ -232,7 +232,7 @@ Exercise 1.12:
 **Proposition:**
 For $\mfa \normal A$, $\sqrt{\mfa}$ is an ideal.
 
-Exercise 1.13:
+**Exercise 1.13:**
 
 1. $\sqrt\mfa \supseteq \mfa$
 2. $\sqrt{\sqrt \mfa} = \sqrt \mfa$
@@ -248,19 +248,19 @@ $\sqrt{\mfa} = \intersect_{\mfa \subseteq \pr \in \spec(A)} \pr$
 Let $D$ be the set of zero-divisors in $A$. 
 Then $D = \union_{x\neq 0}\sqrt{\ann(x)}$.
 
-Exercise:
+**Exercise:**
 Let $(m) \normal \ZZ$ where $m = \prod p_i^{k_i}$, and show that $\sqrt{(m)} = (p_1 p_2 \cdots) = \intersect (p_i)$.
 
 **Proposition 1.16:**
 If $\sqrt\mfa, \sqrt \mfb$ are coprime then $\mfa, \mfb$ are coprime.
 
-Exercise:
+**Exercise:**
 Show that if $f: A\to B$ and $\mfa \normal A$, it is not necessarily the case that $f(\mfa) \normal B$.
 
-Exercise:
+**Exercise:**
 Show that if $\mfb$ is prime then $A\cdot f\inv(\mfb)$ is prime, but if $\mfa$ is prime then $B\cdot f(\mfa)$ need not be prime.
 
-Exercise:
+**Exercise:**
 Write $\mfa^e \definedas \generators{f(\mfa)}$ and $\mfb^c = \generators{f\inv(\mfb)}$. 
 Let $f: \ZZ \to \ZZ[i]$ be the inclusion, and show that
 
@@ -280,7 +280,7 @@ Then
 5. If $\mfa \in C$ then $\mfa = \mfb^c = \mfb^{cec} = \mfa^{ec}$, and if $\mfa = \mfa^{ec}$ then $\mfa$ is the contraction of $\mfa^e$.
 
 
-Exercise 1.18:
+**Exercise 1.18:**
 
 \begin{align*}
 \begin{array}{ll}{\left(\mathfrak{a}_{1}+\mathfrak{a}_{2}\right)^{\mathfrak{e}}=\mathfrak{a}_{1}^{\mathfrak{e}}+\mathfrak{a}_{2}^{\mathfrak{e}},} & {\left(\mathfrak{b}_{1}+\mathfrak{b}_{2}\right)^{c} \geq \mathfrak{b}_{1}^{\mathfrak{c}}+\mathfrak{b}_{2}^{\mathfrak{c}}} \\ {\left(\mathfrak{a}_{1} \cap \mathfrak{a}_{2}\right)^{e} \subseteq \mathfrak{a}_{1}^{\mathfrak{e}} \cap \mathfrak{a}_{2}^{e},} & {\left(\mathfrak{b}_{1} \cap \mathfrak{b}_{2}\right)^{\mathfrak{c}}=\mathfrak{b}_{1}^{\mathfrak{c}} \cap \mathfrak{b}_{\mathfrak{z}}^{\mathfrak{c}}} \\ {\left(\mathfrak{a}_{1} \mathfrak{a}_{2}\right)^{\mathfrak{e}}=\mathfrak{a}_{1}^{\mathfrak{e}} \mathfrak{a}_{2}^{\mathfrak{e}},} & {\left(\mathfrak{b}_{1} \mathfrak{b}_{2}\right)^{\mathfrak{c}} \supseteq \mathfrak{b}_{1}^{\mathfrak{c}} \mathfrak{b}_{2}^{\mathfrak{c}}} \\ {\left(\mathfrak{a}_{1}: \mathfrak{a}_{2}\right)^{\mathfrak{e}} \subseteq\left(\mathfrak{a}_{1}^{\mathfrak{e}}: \mathfrak{a}_{2}^{\mathfrak{e}}\right),} & {\left(\mathfrak{b}_{1}: \mathfrak{b}_{2}\right)^{\mathfrak{c}} \subseteq\left(\mathfrak{b}_{1}^{\mathfrak{c}}: \mathfrak{b}_{2}^{\mathfrak{c}}\right)} \\ {r(\mathfrak{a})^{e} \subseteq r\left(\mathfrak{a}^{e}\right),} & {r(\mathfrak{b})^{c}=r\left(\mathfrak{b}^{c}\right)}\end{array}
