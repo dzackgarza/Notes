@@ -49,3 +49,8 @@ Proof:
 
 Proposition 1.6:
 If $A\setminus \mfm \subset R\units$, then $A$ is a local ring with $\mfm$ its maximal ideal.
+If $\mfm$ is maximal and $1+m \in R\units$ for all $m\in \mfm$, then $A$ is a local ring.
+
+Proof:
+?
+
