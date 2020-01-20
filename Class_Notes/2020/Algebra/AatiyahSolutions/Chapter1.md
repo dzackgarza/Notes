@@ -77,6 +77,8 @@ This is because $RI \subseteq I$, and $r\in R \implies r\cdot 1 \in I \implies r
 $1 \implies 2$:
 Let $0\neq I \normal R$ for $R$ a field, then pick any $x\in I$, since $x\inv \in R$, we have $x\inv x = 1 \in I \implies I = R$.
 
+$2\implies 3$
+
 Proposition:
 Maximal ideals are prime.
 
