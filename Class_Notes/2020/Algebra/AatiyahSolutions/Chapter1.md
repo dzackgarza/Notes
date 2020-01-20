@@ -94,11 +94,11 @@ So $R \cong S = R/\mfa$, forcing $\mfa = (0)$.
 
 $\qed$
 
-Proposition:
+**Proposition:**
 Maximal ideals are prime.
 
 Proof:
-?
+Let $\mfm \normal R$ be maximal and suppose $ab\in \mfm$.
 
 Proposition:
 If $\mfp \normal R$ is prime, $R/\mfp$ is a domain.
