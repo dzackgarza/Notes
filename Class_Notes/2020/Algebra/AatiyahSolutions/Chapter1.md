@@ -32,6 +32,7 @@ It follows that
   - Thus if $f$ is not surjective, $F$ is not surjective either.
 - $K \leq T \implies \ker f\subseteq F\inv (K)$.
   - Follows because subrings contain 0, and $H\in \ker F\implies f(H) = 0_T \in K$.
+  - Thus if there is any subring $H$ that *doesn't* contain $\ker f$, $F\inv$ is not surjective.
 
 It can be shown that 
 
