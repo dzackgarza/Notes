@@ -74,5 +74,10 @@ Every nonzero prime ideal in a PID is maximal.
 Proof:
 ?
 
+Definition:
+The set $\mathfrak{R}$ of all nilpotent elements in a ring $A$ is the nilradical of $A$
+
 Proposition 1.7:
-The set $\mathfrak{R}$ of all nilpotent elements in a ring $A$ is an ideal and $A/\mathfrak{R}$ has no nonzero nilpotent elements.
+s an ideal and $A/\mathfrak{R}$ has no nonzero nilpotent elements.
+
+
