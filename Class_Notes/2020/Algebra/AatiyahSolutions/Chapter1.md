@@ -95,15 +95,16 @@ So $R \cong S = R/\mfa$, forcing $\mfa = (0)$.
 $\qed$
 
 **Proposition:**
+$\mfp \normal R$ is prime iff $R/\mfp$ is a domain.
 
-1. If $\mfp \normal R$ is prime, $R/\mfp$ is a domain.
-2. If $\mfm \normal R$ is maximal, $R/\mfm$ is a field.
+*Proof:*
 
-Proof:
+Ideals of $R/\mfm$ correspond to ideals $\mfa \normal R$ such that $\mfm \subseteq \mfa$.
+By maximality, the only such ideal is $R$ itself, corresponding to the ideal $R/\mfm \normal R/\mfm$.
+Moreover, $(0)$ is an ideal of any ring.
 
-2. Ideals of $R/\mfm$ correspond to ideals $\mfa \normal R$ such that $\mfm \subseteq \mfa$.
-  By maximality, the only such ideal is $R$ itself, corresponding to the ideal $R/\mfm \normal R/\mfm$.
-  Moreover, $(0)$ is an ideal of any ring.
+Proposition
+If $\mfm \normal R$ is maximal iff $R/\mfm$ is a field.
 
 **Proposition:**
 Maximal ideals are prime.
