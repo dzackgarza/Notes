@@ -56,6 +56,10 @@ So we take the projection $f = \pi: R \to R/\mfa$, then
 - $\ker \pi \subseteq H \implies \generators{H, \ker \pi} = H \implies (F\inv \circ F)(H) = H$,
 
 so both directions are surjections.
+Restricting to just those subrings that are ideals preserves this bijection.
+Moreover, $\ker \pi = \mfa$ so $S'(R)$ is the set of ideals containing $\mfa$, and $\im \pi = R/\mfa$, so $S'(T)$ is the set of ideals of the quotient.
+
+$\qed$
 
 Proposition 1.2:
 TFAE
