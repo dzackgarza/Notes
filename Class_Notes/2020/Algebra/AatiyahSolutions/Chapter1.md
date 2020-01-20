@@ -99,9 +99,7 @@ If $\mfm \normal R$ is maximal iff $R/\mfm$ is a field.
 
 *Proof:*
 
-Ideals of $R/\mfm$ correspond to ideals $\mfa \normal R$ such that $\mfm \subseteq \mfa$.
-By maximality, the only such ideal is $R$ itself, corresponding to the ideal $R/\mfm \normal R/\mfm$.
-Moreover, $(0)$ is an ideal of any ring.
+$R/\mfm$ is a field $\iff$ $R/\mfm$ is simple $\iff$ there are no nontrivial ideals $\mfa$ such that $\mfm \subset \mfa$ (correspondence) $\iff$ $\mfm$ is maximal.
 
 
 **Proposition:**
