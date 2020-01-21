@@ -12,7 +12,7 @@ Every ring has proper maximal ideals, and any proper ideal is contained in a max
 A ring $R$ is **simple** iff every ideal $I \normal R$ is either $0$ or $R$.
 
 **Definition:**
-An element $r\in R$ is **irreducible** iff $r = ab \implies a$ is a unit or $b$ is a unit.F
+An element $r\in R$ is **irreducible** iff $r = ab \implies a$ is a unit or $b$ is a unit.
 
 **Definition:**
 An element $r\in R$ is **prime** iff $ab \divides r \implies a\divides r$ or $b\divides r$ whenever $a,b$ are nonzero and not units.
@@ -33,7 +33,7 @@ $\spec_{\text{max}}(R) = \theset{\mm \normal R \suchthat \mm \text{ is maximal}}
 
 > Note: nonstandard notation / definition.
 
-**Lemmas (Quotienting):**
+**Lemmas (Quotients of Rings):**
 
 - $R/I$ is a domain $\iff I$ is prime,
 - $R/I$ is a field $\iff I$ is maximal.

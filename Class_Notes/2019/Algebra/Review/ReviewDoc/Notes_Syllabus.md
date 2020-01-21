@@ -99,7 +99,7 @@ References: [1,2,4]
 
 References: [1,3,4]
 
-## Field Theory
+## Field Theory
 
 - Algebraic extensions of fields
 
