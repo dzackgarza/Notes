@@ -42,7 +42,12 @@ Fix any $U_\alpha$, then $U_\alpha^c = \theset{p_1, \cdots, p_n}$ is finite, say
 So pick $U_1 \ni p_1, \cdots, U_n \ni p_n$; then $\RR \subset U_\alpha \union_{i=1}^n U_i$ is a finite cover.
 
 # Problem 27
-?
+
+$\implies$:
+
+If $X$ is totally bounded, let $\varepsilon  = \frac 1 n$ for each $n$.
+For $n=1$, pick a finite open cover $\theset{U_i}_n$ such that $\diam{U_i} < \frac 1 n$ for each $i$.
+
 
 # Problem 30
 ?
