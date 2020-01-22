@@ -38,6 +38,9 @@ So $\Tau$ forms a topology.
 
 To see that $(\RR, \Tau)$ is compact, let $\theset{U_i} \rightrightarrows \RR$ be an open cover by elements in $\Tau$.
 
+Fix any $U_\alpha$, then $U_\alpha^c = \theset{p_1, \cdots, p_n}$ is finite, say of size $n$.
+So pick $U_1 \ni p_1, \cdots, U_n \ni p_n$; then $\RR \subset U_\alpha \union_{i=1}^n U_i$ is a finite cover.
+
 # Problem 27
 ?
 
