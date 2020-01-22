@@ -58,7 +58,11 @@ This yields a nested family of sets $V_1 \supseteq V_2 \supseteq \cdots$ and a s
 
 $\impliedby$:
 
-
+Suppose $X$ is not totally bounded.
+Then fix $\varepsilon > 0$ and pick $x_1$ arbitrarily and define $S_1 = B(\varepsilon, x_1)$.
+Then pick $x_2 \in S_1^c$ and define $S_2 = S_1 \union B(\varepsilon, x_2)$, and so on.
+Since $X$ is not totally bounded, this can always be done.
+Moreover, $\theset{x_n}$ is not Cauchy, because $d(x_i, x_j) > \varepsilon$ for every $i\neq j$.
 
 # Problem 30
 ?
