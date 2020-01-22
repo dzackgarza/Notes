@@ -45,8 +45,16 @@ So pick $U_1 \ni p_1, \cdots, U_n \ni p_n$; then $\RR \subset U_\alpha \union_{i
 
 $\implies$:
 
-If $X$ is totally bounded, let $\varepsilon  = \frac 1 n$ for each $n$.
-For $n=1$, pick a finite open cover $\theset{U_i}_n$ such that $\diam{U_i} < \frac 1 n$ for each $i$.
+If $X$ is totally bounded, let $\varepsilon  = \frac 1 n$ for each $n$, and let $\theset{x_i}$ be an arbitrary sequence.
+For $n=1$, pick a finite open cover $\theset{U_i}_n$ such that $\diam{U_i} < \frac 1 n$ for every $i$.
+
+Choose $V_1$ such that there are infinitely many $x_i \in V_1$. (Why?)
+Note that $\diam V_i < 1$.
+Now choose $x_i \in V_1$ arbitrarily and define it to be $y_1$.
+
+Then since $V_1$ is totally bounded, repeat this process to obtain $V_2 \subseteq V_1$ with $\diam(V_2)< \frac 1 2$, and choose $x_i \in V_2$ arbitrarily and define it to be $y_2$.
+
+This yields a nested family of sets $V_1 \supseteq V_2 \supseteq \cdots$ and a sequence $\theset{y_i}$ such that $d(y_i, y_j) < \max(\frac 1 i, \frac 1 j) \to 0$, so $\theset{y_i}$ is a Cauchy subsequence.
 
 
 # Problem 30
