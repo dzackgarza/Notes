@@ -21,7 +21,7 @@ Since the horizontal slice $X_b\definedas X \cross \theset{b}$ is homeomorphic t
 
 Note that $(a, b) \in T_x$ for every $x$, so $\union_{x\in X} T_x = X \cross Y$ is connected.
 
-![Image](figures/2020-01-21-20:53.png)
+![Image](figures/2020-01-21-20:53.png)\
 
 # Problem 22
 ?
