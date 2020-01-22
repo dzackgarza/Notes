@@ -72,4 +72,6 @@ Take $X = C^0([0, 1])$ with the sup-norm, then $f_n(x) = x^n$ are all bounded by
 Moreover, $\theset{f_n}$ is closed. (Why?)
 
 # Problem 30
-?
+
+Let $A \subset X$ be compact, and pick a fixed $x\in X\setminus A$.
+Since $X$ is Hausdorff, for arbitrary $a\in A$, there exists opens $U_{a1} \ni a$ and $U_{a2}\ni x$ such that $U_{a1} \intersect U_{a2} = \emptyset$.
