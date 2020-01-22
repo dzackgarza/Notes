@@ -56,6 +56,9 @@ Then since $V_1$ is totally bounded, repeat this process to obtain $V_2 \subsete
 
 This yields a nested family of sets $V_1 \supseteq V_2 \supseteq \cdots$ and a sequence $\theset{y_i}$ such that $d(y_i, y_j) < \max(\frac 1 i, \frac 1 j) \to 0$, so $\theset{y_i}$ is a Cauchy subsequence.
 
+$\impliedby$:
+
+
 
 # Problem 30
 ?
