@@ -65,5 +65,7 @@ Continue by picking $x_{n+1} \in S_n^c$ (Since $X$ is not totally bounded, this 
 
 Then $\theset{x_n}$ is not Cauchy, because $d(x_i, x_j) > \varepsilon$ for every $i\neq j$.
 
+## b
+
 # Problem 30
 ?
