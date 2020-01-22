@@ -77,4 +77,7 @@ Let $A \subset X$ be compact, and pick a fixed $x\in X\setminus A$.
 Since $X$ is Hausdorff, for arbitrary $a\in A$, there exists opens $U_{a} \ni a$ and $U_{x,a}\ni x$ such that $V_{a} \intersect U_{x,a} = \emptyset$.
 Then $\theset{U_{a} \suchthat a\in A} \rightrightarrows A$, so by compactness there is a finite subcover $\theset{U_{a_i}} \rightrightarrows A$.
 
-Now take $U = \union_i U_{a_i}$ and $V = \intersect_i V_{a_i, x}$, so $U\intersect V = \emptyset$.
+Now take $U = \union_i U_{a_i}$ and $V_x = \intersect_i V_{a_i, x}$, so $U\intersect V = \emptyset$.
+Note that both $U$ and $V_x$ are open.
+
+But then $X\setminus A \subset \union_{x\in X\setminus A} V_x$, so $A^c$ is open and thus $A$ is closed.
