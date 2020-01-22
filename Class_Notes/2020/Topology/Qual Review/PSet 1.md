@@ -2,6 +2,8 @@
 title: Solutions to Point-Set Qual Questions
 ---
 
+> Usually (1/3) of problems related to point set (usually 8 problems)
+
 # 8
 Let $\pi_X, \pi_Y$ denote the canonical projections, which we can note are continuous and preserve open sets.
 
@@ -84,7 +86,4 @@ Since $A$ is closed in $S$, $\bar A = A$ and thus $\bar A \cap B = A \cap B = \e
 Similarly, since $A$ is open, $B$ is closed, and $\bar B = B \implies \bar B \cap A = B \cap A = \emptyset$.
 
 
-Next time:
-19,22,23,27,30
 
-Usually (1/3) of problems related to point set (usually 8 problems)
