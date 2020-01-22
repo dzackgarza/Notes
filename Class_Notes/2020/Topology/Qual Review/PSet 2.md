@@ -80,4 +80,4 @@ Then $\theset{U_{a} \suchthat a\in A} \rightrightarrows A$, so by compactness th
 Now take $U = \union_i U_{a_i}$ and $V_x = \intersect_i V_{a_i, x}$, so $U\intersect V = \emptyset$.
 Note that both $U$ and $V_x$ are open.
 
-But then $X\setminus A \subset \union_{x\in X\setminus A} V_x$, so $A^c$ is open and thus $A$ is closed.
+But then defining $V \definedas \union_{x\in X\setminus A} V_x$, we have $X\setminus A \subset V$ and $V\intersect A = \emptyset$, so $V = X\setminus A$, which is open and thus $A$ is closed.
