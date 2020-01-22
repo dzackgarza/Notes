@@ -67,5 +67,7 @@ Then $\theset{x_n}$ is not Cauchy, because $d(x_i, x_j) > \varepsilon$ for every
 
 ## b
 
+Take $X = C^0([0, 1])$ with the sup-norm, then $f_n(x) = x^n$ are all bounded by 1, but $\norm{f_i - f_j} = 1$ for every $i, j$, so no subsequence can be Cauchy.
+
 # Problem 30
 ?
