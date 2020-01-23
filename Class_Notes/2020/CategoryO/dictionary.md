@@ -41,6 +41,7 @@ Universal enveloping algebra
 Verma modules
 Weight module
 Weight vector
+Weight space
 Weights
 Weyl chamber
 Weyl vector
