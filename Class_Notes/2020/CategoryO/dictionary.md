@@ -22,6 +22,8 @@ Root space
 Root string
 Root system
 Semisimple lie algebra
+Semisimple matrices
+Nilpotent matrices
 Simple reflections
 Simple root
 Simple system of roots
@@ -30,6 +32,8 @@ Toral subalgebra
 Universal enveloping algebra
 Verma modules
 Weights
+Weight vector
+Weight module
 Weyl chamber
 Weyl group
 Weyl's complete reducibility theorem
