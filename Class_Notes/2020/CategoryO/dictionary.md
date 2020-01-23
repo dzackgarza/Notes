@@ -48,3 +48,8 @@ Weyl vector
 Weyl group
 Weyl's complete reducibility theorem
 Generator of a module
+Locally finite
+Maximal vector
+Schur's Lemma
+Frobenius Reciprocity
+Exact functor
