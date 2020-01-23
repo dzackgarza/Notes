@@ -1,4 +1,5 @@
 Adjoint representation
+Abelian
 Borel subalgebra
 Cartan decomposition
 Completely reducible
