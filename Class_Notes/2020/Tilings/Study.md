@@ -5,4 +5,6 @@ Holomorphic forms
 Branched covers
 Riemann-Roch
 Homology of a bundle
-
+Divisor (formal $\ZZ\dash$combinations of codimension 1 subvarieties?)
+Line bundles
+For $V \to L \to X$ a line bundle, $\OO(L)$ is the sheaf of holomorphic sections of $L$.
