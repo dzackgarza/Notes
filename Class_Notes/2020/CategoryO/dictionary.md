@@ -1,6 +1,7 @@
 Adjoint representation
 Borel subalgebra
 Cartan decomposition
+Completely reducible
 Cartan subalgebra
 Casimir element
 Derived algebra
@@ -27,6 +28,13 @@ Nilpotent matrices
 Simple reflections
 Simple root
 Simple system of roots
+Simple algebra
+Irreducible algebra
+Completely reducible
+Indecomposable
+Solvable algebra
+Nilpotent algebra
+
 Standard Borel subalgebra
 Toral subalgebra
 Universal enveloping algebra
