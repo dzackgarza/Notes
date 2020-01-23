@@ -43,5 +43,6 @@ Weight module
 Weight vector
 Weights
 Weyl chamber
+Weyl vector
 Weyl group
 Weyl's complete reducibility theorem
