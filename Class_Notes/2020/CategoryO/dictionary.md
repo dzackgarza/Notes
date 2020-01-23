@@ -47,3 +47,4 @@ Weyl chamber
 Weyl vector
 Weyl group
 Weyl's complete reducibility theorem
+Generator of a module
