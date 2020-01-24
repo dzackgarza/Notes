@@ -34,6 +34,12 @@ where $\Res_\lieb^\lieg$ is the restriction functor.
 
 ## 1 
 
+$M \in \OO \implies$
+
+- $M$ is finitely generated as a $U(\lieg)\dash$module.
+- $M$ is a weight module, so $M = \bigoplus_{\lambda \in \lieh\dual} M_\lambda$
+- For every $v\in M$, $U(\lien) \cdot v$ is finite-dimensional
+
 
 ## 2
 $M(\lambda) = U(\lieg) \tensor_{U (\lieb)} \CC_\lambda$ where $\lieb \leq \lieg$ is a fixed Borel subalgebra corresponding to a choice of positive roots, and $C_\lambda$ is the 1-dimensional $\lieb\dash$module defined for any $\lambda \in \lieh\dual$ by the fact that $\lieb/\lien \cong \lieh$ and thus $\lien \actson \lieh$ can be taken to be a trivial action.
