@@ -40,7 +40,9 @@ $M \in \OO \implies$
 - $M$ is a weight module, so $M = \bigoplus_{\lambda \in \lieh\dual} M_\lambda$
 - For every $v\in M$, $U(\lien) \cdot v$ is finite-dimensional
 
+- $\lieh \leq \lieg$ is the Cartan subalgebra.
 - $\Phi \subset \lieh\dual$ is the root system of $\lieg$ relative to $\lieh$.
+  - Each $\alpha \in \Phi$ is a root
 - $\Lambda_r \definedas \spanof_\ZZ\theset{p \in \Phi} \subset \CC^n$ is the root lattice.
 - $M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$ is the weight space for $\mu$.
 
