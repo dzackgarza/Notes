@@ -37,3 +37,13 @@ $M(\lambda) = U(\lieg) \tensor_{U (\lieb)} \CC_\lambda$ where $\lieb \leq \lieg$
 The induction functor is given by $\ind_\lieb^\lieg(\wait) = U(\lieg) \tensor_{U(\lieb)} (\wait)$.
 
 The restriction functor is given by $\res_\lieb^\lieg(\wait) = ?$
+
+
+Frobenius Reciprocity for groups looks like
+
+\begin{align*}
+\hom_{k[G]}(k[G] \tensor_{k[H]} V, W  ) &\to \hom_{k[H]}(V, W) \\
+\lambda &\mapsto 1\tensor(\wait) = (v \mapsto \lambda(1\tensor v))\\
+(g\tensor v \mapsto g\cdot f(v)) &\mapsfrom f
+.\end{align*}
+
