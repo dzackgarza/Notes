@@ -30,7 +30,7 @@ where $\Res_\lieb^\lieg$ is the restriction functor.
 
 > Hint: use the universal mapping property of tensor products.
 
-Relevant information (?):
+# Relevant information (?):
 
 $M(\lambda) = U(\lieg) \tensor_{U (\lieb)} \CC_\lambda$ where $\lieb \leq \lieg$ is a fixed Borel subalgebra corresponding to a choice of positive roots, and $C_\lambda$ is the 1-dimensional $\lieb\dash$module defined for any $\lambda \in \lieh\dual$ by the fact that $\lieb/\lien \cong \lieh$ and thus $\lien \actson \lieh$ can be taken to be a trivial action.
 
