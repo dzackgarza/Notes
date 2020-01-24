@@ -41,8 +41,8 @@ $M \in \OO \implies$
 - For every $v\in M$, $U(\lien) \cdot v$ is finite-dimensional
 
 
-$\Lambda_r \definedas \spanof_\ZZ\theset{p \in \Phi}$
-$M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$.
+$\Lambda_r \definedas \spanof_\ZZ\theset{p \in \Phi} \subset \CC^n$ is the root lattice.
+$M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$ is the weight space for $\mu$.
 
 
 ## 2
