@@ -41,6 +41,9 @@ $M \in \OO \implies$
 - For every $v\in M$, $U(\lien) \cdot v$ is finite-dimensional
 
 
+$M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$.
+
+
 ## 2
 $M(\lambda) = U(\lieg) \tensor_{U (\lieb)} \CC_\lambda$ where $\lieb \leq \lieg$ is a fixed Borel subalgebra corresponding to a choice of positive roots, and $C_\lambda$ is the 1-dimensional $\lieb\dash$module defined for any $\lambda \in \lieh\dual$ by the fact that $\lieb/\lien \cong \lieh$ and thus $\lien \actson \lieh$ can be taken to be a trivial action.
 The induction functor is given by $\ind_\lieb^\lieg(\wait) = U(\lieg) \tensor_{U(\lieb)} (\wait)$.
