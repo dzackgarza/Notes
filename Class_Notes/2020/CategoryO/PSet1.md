@@ -36,4 +36,4 @@ $M(\lambda) = U(\lieg) \tensor_{U (\lieb)} \CC_\lambda$ where $\lieb \leq \lieg$
 
 The induction functor is given by $\ind_\lieb^\lieg(\wait) = U(\lieg) \tensor_{U(\lieb)} (\wait)$.
 
-The restriction functor is given by $\res_\lieb^\lieg(\wait) = 
+The restriction functor is given by $\res_\lieb^\lieg(\wait) = ?$
