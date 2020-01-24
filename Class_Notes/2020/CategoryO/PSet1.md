@@ -41,6 +41,7 @@ $M \in \OO \implies$
 - For every $v\in M$, $U(\lien) \cdot v$ is finite-dimensional
 
 
+$\Lambda_r \definedas \spanof_\ZZ\theset{p \in \Phi}$
 $M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$.
 
 
