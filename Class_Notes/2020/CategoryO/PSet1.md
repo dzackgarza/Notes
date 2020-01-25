@@ -37,6 +37,7 @@ where $\Res_\lieb^\lieg$ is the restriction functor.
 - $\lieh \leq \lieg$ is the Cartan subalgebra.
   - In finite-dimensional setting: maximal toral
   - Nilpotent subalgebra, i.e. LCS terminates, i.e. $\ad_h = [h, \wait]$ is a nilpotent operator so $\ad_h^n = 0$ for some $n$.
+  - Self-normalizing, so for a fixed $y$, $[h, y]\in \lieh ~\forall h\in \lieh \implies y\in\lieh$.
 - $\Phi \subset \lieh\dual$ is the root system of $\lieg$ relative to $\lieh$.
   - Each $\alpha \in \Phi$ is a root
   - Each root $\alpha$ has a corresponding root space $\lieg_\alpha \definedas \theset{x\in \lieg \suchthat [hx] = \alpha(h) x ~\forall h\in\lieh}$.
