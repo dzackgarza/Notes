@@ -44,7 +44,7 @@ $M \in \OO \implies$
 - $\Phi \subset \lieh\dual$ is the root system of $\lieg$ relative to $\lieh$.
   - Each $\alpha \in \Phi$ is a root
   - Each root $\alpha$ has a corresponding root space $\lieg_\alpha \definedas \theset{x\in \lieg \suchthat [hx] = \alpha(h) x ~\forall h\in\lieh}$.
-- $\Lambda_r \definedas \spanof_\ZZ\theset{p \in \Phi} \subset \CC^n$ is the root lattice.
+- $\Lambda_r \definedas \spanof_\ZZ\theset{\alpha \in \Phi} \subset \CC^n$ is the root lattice.
 - $M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$ is the weight space for $\mu$.
 
 
