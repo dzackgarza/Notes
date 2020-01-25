@@ -34,6 +34,12 @@ where $\Res_\lieb^\lieg$ is the restriction functor.
 
 ## 1 
 
+- $\Phi \subset \lieh\dual$ is the root system of $\lieg$ relative to $\lieh$.
+  - Each $\alpha \in \Phi$ is a root
+  - Each root $\alpha$ has a corresponding root space $\lieg_\alpha \definedas \theset{x\in \lieg \suchthat [hx] = \alpha(h) x ~\forall h\in\lieh}$.
+- $\Lambda_r \definedas \spanof_\ZZ\theset{\alpha \in \Phi} \subset \CC^n$ is the root lattice.
+- $M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$ is the weight space for $\mu$.
+
 $M \in \OO \implies$
 
 - $M$ is finitely generated as a $U(\lieg)\dash$module.
@@ -41,12 +47,6 @@ $M \in \OO \implies$
 - For every $v\in M$, $U(\lien) \cdot v$ is finite-dimensional
 
 - $\lieh \leq \lieg$ is the Cartan subalgebra.
-- $\Phi \subset \lieh\dual$ is the root system of $\lieg$ relative to $\lieh$.
-  - Each $\alpha \in \Phi$ is a root
-  - Each root $\alpha$ has a corresponding root space $\lieg_\alpha \definedas \theset{x\in \lieg \suchthat [hx] = \alpha(h) x ~\forall h\in\lieh}$.
-- $\Lambda_r \definedas \spanof_\ZZ\theset{\alpha \in \Phi} \subset \CC^n$ is the root lattice.
-- $M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$ is the weight space for $\mu$.
-
 
 ## 2
 $M(\lambda) = U(\lieg) \tensor_{U (\lieb)} \CC_\lambda$ where $\lieb \leq \lieg$ is a fixed Borel subalgebra corresponding to a choice of positive roots, and $C_\lambda$ is the 1-dimensional $\lieb\dash$module defined for any $\lambda \in \lieh\dual$ by the fact that $\lieb/\lien \cong \lieh$ and thus $\lien \actson \lieh$ can be taken to be a trivial action.
