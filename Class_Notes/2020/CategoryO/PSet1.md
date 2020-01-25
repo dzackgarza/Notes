@@ -41,9 +41,9 @@ where $\Res_\lieb^\lieg$ is the restriction functor.
 - $\lambda \in \lieh\dual$ is a linear functional $\lambda: \lieh \to \CC$
   - $\lambda$ is a root relative to $\lieh$ if $\lambda \neq 0$ and there is some $g\in \lieg$ such that $[hg] = \lambda(h)g$ for all $h\in \lieh$.
 - $\Phi \subset \lieh\dual$ is the root system of $\lieg$ relative to $\lieh$.
-  - Each $\alpha \in \Phi$ is a root
-  - Each root $\alpha$ has a corresponding root space $\lieg_\alpha \definedas \theset{x\in \lieg \suchthat [hx] = \alpha(h) x ~\forall h\in\lieh}$.
-- $\Lambda_r \definedas \spanof_\ZZ\theset{\alpha \in \Phi} \subset \CC^n$ is the root lattice.
+  - Each $\lambda \in \Phi$ is a root
+  - Each root $\lambda$ has a corresponding root space $\lieg_\alpha \definedas \theset{x\in \lieg \suchthat [hx] = \lambda(h) x ~\forall h\in\lieh}$.
+- $\Lambda_r \definedas \spanof_\ZZ\theset{\lambda \in \Phi} \subset \CC^n$ is the root lattice.
 - $M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$ is the weight space for $\mu$.
 - 
 
