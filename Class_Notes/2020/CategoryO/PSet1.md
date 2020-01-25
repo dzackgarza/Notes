@@ -45,7 +45,7 @@ where $\Res_\lieb^\lieg$ is the restriction functor.
   - Each root $\lambda$ has a corresponding root space $\lieg_\alpha \definedas \theset{x\in \lieg \suchthat [hx] = \lambda(h) x ~\forall h\in\lieh}$.
 - $\Lambda_r \definedas \spanof_\ZZ\theset{\lambda \in \Phi} \subset \CC^n$ is the root lattice.
 - $M_\mu \definedas \theset{v\in  M \suchthat h\cdot v = \mu(h) v ~\forall h\in\lieh}$ is the weight space for $\mu$.
-- 
+- $M^{[\lambda]} = \displaystyle\sum_{\mu \in [\lambda]} M_\mu$ 
 
 $M \in \OO \implies$
 
