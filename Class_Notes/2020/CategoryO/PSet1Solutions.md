@@ -12,7 +12,7 @@ If $M\in \OO$ and $[\lambda] = \lambda + \Lambda_r$ is any coset of $\lieh\dual/
 $M^{[\lambda]}$ is a $U(\lieg)\dash$submodule of $M$ 
 
 *Proof:*
-It suffices to check that $\lieg\actson M^{[\lambda]} \subseteq M^[\lambda]$, i.e. this module is closed under the action of $\lieg$.
+It suffices to check that $\lieg\actson M^{[\lambda]} \subseteq M^[\lambda]$, i.e. this module is closed under the action of $U(\lieg)$.
 
 
 Proposition:
