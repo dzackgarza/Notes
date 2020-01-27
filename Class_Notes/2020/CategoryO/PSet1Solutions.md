@@ -89,21 +89,7 @@ u\actson G\psi(g\tensor v)
 &\definedas G\psi(ug \tensor v)
 .\end{align*}
 
-
-To see that $GF \definedas G\circ F$ is the identity, let $\psi$ be defined as above and fix $z_0 \in \CC_\lambda$.
-Then
-
-\begin{align*}
-FG\psi(z_0)
-&= F(g\tensor v \to g\actson \psi(v) )(z_0) \\
-&\definedas F(\lambda)(z_0) \quad\text{for notational convenience} \\
-&= (v \mapsto \lambda(1\tensor v))(z_0) \\
-&= \lambda(1\tensor z_0) \\
-&\definedas 1 \actson \psi(z_0) \\
-&= \psi(z_0)
-.\end{align*}
-
-Similarly, to see that $FG$ is the identity, let $\phi$ be defined as above and fix $g_0 \tensor v_0 \in U(\lieg) \tensor \CC_\lambda$.
+To see that $FG$ is the identity, let $\phi$ be defined as above and fix $g_0 \tensor v_0 \in U(\lieg) \tensor \CC_\lambda$.
 Then
 
 \begin{align*}
@@ -119,3 +105,17 @@ GF\phi(g_0\tensor v_0)
 .\end{align*}
 
 
+To see that $GF \definedas G\circ F$ is the identity, let $\psi$ be defined as above and fix $z_0 \in \CC_\lambda$.
+Then
+
+\begin{align*}
+FG\psi(z_0)
+&= F(g\tensor v \to g\actson \psi(v) )(z_0) \\
+&\definedas F(\lambda)(z_0) \quad\text{for notational convenience} \\
+&= (v \mapsto \lambda(1\tensor v))(z_0) \\
+&= \lambda(1\tensor z_0) \\
+&\definedas 1 \actson \psi(z_0) \\
+&= \psi(z_0)
+.\end{align*}
+
+$\qed$
