@@ -16,6 +16,7 @@ It suffices to check that $\lieg\actson M^{[\lambda]} \subseteq M^[\lambda]$, i.
 Let $g\in U(\lieg)$ be arbitrary.
 Choose a ordered basis $\theset{e_i}$ for $\lieg$, then this can be extended to a PBW basis for $U(\lieg)$ given by $\theset{\prod_i e_i^{t_i} \suchthat t_i \in \ZZ}$.
 Then take a triangular decomposition $U(\lieg) = U(\lien^-) U(\lieh) U(\lien)$.
+We can then write $u = \prod_i a_i^{t_i} \prod_j h_j^{t_j} \prod_k b_k ^{t_k}$
 
 Proposition:
 $M$ is the direct sum of finitely many submodules of the form $M^{[\lambda]}$.
