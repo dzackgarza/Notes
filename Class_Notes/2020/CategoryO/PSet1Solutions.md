@@ -9,7 +9,13 @@ title: Problem Set One
 If $M\in \OO$ and $[\lambda] = \lambda + \Lambda_r$ is any coset of $\lieh\dual/\Lambda_r$, let $M^{[\lambda]}$ be the sum of weight spaces $M_\mu$ for which $\mu \in [\lambda]$.
 
 **Proposition:**
-$M^{[\lambda]}$ is a $U(\lieg)\dash$submodule of $M$ and that $M$ is the direct sum of finitely many such submodules.
+$M^{[\lambda]}$ is a $U(\lieg)\dash$submodule of $M$ 
+
+*Proof:*
+
+
+Proposition:
+$M$ is the direct sum of finitely many submodules of the form $M^{[\lambda]}$.
 
 *Proof:*
 
