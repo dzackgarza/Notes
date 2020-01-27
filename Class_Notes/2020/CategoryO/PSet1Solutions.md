@@ -52,6 +52,17 @@ This category is closed under subobjects, so if we write $M = \oplus_{[\lambda]}
 Since $m_1$ is in this direct sum, it is in *finitely* many summands by definition of the direct sum, so for each $j$, $m_j \in \bigoplus_{k=1}^{R_{j}} M^[\lambda_{jk}]$ for some finite constant $R_{j}$ and some coset depending on $j$ and $k$.
 But then $M = \bigoplus_j \bigoplus_k M^{[\lambda_{jk}]}$ is still a finite direct sum, which is what we wanted to show.
 
+**Proposition:**
+If $M$ is indecomposable, then all weights of $M$ lie in a single coset.
+
+
+Proof:
+By (a), we can write $M = \bigoplus_{[\lambda_i]} M^[\lambda_i]$ for some finite set of $\lambda_i$s.
+If $M$ is indecomposable, then there can only be one summand, and so $M = M^[\lambda]$ for exactly 1 $\lambda$.
+We can then write $M = \sum_{\mu \in [\lambda] M_\mu$, which decomposes $M$ as a sum of weight spaces.
+But then if any $\sigma \in \Pi(M)$ is a weight, it must be one of the $\mu$ occurring above.
+So every weight of $M$ is in the coset $[\lambda]$, and in particular they are all in the same coset.
+
 ## b
 
 **Proposition:**
