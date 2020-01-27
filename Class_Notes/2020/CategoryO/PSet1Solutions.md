@@ -39,6 +39,9 @@ The same argument shows that $h \actson (b_k^{t} \actson m))$ is in the weight s
 But this shows that $U(\lien)$ and $U(\lien^-)$ leave this space invariant, and $U(\lieh)$ acts by scaling, which preserves subspaces.
 So $M^{[\lambda]}$ is closed under the action of $\lieg$.
 
+$\qed$
+
+
 Proposition:
 $M$ is the direct sum of finitely many submodules of the form $M^{[\lambda]}$.
 
