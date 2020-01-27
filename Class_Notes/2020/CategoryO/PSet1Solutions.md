@@ -49,7 +49,7 @@ Noting that
 consider the following two maps:
 
 \begin{align*}
-F: \hom_{U(\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) &\to \hom_{U(\lieb)} (\CC_\lambda, M) \\
+F: \hom_{U(\lieg)} (U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) &\to \hom_{U(\lieb)} (\CC_\lambda, M) \\
 \phi &\mapsto (F\phi: v \mapsto \phi(1 \tensor v))
 ,\end{align*}
 
