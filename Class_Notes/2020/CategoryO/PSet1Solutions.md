@@ -95,7 +95,7 @@ To see that $GF \definedas G\circ F$ is the identity, let $\psi$ be defined as a
 \begin{align*}
 FG\psi(z)
 &= F(g\tensor v \to g\actson \psi(v) )(z) \\
-&= F(\lambda) )(z) \\
+&\definedas F(\lambda) )(z) \quad\text{for notational convenience} \\
 &= (v \mapsto \lambda(1\tensor v))(z) \\
 &= \lambda(1\tensor z) \\
 &\definedas 1 \actson \psi(z) \\
