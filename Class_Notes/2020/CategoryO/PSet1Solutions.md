@@ -90,15 +90,26 @@ u\actson G\psi(g\tensor v)
 .\end{align*}
 
 
-To see that $GF \definedas G\circ F$ is the identity, let $\psi$ be defined as above, then, 
+To see that $GF \definedas G\circ F$ is the identity, let $\psi$ be defined as above and fix $z_0 \in \CC_\lambda$.
+Then
 
 \begin{align*}
-FG\psi(z)
-&= F(g\tensor v \to g\actson \psi(v) )(z) \\
-&\definedas F(\lambda)(z) \quad\text{for notational convenience} \\
-&= (v \mapsto \lambda(1\tensor v))(z) \\
-&= \lambda(1\tensor z) \\
-&\definedas 1 \actson \psi(z) \\
-&= \psi(z)
+FG\psi(z_0)
+&= F(g\tensor v \to g\actson \psi(v) )(z_0) \\
+&\definedas F(\lambda)(z_0) \quad\text{for notational convenience} \\
+&= (v \mapsto \lambda(1\tensor v))(z_0) \\
+&= \lambda(1\tensor z_0) \\
+&\definedas 1 \actson \psi(z_0) \\
+&= \psi(z_0)
 .\end{align*}
+
+Similarly, to see that $FG$ is the identity, let $\phi$ be defined as above and fix $g_0 \tensor v_0 \in U(\lieg) \tensor \CC_\lambda$.
+Then
+
+\begin{align*}
+GF\phi(g_0\tensor v_0)
+&= G(g\tensor v \mapsto g\actson \phi(v)) (g_0 \tensor v_0) \\
+&= g_0 \actson \phi(v_0)
+.\end{align*}
+
 
