@@ -13,12 +13,23 @@ $M^{[\lambda]}$ is a $U(\lieg)\dash$submodule of $M$
 
 *Proof:*
 It suffices to check that $\lieg\actson M^{[\lambda]} \subseteq M^[\lambda]$, i.e. this module is closed under the action of $U(\lieg)$.
-Let $g\in U(\lieg)$ be arbitrary.
+Let $g\in U(\lieg)$ and $m\in M^{[\lambda]}$ be arbitrary.
 Choose a ordered basis $\theset{e_i}$ for $\lieg$, then this can be extended to a PBW basis for $U(\lieg)$ given by $\theset{\prod_i e_i^{t_i} \suchthat t_i \in \ZZ}$.
 Then take a triangular decomposition $U(\lieg) = U(\lien^-) U(\lieh) U(\lien)$.
 We can then write $u = \prod_i a_i^{t_i} \prod_j h_j^{t_j} \prod_k b_k ^{t_k}$ and consider how each component acts.
 
-Since $\lien = \bigoplus_{\alpha \in \Phi^+} g_\alpha$
+First considering how the $b_k$ act, we compute their weights.
+We know $h\actson m = \mu(h) m$ for each $m\in M_\mu$.
+Noting that $b_k \in g_\alpha$ for some positive root $\alpha$, we have $[h g] = \alpha(h) g$, and so
+
+\begin{align*}
+h \actson (b_k \actson m) 
+&= b_k \actson (h\actson m) + [h b_k] \actson m\\
+&= b_k \actson (\mu(h) m) + [h b_k] \actson m \\
+&= b_k (\mu(h) m) +  \alpha(h) b_k m \\
+&= (\mu(h) + \alpha(h)) b_k m
+.\end{align*}
+
 
 Proposition:
 $M$ is the direct sum of finitely many submodules of the form $M^{[\lambda]}$.
