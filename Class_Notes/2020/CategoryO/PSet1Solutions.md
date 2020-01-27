@@ -76,5 +76,5 @@ b\actson F\phi(v)
 .\end{align*}
 
 
-To see that $G$ is well-defined, let $\psi: C_\lambda \to M$ be fixed; we will show that the set map $G\psi: U(\lieg)\tensor C_\lambda \to M$
+To see that $G$ is well-defined, let $\psi: C_\lambda \to M$ be fixed; we will show that the set map $G\psi: U(\lieg)\tensor C_\lambda \to M$ is $U(\lieg)\dash$linear.
 
