@@ -13,7 +13,8 @@ $M^{[\lambda]}$ is a $U(\lieg)\dash$submodule of $M$
 
 *Proof:*
 It suffices to check that $\lieg\actson M^{[\lambda]} \subseteq M^[\lambda]$, i.e. this module is closed under the action of $U(\lieg)$.
-
+Let $g\in U(\lieg)$ be arbitrary.
+Choose a ordered basis $\theset{e_i}$ for $\lieg$, then this can be extended to a PBW basis for $U(\lieg)$ given by $\theset{\prod_i e_i^{t_i} \suchthat t_i \in \ZZ}$.
 
 Proposition:
 $M$ is the direct sum of finitely many submodules of the form $M^{[\lambda]}$.
