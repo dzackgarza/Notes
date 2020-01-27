@@ -60,6 +60,8 @@ G: \hom_{U(\lieb)} (\CC_\lambda, M) &\to \hom_{U(\lieg)} (U(\lieg) \tensor_{U(\l
 \psi &\mapsto (G\psi: g\tensor v \mapsto g \actson \psi(v))
 .\end{align*}
 
+Note that the maps $G\psi$ are defined on ordered pairs, but are clearly bilinear and thus uniquely extend to maps on the tensor product.
+
 It suffices to show that these maps are well-defined and mutually inverse.
 
 To see that $F$ is well-defined, let $\phi: U(\lieg)\tensor C_\lambda \to M$ be fixed; we will show that the set map $F\phi: \CC_\lambda \to M$ is $U(\lieb)\dash$linear.
