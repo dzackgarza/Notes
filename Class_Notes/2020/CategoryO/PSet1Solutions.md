@@ -39,9 +39,11 @@ For any $M \in \OO$, $M(\lambda)$ satisfies the following property:
 
 
 Proof:
-Consider the following two maps:
+
+Noting that $\Ind_\lieb^\lieg \CC_\lambda = U(\lieg) \tensor_{U(\lieb)} \CC_\lambda$ and $\lieg\dash$morphisms can always be lifted to $U(\lieg)\dash$morphisms,
+consider the following two maps:
 
 \begin{align*}
-
+F: \hom_\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) \to \hom_\lieb(\CC_\lambda, M)
 .\end{align*}
 
