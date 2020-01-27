@@ -69,7 +69,7 @@ b\actson F\phi(v)
 &= b\actson (z \mapsto \phi(1\tensor z))(v) \\
 &= b\actson \phi(1\tensor v) \\
 &= \phi(b\actson (1\tensor v)) \quad\text{since $\phi$ is $U(\lieg)\dash$linear and $b\in U(\lieg)$} \\
-&= \phi((b\actson 1)\tensor v ) \quad\text{by the definition/construction }f $M(\lambda)$ as a $U(\lieg)\dash$module.} 
+&= \phi((b\actson 1)\tensor v ) \quad\text{by the definition/construction of $M(\lambda)$ as a $U(\lieg)\dash$module.} 
 &= \phi(1 \tensor (b\actson v)) \quad\text{since $\CC_\lambda$ is a $\lieb\dash$module}\\
 &= (z \mapsto \phi(1\tensor z))(b\actson v) \\
 &=F\phi(b\actson v)
