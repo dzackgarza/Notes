@@ -70,7 +70,9 @@ b\actson F\phi(v)
 &= b\actson (z \mapsto \phi(1\tensor z))(v) \\
 &= b\actson \phi(1\tensor v) \\
 &= \phi((b\actson 1)\tensor v ) \\
-&= \phi(1 \tensor (b\actson v))
+&= \phi(1 \tensor (b\actson v))\\
+&= (z \mapsto \phi(1\tensor z))(b\actson v) \\
+&=F\phi(b\actson v)
 .\end{align*}
 
 
