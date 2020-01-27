@@ -32,7 +32,10 @@ h \actson (b_k \actson m)
 &\in M_{\mu + \alpha}
 .\end{align*}
 
+
 But then $\mu + \alpha - \mu = \alpha \in \ZZ \Phi = \Lambda_r$, so $\mu$ and $\mu + \alpha$ are in the same coset $[\lambda]$.
+The same argument shows that $h \actson (b_k^{t} \actson m))$ is in the weight space $M_{\mu + t\alpha}$, which still only differs by an integral number of roots.
+So $M^{[\lambda]}$ is closed under the action of $\lieg$.
 
 Proposition:
 $M$ is the direct sum of finitely many submodules of the form $M^{[\lambda]}$.
