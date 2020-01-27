@@ -113,7 +113,8 @@ GF\phi(g_0\tensor v_0)
 &\definedas G(g\tensor v \mapsto g\actson f(v)) (g_0 \tensor v_0) \\
 &= g_0 \actson f(v_0) \\
 &= g_0 \actson \phi(1\tensor v_0)\\ 
-&= \phi(g_0 \actson 1\tensor v_0) \quad\text{since $g_0 \in \lieg$ and $\phi$ thus commutes with the $\lieg\dash$action by definition} \\ 
+&= \phi(g\actson (1\tensor v_0)) \quad\text{since $g_0 \in \lieg$ and $\phi$ thus commutes with the $\lieg\dash$action by definition} \\ 
+&= \phi(g_0 \actson 1\tensor v_0) \quad\text{by definition of the action on }U(\lieg)\tensor C_\lambda$ as a $U(\lieg)$ module,}
 &= \phi(g_0 \tensor v_0)\\ 
 .\end{align*}
 
