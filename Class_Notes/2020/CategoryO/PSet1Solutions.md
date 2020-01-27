@@ -65,5 +65,6 @@ It suffices to show that these maps are well-defined and mutually inverse.
 To see that $F$ is well-defined, let $\phi: U(\lieg)\tensor C_\lambda \to M$ be fixed; we will show that the set map $F\phi: \CC_\lambda \to M$ is $\lieb\dash$linear.
 
 - $F\phi(v + w) = \phi(1 \tensor (v+ w)) = \phi((1\tensor v) + (1 \tensor w)) = \phi(1\tensor v) + \phi(1\tensor w) = F\phi(v) + F\phi(w)$.
+- $(F\phi_1 + F\phi_2)(v) = (\phi_1 + \phi_2)(1\tensor v) = \phi_1(1\tensor v) + \phi_2(1\tensor v) = F\phi_1(v) +F\phi_2(v)$.
 
 
