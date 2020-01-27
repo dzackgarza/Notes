@@ -56,7 +56,7 @@ F: \hom_{U(\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) &\to \hom_{U(\lieb
 and
 
 \begin{align*}
-G: \hom_{U(\lieb)} (\CC_\lambda, M) &\to \hom_{U(\lieg}) (U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) \\
+G: \hom_{U(\lieb)} (\CC_\lambda, M) &\to \hom_{U(\lieg)} (U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) \\
 \psi &\mapsto (G\psi: g\tensor v \mapsto g \cdot \psi(v))
 .\end{align*}
 
