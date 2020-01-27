@@ -43,14 +43,13 @@ Proof:
 Noting that 
 
 - $\Ind_\lieb^\lieg \CC_\lambda = U(\lieg) \tensor_{U(\lieb)} \CC_\lambda$,
-- $\lieg\dash$morphisms can always be lifted to $U(\lieg)\dash$morphisms,
 - $\Res_\lieb^\lieg M$ is an identification of the $\lieg\dash$module $M$ has a $\lieb\dash$ module by restricting the action of $\lieg$,
 
 consider the following two maps:
 
 \begin{align*}
 F: \hom_{U(\lieg)} (U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) &\to \hom_{U(\lieb)} (\CC_\lambda, M) \\
-\phi &\mapsto (F\phi: v \mapsto \phi(1 \tensor v))
+\phi &\mapsto (F\phi: z \mapsto \phi(1 \tensor z))
 ,\end{align*}
 
 and
@@ -63,6 +62,8 @@ G: \hom_{U(\lieb)} (\CC_\lambda, M) &\to \hom_{U(\lieg)} (U(\lieg) \tensor_{U(\l
 It suffices to show that these maps are well-defined and mutually inverse.
 
 To see that $F$ is well-defined, let $\phi: U(\lieg)\tensor C_\lambda \to M$ be fixed; we will show that the set map $F\phi: \CC_\lambda \to M$ is $U(\lieb)\dash$linear.
-Let $b\in U(\lieb)$.
+Let $b\in U(\lieb)$, then
+
+- $b\actson F\phi(v) = b\actson (z \mapsto \phi(1\tensor z))(v) = b\actson \phi(1\tensor v) = \phi((b\actson 1)\tensor v )$.
 
 
