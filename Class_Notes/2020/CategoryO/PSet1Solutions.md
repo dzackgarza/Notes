@@ -63,6 +63,8 @@ We can then write $M = \sum_{\mu \in [\lambda] M_\mu$, which decomposes $M$ as a
 But then if any $\sigma \in \Pi(M)$ is a weight, it must be one of the $\mu$ occurring above.
 So every weight of $M$ is in the coset $[\lambda]$, and in particular they are all in the same coset.
 
+$\qed$
+
 ## b
 
 **Proposition:**
