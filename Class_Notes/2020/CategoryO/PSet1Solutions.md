@@ -68,7 +68,7 @@ Let $b\in U(\lieb)$, then
 b\actson F\phi(v) 
 &= b\actson (z \mapsto \phi(1\tensor z))(v) \\
 &= b\actson \phi(1\tensor v) \\
-&= \phi((b\actson 1)\tensor v ) \\
+&= \phi((b\actson 1)\tensor v ) \quad\text{since $\phi$ is $\lieg\dash$linear and thus $\lieb\dash$linear by restriction} \\
 &= \phi(1 \tensor (b\actson v)) \quad\text{since $\CC_\lambda$ is a $\lieb\dash$module}\\
 &= (z \mapsto \phi(1\tensor z))(b\actson v) \\
 &=F\phi(b\actson v)
