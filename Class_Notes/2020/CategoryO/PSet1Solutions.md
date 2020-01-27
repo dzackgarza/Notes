@@ -83,7 +83,9 @@ Let $u\in U(\lieg)$, then
 \begin{align*}
 u\actson G\psi(g\tensor v)
 &\definedas u \actson (g\tensor v \mapsto g\actson \psi(v))(g\tensor v) \\
-&\definedas u \actson (g\actson \psi(v))\\
+&\definedas u \actson (g\actson \psi(v)) \\
+&= (ug) \actson \psi(v) \\
+&\definedas actson (g\tensor v \mapsto g\actson \psi(v))(ug \tensor v) \\
 .\end{align*}
 
 
