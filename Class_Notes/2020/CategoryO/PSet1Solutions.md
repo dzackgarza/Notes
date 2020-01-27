@@ -44,6 +44,7 @@ Noting that $\Ind_\lieb^\lieg \CC_\lambda = U(\lieg) \tensor_{U(\lieb)} \CC_\lam
 consider the following two maps:
 
 \begin{align*}
-F: \hom_\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) \to \hom_\lieb(\CC_\lambda, M)
+F: \hom_\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) &\to \hom_\lieb(\CC_\lambda, M) \\
+\lambda \mapsto (v \mapsto \lambda(1 \tensor v))
 .\end{align*}
 
