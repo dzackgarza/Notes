@@ -56,7 +56,7 @@ and
 
 \begin{align*}
 G: \hom_{U(\lieb)} (\CC_\lambda, M) &\to \hom_{U(\lieg)} (U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) \\
-\psi &\mapsto (G\psi: g\tensor v \mapsto g \cdot \psi(v))
+\psi &\mapsto (G\psi: g\tensor v \mapsto g \actson \psi(v))
 .\end{align*}
 
 It suffices to show that these maps are well-defined and mutually inverse.
