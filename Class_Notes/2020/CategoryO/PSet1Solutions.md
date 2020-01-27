@@ -12,7 +12,7 @@ If $M\in \OO$ and $[\lambda] = \lambda + \Lambda_r$ is any coset of $\lieh\dual/
 $M^{[\lambda]}$ is a $U(\lieg)\dash$submodule of $M$ 
 
 *Proof:*
-It suffices to check that $\lieg\actson M^[\lambda] \subseteq M^[\lambda]$.
+It suffices to check that $\lieg\actson M^[\lambda] \subseteq M^[\lambda]$, i.e. this module is closed under the action of $\lieg$.
 
 
 Proposition:
@@ -81,7 +81,6 @@ b\actson F\phi(v)
 
 To see that $G$ is well-defined, let $\psi: C_\lambda \to M$ be fixed; we will show that the set map $G\psi: U(\lieg)\tensor C_\lambda \to M$ is $U(\lieg)\dash$linear.
 Let $u\in U(\lieg)$, then
-
 
 \begin{align*}
 u\actson G\psi(g\tensor v)
