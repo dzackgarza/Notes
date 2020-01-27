@@ -109,7 +109,7 @@ Then
 \begin{align*}
 GF\phi(g_0\tensor v_0)
 &= G(v \mapsto \phi(1\tensor v)) (g_0 \tensor v_0) \\
-&\definedas G(f) \\
+&\definedas G(f) \quad\text{for notational convenience} \\
 &= G(g\tensor v \mapsto g\actson f(v)) (g_0 \tensor v_0) \\
 &= g_0 \actson f(v_0) \\
 &= g_0 \actson \phi(1\tensor v_0)\\ 
