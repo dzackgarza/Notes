@@ -50,6 +50,13 @@ consider the following two maps:
 
 \begin{align*}
 F: \hom_\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) &\to \hom_\lieb(\CC_\lambda, M) \\
-\lambda &\mapsto (v \mapsto \lambda(1 \tensor v))
+\phi &\mapsto (v \mapsto \phi(1 \tensor v))
+,\end{align*}
+
+and
+
+\begin{align*}
+G: \hom_\lieb(\CC_\lambda, M) &\to \hom_\lieg(U(\lieg) \cross \CC_\lambda, M ) \\
+\psi &\mapsto ((g,v) \mapsto g \cdot \psi(v) )
 .\end{align*}
 
