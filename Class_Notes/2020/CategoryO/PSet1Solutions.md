@@ -65,11 +65,6 @@ So every weight of $M$ is in the coset $[\lambda]$, and in particular they are a
 
 $\qed$
 
-## b
-
-**Proposition:**
-The weights of an indecomposable module $M\in\OO$ lie in a single coset of $\lieh\dual/\Lambda_r$.
-
 
 # Humphreys 1.3*
 
