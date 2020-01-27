@@ -18,7 +18,7 @@ Choose a ordered basis $\theset{e_i}$ for $\lieg$, then this can be extended to 
 Then take a triangular decomposition $U(\lieg) = U(\lien^-) U(\lieh) U(\lien)$.
 We can then write $u = \prod_i a_i^{t_i} \prod_j h_j^{t_j} \prod_k b_k ^{t_k}$ and consider how each component acts.
 
-First considering how the $b_k$ act, we compute their weights.
+First considering how the $b_k$ act, we compute their weights; we want to show that if $\mu \in M_\mu$ then $b_k \actson \mu \in M_{u'}$.
 We know $h\actson m = \mu(h) m$ for each $m\in M_\mu$.
 Noting that $b_k \in g_\alpha$ for some positive root $\alpha$, we have $[h g] = \alpha(h) g$, and so
 
@@ -27,7 +27,8 @@ h \actson (b_k \actson m)
 &= b_k \actson (h\actson m) + [h b_k] \actson m\\
 &= b_k \actson (\mu(h) m) + [h b_k] \actson m \\
 &= b_k (\mu(h) m) +  \alpha(h) b_k m \\
-&= (\mu(h) + \alpha(h)) b_k m
+&= (\mu(h) + \alpha(h)) b_k m \\
+&\in M_{\mu + \alpha}
 .\end{align*}
 
 
