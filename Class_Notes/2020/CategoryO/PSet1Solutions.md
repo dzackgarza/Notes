@@ -90,3 +90,15 @@ u\actson G\psi(g\tensor v)
 .\end{align*}
 
 
+To see that $GF \definedas G\circ F$ is the identity, let $\psi$ be defined as above, then, 
+
+\begin{align*}
+FG\psi(z)
+&= F(g\tensor v \to g\actson \psi(v) )(z) \\
+&= F(\lambda) )(z) \\
+&= (v \mapsto \lambda(1\tensor v))(z) \\
+&= \lambda(1\tensor z) \\
+&\definedas 1 \actson \psi(z) \\
+&= \psi(z)
+.\end{align*}
+
