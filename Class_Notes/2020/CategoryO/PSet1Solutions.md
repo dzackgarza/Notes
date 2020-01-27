@@ -110,10 +110,10 @@ Then
 GF\phi(g_0\tensor v_0)
 &= G(v \mapsto \phi(1\tensor v)) (g_0 \tensor v_0) \\
 &\definedas G(f) \quad\text{for notational convenience} \\
-&= G(g\tensor v \mapsto g\actson f(v)) (g_0 \tensor v_0) \\
+&\definedas G(g\tensor v \mapsto g\actson f(v)) (g_0 \tensor v_0) \\
 &= g_0 \actson f(v_0) \\
 &= g_0 \actson \phi(1\tensor v_0)\\ 
-&= \phi(g_0 \actson 1\tensor v_0)\\ 
+&= \phi(g_0 \actson 1\tensor v_0) \quad\text{since $g_0 \in \lieg$ and $\phi$ thus commutes with the $\lieg\dash$action by definition} \\ 
 &= \phi(g_0 \tensor v_0)\\ 
 .\end{align*}
 
