@@ -38,7 +38,7 @@ For any $M \in \OO$, $M(\lambda)$ satisfies the following property:
 .\end{align*}
 
 
-Proof:
+*Proof:*
 
 Noting that 
 
