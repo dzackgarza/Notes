@@ -114,6 +114,7 @@ GF\phi(g_0\tensor v_0)
 &= g_0 \actson f(v_0) \\
 &= g_0 \actson \phi(1\tensor v_0)\\ 
 &= \phi(g_0 \actson 1\tensor v_0)\\ 
+&= \phi(g_0 \tensor v_0)\\ 
 .\end{align*}
 
 
