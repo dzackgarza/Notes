@@ -52,7 +52,7 @@ F: \hom_{U(\lieg)} (U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) &\to \hom_{U(\l
 \phi &\mapsto (F\phi: z \mapsto \phi(1 \tensor z))
 ,\end{align*}
 
-and
+and using the action of $\lieg$ on $M$, 
 
 \begin{align*}
 G: \hom_{U(\lieb)} (\CC_\lambda, M) &\to \hom_{U(\lieg)} (U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) \\
@@ -84,7 +84,7 @@ Let $u\in U(\lieg)$, then
 u\actson G\psi(g\tensor v)
 &\definedas u \actson (g\tensor v \mapsto g\actson \psi(v))(g\tensor v) \\
 &\definedas u \actson (g\actson \psi(v)) \\
-&= (ug) \actson \psi(v) \\
+&= (ug) \actson \psi(v) \quad\text{since the action $M$ is a well-defined $\lieg\dash$module} \\
 &\definedas (g\tensor v \mapsto g\actson \psi(v))(ug \tensor v) \\
 &= G\psi(ug \tensor v)
 .\end{align*}
