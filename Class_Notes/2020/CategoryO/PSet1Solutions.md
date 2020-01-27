@@ -62,6 +62,6 @@ G: \hom_\lieb(\CC_\lambda, M) &\to \hom_\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\l
 
 It suffices to show that these maps are well-defined and mutually inverse.
 
-To see that $F$ is well-defined, let $\phi: U(\lieg)\tensor C_\lambda \to M$ be fixed; we will show that $F\phi: \CC_\lambda \to M$ is $\lieb\dash$linear.
+To see that $F$ is well-defined, let $\phi: U(\lieg)\tensor C_\lambda \to M$ be fixed; we will show that the set map $F\phi: \CC_\lambda \to M$ is $\lieb\dash$linear.
 
 
