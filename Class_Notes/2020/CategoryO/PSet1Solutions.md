@@ -50,14 +50,16 @@ consider the following two maps:
 
 \begin{align*}
 F: \hom_\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) &\to \hom_\lieb(\CC_\lambda, M) \\
-\phi &\mapsto (v \mapsto \phi(1 \tensor v))
+\phi &\mapsto (F\phi: v \mapsto \phi(1 \tensor v))
 ,\end{align*}
 
 and
 
 \begin{align*}
 G: \hom_\lieb(\CC_\lambda, M) &\to \hom_\lieg(U(\lieg) \tensor_{U(\lieb)} \CC_\lambda, M ) \\
-\psi &\mapsto (g\tensor v \mapsto g \cdot \psi(v))
+\psi &\mapsto (G\psi: g\tensor v \mapsto g \cdot \psi(v))
 .\end{align*}
 
 It suffices to show that these maps are well-defined and mutually inverse.
+
+
