@@ -64,6 +64,14 @@ It suffices to show that these maps are well-defined and mutually inverse.
 To see that $F$ is well-defined, let $\phi: U(\lieg)\tensor C_\lambda \to M$ be fixed; we will show that the set map $F\phi: \CC_\lambda \to M$ is $U(\lieb)\dash$linear.
 Let $b\in U(\lieb)$, then
 
-- $b\actson F\phi(v) = b\actson (z \mapsto \phi(1\tensor z))(v) = b\actson \phi(1\tensor v) = \phi((b\actson 1)\tensor v )$.
+
+\begin{align*}
+b\actson F\phi(v) 
+&= b\actson (z \mapsto \phi(1\tensor z))(v) \\
+&= b\actson \phi(1\tensor v) \\
+&= \phi((b\actson 1)\tensor v ) \\
+&= \phi(1 \tensor (b\actson v))
+.\end{align*}
+
 
 
