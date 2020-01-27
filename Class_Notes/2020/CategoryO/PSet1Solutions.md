@@ -86,7 +86,7 @@ u\actson G\psi(g\tensor v)
 &\definedas u \actson (g\actson \psi(v)) \\
 &= (ug) \actson \psi(v) \quad\text{since the action $M$ is a $\lieg\dash$module with a well-defined action.} \\
 &\definedas (g\tensor v \mapsto g\actson \psi(v))(ug \tensor v) \\
-&= G\psi(ug \tensor v)
+&\definedas G\psi(ug \tensor v)
 .\end{align*}
 
 
