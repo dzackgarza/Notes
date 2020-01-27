@@ -47,6 +47,10 @@ $M$ is the direct sum of finitely many submodules of the form $M^{[\lambda]}$.
 
 *Proof:*
 
+By axiom 1 for Category $\OO$, $M$ is finitely generated, say by $\theset{m_j}$, 
+This category is closed under subobjects, so if we write $M = \oplus_{[\lambda]} M^{[\lambda]}$ as a union over all cosets, each $M^{[\lambda]}$ is finitely generated as well.
+Since $m_1$ is in this direct sum, it is in *finitely* many summands by definition of the direct sum, so for each $j$, $m_j \in \bigoplus_{k=1}^{R_{j}} M^[\lambda_{jk}]$ for some finite constant $R_{j}$ and some coset depending on $j$ and $k$.
+But then $M = \bigoplus_j \bigoplus_k M^{[\lambda_{jk}]}$ is still a finite direct sum, which is what we wanted to show.
 
 ## b
 
