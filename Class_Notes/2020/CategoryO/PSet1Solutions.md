@@ -35,6 +35,8 @@ h \actson (b_k \actson m)
 
 But then $\mu + \alpha - \mu = \alpha \in \ZZ \Phi = \Lambda_r$, so $\mu$ and $\mu + \alpha$ are in the same coset $[\lambda]$.
 The same argument shows that $h \actson (b_k^{t} \actson m))$ is in the weight space $M_{\mu + t\alpha}$, which still only differs by an integral number of roots.
+
+But this shows that $U(\lien)$ and $U(\lien^-)$ leave this space invariant, and $U(\lieh)$ acts by scaling, which preserves subspaces.
 So $M^{[\lambda]}$ is closed under the action of $\lieg$.
 
 Proposition:
