@@ -40,7 +40,12 @@ For any $M \in \OO$, $M(\lambda)$ satisfies the following property:
 
 Proof:
 
-Noting that $\Ind_\lieb^\lieg \CC_\lambda = U(\lieg) \tensor_{U(\lieb)} \CC_\lambda$ and $\lieg\dash$morphisms can always be lifted to $U(\lieg)\dash$morphisms,
+Noting that 
+
+- $\Ind_\lieb^\lieg \CC_\lambda = U(\lieg) \tensor_{U(\lieb)} \CC_\lambda$,
+- $\lieg\dash$morphisms can always be lifted to $U(\lieg)\dash$morphisms,
+- $\Res_\lieb^\lieg M$ is an identification of the $\lieg\dash$module $M$ has a $\lieb\dash$ module by restricting the action of $\lieg$,
+
 consider the following two maps:
 
 \begin{align*}
