@@ -59,7 +59,7 @@ If $M$ is indecomposable, then all weights of $M$ lie in a single coset.
 Proof:
 By (a), we can write $M = \bigoplus_{[\lambda_i]} M^[\lambda_i]$ for some finite set of $\lambda_i$s.
 If $M$ is indecomposable, then there can only be one summand, and so $M = M^[\lambda]$ for exactly 1 $\lambda$.
-We can then write $M = \sum_{\mu \in [\lambda] M_\mu$, which decomposes $M$ as a sum of weight spaces.
+We can then write $M = \sum_{\mu \in [\lambda]} M_\mu$, which decomposes $M$ as a sum of weight spaces.
 But then if any $\sigma \in \Pi(M)$ is a weight, it must be one of the $\mu$ occurring above.
 So every weight of $M$ is in the coset $[\lambda]$, and in particular they are all in the same coset.
 
