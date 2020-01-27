@@ -108,8 +108,11 @@ Then
 
 \begin{align*}
 GF\phi(g_0\tensor v_0)
+&= G(v \mapsto \phi(1\tensor v))(g_0 \tensor v_0) \\
 &= G(g\tensor v \mapsto g\actson \phi(v)) (g_0 \tensor v_0) \\
-&= g_0 \actson \phi(v_0)
+&= G(f)(g_0 \tensor v_0) \\
+&= g_0 \actson f(v_0) \\
+&= g_0 \actons 
 .\end{align*}
 
 
