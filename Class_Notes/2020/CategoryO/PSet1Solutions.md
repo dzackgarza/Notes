@@ -19,6 +19,7 @@ Then take a triangular decomposition $U(\lieg) = U(\lien^-) U(\lieh) U(\lien)$.
 We can then write $u = \prod_i a_i^{t_i} \prod_j h_j^{t_j} \prod_k b_k ^{t_k}$ and consider how each component acts.
 
 First considering how the $b_k$ act, we compute their weights; we want to show that if $\mu \in M_\mu$ for some $\mu \in [\lambda]$, then $b_k \actson \mu \in M_{u'}$ for some $m'\in [\lambda]$.
+
 We know $h\actson m = \mu(h) m$ for each $m\in M_\mu$.
 Noting that $b_k \in g_\alpha$ for some positive root $\alpha$, we have $[h g] = \alpha(h) g$, and so
 
@@ -31,6 +32,7 @@ h \actson (b_k \actson m)
 &\in M_{\mu + \alpha}
 .\end{align*}
 
+But then $\mu + \alpha - \mu = \alpha \in \ZZ \Phi = \Lambda_r$, so $\mu$ and $\mu + \alpha$ are in the same coset $[\lambda]$.
 
 Proposition:
 $M$ is the direct sum of finitely many submodules of the form $M^{[\lambda]}$.
