@@ -9,7 +9,7 @@ A subset $\theset{B_i}$ is a basis iff
 
 
 Dense:
-A subset $Q\subset X$ is dense iff $y\in N_y \subset X \implies N_y \intersect Q \neq \emptyset$.
+A subset $Q\subset X$ is dense iff $y\in N_y \subset X \implies N_y \intersect Q \neq \emptyset$ iff $\bar Q = X$.
 
 # Examples
 
