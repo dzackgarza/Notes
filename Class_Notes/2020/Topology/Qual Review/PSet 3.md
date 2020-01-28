@@ -72,6 +72,8 @@ Direct proof that $\RR/\QQ$ isn't Hausdorff:
 Proof that $\RR/\QQ$ has the indiscrete topology:
 
 - Let $U \subset \RR/\QQ$ be open and nonempty, show $U = \RR/\QQ$.
+- Let $[x] \in U$, then $x \in \pi\inv(U) \subset\RR$ is open.
+- For every $q\in \QQ$, $x+ q \in \pi\inv(U)$ since $(x+q) - x \in \QQ \implies [x+q] = [x]$.
 
 
 
