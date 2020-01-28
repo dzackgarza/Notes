@@ -64,7 +64,8 @@ So take the quotient map $\pi:\RR \to \RR/\QQ$.
 
 Direct proof that $\RR/\QQ$ isn't Hausdorff:
 
-- Pick $[x] \neq [y]\in \RR/\QQ$.
+- Pick $[x] \subset U \neq [y] \subset V \in \RR/\QQ$ and suppose $U\cap V = \emptyset$.
+- Suppose $
 
 Proof that $\RR/\QQ$ has the indiscrete topology:
 Let $U \subset \RR/\QQ$ be open; then by definition of the quotient topology, $U = \pi(V)$ for some open set $V\in \RR$.
