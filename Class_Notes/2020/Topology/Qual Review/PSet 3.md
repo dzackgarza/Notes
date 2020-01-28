@@ -59,6 +59,7 @@ $\impliedby$:
 
 # Problem 38
 
+$\RR$ is clearly Hausdorff, and $\RR/\QQ$ has the indiscrete topology, and is thus non-Hausdorff.
 
 
 
