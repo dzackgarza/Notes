@@ -97,4 +97,4 @@ Proof that $\RR/\QQ$ has the indiscrete topology:
 ## b
 
 - Let $\theset{q_i}$ be a countable dense subset.
-- Define $B_{i, j} = B_{\frac 1 i}(q_j)$.
+- Define $B_{i, j} = B_{\frac 1 i}(q_j)$, which is still countable.
