@@ -70,8 +70,8 @@ Direct proof that $\RR/\QQ$ isn't Hausdorff:
 - Then $[p] = [q] \in U\intersect V$.
 
 Proof that $\RR/\QQ$ has the indiscrete topology:
-Let $U \subset \RR/\QQ$ be open; then by definition of the quotient topology, $U = \pi(V)$ for some open set $V\in \RR$.
-Then $V$ contains an interval
+
+- Let $U \subset \RR/\QQ$ be open and nonempty, show $U = \RR/\QQ$.
 
 
 
