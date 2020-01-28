@@ -95,3 +95,6 @@ Proof that $\RR/\QQ$ has the indiscrete topology:
 - Thus $Q$ is dense in $X$.
 
 ## b
+
+- Let $\theset{q_i}$ be a countable dense subset.
+- Define $B_{i, j} = B_{\frac 1 i}(q_j)$.
