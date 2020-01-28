@@ -104,4 +104,3 @@ Proof that $\RR/\QQ$ has the indiscrete topology:
 - Property 2: $x\in B_{i_1, j_1} \intersect B_{i_2, j_2} \implies x\in B_{i_3, j_3} \subset B_{i_1, j_1} \cap B_{i_2, j_2}$:
   - Take $i < \min(i_1, i_2)$, then $N_i(x) \ni q_j$. for some $j$.
   - Thus $x\in B_{i, j}$.
-- Property 3
