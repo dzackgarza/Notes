@@ -1,0 +1,69 @@
+---
+title: Problem Set 3
+---
+
+
+
+# Problem 31
+
+## a
+
+Theorems used:
+
+- Continuous bijection + open map (or closed map) $\implies$ homeomorphism.
+- **Closed** subsets of compact sets are compact.
+- The continuous image of a compact set is compact.
+- Closed subsets of Hausdorff spaces are compact.
+
+So we'll show that $f$ is a closed map.
+
+Let $U \in X$ be closed. 
+
+- Since $X$ is compact, $U$ is compact
+- Since $f$ is continuous, $f(U)$ is compact
+- Since $Y$ is Hausdorff, $f(U)$ is closed.
+
+## b
+
+Note that any finite space is clearly compact.
+
+Take $f: ([2], \tau_1) \to ([2], \tau_2)$ to be the identity map, where $\tau_1$ is the discrete topology and $\tau_2$ is the indiscrete topology.
+Any map into an indiscrete topology is continuous, and $f$ is clearly a bijection.
+
+Let $g$ be the inverse map; then note that $1 \in \tau_1$ but $g\inv(1) = 1$ is not in $\tau_2$, so $g$ is not continuous.
+
+$\qed$
+
+# Problem 32
+
+$\implies$:
+
+- Let $p\in \Delta^c$.
+- Then $p$ is of the form $(x, y)$ where $x\neq y$ and $x,y\in X$.
+- Since $X$ is Hausdorff, pick $N_x, N_y$ in $X$ such that $N_x \intersect N_y = \emptyset$.
+- Then $N_p\definedas N_x \cross N_y$ is an open set in $X^2$ containing $p$.
+- Claim: $N_p \intersect \Delta = \emptyset$.
+  - If $q \in N_p \intersect \Delta$, then $q = (z, z)$ where $z\in X$, and $q\in N_p \implies q\in N_x \intersect N_y = \emptyset$.
+- Then $\Delta^c = \union_p N_p$ is open.
+ 
+$\impliedby$:
+
+- Let $x\neq y\in X$.
+- Consider $(x, y) \in \Delta^c \subset X^2$, which is open.
+- Thus $(x, y) \in B$ for some box in the product topology.
+- $B = U \cross V$ where $U, V$ are open in $X$, and $B \subset \Delta^c$.
+- So $x\in U, y\in V$.
+- Claim: $U\intersect V = \emptyset$.
+  - Otherwise, $z\in U\intersect V \implies (z, z) \in B$, but $B \intersect \Delta^c = \emptyset$. 
+
+
+# Problem 38
+
+
+
+
+# Problem 42
+
+# Problem 44
+
+

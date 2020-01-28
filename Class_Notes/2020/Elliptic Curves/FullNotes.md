@@ -3,7 +3,7 @@
 ---
 
 
-!include sections/2020-01-10.md
+!include sections/2020-01-08.md
 
 !include sections/2020-01-13.md
 
@@ -16,6 +16,4 @@
 !include sections/2020-01-24.md
 
 !include sections/2020-01-27.md
-
-!include sections/Appendix.md
 

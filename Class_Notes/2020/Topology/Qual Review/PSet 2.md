@@ -3,10 +3,8 @@ title: Problem Set 2
 ---
 
 
-Next time:
-19,22,23,27,30
 
-Definition:
+**Definition:**
 A space $X$ is connected iff it can not be written as $X = U \disjoint V$ with $U,V$ nonempty, disjoint, and open.
 
 # Problem 19
@@ -42,6 +40,8 @@ Fix any $U_\alpha$, then $U_\alpha^c = \theset{p_1, \cdots, p_n}$ is finite, say
 So pick $U_1 \ni p_1, \cdots, U_n \ni p_n$; then $\RR \subset U_\alpha \union_{i=1}^n U_i$ is a finite cover.
 
 # Problem 27
+
+> Notes: use diagonal trick to construct the Cauchy sequence.
 
 ## a
 $\implies$:
