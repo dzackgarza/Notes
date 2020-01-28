@@ -7,6 +7,10 @@ A subset $\theset{B_i}$ is a basis iff
 - $x\in B_i \intersect B_j \implies x\in B_k \subset B_i \intersect B_k$.
 - $x\in N_x \implies x\in B_i \subset N_x$ for some $i$.
 
+
+Dense:
+A subset $Q\subset X$ is dense iff $y\in N_y \subset X \implies N_y \intersect Q \neq \emptyset$.
+
 # Examples
 
 
