@@ -86,6 +86,7 @@ Proof that $\RR/\QQ$ has the indiscrete topology:
 - Let $y\in N_y \subset X$.
 - By definition of a basis, there exists some $B_i$ such that $y\in B_i \subset N_y$.
 - Since $x_i \in B_i$, $Q\intersect N_y \neq \emptyset$.
+- Thus $Q$ is dense in $X$.
 
 # Problem 44
 
