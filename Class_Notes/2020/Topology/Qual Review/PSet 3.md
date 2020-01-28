@@ -63,7 +63,7 @@ $\RR$ is clearly Hausdorff, and $\RR/\QQ$ has the indiscrete topology, and is th
 So take the quotient map $\pi:\RR \to \RR/\QQ$.
 
 Proof that $\RR/\QQ$ has the indiscrete topology:
-
+Let $U \subset \RR/\QQ$ be open; then by definition of the quotient topology, $U = \pi(V)$ for some open set $V\in \RR$.
 
 
 
