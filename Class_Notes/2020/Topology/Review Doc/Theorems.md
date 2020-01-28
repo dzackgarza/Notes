@@ -1,3 +1,11 @@
+# Definitions
+
+Basis:
+A subset $\theset{B_i}$ is a basis iff
+
+- $x\in X \implies x \in B_i$ for some $i$.
+- $x\in B_i \intersect B_j \implies x\in B_k \subset B_i \intersect B_k$.
+
 # Examples
 
 
