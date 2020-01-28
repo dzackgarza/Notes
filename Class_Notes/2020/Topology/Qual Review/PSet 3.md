@@ -62,8 +62,15 @@ $\impliedby$:
 $\RR$ is clearly Hausdorff, and $\RR/\QQ$ has the indiscrete topology, and is thus non-Hausdorff.
 So take the quotient map $\pi:\RR \to \RR/\QQ$.
 
+Direct proof that $\RR/\QQ$ isn't Hausdorff:
+
+- Pick $[x] \neq [y]\in \RR/\QQ$.
+
 Proof that $\RR/\QQ$ has the indiscrete topology:
 Let $U \subset \RR/\QQ$ be open; then by definition of the quotient topology, $U = \pi(V)$ for some open set $V\in \RR$.
+Then $V$ contains an interval
+
+
 
 
 
