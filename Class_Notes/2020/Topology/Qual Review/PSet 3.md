@@ -83,8 +83,9 @@ Proof that $\RR/\QQ$ has the indiscrete topology:
 
 - Suppose $X$ has a countable basis $B = \theset{B_i}$.
 - Choose an arbitrary $x_i \in B_i$ for each $i$. Define $Q = \theset{x_i}$.
-- Let $y\in X$ be arbitrary, then $y\in B_i$ for some $i$ by definition of a basis. 
-- Since $x_i \in B_i$, $Q\inter
+- Let $y\in N_y \subset X$.
+- By definition of a basis, there exists some $B_i$ such that $y\in B_i \subset N_y$.
+- Since $x_i \in B_i$, $Q\intersect N_y \neq \emptyset$.
 
 # Problem 44
 
