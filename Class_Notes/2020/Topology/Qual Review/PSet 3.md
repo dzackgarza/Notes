@@ -77,6 +77,10 @@ Proof that $\RR/\QQ$ has the indiscrete topology:
 - Every $y\in V$ satisfies $y+q \in V$ for all $q\in \QQ$, since $y+q-y \in \QQ \implies [y+q] = [y]$. 
 - So $(a-q, b+q) \in V$ for all $q\in \QQ$.
 - So $\union_{q\in \QQ}(a-q, b+q) \in V \implies \RR \subset V$.
+- So $\pi(V) = \RR/\QQ = U$, and thus the only open sets are the entire space and the empty set.
+
+
+
 
 
 
