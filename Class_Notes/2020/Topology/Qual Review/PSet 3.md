@@ -98,7 +98,8 @@ Proof that $\RR/\QQ$ has the indiscrete topology:
 
 - Let $\theset{q_i}$ be a countable dense subset.
 - Define $B_{i, j} = B_{\frac 1 i}(q_j)$, which is still countable.
-- Let $x\in X$ be arbitrary and consider $N_1(x)$. 
-- By density, there is some $q_i \in N_1(x)$, and thus $d(x, q_i) < 1$.
-- Property 1: then some $x, \in B_{i, j} \subset N_1(x)$ for some $i, j$.
-- Property 2: If $x$ is in the intersection of two $B$s 
+- Property 1: Every $x\in B_{i, j}$
+  - Take $x\in N_{\frac 1 2}(x) \ni q_j$ by density.
+  - Then $x\in B_{\frac 1 2, j$.}
+- Property 2: $x\in B_{i_1, j_1} \intersect B_{i_2, j_2} \implies x\in B_{i_3, j_3} \subset B_{i_1, j_1} \cap B_{i_2, j_2}$:
+  -  
