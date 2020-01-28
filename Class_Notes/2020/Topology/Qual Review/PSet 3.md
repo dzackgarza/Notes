@@ -69,6 +69,8 @@ Direct proof that $\RR/\QQ$ isn't Hausdorff:
 - Both $A, B$ contain intervals, so they contain rationals $p\in A, q\in B$
 - Then $[p] = [q] \in U\intersect V$.
 
+# Problem 42
+
 Proof that $\RR/\QQ$ has the indiscrete topology:
 
 - Let $U \subset \RR/\QQ$ be open and nonempty, show $U = \RR/\QQ$.
@@ -78,8 +80,6 @@ Proof that $\RR/\QQ$ has the indiscrete topology:
 - So $(a-q, b+q) \in V$ for all $q\in \QQ$.
 - So $\union_{q\in \QQ}(a-q, b+q) \in V \implies \RR \subset V$.
 - So $\pi(V) = \RR/\QQ = U$, and thus the only open sets are the entire space and the empty set.
-
-# Problem 42
 
 
 
