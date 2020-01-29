@@ -142,7 +142,8 @@ for some holomorphic function $w: \CC^n \to ?$.
 **Canonical Bundle:**
 Given a complex manifold $M$, we can define the tangent bundle $\CC^n \to TM \to M$ and the cotangent bundle $C^n \to T\dual M \to M$, which we'll just denote $T\dual M$.
 Then the canonical bundle is the bundle $\CC\to \Lambda^n T\dual M \to M?$, denoted by $\omega$, obtained by taking the $n$th exterior power.
-It is a theorem that the fibers are in fact lines.
+
+It is a theorem that the fibers are in fact complex lines $\CC^1$.
 For vector bundles, this is referred to as the *determinant bundle*.
 If $M$ is a smooth manifold, then $\omega$ has a global section.
 
