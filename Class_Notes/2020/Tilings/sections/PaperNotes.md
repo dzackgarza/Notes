@@ -125,4 +125,34 @@ General idea: glue two copies of the billiard table along the edge to get a flat
 Such surfaces are not "very flat", i.e. they have nontrivial linear holonomy.
 
 
+# Random Notes
+
+**Holomorphic Forms:**
+A holomorphic $p\dash$form on $X$ is a section of $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$.
+
+For $n = \dim_\CC X$, the $n\dash$forms are an important special case.
+Any such form $w$ is given in local coordinates $(z_1, \cdots, z_n)$ by 
+
+\begin{align*}
+w = w(z_1, \cdots, z_n) dz_1 \wedge \cdots \wedge dz_n
+\end{align*}
+
+for some holomorphic function $w: \CC^n \to ?$.
+
+**Canonical Bundle:**
+Given a complex manifold $M$, we can define the tangent bundle $\CC^n \to TM \to M$ and the cotangent bundle $C^n \to T\dual M \to M$, which we'll just denote $T\dual M$.
+Then the canonical bundle is the bundle $\CC\to \Lambda^n T\dual M \to M?$, denoted by $\omega$, obtained by taking the $n$th exterior power.
+It is a theorem that the fibers are in fact lines.
+For vector bundles, this is referred to as the *determinant bundle*.
+If $M$ is a smooth manifold, then $\omega$ has a global section.
+
+> Note: a holomorphic $n\dash$form is exactly the same as a section of the canonical bundle.
+
+Interesting aside: a Calabi-Yau is a manifold with a nowhere vanishing holomorphic $n\dash$form, which implies that the canonical bundle admits a map to a trivial line bundle that is an isomorphism, i.e. the canonical bundle is trivial.
+
+Exercise:
+For $\Sigma_g$ a compact Riemann surface of genus $g$, the space of holomorphic sections of the canonical is a vector space (over $\CC$?) of dimension $g$.
+
+
+
 
