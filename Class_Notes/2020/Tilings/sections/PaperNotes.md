@@ -14,7 +14,6 @@ Some introductory surveys:
 - G. Forni [For2], 
 - P. Hubert and T. Schmidt [HuSdt5] 
 - H. Masur [Ma7],
-
 - H. Masur and S. Tabachnikov [MaT] 
 - J. Smillie [S].
 
@@ -153,7 +152,3 @@ Interesting aside: a Calabi-Yau is a manifold with a nowhere vanishing holomorph
 
 *Exercise:*
 For $\Sigma_g$ a compact Riemann surface of genus $g$, the space of holomorphic sections of the canonical is a vector space (over $\CC$?) of dimension $g$.
-
-
-
-
