@@ -152,3 +152,7 @@ Interesting aside: a Calabi-Yau is a manifold with a nowhere vanishing holomorph
 
 *Exercise:*
 For $\Sigma_g$ a compact Riemann surface of genus $g$, the space of holomorphic sections of the canonical is a vector space (over $\CC$?) of dimension $g$.
+
+Fact:
+The dimension of the space of holomorphic differentials on $\Sigma_G$ is given by $\dim H^0(X; \Omega) = g$, the genus of the surface.
+Proof: use Riemann-Roch.
