@@ -5,6 +5,7 @@ References:
 - Alex Eskin, Andrei Okounkov, [Asymptotics of numbers of branched coverings of a torus and volumes of moduli spaces of holomorphic differentials](https://arxiv.org/abs/math/0006171)
 - Alex Eskin, Howard Masur, Anton Zorich, [Moduli Spaces of Abelian Differentials: The Principal Boundary, Counting Problems and the Siegel--Veech Constants
 ](https://arxiv.org/abs/math/0202134)
+- Engel, [Hurwitz Theory of Elliptic Orbifolds, I](https://arxiv.org/abs/1706.06738)
 - Elliptic orbifolds, E. 2017
 - 1-cylinder surfaces
 - "One Cylinder Surfaces", Delecroix, Goujard, Zovrch, Zograf. See Phil for appendix.
