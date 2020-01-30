@@ -166,7 +166,7 @@ General idea: glue two copies of the billiard table along the edge to get a flat
 Such surfaces are not "very flat", i.e. they have nontrivial linear holonomy.
 
 
-# Random Notes
+## Random Notes
 
 **Holomorphic Forms:**
 A holomorphic $p\dash$form on $X$ is a section of $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$.
