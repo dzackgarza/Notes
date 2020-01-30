@@ -18,8 +18,16 @@ If $\pi$ is ramified at $p$, the number of preimages $n$ is referred to as $e_p$
 Fact:
 \vector \beta(\Sigma_g) = [1, 2g, 1, 0, \cdots]$ and $\chi(\Sigma) = 2-2g$.
 
-Fact:
+Theorem:
 If $\pi$ is an unramified covering map of degree $n$, then $\chi(\Sigma') = n\chi(\Sigma)$.
+
+Theorem (Riemann-Hurwitz):
+If $\pi: \Sigma \to \Sigma'$ is a ramified covering map of degree $N$, then
+
+\begin{align*}
+\chi(\Sigma') = N \chi(\Sigma) - \sum (e_p - 1) \quad\text{ i.e. } 2 g(\Sigma') - 2=  N(2g(\Sigma) - 2)  + \sum (e_p - 1)
+.\end{align*}
+
 
 \begin{align*}
 
