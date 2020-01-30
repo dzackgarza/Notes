@@ -7,6 +7,9 @@ References:
 - "One Cylinder Surfaces", Delecroix, Goujard, Zovrch, Zograf. See Phil for appendix.
 
 
+Definition:
+A map $\pi: \Sigma \to \Sigma'$ of Riemann surfaces is said to be *ramified* at a point $p\in \Sigma'$ iff in local charts $\pi$ has the form $z\mapsto z^n$ for some $n>1$.
+
 Riemann-Hurwitz Formula:
 
 \begin{align*}
