@@ -18,7 +18,7 @@ Definition:
 If $\pi$ is ramified at $p$, the number of preimages $n$ is referred to as $e_p$, the *ramification index of $p$*.
 
 Fact:
-\vector \beta(\Sigma_g) = [1, 2g, 1, 0, \cdots]$ and $\chi(\Sigma) = 2-2g$.
+\vector{\beta}(\Sigma_g) = [1, 2g, 1, 0, \cdots]$ and $\chi(\Sigma) = 2-2g$.
 
 Theorem:
 If $\pi$ is an unramified covering map of degree $n$, then $\chi(\Sigma') = n\chi(\Sigma)$.
