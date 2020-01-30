@@ -73,7 +73,7 @@ Classification of elliptic orbifolds of dimension 2:
 
 
 Classification of elliptic orbifolds of dimension 2:
-Define $(n_1, \cdots; m_1, \cdots)$ as the *profile*, where $n_i$ are *elliptic* points, and $m_i$ are *corner reflectors*:
+Define $(n_1, \cdots; m_1, \cdots)$ as the *profile*, where $n_i$ are *elliptic* points (locally look like quotient by $\ZZ/n\ZZ$), and $m_i$ are *corner reflectors* (locally look like quotient by a dihedral group):
 
 ![Image](figures/2020-01-29-20:44.png)\
 
