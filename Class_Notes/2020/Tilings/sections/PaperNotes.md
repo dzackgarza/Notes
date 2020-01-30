@@ -12,6 +12,9 @@ A map $\pi: \Sigma \to \Sigma'$ of Riemann surfaces is said to be *ramified* at 
 
 > I.e. all points in a punctured neighborhood of $\pi(p)$ have $n$ preimages.
 
+Definition:
+If $\pi$ is ramified at $p$, the number of preimages $n$ is referred to as $e_p$, the *ramification index of $p$*.
+
 Fact:
 \vector \beta(\Sigma_g) = [1, 2g, 1, 0, \cdots]$ and $\chi(\Sigma) = 2-2g$.
 
