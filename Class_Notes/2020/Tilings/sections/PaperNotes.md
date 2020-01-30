@@ -82,6 +82,7 @@ Conformal (or equivalently complex) structures on a genus $g$ surface form a mod
 
 Let $\alpha$ be any partition of $2g-2$, and $\mch(\alpha)$ the moduli space of pairs $(\Sigma_g, \omega)$ where $\Sigma_g$ is a Riemann surface of genus $g$ and $\omega$ is a holomorphic 1-form (Abelian differential) on $M$ with the orders of its zeros given by $\alpha$.
 Letting $\mch$ be the moduli space of all abelian differentials on Riemann surfaces of genus $g$ is stratified by $\mch(\alpha)$ as $\alpha$ ranges over all partitions.
+For flat tori, $\mch = \Gl_+(2, \RR)/\Sl(2, \ZZ)$.
 
 
 # Notes on Paper
