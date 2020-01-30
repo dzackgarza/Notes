@@ -24,12 +24,12 @@ We usually associate
 - Constant zero curvature = $S^1 \cross S^1 \definedas T^1 = \Sigma_1$
 - Constant negative curvature = $\Sigma_g$ for $g\geq 2$, a surface of higher genus
 
-Proposition:
+**Proposition:**
 Any surface can be given a flat metric, possibly introducing singular points.
 
 > Idea: Push all of the curvature into a cone point.
 
-Example:
+*Example:*
 The standard cube embedded in $\RR^3$.
 
 This is a flat surface with 8 cone points located at the vertices.
@@ -44,16 +44,16 @@ The cone angle can be measured by cutting a cone from the base to the vertex, yi
 
 This shows that the cone angle of the cube is $3\pi/2$, which coincides with the fact that there are 3 square (and thus 3 right angles) adjacent to any cone point.
 
-Definition:
+**Definition:**
 Geodesic (todo)
 
-Definition:
+**Definition:**
 Ergodic (todo)
 
 > Here this means that a typical geodesic will visit any region in phase space and time spent in a region is proportional to volume.
 
 
-Definition:
+**Definition:**
 Holonomy and Holonomy group (todo)
 
 General (wildly open) problem:
@@ -115,10 +115,10 @@ Open problems in rectangular billiards:
 3. Asymptotically in length, how many periodic trajectories are there? 
 4. Does any obtuse triangle have a single periodic trajectory?
 
-Known example: 
+*Known example:* 
 Acute triangles have at least 1, see Fagnano trajectory 
 
-Fox-Kershner construction:
+*Fox-Kershner construction:*
 Yields a way to go from billiard trajectories to geodesics on a flat surface.
 General idea: glue two copies of the billiard table along the edge to get a flat sphere; then paths lift to geodesics.
 Such surfaces are not "very flat", i.e. they have nontrivial linear holonomy.
