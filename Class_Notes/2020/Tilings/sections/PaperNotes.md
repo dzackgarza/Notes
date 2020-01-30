@@ -6,6 +6,14 @@ References:
 - 1-cylinder surfaces
 - "One Cylinder Surfaces", Delecroix, Goujard, Zovrch, Zograf. See Phil for appendix.
 
+
+Riemann-Hurwitz Formula:
+
+\begin{align*}
+
+.\end{align*}
+
+
 # Notes on Paper
 
 > Reference: [https://arxiv.org/abs/math/0609392](https://arxiv.org/abs/math/0609392)
