@@ -9,28 +9,28 @@ References:
 - "One Cylinder Surfaces", Delecroix, Goujard, Zovrch, Zograf. See Phil for appendix.
 
 
-Definition:
+***Definition:***
 A map $\pi: \Sigma \to \Sigma'$ of Riemann surfaces is said to be *ramified* at a point $p\in \Sigma'$ iff in local charts $\pi$ has the form $z\mapsto z^n$ for some $n>1$.
 
 > I.e. all points in a punctured neighborhood of $\pi(p)$ have $n$ preimages.
 
-Definition:
+**Definition:**
 If $\pi$ is ramified at $p$, the number of preimages $n$ is referred to as $e_p$, the *ramification index of $p$*.
 
-Fact:
+*Fact:*
 $\vector{\beta}(\Sigma_g) = [1, 2g, 1, 0, \cdots]$ and $\chi(\Sigma) = 2-2g$.
 
-Theorem:
+**Theorem:**
 If $\pi$ is an unramified covering map of degree $n$, then $\chi(\Sigma') = n\chi(\Sigma)$.
 
-Theorem (Riemann-Hurwitz):
+**Theorem (Riemann-Hurwitz):**
 If $\pi: \Sigma \to \Sigma'$ is a ramified covering map of degree $N$, then
 
 \begin{align*}
 \chi(\Sigma') = N \chi(\Sigma) - \sum (e_p - 1) \quad\text{ i.e. } 2 g(\Sigma') - 2=  N(2g(\Sigma) - 2)  + \sum (e_p - 1)
 .\end{align*}
 
-Another useful form:
+*Another useful form:*
 Let $r \in \Sigma'$ be the number of ramification points, and $b$ the number of branch points, i.e. their images in $\Sigma$.
 Then
 
