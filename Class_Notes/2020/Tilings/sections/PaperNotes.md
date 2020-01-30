@@ -151,8 +151,5 @@ If $M$ is a smooth manifold, then $\omega$ has a global section.
 Interesting aside: a Calabi-Yau is a manifold with a nowhere vanishing holomorphic $n\dash$form, which implies that the canonical bundle admits a map to a trivial line bundle that is an isomorphism, i.e. the canonical bundle is trivial.
 
 *Exercise:*
-For $\Sigma_g$ a compact Riemann surface of genus $g$, the space of holomorphic sections of the canonical is a vector space (over $\CC$?) of dimension $g$.
-
-Fact:
-The dimension of the space of holomorphic differentials on $\Sigma_G$ is given by $\dim H^0(X; \Omega) = g$, the genus of the surface.
+For $\Sigma_g$ a compact Riemann surface of genus $g$, the dimension of the space of holomorphic sections of the canonical bundle, i.e. the space of holomorphic differentials on $\Sigma_G$, is given by $\dim H^0(X; \Omega) = g$ (the genus of the surface).
 Proof: use Riemann-Roch.
