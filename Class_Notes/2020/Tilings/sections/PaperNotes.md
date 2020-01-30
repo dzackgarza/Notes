@@ -69,7 +69,15 @@ Interesting aside: a Calabi-Yau is a manifold with a nowhere vanishing holomorph
 For $\Sigma_g$ a compact Riemann surface of genus $g$, the dimension of the space of holomorphic sections of the canonical bundle, i.e. the space of holomorphic differentials on $\Sigma_G$, is given by $\dim H^0(X; \Omega) = g$ (the genus of the surface).
 Proof: use Riemann-Roch.
 
+Classification of elliptic orbifolds of dimension 2:
+
+
+Classification of elliptic orbifolds of dimension 2:
+
+![Image](figures/2020-01-29-20:44.png)\
+
 # Notes on Paper
+# R
 
 > Reference: [https://arxiv.org/abs/math/0609392](https://arxiv.org/abs/math/0609392)
 
@@ -193,5 +201,4 @@ Acute triangles have at least 1, see Fagnano trajectory
 Yields a way to go from billiard trajectories to geodesics on a flat surface.
 General idea: glue two copies of the billiard table along the edge to get a flat sphere; then paths lift to geodesics.
 Such surfaces are not "very flat", i.e. they have nontrivial linear holonomy.
-
 
