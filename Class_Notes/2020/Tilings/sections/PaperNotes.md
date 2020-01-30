@@ -1,3 +1,11 @@
+References:
+
+- Alex Eskin, Andrei Okounkov, [Asymptotics of numbers of branched coverings of a torus and volumes of moduli spaces of holomorphic differentials](https://arxiv.org/abs/math/0006171)
+- Esk. Ok 2001 Branched Covers of Torus, and 2005 for half-translation surfaces
+- Elliptic orbifolds, E. 2017
+- 1-cylinder surfaces
+- "One Cylinder Surfaces", Delecroix, Goujard, Zovrch, Zograf. See Phil for appendix.
+
 # Notes on Paper
 
 > Reference: [https://arxiv.org/abs/math/0609392](https://arxiv.org/abs/math/0609392)
