@@ -1,5 +1,5 @@
 ---
- title: Full Notes
+title: Tilings 
 ---
 
 !include sections/PaperNotes.md
