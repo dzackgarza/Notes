@@ -77,6 +77,9 @@ Define $(n_1, \cdots; m_1, \cdots)$ as the *profile*, where $n_i$ are *elliptic*
 
 ![Image](figures/2020-01-29-20:44.png)\
 
+
+Conformal (or equivalently complex) structures on a genus $g$ surface form a moduli space $\MM_g$ of dimension $3g-3$ for $g > 1$.
+
 # Notes on Paper
 # R
 
