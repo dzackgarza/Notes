@@ -39,10 +39,6 @@ Then
 .\end{align*}
 
 
-\begin{align*}
-
-.\end{align*}
-
 
 # Notes on Paper
 
