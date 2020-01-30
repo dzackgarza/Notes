@@ -111,7 +111,7 @@ General (wildly open) problem:
 This remains unsolved for $S^2$ with 3 singularities (equivalent to a certain billiards problem). 
 It is not even known if any flat sphere admits a single closed geodesic.
 
-Flat surfaces have nontrivial holonomy, which makes them resemble Riemannian manifolds more than flat torii.
+Flat surfaces have nontrivial holonomy, which makes them resemble Riemannian manifolds more than flat tori.
 
 If we take the surface and puncture the conical points, it is locally isometric to the punctured Euclidean plane.
 This allows a notion of parallel transport of tangent vectors.
