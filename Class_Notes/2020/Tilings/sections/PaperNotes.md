@@ -28,6 +28,14 @@ If $\pi: \Sigma \to \Sigma'$ is a ramified covering map of degree $N$, then
 \chi(\Sigma') = N \chi(\Sigma) - \sum (e_p - 1) \quad\text{ i.e. } 2 g(\Sigma') - 2=  N(2g(\Sigma) - 2)  + \sum (e_p - 1)
 .\end{align*}
 
+Another useful form:
+Let $r \in \Sigma'$ be the number of ramification points, and $b$ the number of branch points, i.e. their images in $\Sigma$.
+Then
+
+\begin{align*}
+\chi(\Sigma') = N(\chi(\Sigma) - b) + r
+.\end{align*}
+
 
 \begin{align*}
 
