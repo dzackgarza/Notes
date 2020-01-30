@@ -85,6 +85,13 @@ Let $\alpha$ be any partition of $2g-2$, and $\mch(\alpha)$ the moduli space of 
 Letting $\mch$ be the moduli space of all abelian differentials on Riemann surfaces of genus $g$ is stratified by $\mch(\alpha)$ as $\alpha$ ranges over all partitions.
 For flat tori, $\mch = \GL_+(2, \RR)/\SL(2, \ZZ)$.
 
+For $\Sigma_g$ a Riemann surface, there is a formula relating the degrees of the zeros of a holomorphic 1-form to the genus:
+
+\begin{align*}
+\sum d_j = 2g-2
+.\end{align*}
+
+
 
 # Notes on Paper
 
