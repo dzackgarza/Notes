@@ -13,6 +13,9 @@ A map $\pi: \Sigma \to \Sigma'$ of Riemann surfaces is said to be *ramified* at 
 Fact:
 \vector \beta(\Sigma_g) = [1, 2g, 1, 0, \cdots]$ and $\chi(\Sigma) = 2-2g$.
 
+Fact:
+If $\pi$ is an unramified covering map of degree $n$, then $\chi(\Sigma') = n\chi(\Sigma)$.
+
 \begin{align*}
 
 .\end{align*}
