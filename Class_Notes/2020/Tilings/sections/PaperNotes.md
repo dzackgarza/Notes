@@ -87,7 +87,6 @@ For flat tori, $\mch = \Gl_+(2, \RR)/\Sl(2, \ZZ)$.
 
 
 # Notes on Paper
-# R
 
 > Reference: [https://arxiv.org/abs/math/0609392](https://arxiv.org/abs/math/0609392)
 
