@@ -80,6 +80,9 @@ Define $(n_1, \cdots; m_1, \cdots)$ as the *profile*, where $n_i$ are *elliptic*
 
 Conformal (or equivalently complex) structures on a genus $g$ surface form a moduli space $\MM_g$ of dimension $3g-3$ for $g > 1$.
 
+Let $\alpha$ be any partition of $2g-2$, and $\mch(\alpha)$ the moduli space of pairs $(\Sigma_g, \omega)$ where $\Sigma_g$ is a Riemann surface of genus $g$ and $\omega$ is a holomorphic 1-form (Abelian differential) on $M$ with the orders of its zeros given by $\alpha$.
+
+
 # Notes on Paper
 # R
 
