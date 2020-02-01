@@ -6,13 +6,13 @@
 - Alex Eskin, Andrei Okounkov, [Asymptotics of numbers of branched coverings of a torus and volumes of moduli spaces of holomorphic differentials](https://arxiv.org/abs/math/0006171)
 - Alex Eskin, Howard Masur, Anton Zorich, [Moduli Spaces of Abelian Differentials: The Principal Boundary, Counting Problems and the Siegel--Veech Constants
 ](https://arxiv.org/abs/math/0202134)
-- Engel, [Hurwitz Theory of Elliptic Orbifolds, I](https://arxiv.org/abs/1706.06738)
-- Engel, [Hurwitz Theory of Elliptic Orbifolds, II](https://arxiv.org/abs/1809.07434)
-- 1-cylinder surfaces
+- Alex Eskin, Andrei Okounkov, [Pillowcases and quasimodular forms](https://arxiv.org/abs/math/0505545)
 - Vincent Delecroix, Elise Goujard, Peter Zograf, Anton Zorich, [Contribution of one-cylinder square-tiled surfaces to Masur-Veech volumes](https://arxiv.org/abs/1903.10904)
   - See Phil for appendix! 
+- Engel, [Hurwitz Theory of Elliptic Orbifolds, I](https://arxiv.org/abs/1706.06738)
+- Engel, [Hurwitz Theory of Elliptic Orbifolds, II](https://arxiv.org/abs/1809.07434)
 
-***Definition:***
+**Definition:**
 A map $\pi: \Sigma \to \Sigma'$ of Riemann surfaces is said to be *ramified* at a point $p\in \Sigma'$ iff in local charts $\pi$ has the form $z\mapsto z^n$ for some $n>1$.
 
 > I.e. all points in a punctured neighborhood of $\pi(p)$ have $n$ preimages.
@@ -55,7 +55,7 @@ w = w(z_1, \cdots, z_n) dz_1 \wedge \cdots \wedge dz_n
 for some holomorphic function $w: \CC^n \to ?$.
 
 **Canonical Bundle:**
-Given a complex manifold $M$, we can define the tangent bundle $\CC^n \to TM \to M$ and the cotangent bundle $C^n \to T\dual M \to M$, which we'll just denote $T\dual M$.
+Given a complex manifold $M$, we can define the tangent bundle $\CC^n \to TM \to M$ and the cotangent bundle $\CC^n \to T\dual M \to M$, which we'll just denote $T\dual M$.
 Then the canonical bundle is the bundle $\CC\to \Lambda^n T\dual M \to M?$, denoted by $\omega$, obtained by taking the $n$th exterior power.
 
 It is a theorem that the fibers are in fact complex lines $\CC^1$.
@@ -69,9 +69,6 @@ Interesting aside: a Calabi-Yau is a manifold with a nowhere vanishing holomorph
 *Exercise:*
 For $\Sigma_g$ a compact Riemann surface of genus $g$, the dimension of the space of holomorphic sections of the canonical bundle, i.e. the space of holomorphic differentials on $\Sigma_G$, is given by $\dim H^0(X; \Omega) = g$ (the genus of the surface).
 Proof: use Riemann-Roch.
-
-Classification of elliptic orbifolds of dimension 2:
-
 
 Classification of elliptic orbifolds of dimension 2:
 Define $(n_1, \cdots; m_1, \cdots)$ as the *profile*, where $n_i$ are *elliptic* points (locally look like quotient by $\ZZ/n\ZZ$), and $m_i$ are *corner reflectors* (locally look like quotient by a dihedral group):

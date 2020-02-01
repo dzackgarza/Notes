@@ -1,5 +1,5 @@
 ---
- title: Full Notes
+ title: Category O
 ---
 
 
@@ -18,4 +18,6 @@
 !include sections/2020-01-24.md
 
 !include sections/2020-01-27.md
+
+!include sections/2020-01-31.md
 
