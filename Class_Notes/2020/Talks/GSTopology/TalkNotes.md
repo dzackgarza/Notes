@@ -55,6 +55,9 @@ A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalen
 Example:
 As in example 1, take $\RR^3 = \disjoint_{t\in \RR} ~t + H_{xy}$ where $H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat z=0}$ is the $xy\dash$plane and $t+ H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat t = z}$ are the vertical translates.
 
+Definition:
+$(M, \xi)$ is a contact manifold iff 
+
 General open problem:
 Does every triangular billiards admit a periodic orbit?
 
