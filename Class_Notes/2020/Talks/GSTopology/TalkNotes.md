@@ -29,8 +29,8 @@ Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$
 Note that this is the kernel of a tangent covector at every point, thus the kernel of a section of the cotangent bundle -- i.e. a 1-form. This is a prototypical feature.
 
 Example:
-For $M=\RR^3$, define $\omega = dz + xdy \in \Omega^1(\RR^3)$.
+For $M=\RR^3$, write $T\dual \RR^3 = \spanof_\RR\theset{dx, dy, dz}$, and take $\omega = dz + xdy \in \Omega^1(\RR^3)$.
 This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes that look like this:
 
-
+![](2020-02-01-22-34-56.png)
 
