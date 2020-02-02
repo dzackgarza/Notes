@@ -1,6 +1,8 @@
 Convention: 
 All manifolds discussed will be smooth, real, Hausdorff, second-countable, connected, not necessarily closed/compact, possibly with boundary.
 
+# Contact Forms and Foliations
+
 Goal #1:
 Understand foliations and their relation to contact structures.
 
@@ -66,6 +68,8 @@ Contact manifolds are cylinder-like boundaries of symplectic manifolds; namely i
 
 Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector field is the restriction to $M \cross \theset{0}$.
 
+# Orbits
+
 General open problem:
 Does every triangular billiards admit a periodic orbit?
 
@@ -76,6 +80,7 @@ Answer (1775): Yes for acute triangles:
 For arbitrary triangles: unknown!
 
 Historically, the study of periodic orbits motivated the definition on contact structures.
+
 
 Theorem (1987):
 Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
