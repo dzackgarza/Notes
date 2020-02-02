@@ -1,3 +1,6 @@
+Goal #1:
+Understand foliations and their relation to contact structures.
+
 Definition:
 A *hyperplane* field $\xi$ is a sub-bundle of the tangent bundle $\RR^n \to TM \to M$.
 
