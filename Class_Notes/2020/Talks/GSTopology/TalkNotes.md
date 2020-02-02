@@ -67,3 +67,4 @@ For arbitrary triangles: unknown!
 Historically, the study of periodic orbits motivated the definition on contact structures.
 
 Theorem:
+Every contact-type
