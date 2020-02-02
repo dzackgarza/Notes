@@ -47,4 +47,4 @@ These are important because of their ties to *foliations*.
 Definition (Foliation):
 A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalent conditions:
 
-1. 
+1. A family of embedded surfaces $\Sigma_i \injects M$ such that $M = \disjoint_i \Sigma_i$.
