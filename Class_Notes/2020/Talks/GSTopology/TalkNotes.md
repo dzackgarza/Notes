@@ -73,4 +73,5 @@ Conjecture (Weinstein, 1978):
 Let $(M, \lambda)$ be a closed contact manifold with a Reeb vector field $X$ and $H^1(M; \RR) = 0$. Then $X$ admits a periodic orbit.
 
 Theorem (Weinstein, Dimension 3, Overtwisted. 1993):
-Let $(M, \lambda)$ be a closed contact 3-manifold where 
+Let $(M, \lambda)$ be a closed contact 3-manifold where $\lambda$ is overtwisted. 
+Then the Reeb vector field $X$ 
