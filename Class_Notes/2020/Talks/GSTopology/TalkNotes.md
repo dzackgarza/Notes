@@ -18,6 +18,6 @@ A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to 
 
 Example:
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
-Write $TM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ and define $\xi$ by the condition $dx_3 = 0$.
+Write $TM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ locally and define $\xi$ by the condition $dx_3 = 0$.
 
-Note that if we do this
+Note that if we promote this to a bundle, 
