@@ -64,7 +64,7 @@ There is a canonical vector field on every contact manifold: the Reeb vector fie
 Remark:
 Contact manifolds are cylinder-like boundaries of symplectic manifolds; namely if $M$ is contact then we can pick any $C^1$ increasing function $f: \RR \to \RR^+$  (e.g. $f(t) = e^t$) and obtain an exact symplectic for $\omega = d(f\lambda)$ on $M_C \definedas M \cross \RR$.
 
-Any such $f$ induces a Hamiltonian vector field on $M_C$
+Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector field is the restriction to $M \cross \theset{0}$.
 
 General open problem:
 Does every triangular billiards admit a periodic orbit?
