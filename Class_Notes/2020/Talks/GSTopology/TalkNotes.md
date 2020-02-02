@@ -20,5 +20,7 @@ Loose Example:
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
 Write $TM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ locally and define $\xi$ by the condition $dx_3 = 0$.
 
+
+
 > Note: want to show that this lifts to a differential 1-form on $M$, but how can it be written?
 
