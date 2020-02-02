@@ -2,7 +2,7 @@ Goal #1:
 Understand foliations and their relation to contact structures.
 
 Definition:
-A *hyperplane* field $\xi$ is a sub-bundle of the tangent bundle $\RR^n \to TM \to M$.
+A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$
 
 Example:
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
