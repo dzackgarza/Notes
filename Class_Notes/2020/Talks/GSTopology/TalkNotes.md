@@ -41,3 +41,5 @@ This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes tha
 ![](2020-02-01-22-34-56.png)
 
 Note that this has a more twisted structure, which is what geometrically makes it contact -- no embedded (hyper) surface in $\RR^3$ can have an open subset $U$ such that $\xi$ is tangent to $p$ for every $p\in U$.
+
+These are important because of their ties to *foliations* (to be defined).
