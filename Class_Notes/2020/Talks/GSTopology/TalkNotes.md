@@ -42,4 +42,9 @@ This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes tha
 
 Note that this has a more twisted structure, which is what geometrically makes it contact -- no embedded (hyper) surface in $\RR^3$ can have an open subset $U$ such that $\xi$ is tangent to $p$ for every $p\in U$.
 
-These are important because of their ties to *foliations* (to be defined).
+These are important because of their ties to *foliations*.
+
+Definition (Foliation):
+A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalent conditions:
+
+1. 
