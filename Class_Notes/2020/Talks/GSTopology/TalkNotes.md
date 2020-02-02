@@ -1,3 +1,6 @@
+Convention: 
+All manifolds discussed will be smooth, real, Hausdorff, second-countable, not necessarily closed/compact.
+
 Goal #1:
 Understand foliations and their relation to contact structures.
 
