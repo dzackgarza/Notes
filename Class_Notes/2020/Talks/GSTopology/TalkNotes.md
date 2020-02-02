@@ -11,6 +11,7 @@ Since $T_p M$ is a vector space, we can consider its dual $T_p\dual M$, and simi
 Recall that $T_p\dual M = \spanof_\RR\theset{dx_i}$.
 
 Recall that a section of $TM$ is a vector field, and a section of $T\dual M$ is a 1-form.
+More generally, $
 
 Definition:
 A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
