@@ -63,3 +63,5 @@ Answer (1775): Yes for acute triangles:
 ![](2020-02-01-23-59-05.png)
 
 For arbitrary triangles: unknown!
+
+Historically, the study of periodic orbits motivated the definition on contact structures.
