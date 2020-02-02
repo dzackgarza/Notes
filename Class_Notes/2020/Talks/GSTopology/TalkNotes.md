@@ -77,4 +77,4 @@ Let $(M, \xi)$ be a closed contact 3-manifold where $\lambda$ is overtwisted.
 Then the Reeb vector field $X$ admits a periodic orbit.
 
 Definition:
-$(M, \xi)$ is overtwisted iff there exists an embedded disc $D \mapsvia{i} M$ such that $T(\bd D)_p \subset \xi_p$ pointwise for all $p \in \d 
+$(M, \xi)$ is overtwisted iff there exists an embedded disc $D^n \mapsvia{i} M$ such that $T(\bd D^n)_p \subset \xi_p$ pointwise for all $p \in \bd D^n$
