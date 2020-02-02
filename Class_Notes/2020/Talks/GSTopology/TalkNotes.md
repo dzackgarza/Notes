@@ -30,5 +30,7 @@ Note that this is the kernel of a tangent covector at every point, thus the kern
 
 Example:
 For $M=\RR^3$, define $\omega = dz + xdy \in \Omega^1(\RR^3)$.
-This is the "standard contact structure" on $\RR^3$.
+This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes that look like this:
+
+
 
