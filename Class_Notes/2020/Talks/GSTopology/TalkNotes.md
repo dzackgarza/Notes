@@ -17,6 +17,12 @@ Definition:
 A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
 
 Example:
+Take $M=S^2$, so we have $\RR^2 \to TS^2 \to S^2$.
+The tangent spaces are planes, and codimension 1 spaces are lines:
+
+
+
+Example:
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
 Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T_p\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ locally and define $\xi$ by the condition $dx_3 = 0$.
 
