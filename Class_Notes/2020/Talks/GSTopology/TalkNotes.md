@@ -72,4 +72,5 @@ Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ 
 Conjecture (Weinstein, 1978):
 Let $M$ be a closed contact manifold with a Reeb vector field $X$ and $H^1(M; \RR) = 0$. Then $X$ admits a periodic orbit.
 
-Theorem (1993):
+Theorem (Weinstein, Dimension 3, Overtwisted. 1993):
+Let $M$ be a 3-dimensional contact manifold
