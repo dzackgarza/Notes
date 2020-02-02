@@ -74,4 +74,4 @@ Let $(M, \lambda)$ be a closed contact manifold with a Reeb vector field $X$ and
 
 Theorem (Weinstein, Dimension 3, Overtwisted. 1993):
 Let $(M, \lambda)$ be a closed contact 3-manifold where $\lambda$ is overtwisted. 
-Then the Reeb vector field $X$ 
+Then the Reeb vector field $X$ admits a periodic orbit.
