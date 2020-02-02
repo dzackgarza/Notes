@@ -29,5 +29,5 @@ Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$
 Note that this is the kernel of a tangent covector at every point, thus the kernel of a section of the cotangent bundle -- i.e. a 1-form. This is a prototypical feature.
 
 Example:
-For $M=\RR^3$
+For $M=\RR^3$, define $\alpha 
 
