@@ -70,11 +70,11 @@ Theorem (1987):
 Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
 
 Conjecture (Weinstein, 1978):
-Let $(M, \lambda)$ be a closed contact manifold with a Reeb vector field $X$ and $H^1(M; \RR) = 0$. Then $X$ admits a periodic orbit.
+Let $(M, \xi)$ be a closed contact manifold with a Reeb vector field $X$ and $H^1(M; \RR) = 0$. Then $X$ admits a periodic orbit.
 
 Theorem (Weinstein, Dimension 3, Overtwisted. 1993):
-Let $(M, \lambda)$ be a closed contact 3-manifold where $\lambda$ is overtwisted. 
+Let $(M, \xi)$ be a closed contact 3-manifold where $\lambda$ is overtwisted. 
 Then the Reeb vector field $X$ admits a periodic orbit.
 
 Definition:
-$\lambda$ is overtwisted
+$\xi$ is overtwisted iff 
