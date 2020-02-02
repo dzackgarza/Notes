@@ -62,7 +62,7 @@ Remark:
 There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$. (?)
 
 Remark:
-Contact manifolds look like boundaries of symplectic manifolds 
+Contact manifolds are cylinder-like boundaries of symplectic manifolds; namely if $M$ is contact then 
 
 General open problem:
 Does every triangular billiards admit a periodic orbit?
