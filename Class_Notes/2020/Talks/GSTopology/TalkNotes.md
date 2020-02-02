@@ -59,3 +59,7 @@ General open problem:
 Does every triangular billiards admit a periodic orbit?
 
 Answer (1775): Yes for acute triangles:
+
+![](2020-02-01-23-59-05.png)
+
+For arbitrary triangles: unknown!
