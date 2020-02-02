@@ -4,8 +4,9 @@ All manifolds discussed will be smooth, real, Hausdorff, second-countable, conne
 Goal #1:
 Understand foliations and their relation to contact structures.
 
-Recall the geometric definition of the tangent bundle $TM = \disjoint_{p\in M} T_pM$. 
-Note that $T_p M
+Recall the geometric definition of the tangent bundle $TM = \disjoint_{p\in M} T_pM$, which fits into the vector bundle $\RR^n \to TM \to M$ so $T_p M \cong \RR^n$.
+
+Since $T_p M$ is a vector space, we can consider its dual $T_p\dual M$, and similarly the cotangent bundle $\RR^n \to T\dual M \to M$.
 
 Definition:
 A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$
