@@ -66,6 +66,6 @@ For arbitrary triangles: unknown!
 
 Historically, the study of periodic orbits motivated the definition on contact structures.
 
-Theorem:
+Theorem (1987):
 Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
 
