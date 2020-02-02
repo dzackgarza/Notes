@@ -20,7 +20,7 @@ Example:
 Take $M=S^2$, so we have $\RR^2 \to TS^2 \to S^2$.
 The tangent spaces are planes, and codimension 1 spaces are lines:
 
-
+![](2020-02-01-23-22-51.png)
 
 Example:
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
