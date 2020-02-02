@@ -26,3 +26,8 @@ Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$
 
 > Note: want to show that this lifts to a differential 1-form on $M$, but how can it be written?
 
+Note that this is the kernel of a tangent covector at every point, thus the kernel of a section of the cotangent bundle -- i.e. a 1-form. This is a prototypical feature.
+
+Example:
+For $M=\RR^3$
+
