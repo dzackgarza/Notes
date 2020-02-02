@@ -57,3 +57,5 @@ As in example 1, take $\RR^3 = \disjoint_{t\in \RR} ~t + H_{xy}$ where $H_{xy} =
 
 General open problem:
 Does every triangular billiards admit a periodic orbit?
+
+Answer (1775)
