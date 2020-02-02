@@ -40,4 +40,4 @@ This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes tha
 
 ![](2020-02-01-22-34-56.png)
 
-Note that this has a more twisted structure, which is what geometrically makes it contact.
+Note that this has a more twisted structure, which is what geometrically makes it contact -- no embedded surface in $\RR^3$ can have an open subset
