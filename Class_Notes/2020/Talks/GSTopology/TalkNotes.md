@@ -48,4 +48,4 @@ Definition (Foliation):
 A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalent conditions:
 
 1. A family of embedded surfaces $\Sigma_i \injects M$ such that $M = \disjoint_i \Sigma_i$ uniquely.
-2. 
+2. $\xi$ is locally diffeomorphic to the horizontal hyperplane field $dx_n = 0$.
