@@ -5,8 +5,10 @@ Goal #1:
 Understand foliations and their relation to contact structures.
 
 Recall the geometric definition of the tangent bundle $TM = \disjoint_{p\in M} T_pM$, which fits into the vector bundle $\RR^n \to TM \to M$ so $T_p M \cong \RR^n$.
+Recall that $T_p M = \spanof_\RR\theset{\partial x_i}$
 
 Since $T_p M$ is a vector space, we can consider its dual $T_p\dual M$, and similarly the cotangent bundle $\RR^n \to T\dual M \to M$.
+Recall that $T_p\dual M = \spanof_\RR\theset{dx_i}$.
 
 Recall that a section of $TM$ is a vector field, and a section of $T\dual M$ is a 1-form.
 
