@@ -86,6 +86,8 @@ f: (D^2)^\circ \cross \RR &\to \RR \\
 .\end{align*}
 
 
+
+
 *Remark:*
 A foliation $\theset{\Sigma_i}$ induces a decomposition on the tangent bundle of $M$, namely $TM = T(\Sigma_i) \oplus \xi$ (? check) where $\xi$ is a line bundle everywhere transverse to the $\Sigma_i$. 
 In this situation, we say $\theset{\Sigma_i}$ is *transversely orientable*.
