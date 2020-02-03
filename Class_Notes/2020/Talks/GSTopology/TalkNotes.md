@@ -1,7 +1,7 @@
 Convention: 
 All manifolds discussed will be smooth, real, Hausdorff, second-countable, connected, not necessarily closed/compact, possibly with boundary.
 
-# Contact Forms and Foliations
+# Hyperplane Fields
 
 Goal #1:
 Understand foliations and their relation to contact structures.
@@ -46,6 +46,8 @@ Note that this has a more twisted structure, which is what geometrically makes i
 
 These are important because of their ties to *foliations*.
 
+# Foliations
+
 **Definition (Foliation):**
 A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalent conditions:
 
@@ -81,6 +83,8 @@ In this situation, we say $\theset{\Sigma_i}$ is *transversely orientable*.
 Whenever $\theset{\Sigma_i}$ is transversely orientable, it can be associated uniquely to a nonsingular 1-form $\omega$.
 Then given an $f: M\to \RR^2$ (check dimension), we can study the set of critical points $S = \theset{p\in M \suchthat \omega_p \wedge df_p = 0}$.
 
+# Contact Structures
+
 **Definition:**
 $(M^{2n+1}, \xi)$ is a contact manifold iff $\xi$ is a hyperplane distribution given by $\ker \lambda \in \Omega^1(M)$ where $\lambda \wedge (d\lambda)^n \neq 0\in \Omega^{2n+1}(M)$.
 
@@ -106,17 +110,17 @@ For arbitrary triangles: unknown!
 Historically, the study of periodic orbits motivated the definition on contact structures.
 
 
-Theorem (1987):
+**Theorem (1987):**
 Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
 
-Conjecture (Weinstein, 1978):
+**Conjecture (Weinstein, 1978):**
 Let $(M, \xi)$ be a closed contact manifold with a Reeb vector field $X$ and $H^1(M; \RR) = 0$. Then $X$ admits a periodic orbit.
 
-Theorem (Weinstein, Dimension 3, Overtwisted. 1993):
+**Theorem (Weinstein, Dimension 3, Overtwisted. 1993):**
 Let $(M, \xi)$ be a closed contact 3-manifold where $\lambda$ is overtwisted. 
 Then the Reeb vector field $X$ admits a periodic orbit.
 
-Definition:
+**Definition:**
 $(M, \xi)$ is overtwisted iff there exists an embedded disc $D^n \mapsvia{i} M$ such that $T(\bd D^n)_p \subset \xi_p$ pointwise for all $p \in \bd D^n$ and $TD^n_p$ is transverse to $\xi$ for every $p\in  (D^n)^\circ$.
 
 Intuition: ?
