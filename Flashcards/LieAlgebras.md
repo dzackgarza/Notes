@@ -34,23 +34,6 @@ lie algebra
 
 ---
 
-$$
-Front
-$$
-
-%
-
-Desc
-
-$$
-Back
-$$
-
-%
-
-topics
-
----
 
 
 
