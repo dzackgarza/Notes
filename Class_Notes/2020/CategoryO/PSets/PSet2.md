@@ -28,3 +28,7 @@ Questions
     -  Example: consider $\lambda = \mu = 0$. Then $M = M(0) \tensor M(0)$ and $N_{-2m}$ has dimension $m+1$ for every $m\in \ZZ^+$.
 
 # Humphreys 1.9
+
+Proposition:
+Let $\psi: Z(\lieg) \to S(\lieh)$ be the Harish-Chandra homomorphism.
+Then $\psi$ is independent of the choice of a simple system $\Delta$ in $\Phi$.
