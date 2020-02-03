@@ -21,5 +21,7 @@ Useful facts:
 Questions
 
 - What is the tensor product over? Guess: $\tensor_\CC$.
+- MSE: the product is no longer finitely generated.
+  -  Consider dimensions of weight spaces -- eventually constant.
 
 # Humphreys 1.9
