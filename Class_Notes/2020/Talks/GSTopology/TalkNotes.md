@@ -64,6 +64,9 @@ The "slices" of the foliation (here: planes) are referred to as the *leaves* of 
 *Example*:
 Let $T = \RR^2/\ZZ^2$ be a flat torus and $q$ any irrational number; then lines $L_q$ of slope $q$ foliate $T$.
 
+*Example:*
+Any nonsingular vector field 
+
 Why are foliations important?
 
 - Arise when you have a PDE (IVP or BVP) defined on an $n\dash$manifold $M$, with some initial/boundary conditions defined on an embedded surface, and you want to find the time evolution of that system (moving you through leaves of the foliation, think of spacetime being foliated by space-like hyperplanes in General Relativity).
