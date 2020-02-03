@@ -100,6 +100,11 @@ Then given an $f: M\to \RR^2$ (check dimension), we can study the set of critica
 *Remark:*
 A specific type of foliation that comes up in modern research are *taut* foliations, which are codimension 1 foliations $\mathcal{F} = \theset{L_b}$ for which for every leaf $L_b$ there is a closed loop $\gamma: S^1 \to M$ intersecting $L_b$ with $\gamma$ everywhere transverse to $\mathcal{F}$.
 
+**Theorem:**
+TFAE:
+
+1. 
+
 # Contact Structures
 
 **Open Problem:**
