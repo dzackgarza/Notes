@@ -37,15 +37,15 @@ lie algebra
 
 
 $$
-Front
+\Lambda_r
 $$
 
 %
 
-Desc
+The (integral) **root lattice**.
 
 $$
-Back
+\Lambda_r = \mathrm{span}_{\mathbb{Z}}
 $$
 
 %
