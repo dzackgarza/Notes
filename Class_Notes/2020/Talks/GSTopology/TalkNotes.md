@@ -98,7 +98,7 @@ Whenever $\theset{\Sigma_i}$ is transversely orientable, it can be associated un
 Then given an $f: M\to \RR^2$ (check dimension), we can study the set of critical points $S = \theset{p\in M \suchthat \omega_p \wedge df_p = 0}$.
 
 *Remark:*
-A specific type of foliation that comes up in modern research are *taut* foliations, which are those for which for every leaf $L_b$ there is a closed loop $\gamma: S^1 \to M$ intersecting $L_b$
+A specific type of foliation that comes up in modern research are *taut* foliations, which are codimension 1 foliations $\mathcal{F} = \theset{L_b}$ for which for every leaf $L_b$ there is a closed loop $\gamma: S^1 \to M$ intersecting $L_b$ with $\gamma$ everywhere transverse to $\mathcal{F}$.
 
 # Contact Structures
 
