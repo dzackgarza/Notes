@@ -4,7 +4,7 @@ $\Phi$
 
 The root system
 
-$a$
+$\alpha \in \Phi$
 
 %
 
