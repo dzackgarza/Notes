@@ -67,6 +67,9 @@ Let $T = \RR^2/\ZZ^2$ be a flat torus and $q$ any irrational number; then lines 
 *Example:*
 Any nonsingular vector field $X$ on a closed manifold $M$ defines a foliation; each leaf is the orbit of a point under the flow of $X$.
 
+*Example:*
+Let $G$ a Lie group act on
+
 Why are foliations important?
 
 - Arise when you have a PDE (IVP or BVP) defined on an $n\dash$manifold $M$, with some initial/boundary conditions defined on an embedded surface, and you want to find the time evolution of that system (moving you through leaves of the foliation, think of spacetime being foliated by space-like hyperplanes in General Relativity).
