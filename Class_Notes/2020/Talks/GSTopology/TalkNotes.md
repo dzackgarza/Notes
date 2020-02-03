@@ -70,7 +70,7 @@ Why are foliations important?
 
 *Remark:*
 A foliation $\theset{\Sigma_i}$ induces a decomposition on the tangent bundle of $M$, namely $TM = T(\Sigma_i) \oplus \xi$ (? check) where $\xi$ is a line bundle everywhere transverse to the $\Sigma_i$. 
-We say $\theset{\Sigma_i}$ is *transversely orientable*.
+In this situation, we say $\theset{\Sigma_i}$ is *transversely orientable*.
 Whenever $\theset{\Sigma_i}$ is transversely orientable, it can be associated uniquely to a nonsingular 1-form $\omega$.
 Then given an $f: M\to \RR^2$ (check dimension), we can study the set of critical points $S = \theset{p\in M \suchthat \omega_p \wedge df_p = 0}$.
 
