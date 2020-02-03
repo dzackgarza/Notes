@@ -20,7 +20,9 @@ lie algebra
 
 ---
 
-$\mathfrak{g}_\alpha$
+$$
+\mathfrak{g}_\alpha
+$$
 
 %
 
