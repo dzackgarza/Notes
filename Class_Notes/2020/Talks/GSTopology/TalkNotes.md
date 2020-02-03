@@ -61,7 +61,7 @@ The "slices" of the foliation (here: planes) are referred to as the *leaves* of 
 
 Why are foliations important?
 
-- Arise when you have a PDE (IVP or BVP) defined on a single hypersurface $\Sigma$
+- Arise when you have a PDE (IVP or BVP) defined on an $n\dash$manifold $M$, 
 
 Definition:
 $(M^{2n+1}, \xi)$ is a contact manifold iff $\xi$ is a hyperplane distribution given by $\ker \lambda \in \Omega^a(M)$ where $\lambda \wedge (d\lambda)^n \neq 0\in \Omega^{2n+1}(M)$.
