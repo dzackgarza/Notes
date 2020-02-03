@@ -55,6 +55,8 @@ A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalen
 > Note: the foliation is usually referred to by the collection $\Sigma_i$.
 > Can also think of this as a smooth manifold where transition maps "preserve hyperplanes", i.e. they are functions of only one variable.
 
+The "slices" given by the surfaces are referred to as *leaves*.
+
 *Example / Definition:*
 As in example 2, take $\RR^3 = \disjoint_{t\in \RR} ~t + H_{xy}$ where $H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat z=0}$ is the $xy\dash$plane and $t+ H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat t = z}$ are the vertical translates.
 
