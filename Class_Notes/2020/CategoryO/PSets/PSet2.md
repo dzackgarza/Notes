@@ -24,6 +24,7 @@ Questions
 - MSE: the product is no longer finitely generated.
   -  Consider dimensions of weight spaces -- eventually constant.
   -  If $\wt{v} = \lambda$ and $\wt(u) = \mu$, then $\wt(u\tensor v) = \lambda + \mu$.
-  -  Consider a weight space $M_\gamma$ of $M$. This must have the form $\bigoplus_{a + b = \gamma} M_a \tensor_\CC M_b$.
+  -  Consider a weight space $N_\gamma$ of $M$. This must have the form $\bigoplus_{a + b = \gamma} M_a \tensor_\CC M_b$.
+    -  Example: consider $\lambda = \mu = 0$. Then $M = M(0) \tensor M(0)$ and $N_{-2m}$ has dimension $m+1$ for every $m\in \ZZ^+$.
 
 # Humphreys 1.9
