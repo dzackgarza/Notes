@@ -13,5 +13,6 @@ Useful facts:
 - For any $\lambda \in \lieh\dual$, $\CC_\lambda$ is a 1-dimensional $\lieb\dash$bimodule with a trivial $\lien\dash$action.
 - $M(\lambda) = \ind_\lieb^\lieg \CC_\lambda = U(\lieg)\tensor_{U(\lieb)} \CC_\lambda$ as a left $U(\lieg)\dash$module.
 - $M(\lambda) = U(\lien^-) \tensor \CC_\lambda$ as a left $U(\lien^-)\dash$module.
+- $M(\lambda)$ is generated as a $U(\lieg)\dash$module by the maximal vector $v^+ = 1\tensor 1$.
 
 # Humphreys 1.9
