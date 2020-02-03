@@ -82,7 +82,7 @@ Whenever $\theset{\Sigma_i}$ is transversely orientable, it can be associated un
 Then given an $f: M\to \RR^2$ (check dimension), we can study the set of critical points $S = \theset{p\in M \suchthat \omega_p \wedge df_p = 0}$.
 
 **Definition:**
-$(M^{2n+1}, \xi)$ is a contact manifold iff $\xi$ is a hyperplane distribution given by $\ker \lambda \in \Omega^a(M)$ where $\lambda \wedge (d\lambda)^n \neq 0\in \Omega^{2n+1}(M)$.
+$(M^{2n+1}, \xi)$ is a contact manifold iff $\xi$ is a hyperplane distribution given by $\ker \lambda \in \Omega^1(M)$ where $\lambda \wedge (d\lambda)^n \neq 0\in \Omega^{2n+1}(M)$.
 
 Remark:
 There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$. (?)
