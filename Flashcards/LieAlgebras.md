@@ -11,6 +11,7 @@ $$
 $$
 
 - Span a Euclidean space $E$
+- 
 - $\alpha, c\alpha \in \Phi \implies c=-1$
 - \( s_\alpha \Phi \subseteq \Phi\) for all \( \alpha \)
 
