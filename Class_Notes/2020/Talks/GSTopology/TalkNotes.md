@@ -61,7 +61,8 @@ As in example 2, take $\RR^3 = \disjoint_{t\in \RR} ~t + H_{xy}$ where $H_{xy} =
 This yields a foliation of $\RR^3$ by planes.
 The "slices" of the foliation (here: planes) are referred to as the *leaves* of the foliation.
 
-> Note:
+*Example*:
+Let $T = \RR^2/\ZZ^2$ be a flat torus and $q$ any irrational number; then lines $L_q$ of slope $q$ foliate $T$.
 
 Why are foliations important?
 
