@@ -68,7 +68,7 @@ Let $T = \RR^2/\ZZ^2$ be a flat torus and $q$ any irrational number; then lines 
 Any nonsingular vector field $X$ on a closed manifold $M$ defines a foliation; each leaf is the orbit of a point under the flow of $X$.
 
 *Example:*
-Take $M$ closed, $G$ a connected Lie group acting locally freely (the stabilizer of a point is a discrete subgroup of $G$)
+Take $M$ closed, $G$ a connected Lie group acting locally freely (the stabilizer of a point is a discrete subgroup of $G$). Then again $M$ is foliated by orbits of points.
 
 Why are foliations important?
 
