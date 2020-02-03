@@ -85,6 +85,18 @@ Then given an $f: M\to \RR^2$ (check dimension), we can study the set of critica
 
 # Contact Structures
 
+**Open Problem:**
+Does every triangular billiards admit a periodic orbit?
+
+*Answer (1775):* 
+Yes for acute triangles:
+
+![](2020-02-01-23-59-05.png)
+
+For arbitrary triangles: unknown!
+
+Historically, the study of periodic orbits motivated the definition on contact structures.
+
 **Definition:**
 $(M^{2n+1}, \xi)$ is a contact manifold iff $\xi$ is a hyperplane distribution given by $\ker \lambda \in \Omega^1(M)$ where $\lambda \wedge (d\lambda)^n \neq 0\in \Omega^{2n+1}(M)$.
 
@@ -98,16 +110,7 @@ Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector fi
 
 # Orbits
 
-General open problem:
-Does every triangular billiards admit a periodic orbit?
 
-Answer (1775): Yes for acute triangles:
-
-![](2020-02-01-23-59-05.png)
-
-For arbitrary triangles: unknown!
-
-Historically, the study of periodic orbits motivated the definition on contact structures.
 
 
 **Theorem (1987):**
@@ -121,6 +124,6 @@ Let $(M, \xi)$ be a closed contact 3-manifold where $\lambda$ is overtwisted.
 Then the Reeb vector field $X$ admits a periodic orbit.
 
 **Definition:**
-$(M, \xi)$ is overtwisted iff there exists an embedded disc $D^n \mapsvia{i} M$ such that $T(\bd D^n)_p \subset \xi_p$ pointwise for all $p \in \bd D^n$ and $TD^n_p$ is transverse to $\xi$ for every $p\in  (D^n)^\circ$.
+$(M, \xi)$ is *overtwisted* iff there exists an embedded disc $D^n \mapsvia{i} M$ such that $T(\bd D^n)_p \subset \xi_p$ pointwise for all $p \in \bd D^n$ and $TD^n_p$ is transverse to $\xi$ for every $p\in  (D^n)^\circ$.
 
 Intuition: ?
