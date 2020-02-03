@@ -65,7 +65,7 @@ The "slices" of the foliation (here: planes) are referred to as the *leaves* of 
 Let $T = \RR^2/\ZZ^2$ be a flat torus and $q$ any irrational number; then lines $L_q$ of slope $q$ foliate $T$.
 
 *Example:*
-Any nonsingular vector field $X$ on a closed manifold $M$ defines a foliation
+Any nonsingular vector field $X$ on a closed manifold $M$ defines a foliation; each leaf is the orbit of a point under the flow of $X$.
 
 Why are foliations important?
 
