@@ -1,11 +1,13 @@
-Expected Value of \(f(x)\)
+$\Phi$
 
 %
 
-\[\mathbb{E}[f(x)] = \sum_x p(x)f(x)\]
+The root system
+
+$a$
 
 %
 
-math, probability
+lie algebra
 
 ---
