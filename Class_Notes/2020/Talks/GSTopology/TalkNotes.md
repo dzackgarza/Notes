@@ -86,7 +86,9 @@ f: (D^2)^\circ \cross \RR &\to \RR \\
 .\end{align*}
 
 Adding in a component $\bd D^2 \cross \RR \cong S^1 \cross \RR$ yields a foliation of $D^2 \cross \RR$.
-Then take a $\ZZ\dash$action where $z\actson (\vector x, t) = (\vector x, t+z)$; modding out by this action yields a solid torus
+Then take a $\ZZ\dash$action where $z\actson (\vector x, t) = (\vector x, t+z)$; modding out by this action yields a solid torus, which still has the above foliation.
+
+Do this to twice, gluing the two tori along their boundary to construct a copy of $S^3$, yields a foliation of $S^3$ where each leaf $L_b$ is not Hausdorff.
 
 
 *Remark:*
