@@ -20,6 +20,6 @@ Useful facts:
 
 Questions
 
-- What is the tensor product over?
+- What is the tensor product over? Guess: $\tensor_\CC$.
 
 # Humphreys 1.9
