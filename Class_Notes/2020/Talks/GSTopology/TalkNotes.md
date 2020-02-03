@@ -53,11 +53,15 @@ A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalen
 2. $\xi$ is locally diffeomorphic to the horizontal hyperplane field $dx_n = 0$.
 
 > Note: the foliation is usually referred to by the collection $\Sigma_i$.
+> Can also think of this as a smooth manifold where transition maps "preserve hyperp
 
 *Example / Definition:*
 As in example 2, take $\RR^3 = \disjoint_{t\in \RR} ~t + H_{xy}$ where $H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat z=0}$ is the $xy\dash$plane and $t+ H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat t = z}$ are the vertical translates.
+
 This yields a foliation of $\RR^3$ by planes.
 The "slices" of the foliation (here: planes) are referred to as the *leaves* of the foliation.
+
+> Note:
 
 Why are foliations important?
 
