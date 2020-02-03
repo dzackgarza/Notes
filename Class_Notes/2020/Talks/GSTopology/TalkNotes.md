@@ -82,7 +82,7 @@ Take $M$ closed, $G$ a connected Lie group acting locally freely (the stabilizer
 Define a map
 \begin{align*}
 f: (D^2)^\circ \cross \RR &\to \RR \\
-(\vector x, t) &\mapsto 
+(\vector x, t) &\mapsto e^{\frac{1}{1-\abs z}}
 .\end{align*}
 
 
