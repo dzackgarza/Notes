@@ -103,7 +103,9 @@ A specific type of foliation that comes up in modern research are *taut* foliati
 **Theorem:**
 TFAE:
 
-1. 
+1. $\mathcal{F}$ is a taut foliation.
+2. There is a flow transverse to $\mathcal{F}$ that preserves some volume form on $M$.
+3. 
 
 # Contact Structures
 
