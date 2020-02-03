@@ -151,4 +151,8 @@ Intuition: ?
 
 # Weinstein Surgery
 
+*General idea:* 
+Weinstein manifolds are symplectic manifolds that can be described by Morse-theoretic data.
+The level sets are contact manifolds, so we can attach handles to construct new contact manifolds from old.
+
 
