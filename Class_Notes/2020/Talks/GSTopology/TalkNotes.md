@@ -97,6 +97,9 @@ In this situation, we say $\theset{\Sigma_i}$ is *transversely orientable*.
 Whenever $\theset{\Sigma_i}$ is transversely orientable, it can be associated uniquely to a nonsingular 1-form $\omega$.
 Then given an $f: M\to \RR^2$ (check dimension), we can study the set of critical points $S = \theset{p\in M \suchthat \omega_p \wedge df_p = 0}$.
 
+*Remark:*
+A specific type of foliation that comes up in modern research are *taut* foliations
+
 # Contact Structures
 
 **Open Problem:**
