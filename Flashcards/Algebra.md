@@ -1,1 +1,0 @@
-/home/zack/SparkleShare/github.com/Notes/Class_Notes/2019/Algebra/Flashcards/Flashcards.md
