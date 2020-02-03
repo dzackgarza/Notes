@@ -31,4 +31,10 @@ Questions
 
 Proposition:
 Let $\psi: Z(\lieg) \to S(\lieh)$ be the Harish-Chandra homomorphism.
-Then $\psi$ is independent of the choice of a simple system $\Delta$ in $\Phi$.
+Then $\psi$ is independent of the choice of a simple system in $\Phi$.
+
+> Hint: any simple system has the form $w\Delta$ for some $w\in W$.
+
+Useful facts:
+
+- 
