@@ -85,7 +85,8 @@ f: (D^2)^\circ \cross \RR &\to \RR \\
 (\vector x, t) &\mapsto e^{\frac{1}{1-\abs z}} - t
 .\end{align*}
 
-
+Adding in a component $\bd D^2 \cross \RR \cong S^1 \cross \RR$ yields a foliation of $D^2 \cross \RR$.
+Then take a $\ZZ\dash$action where 
 
 
 *Remark:*
