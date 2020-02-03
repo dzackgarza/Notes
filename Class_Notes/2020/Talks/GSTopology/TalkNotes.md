@@ -79,7 +79,7 @@ Any nonsingular vector field $X$ on a closed manifold $M$ defines a foliation; e
 Take $M$ closed, $G$ a connected Lie group acting locally freely (the stabilizer of a point is a discrete subgroup of $G$). Then again $M$ is foliated by orbits of points.
 
 *Example (The Reeb Foliation):*
-Define a map
+Define a map out of a cylinder in cylindrical coordinates
 \begin{align*}
 f: (D^2)^\circ \cross \RR &\to \RR \\
 (\vector x, t) &\mapsto e^{\frac{1}{1-\abs z}} - t
