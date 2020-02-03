@@ -63,6 +63,9 @@ The "slices" given by the surfaces are referred to as *leaves*.
 As in example 2, take $\RR^3 = \disjoint_{t\in \RR} ~t + H_{xy}$ where $H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat z=0}$ is the $xy\dash$plane and $t+ H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat t = z}$ are the vertical translates.
 This yields a foliation of $\RR^3$ by planes.
 
+Example:
+Any trivial fiber bundle $E = F \cross B$ is foliated by leaves $L_b \definedas \theset{b} \cross F$.
+
 *Example*:
 Let $T = \RR^2/\ZZ^2$ be a flat torus and $q$ any irrational number; then lines $L_q$ of slope $q$ foliate $T$.
 
