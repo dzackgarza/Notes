@@ -23,5 +23,6 @@ Questions
 - What is the tensor product over? Guess: $\tensor_\CC$.
 - MSE: the product is no longer finitely generated.
   -  Consider dimensions of weight spaces -- eventually constant.
+  -  If $\wt{v} = \lambda$ and $\wt(u) = \mu$, then $\wt(u\tensor v) = \lambda + \mu$.
 
 # Humphreys 1.9
