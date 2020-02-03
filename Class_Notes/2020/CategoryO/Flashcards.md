@@ -25,7 +25,7 @@ $\mathfrak{g}_\alpha$
 The **root space**.
 
 $$
-\mathfrak{g}_\alpha = \{\}
+\mathfrak{g}_\alpha = \{x\in \mathfrak{g} \mid \}
 $$
 
 %
