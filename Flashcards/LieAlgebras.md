@@ -45,7 +45,7 @@ $$
 The (integral) **root lattice**.
 
 $$
-\Lambda_r = \mathrm{span}_{\mathbb{Z}}
+\Lambda_r = \mathrm{span}_{\mathbb{Z}}\Phi \subset E
 $$
 
 %
