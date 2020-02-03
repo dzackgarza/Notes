@@ -24,5 +24,6 @@ Questions
 - MSE: the product is no longer finitely generated.
   -  Consider dimensions of weight spaces -- eventually constant.
   -  If $\wt{v} = \lambda$ and $\wt(u) = \mu$, then $\wt(u\tensor v) = \lambda + \mu$.
+  -  Let $
 
 # Humphreys 1.9
