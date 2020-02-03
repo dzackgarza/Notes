@@ -33,7 +33,7 @@ The **root space**.
 $$
 \mathfrak{g}_\alpha = \{g\in \mathfrak{g} \mid [h, g] = \alpha(h) g\}
 $$
-  
+
 %
 
 lie algebra
