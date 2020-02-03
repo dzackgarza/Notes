@@ -54,7 +54,7 @@ $$
 \Lambda_r = \mathrm{span}_{\mathbb{Z}}\Phi \subset E
 $$
 
-Has a basis given by \Phi$ or $\Delta$.
+Has a basis given by \( \Phi \) or \( \Delta \).
 
 %
 
