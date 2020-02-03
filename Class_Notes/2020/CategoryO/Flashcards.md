@@ -4,7 +4,7 @@ $\Phi$
 
 The root system
 
-$\alpha \in \Phi$
+$\alpha \in \Phi \subset \mathfrak{h}^* \iff [h, x] = \alpha(h) x$ for all $h\in \mathfrak{h}$
 
 %
 
