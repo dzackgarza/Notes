@@ -71,7 +71,8 @@ Why are foliations important?
 *Remark:*
 A foliation $\theset{\Sigma_i}$ induces a decomposition on the tangent bundle of $M$, namely $TM = T(\Sigma_i) \oplus \xi$ (? check) where $\xi$ is a line bundle everywhere transverse to the $\Sigma_i$. 
 We say $\theset{\Sigma_i}$ is *transversely orientable*.
-Whenever $\theset{\Sigma_i}$ is transversely orientable, it can be associated uniquely to a nonsingular 1-form $\omega$, and we can study the set of critical points $S = \theset{}$
+Whenever $\theset{\Sigma_i}$ is transversely orientable, it can be associated uniquely to a nonsingular 1-form $\omega$.
+Then given an $f: M\to \RR$, We can study the set of critical points $S = \theset{}$
 
 **Definition:**
 $(M^{2n+1}, \xi)$ is a contact manifold iff $\xi$ is a hyperplane distribution given by $\ker \lambda \in \Omega^a(M)$ where $\lambda \wedge (d\lambda)^n \neq 0\in \Omega^{2n+1}(M)$.
