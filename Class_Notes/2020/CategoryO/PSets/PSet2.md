@@ -6,6 +6,7 @@ title: Problem Set 2
 
 Proposition:
 Let $\lieg = \liesl(2, \CC)$ and $M(\lambda), M(\mu)$ Verma modules.
+Then $M(\lambda) \tensor M(\mu)$ can not lie in $\OO$.
 
 
 Useful facts:
