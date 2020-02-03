@@ -48,6 +48,9 @@ These are important because of their ties to *foliations*.
 
 # Foliations
 
+*Remark:*
+Foliations arise when you have a PDE (IVP or BVP) defined on an $n\dash$manifold $M$, with some initial/boundary conditions defined on an embedded surface, and you want to find the time evolution of that system (moving you through leaves of the foliation, think of spacetime being foliated by space-like hyperplanes in General Relativity).
+
 **Definition (Foliation):**
 A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalent conditions:
 
@@ -63,7 +66,7 @@ The "slices" given by the surfaces are referred to as *leaves*.
 As in example 2, take $\RR^3 = \disjoint_{t\in \RR} ~t + H_{xy}$ where $H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat z=0}$ is the $xy\dash$plane and $t+ H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat t = z}$ are the vertical translates.
 This yields a foliation of $\RR^3$ by planes.
 
-Example:
+*Example:*
 Any fiber bundle $F \to E \mapsvia{\pi} B$ is foliated by leaves $L_b \definedas \theset{b} \cross \pi\inv(b)$.
 
 *Example*:
@@ -74,11 +77,6 @@ Any nonsingular vector field $X$ on a closed manifold $M$ defines a foliation; e
 
 *Example:*
 Take $M$ closed, $G$ a connected Lie group acting locally freely (the stabilizer of a point is a discrete subgroup of $G$). Then again $M$ is foliated by orbits of points.
-
-Why are foliations important?
-
-- Arise when you have a PDE (IVP or BVP) defined on an $n\dash$manifold $M$, with some initial/boundary conditions defined on an embedded surface, and you want to find the time evolution of that system (moving you through leaves of the foliation, think of spacetime being foliated by space-like hyperplanes in General Relativity).
-
 
 *Remark:*
 A foliation $\theset{\Sigma_i}$ induces a decomposition on the tangent bundle of $M$, namely $TM = T(\Sigma_i) \oplus \xi$ (? check) where $\xi$ is a line bundle everywhere transverse to the $\Sigma_i$. 
