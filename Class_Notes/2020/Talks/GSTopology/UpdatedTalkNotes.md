@@ -38,7 +38,7 @@ Basic Questions:
 
 - Does every/any vector field on a smooth manifold $M$ admit a closed orbit?
   - Corollary: does every/any vector field on $M$ admit a fixed point/zero?
-  - Note that if $\chi(M) = 
+  - Note that if $\chi(M) \neq 0$, the Poincare-Hopf index theorem
 - Does every vector field on $S^3$ admit a closed orbit?
 
 Remark:
