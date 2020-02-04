@@ -84,11 +84,9 @@ Let $M$ be a manifold and $X$ a vector field.
 The interior product is a map
 \begin{align*}
 \iota_X: \Omega^{p+1}(M) 	&\to \Omega^p(M) 	&& & \\
-\omega 										&	\mapsto \iota_X \omega: \Lambda^p TM \to \RR 
-\\(X_1, \cdots, X_p) \to \omega (\vector X, X_1, \cdots, X_p)\\
-
+\omega 										&	\mapsto \iota_X \omega: \Lambda^p TM \to \RR \\
+& (X_1, \cdots, X_p) \to \omega (\vector X, X_1, \cdots, X_p)
 .\end{align*}
-
 
 Definition: Lie Derivative
 General definition: given a tensor field $T$ (a section of some tensor bundle $V \to ? \to M$) and a vector field $X$ (a section of the tangent bundle $\RR^n \to TM \to M$), we can define a "derivative" of $T$ along $X$.
