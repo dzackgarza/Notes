@@ -45,6 +45,9 @@ Basic Questions:
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
 
+Definition: Symplectic manifold
+$(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere.
+
 ## Big Theorems
 
 **Theorem (1987):**
