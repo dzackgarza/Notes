@@ -136,7 +136,7 @@ Proof:
 \begin{align*}
 
 .\end{align*}
-0 < \int_M \omega^n = 
+
 
 ## Big Theorems
 
