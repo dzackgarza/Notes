@@ -4,4 +4,6 @@ Recall that for any smooth function $H: M\to N$, the *derivative* of $H$ at $p\i
 ![](2020-02-03-10-56-11.png)
 
 
-Definition (Closed and Exact Forms):
+**Definition (Closed and Exact Forms):**
+Let $d: \Omega^p(M) \to \Omega^{p+1}(M)$ be the exterior derivative. 
+Then a form $\omega$ is *closed* iff $\omega \in \ker d$, and
