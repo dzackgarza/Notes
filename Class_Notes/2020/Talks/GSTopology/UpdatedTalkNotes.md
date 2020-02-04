@@ -43,7 +43,8 @@ The orbit of a Hamiltonian flow is contained in a single level set.
 Definition: Symplectic manifold
 $(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere.
 
-Definition:
+Definition: Hamiltonian vector field.
+Given a smooth functional 
 
 Definition: Hamiltonian flow.
 
