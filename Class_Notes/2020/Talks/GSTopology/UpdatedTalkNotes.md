@@ -134,7 +134,7 @@ There are no closed exact symplectic manifolds.
 
 Proof:
 \begin{align*}
-
+\int_{\bd M) 
 .\end{align*}
 
 
