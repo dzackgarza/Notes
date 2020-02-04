@@ -133,7 +133,10 @@ Theorem:
 There are no closed exact symplectic manifolds.
 
 Proof:
+\begin{align*}
 
+.\end{align*}
+0 < \int_M \omega^n = 
 
 ## Big Theorems
 
