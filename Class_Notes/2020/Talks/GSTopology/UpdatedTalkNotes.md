@@ -83,7 +83,7 @@ Definition: Liouville vector field
 
 ## Big Theorems
 
-For regular values (pullback of the  Hamiltonian
+For regular values (pullback to points $p$ where the induced map on $T_pM$ is surjective) of the  Hamiltonian
 
 **Theorem (1987):**
 Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
