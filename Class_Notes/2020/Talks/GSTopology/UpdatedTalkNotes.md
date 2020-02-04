@@ -1,6 +1,6 @@
 # Motivation
 
-Basic question: when does the flow of a vector field have a *periodic orbit*?
+Basic question: when does the flow of a vector field admit a *periodic orbit*?
 
 Definition: Hamiltonian flow.
 
