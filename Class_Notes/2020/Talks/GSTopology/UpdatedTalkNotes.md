@@ -80,6 +80,7 @@ Definition: Reeb flow.
 Definition: Reeb vector field.
 
 Definition: Liouville vector field
+A vector field $X$ such that $
 
 ## Big Theorems
 
