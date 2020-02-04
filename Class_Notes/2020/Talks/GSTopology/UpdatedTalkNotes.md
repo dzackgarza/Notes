@@ -88,6 +88,8 @@ The interior product is a map
 & (X_1, \cdots, X_p) \to \omega (\vector X, X_1, \cdots, X_p)
 .\end{align*}
 
+> Note that this *contracts* a vector field with a differential form.
+
 **Definition (Lie Derivative):**
 
 **General definition**: 
