@@ -84,7 +84,7 @@ General definition: given a tensor field $T$ (a section of some tensor bundle $V
 Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\right]_{t=0}$ where
 
 - $\phi_t$ is the 1-parameter group of diffeomorphisms induced by the flow induced by $X$,
-- 
+- $(\wait)_*$ is the pushforward
 
 Definition: Liouville vector field
 A vector field $X$ such that $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
