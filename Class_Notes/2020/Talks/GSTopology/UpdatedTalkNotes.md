@@ -34,6 +34,8 @@ An *closed orbit* of a vector field $X$ on $M$ is a map $\gamma: S^1 \to M$ sati
 
 > Note: Every fixed point of $X$ is trivially a closed orbit.
 
+Question: does every vector field on 
+
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
 
