@@ -84,8 +84,8 @@ Let $M$ be a manifold and $X$ a vector field.
 The interior product is a map
 \begin{align*}
 \iota_X: \Omega^{k+1}(M) 	&\to \Omega^k(M) 	&& & \\
-\omega 										&	\mapsto \iota_X \omega: M &&\to \Lambda^k T\dual M \\
- & x && y
+\omega 										&	\mapsto \iota_X \omega: M &\to \Lambda^k T\dual M \\
+ & p &\mapsto 
 .\end{align*}
 
 
