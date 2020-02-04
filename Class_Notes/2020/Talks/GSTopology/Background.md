@@ -11,3 +11,8 @@ Then a form $\omega$ is *closed* (or is a *cocycle*) iff $\omega \in \ker d_p$, 
 Note that closed forms are exact, since $d^2  = 0$, i.e. $\omega$ closed implies $\omega = d\lambda$ implies $d\omega = d^2 \lambda = 0$ implies $\omega$ is exact.
 
 If $\alpha, \beta \in \Omega^p(M)$ with $\alpha-\beta$ exact, they are said to be *cohomologous*.
+
+**Definition:**
+A *vector field* $X$ on $M$ is a section of the tangent bundle $TM \mapsvia{\pi} M$, i.e. a continuous map $X: M \to TM$.
+
+![](2020-02-03-20-52-40.png)
