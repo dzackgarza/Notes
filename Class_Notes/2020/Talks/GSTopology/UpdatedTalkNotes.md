@@ -48,8 +48,9 @@ Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian 
 
 Example: Simple Harmonic Oscillator.
 
-- $K = \frac 1 2 mv^2 = \frac{p^2}{2v}$ where $p=mv$ is the momentum.
+- $K = \frac 1 2 mv^2 = \frac{p^2}{2v}$ where $p=mv$ is the momentum, given by $F = ma$
 - $U = \frac 1 2 kx^2$, given by Hooke's law
+- $H = 
 
 Definition: Hamiltonian flow.
 
