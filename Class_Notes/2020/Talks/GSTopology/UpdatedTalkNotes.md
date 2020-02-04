@@ -52,7 +52,7 @@ Example: Simple Harmonic Oscillator.
 - $U = \frac 1 2 kx^2$, given by Hooke's law
 - $H(x, p) = U + K = \frac 1 2 mv^2 = \frac{p^2}{2m} + \frac 1 2 kx^2$
 - Has "phase space" $\Phi = \RR^2 = \spanof_\RR\theset{x, p}$, i.e. a position and momentum completely characterize the system at any fixed time.
-- Time evolution is governed by $\dd{x}{t}$
+- Time evolution is governed by $\dd{x}{t} = -\dd{H}{$
 - Time evolution of the system corresponds to a path $\gamma: \RR \to \Phi$
 
 ![](2020-02-03-21-23-02.png)
