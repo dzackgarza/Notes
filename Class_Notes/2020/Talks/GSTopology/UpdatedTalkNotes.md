@@ -143,7 +143,7 @@ Proof:
 &> 0
 ,\end{align*}
 
-so $\bd M \neq 0$.
+so $\bd M \neq 0$, and thus $M$ can not be closed.
 
 ## Big Theorems
 
