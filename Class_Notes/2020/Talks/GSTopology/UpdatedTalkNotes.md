@@ -79,6 +79,8 @@ Definition: Reeb flow.
 
 Definition: Reeb vector field.
 
+Definition: Lie Derivative
+
 Definition: Liouville vector field
 A vector field $X$ such that $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
 
