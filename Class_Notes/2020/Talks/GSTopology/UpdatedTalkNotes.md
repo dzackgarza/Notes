@@ -99,7 +99,7 @@ Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\righ
 
 **Specialized definition**:
 
-Remark: Cartan's magic formula, $\mathcal{L}_x\omega = [d, \iota_x] \omega$.
+Remark: Cartan's magic formula, $\mathcal{L}_x\omega = [d, \iota_x] \omega$ where $d$ is the exterior product.
 
 **Definition (Liouville vector field):**
 A vector field $X$ such that $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
