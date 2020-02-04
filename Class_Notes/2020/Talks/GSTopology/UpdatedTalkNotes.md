@@ -80,7 +80,8 @@ Definition: Reeb flow.
 Definition: Reeb vector field.
 
 Definition: Lie Derivative
-General definition: given a tensor field $T$ (a section of some tensor bundle $V \to ? \to M$) and a vector field $X$ (a section of the tangent bundle $\RR^n \to TM \to M$), we can define 
+General definition: given a tensor field $T$ (a section of some tensor bundle $V \to ? \to M$) and a vector field $X$ (a section of the tangent bundle $\RR^n \to TM \to M$), we can define a "derivative" of $T$ along $Y$.
+Namely, $\mathcal{L} 
 
 Definition: Liouville vector field
 A vector field $X$ such that $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
