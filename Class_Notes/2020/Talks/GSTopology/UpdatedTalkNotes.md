@@ -113,7 +113,7 @@ where $d$ is the exterior product.
 **Definition (Liouville vector field):**
 A vector field $X$ such that $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
 
-> Intuition: the induced flow $\phi_t$ satisfies $\phi_t^* \omega = 
+> Intuition: the induced flow $\phi_t$ satisfies $\phi_t^* \omega = e^t \omega$,
 
 ## Big Theorems
 
