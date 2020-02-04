@@ -11,7 +11,7 @@ Definition: Reeb vector field.
 Definition: Hypersurface of contact type
 
 Example:
-The level sets of a Hamiltonian $H  = K + U$ where $K
+The level sets of a Hamiltonian $H  = K + U$ where $K = \frac 1 2 p^2
 
 > Remark: all hypersurfaces of contact type $(X, \omega)$ look locally like $X \injects \mathrm{Sp}(X)$, i.e. $X$ embedded into its symplectification.
 
