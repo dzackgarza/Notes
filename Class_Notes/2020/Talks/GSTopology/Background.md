@@ -8,4 +8,6 @@ Recall that for any smooth function $H: M\to N$, the *derivative* of $H$ at $p\i
 Let $d_p: \Omega^p(M) \to \Omega^{p+1}(M)$ be the exterior derivative. 
 Then a form $\omega$ is *closed* iff $\omega \in \ker d_p$, and *exact* iff $\omega \in \im d_{p-1}$.
 
+Note that closed forms are exact, since $d^2  = 0$, i.e. $\omega$ closed implies $\omega = d\lambda$ implies $d\omega = d^2 \lambda = 0$ implies $\omega$ is exact.
+
 If $\alpha, \beta \in \Omega^p(M)$ with $\alpha-\beta$ exact, they are said to be *cohomologous*.
