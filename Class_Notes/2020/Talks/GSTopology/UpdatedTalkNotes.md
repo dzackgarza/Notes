@@ -1,5 +1,9 @@
 # Motivation
 
+Basic question: 
+
+## Big Theorems
+
 **Theorem (1987):**
 Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
 
