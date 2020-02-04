@@ -96,6 +96,8 @@ Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\righ
 - $\phi_t$ is the 1-parameter group of diffeomorphisms induced by the flow induced by $X$,
 - $(\wait)_*$ is the pushforward
 
+Specialized Definit
+
 **Definition (Liouville vector field):**
 A vector field $X$ such that $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
 
