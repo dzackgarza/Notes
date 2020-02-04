@@ -79,6 +79,9 @@ Definition: Reeb flow.
 
 Definition: Reeb vector field.
 
+Definition:
+LetThe interior product (or contraction)
+
 Definition: Lie Derivative
 General definition: given a tensor field $T$ (a section of some tensor bundle $V \to ? \to M$) and a vector field $X$ (a section of the tangent bundle $\RR^n \to TM \to M$), we can define a "derivative" of $T$ along $X$.
 Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\right]_{t=0}$ where
