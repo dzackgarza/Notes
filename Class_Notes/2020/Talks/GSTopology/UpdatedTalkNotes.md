@@ -60,7 +60,7 @@ Example: Simple Harmonic Oscillator.
 
 	![](2020-02-03-21-26-35.png)
 
-	- If the Hamiltonian evolved over time, it would preserve the *volume* of this region of phase space.
+	- If the Hamiltonian evolved over time, this region would travel around phases space, with the *volume* of this region invariant.
 
 Definition: Hamiltonian flow.
 
