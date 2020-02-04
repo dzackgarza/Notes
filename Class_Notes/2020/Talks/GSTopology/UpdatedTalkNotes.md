@@ -43,7 +43,9 @@ The orbit of a Hamiltonian flow is contained in a single level set.
 Definition: Symplectic manifold
 $(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere.
 
-> Why care about symplectic forms? They induce an isomorphism $TM \cong T\dual M$, which allows us to moved between 
+> Why care about symplectic forms? 
+> They induce an isomorphism $TM \cong T\dual M$, which allows us to moved between vector fields and 1-forms.
+> 
 
 Definition: Hamiltonian vector field.
 Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian vector field* is the unique field $X_H$ satisfying $\omega(X_H, \wait) = dH$.
