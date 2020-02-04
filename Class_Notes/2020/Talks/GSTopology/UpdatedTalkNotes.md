@@ -9,7 +9,9 @@ Definition: Reeb flow.
 Definition: Reeb vector field.
 
 Definition: Contact form.
-A 1-form $\lambda$ such that $\lambda \wedge (d\lambda)^n 
+A 1-form $\lambda$ such that $\lambda \wedge (d\lambda)^n  > 0$.
+
+> Note that $\lambda \wedge (d\lambda)^n = 0$ defines a foliation?
 
 Definition: Hypersurface of contact type
 For $(X, \omega)$ a symplectic manifold, a hypersurface $\Sigma \injects X$ is of *contact-type* iff there is a contact form $\lambda$ such that 
