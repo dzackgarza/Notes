@@ -51,6 +51,9 @@ Definition: Hamiltonian vector field.
 Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian vector field* is the unique field $X_H$ satisfying $\omega(X_H, \wait) = dH$.
 
 Consequence: Conservation of energy
+\begin{align*}
+X_H(H) = dH(X_H)
+.\end{align*}
 
 
 Example: Simple Harmonic Oscillator.
