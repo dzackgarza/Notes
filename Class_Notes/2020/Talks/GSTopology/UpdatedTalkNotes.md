@@ -50,6 +50,9 @@ $(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere.
 Definition: Hamiltonian vector field.
 Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian vector field* is the unique field $X_H$ satisfying $\omega(X_H, \wait) = dH$.
 
+Consequence: Conservation of energy
+
+
 Example: Simple Harmonic Oscillator.
 
 ![](2020-02-03-21-23-02.png)
