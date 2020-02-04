@@ -58,7 +58,9 @@ Example: Simple Harmonic Oscillator.
 - Conservation of energy shows that the time evolution of the system is governed by $\dd{x}{t} = -\dd{H}{p}$ and $\dd{p}{t} = \dd{H}{x}$
   - Corresponds to a path $\gamma: \RR \to \Phi$ along which $H$ is constant, i.e. a constant energy hypersurface corresponding (roughly) to $p^2 + q^2 = \mathrm{const}$
 
-![](2020-02-03-21-26-35.png)
+	![](2020-02-03-21-26-35.png)
+
+	- If the Hamiltonian evolved over time, it would preserve the *volume* of this region of phase space.
 
 Definition: Hamiltonian flow.
 
