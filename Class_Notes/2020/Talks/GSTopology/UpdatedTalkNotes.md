@@ -38,7 +38,8 @@ Basic Questions:
 
 - Does every/any vector field on a smooth manifold $M$ admit a closed orbit?
   - Corollary: does every/any vector field on $M$ admit a fixed point/zero?
-- 
+  - Note that if $\chi(M) = 
+- Does every vector field on $S^3$ admit a closed orbit?
 
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
