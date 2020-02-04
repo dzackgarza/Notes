@@ -28,7 +28,7 @@ A *vector field* $X$ on $M$ is a section of the tangent bundle $TM \mapsvia{\pi}
 ![](2020-02-03-20-52-40.png)
 
 Definition:
-An *orbit* of a vector field $X$ on $M$ is a map $\gamma: S^1 \to M$ satisfying the ODE $\dd{\gamma}{t}(t) = X(\gamma(t))$.
+An *closed orbit* of a vector field $X$ on $M$ is a map $\gamma: S^1 \to M$ satisfying the ODE $\dd{\gamma}{t}(t) = X(\gamma(t))$.
 
 > In words: the ODE says that the tangent vector at every point along the loop $\gamma$ should precisely be the tangent vector that the vector field $X$ prescribes at that point.
 
