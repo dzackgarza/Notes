@@ -10,7 +10,7 @@ Definition: Reeb vector field.
 
 Definition: Hypersurface of contact type
 
-> Remark: all manifolds 
+> Remark: all hypersurfaces of contact type 
 
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
