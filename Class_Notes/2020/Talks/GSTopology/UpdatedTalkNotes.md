@@ -8,6 +8,8 @@ Definition: Reeb flow.
 
 Definition: Reeb vector field.
 
+Definition: Contact form.
+
 Definition: Hypersurface of contact type
 For $(X, \omega)$ a symplectic manifold, a hypersurface $\Sigma \injects X$ is of *contact-type* iff there is a contact form $\lambda$ such that 
 
