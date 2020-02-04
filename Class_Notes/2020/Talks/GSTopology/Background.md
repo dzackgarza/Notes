@@ -16,3 +16,6 @@ If $\alpha, \beta \in \Omega^p(M)$ with $\alpha-\beta$ exact, they are said to b
 A *vector field* $X$ on $M$ is a section of the tangent bundle $TM \mapsvia{\pi} M$, i.e. a continuous map $X: M \to TM$.
 
 ![](2020-02-03-20-52-40.png)
+
+**Definition (Interior Product):**
+Given a vector field $X$ on $M$, the associated *interior product* $\iota_X$ is given by $\iota_X: \Omega^p(M) \to \Omega^{p-1}(M)$ is the map which sends a $p\dash$form $\omega$ to the $p-1\dash$form $\alpha$ characterized by $\alpha(X_1, \cdots, X_{p-1}) = \omega(X, X_1, \cdots, X_{p-1})$, i.e. $\alpha = \omega(X, \wait, \cdots, \wait)$.
