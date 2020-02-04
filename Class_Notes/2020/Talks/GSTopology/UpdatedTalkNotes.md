@@ -111,9 +111,14 @@ where $d$ is the exterior product.
 > This is a consequence of "Cartan's Magic Formula", not the actual definition!
 
 **Definition (Liouville vector field):**
-A vector field $X$ such that $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
 
-> Intuition: the induced flow $\phi_t$ satisfies $\phi_t^* \omega = e^t \omega$,
+
+
+Theorem:
+A Liouville vector field $X$ satisfies $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
+
+Corollary:
+The induced flow $\phi_t$ satisfies $\phi_t^* \omega = e^t \omega$,
 
 ## Big Theorems
 
