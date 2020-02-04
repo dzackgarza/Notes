@@ -129,6 +129,12 @@ Proof:
 Corollary:
 The induced flow $\phi_t$ satisfies $\phi_t^* \omega = e^t \omega$,
 
+Theorem:
+There are no closed exact symplectic manifolds.
+
+Proof:
+
+
 ## Big Theorems
 
 For regular values (pullback to points $p$ where the induced map on $T_pM$ is surjective) $r\in \RR$ of the  Hamiltonian, $H\inv(r) \subset M$ is a submanifold of $M$ with a smooth vector field $X_H$ called a "regular level set" $Y$. 
