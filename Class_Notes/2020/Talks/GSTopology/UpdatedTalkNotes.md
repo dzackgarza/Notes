@@ -52,7 +52,7 @@ Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian 
 
 Consequence: Conservation of energy
 \begin{align*}
-X_H(H) = dH(X_H)
+X_H(H) = dH(X_H) = \omega(X_H, X_H) = 0
 .\end{align*}
 
 
