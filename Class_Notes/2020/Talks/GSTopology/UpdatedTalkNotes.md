@@ -84,7 +84,7 @@ Let $M$ be a manifold and $X$ a vector field.
 The interior product is a map
 \begin{align*}
 \iota_X: \Omega^{p+1}(M) 	&\to \Omega^p(M) 	&& & \\
-\omega 										&	\mapsto \iota_X \omega: 
+\omega 										&	\mapsto \iota_X \omega: \Lambda^p TM \to \RR 
 \\(X_1, \cdots, X_p) \to \omega (\vector X, X_1, \cdots, X_p)\\
 
 .\end{align*}
