@@ -52,6 +52,8 @@ Example: Simple Harmonic Oscillator.
 - $U = \frac 1 2 kx^2$, given by Hooke's law
 - $H = 
 
+![](2020-02-03-21-23-02.png)
+
 Definition: Hamiltonian flow.
 
 Definition: Reeb flow.
