@@ -37,7 +37,7 @@ An *closed orbit* of a vector field $X$ on $M$ is a map $\gamma: S^1 \to M$ sati
 Basic Questions: 
 
 - Does every/any vector field on a smooth manifold $M$ admit a closed orbit?
-  - Corollary: does every/any vector field on $M$ admit a fixed point/zero?
+  - Corollary: does every/any vector field on $M$ admit a fixed point?
   - Note that if $\chi(M) \neq 0$, the Poincare-Hopf index theorem forces every vector field to have a fixed point.
 - Does every vector field on $S^3$ admit a closed orbit?
 
