@@ -32,7 +32,7 @@ An *closed orbit* of a vector field $X$ on $M$ is a map $\gamma: S^1 \to M$ sati
 
 > In words: the ODE says that the tangent vector at every point along the loop $\gamma$ should precisely be the tangent vector that the vector field $X$ prescribes at that point.
 
-> Note: Every fixed point is trivially a closed orbit.
+> Note: Every fixed point of $X$ is trivially a closed orbit.
 
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
