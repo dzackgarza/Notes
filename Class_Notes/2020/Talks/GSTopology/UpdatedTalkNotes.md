@@ -50,7 +50,7 @@ Example: Simple Harmonic Oscillator.
 
 - $K = \frac 1 2 mv^2 = \frac{p^2}{2v}$ where $p=mv$ is the momentum, given by $F = ma$
 - $U = \frac 1 2 kx^2$, given by Hooke's law
-- $H = 
+- $H = U + K
 
 ![](2020-02-03-21-23-02.png)
 
