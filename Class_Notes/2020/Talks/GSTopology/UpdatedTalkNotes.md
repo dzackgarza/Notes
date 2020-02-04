@@ -2,6 +2,10 @@
 
 Basic question: when does the flow of a vector field have a *periodic orbit*?
 
+Definition: Hamiltonian flow.
+
+Definition: Reeb flow
+
 ## Big Theorems
 
 **Theorem (1987):**
