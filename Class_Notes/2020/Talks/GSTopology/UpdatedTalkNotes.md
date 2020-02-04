@@ -85,7 +85,7 @@ The interior product is a map
 \begin{align*}
 \iota_X: \Omega^{k+1}(M) 	&\to \Omega^k(M) 	&& & \\
 \omega 										&	\mapsto \iota_X \omega: M &\to \Lambda^k T\dual M \\
- & p &\mapsto 
+ & p &\mapsto
 .\end{align*}
 
 
