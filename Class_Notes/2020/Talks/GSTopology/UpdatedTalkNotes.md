@@ -1,6 +1,6 @@
 # Motivation
 
-Basic question: 
+Basic question: when does the flow of a vector field have a *periodic orbit*?
 
 ## Big Theorems
 
