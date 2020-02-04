@@ -11,7 +11,8 @@ Definition: Reeb vector field.
 Definition: Hypersurface of contact type
 
 Example:
-The level sets of a Hamiltonian $H  = K + U$ where $K = \frac 1 2 \abs{p}^2$ and $U = 
+The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \vector q}$  given by $H  = K + U$ where $K = \frac 1 2 \norm{\vector p}^2$ and $U = U(\vector q)$ is a function of only $\vector q$.
+(Usually kinetic + potential energy.)
 
 > Remark: all hypersurfaces of contact type $(X, \omega)$ look locally like $X \injects \mathrm{Sp}(X)$, i.e. $X$ embedded into its symplectification.
 
