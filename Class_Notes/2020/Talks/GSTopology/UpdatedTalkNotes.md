@@ -23,12 +23,12 @@ The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \ve
 > Remark: all hypersurfaces of contact type $(X, \omega)$ look locally like $X \injects \mathrm{Sp}(X)$, i.e. $X$ embedded into its symplectification.
 
 Definition:
-A *vector field* on $M$ is a section of the tangent bundle $TM \mapsvia{\pi} M$, i.e. a continuous map $M \to TM$.
+A *vector field* $X$ on $M$ is a section of the tangent bundle $TM \mapsvia{\pi} M$, i.e. a continuous map $X: M \to TM$.
 
 ![](2020-02-03-20-52-40.png)
 
 Definition:
-An *orbit* of a vector field is a map $
+An *orbit* of a vector field $X$ on $M$ is a map $\gamma: S^1 \to M$
 
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
