@@ -75,11 +75,11 @@ Example: Simple Harmonic Oscillator.
 
 Definition: Hamiltonian flow.
 
-Definition: Reeb flow.
+**Definition (Reeb flow):**
 
-Definition: Reeb vector field.
+**Definition (Reeb vector field):**
 
-Definition:
+**Definition (Interior Product):**
 Let $M$ be a manifold and $X$ a vector field.
 The interior product is a map
 \begin{align*}
@@ -88,14 +88,14 @@ The interior product is a map
 & (X_1, \cdots, X_p) \to \omega (\vector X, X_1, \cdots, X_p)
 .\end{align*}
 
-Definition: Lie Derivative
+**Definition (Lie Derivative):**
 General definition: given a tensor field $T$ (a section of some tensor bundle $V \to ? \to M$) and a vector field $X$ (a section of the tangent bundle $\RR^n \to TM \to M$), we can define a "derivative" of $T$ along $X$.
 Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\right]_{t=0}$ where
 
 - $\phi_t$ is the 1-parameter group of diffeomorphisms induced by the flow induced by $X$,
 - $(\wait)_*$ is the pushforward
 
-Definition: Liouville vector field
+**Definition (Liouville vector field):**
 A vector field $X$ such that $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
 
 ## Big Theorems
