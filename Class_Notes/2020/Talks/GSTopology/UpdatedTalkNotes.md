@@ -113,7 +113,7 @@ where $d$ is the exterior product.
 **Definition (Liouville form and vector field):**
 For $(M, \omega)$ a symplectic manifold, a Liouville form is any 1-form $\lambda$ such that $d\lambda = \omega$.
 
-The vector field $X$ such that $\iota_X 
+The vector field $X$ such that $\iota_X \omega = \lambda$ is a *Liouville vector field*.
 
 
 Theorem:
