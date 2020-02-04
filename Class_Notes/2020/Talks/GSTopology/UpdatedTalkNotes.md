@@ -28,7 +28,7 @@ A *vector field* $X$ on $M$ is a section of the tangent bundle $TM \mapsvia{\pi}
 ![](2020-02-03-20-52-40.png)
 
 Definition:
-An *orbit* of a vector field $X$ on $M$ is a map $\gamma: S^1 \to M$
+An *orbit* of a vector field $X$ on $M$ is a map $\gamma: S^1 \to M$ satisfying the ODE $
 
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
