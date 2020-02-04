@@ -3,26 +3,22 @@
 Basic question: when does the flow of a vector field admit a *periodic orbit*?
 
 
-Definition: Contact form.
+**Definition (Contact form):**
 A 1-form $\lambda$ such that $\lambda \wedge (d\lambda)^n  > 0$.
 
 > Note that $\lambda \wedge (d\lambda)^n = 0$ defines a foliation?
 
-Definition: Hypersurface of contact type
+Definition (Hypersurface of contact type):
 For $(X, \omega)$ a symplectic manifold, a hypersurface $\Sigma \injects X$ is of *contact-type* iff there is a contact form $\lambda$ such that $d\lambda = \restrictionof{\omega}{Y}$.
 
-Example:
+**Example:**
 The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \vector q}$  given by $H  = K + U$ where $K = \frac 1 2 \norm{\vector p}^2$ and $U = U(\vector q)$ is a function of only $\vector q$.
 (Usually kinetic + potential energy.)
 
 > Remark: all hypersurfaces of contact type $(X, \omega)$ look locally like $X \injects \mathrm{Sp}(X)$, i.e. $X$ embedded into its symplectification.
 
-Definition:
-A *vector field* $X$ on $M$ is a section of the tangent bundle $TM \mapsvia{\pi} M$, i.e. a continuous map $X: M \to TM$.
 
-![](2020-02-03-20-52-40.png)
-
-Definition:
+**Definition:**
 An *closed orbit* of a vector field $X$ on $M$ is an element in the loop space $\gamma \in \Omega M$ (equivalently a map $\gamma: S^1 \to M$) satisfying the ODE $\dd{\gamma}{t}(t) = X(\gamma(t))$.
 
 > In words: the ODE says that the tangent vector at every point along the loop $\gamma$ should precisely be the tangent vector that the vector field $X$ prescribes at that point.
