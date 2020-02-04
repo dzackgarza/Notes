@@ -90,6 +90,8 @@ What conditions do you need to guarantee the existence of a closed orbit?
 Turns out not to depend on $H$, and only on the hypersurface $Y$.
 The existence of a closed orbit is equivalent to the existence of a closed embedded curve $\gamma$ that is everywhere tangent to $\ker(\restrictionof{\omega}{Y})$.
 
+When is such a curve guaranteed to exist?
+
 **Theorem (1987):**
 Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
 
