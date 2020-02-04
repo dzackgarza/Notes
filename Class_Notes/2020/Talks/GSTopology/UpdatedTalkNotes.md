@@ -83,8 +83,8 @@ Definition: Liouville vector field
 
 ## Big Theorems
 
-For regular values (pullback to points $p$ where the induced map on $T_pM$ is surjective) $r\in \RR$ of the  Hamiltonian, $H\inv(r) \subset M$ is a submanifold of $M$ with a smooth vector field $X_H$. 
-Does $X_H$ have a closed orbit on every
+For regular values (pullback to points $p$ where the induced map on $T_pM$ is surjective) $r\in \RR$ of the  Hamiltonian, $H\inv(r) \subset M$ is a submanifold of $M$ with a smooth vector field $X_H$ called a "regular level set". 
+Does $X_H$ have a closed orbit on every regular level set?
 
 **Theorem (1987):**
 Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
