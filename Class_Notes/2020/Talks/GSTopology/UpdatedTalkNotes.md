@@ -130,8 +130,9 @@ Corollary:
 The induced flow $\phi_t$ satisfies $\phi_t^* \omega = e^t \omega$,
 
 Theorem:
-There are no closed exact symplectic manifolds.
+There are no closed (compact and boundaryless) exact symplectic manifolds.
 
+If $M$ is
 Proof:
 \begin{align*}
 \int_{\bd M} \lambda \wedge \omega^{n-1} 
