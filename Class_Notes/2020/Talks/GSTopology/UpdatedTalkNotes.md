@@ -47,7 +47,7 @@ Definition: Hamiltonian vector field.
 Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian vector field* is the unique field $X_H$ satisfying $\omega(X_H, \wait) = dH$.
 
 Example: Simple Harmonic Oscillator.
-$K = 
+$K = \frac 1 2 mv^2$
 
 Definition: Hamiltonian flow.
 
