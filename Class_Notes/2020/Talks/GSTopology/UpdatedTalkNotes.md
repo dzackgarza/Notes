@@ -121,7 +121,7 @@ A Liouville vector field $X$ satisfies $\mathcal{L}_X \omega = \omega$, where $\
 
 Proof:
 \begin{align*}
-
+\mathcal{L}_X \omega = [d, \iota_X] \omega = d
 .\end{align*}
 
 
