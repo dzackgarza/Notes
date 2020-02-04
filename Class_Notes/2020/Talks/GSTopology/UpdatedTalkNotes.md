@@ -83,9 +83,10 @@ Definition:
 Let $M$ be a manifold and $X$ a vector field.
 The interior product is a map
 \begin{align*}
-\iota_X: \Omega^{k+1}(M) 	&\to \Omega^k(M) 	&& & \\
-\omega 										&	\mapsto \iota_X \omega: M &\to \Lambda^k T\dual M \\
- & p &\mapsto
+\iota_X: \Omega^{p+1}(M) 	&\to \Omega^p(M) 	&& & \\
+\omega 										&	\mapsto \iota_X \omega: 
+\\(X_1, \cdots, X_p) \to \omega (\vector X, X_1, \cdots, X_p)\\
+
 .\end{align*}
 
 
