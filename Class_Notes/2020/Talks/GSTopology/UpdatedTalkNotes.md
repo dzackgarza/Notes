@@ -119,6 +119,12 @@ The vector field $X$ such that $\iota_X \omega = \lambda$ is a *Liouville vector
 Theorem:
 A Liouville vector field $X$ satisfies $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
 
+Proof:
+\begin{align*}
+
+.\end{align*}
+
+
 Corollary:
 The induced flow $\phi_t$ satisfies $\phi_t^* \omega = e^t \omega$,
 
