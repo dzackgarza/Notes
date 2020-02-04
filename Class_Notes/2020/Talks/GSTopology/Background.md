@@ -7,3 +7,5 @@ Recall that for any smooth function $H: M\to N$, the *derivative* of $H$ at $p\i
 **Definition (Closed and Exact Forms):**
 Let $d_p: \Omega^p(M) \to \Omega^{p+1}(M)$ be the exterior derivative. 
 Then a form $\omega$ is *closed* iff $\omega \in \ker d_p$, and *exact* iff $\omega \in \im d_{p-1}$.
+
+If $\alpha, \beta \in \Omega^p(M)$ with $\alpha-\beta$ exact, 
