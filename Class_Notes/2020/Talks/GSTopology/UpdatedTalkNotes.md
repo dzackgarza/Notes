@@ -2,11 +2,6 @@
 
 Basic question: when does the flow of a vector field admit a *periodic orbit*?
 
-Definition: Hamiltonian flow.
-
-Definition: Reeb flow.
-
-Definition: Reeb vector field.
 
 Definition: Contact form.
 A 1-form $\lambda$ such that $\lambda \wedge (d\lambda)^n  > 0$.
@@ -47,6 +42,14 @@ The orbit of a Hamiltonian flow is contained in a single level set.
 
 Definition: Symplectic manifold
 $(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere.
+
+Definition:
+
+Definition: Hamiltonian flow.
+
+Definition: Reeb flow.
+
+Definition: Reeb vector field.
 
 ## Big Theorems
 
