@@ -100,6 +100,7 @@ Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\righ
 - $(\wait)_*$ is the pushforward
 
 **Specialized definition**:
+If $\omega \in \Omega^{p+1}(M)$ is a differential form, we define 
 
 Remark: Cartan's magic formula, $\mathcal{L}_x\omega = [d, \iota_x] \omega$ where $d$ is the exterior product.
 
