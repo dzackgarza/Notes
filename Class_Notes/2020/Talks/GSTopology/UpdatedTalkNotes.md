@@ -33,11 +33,10 @@ Basic Questions:
 - Does every vector field on $S^3$ admit a closed orbit?
   - Answer: no, very difficult to show, but turns out to hold for all 3-manifolds.
 
-Remark:
-The orbit of a Hamiltonian flow is contained in a single level set.
+> *Remark*:
+> The orbit of a Hamiltonian flow is contained in a single level set.
 
-Definition: Symplectic manifold
-$(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere.
+
 
 > Why care about symplectic forms? 
 > They induce an isomorphism $TM \cong T\dual M$, which allows us to moved between vector fields and 1-forms.
