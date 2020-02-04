@@ -40,7 +40,7 @@ Basic Questions:
   - Corollary: does every/any vector field on $M$ admit a fixed point?
   - Note that if $\chi(M) \neq 0$, the Poincare-Hopf index theorem forces every vector field to have a fixed point.
 - Does every vector field on $S^3$ admit a closed orbit?
-  - Answer: no, but very difficult to show.
+  - Answer: no, very difficult to show, but turns out to hold for all 3-manifolds.
 
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
