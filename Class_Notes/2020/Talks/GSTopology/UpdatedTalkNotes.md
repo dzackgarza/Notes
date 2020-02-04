@@ -48,9 +48,9 @@ Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian 
 
 Example: Simple Harmonic Oscillator.
 
-- $K = \frac 1 2 mv^2 = \frac{p^2}{2v}$ where $p=mv$ is the momentum, given by $F = ma$
+- $K = \frac 1 2 mv^2 = \frac{p^2}{2m}$ where $p=mv$ is the momentum, given by $F = ma$
 - $U = \frac 1 2 kx^2$, given by Hooke's law
-- $H = U + K
+- $H(x, p) = U + K = \frac 1 2 mv^2 = \frac{p^2}{2m} + \frac 1 2 kx^2$
 
 ![](2020-02-03-21-23-02.png)
 
