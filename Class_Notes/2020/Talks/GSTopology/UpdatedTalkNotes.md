@@ -46,6 +46,7 @@ $(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere.
 Definition: Hamiltonian vector field.
 Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian vector field* is the unique field $X_H$ satisfying $\omega(X_H, \wait) = dH$.
 
+Example:
 
 
 Definition: Hamiltonian flow.
