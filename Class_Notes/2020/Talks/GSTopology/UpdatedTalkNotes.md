@@ -134,7 +134,13 @@ There are no closed exact symplectic manifolds.
 
 Proof:
 \begin{align*}
-\int_{\bd M} \lambda \wedge \omega^{n-1} = \int_M d(\lambda \wedge \omega^{n-1}) = \int_M d\lambda \wedge \omega^{n-1} + (-1)^{}
+\int_{\bd M} \lambda \wedge \omega^{n-1} 
+&= \int_M d(\lambda \wedge \omega^{n-1}) \\ 
+&= \int_M d\lambda \wedge \omega^{n-1} + (-1)^{\abs \lambda}\lambda\wedge d\omega^{n-1} \\
+&= \int_M \omega \wedge \omega^{n-1} + (-1)^{\abs\lambda} \lambda \wedge 0 \\
+&= \int_M \omega^n \\
+&= \mathrm{Vol}_{\text{Sp}}(M) \\
+&> 0
 .\end{align*}
 
 
