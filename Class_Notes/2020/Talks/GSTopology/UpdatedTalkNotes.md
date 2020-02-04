@@ -7,7 +7,7 @@ Definition: Hamiltonian flow.
 Definition: Reeb flow.
 
 Remark:
-The orbit 
+The orbit of a Hamiltonian flow is contained in a single level set.
 
 ## Big Theorems
 
