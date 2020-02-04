@@ -81,7 +81,7 @@ Definition: Reeb vector field.
 
 Definition:
 Let $M$ be a manifold and $X$ a vector field.
-The interior product (or contraction) of 
+The interior product 
 
 Definition: Lie Derivative
 General definition: given a tensor field $T$ (a section of some tensor bundle $V \to ? \to M$) and a vector field $X$ (a section of the tangent bundle $\RR^n \to TM \to M$), we can define a "derivative" of $T$ along $X$.
