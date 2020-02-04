@@ -110,8 +110,8 @@ where $d$ is the exterior product.
 
 > This is a consequence of "Cartan's Magic Formula", not the actual definition!
 
-**Definition (Liouville vector field):**
-
+**Definition (Liouville form and vector field):**
+For $(M, \omega)$ a symplectic manifold, a Liouville form is any 1-form $\lambda$ such that $d\lambda = \omega$
 
 
 Theorem:
