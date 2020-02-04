@@ -99,6 +99,8 @@ Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\righ
 - $\phi_t$ is the 1-parameter group of diffeomorphisms induced by the flow induced by $X$,
 - $(\wait)_*$ is the pushforward
 
+> This measures how a tensor field changes as we flow it along a vector field.
+
 **Specialized definition**:
 If $\omega \in \Omega^{p+1}(M)$ is a differential form, we define $\mathcal{L}_x\omega = [d, \iota_x] \omega$ where $d$ is the exterior product.
 
