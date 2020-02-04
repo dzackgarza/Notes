@@ -8,6 +8,10 @@ Definition: Reeb flow.
 
 Definition: Reeb vector field.
 
+Definition: Hypersurface of contact type
+
+> Remark:
+
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
 
