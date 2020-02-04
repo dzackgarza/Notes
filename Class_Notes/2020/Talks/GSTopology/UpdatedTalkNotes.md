@@ -44,7 +44,7 @@ Definition: Symplectic manifold
 $(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere.
 
 Definition: Hamiltonian vector field.
-Given a smooth functional 
+Given a smooth functional $H: M \to \RR$
 
 Definition: Hamiltonian flow.
 
