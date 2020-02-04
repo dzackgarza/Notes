@@ -23,7 +23,7 @@ The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \ve
 > Remark: all hypersurfaces of contact type $(X, \omega)$ look locally like $X \injects \mathrm{Sp}(X)$, i.e. $X$ embedded into its symplectification.
 
 Definition:
-Let $V:
+A *vector field* on $M$ is a section of the tangent bundle $TM \mapsvia{\pi} M$, i.e. a map
 
 Remark:
 The orbit of a Hamiltonian flow is contained in a single level set.
