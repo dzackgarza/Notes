@@ -55,8 +55,8 @@ Example: Simple Harmonic Oscillator.
 - $U = \frac 1 2 kx^2$, given by Hooke's law
 - $H(x, p) = U + K = \frac 1 2 mv^2 = \frac{p^2}{2m} + \frac 1 2 kx^2$
 - Has "phase space" $\Phi = \RR^2 = \spanof_\RR\theset{x, p}$, i.e. a position and momentum completely characterize the system at any fixed time.
-- Time evolution of the system is governed by $\dd{x}{t} = -\dd{H}{p}$ and $\dd{p}{t} = \dd{H}{x}$
-  - Corresponds to a path $\gamma: \RR \to \Phi$
+- Conservation of energy shows that the time evolution of the system is governed by $\dd{x}{t} = -\dd{H}{p}$ and $\dd{p}{t} = \dd{H}{x}$
+  - Corresponds to a path $\gamma: \RR \to \Phi$ along which $H$ is constant, i.e. a constant energy hypersurface.
 
 ![](2020-02-03-21-26-35.png)
 
