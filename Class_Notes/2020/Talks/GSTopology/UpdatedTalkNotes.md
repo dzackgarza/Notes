@@ -141,8 +141,9 @@ Proof:
 &= \int_M \omega^n \\
 &= \mathrm{Vol}_{\text{Sp}}(M) \\
 &> 0
-.\end{align*}
+,\end{align*}
 
+so $\bd M \neq 0$.
 
 ## Big Theorems
 
