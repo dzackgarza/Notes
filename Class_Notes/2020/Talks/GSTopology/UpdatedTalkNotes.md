@@ -83,7 +83,7 @@ Definition:
 Let $M$ be a manifold and $X$ a vector field.
 The interior product is a map
 \begin{align*}
-\iota_X
+\iota_X: \Lambda^{k+1}(M) \to \Lambda^k(M)
 .\end{align*}
 
 
