@@ -89,7 +89,8 @@ The interior product is a map
 .\end{align*}
 
 **Definition (Lie Derivative):**
-General definition: given a tensor field $T$ (a section of some tensor bundle $V \to ? \to M$) and a vector field $X$ (a section of the tangent bundle $\RR^n \to TM \to M$), we can define a "derivative" of $T$ along $X$.
+
+**General definition**: For an arbitrary tensor field $T$ (a section of some tensor bundle $V \to TM^{\tensor n} \to M$) and a vector field $X$ (a section of the tangent bundle $W \to TM \to M$), we can define a "derivative" of $T$ along $X$.
 Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\right]_{t=0}$ where
 
 - $\phi_t$ is the 1-parameter group of diffeomorphisms induced by the flow induced by $X$,
