@@ -37,7 +37,7 @@ The interior product is a map
 For an arbitrary tensor field $T$ (a section of some tensor bundle $V \to TM^{\tensor n} \to M$, example: Riemann curvature tensor, or any differential form) and a vector field $X$ (a section of the tangent bundle $W \to TM \to M$), we can define a "derivative" of $T$ along $X$.
 Namely, 
 $$
-(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\right]_{t=0}
+(\mathcal{L}_X T)_p = \left[\dd{}{t} \qty{(\phi_{-t})_* T_{\phi_t(p)}} \right]_{t=0}
 $$ 
 where
 
