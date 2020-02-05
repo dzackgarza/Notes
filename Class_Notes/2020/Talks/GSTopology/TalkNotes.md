@@ -15,7 +15,7 @@ Recall that $T_p\dual M = \spanof_\RR\theset{dx_i}$.
 Recall that a section of $TM$ is a vector field, and a section of $T\dual M$ is a 1-form.
 More generally, differential $k\dash$forms are given by elements of $\Omega^k(M) \definedas \Gamma(\Lambda^k T\dual M)$, i.e. sections of exterior powers of the cotangent bundle.
 
-
+# Examples of Hyperplane Fields
 
 *Example 1:*
 Take $M=S^2$, so we have $\RR^2 \to TS^2 \to S^2$.

@@ -79,6 +79,9 @@ If $X$ is a vector field and $\iota_X \omega$ is both closed and exact, then $X$
 
 # Contact
 
+**Definition (Hyperplane Field):**
+A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
+
 **Definition (Contact Manifold)**
 A smooth manifold with a hyperplane field $(M^{2n+1}, \xi)$ is *contact* iff the associated $\alpha \in \Omega^1(M)$ satisfies $\alpha \wedge (d\alpha)^n$ is a volume form.
 
