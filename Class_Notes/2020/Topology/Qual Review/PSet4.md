@@ -46,3 +46,4 @@ We'll show $\gamma \homotopic [e]$ in $\pi_1(\tilde X)$.
 
 
 Since $\alpha = [e]$, $\alpha \homotopic \const$ and thus there is a homotopy $H: I\cross S^1 \to X$ such that $H_0 = \const(x_0)$ and $H_1 = \gamma$.
+By the HLP, this lifts to $\tilde H: I\cross S^1 \to \tilde X$.
