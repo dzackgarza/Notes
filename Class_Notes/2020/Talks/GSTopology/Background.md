@@ -26,7 +26,8 @@ Note that vector fields can be *time-dependent* as a section of $I\cross TM$.
 A *flow* is a group homomorphism $\RR \to \mathrm{Diff}(M)$ given by $t\mapsto \phi_t$.
 Its integral curves are given by $\gamma_p: \RR \to M$ where $t\mapsto \phi_t(p)$.
 
-Note that $X(p) \in T_pM$ is a tangent vector at each point, so we can ask that $\dd{\phi_t}{t} (p) = X(\phi_t(p))$, i.e. that the tangent vectors to a flow are given by a vector field.
+> Remark: Note that $X(p) \in T_pM$ is a tangent vector at each point, so we can ask that $\dd{\phi_t}{t} (p) = X(\phi_t(p))$, i.e. that the tangent vectors to a flow are given by a vector field.
+This works locally, and can be extended globally if $X$ is compactly supported.
 
 **Definition (Interior Product):**
 Let $M$ be a manifold and $X$ a vector field.
