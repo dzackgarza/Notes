@@ -8,8 +8,7 @@ A 1-form $\lambda$ such that $\lambda \wedge (d\lambda)^n  > 0$.
 
 
 
-**Definition (Hypersurface of contact type):**
-For $(X, \omega)$ a symplectic manifold, a hypersurface $\Sigma \injects X$ is of *contact-type* iff there is a contact form $\lambda$ such that $d\lambda = \restrictionof{\omega}{Y}$.
+
 
 **Example:**
 The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \vector q}$  given by $H  = K + U$ where $K = \frac 1 2 \norm{\vector p}^2$ and $U = U(\vector q)$ is a function of only $\vector q$.
