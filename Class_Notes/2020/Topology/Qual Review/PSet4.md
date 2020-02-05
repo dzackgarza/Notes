@@ -86,5 +86,5 @@ To get a threefold cover, we want the basepoint to lift to three preimages, so w
 
 Yes,
 
-![Image](figures/2020-02-04-21:50.png)\
+![Image](figures/2020-02-04-21:50.png)
 
