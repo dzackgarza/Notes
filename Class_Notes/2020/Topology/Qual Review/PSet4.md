@@ -41,3 +41,5 @@ Y\cross I \arrow[rr, "H"] \arrow[rruu, "\exists \tilde H", dashed] &  & X
 \end{tikzcd}
 
 $\pi$ clearly induces a map $p_*$ on $\pi_1$ by functoriality, so we'll show that $\ker p_*$ is trivial.
+Let $\gamma: S^1 \to \tilde X \in \pi_1(\tilde X)$ and suppose $p_*(\gamma) = [e] \in \pi_1(X)$. 
+We'll show $\gamma \homotopic [e]$ in $\pi_1(\tilde X)$.
