@@ -77,6 +77,8 @@ To get a threefold cover, we want the basepoint to lift to three preimages, so w
 - $\RP^2 \vee S^2 \vee \RP^2$.
 
 
+## 7
 
-
+- $\RP_3 \vee S^2 \vee \RP^3$, which has $\pi_2 = 0 \ast \ZZ \ast 0 = \ZZ$ since $\pi_{i\geq 1} X = \pi_{i\geq 1}\tilde X$ and $\tilde \RP^3 = S^3$.
+- $\RP^2 \vee S^3 \vee \RP^2$, which was $\pi_2 = \ZZ \ast 0 \ast \ZZ = \ZZ\ast \ZZ \neq \ZZ$
 
