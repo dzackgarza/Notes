@@ -42,6 +42,8 @@ Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\righ
 
 > This measures how a tensor field changes as we flow it along a vector field.
 
+![](2020-02-04-22-45-20.png)
+
 **Specialized definition**:
 If $\omega \in \Omega^{p+1}(M)$ is a differential form, we define 
 $$
