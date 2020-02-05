@@ -12,10 +12,22 @@ Note that closed forms are exact, since $d^2  = 0$, i.e. $\omega$ closed implies
 
 If $\alpha, \beta \in \Omega^p(M)$ with $\alpha-\beta$ exact, they are said to be *cohomologous*.
 
-**Definition:**
-A *vector field* $X$ on $M$ is a section of the tangent bundle $TM \mapsvia{\pi} M$, i.e. a continuous map $X: M \to TM$.
+**Definition (Vector Field):**
+A *vector field* $X$ on $M$ is a section of the tangent bundle $TM \mapsvia{\pi} M$.
+Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 
 ![](2020-02-03-20-52-40.png)
 
 **Definition (Interior Product):**
 Given a vector field $X$ on $M$, the associated *interior product* $\iota_X$ is given by $\iota_X: \Omega^p(M) \to \Omega^{p-1}(M)$ is the map which sends a $p\dash$form $\omega$ to the $p-1\dash$form $\alpha$ characterized by $\alpha(X_1, \cdots, X_{p-1}) = \omega(X, X_1, \cdots, X_{p-1})$, i.e. $\alpha = \omega(X, \wait, \cdots, \wait)$.
+
+**Definition (Interior Product):**
+Let $M$ be a manifold and $X$ a vector field.
+The interior product is a map
+\begin{align*}
+\iota_X: \Omega^{p+1}(M) 	&\to \Omega^p(M) 	&& & \\
+\omega 										&	\mapsto \iota_X \omega: \Lambda^p TM \to \RR \\
+& (X_1, \cdots, X_p) \to \omega (\vector X, X_1, \cdots, X_p)
+.\end{align*}
+
+> Note that this *contracts* a vector field with a differential form, coming from a natural pairing on $(i, j)$ tensors $V^{\tensor i}\tensor (V\dual)^{\tensor j}$.
