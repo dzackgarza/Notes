@@ -15,11 +15,10 @@ The tangent spaces are planes, and codimension 1 spaces are lines:
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
 Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T_p\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ locally and define $\xi$ by the condition $$dx_3 = 0$$
 
-> Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$ directions. Assigns a "horizontal" hyperplane to each point in $\RR^3$.
-
 ![](2020-02-01-22-28-35.png)
 
-> Note: want to show that this lifts to a differential 1-form on $M$, but how can it be written?
+> Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$ directions. Assigns a "horizontal" hyperplane to each point in $\RR^3$.
+
 
 > Remark: This is the kernel of a tangent covector at every point, thus the kernel of a section of the cotangent bundle -- i.e. a 1-form. This is a prototypical feature.
 
