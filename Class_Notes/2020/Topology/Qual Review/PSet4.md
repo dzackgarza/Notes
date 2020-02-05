@@ -57,3 +57,7 @@ This forces $\pi$ to be a degree 1 covering and hence a homeomorphism.
 
 ## 6
 
+Note $\pi_1 \RP^2 = \ZZ/2\ZZ$.
+
+- $S^2 \wedge S^2$
+- $
