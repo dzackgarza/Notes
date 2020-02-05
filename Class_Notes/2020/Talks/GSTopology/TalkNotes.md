@@ -106,8 +106,6 @@ For arbitrary triangles: unknown!
 
 Historically, the study of periodic orbits motivated the definition on contact structures.
 
-
-
 *Remark:*
 There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$. (?)
 
