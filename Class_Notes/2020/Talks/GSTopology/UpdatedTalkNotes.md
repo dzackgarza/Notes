@@ -25,10 +25,6 @@ Basic Questions:
 
 
 
-
-
-
-
 Example: Simple Harmonic Oscillator.
 
 ![](2020-02-03-21-23-02.png)
