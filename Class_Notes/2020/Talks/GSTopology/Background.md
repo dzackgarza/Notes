@@ -36,6 +36,10 @@ Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 
 Note that vector fields can be *time-dependent* as a section of $T(M\cross I) \to M\cross I$.
 
+
+**Definition (Regular Value):**
+Let $H: M \to \RR$ be a smooth function, then $c\in \RR$ is a *regular value* iff for every $p\in H\inv(c)$, the induced map $H^*: T_pM \to T_P \RR$ is surjective.
+
 **Definition (Closed Orbit):**
 An *closed orbit* of a vector field $X$ on $M$ is an element in the loop space $\gamma \in \Omega M$ (equivalently a map $\gamma: S^1 \to M$) satisfying the ODE $\dd{\gamma}{t}(t) = X(\gamma(t))$.
 
