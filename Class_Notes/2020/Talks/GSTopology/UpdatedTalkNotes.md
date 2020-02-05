@@ -18,12 +18,7 @@ The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \ve
 > Remark: all hypersurfaces of contact type $(X, \omega)$ look locally like $X \injects \mathrm{Sp}(X)$, i.e. $X$ embedded into its symplectification.
 
 
-**Definition:**
-An *closed orbit* of a vector field $X$ on $M$ is an element in the loop space $\gamma \in \Omega M$ (equivalently a map $\gamma: S^1 \to M$) satisfying the ODE $\dd{\gamma}{t}(t) = X(\gamma(t))$.
 
-> In words: the ODE says that the tangent vector at every point along the loop $\gamma$ should precisely be the tangent vector that the vector field $X$ prescribes at that point.
-
-> Note: Every fixed point of $X$ is trivially a closed orbit.
 
 Basic Questions: 
 
