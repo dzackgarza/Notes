@@ -16,8 +16,9 @@ Clear, since $\gamma_1 \sim \gamma_2 \implies [\gamma_1] = [\gamma_2] \in \pi_1(
 
 
 $\impliedby$:
+? Forgot how these arguments go.
 
-![Image](figures/2020-02-04-20:13.png)
+![Image](figures/2020-02-04-20:23.png)\
 
 $\qed$
 
