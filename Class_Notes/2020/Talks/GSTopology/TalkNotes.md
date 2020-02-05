@@ -20,7 +20,7 @@ Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and 
 > Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$ directions. Assigns a "horizontal" hyperplane to each point in $\RR^3$.
 
 
-> Remark: This is the kernel of a tangent covector at every point, thus the kernel of a section of the cotangent bundle -- i.e. a 1-form. This is a prototypical feature.
+> Remark: This is the kernel of a tangent covector at every point, i.e. a 1-form. This is a prototypical feature.
 
 *Example 3:*
 For $M=\RR^3$, write $T\dual \RR^3 = \spanof_\RR\theset{dx, dy, dz}$, and take $$\omega = dz + xdy \in \Omega^1(\RR^3)$$
