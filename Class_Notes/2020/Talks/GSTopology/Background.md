@@ -105,13 +105,7 @@ If $X$ is a vector field and $\iota_X \omega$ is both closed and exact, then $X$
 
 # Contact
 
-**Definition (Hyperplane Field):**
-A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
 
-**Definition (Contact Manifold)**
-A smooth manifold with a hyperplane field $(M^{2n+1}, \xi)$ is *contact* iff $\xi = \ker \alpha$ for some $\alpha \in \Omega^1(M)$ where $\alpha \wedge (d\alpha)^n$ is a top/volume form in $\Omega^{2n+1}(M)$
-
-> Note that $\lambda \wedge (d\lambda)^n = 0$ defines a foliation?
 
 **Definition (Overtwisted Contact Structure):**
 $(M, \xi)$ is *overtwisted* iff there exists an embedded disc $D^n \mapsvia{i} M$ such that $T(\bd D^n)_p \subset \xi_p$ pointwise for all $p \in \bd D^n$ and $TD^n_p$ is transverse to $\xi$ for every $p\in  (D^n)^\circ$.
