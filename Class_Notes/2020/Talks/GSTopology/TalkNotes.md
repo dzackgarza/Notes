@@ -33,8 +33,8 @@ This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes tha
 
 # Foliations
 
-*Remark:*
-Foliations arise when you have a PDE (IVP or BVP) defined on an $n\dash$manifold $M$, with some initial/boundary conditions defined on an embedded surface, and you want to find the time evolution of that system (moving you through leaves of the foliation, think of spacetime being foliated by space-like hyperplanes in General Relativity).
+> *Remark:*
+> Foliations arise when you have a PDE (IVP or BVP) defined on an $n\dash$manifold $M$, with some initial/boundary conditions defined on an embedded surface, and you want to find the time evolution of that system (moving you through leaves of the foliation, think of spacetime being foliated by space-like hyperplanes in General Relativity).
 
 **Definition (Foliation):**
 A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalent conditions:
@@ -106,8 +106,7 @@ For arbitrary triangles: unknown!
 
 Historically, the study of periodic orbits motivated the definition on contact structures.
 
-**Definition:**
-$(M^{2n+1}, \xi)$ is a contact manifold iff $\xi$ is a hyperplane distribution given by $\ker \lambda \in \Omega^1(M)$ where $\lambda \wedge (d\lambda)^n \neq 0\in \Omega^{2n+1}(M)$.
+
 
 *Remark:*
 There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$. (?)
