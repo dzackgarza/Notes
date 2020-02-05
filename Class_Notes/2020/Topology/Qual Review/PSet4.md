@@ -68,7 +68,7 @@ And so *all* possibilities for regular covering spaces are given by
 
 - $\vee_{2k} S^2$ "beads" wrapped into a necklace for any $k \geq 1$
 - $\RP^2 \vee (\bigvee^k S^2) \vee \RP^2$
-- $\vee^\infty S^2$
+- $\vee^\infty S^2$, the universal cover
 
 
 
