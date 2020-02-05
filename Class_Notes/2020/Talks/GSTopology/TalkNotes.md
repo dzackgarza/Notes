@@ -1,6 +1,26 @@
 > Convention: 
 > All manifolds discussed will be smooth, real, Hausdorff, second-countable, connected, not necessarily closed/compact, possibly with boundary.
 
+*Open Problem:**
+Does every triangular billiards admit a periodic orbit?
+
+*Answer (1775):* 
+Yes for acute triangles:
+
+![](2020-02-01-23-59-05.png)
+
+For arbitrary triangles: unknown!
+
+Historically, the study of periodic orbits motivated the definition on contact structures.
+
+*Remark:*
+There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$. (?)
+
+*Remark:*
+Contact manifolds are cylinder-like boundaries of symplectic manifolds; namely if $M$ is contact then we can pick any $C^1$ increasing function $f: \RR \to \RR^+$  (e.g. $f(t) = e^t$) and obtain an exact symplectic form $\omega = d(f\lambda)$ on $M_C \definedas M \cross \RR$.
+
+Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector field is the restriction to $M \cross \theset{0}$.
+
 # Hyperplane Fields
 
 These are important because of their ties to *foliations*.
@@ -94,24 +114,6 @@ TFAE:
 
 # Contact Structures
 
-**Open Problem:**
-Does every triangular billiards admit a periodic orbit?
-
-*Answer (1775):* 
-Yes for acute triangles:
-
-![](2020-02-01-23-59-05.png)
-
-For arbitrary triangles: unknown!
-
-Historically, the study of periodic orbits motivated the definition on contact structures.
-
-*Remark:*
-There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$. (?)
-
-*Remark:*
-Contact manifolds are cylinder-like boundaries of symplectic manifolds; namely if $M$ is contact then we can pick any $C^1$ increasing function $f: \RR \to \RR^+$  (e.g. $f(t) = e^t$) and obtain an exact symplectic form $\omega = d(f\lambda)$ on $M_C \definedas M \cross \RR$.
-
-Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector field is the restriction to $M \cross \theset{0}$.
+*
 
 
