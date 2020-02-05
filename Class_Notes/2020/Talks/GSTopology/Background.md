@@ -57,6 +57,11 @@ where $d$ is the exterior product.
 
 > This is a consequence of "Cartan's Magic Formula", not the actual definition!
 
+# Symplectic
+**Definition (Symplectic Vector Field)**
+A vector field $X$ is symplectic iff $\mathcal{L}_X(\omega) = 0$.
+
+
 # Contact
 
 **Definition (Overtwisted Contact Structure):**
