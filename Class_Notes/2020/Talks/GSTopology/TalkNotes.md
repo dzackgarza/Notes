@@ -1,5 +1,5 @@
-Convention: 
-All manifolds discussed will be smooth, real, Hausdorff, second-countable, connected, not necessarily closed/compact, possibly with boundary.
+> Convention: 
+> All manifolds discussed will be smooth, real, Hausdorff, second-countable, connected, not necessarily closed/compact, possibly with boundary.
 
 # Hyperplane Fields
 
