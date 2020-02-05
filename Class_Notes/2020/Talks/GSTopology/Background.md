@@ -20,7 +20,7 @@ Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 ![](2020-02-03-20-52-40.png)
 
 **Definition (Flow):**
-Given a vec
+A flow is a group homomorphism $\RR \to \mathrm{Diff}(M)$ given by $t\mapsto \phi_t$.
 
 **Definition (Interior Product):**
 Let $M$ be a manifold and $X$ a vector field.
