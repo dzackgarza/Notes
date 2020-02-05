@@ -73,8 +73,10 @@ And so *all* possibilities for regular covering spaces are given by
 
 To get a threefold cover, we want the basepoint to lift to three preimages, so we can take
 
-- $S^2 \vee S^2 \vee S^2$
+- $S^2 \vee S^2 \vee S^2$ wrapped
 - $\RP^2 \vee S^2 \vee \RP^2$.
+
+
 
 
 
