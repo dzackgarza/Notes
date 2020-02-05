@@ -48,15 +48,7 @@ Definition: Hamiltonian flow.
 **Definition (Reeb vector field):**
 
 
-**Theorem:**
-A Liouville vector field $X$ satisfies $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
 
-*Proof:*
-\begin{align*}
-\mathcal{L}_X \omega = [d, \iota_X] \omega = \iota_X(d\omega) + d(\iota_x \omega) = \iota_x(d\omega) + d\lambda = \iota_X(0) + d\lambda = d\lambda = \omega
-.\end{align*}
-
-> Use the fact that $\omega$ is closed, so $d\omega = 0$.
 
 $\qed$
 
