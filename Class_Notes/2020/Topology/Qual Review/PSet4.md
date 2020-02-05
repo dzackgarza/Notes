@@ -59,5 +59,13 @@ This forces $\pi$ to be a degree 1 covering and hence a homeomorphism.
 
 Note $\pi_1 \RP^2 = \ZZ/2\ZZ$, so $\pi_1 X = (\ZZ/2\ZZ)^2$.
 
-- $S^2 \wedge S^2$
-- $
+The pullback of any neighborhood of the basepoint needs to be locally homeomorphic to one of
+
+- $S^2 \vee S^2$
+- $\RP^2 \vee S^2$
+
+And so *all* possibilities for regular covering spaces are given by
+
+- $\vee_{2k} S^2$ "beads" wrapped into a necklace for any $k \geq 1$
+- $\RP^2 \vee (\bigvee^k S^2) \vee \RP^2$
+
