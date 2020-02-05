@@ -50,3 +50,10 @@ By the HLP, this lifts to $\tilde H: I\cross S^1 \to \tilde X$.
 Noting that $\pi\inv(\const(\xo))$ is still a constant loop, this says that $\gamma$ is homotopic to a constant loop and thus nullhomotopic. 
 
 ## 1c
+
+Since both spaces are path-connected, the degree o the covering map $\pi$ is precisely the index of the included fundamental group.
+This forces $\pi$ to be a degree 1 covering and hence a homeomorphism.
+
+
+## 6
+
