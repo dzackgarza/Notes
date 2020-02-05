@@ -19,7 +19,7 @@ Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 
 ![](2020-02-03-20-52-40.png)
 
-Note that vector fields can be *time-dependent* as a section of $I\cross TM$.
+Note that vector fields can be *time-dependent* as a section of $T(M\cross I) \to M\cross I$.
 
 
 **Definition (Flow):**
