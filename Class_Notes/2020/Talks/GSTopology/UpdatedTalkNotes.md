@@ -10,7 +10,7 @@ A 1-form $\lambda$ such that $\lambda \wedge (d\lambda)^n  > 0$.
 
 
 
-**Example:**
+**Example (Hypersurfaces of contact type):**
 The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \vector q}$  given by $H  = K + U$ where $K = \frac 1 2 \norm{\vector p}^2$ and $U = U(\vector q)$ is a function of only $\vector q$.
 (Usually kinetic + potential energy.)
 
