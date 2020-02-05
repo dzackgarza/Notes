@@ -80,7 +80,7 @@ If $X$ is a vector field and $\iota_X \omega$ is both closed and exact, then $X$
 # Contact
 
 **Definition (Contact Manifold)**
-
+$(M^{2n+1}, \alpha \in \Omega^1(M))$
 
 **Definition (Overtwisted Contact Structure):**
 $(M, \xi)$ is *overtwisted* iff there exists an embedded disc $D^n \mapsvia{i} M$ such that $T(\bd D^n)_p \subset \xi_p$ pointwise for all $p \in \bd D^n$ and $TD^n_p$ is transverse to $\xi$ for every $p\in  (D^n)^\circ$.
