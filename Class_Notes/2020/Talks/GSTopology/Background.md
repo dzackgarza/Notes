@@ -1,3 +1,5 @@
+# General
+
 **Definition (Derivative of a Map):**
 Recall that for any smooth function $H: M\to N$, the *derivative* of $H$ at $p\in M$ is defined by $dH_p: T_pM \to T_p N$ which we define using the derivation definition of tangent vectors: given a derivation $v\in T_p M: C^\infty(M) \to \RR$, we send it to the derivation $w_v \in T_{q}M = C^\infty(M) \to \RR$ where $w_v$ actson on $f\in C^\infty(M)$ by precomposition, i.e. $w_v \actson f = v(f \circ H)$.
 
@@ -49,3 +51,8 @@ $$
 where $d$ is the exterior product.
 
 > This is a consequence of "Cartan's Magic Formula", not the actual definition!
+
+# Contact
+
+**Definition (Overtwisted Contact Structure):**
+$(M, \xi)$ is *overtwisted* iff there exists an embedded disc $D^n \mapsvia{i} M$ such that $T(\bd D^n)_p \subset \xi_p$ pointwise for all $p \in \bd D^n$ and $TD^n_p$ is transverse to $\xi$ for every $p\in  (D^n)^\circ$.
