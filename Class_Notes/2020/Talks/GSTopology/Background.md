@@ -21,9 +21,12 @@ Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 
 Note that vector fields can be *time-dependent* as a section of $I\cross TM$.
 
+
 **Definition (Flow):**
 A *flow* is a group homomorphism $\RR \to \mathrm{Diff}(M)$ given by $t\mapsto \phi_t$.
 Its integral curves are given by $\gamma_p: \RR \to M$ where $t\mapsto \phi_t(p)$.
+
+Note that $X(p) \in T_pM$ is a tangent vector at each point, as is
 
 **Definition (Interior Product):**
 Let $M$ be a manifold and $X$ a vector field.
