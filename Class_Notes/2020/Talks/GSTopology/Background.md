@@ -5,7 +5,6 @@ Recall that for any smooth function $H: M\to N$, the *derivative* of $H$ at $p\i
 
 ![](2020-02-03-10-56-11.png)
 
-
 **Definition (Closed and Exact Forms):**
 Let $d_p: \Omega^p(M) \to \Omega^{p+1}(M)$ be the exterior derivative. 
 Then a form $\omega$ is *closed* (or is a *cocycle*) iff $\omega \in \ker d_p$, and *exact* (or a *coboundary*) iff $\omega \in \im d_{p-1}$.
