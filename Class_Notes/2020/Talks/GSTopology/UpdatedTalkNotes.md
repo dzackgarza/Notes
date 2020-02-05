@@ -76,25 +76,6 @@ Definition: Hamiltonian flow.
 
 
 
-**Definition (Lie Derivative):**
-
-**General definition**: 
-For an arbitrary tensor field $T$ (a section of some tensor bundle $V \to TM^{\tensor n} \to M$, example: Riemann curvature tensor, or any differential form) and a vector field $X$ (a section of the tangent bundle $W \to TM \to M$), we can define a "derivative" of $T$ along $X$.
-Namely, $(\mathcal{L}_X T)_p = \left[\dd{}{t} ((\phi_{-t})_* T_{\phi_t(p)})\right]_{t=0}$ where
-
-- $\phi_t$ is the 1-parameter group of diffeomorphisms induced by the flow induced by $X$,
-- $(\wait)_*$ is the pushforward
-
-> This measures how a tensor field changes as we flow it along a vector field.
-
-**Specialized definition**:
-If $\omega \in \Omega^{p+1}(M)$ is a differential form, we define 
-$$
-\mathcal{L}_x\omega = [d, \iota_x] \omega = d(\iota_x \omega) - \iota_x(d\omega)
-$$ 
-where $d$ is the exterior product.
-
-> This is a consequence of "Cartan's Magic Formula", not the actual definition!
 
 **Definition (Liouville form and vector field):**
 For $(M, \omega)$ a symplectic manifold, a Liouville form is any 1-form $\lambda$ such that $d\lambda = \omega$.
