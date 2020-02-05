@@ -13,3 +13,14 @@ Proof:
 
 $\implies$:
 Clear, since $\gamma_1 \sim \gamma_2 \implies [\gamma_1] = [\gamma_2] \in \pi_1(X)$, so take $\alpha(t) = x_0$ the constant loop for all $t$.
+
+
+$\impliedby$:
+
+
+$\qed$
+
+
+Counterexample where homotopic loops are not equal in $\pi_1$, but just conjugate:
+
+![Image](figures/2020-02-04-20:00.png)\
