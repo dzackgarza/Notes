@@ -36,6 +36,13 @@ Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 
 Note that vector fields can be *time-dependent* as a section of $T(M\cross I) \to M\cross I$.
 
+**Definition (Closed Orbit):**
+An *closed orbit* of a vector field $X$ on $M$ is an element in the loop space $\gamma \in \Omega M$ (equivalently a map $\gamma: S^1 \to M$) satisfying the ODE $\dd{\gamma}{t}(t) = X(\gamma(t))$.
+
+> In words: the ODE says that the tangent vector at every point along the loop $\gamma$ should precisely be the tangent vector that the vector field $X$ prescribes at that point.
+
+> Note: Every fixed point of $X$ is trivially a closed orbit.
+
 
 **Definition (Flow):**
 A *flow* is a group homomorphism $\RR \to \mathrm{Diff}(M)$ given by $t\mapsto \phi_t$.
