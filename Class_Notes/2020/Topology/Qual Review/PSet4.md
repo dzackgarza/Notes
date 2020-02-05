@@ -71,4 +71,10 @@ And so *all* possibilities for regular covering spaces are given by
 - $\vee^\infty S^2$, the universal cover
 
 
+To get a threefold cover, we want the basepoint to lift to three preimages, so we can take
+
+- $S^2 \vee S^2 \vee S^2$
+- $\RP^2 \vee S^2 \vee \RP^2$.
+
+
 
