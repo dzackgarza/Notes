@@ -26,3 +26,18 @@ $\qed$
 Counterexample where homotopic loops are not equal in $\pi_1$, but just conjugate:
 
 ![Image](figures/2020-02-04-20:00.png)\
+
+# Covering Spaces
+
+## 1b
+
+
+Homotopy lifting property:
+
+\begin{tikzcd}
+                                                                   &  & \tilde X \arrow[dd, "\pi"] \\
+                                                                   &  &                            \\
+Y\cross I \arrow[rr, "H"] \arrow[rruu, "\exists \tilde H", dashed] &  & X                         
+\end{tikzcd}
+
+$\pi$ clearly induces a map $p_*$ on $\pi_1$ by functoriality, so we'll show that $\ker p_*$ is trivial.
