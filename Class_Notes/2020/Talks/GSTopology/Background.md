@@ -65,7 +65,7 @@ A vector field $X$ is symplectic iff $\mathcal{L}_X(\omega) = 0$.
 > Remark: Then the flow $\phi_X$ preserves the symplectic structure.
 
 **Definition (Hamiltonian Vector Field)**:
-If a vector field $X$ satisfies $\iota_X \omega$ is both closed and exact, then 
+If a vector field $X$ satisfies $\iota_X \omega$ is both closed and exact, then $X$ is a *Hamiltonian vector field*.
 
 # Contact
 
