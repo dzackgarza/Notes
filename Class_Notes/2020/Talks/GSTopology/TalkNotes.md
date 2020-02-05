@@ -131,10 +131,4 @@ Contact manifolds are cylinder-like boundaries of symplectic manifolds; namely i
 
 Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector field is the restriction to $M \cross \theset{0}$.
 
-# Weinstein Surgery
-
-*General idea:* 
-Weinstein manifolds are symplectic manifolds that can be described by Morse-theoretic data.
-The level sets are contact manifolds, so we can attach handles to construct new contact manifolds from old.
-
 
