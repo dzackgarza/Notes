@@ -102,3 +102,36 @@ A smooth manifold with a hyperplane field $(M^{2n+1}, \xi)$ is *contact* iff $\x
 
 **Definition (Overtwisted Contact Structure):**
 $(M, \xi)$ is *overtwisted* iff there exists an embedded disc $D^n \mapsvia{i} M$ such that $T(\bd D^n)_p \subset \xi_p$ pointwise for all $p \in \bd D^n$ and $TD^n_p$ is transverse to $\xi$ for every $p\in  (D^n)^\circ$.
+
+# Handles
+
+**Definition (Normal Bundle):**
+Let $i: S \injects M$ be an embedding, and let $N_M(S)$ denote the *normal bundle* of $S$ in $M$, which fits into an exact sequence
+\begin{align*}
+0 \to TS \to i^* TM \to N_M(S) \to 0
+,\end{align*}
+
+where $i*TM$ is the pullback:
+
+\begin{tikzcd}
+i^* TS \arrow[dd, dashed] \arrow[rr, dashed] &  & TM \arrow[dd] \\
+                                             &  &               \\
+S \arrow[rr, "i"]                            &  & M            
+\end{tikzcd}
+
+so we can identify $N_M(S) \cong \restrictionof{TM}{i(S)}/TS$.
+
+> Remark: We can "symplectify" this definition by requiring that the pullback of $\omega$ is constant rank.
+
+**Definition (Tubular Neighborhood):**
+For $S\injects M$ an embedded submanifold, a *tubular neighborhood* of $S$ is an embedding of the total space of a vector bundle $E \to S$ along with a smooth map $J: E \to M$ making the following diagram commute:
+
+\begin{tikzcd}
+E \arrow[rrdd, "J"] \arrow[dd, "\pi"]                  &  &   \\
+                                                       &  &   \\
+S \arrow[rr, "i"] \arrow[uu, "0_E", dashed, bend left] &  & M
+\end{tikzcd}
+
+where $0_E$ is the zero section.
+
+![](2020-02-05-00-40-02.png)
