@@ -75,9 +75,6 @@ Definition: Hamiltonian flow.
 **Definition (Reeb vector field):**
 
 
-
-
-
 **Theorem:**
 A Liouville vector field $X$ satisfies $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
 
