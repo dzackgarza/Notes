@@ -3,15 +3,6 @@ All manifolds discussed will be smooth, real, Hausdorff, second-countable, conne
 
 # Hyperplane Fields
 
-Goal #1:
-Understand foliations and their relation to contact structures.
-
-
-
-
-
-# Examples of Hyperplane Fields
-
 *Example 1:*
 Take $M=S^2$, so we have $\RR^2 \to TS^2 \to S^2$.
 The tangent spaces are planes, and codimension 1 spaces are lines:
