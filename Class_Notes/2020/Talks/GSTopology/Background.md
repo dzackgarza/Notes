@@ -1,5 +1,15 @@
 # General
 
+**Definition (Tangent Bundle):**
+$TM = \disjoint_{p\in M} T_pM$, which fits into the vector bundle $\RR^n \to TM \to M$ so $T_p M \cong \RR^n$.
+
+$T_p M = \spanof_\RR\theset{\partial x_i}$
+
+**Definition (Cotangent Bundle):**
+Since $T_p M$ is a vector space, we can consider its dual $T_p\dual M$, and similarly the cotangent bundle $\RR^n \to T\dual M \to M$.
+
+$T_p\dual M = \spanof_\RR\theset{dx_i}$.
+
 **Definition (Derivative of a Map):**
 Recall that for any smooth function $H: M\to N$, the *derivative* of $H$ at $p\in M$ is defined by $dH_p: T_pM \to T_p N$ which we define using the derivation definition of tangent vectors: given a derivation $v\in T_p M: C^\infty(M) \to \RR$, we send it to the derivation $w_v \in T_{q}M = C^\infty(M) \to \RR$ where $w_v$ actson on $f\in C^\infty(M)$ by precomposition, i.e. $w_v \actson f = v(f \circ H)$.
 
