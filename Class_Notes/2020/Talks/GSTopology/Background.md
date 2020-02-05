@@ -19,6 +19,8 @@ Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 
 ![](2020-02-03-20-52-40.png)
 
+Note that vector fields can be *time-dependent*
+
 **Definition (Flow):**
 A *flow* is a group homomorphism $\RR \to \mathrm{Diff}(M)$ given by $t\mapsto \phi_t$.
 Its integral curves are given by $\gamma_p: \RR \to M$ where $t\mapsto \phi_t(p)$.
