@@ -1,7 +1,5 @@
 # Motivation
 
-
-
 **Example (Hypersurfaces of contact type):**
 The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \vector q}$  given by $H  = K + U$ where $K = \frac 1 2 \norm{\vector p}^2$ and $U = U(\vector q)$ is a function of only $\vector q$.
 (Usually kinetic + potential energy.)
@@ -41,16 +39,7 @@ Example: Simple Harmonic Oscillator.
 
 	- If the Hamiltonian evolved over time, this region would travel around phases space, with the *volume* of this region invariant.
 
-Definition: Hamiltonian flow.
-
 **Definition (Reeb flow):**
 
 **Definition (Reeb vector field):**
-
-
-## Big Theorems
-
-
-
-
 
