@@ -2,7 +2,6 @@
 > All manifolds discussed will be smooth, real, Hausdorff, second-countable, connected, not necessarily closed/compact, possibly with boundary.
 
 
-
 # Hyperplane Fields
 
 These are important because of their ties to *foliations*.
@@ -93,9 +92,5 @@ TFAE:
 1. $\mathcal{F}$ is a taut foliation.
 2. There is a flow transverse to $\mathcal{F}$ that preserves some volume form on $M$.
 3. There is a Riemannian metric on $M$ for which each leaf $L_b$ is a least-area hypersurface.
-
-# Contact Structures
-
-*
 
 
