@@ -61,6 +61,8 @@ where $d$ is the exterior product.
 **Definition (Symplectic Vector Field)**
 A vector field $X$ is symplectic iff $\mathcal{L}_X(\omega) = 0$.
 
+> Remark: Then the flow $\phi_X$ preserves the symplectic structure.
+
 
 # Contact
 
