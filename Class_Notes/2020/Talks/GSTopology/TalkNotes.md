@@ -5,13 +5,13 @@
 
 These are important because of their ties to *foliations*.
 
-*Example 1:*
+*Example 1 of a Hyperplane Fields:*
 Take $M=S^2$, so we have $\RR^2 \to TS^2 \to S^2$.
 The tangent spaces are planes, and codimension 1 spaces are lines:
 
 ![](2020-02-01-23-22-51.png)
 
-*Example 2:*
+*Example 2 of a Hyperplane Fields:*
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
 Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T_p\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ locally and define $\xi$ by the condition $$dx_3 = 0$$
 
@@ -22,7 +22,7 @@ Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and 
 
 > Remark: This is the kernel of a tangent covector at every point, i.e. a 1-form. This is a prototypical feature.
 
-*Example 3:*
+*Example 3 of a Hyperplane Fields:*
 For $M=\RR^3$, write $T\dual \RR^3 = \spanof_\RR\theset{dx, dy, dz}$, and take $$\omega = dz + xdy \in \Omega^1(\RR^3)$$
 This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes that look like this:
 
@@ -47,20 +47,20 @@ A *foliation* on $M$ is a hyperplane field $\xi$ satisfying one of two equivalen
 
 The "slices" given by the surfaces are referred to as *leaves*.
 
-*Example:*
+*Example of a Foliation:*
 As in example 2, take $\RR^3 = \disjoint_{t\in \RR} ~t + H_{xy}$ where $H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat z=0}$ is the $xy\dash$plane and $t+ H_{xy} = \theset{(x,y,z) \in \RR^3 \suchthat t = z}$ are the vertical translates.
 This yields a foliation of $\RR^3$ by planes.
 
-*Example:*
+*Example of a Foliation:*
 Any fiber bundle $F \to E \mapsvia{\pi} B$ is foliated by leaves $L_b \definedas \theset{b} \cross \pi\inv(b)$.
 
-*Example*:
+*Example of a Foliation*:
 Let $T = \RR^2/\ZZ^2$ be a flat torus and $q$ any irrational number; then lines $L_q$ of slope $q$ foliate $T$.
 
-*Example:*
+*Example of a Foliation:*
 Any nonsingular vector field $X$ on a closed manifold $M$ defines a foliation; each leaf is the orbit of a point under the flow of $X$.
 
-*Example:*
+*Example of a Foliation:*
 Take $M$ closed, $G$ a connected Lie group acting locally freely (the stabilizer of a point is a discrete subgroup of $G$). Then again $M$ is foliated by orbits of points.
 
 *Example (The Reeb Foliation):*
