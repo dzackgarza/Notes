@@ -3,6 +3,8 @@ All manifolds discussed will be smooth, real, Hausdorff, second-countable, conne
 
 # Hyperplane Fields
 
+These are important because of their ties to *foliations*.
+
 *Example 1:*
 Take $M=S^2$, so we have $\RR^2 \to TS^2 \to S^2$.
 The tangent spaces are planes, and codimension 1 spaces are lines:
@@ -11,25 +13,24 @@ The tangent spaces are planes, and codimension 1 spaces are lines:
 
 *Example 2:*
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
-Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T_p\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ locally and define $\xi$ by the condition $dx_3 = 0$.
+Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T_p\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ locally and define $\xi$ by the condition $$dx_3 = 0$$
 
-Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$ directions. Assigns a "horizontal" hyperplane to each point in $\RR^3$.
+> Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$ directions. Assigns a "horizontal" hyperplane to each point in $\RR^3$.
 
 ![](2020-02-01-22-28-35.png)
 
 > Note: want to show that this lifts to a differential 1-form on $M$, but how can it be written?
 
-Note that this is the kernel of a tangent covector at every point, thus the kernel of a section of the cotangent bundle -- i.e. a 1-form. This is a prototypical feature.
+> Remark: This is the kernel of a tangent covector at every point, thus the kernel of a section of the cotangent bundle -- i.e. a 1-form. This is a prototypical feature.
 
 *Example 3:*
-For $M=\RR^3$, write $T\dual \RR^3 = \spanof_\RR\theset{dx, dy, dz}$, and take $\omega = dz + xdy \in \Omega^1(\RR^3)$.
+For $M=\RR^3$, write $T\dual \RR^3 = \spanof_\RR\theset{dx, dy, dz}$, and take $$\omega = dz + xdy \in \Omega^1(\RR^3)$$
 This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes that look like this:
 
 ![](2020-02-01-22-34-56.png)
 
-Note that this has a more twisted structure, which is what geometrically makes it contact -- no embedded (hyper) surface in $\RR^3$ can have an open subset $U$ such that $\xi$ is tangent to $p$ for every $p\in U$.
-
-These are important because of their ties to *foliations*.
+> Remark:
+> Note that this has a more twisted structure, which is what geometrically makes it contact -- no embedded (hyper) surface in $\RR^3$ can have an open subset $U$ such that $\xi$ is tangent to $p$ for every $p\in U$.
 
 # Foliations
 
