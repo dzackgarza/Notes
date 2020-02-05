@@ -19,9 +19,6 @@ Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 ![](2020-02-03-20-52-40.png)
 
 **Definition (Interior Product):**
-Given a vector field $X$ on $M$, the associated *interior product* $\iota_X$ is given by $\iota_X: \Omega^p(M) \to \Omega^{p-1}(M)$ is the map which sends a $p\dash$form $\omega$ to the $p-1\dash$form $\alpha$ characterized by $\alpha(X_1, \cdots, X_{p-1}) = \omega(X, X_1, \cdots, X_{p-1})$, i.e. $\alpha = \omega(X, \wait, \cdots, \wait)$.
-
-**Definition (Interior Product):**
 Let $M$ be a manifold and $X$ a vector field.
 The interior product is a map
 \begin{align*}
