@@ -15,6 +15,11 @@ Recall that for any smooth function $H: M\to N$, the *derivative* of $H$ at $p\i
 
 ![](2020-02-03-10-56-11.png)
 
+**Definition: Fields and Forms**
+A section of $TM$ is a vector field, and a section of $T\dual M$ is a 1-form.
+
+More generally, differential $k\dash$forms are in $\Omega^k(M) \definedas \Gamma(\Lambda^k T\dual M)$, i.e. sections of exterior powers of the cotangent bundle.
+
 **Definition (Closed and Exact Forms):**
 Let $d_p: \Omega^p(M) \to \Omega^{p+1}(M)$ be the exterior derivative. 
 Then a form $\omega$ is *closed* (or is a *cocycle*) iff $\omega \in \ker d_p$, and *exact* (or a *coboundary*) iff $\omega \in \im d_{p-1}$.
