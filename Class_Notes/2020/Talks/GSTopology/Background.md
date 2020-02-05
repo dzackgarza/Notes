@@ -19,7 +19,7 @@ Recall that these form an algebra $\mathfrak{X}(M)$ under the Lie bracket.
 
 ![](2020-02-03-20-52-40.png)
 
-Note that vector fields can be *time-dependent*
+Note that vector fields can be *time-dependent* as a section of $I\cross TM$.
 
 **Definition (Flow):**
 A *flow* is a group homomorphism $\RR \to \mathrm{Diff}(M)$ given by $t\mapsto \phi_t$.
