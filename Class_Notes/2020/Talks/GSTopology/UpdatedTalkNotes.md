@@ -1,13 +1,5 @@
 # Motivation
 
-Basic question: when does the flow of a vector field admit a *periodic orbit*?
-
-
-**Definition (Contact form):**
-A 1-form $\lambda$ such that $\lambda \wedge (d\lambda)^n  > 0$.
-
-
-
 
 
 **Example (Hypersurfaces of contact type):**
@@ -21,6 +13,7 @@ The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \ve
 
 Basic Questions: 
 
+- Basic question: when does the flow of a vector field admit a *periodic orbit*?
 - Does every/any vector field on a smooth manifold $M$ admit a closed orbit?
   - Corollary: does every/any vector field on $M$ admit a fixed point?
   - Note that if $\chi(M) \neq 0$, the Poincare-Hopf index theorem forces every vector field to have a fixed point.
