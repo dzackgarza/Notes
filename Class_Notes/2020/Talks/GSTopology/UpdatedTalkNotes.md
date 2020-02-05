@@ -74,16 +74,7 @@ Definition: Hamiltonian flow.
 
 **Definition (Reeb vector field):**
 
-**Definition (Interior Product):**
-Let $M$ be a manifold and $X$ a vector field.
-The interior product is a map
-\begin{align*}
-\iota_X: \Omega^{p+1}(M) 	&\to \Omega^p(M) 	&& & \\
-\omega 										&	\mapsto \iota_X \omega: \Lambda^p TM \to \RR \\
-& (X_1, \cdots, X_p) \to \omega (\vector X, X_1, \cdots, X_p)
-.\end{align*}
 
-> Note that this *contracts* a vector field with a differential form, coming from a natural pairing on $(i, j)$ tensors $V^{\tensor i}\tensor (V\dual)^{\tensor j}$.
 
 **Definition (Lie Derivative):**
 
