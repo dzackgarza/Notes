@@ -7,11 +7,11 @@ endef
 renew: ; @$(renew_md); echo "Done"
 
 compile:
-	renew
+	make renew
 	latex_preview -f ./FullNotes.md -j
 
 view: 
-	renew
+	make renew
 	latex_preview -f ./FullNotes.md -v
 
 .ONESHELL:
