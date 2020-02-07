@@ -1,15 +1,17 @@
 SHELL:=/bin/zsh
 
-define compile_md = 
+define renew_md = 
 	{echo "---\n title: Tilings\n---\n\n" && fd --full-path ./sections | sort -nr | sed 'N;s/\(.*\)\n\(.*\)/\2\n\1/' | grep "md" | sort -n | awk -F ":" '{print "!include " $$1 "\n";}' } > FullNotes.md 2>&1;
-	latex_preview -f ./FullNotes.md -j
 endef
 
+renew: ; @$(renew_md); echo "Done"
 
-compile: ; @$(compile_md); echo "Done"
+compile:
+	renew
+	latex_preview -f ./FullNotes.md -j
 
 view: 
-	compile
+	renew
 	latex_preview -f ./FullNotes.md -v
 
 .ONESHELL:
