@@ -9,6 +9,7 @@ endef
 compile: ; @$(compile_md); echo "Done"
 
 view: 
+	compile
 	latex_preview -f ./FullNotes.md -v
 
 .ONESHELL:
