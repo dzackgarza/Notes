@@ -62,7 +62,7 @@ Take derivative along two paths, along a ray with constant angle $\theta_0$ and 
 Then equate real and imaginary parts.
 See problem set 1.
 
-Computing Arguments:
+**Computing Arguments:**
 $\Arg(z/w) = \Arg(z) - \Arg(w)$.
 
 The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle is $\frac{n-2}{n}\pi$.
