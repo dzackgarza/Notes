@@ -8,7 +8,14 @@ f_z &= f_x = i\inv f_y
 
 - Holomorphic: once complex differentiable in neighborhoods of every point.
 - Analytic: equal to its Taylor series expansion
-- 
+
+**Cauchy Inequality:**
+Given $z_0\in \Omega$, pick the largest disc $D_R(z_0) \subset \Omega$ and let $C_R = \bd D_R$.
+Using the integral formula, defining $\norm{f}_{C_R} = \max_{\abs{z-z_0} = R} \abs{f(z)}$
+
+\begin{align*}
+\abs{ f^{(n)}(z_0) } \leq \frac{n!}{2\pi} \int_0^{2\pi} \frac{\norm{f}_{C_R}}{R^{n+1}} R~d\theta = \frac{n! \norm{f}_{C_R}}{R^{n}}
+.\end{align*}
 
 
 
