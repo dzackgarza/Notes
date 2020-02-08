@@ -10,7 +10,7 @@ f_z &= f_x = i\inv f_y
 - Analytic: equal to its Taylor series expansion
 - 
 
-\begin{array}{l}{\text { Cauchy Inequality: Given } z_{0} \in \Omega, \text { pick the largest disc } D_{R}\left(z_{0}\right) \subset \Omega \text { and let } C_{R}=\partial D_{R} . \text { Using }} \\ {\text { the integral formula, defining }\|f\|_{C_{R}}=\max _{\left|z-z_{0}\right|=R}|f(z)|} \\ {\qquad\left|f^{(n)}\left(z_{0}\right)\right| \leq \frac{n !}{2 \pi} \int_{0}^{2 \pi} \frac{\|f\|_{C_{R}}}{R^{n+1}} R d \theta=\frac{n !\|f\|_{C_{R}}}{R^{n}}}\end{array}
+
 
 > Collection of facts used on problem sets
 
