@@ -46,7 +46,7 @@ In particular, we can use the fact that $\dim M(\lambda) < \infty \iff \lambda \
 
 \begin{align*}
 M(\lambda) &= \bigoplus_{i\in \ZZ^+} M(\lambda)_{\lambda - 2i} \definedas \bigoplus_{\substack{i\in \ZZ^+ \\ \lambda_i \definedas \lambda - 2i}} M(\lambda)_{\lambda_i} \\
-M(\mu) &= \bigoplus_{j\in \ZZ^+} M(\mu)_{\mu - 2j}
+M(\mu) &= \bigoplus_{j\in \ZZ^+} M(\mu)_{\mu - 2j} \definedas \bigoplus_{\substack{j\in \ZZ^+ \\ \mu_i \definedas \mu - 2j}} M(\mu)_{\mu_j} 
 .\end{align*}
 
 By the initial observation, this yields a weight space decomposition for $N$ given by 
