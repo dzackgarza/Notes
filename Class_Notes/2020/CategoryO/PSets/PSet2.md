@@ -42,7 +42,7 @@ h\cdot(v\tensor w)
 
 Letting $\lieg = \liesl(2, \CC)$, so $\lambda, \mu \in \lieh^* \cong \CC$, the claim is that it is possible for $N$ to *not* be finitely-generated as a $U(\lieg)\dash$module.
 
-Let $\theset{y, h, x}$ be the usual basis.
+Let $\theset{y, h, x}$ be the usual basis for $\lieg$, for which $U(\lieg)$ has the usual associated PBW basis.
 We can use the fact that $\dim M(z) < \infty \iff z \in \ZZ^+$, so if we pick $\mu, \lambda \in \ZZ^{\leq 0}$ we have weight space decompositions
 
 \begin{align*}
