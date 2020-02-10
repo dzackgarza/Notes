@@ -58,7 +58,7 @@ By the initial observation, this yields a weight space decomposition for $N$ giv
 N = M(\lambda) \tensor_\CC M(\mu) = \bigoplus_{\nu \in \ZZ^{+}} \qty{ \bigoplus_{\lambda_i + \mu_i = \nu} M(\lambda)_{\lambda_i} \tensor_\CC M(\mu)_{\mu_i}  } \definedas \bigoplus_{\nu \in \ZZ^{+}} N_\nu
 .\end{align*}
 
-Since each weight space $N_\nu \supseteq \spanof_\CC{y^i v \tensor y^j w \suchthat i+j=\nu}$, this shows that the weight spaces of $N$ have arbitrarily large dimension, and thus $N$ can not be finitely-generated.
+Since each weight space $N_\nu \supseteq \spanof_\CC\theset{y^i v \tensor y^j w \suchthat i+j=\nu}$, this shows that the weight spaces of $N$ have arbitrarily large dimension, and thus $N$ can not be finitely-generated.
 
 $\qed$
 
