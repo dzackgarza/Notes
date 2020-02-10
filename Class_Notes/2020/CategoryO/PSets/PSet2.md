@@ -54,10 +54,10 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 
 **Proof:**
 
-We can write
+Choosing a PBW basis $\theset{h_i}_{i=1}^\ell$ for $U(h)$, we can write
 
 \begin{align*}
 \mcz(\lieg) &\mapsvia{\xi} U(\lieh) &&\to S(\lieh) &\to S(\lieh) \\
-z &\mapsto b &&\mapsto c &\mapsto d
+z &\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto c &\mapsto d
 .\end{align*}
 
