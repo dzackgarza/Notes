@@ -45,8 +45,8 @@ Letting $\lieg = \liesl(2, \CC)$, so $\lambda, \mu \in \lieh^* \cong \CC$, the c
 In particular, we can use the fact that $\dim M(\lambda) < \infty \iff \lambda \in \ZZ^+$, so if we pick $\mu, \lambda \in \ZZ^{\leq 0}$ we have weight space decompositions
 
 \begin{align*}
-M(\lambda) = \bigoplus_{k\in \ZZ} M(\lambda)_{\lambda - 2k}\\
-M(\mu) = \bigoplus_{k\in \ZZ} M(\mu)_{\mu - 2k}
+M(\lambda) &= \bigoplus_{k\in \ZZ} M(\lambda)_{\lambda - 2k}\\
+M(\mu) &= \bigoplus_{k\in \ZZ} M(\mu)_{\mu - 2k}
 .\end{align*}
 
 
