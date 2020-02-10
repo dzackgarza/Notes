@@ -23,5 +23,5 @@
 
 !include sections/2020-02-05.md
 
-!include sections/2020-02-07.md
+<!--!include sections/2020-02-07.md-->
 
