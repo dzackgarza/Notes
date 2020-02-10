@@ -29,7 +29,7 @@ Questions
 
 **Solution:**
 
-Let $M(\lambda), M(\mu)$ be arbitrary Verma modules for with highest weight vectors $v, w$ respectively.
+Let $M(\lambda), M(\mu)$ be arbitrary Verma modules for with highest weight vectors $v = 1 \tensor 1_\lambda, w = 1\tensor 1_\mu$ respectively.
 We can then consider the weight of $v \tensor w$ in $N\definedas M(\lambda) \tensor_{\CC} M(\mu)$:
 
 \begin{align*}
