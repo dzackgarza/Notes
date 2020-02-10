@@ -42,7 +42,12 @@ h\cdot(v\tensor w)
 
 Letting $\lieg = \liesl(2, \CC)$, so $\lambda, \mu \in \lieh^* \cong \CC$, the claim is that it is possible for $N$ to *not* be finitely-generated as a $U(\lieg)\dash$module.
 
-In particular, we can use the fact that $\dim M(\lambda) < \infty \iff \lambda \in \ZZ^+$
+In particular, we can use the fact that $\dim M(\lambda) < \infty \iff \lambda \in \ZZ^+$, so if we pick $\mu, \lambda \in \ZZ^{\leq 0}$ we have weight space decompositions
+
+\begin{align*}
+M(\lambda) = \bigoplus_{k\in \ZZ} M(\lambda)_{\lambda - 2k}
+.\end{align*}
+
 
 # Humphreys 1.9
 
