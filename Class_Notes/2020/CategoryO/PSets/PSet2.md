@@ -58,7 +58,7 @@ By the initial observation, this yields a weight space decomposition for $N$ giv
 N = M(\lambda) \tensor_\CC M(\mu) = \bigoplus_{\nu \in \ZZ^{+}} \qty{ \bigoplus_{\lambda_i + \mu_i = \nu} M(\lambda)_{\lambda_i} \tensor_\CC M(\mu)_{\mu_i}  } \definedas \bigoplus_{\nu \in \ZZ^{+}} N_\nu
 .\end{align*}
 
-Since each weight space $N_\nu = \spanof_\CC\theset{y^i v \tensor y^j w \suchthat i+j=\nu}$ and there are infinitely many such weight spaces, no finite number of elements in the PBW basis for $U(\lieg)$ can generate $N$.
+Since each weight space $N_\nu = \spanof_\CC\theset{y^i v \tensor y^j w \suchthat i+j=\nu}$ and there are infinitely many such weight spaces, no finite number of PBW monomials can generate $N$.
 
 $\qed$
 
