@@ -47,7 +47,9 @@ In particular, we can use the fact that $\dim M(z) < \infty \iff z \in \ZZ^+$, s
 \begin{align*}
 M(\lambda) &= \bigoplus_{i\in \ZZ^+} M(\lambda)_{\lambda - 2i} \definedas \bigoplus_{\substack{i\in \ZZ^+ \\ \lambda_i \definedas \lambda - 2i}} M(\lambda)_{\lambda_i} \\
 M(\mu) &= \bigoplus_{j\in \ZZ^+} M(\mu)_{\mu - 2j} \definedas \bigoplus_{\substack{j\in \ZZ^+ \\ \mu_i \definedas \mu - 2j}} M(\mu)_{\mu_j} 
-.\end{align*}
+\end{align*}
+
+where we can explicitly identify bases $M(\lambda)_{\lambda_i} = \spanof{y^i~v}$ and $M(\mu)_{\mu_i} = \spanof{y^i w}$.
 
 By the initial observation, this yields a weight space decomposition for $N$ given by 
 
