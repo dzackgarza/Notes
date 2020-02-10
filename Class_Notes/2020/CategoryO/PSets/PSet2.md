@@ -54,7 +54,7 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 
 **Proof:**
 
-Choosing a PBW basis $\theset{h_i}_{i=1}^\ell$ for $U(h)$, we can write
+Choosing a PBW basis $\theset{h_i}_{i=1}^\ell$ for $U(\lieh)$, we can write
 
 \begin{align*}
 \mcz(\lieg) &\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] &\to \CC[\theset{h_i}] \\
