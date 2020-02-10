@@ -57,7 +57,7 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 We can write
 
 \begin{align*}
-\mcz(\lieg) &\mapsvia{\xi} U(\lieh) &\to S(\lieh) &\to S(\lieh) \\
-a &\mapsto b &\mapsto c &\mapsto d
+\mcz(\lieg) &\mapsvia{\xi} U(\lieh) &&\to S(\lieh) &\to S(\lieh) \\
+z &\mapsto b &&\mapsto c &\mapsto d
 .\end{align*}
 
