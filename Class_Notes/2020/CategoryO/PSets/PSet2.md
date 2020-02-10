@@ -54,10 +54,11 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 
 **Proof:**
 
-Choosing a PBW basis $\theset{h_i}_{i=1}^\ell$ for $U(\lieh)$, we can write
+For a given simple root system $\Delta = \theset{\alpha_1, \cdots, \alpha_\ell}$, we can choose a PBW basis $\theset{h_i}_{i=1}^\ell$ for $U(\lieh)$ to write
 
 \begin{align*}
 \psi: \mcz(\lieg) &&\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] = P(\lieh^*) &&\mapsvia{\tau_\rho} \CC[\theset{h_i}] \\
-z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod_{i=1}^\ell \lambda(h_i)^{t_i} }  &&\mapsto   \prod_{i=1}^\ell \qty{\lambda - \rho}(h_i)^{t_i} 
+z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod_{i=1}^\ell \lambda(h_i)^{t_i} }  &&\mapsto   \psi(z) = \prod_{i=1}^\ell \qty{\lambda - \rho}(h_i)^{t_i} 
 .\end{align*}
 
+The claim is that if an alternative simple root system $\Delta = \theset{\alpha_1', \cdots, \alpha_\ell'}$ is chosen, $\psi(z)$ does not change.
