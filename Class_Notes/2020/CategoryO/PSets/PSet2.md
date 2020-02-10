@@ -29,6 +29,16 @@ Questions
 
 **Solution:**
 Let $M(\lambda), M(\mu)$ be Verma modules for $\lies(2, \CC)$ with highest weight vectors $v, w$ respectively.
+We can then consider the weight of $v \tensor w$:
+
+\begin{align*}
+h\cdot(v\tensor w) 
+&= h\cdot v \tensor w + v \tensor h\cdot w \\
+&= \lambda(h)v \tensor w + v \tensor \mu(h) w\\
+&= \lambda(h)\qty{ v \tensor w } + \mu(h)\qty{v\tensor w} \\
+&= \qty{ \lambda(h) + \mu(h) } v\tensor w
+.\end{align*}
+
 
 # Humphreys 1.9
 
