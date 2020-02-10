@@ -52,6 +52,3 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 
 > Hint: any simple system has the form $w\Delta$ for some $w\in W$.
 
-Useful facts:
-
-- 
