@@ -37,7 +37,7 @@ h\cdot(v\tensor w)
 &= h\cdot v \tensor w + v \tensor h\cdot w \\
 &= \lambda(h)v \tensor w + v \tensor \mu(h) w\\
 &= \lambda(h)\qty{ v \tensor w } + \mu(h)\qty{v\tensor w} \\
-&= \qty{ \lambda(h) + \mu(h) } v\tensor w
+&= \qty{ \lambda(h) + \mu(h) } \qty{v\tensor w}
 .\end{align*}
 
 
