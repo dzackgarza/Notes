@@ -57,7 +57,7 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 Choosing a PBW basis $\theset{h_i}_{i=1}^\ell$ for $U(\lieh)$, we can write
 
 \begin{align*}
-\mcz(\lieg) &\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] &\to \CC[\theset{h_i}] \\
-z &\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \prod_{i=1}^\ell h_i^{t_i}   &\mapsto d
+\mcz(\lieg) &\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] = P(\lieh^*) &\to \CC[\theset{h_i}] \\
+z &\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod_{i=1}^\ell \lambda(h_i)^{t_i} }  &\mapsto d
 .\end{align*}
 
