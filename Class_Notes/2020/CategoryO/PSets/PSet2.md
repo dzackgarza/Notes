@@ -27,9 +27,12 @@ Questions
   -  Consider a weight space $N_\gamma$ of $M$. This must have the form $\bigoplus_{a + b = \gamma} M_a \tensor_\CC M_b$.
     -  Example: consider $\lambda = \mu = 0$. Then $M = M(0) \tensor M(0)$ and $N_{-2m}$ has dimension $m+1$ for every $m\in \ZZ^+$.
 
+**Solution:**
+Let $M(\lambda), M(\mu)$ be 
+
 # Humphreys 1.9
 
-Proposition:
+**Proposition:**
 Let $\psi: Z(\lieg) \to S(\lieh)$ be the Harish-Chandra homomorphism.
 Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 
