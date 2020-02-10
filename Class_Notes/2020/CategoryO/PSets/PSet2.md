@@ -28,7 +28,7 @@ Questions
     -  Example: consider $\lambda = \mu = 0$. Then $M = M(0) \tensor M(0)$ and $N_{-2m}$ has dimension $m+1$ for every $m\in \ZZ^+$.
 
 **Solution:**
-Let $M(\lambda), M(\mu)$ be Verma modules for $\lies(2, \CC)$ with highest weight vectors $v, w$ respectively.
+Let $M(\lambda), M(\mu)$ be Verma modules for $\liesl(2, \CC)$ with highest weight vectors $v, w$ respectively.
 We can then consider the weight of $v \tensor w$:
 
 \begin{align*}
