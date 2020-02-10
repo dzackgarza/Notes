@@ -62,3 +62,4 @@ z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod
 .\end{align*}
 
 The claim is that if an alternative simple root system $\Delta = \theset{\alpha_1', \cdots, \alpha_\ell'}$ is chosen, $\psi(z)$ does not change.
+Since there exists some $w\in W$ such that $w\alpha_i = \alpha_i'$ and we can write the Weyl vector as $\rho = \sum_{i=1}^\ell \bar w_i$ which remains unchanged.
