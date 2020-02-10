@@ -55,7 +55,7 @@ where we can explicitly identify bases $M(\lambda)_{\lambda_i} = \spanof_\CC\the
 By the initial observation, this yields a weight space decomposition for $N$ given by 
 
 \begin{align*}
-N = M(\lambda) \tensor_\CC M(\mu) = \bigoplus_{\nu \in \ZZ^{\leq 0}} \qty{ \bigoplus_{\lambda_i + \mu_i = \nu} M(\lambda)_{\lambda_i} \tensor_\CC M(\mu)_{\mu_i}  } \definedas \bigoplus_{\nu \in \ZZ^{\leq 0}} N_\nu
+N = M(\lambda) \tensor_\CC M(\mu) = \bigoplus_{\nu \in \ZZ^{+}} \qty{ \bigoplus_{\lambda_i + \mu_i = \nu} M(\lambda)_{\lambda_i} \tensor_\CC M(\mu)_{\mu_i}  } \definedas \bigoplus_{\nu \in \ZZ^{+}} N_\nu
 .\end{align*}
 
 
