@@ -52,3 +52,12 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 
 > Hint: any simple system has the form $w\Delta$ for some $w\in W$.
 
+**Proof:**
+
+We can write
+
+\begin{align*}
+\mcz(\lieg) &\mapsvia{\xi} U(\lieh) &\to S(\lieh) &\to S(\lieh) \\
+a &\mapsto b &\mapsto c &\mapsto d
+.\end{align*}
+
