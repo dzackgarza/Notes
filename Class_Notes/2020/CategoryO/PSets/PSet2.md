@@ -30,7 +30,7 @@ Questions
 **Solution:**
 
 Let $M(\lambda), M(\mu)$ be arbitrary Verma modules for with highest weight vectors $v, w$ respectively.
-We can then consider the weight of $v \tensor w$ in $N\definedas M(\lambda) \tensor_{U(\lieg)} M(\mu)$:
+We can then consider the weight of $v \tensor w$ in $N\definedas M(\lambda) \tensor_{\CC} M(\mu)$:
 
 \begin{align*}
 h\cdot(v\tensor w) 
