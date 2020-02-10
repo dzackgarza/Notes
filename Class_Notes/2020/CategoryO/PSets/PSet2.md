@@ -40,7 +40,9 @@ h\cdot(v\tensor w)
 &= \qty{ \lambda(h) + \mu(h) } \qty{v\tensor w}
 .\end{align*}
 
-Letting $\lieg = \liesl(2, \CC)$, the claim is that $N$ is not finitely-generated as a $U(\lieg)\dash$module.
+Letting $\lieg = \liesl(2, \CC)$, so $\lambda, \mu \in \lieh^* \cong \CC$, the claim is that it is possible for $N$ not to be finitely-generated as a $U(\lieg)\dash$module.
+
+In particular, we can use the fact that $\dim M(\lambda) < \infty \iff \lambda \in \ZZ^+$
 
 # Humphreys 1.9
 
