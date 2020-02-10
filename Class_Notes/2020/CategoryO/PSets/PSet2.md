@@ -40,6 +40,7 @@ h\cdot(v\tensor w)
 &= \qty{ \lambda(h) + \mu(h) } \qty{v\tensor w}
 .\end{align*}
 
+Letting $\lieg = \liesl(2, \CC)$, the claim is that $N$ is not finitely-generated as a $U(\lieg)\dash$module.
 
 # Humphreys 1.9
 
