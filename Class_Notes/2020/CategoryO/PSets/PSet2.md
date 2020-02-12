@@ -65,7 +65,7 @@ We can then identify the (twisted) Harish-Chandra morphism as follows:
 
 \begin{align*}
 \psi: \mcz(\lieg) &&\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] = P(\lieh^*) &&\mapsvia{\tau_\rho} \CC[\theset{h_i}] \\
-z &&\mapsto z = \sum_{i=1}^\ell c_{ij} h_i^{t_j} &&\mapsto \qty{ \lambda \mapsto \sum_{i=1}^\ell c_{ij} \lambda(h_i)^{t_j} }  &&\mapsto   \psi(z) = \prod_{i=1}^\ell \qty{\lambda - \rho}(h_i)^{t_i} 
+z &&\mapsto z = \sum_{i, j} c_{ij} h_i^{t_j} &&\mapsto \qty{ \lambda \mapsto \sum_{i, j} c_{ij} \lambda(h_i)^{t_j} }  &&\mapsto   \psi(z) = \sum_{i, j} \qty{\lambda - \rho}(h_i)^{t_i} 
 ,\end{align*}
 
 where $\xi$ is the Harish-Chandra morphism and $\tau_p$ is the twist sending $f(\lambda)$ to $f(\lambda - \rho)$.
