@@ -41,7 +41,7 @@ N = M(\lambda) \tensor_\CC M(\mu) = \bigoplus_{\nu \in \ZZ^{+}} \qty{ \bigoplus_
 .\end{align*}
 
 Since each weight space $N_\nu = \spanof_\CC\theset{y^i v^+ \tensor y^j w^+ \suchthat i+j=\nu}$ has dimension $p_2(\nu)$, the (combinatorial) number of partitions of $\nu$ into two parts. 
-In particular, $p_2(\nu)$ takes on arbitrarily large values, and thus $N$ has weight spaces of arbitrarily large dimension.
+In particular, $p_2(\nu)$ takes on arbitrarily large values as $\nu$ ranges over $\ZZ^+$, and thus $N$ has weight spaces of arbitrarily large dimension.
 
 Now suppose toward a contradiction that $N$ is finitely generated as an $U(\lieg)\dash$module, say by the $n$ generators $\theset{m_1, \cdots, m_n}$.
 
