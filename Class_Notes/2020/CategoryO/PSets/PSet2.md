@@ -84,4 +84,4 @@ From this, a priori we may have two distinct weyl vectors:
 
 However, since $W$ acts transitively on the Weyl chambers, it only permutes the elements in such a sum, and since $\Delta_1 = w\Delta_2$ we in fact obtain $\rho_1 = \rho_2 \definedas \rho$.
 
-
+> Not entirely sure how to show this, or if checking $\rho$ and basis-invariance is sufficient here.
