@@ -32,7 +32,7 @@ M(\lambda) &= \bigoplus_{i\in \ZZ^+} M(\lambda)_{\lambda - 2i} \definedas \bigop
 M(\mu) &= \bigoplus_{j\in \ZZ^+} M(\mu)_{\mu - 2j} \definedas \bigoplus_{\substack{j\in \ZZ^+ \\ \mu_i \definedas \mu - 2j}} M(\mu)_{\mu_j} 
 \end{align*}
 
-where we can explicitly identify bases $M(\lambda)_{\lambda_i} = \spanof_\CC\theset{y^i~v}$ and $M(\mu)_{\mu_i} = \spanof_\CC\theset{y^i w}$.
+where we can explicitly identify $\CC\dash$bases $M(\lambda)_{\lambda_i} = \spanof_\CC\theset{y^i~v+}$ and $M(\mu)_{\mu_i} = \spanof_\CC\theset{y^i w+}$ where $v+, w+$ are maximal weight vectors for $M(\lambda), M(\mu)$ respectively.
 
 By the initial observation, this yields a weight space decomposition for $N$ given by 
 
@@ -62,4 +62,4 @@ z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod
 .\end{align*}
 
 The claim is that if an alternative simple root system $\Delta = \theset{\alpha_1', \cdots, \alpha_\ell'}$ is chosen, $\psi(z)$ does not change.
-Since there exists some $w\in W$ such that $w\alpha_i = \alpha_i'$ and we can write the Weyl vector as $\rho = \sum_{i=1}^\ell \bar w_i$ which remains unchanged.
+Since there exists some $w\in W$ such that $w\alpha_i = \alpha_i'$ and we can write the Weyl vector as $\rho = \sum_{i=1}
