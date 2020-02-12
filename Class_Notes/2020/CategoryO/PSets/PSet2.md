@@ -67,7 +67,7 @@ z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod
 ,\end{align*}
 
 where $\xi$ is the Harish-Chandra morphism and $\tau_p$ is the twist sending $f(\lambda)$ to $f(\lambda - \rho)$.
-We thus find that $\psi$ explicitly depends only on $\rho$ and the basis $\theset{h_i}$
+We thus find that $\psi$ explicitly depends only on $\rho$ and potentially the basis $\theset{h_i}$
 
 The claim is that if an alternative simple root system $\Delta_2 = \theset{\alpha_1', \cdots, \alpha_\ell'}$ is chosen, $\psi(z)$ does not change.
 By the hint, there exists some uniform $w\in W$ such that $w\alpha_i = \alpha_i'$.
