@@ -61,6 +61,7 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 
 For a given simple root system $\Delta_1 = \theset{\alpha_1, \cdots, \alpha_\ell}$, we can choose a PBW basis $\theset{h_i^{t_j} \mid 1\leq i \leq \ell, j\in \ZZ^+}$ for $U(\lieh)$.
 Then if $z\in \mcz(\lieg)$, we can write $z = \sum_{i, j} c_{ij} h_i^{t_j}$ for some $c_{ij} \in \CC$.
+We can then identify the (twisted) Harish-Chandra morphism as follows:
 
 \begin{align*}
 \psi: \mcz(\lieg) &&\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] = P(\lieh^*) &&\mapsvia{\tau_\rho} \CC[\theset{h_i}] \\
