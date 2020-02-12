@@ -59,12 +59,13 @@ Then $\psi$ is independent of the choice of a simple system in $\Phi$.
 
 **Proof:**
 
-For a given simple root system $\Delta = \theset{\alpha_1, \cdots, \alpha_\ell}$, we can choose a PBW basis $\theset{h_i}_{i=1}^\ell$ for $U(\lieh)$ to write
+For a given simple root system $\Delta_1 = \theset{\alpha_1, \cdots, \alpha_\ell}$, we can choose a PBW basis $\theset{h_i}_{i=1}^\ell$ for $U(\lieh)$ to write
 
 \begin{align*}
 \psi: \mcz(\lieg) &&\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] = P(\lieh^*) &&\mapsvia{\tau_\rho} \CC[\theset{h_i}] \\
 z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod_{i=1}^\ell \lambda(h_i)^{t_i} }  &&\mapsto   \psi(z) = \prod_{i=1}^\ell \qty{\lambda - \rho}(h_i)^{t_i} 
 .\end{align*}
 
-The claim is that if an alternative simple root system $\Delta = \theset{\alpha_1', \cdots, \alpha_\ell'}$ is chosen, $\psi(z)$ does not change.
-Since there exists some $w\in W$ such that $w\alpha_i = \alpha_i'$ and we can write the Weyl vector as $\rho = \sum_{i=1}$.
+The claim is that if an alternative simple root system $\Delta_2 = \theset{\alpha_1', \cdots, \alpha_\ell'}$ is chosen, $\psi(z)$ does not change.
+By the hint, there exists some uniform $w\in W$ such that $w\alpha_i = \alpha_i'$.
+
