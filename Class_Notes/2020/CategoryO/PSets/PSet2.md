@@ -76,8 +76,8 @@ We can denote the positive root system induced by $\Delta_1$ as $\Phi_1^+$ and s
 From this, a priori we may have two distinct weyl vectors:
 
 \begin{align*}
-\rho_1 = \sum_{\beta \in \Phi_1^+} \beta \\
-\rho_2 = \sum_{\beta' \in \Phi_2^+} \beta' \\
+\rho_1 &= \sum_{\beta \in \Phi_1^+} \beta \\
+\rho_2 &= \sum_{\beta' \in \Phi_2^+} \beta' \\
 .\end{align*}
 
 
