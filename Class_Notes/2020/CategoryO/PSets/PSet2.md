@@ -68,4 +68,13 @@ z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod
 
 The claim is that if an alternative simple root system $\Delta_2 = \theset{\alpha_1', \cdots, \alpha_\ell'}$ is chosen, $\psi(z)$ does not change.
 By the hint, there exists some uniform $w\in W$ such that $w\alpha_i = \alpha_i'$.
+
 We can denote the positive root system induced by $\Delta_1$ as $\Phi_1^+$ and similarly $\Delta_2$ induces $\Phi_2^+$.
+From this, a priori we may have two distinct weyl vectors:
+
+\begin{align*}
+\rho_1 = \sum_{\beta \in \Phi_1^+} \beta \\
+\rho_2 = \sum_{\beta' \in \Phi_2^+} \beta' \\
+.\end{align*}
+
+
