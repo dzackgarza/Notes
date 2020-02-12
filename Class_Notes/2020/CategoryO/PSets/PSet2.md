@@ -64,7 +64,9 @@ For a given simple root system $\Delta_1 = \theset{\alpha_1, \cdots, \alpha_\ell
 \begin{align*}
 \psi: \mcz(\lieg) &&\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] = P(\lieh^*) &&\mapsvia{\tau_\rho} \CC[\theset{h_i}] \\
 z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod_{i=1}^\ell \lambda(h_i)^{t_i} }  &&\mapsto   \psi(z) = \prod_{i=1}^\ell \qty{\lambda - \rho}(h_i)^{t_i} 
-.\end{align*}
+,\end{align*}
+
+where $\xi$ is the Harish-Chandra morphism and $\tau_p$ is the twist sending $f(\lambda)$ to $f(\lambda - \rho)$.
 
 We thus find that $\psi$ explicitly depends only on $\rho$ and the basis $\theset{h_i}$
 
