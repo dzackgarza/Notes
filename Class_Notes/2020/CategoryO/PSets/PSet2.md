@@ -32,7 +32,7 @@ M(\lambda) &= \bigoplus_{i\in \ZZ^+} M(\lambda)_{\lambda - 2i} \definedas \bigop
 M(\mu) &= \bigoplus_{j\in \ZZ^+} M(\mu)_{\mu - 2j} \definedas \bigoplus_{\substack{j\in \ZZ^+ \\ \mu_i \definedas \mu - 2j}} M(\mu)_{\mu_j} 
 \end{align*}
 
-where we can explicitly identify $\CC\dash$bases $M(\lambda)_{\lambda_i} = \spanof_\CC\theset{y^i~v^+}$ and $M(\mu)_{\mu_i} = \spanof_\CC\theset{y^i w^+}$ where $v+, w+$ are maximal weight vectors for $M(\lambda), M(\mu)$ respectively.
+where we can explicitly identify $\CC\dash$bases $M(\lambda)_{\lambda_i} = \spanof_\CC\theset{y^i~v^+}$ and $M(\mu)_{\mu_i} = \spanof_\CC\theset{y^i w^+}$ where $v^+, w^+$ are maximal weight vectors for $M(\lambda), M(\mu)$ respectively.
 
 By the initial observation, this yields a weight space decomposition for $N$ given by 
 
