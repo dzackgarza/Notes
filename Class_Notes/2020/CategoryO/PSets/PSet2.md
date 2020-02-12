@@ -63,7 +63,7 @@ For a given simple root system $\Delta_1 = \theset{\alpha_1, \cdots, \alpha_\ell
 
 \begin{align*}
 \psi: \mcz(\lieg) &&\mapsvia{\xi} U(\lieh) &&\to S(\lieh) = \CC[\theset{h_i}] = P(\lieh^*) &&\mapsvia{\tau_\rho} \CC[\theset{h_i}] \\
-z &&\mapsto z = \prod_{i=1}^\ell h_i^{t_i} &&\mapsto \qty{ \lambda \mapsto \prod_{i=1}^\ell \lambda(h_i)^{t_i} }  &&\mapsto   \psi(z) = \prod_{i=1}^\ell \qty{\lambda - \rho}(h_i)^{t_i} 
+z &&\mapsto z = \sum{i=1}^\ell c_{ij} h_i^{t_j} &&\mapsto \qty{ \lambda \mapsto \sum_{i=1}^\ell c_{ij} \lambda(h_i)^{t_j} }  &&\mapsto   \psi(z) = \prod_{i=1}^\ell \qty{\lambda - \rho}(h_i)^{t_i} 
 ,\end{align*}
 
 where $\xi$ is the Harish-Chandra morphism and $\tau_p$ is the twist sending $f(\lambda)$ to $f(\lambda - \rho)$.
@@ -81,3 +81,5 @@ From this, a priori we may have two distinct weyl vectors:
 .\end{align*}
 
 However, since $W$ acts transitively on the Weyl chambers, it only permutes the elements in such a sum, and since $\Delta_1 = w\Delta_2$ we in fact obtain $\rho_1 = \rho_2 \definedas \rho$.
+
+
