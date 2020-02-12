@@ -80,4 +80,4 @@ From this, a priori we may have two distinct weyl vectors:
 \rho_2 &= \sum_{\beta' \in \Phi_2^+} \beta' \\
 .\end{align*}
 
-
+However, since $W$ acts transitively on the Weyl chambers, it only permutes the elements in such a sum, and since $\Delta_1 = w\Delta_2$ we in fact obtain $\rho_1 = \rho_2 \definedas \rho$.
