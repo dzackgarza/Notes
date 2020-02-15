@@ -93,3 +93,9 @@ The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle
 
 If $p$ is a simple pole, $\Res(p, f) = \lim_{z\to p} (z-p)f(z)$.
 Example: Let $f(z) = \frac{1}{1+z^2}$, then $\Res(i, f) = \frac{1}{2i}$.
+
+
+Green's Theorem:
+Todo
+
+$\dd{}{z} \sum_{j=0}^\infty a_j z^j = \sum_{j=0}^\infty a_{j+1}z^j$.
