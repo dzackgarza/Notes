@@ -21,3 +21,10 @@ Then the symbols $[V^{(\lambda)}]$ form a $\ZZ\dash$basis for the Grothendieck g
 > For example take $V^{(\lambda)} = M(\lambda)$ or $L(\lambda)$.
 
 # Humphreys 1.13
+
+Suppose $\lambda \not\in \lambda$, so the linkage class $W\cdot \lambda$ is the disjoint union of its nonempty intersections of various cosets of $\Lambda_r \in \lieh\dual$.
+
+Prove that each $M\in \OO_{\chi_\lambda}$ has a corresponding direct sum decomposition $M = \bigoplus M_i$ in which all weights of $M_i$ lie in a single coset.
+
+> Recall exercise 1.1b.
+
