@@ -66,6 +66,12 @@ Proof
     where we note that the two resulting expressions are equal.
     
 
+The above computation in fact shows that
+
+\begin{align*}
+(\xi \circ \tau)(z) = (\tau \circ \xi)(z) = \xi(z)
+.\end{align*}
+
 
 
 
