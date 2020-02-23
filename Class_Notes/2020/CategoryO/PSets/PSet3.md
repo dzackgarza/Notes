@@ -70,8 +70,16 @@ The above computation in fact shows that
 
 \begin{align*}
 (\xi \circ \tau)(z) = (\tau \circ \xi)(z) = \xi(z)
+,\end{align*}
+
+and using the injectivity of $\xi$, we have
+
+\begin{align*}
+(\xi \circ \tau z) &= \xi (z) \\
+\implies \tau(z) &= z.
 .\end{align*}
 
+$\qed$
 
 
 
