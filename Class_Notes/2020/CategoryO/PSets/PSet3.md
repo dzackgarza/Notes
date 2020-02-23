@@ -44,7 +44,8 @@ Z(\lieg) \arrow[rr, "\xi"]                    &  & U(\lieh)
 \end{tikzcd}
 \end{center}
 
-
+Proof
+:   We will show that for all $z\in Z(\lieg)$, $(\xi \circ \tau)(z) = (\tau \circ \xi)(z)$.
 
 # Humphreys 1.12
 
