@@ -35,11 +35,14 @@ We will use without proof that $\xi$ is injective.
 
 Proposition
 :   The following diagram commutes
+
+\begin{center}
 \begin{tikzcd}
 Z(\lieg) \arrow[rr, "\xi"] \arrow[dd, "\tau"] &  & U(\lieh) \arrow[dd, "\tau"] \\
                                               &  &                             \\
 Z(\lieg) \arrow[rr, "\xi"]                    &  & U(\lieh)                   
 \end{tikzcd}
+\end{center}
 
 
 
