@@ -57,6 +57,14 @@ Proof
     &= \xi(z)
     .\end{align*}
 
+    Similarly, we have
+    \begin{align*}
+    (\tau \circ \xi)(z) 
+    &= \tau \qty{ \prod_j h_j^{s_j} } \\
+    &= \prod_j h_j^{s_j} \\
+    &= \xi(z)
+    .\end{align*}
+
 
 
 
