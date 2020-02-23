@@ -61,7 +61,10 @@ Proof
     (\tau \circ \xi)(z) 
     &= \tau \qty{ \prod_j h_j^{s_j} } \\
     &= \prod_j h_j^{s_j} \\
-    .\end{align*}
+    ,\end{align*}
+
+    where we note that the two resulting expressions are equal.
+    
 
 
 
