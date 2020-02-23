@@ -53,7 +53,8 @@ Proof
     (\xi \circ \tau)(z) 
     &= (\xi \circ \tau)\qty{ \prod_{i, j, k} x_i^{r_i} h_j^{s_j} y_k^{t_j} } \\
     &= \xi \qty{ \prod_{i, j, k} y_i^{r_i} h_j^{s_j} x_k^{t_j} }  \\
-    &= \prod_j h_j^{s_j}
+    &= \prod_j h_j^{s_j} \\
+    &= \xi(z)
     .\end{align*}
 
 
