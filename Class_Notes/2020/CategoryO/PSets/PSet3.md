@@ -24,6 +24,14 @@ y_\alpha &\mapsto x_\alpha
 which lifts to an anti-involution $\tau: U(\lieg) \to U(\lieg)$ by extending linearly over PBW monomials.
 We can note that since $\tau$ fixes $\lieh$ pointwise by definition, its lift also fixes $U(\lieh)$ pointwise.
 
+Using this basis, we can explicitly identify the Harish-Chandra morphism:
+
+\begin{align*}
+\xi: Z(\lieg) &\to U(\lieh) \\
+\prod_{i, j, k} x_i^{r_i} h_j^{s_j} y_k^{t_k} &\mapsto \prod_j h_j^{s_j}
+.\end{align*}
+
+
 
 # Humphreys 1.12
 
