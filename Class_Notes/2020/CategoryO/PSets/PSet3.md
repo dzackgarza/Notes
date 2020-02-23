@@ -50,7 +50,7 @@ Proof
     \begin{align*}
     (\xi \circ \tau)(z) 
     &= (\xi \circ \tau)\qty{ \prod_{i, j, k} x_i^{r_i} h_j^{s_j} y_k^{t_j} } \\
-    &= \xi \qty{ \prod_{i, j, k} y_i^{r_i} h_j^{s_j} x_k^{t_j} }  \\
+    &= \xi \qty{ \prod_{i, j, k} y_i^{r_i} h_j^{s_j} x_k^{t_j} }  \quad\text{since $\xi$ is an anti-homomorphism} \\
     &= \prod_j h_j^{s_j} \\
     .\end{align*}
 
