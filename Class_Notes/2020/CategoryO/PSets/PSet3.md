@@ -31,6 +31,11 @@ Using this basis, we can explicitly identify the Harish-Chandra morphism:
 \prod_{i, j, k} x_i^{r_i} h_j^{s_j} y_k^{t_k} &\mapsto \prod_j h_j^{s_j}
 .\end{align*}
 
+We will use without proof that $\xi$ is injective.
+
+Proposition
+:   The following diagram commutes
+
 
 
 # Humphreys 1.12
