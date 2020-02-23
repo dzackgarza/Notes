@@ -76,7 +76,7 @@ and using the injectivity of $\xi$, we have
 
 \begin{align*}
 (\xi \circ \tau z) &= \xi (z) \\
-\implies \tau(z) &= z.
+\implies \tau(z) &= z
 .\end{align*}
 
 $\qed$
