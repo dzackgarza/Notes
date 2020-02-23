@@ -48,11 +48,10 @@ Proof
 :   We will show that for all $z\in Z(\lieg)$, $(\xi \circ \tau)(z) = (\tau \circ \xi)(z)$.
     Expand $z$ in a PBW basis as $z = \prod_{i, j, k} x_i^{r_i} h_j^{s_j} y_k^{t_j}$.
     We then make the following computations:
-
-    \begin{align*}
-    (\xi \circ \tau)(z) &= 
-    (\xi \circ \tau)\qty{ \prod_{i, j, k} x_i^{r_i} h_j^{s_j} y_k^{t_j} }
-    .\end{align*}
+\begin{align*}
+(\xi \circ \tau)(z) &= 
+(\xi \circ \tau)\qty{ \prod_{i, j, k} x_i^{r_i} h_j^{s_j} y_k^{t_j} }
+.\end{align*}
 
 
 # Humphreys 1.12
