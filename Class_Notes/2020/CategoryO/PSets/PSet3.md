@@ -80,8 +80,6 @@ and using the injectivity of $\xi$, we have
 $\qed$
 
 
-
-
 # Humphreys 1.12
 
 Fix a central character $\chi$ and let $\theset{V^{(\lambda)}}$ be a collection of modules in $\OO$ indexed by the weights $\lambda$ for which $\chi = \chi_\lambda$ satisfying
