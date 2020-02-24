@@ -134,7 +134,13 @@ Proof
 
     i.e. the map that counts the multiplicity of $L(w_j \cdot \lambda_0)$ appearing in any composition series of $M$ for a fixed $j$.
     
-    This lifts to a group morphism $r_j: K(\OO_\chi) \to \ZZ^{\geq 0}$
+    This lifts to a group morphism $r_j: K(\OO_\chi) \to \ZZ^{\geq 0}$ which satisfies
+    
+    \begin{align*}
+    r_j(L(w_i \cdot \lambda_0)) = \delta_{ij}
+    ,\end{align*}
+
+    i.e. it takes the value $1$ on the Verma modules in $\mathcal{L}$ precisely when $i=j$ and zero otherwise.
 
 
 
