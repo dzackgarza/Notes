@@ -94,13 +94,15 @@ Then the symbols $[V^{(\lambda)}]$ form a $\ZZ\dash$basis for the Grothendieck g
 
 > Following a similar proof outlined [here](http://www.math.ncku.edu.tw/~fjmliou/pdf/ex_k0.pdf). 
 
-Fix a $\lambda_0$ such that $\chi = \chi_{\lambda_0}$ by Harish-Chandra's theorem, fix some order on the Weyl group $W = \theset{w_j \suchthat 1\leq j \leq J}$ for some $J = \abs{W} < \infty$, and note that $\chi_{\lambda_0} = \chi_{w\cdot \lambda_0}$ for each $w\in W$.
+Fix a $\lambda_0$ such that $\chi = \chi_{\lambda_0}$ by Harish-Chandra's theorem, fix some order on the Weyl group $W = \theset{w_j \suchthat 1\leq j \leq \abs{W} < \infty}$, and note that $\chi_{\lambda_0} = \chi_{w\cdot \lambda_0}$ for each $w\in W$.
 
 Proposition
 :   The Verma modules $\theset{L(w\cdot \lambda_0) \suchthat w\in W}$ form a $\ZZ\dash$basis for $\OO_\chi$.
 
 Proof
-:   **Spanning**: 
+:   Write $\mathcal L = \spanof_\ZZ\theset{[L(w_j \cdot \lambda_0)] \suchthat 1\leq j \leq \abs{W}}
+
+    **Spanning**: 
     Let $M \in \OO_{\chi}$ be arbitrary, and consider $[M] \in K(\OO_\chi)$.
     By Humphreys Theorem 1.11, $M$ has a finite composition series 
     $$
@@ -110,12 +112,17 @@ Proof
     By collecting terms, we can write
 
     \begin{align*}
-    [M] = \sum_{i=1}^n [L(\lambda_i)] = \sum_{i=1}^{n'} c_i [L(\lambda_i)]
+    [M] = \sum_{i=1}^n [L(\lambda_i)] = \sum_{i=1}^{n'} c_i [L(\lambda_i)] \in K(\OO_\chi)
     .\end{align*}
 
     
     By definition, $M\in \OO_\chi \iff L(\lambda_i) \in \OO_\chi$, i.e. $M$ is in this block precisely when all of its composition factors are.
-    But this forces $L(\lambda_i) L(w_j \cdot \lambda_0)$ for some $j$
+    But this forces each $L(\lambda_i) L(w_j \cdot \lambda_0)$ for some $j$, and so we have
+
+    \begin{align*}
+    [M] = \sum_{i=j}^{n'} c_j [L(w_j \cdot \lambda_0}] \in K(\OO_\chi) \in \spanof_\ZZ\theset{[]}
+    .\end{align*}
+
 
 
 # Humphreys 1.13
