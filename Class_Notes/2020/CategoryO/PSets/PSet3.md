@@ -94,7 +94,7 @@ Then the symbols $[V^{(\lambda)}]$ form a $\ZZ\dash$basis for the Grothendieck g
 
 > Following a similar proof outlined [here](http://www.math.ncku.edu.tw/~fjmliou/pdf/ex_k0.pdf). 
 
-Fix a $\lambda_0$ such that $\chi = \chi_{\lambda_0}$ by Harish-Chandra's theorem, and note that $\chi_{\lambda_0} = \chi_{w\cdot \lambda_0}$ for each $w\in W$.
+Fix a $\lambda_0$ such that $\chi = \chi_{\lambda_0}$ by Harish-Chandra's theorem, fix some order on the Weyl group $W = \theset{w_j \suchthat 1\leq j \leq J}$ for some $J = \abs{W} < \infty$, and note that $\chi_{\lambda_0} = \chi_{w\cdot \lambda_0}$ for each $w\in W$.
 
 Proposition
 :   The Verma modules $\theset{L(w\cdot \lambda_0) \suchthat w\in W}$ form a $\ZZ\dash$basis for $\OO_\chi$.
@@ -109,7 +109,6 @@ Proof
     with simple quotients $M^{i+1}/M^i \cong L(\lambda_i)$ for some $\lambda_i$.
     
     By definition, $M\in \OO_\chi \iff L(\lambda_i) \in \OO_\chi$, i.e. $M$ is in this block precisely when all of its composition factors are.
-
 
 
 # Humphreys 1.13
