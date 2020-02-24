@@ -35,3 +35,4 @@ If a module $M$ has a standard filtration and there exists an epimorphism $\phi:
 ## b
 
 Show by example that when $\lieg = \liesl(2, \CC)$ that the existence of a monomorphism $\phi: M(\lambda) \to M$ where $M$ has a standard filtration fails to imply that $\coker \phi$ has a standard filtration.
+
