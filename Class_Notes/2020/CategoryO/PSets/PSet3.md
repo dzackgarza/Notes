@@ -183,6 +183,6 @@ Prove that each $M\in \OO_{\chi_\lambda}$ has a corresponding direct sum decompo
 
 Fix $\lambda \in \lieh\dual \setminus \Lambda$ and $M\in \OO_{\chi_\lambda}$, and write
 $$
-\lieh\dual/\Lambda = \theset{[\lambda_i] \suchthat i\in I} = \theset{\lambda_i + \Lambda \suchthat i\in I}
+\lieh\dual/\Lambda = \theset{\lambda_i + \Lambda \suchthat i\in I} = \theset{[\lambda_i] \suchthat i\in I}
 $$
 for some indexing set $I$.
