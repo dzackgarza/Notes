@@ -107,6 +107,8 @@ Proof
     M = M_1 > M_2 > \cdots > M_n
     $$
     with simple quotients $M^{i+1}/M^i \cong L(\lambda_i)$ for some $\lambda_i$.
+    
+    By definition, $M\in \OO_\chi \iff L(\lambda_i) \in \OO_\chi$, i.e. $M$ is in this block precisely when all of its composition factors are.
 
 
 
