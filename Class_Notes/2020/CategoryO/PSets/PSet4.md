@@ -21,5 +21,6 @@ $$
 $$
 
 # Humphreys 3.4
+Show that $\Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in the root system $\Phi_{[\lambda]}$, but the corresponding simple system $\Delta_{[\lambda]}$ may be unrelated to $\Delta$.
 
 # Humphreys 3.7
