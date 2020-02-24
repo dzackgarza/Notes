@@ -195,7 +195,8 @@ Note that by construction, all of the weights of $M_i$ lie in the single coset $
 
 By the result of that exercise, $M$ decomposes as a finite direct sum of such modules.
 
-Letting $W\cdot\lambda$ be the orbit of $\lambda$ under the action of $W$, i.e. the linkage class of $\lambda$,  since $\lambda\not\in\Lambda$, we can write the image of $W\cdot \lambda$ in $\lieh\dual/\Lambda$ as $\theset{[\eta_1], \cdots, [\eta_N]}$ for some $N\geq 2$.
+Let $W\cdot\lambda$ be the orbit of $\lambda$ under the action of $W$, i.e. the linkage class of $\lambda$.
+Since $\lambda\not\in\Lambda$, we can write the image of $W\cdot \lambda$ in $\lieh\dual/\Lambda$ as $\theset{[\eta_1], \cdots, [\eta_N]}$ for some $N\geq 2$.
 
 This yields
 
