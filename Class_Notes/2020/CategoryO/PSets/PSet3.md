@@ -158,10 +158,11 @@ Proposition
 :   An arbitrary set of the stated form $\mathcal{V} = \theset{V^{(\lambda_i)} \suchthat 1\leq i < N < \infty}$ is also a $\ZZ\dash$basis of $K(\OO_\chi)$.
 
 Proof
-:   By the previous proposition, for each fixed $V^{(\lambda_i)}$, we can write
+:   We first note that we can similarly write $V^{(\lambda_i)} = V^{(w_j \cdot \lambda_0)}$ for some $j$, so wlog we reindex the $\lambda_i$ to $\lambda_j$s.
+    By the previous proposition, for each fixed $V^{(\lambda_i)}$, we can write
     
     \begin{align*}
-    [V^{(\lambda_i)}] = \sum_{j} a_{ij}[L(w_j \cdot \lambda_0)]
+    [V^{(\lambda_i)}] = \sum_{\mu_j < \lambda_i} a_{ij}[L(w_j \cdot \lambda_0)]
     .\end{align*}
 
     Thus 
