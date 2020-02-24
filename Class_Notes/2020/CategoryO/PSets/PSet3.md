@@ -121,7 +121,7 @@ Proof
     But this forces each $L(\lambda_i) = L(w_j \cdot \lambda_0)$ for some $j$, and so we have
 
     \begin{align*}
-    [M] = \sum_{i=j}^{n'} c_j [L(w_j \cdot \lambda_0)] \in K(\OO_\chi) \in \mathcal{L}
+    [M] = \sum_{i=j}^{n'} c_j [L(w_j \cdot \lambda_0)] \in \mathcal{L}
     .\end{align*}
 
 
