@@ -142,6 +142,8 @@ Proof
 
     i.e. it takes the value $1$ on the Verma modules in $\mathcal{L}$ precisely when $i=j$ and zero otherwise.
 
+    Now suppose $\sum_{i=1}^n a_i [ L(w_i \cdot \lambda_0)] = [0]$ in $K(\OO_\chi)$.
+
 
 
 # Humphreys 1.13
