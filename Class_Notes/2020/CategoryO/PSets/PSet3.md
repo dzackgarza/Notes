@@ -97,7 +97,7 @@ Then the symbols $[V^{(\lambda)}]$ form a $\ZZ\dash$basis for the Grothendieck g
 Fix a $\lambda_0$ such that $\chi = \chi_{\lambda_0}$, and note that $\chi_{\lambda_0} = \chi_{w\cdot \lambda_0}$ for each $w\in W$.
 
 Proposition
-:   The Verma modules $\theset{L(w\cdot \lambda_0) \suchthat w\in W}$ form a $\ZZ\dash$basis for $O_\chi$
+:   The Verma modules $\theset{L(w\cdot \lambda_0) \suchthat w\in W}$ form a $\ZZ\dash$basis for $\OO_\chi$.
 
 
 
