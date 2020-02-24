@@ -15,6 +15,11 @@ $$
 
 # Humphreys 3.2
 
+Show that for $M\in \OO$ and $\dim L < \infty$,
+$$
+(M\tensor L)\dual \cong M\dual \tensor L\dual
+$$
+
 # Humphreys 3.4
 
 # Humphreys 3.7
