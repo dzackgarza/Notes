@@ -107,8 +107,15 @@ Proof
     M = M_1 > M_2 > \cdots > M_n
     $$
     with simple quotients $M^{i+1}/M^i \cong L(\lambda_i)$ for some $\lambda_i$.
+    By collecting terms, we can write
+
+    \begin{align*}
+    [M] = \sum_{i=1}^n [L(\lambda_i)] = \sum_{i=1}^{n'} c_i [L(\lambda_i)]
+    .\end{align*}
+
     
     By definition, $M\in \OO_\chi \iff L(\lambda_i) \in \OO_\chi$, i.e. $M$ is in this block precisely when all of its composition factors are.
+    But this forces $L(\lambda_i) L(w_j \cdot \lambda_0)$ for some $j$
 
 
 # Humphreys 1.13
