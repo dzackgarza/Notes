@@ -88,13 +88,14 @@ Fix a central character $\chi$ and let $\theset{V^{(\lambda)}}$ be a collection 
 
 Then the symbols $[V^{(\lambda)}]$ form a $\ZZ\dash$basis for the Grothendieck group $K(\OO_\xi)$.
 
+> For example take $V^{(\lambda)} = M(\lambda)$ or $L(\lambda)$.
+
 ## Solution
 
 > Following a similar proof outlined [here](http://www.math.ncku.edu.tw/~fjmliou/pdf/ex_k0.pdf). 
 
 
 
-> For example take $V^{(\lambda)} = M(\lambda)$ or $L(\lambda)$.
 
 # Humphreys 1.13
 
