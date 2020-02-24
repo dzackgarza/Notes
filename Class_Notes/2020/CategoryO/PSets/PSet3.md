@@ -192,4 +192,4 @@ M_i \definedas \sum_{\mu \in [\lambda_i]} M_\mu
 ,$$
 the sum over all weight spaces whose weights lie in the coset $[\lambda_i]$, so eahc such space satisfies $\Pi(M) = [\lambda_i]$.
 
-Since $M\in \OO$, we have $M = \bigoplus_{\lambda\in \lieh\dual}$ as a sum of weight spaces, and since the cosets partition $\lieh\dual$, we have $M = \bigoplus_{[\lambda_i] \in \lieh\dual/\Lambda} M_i$ as a direct sum of vector spaces.
+Since $M\in \OO$, we have $M = \bigoplus_{\lambda\in \lieh\dual}$ as a sum of weight spaces, and since the cosets partition $\lieh\dual$, we have $M = \bigoplus_{[\lambda_i] \in \lieh\dual/\Lambda} M_i$ as a direct sum of $\CC\dash$vector spaces.
