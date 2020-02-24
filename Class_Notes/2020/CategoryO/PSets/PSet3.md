@@ -143,6 +143,15 @@ Proof
     i.e. it takes the value $1$ on the Verma modules in $\mathcal{L}$ precisely when $i=j$ and zero otherwise.
 
     Now suppose $\sum_{i=1}^n a_i [ L(w_i \cdot \lambda_0)] = [0]$ in $K(\OO_\chi)$.
+    For each fixed $j$, we can then apply the above group morphism to obtain
+    
+    \begin{align*}
+    r_j \qty{ \sum_{i=1}^n a_i [ L(w_i \cdot \lambda_0)] } 
+    &= \sum_{i=1}^n a_i r_j\qty{ [ L(w_i \cdot \lambda_0)] } \\
+    &= \sum_{i=1}^n a_i r_j \delta_{ij} \\
+    &= a_j
+    .\end{align*}
+
 
 
 
