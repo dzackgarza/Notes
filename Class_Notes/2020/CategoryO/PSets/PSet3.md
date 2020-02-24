@@ -190,4 +190,5 @@ For each $i$, define
 $$
 M_i \definedas \sum_{\mu \in [\lambda_i]} M_\mu
 ,$$
-the sum over all weight spaces whose weights lie in the coset $[\lambda_i]$.
+the sum over all weight spaces whose weights lie in the coset $[\lambda_i]$, so eahc such space satisfies $\Pi(M) = [\lambda_i]$.
+Since $M\in \OO$, it is a sum of weight spaces
