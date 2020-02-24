@@ -173,9 +173,12 @@ Proof
 
 # Humphreys 1.13
 
-Suppose $\lambda \not\in \lambda$, so the linkage class $W\cdot \lambda$ is the disjoint union of its nonempty intersections of various cosets of $\Lambda_r \in \lieh\dual$.
+Suppose $\lambda \not\in \Lambda$, so the linkage class $W\cdot \lambda$ is the disjoint union of its nonempty intersections of various cosets of $\Lambda_r \in \lieh\dual$.
 
 Prove that each $M\in \OO_{\chi_\lambda}$ has a corresponding direct sum decomposition $M = \bigoplus M_i$ in which all weights of $M_i$ lie in a single coset.
 
 > Recall exercise 1.1b.
 
+## Solution
+
+Fix $\lambda \in \lieh\dual \setminus \Lambda$ and $M\in \OO_{\chi_\lambda}$
