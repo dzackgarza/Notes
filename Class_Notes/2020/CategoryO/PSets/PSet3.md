@@ -133,6 +133,8 @@ Proof
     ,\end{align*}
 
     i.e. the map that counts the multiplicity of $L(w_j \cdot \lambda_0)$ appearing in any composition series of $M$ for a fixed $j$.
+    
+    This lifts to a group morphism $r_j: K(\OO_\chi) \to \ZZ^{\geq 0}$
 
 
 
