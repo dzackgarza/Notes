@@ -195,7 +195,13 @@ Note that by construction, all of the weights of $M_i$ lie in the single coset $
 
 By the result of that exercise, $M = \bigoplus_{i=1}^N M^{[\lambda_i]}$ is a finite direct sum of such modules.
 
-$\qed$
 
-> Note: letting $W\cdot\lambda$ be the orbit of $\lambda$ under the action of $W$, i.e. the linkage class of $\lambda$, when $\lambda \in \Lambda$ is integral, then $W\cdot\lambda$ intersects only one coset $[\lambda_i]$, and there is only one term in the above sum.
+Letting $W\cdot\lambda$ be the orbit of $\lambda$ under the action of $W$, i.e. the linkage class of $\lambda$, when $\lambda \in \Lambda$ is integral, then $W\cdot\lambda$ intersects only one coset $[\lambda_i]$, and there is only one term in the above sum.
+
+For $\lambda\not\in\Lambda$, we can write the image of $W\cdot \lambda$ in $\lieh\dual/\Lambda$ as $\theset{[\eta_1], \cdots, [\eta_M]}$ for some $M\geq 2$, in which case we have
+
+\begin{align*}
+M = \bigoplus M^{[\eta_i]}
+.\end{align*}
+
 
