@@ -159,7 +159,7 @@ Proposition
 
 Proof
 :   We first note that we can similarly write $V^{(\lambda_i)} = V^{(w_j \cdot \lambda_0)}$ for some $j$, so wlog we reindex the $\lambda_i$ to $\lambda_j$s.
-    Similarly, for $\mu < \lambda_j$, there is an $i$ such that $\mu = w_i \cdot \lambda_0$, so we reindex these lower weights accordingly as well.
+    Similarly, fixing a $V^{\lambda_j}$, for $\mu < \lambda_j$, there is an $i$ such that $\mu = w_i \cdot \lambda_0$, so we reindex these lower weights accordingly as well.
     
     By the previous proposition, for each fixed $V^{(\lambda_i)}$, we can write
     
