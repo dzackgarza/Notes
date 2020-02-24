@@ -186,3 +186,7 @@ $$
 \lieh\dual/\Lambda = \theset{\lambda_i + \Lambda \suchthat i\in I} = \theset{[\lambda_i] \suchthat i\in I}
 $$
 for some indexing set $I$.
+Then define 
+$$
+M_i \definedas \sum_{\mu \in [\lambda_i]} M_\mu
+$$
