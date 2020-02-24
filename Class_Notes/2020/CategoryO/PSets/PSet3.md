@@ -189,4 +189,5 @@ for some indexing set $I$.
 Then define 
 $$
 M_i \definedas \sum_{\mu \in [\lambda_i]} M_\mu
-$$
+,$$
+the sum over all weight spaces whose weights lie in the coset $[\lambda_i]$.
