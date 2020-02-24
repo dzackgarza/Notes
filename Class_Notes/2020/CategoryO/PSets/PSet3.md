@@ -155,7 +155,7 @@ Proof
     Since group morphisms preserve equalities and $r_j([0]) = 0 \in \ZZ$, this forces $a_j = 0$ for each $j$.
 
 Proposition
-:   An arbitrary set of the form $\mathcal{V} = \theset{V(\lambda_i) \suchthat 1\leq i < N < \infty}$ is also a $\ZZ\dash$basis of $K(\OO_\chi)$.
+:   An arbitrary set of the stated form $\mathcal{V} = \theset{V(\lambda_i) \suchthat 1\leq i < N < \infty}$ is also a $\ZZ\dash$basis of $K(\OO_\chi)$.
 
 # Humphreys 1.13
 
