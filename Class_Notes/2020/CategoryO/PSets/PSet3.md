@@ -97,7 +97,7 @@ Then the symbols $[V^{(\lambda)}]$ form a $\ZZ\dash$basis for the Grothendieck g
 Fix a $\lambda_0$ such that $\chi = \chi_{\lambda_0}$ by Harish-Chandra's theorem, fix some order on the Weyl group $W = \theset{w_j \suchthat 1\leq j \leq \abs{W} < \infty}$, and note that $\chi_{\lambda_0} = \chi_{w\cdot \lambda_0}$ for each $w\in W$.
 
 Proposition
-:   The Verma modules $\theset{L(w\cdot \lambda_0) \suchthat w\in W}$ form a $\ZZ\dash$basis for $\OO_\chi$.
+:   The simple modules $\theset{L(w\cdot \lambda_0) \suchthat w\in W}$ form a $\ZZ\dash$basis for $\OO_\chi$.
 
 Proof
 :   Write $\mathcal{L} = \spanof_\ZZ\theset{[L(w_j \cdot \lambda_0)] \suchthat 1\leq j \leq \abs{W}} \subset K(\OO_\chi)$.
@@ -163,6 +163,8 @@ Proof
     \begin{align*}
     [V^{(\lambda_i)}] = \sum_{j} a_{ij}[L(w_j \cdot \lambda_0)]
     .\end{align*}
+
+    Thus 
 
 
 # Humphreys 1.13
