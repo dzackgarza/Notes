@@ -206,5 +206,5 @@ M = \bigoplus_{i=1}^N M^{[\eta_i]}
 
 which satisfies the desired property.
 
-$\qed
+$\qed$
 
