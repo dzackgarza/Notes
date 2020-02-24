@@ -117,10 +117,10 @@ Proof
 
     
     By definition, $M\in \OO_\chi \iff L(\lambda_i) \in \OO_\chi$, i.e. $M$ is in this block precisely when all of its composition factors are.
-    But this forces each $L(\lambda_i) L(w_j \cdot \lambda_0)$ for some $j$, and so we have
+    But this forces each $L(\lambda_i) = L(w_j \cdot \lambda_0)$ for some $j$, and so we have
 
     \begin{align*}
-    [M] = \sum_{i=j}^{n'} c_j [L(w_j \cdot \lambda_0}] \in K(\OO_\chi) \in \mathcal{L}
+    [M] = \sum_{i=j}^{n'} c_j [L(w_j \cdot \lambda_0)] \in K(\OO_\chi) \in \mathcal{L}
     .\end{align*}
 
 
