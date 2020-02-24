@@ -100,7 +100,7 @@ Proposition
 :   The Verma modules $\theset{L(w\cdot \lambda_0) \suchthat w\in W}$ form a $\ZZ\dash$basis for $\OO_\chi$.
 
 Proof
-:   Write $\mathcal{L} = \spanof_\ZZ\theset{[L(w_j \cdot \lambda_0)] \suchthat 1\leq j \leq \abs{W}}$
+:   Write $\mathcal{L} = \spanof_\ZZ\theset{[L(w_j \cdot \lambda_0)] \suchthat 1\leq j \leq \abs{W}} \subset K(\OO_\chi)$.
 
     **Spanning**: 
     Let $M \in \OO_{\chi}$ be arbitrary, and consider $[M] \in K(\OO_\chi)$.
@@ -120,7 +120,7 @@ Proof
     But this forces each $L(\lambda_i) L(w_j \cdot \lambda_0)$ for some $j$, and so we have
 
     \begin{align*}
-    [M] = \sum_{i=j}^{n'} c_j [L(w_j \cdot \lambda_0}] \in K(\OO_\chi) \in \spanof_\ZZ\theset{[]}
+    [M] = \sum_{i=j}^{n'} c_j [L(w_j \cdot \lambda_0}] \in K(\OO_\chi) \in \mathcal{L}
     .\end{align*}
 
 
