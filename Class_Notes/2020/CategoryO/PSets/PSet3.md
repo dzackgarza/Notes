@@ -113,8 +113,9 @@ Proof
 
     \begin{align*}
     [M] = \sum_{i=1}^n [L(\lambda_i)] = \sum_{i=1}^{n'} c_i [L(\lambda_i)] \in K(\OO_\chi)
-    .\end{align*}
+    ,\end{align*}
 
+    where each $c_i$ is the multiplicity of $L(\lambda_i)$ in the above composition series.
     
     By definition, $M\in \OO_\chi \iff L(\lambda_i) \in \OO_\chi$, i.e. $M$ is in this block precisely when all of its composition factors are.
     But this forces each $L(\lambda_i) = L(w_j \cdot \lambda_0)$ for some $j$, and so we have
