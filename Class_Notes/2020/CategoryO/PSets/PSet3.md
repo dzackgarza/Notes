@@ -168,7 +168,7 @@ Proof
     & = [L(w_j \cdot \lambda_0] + \sum_{\mu_i < \lambda_j} a_{ij}[L(w_i \cdot \lambda_0)]
     .\end{align*}
 
-    Thus 
+    The matrix $A = (a_{ij})$ is then strictly upper-triangular with ones on the diagonal, and is thus invertible, and so expresses a change of basis matrix $\mcl \to \mcv$.
 
 
 # Humphreys 1.13
