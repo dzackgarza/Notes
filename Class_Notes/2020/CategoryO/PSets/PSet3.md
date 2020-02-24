@@ -191,7 +191,7 @@ $$
 M_i = M^{[\lambda_i]} \definedas \sum_{\mu \in [\lambda_i]} M_\mu
 ,$$
 the sum of weight spaces $M_\mu$ for which $\mu \in [\lambda_i]$.
-Note that by construction, all of the weights of $M_i$ lie in a single coset.
+Note that by construction, all of the weights of $M_i$ lie in the single coset $[\lambda_i]$.
 
 By the result of that exercise, $M = \bigoplus_{i=1}^N M^{[\lambda_i]}$ is a finite direct sum of such modules.
 
