@@ -130,8 +130,9 @@ Proof
     \begin{align*}
     r_j: \OO_\chi &\to \ZZ^{\geq 0} \\
     M &\mapsto \abs{\theset{ M^{i+1}/M^i \suchthat M^{i+1}/M^i \cong L(w_j \cdot \lambda_0)  }}
-    .\end{align*}
+    ,\end{align*}
 
+    i.e. the map that counts the multiplicity of $L(w_j \cdot \lambda_0)$ appearing in any composition series of $M$ for a fixed $j$.
 
 
 
