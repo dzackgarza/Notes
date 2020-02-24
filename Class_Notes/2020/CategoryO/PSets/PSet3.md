@@ -192,5 +192,5 @@ M_i = M^{[\lambda_i]} \definedas \sum_{\mu \in [\lambda_i]} M_\mu
 ,$$
 the sum of weight spaces $M_\mu$ for which $\mu \in [\lambda_i]$.
 
-
+By the result of that exercise, $M = \bigoplus_{i=1}^N M^{[\lambda_i]}$ is a finite direct sum of such modules.
 
