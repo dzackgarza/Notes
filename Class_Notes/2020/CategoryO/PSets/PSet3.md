@@ -157,6 +157,14 @@ Proof
 Proposition
 :   An arbitrary set of the stated form $\mathcal{V} = \theset{V^{(\lambda_i)} \suchthat 1\leq i < N < \infty}$ is also a $\ZZ\dash$basis of $K(\OO_\chi)$.
 
+Proof
+:   By the previous proposition, for each fixed $V^{(\lambda_i)}$, we can write
+    
+    \begin{align*}
+    [V^{(\lambda_i)}] = \sum_{j} a_{ij}[L(w_j \cdot \lambda_0)]
+    .\end{align*}
+
+
 # Humphreys 1.13
 
 Suppose $\lambda \not\in \lambda$, so the linkage class $W\cdot \lambda$ is the disjoint union of its nonempty intersections of various cosets of $\Lambda_r \in \lieh\dual$.
