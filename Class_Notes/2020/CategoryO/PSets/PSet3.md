@@ -124,6 +124,15 @@ Proof
     [M] = \sum_{i=j}^{n'} c_j [L(w_j \cdot \lambda_0)] \in \mathcal{L}
     .\end{align*}
 
+    **Linear Independence**:
+    Define a family of maps
+
+    \begin{align*}
+    r_j: \OO_\chi &\to \ZZ^{\geq 0} \\
+    M &\mapsto \abs{\theset{ M^{i+1}/M^i \suchthat M^{i+1}/M^i \cong L(w_j \cdot \lambda_0)  }}
+    .\end{align*}
+
+
 
 
 # Humphreys 1.13
