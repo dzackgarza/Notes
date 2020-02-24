@@ -152,6 +152,7 @@ Proof
     &= a_j
     .\end{align*}
 
+    Since group morphisms preserve equalities and $r_j([0]) = 0 \in \ZZ$, this forces $a_j = 0$ for each $j$.
 
 
 
