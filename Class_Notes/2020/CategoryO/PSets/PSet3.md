@@ -102,6 +102,11 @@ Proposition
 Proof
 :   **Spanning**: 
     Let $M \in \OO_{\chi}$ be arbitrary, and consider $[M] \in K(\OO_\chi)$.
+    By Humphreys Theorem 1.11, $M$ has a finite composition series 
+    $$
+    M = M_1 > M_2 > \cdots > M_n
+    $$
+    with simple quotients$M^{i+1}/M^i \cong L(\lambda_i)$ for some $\lambda_i$.
 
 
 
