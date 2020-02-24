@@ -86,7 +86,7 @@ Fix a central character $\chi$ and let $\theset{V^{(\lambda)}}$ be a collection 
 1. $\dim V^{(\lambda)} = 1$
 2. $\mu < \lambda$ for all weights $\mu$ of $V^{(\lambda)}$.
 
-Then the symbols $[V^{(\lambda)}]$ form a $\ZZ\dash$basis for the Grothendieck group $K(\OO_\xi)$.
+Then the symbols $[V^{(\lambda)}]$ form a $\ZZ\dash$basis for the Grothendieck group $K(\OO_\chi)$.
 
 > For example take $V^{(\lambda)} = M(\lambda)$ or $L(\lambda)$.
 
@@ -154,7 +154,8 @@ Proof
 
     Since group morphisms preserve equalities and $r_j([0]) = 0 \in \ZZ$, this forces $a_j = 0$ for each $j$.
 
-
+Proposition
+:   The set
 
 # Humphreys 1.13
 
