@@ -27,3 +27,11 @@ Show that $\Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in the root 
 > If $\lambda \definedas \alpha/2$, check that $\Phi_{[\lambda]}$ contains just the four short roots in $\Phi$.
 
 # Humphreys 3.7
+
+## a
+
+If a module $M$ has a standard filtration and there exists an epimorphism $\phi: M\to M(\lambda)$, prove that $\ker \phi$ admits a standard filtration.
+
+## b
+
+Show by example that when $\lieg = \liesl(2, \CC)$ that the existence of a monomorphism $\phi: M(\lambda) \to M$ where $M$ has a standard filtration fails to imply that $\coker \phi$ has a standard filtration.
