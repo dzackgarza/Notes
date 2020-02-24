@@ -108,7 +108,7 @@ Proof
     $$
     M = M_1 > M_2 > \cdots > M_n
     $$
-    with simple quotients $M^{i+1}/M^i \cong L(\lambda_i)$ for some $\lambda_i$.
+    with simple quotients $M^{i+1}/M^i \cong L(\lambda_i)$ for some $\lambda_i \in \lieh\dual$.
     By collecting terms, we can write
 
     \begin{align*}
