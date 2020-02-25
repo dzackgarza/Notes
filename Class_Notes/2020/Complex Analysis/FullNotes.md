@@ -27,5 +27,11 @@
 
 !include sections/2020-02-07.md
 
+!include sections/2020-02-12.md
+
+!include sections/2020-02-14.md
+
+!include sections/2020-02-17.md
+
 !include sections/Appendix.md
 
