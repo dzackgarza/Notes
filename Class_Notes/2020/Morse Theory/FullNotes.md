@@ -17,7 +17,7 @@
 
 !include sections/2020-01-30.md
 
-!include sections/2020-02-04.md
+<!--!include sections/2020-02-04.md-->
 
 <!--!include sections/2020-02-06.md-->
 
