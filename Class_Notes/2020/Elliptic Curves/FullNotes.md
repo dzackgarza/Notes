@@ -19,7 +19,7 @@
 
 !include sections/2020-01-29.md
 
-!include sections/2020-01-31.md
+<!--!include sections/2020-01-31.md-->
 
 <!--!include sections/2020-02-03.md-->
 
