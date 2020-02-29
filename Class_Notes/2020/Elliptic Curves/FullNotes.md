@@ -13,7 +13,7 @@
 
 !include sections/2020-01-22.md
 
-!include sections/2020-01-24.md
+<!--!include sections/2020-01-24.md-->
 
 <!--!include sections/2020-01-27.md-->
 
