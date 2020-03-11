@@ -7,3 +7,5 @@ His dissertation work involved a cool way to represent arbitrary plane curves by
 ![image-20200310232110171](/home/zack/.config/Typora/typora-user-images/image-20200310232110171.png)
 
 From what I understand, this involves fixing a curve (blue), choosing a collection of circles $C_1, \cdots C_n$ (black) such that each $C_i$ intersects $C_{i+1}$ in at least one distinguished point $p_i$ (pink). The curve traced out by following an arc on $C_i$ and switching to circle $C_{i+1}$ at $p_i$ is intended to yield a good approximation to the original curve, with certain regularity conditions at the $p_i$ (such as the first derivatives on both arcs agreeing at the point).
+
+Erik's work involves an algorithm
