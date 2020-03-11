@@ -15,7 +15,7 @@ compile:
 view: 
 	make renew
 	latex_preview -f ./FullNotes.md -v
-	cp ./FullNotes.pdf ~/website/assets/pdfs/Algebra_2020_01_09.pdf
+	cp ./FullNotes.pdf ~/website/assets/pdfs/Algebra_2020.pdf
 
 .ONESHELL:
 
