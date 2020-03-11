@@ -1,5 +1,6 @@
 ---
  title: Commutative Algebra
+book: true
 ---
 
 

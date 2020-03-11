@@ -1,7 +1,7 @@
 SHELL:=/bin/zsh
 
 define renew_md = 
-{echo "---\n title: Commutative Algebra\nbook: true\n---\n\n" && fd --full-path ./sections | sort -nr | sed 'N;s/\(.*\)\n\(.*\)/\2\n\1/' | grep "md" | sort -n | awk -F ":" '{print "!include " $$1 "\n";}' } > FullNotes.md 2>&1
+{echo "---\n title: Commutative Algebra\n book: true\n---\n\n" && fd --full-path ./sections | sort -nr | sed 'N;s/\(.*\)\n\(.*\)/\2\n\1/' | grep "md" | sort -n | awk -F ":" '{print "!include " $$1 "\n";}' } > FullNotes.md 2>&1
 endef
 
 renew: 
