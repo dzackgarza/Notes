@@ -14,4 +14,5 @@ Erik's work actually seems to go a bit farther -- he has an algorithm (a *curve-
 
 We also talked a bit about another problem Jason was working on, discussed in the following papers:
 
-- [The symplectic geometry of closed equilateral random walks in 3-space (Cantarella, Shonkwiler)](https://arxiv.org/abs/1310.5924)
+- [The symplectic geometry of closed equilateral random walks in 3-space (Cantarella, Shonkwiler 2013)](https://arxiv.org/abs/1310.5924)
+- 
