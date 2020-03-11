@@ -13,6 +13,10 @@ compile:
 	latex_preview -f ./FullNotes.md -j
 	echo "Make done"
 
+watch:
+	make renew
+	latex_preview -f ./FullNotes.md
+
 view: 
 	make renew
 	latex_preview -f ./FullNotes.md -v
