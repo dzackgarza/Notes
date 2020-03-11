@@ -1,5 +1,6 @@
 ---
  title: Category O
+ book: true
 ---
 
 
