@@ -11,11 +11,12 @@ renew:
 compile:
 	make renew
 	latex_preview -f ./FullNotes.md -j
+	cp ./FullNotes.pdf ~/website/assets/pdfs/Algebra_2020.pdf
+	echo "Make done"
 
 view: 
 	make renew
 	latex_preview -f ./FullNotes.md -v
-	cp ./FullNotes.pdf ~/website/assets/pdfs/Algebra_2020.pdf
 
 .ONESHELL:
 
