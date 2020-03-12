@@ -7,7 +7,7 @@ $$
 \tau: S^2 \to S^2\\
 \tau \definedas \tau_{p_2\inv} \tau_{p_2p_1\inv} \tau_{p_1}.
 $$
-Specifically, my hope was that the induced map $\tau^*: T_e \to T_e$ would not just be an isomorphism, but in fact the *identity* map.
+Specifically, my hope was that the induced map $\tau^*: T_e \to T_e$ would not just be an isomorphism, but in fact the *identity* map. This can be phrased in terms of the parallel transport of a tangent vector $\vector v \in T_e$ along geodesics connecting $e$ to $p_1$, $p_1$ to $p_2$, and finally $p_1$ to $e$. However, because the standard metric on $S^2$ induces nonzero curvature, there is nontrivial holonomy and the vector 
 
 
 
