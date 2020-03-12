@@ -1,6 +1,10 @@
 While hanging out with a few friends, we came up with a question that should have a clear direct answer: is the 2-sphere $S^2$ being a Lie group? If not, what is the obstruction?
 
-My initial intuition here was something along these lines: if $S^2$ were a topological group, we could consider its Lie algebra by taking the tangent space at the identity $e$ (where without loss of generality, we can rotate $S^2$ to identify $e$ with the North pole.) A standard argument shows that the translation maps $T_g:x\mapsto gx$ are diffeomorphisms, and are "transitive" in the sense that any point $p_1$ can be carried to $p_2$ 
+My initial intuition here was something along these lines: if $S^2$ were a topological group, we could consider its Lie algebra by taking the tangent space at the identity $e$ (where without loss of generality, we can rotate $S^2$ to identify $e$ with the North pole.) A standard argument shows that the translation maps $\tau_g:x\mapsto gx$ are diffeomorphisms, and are "transitive" in the sense that any point $p_1$ can be carried to $p_2$ by the translation $\tau_{p_2 p_1\inv}$. Using this, the heuristic is that we expect the tangent space to "look the same" after performing a series of translations that ultimately maps $e$ to itself, for example
+$$
+\tau_{p_2\inv} \tau_{p_2p_1\inv} \tau_{p_1}
+$$
+
 
 It turns out that the following is true:
 
