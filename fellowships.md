@@ -5,7 +5,7 @@ A few students are able to win national fellowships. The national fellowships ar
 The National Science Foundation, NSF, is the largest funding agency for graduate work in mathematics, offering both regular Graduate Fellowships and some special ones for minorities. The deadline for submitting the first part of the application is usually in November. NSF will even pay for you to take your GRE's in December!
 The NSF web page is http://www.nsf.gov or go directly to fastlane, the electronic fellowship application submission web page, http://www.fastlane.nsf.gov.
 
-The Fannie and John Hertz Foundation, a private foundation that purports to support only students in ``applied physical sciences'', but, in reality, often funds study for 5 or more years in many areas of pure mathematics. It also has one of the most lucrative stipends. Their web site is at http://www.hertzfndn.org.
+The Fannie and John Hertz Foundation, a private foundation that purports to support only students in "applied physical sciences", but, in reality, often funds study for 5 or more years in many areas of pure mathematics. It also has one of the most lucrative stipends. Their web site is at http://www.hertzfndn.org.
 The Department of Defense. It funds the National Defense Science and Engineering Graduate Fellowships (NDSEG). This is a 3-year fellowship, and it is not similar to ROTC -- you don't have to promise to serve in the military or have any other special obligations to the government if you win a fellowship. To get the application and information, check their web site at http://ndseg.asee.org. The application deadline is usually the first week of January.
 Canadian students should look to The Natural Sciences and Engineering Research Council (NSERC), which provides scholarships for graduate study. For information check their web site at http://www.nserc-crsng.gc.ca. (NOTE: the deadlines for these lie early in the fall semester!)
 Flyers put out by some of these fellowships are posted on the undergraduate bulletin boards-one is opposite room 320 and another is opposite room 503.
@@ -18,7 +18,7 @@ Finally, check the Web sites of the universities where you plan to apply. Like G
 
 Generally, undergraduates are urged to try their luck in all nationwide fellowships. Harvard students have been very successful in winning these awards. Some fellowships have early deadlines (as early as October) and some pay more attention to the GRE scores and grades than university admissions offices.
 
-There are many fellowships and scholarships for study abroad. Information about them can be obtained on the Office of Career Services (OCS) website, under ``Global Opportunities'', or from your House Fellowships Tutor. Particularly useful are the Guide to Grants and the Guide to Study Abroad, published annually by OCS. Some of the math/science oriented fellowships are the:
+There are many fellowships and scholarships for study abroad. Information about them can be obtained on the Office of Career Services (OCS) website, under "Global Opportunities", or from your House Fellowships Tutor. Particularly useful are the Guide to Grants and the Guide to Study Abroad, published annually by OCS. Some of the math/science oriented fellowships are the:
 
 Churchill Scholarship (for study at Cambridge University),
 Herschel Smith Harvard Scholarship (also Cambridge),
