@@ -13,6 +13,7 @@ It's not so clear to me what part doesn't go through:
 
 - Does nonzero curvature/holonomy on a manifold obstruct it from having a Lie group structure?
 - Do all Lie groups have zero curvature and trivial holonomy groups?
+  - Note that $\mathrm{Holo}(S^2) =  SO(2, \RR)$.
 - Should any composition of translations fixing $e$ induce the identity on $T_e$, or just a vector space automorphism?
 
 
