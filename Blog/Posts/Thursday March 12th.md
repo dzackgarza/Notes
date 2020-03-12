@@ -24,7 +24,7 @@ Theorem
 : If $S^n$ is a group, then $n$ must be odd.
 
 Proof
-: Suppose otherwise and let $m: (S^n)^2 \to S^n$ be the multiplication. Then $m_g$ defined by $m_g(x) = m(g, x)$ has no fixed points. By Lefschetz, $\Lambda_{m_g} = 0$, so $S^2$ to homotopy $m_g$
+: Suppose otherwise and let $m: (S^n)^2 \to S^n$ be the multiplication. Then $m_g$ defined by $m_g(x) = m(g, x)$ has no fixed points. By Lefschetz, $\Lambda_{m_g} = 0$, so use the fact that $\pi_1S^2 = 0$ to homotope $m_g \sim \id_{S^2}$, which preserves $\Lambda_{m_g}$. But $\Lambda_{\id_X} \chi(X)$ and $\chi(S^2) = 1 + (-1)^n$
 
 Theorem
 : $S^n$ is a topological group $\iff n=0,1,3$.
