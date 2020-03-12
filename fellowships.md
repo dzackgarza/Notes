@@ -12,7 +12,7 @@ Flyers put out by some of these fellowships are posted on the undergraduate bull
 
 The Office of Career Services (OCS) Web site offers useful information for applying to graduate school and for finding sources of funding. Please review the Fellowships section on the OCS Web site at http://www.ocs.fas.harvard.edu/students/fellowships.htm. Also, OCS has a library with information on fellowships, and its staff can help you enormously in your pursuit.
 
-The Harvard Graduate School of Arts and Sciences (GSAS) offers fellowship information online at http://gsas.harvard.edu. The online publication ``Financing Graduate Studies'' is available to download, and the interactive database ``Graduate Guide to Grants'' will allow you to search for specific grants and provides contact information, application guidelines and restrictions, and deadlines.
+The Harvard Graduate School of Arts and Sciences (GSAS) offers fellowship information online at http://gsas.harvard.edu. The online publication "Financing Graduate Studies" is available to download, and the interactive database "Graduate Guide to Grants" will allow you to search for specific grants and provides contact information, application guidelines and restrictions, and deadlines.
 
 Finally, check the Web sites of the universities where you plan to apply. Like GSAS, many graduate schools offer graduate funding options specific to their institutions.
 
