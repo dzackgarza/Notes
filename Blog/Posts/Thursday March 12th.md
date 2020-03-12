@@ -5,4 +5,4 @@ It turns out that the following is true:
 Theorem
 : $S^n$ is a topological group $\iff n=0,1,3$.
 
-M
+My impression was that this should be related to the fact that the only normed division algebras are $\RR, \CC, \HH$, and \OO$, but couldn't find an obvious proof along those lines.
