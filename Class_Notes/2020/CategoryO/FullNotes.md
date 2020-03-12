@@ -4,6 +4,8 @@
 ---
 
 
+!include sections/2020-01-01_notation.md
+
 !include sections/2020-01-08.md
 
 !include sections/2020-01-10.md
