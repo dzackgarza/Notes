@@ -1,0 +1,13 @@
+\input{preamble.tex}
+\usepackage[active,pdftex,tightpage, ifthen, calc]{preview}
+\usepackage{freetikz}
+\PreviewEnvironment[]{tikzpicture}
+\PreviewEnvironment[]{pgfpicture}
+\PreviewEnvironment[]{asy}
+\DeclareSymbolFont{symbolsb}{OMS}{cmsy}{m}{n}
+\SetSymbolFont{symbolsb}{bold}{OMS}{cmsy}{b}{n}
+\DeclareSymbolFontAlphabet{\mathcal}{symbolsb}
+
+\begin{document}
+<>
+\end{document}

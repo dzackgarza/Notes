@@ -1,0 +1,294 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+%\documentclass[]{article}
+\documentclass[11pt]{scrartcl}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{array}
+\usepackage{mathtools}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd, thmtools}
+\let\proof\relax
+\let\endproof\relax
+
+% Boxes around theorem environments.
+\usepackage[many]{tcolorbox}
+
+\usepackage{color}
+%\usepackage{unicode-math}
+\usepackage{newunicodechar}
+\newunicodechar{ε}{\varepsilon}
+\newunicodechar{δ}{\delta}
+\newunicodechar{µ}{\mu}
+\newunicodechar{→}{\to}
+\newunicodechar{≤}{\leq}
+\newunicodechar{∈}{\in}
+\newunicodechar{⊆}{\subseteq}
+\newunicodechar{Λ}{\Lambda}
+\newunicodechar{∞}{\infty}
+\newunicodechar{×}{\times}
+\everymath{\displaystyle}
+
+
+
+\usepackage{microtype}
+\usepackage[pdfencoding=auto]{hyperref}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage[msc-links]{amsrefs}
+\usepackage{cleveref} % use \cref{}, automatically deduces theorem, proposition, etc
+\usepackage{csquotes}
+\usepackage{longtable}
+\usepackage{bbm}
+
+% Remove indentation for new paragraphs
+\usepackage{parskip}
+% But leave space before amsthm environments
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=2em
+  \thm@postskip=2em
+}
+\makeatother
+
+
+\usepackage{stmaryrd}
+\usepackage{adjustbox}
+\usepackage{centernot}
+% \centernot\whatever
+
+
+% Better indicator function
+\usepackage{bbm}
+\newcommand{\indic}[1]{\mathbbm{1} \left[ {#1} \right] }
+
+% Highlight quote
+\usepackage{xcolor}
+\usepackage{environ}
+\definecolor{block-gray}{gray}{0.85}
+\NewEnviron{myblock}
+{\colorbox{block-gray}{%
+\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+\small\addtolength{\leftskip}{10mm}
+\addtolength{\rightskip}{10mm}
+\BODY}}
+}
+\renewcommand{\quote}{\myblock}
+\renewcommand{\endquote}{\endmyblock}
+
+% Nice math font that journals use
+%\usepackage[lite]{mtpro2}
+%\usepackage{mathrsfs}
+%\usepackage{mathptmx}
+\usepackage{lmodern}
+%\usepackage[sc]{mathpazo}
+
+% Theorem Styles
+\usepackage[framemethod=tikz]{mdframed}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{solution}{Solution}
+
+% Proof Style
+\newtheoremstyle{proof}% name
+  {0em}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1} \thmnote{\itshape{(#3)}}}%         Thm head spec
+\theoremstyle{proof}
+\tcolorboxenvironment{proof}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+}
+\newtheorem*{pf}{Proof}
+\newenvironment{proof}
+{\pushQED{$\qed$}\pf}
+{\par\popQED\endpf}
+
+% Definition Style
+\newtheoremstyle{definition}% name
+  {0em}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {}%         Thm head spec
+\theoremstyle{definition}
+\tcolorboxenvironment{definition}{
+  colback=block-gray,
+  boxrule=0pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  borderline west={4pt}{0pt}{gray},
+  colbacktitle={block-gray},
+  coltitle={black},
+  fonttitle={\large\bfseries},
+  attach title to upper={},
+}
+\newtheorem{definition}{Definition}[section]
+
+% Theorem Style
+\newtheoremstyle{theorem}% name
+  {0em}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}% 
+\theoremstyle{theorem}
+\tcolorboxenvironment{theorem}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.0,
+  colframe=cyan
+}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+
+% Break Environment
+\newtheoremstyle{break}% name
+  {}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {}%         Thm head spec
+\theoremstyle{break}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}{Claim}
+
+% Problem Style
+\newtheoremstyle{problem} % name
+  {0em}                   % Space above, empty = `usual value'
+  {2em}                   % Space below
+  {\normalfont}           % Body font
+  {\parindent}            % Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}              % Thm head font
+  {}                      % Punctuation after thm head
+  {\newline}              % Space after thm head: \newline = linebreak
+  {\thmnote{\itshape{(#3)}}}     % Thm head spec
+\theoremstyle{problem}
+\tcolorboxenvironment{problem}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.0,
+  colframe=cyan
+}
+\newtheorem{problem}{Problem}
+
+
+%Pagination stuff.
+\setlength{\topmargin}{-.3 in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textheight}{9.in}
+\setlength{\textwidth}{6.5in}
+% \pagestyle{empty} %removes page numbers.
+
+% Inkscape figures from Vim
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+%\pdfsuppresswarningpagegroup=1
+
+% Pandoc-specific fixes
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Tikz and Graphics
+\usepackage{tikz}
+\usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix}
+\tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage[inline]{asymptote}
+\usepackage{tikz-layers}
+
+%\usepackage{nath}
+%\delimgrowth=1
+\DeclarePairedDelimiter\qty{(}{)}
+
+% Major Macros
+%\renewcommand{\and}{{\text{ and }}}
+%\renewcommand{\or}{{\text{ or }}}
+%\renewcommand{\vector}[1]{\mathbf{#1}}
+\usepackage{graphicx}
+\DeclareFontFamily{U}{mathx}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathx}{m}{n}{
+      <5> <6> <7> <8> <9> <10>
+      <10.95> <12> <14.4> <17.28> <20.74> <24.88>
+      mathx10
+      }{}
+\DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
+\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
+
+% Wide tikz equations
+\newsavebox{\wideeqbox}
+\newenvironment{wideeq}
+  {\begin{displaymath}\begin{lrbox}{\wideeqbox}$\displaystyle}
+  {$\end{lrbox}\makebox[0pt]{\usebox{\wideeqbox}}\end{displaymath}}
+
+% Fancy chapter headers and footers
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\title}
+\fancyhead[RE,LO]{\rightmark}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+% List of Theorems Attempt
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\thmtlo@chaptervspacehack
+  {\addtocontents{loe}{\protect\addvspace{10\p@}}}
+  {\addtocontents{loe}{\protect\thmlopatch@endchapter\protect\thmlopatch@chapter{\thechapter}}}
+  {}{}
+\AtEndDocument{\addtocontents{loe}{\protect\thmlopatch@endchapter}}
+\long\def\thmlopatch@chapter#1#2\thmlopatch@endchapter{%
+  \setbox\z@=\vbox{#2}%
+  \ifdim\ht\z@>\z@
+    \hbox{\bfseries\chaptername\ #1}\nobreak
+    #2
+    \addvspace{10\p@}
+  \fi
+}
+\def\thmlopatch@endchapter{}
+
+\makeatother
+\renewcommand{\thmtformatoptarg}[1]{ -- #1}
+%\renewcommand{\listtheoremname}{List of definitions}
+
+\input{"/home/zack/Dropbox/Document Archive/Latex/latexmacs.tex"}

@@ -1,0 +1,657 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{D. Zack Garza}
+\newcommand{\CVTitle}{Curriculum Vitae}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{dzackgarza.com}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+286 Moreland Ave, Athens, GA, 30601
+\par
+\href{mailto:dzackgarza@gmail.com}
+{dzackgarza@gmail.com}
+\,\SubBulletSymbol\,
++1\,(530)\,210-9130
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+%%%%%%%%% PhD
+\Entry
+\href{https://www.math.uga.edu/}
+{\textbf{University of Georgia}},
+Athens, GA, USA
+\hfill
+\DatestampYMD{2019}{8}{14} --
+Present
+
+\Gap
+\BulletItem Ph.D. in Mathematics \textit{(In Progress)}
+
+%%%%%%%%%% Bachelors
+\BigGap
+\Entry
+\href{https://www.math.ucsd.edu}
+{\textbf{University of California, San Diego}},
+La Jolla, CA, USA
+\hfill
+\DatestampYMD{2015}{8}{1} --
+\DatestampYMD{2018}{06}{17}
+
+\Gap
+\BulletItem
+B.S. in
+\href{https://math.ucsd.edu/programs/undergraduate/}
+{Pure Mathematics}
+\BulletItem Minor in Computer Science
+\BulletItem
+Major GPA: 3.723
+
+\BigGap
+\Entry
+\href{https://eecs.berkeley.edu}
+{\textbf{University of California, Berkeley}},
+Berkeley, CA, USA
+\hfill
+\DatestampYMD{2014}{09}{01} --
+\DatestampYMD{2015}{06}{15}
+\Gap
+
+%%%%%%%%%% Junior College
+\BulletItem
+Concurrent Enrollment
+\begin{Detail}
+\SubBulletItem
+CS 70: Discrete Mathematics and Probability Theory
+\SubBulletItem
+EE 20: Structure and Interpretation of Systems and Signals
+\end{Detail}
+\BulletItem
+Cumulative GPA: 3.33
+
+
+\BigGap
+\Entry
+\href{https://www.sierracollege.edu}
+{\textbf{Sierra College}},
+Rocklin, California, USA
+\hfill
+\DatestampYMD{2011}{09}{01} --
+\DatestampYMD{2014}{06}{15}
+
+\Gap
+\BulletItem
+A.A. in Mathematics
+\hfill
+\BulletItem
+A.S. in Physics
+\hfill
+\BulletItem
+A.A. in Fine Arts
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Presentations        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section{Presentations}{Presentations}{PDF:Presentations}
+\BulletItem
+Poster: \textit{Spectral Sequences and Higher Homotopy Groups of Spheres} \\
+UC San Diego Undergraduate Research Symposium
+\hfill \DatestampYMD{2018}{05}{01}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Workshops and Talks   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Workshops and Talks}
+{Workshops and Talks}
+{PDF:Workshops}
+
+\BulletItem
+Mathematics Subject GRE Workshop
+\hfill \DatestampYMD{2019}{03}{15}
+
+\BulletItem
+Homotopy and the Hopf Fibration
+\hfill \DatestampYMD{2018}{06}{04}
+
+\BulletItem
+Topological Fixed Point Theorems
+\hfill \DatestampYMD{2018}{03}{01}
+
+\BigGap
+
+\BulletItem
+Homology and The Snake Lemma
+\hfill \DatestampYMD{2017}{11}{01}
+
+\BulletItem
+Algebraic Geometry: A Historical Primer
+\hfill \DatestampYMD{2017}{10}{01}
+
+\BulletItem
+Introduction to Functional Programming
+\hfill \DatestampYMD{2017}{10}{01}
+
+\BulletItem
+Intermediate \LaTeX
+\hfill \DatestampYMD{2017}{5}{01}
+
+\BulletItem
+Introduction to \LaTeX
+\hfill \DatestampYMD{2017}{4}{01}
+
+\BulletItem
+Intermediate \LaTeX
+\hfill \DatestampYMD{2017}{2}{01}
+
+\BulletItem
+Organizing Research Projects with \LaTeX
+\hfill \DatestampYMD{2017}{1}{01}
+
+\BulletItem
+Category Theory as an Organizational Tool
+\hfill \DatestampYMD{2017}{1}{01}
+
+\BigGap
+
+\BulletItem
+Introduction to \LaTeX
+\hfill \DatestampYMD{2016}{11}{01}
+
+\BulletItem
+Introduction to Category Theory, Part 2
+\hfill \DatestampYMD{2016}{11}{01}
+
+\BulletItem
+Introduction to Category Theory, Part 1
+\hfill \DatestampYMD{2016}{10}{01}
+
+\BulletItem
+Haskell for Mathematicians
+\hfill \DatestampYMD{2016}{10}{01}
+
+\BulletItem
+Discrete Mathematics: Graphs and Trees
+\hfill \DatestampYMD{2014}{05}{01}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards}
+{Awards}
+{PDF:Awards}
+
+
+\BulletItem
+Louise Hoffmasterand and Frank R. Etchberger Graduate Scholarship
+\hfill\DatestampY{2019} -- \DatestampY{2020}
+
+\BulletItem
+UC San Diego Academic Enrichment Program \\
+Undergraduate Research Scholarship \textit{(Declined)}
+\hfill\DatestampY{2018}
+
+\BulletItem
+Diana C. Miles Scholarship
+\hfill\DatestampY{2017} -- \DatestampY{2018}
+
+\BulletItem
+Errett Bishop Scholarship
+\hfill\DatestampY{2016} -- \DatestampY{2017}
+
+\BulletItem
+Richard L. and Fern W. Erion and Laidlaw-Erion Scholarship
+\hfill\DatestampY{2016} -- \DatestampY{2017}
+
+\BulletItem
+Provost Honors (Muir College, UC San Diego)
+\hfill\DatestampY{2015} -- \DatestampY{2016}
+
+\Gap
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Service           %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Service}
+{Service}
+{PDF:Service}
+
+\Entry
+President of the \href{http://sums.ucsd.edu}
+{Society of Undergraduate Mathematics Students at UC San Diego}
+\hfill\DatestampY{2016} --
+\DatestampY{2018}
+
+\Gap
+
+\Entry
+Officer of the Mathematics Club at Sierra College}
+\hfill
+\DatestampY{2013} --
+\DatestampY{2014}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Teaching            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section{Teaching}{Teaching}{PDF:Teaching}
+\Gap
+\Entry{University of Georgia}
+\Gap
+\BulletItem Graduate School Teaching Seminar (GRSC 7770)
+\hfill Fall 2019
+
+\BigGap
+\Entry{Private Tutoring}
+\hfill
+2014 -- Present
+\Gap
+
+\begin{Detail}
+\BulletItem Calculus, Linear Algebra, Differential Equations, \\
+Real Analysis, Abstract Algebra, Complex Analysis, \\
+Point-Set Topology, Number Theory, Probability
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%
+%% Conferences %%
+%%%%%%%%%%%%%%%%%
+\Section
+{Conferences}
+{Conferences}
+{PDF:Conferences_Attended}
+
+\BulletItem
+University of Maryland Geometry Festival
+\hfill \DatestampYMD{2019}{05}{01}
+
+\BulletItem
+Arizona Winter School: Topology and Arithmetic
+\hfill \DatestampYMD{2019}{04}{01}
+
+
+\BulletItem
+UC San Diego Complex Algebraic Geometry
+\hfill \DatestampYMD{2019}{01}{01}
+
+\BulletItem
+Witt Vectors, Deformations, and Absolute Geometry
+\hfill \DatestampYMD{2018}{06}{01}
+
+\BulletItem
+Latinx in the Mathematical Sciences
+\hfill \DatestampYMD{2018}{03}{01}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Work EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\Entry
+\href{https://www.retailscientifics.com/}
+{\textbf{Retail Scientifics}},
+San Diego, CA
+\hfill
+\DatestampYMD{2016}{01}{15} --
+\DatestampYMD{2019}{08}{01}
+
+\Gap
+\BulletItem
+Data Scientist \& Full Stack Engineer
+
+\begin{Detail}
+\SubBulletItem
+API development for real-time predictive modeling, time-series forecasting, and machine learning.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://summerofcode.withgoogle.com/archive/}
+{\textbf{Google Summer of Code}},
+Berkeley, CA
+\hfill
+\DatestampYMD{2015}{04}{01} --
+\DatestampYMD{2015}{08}{01}
+
+\Gap
+\BulletItem
+Student Developer
+
+\begin{Detail}
+\SubBulletItem
+Contributed Haskell code to the open source project Hackage.
+\end{Detail}
+
+
+\BigGap
+\Entry
+\href{http://www.shutterfly.com/}
+{\textbf{Shutterfly}},
+Santa Clara, CA
+\hfill
+\DatestampYMD{2014}{06}{01} --
+\DatestampYMD{2015}{01}{01}
+
+\Gap
+\BulletItem
+Software Engineer, Intern/Contractor
+\begin{Detail}
+\SubBulletItem
+Developed server-side OpenGL 3D graphics engine and associated mathematical libraries.
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% COURSEWORK %%
+%%%%%%%%%%%%%%%%
+\Section
+{Coursework}
+{Coursework}
+{PDF:Coursework}
+
+\textbf{Graduate Coursework}
+
+\BulletItem
+Algebra
+\hfill Fall 2019
+
+\BulletItem
+Real Analysis
+\hfill Fall 2019
+
+\BulletItem
+Differential Topology
+\hfill Fall 2019
+
+
+\BulletItem
+Lie Algebras
+\hfill Fall 2019
+
+\BulletItem
+Algebraic Topology
+\hfill Fall 2017 -- Spring 2018
+
+\BulletItem
+Quantum Mechanics for Mathematicians
+\hfill Spring 2017
+
+\BulletItem
+Functional Analysis
+\hfill Fall 2016 -- Winter 2017
+
+\BulletItem
+Algebra
+\hfill Fall 2017
+%%%
+\BigGap
+
+\textbf{Undergraduate Coursework}
+
+\BulletItem
+Cryptography
+\hfill Winter 2018
+
+\BulletItem
+Numerical Methods and Physical Modeling
+\hfill Fall 2017
+
+\BulletItem
+Image Processing
+\hfill Fall 2017
+
+\BigGap
+\BulletItem
+Applied Linear Algebra
+\hfill Summer 2017
+
+\BulletItem
+Partial Differential Equations
+\hfill Summer 2017
+
+\BulletItem
+Computer Vision
+\hfill Spring 2017
+
+\BulletItem
+Complex Analysis
+\hfill Spring 2017
+
+\BulletItem
+History of Mathematics (Hyperbolic Geometry)
+\hfill Spring 2017
+
+\BulletItem
+Theory of Computation
+\hfill Winter 2017
+
+\BulletItem
+Introductory Machine Learning
+\hfill Winter 2017
+
+\BulletItem
+Discrete Math and Graph Theory
+\hfill Winter 2017
+
+\BulletItem
+Design and Analysis of Algorithms
+\hfill Fall 2016
+
+%%%%%%%
+\BigGap
+%%%%%%%
+
+\BulletItem
+Number Theory
+\hfill Summer 2016
+
+\BulletItem
+Advanced Data Structures
+\hfill Spring 2016
+
+\BulletItem
+Knot Theory
+\hfill Spring 2016
+
+\BulletItem
+Point-Set Topology
+\hfill Winter 2015
+
+\BulletItem
+Mathematical Algorithms and Systems Analysis in Computer Science
+\hfill Winter 2015
+
+\BulletItem
+Probability
+\hfill Winter 2015
+
+\BulletItem
+Software Tools and Techniques
+\hfill Winter 2015
+
+\BulletItem
+Combinatorics
+\hfill Fall 2015
+
+\BulletItem
+Abstract Algebra
+\hfill Fall 2015 -- Spring 2016
+
+\BulletItem
+Real Analysis
+\hfill Fall 2015 -- Spring 2016
+
+%%%%%%%
+\BigGap
+%%%%%%%
+
+\BulletItem
+Mathematical Reasoning and Proof
+\hfill Summer 2015
+
+\BulletItem
+Vector Calculus
+\hfill Summer 2015
+
+\BulletItem
+Structure and Interpretation of Signals and Systems
+\hfill Spring 2015
+
+\BulletItem
+Assembly Programming (x86)
+\hfill Spring 2015
+
+\BulletItem
+C++ Programming
+\hfill Spring 2015
+
+\BulletItem
+Finite Mathematics and Linear Programming
+\hfill Spring 2015
+
+\BulletItem
+Discrete Mathematics and Probability Theory
+\hfill Fall 2014
+
+\BulletItem
+Structure and Interpretation of Computer Programs (Python)
+\hfill Fall 2014
+
+%%%%%%%
+\BigGap
+%%%%%%%
+
+\BulletItem
+Elementary Statistics
+\hfill Summer 2014
+
+\BulletItem
+Introduction to Unix
+\hfill Summer 2014
+
+\BulletItem
+Discrete Mathematics
+\hfill Spring 2014
+
+\BulletItem
+Electrical Circuit Theory
+\hfill Spring 2014
+
+\BulletItem
+Differential Equations and Linear Algebra
+\hfill Spring 2014
+
+\BulletItem
+Data Structures
+\hfill Fall 2012
+
+%%%%%%%
+\BigGap
+%%%%%%%
+
+\BulletItem
+General Chemistry
+\hfill Spring 2013 -- Summer 2013
+
+\BulletItem
+Physics: Mechanics, Electromagnetism, Optics, and Waves
+\hfill Fall 2012 -- Spring 2013
+
+\BulletItem
+Calculus: Single and Multivariable
+\hfill Fall 2012 -- Spring 2013
+
+\BulletItem
+Systems Programming with C
+\hfill Fall 2012
+
+\BulletItem
+Discrete Structures in Computer Science
+\hfill Fall 2012
+
+\BulletItem
+Object-Oriented Programming
+\hfill Spring 2012
+
+\end{Body}
+
+\end{document}

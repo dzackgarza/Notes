@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{dashrule}
+\usepackage{pgf, pgffor}
+\usepackage{amsfonts}
+
+\newsavebox\myboxX
+\newsavebox\myboxx
+\newdimen\heightX
+\newdimen\heightx
+
+\newcommand{\setline}[2]{%
+    \savebox\myboxX{\scalebox{#1}{X}}%
+    \savebox\myboxx{\scalebox{#1}{x}}%
+    \heightX=\ht\myboxX
+    \heightx=\ht\myboxx
+    \noindent\ooalign{\rule[\heightX]{\textwidth}{.1pt}\cr
+    \noindent\hdashrule[\heightx]{\textwidth}{.1pt}{1mm}\cr
+    \noindent\rule{\textwidth}{.1pt}\cr
+    \noindent\scalebox{#1}{\pdfliteral{q 1 Tr [.1 .2]0 d .1 w}#2\pdfliteral{Q}}}%
+}
+
+\begin{document}
+
+\foreach \n in {
+  \zeta, \eta,
+  \kappa, \nu, \xi, \rho, \sigma,
+  \tau, \phi, \varphi, \chi, \psi, \omega,
+  \mathfrak{g}, \mathfrak{h}, \mathfrak{n},
+  \mathfrak{b}, \mathfrak{z}, \mathfrak{s},
+  \mathfrak{l}, \mathfrak{p},
+  \Phi
+}{
+\foreach \j in {1, 2, ..., 10}{
+  \setline{5}{$\n\n\n\n\n\n\n\n\n\n$}\vspace{0.25cm}\\
+}
+}
+
+
+\end{document}

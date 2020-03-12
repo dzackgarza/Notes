@@ -1,0 +1,63 @@
+\input{"/home/zack/Dropbox/Document Archive/Latex/preamble.tex"}
+\let\Begin\begin
+\let\End\end
+\newcommand\wrapenv[1]{#1}
+
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+\title{
+\textbf{
+  $if(title)$
+  $title$
+  $else$
+  Title
+  $endif$
+}
+  $if(subtitle)$
+  \\ {\normalsize $subtitle$}
+  $endif$
+}
+\author{D. Zack Garza}
+\date{\today}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+\begin{document}
+
+\maketitle
+% \todo{Insert title and subtitle.}
+\tableofcontents
+
+$if(book)$
+\renewcommand{\listtheoremname}{List of Definitions}
+\listoftheorems[ignoreall,show={definition}]
+
+\renewcommand{\listtheoremname}{List of Theorems}
+\listoftheorems[ignoreall,show={theorem}]
+$endif$
+
+$body$
+
+%\listoftodos
+
+\bibliography{/home/zack/Notes/library.bib}
+
+\end{document}
