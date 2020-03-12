@@ -1,6 +1,8 @@
 While hanging out with a few friends, we came up with a question that should have a clear direct answer: is the 2-sphere $S^2$ being a Lie group? If not, what is the obstruction?
 
-My initial intuition here was something along these lines: $S^2$
+My initial intuition here was something along these lines: if $S^2$ were a topological group, we could consider its Lie algebra by taking the tangent space at the identity $e$ (where without loss of generality, we can rotate $S^2$ to identify $e$ with the North pole.)
+
+Now 
 
 It turns out that the following is true:
 
