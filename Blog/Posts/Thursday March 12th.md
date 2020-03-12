@@ -7,7 +7,7 @@ $$
 \tau: S^2 \to S^2\\
 \tau \definedas \tau_{p_2\inv} \tau_{p_2p_1\inv} \tau_{p_1}.
 $$
-Specifically, my hope was that the induced map $\tau^*: T_e \to T_e$ would not just be an isomorp
+Specifically, my hope was that the induced map $\tau^*: T_e \to T_e$ would not just be an isomorphism, but in fact the *identity* map.
 
 
 
