@@ -20,6 +20,12 @@ It's not so clear to me what part doesn't go through:
 It turns out that the following is true:
 
 Theorem
+: If $S^n$ is a group, then $n$ must be odd.
+
+Proof
+: Suppose otherwise and let $m: (S^n)^2 \to S^n$ be the multiplication. Then $m_g$ defined by $m_g(x) = m(g, x)$ has no fixed points. By Lefschetz, 
+
+Theorem
 : $S^n$ is a topological group $\iff n=0,1,3$.
 
 My impression was that this should be related to the fact that the only normed division algebras are $\RR, \CC, \HH$, and \OO$, but couldn't find an obvious proof along those lines. A bit of searching on Math StackExchange turned up the following proofs:
