@@ -1,6 +1,6 @@
 While hanging out with a few friends, we came up with a question that should have a clear direct answer: is the 2-sphere $S^2$ being a Lie group? If not, what is the obstruction?
 
-My initial intuition here was that the tangent space at every point should "look the same" in some sense
+My initial intuition here was something along these lines: $S^2$
 
 It turns out that the following is true:
 
