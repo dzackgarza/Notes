@@ -12,7 +12,8 @@ Specifically, my hope was that the induced map $\tau^*: T_e \to T_e$ would not j
 It's not so clear to me what part doesn't go through:
 
 - Does nonzero curvature/holonomy on a manifold obstruct it from having a Lie group structure?
-- Do all Lie groups have zero curvature and trivia
+- Do all Lie groups have zero curvature and trivial holonomy groups?
+- 
 
 
 
