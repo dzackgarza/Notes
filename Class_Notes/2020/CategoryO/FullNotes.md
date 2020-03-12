@@ -36,7 +36,7 @@
 
 !include sections/2020-02-24.md
 
-!include sections/2020-02-26.md
+<!--!include sections/2020-02-26.md-->
 
 <!--!include sections/2020-02-28.md-->
 
