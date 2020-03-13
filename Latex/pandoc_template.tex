@@ -47,16 +47,22 @@ $endif$
 \tableofcontents
 
 $if(book)$
+% Hook into amsthm environments to list them.
 \renewcommand{\listtheoremname}{List of Definitions}
 \listoftheorems[ignoreall,show={definition}]
 
 \renewcommand{\listtheoremname}{List of Theorems}
 \listoftheorems[ignoreall,show={theorem}]
+
+% Create indices up front
+\makeindex[title=Concept index] 
 $endif$
 
 $body$
 
 %\listoftodos
+
+\printindex
 
 \bibliography{/home/zack/Notes/library.bib}
 
