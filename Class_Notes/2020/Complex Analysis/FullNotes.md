@@ -1,5 +1,6 @@
 ---
  title: Complex Analysis
+ book:true
 ---
 
 
@@ -37,7 +38,7 @@
 
 !include sections/2020-02-28.md
 
-<!--!include sections/2020-03-06.md-->
+!include sections/2020-03-06.md
 
-<!--!include sections/Appendix.md-->
+!include sections/Appendix.md
 
