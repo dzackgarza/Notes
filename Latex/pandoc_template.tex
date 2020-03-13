@@ -40,6 +40,14 @@
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
+% Create indices up front
+\makeindex[title=Concept index] 
+
+\begin{document}
+
+\maketitle
+% \todo{Insert title and subtitle.}
+\tableofcontents
 
 $if(book)$
 % Hook into amsthm environments to list them.
@@ -48,18 +56,7 @@ $if(book)$
 
 \renewcommand{\listtheoremname}{List of Theorems}
 \listoftheorems[ignoreall,show={theorem}]
-
-% Create indices up front
-\makeindex[title=Concept index] 
 $endif$
-
-
-\begin{document}
-
-\maketitle
-% \todo{Insert title and subtitle.}
-\tableofcontents
-
 
 $body$
 
