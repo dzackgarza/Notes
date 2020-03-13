@@ -40,11 +40,6 @@
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
-\begin{document}
-
-\maketitle
-% \todo{Insert title and subtitle.}
-\tableofcontents
 
 $if(book)$
 % Hook into amsthm environments to list them.
@@ -57,6 +52,14 @@ $if(book)$
 % Create indices up front
 \makeindex[title=Concept index] 
 $endif$
+
+
+\begin{document}
+
+\maketitle
+% \todo{Insert title and subtitle.}
+\tableofcontents
+
 
 $body$
 
