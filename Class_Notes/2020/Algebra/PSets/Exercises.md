@@ -27,45 +27,41 @@ r &\mapsto r\actson_f m
 
 Then clearly $\ann(m) = \ker g_m$, which is a $R\dash$submodule of $R$, which correspond precisely to ideals of $R$.
 
-**Proposition:**
-Let $R$ be a ring and $M$ a cyclic $R\dash$module.
-Then $M \cong R/\ann(M)$ as $R\dash$modules.
+Proposition
+: Let $R$ be a ring and $M$ a cyclic $R\dash$module.
+  Then $M \cong R/\ann(M)$ as $R\dash$modules.
 
 
-*Proof:*
+Proof
+:   **Outline:**
 
-Outline:
+    - Does the statement make sense categorically? I.e. are both sides actually $R\dash$modules?
+    - Construct an element of $f \in \hom_{R\dash\text{mod}}(R, M)$
+    - Show that $f$ is surjective and $\ker f = \ann(M)$, finish by 1st isomorphism theorem.
 
-- Does the statement make sense categorically? I.e. are both sides actually $R\dash$modules?
-- Construct an element of $f \in \hom_{R\dash\text{mod}}(R, M)$
-- Show that $f$ is surjective and $\ker f = \ann(M)$, finish by 1st isomorphism theorem.
-
-**Lemma:**
-For any $I\normal R$, the quotient $R/I$ **does** in fact have an $R\dash$module structure.
-
+    Lemma
+    : For any $I\normal R$, the quotient $R/I$ **does** in fact have an $R\dash$module structure.
 
 
-Suppose the Lemma holds.
-To see that this finishes the proof, let $M$ have an $R\dash$module structure $(\cdot)\in \hom_{\set}(R\cross M, M)$.
+    Suppose the Lemma holds.
+    To see that this finishes the proof, let $M$ have an $R\dash$module structure $(\cdot)\in \hom_{\set}(R\cross M, M)$.
 
-Since $M$ is cyclic, we can write $M = Rm = \theset{r\cdot m \suchthat r\in R}$ for some group element $m\in M$. 
+    Since $M$ is cyclic, we can write $M = Rm = \theset{r\cdot m \suchthat r\in R}$ for some group element $m\in M$. 
 
-> I.e. the $R\dash$orbit of $m$ is transitive.
+    > I.e. the $R\dash$orbit of $m$ is transitive.
 
-We then define the usual map:
-\begin{align*}
-g_m: R &\to M \\
-r &\mapsto r\cdot m
-.\end{align*}
+    We then define the usual map:
+    \begin{align*}
+    g_m: R &\to M \\
+    r &\mapsto r\cdot m
+    .\end{align*}
 
 
-- It's clear that this is a morphism of $R\dash$modules: we have $(rx+_Ry)\cdot m = r(x\cdot m) +_M (y\cdot m)$ which just follows because $\cdot$ is a well-defined action.
-- $g_m$ is surjective: obvious from $M = Rm$.
-- $\ker g_m = \theset{r\in R \suchthat r\cdot m =0} \definedas \ann(m)$.
+    - It's clear that this is a morphism of $R\dash$modules: we have $(rx+_Ry)\cdot m = r(x\cdot m) +_M (y\cdot m)$ which just follows because $\cdot$ is a well-defined action.
+    - $g_m$ is surjective: obvious from $M = Rm$.
+    - $\ker g_m = \theset{r\in R \suchthat r\cdot m =0} \definedas \ann(m)$.
 
-So $R/\ann(m) = R/\ker g_m \cong M$.
-
-$\qed$
+    So $R/\ann(m) = R/\ker g_m \cong M$.
 
 *Proof of lemma:*
 Note that $R$ is an $R\dash$module with action given by $f: R \to \endo(R)$ given by $f(r) = (x\to rx)$ using the ring multiplication.
