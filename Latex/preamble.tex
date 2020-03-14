@@ -67,9 +67,8 @@
 \newcommand{\indic}[1]{\mathbbm{1} \left[ {#1} \right] }
 
 % Highlight quote
-\usepackage[svgnames]{xcolor}
+\usepackage{xcolor}
 \usepackage{environ}
-\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
 \definecolor{block-gray}{gray}{0.85}
 \NewEnviron{myblock}
 {\colorbox{block-gray}{%
@@ -130,7 +129,7 @@
   {}%         Thm head spec
 \theoremstyle{definition}
 \tcolorboxenvironment{definition}{
-  colback=babyblue,
+  colback=gray,
   boxrule=0pt,
   boxsep=0pt,
   breakable,
@@ -214,6 +213,7 @@
 \usepackage{import}
 \usepackage{pdfpages}
 \usepackage{transparent}
+\usepackage{xcolor}
 
 \newcommand{\incfig}[1]{%
     \def\svgwidth{\columnwidth}
