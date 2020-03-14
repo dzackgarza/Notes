@@ -109,3 +109,5 @@ $\dd{}{z} \sum_{j=0}^\infty a_j z^j = \sum_{j=0}^\infty a_{j+1}z^j$.
 - Liouville: Bounded entire functions are constant.
 - Maximum Modulus: Holomorphic functions take extrema only on boundaries.
 - Cauchy Inequalities: The $n$th Taylor coefficient is at most $\sup_{\abs z = R} \abs{f}/R^n$.
+- Cauchy's Theorem: Integrals of holomorphic functions vanish.
+- Morera: Integrals vanishing along every rectangle implies holomorphic.
