@@ -103,6 +103,7 @@ $\dd{}{z} \sum_{j=0}^\infty a_j z^j = \sum_{j=0}^\infty a_{j+1}z^j$.
 - Cauchy's Theorem: Integrals of holomorphic functions vanish.
 - Morera: Integrals vanishing along every rectangle implies holomorphic.
 - Schwarz Reflection: ???
+- Identity Theorem: Two functions agreeing on a set with a limit point are equal on a domain.
 
 ## Precise Refinements
 
