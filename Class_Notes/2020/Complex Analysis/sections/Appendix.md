@@ -108,4 +108,4 @@ $\dd{}{z} \sum_{j=0}^\infty a_j z^j = \sum_{j=0}^\infty a_{j+1}z^j$.
 - Argument Principle: The logarithmic derivative measures the difference of zeros and poles.
 - Liouville: Bounded entire functions are constant.
 - Maximum Modulus: Holomorphic functions take extrema only on boundaries.
-- Cauchy Inequalities: The $n$th Taylor coefficient is at most $\sup_{\abs z = R} f/R^n$.
+- Cauchy Inequalities: The $n$th Taylor coefficient is at most $\sup_{\abs z = R} \abs{f}/R^n$.
