@@ -1,7 +1,8 @@
 ---
-title: Elliptic Curves
-book: true
+ title: Elliptic Curves
+ book: true
 ---
+
 
 !include sections/2020-01-08.md
 
