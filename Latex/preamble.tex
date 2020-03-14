@@ -69,6 +69,7 @@
 % Highlight quote
 \usepackage{xcolor}
 \usepackage{environ}
+\definecolor{camel}{rgb}{0.76, 0.6, 0.42}
 \definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
 \definecolor{block-gray}{gray}{0.85}
 \NewEnviron{myblock}
@@ -108,6 +109,7 @@
   {\thmname{#1} \thmnote{\itshape{(#3)}}}%         Thm head spec
 \theoremstyle{proof}
 \tcolorboxenvironment{proof}{
+  colback=camel,
   boxrule=1pt,
   boxsep=0pt,
   breakable,
