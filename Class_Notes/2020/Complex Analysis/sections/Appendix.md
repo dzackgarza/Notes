@@ -102,3 +102,7 @@ $\dd{}{z} \sum_{j=0}^\infty a_j z^j = \sum_{j=0}^\infty a_{j+1}z^j$.
 ## Pithy Statements
 
 - Little Picard: $f$ misses at most one point and is a homeomorphism onto its image.
+- Baire's Theorem: The intersection of open dense sets is open.
+- Casorati-Weierstrass: The image of a disc punctured at an essential singularity is dense in $\CC$.
+- Open Mapping: Holomorphic functions preserve open sets.
+- Argument Principle: The logarithmic derivative measures the difference of zeros and poles.
