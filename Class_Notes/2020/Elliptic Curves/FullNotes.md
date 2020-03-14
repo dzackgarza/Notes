@@ -16,15 +16,15 @@
 
 !include sections/2020-01-24.md
 
-!include sections/2020-01-27.md
+<!--!include sections/2020-01-27.md-->
 
-!include sections/2020-01-29.md
+<!--!include sections/2020-01-29.md-->
 
-!include sections/2020-01-31.md
+<!--!include sections/2020-01-31.md-->
 
-!include sections/2020-02-03.md
+<!--!include sections/2020-02-03.md-->
 
-!include sections/2020-02-07.md
+<!--!include sections/2020-02-07.md-->
 
 <!--!include sections/2020-02-12.md-->
 
