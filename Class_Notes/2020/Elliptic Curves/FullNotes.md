@@ -1,6 +1,6 @@
 ---
- title: Elliptic Curves
- book: true
+title: Elliptic Curves
+book: true
 ---
 
 
