@@ -1,0 +1,8 @@
+Other stuff
+
+Disabling note preview in Note List
+
+Create an empty file called ".disablePreview" in a notebook folder to disable note preview in Note List.
+
+This is useful with notebooks containing passwords, for example - the preview will not give away the note contents.
+
