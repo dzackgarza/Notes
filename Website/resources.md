@@ -16,6 +16,7 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 ---
 
+
 # General Resources
 
 ## Extracurricular Math
@@ -90,8 +91,8 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 
 - :fa-external-link-alt: [Hopf Fibration Toy](http://philogb.github.io/page/hopf/)
 
-- Funny papers, notes, or expository writing
-  - [Time variation of a fundamental dimensionless constant](https://arxiv.org/abs/0903.5321)
+- [Time variation of a fundamental dimensionless constant](https://arxiv.org/abs/0903.5321)
+- [How to Pronounce Mathematicians' Names](http://www2.onu.edu/~m-caragiu.1/bonus_files/Names.pdf)
 
 - Some interesting Math-related movies:
   - Proof
