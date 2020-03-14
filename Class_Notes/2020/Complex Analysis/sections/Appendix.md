@@ -98,3 +98,7 @@ Green's Theorem:
 Todo
 
 $\dd{}{z} \sum_{j=0}^\infty a_j z^j = \sum_{j=0}^\infty a_{j+1}z^j$.
+
+## Pithy Statements
+
+- Little Picard: $f$ misses at most one point and is a homeomorphism onto its image.
