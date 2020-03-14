@@ -10,6 +10,10 @@ compile:
 	make renew
 	latex_preview -f ./FullNotes.md -j
 
+watch:
+	make renew
+	latex_preview -f ./FullNotes.md
+
 view: 
 	make renew
 	latex_preview -f ./FullNotes.md -v
