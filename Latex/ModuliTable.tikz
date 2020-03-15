@@ -14,10 +14,18 @@
 
 
 
-\node[font=\tiny] at (axis cs:-5,0) [anchor=north west] {-R};
-\node[font=\tiny] at (axis cs:5,0) [anchor=north east] {R};
-\node[font=\tiny] at (axis cs:5,-5) [anchor=north east] {R - ib};
-\node[font=\tiny] at (axis cs:-5,-5) [anchor=north west] {-R - ib};
+\node[font=\tiny] at (axis cs:-5,0) [anchor=north west] {$-R$};
+\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:-5,0) {};
+
+\node[font=\tiny] at (axis cs:5,0) [anchor=north east] {$R$};
+\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:5,0) {};
+
+\node[font=\tiny] at (axis cs:5,-5) [anchor=north east] {$R - ib$};
+\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:-5.0,-5.0) {};
+
+\node[font=\tiny] at (axis cs:-5,-5) [anchor=north west] {$-R - ib$};
+\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:5,-5.0) {};
+
 
 \node[font=\tiny] at (axis cs:5,6) [anchor=north west] {$\mathbb{C}$};
 
