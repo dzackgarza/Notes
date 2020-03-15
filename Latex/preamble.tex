@@ -160,18 +160,25 @@
   {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}% 
 \theoremstyle{theorem}
 \tcolorboxenvironment{theorem}{
-  colback=cyan,
   boxrule=1pt,
   boxsep=0pt,
   breakable,
   enhanced jigsaw,
-  borderline west={4pt}{0pt}{blue},
   opacityback=0.4,
   colframe=cyan
-  coltitle={black},
-  fonttitle={\large\bfseries},
-  attach title to upper={},
+  borderline west={4pt}{0pt}{cyan},
 }
+%colback=babyblue,
+%boxrule=0pt,
+%boxsep=0pt,
+%opacityfill=0.45,
+%borderline west={4pt}{0pt}{blue},
+%colbacktitle={babyblue},
+%coltitle={black},
+%fonttitle={\large\bfseries},
+%attach title to upper={},
+
+
 \newtheorem{theorem}{Theorem}[section]
 \tcolorboxenvironment{proposition}{
   boxrule=1pt,
