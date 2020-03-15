@@ -1,7 +1,6 @@
 ﻿\begin{tikzpicture}
-\pgfplotsset{every x tick label/.append style={font=\tiny, yshift=0.5ex}}
-\pgfplotsset{every y tick label/.append style={font=\tiny, xshift=0.5ex}}
 \begin{axis}[
+		hide axis,
     xmin=-10,
     xmax=10,
     ymin=-2,
@@ -14,31 +13,21 @@
 
 
 
-\node[font=\tiny] at (axis cs:-5,0) [anchor=north west] {$-R$};
-\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:-5,0) {};
+%\node[font=\tiny] at (axis cs:-5,0) [anchor=north west] {$-R$};
+%\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:-5,0) {};
 
-\node[font=\tiny] at (axis cs:5,0) [anchor=north east] {$R$};
-\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:5,0) {};
+%\node[font=\tiny] at (axis cs:5,6) [anchor=north west] {$\mathbb{C}$};
 
-\node[font=\tiny] at (axis cs:5,-5) [anchor=north east] {$R - ib$};
-\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:-5.0,-5.0) {};
-
-\node[font=\tiny] at (axis cs:-5,-5) [anchor=north west] {$-R - ib$};
-\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:5,-5.0) {};
-
-
-\node[font=\tiny] at (axis cs:5,6) [anchor=north west] {$\mathbb{C}$};
+\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:-3.0, 9) -- (axis cs:-3, -0);
 
 \begin{scope}[thick,decoration={
     markings,
     mark=at position 0.5 with {\arrow{>}}}
     ] 
-
-		\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:-5.0, 0) -- (axis cs:-5, -5);
-		\draw[-][black][opacity=0.9, postaction={decorate}]  (axis cs:5, -5) -- (axis cs:5.0, 0);
+		%\draw[-][black][opacity=0.9, postaction={decorate}]  (axis cs:5, -5) -- (axis cs:5.0, 0);
 		
-		\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:5, 0) --  (axis cs:-5.0, 0);
-		\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:-5.0, -5.0) -- (axis cs:5,-5);
+		%\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:5, 0) --  (axis cs:-5.0, 0);
+		%\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:-5.0, -5.0) -- (axis cs:5,-5);
 \end{scope}
 
 
