@@ -26,6 +26,9 @@ r &\mapsto r\actson_f m
 .\end{align*}
 
 Then clearly $\ann(m) = \ker g_m$, which is a $R\dash$submodule of $R$, which correspond precisely to ideals of $R$.
+\begin{cases}
+
+\end{cases}
 
 Proposition
 : Let $R$ be a ring and $M$ a cyclic $R\dash$module.
