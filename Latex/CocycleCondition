@@ -1,0 +1,14 @@
+﻿\tikzset{
+dot/.style = {circle, minimum size=#1,
+              inner sep=0pt, outer sep=0pt},
+dot/.default = 6pt % size of the circle diameter 
+}
+
+\begin{tikzpicture}  
+
+\node[draw,circle,minimum size=10cm,inner sep=0pt] at (3,3) {$X_\alpha$};
+\node[draw,circle,minimum size=10cm,inner sep=0pt] at (3,-3) {$X_\beta$};
+\node[draw,circle,minimum size=10cm,inner sep=0pt] at (-3,3) {$X_\gamma$};
+
+
+\end{tikzpicture}
