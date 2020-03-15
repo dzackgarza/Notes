@@ -5,10 +5,7 @@ dot/.default = 6pt % size of the circle diameter
 }
 
 \begin{tikzpicture}  
-
-\node[draw,circle,minimum size=10cm,inner sep=0pt] at (3,3) {$X_\alpha$};
-\node[draw,circle,minimum size=10cm,inner sep=0pt] at (3,-3) {$X_\beta$};
-\node[draw,circle,minimum size=10cm,inner sep=0pt] at (-3,3) {$X_\gamma$};
-
-
+\node[draw,circle,minimum size=10cm,inner sep=0pt] at (-3,3) {$X_\alpha$};
+\node[draw,circle,minimum size=10cm,inner sep=0pt] at (3,3) {$X_\beta$};
+\node[draw,circle,minimum size=10cm,inner sep=0pt] at (3,-3) {$X_\gamma$};
 \end{tikzpicture}
