@@ -95,8 +95,19 @@
 
 \theoremstyle{definition}
 \newtheorem{exercise}{Exercise}[section]
-\newtheorem{example}{Example}[section]
 \newtheorem{solution}{Solution}
+
+\newtheoremstyle{indented}
+  {.5\topsep}
+  {.5\topsep}
+  {\addtolength{\leftskip}{2.5em}}
+  {-2.5em}
+  {}
+  {}
+  {}
+  {}
+\theoremstyle{indented}
+\newtheorem{example}{Example}[section]
 
 % Proof Style
 \newtheoremstyle{proof}% name
