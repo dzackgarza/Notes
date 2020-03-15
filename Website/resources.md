@@ -94,6 +94,7 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 - [Time variation of a fundamental dimensionless constant](https://arxiv.org/abs/0903.5321)
 - [How to Pronounce Mathematicians' Names](http://www2.onu.edu/~m-caragiu.1/bonus_files/Names.pdf)
 - [Dan Margalit's Advice on Choosing an Advisor](http://people.math.gatech.edu/~dmargalit7/tsr/ChoosinganAdvisor.pdf)
+- [The Prof Z Guide to Doing Homework Effectively](http://pi.math.cornell.edu/~zakh/homeworkguide.pdf)
 
 - Some interesting Math-related movies:
   - Proof
