@@ -1,12 +1,11 @@
 ---
- title: Moduli Spaces
- book: true
+title: Moduli Spaces
+book: true
 ---
-
 
 !include sections/2020-01-09.md
 
-!include sections/2020-01-14.md
+<!--!include sections/2020-01-14.md-->
 
 <!--!include sections/2020-01-16.md-->
 
