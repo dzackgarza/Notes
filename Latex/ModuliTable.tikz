@@ -1,35 +1,44 @@
 ﻿\begin{tikzpicture}
 \begin{axis}[
 		hide axis,
-    xmin=-10,
-    xmax=10,
-    ymin=-2,
-    ymax=2,
+    xmin=-12,
+    xmax=18,
+    ymin=-4,
+    ymax=10,
 		xtick = {0},
 		ytick = {0},
-    axis equal,
-    axis lines=middle,
     disabledatascaling]
 
+\draw[-][black][opacity=1] (axis cs:-10.0, 9) --  (axis cs:-10, -0);
+\draw[-][black][opacity=1] (axis cs:-14.0, 0) --  (axis cs:-6, -0);
 
+\draw[-][black][opacity=1] (axis cs:0.0, 9)  --  (axis cs:-0, -0);
+\draw[-][black][opacity=1] (axis cs:-4.0, 0) --  (axis cs:4, -0);
 
-%\node[font=\tiny] at (axis cs:-5,0) [anchor=north west] {$-R$};
-%\node[fill=black,draw,rounded corners,circle, scale=0.3] at (axis cs:-5,0) {};
+\draw[-][black][opacity=1] (axis cs:10.0, 9)  --  (axis cs: 10, -0);
+\draw[-][black][opacity=1] (axis cs:6.0, 0) --  (axis cs:14, -0);
 
-%\node[font=\tiny] at (axis cs:5,6) [anchor=north west] {$\mathbb{C}$};
+\node[draw, circle, blue,  scale=0.4, fill=blue](left1) at (axis cs:-10, 6)  [anchor=center] {};
+\node[right=1mm of left1,font=\tiny] {$(\eps+ x  - 1)$};
+\node[draw, circle, blue,  scale=0.4, fill=blue](center1) at (axis cs:0, 6)  [anchor=center] {};
+\node[right=1mm of center1,font=\tiny] {$(x)(\eps, x-1)$};
+\node[draw, circle, blue,  scale=0.4, fill=blue](right1) at (axis cs:10, 6)  [anchor=center] {};
+\node[right=1mm of right1,font=\tiny] {$(x(x-1), \eps)$};
 
-\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:-3.0, 9) -- (axis cs:-3, -0);
+\node[draw, circle, blue,  scale=0.4, fill=blue](left2) at (axis cs:-10, 3)  [anchor=center] {};
+\node[draw, circle, blue,  scale=0.4, fill=blue](center2) at (axis cs:0, 3)  [anchor=center] {};
+\node[draw, circle, blue,  scale=0.4, fill=blue](right2) at (axis cs:10, 3)  [anchor=center] {};
 
-\begin{scope}[thick,decoration={
-    markings,
-    mark=at position 0.5 with {\arrow{>}}}
-    ] 
-		%\draw[-][black][opacity=0.9, postaction={decorate}]  (axis cs:5, -5) -- (axis cs:5.0, 0);
-		
-		%\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:5, 0) --  (axis cs:-5.0, 0);
-		%\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:-5.0, -5.0) -- (axis cs:5,-5);
-\end{scope}
+\node[draw, circle, blue,  scale=0.4, fill=blue](left3) at (axis cs:-10, 0)  [anchor=center] {};
+\node[draw, circle, blue,  scale=0.4, fill=blue](center3) at (axis cs:0, 0)  [anchor=center] {};
+\node[draw, circle, blue,  scale=0.4, fill=blue](right3) at (axis cs:10, 0)  [anchor=center] {};
 
+\draw[-][blue, very thick][opacity=0.9] (axis cs:-10.0, 6) --  (axis cs:-7, 9);
+\draw[-][blue, very thick][opacity=0.9] (axis cs:-10.0, 3) --  (axis cs:-7, 3);
 
+\draw[-][blue, very thick][opacity=0.9] (axis cs:0, 3) --  (axis cs:3, 3);
+\draw[-][blue, very thick][opacity=0.9] (axis cs:0, 0) --  (axis cs:3, 0);
+
+\draw[-][blue, very thick][opacity=0.9] (axis cs:10, 0) --  (axis cs:13, 0);
 \end{axis}
 \end{tikzpicture}
