@@ -98,6 +98,49 @@
 \newtheorem{exercise}{Exercise}[section]
 \newtheorem{solution}{Solution}
 
+% Theorem Style
+\newtheoremstyle{theorem}% name
+  {0em}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}% 
+\theoremstyle{theorem}
+\tcolorboxenvironment{theorem}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  fonttitle={\large\bfseries},
+  opacityback=0.8,
+  colframe=cyan,
+  borderline west={4pt}{0pt}{orange},
+  attach title to upper={}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\tcolorboxenvironment{proposition}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.0,
+  colframe=cyan
+}
+\newtheorem{proposition}{Proposition}[section]
+\tcolorboxenvironment{corollary}{
+  colback=cyan,
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.1,
+  colframe=cyan
+}
+\newtheorem{corollary}{Corollary}[section]
 
 % Proof Style
 \newtheoremstyle{proof}% name
@@ -148,51 +191,6 @@
   attach title to upper={},
 }
 \newtheorem{definition}{Definition}[section]
-
-% Theorem Style
-\newtheoremstyle{theorem}% name
-  {0em}%         Space above, empty = `usual value'
-  {2em}%         Space below
-  {\normalfont}% Body font
-  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries}% Thm head font
-  {.}%        Punctuation after thm head
-  {\newline}% Space after thm head: \newline = linebreak
-  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}% 
-\theoremstyle{theorem}
-\tcolorboxenvironment{theorem}{
-  boxrule=1pt,
-  boxsep=0pt,
-  breakable,
-  enhanced jigsaw,
-  fonttitle={\large\bfseries},
-  opacityback=0.8,
-  colframe=cyan,
-  borderline west={4pt}{0pt}{orange},
-  attach title to upper={}
-}
-
-
-\newtheorem{theorem}{Theorem}[section]
-\tcolorboxenvironment{proposition}{
-  boxrule=1pt,
-  boxsep=0pt,
-  breakable,
-  enhanced jigsaw,
-  opacityback=0.0,
-  colframe=cyan
-}
-\newtheorem{proposition}{Proposition}[section]
-\tcolorboxenvironment{corollary}{
-  colback=cyan,
-  boxrule=1pt,
-  boxsep=0pt,
-  breakable,
-  enhanced jigsaw,
-  opacityback=0.1,
-  colframe=cyan
-}
-\newtheorem{corollary}{Corollary}[section]
 
 % Break Environment
 \makeatletter
