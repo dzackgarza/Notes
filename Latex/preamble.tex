@@ -179,6 +179,7 @@
 \newtheorem{proposition}{Proposition}[section]
 
 % Break Environment
+\makeatletter
 \newtheoremstyle{break}% name
   {}%         Space above, empty = `usual value'
   {2em}%         Space below
@@ -192,6 +193,8 @@
   {.}%        Punctuation after thm head
   {\newline}% Space after thm head: \newline = linebreak
   {}%         Thm head spec
+\makeatother
+
 \theoremstyle{break}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
