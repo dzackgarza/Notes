@@ -9,9 +9,9 @@ book: true
 
 !include sections/2020-01-16.md
 
-!include sections/2020-01-23.md
-
-<!--!include sections/2020-01-28.md-->
+  !include sections/2020-01-23.md
+  
+  <!--!include sections/2020-01-28.md-->
 
 <!--!include sections/2020-01-30.md-->
 
