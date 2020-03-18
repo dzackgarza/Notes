@@ -1,5 +1,6 @@
 ---
- title: Morse Theory
+ title:Morse Theory
+book:true
 ---
 
 
