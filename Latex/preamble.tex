@@ -107,7 +107,7 @@
   {\bfseries}% Thm head font
   {.}%        Punctuation after thm head
   {\newline}% Space after thm head: \newline = linebreak
-  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}% 
+  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{theorem}
 \tcolorboxenvironment{theorem}{
   boxrule=0pt,
@@ -132,6 +132,8 @@
   colframe=cyan
 }
 \newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+
 % Corollary
 \tcolorboxenvironment{corollary}{
   colback=cyan,
@@ -212,7 +214,6 @@
 \makeatother
 
 \theoremstyle{break}
-\newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{claim}{Claim}
 \newtheorem{example}{Example}[section]
 
