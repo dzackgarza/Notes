@@ -4,6 +4,8 @@
 ---
 
 
+!include sections/2020-01-01_Preface.md
+
 !include sections/2020-01-09.md
 
 !include sections/2020-01-14.md
