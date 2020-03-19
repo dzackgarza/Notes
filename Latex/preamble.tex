@@ -141,6 +141,17 @@
   colframe=cyan
 }
 \newtheorem{lemma}[theorem]{Lemma}
+% Claim
+\tcolorboxenvironment{claim}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.2,
+  colframe=cyan
+}
+\newtheorem{claim}[theorem]{Claim}
+
 
 % Corollary
 \tcolorboxenvironment{corollary}{
@@ -222,7 +233,6 @@
 \makeatother
 
 \theoremstyle{break}
-\newtheorem{claim}{Claim}
 \newtheorem{example}{Example}[section]
 
 % Problem Style
