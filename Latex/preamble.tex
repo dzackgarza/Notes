@@ -318,7 +318,7 @@
 \usepackage{etoolbox}
 \makeatletter
 \patchcmd\thmtlo@chaptervspacehack
-  {\addtocontents{loe}{\protect\addvspace{12\p@}}}
+  {\addtocontents{loe}{\protect\addvspace{16\p@}}}
   {\addtocontents{loe}{\protect\thmlopatch@endchapter\protect\thmlopatch@chapter{\thechapter}}}
   {}{}
 \AtEndDocument{\addtocontents{loe}{\protect\thmlopatch@endchapter}}
@@ -327,7 +327,7 @@
   \ifdim\ht\z@>\z@
     \hbox{\bfseries\chaptername\ #1}\nobreak
     #2
-    \addvspace{12\p@}
+    \addvspace{16\p@}
   \fi
 }
 \def\thmlopatch@endchapter{}
