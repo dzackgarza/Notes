@@ -24,5 +24,5 @@
 
 !include sections/2020-02-25.md
 
-!include sections/2020-02-27.md
+!include sections/2020-02-27.mD
 
