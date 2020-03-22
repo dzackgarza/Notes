@@ -42,7 +42,14 @@ $if(author)$
 $else$
 \author{D. Zack Garza}
 $endif$
+
+$if(date)$
+\date{$date$}
+$else$
 \date{\today}
+$endif$
+
+
 
 $if(highlighting-macros)$
 $highlighting-macros$
