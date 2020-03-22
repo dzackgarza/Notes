@@ -36,7 +36,12 @@
   \\ {\normalsize $subtitle$}
   $endif$
 }
+
+$if(author)$
+\author{$author$}
+$else$
 \author{D. Zack Garza}
+$endif$
 \date{\today}
 
 $if(highlighting-macros)$
