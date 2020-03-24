@@ -29,7 +29,10 @@ $$
 By theorem 3.2d, we have
 $$
 M, N \in \OO \implies (M\oplus N)\dual \cong M\dual \oplus N\dual
-.$$
+$$
+
+and by definition, $M\dual \definedas \bigoplus_{\lambda \in \lieh\dual} M_\lambda\dual$ is the direct sum of the duals of various weight spaces.
+
 
 # Humphreys 3.4
 Show that $\Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in the root system $\Phi_{[\lambda]}$, but the corresponding simple system $\Delta_{[\lambda]}$ may be unrelated to $\Delta$.
