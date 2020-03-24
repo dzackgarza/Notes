@@ -14,6 +14,7 @@ $$
 ## Solution
 
 [Reference 1](https://math.stackexchange.com/questions/2272891/extension-of-dual-verma-module/2273008#2273008)
+[Reference 2](https://aip.scitation.org/doi/full/10.1063/1.5121236)
 
 > Hence $M\not\in \OO$.
 
