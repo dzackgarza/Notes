@@ -24,6 +24,12 @@ Show that for $M\in \OO$ and $\dim L < \infty$,
 $$
 (M\tensor L)\dual \cong M\dual \tensor L\dual
 $$
+## Solution
+
+By theorem 3.2d, we have
+$$
+M, N \in \OO \implies (M\oplus N)\dual \cong M\dual \oplus N\dual
+.$$
 
 # Humphreys 3.4
 Show that $\Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in the root system $\Phi_{[\lambda]}$, but the corresponding simple system $\Delta_{[\lambda]}$ may be unrelated to $\Delta$.
