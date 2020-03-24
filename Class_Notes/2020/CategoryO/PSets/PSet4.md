@@ -11,6 +11,10 @@ $$
 0 \to M(\lambda) \to M \to M(\lambda) \to 0
 $$
 
+## Solution
+
+[Reference 1](https://math.stackexchange.com/questions/2272891/extension-of-dual-verma-module/2273008#2273008)
+
 > Hence $M\not\in \OO$.
 
 # Humphreys 3.2
