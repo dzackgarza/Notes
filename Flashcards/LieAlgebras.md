@@ -41,6 +41,25 @@ lie algebra
 ---
 
 
+$$
+\Lambda_r
+$$
+
+%
+
+The (integral) **root lattice**.
+
+$$
+\Lambda_r = \mathrm{span}_{\mathbb{Z}}\Phi \subset E
+$$
+
+Has a basis given by \( \Phi \) or \( \Delta \).
+
+%
+
+topics
+
+---
 
 $$
 \Lambda_r
@@ -61,6 +80,7 @@ Has a basis given by \( \Phi \) or \( \Delta \).
 topics
 
 ---
+
 
 
 
