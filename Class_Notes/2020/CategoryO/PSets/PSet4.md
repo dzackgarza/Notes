@@ -24,6 +24,8 @@ Show that for $M\in \OO$ and $\dim L < \infty$,
 $$
 (M\tensor L)\dual \cong M\dual \tensor L\dual
 $$
+- [Reference for Dual of Sum](https://mathoverflow.net/questions/56255/duals-and-tensor-products)
+
 ## Solution
 
 By theorem 3.2d, we have
