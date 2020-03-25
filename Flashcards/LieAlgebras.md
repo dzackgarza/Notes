@@ -69,7 +69,7 @@ $$
 
 Something else
 $$
-\(\definecolor{energy}{RGB}{114,0,172}
+\definecolor{energy}{RGB}{114,0,172}
 \definecolor{freq}{RGB}{45,177,93}
 \definecolor{spin}{RGB}{251,0,29}
 \definecolor{signal}{RGB}{18,110,213}
@@ -79,7 +79,7 @@ $$
 \color{average} \frac{1}{N} \sum_{n=0}^{N-1}
 \color{signal}x_n \color{spin}
 e^{\mathrm{i} \color{circle} 2\pi \color{freq}k
-\color{average} \frac{n}{N}}\)
+\color{average} \frac{n}{N}}
 $$
 
 %
