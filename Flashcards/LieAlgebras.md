@@ -68,6 +68,7 @@ $$
 %
 
 Something else
+
 $$
 \definecolor{energy}{RGB}{114,0,172}
 \definecolor{freq}{RGB}{45,177,93}
