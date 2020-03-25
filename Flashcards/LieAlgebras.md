@@ -10,7 +10,7 @@ The **root system**.
 \alpha \in \Phi \subset \mathfrak{h}^* \iff [h, x] = \alpha(h) x \text{ for all } h\in \mathfrak{h}
 \]
 
-- Span a Euclidean space 
+- Span a Euclidean space
 - \(\alpha, c\alpha \in \Phi \implies c=-1\)
 - \( s_\alpha \Phi \subseteq \Phi\) for all \( \alpha \)
 
@@ -62,22 +62,19 @@ topics
 ---
 
 $$
-\Lambda_r
+\alpha\beta\gamma\delta
 $$
 
 %
 
-The (integral) **root lattice**.
-
+Something else
 $$
-\Lambda_r = \mathrm{span}_{\mathbb{Z}}\Phi \subset E
+\alpha = \beta^\gamma
 $$
-
-Has a basis given by \( \Phi \) or \( \Delta \).
 
 %
 
-topics
+test
 
 ---
 
