@@ -60,3 +60,20 @@ Has a basis given by \( \Phi \) or \( \Delta \).
 topics
 
 ---
+
+$$
+\alpha\beta
+$$
+
+%
+
+Something new.
+$$
+a^b = c
+$$
+
+%
+
+topics
+
+---
