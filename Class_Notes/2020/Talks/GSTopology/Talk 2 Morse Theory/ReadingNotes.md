@@ -14,3 +14,5 @@ Supporting concepts
 
 - Review Classical h-cobordism theorem
 - Morse Lemma: Nondegenerate index $k$ for $\phi: M^n \to \RR$ implies $\phi(u) = \phi(p) - \vector{u}_k^t A \vector{u}_{n-k}$
+- Definitions: embryonic, birth-death types, Cerf diagram
+- 
