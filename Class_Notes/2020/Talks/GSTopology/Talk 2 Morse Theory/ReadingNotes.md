@@ -17,3 +17,4 @@ Supporting concepts
 - Definitions: embryonic, birth-death types, Cerf diagram
 - Theorem: Critical points in 1-parameter families of diffeos are nondegenerate and only birth-death type
 - Definition: Morse index
+- Definition: Stable and unstable manifolds
