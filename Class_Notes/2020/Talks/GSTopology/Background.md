@@ -103,6 +103,12 @@ A vector field $X$ is symplectic iff $\mathcal{L}_X(\omega) = 0$.
 **Definition (Hamiltonian Vector Field)**:
 If $X$ is a vector field and $\iota_X \omega$ is both closed and exact, then $X$ is a *Hamiltonian vector field*.
 
+**Definition**
+Exact symplectic manifold $(M, \lambda)$, $\lambda \in \Omega^1(M)$, with $\omega = d\lambda$ for $\omega \in \Omega^2(M)$.
+
+**Definition**
+Liouville vector field $X$ is the solution of $\mcl_X \omega = \omega$, which yields $i_x d\lambda = \lambda$ where $i_x \omega(y) \definedas \omega(x, y)$.
+
 # Contact
 
 **Definition (Overtwisted Contact Structure):**
