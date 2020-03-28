@@ -13,3 +13,4 @@ Supporting concepts
 
 
 - Review Classical h-cobordism theorem
+- Morse Lemma: $\phi(u) = \phi(p) - \vector{u}_k^t A \vector{u}_{n-k}$
