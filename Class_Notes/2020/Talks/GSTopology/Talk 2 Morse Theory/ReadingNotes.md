@@ -12,6 +12,4 @@ Supporting concepts
 - Profiles and holonomy
 
 
-Review
-
-- Classical h-cobordism theorem
+- Review Classical h-cobordism theorem
