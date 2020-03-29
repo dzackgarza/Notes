@@ -28,4 +28,12 @@ If $f, g$ are holomorphic on $\bar{D}(z_0)$ and $\abs{f - g} < \abs{f} + \abs{g}
 complex, theorem
 ---
 
+Cauchy-Goursat Theorem
+%
+If $f$ is analytic on a simply connected region containing $\gamma$, then $\int_\gamma f = 0$.
+%
+
+---
+
+
 
