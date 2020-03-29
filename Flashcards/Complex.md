@@ -12,3 +12,12 @@ If $f: \Omega \to \CC$ is holomorphic and not constant on $\Omega$, then $f$ is 
 complex, theorem
 ---
 
+Exponential expansions of $\sin(z)$
+%
+$$
+\sin(\theta) = \frac{e^{i\theta} - e^{-i\theta}}{2i} = \frac{z - z\inv}{2i},~~d\theta = \frac{dz}{iz}
+$$
+%
+
+---
+
