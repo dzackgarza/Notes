@@ -30,7 +30,8 @@ complex, theorem
 
 Cauchy-Goursat Theorem
 %
-If $f$ is analytic on a simply connected region containing $\gamma$, then $\int_\gamma f = 0$.
+If $f$ is analytic on a simply connected region $\Omega$ containing a contour $\gamma$, then $\int_\gamma f = 0$.
+Moreover, this holds for any contour $\gamma \subset \Omega$.
 %
 
 ---
