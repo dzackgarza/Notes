@@ -39,10 +39,12 @@
     mark=at position 0.5 with {\arrow{>}}}
     ] 
 
-		\draw [black, domain=0:90, postaction={decorate}] plot ({10*cos(\x)}, {10*sin(\x)});
+		\draw [blue, domain=0:90, postaction={decorate}] plot ({10*cos(\x)}, {10*sin(\x)});
 
-		\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:0, 0) -- (axis cs:10, 0);
-		\draw[-][black][opacity=0.9, postaction={decorate}] (axis cs:0, 10) -- (axis cs:0, 0);
+		\draw[-][blue][opacity=0.9, postaction={decorate}] (axis cs:0, 0) -- (axis cs:10, 0);
+		\draw[-][blue][opacity=0.9, postaction={decorate}] (axis cs:0, 10) -- (axis cs:0, 0);
+
+	\draw[-][red][opacity=0.9, very thick] (axis cs:0, 0) -- (axis cs:0, -5);
 
 
 \end{scope}
