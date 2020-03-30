@@ -36,5 +36,16 @@ Moreover, this holds for any contour $\gamma \subset \Omega$.
 complex, theorem
 ---
 
+Types of singularities
+%
+
+- Removable: $\abs{f(z)}$ is bounded in a punctured disc.
+- Poles: $\lim_{z\to p} \abs{f(z)} = \infty$.
+- Essential: neither removable nor a pole.
+%
+
+complex, fact
+---
+
 
 
