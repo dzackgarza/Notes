@@ -8,3 +8,4 @@
 - Definition: Stable and generic
 - Definition: cobordism
   - Example: (pair of pants)
+- Theorem: Every compact manifold has a Morse function.
