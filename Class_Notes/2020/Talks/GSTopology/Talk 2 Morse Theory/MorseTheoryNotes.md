@@ -198,7 +198,12 @@ Goal: fix $M$, take $(J, \phi)$ and produce $(\omega, X, \phi)$.
 - Produce a vector field $X_\phi \deifnedas \nabla_g \phi$, which is complete and Liouville and gradient-like $\omega_\phi$ (**Item 2**)
 - Use the same Morse function $\phi$ (**Item 3**)
 
+Then letting $\phi$ vary, choosing different $\phi$ yields homotopy-equivalent and hence symplectomorphic manifolds.
+
+> No clue why!!!
+
 ## Weinstein to Stein
+
 
 ## Questions
 
