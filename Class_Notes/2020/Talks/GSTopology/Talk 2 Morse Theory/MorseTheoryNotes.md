@@ -132,7 +132,7 @@ Intrinsic definition: consider $(M^{2n}, J_$ where $M$ is a complex manifold and
 
 > Note on exhausting J-convex functions: origins seem to be in analysis of multiple complex variables. In nicest cases, boils down to the "Levi matrix" (analog of Hessian for $\del, \bar \del$) is positive semidefinite. This is an equivalent condition.
 
-> The subspace of J-convex functions in $C^2(M, \RR)$ is open and contractible, so well-approximated by Morse functions.
+> The subspace of J-convex functions in $C^2(M, \RR)$ is open and contractible, so well-approximated by Morse functions (and the bigger class of *generalized Morse functions*: nondegenerate, restricted critical points).
 
 Theorem (Grauert, Bishop-Narasimhan)
 : $M$ is Stein iff it fits this description.
