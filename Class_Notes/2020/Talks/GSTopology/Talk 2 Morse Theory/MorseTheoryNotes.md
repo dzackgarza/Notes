@@ -58,6 +58,8 @@
 
 ![Descriptions of 2d Handles](figures/2020-03-31-14:17.png)
 
+![Descriptions of 3d Handles](figures/2020-03-31-14:24.png)
+
 ![Handle Decomposition of Torus](figures/2020-03-31-14:19.png)
 
 # Intro Video
