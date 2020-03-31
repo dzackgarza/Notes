@@ -174,7 +174,9 @@ Subdefinitions:
   \mathcal L: \Gamma(TM)\cross \Gamma(TM^{\tensor k}) \to \Gamma(TM^{\tensor k}) \quad \mathcal (\xi, E) \mapsto \mathcal L_\xi(E)
   $$ acts on vector fields and arbitrary tensor fields, in particular alternating tensor fields, i.e. $n\dash$forms.
   - Measures change of a tensor field wrt a vector field, giving a new tensor field. Reduces to lie bracket when $k=1$.
--
+- Complete: flow curves of $\xi$ exist for all time.
+
+[Flow Curves](figures/2020-03-31-18:35.png)\
 
 ## Stein to Weinstein
 
