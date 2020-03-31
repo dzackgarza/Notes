@@ -109,6 +109,8 @@ Examples
 - Any complex projective manifold $X\subset \CP^N$,
 - Any connected non-compact Riemann surface (or closed with a puncture).
 - Any smooth compact $2n$ dimensional manifold with $n>2$ and handles of index $\leq n$.
+  - $n=2$ case works with modification
+  - Every smooth $4$ manifold admits a bisection into two Stein 4-manifolds.
 
 Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of
 
