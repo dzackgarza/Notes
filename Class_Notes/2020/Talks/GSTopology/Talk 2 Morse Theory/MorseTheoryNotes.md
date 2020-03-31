@@ -107,6 +107,7 @@ Stein: $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomor
 Examples
 
 - Any complex projective manifold $X\subset \CP^N$,
+  - I.e. a manifold that is a projective variety; locus of polynomial equations in $\PP^n_\CC$.
   - Note: any algebraic variety over $k = \CC$ is (essentially) birationally equivalent to such a manifold.
 - Any connected non-compact Riemann surface (or closed with a puncture).
 - Any smooth compact $2n$ dimensional manifold with $n>2$ and handles of index $\leq n$.
