@@ -29,3 +29,5 @@
 ![Image](figures/2020-03-30-22:50.png)\
 
 [Video of conformal flows](https://youtu.be/mIUi1zIUQJw?t=42)
+
+[Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
