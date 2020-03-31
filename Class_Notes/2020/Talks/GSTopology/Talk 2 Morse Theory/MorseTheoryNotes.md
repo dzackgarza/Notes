@@ -12,6 +12,7 @@
 - Definition: Morse function and index
   - Look at coordinate-free def?
   - Standard form at critical points
+  - Alternatively: Hessian is non-singular at every critical point.
   - $f\inv\bd Y) = \bd X$
 - Definition: Stable and generic
 - Definition: cobordism
