@@ -102,7 +102,14 @@ Can use persistent homology to measure "importance" of critical points.
 
 Stein: complex-analytic, properly embedded in some $\CC^N$. Examples: any complex projective manifold $X\subset \CP^N$, every closed Riemann surface.
 
-Intrinsic description: consider $(M^{2n}, J_$ where $M$ is a complex manifold and $J$ the structure of complex multiplication on $T_p M$
+Intrinsic description: consider $(M^{2n}, J_$ where $M$ is a complex manifold and $J$ the structure of complex multiplication on $T_p M$.
+
+- Pick a smooth functional $\phi:M\to \RR$
+- Associate the 1-form $d^\CC \phi \definedas d\phi \circ J$.
+- Associate the 2-form $\omega_\phi \definedas -dd^\CC \phi$.
+- Suppose $\phi$ is $J\dash$convex if the function $g_\phi(v, w) \definedas \omega_\phi(v, Jw)$ defines a Riemannian metric
+- Then $\omega_\phi$ is a symplectic form compatible with $J$, i.e. $H_\phi \definedas g_\phi - i\omega_\phi$ is a Hermitian metric
+- Suppose $\phi$ is *exhausting*, i.e. preimages of compact sets are compact and $\phi$ is bounded from below (?)
 
 
 
