@@ -100,28 +100,35 @@ Can use persistent homology to measure "importance" of critical points.
 
 # Stein to Weinstein
 
+
+**Definition (a)**:
+
 Stein: $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1$) such that complex structure is inherited from ambient space.
 
 > Note: *properly embedded* here seems to mean $f:X\to Y$ where $f(\bd X)=f(X) \intersect \bd Y$ and $f(X) \transverse \bd Y$.
 
-Examples
+**Examples**:
 
 - Any complex projective manifold $X\subset \CP^N$,
   - I.e. a manifold that is a projective variety; locus of polynomial equations in $\PP^n_\CC$.
   - Any algebraic variety over $k = \CC$ is (essentially) birationally equivalent to such a manifold.
+
 - Any connected non-compact Riemann surface (or closed with a puncture).
+
 - Any smooth compact $2n$ dimensional manifold with $n>2$ and handles of index $\leq n$.
   - $n=2$ case works with modification
   - Every smooth $4$ manifold admits a bisection into two Stein 4-manifolds.
 
-Why useful:
+**Why useful**:
 - Supposed to be an analog of affine varieties (as per Wikipedia, but should probably be quasi-projective).
 - Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), large class interesting to AG
 - Amenable to Hodge Theory
 - Homotopy types of CW complexes (admits a homotopy equivalence, as do all manifolds)
 
 
-Intrinsic definition: consider $(M^{2n}, J_$ where $M$ is a complex manifold and $J$ the structure of complex multiplication on $T_p M$.
+**Definition (b)**:
+
+Consider $(M^{2n}, J_$ where $M$ is a complex manifold and $J$ the structure of complex multiplication on $T_p M$.
 
 - Pick a smooth functional $\phi:M\to \RR$
 - Associate the 1-form $d^\CC \phi \definedas d\phi \circ J$.
