@@ -186,7 +186,7 @@ Subdefinitions:
 
 ## Stein to Weinstein
 
-Goal: take $M^{2n}$ Stein and produce $(\omega, X, \phi)$.
+Goal: fix $M$, take $(J, \phi)$ and produce $(\omega, X, \phi)$.
 
 - Fix $\phi$ an exhausting $J$-convex generalized Morse function
   - Theorem: every Stein admits one. Analogy: every smooth manifold admits a Morse function.
