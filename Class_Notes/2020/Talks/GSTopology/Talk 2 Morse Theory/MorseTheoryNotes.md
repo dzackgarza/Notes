@@ -200,7 +200,6 @@ Goal: fix $M$, take $(J, \phi)$ and produce $(\omega, X, \phi)$.
 
 Then letting $\phi$ vary, choosing different $\phi$ yields homotopy-equivalent and hence symplectomorphic manifolds.
 
-> No clue why!!!
 
 ## Weinstein to Stein
 
