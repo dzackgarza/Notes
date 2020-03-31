@@ -675,3 +675,4 @@ L'Hopital's
 biholomorphism
 Rouche's
 Versal
+Miniversal
