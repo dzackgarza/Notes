@@ -1,0 +1,3 @@
+- Definition: critical values and critical points
+- Definition: indices of critical points
+-
