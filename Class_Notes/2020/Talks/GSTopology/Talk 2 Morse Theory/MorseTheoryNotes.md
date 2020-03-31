@@ -66,3 +66,9 @@ Circles are index 0 critical points, triangle is index 1.
 
 Cancellation:
 ![Image](figures/2020-03-31-00:10.png)\
+
+![Image](figures/2020-03-31-00:10.png)\
+
+
+
+
