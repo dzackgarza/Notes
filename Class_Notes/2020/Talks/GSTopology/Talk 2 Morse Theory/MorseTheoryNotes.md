@@ -193,7 +193,8 @@ Goal: fix $M$, take $(J, \phi)$ and produce $(\omega, X, \phi)$.
 - Produce the symplectic form $\omega_\phi =-dd^\CC \phi = -d(d\phi \circ J)$ (**Item 1!**)
 - By J-convexity, produce a Riemannian metric $g_\phi(v, w) \definedas \omega_\phi(v, Jw)$.
 - Use this to define a gradient operator $\nabla_g$
-- Produce a vector field $X_\phi \deifnedas \nabla_g \phi$, which is complete and Liouville wrt $\omega_\phi$ (**Item 2**)
+- Produce a vector field $X_\phi \deifnedas \nabla_g \phi$, which is complete and Liouville and gradient-like $\omega_\phi$ (**Item 2**)
+- Check that $\omega, X$
 
 ## Weinstein to Stein
 
