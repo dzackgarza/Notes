@@ -23,4 +23,6 @@
   - Recall that this is proved by constructing a vector field $V$ on $W$, then using a diffeo $\phi:I \cross M_0 \to W$ by flowing along $V$.
   - Say something about gradient flow in the case of a Riemannian metric?
 
-![Image](figures/2020-03-30-22:49.png)
+![Image](figures/2020-03-30-22:49.png)\
+
+![Image](figures/2020-03-30-22:50.png)\
