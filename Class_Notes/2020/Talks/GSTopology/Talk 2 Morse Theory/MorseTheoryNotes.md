@@ -108,7 +108,7 @@ Examples
 
 - Any complex projective manifold $X\subset \CP^N$,
 - Any connected non-compact Riemann surface (or closed with a puncture).
-- Any smooth compact $2n$ dimensional manifold with handles of index $\leq n$.
+- Any smooth compact $2n$ dimensional manifold with $n>2$ and handles of index $\leq n$.
 
 Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of
 
