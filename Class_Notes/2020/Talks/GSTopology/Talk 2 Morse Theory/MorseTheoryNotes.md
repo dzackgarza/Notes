@@ -156,6 +156,8 @@ Theorem
 Moral: flexible, symplectic object.
 
 
+Definition
+
 ## Stein to Weinstein
 
 ## Weinstein to Stein
