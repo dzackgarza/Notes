@@ -104,7 +104,11 @@ Stein: $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomor
 
 > Note: *properly embedded* here seems to mean $f:X\to Y$ where $f(\bd X)=f(X) \intersect \bd Y$ and $f(X) \transverse \bd Y$.
 
-Examples: any complex projective manifold $X\subset \CP^N$, any connected non-compact Riemann surface (or closed with a puncture).
+Examples
+
+- Any complex projective manifold $X\subset \CP^N$,
+- Any connected non-compact Riemann surface (or closed with a puncture).
+- Any smooth compact $2n$ dimensional manifold with handles of index $\leq n$.
 
 Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of
 
