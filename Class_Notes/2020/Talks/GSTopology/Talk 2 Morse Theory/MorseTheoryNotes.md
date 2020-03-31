@@ -157,6 +157,12 @@ Moral: flexible, symplectic object.
 
 
 **Definition**
+A Weinstein manifold is the data of
+
+- $M^{2n}$ a smooth manifold,
+- $\omega$ a symplectic form,
+- $\phi: M\to \RR$ an exhausting generalized Morse function
+- $\xi$ a complete Liouville vector field which is gradient-like for $\phi$.
 
 ## Stein to Weinstein
 
