@@ -56,3 +56,7 @@ If there are no critical points, $M_A \homotopic M_B$.
 ![Image](figures/2020-03-30-23:59.png)\
 
 Stable vs unstable
+
+![Image](figures/2020-03-31-00:04.png)\
+
+![Image](figures/2020-03-31-00:04.png)
