@@ -175,6 +175,7 @@ Subdefinitions:
   $$ acts on vector fields and arbitrary tensor fields, in particular alternating tensor fields, i.e. $n\dash$forms.
   - Measures change of a tensor field wrt a vector field, giving a new tensor field. Reduces to lie bracket when $k=1$.
 - Complete: flow curves of $\xi$ exist for all time.
+  - Recall that the gradient operator takes scalar fields (functions!) to vector fields.
 
 [Flow Curves](figures/2020-03-31-18:35.png)\
 
