@@ -186,7 +186,6 @@ Subdefinitions:
 
 ## Stein to Weinstein
 
-
 Big idea: we want to study Stein structures by deforming them.There is a map from the space of Stein structures to the space of Weinstein structures that (theorem) is a weak homotopy equivalence
 in the compact case, and is conjectured in general.
 
