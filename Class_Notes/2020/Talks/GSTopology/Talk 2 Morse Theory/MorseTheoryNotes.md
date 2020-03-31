@@ -106,6 +106,7 @@ Stein: complex-analytic, *properly embedded* in some $\CC^N$.
 
 Examples: any complex projective manifold $X\subset \CP^N$, every closed Riemann surface.
 
+Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of 
 
 
 Analog:
