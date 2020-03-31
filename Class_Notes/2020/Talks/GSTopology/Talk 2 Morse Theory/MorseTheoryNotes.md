@@ -52,4 +52,5 @@ Morse Lemma: nondegenerate critical points have standard forms $\sum \pm x_i^2$,
 Morse Theorem 1:
 If there are no critical points, $M_A \homotopic M_B$.
 
+![Image](figures/2020-03-30-23:59.png)\
 
