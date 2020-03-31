@@ -176,6 +176,9 @@ Subdefinitions:
   - Measures change of a tensor field wrt a vector field, giving a new tensor field. Reduces to lie bracket when $k=1$.
 - Complete: flow curves of $\xi$ exist for all time.
   - Recall that the gradient operator takes scalar fields (functions!) to vector fields.
+- Gradient-like:
+  - $\nabla \phi(q) \xi(q) > 0 \in \RR$ for $q\in M\setminus \crit(\phi)$ (so $\xi$ "points in the same direction" as $\nabla \phi$)
+  - Near $p\in \crit(\phi)$, we have $\phi(\vector x) =\vector x^t A \vector x$ where $A = \diag(-1, -1, \cdots, -1_k, 1, \cdots, 1_{n})$.
 
 [Flow Curves](figures/2020-03-31-18:35.png)\
 
