@@ -38,9 +38,9 @@
 - Theorem: If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\text{Diff}} I \cross M_0$
 
   - Consequence: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
-  
+
   - Recall that this is proved by constructing a vector field $V$ on $W$, then using a diffeo $\phi:I \cross M_0 \to W$ by flowing along $V$.
-  
+
   - Say something about gradient flow in the case of a Riemannian metric?
 
 ![Image](figures/2020-03-30-22:49.png)\
@@ -50,6 +50,9 @@
 [Video of conformal flows](https://youtu.be/mIUi1zIUQJw?t=42)
 
 [Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
+
+
+Theorem: If $X$ is closed and admits a Morse function with exactly 2 critical points, $X$ is homeomorphic to $S^n$.
 
 # Intro Video
 [Link](https://www.youtube.com/watch?v=78OMJ8JKDqI)
