@@ -1,6 +1,11 @@
 - Definition: critical values and critical points
 - Definition: indices of critical points
-- Statement: Poincare Conjecture and h-cobordism theorem
+- Definition:
+- Theorem (Smale, h-cobordism)
+  - If $X^n$ is a smooth cobordism, $n\geq 6$, $\pi_1(X) = 0$, and $X$ "looks like" a product in algebraic topology, then $X$ is a product cobordism.
+- Corollary (High-Dim Poincare)
+  - If $X_1^n, X_2^n \cong_{\diff} S^n$, then there exists an $h\dash$cobordism between them.
+  - Proof: use algebraic topology to eliminate critical points.
 - Definition: Morse function and index
   - Look at coordinate-free def?
   - Standard form at critical points
