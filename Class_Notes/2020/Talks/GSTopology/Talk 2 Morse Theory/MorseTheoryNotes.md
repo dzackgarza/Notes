@@ -9,3 +9,4 @@
 - Definition: cobordism
   - Example: (pair of pants)
 - Theorem: Every compact manifold has a Morse function.
+- Theorem: Morse functions are generic (given any smooth function $f: X\to Y$, there's an arbitrarily small perturbation of $f$ that is Morse).
