@@ -37,6 +37,8 @@
 
 # Intro Video
 
+Morse theory: handles nice singularities. Can have worse ones, covered by *catastrophe theory* (dynamical systems).
+
 Fact: $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for each critical point of $f$ of index $k$.
 
 Index: number of linearly independent direction you can move for which the function *decreases*.
