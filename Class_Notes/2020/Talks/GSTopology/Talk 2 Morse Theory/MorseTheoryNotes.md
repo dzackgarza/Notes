@@ -36,4 +36,4 @@
 
 # Intro Video
 
-
+Fact: $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for each critical point of $f$ of index $k$.
