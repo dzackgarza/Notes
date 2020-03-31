@@ -100,10 +100,12 @@ Can use persistent homology to measure "importance" of critical points.
 
 # Stein to Weinstein
 
+## Stein
+
+Moral: rigid, complex-analytic.
 
 **Definition (a)**:
-
-Stein: $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1$) such that complex structure is inherited from ambient space.
+$M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1$) such that complex structure is inherited from ambient space.
 
 > Note: *properly embedded* here seems to mean $f:X\to Y$ where $f(\bd X)=f(X) \intersect \bd Y$ and $f(X) \transverse \bd Y$.
 
@@ -149,7 +151,9 @@ Theorem
 
 > A type of filling? Etnyre seems to work on this kind of thing.
 
-Weinstein: symplectic
+## Weinstein
+
+Moral: flexible, symplectic object.
 
 Do these structures satisfy an h-principle?
 
