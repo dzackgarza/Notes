@@ -15,3 +15,4 @@
   - Moreover, after diagonalizing $H_f$, the index is given by the difference in the numbers of positive/negatives on the diagonal.
 - Theorem: If $(W; M_0, M_1) \to [0, 1]$ is Morse with no critical points then $W$ is the trivial cobordism.
   - Consequence: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
+- 
