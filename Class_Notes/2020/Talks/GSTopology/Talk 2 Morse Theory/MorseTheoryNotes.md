@@ -1,4 +1,4 @@
 - Definition: critical values and critical points
 - Definition: indices of critical points
 - Statement: Poincare Conjecture and h-cobordism theorem
-- Definition: Morse function
+- Definition: Morse function and index (coordinate-free way?)
