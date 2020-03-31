@@ -43,3 +43,5 @@ Index: number of linearly independent direction you can move for which the funct
 ![Image](figures/2020-03-30-23:47.png)\
 
 Importance of CW complexes: triangulations of surfaces.
+
+
