@@ -208,6 +208,7 @@ Now choosing another $\phi$ yields a homotopy-equivalent and thus symplectomorph
 
 ## Weinstein to Stein
 
+Theorem: there is an 
 
 ## Questions
 
