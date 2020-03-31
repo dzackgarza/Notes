@@ -62,4 +62,7 @@ Consider height function on torus.
 Circles are index 0 critical points, triangle is index 1.
 ![Image](figures/2020-03-31-00:04.png)\
 
-![Image](figures/2020-03-31-00:04.png)
+![Image](figures/2020-03-31-00:04.png)\
+
+Cancellation:
+![Image](figures/2020-03-31-00:10.png)\
