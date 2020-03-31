@@ -164,6 +164,13 @@ A Weinstein manifold is the data of
 - $\phi: M\to \RR$ an exhausting generalized Morse function
 - $\xi$ a complete Liouville vector field which is gradient-like for $\phi$.
 
+Subdefinitions:
+
+- Exhausting: proper and bounded from below
+- Generalized Morse function: non-degenerate critical points of only birth-death type
+- Liouville: $\mathcal L_X \omega = \omega$, i.e. the Lie derivative preserves the symplectic form.
+  - Recall $\mathcal L: \Gamma(TM^{\tensor k}) \to \Gamma(TM^{\tensor k})$ acts on vector fields and arbitrary tensor fields, in particular alternating tensor fields, i.e. $n\dash$forms.
+
 ## Stein to Weinstein
 
 ## Weinstein to Stein
