@@ -155,6 +155,13 @@ Theorem
 
 Moral: flexible, symplectic object.
 
+
+## Stein to Weinstein
+
+## Weinstein to Stein
+
+## Questions
+
 Do these structures satisfy an h-principle?
 
 The main theorem:
