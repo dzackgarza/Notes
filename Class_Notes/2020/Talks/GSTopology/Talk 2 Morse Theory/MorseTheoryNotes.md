@@ -47,6 +47,7 @@ Importance of CW complexes: triangulations of surfaces.
 
 Morse Lemma: nondegenerate critical points have standard forms $\sum \pm x_i^2$, so the index is well-defined.
 
-
+Morse Theorem 1:
+If there are no critical points, $M_A \homotopic M_B$.
 
 
