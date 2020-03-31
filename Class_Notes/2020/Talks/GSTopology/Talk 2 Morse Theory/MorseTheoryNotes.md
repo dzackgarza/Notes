@@ -107,6 +107,8 @@ Moral: rigid, complex-analytic.
 **Definition (a)**:
 $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1$) such that complex structure is inherited from ambient space.
 
+Data: $M$ and $J$ an integrable complex structure.
+
 > Note: *properly embedded* here seems to mean $f:X\to Y$ where $f(\bd X)=f(X) \intersect \bd Y$ and $f(X) \transverse \bd Y$.
 
 **Examples**:
