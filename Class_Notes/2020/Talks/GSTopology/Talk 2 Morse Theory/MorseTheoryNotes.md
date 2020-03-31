@@ -196,9 +196,11 @@ Goal: fix $M$, take $(J, \phi)$ and produce $(\omega, X, \phi)$.
 - By J-convexity, produce a Riemannian metric $g_\phi(v, w) \definedas \omega_\phi(v, Jw)$.
 - Use this to define a gradient operator $\nabla_g$
 - Produce a vector field $X_\phi \deifnedas \nabla_g \phi$, which is complete and Liouville and gradient-like $\omega_\phi$ (**Item 2**)
-- Use the same Morse function $\phi$ (**Item 3**)
+- Use the same Morse function $\phi$ (**Item 3**), now have a Weinstein structure.
 
-Then letting $\phi$ vary, choosing different $\phi$ yields homotopy-equivalent and hence symplectomorphic manifolds.
+**Theorem: homotopy-equivalent Weinstein manifolds are symplectomorphic**
+
+Now choosing another $\phi$ yields a homotopy-equivalent and thus symplectomorphic manifold, so this association is unique/canonical.
 
 
 ## Weinstein to Stein
