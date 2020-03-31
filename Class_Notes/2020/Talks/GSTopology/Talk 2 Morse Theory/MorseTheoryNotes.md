@@ -36,6 +36,7 @@
 [Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
 
 # Intro Video
+[Link](https://www.youtube.com/watch?v=78OMJ8JKDqI)
 
 Morse theory: handles nice singularities. Can have worse ones, covered by *catastrophe theory* (dynamical systems).
 
@@ -54,3 +55,4 @@ If there are no critical points, $M_A \homotopic M_B$.
 
 ![Image](figures/2020-03-30-23:59.png)\
 
+Stable vs unstable
