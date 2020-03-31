@@ -100,7 +100,9 @@ Can use persistent homology to measure "importance" of critical points.
 
 # Stein to Weinstein
 
-Stein: complex-analytic, properly embedded in some $\CC^N$. Examples: any complex projective manifold $X\subset \CP^N$, every closed Riemann surface.
+Stein: complex-analytic, *properly embedded* in some $\CC^N$. Examples: any complex projective manifold $X\subset \CP^N$, every closed Riemann surface.
+
+Analog:
 
 Intrinsic definition: consider $(M^{2n}, J_$ where $M$ is a complex manifold and $J$ the structure of complex multiplication on $T_p M$.
 
