@@ -45,4 +45,8 @@ Index: number of linearly independent direction you can move for which the funct
 
 Importance of CW complexes: triangulations of surfaces.
 
-Morse Lemma: nondegenerate critical points have standard forms $\sum \pm x_i^2$.
+Morse Lemma: nondegenerate critical points have standard forms $\sum \pm x_i^2$, so the index is well-defined.
+
+
+
+
