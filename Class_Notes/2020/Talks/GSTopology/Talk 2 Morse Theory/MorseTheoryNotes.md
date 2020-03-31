@@ -186,6 +186,8 @@ Subdefinitions:
 
 ## Stein to Weinstein
 
+Big theorem: there is a map from the space of Stein structures to the space of Weinstein structures that is a weak homotopy equivalence.
+
 Goal: fix $M$, take $(J, \phi)$ and produce $(\omega, X, \phi)$.
 
 > Really: Use $J, \phi$ to produce $\omega, X$.
