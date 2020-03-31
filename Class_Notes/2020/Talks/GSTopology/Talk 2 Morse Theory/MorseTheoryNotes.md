@@ -55,6 +55,8 @@
 - Theorem: If $X$ is closed and admits a Morse function with exactly 2 critical points, $X$ is homeomorphic to $S^n$.
   - Possibly used in Milnor's exotic 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
 
+![Descriptions of 2d Handles](figures/2020-03-31-14:17.png)
+
 # Intro Video
 [Link](https://www.youtube.com/watch?v=78OMJ8JKDqI)
 
