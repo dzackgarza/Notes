@@ -1,3 +1,5 @@
+# Dave's Videos
+
 - Historic note: Morse wanted to know not the diffeomorphism type of $M$, but rather the homotopy type.
 - Definition: critical values and critical points
 - Definition: indices of critical points
@@ -31,3 +33,7 @@
 [Video of conformal flows](https://youtu.be/mIUi1zIUQJw?t=42)
 
 [Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
+
+# Intro Video
+
+
