@@ -112,7 +112,7 @@ Examples
   - $n=2$ case works with modification
   - Every smooth $4$ manifold admits a bisection into two Stein 4-manifolds.
 
-Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of
+Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of affine varieties (as per wikipedia, but should probably be quasi-projective).
 
 
 Analog:
