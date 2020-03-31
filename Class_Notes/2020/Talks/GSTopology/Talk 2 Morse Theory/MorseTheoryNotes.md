@@ -100,13 +100,13 @@ Can use persistent homology to measure "importance" of critical points.
 
 # Stein to Weinstein
 
-Stein: complex-analytic, *properly embedded* in some $\CC^N$.
+Stein: $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1)
 
 > Note: *properly embedded* here seems to mean $f:X\to Y$ where $f(\bd X)=f(X) \intersect \bd Y$ and $f(X) \transverse \bd Y$.
 
-Examples: any complex projective manifold $X\subset \CP^N$, every closed Riemann surface.
+Examples: any complex projective manifold $X\subset \CP^N$, any connected non-compact Riemann surface (or closed with a puncture).
 
-Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of 
+Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of
 
 
 Analog:
@@ -122,6 +122,9 @@ Intrinsic definition: consider $(M^{2n}, J_$ where $M$ is a complex manifold and
 
 Theorem (Grauert, Bishop-Narasimhan)
 : $M$ is Stein iff it fits this description.
+
+Theorem
+: If $n=2$, $M$ admits a Morse function $f$ such that away from critical points, taking complex tangencies at the preimages $M_c\definedas f\inv(c)$ yield contact structures inducing orientations on $M_x$ agreeing with the induced boundary orientation on $f\inv(-\infty, c)$.
 
 Weinstein: symplectic
 
