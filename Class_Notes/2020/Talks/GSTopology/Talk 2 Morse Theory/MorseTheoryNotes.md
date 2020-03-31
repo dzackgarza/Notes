@@ -184,7 +184,8 @@ Subdefinitions:
 
 ## Stein to Weinstein
 
-
+- Fix $\phi$ an exhausting $J$-convex generalized Morse function
+- Produce the symplectic form $\omega_\phi$
 
 ## Weinstein to Stein
 
