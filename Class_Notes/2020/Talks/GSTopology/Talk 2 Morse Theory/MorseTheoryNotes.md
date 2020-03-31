@@ -184,8 +184,14 @@ Subdefinitions:
 
 ## Stein to Weinstein
 
+Goal: take $M^{2n}$ Stein and produce $(\omega, X, \phi)$.
+
 - Fix $\phi$ an exhausting $J$-convex generalized Morse function
-- Produce the symplectic form $\omega_\phi$
+  - Theorem: every Stein admits one. Analogy: every smooth manifold admits a Morse function.
+- Produce the symplectic form $\omega_\phi =-dd^\CC \phi = -d(d\phi \circ J)$
+- By J-convexity, produce a Riemannian metric $g_\phi(v, w) \definedas \omega_\phi(v, Jw)$.
+- Use this to define a gradient operator $\nabla_g$
+- Produce a gradient vector field $X_\phi \deifnedas \nabla_g \phi$, which is Liouville wrt $\omega_\phi$
 
 ## Weinstein to Stein
 
