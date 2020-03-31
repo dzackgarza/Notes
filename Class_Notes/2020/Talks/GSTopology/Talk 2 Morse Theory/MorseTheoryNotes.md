@@ -22,3 +22,5 @@
   - Consequence: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
   - Recall that this is proved by constructing a vector field $V$ on $W$, then using a diffeo $\phi:I \cross M_0 \to W$ by flowing along $V$.
   - Say something about gradient flow in the case of a Riemannian metric?
+
+![Image](figures/2020-03-30-22:49.png)
