@@ -138,6 +138,8 @@ Theorem (Grauert, Bishop-Narasimhan)
 Theorem
 : If $n=2$, $M$ admits a Morse function $f$ such that away from critical points, taking complex tangencies at the preimages $M_c\definedas f\inv(c)$ yield contact structures inducing orientations on $M_x$ agreeing with the induced boundary orientation on $f\inv(-\infty, c)$.
 
+> A type of filling? Etnyre seems to work on this kind of thing.
+
 Weinstein: symplectic
 
 Do these structures satisfy an h-principle?
