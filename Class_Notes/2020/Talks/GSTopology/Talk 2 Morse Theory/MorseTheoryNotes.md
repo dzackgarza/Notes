@@ -1,3 +1,4 @@
+- Historic note: Morse wanted to know not the diffeomorphism type of $M$, but rather the homotopy type.
 - Definition: critical values and critical points
 - Definition: indices of critical points
 - Definition:
