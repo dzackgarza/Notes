@@ -677,3 +677,4 @@ Rouche's
 Versal
 Miniversal
 versal
+semidefinite

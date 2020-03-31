@@ -100,7 +100,7 @@ Can use persistent homology to measure "importance" of critical points.
 
 # Stein to Weinstein
 
-Stein: $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1)
+Stein: $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1$) such that complex structure is inherited from ambient space.
 
 > Note: *properly embedded* here seems to mean $f:X\to Y$ where $f(\bd X)=f(X) \intersect \bd Y$ and $f(X) \transverse \bd Y$.
 
@@ -114,7 +114,11 @@ Examples
   - $n=2$ case works with modification
   - Every smooth $4$ manifold admits a bisection into two Stein 4-manifolds.
 
-Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), supposed to be an analog of affine varieties (as per Wikipedia, but should probably be quasi-projective).
+Why useful:
+- Supposed to be an analog of affine varieties (as per Wikipedia, but should probably be quasi-projective).
+- Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), large class interesting to AG
+- Amenable to Hodge Theory
+- Homotopy types of CW complexes (admits a homotopy equivalence, as do all manifolds)
 
 
 Intrinsic definition: consider $(M^{2n}, J_$ where $M$ is a complex manifold and $J$ the structure of complex multiplication on $T_p M$.
@@ -125,6 +129,8 @@ Intrinsic definition: consider $(M^{2n}, J_$ where $M$ is a complex manifold and
 - Suppose $\phi$ is $J\dash$convex if the function $g_\phi(v, w) \definedas \omega_\phi(v, Jw)$ defines a Riemannian metric
 - Then $\omega_\phi$ is a symplectic form compatible with $J$, i.e. $H_\phi \definedas g_\phi - i\omega_\phi$ is a Hermitian metric
 - Suppose $\phi$ is *exhausting*, i.e. preimages of compact sets are compact and $\phi$ is bounded from below (?)
+
+> Note on exhausting J-convex functions: origins seem to be in analysis of multiple complex variables. In nicest cases, boils down to the "Levi matrix" (analog of Hessian for $\del, \bar \del$) is positive semidefinite.
 
 Theorem (Grauert, Bishop-Narasimhan)
 : $M$ is Stein iff it fits this description.
