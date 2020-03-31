@@ -1,6 +1,10 @@
 - Definition: critical values and critical points
 - Definition: indices of critical points
 - Statement: Poincare Conjecture and h-cobordism theorem
-- Definition: Morse function and index (coordinate-free way?)
+- Definition: Morse function and index
+  - Look at coordinate-free def?
+  - Standard form at critical points
+  - $f\inv\bd Y) = \bd X$
 - Definition: Stable and generic
--
+- Definition: cobordism
+  - Example: (pair of pants)
