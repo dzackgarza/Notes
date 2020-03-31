@@ -169,9 +169,16 @@ Subdefinitions:
 - Exhausting: proper and bounded from below
 - Generalized Morse function: non-degenerate critical points of only birth-death type
 - Liouville: $\mathcal L_X \omega = \omega$, i.e. the Lie derivative preserves the symplectic form.
-  - Recall $\mathcal L: \Gamma(TM^{\tensor k}) \to \Gamma(TM^{\tensor k})$ acts on vector fields and arbitrary tensor fields, in particular alternating tensor fields, i.e. $n\dash$forms.
+  - Recall
+  $$
+  \mathcal L: \Gamma(TM)\cross \Gamma(TM^{\tensor k}) \to \Gamma(TM^{\tensor k}) \quad \mathcal (\xi, E) \mapsto \mathcal L_\xi(E)
+  $$ acts on vector fields and arbitrary tensor fields, in particular alternating tensor fields, i.e. $n\dash$forms.
+  - Measures change of a tensor field wrt a vector field, giving a new tensor field
+-
 
 ## Stein to Weinstein
+
+
 
 ## Weinstein to Stein
 
