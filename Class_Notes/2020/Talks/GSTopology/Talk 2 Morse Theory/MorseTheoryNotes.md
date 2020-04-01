@@ -303,3 +303,6 @@ Fact
 : Embryonic critical points are isolated, near a birth-type singularity two nondegenerate critical points of indices $k, k-1$ emerge, and near a death type they merge and disappear.
 
 > Pretty vague -- I know there are pictures here that make this more obvious, but I couldn't find much.
+
+Definition
+: A *cobordism* is a triple $(W; M_+, M_-)$ where $W$ is an oriented compact smooth manifold with cooriented boundary $\bd W = M_+ \disjoint M_-$
