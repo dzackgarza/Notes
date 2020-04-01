@@ -341,7 +341,7 @@ Proof (Sketch)
 - Pick $\phi: W\to \RR$ Morse such that $\bd_\pm W$ are regular level sets.
 - Make $\phi$ self-intersecting (uses a transversality argument)
 - Partition manifold into regular level sets $L_k \definedas \phi\inv(k - \frac 1 2)$ for each $k\in \NN$.
-- Letting $\theset{p_i}$ be the critical points in $L_k$ and $\theset{q_j}$ the critical points in $L_{k-1$, form the matrix $A$ of intersection numbers $S_{p_i}^- \smile S_{q_j}^+$ between the stable sphere of $p_i$ and the unstable sphere of $q_j$.
+- Letting $\theset{p_i}$ be the critical points in $L_k$ and $\theset{q_j}$ the critical points in $L_{k-1}$, form the matrix $A$ of intersection numbers $S_{p_i}^- \smile S_{q_j}^+$ between the stable sphere of $p_i$ and the unstable sphere of $q_j$.
 - Goal: since homology can be read off $SNF(A)$, and we know $H_* = 0$ here, we try to reduce $A$ to SNF with geometric operations
   - Handle slides: Add row $j$ to row $i$ by moving $p_i$ to $L_{k+j}, ~j\geq 1$, deform $X$ to produce a trajectory $p_j \to p_i$, then "the stable manifold of $p_i$ slides over the stable manifold of $p_j$" (?) replacing $[S_i^-]$ with $[S_i^-] + [S_j^-]$ in homology.
   - This makes $A = [I, 0; 0, 0]$ a block matrix with the identity in the top-left.
