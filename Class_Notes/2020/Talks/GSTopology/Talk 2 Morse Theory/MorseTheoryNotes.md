@@ -328,9 +328,10 @@ Theorem (Smale, h-cobordism)
 
 Proof (Sketch)
 
-Goal: find a handle decomposition with *no* handles, then integrate along the gradient vector field of a Morse function to get a diffeomorphism.
+Goal: find a handle decomposition with *no* handles, then integrate along the gradient vector field of a Morse function $\phi$ to get a diffeomorphism.
 
 - Find a Morse function and induce a handle decomposition
 - Rearrange handles so that lower index handles are attached first
 - Define a chain complex as free $\ZZ\dash$module on handles with boundary given in terms of intersection numbers of attaching spheres $k$ and belt $k-1$ spheres
-- Use the Whitney trick to find embedded discs and cancel (fill!) $k$ handles 
+- Find $k\dash$handles, create a pair of $k+1, k+2$ handles such that the $k+1$ handle cancels/fills in the $k\dash$handle (not sure why the $k+2$ is needed here)
+- End up with nothing but an $n\dash$handle and an $n-1\dash$handle -- turn "upside down" and repeat process with $-\phi$
