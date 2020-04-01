@@ -680,3 +680,4 @@ versal
 semidefinite
 symplectomorphic
 Verma's
+semilocal
