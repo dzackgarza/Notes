@@ -218,7 +218,7 @@ Theorem: there is a "weak homotopy inverse"to $\mathfrak{M}_\phi$, i.e. given a 
 
 ## Questions
 
-Do these structures satisfy an **h-principle**? Origins: given a PDE, a "partially specified" solution can be deformed into an actual solution.
+Do these structures satisfy an **h-principle**? Origins (Gromov, 1970): given a PDE, a "partially specified" solution can be deformed into an actual solution.
 
 The main theorem:
 
