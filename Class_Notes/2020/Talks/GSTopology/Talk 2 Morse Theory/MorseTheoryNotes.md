@@ -133,6 +133,7 @@ Data: $M$ and $J$ an integrable complex structure.
   - Every smooth $4$ manifold admits a bisection into two Stein 4-manifolds.
 
 **Why useful**:
+
 - Supposed to be an analog of affine varieties (as per Wikipedia, but should probably be quasi-projective).
 - Every Stein manifold is Kahler (compatible complex + Riemannian + symplectic structures), large class interesting to AG
 - Amenable to Hodge Theory
