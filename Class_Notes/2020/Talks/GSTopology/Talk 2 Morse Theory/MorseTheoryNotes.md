@@ -295,3 +295,6 @@ Theorem (Whitney)
     3. Any two homotopies $\Phi, \Phi'$ with points $(p, 0)$ and $(p', 0)$ with the same index and Cerf profile differ only by a diffeomorphism, i.e. there is a family of diffeomorphisms $h_t$ such that $\phi'_t \circ h_t = \phi_t$ for every $t$.
 
     4. A generic $\Phi$ has only nondegenerate and birth-death type singularities.
+
+Definition
+: A singularity is *birth type* if the sign on $t$ is positive, and *death type* if negative.
