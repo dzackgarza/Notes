@@ -97,7 +97,7 @@ Cancellation:
 
 ![Image](figures/2020-03-31-00:10.png)\
 
-![Image](figures/2020-03-31-00:11.png)
+![Image](figures/2020-03-31-00:11.png)\
 
 Can use persistent homology to measure "importance" of critical points.
 
