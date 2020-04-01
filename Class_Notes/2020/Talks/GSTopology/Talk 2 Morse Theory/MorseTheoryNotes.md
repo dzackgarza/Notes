@@ -262,5 +262,7 @@ Theorem (Morse Lemma)
     $$
 
 Lemma (The nondegenerate directions can be split off)
-:   If $\null_\phi(p) = \ell$ then we can instead write
-    $$\phi(\vector x, \vector y, \vector z) =
+:   If $\null_\phi(p) = \ell$ then we can instead write $\RR = \RR^{n-k-\ell} \cross \RR^k \cross \RR^\ell$ and
+    $$
+    \phi(\vector x, \vector y, \vector z) = \norm{\vector x}^2 - \norm{\vector y}^2 + \psi(\vector z)
+    $$
