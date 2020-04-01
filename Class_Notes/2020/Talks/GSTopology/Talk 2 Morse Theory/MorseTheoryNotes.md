@@ -203,12 +203,12 @@ Goal: fix $M$, take $(J, \phi)$ and produce $(\omega, X, \phi)$.
 
 **Theorem: homotopy-equivalent Weinstein manifolds are symplectomorphic**
 
-Now choosing another $\phi$ yields a homotopy-equivalent and thus symplectomorphic manifold, so this association is unique/canonical.
+Now choosing another $\phi$ yields a homotopy-equivalent and thus symplectomorphic manifold, so this association (denoted $\mathfrak{M}_\phi$ in the text) is unique/canonical.
 
 
 ## Weinstein to Stein
 
-Theorem: there is an 
+Theorem: there is a "weak homotopy inverse"to $\mathfrak{M}_\phi$, i.e. given a Weinstein structure $(\omega, X, \phi)$ there is a Stein structure $(J, \phi)$ such that $\mathfrak{M}(J, \phi)$ is Weinstein-homotopic (homotopy-equivalent?) to $(\omega, X, \phi)$ rel $\phi$, i.e. $\phi$ is fixed through the homotopy.
 
 ## Questions
 
