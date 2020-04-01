@@ -346,4 +346,5 @@ Proof (Sketch)
   - Handle slides: Add row $j$ to row $i$ by moving $p_i$ to $L_{k+j}, ~j\geq 1$, deform $X$ to produce a trajectory $p_j \to p_i$, then "the stable manifold of $p_i$ slides over the stable manifold of $p_j$" (?) replacing $[S_i^-]$ with $[S_i^-] + [S_j^-]$ in homology.
   - This makes $A = [I, 0; 0, 0]$ a block matrix with the identity in the top-left.
   -  Handle Cancellation: Take two transverse intersection points $z_+, z_-$ with local intersection indices $1, -1$, connect via two paths: one in $S_i^-$, one in $S_j^+$. This yields a map $S^1 \injects L_k$, use the Whitney trick to fill with an embedded disc $\Delta$, then push $S_i^-$ over $\Delta$ eliminates $z_\pm$.
-  - 
+  - This leaves a collection $S_i^-, S_i^+$ for $i=1,\cdots, r$ intersecting in a single point $z_0$, then (lemma) there are unique trajectories $q_i \to p_i$ for each $I$ and thus they can be eliminated.
+- Do this in $L_k$; we now have a Morse function with no critical points 
