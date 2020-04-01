@@ -277,3 +277,21 @@ We now consider homotopies of Morse functions $\phi: I \cross V \to \RR$, where 
 
 Definition
 : A homotopy $\Phi: V\cross I \to \RR$ of Morse functions has a *birth-death type* critical point at $p$ at $t=t_0$ iff $p$ is embryonic for $\phi_0$ and $(t_0, p)$ is a nondegenerate critical point of $\Phi$.
+
+> Recall what a Cerf diagram/profile is -- I don't
+
+Theorem (Whitney)
+:   In three parts:
+
+    1. Near an embryonic critical point $p$ of $\phi$ of index $k$ there exist coordinate $(\vector x, \vector y, z) \in \RR^{n-k-1} \oplus \RR^{k} \oplus \RR$ such that $\phi$ has the form
+    $$
+    \phi(\vector x, \vector y, z) = \phi(p) + \norm{\vector x}^2 - \norm{\vector y}^2 + z^3
+    $$
+    2. If $p$ is birth-death type for $\Phi$ of index $k$, then up to conjugating $\phi_t$ by a (uniform in $t$) family of diffeomorphisms, each $\phi_t$ is of the form
+    $$
+    \phi(\vector x, \vector y, z) = \phi(p) + \norm{\vector x}^2 - \norm{\vector y}^2 + z^3 \pm tz
+    $$
+
+    3. Any two homotopies $\Phi, \Phi'$ with points $(p, 0)$ and $(p', 0)$ with the same index and Cerf profile differ only by a diffeomorphism, i.e. there is a family of diffeomorphisms $h_t$ such that $\phi'_t \circ h_t = \phi_t$ for every $t$.
+
+    4. A generic $\Phi$ has only nondegenerate and birth-death type singularities.
