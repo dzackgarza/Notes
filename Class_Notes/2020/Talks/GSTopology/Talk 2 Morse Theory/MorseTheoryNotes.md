@@ -236,6 +236,7 @@ Recast, the inclusion of the space of "partially specified" solutions into the s
 ## Morse Theory
 
 Goal: handlebody decomposition, or for the purposes of the above theorems, retractions onto a CW complex.
+Decomposing a cobordism into a sequence of elementary cobordisms.
 
 Fact: since $\phi$ is Morse, $M^{2n}$ can be retracted onto a complex of dimension $d\leq n$, since all critical points will have index $\leq n$.
 
@@ -267,3 +268,5 @@ Lemma (The nondegenerate directions can be split off)
     \phi(\vector x, \vector y, \vector z) = \norm{\vector x}^2 - \norm{\vector y}^2 + \psi(\vector z)
     $$
     where $\psi: \RR^\ell \to \RR$ is some smooth function.
+
+
