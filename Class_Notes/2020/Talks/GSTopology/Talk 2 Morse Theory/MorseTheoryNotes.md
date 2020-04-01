@@ -253,3 +253,5 @@ Setting up notation/definitions:
 - The *Morse index* at $p$ is the dimension of the maximal subspace on which the associated *quadratic* form $H_p \phi$ is negative definite.
 
 
+Theorem (Morse Lemma)
+: Near a nondegenerate critical point $p$ of $\phi$ of index $k$ there exists a smooth coordinate chart $U$ and coordinates $\vector x \in \RR^n$ such that $\phi$ has the form $$\phi(\vector x) = \phi(p) + \vector x^t A \vector x$$ where $A = \diag(-1, \cdots, -1, 1,\cdots 1)$.
