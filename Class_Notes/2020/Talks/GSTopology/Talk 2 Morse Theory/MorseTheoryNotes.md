@@ -138,7 +138,7 @@ Data: $M$ and $J$ an integrable complex structure.
 
 **Definition (b)**:
 
-Consider $(M^{2n}, J_$ where $M$ is a complex manifold and $J$ the structure of complex multiplication on $T_p M$.
+Consider $(M^{2n}, J)$ where $M$ is a complex manifold and $J$ the structure of complex multiplication on $T_p M$.
 
 - Pick a smooth functional $\phi:M\to \RR$
 - Associate the 1-form $d^\CC \phi \definedas d\phi \circ J$.
