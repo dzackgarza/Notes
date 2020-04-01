@@ -270,3 +270,5 @@ Lemma (The nondegenerate directions can be split off)
     where $\psi: \RR^\ell \to \RR$ is some smooth function.
 
 
+Definition
+: A degenerate critical point is *embryonic* iff $\null_\phi(p) = 1$ and writing $L = \ker H_p\phi = \spanof_\RR{\vector v}$, the third directional derivative $D_{\vector v}^3 \phi \neq 0$.
