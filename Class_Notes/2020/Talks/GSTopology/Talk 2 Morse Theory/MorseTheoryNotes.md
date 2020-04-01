@@ -254,4 +254,13 @@ Setting up notation/definitions:
 
 
 Theorem (Morse Lemma)
-: Near a nondegenerate critical point $p$ of $\phi$ of index $k$ there exists a smooth coordinate chart $U$ and coordinates $\vector x \in \RR^n$ such that $\phi$ has the form $$\phi(\vector x) = \phi(p) + \vector x^t A \vector x$$ where $A = \diag(-1, \cdots, -1, 1,\cdots 1)$.
+:   Near a nondegenerate critical point $p$ of $\phi$ of index $k$ there exists a smooth coordinate chart $U$ and coordinates $\vector x \in \RR^n$ such that $\phi$ has the form $$\phi(\vector x) = \phi(p) + \vector x^t A \vector x$$ where $A = \diag(-1, \cdots, -1, 1,\cdots 1)$.
+
+    Toward a generalization, we can also write $\RR = \RR^{k} \cross \RR^{n-k}$ and
+    $$
+    \phi(\vector x_1, \vector x_2) = \phi(p) - \norm{\vector x_1}^2 + \norm{\vector x_2}^2
+    $$
+
+Lemma (The nondegenerate directions can be split off)
+:   If $\null_\phi(p) = \ell$ then we can instead write
+    $$\phi(\vector x, \vector y, \vector z) =
