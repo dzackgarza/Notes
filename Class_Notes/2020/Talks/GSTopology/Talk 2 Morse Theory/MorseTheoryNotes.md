@@ -35,7 +35,7 @@
 
   - Moreover, after diagonalizing $H_f$, the index is given by the difference in the numbers of positive/negatives on the diagonal.
 
-- Theorem: If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\text{Diff}} I \cross M_0$
+- Theorem: If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\diff} I \cross M_0$
 
   - Consequence: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
 
