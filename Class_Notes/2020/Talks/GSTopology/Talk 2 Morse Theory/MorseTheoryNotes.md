@@ -252,7 +252,7 @@ Setting up notation/definitions:
 - $W$ an $n\dash$dimensional cobordism
 - $\phi: V\to \RR$ a smooth function
 - $p$ a critical point of $\phi$ (i.e. the derivative $d_p \phi$ vanishes)
-- $H_p = ({\del^2 \phi \over \del x_i^2 \del x_j^2})$ the Hessian matrix
+- $H_p\phi = ({\del^2 \phi \over \del x_i^2 \del x_j^2})$ the Hessian matrix
 - $\null_\phi(p)$ the *nullity* of $\phi$ at $p$ is $\dim \ker H_p$, regarding $H_p\phi$ as a symmetric bilinear form on $T_p V$
 - $p$ is *nondegenerate* iff $\null_\phi(p) = 0$.
 - The *Morse index* at $p$ is the dimension of the maximal subspace on which the associated *quadratic* form $H_p \phi$ is negative definite.
