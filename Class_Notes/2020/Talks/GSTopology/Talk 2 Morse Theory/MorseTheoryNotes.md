@@ -320,3 +320,8 @@ Definition
 :  Such a cobordism is *elementary* iff there exist no $X\dash$trajectories between distinct critical points of $\phi$.
 
 
+Theorem (Smale, h-cobordism)
+: Let $W$ be a cobordism of dimension $W\geq 6$ such that $W, \bd_{\pm}W$ are simply connected, and $H_*(W, \bd_- W; \ZZ) = 0$.
+  Then $W$ admits a Morse function without critical points which is constant on $\bd_\pm W$.
+
+  In particular, $W \cong I\cross M$ is diffeomorphic to the trivial product cobordism, and $M\cong N$ are diffeomorphic.
