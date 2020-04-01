@@ -325,3 +325,12 @@ Theorem (Smale, h-cobordism)
   Then $W$ admits a Morse function without critical points which is constant on $\bd_\pm W$.
 
   In particular, $W \cong I\cross M$ is diffeomorphic to the trivial product cobordism, and $M\cong N$ are diffeomorphic.
+
+Proof (Sketch)
+
+Goal: find a handle decomposition with *no* handles, then integrate along the gradient vector field of a Morse function to get a diffeomorphism.
+
+- Find a Morse function and induce a handle decomposition
+- Rearrange handles so that lower index handles are attached first
+- Define a chain complex as free $\ZZ\dash$module on handles with boundary given in terms of intersection numbers of attaching spheres $k$ and belt $k-1$ spheres
+- Use the Whitney trick to find embedded discs and cancel (fill!) $k$ handles 
