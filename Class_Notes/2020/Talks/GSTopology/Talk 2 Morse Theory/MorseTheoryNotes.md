@@ -100,11 +100,13 @@ Can use persistent homology to measure "importance" of critical points.
 
 # Stein to Weinstein
 
-Goal: reduce the complex geometry of Stein manifolds (hard) to the symplectic geometry of Weinstein manifolds (less hard).
+Goal: reduce the complex geometry of Stein manifolds (hard) to the symplectic geometry of Weinstein manifolds (less hard). Study the space of structures up to homotopy.
 
 ## Stein
 
 Moral: rigid, complex-analytic.
+
+> Uncountably many distinct biholomorphism Stein manifolds that are smooth $\eps\dash$small perturbations of $B^n_\CC$.
 
 **Definition (a)**:
 $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1$) such that complex structure is inherited from ambient space.
@@ -185,6 +187,8 @@ Subdefinitions:
   - Near $p\in \crit(\phi)$, we have $\phi(\vector x) =\vector x^t A \vector x$ where $A = \diag(-1, -1, \cdots, -1_k, 1, \cdots, 1_{n})$.
 
 [Flow Curves](figures/2020-03-31-18:35.png)\
+
+Does a maniofo
 
 ## Stein to Weinstein
 
