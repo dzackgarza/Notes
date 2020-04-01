@@ -235,5 +235,5 @@ Recast, the inclusion of the space of "partially specified" solutions into the s
 
 Goal: handlebody decomposition, or for the purposes of the above theorems, retractions onto a CW complex.
 
-Fact: since $\phi$ is Morse, $M^{2n}$ can be retracted onto a complex of dimension $d\leq n$.
+Fact: since $\phi$ is Morse, $M^{2n}$ can be retracted onto a complex of dimension $d\leq n$, since all critical points will have index $\leq n$.
 
