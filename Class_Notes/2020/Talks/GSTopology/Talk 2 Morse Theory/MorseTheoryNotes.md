@@ -106,7 +106,7 @@ Goal: reduce the complex geometry of Stein manifolds (hard) to the symplectic ge
 
 Moral: rigid, complex-analytic.
 
-> Very rigid: uncountably many distinct biholomorphism Stein manifolds that are smooth $\eps\dash$small perturbations of $B^n_\CC$. So we study them up to deformation of structure, i.e. homotopy.
+> Very rigid: uncountably many distinct biholomorphism Stein manifolds that are smooth $\eps\dash$small perturbations of $B^n_\CC$. So we study them up to deformation of the manifold, i.e. homotopy of the space of structures.
 
 **Definition (a)**:
 $M^{2n}$ complex-analytic, *properly embedded* in some $\CC^N$ (biholomorphically, can take $N = 2n+1$) such that complex structure is inherited from ambient space.
