@@ -306,5 +306,17 @@ Fact
 
 Definition
 : A *cobordism* is a triple $(W; M_+, M_-)$ where $W$ is an oriented compact smooth manifold with cooriented boundary $\bd W = M_+ \disjoint M_- = \bd_- W \disjoint \bd_+ W$, where the coorientation is provided by the inward (resp. outward) normal vector field (???).
+  We'll usually just denote this as $W$.
+
+
+Definition
+:   A *Lyapunov cobordism* is a triple $(W, \phi , X)$ where
+
+    - $W$ is a usual cobordism,
+    - $\phi: W\to \RR$ is a smooth functional that is constant and has no critical points when restricted to $\bd W$,
+    - $X$ is a gradient-like vector field for $\phi$ which points inward along $\bd_- W$ and outward along $\bd_+ W$.
+
+Definition
+:  Such a cobordism is *elementary* iff there exist no $X\dash$trajectories between distinct critical points of $\phi$.
 
 
