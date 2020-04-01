@@ -100,6 +100,8 @@ Can use persistent homology to measure "importance" of critical points.
 
 # Stein to Weinstein
 
+Goal: reduce the complex geometry of Stein manifolds (hard) to the symplectic geometry of Weinstein manifolds (less hard).
+
 ## Stein
 
 Moral: rigid, complex-analytic.
