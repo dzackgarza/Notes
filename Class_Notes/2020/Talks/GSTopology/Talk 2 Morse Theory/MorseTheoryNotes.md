@@ -237,3 +237,5 @@ Goal: handlebody decomposition, or for the purposes of the above theorems, retra
 
 Fact: since $\phi$ is Morse, $M^{2n}$ can be retracted onto a complex of dimension $d\leq n$, since all critical points will have index $\leq n$.
 
+> Note: this immediately implies the Lefschetz Hyperplane theorem for affine manifolds $N$, i.e. that they are entirely determined by the homology and homotopy of $N\intersect H$ for any hyperplane.
+
