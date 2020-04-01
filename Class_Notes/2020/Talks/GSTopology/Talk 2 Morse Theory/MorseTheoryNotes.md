@@ -219,7 +219,7 @@ Theorem: there is a "weak homotopy inverse"to $\mathfrak{M}_\phi$, i.e. given a 
 ## Questions
 
 Do these structures satisfy an **h-principle**? Origins (Gromov, 1970): given a PDE, a "partially specified" solution can be deformed into an actual solution.
-The former have topological properties, that latter analytic.
+The former have topological properties (and are amenable to algebraic topology), the latter analytic.
 Recast, the inclusion of the space of "partially specified" solutions into the space of solutions is a weak homotopy equivalence.
 
 The main theorem:
