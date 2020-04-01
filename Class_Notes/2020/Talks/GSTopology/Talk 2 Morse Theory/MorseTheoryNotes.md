@@ -271,4 +271,4 @@ Lemma (The nondegenerate directions can be split off)
 
 
 Definition
-: A degenerate critical point is *embryonic* iff $\null_\phi(p) = 1$ and writing $L = \ker H_p\phi = \spanof_\RR{\vector v}$, the third directional derivative $d^3\phi(\vector v)$ (?) is nonzero.
+: A degenerate critical point is *embryonic* iff $\null_\phi(p) = 1$ and writing $L = \ker H_p\phi = \spanof_\RR{\vector v}$, the third directional derivative $D^3_{\vector v}\phi()$ (?) is nonzero.
