@@ -272,3 +272,8 @@ Lemma (The nondegenerate directions can be split off)
 
 Definition
 : A degenerate critical point is *embryonic* iff $\null_\phi(p) = 1$ and writing $L = \ker H_p\phi = \spanof_\RR{\vector v}$, the third directional derivative $D^3_{\vector v}\phi$ (?) is nonzero.
+
+We now consider homotopies of Morse functions $\phi: I \cross V \to \RR$, where we can partially apply the $I$ factor to get a 1-parameter family $\theset{\phi_t \suchthat t\in I}$.
+
+Definition
+: A homotopy $\Phi: V\cross I \to \RR$ of Morse functions has a *birth-death type* critical point at $p$ at $t=t_0$ iff $p$ is embryonic for $\phi_0$ and $(t_0, p)$ is a nondegenerate critical point of $\Phi$
