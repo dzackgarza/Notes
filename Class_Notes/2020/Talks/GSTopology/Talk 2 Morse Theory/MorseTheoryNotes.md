@@ -347,4 +347,8 @@ Proof (Sketch)
   - This makes $A = [I, 0; 0, 0]$ a block matrix with the identity in the top-left.
   -  Handle Cancellation: Take two transverse intersection points $z_+, z_-$ with local intersection indices $1, -1$, connect via two paths: one in $S_i^-$, one in $S_j^+$. This yields a map $S^1 \injects L_k$, use the Whitney trick to fill with an embedded disc $\Delta$, then push $S_i^-$ over $\Delta$ eliminates $z_\pm$.
   - This leaves a collection $S_i^-, S_i^+$ for $i=1,\cdots, r$ intersecting in a single point $z_0$, then (lemma) there are unique trajectories $q_i \to p_i$ for each $I$ and thus they can be eliminated.
-- Do this in $L_k$; we now have a Morse function with no critical points 
+- Do this in $L_k$; we now have a Morse function with no critical points except possibly of index $0, 1, n-1$, or $n$.
+- Use "Smale's trick": trades in an index $k$ critical point for one of index $k+1$ and one of index $k+2$, such that $k, k+1$ cancel. Trade index $1$ for index $2, 3$ and cancel index $3$ as before.
+- Eliminate $0, n$ with a lemma (unclear)
+
+$\qed$
