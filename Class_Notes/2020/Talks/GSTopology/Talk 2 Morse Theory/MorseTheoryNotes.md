@@ -266,3 +266,4 @@ Lemma (The nondegenerate directions can be split off)
     $$
     \phi(\vector x, \vector y, \vector z) = \norm{\vector x}^2 - \norm{\vector y}^2 + \psi(\vector z)
     $$
+    where $\psi: \RR^\ell \to \RR$ is some smooth function.
