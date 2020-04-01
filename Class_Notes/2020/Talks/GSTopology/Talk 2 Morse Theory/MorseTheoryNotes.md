@@ -276,4 +276,4 @@ Definition
 We now consider homotopies of Morse functions $\phi: I \cross V \to \RR$, where we can partially apply the $I$ factor to get a 1-parameter family $\theset{\phi_t \suchthat t\in I}$.
 
 Definition
-: A homotopy $\Phi: V\cross I \to \RR$ of Morse functions has a *birth-death type* critical point at $p$ at $t=t_0$ iff $p$ is embryonic for $\phi_0$ and $(t_0, p)$ is a nondegenerate critical point of $\Phi$
+: A homotopy $\Phi: V\cross I \to \RR$ of Morse functions has a *birth-death type* critical point at $p$ at $t=t_0$ iff $p$ is embryonic for $\phi_0$ and $(t_0, p)$ is a nondegenerate critical point of $\Phi$.
