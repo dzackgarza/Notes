@@ -230,9 +230,10 @@ The former have topological properties (and are amenable to algebraic topology),
 Recast, the inclusion of the space of "partially specified" solutions into the space of solutions is a weak homotopy equivalence.
 
 
-The main theorem:
 
-Theorem (1.5, Stein Existence)
-: ?
+## Morse Theory
 
+Goal: handlebody decomposition, or for the purposes of the above theorems, retractions onto a CW complex.
+
+Fact: since $\phi$ is Morse, $M^{2n}$ can be retracted onto a complex of dimension $d\leq n$.
 
