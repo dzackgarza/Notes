@@ -159,6 +159,11 @@ Theorem
 
 ## Weinstein
 
+Aside:
+
+Theorem (Gromov, Eliashberg)
+: Any Stein manifold of dimension $n$ embeds holomorphically into $\CC^{\floor{3n \over 2} + 1}$, and this is optimal.
+
 Moral: flexible, symplectic object.
 
 
@@ -221,6 +226,7 @@ Theorem: there is a "weak homotopy inverse"to $\mathfrak{M}_\phi$, i.e. given a 
 Do these structures satisfy an **h-principle**? Origins (Gromov, 1970): given a PDE, a "partially specified" solution can be deformed into an actual solution.
 The former have topological properties (and are amenable to algebraic topology), the latter analytic.
 Recast, the inclusion of the space of "partially specified" solutions into the space of solutions is a weak homotopy equivalence.
+
 
 The main theorem:
 
