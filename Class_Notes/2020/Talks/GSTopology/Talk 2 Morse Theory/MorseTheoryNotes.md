@@ -305,4 +305,6 @@ Fact
 > Pretty vague -- I know there are pictures here that make this more obvious, but I couldn't find much.
 
 Definition
-: A *cobordism* is a triple $(W; M_+, M_-)$ where $W$ is an oriented compact smooth manifold with cooriented boundary $\bd W = M_+ \disjoint M_-$
+: A *cobordism* is a triple $(W; M_+, M_-)$ where $W$ is an oriented compact smooth manifold with cooriented boundary $\bd W = M_+ \disjoint M_- = \bd_- W \disjoint \bd_+ W$, where the coorientation is provided by the inward (resp. outward) normal vector field (???).
+
+
