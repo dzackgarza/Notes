@@ -149,8 +149,11 @@ Consider $(M^{2n}, J_$ where $M$ is a complex manifold and $J$ the structure of 
 
 > The subspace of J-convex functions in $C^\infty(M, \RR)$ is open and contractible, so well-approximated by Morse functions (and the bigger class of *generalized Morse functions*: nondegenerate, restricted critical points).
 
+
 Theorem (Grauert, Bishop-Narasimhan)
 : $M$ is Stein iff it fits this description.
+
+So a Stein structure is a pair $(J, \phi)$, a complex structure and a $J\dash$convex exhausting Morse function.
 
 Theorem
 : If $n=2$, $M$ admits a Morse function $f$ such that away from critical points, taking complex tangencies at the preimages $M_c\definedas f\inv(c)$ yield contact structures inducing orientations on $M_x$ agreeing with the induced boundary orientation on $f\inv(-\infty, c)$.
@@ -193,7 +196,6 @@ Subdefinitions:
 
 [Flow Curves](figures/2020-03-31-18:35.png)\
 
-Does a maniofo
 
 ## Stein to Weinstein
 
