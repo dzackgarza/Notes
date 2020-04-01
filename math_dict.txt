@@ -679,3 +679,4 @@ Miniversal
 versal
 semidefinite
 symplectomorphic
+Verma's
