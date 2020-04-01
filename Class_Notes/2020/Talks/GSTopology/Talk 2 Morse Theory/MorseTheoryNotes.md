@@ -236,7 +236,7 @@ Recast, the inclusion of the space of "partially specified" solutions into the s
 ## Morse Theory
 
 Goal: handlebody decomposition, or for the purposes of the above theorems, retractions onto a CW complex.
-Decomposing a cobordism into a sequence of elementary cobordisms.
+Decomposing a cobordism into a sequence of elementary cobordisms (admit a Morse function with a single critical point).
 
 Fact: since $\phi$ is Morse, $M^{2n}$ can be retracted onto a complex of dimension $d\leq n$, since all critical points will have index $\leq n$.
 
