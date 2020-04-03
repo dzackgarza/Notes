@@ -681,3 +681,4 @@ semidefinite
 symplectomorphic
 Verma's
 semilocal
+subexpressions
