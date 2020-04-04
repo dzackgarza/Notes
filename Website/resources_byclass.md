@@ -187,6 +187,7 @@
 
 - :fa-book: :fa-star:  _Rudin_, **Principles of Mathematical Analysis**
 	- Essentially a standard in undergraduate real analysis, written in a very terse style but covers a great deal of material. Often referred to as "Baby Rudin".
+  - Extra [notes/commentary/suggested exercises](https://math.berkeley.edu/~gbergman/ug.hndts/m104_Rudin_exs.pdf) from George Bergman.
 
 - :fa-tv: :fa-star: _Francis Su_, [Lectures from Harvey Mudd College](https://www.youtube.com/playlist?list=PL0E754696F72137EC)
 	- Recorded lectures, extremely clear and well-motivated!
