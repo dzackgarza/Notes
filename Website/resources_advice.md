@@ -1,4 +1,5 @@
 ## For Incoming Math Majors
+
 - Start thinking about whether or not grad school as an option. You don't have to *decide* within your first year, but you'll want to pick courses accordingly.
 
 - Get an idea of what Math is all about - there are great things beyond Calculus!
@@ -30,6 +31,7 @@
 
 
 ## On Learning and Being a Student
+
 - **Start everything early**: Starting early gives you time to mull over questions and potentially visit professors/TAs for help.
 
 - **Use a wide variety of resources**: Books, lectures, notes, PDFs -- use them all! The search modifiers `inurl:edu filetype:pdf` on Google are incredibly useful.
@@ -47,14 +49,14 @@
 
 - **Get the definitions down cold**: Record every single definition you come across and just do whatever you have to do to memorize them! Some people like flash cards, I personally make a "dictionary" document for each subject. Meaning and understanding is often a gradual process, but knowing the full statement of a definition should just be automatic. I like to think of definitions as the analog "multiplication tables" within higher Mathematics -- is it essential to memorize? Well no, but you also wouldn't want to waste time stopping to multiply out $12^2$ when you're trying to solve an integral.
 
-- **Synthesize often:** This includes things like revising class notes, making your own "cheat sheets", writing up explanations of particular theorems or motivations for certain concepts, etc. Even better, find ways to give talks or teach other people. 
+- **Synthesize often:** This includes things like revising class notes, making your own "cheat sheets", writing up explanations of particular theorems or motivations for certain concepts, etc. Even better, find ways to give talks or teach other people.
   Present things as if you were trying to teach yourself the topic 6-12 months in the past.
 
-- **Google for notes**: For just about any topic at any level of specificity, someone has *probably* written up notes or expository articles and posted them online. 
+- **Google for notes**: For just about any topic at any level of specificity, someone has *probably* written up notes or expository articles and posted them online.
   So it can be extremely beneficial to look through the first page or two of Google results using `filetype:pdf` for any concept or proof you happen to be studying and see how other mathematicians think about and present them.
 
 - **Work many problems and proofs**: Do more than you are assigned, but be judicious with your time.
-  If you stare at a problem for more than an hour or two without making progress, pivot. 
-  Sometimes the best way to make progress on a problem is to take a break, work on something different, or sleep on it. 
- 
+  If you stare at a problem for more than an hour or two without making progress, pivot.
+  Sometimes the best way to make progress on a problem is to take a break, work on something different, or sleep on it.
+
 - **Work the exams**, and if possible, do them in a timed setting.
