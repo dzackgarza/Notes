@@ -682,3 +682,4 @@ symplectomorphic
 Verma's
 semilocal
 subexpressions
+hyperelliptic
