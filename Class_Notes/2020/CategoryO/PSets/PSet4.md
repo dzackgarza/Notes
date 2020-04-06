@@ -24,7 +24,8 @@ Show that for $M\in \OO$ and $\dim L < \infty$,
 $$
 (M\tensor L)\dual \cong M\dual \tensor L\dual
 $$
-- [Reference for Dual of Sum](https://mathoverflow.net/questions/56255/duals-and-tensor-products)
+
+> [Reference for Dual of Sum](https://mathoverflow.net/questions/56255/duals-and-tensor-products)
 
 ## Solution
 
@@ -37,6 +38,7 @@ and by definition, $M\dual \definedas \bigoplus_{\lambda \in \lieh\dual} M_\lamb
 
 
 # Humphreys 3.4
+
 Show that $\Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in the root system $\Phi_{[\lambda]}$, but the corresponding simple system $\Delta_{[\lambda]}$ may be unrelated to $\Delta$.
 
 > For a concrete example, take $\Phi$ of type $B_2$ with a short simple root $\alpha$ and a long simple root $\beta$.
