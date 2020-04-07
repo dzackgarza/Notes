@@ -683,3 +683,4 @@ Verma's
 semilocal
 subexpressions
 hyperelliptic
+miniversal
