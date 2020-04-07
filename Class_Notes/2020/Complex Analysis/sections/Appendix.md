@@ -4,7 +4,8 @@
 dz &= dx + i~dy \\
 d\bar z &= dx - i~dy \\
 f_z &= f_x = i\inv f_y \\
-\int_{0}^{2 \pi} e^{i \ell x} d x=\left\{\begin{array}{ll}{2 \pi} & {(\ell=0)} \\ {0} & {(\ell \neq 0)}\end{array}\right.
+\int_{0}^{2 \pi} e^{i \ell x} d x
+&=\left\{\begin{array}{ll}{2 \pi} & {(\ell=0)} \\ {0} & {(\ell \neq 0)}\end{array}\right.
 .\end{align*}
 
 - Holomorphic: once complex differentiable in neighborhoods of every point.
@@ -21,12 +22,12 @@ f_z &= f_x = i\inv f_y \\
   - Rectangular Hyperbola: $xy = \frac{c^2}{2}$.
 - Parabola: $-4ax + y^2 = 0$.
 
-> Mnemonic: 
+> Mnemonic:
 > Write $f(x, y) = Ax^2 + Bxy + Cy^2 + \cdots$, then consider the discriminant $\Delta = B^2 - 4AC$:
-> 
+>
 > - $\Delta < 0 \iff$ ellipse
 >   - $\Delta < 0$ and $A=C, B=0 \iff$ circle
-> - $\Delta = 0 \iff$ parabola 
+> - $\Delta = 0 \iff$ parabola
 > - $\Delta > 0 \iff$ hyperbola
 
 **Completing the square:**
@@ -46,9 +47,9 @@ x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
 
 **Useful Series**
 
-\begin{align*} 
-\sum_{k=1}^{n} k &=\frac{n(n+1)}{2} \\ 
-\sum_{k=1}^{n} k^{2} &=\frac{n(n+1)(2 n+1)}{6} \\ 
+\begin{align*}
+\sum_{k=1}^{n} k &=\frac{n(n+1)}{2} \\
+\sum_{k=1}^{n} k^{2} &=\frac{n(n+1)(2 n+1)}{6} \\
 \sum_{k=1}^{n} k^{3} &=\frac{n^{2}(n+1)^{2}}{4}  \\
 \log(z) &= \sum_{j=0}^\infty (-1)^j \frac{\qty{z-a}^j}{j}
 \end{align*}
