@@ -684,3 +684,4 @@ semilocal
 subexpressions
 hyperelliptic
 miniversal
+miniversality
