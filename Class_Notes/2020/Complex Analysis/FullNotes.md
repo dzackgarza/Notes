@@ -42,5 +42,13 @@
 
 !include sections/2020-03-06.md
 
+!include sections/2020-03-30.md
+
+!include sections/2020-04-01.md
+
+!include sections/2020-04-03.md
+
+!include sections/2020-04-06.md
+
 !include sections/Appendix.md
 
