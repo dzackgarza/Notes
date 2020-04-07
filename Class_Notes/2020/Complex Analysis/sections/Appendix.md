@@ -13,6 +13,16 @@ f_z &= f_x = i\inv f_y \\
 
 > Collection of facts used on problem sets
 
+## Things to know well:
+
+- Cauchy Integral Formula
+- Estimates for derivatives, mean value theorem
+- Rouché's theorem
+- Casorati-Weierstrass
+- The 8 types of conformal maps
+
+
+## Misc Prereq
 
 **Standard forms of conic sections:**
 
@@ -67,7 +77,13 @@ u_x = v_y \quad\text{and}\quad u_y = -v_x \\
 ## Useful Techniques
 
 **Showing a function is constant:**
-Write $f = u + iv$ and use Cauchy-Riemann to show $u_x, u_y = 0$, etc.
+
+- Write $f = u + iv$ and use Cauchy-Riemann to show $u_x, u_y = 0$, etc.
+- Show that $f$ is entire and bounded.
+
+**Showing a function is zero**:
+Show $f$ is entire, bounded, and $\lim_{z\to\infty} f(z) = 0$.
+
 
 **Deriving Polar Cauchy-Riemann:**
 See [walkthrough here](https://users.math.msu.edu/users/shapiro/Teaching/classes/425/crpolar.pdf).
