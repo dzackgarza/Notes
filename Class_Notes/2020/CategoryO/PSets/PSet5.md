@@ -32,4 +32,18 @@ b. In case $\lambda \in \Lambda^+$, show that the inclusions obtained in the abo
 
 # 4.6
 
+Theorem (Verma)
+:   Let $\lambda \in \lieh\dual$.
+    Given $\alpha > 0$, suppose $\mu \definedas s_\alpha \cdot \lambda \leq \lambda$.
+    Then there exists an embedding $M(\mu) \subset M(\lambda)$.
+
+Work through the steps of Verma's Theorem in the special case discussed in the previous problem
+
+
 # 4.11
+
+In the case of $\liesl(3, \CC)$, what can be said at this point about Verma modules with a singular integral highest weight?
+
+> Aside from the trivial case $-\rho$, a typical linkage class has 3 elements.
+> For example, if $\lambda$ lies in the $\alpha$ hyperplane and is antidominant, the linked weights are
+> $\lambda,~~ s_\beta \cdot \lambda, ~~ s_\alpha s_\beta \cdot \lambda$.
