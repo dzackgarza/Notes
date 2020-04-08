@@ -685,3 +685,4 @@ subexpressions
 hyperelliptic
 miniversal
 miniversality
+adically
