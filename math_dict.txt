@@ -686,3 +686,4 @@ hyperelliptic
 miniversal
 miniversality
 adically
+Jantzen
