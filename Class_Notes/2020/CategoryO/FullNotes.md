@@ -40,5 +40,19 @@
 
 !include sections/2020-02-28.md
 
+!include sections/2020-03-02.md
+
+!include sections/2020-03-04.md
+
 !include sections/2020-03-16.md
+
+!include sections/2020-03-30.md
+
+!include sections/2020-04-01.md
+
+!include sections/2020-04-03.md
+
+!include sections/2020-04-06.md
+
+!include sections/2020-04-08.md
 
