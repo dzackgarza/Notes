@@ -52,11 +52,19 @@ We would like to show the following two propositions:
 2. The simple system $\Delta_{[\lambda]}$ corresponding to $\Phi_{[\lambda]}^+$ is *not* generally given by $\Delta_{[\lambda]} = \Phi_{[\lambda]} \intersect \Delta$, where $\Delta$ is the simple system corresponding to $\Phi$.
 
 We proceed by first showing (2) using the hinted counterexample when $\Phi$ is of type $B_2$ with $\Delta = \theset{\alpha, \beta}$ with $\alpha$ a short root and $\beta$ a long root.
+
 Concretely, we can realize $\Phi$ as a subset of $\RR^2$ in the following way:
 \begin{align*}
 \Phi = \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \union \theset{[1,1], [-1, 1], [1, -1], [-1, -1]}
 ,\end{align*}
 where we note that the first set consists of short roots and the second of long roots.
+
+We can choose the simple system $\Delta = \theset{\alpha \definedas [1, 0], \beta \definedas [-1, 1]}$, and then let
+\begin{align*}
+\Phi_{[\lambda]} \definedas \theset{\gamma \in \Phi \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} \quad \quad \gamma\dual \definedas {2 \over \norm{\gamma}^2} ~\gamma
+.\end{align*}
+
+Now choosing $\lambda \definedas \alpha/2 = [1/2, 0]$
 
 
 # Humphreys 3.7
