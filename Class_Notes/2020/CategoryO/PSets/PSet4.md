@@ -64,7 +64,7 @@ We can choose the simple system $\Delta = \theset{\alpha \definedas [1, 0], \bet
 \Phi_{[\lambda]} \definedas \theset{\gamma \in \Phi \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} \quad \quad \gamma\dual \definedas {2 \over \norm{\gamma}^2} ~\gamma
 .\end{align*}
 
-Now choosing $\lambda \definedas \alpha/2 = [1/2, 0]$
+Now choosing $\lambda \definedas {\alpha \over 2} = [1/2, 0]$
 
 
 # Humphreys 3.7
