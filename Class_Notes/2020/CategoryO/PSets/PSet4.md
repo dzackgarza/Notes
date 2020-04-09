@@ -44,6 +44,17 @@ Show that $\Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in the root 
 > For a concrete example, take $\Phi$ of type $B_2$ with a short simple root $\alpha$ and a long simple root $\beta$.
 > If $\lambda \definedas \alpha/2$, check that $\Phi_{[\lambda]}$ contains just the four short roots in $\Phi$.
 
+## Solution
+
+We would like to show the following two propositions:
+
+1. $\Phi_{[\lambda]}^+ \definedas \Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in $\Phi_{[\lambda]}$,
+2. The simple system $\Delta_{[\lambda]}$ corresponding to $\Phi_{[\lambda]}^+$ is *not* generally given by $\Delta_{[\lambda]} = \Phi_{[\lambda]} \intersect \Delta$, where $\Delta$ is the simple system corresponding to $\Phi$.
+
+We proceed by first showing (2) using the hinted counterexample when $\Phi$ is of type $B_2$ with $\Delta = \theset{\alpha, \beta}$ with $\alpha$ a short root and $\beta$ a long root.
+
+
+
 # Humphreys 3.7
 
 ## a
