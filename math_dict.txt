@@ -687,3 +687,4 @@ miniversal
 miniversality
 adically
 Jantzen
+clopen
