@@ -4,7 +4,7 @@ Problems:
     season: Fall
     number: 1
     tags:
-      - Group Theory
+      - Groups
       - Conjugacy
     question: |
       Let $G$ be a finite group with $n$ distinct conjugacy classes.
@@ -17,7 +17,7 @@ Problems:
     number: 2
     tags:
       - Group Theory
-      - Sylow Theory
+      - Sylow Theorems
     question: |
       Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7 subgroups respectively.
 
@@ -28,5 +28,36 @@ Problems:
       (c) Prove that both $Q$ and $R$ are normal in $G$.
 
       (d) Prove that if $P$ is normal in $G$ then $G$ is cyclic.
+  - year: 2019
+    season: Fall
+    number: 3
+    tags:
+      - Ring
+    question: |
+      Let $R$ be a ring with the property that for every $a \in R, a^2 = a$.
+
+      (a) Prove that $R$ has characteristic 2.
+
+      (b) Prove that $R$ is commutative.
+  - year: 2019
+    season: Fall
+    number: 4
+    tags:
+      - Fields
+    question: |
+      Let $F$ be a finite field with $q$ elements.
+
+      Let $n$ be a positive integer relatively prime to $q$ and let $\omega$ be a primitive $n$th root of unity in an extension field of $F$.
+
+      Let $E = F [\omega]$ and let $k = [E : F]$.
+
+      (a) Prove that $n$ divides $q^{k}-1$.
+
+      (b) Let $m$ be the order of $q$ in $\ZZ/n\ZZ$.
+      Prove that $m$ divides $k$.
+
+      (c) Prove that $m = k$.
+
+
 ...
 
