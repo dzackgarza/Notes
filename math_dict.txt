@@ -690,3 +690,4 @@ Jantzen
 clopen
 Equicontinuity
 equicontinuous
+subsequences
