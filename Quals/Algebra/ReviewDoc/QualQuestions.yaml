@@ -237,6 +237,41 @@ Problems:
       (c) Suppose now that $R$ is finite. Show that in this case $J(R)$ consists precisely
       of the nilpotent elements in R.
 
+  - year: 2019
+    season: Spring
+    number: 7
+    tags:
+      - Linear Algebra
+      - Jordan Canonical Form
+    question: |
+      Let $p$ be a prime number.
+      Let $A$ be a $p \times p$ matrix over a field $F$ with 1 in all
+      entries except 0 on the main diagonal.
+
+      Determine the Jordan canonical form (JCF) of $A$
+
+      (a) When $F = \QQ$,
+
+      (b) When $F = \FF_p$.
+
+      > Hint: In both cases, all eigenvalues lie in the ground field. In each case find a
+      matrix $P$ such that $P\inv AP$ is in JCF.
+
+  - year: 2019
+    season: Spring
+    number: 8
+    tags:
+      - Fields
+      - Galois Theory
+    question: |
+      Let $\zeta = e^{2\pi i/8}$.
+
+      (a) What is the degree of $\QQ(\zeta)/\QQ$?
+
+      (b) How many quadratic subfields of $\QQ(\zeta)$ are there?
+
+      (c) What is the degree of $\QQ(\zeta, \sqrt[4] 2)$ over $\QQ$?
+
 
 
 ...
