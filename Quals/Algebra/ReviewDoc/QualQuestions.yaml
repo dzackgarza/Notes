@@ -174,6 +174,69 @@ Problems:
 
       Describe a representative from each class.
 
+  - year: 2019
+    season: Spring
+    number: 4
+    tags:
+      - Groups
+      - Conjugacy
+      - Class Equation
+    question: |
+     For a finite group $G$, let $c(G)$ denote the number of conjugacy classes of $G$.
+
+      (a) Prove that if two elements of $G$ are chosen uniformly at random,then the probability they commute is precisely
+      $$
+      \frac{c(G)}{\abs G}
+      .$$
+
+      (b) State the class equation for a finite group.
+
+      (c) Using the class equation (or otherwise) show that the probability in part (a) is at most $$
+      \frac 1 2 + \frac 1 {2[G : Z(G)]}
+      .$$
+
+      > Here, as usual, $Z(G)$ denotes the center of $G$.
+
+  - year: 2019
+    season: Spring
+    number: 5
+    tags:
+      - Modules
+      - Torsion
+    question: |
+       Let $R$ be an integral domain. Recall that if $M$ is an $R\dash$module, the *rank* of $M$ is
+       defined to be the maximum number of $R\dash$linearly independent elements of $M$ .
+
+       (a) Prove that for any $R\dash$module $M$, the rank of $\tor(M )$ is 0.
+
+       (b) Prove that the rank of $M$ is equal to the rank of of $M/\tor(M )$.
+
+       (c) Suppose that M is a non-principal ideal of $R$.
+
+       (d) Prove that $M$ is torsion-free of rank 1 but not free.
+
+  - year: 2019
+    season: Spring
+    number: 6
+    tags:
+      - Rings
+      - Ideals
+      - Jacobson Radical
+    question: |
+      Let $R$ be a commutative ring with 1.
+
+      > Recall that $x \in R$ is nilpotent iff $xn = 0$ for
+      some positive integer $n$.
+
+      (a) Show that every proper ideal of $R$ is contained within a maximal ideal.
+
+      (b) Let $J(R)$ denote the intersection of all maximal ideals of $R$.
+
+          Show that $x \in J(R) \iff 1 + rx$ is a unit for all $r \in R$.
+
+      (c) Suppose now that $R$ is finite. Show that in this case $J(R)$ consists precisely
+      of the nilpotent elements in R.
+
 
 
 ...
