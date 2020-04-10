@@ -77,6 +77,33 @@ Problems:
 
       (c) If $R$ has zero-divisors, prove that every non-zero $R\dash$module has non-zero torsion elements.
 
+  - year: 2019
+    season: Fall
+    number: 6
+    tags:
+      - Rings
+    question: |
+      Let $R$ be a commutative ring with multiplicative identity. Assume Zorn's Lemma.
+
+      (a) Show that
+      $$
+      N = \{r \in R \mid r^n = 0 \text{ for some } n > 0\}
+      $$
+      is an ideal which is contained in any prime ideal.
+
+      (b) Let $r$ be an element of $R$ not in $N$.
+      Let $S$ be the collection of all proper ideals of $R$ not containing any positive power of $r$. Use Zorn's Lemma to prove that
+      there is a prime ideal in $S$.
+
+      (c) Suppose that $R$ has exactly one prime ideal $P$ . Prove that every element $r$ of $R$ is either nilpotent or a unit.
+
+   - year: 2019
+     season: Fall
+     number: 7
+     tags:
+        - Fields
+        - Galois Theory
+     question: |
 
 ...
 
