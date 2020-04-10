@@ -8,6 +8,18 @@ question: |
   Let $g_1 \cdots g_n$ be representatives of the conjugacy classes of $G$.
 
   Prove that if $g_i g_j = g_j g_i$ for all $i, j$ then $G$ is abelian.
+year: 2019
+season: Fall
+number: 2
+question: |
+  Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7 subgroups respectively.
 
+  (a) Prove that at least one of $Q$ and $R$ is normal in $G$.
+
+  (b) Prove that $G$ has a cyclic subgroup of order 35.
+
+  (c) Prove that both $Q$ and $R$ are normal in $G$.
+
+  (d) Prove that if $P$ is normal in $G$ then $G$ is cyclic.
 ...
 
