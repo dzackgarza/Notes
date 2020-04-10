@@ -688,3 +688,4 @@ miniversality
 adically
 Jantzen
 clopen
+Equicontinuity
