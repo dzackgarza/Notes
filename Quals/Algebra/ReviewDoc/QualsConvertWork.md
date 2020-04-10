@@ -6,60 +6,16 @@ title: Qualifying Exams
 
 ## 1
 
-Let $G$ be a finite group with $n$ distinct conjugacy classes.
-Let $g_1 \cdots g_n$ be representatives of the conjugacy classes of $G$.
-
-Prove that if $g_i g_j = g_j g_i$ for all $i, j$ then $G$ is abelian.
 
 ## 2
 
-Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7 subgroups respectively.
-
-(a) Prove that at least one of $Q$ and $R$ is normal in $G$.
-
-(b) Prove that $G$ has a cyclic subgroup of order 35.
-
-(c) Prove that both $Q$ and $R$ are normal in $G$.
-
-(d) Prove that if $P$ is normal in $G$ then $G$ is cyclic.
 
 ## 3
 
-Let $R$ be a ring with the property that for every $a \in R, a^2 = a$.
-
-(a) Prove that $R$ has characteristic 2.
-
-(b) Prove that $R$ is commutative.
 
 ## 4
 
-Let $F$ be a finite field with $q$ elements.
-
-Let $n$ be a positive integer relatively prime to $q$ and let $\omega$ be a primitive $n$th root of unity in an extension field of $F$.
-
-Let $E = F [\omega]$ and let $k = [E : F]$.
-
-(a) Prove that $n$ divides $q^{k}-1$.
-
-(b) Let $m$ be the order of $q$ in $\ZZ/n\ZZ$.
-Prove that $m$ divides $k$.
-
-(c) Prove that $m = k$.
-
 ## 5
-
-Let $R$ be a ring and $M$ an $R\dash$module.
-
-> Recall that the set of torsion elements in M is defined by
-$$
-\Tor(m) = \{m \in M \suchthat \exists r \in R, ~r \neq 0, ~rm = 0\}
-.$$
-
-(a) Prove that if $R$ is an integral domain, then $\Tor(M )$ is a submodule of $M$ .
-
-(b) Give an example where $\Tor(M )$ is not a submodule of $M$.
-
-(c) If $R$ has zero-divisors, prove that every non-zero $R\dash$module has non-zero torsion elements.
 
 ## 6
 
@@ -256,7 +212,7 @@ Let $A$ be an $n \times n$ matrix.
 
 ## 6.
 
-Let $R$ be a commutative ring, and let $M$ be an $R\dash$module. 
+Let $R$ be a commutative ring, and let $M$ be an $R\dash$module.
 An $R\dash$submodule $N$ of $M$ is maximal if there is no $R\dash$module $P$ with $N \subsetneq P \subsetneq M$.
 
 (a) Show that an $R\dash$submodule $N$ of $M$ is maximal $\iff M /N$ is a simple $R\dash$module: i.e., $M /N$ is nonzero and has no proper, nonzero $R\dash$submodules.
@@ -318,9 +274,9 @@ Let $f(x) = x^4 - 4x^2 + 2 \in \QQ[x]$.
 
 ## 3.
 
-Let $K$ be a Galois extension of $\QQ$ with Galois group $G$, and let $E_1 , E_2$ be intermediate fields of $K$ which are the splitting fields of irreducible $f_i (x) \in \QQ[x]$. 
+Let $K$ be a Galois extension of $\QQ$ with Galois group $G$, and let $E_1 , E_2$ be intermediate fields of $K$ which are the splitting fields of irreducible $f_i (x) \in \QQ[x]$.
 
-Let $E = E_1 E_2 \subset K$. 
+Let $E = E_1 E_2 \subset K$.
 
 Let $H_i = \Gal(K/E_i)$ and $H = \Gal(K/E)$.
 
@@ -328,7 +284,7 @@ Let $H_i = \Gal(K/E_i)$ and $H = \Gal(K/E)$.
 
 (b) Show that $H_1 H_2$ is a subgroup of $G$.
 
-(c) Show that 
+(c) Show that
 $$
 \Gal(K/(E_1 \cap E_2 )) = H_1 H_2
 .$$
@@ -343,20 +299,20 @@ $$
 
 (a) Find the Jordan canonical form J of A.
 
-(b) Find an invertible matrix $P$ such that $P\inv AP = J$. 
+(b) Find an invertible matrix $P$ such that $P\inv AP = J$.
 
 > You should not need to compute $P\inv$.
 
 ## 5.
 
-Let 
+Let
 $$
 M=\left(\begin{array}{ll}{a} & {b} \\ {c} & {d}\end{array}\right)
-\quad \text{and} \quad 
+\quad \text{and} \quad
 N=\left(\begin{array}{cc}{x} & {u} \\ {-y} & {-v}\end{array}\right)
 $$
 
-over a commutative ring $R$, where $b$ and $x$ are units of $R$. 
+over a commutative ring $R$, where $b$ and $x$ are units of $R$.
 Prove that
 $$
 M N=\left(\begin{array}{ll}{0} & {0} \\ {0} & {*}\end{array}\right)
@@ -413,13 +369,13 @@ Let $R = C[0, 1]$ be the ring of continuous real-valued functions on the interva
 
 # Fall 2017
 
-## 1. 
+## 1.
 
-Suppose the group $G$ acts on the set $A$. 
+Suppose the group $G$ acts on the set $A$.
 Assume this action is faithful (recall that this means that the kernel of the homomorphism from $G$ to $\sym(A)$ which gives the action is trivial) and transitive (for all $a, b$ in $A$, there exists $g$ in $G$ such that $g \cdot a = b$.)
 
-(a) For $a \in A$, let $G_a$ denote the stabilizer of $a$ in $G$. 
-Prove that for any $a \in A$, 
+(a) For $a \in A$, let $G_a$ denote the stabilizer of $a$ in $G$.
+Prove that for any $a \in A$,
 $$
 \intersect_{\sigma\in G} \sigma G_a \sigma\inv = \theset{1}
 .$$
@@ -430,7 +386,7 @@ $$
 
 (a) Classify the abelian groups of order 36.
 
-For the rest of the problem, assume that $G$ is a non-abelian group of order 36. 
+For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 
 > You may assume that the only subgroup of order 12 in $S_4$ is $A_4$ and that $A_4$ has no subgroup of order 6.
 
@@ -440,7 +396,7 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 
 (d) Show that the dihedral group of order 36 is a non-abelian group of order 36 whose Sylow-2 subgroup is not normal.
 
-## 3. 
+## 3.
 
 Let $F$ be a field. Let $f(x)$ be an irreducible polynomial in $F[x]$ of degree $n$ and let $g(x)$
 be any polynomial in $F[x]$. Let $p(x)$ be an irreducible factor (of degree $m$) of the polynomial $f(g(x))$.
@@ -449,13 +405,13 @@ Prove that $n$ divides $m$. Use this to prove that if $r$ is an integer which is
 
 ## 4.
 
-(a) Let $f (x)$ be an irreducible polynomial of degree 4 in $\QQ[x]$ whose splitting field $K$ over $\QQ$ has Galois group $G = S_4$. 
+(a) Let $f (x)$ be an irreducible polynomial of degree 4 in $\QQ[x]$ whose splitting field $K$ over $\QQ$ has Galois group $G = S_4$.
 
     Let $\theta$ be a root of $f(x)$. Prove that $\QQ[\theta]$ is an extension of $\QQ$ of degree 4 and that there are no intermediate fields between $\QQ$ and $\QQ[\theta]$.
 
 (b) Prove that if $K$ is a Galois extension of $\QQ$ of degree 4, then there is an intermediate subfield between $K$ and $\QQ$.
 
-## 5.  
+## 5.
 
 A ring R is called *simple* if its only two-sided ideals are $0$ and $R$.
 
@@ -463,11 +419,11 @@ A ring R is called *simple* if its only two-sided ideals are $0$ and $R$.
 
 (b) Let $k$ be a field. Show the ring $M_n (k)$, $n \times n$ matrices with entries in $k$, is a simple ring.
 
-## 6.  
+## 6.
 
-For a ring $R$, let $U(R)$ denote the multiplicative group of units in $R$. Recall that in an integral domain $R$, $r \in R$ is called *irreducible* if $r$ is not a unit in R, and the only divisors of $r$ have the form $ru$ with $u$ a unit in $R$. 
+For a ring $R$, let $U(R)$ denote the multiplicative group of units in $R$. Recall that in an integral domain $R$, $r \in R$ is called *irreducible* if $r$ is not a unit in R, and the only divisors of $r$ have the form $ru$ with $u$ a unit in $R$.
 
-We call a non-zero, non-unit $r \in R$ *prime* in $R$ if $r \divides ab \implies r \divides a$ or $r \divides b$. 
+We call a non-zero, non-unit $r \in R$ *prime* in $R$ if $r \divides ab \implies r \divides a$ or $r \divides b$.
 Consider the ring $R = \{a + b \sqrt{-5}\suchthat a, b \in Z\}$.
 
 (a) Prove $R$ is an integral domain.
@@ -480,10 +436,10 @@ Consider the ring $R = \{a + b \sqrt{-5}\suchthat a, b \in Z\}$.
 
 (e) Conclude $R$ is not a PID.
 
-## 7. 
-Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$ . 
+## 7.
+Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$ .
 
-Make $V$ and $W$ into $F[x]\dash$modules via linear operators $T$ on $V$ and $S$ on $W$ by defining $X \cdot v = T (v)$ for all $v \in V$ and $X \cdot w = S(w)$ for all w $\in$ W . 
+Make $V$ and $W$ into $F[x]\dash$modules via linear operators $T$ on $V$ and $S$ on $W$ by defining $X \cdot v = T (v)$ for all $v \in V$ and $X \cdot w = S(w)$ for all w $\in$ W .
 
 Denote the resulting $F[x]\dash$modules by $V_T$ and $W_S$ respectively.
 
