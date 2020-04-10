@@ -689,3 +689,4 @@ adically
 Jantzen
 clopen
 Equicontinuity
+equicontinuous
