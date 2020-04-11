@@ -23,7 +23,7 @@ title: "Stein to Weinstein and Back: Morse Theory"
   - Possibly used in Milnor's exotic 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
 - Diffeomorphism type depends on isotopy classes of attaching maps.
 
-## Actual Talk
+# Actual Talk
 
 [Extremely good review](https://webusers.imj-prg.fr/~alexandru.oancea/BAMS-review-Stein.pdf)
 
