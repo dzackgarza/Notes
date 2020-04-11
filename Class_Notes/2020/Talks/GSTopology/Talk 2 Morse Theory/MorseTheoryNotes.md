@@ -3,6 +3,9 @@
 
 ## BG Info
 
+- [Video of conformal flows](https://youtu.be/mIUi1zIUQJw?t=42)
+
+- [Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
 
 - Historic note: Morse wanted to know not the diffeomorphism type of $M$, but rather the homotopy type.
 - Theorem (Smale, h-cobordism)
@@ -15,15 +18,35 @@
 - Theorem (Morse Lemma): If $p\in \RR^n$ is a critical point of $f: \RR^n \to \RR$ such that the Hessian $H_f(p)$ is a non-degenerate bilinear form, then $f$ is locally Morse (standard form).
 - Theorem: If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\diff} I \cross M_0$
   - Consequence: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
+- Theorem: If $X$ is closed and admits a Morse function with exactly 2 critical points, $X$ is homeomorphic to $S^n$.
+  - Possibly used in Milnor's exotic 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
+- Diffeomorphism type depends on isotopy classes of attaching maps.
+
+## Potentially Useful Figures?
 
 ![Image](figures/2020-03-30-22:49.png)\
 
 ![Image](figures/2020-03-30-22:50.png)\
 
-[Video of conformal flows](https://youtu.be/mIUi1zIUQJw?t=42)
+![Descriptions of 2d Handles](figures/2020-03-31-14:17.png)
 
-[Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
+![Descriptions of 3d Handles](figures/2020-03-31-14:24.png)
 
+![Handle Decomposition of Torus](figures/2020-03-31-14:19.png)
+
+![Image](figures/2020-03-30-23:47.png)\
+
+![Image](figures/2020-03-30-23:59.png)\
+
+![Image](figures/2020-03-31-00:05.png)\
+
+![Image](figures/2020-03-31-00:04.png)\
+
+![Image](figures/2020-03-31-00:04.png)\
+
+![Image](figures/2020-03-31-00:10.png)\
+
+![Image](figures/2020-03-31-00:11.png)\
 
 ## Actual Talk
 
