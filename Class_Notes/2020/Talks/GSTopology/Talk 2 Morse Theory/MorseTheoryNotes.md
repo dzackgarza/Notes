@@ -1,7 +1,8 @@
+---
+title: "Stein to Weinstein and Back: Morse Theory"
+---
 
-# Stein to Weinstein and Back
-
-## BG Info
+# BG Info
 
 - [Video of conformal flows](https://youtu.be/mIUi1zIUQJw?t=42)
 
@@ -21,32 +22,6 @@
 - Theorem: If $X$ is closed and admits a Morse function with exactly 2 critical points, $X$ is homeomorphic to $S^n$.
   - Possibly used in Milnor's exotic 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
 - Diffeomorphism type depends on isotopy classes of attaching maps.
-
-## Potentially Useful Figures?
-
-![Image](figures/2020-03-30-22:49.png)\
-
-![Image](figures/2020-03-30-22:50.png)\
-
-![Descriptions of 2d Handles](figures/2020-03-31-14:17.png)
-
-![Descriptions of 3d Handles](figures/2020-03-31-14:24.png)
-
-![Handle Decomposition of Torus](figures/2020-03-31-14:19.png)
-
-![Image](figures/2020-03-30-23:47.png)\
-
-![Image](figures/2020-03-30-23:59.png)\
-
-![Image](figures/2020-03-31-00:05.png)\
-
-![Image](figures/2020-03-31-00:04.png)\
-
-![Image](figures/2020-03-31-00:04.png)\
-
-![Image](figures/2020-03-31-00:10.png)\
-
-![Image](figures/2020-03-31-00:11.png)\
 
 ## Actual Talk
 
@@ -302,4 +277,31 @@ Proof (Sketch)
 - Use "Smale's trick": trades in an index $k$ critical point for one of index $k+1$ and one of index $k+2$, such that $k, k+1$ cancel. Trade index $1$ for index $2, 3$ and cancel index $3$ as before.
 - Eliminate $0, n$ with a lemma (unclear)
 
-$\qed$
+
+# Potentially Useful Figures?
+
+![Image](figures/2020-03-30-22:49.png)\
+
+![Image](figures/2020-03-30-22:50.png)\
+
+![Descriptions of 2d Handles](figures/2020-03-31-14:17.png)
+
+![Descriptions of 3d Handles](figures/2020-03-31-14:24.png)
+
+![Handle Decomposition of Torus](figures/2020-03-31-14:19.png)
+
+![Image](figures/2020-03-30-23:47.png)\
+
+![Image](figures/2020-03-30-23:59.png)\
+
+![Image](figures/2020-03-31-00:05.png)\
+
+![Image](figures/2020-03-31-00:04.png)\
+
+![Image](figures/2020-03-31-00:04.png)\
+
+![Image](figures/2020-03-31-00:10.png)\
+
+![Image](figures/2020-03-31-00:11.png)\
+
+
