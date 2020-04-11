@@ -693,3 +693,4 @@ equicontinuous
 subsequences
 equicontinuity
 SL2
+functorially
