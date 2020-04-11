@@ -695,3 +695,4 @@ equicontinuity
 SL2
 functorially
 subexpression
+Linearizing
