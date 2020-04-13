@@ -702,3 +702,4 @@ isotone
 tridempotence
 isotonicity
 posets
+cocompact
