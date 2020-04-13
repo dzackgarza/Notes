@@ -698,3 +698,4 @@ subexpression
 Linearizing
 antitone
 powerset
+isotone
