@@ -699,3 +699,6 @@ Linearizing
 antitone
 powerset
 isotone
+tridempotence
+isotonicity
+posets
