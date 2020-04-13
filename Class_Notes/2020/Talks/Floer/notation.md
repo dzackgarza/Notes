@@ -14,3 +14,4 @@ u \in C^\infty{\RR\cross S^1; W};
 }
 \end{align*}
 where $K, \delta > 0$ are constants depending on $u$.
+So $\abs{\del_s u(s, t)}, \abs{\del_t u(s, t) - X_H(u)}  \sim e^{\abs{s}}$.
