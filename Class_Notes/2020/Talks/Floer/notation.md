@@ -7,10 +7,11 @@ title: Notation
 - $H: W\cross \RR \to \RR$ given by $H_t: W\to \RR$ is a time-dependent Hamiltonian.
 - The action functional is given by
   \begin{align*}
-  \mca_H: C^\infty(S^1; W) &\to \RR\\
+  \mca_H: \Omega W &\to \RR\\
   x &\mapsto -\int_{\DD} u^* \omega + \int_0^1 H_t(x(t)) ~dt
   \end{align*}
-  where $u: \DD \to W$ is an extension of $x: S^1\to W$ to the disc with $u(\exp(2\pi i t)) = x(t)$.
+  where $\Omega W$ is the loop space of $W$,
+  $u: \DD \to W$ is an extension of $x: S^1\to W$ to the disc with $u(\exp(2\pi i t)) = x(t)$.
   - Example: $W = \RR^{2n} \implies A_H(x) = \int_0^1 \qty{H_t ~dt - p~dq}$. 
 - $\mcm(x, y)$
 
