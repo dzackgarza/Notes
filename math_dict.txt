@@ -696,3 +696,5 @@ SL2
 functorially
 subexpression
 Linearizing
+antitone
+powerset
