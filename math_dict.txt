@@ -703,3 +703,7 @@ tridempotence
 isotonicity
 posets
 cocompact
+affinoid
+torii
+Montel's
+asymptotics
