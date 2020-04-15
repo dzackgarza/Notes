@@ -21,6 +21,7 @@ title: Notation
   - Example: $W = \RR^{2n} \implies A_H(x) = \int_0^1 \qty{H_t ~dt - p~dq}$. 
 
 - Critical points of the action functional $\mca_H$ are given by orbits, i.e. contractible loops $x, y \in \mcl W$
+- In general, $x, y$ are two periodic orbits of $H$ of period 1.
 
 - The Floer equation is given by
   \begin{align*}
