@@ -2,6 +2,8 @@
 title: Notation
 ---
 
+From the text:
+
 - $(W, \omega \in \Omega_2(W))$ is a (compact?) symplectic manifold
 
 - $C^\infty(A, B)$ is the space of smooth maps with the $C^\infty$ topology (idea: uniform convergence of a function and all derivatives on compact subsets)
@@ -44,17 +46,18 @@ title: Notation
 
 - $\mcm(x, y)$ is the space of solutions of the Floer equation connecting orbits $x$ and $y$.
 
-For $x, y$ contractible loops in $W$ that are critical points of $\mca_H$,
-\begin{align*}
-C_{\searrow}(x, y) \definedas \theset{ 
-u \in C^\infty{\RR\cross S^1; W}; 
-\lim_{s\to -\infty}u(s, t) = x(t), 
-\lim_{s\to\infty}u(s, t) = y(t),
-\left|\frac{\partial u}{\partial s}(s, t)\right| \leq K e^{-\delta|s|} \quad \text { and } \quad\left|\frac{\partial u}{\partial t}(s, t)-X_{H}(u)\right| \leq K e^{-\delta|s|}
-}
-\end{align*}
-where $K, \delta > 0$ are constants depending on $u$.
-So $\abs{\del_s u(s, t)}, \abs{\del_t u(s, t) - X_H(u)}  \sim e^{\abs{s}}$.
+- $C_{\searrow}(x, y)$:
+  \begin{align*}
+  C_{\searrow}(x, y) \definedas \{
+  u \in C^\infty(\RR\cross S^1; W) \suchthat 
+  \lim_{s\to -\infty}u(s, t) = x(t), 
+  \lim_{s\to\infty}u(s, t) = y(t), \\
+  \left|\frac{\partial u}{\partial s}(s, t)\right| \leq K e^{-\delta|s|} \\ \quad\left|\frac{\partial u}{\partial t}(s, t)-X_{H}(u)\right| \leq K e^{-\delta|s|}
+  \end{align*}
+  where $K, \delta > 0$ are constants depending on $u$.
+  So $\abs{\del_s u(s, t)}, \abs{\del_t u(s, t) - X_H(u)}  \sim e^{\abs{s}}$.
+
+From the Appendices
 
 - Relatively compact: has compact closure.
 - Compact operator: the image of bounded sets are relatively compact.
