@@ -50,12 +50,17 @@ From the text:
   \begin{align*}
   C_{\searrow}(x, y) \definedas \{
   u \in C^\infty(\RR\cross S^1; W) \suchthat 
-  \lim_{s\to -\infty}u(s, t) = x(t), 
+  &\lim_{s\to -\infty}u(s, t) = x(t),\quad 
   \lim_{s\to\infty}u(s, t) = y(t), \\
-  \left|\frac{\partial u}{\partial s}(s, t)\right| \leq K e^{-\delta|s|} \\ \quad\left|\frac{\partial u}{\partial t}(s, t)-X_{H}(u)\right| \leq K e^{-\delta|s|}
+  &\left|\frac{\partial u}{\partial s}(s, t)\right| \leq K e^{-\delta|s|},\quad 
+  \quad\left|\frac{\partial u}{\partial t}(s, t)-X_{H}(u)\right| \leq K e^{-\delta|s|}
+  \}
   \end{align*}
   where $K, \delta > 0$ are constants depending on $u$.
-  So $\abs{\del_s u(s, t)}, \abs{\del_t u(s, t) - X_H(u)}  \sim e^{\abs{s}}$.
+  So 
+  $$
+  \abs{\del_s u(s, t)}, \abs{\del_t u(s, t) - X_H(u)}  \sim e^{\abs{s}}
+  .$$
 
 From the Appendices
 
