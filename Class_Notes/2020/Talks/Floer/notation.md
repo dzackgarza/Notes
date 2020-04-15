@@ -20,7 +20,7 @@ title: Notation
   $u: \DD \to W$ is an extension of $x: S^1\to W$ to the disc with $u(\exp(2\pi i t)) = x(t)$.
   - Example: $W = \RR^{2n} \implies A_H(x) = \int_0^1 \qty{H_t ~dt - p~dq}$. 
 
-- Critical points of the action functional $\mca_H$ are given by contractible loops $x, y \in \mcl W$
+- Critical points of the action functional $\mca_H$ are given by orbits, i.e. contractible loops $x, y \in \mcl W$
 
 - The Floer equation is given by
   \begin{align*}
@@ -41,7 +41,7 @@ title: Notation
 - The energy of a solution is $E(u) = \int_{\RR\cross S^1} \abs{\del_s u}^2 ~ds dt$.
 - $\mcm = \theset{u \in C^\infty(\RR; \mcl W) \suchthat E(u) < \infty}$ (contractible solutions of finite energy), which is compact.
 
-- $\mcm(x, y)$ = ?
+- $\mcm(x, y)$ is the space of solutions of the Floer equation connecting orbits $x$ and $y$.
 
 For $x, y$ contractible loops in $W$ that are critical points of $\mca_H$,
 \begin{align*}
