@@ -707,3 +707,4 @@ affinoid
 torii
 Montel's
 asymptotics
+Stone-Weierstrass
