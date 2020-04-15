@@ -708,3 +708,4 @@ torii
 Montel's
 asymptotics
 Stone-Weierstrass
+uniformizations
