@@ -63,3 +63,4 @@ So $\abs{\del_s u(s, t)}, \abs{\del_t u(s, t) - X_H(u)}  \sim e^{\abs{s}}$.
 - Locally integrable: integrable on every compact subset
 - Sobolev spaces: in dimension 1, define $\norm{u(t)}_{s, p} = \sum_{i=0}^s \norm{\del_t^i u(t)}_{L^p}$ on $C^\infty(\bar U)$, then take the completion and denote $W^{s, p}(\bar U)$.
   Yields a distribution space, elements are functions with weak derivatives.
+- Distribution: $C_c^\infty(U)\dual$, the dual of the space of smooth compactly supported functions on an open set $U \subset \RR^n$.
