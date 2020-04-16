@@ -70,6 +70,23 @@ Idea: similar to how you build $L^2(\RR)$, define a norm $\norm{\wait}_\eps$ on 
   \norm{h}_{\vector \eps} &= \sum_{k \geq 0} \eps_{k} \sup _{(x, t) \in W \times S^{1}} \sup_{i, z\in B(0, 1)} \abs{ d^k (h\circ \Psi_i\inv)(z)}
   .\end{align*}
 
+## Define a Banach Space
+
+- Define 
+    $$
+    C_\eps^\infty = \theset{h\in C^\infty(W\cross S^1; \RR) \suchthat \norm{h}_\eps < \infty} \subset C^{\infty}(W\cross S^1; \RR)
+    ,$$ 
+   which is a Banach space (normed and complete). 
+
+- Show that the sequence $\theset{\eps_k}$ can be chosen so that $C_\eps^\infty$ is a *dense* subspace for the $C^\infty$ topology, and in particular for the $C^1$ topology.
+
+
+Proposition
+: Such a sequence $\theset {\eps_k}$ can be chosen.
+
+Lemma
+: $C^\infty(W \cross S^1; \RR)$ with the $C^1$ topology is separable as a topological space (contains a countable dense subset).
+
 
 
 
