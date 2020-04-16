@@ -121,7 +121,45 @@ $$
 $$ 
 and are both nondegenerate.
 
-
-
-
 # Section 8.4: Linearizing the Floer Equation: The Differential of F
+
+## Goal
+
+Choose $m> n = \dim (W)$ and embed $TW \injects \RR^m$ to identify tangent vectors (such as $Z_i$, tangents to $W$ along $u$ or in a neighborhood $B$ of $u$) with actual vectors in $\RR^m$.
+
+> Why? Bypasses differentiating vector fields and the Levi-Cevita connection.
+
+We can then identify 
+$$
+\im \mcf = C^\infty (\RR \cross S^1; \RR^m) \qtext{or} L^p(\RR\cross S^1; W)
+,$$ 
+and we seek to compute its differential $d \mcf$.
+
+> We've just replaced the codomain here.
+
+
+## Definitions 
+
+Recall that 
+
+- $x, y$ are contractible loops in $W$ that are nondegenerate critical points of the action functional $\mca_H$, 
+- $u \in \mcm(x, y) \subset C_\loc^\infty$ denotes a fixed solution to the Floer equation, 
+- $C_{\searrow}(x ,y)$ was the set of solutions $u: \RR\cross S^1 \to W$ satisfying some conditions.
+
+Recall:
+\begin{align*}
+C_{\searrow}(x, y) \definedas \{
+u \in C^\infty(\RR\cross S^1; W) \suchthat  \\
+\lim_{s\to -\infty}u(s, t) = x(t),~
+\lim_{s\to\infty}u(s, t) = y(t)
+\} \\
+&\abs{\dd{u}{t}(s, t)} \quad \text{and}\quad \abs{\dd{u}{t}(s, t) - X_H(u)}  \sim \exp(\abs{s})
+\end{align*}
+
+
+
+
+
+
+
+
