@@ -194,6 +194,18 @@ $endif$
 \usepackage{tikz}
 \usetikzlibrary{cd}
 %\usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix, positioning}
+\makeatletter
+\tikzset{
+  column sep/.code=\def\pgfmatrixcolumnsep{\pgf@matrix@xscale*(#1)},
+  row sep/.code   =\def\pgfmatrixrowsep{\pgf@matrix@yscale*(#1)},
+  matrix xscale/.code=%
+    \pgfmathsetmacro\pgf@matrix@xscale{\pgf@matrix@xscale*(#1)},
+  matrix yscale/.code=%
+    \pgfmathsetmacro\pgf@matrix@yscale{\pgf@matrix@yscale*(#1)},
+  matrix scale/.style={/tikz/matrix xscale={#1},/tikz/matrix yscale={#1}}}
+\def\pgf@matrix@xscale{1}
+\def\pgf@matrix@yscale{1}
+\makeatother
 \usepackage{adjustbox}
 %%%%%%%%%%%
 

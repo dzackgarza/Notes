@@ -258,8 +258,7 @@ Define and compute the differential of the composite map $\tilde\mcf$ defined as
 
 
 \begin{center}
-\begin{tikzcd}[ampersand replacement=\&, column sep=0.01em]
-\tikzcdset{every label/.append style = {font = \tiny}}
+\begin{tikzcd}[ampersand replacement=\&, matrix scale=0.002]
 \mcf(u) =
 \& \frac{\partial u}{\partial s} 
 \& + J(u) \frac{\partial u}{\partial t} 
