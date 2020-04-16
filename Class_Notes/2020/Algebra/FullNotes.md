@@ -62,5 +62,5 @@
 
 !include sections/2020-04-13.md
 
-<!--!include sections/2020-04-15.md-->
+!include sections/2020-04-15.md
 
