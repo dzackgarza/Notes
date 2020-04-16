@@ -72,11 +72,14 @@ Now choosing $\lambda \definedas {\alpha \over 2} = \thevector{\frac 1 2, 0}$, a
 
 Thus
 \begin{align*}
-\gamma_1 \in P_2 &\implies  \inner{\thevector{\frac 1 2, 0}}{ 2 \gamma_1} = 2\frac 1 2 \inner{[1, 0]}{[a, b]}\\
+\gamma_1 \in P_1 &\implies  \inner{\thevector{\frac 1 2, 0}}{ 2 \gamma_1} = 2\qty{\frac 1 2} \inner{[1, 0]}{\gamma_1} = \qty{\gamma_1}_1 \in \theset{0, \pm 1} \in \ZZ \\
 \gamma_2 \in P_2 &\implies \inner{\lambda}{\gamma_2\dual} = \inner{\thevector{\frac 1 2, 0}}{\frac 2 {\qty{\sqrt 2}^2}\thevector{\pm 1, \pm 1}} = \pm \frac 1 2 \not\in \ZZ 
-.\end{align*}
+\end{align*}
 
 
+where $(\gamma_1)_1$ denotes the first component of $\gamma_1$.
+
+We thus find that $\Phi_{[\lambda]} = P_1$, the short roots.
 
 
 # Humphreys 3.7
