@@ -12,7 +12,17 @@ header-includes:
 fontsize: 10pt
 ---
 
-# Review 8.2
+# Review
+
+- The Floer equation is given by
+  \begin{align*}
+  \frac{\partial u}{\partial s}+J(u) \frac{\partial u}{\partial t}+\operatorname{grad} H_{t}(u)=0
+  .\end{align*}
+ 
+- Critical points of the action functional $\mca_H$ are given by orbits, i.e. contractible loops $x, y \in \mcl W$
+- In general, $x, y$ are two periodic orbits of $H$ of period 1.
+- Solutions are functions $u \in C^\infty(\RR \cross S^1; W) = C^\infty(\RR; \mcl W)$
+- $\mcm(x, y)$ is the moduli space of solutions of the Floer equation connecting orbits $x$ and $y$.
 
 # Section 8.3: The Space of Perturbations of H
 
