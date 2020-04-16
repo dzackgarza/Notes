@@ -55,9 +55,9 @@ We proceed by first showing (2) using the hinted counterexample when $\Phi$ is o
 
 Concretely, we can realize $\Phi$ as a subset of $\RR^2$ in the following way:
 \begin{align*}
-\Phi = \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \union \theset{[1,1], [-1, 1], [1, -1], [-1, -1]}
+\Phi = P_1 \disjoint P_2 \definedas \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \disjoint \theset{[1,1], [-1, 1], [1, -1], [-1, -1]}
 ,\end{align*}
-where we note that the first set consists of short roots and the second of long roots.
+where we note that $P_1$ consists of short roots (of norm 1) and $P_2$ of long roots (of norm $\sqrt{2}$).
 
 We can choose the simple system $\Delta = \theset{\alpha \definedas [1, 0], \beta \definedas [-1, 1]}$, and then let
 \begin{align*}
@@ -69,6 +69,13 @@ Now choosing $\lambda \definedas {\alpha \over 2} = \thevector{\frac 1 2, 0}$, a
 \inner{\lambda}{\gamma\dual}
 &\definedas \inner{\thevector{\frac 1 2, 0} }{{2 \over \norm{\gamma}^2}\gamma }
 .\end{align*}
+
+Thus
+\begin{align*}
+\gamma \in P_1 &\implies \inner{\lambda}{\gamma\dual} = \inner{\thevector{\frac 1 2, 2}}{\frac 2 {\qty{\sqrt 2}^2}\thevector{\pm 1, \pm 1}}
+.\end{align*}
+
+
 
 
 # Humphreys 3.7
