@@ -216,9 +216,13 @@ Claim: such trivializations exist, "using cylinders near the spherical caps in t
 
 Recall 
 \begin{align*}
-\mcm(x, y) \subset C_{\searrow}^\infty(x, y) \subset \mcp^{1, p}(x , y) \\ \\
-\mcp^{1, p}(x, y) = \{ (s, t) \mapsvia{\phi} \exp_{w(s, t)} Y(s, t) \suchthat  \\ Y \in W^{1, p}(w^* TW), w\in C_{\searrow}^\infty(x, y) \}
+\mcm(x, y) \subset C_{\searrow}^\infty(x, y) \subset \mcp^{1, p}(x , y) \subset \{ (s, t) \mapsvia{\phi} \exp_{w(s, t)} Y(s, t)\}
 .\end{align*}  
+
+where we restrict to
+ 
+  - $Y \in W^{1, p}(w^* TW)$, 
+  - $w\in C_{\searrow}^\infty(x, y)$
 
 - Use this frame to define a chart centered at $u$ of $\mcp^{1, p}(x, y)$ given by
 \begin{align*}
