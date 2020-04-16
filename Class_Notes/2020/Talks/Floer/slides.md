@@ -256,8 +256,10 @@ Define and compute the differential of the composite map $\tilde\mcf$ defined as
 
 ## asdsad
 
+
+\adjustbox{scale=2,center}{%
 \begin{center}
-\begin{tikzcd}[ampersand replacement=\&, column sep=0.1em]
+\begin{tikzcd}[ampersand replacement=\&, column sep=0.01em]
 \mcf(u) =
 \& \frac{\partial u}{\partial s} 
 \& + J(u) \frac{\partial u}{\partial t} 
@@ -268,3 +270,4 @@ Define and compute the differential of the composite map $\tilde\mcf$ defined as
 \&- J(u+Y) X_{t}(u+Y)
 \end{tikzcd}
 \end{center}
+}
