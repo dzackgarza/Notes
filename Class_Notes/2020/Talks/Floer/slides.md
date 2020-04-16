@@ -148,12 +148,9 @@ Recall that
 
 Recall:
 \begin{align*}
-C_{\searrow}(x, y) \definedas \{
-u \in C^\infty(\RR\cross S^1; W) \suchthat  \\
-\lim_{s\to -\infty}u(s, t) = x(t),~
-\lim_{s\to\infty}u(s, t) = y(t)
-\} \\
-&\abs{\dd{u}{t}(s, t)} \quad \text{and}\quad \abs{\dd{u}{t}(s, t) - X_H(u)}  \sim \exp(\abs{s})
+&C_{\searrow}(x, y) \subset \{u \in C^\infty(\RR\cross S^1; W)\} \\
+&\text{where} \lim_{s\to -\infty}u(s, t) = x(t),~ \lim_{s\to\infty}u(s, t) = y(t) \\
+&\text{and} \abs{\dd{u}{t}(s, t)}, ~~ \abs{\dd{u}{t}(s, t) - X_H(u)}  \sim \exp(\abs{s})
 \end{align*}
 
 
