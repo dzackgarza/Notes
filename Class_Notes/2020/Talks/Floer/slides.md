@@ -434,7 +434,7 @@ Reminder the $x, y$ were the top/bottom pieces of the original cylinder/sphere:
 
 
 \begin{center}
-\includegraphics[width = 0.2\textwidth]{figures/image_2020-04-15-21-53-36.png} 
+\includegraphics[height= 0.2\textheight]{figures/image_2020-04-15-21-53-36.png} 
 \end{center}
 
 
