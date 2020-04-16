@@ -14,6 +14,8 @@ fontsize: 10pt
 
 # Review
 
+## Recalling Notation
+
 - The Floer equation is given by
   \begin{align*}
   \frac{\partial u}{\partial s}+J(u) \frac{\partial u}{\partial t}+\operatorname{grad} H_{t}(u)=0
@@ -23,6 +25,14 @@ fontsize: 10pt
 - In general, $x, y$ are two periodic orbits of $H$ of period 1.
 - Solutions are functions $u \in C^\infty(\RR \cross S^1; W) = C^\infty(\RR; \mcl W)$
 - $\mcm(x, y)$ is the moduli space of solutions of the Floer equation connecting orbits $x$ and $y$.
+-  $W^{1, p}(x, y)$ and $\mcp^{1, p}(x, y)$ were completions of $C^\infty(?)$ with respect to certain norms.
+
+## The "Program" for Chapter 8
+
+- Show that $\mcm(x, y)$ is a manifold of dimension $\mu(x) - \mu(y)$
+- Define $\mcm(x, y)$ as the inverse image of a regular value of some map
+- Perturb $H$ to apply the Sard-Smale theorem
+- Show the tangent maps are Fredholm operators and compute their index.
 
 # Section 8.3: The Space of Perturbations of H
 
