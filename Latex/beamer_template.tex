@@ -171,7 +171,6 @@ $if(institute)$
 \institute{$institute$}
 $endif$
 
-\input{"/home/zack/Notes/Latex/latex_packages.tex"}
 \input{"/home/zack/Notes/Latex/latexmacs.tex"}
 
 % Fix for makeidx?
@@ -181,6 +180,10 @@ $endif$
   %definitions for subitem etc
   }{}
 \newcommand\indexspace{}
+
+%%%%%%%%%%%%
+\usepackage[framemethod=tikz]{mdframed}
+%%%%%%%%%%%
 
 \begin{document}
 $if(title)$
