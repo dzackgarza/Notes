@@ -208,7 +208,13 @@ $endif$
 \makeatother
 \usepackage{adjustbox}
 \newcommand{\qty}[1]{{\left(  {#1} \right)}}
-\usepackage{graphicx}
+\newcommand {\framedgraphic}[2] {
+    \begin{frame}{#1}
+        \begin{center}
+            \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{#2}
+        \end{center}
+    \end{frame}
+}
 %%%%%%%%%%%
 
 \begin{document}
