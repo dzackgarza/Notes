@@ -209,7 +209,18 @@ S^2 \ar[r, "\tilde u"] \& W
   - $\lim_{s\to \infty} Z_i$ exists for each $i$.
   - $$\dd{}{s}, \quad \frac{\del^2}{\del s^2}, \quad \frac{\del^2}{\del s~\del t} \quad \actson Z_i \converges{s\to \pm\infty}\to 0\quad \text{for each } i$$
 
-  > Claim: such trivializations exist, "using cylinders near the spherical caps in the figure".
 
-> Recall what $\mcp^{1, p}(x, y), J, X_t$ are here.
+Claim: such trivializations exist, "using cylinders near the spherical caps in the figure".
+
+## Define "Banach Manifold Charts"
+
+- Use this frame to define a chart centered at $u$ of $\mcp^{1, p}(x, y)$ given by
+\begin{align*}
+\iota: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow \mathcal{P}^{1, p}(x, y) \\
+\vector{y} = \left(y_{1}, \dots, y_{2 n}\right) & \longmapsto \exp _{u}\left(\sum y_{i} Z_{i}\right)
+.\end{align*}
+
+  - Note that the derivative at zero is $\sum_{i=1}^{2n} y_i Z_i$.
+
+
  
