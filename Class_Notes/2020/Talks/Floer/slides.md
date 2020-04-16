@@ -147,7 +147,7 @@ Recall that
 - $C_{\searrow}(x ,y) \subset \theset{u \in C^\infty(R\cross S^1; W)}$ is the set of smooth solutions $u: \RR\cross S^1 \to W$ satisfying some conditions:
 
 \begin{align*}
-&\lim_{s\to -\infty}u(s, t) = x(t),~ \lim_{s\to\infty}u(s, t) = y(t) \\
+&\lim_{s\to -\infty}u(s, t) = x(t),~ \lim_{s\to\infty}u(s, t) = y(t) \\ \\
 &\text{and } \abs{\dd{u}{t}(s, t)}, ~~ \abs{\dd{u}{t}(s, t) - X_H(u)}  \sim \exp(\abs{s})
 \end{align*}
 
