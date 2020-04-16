@@ -82,7 +82,8 @@ where $(\gamma_1)_1$ denotes the first component of $\gamma_1$.
 
 We thus find that $\Phi_{[\lambda]} = P_1$, the short roots, and so we find that the following symmetric difference is nonempty:
 \begin{align*}
-\Phi^+_[\lambda] = 
+\Phi^+_{[\lambda]} &= \theset{[1,0], [0, 1], [-1, 0], [0, -1]} = \theset{\alpha, [0, 1], -\alpha, [0, -1]}  \\
+\Delta_{[\lambda]} &= \theset{[1,0], [0, 1], [-1, 0], [0, -1]}  \\
 .\end{align*}
 
 
