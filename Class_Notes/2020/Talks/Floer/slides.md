@@ -214,9 +214,9 @@ Claim: such trivializations exist, "using cylinders near the spherical caps in t
 
 ## Define "Banach Manifold Charts"
 
-Recall 
+Recall we had completions of $C^\infty$ with respect to two norms, yielding $W^{1, p}(x, y)$ and $\mcp^{1, p}(x, y)$, and
 \begin{align*}
-\mcm(x, y) \subset C_{\searrow}^\infty(x, y) \subset \mcp^{1, p}(x , y) \underset{\definedas}\subset \theset{ (s, t) \mapsvia{\varphi} \exp_{w(s, t)} Y(s, t)}
+\mcm(x, y) \subset C_{\searrow}^\infty(x, y) \subset \mcp^{1, p}(x , y) \underset{\text{defn}}\subset \theset{ (s, t) \mapsvia{\varphi} \exp_{w(s, t)} Y(s, t)}
 .\end{align*}  
 
 where we restrict to
