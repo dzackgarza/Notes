@@ -349,17 +349,22 @@ O_0 &= \sum_{i=1}^{2n} y_i \Bigg( \dd{Z_i}{s} + J(u) \dd{Z_i}{t} + (dJ)_u (Z_i) 
 ## Recap
 
 Note that since we've computed in charts, we have actually computed the differential of $\mcf_u$ in the following diagram
-\begin{center}
-\begin{tikzcd}[ampersand replacement=\&, matrix scale=0.02]
-W^{1, p}(\RR \cross S^1; \RR^{2n})  \ar[rrr, dashed, "\mathcal{F}_u", bend left] \ar[r, "\iota"] 
-\& \mathcal{P}^{1, p}(x, y) \ar[r, "\mathcal{F}"] \ar[rr, dotted, "\tilde \mcf", bend left=20]
-\& L^{p}\left(\mathbb{R} \times S^{1} ; T W\right) \ar[r]
-\& L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{m}\right) \\
-  \& u \ar[rr, "\tilde \mcf"] \& \& \frac{\partial u}{\partial s}+J(u)\left(\frac{\partial u}{\partial t}-X_{t}(u)\right) \\
-\left(y_{1}, \dots, y_{2 n}\right)\ar[r] \&  \exp _{u}\left(\sum y_{i} Z_{i}\right)
-\end{tikzcd}
-\end{center}
+
+![](figures/image_2020-04-16-01-11-02.png)\
+
 So we've technically computed $(dF_\mu)_0$.
+
+
+## Remark on Decomposition
+
+\begin{align*}
+(d\mcf)_u &= 
+\qty{ {\color{red}\frac{\partial Y}{\partial s}} + {\color{red} J(u) \frac{\partial Y}{\partial t}}} +  
+\qty{ (d J)_{u}(Y) \frac{\partial u}{\partial t} - (d J)_{u}(Y) X_{t}-J(u)\left(d X_{t}\right)_{u}(Y)}  \\ \\
+&\definedas {\color{red} \bar \del Y} + SY
+\end{align*}
+where $S\in C^\infty(\RR\cross S^1; \endo(\RR^n))$ is a linear operator of order 0.
+
 
 
 
