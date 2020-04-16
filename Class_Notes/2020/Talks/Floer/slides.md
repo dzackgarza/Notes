@@ -276,6 +276,12 @@ Extract the part that is linear in $Y$ and collect terms:
 &(d \mathcal{F})_{u}(Y)  \\
 & = {\color{red}\frac{\partial Y}{\partial s}} +(d J)_{u}(Y) \frac{\partial u}{\partial t} + {\color{red} J(u) \frac{\partial Y}{\partial t}} -(d J)_{u}(Y) X_{t}-J(u)\left(d X_{t}\right)_{u}(Y) \\ 
 & = 
-\qty{ {\color{red}\frac{\partial Y}{\partial s}} + {\color{red} J(u) \frac{\partial Y}{\partial t}}} + 
-\qty{ (d J)_{u}(Y) \frac{\partial u}{\partial t} - (d J)_{u}(Y) X_{t}-J(u)\left(d X_{t}\right)_{u}(Y)} \\
+\qty{ {\color{red}\frac{\partial Y}{\partial s}} + {\color{red} J(u) \frac{\partial Y}{\partial t}}}  \\
+& \quad + \qty{ (d J)_{u}(Y) \frac{\partial u}{\partial t} - (d J)_{u}(Y) X_{t}-J(u)\left(d X_{t}\right)_{u}(Y)} \\
 .\end{align*}
+
+
+
+- This is a sum of two differential operators:
+  - One of order 1, one of order 2 (Perspective 1)
+  - The Cauchy-Riemann operator, and one of order zero (Perspective 2, not immediate from this form)
