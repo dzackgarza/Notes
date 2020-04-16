@@ -301,4 +301,3 @@ Lemma (Leibniz Rule)
     (dJ)(Y) \cdot v = d(Jv)(Y) - J dv(Y)
     .\end{align*}
 
-
