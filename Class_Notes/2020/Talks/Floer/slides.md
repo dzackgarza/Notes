@@ -168,7 +168,7 @@ The loops $x, y$ are contractible, so they bound discs.
 So we extend by pushing these discs out slightly:
 
 
-## Compactify to Sphere
+## Lift to 2-Sphere
 
 $$
 u \in C^\infty(S^1\cross \RR; W) \quad\mapsto\quad \tilde u \in C^\infty(S^2; W) 
