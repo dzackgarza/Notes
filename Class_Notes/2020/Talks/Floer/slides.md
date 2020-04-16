@@ -349,9 +349,8 @@ O_0 &= \sum_{i=1}^{2n} y_i \Bigg( \dd{Z_i}{s} + J(u) \dd{Z_i}{t} + (dJ)_u (Z_i) 
 ## Recap
 
 Note that since we've computed in charts, we have actually computed the differential of $\mcf_u$ in the following diagram
-
 \begin{center}
-\begin{tikzcd}[ampersand replacement=\&, matrix scale=0.002]
+\begin{tikzcd}[ampersand replacement=\&, matrix scale=0.02]
 W^{1, p}(\RR \cross S^1; \RR^{2n})  \ar[rrr, dashed, "\mathcal{F}_u", bend left] \ar[r, "\iota"] 
 \& \mathcal{P}^{1, p}(x, y) \ar[r, "\mathcal{F}"] \ar[rr, dotted, "\tilde \mcf", bend left=20]
 \& L^{p}\left(\mathbb{R} \times S^{1} ; T W\right) \ar[r]
