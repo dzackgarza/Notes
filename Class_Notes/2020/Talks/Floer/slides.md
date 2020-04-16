@@ -27,7 +27,7 @@ fontsize: 10pt
 \includegraphics[width = 0.8\textwidth]{figures/image_2020-04-14-23-36-58.png} 
 \end{center}
 
-## Idea
+## Define an Absolute Value  
 
 Idea: similar to how you build $L^2(\RR)$, define a norm $\norm{\wait}_\eps$ on $C_\eps^{\infty}(H)$ and take the subspace of finite-norm elements.
 
@@ -45,6 +45,30 @@ Idea: similar to how you build $L^2(\RR)$, define a norm $\norm{\wait}_\eps$ on 
   d^{\alpha_1, \alpha_2, \cdots, \alpha_k}h = \frac{\del^k h}{\del x_{\alpha_1} ~\del x_{\alpha_2} \cdots \del x_{\alpha_k}}
   ,$$
   the partial derivatives wrt the corresponding variables.
+
+## Define a Norm
+
+- Define a norm on $C^\infty(W\cross S^1; \RR)$:
+
+  \begin{align*}
+  \|h\|_{\vector \eps}
+  &= \sum_{k \geq 0} \eps_{k} \sup _{(x, t) \in W \times S^{1}}\left|d^{k} h(x, t)\right|
+  .\end{align*}
+
+- Since $W\cross S^1$ is assumed compact (?), fix a finite covering $\theset{B_i}$ of $W\cross S^1$ such that 
+  $$
+  \union_i B_i^\circ = W \cross S^1
+  .$$
+
+  - Choose them in such a way we obtain charts 
+    \begin{align*}
+    \Psi_i: B_i &\to \bar{B(0, 1)} \subset \RR^{2n + 1} ~(?)
+    .\end{align*}
+  
+- Obtain the computable form
+  \begin{align*}
+  \norm{h}_{\vector \eps} &= \sum_{k \geq 0} \eps_{k} \sup _{(x, t) \in W \times S^{1}} \sup_{i, z\in B(0, 1)} \abs{ d^k (h\circ \Psi_i\inv)(z)}
+  .\end{align*}
 
 
 
