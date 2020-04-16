@@ -151,10 +151,30 @@ Recall that
 &\text{and } \abs{\dd{u}{t}(s, t)}, ~~ \abs{\dd{u}{t}(s, t) - X_H(u)}  \sim \exp(\abs{s})
 \end{align*}
 
+## Compactify to Sphere
+
+Fix a solution
+$$
+u\in \mcm(x, y) \subset C_{\loc}^\infty(\RR\cross S^1; W)
+.$$
+
+We lift each solution to a map 
+$$
+\tilde u: S^2 \to W
+$$ 
+in the following way:
+
+The loops $x, y$ are contractible, so they bound discs.
+So we extend by pushing these discs out slightly:
 
 
+## Compactify to Sphere
 
-
-
+$$
+\tilde u: S^2 \to W
+$$ 
+\begin{center}
+\includegraphics[width = 1.02\textwidth]{figures/image_2020-04-15-18-10-40.png} 
+\end{center}
 
 
