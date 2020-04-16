@@ -87,21 +87,19 @@ Theorem
 Lemma
 : $C^\infty(W \cross S^1; \RR)$ with the $C^1$ topology is separable as a topological space (contains a countable dense subset).
 
-## Existence of Sequence
+## Sketch Proof of Theorem 
 
-Proof (of Theorem, Sketch)
-:   \hfill
 
-    - By the lemma, produce a sequence $\theset{f_n} \subset C^\infty(W\cross S^1; \RR)$ dense for the $C^1$ topology.
-    
-    - Using the norm on $C^n(W\cross S^1; \RR)$ for the $f_n$, define
-    
-      \begin{align*}
-      \frac 1 {\eps_n} = 2^n \displaystyle\max \theset {\norm{f_k} \suchthat k\leq n}
-      \implies \eps_n \sup \abs{d^n f_k(x, t)} \leq 2^{-n}
-      \end{align*}
+- By the lemma, produce a sequence $\theset{f_n} \subset C^\infty(W\cross S^1; \RR)$ dense for the $C^1$ topology.
 
-      which is summable.
+- Using the norm on $C^n(W\cross S^1; \RR)$ for the $f_n$, define
+
+  \begin{align*}
+  \frac 1 {\eps_n} = 2^n \displaystyle\max \theset {\norm{f_k} \suchthat k\leq n}
+  \implies \eps_n \sup \abs{d^n f_k(x, t)} \leq 2^{-n}
+  \end{align*}
+
+  which is summable.
 
 
 
