@@ -434,8 +434,21 @@ Reminder the $x, y$ were the top/bottom pieces of the original cylinder/sphere:
 
 
 \begin{center}
-\framedgraphic[height= 0.2\textheight]{"figures/image_2020-04-15-21-53-36.png"} 
+\includegraphics[height= 0.8\textheight]{figures/image_2020-04-15-21-53-36.png} 
 \end{center}
+
+
+## Proof Sketch
+
+
+- Use the fact that $\dd{Y}{t} = (dX_t)_x Y$
+- Expand $\sum \dd{y_i}{t} Z_i$ in the $Z_i$ basis (roughly) to write $\dd{y_i}{t} = \sum b_{ij} y_j$ for some coefficients $b_{ij}$.
+- Collect terms into a matrix/operator $B^\mp$ for $x,y$ respectively to write $$\dd{Y}{t} = B^- \cdot Y$$
+- Write $(d\mcf)_u = \bar \del + S$ where $S$ is zero order and symmetric in the limit
+- Get the corresponding operator $A$ in coordinates
+- Expand in a basis (roughly) as $A(\sum y_i Z_i) = \sum s_{ij} y_j Z_i$
+- Check that $s_{ij} = \pm b_{i\pm n, j}$
+- This implies $$S^- = - J_0 B^- \quad S^+ = -J_0 B^+ \implies \dd{Y}{t} = J_0 S^\pm Y$$
 
 
 

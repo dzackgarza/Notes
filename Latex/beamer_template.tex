@@ -98,22 +98,22 @@ $if(url)$
 \usepackage{url}
 $endif$
 $if(graphics)$
-\usepackage{graphicx}
-% Redefine \includegraphics so that, unless explicit options are
-% given, the image width will not exceed the width of the page.
-% Images get their normal width if they fit onto the page, but
-% are scaled down if they would overflow the margins.
-\makeatletter
-\def\ScaleIfNeeded{%
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-\let\Oldincludegraphics\includegraphics
-\renewcommand{\includegraphics}[2][]{\Oldincludegraphics[width=\ScaleIfNeeded]{#2}}
+%\usepackage{graphicx}
+ %Redefine \includegraphics so that, unless explicit options are
+ %given, the image width will not exceed the width of the page.
+ %Images get their normal width if they fit onto the page, but
+ %are scaled down if they would overflow the margins.
+%\makeatletter
+%\def\ScaleIfNeeded{%
+  %\ifdim\Gin@nat@width>\linewidth
+    %\linewidth
+  %\else
+    %\Gin@nat@width
+  %\fi
+%}
+%\makeatother
+%\let\Oldincludegraphics\includegraphics
+%\renewcommand{\includegraphics}[2][]{\Oldincludegraphics[width=\ScaleIfNeeded]{#2}}
 $endif$
 
 % Comment these out if you don't want a slide with just the
