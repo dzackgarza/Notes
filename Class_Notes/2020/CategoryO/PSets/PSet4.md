@@ -80,12 +80,19 @@ Thus
 
 where $(\gamma_1)_1$ denotes the first component of $\gamma_1$.
 
-We thus find that $\Phi_{[\lambda]} = P_1$, the short roots, and so we find that the following symmetric difference is nonempty:
+We thus find that $\Phi_{[\lambda]} = P_1$, the short root.
+Choosing the following green hyperplane not containing any root, we can define 
 \begin{align*}
-\Phi^+ &= \theset{} \\
-\Phi^+_{[\lambda]} &= \theset{[1,0], [0, 1], [-1, 0], [0, -1]} = \theset{\alpha, [0, 1], -\alpha, [0, -1]}  \\
-\Delta_{[\lambda]} &= \theset{[1,0]} = \theset{\alpha} \\
+\Phi^+ = \theset{[1, 0], [0, 1], [1,1], [-1, -1]}
+\end{align*}
 
+where we can note that $\Phi^+ \intersect \Delta = \Delta$, since we've placed both simple roots on the positive side of this hyperplane by construction.
+
+But since
+\begin{align*}
+\Phi^+_{[\lambda]} &= \theset{[1,0], [0, 1], [-1, 0], [0, -1]} = \theset{\alpha, [0, 1], -\alpha, [0, -1]}  \\
+\Phi^+_{[\lambda]} \intersect \Delta = \theset{\alpha}  \\
+\Delta_{[\lambda]} &= \theset{[1,0]} = \theset{\alpha} \\
 .\end{align*}
 
 
