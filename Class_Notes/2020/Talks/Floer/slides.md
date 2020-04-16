@@ -224,7 +224,7 @@ where we restrict to
   - $Y \in W^{1, p}(w^* TW)$, 
   - $w\in C_{\searrow}^\infty(x, y)$
 
-- Use this frame to define a chart centered at $u$ of $\mcp^{1, p}(x, y)$ given by
+Use the chosen frame to define a chart centered at $u$ of $\mcp^{1, p}(x, y)$ given by
 \begin{align*}
 \iota: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow \mathcal{P}^{1, p}(x, y) \\
 \vector{y} = \left(y_{1}, \dots, y_{2 n}\right) & \longmapsto \exp _{u}\left(\sum y_{i} Z_{i}\right)
