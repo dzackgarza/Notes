@@ -72,7 +72,8 @@ Now choosing $\lambda \definedas {\alpha \over 2} = \thevector{\frac 1 2, 0}$, a
 
 Thus
 \begin{align*}
-\gamma \in P_1 &\implies \inner{\lambda}{\gamma\dual} = \inner{\thevector{\frac 1 2, 2}}{\frac 2 {\qty{\sqrt 2}^2}\thevector{\pm 1, \pm 1}}
+\gamma_1 \in P_2 &\implies  \inner{\thevector{\frac 1 2, 0}}{ 2 \gamma_1} = 2\frac 1 2 \inner{[1, 0]}{[a, b]}\\
+\gamma_2 \in P_2 &\implies \inner{\lambda}{\gamma_2\dual} = \inner{\thevector{\frac 1 2, 0}}{\frac 2 {\qty{\sqrt 2}^2}\thevector{\pm 1, \pm 1}} = \pm \frac 1 2 \not\in \ZZ 
 .\end{align*}
 
 
