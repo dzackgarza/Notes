@@ -269,7 +269,7 @@ Define and compute the differential of the composite map $\tilde\mcf$ defined as
 \end{tikzcd}
 \end{center}
 
-## asd as
+## Extract Linear Part
 
 Extract the part that is linear in $Y$ and collect terms:
 \begin{align*}
@@ -281,7 +281,24 @@ Extract the part that is linear in $Y$ and collect terms:
 .\end{align*}
 
 
-
 - This is a sum of two differential operators:
-  - One of order 1, one of order 2 (Perspective 1)
+  - One of order 1, one of order 0 (Perspective 1)
   - The Cauchy-Riemann operator, and one of order zero (Perspective 2, not immediate from this form)
+
+## Leibniz Rule
+
+- Now compute in charts. Need a lemma:
+
+Lemma (Leibniz Rule)
+:   For any source space $X$ and any maps
+    \begin{align*}
+    J: X &\to \endo(\RR^m) \\
+    Y, v: X &\to \RR^m
+    \end{align*}
+    
+    we have
+    \begin{align*}
+    (dJ)(Y) \cdot v = d(Jv)(Y) - J dv(Y)
+    .\end{align*}
+
+
