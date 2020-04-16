@@ -185,7 +185,7 @@ From earlier in the book, we have
 
 For every $w\in C^\infty(S^2, W)$ there exists a symplectic trivialization of the fiber bundle $w^* TW$, i.e. $\inner{c_1(TW)}{\pi_2(W)} = 0$ where $c_1$ denotes the first Chern class of the bundle $TW$.
 
-> Note: I don't know what this pairing is. The top Chern class is the Euler class (obstructs nowhere zero sections) and are defined inductively: 
+> \tiny Note: I don't know what this pairing is. The top Chern class is the Euler class (obstructs nowhere zero sections) and are defined inductively: 
 $$
 c_1(TW) = e(\Lambda^n(TW)) \in H^2(W; \ZZ)
 $$
@@ -194,12 +194,22 @@ $$
 
 We have a pullback that is a symplectic fiber bundle:
 \begin{center}
-\begin{tikzcd}
+\begin{tikzcd}[ampersand replacement=\&]
 \tilde u^* TW \ar[r, "d\tilde u"] \ar[d]
 \arrow[dr, phantom, "\scalebox{1.5}{\color{black}$\lrcorner$}" , very near start, color=black]
-& TW\ar[d] \\
-S^2 \ar[r, "\tilde u"] & W
+\& TW\ar[d] \\
+S^2 \ar[r, "\tilde u"] \& W
 \end{tikzcd}
 \end{center}
 
+## Choose a Frame
 
+- Using the assumption, trivialize the pullback $\tilde u ^* TW$ to obtain an orthonormal unitary frame $$\theset{Z_i}_{i=1}^{2n} \subset T_{u(s, t)} W$$ where
+  - The frame depends smoothly on $(s, t) \in S^2$, 
+  - $\lim_{s\to \infty} Z_i$ exists for each $i$.
+  - $$\dd{}{s}, \quad \frac{\del^2}{\del s^2}, \quad \frac{\del^2}{\del s~\del t} \quad \actson Z_i \converges{s\to \pm\infty}\to 0\quad \text{for each } i$$
+
+  > Claim: such trivializations exist, "using cylinders near the spherical caps in the figure".
+
+> Recall what $\mcp^{1, p}(x, y), J, X_t$ are here.
+ 
