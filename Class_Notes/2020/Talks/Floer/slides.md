@@ -272,12 +272,10 @@ Define and compute the differential of the composite map $\tilde\mcf$ defined as
 ## asd as
 
 Extract the part that is linear in $Y$ and collect terms:
-\scalebox{0.05}{\parbox{.5\linewidth}{%
 \begin{align*}
 &(d \mathcal{F})_{u}(Y)  \\
 & = {\color{red}\frac{\partial Y}{\partial s}} +(d J)_{u}(Y) \frac{\partial u}{\partial t} + {\color{red} J(u) \frac{\partial Y}{\partial t}} -(d J)_{u}(Y) X_{t}-J(u)\left(d X_{t}\right)_{u}(Y) \\ 
 & = 
-\qty{ {\color{red}\frac{\partial Y}{\partial s}} + {\color{red} J(u) \frac{\partial Y}{\partial t}}} +  
+\qty{ {\color{red}\frac{\partial Y}{\partial s}} + {\color{red} J(u) \frac{\partial Y}{\partial t}}} + 
 \qty{ (d J)_{u}(Y) \frac{\partial u}{\partial t} - (d J)_{u}(Y) X_{t}-J(u)\left(d X_{t}\right)_{u}(Y)} \\
 .\end{align*}
-}
