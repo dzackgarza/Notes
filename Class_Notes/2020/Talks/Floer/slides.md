@@ -385,18 +385,24 @@ Omitted -- $S$ is exactly $O_0$ from before:
 \begin{align*}
 O_0 
 &= \sum_{i=1}^{2n} y_i \Bigg( \dd{Z_i}{s} + J(u) \dd{Z_i}{t} + {\color{blue} (dJ)_u (Z_i) \dd{u}{t}}  \\
-&\quad\quad - J(u) (dX_t)_u Z_i - {\color{blue} (dJ)_u (Z_i) X_t} \Bigg) \\
-&= \sum_{i=1}^{2n} y_i \qty{ \dd{Z_i}{s} + { \color{blue} (dJ)_u (Z_i) \qty{ \dd{u}{t} - (Z_i) X_t} } + J(u) \dd{Z_i}{t}  - J(u) (dX_t)_u Z_i }
+&\quad\quad\quad\quad - J(u) (dX_t)_u Z_i - {\color{blue} (dJ)_u (Z_i) X_t} \Bigg) \\
+&= \sum_{i=1}^{2n} y_i \Bigg() \dd{Z_i}{s} + { \color{blue} (dJ)_u (Z_i) \qty{ \dd{u}{t} - (Z_i) X_t} } \\
+&\quad\quad\quad\quad + J(u) \dd{Z_i}{t}  - J(u) (dX_t)_u Z_i \Bigg)
 .\end{align*}
 
 - The term in blue vanishes as $s\to \pm \infty$ 
   - Using the fact that $u$ is a solution 
   - Uses $\dd{u}{s} \to 0$ uniformly (as do its derivatives?)
-- Suffices to show the remaining part is symmetric in the limit, i.e. write as 
+- Suffices to show the remaining part is symmetric in the limit
+
+## Proof
+
+- Write the remaining part as 
   \begin{align*}
   A(y_1, \cdots, y_{2n}) = \cdots \implies A_{ij} = A_{ji}
   \end{align*}
   using inner product calculations
+
 - Uses the fact the $Z_i$ needed to be chosen to be unitary and symplectic.
 
 
