@@ -144,13 +144,11 @@ Recall that
 
 - $x, y$ are contractible loops in $W$ that are nondegenerate critical points of the action functional $\mca_H$, 
 - $u \in \mcm(x, y) \subset C_\loc^\infty$ denotes a fixed solution to the Floer equation, 
-- $C_{\searrow}(x ,y)$ was the set of solutions $u: \RR\cross S^1 \to W$ satisfying some conditions.
+- $C_{\searrow}(x ,y) \subset \theset{u \in C^\infty(R\cross S^1; W)}$ is the set of smooth solutions $u: \RR\cross S^1 \to W$ satisfying some conditions:
 
-Recall:
 \begin{align*}
-&C_{\searrow}(x, y) \subset \{u \in C^\infty(\RR\cross S^1; W)\} \\
-&\text{where} \lim_{s\to -\infty}u(s, t) = x(t),~ \lim_{s\to\infty}u(s, t) = y(t) \\
-&\text{and} \abs{\dd{u}{t}(s, t)}, ~~ \abs{\dd{u}{t}(s, t) - X_H(u)}  \sim \exp(\abs{s})
+&\lim_{s\to -\infty}u(s, t) = x(t),~ \lim_{s\to\infty}u(s, t) = y(t) \\
+&\text{and } \abs{\dd{u}{t}(s, t)}, ~~ \abs{\dd{u}{t}(s, t) - X_H(u)}  \sim \exp(\abs{s})
 \end{align*}
 
 
