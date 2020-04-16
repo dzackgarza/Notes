@@ -16,4 +16,10 @@ fontsize: 10pt
 
 # Section 8.3: The Space of Perturbations of H
 
+## Goal
+
+**Goal**: 
+
+Given a fixed Hamiltonian $H\in C^\infty(W\cross S^1; \RR)$, perturb it (without modifying the periodic orbits) so that $\mcm(x, y)$ are manifolds of the expected dimension.
+
 # Section 8.4: Linearizing the Floer Equation: The Differential of F
