@@ -334,7 +334,7 @@ O_0 &= \sum_{i=1}^{2n} y_i \Bigg( \dd{Z_i}{s} + J(u) \dd{Z_i}{t} + (dJ)_u (Z_i) 
 &\quad\quad\quad\quad - J(u) (dX_t)_u Z_i - (dJ)_u (Z_i) X_t \Bigg)
 .\end{align*}
 
-##
+## Order One
 
 - Study $O_1$ first, which (claim) reduces to 
   \begin{align*}
