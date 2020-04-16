@@ -101,6 +101,7 @@ Lemma
 
   which is summable.
 
+$\qed$
 
 > Why does this imply density? I don't know.
 
@@ -314,8 +315,8 @@ to obtain
 &J(x + Y) v(x + y)  \\ 
 &= \qty{J(x) + (dJ)_{x} (Y) } ~\cdot~ \qty{v(x) + (dv)_x(Y)} + \cdots \\
 &= J(x) \cdot v(x) + {\color{blue} J(x) \cdot (dv)_x(Y) + (dJ)_x(Y) \cdot v(x)}  \\
-&+ (dJ)_x(Y)\cdot (dv)_x(Y) + \cdots \\ \\ 
-&\implies d(J\cdot v)_x(Y) &=  (dJ)_x(Y) \cdot v(x) + J(x) \cdot (dv)_x(Y) 
+&\quad + (dJ)_x(Y)\cdot (dv)_x(Y) + \cdots \\ \\ 
+&\implies d(J\cdot v)_x(Y) =  (dJ)_x(Y) \cdot v(x) + J(x) \cdot (dv)_x(Y) 
 .\end{align*}
 
 $\qed$
