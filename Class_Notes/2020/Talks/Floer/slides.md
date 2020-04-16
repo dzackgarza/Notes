@@ -171,7 +171,7 @@ So we extend by pushing these discs out slightly:
 ## Compactify to Sphere
 
 $$
-u: R\cross S^1 \to W \quad \mapsto \quad \tilde u: S^2 \to W
+u \in C^\infty(S^1\cross \RR; W) \quad\mapsto\quad \tilde u \in C^\infty(S^2; W) 
 $$ 
 \begin{center}
 \includegraphics[width = 1.02\textwidth]{figures/image_2020-04-15-18-10-40.png} 
