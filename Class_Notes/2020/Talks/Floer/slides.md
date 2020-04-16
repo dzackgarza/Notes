@@ -355,16 +355,49 @@ Note that since we've computed in charts, we have actually computed the differen
 So we've technically computed $(dF_\mu)_0$.
 
 
-## Remark on Decomposition
+## Order 0 Term is Linear
 
 \begin{align*}
 (d\mcf)_u &= 
-\qty{ {\color{red}\frac{\partial Y}{\partial s}} + {\color{red} J(u) \frac{\partial Y}{\partial t}}} +  
-\qty{ (d J)_{u}(Y) \frac{\partial u}{\partial t} - (d J)_{u}(Y) X_{t}-J(u)\left(d X_{t}\right)_{u}(Y)}  \\ \\
+\qty{ {\color{red}\frac{\partial Y}{\partial s}} + {\color{red} J(u) \frac{\partial Y}{\partial t}}}  \\
+&\quad +  \qty{ (d J)_{u}(Y) \frac{\partial u}{\partial t} - (d J)_{u}(Y) X_{t}-J(u)\left(d X_{t}\right)_{u}(Y)}  \\ \\
 &\definedas {\color{red} \bar \del Y} + SY
 \end{align*}
 where $S\in C^\infty(\RR\cross S^1; \endo(\RR^n))$ is a linear operator of order 0.
 
+## Order 0 Symmetry in the Limit
+
+Theorem (8.4.4, CR + Symmetric in the Limit)
+:   If $u$ solves Floer's equation, then 
+    $$
+    (d\mcf)_u = \bar\del + S( s, t)
+    $$ 
+    where 
+
+    - $S$ is linear 
+    - $S$ tends to a symmetric operator as $s\to \pm \infty$, and 
+    - $$\dd{S}{s}(s, t)  \converges{s\to\pm\infty}\to 0 \qtext{uniformly in $t$}$$
+
+
+## Proof
+
+Omitted -- $S$ is exactly $O_0$ from before:
+\begin{align*}
+O_0 
+&= \sum_{i=1}^{2n} y_i \Bigg( \dd{Z_i}{s} + J(u) \dd{Z_i}{t} + {\color{blue} (dJ)_u (Z_i) \dd{u}{t}}  \\
+&\quad\quad - J(u) (dX_t)_u Z_i - {\color{blue} (dJ)_u (Z_i) X_t} \Bigg) \\
+&= \sum_{i=1}^{2n} y_i \qty{ \dd{Z_i}{s} + { \color{blue} (dJ)_u (Z_i) \qty{ \dd{u}{t} - (Z_i) X_t} } + J(u) \dd{Z_i}{t}  - J(u) (dX_t)_u Z_i }
+.\end{align*}
+
+- The term in blue vanishes as $s\to \pm \infty$ 
+  - Using the fact that $u$ is a solution 
+  - Uses $\dd{u}{s} \to 0$ uniformly (as do its derivatives?)
+- Suffices to show the remaining part is symmetric in the limit, i.e. write as 
+  \begin{align*}
+  A(y_1, \cdots, y_{2n}) = \cdots \implies A_{ij} = A_{ji}
+  \end{align*}
+  using inner product calculations
+- Uses the fact the $Z_i$ needed to be chosen to be unitary and symplectic.
 
 
 
