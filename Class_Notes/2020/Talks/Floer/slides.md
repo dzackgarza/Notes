@@ -177,4 +177,29 @@ $$
 \includegraphics[width = 1.02\textwidth]{figures/image_2020-04-15-18-10-40.png} 
 \end{center}
 
+## Trivial the Pullback
+
+From earlier in the book, we have
+
+**Assumption (6.22)**:
+
+For every $w\in C^\infty(S^2, W)$ there exists a symplectic trivialization of the fiber bundle $w^* TW$, i.e. $\inner{c_1(TW)}{\pi_2(W)} = 0$ where $c_1$ denotes the first Chern class of the bundle $TW$.
+
+> Note: I don't know what this pairing is. The top Chern class is the Euler class (obstructs nowhere zero sections) and are defined inductively: 
+$$
+c_1(TW) = e(\Lambda^n(TW)) \in H^2(W; \ZZ)
+$$
+> Assumption is satisfied when all maps $S^2 \to W$ lift to $B^3$ $\iff \pi_2(W) = 0$.
+
+
+We have a pullback that is a symplectic fiber bundle:
+\begin{center}
+\begin{tikzcd}
+\tilde u^* TW \ar[r, "d\tilde u"] \ar[d]
+\arrow[dr, phantom, "\scalebox{1.5}{\color{black}$\lrcorner$}" , very near start, color=black]
+& TW\ar[d] \\
+S^2 \ar[r, "\tilde u"] & W
+\end{tikzcd}
+\end{center}
+
 
