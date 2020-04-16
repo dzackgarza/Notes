@@ -59,9 +59,10 @@ Concretely, we can realize $\Phi$ as a subset of $\RR^2$ in the following way:
 ,\end{align*}
 where we note that $P_1$ consists of short roots (of norm 1) and $P_2$ of long roots (of norm $\sqrt{2}$).
 
-We can choose the simple system $\Delta = \theset{\alpha \definedas [1, 0], \beta \definedas [-1, 1]}$, and then let
+We can choose the simple system $\Delta = \theset{\alpha \definedas [1, 0], \beta \definedas [-1, 1]}$ of one short root and one long root, and then let
 \begin{align*}
-\Phi_{[\lambda]} \definedas \theset{\gamma \in \Phi \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} \quad \quad \gamma\dual \definedas {2 \over \norm{\gamma}^2} ~\gamma
+\Phi_{[\lambda]} &\definedas \theset{\gamma \in \Phi \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} \quad \quad \gamma\dual \definedas {2 \over \norm{\gamma}^2} ~\gamma \\
+\Delta_{[\lambda]} &\definedas \theset{\gamma \in \Delta \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} 
 .\end{align*}
 
 Now choosing $\lambda \definedas {\alpha \over 2} = \thevector{\frac 1 2, 0}$, a short calculation shows that for an arbitrary $\gamma \in \Phi$,
@@ -79,7 +80,10 @@ Thus
 
 where $(\gamma_1)_1$ denotes the first component of $\gamma_1$.
 
-We thus find that $\Phi_{[\lambda]} = P_1$, the short roots.
+We thus find that $\Phi_{[\lambda]} = P_1$, the short roots, and so we find that the following symmetric difference is nonempty:
+\begin{align*}
+\Phi^+_[\lambda] = 
+.\end{align*}
 
 
 # Humphreys 3.7
