@@ -48,3 +48,19 @@
 
 !include sections/2020-03-16.md
 
+!include sections/2020-03-30.md
+
+!include sections/2020-04-01.md
+
+!include sections/2020-04-03.md
+
+!include sections/2020-04-06.md
+
+!include sections/2020-04-08.md
+
+!include sections/2020-04-10.md
+
+!include sections/2020-04-13.md
+
+!include sections/2020-04-15.md
+
