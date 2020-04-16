@@ -344,7 +344,23 @@ O_0 &= \sum_{i=1}^{2n} y_i \Bigg( \dd{Z_i}{s} + J(u) \dd{Z_i}{t} + (dJ)_u (Z_i) 
 
 - The second equality follows from the assumption that the $Z_i$ are symplectic and orthonormal.
 
-- Note that this writes $(d\mcf)_u(Y) = O_0 + O_CR$, a sum of an order zero and a Cauchy-Riemann operator.
+- Note that this writes $(d\mcf)_u(Y) = O_0 + O_{CR}$, a sum of an order zero and a Cauchy-Riemann operator.
+
+## Recap
+
+Note that since we've computed in charts, we have actually computed the differential of $\mcf_u$ in the following diagram
+
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&, matrix scale=0.02]
+W^{1, p}(\RR \cross S^1; \RR^{2n})  \ar[rrr, dashed, "\mathcal{F}_u", bend left] \ar[r, "\iota"] 
+\& \mathcal{P}^{1, p}(x, y) \ar[r, "\mathcal{F}"] \ar[rr, dotted, "\tilde \mcf", bend left=20]
+\& L^{p}\left(\mathbb{R} \times S^{1} ; T W\right) \ar[r]
+\& L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{m}\right) \\
+  \& u \ar[rr, "\tilde \mcf"] \& \& \frac{\partial u}{\partial s}+J(u)\left(\frac{\partial u}{\partial t}-X_{t}(u)\right) \\
+\left(y_{1}, \dots, y_{2 n}\right)\ar[r] \&  \exp _{u}\left(\sum y_{i} Z_{i}\right)
+\end{tikzcd}
+\end{center}
+So we've technically computed $(dF_\mu)_0$.
 
 
 
