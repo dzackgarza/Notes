@@ -214,7 +214,7 @@ Claim: such trivializations exist, "using cylinders near the spherical caps in t
 
 ## Define "Banach Manifold Charts"
 
-Recall we had completions of $C^\infty$ with respect to two norms, yielding $W^{1, p}(x, y)$ and $\mcp^{1, p}(x, y)$, and
+Recall we had $W^{1, p}(x, y)$ a completion of $C^\infty$ 
 \begin{align*}
 \mcm(x, y) \subset C_{\searrow}^\infty(x, y) \subset \mcp^{1, p}(x , y) \underset{\text{defn}}\subset \theset{ (s, t) \mapsvia{\varphi} \exp_{w(s, t)} Y(s, t)}
 .\end{align*}  
@@ -224,9 +224,7 @@ where we restrict to
   - $Y \in W^{1, p}(w^* TW)$, 
   - $w\in C_{\searrow}^\infty(x, y)$
 
-
-
-Use the chosen frame to define a chart centered at $u$ of $\mcp^{1, p}(x, y)$ given by
+Use the chosen frame $\theset{Z_i}$ to define a chart centered at $u$ of $\mcp^{1, p}(x, y)$ given by
 \begin{align*}
 \iota: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow \mathcal{P}^{1, p}(x, y) \\
 \vector{y} = \left(y_{1}, \dots, y_{2 n}\right) & \longmapsto \exp _{u}\left(\sum y_{i} Z_{i}\right)
