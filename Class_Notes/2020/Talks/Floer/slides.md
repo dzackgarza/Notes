@@ -102,8 +102,24 @@ Lemma
   which is summable.
 
 
+> Why does this imply density? I don't know.
 
+## Modified Theorem
 
+The next proposition establishes a version of this theorem with compact support:
+
+Theorem
+: For any $(\vector x, t) \subset U \in W \cross S^1)$ there exists a $V\subset U$ such that every $h\in C^{\infty}(W\cross S^1; \RR)$ can be approximated in the $C^1$ topology by functions in $C_\eps^\infty$ supported in $U$.
+
+Then fix a time-dependent Hamiltonian $H_0$ with nondegenerate periodic orbits and consider 
+$$
+\theset{ h\in C_\eps^\infty(H_0) \suchthat h(x, t) = 0 \text{ in some $U\supseteq$ the 1-periodic orbits of $H_0$}}
+$$
+Then $\supp(h)$ is "far" from $\per(H_0)$, so 
+$$
+\norm{h}_\eps \ll 1 \implies \per(H_0 + h) = \per(H_0)
+$$ 
+and are both nondegenerate.
 
 
 
