@@ -232,5 +232,19 @@ Use the chosen frame $\theset{Z_i}$ to define a chart centered at $u$ of $\mcp^{
 
   - Note that the derivative at zero is $\sum_{i=1}^{2n} y_i Z_i$.
 
+## Define the Floer Map in Charts
+
+Define and compute the differential of the composite map $\tilde\mcf$ defined as follows:
+  \begin{center}
+  \begin{tikzcd}
+  \mathcal{P}^{1, p}(x, y) \ar[r, "\mathcal{F}"] \ar[rr, dotted, "\tilde \mcf", bend left]
+  & L^{p}\left(\mathbb{R} \times S^{1} ; T W\right) \ar[r]
+  & L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{m}\right) \\
+  u \ar[rr, "\tilde \mcf"] & &\frac{\partial u}{\partial s}+J(u)\left(\frac{\partial u}{\partial t}-X_{t}(u)\right)
+  \end{tikzcd}
+  \end{center}
+
+  - From now on, let $\mcf$ denote $\tilde \mcf$.
+
 
  
