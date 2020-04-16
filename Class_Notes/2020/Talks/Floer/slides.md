@@ -216,7 +216,7 @@ Claim: such trivializations exist, "using cylinders near the spherical caps in t
 
 Recall 
 \begin{align*}
-\mcm(x, y) \subset C_{\searrow}^\infty(x, y) \subset \mcp^{1, p}(x , y) \subset \{ (s, t) \mapsvia{\phi} \exp_{w(s, t)} Y(s, t)\}
+\mcm(x, y) \subset C_{\searrow}^\infty(x, y) \subset \mcp^{1, p}(x , y) \subset \theset{ (s, t) \mapsvia{\varphi} \exp_{w(s, t)} Y(s, t)}
 .\end{align*}  
 
 where we restrict to
