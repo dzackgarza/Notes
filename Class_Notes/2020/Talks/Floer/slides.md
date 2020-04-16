@@ -257,14 +257,14 @@ Define and compute the differential of the composite map $\tilde\mcf$ defined as
 ## asdsad
 
 \begin{center}
-\begin{tikzcd}[column sep=0.1em]
+\begin{tikzcd}[ampersand replacement=\&, column sep=0.1em]
 \mcf(u) =
-& \frac{\partial u}{\partial s} 
-& + J(u) \frac{\partial u}{\partial t} 
-& - J(u)X_{t}(u) \\
+\& \frac{\partial u}{\partial s} 
+\& + J(u) \frac{\partial u}{\partial t} 
+\& - J(u)X_{t}(u) \\
 \implies \mathcal{F}(u+Y) =
-& \frac{\partial(u+Y)}{\partial s}
-&+ J(u+Y) \frac{\partial(u+Y)}{\partial t}
-&- J(u+Y) X_{t}(u+Y)
+\& \frac{\partial(u+Y)}{\partial s}
+\&+ J(u+Y) \frac{\partial(u+Y)}{\partial t}
+\&- J(u+Y) X_{t}(u+Y)
 \end{tikzcd}
 \end{center}
