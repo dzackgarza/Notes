@@ -453,6 +453,25 @@ Reminder the $x, y$ were the top/bottom pieces of the original cylinder/sphere:
 - Check that $s_{ij} = \pm b_{i\pm n, j}$
 - This implies $$S^- = - J_0 B^- \quad S^+ = -J_0 B^+ \implies \dd{Y}{t} = J_0 S^\pm Y$$
 
+## Final Remarks
 
+- Given a solution $u$, we have a right $\RR\dash$action, so for $s\in \RR$, 
+\begin{align*}
+u \cdot s \in C^\infty(\RR\cross S^1; W) \\ 
+(\sigma, t) \mapsto u(\sigma + s, t)
+\end{align*}
+is also a solution, so $\mcf(u \cdot s) = 0$ for all $s$.
+
+> In other words: we can flow solutions?
+
+## Final Remarks
+
+**Punchline**:**$\dd{u}{s}$ is a solution of the linearized equation**, since
+
+\begin{align*}
+0 = \dd{}{s} \mcf (u\cdot s) = (d\mcf)_u \qty{\dd{u}{s}}
+.\end{align*}
+
+- Along any nonconstant solution connecting $x$ and $y$, $\dim \ker (d\mcf)_u \geq 1$.
 
 
