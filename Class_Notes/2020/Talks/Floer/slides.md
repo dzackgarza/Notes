@@ -321,7 +321,7 @@ to obtain
 
 $\qed$
 
-## asdsa
+## Decompose by Order 
 
 Using the chart $\iota$ defined by $\theset{Z_i}$ to write $Y = \sum_{i=1}^{2n} y_i Z_i$ and thus
 \begin{align*}
@@ -330,8 +330,21 @@ Using the chart $\iota$ defined by $\theset{Z_i}$ to write $Y = \sum_{i=1}^{2n} 
 where $O_0$ are order 0 terms ("they do not differentiate the $y_i$") and the $O_1$ are order 1 terms:
 \begin{align*}
 O_1 &= \sum_{i=1}^{2n} \qty{ \dd{y_i}{s} Z_i + \dd{y_i}{t} J(u) Z_i}  \\ \\
-O_0 &= \sum_{i=1}^{2n} y_i (\dd{Z_i}{s} + J(u) \dd{Z_i}{t} + (dJ)_u (Z_i) \dd{u}{t}  \\
-&\quad - J(u) (dX_t)_u Z_i - (dJ)_u (Z_i) X_t )
+O_0 &= \sum_{i=1}^{2n} y_i \Bigg( \dd{Z_i}{s} + J(u) \dd{Z_i}{t} + (dJ)_u (Z_i) \dd{u}{t}  \\
+&\quad\quad\quad\quad - J(u) (dX_t)_u Z_i - (dJ)_u (Z_i) X_t \Bigg)
 .\end{align*}
+
+##
+
+- Study $O_1$ first, which (claim) reduces to 
+  \begin{align*}
+  O_1 = \sum_{i=1}^{2n} \qty{\dd{y_i}{s} + J_0 \dd{y_i}{t}  }Z_i = \bar \del(y_1, \cdots, y_{2n})
+  .\end{align*}
+  where $J_0$ is the standard complex structure on $\RR^{2n} = \CC^n$
+
+- The second equality follows from the assumption that the $Z_i$ are symplectic and orthonormal.
+
+- Note that this writes $(d\mcf)_u(Y) = O_0 + O_CR$, a sum of an order zero and a Cauchy-Riemann operator.
+
 
 
