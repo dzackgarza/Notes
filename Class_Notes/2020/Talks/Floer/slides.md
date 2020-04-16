@@ -405,5 +405,36 @@ O_0
 
 - Uses the fact the $Z_i$ needed to be chosen to be unitary and symplectic.
 
+$\qed$
+
+## asdas
+
+Write $O_1$ as a map $Y \mapsto S\cdot Y$, so $S\in C^\infty(\RR\cross S^1; \endo(\RR^{2n}))$ and define the symmetric operators
+$$
+S^{\pm} \definedas  \lim_{s\to \pm\infty} S(s, \wait) \qtext{respectively}
+$$
+
+Theorem
+:   The equation 
+    $$
+    \del_t Y = J_0 S^{\pm} Y
+    $$ 
+    linearizes Hamilton's equation 
+    \begin{align*}
+    \dd{z}{t} = X_t(z)\qtext{at} 
+    \begin{cases}
+    x = \lim_{s\to -\infty} u & \text{for } S^- \\
+    y = \lim_{s\to \infty} u & \text{for } S^+
+    \end{cases}\quad\text{respectively}
+    .\end{align*}
+
+## Image
+
+Reminder the $x, y$ were the top/bottom pieces of the original cylinder/sphere:
+
+
+![](figures/image_2020-04-15-21-53-36.png) \
+
+
 
 
