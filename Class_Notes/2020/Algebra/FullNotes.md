@@ -56,7 +56,7 @@
 
 !include sections/2020-04-06.md
 
-<!--!include sections/2020-04-08.md-->
+!include sections/2020-04-08.md
 
 <!--!include sections/2020-04-10.md-->
 
