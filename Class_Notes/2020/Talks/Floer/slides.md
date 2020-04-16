@@ -320,3 +320,17 @@ to obtain
 .\end{align*}
 
 $\qed$
+
+## asdsa
+
+Using the chart $\iota$ defined by $\theset{Z_i}$ to write $Y = \sum_{i=1}^{2n} y_i Z_i$ and thus
+\begin{align*}
+(d\mcf)_u(Y) = O_0 + O_1 
+\end{align*}
+where $O_0$ are order 0 terms ("they do not differentiate the $y_i$") and the $O_1$ are order 1 terms:
+\begin{align*}
+O_1 &= \sum_{i=1}^{2n} \qty{ \dd{y_i}{s} Z_i + \dd{y_i}{t} J(u) Z_i}  \\ \\
+O_0 &= \sum_{i=1}^{2n} y_i \qty{ \dd{Z_i}{s} + J(u) \dd{Z_i}{t} + (dJ)_u (Z_i) \dd{u}{t}  - J(u) (dX_t)_u Z_i - (dJ)_u (Z_i) X_t }
+.\end{align*}
+
+
