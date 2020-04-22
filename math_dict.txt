@@ -712,3 +712,4 @@ uniformizations
 linearized
 cocycles
 Baer
+quasicompact
