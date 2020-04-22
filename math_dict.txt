@@ -713,3 +713,4 @@ linearized
 cocycles
 Baer
 quasicompact
+Zariski's
