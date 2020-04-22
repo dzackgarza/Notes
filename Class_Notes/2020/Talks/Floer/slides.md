@@ -198,7 +198,7 @@ $$
 \includegraphics[width = 1.02\textwidth]{figures/image_2020-04-15-18-10-40.png} 
 \end{center}
 
-## Trivial the Pullback
+## Trivialize the Pullback
 
 From earlier in the book, we have
 
