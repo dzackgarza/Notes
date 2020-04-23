@@ -429,7 +429,7 @@ $\qed$
 
 ## asdas
 
-Write $O_1$ as a map $Y \mapsto S\cdot Y$, so $S\in C^\infty(\RR\cross S^1; \endo(\RR^{2n}))$ and define the symmetric operators
+Write $O_0$ as a map $Y \mapsto S\cdot Y$, so $S\in C^\infty(\RR\cross S^1; \endo(\RR^{2n}))$ and define the symmetric operators
 $$
 S^{\pm} \definedas  \lim_{s\to \pm\infty} S(s, \wait) \qtext{respectively}
 $$
