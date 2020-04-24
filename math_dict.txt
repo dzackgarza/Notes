@@ -714,3 +714,4 @@ cocycles
 Baer
 quasicompact
 Zariski's
+costandard
