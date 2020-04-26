@@ -77,7 +77,10 @@ Thus
 
 where $(\gamma_1)_1$ denotes the first component of $\gamma_1$.
 
-We thus find that $\Phi_{[\lambda]} = P_1$: only the short roots.
+We thus find that 
+\begin{align*}
+\Phi_{[\lambda]} = P_1 \quad \text{the short roots} \\
+.\end{align*}
 Choosing the following green hyperplane not containing any root, we can choose a positive system
 \begin{align*}
 \Phi^+ = \theset{[1, 0], [0, 1], [1,1], [-1, -1]}
