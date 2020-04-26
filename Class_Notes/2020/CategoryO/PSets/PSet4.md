@@ -47,14 +47,16 @@ We first have
 where we've repeatedly used the fact that $(V\tensor W)\dual \cong V\dual \tensor W\dual$ for finite-dimensional vector spaces, which inductively holds for any finite direct sum of vector spaces.
 
 On the other hand, using the fact that 
-$$
-\qty{A\oplus B} \tensor (C\oplus D) = \qty{ \qty{A\oplus B} \tensor C} \oplus \qty{ \qty{A\oplus B} \tensor D }
-$$
+\begin{align*}
+\qty{A\oplus B} \tensor (C\oplus D) &= \qty{ \qty{A\oplus B} \tensor C} \oplus \qty{ \qty{A\oplus B} \tensor D } \\
+&= \qty{A\tensor C} \oplus \qty{B\tensor C} \oplus \qty{A\tensor D} \oplus \qty{B\tensor D} \\
+\implies \qty{ \bigoplus_{j\in J} A_i} \tensor \qty{ \bigoplus_{k\in K} B_k} &= \bigoplus_{j\in J} \bigoplus_{k\in K} \qty{A_j \tensor B_k} \qtext{by induction}
+.\end{align*}
 we can write
 \begin{align*}
 M\dual \tensor_\CC L\dual
 &\definedas \qty{\bigoplus_{\alpha\in \lieh\dual} M_\alpha\dual} \tensor_\CC \qty{ \bigoplus_{\beta \in \lieh\dual} L_\beta\dual } \\
-&\cong \bigoplus_{\alpha, \beta\in \lieh\dual}
+&\cong \bigoplus_{\lambda \in \lieh\dual}\bigoplus_{\alpha + \beta = \lambda} \qty{ M_\alpha\dual \tensor_\CC L_\beta\dual}
 .\end{align*}
 
 # Humphreys 3.4
