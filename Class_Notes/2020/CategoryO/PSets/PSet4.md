@@ -90,12 +90,13 @@ Choosing the following green hyperplane not containing any root, we can choose a
 
 where we can note that $\Phi^+ \intersect \Delta = \Delta$, since we've placed both simple roots on the positive side of this hyperplane by construction.
 
-But by taking the corresponding roots in the various other systems on the positive side of this plane, we have
+But by taking roots on the positive side of this plane, we have
 \begin{align*}
-\Phi_{{\lambda}} = P_1  \implies \Phi^+_{[\lambda]} &= \theset{[0, 1], [1, 0]} \\
-\Phi^+_{[\lambda]} \intersect \Delta &= \theset{\alpha}  \\
-\Delta_{[\lambda]} &= \theset{[1,0]} &= \theset{\alpha} \\
-.\end{align*}
+\Phi_{[\lambda]} = \theset{\alpha, -\alpha, \alpha+\beta, -\alpha-\beta}    \implies \Phi^+_{[\lambda]} &= \theset{\alpha, \alpha+\beta}
+\end{align*}
+
+where we can now note that a simple system in *this* root system must still have rank 2, so we can take $\Delta_{[\lambda]} = \theset{\alpha, \alpha + \beta}$. 
+But then
 
 
 # Humphreys 3.7
