@@ -55,8 +55,8 @@ We proceed by first showing (2) using the hinted counterexample when $\Phi$ is o
 
 Concretely, we can realize $\Phi$ and $\Delta$ as subsets of $\RR^2$ in the following way:
 \begin{align*}
-\Phi = P_1 \disjoint P_2 \definedas \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \disjoint \theset{[1,1], [-1, 1], [1, -1], [-1, -1]} \\
-\Delta = \theset{\alpha, \beta} \definedas \theset{[1, 0], [-1, 1]}
+\Phi &= P_1 \disjoint P_2 \definedas \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \disjoint \theset{[1,1], [-1, 1], [1, -1], [-1, -1]} \\
+\Delta &\definedas \theset{\alpha, \beta} \definedas \theset{[1, 0], [-1, 1]}
 ,\end{align*}
 where we note that $P_1$ consists of short roots (of norm 1) and $P_2$ of long roots (of norm $\sqrt{2}$) and we've chosen a simple system consisting of one short root and one long root.
 
