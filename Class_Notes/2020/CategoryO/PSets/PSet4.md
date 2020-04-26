@@ -53,13 +53,14 @@ We would like to show the following two propositions:
 
 We proceed by first showing (2) using the hinted counterexample when $\Phi$ is of type $B_2$ with $\Delta = \theset{\alpha, \beta}$ with $\alpha$ a short root and $\beta$ a long root.
 
-Concretely, we can realize $\Phi$ as a subset of $\RR^2$ in the following way:
+Concretely, we can realize $\Phi$ and $\Delta$ as subsets of $\RR^2$ in the following way:
 \begin{align*}
-\Phi = P_1 \disjoint P_2 \definedas \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \disjoint \theset{[1,1], [-1, 1], [1, -1], [-1, -1]}
+\Phi = P_1 \disjoint P_2 \definedas \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \disjoint \theset{[1,1], [-1, 1], [1, -1], [-1, -1]} \\
+\Delta = \theset{\alpha, \beta} \definedas \theset{[1, 0], [-1, 1]}
 ,\end{align*}
-where we note that $P_1$ consists of short roots (of norm 1) and $P_2$ of long roots (of norm $\sqrt{2}$).
+where we note that $P_1$ consists of short roots (of norm 1) and $P_2$ of long roots (of norm $\sqrt{2}$) and we've chosen a simple system consisting of one short root and one long root.
 
-We can choose the simple system $\Delta = \theset{\alpha \definedas [1, 0], \beta \definedas [-1, 1]}$ of one short root and one long root, and then let
+Now by definition,
 \begin{align*}
 \Phi_{[\lambda]} &\definedas \theset{\gamma \in \Phi \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} \quad \quad \gamma\dual \definedas {2 \over \norm{\gamma}^2} ~\gamma \\
 \Delta_{[\lambda]} &\definedas \theset{\gamma \in \Delta \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} 
