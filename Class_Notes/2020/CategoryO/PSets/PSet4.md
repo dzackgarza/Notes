@@ -80,7 +80,7 @@ where $(\gamma_1)_1$ denotes the first component of $\gamma_1$.
 We thus find that 
 \begin{align*}
 \Phi_{[\lambda]} &= P_1 && \text{the short roots} \\
-\Delta_{[\lambda]} &= \Phi_{[\lambda]} \intersect \Delta = \theset{\alpha} && \text{the single short simple root}
+\Delta_{[\lambda]} = \theset{\alpha} && \text{the single short simple root}
 .\end{align*}
 
 Choosing the following green hyperplane not containing any root, we can choose a positive system
@@ -90,11 +90,11 @@ Choosing the following green hyperplane not containing any root, we can choose a
 
 where we can note that $\Phi^+ \intersect \Delta = \Delta$, since we've placed both simple roots on the positive side of this hyperplane by construction.
 
-But since
+But by taking the corresponding roots in the various other systems on the positive side of this plane, we have
 \begin{align*}
-\Phi^+_{[\lambda]} &= 
-\Phi^+_{[\lambda]} \intersect \Delta = \theset{\alpha}  \\
-\Delta_{[\lambda]} &= \theset{[1,0]} = \theset{\alpha} \\
+\Phi_{{\lambda}} = P_1  \implies \Phi^+_{[\lambda]} &= \theset{[0, 1], [1, 0]} \\
+\Phi^+_{[\lambda]} \intersect \Delta &= \theset{\alpha}  \\
+\Delta_{[\lambda]} &= \theset{[1,0]} &= \theset{\alpha} \\
 .\end{align*}
 
 
