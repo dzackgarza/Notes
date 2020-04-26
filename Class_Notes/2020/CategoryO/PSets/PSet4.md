@@ -53,13 +53,13 @@ We would like to show the following two propositions:
 
 ### Proof of Proposition 1
 
+
 We'll use the definition that for an abstract root system $\Phi$, a positive system $\Phi^+$ is defined by picking a hyperplane $H$ not containing any roots and taking all roots on one side of this hyperplane.
 
-However, if every element of $\Phi^+$ is on one side of $H$, then any subset satisfies this property as well, thus $\Phi_{[\lambda]} \intersect \Phi^+$ consists only of positive roots.
-
-Finally, letting $N = \rank \Phi_{\lambda}$, since $\rank \Phi_{[\lambda]} \intersect \Phi^+$ contains at least $N$ elements, these still form a spanning set.
+However, if every element of $\Phi^+$ is on one side of $H$, then any subset satisfies this property as well, thus $\Phi_{[\lambda]} \intersect \Phi^+$ consists only of positive roots and thus forms a positive system.
 
 ### Proof of Proposition 2
+
 Concretely, we can realize $\Phi$ and $\Delta$ as subsets of $\RR^2$ in the following way:
 \begin{align*}
 \Phi &= P_1 \disjoint P_2 \definedas \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \disjoint \theset{[1,1], [-1, 1], [1, -1], [-1, -1]} \\
