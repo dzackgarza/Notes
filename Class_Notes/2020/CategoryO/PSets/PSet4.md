@@ -55,7 +55,7 @@ We would like to show the following two propositions:
 
 We'll use the definition that for an abstract root system $\Phi$, a positive system $\Phi^+$ is defined by picking a hyperplane $H$ not containing any roots and taking all roots on one side of this hyperplane.
 
-However, if every element of $\Phi^+$ is on one side of $H$, then any subset satisfies the same property.
+However, if every element of $\Phi^+$ is on one side of $H$, then any subset satisfies this property as well, thus $\Phi_{[\lambda]} \intersect \Phi^+$ consists only of positive roots.
 
 ### Proof of Proposition 2
 Concretely, we can realize $\Phi$ and $\Delta$ as subsets of $\RR^2$ in the following way:
