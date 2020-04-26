@@ -38,8 +38,10 @@ So let $M, N\in \OO$; we will proceed by showing that both $(M\tensor_\CC L)\dua
 We first have
 \begin{align*}
 (M\tensor_\CC L)\dual 
-&\definedas \bigoplus_{\lambda \in \lieh\dual} (M\tensor_\CC L)_\lambda\dual, \quad\text{the $\lambda$ weight space of $M\tensor_\CC L$} \\
-&= \bigoplus_{\lambda \in \lieh\dual} \qty{\bigoplus_{\alpha+\beta = \lambda} \qty{M_\alpha \tensor_\CC L_\beta } }\dual \quad\text{by an exercise on the weight spaces of a tensor product}
+&\definedas \bigoplus_{\lambda \in \lieh\dual} (M\tensor_\CC L)_\lambda\dual, && \text{the $\lambda$ weight space of $M\tensor_\CC L$} \\
+&= \bigoplus_{\lambda \in \lieh\dual} \qty{\bigoplus_{\alpha+\beta = \lambda} \qty{M_\alpha \tensor_\CC L_\beta } }\dual && \text{by an exercise on the weight spaces of a tensor product} \\
+&= \bigoplus_{\lambda \in \lieh\dual} \qty{\bigoplus_{\alpha+\beta = \lambda} \qty{M_\alpha \tensor_\CC L_\beta }\dual } && \text{since the inner sum is finite}\\
+&= \bigoplus_{\lambda \in \lieh\dual} \qty{\bigoplus_{\alpha+\beta = \lambda} \qty{M_\alpha\dual \tensor_\CC L_\beta\dual }} &&\text{since the weight spaces are finite-dimensional}
 .\end{align*}
 
 
