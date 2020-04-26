@@ -51,8 +51,10 @@ We would like to show the following two propositions:
 1. $\Phi_{[\lambda]}^+ \definedas \Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in $\Phi_{[\lambda]}$,
 2. In general, the associated simple system $\Delta_{[\lambda]} \neq \Phi^+_{[\lambda]} \intersect \Delta$.
 
-We proceed by first showing (2) using the hinted counterexample when $\Phi$ is of type $B_2$ with $\Delta = \theset{\alpha, \beta}$ with $\alpha$ a short root and $\beta$ a long root.
+### Proof of Proposition 1
 
+
+### Proof of Proposition 2
 Concretely, we can realize $\Phi$ and $\Delta$ as subsets of $\RR^2$ in the following way:
 \begin{align*}
 \Phi &= P_1 \disjoint P_2 \definedas \theset{[1,0], [0, 1], [-1, 0], [0, -1]} \disjoint \theset{[1,1], [-1, 1], [1, -1], [-1, -1]} \\
