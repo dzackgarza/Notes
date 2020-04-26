@@ -56,8 +56,11 @@ we can write
 \begin{align*}
 M\dual \tensor_\CC L\dual
 &\definedas \qty{\bigoplus_{\alpha\in \lieh\dual} M_\alpha\dual} \tensor_\CC \qty{ \bigoplus_{\beta \in \lieh\dual} L_\beta\dual } \\
-&\cong \bigoplus_{\lambda \in \lieh\dual}\bigoplus_{\alpha + \beta = \lambda} \qty{ M_\alpha\dual \tensor_\CC L_\beta\dual}
-.\end{align*}
+&\cong \bigoplus_{\lambda \in \lieh\dual}\qty{ \bigoplus_{\alpha + \beta = \lambda} \qty{ M_\alpha\dual \tensor_\CC L_\beta\dual} }
+,\end{align*}
+which equals what was obtained above.
+
+This exhibits the isomorphism as $\CC\dash$vector spaces, to see that this is in fact as isomorphism of $U(\lieg)\dash$modules we can use the fact 
 
 # Humphreys 3.4
 
