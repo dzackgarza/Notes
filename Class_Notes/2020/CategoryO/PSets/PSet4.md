@@ -29,10 +29,18 @@ $$
 
 ## Solution
 
-We first note that $M\in \OO \implies M = \bigoplus_{\lambda \in \lieh\dual} M_\lambda$ where each $M_\lambda$ is a finite-dimensional weight space.
+We first note that $M\in \OO \implies M = \bigoplus_{\lambda \in \lieh\dual} M_\lambda$ where each $M_\lambda$ is a finite-dimensional weight space. 
 
 Moreover, $M\dual \definedas \bigoplus_{\lambda \in \lieh\dual} M_\lambda\dual$ is defined to be a direct sum of duals of weight spaces, which are still finite-dimensional.
 
+So let $M, N\in \OO$; we will proceed by showing that both $(M\tensor_\CC L)\dual$ and $M\dual \tensor_\CC \dual$ have identical direct sum decompositions.
+
+We first have
+\begin{align*}
+(M\tensor_\CC L)\dual 
+&\definedas \bigoplus_{\lambda \in \lieh\dual} (M\tensor_\CC L)_\lambda\dual, \quad\text{the $\lambda$ weight space of $M\tensor_\CC L$} \\
+&= \bigoplus_{\lambda \in \lieh\dual} \qty{\bigoplus_{\alpha+\beta = \lambda} \qty{M_\alpha \tensor_\CC L_\beta } }\dual \quad\text{by an exercise on the weight spaces of a tensor product}
+.\end{align*}
 
 
 # Humphreys 3.4
