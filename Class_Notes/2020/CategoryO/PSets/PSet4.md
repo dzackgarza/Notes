@@ -90,9 +90,12 @@ We thus find that
 \Delta_{[\lambda]} = \theset{\alpha} && \text{the single short simple root}
 .\end{align*}
 
-Choosing the following green hyperplane not containing any root, we can choose a positive system
+Choosing the following hyperplane $H$ not containing any root, we can choose a positive system:
+
+![](figures/image_2020-04-26-16-35-07.png)\\
+
 \begin{align*}
-\Phi^+ = \theset{[1, 0], [0, 1], [1,1], [-1, -1]} = \theset{\alpha, \beta, \alpha +\beta, 2\alpha+\beta}
+\Phi^+ = \theset{\beta, \beta+ \alpha, \beta + 2\alpha, \alpha}
 \end{align*}
 
 where we can note that $\Phi^+ \intersect \Delta = \Delta$, since we've placed both simple roots on the positive side of this hyperplane by construction.
