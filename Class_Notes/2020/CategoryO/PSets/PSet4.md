@@ -60,7 +60,12 @@ M\dual \tensor_\CC L\dual
 ,\end{align*}
 which equals what was obtained above.
 
-This exhibits the isomorphism as $\CC\dash$vector spaces, to see that this is in fact as isomorphism of $U(\lieg)\dash$modules we can use the fact 
+This exhibits the isomorphism as $\CC\dash$vector spaces, to see that this is in fact as isomorphism of $U(\lieg)\dash$modules we can use the fact that for $M\in \OO$, a twisted $\lieg\dash$action was defined as 
+$$
+\vector v\in M,~f\in M\dual,~ g\in \lieg \implies (g\cdot f)(\vector v) = f(\tau(g) \cdot \vector v)
+$$
+for the transpose map $\tau$.
+This action can be "linearly extended" over direct products and tensor products by taking the action component-wise, and is thus preserved by all of the isomorphisms appearing above.
 
 # Humphreys 3.4
 
