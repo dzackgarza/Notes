@@ -92,7 +92,7 @@ where we can note that $\Phi^+ \intersect \Delta = \Delta$, since we've placed b
 
 But since
 \begin{align*}
-\Phi^+_{[\lambda]} &= \theset{[1,0], [0, 1], [-1, 0], [0, -1]} = \theset{\alpha, [0, 1], -\alpha, [0, -1]}  \\
+\Phi^+_{[\lambda]} &= 
 \Phi^+_{[\lambda]} \intersect \Delta = \theset{\alpha}  \\
 \Delta_{[\lambda]} &= \theset{[1,0]} = \theset{\alpha} \\
 .\end{align*}
