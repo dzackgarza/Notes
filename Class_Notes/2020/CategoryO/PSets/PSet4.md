@@ -67,6 +67,8 @@ $$
 for the transpose map $\tau$.
 This action can be "linearly extended" over direct products and tensor products by taking the action component-wise, and is thus preserved by all of the isomorphisms appearing above.
 
+Since the final terms $\bigoplus_{\lambda \in \lieh} \bigoplus _{\alpha + \beta = \lambda} M_\alpha\dual \tensor L_\beta\dual$ are identical, they carry the same action, and since they are preserved by the isomorphisms, working backwards shows that the actions on $(M\tensor L)\dual$ and $M\dual \tensor L\dual$ must also agree, yielding the desired isomorphism.
+
 # Humphreys 3.4
 
 Show that $\Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in the root system $\Phi_{[\lambda]}$, but the corresponding simple system $\Delta_{[\lambda]}$ may be unrelated to $\Delta$.
