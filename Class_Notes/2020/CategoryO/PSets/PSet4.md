@@ -38,13 +38,19 @@ So let $M, N\in \OO$; we will proceed by showing that both $(M\tensor_\CC L)\dua
 We first have
 \begin{align*}
 (M\tensor_\CC L)\dual 
-&\definedas \bigoplus_{\lambda \in \lieh\dual} (M\tensor_\CC L)_\lambda\dual, && \text{the $\lambda$ weight space of $M\tensor_\CC L$} \\
+&\definedas \bigoplus_{\lambda \in \lieh\dual} (M\tensor_\CC L)_\lambda\dual, && \text{the $\lambda$ weight spaces of $M\tensor_\CC L$} \\
 &\cong \bigoplus_{\lambda \in \lieh\dual} \qty{\bigoplus_{\alpha+\beta = \lambda} \qty{M_\alpha \tensor_\CC L_\beta } }\dual && \text{by an exercise on the weight spaces of a tensor product} \\
 &\cong \bigoplus_{\lambda \in \lieh\dual} \qty{\bigoplus_{\alpha+\beta = \lambda} \qty{M_\alpha \tensor_\CC L_\beta }\dual } && \text{since the inner term is a finite sum}\\
 &\cong \bigoplus_{\lambda \in \lieh\dual} \qty{\bigoplus_{\alpha+\beta = \lambda} \qty{M_\alpha\dual \tensor_\CC L_\beta\dual }} &&\text{since the weight spaces are finite-dimensional}
 ,\end{align*}
 
 where we've repeatedly used the fact that $(V\tensor W)\dual \cong V\dual \tensor W\dual$ for finite-dimensional vector spaces, which inductively holds for any finite direct sum of vector spaces.
+
+On the other hand, we have
+\begin{align*}
+M\dual \tensor_\CC L\dual
+&\definedas \qty{\bigoplus_{\alpha\in \lieh\dual} M_\alpha\dual} \tensor_\CC \qty{ \bigoplus_{\beta \in \lieh\dual} L_\beta\dual }
+.\end{align*}
 
 # Humphreys 3.4
 
