@@ -49,7 +49,7 @@ Show that $\Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in the root 
 We would like to show the following two propositions:
 
 1. $\Phi_{[\lambda]}^+ \definedas \Phi_{[\lambda]} \intersect \Phi^+$ is a positive system in $\Phi_{[\lambda]}$,
-2. The simple system $\Delta_{[\lambda]}$ corresponding to $\Phi_{[\lambda]}^+$ is *not* generally given by $\Delta_{[\lambda]} = \Phi_{[\lambda]} \intersect \Delta$, where $\Delta$ is the simple system corresponding to $\Phi$.
+2. In general, the associated simple system $\Delta_{[\lambda]} \neq \Phi^+_{[\lambda]} \intersect \Delta$.
 
 We proceed by first showing (2) using the hinted counterexample when $\Phi$ is of type $B_2$ with $\Delta = \theset{\alpha, \beta}$ with $\alpha$ a short root and $\beta$ a long root.
 
@@ -96,7 +96,13 @@ But by taking roots on the positive side of this plane, we have
 \end{align*}
 
 where we can now note that a simple system in *this* root system must still have rank 2, so we can take $\Delta_{[\lambda]} = \theset{\alpha, \alpha + \beta}$. 
-But then
+But now we can note
+\begin{align*}
+\Delta_{[\lambda]} = \theset{\alpha, \alpha+ \beta} {\color{red}\neq }
+\theset{\alpha} = \theset{\alpha, \alpha+\beta} \intersect \theset{\alpha, \beta} 
+=\Phi^+_{[\lambda]} \intersect \Delta
+,\end{align*}
+which is what we wanted to show.
 
 
 # Humphreys 3.7
