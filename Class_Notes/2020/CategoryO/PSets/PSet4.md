@@ -53,6 +53,7 @@ We would like to show the following two propositions:
 
 ### Proof of Proposition 1
 
+We'll use the definition that for an abstract root system $\Phi$, a positive system $\Phi^+$ is defined by picking a hyperplane not containing any roots and taking all roots on one side of this hyperplane.
 
 ### Proof of Proposition 2
 Concretely, we can realize $\Phi$ and $\Delta$ as subsets of $\RR^2$ in the following way:
