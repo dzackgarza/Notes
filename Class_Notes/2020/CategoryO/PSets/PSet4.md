@@ -46,10 +46,15 @@ We first have
 
 where we've repeatedly used the fact that $(V\tensor W)\dual \cong V\dual \tensor W\dual$ for finite-dimensional vector spaces, which inductively holds for any finite direct sum of vector spaces.
 
-On the other hand, we have
+On the other hand, using the fact that 
+$$
+\qty{A\oplus B} \tensor (C\oplus D) = \qty{ \qty{A\oplus B} \tensor C} \oplus \qty{ \qty{A\oplus B} \tensor D }
+$$
+we can write
 \begin{align*}
 M\dual \tensor_\CC L\dual
-&\definedas \qty{\bigoplus_{\alpha\in \lieh\dual} M_\alpha\dual} \tensor_\CC \qty{ \bigoplus_{\beta \in \lieh\dual} L_\beta\dual }
+&\definedas \qty{\bigoplus_{\alpha\in \lieh\dual} M_\alpha\dual} \tensor_\CC \qty{ \bigoplus_{\beta \in \lieh\dual} L_\beta\dual } \\
+&\cong \bigoplus_{\alpha, \beta\in \lieh\dual}
 .\end{align*}
 
 # Humphreys 3.4
