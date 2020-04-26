@@ -85,7 +85,7 @@ We thus find that
 
 Choosing the following green hyperplane not containing any root, we can choose a positive system
 \begin{align*}
-\Phi^+ = \theset{[1, 0], [0, 1], [1,1], [-1, -1]}
+\Phi^+ = \theset{[1, 0], [0, 1], [1,1], [-1, -1]} = \theset{\alpha, \beta, \alpha +\beta, 2\alpha+\beta}
 \end{align*}
 
 where we can note that $\Phi^+ \intersect \Delta = \Delta$, since we've placed both simple roots on the positive side of this hyperplane by construction.
