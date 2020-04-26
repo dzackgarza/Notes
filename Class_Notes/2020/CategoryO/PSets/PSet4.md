@@ -29,12 +29,10 @@ $$
 
 ## Solution
 
-By theorem 3.2d, we have
-$$
-M, N \in \OO \implies (M\oplus N)\dual \cong M\dual \oplus N\dual
-$$
+We first note that $M\in \OO \implies M = \bigoplus_{\lambda \in \lieh\dual} M_\lambda$ where each $M_\lambda$ is a finite-dimensional weight space.
 
-and by definition, $M\dual \definedas \bigoplus_{\lambda \in \lieh\dual} M_\lambda\dual$ is the direct sum of the duals of various weight spaces.
+Moreover, $M\dual \definedas \bigoplus_{\lambda \in \lieh\dual} M_\lambda\dual$ is defined to be a direct sum of duals of weight spaces, which are still finite-dimensional.
+
 
 
 # Humphreys 3.4
