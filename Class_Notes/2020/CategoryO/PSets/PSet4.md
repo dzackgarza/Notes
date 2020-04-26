@@ -62,7 +62,7 @@ where we note that $P_1$ consists of short roots (of norm 1) and $P_2$ of long r
 
 Now by definition,
 \begin{align*}
-\Phi_{[\lambda]} &\definedas \theset{\gamma \in \Phi \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} \quad \quad \gamma\dual \definedas {2 \over \norm{\gamma}^2} ~\gamma \\
+\Phi_{[\lambda]} &\definedas \theset{\gamma \in \Phi \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ}, \quad \quad \gamma\dual \definedas {2 \over \norm{\gamma}^2} ~\gamma, \\
 \Delta_{[\lambda]} &\definedas \theset{\gamma \in \Delta \suchthat \inner{\lambda}{\gamma\dual} \in \ZZ} 
 .\end{align*}
 
