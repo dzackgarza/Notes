@@ -70,8 +70,7 @@ and note that in the triangular decomposition $\lieg = \lien^- \oplus \lieh \opl
 Since the action is defined over $\lieb = \lieh \oplus \lien$ and $x$ acts by zero, we obtain a $\lieg\dash$action on $N$ which thus extends uniquely to a $U(\lieg)\dash$ action.
 
 **Claim 2**:
-We first note that since the submodule $\CC \cdot \vector u < M$ is closed under the action of $h$ (since it concretely acts by $u\mapsto \lambda u$) and is equal to the image of $\psi$, we can identify $\CC\cdot \vector u \cong \CC_\lambda$ as $U(\lieb)\dash$modules and hence as $U(\lieg)\dash$modules since $x$ acts by zero. 
-In this way, we can identify $M(\lambda)$ as a submodule of $M$.
+We first note that since the submodule $\CC \cdot \vector u < M$ is closed under the action of $h$ (since $h$ acts by $u\mapsto \lambda u$) and is equal to the image of $\psi$, we can identify $\CC\cdot \vector u \cong \CC_\lambda$ as $U(\lieb)\dash$modules and identify $M(\lambda)$ as a submodule of $M$.
 Thus the first map is an injection.
 
 To see that this sequence is exact, we first note that $\im \psi \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
