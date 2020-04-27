@@ -76,7 +76,8 @@ Moreover, the map $\phi$ is a surjection, since the generator $1\tensor 1$ of $M
 
 To see that the sequence is exact in the middle, we first note that $\im \psi \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
 To see that $\ker \phi \subset \im \psi$, we note that by choosing a PBW basis of $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, we can obtain a basis of $M$ of the form $\theset{y^j \tensor \vector u, y^k \tensor \vector v \suchthat j, k\in \ZZ^{\geq 0}}$.
-But since we know
+
+But since $\phi$ is specified on $1\tensor \vector u$, we see that any other basis element maps as $\phi(y^k \tensor \vector u) = \phi(y^k(1\tensor \vector u)) = y^k \phi(1\tensor \vector u) = 0$.
 
 
 # Humphreys 3.2
