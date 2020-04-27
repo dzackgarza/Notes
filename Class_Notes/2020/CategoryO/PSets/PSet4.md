@@ -24,13 +24,14 @@ We first unpack all definitions in terms of tensor products, using the fact that
 \begin{tikzcd}
 0 \ar[r] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0 \\
 0 \ar[r] \ar[u, equal] & U(\lieg) \tensor_{U(\lieb)} \CC_\lambda \ar[u, equal] \ar[r] & U(\lieg) \tensor_{U(\lieb)} N \ar[u, equal] \ar[r] & U(\lieg) \tensor_{U(\lieb)} \CC_\lambda \ar[u, equal]  \ar[r] & 0 \ar[u, equal] \\
-  & 1 \tensor 1 \ar[r, mapsto] & 1 \tensor \vector u \ar[r, mapsto] & 1 \tensor 0 & \\
+  & 1 \tensor 1 \ar[r, mapsto, "\psi"] & 1 \tensor \vector u \ar[r, mapsto, "\phi"] & 1 \tensor 0 & \\
   & & 1 \tensor \vector v \ar[r, mapsto] & 1 \tensor 1 & 
 \end{tikzcd}
 \end{center}
 
 where $N = \spanof_\CC \theset{\vector u, \vector v}$.
 We note that by using a PBW basis for $\liesl(2, \CC)$, the infinitely many element of $M$ are spanned by elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$.
+We also note that this identifies $M(\lambda) = \spanof_\CC(\vector u)$ as a submodule of $N$, which extends to a submodule of the tensor product defining $M$
 
 # Humphreys 3.2
 
