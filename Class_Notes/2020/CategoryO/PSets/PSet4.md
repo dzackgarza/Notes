@@ -29,6 +29,8 @@ We first unpack all definitions in terms of tensor products, using the fact that
 \end{tikzcd}
 \end{center}
 
+where $N = \spanof_\CC \theset{\vector u, \vector v}$.
+We note that by using a PBW basis for $\liesl(2, \CC)$, the infinitely many element of $M$ are spanned by elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$.
 
 # Humphreys 3.2
 
