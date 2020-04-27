@@ -75,10 +75,8 @@ In this way, we can identify $M(\lambda)$ as a submodule of $M$.
 Thus the first map is an injection.
 
 To see that this sequence is exact, we first note that $\im \psi \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
-To see that $\ker \phi \subset \im \psi$, we note that by choosing a PBW basis of $\liesl(2, \CC)$
-
-
-We note that by using a PBW basis for $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, the module $M$ is spanned by infinitely many basis elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$, we can obtain a basis of $M$ of the form $\theset{y^j \tensor \vector u, y^k \tensor v \suchthat j, k\in \ZZ^{\geq 0}}$.
+To see that $\ker \phi \subset \im \psi$, we note that by choosing a PBW basis of $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, we can obtain a basis of $M$ of the form $\theset{y^j \tensor \vector u, y^k \tensor \vector v \suchthat j, k\in \ZZ^{\geq 0}}$.
+But since we know
 
 
 # Humphreys 3.2
