@@ -22,8 +22,8 @@ We first unpack all definitions in terms of tensor products, using the fact that
 
 \begin{center}
 \begin{tikzcd}
-0 \ar[r] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0
-0 \ar[r] \arrow{equal}[u] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0
+0 \ar[r] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0 \\
+0 \ar[r] \ar[u, equal] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0
 \end{tikzcd}
 \end{center}
 
