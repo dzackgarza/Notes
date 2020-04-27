@@ -232,22 +232,12 @@ $\qed$
 
 # Humphreys 3.7
 
-## a
+a. If a module $M$ has a standard filtration and there exists an epimorphism $\phi: M\to M(\lambda)$, prove that $\ker \phi$ admits a standard filtration.
 
-If a module $M$ has a standard filtration and there exists an epimorphism $\phi: M\to M(\lambda)$, prove that $\ker \phi$ admits a standard filtration.
-
-### Solution
-
-Since $\phi$ is surjective, we obtain a short exact sequence
-$$
-0 \to \ker \phi \to M \to \im \phi = M(\lambda) \to 0
-$$
-which identifies $\ker \phi$ as a submodule of $M$.
+b. Show by example that when $\lieg = \liesl(2, \CC)$ that the existence of a monomorphism $\phi: M(\lambda) \to M$ where $M$ has a standard filtration fails to imply that $\coker \phi$ has a standard filtration.
 
 
-## b
-
-Show by example that when $\lieg = \liesl(2, \CC)$ that the existence of a monomorphism $\phi: M(\lambda) \to M$ where $M$ has a standard filtration fails to imply that $\coker \phi$ has a standard filtration.
+## Solution
 
 
-
+> Haven't had a chance to work this out yet!
