@@ -74,10 +74,12 @@ We first note that since the submodule $\CC \cdot \vector u < M$ is closed under
 Since submodules of $N$ lift to submodules of $\Ind_{\lieb}^\lieg N$, the map $\psi$ is an injection.
 Moreover, the map $\phi$ is a surjection, since the generator $1\tensor 1$ of $M(\lambda)$ is precisely the image of one of the generators of $M$.
 
-To see that the sequence is exact in the middle, we first note that $\im \psi = \CC\cdot \vector u \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
-To see that $\ker \phi \subset \CC\cdot \vector u$, we note that by choosing a PBW basis of $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, we can obtain a basis of $M$ of the form $\theset{y^j \tensor \vector u, y^k \tensor \vector v \suchthat j, k\in \ZZ^{\geq 0}}$.
+To see that the sequence is exact in the middle, we note that by choosing a PBW basis of $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, we can obtain a basis of $M$ of the form $\theset{y^j \tensor \vector u, y^k \tensor \vector v \suchthat j, k\in \ZZ^{\geq 0}}$.
+This allows us to identify the lift of the submodule $\CC\cdot \vector u$ to the span of $\theset{y^k \tensor \vector u}$ in $M$.
 
-But since $\phi$ is specified on $1\tensor \vector u$, we see that any other basis element maps as 
+we first note that $\im \psi = \CC\cdot \vector u \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
+To see that $\ker \phi \subset \CC\cdot \vector u$, 
+But then we can identify $\CC\cdot \vector u = \theset{y^k\qty{1\tensor \vector u}}$ since $\phi$ is specified on $1\tensor \vector u$, we see that any other basis element maps as 
 
 $$
 \phi(y^k \tensor \vector v) = \phi(y^k(1\tensor \vector v)) = y^k \phi(1\tensor \vector v) = y^k \qty{1 \tensor 1} = y^k \tensor 1 \neq 0
