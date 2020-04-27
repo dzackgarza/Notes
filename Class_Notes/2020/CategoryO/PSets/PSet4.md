@@ -18,6 +18,16 @@ $$
 
 > Hence $M\not\in \OO$.
 
+We first unpack all definitions in terms of tensor products, using the fact that $M(\lambda) = U(\lieg) \tensor_{U(\lieb)} \CC_\lambda$:
+
+\begin{center}
+\begin{tikzcd}
+0 \ar[r] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0
+0 \ar[r]\ar[u, equal] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0
+\end{tikzcd}
+\end{center}
+
+
 # Humphreys 3.2
 
 Show that for $M\in \OO$ and $\dim L < \infty$,
