@@ -70,9 +70,8 @@ and note that in the triangular decomposition $\lieg = \lien^- \oplus \lieh \opl
 Since the action is defined over $\lieb = \lieh \oplus \lien$ and $x$ acts by zero, we obtain a $\lieg\dash$action on $N$ which thus extends uniquely to a $U(\lieg)\dash$ action.
 
 **Claim 2**:
-We note that by using a PBW basis for $\liesl(2, \CC)$, $M$ is spanned by infinitely many basis elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$.
-We also note that identifying the image $\psi(M(\lambda)) = \CC\cdot \vector u \cong \CC_\lambda$ (as $U(\lieb)\dash$modules) we obtain a submodule of $N$, which lifts to a submodule of the induced module $M$.
-Similarly, 
+We note that by using a PBW basis for $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, the module $M$ is spanned by infinitely many basis elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$.
+We also note that identifying the image $\psi(M(\lambda)) = \CC\cdot \vector u \cong \CC_\lambda$ (as $U(\lieb)\dash$modules) we obtain a submodule of $N$, which lifts to a submodule of the induced module $M$. 
 
 # Humphreys 3.2
 
