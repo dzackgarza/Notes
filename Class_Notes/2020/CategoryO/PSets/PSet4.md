@@ -76,19 +76,19 @@ Moreover, the map $\phi$ is a surjection, since the generator $1\tensor 1$ of $M
 
 To see that the sequence is exact in the middle, we note that by choosing a PBW basis of $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, we can obtain a basis of $M$ of the form $\theset{y^j \tensor \vector u, y^k \tensor \vector v \suchthat j, k\in \ZZ^{\geq 0}}$.
 This allows us to identify the lift of the submodule $\CC\cdot \vector u$ to the span of $\theset{y^k \tensor \vector u}$ in $M$.
-Then $\im \psi \in \ker \phi$ by construction, since
+Then $\im \psi \subseteq \ker \phi$ by construction, since
 $$
-\phi(y^k \tensor \vector u) = \phi(y^k(1\tensor \vector u)) = y^k \phi(1\tensor \vector u) = y^k \qty{1 \tensor u} = 0
+\phi(y^k \tensor \vector u) = \phi(y^k(1\tensor \vector u)) = y^k \phi(1\tensor \vector u) = y^k \qty{1 \tensor u} = 0.
 $$
-we first note that $\im \psi = \CC\cdot \vector u \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
-To see that $\ker \phi \subset \CC\cdot \vector u$, 
-But then we can identify $\CC\cdot \vector u = \theset{y^k\qty{1\tensor \vector u}}$ since $\phi$ is specified on $1\tensor \vector u$, we see that any other basis element maps as 
 
+To see that $\ker \phi \subseteq \im \psi$, we can use the same calculation to explicitly check the map on the remaining basis elements:
 $$
 \phi(y^k \tensor \vector v) = \phi(y^k(1\tensor \vector v)) = y^k \phi(1\tensor \vector v) = y^k \qty{1 \tensor 1} = y^k \tensor 1 \neq 0
-,$$
+.$$
 
+Thus $\ker \phi = \im \psi$, yielding exactness in the middle.
 
+**Claim 3**:
 
 # Humphreys 3.2
 
