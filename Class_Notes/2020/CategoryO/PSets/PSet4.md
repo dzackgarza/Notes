@@ -30,8 +30,9 @@ We first unpack all definitions in terms of tensor products, using the fact that
 \end{center}
 
 where $N = \spanof_\CC \theset{\vector u, \vector v}$.
-We note that by using a PBW basis for $\liesl(2, \CC)$, the infinitely many element of $M$ are spanned by elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$.
-We also note that this identifies $M(\lambda) = \spanof_\CC(\vector u)$ as a submodule of $N$, which extends to a submodule of the tensor product defining $M$
+We note that by using a PBW basis for $\liesl(2, \CC)$, the infinitely many elements of $M$ are spanned by elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$.
+We also note that identifying the image $\psi(M(\lambda)) = \spanof_\CC(\vector u)$ we obtain a submodule of $N$, which lifts to a submodule of the tensor product defining $M$.
+Similarly, 
 
 # Humphreys 3.2
 
