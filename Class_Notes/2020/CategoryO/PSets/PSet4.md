@@ -23,7 +23,7 @@ We first unpack all definitions in terms of tensor products, using the fact that
 \begin{center}
 \begin{tikzcd}
 0 \ar[r] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0 \\
-0 \ar[r] \ar[u, equal] & M(\lambda) \ar[r] & M \ar[r] & M(\lambda) \ar[r] & 0
+0 \ar[r] \ar[u, equal] & U(\lieg) \tensor_{U(\lieb)} \CC_\lambda \ar[u, equal] \ar[r] & U(\lieg) \tensor_{U(\lieb)} N \ar[u, equal] \ar[r] & U(\lieg) \tensor_{U(\lieb)} \CC_\lambda \ar[u, equal]  \ar[r] & 0 \ar[u, equal]
 \end{tikzcd}
 \end{center}
 
