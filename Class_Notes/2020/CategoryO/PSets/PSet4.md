@@ -70,8 +70,8 @@ and note that in the triangular decomposition $\lieg = \lien^- \oplus \lieh \opl
 Since the action is defined over $\lieb = \lieh \oplus \lien$ and $x$ acts by zero, we obtain a $\lieg\dash$action on $N$ which thus extends uniquely to a $U(\lieg)\dash$ action.
 
 **Claim 2**:
-We first note that since the submodule $\CC \cdot \vector u < M$ is closed under the action of $h$ (since $h$ acts by $u\mapsto \lambda u$) and is equal to the image of $\psi$, we can identify $\CC\cdot \vector u \cong \CC_\lambda$ as $U(\lieb)\dash$modules and identify $M(\lambda)$ as a submodule of $M$.
-Thus the first map is an injection.
+We first note that since the submodule $\CC \cdot \vector u < M$ is closed under the action of $h$ (since $h$ acts by $u\mapsto \lambda u$) and is equal to the image of $\psi$, we can identify $\CC\cdot \vector u \cong \CC_\lambda$ as $U(\lieb)\dash$modules and identify $M(\lambda)$ as a submodule of $N$.
+Since submodules of $N$ lift to submodules of $\Ind_{\lieb}^\lieg N$, the first map is an injection.
 
 To see that this sequence is exact, we first note that $\im \psi \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
 To see that $\ker \phi \subset \im \psi$, we note that by choosing a PBW basis of $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, we can obtain a basis of $M$ of the form $\theset{y^j \tensor \vector u, y^k \tensor \vector v \suchthat j, k\in \ZZ^{\geq 0}}$.
