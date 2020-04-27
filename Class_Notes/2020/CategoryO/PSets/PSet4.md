@@ -33,7 +33,7 @@ where $N = \spanof_\CC \theset{\vector u, \vector v}$.
 
 We make the following claims:
 
-1. The action defined on $N$ lifts to a $U(\lieg)\dash$action on $M$.
+1. The $U(\lieb)$ action defined on $N$ lifts to a $U(\lieg)\dash$action on $M$.
 2. This is an exact sequence of $U(\lieg)\dash$modules.
 3. $M \not\cong M(\lambda) \oplus M(\lambda)$, showing that this sequence can not split.
 
