@@ -89,6 +89,14 @@ $$
 Thus $\ker \phi = \im \psi$, yielding exactness in the middle.
 
 **Claim 3**:
+This follows from the checking the $\lambda\dash$weightspaces of both $M$ and $M(\lambda) \oplus M(\lambda)$.
+Noting that the matrix $\begin{bmatrix}
+\lambda & 1 \
+0 & \lambda
+\end{bmatrix}$ is in Jordan Normal Form, we can read off that the $\lambda$ is an eigenvalue with multiplicity 2, and that the corresponding $\lambda$ eigenspace is 1 dimensional since this is a single Jordan block.
+However, the $\lambda$ weight space of $M(\lambda) \oplus M(\lambda)$ is of dimension least 2.
+
+$\qed$
 
 # Humphreys 3.2
 
@@ -140,6 +148,8 @@ for the transpose map $\tau$.
 This action can be "linearly extended" over direct products and tensor products by taking the action component-wise, and is thus preserved by all of the isomorphisms appearing above.
 
 Since the final terms $\bigoplus_{\lambda \in \lieh} \bigoplus _{\alpha + \beta = \lambda} M_\alpha\dual \tensor L_\beta\dual$ are identical, they carry the same action, and since they are preserved by the isomorphisms, working backwards shows that the actions on $(M\tensor L)\dual$ and $M\dual \tensor L\dual$ must also agree, yielding the desired isomorphism.
+
+$\qed$
 
 # Humphreys 3.4
 
@@ -218,6 +228,7 @@ But now we can note
 ,\end{align*}
 which is what we wanted to show.
 
+$\qed$
 
 # Humphreys 3.7
 
