@@ -71,9 +71,10 @@ Since the action is defined over $\lieb = \lieh \oplus \lien$ and $x$ acts by ze
 
 **Claim 2**:
 We first note that since the submodule $\CC \cdot \vector u < M$ is closed under the action of $h$ (since $h$ acts by $u\mapsto \lambda u$) and is equal to the image of $\psi$, we can identify $\CC\cdot \vector u \cong \CC_\lambda$ as $U(\lieb)\dash$modules and identify $M(\lambda)$ as a submodule of $N$.
-Since submodules of $N$ lift to submodules of $\Ind_{\lieb}^\lieg N$, the first map is an injection.
+Since submodules of $N$ lift to submodules of $\Ind_{\lieb}^\lieg N$, the map $\psi$ is an injection.
+Moreover, the map $\phi$ is a surjection, since the generator $1\tensor 1$ of $M(\lambda)$ is precisely the image of one of the generators of $M$.
 
-To see that this sequence is exact, we first note that $\im \psi \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
+To see that the sequence is exact in the middle, we first note that $\im \psi \subset \ker \phi$ by construction, since we explicitly map the aforementioned submodule $\CC\cdot \vector u$ to 0.
 To see that $\ker \phi \subset \im \psi$, we note that by choosing a PBW basis of $\liesl(2, \CC)$ and a basis $\theset{\vector u, \vector v}$ for $N$, we can obtain a basis of $M$ of the form $\theset{y^j \tensor \vector u, y^k \tensor \vector v \suchthat j, k\in \ZZ^{\geq 0}}$.
 But since we know
 
