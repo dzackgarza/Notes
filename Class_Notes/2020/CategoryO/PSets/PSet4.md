@@ -30,6 +30,14 @@ We first unpack all definitions in terms of tensor products, using the fact that
 \end{center}
 
 where $N = \spanof_\CC \theset{\vector u, \vector v}$.
+
+We make the following claims:
+
+1. The action defined on $N$ lifts to a $U(\lieg)\dash$action on $M$.
+2. This is an exact sequence of $U(\lieg)\dash$modules.
+3. $M \not\cong M(\lambda) \oplus M(\lambda)$, showing that this sequence can not split.
+
+
 We note that by using a PBW basis for $\liesl(2, \CC)$, $M$ is spanned by infinitely many basis elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$.
 We also note that identifying the image $\psi(M(\lambda)) = \CC\cdot \vector u \cong \CC_\lambda$ (as $U(\lieb)\dash$modules) we obtain a submodule of $N$, which lifts to a submodule of the induced module $M$.
 Similarly, 
