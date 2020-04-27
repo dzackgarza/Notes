@@ -38,6 +38,34 @@ We make the following claims:
 3. $M \not\cong M(\lambda) \oplus M(\lambda)$, showing that this sequence can not split.
 
 
+**Claim 1**:
+We choose the basis
+\begin{align*}
+x =
+\begin{bmatrix}
+0 & 1 \\
+0 & 0
+\end{bmatrix}
+,\quad
+h =
+\begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix}
+,\quad
+y =
+\begin{bmatrix}
+0 & 0 \\
+1 & 0
+\end{bmatrix}
+\end{align*}
+
+and note that in the triangular decomposition $\lieg = \lien^- \oplus \lieh \oplus \lien$, we have 
+\begin{align*}
+\lien^- &= \CC \cdot x \\
+\lieg &= \CC \cdot h \\
+\lien^+ &= \CC \cdot y \\
+.\end{align*}
 We note that by using a PBW basis for $\liesl(2, \CC)$, $M$ is spanned by infinitely many basis elements of the form $\theset{y^k \tensor \vector u, y^j \tensor \vector v \suchthat j, k \in \ZZ^{\geq 0}}$.
 We also note that identifying the image $\psi(M(\lambda)) = \CC\cdot \vector u \cong \CC_\lambda$ (as $U(\lieb)\dash$modules) we obtain a submodule of $N$, which lifts to a submodule of the induced module $M$.
 Similarly, 
