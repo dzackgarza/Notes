@@ -387,7 +387,20 @@ We can thus suspend things we already know:
 
 - Construct a map $S^3 \to K(\ZZ_, 2)$ by "killing off homotopy" (identify $K$)
 - Convert to a fibration and take the homotopy fiber to get $F \to S^2 \to \CP^\infty$ 
-- By LES, $\pi_3 F \cong \pi_3 S^2$, by Hurewicz $\pi_3 F \cong H_3 F$, which we can compute
+- By LES, $\pi_{\geq 3} F \cong \pi_{\geq 3} S^2$, by Hurewicz $\pi_3 F \cong H_3 F$, which we can compute
 - Kill homotopy again and *iterated* homotopy fiber to get $G\to F \to K(\ZZ, 3)$
-- By LES, $\pi_4 G \cong \pi_4 S^2$
-- By general theory, $G \cong \Omega K(\ZZ_3, 2)
+- By LES, $\pi{\geq 4} G \cong \pi_{\geq 4} S^2$,  by Hurewicz $\pi_4 G \cong H_4 G$.
+
+## k=4, n=3
+- Look at Serre spectral sequence
+
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+H_5 G \& \& \& \& \& \& \\
+H_4 G \& \& \& \& \& \& \\
+0 \& \& \& \& \& \& \\
+0 \& \& \& \& \& \& \\
+0 \& \& \& \& \& \& \\
+\ZZ \& 0 \& 0 \& \ZZ \& ? \& ?\ar[llllluuuu] \& \\
+\end{tikzcd}
+\end{center}
