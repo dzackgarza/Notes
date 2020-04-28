@@ -359,11 +359,8 @@ Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^
 
 
 \begin{center}
-\includegraphics[width = 0.5\textwidth]{} 
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-14-00-28.png} 
 \end{center}
-![
-
-](figures/image_2020-04-28-14-00-28.png)
 
 ## n=k: Stabilization
 
