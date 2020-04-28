@@ -149,7 +149,7 @@ A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}
 \begin{tikzcd}[ampersand replacement=\&]
 \pi_2 (SO(n, \RR)) \ar[r] \&
 \pi_2 (SO(n, \RR)) \ar[r] \&
-\pi_2 (S^n) \ar[dll] \\
+\pi_2 (S^n) \ar[dll, bend left] \\
 \pi_1 (SO(n, \RR)) \ar[r] \&
 \pi_1 (SO(n, \RR)) \ar[r] \&
 \pi_1(S^n) \\
