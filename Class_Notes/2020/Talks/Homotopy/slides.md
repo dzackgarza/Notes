@@ -271,8 +271,15 @@ This follows easily from CW approximation:
 
 
 ## k < n: CW Complexes
-
+AT1 can show that spheres have a simple cell decomposition $$S^k = e_0 \disjoint_f e_k$$
 Thus any map $f: S^k \to S^n$ must send the $k\dash$skeleton of $S^k$ to the $k\dash$skeleton of $S^n$, which is just a point:
 \begin{center}
-\includegraphics[width = 0.7\textwidth]{figures/image_2020-04-28-13-02-48.png} 
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-13-02-48.png} 
 \end{center}
+
+
+
+## k < n: CW Complexes
+Remarks on why CW complexes are great:
+
+- 
