@@ -264,9 +264,12 @@ This follows easily from CW approximation:
 
 ## k < n: CW Complexes
 
+- Analogy from analysis: $C^1$ functions dense in $L^2$.  
+  - If you're just computing homotopy groups, *any* space can be replaced with a *weakly equivalent* CW complex.
+
 \begin{center}
-\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-12-57-20.png} 
-\includegraphics[width = 0.7\textwidth]{figures/image_2020-04-28-12-56-18.png} 
+\includegraphics[width = 0.45\textwidth]{figures/image_2020-04-28-12-57-20.png} 
+\includegraphics[width = 0.45\textwidth]{figures/image_2020-04-28-12-56-18.png} 
 \end{center}
 
 
@@ -279,7 +282,6 @@ Thus any map $f: S^k \to S^n$ must send the $k\dash$skeleton of $S^k$ to the $k\
 
 
 
-## k < n: CW Complexes
-Remarks on why CW complexes are great:
+## $k \geq 1, n = 1$: Covering Space Theory
 
-- 
+Claim: $\pi_1 S^1 = \ZZ$.
