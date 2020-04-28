@@ -35,6 +35,7 @@ fontsize: 10pt
 
 - Regard paths $\gamma$ in $X$ as morphisms $$\gamma \in \hom_{\text{Top}}(I, X)$$
 - Regard homotopies of paths $H$ as morphisms $$H\in \hom_{\text{Top}}(I\cross I, X)$$
+- Yields an equivalence relation, write $[\gamma]$ to denote a homotopy class of paths.
 
 ## Intuition
 
@@ -43,6 +44,8 @@ fontsize: 10pt
 \begin{center}
 \includegraphics[width = 0.8\textwidth]{figures/image_2020-04-28-11-18-34.png} 
 \end{center}
+
+- By the residue theorem, for a meromorphic function $f$ with simply poles $P = \theset{p_i}$ we know that $\oint_\gamma f(z) ~dz$ is entirely determined by $[\gamma] \in \pi_1(\CC\setminus P)$.
  
 ## Definitions
 
