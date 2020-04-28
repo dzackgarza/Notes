@@ -309,17 +309,18 @@ Theorem: If $F \to E \to B$ is a *Serre Fibration* then there is a LES in homoto
 \end{tikzcd}
 \end{center}
 
-- Nontrivial theorem: If $\tilde X \to X$ is a universal cover then $\pi_{\geq 2}(X) \cong \pi_{\geq 2} \tilde X$.
+- If $\tilde X \to X$ is a universal cover then $\pi_{\geq 2}(X) \cong \pi_{\geq 2} \tilde X$.
+  - Proof coming up!
 
-## Misc 
+## Misc: Serre Fibrations
 
 Claim: $\pi_2 S^2 = \pi_3 S^2 = \pi_3 S^3 = \ZZ$.
 
 \begin{center}
-\includegraphics[width = 0.8\textwidth]{figures/image_2020-04-28-13-39-22.png} 
+\includegraphics[width = 0.7\textwidth]{figures/image_2020-04-28-13-39-22.png} 
 \end{center}
 
-## Misc 
+## Misc: Serre Fibrations
 
 Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^1 = 0$:
 
@@ -328,6 +329,8 @@ Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^
 \includegraphics[width = 0.4\textwidth]{figures/image_2020-04-28-13-36-21.png} 
 \end{center}
 
+
+- [Hopf Fibration Visualizer](http://philogb.github.io/page/hopf/#)
 
 <!--\begin{center}-->
 <!--\begin{tikzcd}[ampersand replacement=\&]-->
