@@ -67,6 +67,8 @@ $\pi_1(X)$ is the group of homotopy classes of loops:
 \includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-11-29-48.png} 
 \end{center}
 
+- Can recover this definition by finding a (co)representing object: $$\pi_1(X) = [S^1, X]$$
+
 
 ## Classification
 
