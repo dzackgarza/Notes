@@ -99,16 +99,20 @@ Let $B$ be a CW complex; then isomorphism classes of $\RR^1\dash$bundles over $B
 - Use the fact that for any fixed group $G$, the functor
     \begin{align*}
     h_G(\wait): \text{hoTop}\op &\to \Sets \\
-    X &\mapsto \text{$G\dash$bundles over $X$}
+    X &\mapsto \theset{\text{$G\dash$bundles over $X$}}
     \end{align*}
 
     is representable by a space called $BG$ (Brown's representability theorem).
 
-- Letting $I(G, X) =\theset{G\dash\text{bundles} / B}/\sim$, there is an isomorphism $I(G ,X) \cong [X, BG]$.
-In general, identify $G = \aut(F)$ the automorphism group of the fibers -- for vector bundles of rank $n$, take $G = GL(n, \RR)$.
+- I.e., let $I(G, X) =\theset{G\dash\text{bundles} / B}/\sim$, there is an isomorphism 
+$$I(G ,X) \cong [X, BG]$$
+
+- In general, identify $G = \aut(F)$ the automorphism group of the fibers -- for vector bundles of rank $n$, take $G = GL(n, \RR)$.
 
 > Note that for a poset of spaces $(M_i, \injects)$, the space $M^\infty \definedas \directlim M_i$.
-> This are infinite dimensional "Hilbert manifolds".
+> These are infinite dimensional "Hilbert manifolds".
+
+## Example: Homotopy Equivalence is Useful
 
 Proof:
 \begin{align}
