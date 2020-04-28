@@ -89,7 +89,10 @@ H &\in \hom_{\text{Top}}(I\cross I, X)
 
 > Also have the derived category $\text{DTop}$, its interplay with $\text{hoTop}$ is the subject of e.g. the Poincare conjecture(s).
 
+
+
 - Any representative from a green box: a *homotopy type*.
+
 
 ## Example: Homotopy Equivalence is Useful
 
@@ -208,5 +211,27 @@ The corresponding picture in homology is very easy:
 \small
 > Slogan: "conservation/duality of complexity" 
 \normalsize
+
+## History
+
+- 1895: Poincare, *Analysis situs* ("the analysis of position") in analogy to Euler *Geometria situs* in 1865 on the Kongisberg bridge problem
+  - Studies spaces arising from gluing polygons, polyhedra, etc (surfaces!), first use of "algebraic invariant theory" for spaces by introducing $\pi_1$ and homology.
+
+- 1920s: Rigorous proof of classification of surfaces (Klein, Möbius, Clifford, Dehn, Heegard), captured entirely by $\pi_1$ (equivalently, by genus and orientability).
+
+- *1931: Hopf discovers a nontrivial (not homotopic to identity) map $S^3 \to S^2$*
+
+- 1932/1935: Cech (resp Hurewicz) introduce higher homotopy groups, gives a map relating homotopy to homology, shows they are abelian groups for $n\geq 2$.
+  - Withdrew his paper because of this theorem!
+
+- 1951: Serre uses spectral sequences to show that *all* groups $\pi_k S^n$ are torsion except $k=n$, and $k\equiv 3\mod 4, n\equiv 0 \mod 2$.
+  - In first case, $\ZZ$, in second case, $\ZZ \oplus T$ for some torsion group.
+  - Tight bounds on where $p\dash$torsion can occur.
+- 1953: Whitehead shows the homotopy groups of spheres split into stable and unstable ranges. 
+- Today: We know $\pi_{n+k}S^n$ for 
+  - $k \leq 64$ when $n\geq k+2$ (stable range)
+  - $k \leq 19$ when $n < k+2$ (unstable range) 
+  - We *only* have a complete list for $S^0$ and $S^1$, and know *no* patterns beyond this!
+
 
 ## Sphere 1
