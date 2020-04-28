@@ -253,3 +253,17 @@ We'll fill out as much of this table as is easily known:
 
 **Claim:** 
 $[S^k, S^n] = 0$ for $k < n$.
+
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-12-45-11.png} 
+\end{center}
+
+This follows easily from CW approximation:
+
+> > Any map $X \mapsvia{f} Y$ between CW complexes is homotopic to a cellular map.
+
+## k < n
+
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-27-19-59-02.png} 
+\end{center}
