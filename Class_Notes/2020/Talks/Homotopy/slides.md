@@ -354,13 +354,18 @@ Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^
 
 ## n = k: Stabilization
 
-- Theorem (1937, Freudenthal): For $k\gg 0$, $[\Sigma^k X, \Sigma^k Y] \cong [\Sigma^{k+1} X, \Sigma^{k+1} Y]$.
-- Use the fact that $\Sigma S^k \cong S^{k+1}$, then in some *stable range* $\pi_{n+k}S^n \cong \pi_{n+k+1}S^{n+1}$
-
+\small
+- Theorem (1937, Freudenthal): For $k\gg 0$, $$[\Sigma^k X, \Sigma^k Y] \cong [\Sigma^{k+1} X, \Sigma^{k+1} Y]$$
+- Use the fact that $\Sigma S^k \cong S^{k+1}$, then in some *stable range* $$\pi_{n+k}S^n \cong \pi_{n+k+1}S^{n+1}$$
+\normalsize
 
 \begin{center}
-\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-14-00-28.png} 
+\includegraphics[width = 0.4\textwidth]{figures/image_2020-04-28-14-00-28.png} 
 \end{center}
+
+\small
+> Fun note: corresponds to "smash with a sphere"
+\normalsize
 
 ## n=k: Stabilization
 
@@ -372,7 +377,7 @@ Stable range:
 
 ## n = k: Stabilization
 
-We can thus suspend something we already know:
+We can thus suspend things we already know:
 
 \begin{center}
 \includegraphics[width = 0.7\textwidth]{figures/image_2020-04-28-13-55-32.png} 
