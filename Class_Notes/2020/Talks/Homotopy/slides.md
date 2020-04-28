@@ -367,5 +367,5 @@ Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^
 We can thus suspend something we already know:
 
 \begin{center}
-\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-13-55-32.png} 
+\includegraphics[width = 0.7\textwidth]{figures/image_2020-04-28-13-55-32.png} 
 \end{center}
