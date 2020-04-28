@@ -224,12 +224,12 @@ The corresponding picture in homology is very easy:
 
 ## History 
 \small
-- 1932/1935: Cech (resp Hurewicz) introduce higher homotopy groups, gives a map relating homotopy to homology, shows they are **abelian** groups for $n\geq 2$.
+- 1932/1935: Cech (indep. Hurewicz) introduce higher homotopy groups, gives map relating $\pi_* \to H_*$, shows $\pi_n X$ are **abelian** groups for $n\geq 2$.
   - Withdrew his paper because of this theorem!
 
 - 1951: Serre uses spectral sequences to show that **all groups $\pi_k S^n$ are torsion except**, 
-  - $k=n$, since $\pi_n S^n = \ZZ$, i
-  -$k\equiv 3\mod 4, n\equiv 0 \mod 2$, then equal to $\ZZ \oplus T$
+  - $k=n$, since $\pi_n S^n = \ZZ$
+  - $k\equiv 3\mod 4, n\equiv 0 \mod 2$, then $\ZZ \oplus T$
   - Tight bounds on where $p\dash$torsion can occur.
 - 1953: Whitehead shows the homotopy groups of spheres split into stable and unstable ranges. 
 \normalsize
@@ -241,4 +241,14 @@ Today: We know $\pi_{n+k}S^n$ for
 - We *only* have a complete list for $S^0$ and $S^1$, and know *no* patterns beyond this!
   - Open for $\sim 80$ years.
 
-## Sphere 1
+## Spheres
+
+We'll fill out as much of this table as is easily known:
+
+\begin{center}
+\includegraphics[width = 0.6\textwidth]{figures/image_2020-04-28-11-58-58.png} 
+\end{center}
+
+## k < n
+
+
