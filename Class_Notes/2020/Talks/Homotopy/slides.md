@@ -333,12 +333,12 @@ Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^
 <!--\end{center}-->
 
 
-<!--\begin{center}-->
-<!--\begin{tikzcd}[ampersand replacement=\&]-->
-<!--\cdots \& \ZZ \ar[r] \& \pi_{3}(S^2) \ar[dll] \\-->
-<!--\pi_2(S^1)\ar[r] \& 0 \ar[r] \& \pi_2(S^2) \ar[dll] \\-->
-<!--\ZZ \ar[r]\& 0 \ar[r]\& 0-->
-<!--\end{tikzcd}-->
-<!--\end{center}-->
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+\cdots \& \ZZ \ar[r] \& \pi_{3}(S^2) \ar[dll] \\
+0 \ar[r] \& 0 \ar[r] \& \pi_2(S^2) \ar[dll] \\
+\ZZ \ar[r]\& 0 \ar[r]\& 0
+\end{tikzcd}
+\end{center}
 
 
