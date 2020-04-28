@@ -26,6 +26,8 @@ fontsize: 10pt
 - "Measuring stick" for current tools, similar to special values of L-functions
 - Serre's computation
 
+## Definitions
+
 ## Classification
 
 - Holy grail: understand the topological category completely 
@@ -36,6 +38,46 @@ fontsize: 10pt
 \end{center}
 
 > Also have the derived category $\text{DTop}$, its interplay with $\text{hoTop}$ is the subject of e.g. the Poincare conjecture(s).
+
+- Any representative from a green box: a *homotopy type*.
+
+## Example: Homotopy Equivalence is Useful
+
+**Proposition**:
+Let $B$ be a CW complex; then isomorphism classes of $\RR^1\dash$bundles over $B$ are given by $H^1(X, \ZZ/2\ZZ)$.
+
+- Use the fact that for any fixed group $G$, the functor
+    \begin{align*}
+    h_G(\wait): \text{hoTop}\op &\to \Sets \\
+    X &\mapsto \text{$G\dash$bundles over $X$}
+    \end{align*}
+
+    is representable by a space called $BG$ (Brown's representability theorem).
+
+- Letting $I(G, X) =\theset{G\dash\text{bundles} / B}/\sim$, there is an isomorphism $I(G ,X) \cong [X, BG]$.
+In general, identify $G = \aut(F)$ the automorphism group of the fibers -- for vector bundles of rank $n$, take $G = GL(n, \RR)$.
+
+> Note that for a poset of spaces $(M_i, \injects)$, the space $M^\infty \definedas \directlim M_i$.
+> This are infinite dimensional "Hilbert manifolds".
+
+Proof:
+\begin{align}
+I(\RR^1, X) 
+&= [X, B(\GL(1, \RR))]\\
+&= [X, \Gr(1, \RR^\infty)] \\
+&= [X, \RP^\infty] \\
+&= [X, K(\ZZ/2\ZZ, 1)] \\
+&= H^1(X; \ZZ/2\ZZ)
+\end{align}
+
+Corollary:
+There are 2 distinct line bundles over $X = S^1$ (the cylinder and the mobius strip), since $H^1(S^1; \ZZ/2\ZZ) \cong \ZZ/2\ZZ$.
+
+Corollary:
+A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}^{2g}$ and thus there are $2^{2g}$ distinct real line bundles over any such surface.
+
+> Note: the work being swept under the rug here is in identifying the homotopy type of the target representing space.
+
 
 
 ## Point 1
