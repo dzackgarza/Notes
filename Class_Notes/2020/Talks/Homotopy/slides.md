@@ -262,8 +262,10 @@ This follows easily from CW approximation:
 
 > > Any map $X \mapsvia{f} Y$ between CW complexes is homotopic to a cellular map.
 
-## k < n
+## k < n: CW Complexes
 
 \begin{center}
-\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-27-19-59-02.png} 
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-12-57-20.png} 
+\includegraphics[width = 0.7\textwidth]{figures/image_2020-04-28-12-56-18.png} 
 \end{center}
+
