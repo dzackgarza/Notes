@@ -33,7 +33,8 @@ fontsize: 10pt
 \includegraphics[width = 0.8\textwidth]{figures/image_2020-04-27-19-41-28.png} 
 \end{center}
 
-- Regard paths $\gamma$ in $X$ as morphisms $I \mapsvia{\gamma} X$.
+- Regard paths $\gamma$ in $X$ as morphisms $$\gamma \in \hom_{\text{Top}}(I, X)$$
+- Regard homotopies of paths $H$ as morphisms $$H\in \hom_{\text{Top}}(I\cross I, X)$$
  
 ## Definitions
 

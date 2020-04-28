@@ -715,3 +715,4 @@ Baer
 quasicompact
 Zariski's
 costandard
+homotopies
