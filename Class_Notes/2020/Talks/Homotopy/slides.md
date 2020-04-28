@@ -352,3 +352,8 @@ Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^
 <!--\end{center}-->
 
 
+# n = k: Stabilization
+
+- Theorem (1937, Freudenthal): For $k\gg 0$, $[\Sigma^k X, \Sigma^k Y] \cong [\Sigma^{k+1} X, \Sigma^{k+1} Y]$.
+- Use the fact that $\Sigma S^k \cong S^{k+1}$, then in some *stable range* $\pi_{n+k}S^n \cong \pi_{n+k+1}S^{n+1}$
+
