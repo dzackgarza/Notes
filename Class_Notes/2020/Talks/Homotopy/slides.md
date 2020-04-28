@@ -109,9 +109,6 @@ $$\bung(X) \cong [X, BG]$$
 
 - In general, identify $G = \aut(F)$ the automorphism group of the fibers -- for vector bundles of rank $n$, take $G = GL(n, \RR)$.
 
-> Note that for a poset of spaces $(M_i, \injects)$, the space $M^\infty \definedas \directlim M_i$.
-> These are infinite dimensional "Hilbert manifolds".
-
 ## Example: Homotopy Equivalence is Useful
 
 Proof:
@@ -123,6 +120,11 @@ I(\RR^1, X)
 &= [X, K(\ZZ/2\ZZ, 1)] \\
 &= H^1(X; \ZZ/2\ZZ)
 \end{align}
+
+> Note that for a poset of spaces $(M_i, \injects)$, the space $M^\infty \definedas \directlim M_i$.
+> These are infinite dimensional "Hilbert manifolds".
+
+## Example: Homotopy Equivalence is Useful
 
 Corollary:
 There are 2 distinct line bundles over $X = S^1$ (the cylinder and the mobius strip), since $H^1(S^1; \ZZ/2\ZZ) \cong \ZZ/2\ZZ$.
