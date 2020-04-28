@@ -62,12 +62,12 @@ H &\in \hom_{\text{Top}}(I\cross I, X)
 
 ## The Fundamental Group
 
-$\pi_1(X)$ is the group of homotopy classes of loops:
+- $\pi_1(X)$ is the group of homotopy classes of loops:
+- Can recover this definition by finding a (co)representing object: $$\pi_1(X) = [S^1, X]$$
 \begin{center}
-\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-11-29-48.png} 
+\includegraphics[width = 0.9\textwidth]{figures/image_2020-04-28-11-35-37.png} 
 \end{center}
 
-- Can recover this definition by finding a (co)representing object: $$\pi_1(X) = [S^1, X]$$
 
 
 ## Classification
