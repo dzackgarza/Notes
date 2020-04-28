@@ -111,6 +111,9 @@ $$\bung(X) \cong [X, BG]$$
 
 ## Example: Homotopy Equivalence is Useful
 
+Note that for a poset of spaces $(M_i, \injects)$, the space $M^\infty \definedas \directlim M_i$.
+These are infinite dimensional "Hilbert manifolds".
+
 Proof:
 \begin{align*}
 \text{Bun}_{\RR^1}(X) 
@@ -121,10 +124,7 @@ Proof:
 &= H^1(X; \ZZ/2\ZZ)
 \end{align*}
 
-> Note that for a poset of spaces $(M_i, \injects)$, the space $M^\infty \definedas \directlim M_i$.
-> These are infinite dimensional "Hilbert manifolds".
-
-The work being swept under the rug here is in identifying the homotopy type of the target representing space.
+Work being swept under the rug: identifying the homotopy type of the representing object.
 
 ## Example: Homotopy Equivalence is Useful
 
