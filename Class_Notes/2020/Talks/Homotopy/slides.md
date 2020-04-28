@@ -392,7 +392,7 @@ We can thus suspend things we already know:
 - By LES, $\pi{\geq 4} G \cong \pi_{\geq 4} S^2$,  by Hurewicz $\pi_4 G \cong H_4 G$.
 
 ## k=4, n=3
-- Look at Serre's spectral sequence
+- Look at Serre's spectral sequence for $G\to F \to K(\ZZ, 3)$.
 
 \begin{center}
 \begin{tikzcd}[ampersand replacement=\&]
@@ -409,5 +409,6 @@ H_4 G \& \& \& \& \& \& \\
 ## k=4, n=3
 
 - Need to know
-  - $H^5 K(\ZZ, 3)$
-  - $H^4 F, H^5 F$
+  - $H^5 K(\ZZ, 3)$ (source of arrow)
+  - $H^4 F, H^5 F$ (total cohomology)
+- Use Serre SS on $F\to S^2 \to K(\ZZ, 2)$ to deduce $H^5 F = H^6 F = \ZZ$
