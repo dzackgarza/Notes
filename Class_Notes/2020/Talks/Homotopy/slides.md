@@ -143,7 +143,7 @@ A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}
 
 - Application: computing $\pi_1(\SO(n, \RR)$ (rigid rotations in $\RR^n$).
 
-- The fibration $\SO(n, \RR) \to \SO(n+1, \RR) \to S^n$ yields a LES in homotopy:
+- The fibration $$\SO(n, \RR) \to \SO(n+1, \RR) \to S^n$$ yields a LES in homotopy:
 
 \begin{center}
 \begin{tikzcd}[ampersand replacement=\&]
@@ -170,7 +170,7 @@ Knowing $\pi_k S^n$, this reduces to
 \end{tikzcd}
 \end{center}
 
-- Thus $\pi_1(\SO(3, \RR)) \cong \pi_1(\SO(4, \RR)) \cong \cdots$ and it suffices to compute $\pi_1(\SO(3, \RR))$.
+- Thus $\pi_1(\SO(3, \RR)) \cong \pi_1(\SO(4, \RR)) \cong \cdots$ and it suffices to compute $\pi_1(\SO(3, \RR))$ (stabilization)
 
 - Use the fact that "accidental" homeomorphism in low dimension $\SO(3, \RR) \cong_{\text{Top}} \RP^3$, and algebraic topology I yields $\pi_1 \RP^3 \cong \ZZ/2\ZZ$.
 
