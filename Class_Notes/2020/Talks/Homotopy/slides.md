@@ -146,22 +146,29 @@ A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}
 - The fibration $\SO(n, \RR) \to \SO(n+1, \RR) \to S^n$ yields a LES in homotopy:
 
 \begin{center}
-\begin{tikzcd}
-A & B
+\begin{tikzcd}[ampersand replacement=\&]
+\pi_2 (SO(n, \RR)) \ar[r] \&
+\pi_2 (SO(n, \RR)) \ar[r] \&
+\pi_2 (S^n) \ar[dll] \\
+\pi_1 (SO(n, \RR)) \ar[r] \&
+\pi_1 (SO(n, \RR)) \ar[r] \&
+\pi_1(S^n) \\
 \end{tikzcd}
 \end{center}
 
+## Next 
+
 which reduces to 
-
-<!--\begin{align*}-->
-<!--\pi_2(SO(n, \RR)) \ar[r]-->
-<!--\pi_2(SO(n+1, \RR)) \ar[r]-->
-<!--0 \ar[ddl] \\-->
-<!--\pi_1(SO(n, \RR)) \ar[r]-->
-<!--\pi_1(SO(n+1, \RR)) \ar[r]-->
+<!--\begin{center}-->
+<!--\begin{tikzcd}-->
+<!--\pi_2(SO(n, \RR)) \ar[r] \&-->
+<!--\pi_2(SO(n+1, \RR)) \ar[r] \&-->
+<!--0 \ar[dll] \\-->
+<!--\pi_1(SO(n, \RR)) \ar[r] \&-->
+<!--\pi_1(SO(n+1, \RR)) \ar[r] \&-->
 <!--0 \\-->
-<!--\end{align*}-->
-
+<!--\end{tikzcd}-->
+<!--\end{center}-->
 
 # Spheres
 
