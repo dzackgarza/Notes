@@ -314,3 +314,23 @@ Theorem: If $F \to E \to B$ is a *Serre Fibration* then there is a LES in homoto
 ## k = n = 2 and k=3, n=2
 
 Claim: $\pi_2 S^2 = \pi_3 S^2 = \ZZ$
+
+Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^1 = 0$:
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+\cdots \& \pi_3(S^3)\ar[r] \& \pi_{3}(S^2) \ar[dll] \\
+\pi_2(S^1)\ar[r] \& \pi_2(S^3)\ar[r] \& \pi_2(S^2) \ar[dll] \\
+\pi_{1}(S^1) \ar[r]\& \pi_1(S^3) \ar[r]\& \pi_1(S^2)
+\end{tikzcd}
+\end{center}
+
+Thus
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+\cdots \& \pi_3(S^3)\ar[r] \& \pi_{3}(S^2) \ar[dll] \\
+\pi_2(S^1)\ar[r] \& 0 ar[r] \& \pi_2(S^2) \ar[dll] \\
+\ZZ \ar[r]\& 0 \ar[r]\& 0
+\end{tikzcd}
+\end{center}
+
+
