@@ -42,15 +42,15 @@ fontsize: 10pt
 - Why care about path homotopies? Historically: contour integrals in $\CC$
 
 \begin{center}
-\includegraphics[width = 0.8\textwidth]{figures/image_2020-04-28-11-18-34.png} 
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-11-18-34.png} 
 \end{center}
 
-- By the residue theorem, for a meromorphic function $f$ with simply poles $P = \theset{p_i}$ we know that $\oint_\gamma f(z) ~dz$ is entirely determined by $[\gamma] \in \pi_1(\CC\setminus P)$.
+- By the residue theorem, for a meromorphic function $f$ with simple poles $P = \theset{p_i}$ we know that $$\oint_\gamma f(z) ~dz \text{ is determined by } [\gamma] \in \pi_1(\CC\setminus P)$$
  
 ## Definitions
 
-- Definition of homotopy of *maps*: $$f, g\in \hom_{\text{Top}}(X, Y)\quad  f\sim g \iff \exists F \in \hom_{\text{Top}}(X\cross I, Y)$$ such that $F(0) = f, F(1) = g$.
-- This yields an equivalence relation on morphisms, write *homotopy classes of maps* $$[X, Y] \definedas \hom_{\text{Top}}(X, Y)/\sim$$
+- Generalize to a homotopy of *morphisms*: $$f, g\in \hom_{\text{Top}}(X, Y)\quad  f\sim g \iff \exists F \in \hom_{\text{Top}}(X\cross I, Y)$$ such that $F(0) = f, F(1) = g$.
+- This yields an equivalence relation on morphisms, *homotopy classes of maps* $$[X, Y] \definedas \hom_{\text{Top}}(X, Y)/\sim$$
 - Definition of homotopy equivalence: $$X\sim Y \iff \exists \begin{cases}f\in \hom(X, Y) \\g\in \hom(Y, X) \end{cases} \text{such that} \begin{cases}f\circ g \sim \id_Y \\ g\circ f \sim \id _X\end{cases}$$
 - Similarly write $$[X] = \theset{Y\in \text{Top} \suchthat Y\sim X}.$$
 
