@@ -716,3 +716,4 @@ quasicompact
 Zariski's
 costandard
 homotopies
+bigraded

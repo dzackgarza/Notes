@@ -180,15 +180,14 @@ Knowing $\pi_k S^n$, this reduces to
 
 \tiny
 - Important consequence: $\SO(3, \RR)$ is not simply connected! 
-  - See "plate trick": there is a loop of rotations that is not contractible, but squares to the identity.
+- See "plate trick": non-contractible loop of rotations that squares to the identity.
 - Robotics: paths in configuration spaces with singularities 
 - Computer graphics: smoothly interpolating between quaternions for rotated camera views
 \normalsize 
 \begin{center}
 \includegraphics[width = 0.45\textwidth]{figures/image_2020-04-27-21-28-03.png} 
-\includegraphics[width = 0.45\textwidth]{figures/image_2020-04-27-21-29-30.png} 
+\includegraphics[width = 0.47\textwidth]{figures/image_2020-04-27-21-29-30.png} 
 \end{center}
-
 
 # Spheres
 
