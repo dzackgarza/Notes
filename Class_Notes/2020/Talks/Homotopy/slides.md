@@ -147,9 +147,9 @@ A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}
 
 \begin{center}
 \begin{tikzcd}[ampersand replacement=\&]
+\cdots \to \pi_2 (SO(n, \RR)) \ar[r] \&
 \pi_2 (SO(n, \RR)) \ar[r] \&
-\pi_2 (SO(n, \RR)) \ar[r] \&
-\pi_2 (S^n) \ar[dll, bend left] \\
+\pi_2 (S^n) \ar[dll] \\
 \pi_1 (SO(n, \RR)) \ar[r] \&
 \pi_1 (SO(n, \RR)) \ar[r] \&
 \pi_1(S^n) \\
@@ -159,16 +159,17 @@ A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}
 ## Next 
 
 which reduces to 
-<!--\begin{center}-->
-<!--\begin{tikzcd}-->
-<!--\pi_2(SO(n, \RR)) \ar[r] \&-->
-<!--\pi_2(SO(n+1, \RR)) \ar[r] \&-->
-<!--0 \ar[dll] \\-->
-<!--\pi_1(SO(n, \RR)) \ar[r] \&-->
-<!--\pi_1(SO(n+1, \RR)) \ar[r] \&-->
-<!--0 \\-->
-<!--\end{tikzcd}-->
-<!--\end{center}-->
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+\cdots 0 \to \pi_2 (SO(n, \RR)) \ar[r] \&
+\pi_2 (SO(n, \RR)) \ar[r] \&
+0 \ar[dll] \\
+\pi_1 (SO(n, \RR)) \ar[r] \&
+\pi_1 (SO(n, \RR)) \ar[r] \&
+0 \\
+\end{tikzcd}
+\end{center}
+
 
 # Spheres
 
