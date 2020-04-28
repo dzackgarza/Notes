@@ -429,3 +429,10 @@ Relevant quantity will be $C$ term in SSS:
 - Work out$\ker(\alpha^2 \to \alpha\tensor \beta) = 2\generators{\alpha \tensor \beta}$
 - Conclude $A = B = 0$ and $C \cong \ZZ/2\ZZ$.
 \normalsize
+
+
+## What is Known
+
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{figures/image_2020-04-28-15-29-41.png} 
+\end{center}
