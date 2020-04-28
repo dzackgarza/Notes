@@ -62,6 +62,10 @@ H &\in \hom_{\text{Top}}(I\cross I, X)
 
 ## The Fundamental Group
 
+$\pi_1(X)$ is the group of homotopy classes of loops:
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-11-29-48.png} 
+\end{center}
 
 
 ## Classification
