@@ -156,9 +156,9 @@ A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}
 \end{tikzcd}
 \end{center}
 
-## Next 
+## Uses of Higher Homotopy 
 
-which reduces to 
+Knowing $\pi_k S^n$, this reduces to 
 \begin{center}
 \begin{tikzcd}[ampersand replacement=\&]
 \cdots 0 \to \pi_2 (SO(n, \RR)) \ar[r] \&
@@ -168,6 +168,23 @@ which reduces to
 \pi_1 (SO(n, \RR)) \ar[r] \&
 0 \\
 \end{tikzcd}
+\end{center}
+
+- Thus $\pi_1(\SO(3, \RR)) \cong \pi_1(\SO(4, \RR)) \cong \cdots$ and it suffices to compute $\pi_1(\SO(3, \RR))$.
+
+- Use the fact that "accidental" homeomorphism in low dimension $\SO(3, \RR) \cong_{\text{Top}} \RP^3$, and algebraic topology I yields $\pi_1 \RP^3 \cong \ZZ/2\ZZ$.
+
+> Can also use the fact that $\SU(2, \RR) \to \SO(3, \RR)$ is a double cover from the universal cover.
+
+## Uses of Higher Homotopy
+
+\small
+- Important consequence: $\SO(3, \RR)$ is not simply connected! See "plate trick", there is a loop of rotations that is not contractible, but squares to the identity.
+- Causes problems in robotics (leads to paths in configuration spaces that encounter singularities) and compute graphics (smoothly interpolating between e.g. quaternions for rotated camera views).
+\normalsize 
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-27-21-28-03.png} 
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-27-21-29-30.png} 
 \end{center}
 
 
