@@ -284,4 +284,17 @@ Thus any map $f: S^k \to S^n$ must send the $k\dash$skeleton of $S^k$ to the $k\
 
 ## $k \geq 1, n = 1$: Covering Space Theory
 
-Claim: $\pi_1 S^1 = \ZZ$.
+**Claim:** $\pi_1 S^1 = \ZZ$ and $\pi_{\geq 2} S^1 = 0$.
+
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{figures/image_2020-04-28-13-12-52.png} 
+\end{center}
+
+
+## $k \geq 1, n = 1$: Covering Space Theory
+
+- Use the fact that $\ZZ \to \RR \to S^1$ is a covering space and $\ZZ\actson \RR$ freely.
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-13-14-41.png} 
+\end{center}
+
