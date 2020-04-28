@@ -298,5 +298,19 @@ Thus any map $f: S^k \to S^n$ must send the $k\dash$skeleton of $S^k$ to the $k\
 \includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-13-14-41.png} 
 \end{center}
 
+## $k \geq 1, n = 1$: Covering Space Theory
+
+Theorem: If $F \to E \to B$ is a *Serre Fibration* then there is a LES in homotopy
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+\cdots \& \cdots\ar[r] \& \pi_{k+1}(B) \ar[dll] \\
+\pi_k(F)\ar[r] \& \pi_k(E)\ar[r] \& \pi_k(B) \ar[dll] \\
+\pi_{k-1}(F) \ar[r]\& \cdots \& \cdots 
+\end{tikzcd}
+\end{center}
+
 - Nontrivial theorem: If $\tilde X \to X$ is a universal cover then $\pi_{\geq 2}(X) \cong \pi_{\geq 2} \tilde X$.
 
+## k = n = 2 and k=3, n=2
+
+Claim: $\pi_2 S^2 = \pi_3 S^2 = \ZZ$
