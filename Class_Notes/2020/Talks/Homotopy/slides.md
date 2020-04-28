@@ -14,6 +14,8 @@ fontsize: 10pt
 
 # Summary
 
+## Outline
+
 - Homotopy as a means of classification somewhere between homeomorphism and cobordism
 - Comparison to homology
 - Higher homotopy groups of spheres exist
@@ -24,13 +26,13 @@ fontsize: 10pt
 - "Measuring stick" for current tools, similar to special values of L-functions
 - Serre's computation
 
-# Classification
+## Classification
 
 - Holy grail: understand the topological category completely 
   - I.e. have a well-understood geometric model one space of each homeomorphism type
 
 \begin{center}
-\includegraphics[width = 0.8\textwidth]{figures/image_2020-04-28-10-52-05.png} 
+\includegraphics[width = \textwidth]{figures/image_2020-04-28-10-52-05.png} 
 \end{center}
 
 
