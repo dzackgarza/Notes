@@ -28,6 +28,8 @@ fontsize: 10pt
 
 ## Definitions
 
+- For $f, g\in \hom_{\top}(X, Y)$
+
 ## Classification
 
 - Holy grail: understand the topological category completely 
