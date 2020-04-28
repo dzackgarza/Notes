@@ -384,3 +384,10 @@ We can thus suspend things we already know:
 \end{center}
 
 ## k = 4, n = 3
+
+- Construct a map $S^3 \to K(\ZZ_, 2)$ by "killing off homotopy" (identify $K$)
+- Convert to a fibration and take the homotopy fiber to get $F \to S^2 \to \CP^\infty$ 
+- By LES, $\pi_3 F \cong \pi_3 S^2$, by Hurewicz $\pi_3 F \cong H_3 F$, which we can compute
+- Kill homotopy again and *iterated* homotopy fiber to get $G\to F \to K(\ZZ, 3)$
+- By LES, $\pi_4 G \cong \pi_4 S^2$
+- By general theory, $G \cong \Omega K(\ZZ_3, 2)
