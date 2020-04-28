@@ -320,25 +320,27 @@ Claim: $\pi_2 S^2 = \pi_3 S^2 = \ZZ$
 Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^1 = 0$:
 
 \begin{center}
-\includegraphics[width = 0.4\textwidth]{figures/image_2020-04-28-13-29-46.png} 
-\includegraphics[width = 0.4\textwidth]{figures/image_2020-04-28-13-31-09.png} 
+\includegraphics[width = 0.4\textwidth]{figures/image_2020-04-28-13-33-50.png} 
+\includegraphics[width = 0.4\textwidth]{figures/image_2020-04-28-13-36-21.png} 
 \end{center}
+
 
 <!--\begin{center}-->
 <!--\begin{tikzcd}[ampersand replacement=\&]-->
-<!--\cdots \ar[r]\& \pi_3(S^3)\ar[r] \& \pi_{3}(S^2) \ar[dll] \\-->
+<!--\pi_3(S^1) \ar[r]\& \pi_3(S^3)\ar[r] \& \pi_{3}(S^2) \ar[dll] \\-->
 <!--\pi_2(S^1)\ar[r] \& \pi_2(S^3)\ar[r] \& \pi_2(S^2) \ar[dll] \\-->
 <!--\pi_{1}(S^1) \ar[r]\& \pi_1(S^3) \ar[r]\& \pi_1(S^2)-->
 <!--\end{tikzcd}-->
 <!--\end{center}-->
 
 
-\begin{center}
-\begin{tikzcd}[ampersand replacement=\&]
-\cdots \& \ZZ \ar[r] \& \pi_{3}(S^2) \ar[dll] \\
-0 \ar[r] \& 0 \ar[r] \& \pi_2(S^2) \ar[dll] \\
-\ZZ \ar[r]\& 0 \ar[r]\& 0
-\end{tikzcd}
-\end{center}
+<!--\begin{center}-->
+<!--\begin{tikzcd}[ampersand replacement=\&]-->
+<!--0 \ar[r]\& \pi_4(S^3) \ar[r] \& \pi_{4}(S^2) \ar[dll] \\-->
+<!--0 \ar[r]\& \ZZ \ar[r] \& \pi_{3}(S^2) \ar[dll] \\-->
+<!--0 \ar[r] \& 0 \ar[r] \& \pi_2(S^2) \ar[dll] \\-->
+<!--\ZZ \ar[r]\& 0 \ar[r]\& 0-->
+<!--\end{tikzcd}-->
+<!--\end{center}-->
 
 
