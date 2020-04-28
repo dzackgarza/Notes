@@ -131,16 +131,25 @@ Work being swept under the rug: identifying the homotopy type of the representin
 Corollary:
 There are 2 distinct line bundles over $X = S^1$ (the cylinder and the mobius strip), since $H^1(S^1; \ZZ/2\ZZ) \cong \ZZ/2\ZZ$.
 
+
 Corollary:
 A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}^{2g}$ and thus there are $2^{2g}$ distinct real line bundles over any such surface.
 
+\begin{center}
+\includegraphics[width = 0.3\textwidth]{figures/image_2020-04-28-12-00-13.png} 
+\includegraphics[width = 0.3\textwidth]{figures/image_2020-04-28-12-01-36.png} 
+\end{center}
 
 
 
-## Point 1
+# Spheres
 
-## Point 2
+## Setup
 
-# Examples
+- Defining $\pi_k(X) = [S^k, X]$, the simplest objects to investigate: $X = S^n$
+- Can consider the bigraded group $\pi_\SS \definedas [S^k, S^n]$:
+\begin{center}
+\includegraphics[width = 0.6\textwidth]{figures/image_2020-04-28-11-58-58.png} 
+\end{center}
 
 ## Sphere 1
