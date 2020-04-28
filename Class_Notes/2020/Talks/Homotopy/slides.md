@@ -329,6 +329,7 @@ Use the Hopf fibration: $S^1 \to S^3 \to S^2$ and the fact that $\pi_{\geq 2} S^
 \includegraphics[width = 0.4\textwidth]{figures/image_2020-04-28-13-36-21.png} 
 \end{center}
 
+> Note that this works whenever the fiber is contractible (e.g. universal covers, fibers are *discrete*)
 
 - [Hopf Fibration Visualizer](http://philogb.github.io/page/hopf/#)
 
