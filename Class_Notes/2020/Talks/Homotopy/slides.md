@@ -298,3 +298,5 @@ Thus any map $f: S^k \to S^n$ must send the $k\dash$skeleton of $S^k$ to the $k\
 \includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-13-14-41.png} 
 \end{center}
 
+- Nontrivial theorem: If $\tilde X \to X$ is a universal cover then $\pi_{\geq 2}(X) \cong \pi_{\geq 2} \tilde X$.
+
