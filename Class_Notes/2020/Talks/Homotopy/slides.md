@@ -28,7 +28,7 @@ fontsize: 10pt
 
 ## Definitions
 
-- For $f, g\in \hom_{\top}(X, Y)$
+- For $f, g\in \hom_{\text{Top}}(X, Y)$, we write $f\sim g \iff$ there exists an $F \in \hom_{\text{Top}}(X\cross I, Y)$ such that $F(0) = f, F(1) = g$.
 
 ## Classification
 
