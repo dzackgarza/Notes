@@ -199,4 +199,14 @@ Knowing $\pi_k S^n$, this reduces to
 \includegraphics[width = 0.6\textwidth]{figures/image_2020-04-28-11-58-58.png} 
 \end{center}
 
+## But Wait!
+
+The corresponding picture in homology is very easy:
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-12-26-49.png} 
+\end{center}
+\small
+> Slogan: "conservation/duality of complexity" 
+\normalsize
+
 ## Sphere 1
