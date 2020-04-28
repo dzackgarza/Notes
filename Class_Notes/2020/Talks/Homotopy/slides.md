@@ -139,6 +139,28 @@ A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}
 \includegraphics[width = 0.3\textwidth]{figures/image_2020-04-28-12-01-36.png} 
 \end{center}
 
+## Example: Higher Homotopy Groups are Useful
+
+- Application: computing $\pi_1(\SO(n, \RR)$, the lie group of rigid rotations in 3-space.
+
+- The fibration $\SO(n, \RR) \to \SO(n+1, \RR) \to S^n$ yields a LES in homotopy:
+
+\begin{center}
+\begin{tikzcd}
+A & B
+\end{tikzcd}
+\end{center}
+
+which reduces to 
+
+<!--\begin{align*}-->
+<!--\pi_2(SO(n, \RR)) \ar[r]-->
+<!--\pi_2(SO(n+1, \RR)) \ar[r]-->
+<!--0 \ar[ddl] \\-->
+<!--\pi_1(SO(n, \RR)) \ar[r]-->
+<!--\pi_1(SO(n+1, \RR)) \ar[r]-->
+<!--0 \\-->
+<!--\end{align*}-->
 
 
 # Spheres
