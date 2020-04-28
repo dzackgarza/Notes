@@ -112,17 +112,19 @@ $$\bung(X) \cong [X, BG]$$
 ## Example: Homotopy Equivalence is Useful
 
 Proof:
-\begin{align}
-I(\RR^1, X) 
-&= [X, B(\GL(1, \RR))]\\
+\begin{align*}
+\text{Bun}_{\RR^1}(X) 
+&= [X, B\GL(1, \RR)]\\
 &= [X, \Gr(1, \RR^\infty)] \\
 &= [X, \RP^\infty] \\
 &= [X, K(\ZZ/2\ZZ, 1)] \\
 &= H^1(X; \ZZ/2\ZZ)
-\end{align}
+\end{align*}
 
 > Note that for a poset of spaces $(M_i, \injects)$, the space $M^\infty \definedas \directlim M_i$.
 > These are infinite dimensional "Hilbert manifolds".
+
+The work being swept under the rug here is in identifying the homotopy type of the target representing space.
 
 ## Example: Homotopy Equivalence is Useful
 
@@ -132,7 +134,6 @@ There are 2 distinct line bundles over $X = S^1$ (the cylinder and the mobius st
 Corollary:
 A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}^{2g}$ and thus there are $2^{2g}$ distinct real line bundles over any such surface.
 
-> Note: the work being swept under the rug here is in identifying the homotopy type of the target representing space.
 
 
 
