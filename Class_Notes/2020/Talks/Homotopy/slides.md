@@ -418,12 +418,14 @@ H_4 G \& \& \& \& \& \& \\
 
 Relevant quantity will be $C$ term in SSS:
 \begin{center}
-\includegraphics[width = 0.6\textwidth]{figures/image_2020-04-28-15-24-35.png} 
+\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-28-15-27-45.png} 
 \end{center}
 
+\tiny
 - Everything must go! Converges to homology of a point.
 - Work out $d\alpha = \beta$
 - Work out $d(\alpha^2) = 2\alpha \tensor \beta$
 - Work out $\beta^2 \neq 0$
 - Work out$\ker(\alpha^2 \to \alpha\tensor \beta) = 2\generators{\alpha \tensor \beta}$
-- Conclude $A = B = 0$,
+- Conclude $A = B = 0$ and $C \cong \ZZ/2\ZZ$.
+\normalsize
