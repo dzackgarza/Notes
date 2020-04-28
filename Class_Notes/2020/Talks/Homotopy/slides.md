@@ -26,9 +26,18 @@ fontsize: 10pt
 - "Measuring stick" for current tools, similar to special values of L-functions
 - Serre's computation
 
+## Intuition
+
+- Homotopies of paths:
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{figures/image_2020-04-27-19-41-28.png} 
+\end{center}
+
+- Regard paths $\gamma$ in $X$ as morphisms $I \mapsvia{\gamma} X$.
+ 
 ## Definitions
 
-- Definition of homotopy: $$f, g\in \hom_{\text{Top}}(X, Y)\quad  f\sim g \iff \exists F \in \hom_{\text{Top}}(X\cross I, Y)$$ such that $F(0) = f, F(1) = g$.
+- Definition of homotopy of *maps*: $$f, g\in \hom_{\text{Top}}(X, Y)\quad  f\sim g \iff \exists F \in \hom_{\text{Top}}(X\cross I, Y)$$ such that $F(0) = f, F(1) = g$.
 - This yields an equivalence relation on morphisms, write *homotopy classes of maps* $$[X, Y] \definedas \hom_{\text{Top}}(X, Y)/\sim$$
 - Definition of homotopy equivalence: $$X\sim Y \iff \exists \begin{cases}f\in \hom(X, Y) \\g\in \hom(Y, X) \end{cases} \text{such that} \begin{cases}f\circ g \sim \id_Y \\ g\circ f \sim \id _X\end{cases}$$
 - Similarly write $$[X] = \theset{Y\in \text{Top} \suchthat Y\sim X}.$$
@@ -36,7 +45,6 @@ fontsize: 10pt
 ## The Fundamental Group
 
 
-![Homotopy of Paths](figures/image_2020-04-27-19-41-28.png)
 
 ## Classification
 
