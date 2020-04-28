@@ -417,14 +417,5 @@ H_4 G \& \& \& \& \& \& \\
 ## k=4, n=3
 
 \begin{center}
-\begin{tikzcd}[ampersand replacement=\&]
-\alpha^3 \& \& \& \& \& \& \\
-0 \& \& \& \& \& \& \\
-\alpha^2 \& \& \& \& \& \& \\
-0 \& \& \& \& \& \& \\
-\alpha \& \& \& \& \& \& \\
-0 \& \& \& \& \& \& \\
-1 \& 0 \& 0 \& \ZZ \& A \& B \& C \\
-\end{tikzcd}
+\includegraphics[width = 0.6\textwidth]{figures/image_2020-04-28-15-24-35.png} 
 \end{center}
-
