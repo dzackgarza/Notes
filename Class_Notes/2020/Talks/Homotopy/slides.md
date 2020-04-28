@@ -141,7 +141,7 @@ A Riemann surface $\Sigma_g$ satisfies $H^1(\Sigma_g; \ZZ/2\ZZ) = \qty{\ZZ/2\ZZ}
 
 ## Example: Higher Homotopy Groups are Useful
 
-- Application: computing $\pi_1(\SO(n, \RR)$, the lie group of rigid rotations in 3-space.
+- Application: computing $\pi_1(\SO(n, \RR)$ (rigid rotations in $\RR^n$).
 
 - The fibration $\SO(n, \RR) \to \SO(n+1, \RR) \to S^n$ yields a LES in homotopy:
 
@@ -178,13 +178,15 @@ Knowing $\pi_k S^n$, this reduces to
 
 ## Uses of Higher Homotopy
 
-\small
-- Important consequence: $\SO(3, \RR)$ is not simply connected! See "plate trick", there is a loop of rotations that is not contractible, but squares to the identity.
-- Causes problems in robotics (leads to paths in configuration spaces that encounter singularities) and compute graphics (smoothly interpolating between e.g. quaternions for rotated camera views).
+\tiny
+- Important consequence: $\SO(3, \RR)$ is not simply connected! 
+  - See "plate trick": there is a loop of rotations that is not contractible, but squares to the identity.
+- Robotics: paths in configuration spaces with singularities 
+- Computer graphics: smoothly interpolating between quaternions for rotated camera views
 \normalsize 
 \begin{center}
-\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-27-21-28-03.png} 
-\includegraphics[width = 0.5\textwidth]{figures/image_2020-04-27-21-29-30.png} 
+\includegraphics[width = 0.45\textwidth]{figures/image_2020-04-27-21-28-03.png} 
+\includegraphics[width = 0.45\textwidth]{figures/image_2020-04-27-21-29-30.png} 
 \end{center}
 
 
