@@ -68,6 +68,10 @@ H &\in \hom_{\text{Top}}(I\cross I, X)
 \includegraphics[width = 0.9\textwidth]{figures/image_2020-04-28-11-35-37.png} 
 \end{center}
 
+## Higher Homotopy Groups
+
+- Can now generalize to define $$\pi_k(X) \definedas [S^k, X]$$
+
 
 
 ## Classification
