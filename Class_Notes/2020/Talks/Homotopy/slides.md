@@ -72,6 +72,10 @@ H &\in \hom_{\text{Top}}(I\cross I, X)
 
 - Can now generalize to define $$\pi_k(X) \definedas [S^k, X]$$
 
+\begin{center}
+\includegraphics[width = 0.9\textwidth]{figures/image_2020-04-28-11-45-35.png} 
+\end{center}
+
 
 
 ## Classification
