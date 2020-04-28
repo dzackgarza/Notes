@@ -17,6 +17,11 @@
 		\ifthenelse{\k < \n}{\node[box, fill = gray!50] at (\k,\n){};}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% k = n
+		\ifthenelse{\k = 1 \AND \n = 1}{\node[box, fill = green!50] at (\k,\n){};}{}
+\ifthenelse{\k = 2 \AND \n = 2}{\node[box, fill = green!50] at (\k,\n){};}{}
+\ifthenelse{\k = 3 \AND \n = 2}{\node[box, fill = green!50] at (\k,\n){};}{}
+\ifthenelse{\k = 3 \AND \n = 3}{\node[box, fill = green!50] at (\k,\n){};}{}
+
 		 \ifthenelse{\k = \n}{\node[box, fill = green!50] at (\k,\n){};}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% S^1

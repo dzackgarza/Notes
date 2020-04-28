@@ -408,7 +408,23 @@ H_4 G \& \& \& \& \& \& \\
 
 ## k=4, n=3
 
-- Need to know
-  - $H^5 K(\ZZ, 3)$ (source of arrow)
+- Want target of arrow. Need to know
   - $H^4 F, H^5 F$ (total cohomology)
+  - $H^5 K(\ZZ, 3)$ (source of arrow)
 - Use Serre SS on $F\to S^2 \to K(\ZZ, 2)$ to deduce $H^5 F = H^6 F = \ZZ$
+- Use Serre SS on $\Omega K(\ZZ, 3) \to \pt \to K(\ZZ, 3)$: 
+
+## k=4, n=3
+
+\begin{center}
+\begin{tikzcd}[ampersand replacement=\&]
+\alpha^3 \& \& \& \& \& \& \\
+0 \& \& \& \& \& \& \\
+\alpha^2 \& \& \& \& \& \& \\
+0 \& \& \& \& \& \& \\
+\alpha \& \& \& \& \& \& \\
+0 \& \& \& \& \& \& \\
+1 \& 0 \& 0 \& \ZZ \& A \& B \& C \\
+\end{tikzcd}
+\end{center}
+
