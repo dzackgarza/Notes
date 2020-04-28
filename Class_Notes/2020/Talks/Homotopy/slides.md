@@ -104,8 +104,8 @@ Let $B$ be a CW complex; then isomorphism classes of $\RR^1\dash$bundles over $B
 
     is representable by a space called $BG$ (Brown's representability theorem).
 
-- I.e., let $I(G, X) =\theset{G\dash\text{bundles} / B}/\sim$, there is an isomorphism 
-$$I(G ,X) \cong [X, BG]$$
+- I.e., let $\bung(X) =\theset{G\dash\text{bundles} / B}/\sim$, there is an isomorphism 
+$$\bung(X) \cong [X, BG]$$
 
 - In general, identify $G = \aut(F)$ the automorphism group of the fibers -- for vector bundles of rank $n$, take $G = GL(n, \RR)$.
 
