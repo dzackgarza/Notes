@@ -382,3 +382,5 @@ We can thus suspend things we already know:
 \begin{center}
 \includegraphics[width = 0.7\textwidth]{figures/image_2020-04-28-13-55-32.png} 
 \end{center}
+
+## k = 4, n = 3
