@@ -28,14 +28,15 @@ fontsize: 10pt
 
 ## Intuition
 
-- Homotopies of paths:
+Homotopies of paths:
 \begin{center}
-\includegraphics[width = 0.8\textwidth]{figures/image_2020-04-27-19-41-28.png} 
+\includegraphics[width = 0.4\textwidth]{figures/image_2020-04-27-19-41-28.png} 
 \end{center}
 
 - Regard paths $\gamma$ in $X$ as morphisms $$\gamma \in \hom_{\text{Top}}(I, X)$$
 - Regard homotopies of paths $H$ as morphisms $$H\in \hom_{\text{Top}}(I\cross I, X)$$
-- Yields an equivalence relation, write $[\gamma]$ to denote a homotopy class of paths.
+- Yields an equivalence relation: write $$\gamma_0 \sim \gamma_1 \iff \exists H \text{ with } H(0) = \gamma_0, H(1) = \gamma(1)$$
+- Write $[\gamma]$ to denote a homotopy class of paths.
 
 ## Intuition
 
