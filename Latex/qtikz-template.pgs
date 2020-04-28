@@ -1,6 +1,7 @@
 \input{preamble.tex}
 \usepackage[active,pdftex,tightpage, ifthen, calc]{preview}
 \usepackage{freetikz}
+\usepackage{xifthen}
 \PreviewEnvironment[]{tikzpicture}
 \PreviewEnvironment[]{pgfpicture}
 \PreviewEnvironment[]{asy}
