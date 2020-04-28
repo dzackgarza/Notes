@@ -35,6 +35,7 @@ fontsize: 10pt
 \includegraphics[width = \textwidth]{figures/image_2020-04-28-10-52-05.png} 
 \end{center}
 
+> Also have the derived category $\text{DTop}$, its interplay with $\text{hoTop}$ is the subject of e.g. the Poincare conjecture(s).
 
 
 ## Point 1
