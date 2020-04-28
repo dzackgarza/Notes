@@ -251,4 +251,5 @@ We'll fill out as much of this table as is easily known:
 
 ## k < n
 
-
+**Claim:** 
+$[S^k, S^n] = 0$ for $k < n$.
