@@ -12,5 +12,9 @@ Thus there are $\ell(w) + 1$ nonzero layers in this filtration.
 
 # Humphreys 7.2
 
+Let $\lieg = \liesl(2, \CC)$ and show that $T_{\lambda}^\mu$ need not take Verma modules to Verma modules.
+
+> For example, let $\lambda = 1$ and $\mu = -3$.
+
 # Exercise p.108
 
