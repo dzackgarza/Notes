@@ -18,3 +18,6 @@ Let $\lieg = \liesl(2, \CC)$ and show that $T_{\lambda}^\mu$ need not take Verma
 
 # Exercise p.108
 
+a. Work out the Jantzen filtration sections for $M(w_0 \cdot \lambda)$.
+  List carefully any additional assumptions or facts needed to deduce $M(w_0\cdot \lambda)^i$ uniquely.
+
