@@ -66,3 +66,5 @@
 
 !include sections/2020-04-24.md
 
+!include sections/2020-04-27.md
+
