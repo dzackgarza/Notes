@@ -20,4 +20,7 @@ Let $\lieg = \liesl(2, \CC)$ and show that $T_{\lambda}^\mu$ need not take Verma
 
 a. Work out the Jantzen filtration sections for $M(w_0 \cdot \lambda)$.
   List carefully any additional assumptions or facts needed to deduce $M(w_0\cdot \lambda)^i$ uniquely.
+b. Continue \#4.11 for the case of singular $\lambda$, e.g.  $(\lambda + \rho, \hat \alpha) = 1$.
+  If you didn't deduce the structure of all $M(w\cdot \lambda)$ there, can you complete it now?
+c. Work out the non-integral case. (There are several different cases to consider.)
 
