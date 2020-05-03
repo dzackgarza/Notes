@@ -80,7 +80,6 @@ This follows by considering
 T_1^{-3} M(-3)
 &= \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_{1} M(-3)} \\
 &= \mathrm{pr}_{-3} \qty{ L(4) \tensor M(-3)}
-&= \mathrm{pr}_{-3} \qty{ }
 \end{align*}
 
 and noting that the resulting projection would have at least two distinct irreducible quotients. 
