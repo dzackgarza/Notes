@@ -71,7 +71,7 @@ T_1^{-3} L(1)
 &= 0
 .\end{align*}
 
-This follows from the fact that any module in $\OO_{\chi_{-3}}$ has a composition series for which *all* of the composition factors have highest weight in $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$.
+This follows from the fact that any module in $\OO_{\chi_{-3}}$ has a composition series for which *all* of the composition factors have highest weight in $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$, but $L(4)\tensor L(1)$ has a composition factor with highest weight $4$.
 
 # Exercise p.108
 
