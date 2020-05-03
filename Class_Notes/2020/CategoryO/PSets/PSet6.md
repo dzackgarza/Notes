@@ -27,6 +27,21 @@ We thus have
 T_{1}^{-3}(\wait) = \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_1(\wait)}
 .\end{align*}
 
+We use the fact that we always have an exact sequence of the form
+\begin{align*}
+0 \to N(\lambda) \to M(\lambda) \to L(\lambda) \to 0
+.\end{align*}
+
+Here we can identify 
+\begin{align*}
+N(\lambda) 
+&\cong L(-\lambda - 2) \\
+&= L(-1 - 2) \\
+&= L(-3) \\
+&= L(\mu) \\
+&= M(\mu) \qtext{since $\mu = -3$ is integral and antidominant}
+\end{align*}
+
 # Exercise p.108
 
 a. Work out the Jantzen filtration sections for $M(w_0 \cdot \lambda)$.
