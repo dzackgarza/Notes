@@ -83,7 +83,7 @@ T_1^{-3} M(-3)
 &= \mathrm{pr}_{-3} \qty{ }
 \end{align*}
 
-and considering the weights of the parenthesized term.
+and particularly the weights of the parenthesized term.
 Using the fact that
 \begin{align*}
 \Pi(M(-3)) &= \theset{-3, -5, \cdots} \\
