@@ -55,8 +55,12 @@ thus we can rewrite the exact sequence as
 \end{tikzcd}
 \end{center}
 
-We know that the translation functor is exact,
-
+We know that the translation functor is exact, so applying $T_\lambda^\mu$ yields the following short exact sequence:
+\begin{center}
+\begin{tikzcd}
+0 \ar[r] & T_{1}^{-3} M(-3) \ar[r] & T_1^{-3} M(1) \ar[r] & T_1^{-3} L(1) \ar[r] & 0
+\end{tikzcd}
+\end{center}
 # Exercise p.108
 
 a. Work out the Jantzen filtration sections for $M(w_0 \cdot \lambda)$.
