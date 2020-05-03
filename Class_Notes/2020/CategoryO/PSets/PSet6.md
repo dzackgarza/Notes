@@ -83,12 +83,7 @@ T_1^{-3} M(-3)
 &= \mathrm{pr}_{-3} \qty{ }
 \end{align*}
 
-and particularly the weights of the parenthesized term.
-Using the fact that
-\begin{align*}
-\Pi(M(-3)) &= \theset{-3, -5, \cdots} \\
-\Pi(L(4)) &= \theset{-4, -2, 0, 2, 4}
-\end{align*}
+and noting that the resulting projection would have at least two distinct irreducible quotients. 
 
 
 # Exercise p.108
