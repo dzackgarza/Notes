@@ -43,7 +43,7 @@ L(-\lambda - 2)
 &= L(-1 - 2) \\
 &= L(-3) \\
 &= L(\mu) \\
-&= M(\mu) \qtext{since $\mu = -3$ is integral and antidominant}
+&= M(\mu) \quad\text{since $\mu = -3$ is integral and antidominant}
 ,\end{align*}
 
 and thus we in fact have an exact sequence
