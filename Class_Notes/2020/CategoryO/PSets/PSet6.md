@@ -61,6 +61,10 @@ We know that the translation functor is exact, so applying $T_\lambda^\mu$ yield
 0 \ar[r] & T_{1}^{-3} M(-3) \ar[r] & T_1^{-3} M(1) \ar[r] & T_1^{-3} L(1) \ar[r] & 0
 \end{tikzcd}
 \end{center}
+
+Since not *both* $\lambda, \mu$ are antidominant, we can not apply Theorem 7.6 to compute these, so we instead turn to the definition.
+Noting that since $\lambda, \mu$ are compatible we have $W_{[\lambda]} = W_{[\mu]}$.
+
 # Exercise p.108
 
 a. Work out the Jantzen filtration sections for $M(w_0 \cdot \lambda)$.
