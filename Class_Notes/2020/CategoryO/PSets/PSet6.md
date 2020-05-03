@@ -24,7 +24,7 @@ In $\liesl(2, \CC)$, we identify $\Lambda = \ZZ$ and $s_\alpha \lambda = -\lambd
 Thus $W\nu = \theset{-4, 4}$ which contains the unique dominant weight $\bar \nu = 4$.
 We thus have
 \begin{align*}
-T_{1}^{-3}(\wait) = \pr_{-3} \qty{ L(4) \tensor \pr_1(\wait)}
+T_{1}^{-3}(\wait) = \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_1(\wait)}
 .\end{align*}
 
 # Exercise p.108
