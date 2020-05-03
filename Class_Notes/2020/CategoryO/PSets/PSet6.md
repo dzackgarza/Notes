@@ -32,15 +32,27 @@ We use the fact that we always have an exact sequence of the form
 0 \to N(\lambda) \to M(\lambda) \to L(\lambda) \to 0
 .\end{align*}
 
+where in $\liesl(2, \CC)$ we can identify $N(\lambda) = L(-\lambda - 2)$, thus we have
+\begin{align*}
+0 \to L(-\lambda-2) \to M(\lambda) \to L(\lambda) \to 0
+.\end{align*}
+
 Here we can identify 
 \begin{align*}
-N(\lambda) 
-&\cong L(-\lambda - 2) \\
+L(-\lambda - 2) \\
 &= L(-1 - 2) \\
 &= L(-3) \\
 &= L(\mu) \\
 &= M(\mu) \qtext{since $\mu = -3$ is integral and antidominant}
-\end{align*}
+,\end{align*}
+
+and thus we in fact have an exact sequence
+
+\begin{center}
+\begin{tikzcd}
+0 \ar[r]
+\end{tikzcd}
+\end{center}
 
 # Exercise p.108
 
