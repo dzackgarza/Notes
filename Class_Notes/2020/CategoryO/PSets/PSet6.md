@@ -63,7 +63,13 @@ We know that the translation functor is exact, so applying $T_\lambda^\mu$ yield
 \end{center}
 
 Since not *both* $\lambda, \mu$ are antidominant, we can not apply Theorem 7.6 to compute these, so we instead turn to the definition.
-Noting that since $\lambda, \mu$ are compatible we have $W_{[\lambda]} = W_{[\mu]}$.
+We claim that
+\begin{align*}
+T_1^{-3} L(1) 
+&= \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_{1}(L(1))} \\
+&= \mathrm{pr}_{-3} \qty{ L(4) \tensor L(1)} \\
+&= 0
+.\end{align*}
 
 # Exercise p.108
 
