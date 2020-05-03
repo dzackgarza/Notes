@@ -46,18 +46,16 @@ L(-\lambda - 2)
 &= M(\mu) \quad\text{since $\mu = -3$ is integral and antidominant}
 ,\end{align*}
 
-and thus we in fact have an exact sequence
+thus we can rewrite the exact sequence as
 
 \begin{center}
 \begin{tikzcd}
-0 \ar[r] \ar[equal]{d} & M(\mu) \\
-0 \ar[r] & M(\mu) 
+0 \ar[r] \ar[equal]{d} & M(\mu) \ar[r] \ar[equal]{d} & M(\lambda) \ar[r] \ar[equal]{d} & L(\lambda) \ar[r] \ar[equal]{d} & 0 \ar[equal]{d} \\
+0 \ar[r] & M(-3) \ar[r] & M(1) \ar[r] & L(1) \ar[r] & 0
 \end{tikzcd}
 \end{center}
 
-\begin{align*}
-0 \to M(\mu) \to M(\lambda) \to L(\lambda) \to 0
-.\end{align*}
+We know that the translation functor is exact,
 
 # Exercise p.108
 
