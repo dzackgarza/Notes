@@ -75,6 +75,12 @@ This follows from the fact that any module in $\OO_{\chi_{-3}}$ has a compositio
 
 This forces an isomorphism $T_1^{-3}M(-3) \mapsvia{\sim} T_1^{-3} M(1)$, so it suffices to show that either of these is not a Verma module.
 
+This follows by considering
+\begin{align*}
+T_1^{-3} M(-3)
+&= \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_{1} M(-3)} \\
+&= \mathrm{pr}_{-3} \qty{ L(4) \tensor M(-3)}
+\end{align*}
 
 # Exercise p.108
 
