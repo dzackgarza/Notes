@@ -85,7 +85,7 @@ T_1^{-3} M(-3)
 &= \mathrm{pr}_{-3} \qty{ L(1) \oplus L(3) \oplus L(5) \oplus L(7)} \\
 \end{align*}
 
-and noting that the resulting projection would have at least two distinct irreducible quotient. 
+and noting that the resulting projection would have at least two distinct simple quotients, whereas every Verma module has a *unique* simple quotient.
 
 
 # Exercise p.108
