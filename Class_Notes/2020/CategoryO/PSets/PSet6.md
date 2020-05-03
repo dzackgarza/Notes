@@ -48,6 +48,13 @@ L(-\lambda - 2)
 
 and thus we in fact have an exact sequence
 
+\begin{center}
+\begin{tikzcd}
+0 \ar[r] \ar[equal]{d} & M(\mu) \\
+0 \ar[r] & M(\mu) 
+\end{tikzcd}
+\end{center}
+
 \begin{align*}
 0 \to M(\mu) \to M(\lambda) \to L(\lambda) \to 0
 .\end{align*}
