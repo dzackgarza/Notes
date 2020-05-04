@@ -46,6 +46,13 @@ We can also identify the Weyl group as $W = \theset{1, s_\alpha, s_\beta, s_\gam
 
 We can begin by letting $\lambda \in \Lambda$ be an arbitrary integral weight and let $\mu$ be any weight linked to $\lambda$, where WLOG apply some Weyl group element to $\mu$ to place it in the dominant chamber and assume $\mu = s_\alpha \cdot \lambda \leq \lambda$.
 
+### Part 1
+
+Since $\mu$ is assumed integral, we can find some $w\in W$ such that
+\begin{align*}
+\mu' \definedas w\inv \cdot \mu \in \Lambda^+ - \rho
+.\end{align*}
+
 
 
 
