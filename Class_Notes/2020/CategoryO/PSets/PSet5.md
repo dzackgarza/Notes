@@ -67,9 +67,9 @@ As in Proposition 4.3, we then write
 
 which (by that Proposition) gives a sequence of embeddings
 \begin{align*}
-M(\mu) = M(\mu_2) &\injects M(\mu_1) \injects M(\mu_0) = M(\mu') \\
+M(\mu) = M(\mu_2) \injects M(\mu_1) &\injects M(\mu_0) = M(\mu') \\
 \qtext{i.e.} &\\
-M(\mu) &\injects M(s\beta mu') \injects M()
+M(\mu) \injects M(s_\beta \mu') &\injects M()
 .\end{align*}
 
 
