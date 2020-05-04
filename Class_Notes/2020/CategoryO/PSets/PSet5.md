@@ -65,6 +65,12 @@ As in Proposition 4.3, we then write
 \mu_2 &= s_\alpha s_\beta \mu' = w\mu ' = \mu
 \end{align*}
 
+which (by that Proposition) gives a sequence of embeddings
+\begin{align*}
+M(\mu) = M(\mu_2) &\injects M(\mu_1) \injects M(\mu_0) = M(\mu') \\
+\qtext{i.e.} &\\
+M(\mu) &\injects M(s\beta mu') \injects M()
+.\end{align*}
 
 
 # 4.11
