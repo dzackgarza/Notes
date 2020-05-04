@@ -61,15 +61,15 @@ Claim: $w = s_\alpha s_\beta$
 As in Proposition 4.3, we then write
 \begin{align*}
 \mu_0 &= \mu' \\
-\mu_1 &= s_\beta \mu' \\
-\mu_2 &= s_\alpha s_\beta \mu' = w\mu ' = \mu
+\mu_1 &= s_\beta \cdot \mu' \\
+\mu_2 &= s_\alpha s_\beta \cdot \mu' = w\cdot \mu ' = \mu
 \end{align*}
 
 which (by that Proposition) gives a sequence of embeddings
 \begin{align*}
 M(\mu) = M(\mu_2) \injects M(\mu_1) &\injects M(\mu_0) = M(\mu') \\
 \qtext{i.e.} &\\
-M(\mu) \injects M(s_\beta \mu') &\injects M(\mu')
+M(\mu) \injects M(s_\beta \cdot \mu') &\injects M(\mu')
 .\end{align*}
 
 
