@@ -65,6 +65,12 @@ As in Proposition 4.3, we then write
 \mu_2 &= s_\alpha s_\beta \cdot \mu' = w\cdot \mu ' = \mu
 \end{align*}
 
+which satisfies
+\begin{align*}
+\mu = \mu_2 \leq \mu_1 &\leq \mu_0 = \mu' \\
+\mu = s_\alpha s_\beta \cdot \mu' \leq s_\beta \mu' &\leq \mu'
+.\end{align*}
+
 which (by that Proposition) gives a sequence of embeddings
 \begin{align*}
 M(\mu) = M(\mu_2) \injects M(\mu_1) &\injects M(\mu_0) = M(\mu') \\
