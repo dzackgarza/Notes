@@ -58,6 +58,12 @@ Since $\mu$ is assumed integral, we can find some $w\in W$ such that
 
 Claim: $w = s_\alpha s_\beta$
 
+As in Proposition 4.3, we then write
+\begin{align*}
+\mu_0 &= \mu' \\
+\mu_1 &= s_\beta \mu' \\
+\mu_2 &= s_\alpha s_\beta \mu' = w\mu ' = \mu
+\end{align*}
 
 
 
