@@ -42,11 +42,11 @@ Work through the steps of Verma's Theorem in the special case discussed in the p
 ## Solution
 
 Let $\lieg = \liesl(3, \CC)$ and identify its root system $A_2$ with $\Delta = \theset{\alpha, \beta}$ and $\Phi^+ = \theset{\alpha, \beta, \gamma\definedas \alpha + \beta}$
-We can also identify the Weyl group as $W = \theset{1, s_\alpha, s_\beta, s_\gamma}$ where we can find the reduced expression $s_\gamma = w_0 = s_\alpha s_\beta s_\alpha$.
+We can also identify the Weyl group as $W = \theset{1, s_\alpha, s_\beta, s_{\alpha}s_\beta, s_{\beta}s_\alpha, s_\gamma}$ where there is a reduced expression $s_\gamma = w_0 = s_\alpha s_\beta s_\alpha$.
 
-We can begin by letting $\lambda \in \Lambda$ be an arbitrary integral weight and let $\mu$ be any weight linked to $\lambda$, where WLOG apply some Weyl group element to $\mu$ to place it in the dominant chamber and assume 
+We can begin by letting $\lambda \in \Lambda$ be an arbitrary integral weight and let $\mu$ be an arbitrary weight linked to $\lambda$, where WLOG apply some Weyl group element to $\mu$ to place it in the dominant chamber and assume 
 $$
-\mu = s_\alpha \cdot \lambda \leq \lambda
+\mu \definedas s_\alpha \cdot \lambda \leq \lambda
 .$$
 
 ### Part 1
@@ -55,6 +55,8 @@ Since $\mu$ is assumed integral, we can find some $w\in W$ such that
 \begin{align*}
 \mu' \definedas w\inv \cdot \mu \in \Lambda^+ - \rho
 .\end{align*}
+
+Claim: $w = s_\alpha s_\beta$
 
 
 
