@@ -39,6 +39,10 @@ Theorem (Verma)
 
 Work through the steps of Verma's Theorem in the special case discussed in the previous problem
 
+## Solution
+
+Let $\lieg = \liesl(3, \CC)$ and identify $\Phi = \theset{\alpha, \beta, \gamma\definedas \alpha + \beta}$.
+
 
 # 4.11
 
