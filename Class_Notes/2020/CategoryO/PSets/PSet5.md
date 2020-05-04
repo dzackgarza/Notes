@@ -41,7 +41,7 @@ Work through the steps of Verma's Theorem in the special case discussed in the p
 
 ## Solution
 
-Let $\lieg = \liesl(3, \CC)$ and identify $\Phi = \theset{\alpha, \beta, \gamma\definedas \alpha + \beta}$.
+Let $\lieg = \liesl(3, \CC)$ and identify its root system $A_2$ and $\Phi^+ = \theset{\alpha, \beta, \gamma\definedas \alpha + \beta}$.
 
 
 # 4.11
