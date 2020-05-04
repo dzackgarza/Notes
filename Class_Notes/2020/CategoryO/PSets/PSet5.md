@@ -44,6 +44,8 @@ Work through the steps of Verma's Theorem in the special case discussed in the p
 Let $\lieg = \liesl(3, \CC)$ and identify its root system $A_2$ with $\Delta = \theset{\alpha, \beta}$ and $\Phi^+ = \theset{\alpha, \beta, \gamma\definedas \alpha + \beta}$
 We can also identify the Weyl group as $W = \theset{1, s_\alpha, s_\beta, s_\gamma}$ where we can find the reduced expression $s_\gamma = w_0 = s_\alpha s_\beta s_\alpha$.
 
+We can begin by letting $\lambda \in \Lambda$ be an arbitrary integral weight and let $\mu$ be any weight linked to $\lambda$.
+
 
 
 # 4.11
