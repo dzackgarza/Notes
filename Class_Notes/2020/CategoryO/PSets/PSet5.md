@@ -126,6 +126,10 @@ and thus obtain
 .\end{align*}
 
 
+### Step 4
+
+
+
 # 4.11
 
 In the case of $\liesl(3, \CC)$, what can be said at this point about Verma modules with a singular integral highest weight?
