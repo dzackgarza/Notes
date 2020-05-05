@@ -117,9 +117,9 @@ s_{\beta_2} &\definedas s_\alpha \\
 and since $\mu_k = w_k\inv s_\alpha w_k \cdot \lambda_k = s_{\beta_k} \lambda_k$, we have
 
 \begin{align*}
-\mu_0 &= ? \\
-\mu_1 &= ? \\
-\mu_2 &= 
+\mu_0 &= s_\alpha \cdot \lambda_0 \\
+\mu_1 &= s_\alpha \cdot \lambda_1 \\
+\mu_2 &= s_\gamma \cdot \lambda_2
 .\end{align*}
 
 
