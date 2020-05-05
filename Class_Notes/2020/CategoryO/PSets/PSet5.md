@@ -138,6 +138,9 @@ From the last step, we fix $k=0$ and now want to show $M(\mu_{k+i}) \subset M(\m
 
 ### Step 6
 
+We first want to show $M(\mu_1) \subset M(\lambda_1)$.
+
+
 
 # 4.11
 
