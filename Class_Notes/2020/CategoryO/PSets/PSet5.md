@@ -145,8 +145,8 @@ $$
 .$$
 We then note that
 \begin{align*}
-\mu_1 - \lambda_1 &= c_1 \beta_1 \\
-s_1 \mu_0 - s_1 \lambda_0 = s_1 (\mu_0 - \lambda_0) &= d_1 \beta_0
+\mu_1 - \lambda_1 &= c_1 \beta_1 = c_1 \alpha \\
+s_1 \mu_0 - s_1 \lambda_0 = s_1 (\mu_0 - \lambda_0) &= d_1 \beta_0 = d_1 \alpha
 \end{align*}
 
 where $c_1$ is negative and $b_1$ is positive.
