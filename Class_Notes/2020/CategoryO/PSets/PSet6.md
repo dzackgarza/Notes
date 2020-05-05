@@ -71,7 +71,7 @@ T_1^{-3} M(-3)
 &= \mathrm{pr}_{-3} \qty{ L(4) \tensor M(-3)} \\
 \end{align*}
 
-and noting that by Theorem 3.6 the parenthesized term has a finite filtration with quotients $Q(\mu) \in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))$.
+and noting that by Theorem 3.6 the parenthesized term has a finite filtration with quotients $Q(\mu) \in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))}$.
 
 and noting that the resulting projection would have at least two distinct simple quotients, whereas every Verma module has a *unique* simple quotient.
 
