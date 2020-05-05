@@ -71,12 +71,14 @@ which satisfies
 \mu = s_\alpha s_\beta \cdot \mu' \leq s_\beta \mu' &\leq \mu'
 .\end{align*}
 
-which (by that Proposition) gives a sequence of embeddings
+which (by the proposition) gives a sequence of embeddings
 \begin{align*}
 M(\mu) = M(\mu_2) \injects M(\mu_1) &\injects M(\mu_0) = M(\mu') \\
 \qtext{i.e.} &\\
 M(\mu)  = M(s_\alpha s_\beta \cdot \mu') \injects M(s_\beta \cdot \mu') &\injects M(\mu')
 .\end{align*}
+
+### Step 2
 
 
 # 4.11
