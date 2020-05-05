@@ -77,7 +77,7 @@ We'll use the fact that
 \Pi(L(4)) &= \theset{-4, -2, 0, 2, 4}
 ,\end{align*}
 
-and by Theorem 3.6, the parenthesized term has a finite filtration with quotients of the form
+and by Theorem 3.6, since $4$ is dominant, $\dim L(4) < \infty$, so $L(4) \tensor M(-3)$ has a finite filtration with quotients of the form
 
 $$
 Q(\mu)\in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))} = \theset{\cdots, M(-3 + 2), M(-3 + 4), \cdots } = \theset{\cdots, M(-1), M(3), \cdots}
