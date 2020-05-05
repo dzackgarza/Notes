@@ -71,7 +71,7 @@ T_1^{-3} L(1)
 &= 0
 .\end{align*}
 
-This follows from the fact that any module in $\OO_{\chi_{-3}}$ has a composition series for which *all* of the composition factors have highest weight in $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$, but $L(4)\tensor L(1) \cong L(3) \oplus L(5)$ has only composition factors with highest weight $3$ or $5$.
+This follows from the fact that any module in $\OO_{\chi_{-3}}$ has a composition series for which *all* of the composition factors have highest weight in $, but $L(4)\tensor L(1) \cong L(3) \oplus L(5)$ has only composition factors with highest weight $3$ or $5$.
 
 This forces an isomorphism $T_1^{-3}M(-3) \mapsvia{\sim} T_1^{-3} M(1)$, so it suffices to show that either of these is not a Verma module.
 
@@ -96,12 +96,9 @@ Identifying $\Pi(L(4)) = \theset{-4, -2, 0, 2, 4}$ we thus see that there are qu
 $$
 Q(\mu)\in \theset{\cdots, M(-3 + 2), M(-3 + 4), \cdots } = \theset{\cdots, M(-1), M(3), \cdots}
 $$
-
-
-and noting that the resulting projection would have at least two distinct simple quotients, whereas every Verma module has a *unique* simple quotient.
-
-
-
+and since $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$, the projection onto $\OO_{\chi_{-3}}$ has a composition series with these factors.
+But then the resulting projection must have at least *two distinct* simple quotients, whereas every Verma module has a unique simple quotient, so the projection is not a Verma module.
+$\qed$
 
 # Exercise p.108
 
