@@ -92,9 +92,11 @@ and the parallel list of weights
 \lambda_2 &= s_\alpha s_\beta \cdot \lambda \definedas \lambda'
 .\end{align*}
 
-We can similarly conclude that since $\lambda \neq \mu$, $\mu_k \neq \lambda_k$ for any $k$.
+We can similarly conclude that $\lambda \neq \mu \implies \mu_k \neq \lambda_k$ for any $k$.
 
 ### Step 3
+
+
 
 
 # 4.11
