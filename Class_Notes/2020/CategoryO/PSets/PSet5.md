@@ -90,9 +90,9 @@ We now define
 
 and the parallel list of weights
 \begin{align*}
-\lambda_0 &= \lambda \\
-\lambda_1 &= s_\beta \cdot \lambda \\
-\lambda_2 &= s_\alpha s_\beta \cdot \lambda \definedas \lambda'
+\lambda_0 &= \lambda' \\
+\lambda_1 &= s_\beta \cdot \lambda' \\
+\lambda_2 &= s_\alpha s_\beta \cdot \lambda' \definedas \lambda
 .\end{align*}
 
 We can similarly use the fact that $\lambda \neq \mu \implies \mu_k \neq \lambda_k$ for any $k$.
