@@ -128,6 +128,7 @@ and thus obtain
 
 ### Step 4
 
+We have $\mu_0 \geq \mu_1 \geq \mu_2$ with $\lambda_0 < \mu_0$ but $\lambda_2 > \mu_2$, so we now look for where the inequality switches.
 
 
 # 4.11
