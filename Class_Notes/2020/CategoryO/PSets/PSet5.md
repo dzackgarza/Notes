@@ -163,8 +163,7 @@ We thus have embeddings
 M(\mu_2) = M(s_\alpha \cdot \mu_1) \subset M(\mu_1) \subset M(\lambda_1)
 ,\end{align*}
 
-and we then apply Proposition 4.5:
-
+and we then apply Proposition 4.5: set $n = \inner{\lambda+\rho}{\alpha\dual}$ (which is integral by assumption).
 
 In either case, we obtain
 \begin{align*}
