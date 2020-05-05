@@ -102,8 +102,9 @@ We can similarly use the fact that $\lambda \neq \mu \implies \mu_k \neq \lambda
 
 To relate $\mu_k$ to $\lambda_k$, We now define $w_k = s_n \cdots s_{k+1}$:
 \begin{align*}
-w_0 &= s_\alpha \\
-w_1 &= s_\alpha s_\beta \\
+w_0 &= s_\alpha s_\beta \\
+w_1 &= s_\alpha \\
+w_2 &= 1
 \end{align*}
 
 and $\beta_k = \abs{w_k\inv} \in \Phi^+$:
