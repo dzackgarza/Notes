@@ -90,13 +90,13 @@ We'll use the fact that
 \Pi(L(4)) &= \theset{-4, -2, 0, 2, 4}
 ,\end{align*}
 
-and by Theorem 3.6, the parenthesized term has a finite filtration with quotients $Q(\mu) \in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))}$.
+and by Theorem 3.6, the parenthesized term has a finite filtration with quotients of the form
 
-Identifying $\Pi(L(4)) = \theset{-4, -2, 0, 2, 4}$ we thus see that there are quotients of the form 
 $$
-Q(\mu)\in \theset{\cdots, M(-3 + 2), M(-3 + 4), \cdots } = \theset{\cdots, M(-1), M(3), \cdots}
+Q(\mu)\in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))} = \theset{\cdots, M(-3 + 2), M(-3 + 4), \cdots } = \theset{\cdots, M(-1), M(3), \cdots}
 $$
-and since $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$, the projection onto $\OO_{\chi_{-3}}$ has a composition series with these factors.
+and since $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$, we see that composition factors with linked weights appear in the subquotients above. 
+Thus the projection onto $\OO_{\chi_{-3}}$ has a composition series subquotients isomorphic to $M(-1)$ and $M(-3)$.
 But then the resulting projection must have at least *two distinct* simple quotients, whereas every Verma module has a unique simple quotient, so the projection is not a Verma module.
 $\qed$
 
