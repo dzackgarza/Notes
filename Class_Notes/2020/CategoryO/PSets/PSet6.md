@@ -76,21 +76,22 @@ This follows from the fact that any module in $\OO_{\chi_{-3}}$ has a compositio
 This forces an isomorphism $T_1^{-3}M(-3) \mapsvia{\sim} T_1^{-3} M(1)$, so it suffices to show that either of these is not a Verma module.
 
 and considering the weights of the parenthesized term.
-Using the fact that
-\begin{align*}
-\Pi(M(-3)) &= \theset{-3, -5, \cdots} \\
-\Pi(L(4)) &= \theset{-4, -2, 0, 2, 4}
-\end{align*}
 
 This follows by considering
 \begin{align*}
 T_1^{-3} M(-3)
 &= \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_{1} M(-3)} \\
 &= \mathrm{pr}_{-3} \qty{ L(4) \tensor M(-3)}
-\end{align*}
+.\end{align*}
 
+We'll use the fact that
+\begin{align*}
+\Pi(M(-3)) &= \theset{-3, -5, \cdots} \\
+\Pi(L(4)) &= \theset{-4, -2, 0, 2, 4}
+,\end{align*}
 
-and noting that by Theorem 3.6 the parenthesized term has a finite filtration with quotients $Q(\mu) \in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))}$.
+and by Theorem 3.6, the parenthesized term has a finite filtration with quotients $Q(\mu) \in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))}$.
+
 Identifying $\Pi(L(4)) = \theset{-4, -2, 0, 2, 4}$ we thus see that there are quotients of the form 
 $$
 Q(\mu)\in \theset{\cdots, M(-3 + 2), M(-3 + 4), \cdots } = \theset{\cdots, M(-1), M(3), \cdots}
