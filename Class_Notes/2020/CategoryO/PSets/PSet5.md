@@ -158,6 +158,10 @@ M(s_\alpha \cdot \lambda_1) \injects M(\lambda_1) \implies M(\mu_1) \injects M(\
 ### Step 7
 
 
+We thus have embeddings
+\begin{align*}
+M(\mu_2) = M(s_\alpha \mu_1)
+.\end{align*}
 
 
 
