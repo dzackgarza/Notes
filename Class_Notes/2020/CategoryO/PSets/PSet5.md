@@ -44,7 +44,7 @@ Work through the steps of Verma's Theorem in the special case discussed in the p
 Let $\lieg = \liesl(3, \CC)$ and identify its root system $A_2$ with $\Delta = \theset{\alpha, \beta}$ and $\Phi^+ = \theset{\alpha, \beta, \gamma\definedas \alpha + \beta}$
 We can also identify the Weyl group as $W = \theset{1, s_\alpha, s_\beta, s_{\alpha}s_\beta, s_{\beta}s_\alpha, s_\gamma}$ where there is a reduced expression $s_\gamma = w_0 = s_\alpha s_\beta s_\alpha$.
 
-We can begin by letting $\lambda \in \Lambda$ be an arbitrary integral weight and let $\mu$ be an arbitrary weight linked to $\lambda$, where WLOG apply some Weyl group element to $\mu$ to place it in the dominant chamber and assume 
+We can begin by letting $\lambda \in \Lambda$ be an arbitrary integral weight and let $\mu\neq \lambda$ be an arbitrary weight linked to $\lambda$, where WLOG apply some Weyl group element to $\mu$ to place it in the dominant chamber and assume 
 $$
 \mu \definedas s_\alpha \cdot \lambda \leq \lambda
 .$$
@@ -91,6 +91,10 @@ and the parallel list of weights
 \lambda_1 &= s_\beta \cdot \lambda \\
 \lambda_2 &= s_\alpha s_\beta \cdot \lambda \definedas \lambda'
 .\end{align*}
+
+We can similarly conclude that since $\lambda \neq \mu$, $\mu_k \neq \lambda_k$ for any $k$.
+
+### Step 3
 
 
 # 4.11
