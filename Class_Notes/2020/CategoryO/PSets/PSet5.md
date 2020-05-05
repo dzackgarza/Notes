@@ -57,7 +57,10 @@ Since $\mu$ is assumed integral, we can find some $w\in W$ such that
 .\end{align*}
 
 **Claim:** 
-$w = s_\alpha s_\beta$, and thus $s_\alpha s_\beta \cdot \mu' = \mu$ (and $w\inv = s_\beta s_\alpha$).
+$w = s_\alpha s_\beta$, so $w\inv = s_\beta s_\alpha$ and thus
+$$
+\mu' = s_\beta s_\alpha \cdot \mu
+$$
 
 As in Proposition 4.3, we then write
 \begin{align*}
