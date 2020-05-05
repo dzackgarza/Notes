@@ -62,21 +62,8 @@ We know that the translation functor is exact, so applying $T_\lambda^\mu$ yield
 \end{tikzcd}
 \end{center}
 
+We claim that $T_1^{-3} M(-3)$ is not a Verma module.
 Since not *both* $\lambda, \mu$ are antidominant, we can not apply Theorem 7.6 to compute these, so we instead turn to the definition.
-We claim that
-\begin{align*}
-T_1^{-3} L(1) 
-&= \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_{1}(L(1))} \\
-&= \mathrm{pr}_{-3} \qty{ L(4) \tensor L(1)} \\
-&= 0
-.\end{align*}
-
-This follows from the fact that any module in $\OO_{\chi_{-3}}$ has a composition series for which *all* of the composition factors have highest weight in $, but $L(4)\tensor L(1) \cong L(3) \oplus L(5)$ has only composition factors with highest weight $3$ or $5$.
-
-This forces an isomorphism $T_1^{-3}M(-3) \mapsvia{\sim} T_1^{-3} M(1)$, so it suffices to show that either of these is not a Verma module.
-
-and considering the weights of the parenthesized term.
-
 This follows by considering
 \begin{align*}
 T_1^{-3} M(-3)
