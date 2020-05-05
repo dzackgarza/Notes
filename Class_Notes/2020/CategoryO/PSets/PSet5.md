@@ -46,8 +46,9 @@ We can also identify the Weyl group as $W = \theset{1, s_\alpha, s_\beta, s_{\al
 
 We can begin by letting $\lambda \in \Lambda$ be an arbitrary integral weight and let $\mu\neq \lambda$ be an arbitrary weight linked to $\lambda$, where WLOG apply some Weyl group element to $\mu$ to place it in the dominant chamber and assume 
 $$
-\mu \definedas s_\alpha \cdot \lambda \leq \lambda
-.$$
+\mu \definedas s_\alpha \cdot \lambda < \lambda
+$$
+(where the inequality is strict).
 
 ### Part 1
 
