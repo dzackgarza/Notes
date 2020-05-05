@@ -101,6 +101,9 @@ We can similarly use the fact that $\lambda \neq \mu \implies \mu_k \neq \lambda
 ### Step 3
 
 
+We now define
+
+
 
 
 # 4.11
