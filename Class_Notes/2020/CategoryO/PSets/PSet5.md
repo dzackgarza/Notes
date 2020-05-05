@@ -100,13 +100,23 @@ We can similarly use the fact that $\lambda \neq \mu \implies \mu_k \neq \lambda
 
 ### Step 3
 
-We now define
+We now define $w_k = s_n \cdots s_{k+1}$:
 \begin{align*}
 w_0 &= s_\alpha s_\beta \\
 w_1 &= s_\alpha \\
+\end{align*}
+
+and $\beta_k = \abs{w_k\inv} \in \Phi^+$:
+\begin{align*}
+
+\end{align*}
+
+and since $\mu_k = w_k\inv s_\alpha w_k \cdot \lambda_k = s_{\beta_k} \lambda_k$, we have
+\begin{align*}
+\mu_0 &= ? \\
+\mu_1 &= ? \\
+\mu_2 &= ? \\
 .\end{align*}
-
-
 
 
 # 4.11
