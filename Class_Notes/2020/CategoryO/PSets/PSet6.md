@@ -19,7 +19,7 @@ Let $\lieg = \liesl(2, \CC)$ and show that $T_{\lambda}^\mu$ need not take Verma
 ## Solution
 
 Let $\lambda = 1$ and $\mu = -3$, noting that both are integral, $\mu$ is antidominant, and $\mu, \lambda$ are *compatible* as in the definition in 7.1.
-We can then consider $$\nu \definedas \mu - \lambda = -3 - 1 = -4,$$ and to compute the $\bar \nu$ that appears in the definition of $T_\lambda^\mu$, we consider the (usual) $W\dash$orbit of $\nu$.
+We can then consider $\nu \definedas \mu - \lambda = -3 - 1 = -4$, and to compute the $\bar \nu$ that appears in the definition of $T_\lambda^\mu$, we consider the (usual) $W\dash$orbit of $\nu$.
 In $\liesl(2, \CC)$, we identify $\Lambda = \ZZ$, $W = \theset{\id, s_\alpha}$, and $s_\alpha \lambda = -\lambda$ as reflection about $0$.
 Thus the orbit is given by $W\nu = \theset{-4, 4}$, which contains the unique dominant weight $\bar \nu = 4$.
 We thus have
@@ -62,18 +62,44 @@ We know that the translation functor is exact, so applying $T_\lambda^\mu$ yield
 \end{tikzcd}
 \end{center}
 
-We claim that $T_1^{-3} M(-3)$ is not a Verma module.
-Since not *both* $\lambda, \mu$ are antidominant, we can not apply Theorem 7.6 to compute this, so we instead turn to the definition.
+Since not *both* $\lambda, \mu$ are antidominant, we can not apply Theorem 7.6 to compute these, so we instead turn to the definition.
+We claim that
+\begin{align*}
+T_1^{-3} L(1) 
+&= \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_{1}(L(1))} \\
+&= \mathrm{pr}_{-3} \qty{ L(4) \tensor L(1)} \\
+&= 0
+.\end{align*}
+
+This follows from the fact that any module in $\OO_{\chi_{-3}}$ has a composition series for which *all* of the composition factors have highest weight in $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$, but $L(4)\tensor L(1) \cong L(3) \oplus L(5)$ has only composition factors with highest weight $3$ or $5$.
+
+This forces an isomorphism $T_1^{-3}M(-3) \mapsvia{\sim} T_1^{-3} M(1)$, so it suffices to show that either of these is not a Verma module.
+
+and considering the weights of the parenthesized term.
+Using the fact that
+\begin{align*}
+\Pi(M(-3)) &= \theset{-3, -5, \cdots} \\
+\Pi(L(4)) &= \theset{-4, -2, 0, 2, 4}
+\end{align*}
+
 This follows by considering
 \begin{align*}
 T_1^{-3} M(-3)
 &= \mathrm{pr}_{-3} \qty{ L(4) \tensor \mathrm{pr}_{1} M(-3)} \\
-&= \mathrm{pr}_{-3} \qty{ L(4) \tensor M(-3)} \\
+&= \mathrm{pr}_{-3} \qty{ L(4) \tensor M(-3)}
 \end{align*}
 
+
 and noting that by Theorem 3.6 the parenthesized term has a finite filtration with quotients $Q(\mu) \in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))}$.
+Identifying $\Pi(L(4)) = \theset{-4, -2, 0, 2, 4}$ we thus see that there are quotients of the form 
+$$
+Q(\mu)\in \theset{\cdots, M(-3 + 2), M(-3 + 4), \cdots } = \theset{\cdots, M(-1), M(3), \cdots}
+$$
+
 
 and noting that the resulting projection would have at least two distinct simple quotients, whereas every Verma module has a *unique* simple quotient.
+
+
 
 
 # Exercise p.108
