@@ -176,7 +176,7 @@ which is what we wanted to show.
 This follows from analyzing the following cases:
 
 - If $n \leq 0$, we have $$M(\lambda_1) \injects M(s_\beta \cdot \lambda_1) = M(\lambda),$$ and since $M(\mu_1) \injects M(\lambda_1)$ by step 6, composing this with the RHS of the embeddings in equation (1) yields the desired embedding.
-- Otherwise, $n\geq 0$, and we instead obtain $$ M(s_\alpha \cdot \mu_1) \injects M(s_alpha \cdot \lambda_1)\injects M(\lambda_1)$$ 
+- Otherwise, $n\geq 0$, and we instead obtain $$ M(\mu_2) = M(s_\alpha \cdot \mu_1) \injects M(s_\alpha \cdot \lambda_1) = M(\lambda_2) = M(\lambda),$$ which again yields an embedding.
 
 $\qed$
 
