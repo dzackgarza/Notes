@@ -145,10 +145,11 @@ $$
 .$$
 We then note that
 \begin{align*}
-\mu_1 - \lambda_1 &= -c_1 \beta_1 \\
-s_1 \mu_0 - s_1 \lambda_0 &= s_1 (\mu_0 - \lambda_0)
-.\end{align*}
+\mu_1 - \lambda_1 &= c_1 \beta_1 \\
+s_1 \mu_0 - s_1 \lambda_0 = s_1 (\mu_0 - \lambda_0) &= d_1 \beta_0
+\end{align*}
 
+where $c_1$ is negative and $b_1$ is positive.
 
 # 4.11
 
