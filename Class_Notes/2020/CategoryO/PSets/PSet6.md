@@ -83,8 +83,9 @@ $$
 Q(\mu)\in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))} = \theset{\cdots, M(-3 + 2), M(-3 + 4), \cdots } = \theset{\cdots, M(-1), M(3), \cdots}
 $$
 and since $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$, we see that composition factors with linked weights appear in the subquotients above. 
-Thus the projection onto $\OO_{\chi_{-3}}$ has a composition series with subquotients isomorphic to $M(-1)$ and $M(-3)$.
-But then the resulting projection must have at least *two distinct* simple quotients, whereas every Verma module has a unique simple quotient, so the projection can not be a Verma module.
+Thus the projection onto $\OO_{\chi_{-3}}$ has a filtration with subquotients isomorphic to $M(-1)$ and $M(-3)$.
+
+But then the resulting projection has at least *two distinct* simple quotients, whereas every Verma module has a unique simple quotient, so the projection can not be a Verma module.
 $\qed$
 
 # Exercise p.108
