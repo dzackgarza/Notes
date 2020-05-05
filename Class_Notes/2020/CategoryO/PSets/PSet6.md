@@ -77,13 +77,13 @@ We'll use the fact that
 \Pi(L(4)) &= \theset{-4, -2, 0, 2, 4}
 ,\end{align*}
 
-and by Theorem 3.6, since $4$ is dominant, $\dim L(4) < \infty$, so $L(4) \tensor M(-3)$ has a finite filtration with quotients of the form
+and since $4$ is dominant, $\dim L(4) < \infty$, so by Theorem 3.6$L(4) \tensor M(-3)$ has a finite filtration with quotients of the form
 
 $$
 Q(\mu)\in \theset{M(\lambda + \mu) \suchthat \mu \in \Pi(L(4))} = \theset{\cdots, M(-3 + 2), M(-3 + 4), \cdots } = \theset{\cdots, M(-1), M(3), \cdots}
 $$
 and since $W_{[\lambda]} = \theset{\lambda, -\lambda-2} = \theset{1, -3}$, we see that composition factors with linked weights appear in the subquotients above. 
-Thus the projection onto $\OO_{\chi_{-3}}$ has a composition series subquotients isomorphic to $M(-1)$ and $M(-3)$.
+Thus the projection onto $\OO_{\chi_{-3}}$ has a composition series with subquotients isomorphic to $M(-1)$ and $M(-3)$.
 But then the resulting projection must have at least *two distinct* simple quotients, whereas every Verma module has a unique simple quotient, so the projection can not be a Verma module.
 $\qed$
 
