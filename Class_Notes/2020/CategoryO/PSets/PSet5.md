@@ -134,7 +134,7 @@ It suffices to check how $\mu_1$ and $\lambda_1$ are related, and we find $\mu_1
 
 ### Step 5
 
-From the last step, we fix $k=0$ and now want to show $M(\mu_{k+i}) \subset M(\mu_{k+i})$ for $i=1, 2$, since the $i=2$ case yields the desire $M(\mu) \subset M(\lambda)$.
+From the last step, we fix $k=0$ and now want to show $M(\mu_{k+i}) \subset M(\mu_{k+i})$ for $i=1, 2$, since the $i=2$ case yields the desired $M(\mu) \subset M(\lambda)$.
 
 ### Step 6
 
