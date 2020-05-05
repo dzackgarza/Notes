@@ -85,6 +85,14 @@ We now define
 \lambda' \definedas w\inv \lambda = s_\beta s_\alpha \lambda
 \end{align*}
 
+and the parallel list of weights
+\begin{align*}
+\lambda_0 &= \lambda \\
+\lambda_1 &= s_\beta \lambda \\
+\lambda_2 &= s_\alpha s_\beta \lambda \definedas \lambda' \\
+\lambda_0 &= ? \\
+.\end{align*}
+
 
 # 4.11
 
