@@ -130,6 +130,11 @@ and thus obtain
 
 We have $\mu_0 \geq \mu_1 \geq \mu_2$ with $\lambda_0 < \mu_0$ but $\lambda_2 > \mu_2$, so we now look for where the inequality switches.
 
+It suffices to check how $\mu_1$ and $\lambda_1$ are related, and we find $\mu_1 < \lambda_1$.
+
+### Step 5
+
+
 
 # 4.11
 
