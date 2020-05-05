@@ -107,11 +107,11 @@ w_1 &= s_\alpha \\
 w_2 &\definedas 1
 \end{align*}
 
-and $\beta_k = \abs{w_k\inv} \in \Phi^+$:
+and $\beta_k = w_k\inv s_\alpha w_k$:
 \begin{align*}
-\beta_0 &= \abs{s_\beta s_\alpha} \\
-\beta_1 &= \abs{s_\alpha} \\
-\beta_2 &\definedas \alpha \\
+s_{\beta_0} &= (s_\alpha s_\beta)\inv s_\alpha (s\alpha s_\beta) = s_\gamma  \\
+s_{\beta_1} &= s\alpha \inv s_\alpha s_\alpha = s_\alpha \\
+s_{\beta_2} &\definedas s_\alpha \\
 \end{align*}
 
 and since $\mu_k = w_k\inv s_\alpha w_k \cdot \lambda_k = s_{\beta_k} \lambda_k$, we have
