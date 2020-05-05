@@ -138,7 +138,7 @@ From the last step, we fix $k=0$ and now want to show $M(\mu_{k+i}) \subset M(\m
 
 ### Step 6
 
-We first want to show $M(\mu_1) \subset M(\lambda_1)$.1
+We first want to show $M(\mu_1) \subset M(\lambda_1)$.
 We write 
 $$
 \mu_1 - \lambda_1  = s_1 \mu_0 - s_1 \lambda_0
@@ -149,7 +149,10 @@ We then note that
 s_1 \mu_0 - s_1 \lambda_0 = s_1 (\mu_0 - \lambda_0) &= d_1 \beta_0 = d_1 \alpha
 \end{align*}
 
-where $c_1$ is negative and $b_1$ is positive.
+where $c_1$ is negative and $b_1$ is positive, and we already know that $\beta_1 = \beta_0$ by a direct computation.
+
+
+
 
 # 4.11
 
