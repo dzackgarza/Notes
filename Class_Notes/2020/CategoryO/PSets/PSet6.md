@@ -19,7 +19,7 @@ Let $\lieg = \liesl(2, \CC)$ and show that $T_{\lambda}^\mu$ need not take Verma
 ## Solution
 
 Let $\lambda = 1$ and $\mu = -3$, noting that both are integral, $\mu$ is antidominant, and $\mu, \lambda$ are *compatible* as in the definition in 7.1.
-We can then consider $\nu \definedas \mu - \lambda = -3 - 1 = -4$, and to compute the $\bar \nu$ that appears in the definition of $T_\lambda^\mu$, we consider the (usual) $W\dash$orbit of $\nu$.
+We can then consider $$\nu \definedas \mu - \lambda = -3 - 1 = -4,$$ and to compute the $\bar \nu$ that appears in the definition of $T_\lambda^\mu$, we consider the (usual) $W\dash$orbit of $\nu$.
 In $\liesl(2, \CC)$, we identify $\Lambda = \ZZ$, $W = \theset{\id, s_\alpha}$, and $s_\alpha \lambda = -\lambda$ as reflection about $0$.
 Thus the orbit is given by $W\nu = \theset{-4, 4}$, which contains the unique dominant weight $\bar \nu = 4$.
 We thus have
