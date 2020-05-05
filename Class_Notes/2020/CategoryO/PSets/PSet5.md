@@ -160,7 +160,7 @@ M(s_\alpha \cdot \lambda_1) \injects M(\lambda_1) \implies M(\mu_1) \injects M(\
 
 We thus have embeddings
 \begin{align*}
-M(\mu_2) = M(s_\alpha \mu_1)
+M(\mu_2) = M(s_\alpha \cdot \mu_1) \subset M(\mu_1) \subset M(\lambda_1)
 .\end{align*}
 
 
