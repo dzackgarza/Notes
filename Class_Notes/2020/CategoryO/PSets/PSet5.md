@@ -100,8 +100,11 @@ We can similarly use the fact that $\lambda \neq \mu \implies \mu_k \neq \lambda
 
 ### Step 3
 
-
 We now define
+\begin{align*}
+w_0 &= s_\alpha s_\beta \\
+w_1 &= s_\alpha \\
+.\end{align*}
 
 
 
