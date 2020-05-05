@@ -160,16 +160,16 @@ M(s_\alpha \cdot \lambda_1) \injects M(\lambda_1) \implies M(\mu_1) \injects M(\
 
 We thus have embeddings
 \begin{align*}
-M(\mu_2) = M(s_\alpha \cdot \mu_1) \subset M(\mu_1) \subset M(\lambda_1)
+M(\mu_2) = M(s_\alpha \cdot \mu_1) \injects M(\mu_1) \injects M(\lambda_1)
 ,\end{align*}
 
 and we then apply Proposition 4.5: set $n = \inner{\lambda+\rho}{\alpha\dual}$ (which is integral by assumption).
 
-- If $n \leq 0$, we have $M(\lambda_1) \subset M(s_\alpha \cdot \lambda_1) = M(\lambda)$
+- If $n \leq 0$, we have $M(\lambda_1) \injects M(s_\alpha \cdot \lambda_1) = M(\lambda)$, and since
 
 In either case, we obtain
 \begin{align*}
-M(\mu) = M(\mu_2) \subset M(s_\beta \cdot\lambda_1) \subset M(\lambda_2) = M(\lambda)
+M(\mu) = M(\mu_2) \subset M(s_\beta \cdot\lambda_1) \injects M(\lambda_2) = M(\lambda)
 ,\end{align*}
 
 which is what we wanted to show.
