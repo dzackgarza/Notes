@@ -104,14 +104,14 @@ To relate $\mu_k$ to $\lambda_k$, We now define $w_k = s_n \cdots s_{k+1}$:
 \begin{align*}
 w_0 &= s_\alpha s_\beta \\
 w_1 &= s_\alpha \\
-w_2 &= 1
+w_2 &\definedas 1
 \end{align*}
 
 and $\beta_k = \abs{w_k\inv} \in \Phi^+$:
 \begin{align*}
-\beta_0 &= ? \\
-\beta_1 &= ? \\
-\beta_2 &= ? \\
+\beta_0 &= \abs{s_\beta s_\alpha} \\
+\beta_1 &= \abs{s_\alpha} \\
+\beta_2 &\definedas \alpha \\
 \end{align*}
 
 and since $\mu_k = w_k\inv s_\alpha w_k \cdot \lambda_k = s_{\beta_k} \lambda_k$, we have
@@ -119,7 +119,7 @@ and since $\mu_k = w_k\inv s_\alpha w_k \cdot \lambda_k = s_{\beta_k} \lambda_k$
 \begin{align*}
 \mu_0 &= ? \\
 \mu_1 &= ? \\
-\mu_2 &= ? 
+\mu_2 &= 
 .\end{align*}
 
 
