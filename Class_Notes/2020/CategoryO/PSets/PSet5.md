@@ -108,14 +108,17 @@ w_1 &= s_\alpha s_\beta \\
 
 and $\beta_k = \abs{w_k\inv} \in \Phi^+$:
 \begin{align*}
-
+\beta_0 &= ? \\
+\beta_1 &= ? \\
+\beta_2 &= ? \\
 \end{align*}
 
 and since $\mu_k = w_k\inv s_\alpha w_k \cdot \lambda_k = s_{\beta_k} \lambda_k$, we have
+
 \begin{align*}
 \mu_0 &= ? \\
 \mu_1 &= ? \\
-\mu_2 &= ? \\
+\mu_2 &= ? 
 .\end{align*}
 
 
