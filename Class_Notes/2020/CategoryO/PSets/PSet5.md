@@ -56,7 +56,7 @@ Since $\mu$ is assumed integral, we can find some $w\in W$ such that
 \mu' \definedas w\inv \cdot \mu \in \Lambda^+ - \rho
 .\end{align*}
 
-Claim: $w = s_\alpha s_\beta$
+Claim: $w = s_\alpha s_\beta$, and thus $s_\alpha s_\beta \cdot \mu' = \mu$.
 
 As in Proposition 4.3, we then write
 \begin{align*}
@@ -79,6 +79,10 @@ M(\mu)  = M(s_\alpha s_\beta \cdot \mu') \injects M(s_\beta \cdot \mu') &\inject
 .\end{align*}
 
 ### Step 2
+We now define
+\begin{align*}
+\lambda' \definedas w\inv \lambda
+.\end{align*}
 
 
 # 4.11
