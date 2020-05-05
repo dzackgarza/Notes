@@ -75,7 +75,7 @@ which (by that Proposition) gives a sequence of embeddings
 \begin{align*}
 M(\mu) = M(\mu_2) \injects M(\mu_1) &\injects M(\mu_0) = M(\mu') \\
 \qtext{i.e.} &\\
-M(\mu) \injects M(s_\beta \cdot \mu') &\injects M(\mu')
+M(\mu)  = M(s_\alpha s_\beta \cdot \mu') \injects M(s_\beta \cdot \mu') &\injects M(\mu')
 .\end{align*}
 
 
