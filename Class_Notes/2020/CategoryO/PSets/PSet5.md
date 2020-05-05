@@ -146,7 +146,7 @@ $$
 We then note that
 \begin{align*}
 \mu_1 - \lambda_1 &= c_1 \beta_1 = c_1 \alpha \\
-s_1 \mu_0 - s_1 \lambda_0 = s_1 (\mu_0 - \lambda_0) &= d_1 \beta_0 = d_1 \alpha
+s_\alpha \mu_0 - s_1 \lambda_0 = s_\alpha (\mu_0 - \lambda_0) &= d_1 \beta_0 = d_1 \alpha
 \end{align*}
 
 where $c_1$ is negative and $b_1$ is positive, and we already know that $\beta_1 = \beta_0$ by a direct computation.
