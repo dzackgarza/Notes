@@ -155,6 +155,10 @@ Thus we have $\mu_1 = s_\alpha \lambda_1$, and applying Proposition 1.4,
 M(s_\alpha \cdot \lambda_1) \injects M(\lambda_1) \implies M(\mu_1) \injects M(\lambda_1)
 .\end{align*}
 
+### Step 7
+
+
+
 
 
 
