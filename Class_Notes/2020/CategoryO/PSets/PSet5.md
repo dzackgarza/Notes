@@ -82,15 +82,14 @@ M(\mu)  = M(s_\alpha s_\beta \cdot \mu') \injects M(s_\beta \cdot \mu') &\inject
 ### Step 2
 We now define
 \begin{align*}
-\lambda' \definedas w\inv \lambda = s_\beta s_\alpha \lambda
+\lambda' \definedas w\inv \lambda = s_\beta s_\alpha \cdot \lambda
 \end{align*}
 
 and the parallel list of weights
 \begin{align*}
 \lambda_0 &= \lambda \\
-\lambda_1 &= s_\beta \lambda \\
-\lambda_2 &= s_\alpha s_\beta \lambda \definedas \lambda' \\
-\lambda_0 &= ? \\
+\lambda_1 &= s_\beta \cdot \lambda \\
+\lambda_2 &= s_\alpha s_\beta \cdot \lambda \definedas \lambda'
 .\end{align*}
 
 
