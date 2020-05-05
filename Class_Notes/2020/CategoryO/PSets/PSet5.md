@@ -150,6 +150,7 @@ s_\alpha \mu_0 - s_1 \lambda_0 = s_\alpha (\mu_0 - \lambda_0) &= d_1 \beta_0
 \end{align*}
 
 where $c_1$ is negative and $b_1$ is positive, and we already know that $\beta_1 = \beta_0 = \alpha$ by a direct computation.
+Thus we have $\mu_1 = s_\alpha \lambda_1$.
 
 
 
