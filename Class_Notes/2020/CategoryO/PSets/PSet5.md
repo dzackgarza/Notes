@@ -113,8 +113,8 @@ $$
 $$
 we compute 
 \begin{align*}
-s_{\beta_0} &= (s_\alpha s_\beta)\inv s_\alpha (s\alpha s_\beta) = s_\gamma  \\
-s_{\beta_1} &= s\alpha \inv s_\alpha s_\alpha = s_\alpha \\
+s_{\beta_0} &= (s_\alpha s_\beta)\inv s_\alpha (s_\alpha s_\beta) = s_\gamma  \\
+s_{\beta_1} &= s_\alpha \inv s_\alpha s_\alpha = s_\alpha \\
 s_{\beta_2} &\definedas s_\alpha \\
 \end{align*}
 
