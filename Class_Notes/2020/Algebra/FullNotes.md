@@ -64,3 +64,9 @@
 
 !include sections/2020-04-15.md
 
+!include sections/2020-04-20.md
+
+!include sections/2020-04-22.md
+
+!include sections/2020-04-27.md
+
