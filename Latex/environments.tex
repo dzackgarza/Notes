@@ -142,4 +142,13 @@
 }
 \newtheorem{problem}{Problem}
 
-
+\newtheoremstyle{warning}% name of the style to be used
+  {0em}% measure of space to leave above the theorem. E.g.: 3pt
+  {2em}% measure of space to leave below the theorem. E.g.: 3pt
+  {\normalfont}% name of font to use in the body of the theorem
+  {\parindent}% measure of space to indent
+  {\itshape}% name of head font
+  {}% punctuation between head and body
+  {}% space after theorem head; " " = normal interword space
+  {\thmnote{W: #3}}% Manually specify head
+\newtheorem{warning}{Warning}
