@@ -723,3 +723,8 @@ Kolmogorov
 thm
 linebreak
 TBD
+operads
+cosimplicial
+operad
+Goodwillie
+Goodwillie's
