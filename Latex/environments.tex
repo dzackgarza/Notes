@@ -148,9 +148,15 @@
 \newtheorem{problem}{Problem}
 
 
-\newcommand*{\TakeFourierOrnament}[1]{{%
-\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
-\newcommand*{\danger}{\TakeFourierOrnament{66}}
+%\newcommand*{\TakeFourierOrnament}[1]{{%
+%\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
+%\newcommand*{\danger}{\TakeFourierOrnament{66}}
+\usepackage{stackengine}
+\usepackage{scalerel}
+\newcommand\danger[1][3ex]{%
+  \renewcommand\stacktype{L}%
+  \scaleto{\stackon[1.3pt]{\color{red}$\triangle$}{\tiny\bfseries !}}{#1}%
+}
 
 \newtheoremstyle{warning}% name
   {0em}%         Space above, empty = `usual value'
@@ -159,7 +165,7 @@
   {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
   {\bfseries}% Thm head font
   {:}%        Punctuation after thm head
-  {0em}% Space after thm head: \newline = linebreak
+  {1em}% Space after thm head: \newline = linebreak
   {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{warning}
 \newtheorem*{warning}{Warning}
