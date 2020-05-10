@@ -147,6 +147,11 @@
 }
 \newtheorem{problem}{Problem}
 
+
+\newcommand*{\TakeFourierOrnament}[1]{{%
+\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
+\newcommand*{\danger}{\TakeFourierOrnament{66}}
+
 \newtheoremstyle{warning}% name
   {0em}%         Space above, empty = `usual value'
   {1em}%         Space below
@@ -154,7 +159,7 @@
   {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
   {\bfseries}% Thm head font
   {:}%        Punctuation after thm head
-  {2em}% Space after thm head: \newline = linebreak
-  {AA \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
+  {}% Space after thm head: \newline = linebreak
+  {BB \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{warning}
 \newtheorem*{warning}{Warning}
