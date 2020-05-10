@@ -142,13 +142,14 @@
 }
 \newtheorem{problem}{Problem}
 
-\newtheoremstyle{warning}% name of the style to be used
-  {0em}% measure of space to leave above the theorem. E.g.: 3pt
-  {2em}% measure of space to leave below the theorem. E.g.: 3pt
-  {\normalfont}% name of font to use in the body of the theorem
-  {\parindent}% measure of space to indent
-  {\itshape}% name of head font
-  {.}% punctuation between head and body
-  {}% space after theorem head; " " = normal interword space
-  {ASEDSADAS \thmname{#1} \thmnote{\itshape{(#3)}}}%         Thm head spec
+\newtheoremstyle{warning}% name
+  {0em}%         Space above, empty = `usual value'
+  {1em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
+\theoremstyle{warning}
 \newtheorem{warning}{Warning}
