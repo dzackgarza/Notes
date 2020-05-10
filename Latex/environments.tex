@@ -159,7 +159,7 @@
   {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
   {\bfseries}% Thm head font
   {:}%        Punctuation after thm head
-  {}% Space after thm head: \newline = linebreak
-  {BB \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
+  {0em}% Space after thm head: \newline = linebreak
+  {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{warning}
 \newtheorem*{warning}{Warning}
