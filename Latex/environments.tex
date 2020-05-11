@@ -1,3 +1,8 @@
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{solution}{Solution}
+
 % Theorem Styles
 \usepackage[framemethod=tikz]{mdframed}
 % Boxes around theorem environments.
@@ -35,7 +40,7 @@
   breakable,
   enhanced jigsaw,
   opacityback=0.0,
-  colframe=cyan
+  colframe=orange
 }
 \newtheorem{proposition}[theorem]{Proposition}
 \tcolorboxenvironment{lemma}{
@@ -44,7 +49,7 @@
   breakable,
   enhanced jigsaw,
   opacityback=0.2,
-  colframe=cyan
+  colframe=orange
 }
 \newtheorem{lemma}[theorem]{Lemma}
 % Claim
@@ -61,13 +66,12 @@
 
 % Corollary
 \tcolorboxenvironment{corollary}{
-  colback=cyan,
   boxrule=1pt,
   boxsep=0pt,
   breakable,
   enhanced jigsaw,
   opacityback=0.1,
-  colframe=cyan
+  colframe=orange
 }
 \newtheorem{corollary}[theorem]{Corollary}
 
@@ -121,26 +125,6 @@
 }
 \newtheorem{definition}{Definition}[theorem]
 
-% Break Environment
-\makeatletter
-\newtheoremstyle{break}% name
-  {}%         Space above, empty = `usual value'
-  {2em}%         Space below
-  {
-    \addtolength{\@totalleftmargin}{2.5em}
-    \addtolength{\linewidth}{-2.5em}
-    \parshape 1 2.5em \linewidth
-  }% Body font
-  {}%         Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries}% Thm head font
-  {.}%        Punctuation after thm head
-  {\newline}% Space after thm head: \newline = linebreak
-  {}%         Thm head spec
-\makeatother
-
-\theoremstyle{break}
-\newtheorem{example}{Example}[section]
-
 % Problem Style
 \newtheoremstyle{problem} % name
   {0em}                   % Space above, empty = `usual value'
@@ -163,3 +147,24 @@
 \newtheorem{problem}{Problem}
 
 
+%\newcommand*{\TakeFourierOrnament}[1]{{%
+%\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
+%\newcommand*{\danger}{\TakeFourierOrnament{66}}
+\usepackage{stackengine}
+\usepackage{scalerel}
+\newcommand\danger[1][3ex]{%
+  \renewcommand\stacktype{L}%
+  \scaleto{\stackon[1.3pt]{\color{red}$\triangle$}{\tiny\bfseries !}}{#1}%
+}
+
+\newtheoremstyle{warning}% name
+  {0em}%         Space above, empty = `usual value'
+  {1em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {:}%        Punctuation after thm head
+  {0.5em}% Space after thm head: \newline = linebreak
+  {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
+\theoremstyle{warning}
+\newtheorem*{warning}{Warning}

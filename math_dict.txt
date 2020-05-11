@@ -719,3 +719,12 @@ homotopies
 bigraded
 Dualizing
 Precalculus
+Kolmogorov
+thm
+linebreak
+TBD
+operads
+cosimplicial
+operad
+Goodwillie
+Goodwillie's
