@@ -730,3 +730,5 @@ Goodwillie
 Goodwillie's
 unknot
 operadic
+varphi
+suchthat
