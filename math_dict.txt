@@ -732,3 +732,4 @@ unknot
 operadic
 varphi
 suchthat
+categorification
