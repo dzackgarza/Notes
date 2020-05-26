@@ -206,7 +206,7 @@ is the limit of a sequence of points in $R(v)$.
 A Small Ball Avoids Critical Points in the Image
 
 - Surround $(s_0, t_0)$ by a ball $B_\eps(s_0, t_0) \subset R(v)^c$
-- We can choose $\eps$ small enough and $M\gg 1$ big enough, defining $$\mathbf{M} = [-M, M] \subset \RR,$$ such that several properties hold:
+- We can choose $\eps$ small enough and $M\gg 1$ big enough, defining $$\mathbb{M} = [-M, M] \subset \RR,$$ such that several properties hold:
 
 ## Step 1: Exclude critical points $\intersect$ multiple points
 \scriptsize
@@ -216,7 +216,7 @@ A Small Ball Avoids Critical Points in the Image
 
 1. Translate to far enough to get a point outside the image of the ball: 
   \begin{align*}
-(s, t) \in \mathbf{M}^c &\cross [t_0-\eps, t_0+\eps]\subset \RR \cross I \implies \\
+(s, t) \in \mathbb{M}^c &\cross [t_0-\eps, t_0+\eps]\subset \RR \cross I \implies \\
   v(s, t) \intersect v(B_\eps(s_0, t_0) = \emptyset &\qtext{and} x^\pm(t) \not \in v(B_\eps(s_0, t_0))
   .\end{align*}
   \scriptsize
@@ -252,16 +252,16 @@ Combine 1 and 2 to show that
 
 \scriptsize 
 
-3. $$\abs{\mathbf{M}_C}\definedas \abs{\qty{\mathbf{M} \cross I} \intersect C(v)} < \infty$$ 
+3. $$\abs{\mathbb{M}_C}\definedas \abs{\qty{\mathbb{M} \cross I} \intersect C(v)} < \infty$$ 
       since it's the intersection of a compact and a discrete set
-  - Perturb $(s_0, t_0)$ so that $$(s, t) \in \mathbf{M}_C \implies v(s_0, t_0) \neq v(s, t).$$
+  - Perturb $(s_0, t_0)$ so that $$(s, t) \in \mathbb{M}_C \implies v(s_0, t_0) \neq v(s, t).$$
     - Possible since $(s_0, t_0) \not\in C(v) \implies v$ is non-constant in a neighborhood of $(s_0, t_0)$.
   - Decrease $\eps$ so that 
-    $$v(B_\eps(s_0, t_0)) \intersect v(\mathbf{M}_C) = \emptyset.$$
+    $$v(B_\eps(s_0, t_0)) \intersect v(\mathbb{M}_C) = \emptyset.$$
 
 ## Step 1: Exclude critical points $\intersect$ multiple points
 
-$$v(B_\eps(s_0, t_0)) \intersect v(\mathbf{M}_C) = \emptyset.$$
+$$v(B_\eps(s_0, t_0)) \intersect v(\mathbb{M}_C) = \emptyset.$$
 \scriptsize
 This means that in the thick strip containing $(s_0, t_0)$, no critical points land in its image.
 
@@ -278,7 +278,7 @@ Conclude that we *only* have to consider injectivity, not critical points that a
 
 - Define the set of multiple points over $s_0$:
 $$
-\mathbf{S}_M(t_0) = \theset{s_1, \cdots, s_N} =\theset{s_i \in [-M, M] \suchthat v(s_i, t_0) = v(s_0, t_0)}
+\mathbb{S}_M(t_0) = \theset{s_1, \cdots, s_N} =\theset{s_i \in [-M, M] \suchthat v(s_i, t_0) = v(s_0, t_0)}
 ,$$
   
   - Finite, since infinite $\implies$ limit point $\implies \dd{v}{s} = 0.~ \Rightarrow\!\Leftarrow$
@@ -296,7 +296,7 @@ $$
 
 \scriptsize 
 
-- In words: for every $\eps$, we can find a $\delta\dash$box $\Delta_0 \ni (s_0, t_0)$ such that every point in $\Delta_0$ is a multiple point over *some* point in an epsilon ball around *some* point in $\mathbf{S}_M(t_0)$.
+- In words: for every $\eps$, we can find a $\delta\dash$box $\Delta_0 \ni (s_0, t_0)$ such that every point in $\Delta_0$ is a multiple point over *some* point in an epsilon ball around *some* point in $\mathbb{S}_M(t_0)$.
 
 - Fix $\eps' <\eps/2$ form Step 1 and apply the lemma to $\eps'$ to produce $\delta$ and $\Delta_0$.
 - Apply the lemma: shrink $\Delta_0$ to a closed delta ball $\bar B_\delta(s_0, t_0)$. 
@@ -313,11 +313,11 @@ $$
 
 \scriptsize
 $$
-\mathbf{S}_M(t_0) = \theset{s_1, \cdots, s_N} =\theset{s_i \in [-M, M] \suchthat v(s_i, t_0) = v(s_0, t_0)}
+\mathbb{S}_M(t_0) = \theset{s_1, \cdots, s_N} =\theset{s_i \in [-M, M] \suchthat v(s_i, t_0) = v(s_0, t_0)}
 $$
   
 
-- So partition the ball up: define $\Sigma_j$: all multiple points over $s_j \in \mathbf{S}_M(t_0)$.
+- So partition the ball up: define $\Sigma_j$: all multiple points over $s_j \in \mathbb{S}_M(t_0)$.
 - Take smaller $\rho\dash$ball some $(s_\star, t_\star) \in \Sigma_1^\circ$, choose $\eps'$ small enough such that 
   $$
   B_\rho(s_\star, t_\star) \intersect \qty{ [s_1-\eps', s_1 + \eps'] \cross [t_0-\delta, t_0 + \delta] } = \emptyset
@@ -360,7 +360,7 @@ $$
 
 - Define
 \begin{align*}
-\mathcal{F}: \mathrm{C}^{\infty}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) & \longrightarrow \mathrm{C}^{\infty}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) \\
+\mathcal{F}: \mathrm{C}^{\infty}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow \mathrm{C}^{\infty}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
 w &\longmapsto \qty{\dd{}{s} + J\cdot \dd{}{t}  }w
 \end{align*}
 
@@ -368,7 +368,7 @@ w &\longmapsto \qty{\dd{}{s} + J\cdot \dd{}{t}  }w
 
 ## Step 3: Final Contradiction
 \begin{align*}
-\mathcal{F}: \mathrm{C}^{\infty}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) & \longrightarrow \mathrm{C}^{\infty}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) \\
+\mathcal{F}: \mathrm{C}^{\infty}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow \mathrm{C}^{\infty}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
 w &\longmapsto \qty{\dd{}{s} + J\cdot \dd{}{t}  }w
 \end{align*}
 
@@ -584,7 +584,7 @@ What we're trying to prove
 
 - Define
 \begin{align*}
-L: W^{1, p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) \\
+L: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
 Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s, t) Y
 \end{align*}
 
@@ -597,7 +597,7 @@ Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t
 ## 8.8: Replacing $L$
 
 \begin{align*}
-L: W^{1, p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) \\
+L: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
 Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s, t) Y
 \end{align*}
 
@@ -633,7 +633,7 @@ R^\pm \in \mcs \definedas \theset{R: I \to \Sp(2n; \RR) \suchthat R(0) = \id, ~~
 \scriptsize
 - Prop 8.8.2: Construct an operator
 \begin{align*}
-L_{1}: W^{1, p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) \\
+L_{1}: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
 Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
 \end{align*}
 where $S: \RR \to\mat(2n; \RR)$ is a path of diagonal matrices depending on $\ind(R^\pm(t))$; then 
@@ -641,7 +641,7 @@ $$\ind(L) = \ind(L_1) = \ind(R^-(t)) - \ind (R^+(t)).$$
 
 - Idea of proof: take a homotopy of operators
   \begin{align*}
-  L_{\lambda}: W^{1, p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) \\
+  L_{\lambda}: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
   Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S_{\lambda}(s, t) Y
   \end{align*}
   which are all Fredholm and all have the same index, then take time 1.
@@ -650,7 +650,7 @@ $$\ind(L) = \ind(L_1) = \ind(R^-(t)) - \ind (R^+(t)).$$
 ## 8.8: Index of $L_1$
 
 \begin{align*}
-L_{1}: W^{1, p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) \\
+L_{1}: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
 Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
 \end{align*}
 
