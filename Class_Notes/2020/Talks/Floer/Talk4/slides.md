@@ -153,7 +153,7 @@ J_0^1           &       &        & \\
 
 ## Outline
 
-We had a path of diagonal matrices:
+$L_1$ used a path of diagonal matrices:
 \begin{align*}
 S(s) \definedas \left(\begin{array}{cc}
 a_{1}(s) & 0 \\
