@@ -3,6 +3,7 @@ title: 'Section 8.6 - 8.8: Setup for Computing the Index'
 theme: Frankfurt 
 colortheme: beetle
 eader-includes: |
+  \usepackage{dot2texi}
   \usepackage{beamerthemesplit}
 ---
 
@@ -43,6 +44,24 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 \begin{align*}
 \ind(L)\stackrel{\text{Thm?}}{=} \mu(R^-(t)) - \mu(R^+(t)) = \mu(x) - \mu(y)
 .\end{align*}
+
+## From Yesterday
+
+- Proved 8.8.2: 
+
+
+\begin{dot2tex}
+digraph G {
+     main -> parse -> execute;
+     main -> init;
+     main -> cleanup;
+     execute -> make_string;
+     execute -> printf
+     init -> make_string;
+     main -> printf;
+     execute -> compare;
+}
+\end{dot2tex}
 
 # Section 1
 
