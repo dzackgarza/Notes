@@ -47,7 +47,8 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 
 ## From Yesterday
 
-- Han proved 8.8.2 and 8.8.4:
+- Han proved 8.8.2 and 8.8.4.
+- Today: 8.8.5 and 8.8.3.
 
 \begin{tikzpicture}[>=latex',line join=bevel,scale=0.6]
   \pgfsetlinewidth{1bp}
