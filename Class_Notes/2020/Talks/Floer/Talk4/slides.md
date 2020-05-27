@@ -47,8 +47,7 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 
 ## From Yesterday
 
-- Proved 8.8.2: 
-
+- Han proved 8.8.2 and 8.8.4:
 
 \begin{tikzpicture}[>=latex',line join=bevel,scale=0.6]
   \pgfsetlinewidth{1bp}
@@ -67,39 +66,38 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
   \draw (118.29bp,162.0bp) ellipse (118.08bp and 18.0bp);
-  \draw (118.29bp,162.0bp) node {8.8.4: ind(L) = ind(L\_0)};
+  \draw (118.29bp,162.0bp) node {8.8.4: $\ind(L_0) = \ind(L)$};
 \end{scope}
   % Node: 8.8.2: \ind(L_1) = \ind(L)
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
   \draw (118.29bp,90.0bp) ellipse (118.08bp and 18.0bp);
-  \draw (118.29bp,90.0bp) node {8.8.2: ind(L\_1) = ind(L)};
+  \draw (118.29bp,90.0bp) node {8.8.2: $\ind(L_1) = \ind(L)$};
 \end{scope}
   % Node: 8.8.1: \ind(L) = \mu(R^-(t)) - \mu(R^+(s)) = \mu(x) - \mu(y)
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
   \draw (271.29bp,18.0bp) ellipse (271.05bp and 18.0bp);
-  \draw (271.29bp,18.0bp) node {8.8.1: ind(L) = mu(R\^{}-(t)) - mu(R\^{}+(s)) = mu(x) - mu(y)};
+  \draw (271.29bp,18.0bp) node {8.8.1: $\ind(L) = k^- - k^+ = \mu(x) - \mu(y)$};
 \end{scope}
   % Node: 8.8.5: \dim \ker F, F*
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
   \draw (425.29bp,162.0bp) ellipse (100.18bp and 18.0bp);
-  \draw (425.29bp,162.0bp) node {8.8.5: dim ker F, F*};
+  \draw (425.29bp,162.0bp) node {8.8.5: $\dim \ker F, F^*$};
 \end{scope}
   % Node: 8.8.3: mathrm{Ind}(L_1) = k- - k+
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
   \draw (425.29bp,90.0bp) ellipse (170.87bp and 18.0bp);
-  \draw (425.29bp,90.0bp) node {8.8.3: mathrm\{Ind\}(L\_1) = k- - k+};
+  \draw (425.29bp,90.0bp) node {8.8.3: $\Ind(L_1) = k^- - k^+$};
 \end{scope}
 %
 \end{tikzpicture}
-% End of code
 
 
 
