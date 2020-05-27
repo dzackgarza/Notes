@@ -39,6 +39,11 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 .\end{align*}
 \normalsize
 
+- WTS 8.8.1:
+\begin{align*}
+\ind(L)\stackrel{\text{Thm?}}{=} \mu(R^-(t)) - \mu(R^+(t)) = \mu(x) - \mu(y)
+.\end{align*}
+
 # Section 1
 
 ## Outline
