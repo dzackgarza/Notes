@@ -102,20 +102,21 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 %
 \end{tikzpicture}
 
-## Outline
 
-- In the book: computes index assuming kernel computation first
-- We'll try computing the kernel first, then using that to determine the index
-
-
-
-# 8.8.5: $\dim \ker F, F^*$ 
+# 8.8.3: $\ind(L_1) = k^- - k^+$ 
 
 ## Setup
 
-Used in the proof of 8.8.3, $\ind(L_1) = k^- - k^+$.
+Used in the proof of 8.8.3 ($\ind(L_1) = k^- - k^+$.
 
-Setup:
+Recall
+\begin{align*}
+L: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
+Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s, t) Y
+\end{align*}
+
+
+## Setup
 
 We have
 \begin{align*}
@@ -143,8 +144,8 @@ J_0^1           &       &        & \\
 ## Outline
 
 
+# 8.8.5: $\dim \ker F, F^*$ 
 
-# 8.8.3: $\ind(L_1) = k^- - k^+$ 
 
 ## Outline
 
