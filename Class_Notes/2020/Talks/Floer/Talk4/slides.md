@@ -115,6 +115,17 @@ L: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrighta
 Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s, t) Y
 \end{align*}
 
+\begin{align*}
+L_{1}: W^{1, p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbf{R} \times S^{1} ; \mathbf{R}^{2 n}\right) \\
+Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
+\end{align*}
+
+Define its adjoint
+\begin{align*}
+L_{1}^{\star}: W^{1, q}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{q}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
+Z & \longmapsto-\frac{\partial Z}{\partial s}+J_{0} \frac{\partial Z}{\partial t}+^{t} S(s) Z
+\end{align*}
+
 
 ## Setup
 
