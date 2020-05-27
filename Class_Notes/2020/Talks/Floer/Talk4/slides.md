@@ -1,6 +1,6 @@
 ---
 title: 'Section 8.6 - 8.8: Setup for Computing the Index'
-theme: Warsaw
+theme: Frankfurt 
 colortheme: beetle
 eader-includes: |
   \usepackage{beamerthemesplit}
