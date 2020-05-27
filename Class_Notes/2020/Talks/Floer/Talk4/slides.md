@@ -111,7 +111,30 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 
 # 8.8.5: $\dim \ker F, F^*$ 
 
-## Outline
+## Setup
+
+Used in the proof of 8.8.3, $\ind(L_1) = k^- - k^+$.
+
+Setup:
+
+We have
+\begin{align*}
+J_0^1 \definedas 
+\left[\begin{array}{cc}
+0 & -1 \\
+1 & 0
+\end{array}\right]
+\implies
+J_0 = 
+\begin{bmatrix}
+J_0^1           &       &        & \\
+                & J_0^1 &        & \\
+                &       & \ddots & \\
+                &       &        & J_0^1
+\end{bmatrix} \in \bigoplus_{i=1}^n \mat(2; \RR) 
+.\end{align*}
+
+
 
 ## Outline
 
