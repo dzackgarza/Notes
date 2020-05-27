@@ -27,9 +27,17 @@ S: \RR\cross S^1 &\to \mat(2n; \RR) \\
 S(s, t) &\converges{s\to\pm\infty}\to S^\pm(t)
 .\end{align*}
 
-- Section 8.7: Shows $L$ is Fredholm
 
+## Outline
 
+- Took $R^\pm: I \to \Sp(2n; \RR)$: symplectic paths associated to $S^\pm$
+- These paths defined $\mu(x), \mu(y)$
+- Section 8.7: 
+\scriptsize
+\begin{align*}
+R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\neq 0} \implies L \text{ is Fredholm}
+.\end{align*}
+\normalsize
 
 # Section 1
 
