@@ -105,10 +105,7 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
 
-## Setup
-
-Used in the proof of 8.8.3 ($\ind(L_1) = k^- - k^+$.
-
+## Recall 
 \begin{align*}
 L: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
 Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s, t) Y
@@ -120,17 +117,23 @@ L_{1}^{\star}: W^{1, q}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) &
 Z & \longmapsto-\frac{\partial Z}{\partial s}+J_{0} \frac{\partial Z}{\partial t}+S(s)^t Z
 \end{align*}
 
+\scriptsize
+Here ${1\over p} + {1\over q} = 1$ are conjugate exponents.
+\normalsize
+
+
 
 ## Setup
 
-Shorthand
 \begin{align*}
 L &= \dd{}{s} + J_0 \dd{}{t} + S(s, t) \\
 L_1 &= \dd{}{s} + J_0 \dd{}{t} + S(s) \\
-L_1^* &= -\dd{}{s} + J_0 \dd{}{t} + S(s)^t \\
+L_1^* &= -\dd{}{s} + J_0 \dd{}{t} + S(s)^t
 .\end{align*}
 
-We have
+- Since $\coker L_1 \cong \ker L_1^*$, it suffices to compute $\ker L_1^*$
+
+- We have
 \begin{align*}
 J_0^1 \definedas 
 \left[\begin{array}{cc}
