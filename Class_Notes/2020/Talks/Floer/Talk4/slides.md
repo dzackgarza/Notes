@@ -54,59 +54,52 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
   \pgfsetlinewidth{1bp}
 %%
 \pgfsetcolor{black}
-  % Edge: 8.8.4 -> 8.8.2
-  \draw [->] (34.447bp,143.7bp) .. controls (34.447bp,135.98bp) and (34.447bp,126.71bp)  .. (34.447bp,108.1bp);
-  % Edge: 8.8.2 -> 8.8.1
-  \draw [->] (44.42bp,72.765bp) .. controls (49.609bp,64.317bp) and (56.07bp,53.799bp)  .. (67.229bp,35.633bp);
-  % Edge: 8.8.5: Kernel Computation -> 8.8.3: $\mathrm{Ind}(L_1) = k^- - k^+$
-  \draw [->] (372.45bp,143.7bp) .. controls (372.45bp,135.98bp) and (372.45bp,126.71bp)  .. (372.45bp,108.1bp);
-  % Edge: 8.8.3 -> 8.8.1
-  \draw [->] (111.24bp,72.765bp) .. controls (105.93bp,64.317bp) and (99.321bp,53.799bp)  .. (87.902bp,35.633bp);
-  % Node: 8.8.4
+  % Edge: 8.8.4: \ind(L) = \ind(L_0) -> 8.8.2: \ind(L_1) = \ind(L)
+  \draw [->] (118.29bp,143.7bp) .. controls (118.29bp,135.98bp) and (118.29bp,126.71bp)  .. (118.29bp,108.1bp);
+  % Edge: 8.8.2: \ind(L_1) = \ind(L) -> 8.8.1: \ind(L) = \mu(R^-(t)) - \mu(R^+(s)) = \mu(x) - \mu(y)
+  \draw [->] (153.78bp,72.765bp) .. controls (175.03bp,63.038bp) and (202.29bp,50.567bp)  .. (234.4bp,35.878bp);
+  % Edge: 8.8.5: \dim \ker F, F* -> 8.8.3: mathrm{Ind}(L_1) = k- - k+
+  \draw [->] (425.29bp,143.7bp) .. controls (425.29bp,135.98bp) and (425.29bp,126.71bp)  .. (425.29bp,108.1bp);
+  % Edge: 8.8.3: mathrm{Ind}(L_1) = k- - k+ -> 8.8.1: \ind(L) = \mu(R^-(t)) - \mu(R^+(s)) = \mu(x) - \mu(y)
+  \draw [->] (388.79bp,72.411bp) .. controls (367.45bp,62.71bp) and (340.31bp,50.372bp)  .. (308.32bp,35.834bp);
+  % Node: 8.8.4: \ind(L) = \ind(L_0)
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (34.45bp,162.0bp) ellipse (34.39bp and 18.0bp);
-  \draw (34.447bp,162.0bp) node {8.8.4};
+  \draw (118.29bp,162.0bp) ellipse (118.08bp and 18.0bp);
+  \draw (118.29bp,162.0bp) node {8.8.4: ind(L) = ind(L\_0)};
 \end{scope}
-  % Node: 8.8.2
+  % Node: 8.8.2: \ind(L_1) = \ind(L)
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (34.45bp,90.0bp) ellipse (34.39bp and 18.0bp);
-  \draw (34.447bp,90.0bp) node {8.8.2};
+  \draw (118.29bp,90.0bp) ellipse (118.08bp and 18.0bp);
+  \draw (118.29bp,90.0bp) node {8.8.2: ind(L\_1) = ind(L)};
 \end{scope}
-  % Node: 8.8.1
+  % Node: 8.8.1: \ind(L) = \mu(R^-(t)) - \mu(R^+(s)) = \mu(x) - \mu(y)
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (77.45bp,18.0bp) ellipse (34.39bp and 18.0bp);
-  \draw (77.447bp,18.0bp) node {8.8.1};
+  \draw (271.29bp,18.0bp) ellipse (271.05bp and 18.0bp);
+  \draw (271.29bp,18.0bp) node {8.8.1: ind(L) = mu(R\^{}-(t)) - mu(R\^{}+(s)) = mu(x) - mu(y)};
 \end{scope}
-  % Node: 8.8.5: Kernel Computation
+  % Node: 8.8.5: \dim \ker F, F*
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (372.45bp,162.0bp) ellipse (133.48bp and 18.0bp);
-  \draw (372.45bp,162.0bp) node {8.8.5: Kernel Computation};
+  \draw (425.29bp,162.0bp) ellipse (100.18bp and 18.0bp);
+  \draw (425.29bp,162.0bp) node {8.8.5: dim ker F, F*};
 \end{scope}
-  % Node: 8.8.3: $\mathrm{Ind}(L_1) = k^- - k^+$
+  % Node: 8.8.3: mathrm{Ind}(L_1) = k- - k+
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (372.45bp,90.0bp) ellipse (198.47bp and 18.0bp);
-  \draw (372.45bp,90.0bp) node {8.8.3: $\mathrm{Ind}(L_1) = k^{-} - k^{+}$};
-\end{scope}
-  % Node: 8.8.3
-\begin{scope}
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \draw (121.45bp,90.0bp) ellipse (34.39bp and 18.0bp);
-  \draw (121.45bp,90.0bp) node {8.8.3};
+  \draw (425.29bp,90.0bp) ellipse (170.87bp and 18.0bp);
+  \draw (425.29bp,90.0bp) node {8.8.3: mathrm\{Ind\}(L\_1) = k- - k+};
 \end{scope}
 %
 \end{tikzpicture}
-
+% End of code
 
 
 
