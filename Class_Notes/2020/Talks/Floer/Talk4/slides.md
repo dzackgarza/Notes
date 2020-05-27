@@ -153,7 +153,7 @@ J_0^1           &       &        & \\
 
 ## Outline
 
-$L_1$ used a path of diagonal matrices which is constant in a neighborhood of infinity:
+$L_1$ used a path of diagonal matrices which is constant near infinity:
 \begin{align*}
 S(s) \definedas \left(\begin{array}{cc}
 a_{1}(s) & 0 \\
@@ -164,7 +164,9 @@ a_{i}^{+} & \text {if } s \geq s_{0}
 \end{array}\right.
 .\end{align*}
 
-
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{figures/image_2020-05-27-19-40-39.png} 
+\end{center}
 
 ## Outline
 
