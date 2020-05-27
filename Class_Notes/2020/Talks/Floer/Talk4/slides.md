@@ -153,7 +153,7 @@ J_0^1           &       &        & \\
 
 ## Outline
 
-$L_1$ used a path of diagonal matrices:
+$L_1$ used a path of diagonal matrices which is constant in a neighborhood of infinity:
 \begin{align*}
 S(s) \definedas \left(\begin{array}{cc}
 a_{1}(s) & 0 \\
