@@ -158,7 +158,7 @@ We had a path of diagonal matrices:
 S(s) \definedas \left(\begin{array}{cc}
 a_{1}(s) & 0 \\
 0 & a_{2}(s)
-\end{array}\right), \quad \text { with } a_{i}(s)\definedas_? \left\{\begin{array}{ll}
+\end{array}\right), \quad \text { with } a_{i}(s)\definedas \left\{\begin{array}{ll}
 a_{i}^{-} & \text {if } s \leq-s_{0} \\
 a_{i}^{+} & \text {if } s \geq s_{0}
 \end{array}\right.
