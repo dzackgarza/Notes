@@ -7,7 +7,7 @@ eader-includes: |
   \usepackage{beamerthemesplit}
 ---
 
-# Intro 
+# Summary/Outline 
 
 ## Outline
 
@@ -102,17 +102,32 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 %
 \end{tikzpicture}
 
+## Outline
+
+- In the book: computes index assuming kernel computation first
+- We'll try computing the kernel first, then using that to determine the index
 
 
 
-# Section 1
+# 8.8.5: $\dim \ker F, F^*$ 
 
 ## Outline
 
-asdsdas
+## Outline
+
+## Outline
+
+## Outline
 
 
-# Section 2
+
+# 8.8.3: $\ind(L_1) = k^- - k^+$ 
+
+## Outline
+
+## Outline
+
+## Outline
 
 ## Outline
 
