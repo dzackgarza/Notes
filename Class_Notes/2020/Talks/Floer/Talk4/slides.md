@@ -15,4 +15,15 @@ What we're trying to prove:
 - 8.1.5: $(d\mcf)_u$ is a Fredholm operator of index $\mu(x) - \mu(y)$.
 
 
+# Section 1
 
+## Outline
+
+asdsdas
+
+
+# Section 2
+
+## Outline
+
+asdsadas
