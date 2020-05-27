@@ -50,7 +50,7 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 - Proved 8.8.2: 
 
 
-\begin{tikzpicture}[>=latex',line join=bevel,]
+\begin{tikzpicture}[>=latex',line join=bevel,scale=0.6]
   \pgfsetlinewidth{1bp}
 %%
 \pgfsetcolor{black}
