@@ -123,17 +123,16 @@ Here ${1\over p} + {1\over q} = 1$ are conjugate exponents.
 
 
 
-## Setup
+## Reductions
 
 \begin{align*}
-L &= \dd{}{s} + J_0 \dd{}{t} + S(s, t) \\
-L_1 &= \dd{}{s} + J_0 \dd{}{t} + S(s) \\
 L_1^* &= -\dd{}{s} + J_0 \dd{}{t} + S(s)^t
 .\end{align*}
 
 - Since $\coker L_1 \cong \ker L_1^*$, it suffices to compute $\ker L_1^*$
 
 - We have
+
 \begin{align*}
 J_0^1 \definedas 
 \left[\begin{array}{cc}
@@ -150,9 +149,22 @@ J_0^1           &       &        & \\
 \end{bmatrix} \in \bigoplus_{i=1}^n \mat(2; \RR) 
 .\end{align*}
 
-
+- This allows us to reduce to the $n=1$ case.
 
 ## Outline
+
+We had a path of diagonal matrices:
+\begin{align*}
+S(s) \definedas \left(\begin{array}{cc}
+a_{1}(s) & 0 \\
+0 & a_{2}(s)
+\end{array}\right), \quad \text { with } a_{i}(s)\definedas_? \left\{\begin{array}{ll}
+a_{i}^{-} & \text {if } s \leq-s_{0} \\
+a_{i}^{+} & \text {if } s \geq s_{0}
+\end{array}\right.
+.\end{align*}
+
+
 
 ## Outline
 
