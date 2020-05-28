@@ -625,7 +625,8 @@ S_{k^+}          & = \begin{bmatrix}
 &= \begin{dcases}
 k^- - k^+ & k^- > k^+ \\
 0 & \text{else}
-\end{dcases}
+\end{dcases}  \\
+\implies \ind(L_1) &= k^- - k^+
 .\end{align*}
 
 ## Case 2: $k^+ \not\equiv k^- \equiv n \mod 2$
@@ -662,5 +663,11 @@ S_{k^+}          & = \begin{bmatrix}
 
 \begin{align*}
 \dim \ker L_1 
-&= 2\cdot \# \theset{\ell \in \ZZ \suchthat 2\ell \in (n-1-k^-, n-2-k^+)} + 1
+&= 2\cdot \# \theset{\ell \in \ZZ \suchthat 2\ell \in (n-1-k^-, n-2-k^+)} + 1 \\
+&=
+\begin{dcases}
+\qty{k^- - k^+ - 1} + 1 & k^- > k^+ \\
+1 & \text{otherwise}
+\end{dcases}
+\implies \ind(L_1) &= k^- - k^+
 .\end{align*}
