@@ -759,3 +759,5 @@ homotope
 unmute
 pushout
 loc
+Arzela
+Ascoli

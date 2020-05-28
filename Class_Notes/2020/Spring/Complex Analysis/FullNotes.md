@@ -50,5 +50,17 @@
 
 !include sections/2020-04-06.md
 
-!include sections/Appendix.md
+!include sections/2020-04-08.md
+
+!include sections/2020-04-10.md
+
+!include sections/2020-04-13.md
+
+!include sections/2020-04-15.md
+
+!include sections/2020-04-17.md
+
+!include sections/2020-04-20.md
+
+!include sections/2020-04-27.md
 
