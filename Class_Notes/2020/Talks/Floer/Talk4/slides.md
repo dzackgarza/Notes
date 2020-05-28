@@ -103,7 +103,7 @@ R^\pm \in \mcs \definedas \theset{R(t) \suchthat R(0) = \id, ~ \det(R(1) - \id)\
 \end{tikzpicture}
 
 
-# 8.8.3: $\ind(L_1) = k^- - k^+$ 
+# 8.8.5: $\dim \ker F, F^*$ 
 
 ## Recall 
 \begin{align*}
@@ -170,8 +170,6 @@ a_{i}^{+} & \text {if } s \geq s_{0}
 
 
 ## Statement of Later Lemma (8.8.5)
-
-> Stated now, used in current lemma, proved afterward.
 
 Let $p>2$ and define
 \begin{align*}
@@ -250,11 +248,33 @@ In words:
 Step 1: Transform to Cauchy-Riemann Equations
 
 - Write $a(s) \definedas a_1(s) = a_2(s)$.
-- Start with equation on $\RR^2$, $$Y(s, t) = \qty{ Y_1(s, t), Y_2(s, t) }$$
-- Replace with equation on $\CC$: $$Y(s, y) = Y_1(s, t) + i Y_2(s, t)$$.
+- Start with equation on $\RR^2$, $$\vector Y(s, t) = \left[ Y_1(s, t), Y_2(s, t) \right].$$
+- Replace with equation on $\CC$: $$\vector Y(s, t) = Y_1(s, t) + i Y_2(s, t).$$
+
+## Proof of Assertion 1
+
+- Rewrite the PDE $F(Y) = 0$ as $\bar \del Y + S(s) Y = 0$, i.e.
+\begin{align*}
+\frac{\partial}{\partial s}
+\vector Y
++\left(\begin{array}{cc}
+0 & -1 \\
+1 & 0
+\end{array}\right) \frac{\partial}{\partial t}\left(\begin{array}{l}
+Y_{1} \\
+Y_{2}
+\end{array}\right)+\left(\begin{array}{cc}
+a(s) & 0 \\
+0 & a(s)
+\end{array}\right)\left(\begin{array}{l}
+Y_{1} \\
+Y_{2}
+\end{array}\right)=0
+.\end{align*}
 
 
-# 8.8.5: $\dim \ker F, F^*$ 
+
+# 8.8.3: $\ind(L_1) = k^- - k^+$ 
 
 
 ## Outline
