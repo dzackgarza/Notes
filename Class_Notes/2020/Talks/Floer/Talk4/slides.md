@@ -316,11 +316,11 @@ C_2 + a^+ s, & s \geq \sigma_0 \\
 
 - Deduce that the solutions of the system are given by
   \begin{align*}
-  \tilde{Y}(s+i t)
-  =\sum_{\ell \in \mathbf{Z}} c_{\ell} u^\ell  
+\tilde Y (u) =\sum_{\ell \in \mathbf{Z}} c_{\ell} u^\ell  
+  \implies \tilde{Y}(s+i t)
   =\sum_{\ell \in \mathbf{Z}} c_{\ell} e^{(s+i t) 2 \pi \ell}
   .\end{align*}
-  where $c_\ell \in \CC$ and this sequence converges for all $s, t$.
+  where $\theset{c_\ell}_{\ell\in\ZZ} \subset \CC$ converges for all $s, t$.
 
 
 
