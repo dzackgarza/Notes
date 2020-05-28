@@ -668,6 +668,7 @@ S_{k^+}          & = \begin{bmatrix}
 - Take $a_1(s) = a_2(s)$ everywhere except the $n-1$st block, where we can assume $\sup_{s\in \RR} \norm{S(s)} < 1$.
 - Assertion 2 applies and we get
 
+\scriptsize
 \begin{align*}
 \dim \ker L_1 
 &= 2\cdot \# \theset{\ell \in \ZZ \suchthat 2\ell \in (n-1-k^-, n-2-k^+)} + 1 \\
@@ -683,8 +684,12 @@ S_{k^+}          & = \begin{bmatrix}
 \begin{dcases}
 k^+ - k^- + 1, & k^+ > k^- \\
 0 & \text{otherwise}
-\end{dcases}
+\end{dcases} \\
 \implies \ind(L_1) &= 
-\qty{k^- - k^+ -1 \over 2} + 1 - \qty{k^+ - k^- + 1 \over 2} =
+\qty{ {k^- - k^+ -1 \over 2} + 1} - \qty{k^+ - k^- + 1 \over 2} =
 k^- - k^+
 .\end{align*}
+
+> The other 2 cases involve different matrices $S_{k^\pm}$, but proceed similarly.
+
+$\qed$
