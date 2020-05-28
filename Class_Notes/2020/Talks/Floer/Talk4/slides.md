@@ -415,6 +415,26 @@ e^{K'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)}
 \end{align*}
 \normalsize
 
+- $\ell \neq 0$: Need $\alpha_\ell = \beta_\ell = 0$ **or** $2\pi \ell > a^-$
+- $\ell = 0$: Need both
+  - $\alpha_0 = 0$ or $a^- < 0$ and
+  - $\beta_0 = 0$ or $a^- < 0$.
+
+\scriptsize
+\begin{align*}
+Y(s, t) = \sum_{\ell\in \ZZ}
+e^{\qty{2\pi\ell - a^+}s}
+\begin{bmatrix}
+e^C \qty{\alpha_\ell \cos(2\pi\ell t) - \beta_\ell \sin(2\pi\ell t) }  \\
+e^{C'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)} 
+\end{bmatrix}
+.\end{align*}
+\normalsize
+
+- $\ell \neq 0$: Need $\alpha_\ell = \beta_\ell = 0$ **or** $2\pi \ell < a^+$
+- $\ell = 0$: Need both
+  - $\alpha_0 = 0$ or $a^+ > 0$ and
+  - $\beta_0 = 0$ or $a^+ > 0$.
 
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
