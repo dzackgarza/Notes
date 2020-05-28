@@ -253,25 +253,28 @@ Step 1: Transform to Cauchy-Riemann Equations
 
 ## Proof of Assertion 1
 
-- Rewrite the PDE $F(Y) = 0$ as $\bar \del Y + S(s) Y = 0$, i.e.
+- Rewrite the PDE 
 \begin{align*}
+F(Y) = 0 \leadsto \bar \del Y + S(s) Y = 0
+\\ \\ 
 \frac{\partial}{\partial s}
 \vector Y
 +\left(\begin{array}{cc}
 0 & -1 \\
 1 & 0
-\end{array}\right) \frac{\partial}{\partial t}\left(\begin{array}{l}
-Y_{1} \\
-Y_{2}
-\end{array}\right)+\left(\begin{array}{cc}
+\end{array}\right) \frac{\partial}{\partial t}
+\vector Y
++\left(\begin{array}{cc}
 a(s) & 0 \\
 0 & a(s)
-\end{array}\right)\left(\begin{array}{l}
-Y_{1} \\
-Y_{2}
-\end{array}\right)=0
+\end{array}\right)
+\vector Y
+=0
 .\end{align*}
 
+- Change of variables: want to reduce to $\bar \del \tilde Y = 0$
+
+- 
 
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
