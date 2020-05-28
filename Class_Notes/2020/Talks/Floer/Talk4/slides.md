@@ -626,13 +626,13 @@ S_{k^+}          & = \begin{bmatrix}
 &= \begin{dcases}
 k^- - k^+ & k^- > k^+ \\
 0 & \text{else}
-\end{dcases}  \\
+\end{dcases}  \\ \\
 \dim \ker L_1^* &= 2\cdot \#\theset{ \ell \in \ZZ \suchthat 2\ell \in (k^- - n + 1, k^+ - n + 1)} \\
 &= 
 \begin{dcases}
 k^+ - k^- & k^+ > k^- \\
 0 & \text{otherwise}
-\end{dcases}
+\end{dcases} \\ \\
 \implies \ind(L_1) &= k^- - k^+
 .\end{align*}
 
