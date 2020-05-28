@@ -437,12 +437,12 @@ e^{C'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)}
   - $\alpha_0 = 0$ or $a^+ > 0$ and
   - $\beta_0 = 0$ or $a^+ > 0$.
 
-## Condition on $L^p$ Solutions: Small Tails
+## Counting Solutions 
 
 \begin{align*}
 \begin{cases}
 \alpha_\ell = \beta_\ell = 0 \text{ or } 2\pi\ell \in (a^-, a^+) & \ell\neq 0 \\
-\qty{\alpha_0 = 0 \txor a^- < 0 < a^+} \txand \qty{\beta_0 = 0 \txor a^- < 0 < a^+} & \ell = 0
+\qty{\alpha_0 = 0 \txor 0 \in (a^-, a^+)} \txand \qty{\beta_0 = 0 \txor 0\in (a^-, a^+)} & \ell = 0
 \end{cases}
 .\end{align*}
 
@@ -457,11 +457,27 @@ Compute dimension of space of solutions:
 2\pi\ell \in (a^-, a^+) } 
 +  2\cdot \indic{0 \in (a^-, a^+)}
 \\
-&=2 \cdot \#\left\{\ell \in \mathbb{Z} | a^{-}<2 \pi \ell<a^{+}\right\}
+&=2 \cdot \#\left\{\ell \in \mathbb{Z} \suchthat 2\pi\ell \in (a^-, a^+) \right\}
 .\end{align*}
 
-> Note: not sure what $\ZZ^*$ is: maybe $\ZZ\smz$.
+> Note: not sure what $\ZZ^*$ is: most likely $\ZZ\smz$.
 \normalsize
+
+## Counting Solutions
+
+Use this to deduce $\dim \ker F^*$:
+
+- $Y\in \ker F^* \iff Z(s, t) \definedas Y(-s, t)$ is in the kernel of the operator
+\begin{align*}
+\tilde F: W^{1, q}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) &\longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) \\
+Z &\mapsto \frac{\partial Z}{\partial s}+J_{0} \frac{\partial Z}{\partial t}+S({\color{red}-s}) Y
+.\end{align*}
+
+- Obtain $\ker F^* \cong \ker \tilde F$.
+
+- Formula for $\dim \ker \tilde F$ almost identical to previous formula, just swapping $a^-$ and $a^+$.
+
+$\qed_1$
 
 
 
