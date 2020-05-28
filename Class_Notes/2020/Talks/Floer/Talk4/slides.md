@@ -569,7 +569,12 @@ $\qed_2$
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
 
-## Outline
+## Statement and Outline
+
+Statement: let $k^\pm \definedas \ind(R^\pm)$; then $\ind(L_1) = k^- - k^+$.
+
+- Breaks into parity case work.
+
 
 ## Outline
 
