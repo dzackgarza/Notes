@@ -588,7 +588,7 @@ Statement: let $k^\pm \definedas \ind(R^\pm)$; then $\ind(L_1) = k^- - k^+$.
 \end{center}
 
 
-## Case 1: $k^- \equiv k^+ \equiv n \mod 2$
+## Case 1: $k^+ \equiv k^- \equiv n \mod 2$
 
 \scriptsize
 
@@ -628,8 +628,30 @@ k^- - k^+ & k^- > k^+ \\
 \end{dcases}
 .\end{align*}
 
-## Outline
+## Case 2: $k^+ \not\equiv k^- \equiv n \mod 2$
+\scriptsize
+\begin{align*}
+S_{k-}           & = \begin{bmatrix}
+-\pi             &                   &        &  &          &          &              & \\
+                 & -\pi              &        &  &          &          &              & \\
+                 &                   & \ddots &  &          &          &              & \\
+&                   &        &  & -{\color{red}\eps}\pi &          &              & \\
+&                   &        &  &          & -{\color{red}\eps}\pi &              & \\
+                 &                   &        &  &          &          & (n-1-k^-)\pi & \\
+                 &                   &        &  &          &          &              & (n-1-k^-)\pi \\
+\end{bmatrix} \\
+S_{k^+}          & = \begin{bmatrix}
+-\pi             &                   &        &  &          &          &              & \\
+                 & -\pi              &        &  &          &          &              & \\
+                 &                   & \ddots &  &          &          &              & \\
+                 &                   &        &  & \eps     &          &              & \\
+                 &                   &        &  &          & -\eps    &              & \\
+                 &                   &        &  &          &          & (n-2-k^+)\pi & \\
+                 &                   &        &  &          &          &              & (n-2-k^+)\pi \\
+\end{bmatrix}
+.\end{align*}
+\normalsize
 
-## Outline
 
-asdsadas
+
+
