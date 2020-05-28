@@ -220,19 +220,13 @@ Suppose $a_i^\pm \not \in 2\pi \ZZ$.
 
 In words:
 
-1. If $S(s)$ is a scalar matrix, set $a^\pm = a_1^\pm = a_2^\pm$ to the limiting scalar and count the integer multiples of $2\pi$ between $a^-$ and $a^+$.
+1. If $S(s)$ is a scalar matrix, set $a^\pm = a_1^\pm = a_2^\pm$ to the limiting scalars and count the integer multiples of $2\pi$ between $a^-$ and $a^+$.
 
-\scriptsize
-\begin{align*}
-S(s) \definedas \left(\begin{array}{cc}
-a_{1}(s) & 0 \\
-0 & a_{2}(s)
-\end{array}\right), \quad \text { with } a_{i}(s)\definedas \left\{\begin{array}{ll}
-a_{i}^{-} & \text {if } s \leq-s_{0} \\
-a_{i}^{+} & \text {if } s \geq s_{0}
-\end{array}\right.
-.\end{align*}
-\normalsize
+2. Otherwise, if $S$ is uniformly bounded by 1, count the number of entries the flip from positive to negative as $s$ goes from $-\infty\to \infty$.
+
+\begin{center}
+\includegraphics[width = \textwidth]{figures/image_2020-05-27-20-10-07.png} 
+\end{center}
 
 
 # 8.8.5: $\dim \ker F, F^*$ 
