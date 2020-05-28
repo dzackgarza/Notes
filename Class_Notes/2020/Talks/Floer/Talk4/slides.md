@@ -505,7 +505,14 @@ We use the following:
 
 ## Proof of Assertion 2
 
-- We know (?) 
+\scriptsize
+\begin{align*}
+F: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) &\longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) \\
+Y &\mapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
+.\end{align*}
+\normalsize
+
+- Given as a fact:
 \begin{align*}
 \vector Y \in \ker F \implies 
 \dd{}{s}\vector Y = 
@@ -519,7 +526,7 @@ We use the following:
 
 - Therefore we can solve to obtain
 \begin{align*}
-\vector Y(s) = \vector c_0 \exp{-\vector A(s)}, \quad \vector A(s) = \int_0^s -\vector a(\sigma) ~d\sigma
+\vector Y(s) = \vector c_0 \exp{-\vector A(s)}\qtext{where} \vector A(s) = \int_0^s -\vector a(\sigma) ~d\sigma
 .\end{align*}
 
 ## Proof of Assertion 2
