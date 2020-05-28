@@ -251,7 +251,7 @@ Step 1: Transform to Cauchy-Riemann Equations
 - Start with equation on $\RR^2$, $$\vector Y(s, t) = \left[ Y_1(s, t), Y_2(s, t) \right].$$
 - Replace with equation on $\CC$: $$\vector Y(s, t) = Y_1(s, t) + i Y_2(s, t).$$
 
-## Proof of Assertion 1
+## Assertion 1, Step 1: Reduce to CR
 
 - Expand definition of the PDE 
 \begin{align*}
@@ -282,7 +282,7 @@ a(s) & 0 \\
 .\end{align*}
 
 
-## Proof of Assertion 1
+## Assertion 1, Step 1: Reduce to CR
 
 Can choose (and then solve)
 \begin{align*}
@@ -309,6 +309,7 @@ C_2 + a^+ s, & s \geq \sigma_0 \\
   
 - The real/imaginary parts of $\tilde Y$ are $C^\infty$ and harmonic.
 
+## Assertion 1, Step 2: Solve CR
 
 
 
