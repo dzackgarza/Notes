@@ -255,7 +255,7 @@ Step 1: Transform to Cauchy-Riemann Equations
 
 - Expand definition of the PDE 
 \begin{align*}
-F(Y) = 0 \leadsto \qty{\bar \del + S} Y = 0
+F(\vector Y) = 0 \leadsto \bar \del\vector Y + S \vector Y = 0
 \\ \\ 
 \frac{\partial}{\partial s}
 \vector Y
@@ -276,10 +276,33 @@ a(s) & 0 \\
 
 - Choose $B \in \GL(1, \CC)$ such that $\bar\del B + SB = 0$
 
-- Set $Y  = B\tilde Y$, so 
+- Set $Y  = B\tilde Y$, which (?) reduces the previous equation to
 \begin{align*}
-\qty{\bar\del + S} Y = \qty{\bar \del + S}B\tilde Y = 0
+\bar\del \tilde Y = 0
 .\end{align*}
+
+
+## Proof of Assertion 1
+
+Can choose 
+\begin{align*}
+B = \begin{bmatrix}
+  b(s) ) 0 \\
+  0 & b(s)
+\end{bmatrix} \qtext{where} \dd{b}{s} = -a(s)b(s) \\ \\
+b(s) = \exp{\int_0^s -a(t) ~dt} \definedas \exp{-A(s)}
+.\end{align*}
+
+- Remark: for some constants $C_i$, we have
+\begin{align*}
+A(s) = \begin{cases}
+C_1 + a^- s & s \leq -\sigma_0 \\
+C_2 + a^+ s & s \geq \sigma_0 \\
+\end{cases}
+.\end{align*}
+
+
+
 
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
