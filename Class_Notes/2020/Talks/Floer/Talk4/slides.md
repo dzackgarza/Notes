@@ -619,6 +619,7 @@ S_{k^+}          & = \begin{bmatrix}
 - Take $a_1(s) = a_2(s)$ so $a_1^\pm = a^\pm$
 - Apply the proved lemma to obtain
 
+\scriptsize
 \begin{align*}
 \dim \ker L_1 
 &= 2\cdot \# \theset{\ell \in \ZZ \suchthat 2\ell \in (n-1-k^-, n-1-k^+)} \\
@@ -626,6 +627,12 @@ S_{k^+}          & = \begin{bmatrix}
 k^- - k^+ & k^- > k^+ \\
 0 & \text{else}
 \end{dcases}  \\
+\dim \ker L_1^* &= 2\cdot \#\theset{ \ell \in \ZZ \suchthat 2\ell \in (k^- - n + 1, k^+ - n + 1)} \\
+&= 
+\begin{dcases}
+k^+ - k^- & k^+ > k^- \\
+0 & \text{otherwise}
+\end{dcases}
 \implies \ind(L_1) &= k^- - k^+
 .\end{align*}
 
