@@ -340,8 +340,8 @@ Use $e^{s+it} = e^s\qty{\cos(t) + i\sin (t)}$ to write in real coordinates:
 Use
 \begin{align*}
 Y = B\tilde Y = \begin{bmatrix}
-e^{A(s)} & 0 \\
-0 & e^{A(s)}
+e^{-A(s)} & 0 \\
+0 & e^{-A(s)}
 \end{bmatrix} \tilde Y
 \end{align*}
 
