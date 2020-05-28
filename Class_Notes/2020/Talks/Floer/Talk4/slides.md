@@ -165,7 +165,7 @@ a_{i}^{+} & \text {if } s \geq s_{0}
 .\end{align*}
 
 \begin{center}
-\includegraphics[width = \textwidth]{figures/image_2020-05-27-19-40-39.png} 
+\includegraphics[width = \textwidth]{figures/image_2020-05-27-20-08-18.png} 
 \end{center}
 
 ## Outline
