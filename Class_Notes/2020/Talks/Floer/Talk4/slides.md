@@ -255,7 +255,7 @@ Step 1: Transform to Cauchy-Riemann Equations
 
 - Expand definition of the PDE 
 \begin{align*}
-F(Y) = 0 \leadsto \bar \del Y + S(s) Y = 0
+F(Y) = 0 \leadsto \qty{\bar \del + S} Y = 0
 \\ \\ 
 \frac{\partial}{\partial s}
 \vector Y
