@@ -151,7 +151,7 @@ J_0^1           &       &        & \\
 
 - This allows us to reduce to the $n=1$ case.
 
-## Outline
+## Setup 
 
 $L_1$ used a path of diagonal matrices constant near $\infty$:
 \begin{align*}
@@ -169,7 +169,10 @@ a_{i}^{+} & \text {if } s \geq s_{0}
 \end{center}
 
 
-## Statement of Lemma
+## Statement of Later Lemma (8.8.5)
+
+> Stated now, used to prove current lemma, and proved afterward.
+
 Let $p>2$ and define
 \begin{align*}
 F: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) &\longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) \\
