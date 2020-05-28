@@ -165,10 +165,25 @@ a_{i}^{+} & \text {if } s \geq s_{0}
 .\end{align*}
 
 \begin{center}
-\includegraphics[width = \textwidth]{figures/image_2020-05-27-20-08-18.png} 
+\includegraphics[width = \textwidth]{figures/image_2020-05-27-20-10-07.png} 
 \end{center}
 
-## Outline
+
+## Statement of Lemma
+
+Let $p>2$ and define
+\begin{align*}
+F: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) &\longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) \\
+Y &\mapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
+.\end{align*}
+
+> This looks like $L_1$ for $n=1$?
+\scriptsize
+\begin{align*}
+L_{1}: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
+Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
+.\end{align*}
+\normalsize
 
 ## Outline
 
