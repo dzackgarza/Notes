@@ -633,7 +633,7 @@ k^- - k^+ & k^- > k^+ \\
 k^+ - k^- & k^+ > k^- \\
 0 & \text{otherwise}
 \end{dcases} \\ \\
-\implies \ind(L_1) &= \qty{k^- - k^+} - (k^+ - k^-) k^- - k^+
+\implies \ind(L_1) &= \qty{k^- - k^+ \over 2} - \qty{k^+ - k^- \over 2} = k^- - k^+
 .\end{align*}
 
 ## Case 2: $k^+ \not\equiv k^- \equiv n \mod 2$
@@ -675,6 +675,9 @@ S_{k^+}          & = \begin{bmatrix}
 \begin{dcases}
 \qty{k^- - k^+ - 1} + 1 & k^- > k^+ \\
 1 & \text{otherwise}
-\end{dcases}
+\end{dcases} \\ \\
+\dim \ker L_1^*
+&=
+2\cdot \#\theset{\ell \in \ZZ \suchthat 2\ell \in (k^- - n + 1, k^+ - n + 2)} \\
 \implies \ind(L_1) &= k^- - k^+
 .\end{align*}
