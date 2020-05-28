@@ -284,22 +284,31 @@ a(s) & 0 \\
 
 ## Proof of Assertion 1
 
-Can choose 
+Can choose (and then solve)
 \begin{align*}
 B = \begin{bmatrix}
-  b(s) ) 0 \\
+  b(s) & 0 \\
   0 & b(s)
 \end{bmatrix} \qtext{where} \dd{b}{s} = -a(s)b(s) \\ \\
-b(s) = \exp{\int_0^s -a(t) ~dt} \definedas \exp{-A(s)}
+\implies b(s) = \exp{\int_0^s -a(\sigma) ~d\sigma} \definedas \exp{-A(s)}
 .\end{align*}
 
-- Remark: for some constants $C_i$, we have
+Remarks:
+
+\scriptsize
+- For some constants $C_i$, we have
+
 \begin{align*}
 A(s) = \begin{cases}
-C_1 + a^- s & s \leq -\sigma_0 \\
-C_2 + a^+ s & s \geq \sigma_0 \\
+C_1 + a^- s, & s \leq -\sigma_0 \\
+C_2 + a^+ s, & s \geq \sigma_0 \\
 \end{cases}
 .\end{align*}
+
+- The new $\tilde Y$ satisfies CR, is continuous and $L^1_{\text{loc}}$, so elliptic regularity $\implies C^\infty$.
+  
+- The real/imaginary parts of $\tilde Y$ are $C^\infty$ and harmonic.
+
 
 
 
