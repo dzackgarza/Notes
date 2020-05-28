@@ -311,6 +311,16 @@ C_2 + a^+ s, & s \geq \sigma_0 \\
 
 ## Assertion 1, Step 2: Solve CR
 
+- Identify $s+it \in \RR\cross S^1$ with $u = e^{2\pi z}$
+- Apply Laurent's theorem to $\tilde Y(u)$ on $\CC\smz$ to obtain an expansion of $\tilde Y$ in $z$. 
+
+- Deduce that the solutions of the system are given by
+  \begin{align*}
+  \tilde{Y}(s+i t)
+  =\sum_{\ell \in \mathbf{Z}} c_{\ell} u^\ell  
+  =\sum_{\ell \in \mathbf{Z}} c_{\ell} e^{(s+i t) 2 \pi \ell}
+  .\end{align*}
+  where $c_\ell \in \CC$ and this sequence converges for all $s, t$.
 
 
 
