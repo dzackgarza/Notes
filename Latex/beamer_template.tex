@@ -52,6 +52,8 @@ $endif$
 \setbeamerfont{itemize/enumerate subitem}{size=\footnotesize}
 
 \usepackage{amssymb,amsmath}
+\usepackage{bbm}
+\newcommand{\indic}[1]{\mathbbm{1}\left[#1\right]}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifxetex
@@ -256,6 +258,7 @@ $endif$
 \bibliography{$biblio-files$}
 
 $endif$
+\newcommand{\indic}[1]{\mathbbm{1}\left[#1\right]}
 $endif$
 $if(biblatex)$
 \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$

@@ -449,13 +449,16 @@ e^{C'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)}
 - Finitely many such $\ell$ that satisfy these conditions
 - Sufficient conditions for $Y(s, t) \in W^{1, p}$.
 
-- Compute dimension of space of solutions:
+Compute dimension of space of solutions:
+\scriptsize
 \begin{align*}
 \operatorname{dim} \operatorname{Ker} F 
-&=2 \#\theset{\ell \in \mathbf{Z}^{\star} | a^{-}<2 \pi \ell<a^{+}} 
-&=2 \#\left\{\ell \in \mathbf{Z} | a^{-}<2 \pi \ell<a^{+}\right\}
+&=2 \cdot \#\theset{\ell \in \mathbb{Z}^{\star} \suchthat a^{-}<2 \pi \ell<a^{+}} 
++  2\cdot \indic{a^- < 0 < a^+}
+\\
+&=2 \#\left\{\ell \in \mathbb{Z} | a^{-}<2 \pi \ell<a^{+}\right\}
 .\end{align*}
-
+\normalsize
 
 
 
