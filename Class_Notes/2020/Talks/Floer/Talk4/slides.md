@@ -507,17 +507,14 @@ We use the following:
 
 - We know (?) 
 \begin{align*}
-\vector a(s) \definedas
-\begin{bmatrix}
-a_1(s) \\
-a_2(s)
-\end{bmatrix}, \quad 
-\vector Y \definedas
-\begin{bmatrix}
-Y_1  \\
-Y_2 
-\end{bmatrix} \in \ker F \implies 
-\dd{\vector Y}{s} = -\vector a(s) \vector Y
+\vector Y \in \ker F \implies 
+\dd{}{s}\vector Y = 
+\vector a(s)\vector Y ~~~
+~~~\definedas \begin{bmatrix}
+-a_1(s) & 0 \\
+0 & -a_2(s)
+\end{bmatrix}
+\vector Y
 .\end{align*}
 
 - Therefore we can solve to obtain
