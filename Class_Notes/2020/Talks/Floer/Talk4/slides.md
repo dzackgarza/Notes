@@ -274,11 +274,11 @@ a(s) & 0 \\
 
 - Change of variables: want to reduce to $\bar \del \tilde Y = 0$
 
-- Choose $B \in \GL(1, \CC)$ such that $\qty{\bar\del + S}B = 0$
+- Choose $B \in \GL(1, \CC)$ such that $\bar\del B + SB = 0$
 
 - Set $Y  = B\tilde Y$, so 
 \begin{align*}
-\bar\del \tilde Y \definedas \bar\del
+\qty{\bar\del + S} Y = \qty{\bar \del + S}B\tilde Y = 0
 .\end{align*}
 
 
