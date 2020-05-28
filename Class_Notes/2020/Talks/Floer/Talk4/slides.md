@@ -403,7 +403,8 @@ Then
 Y\in L^p \iff \text{exponential terms} \converges{\ell\to\infty}\to 0
 .\end{align*}
 
-## 
+## Condition on $L^p$ Solutions: Small Tails
+
 \scriptsize
 \begin{align*}
 Y(s, t) = \sum_{\ell\in \ZZ}
@@ -435,6 +436,28 @@ e^{C'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)}
 - $\ell = 0$: Need both
   - $\alpha_0 = 0$ or $a^+ > 0$ and
   - $\beta_0 = 0$ or $a^+ > 0$.
+
+## Condition on $L^p$ Solutions: Small Tails
+
+\begin{align*}
+\begin{cases}
+\alpha_\ell = \beta_\ell = 0 \text{ or } 2\pi\ell \in (a^-, a^+) & \ell\neq 0 \\
+\qty{\alpha_0 = 0 \txor a^- < 0 < a^+} \txand \qty{\beta_0 = 0 \txor a^- < 0 < a^+} & \ell = 0
+\end{cases}
+.\end{align*}
+
+- Finitely many such $\ell$ that satisfy these conditions
+- Sufficient conditions for $Y(s, t) \in W^{1, p}$.
+
+- Compute dimension of space of solutions:
+\begin{align*}
+\operatorname{dim} \operatorname{Ker} F 
+&=2 \#\theset{\ell \in \mathbf{Z}^{\star} | a^{-}<2 \pi \ell<a^{+}} 
+&=2 \#\left\{\ell \in \mathbf{Z} | a^{-}<2 \pi \ell<a^{+}\right\}
+.\end{align*}
+
+
+
 
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
