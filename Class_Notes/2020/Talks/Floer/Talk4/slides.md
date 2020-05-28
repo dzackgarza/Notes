@@ -542,7 +542,6 @@ Y &\mapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s
 Y_i(s) = c_i e^{-A_i(s)}, \quad
 A_i(s) &= \int_0^s -a_i(\sigma) ~d\sigma
 .\end{align*}
-\normalsize
 
 - As before, for some constants $C_{j, i}$,
 \begin{align*}
@@ -552,20 +551,23 @@ C_{1, i} + a_i^-\cdot s & s \leq -\sigma_0 \\
 C_{2, i} + a_i^+\cdot s & s \geq  \sigma_0 \\
 \end{dcases}
 .\end{align*}
+\normalsize
 
-- Thus $Y_i \in W^{1, p} \iff 0 \in (a_i^-, a_i^+)$, establishing the formula for $\dim \ker F$.
-- Obtain
+- Thus 
+\begin{align*}
+Y_i \in W^{1, p} \iff 0 \in (a_i^-, a_i^+)
+,\end{align*}
+
+  establishing 
 
 \begin{align*}
-\dim \ker F = \#\left\{i \in\{1,2\} \suchthat ~a_{i}^{-}<0 < a_{i}^{+}\right\}\\
+\dim \ker F = \#\left\{i \in\{1,2\} \suchthat 0 \in (a_i^-, a_i^+)
+\right\}
 .\end{align*}
 
 $\qed_2$
 
-
-
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
-
 
 ## Outline
 
