@@ -253,7 +253,7 @@ Step 1: Transform to Cauchy-Riemann Equations
 
 ## Proof of Assertion 1
 
-- Rewrite the PDE 
+- Expand definition of the PDE 
 \begin{align*}
 F(Y) = 0 \leadsto \bar \del Y + S(s) Y = 0
 \\ \\ 
@@ -274,7 +274,12 @@ a(s) & 0 \\
 
 - Change of variables: want to reduce to $\bar \del \tilde Y = 0$
 
-- 
+- Choose $B \in \GL(1, \CC)$ such that $\qty{\bar\del + S}B = 0$
+
+- Set $Y  = B\tilde Y$, so 
+\begin{align*}
+\bar\del \tilde Y \definedas \bar\del
+.\end{align*}
 
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
