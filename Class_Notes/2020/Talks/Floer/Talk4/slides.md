@@ -479,6 +479,29 @@ Z &\mapsto \frac{\partial Z}{\partial s}+J_{0} \frac{\partial Z}{\partial t}+S({
 
 $\qed_1$
 
+## Assertion 2
+
+**Assertion 2**:
+  Suppose $\sup_{s\in \RR} \norm{S(s)} < 1$, then
+  \begin{align*}
+  \operatorname{dim} \operatorname{Ker} F &= 
+  \#\left\{i \in\{1,2\} \suchthat ~a_{i}^{-}<0 < a_{i}^{+}\right\}\\
+  \operatorname{dim} \operatorname{Ker} F^{*} 
+  &=\#\left\{i \in\{1,2\} \suchthat ~ a_{i}^{+}<0 <  a_{i}^{-} \right\}
+  .\end{align*}
+
+
+We use the following:
+
+- Lemma 8.8.7: 
+\scriptsize
+\begin{align*}
+\sup_{s\in \RR} \norm{ S(s) } < 1 \implies \text{the elements in }\ker F,~ \ker F^* \text{ are independent of }t
+.\end{align*}
+
+- Proof: from Proposition 10.1.7, in subsection 10.4.a.
+
+\normalsize
 
 
 
