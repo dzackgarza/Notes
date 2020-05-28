@@ -171,7 +171,7 @@ a_{i}^{+} & \text {if } s \geq s_{0}
 
 ## Statement of Later Lemma (8.8.5)
 
-> Stated now, used to prove current lemma, and proved afterward.
+> Stated now, used in current lemma, proved afterward.
 
 Let $p>2$ and define
 \begin{align*}
@@ -179,7 +179,7 @@ F: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) &\longrightarro
 Y &\mapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
 .\end{align*}
 
-Note: this seems to be $L_1$ for $n=1$:
+> Note: $F$ is $L_1$ for $n=1$:
 \scriptsize
 \begin{align*}
 L_{1}: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
@@ -230,6 +230,28 @@ In words:
 \begin{center}
 \includegraphics[width = \textwidth]{figures/image_2020-05-27-20-10-07.png} 
 \end{center}
+
+## Proof of Assertion 1
+\scriptsize
+1.  Suppose $a_1(s) = a_2(s)$ and set $a^\pm \definedas a_1^\pm = a_2^\pm$.
+    Then
+
+\begin{align*}
+\operatorname{dim} \operatorname{Ker} F &=
+2 \cdot \#\left\{\ell \in \mathbb{Z} \suchthat 
+2\pi \ell \in (a^-, a+) \subset \RR \right \} \\
+\operatorname{dim} \operatorname{Ker} F^{*} &=
+2 \cdot \#\left\{\ell \in \mathbb{Z} \suchthat 
+2\pi\ell \in (a^+, a^-) \subset\RR
+\right\}
+.\end{align*}
+\normalsize
+
+Step 1: Transform to Cauchy-Riemann Equations
+
+- Write $a(s) \definedas a_1(s) = a_2(s)$.
+- Start with equation on $\RR^2$, $$Y(s, t) = \qty{ Y_1(s, t), Y_2(s, t) }$$
+- Replace with equation on $\CC$: $$Y(s, y) = Y_1(s, t) + i Y_2(s, t)$$.
 
 
 # 8.8.5: $\dim \ker F, F^*$ 
