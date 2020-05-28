@@ -323,6 +323,28 @@ C_2 + a^+ s, & s \geq \sigma_0 \\
   where $\theset{c_\ell}_{\ell\in\ZZ} \subset \CC$ converges for all $s, t$.
 
 
+## Assertion 1, Step 2: Solve CR
+
+Write in real coordinates as
+\scriptsize
+\begin{align*}
+\tilde{Y}(s, t)=\sum_{\ell \in \mathbf{Z}} e^{2 \pi s \ell}\left(\alpha_{\ell}\left(\begin{array}{c}
+\cos 2 \pi \ell t \\
+\sin 2 \pi \ell t
+\end{array}\right)+\beta_{\ell}\left(\begin{array}{c}
+-\sin 2 \pi \ell t \\
+\cos 2 \pi \ell t
+\end{array}\right)\right) \\
+\implies
+Y(s, t)=\sum_{\ell \in \mathbf{Z}} e^{2 \pi s \ell}\left(\alpha_{\ell}\left(\begin{array}{c}
+e^{-A(s)} \cos 2 \pi \ell t \\
+e^{-A(s)} \sin 2 \pi \ell t
+\end{array}\right)+\beta_{\ell}\left(\begin{array}{c}
+-e^{-A(s)} \sin 2 \pi \ell t \\
+e^{-A(s)} \cos 2 \pi \ell t
+\end{array}\right)\right)
+.\end{align*}
+\normalsize
 
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
