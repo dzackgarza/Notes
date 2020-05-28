@@ -325,7 +325,7 @@ C_2 + a^+ s, & s \geq \sigma_0 \\
 
 ## Assertion 1, Step 2: Solve CR
 
-Write in real coordinates as
+Use $e^{s+it} = e^s\qty{\cos(t) + i\sin (t)}$ to write in real coordinates:
 \scriptsize
 \begin{align*}
 \tilde{Y}(s, t)=\sum_{\ell \in \mathbb{Z}} e^{2 \pi s \ell}\left(\alpha_{\ell}\left(\begin{array}{c}
