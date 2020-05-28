@@ -679,5 +679,12 @@ S_{k^+}          & = \begin{bmatrix}
 \dim \ker L_1^*
 &=
 2\cdot \#\theset{\ell \in \ZZ \suchthat 2\ell \in (k^- - n + 1, k^+ - n + 2)} \\
-\implies \ind(L_1) &= k^- - k^+
+&=
+\begin{dcases}
+k^+ - k^- + 1, & k^+ > k^- \\
+0 & \text{otherwise}
+\end{dcases}
+\implies \ind(L_1) &= 
+\qty{k^- - k^+ -1 \over 2} + 1 - \qty{k^+ - k^- + 1 \over 2} =
+k^- - k^+
 .\end{align*}
