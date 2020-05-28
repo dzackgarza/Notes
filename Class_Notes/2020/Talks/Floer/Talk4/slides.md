@@ -572,8 +572,20 @@ $\qed_2$
 ## Statement and Outline
 
 Statement: let $k^\pm \definedas \ind(R^\pm)$; then $\ind(L_1) = k^- - k^+$.
+\scriptsize
 
-- Breaks into parity case work.
+- Consider four cases, depending on parity of $k^\pm - n$
+- Show all 4 lead to $\ind(L_1) = k^- - k^+$
+
+1. $k^- \equiv k^+ \equiv n \mod 2$.
+2. $k^- \equiv n, k^+ \equiv n-1 \mod 2$
+3. $k^- \equiv n-1, k^+ \equiv n \mod 2$. 
+4. $k^- \equiv k^+ \equiv n-1 \mod 2$
+\normalsize
+
+\begin{center}
+\includegraphics[width = 0.3\textwidth]{figures/image_2020-05-27-22-54-44.png} 
+\end{center}
 
 
 ## Outline
