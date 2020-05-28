@@ -177,7 +177,7 @@ F: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) &\longrightarro
 Y &\mapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
 .\end{align*}
 
-> This looks like $L_1$ for $n=1$?
+Note: this seems to be $L_1$ for $n=1$:
 \scriptsize
 \begin{align*}
 L_{1}: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) & \longrightarrow L^{p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2 n}\right) \\
@@ -185,7 +185,27 @@ Y & \longmapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t
 .\end{align*}
 \normalsize
 
-## Outline
+## Statement of Lemma 
+
+1.  Suppose $a_1(s) = a_2(s)$ and define $a^\pm \definedas a_1^\pm = a_2^\pm$.
+    Then
+
+\begin{align*}
+  \operatorname{dim} \operatorname{Ker} F &=
+  2 \cdot \#\left\{\ell \in \mathbb{Z} \suchthat 
+  ~~2\pi \ell \in (a^-, a+) \right \} \\
+  \operatorname{dim} \operatorname{Ker} F^{\star} &=
+  2 \cdot \#\left\{\ell \in \mathbf{Z} | a^{+}<2 \pi \ell<a^{-}\right\}
+.\end{align*}
+
+2.  Suppose $\sup_{s\in \RR} \norm{S(s)} < 1$, then
+    \begin{align*}
+    \operatorname{dim} \operatorname{Ker} F &= 
+    \#\left\{i \in\{1,2\} \suchthat ~a_{i}^{-}<0 \text { and } a_{i}^{+}>0\right\}\\
+    \operatorname{dim} \operatorname{Ker} F^{\star} 
+    &=\#\left\{i \in\{1,2\} \suchthat ~ a_{i}^{+}<0 \text { and } a_{i}^{-}>0\right\}
+    .\end{align*}
+
 
 
 # 8.8.5: $\dim \ker F, F^*$ 
