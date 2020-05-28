@@ -371,10 +371,33 @@ Y(s, t) = \sum_{\ell\in \ZZ}
 e^{2\pi\ell - a^-}
 \begin{bmatrix}
 e^K \qty{\alpha_\ell \cos(2\pi\ell t) - \beta_\ell \sin(2\pi\ell t) }  \\
-e^{K'} \qty{ } 
+e^{K'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)} 
 \end{bmatrix}
 .\end{align*}
 \normalsize
+
+## ?
+
+For $s\leq s_0$ we had
+\begin{align*}
+Y(s, t) = \sum_{\ell\in \ZZ}
+e^{2\pi\ell - a^-}
+\begin{bmatrix}
+e^K \qty{\alpha_\ell \cos(2\pi\ell t) - \beta_\ell \sin(2\pi\ell t) }  \\
+e^{K'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)} 
+\end{bmatrix}
+\end{align*}
+
+and similarly for $s\geq s_0$, for some constants $C, C'$ we have:
+\begin{align*}
+Y(s, t) = \sum_{\ell\in \ZZ}
+e^{2\pi\ell - a^+}
+\begin{bmatrix}
+e^C \qty{\alpha_\ell \cos(2\pi\ell t) - \beta_\ell \sin(2\pi\ell t) }  \\
+e^{C'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)} 
+\end{bmatrix}
+.\end{align*}
+\
 
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
