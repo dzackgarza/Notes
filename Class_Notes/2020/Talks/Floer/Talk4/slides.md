@@ -376,7 +376,7 @@ e^{K'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)}
 .\end{align*}
 \normalsize
 
-## ?
+## Condition on $L^p$ Solutions
 
 For $s\leq s_0$ we had
 \begin{align*}
@@ -397,7 +397,24 @@ e^C \qty{\alpha_\ell \cos(2\pi\ell t) - \beta_\ell \sin(2\pi\ell t) }  \\
 e^{C'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)} 
 \end{bmatrix}
 .\end{align*}
-\
+
+Then
+\begin{align*}
+Y\in L^p \iff \text{exponential terms} \converges{\ell\to\infty}\to 0
+.\end{align*}
+
+## 
+\scriptsize
+\begin{align*}
+Y(s, t) = \sum_{\ell\in \ZZ}
+e^{\qty{2\pi\ell - a^-}s}
+\begin{bmatrix}
+e^K \qty{\alpha_\ell \cos(2\pi\ell t) - \beta_\ell \sin(2\pi\ell t) }  \\
+e^{K'} \qty{ \alpha_\ell \sin(2\pi\ell t) + \beta_\ell \cos(2\pi \ell t)} 
+\end{bmatrix}
+\end{align*}
+\normalsize
+
 
 
 # 8.8.3: $\ind(L_1) = k^- - k^+$ 
