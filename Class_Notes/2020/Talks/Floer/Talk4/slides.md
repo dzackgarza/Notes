@@ -499,9 +499,60 @@ We use the following:
 \sup_{s\in \RR} \norm{ S(s) } < 1 \implies \text{the elements in }\ker F,~ \ker F^* \text{ are independent of }t
 .\end{align*}
 
-- Proof: from Proposition 10.1.7, in subsection 10.4.a.
+- Proof: in subsection 10.4.a.
 
 \normalsize
+
+## Proof of Assertion 2
+
+- We know (?) 
+\begin{align*}
+\vector a(s) \definedas
+\begin{bmatrix}
+a_1(s) \\
+a_2(s)
+\end{bmatrix}, \quad 
+\vector Y \definedas
+\begin{bmatrix}
+Y_1  \\
+Y_2 
+\end{bmatrix} \in \ker F \implies 
+\dd{\vector Y}{s} = -\vector a(s) \vector Y
+.\end{align*}
+
+- Therefore we can solve to obtain
+\begin{align*}
+\vector Y(s) = \vector c_0 \exp{-\vector A(s)}, \quad \vector A(s) = \int_0^s -\vector a(\sigma) ~d\sigma
+.\end{align*}
+
+## Proof of Assertion 2
+
+- Explicitly,
+\scriptsize
+\begin{align*}
+\begin{dcases}
+\dd{Y_1}{s} &= -a_1(s) Y_1 \\
+\dd{Y_s}{s} &= -a_2(s) Y_2 \\
+\end{dcases}
+\quad \implies \quad
+Y_i(s) = c_i e^{-A_i(s)}, \quad
+A_i(s) &= \int_0^s -a_i(\sigma) ~d\sigma
+.\end{align*}
+\normalsize
+
+- As before,
+\begin{align*}
+A_i(s) = 
+\begin{dcases}
+C_{1, i} + a_i^-\cdot s & s \leq -\sigma_0 \\
+C_{2, i} + a_i^+\cdot s & s \geq  \sigma_0 \\
+\end{dcases}
+.\end{align*}
+
+- Thus $Y_i \in W^{1, p} \iff 0 \in (a_i^-, a_i^+)$, establishing the formula for $\dim \ker F$.
+- Get formula for $\dim \ker F^*$ using $\tilde F$ as before.
+
+$\qed_2$
 
 
 
