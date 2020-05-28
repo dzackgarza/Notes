@@ -588,7 +588,31 @@ Statement: let $k^\pm \definedas \ind(R^\pm)$; then $\ind(L_1) = k^- - k^+$.
 \end{center}
 
 
-## Outline
+## Case 1: $k^- \equiv k^+ \equiv n \mod 2$
+
+\scriptsize
+
+\begin{align*}
+S_{k^-}          & = \begin{bmatrix}
+-\pi             &                   &        &  &      &      &              & \\
+                 & -\pi              &        &  &      &      &              & \\
+                 &                   & \ddots &  &      &      &              & \\
+                 &                   &        &  & -\pi &      &              & \\
+                 &                   &        &  &      & -\pi &              & \\
+                 &                   &        &  &      &      & (n-1-k^-)\pi & \\
+                 &                   &        &  &      &      &              & (n-1-k^-)\pi \\
+\end{bmatrix} \\
+S_{k^+}          & = \begin{bmatrix}
+-\pi             &                   &        &  &      &      &              & \\
+                 & -\pi              &        &  &      &      &              & \\
+                 &                   & \ddots &  &      &      &              & \\
+                 &                   &        &  & -\pi &      &              & \\
+                 &                   &        &  &      & -\pi &              & \\
+                 &                   &        &  &      &      & (n-1-k^+)\pi & \\
+                 &                   &        &  &      &      &              & (n-1-k^+)\pi \\
+\end{bmatrix}
+.\end{align*}
+
 
 ## Outline
 
