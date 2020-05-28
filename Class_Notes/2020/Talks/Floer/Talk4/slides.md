@@ -633,7 +633,7 @@ k^- - k^+ & k^- > k^+ \\
 k^+ - k^- & k^+ > k^- \\
 0 & \text{otherwise}
 \end{dcases} \\ \\
-\implies \ind(L_1) &= k^- - k^+
+\implies \ind(L_1) &= \qty{k^- - k^+} - (k^+ - k^-) k^- - k^+
 .\end{align*}
 
 ## Case 2: $k^+ \not\equiv k^- \equiv n \mod 2$
