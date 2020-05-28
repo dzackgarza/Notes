@@ -328,13 +328,15 @@ C_2 + a^+ s, & s \geq \sigma_0 \\
 Use $e^{s+it} = e^s\qty{\cos(t) + i\sin (t)}$ to write in real coordinates:
 \scriptsize
 \begin{align*}
-\tilde{Y}(s, t)=\sum_{\ell \in \mathbb{Z}} e^{2 \pi s \ell}\left(\alpha_{\ell}\left(\begin{array}{c}
-\cos 2 \pi \ell t \\
-\sin 2 \pi \ell t
-\end{array}\right)+\beta_{\ell}\left(\begin{array}{c}
--\sin 2 \pi \ell t \\
-\cos 2 \pi \ell t
-\end{array}\right)\right)
+\tilde{Y}(s, t)=\sum_{\ell \in \mathbb{Z}} e^{2 \pi s \ell}
+\begin{bmatrix}
+\cos(2\pi\ell t) & -\sin(2\pi \ell t) \\
+\sin(2\pi\ell t) & \cos(2\pi \ell t)
+\end{bmatrix}
+\begin{bmatrix}
+\alpha_\ell  \\
+\beta_\ell 
+\end{bmatrix}
 .\end{align*}
 
 Use
@@ -347,14 +349,19 @@ e^{-A(s)} & 0 \\
 
 to write
 \begin{align*}
-Y(s, t)=\sum_{\ell \in \mathbb{Z}} e^{2 \pi s \ell}\left(\alpha_{\ell}\left(\begin{array}{c}
-e^{-A(s)} \cos 2 \pi \ell t \\
-e^{-A(s)} \sin 2 \pi \ell t
-\end{array}\right)+\beta_{\ell}\left(\begin{array}{c}
--e^{-A(s)} \sin 2 \pi \ell t \\
-e^{-A(s)} \cos 2 \pi \ell t
-\end{array}\right)\right)
+Y(s, t)=\sum_{\ell \in \mathbb{Z}} e^{2 \pi s \ell}
+\begin{bmatrix}
+\cos(2\pi\ell t) & -\sin(2\pi \ell t) \\
+\sin(2\pi\ell t) & \cos(2\pi \ell t)
+\end{bmatrix}
+\begin{bmatrix}
+\alpha_\ell  \\
+\beta_\ell 
+\end{bmatrix}
 .\end{align*}
+
+
+
 \normalsize
 
 
