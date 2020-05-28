@@ -531,7 +531,7 @@ Y &\mapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s
 
 ## Proof of Assertion 2
 
-- Explicitly,
+- Explicitly in components:
 \scriptsize
 \begin{align*}
 \begin{dcases}
@@ -544,7 +544,7 @@ A_i(s) &= \int_0^s -a_i(\sigma) ~d\sigma
 .\end{align*}
 \normalsize
 
-- As before,
+- As before, for some constants $C_{j, i}$,
 \begin{align*}
 A_i(s) = 
 \begin{dcases}
@@ -554,7 +554,11 @@ C_{2, i} + a_i^+\cdot s & s \geq  \sigma_0 \\
 .\end{align*}
 
 - Thus $Y_i \in W^{1, p} \iff 0 \in (a_i^-, a_i^+)$, establishing the formula for $\dim \ker F$.
-- Get formula for $\dim \ker F^*$ using $\tilde F$ as before.
+- Obtain
+
+\begin{align*}
+\dim \ker F = \#\left\{i \in\{1,2\} \suchthat ~a_{i}^{-}<0 < a_{i}^{+}\right\}\\
+.\end{align*}
 
 $\qed_2$
 
