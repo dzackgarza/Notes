@@ -192,6 +192,7 @@ F: W^{1, p}\left(\mathbb{R} \times S^{1} ; \mathbb{R}^{2}\right) &\longrightarro
 Y &\mapsto \frac{\partial Y}{\partial s}+J_{0} \frac{\partial Y}{\partial t}+S(s) Y
 .\end{align*}
 
+Suppose $a_i^\pm \not \in 2\pi \ZZ$.
 
 1.  Suppose $a_1(s) = a_2(s)$ and set $a^\pm \definedas a_1^\pm = a_2^\pm$.
     Then
