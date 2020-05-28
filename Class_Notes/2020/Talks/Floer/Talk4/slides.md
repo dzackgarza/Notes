@@ -655,3 +655,12 @@ S_{k^+}          & = \begin{bmatrix}
 
 
 
+## Case 2: $k^+ \not\equiv k^- \equiv n \mod 2$
+
+- Take $a_1(s) = a_2(s)$ everywhere except the $n-1$st block, where we can assume $\sup_{s\in \RR} \norm{S(s)} < 1$.
+- Assertion 2 applies and we get
+
+\begin{align*}
+\dim \ker L_1 
+&= 2\cdot \# \theset{\ell \in \ZZ \suchthat 2\ell \in (n-1-k^-, n-2-k^+)} + 1
+.\end{align*}
