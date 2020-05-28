@@ -453,11 +453,14 @@ Compute dimension of space of solutions:
 \scriptsize
 \begin{align*}
 \operatorname{dim} \operatorname{Ker} F 
-&=2 \cdot \#\theset{\ell \in \mathbb{Z}^{\star} \suchthat a^{-}<2 \pi \ell<a^{+}} 
-+  2\cdot \indic{a^- < 0 < a^+}
+&=2 \cdot \#\theset{\ell \in \mathbb{Z}^{*} \suchthat 
+2\pi\ell \in (a^-, a^+) } 
++  2\cdot \indic{0 \in (a^-, a^+)}
 \\
-&=2 \#\left\{\ell \in \mathbb{Z} | a^{-}<2 \pi \ell<a^{+}\right\}
+&=2 \cdot \#\left\{\ell \in \mathbb{Z} | a^{-}<2 \pi \ell<a^{+}\right\}
 .\end{align*}
+
+> Note: not sure what $\ZZ^*$ is: maybe $\ZZ\smz$.
 \normalsize
 
 
