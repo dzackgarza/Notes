@@ -608,11 +608,25 @@ S_{k^+}          & = \begin{bmatrix}
                  &                   & \ddots &  &      &      &              & \\
                  &                   &        &  & -\pi &      &              & \\
                  &                   &        &  &      & -\pi &              & \\
-                 &                   &        &  &      &      & (n-1-k^+)\pi & \\
-                 &                   &        &  &      &      &              & (n-1-k^+)\pi \\
+&                   &        &  &      &      & (n-1-{\color{blue}k^+})\pi & \\
+&                   &        &  &      &      &              & (n-1-{\color{blue}k^+})\pi \\
 \end{bmatrix}
 .\end{align*}
 
+
+## Case 1: $k^- \equiv k^+ \equiv n \mod 2$
+
+- Take $a_1(s) = a_2(s)$ so $a_1^\pm = a^\pm$
+- Apply the proved lemma to obtain
+
+\begin{align*}
+\dim \ker L_1 
+&= 2\cdot \# \theset{\ell \in \ZZ \suchthat 2\ell \in (n-1-k^-, n-1-k^+)} \\
+&= \begin{dcases}
+k^- - k^+ & k^- > k^+ \\
+0 & \text{else}
+\end{dcases}
+.\end{align*}
 
 ## Outline
 
