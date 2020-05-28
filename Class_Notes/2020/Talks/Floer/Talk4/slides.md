@@ -637,17 +637,17 @@ S_{k-}           & = \begin{bmatrix}
                  &                   & \ddots &  &          &          &              & \\
 &                   &        &  & -{\color{red}\eps}\pi &          &              & \\
 &                   &        &  &          & -{\color{red}\eps}\pi &              & \\
-                 &                   &        &  &          &          & (n-1-k^-)\pi & \\
-                 &                   &        &  &          &          &              & (n-1-k^-)\pi \\
+&                   &        &  &          &          & (n-1-{\color{red}k^-})\pi & \\
+&                   &        &  &          &          &              & (n-1-{\color{red}k^-})\pi \\
 \end{bmatrix} \\
 S_{k^+}          & = \begin{bmatrix}
 -\pi             &                   &        &  &          &          &              & \\
                  & -\pi              &        &  &          &          &              & \\
                  &                   & \ddots &  &          &          &              & \\
-                 &                   &        &  & \eps     &          &              & \\
-                 &                   &        &  &          & -\eps    &              & \\
-                 &                   &        &  &          &          & (n-2-k^+)\pi & \\
-                 &                   &        &  &          &          &              & (n-2-k^+)\pi \\
+&                   &        &  & {\color{red}\eps}     &          &              & \\
+&                   &        &  &          & -{\color{red}\eps}    &              & \\
+&                   &        &  &          &          & (n-{\color{red}2}-k^+)\pi & \\
+&                   &        &  &          &          &              & (n-{\color{red}2}-k^+)\pi \\
 \end{bmatrix}
 .\end{align*}
 \normalsize
