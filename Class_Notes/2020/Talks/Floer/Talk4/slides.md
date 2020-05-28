@@ -341,7 +341,8 @@ Use $e^{s+it} = e^s\qty{\cos(t) + i\sin (t)}$ to write in real coordinates:
 
 Use
 \begin{align*}
-Y = B\tilde Y = \begin{bmatrix}
+Y = B\tilde Y = 
+\begin{bmatrix}
 e^{-A(s)} & 0 \\
 0 & e^{-A(s)}
 \end{bmatrix} \tilde Y
@@ -350,6 +351,10 @@ e^{-A(s)} & 0 \\
 to write
 \begin{align*}
 Y(s, t)=\sum_{\ell \in \mathbb{Z}} e^{2 \pi s \ell}
+\begin{bmatrix}
+e^{-A(s)} & 0 \\
+0 & e^{-A(s)}
+\end{bmatrix} 
 \begin{bmatrix}
 \cos(2\pi\ell t) & -\sin(2\pi \ell t) \\
 \sin(2\pi\ell t) & \cos(2\pi \ell t)
@@ -360,8 +365,15 @@ Y(s, t)=\sum_{\ell \in \mathbb{Z}} e^{2 \pi s \ell}
 \end{bmatrix}
 .\end{align*}
 
-
-
+For $s\leq s_0$ this yields for some constants $K, K'$:
+\begin{align*}
+Y(s, t) = \sum_{\ell\in \ZZ}
+e^{2\pi\ell - a^-}
+\begin{bmatrix}
+e^K \qty{\alpha_\ell \cos(2\pi\ell t) - \beta_\ell \sin(2\pi\ell t) }  \\
+e^{K'} \qty{ } 
+\end{bmatrix}
+.\end{align*}
 \normalsize
 
 
