@@ -763,3 +763,4 @@ Arzela
 Ascoli
 Quotienting
 closedness
+simplicially
