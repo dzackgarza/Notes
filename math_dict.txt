@@ -761,3 +761,5 @@ pushout
 loc
 Arzela
 Ascoli
+Quotienting
+closedness
