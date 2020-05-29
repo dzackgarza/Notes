@@ -764,3 +764,4 @@ Ascoli
 Quotienting
 closedness
 simplicially
+abelianization
