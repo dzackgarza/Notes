@@ -767,3 +767,8 @@ simplicially
 abelianization
 noncommuting
 multiplicativity
+dualizing
+bifunctor
+cocyles
+Coboundary
+cochains
