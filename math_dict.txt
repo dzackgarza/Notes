@@ -772,3 +772,5 @@ bifunctor
 cocyles
 Coboundary
 cochains
+Limsup
+Liminf
