@@ -774,3 +774,4 @@ Coboundary
 cochains
 Limsup
 Liminf
+Semilocally
