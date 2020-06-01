@@ -1,4 +1,6 @@
-﻿
+﻿\begin{tikzcd}
+0 \ar[r] & \ZZ \cross \ZZ \ar[r] & H_2 X \ar[r] & \ZZ\ar[r] & 0
+\end{tikzcd}
 
 
 \begin{tikzcd}
