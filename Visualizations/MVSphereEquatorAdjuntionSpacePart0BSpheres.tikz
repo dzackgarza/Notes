@@ -1,0 +1,13 @@
+﻿\begin{tikzcd}[execute at end picture={
+\draw (-6,5) -- (6,5);                            
+\draw (-5,5) -- (-5,-5);   
+}]
+       &  & \bigcap               &  & \bigoplus                               &  & \bigcup                             \\
+\vdots &  &                       &  &                                         &  & \ar[lllld, out=-15, in=150, dotted]                                     \\
+5      &  & H_5(S^1) \arrow[rr]          &  & H_5S^2 \oplus H_5 S^2 \arrow[rr]                            &  & {H_5 X \ar[out=-15, in=150]{lllld}} \\
+4      &  & H_4(S^1) \arrow[rr]          &  & H_4S^2 \oplus H_4 S^2 \arrow[rr]                            &  & H_4 X \arrow[lllld, out=-15, in=150]                 \\
+3      &  & H_3(S^1) \arrow[rr]          &  & H_3S^2 \oplus H_3 S^2 \arrow[rr]                            &  & H_3 X \arrow[lllld, out=-15, in=150]                 \\
+2      &  & H_2(S^1) \arrow[rr]          &  & H_2S^2 \oplus H_2 S^2 \arrow[rr] &  & H_2 X \arrow[lllld, out=-15, in=150]                 \\
+1      &  & H_1(S^1) \arrow[rr] &      & H_1S^2 \oplus H_1 S^2 \arrow[rr]                            &  & H_1 X \arrow[lllld, out=-15, in=150]                 \\
+0      &  & H_0(S^1) \arrow[rr]          &  & H_0S^2 \oplus H_0 S^2 \arrow[rr]                            &  & H_0 X \ar[r, dotted] & 0      
+\end{tikzcd}

@@ -1,0 +1,54 @@
+﻿\begin{tikzpicture}
+\pgfplotsset{every x tick label/.append style={font=\tiny, yshift=0.5ex}}
+\pgfplotsset{every y tick label/.append style={font=\tiny, xshift=0.5ex}}
+\begin{axis}[
+    xmin=-6,
+    xmax=12,
+    ymin=-2,
+    ymax=10,
+		xtick = {0},
+		ytick = {0},
+    axis equal,
+    axis lines=middle,
+    disabledatascaling]
+
+
+
+\node[font=\tiny] at (axis cs:0,10) [anchor=north east] {$iR$};
+\node[font=\tiny] at (axis cs:10,0) [anchor=north east] {$R$};
+
+\node[fill=black,draw,rounded corners,circle, scale=0.15] at (180/3:1cm) {};
+\node[font=\tiny] at (180/3:1cm)[anchor = north west] {$r_2 = e^{i\pi/3}$};
+
+\node[fill=black,draw,rounded corners,circle, scale=0.15] at (180:1cm) {};
+\node[font=\tiny] at (180:1cm)[anchor = south east] {$r_1 = -1$};
+
+
+\node[fill=black,draw,rounded corners,circle, scale=0.15] at (-180/3:1cm) {};
+\node[font=\tiny] at (-180/3:1cm)[anchor = north west] {$r_3 =e^{-i\pi/3}$};
+
+
+
+\node[font=\tiny] at (axis cs:9,11) [anchor=north west] {$\mathbb{C}$};
+
+\node[font=\tiny] at (180/3.5: 4cm) [anchor=north west] {$\Gamma$};
+
+
+\begin{scope}[thick,decoration={
+    markings,
+    mark=at position 0.5 with {\arrow{>}}}
+    ] 
+
+		\draw [blue, domain=0:90, postaction={decorate}] plot ({10*cos(\x)}, {10*sin(\x)});
+
+		\draw[-][blue][opacity=0.9, postaction={decorate}] (axis cs:0, 0) -- (axis cs:10, 0);
+		\draw[-][blue][opacity=0.9, postaction={decorate}] (axis cs:0, 10) -- (axis cs:0, 0);
+
+	\draw[-][red][opacity=0.9, very thick] (axis cs:0, 0) -- (axis cs:0, -5);
+
+
+\end{scope}
+
+
+\end{axis}
+\end{tikzpicture}
