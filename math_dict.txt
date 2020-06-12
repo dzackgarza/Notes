@@ -787,3 +787,4 @@ Kauffman
 rng
 nonisomorphic
 nontrivially
+squarefree
