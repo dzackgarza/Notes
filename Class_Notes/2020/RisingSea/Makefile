@@ -1,6 +1,6 @@
 SHELL:=/bin/zsh
-FILENAME="Real_Analysis_Qual_Notes.md"
-TITLE="Real Analysis Qualifying Exam Notes"
+FILENAME="Algebraic_Geometry.md"
+TITLE="Algebraic Geometry: Rising Sea Notes"
 
 define renew_md = 
 {echo "---\n title: $(TITLE)\n---\n\n" && fd --full-path ./sections | sort -nr | sed 'N;s/\(.*\)\n\(.*\)/\2\n\1/' | grep "md" | sort -n | awk -F ":" '{print "!include " $$1 "\n";}' } > $(FILENAME) 2>&1
