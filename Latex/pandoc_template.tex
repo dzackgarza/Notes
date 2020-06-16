@@ -70,8 +70,10 @@ $endif$
 
 $body$
 
-%\listoftodos
-
+$if(todos)$
+\newpage
+\listoftodos
+$endif$
 
 \bibliography{/home/zack/Notes/library.bib}
 
