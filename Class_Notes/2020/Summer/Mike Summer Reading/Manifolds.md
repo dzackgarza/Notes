@@ -6,3 +6,5 @@
 
 !include sections/2020-06-15.md
 
+!include sections/2020-06-20.md
+
