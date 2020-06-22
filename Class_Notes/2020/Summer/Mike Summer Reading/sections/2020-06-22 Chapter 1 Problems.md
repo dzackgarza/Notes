@@ -19,7 +19,7 @@ F_s: \DD^n &\to \DD^n \\
 Claim: $F_s$ is a bijection. 
 
 This follows because we can construct a two-sided inverse that composes to the identity, namely $F_{1\over s}$.
-We can check that
+Using the fact that $\norm{t \vector x} = t\norm{\vector x}$ for any scalar $t$, we can check that
 \begin{align*}
 \qty{F_s \circ F_{1\over s}}(\vector x)
 &= F_s(\norm{\vector x}^{1\over s} \hat{\vector x}) \\
@@ -40,6 +40,11 @@ and similarly
 &= \norm{\vector x} \hat{\vector x} \\
 &= \vector x
 .\end{align*}
+
+Claim: $F_s$ is a homeomorphism $\DD^n \to \DD^n$.
+
+- Note that if $\norm{\vector x}\leq 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq 1^s = 1,$$
+  so $F_s(\DD^n) \subseteq \DD^n$.
 
 
 Exercise (Problem 1.7)
