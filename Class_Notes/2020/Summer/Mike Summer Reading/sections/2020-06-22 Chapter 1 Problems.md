@@ -12,11 +12,18 @@ Solution:
 Claim: $F_s$ is a continuous map
 \begin{align*}
 F_s: \DD^n &\to \DD^n \\
-\vector x &\mapsto \norm{\vector x}^{s-1} \vector x = \norm{\vector x}^s{\vector x \over \norm{\vector x}}
+\vector x &\mapsto \norm{\vector x}^{s-1} \vector x = \norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x}
 .\end{align*}
 
 
 Claim: $F_s$ is a bijection. 
+
+This follows because we can construct a two-sided inverse that composes to the identity, namely $F_{1\over s}$.
+We can check that
+\begin{align*}
+\qty{F_s \circ F_{1\over s}}(\vector x)
+&= \norm{\vector x} \hat{\vector x}
+.\end{align*}
 
 Exercise (Problem 1.7)
 :   Let $N\definedas \thevector{0, \cdots, 1} \in S^n$ and $S\definedas \thevector{0, \cdots, -1}$ and define the stereographic projection
