@@ -22,7 +22,7 @@ This follows because we can construct a two-sided inverse that composes to the i
 We can check that
 \begin{align*}
 \qty{F_s \circ F_{1\over s}}(\vector x)
-&= \norm{\vector x} \hat{\vector x}
+&= F_s(\norm{\vector x}^{1\over s} \hat{\vector x})
 .\end{align*}
 
 Exercise (Problem 1.7)
