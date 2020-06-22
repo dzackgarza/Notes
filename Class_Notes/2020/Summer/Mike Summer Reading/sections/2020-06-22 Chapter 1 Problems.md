@@ -33,8 +33,14 @@ We can check that
 and similarly
 \begin{align*}
 \qty{F_{1\over s} \circ F_s}(\vector x) 
-&= F_{1\over s} \qty{ \norm{\vector x}^s \hat{\vector x}  }
+&= F_{1\over s} \qty{ \norm{\vector x}^s \hat{\vector x}  } \\
+&= \norm{\norm{\vector x}^s \hat{\vector x}  }^{1\over s} \cdot \hat{ \norm{\vector x}^s \hat{\vector x}  } \\
+&= \qty{\norm{\vector x}^s}^{1\over s} \norm{\hat{\vector x} }^{1\over s} \cdot {\norm{\vector x}^s \hat{\vector x} \over \norm{ \norm{\vector x}^s \hat{\vector x} }  } \\
+&= \norm{\vector x} \cdot 1^{1-s} \cdot \qty{\norm{\vector x}^s \over \norm{\vector x}^s } \cdot {\hat{\vector x} \over \norm{\hat{\vector x}}} \\
+&= \norm{\vector x} \hat{\vector x} \\
+&= \vector x
 .\end{align*}
+
 
 Exercise (Problem 1.7)
 :   Let $N\definedas \thevector{0, \cdots, 1} \in S^n$ and $S\definedas \thevector{0, \cdots, -1}$ and define the stereographic projection
