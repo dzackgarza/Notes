@@ -7,6 +7,17 @@ Exercise (Problem 1.6)
 
     > Hint: show that for any $s> 0$ that $F_s(x) \definedas \abs{x}^{s-1}x$ defines a homeomorphism $F_x: \DD^n \to \DD^n$ which is a diffeomorphism iff $s=1$.
 
+Solution:
+
+Claim: $F_s$ is a continuous map
+\begin{align*}
+F_s: \DD^n &\to \DD^n \\
+\vector x &\mapsto \norm{\vector x}^{s-1} \vector x = \norm{\vector x}^s{\vector x \over \norm{\vector x}}
+.\end{align*}
+
+
+Claim: $F_s$ is a bijection. 
+
 Exercise (Problem 1.7)
 :   Let $N\definedas \thevector{0, \cdots, 1} \in S^n$ and $S\definedas \thevector{0, \cdots, -1}$ and define the stereographic projection
     \todo{Recommended problem}
