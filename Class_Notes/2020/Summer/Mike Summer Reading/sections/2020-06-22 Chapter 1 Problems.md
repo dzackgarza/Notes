@@ -12,8 +12,13 @@ Solution:
 Claim: $F_s$ is a continuous map
 \begin{align*}
 F_s: \DD^n &\to \DD^n \\
-\vector x &\mapsto \norm{\vector x}^{s-1} \vector x = \norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x}
+\vector x &\mapsto \norm{\vector x}^{s-1} \vector x = \norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x} \qtext{ if $\norm{\vector x} \neq 0$}
 .\end{align*}
+
+Claim: $F_s$ is a map $\DD^n \to \DD^n$.
+
+- Note that if $\norm{\vector x}\leq 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq 1^s = 1,$$
+  so $F_s(\DD^n) \subseteq \DD^n$.
 
 
 Claim: $F_s$ is a bijection. 
@@ -41,10 +46,6 @@ and similarly
 &= \vector x
 .\end{align*}
 
-Claim: $F_s$ is a homeomorphism $\DD^n \to \DD^n$.
-
-- Note that if $\norm{\vector x}\leq 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq 1^s = 1,$$
-  so $F_s(\DD^n) \subseteq \DD^n$.
 
 
 Exercise (Problem 1.7)
