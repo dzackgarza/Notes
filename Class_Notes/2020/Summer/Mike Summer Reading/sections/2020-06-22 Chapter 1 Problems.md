@@ -24,7 +24,7 @@ We can check that
 \qty{F_s \circ F_{1\over s}}(\vector x)
 &= F_s(\norm{\vector x}^{1\over s} \hat{\vector x}) \\
 &= \norm{ \norm{\vector x}^{1\over s} \hat{\vector x} }^{s} \cdot \hat{\norm{\vector x}^{1\over s} \hat{\vector x}} \\
-&= \norm{\vector x} \cdot \norm{ \hat{\vector x} }^{s} \cdot \norm{\vector x}^{1\over s} \hat{\vector x}
+&= \qty{ \norm{\vector x}^{1\over s}}^s \cdot \norm{ \hat{\vector x} }^{s} \cdot \norm{\vector x}^{1\over s} \hat{\vector x}
 .\end{align*}
 
 Exercise (Problem 1.7)
