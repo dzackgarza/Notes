@@ -25,7 +25,15 @@ We can check that
 &= F_s(\norm{\vector x}^{1\over s} \hat{\vector x}) \\
 &= \norm{ \norm{\vector x}^{1\over s} \hat{\vector x} }^{s} \cdot \hat{\norm{\vector x}^{1\over s} \hat{\vector x}} \\
 &= \qty{ \norm{\vector x}^{1\over s}}^s \cdot \norm{ \hat{\vector x} }^{s} \cdot { \norm{\vector x}^{1\over s} \hat{\vector x} \over \norm{ \norm{\vector x}^{1\over s} \hat{\vector x}  } } \\
-&= \norm{\vector x} \cdot 1^s \cdot \qty{\norm{\vector x}^{1\over s} \over \norm{\vector x}^{1\over s}} \cdot {\hat{\vector x} \over \norm{\hat{\vector x}} }
+&= \norm{\vector x} \cdot 1^s \cdot \qty{\norm{\vector x}^{1\over s} \over \norm{\vector x}^{1\over s}} \cdot {\hat{\vector x} \over \norm{\hat{\vector x}} } \\
+&= \norm{\vector x} \hat{\vector x} \\
+&= \vector x
+.\end{align*}
+
+and similarly
+\begin{align*}
+\qty{F_{1\over s} \circ F_s}(\vector x) 
+&= F_{1\over s} \qty{ \norm{\vector x}^s \hat{\vector x}  }
 .\end{align*}
 
 Exercise (Problem 1.7)
