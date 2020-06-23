@@ -137,7 +137,7 @@ Exercise (Problem 1.7)
     \sigma: S^n\setminus N &\to \RR^n \\
     \thevector{x^1, \cdots, x^{n+1}} &\mapsto {1 \over 1-x^{n+1}} \thevector{x^1, \cdots, x^n}
     \end{align*}
-    and set $\tilde\sigma(x) = -\sigma(-x)$ for $x\in S^n\setminus S$ (projection from the South pole)
+    and set $\tilde\sigma(x) = -\sigma(-x)$ for $x\in S^n\setminus S$ (projection from the South pole) \todo{Note that the figure should say $\theset{x^{n+1} = 0}$ instead of $x^n$.}
     
     ![](figures/image_2020-06-15-23-36-33.png)
 
