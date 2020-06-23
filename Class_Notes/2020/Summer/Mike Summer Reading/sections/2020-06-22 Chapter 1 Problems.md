@@ -120,7 +120,15 @@ Claim: We can define a new atlas $\mca_s$ from $\mca^2$ by only replacing the si
 
 Claim: If $s\neq t$ then $\mca_s$ and $\mca_t$ are not smoothly compatible, and thus generate distinct maximal smooth atlases.
 
--
+- If $\mca_s, \mca_t$ define the same smooth structure, then in particular $(V, F_s\circ \psi)$ must be smoothly compatible with $(V, F_t \circ \psi)$.
+- We can compute the transition function
+\begin{align*}
+\qty{F_s\circ \psi} \circ (F_t\circ \psi)\inv = F_s\circ \psi \circ \psi\inv \circ F_t\inv = F_s\circ F_t\inv = F_s \circ F_{1\over t} = F_{s\over t}
+.\end{align*}
+- From above, we know this is smooth iff ${s\over t} = 1$, i.e. $s=t$.
+- So if $s\neq t$, then the maximal atlases correspond to $\mca_s, \mca_t$ each contain a chart that is not smoothly compatible with the other, and so these are distinct smooth structures.
+
+$\qed$
 
 Exercise (Problem 1.7)
 :   Let $N\definedas \thevector{0, \cdots, 1} \in S^n$ and $S\definedas \thevector{0, \cdots, -1}$ and define the stereographic projection
