@@ -193,7 +193,9 @@ Solution (2):
 - How to derive this formula: no clue. \todo{Figure out how to invert.}
 - Compute compositions:
 \begin{align*}
-(\sigma \circ \sigma\inv)(\vector u) = \sigma \qty{ \qty{1\over \norm{\vector u}^2 + 1} \thevector{2u^1, \cdots, 2u^n, \norm{\vector u}^2 - 1}  }
+(\sigma \circ \sigma\inv)(\vector u) 
+= \sigma \qty{ \qty{1\over \norm{\vector u}^2 + 1} \thevector{2u^1, \cdots, 2u^n, \norm{\vector u}^2 - 1}  }
+= \qty{1\over \norm{\vector u}^2 + 1} \thevector{2u^1, \cdots, 2u^n, \norm{\vector u}^2 - 1}
 .\end{align*}
 
 Exercise (Problem 1.8)
