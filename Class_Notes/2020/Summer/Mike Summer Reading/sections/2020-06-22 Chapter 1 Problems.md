@@ -29,6 +29,12 @@ Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
   \end{dcases}
   \end{align*}
   - This is a continuous function, since it can be written as a composition of continuous functions:
+   \begin{center}
+   \begin{tikzcd}
+\DD^n \ar[r, "\Delta"] & \DD^n \cross \DD^n 
+  \vector x \ar[r] & (\vector x, \vector x) \ar[r] & (\norm{\vector x}, \vector x) \ar[r] & (\norm{\vector x}^{s-1}, \vector x)\ar[r] & \norm{\vector x}^{s-1} \vector x
+   \end{tikzcd}
+   \end{center}
   - $\lim_{\vector x \to \vector 0} F_s(\vector x) = \vector 0$ since $\norm{F_s(\vector x)} \leq \norm{\vector x} \to 0$, so $F_s$ is continuous at zero.
 
 
