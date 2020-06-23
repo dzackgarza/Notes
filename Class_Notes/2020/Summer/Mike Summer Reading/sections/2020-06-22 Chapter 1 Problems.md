@@ -210,7 +210,7 @@ Solution (3):
   which is a smooth function on $\RR^n\setminus\theset{\vector 0}$.
 
 - Todo: computing $(\sigma \circ \tilde\sigma\inv)(\vector u) = \hat{\vector u}$\todo{Computation.}
-- Since $\sigma(S^n\setminus\theset{\vector N}) = \RR^{n}\setminus\theset{\vector 0}$ and similarly $\sigma(S^n\setminus\theset{\vector S}) = \RR^{n}\setminus\theset{\vector 0}$,
+- Since $\sigma(S^n\setminus\theset{\vector N}) = \RR^{n}\setminus\theset{\vector 0}$ and similarly $\tilde\sigma(S^n\setminus\theset{\vector S}) = \RR^{n}\setminus\theset{\vector 0}$, the transition w
 
 Exercise (Problem 1.8)
 :   Define an *angle function* on $U\subset S^1$ as any continuous function $\theta:U\to\RR$ such that $e^{i\theta(z)} = z$ for all $z\in U$.
