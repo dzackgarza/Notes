@@ -91,12 +91,16 @@ Let $\mca$ by any smooth atlas on $M$ and fix $p_0\in M$.
 Claim: We can modify $\mca$ to obtain an atlas $\mca'$ where $p_0$ is in exactly one chart $(V, \psi)$ with $\psi(p_0) = \vector 0 \in \RR^n$.
 
 - Pick a chart containing $p_0$, say $(U, \phi)$ where $\phi(p_0) \definedas \vector p$
-- Since $\phi(U)\subseteq \RR^n$ is open, find a disc containing $p_0$, say $\DD_R(\vector p)$.
+- Since $\phi(U)\subseteq \RR^n$ is open, find a disc containing $\vector p$, say $\DD_R(\vector p) \subset \phi(U)$.
 - Define $V\subseteq M$ as $V\definedas \phi\inv(\DD_R(\vector p))$.
-- Define $\psi: U\to \RR^n$ by $\psi(x) = {1\over R}\qty{ \phi(x) - \phi(p_0) }$.
+- Define $\psi: U\to \RR^n$ by 
+  \begin{align*}
+  \psi: U &\to \RR^n \\
+  x &\mapsto {\phi(x) - \phi(p_0) \over R}
+  .\end{align*}
   - Note: this is constructed precisely so that $\psi(V) = \DD_1(\vector 0) \in \RR^n$ and $\psi(p) = 0$.
-  - This is a homeomorphism onto its image since we can write $$\psi = \delta_{1\over R}\circ \tau_{\vector 0} \circ \phi$$ is a composition of continuous functions, where $\delta, \tau$ are dilations/translations in $\RR^n$ which are known to be continuous, and $$\psi\inv = \phi\inv \circ \tau_{- \vector p} \circ \delta_R$$ is again a composition of continuous functions.
-- Define $\mca^1 \definedas \mca \union (V, \psi)$
+  - This is a homeomorphism onto its image since we can write $$\psi = \delta_{1\over R}\circ \tau_{\vector p} \circ \phi$$ is a composition of continuous functions, where $\delta, \tau$ are dilations/translations in $\RR^n$ which are known to be continuous, and $$\psi\inv = \phi\inv \circ \tau_{- \vector p} \circ \delta_R$$ is again a composition of continuous functions.
+- Define $\mca^1 \definedas \mca \union (V, \restrictionof{\psi}{V})$
 - For every $(U_\alpha, \phi_\alpha)\in \mca$, define a new chart $(U_\alpha \setminus\theset p, \restrictionof{\phi_\alpha}{U_\alpha \setminus\theset p})$ and define this as $\mca^2$
 
 Claim: We can define a new atlas $\mca_s$ from $\mca'$ by only replacing the single chart $(V, \psi)$ with $(V, F_s \circ \psi)$.
