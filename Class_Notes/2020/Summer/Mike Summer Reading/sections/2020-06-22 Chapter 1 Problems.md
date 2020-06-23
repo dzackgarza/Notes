@@ -186,6 +186,7 @@ Solution (1):
  .\end{align*}
 
 - Evaluate at $t = {1 \over 1 - x^{n+1}}$ to obtain ${1\over x^{n+1}}\thevector{x^1, \cdots, x^n, 0} = \thevector{ \sigma(\vector x), 0}$.
+- For $\tilda \sigma(\vector x)$: Todo \todo{Todo}.
 
 
 Exercise (Problem 1.8)
