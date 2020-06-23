@@ -15,14 +15,23 @@ F_s: \DD^n &\to \DD^n \\
 \vector x &\mapsto \norm{\vector x}^{s-1} \vector x 
 .\end{align*}
 
-We can note that
-\begin{align*}
-F_s(\vector x) = 
-\begin{dcases}
-\norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x} & \text{if } \norm{\vector x} \neq 0 \\
-\vector 0 & \text{if } \norm{\vector x } = 0
-\end{dcases}
-.\end{align*}
+Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
+
+- Note that if $\norm{\vector x}\leq \eps$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq \norm{\vector x} \leq \eps < 1,$$
+  so $F_s(\DD^n) \subseteq \DD^n$ and moreover $F_s(\DD_\eps^n) \subseteq \DD_\eps^n$.
+- Thus if $F_s$ restricted to $\DD^n$ is a bijection, it is in particular surjective and $F_s(\DD^n) = \DD^n$ (we'll show this in the next claim).
+- We can note that
+  \begin{align*}
+  F_s(\vector x) = 
+  \begin{dcases}
+  \norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x} & \text{if } \norm{\vector x} \neq 0 \\
+  \vector 0 & \text{if } \norm{\vector x } = 0
+  \end{dcases}
+  \end{align*}
+  and $\lim_{\vector x \to \vector 0} F_s(\vector x) = \vector 0$ since $\lim_{\vector x \to 0} \norm{F_s(\vector x)}
+
+
+
 
 Claim: $F_s$ is a bijection $\DD^n\setminus{\vector 0}\selfmap$ that extends to a bijection $\DD^n\selfmap$.
 
@@ -48,12 +57,6 @@ and similarly
 &= \norm{\vector x} \hat{\vector x} \\
 &= \vector x
 .\end{align*}
-
-Claim: $F_s$ is a map $\DD^n \to \DD^n$.
-
-- Note that if $\norm{\vector x}\leq 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq 1^s = 1,$$
-  so $F_s(\DD^n) \subseteq \DD^n$.
-
 
 
 
