@@ -31,7 +31,7 @@ Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
   - This is a continuous function, since it can be written as a composition of continuous functions:
    \begin{center}
    \begin{tikzcd}
-\DD^n \ar[r, "\Delta"] & \DD^n \cross \DD^n \ar[r, "{(\norm{\wait}, \id_{\DD^n})}"] & \DD^n \cross \DD^n \ar[r, "{(\qty{\wait }^{s-1}, \id_{\DD^n})}"] & \DD^1 \cross \DD^n \ar[r, "?"]& \DD^n \\
+\DD^n \ar[r, "\Delta"] & \DD^n \cross \DD^n \ar[r, "{(\norm{\wait}, ~\id_{\DD^n})}", outer sep=5pt] & \DD^n \cross \DD^n \ar[r, "{(\qty{\wait }^{s-1}, ~\id_{\DD^n})}", outer sep=5pt] & \DD^1 \cross \DD^n \ar[r, "{(a,b)\mapsto ab}", outer sep=5pt]& \DD^n \\
     \vector x \ar[r] & (\vector x, \vector x) \ar[r] & (\norm{\vector x}, \vector x) \ar[r] & (\norm{\vector x}^{s-1}, \vector x)\ar[r] & \norm{\vector x}^{s-1} \vector x
    \end{tikzcd}
    \end{center}
