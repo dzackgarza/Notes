@@ -85,6 +85,19 @@ Otherwise, we claim that $F_s$ is not a diffeomorphism because either $F_s$ or $
 - If $1<s< \infty$ then $0 \leq {1\over s} < 1$ and the same argument applies to $F_s\inv \definedas F_{1\over s}$.
 
 
+We now show that we can produce infinitely many distinct maximal atlases on $M$.
+Let $\mca$ by any smooth atlas on $M$ and fix $p\in M$.
+
+Claim: We can modify $\mca$ to obtain an atlas $\mca'$ where $p$ is in exactly one chart $(V, \psi)$ where $\psi(p) = \vector \in \RR^n$.
+
+- Pick a chart containing $p$, say $(U, \phi)$ where $\phi(p) \definedas \vector p$
+- Since $\phi(U)\subseteq \RR^n$ is open, find a disc containing $p$, say $\DD_\eps(\vector p)$.
+- Define $V\subseteq M$ as $V\definedas \phi\inv(\DD_\eps(\vector p))$.
+
+Claim: We can define a new atlas $\mca_s$ from $\mca'$ by only replacing the single chart $(V, \psi)$ with $(V, F_s \circ \psi)$.
+
+Claim: If $s\neq t$ then $\mca_s$ and $\mca_t$ are not smoothly compatible, and thus generate distinct maximal smooth atlases.
+
 Exercise (Problem 1.7)
 :   Let $N\definedas \thevector{0, \cdots, 1} \in S^n$ and $S\definedas \thevector{0, \cdots, -1}$ and define the stereographic projection
     \todo{Recommended problem}
