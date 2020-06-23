@@ -195,6 +195,15 @@ Solution (2):
   - Should yield $t^2 \norm{u} + (1-t)^2 = 1$, solve for nonzero $t$; should get $t = {2 \over \norm{\vector u} + 1}$, so $x^i = 2u^i/(\norm{\vector u} + 1)$ and $x^{n+1} = \qty{2 \over \norm{\vector u} + 1} -1$.
 - Compute compositions $\sigma \circ \sigma\inv$: Todo. \todo{Messy computations that didn't work out.}
 
+Solution (3):
+
+- Computing the transition maps:
+\begin{align*}
+(\tilde \sigma \circ \sigma\inv)(\vector u) 
+&= -\sigma\qty{\qty{-1 \over \norm{\vector u}^2 + 1} \thevector{2u^1, \cdots, 2u^n, \norm{\vector u}^2 - 1}  } \\
+&= -1 \cdot \thevector{ { -2 u^1 \over \norm{\vector u}^2 + 1} }
+.\end{align*}
+
 Exercise (Problem 1.8)
 :   Define an *angle function* on $U\subset S^1$ as any continuous function $\theta:U\to\RR$ such that $e^{i\theta(z)} = z$ for all $z\in U$.
     \todo{Recommended problem}
