@@ -113,8 +113,10 @@ Claim: We can define a new atlas $\mca_s$ from $\mca^2$ by only replacing the si
 
 - $\mca_s$ still covers $M$, since we haven't changed the coordinate domains
 - All coordinate functions are still a homeomorphisms onto their images, since the only change is $\psi$ is replaced with $F_s \circ \psi$ and we've shown that $F_s$ is a homeomorphism; a composition of homeomorphisms is again a homeomorphism.
+- The chart $(V, F_s\circ \psi)$ is still a valid chart, since $F_s: \DD_n\selfmap$ and $\psi(V) \cong \DD^n$ by construction.
 - All charts in $\mca_s$ are still smoothly compatible:
-  -   
+  - If suffices to check compatibility between an arbitrary $(U_\alpha, \phi_\alpha)$ and $(V, \psi)$.
+  - 
 
 Claim: If $s\neq t$ then $\mca_s$ and $\mca_t$ are not smoothly compatible, and thus generate distinct maximal smooth atlases.
 
