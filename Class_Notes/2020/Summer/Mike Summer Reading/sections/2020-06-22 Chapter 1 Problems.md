@@ -22,15 +22,17 @@ Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
 
   - We'll use the fact that $F_s\inv = F_{1\over s}$ is of the same form, and thus $F_s\inv(\DD^n) \subseteq \DD^n$, forcing $F_s(\DD^n) = \DD^n$.
 
-- This is a continuous function, since it can be written as a composition of continuous functions:
+- This is a continuous function on the punctured disc $\DD_0^n \definedas \DD^n\setminus\theset{\vector 0}$, since it can be written as a composition of smooth functions:
    \begin{center}
    \begin{tikzcd}
-\DD^n \ar[r, "\Delta"] & \DD^n \cross \DD^n \ar[r, "{(\norm{\wait}, ~\id_{\DD^n})}", outer sep=5pt] & \DD^n \cross \DD^n \ar[r, "{(\qty{\wait }^{s-1}, ~\id_{\DD^n})}", outer sep=5pt] & \DD^1 \cross \DD^n \ar[r, "{(a,b)\mapsto ab}", outer sep=5pt]& \DD^n \\
+\DD_0^n \ar[r, "\Delta"] & \DD_0^n \cross \DD_0^n \ar[r, "{(\norm{\wait}, ~\id_{\DD_0^n})}", outer sep=5pt] & \DD_0^n \cross \DD_0^n \ar[r, "{(\qty{\wait }^{s-1}, ~\id_{\DD_0^n})}", outer sep=5pt] & \DD_0^1 \cross \DD_0^n \ar[r, "{(a,b)\mapsto ab}", outer sep=5pt]& \DD_0^n \\
     \vector x \ar[r] & (\vector x, \vector x) \ar[r] & (\norm{\vector x}, \vector x) \ar[r] & (\norm{\vector x}^{s-1}, \vector x)\ar[r] & \norm{\vector x}^{s-1} \vector x
    \end{tikzcd}
    \end{center}
 
-  > Note: These should all be on punctured discs $\DD^n\smz$, but continuity at zero follows from the fact that $\norm{F_s(\vector x)} \leq \norm{\vector x} \to 0$, so $\lim_{\vector x \to \vector 0}F_s(\vector x) = \vector 0$ and the sequential definition of continuity applies.
+    For any $s\geq 0$, continuity at zero follows from the fact that $\norm{F_s(\vector x)} \leq \norm{\vector x} \to 0$, so $\lim_{\vector x \to \vector 0}F_s(\vector x) = \vector 0$ and the sequential definition of continuity applies. So $F_s$ is continuous on $\DD^n$ for every $s$.
+
+    > Here we are taking for granted the fact that taking norms, exponentiating, and multiplying are all smooth functions away from zero.
 
 
 
