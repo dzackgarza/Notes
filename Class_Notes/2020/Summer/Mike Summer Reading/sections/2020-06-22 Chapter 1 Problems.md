@@ -2,6 +2,9 @@
 
 ## Recommended Problems
 
+> Note: helpful theorem, two smooth structures induced by two smooth atlases $\mca_1, \mca_2$ are equivalent iff $\mca_1 \union \mca_2$ is again a smooth atlas.
+> So it suffices to check pairwise compatibility of charts.
+
 Exercise (Problem 1.6) 
 :   Show that if $M^n\neq \emptyset$ is a topological manifold of dimension $n\geq 1$ and $M$ has a smooth structure, then it has uncountably many distinct ones. \todo{Recommended problem}
 
