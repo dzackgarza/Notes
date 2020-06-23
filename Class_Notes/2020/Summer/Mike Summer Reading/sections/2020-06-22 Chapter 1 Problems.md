@@ -202,7 +202,10 @@ Solution (3):
 (\tilde \sigma \circ \sigma\inv)(\vector u) 
 &= -\sigma\qty{\qty{-1 \over \norm{\vector u}^2 + 1} \thevector{2u^1, \cdots, 2u^n, \norm{\vector u}^2 - 1}  } \\
 &= -1 \cdot \thevector{ {{ -2 u^1 \over \norm{\vector u}^2 + 1} \over 1 - {1 - \norm{\vector u}^2 \over 1 + \norm{\vector u}^2 }}  , \cdots_n } \\
-&= \thevector{ {2u^1 \over \norm{\vector u}^2 + 1} \cdot {1 + \norm{\vector u}^2 \over 1 + \norm{\vector u}^2 - (1 - \norm{\vector u}^2)}, \cdots_n}
+&= \thevector{ {2u^1 \over \norm{\vector u}^2 + 1} \cdot {1 + \norm{\vector u}^2 \over 1 + \norm{\vector u}^2 - (1 - \norm{\vector u}^2)}, \cdots_n} \\
+&= \thevector{ {2u^1 \over 2\norm{\vector u}^2}, \cdots_n } \\
+&= {\vector u \over \norm{\vector u}^2} \\
+&\definedas \hat{\vector u}
 .\end{align*}
 
 Exercise (Problem 1.8)
