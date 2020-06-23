@@ -12,7 +12,16 @@ Solution:
 Claim: $F_s$ is a continuous map
 \begin{align*}
 F_s: \DD^n &\to \DD^n \\
-\vector x &\mapsto \norm{\vector x}^{s-1} \vector x = \norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x} \qtext{ if $\norm{\vector x} \neq 0$}
+\vector x &\mapsto \norm{\vector x}^{s-1} \vector x 
+.\end{align*}
+
+We can note that
+\begin{align*}
+F_s(\vector x) = 
+\begin{dcases}
+\norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x} & \text{if } \norm{\vector x} \neq 0 \\
+\vector 0 & \text{if } \norm{\vector x } = 0
+\end{dcases}
 .\end{align*}
 
 Claim: $F_s$ is a map $\DD^n \to \DD^n$.
