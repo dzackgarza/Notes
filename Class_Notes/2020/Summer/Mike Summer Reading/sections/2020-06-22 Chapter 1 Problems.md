@@ -79,7 +79,7 @@ Claim: $F_s$ is a diffeomorphism iff $s=1$.
 
 If $s=1$, $F_s = \id_{\DD^n}$ which is clearly a diffeomorphism.
 
-Otherwise, we claim that $F_s$ is not a diffeomorphism because either $F_s$ or $F_s\inv$ will fail to be smooth at $\vector x =0$.
+Otherwise, we claim that $F_s$ is not a diffeomorphism because either $F_s$ or $F_s\inv$ will fail to be smooth at $\vector x = \vector 0$.
 
 - If $0\leq s < 1$, then $F_s$ fails to be differentiable at zero. \todo{Why? Should boil down to $x\mapsto x^t$ for $0\leq t< 1$ failing to be differentiable at 0 in $\RR$}
 - If $1<s< \infty$ then $0 \leq {1\over s} < 1$ and the same argument applies to $F_s\inv \definedas F_{1\over s}$.
