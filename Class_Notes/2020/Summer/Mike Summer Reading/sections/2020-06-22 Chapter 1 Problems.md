@@ -212,9 +212,14 @@ Solution (3):
 - Todo: computing $(\sigma \circ \tilde\sigma\inv)(\vector u) = \hat{\vector u}$\todo{Computation.}
 - Todo: argue that it suffices that these are smooth on $\RR^n\setminus\theset{\vector 0}$ \todo{What are the actual domains and ranges of the transition functions? It seems like you pull back $\RR^n$ to $S^n\setminus N$, then push $S^n\setminus\theset{N, S}$ to $R^n\setminus 0$, but this yields $\RR^n\to\RR^{n}\setminus 0$ where we haven't deleted zero in the domain (problem: not smooth!).}
 
+Solution (4):
+
+We want to argue that these define the same maximal smooth atlas, for which it suffices to the charts from each are pairwise smoothly compatible.
+
+- Define $\phi_i\qty{\thevector{u^1, \cdots, u^n}} = \thevector{u^1, \cdots, \hat{u^i}, \cdots, u^n}$ and $\phi_i\inv\qty{\thevector{v^1, \cdots, v^{n-1}}} = \thevector{v^1, \cdots_i, \sqrt{1 - \norm{\vector v}}, \cdots, v^n }$.
+
 Exercise (Problem 1.8)
 :   Define an *angle function* on $U\subset S^1$ as any continuous function $\theta:U\to\RR$ such that $e^{i\theta(z)} = z$ for all $z\in U$.
-    \todo{Recommended problem}
 
     Show that $U$ admits an angle function iff $U\neq S^1$, and for any such function $\theta$, $(U, \theta)$ is a smooth coordinate chart for $S^1$ with its standard smooth structure.
 
