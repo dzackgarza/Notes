@@ -174,6 +174,18 @@ Exercise (Problem 1.7)
 
     
 
+Solution (1):
+
+- Parameterize the line through $\vector x\in S^n$ and $\vector N$: 
+ \begin{align*}
+  \ell_{N, \vector x}(t) 
+  &= t\vector x + (1-t) \vector N \\
+  &= t\thevector{x^1, \cdots, x^{n+1}} + (1-t)\thevector{0, \cdots, 1} \\
+  &= \thevector{tx^1, \cdots, tx^{n+1} + (1-t)}
+ .\end{align*}
+
+- 
+
 
 Exercise (Problem 1.8)
 :   Define an *angle function* on $U\subset S^1$ as any continuous function $\theta:U\to\RR$ such that $e^{i\theta(z)} = z$ for all $z\in U$.
