@@ -95,6 +95,7 @@ Claim: We can modify $\mca$ to obtain an atlas $\mca'$ where $p_0$ is in exactly
 - Define $V\subseteq M$ as $V\definedas \phi\inv(\DD_R(\vector p))$.
 - Define $\psi: U\to \RR^n$ by $\psi(x) = {1\over R}\qty{ \phi(x) - \phi(p_0) }$.
   - Note: this is constructed precisely so that $\psi(V) = \DD_1(\vector 0) \in \RR^n$ and $\psi(p) = 0$.
+  - This is a homeomorphism onto its image since we can write $$\psi = \delta_{1\over R}\circ \tau_{\vector 0} \circ \phi$$ is a composition of continuous functions, where $\delta, \tau$ are dilations/translations in $\RR^n$ which are known to be continuous, and $$\psi\inv = \phi\inv \circ \tau_{- \vector p} \circ \delta_R$$ is again a composition of continuous functions.
 - Define $\mca^1 \definedas \mca \union (V, \psi)$
 - For every $(U_\alpha, \phi_\alpha)\in \mca$, define a new chart $(U_\alpha \setminus\theset p, \restrictionof{\phi_\alpha}{U_\alpha \setminus\theset p})$ and define this as $\mca^2$
 
