@@ -20,27 +20,27 @@ Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
 - Note that if $\norm{\vector x}\leq \eps < 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq \norm{\vector x} \leq \eps < 1,$$
   so $F_s(\DD^n) \subseteq \DD^n$ and moreover $F_s(\DD_\eps^n) \subseteq \DD_\eps^n$.
 - Thus if $F_s$ restricted to $\DD^n$ is a bijection, it is in particular surjective and $F_s(\DD^n) = \DD^n$ (we'll show this in the next claim).
-- We can note that
-  \begin{align*}
-  F_s(\vector x) = 
-  \begin{dcases}
-  \norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x} & \text{if } \norm{\vector x} \neq 0 \\
-  \vector 0 & \text{if } \norm{\vector x } = 0
-  \end{dcases}
-  \end{align*}
-  - This is a continuous function, since it can be written as a composition of continuous functions:
+- This is a continuous function, since it can be written as a composition of continuous functions:
    \begin{center}
    \begin{tikzcd}
 \DD^n \ar[r, "\Delta"] & \DD^n \cross \DD^n \ar[r, "{(\norm{\wait}, ~\id_{\DD^n})}", outer sep=5pt] & \DD^n \cross \DD^n \ar[r, "{(\qty{\wait }^{s-1}, ~\id_{\DD^n})}", outer sep=5pt] & \DD^1 \cross \DD^n \ar[r, "{(a,b)\mapsto ab}", outer sep=5pt]& \DD^n \\
     \vector x \ar[r] & (\vector x, \vector x) \ar[r] & (\norm{\vector x}, \vector x) \ar[r] & (\norm{\vector x}^{s-1}, \vector x)\ar[r] & \norm{\vector x}^{s-1} \vector x
    \end{tikzcd}
    \end{center}
-  - $\lim_{\vector x \to \vector 0} F_s(\vector x) = \vector 0$ since $\norm{F_s(\vector x)} \leq \norm{\vector x} \to 0$, so $F_s$ is continuous at zero.
 
 
 
 
 Claim: $F_s$ is a bijection $\DD^n\setminus{\vector 0}\selfmap$ that extends to a bijection $\DD^n\selfmap$.
+
+We can note that
+\begin{align*}
+F_s(\vector x) = 
+\begin{dcases}
+\norm{\vector x}^s{\vector x \over \norm{\vector x}} \definedas \norm{\vector x}^s \hat{\vector x} & \text{if } \norm{\vector x} \neq 0 \\
+\vector 0 & \text{if } \norm{\vector x } = 0
+\end{dcases}
+\end{align*}
 
 This follows because we can construct a two-sided inverse that composes to the identity, namely $F_{1\over s}$, for $\vector x\neq \vector 0$, and note that $F_s(\vector 0) = \vector 0$.
 Using the fact that $\norm{t \vector x} = t\norm{\vector x}$ for any scalar $t$, we can check that
