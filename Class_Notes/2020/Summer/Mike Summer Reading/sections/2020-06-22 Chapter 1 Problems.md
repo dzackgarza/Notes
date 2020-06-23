@@ -186,8 +186,13 @@ Solution (1):
  .\end{align*}
 
 - Evaluate at $t = {1 \over 1 - x^{n+1}}$ to obtain ${1\over x^{n+1}}\thevector{x^1, \cdots, x^n, 0} = \thevector{ \sigma(\vector x), 0}$.
-- For $\tilda \sigma(\vector x)$: Todo \todo{Todo}.
+- For $\tilde \sigma(\vector x)$: Todo \todo{Todo}.
 
+Solution (2):
+
+- Fix $\vector x\in S^n$ and consider $\sigma(\vector x) \definedas \vector u = \thevector{u^1, \cdots, u^n}$.
+- This forces $u_i = {x^i \over 1 - x^{n+1}}$ for each $i$.
+- Note that $\norm{\vector x} = 1 \implies \sum_{i=1}^{n+1} (x^i)^2 \implies \sum_{i=1}^n (x^i)^2 = 1 - (x^{n+1})^2$.
 
 Exercise (Problem 1.8)
 :   Define an *angle function* on $U\subset S^1$ as any continuous function $\theta:U\to\RR$ such that $e^{i\theta(z)} = z$ for all $z\in U$.
