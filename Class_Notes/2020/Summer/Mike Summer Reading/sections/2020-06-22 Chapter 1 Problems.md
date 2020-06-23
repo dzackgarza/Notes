@@ -17,7 +17,7 @@ F_s: \DD^n &\to \DD^n \\
 
 Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
 
-- Note that if $\norm{\vector x}\leq \eps$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq \norm{\vector x} \leq \eps < 1,$$
+- Note that if $\norm{\vector x}\leq \eps < 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq \norm{\vector x} \leq \eps < 1,$$
   so $F_s(\DD^n) \subseteq \DD^n$ and moreover $F_s(\DD_\eps^n) \subseteq \DD_\eps^n$.
 - Thus if $F_s$ restricted to $\DD^n$ is a bijection, it is in particular surjective and $F_s(\DD^n) = \DD^n$ (we'll show this in the next claim).
 - We can note that
@@ -28,7 +28,8 @@ Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
   \vector 0 & \text{if } \norm{\vector x } = 0
   \end{dcases}
   \end{align*}
-  and $\lim_{\vector x \to \vector 0} F_s(\vector x) = \vector 0$ since $\lim_{\vector x \to 0} \norm{F_s(\vector x)}
+  - This is a continuous function, since it can be written as a composition of continuous functions:
+  - $\lim_{\vector x \to \vector 0} F_s(\vector x) = \vector 0$ since $\norm{F_s(\vector x)} \leq \norm{\vector x} \to 0$, so $F_s$ is continuous at zero.
 
 
 
