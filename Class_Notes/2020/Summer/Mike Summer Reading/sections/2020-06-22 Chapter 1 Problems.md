@@ -24,15 +24,9 @@ F_s(\vector x) =
 \end{dcases}
 .\end{align*}
 
-Claim: $F_s$ is a map $\DD^n \to \DD^n$.
+Claim: $F_s$ is a bijection $\DD^n\setminus{\vector 0}\selfmap$ that extends to a bijection $\DD^n\selfmap$.
 
-- Note that if $\norm{\vector x}\leq 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq 1^s = 1,$$
-  so $F_s(\DD^n) \subseteq \DD^n$.
-
-
-Claim: $F_s$ is a bijection. 
-
-This follows because we can construct a two-sided inverse that composes to the identity, namely $F_{1\over s}$.
+This follows because we can construct a two-sided inverse that composes to the identity, namely $F_{1\over s}$, for $\vector x\neq \vector 0$, and note that $F_s(\vector 0) = \vector 0$.
 Using the fact that $\norm{t \vector x} = t\norm{\vector x}$ for any scalar $t$, we can check that
 \begin{align*}
 \qty{F_s \circ F_{1\over s}}(\vector x)
@@ -54,6 +48,12 @@ and similarly
 &= \norm{\vector x} \hat{\vector x} \\
 &= \vector x
 .\end{align*}
+
+Claim: $F_s$ is a map $\DD^n \to \DD^n$.
+
+- Note that if $\norm{\vector x}\leq 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq 1^s = 1,$$
+  so $F_s(\DD^n) \subseteq \DD^n$.
+
 
 
 
