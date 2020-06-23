@@ -17,6 +17,11 @@ F_s: \RR^n &\to \RR^n \\
 
 Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
 
+- Note that if $\norm{\vector x}\leq \eps < 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq \norm{\vector x} \leq \eps < 1,$$
+  so $F_s(\DD^n) \subseteq \DD^n$ and moreover $F_s(\DD_\eps^n) \subseteq \DD_\eps^n$.
+
+  - We'll use the fact that $F_s\inv = F_{1\over s}$ is of the same form, and thus $F_s\inv(\DD^n) \subseteq \DD^n$, forcing $F_s(\DD^n) = \DD^n$.
+
 - This is a continuous function, since it can be written as a composition of continuous functions:
    \begin{center}
    \begin{tikzcd}
@@ -26,11 +31,6 @@ Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
    \end{center}
 
   > Note: These should all be on punctured discs $\DD^n\smz$, but continuity at zero follows from the fact that $\norm{F_s(\vector x)} \leq \norm{\vector x} \to 0$, so $\lim_{\vector x \to \vector 0}F_s(\vector x) = \vector 0$ and the sequential definition of continuity applies.
-
-- Note that if $\norm{\vector x}\leq \eps < 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq \norm{\vector x} \leq \eps < 1,$$
-  so $F_s(\DD^n) \subseteq \DD^n$ and moreover $F_s(\DD_\eps^n) \subseteq \DD_\eps^n$.
-
-  - We'll use the fact that $F_s\inv = F_{1\over s}$ is of the same form, and thus $F_s\inv(\DD^n) \subseteq \DD^n$, forcing $F_s(\DD^n) = \DD^n$.
 
 
 
