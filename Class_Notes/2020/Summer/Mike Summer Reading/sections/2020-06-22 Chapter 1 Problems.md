@@ -102,8 +102,12 @@ Claim: We can modify $\mca$ to obtain an atlas $\mca'$ where $p_0$ is in exactly
   - This is a homeomorphism onto its image since we can write $$\psi = \delta_{1\over R}\circ \tau_{\vector p} \circ \phi$$ is a composition of continuous functions, where $\delta, \tau$ are dilations/translations in $\RR^n$ which are known to be continuous, and $$\psi\inv = \phi\inv \circ \tau_{- \vector p} \circ \delta_R$$ is again a composition of smooth (and in particular, continuous) functions.
 - Define $\mca^1 \definedas \mca \union \theset{ (V, \restrictionof{\psi}{V})}$
   - This is a smooth atlas: any pair of charts coming from $\mca$ are smoothly compatible, so it suffices to check that an arbitrary chart from $\mca$ is smoothly compatible with the new chart.
-  - Let $(T, \xi)$ be any other chart, then the transition function $$\psi \circ \xi\inv =  \delta_{1\over R} \tau_{\vector p} \circ \phi \circ \xi\inv$$ is a composition of smooth functions and thus smooth, and similarly for $\xi\circ \psi\inv$.
+  - Let $(T, \xi)$ be any other chart, then if $T\intersect V\neq \emptyset$, the transition function $$\psi \circ \xi\inv =  \delta_{1\over R} \tau_{\vector p} \circ \phi \circ \xi\inv$$ is a composition of smooth functions and thus smooth, and similarly for $\xi\circ \psi\inv$.
+  - Since the charts from $\mca$ cover $M$, so do the charts of $\mca^1$ since $\mca \subseteq \mca^1$.
 - For every $(U_\alpha, \phi_\alpha)\in \mca^1$, define a new chart $(U_\alpha \setminus\theset p, \restrictionof{\phi_\alpha}{U_\alpha \setminus\theset p})$ and define this set of charts as $\mca^2$.
+  - This still covers $M$: $p$ is in the chart $(V, \psi\mid_V)$, and if $q\neq p$, then $q\in U_\alpha$ for some $\alpha$ since $\mca$ was an atlas, and $q\in U_\alpha\setminus\theset{p}$.
+  - The coordinate maps are still homeomorphisms onto their images, because the restriction of a homeomorphism is again a homeomorphism.
+  - The transition functions are still smooth because the restriction of a smooth function is again smooth.
 
 Claim: We can define a new atlas $\mca_s$ from $\mca^2$ by only replacing the single chart $(V, \psi)$ with $(V, F_s \circ \psi)$.
 
