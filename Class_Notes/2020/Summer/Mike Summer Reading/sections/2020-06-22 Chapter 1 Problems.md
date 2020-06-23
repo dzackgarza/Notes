@@ -192,13 +192,8 @@ Solution (2):
 
 - How to derive this formula: no clue. \todo{Figure out how to invert.}
   - Start with $\vector u \in \RR^n$, parameterize the line $\ell_{N, \vector u}(t)$, solve for where $\norm{\ell_{N, \vector u}(t)} = 1$ and $\vector u \neq N$
-  - Should yield $t^2 \norm{u} + (1-t)^2 = 1$, solve for nonzero $t$; should get $t = {2 \over \norm{\vector u} + 1}$, so $x^i = 2u^i/(\norm{\vector u} + 1)$ and $x^{n+1} = \qty{2 \over \nomr{\vector u} + 1} -1$.
-- Compute compositions:
-\begin{align*}
-(\sigma \circ \sigma\inv)(\vector u) 
-&= \sigma \qty{ \qty{1\over \norm{\vector u}^2 + 1} \thevector{2u^1, \cdots, 2u^n, \norm{\vector u}^2 - 1}  } \\
-&= \qty{1 \over 1 - \qty{\norm{\vector u}^2 -1} } \qty{1\over \norm{\vector u}^2 + 1} \thevector{2u^1, \cdots, 2u^n}
-.\end{align*}
+  - Should yield $t^2 \norm{u} + (1-t)^2 = 1$, solve for nonzero $t$; should get $t = {2 \over \norm{\vector u} + 1}$, so $x^i = 2u^i/(\norm{\vector u} + 1)$ and $x^{n+1} = \qty{2 \over \norm{\vector u} + 1} -1$.
+- Compute compositions $\sigma \circ \sigma\inv$: Todo. \todo{Messy computations that didn't work out.}
 
 Exercise (Problem 1.8)
 :   Define an *angle function* on $U\subset S^1$ as any continuous function $\theta:U\to\RR$ such that $e^{i\theta(z)} = z$ for all $z\in U$.
