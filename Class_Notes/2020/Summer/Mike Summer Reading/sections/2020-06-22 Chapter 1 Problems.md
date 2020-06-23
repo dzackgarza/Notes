@@ -17,9 +17,6 @@ F_s: \DD^n &\to \DD^n \\
 
 Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
 
-- Note that if $\norm{\vector x}\leq \eps < 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq \norm{\vector x} \leq \eps < 1,$$
-  so $F_s(\DD^n) \subseteq \DD^n$ and moreover $F_s(\DD_\eps^n) \subseteq \DD_\eps^n$.
-- Thus if $F_s$ restricted to $\DD^n$ is a bijection, it is in particular surjective and $F_s(\DD^n) = \DD^n$ (we'll show this in the next claim).
 - This is a continuous function, since it can be written as a composition of continuous functions:
    \begin{center}
    \begin{tikzcd}
@@ -27,6 +24,12 @@ Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
     \vector x \ar[r] & (\vector x, \vector x) \ar[r] & (\norm{\vector x}, \vector x) \ar[r] & (\norm{\vector x}^{s-1}, \vector x)\ar[r] & \norm{\vector x}^{s-1} \vector x
    \end{tikzcd}
    \end{center}
+- Note that if $\norm{\vector x}\leq \eps < 1$ then $$\norm{F_s(\vector x)} = \norm{ \norm{\vector x}^s \hat{\vector x} } = \norm{\vector x}^s \leq \norm{\vector x} \leq \eps < 1,$$
+  so $F_s(\DD^n) \subseteq \DD^n$ and moreover $F_s(\DD_\eps^n) \subseteq \DD_\eps^n$.
+
+  - We'll use the fact that $F_s\inv = F_{1\over s}$ is of the same form, and thus $F_s\inv(\DD^n) \subseteq \DD^n$, forcing $F_s(\DD^n) = \DD^n$.
+
+> Note: possibly not needed, but continuity at zero may be an issue and follows from the fact that $\norm{F_s(\vector x)} \leq \norm{x} \to 0$, so $\lim_{\vector x \to \vector 0}F_s(\vector x) = \vector 0$ and the sequential definition of continuity applies.
 
 
 
