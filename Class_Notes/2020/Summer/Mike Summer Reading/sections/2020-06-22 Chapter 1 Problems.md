@@ -29,7 +29,7 @@ Claim: $F_s$ restricted to $\DD^n$ is a continuous map $\DD^n \to \DD^n$.
 
   - We'll use the fact that $F_s\inv = F_{1\over s}$ is of the same form, and thus $F_s\inv(\DD^n) \subseteq \DD^n$, forcing $F_s(\DD^n) = \DD^n$.
 
-> Note: possibly not needed, but continuity at zero may be an issue and follows from the fact that $\norm{F_s(\vector x)} \leq \norm{x} \to 0$, so $\lim_{\vector x \to \vector 0}F_s(\vector x) = \vector 0$ and the sequential definition of continuity applies.
+> Note: possibly not needed, but continuity at zero may be an issue and follows from the fact that $\norm{F_s(\vector x)} \leq \norm{\vector x} \to 0$, so $\lim_{\vector x \to \vector 0}F_s(\vector x) = \vector 0$ and the sequential definition of continuity applies.
 
 
 
@@ -68,6 +68,15 @@ and similarly
 &= \vector x
 .\end{align*}
 
+Claim: $F_s$ is a homeomorphism for all $s$.
+
+This follows from the fact that the domain $\DD^n$ is compact and the codomain $\DD^n$ is Hausdorff, and a continuous bijection between such spaces is a homeomorphism.
+
+Claim: $F_s$ is a diffeomorphism iff $s=1$.
+
+If $s=1$, $F_s = \id_{\DD^n}$ which is clearly a diffeomorphism.
+
+Otherwise, we claim that $F_s$ is not smooth at $\vector x =0$.
 
 
 Exercise (Problem 1.7)
