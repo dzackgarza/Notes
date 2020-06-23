@@ -190,10 +190,11 @@ Solution (1):
 
 Solution (2):
 
-- Fix $\vector x\in S^n$ and consider $\sigma(\vector x) \definedas \vector u = \thevector{u^1, \cdots, u^n}$.
-- This forces $u_i = {x^i \over 1 - x^{n+1}}$ for each $i$.
-- Note that $\norm{\vector x}^2 = 1 \implies \sum_{i=1}^{n+1} (x^i)^2 \implies \sum_{i=1}^n (x^i)^2 = 1 - (x^{n+1})^2$.
-- Then compute $\norm{\vector u}^2 = \sum_{i=1}^n (u^i)^2 = \sum_{i=1}^n \qty{x^i \over 1 - x^{n+1}}^2 = \qty{1 \over 1 - x^{n+1}}^2 \sum_{i=1}^n (x^i)^2 =  \qty{1 \over 1 - x^{n+1}}^2 \qty{1 - (x^{n+1})^2 }$.
+- How to derive this formula: no clue. \todo{Figure out how to invert.}
+- Compute compositions:
+\begin{align*}
+(\sigma \circ \sigma\inv)(\vector u) = \sigma \qty{ \qty{1\over \norm{\vector u}^2 + 1} \thevector{2u^1, \cdots, 2u^n, \norm{\vector u}^2 - 1}  }
+.\end{align*}
 
 Exercise (Problem 1.8)
 :   Define an *angle function* on $U\subset S^1$ as any continuous function $\theta:U\to\RR$ such that $e^{i\theta(z)} = z$ for all $z\in U$.
