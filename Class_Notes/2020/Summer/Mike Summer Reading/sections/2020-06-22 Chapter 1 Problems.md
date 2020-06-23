@@ -79,7 +79,9 @@ Claim: $F_s$ is a diffeomorphism iff $s=1$.
 
 If $s=1$, $F_s = \id_{\DD^n}$ which is clearly a diffeomorphism.
 
-Otherwise, we claim that $F_s$ is not smooth at $\vector x =0$.
+Otherwise, we claim that $F_s$ is not a diffeomorphism because either $F_s$ or $F_s\inv$ will fail to be smooth at $\vector x =0$.
+
+- If $s<1$, so $-t\definedas s-1< 0$, we have $F_s(x) = {\vector x \over \norm{\vector x}^t}$ with $t>0$.
 
 
 Exercise (Problem 1.7)
