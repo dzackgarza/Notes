@@ -191,6 +191,8 @@ Solution (1):
 Solution (2):
 
 - How to derive this formula: no clue. \todo{Figure out how to invert.}
+  - Start with $\vector u \in \RR^n$, parameterize the line $\ell_{N, \vector u}(t)$, solve for where $\norm{\ell_{N, \vector u}(t)} = 1$ and $\vector u \neq N$
+  - Should yield $t^2 \norm{u} + (1-t)^2 = 1$, solve for nonzero $t$; should get $t = {2 \over \norm{\vector u} + 1}$, so $x^i = 2u^i/(\norm{\vector u} + 1)$ and $x^{n+1} = \qty{2 \over \nomr{\vector u} + 1} -1$.
 - Compute compositions:
 \begin{align*}
 (\sigma \circ \sigma\inv)(\vector u) 
