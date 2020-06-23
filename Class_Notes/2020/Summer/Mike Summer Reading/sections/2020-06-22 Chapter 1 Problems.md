@@ -86,14 +86,16 @@ Otherwise, we claim that $F_s$ is not a diffeomorphism because either $F_s$ or $
 
 
 We now show that we can produce infinitely many distinct maximal atlases on $M$.
-Let $\mca$ by any smooth atlas on $M$ and fix $p\in M$.
+Let $\mca$ by any smooth atlas on $M$ and fix $p_0\in M$.
 
-Claim: We can modify $\mca$ to obtain an atlas $\mca'$ where $p$ is in exactly one chart $(V, \psi)$. 
+Claim: We can modify $\mca$ to obtain an atlas $\mca'$ where $p_0$ is in exactly one chart $(V, \psi)$ with $\psi(p_0) = \vector 0 \in \RR^n$.
 
-- Pick a chart containing $p$, say $(U, \phi)$ where $\phi(p) \definedas \vector p$
-- Since $\phi(U)\subseteq \RR^n$ is open, find a disc containing $p$, say $\DD_\eps(\vector p)$.
-- Define $V\subseteq M$ as $V\definedas \phi\inv(\DD_\eps(\vector p))$.
-- For every $(U_\alpha, \phi_\alpha)\in \mca$, define a new chart $(U_\alpha \setminus\theset p, \restrictionof{\phi_\alpha}{U_\alpha \setminus\theset p})$.
+- Pick a chart containing $p_0$, say $(U, \phi)$ where $\phi(p_0) \definedas \vector p$
+- Since $\phi(U)\subseteq \RR^n$ is open, find a disc containing $p_0$, say $\DD_R(\vector p)$.
+- Define $V\subseteq M$ as $V\definedas \phi\inv(\DD_R(\vector p))$.
+- Define $\psi: U\to \RR^n$ by $\psi(x) = {1\over R}\qty{ \phi(?) - \phi(p_0) }$.
+- Define $\mca^1 \definedas \mca \union (V, \psi)$
+- For every $(U_\alpha, \phi_\alpha)\in \mca$, define a new chart $(U_\alpha \setminus\theset p, \restrictionof{\phi_\alpha}{U_\alpha \setminus\theset p})$ and define this as $\mca^2$
 
 Claim: We can define a new atlas $\mca_s$ from $\mca'$ by only replacing the single chart $(V, \psi)$ with $(V, F_s \circ \psi)$.
 
