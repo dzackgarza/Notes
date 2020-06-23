@@ -180,12 +180,12 @@ Solution (1):
  \begin{align*}
   \ell_{N, \vector x}(t) 
   &= t\vector x + (1-t) \vector N \\
-  &= t\thevector{x^1, \cdots, x^{n+1}} + (1-t)\thevector{0, \cdots, 1} \\
-  &= \thevector{tx^1, \cdots, tx^{n+1} + (1-t)} \\
-  &= \thevector{tx^1, \cdots, 1 - t\qty{1-x^{n+1}}} \\
+  &= t\thevector{x^1, \cdots, x^n, x^{n+1}} + (1-t)\thevector{0, \cdots, 1} \\
+  &= \thevector{tx^1, \cdots, x^n, tx^{n+1} + (1-t)} \\
+  &= \thevector{tx^1, \cdots, x^n, 1 - t\qty{1-x^{n+1}}} \\
  .\end{align*}
 
-- Evaluate at $t = {1 \over 1 - x^{n+1}}$ to obtain ${1\over x^{n+1}}\thevector{x^1, \cdots, 0} = \sigma(\vector x)$.
+- Evaluate at $t = {1 \over 1 - x^{n+1}}$ to obtain ${1\over x^{n+1}}\thevector{x^1, \cdots, x^n, 0} = \thevector{ \sigma(\vector x), 0}$.
 
 
 Exercise (Problem 1.8)
