@@ -210,7 +210,7 @@ Solution (3):
   which is a smooth function on $\RR^n\setminus\theset{\vector 0}$.
 
 - Todo: computing $(\sigma \circ \tilde\sigma\inv)(\vector u) = \hat{\vector u}$\todo{Computation.}
-- Since $\sigma(S^n\setminus\theset{\vector N}) = \RR^{n}\setminus\theset{\vector 0}$ and similarly $\tilde\sigma(S^n\setminus\theset{\vector S}) = \RR^{n}\setminus\theset{\vector 0}$, the transition functions are defined as $\tilde \sigma \circ \sigma\inv: \sigma(S^n\setminus\theset{\vector N}) \to \tilde\sigma(S^n\setminus\theset{\vector N, \vector S})$.
+- Todo: argue that it suffices that these are smooth on $\RR^n\setminus\theset{\vector 0}$ \todo{What are the actual domains and ranges of the transition functions? It seems like you pull back $\RR^n$ to $S^n\setminus N$, then push $S^n\setminus\theset{N, S}$ to $R^n\setminus 0$, but this yields $\RR^n\to\RR^{n}\setminus 0$ where we haven't deleted zero in the domain (problem: not smooth!).}
 Exercise (Problem 1.8)
 :   Define an *angle function* on $U\subset S^1$ as any continuous function $\theta:U\to\RR$ such that $e^{i\theta(z)} = z$ for all $z\in U$.
     \todo{Recommended problem}
