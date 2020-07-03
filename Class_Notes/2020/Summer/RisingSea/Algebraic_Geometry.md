@@ -1,5 +1,5 @@
 ---
- title: Algebraic Geometry: Rising Sea Notes
+ title: "Algebraic Geometry: Rising Sea Notes"
 ---
 
 
