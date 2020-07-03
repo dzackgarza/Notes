@@ -229,6 +229,51 @@ Exercise (Problem 1.8)
 
     Show that $U$ admits an angle function iff $U\neq S^1$, and for any such function $\theta$, $(U, \theta)$ is a smooth coordinate chart for $S^1$ with its standard smooth structure.
 
+Note that $f: \RR\to S^1$ given by $f(x) = e^{ix}$ is a covering map (in fact the universal cover). \todo{Some way to do this just with covering spaces?}
+
+$\implies$: 
+
+- Suppose there exists an angle function $\theta: U \to \RR$.
+- Then $f\circ \restrictionof{\theta}{U} = \id_U$ by assumption, since $u \mapsvia{\restrictionof{\theta}{U}} \theta(u) \mapsvia{f} e^{i\theta(u)} = u$. 
+- So $\theta$ has a left-inverse and is thus injective.
+- Suppose $U = S^1$, which is compact.
+- Then $\theta$ is an injective continuous map on a compact set, so its image $\theta(S^1) \subseteq \RR$ is compact.
+- Lemma: a continuous map from a compact space to a Hausdorff space is a closed map.
+- Since $\theta$ is injective and is surjective onto its image, since it is continuous it is a homeomorphism onto its image and $S^1 \cong \theta(S^1)$.
+- Since $S^1$ is connected, $\theta(S^1)$ is connected, and the only connected subsets of $\RR$ are intervals. 
+- Since $\theta(S^1)$ is compact, it must be a closed and bounded subset, so $\theta(S^1) = [a, b] \subset \RR$.
+- But this forces $S^1 \cong [a, b]$ is a homeomorphism, which is a contradiction: removing one point from $S^1$ yields one connected component, while removing ${1\over 2}(b-a)$ from $[a, b]$ produces a disconnected set.
+
+$\impliedby$:
+
+- Suppose $U\neq S^1$, then there exists a point $p\in S^1\setminus U$; wlog suppose $p=1$.
+- Then $U \subseteq S^1\setminus\theset{1}$
+- Note that $f\inv(\theset{1}) = \theset{2k\pi \suchthat k\in \ZZ}$.
+- Take the interval $I = [0, 2\pi]$ and set $\tilde f = \restrictionof{f}{I}$.
+- Since $U\neq S^1$, $\tilde f\inv(U) \subsetneq I$.
+- Then $\tilde f$ restricted to $f\inv(U)$ is injective, since $\tilde f$ only fails injectivity at $0, 2\pi$.
+- Then the restricted map $\hat f \definedas  \restrictionof{f}{f\inv(U)}: f\inv(U) \to U$ is a continuous injection and surjects onto its image, thus a bijection
+- Claim: $\hat f$ is a homeomorphism
+  - Define a candidate inverse $\theta = \hat f \inv: S^1 \to \RR$.
+  - Then $f\circ \theta = \id_{S^1}$ implies $e^{i\theta(x)} = x$ for all $x\in U$.
+  - Letting $V \subseteq f\inv(U)$ be open, we have $\theta\inv(V) = \hat f(V)$ which (claim?) is open since ???
+  - So $\theta$ is continuous.
+
+
+Alternatively:
+
+- Take $I = (0, 2\pi)$.
+- Then $\tilde f(I) = S^1\setminus\theset{1}$, so $U \subseteq \tilde f(I)$.
+- Claim: $f: S^1\setminus\theset{1} \to I$ is a homeomorphism.
+- Set $\theta(x) = \restrictionof{\tilde f}{I}\inv{U}(x)$; the claim is that this works.
+  - Taking a branch cut $\theset{x + iy \suchthat x\in [0, \infty), y = 0}$ for the complex logarithm defines an inverse. \todo{How to prove?}
+
+$(U, \theta)$ is a smooth coordinate chart:
+
+- Let $\theta$ be arbitrary with $e^{i\theta(z)} = z$ and $\theta\subsetneq S^1$.
+- $U\subseteq S^1$ is open by assumption.
+- We need to show that $\theta: U \to \phi(U)$ is a homeomorphism
+
 Exercise (Problem 1.9)
 :   Show that $\CP^n$ is a compact $2n\dash$dimensional topological manifold, and show how to equip it with a smooth structure, using the correspondence
     \todo{Recommended problem}
