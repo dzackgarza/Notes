@@ -12,3 +12,5 @@
 
 !include sections/2020-06-26.md
 
+!include sections/2020-07-05.md
+
