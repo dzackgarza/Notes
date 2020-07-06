@@ -113,6 +113,11 @@ Definition (Derivative, General Case)
     .\end{align*}
 
     The matrix $D_f$ is the *total derivative* of $f$ at $\vector x$.
+    
+    Note that this equivalently says
+    \begin{align*}
+    f(\vector x + \vector h) - f( \vector x) = D_f \vector h + \vector r(\vector h) \quad\text{ where } { \norm{\vector r(\vector h)} \over \norm{\vector h} }\converges{\vector h\to \vector 0}\to \vector 0
+    .\end{align*}
 
 Theorem (Chain Rule)
 : If $E\subset \RR^n$ and $f:\RR^n \to \RR^m$ with $E \mapsvia{f} f(E) \mapsvia{g} g(f(E))$ with $f$ differentiable at $\vector x_0$ and $g$ differentiable at $f(\vector x_0)$, then the map $F(\vector x)\definedas g(f(\vector x))$ is differentiable at $\vector x_0$ with derivative $$D_F(\vector x_0) = D_g(f(\vector x_0)) \cdot D_f(\vector x_0).$$
