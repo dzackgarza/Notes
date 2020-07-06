@@ -177,5 +177,8 @@ Theorem (Inverse Function Theorem)
       
     Then there exist $U\ni \vector a$ and $V\ni \vector b$ such that $f(U) = V$ and $\restrictionof{f}{U}$ is bijective with inverse $g\in C^1(V)$.
 
+Theorem
+: If $f\in C^1(\RR^n)$ and $D_f(\vector x)\in \Gl(n,\RR)$ for all $\vector x\in \RR^n$, then $f$ is an open map (and thus *locally injective*)
+
 
 
