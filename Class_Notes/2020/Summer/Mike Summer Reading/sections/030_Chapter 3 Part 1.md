@@ -79,9 +79,13 @@ T_p M \definedas \theset{v:C^\infty(M) \to \RR \suchthat v(fg) = f(p) vg + g(p) 
 .\end{align*}
 
 Definition (Differential of a Map)
-: For $F:M\to N$ a smooth map, for each $p\in M$, we define the *differential* of $f$ at $p$ as
-\begin{align*}
-dF_p: T_p M &\to T_{F(p)}N \\
-v &\mapsto (f \in C^\infty(N) \mapsto v(f\circ F) )
-.\end{align*}
+:   For $F:M\to N$ a smooth map, for each $p\in M$, we define the *differential* of $f$ at $p$ as
+    \begin{align*}
+    dF_p: T_p M &\to T_{F(p)}N \\
+    v &\mapsto (f \mapsto v(f\circ F))
+    .\end{align*}
+
+    Note that $f\in C^\infty(N)$ implies that $f\circ F \in C^\infty(M)$, so $v\in T_p M$ can act on such an object.
+
+
 
