@@ -72,3 +72,8 @@ $\theset{\dd{}{x^i}\evalfrom_{\vector p} \suchthat 1\leq i \leq n} \subset C^\in
 f &\mapsto \dd{f}{x^i}(\vector p)
 .\end{align*}
 
+Definition (Tangent Vector on a Manifold)
+: Let $M$ be smooth and $p\in M$, then 
+\begin{align*}
+T_p M \definedas \theset{v:C^\infty(M) \to \RR \suchthat v(fg) = f(p) vg + g(p) vg }
+.\end{align*}
