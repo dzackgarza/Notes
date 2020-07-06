@@ -91,18 +91,19 @@ Definition (Derivative, Real Valued)
 
 
 Definition (Derivative, Vector Valued)
-:   For $\vector{f}: (a,b) \to \RR^n$, $\vector \vector{f}'(x)$ is the vector $\vector y\in \RR^n$ such that
+:   For $\vector{f}: (a,b) \to \RR^n$, $\vector \vector{f}'(x)$ is the vector $\nabla \vector f\in \RR^n$ such that
     \begin{align*}
-    \qty{ {\vector{f}(x+h) - \vector f(x) \over h} - \vector{y} } \converges{h\to 0}\to 0 \iff {\abs{ \vector f(x+h) - \vector f(x) - \vector f'(x)h} \over \abs{h}}  \converges{h\to 0}\to 0
-    .\end{align*}
+    \qty{ {\vector{f}(x+h) - \vector f(x) \over h} - \nabla \vector{f} } \converges{h\to 0}\to 0 \iff {\abs{ \vector f(x+h) - \vector f(x) - \vector \nabla \vector f h} \over \abs{h}}  \converges{h\to 0}\to 0
+    \end{align*}
+    where $h\in \RR$.
 
 Definition (Derivative, General Case)
-:   For $\vector{f}: \RR^n \to \RR^m$, if there exists a linear transformation $A$ such that 
+:   For $\vector{f}: \RR^n \to \RR^m$, if there exists a linear transformation $D_f$ such that 
     \begin{align*}
-    {\norm{ f(\vector x+ \vector h) - f(\vector x) - A\vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\norm{\vector h}\to 0}\to 0
+    {\norm{ f(\vector x+ \vector h) - f(\vector x) - D_f \vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\norm{\vector h}\to 0}\to 0
     .\end{align*}
 
-    The matrix $A$ (also written $D_f$) is the *total derivative* of $f$ at $\vector x$.
+    The matrix $D_f$ is the *total derivative* of $f$ at $\vector x$.
 
 Theorem (Chain Rule)
 : If $E\subset \RR^n$ and $f:\RR^n \to \RR^m$ with $E \mapsvia{f} f(E) \mapsvia{g} g(f(E))$ with $f$ differentiable at $\vector x_0$ and $g$ differentiable at $f(\vector x_0)$, then the map $F(\vector x)\definedas g(f(\vector x))$ is differentiable at $\vector x_0$ with derivative $$D_F(\vector x_0) = D_g(f(\vector x_0)) \cdot D_f(\vector x_0).$$
