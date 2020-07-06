@@ -107,7 +107,7 @@ Definition (Derivative, Vector Valued)
     .\end{align*}
 
 Definition (Derivative, General Case)
-:   For $\vector{f}: \RR^n \to \RR^m$, if there exists a linear transformation $D_f$ such that 
+:   A function $\vector{f}: \RR^n \to \RR^m$ is differentiable iff there exists a linear transformation $D_f$ such that 
     \begin{align*}
     {\norm{ f(\vector x+ \vector h) - f(\vector x) - D_f \vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\vector h \to \vector 0}\to 0
     .\end{align*}
