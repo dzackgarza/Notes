@@ -99,7 +99,7 @@ Definition (Derivative, Vector Valued)
 Definition (Derivative, General Case)
 :   For $\vector{f}: \RR^n \to \RR^m$, if there exists a linear transformation $A$ such that 
     \begin{align*}
-    {\norm{ f(\vector x+ \vector h) - f(\vector x) - A\vector h} \over \norm{\vector h}}  \converges{\norm{\vector h}\to 0}\to 0
+    {\norm{ f(\vector x+ \vector h) - f(\vector x) - A\vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\norm{\vector h}\to 0}\to 0
     .\end{align*}
 
 
