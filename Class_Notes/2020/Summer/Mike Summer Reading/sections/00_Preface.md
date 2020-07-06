@@ -120,5 +120,6 @@ Definition (Partial Derivative)
     .\end{align*}
 
 > Warning: $f$ continuous and existence of all $\dd{f_i}{x_j}$ does not imply differentiability.
+> If $f$ is differentiable, however, then $D_f$ is the Jacobian matrix.
 
 
