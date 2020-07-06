@@ -97,9 +97,9 @@ Definition (Derivative, Vector Valued)
     .\end{align*}
 
 Definition (Derivative, General Case)
-:   For $\vector{f}: \RR^n \to \RR^m$, $D_f$ is the linear transformation 
+:   For $\vector{f}: \RR^n \to \RR^m$, if there exists a linear transformation $A$ such that 
     \begin{align*}
-    \qty{ {\vector{f}(x+h) - \vector f(x) \over h} - \vector{y} } \converges{h\to 0}\to 0 \iff {\abs{ \vector f(x+h) - \vector f(x) - \vector f'(x)h} \over \abs{h}}  \converges{h\to 0}\to 0
+    {\norm{ f(\vector x+ \vector h) - f(\vector x) - A\vector h} \over \norm{\vector h}}  \converges{\norm{\vector h}\to 0}\to 0
     .\end{align*}
 
 
