@@ -89,8 +89,6 @@ Definition (Derivative, Real Valued)
     where $h\in \RR$.
 
     The number $f'(x) \definedas y$ is the *derivative* of $f$ at $x$.
-    
-    > Note we regard the derivative as the linear function $h \mapsto f'(x) h$.
 
     Note that this equivalently says
     \begin{align*}
@@ -101,30 +99,32 @@ Definition (Derivative, Real Valued)
 Definition (Derivative, Vector Valued)
 :   For $\vector{f}: (a,b) \to \RR^n$, $\vector \vector{f}'(x)$ is the vector $\vector y \in \RR^n$ such that
     \begin{align*}
-    \qty{ {\vector{f}(x+h) - \vector f(x) \over h} - \nabla \vector{f} } \converges{h\to 0}\to 0 \iff {\abs{ \vector f(x+h) - \vector f(x) - \vector \nabla \vector f h} \over \abs{h}}  \converges{h\to 0}\to 0
+    \qty{ {\vector{f}(x+h) - \vector f(x) \over h} - \vector{y} } \converges{h\to 0}\to 0 \iff {\abs{ \vector f(x+h) - \vector f(x) - h \vector \vector y} \over \abs{h}}  \converges{h\to 0}\to 0
     \end{align*}
     where $h\in \RR$.
 
     The vector $\nabla f \definedas \vector y$ is the *derivative* (or *gradient*) of $f$ at $\vector x$.
     
-    > Note that strictly speaking, $(\nabla f)(\vector x) = \sum_{i=1}^n \dd{f}{x_i} \vector e_i$.
 
     Note that this equivalently says
     \begin{align*}
     \vector f(x + h) - \vector f(x) = h\nabla \vector f + \vector r(h) \quad\text{ where } {\vector r(h) \over h}\converges{h\to 0}\to \vector 0
     .\end{align*}
 
+
+> Note that we can write $(\nabla f)(\vector x) = \sum_{i=1}^n \dd{f}{x_i} \vector e_i$.
+
 Definition (Derivative, General Case)
 :   A function $\vector{f}: \RR^n \to \RR^m$ is differentiable iff there exists a linear transformation $\vector Y$ such that 
     \begin{align*}
-    {\norm{ f(\vector x+ \vector h) - f(\vector x) - D_f \vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\vector h \to \vector 0}\to 0
+    {\norm{ \vector f(\vector x+ \vector h) - \vector f(\vector x) - \vector Y \vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\vector h \to \vector 0}\to 0
     .\end{align*}
 
-    The matrix $D_f\definedas \vector Y$ is the *total derivative* of $f$ at $\vector x$.
+    The matrix $D_f(\vector x) \definedas \vector Y$ is the *total derivative* of $f$ at $\vector x$.
     
     Note that this equivalently says
     \begin{align*}
-    f(\vector x + \vector h) - f( \vector x) = D_f \vector h + \vector r(\vector h) \quad\text{ where } { \norm{\vector r(\vector h)} \over \norm{\vector h} }\converges{\vector h\to \vector 0}\to \vector 0
+    \vector f(\vector x + \vector h) - \vector f( \vector x) = D_f \vector h + \vector r(\vector h) \quad\text{ where } { \norm{\vector r(\vector h)} \over \norm{\vector h} }\converges{\vector h\to \vector 0}\to \vector 0
     .\end{align*}
 
 Theorem (Chain Rule)
@@ -166,7 +166,10 @@ D_f(\vector x)\vector e_j &= \sum_{i=1}^m \dd{f_i}{x_j} \vector u_i \hfill \\
 .\end{align*}
 
 
-This implies that
+Remark
+: This implies that
 \begin{align*}
-\vector f'(\vector x) \vector h = \sum_{i=1}^m \sum_{j=1}^n \dd{f_i}{x_j} h_j \vector u_i
+D_f(\vector x) \vector h = \sum_{i=1}^m \sum_{j=1}^n \dd{f_i}{x_j} h_j \vector u_i
 .\end{align*}
+
+
