@@ -180,3 +180,14 @@ Proposition (Derivation of Directional Derivative)
     - Define $g(t) \definedas f(\gamma(t))$, so $g'(t) = f'(\gamma(t)) \cdot \gamma'(t)$.
     - Note that $g'(t) = \nabla f (\gamma(t)) \cdot \gamma'(t)$
     - Fix $\vector x\in E, \vector u \in S^{n-1}$, and set $\gamma(t) = \vector x + t\vector u$.
+    - Note $\gamma'(t) = \vector u$.
+    - Then noting $\gamma(0) = \vector x$,
+    \begin{align*}
+    g'(t) = \nabla f(\gamma(t)) \cdot \gamma'(t) &\implies g'(0) = \nabla f(\vector x) \cdot \vector u \\
+    \gamma(t) = \vector x + t\vector u &\implies g(t) - g(0) = f(\vector x + t\vector u) - f(\vector x)
+    .\end{align*}
+    - Conclude
+    \begin{align*}
+    D_{\vector u} f(\vector x) \definedas {f(\vector x  + t\vector u) - f(\vector x) \over t} \converges{t\to 0}\to \nabla f(\vector x) \cdot \vector u
+    .\end{align*}
+    - The LHS is defined to be the *directional derivative* of $f$ in the direction of $\vector u$.
