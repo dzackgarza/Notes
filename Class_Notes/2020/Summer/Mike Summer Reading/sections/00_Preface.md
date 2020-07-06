@@ -133,7 +133,7 @@ D_f(\vector x)\vector e_j = \sum_{i=1}^m \dd{f_i}{x_j} \vector u_i = \thevector{
 \vdots & \vdots \\
 \nabla f_m & \to
 \end{bmatrix}
-= \thevector{ \nabla f_1, \cdots, \nabla f_m}^t
+= \thevector{ \nabla f_1^t, \cdots, \nabla f_m^t}^t
 .\end{align*}
 
 
