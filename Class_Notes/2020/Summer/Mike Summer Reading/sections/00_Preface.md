@@ -97,6 +97,9 @@ Definition (Derivative, Vector Valued)
     \end{align*}
     where $h\in \RR$.
 
+    Note that strictly speaking, $(\nabla f)(\vector x) = \sum_{i=1}^n \dd{f}{x_i} \vector e_i$.
+    The vector $\nabla f$ is the *derivative* (or *gradient*) of $f$.
+
 Definition (Derivative, General Case)
 :   For $\vector{f}: \RR^n \to \RR^m$, if there exists a linear transformation $D_f$ such that 
     \begin{align*}
