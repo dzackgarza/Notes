@@ -180,5 +180,12 @@ Theorem (Inverse Function Theorem)
 Theorem
 : If $f\in C^1(\RR^n)$ and $D_f(\vector x)\in \Gl(n,\RR)$ for all $\vector x\in \RR^n$, then $f$ is an open map (and thus *locally injective*)
 
+Theorem (Implicit Function Theorem)
+:   Let $A: \RR^n\cross \RR^m \to \RR^n$ and suppose $A_x: \RR^n\to \RR^n$ is invertible.
+
+    Then for every $\vector k\in \RR^m$ there exists a unique $\vector h\in \RR^n$ such that
+    \begin{align*}
+    A(\vector h, \vector k) = \vector 0 \qtext{and} \vector h = -A_x\inv A_y \vector k
+    .\end{align*}
 
 
