@@ -143,3 +143,7 @@ D_f(\vector x)\vector e_j &= \sum_{i=1}^m \dd{f_i}{x_j} \vector u_i \hfill \\
 .\end{align*}
 
 
+This implies that
+\begin{align*}
+\vector f'(\vector x) \vector h = \sum_{i=1}^m \sum_{j=1}^n \dd{f_i}{x_j} h_j \vector u_i
+.\end{align*}
