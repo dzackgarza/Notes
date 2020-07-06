@@ -113,6 +113,12 @@ Definition (Components of a Function)
     \vector f(\vector x) = \sum_{i=1}^m f_i(\vector x)\vector u_i = \thevector{f_1(\vector x), \cdots, f_m(\vector x)}_{\mcb_m} 
     .\end{align*}
 
+Definition (Partial Derivative)
+:   For $\theset{{\vector e_j}}$ the standard orthonormal basis of $\RR^n$, define
+    \begin{align*}
+    \dd{f_i}{x_j} = (D_j f_i)(\vector x) = \lim_{t\to 0} {f_i(\vector x + t {\vector e_j}) - f_i(\vector x) \over t}
+    .\end{align*}
 
+> Warning: $f$ continuous and existence of all $\dd{f_i}{x_j}$ does not imply differentiability.
 
 
