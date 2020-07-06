@@ -173,3 +173,10 @@ D_f(\vector x) \vector h = \sum_{i=1}^m \sum_{j=1}^n \dd{f_i}{x_j} h_j \vector u
 .\end{align*}
 
 
+Proposition (Derivation of Directional Derivative)
+:   \hfill
+
+    - Let $E\subset \RR^n$, $\gamma: \RR \to E$ be a differentiable curve, and $f: E\to \RR$ be differentiable.
+    - Define $g(t) \definedas f(\gamma(t))$, so $g'(t) = f'(\gamma(t)) \cdot \gamma'(t)$.
+    - Note that $g'(t) = \nabla f (\gamma(t)) \cdot \gamma'(t)$
+    - Fix $\vector x\in E, \vector u \in S^{n-1}$, and set $\gamma(t) = \vector x + t\vector u$.
