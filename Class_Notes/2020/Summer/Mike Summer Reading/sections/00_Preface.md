@@ -107,6 +107,12 @@ Definition (Derivative, General Case)
 Theorem (Chain Rule)
 : If $E\subset \RR^n$ and $f:\RR^n \to \RR^m$ with $E \mapsvia{f} f(E) \mapsvia{g} g(f(E))$ with $f$ differentiable at $\vector x_0$ and $g$ differentiable at $f(\vector x_0)$, then the map $F(\vector x)\definedas g(f(\vector x))$ is differentiable at $\vector x_0$ with derivative $$D_F(\vector x_0) = D_g(f(\vector x_0)) \cdot D_f(\vector x_0).$$
 
+Definition (Components of a Function)
+:   If $\mcb_n \definedas \theset{\vector e_i} \subset\RR^n$ and $\mcb_m \definedas \theset{\vector u_i}\subset \RR^m$ are standard bases and $\vector f: \RR^n\to \RR^m$, then the *components* of $\vector f$ are the functions $f_i: \RR^n \to \RR$ defined by
+    \begin{align*}
+    \vector f(\vector x) = \sum_{i=1}^m f_i(\vector x)\vector u_i = \thevector{f_1(\vector x), \cdots, f_m(\vector x)}_{\mcb_m} 
+    .\end{align*}
+
 
 
 
