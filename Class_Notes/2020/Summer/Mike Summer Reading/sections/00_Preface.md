@@ -84,10 +84,15 @@ Definition (Locally Compact
 Definition (Derivative, Real Valued)
 :   For $f:(a, b) \to \RR$,
     \begin{align*}
-    f'(x) = \lim_{h\to 0} {f(x+h) - f(x) \over h} \iff f(x+h) - f(x) = f'(x)h + r(h) \text{ where } {r(h) \over h}\converges{h\to 0}\to 0
+    f'(x) = \lim_{h\to 0} {f(x+h) - f(x) \over h} \iff 
     .\end{align*}
 
     Thus we regard the derivative as the linear function $h \mapsto g'(x) h$.
+
+    Note that this equivalently says
+    \begin{align*}
+    f(x+h) - f(x) = f'(x)h + r(h) \text{ where } {r(h) \over h}\converges{h\to 0}\to 0
+    .\end{align*}
 
 
 Definition (Derivative, Vector Valued)
