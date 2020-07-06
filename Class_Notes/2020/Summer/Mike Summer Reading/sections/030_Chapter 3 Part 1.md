@@ -64,3 +64,9 @@ Proposition (Space of Derivations is Isomorphic to Geometric Tangent Space)
 : For each geometric tangent vector $\vector v_a \in \RR^n_a$, the map $D_{\vector v}\evalfrom_a$ is a derivation at $a$, and the map $\vector v_a \mapsto D_{\vector v}\evalfrom_a$ is an isomorphism.
 
 
+Theorem (Basis of Tangent Space)
+: For any $\vector p\in \RR^n$, there is a basis for $T_{\vector p}\RR^n$ given by
+\begin{align*}
+\theset{\dd{}{x_i}\evalfrom_{\vector p} }
+.\end{align*}
+
