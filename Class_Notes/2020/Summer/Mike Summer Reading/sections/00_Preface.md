@@ -108,7 +108,7 @@ Definition (Derivative, Vector Valued)
 Definition (Derivative, General Case)
 :   For $\vector{f}: \RR^n \to \RR^m$, if there exists a linear transformation $D_f$ such that 
     \begin{align*}
-    {\norm{ f(\vector x+ \vector h) - f(\vector x) - D_f \vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\norm{\vector h}\to 0}\to 0
+    {\norm{ f(\vector x+ \vector h) - f(\vector x) - D_f \vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\vector h \to \vector 0}\to 0
     .\end{align*}
 
     The matrix $D_f$ is the *total derivative* of $f$ at $\vector x$.
