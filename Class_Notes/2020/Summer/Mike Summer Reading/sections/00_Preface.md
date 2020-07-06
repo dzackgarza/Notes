@@ -128,11 +128,12 @@ Theorem (Derivative Equals Jacobian)
 D_f(\vector x)\vector e_j = \sum_{i=1}^m \dd{f_i}{x_j} \vector u_i = \thevector{ \dd{\vector f}{x_1}, \cdots, \dd{\vector f}{x_n} }
 = 
 \begin{bmatrix}
-\nabla f_1 & \cdots \\
-\nabla f_2 & \cdots \\
+\nabla f_1 & \to \\
+\nabla f_2 & \to \\
 \vdots & \vdots \\
-\nabla f_m & \cdots
+\nabla f_m & \to
 \end{bmatrix}
+= \thevector{ \nabla f_1, \cdots, \nabla f_m}^t
 .\end{align*}
 
 
