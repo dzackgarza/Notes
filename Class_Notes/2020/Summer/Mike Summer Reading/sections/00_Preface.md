@@ -82,10 +82,11 @@ Definition (Locally Compact
 ## Analysis Review
 
 Definition (Derivative, Real Valued)
-:   A function $f:(a, b) \to \RR$ is differentiable at $x$ iff there is a number $y$ such that
+:   A function $f:(a, b) \to \RR$ is differentiable at $x$ iff there is a number $y \in \RR$ such that
     \begin{align*}
     \qty{ {f(x+h) - f(x) \over h} - y } \converges{h\to 0}\to 0
-    .\end{align*}
+    \end{align*}
+    where $h\in \RR$.
 
     The number $f'(x) \definedas y$ is the *derivative* of $f$ at $x$.
     
@@ -98,13 +99,13 @@ Definition (Derivative, Real Valued)
 
 
 Definition (Derivative, Vector Valued)
-:   For $\vector{f}: (a,b) \to \RR^n$, $\vector \vector{f}'(x)$ is the vector $\nabla \vector f\in \RR^n$ such that
+:   For $\vector{f}: (a,b) \to \RR^n$, $\vector \vector{f}'(x)$ is the vector $\vector y \in \RR^n$ such that
     \begin{align*}
     \qty{ {\vector{f}(x+h) - \vector f(x) \over h} - \nabla \vector{f} } \converges{h\to 0}\to 0 \iff {\abs{ \vector f(x+h) - \vector f(x) - \vector \nabla \vector f h} \over \abs{h}}  \converges{h\to 0}\to 0
     \end{align*}
     where $h\in \RR$.
 
-    The vector $\nabla f$ is the *derivative* (or *gradient*) of $f$.
+    The vector $\nabla f \definedas \vector y$ is the *derivative* (or *gradient*) of $f$ at $\vector x$.
     
     > Note that strictly speaking, $(\nabla f)(\vector x) = \sum_{i=1}^n \dd{f}{x_i} \vector e_i$.
 
@@ -114,12 +115,12 @@ Definition (Derivative, Vector Valued)
     .\end{align*}
 
 Definition (Derivative, General Case)
-:   A function $\vector{f}: \RR^n \to \RR^m$ is differentiable iff there exists a linear transformation $D_f$ such that 
+:   A function $\vector{f}: \RR^n \to \RR^m$ is differentiable iff there exists a linear transformation $\vector Y$ such that 
     \begin{align*}
     {\norm{ f(\vector x+ \vector h) - f(\vector x) - D_f \vector h}_{\RR^m} \over \norm{\vector h}_{\RR^n} }  \converges{\vector h \to \vector 0}\to 0
     .\end{align*}
 
-    The matrix $D_f$ is the *total derivative* of $f$ at $\vector x$.
+    The matrix $D_f\definedas \vector Y$ is the *total derivative* of $f$ at $\vector x$.
     
     Note that this equivalently says
     \begin{align*}
