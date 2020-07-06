@@ -82,12 +82,14 @@ Definition (Locally Compact
 ## Analysis Review
 
 Definition (Derivative, Real Valued)
-:   For $f:(a, b) \to \RR$,
+:   A function $f:(a, b) \to \RR$ is differentiable at $x$ iff there is a number $y$ such that
     \begin{align*}
-    f'(x) = \lim_{h\to 0} {f(x+h) - f(x) \over h} \iff 
+    \qty{ {f(x+h) - f(x) \over h} - y } \converges{h\to 0}\to 0
     .\end{align*}
 
-    Thus we regard the derivative as the linear function $h \mapsto g'(x) h$.
+    The number $f'(x) \definedas y$ is the *derivative* of $f$ at $x$.
+    
+    > Note we regard the derivative as the linear function $h \mapsto f'(x) h$.
 
     Note that this equivalently says
     \begin{align*}
