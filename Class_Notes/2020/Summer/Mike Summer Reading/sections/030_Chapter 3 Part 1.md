@@ -66,7 +66,9 @@ Proposition (Space of Derivations is Isomorphic to Geometric Tangent Space)
 
 Theorem (Basis of Tangent Space)
 : For any $\vector p\in \RR^n$, there is a basis for $T_{\vector p}\RR^n$ given by
+$\theset{\dd{}{x^i}\evalfrom_{\vector p} \suchthat 1\leq i \leq n} \subset C^\infty(\RR^n, \RR)$ which are defined as
 \begin{align*}
-\theset{\dd{}{x_i}\evalfrom_{\vector p} }
+\dd{}{x^i}: \RR^n &\to \RR \\
+f &\mapsto \dd{f}{x^i}(\vector p)
 .\end{align*}
 
