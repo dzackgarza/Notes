@@ -111,9 +111,6 @@ Definition (Derivative, Vector Valued)
     \vector f(x + h) - \vector f(x) = h\nabla \vector f + \vector r(h) \quad\text{ where } {\vector r(h) \over h}\converges{h\to 0}\to \vector 0
     .\end{align*}
 
-
-> Note that we can write $(\nabla f)(\vector x) = \sum_{i=1}^n \dd{f}{x_i} \vector e_i$.
-
 Definition (Derivative, General Case)
 :   A function $\vector{f}: \RR^n \to \RR^m$ is differentiable iff there exists a linear transformation $\vector Y$ such that 
     \begin{align*}
@@ -126,6 +123,8 @@ Definition (Derivative, General Case)
     \begin{align*}
     \vector f(\vector x + \vector h) - \vector f( \vector x) = D_f \vector h + \vector r(\vector h) \quad\text{ where } { \norm{\vector r(\vector h)} \over \norm{\vector h} }\converges{\vector h\to \vector 0}\to \vector 0
     .\end{align*}
+
+> Note that we can write $(\nabla f)(\vector x) = \sum_{i=1}^n \dd{f}{x_i} \vector e_i$.
 
 Theorem (Chain Rule)
 : If $E\subset \RR^n$ and $f:\RR^n \to \RR^m$ with $E \mapsvia{f} f(E) \mapsvia{g} g(f(E))$ with $f$ differentiable at $\vector x_0$ and $g$ differentiable at $f(\vector x_0)$, then the map $F(\vector x)\definedas g(f(\vector x))$ is differentiable at $\vector x_0$ with derivative $$D_F(\vector x_0) = D_g(f(\vector x_0)) \cdot D_f(\vector x_0).$$
@@ -175,3 +174,8 @@ D_f(\vector x) \vector h = \sum_{i=1}^m \sum_{j=1}^n \dd{f_i}{x_j} h_j \vector u
 
 Theorem (Inverse Function Theorem)
 :   Suppose $f\in C^1(\RR^n, \RR^n)$ and $D_f(\vector a) \in \Gl(n, \RR)$ for some $\vector a$ and $\vector b = f(\vector a)$.
+      
+    Then there exist $U\ni \vector a$ and $V\ni \vector b$ such that $f(U) = V$ and $\restrictionof{f}{U}$ is bijective with inverse $g\in C^1(V)$.
+
+
+
