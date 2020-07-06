@@ -122,4 +122,17 @@ Definition (Partial Derivative)
 > Warning: $f$ continuous and existence of all $\dd{f_i}{x_j}$ does not imply differentiability.
 > If $f$ is differentiable, however, then $D_f$ is the Jacobian matrix.
 
+Theorem (Derivative Equals Jacobian)
+: If $f$ is differentiable at $\vector x_0$, then its derivative is an $m\times n$ matrix, its partial derivatives exist, and
+\begin{align*}
+D_f(\vector x)\vector e_j = \sum_{i=1}^m \dd{f_i}{x_j} \vector u_i = \thevector{ \dd{\vector f}{x_1}, \cdots, \dd{\vector f}{x_n} }
+= 
+\begin{bmatrix}
+\nabla f_1 & \cdots \\
+\nabla f_2 & \cdots \\
+\vdots & \vdots \\
+\nabla f_m & \cdots
+\end{bmatrix}
+.\end{align*}
+
 
