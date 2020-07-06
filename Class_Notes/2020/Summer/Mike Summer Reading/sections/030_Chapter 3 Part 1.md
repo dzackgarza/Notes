@@ -77,3 +77,11 @@ Definition (Tangent Vector on a Manifold)
 \begin{align*}
 T_p M \definedas \theset{v:C^\infty(M) \to \RR \suchthat v(fg) = f(p) vg + g(p) vg }
 .\end{align*}
+
+Definition (Differential of a Map)
+: For $F:M\to N$ a smooth map, for each $p\in M$, we define the *differential* of $f$ at $p$ as
+\begin{align*}
+dF_p: T_p M &\to T_{F(p)}N \\
+v &\mapsto (f \in C^\infty(N) \mapsto v(f\circ F) )
+.\end{align*}
+
