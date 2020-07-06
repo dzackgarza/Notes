@@ -98,11 +98,12 @@ Definition (Derivative, Vector Valued)
     where $h\in \RR$.
 
     The vector $\nabla f$ is the *derivative* (or *gradient*) of $f$.
-    Note that strictly speaking, $(\nabla f)(\vector x) = \sum_{i=1}^n \dd{f}{x_i} \vector e_i$.
+    
+    > Note that strictly speaking, $(\nabla f)(\vector x) = \sum_{i=1}^n \dd{f}{x_i} \vector e_i$.
 
     Note that this equivalently says
     \begin{align*}
-    \vector f(x + h) - \vector f(x) = h\vector y + \vector r(h) \quad\text{ where } {\vector r(h) \over h}\converges{h\to 0}\to \vector 0
+    \vector f(x + h) - \vector f(x) = h\nabla \vector f + \vector r(h) \quad\text{ where } {\vector r(h) \over h}\converges{h\to 0}\to \vector 0
     .\end{align*}
 
 Definition (Derivative, General Case)
