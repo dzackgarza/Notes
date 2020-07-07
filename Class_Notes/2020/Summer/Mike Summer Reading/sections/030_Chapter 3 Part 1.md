@@ -128,7 +128,7 @@ Proposition
 Thus tangent vectors in $V$ are routinely identified with elements of $V$.
 
 Example
-: $\Gl(n, \RR) \subset \mat(n, \RR)$ is an open submanifold, and thus if $p\in \Gl(n, \RR)$ then we can identify $T_p \Gl(n, \RR) \cong \mat(n, \RR)$.
+: $\Gl(n, \RR) \subset \mat(n\times n, \RR)$ is an open submanifold, and thus if $p\in \Gl(n, \RR)$ then we can identify $T_p \Gl(n, \RR) \cong \mat(n\times n, \RR)$.
 
 
 Definition
