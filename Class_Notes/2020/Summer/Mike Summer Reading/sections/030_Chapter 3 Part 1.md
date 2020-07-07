@@ -82,10 +82,11 @@ Definition (Differential of a Map)
 :   For $F:M\to N$ a smooth map, for each $p\in M$, we define the *differential* of $f$ at $p$ as
     \begin{align*}
     dF_p: T_p M &\to T_{F(p)}N \\
-    v &\mapsto (f \mapsto v(f\circ F))
+    v &\mapsto (DF_p(v): f \mapsto v(f\circ F))
     .\end{align*}
 
-    Note that $f\in C^\infty(N)$ implies that $f\circ F \in C^\infty(M)$, so $v\in T_p M$ can act on such an object.
 
+Note that $f\in C^\infty(N)$ implies that $f\circ F \in C^\infty(M)$, so $v\in T_p M$ can act on such an object.
+Moreover
 
 
