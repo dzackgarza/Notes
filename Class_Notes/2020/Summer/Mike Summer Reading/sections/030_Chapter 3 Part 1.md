@@ -35,6 +35,11 @@ Definition
     
 \todo{What does this equality mean? Is $w(fg)$ a real number? Does $wg = w(g)$, so this is a number too?}
 
+Facts:
+
+1. If $f$ is a constant function then $v(f) = 0\in \RR$.
+2. If $f(p) = g(p)$ for $p\in M$ then $v(fg) = 0\in \RR$.
+
 
 Example
 :   Claim: if $f\in C^\infty(\RR^n)$ is constant, say $f(\vector p) = 1$ for all $\vector p\in \RR^n$, then $w(f) = 0$ for any derivation $w$.
