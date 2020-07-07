@@ -111,3 +111,11 @@ Facts:
 
 Proposition (Tangent Vectors Act Locally)
 : If $f, g\in C^\infty(M)$ agree on any neighborhood of $p\in M$, then $v(f) = v(g)$.
+
+Warning: the action of a derivation depends only on the values of a function in arbitrarily small neighborhoods, and in particular, can only be applied to functions defined in a neighborhood of $p$ (not necessarily on all of $M$).
+
+Remark
+: The tangent space of an $n\dash$manifolds is $n\dash$dimensional, even on boundary point.
+
+
+
