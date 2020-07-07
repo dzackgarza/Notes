@@ -87,6 +87,11 @@ Definition (Differential of a Map)
 
 
 Note that $f\in C^\infty(N)$ implies that $f\circ F \in C^\infty(M)$, and since $v\in T_p M$ is a functional in $C^\infty(M)\dual$, $v$ can act on such objects..
-Moreover
+Moreover, $dF_p(v)$ is in fact a derivation at $F(p)$, since
+\begin{align*}
+dF_p(v)(fg) &= v((fg) \circ F) \\
+&= v((f\circ F) \cdot (g\circ F) ) \hspace{8em}{Why?} \\
+&= f \circ \qty{F(p) \cdot v(g\circ F) } + g \circ \qty{F(p) \cdot v(f\circ F)}
+.\end{align*}
 
 
