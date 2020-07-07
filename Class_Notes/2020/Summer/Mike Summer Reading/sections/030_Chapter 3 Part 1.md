@@ -128,6 +128,9 @@ Proposition
 Thus tangent vectors in $V$ are routinely identified with elements of $V$.
 
 
+Definition
+: The *tangent bundle* of a manifold is defined as $TM \definedas \disjoint_{p\in M} T_p M$.
+
 Proposition
 : If $F:M\to N$ is smooth with $p\in M$ and $v\in T_p M$, then $dF_p(v) = (F\circ \gamma)(0)$ where $\gamma: (-a, b)\to M$ is any smooth curve with $\gamma(0) = p$ and $\gamma'(0) = v$.
 
