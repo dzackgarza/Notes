@@ -95,7 +95,14 @@ dF_p(v)(fg) &= v((fg) \circ F) \\
 &\definedas (f\circ F)(p) dF_p(v)(g) + (g\circ F)(p) dF_p(v)(f) \\
 &\definedas f(F(p)) dF_p(v)(g) + g(F(p)) dF_p(v)(f) 
 ,\end{align*}
-which puts it in the form $X(fg) = f(q)X(g) + X(f) g(q)$ where $q = F(p)$.
+which puts it in the form $\bd(fg) = f(q)\bd(g) + \bd(f) g(q)$ where $q = F(p)$.
 
 
+Facts:
 
+- $dF_p$ is a linear map.
+- $d(G\circ F)_p = dG_{F(p)} \circ dF_p$.
+- If $F$ is a diffeomorphism, then $dF_p$ is an isomorphism with $(dF_p)\inv = d(F\inv)_{F(p)}$.
+
+Proposition (Tangent Vectors Act Locally)
+: If $f, g\in C^\infty(M)$ agree on any neighborhood of $p\in M$, then $v(f) = v(g)$.
