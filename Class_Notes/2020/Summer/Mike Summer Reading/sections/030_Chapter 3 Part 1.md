@@ -127,6 +127,9 @@ Proposition
 : If $V$ is a vector space, for any $\vector a\in V$, the map $\vector a \mapsto D_{\vector v}\evalfrom_{\vector a}$ yields an isomorphism $V\cong T_{\vector a}V$.
 Thus tangent vectors in $V$ are routinely identified with elements of $V$.
 
+Example
+: $\Gl(n, \RR) \subset \mat(n, \RR)$ is an open submanifold, and thus if $p\in \Gl(n, \RR)$ then we can identify $T_p \Gl(n, \RR) \cong \mat(n, \RR)$.
+
 
 Definition
 : The *tangent bundle* of a manifold is defined as $TM \definedas \disjoint_{p\in M} T_p M$.
