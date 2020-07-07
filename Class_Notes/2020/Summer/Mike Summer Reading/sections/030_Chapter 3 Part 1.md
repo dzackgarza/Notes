@@ -117,6 +117,11 @@ Warning: the action of a derivation depends only on the values of a function in 
 Remark
 : The tangent space of an $n\dash$manifolds is $n\dash$dimensional, even on boundary point.
 
+Theorem
+: If $U\subset M$ is an open subset of a manifold and $\iota:U\injects M$ is the inclusions, then for every $p\in M$, the differential $d\iota_p: T_p U \to T_p M$ is an isomorphism.
+
+In words: the tangent space of any submanifold is isomorphic to the tangent space of the ambient manifold.
+
 For a vector space $V$, there is a natural smooth structure (Example 1.24) and for any $\vector a, \vector v\in V$ we can similarly define a map
 \begin{align*}
 D_{\vector v}\evalfrom_{\vector a}: C^\infty(V) &\to \RR \\
@@ -128,7 +133,8 @@ Proposition
 Thus tangent vectors in $V$ are routinely identified with elements of $V$.
 
 Example
-: $\Gl(n, \RR) \subset \mat(n\times n, \RR)$ is an open submanifold, and thus if $p\in \Gl(n, \RR)$ then we can identify $T_p \Gl(n, \RR) \cong \mat(n\times n, \RR)$.
+: Combined with the fact that tangent spaces of submanifolds are isomorphic to tangent spaces of the entire manifold, note that $\mat(n\times n, \RR)$ is a vector space and thus identified with its own tangent space. 
+Since $\Gl(n, \RR) \subset \mat(n\times n, \RR)$ is an open submanifold, if $p\in \Gl(n, \RR)$ then we can identify $T_p \Gl(n, \RR) \cong \mat(n\times n, \RR)$.
 
 
 Definition
