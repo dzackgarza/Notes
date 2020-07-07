@@ -86,7 +86,7 @@ Definition (Differential of a Map)
     .\end{align*}
 
 
-Note that $f\in C^\infty(N)$ implies that $f\circ F \in C^\infty(M)$, so $v\in T_p M$ can act on such an object.
+Note that $f\in C^\infty(N)$ implies that $f\circ F \in C^\infty(M)$, and since $v\in T_p M$ is a functional in $C^\infty(M)\dual$, $v$ can act on such objects..
 Moreover
 
 
