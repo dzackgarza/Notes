@@ -117,5 +117,14 @@ Warning: the action of a derivation depends only on the values of a function in 
 Remark
 : The tangent space of an $n\dash$manifolds is $n\dash$dimensional, even on boundary point.
 
+For a vector space $V$, there is a natural smooth structure (Example 1.24) and for any $\vector a, \vector v\in V$ we can similarly define a map
+\begin{align*}
+D_{\vector v}\evalfrom_{\vector aa}: C^\infty(V) &\to \RR \\
+f &\mapsto D_{\vector v}f(\vector a)\definedas \dd{}{t}\evalfrom_{t = 0} f(\vector a + t\vector v)
+.\end{align*}
+
+Proposition
+: If $V$ is a vector space, it is a smooth manifold, and the assigment $
+
 
 
