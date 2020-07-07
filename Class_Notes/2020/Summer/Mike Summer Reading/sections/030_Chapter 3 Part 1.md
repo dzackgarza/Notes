@@ -128,6 +128,8 @@ Proposition
 Thus tangent vectors in $V$ are routinely identified with elements of $V$.
 
 
+Proposition
+: If $F:M\to N$ is smooth with $p\in M$ and $v\in T_p M$, then $dF_p(v) = (F\circ \gamma)(0)$ where $\gamma: (-a, b)\to M$ is any smooth curve with $\gamma(0) = p$ and $\gamma'(0) = v$.
 
 Definition (Germ of a Function)
 : The *germ* of a function $f$ at $p$ is the equivalence class of ordered pairs $(f, U)$ where $U\subseteq M$ is open and $f\in C^\infty(U, \RR)$, where $(f, U) \sim (g, V)$ iff there exists a neighborhood $N \subset U\intersect V$ containing $p$ such that $\restrictionof{f}{N} \equiv \restrictionof{g}{N}$.
