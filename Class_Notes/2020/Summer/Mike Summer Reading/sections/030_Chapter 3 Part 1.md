@@ -119,12 +119,15 @@ Remark
 
 For a vector space $V$, there is a natural smooth structure (Example 1.24) and for any $\vector a, \vector v\in V$ we can similarly define a map
 \begin{align*}
-D_{\vector v}\evalfrom_{\vector aa}: C^\infty(V) &\to \RR \\
+D_{\vector v}\evalfrom_{\vector a}: C^\infty(V) &\to \RR \\
 f &\mapsto D_{\vector v}f(\vector a)\definedas \dd{}{t}\evalfrom_{t = 0} f(\vector a + t\vector v)
 .\end{align*}
 
 Proposition
-: If $V$ is a vector space, it is a smooth manifold, and the assigment $
+: If $V$ is a vector space, for any $\vector a\in V$, the map $\vector a \mapsto D_{\vector v}\evalfrom_{\vector a}$ yields an isomorphism $V\cong T_{\vector a}V$.
+Thus tangent vectors in $V$ are routinely identified with elements of $V$.
+
+
 
 
 
