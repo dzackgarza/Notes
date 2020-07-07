@@ -133,6 +133,8 @@ Definition (Germ of a Function)
 : The *germ* of a function $f$ at $p$ is the equivalence class of ordered pairs $(f, U)$ where $U\subseteq M$ is open and $f\in C^\infty(U, \RR)$, where $(f, U) \sim (g, V)$ iff there exists a neighborhood $N \subset U\intersect V$ containing $p$ such that $\restrictionof{f}{N} \equiv \restrictionof{g}{N}$.
 The set of germs of functions at $p$ is denoted $C_p^\infty(M)$ and is an associative $\RR\dash$algebra.
 
+Remark
+: This definition is the only one available for real or complex analytic manifolds, since there do not exist analytic bump functions.
 
 
 
