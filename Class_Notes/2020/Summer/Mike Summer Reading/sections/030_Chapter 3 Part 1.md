@@ -93,7 +93,9 @@ dF_p(v)(fg) &= v((fg) \circ F) \\
 &= v((f\circ F) \cdot (g\circ F) ) \hspace{8em}{Why?} \\
 &= (f \circ F)(p) \cdot v(g\circ F) + v(f\circ F) \cdot (g \circ F)(p) \quad\text{since $v$ is a derivation}\\
 &\definedas (f\circ F)(p) dF_p(v)(g) + (g\circ F)(p) dF_p(v)(f) \\
-&\definedas f(F(p)) dF_p(v)(g) + g(F(p)) dF_p(v)(f) \\
-.\end{align*}
+&\definedas f(F(p)) dF_p(v)(g) + g(F(p)) dF_p(v)(f) 
+,\end{align*}
+which puts it in the form $X(fg) = f(q)X(g) + X(f) g(q)$ where $q = F(p)$.
+
 
 
