@@ -91,7 +91,9 @@ Moreover, $dF_p(v)$ is in fact a derivation at $F(p)$, since
 \begin{align*}
 dF_p(v)(fg) &= v((fg) \circ F) \\
 &= v((f\circ F) \cdot (g\circ F) ) \hspace{8em}{Why?} \\
-&= (f \circ F)(p) \cdot v(g\circ F) + v(f\circ F) \cdot (g \circ F)(p) 
+&= (f \circ F)(p) \cdot v(g\circ F) + v(f\circ F) \cdot (g \circ F)(p) \quad\text{since $v$ is a derivation}\\
+&\definedas (f\circ F)(p) DF_p(g) + (g\circ F)(p) DF_p(f) \\
+&\definedas (f\circ F)(p) DF_p(g) + (g\circ F)(p) DF_p(f) \\
 .\end{align*}
 
 
