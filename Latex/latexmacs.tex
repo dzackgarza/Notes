@@ -1,3 +1,5 @@
+\newcommand{\newoperator}[1]{\expandafter\DeclareMathOperator\csname #1\endcsname{\operatorname{#1}}}
+% Example usage: \newoperator{Ext}
 %\newcommand{\abs}[2]{{\left\lvert {#2} \right\rvert_{\text{#1}}}}
 %\newcommand{\char}[0]{\text{char}}
 %\newcommand{\hom}[0]{\text{Hom}}
@@ -262,3 +264,8 @@
 \renewcommand{\vector}[1]{\mathbf{#1}}
 \let\oldexp\exp
 \renewcommand{\exp}[1]{\oldexp\qty{#1}}
+\newcommand{\many}[2][\dotsb]{#2 #1 #2} % From Arun Debray, example usage: e_1 \many\otimes e_n
+% \catcode`\"=13
+% \newcommand*{"}[1]{^{(#1)}}
+% Example usage: a"1 for a^{1}, and a"10 for a^{10}
+
