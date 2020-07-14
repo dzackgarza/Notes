@@ -823,3 +823,4 @@ HOMFLY
 isoclasses
 biadditive
 grmod
+coinvariant
