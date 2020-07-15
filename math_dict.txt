@@ -824,3 +824,4 @@ isoclasses
 biadditive
 grmod
 coinvariant
+Bimod
