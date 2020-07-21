@@ -11,6 +11,11 @@ Exercise (3-7)
     \end{align*}
     is an isomorphism.
 
+
+\begin{solution}
+asdsa
+\end{solution}
+
 Exercise (3-8)
 :   Let $p\in M$ and $V_p M = \theset{\text{Curves starting at } p}/\sim$ where $\gamma_1\sim \gamma_2 \iff$ for every $f\in C^\infty(M, \RR)$, $\dd{(f\circ \gamma_1)}{t}(0) = \dd{(f\circ \gamma_2)}{t}(0)$.
     Show that the following map is well-defined and bijective:
