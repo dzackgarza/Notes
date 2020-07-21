@@ -32,6 +32,14 @@ Solution
     Note that $w$ can't act directly on $f$, since $f$ is only defined on a subset $U\subseteq M$ whereas $w$ needs to act on functions defined on all of $M$.
     So take $\tilde f: M\to \RR$ to be $f$ extended by smooth bump functions to all of $M$.
 
+    Things to check:
+
+    - $\Phi$ is well-defined.
+    - $\Phi$ is linear.
+    - $\Phi\inv$ is well-defined.
+    - $\Phi\inv$ is linear
+    - $\Phi \circ \Phi\inv = \id_{T_p M}$ and $\Phi\inv \circ \Phi = \id_{D_p M}$.
+
 
 
 Exercise (3-8)
