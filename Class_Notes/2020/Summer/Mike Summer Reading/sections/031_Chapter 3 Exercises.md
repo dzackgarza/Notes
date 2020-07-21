@@ -21,7 +21,12 @@ Solution
     ,\end{align*}
     where $\Phi_v$ is the image of $v$ and $[(f, U)]$ is a germ, i.e. an equivalence class of ordered pairs.
 
-    We note that $v: C_p^\infty(M) \to \RR$
+    We note that $v: C_p^\infty(M) \to \RR$.
+    For $w\in T_p M$, we have $w: C^{\infty}(M) \to \RR$, so define an inverse map
+    \begin{align*}
+    \Phi\inv: T_p M &\to D_p M \\
+    w &\mapsto \qty{ [(f, U)] \mapsto  }
+    .\end{align*}
 
 
 
