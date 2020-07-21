@@ -825,3 +825,4 @@ biadditive
 grmod
 coinvariant
 Bimod
+diffeomorphically
