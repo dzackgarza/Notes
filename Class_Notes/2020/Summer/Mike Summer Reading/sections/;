@@ -17,16 +17,4 @@ $\rank(F)$ is bounded above by $\min \theset{\dim M, \dim N}$; if it achieves th
 
 
 Definition (Submersion)
-: A smooth map $F:M\to N$ is a *submersion* iff $dF_p$ is surjective for every $p\in M$, or equivalently $F$ has constant rank $\rank(F) = \dim N$.
-
-  > Analogy: surjections.
-
-Definition (Immersion)
-: A smooth map $F:M\to N$ is an *immersion* iff $dF_p$ is injective for every $p\in M$, or equivalently $F$ is of constant rank $\rank(F) = \dim M$.
-
-  > Analogy: injections.
-
-
-
-Proposition
-: If $F:M\to N$ and $dF_p$ is surjective (resp. injective) at a point, then there exists a neighborhood $U \ni p$ such that $F$ restricted to $U$ is a submersion (resp. immersion).
+: A smooth map $F:M\to N$ is a *submersion* iff $dF_p$ is surjective for every $p$, or equivalently $F$ has constant rank $\rank(F) = \dim N$.
