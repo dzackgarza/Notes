@@ -1,4 +1,3 @@
-# Chapter 1 Problems
 
 ## Recommended Problems
 

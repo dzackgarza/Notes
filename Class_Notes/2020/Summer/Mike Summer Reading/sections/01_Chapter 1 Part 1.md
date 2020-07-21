@@ -1,4 +1,4 @@
-# Chapter 1: Point-Set Properties of Topological Manifolds
+# Chapter 0: Point-Set Properties of Topological Manifolds
 
 Pages 1- 29.
 

@@ -1,4 +1,4 @@
-## Exercises
+## Recommended Problems 
 
 Exercise (3-7)
 :   Let $p\in M$ and $C_p^\infty(M, \RR)$ be the $\RR\dash$algebra of germs of functions at $p$.
@@ -10,3 +10,4 @@ Exercise (3-7)
     \qty{\Phi_v} f \definedas v([f]_p)
     \end{align*}
     is an isomorphism.
+
