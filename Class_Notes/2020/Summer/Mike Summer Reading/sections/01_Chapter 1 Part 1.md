@@ -252,5 +252,3 @@ Theorem (Manifolds are Paracompact)
 Proposition
 : $\pi_1(M)$ is countable.
 
-
-
