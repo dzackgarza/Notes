@@ -1,5 +1,7 @@
 # Chapter 2: Smooth Structures
 
+## Notes
+
 
 Definition (Smooth Functionals on Manifolds)
 : A function $f: M^n\to \RR^k$ is *smooth* iff for every $p\in M$ there exists a smooth chart $(U, \phi)$ about $p$ such that $f\circ \phi\inv: \phi(U) \to \RR^k$ is smooth as a real function.
