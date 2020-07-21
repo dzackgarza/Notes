@@ -18,3 +18,5 @@
 
 !include sections/030_Chapter 3 Part 1.md
 
+!include sections/2020-07-20.md
+
