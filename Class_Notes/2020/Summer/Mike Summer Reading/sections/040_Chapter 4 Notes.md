@@ -1,5 +1,7 @@
 # Chapter 4: 'Mersions
 
+## Notes
+
 Three categories of maps:
 
 - Submersions: everywhere surjective differentials (analogy: quotient maps)
