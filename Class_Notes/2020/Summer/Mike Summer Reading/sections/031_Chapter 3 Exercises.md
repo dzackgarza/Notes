@@ -17,9 +17,13 @@ Solution
     First, clarify that this is the map
     \begin{align*}
     \Phi: D_p M &\to T_p M \\
-    v &\mapsto \qty{ f \mapsto v([f]_p) }
+    v &\mapsto \qty{ f \mapsto v([(f, U)]_p) }
     ,\end{align*}
-    where $\Phi_v$ is the image of $v$.
+    where $\Phi_v$ is the image of $v$ and $[(f, U)]$ is a germ, i.e. an equivalence class of ordered pairs.
+
+    We note that $v: C_p^\infty(M) \to \RR$
+
+
 
 
 Exercise (3-8)
