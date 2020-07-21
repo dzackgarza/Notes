@@ -826,3 +826,4 @@ grmod
 coinvariant
 Bimod
 diffeomorphically
+metrizable
