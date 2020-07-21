@@ -6,13 +6,13 @@
 
 !include sections/000_Notes To Self.md
 
-!include sections/00_Preface.md
+!include sections/000_Preface.md
+
+!include sections/010_Chapter 1 Part 1.md
 
 !include sections/011_Chapter 1 Part 2.md
 
 !include sections/012_Chapter 1 Exercises.md
-
-!include sections/01_Chapter 1 Part 1.md
 
 !include sections/020_Chapter 2 Notes.md
 
