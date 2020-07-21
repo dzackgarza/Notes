@@ -1,8 +1,8 @@
-# Chapter 0: Point-Set Properties of Topological Manifolds
+# Chapter 1: Point-Set Properties of Topological Manifolds
 
 Pages 1- 29.
 
-## Notes
+## Notes Part 1
 
 Definition (Topological Manifold)
 :   A topological space $M$ that satisfies

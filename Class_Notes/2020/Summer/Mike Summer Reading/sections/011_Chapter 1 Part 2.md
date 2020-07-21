@@ -1,4 +1,4 @@
-# Chapter 1: Smooth Manifolds
+## Notes Part 2
 
 Definition (Smooth Functions)
 : A function $f:\RR^n \to \RR^m$ given by $\thevector{f_1(\vector x^n), f_2(\vector x^n), \cdots, f_m(\vector x^n)}$ (or any subsets thereof) is said to be $C^\infty$ or **smooth** iff each $f_i$ has continuous partial derivatives of all orders.
