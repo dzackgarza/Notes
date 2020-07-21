@@ -1,4 +1,4 @@
-# Chapter 3
+# Chapter 3: Tangent Vectors (Continued)
 
 Definition
 : For a fixed point $\vector a \in \RR^n$, define the *geometric tangent space* at $\vector a$ to be the set

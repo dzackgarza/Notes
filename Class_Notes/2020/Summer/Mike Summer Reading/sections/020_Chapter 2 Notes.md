@@ -1,4 +1,4 @@
-# Chapter 2
+# Chapter 2: Smooth Structures
 
 
 Definition (Smooth Functionals on Manifolds)

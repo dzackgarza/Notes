@@ -1,4 +1,4 @@
-# Chapter 3
+# Chapter 4: 'Mersions
 
 Three categories of maps:
 
