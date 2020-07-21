@@ -25,9 +25,12 @@ Solution
     For $w\in T_p M$, we have $w: C^{\infty}(M) \to \RR$, so define an inverse map
     \begin{align*}
     \Phi\inv: T_p M &\to D_p M \\
-    w &\mapsto \qty{ [(f, U)] \mapsto  }
-    .\end{align*}
+    w &\mapsto \qty{ [(f, U)] \mapsto w(\tilde f) }
+    ,\end{align*}
+    where $\tilde f$ is to be defined.
 
+    Note that $w$ can't act directly on $f$, since $f$ is only defined on a subset $U\subseteq M$ whereas $w$ needs to act on functions defined on all of $M$.
+    So take $\tilde f: M\to \RR$ to be $f$ extended by smooth bump functions to all of $M$.
 
 
 
