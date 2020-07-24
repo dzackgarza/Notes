@@ -831,3 +831,5 @@ DF
 Gröbner
 Kunze
 Sylow's
+Wedderburn
+Artin
