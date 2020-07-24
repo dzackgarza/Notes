@@ -828,3 +828,4 @@ Bimod
 diffeomorphically
 metrizable
 DF
+Gröbner
