@@ -830,3 +830,4 @@ metrizable
 DF
 Gröbner
 Kunze
+Sylow's
