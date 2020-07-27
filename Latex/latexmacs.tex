@@ -1,11 +1,4 @@
-\newcommand{\newoperator}[1]{\expandafter\DeclareMathOperator\csname #1\endcsname{\operatorname{#1}}}
-% Example usage: \newoperator{Ext}
-%\newcommand{\abs}[2]{{\left\lvert {#2} \right\rvert_{\text{#1}}}}
-%\newcommand{\char}[0]{\text{char}}
-%\newcommand{\hom}[0]{\text{Hom}}
-%\newcommand{\suchthat}[0]{{~\backepsilon ~}}
-%\newcommand{\vector}[1]{{\mathbf{ {#1} }}}
-%\newcommand{\indicator}[1]{{\unicode{x1D7D9}\left[#1\right]}}
+\newcommand{\ext}[0]{\text{Ext}}
 \def\Endo{\operatorname{End}}
 \def\Ind{\operatorname{Ind}}
 \def\Res{\operatorname{Res}}
@@ -94,7 +87,6 @@
 \newcommand{\const}[0]{{\text{const.}}}
 \newcommand{\disc}[0]{{\text{disc}}}
 \newcommand{\op}[0]{^\text{op}}
-\newcommand{\ext}[0]{\text{Ext}}
 \newcommand{\id}[0]{\text{id}}
 \newcommand{\im}[0]{{\text{im}~}}
 \newcommand{\pt}[0]{{\{\text{pt}\}}}
@@ -256,7 +248,6 @@
 \newcommand{\nonzero}[0]{^{\bullet}}
 \newcommand{\wait}[0]{{\,\cdot\,}}
 \newcommand{\wt}[0]{{\mathrm{wt}}}
-%\renewcommand{\bar}[1]{\overline{#1}}
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 \renewcommand{\div}[0]{\mathrm{Div}}
 \renewcommand{\hat}[1]{\widehat{#1}}
@@ -266,13 +257,8 @@
 \renewcommand{\vector}[1]{\mathbf{#1}}
 \let\oldexp\exp
 \renewcommand{\exp}[1]{\oldexp\qty{#1}}
-\newcommand{\many}[2][\dotsb]{#2 #1 #2} % From Arun Debray, example usage: e_1 \many\otimes e_n
-% \catcode`\"=13
-% \newcommand*{"}[1]{^{(#1)}}
-% Example usage: a"1 for a^{1}, and a"10 for a^{10}
 \newcommand*\dif{\mathop{}\!\mathrm{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
-
 
 \DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
