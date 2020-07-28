@@ -91,3 +91,10 @@ Every smooth submersion has constant rank equal to the dimension of the codomain
 
 Analogy: for $L:\RR^m\to \RR^r$ a surjective linear map, $\ker L \leq \RR^m$ has codimension $r$ by rank-nullity.
 Surjective linear maps are analogous to smooth submersions.
+
+:::{.definition title="Regular and Critical Points"}
+If $\phi: M\to N$ is smooth, $p\in M$ is a **regular point** if $d\phi$ is surjective and a **critical point** otherwise.
+:::
+
+Note that if every point of $M$ is critical then $\dim M < \dim N$, and every point is regular $\iff$ $F$ is a submersion.
+
