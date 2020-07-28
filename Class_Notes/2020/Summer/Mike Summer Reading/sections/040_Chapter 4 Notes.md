@@ -6,28 +6,27 @@ Three categories of maps:
 
 - Submersions: everywhere surjective differentials (analogy: quotient maps)
 - Immersions: everywhere injective differentials,
-- Embeddings: injective immersions that are homeomorphisms onto their images.
+- Embeddings: injective immersions that are homeomorphisms onto their images (special case of immersion).
 
 
-Definition (Rank)
-: If $F:M \to N$ is a smooth map of manifolds and $p\in M$, then the *rank of $F$ at $p$* is the rank of the linear map $dF_p: T_p M \to T_{F(p)} N$
-
+:::{.definition title="Rank"}
+If $F:M \to N$ is a smooth map of manifolds and $p\in M$, then the *rank of $F$ at $p$* is the rank of the linear map $dF_p: T_p M \to T_{F(p)} N$
+:::
 This is equivalently the rank of the Jacobian of $F$ in any chart, or the dimension of $\im dF_p \subseteq T_{F(p)}N$.
 The rank may vary from point to point.
 
 The positive integer $\rank(F)$ is bounded above by $\min \theset{\dim M, \dim N}$; if it achieves this maximum we say $F$ has *full rank*.
 
 
-Definition (Submersion)
-: A smooth map $F:M\to N$ is a *submersion* iff $dF_p$ is surjective for every $p\in M$, or equivalently $F$ has constant rank $\rank(F) = \dim N$.
+:::{.definition title="Submersion"}
+A smooth map $F:M\to N$ is a *submersion* iff $dF_p$ is surjective for every $p\in M$, or equivalently $F$ has constant rank $\rank(F) = \dim N$.
+:::
+Analogy: surjective linear maps.
 
-  > Analogy: surjective linear maps.
-
-Definition (Immersion)
-: A smooth map $F:M\to N$ is an *immersion* iff $dF_p$ is injective for every $p\in M$, or equivalently $F$ is of constant rank $\rank(F) = \dim M$.
-
-  > Analogy: injective linear maps.
-
+:::{.definition title="Immersion"}
+A smooth map $F:M\to N$ is an *immersion* iff $dF_p$ is injective for every $p\in M$, or equivalently $F$ is of constant rank $\rank(F) = \dim M$.
+:::
+Analogy: injective linear maps.
 
 
 Proposition (\$\\dash\$jective Differential Implies Local \$\\dash\$mersion)
@@ -58,7 +57,7 @@ Theorem (Inverse Function Theorem, Rudin's Version)
 : If $f$ is a $C^1$ mapping of open subsets $M\subseteq \RR^m\to \RR^n\supseteq N$ and $f'(p)$ is invertible for some $p\in M$, then there exists $U\ni p$ and $V\ni f(p)$ such that $\restrictionof{f}{U}:U\to V$ is a bijection with $C^1$ inverse.
 
 Note that this can fail if $\bd M \neq \emptyset$, but will hold when $F(M)\subseteq N^\circ$.
-This *always* happens at points $p$ where $dF_p$ is invertible.
+This always happens at points $p$ where $dF_p$ is invertible.
 
 Proposition
 :   \hfill
@@ -71,7 +70,7 @@ Proof
 
     1. Find a neighborhood $U\ni p$ on which $F: U \to F(U)$ is a diffeomorphism, then $dF_p: T_p M \mapsvia{\cong} T_{F(p)}N$ is an isomorphism, so $\rank(F) = \dim M = \dim N$ and $F$ is an immersion and a submersion.
 
-        Conversely, if $dF_p$ is an isomorphism at each point, the inverse function theorem supplies neighborhoods on which $F$ is a diffeomorphism.
+      Conversely, if $dF_p$ is an isomorphism at each point, the inverse function theorem supplies neighborhoods on which $F$ is a diffeomorphism.
 
     2. If $\dim M = \dim N$ then either injectivity or surjectivity of $dF_p$ implies bijectivity.
 

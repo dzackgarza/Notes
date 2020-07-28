@@ -38,7 +38,7 @@ The slices $M\cross\theset{p}$ for $p\in N$ are embedded submanifolds of $M\cros
 :::{.proposition}
 For $f:U\to N$ with $U\subseteq M$,
 \[  
-\Gamma(f) \definedas \theset{(x, f(x)) \in M\cross N \suchthat x\in U,\} \injects M\cross N
+\Gamma(f) \definedas \theset{(x, f(x)) \in M\cross N \suchthat x\in U} \injects M\cross N
 \]
 is an embedded submanifold.
 :::
@@ -130,3 +130,4 @@ Encountered when studying Lie subgroups, where subsets will be the images of inj
 A subset $S\subseteq M$ equipped with some topology for which the inclusion $S\injects M$ is a smooth immersion is said to be an **immersed submanifold**.
 :::
 
+Convention: smooth submanifolds always denote immersions, whereas embeddings are a special case.
