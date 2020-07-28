@@ -41,6 +41,8 @@ For $f:U\to N$ with $U\subseteq M$,
 is an embedded submanifold.
 :::
 
+Note: any manifold that is locally the graph of a smooth function is an embedded submanifold.
+
 :::{.proposition}
 $S\injects M$ is a properly embedded submanifolds $\iff$ $S$ is a closed subset of $M$.
 Thus every compact embedded submanifold is properly embedded.
