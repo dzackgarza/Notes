@@ -109,4 +109,14 @@ The set of regular points is always open.
 Every regular level set of a smooth map $\phi: M\to N$ is a properly embedded submanifold of codimension $\dim N$.
 :::
 
+Not every embedded submanifold is the level set of a smooth submersion globally, but this does hold locally:
+:::{.proposition}
+$S_k\injects M_m$ is an embedded $k\dash$dimensional submanifold $\iff$ every $s\in S$ admits a neighborhood $U$ such that $U\intersect S$ is the level set of a smooth submersion $U\to \RR^{m-k}$.
+:::
+
+:::{.definition title="Defining Map for an Embedding"}
+If $S\injects M$ is an embedded submanifold, the **defining map** for $S$ is the smooth map $\phi: M\to N$ such that $S$ is a regular level set of $\phi$.
+:::
+
+Example: $f(\vector x) = \norm{\vector x}^2$ is the defining map for $S^n$.
 
