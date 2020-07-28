@@ -33,8 +33,10 @@ The slices $M\cross\theset{p}$ for $p\in N$ are embedded submanifolds of $M\cros
 :::
 
 :::{.proposition}
+For $f:U\to N$ with $U\subseteq M$,
 \[  
-\Gamma(f) \definedas \theset{(x, y) \in M\cross N \suchth at 
-.\]
+\Gamma(f) \definedas \theset{(x, f(x)) \in M\cross N \suchthat x\in U,\} \injects M\cross N
+\]
+is an embedded submanifold.
 :::
 
