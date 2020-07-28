@@ -23,6 +23,9 @@ A way to produce submanifolds:
 If $F:N\to M$, then $F(N)$ is a submanifold of $M$ with the subspace topology and a unique smooth structure making $F$ a diffeomorphism onto its image and $F(N)\injects M$ and embedding. 
 :::
 
+:::{.theorem title="Embedded Submanifolds are Images of Smooth Embeddings"}
+
+:::
 
 
 
