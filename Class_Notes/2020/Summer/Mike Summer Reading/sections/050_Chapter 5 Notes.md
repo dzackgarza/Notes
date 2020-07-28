@@ -1,5 +1,7 @@
 # Chapter 5: Submanifolds 
 
+## When Submanifolds are Embedded
+
 The most important type of manifolds: embedded submanifolds.
 Most often described as the *level set* of a smooth map, but needs extra conditions.
 The level sets of constant rank maps are always embedded submanifolds.
@@ -48,6 +50,8 @@ $S\injects M$ is a properly embedded submanifolds $\iff$ $S$ is a closed subset 
 Thus every compact embedded submanifold is properly embedded.
 :::
 
+## The Slice Condition
+
 Embedded submanifolds are locally modeled on the standard embedding $\RR^k \injects \RR^n$ where $\vector x \mapsto \thevector{\vector x, \vector 0}$.
 
 :::{.proposition title="Local $k\dash$slice Condition"}
@@ -94,7 +98,14 @@ Surjective linear maps are analogous to smooth submersions.
 
 :::{.definition title="Regular and Critical Points"}
 If $\phi: M\to N$ is smooth, $p\in M$ is a **regular point** if $d\phi$ is surjective and a **critical point** otherwise.
+A point $c\in N$ is a **regular value** if every point in $\phi^{-1}(c)$ is a regular point, and a **critical value** otherwise.
+A set $\phi^{-1}(c)$ is a **regular level set** iff $c$ is a regular value.
 :::
 
 Note that if every point of $M$ is critical then $\dim M < \dim N$, and every point is regular $\iff$ $F$ is a submersion.
+The set of regular points is always open.
+
+:::{.theorem title="Regular Level Set Theorem"}
+Every regular level set of a smooth map $\phi: M\to N$ is a properly embedded submanifold of codimension $\dim N$.
+:::
 
