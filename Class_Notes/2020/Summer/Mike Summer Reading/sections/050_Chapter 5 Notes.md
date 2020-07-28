@@ -59,4 +59,12 @@ $S\injects M$ is an embedded $k\dash$dimensional submanifold $\iff$ $S$ satisfie
 Moreover, there is a unique smooth structure on $S$ for which this holds.
 :::
 
+For manifolds with boundary, $\bd M \injects M$ is a proper embedding.
+Every such manifold can be embedded in a larger manifold $\tilde M$ without boundary.
+
+## Level Sets
+
+:::{.definition title="Level Sets"}
+For $\phi:M\to N$ and $c\in N$, $\phi^{-1}(c)$ is a *level set* of $\phi$.
+:::
 
