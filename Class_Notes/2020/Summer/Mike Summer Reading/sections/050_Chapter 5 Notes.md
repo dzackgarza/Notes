@@ -109,14 +109,24 @@ The set of regular points is always open.
 Every regular level set of a smooth map $\phi: M\to N$ is a properly embedded submanifold of codimension $\dim N$.
 :::
 
-Not every embedded submanifold is the level set of a smooth submersion globally, but this does hold locally:
+:::{.definition title="Defining Map for an Embedding"}
+If $S\injects M$ is an embedded submanifold, a **defining map** for $S$ is the smooth map $\phi: M\to N$ such that $S$ is a regular level set of $\phi$, if such a map exists.
+:::
+
+Example: $f(\vector x) = \norm{\vector x}^2$ is the defining map for $S^n$.
+
+Not every embedded submanifold is the level set of a smooth submersion globally, but this does hold locally.
+I.e., every embedded submanifold admits a local defining map:
 :::{.proposition}
 $S_k\injects M_m$ is an embedded $k\dash$dimensional submanifold $\iff$ every $s\in S$ admits a neighborhood $U$ such that $U\intersect S$ is the level set of a smooth submersion $U\to \RR^{m-k}$.
 :::
 
-:::{.definition title="Defining Map for an Embedding"}
-If $S\injects M$ is an embedded submanifold, the **defining map** for $S$ is the smooth map $\phi: M\to N$ such that $S$ is a regular level set of $\phi$.
-:::
+## Immersed Submanifolds
 
-Example: $f(\vector x) = \norm{\vector x}^2$ is the defining map for $S^n$.
+Immersed submanifolds: more general than embedded submanifolds.
+Encountered when studying Lie subgroups, where subsets will be the images of injective immersions but not necessarily embeddings (example: figure eight curve).
+
+:::{.definition title="Immersed Submanifold"}
+A subset $S\subseteq M$ equipped with some topology for which the inclusion $S\injects M$ is a smooth immersion is said to be an **immersed submanifold**.
+:::
 
