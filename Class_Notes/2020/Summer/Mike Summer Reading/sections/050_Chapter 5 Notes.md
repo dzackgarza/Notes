@@ -21,10 +21,8 @@ A subset $S\subseteq M$ of codimension zero is an embedded submanifold iff $S$ i
 A way to produce submanifolds:
 :::{.proposition}
 If $F:N\to M$, then $F(N)$ is a submanifold of $M$ with the subspace topology and a unique smooth structure making $F$ a diffeomorphism onto its image and $F(N)\injects M$ and embedding. 
-
-> Yields a way to produce submanifolds
-
 :::
+
 
 
 
