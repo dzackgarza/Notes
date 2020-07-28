@@ -32,5 +32,9 @@ Embedded submanifolds are exactly the images of smooth embeddings:
 The slices $M\cross\theset{p}$ for $p\in N$ are embedded submanifolds of $M\cross N$ diffeomorphic to $M$.
 :::
 
-
+:::{.proposition}
+\[  
+\Gamma(f) \definedas \theset{(x, y) \in M\cross N \suchth at 
+.\]
+:::
 
