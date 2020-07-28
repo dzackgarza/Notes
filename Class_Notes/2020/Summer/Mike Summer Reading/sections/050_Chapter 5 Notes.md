@@ -46,5 +46,9 @@ $S\injects M$ is a properly embedded submanifolds $\iff$ $S$ is a closed subset 
 Thus every compact embedded submanifold is properly embedded.
 :::
 
+Embedded submanifolds are locally modeled on the standard embedding $\RR^k \injects \RR^n$ 
+:::{.proposition title="Local Slice Criterion for Embeddings"}
+$S\injects M$ is an embedded $k\dash$dimensional submanifold $\iff$ $S$ satisfies the local $k\dash$slice condition.
+:::
 
 
