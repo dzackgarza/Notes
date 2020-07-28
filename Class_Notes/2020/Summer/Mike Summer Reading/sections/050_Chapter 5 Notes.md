@@ -68,3 +68,11 @@ Every such manifold can be embedded in a larger manifold $\tilde M$ without boun
 For $\phi:M\to N$ and $c\in N$, $\phi^{-1}(c)$ is a *level set* of $\phi$.
 :::
 
+Examples:
+
+- $f(x, y) = x^2-y$, then $V(f) \injects \RR^2$ is an embedding since it is the graph of the smooth function $x\mapsto x^2$.
+- $f(x, y) = x^2 - y^2$ is not an embedded submanifold.
+- $f(x, y) = x^2 - y^3$ is not an embedded submanifold.
+
+
+Every closed $S\subset M$ is the zero set of some smooth function $M\to \RR$.
