@@ -18,3 +18,8 @@ An embedded submanifold of codimension 1.
 A subset $S\subseteq M$ of codimension zero is an embedded submanifold iff $S$ is an open submanifold.
 :::
 
+:::{.proposition}
+If $F:N\to M$, then $F(N)$ is a submanifold with the subspace topology and a unique smooth structure making $F$ a diffeomorphism onto its image.
+> Yields a way to produce submanifolds:
+:::
+
