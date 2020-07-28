@@ -76,3 +76,17 @@ Examples:
 
 
 Every closed $S\subset M$ is the zero set of some smooth function $M\to \RR$.
+
+:::{.theorem title="Constant Rank Level Set Theorem"}
+For $\phi: M\to N$ with constant rank $r$, each level set of $\phi$ is a properly embedded codimension $r$ submanifold.
+:::
+
+:::{.corollary title="Submersion Level Set Theorem"}
+If $\phi: M\to N$ is a smooth submersion, then the level sets are properly embedded of codimension $\dim N$.
+:::
+
+:::{.proof}
+Every smooth submersion has constant rank equal to the dimension of the codomain.
+:::
+
+Analogy: for $L:\RR^m\to \RR^r$ a surjective linear map, $\ker L \leq \RR^m$ 
