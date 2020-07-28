@@ -89,4 +89,5 @@ If $\phi: M\to N$ is a smooth submersion, then the level sets are properly embed
 Every smooth submersion has constant rank equal to the dimension of the codomain.
 :::
 
-Analogy: for $L:\RR^m\to \RR^r$ a surjective linear map, $\ker L \leq \RR^m$ 
+Analogy: for $L:\RR^m\to \RR^r$ a surjective linear map, $\ker L \leq \RR^m$ has codimension $r$ by rank-nullity.
+Surjective linear maps are analogous to smooth submersions.
