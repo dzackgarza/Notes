@@ -9,6 +9,7 @@ Locally embedded, but may have global topology different than the subspace topol
 
 :::{.definition title="Embedded Submanifolds"}
 For $S\subseteq M$ in the subspace topology, with a smooth structure such that the inclusion $S\injects M$ is smooth.
+If $S\injects M$ is a proper map, then $S$ is **properly embedded**.
 :::
 
 :::{.definition title="Embedded Hypersurface"}
@@ -39,4 +40,9 @@ For $f:U\to N$ with $U\subseteq M$,
 \]
 is an embedded submanifold.
 :::
+
+:::{.proposition}
+$S\injects M$ is a properly embedded submanifolds $\iff$ $S$ is a closed subset of $M$.
+:::
+
 
