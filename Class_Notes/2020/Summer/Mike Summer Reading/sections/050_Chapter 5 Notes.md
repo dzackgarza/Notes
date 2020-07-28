@@ -109,3 +109,4 @@ The set of regular points is always open.
 Every regular level set of a smooth map $\phi: M\to N$ is a properly embedded submanifold of codimension $\dim N$.
 :::
 
+
