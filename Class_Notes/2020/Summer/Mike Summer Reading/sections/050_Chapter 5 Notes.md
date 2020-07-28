@@ -4,6 +4,8 @@ The most important type of manifolds: embedded submanifolds.
 Most often described as the *level set* of a smooth map, but needs extra conditions.
 The level sets of constant rank maps are always embedded submanifolds.
 
+More general: immersed submanifolds.
+Locally embedded, but may have global topology different than the subspace topology.
 
 :::{.definition title="Embedded Submanifolds"}
 For $S\subseteq M$ in the subspace topology, with a smooth structure such that the inclusion $S\injects M$ is smooth.
