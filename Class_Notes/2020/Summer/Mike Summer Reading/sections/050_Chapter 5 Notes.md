@@ -14,3 +14,7 @@ An embedded submanifold of codimension 1.
 :::
 
 
+:::{.proposition}
+A subset $S\subseteq M$ of codimension zero is an embedded submanifold iff $S$ is an open submanifold.
+:::
+
