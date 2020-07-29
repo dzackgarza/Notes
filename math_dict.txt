@@ -839,3 +839,4 @@ Cayley's
 threefolds
 bananafold
 Enriques
+Whitcher
