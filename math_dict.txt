@@ -840,3 +840,13 @@ threefolds
 bananafold
 Enriques
 Whitcher
+sheafification
+projectivize
+Apollonius
+Torelli
+Ricci
+Albanese
+Bezier
+spacetime
+octonions
+superstring
