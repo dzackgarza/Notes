@@ -1,8 +1,6 @@
 \theoremstyle{definition}
 \newtheorem{exercise}{Exercise}[section]
-\newtheorem{example}{Example}[section]
-\newtheorem{solution}{Solution}
-\newtheorem{remark}{Remark}
+newtheorem{remark}{Remark}
 
 % Theorem Styles
 \usepackage[framemethod=tikz]{mdframed}
@@ -96,9 +94,31 @@
   enhanced jigsaw
 }
 \newtheorem*{pf}{Proof}
+\newtheorem*{solution}{Solution}
 \newenvironment{proof}
 {\pushQED{$\qed$}\pf}
 {\par\popQED\endpf}
+
+% Solution Style
+\newtheoremstyle{solution}% name
+  {0em}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1} \thmnote{\itshape{(#3)}}}%         Thm head spec
+\theoremstyle{solution}
+\tcolorboxenvironment{solution}{
+  colback=camel,
+  opacityfill=0.25,
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw
+}
+\newtheorem*{solution}{Solution}
 
 % Definition Style
 \newtheoremstyle{definition}% name
