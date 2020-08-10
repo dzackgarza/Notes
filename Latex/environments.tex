@@ -134,7 +134,7 @@
   {\itshape}              % Thm head font
   {}                      % Punctuation after thm head
   {\newline}              % Space after thm head: \newline = linebreak
-  {\thmnote{\itshape{(#3)}}}     % Thm head spec
+  {\thmname{#1}.}%
 \theoremstyle{problem}
 \tcolorboxenvironment{problem}{
   boxrule=1pt,
@@ -177,3 +177,6 @@
   {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{warning}
 \newtheorem*{warning}{Warning}
+
+\usepackage{environ}
+\RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
