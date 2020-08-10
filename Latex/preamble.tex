@@ -208,3 +208,22 @@
 %\DeclareRobustCommand{\]}{\end{align*}}
 \usepackage{ocgx}
 
+% From Jessie Loucks!
+\newcommand{\rockon}{
+\vspace*{0cm}
+\begin{tikzpicture}[scale=0.075]
+\draw (0,-.25) -- (0,2.25) arc (180:0:.5) -- (1,.75) % index
+arc (180:0:0.5) % middle
+arc (180:0:.5) % ring
+-- (3,1.75) arc (180:0:.5) -- (4,-1.25) % pinkie
+arc (360:270:1.75) -- (1.5,-3) arc (270:180:1.75) % palm
+--(-.25,-1) arc (180:90:1) -- (1.5,0) arc (450:270:.5) -- (1,-1) arc (90:270:.15) % thumb
+arc(90:0:1); % inside palm
+\draw (1,.75) -- (1,0); % middle 2
+\draw (2,.75) -- (2,-.5) arc (180:360:.5) -- (3,.75); %ring 2
+\draw (.5,-2.7)--(.5,-3.3); % lwrist
+\draw (3.25,-2.7)--(3.25,-3.3); % rwrist
+\draw (0,-4.3) rectangle (3.75,-3.3); %sleeve
+\end{tikzpicture}
+}
+
