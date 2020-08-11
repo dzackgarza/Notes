@@ -64,6 +64,10 @@ $if(csl-refs)$
   {\par}
 $endif$
 
+$if(hidesolutions)$
+\RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
+$endif$
+
 \begin{document}
 \maketitle
 \tableofcontents
