@@ -72,6 +72,11 @@ $endif$
 \maketitle
 \tableofcontents
 
+$if(todos)$
+\newpage
+\listoftodos
+$endif$
+
 $if(book)$
 % Hook into amsthm environments to list them.
 \renewcommand{\listtheoremname}{List of Definitions}
@@ -83,10 +88,6 @@ $endif$
 
 $body$
 
-$if(todos)$
-\newpage
-\listoftodos
-$endif$
 
 \bibliography{/home/zack/Notes/library.bib}
 
