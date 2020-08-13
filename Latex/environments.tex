@@ -181,17 +181,37 @@
   {:}%        Punctuation after thm head
   {0.5em}% Space after thm head: \newline = linebreak
   {\thmname{#1}\thmnote{\itshape{(#3)}}}%
+\definecolor{minty}{HTML}{a0c4ff}
 \tcolorboxenvironment{solution}{
   boxrule=1pt,
   boxsep=0pt,
   breakable,
   enhanced jigsaw,
   opacityback=0.0,
-  colframe=cyan
+  colframe=minty
 }
 \theoremstyle{solution}
 \newtheorem{solution}{Solution}
 
+\newtheoremstyle{concept}% name
+  {0em}%         Space above, empty = `usual value'
+  {1em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {:}%        Punctuation after thm head
+  {0.5em}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnote{\itshape{(#3)}}}%
+\tcolorboxenvironment{concept}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.0,
+  colframe=minty
+}
+\theoremstyle{concept}
+\newtheorem{concept}{Concepts Used}
 
 
 %\usepackage{environ}
