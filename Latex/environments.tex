@@ -181,14 +181,14 @@
   {:}%        Punctuation after thm head
   {0.5em}% Space after thm head: \newline = linebreak
   {\thmname{#1}\thmnote{\itshape{(#3)}}}%
-\definecolor{minty}{HTML}{a0c4ff}
+\definecolor{soln_color}{HTML}{a0c4ff}
 \tcolorboxenvironment{solution}{
   boxrule=1pt,
   boxsep=0pt,
   breakable,
   enhanced jigsaw,
   opacityback=0.0,
-  colframe=minty
+  colframe=soln_color
 }
 \theoremstyle{solution}
 \newtheorem{solution}{Solution}
@@ -202,13 +202,14 @@
   {:}%        Punctuation after thm head
   {0.5em}% Space after thm head: \newline = linebreak
   {\thmname{#1}\thmnote{\itshape{(#3)}}}%
+\definecolor{concept_color}{HTML}{e07a5f}
 \tcolorboxenvironment{concept}{
   boxrule=1pt,
   boxsep=0pt,
   breakable,
   enhanced jigsaw,
   opacityback=0.0,
-  colframe=minty
+  colframe=concept_color
 }
 \theoremstyle{concept}
 \newtheorem{concept}{Concepts Used}
