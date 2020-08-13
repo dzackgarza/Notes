@@ -32,7 +32,8 @@
   attach title to upper={}
 }
 \newtheorem{theorem}{Theorem}[section]
-\newtheorem{concept}{Concepts Used}[section]
+\newtheorem{solution}{Solution}[section]
+
 
 % Proposition Style
 \tcolorboxenvironment{proposition}{
@@ -146,39 +147,7 @@
   colframe=cyan
 }
 \newtheorem{problem}{Problem}
-%\tcolorboxenvironment{solution}{
-  %boxrule=1pt,
-  %boxsep=0pt,
-  %breakable,
-  %enhanced jigsaw,
-  %opacityback=0.0,
-  %colframe=cyan
-%}
-%\newtheorem{solution}{Solution}
 
-\newtheoremstyle{solution}% name
-  {0em}%         Space above, empty = `usual value'
-  {2em}%         Space below
-  {\normalfont}% Body font
-  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries}% Thm head font
-  {.}%        Punctuation after thm head
-  {\newline}% Space after thm head: \newline = linebreak
-  {}%         Thm head spec
-\theoremstyle{solution}
-\definecolor{custom1}{HTML}{caffbf}
-\tcolorboxenvironment{solution}{
-  boxrule=0pt,
-  boxsep=0pt,
-  breakable,
-  enhanced jigsaw,
-  borderline west={4pt}{0pt}{custom1},
-  colbacktitle={custom1},
-  coltitle={black},
-  fonttitle={\large\bfseries},
-  attach title to upper={},
-}
-\newtheorem{solution}{Solution}[theorem]
 
 
 
@@ -203,6 +172,17 @@
   {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{warning}
 \newtheorem*{warning}{Warning}
+
+%\tcolorboxenvironment{solution}{
+  %boxrule=1pt,
+  %boxsep=0pt,
+  %breakable,
+  %enhanced jigsaw,
+  %opacityback=0.0,
+  %colframe=cyan
+%}
+%\newtheorem{solution}{Solution}
+
 
 
 %\usepackage{environ}
