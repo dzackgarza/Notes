@@ -870,3 +870,4 @@ Wedderburn's
 Maschke's
 indiscrete
 isometry
+Woolfitt
