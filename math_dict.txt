@@ -874,3 +874,4 @@ Woolfitt
 ALEKS
 PreClass
 subvariety
+Étale
