@@ -873,3 +873,4 @@ isometry
 Woolfitt
 ALEKS
 PreClass
+subvariety
