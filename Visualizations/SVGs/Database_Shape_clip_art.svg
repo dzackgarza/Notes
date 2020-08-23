@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="80"
+   height="80"
+   viewBox="0 0 1 1"
+   preserveAspectRatio="none"
+   id="svg2160"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docname="db.svg"
+   sodipodi:docbase="/Users/dalts"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata2177">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2175" />
+  <sodipodi:namedview
+     inkscape:window-height="821"
+     inkscape:window-width="1090"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="5.939697"
+     inkscape:cx="69.96566"
+     inkscape:cy="49.711096"
+     inkscape:window-x="20"
+     inkscape:window-y="20"
+     inkscape:current-layer="svg2160"
+     showborder="true"
+     borderlayer="false"
+     inkscape:showpageshadow="false"
+     width="80px"
+     height="80px" />
+  <title
+     id="title2162">SVG drawing</title>
+  <desc
+     id="desc2164">This was produced by version 4.1 of GNU libplot, a free library for exporting 2-D vector graphics.</desc>
+  <g
+     transform="matrix(1.659498e-2,0,0,-1.6595293e-2,-0.7853496,1.6720856)"
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="g2168">
+<path
+   d="M 50.398,50.398 L 50.398,90.898 C 50.398,93.383 62.5,95.398 77.398,95.398 C 92.297,95.398 104.4,93.383 104.4,90.898 L 104.4,50.398 C 104.4,47.918 92.297,45.898 77.398,45.898 C 62.5,45.898 50.398,47.918 50.398,50.398 z "
+   style="stroke-width:1"
+   id="path2170" />
+<path
+   d="M 50.398,90.898 L 50.434,90.667 L 50.538,90.439 L 50.71,90.214 L 50.947,89.993 L 51.249,89.775 L 51.613,89.562 L 52.038,89.353 L 52.522,89.149 L 53.063,88.95 L 53.66,88.756 L 54.31,88.567 L 55.013,88.385 L 55.766,88.208 L 56.568,88.038 L 57.417,87.875 L 58.311,87.718 L 59.249,87.569 L 60.229,87.428 L 61.25,87.294 L 62.308,87.168 L 63.404,87.051 L 64.534,86.943 L 65.699,86.843 L 66.894,86.753 L 68.12,86.672 L 69.374,86.601 L 70.655,86.54 L 71.961,86.49 L 73.29,86.45 L 74.64,86.422 L 76.01,86.404 L 77.398,86.398 C 92.297,86.398 104.4,88.418 104.4,90.898"
+   style="stroke-width:1"
+   id="path2172" />
+</g></svg>
