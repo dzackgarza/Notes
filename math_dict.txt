@@ -876,3 +876,4 @@ PreClass
 subvariety
 Étale
 unipotent
+Litt
