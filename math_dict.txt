@@ -877,3 +877,4 @@ subvariety
 Étale
 unipotent
 Litt
+Harnack
