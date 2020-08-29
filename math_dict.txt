@@ -879,3 +879,4 @@ unipotent
 Litt
 Harnack
 matroids
+Equivariance
