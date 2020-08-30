@@ -4,12 +4,6 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 ---
 
-# Advice
-
-@import "resources_advice.md"
-
----
-
 # Math Course Resources
 
 @import "resources_byclass.md"
@@ -44,38 +38,6 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 - :fa-book: _Graham and Knuth_, [Concrete Mathematics](https://www.amazon.com/gp/product/0201558025)
 	- An encylopedaic reference for a huge swath of discrete Mathematics.
-
-## The Math Subject GRE
-
-If you are thinking about applying to graduate school in Mathematics (pure or applied), I would recommend that you start looking at the material for this exam within your first few years, and take it as soon as your Junior year.
-
-Note that the Math Subject GRE is vastly different than the Math portion of the General GRE. The latter covers primarily high-school level mathematics and requires no courses beyond Calculus (although the questions can still be tricky). The former is over 50% Calculus, and often includes a wide variety of upper-division topics as well. Many sources confuse these two exams!
-
-**Topics**
-- Single Variable Calculus
-- Multivariable Calculus
-- Ordinary Differential Equations
-- Linear Algebra
-- Complex Analysis
-- Abstract Algebra
-	- Primarily groups and rings, virtually no module or Galois theory.
-- Probability/Statistics
-- Real Analysis
-	- Convergence of sums/sequences, topological properties of $\RR$.
-- Combinatorics
-	- Graph theory, counting problems
-- Point-Set Topology
-- Numerical Analysis
-- Set Theory and Logic
-
-**Resources**
-- :fa-external-link-alt: You can find five sample exams [here.](http://www.math.ucla.edu/~iacoley/greprep.html)
-- :fa-book: Princeton Review, [Cracking the Math Subject GRE](https://www.amazon.com/gp/product/0375429727)
-
-**Advice**
-- Most problems don't require extensive computations; there is usually a trick that solves it very quickly.
-- Time is the most difficult factor, be sure to take timed practice tests. You have right around two minutes per problem.
-- Sign up early, as these exams are often only held a few times per year.
 
 ---
 
