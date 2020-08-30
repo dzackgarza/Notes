@@ -2,7 +2,7 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 [toc]
 
-> For more general advice, see [my corresponding advice page](/advice).
+> For more general advice, see [my corresponding advice page](advice).
 
 ---
 
