@@ -1,7 +1,7 @@
 People often ask, "What book should I get to learn $X$"? 
 So I've put together this page to list out some resources that I've found helpful for various courses.
 
-> For more general academic advice, see [my corresponding advice page](/advice).
+> For more general academic advice, see [my corresponding advice page](https://dzackgarza.com/advice/).
 
 [toc]
 
