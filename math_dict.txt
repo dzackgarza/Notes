@@ -880,3 +880,10 @@ Litt
 Harnack
 matroids
 Equivariance
+Poonen
+DeVleming
+Billey's
+apps
+PDFs
+Jascha
+etc
