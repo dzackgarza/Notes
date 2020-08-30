@@ -2,7 +2,7 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 [toc]
 
-> For more [my page ](/advice)
+> For more general advice, see [my corresponding advice page](/advice).
 
 ---
 
@@ -45,6 +45,20 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 # Fun Stuff
 
+Some interesting Math-related movies:
+
+- Proof
+- Good Will Hunting
+- A Beautiful Mind (John Nash)
+- The Imitation Game (Alan Turing)
+- The Theory of Everything (Stephen Hawking)
+- The Man Who Knew Infinity (Srinivasa Ramanujan)
+
+Papers and videos:
+
+- [Time variation of a fundmental dimensionless constant](https://arxiv.org/abs/0903.5321)
+- [How to Pronounce Mathematicians' Names](http://www2.onu.edu/~m-caragiu.1/bonus_files/Names.pdf)
+
 - [Hyper Rouge](http://www.roguetemple.com/z/hyper/)
 	- A cool little dungeon crawler in which the in-game world is a hpyerbolic space.
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/xAFrKKApHTY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -55,13 +69,5 @@ If you find yourself asking, "What book should I get to learn $X$?", then you ha
 
 - :fa-external-link-alt: [Hopf Fibration Toy](http://philogb.github.io/page/hopf/)
 
-- [Time variation of a fundamental dimensionless constant](https://arxiv.org/abs/0903.5321)
-- [How to Pronounce Mathematicians' Names](http://www2.onu.edu/~m-caragiu.1/bonus_files/Names.pdf)
 
-- Some interesting Math-related movies:
-  - Proof
-	- Good Will Hunting
-	- A Beautiful Mind (John Nash)
-	- The Imitation Game (Alan Turing)
-	- The Theory of Everything (Stephen Hawking)
-	- The Man Who Knew Infinity (Srinivasa Ramanujan)
+
