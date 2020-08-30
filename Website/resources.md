@@ -69,5 +69,3 @@ Papers and videos:
 
 - :fa-external-link-alt: [Hopf Fibration Toy](http://philogb.github.io/page/hopf/)
 
-
-
