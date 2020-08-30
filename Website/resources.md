@@ -1,4 +1,5 @@
-People often ask, "What book should I get to learn $X$?" So I've put together this list to point out some resources I've found helpful for various courses.
+People often ask, "What book should I get to learn $X$"? 
+So I've put together this page to list out some resources that I've found helpful for various courses.
 
 [toc]
 
