@@ -693,3 +693,8 @@ Let $\lambda \in X(T)$, then $H^0(\lambda) = \ind_B^G \lambda = \nabla(\lambda)$
 
 
 
+
+# Monday, August 31
+
+
+
