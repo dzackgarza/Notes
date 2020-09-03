@@ -135,10 +135,10 @@ There are three different notions of finite generation for fields, the above is 
 The second is being finitely generated as an algebra:
 
 :::{.definition title="Finitely Generated Algebras"}
-For $R\subset S$ finitely generated algebras, $S$ is finitely generated over $R$ if every element of $S$ is a polynomial in $x_1, \cdots, x_n$, with coefficients in $R$, i.e. $S = R(x_1, \cdots, x_n)$.
+For $R\subset S$ finitely generated algebras, $S$ is finitely generated over $R$ if every element of $S$ is a polynomial in $x_1, \cdots, x_n$, with coefficients in $R$, i.e. $S = R[x_1, \cdots, x_n]$.
 :::
 
-Note that this implies the previous definition.
+Note that this implies the previous definition, since anything that is a polynomial is also a quotient of polynomials.
 
 ### Notion 3
 
@@ -146,7 +146,7 @@ The final notion: $\ell/k$ is finite (finite degree) if $\ell$ is finitely gener
 
 
 :::{.definition title="Rational Function Field"}
-A *rational function field* is $k(t_1, \cdots, t_n) \da ff k[t_1, \cdots, t_n]$.
+A *rational function field* is $k(t_1, \cdots, t_n) \da ff \qty{ k[t_1, \cdots, t_n]}$.
 :::
 
 Note that we can make a similar definition for infinitely many generators by taking a direct limit (here: union), and in fact every element will only involve finitely many generators.
