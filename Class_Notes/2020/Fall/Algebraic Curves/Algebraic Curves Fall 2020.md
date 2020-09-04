@@ -332,7 +332,7 @@ Here we can observe that $\ell[V] \cong k[V] \tensor_k \ell$.
 In general we have a map
 \[  
 \wait \tensor_k \ell & \\
-\ts{k\dash\text{vector space}} &\to \ts{\ell\dash\text{vector spaces}} \\
+\ts{k\dash\text{vector spaces}} &\to \ts{\ell\dash\text{vector spaces}} \\
 \ts{k\dash\text{algebras}} &\to\ts{\ell\dash\text{algebras}}
 .\]
 
