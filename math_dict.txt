@@ -894,3 +894,4 @@ ultrametric
 Lüroth
 Gathmann
 zariski
+hyperalgebra
