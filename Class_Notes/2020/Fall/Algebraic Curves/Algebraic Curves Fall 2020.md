@@ -279,23 +279,23 @@ c. Can still give many positive examples using the Shepherd-Todd Theorem.
 For $K/k$ a field extension, set $\kappa(K)$ to be the algebraic closure of $k$ in $K$, i.e. special case of *integral closure*.
 If $K/k$ is finitely generated, then $\kappa(K)/k$ is finite degree.
 
-Here $\kappa(K)$ is called the *field of constants*, and $K$ is also a function field over $\kappa(K)$.
+Here $\kappa(k)$ is called the *field of constants*, and $K$ is also a function field over $\kappa(k)$.
 :::
 
-In practice, we don't want $\kappa(K)$ to be a proper extension of $k$. 
+In practice, we don't want $\kappa(k)$ to be a proper extension of $k$. 
 
-If this isn't the case, we replace considering $K/k$ by $K/\kappa(K)$.
+If this isn't the case, we replace considering $K/k$ by $K/\kappa(k)$.
 If $K/k$ is finitely generated, then
 
 \begin{center}
 \begin{tikzcd}
-k \arrow[rr, "\text{finite}", hook] &  & \kappa(K) \arrow[rr, "\text{finitely generated}", hook] &  & K
+k \arrow[rr, "\text{finite}", hook] &  & \kappa(k) \arrow[rr, "\text{finitely generated}", hook] &  & K
 \end{tikzcd}
 \end{center}
 
-Where we use the fact that from above, $\kappa(K)/k$ is finitely generated and algebraic and thus finite, and by a previous theorem, if $K/k$ is transcendental then $K/\kappa(K)$ is as well, and thus finitely generated.
+Where we use the fact that from above, $\kappa(k)/k$ is finitely generated and algebraic and thus finite, and by a previous theorem, if $K/k$ is transcendental then $K/\kappa(k)$ is as well, and thus finitely generated.
 
-Thus if you have a function field over $k$, you can replaced $k$ by $\kappa(K)$ and regard it as a function field over $\kappa(K)$.
+Thus if you have a function field over $k$, you can replace $k$ by $\kappa(k)$ and regard $K$ as a function field over $\kappa(k)$ instead.
 
 
 
@@ -392,7 +392,7 @@ Most of all, we want to base change to the algebraic closure.
 We'll have issues if the constant field is not just $k$ itself:
 
 :::{.lemma}
-If $K\tensor_k \bar k$ is a domain, then the constant field $\kappa(K) = k$.
+If $K\tensor_k \bar k$ is a domain, then the constant field $\kappa(k) = k$.
 
 :::
 
@@ -401,15 +401,15 @@ Use the fact that $\wait \tensor_k V$ is exact.
 We then get an injection
 \begin{center}
 \begin{tikzcd}
-\kappa(K) \tensor_k \kappa(K) \ar[rr, hookrightarrow]\ar[rd, hookrightarrow] & &
+\kappa(k) \tensor_k \kappa(k) \ar[rr, hookrightarrow]\ar[rd, hookrightarrow] & &
 K \tensor_k \bar k \\
-& \kappa(K) \tensor_k \bar k\ar[ru, hookrightarrow] & 
+& \kappa(k) \tensor_k \bar k\ar[ru, hookrightarrow] & 
 \end{tikzcd} 
 \end{center}
-Here we use the injections $\kappa(K) \injects \bar k$ and $\kappa(K) \injects K$.
+Here we use the injections $\kappa(k) \injects \bar k$ and $\kappa(k) \injects K$.
 
 We now have an injection of $k\dash$algebras, and subrings of domains are domains. 
-So apply the first exercise: the only way this can happen is if $\kappa(K) = k$.
+So apply the first exercise: the only way this can happen is if $\kappa(k) = k$.
 :::
 
 
@@ -419,13 +419,13 @@ The simplest possible case: describe $\CC(t) \tensor_\RR \CC$, tensored as $\RR\
 > Won't be a domain by the lemma, some $\CC(t)\dash$algebra of dimension 2.
 :::
 
-In order to have a good base change for our function fields, we want to constant extension to be trivial, i.e. $\kappa(K) = k$. 
+In order to have a good base change for our function fields, we want to constant extension to be trivial, i.e. $\kappa(k) = k$. 
 This requires that the ground field be algebraically closed.
 
 In this case, you might expect that extending scalars to the algebraic closure would yield a field again.
 This is true in characteristic zero, but false in positive characteristic.
 
-A more precise question: if $\kappa(K) = k$, must $K\tensor_K \bar k$ be a field?
+A more precise question: if $\kappa(k) = k$, must $K\tensor_K \bar k$ be a field?
 If that's true and we're in positive characteristic, recalling the for an algebraic extension this being a field is equivalent to it being a domain. 
 But if that's a domain, the tensor product of every algebraic extension must be a domain, which is why this is an important case.
 
@@ -443,7 +443,7 @@ Since we're only looking at finitely generated extensions, we wont' have to worr
 What's the point? 
 There's an extra technical condition to ensure the base change is a field: the function field being separable over the ground field.
 
-Is this necessarily the case if $\kappa(K) = k$? 
+Is this necessarily the case if $\kappa(k) = k$? 
 No, for a technical reason:
 
 :::{.warning}
@@ -459,7 +459,7 @@ A \da k[x, y]/ \gens{ax^p + b-y^b}
 .\]
 Then $A$ is a domain, so set $k = ff(A)$.
 
-Claim: $\kappa(K) = k$, so $k$ is algebraically closed in this extension, but $K/k$ is *not* separable.
+Claim: $\kappa(k) = k$, so $k$ is algebraically closed in this extension, but $K/k$ is *not* separable.
 How to show: extending scalars to $k^{1\over p}$ does not yield a domain.
 
 Let $\alpha, \beta \in \bar k$ such that $\alpha^p = a, \beta^b = b$, so
@@ -499,7 +499,7 @@ Imperfect fields include:
 :::{.theorem title="FT 12.20"}
 For field extensions $K/k$, TFAE
 
-1. $\kappa(K) = k$ and $K/k$ is separable
+1. $\kappa(k) = k$ and $K/k$ is separable
 
 2. $K\tensor_k \bar k$ is a domain, or equivalently a field
 
