@@ -53,16 +53,6 @@
   colframe=orange
 }
 \newtheorem{lemma}[theorem]{Lemma}
-% Claim
-%\tcolorboxenvironment{claim}{
-  %boxrule=1pt,
-  %boxsep=0pt,
-  %breakable,
-  %enhanced jigsaw,
-  %opacityback=0.2,
-  %colframe=cyan
-%}
-\newtheorem{claim}[theorem]{Claim}
 
 
 % Corollary
@@ -132,9 +122,9 @@
   {2em}                   % Space below
   {\normalfont}           % Body font
   {\parindent}            % Indent amount (empty = no indent, \parindent = para indent)
-  {\itshape}              % Thm head font
+  {\bfseries}              % Thm head font
   {}                      % Punctuation after thm head
-  {\newline}              % Space after thm head: \newline = linebreak
+  {}              % Space after thm head: \newline = linebreak
   {\thmname{#1}.}%
 \theoremstyle{problem}
 \tcolorboxenvironment{problem}{
@@ -147,6 +137,27 @@
 }
 \newtheorem{problem}{Problem}
 
+% Problem Style
+\newtheoremstyle{claim} % name
+  {2em}                   % Space above, empty = `usual value'
+  {2em}                   % Space below
+  {\normalfont}           % Body font
+  {}            % Indent amount (empty = no indent, \parindent = para indent)
+  {}              % Thm head font
+  {}                      % Punctuation after thm head
+  {\newline}              % Space after thm head: \newline = linebreak
+  {\thmname{#1}:}%
+\theoremstyle{claim}
+% Claim
+%\tcolorboxenvironment{claim}{
+  %boxrule=1pt,
+  %boxsep=0pt,
+  %breakable,
+  %enhanced jigsaw,
+  %opacityback=0.2,
+  %colframe=cyan
+%}
+\newtheorem*{claim}{Claim}
 
 
 
