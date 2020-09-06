@@ -70,7 +70,10 @@ $endif$
 
 \begin{document}
 \maketitle
+$if(notoc)$
+$else$
 \tableofcontents
+$endif$
 
 $if(todos)$
 \newpage
