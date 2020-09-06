@@ -20,6 +20,8 @@ tex:
 html:
 	cat ~/Notes/Latex/latexmacs.tex ./sections/*.md | pandoc --from=markdown --to=markdown -r markdown+latex_macros+tex_math_single_backslash+fenced_divs+citations+implicit_figures+raw_html --lua-filter=/home/zack/rmcodeblocks.lua --mathjax -s --lua-filter=/home/zack/dotfiles/bin/warning-div.lua > $
 
+init:
+	touch $(FILENAME).md
 
 
 .ONESHELL:
