@@ -895,3 +895,4 @@ Lüroth
 Gathmann
 zariski
 hyperalgebra
+Proj
