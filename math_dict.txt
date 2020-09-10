@@ -896,3 +896,4 @@ Gathmann
 zariski
 hyperalgebra
 Proj
+primality
