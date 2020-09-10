@@ -897,3 +897,5 @@ zariski
 hyperalgebra
 Proj
 primality
+nullstellensatz
+noether
