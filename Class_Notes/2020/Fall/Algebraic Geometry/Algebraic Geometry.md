@@ -481,7 +481,7 @@ Properties are inherited from the case of $\AA^n$, see exercise in Gathmann.
 :::
 
 :::{.example}
-Let $Y = V)y-x^2 \subset \AA^2/\CC$ and $X = \ts{(1, 1)} = V(x-1, y-1)\subset \AA^2/\CC$.
+Let $Y = V(y-x^2) \subset \AA^2/\CC$ and $X = \ts{(1, 1)} = V(x-1, y-1)\subset \AA^2/\CC$.
 
 Then there is an inclusion $\gens{y-x^2} \subset \gens{x-1, y-1}$ (e.g. by Taylor expanding about the point $(1, 1)$), and there is a map
 
@@ -661,6 +661,522 @@ Then $X_1 = V(z)$ and $X_2 = V(x, z-1)$, and $I(X) = \gens{z} \cdots \gens{x, z-
 Then the coordinate ring is given by $A(X) = \CC[x, y, z] / \gens{xz, z^2 - z} = \CC[x, y, z] / \gens{z} \oplus \CC[x, y,z] / \gens{x, z-1}$.
 
 ![Image](figures/image_2020-09-01-10-43-00.png)
+
+:::
+
+
+
+
+
+
+
+
+
+# Thursday, September 03
+
+Recall that the Zariski topology is defined on an affine variety $X = V(J)$ with $J \normal k[x_1, \cdots, x_n]$ by describing the closed sets.
+
+:::{.proposition title="?"}
+$X$ is irreducible if its coordinate ring $A(X)$ is a domain.
+:::
+
+
+:::{.proposition title="?"}
+There is a 1-to-1 correspondence
+\[  
+\correspond{\text{Irreducible subvarieties} \\ \text{of }X}
+\iff
+\correspond{\text{Prime ideals} \\ \text{in }A(X)}
+.\]
+:::
+
+:::{.proof}
+Suppose $Y\subset X$ is an affine subvariety.
+Then 
+\[  
+A(X) / I_X(Y) = A(Y)
+.\]
+
+By NSS, there is a bijection between subvarieties of $X$ and radical ideals of $A(X)$ where $Y\mapsto I_X(Y)$.
+A quotient is a domain iff quotienting by a prime ideal, so $A(Y)$ is a domain iff $I_X(Y)$ is prime.
+:::
+
+Recall that $\mfp \normal R$ is prime when $fg\in \mfp \iff f\in \mfp$ or $g\in \mfp$.
+Thus $\bar f \bar g = 0$ in $R/\mfp$ implies $\bar f = 0$ or $\bar g = 0$ in $R/\mfp$, i.e. $R/\mfp$ is a domain.
+
+Finally note that prime ideals are radical (easy proof).
+
+:::{.example}
+Consider $\AA^2/\CC$ and some subvarieties $C_i$:
+
+![Subvarieties](figures/image_2020-09-03-09-47-09.png)
+
+Then irreducible subvarieties correspond to prime ideals in $\CC[x, y]$.
+Here $C_1, C_3$ correspond to $V(f), V(g)$ for $f,g$ irreducible polynomials, whereas $C_2$ corresponds to a maximal ideal, i.e. $V(x_1 - a_1, x_2 - a_2)$.
+
+Note that $I(C_1 \union C_2 \union C_3)$ is not a prime ideal, since the variety is reducible as the union of 3 closed subsets.
+:::
+
+:::{.example}
+A finite set is irreducible iff it contains only one point.
+:::
+
+:::{.example}
+Any irreducible topological space is connected, since irreducible requires a union but connectedness requires a *disjoint* union.
+:::
+
+:::{.example}
+$A^n/k$ is irreducible: by prop 2.8, its irreducible iff the coordinate ring is a domain.
+However $A(\AA^n)  = k[x_1, \cdots, x_n]$, which is a domain.
+:::
+
+:::{.example}
+$V(x_1 x_2)$ is not irreducible, since it's equal to $V(x_1) \union V(x_2)$.
+:::
+
+:::{.definition title="Noetherian Space"}
+A *Noetherian* topological space $X$ is a space with no infinite strictly decreasing sequence of closed subsets.
+:::
+
+:::{.proposition title="?"}
+An affine variety $X$ with the zariski topology is a noetherian space.
+:::
+
+:::{.proof}
+Let $X_0 \supsetneq X_1 \supsetneq \cdots$ be a decreasing sequence of closed subspaces.
+Then $I(X_0) \subsetneq I(X_1) \subsetneq$.
+Note that these containments are strict, otherwise we could use $V(I(X_1)) = X_1$ to get an equality in the original chain.
+
+Recall that a ring $R$ is Noetherian iff every ascending chain of ideals terminates.
+Thus it suffices to show that $A(X)$ is Noetherian.
+
+We have $A(X) = \kx{n} / I(X)$, and if this had an infinite chain $I_1 \subsetneq I_2 \subsetneq \cdots$ lifts to a chain in $\kx{n}$, which is Noetherian.
+A useful fact: $R$ noetherian implies that $R[x]$ is noetherian, and fields are always noetherian.
+:::
+
+
+:::{.remark}
+Any subspace $A\subset X$ of a noetherian space is noetherian.
+To see why, suppose we have a chain of closed sets in the subspace topology,
+\[  
+A\intersect X_0 \supsetneq A\intersect X_1 \supsetneq \cdots
+.\]
+
+Then $X_0 \supsetneq X_1 \supsetneq \cdots$ is a strictly decreasing chain of closed sets in $X$.
+Why strictly decreasing: $\intersect^n X_i = \intersect^{n+1} X_i \implies A\intersect^n X_i = A\intersect^{n+1} X_i$, a contradiction.
+:::
+
+:::{.proposition title="Important"}
+Every noetherian space $X$ is a finite union of irreducible closed subsets, i.e. $X = \Union_{i=1}^k X_i$.
+If we further assume $X_i \not\subset X_j$ for all $i, j$, then the $X_i$ are unique up to permutation.
+
+:::
+
+:::{.remark}
+The $X_i$ are the **components** of $X$.
+In the previous example $C_1 \union C_2 \union C_3$ has three components.
+:::
+
+
+:::{.proof}
+If $X$ is irreducible, then $X=X$ and this holds.
+
+Otherwise, write $X = X_1 \union X_2$ with $X_i$ proper closed subsets.
+If $X_1$ and $X_1'$ are irreducible, we're done, so otherwise suppose wlog $X_1'$ is not irreducible.
+
+Then we can express $X = X_1 \union \qty{X_2 \union X_2'}$ with $X_2, X_2' \subset X_1'$ closed and proper.
+
+Thus we can obtain a tree whose leaves are proper closed subsets:
+
+![Image](figures/image_2020-09-03-10-15-53.png)
+
+This tree terminates because $X$ is Noetherian: if it did not, this would generate an infinite decreasing chain of subspaces.
+
+We now want to show that the decomposition is unique if no two components are contained in the other. 
+
+Suppose 
+\[  
+X= \Union_{i=1}^k X_i = \Union_{j=1}^\ell X_j'
+.\]
+
+Note that $X_i \subset X$ implies that $X_i = \Union_{j=1}^\ell X_i \intersect X_j'$.
+But $X_i$ is irreducible and this would express $X_i$ as a union of proper closed subsets, so some $X_i \intersect X_j'$ is *not* a proper closed subset.
+
+Thus $X_i = X_i \intersect X_j'$ for some $j$, which forces $X_i \subset X_j'$.
+Applying the same argument to $X_j'$ to obtain $X_j' \subset X_k$ for some $k$.
+
+Then $X_i \subset X_j' \subset X_k$, but $X_ i \not\subset X_j$ when $j\neq i$.
+Thus $X_i = X_j' = X_k$, forcing the $X_i$ to be unique up to permutation.
+:::
+
+Recall from ring theory: for $I\subset R$ and $R$ noetherian, $I$ has a *primary decomposition* $I = \Intersect_{i=1}^k Q_i$ with $\sqrt{Q_i}$ prime.
+Assuming the $Q_i$ are minimal in the sense that $\sqrt{Q_i} \not\subset \sqrt{Q_j}$ for any $i, j$, this decomposition is unique.
+
+Applying this to $I(X) \normal \kx{n} = R$ yields 
+\[  
+I(X) = \Intersect_{i=1}^k Q_i 
+\implies
+X  = V(I(X)) = \Union_{i=1}^k V(Q_i)
+.\]
+
+Letting $P_i = \sqrt{Q_i}$, noting that the $P_i$ are prime and thus radical, we have $V(Q_i) = V(P_i)$.
+Writing $X = \Union V(P_i)$, we have $I(V(P_i)) = P_i$ and thus $A(V(P_i)) = R/P_i$ is a domain, meaning $V(P_i)$ are irreducible affine varieties.
+
+Conversely, if we express $X = \Union X_i$, we have $I = I\qty{\Union X_i} = \Intersect I(X_i) = \Intersect P_i$ which are irreducible since they are prime.
+
+
+:::{.remark}
+There is a correspondence
+\[  
+\correspond{\text{Irreducible components} \\ \text{of } X} 
+\iff
+\correspond{\text{Minimal prime ideals} \\ \text{in } A(X)}
+,\]
+where here *minimal* is the condition that no pair of ideals satisfies a subset containment.
+:::
+
+:::{.remark}
+Let $X$ be an irreducible topological space.
+
+:::{.proposition title="1"}
+The intersection of nonempty two open sets is *never* empty.
+:::
+
+:::{.proof}
+Let $U, U'$ be open and $X\setminus U, X\sm U'$ closed.
+Then $U\intersect U' = \emptyset \iff (X\sm U) \union (X\sm U') = X$, but this is not possible since $X$ is irreducible.
+:::
+
+> Irreducible iff any two nonempty open sets intersect.
+
+
+:::{.proposition title="?"}
+Any nonempty open set is dense, i.e. if $U\subset X$ is open then its closure $\cl_X(U)$ is dense in $X$.
+:::
+
+:::{.proof}
+Write $X = \cl_X(U) \union (X\sm U)$.
+Since $X\sm U \neq X$ and $X$ is irreducible, we have $\cl_X(U) = X$.
+:::
+
+
+:::
+
+
+
+
+
+
+
+
+
+# Tuesday, September 08
+
+Review: we discussed irreducible components.
+Recall that the *Zariski topology* on an affine variety $X$ has affine subvarieties as closed sets, and a *noetherian space* has no infinitely decreasing chains of closed subspaces.
+
+We showed that any noetherian space has a decomposition into irreducible components $X = \union X_i$ with $X_i$ closed, irreducible, and unique such that no two are subsets of each other.
+Applying this to affine varieties, a descending chain of subspaces $X_0 \supsetneq X_1 \cdots$ in $X$ corresponds to an increasing chain of ideals $I(X_0) \subsetneq I(X_1) \cdots$ in $A(X)$.
+Since $\kx{n}$ is a noetherian ring, this chain terminates, so affine varieties are noetherian.
+
+## Dimension
+
+:::{.definition title="Dimensions"}
+Let $X$ be a topological space.
+
+1. The *dimension* $\dim X \in \NN\union\ts{\infty}$ is either $\infty$ or the length $n$ of the longest chain of **irreducible** closed subsets $\emptyset \neq Y_0 \subsetneq \cdots \subsetneq Y_n \subset X$ where $Y_n$ need not be equal to $X$.
+
+2. The *codimension* of $Y$ in $X$, $\codim_X(Y)$, for an irreducible subset $Y\subseteq X$ is the length of the longest chain $Y\subset Y_0 \subsetneq Y_1 \cdots \subset X$.
+:::
+
+
+:::{.example}
+Consider $\AA^1/k$, what are the closed subsets?
+The finite sets, the empty set, and the entire space.
+
+What are the irreducible closed subsets? 
+Every point is a closed subset, so sets with more than one point are reducible.
+So the only irreducible closed subsets are $\ts{a}, \AA^1/k$, since an affine variety is irreducible iff its coordinate ring is a domain and $A(\AA^1/k) = k[x]$.
+We can check
+\[  
+\emptyset \subseteq Y_0 = \ts{a} \subseteq Y_1 = \AA^1/k
+,\]
+
+which is of length $1$, so $\dim(\AA^1/k) = 1$.
+
+> Note that we count the number of nontrivial strict subset containments in this chain.
+
+:::
+
+
+:::{.example}
+Consider $V(x_1 x_2) \subset \AA^2/k$, the union of the $x_i$ axes.
+Then the closed subsets are $V(x_1), V(x_2)$, along with finite sets and their unions.
+What is the longest chain of irreducible closed subsets?
+
+Note that $k[x_1, x_2] / \gens{x_1} \cong k[x_2]$ is a domain, so $V(x_i)$ are irreducible.
+So we can have a chain
+\[  
+\emptyset \subsetneq \ts{a} \subsetneq V(x_1) \subset X
+,\]
+where $a$ is any point on the $x_2\dash$axis, so $\dim(X) = 1$.
+
+The only closed sets containing $V(x_1)$ are $V(x_1)\union S$ for $S$ some finite set, which can not be irreducible.
+:::
+
+:::{.remark}
+You may be tempted to think that if $X$ is noetherian then the dimension is finite.
+However, finite dimension requires a bounded length on descending/ascending chains, whereas noetherian only requires "termination", which may not happen in a bounded number of steps.
+So this is **false**!
+:::
+
+
+:::{.example}
+Take $X = \NN$ and define a topology by setting closed subsets be the sets $\ts{0, \cdots, n}$ as $n$ ranges over $\NN$, along with $\NN$ itself.
+Is $X$ noetherian? 
+Check descending chains of closed sets:
+
+\[  
+\NN \supsetneq \ts{0, \cdots, N} \supsetneq \ts{0, \cdots, N-1} \cdots
+,\]
+
+which has length at most $N$, so it terminates and $X$ is noetherian.
+
+But note that all of these closed subsets $X_N \da \ts{0, \cdots, N}$ are irreducible.
+Why?
+If $X_n = X_i \union X_j$ then one of $i, j$ is equal to $N$, i.e $X_i, X_j = X_N$.
+
+So for every $N$, there exists a chain of irreducible closed subsets of length $N$, implying that
+$\dim(\NN) = \infty$.
+:::
+
+:::{.remark}
+Let $X$ be an affine variety. 
+There is a correspondence
+\[  
+\correspond{\text{Chains of irreducible closed subsets} \\ Y_0 \subsetneq \cdots \subsetneq Y_n \text{ in } X}
+\correspond{\text{Chains of prime ideals} \\ P_0\supsetneq \cdots \supsetneq P_n \text{ in } A(X)}
+.\]
+Why?
+We have a correspondence between closed subsets and radical ideals.
+If we specialize to irreducible, we saw that these correspond to radical ideals $I\subset A(X)$ such that $A(Y) \da A(X) / I$ is a domain, which precisely correspond to prime ideal in $A(X)$.
+:::
+
+We thus make the following definition:
+
+:::{.definition title="Krull Dimension"}
+The *krull dimension* of a ring $R$ is the length $n$ of the longest chain of prime ideals
+\[  
+P_0 \supsetneq P_1 \supsetneq \cdots \supsetneq P_n
+.\]
+
+:::
+
+:::{.remark}
+This uses the key fact from commutative algebra: a finitely generated $k\dash$algebra $M$ satisfies
+
+1. $M$ has finite $k\dash$dimension
+2. If $M$ is a domain, every maximal chain has the same length.
+:::
+
+:::{.remark}
+From scheme theory: for any ring $R$, there is an associated topological space $\spec R$ given by the set of prime ideals in $R$, where the closed sets are given by 
+\[  
+V(I) = \ts{\text{Prime ideals } \mfp \normal R \st I\subseteq \mfp }
+.\]
+
+If $R$ is a noetherian ring, then $\spec(R)$ is a noetherian space.
+:::
+
+
+:::{.example}
+Using the fact above, let's compute $\dim \AA^n/k$.
+We can take the following chain of prime ideals in $\kx{n}$:
+\[  
+0 \subsetneq \gens{x_1} \subsetneq \gens{x_1, x_2} \cdots \subsetneq \gens{x_1, \cdots, x_n}
+.\]
+
+By applying $V(\wait)$ we obtain
+\[  
+\AA^n/k \supsetneq \AA^{n-1}/k \cdots \supsetneq \AA^0/k = \ts{0} \supsetneq \emptyset
+,\]
+where we know each is irreducible and closed, and it's easy to check that these are maximal:
+
+If there were an ideal $\gens{x_1, x_2} \subset P \subset \gens{x_1, x_2, x_3}$, then take $P\intersect k[x_1, x_2, x_3] / \gens{x_1, x_2}$ which would yield a polynomial ring in $k[x_1]$.
+But we know the only irreducible sets in $\AA^1/k$ are a point and the entire space.
+
+So this is a chain of maximal length, implying $\dim \AA^n/k = n$.
+:::
+
+
+
+# Thursday, September 10
+
+Recall that the dimension of a ring $R$ is the length of the longest chain of prime ideals.
+Similarly, for an affine variety $X$, we defined $\dim X$ to be the length of the longest chain of irreducible closed subsets.
+
+These notions of dimension of the same when taking $R = A(X)$, i.e. $\dim \AA^n/k = n$.
+
+:::{.proposition title="Dimensions"}
+Let $k = \bar k$.
+
+a. The dimension of $k[x_1, \cdots, x_n]$ is $n$.
+b. All maximal chains of prime ideals have length $n$.
+:::
+
+
+## Proof of Dimension Proposition
+
+The case for $n=0$ is trivial, just take $P_0 = \gens{0}$.
+For $n=1$, easy to see since the only prime ideals in $k[x]$ are $\gens{0}$ and $\gens{x-a}$, since any polynomial factors into linear factors.
+\
+
+Let $P_0 \subsetneq \cdots \subsetneq P_m$ be a maximal chain of prime ideals in $\kx{n}$; we then want to show that $m=n$.
+Assume $P_0 = \gens{0}$, since we can always extend our chain to make this true (using maximality).
+Then $P_1$ is a minimal prime and $P_m$ is a maximal ideal (and maximals are prime).
+
+:::{.claim}
+$P_1$ is principle, i.e. $P_1 = \gens{f}$ for some irreducible $f$.
+:::
+
+
+### Proof That $P_1$ is Principle
+
+
+:::{.claim}
+
+$\kx{n}$ is a unique factorization domain.
+This follows since $k$ is a UFD since it's a field, and $R$ a UFD $\implies R[x]$ is a UFD for any $R$.
+
+> See Gauss' lemma.
+
+:::
+
+:::{.claim}
+In a UFD, minimal primes are principal.
+Let $r \in P$, and write $r = u \prod p_i^{n_i}$ with $p_i$ irreducible and $u$ a unit.
+So some $p_i\in P$, and $p_i$ irreducible implies $\gens{p_i}$ is prime.
+Since $0 \subsetneq \gens{p_i} \subset P$, but $P$ was prime and assumed minimal, so $\gens{p_i} = P$.
+:::
+
+The idea is to now transfer the chain $P_0 \subsetneq \cdots \subsetneq P_m$ to a maximal chain in $k[x_1, \cdots, x_{n-1}]$.
+The first step is to make a linear change of coordinates so that $f$ is monic in the variable $x_n$.
+
+:::{.example}
+Take $f=x_1x_2 + x_3^2 x_4$ and map $x_3 \mapsto x_3 + x_4$.
+:::
+
+So write
+\[  
+f(x_1, \cdots, x_n) = x_n^d + f_1(x_1, \cdots, x_{n-1}) x_n^{d-1} + \cdots + f_d(x_1, \cdots, x_{n-1})
+.\]
+
+We can then descend to $\kx{n}$ to $\kx{n}/\gens{f}$:
+\begin{center}
+\begin{tikzcd}
+P_0 \ar[r] & P_1 \ar[r]\ar[d] & \cdots \ar[r]\ar[d] & P_m\ar[d] \\
+ & P_1/P_1 \ar[r]\ar[d] & \cdots \ar[r]\ar[d] & P_m/P_1\ar[d] \\
+ & P_1/P_1 \intersect \kx{n-1} \ar[r] & \cdots \ar[r] & (P_m / P_1) \intersect \kx{n-1}
+\end{tikzcd}
+\end{center}
+
+The first set of downward arrows denote taking the quotient, and the upward is taking inverse images, and this preserves strict inequalities.
+
+:::{.definition title="Integral Extension"}
+An *integral* ring extension $R\injects R'$ of $R$ is one such that all $r' \in R'$ satisfying a monic polynomial with coefficients in $R$, where $R'$ is finitely generated.
+
+> In this case, also implies that $R'$ is a finitely-generated $R$ module.
+
+:::
+
+In this case, $\kx{n-1} \injects \kx{n} /\gens{f}$ is an integral extension.
+We want to show that the intersection step above also preserves strictness of inclusions, since it preserves primality.
+
+:::{.lemma}
+Suppose $P', Q' \subset R'$ are distinct prime ideals with $R\injects R'$ an integral extension. 
+Then if $P'\intersect R = Q'\intersect R$, neither contains the other, i.e. $P'\not\subset Q'$ and $Q'\not\subset P'$.
+:::
+
+:::{.proof}
+Toward a contradiction, suppose $P' \subset Q'$, we then want to show that $Q'\supset P'$.
+Let $a\in Q'\sm P'$ (again toward a contradiction), then
+\[  
+R/\qty{P'\intersect R} \injects R'/P'
+\]
+is integral.
+
+Then $\bar a \neq 0$ in $R'/P'$, and there exists a monic polynomial of minimal degree that $\bar a$ satisfies, $p(x) = x^n + \sum_{i=2}^n \bar c_i x^{n-i}$.
+This implies $\bar c_n \in Q'/P'$ (which will contradict $c_n \in P'$), since if $\bar c_n = 0$ then factoring out $x$ yields a lower degree polynomial that $\bar a$ satisfies.
+
+But then $\bar a_n \in Q'\intersect R$, so ???
+:::
+
+Question: 
+Given $R\injects R'$ is an integral extension, can we lift chains of prime ideals?
+
+Answer: 
+Yes, by the "Going Up" Theorem: given $P\subset R$ prime, there exists $P'\subset R'$ prime such that $P'\intersect R = P$.
+Furthermore, we can lift $P_1 \subset P_2$ to $P_1' \subset P_2'$, as well as "lifting sandwiches":
+
+![Image](figures/image_2020-09-10-10-18-40.png)
+
+In this process, the length of the chain decreased since $\gens{0}$ was deleted, but otherwise the chains are in bijective correspondence.
+So the inductive hypothesis applies.
+$\qed$
+
+## Using Dimension Theory
+
+Key fact used: the dimension doesn't change under integral extensions, i.e. if $R\injects R'$ is integral then $\dim R = \dim R'$.
+
+:::{.claim}
+Any affine variety has finite dimension.
+:::
+
+:::{.proof}
+We have $\dim X = \dim A(X)$, where $A(X) \da \kx{n} I$ for some $I(X)=\sqrt{I(X)}$.
+
+The noether normalization lemma (used in proof of nullstellensatz) shows that a finitely generated $k\dash$algebra is an integral extension of some polynomial ring $k[y_1, \cdots, y_d]$.
+I.e., the following extension is integral:
+\[  
+k[y_1, \cdots, y_d] \injects k[x_1, \cdots, x_n]/I
+.\]
+
+We can conclude that $\dim A(X) = d < \infty$.
+:::
+
+:::{.proposition title="?"}
+Let $X, Y$ be irreducible affine varieties.
+Then
+
+a. $\dim X\cross Y = \dim X + \dim Y$.
+b. $Y\subset X \implies \dim X = \dim Y + \codim_X Y$.
+c. If $f\in A(X)$ is nonzero, then any component of $V(f)$ has codimension 1.
+:::
+
+:::{.proof}
+:::{.remark}
+Why is $X\cross Y$ again an affine variety?
+If $X\subset \AA^n/k$, $Y\subset \AA^m/k$ with $X = V(I), Y = V(J)$, then $X\cross Y \subset \AA^n/k \cross \AA^m/k = \AA^{n+m}/k$ can be given by taking $I+J \normal k[x_1, \cdots, x_n, y_1, \cdots, y_m]$ using the natural inclusions of $\kx{\ell}$.
+
+Note that we can write
+\[  
+k[x_1, \cdots, x_n, y_1, \cdots, y_m] = \kx{n} \tensor_k k[y_1, \cdots, y_n]
+\]
+where we think of $x_i = x_i \tensor 1, y_j = 1 \tensor y_j$.
+We thus map $I, J$ to $I\tensor 1 + 1\tensor J$ and obtain $V(I\tensor 1 + 1\tensor J) = X\cross Y$ and $A(X\cross Y) = A(X)\tensor_k A(Y)$.
+
+In general, for $k\dash$algebras $R,S$,
+\[  
+R/I \tensor_k S/J \cong R\tensor_k S / \gens{I\tensor 1 + 1\tensor J}
+.\]
+:::
+
+:::{.remark}
+For $R,S$ finitely generated $k\dash$algebras, $\dim R\tensor_k S = \dim R + \dim S$.
+:::
+Part (a) is proved by the above remarks.
+
+For part (b), the statement is equivalent to $P\subset A(X)$ with $I(Y) \subset P$ is a member of some maximal chain, along with the statement that all maximal chains are the same length.
 
 :::
 

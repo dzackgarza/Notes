@@ -1,5 +1,8 @@
 %\RequirePackage[l2tabu, orthodox]{nag}
 
+\RequirePackage{fixltx2e}
+
+
 %\documentclass[]{article}
 \documentclass[11pt, a4paper]{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -33,7 +36,7 @@
 
 
 
-\usepackage{microtype}
+\usepackage[stretch=10]{microtype}
 \usepackage[pdfencoding=auto]{hyperref}
 \usepackage{bookmark}
 \usepackage{booktabs}
@@ -90,9 +93,7 @@
 % Nice math font that journals use
 %\usepackage[lite]{mtpro2}
 %\usepackage{mathrsfs}
-%\usepackage{mathptmx}
 \usepackage{lmodern}
-%\usepackage[sc]{mathpazo}
 
 \input{/home/zack/Notes/Latex/environments}
 
@@ -151,7 +152,7 @@
       mathx10
       }{}
 \DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
-\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
+%\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
 
 % Wide tikz equations
 \newsavebox{\wideeqbox}
@@ -229,3 +230,31 @@ arc(90:0:1); % inside palm
 \newcommand{\work}[0]{\scalebox{0.75}{🚩}}
 
 %\usepackage{adjustbox}
+
+% Custom section headings: redefining the KOMA-Script command \sectionlinesformat:
+\newdimen\thesectionwdmax
+\newdimen\sectiontitlewd
+\AtBeginDocument{%
+  \setbox0=\hbox{{\usekomafont{disposition}\usekomafont{section}\scalebox{2}{99}}}%
+  \thesectionwdmax\wd0%
+  \sectiontitlewd\dimexpr\textwidth-\thesectionwdmax-.75cm-1pt\relax
+}
+
+\renewcommand\sectionformat{\protect\scalebox{2}{\thesection}}
+\addtokomafont{section}{\huge}
+
+\makeatletter
+\renewcommand\sectionlinesformat[4]{%
+  \ifstr{#1}{section}
+    {\ifstr{#3}{}
+      {\@hangfrom{\hskip #2#3}{#4}}
+      {%
+        \begin{tabular}{@{}r@{\hspace{.25cm}\vrule width 1pt\hspace{.5cm}}l@{}}
+        \parbox{\thesectionwdmax}{\centering#3}%
+        &%
+        {\parbox{\sectiontitlewd}{\raggedright#4}}%
+        \end{tabular}%
+      }%
+    }
+    {\@hangfrom{\hskip #2#3}{#4}}%
+}
