@@ -903,3 +903,4 @@ Krull's
 subsequential
 liminfs
 limsups
+cocommutative
