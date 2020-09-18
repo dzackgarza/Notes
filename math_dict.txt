@@ -904,3 +904,4 @@ subsequential
 liminfs
 limsups
 cocommutative
+nonassociate
