@@ -905,3 +905,4 @@ liminfs
 limsups
 cocommutative
 nonassociate
+Coinduced
