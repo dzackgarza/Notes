@@ -259,23 +259,6 @@ This is especially useful if you have some $f: A\into B$ and you look at the ind
   - $\ast_i X_i= \oplus_i X_i$ for $i < \infty$
 - Tensor Product $X \tensor Y, \bigotimes_i X_i, X^{\otimes_i}$
 
-## Lemma: Contracting Spaces in Products
-$X\cross \RR^n \homotopic X \cross \pt$
-
----
-@import "Cheat Sheet.md"
-
----
-@import "sections/Fundamental Group.md"
-
----
-@import "sections/Covering Spaces.md"
-
----
-@import "sections/CW and Simplicial Complexes.md"
-
----
-@import "sections/Algebra.md"
 
 ---
 
