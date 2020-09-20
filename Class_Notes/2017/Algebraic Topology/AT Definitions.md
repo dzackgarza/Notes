@@ -41,11 +41,12 @@
 
 * Chain Map
 	* A map between chain complexes $(C_*, \del_C) \mapsvia{f} (D_*, \del_D)$ is a chain map iff each component $C_i \mapsvia{f_i} D_i$ satisfies 
-	$$
+	\[
 	f_{i-1}\circ\del_{C, i} = \del_{D,i} \circ f_i
-	$$ 
+	\] 
 	(i.e this forms a commuting ladder) 
-	![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chain_map.svg/650px-Chain_map.svg.png)
+	
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chain_map.svg/650px-Chain_map.svg.png)
 
 * Closed manifold
 	* A manifold that is compact, with or without boundary.
@@ -197,7 +198,7 @@ I_i^j: [i, \cdots, j] \injects\Delta^{p+q}
 	\alpha\tensor \beta \mapsto \left< \alpha, \beta \right>
 	$$
 	obtained by conjugating the cup product with Poincare Duality, i.e. 
-  \[\left< \alpha, \beta \right> = [M] \frown ([\alpha]^\dual \smile [\beta]^\dual)\]
+  \[\left< \alpha, \beta \right> = [M] \frown ([\alpha]\dual \smile [\beta]\dual)\]
 
 	Then, if $[A], [B]$ are transversely intersecting submanifolds representing $\alpha, \beta$, then $$\left<\alpha, \beta\right> = [A\intersect B]$$.
 
@@ -236,7 +237,7 @@ I_i^j: [i, \cdots, j] \injects\Delta^{p+q}
 * Limit
 
 * Linear Independence
-	* A generating $S$ for a module $M$ is linearly independent if $\sum r_i s_i = 0_M \implies \forall i,~r_i = 0 $ where $s_i\in S, r_i \in R$.
+	* A generating $S$ for a module $M$ is linearly independent if $\sum r_i s_i = 0_M \implies \forall i,~r_i = 0$ where $s_i\in S, r_i \in R$.
 
 * Local homology
 	* $H_n(X, X-A; \ZZ)$ is the local homology at $A$, also denoted $H_n(X \mid A)$
