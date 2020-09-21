@@ -280,6 +280,8 @@
 \renewcommand{\vector}[1]{\mathbf{#1}}
 \let\oldexp\exp
 \renewcommand{\exp}[1]{\oldexp\qty{#1}}
+\let\oldperp\perp
+\renewcommand{\perp}[0]{^\oldperp}
 \newcommand*\dif{\mathop{}\!\mathrm{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
