@@ -916,3 +916,4 @@ Smale
 Sobolev
 Maslov
 reparameterizing
+socles
