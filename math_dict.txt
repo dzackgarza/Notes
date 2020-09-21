@@ -909,3 +909,7 @@ Coinduced
 coinduced
 surjection
 asphericity
+transversality
+Sard
+Smale/!
+Smale
