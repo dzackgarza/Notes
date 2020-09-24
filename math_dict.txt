@@ -918,3 +918,4 @@ Maslov
 reparameterizing
 socles
 presheaf
+comultiplication
