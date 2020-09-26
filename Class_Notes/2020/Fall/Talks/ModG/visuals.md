@@ -5,5 +5,7 @@
 
 ![Image](figures/image_2020-09-26-19-14-21.png)
 
+![Better Dehn Twist](figures/image_2020-09-26-19-25-27.png)
+
 
 ![Dehn Twist Cylinder](figures/image_2020-09-26-19-22-06.png)
