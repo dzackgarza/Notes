@@ -9,3 +9,5 @@
 
 
 ![Dehn Twist Cylinder](figures/image_2020-09-26-19-22-06.png)
+
+![$3g-1$ generators for Dehn Twist theorem](figures/image_2020-09-26-01-56-06.png)
