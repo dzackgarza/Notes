@@ -15,3 +15,7 @@
 ![Fundamental Domains of $\SL(2, \ZZ)$ acting on $\HH$.](figures/image_2020-09-26-21-35-07.png)
 
 ![Jacob's Ladder and Loch Ness](figures/image_2020-09-28-00-55-25.png)
+
+![Real Projective Plane](figures/image_2020-09-28-00-57-46.png)
+
+![Surface](figures/image_2020-09-28-00-58-39.png)
