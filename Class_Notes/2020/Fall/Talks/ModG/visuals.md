@@ -19,3 +19,11 @@
 ![Real Projective Plane](figures/image_2020-09-28-00-57-46.png)
 
 ![Surface](figures/image_2020-09-28-00-58-39.png)
+
+![Another surface](figures/image_2020-09-28-01-01-49.png)
+
+![More surfaces](figures/image_2020-09-28-01-02-30.png)
+
+![Gradient Descent](figures/image_2020-09-28-01-04-18.png)
+
+![More Gradient](figures/image_2020-09-28-01-04-34.png)
