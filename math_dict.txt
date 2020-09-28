@@ -924,3 +924,4 @@ Desmos
 Preclass
 Kempf's
 Kempf
+semisimplicity
