@@ -1,8 +1,8 @@
-# 09/27/2020: More Concise Algebraic Topology: Localization, Completion, and Model Categories (J. P. May & K. Ponto)
+# 09/28/2020: More Concise Algebraic Topology: Localization, Completion, and Model Categories (J. P. May & K. Ponto)
 
 <a href='file:////home/zack/Dropbox/Library/J. P. May/More Concise Algebraic Topology_ Localization, Completion, and Model Categories (712)/More Concise Algebraic Topology_ Localizat - J. P. May.pdf' target='_blank'>/home/zack/Dropbox/Library/J. P. May/More Concise Algebraic Topology_ Localization, Completion, and Model Categories (712)/More Concise Algebraic Topology_ Localizat - J. P. May.pdf</a>
 
-Last Annotation: 09/27/2020
+Last Annotation: 09/28/2020
 
 ## Notes
 
