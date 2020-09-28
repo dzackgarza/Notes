@@ -925,3 +925,4 @@ Preclass
 Kempf's
 Kempf
 semisimplicity
+Ringel
