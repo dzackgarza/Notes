@@ -5,7 +5,7 @@ FILENAME="Algebraic Geometry"
 
 compile:
 	touch $(FILENAME).md
-	cat ./sections/*.md | pandoc -f markdown -F pandoc-crossref --lua-filter /home/zack/dotfiles/bin/warning-div.lua -r markdown+fenced_divs+tex_math_single_backslash+citations --template=/home/zack/Notes/Latex/pandoc_template.tex --pdf-engine=pdflatex -o $(FILENAME).pdf
+	awk 'FNR==1{print ""}1' ./sections/*.md | pandoc -f markdown -F pandoc-crossref --lua-filter /home/zack/dotfiles/bin/warning-div.lua -r markdown+fenced_divs+tex_math_single_backslash+citations --template=/home/zack/Notes/Latex/pandoc_template.tex --pdf-engine=pdflatex -o $(FILENAME).pdf
 	#latex_preview -f $(FILENAME).md -j -z
 	echo "Make done"
 
