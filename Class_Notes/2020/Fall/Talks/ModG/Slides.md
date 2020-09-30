@@ -525,7 +525,11 @@ So if $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $\tilde A\in \SL
 
 :::
 
-- So $\tilde A$ descends to a well-defined map $\psi_{\tilde A}$ on $\Sigma_2 \da \RR^2 / \ZZ^2$, which is still a linear self-homeomorphism
+- So $\tilde A$ descends to a well-defined map 
+\[  
+\psi_{\tilde A}: \Sigma_2 \selfmap = \RR^2 / \ZZ^2 \selfmap
+\]
+ which is still a linear self-homeomorphism.
 
 - There is a correspondence
 \[  
