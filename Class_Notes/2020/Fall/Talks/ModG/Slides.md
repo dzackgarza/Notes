@@ -512,7 +512,7 @@ T^n =
 \end{bmatrix}
 \]
 
-- If $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $A\in \SL(2, \ZZ)$, we have $A\vector x \in \ZZ\oplus \ZZ$, i.e. this preserves any integer lattice
+So if $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $\tilde A\in \SL(2, \ZZ)$, we have $\tilde A\vector x \in \ZZ\oplus \ZZ$, i.e. $A$ preserves any integer lattice
 \[  
 \Lambda = \ts{p \vector v_1 + q\vector v_2 \st p, q\in \ZZ} 
 .\]
