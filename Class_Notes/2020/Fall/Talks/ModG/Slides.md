@@ -405,6 +405,9 @@ Example:
 
 :::{.definition title="Algebraic Intersection"}
 A bilinear antisymmetric form $\hat \iota$ on $H_1(\Sigma_g; \ZZ)$.
+\[  
+\hat \iota: H_1
+.\]
 :::
 - There is a natural action of $\MCG(\Sigma)$ on $H_1(\Sigma; \ZZ)$, i.e. a *homology representation* of $\MCG(\Sigma)$:
 \[  
