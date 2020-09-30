@@ -481,6 +481,10 @@ $\im(\tilde\sigma )\subseteq \SL(2, \ZZ)$.
 f &\mapsto f_*
 .\]
 
+\newpage 
+
+### Surjectivity
+
 :::{.claim}
 $\sigma$ is surjective.
 :::
@@ -540,7 +544,13 @@ So if $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $\tilde A\in \SL
 ,\]
  where an element $x$ is *primitive* iff it is not a multiple of another element.
 
+  - By changing basis, you can associate a unique primitive vector to $M$ (all components coprime)
+
+ - By the correspondence, changing a map by a homotopy corresponds to the same primitive vector
+
 - Thus $\sigma([\psi_{\tilde A}]) = \tilde A$, and we have surjectivity.
+
+### Injectivity 
 
 :::{.claim}
 $\sigma$ is injective.
