@@ -253,18 +253,21 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
   - In the compact-open topology, two maps are isotopic iff they are in the same component of $\pi \Aut(X)$.
 
 - For surfaces:
-  $\MCG(S)$ on the Teichmuller space $T(S)$, yielding a SES
+  For $\Sigma$ a genus $g$ surface, $\MCG(S)$ acts on the Teichmuller space $T(S)$, yielding a SES
   \[  
-  0 \to \MCG(S) \to T(S) \to \widetilde{\mathcal{M}}_g(S) \to 0 
+  0 \to \MCG(\Sigma) \to T(\Sigma) \to {\mathcal{M}}_g \to 0 
   \]
   where the last term is the moduli space of Riemann surfaces homeomorphic to $X$.
 
-  - $T(S)$ is the moduli space of complex structures on $S$, up to the action of homeomorphisms that are isotopic to the identity:
+- $T(S)$ is the moduli space of complex structures on $S$, up to the action of homeomorphisms that are isotopic to the identity:
 
-    - Points are isomorphism classes of marked Riemann surfaces
-    - Equivalently the space of hyperbolic metrics
+  - Points are isomorphism classes of marked Riemann surfaces
+  - Equivalently the space of hyperbolic metrics
 
-  - Used in the Neilsen-Thurston Classification (for a compact orientable surface, a self-homeomorphism is isotopic to one which is any of: periodic: reducible (preserves some simple closed curves), or pseudo-Anosov (has directions of expansion/contraction))
+- Used in the Neilsen-Thurston Classification: for a compact orientable surface, a self-homeomorphism is isotopic to one which is any of: 
+  - Periodic,
+  - Reducible (preserves some simple closed curves), or 
+  - Pseudo-Anosov (has directions of expansion/contraction)
 
 
 ## Easy Results
@@ -298,9 +301,9 @@ x & \norm{x} \in [1-t, 1]
 
   - Note that this won't work in the smooth category: singularity at origin
 
-## Some Easy Results
+## Overview of Big Results 
 
-
+- $\MCG(\Sigma_g
 - $\MCG_\Top(\DD^2 \sm\ts{p_1})  = 0$
    Follows from the fact that $\DD^2\sm\ts{p_1} \cong_\Top$.
 
