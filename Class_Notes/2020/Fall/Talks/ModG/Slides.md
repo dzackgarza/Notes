@@ -404,10 +404,12 @@ Example:
 
 
 :::{.definition title="Algebraic Intersection"}
-A bilinear antisymmetric form 
+A bilinear antisymmetric form on middle homology:
 \[  
-\hat{\iota}: H_1(\Sigma_g; \ZZ) \tensor \H_1(\Sigma_g; \ZZ) \to \ZZ
+\hat{\iota}: H_1(\Sigma_g; \ZZ) \tensor H_1(\Sigma_g; \ZZ) \to \ZZ
 .\]
+
+> Note that this is a symplectic pairing.
 :::
 
 - There is a natural action of $\MCG(\Sigma)$ on $H_1(\Sigma; \ZZ)$, i.e. a *homology representation* of $\MCG(\Sigma)$:
@@ -416,7 +418,7 @@ A bilinear antisymmetric form
 f &\mapsto f_*
 .\]
 
-  - For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*, which is a symplectic pairing.
+  - For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*
 
   - Thus there is an interesting surjective representation:
   \[  
@@ -452,17 +454,13 @@ T^n =
 \end{bmatrix}
 \]
 
-Moreover, if $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $A\in \SL(2, \ZZ)$, we have $A\vector x \in \ZZ\oplus \ZZ$, i.e. this preserves any integer lattice
+- If $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $A\in \SL(2, \ZZ)$, we have $A\vector x \in \ZZ\oplus \ZZ$, i.e. this preserves any integer lattice
 \[  
 \Lambda = \ts{p \vector v_1 + q\vector v_2 \st p, q\in \ZZ} \cong \ts{p\omega_1 + q\omega_2 \st p, q \in \ZZ} \simeq \ts{p' + q' \tau \st p', q'\in \ZZ}
 .\]
 where the $\omega_i, \tau$ come from identifying $\RR^2$ with $\CC$, and in the last step we've rescaled the lattice by *homothety* to align one vector with the $x\dash$axis.
 
 ![Lattice](figures/image_2020-09-26-21-42-22.png)
-:::
-
-:::{.remark}
-For any finite-index subgroup $G\leq \SL(2, \ZZ)$, the orbits/left-quotient ${}_G\backslash^\HH$ yields a complex curve (i.e. a torus).
 :::
 
 
