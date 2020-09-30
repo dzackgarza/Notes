@@ -246,6 +246,7 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 .\]
   - Taking $\MCG(X)$ here yields *homotopy classes of self-homotopy equivalences*.
 
+\newpage
 
 ## Relation to Moduli Spaces
 
@@ -269,6 +270,9 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
   - Reducible (preserves some simple closed curves), or 
   - Pseudo-Anosov (has directions of expansion/contraction)
 
+> Picture: $\mathcal{M}_g$.
+
+\newpage
 
 ## Easy Results
 
@@ -309,9 +313,9 @@ x & \norm{x} \in [1-t, 1]
 
 - For $g\geq 3$, the center of $\MCG(\Sigma_g)$ is trivial
 
-- $H^1(\MCG(\Sigma_g); \ZZ) = 1$
+- $H^1(\MCG(\Sigma_g); \ZZ) = 1$ for 
 
-- $H^1
+- $H^2(\MCG(\Sigma_g); \ZZ) = 1$
 
 ---
 
