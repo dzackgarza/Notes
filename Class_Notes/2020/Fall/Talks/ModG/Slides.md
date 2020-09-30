@@ -502,8 +502,9 @@ $\tilde A$ is equivariant wrt $\ZZ^2$
 }
 .\]
 
-Note that $S^2 = 1$ and
+Note that
 \[  
+S^2 = 1, \qquad 
 T^n = 
 \begin{bmatrix}
 1 & n \\
@@ -513,11 +514,8 @@ T^n =
 
 - If $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $A\in \SL(2, \ZZ)$, we have $A\vector x \in \ZZ\oplus \ZZ$, i.e. this preserves any integer lattice
 \[  
-\Lambda = \ts{p \vector v_1 + q\vector v_2 \st p, q\in \ZZ} \cong \ts{p\omega_1 + q\omega_2 \st p, q \in \ZZ} \simeq \ts{p' + q' \tau \st p', q'\in \ZZ}
+\Lambda = \ts{p \vector v_1 + q\vector v_2 \st p, q\in \ZZ} 
 .\]
-where the $\omega_i, \tau$ come from identifying $\RR^2$ with $\CC$, and in the last step we've rescaled the lattice by *homothety* to align one vector with the $x\dash$axis.
-
-![Lattice](figures/image_2020-09-26-21-42-22.png)
 
 :::
 
