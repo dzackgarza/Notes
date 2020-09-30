@@ -200,7 +200,9 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 - Isotopy: require the partially-applied function $F_t:X\to Y$ to be homeomorphisms for every $t$.
   - Equivalently: a path in the subspace of homeomorphisms, an element of $\Map(I, \Homeo(X, Y))$
 
-> Picture: paths in $
+> Picture: picture of homotopy, paths in $\Map(X, Y)$, subspace of homeomorphisms.
+
+\newpage
 
 ## Self-Homeomorphisms
 
