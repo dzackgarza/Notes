@@ -402,6 +402,9 @@ Example:
 .\]
 :::
 
+
+- Algebraic intersection: a bilinear antisymmetric form $\hat \iota$ on $H_1(\Sigma_g; \ZZ)$
+  - $x$ is isotropic iff $\iota(x, \wait) = 0$.
 - There is a natural action of $\MCG(\Sigma)$ on $H_1(\Sigma; \ZZ)$, i.e. a *homology representation* of $\MCG(\Sigma)$:
 \[  
 \rho: \MCG(\Sigma) &\to \Aut_{\Grp}(H_1(\Sigma; \ZZ)) \\
@@ -418,9 +421,6 @@ f &\mapsto f_*
   - Kernel is the *Torelli group*, interesting because the symplectic group is well understood, so questions about $\MCG$ reduce to questions about $\Tor$.
 
 
-- Every homology class in $H_1$ can be represented by a (possibly non-simple) loop.
-- Algebraic intersection: a bilinear antisymmetric form $\hat \iota$ on $H_1(\Sigma_g; \ZZ)$
-  - $x$ is isotropic iff $\iota(x, \wait) = 0$.
 
 
 :::{.remark}
