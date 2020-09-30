@@ -415,7 +415,7 @@ f &\mapsto f_*
   0 \to \mathrm{Tor}(\Sigma_g) \injects \MCG(\Sigma_g) \surjects \Sp(2g; \ZZ) \to 0
   .\]
 
-  - Kernel is the *Torelli group*.
+  - Kernel is the *Torelli group*, interesting because 
 
 
 - Every homology class in $H_1$ can be represented by a (possibly non-simple) loop.
