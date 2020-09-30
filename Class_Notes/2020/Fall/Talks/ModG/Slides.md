@@ -380,6 +380,8 @@ z & \mapsto \exp{2\pi i \abs z}\, z
 
 # MCG of the Torus
 
+## Setup
+
 :::{.definition title="Special Linear Group"}
 \[  
 \SL(n, \kk) = \ts{M\in \GL(n, \kk) \mid \det M = 1} = \ker \det_{\GG_m}
@@ -418,51 +420,14 @@ A bilinear antisymmetric form on middle homology:
 f &\mapsto f_*
 .\]
 
-  - For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*
+- For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*
 
-  - Thus there is an interesting surjective representation:
-  \[  
-  0 \to \mathrm{Tor}(\Sigma_g) \injects \MCG(\Sigma_g) \surjects \Sp(2g; \ZZ) \to 0
-  .\]
-
-  - Kernel is the *Torelli group*, interesting because the symplectic group is well understood, so questions about $\MCG$ reduce to questions about $\Tor$.
-
-
-
-
-:::{.remark}
+- Thus there is an interesting surjective representation:
 \[  
-\SL(2, \ZZ) = \gens{ S = 
-\begin{bmatrix}
-0 & -1 \\
-1 & 0
-\end{bmatrix}
-, T =
-\begin{bmatrix}
-1 & 1 \\
-0 & 1
-\end{bmatrix}
-}
+0 \to \mathrm{Tor}(\Sigma_g) \injects \MCG(\Sigma_g) \surjects \Sp(2g; \ZZ) \to 0
 .\]
 
-Note that $S^2 = 1$ and
-\[  
-T^n = 
-\begin{bmatrix}
-1 & n \\
-0 & 1
-\end{bmatrix}
-\]
-
-- If $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $A\in \SL(2, \ZZ)$, we have $A\vector x \in \ZZ\oplus \ZZ$, i.e. this preserves any integer lattice
-\[  
-\Lambda = \ts{p \vector v_1 + q\vector v_2 \st p, q\in \ZZ} \cong \ts{p\omega_1 + q\omega_2 \st p, q \in \ZZ} \simeq \ts{p' + q' \tau \st p', q'\in \ZZ}
-.\]
-where the $\omega_i, \tau$ come from identifying $\RR^2$ with $\CC$, and in the last step we've rescaled the lattice by *homothety* to align one vector with the $x\dash$axis.
-
-![Lattice](figures/image_2020-09-26-21-42-22.png)
-:::
-
+- Kernel is the *Torelli group*, interesting because the symplectic group is well understood, so questions about $\MCG$ reduce to questions about $\Tor$.
 
 :::{.theorem title="Mapping Class Group of the Torus"}
 The homology representation of the torus induces an isomorphism
@@ -471,9 +436,13 @@ The homology representation of the torus induces an isomorphism
 \]
 :::
 
+
+
+\newpage
+
 ## Proof
 
-\hfill
+
 
 - For $f$ any automorphism, the induced map $f_*: \ZZ^2 \to \ZZ^2$ is a group automorphism, so we can consider the group morphism 
 \[  
@@ -482,7 +451,7 @@ f &\mapsto f_*
 .\]
 
 - This will descend to the quotient $\MCG(X)$ iff \[\Homeo^0(X, X) \subseteq \ker \tilde \sigma = \tilde\sigma\inv(\id)\]
-  - This holds because any map in the identity component is homotopic to the identity, and homotopic maps induce the equal maps on homology.
+  - This is true here, since any map in the identity component is homotopic to the identity, and homotopic maps induce the equal maps on homology.
 - So we have a (now injective) map
 \[  
 \tilde \sigma:\MCG(X) &\to \GL(2, \ZZ)  \\
@@ -519,7 +488,6 @@ $\tilde A$ is equivariant wrt $\ZZ^2$
 :::
 
 :::{.proof}
-?
 :::
 
 - So $\tilde A$ descends to a well-defined map $\psi_{\tilde A}$ on $\Sigma_2 \da \RR^2 / \ZZ^2$, which is still a linear self-homeomorphism
