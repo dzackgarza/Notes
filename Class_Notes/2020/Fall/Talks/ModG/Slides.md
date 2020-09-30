@@ -290,8 +290,10 @@ F(x, t) &= tf(x) + (1-t)x
 
  > Picture: parameterize line between $x$ and $f(x)$ and flow along it over time.
 
-## The Disc: The Alexander Trick 
 
+\newpage
+
+## The Closed Disc: The Alexander Trick 
 
 - $\MCG_\Top(\bar \DD^2) = 1$: for any $f: \bar\DD^2\to\bar\DD^2$ such that $\ro{f}{\bd \bar\DD^2} = \id$, take
 \[  
@@ -378,13 +380,33 @@ z & \mapsto \exp{2\pi i \abs z}\, z
 
 # MCG of the Torus
 
-:::{.remark}
-There is a natural action of $\MCG(\Sigma)$ on $H_1(\Sigma; \ZZ)$, i.e. a *homology representation* of $\MCG(\Sigma)$:
+:::{.definition title="Special Linear Group"}
+\[  
+\SL(n, \kk) = \ts{M\in \GL(n, \kk) \mid \det M = 1} = \ker \det_{\GG_m}
+.\]
+:::
+
+:::{.definition title="Symplectic Group"}
+\[  
+\Sp(2n, \kk) = \ts{M\in \GL(2n, \kk) \mid M^t\Omega M = \Omega} \leq \SL(2n, \kk)
+\]
+where $\Omega$ is a nondegenerate skew-symmetric bilinear form on $\kk$.
+
+Example:
+\[  
+\Omega = 
+\begin{bmatrix}
+0 & I_n \\
+-I_n & 0
+\end{bmatrix}
+.\]
+:::
+
+- There is a natural action of $\MCG(\Sigma)$ on $H_1(\Sigma; \ZZ)$, i.e. a *homology representation* of $\MCG(\Sigma)$:
 \[  
 \rho: \MCG(\Sigma) &\to \Aut_{\Grp}(H_1(\Sigma; \ZZ)) \\
 f &\mapsto f_*
 .\]
-:::
 
 - For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*, which is a symplectic pairing.
 
@@ -400,11 +422,6 @@ f &\mapsto f_*
 - Algebraic intersection: a bilinear antisymmetric form $\hat \iota$ on $H_1(\Sigma_g; \ZZ)$
   - $x$ is isotropic iff $\iota(x, \wait) = 0$.
 
-:::{.definition title="Special Linear Group"}
-\[  
-\SL(n, \kk) = \ts{M\in \GL(n, \kk) \mid \det M = 1} = \ker \det_{\GG_m}
-.\]
-:::
 
 :::{.remark}
 \[  
@@ -541,7 +558,6 @@ Moreover, the map is unique up to homotopies fixing $x_0$.
 - Claim: any element $f\in \MCG(\Sigma_2)$ has a representative $\phi$ which fixes any given basepoint
 
 - So if $f\in \ker \sigma$, then $f\simeq \phi \simeq \id$ are homotopic, so $\ker \sigma = 1$.
-
 
 
 
