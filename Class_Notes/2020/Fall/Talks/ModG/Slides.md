@@ -410,9 +410,9 @@ f &\mapsto f_*
 
   - For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*, which is a symplectic pairing.
 
-  - Thus there is a surjective representation
+  - Thus there is an interesting surjective representation:
   \[  
-  0 \to \\MCG(\Sigma_g) \surjects \Sp(2g; \ZZ)
+  0 \to \mathrm{Tor}(\Sigma_g) \injects \MCG(\Sigma_g) \surjects \Sp(2g; \ZZ) \to 0
   .\]
 
   - Kernel is the *Torelli group*.
