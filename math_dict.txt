@@ -927,3 +927,6 @@ Kempf
 semisimplicity
 Ringel
 imlies
+Isotopy
+isotopy
+basepoints
