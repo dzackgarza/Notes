@@ -412,7 +412,7 @@ f &\mapsto f_*
 
   - Thus there is a surjective representation
   \[  
-  \rho: \MCG(\Sigma_g) \surjects \Sp(2g; \ZZ)
+  0 \to \\MCG(\Sigma_g) \surjects \Sp(2g; \ZZ)
   .\]
 
   - Kernel is the *Torelli group*.
