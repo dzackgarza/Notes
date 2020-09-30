@@ -466,7 +466,7 @@ $\im(\tilde\sigma )\subseteq \SL(2, \ZZ)$.
 \hfill
 - Algebraic intersection numbers in $\Sigma_2$ correspond to determinants
 - $f\in \Homeo^+(X)$ preserve algebraic intersection numbers.
-- See section 1.2
+- See section 1.2 of Farb and Margalit
 :::
 
 - We can thus freely restrict the codomain to define the map
@@ -525,11 +525,12 @@ where the $\omega_i, \tau$ come from identifying $\RR^2$ with $\CC$, and in the 
 
 - There is a correspondence
 \[  
+\correspond{\text{Primitive curves in }  \\ \pi_1(\Sigma_2) \cong \ZZ^2} \iff 
 \correspond{\text{Primitive vectors in }\ZZ^2}
 \iff
-\correspond{\text{Oriented simple closed} \\\text{curves in } \Sigma_2}/\text{homotopy}
+\correspond{\text{Oriented simple closed} \\\text{curves in } \Sigma_2}/\text{\tiny homotopy}
 ,\]
- where a vector $\vector v$ is *primitive* iff 
+ where an element $x$ is *primitive* iff it is not a multiple of another element.
 
 - Thus $\sigma([\psi_{\tilde A}]) = \tilde A$, and we have surjectivity.
 
