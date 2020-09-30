@@ -232,13 +232,13 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 \Homeo(X) \da \Aut_{\Top}(X) = \ts{f\in \Map(X, X) \st f \text{ is an isomorphism}} \\
 \qquad\text{equipped with }\OO_{\text{CO}}
 .\]
-  - Taking $\MCG^\pm_\Top(X)$ yields ??
+  - Taking $\MCG^\pm_\Top(X)$ yields *homeomorphism up to homotopy*
 
 - Similarly, we can do all of this in the smooth category:
 \[  
 \Diffeo(X) \da \Aut_{C^\infty}(X)
 .\]
-  - Taking $\MCG_{C^\infty}(X)$ yields ??
+  - Taking $\MCG_{C^\infty}(X)$ yields *diffeomorphism up to isotopy*
 
 - Similarly, we can do this for the homotopy category of spaces:
 \[  
@@ -246,6 +246,25 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 .\]
   - Taking $\MCG(X)$ here yields *homotopy classes of self-homotopy equivalences*.
 
+
+## Relation to Moduli Spaces
+
+- For topological manifolds: Isotopy classes of homeomorphisms
+  - In the compact-open topology, two maps are isotopic iff they are in the same component of $\pi \Aut(X)$.
+
+- For surfaces:
+  $\MCG(S)$ on the Teichmuller space $T(S)$, yielding a SES
+  \[  
+  0 \to \MCG(S) \to T(S) \to \widetilde{\mathcal{M}}_g(S) \to 0 
+  \]
+  where the last term is the moduli space of Riemann surfaces homeomorphic to $X$.
+
+  - $T(S)$ is the moduli space of complex structures on $S$, up to the action of homeomorphisms that are isotopic to the identity:
+
+    - Points are isomorphism classes of marked Riemann surfaces
+    - Equivalently the space of hyperbolic metrics
+
+  - Used in the Neilsen-Thurston Classification (for a compact orientable surface, a self-homeomorphism is isotopic to one which is any of: periodic: reducible (preserves some simple closed curves), or pseudo-Anosov (has directions of expansion/contraction))
 
 
 ## Easy Results
