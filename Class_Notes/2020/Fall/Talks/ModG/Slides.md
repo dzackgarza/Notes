@@ -242,7 +242,7 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 
 - Similarly, we can do this for the homotopy category of spaces:
 \[  
-\text{ho}(X) \da \ts{[f] }
+\text{ho}(X) \da \ts{[f] \in [X, Y]}
 .\]
   - Taking $\MCG(X)$ here yields *homotopy classes of self-homotopy equivalences*.
 
