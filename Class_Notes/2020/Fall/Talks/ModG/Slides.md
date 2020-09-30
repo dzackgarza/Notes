@@ -408,14 +408,14 @@ Example:
 f &\mapsto f_*
 .\]
 
-- For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*, which is a symplectic pairing.
+  - For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*, which is a symplectic pairing.
 
-- Thus there is a surjective representation
-\[  
-\rho: \MCG(\Sigma_g) \surjects \Sp(2g; \ZZ)
-.\]
+  - Thus there is a surjective representation
+  \[  
+  \rho: \MCG(\Sigma_g) \surjects \Sp(2g; \ZZ)
+  .\]
 
-- Kernel is the *Torelli group*.
+  - Kernel is the *Torelli group*.
 
 
 - Every homology class in $H_1$ can be represented by a (possibly non-simple) loop.
