@@ -334,7 +334,8 @@ x & \norm{x} \in [1-t, 1]
   [S^n, B\Diffeo(\Sigma_g)] \cong [S^{n-1}, \Diffeo(\Sigma_g)]
   \]
 
-  - Use the fact that for $g\geq 2$, $\Diffeo \surjects \Mod(\Sigma_g)$ is a homotopy equivalence to yield a correspondence:
+  - Theorem (Earle-Ells): For $g\geq 2$, $\Diffeo_0(\Sigma_g)$ is contractible. 
+  As a consequence, $\Diffeo(\Sigma_g) \surjects \Mod(\Sigma_g)$ is a homotopy equivalence, and there is a correspondence:
   \[  
   \correspond{\text{Oriented $\Sigma_g$ bundles} \\ \text{over } B }/\text{\tiny Bundle isomorphism}
   \iff
