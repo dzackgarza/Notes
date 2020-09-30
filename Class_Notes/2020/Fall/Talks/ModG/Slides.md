@@ -398,6 +398,9 @@ A bilinear antisymmetric form on middle homology:
 f &\mapsto f_*
 .\]
 
+
+\newpage 
+
 - For a surface of finite genus $g\geq 1$, elements in $\im \rho$ preserve the *algebraic intersection form*
 
 
@@ -438,6 +441,8 @@ f &\mapsto f_*
 \tilde \sigma:\MCG(X) &\to \GL(2, \ZZ)  \\
 f &\mapsto f_*
 .\]
+
+\newpage
 
 :::{.claim}
 $\im(\tilde\sigma )\subseteq \SL(2, \ZZ)$.
@@ -509,6 +514,9 @@ So if $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $\tilde A\in \SL
 \psi_{\tilde A}: \Sigma_2 \selfmap = \RR^2 / \ZZ^2 \selfmap
 \]
  which is still a linear self-homeomorphism.
+
+
+\newpage 
 
 - There is a correspondence
 \[  
