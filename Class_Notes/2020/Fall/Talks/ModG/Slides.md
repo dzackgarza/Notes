@@ -404,11 +404,12 @@ Example:
 
 
 :::{.definition title="Algebraic Intersection"}
-A bilinear antisymmetric form $\hat \iota$ on $H_1(\Sigma_g; \ZZ)$.
+A bilinear antisymmetric form 
 \[  
-\hat \iota: H_1
+\hat{\iota}: H_1(\Sigma_g; \ZZ) \tensor \H_1(\Sigma_g; \ZZ) \to \ZZ
 .\]
 :::
+
 - There is a natural action of $\MCG(\Sigma)$ on $H_1(\Sigma; \ZZ)$, i.e. a *homology representation* of $\MCG(\Sigma)$:
 \[  
 \rho: \MCG(\Sigma) &\to \Aut_{\Grp}(H_1(\Sigma; \ZZ)) \\
