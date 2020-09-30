@@ -324,7 +324,7 @@ x & \norm{x} \in [1-t, 1]
 Let $\Sigma_g$ be compact and oriented with $\chi(\Sigma_g) < 0$.
 Then
 \[  
-\MCG^\pm_\del(\Sigma_g) \cong \Out_\del(\pi_1(\Sigma_g)) \cong \pi_0 \mathrm{ho}_\del(\Sigma_g)
+\MCG^+_\del(\Sigma_g) \cong \Out_\del(\pi_1(\Sigma_g)) \cong_{\Grp} \pi_0 \mathrm{ho}_\del(\Sigma_g)
 .\]
 :::
 
