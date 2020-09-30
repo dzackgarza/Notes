@@ -327,11 +327,18 @@ x & \norm{x} \in [1-t, 1]
   \end{tikzcd}
   \end{center}
 
-  and $\Mod(\Sigma_g)$ is the classifying space, so there is a correspondence
+  - Find the classifying space $B\Diffeo$ 
+
+  - Understand its homotopy type, since the homotopy LES yields 
+  \[
+  [S^n, B\Diffeo(\Sigma_g)] \cong [S^{n-1}, \Diffeo(\Sigma_g)]
+  \]
+
+  - Use the fact that for $g\geq 2$, $\Diffeo \surjects \Mod(\Sigma_g)$ is a homotopy equivalence to yield a correspondence:
   \[  
   \correspond{\text{Oriented $\Sigma_g$ bundles} \\ \text{over } B }/\text{\tiny Bundle isomorphism}
   \iff
-  \correspond{\text{Representations} \\ \rho: \pi_1(B) \to \MCG(\Sigma_g)}/\text{\tiny Conjugacy}
+  \correspond{\text{Monodromy Representations} \\ \rho: \pi_1(B) \to \MCG(\Sigma_g)}/\text{\tiny Conjugacy}
   .\]
   
 
