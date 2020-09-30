@@ -250,6 +250,10 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 .\]
   - Taking $\MCG(X)$ here yields *homotopy classes of self-homotopy equivalences*.
 
+![Image](figures/Order 5 Element.png)
+
+![Image](figures/image_2020-09-30-15-47-03.png)
+
 \newpage
 
 ## Relation to Moduli Spaces
@@ -373,6 +377,8 @@ Let $A \da \ts{z\in \CC \st 1\leq \abs z \leq 2}$, then $\MCG(A) \cong \ZZ$, gen
 \tau_0: \CC &\to \CC \\
 z & \mapsto \exp{2\pi i \abs z}\, z
 .\]
+
+![Image](figures/image_2020-09-30-15-48-03.png)
 
 :::
 
