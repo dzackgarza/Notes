@@ -200,10 +200,51 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 - Isotopy: require the partially-applied function $F_t:X\to Y$ to be homeomorphisms for every $t$.
   - Equivalently: a path in the subspace of homeomorphisms, an element of $\Map(I, \Homeo(X, Y))$
 
+> Picture: paths in $
 
 ## Self-Homeomorphisms
 
+- In any category, the automorphisms form a group. 
+
+  - In a general category $\mathcal{C}$, we can always define the group $\Aut_{\mathcal{C}}(X)$.
+    - If the group has a topology, we can consider $\pi_0 \Aut_{\mathcal{C}}(X)$, the set of path components.
+    - Since groups have identities, we can consider $\Aut^0_{\mathcal{C}}(X)$, the path component containing the identity.
+
+  - So we make a general definition, the *extended mapping class group*:
+  \[  
+  \MCG^\pm_{\mathcal{C}}(X) \da \Aut_{\mathcal{C}}(X) / \Aut_{\mathcal{C}}^0(X)
+  .\]
+
+  - Here the $\pm$ indicates that we take both orientation preserving and non-preserving automorphisms.
+
+  - Has an index 2 subgroup of orientation-preserving automorphisms, $\MCG^+(X)$.
+
+> Picture: quotienting out by identity component
+
+\newpage
+
 ## Definitions in Several Categories
+
+- Now restrict attention to
+\[  
+\Homeo(X) \da \Aut_{\Top}(X) = \ts{f\in \Map(X, X) \st f \text{ is an isomorphism}} \\
+\qquad\text{equipped with }\OO_{\text{CO}}
+.\]
+  - Taking $\MCG^\pm_\Top(X)$ yields ??
+
+- Similarly, we can do all of this in the smooth category:
+\[  
+\Diffeo(X) \da \Aut_{C^\infty}(X)
+.\]
+  - Taking $\MCG_{C^\infty}(X)$ yields ??
+
+- Similarly, we can do this for the homotopy category of spaces:
+\[  
+\text{ho}(X) \da \ts{[f] }
+.\]
+  - Taking $\MCG(X)$ here yields *homotopy classes of self-homotopy equivalences*.
+
+
 
 ## Easy Results
 
