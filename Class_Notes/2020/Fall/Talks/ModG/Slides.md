@@ -250,7 +250,7 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 .\]
   - Taking $\MCG(X)$ here yields *homotopy classes of self-homotopy equivalences*.
 
-![Image](figures/Order 5 Element.png)
+![Image](figures/Order_5_Element.png)
 
 ![Image](figures/image_2020-09-30-15-47-03.png)
 
@@ -379,6 +379,9 @@ z & \mapsto \exp{2\pi i \abs z}\, z
 .\]
 
 ![Image](figures/image_2020-09-30-15-48-03.png)
+
+
+> See [complex function plotter](https://people.ucsc.edu/~wbolden/complex/#e%5E(2*pi*i%20*%7Cz%7C)*z*t%20+%20z*(t-1)),or on [planet earth](http://davidbau.com/conformal/#e%5E(2*pi*i*%7Cz%7C)*z*t%20%2B%20(1-t)*z&b=earth)
 
 :::
 
@@ -549,6 +552,8 @@ So if $\vector x = \thevector{x_1, x_2} \in \ZZ \oplus \ZZ$ and $\tilde A\in \SL
  - By the correspondence, changing a map by a homotopy corresponds to the same primitive vector
 
 - Thus $\sigma([\psi_{\tilde A}]) = \tilde A$, and we have surjectivity.
+
+\newpage 
 
 ### Injectivity 
 
