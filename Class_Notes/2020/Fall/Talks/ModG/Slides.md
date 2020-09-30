@@ -327,7 +327,12 @@ x & \norm{x} \in [1-t, 1]
   \end{tikzcd}
   \end{center}
 
-  using 
+  and $\Mod(\Sigma_g)$ is the classifying space, so there is a correspondence
+  \[  
+  \correspond{\text{Oriented $\Sigma_g$ bundles} \\ \text{over } B }/\text{\tiny Bundle isomorphism}
+  \iff
+  \correspond{\text{Representations} \\ \rho: \pi_1(B) \to \MCG(\Sigma_g)}/\text{\tiny Conjugacy}
+  .\]
   
 
 ---
