@@ -24,12 +24,20 @@ transition: fade
 
 - Curves: simple, closed, oriented
 
+- Surfaces: these guys
+
+
+![A surface](figures/image_2020-09-28-01-04-18.png)
+
+![More surfaces](figures/image_2020-09-28-01-02-30.png)
+
 - For $X, Y$ topological spaces, consider 
   \[  
   Y^X = C(X, Y) = \hom_\Top(X, Y) \da \ts{f: X\to Y \st f\,\,\text{is continuous}}
   .\]
 
 
+\newpage
 
 ## The Compact-Open Topology
 
@@ -65,6 +73,8 @@ U \in \OO_{\text{CO}} \iff
   - $[X, Y]$ homotopy classes of maps
 
 
+\newpage
+
 ## Aside on Analysis 
 
 - If $Y = (Y, d)$ is a metric space, this is the topology of "uniform convergence on compact sets": for $f_n \to f$ in this topology iff 
@@ -80,38 +90,6 @@ U \in \OO_{\text{CO}} \iff
 \[
 d(f, g) = \sup_{x\in X}(f(x), g(x))
 .\]
-
-### Application in Analysis 
-
-- Useful in analysis: when does a family of functions 
-
-  \[ 
-  \mathcal{F} = \ts{f_\alpha} \subset \hom_\Top(X, Y)
-  \]   
-  form a compact subset of $\Map(X, Y)$? 
-
-- Essentially answered by:
-
-:::{.theorem title="Ascoli"}
-If $X$ is locally compact Hausdorff and $(Y, d)$ is a metric space, a family $\mathcal{F} \subset \hom_\Top(X, Y)$ has compact closure $\iff$ $\mathcal{F}$ is equicontinuous and $F_x \da \ts{f(x) \st f\in \mathcal{F}}\subset Y$ has compact closure.
-:::
-
-:::{.corollary title="Arzela"}
-If $\ts{f_n}\subset \hom_\Top(X, Y)$ is an equicontinuous sequence and $F_x \da \ts{f_n(x)}$ is bounded for every $X$, it contains a uniformly convergent subsequence.
-:::
-
-## Aside on Number Theory
-
-- Useful in Number Theory / Rep Theory / Fourier Series: 
-  - Can take $G$ to be a locally compact abelian topological group and define its Pontryagin dual 
-  \[\hat G \da \hom_{\Top\Grp}(G, S^1)\] 
-  where we consider $S^1\subset \CC$.
-
-- Can integrate with respect to the Haar measure $\mu$, define $L^p$ spaces, and for $f\in L^p(G)$ define a Fourier transform $\hat f\in L^p(\hat G)$.
-  \[  
-  \hat f(\chi) \da \int_G f(x) \bar{\chi(x)} d\mu(x)
-  .\]
-
 
 \newpage
 
@@ -138,6 +116,7 @@ H:X\cross Z \to Y &\iff \tilde H: Z\to \Map(X, Y)\\
   - A form of this adjunction holds in any cartesian closed category (terminal objects, products, and exponentials)
 
 
+\newpage
 
 ## Homotopy and Isotopy in Terms of Path Spaces
 
@@ -159,6 +138,8 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 
   > Picture!
 
+\newpage 
+
 ### Proof
 \[  
   \mathcal{P}\Map(X, Y) = \Map(I, Y^X) \cong \Map(X\cross I, Y)
@@ -167,27 +148,6 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 
   - Interpretation: the RHS contains homotopies for maps $X\to Y$, the LHS are paths in the space of maps.
 
-## Iterated Path Spaces
-
-- Now we can bootstrap up to play fun recursive games by applying the pathspace *endofunctor* $\Map(I, \wait)$: 
-\[  
-\mathcal{P} \Map(X, Y)  &\da \Map(I, Y^X) \\
-\mathcal{P}^2 \Map(X, Y) &\da \mathcal{P}\Map(I, Y^X) = \Map(I, (Y^X)^I) = \Map(I, Y^{XI}) \\
-\vdots & \\
-\mathcal{P}^n\Map(X, Y) &\da \mathcal{P}^{n-1}\Map(I, Y^{XI})  =\Map(X, Y^{XI^n})
-.\]
-
-- Can interpret
-\[  
-\mcp^2\Map(X, Y) = \mathcal{P}\Map(X\cross I, Y)
-.\]
-  as the space of paths between homotopies.
-
-- Interpretation: we can consider paths in the *space* of paths, and paths between homotopies, and homotopies between homotopies, ad infinitum!
-
-> This in fact defines a *monad* on spaces: an endofunctor that behaves like a monoid.
-
-> Picture, link to infinity categories.
 
 ---
 
@@ -250,6 +210,8 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 .\]
   - Taking $\MCG(X)$ here yields *homotopy classes of self-homotopy equivalences*.
 
+\newpage
+
 ![Image](figures/Order_5_Element.png)
 
 ![Image](figures/image_2020-09-30-15-47-03.png)
@@ -259,7 +221,7 @@ i.e. two maps $f, g$ are homotopic $\iff$ they are connected by a path in $\Map(
 ## Relation to Moduli Spaces
 
 - For topological manifolds: Isotopy classes of homeomorphisms
-  - In the compact-open topology, two maps are isotopic iff they are in the same component of $\pi \Aut(X)$.
+  - In the compact-open topology, two maps are isotopic iff they are in the same component of $\pi_0 \Aut(X)$.
 
 - For surfaces:
   For $\Sigma$ a genus $g$ surface, $\MCG(S)$ acts on the Teichmuller space $T(S)$, yielding a SES
@@ -316,6 +278,8 @@ x & \norm{x} \in [1-t, 1]
   ![Image](figures/image_2020-09-30-01-33-46.png)
 
   - Note that this won't work in the smooth category: singularity at origin
+
+\newpage
 
 ## Overview of Big Results 
 
