@@ -8,13 +8,10 @@
 ![Better Dehn Twist](figures/image_2020-09-26-19-25-27.png)
 
 
-![Dehn Twist Cylinder](figures/image_2020-09-26-19-22-06.png)
 
-![$3g-1$ generators for Dehn Twist theorem](figures/image_2020-09-26-01-56-06.png)
 
 ![Fundamental Domains of $\SL(2, \ZZ)$ acting on $\HH$.](figures/image_2020-09-26-21-35-07.png)
 
-![Jacob's Ladder and Loch Ness](figures/image_2020-09-28-00-55-25.png)
 
 ![Real Projective Plane](figures/image_2020-09-28-00-57-46.png)
 
