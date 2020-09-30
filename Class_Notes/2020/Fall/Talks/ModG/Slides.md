@@ -528,7 +528,8 @@ where the $\omega_i, \tau$ come from identifying $\RR^2$ with $\CC$, and in the 
 \correspond{\text{Primitive vectors in }\ZZ^2}
 \iff
 \correspond{\text{Oriented simple closed} \\\text{curves in } \Sigma_2}/\text{homotopy}
-.\]
+,\]
+ where a vector $\vector v$ is *primitive* iff 
 
 - Thus $\sigma([\psi_{\tilde A}]) = \tilde A$, and we have surjectivity.
 
