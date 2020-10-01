@@ -4,6 +4,7 @@
 \usepackage{pgf, pgffor}
 \usepackage{amsfonts}
 
+
 \newsavebox\myboxX
 \newsavebox\myboxx
 \newdimen\heightX
@@ -23,16 +24,16 @@
 \begin{document}
 
 \foreach \n in {
-  \zeta, \eta,
-  \kappa, \nu, \xi, \rho, \sigma,
-  \tau, \phi, \varphi, \chi, \psi, \omega,
-  \mathfrak{g}, \mathfrak{h}, \mathfrak{n},
-  \mathfrak{b}, \mathfrak{z}, \mathfrak{s},
-  \mathfrak{l}, \mathfrak{p},
-  \Phi
+\alpha, \beta, \gamma,\delta,\varepsilon, 
+\zeta, \eta, \theta, \iota, \kappa, 
+\lambda,\mu,\nu,\xi,
+\pi, \rho, \sigma, \tau, \upsilon, 
+\chi, \psi, \omega
 }{
-\foreach \j in {1, 2, ..., 10}{
-  \setline{5}{$\n\n\n\n\n\n\n\n\n\n$}\vspace{0.25cm}\\
+\foreach \j in {1, 2, ..., 3}{
+  \setline{4}{$\n\n\n\n\n\n\n\n\n\n$}
+  \vspace{0.15cm}
+  \\
 }
 }
 
