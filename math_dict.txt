@@ -931,3 +931,5 @@ Isotopy
 isotopy
 basepoints
 Donkin
+projectivity
+exts
