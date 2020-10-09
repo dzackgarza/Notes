@@ -937,3 +937,4 @@ QHA
 Schur
 HWC
 parabolics
+bidegree

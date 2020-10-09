@@ -1,7 +1,7 @@
 \theoremstyle{definition}
 \newtheorem{exercise}{Exercise}[section]
 \newtheorem{example}{Example}[section]
-\newtheorem{remark}{Remark}
+\newtheorem{remark}{Remark}[section]
 
 % Theorem Styles
 \usepackage[framemethod=tikz]{mdframed}
@@ -43,7 +43,7 @@
   opacityback=0.0,
   colframe=orange
 }
-\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{proposition}{Proposition}[section]
 \tcolorboxenvironment{lemma}{
   boxrule=1pt,
   boxsep=0pt,
@@ -52,7 +52,7 @@
   opacityback=0.2,
   colframe=orange
 }
-\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{lemma}{Lemma}[section]
 
 
 % Corollary
@@ -64,7 +64,7 @@
   opacityback=0.1,
   colframe=orange
 }
-\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{corollary}{Corollary}[section]
 
 % Proof Style
 \newtheoremstyle{proof}% name
@@ -114,7 +114,7 @@
   fonttitle={\large\bfseries},
   attach title to upper={},
 }
-\newtheorem{definition}{Definition}[theorem]
+\newtheorem{definition}{Definition}[section]
 
 % Problem Style
 \newtheoremstyle{problem} % name
@@ -135,7 +135,7 @@
   opacityback=0.0,
   colframe=cyan
 }
-\newtheorem{problem}{Problem}
+\newtheorem*{problem}{Problem}
 
 % Problem Style
 \newtheoremstyle{claim} % name
@@ -181,7 +181,7 @@
   {0.5em}% Space after thm head: \newline = linebreak
   {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{warning}
-\newtheorem*{warning}{Warning}
+\newtheorem{warning}{Warning}[section]
 
 \newtheoremstyle{solution}% name
   {0em}%         Space above, empty = `usual value'
@@ -202,7 +202,7 @@
   colframe=soln_color
 }
 \theoremstyle{solution}
-\newtheorem{solution}{Solution}
+\newtheorem*{solution}{Solution}
 
 \newtheoremstyle{concept}% name
   {1em}%         Space above, empty = `usual value'
@@ -224,9 +224,18 @@
   colframe=concept_color
 }
 \theoremstyle{concept}
-\newtheorem{concept}{Concepts Used}
+\newtheorem*{concept}{Concepts Used}
 
 
 %\usepackage{environ}
 
 %\RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
+
+
+\numberwithin{proposition}{subsection} % important bit
+\numberwithin{corollary}{subsection} % important bit
+\numberwithin{theorem}{subsection} % important bit
+\numberwithin{definition}{subsection} % important bit
+\numberwithin{example}{subsection} % important bit
+\numberwithin{exercise}{subsection} % important bit
+\numberwithin{remark}{subsection} % important bit
