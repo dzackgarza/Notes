@@ -1,5 +1,11 @@
 
-[The Chicago Undergraduate Mathematics Bibliography](https://www.ocf.berkeley.edu/~abhishek/chicmath.htm)
+# Multiple Areas
+
+- [The Chicago Undergraduate Mathematics Bibliography](https://www.ocf.berkeley.edu/~abhishek/chicmath.htm)
+
+- [Milne's Collection of Course Notes](https://www.jmilne.org/math/CourseNotes/)
+
+- [Pete Clark's Expositions](http://alpha.math.uga.edu/~pete/expositions2012.html)
 
 # Algebra
 
@@ -11,6 +17,8 @@
 ## Hungerford, Algebra
 
 ## Isaacs, Algebra
+
+## M. Artin, Algebra
 
 # Commutative Algebra
 
@@ -62,3 +70,12 @@ Standard reference.
 # Algebraic Geometry
 
 - Gathmann, [Notes](https://www.mathematik.uni-kl.de/~gathmann/de/alggeom.php)
+
+## Robin Hartshorne, Algebraic Geometry
+
+Standard.
+
+
+# Number Theory
+
+## Cassels and Fröhlich, Algebraic Number Theory
