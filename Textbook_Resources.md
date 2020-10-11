@@ -12,6 +12,8 @@
 
 ## Complex Analysis
 
+### Stein and Shakarchi, 
+
 ### Taylor, Complex Analysis
 
 ### Simon, Complex Analysis
@@ -47,6 +49,10 @@
 
 
 ### Pramod Achar, Unreleased Geometric Representation Theory Text
+
+### Nicolas Libedinsky, Gentle Introduction to Soergel Bimodules
+
+- Notes: [Gentle introduction to Soergel bimodules I: The basics](https://arxiv.org/abs/1702.00039)
 
 ## Homological Algebra
 
@@ -99,6 +105,9 @@ Standard.
 ## Silverman, The Arithmetic of Elliptic Curves
 
 ## Weil, Basic Number Theory
+
+
+## Valenza, Fourier Analysis on Number Fields
 
 # Topology
 
@@ -171,15 +180,17 @@ Standard reference.
 
 ###  Carlson, Period Mappings and Period Domains
 
+### Rick Miranda, Algebraic Curves and Riemann Surfaces
+
+
+### Voison, Hodge Theory and Complex Algebraic Geometry I
+
 - Notes: [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
 
-## Physics
+# Physics
 
 - Arnold, Methods in Classical Mechanics
 
-## Unsorted Recommendations
+# Unsorted Recommendations
 
-- Nicolas Libedinsky, [Gentle introduction to Soergel bimodules I: The basics](https://arxiv.org/abs/1702.00039)
-- Valenza, Fourier Analysis on Number Fields
-- Rick Miranda, Algebraic Curves and Riemann Surfaces
-- Voison, Hodge Theory and Complex Algebraic Geometry I
+- All sorted!
