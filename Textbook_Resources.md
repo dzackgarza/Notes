@@ -51,3 +51,7 @@ Standard reference.
 
 - Links to some [homeworks and solutions at UCSD](http://www.math.ucsd.edu/~bli/teaching/math240Cs20/)
 
+
+# Representation Theory
+
+- Gaitsgory, [Course Notes on Geometric Representation Theory](http://people.math.harvard.edu/~gaitsgde/267y/index.html)
