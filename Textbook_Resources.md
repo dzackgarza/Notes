@@ -120,6 +120,10 @@ Standard.
 
 # Number Theory
 
+## J. Neukirch, Algebraic Number Theory
+
+- Large number of exercises [here](http://www.math.ucsd.edu/~csorense/teaching/math204B_W20/204B_W20_EXC.pdf)
+
 ## Cassels and Fröhlich, Algebraic Number Theory
 
 ## J.-P. Serre, A Course in Arithmetic
@@ -132,12 +136,7 @@ Standard.
 
 ## J.-P. Serre, Local fields 
 
-## J. Neukirch, Algebraic Number Theory
-
-- Large number of exercises [here](http://www.math.ucsd.edu/~csorense/teaching/math204B_W20/204B_W20_EXC.pdf)
-
 ## F. Lorenz, Algebra Volume II: Fields with structure, algebras and advanced topics
-
 
 ## J. Milne, Algebraic Number Theory
 
@@ -256,7 +255,7 @@ Standard reference.
 
 # Physics
 
-##
+## Mark Srednicki, Quantum Field Theory
 
 ## Pierre Deligne, Quantum Fields and Strings: A Course for Mathematicians 
 
@@ -273,6 +272,10 @@ Standard reference.
 
 # Logic
 
+## Set Theory
+
+### Kunen, Set Theory: An introduction to independence proofs
+
 ## Model Theory
 
 ### Tent and Ziegler, A Course in Model Theory
@@ -280,3 +283,4 @@ Standard reference.
 # Unsorted Recommendations
 
 - Sipser, Introduction to the Theory of Computation
+- Murray, Mathematical Biology
