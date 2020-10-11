@@ -21,6 +21,9 @@
 
 ### Lars Ahlfors, Complex Analysis
 
+### Conway, Functions of one complex variable I
+
+
 
 ## Real Analysis
 
@@ -148,11 +151,13 @@ Standard reference.
 
 ### Milnor, Topology from the differentiable viewpoint.
 
-## Differential Geometry
+## Differential Geometry and Topology
 
 ### Manfredo P. Do Carmo, Riemannian Geometry
 
 ### Manfredo P. Do Carmo, Differential Geometry of Curves and Surfaces
+
+### Guillemin and Pollack, Differential Topology
  
 
 ### John M. Lee, Introduction to Smooth Manifolds
@@ -172,14 +177,12 @@ Standard reference.
 
 ### McDuff, Introduction to Symplectic Topology
 
-
 ### Osvath and Szabo, [Grid Homology for Knots and Links](https://web.math.princeton.edu/~petero/GridHomologyBook.pdf)
 
 ### Frank Warner, Foundations of Differentiable Manifolds and Lie Groups (?)
 
 ### Guillemin, Stable Mappings and Their Singularities
 
-### Guillemin and Pollack, Differential Topology
 
 
 ## Complex Geometry
