@@ -273,12 +273,6 @@
 - :fa-book: :fa-star: _Lee_, **Introduction to Smooth Manifolds**
 	- The appendix has a great uber-compressed review of point-set.
 
-<details markdown="1">
-**Notes**
-- Common question: where is Topology useful?
-	- See Brouwer fixed point theorem, Lie groups in physics, links to functional analysis.
-</details>
-
 ---
 
 ## Graduate Real Analysis
@@ -286,17 +280,10 @@
 - :fa-book: _Rudin_, **Principles of Mathematical Analysis**
 	- A contentious standard for real analysis. Chapter 11 has a light overview of measure theory, and the Lebesgue integral.
 
-- :fa-book: _Rudin_, **Real and Complex Analysis**
-	- Also referred to as "Papa Rudin".
 
 - :fa-book: _Schilling_, **Measures, Integrals, and Martingales**
 	- This book is not as detailed, as it is geared towards rigorous probability theory, but covers material faster and provides a bit more intuition than Rudin. The first few chapters are a good supplement to a full course.
 
-- :fa-book: _Folland_, **Real Analysis: Modern Techniques and Their Applications**
-	- Particularly good for measure theory.
-
-- :fa-book: _Royden_, **Real Analysis**
-	- Also good for measure theory.
 
 <details markdown="1">
 **Content**
@@ -309,7 +296,7 @@
 ## Algebra
 
 - :fa-book: _Dummit and Foote_, **Abstract Algebra**
-	- Pretty much the all-around standard, this thing is absolutely encylopedaic!
+	- Pretty much the all-around standard, absolutely encyclopedic!
 
 
 ## Category Theory
