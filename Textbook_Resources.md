@@ -114,13 +114,15 @@ Standard.
 
 ## Silverman, The Arithmetic of Elliptic Curves
 
+## Marcus, Number Fields
+
+## J.-P. Serre, Local fields 
+
 ## J. Neukirch, Algebraic Number Theory
 
 - Large number of exercises [here](http://www.math.ucsd.edu/~csorense/teaching/math204B_W20/204B_W20_EXC.pdf)
 
 ## F. Lorenz, Algebra Volume II: Fields with structure, algebras and advanced topics
-
-## J.-P. Serre, Local fields 
 
 
 ## J. Milne, Algebraic Number Theory
@@ -132,6 +134,8 @@ Standard.
 - Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_CFT.pdf)
 
 ## Weil, Basic Number Theory
+
+## Saban Alaca and Kenneth Williams, Introductory Algebraic Number Theory
 
 ## Valenza, Fourier Analysis on Number Fields
 
@@ -224,6 +228,11 @@ Standard reference.
 
 # Physics
 
+None so far!
+
+# Combinatorics
+
+## Stanley, Enumerative Combinatorics Vol 1
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
