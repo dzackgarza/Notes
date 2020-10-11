@@ -79,3 +79,17 @@ Standard.
 # Number Theory
 
 ## Cassels and Fröhlich, Algebraic Number Theory
+
+## J. Neukirch, Algebraic Number Theory
+
+## F. Lorenz, Algebra Volume II: Fields with structure, algebras and advanced topics
+
+## J.-P. Serre, Local fields 
+
+## J. Milne, Algebraic Number Theory
+
+- Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_ANT.pdf)
+
+## J. Milne, Class Field Theory
+
+- Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_CFT.pdf)
