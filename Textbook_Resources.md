@@ -12,6 +12,10 @@
 
 ## Complex Analysis
 
+### Taylor, Complex Analysis
+
+### Simon, Complex Analysis
+
 ## Real Analysis
 
 ### Gerald B. Folland, Real Analysis: Modern Techniques and Applications
@@ -76,6 +80,8 @@ Standard.
 
 ## Silverman, The Arithmetic of Elliptic Curves
 
+## Weil, Basic Number Theory
+
 # Topology
 
 ## Algebraic Topology
@@ -121,6 +127,12 @@ Standard reference.
 
 ### Milnor, Morse Theory
 
+- Eliashberg, From Stein to Weinstein and Back
+- Pollack, Differential Topology
+- Milnor, Lectures on h-Cobordism
+- McDuff, Introduction to Symplectic Topology
+
+
 ## Complex Geometry
 
 ### Hodge Theory and Complex Algebraic Geometry, Volumes I and II, by Claire Voisin
@@ -131,11 +143,7 @@ Standard reference.
 
 
 
-- Eliashberg, From Stein to Weinstein and Back
 - Arnold, Methods in Classical Mechanics
-- Pollack, Differential Topology
-- Milnor, Lectures on h-Cobordism
-- McDuff, Introduction to Symplectic Topology
 - Peter J. HiltonUrs Stammbach, A Course in Homological Algebra (via Dan Nakano)
 - Pramod Achar, Unreleased Geometric Representation Theory Text
 - Eisenbud and Harris, [The Geometry of Schemes](https://www.maths.ed.ac.uk/~v1ranick/papers/eisenbudharris.pdf)
@@ -145,8 +153,6 @@ Standard reference.
 - Guillemin?, Stable Mappings and Their Singularities
 - Nicolas Libedinsky, [Gentle introduction to Soergel bimodules I: The basics](https://arxiv.org/abs/1702.00039)
 - Valenza, Fourier Analysis on Number Fields
-- Taylor, Complex Analysis
-- Simon, Complex Analysis
 - Rick Miranda, Algebraic Curves and Riemann Surfaces
 - Voison, Hodge Theory and Complex Algebraic Geometry I
 - Carlson, [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
