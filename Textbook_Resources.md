@@ -55,3 +55,7 @@ Standard reference.
 # Representation Theory
 
 - Gaitsgory, [Course Notes on Geometric Representation Theory](http://people.math.harvard.edu/~gaitsgde/267y/index.html)
+
+# Algebraic Geometry
+
+- Gathmann, [Notes](https://www.mathematik.uni-kl.de/~gathmann/de/alggeom.php)
