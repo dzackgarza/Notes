@@ -7,23 +7,10 @@
 
 - [Pete Clark's Expositions](http://alpha.math.uga.edu/~pete/expositions2012.html)
 
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 # Analysis
-
-
-## Complex Analysis
-
-
-### Taylor, Complex Analysis
-
-### Simon, Complex Analysis
-
-### Stein and Shakarchi, Complex Analysis
-
-### Lars Ahlfors, Complex Analysis
-
-### Conway, Functions of one complex variable I
-
-
 
 ## Real Analysis
 
@@ -34,6 +21,18 @@
 - Links to some [homeworks and solutions at UCSD](http://www.math.ucsd.edu/~bli/teaching/math240Cs20/)
 
 ### Walter Rudin, Real and Complex Analysis
+
+## Complex Analysis
+
+### Taylor, Complex Analysis
+
+### Simon, Complex Analysis
+
+### Stein and Shakarchi, Complex Analysis
+
+### Lars Ahlfors, Complex Analysis
+
+### Conway, Functions of one complex variable I
 
 ## Dynamics
 
@@ -61,6 +60,7 @@
 
 - Gaitsgory, [Course Notes on Geometric Representation Theory](http://people.math.harvard.edu/~gaitsgde/267y/index.html)
 
+### Humphreys, Introduction to Lie algebras and Representation Theory
 
 ### Pramod Achar, Unreleased Geometric Representation Theory Text
 
