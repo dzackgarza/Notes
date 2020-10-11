@@ -44,6 +44,10 @@
 
 ### Arnol'd, Methods in Classical Mechanics
 
+## Differential Equations
+
+### Evans, Partial Differential Equations
+
 ---------------------------------------------------------------------------------------------------------------------------------
 
 # Algebra
@@ -171,6 +175,8 @@ Standard reference.
 ### Bott and Tu, Differential Forms in Algebraic Topology (Springer)
 
 - Classic reference.
+
+### Massey, A Basic Course in Algebraic Topology
 
 ## Manifolds
 
