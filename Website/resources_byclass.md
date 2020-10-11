@@ -215,25 +215,11 @@
 - :fa-book: :fa-star: _Needham_, **Visual Complex Analysis**
 	- Absolutely phenomenal book! The exposition and imagery is truly excellent, although this is perhaps not the best book for learning computations.
 
-- :fa-book: _Ahlfors_, **Complex Analysis**
-	- A standard grad-level reference.
-
 <details markdown="1">
 **Content**
 - The complex integral
 - Residue theorems
 - Analytic vs. Holomorphic vs. Complex Differentiable functions
-</details>
-
-
-## Partial Differential Equations
-
-- :fa-book: _Evans_, **Partial Differential Equations**
-	- A graduate-level approach.
-
-<details markdown="1">
-**Content**
-- Heat/wave/Laplace equations.
 </details>
 
 
