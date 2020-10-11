@@ -246,6 +246,8 @@ Standard reference.
 
 None so far!
 
+## Pierre Deligne, Quantum Fields and Strings: A Course for Mathematicians 
+
 # Combinatorics
 
 ## Stanley, Enumerative Combinatorics Vol 1
