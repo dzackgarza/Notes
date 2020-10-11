@@ -159,6 +159,9 @@ Standard.
 
 # Topology
 
+- [Second Steps in Algebraic Topology](http://math.uchicago.edu/~shmuel/2nd_steps.html)
+  - Slightly out-of-date
+
 ## Algebraic Topology
 
 ### Hatcher, Algebraic Topology
@@ -191,8 +194,6 @@ Standard reference.
 - [Dwyer-Spalinski, Homotopy Theories and Model Categories](http://www.math.jhu.edu/~eriehl/616/DwyerSpalinski.pdf)
 - [Hovey-Shipley-Smith, Symmetric Spectra](https://arxiv.org/abs/math/9801077)
 - [Hovey, Spectra and symmetric spectra in general model categories](https://web.math.rochester.edu/people/faculty/doug/otherpapers/hovey-symm.pdf)
-
-### 
 
 
 ## Manifolds
@@ -265,6 +266,8 @@ None so far!
 
 ## Bruce Sagan - Springer, The Symmetric Group 
 
+## Doug West, Introduction to Graph Theory
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -276,5 +279,4 @@ None so far!
 
 # Unsorted Recommendations
 
-- All sorted!
-
+- Sipser, Introduction to the Theory of Computation
