@@ -151,6 +151,8 @@ Standard reference.
 ## Differential Geometry
 
 ### Manfredo P. Do Carmo, Riemannian Geometry
+
+### Manfredo P. Do Carmo, Differential Geometry of Curves and Surfaces
  
 
 ### John M. Lee, Introduction to Smooth Manifolds
