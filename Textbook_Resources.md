@@ -46,6 +46,8 @@
 
 ### Strogatz, Nonlinear Dynamics and Chaos
 
+### Hale & Koçak, Dynamics and Bifurcations. 
+
 ## Differential Equations
 
 ### Evans, Partial Differential Equations
@@ -186,9 +188,12 @@ Standard reference.
 
 ## Homotopy Theory
 
-### Dwyer & Spalinski, Homotopy Theories and Model Categories
+- [Dwyer-Spalinski, Homotopy Theories and Model Categories](http://www.math.jhu.edu/~eriehl/616/DwyerSpalinski.pdf)
+- [Hovey-Shipley-Smith, Symmetric Spectra](https://arxiv.org/abs/math/9801077)
+- [Hovey, Spectra and symmetric spectra in general model categories](https://web.math.rochester.edu/people/faculty/doug/otherpapers/hovey-symm.pdf)
 
-- Notes [here](http://www.math.jhu.edu/~eriehl/616/DwyerSpalinski.pdf)
+### 
+
 
 ## Manifolds
 
