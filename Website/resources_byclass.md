@@ -252,13 +252,6 @@
 - :fa-book: :fa-star: _Lee_, **Introduction to Smooth Manifolds**
 	- The appendix has a great uber-compressed review of point-set.
 
----
-
-## Algebra
-
-- :fa-book: _Dummit and Foote_, **Abstract Algebra**
-	- Pretty much the all-around standard, absolutely encyclopedic!
-
 
 ## Category Theory
 
