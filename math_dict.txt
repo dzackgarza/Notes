@@ -939,3 +939,6 @@ HWC
 parabolics
 bidegree
 encyclopaedic
+Urs
+Stammbach
+Guillemin

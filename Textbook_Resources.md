@@ -46,6 +46,15 @@
 - Gaitsgory, [Course Notes on Geometric Representation Theory](http://people.math.harvard.edu/~gaitsgde/267y/index.html)
 
 
+### Pramod Achar, Unreleased Geometric Representation Theory Text
+
+## Homological Algebra
+
+
+### Peter J. Hilton and Urs Stammbach, A Course in Homological Algebra
+
+- Recommended by Dan Nakano
+
 ### Kirillov, Lie Groups and Lie Algebras
 
 - Recommended by Daniel Litt
@@ -56,7 +65,16 @@
 
 ## Robin Hartshorne, Algebraic Geometry
 
+
+## Eisenbud and Harris, The Geometry of Schemes
+
+- Notes: [The Geometry of Schemes](https://www.maths.ed.ac.uk/~v1ranick/papers/eisenbudharris.pdf)
+
 Standard.
+
+
+
+## Mumford, The Red Book of Varieties and Schemes
 
 # Number Theory
 
@@ -127,10 +145,20 @@ Standard reference.
 
 ### Milnor, Morse Theory
 
-- Eliashberg, From Stein to Weinstein and Back
-- Pollack, Differential Topology
-- Milnor, Lectures on h-Cobordism
-- McDuff, Introduction to Symplectic Topology
+### Eliashberg, From Stein to Weinstein and Back
+
+### Pollack, Differential Topology
+
+### Milnor, Lectures on h-Cobordism
+
+### McDuff, Introduction to Symplectic Topology
+
+
+### Osvath and Szabo, [Grid Homology for Knots and Links](https://web.math.princeton.edu/~petero/GridHomologyBook.pdf)
+
+### Frank Warner, Foundations of Differentiable Manifolds and Lie Groups (?)
+
+### Guillemin, Stable Mappings and Their Singularities
 
 
 ## Complex Geometry
@@ -141,18 +169,17 @@ Standard reference.
 
 ### Principles of Algebraic Geometry, by Phillip Griffiths and Joseph Harris
 
+###  Carlson, Period Mappings and Period Domains
 
+- Notes: [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
+
+## Physics
 
 - Arnold, Methods in Classical Mechanics
-- Peter J. HiltonUrs Stammbach, A Course in Homological Algebra (via Dan Nakano)
-- Pramod Achar, Unreleased Geometric Representation Theory Text
-- Eisenbud and Harris, [The Geometry of Schemes](https://www.maths.ed.ac.uk/~v1ranick/papers/eisenbudharris.pdf)
-- Mumford, The Red Book of Varieties and Schemes
-- Osvath and Szabo, [Grid Homology for Knots and Links](https://web.math.princeton.edu/~petero/GridHomologyBook.pdf)
-- Frank Warner, Foundations of Differentiable Manifolds and Lie Groups (?)
-- Guillemin?, Stable Mappings and Their Singularities
+
+## Unsorted Recommendations
+
 - Nicolas Libedinsky, [Gentle introduction to Soergel bimodules I: The basics](https://arxiv.org/abs/1702.00039)
 - Valenza, Fourier Analysis on Number Fields
 - Rick Miranda, Algebraic Curves and Riemann Surfaces
 - Voison, Hodge Theory and Complex Algebraic Geometry I
-- Carlson, [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
