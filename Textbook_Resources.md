@@ -41,6 +41,9 @@
 
 - Gaitsgory, [Course Notes on Geometric Representation Theory](http://people.math.harvard.edu/~gaitsgde/267y/index.html)
 
+
+## Kirillov, Lie Groups and Lie Algebras
+  - Rec by Daniel Litt
 # Algebraic Geometry
 
 - Gathmann, [Notes](https://www.mathematik.uni-kl.de/~gathmann/de/alggeom.php)
@@ -107,7 +110,9 @@ Standard reference.
 
 ### John M. Lee, Introduction to Smooth Manifolds
 
-### Cannas da Silva, [Lectures on Symplectic Geometry](https://people.math.ethz.ch/~acannas/Papers/lsg.pdf)
+### Cannas da Silva, Lectures on Symplectic Geometry
+
+- Notes: [Lectures on Symplectic Geometry](https://people.math.ethz.ch/~acannas/Papers/lsg.pdf)
   - Skip chapters 4, 5, 25, 26, 30
 
 ## Complex Geometry
@@ -120,9 +125,6 @@ Standard reference.
 
 
 
-- Folland, Analysis
-- Kirillov, Lie Groups and Lie Algebras
-  - Rec by Daniel Litt
 - Eliashberg, From Stein to Weinstein and Back
 - Milnor, Morse Theory
 - Silverman, The Arithmetic of Elliptic Curves
