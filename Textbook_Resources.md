@@ -44,6 +44,8 @@
 
 ### Arnol'd, Methods in Classical Mechanics
 
+### Strogatz, Nonlinear Dynamics and Chaos
+
 ## Differential Equations
 
 ### Evans, Partial Differential Equations
@@ -124,6 +126,8 @@ Standard.
 
 ## Marcus, Number Fields
 
+- Covers quadratic fields
+
 ## J.-P. Serre, Local fields 
 
 ## J. Neukirch, Algebraic Number Theory
@@ -144,6 +148,8 @@ Standard.
 ## Weil, Basic Number Theory
 
 ## Saban Alaca and Kenneth Williams, Introductory Algebraic Number Theory
+
+- Covers quadratic fields
 
 ## Valenza, Fourier Analysis on Number Fields
 
