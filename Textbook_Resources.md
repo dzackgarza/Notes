@@ -1,5 +1,8 @@
 # Algebra
 
+
+## Dummit and Foote, Abstract Algebra
+
 # Algebraic Topology
 
 ## Hatcher, Algebraic Topology
