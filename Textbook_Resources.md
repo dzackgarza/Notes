@@ -38,6 +38,10 @@
 
 ### Milnor, Dynamics in One Complex Variable
 
+### Arnol'd, Methods in Classical Mechanics
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 # Algebra
 
 ## General/Introductory
@@ -79,6 +83,9 @@
 
 - Recommended by Daniel Litt
 
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 # Algebraic Geometry
 
 - Gathmann, [Notes](https://www.mathematik.uni-kl.de/~gathmann/de/alggeom.php)
@@ -96,9 +103,16 @@ Standard.
 
 ## Mumford, The Red Book of Varieties and Schemes
 
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 # Number Theory
 
 ## Cassels and Fröhlich, Algebraic Number Theory
+
+## J.-P. Serre, A Course in Arithmetic
+
+## Silverman, The Arithmetic of Elliptic Curves
 
 ## J. Neukirch, Algebraic Number Theory
 
@@ -108,6 +122,7 @@ Standard.
 
 ## J.-P. Serre, Local fields 
 
+
 ## J. Milne, Algebraic Number Theory
 
 - Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_ANT.pdf)
@@ -116,12 +131,11 @@ Standard.
 
 - Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_CFT.pdf)
 
-## Silverman, The Arithmetic of Elliptic Curves
-
 ## Weil, Basic Number Theory
 
-
 ## Valenza, Fourier Analysis on Number Fields
+
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Topology
 
@@ -205,16 +219,22 @@ Standard reference.
 
 - Notes: [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
 
+
+---------------------------------------------------------------------------------------------------------------------------------
+
 # Physics
 
-- Arnold, Methods in Classical Mechanics
 
-# Unsorted Recommendations
 
-- All sorted!
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Logic
 
 ## Model Theory
 
 ### Tent and Ziegler, A Course in Model Theory
+
+# Unsorted Recommendations
+
+- All sorted!
+
