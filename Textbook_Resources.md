@@ -34,6 +34,10 @@
 
 ### Conway, Functions of one complex variable I
 
+## Functional Analysis
+
+### Conway, A Course in Functional Analysis
+
 ## Dynamics
 
 ### Milnor, Dynamics in One Complex Variable
@@ -233,6 +237,8 @@ None so far!
 # Combinatorics
 
 ## Stanley, Enumerative Combinatorics Vol 1
+
+## Bruce Sagan - Springer, The Symmetric Group 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
