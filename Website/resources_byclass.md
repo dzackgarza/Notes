@@ -311,31 +311,8 @@
 - :fa-book: _Dummit and Foote_, **Abstract Algebra**
 	- Pretty much the all-around standard, this thing is absolutely encylopedaic!
 
-- :fa-book: _Atiyah and MacDonald_, **Introduction to Commutative Algebra**
-
-- :fa-book: _Weibel_, **An Introduction to Homological Algebra**
-
-
-## Functional Analysis
-
-- :fa-book: _Conway_, **A Course in Functional Analysis**
-	- Assumes a background around the level of Papa Rudin.
-
-<details markdown="1">
-**Content**
-- Measure theory, sigma algebra
-- Montone and dominated convergence theorems
-- $L^p$ spaces, Holder's inequality
-</details>
-
 
 ## Category Theory
-
-- :fa-book: :fa-star: _Aluffi_ **Algebra Chapter Zero**
-	- Covers Algebra in a more categorical manner, so this book works best as a second pass of Algebra.
-
-- :fa-book: _Mac Lane_ **Categories for the Working Mathematician**
-	- Seems to be a pretty standard reference; Mac Lane is regarded as one of the founders of the subject.
 
 - :fa-tv: [Talk on Category Theory by Tom LaGatta](https://www.youtube.com/watch?v=o6L6XeNdd_k)
 
@@ -352,12 +329,6 @@
 - :fa-book: :fa-star: _Hatcher_, **Algebraic Topology**
 	- Love it or hate it, this seems to be the standard reference!
 
-- :fa-book: :fa-star: _Bott and Tu_, **Differential Forms in Algebraic Topology**
-	- A beautiful, wonderful book! Tons of geometric intuition, and has a very deep selection of topics.
-
-- :fa-book: :fa-star: _Griffiths and Morgan_, **Rational Homotopy Theory and Differential Forms**
-	- Mostly homotopy theory.
-
 - :fa-tv: _NJ Wildberger_, [Introduction to Algebraic Topology](https://www.youtube.com/watch?v=Ap2c1dPyIVo&list=PL6763F57A61FE6FE8)
 	- A good undergraduate-level series, just be aware that he expresses some extremely non-mainstream views in his other videos!
 
@@ -368,21 +339,14 @@
 - :fa-book: _Reid_, **Undergraduate Algebraic Geometry**
 	- Great introduction to the field, weaves in a lot of history and classical results.
 
-- :fa-book: _Hartshone_,  **Algebraic Geometry**
-	- Seems to be regarded as a pretty standard reference.
 
 ## Differential Geometry / Manifolds
 
 - :fa-book: _Spivak_, **Calculus on Manifolds**
 	- A good follow-up to Spivak's Calculus book, the exposition is at an undergraduate level. Worth checking out if you like his style.
 
-- :fa-book: :fa-star: _Lee_, **Introduction to Smooth Manifolds**
-	- The gold standard.
-
 - :fa-tv: :fa-star: _Frederic Schuller_, [International Winter School on Gravity and Light 2015](https://www.youtube.com/watch?v=7G4SqIboeig)
 	- This guy is just phenomenal!
-
-- :fa-book: _Manfredo do Carmo_, **Riemannian Geometry**
 
 ---
 
