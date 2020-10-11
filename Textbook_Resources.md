@@ -12,17 +12,25 @@
 
 ## Complex Analysis
 
-### Stein and Shakarchi, 
 
 ### Taylor, Complex Analysis
 
 ### Simon, Complex Analysis
 
+### Stein and Shakarchi, Complex Analysis
+
+### Lars Ahlfors, Complex Analysis
+
+
 ## Real Analysis
+
+### Stein and Shakarchi, Real Analysis: Measure Theory, Integration, and Hilbert Spaces
 
 ### Gerald B. Folland, Real Analysis: Modern Techniques and Applications
 
 - Links to some [homeworks and solutions at UCSD](http://www.math.ucsd.edu/~bli/teaching/math240Cs20/)
+
+### Walter Rudin, Real and Complex Analysis
 
 
 # Algebra
@@ -168,6 +176,8 @@ Standard reference.
 ### Frank Warner, Foundations of Differentiable Manifolds and Lie Groups (?)
 
 ### Guillemin, Stable Mappings and Their Singularities
+
+### Guillemin and Pollack, Differential Topology
 
 
 ## Complex Geometry
