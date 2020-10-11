@@ -938,3 +938,4 @@ Schur
 HWC
 parabolics
 bidegree
+encyclopaedic

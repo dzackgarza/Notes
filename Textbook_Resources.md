@@ -3,6 +3,16 @@
 
 ## Dummit and Foote, Abstract Algebra
 
+- Standard reference, encyclopaedic!
+
+## Hungerford, Algebra
+
+## Isaacs, Algebra
+
+# Commutative Algebra
+
+##  Atiyah and MacDonald, Introduction to Commutative Algebra
+
 # Algebraic Topology
 
 ## Hatcher, Algebraic Topology
