@@ -184,6 +184,12 @@ Standard reference.
 
 ### Massey, A Basic Course in Algebraic Topology
 
+## Homotopy Theory
+
+### Dwyer & Spalinski, Homotopy Theories and Model Categories
+
+- Notes [here](http://www.math.jhu.edu/~eriehl/616/DwyerSpalinski.pdf)
+
 ## Manifolds
 
 ### Milnor, Topology from the differentiable viewpoint.
