@@ -67,7 +67,6 @@
 </details>
 
 
-
 ## Linear Algebra
 
 - :fa-book: :fa-star: _Axler_, **Linear Algebra Done Right**
@@ -89,7 +88,6 @@
   - Many computations in linear algebra boil down to computing the nullspace of a matrix, and this is an excellent shortcut that lets your write the basis of the nullspace of a matrix almost directly from its reduced row-echelon form.
 
 
-
 ## Ordinary Differential Equations
 
 - :fa-book: :fa-star: _Goode and Annin_, **Differential Equations and Linear Algebra**
@@ -97,7 +95,6 @@
 
 - :fa-tv: [MIT OCW: Differential Equations](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/index.htm)
 	- Very Physics-motivated approach, for better or worse.
-
 
 
 ## Discrete Mathematics
@@ -113,7 +110,6 @@
 
 - :fa-link: :fa-star: [UC Berkeley's EECS 70 Course](http://www.eecs70.org/)
 	- A wonderful lower-division course for which excellent notes have been posted for a number of years.
-
 
 
 <details markdown="1">
@@ -142,7 +138,6 @@
 
 <details markdown="1">
 
-
 **Content**
 - The prime counting function
 - Modular arithmetic, solving equations in rings, multiplicative functions (like the totient)
@@ -152,7 +147,6 @@
 **Notes**
 - This is a subject that pairs very well with introductory abstract algebra (groups and rings).
 </details>
-
 
 ## Abstract Algebra
 
@@ -181,7 +175,6 @@
 
 - :fa-tv: :fa-star: _Matthew Salomone_, [Algebra Lectures](https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y)
 	- A portion of his Algebra series, the exposition is fantastic because the series follows a cohesive narrative that introduces some of the major results and benefits of Galois theory early on. Highly recommended.
-
 
 ## Real Analysis
 
@@ -261,24 +254,6 @@
 
 ---
 
-## Graduate Real Analysis
-
-- :fa-book: _Rudin_, **Principles of Mathematical Analysis**
-	- A contentious standard for real analysis. Chapter 11 has a light overview of measure theory, and the Lebesgue integral.
-
-
-- :fa-book: _Schilling_, **Measures, Integrals, and Martingales**
-	- This book is not as detailed, as it is geared towards rigorous probability theory, but covers material faster and provides a bit more intuition than Rudin. The first few chapters are a good supplement to a full course.
-
-
-<details markdown="1">
-**Content**
-- Measure theory, sigma algebras
-- Monotone and dominated convergence theorems
-- $L^p$ spaces, Holder's inequality
-</details>
-
-
 ## Algebra
 
 - :fa-book: _Dummit and Foote_, **Abstract Algebra**
@@ -304,7 +279,6 @@
 
 - :fa-tv: _NJ Wildberger_, [Introduction to Algebraic Topology](https://www.youtube.com/watch?v=Ap2c1dPyIVo&list=PL6763F57A61FE6FE8)
 	- A good undergraduate-level series, just be aware that he expresses some extremely non-mainstream views in his other videos!
-
 
 
 ## Algebraic Geometry
