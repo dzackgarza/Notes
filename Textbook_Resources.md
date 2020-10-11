@@ -35,6 +35,9 @@
 
 ### Walter Rudin, Real and Complex Analysis
 
+## Dynamics
+
+### Milnor, Dynamics in One Complex Variable
 
 # Algebra
 
@@ -209,3 +212,9 @@ Standard reference.
 # Unsorted Recommendations
 
 - All sorted!
+
+# Logic
+
+## Model Theory
+
+### Tent and Ziegler, A Course in Model Theory
