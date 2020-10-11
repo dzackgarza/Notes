@@ -42,8 +42,10 @@
 - Gaitsgory, [Course Notes on Geometric Representation Theory](http://people.math.harvard.edu/~gaitsgde/267y/index.html)
 
 
-## Kirillov, Lie Groups and Lie Algebras
-  - Rec by Daniel Litt
+### Kirillov, Lie Groups and Lie Algebras
+
+- Recommended by Daniel Litt
+
 # Algebraic Geometry
 
 - Gathmann, [Notes](https://www.mathematik.uni-kl.de/~gathmann/de/alggeom.php)
@@ -71,6 +73,8 @@ Standard.
 ## J. Milne, Class Field Theory
 
 - Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_CFT.pdf)
+
+## Silverman, The Arithmetic of Elliptic Curves
 
 # Topology
 
@@ -115,6 +119,8 @@ Standard reference.
 - Notes: [Lectures on Symplectic Geometry](https://people.math.ethz.ch/~acannas/Papers/lsg.pdf)
   - Skip chapters 4, 5, 25, 26, 30
 
+### Milnor, Morse Theory
+
 ## Complex Geometry
 
 ### Hodge Theory and Complex Algebraic Geometry, Volumes I and II, by Claire Voisin
@@ -126,10 +132,6 @@ Standard reference.
 
 
 - Eliashberg, From Stein to Weinstein and Back
-- Milnor, Morse Theory
-- Silverman, The Arithmetic of Elliptic Curves
-- Hartshorne
-- Weil, Basic Number Theory
 - Arnold, Methods in Classical Mechanics
 - Pollack, Differential Topology
 - Milnor, Lectures on h-Cobordism
