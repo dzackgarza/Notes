@@ -75,12 +75,13 @@ Standard reference.
 
 Standard.
 
-
 # Number Theory
 
 ## Cassels and Fröhlich, Algebraic Number Theory
 
 ## J. Neukirch, Algebraic Number Theory
+
+- Large number of exercises [here](http://www.math.ucsd.edu/~csorense/teaching/math204B_W20/204B_W20_EXC.pdf)
 
 ## F. Lorenz, Algebra Volume II: Fields with structure, algebras and advanced topics
 
@@ -93,3 +94,19 @@ Standard.
 ## J. Milne, Class Field Theory
 
 - Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_CFT.pdf)
+
+# Analysis
+
+
+# Topology
+
+## Manifolds
+
+## Complex Geometry
+
+### Hodge Theory and Complex Algebraic Geometry, Volumes I and II, by Claire Voisin
+
+### Complex Geometry An Introduction, by Daniel Huybrechts
+
+### Principles of Algebraic Geometry, by Phillip Griffiths and Joseph Harris
+
