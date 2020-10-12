@@ -953,3 +953,6 @@ Spivak's
 Wildberger
 über
 Stieltjes
+Goode
+Annin
+Strang
