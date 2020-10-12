@@ -961,3 +961,7 @@ Spivak
 Apostol
 Google's
 Pagerank
+Beachy
+Awodey
+Bartosz
+Milewski
