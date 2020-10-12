@@ -957,3 +957,7 @@ Goode
 Annin
 Strang
 Schey
+Spivak
+Apostol
+Google's
+Pagerank
