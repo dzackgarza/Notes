@@ -2498,7 +2498,7 @@ There is an equivalence
 \[  
 \mathrm{Poly}(G) \cong \bigoplus_{j\geq 0} \Mod(S(n, d))
 ,\]
-where this Schur algebra $S(n, d)$ is given by $\End_{\Sigma_d}(V^{\tensor d})$ where $\Sigma_d$ is the symmetric group of $d$ letters.
+where this Schur algebra $S(n, d)$ is given by $\endo_{\Sigma_d}(V^{\tensor d})$ where $\Sigma_d$ is the symmetric group of $d$ letters.
 
 The theorem is that $\Mod(S(n, d))$ is a QHA, and thus a highest weight category.
 :::
