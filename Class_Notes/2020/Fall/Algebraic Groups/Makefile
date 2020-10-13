@@ -3,6 +3,12 @@ FILENAME="Algebraic_Groups"
 
 .SILENT:
 
+combine:
+	cat ./sections/*.md > $(FILENAME).md
+
+pandoc:
+	pandoc $(FILENAME).md -f markdown --lua-filter /home/zack/dotfiles/bin/warning-div.lua -r markdown+fenced_divs+tex_math_single_backslash+citations --template=/home/zack/Notes/Latex/pandoc_template.tex --pdf-engine=pdflatex -o $(FILENAME).pdf
+
 compile:
 	cat ./sections/*.md | pandoc -f markdown --lua-filter /home/zack/dotfiles/bin/warning-div.lua -r markdown+fenced_divs+tex_math_single_backslash+citations --template=/home/zack/Notes/Latex/pandoc_template.tex --pdf-engine=pdflatex -o $(FILENAME).pdf
 	#latex_preview -f $(FILENAME).md -j -z
