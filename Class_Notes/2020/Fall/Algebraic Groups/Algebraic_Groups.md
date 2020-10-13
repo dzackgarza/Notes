@@ -1993,6 +1993,7 @@ Let $M\in \Mod(P)$ with $P\supseteq B$.
 a. If $\dim M < \infty$ then $\dim H^n(P; M) < \infty$.
 
 b. If $H^j(P; M) \neq 0$ then there exists a weight $\lambda$ of $M$ such that $-\lambda \in \NN \Phi^+$ and $\height(-\lambda) \geq j$. 
+
 :::
 
 > Part (a) is proved in the book, we won't show it here.
@@ -2011,9 +2012,7 @@ $\hom_T(k, I_j\tensor M) \neq 0$.
 So there exists a weight $-\lambda$ of $I_j$ with $\height(-\lambda) \geq j$, and we know $\lambda$ is a weight of $M$ applying the previous lemma:
 namely we know that $\lambda$ is invariant under the torus action, so there is a weight $-\lambda$ such that $-\lambda + \lambda = 0$.
 :::
-
 \todo[inline]{? Why the last part?}
-
 
 :::{.theorem title="?"}
 Let $\lambda, \mu \in X(T)_+$, then
@@ -2205,6 +2204,7 @@ But we have $\Hom(N, V) =0$ and $\Ext^1(V(\mu), V) = 0$, which *squeezes* and fo
 
 Next time: state and prove a cohomological criterion (Donkin, Scott, proved independently) for a $G\dash$module to admit a good filtration.
 More about when tensor products of induced modules have good filtrations.
+
 # Friday, October 02
 
 Recall that *good filtration* is a chain $\ts{0} \subseteq V_1 \subseteq \cdots \subseteq V$ satisfying $V = \union V_i$ and $V_i/V_{i-1} \cong H^0(\lambda_i)$ for $\lambda_i$ some weight of $V$.
