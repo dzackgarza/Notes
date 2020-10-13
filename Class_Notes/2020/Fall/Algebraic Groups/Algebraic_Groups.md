@@ -1597,3 +1597,1516 @@ Given $L(\lambda)$ for $\lambda \in X(T)_+$, can we express $L(\lambda)$ in term
 **Answer**:
 Yes, can be formulated in terms of *Steinberg's twisted tensor product*.
 
+
+# Friday, September 25
+
+## Review and Proposition
+
+From last time: Steinberg's tensor product.
+
+Let $G$ be a reductive algebraic group scheme over $k$ with $\ch(k) > 0$.
+We have a Frobenius $F:G\to G$, we iterate to obtain $F^r$ and examine the Frobenius kernels $G_r\da \ker F^r$.
+
+If we have a representation $\rho: G\to \GL(M)$, we can "twist" by $F^r$ to obtain $\rho^{(r)}: G \to \GL(M^{(r)})$.
+We have
+
+<!--\begin{center}-->
+<!--\begin{tikzcd}-->
+<!--G \ar[r, "{F^r}"] \ar[rr, "{\rho^{(r)}}" & G\ar[r, "\rho"] & \GL(M)-->
+<!--\end{tikzcd}-->
+<!--\end{center}-->
+
+Here $M^{(r)}$ has the same underlying vector space as $M$, but a new module structure coming from $\rho^{(r)}$.
+Note that $G_r$ acts trivially on $M^{(r)}$.
+
+- $\ts{L(\lambda) \st \lambda \in X(T)_+}$ are the simple $G\dash$modules,
+- $\ts{L_r(\lambda) \st \lambda \in X_r(T)_+}$ are the simple $G_r\dash$modules,
+
+Note that $L(\lambda)\downarrow_{G_r}$ is semisimple, equal to $L_r(\lambda)$ for $\lambda \in X_r(T)$.
+
+> 1960's, Curtis and Steinberg.
+
+:::{.proposition title="?"}
+Let $\lambda \in X_r(T)$ and $\mu \in X(T)_+$.
+Then
+\[  
+L(\lambda + p^r \mu) \cong L(\lambda) \tensor L(\mu)^{(r)}
+.\]
+
+:::
+
+Recall that socle formula: letting $M$ be a $G\dash$module, we have an isomorphism of $G\dash$modules:
+\[ 
+\soc_{G_r} \cong \bigoplus_{\lambda \in X_r(T)} L(\lambda) \tensor \hom_{G_r}(L(\lambda), M)
+.\]
+
+
+## Proof
+
+:::{.proof}
+Let $M = L(\lambda + p^r \mu)$.
+Then from the socle formula, only one summand is nonzero, and thus $\hom_{G_r}(L(\lambda), M)$ must be simple.
+Then there exists a $\tilde \lambda \in X_r(T)$ and a $\tilde \mu \in X(T)_+$ such that
+\[  
+M = L(\tilde \lambda) \tensor L(\tilde\mu)^{(r)}
+.\]
+
+We now compare highest weights: 
+\[  
+\lambda + p^r \mu = \tilde \lambda + p^r \tilde \mu \implies \lambda = \tilde \lambda \qtext{and} \mu = \tilde \mu
+.\]
+
+
+:::
+
+:::{.theorem title="Steinberg"}
+Let $\lambda \in X(T)_+$, with a $p\dash$adic expansion
+\[  
+\lambda = \lambda_0 + \lambda_1 p + \cdots + \lambda_m p^m
+.\]
+where $\lambda_j \in X_1(T)$ for all $j$.
+Then
+\[  
+L(\lambda) = L(\lambda_0) \tensor \bigotimes_{j=1}^m L(\lambda_j)^{(j)}
+.\]
+:::
+
+:::{.corollary title="?"}
+In order to know $\dim L(\lambda)$ for $\lambda \in X(T)_+$, it is enough to know $\dim L_1(\mu)$ for $\mu \in X_1(T)$.
+Schematic:
+
+![Image](figures/image_2020-09-25-14-13-47.png)
+:::
+
+
+## Some History
+
+Recall that simplie $G_1\dash$modules correspond to simple $\Dist(G_1)\dash$modules, and $\Dist(G_1) \cong U(\lieg)$.
+
+- 1980: Lusztig proved conjecture: $\ch L(\lambda)$ for $\lambda \in X_1(T)$ is given by KL polynomials, shown for $p \geq 2(h-1)$.
+
+- Kato showed for $p> h$, where $h$ is the *Coxeter number* satisfying $h = \inner{\rho}{\alpha_i \dual} + 1$ where $\alpha_i\dual$ is the highest short root.
+
+- 1990's: A relation to representations of quantum groups $U_q$ and affine lie algebras $\hat \lieg$:
+\begin{center}
+\begin{tikzcd}
+\mod u(\lieg) & \ar[l] \mod U_q(\lieg) \ar[r, "\cong"] & \mod\hat\lieg
+\end{tikzcd}
+\end{center}
+The first map is due to Andersen-Jantzen-Soergel for $p\gg 0$ with no effective lower bounds, and the equivalence is due to Kazhdan-Lusztig, where the L conjecture holds for $\hat \lieg$.
+
+- 2000's: Fiebig showed the L conjecture holds for $p>N$ where $N$ is an effective (but large) lower bound.
+
+- 2013: Geordie Williamson shows L conjecture is false, with infinitely many counterexamples, and no lower bounds that are linear in $h$.
+
+> See Donkin's Tilting Module conjecture: expected that characters may come from $p\dash$KL polynomials instead.
+
+:::{.example}
+Let $G= \SL(2)$, so $\dim T =1$.
+Here the restricted region of weights is given by $X_!(T) = \ts{0,1,\cdots, p-1}$.
+Then $H^0(\lambda) = S^\lambda(V)$ for $\lambda \in X(T)_+ = \ZZ_{\geq 0}$ and $L(\lambda) \subseteq H^0(\lambda)$.
+
+:::{.theorem title="?"}
+\[  
+L(\lambda) =  H^0(\lambda) \qtext{for} \lambda \in X_1(T)
+.\]
+:::
+
+::: {.theorem title="?"}
+\[  
+\dim L(\lambda) = \lambda + 1 \qtext{for} \lambda \in X_1(T)
+.\]
+:::
+
+Take $p=3$.
+Then $\dim L(0) = 1$, $\dim L(1) = 2$ (the natural representation), and $\dim L(2) = 3$ (the adjoint representation).
+Then for $p=4$, we have to use the twisted tensor product formula.
+Taking the 3-adic expansion $4 = 1\cdot 3^0 + 1\cdot 3^1$, we have
+\[  
+L(4) = L(1) \tensor L(1)^{(1)}
+.\]
+
+Since $\dim L(1) = 2$, we get $\dim L(4) = 4$.
+
+Similarly, considering $7 = 1\cdot 3^0 + 2\cdot 3^1$, we get
+\[  
+L(7) \cong L(1) \tensor L(2)^{(1)}
+\]
+and so $\dim L(7) = 6$.
+
+Take $p=5$, then
+
+- $\dim L(0) = 1$
+- $\dim L(1) = 2$
+- $\dim L(2) = 3$
+- $\dim L(3) = 4$
+- $\dim L(4) = 5$
+
+What is $H^0(5)$? 
+We know $L(5)$ is a submodule, and we can write the character
+\[  
+\ch H^0(5) = e^5 + e^3 + e^1 + e^{-1} + e^{-3} + e^{-5}
+.\]
+
+We know $\ch(L(1)) = e^1 + e^{-1}$ and $L(5) = L(1)^{(1)}$, so we can write $\ch L() = e^{5} + e^{-5}$.
+By quotienting, we have $\ch H^0(5) - \ch L(5) = e^3 + e^1 + e^{-1} +e^{-3} = \ch L(3)$.
+Thus the composition factors of $H^0(5)$ are $L(5)$ and $L(3)$.
+
+These correspond to an action of the affine Weyl group:
+
+![Image](figures/image_2020-09-25-14-45-28.png)
+
+
+There is a **strong linkage principle** which describes the possible composition factors of $H^0(\lambda)$.
+
+We can thus find the socle/head structure:
+
+![Image](figures/image_2020-09-25-14-47-44.png)
+
+Thus $\ext_G^1(L(5), L(3)) \cong k$.
+:::
+
+> Note that in other types, we don't know the characters of the irreducibles in the restricted region, so we don't necessarily know the composition factors.
+
+![Image](figures/image_2020-09-25-14-51-40.png)
+
+
+
+
+
+# Monday, September 28
+
+## Kempf's Theorem
+
+Next topic: Kempf's Vanishing Theorem.
+Proof in Jantzen's book involving ampleness for sheaves.
+
+Setup:
+
+We have 
+
+\begin{center}
+\begin{tikzcd}
+G & \text{a reductive algebraic group over } k = \bar k \\
+B\ar[u, "\subseteq"] & \text{the Borel subgroup} \\
+T\ar[u, "\subseteq"] & \text{its maximal torus}
+\end{tikzcd}
+\end{center}
+along with the weights $X(T)$.
+
+We can consider derived functors of induction, yielding $R^n \ind_B^G \lambda = \mathcal{H}^n(G/B, \mathcal{L}(\lambda)) \da H^n(\lambda)$ where $\mathcal{L}(\lambda)$ is a line bundle and $G/B$ is the flag variety.
+
+Recall that 
+
+- $H^0(\lambda) = \ind_B^G(\lambda)$,
+- $\lambda \not\in X(T)_+ \implies H^0(\lambda) = 0$
+- $\lambda \in X(T)_+ \implies L(\lambda) = \soc_G H^0(\lambda) \neq 0$.
+
+:::{.theorem title="Kempf"}
+If $\lambda \in X(T)_+$ a dominant weight, then $H^n(\lambda) = 0$ for $n> 0$.
+:::
+
+:::{.remark}
+In $\ch(k) = 0$, $H^n(\lambda)$ is known by the Bott-Borel-Weil theorem.
+In positive characteristic, this is not know: the characters $\ch H^n (\lambda)$ is known, and it's not even known if or when they vanish.
+Wide open problem!
+
+> Could be a nice answer when $p>h$ the Coxeter number.
+:::
+
+## Good Filtrations and Weyl Filtrations
+
+We define two classes of distinguished modules for $\lambda \in X(T)_+$:
+
+- $\nabla(\lambda) \da H^0(\lambda) = \ind_B^G \lambda$ the costandard/induced modules.
+- $\Delta(\lambda) = V(\lambda) \da H^0(-w_0 \lambda) = \ind_B^G \lambda$ the standard/Weyl modules
+  - Here $w_0$ is the longest element in the Weyl group
+
+We have
+\[  
+L(\lambda) &\injects \nabla(\lambda)
+\Delta(\lambda) &\surjects L(\lambda)
+.\]
+
+We define the category $\text{Rat}\dash G$ of rational $G\dash$modules.
+This is a *highest weight category* (as is e.g. Category $\OO$).
+
+:::{.definition title="Good Filtrations"}
+An (possibly infinite) ascending chain of $G\dash$modules
+\[  
+0 \leq V_0 \subseteq V_1 \subseteq V_2 \subseteq \cdots \subseteq V
+\]
+is a **good filtration** of $V$ iff
+
+1. $V = \union_{i\geq 0} V_i$
+
+2. $V_i/V_{i-1} \cong H^0(\lambda_i)$ for some $\lambda_i \in X(T)_+$.
+
+> In characteristic zero, the $H^0$ are irreducible and this recovers a composition series.
+> Since we don't have semisimplicity in this category, this is the next best thing.
+
+:::
+
+:::{.definition title="Weyl Filtration"}
+With the same conditions of a good filtration, a chain is a **Weyl filtration** on $V$ iff
+
+1. $V = \union_{i\geq 0} V_i$
+
+2. $V_i/V_{i-1} \cong V(\lambda_i)$ for some $\lambda_i \in X(T)_+$.
+
+> I.e. the different is now that the quotients are standard modules.
+:::
+
+:::{.definition title="Tilting Modules"}
+$V$ is a **tilting module** iff $V$ has both a good filtration and a Weyl filtration.
+:::
+
+:::{.theorem title="Ringel, 1990s"}
+Let $\lambda \in X(T)_+$ be a dominant weight.
+Then there is a unique indecomposable highest weight tilting module $T(\lambda)$ with highest weight $\lambda$.
+:::
+
+:::{.example}
+We have the following situation for type $A_2$:
+
+![Image](figures/image_2020-09-28-14-18-03.png)
+
+And thus a decomposition:
+
+![Image](figures/image_2020-09-28-14-18-46.png)
+
+:::
+
+
+The picture to keep in mind is the following: 4 types of modules, all indexed by dominant weights:
+<!--\begin{center}-->
+<!--\begin{tikzcd}-->
+<!--& H^0(\lambda) & \\-->
+<!--L(\lambda) \ar[ur, hookrightarrow] & & T(\lambda)\arrow[ul, twoheadrightarrow]\\-->
+<!--& V(\lambda) \arrow[ul, twoheadrightarrow] \ar[ur, hookrightarrow]-->
+<!--\end{tikzcd}-->
+<!--\end{center}-->
+
+## Cohomological Criteria for Good Filtrations
+
+We'll take cohomology in the following way: let $G$ be an algebraic group scheme, and define
+\[  
+H^n(G, M) \da 
+\mathrm{Ext} G^n(k, M)
+\]
+
+where to compute $\ext_G^n(M, N)$ we take an injective resolution $N \injects I_*$, apply $\hom_G(M, \wait)$, and take kernels mod images.
+
+Letting $\lambda \in \ZZ\Phi$ be integral, so $\lambda_{\alpha \in \Delta} = \sum n_\alpha \alpha$, define the **height** 
+\[  
+\height(\lambda) = \sum_{\alpha\in\Delta} n_\alpha
+.\]
+
+:::{.lemma title="?"}
+There exists an injective resolution of $B\dash$modules
+\[  
+0\to k\to I_0 \to I_1 \to \cdots
+\]
+where
+
+1. $I_0$ is the injective hull of $k$,
+2. All weights of $I_j$, say $\mu$ satisfy $\height(\mu) \geq j$.
+:::
+\[  
+k[u] \text{ an injective $B\dash$module} \\
+k\injects \ind_T^B k \da I_0 = k[u]
+.\]
+
+We thus get a diagram of the form
+
+![Image](figures/image_2020-09-28-14-32-38.png)
+
+:::{.proposition title="?"}
+Let $H\leq G$, then there exists a spectral sequence 
+\[  
+E^{i, j}_2 = \Ext_G^i(N, R^j \ind_H^G M) \implies \Ext_H^{i+j}(N, M)
+\]
+for $N\in \Mod(G), M\in \Mod(H)$.
+:::
+
+:::{.example}
+Let $H=B$ and take $G=G$ itself, and let $N = k$ the trivial module and $M\in \Mod(G)$ be any rational $G\dash$module.
+We have
+\[  
+E_2^{i, j} = \Ext^{i}_B(k, R^j \ind_B^G M) \implies \ext^{i+j}_B(k, M)
+.\]
+
+Observations:
+
+0. $R^0 \ind_B^G k = \ind_B^G k = k$.
+
+1. The tensor identity works here, i.e. $R^j \ind_B^G M = \qty{R^j \ind_B^G k} \tensor M$.
+
+2. $R^j \ind_B^G k = 0$ for $j> 0$ since we have a dominant weight.
+
+
+The spectral sequence thus collapses on $E_2$:
+
+![Image](figures/image_2020-09-28-14-41-33.png)
+
+Thus
+\[  
+E_2^{i, 0} = \ext^i_B(k, M) = H^i(B, M)
+.\]
+:::
+
+:::{.corollary title="?"}
+Let $G \supseteq P \supseteq B$ where $P$ is a *parabolic* subalgebra and let $M$ be a rational $G\dash$module.
+Then $H^n(G, M) = H^n(P, M) = H^n(B, M)$ for all $n \geq 0$.
+:::
+
+:::{.example}
+Fix a Dynkin diagram and take a subset $J\subseteq \Delta$.
+
+![i](figures/image_2020-09-28-14-47-01.png)
+
+Then $L_j\semidirect U_j = P_J = P$, and we have a decomposition like
+
+![Image](figures/image_2020-09-28-15-13-36.png)
+
+:::
+
+:::{.proposition title="?"}
+Let $M\in \Mod(P)$ with $P\supseteq B$.
+
+a. If $\dim M < \infty$ then $\dim H^n(P, M) < \infty$ for all $n$.
+
+b. If $H^j(P, M) \neq 0$ then there exists $\lambda$ a weight of $M$ with $-\lambda \in \NN \Phi^+$ and $\height(-\lambda) \geq j$.
+:::
+
+
+
+# Wednesday, September 30
+
+Recall that we had a dominant weight $\lambda \in X(T)_+$ with
+
+\begin{center}
+\begin{tikzcd}
+& V(\lambda)\ar[dl, "\surjects"]\ar[dr, "\injects"] & \\
+L(\lambda)\ar[dr, "\injects"] & &T(\lambda)\ar[dl, "\surjects"] \\
+& H^0(\lambda) &
+\end{tikzcd}
+\end{center}
+
+where we have a module with both a *good* and a *Weyl* filtration.
+
+If $B\subseteq P \subseteq G$ with $P$ parabolic and $M\in \Mod(G)$, we have a "transfer theorem": maps
+\[  
+H^n(G; M) \mapsvia{\res} H^n(P; M) \mapsvia{\res} H^n(B; M)
+\]
+induced by restrictions which are isomorphisms.
+
+:::{.proposition title="?"}
+Let $M\in \Mod(P)$ with $P\supseteq B$.
+
+a. If $\dim M < \infty$ then $\dim H^n(P; M) < \infty$.
+
+b. If $H^j(P; M) \neq 0$ then there exists a weight $\lambda$ of $M$ such that $-\lambda \in \NN \Phi^+$ and $\height(-\lambda) \geq j$. 
+
+:::
+
+> Part (a) is proved in the book, we won't show it here.
+
+:::{.proof title="of part b"}
+Suppose $H^j(P; M) \neq 0$, then we have an injective resolution $I_*$ for $k$.
+Tensoring with $M$ yields an injective resolution for $M$,
+\[  
+0 \to M \to I_0\tensor M \to I_1 \tensor M \to \cdots
+.\]
+Since $H^j(B; M) \neq 0$, we know that the cocycles 
+$\hom_B(k, I_j\tensor M) \neq 0$
+and thus
+$\hom_T(k, I_j\tensor M) \neq 0$.
+
+So there exists a weight $-\lambda$ of $I_j$ with $\height(-\lambda) \geq j$, and we know $\lambda$ is a weight of $M$ applying the previous lemma:
+namely we know that $\lambda$ is invariant under the torus action, so there is a weight $-\lambda$ such that $-\lambda + \lambda = 0$.
+:::
+\todo[inline]{? Why the last part?}
+
+:::{.theorem title="?"}
+Let $\lambda, \mu \in X(T)_+$, then
+
+1. The cohomology in the tensor product is zero, except in one special case:
+\[  
+H^i(G, H^0(\lambda) \tensor H^0(\mu))
+=
+\begin{cases}
+0 & i>0 \\
+k & i=0, \lambda = -w_0\mu
+\end{cases}
+.\]
+
+2. There are only extensions in one specific situation:
+\[  
+\Ext_G^i(V(\mu), H^0(\lambda)) = 
+\begin{cases}
+0 & i> 0 \\
+k & i=0, \lambda = \mu
+\end{cases}
+.\]
+
+:::
+
+The following is an important calculation!
+
+:::{.proof}
+Step 1: 
+We'll use Frobenius reciprocity twice.
+We can write the term of interest in two ways:
+\[  
+H^i(G, H^0(\lambda) \tensor H^0(\mu)) =
+H^i(B, H^0(\lambda) \tensor \mu)
+\\ \\
+H^i(G, H^0(\lambda) \tensor H^0(\mu)) =
+H^i(G, \lambda \tensor H^0(\mu))
+.\]
+
+Thus there exists a weight $\nu$ of $H^0(\lambda)$ and $\nu'$ of $H^0(\mu)$ such that
+\[  
+\mu + \nu, \lambda + \nu' \in - \NN \Phi^+ \quad \height(\mu+\nu), \height(\lambda + \nu') \leq -i
+.\]
+
+Since $w_0\lambda$ (resp. $w_0\mu$) is the lowest of weight of $H_0(\lambda)$ (resp. $H_0(\mu)$), it follows that 
+\[  
+\mu + w_0 \lambda, \lambda + w_0\mu \in -\NN \Phi^+
+.\]
+
+Since $w_0^2 = \id$, we can write $\lambda + w_0\mu = w_0(\mu + w_0 \lambda)$.
+We know that the LHS is in $-\NN \Phi^+$, and the term in parentheses on the RHS is also in $-\NN \Phi^+$.
+Applying $w_0$ interchanges $\Phi^\pm$, so the RHS is in $\NN \Phi^+$.
+But $\NN \Phi^+ \intersect -\NN\Phi^+ = \ts 0$, forcing $\lambda + w_0 \mu = 0$ and thus $\lambda = -w_0 \mu$.
+
+Since the height of zero is zero, we have
+\[  
+0 = \height(\lambda + w_0 \mu)
+\leq \height(\lambda + \nu') \leq -i \implies i=0
+.\]
+This shows cohomological vanishing for $i>0$, the first case in the theorem statement.
+
+For the remaining case, we can check that $H^0(\lambda)^{U} = H^0(\lambda)_{w_0 \lambda}$,
+and so
+\[  
+\qty{H^0(\lambda) \tensor -w_0 \lambda}^{U^+} = k
+.\]
+This shows that $H^0(B; H^0(\lambda) \tensor -w_0\lambda ) \cong k$, since 
+\[  
+\qty{H^0(\lambda) \tensor -w_0 \lambda}^B = \qty{ \qty{H^0(\lambda) \tensor -w_0 \lambda }^U }^T
+.\]
+:::
+
+
+:::{.proposition title="?"}
+Let $\lambda, \mu \in X(T)_+$ with $\lambda \not> \mu$.
+Then we can calculate the $i$th ext by computing the $i-1$st: for $i>0$,
+\[  
+\Ext^i_G(L(\lambda), L(\mu))
+\cong
+\Ext^{i-1}_G(L(\lambda), H^0(\mu) / \soc_G(H^0(\mu)))
+.\]
+:::
+
+:::{.remark}
+We showed this in a special case.
+Let $i=1$ with $\lambda \not> \mu$, then
+\[  
+\Ext_G^1(L(\lambda), L(\mu)) \cong
+\Hom_G(L(\lambda), H^0(\mu) / \soc_G(H^0(\mu)))
+.\]
+Thus it suffices to understand only the previous layer:
+
+![Image](figures/image_2020-09-30-14-25-09.png)
+
+:::
+
+:::{.proof}
+Consider the SES
+\[  
+0 \to L(\mu) \to H^0(\mu) \to H^0(\mu) / \soc_G(H^0(\mu)) \to 0
+\]
+which yields a LES in homology by applying $\hom_G(L(\lambda), \wait)$.
+To obtain the statement, it suffices to show $\Ext_G^1(L(\lambda), H^0(\mu)) = 0$ for $i>0$, since this is the middle column in the LES.
+
+We can write
+\[  
+\Ext_G^i(L(\lambda), H^0(\mu))
+=
+H^i(G, L(\lambda)\dual \tensor H^0(\mu)) \quad\text{taking duals} \\
+=
+H^i(B, L(\lambda)\dual \tensor \mu) \quad\text{by Frobenius reciprocity}
+,\]
+so we can obtain a weight $\sigma$ of $L(\lambda)\dual \tensor \mu$ such that $\sigma \in - \NN \Phi^+$ and $\height(-\sigma) \geq i > 0$ by applying the previous lemma.
+So $\sigma = \nu + \mu$ for $\nu$ some weight of $L(\lambda)\dual$.
+
+By rearranging, we find that $\sigma \in \NN \Phi^-$.
+Letting $\lambda$ be the lowest weight of $L(\lambda)\dual$, we find $\sigma \geq -\lambda + \mu$ (since this can only lower the weight).
+
+But then $-\lambda + \mu \in \NN\Phi^-$, implying $-\mu + \lambda \in \NN \Phi^-$, and the LHS here is equal to $\lambda - \mu$.
+This precisely says $\lambda > \mu$, which contradicts the assumption that $\lambda$ did not dominate $\mu$.
+It may also be the case that $\lambda = \mu$, which is handled separately.
+:::
+
+We now want criteria for when we can find the following types of lifts:
+\begin{center}
+\begin{tikzcd}
+ & V \\
+L(\lambda) \ar[ur, "\injects"] \ar[r, "\injects"] & H^0(\lambda) \ar[u, dotted, "\injects"]
+\end{tikzcd}
+\end{center}
+
+:::{.lemma title="Important!"}
+Let $V$ be a $G\dash$module with $0\neq \hom_G(L(\lambda), V)$.
+If
+
+- $\hom(L(\mu), V) = 0$,
+
+- $\Ext_G^1(V(\mu), V) = 0$ for all $\mu \in X(T)_+$ with $\mu < \lambda$,
+
+then $V$ contains a submodule isomorphic to $H^0(\lambda)$ and such a lift/extension exists.
+:::
+
+:::{.remark}
+The ext criterion will be the most important.
+The idea is to quotient and continue applying it.
+:::
+
+:::{.proof}
+Consider the SES
+\[  
+0 \to L(\lambda) \injects V \to V/L(\lambda) \to 0
+\]
+as well as
+\[  
+0 \to L(\lambda) \to H^0(\lambda) \to H^0(\lambda)/L(\lambda) \to 0
+.\]
+
+Now want to applying the LES in cohomology by applying $\hom_G(\wait, V)$, we get a LES of homs over $G$:
+\[  
+0 &\to \Hom(H^0(\lambda)/L(\lambda), V) \to
+\Hom(H^0(\lambda) , V) \to
+\Hom(L(\lambda), V)  \\
+&\to \Ext^1(H^0(\lambda)/L(\lambda), V) \to \cdots
+.\]
+Thus it suffices to show this $\Ext^1$ is zero.
+
+Strategy: show all of the composition factors of $H^0(\lambda)/L(\lambda)$ are zero
+These are all of the form $L(\mu)$ for $\mu < \lambda$, so it now suffices to just show that $\Ext_G^1(L(\mu), V) = 0$ when $\mu < \lambda$.
+
+Observe that we have
+\[  
+0 \to N \to V(\mu) \to L(\mu) \to 0
+\]
+where $N$ are $L(\sigma)$ composition factors for $\sigma < \mu$.
+So apply $\hom(\wait, V)$:
+\[  
+0 
+&\to
+\Hom(L(\mu), V) \to
+\Hom(V(\mu), V) \to
+\Hom(N, V) \\
+&\to
+\Ext^1(L(\mu), V) \to
+\Ext^1(V(\mu), V) \to \cdots
+.\]
+
+But we have $\Hom(N, V) =0$ and $\Ext^1(V(\mu), V) = 0$, which *squeezes* and forces $\Ext^1(L(\mu), V) = 0$.
+:::
+
+Next time: state and prove a cohomological criterion (Donkin, Scott, proved independently) for a $G\dash$module to admit a good filtration.
+More about when tensor products of induced modules have good filtrations.
+
+# Friday, October 02
+
+Recall that *good filtration* is a chain $\ts{0} \subseteq V_1 \subseteq \cdots \subseteq V$ satisfying $V = \union V_i$ and $V_i/V_{i-1} \cong H^0(\lambda_i)$ for $\lambda_i$ some weight of $V$.
+
+:::{.lemma title="?"}
+Let $V$ be a $G\dash$module and $\lambda \in X(T)_+$ with $\hom_G(L(\lambda), V)$.
+If $\hom_G(L(\mu), V) = 0$ for any $\mu < \lambda$ and $\Ext_G^1(V(\mu), V) = 0$ for *all* $\mu \in X(T)_+$,
+then $V$ contains a submodule isomorphic to $H^0(\lambda)$.
+:::
+
+That is, we have a lift of the following form:
+\begin{center}
+\begin{tikzcd}
+L(\lambda) \ar[d, hook] \ar[r, hook] & V \\
+H^0(\lambda) \ar[ru, hook, dotted, "\exists"]
+\end{tikzcd}
+\end{center}
+
+:::{.theorem title="Cohomological Condition for Good Filtrations"}
+Let $V$ be a $G\dash$module.
+
+1. If $V$ admits a good filtration, then the number of factors isomorphic to $H^0(\lambda)$, denoted $[V: H^0(\lambda)]$, is equal to $\dim \hom_G(V(\lambda), V)$.
+
+> Analog of Jordan-Holder.
+> Note that $H^0(\lambda)$ may not by irreducible, but changing the filtration can not change the number of composition factors.
+
+2. Suppose $\hom_G(V(\lambda), V)<\infty$, then TFAE:
+
+  - $V$ admits a good filtration.
+  - $\Ext^i_G(V(\lambda), V) = 0$ for all $\lambda \in X(T)_+$ and all $i>0$.
+  - $\Ext^1_G(V(\lambda), V) = 0$ for all $\lambda \in X(T)_+$.
+
+> Much like measuring projectivity: can check all exts, or just the first.
+:::
+
+:::{.proof title="Part a"}
+Suppose $V$ has a good filtration.
+Idea: induct on the filtration.
+
+Suppose $V = H^0(\lambda_1)$, then
+\[  
+[V: H^0(\mu) ] = 
+\begin{cases}
+0 & \mu \neq \lambda_1 \\
+1 & \mu = \lambda_1
+\end{cases}
+= \dim \hom_G(V(\lambda_1), V)
+,\]
+since we know the dimensions of these hom spaces from a previous result.
+
+Suppose now that we have
+\[  
+0 \to H^0(\mu_1) \to V H^0(\mu_2) \to 0
+.\]
+Applying $F \da \hom_G(V(\lambda), \wait)$, we find that $\ext^1_G$ vanishes.
+So this leads a SES, and the dimensions are thus additive.
+The result follows since $F$ is additive.
+:::
+
+:::{.proof title="Part b"}
+$1\implies 2$:
+Use the fact that $\Ext^i_G(V(\lambda), H^0(\mu)) = 0$ for all $i>0$ and all $\mu$.
+
+$2\implies 3$:
+Clear!
+
+$3\implies 1$:
+Choose a total ordering of weights $\lambda_0, \lambda_1, \cdots \in X(T)$ such that if $\lambda_i < \lambda_j$ then $i<j$.
+Since $V\neq 0$, there exists a dominant weight $\lambda \in X(T)_+$ such that $\hom_G(V(\lambda), V) \neq 0$, so choose $i$ minimally in this order to produce such a $\lambda_i$.
+Idea: use this to start a filtration.
+
+Then $\hom(L(\lambda_i), V) \neq 0$, and we have
+\[  
+V(\lambda_i) \surjects L(\lambda_i) \injects V
+.\]
+
+We know that 
+\[  
+\hom_G(V(\mu), V) = 0 \quad \forall \mu < \lambda_i \\
+\hom_G(L(\mu), V) = 0 \quad \forall \mu < \lambda_i \\
+\Ext_G^1(L(\mu), V) = 0 \quad \forall \mu \in X(T)_+ \text{ by assumption}
+.\]
+
+So the following map must be an injection, since there is no socle:
+\begin{center}
+\begin{tikzcd}
+          & L(\lambda_i) \ar[r, hook] \ar[d, hook] & V \\
+0 \ar[r]  & H^0(\lambda_i) \ar[ur, hook] &
+\end{tikzcd}
+\end{center}
+
+Set $V_1 = H^0(\lambda_i)$, so $V_1 \subseteq V$.
+We then have a SES
+\[  
+0 \to V_1 \to V \to V/V_1 \to 0 
+.\]
+
+Applying $\hom(V(\lambda), \wait)$ we obtain
+
+![Cancellation in LES](figures/image_2020-10-02-14-26-17.png)
+
+Now iterate this process to obtain a chain $V_1 \subseteq V_2 \subseteq \cdots \subseteq V$, and set $V' \da \union_{i>0} V_i$.
+Then $\dim \hom_G(V(\lambda), V') = \dim \hom_G( V(\lambda), V )$ since $\dim \hom_G(V(\lambda), V) < \infty$.
+But then taking the SES
+\[  
+0\to V' \to V \to V/V' \to 0
+\]
+and applying $\Hom(V(\lambda), \wait)$, we have $\Hom(V(\lambda), V/V') = 0$ and we get an isomorphism of homs.
+But then $\hom(V(\lambda), V/V') = 0$ for all $\lambda \in X(T)_+$, forcing $V/V'=0$ and $V=V'$.
+:::
+
+:::{.corollary title="?"}
+Let $0\to V_1 \to V \to V_2 \to 0$ be a SES of $G\dash$modules with $\dim \hom_G(V(\lambda), V_2) < \infty$ for all $\lambda \in  X(T)_+$.
+If $V_1, V$ have good filtrations, then $V_2$ also has a good filtration.
+:::
+
+Note: this is likely difficult to prove without cohomology!
+But here we can apply the ext criterion.
+
+:::{.proof}
+Let $\lambda \in X(T)_+$, then
+
+![Image](figures/image_2020-10-02-14-34-18.png)
+
+:::
+
+For $\lambda \in X(T)_+$, let $I(\lambda)$ be the injective hull of $L(\lambda)$, so we have
+\[  
+0 \to L(\lambda) \injects I(\lambda)
+.\]
+
+
+:::{.theorem title="?"}
+Let $\lambda \in X(T)_+$ and $I(\lambda)$ be the injective hull of $L(\lambda)$.
+
+a. $I(\lambda)$ has a good filtration.
+
+b. The multiplicity $[I(\lambda): H^0(\mu)]$ is equal to $[H^0(\mu): L(\lambda)]$, the composition factor multiplicity.
+
+  > Brauer-Humphreys Reciprocity. Same idea as in category $\OO$: multiplicity of Vermas equals multiplicity of irreducibles.
+
+:::
+
+:::{.proof title="of a"}
+How to check that it has a good filtration? The cohomological criterion!
+So consider $\Ext^1_G( V(\sigma), I(\lambda) )$ for all $\sigma \in X(T)_+$.
+We want to show it's zero, but this follows because $I(\lambda)$ is injective.
+:::
+
+:::{.proof title="of b"}
+By the previous result, we have
+\[  
+[I(\lambda): H^0(\mu) ] 
+&= \dim \hom_G(V(\mu), I(\lambda)) \\
+&= [V(\mu): L(\lambda) ]
+.\]
+Why does this second equality hold?
+The functor $\hom_G(\wait, I(\lambda))$ is exact, and $\hom_G(L(\mu), I(\lambda)) = \delta_{\lambda, \mu}$.
+If $\lambda = \mu$ there's only one morphism, since $L(\lambda) \injects I(\lambda)$ and $\soc_G I(\lambda) = L(\lambda)$.
+This means that they have the same character, $\ch H^0(\lambda) = \ch V(\lambda)$, and this implies that they have the same composition factors.
+:::
+
+:::{.theorem title="Cohomological Criterion for Weyl Filtrations"}
+
+Let $V$ be a $G\dash$module.
+
+a. If $V$ admits a Weyl filtration, then 
+\[
+[V: V(\lambda)] = \dim \hom_G (V, H^0(\lambda))
+\]
+
+b. Suppose that $\dim \hom_G(V(\lambda), H^0(\lambda)) < \infty$ for all $\lambda \in X(T)_+$.
+  Then TFAE
+
+  - $V$ has a Weyl filtration.
+  - $\Ext^i_G(V, H^0(\lambda)) = 0$ for all $\lambda \in X(T)_+$ and $i>0$. 
+  - $\Ext^1_G(V, H^0(\lambda)) = 0$ for all $\lambda \in X(T)_+$.
+
+:::
+
+# Monday, October 05
+
+Crelle 1988 (CPS: Cline Parshall Scott)
+
+Let HWC denote a highest weight category.
+
+:::{.example}
+
+1. BGG Category $\OO$
+
+2. $\Rat(G)$ for $G$ a reductive algebraic group
+
+3. $\Perv_W(G/B) \cong \OO_0$
+:::
+
+
+See
+
+1. Donkin: On generalized Schur algebras
+
+2. Irving: BGG algebras
+
+There is a equivalence between HWC and QHA (quasi-hereditary algebras).
+
+:::{.remark}
+Key Points
+
+1. $L(\lambda) = \soc_G \nabla(\lambda)$ and $\nabla(\lambda) = A(\lambda)$.
+
+2. All composition factors of $\nabla(\lambda)$ satisfy $\mu \leq \lambda$
+
+3. We have cohomological vanishing:
+\[
+\Ext_G^i(\Delta(\lambda), \nabla(\mu)) = 
+\begin{cases}
+0 & i >0 \\
+0 & i=0, \lambda \neq \mu \\
+k & i=0. \lambda = 0
+\end{cases}
+\]
+:::
+
+Interval finite poset: we'll have a cone $\Lambda$ of positive weights:
+
+![Image](figures/image_2020-10-05-14-14-30.png)
+
+> See handout!
+
+
+:::{.theorem title="?"}
+Let $G ,G'$ be rational $G\dash$modules admitting good filtrations.
+Then the tensor product $V\tensor V'$ also admits a good filtration.
+:::
+
+- First proofs: 
+  - JP Wong, Type A
+  - Donkin, all but characteristic 2 and $E_7, E_8$.
+  - O. Mathieu, general proof using algebraic geometry
+
+:::{.example}
+Let $G = \SL(n, k)$ and take the natural representation $V = H^0(w_1)$.
+Then $V^{\tensor d}$ has a good filtration.
+:::
+
+:::{.theorem title="?"}
+Let $J\subset \Delta$ be a subset of simple roots.
+If $V \in \Mod(G)$ has a good filtration and $L_J$ is a Levi factor, then $V{\downarrow_{L_J}}$ has a good filtration.
+:::
+
+:::{.theorem title="?"}
+Let $\lieg = \Lie(G)$ and $p$ be a *good prime* (doesn't divide any of the coefficients of the highest weight).
+Then the symmetric algebra $S(\lieg)$ has a good filtration.
+:::
+
+:::{.remark}
+For $p\geq 3(h-1)$, the exterior algebra $\Lambda(\lieg)$ also admits a good filtration.
+Question:
+Is this true for all primes $p$? Or potentially for all *good* primes $p$?
+:::
+
+## Polynomial Representation Theory
+
+Let $G = \GL(n, k)$, then a module for $G$ is **polynomial** iff the weights $\lambda = (\lambda_1, \cdots, \lambda_n)$ satisfy $\lambda_j \geq 0$ for all $j$.
+
+:::{.example}
+For $V$ the natural representation, the weights are the unit vectors $\eps_1, \cdots, \eps_n$, so $V$ is a polynomial representation.
+Then $V^{\tensor d}$ is again polynomial by a previous remark.
+:::
+
+:::{.remark}
+Note that the adjoint representation $\lieg \cong V\tensor V\dual$ is not a polynomial representation. 
+:::
+
+:::{.theorem title="?"}
+There is an equivalence
+\[  
+\mathrm{Poly}(G) \cong \bigoplus_{j\geq 0} \Mod(S(n, d))
+,\]
+where this Schur algebra $S(n, d)$ is given by $\End_{\Sigma_d}(V^{\tensor d})$ where $\Sigma_d$ is the symmetric group of $d$ letters.
+
+The theorem is that $\Mod(S(n, d))$ is a QHA, and thus a highest weight category.
+:::
+
+:::{.remark}
+This is a finite-dimensional algebra, so we should be able to calculate the dimensions, index by highest weights, write the standard/costandard modules, etc.
+There is a correspondence
+\[ 
+\correspond{\text{Simple modules for }S(n, d)}
+\iff
+\correspond{\Lambda^+(n, d) \text{ partitions of $d$ with at most $n$ parts}}
+.\]
+
+We can compute
+\[  
+\dim S(n, d) = {n^2 + d - 1 \choose n^2 - 1}
+,\]
+and simple modules correspond to $L(\lambda)$ for $\GL_n$ where $\lambda$ is a polynomial representation.
+:::
+
+
+:::{.theorem title="?"}
+$S(n, d)$ is semisimple if and only if
+
+1. $k = \CC$ or characteristic zero, or 
+
+2. $d < p$.
+
+> For latter condition, see Maschke's theorem
+
+:::
+
+:::{.example}
+Consider $S(2, 3)$ for $p=2$, so $G = \GL(2)$.
+Then 
+\[  
+\dim S(2, 3) = {4+3-1 \choose 3} = {6\choose 3} = 20
+.\]
+
+The only admissible partitions are thus
+
+- $(3)$, and 
+- $(2, 1)$.
+
+Then $L(2, 1) = L("w")$ as an $\SL(2)\dash$module, so 
+\[
+\dim L(2, 1) = 2
+\]
+Then $L(3, 0) = L("3w")$ as an $\SL(2)\dash$module.
+We can compute
+\[  
+L(3) = L(1, 0)^{(1)} \tensor L(1, 0)
+,\]
+and since each is 2-dimensional, we get $\dim L(3) = 4^2 + 2^2 = 20$.
+
+Note that the sum of the squares of the dimensions of the irreducibles are equal to the total dimension, which shows this module is semisimple.
+But this contradicts the theorem!
+So it turns out there is a third condition, namely this exact case.
+:::
+
+Next time: look at structure of injective modules, then the theory of Bott-Borel-Weil for higher sheaf cohomology.
+
+
+
+
+
+
+# Wednesday, October 07
+
+## Schur Algebras
+
+Let $G = \GL(n, k)$, then polynomial representations of $G$ are equivalent to $S(n, d)$ modules for all $d\geq 0$, where we can note that $S(n, d) = \endo_{\Sigma_d}(V^{\tensor d})$.
+We'll have a correspondence
+\[  
+\correspond{L(\lambda) \text{ simple modules for } S(n,d)}
+\iff
+\Lambda^+(n, d) \text{, partitions of $d$ with at most $n$ parts}
+,\]
+
+:::{.example}
+
+> Good example, can see all filtrations at work, tilting modules, etc.
+
+Consider $S(3, 3)$ for $p=3$, we then have the partitions $\Lambda^+(3, 3) = \ts{(3), (2, 1), (1,1,1)}$.
+We can think of these in the $\eps$ basis as $(3) = (3,0,0), (2,1) = (2,1,0)$.
+Since $\SL(3, k) \subset \GL(3, k)$, we can find the $SL(3, k)$ weights by taking successive differences to yield $(3, 0), (1, 1), (0, 0)$ with the corresponding picture
+
+![Image](figures/image_2020-10-07-14-00-10.png)
+
+We can compute
+
+- $L(1,1,1) = H^0(1,1,1)$
+- $L(2, 1) = H^0(2, 1)$
+- $L(3) = H^0(3)$
+
+![Image](figures/image_2020-10-07-14-02-04.png)
+
+We have a form of Brauer reciprocity:
+\[  
+[I(\lambda): H^0(\mu)] = [H^0(\mu) : L(\lambda) ] 
+.\]
+
+We can now compute the injective hulls:
+
+![Image](figures/image_2020-10-07-14-05-28.png)
+
+What are the tilting modules?
+We can use the fact that $L(1^3) = V(1^3)$.
+It has a good filtration and a Weyl filtration and thus must be the tilting module for $L(1^3)$.
+
+Using the following fact:
+
+![Image](figures/image_2020-10-07-14-07-57.png)
+
+We can compute the following:
+
+![Image](figures/image_2020-10-07-14-10-44.png)
+:::
+
+## Simplicity of $H^0(\lambda)$
+
+1. $k = \CC$ implies $L(\lambda) = H^0(\lambda)$ for all $\lambda \in X(T)_+$
+
+2. $k= \bar{\FF}_p$ implies $L(\lambda) = H^0(\lambda)$ if $\inner{\lambda}{\alpha_0\dual} \leq 1$ where $\alpha_0$ is the highest short root.
+
+Such $\lambda$ are referred to as *minuscule weights*.
+
+:::{.example}
+For type $A_n$, we have $\alpha_0 = \sum_{i=1}^n \alpha_i$.
+For type $G_2$, we have $\alpha_0\dual  = 2\alpha_1\dual + 3\alpha_2\dual$.
+:::
+
+:::{.example}
+In type $A_n$, set $\lambda = \sum_{j=1}^n c_j w_j$ where $c_j \geq 0$.
+Then $\inner{\lambda}{\alpha_0\dual} = \sum c_j \leq 1$, so $\lambda$ is minuscule iff $\lambda = 0$ or $\lambda = w_j$ for some $j$.
+:::
+
+
+:::{.remark}
+Quick timeline:
+
+- 2015, Cantrell lectures by Dick Gross at UGA
+- Fall 2015: email to Dan Nakano from Skip Garibaldi, conjecture from Gross without a proof
+
+:::{.proposition title="Gross"}
+The simple module is equal to the induced module, so $L(\lambda) = H^0(\lambda)$, for all $p$ iff $\lambda$ is minuscule, or if $L(\lambda) = \lieg$ for $\Phi = E_8$.
+:::
+
+- Proved by Garibaldi-Nakano-Guralnick, appeared in Journal of Algebra
+
+:::
+
+## Bott-Borel-Weil Theorem
+
+We can consider the higher right-derived functors of $\lambda$, given by $H^i(\lambda) = R^i \ind_B^G \lambda$ for $\lambda \in X(T)$.
+You can think of this as the higher sheaf cohomology of the flag variety, $\mathcal{H}^i(G/B, \mathcal{L}(\lambda))$.
+
+We have **Kempf Vanishing**: $H^i(\lambda) = 0$ for all $i>0$ when $\lambda \in X(T)_+$ is dominant (although other things may happen for non-dominant weights).
+There is a correspondence $(G, T) \iff (W, \Phi)$, and since $W$ is generated by simple reflections, we can write any $w\in W$ as $w=\prod s_{\alpha_i}$.
+A *reduced expression* is one in which the length can not be shortened, and any two reduced expressions necessarily have the same length (number of simple reflections).
+
+:::{.example}
+For $\Phi = A_2$, we have $w_0 = s_{\alpha_1} s_{\alpha_2} s_{\alpha_1} = s_{\alpha_2} s_{\alpha_1} s_{\alpha_2}$.
+:::
+
+### Dot Action on Weights
+
+We can let $W$ act on $X(T)$ by reflections by the formula $s_\alpha \lambda = \lambda - \inner{\lambda}{\alpha\dual}\alpha$.
+We then shift the action by setting $s_\alpha \cdot \lambda = w(\lambda+\rho)-\rho$ where $\rho = {1\over 2} \sum_{\alpha\in \Phi^+} \alpha = \sum_{j=1}^n w_j$.
+
+![Image](figures/image_2020-10-07-14-33-00.png)
+
+:::{.theorem title="Bott-Borel-Weil"}
+Let $G$ be a reductive algebraic group and $k=\CC$.
+For $\lambda \in X(T)_+$, we can describe the sheaf cohomology:
+\[  
+\mathcal{H}^i(w\cdot \lambda)
+=
+\begin{cases}
+H^0(\lambda) & i=\ell(w) \\
+0 & \text{otherwise}
+\end{cases}
+.\]
+
+Moreover, if $\lambda \not\in X(T)_+$ and $\inner{\lambda+\rho}{\alpha\dual} \geq 0$ for all $\alpha \in \Delta$, then $\mathcal{H}^i(w\cdot \lambda) = 0$ for all $w\in W$.
+
+![Image](figures/image_2020-10-07-14-41-58.png)
+
+:::
+
+Wide open in characteristic $p$, can say some things.
+We'll prove this in characteristic zero.
+
+Recall that $k=\CC$ and $H^0(\lambda) = L(\lambda)$.
+We'll want to reduce to $\SL(2, \CC)$ parabolics.
+For $\alpha\in\Delta$, let $P_\alpha$ be the associated parabolic $P_\alpha = L_\alpha \semidirect U_\alpha$, which is parabolic of type $A_1$.
+
+Idea: $\alpha$ generates an $\SL_2$ subgroup (the Levi factor), like the Borel but sticks out in one dimension:
+
+![Image](figures/image_2020-10-07-14-47-17.png)
+
+Then 
+\[ 
+s_\alpha \cdot \lambda = s_\alpha(\lambda + \rho) - \rho \\
+= \lambda + \rho - \inner{\lambda + \rho}{\alpha\dual}\alpha - \rho \\
+= \lambda - \inner{\lambda + \rho}{\alpha\dual}\alpha
+.\]
+
+Next time: proof of Bott-Borel-Weil and its generalization to $k = \bar{\FF}_p$.
+For $B\subset P_\alpha \subset G$, we'll have a spectral sequence
+\[  
+E_2^{i, j} = R^i \ind_{P_\alpha}^G R^j \ind_B^{P_\alpha}  \abuts R^{i+j} \ind_B^G  \lambda = H^{i+j}(\lambda)
+.\]
+
+
+# Friday, October 09
+
+
+Last time: Bott-Borel-Weil.
+Stated for characteristic zero, working toward a generalization.
+
+Let $\Delta$ be the set of simple roots, and $\alpha\in \Delta$. 
+We can form a Levi decomposition $P_\alpha \da L_\alpha \semidirect U_\alpha$:
+
+![Image](figures/image_2020-10-09-13-58-02.png)
+
+We have $B \subseteq P_\alpha \subseteq G$.
+The dot action is given by the following:
+Let $W$ be the Weyl group, then $W$ acts on $X(T)$ by $w\cdot \lambda = w(\lambda + \rho) - \rho$, where
+\[  
+\rho = {1\over 2} \sum_{\alpha\in \Phi^+} \alpha = \sum_{i=1}^n w_n
+.\]
+
+We obtained a formula
+\[  
+S_\alpha \cdot \lambda = \lambda - \inner{\lambda  + \rho}{\alpha\dual} \alpha
+.\]
+
+## Bott-Borel-Weil Theory
+
+:::{.proposition title="?"}
+ Let $\alpha\in\Delta$ be simple and $\lambda \in X(T)$ be an arbitrary weight.
+Then
+
+- $U_\alpha$ acts trivially on $\ind_B^{P_\alpha} \lambda$.
+
+- (Kempf's Vanishing for $P_\alpha$) If $\inner{\lambda}{\alpha\dual} = r \geq 0$, then 
+  \[  
+  R^i \ind_B^{P_\alpha} \lambda = 0 \qquad \text{for } i \geq 0
+  ,\]
+  and $\dim \ind_B^{P_\alpha}\lambda = r + 1$.
+
+- If $\inner{\lambda}{\alpha\dual} = -1$, then $R^i \ind_B^{P_\alpha} \lambda = 0$ for all $i$.
+
+- If $\inner{\lambda}{\alpha\dual} \leq -2$, then 
+  
+  - $R^i \ind_B^{P_\alpha} \lambda = 0$ for $i \neq 1$, and 
+
+  - $\dim R^1 \ind_B^{P_\alpha} \lambda = r+1$ 
+
+Note: we have
+\[  
+\ind_B^{P_\alpha} \lambda = S^r(V) \qquad &\text{when } \inner{\lambda}{\alpha\dual} = r \geq 0 \\
+R^1 \ind_B^{P_\alpha} = S^r(V)\dual \qquad&\text{where $V$ is a 2-dim representation and } \inner{\lambda}{\alpha\dual} \leq -2 \\
+&\text{and } r = \abs{\inner{\lambda}{\alpha\dual}} - 1
+.\]
+:::
+This gives us an analog of $A_1$ or $\SL_2$ theory.
+Also note that we have Serre duality:
+\[  
+H^1(\lambda) = H^0( - (\lambda + 2\rho) )\dual
+.\]
+
+:::{.corollary title="?"}
+Let $\alpha\in \Delta$ and $\lambda\in X(T)$, and suppose $\lambda$ is dominant with respect to $\alpha$, i.e. $\inner{\lambda}{\alpha\dual} \geq 0$.
+
+- If $\ch(k) = 0$ then
+  $\ind_B^{P_\alpha}\lambda = R^1 \ind_B^{P_\alpha} s_\alpha \cdot \lambda$
+
+- If $\ch(k) = p$ and if there exists an $s, m$ with $0<s<p$ and $\inner{\lambda}{\alpha\dual} = sp^m - 1$ (Steinberg weights), then
+\[  
+\ind_B^{P_\alpha} \lambda = R^1 \Ind_B^{P_\alpha} s_\alpha \cdot \lambda
+.\]
+
+![O](figures/image_2020-10-09-14-14-39.png)
+
+:::
+
+The proof of this will use a Grothendieck-type spectral sequence of the form
+\[  
+E_2^{i, j} = R^i \ind_{P_\alpha}^G \qty{ R^j \ind_B^{P_\alpha} \lambda} \abuts R^{i+j} \ind_B^G \lambda
+.\]
+
+We'll have a version of *Grothendieck vanishing*:
+\[  
+R^j \ind_B^{P_\alpha} \lambda = 0 \qquad\text{for } j > \dim P_\alpha/B = 1
+.\]
+
+So the resulting spectral sequence will only be supported on the first two lines, and $E_3 = E_\infty$.
+Note the differential will be of bidegree $\del_r \leadsto (r, 1-r)$, and $E_2$ will look like the following, 
+
+
+![Image](figures/image_2020-10-09-14-30-47.png)
+
+Recall that $R^i \ind_B^G \lambda \da H^i(\lambda)$
+
+
+:::{.proposition title="?"}
+Let $\alpha\in\Delta$ and $\lambda \in X(T)$.
+
+1. If $\inner{\lambda}{\alpha\dual} = -1$, then $H^\wait(\lambda) = 0$.
+2. If $\inner{\lambda}{ \alpha\dual} \geq 0$, then $H^i(\lambda) = R^i \ind_B^{P_\alpha} \lambda$ for all $i\geq 0$.
+3. If $\inner{\lambda}{\alpha\dual} \leq -2$, then
+\[  
+H^i(\lambda) = R^{i-1} \ind_{P_\alpha}^G \qty{ R^1 \ind_B^{P_\alpha} \lambda } \qquad \forall i
+.\]
+
+4. Suppose $\inner{\lambda}{\alpha\dual} \geq 0$.
+  If $\ch(k) = 0$, or $\ch(k) = p> 0$ and $\inner{\lambda}{\alpha\dual} = sp^n - 1$, then 
+  \[  
+  H^i(\lambda) = H^{i+1}(s_\alpha\cdot \lambda)
+  .\]
+:::
+
+:::{.proof title="of a"}
+If $\inner{\lambda}{\alpha\dual} = -1$, then $R^\wait \ind_B^{P_\alpha} \lambda = 0$.
+But this is what appears as the "coefficients" in the spectral sequence, so $E_2^{\wait, \wait} = 0$ and this $R^\wait \ind_B^{P_\alpha} = 0$.
+:::
+
+:::{.proof title="of b"}
+If $\inner{\lambda}{\alpha\dual} = 0$, then $R^j \ind_B^{P_\alpha} \lambda = 0$ for all $j>0$.
+Thus only the bottom line survives, and the spectral sequence degenerates on page 2. 
+Thus $E_2^{1, 0} = R^i \ind_B^G \lambda$, where the LHS is equal to $R^i \ind_{P_\alpha}^G \qty{\ind_B^{P_\alpha} \lambda }$.
+:::
+
+:::{.proof title="of c"}
+If $\inner{\lambda}{\alpha\dual} = -2$, then $R^i \ind_B^{P_\alpha} \lambda = 0$ for $i\neq 1$, so only $i=1$ survives
+Then
+\[
+R^{i-1} \ind_{P_\alpha}^G \qty{ \ind_B^{PP_\alpha} \alpha} = R^i \ind_B^G \lambda
+,\]
+so there is some dimension shifting.
+:::
+
+:::{.proof title="of d"}
+If $\inner{\lambda}{\alpha\dual} \geq 0$, then by (b),
+\[  
+H^i(\lambda) 
+&= R^i \ind_{P_\alpha}^G \qty{ \ind_B^{P_\alpha} \lambda } && \text{by c}\\
+&= R^i \ind_{P_\alpha}^G \qty{ R^1 \ind_B^{P_\alpha} s_\alpha\cdot \lambda } && \text{by corollary}\\
+&= H^{i+1}(s_\alpha\cdot \lambda)
+.\]
+
+We can then check that 
+\[  
+s_\alpha \cdot \lambda
+&= \lambda - \inner{\lambda + \rho}{\alpha\dual}\alpha \\
+&= \lambda - \qty{ \inner{\lambda}{\alpha\dual} + 1 }\alpha && \text{using } \inner{\rho}{\alpha\dual} = 1 \\ \\
+\implies 
+\inner{s_\alpha \cdot \lambda}{\alpha\dual}
+&= \inner{\lambda}{\alpha\dual} - \qty{ \inner{\lambda}{\alpha\dual}+1 }\inner{\alpha}{\alpha\dual} \\
+&= \inner{\lambda}{\alpha\dual} - \qty{ \inner{\lambda}{\alpha\dual}+1 }2 \\
+&= -\inner{\lambda}{\alpha\dual} - 2 \\
+&\leq -2
+.\]
+:::
+
+Now define
+\[  
+\bar{C}_{\ZZ} 
+&\da 
+\ts{
+\lambda \in X(T) \st 0 \leq \inner{\lambda+\rho}{\beta\dual} \,\forall \beta \in \Phi^+
+} \qquad\text{ if } \ch(k) = 0 \\
+&\da
+\ts{
+\lambda \in X(T) \st 0 \leq \inner{\lambda+\rho}{\beta\dual} \leq \ch(k) \,\forall \beta \in \Phi^+
+} \qquad\text{if } \ch(k) = p
+.\]
+
+Idea:
+
+![Image](figures/image_2020-10-09-14-45-08.png)
+![Image](figures/image_2020-10-09-14-45-20.png)
+
+:::{.theorem title="Bott-Borel-Weil Generalization, due to Andersen"}
+
+a. If $\lambda \in \bar{C}_\ZZ$ and $\lambda \not\in X(T)_+$, then $H^0(w\cdot \lambda) = 0$.
+
+b. If $\lambda \in \bar{C}_\ZZ \intersect X(T)_+$, then for all $w\in W$,
+\[  
+H^i(w\cdot \lambda) = 
+\begin{cases}
+H^0(\lambda) & i= \ell(w) \\
+0 & \text{otherwise}
+\end{cases}
+.\]
+:::
+
+Note that this covers everything in the $\ch(k) = 0$ case, but only gives the following hexagon in the $\ch(k) = p$ case:
+
+![Image](figures/image_2020-10-09-14-48-41.png)
+
+:::{.remark}
+**Open Problem**:
+Determine $\ch H^i(\lambda)$ for $\lambda\in X(T)$ in characteristic $p>0$.
+
+Andersen provided necessary an sufficient conditions
+for $H^1(\lambda) \neq 0$ and computed $\soc_G H^1(\lambda)$.
+:::
+
+
+
+# Monday, October 12
+
+## Proof of Bott-Borel-Weil
+
+Recall the Bott-Borel-Weil theorem: in characteristic zero, we're looking at the closure of the region containing the fundamental region $C_\ZZ$:
+
+![Image](figures/image_2020-10-12-13-58-45.png)
+
+:::{.theorem title="due to Aandersen"}
+a. If $\lambda \in \bar{C}_\ZZ$ and $\lambda \not\in X(T)_+$ then $H^0(w\circ \lambda) = 0$.
+
+b. If $\lambda\in \bar{C}_\ZZ \intersect X(T)_+$ then for all $w\in W$, we have
+\[  
+H^i(w\cdot \lambda) = 
+\begin{cases}
+H^0(\lambda)& i = \ell(w) \\
+0 & \text{otherwise}
+\end{cases}
+.\]
+:::
+
+:::{.proof title="of a"}
+For (a): we use induction on $\ell(w)$.
+For $\ell(w) = 0$, we have $w = \id$.
+Let $\lambda \in \bar{C}_\ZZ$ and $\lambda\not\in X(T)_+$.
+Then 
+\[  
+0 
+&\leq \inner{\lambda + \rho}{\alpha\dual} \\
+&= \inner{\lambda}{\alpha\dual} + 1 \\
+\implies \inner{\lambda}{\alpha\dual} &= -1
+.\]
+Applying the previous proposition, we get $H^0(\lambda) = 0$.
+:::
+
+:::{.proof title="of b"}
+For the base case $w=\id$, this follows from Kempf vanishing.
+Assuming the result holds for any word of length $l<\ell(w)$, if $\ell(w) > 0$, there exists some simple reflection $s_\alpha$ for $\alpha\in\Delta$ such that $\ell(s_\alpha w) = \ell(w) - 1$.
+Moreover, $w^{-1}(\alpha) \in -\Phi^+$, so set $\beta = -w^{-1}(\alpha) \in \Phi^+$.
+We can the make the following computation:
+\[  
+\inner{(s_\alpha w) \cdot \lambda}{\alpha\dual}
+&= \inner{(s_\alpha w)(\lambda+\rho) - \rho}{\alpha\dual}  \\
+&= \inner{(s_\alpha w)(\lambda+\rho)}{\alpha\dual} - 1 \\
+&= \inner{w(\lambda+\rho)}{s_\alpha \alpha\dual} - 1 \\
+&= - \inner{w(\lambda+\rho)}{\alpha\dual} - 1  \\
+&= \inner{\lambda + \rho}{-w^{-1}\alpha\dual} - 1 \\
+&= \inner{\lambda + \rho}{\beta\dual} - 1 \\
+&\geq -1
+\]
+and $\inner{(s_\alpha w)\cdot \lambda}{ \alpha\dual} < \rho$ since $\lambda\in \bar{C}_\ZZ$.
+Note that we've used the fact that the inner product is $W\dash$invariant.
+\
+
+Now if $\inner{(s_\alpha w)\cdot \lambda}{ \alpha\dual} \geq 0$, we can apply the prior proposition part (d).
+Here we use the fact that $\ind_B^{P_\alpha}(s_\alpha w)\lambda$ is simple.
+Applying the inductive hypothesis yields
+\[  
+H^i(s_\alpha - \lambda) = H^{i+1}(w\cdot \lambda)
+.\]
+
+Now if $\inner{s_\alpha w \cdot \lambda}{\alpha\dual} = -1$, then
+\[  
+-1 &= \inner{\lambda + \rho}{\beta\dual} - 1 \\
+\implies \inner{\lambda + \rho}{\beta\dual} &= 0 \\
+\implies \inner{\lambda}{\beta\dual} &= 0 \\
+& \cdots
+.\]
+
+\todo[inline]{Missing computation}
+
+Then applying (a) yields $H^1(w\cdot \lambda)  = 0$.
+:::
+
+## Serre Duality and Grothendieck Vanishing
+
+Let $P$ be a parabolic subgroup, i.e. $P_J = P \da L_J \semidirect U_J$ for some $J\subseteq \Delta$.
+Set $n(P) = \abs{\Phi^+} - \abs{\Phi^+_J}$.
+
+:::{.example}
+Let $\Phi = A_4$, which has ten simple roots:
+
+- $\alpha_i, 1\leq i \leq 4$
+- $\alpha_i + \alpha_{i+1}$, $i=1,2,3$.
+- $\alpha_1 + \alpha_2 +\alpha_3$, $\alpha_2 + \alpha_3 + \alpha_4$
+- $\sum_{i=1}^4 \alpha_i$.
+
+![Image](figures/image_2020-10-12-14-21-20.png)
+
+Then $n(P) = 10 - 3 = 7$.
+:::
+
+
+:::{.theorem title="Grothendieck Vanishing"}
+\[  
+R^i \ind_P^G M = 0 \qquad \text{for } i > n(P)
+.\]
+:::
+
+:::{.theorem title="Serre Duality"}
+\[  
+\qty{ R^i \ind_B^G M }\dual \cong R^{n(P) -i} \ind_P^G M\dual \tensor (-2\rho_P)
+.\]
+where 
+\[
+\rho_p \da {1\over 2}\sum_{\beta \in \Phi^+ \sm \Phi_J} \beta
+\]
+:::
+
+:::{.example}
+Take $B = P$ and $M = \lambda$.
+Then $\lambda \dual = -\lambda$, so 
+\[  
+\qty{ R^i \ind_B^G \lambda }\dual \cong R^{\abs{\Phi^+} -i} \ind_P^G (- \lambda) \dual \tensor (-2\rho)
+.\]
+From this we can conclude
+\[  
+H^i(\lambda) = H^{n-i} (-\lambda - 2\rho)\dual
+,\]
+where $n = \abs{\Phi^+}$.
+:::
+
+:::{.corollary title="?"}
+Let $\lambda \in X(T)_+ \intersect \bar{C}_\ZZ$ be a dominant weight.
+Then
+
+a. The irreducible representations are given by $L(\lambda) = H^0(\lambda)$.
+
+b. $\ext_G^1(L(\lambda), L(\mu)) = 0$ for all $\lambda, \mu$ in $\bar{C}_\ZZ$.
+
+c. If $\ch(k) = 0$, so $X(T)_+ \subset \bar{C}_\ZZ$, then all $G\dash$modules are completely reducible.
+:::
+
+:::{.proof title="of a"}
+Note that the longest element takes positive roots to negative roots, so $w_0 \rho = - \rho$, and moreover $-w_0(\bar{C}_\ZZ) = \bar{C}_\ZZ$.
+We also have 
+\[
+w_0 \cdot ( w_0 \lambda) 
+&= w_0 (-w_0 \lambda + \rho) - \rho \\
+&= -\lambda + w_0 \rho - \rho \\
+&= -\lambda - 2\rho
+.\]
+By Serre duality, if we take the Weyl module we obtain 
+\[
+V(-w_0 \lambda) 
+&\da H^0(\lambda)\dual  \\
+&= H^n(-\lambda - 2\rho) \\
+&= H^n(w_0 \cdot (-w_0 \lambda)) \\
+&= H^n(-w_0 \lambda) \qquad\text{by Bott-Borel-Weil}
+,\]
+where we've used that $\ell(w_0) = \abs{\Phi^+}$.
+We know that $L(-w_0 \lambda) \subseteq \soc H^0(-w_0 \lambda) = V(-w_0 \lambda) \surjects L(-w_0 \lambda)$, where the last term is contained in the head.
+But this means that this splits, so by indecomposability we must have $L(-w_0 \lambda) = H^0(-w_0 \lambda) = V(-w_0 \lambda)$.
+So we can conclude
+\[  
+L(\mu) = H^0(\mu) = V(\mu) \qquad \forall \mu \in X(T)_+ \intersect \bar{C}_\ZZ
+.\]
+:::
+
+:::{.proof title="of b and c"}
+Suppose $\ext_G^1(L(\lambda), L(\mu)) \neq 0$, then 
+$L(\lambda)$ is in $H^0(\mu) / \soc_G H^0(\mu) = 0$ and
+$L(\mu)$ is in $H^0(\lambda) / \soc_G H^0(\lambda) = 0$, 
+but this forces
+$\ext_G^1(L(\lambda), L(\mu)) = 0$.
+\
+
+Part (c) follows from part (b).
+:::
+
+
+## Weyl's Character Formula
+
+Problem: 
+Determine $\ch H^0 \lambda$ for $\lambda \in X(T)_+$.
+
+Solution:
+Let $A(\lambda) = \sum_{w\in W} \sgn(w) e^{w\lambda} \in \ZZ[X(T)]$, where we sum over the usual Weyl group and not the affine Weyl groups, taken as a formal sum in the group algebra on the weight lattice.
+We can then state Weyl's character formula:
+\[  
+\ch H^0(\lambda) = {A(\lambda + \rho) \over A(\rho)} \qquad \text{for }\lambda \in X(T)_+
+.\]
+This is a formal sum, so it's surprising that the bottom term even divides the top.
+But there is a great deal of cancellation, we'll see this in examples such as $\GL_3$.
+
+### Formal Characters
+
+Let $M$ be a $T\dash$module, then define the *character*
+\[  
+\ch M\da \sum_{\mu\in X(T)} \qty{\dim M_\mu} e^\mu \quad \in \ZZ[X(T)]
+.\]
+
+We then define the *Euler characteristic*
+\[  
+\chi(M) \da \sum_{i\geq 0} (-1)^i \ch H^i(M)
+.\]
+Note that by Grothendieck vanishing, $H^i(M) = 0$ for $i > \abs{\Phi^+} = \dim(G/B)$, so this is a finite sum.
+In fact, if $M$ is a $G\dash$module, then this is $W\dash$invariant and thus in fact $\chi(M) \in \ZZ[X(T)]^W$.
+
