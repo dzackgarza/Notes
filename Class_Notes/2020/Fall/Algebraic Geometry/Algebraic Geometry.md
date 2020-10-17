@@ -159,8 +159,11 @@ Thus $V(S) \subset V(\gens{S})$.
 - $I+J \da \ts{f+g \st f\in I,\, g\in J}$.
 - $IJ \da \ts{\sum_{i=1}^N f_i g_i \st f_i\in I,\, g_i\in J, N\in \NN}$.
 - If $I+J = \gens{1}$ then $I\intersect J = IJ$ (coprime or comaximal)
-
 :::
+
+Note that if $I = \gens{a}$ and $J = \gens{b}$, then $I + J = \gens{a} + \gens{b} = \gens{a, b}$.
+
+
 
 
 :::{.proposition title="Properties of $V$"}
@@ -726,7 +729,7 @@ Any irreducible topological space is connected, since irreducible requires a uni
 :::
 
 :::{.example}
-$A^n/k$ is irreducible: by prop 2.8, its irreducible iff the coordinate ring is a domain.
+$\AA^n/k$ is irreducible: by prop 2.8, its irreducible iff the coordinate ring is a domain.
 However $A(\AA^n)  = k[x_1, \cdots, x_n]$, which is a domain.
 :::
 
@@ -1187,3 +1190,1310 @@ For part (b), the statement is equivalent to $P\subset A(X)$ with $I(Y) \subset 
 
 
 
+
+# Tuesday, September 15
+
+## Review
+
+Let $k=\bar k$, we're setting up correspondences
+\[  
+\text{Ring Theory} 
+\quad&\quad 
+\text{Geometry/Topology of Affine Varieties}
+\\
+\text{Polynomial functions} 
+\quad&\quad 
+\text{Affine space} 
+\\
+k[x_1, \cdots, x_n]
+\quad&\quad 
+\AA^n/k \da \ts{\thevector{a_1, \cdots, a_n} \in k^n } 
+\\
+\text{Maximal ideals } \gens{x_1 - a_1, \cdots, x_n - a_n} 
+\quad&\quad 
+\text{Points } \thevector{a_1, \cdots, a_n} \in \AA^n/k
+\\
+\text{Radical ideals } I\normal k[x_1, \cdots, x_n]
+\quad&\quad 
+\text{Affine varieties } X\subset  \AA^n/k, \text{ vanishing locii of polynomials} 
+\\
+I &\mapsto V(I) \da \ts{a\st f(a) = 0 \forall f\in I} \\
+I(X) \da \ts{f \st \restrictionof{f}{X} = 0} &\mapsfrom X 
+\\
+\text{Radical ideals containing $I(X)$, i.e. ideals in $A(X)$} 
+\quad&\quad 
+\text{closed subsets of $X$, i.e. affine subvarieties}
+\\
+A(X) \text{ is a domain}
+\quad&\quad 
+\text{$X$ irreducible}
+\\
+\text{$A(X)$ is not a direct sum}
+\quad&\quad 
+\text{$X$ connected} 
+\\
+\text{Prime ideals in }A(X)
+\quad&\quad 
+\text{Irreducible closed subsets of }X
+\\
+\text{Krull dimension $n$ (longest chain of prime ideals)}
+\quad&\quad 
+\dim X = n,\, \text{(longest chain of irreducible closed subsets)}
+.\]
+
+> Recall that we defined the coordinate ring $A(X) \da \kx{n} / I(X)$, which contained no nilpotents.
+
+
+We had some results about dimension
+
+1. $\dim X<\infty$ and $\dim \AA^n = n$.
+2. $\dim Y + \codim_X Y = \dim X$ when $Y\subset X$ is irreducible.
+3. Only over $\bar k = k$, $\codim_X V(f) = 1$.
+
+:::{.example}
+Take $V(x^2+y^2) \subset \AA^2/\RR$
+:::
+
+
+:::{.definition title="?"}
+An affine variety $Y$ of
+
+- $\dim Y = 1$ is a **curve**,
+- $\dim Y = 2$ is a **surface**,
+- $\codim_X Y = 1$ is a **hypersurface in $X$**
+:::
+
+Question:
+Is every hypersurface the vanishing locus of a *single* polynomials $f\in A(X)$?
+
+Answer:
+This is true iff $A(X)$ is a UFD.
+
+
+:::{.definition title="Codimension in a Ring"}
+$\codim_R \mfp$ is the length of the longest chain 
+$$P_0 \subsetneq P_1 \subsetneq \cdots \subsetneq P_n = \mfp.$$
+:::
+
+Recall that $f$ is irreducible if $f = f_1 f_2 \implies f_i \in R\units$ for one $i$, and $f$ is prime iff $\gens{f}$ is a prime ideal, or equivalently $f\divides ab \implies f\divides a$ or $f\divides b$.
+
+Note that prime implies irreducible, since $f$ divides itself.
+
+:::{.proposition title="?"}
+Let $R$ be a Noetherian domain, then TFAE
+
+a. All prime ideals of codimension 1 are principal.
+
+b. $R$ is a UFD. 
+:::
+
+
+:::{.proof}
+$a\implies b$:
+
+Let $f$ be a nonzero non-unit, we'll show it admits a prime factorization.
+If $f$ is not irreducible, then $f = f_1 f_1'$, both non-units.
+If $f_1'$ is not irreducible, we can repeat this, to get a chain
+\[  
+\gens{f} \subsetneq \gens{f_1'} \subsetneq \gens{f_2'} \subsetneq \cdots
+,\]
+which must terminate.
+
+This yields a factorization $f = \prod f_i$ with $f_i$ irreducible.
+To show that $R$ is a UFD, it thus suffices to show that the $f_i$ are prime.
+Choose a minimal prime ideal containing $f$.
+We'll use Krull's Principal Ideal Theorem: if you have a minimal prime ideal $\mfp$ containing $f$, its codimension $\codim_R \mfp$ is one.
+By assumption, this implies that $\mfp = \gens{g}$ is principal.
+But $g\divides f$ with $f$ irreducible, so $f,g$ differ by a unit, forcing $\mfp = \gens{f}$.
+So $\gens{f}$ is a prime ideal.
+\
+
+$b\implies a$: 
+
+Let $\mfp$ be a prime ideal of codimension 1.
+If $\mfp = \gens{0}$, it is principal, so assume not.
+Then there exists some nonzero non-unit $f\in \mfp$, which by assumption has a prime factorization since $R$ is assumed a UFD.
+So $f=\prod f_i$.
+
+Since $\mfp$ is a prime ideal and $f\in\mfp$, some $f_i\in \mfp$.
+Then $\gens{f_i} \subset \mfp$ and $\mfp$ minimal implies $\gens{f_i} = \mfp$, so $\mfp$ is principal.
+:::
+
+:::{.corollary title="?"}
+Every hypersurface $Y\subset X$ is cut out by a single polynomial, so $Y=V(f)$, iff $A(X)$ is a UFD.
+:::
+
+
+:::{.example}
+Apply this to $R=A(X)$, we find that there is a bijection
+\[  
+\codim 1 \text{ prime ideals}
+\iff 
+\codim 1 \text{ closed irreducible subsets }Y\subset X,\text{ i.e. hypersurfaces}
+.\]
+
+Taking $A(X) = \CC[x,y,z]/\gens{x^2+y^2-z^2}$, whose real points form a cone:
+
+![Image](figures/image_2020-09-15-10-26-24.png)
+
+Note that $x^2 + y^2 = (x-iy)(x+iy) = z^2$ in this quotient, so this is not a UFD.
+
+Then taking a line through its surface is a codimension 1 subvariety not cut out by a single polynomial.
+Such a line might be given by $V(x + iy, z)$, which is 2 polynomials, so why not codimension 2?
+
+Note that $V(z)$ is the union of the lines
+
+- $z = 0, x + iy= 0$,
+- $z=0, x - iy = 0$.
+
+
+Note that it suffices to show that this ring has an irreducible that is not prime.
+Supposing $z = f_1 f_2$, some $f_i$ is a unit, then $z$ is not prime because $z\divides xy$ but divides neither of $x,y$.
+:::
+
+
+:::{.example}
+Note that $\kx{n}$ is a UFD since $k$ is a UFD.
+Applying the corollary, every hypersurface in $\AA^n$ is cut out by a single irreducible polynomial.
+:::
+
+:::{.definition title="?"}
+An affine variety $X$ is of **pure dimension $d$** iff every irreducible component $X_i$ is of dimension $d$.
+:::
+
+> Note that $X$ is a Noetherian space, so has a unique decomposition $X = \union X_i$.
+
+Given $X\subset \AA^n/k$ of pure dimension $n-1$, $X = \union X_i$ with $X_i$ hypersurfaces with $I(X_j) = \gens{f_j}$, $I(X) = \gens{f}$ where $f = \prod f_i$.
+
+:::{.definition title="?"}
+Given such an $X$, define the **degree of a hypersurface** as the degree of $f$ where $I(X) = \gens{f}$.
+:::
+
+# Thursday, September 17
+
+
+## Regular Functions
+
+> See chapter 3 in the notes.
+
+Some examples:
+
+- $X$ a manifold or an open set in $\RR^n$ has a ring of $C^\infty$ functions.
+- $X \subset \CC$ has a ring of holomorphic functions.
+- $X\subset \RR$ has a ring of real analytic functions
+
+
+These all share a common feature: it suffices to check if a function is a member on an arbitrary open set about a point, i.e. they are *local*.
+
+:::{.definition title="?"}
+Let $X$ be an affine variety and $U\subseteq X$ open.
+A **regular function** on $U$ is a function $\phi: U\to k$ such that $\phi$ is "locally a fraction", i.e. a ratio of polynomial functions.
+
+More formally, for all $p\in U$ there exists a $U_p$ with $p\in U_p \subseteq U$ such that $\phi(x) = g(x)/ f(x)$ for all $x\in U_p$ with $f, g\in A(X)$.
+:::
+
+:::{.example}
+For $X$ an affine variety and $f\in A(X)$, consider the open set $U\da V(f)^c$.
+Then ${1\over f}$ is a regular function on $U$, so for $p\in U$ we can take $U_p$ to be all of $U$.
+:::
+
+:::{.example}
+For $X = \AA^1$, take $f=x-1$.
+Then ${x\over x-1}$ is a regular function on $\AA^1 \sm\ts{1}$.
+:::
+
+:::{.example}
+Let $X + V(x_1 x_4 - x_2 x_3)$ and 
+\[  
+U \da X\sm V(x_2, x_4) = \ts{\thevector{x_1, x_2, x_3, x_4} \st x_1 x_4 = x_2 x_3, x_2\neq 0 \text{ or } x_4\neq 0 }
+.\]
+
+Define
+\[  
+\phi: U &\to K \\
+\thevector{x_1, x_2, x_3, x_4} &\mapsto
+\begin{cases}
+{x_1\over x_2} & \text{if } x_2 \neq 0 \\
+{x_3\over x_4} & \text{if } x_4 \neq 0
+\end{cases}
+.\]
+
+This is well-defined on $\ts{x_2\neq 0} \intersect \ts{x_4 \neq 0}$, since ${x_1\over x_2} = {x_3 \over x_4}$.
+Note that this doesn't define an element of $k$ at $\thevector{0,0,0,1}\in U$.
+So this is not globally a fraction.
+:::
+
+Notation: we'll let $\OO_X(U)$ is the ring of regular function on $U$.
+
+:::{.proposition title="?"}
+Let $U\subset X$ be an affine variety and $\phi \in \OO_X(U)$.
+Then $V(\phi) \da \ts{x\in U \st \phi(x) = 0}$ is closed in the subspace topology on $U$.
+:::
+
+
+:::{.proof}
+For all $a\in U$ there exists $U_a\subset U$ such that $\phi = g_a/f_a$ on $U_a$ with $f_a, g_a \in A(X)$ with $f_a \neq 0$ on $U_a$.
+
+Then
+\[  
+\ts{x\in U_a \st \phi(x) \neq 0} = U_a \sm V(g_a)\intersect U_a
+\]
+is an open subset of $U_a$, so taking the union over $a$ again yields an open set.
+But this is precisely $V(\phi)^c$.
+:::
+
+
+:::{.proposition}
+Let $U\subset V$ be open in $X$ an *irreducible* affine variety.
+If $\phi_1, \phi_2 \in \OO_X(V)$ agree on $U$, then they are equal.
+:::
+
+:::{.proof}
+$V(\phi_1 - \phi_2)$ contains $U$ and is closed in $V$.
+It contains $\bar U\intersect V$, by an earlier lemma, $X$ irreducible implies that $\bar U = X$ and so $V(\phi_1 - \phi_2) =V$.
+:::
+
+
+Compare and contrast:
+Let $U\subset V \subset \RR^n$ be open.
+If $\phi_1, \phi_2 \in C^\infty(V)$ such that $\phi_1, \phi_2$ are equal when restricted $U\subset V$.
+Does this imply $\phi_1 = \phi_2$?
+
+For $\RR^n$, no, there exist smooth bump functions. 
+You can make a bump function on $V\setminus U$ and extend by zero to $U$.
+For $\CC$ and holomorphic functions, the answer is yes, by the uniqueness of analytic continuation.
+
+
+:::{.definition title="(Important) Distinguished Opens"}
+A **distinguished open set** in an affine variety is one of the form 
+\[  
+D(f) \da X\sm V(f) = \ts{x\in X \st f(x) = 0}
+.\]
+:::
+
+:::{.proposition}
+The distinguished open sets form a base of the zariski topology.
+:::
+
+:::{.proof}
+Given $f, g\in A(X)$, we can check:
+
+1. Closed under finite intersections: $D(f) \intersect D(g) = D(fg)$.
+2. \[U = X\sm V(f_1, \cdots, f_k) = V\sm \bigcap V(f_i) = \bigcup D(f_i),\]
+  and any open set is a *finite* union of distinguished opens by the Hilbert basis theorem.
+:::
+
+:::{.proposition title="?"}
+The regular functions on $D(f)$ are given by
+\[  
+\OO_X(D(f)) = \ts{{ g \over f^n} \st g\in A(X), n\in \NN} = A(X)_{\gens{f}}
+,\]
+the localization of $A(X)$ at $\gens{f}$.
+:::
+
+Note that if $f=1$, then $\OO_X(X) = A(X)$.
+
+:::{.proposition title="?"}
+Note that ${g\over f^n} \in \OO_X(D(f))$ since $f^n\neq 0$ on $D(f)$.
+Let $\phi: D(f) \to k$ be a regular function.
+By definition, for all $a\in  D(f)$ there exists a local representation as a fraction $\phi = g_a/f_a$ on $U_a\ni a$.
+Note that $U_a$ can be covered by distinguished opens, one of which contains $a$.
+Shrink $U_a$ if necessary to assume it is a distinguished open set $U_a = D(h_a)$.
+\
+
+Now replace 
+\[  
+\phi = {g_a \over f_a} = {g_a h_a \over f_a h_a}
+,\]
+which makes sense because $h_a\neq 0$ on $U_a$.
+We can assume wlog that $h_a = f_a$.
+Why?
+We have $\phi = {g_a \over f_a}$ on $D(f_a)$.
+Since $f_a$ doesn't vanish on $U_a$, we have $V(f_a h_a) = V(h_a)$ since $V(f_a) \subset D(h_a)^c = V(h_a)$.
+
+Consider $U_a = D(f_a)$ and $U_b = D(f_b)$, on which $\phi = {g_a\over f_a}$ and $\phi = {g_b \over f_b}$ respectively.
+On $U_a\intersect U_b = D(f_a f_b)$, these are equal, i.e. $f_b g_a = f_a g_b$ in the coordinate ring $A(X)$.
+\
+
+Then $D(f) = \bigcup_a D(f_a)$, so take the component $V(f) = \intersect V(f_a)$ by the Nullstellensatz
+$f\in I(V(f_a)) = I(V(g_a, a\in D_f)) = \sqrt{f_a \st a\in D_f}$.
+
+Then there exists an expression $f^n = \sum k_a f_a$ as a finite sum, so set $g - \sum g_a k_a$.
+
+:::{.claim}
+$\phi = g/f^n$ on $D(f)$.
+\
+
+This follows because on $D(f_b)$, we have $\phi = {g_b \over f_b}$, and so $gf_b = \sum k_a g_a f_b$.
+:::
+> Finish next class
+
+:::
+
+
+
+# Tuesday, September 22
+
+## Review: Regular Functions
+
+Given an affine variety $X$ and $U\subseteq X$ open, a *regular function* $\phi: U\to k$ is one locally (wrt the zariski topology) a fraction.
+We write the set of regular functions as $\OO_X$.
+
+:::{.example}
+$X = V(x_1 x_4 - x_2 x_3)$ on $U = V(x_2, x_4)^c$, the following function is regular:
+\[  
+\phi: U &\to k \\
+x &\mapsto 
+\begin{cases}
+{x_1\over x_2} & x_2 \neq 0 \\ \\
+{x_3 \over x_4} & x_4 \neq 0
+\end{cases}
+.\]
+Note that this is not globally a fraction.
+:::
+
+:::{.definition title="Distinguished Open Sets"}
+A *distinguished open set* $D(f) \subseteq X$ for some $f\in A(X)$ is $V(f)^c \da \ts{x\in X \st f(x) \neq 0}$.
+:::
+
+These are useful because the $D(f)$ form a base for the zariski topology.
+
+:::{.proposition title="?"}
+For $X$ an affine variety, $f\in A(X)$, we have
+\[ 
+\OO_X(D(f)) = \ts{ {g\over f^n} \st g\in A(X), n\in \NN}
+.\]
+:::
+
+:::{.proof}
+The first reduction we made was that $\phi \in \OO_X(D(f))$ is expressible as $g_a\over f_a$ on distinguished opens $D(f_a)$ covering $D(f)$.
+We also noted that 
+\[
+{g_a \over f_a} = {g_b \over f_b} \text{ on } D(f_a) \intersect D(f_b) \implies f_b g_a = f_a g_b \text{ in } A(X)
+.\]
+\
+
+The second step was writing $D(f) = \union D(f_a)$, and so $V(f) = \intersect_a V(f_a)$ implies that $f\in I(V(\ts{f_a \st a\in U}))$.
+By the Nullstellensatz, $f\in \sqrt{\gens{f_a \st a\in U}}$, so $f^N = \sum k_a f_a$ for some $N$.
+So construct $g = \sum k_a g_a$, then compute
+\[  
+gf_b = \sum_a k_a g_a f_b = \sum_a k_a g_b f_a = g_b \sum k_a f_a = g_b f^N
+.\]
+Thus $g/f^N = g_b / f_b$ for all $b$, and we can thus conclude
+\[  
+\phi \da \ts{{g_b \over f_b} \text{ on } D(f_b)} = g/f^N
+.\]
+:::
+
+:::{.corollary title="?"}
+For $X$ an affine variety, $\OO_X(X) = A(X)$.
+:::
+
+:::{.warning}
+For $k$ not algebraically closed, the proposition and corollary are both false.
+Take $X = \AA^1/\RR$, then ${1\over x^2+1} \in \RR(x)$, but $\OO_X(X) \neq A(X) = \RR[x]$.
+:::
+
+
+:::{.definition title="Localization"}
+Let $R$ be a ring and $S$ a set closed under multiplication, then the localization at $S$ is defined by
+\[  
+R_S \da \ts{r/s \st r\in R, s\in S} / \sim
+.\]
+where $r_1/s_1 \sim r_2/s_2 \iff s_3(s_2 r_1 - s_1 r_2) = 0$ for some $s_3 \in S$.
+:::
+
+:::{.example}
+Let $f\in R$ and take $S = \ts{f^n \st n\geq 1}$, then $R_f \da R_S$.
+:::
+
+:::{.corollary title="?"}
+$\OO_X(D(f)) = A(X)_f$ is the localization of the coordinate ring.
+:::
+
+These requires some proof, since the LHS literally consists of functions on the topological space $D(f)$ while the RHS consists of formal symbols.
+
+:::{.proof}
+Consider the map
+\[  
+A(X)_f &\to \OO_X(D(f)) \\
+``g/f^n" &\mapsto g/f^n: D(f) \to k
+.\]
+
+By definition, there exists a $k\geq 0$ such that 
+\[  
+f^k(f^m g - f^n g') = 0 
+\implies
+f^k(f^m g - f^n g') = 0 \text{ as a function on } D(f)
+.\]
+Since $f^k \neq 0$ on $D(f)$, we have $f^m g = f^n g'$ as a function on $D(f)$, so $g/f^n = g'/g^m$ as functions on $D(f)$.
+\
+
+**Surjectivity**: By the proposition, we have surjectivity, i.e. any element of $|OO_x(D(f))$ can be represented by some $g/f^n$.
+\
+
+**Injectivity**:
+Suppose $g/f^n$ defines the zero function on $D(f)$, then $g = 0$ on $D(f)$ implies that $fg=0$ on $X$ (i.e. $fg= 0 \in A(X)$), and we can write $f(g\cdot 1 - f^n\cdot 0) = 0$.
+Then $g/f^n\sim 0/1 \in A(X)_f$, which forces $g/f^n = 0\in A(X)_f$.
+:::
+
+## Sheaves
+
+Idea: spaces on functions on topological spaces.
+
+:::{.definition title="Presheaf"}
+A *presheaf* (of rings) $\mathcal{F}$ on a topological space is
+
+1. For every open set $U\subset  X$ a ring $\mathcal{F}(U)$.
+
+2. For any inclusion $U\subset V$ a restriction map $\res_{VU}: \mathcal{F}(V) \to \mathcal{F}(U)$ satisfying
+
+  a. $F(\emptyset) = 0$.
+  b. $\res_{UU} = \id_{\mathcal{F}(U)}$.
+  c. $\res_{VW}  \circ \res_{UV} = \res_{UW}$.
+:::
+
+
+:::{.example}
+The smooth functions on $\RR$ with the standard topology, $\mathcal{F} = C^\infty$ where $C^\infty(U)$ is the set of smooth functions $U\to \RR$.
+It suffices to check the restriction condition, but the restriction of a smooth function is smooth: if $f$ is smooth on $U$, it is smooth at every point in $U$, i.e. all derivatives exist at all points of $U$. 
+So if $V\subset U$, all derivatives of $f$ will exist at points $x \in V$, so $f$ will be smooth on $V$.
+
+Note that this also works with continuous functions.
+:::
+
+:::{.definition title="Sheaf"}
+A *sheaf* is a presheaf satisfying an additional gluing property: given $\phi_i \in \mathcal{F}(U_i)$ such that $\restrictionof{\phi_i}{U_i\intersect U_j} = \restrictionof{\phi_j}{U_i \intersect U_j}$, then there exists a unique $\phi\in \mathcal{F}(\union_i U_i)$ such that $\restrictionof{\phi}{U_i} = \phi_i$.
+:::
+
+
+
+# Thursday, September 24
+
+Recall that we defined the *regular functions* $\OO_X(U)$ on an open set $U\subset X$ an affine variety as the set of functions $\phi: U\to k$ such that $\phi$ is locally a fraction, i.e. for all $p\in U$ there exists a neighborhood of $p$, say $U_p \subset U$, such that $\phi$ restricted to $U_p$ is given by $g_p \over f_p$ for some $f_p, g_p \in A(X)$.
+
+We proved that on a distinguished open set $D(f) = V(f)^c$, we have $\OO_X(D(f)) = A(X)_f$.
+An important example was that $\OO_X(X) = A(X)$.
+
+Question: 
+If $X$ is a variety over $\CC$, does $A(X) = \Hol(X)$? 
+The answer is no, since taking $\AA^1/\CC \cong \CC = X$ we obtain $A(X) = \CC[x]$ but for example $e^z \in \Hol(X)$.
+
+On the other hand, if you require that $f\in \Hol(X)$ is meromorphic at $\infty$, i.e. $f({1\over z})$ is meromorphic at zero, then you do get $\CC[z]$.
+This is an example of GAGA!
+
+> Review: what is a category?
+
+> Review: what is a presheaf?
+
+
+# Tuesday, September 29
+
+Recall the definition of a presheaf: a sheaf of rings on a space is a contravariant functor from its category of open sets to ring, such that
+
+1. $F(\emptyset) = 0$
+2. The restriction from $U$ to itself is the identity,
+3. Restrictions compose.
+
+Examples:
+
+- Smooth functions on $\RR^n$
+- Holomorphic functions on $\CC$
+
+Recall the definition of sheaf: a presheaf satisfying *unique* gluing: given $f_i \in \mathcal{F}(U_i)$, such that $\restrictionof{f_i}{U_i \intersect U_j} = \restrictionof{f_j}{U_i\intersect U_j}$ implies that there exists a unique $f\in \mathcal{F}(\union U_i)$ such that $\restrictionof{f}{U_i} = f_i$.
+
+Question:
+Are the constant functions on $\RR$ a presheaf and/or a sheaf?
+
+Answer:
+This is a presheaf but not a sheaf.
+Set $\mathcal{F}(U) = \ts{f: U\to \RR \st f(x) = c} \cong \RR$ with $\mathcal{F}(\emptyset) = 0$.
+Can check that restrictions of constant functions are constant, the composition of restrictions is the overall restriction, and restriction from $U$ to itself gives the function back.
+
+Given constant functions $f_i \in \mathcal{F}(U_i)$, does there exist a unique constant function $\mathcal{F}(\union U_i)$ restricting to them?
+No: take $f_1 = 1$ on $(0, 1)$ and $f_2 = 2$ on $(2, 3)$.
+Can check that they both restrict to the zero function on the intersection, since these sets are disjoint.
+
+How can we make this into a sheaf?
+One way: weaken the topology.
+Another way: define another presheaf $\mathcal{G}$ on $\RR$ given by *locally* constant function, i.e. $\ts{f: U\to \RR \st \forall p\in U, \exists U_p\ni p,\, \ro{f}{U_p} \text{ is constant}}$.
+Reminiscent of definition of regular functions in terms of local properties.
+
+:::{.example}
+Let $X = \ts{p, q}$ be a two-point space with the discrete topology, i.e. every subset is open.
+Then define a sheaf by
+\[  
+\emptyset &\mapsto 0 \\
+\ts{p} &\mapsto R \\
+\ts{q} &\mapsto S \\
+\implies \ts{p, q} &\mapsto R\cross S
+,\]
+where the sheaf condition forces the assignment of the whole space to be the product.
+Note that the first 3 assignments are automatically compatible, which means that we need a unique $f\in \mathcal{F}(X)$ restricting to $R$ and $S$.
+In other words, $\mathcal{F}(X)$ needs to be unique and have maps to $R, S$, but this is exactly the universal property of the product.
+:::
+
+:::{.example}
+Consider the presheaf on $X$ given by $\mathcal{F}(X) = R\cross S \cross T$.
+Taking $T = \ZZ/2\ZZ$, we can force uniqueness to fail: by projecting to $R, S$, there are two elements in the fiber, namely $(r,s,0)\mapsto r,s$ and $(r,s,1)\mapsto r,s$.
+:::
+
+:::{.example}
+Let $X = \ts{a, b, c}$ and $\tau = \ts{\emptyset, \ts{a}, \ts{a, b}, \ts{a, c}}$.
+Can check that it's closed under finite intersections and arbitrary unions, so this forms a topology.
+Now make the assignments
+\[  
+\ts{a}& \mapsto A \\
+\ts{b}& \mapsto B \\
+\ts{a, b}& \mapsto C \\
+X &\mapsto ?
+.\]
+
+We have a situation like this:
+\begin{center}
+\begin{tikzcd}
+& \mathcal{F}(X)\ar[ld]\ar[rd] & \\
+B\ar[rd] & & C\ar[ld] \\
+& A\ar[d] & \\
+& \emptyset &
+\end{tikzcd}
+\end{center}
+
+Unique gluing says that given $r\in B, s\in C$ such that $\phi_B(r) = \phi_C(s)$, there should exist a unique $t\in \mathcal{F}(X)$ such that $\ro{t}{\ts{a, b}} = r$ and $\ro{t}{\ts{a, c}} = s$.
+This recovers exactly the fiber product.
+\[  
+B \cross_A C \da \ts{(r, s) \in B\cross C \st \phi_B(r) = \phi_C(s) \in A}
+.\]
+:::
+
+:::{.example}
+Let $X$ be an affine variety with the Zariski topology and let $\mathcal{F} \da \OO_X$ be the sheaf of regular functions:
+\[  
+\OO_X(U) \da \ts{f: U\to k \st \forall p\in U,\, \exists U_p \ni p,\,\, \ro{f}{U_p} ={g_p \over h_p} }
+.\]
+
+Is this a presheaf?
+We can check that there are restriction maps:
+\[  
+\OO_X(U) &\to \OO_X(V) \\
+\ts{f: U\to K} &\mapsto \ts{\ro{f}{V}(x) \da f(x) \text{ for } x \in V }
+.\]
+This makes sense because if $V\subset U$, any $x\in V$ is in the domain of $f$.
+Given that $f$ is locally a fraction, say $\rho = g_p / h_p$ on $U_p \ni p$, is $\ro{\phi}{V}$ locally a fraction?
+Yes: for all $p\in V\subset U$, $\phi = g_p / f_p$ on $U_p$ and this remains true on $U_p \intersect V$.
+
+To check that $\OO_X$ is a sheaf, given a set of regular functions $\ts{\phi_i: U_i \to k}$ agreeing on intersections, define
+\[  
+\phi: \union U_i &\to k\\
+\phi(x) &\da \phi_i(x) \text{ if }x\in U_i
+.\]
+
+This is well-defined, since if $x\in U_i \intersect U_j$, $\phi_i(x) = \phi_j(x)$ since both restrict to the same function on $U_i \intersect U_j$ by assumption.
+
+Why is $\phi$ locally a fraction?
+We need to check that for all $p\in U \da \union U_i$ there exists a $U_p \ni p$ with $\ro{\phi}{U_p} = g_p/h_p$.
+But any $p\in \union U_i$ implies $p\in U_i$ for some $i$.
+Then there exists an open set $U_{i, p} \ni p$ in $U_i$ such that $\ro{\phi}{U_{i, p}} = g_p / h_p$ by definition of a regular function.
+So take $U_p = U_{i, p}$ and use the fact that $\ro{\phi}{U_i} = \phi_i$ along with compatibility of restriction.
+:::
+
+
+:::{.remark}
+General observation: any presheaf of functions is a sheaf when the functions are defined by a local property, i..e any property that can be checked at $p$ by considering an open set $U_p \ni p$.
+
+As in the examples of smooth or holomorphic functions, these were local properties.
+E.g. checking that a function is smooth involves checking on an open set around each point.
+On the other hand, being a constant function is not a local property.
+:::
+
+:::{.definition title="Restriction of a (Pre)sheaf"}
+Given a sheaf $\mathcal{F}$ on $X$ and an open set $U\subset X$, we can define a sheaf $\ro{\mathcal{F}}{U}$ on $U$ (with the subspace topology) by defining $\ro{\mathcal{F}}{U}(V) \da \mathcal{F}(V)$ for $U\subseteq V$.
+:::
+
+:::{.definition title="Stalks"}
+Let $\mathcal{F}$ be a sheaf on $X$ and $p\in X$ a point.
+The *stalk* of $\mathcal{F}$ at $p$, denoted $\mathcal{F}_p$ for $p\in U$, is defined by
+\[  
+\mathcal{F}_p \da \ts{(U, \phi) \st \phi \in \mathcal{F}(U) } / \sim
+\]
+where $(U, \phi) \sim (V, \phi')$ iff there exists a $W\subset U\intersect V$ and $p\in W$ such that $\ro{\phi}{W} = \ro{\phi}{W}'$.
+:::
+
+:::{.example}
+What is the stalk of $\Hol(\CC)$ at $p=0$?
+
+Examples of equivalent elements in this stalk:
+
+![O](figures/image_2020-09-29-10-38-22.png)
+
+In this case
+\[  
+\Hol(\CC)_0 = \ts{\phi = \sum_{i>0}c_i z^i \st \phi \text{ has a positive radius of convergence}}
+.\]
+:::
+
+:::{.definition title="Sections"}
+An element $f\in \mathcal{F}(U)$ is called a *section* over $U$, and elements of the stalk $f\in \mathcal{F}_p$ are called *germs* at $p$.
+:::
+
+
+
+
+# Thursday, October 01
+
+
+## Stalks and Localizations
+
+Recall that a sheaf of rings on a topological space $X$ is a ring $\mathcal{F}(U)$ for all open sets $U\subset X$ satisfying four properties:
+
+1. The empty set is mapped to zeor.
+
+2. The morphism $\mathcal{F}(U)\to \mathcal{F}(U)$ is the identity.
+
+3. Given $W\subset V\subset U$ we have
+<!--\begin{center}-->
+<!--\begin{tikzcd}-->
+<!--\mathcal{F}(U) \ar[rd] & & \mathcal{F}(V) \ar[ld] \\-->
+<!--& \mathcal{F}(W) &-->
+<!--\end{tikzcd}-->
+<!--\end{center}-->
+
+4. Gluing: given sections $s_i \in\mathcal{F}(U_i)$ which agree on overlaps (restrict to the same function on $U_i\intersect U_j$), there is a unique $s\in \mathcal{F}(\union U_i)$.
+
+:::{.example}
+If $X$ is an affine variety with the zariski topology, $\mathcal{O}_X$ is a sheaf of regular functions, where we recall $\mathcal{O}_X(U)$ are the functions $\phi: U\to k$ that are locally a fraction.
+:::
+
+Recall that the *stalk* of a sheaf $\mathcal{F}$ at a point $p\in X$, is defined as 
+\[  
+\mathcal{F}_p \da \ts{(U, \phi) \st p\in U \text{ open },\, \phi \in \mathcal{F}(U)}/\sim
+.\]
+where $(U, \phi) \sim (U', \phi')$ if there exists a $p\in W \subset U\intersect U'$ such $\phi, \phi'$ restricted to $W$ are equal.
+
+Recall that a *local ring* is a ring with a unique maximal ideal $\mfm$.
+Given a prime ideal $\mfp \in R$, so $ab\in \mfp \implies a,b\in \mfp$, the complement $R\setminus P$ is closed under multiplication.
+So we can localize to obtain $R_\mfp = \ts{a/s \st s\in R\setminus P, a\in R}/\sim$ where $a'/s' \sim a/s$ iff there exists a $t\in R\sm P$ such that $t(a's - as') = 0$.
+
+:::{.warning}
+Note that $R_f$ is localizing at the powers of $f$, whereas $R_\mfp$ is localizing at the *complement* of $\mfp$.
+:::
+
+Since maximal ideals are prime, we can localize any ring $R$ at a maximal ideal $R_\mfm$, and this will be a local ring.
+Why?
+The ideals in $R_\mfm$ biject with ideals in $R$ contained in $\mfm$.
+Thus all ideals in $R_\mfm$ are contained in the maximal ideal generated by $\mfm$, i.e. $\mfm R_\mfm$.
+
+:::{.lemma title="?"}
+Let $X$ be an affine variety.
+The stalk of the sheaf of regular functions $\OO_{X, p} \da (\OO_X)_p$ is isomorphic to the localization $A(X)_{\mfm_p}$ where $\mfm_p \da I(\ts{p})$.
+:::
+
+:::{.proof}
+We can write
+\[  
+A(X)_{\mfm_p} \da \ts{{g\over f} \st g\in A(X),\, f\in A(X)\sm \mfm_p} / \sim \\
+\text{ where } g_1/f_1 \sim g_2/f_2 \iff \exists h(p) \neq 0 \text{ where }0 = h(f_2 g_1 - f_1 g_2)
+.\]
+where the $f$ are regular functions on $X$ such that $f(p) = 0$.
+
+We can also write
+\[  
+\OO_{X, p} \da \ts{(U, \phi) \st p\in U,\, \phi \in \OO_X(U) } /\sim 
+\\ \text{ where } (U, \phi) \sim (U', \phi') 
+\iff \exists p\in W \subset U\intersect U' \text{ s.t. } \ro{\phi}{W} = \ro{\phi'}{W}
+.\]
+
+So we can define a map
+\[  
+\Phi: A(X)_{\mfm_p} &\to \OO_{X, p} \\
+{g\over f} &\mapsto \qty{D_f, {g\over f}}
+.\]
+
+**Step 1:**
+There are equivalence relations on both sides, so we need to check that things are well-defined.
+
+We have
+\[  
+g/f \sim g'/f' &\iff \exists g \text{ such that } h(p) \neq 0,\, h(gf' - g'f)=0 \in A(X) \\
+&\iff \text{the functions } {g\over f}, {g' \over f'} \text{ agree on } W\da D(f) \intersect D(f') \intersect D(h) \\
+&\implies (D_f, g/f) \sim (D_{f'}, g'/f')
+,\]
+since there exists a $W\subset D_f \intersect D_{f'}$ such that $g/f, g'/f'$ are equal.
+\
+
+**Step 2:**
+Surjectivity, since this is clearly a ring map with pointwise operations.
+
+Any germ can be represented by $(U, \phi)$ with $\phi \in \OO_X(U)$.
+Since the sets $D_f$ form a base for the topology, there exists a $D_f\subset U$ containing $p$.
+By definition, $(U, \phi) = (D_f, \ro{\phi}{D_f})$ in $\OO_{X, p}$.
+
+Using the proposition that $\OO_X(D(f)) = A(X)_f$, this implies that $\ro{\phi}{D_f} = g/f^n$ for some $n$ and $f(p) \neq 0$, so $(U, \phi)$ is in the image of $\Phi$.
+\
+
+**Step 3**:
+Injectivity.
+We want to show that $g/f\mapsto 0$ implies that $g/f = 0 \in A(X)_{\mfm_p}$.
+
+Suppose that $(D_f, g/f) = 0 \in \OO_{X, p}$ and $(U, \phi) = 0 \in \OO_{X,p}$, then there exists an open $W\subset D_f$ containing $p$ such that after passing to some distinguished open $D_h\ni p$ such that $\phi = 0$ on $D_h$.
+Wlog we can assume $\phi = 0$ on $U$, since we could shrink $U$ (staying in the same equivalence class) to make this true otherwise.
+Then $\phi = g/f$ on $D_h$, using that $\OO_X(D_f) = A(X)_f$, so $g/f = 0$ here.
+So there exists a $k$ such that $f^k(g\cdot 1 - 0\cdot f) = 0$ in $A(X)$, so $f^k g=0 \in A(X)_{\mfm_p}$.
+:::
+
+Conclusion:
+\[  
+\OO_{X, p} \cong A(X)_{\mfm_p}
+.\]
+
+:::{.example}
+Let $X = \ts{p, q}$ with the discrete topology with the sheaf $\mathcal{F}$ given by $p\mapsto R, q\mapsto S, X\mapsto R\cross S$.
+
+Then $\mathcal{F}_p = R$, since if $U$ is open and $p\in\ U$ then either $U= \ts{p}$ or $U = X$.
+We can check that for $(r, s)$ a section of $\mathcal{F}$, we have an equivalence of germs $(X, (r, s)) \sim (\ts{p}, r)$ since $\ts p \subset X\intersect \ts p$.
+Here $X$ plays the role of $U$, $\ts p$ of $U'$, and the last $\ts p$ the role of $W \subset U\intersect U'$.
+
+\[  
+\OO_{X, p} &\to A(X) \\
+(\ts{p}, r) &\mapsto r \\
+\mathcal{F}_p &\cong R
+.\]
+:::
+
+:::{.example}
+Let $M$ be a manifold and consider the sheaf $C^\infty$ of smooth functions on $M$.
+Then the stalk $C_p^\infty$ at $p$ is defined as the set of smooth functions in a neighborhood of $p$ modulo functions being equivalent if they agree on a small enough ball $B_\eps(p)$.
+This contains a maximal ideal $\mfm_p$, the smooth functions vanishing at $p$.
+
+Then $\mfm_p^2$ is again an ideal, equal to the set $\ts{f \st \del_i \del_j f\mid_p = 0,\, \forall i,j}$.
+Thus $\mfm_p/\mfm_p^2 \cong \ts{\del_v}\dual$, the dual of the set of directional derivatives.
+:::
+
+## What's the Point!
+
+Problem: what should a map of affine varieties be?
+A bad definition would be just taking the continuous maps: for example, any bijection $\AA_\CC^1$ is a homeomorphism in the zariski topology.
+Why? 
+This coincides with the cofinite topology, and the preimage of a cofinite set is cofinite.
+
+How do we fix this?
+
+1. $f:X\to Y$ is continuous, i.e. $f^{-1} (U)$ is open whenever $U$ is open.
+
+2. Given $U\subset Y$ open and $\phi \in \OO_Y(U)$, the function $\phi \circ f: f^{-1}(U) \to k$ is regular.
+
+We'll take this to be the definition of a morphism $X\to Y$.
+
+:::{.example}
+For smooth manifolds, we also require that there is a pullback that preserves smooth functions:
+\[  
+f^*: C^\infty(U) \to C^\infty(f^{-1}(U))
+.\]
+:::
+
+
+# Tuesday, October 06
+
+Note: the sheaf of locally constant functions valued in a set $S$ is written $\underline{\mathbf S}$.
+
+## Gathmann Chapter 4
+
+:::{.definition title="Ringed Spaces"}
+A **ringed space** is a topological space $X$ together with a sheaf $\OO_X$ of rings.
+:::
+
+:::{.example}
+\hfill
+
+1. $X$ an affine variety and $\OO_X$ its ring of regular functions.
+
+2. $X$ a manifold over $\RR^n$ with $\OO_X$ a ring of smooth or continuous functions on $X$.
+
+3. $X = \ts{p, q}$ with the discrete topology and $\OO_X$ given by $p\mapsto R, q\mapsto S$.
+
+4. Let $U\subset X$ an open subset of $X$ an affine variety.
+  Then declare $\OO_U$ to be $\ro{OO_X}{U}$.
+:::
+
+Recall that the restriction of a sheaf $\mathcal{F}$ to an open subset $U\subset X$ is defined by $\ro{\mathcal{F}}{U}(V) = \mathcal{F}(V)$.
+
+:::{.example}
+Let $X$ be a topological space and $p\in X$ a point.
+The *skyscraper sheaf at $p$* is defined by
+\[  
+K_p(U) \da 
+\begin{cases}
+K & p\in U \\
+0 & p\not\in U
+\end{cases}
+.\]
+:::
+
+Convention: we'll always assume that $\OO_X$ is a sheaf of functions, so $\OO_X(U)$ is a subring of all $K\dash$valued functions on $U$.
+Moreover, $\res_{UV}$ is restriction of $K\dash$valued functions.
+
+:::{.definition title="Morphisms"}
+A *morphism of ringed spaces* 
+\[  
+(X, \OO_X) \mapsvia{f}  (Y, \OO_Y)
+\]
+ is a continuous map $X\to Y$ such that for all opens $U \subset Y$ and any $\phi \in \OO_Y(U)$, the pullback satisfies $f^* \phi \in \OO_X(f\inv(U))$, i.e. the pullback of a regular function is regular.
+:::
+
+Note: need convention that $\OO_X$ is a sheaf of $K\dash$valued functions in order to make sense of pullbacks. 
+In general, for schemes, need some analog of $f^*: \OO_X(V) \to \OO_X(U)$.
+
+:::{.example}
+If $(X, \OO_X)$ is a ringed space associated to an affine variety, ?
+:::
+
+
+:::{.example}
+Let $X = \AA^1/K$ and $U = D(f)$ for $f(x) =x$, then $D(f) = \AA^1\smz$.
+Then $U\injects X$ is continuous.
+Given an open set $D(f) \subset \AA^1$, we have
+\[  
+\OO_{\AA^1}(D(f)) \da \ts{g/f^n \st g\in K[x]}
+.\]
+We want to show that $\iota: (U, \OO_U) \injects (X, \OO_X)$ is a morphism of ringed spaces where $\OO_U(V) = \OO_X(V)$.
+Does $\iota^*$ pull back regular functions to regular functions?
+Yes, since $\iota^{-1} (D(f)) = D(xf)$ and $g/f^n \in \OO_U(\iota^{-1}(D(f)))$.
+:::
+
+:::{.example}
+A non-example: take
+\[  
+h: \AA^1 &\to \AA^1 \\
+x & \mapsto 
+\begin{cases}
+x & x \neq \pm 1 \\
+-x & x= \pm 1
+\end{cases}
+.\]
+This is continuous because the zariski topology on $\AA^1$ is the cofinite topology (since the closed sets are finite), so any injective map is continuous since inverse images of cofinite sets are again cofinite.
+
+Question:
+Does $h$ define a morphism of ringed spaces?
+I.e., is the pullback of a regular function on an open still regular?
+Take $U = \AA^1$ and the regular function $x\in \OO_{\AA^1}(\AA^1)$.
+Then $h^*x = x\circ h$, so
+\[  
+(x\circ h)(p) =
+\begin{cases}
+p & p\neq \pm 1 \\
+-p & p= \pm 1 
+\end{cases}
+\not \in K[x]
+\]
+since this is clearly not a polynomial: if two polynomials agree on an infinite set of points, they are equal.
+:::
+
+:::{.example}
+Consider $\iota: (\RR^2, C^\infty) \injects (\RR^3, C^\infty)$ is the inclusion of a coordinate hyperplane.
+To say that this is a morphism of ringed spaces, we need that for all $U\subset \RR^3$ open and $f:U\to \RR$ a smooth function, we want $i^* f\in C^\infty (\iota^{-1}(U))$.
+But this is the same as $f\circ \iota \in C^\infty(\RR^2\intersect U)$, which is true.
+:::
+
+
+:::{.proposition title="Properties of Morphisms of Ringed Spaces"}
+\hfill
+
+1. They can be composed: if $\phi \in \OO_Z(U)$, then $g^* \phi \in \OO_Y(g^{-1}(U))$ and so $f^* g^* \phi \in \OO_X(f^{-1} g^{-1} (U))$.
+
+2. The identity is a morphism.
+
+Thus ringed spaces form a category, since composition is associative.
+:::
+
+:::{.lemma title="Gluing for Morphisms"}
+Let $f:X\to Y$ be a continuous map between ringed spaces.
+Assume there exists an open cover $\ts{U_i}_{i\in I}\covers X$ such that $\ro{f}{U_i}$ is a morphism, then $f$ is a morphism.
+
+Slogan: it suffices to check a morphism on an open cover.
+:::
+
+:::{.proof}
+Part a:
+Need to check that $f$ is continuous, can compute
+\[  
+f^{-1}(V) = \Union_{i\in I} U_i \intersect f^{-1}(V) = \Union_{i\in I} \ro{f}{U_i}^{-1} (V)
+.\]
+but the later is open as a union of open sets, where each constituent set is open by assumption.
+
+> Will finish proof next time.
+
+:::
+
+
+# Thursday, October 08
+
+:::{.proposition title="Gluing"}
+Let $f:X\to Y$ be a map of ringed spaces such that there exists an open cover $U_i\covers X$ such that $\ro{f}{U_i}$ is a morphism of ringed spaces. 
+Then $f$ itself is a morphism is a morphism of ringed spaces.
+:::
+
+Recall that we proved part (a).
+
+:::{.proof title="part b"}
+We want to show that $f^*$ sends sections of $\OO_Y$ to sections of $\OO_X$ (e.g. regular functions pullback).
+Let $V\subset Y$ be open and $\phi \in \OO_Y(V)$, then
+\[  
+\ro{f^* \phi}{U_i \intersect f^{-1} (V)}
+\qty{ \ro{f^* \phi}{U_i \intersect f^{-1} (V)} }^* \phi \in 
+\OO_X(U_i f^{-1} (V))
+.\]
+
+Since pullback commutes with restriction, $f^* \phi$ is the unique $k\dash$valued function for which
+\[  
+\ro{f^* \phi}{U_i \intersect f^{-1} V} =
+\ro{f}{U_i\intersect f^{-1} V}^* \phi
+.\]
+and all of the latter functions agree on overlaps $U_i \intersect U_j$.
+This by unique gluing, $f^* \phi \in \OO_X(f^{-1}(V))$.
+:::
+
+:::{.proposition title="?"}
+Let $U\subset X$ be open in an affine variety and let $Y\subset \AA^n$ be another affine variety.
+Then the morphisms $U\to Y$ of ringed spaces are the maps of the form $f = \thevector{f_1, \cdots, f_n}: U\to \AA^n$ such that $f(U) \subset Y$ and $f_i \in \OO_X(U)$ for all $i$. 
+:::
+
+:::{.proof}
+$\implies$:
+Assume that $f: U\to Y$ is a morphism.
+Then the coordinate functions $Y\mapsvia{y_i} \AA_1$ are regular functions, since they generate $\OO_Y(Y) = k[y_1, \cdots, y_n]/I(Y)$.
+Then $f^* y_i$ is a regular function, so define $f_i \da f^* y_i$.
+But then $f = \tv{f_1, \cdots, f_n}$.
+
+$\impliedby$:
+Conversely suppose $f \da \tv{f_1, \cdots, f_n}: U\to Y \subset \AA^n$ is a map such that $f_i \in \OO_U(U)$.
+We want to show that $f$ is a morphism, i.e. that the pullback of every regular function is regular.
+We thus need to show
+
+1. $f$ is continuous, and
+2. $f^*$ pulls back regular functions.
+
+For 1, suppose $Z$ is closed, then it suffices to show $f^{-1} (Z)$ is closed.
+Then $Z = V(g_1, \cdots, g_n)$ for some $g_i \in A(Y)$.
+So we can write
+\[  
+f^{-1} (Z) = \ts{
+x\in U \st g_i(f_1(x), \cdots, f_n(x)  ) = 0\, \forall i
+}
+.\]
+The claim is that the functions $g_i$ are regular, i.e. in $\OO_U(U)$, because the $g_i$ are polynomials in regular functions, which form a ring.
+
+This is the common vanishing locus of $m$ regular functions on $U$. 
+By lemma 3.4, the vanishing locus of a regular function is closed, so $f^{-1} (Z)$ is closed.
+\
+
+For 2, let $\phi \in \OO_Y(W)$ be a regular function on $W\subset Y$ open.
+Then
+\[  
+f^* \phi  = \phi \circ f: f^{-1} (W) &\to K \\
+x &\mapsto \phi(f_1(x), \cdots, f_n(x))
+.\]
+We want to show that this is a regular function.
+Since the $f_i$ are regular functions, they are locally fractions, so for all $x\in f^{-1} (W)$ there is a neighborhood of $U_x\ni x$ such that (by intersecting finitely many neighborhoods) all of the $f_i$ are fractions $a_i/b_i$.
+
+Then at a point $p = \tv{f_i(x)}$ in the image, there exists an open neighborhood $W_p$ in $W$ such that $\phi = U/V$.
+But then $\phi{\tv{a_i /b_i}} = (U/V)(\tv{a_i/b_i})$, which is evaluation of a fraction of functions on fractions.
+:::
+
+:::{.example}
+Let $Y = V(xy-1)$ and $U\subset \AA^1$ be $D(x)$, so $U = \AA^1\smz$.
+Note that $A(Y) = k[x,y]/\gens{xy-1}$ and $A(\AA^1) = k[t]$, and 
+$f_1=t, f_2=t^{-1} \in \OO_U(U)$.
+Then 
+\[  
+\tv{f_1, f_2}: U &\to Y\subset  \AA^2 \\
+p &\mapsto \tv{p, {1\over p} }
+.\]
+Thus the image lies in $Y$.
+
+Conversely, there is a map
+\[  
+V(xy - 1) &\to U = D(0) \subset  \AA^1 \\
+\tv{x, y} &\mapsto x
+.\]
+This a morphism from $V(xy - 1)$ to $\AA^1$, since the coordinates are regular functions.
+Since the image is contained in $U$, the definitions imply that this is in fact a morphism of ringed spaces.
+We thus have maps $U\mapsvia{\tv{t, t^{-1} }} V(xy-1)$ and $V(xy-1) \mapsvia{x} U$ which are mutually inverse, so these are isomorphic as ringed spaces.
+:::
+
+Thus maps of affine varieties (or their open subsets) are given by functions whose coordinates are regular.
+
+
+:::{.corollary title="?"}
+Let $X, Y$ be affine varieties, then there is a correspondence
+\[  
+\correspond{\text{Morphisms } X\to Y }
+&\iff
+\correspond{k\dash\text{algebra morphisms } A(Y) \to A(X)} \\
+X\to Y &\mapsto A(Y) \to A(X) \\
+f &\mapsto f^* \OO_Y(Y) = \OO_X(X)
+.\]
+
+> Thus there is an equivalence of categories between reduced $k\dash$algebras and ???.
+:::
+
+:::{.proof}
+We have a map in the forward direction.
+Conversely, given a $k\dash$algebra morphism $g:A(Y) \to A(X)$, we need to construct a morphism $f$ such that $f^* =  g$.
+Let $Y\subset \AA^n$ with coordinate functions $y_1, \cdots, y_n$.
+Then $f_i = g(y_i) \in A(X) = \OO_X(X)$.
+Set $f = \tv{f_1, \cdots, f_n}$.
+Then by the proposition, $f$ is a morphism to $\AA^n$.
+
+Let $h\in A(\AA^n)$, then 
+
+\[
+(f^*h)(x) 
+&= h(f(x)) \\
+&= h(\tv{f_1(x) , \cdots, f_n(x)}) \\
+&= h(g(y_1), \cdots, g(y_n)) \\ 
+&= g(h)(x) \qquad\text{since $g$ is an algebra morphism, $h$ is a polynomial}
+\]
+which follows since $f_i(x) = g(y_i)(x)$, where $g:A(Y) \to A(X)$.
+So $f^*(h) = g(h)$ for all $h\in A(\AA^n)$, so the pullback of $f$ is $g$.
+We now need to check that it's contained in the image.
+Let $h\in I(Y)$, then $f^*(h) = g(h) = 0$ since $h = 0 \in A(Y)$.
+So $\im f \subset Y$. 
+Since the coordinate $f_i$ are regular, this is a morphism, and we have $f^* = g$ as desired.
+:::
+
+:::{.example}
+Isomorphisms are not necessarily bijective morphisms.
+Let $X = V(y^2 - x^3) \subset \AA^2$.
+
+Then there is a morphism
+\[  
+\phi: \AA^1 &\to X \\
+t &\mapsto \tv{t^2, t^3}
+,\]
+since the coordinates $t^2, t^3$ are regular functions.
+Then $\phi$ is a bijection, since we can define a piecewise inverse
+\[  
+\phi^{-1}: X &\to \AA^1 \\
+\tv{x, y} &\mapsto 
+\begin{cases}
+y/x & x\neq 0 \\
+0 & \text{else}
+\end{cases}
+.\]
+However, $\phi ^{-1}$ is not a morphism. 
+For instance, pulling back the function $t$ yields $\qty{\phi ^{-1} }^* t \not \in A(X)$, since it is equal to the map $\tv{x, y} \mapsto y/x$ for $x\neq 0$ and $0$ if $x=y=0$, which is not a regular function.
+
+Since $\phi$ is a morphism, we can consider the corresponding map of $k\dash$algebras
+\[  
+\phi^*: A(X) &\to A(\AA^1) \\
+k[x, y]/\gens{y^2 - x^3} &\mapsto k[t] \\
+x & \mapsto t^2 \\
+y &\mapsto t^3
+.\]
+
+
+:::
+
+
+# Tuesday, October 13
+
+Last time: proved that if $X, Y$ are affine varieties then there is a bijection
+\[  
+\correspond{\text{Morphisms} \\ f:X\to Y}
+&\iff
+\correspond{\text{$k\dash$algebra morphisms}\\ A(Y) \to A(X)}
+\\
+f & \mapsto f^*: \OO_Y(Y) \to \OO_X(X)
+.\]
+
+:::{.remark}
+A morphism $f:X\to Y$ is by definition a morphism of ringed spaces where $\OO_X, \OO_Y$ are the sheaves of regular functions.
+:::
+
+:::{.remark}
+This shows $X\cong Y$ as ringed spaces iff $A(X) \cong A(Y)$ as $k\dash$algebras.
+:::
+
+:::{.example}
+Take
+\[  
+f: \AA^1 &\to V(y^2 - x^3) \subset \AA^2\\
+t &\mapsto (t^2, t^3)
+.\]
+This is a morphism by proposition 4.7.
+
+We then get a map on algebras
+\[  
+f^*: A(V(y^2 - x^3)) = k[x, y] / \gens{y^2 - x^3} &\to k[t] \\
+x & \mapsto t^2 \\
+y & \mapsto t^3
+,\]
+but even though $f$ is a bijective morphism, it's not an isomorphism of ringed spaces.
+This can be seen from the fact that the image doesn't contain $t$.
+:::
+
+
+> Review of introductory category theory.
+
+We'll define a category $\mathrm{AffVar}_k$ whose objects are affine varieties over $k$ and morphisms in $\hom(X, Y)$ will be morphisms of ringed spaces.
+There is a contravariant functor $A$ into reduced finitely generated $k\dash$algebras which sends $X$ to $A(X)$ and sends morphisms $f:X\to Y$ to their pullbacks $f^*:A(Y) \to A(X)$, where "reduced" denotes the fact that there are no nilpotents.
+
+> Review of the universal property of the product.
+
+:::{.remark}
+If we have $X,Y$ affine varieties, we take $X\cross Y$ to be the categorical product instead of the underlying product of topological spaces.
+We have 
+\[
+A(X\cross Y) \cong A(X) \tensor_k A(Y) \cong k[x_1, \cdots, x_n, y_1, \cdots, y_m] / I(X) \tensor 1 + 1 \tensor I(Y).\]
+This recovers the product, since if we have
+
+\begin{center}
+\begin{tikzcd}
+Z \ar[dr, dotted, "\exists H"]\ar[rrd, bend left, "f"]\ar[rdd, bend right, "g"] & & \\
+& X\cross Y\ar[r]\ar[d] &X  \\
+& Y &  \\
+\end{tikzcd}
+\end{center}
+where $H = (f, g)$.
+:::
+
+:::{.remark}
+Products of spaces are sent to the tensor product of $k\dash$algebras, i.e. pullbacks are sent to pushouts.
+:::
+
+:::{.remark}
+Note that the groupoid associated to a group does not have products: there can only be one element, but the outer triangles will not necessarily simultaneously commute.
+:::
+
+
+
+
+
+
+
+# Thursday, October 15
+
+## End of Chapter 4
+
+Recall the proposition: morphisms between affine varieties are in bijection with $k\dash$algebra morphisms between their coordinate rings.
+As a result, we'll redefine an affine variety to be a ringed space isomorphic to an affine variety.
+
+This allows you to say that affine varieties embedded in different ways are the same.
+
+:::{.example}
+$\AA^2$ vs $V(x) \subset  \AA^n$.
+In fact, the map
+\[  
+f: \AA^2 &\to \AA^3
+(y,z) &\mapsto (0, y, z)
+.\]
+This is continuous and the pullback of regular functions are again regular.
+:::
+
+:::{.remark}
+With the new definition, there is a bijection between affine varieties up to isomorphisms and finitely generated $k\dash$algebras up to algebra isomorphism.
+:::
+
+:::{.proposition title="?"}
+Let $D(f) \subset X$ be a distinguished open, then $D(f)$ is a ringed space since $(X, \OO_X)$ is and we can restrict the structure sheaf.
+:::
+
+:::{.proof}
+Set
+\[  
+Y \da \ts{(x, t) \in X\cross \AA^1 \st tf(x) = 1} \subset X\cross \AA^1
+.\]
+This is an affine variety, since $Y = V(I + \gens{ft-1})$.
+This is isomorphic to $D(f)$ by the map
+\[  
+Y &\to D(f)
+(x, t) &\mapsto x
+.\]
+with inverse $x \mapsto (x, {1\over f(x)})$.
+
+![Image](figures/image_2020-10-15-09-50-03.png)
+
+Note that $\pi: X\cross \AA^1 \to X$ is regular, using prop 3.8: if the coordinates of a map are regular functions, then the entire map is a morphism of ringed spaces.
+We can then note that $1\over f(x)$ is regular on $D(f)$, since $f\neq 0$ there.
+:::
+
+:::{.example}
+$\AA^2 \smz$ is not an affine variety.
+Note that this is also not a distinguished open.
+
+We showed on a HW problem that the regular functions on $\AA^2\smz$ are $k[x, y]$, which are also the regular functions on $\AA^2$.
+So there is a map inducing a pullback
+\[  
+\iota: \AA^2\smz &\to \AA^2 \\
+\iota^* k[x, y] \mapsvia{\sim} k[x, y]
+.\]
+Note that $\iota^*$ is an isomorphism on the space of regular functions, but $\iota$ itself is not an isomorphism of topological spaces.
+Why? $i^{-1}$ is not defined at zero.
+:::
+
+## Chapter 5
+
+:::{.definition title="Prevariety"}
+A *prevariety* is a ringed spaced $X$ with a finite open cover by affine varieties.
+This is a topological space $X$ with an open cover $\ts{U_i}_{i=1}^n \covers X$ such that $(U_i, \ro{\OO_X}{U_i} )$ is isomorphic to an affine variety.
+We'll call $\OO_X$ the sheaf of *regular functions* and $U_i\subset X$ *affine open sets*.
+:::
+
+One way to construct prevarieties from affine varieties is by *gluing*:
+
+:::{.definition title="Glued Spaces"}
+let $X_1, X_2$ be prevarieties which are themselves actual varieties.
+Let $U_{12} \subset X_1, U_{21} \subset X_2$ be opens and $f: U_{12} \to U_{21}$ an isomorphism of ringed spaces.
+
+![Image](figures/image_2020-10-15-10-08-59.png)
+
+As a set, take $X = X_1 \disjoint X_2/\sim$ where $a\sim f(a)$ for all $a\in U_{12}$.
+As a topological space, $U \subset X$ is open iff $U_i \da U\intersect X_i$ are open in $X_i$.
+As a ringed space, we take $\OO_X(U) \da \ts{\phi: U\to k \st \ro{\phi}{U_i} \in \OO_{X_i}}$.
+:::
+
+:::{.example}
+The prototypical example is $\PP^1/k$ constructed from two copies of $\AA^1/k$.
+Set $X_1 = \AA^1, X_2 = \AA^2$, with $U_{12} \da D(x) \subset X_1$ and $U_{21} \da D(y) \subset X_2$.
+Then let
+\[  
+f: U_{12} &\to U_{21} \\
+x & \mapsto {1\over x}
+.\]
+This defines a regular function on $U_{12}$ so defines a morphism $U_{12} \mapsvia{\sim} \AA^1$.
+
+![Image](figures/image_2020-10-15-10-20-32.png)
+
+Over $\CC$, topologically this yields a sphere
+
+![Image](figures/image_2020-10-15-10-23-24.png)
+
+Given a ringed space $X = X_1\union X_2$ with a structure sheaf $\OO_X$, what is $\OO_X(X)$? 
+By definition, it's 
+
+\[  
+\OO_X(X) \da \ts{\phi: X\to k \st \ro{\phi}{X_1}, \ro{\phi}{X_2} \text{ are regular} }
+.\]
+
+Then if $\ro{\phi}{X_1} = f(x)$ and $\ro{\phi}{X_2} = g(y)$, we have $y=1/x$ on the overlap and so $\ro{f(x)}{D(x)} = \ro{g(1/x)}{D(x)}$.
+Since $f, g$ are rational functions agreeing on an infinite set, $f(x) = g(1/x)$ both being polynomial forces $f = g = c$ for some constant $c \in k$.
+Thus $\OO_X(X) = k$.
+
+What about $\OO_X(X_1)$?
+This is just $k[x]$, and similarly $\OO_X(X_2) = k[y]$.
+We can also consider $\OO_X(X_1\intersect X_2) = D(x) \subset X$, so this yields $k[x, 1/x]$.
+We thus have a diagram
+\begin{center}
+\begin{tikzcd}
+                         & \OO_X(X_1) = k[x] \ar[rd, "x\mapsto x"]   & \\
+\OO_X(X) \ar[ru] \ar[rd] &                                           & \OO_X(X_1\intersect X_2) = k[x, 1/x] \\
+                         & \OO_X(X_2) = k[y] \ar[ru, "y\mapsto 1/x"] &
+\end{tikzcd}
+\end{center}
+:::
+
+
+
+# Misc Unsorted
+
+![Image](figures/image_2020-09-16-04-09-22.png)

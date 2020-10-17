@@ -191,6 +191,18 @@
 }
 \def\thmlopatch@endchapter{}
 
+\def\ll@tdefn{%
+   \protect\thmtopatch@numbernametext
+     \ifx\@empty\thmt@shortoptarg\else[\thmt@shortoptarg]\fi
+     {\csname the\thmt@envname\endcsname}%
+     {\thmt@thmname}%
+}
+
+\newcommand\thmtopatch@numbernametext[3][]{%
+  #2 #3%
+  \if\relax\detokenize{#1}\relax\else\space -- #1\fi
+}
+
 \makeatother
 \renewcommand{\thmtformatoptarg}[1]{ -- #1}
 %\renewcommand{\listtheoremname}{List of definitions}
