@@ -54,8 +54,12 @@ $endif$
 $if(hidesolutions)$
 \RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
 $endif$
+
 \titlehead{
-  \centering\includegraphics[width=\linewidth]{./figures/cover.png}
+  $if(cover-image)$
+  \centering\includegraphics[width=\linewidth]{$cover-image$}
+  $endif$
+  $if(author-note)$
    \begin{minipage}{.35\linewidth}
     \begin{flushleft}
       \vspace{2em}
@@ -65,18 +69,21 @@ $endif$
     \hfill
     \begin{minipage}{.65\linewidth}
     \end{minipage}
+  $endif$
 }
 
 \begin{document}
 
 \date{}
 \maketitle
+$if(author)$
 \begin{flushleft}
 \textbf{$for(author)$$author.name$$sep$ \and $endfor$} \\
 \textit{$for(author)$$author.affiliation$$sep$ \and $endfor$} \\
 \textit{$for(author)$$author.email$$sep$ \and $endfor$} \\
 {\tiny \textit{Last updated:} $current_date$ }
 \end{flushleft}
+$endif$
 \newpage
 
 
