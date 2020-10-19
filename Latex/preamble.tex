@@ -4,7 +4,7 @@
 
 
 %\documentclass[]{article}
-\documentclass[11pt, a4paper]{scrartcl}
+\documentclass[11pt, a4paper, bibliography=totocnumbered]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[usename, dvipsnames]{xcolor}
@@ -46,13 +46,10 @@
 \evensidemargin=\dimexpr\evensidemargin + 3cm\relax
 \marginparwidth=\dimexpr \marginparwidth + 3cm\relax
 \usepackage[textwidth=25mm, textsize=tiny]{todonotes}
-\usepackage[msc-links]{amsrefs}
 \usepackage{cleveref} % use \cref{}, automatically deduces theorem, proposition, etc
 \usepackage{csquotes}
 \usepackage{longtable}
 \usepackage{tabularx}
-% Creating multiple types of index
-\usepackage{imakeidx}
 
 % Remove indentation for new paragraphs
 \usepackage{parskip}
@@ -277,3 +274,9 @@ arc(90:0:1); % inside palm
 %\usepackage{stix2}
 %\usepackage{libertineotf}
 
+%\usepackage[msc-links]{amsrefs}
+%\usepackage[style=authoryear]{biblatex}
+\usepackage{biblatex}
+\bibliography{/home/zack/Notes/library.bib}
+
+\usepackage{svg}

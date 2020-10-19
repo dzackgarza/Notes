@@ -21,10 +21,9 @@
 \makeatother
 
 \setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
-% Create indices up front
-\makeindex[title=Concept index]
 
 \title{
+\rule{\linewidth}{1pt} \\
 \textbf{
   $if(title)$
   $title$
@@ -33,22 +32,10 @@
   $endif$
 }
   $if(subtitle)$
-  \\ {\normalsize $subtitle$}
+  \\ {\normalsize $subtitle$} \\
   $endif$
+\rule{\linewidth}{2pt}
 }
-
-$if(author)$
-\author{$author$}
-$else$
-\author{D. Zack Garza}
-$endif$
-
-$if(date)$
-\date{$date$}
-$else$
-\date{\today}
-$endif$
-
 
 
 $if(highlighting-macros)$
@@ -67,14 +54,42 @@ $endif$
 $if(hidesolutions)$
 \RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
 $endif$
+\titlehead{
+  \centering\includegraphics[width=\linewidth]{./figures/cover.png}
+   \begin{minipage}{.35\linewidth}
+    \begin{flushleft}
+      \vspace{2em}
+      {\fontsize{6pt}{2pt} \textit{Notes: $author-note$ } } \\
+    \end{flushleft}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.65\linewidth}
+    \end{minipage}
+}
 
 \begin{document}
+
+\date{}
 \maketitle
+\begin{flushleft}
+\textbf{$for(author)$$author.name$$sep$ \and $endfor$} \\
+\textit{$for(author)$$author.affiliation$$sep$ \and $endfor$} \\
+\textit{$for(author)$$author.email$$sep$ \and $endfor$} \\
+{\tiny \textit{Last updated:} $current_date$ }
+\end{flushleft}
+\newpage
+
+
 $if(notoc)$
 $else$
 \tableofcontents
 $endif$
 
+$body$
+
+\newpage
+
+\section{Indices}
 $if(todos)$
 \newpage
 \listoftodos[List of Todos]
@@ -82,16 +97,21 @@ $endif$
 
 $if(book)$
 % Hook into amsthm environments to list them.
-\renewcommand{\listtheoremname}{List of Definitions}
+\renewcommand{\listtheoremname}{Definitions}
 \listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
 
-\renewcommand{\listtheoremname}{List of Theorems}
+\renewcommand{\listtheoremname}{Theorems}
 \listoftheorems[ignoreall,show={theorem,proposition}, numwidth=3.5em]
+
+\renewcommand{\listtheoremname}{Exercises}
+\listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
+
+\listoffigures
+
 $endif$
 
-$body$
 
+\printbibliography[title=Bibliography]
 
-\bibliography{/home/zack/Notes/library.bib}
 
 \end{document}

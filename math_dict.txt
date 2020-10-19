@@ -975,3 +975,8 @@ Audin
 prevariety
 prevarieties
 reindexing
+Cokernels
+Yoneda's
+naturality
+topoi
+mathbf

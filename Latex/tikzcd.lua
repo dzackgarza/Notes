@@ -2,15 +2,16 @@ local system = require 'pandoc.system'
 
 local tikz_doc_template = [[
 \documentclass{standalone}
-\usepackage{xcolor}
 \usepackage{tikz}
 \usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix, positioning, snakes, shapes}
+\usepackage{mathtools}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd, thmtools, xpatch}
+\input{/home/zack/Notes/Latex/latexmacs.tex}
 \begin{document}
 \nopagecolor
 %s
 \end{document}
 ]]
-
 
 local function tikz2image(src, filetype, outfile)
   system.with_temporary_directory('tikz2image', function (tmpdir)
@@ -19,21 +20,11 @@ local function tikz2image(src, filetype, outfile)
       f:write(tikz_doc_template:format(src))
       f:close()
       os.execute('pdflatex tikz.tex')
-      if filetype == 'pdf' then
-        os.rename('tikz.pdf', outfile)
-      else
-        os.execute('pdf2svg tikz.pdf ' .. outfile)
-      end
+      os.execute('pdf2svg tikz.pdf "' .. outfile .. '"')
     end)
   end)
 end
 
-extension_for = {
-  html = 'svg',
-  html4 = 'svg',
-  html5 = 'svg',
-  latex = 'pdf',
-  beamer = 'pdf' }
 
 local function file_exists(name)
   local f = io.open(name, 'r')
@@ -49,19 +40,29 @@ local function starts_with(start, str)
   return str:sub(1, #start) == start
 end
 
+
 function RawBlock(el)
   if starts_with('\\begin{tikzcd}', el.text) then
-    local filetype = extension_for[FORMAT] or 'svg'
-    local fname = system.get_working_directory() .. '/' ..
-        pandoc.sha1(el.text) .. '.' .. filetype
+    local filetype = 'svg'
+    local sha = pandoc.sha1(el.text)
+    local bname = system.get_working_directory() .. '/' .. sha
+    local fname = bname .. '.' .. filetype
     if not file_exists(fname) then
       tikz2image(el.text, filetype, fname)
     end
-    local the_image = pandoc.Image({}, fname)
-    return pandoc.Para({the_image})
+    --img = pandoc.Image({}, fname)
+    --attr = pandoc.Attr("", {"content_centered"})
+    --sil = pandoc.Span(img, attr)
+    if FORMAT:match 'html' then
+      ril = pandoc.RawInline('html', '<p style="text-align:center;"> <img style="width:100%" src="' .. fname .. '"></p>')
+    elseif FORMAT:match 'latex' or FORMAT:match 'pdf' or FORMAT:match 'markdown' then
+      ril = pandoc.RawInline( "tex", "\\begin{center}\\includesvg[width=\\linewidth]{" .. sha .. "}\\end{center}" )
+    else
+      return el
+    end
+    return pandoc.Para(ril)
+
   else
    return el
   end
 end
-
-

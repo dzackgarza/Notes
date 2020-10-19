@@ -1,12 +1,10 @@
 
----
-title: Algebraic Geometry
-todos: true
-book: true
----
+
+# Prologue {-}
 
 These are notes live-tex'd from a graduate course in Algebraic Geometry taught by Philip Engel at the University of Georgia in Fall 2020.
 As such, any errors or inaccuracies are almost certainly my own.
+
 
 \medskip
 \begin{flushright}
@@ -14,15 +12,34 @@ As such, any errors or inaccuracies are almost certainly my own.
   \currenttime
 \end{flushright}
 
+## References 
+
+- Gathmann's Algebraic Geometry notes[@gathmannAlgebraicGeometry]
+  <https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019.pdf>
+
+## Notation
+
+\[  
+V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
+.\]
+
+
+
+\newpage
+
+
+
 # Friday, August 21
 
-> Reference: 
+> Ref: 
 >
 > <https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019.pdf>
 
 
 
-General idea: functions a coordinate ring $R[x_1, \cdots, x_n]/I$ will correspond to the geometry of the variety cut out by $I$.
+General idea: functions a coordinate ring $R[x_1, \cdots, x_n]/I$ will correspond to the geometry of the variety cut out by $I$.[^1]
+
+[^1]: Example footnote.
 
 :::{.example}
 \hfill
@@ -453,13 +470,9 @@ I(X) = I_Y(X) \da\ts{f\in A(Y) \st f(x) = 0\,\,\forall x\in X} \subseteq A(Y)
 
 :::{.example}
 For $X\subset Y \subset \AA^n$, we have $I(X) \supset I(Y) \supset I(\AA^n)$, so we have maps
-\begin{center}
 \begin{tikzcd}
 A(\AA^n) \ar[rr, twoheadrightarrow, "\wait/I(X)", bend left] \ar[r, "\wait/I(Y)", twoheadrightarrow] &A(Y)\ar[r, twoheadrightarrow, "\wait/I(X)"] &A(X) \\
 \end{tikzcd}
-\end{center}
-\[  
-.\]
 
 :::
 
@@ -488,12 +501,10 @@ Let $Y = V(y-x^2) \subset \AA^2/\CC$ and $X = \ts{(1, 1)} = V(x-1, y-1)\subset \
 
 Then there is an inclusion $\gens{y-x^2} \subset \gens{x-1, y-1}$ (e.g. by Taylor expanding about the point $(1, 1)$), and there is a map
 
-\begin{center}
 \begin{tikzcd}
 A(\AA^n)\ar[r]\ar[d, equal] & A(Y) \ar[r]\ar[d, equal] & A(X)\ar[d, equal] \\
 k[x, y]\ar[r] & k[x, y]/\gens{y-x^2}\ar[r] & k[x, y]/\gens{x-1, y-1}
 \end{tikzcd}
-\end{center}
 :::
 
 
@@ -1075,13 +1086,11 @@ f(x_1, \cdots, x_n) = x_n^d + f_1(x_1, \cdots, x_{n-1}) x_n^{d-1} + \cdots + f_d
 .\]
 
 We can then descend to $\kx{n}$ to $\kx{n}/\gens{f}$:
-\begin{center}
 \begin{tikzcd}
 P_0 \ar[r] & P_1 \ar[r]\ar[d] & \cdots \ar[r]\ar[d] & P_m\ar[d] \\
  & P_1/P_1 \ar[r]\ar[d] & \cdots \ar[r]\ar[d] & P_m/P_1\ar[d] \\
  & P_1/P_1 \intersect \kx{n-1} \ar[r] & \cdots \ar[r] & (P_m / P_1) \intersect \kx{n-1}
 \end{tikzcd}
-\end{center}
 
 The first set of downward arrows denote taking the quotient, and the upward is taking inverse images, and this preserves strict inequalities.
 
@@ -1750,14 +1759,12 @@ X &\mapsto ?
 .\]
 
 We have a situation like this:
-\begin{center}
 \begin{tikzcd}
 & \mathcal{F}(X)\ar[ld]\ar[rd] & \\
 B\ar[rd] & & C\ar[ld] \\
 & A\ar[d] & \\
 & \emptyset &
 \end{tikzcd}
-\end{center}
 
 Unique gluing says that given $r\in B, s\in C$ such that $\phi_B(r) = \phi_C(s)$, there should exist a unique $t\in \mathcal{F}(X)$ such that $\ro{t}{\ts{a, b}} = r$ and $\ro{t}{\ts{a, c}} = s$.
 This recovers exactly the fiber product.
@@ -2347,13 +2354,11 @@ We have
 A(X\cross Y) \cong A(X) \tensor_k A(Y) \cong k[x_1, \cdots, x_n, y_1, \cdots, y_m] / I(X) \tensor 1 + 1 \tensor I(Y).\]
 This recovers the product, since if we have
 
-\begin{center}
 \begin{tikzcd}
 Z \ar[dr, dotted, "\exists H"]\ar[rrd, bend left, "f"]\ar[rdd, bend right, "g"] & & \\
 & X\cross Y\ar[r]\ar[d] &X  \\
 & Y &  \\
 \end{tikzcd}
-\end{center}
 where $H = (f, g)$.
 :::
 
@@ -2483,13 +2488,11 @@ What about $\OO_X(X_1)$?
 This is just $k[x]$, and similarly $\OO_X(X_2) = k[y]$.
 We can also consider $\OO_X(X_1\intersect X_2) = D(x) \subset X$, so this yields $k[x, 1/x]$.
 We thus have a diagram
-\begin{center}
 \begin{tikzcd}
                          & \OO_X(X_1) = k[x] \ar[rd, "x\mapsto x"]   & \\
 \OO_X(X) \ar[ru] \ar[rd] &                                           & \OO_X(X_1\intersect X_2) = k[x, 1/x] \\
                          & \OO_X(X_2) = k[y] \ar[ru, "y\mapsto 1/x"] &
 \end{tikzcd}
-\end{center}
 :::
 
 
