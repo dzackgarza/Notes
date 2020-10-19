@@ -7,7 +7,7 @@ author:
   email: dzackgarza@gmail.com 
 date: Fall 2020 
 author-note: "These are notes live-tex'd from a graduate course in Algebraic Geometry taught by Philip Engel at the University of Georgia in Fall 2020. As such, any errors or inaccuracies are almost certainly my own."
-cover-image: https://www.math.tamu.edu/~Peter.Stiller/ag-page.gif
+cover-image: "figures/cover.png" 
 todos: true
 book: true
 ---
