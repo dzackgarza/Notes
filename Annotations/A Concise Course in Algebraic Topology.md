@@ -1,8 +1,8 @@
-# 10/17/2020: A Concise Course in Algebraic Topology (J. Peter May)
+# 10/19/2020: A Concise Course in Algebraic Topology (J. Peter May)
 
 <a href='file:////home/zack/Dropbox/Library/J. Peter May/A Concise Course in Algebraic Topology (628)/A Concise Course in Algebraic Topology - J. Peter May.pdf' target='_blank'>/home/zack/Dropbox/Library/J. Peter May/A Concise Course in Algebraic Topology (628)/A Concise Course in Algebraic Topology - J. Peter May.pdf</a>
 
-Last Annotation: 10/17/2020
+Last Annotation: 10/19/2020
 
 ## Notes
 
