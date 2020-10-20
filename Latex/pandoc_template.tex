@@ -37,6 +37,23 @@ $if(book)$
   $endif$
 \rule{\linewidth}{2pt}
 }
+\titlehead{
+  $if(cover-image)$
+  \centering\includegraphics[width=\linewidth]{$cover-image$}
+  $endif$
+  $if(author-note)$
+   \begin{minipage}{.35\linewidth}
+    \begin{flushleft}
+      \vspace{2em}
+      {\fontsize{6pt}{2pt} \textit{Notes: $author-note$ } } \\
+    \end{flushleft}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.65\linewidth}
+    \end{minipage}
+  $endif$
+}
+
 $else$
 \title{
 \textbf{
@@ -71,22 +88,6 @@ $if(hidesolutions)$
 \RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
 $endif$
 
-\titlehead{
-  $if(cover-image)$
-  \centering\includegraphics[width=\linewidth]{$cover-image$}
-  $endif$
-  $if(author-note)$
-   \begin{minipage}{.35\linewidth}
-    \begin{flushleft}
-      \vspace{2em}
-      {\fontsize{6pt}{2pt} \textit{Notes: $author-note$ } } \\
-    \end{flushleft}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{.65\linewidth}
-    \end{minipage}
-  $endif$
-}
 
 \begin{document}
 
@@ -100,11 +101,11 @@ $if(author)$
 {\tiny \textit{Last updated:} $current_date$ }
 \end{flushleft}
 $endif$
-\newpage
 
 
 $if(notoc)$
 $else$
+\newpage
 \tableofcontents
 $endif$
 
