@@ -22,6 +22,7 @@
 
 \setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
 
+$if(book)$
 \title{
 \rule{\linewidth}{1pt} \\
 \textbf{
@@ -36,6 +37,21 @@
   $endif$
 \rule{\linewidth}{2pt}
 }
+$else$
+\title{
+\textbf{
+  $if(title)$
+  $title$
+  $else$
+  Title
+  $endif$
+}
+  $if(subtitle)$
+  \\ {\normalsize $subtitle$} \\
+  $endif$
+}
+
+$endif$
 
 
 $if(highlighting-macros)$
@@ -96,13 +112,13 @@ $body$
 
 \newpage
 
+$if(book)$
 \section{Indices}
 $if(todos)$
 \newpage
 \listoftodos[List of Todos]
 $endif$
 
-$if(book)$
 % Hook into amsthm environments to list them.
 \renewcommand{\listtheoremname}{Definitions}
 \listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
