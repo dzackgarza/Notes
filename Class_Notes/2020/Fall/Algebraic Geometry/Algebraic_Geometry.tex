@@ -1,4 +1,7 @@
 \input{"/home/zack/Notes/Latex/preamble.tex"}
+
+\addbibresource{Algebraic\_Geometry.bib}
+
 \let\Begin\begin
 \let\End\end
 \newcommand\wrapenv[1]{#1}
@@ -31,7 +34,9 @@
   \rule{\linewidth}{2pt}
 }
 \titlehead{
-    \centering\includegraphics[width=\linewidth]{figures/cover.png}
+    \begin{center}
+  \includegraphics[width=\linewidth,height=0.5\textheight,keepaspectratio]{figures/cover.png}
+  \end{center}
        \begin{minipage}{.35\linewidth}
     \begin{flushleft}
       \vspace{2em}
@@ -60,7 +65,7 @@ inaccuracies are almost certainly my own. } } \\
 \textbf{D. Zack Garza} \\
 \textit{University of Georgia} \\
 \textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-10-20 }
+{\tiny \textit{Last updated:} 2020-10-21 }
 \end{flushleft}
 
 
@@ -71,24 +76,13 @@ inaccuracies are almost certainly my own. } } \\
 \section*{Prologue}\label{prologue}}
 \addcontentsline{toc}{section}{Prologue}
 
-These are notes live-tex'd from a graduate course in Algebraic Geometry
-taught by Philip Engel at the University of Georgia in Fall 2020. As
-such, any errors or inaccuracies are almost certainly my own.
-
-\medskip
-\begin{flushright}
-  D. Zack Garza, \today \\
-  \currenttime
-\end{flushright}
-
 \hypertarget{references}{%
 \subsection{References}\label{references}}
 
 \begin{itemize}
 \tightlist
 \item
-  Gathmann's Algebraic Geometry
-  notes\autocite{gathmannAlgebraicGeometry}
+  Gathmann's Algebraic Geometry notes\autocite{AndreasGathmann515}
   \url{https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019.pdf}
 \end{itemize}
 
@@ -3677,8 +3671,8 @@ reverse direction is not.
 
 \newpage
 
-\section{Indices}
 \newpage
+\section{Indices}
 \listoftodos[List of Todos]
 
 % Hook into amsthm environments to list them.
@@ -3692,7 +3686,6 @@ reverse direction is not.
 \listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
 
 \listoffigures
-
 
 
 \printbibliography[title=Bibliography]

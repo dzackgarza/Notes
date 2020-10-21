@@ -1,4 +1,9 @@
 \input{"/home/zack/Notes/Latex/preamble.tex"}
+
+$for(bibliography)$
+\addbibresource{$bibliography$}
+$endfor$
+
 \let\Begin\begin
 \let\End\end
 \newcommand\wrapenv[1]{#1}
@@ -39,7 +44,9 @@ $if(book)$
 }
 \titlehead{
   $if(cover-image)$
-  \centering\includegraphics[width=\linewidth]{$cover-image$}
+  \begin{center}
+  \includegraphics[width=\linewidth,height=0.5\textheight,keepaspectratio]{$cover-image$}
+  \end{center}
   $endif$
   $if(author-note)$
    \begin{minipage}{.35\linewidth}
@@ -114,9 +121,9 @@ $body$
 \newpage
 
 $if(book)$
+\newpage
 \section{Indices}
 $if(todos)$
-\newpage
 \listoftodos[List of Todos]
 $endif$
 
@@ -134,8 +141,9 @@ $endif$
 
 $endif$
 
-
+$if(bibliography)$
 \printbibliography[title=Bibliography]
+$endif$
 
 
 \end{document}

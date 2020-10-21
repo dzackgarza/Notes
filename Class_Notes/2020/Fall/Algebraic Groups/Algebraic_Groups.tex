@@ -1,4 +1,7 @@
 \input{"/home/zack/Notes/Latex/preamble.tex"}
+
+\addbibresource{Algebraic\_Groups.bib}
+
 \let\Begin\begin
 \let\End\end
 \newcommand\wrapenv[1]{#1}
@@ -31,7 +34,9 @@
   \rule{\linewidth}{2pt}
 }
 \titlehead{
-    \centering\includegraphics[width=\linewidth]{figures/cover.png}
+    \begin{center}
+  \includegraphics[width=\linewidth,height=0.5\textheight,keepaspectratio]{figures/cover.png}
+  \end{center}
        \begin{minipage}{.35\linewidth}
     \begin{flushleft}
       \vspace{2em}
@@ -67,14 +72,29 @@ are almost certainly my own. } } \\
 \newpage
 \tableofcontents
 
+\hypertarget{prologue}{%
+\section*{Prologue}\label{prologue}}
+\addcontentsline{toc}{section}{Prologue}
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+\begin{itemize}
+\item
+  Carter's ``Finite Groups of Lie Type''\autocite{CarterRogerW.805}
+\item
+  Humphreys' ``Linear Algebraic Groups''\autocite{JamesE.Humphreys825}
+\end{itemize}
+
+\hypertarget{notation}{%
+\subsection{Notation}\label{notation}}
+
+\todo[inline]{Todo}
+
+\newpage
+
 \hypertarget{friday-august-21}{%
 \section{Friday, August 21}\label{friday-august-21}}
-
-\begin{quote}
-Reference: Carter's ``Finite Groups of Lie Type''.
-
-Reference: Humphrey's ``Linear Algebraic Groups'' (Springer)
-\end{quote}
 
 \hypertarget{intro-and-definitions}{%
 \subsection{Intro and Definitions}\label{intro-and-definitions}}
@@ -5326,8 +5346,8 @@ these are the exact functor which product the categorical equivalence.
 
 \newpage
 
-\section{Indices}
 \newpage
+\section{Indices}
 \listoftodos[List of Todos]
 
 % Hook into amsthm environments to list them.
@@ -5341,7 +5361,6 @@ these are the exact functor which product the categorical equivalence.
 \listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
 
 \listoffigures
-
 
 
 \printbibliography[title=Bibliography]

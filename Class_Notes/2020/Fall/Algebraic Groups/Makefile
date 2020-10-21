@@ -8,7 +8,7 @@ MEXT = md
 PREFIX = /home/zack/.pandoc/pandoc-templates
 
 ## Location of your working bibliography file
-BIB = /home/zack/Notes/library.bib 
+BIB = $(FILENAME).bib 
 
 ## CSL stylesheet (located in the csl folder of the PREFIX directory).
 CSL = apsa
@@ -37,7 +37,7 @@ latex: markdown
 		--lua-filter /home/zack/dotfiles/bin/warning-div.lua \
 		-r markdown+fenced_divs+tex_math_single_backslash \
 		--biblatex \
-		--bibliography /home/zack/Notes/library.bib \
+		--bibliography=$(BIB) \
 		--lua-filter /home/zack/Notes/Latex/tikzcd.lua \
 		-V current_date="$$(date +%Y-%m-%d%n)" \
 		-F pandoc-crossref;
