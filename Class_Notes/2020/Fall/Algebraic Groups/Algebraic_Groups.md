@@ -3,9 +3,9 @@
 
 ## References
 
-- Carter's "Finite Groups of Lie Type"[@CarterRogerW.805]
+- Carter's "Finite Groups of Lie Type"[@carter_1985]
 
-- Humphreys' "Linear Algebraic Groups"[@JamesE.Humphreys825]
+- Humphreys' "Linear Algebraic Groups"[@humphreys_2004]
 
 
 ## Notation

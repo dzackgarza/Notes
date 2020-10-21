@@ -75,21 +75,21 @@ html: markdown
 		-V current_date="$$(date +%Y-%m-%d%n)" \
 		--self-contained \
 		-o $(FILENAME).html ;
-	rm out1.temp combined.temp *.svg;
+	rm out1.temp combined.temp *.svg -f;
 
 .SILENT:
 
 clean:
-	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof);
-	rm *.svg;
-	rm *.temp;
+	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f;
+	rm *.svg -f;
+	rm *.temp -f;
 
 
 reset:
-	rm $(FILENAME).md;
-	rm $(FILENAME).tex;
-	rm $(FILENAME).html;
-	rm $(FILENAME).pdf;
+	rm $(FILENAME).md -f;
+	rm $(FILENAME).tex -f;
+	rm $(FILENAME).html -f;
+	rm $(FILENAME).pdf -f;
 
 .PHONY: clean
 
