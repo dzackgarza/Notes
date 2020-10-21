@@ -45,8 +45,8 @@ latex: markdown
 
 ## PDF Output
 pdf: markdown latex
-	latexmk --shell-escape -pdf $(FILENAME).tex
-	echo "Make done"
+	latexmk --shell-escape -pdf $(FILENAME).tex;
+	echo "Make done";
 
 
 ## HTML Output
@@ -75,21 +75,21 @@ html: markdown
 		-V current_date="$$(date +%Y-%m-%d%n)" \
 		--self-contained \
 		-o $(FILENAME).html ;
-	rm out1.temp combined.temp *.svg;
+	rm out1.temp combined.temp *.svg -f || true;
 
 .SILENT:
 
 clean:
-	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof);
-	rm *.svg;
-	rm *.temp;
+	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
+	rm *.svg -f || true;
+	rm *.temp -f || true;
 
 
 reset:
-	rm $(FILENAME).md;
-	rm $(FILENAME).tex;
-	rm $(FILENAME).html;
-	rm $(FILENAME).pdf;
+	rm $(FILENAME).md -f || true;
+	rm $(FILENAME).tex -f || true;
+	rm $(FILENAME).html -f || true;
+	rm $(FILENAME).pdf -f || true;
 
 .PHONY: clean
 
