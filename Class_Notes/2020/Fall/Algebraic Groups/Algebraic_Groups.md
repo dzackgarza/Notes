@@ -1,19 +1,4 @@
 
----
-title: Algebraic Groups
-todos: true
-book: true
----
-
-These are notes live-tex'd from a graduate course in Algebraic Geometry taught by Dan Nakano at the University of Georgia in Fall 2020.
-As such, any errors or inaccuracies are almost certainly my own.
-
-\medskip
-\begin{flushright}
-  D. Zack Garza, \today \\
-  \currenttime
-\end{flushright}
-
 # Friday, August 21
 
 > Reference: Carter's "Finite Groups of Lie Type".
@@ -3111,3 +3096,767 @@ We then define the *Euler characteristic*
 Note that by Grothendieck vanishing, $H^i(M) = 0$ for $i > \abs{\Phi^+} = \dim(G/B)$, so this is a finite sum.
 In fact, if $M$ is a $G\dash$module, then this is $W\dash$invariant and thus in fact $\chi(M) \in \ZZ[X(T)]^W$.
 
+
+# Wednesday, October 14
+
+Today: 
+
+- Weyl's character formula
+
+- Strong linkage
+
+- Translation functors
+
+Recall that we defined
+\[  
+\ch(M) &\da \sum_{\mu \in X(T)} \qty{\dim M_\mu} e^{\mu} \in \ZZ[X(T)]\\
+\chi(M) &\da \sum_{i\geq 0} (-1)^i \ch H^i(M) \in \ZZ[X(T)]^W
+.\]
+
+where $H^i(M) = R^i \ind_B^G M$, and $H^i(M) =0$ for $i> G/B = \abs{\Phi^+}$.
+
+![Image](figures/image_2020-10-14-14-03-12.png)
+
+Note that the Euler characteristic is additive on SESs: if $0\to A\to B\to C\to 0$ then $\chi(B) = \chi(A) + \chi(B)$.
+It is also multiplicative wrt the tensor product: $\chi(A\tensor B) \chi(A) \chi(B)$.
+
+\todo[inline]{Because ?}
+
+:::{.remark}
+If $\lambda \in X(T)_+$, then $\chi(\lambda) = \ch H^0(\lambda) = \ch(V(0))$.
+:::
+
+:::{.proposition title="?"}
+\hfill
+
+1. The set $\ts{\ch L(\lambda) \st \lambda\in X(T)_+}$ is a basis for $\ZZ[X(T)]^W$.
+
+2. If $\lambda \in X(T)$ and $\sum a_\mu e^\mu \in \ZZ[X(T)]^W$, then there is a formula:
+\[  
+\chi(\lambda) \qty{ \sum_\mu a_\mu e^\mu } = \sum_\mu a_\mu \chi(\lambda + \mu)
+.\]
+:::
+
+:::{.proof title="of 1"}
+Let 
+\[
+\sym(\mu) \da \sum_{\nu \in W\mu} e^\nu
+\] 
+be the sum over the $W$ orbit of $\mu$.
+This is clearly $W\dash$invariant, so $\sym(\mu) \in \ZZ[X(T)]^W$.
+Since every $\nu \in X(T)$ is $W\dash$conjugate to $\mu$ (which is dominant), the set $\ts{\sym(\mu) \st \mu \in X(T)_+}$ is a basis for $\ZZ[X(T)]^W$, since this set is linearly independent. 
+
+> Why: conjugate to a unique weight.
+
+Let $\lambda \in X(T)_+$, then 
+
+\[
+\ch L(\lambda) = \sym(\lambda) + \sum_{\substack{\mu < \lambda \\ \mu \in X(T)_+} } a_\mu \sym(\mu)
+.\]
+Thus the transition matrix is unipotent and upper-triangular, thus $\ts{\ch L(\lambda) \st \lambda \in X(T)_+}$ is a basis for $\ZZ[X(T)]^W$.
+:::
+
+:::{.proof title="of 2"}
+Since $\ts{L(\lambda) \st \lambda\in X(T)_+}$ forms a basis for $\ZZ[X(T)]^W$, there is some $G\dash$module $V$ such that $\sum a_\mu e^\mu = \pm \ch V$.
+We can consider a composition series of $V\tensor \lambda$, where the factor $\ts{\mu \tensor \lambda}$ appears $a_\mu = \dim V_\mu$ times.
+We now compute in two different ways:
+\[  
+\chi(V\tensor \lambda) 
+&= \ch(V) \chi(\lambda)  && \text{using the formula from earlier} \\
+&= \chi(\lambda) \qty{ \sum_\mu a_\mu e^\mu }
+.\]
+
+On the other hand,
+\[  
+\chi(V\tensor \lambda) &=
+\sum a_\mu \chi(\lambda + \mu)
+.\]
+:::
+
+:::{.remark}
+The formula used above was
+\[  
+R^i \ind_B^G (V\tensor \lambda) = V\tensor R^i \ind_B^G(\lambda)
+.\]
+:::
+
+## Weyl's Character Formula
+
+For any $\alpha\in\Delta$ and $\lambda \in X(T)$ with $\inner{\lambda + \rho}{\alpha\dual} \geq 0$.
+We have an analog of Serre duality:
+\[  
+\ch \ind_B^{P_\alpha} \lambda = \ch R^i \ind_B^{P_\alpha} s_\alpha \cdot \lambda
+,\]
+i.e. the induced module coincides with the Weyl module.
+
+By definition of the dot action, we have
+\[  
+s_\alpha \cdot \lambda = s_\alpha(\lambda + \rho) - \rho
+.\]
+
+As in previous calculations, we have
+
+\[  
+\inner{s_\alpha\cdot\lambda}{\alpha\dual} = -\inner{\lambda+\rho}{\alpha\dual} - 1 \leq - 1
+.\]
+
+As in the analysis of Bott-Borel-Weil, we have
+\[  
+H^i(s_\alpha \cdot\lambda) &= H^i( R^1 \ind_B^{P_\alpha} s_\alpha\cdot\lambda ) \\
+H^i(\lambda) &= H^i( \ind_B^{P_\alpha}\lambda )
+,\]
+since the spectral sequence collapses.
+Note that the two things appearing on the RHS have the same Euler characteristics. 
+
+We can thus define define a modified Euler characteristic
+\[  
+\phi(N) = \sum_{i\geq 0} (-1)^i \ch R^i \ind_{P_\alpha}^G(N)
+.\]
+
+and obtain $\chi(\lambda) = -\chi(s_\alpha \cdot \lambda)$.
+The same argument works for $\inner{\lambda + \rho}{\alpha\dual} < 0$.
+
+:::{.remark title="Very Important Fact"}
+\[  
+\lambda \in X(T) \implies \chi(\lambda) = -\chi(s_\alpha \cdot \lambda)
+.\]
+:::
+
+:::{.proposition title="General Formula"}
+\[  
+\chi(w\cdot \lambda) = \sgn(w) \chi(\lambda) && \sgn(w) \da (-1)^{\ell(w)}
+,\]
+with the convention that $\chi(0) = e^0 = 1$.
+:::
+
+
+:::{.lemma title="?"}
+Let $\lambda \in X(T)$ where $\sum a_\mu e^|mu \in \ZZ[X(T)]^W$, so (as we proved) 
+\[  
+\chi(\lambda) \qty{ \sum_\mu a_\mu e^\mu } = \sum_\mu a_\mu \chi(\lambda + \mu)
+.\]
+In the special case $\lambda = 0$, we have $\chi(\lambda) = \chi(0) = e^0$, we obtain
+\[  
+\sum_\mu a_\mu e^\mu = \sum_\mu a_\mu \chi(\mu)
+.\]
+
+Extend this to a field by letting $\lambda \in X(T) \tensor_\ZZ \QQ$, then define
+\[  
+A(\lambda) \da \sum_{w\in W} \sgn(w) e^{w \lambda} \in \ZZ[ (X(T) \tensor \QQ]
+.\]
+
+Then
+
+1. $w' A(\lambda) = \sgn(w') A(\lambda)$.
+
+2. $A(\mu) A(\lambda) \in \ZZ[X(T) \tensor \QQ]^W$.
+:::
+
+Proof of 1: exercise.
+
+:::{.proof title="of 2"}
+We can compute
+\[  
+w(A(\mu) A(\lambda) ) 
+&= w A(\mu)  w A(\lambda) \\
+&= \sgn(w) A(\mu)  \sgn(w) A(\lambda) \\
+&= \sgn(w)^2 A(\mu) A(\lambda) \\
+&= A(\mu) A(\lambda)
+.\]
+:::
+
+:::{.theorem title="Weyl's Character Formula"}
+Let $\lambda \in X(T)$ be any weight, then
+\[  
+\chi(\lambda) = { A(\lambda + \rho) \over A(\rho) }
+,\]
+where $\rho = {1\over 2} \sum_{\alpha \in \Phi^+} \alpha$.
+:::
+
+> Note: this says that one formal sum divides another.
+
+A corollary is an analog of Weyl's dimension formula:
+:::{.corollary title="?"}
+Let $\lambda \in X(T)_+$ be a dominant weight.
+Then
+\[  
+\ch H^0(\lambda) = { A(\lambda + \rho) \over A(\rho) }
+.\]
+:::
+
+Big question: suppose $k = \bar{\FF}_p$.
+What are $\ch L(\lambda)$ and $\lambda \in X(T)_+$?
+We know this for $p\gg 0$, but in general it's wide open.
+There are expressions in terms of "$p\dash$bases", but these are hard to compute.
+There are only recursive formulas, none that are closed (and these may not exist).
+
+
+Next time: 
+
+- Proof of Weyl's character formula
+- Compute an example.
+
+Idea of the proof:
+we'll have some $\chi(\lambda) = \sum_\mu a_\mu e^\mu$.
+Well also have $A(\rho) \qty{ \sum_\mu a_\mu e^\mu } = A(\lambda + \rho)$.
+This will reduce to equating coefficients of two formal sums, which will result in a system of linear equations.
+
+
+# Friday, October 16
+
+## Example: Weyl's Character Formula
+
+Review: suppose the following is invariant under the Weyl group, so $\sum a_\mu e^\mu \in \ZZ[X(T)]^W$.
+In this case, we have an equality
+\[  
+\sum a_\mu e^\mu = \sum a_\mu \chi(\mu)
+,\]
+where
+$\chi(\mu) = \sum_{i\geq 0} (-1)^i \ch H^i(\mu)$.
+We also had a relation
+\[  
+\chi(w\cdot \mu) = (-1)^{\ell(w)} \chi(\mu) = \sgn(w) \chi(\mu)
+.\]
+
+Now let $\lambda \in X(T) \tensor \QQ$, then we defined
+\[  
+A(\lambda) = \sum_{w\in W} \sgn(w) e^{w\lambda} \in \ZZ[X(T) \tensor \QQ]
+.\]
+
+We obtain
+
+1. $w' A(\lambda) = \sgn(w') A(\lambda)$
+
+2. $A(\mu) A(\lambda) = \ZZ[X(T) \tensor \QQ]^W$.
+
+:::{.theorem title="Weyl's Character Formula"}
+\[  
+\lambda\in X(T) \implies \chi(\lambda) = {A(\lambda + \rho) \over A(\lambda)}
+.\]
+
+As a special case when $\lambda \in X(T)_+$, all higher sheaf cohomology vanishes and thus
+\[  
+\ch H^0(\lambda) = {A(\lambda + \rho) \over A(\lambda)}
+.\]
+:::
+
+:::{.proof}
+We first perform a *reindexing* step:
+\[  
+\sum_{w, w'} \sgn(w\cdot w') e^{w(\lambda+\rho) + w'\rho}
+&= \sum_{w, w'} \sgn(w^{-1} w') e^{w(\lambda+\rho) + w'\rho} \\
+&= \sum_{w, y} \sgn(y) e^{w(\lambda+\rho) + wy\rho} && y = w\inv w' \implies w' = wy \\
+&= \sum_{w, y} \sgn(y) e^{w(\lambda + \rho + y\rho)}
+.\]
+
+Now let $\lambda\in X(T)$, we then compute
+\[  
+A(\lambda + \rho) A(\rho)
+&=
+\sum_{w} \sgn(w) e^{w(\lambda + \rho)}
++ \sum_{w'} \sgn(w') e^{w'(\lambda + \rho)}  \\
+&=
+\sum_{w, w'} \sgn(ww') e^{w(\lambda + \rho) + w'\rho} \\
+&= 
+\sum_{w, w'} \sgn(w') e^{w(\lambda + \rho + w'\rho)} && \text{from reindexing above, setting } y\da w' \\
+&= \sum_{w, w'} \sgn(w') \chi\qty{w(\lambda + \rho + w'\rho)} \\
+&= \sum_{w, w'} \sgn(w') \chi\qty{w\cdot (\lambda + w'\rho + w^{-1} \rho)} && \text{definition of dot action}\\
+&= \sum_{w, w'} \sgn(ww') \chi\qty{\lambda + w'\rho + w\rho }  && \text{swapping } w\leadsto w^{-1}  
+.\]
+
+Note that $\chi$ can be introduced since $A(\lambda + \rho)A(\rho) \in \ZZ[X(T) \tensor \QQ]^{W\cdot}$.
+
+\todo[inline]{Not sure, double check.}
+
+We can now conclude that
+\[  
+A(\rho)^2 = \sum_{w, w'} \sgn(ww') e^{w\rho + w' \rho}
+.\]
+Since this quantity is $W\dash$invariant, since it's a square, we can move the $\chi$ inside:
+\[  
+\chi(\lambda) \qty{ \sum a_\mu e^\mu } = \sum a_\mu \chi(\lambda + \mu) \\
+\implies \chi(\lambda) A(\rho)^2 = \sum_{w, w'} \sgn(ww') \chi(\lambda + w\rho + w'\rho)
+,\]
+which is exactly what the first calculation resulted in.
+So we can conclude
+\[  
+A(\lambda + \rho) A(\rho) = \chi(\lambda) A(\rho)^2
+.\]
+Note that $A(\rho) \neq 0$ since $w\rho \neq \rho$ unless $w=\id$.
+Thus we are actually working in $\ZZ[X(T) + \ZZ\rho]$, which is an integral domain, and thus we can apply cancellation laws to obtains
+\[  
+A(\lambda + \rho) = \chi(\lambda) A(\rho)
+.\]
+:::
+
+:::{.example}
+Let $G = \GL_3(k)$, which has a natural 3-dimensional representation $V$.
+Let $\lambda = (1,0,0)$, so $L(1,0,0) = V$.
+This is a polynomial representation, so by permuting we can obtain
+\[  
+\ch V = e^{(1,0,0)} + e^{(0,1,0)} + e^{(0,0,1)} = \chi(1,0,0)
+,\]
+where the last equality holds since $\lambda$ is dominant.
+
+We can write $\rho = (2,1,0)$, since the fundamental weights are given by $w_1 = (1,0,0)$ and $w_2 = (1,1,0)$ (since we're in an $\SL_2$ and/or $A_2$ situation).
+We then obtain $\lambda + \rho = (3,1,0)$, and since $W= S_3$,
+\[  
+A(\lambda + \rho) = \sum_{w\in W} \sgn(w) e^{w(\lambda + \rho)}
+=
+e^{(3,1,0)} -
+e^{(1,3,0)} + 
+e^{(1,0,3)} - 
+e^{(0,1,3)} + 
+e^{(0,3,1)} - 
+e^{(3,0,1)}
+.\]
+
+Thus 
+\[  
+A(\rho) =
+e^{(2,1,0)} -
+e^{(1,2,0)} + 
+e^{(1,0,2)} - 
+e^{(0,1,2)} + 
+e^{(0,2,1)} - 
+e^{(2,0,1)}
+.\]
+
+We can then compute
+\[  
+\chi(1,0,0) A(\rho) = &e^{(3,1,0)}
+- e^{(2,2,0)} + 
+e^{(2,0,2)} 
+-e^{(1,1,2)} + 
+e^{(1,2,1)}
+- e^{(3,0,1)} + 
+\\
+&e^{(2,2,0)} -
+e^{(1,3,0)} + 
+e^{(1,1,2)} - 
+e^{(0,2,2)} + 
+e^{(0,3,1)} - 
+e^{(2,1,1)} + 
+\\
+&e^{(2,1,1)} -
+e^{(1,2,1)} + 
+e^{(1,0,3)} - 
+e^{(0,1,3)} + 
+e^{(0,2,2)} - 
+e^{(2,0,2)}
+.\]
+
+After cancellation, you'll find that this expression is equal to $A(\lambda + \rho)$.
+:::
+
+## Strong Linkage Principle
+
+We'll consider representations in characteristic zero, so we can take $k=\CC$.
+Let $G$ bet a complex simple group, $\lieg = \Lie(G)$, $t$ a maximal torus, $X$ the weights, and $X_+$ the dominant weights.
+We have a correspondence
+\Large
+\[  
+\correspond{(g, t)} \iff
+\correspond{(\Phi, W)}
+\]
+\normalsize
+
+where $\Phi$ is an irreducible root system and $W$ is the Weyl group.
+We'll have a set of simple roots $\Delta\subseteq \Phi^+$.
+For $\lambda\in X$, we have
+\[  
+Z(\lambda) = U(\lieg) \tensor_{U(\lieb^+)} \lambda \surjects L(\lambda)
+.\]
+
+Then $\lambda \in X_+ \iff L(\lambda)$ is finite dimensional.
+We have $W$ acting on $X$ via reflections, which we can extend to a dot action
+\[  
+w\cdot \lambda = w(\lambda + \rho) - \rho, \hspace{4em} \rho = {1\over 2}\sum_{\alpha\in\Phi^+} \alpha
+.\]
+
+We define Category $\OO$ which has objects $\lieg\dash$modules with a weight space decomposition which is locally finite wrt $\lien^+$.
+
+### Linkage in Category $\OO$
+
+Set $Z(\lambda) = \Delta(\lambda)$, then
+\[  
+[Z(\lambda) : L(\mu)] \neq 0 \implies \lambda \in W\cdot \mu
+.\]
+The LHS is computed by evaluating certain Kazhdan-Lusztig polynomials at $x=1$.
+
+:::{.example}
+Let $\Phi= A_2$, then
+
+![Image](figures/image_2020-10-16-14-43-26.png)
+
+$\OO_0$ is the principal block, and the irreducibles correspond to $\ts{L(w\cdot 0) \st w\in W}$, and the number of irreducibles in given by $\abs{W}$.
+In this case, there is only 1 finite-dimensional module in any given block of category $\OO$.
+:::
+
+:::{.example}
+For $\Phi = A_1$, we have the following situation:
+
+![Image](figures/image_2020-10-16-14-46-27.png)
+
+In $\OO_0$, there are two irreducible representations given by the Verma modules $L(0), L(-2)$, and we find that
+
+![Image](figures/image_2020-10-16-14-48-12.png)
+
+In this case, the projectives are given by 
+
+![Image](figures/image_2020-10-16-14-51-51.png)
+
+:::
+
+
+
+
+# Monday, October 19
+
+\todo[inline]{Missing notes from first 10m! See phone screenshot.}
+
+## Representations in Positive Characteristic
+
+We have the following setup:
+\[  
+G && \text{a semisimple, simply connected algebraic group} \\
+k && \text{an algebraically closed field of characteristic $p>0$} \\
+T && \text{a maximal torus} \\
+B && \text{a Borel (negative roots)} \\
+X(T) = X && \text{weights} \\
+X(T)_+ = X_+ && \text{dominant weights} \\
+\Phi && \text{roots}
+.\]
+
+For $\lambda \in X_+$, we consider the induced module $H^0(\lambda) = \ind_B^G \lambda$.
+Not that this is not a simple module in general, so we instead ask about its composition factors.
+
+Question:
+For all $\lambda, \mu \in X_+$, what are the multiplicities $[H^0(\lambda): L(\mu)]$.
+
+
+:::{.example}
+Let $G = \SL_2(k)$, so $\Phi = A_1$.
+Then $\lambda \in X_+ = \ts{0,1,2,\cdots}$ as we know from standard facts in lie algebras.
+Define $X_1 = \ts{0, 1, \cdots, p-1}$, then $\dim H^0(\lambda) = \lambda + 1$.
+We can write the weight $p\dash$adically as $\lambda = \sum_{i=0}^t \lambda_i p^i$ for some $\lambda_j\in X_1$.
+Thus $L(\lambda) = L(\lambda_0) \bigotimes_{i=1}^t L(\lambda_i)^{(i)}$.
+
+Consider $p=3, \lambda = 7$, then $\dim H^0(7) = 8$.
+We can write $7$ 3-adically as $7 = (1)3^0 + (2)3^1$, and so 
+\[  
+L(7) \cong L(1) \tensor L(2)^{(1)}
+.\]
+The first summand is 2-dimensional, and the second is 3-dimensional, so $L(7)$ is 6-dimensional.
+Note that $L(7) \injects H^0(7)$.
+
+We can calculate the weights in the tensor product: the first has weights $\ts{\pm 1}$, we take the adjoint weights in the second factor and multiply by the twist 3 to get $\ts{2\cdot 3, 0\cdot 3, -2\cdot 3}$.
+Taking all combinations of sums from these yields $\ts{7,5,1,-1,-5,-7}$.
+
+![Comparing what's left over](figures/image_2020-10-19-14-14-46.png)
+
+Since $\pm 3$ are left over, we know $[H^0(7): L(3)] \neq 0$.
+We can continue with $3 = (1)3^1$ and write $L(3) = L(1)^{(1)}$. 
+We get weights of the form $1\cdot 3, 1\cdot -3$, so nothing is left over and we're done.
+We thus get a decomposition
+\begin{center}
+\begin{tikzcd}
+ & & L(3) \ar[dd] \\
+H^0(7): & & \\
+ & & L(7)
+\end{tikzcd}
+\end{center}
+
+Note the difference to Verma modules in category $\OO$: we have to consider the action of the *affine* Weyl group, where $W_a \da W \semidirect p\ZZ\Phi$.
+Here we have hyperplanes at $p-1, 2p-1, 3p-1$, and 7 is *linked* to 3 (in the same orbit) for this action:
+
+![Image](figures/image_2020-10-19-14-21-35.png)
+
+:::
+
+> Once characters are known, can find composition factors.
+
+## Affine Weyl Group
+
+Letting $a\in \NN$, we have $W_a = W\semidirect a(\ZZ\Phi)$ where $\ZZ\Phi$ is the root lattice.
+Note that there are other variants:
+
+- $W_a = W\semidirect a(\ZZ\Phi\dual)$, 
+- $W_{\text{ext}} = W \semidirect X(T)$.
+
+So we set $W_p = W\semidirect p(\ZZ\Phi)$ where $p$ is a prime.
+What's in this group?
+We know it contains "products" of reflections with translations.
+We find that $W_p$ is generated by 
+\[  
+s_{\beta, np}(\lambda) = \lambda - \inner{\lambda}{\beta\dual}\beta + np \beta
+.\]
+
+It is also the case that $W_p$ acts on $X(T)$ and there exists a dot action
+\[  
+w\cdot \lambda = w(\lambda + \rho) - \rho
+.\]
+
+:::{.example}
+Consider $A_1$, so $\alpha = 2$.
+We consider what the stabilizer is:
+\[  
+s_{\alpha, np}\cdot \lambda &= \lambda \\
+s_{\alpha, np}(\lambda + \rho) - \rho &= \lambda \\
+(\lambda + \rho) - \inner{\lambda _ \rho}{\alpha\dual}\alpha + np\alpha - \rho &= \lambda
+.\]
+
+After cancellation in the last line above, we obtain
+\[  
+\lambda = np-1
+,\]
+which exactly yields the $p-1, 2p-1, \cdots$ we saw before.
+:::
+
+:::{.example}
+Consider $A_2$.
+We obtain "alcoves":
+
+![Image](figures/image_2020-10-19-14-36-02.png)
+
+:::
+
+We can get a stronger version of weak linkage, which we'll just call linkage:
+
+:::{.theorem title="Linkage"}
+\[  
+[H^0(\lambda): L(\mu)] \neq 0 \implies \lambda \in W_p \cdot \mu
+.\]
+:::
+
+:::{.warning}
+These are difficult to compute in general, or to even detect when they're zero.
+For $p\gg 0$, these multiplicities are computed via Kazhdan-Lusztig polynomials.
+:::
+
+### Ordering of Weights
+
+There is a partial ordering on the weight lattice given by
+\[  
+\mu \leq \lambda \iff \lambda - \mu = \sum_{\alpha\in \Phi^+} n_\alpha \alpha, \quad n_\alpha \geq 0
+.\]
+
+:::{.definition title="Strong Linkage"}
+For $\mu, \lambda \in X(T)$, we say $\mu$ is **strongly linked** to $\lambda$, denoted $\mu \uparrow \lambda$, if there exists a sequence of weights $\mu_1, \cdots, \mu_r \in X(T)$ and reflections $s_1, \cdots, s_r$ such that
+\[  
+\mu \leq \mu_1 = s_1 \cdot \mu \leq \mu_2 = s_2\cdot \mu 1 \leq \cdots \leq s_r \mu_{r-1}
+.\]
+:::
+
+:::{.remark}
+Note that
+
+- $\mu \uparrow \lambda \implies \mu \leq \lambda$, so this is stronger than the usual linkage
+- $\mu \uparrow \lambda \implies \mu \in W_p \cdot \lambda$.
+:::
+
+:::{.theorem title="Strong Linkage Principle"}
+\[  
+[H^0(\lambda): L(\mu)] \neq 0 \implies \lambda \in \mu \uparrow \lambda
+.\]
+
+Moreover, there is a version of strong linkage for $H^i(\lambda)$ for $i> 1$.
+:::
+
+> Next time: history of strong linkage, and translation functors.
+
+
+
+
+
+
+
+# Wednesday, October 21
+
+## Strong Linkage
+
+Let $G$ be a semisimple algebraic group and $k = \bar{\FF_p}$.
+We found that the *affine Weyl group* $W_p$ played an important role here.
+
+:::{.theorem title="Strong Linkage I"}
+Suppose we have a nonzero composition factor in the induced/Weyl module. 
+Then 
+\[
+[H^0 \lambda : L(\mu)] \neq 0]\implies \mu \uparrow \lambda
+.\]
+
+In other words, there's a series of reflections sending $\mu$ to $\lambda$ which doesn't increase it's value in the ordering.
+:::
+
+:::{.theorem title="Strong Linkage II"}
+Let $\lambda \in X(T)$ with $\inner{\lambda + \rho}{\alpha\dual} \geq 0$ for all $\alpha\in \Delta$.
+Suppose $\mu \in X(T)_+$.
+\[
+[H^i w\cdot \lambda : L(\mu)] \neq 0 \text{ for some } i\geq 0 \implies \mu \uparrow \lambda
+.\]
+:::
+
+:::{.remark}
+Note that this is tells us slightly more than Bott-Borel-Weil.
+:::
+
+:::{.remark}
+There is some history here:
+
+1. Verma conjectured the first theorem in 1971.
+
+2. Humphreys (1971) proved it for $Z_r(\lambda) = \ind_{B_r}^{G_r} \lambda$.
+
+3. Strong Linkage II proved by Andersen in 1980.
+
+4. Jantzen proved strong linkage for $Z_r$, which implies strong linkage for $V(\lambda)$.
+
+5. Doty (1987) proved strong linkage for $Z_r(\lambda)$ as a $G_rT\dash$modules, which implies strong linkage for $V(\lambda)$.
+:::
+
+:::{.remark}
+One application is the following: let $\lambda, \mu \in X(T)_+$, then $\ext_G^n(L(\lambda), L(\mu)) \neq 0$ for some $n \geq 0$.
+This implies that $\lambda \in W_p \cdot \mu$.
+
+We can consider some cases
+
+- If $n=0$, we're reduced to previous situations.
+- If $n=1$, we can conclude that $L(\lambda)$ is in the second socle layer of $H^0 \mu$, or vice-versa.
+  In either case, $\lambda \in W_p \cdot \mu$.
+
+We can compute this ext by considering an minimal injective resolution
+\[  
+0 \to L(\mu) \to I_0 = I(\mu) \to I_1 \to \cdots
+.\]
+
+We can conclude that 
+\[
+[I(\mu) : H^0(\sigma)] = [H^0(\sigma): L(\mu)] \neq 0
+.\] 
+by Brauer-Humphreys reciprocity, so $\sigma \in W_p \cdot \mu$.
+Similarly $[I(\mu): L(\gamma)] \neq 0$ implies that $\gamma \in W_p \cdot \mu$, and continuing in this way we can write 
+\[
+I_1 = \bigoplus_{j=1}^t I(\gamma_j) 
+\text{ with each } 
+\gamma_j \in W_p \cdot \mu
+.\]
+So all of these weights are strongly linked to $\mu$.
+
+But then we know $\ext_G^n (L(\lambda), L(\mu)) \neq 0$ is a subquotient of $\hom_G(L(\lambda), I_n)$, which thus can not be zero.
+So $\lambda \in W_p \cdot \mu$ 
+:::
+
+## Translation Functors
+
+Consider the case from category $\OO$, e.g. by taking $\lieg = \liesl_3(\CC)$:
+
+![Image](figures/image_2020-10-21-14-19-53.png)
+
+For $\lambda$ a regular weight, the principal block $\mathcal{B}_0$ is Morita-equivalent to $\mathcal{B}_\lambda$.
+If $\mu$ is a singular weight, then by Jantzen there are translation functors
+
+\[  
+T_\lambda^\mu: \mathcal{B}_\lambda &\to \mathcal{B}_\mu \\
+T_\mu^\lambda: \mathcal{B}_\mu &\to \mathcal{B}_\lambda
+.\]
+
+In the case where $G$ is a semisimple algebraic group and $k = \bar{\FF}_p$, we have the following picture instead:
+
+![Image](figures/image_2020-10-21-14-23-24.png)
+
+### Blocks
+
+Two simple modules $S, T$ are in the same *block* if we have a sequence $T_1, \cdots, T_n$ such that $S=T_1$ and $T_n = T$ where $\ext^1(T_i, T_{i+1}) \neq 0$.
+
+:::{.lemma title="?"}
+Let $M, M'$ be $H\dash$modules and $\mathcal{B}(H)$ be the blocks of $H$.
+Then
+
+1. $M = \bigoplus_{b\in \mathcal{B}(H)} M_b$ where $M_b = \sum_{M'\leq M} M'$ the sum of all submodules such that $M$ has composition in the block $b$.
+
+2. \[ \ext_H^i(, M') = \prod_{b\in\mathcal{B}(H)} \ext_H^i (M_b, M_b') \]
+
+:::
+
+So the question becomes, what are the blocks of $H$?
+Let $\lambda \in X(T)_+$, so we can define $L(\lambda)$, and let $b(\lambda)$ be the $G\dash$block containing $L(\lambda)$.
+
+We have $b(\lambda) \in \mathcal{B}(G)$ and $b(\lambda)$ $\subseteq X(T)_+ \intersect W_p \cdot \lambda$, i.e. we have strong linkage.
+
+> Here we refer to $b(\lambda)$ as both the block and the weights it contains.
+
+:::{.theorem title="Donkin"}
+Let $\lambda \in X(T)_+$ be a dominant weight and let $r\in \ZZ$ be the largest integer such that $p^r \divides \inner{ \lambda + \rho}{\alpha\dual}$ for all $\alpha\in \Phi$.
+Then 
+\[
+b(\lambda) = W_p^{(r)} \cdot \lambda \intersect X(T)_+ \text{ where } W_p^{(r)} = W\semidirect p^r \ZZ\Phi
+.\]
+:::
+
+:::{.proposition title="?"}
+Let $B$ be a $G\dash$module and $\lambda \in X(T)$.
+Set $\pr_\lambda V$ to be the sum of all submodules of $V$ with composition factors of the form $L(\mu)$ where $\mu \in W_p \cdot \lambda$.
+Then
+
+- $V = \bigoplus_{\lambda \in Z} \pr_\lambda V$ where $Z$ are representatives of the $W_p$ orbits, i.e. one representative from each alcove in the weight lattice.
+
+- \[ \ext_G^i(V, V') = \prod_{\lambda \in Z} \ext_G^i (\pr_\lambda V, \pr_\lambda V') \]
+
+- The projection functors $\pr_\lambda(\wait)$ are exact.
+
+> Note that this still works for singular weights, not just regular weights.
+
+:::
+
+:::{.example}
+We can compute
+\[  
+\pr_\lambda L(\mu) = 
+\begin{cases}
+0 &= \lambda \not\in W_p \cdot \mu \\
+L(\mu) &= \lambda \in W_p \cdot \mu
+\end{cases}
+.\]
+
+
+Similarly, by strong linkage, 
+\[  
+\pr_\lambda H^i(\mu) =
+\begin{cases}
+0 &= \lambda \not\in W_p \cdot \mu \\
+H^i(\mu) &= \lambda \in W_p \cdot \mu
+\end{cases}
+.\]
+:::
+
+Recall that 
+\[  
+\bar{C}_\ZZ \da \ts{
+\lambda \in X(T) \st
+0 \leq \inner{\lambda + \rho}{\beta\dual} \leq p \,\, \forall \beta\in\Phi^+
+}
+.\]
+For every $\mu, \lambda \in \bar{C}_\ZZ$, consider $\mu - \lambda \in X(T)$.
+Then there is a way to conjugate it under the ordinary $W$ action to land in the dominant region, i.e. some unique $\nu$ such that $\nu \in X(T)_+ \intersect W(\mu - \lambda)$.
+
+
+:::{.definition title="Translation Functors"}
+Define
+\[  
+T_\lambda^\mu V = 
+\pr_\mu
+\qty{
+L(\nu) \tensor
+\pr_\lambda V
+}
+.\]
+
+So project to $\lambda$, tensor with an irreducible representation, then project to $\mu$.
+This is an exact functor
+\[  
+T_{\lambda}^\mu: G\dash\mathrm{mod} &\to G\dash\mathrm{mod}
+.\]
+:::
+
+Next time: we'll show that $T_\lambda^\mu$ and $T_\mu^\lambda$ form an adjoint pair.
+Note that if $\mu, \lambda$ are in the same block, these are the exact functor which product the categorical equivalence.

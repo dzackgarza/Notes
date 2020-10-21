@@ -1,5 +1,5 @@
 SHELL:=/bin/zsh
-FILENAME="Algebraic_Geometry"
+FILENAME="Algebraic_Groups"
 
 ## Markdown extension (e.g. md, markdown, mdown).
 MEXT = md
@@ -81,15 +81,15 @@ html: markdown
 
 clean:
 	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof);
-	rm *.svg
-	rm *.tem
+	rm *.svg;
+	rm *.temp;
 
 
 reset:
-	rm $(FILENAME).md
-	rm $(FILENAME).tex
-	rm $(FILENAME).html
-	rm $(FILENAME).pdf
+	rm $(FILENAME).md;
+	rm $(FILENAME).tex;
+	rm $(FILENAME).html;
+	rm $(FILENAME).pdf;
 
 .PHONY: clean
 
