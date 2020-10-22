@@ -702,6 +702,7 @@ width: 30%;
 <li><a href="#gluing-two-opens">Gluing Two Opens</a></li>
 <li><a href="#more-general-gluing">More General Gluing</a></li>
 </ul></li>
+<li><a href="#thursday-october-22">Thursday, October 22</a></li>
 <li><a href="#misc-unsorted">Misc Unsorted</a></li>
 </ul>
 </nav>
@@ -1889,6 +1890,36 @@ width: 30%;
 </div>
 <div class="remark">
 <p>Define <span class="math inline">\(\tilde {\mathcal{O}}_X(U)\)</span> as the set of <em>all</em> functions <span class="math inline">\(U\to k\)</span>. Then the inclusion <span class="math inline">\((X, {\mathcal{O}}_X) \hookrightarrow(X, \tilde {\mathcal{O}}_X)\)</span> given by the identity on <span class="math inline">\(X\)</span> is a morphism, but the identity in the reverse direction is not.</p>
+</div>
+<h1 id="thursday-october-22">Thursday, October 22</h1>
+<div class="example">
+<p>Consider <span class="math inline">\({\mathbb{A}}^1\)</span>, whose polynomial functions are <span class="math inline">\(k[x]\)</span>. Consider now <span class="math inline">\(D(x) \subset {\mathbb{A}}^1\)</span>, which is equal to the affine variety <span class="math inline">\(V(xy-1)\)</span>. Then the polynomial functions on <span class="math inline">\(D(x)\)</span> are <span class="math inline">\(k[x, y] / \left\langle{xy-1}\right\rangle \cong k[x, x^{-1} ]\)</span>.</p>
+</div>
+<p>Recall that a <em>prevariety</em> is a ringed space <span class="math inline">\((X, {\mathcal{O}}_X)\)</span> such that <span class="math inline">\(X\)</span> has a finite open cover by affine varieties <span class="math inline">\((U_i, {\left.{{\mathcal{O}}_X}\right|_{U_i}})\)</span>, and a <em>morphism</em> of prevarieties is a morphism of ringed spaces. We saw that one can construct prevarieties by gluing finite collections of prevarieties or affine varieties along open sets, and all prevarieties arise this way.</p>
+<p>Similar to varieties, the product <span class="math inline">\(P\)</span> of prevarieties <span class="math inline">\(X, Y\)</span> will satisfy a universal property:</p>
+<p><a href="https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA">Tikz Link</a></p>
+<div class="proposition" title="?">
+<p>The product is unique up to unique isomorphism, i.e. there is a unique isomorphism between any two products.</p>
+</div>
+<div class="proof">
+<p>Standard!</p>
+</div>
+<div class="example">
+<p>Consider <span class="math inline">\({\mathbb{A}}^1 \times {\mathbb{A}}^1\)</span>, then the product is (and should be) <span class="math inline">\({\mathbb{A}}^2\)</span>, but <span class="math inline">\({\mathbb{A}}^2\)</span> does not have the product topology. The open set <span class="math inline">\(D(x-y)\)</span> is not covered by products of open sets.</p>
+<blockquote>
+<p>This happens because the Zariski topology is too weak.</p>
+</blockquote>
+</div>
+<p>Strategy to fix: use gluing. Let <span class="math inline">\(X, Y\)</span> be prevarieties and <span class="math inline">\(\left\{{U_i}\right\}, \left\{{V_i}\right\}\)</span> be open affine covers of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> respectively. We can construct the product <span class="math inline">\(U_i \times V_j \subset {\mathbb{A}}^{n+m}\)</span>, which is an affine variety and satisfies the universal property for products. We then glue two such products <span class="math inline">\(U_{i_1} \times V_{j_1}\)</span> and <span class="math inline">\(U_{i_2} \times V_{j_2}\)</span> along their common open subset in <span class="math inline">\(\qty{U_{i_1}\cap U_{i_2} }\cap\qty{V_{j_1} \cap V_{j_2}} \subseteq X\times Y\)</span>.</p>
+<p>Let <span class="math inline">\(\tilde U \mathrel{\vcenter{:}}= U_{i_1} \cap U_{i_2} \times V_{j_1} \cap V_{j_2}\)</span>, we then need that</p>
+<p><span class="math display">\[\begin{align*}   (\tilde U, {\left.{ {\mathcal{O}}_{U_{i_1} \times V_{j_1}} }\right|_{\tilde U}} ) \cong (\tilde U, {\left.{ {\mathcal{O}}_{U_{i_2} \times V_{j_2}} }\right|_{\tilde U}} ) .\end{align*}\]</span> This follows from the universal property of products, since the open set <span class="math inline">\((U\times V, {\left.{ {\mathcal{O}}_{X\times Y} }\right|_{U\times V}} )\)</span> is a categorical product of ringed spaces, and the identity provides a unique isomorphism. By the gluing construction, this produces a ringed space <span class="math inline">\((X\times Y, {\mathcal{O}}_{X\times Y})\)</span>, we just need to check that this satisfies the universal property. We have projections <span class="math inline">\(\pi_X, \pi_Y\)</span> set-theoretically, which restrict to morphisms on every <span class="math inline">\(U_i \times V_j\)</span>. For any prevariety <span class="math inline">\(Z\)</span>, we get a unique set map <span class="math inline">\(h:Z\to X\times Y\)</span> which commutes, so it suffices to check that <span class="math inline">\(h\)</span> is a morphism of ringed spaces.</p>
+<p>So consider <span class="math inline">\(h^{-1} (U_i \times V_j) \subset Z\)</span>, which is an open subset of <span class="math inline">\(Z\)</span> given by <span class="math inline">\(f^{-1}(U) \times f^{-1}(V)\)</span>. Take an open cover and let <span class="math inline">\(W\)</span> be an element in it. We can then restrict <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> to get <span class="math inline">\({\left.{f}\right|_{W}}:W\to U_i\)</span> and <span class="math inline">\({\left.{g}\right|_{W}}:W\to V_j\)</span> and their product is a morphism of ringed spaces. So <span class="math inline">\(Z\)</span> is covered by open sets for which <span class="math inline">\(h\)</span> is a morphism of ringed spaces, making <span class="math inline">\(h\)</span> itself a morphism.</p>
+<p>What was the point of constructing the product? We want some notion analogous to being Hausdorff to distinguish spaces like <span class="math inline">\({\mathbb{P}}^1/k\)</span> from the line with the doubled origin. The issue is that these spaces with the Zariski topology are never Hausdorff. So we make the following definition:</p>
+<div class="definition" title="Separated">
+<p>A prevariety is <strong>separated</strong> iff <span class="math inline">\(X \xhookrightarrow{\Delta_X} X\times X\)</span> is a closed embedding, where <span class="math inline">\(\Delta(x) = (x, x)\)</span> is the diagonal morphism. i.e. <span class="math inline">\(\text{id}_X \times\text{id}_X\)</span>.</p>
+</div>
+<div class="definition" title="Variety">
+<p>A <strong>variety</strong> is a separated prevariety.</p>
 </div>
 <h1 id="misc-unsorted">Misc Unsorted</h1>
 <figure>

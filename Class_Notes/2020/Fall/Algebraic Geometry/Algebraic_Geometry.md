@@ -2606,6 +2606,84 @@ Then the inclusion $(X, \OO_X) \injects (X, \tilde \OO_X)$ given by the identity
 
 
 
+# Thursday, October 22
+
+:::{.example}
+Consider $\AA^1$, whose polynomial functions are $k[x]$.
+Consider now $D(x) \subset \AA^1$, which is equal to the affine variety $V(xy-1)$.
+Then the polynomial functions on $D(x)$ are $k[x, y] / \gens{xy-1} \cong k[x, x^{-1} ]$.
+:::
+
+Recall that a *prevariety* is a ringed space $(X, \OO_X)$ such that $X$ has a finite open cover by affine varieties $(U_i, \ro{\OO_X}{U_i})$, and a *morphism* of prevarieties is a morphism of ringed spaces.
+We saw that one can construct prevarieties by gluing finite collections of prevarieties or affine varieties along open sets, and all prevarieties arise this way.
+
+Similar to varieties, the product $P$ of prevarieties $X, Y$ will satisfy a universal property:
+
+[Tikz Link](https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA)
+\begin{center}
+\begin{tikzcd}
+P \arrow[rrd, "\pi_X", bend left] \arrow[rdd, "\pi_Y"', bend right] &                                                     &   \\
+                                                                    & Z \arrow[d] \arrow[r] \arrow[lu, "\exists !", dashed] & X \\
+                                                                    & Y                                                   &  
+\end{tikzcd}
+\end{center}
+
+:::{.proposition title="?"}
+The product is unique up to unique isomorphism, i.e. there is a unique isomorphism between any two products.
+:::
+
+:::{.proof}
+Standard!
+:::
+
+:::{.example}
+Consider $\AA^1 \times \AA^1$, then the product is (and should be) $\AA^2$, but $\AA^2$ does not have the product topology.
+The open set $D(x-y)$ is not covered by products of open sets.
+
+> This happens because the Zariski topology is too weak.
+
+:::
+
+Strategy to fix: use gluing.
+Let $X, Y$ be prevarieties and $\ts{U_i}, \ts{V_i}$ be open affine covers of $X$ and $Y$ respectively.
+We can construct the product $U_i \cross V_j \subset \AA^{n+m}$, which is an affine variety and satisfies the universal property for products.
+We then glue two such products $U_{i_1} \cross V_{j_1}$ and $U_{i_2} \cross V_{j_2}$ along their common open subset in $\qty{U_{i_1}\cap U_{i_2} }\intersect\qty{V_{j_1} \cap V_{j_2}} \subseteq X\cross Y$.
+
+Let 
+$\tilde U \da U_{i_1} \intersect U_{i_2} \cross V_{j_1} \intersect V_{j_2}$, we then need that
+
+\[  
+(\tilde U, \ro{ \OO_{U_{i_1} \cross V_{j_1}} }{\tilde U} ) \cong
+(\tilde U, \ro{ \OO_{U_{i_2} \cross V_{j_2}} }{\tilde U} )
+.\]
+This follows from the universal property of products, since the open set $(U\cross V, \ro{ \OO_{X\cross Y} }{U\cross V} )$ is a categorical product of ringed spaces, and the identity provides a unique isomorphism.
+By the gluing construction, this produces a ringed space $(X\cross Y, \OO_{X\cross Y})$, we just need to check that this satisfies the universal property.
+We have projections $\pi_X, \pi_Y$ set-theoretically, which restrict to morphisms on every $U_i \cross V_j$.
+For any prevariety $Z$, we get a unique set map $h:Z\to X\cross Y$ which commutes, so it suffices to check that $h$ is a morphism of ringed spaces.
+
+So consider $h^{-1} (U_i \cross V_j) \subset Z$, which is an open subset of $Z$ given by $f^{-1}(U) \cross f^{-1}(V)$.
+Take an open cover and let $W$ be an element in it. 
+We can then restrict $f$ and $g$ to get $\ro{f}{W}:W\to U_i$ and $\ro{g}{W}:W\to V_j$ and their product is a morphism of ringed spaces.
+So $Z$ is covered by open sets for which $h$ is a morphism of ringed spaces, making $h$ itself a morphism.
+
+
+What was the point of constructing the product?
+We want some notion analogous to being Hausdorff to distinguish spaces like $\PP^1/k$ from the line with the doubled origin.
+The issue is that these spaces with the Zariski topology are never Hausdorff.
+So we make the following definition:
+
+:::{.definition title="Separated"}
+A prevariety is **separated** iff $X \injectsvia{\Delta_X} X\cross X$ is a closed embedding, where $\Delta(x) = (x, x)$ is the diagonal morphism. i.e. $\id_X \cross \id_X$.
+:::
+
+:::{.definition title="Variety"}
+A **variety** is a separated prevariety.
+:::
+
+
+
+
+
 # Misc Unsorted
 
 ![Image](figures/image_2020-09-16-04-09-22.png)
