@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'Algebraic_Geometry.blg'
+[84] biber:322> INFO - === Thu Oct 22, 2020, 00:06:22
+[99] Biber.pm:415> INFO - Reading 'Algebraic_Geometry.bcf'
+[171] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[185] Biber.pm:4256> INFO - Processing section 0
+[186] Utils.pm:75> INFO - Globbing data source 'Algebraic\_Geometry.bib'
+[186] Utils.pm:91> INFO - Globbed data source 'Algebraic\_Geometry.bib' to Algebraic_Geometry.bib
+[198] Biber.pm:4455> INFO - Looking for bibtex format file 'Algebraic_Geometry.bib' for section 0
+[199] bibtex.pm:1653> INFO - LaTeX decoding ...
+[200] bibtex.pm:1471> INFO - Found BibTeX data source 'Algebraic_Geometry.bib'
+[247] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[247] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[247] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[247] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[249] bbl.pm:652> INFO - Writing 'Algebraic_Geometry.bbl' with encoding 'UTF-8'
+[250] bbl.pm:755> INFO - Output to Algebraic_Geometry.bbl
