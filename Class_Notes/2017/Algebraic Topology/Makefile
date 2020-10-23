@@ -1,5 +1,5 @@
 SHELL:=/bin/zsh
-FILENAME="Algebraic_Geometry"
+FILENAME="Algebraic_Topology"
 
 ## Markdown extension (e.g. md, markdown, mdown).
 MEXT = md

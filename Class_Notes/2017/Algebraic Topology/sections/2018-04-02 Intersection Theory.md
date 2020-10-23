@@ -52,7 +52,7 @@ $$\phi: (U, U\cap P\cup Q, x) \to (\RR^n, \RR^p \cross \theset{0} \cup \theset{0
 
 
 :::{.remark}
-Gor vector spaces $X, Y \subset V$ where $p,q \leq n$, we can then say they are transverse exacty when $X \oplus Y = V$ (so $X, Y$ span $V$). 
+For vector spaces $X, Y \subset V$ where $p,q \leq n$, we can then say they are transverse exactly when $X \oplus Y = V$ (so $X, Y$ span $V$). 
 This is primarily because $\dim (X \cap Y) = \dim X + \dim Y - \dim(X\oplus Y)$. 
 In the case of smooth manifolds, you might actually use this as a definition: two manifolds intersect transversally iff their tangent planes span the ambient tangent space.
 :::
