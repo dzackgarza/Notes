@@ -2,4 +2,4 @@ This is a small diagram I put together using the wonderful [GraphViz](https://ww
 
 (More precisely, it denotes the existence of a forgetful functor from $B$ to $A$, so perhaps I should reverse the arrows!)
 
-@import "../Talks/the_landscape_of_mathematics/math.gv"
+@import "math.gv"

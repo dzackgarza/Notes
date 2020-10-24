@@ -26,10 +26,21 @@ watch: markdown
 view: markdown
 	latex_preview -f $(FILENAME).md -v -z
 
+stripmacros:
+	cat ~/Notes/Latex/latexmacs.tex $(FILENAME).md \
+		> combined.temp ;
+	cat combined.temp | pandoc \
+			--from=markdown \
+			--to=markdown \
+			-r markdown+latex_macros+tex_math_single_backslash \
+			--lua-filter=/home/zack/Dropbox/rmcodeblocks.lua \
+			--lua-filter /home/zack/dotfiles/bin/warning-div.lua \
+			| sed '/^\\\%/d' > stripped_macros.md.temp ;
+	rm combined.temp;
 
 ## LaTeX Output
-latex: markdown
-	cat data.md $(FILENAME).md | pandoc \
+latex: markdown stripmacros
+	cat data.md stripped_macros.md.temp | pandoc \
 		-f markdown \
 		-t latex \
 		-o $(FILENAME).tex \
@@ -41,6 +52,7 @@ latex: markdown
 		--lua-filter /home/zack/Notes/Latex/tikzcd.lua \
 		-V current_date="$$(date +%Y-%m-%d%n)" \
 		-F pandoc-crossref;
+	rm *.temp *.svg -f || true;
 
 
 ## PDF Output
@@ -50,17 +62,8 @@ pdf: markdown latex
 
 
 ## HTML Output
-html: markdown
-	cat ~/Notes/Latex/latexmacs.tex $(FILENAME).md \
-		> combined.temp ;
-	cat combined.temp | pandoc \
-		--from=markdown \
-		--to=markdown \
-		-r markdown+latex_macros+tex_math_single_backslash \
-		--lua-filter=/home/zack/Dropbox/rmcodeblocks.lua \
-		--lua-filter /home/zack/dotfiles/bin/warning-div.lua \
-		| sed '/^\\\%/d' > out1.temp ;
-	cat data.md out1.temp | pandoc \
+html: markdown stripmacros
+		cat data.md stripped_macros.md.temp | pandoc \
 		-r markdown+simple_tables+table_captions+yaml_metadata_block \
 		--to html \
 		--mathjax \
@@ -75,21 +78,23 @@ html: markdown
 		-V current_date="$$(date +%Y-%m-%d%n)" \
 		--self-contained \
 		-o $(FILENAME).html ;
-	rm out1.temp combined.temp *.svg -f || true;
+	rm *.temp *.svg -f || true;
 
 .SILENT:
 
 clean:
-	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
-	rm *.svg -f || true;
-	rm *.temp -f || true;
+	@rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
+	@rm *.svg -f || true;
+	@rm *.temp -f || true;
+	echo "Temp files cleaned."
 
 
-reset:
-	rm $(FILENAME).md -f || true;
-	rm $(FILENAME).tex -f || true;
-	rm $(FILENAME).html -f || true;
-	rm $(FILENAME).pdf -f || true;
+reset: clean
+	@rm $(FILENAME).md -f || true;
+	@rm $(FILENAME).tex -f || true;
+	@rm $(FILENAME).html -f || true;
+	@rm $(FILENAME).pdf -f || true;
+	echo "All outputs formats deleted."
 
 .PHONY: clean
 

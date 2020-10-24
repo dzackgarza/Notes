@@ -5,6 +5,7 @@ slideNumber: true
 width: 1200
 height: 900
 transition: fade
+notoc: true
 ---
 
 \newpage
