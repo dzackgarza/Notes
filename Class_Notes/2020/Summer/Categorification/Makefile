@@ -1,5 +1,5 @@
 SHELL:=/bin/zsh
-FILENAME="Algebraic_Geometry"
+FILENAME="Categorification"
 
 ## Markdown extension (e.g. md, markdown, mdown).
 MEXT = md
@@ -51,7 +51,6 @@ pdf: markdown latex
 
 ## HTML Output
 html: markdown
-	touch $(FILENAME).bib;
 	cat ~/Notes/Latex/latexmacs.tex $(FILENAME).md \
 		> combined.temp ;
 	cat combined.temp | pandoc \

@@ -70,7 +70,13 @@
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\txor}[0]{{\text{ or }}}
 \newcommand{\txt}[1]{{\text{ {#1} }}}
-\newcommand{\Gr}[0]{{\text{Gr}}}
+\newcommand{\Gr}[0]{{\operatorname{Gr}}}
+\newcommand{\gr}[0]{{\operatorname{gr}}}
+\newcommand{\dcoset}[3]{% 
+    {\textstyle #1}
+    \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}%
+    \mkern-4mu\scalebox{1.5}{$\diagup$}\mkern-5mu{\textstyle #3} }
+\newcommand{\grdim}[0]{{\operatorname{gr dim}}}
 \newcommand{\Aut}[0]{{\operatorname{Aut}}}
 \newcommand{\aut}[0]{\operatorname{Aut}}
 \newcommand{\Inn}[0]{{\operatorname{Inn}}}
