@@ -1,6 +1,3 @@
----
-title: Algebraic Number Theory, Fall 2017
----
 
 # October 20th, 2017
 
@@ -71,7 +68,9 @@ Proof: For $c \ in \text{Cl}_K$, say $c^{-1} = [I]$ with $I \in \mathcal{O}_K$. 
 
 Will be able to compute $M$ explicitly (the Minkowski bound).
 
-# October 25th , 2017 (?)
+
+
+# October 25th , 2017
 
 **Theorem**
 Let $k$ be a number field, $n = [k: Q]$.
@@ -102,7 +101,7 @@ Every ideal class in $\text{Cl}_k$ contains an ideal $I\in O_k$ with $N(I) \leq 
 
 *Proof*
 $c = [J]^{-1}$ some $J \in O_k$, apply theorem to $J$. So $\exists \alpha \neq 0 \in J$ where $|N(\alpha)| \leq MN(J)$.
-So $(\alpha) = JI$ for some $I \in O_k $, works since $(I \in c)$, and $[1] = [J][I]$.
+So $(\alpha) = JI$ for some $I \in O_k$, works since $(I \in c)$, and $[1] = [J][I]$.
 
 **Corollary**
 $h_k < \infty$, take $c_i \in \text{Cl}_k, c_i \in I_i$ with $N(I_i) \leq M$. There are only finitely many $I \in O_k$ with $N(I) = m$. Why? $mO_k \in I, O_k/mO_k$ is finite.
@@ -172,6 +171,8 @@ If $R$ is Dedekind,
 If $a_1 \oplus \cdots a_r \cong b_1 \oplus \cdots b_s$ then $r=s$ and ideal classes are the same.
 
 Using theorem, apply map $[a_1 \oplus \cdots a_r] \mapsto (r, [a_1 \cdots a_r])$
+
+
 
 # November 11th, 2017
 
