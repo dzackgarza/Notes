@@ -6,7 +6,7 @@ author:
   affiliation: University of Georgia 
   email: dzackgarza@gmail.com 
 date: Fall 2020 
-author-note: "These are notes live-tex'd from a graduate course on Étale Cohomology taught by Daniell Litt at the University of Georgia in Fall 2020. As such, any errors or inaccuracies are almost certainly my own."
+author-note: "These are notes live-tex'd from a graduate course on Étale Cohomology taught by Daniel Litt at the University of Georgia in Fall 2020. As such, any errors or inaccuracies are almost certainly my own."
 cover-image: "figures/cover.png" 
 todos: true
 book: true
