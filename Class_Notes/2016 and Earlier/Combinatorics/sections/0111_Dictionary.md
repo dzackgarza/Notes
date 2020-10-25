@@ -47,6 +47,9 @@
 
 # Dictionary of Interpretations
 
+When doing combinatorial problems, it's often useful to have a "dictionary" in mind: some go-to interpretations of what any given combinatorial quantity might signify.
+These are particularly useful when you'd like to prove identities by counting both sides in different ways.
+
 \begin{align*}
 n! &\qquad \text{Strings of length $n$ over an alphabet of size $n$ with no duplicates,}\\
 &\qquad \text{Ways to arrange $n$ distinct objects in a line, or}\\

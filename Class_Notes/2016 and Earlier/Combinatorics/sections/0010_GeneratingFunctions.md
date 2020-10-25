@@ -23,7 +23,9 @@ $$
   - Note that this loses information! $a_0$ disappears.
   - Generally done by derivatives.
 
-Ordinary Generating Functions
+\newpage
+
+### Table of Ordinary Generating Functions
 
 | Sequence  | OGF  | Sum
 |---|---| --- |
@@ -41,7 +43,9 @@ Ordinary Generating Functions
 | $[\sum_{i=0}^0 a_i, \sum_{i=0}^1 a_i, \sum_{i=0}^2 a_i, \cdots ]$ | $\frac{A(x)}{1-x}$ | $\displaystyle\sum_{n\geq 0} \left(\sum_{i=0}^n a_n\right) \frac{x^n}{n!}$
 
 
-Exponential Generating Functions
+\newpage 
+
+### Table of Exponential Generating Functions
 
 | Sequence  | EGF  | Sum
 |---|---| --- |
@@ -57,31 +61,37 @@ Exponential Generating Functions
 | $[1, A(x), A(x)^2, \cdots ]$ | $e^{A(x)}$ | $\displaystyle\sum_{n\geq 0} A(x)^n \frac{x^n}{n!}$
 
 
-## Sequence Lookup
-| Sequence  | OGF  | EGF
-|---|---| ---|
-| $a_n = \indic{n=k}$  | $x^k$  | $\frac{x^k}{k!}$
-| $a_n = \indic{n \geq 0} (\NN)$  | $\frac 1 {1-x}$  | $e^x$
-| $a_n = \indic{n \geq 1} (\NN_{\geq 1})$  | $\frac x {1-x}$  | $e^x - 1$
-| $a_n = \indic{n \geq 2} (\NN_{\geq 2})$  | $\frac {x^2} {1-x}$  | $e^x - 1 - x$
-| $a_n = \indic{n \geq k}$  | $\frac {x^k} {1-x}$  | $e^x - \displaystyle\sum_{n=0}^k \frac{x^n}{n!} =\displaystyle\sum_{n=k+1}^\infty \frac{x^n}{n!}$
-| $a_n = \indic{n \leq k}$ | $1+x+x^2+\cdots +x^k$ |$1 + x + \frac{x^2}{2} + \cdots +\frac{x^k}{k!}$
-| $a_n = \indic{n\text{ even}}$  | $\frac{1}{1-x^2}$  | $\cosh(x)$
-| $a_n = \indic{n\text{ odd}}$  | $\frac{x}{1-x^2}$  | $\sinh(x)$
-| $a_n = \indic{n = k, k^2, \cdots}$  | $\frac 1 {1-x^k}$  | $e^{kx}$
-| $a_n = {n \choose c}$  | $x^c \left(\frac{1}{1-x}\right)^{c+1}$  | $\frac{1}{c!}x^ce^x$
-| $a_n = {n+c \choose n}$  | $ex$  | $\left( \frac 1 {1-x} \right)^c$
-| $a_n = {c \choose n}$  | $$  | $(1+x)^c$
-| $a_n = n!$  | $\emptyset$  | $\frac{1}{1-x}$
+\newpage 
 
-## Operations
+### Table of Sequences
+
+| Sequence $a_n = \cdots$  | OGF  | EGF
+|---|---| ---|
+| $\indic{n=k}$  | $x^k$  | $\frac{x^k}{k!}$
+| $\indic{n \geq 0} (\NN)$  | $\frac 1 {1-x}$  | $e^x$
+| $\indic{n \geq 1} (\NN_{\geq 1})$  | $\frac x {1-x}$  | $e^x - 1$
+| $\indic{n \geq 2} (\NN_{\geq 2})$  | $\frac {x^2} {1-x}$  | $e^x - 1 - x$
+| $\indic{n \geq k}$  | $\frac {x^k} {1-x}$  | $e^x - \displaystyle\sum_{n=0}^k \frac{x^n}{n!} =\displaystyle\sum_{n=k+1}^\infty \frac{x^n}{n!}$
+| $\indic{n \leq k}$ | $1+x+x^2+\cdots +x^k$ |$1 + x + \frac{x^2}{2} + \cdots +\frac{x^k}{k!}$
+| $\indic{n\text{ even}}$  | $\frac{1}{1-x^2}$  | $\cosh(x)$
+| $\indic{n\text{ odd}}$  | $\frac{x}{1-x^2}$  | $\sinh(x)$
+| $\indic{n = k, k^2, \cdots}$  | $\frac 1 {1-x^k}$  | $e^{kx}$
+| ${n \choose c}$  | $x^c \left(\frac{1}{1-x}\right)^{c+1}$  | $\frac{1}{c!}x^ce^x$
+| ${n+c \choose n}$  | $??$  | $\left( \frac 1 {1-x} \right)^c$
+| ${c \choose n}$  | $?$  | $(1+x)^c$
+| $n!$  | $\emptyset$  | $\frac{1}{1-x}$
+
+## Operations on Generating Functions
 
 A *linear ordered partition* of $[n]$ (say, into 2 blocks) is a set partition $$[n] = S_1 \disjoint S_2$$ where $$x\in S_1 \implies \forall y\in S_2, x \leq y.$$ 
 In other words, $S_1 = [1, 2, \cdots, m]$ and $S_2 = [m+1, m+2, \cdots, n]$. The *linear* part denotes the inequality, while the *ordered* part denotes the fact that we are labeling the $S_i$ with ordered numbers, choosing which $S_i$ to call "1", "2", and so on.
 
 An *arbitrary ordered partition* of $[n]$ (again into 2 parts) is a set partition as above, where we no longer require the inequality. The *ordered* portion again denotes the labels on the $S_i$, so we have $[S_1, S_2] \neq [S_2, S_1]$  and distinguish these as ordered partitions.
 
-**Ordinary Generating Functions**
+\newpage
+
+### Ordinary Generating Functions
+
 
 |  OGF Operation | Effect  | Sum
 |---|---| --- |
@@ -95,7 +105,9 @@ An *arbitrary ordered partition* of $[n]$ (again into 2 parts) is a set partitio
 |$D(x) = A(x)B(x)C(x)$| Convolution / Sum over ways to split into 3 **linear** parts | $\displaystyle\sum_{n\geq 0} \left( \displaystyle\sum_{i+j+k=n} a_i b_j c_k\right) {x^n}$
 |$F(x) = A(B(x))$ | Partition into **any number of linearly ordered blocks**, put a $B$ structure within each block, and an $A$ structure on the collection of blocks | $\displaystyle\sum_{n\geq 0} a_n {\left( \displaystyle\sum_{m\geq 0} b_m \frac{x^m}{m!}\right)^n}$ 
 
-**Exponential Generating Functions**
+\newpage
+
+### Exponential Generating Functions
 
 |  EGF Operation | Effect  | Sum
 |---|---| --- |
@@ -109,7 +121,9 @@ An *arbitrary ordered partition* of $[n]$ (again into 2 parts) is a set partitio
 |$D(x) = A(x)B(x)C(x)$| Convolution / Sum over ways to split into 3 **arbitrary** blocks| $\displaystyle\sum_{n\geq 0} \left( \displaystyle\sum_{i+j+k=n} a_i b_j c_k\right) \frac{x^n}{n!}$
 |$F(x) = A(B(x))$ | Partition into **any number of ordered blocks**, put a $B$ structure within each block, and an $A$ structure on the collection of blocks | $\displaystyle\sum_{n\geq 0} a_n {\left( \displaystyle\sum_{m\geq 0} b_m \frac{x^m}{m!}\right)^n}\frac{1}{n!}$ 
 
-**Comparisons**
+\newpage
+
+### Comparisons
 
 | Operation | OGF | EGF
 | --- | --- | --- | 
@@ -117,7 +131,7 @@ An *arbitrary ordered partition* of $[n]$ (again into 2 parts) is a set partitio
 | Left Shift | $x\inv (A(x) - a_0)$| $\dd{}{x} A(x)$
 | Index Multiply | $x\dd{}{x}A(x)$ | $A(x)$
 | Index Divide | $\displaystyle\int_0^x x\inv (A(x) - a_0)$ |
-| $A(x)B(x)$ | 2 **linearly** ordered blocks, $A\dash$structure on block 1, $B\dash$structure on block 2 | 2 **arbitrary** ordered blocks, $A\dash$structure on block 1, $B\dash$structure on block 2
+| $A(x)B(x)$ | 2 **linearly** ordered blocks, $A\dash$structure on block 1, $B\dash$structure on block 2 | 2 **arbitrary** ordered blocks, $A\dash$structure on block 1, $B\dash$structure on block 2 
 | $A(x)B(x)C(x)$ | 3 **linearly** ordered blocks, $A\dash$structure on block 1, $B\dash$structure on block 2, $C\dash$structure on block 3 | 3 **arbitrary** ordered blocks, $A\dash$structure on block 1, $B\dash$structure on block 2, $C\dash$structure on block 3
 |$\displaystyle \prod_{i=1}^k A_i(x)$ | $k$ **linearly** ordered blocks, an $A_i$ structure on block $i$ | $k$ **arbitrary** ordered blocks, an $A_i$ structure on block $i$
 |$A(x)^k$ | $k$ **linearly** ordered blocks, an $A$ structure on every block | $k$ **arbitrary** ordered blocks, an $A$ structure on every block
@@ -174,6 +188,7 @@ Note
 - $x^k(1 + x^k + x^{2k} + \cdots) = \frac{x^k}{1-x^k}:$ 
   - Include $k$ at least once.
 
+
 ## Some Known Generating Functions
 $$\begin{aligned}
 \sum_{n\geq 0} \stirling n k x^n &= \frac{x^k}{(1-x)(1-2x)\cdots(1-kx)} =& x^k\prod_{i=1}^k \frac 1 {1-ix} \\
@@ -182,7 +197,7 @@ $$\begin{aligned}
 \sum_{n\geq 0} \#\theset{\text{$\NN$ Partitions, only odd parts}} x^n &= \frac{1}{(1-x)(1-x^3)(1-x^5)\cdots} =& \prod_{i=1}^\infty \frac{1}{1-x^{2i-1}} \\
 \sum_{n\geq 0} \#\theset{\text{$\NN$ Partitions, only even parts}} x^n &= \frac{1}{(1-x^2)(1-x^4)(1-x^6)\cdots} =& \prod_{i=1}^\infty \frac{1}{1-x^{2i}} \\
 \sum_{n\geq 0} \#\theset{\text{$\NN$ Partitions, distinct parts}} x^n &= {(1+x)(1+x^2)(1+x^3)\cdots} =& \prod_{i=1}^{\infty} {1+x^i} \\
-\sum_{n\geq 0} \#\theset{\text{$\NN$ Partitions, \# parts $\leq k$}} x^n =& \frac{1}{(1-x)(1-x^2)\cdots(1-x^k)} =& \prod_{i=1}^{k} \frac 1 {1-x^i}  &\\
+\sum_{n\geq 0} \#\theset{\text{$\NN$ Partitions, \# parts $\leq k$}} x^n &= \frac{1}{(1-x)(1-x^2)\cdots(1-x^k)} =& \prod_{i=1}^{k} \frac 1 {1-x^i}  &\\
 \sum_{n\geq 0} \#\theset{\text{$\NN$ Partitions, largest part $= k$}} x^n &= \frac{x^k}{(1-x)(1-x^2)\cdots(1-x^k)} =& \frac{x^k}{1-x^k}\prod_{i=1}^{k-1} \frac 1 {1-x^i} \\
 \
 \end{aligned} 

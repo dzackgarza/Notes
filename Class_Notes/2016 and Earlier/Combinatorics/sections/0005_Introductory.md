@@ -22,7 +22,8 @@ For any given $n$, there is essentially **one** set of size $n$, the set $[n] = 
 But be careful! $[n]$ comes with its own labeling **and ** its own ordering $1 \leq 2 \leq \cdots$, and so should perhaps be regarded as an ordered list with unique elements instead. As a set, we can order the elements any way and obtain the same set.
 
 ## The Symmetric Group
-$S_n$ denotes the **symmetric group** on $n$ elements; each element of this group is a bijective function $[n]\to[n]$. Combinatorialists really love this group, and it secretly shows up in most counting problems.
+$S_n$ denotes the **symmetric group** on $n$ elements; each element of this group is a bijective function $[n]\to[n]$. 
+Combinatorialists really love this group, and it secretly shows up in most counting problems.
 
 A **permutation** $\sigma$ is an element of $S_n$, We can specify a bijection by describing where it sends every element, so for example, define
 $$\begin{aligned}
@@ -93,7 +94,7 @@ Observations/notes:
 
 ## Permutations:
 We can count the number of bijections from an $n$ element set to itself:
-$$ \#\theset{\text{Permutations of} [n]} = \abs{S_n}  = n! $$
+$$ \#\theset{\text{Permutations of } [n]} = \abs{S_n}  = n! $$
 
 - Also the number of a ways to form an **ordered list** of $n$ unique elements ($n$ choices for 1st element, $n-1$ choices for 2nd, etc).
 
@@ -169,12 +170,16 @@ $$
   - Alternatively, it is a collection of elements of $S$, each with a multiplicity, so a subset of $S \cross \NN$, where we define the size to be the sum of the multiplicities instead of (the usual) number of elements.
     - Example: As above, $M = \theset{(a, 3), (b,2)}$. Note that although $M$ has size 2 as a set, it has size $3+2 = 5$ as a multiset.
 
+:::{.proposition title="Counting Multiset"}
 We can thus count the number of $k\dash$element multisets of an $n\dash$element set:
 $$\begin{aligned}
 \#\theset{\text{Multisets of $[n]$ of size $k$} } &= \multinomial{n\choose k} \\ &\definedas {{n+k-1}\choose k} \\ &= {{n+k-1}\choose n-1} \\ \\ &= \frac{n^{\overline k}}{k!}
 \end{aligned}$$
+:::
 
-*Proof*: Multisets can be put in bijection with unrestricted stars and bars arrangements, see next section. $\qed$
+:::{.proof}
+Multisets can be put in bijection with unrestricted stars and bars arrangements, see next section. 
+:::
 
 - The number $\multinomial{n\choose k}$ is denoted a **multinomial coefficient**.
 - Also counts the number of ways to select $k$ items **with replacement** from a set of size $n$.
@@ -195,30 +200,53 @@ A useful conceptual counting problem, as many other problems can be encoded as s
 There are two variants: we'll say a configuration of stars and bars is *strict* if a bar does not occur as the first or last symbol, and there are no two adjacent bars.
 
 ### Variant 1: Strict
+
+:::{.proposition title="?"}
 This can be counted as
 $$
 \#\theset{\text{strict configurations of $n$ stars and $k-1$ bars}} = {n-1 \choose k-1}
 $$
+:::
 
-*Proof*: Lay out $n$ stars, which have $n-1$ gaps between them. From these gaps, choose any $k-1$ of them (without replacement) to contain bars.$\qed$
+:::{.proof}
+Lay out $n$ stars, which have $n-1$ gaps between them. 
+From these gaps, choose any $k-1$ of them (without replacement) to contain bars.
+:::
 
 - Note that this partitions the $n$ stars into $k$ nonempty groups, so this counts the number of ways to separate $n$ indistinguishable objects into $k$ nonempty groups,
 - Alternatively, counts the number of compositions of $n$ into $k$ parts.
 
 ### Variant 2: Unrestricted
+
+:::{.proposition title="?"}
 With no restrictions of the configuration, we can count
 $$
 \#\theset{\text{unrestricted configurations of $n$ stars and $k-1$ bars}} = {n+k-1 \choose k-1}
 $$
 
-*Proof*: Since we just need to form an arbitrary word from $n$ stars and $k-1$ bars, simply place $n + (k-1)$ blanks, choose $k-1$ of them (without replacement) to be bars, and place stars everywhere else.
+:::
 
-*Alternate proof*: Lay out $n$ stars, then from the $n-1$ gaps, choose $k-1$ gaps with replacement to contain bars. This can be done in $\multinomial{n-1 \choose k-1} = {n+k-1 \choose k-1}$ ways. $\qed$
+:::{.proof}
+Since we just need to form an arbitrary word from $n$ stars and $k-1$ bars, simply place $n + (k-1)$ blanks, choose $k-1$ of them (without replacement) to be bars, and place stars everywhere else.
+:::
+
+We can give an alternative proof:
+
+:::{.proof}
+Lay out $n$ stars, then from the $n-1$ gaps, choose $k-1$ gaps with replacement to contain bars. 
+This can be done in $\multinomial{n-1 \choose k-1} = {n+k-1 \choose k-1}$ ways. 
+:::
+
+:::{.remark}
+Some remarks:
 
 - Note that this partitions $n$ stars into $k$ groups, some of which may be empty.
 - Alternatively, counts the number of weak compositions of $n$ into $k$ parts.
+:::
+
 
 ## Stirling Numbers of the First Kind
+
 For a given $n$, consider permutations $\sigma \in S_n$. It can be written as a product of disjoint cycles in cycle notation, so one can ask how many permutations have exactly $k$ disjoint cycles. In other words, we have
 $$
 \sigma = \overbrace{(a_1b_1\cdots)(a_2b_2\cdots)\cdots(a_kb_k\cdots)}^{k \text{ cycles}} \in S_n
@@ -239,17 +267,21 @@ There isn't a particularly nice closed form expression for $c(n, k)$, so the mai
 $$
 \stirlingfirst n k = (n-1){\stirlingfirst {n-1} k} + \stirlingfirst{n-1}{k-1}
 $$
-*Proof:* Either $n$ is a fixed point (i.e. in a cycle by itself) or it is not.
 
-- If $n$ is a fixed point, we can delete the cycle $(n)$ from $\sigma$ to obtain a permutation of $[n-1]$ with $k-1$ cycles. Conversely, we can lift any permutation of $[n-1]$ with $k-1$ cycles to a permutation of $[n]$ by just adding the cycle $(n)$, which can only be done in one way, yielding the second term
-- Otherwise, $n$ appears in a cycle with other elements. We can delete it to obtain a permutation of $[n-1]$ which still has $k$ cycles; conversely, given such a permutation, consider the operation of multiplying $\sigma$ by the transposition $(n~i)$ where $1\leq i\leq n-1$. This has the effect of inserting $n$ into the cycle containing $i$, and in fact puts it right before $i$, i.e.
+:::{.proof}
+Either $n$ is a fixed point (i.e. in a cycle by itself) or it is not.
+
+- If $n$ is a fixed point, we can delete the cycle $(n)$ from $\sigma$ to obtain a permutation of $[n-1]$ with $k-1$ cycles. 
+  Conversely, we can lift any permutation of $[n-1]$ with $k-1$ cycles to a permutation of $[n]$ by just adding the cycle $(n)$, which can only be done in one way, yielding the second term
+
+- Otherwise, $n$ appears in a cycle with other elements. 
+  We can delete it to obtain a permutation of $[n-1]$ which still has $k$ cycles; conversely, given such a permutation, consider the operation of multiplying $\sigma$ by the transposition $(n~i)$ where $1\leq i\leq n-1$. 
+  This has the effect of inserting $n$ into the cycle containing $i$, and in fact puts it right before $i$, i.e.
 $$
 (a_1 a_2 \cdots a_{k}~ i ~ a_{k+1} \cdots a_m)(n~i) =  (a_1 a_2 \cdots a_{k}~ n ~ i ~ a_{k+1} \cdots a_m).
 $$
-There are exactly $n-1$ choices for $i$, and each one yields a way to insert $n$ into an existing cycle, yielding the first term. $\qed$
-
-
-
+There are exactly $n-1$ choices for $i$, and each one yields a way to insert $n$ into an existing cycle, yielding the first term.
+:::
 
 
 ## Stirling Numbers of the Second Kind
@@ -264,27 +296,36 @@ We can then count
 $$
 \#\theset{\text{Set partitions of $[n]$ into $k$ parts}} \definedas S(n, k) = \stirling n k,
 $$
-which is referred to as the Stirling number of the second kind. Although there is a closed-form formula for it, it is not particulary nice -- the primary method of computing it comes from a recurrence relation it satisfies:
+which is referred to as **the Stirling number of the second kind**. 
+Although there is a closed-form formula for it, it is not particularly nice -- the primary method of computing it comes from a recurrence relation it satisfies:
 $$
 \stirling n k = k\stirling {n-1} {k} + \stirling{n-1}{k-1}
 $$
 
-*Proof (with a valuable technique!)*: When forming a set partition of $[n]$ into $k$ parts, there are two disjoint cases: either $n$ is in a singleton set, or it is not.
+The following proof illustrates a valuable technique:
+:::{.proof}
+When forming a set partition of $[n]$ into $k$ parts, there are two disjoint cases: either $n$ is in a singleton set, or it is not.
 
 - If $n$ a singleton, throw that part away. What remains is a partition of $n-1$ into $k-1$ parts.  Conversely, given any partition of $n-1$ into $k-1$ parts, we can add the part $\theset{n}$ to obtain a partition of $n$ into $k$ parts where $n$ is a singleton. This yields the second term.
-- If it is not, $n$ is some $S_i$ with at least 1 other element. Letting $S'_i = S_i - \theset{n} \neq \emptyset$ we get a partition of $n-1$ into $k$ parts. Conversely, given any partition of $n-1$ into $k$ parts, we can form a partition of $n$ into $k$ parts where $n$ is not a singleton by adding $n$ to any part. Note that there are $k$ choices for which part to add $n$ to, yielding the first term. $\qed$
 
+- If it is not, $n$ is some $S_i$ with at least 1 other element. 
+  Letting $S'_i = S_i - \theset{n} \neq \emptyset$ we get a partition of $n-1$ into $k$ parts. 
+  Conversely, given any partition of $n-1$ into $k$ parts, we can form a partition of $n$ into $k$ parts where $n$ is not a singleton by adding $n$ to any part. 
+  Note that there are $k$ choices for which part to add $n$ to, yielding the first term. 
+:::
 
 ## Compositions
 In general, a composition is a way of writing $n$ as a sum of positive integers, i.e. $n = a_1 + a_2 + \cdots$ where $a_i \in \ZZ$. There are infinitely many of these, so to count anything, we need to place various restrictions:
 
 ### Strong Compositions
-A **composition of $n$ into $k$ parts** is an **ordered list** $[a_1, a_2, \cdots a_k]$ such that $\sum_{i=1}^k a_i = n$ and for each $i$ we have $0 < a_i \leq n$. (Note that we **do not** allow any $a_i$ to be zero now.)
+
+A **composition of $n$ into $k$ parts** is an **ordered list** $[a_1, a_2, \cdots a_k]$ such that $\sum_{i=1}^k a_i = n$ and for each $i$ we have $0 < a_i \leq n$. 
+Note that we **do not** allow any $a_i$ to be zero now.
 
 These can be counted as
 $$
-\mathrm{comp}(n, k) = \#\theset{\text{compositions of $n$ into $k$ parts}} \\
-= \multinomial{n+1 \choose k-1} \\ = {n+k-1 \choose k}
+\mathrm{comp}(n, k) = \#\theset{\text{compositions of $n$ into $k$ parts}}
+= \multinomial{n+1 \choose k-1}  = {n+k-1 \choose k}
 $$
 where $\multinomial{a \choose b}$ is the multinomial coefficient. This follows from by a bijection with strict stars and bars configurations. Note that distinct lists yields distinct compositions.
 
@@ -293,29 +334,64 @@ A **weak composition of $n$ into $k$ parts** is an **ordered list** $[a_1, a_2, 
 
 These can be counted as
 $$
-\mathrm{comp}_W(n, k)  = \#\theset{\text{weak compositions of $n$ into $k$ parts}} \\
+\mathrm{comp}_W(n, k)  = \#\theset{\text{weak compositions of $n$ into $k$ parts}}
 = {n-1 \choose n-k},
 $$
 which follows from a bijection with unrestricted stars and bars configurations. Note that distinct lists yields distinct compositions.
 
 ### Integer Partitions
-An **integer partition of $n$ into $k$ parts** is a strong composition of $n$ into $k$ parts where we identify any compositions that differ by a permutation of of parts. In other words, it is a **set** of integers $[a_1, a_2, \cdots a_k]$ such that $\sum_{i=1}^k a_i = n$ and for each i, $1 \leq a_i \leq n$.
+An **integer partition of $n$ into $k$ parts** is a strong composition of $n$ into $k$ parts where we identify any compositions that differ by a permutation of of parts. In other words, it is a **set** of integers $[a_1, a_2, \cdots a_k]$ such that $\sum_{i=1}^k a_i = n$ and for each $i$, we have $1 \leq a_i \leq n$.
 
 *Example*: The strong compositions of 4 are
 
-```python {cmd="/usr/bin/sage"}
+```python 
 from sage.all import *
 print(sorted(list(Compositions(4)), key=len))
 ```
 
+\[  
+\left[\text{\texttt{[4]}}, \text{\texttt{[1,{ }3]}}, \text{\texttt{[2,{ }2]}}, \text{\texttt{[3,{ }1]}}, \text{\texttt{[1,{ }1,{ }2]}}, \text{\texttt{[1,{ }2,{ }1]}}, \text{\texttt{[2,{ }1,{ }1]}}, \text{\texttt{[1,{ }1,{ }1,{ }1]}}\right]
+.\]
+
 while the integer partitions are
 
-```python {cmd="/usr/bin/sage"}
+```python
 from sage.all import *
 print(sorted(list(Partitions(4)), key=len))
 ```
 
-Note that $[3,1]$ and $[1,3]$ are distinct as compositions of 4 into 2 parts, but are identified as partitions of 4 into 2 parts.
+\[  
+\left[{\def\lr#1{\multicolumn{1}{|@{\hspace{.6ex}}c@{\hspace{.6ex}}|}{\raisebox{-.3ex}{$#1$}}}
+\raisebox{-.6ex}{$\begin{array}[b]{*{4}c}\cline{1-4}
+\lr{\phantom{x}}&\lr{\phantom{x}}&\lr{\phantom{x}}&\lr{\phantom{x}}\\\cline{1-4}
+\end{array}$}
+}, {\def\lr#1{\multicolumn{1}{|@{\hspace{.6ex}}c@{\hspace{.6ex}}|}{\raisebox{-.3ex}{$#1$}}}
+\raisebox{-.6ex}{$\begin{array}[b]{*{3}c}\cline{1-3}
+\lr{\phantom{x}}&\lr{\phantom{x}}&\lr{\phantom{x}}\\\cline{1-3}
+\lr{\phantom{x}}\\\cline{1-1}
+\end{array}$}
+}, {\def\lr#1{\multicolumn{1}{|@{\hspace{.6ex}}c@{\hspace{.6ex}}|}{\raisebox{-.3ex}{$#1$}}}
+\raisebox{-.6ex}{$\begin{array}[b]{*{2}c}\cline{1-2}
+\lr{\phantom{x}}&\lr{\phantom{x}}\\\cline{1-2}
+\lr{\phantom{x}}&\lr{\phantom{x}}\\\cline{1-2}
+\end{array}$}
+}, {\def\lr#1{\multicolumn{1}{|@{\hspace{.6ex}}c@{\hspace{.6ex}}|}{\raisebox{-.3ex}{$#1$}}}
+\raisebox{-.6ex}{$\begin{array}[b]{*{2}c}\cline{1-2}
+\lr{\phantom{x}}&\lr{\phantom{x}}\\\cline{1-2}
+\lr{\phantom{x}}\\\cline{1-1}
+\lr{\phantom{x}}\\\cline{1-1}
+\end{array}$}
+}, {\def\lr#1{\multicolumn{1}{|@{\hspace{.6ex}}c@{\hspace{.6ex}}|}{\raisebox{-.3ex}{$#1$}}}
+\raisebox{-.6ex}{$\begin{array}[b]{*{1}c}\cline{1-1}
+\lr{\phantom{x}}\\\cline{1-1}
+\lr{\phantom{x}}\\\cline{1-1}
+\lr{\phantom{x}}\\\cline{1-1}
+\lr{\phantom{x}}\\\cline{1-1}
+\end{array}$}
+}\right]
+.\]
+
+Note that $[3,1]$ and $[1,3]$ are distinct as *compositions* of 4 into 2 parts, but are identified as *partitions* of 4 into 2 parts.
 
 These are generally difficult to count, but we can define
 $$\begin{aligned}

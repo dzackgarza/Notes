@@ -1,3 +1,5 @@
+\newpage
+
 # Appendix
 
 Some notes on lists:
@@ -19,7 +21,6 @@ which can be found by using the recurrence to solve for an ordinary generating f
 $$
 \sum_k \stirling n k = \frac 1 e \sum_{i=0}^\infty \frac{i^n}{i!}.
 $$
-
 
 
 ## The 12-fold Way

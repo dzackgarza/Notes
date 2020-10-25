@@ -1,5 +1,7 @@
 # Posets 
-Definition: A *poset*  (partially-ordered set) is a pair $(S, \preceq)$ where $\preceq$ is a relation on $S$ that is
+
+:::{.definition title="Poset"}
+A *poset*  (partially-ordered set) is a pair $(S, \preceq)$ where $\preceq$ is a relation on $S$ that is
 
 - Transitive:
 $$
@@ -13,61 +15,88 @@ $$
 $$
 \forall a,b\in S,\quad a \preceq b \text{ and } b \preceq a \implies a = b
 $$
+:::
 
+Notice that this behaves very much like $(\ZZ, \leq)$, so we'll often used $\leq$ to denote the relation. 
+However, there is an important distinction -- there may be incomparable elements, i.e. pairs $a,b \in S$ such that neither $a\leq b$ or $b\leq a$ holds. 
+This is why the order is "partial". 
+Also note that it makes sense in this setting to write things like $a< b$, which just means $a\leq b$ and $a\neq b$.
 
-> Notice that this behaves very much like $(\ZZ, \leq)$, so we'll often used $\leq$ to denote the relation. However, there is an important distinction -- there may be incomparable elements, i.e. pairs $a,b \in S$ such that neither $a\leq b$ or $b\leq a$ holds. This is why the order is "partial". Also note that it makes sense in this setting to write things like $a< b$, which just means $a\leq b$ and $a\neq b$.
+:::{.definition title="Total Order and Chains"}
+If every two elements are comparable, $\preceq$ is called *total order* and $(S, \preceq)$ is called a *chain*. 
+:::
 
-> If every two elements are comparable, $\preceq$ is called *total order* and $(S, \preceq)$ is called a *chain*. Weakening this condition slightly, if for every two elements $x,y\in S$ there exists some $s\in S$ such that $s\leq x$ and $s \leq y$, we say $S$ is a *directed* poset.
+:::{.definition title="Directed Posets"}
+Weakening this condition slightly, if for every two elements $x,y\in S$ there exists some $s\in S$ such that $s\leq x$ and $s \leq y$, we say $S$ is a *directed* poset.
+:::
 
-Examples:
-
+:::{.example}
+\hfill
 - $(\ZZ, \leq)$ is a chain.
 - $(\NN, \mid)$ where $a\mid b \iff a\text{ divides } b$ is a poset.
 - $(\mathcal{P}([n]), \subseteq)$ (denoting the powerset) is a poset.
 - $(\theset{\text{Set partitions of $[n]$}}, \preceq)$ where $a \preceq b \iff$ every block of $a$ is contained in some block of $b$ is a poset.
   - Note that this says that $b$ can be obtained by merging some blocks of $a$.
+:::
 
+
+:::{.definition title="Sections of Posets"}
 An *open section* of a poset is defined as $$S_\alpha = \theset{s \in S \suchthat s < \alpha}.$$ A *closed section* is defined as $$\overline{S_\alpha} = \theset{s \in S \suchthat s \leq \alpha}.$$ The *complement* of a section is given by 
 $$
 S_x^c = \theset{s\in S \suchthat s \geq a} \\
 \overline{S_x}^c = \theset{s\in S \suchthat s > a}
 $$
+:::
 
+:::{.definition title="Intervals"}
 We can define the notions of an *open interval from $\alpha$ to $\beta$*, *closed interval*, and *half-open intervals* respectively:
-$$
-\begin{aligned}
+\[
 (\alpha, \beta) &\definedas \theset{s\in S \suchthat \alpha < s < \beta}\\
 [\alpha, \beta] &\definedas \theset{s\in S \suchthat \alpha \leq s \leq \beta}\\
 (\alpha, \beta] &\definedas \theset{s\in S \suchthat \alpha < s \leq \beta}\\
 [\alpha, \beta) &\definedas \theset{s\in S \suchthat \alpha \leq s < \beta}.
-\end{aligned}
-$$
+\]
+:::
 
-Definition: we say that $y$ *covers* $x$ if
+:::{.definition title="Covering"}
+We say that $y$ *covers* $x$ if
 $$
 x \in S_y \text{ (so $x < y$) and } (x,y) = \emptyset.
 $$
 In other words, this says that $y$ is a *least upper bound* for $x$.
+:::
 
-Definition: If $S_x = \emptyset$, $x$ is said to be a *minimal* element. Similarly, if $\overline{S_y} = S$, $y$ is said to be a *maximal* element.
+:::{.definition title="Minimal and Maximal Elements"}
+If $S_x = \emptyset$, $x$ is said to be a *minimal* element. Similarly, if $\overline{S_y} = S$, $y$ is said to be a *maximal* element.
+:::
 
-> In a subtle distinction, if $x \in S_s$ for every $s\in S$, then $x$ is unique and is said to be the *minimum element* and denoted $\mathbf 0$. Similarly, if $S_y = S-\theset{y}$, then $y$ is said to be a (not necessarily unique) *maximal* element and is denoted $\mathbf 1$. 
+:::{.remark}
+In a subtle distinction, if $x \in S_s$ for every $s\in S$, then $x$ is unique and is said to be the *minimum element* and denoted $\mathbf 0$. Similarly, if $S_y = S-\theset{y}$, then $y$ is said to be a (not necessarily unique) *maximal* element and is denoted $\mathbf 1$. 
+:::
 
-Definition: A *Hasse diagram* for a poset $(S, \leq)$ is an graph obtained by letting the verticies of $G$ be the elements of $S$, connecting a directed edge from $x\to y$ iff $y$ covers $x$, arranging this graph so all arrows point upwards and incomparable elements are lined up horizontally.
+:::{.definition title="Hasse Diagrams"}
+A *Hasse diagram* for a poset $(S, \leq)$ is an graph obtained by letting the verticies of $G$ be the elements of $S$, connecting a directed edge from $x\to y$ iff $y$ covers $x$, arranging this graph so all arrows point upwards and incomparable elements are lined up horizontally.
+:::
 
-> These are generally written without vertex labels or edge directions, yielding an undirected graph on $\# S$ vertices.
+:::{.remark}
+These are generally written without vertex labels or edge directions, yielding an undirected graph on $\# S$ vertices.
+:::
 
-Examples:
+:::{.example}
+\hfill
 
 - $(D(12), \mid)$: the divisors of 12 ordered by divisibility
 
-  ![](2019-06-08-23-30-20.png)
+  ![Divisibility Poset](figures/2019-06-08-23-30-20.png)
 
 - $(\mathcal{P}([n]), \subseteq)$: Subsets of $[3]$ ordered by inclusion.
 
-  ![](2019-06-08-23-29-44.png)
+  ![Subset Poset](figures/2019-06-08-23-29-44.png)
+:::
 
-Definition: A subset of a poset $U \subseteq S$ is called an *upper set* if it "absorbs" everything above it with respect to the partial order, i.e.
+
+:::{.definition title="Upper and Lower Sets"}
+A subset of a poset $U \subseteq S$ is called an *upper set* if it "absorbs" everything above it with respect to the partial order, i.e.
 $$
 u\in U \implies \forall s\in S, \quad s \geq u \implies s \in U,
 $$
@@ -79,14 +108,22 @@ $$
 l \in L \implies \forall s\in S, \quad s \leq u \implies s \in U
 $$
 so $\overline{S_u} \subseteq L$ 
+:::
 
-Definition: A subset $L \subseteq S$ is an *order ideal* if it is a non-empty directed lower set.
+:::{.definition title="Order Ideals"}
+A subset $L \subseteq S$ is an *order ideal* if it is a non-empty directed lower set.
+:::
 
+:::{.definition title="Incidence Algebra"}
 Given any poset, we can define the *incidence algebra*
 $$
 \Af(P) = \theset{f: P \cross P \to \RR \suchthat f(x,y) = 0 \iff x \not\leq y },
 $$
-which are all of the functions on pairs of elements in the poset that take some values on comparable elements and are just zero otherwise. Some examples:
+which are all of the functions on pairs of elements in the poset that take some values on comparable elements and are just zero otherwise. 
+:::
+
+:::{.example}
+\hfill
 
 - The indicator/"dirac delta" function: $\delta(x,y) = \indic{x=y}$
 - The zeta function: $\zeta(x,y) = \indic{x \leq y}$
@@ -107,9 +144,19 @@ $$
 \mu(x,y) = (-1)\sum_{ t \in [x,y)}\zeta(x, t)
 $$
 One thus computes this function inductively up a Hasse diagram.
+:::
 
-## Example Calculation
-![](2019-06-09-15-13-51.png)
+
+## An Example Calculation
+
+:::{.exercise title="Mobius Functions"}
+Compute the Mobius function for each element of the divisibility poset of $n=90$.
+:::
+
+![The Divisibility Poset on $n=90$](figures/2019-06-09-15-13-51.png)
+
+:::{.solution}
+\hfill
 
 - Level 1
   - $\mu(1,1) = 1$ (by definition)
@@ -128,8 +175,11 @@ One thus computes this function inductively up a Hasse diagram.
   - $[1,18) = \theset{6,9,2,3,1}       \implies \mu(1,18) = -(1+0-1-1+1) = 0$
 - Level 5
   - $[1, 90) = S - \theset{90} \implies \mu(1,90) = -(0+0-1+0+1+1+1-1-1-1+1) = 0$
+:::
 
-Note that from this, we find that for the divisibility poset,
+### Mobius Inversion
+
+Note that from the above calculation, we find that for the divisibility poset,
 $$
 \mu(a, b) = \begin{cases}
   (-1)^k & \frac b a \text{ is a product of k distinct primes} \\
