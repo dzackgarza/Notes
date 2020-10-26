@@ -1,6 +1,6 @@
 ---
 title: "Categorification"
-subtitle: "University of Georgia, Summer2020"
+subtitle: "University of Georgia, Summer 2020"
 author:
 - name: D. Zack Garza
   affiliation: University of Georgia 

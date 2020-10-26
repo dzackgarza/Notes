@@ -56,7 +56,7 @@ function RawBlock(el)
     if FORMAT:match 'html' then
       ril = pandoc.RawInline('html', '<p style="text-align:center;"> <img style="width:100%" src="' .. fname .. '"></p>')
     elseif FORMAT:match 'latex' or FORMAT:match 'pdf' or FORMAT:match 'markdown' then
-      ril = pandoc.RawInline( "tex", "\\begin{center}\\includesvg[width=\\linewidth]{" .. sha .. "}\\end{center}" )
+      ril = pandoc.RawInline( "tex", "\\begin{center}\\includesvg[width=0.7\\linewidth]{" .. sha .. "}\\end{center}" )
     else
       return el
     end
