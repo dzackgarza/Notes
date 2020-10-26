@@ -125,7 +125,7 @@
   {\itshape}              % Thm head font
   {}                      % Punctuation after thm head
   {\newline}              % Space after thm head: \newline = linebreak
-  {\thmname{#1}.}%
+  {\thmname{#1}. \thmnote{\itshape{(#3)}}}%
 \theoremstyle{problem}
 \tcolorboxenvironment{problem}{
   boxrule=1pt,
@@ -137,7 +137,7 @@
 }
 \newtheorem*{problem}{Problem}
 
-% Problem Style
+% Claim Style
 \newtheoremstyle{claim} % name
   {0.6em}                   % Space above, empty = `usual value'
   {0.2em}                   % Space below
@@ -160,7 +160,7 @@
 \newtheorem*{claim}{Claim}
 
 
-
+% Warning environment
 %\newcommand*{\TakeFourierOrnament}[1]{{%
 %\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
 %\newcommand*{\danger}{\TakeFourierOrnament{66}}
