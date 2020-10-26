@@ -7,7 +7,7 @@ author:
   email: dzackgarza@gmail.com 
 date: Fall 2020 
 author-note: |
-  These are notes live-tex'd from a graduate course in Categorificationtaught by Ariki Wilbert at the University of Georgia in Summer 2020.
+  These are notes live-tex'd from a graduate course in Categorification taught by Ariki Wilbert at the University of Georgia in Summer 2020.
   As such, any errors or inaccuracies are almost certainly my own.
 cover-image: "figures/cover.png" 
 todos: true
