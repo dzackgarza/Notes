@@ -4222,3 +4222,9 @@ What happens when translating from an alcove onto a wall?
 A similar formula will hold in this case: we will get either induced modules or zero, depending on the dominance of the weights.
 This will lead into the Lusztig conjectures.
 
+
+# Wednesday, October 28
+
+## Review of Last Time
+
+Suppose we have two weights in the same facet, i.e. they're in the same stabilizer under the action of the affine Weyl group
