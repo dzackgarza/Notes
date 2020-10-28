@@ -3014,7 +3014,7 @@ Since $(K, v)$ is complete and discretely valued (with multiplicative reduction)
 See Kodaira-Neron.
 Moreover, the identity component of the generic fiber is cyclic of order $v(q)$.
 
-Question: is every curve with an integral $j\das$invariant a Tate curve?
+Question: is every curve with an integral $j\dash$invariant a Tate curve?
 
 Lemma
 :   Let $\alpha \in K$ with $\abs \alpha > 1$.
