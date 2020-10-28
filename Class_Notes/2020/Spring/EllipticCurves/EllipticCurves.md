@@ -832,13 +832,13 @@ Claim
 
 Then since $R\units$ is finitely generated, so is its image, but if $T_S = T_S[n]$ is an $n\dash$torsion group, this forces $T_S$ to be finite.
 
-\begin{center}
+
 \begin{tikzcd}
 R\units \arrow[rr, hook] \arrow[rrrrdd] \arrow[rrrr, "\psi", bend left] &  & K\units \arrow[rr, hook'] &  & K\units/K^{\times n} \\
 &  &                           &  &                      \\
 &  &                           &  & T_S \arrow[uu, hook]
 \end{tikzcd}
-\end{center}
+
 
 Take $\bar a \in T_s$ and lift it to $a\in K\units$, and consider $(a)$ as a fractional $R_S$ ideal; it is an $n$th power.
 So write $(a) = I^n$ for $I$ another fractional $R_S$ ideal.
@@ -2146,11 +2146,11 @@ Proof (of Lemma, sketch)
     $H\dual$ is a discrete $p\dash$primary torsion group.
     Example: $\ZZ_p\dual = \QQ_p/\ZZ_p$, which flips the following exact sequence:
     
-    \begin{center}
+    
     \begin{tikzcd}
     0 \arrow[rr] &  & \ZZ_p \arrow[rr] &  & \QQ_p \arrow[rr] &  & \QQ_p/\ZZ_p \arrow[rr] \arrow[llll, bend left=49] &  & 0
     \end{tikzcd}
-    \end{center}
+    
     
     Then $H\dual = [p] H\dual$, and thus $H\dual$ is divisible.
     We then apply the structure theory of divisible group to get a direct sum, then applying duality again yields a direct product, which proves the lemma.
@@ -2245,14 +2245,14 @@ Definition (Good Reduction for Abelian Varieties)
 : $A/K$ has *good reduction* if there exists a smooth group scheme $A?R$ with generic fiber $A/K$.
 
 Noting that $\spec(R) = \theset{(0), (\pi)}$ is a two point space, we have the fibers
-\begin{center}
+
 \begin{tikzcd}
 A \arrow[dd] &  & A/K \arrow[dd] &  & A/\FF_q \arrow[dd] \\
              &  &                &  &                    \\
 \spec(R)     &  & (0)            &  & (\pi)             
 \end{tikzcd}
 
-\end{center}
+
 
 
 We get a SES
@@ -2343,7 +2343,7 @@ Proof (Sketch)
   What does this buy us? 
   We can think of the subgroup $H$ now as a quotient, so there is a $K^{\mathrm{tr}} \leq \bar K$ such that $\Aut(K\tr/K) = H$, i.e. we have a compositum
 
-  \begin{center}
+  
   \begin{tikzcd}
                                   & \bar K \arrow[ldd, "H"'] \arrow[rdd] &                                \\
                                   &                                      &                                \\
@@ -2352,7 +2352,7 @@ Proof (Sketch)
                                   & K                                    &                               
   \end{tikzcd}
 
-  \end{center}
+  
 
   
   Thus $\bar K = K^{\text{unramified}} \cross K^{\text{tr}}$.
@@ -2505,13 +2505,13 @@ Remark
 : The map $q \mapsto j(q)$ is generally not injective.
   Note that $j$ factors through the quotient
 
-  \begin{center}
+  
   \begin{tikzcd}
   j\HH \arrow[rr] \arrow[rrdd, dashed] &  & \CC                                    \\
   &  &                                        \\
   &  & {\liesl(2, \ZZ)\ \HH} \arrow[uu, "\cong"]
   \end{tikzcd}
-  \end{center}
+  
 
   In other words, for $(a, b; c, d) \in \liesl(2, \ZZ)$ we have $j(\tau) = j\qty{\frac{a\tau + b}{c\tau + d}}$.
   The indeterminacy here is given by $e^{2\pi i \tau_1} = e^{2\pi i \tau_2}$ iff $j_2 = j_1 + b$ for some $b\in  \ZZ$ and $(1, b; 0, 1) \xi = \xi + b$.
@@ -2566,13 +2566,13 @@ Theorem (Tate, Part A)
 Theorem (Tate, Part B)
 :   Moreover, for all finite extensions $L/K$, note that we can extend the norm to the algebraic closure uniquely (by Number Theory II), and the following diagram commutes
   
-    \begin{center}
+    
     \begin{tikzcd}
     K\units/\generators{q} \arrow[dd, hook] \arrow[rr] &  & E_q(K) \arrow[dd, hook] \\
                                                       &  &                         \\
     L\units/\generators{q} \arrow[rr]                  &  & E_q(L)                 
     \end{tikzcd}
-    \end{center}
+    
 
 Taking the $\directlim$ over finite $L/K$, 
 $$
@@ -2682,12 +2682,12 @@ There exists an elliptic curve $E_1/K$ and a $K\dash$analytic group isomorphism
 a *multiplicative uniformization*.
 
 For all finite $L/K$, the norm extends uniquely over $L$, and there is a compatibility in the following sense
-\begin{center}
+
 \begin{tikzcd}
 K\units / \gens{q} \ar[d, hook] \ar[r, "\cong \phi_K"] & E_q(K) \ar[d, hook]\\
 K\units/ \gens{q} \ar[r, "\cong \phi_L"] & E_q(L)
 \end{tikzcd}
-\end{center}
+
 
 And taking the $\directlim$ over separable $L/K$ yields
 \begin{align*}
@@ -2850,12 +2850,12 @@ where $\sigma(p) = \chi_G(\sigma) p$, and thus
 .\end{align*}
 
 We then have a diagram of inclusions
-\begin{center}
+
 \begin{tikzcd}
 G \ar[r, hook] \ar[d, hook] & A^d[N] \ar[r, hook] & A^d \ar[d, hook] \\
 G \ar[r, hook] & A[N] \ar[r, hook] & A^d \ar[d, hook] \\
 \end{tikzcd}
-\end{center}
+
 
 What if we now want an actual $K\dash$rational point of order $N$?
 Cyclic order $N$ $K\dash$rational subgroups of $A$ are equal to cyclic order $N$ $K\dash$rational subgroups of $A^d$, so
@@ -3247,7 +3247,7 @@ Fact
 : A Kleinian group is conjugate in $\PSL(2, \CC)$ to a Fuschian group if it stabilizes a circle in $\PP^1(\CC)$.
 
 Exercise
-:   Let $\Gamma = \gens{[q, 0; 0, 1]} \subset \PSL(2, \CC)$ and $\Lamba(\Gamma) = \PP^1\setminus \theset{\vector 0}$.
+:   Let $\Gamma = \gens{[q, 0; 0, 1]} \subset \PSL(2, \CC)$ and $\Lambda(\Gamma) = \PP^1\setminus \theset{\vector 0}$.
     Show $\Lambda(\Gamma)$ is open but could be empty, has either 0,1,2, or infinitely many connected components.
 
 Exercise
@@ -3257,14 +3257,14 @@ If $U(\Gamma) \neq \emptyset$, then $\Lambda(\Gamma) \to \Lambda(\Gamma)/\Gamma$
 
 For $G$ a group and $X$ a set with a map $M: G\cross X \to X$, we say $X$ is a $G\dash$set.
 We can make a category from this: given $(X, \mu_x)$ and $(Y, \mu_y)$, a $G\dash$map is given by a diagram
-\begin{center}
+
 \begin{tikzcd}
 G\cross X \ar[r, "\mu_x"] \ar[d, "\id \cross f"]
 & X \ar[d, "f"] \
 G\cross Y \ar[r, "\mu_y"] 
 & Y
 \end{tikzcd}
-\end{center}
+
 
 The set $X$ is transitive if for all $x, y\in X$, there is a $g\in G$ such that $gx = y$.
 $X$ is *simply transitive* if this $g$ is unique.
@@ -3343,12 +3343,12 @@ But this doesn't work in positive characteristic.
 Second proof: the map $G\cross X \to X \cross X$ being an isomorphism says that upon base change on $X \to \spec k$, $X$ becomes isomorphic to $G$.
 But then it also becomes isomorphic over base change for which $X$ is intermediate.
 So if we have
-\begin{center}
+
 \begin{tikzcd}
 T \ar[rr] \ar[rd] & & \spec k \\
 & X \ar[ur] &
 \end{tikzcd}
-\end{center}
+
 which factors through $Y$, if $p\in X(k)$ then $\spec k\to X$ and thus $X/k \cong G/k$.
 
 The form of the assumed isomorphic implies that the base change of the $G\dash$torsor $X$ from $\spec k$ to $X$ is trivial as a $G\cross X$ torsor over $X$.
@@ -3408,14 +3408,14 @@ Remarks:
   \end{align*}
     is an isomorphism.
   Letting $G_X \definedas G\cross X, X_X \definedas X\cross X$ be the base changes, this asks for a commuting diagram
-  \begin{center}
+  
   \begin{tikzcd}
   G_X \cross_X G_X \ar[r, "\mu_{G_X}"] 
   & G_X \ar[d, "1\cross \phi"] \
   G_X \cross_X X_X \ar[r, "\mu_{X_X}"] 
   & X_X
   \end{tikzcd}
-  \end{center}
+  
   thus the base change to $X$ is the trivial $G\dash$torsor on $X$.
 
 
@@ -3436,13 +3436,13 @@ v: X\cross X &\to E \\
 
 with $p= g+q$ iff
 
-\begin{center}
+
 \begin{tikzcd}
 \underline{\Pic}^1 X \cross \underline{\Pic}^1 X  \ar[rr, "v"]\ar[rd, "v"]
 & & E \\ 
 &  \underline{\Pic}^0 X  \ar[ru, dotted] &
 \end{tikzcd}
-\end{center}
+
 
 For $X/k$ a nice genus one curve, $E/k$ an elliptic curve, $\mu: E\cross X \to X$ is a torsor iff the map $\underline{\Pic}^0 X \to E$ is an isomorphism.
 Therefore two elements $X_1, X_2 \in WC(k, E)$ are isomorphic iff $X_1, X_2$ lie in the same $\Aut(E)\dash$orbit of $WC(k, E)$.
