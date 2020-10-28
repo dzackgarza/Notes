@@ -3071,7 +3071,7 @@ Note that $\Lambda$ is a complex torus, and not a linear torus $\GG_m^n$.
 Note that if $(K, \abs{\wait})$ is a complete non-Archimedean field, then full lattices in $k$ do not exist in characteristic zero, so we want a multiplicative version.
 The right notion of isomorphism to use here is homothety (scaling by a complex unit) and thus $\Lambda \subset \CC^g$ has an action of $\GL_n(\CC)$ so $\CC^g/\Lambda \cong \CC^g/m \Lambda$, so we may choose $\Lambda$ to have a $\ZZ\dash$basis given by $\lambda_1 = e_1, \lambda_g = c_g$ generalizing the usual basis of $1, \tau$ in the 1-dimensional case.
 
-We have an exponential map $\operatorname{exp}: \CC^g \to (\CC\units)^g$ where $\vector z \mapsto e^{2\pi i \vector z}$, so pushing $\Lambda$ through $\exp$ yields a full lattice $\Lambda' \subset (\CC\units)^g$ where $\CC^g / \Lambda \cong (\CC^\units)^g/\Lambda'$.
+We have an exponential map $\operatorname{exp}: \CC^g \to (\CC\units)^g$ where $\vector z \mapsto e^{2\pi i \vector z}$, so pushing $\Lambda$ through $\operatorname{exp}$ yields a full lattice $\Lambda' \subset (\CC\units)^g$ where $\CC^g / \Lambda \cong (\CC^\units)^g/\Lambda'$.
 
 In $\dim g > 1$, not every $\CC\dash$torus corresponds to an abelian variety (contrasting the $g=1$ case).
 Changing basis for $\Lambda$ yields a matrix $(I \mid Z)$ where $Z \in \Mat_{g, g}(\CC)$, and Riemann showed that $\CC^g / \Lambda$ determines an abelian variety iff this matrix is symmetric with positive definite imaginary part.
