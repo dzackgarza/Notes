@@ -3343,8 +3343,8 @@ But then it also becomes isomorphic over base change for which $X$ is intermedia
 So if we have
 
 \begin{tikzcd}
-T \ar[rr] \ar[rd] & & \spec k \\
-& X \ar[ur] &
+T \ar[rr] \ar[rd] &           & \spec k \\
+                  & X \ar[ur] &
 \end{tikzcd}
 
 which factors through $Y$, if $p\in X(k)$ then $\spec k\to X$ and thus $X/k \cong G/k$.
