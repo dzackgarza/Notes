@@ -3023,7 +3023,7 @@ Lemma
 Thus the function $j$ which maps $q \mapsto j(E_q)$ is bijective, so you can recover the Tate parameter $q$ from either the elliptic curve or the $j\dash$invariant, which is not true over $K = \CC$.
 
 Proof
-:   Define $f(q) \definedas {1 \over j(q)} = {1 \over 1 + ?q + ? q^2 + \cdots$.
+:   Define $f(q) \definedas {1 \over j(q)} = {1 \over 1 + ?q + ? q^2 + \cdots}$.
     By inverting formal power series, this is equal to $q - 744 q^2 + 35665 q^3 + \cdots \in \ZZ[[q]]$.
     To get a functional inverse, for any ring $R$, any  $f\in R[[q]]$ such that $g \circ f = f\ \circ g = \id$ iff $a_1(f)$ is a unit.
     Then there is a $\beta \in E, \abs \beta < 1$ such that $\abs{g(\beta)} = \abs{\beta}$.
