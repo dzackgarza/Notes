@@ -1,19 +1,24 @@
 
 # Wednesday January 8
 
+Reference: [@silverman_2009]
+
 ## Summary
 
 1. Mordell-Weil theorem
 
-  - For elliptic curves over global fields (number fields, function fields, finite fields, etc)
+  - For elliptic curves over global fields 
+    - Number fields, function fields, finite fields, etc.
   
-  - Proof uses Galois cohomology and height functions, essentially one proof!
+  - Proof uses Galois cohomology and height functions.
+    Essentially one proof!
   
-  - Holds for abelian varieties, but more difficult (need an analog of height functions, i.e. an $x\dash$coordinate)
+  - Holds for abelian varieties, but more difficult.
+  - Need an analog of height functions, i.e. an $x\dash$coordinate).
 
-2. Height functions (possibly)
+2. Height functions.
 
-3. Elliptic curves over $\QQ_p$ or complete discrete valuation fields (see Silverman for basics, possibly Chapter 5), particularly Tate curves
+3. Elliptic curves over $\QQ_p$ or complete discrete valuation fields[^silv_ref_one], particularly Tate curves.
 
 4. Weil-Chatelet groups $E/k$ related to $H^1(k; E)$ with coefficients in the elliptic curve
 
@@ -25,6 +30,9 @@
   \[
   \hat \rho: g_k \to \GL(\hat \ZZ)
   \]
+
+[^silv_ref_one]:
+See Silverman for basics, possibly Chapter 5
 
 ## Mordell-Weil Groups
 

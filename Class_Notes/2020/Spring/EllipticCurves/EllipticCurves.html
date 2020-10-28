@@ -787,23 +787,28 @@ width: 30%;
 
 
 <h1 id="wednesday-january-8">Wednesday January 8</h1>
+<p>Reference: <span class="citation" data-cites="silverman_2009">(Silverman, 2009)</span></p>
 <h2 id="summary">Summary</h2>
 <ol type="1">
 <li>Mordell-Weil theorem</li>
 </ol>
 <ul>
-<li><p>For elliptic curves over global fields (number fields, function fields, finite fields, etc)</p></li>
-<li><p>Proof uses Galois cohomology and height functions, essentially one proof!</p></li>
-<li><p>Holds for abelian varieties, but more difficult (need an analog of height functions, i.e. an <span class="math inline">\(x{\hbox{-}}\)</span>coordinate)</p></li>
+<li><p>For elliptic curves over global fields</p>
+<ul>
+<li>Number fields, function fields, finite fields, etc.</li>
+</ul></li>
+<li><p>Proof uses Galois cohomology and height functions. Essentially one proof!</p></li>
+<li><p>Holds for abelian varieties, but more difficult.</p></li>
+<li><p>Need an analog of height functions, i.e. an <span class="math inline">\(x{\hbox{-}}\)</span>coordinate).</p></li>
 </ul>
 <ol start="2" type="1">
-<li><p>Height functions (possibly)</p></li>
-<li><p>Elliptic curves over <span class="math inline">\({\mathbb{Q}}_p\)</span> or complete discrete valuation fields (see Silverman for basics, possibly Chapter 5), particularly Tate curves</p></li>
+<li><p>Height functions.</p></li>
+<li><p>Elliptic curves over <span class="math inline">\({\mathbb{Q}}_p\)</span> or complete discrete valuation fields<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, particularly Tate curves.</p></li>
 <li><p>Weil-Chatelet groups <span class="math inline">\(E/k\)</span> related to <span class="math inline">\(H^1(k; E)\)</span> with coefficients in the elliptic curve</p></li>
 <li><p>Galois representation of <span class="math inline">\(E/k\)</span> for <span class="math inline">\(\operatorname{ch}k = 0\)</span>, for <span class="math display">\[\begin{align*}       \rho_n: g_k \to \operatorname{GL}(2, {\mathbb{Z}}/n{\mathbb{Z}})       \end{align*}\]</span> which leads to <span class="math display">\[\begin{align*}       \widehat{\rho}: g_k \to \operatorname{GL}(\widehat{\mathbb{Z}})       \end{align*}\]</span></p></li>
 </ol>
 <h2 id="mordell-weil-groups">Mordell-Weil Groups</h2>
-<p>Let <span class="math inline">\(E/k\)</span> be an elliptic curve over a field <span class="math inline">\(k\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, i.e. a smooth, projective, geometrically integral curve of genus 1 with a <span class="math inline">\(k{\hbox{-}}\)</span>rational point <span class="math inline">\(O\)</span>.</p>
+<p>Let <span class="math inline">\(E/k\)</span> be an elliptic curve over a field <span class="math inline">\(k\)</span><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, i.e. a smooth, projective, geometrically integral curve of genus 1 with a <span class="math inline">\(k{\hbox{-}}\)</span>rational point <span class="math inline">\(O\)</span>.</p>
 <div class="remark">
 <p>If <span class="math inline">\(k\)</span> is not algebraically closed, such a point <span class="math inline">\(O\)</span> may not exist.</p>
 <p>By Riemann-Roch (easy computation) <span class="math inline">\(E\)</span> embeds (non-canonically) into <span class="math inline">\(\Bbb{P}^2/k\)</span> as a Weierstrass cubic <span class="math display">\[\begin{align*} y^2 + a_1 xy + a_3 y = x^3 + a_2 x^2 + a_4 x + a_6 \quad \Delta \neq 0 .\end{align*}\]</span></p>
@@ -849,7 +854,7 @@ width: 30%;
 </ol>
 <p><strong>Answer 1:</strong></p>
 <div class="theorem" title="Clayborn, 1966">
-<p>Every commutative <span class="math inline">\(G\)</span> is a class group.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Every commutative <span class="math inline">\(G\)</span> is a class group.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 </div>
 <p><strong>Answer 2</strong>: Consider <span class="math inline">\(E/{\mathbb{C}}\)</span>, then <span class="math inline">\(E({\mathbb{C}}) \cong S^1 \times S^1\)</span>, so the torsion subgroup is <span class="math display">\[\begin{align*} T(1) \mathrel{\vcenter{:}}=({\mathbb{Q}}/{\mathbb{Z}})^2 = \bigoplus_{\ell} ({\mathbb{Q}}_\ell/{\mathbb{Z}}_\ell)^2 .\end{align*}\]</span> This in fact holds for any algebraically closed field of characteristic zero.</p>
 <div class="fact">
@@ -2714,11 +2719,17 @@ width: 30%;
 </dl>
 <p>For <span class="math inline">\(G/k\)</span> a smooth (commutative, but not necessary) group, <span class="math inline">\(X/k\)</span> a <span class="math inline">\(G{\hbox{-}}\)</span>torso, choose <span class="math inline">\(p\in k^\text{sep}\)</span>. Then defining <span class="math inline">\(g\mathrel{\vcenter{:}}=\operatorname{Aut}(k^\text{sep}/ k)\)</span>, then <span class="math inline">\(X(k^\text{sep})\)</span> has two actions: a galois action <span class="math inline">\(g\curvearrowright\)</span> the left, and a <span class="math inline">\(G(k^\text{sep})\)</span> action on the right. For all <span class="math inline">\(\sigma \in g\)</span>, there exists a unique <span class="math inline">\(a_\sigma \in G(k^\text{sep})\)</span> such that <span class="math inline">\(\sigma p = p a_{\sigma}\)</span>.</p>
 <p>This defines a map <span class="math inline">\(a_\bullet: g\to G(k^\text{sep})\)</span> – however, this is not a group morphism, it is a “twisted” version. For <span class="math inline">\(\sigma, \tau \in g\)</span>, by definition we have <span class="math inline">\(p_{a_{\sigma \tau}} = \sigma \tau p = \sigma(\tau p) = \sigma (P a_\tau) = \cdots\)</span> and we can conclude <span class="math display">\[\begin{align*} a_{\sigma \tau} = a_\sigma^\sigma a_\tau, \end{align*}\]</span> which is in fact a 1-cocycle.</p>
+<div id="refs" class="references hanging-indent" role="doc-bibliography">
+<div id="ref-silverman_2009">
+<p>Silverman, J. H. (2009). The arithmetic of elliptic curves. <em>Graduate Texts in Mathematics</em>. <a href="https://doi.org/10.1007/978-0-387-09494-6">https://doi.org/10.1007/978-0-387-09494-6</a></p>
+</div>
+</div>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>Silverman is good for foundations, but assumes <span class="math inline">\(k\)</span> is a perfect field. Here we’ll let <span class="math inline">\(k\)</span> be arbitrary.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>Subsequent proofs: Leetham-Green (1972) and Clark (2008) following Rosen, and uses elliptic curves. See the end of Pete’s Commutative Algebra notes!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>See Silverman for basics, possibly Chapter 5<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Silverman is good for foundations, but assumes <span class="math inline">\(k\)</span> is a perfect field. Here we’ll let <span class="math inline">\(k\)</span> be arbitrary.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Subsequent proofs: Leetham-Green (1972) and Clark (2008) following Rosen, and uses elliptic curves. See the end of Pete’s Commutative Algebra notes!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--bookdown:body:end-->
