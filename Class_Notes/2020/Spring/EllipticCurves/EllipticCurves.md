@@ -3121,7 +3121,7 @@ Theorem
     1. If $T(\Lambda)$ is an abelian variety, this it has split multiplicative reduction and the Neron group is isomorphic to $\GG_m^g / \Lambda$
     2. Conversely, if $A/K$ has split multiplicative reduction, then $A$ is isomorphic to an analytic torus.
 
-We define $S/K$ to be a *semi-abelian* variety if $0 \to T \to S \toB \to 0$ where $T$ is a linear torus of dimension $u(s)$ and $B$ is an abelian variety of dimension $\beta(s)$.
+We define $S/K$ to be a *semi-abelian* variety if $0 \to T \to S \to B \to 0$ where $T$ is a linear torus of dimension $u(s)$ and $B$ is an abelian variety of dimension $\beta(s)$.
 
 Theorem
 : If $(K, \abs{\wait})$ is a complete non-Archimedean field and $A/K$ a $g\dash$dimensional abelian variety then there exists a semi-abelian variety $0\to T\to S\to B \to 0$ of dimension $g$ which has potentially good reduction and a $g_K\dash$module $M \cong_\ZZ \ZZ^{u(s)}$ and $0 \to M \to S(K\sep) \to A(K\sep) \to 0$ where $\rk_\ZZ M^{g_k}$ (the invariants) is the split toruc ? of the Neron group of $A$ and for all $L/K$ the Néron groups of $S/L$ and $A/K$ are isomorphic.
