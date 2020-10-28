@@ -835,8 +835,8 @@ Then since $R\units$ is finitely generated, so is its image, but if $T_S = T_S[n
 
 \begin{tikzcd}
 R\units \arrow[rr, hook] \arrow[rrrrdd] \arrow[rrrr, "\psi", bend left] &  & K\units \arrow[rr, hook'] &  & K\units/K^{\times n} \\
-&  &                           &  &                      \\
-&  &                           &  & T_S \arrow[uu, hook]
+                                                                        &  &                           &  & \\
+                                                                        &  &                           &  & T_S \arrow[uu, hook]
 \end{tikzcd}
 
 
@@ -2502,20 +2502,21 @@ $$
 E(\CC) \cong C\units/\generators{q}
 .$$
 
-Remark
-: The map $q \mapsto j(q)$ is generally not injective.
-  Note that $j$ factors through the quotient
+:::{.remark}
+The map $q \mapsto j(q)$ is generally not injective.
+Note that $j$ factors through the quotient
 
-  
-  \begin{tikzcd}
-  j\HH \arrow[rr] \arrow[rrdd, dashed] &  & \CC                                    \\
-  &  &                                        \\
-  &  & {\liesl(2, \ZZ)\ \HH} \arrow[uu, "\cong"]
-  \end{tikzcd}
-  
 
-  In other words, for $(a, b; c, d) \in \liesl(2, \ZZ)$ we have $j(\tau) = j\qty{\frac{a\tau + b}{c\tau + d}}$.
-  The indeterminacy here is given by $e^{2\pi i \tau_1} = e^{2\pi i \tau_2}$ iff $j_2 = j_1 + b$ for some $b\in  \ZZ$ and $(1, b; 0, 1) \xi = \xi + b$.
+\begin{tikzcd}
+j\HH \arrow[rr] \arrow[rrdd, dashed] &  & \CC                                    \\
+                                     &  & \\
+                                     &  & {\liesl(2, \ZZ)\ \HH} \arrow[uu, "\cong"]
+\end{tikzcd}
+
+
+In other words, for $(a, b; c, d) \in \liesl(2, \ZZ)$ we have $j(\tau) = j\qty{\frac{a\tau + b}{c\tau + d}}$.
+The indeterminacy here is given by $e^{2\pi i \tau_1} = e^{2\pi i \tau_2}$ iff $j_2 = j_1 + b$ for some $b\in  \ZZ$ and $(1, b; 0, 1) \xi = \xi + b$.
+:::
 
 Last time we saw that $(K, \abs{\wait})$ is locally compact and $q\in K$ with $0< \abs q < 1$, then $\generators{q} = q^\ZZ$ is a full lattice in $K\units$.
 
@@ -2685,8 +2686,8 @@ a *multiplicative uniformization*.
 For all finite $L/K$, the norm extends uniquely over $L$, and there is a compatibility in the following sense
 
 \begin{tikzcd}
-K\units / \gens{q} \ar[d, hook] \ar[r, "\cong \phi_K"] & E_q(K) \ar[d, hook]\\
-K\units/ \gens{q} \ar[r, "\cong \phi_L"] & E_q(L)
+K\units / \gens{q} \ar[d, hook] \ar[r, "\cong \phi_K"] & E_q(K) \ar[d, hook] \\
+K\units/ \gens{q} \ar[r, "\cong \phi_L"]               & E_q(L)
 \end{tikzcd}
 
 
