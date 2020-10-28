@@ -1,5 +1,5 @@
 SHELL:=/bin/zsh
-FILENAME="Manifolds"
+FILENAME="LeeManifolds"
 
 ## Markdown extension (e.g. md, markdown, mdown).
 MEXT = md
