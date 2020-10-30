@@ -17,14 +17,26 @@
 
 \[
 \frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
-f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\ 
+f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\
 &= f(x, b(x))~b'(x) - f(x, a(x))~a'(x) \\ \\
-\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} g(t) dt 
-&= g(b(x))b'(x) - g(a(x))a'(x)
+\]
+
+If \(f(x,t) = f(t)\) doesn't depend on $x$, then $\dd{f}{x} = 0$ and the second integral vanishes:
+
+\[
+\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(t) dt 
+&= f(b(x))\cdot b'(x) - f(a(x))\cdot a'(x)
 	\]
 
-- Recover FTC by taking \(a(x) = c, b(x) = x, f(x,t) = f(t)\).
-- Note that if \(f(x,t) = f(t)\) doesn't depend on $x$, then $\dd{f}{x} = 0$ and the second integral vanishes
+:::
+
+:::{.remark}
+Note that you can recover the original FTC by taking
+\[  
+a(x) &= c \\
+b(x) &= x \\
+f(x,t) &= f(t)
+.\]
 :::
 - Extreme Value Theorem
 - Involving the Derivative:
