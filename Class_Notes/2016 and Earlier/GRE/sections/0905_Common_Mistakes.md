@@ -28,3 +28,4 @@ Exponentials: when in doubt, write $a^b = e^{b\ln a}$
 
 
 
+

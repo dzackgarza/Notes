@@ -232,4 +232,9 @@ a^3 - b^3 =                  &  & (a-b)(a^2+ b^2 + ab) \\
 \frac{\pi}{2}  &  & \frac{\sqrt 4}{2} &  & \frac{\sqrt 0}{2}  &  & \infty
 \]
 
+\[
+\sqrt{a^2-x^2}   &  & \Rightarrow &  & x = a\sin(\theta)  &  & dx = a\cos(\theta)~d\theta \\
+\sqrt{a^2+x^2}   &  & \Rightarrow &  & x = a\tan(\theta)  &  & dx = a\sec^2(\theta)~d\theta \\
+\sqrt{x^2 - a^2} &  & \Rightarrow &  & x = a \sec(\theta) &  & dx = a\sec(\theta)\tan(\theta)~d\theta
+\]
 
