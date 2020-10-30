@@ -1,7 +1,4 @@
 
-\[
-	\frac{\partial}{\partial x} \int_{1}^{x} f(x, t) dt = \int_{1}^{x} \frac{\partial}{\partial x} f(x, t) dt + f(x, x)
-\]
 
 
 ##  Big Theorems / Tools:
@@ -17,8 +14,8 @@
 
 \[
 \frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
-f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\
-&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x) \\ \\
+f(x, t) \cdot \frac{\partial}{\partial x}(t) \bigg\rvert_{t=a(x)}^{t=b(x)} \\ \\
+&= f(x, b(x))\cdot b'(x) - f(x, a(x))\cdot a'(x) \\ \\
 \]
 
 If \(f(x,t) = f(t)\) doesn't depend on $x$, then $\dd{f}{x} = 0$ and the second integral vanishes:
@@ -27,8 +24,9 @@ If \(f(x,t) = f(t)\) doesn't depend on $x$, then $\dd{f}{x} = 0$ and the second 
 \frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(t) dt 
 &= f(b(x))\cdot b'(x) - f(a(x))\cdot a'(x)
 	\]
-
 :::
+
+\todo[inline]{Find examples.}
 
 :::{.remark}
 Note that you can recover the original FTC by taking
@@ -38,6 +36,18 @@ b(x) &= x \\
 f(x,t) &= f(t)
 .\]
 :::
+
+:::{.corollary title="?"}
+\[
+	\frac{\partial}{\partial x} \int_{1}^{x} f(x, t) dt = \int_{1}^{x} \frac{\partial}{\partial x} f(x, t) dt + f(x, x)
+\]
+:::
+
+:::{.proposition title="Extreme Value Theorem"}
+Todo
+:::
+\\todo[inline]{Todo}
+
 - Extreme Value Theorem
 - Involving the Derivative:
 	- Mean Value Theorem: 
