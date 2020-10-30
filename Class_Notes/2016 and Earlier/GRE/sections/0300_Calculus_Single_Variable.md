@@ -138,7 +138,8 @@ How to find $\lim_{x\to a} f(x)$in order of difficulty:
 
 - Limits at zero or infinity: 
 \[
-\lim_{x\to\infty} f(x) = \lim_{\frac{1}{x}\to 0} f(\frac{1}{x})\text{ and } \lim_{x\to 0} f(x) = \lim_{x\to\infty} f(1/x)
+\lim_{x\to\infty} f(x) = \lim_{\frac{1}{x}\to 0} f\qty{\frac{1}{x}} \text{ and } 
+\lim_{x\to 0} f(x) = \lim_{x\to\infty} f\qty{1 \over x}
 \]
 
 	- Also useful:
