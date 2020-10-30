@@ -87,7 +87,10 @@ Note that this includes the following indeterminate forms:
 
 
 
-For $\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$, let $L = \lim f^g \implies \ln L = \lim g \ln f$
+For $1^\infty, \infty^0,$ and $0^0$, set 
+\[
+L = \lim f^g \implies \ln L = \lim g \ln f
+\]
 :::
 
 
