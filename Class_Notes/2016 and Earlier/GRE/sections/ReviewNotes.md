@@ -97,7 +97,7 @@ g&h&i
 \end{bmatrix}
 ^{-1} 
 = 
-{1 \over {\rm{det}}} 
+{1 \over {\det}} 
 \begin{bmatrix}
 e i - f h & -(b i - c h) & b f - c e \\ 
 -(d i - f g) &a i - c g &-(a f -c d) \\ 
