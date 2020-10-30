@@ -48,33 +48,37 @@ Todo
 :::
 \\todo[inline]{Todo}
 
-- Extreme Value Theorem
-- Involving the Derivative:
-	- Mean Value Theorem: 
+:::{.proposition title="Mean Value Theorem"}
 \[  
-f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f'(p)(b-a)
+f \in C^0(I) &\implies \exists p\in I: f(b) - f(a) = f'(p)(b-a) \\
+          &\implies \exists p\in I: \int_a^b f(x)~dx = f(p)(b-a)
 .\]
-  - Useful variant for integrals and average value: 
+:::
 
-  \[
-  f \in C^0(I) \implies \exists p\in I: \int_a^b f(x)~dx = f(p)(b-a)
-  \]
-  - Rolle's Theorem
-  - L'Hopital's Rule: If
-  - \(f(x),g(x)\) differentiable on $I - \pt$
-  - $\lim_{x\to pt} f(x) = \lim_{x\to \pt} g(x) \in \theset{0, \pm \infty}$
-  - $\forall x \in I, g'(x) \neq 0$
-  - $\lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)}$ exists
-  \[
-  \implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } 
-  = \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }
-  \]
-  - Taylor Expansions:
-  \[
-  T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
-  &= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ 
-  & \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
-  \]
+:::{.proposition title="Rolle's Theorem"}
+
+:::
+\todo[inline]{todo}
+
+:::{.proposition title="L'Hopital's Rule"}
+- L'Hopital's Rule: If
+- \(f(x),g(x)\) differentiable on $I - \pt$
+- $\lim_{x\to pt} f(x) = \lim_{x\to \pt} g(x) \in \theset{0, \pm \infty}$
+- $\forall x \in I, g'(x) \neq 0$
+- $\lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)}$ exists
+\[
+\implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } 
+= \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }
+\]
+
+:::
+
+- Taylor Expansions:
+\[
+T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
+&= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ 
+& \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
+\]
 
 Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
 
