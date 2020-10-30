@@ -69,7 +69,12 @@ c& d
 \end{array}\right)^{-1} 
 = 
 {1 \over a d - b c} 
-\left(\begin{array}{rr} d&-b \\ -c&a \end{array}\right)~,~~\text{ where } ad-bc \ne 0
+\left(\begin{array}{rr} 
+d  & -b \\ 
+-c & a 
+\end{array}\right)
+\quad 
+\text{ where } ad-bc \ne 0
 \]
 
 The pattern?
