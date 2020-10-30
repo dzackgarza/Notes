@@ -5,19 +5,24 @@
 
 
 ##  Big Theorems / Tools:
-- The Fundamental Theorem of Calculus:
+
+:::{.proposition title="Fundamental Theorem of Calculus I"}
 \[
 \frac{\partial}{\partial x} \int_a^x f(t) dt = f(x) \\ \\
-\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} g(t) dt = g(b(x))b'(x) - g(a(x))a'(x)
 \]
+
+:::
+:::{.proposition title="Generalized Fundamental Theorem of Calculus"}
+?
+:::
 - The generalized Fundamental Theorem of Calculus
 \[
 \frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
 f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\ \\
 &= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)
 	\]
-	- Recover FTC by taking \(a(x) = c, b(x) = x, f(x,t) = f(t)\).
-		- Note that if \(f(x,t) = f(t)\) alone, then $\dd{x} f(t) = 0$ and the second integral vanishes
+- Recover FTC by taking \(a(x) = c, b(x) = x, f(x,t) = f(t)\).
+- Note that if \(f(x,t) = f(t)\) alone, then $\dd{x} f(t) = 0$ and the second integral vanishes
 - Extreme Value Theorem
 - Involving the Derivative:
 	- Mean Value Theorem: 
