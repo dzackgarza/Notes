@@ -83,14 +83,21 @@ Note that this includes the following indeterminate forms:
 .\]
 :::
 
-- Taylor Expansions:
+:::{.proposition title="Taylor Expansion"}
 \[
 T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
 &= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ 
 & \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
 \]
+Bounded error: 
+\[
+\abs{f(x) - T_k(a,x)} \leq \abs{\frac{f^{(k+1)}(a)}{(k+1)!}}
+\]
+where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
 
-Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
+:::
+
+
 
 ## Differential
 
