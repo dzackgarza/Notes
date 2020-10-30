@@ -140,7 +140,7 @@ x_i = \frac{\int_R x_i\rho(x) ~dx}{\int_R \rho(x)~dx}
 
 ### Big List of Integration Techniques
 
-Given \(f(x)\), we want to find an antiderivative $F(x) = \int f\( satisfying \)\frac{\partial}{\partial x}F(x) = f(x)$
+Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\frac{\partial}{\partial x}F(x) = f(x)$
 
 - Guess and check: look for a function that differentiates to \(f\).
 - $u\dash$ substitution
@@ -154,7 +154,7 @@ Given \(f(x)\), we want to find an antiderivative $F(x) = \int f\( satisfying \)
   \int u dv = uv - \int v du
   \]
 
-  - A more general form for repeated applications: let $v^{-1} = \int v\(, \)v^{-2} = \int\int v$, etc.
+  - A more general form for repeated applications: let $v^{-1} = \int v$, $v^{-2} = \int\int v$, etc.
   \[
   \int_a^b uv &= uv^{-1}\bigg\rvert_a^b  - \int_a^b u^{1} v^{-1}\\
   &= uv^{-1} - u^1v^{-2}\bigg\rvert_a^b + \int_a^b u^2v^{-2} \\
@@ -186,12 +186,13 @@ Given \(f(x)\), we want to find an antiderivative $F(x) = \int f\( satisfying \)
   $$
     - Example: $\int_0^{\pi/2} \frac{1}{\sin \theta}~d\theta = 1/2$
 
-Derivatives | Integrals     | Signs      | Result
----         | ---           | --         | ---              | ---
-\(u\)       | \(v\)         | NA         | NA
-\(u'\)      | $\int v\(     | \)+\(      | \)u\int v$
-\(u''\)     | $\int\int v\( | \)-\(      | \)-u'\int\int v$
-$\vdots\(   | \)\vdots\(    | \)\vdots\( | \)\vdots$
+
+Derivatives | Integrals    | Signs    | Result
+---         | ---          | --       | ---             | ---
+$u$         | $v$          | NA       | NA
+$u'$        | $\int v$     | $+$      | $u\int v$
+$u''$       | $\int\int v$ | $-$      | $-u'\int\int v$
+$\vdots$    | $\vdots$     | $\vdots$ | $\vdots$
 
 Fill out until one column is zero (alternate signs). Get the result column by multiplying diagonally, then sum down the column.
 
@@ -252,8 +253,10 @@ Other small but useful facts:
 P: ax+by+cz=d
 .\]
 
-  - You can always just read off the normal vector $\vector{n} = (a,b,c)\(. So we have \)\mathbf{n}\mathbf{x} = d$. 
+  - You can always just read off the normal vector $\vector{n} = (a,b,c)$. 
+  So we have $\mathbf{n}\mathbf{x} = d$. 
   
+  - Since $\lambda \mathbf{n}$ is normal to $P$ for all $\lambda$, solve $\mathbf{n}\lambda \mathbf{n} = d$, which is $\lambda = \frac{d}{ \norm{\vector n}^2}$
   - Since $\lambda \mathbf{n}\( is normal to \)P\( for all \)\lambda\(, solve \)\mathbf{n}\lambda \mathbf{n} = d\(, which is \)\lambda = \frac{d}{ \norm{\vector n}^2}$
 - A plane can be constructed from a point \(p\) and a normal \(n\) by the equation \(np = 0\).
 - In a sine wave $f(x) = \sin(\omega x)\(, the period is given by \)2\pi/\omega\(. If \)\omega > 1\(, then the wave makes exactly \)\omega\( full oscillations in the interval \)[0, 2\pi]$.
