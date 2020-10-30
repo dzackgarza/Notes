@@ -233,3 +233,59 @@ $$
 - Second derivative test:
 	- $f''(p) > 0 \implies p$ is a min
 	- $f''(p) < 0 \implies p$ is a max
+
+
+- Inflection points of $h$ occur where the _tangent_ of $h'$ changes sign. (Note that this is where $h'$ itself changes sign.)
+- Inverse function theorem: The slope of the inverse is reciprocal of the original slope
+- If two equations are equal at exactly one real point, they are tangent to each other there - therefore their derivatives are equal. Find the $x$ that satisfies this; it can be used in the original equation.
+- Fundamental theorem of Calculus: If 
+\[  
+\int f(x) dx = F(b) - F(a) \implies F'(x) = f(x)
+.\]
+- Min/maxing - either derivatives of Lagranage multipliers!
+
+- Distance from origin to plane: equation of a plane 
+\[  
+P: ax+by+cz=d
+.\]
+
+  - You can always just read off the normal vector $\vector{n} = (a,b,c)$. So we have $\mathbf{n}\mathbf{x} = d$. 
+  
+  - Since $\lambda \mathbf{n}$ is normal to $P$ for all $\lambda$, solve $\mathbf{n}\lambda \mathbf{n} = d$, which is $\lambda = \frac{d}{ \norm{\vector n}^2}$
+- A plane can be constructed from a point $p$ and a normal $n$ by the equation $np = 0$.
+- In a sine wave $f(x) = \sin(\omega x)$, the period is given by $2\pi/\omega$. If $\omega > 1$, then the wave makes exactly $\omega$ full oscillations in the interval $[0, 2\pi]$.
+- The directional derivative is the gradient dotted against a _unit vector_ in the direction of interest
+- Related rates problems can often be solved via implicit differentiation of some constraint function
+- The second derivative of a parametric equation is not exactly what you'd intuitively think!
+- For the love of god, remember the FTC! 
+  \[
+  \frac{\partial}{\partial x} \int_0^x f(y) dy = f(x)
+  \]
+- Technique for asymptotic inequalities: WTS $f < g$, so show $f(x_0) < g(x_0)$ at a point and then show $\forall x > x_0, f'(x) < g'(x)$. Good for big-O style problems too.
+- Inflection points of $h$ occur where the _tangent_ of $h'$ changes sign. (Note that this is where $h'$ itself changes sign.)
+- Inverse function theorem: The slope of the inverse is reciprocal of the original slope
+- If two equations are equal at exactly one real point, they are tangent to each other there - therefore their derivatives are equal. Find the $x$ that satisfies this; it can be used in the original equation.
+- Fundamental theorem of Calculus: If 
+\[  
+\int f(x) dx = F(b) - F(a) \implies F'(x) = f(x)
+.\]
+- Min/maxing - either derivatives of Lagranage multipliers!
+
+- Distance from origin to plane: equation of a plane 
+\[  
+P: ax+by+cz=d
+.\]
+
+  - You can always just read off the normal vector $\vector{n} = (a,b,c)$. So we have $\mathbf{n}\mathbf{x} = d$. 
+  
+  - Since $\lambda \mathbf{n}$ is normal to $P$ for all $\lambda$, solve $\mathbf{n}\lambda \mathbf{n} = d$, which is $\lambda = \frac{d}{ \norm{\vector n}^2}$
+- A plane can be constructed from a point $p$ and a normal $n$ by the equation $np = 0$.
+- In a sine wave $f(x) = \sin(\omega x)$, the period is given by $2\pi/\omega$. If $\omega > 1$, then the wave makes exactly $\omega$ full oscillations in the interval $[0, 2\pi]$.
+- The directional derivative is the gradient dotted against a _unit vector_ in the direction of interest
+- Related rates problems can often be solved via implicit differentiation of some constraint function
+- The second derivative of a parametric equation is not exactly what you'd intuitively think!
+- For the love of god, remember the FTC! 
+  \[
+  \frac{\partial}{\partial x} \int_0^x f(y) dy = f(x)
+  \]
+- Technique for asymptotic inequalities: WTS $f < g$, so show $f(x_0) < g(x_0)$ at a point and then show $\forall x > x_0, f'(x) < g'(x)$. Good for big-O style problems too.

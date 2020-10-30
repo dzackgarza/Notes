@@ -117,3 +117,6 @@ Permutations of $X$  |    Partitions of $N$ into $\leq k$ subsets |?  | Partitio
 Both  |  Partitions of $n$ into $\leq k$ parts | ? | Partitions of $n$ into exactly $k$ parts  
 
 Proofs/Explanations: todo
+
+
+- Counting non-isomorphic things: Pick a systematic way. Can descend my maximum vertex degree, or ascend by adding nodes/leaves.

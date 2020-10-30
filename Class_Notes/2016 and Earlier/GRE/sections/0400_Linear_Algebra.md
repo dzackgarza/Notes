@@ -211,3 +211,81 @@ $$
 A = \left[ \begin{array} { c c } { 1 } & { 1 } \\ { 0 } & { 1 } \end{array} \right] \implies A^n = \left[ \begin{array} { c c } { 1 } & { n } \\ { 0 } & { 1 } \end{array} \right],~ \spec(A) = [1,1] \\
 A = \left[ \begin{array} { c c } { 1 } & { 1 } \\ { 0 } & { - 1 } \end{array} \right] \implies A^2 = I_2,~ \spec(A) = [1, -1]
 $$
+
+- An $m\times n$ matrix is a map from $n$-dimensional space to $m$-dimensional space. Number of _rows_ tell you the dimension of the codomain, the number of _columns_ tell you the dimension of the _domain_.
+- The column space of $A$ (i.e. linear combinations of the columns) are a basis for the _image_ of $A$.
+- The row space is a basis for the _coimage_, which is nullspace perp.
+- Not enough pivots implies columns don't span the entire target domain
+- The determinant of an RREF matrix is the product of the diagonals
+- An $n\times n$ matrix $P$ is diagonalizable iff its eigenspace is all of $\mathbb{R}^n$ (i.e. there are $n$ linearly independent eigenvectors, so they span the space.) Equivalently, if there is a basis of eigenvectors for the range of $P$
+- Projections decompose the range into the into the direct sum of its nullspace and nullspace perp.
+- The space of matrices is not an integral domain!
+- The transition matrix from a given basis $\mathcal{B} = {b_i}$ to the standard basis is given by just creating a matrix with each $b_i$ being a column.
+
+  - The transition matrix from the standard basis to $\mathcal{B}$ is just the inverse of the above!
+
+- Inverting matrices quickly:
+
+\[
+\left(\begin{array}{cc} 
+a& b \\ 
+c& d 
+\end{array}\right)^{-1} 
+= 
+{1 \over a d - b c} 
+\left(\begin{array}{rr} 
+d  & -b \\ 
+-c & a 
+\end{array}\right)
+\quad 
+\text{ where } ad-bc \ne 0
+\]
+
+The pattern?
+
+1. Always divide by determinant
+2. Swap the diagonals
+3. Hadamard product with checkerboard 
+
+\[
+\begin{bmatrix}
++ & - \\
+- & +
+\end{bmatrix}
+\]
+
+\[
+A^{-1} \da
+\begin{bmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{bmatrix}
+^{-1} 
+= 
+{1 \over {\det A}} 
+\begin{bmatrix}
+e i - f h & -(b i - c h) & b f - c e \\ 
+-(d i - f g) &a i - c g &-(a f -c d) \\ 
+d h - e g & -(a h - b g)& a e - b d 
+\end{bmatrix}
+.\]
+
+The pattern:
+
+1. Divide by determinant
+2. Each entry is determinant of submatrix of $A$ with corresponding col/row deleted
+3. Hadamard product with checkerboard
+
+\[
+\begin{bmatrix}
++ & - & + \\ 
+- & + & - \\  \
++ & - & + 
+\end{bmatrix}
+\]
+
+4. Transpose at the end!!
+
+# Calculus
+

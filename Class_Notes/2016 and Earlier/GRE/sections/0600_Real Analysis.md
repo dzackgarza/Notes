@@ -373,3 +373,11 @@ $$
 Notation:$\sum_{k\in\NN} f_k$ is a "series"
 
 - $\limsup \abs{f_k(x)} \neq 0 \implies $ not convergent
+
+- $f$ injective implies $f$ has a nonzero derivative (in neighborhoods)
+- In $\mathbb{R}$, singletons are closed. This means any finite subset is closed, as a finite union of singleton sets! Good for counterexamples to continuity.
+- Definition of topology: arbitrary unions and finite intersections of open sets are open. Equivalently, arbitrary intersections and finite unions of closed sets are closed.
+- The best source of examples and counterexamples is the open/closed unit interval in $\mathbb{R}$. Always test against these first!
+- Every Cauchy sequence converges in a complete metric space
+
+

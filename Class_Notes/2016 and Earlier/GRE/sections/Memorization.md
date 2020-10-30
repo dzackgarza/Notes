@@ -11,18 +11,16 @@
 
 ---
 
-$$
-\begin{array}{c|ccc}
-&& \sin && \cos && \tan \\ \hline \\
-0 && \frac{\sqrt 0}{2} && \frac{\sqrt 4}{2} && 0\\ \\
-\frac{\pi}{6} && \frac{\sqrt 1}{2} && \frac{\sqrt 3}{2} && \frac{1}{\sqrt 3}\\ \\
-\frac{\pi}{4} && \frac{\sqrt 2}{2} && \frac{\sqrt{2}}{2} && 1 \\ \\
-\frac{\pi}{3} && \frac{\sqrt 3}{2} && \frac{\sqrt 1}{2} && \frac{\sqrt 3}{1}\\ \\
-\frac{\pi}{2} && \frac{\sqrt 4}{2} && \frac{\sqrt 0}{2} && \infty
-\end{array}
-$$
+\[
+               &  & \sin              &  & \cos               &  & \tan \\ \hline \\
+0              &  & \frac{\sqrt 0}{2} &  & \frac{\sqrt 4}{2}  &  & 0\\ \\
+\frac{\pi}{6}  &  & \frac{\sqrt 1}{2} &  & \frac{\sqrt 3}{2}  &  & \frac{1}{\sqrt 3}\\ \\
+\frac{\pi}{4}  &  & \frac{\sqrt 2}{2} &  & \frac{\sqrt{2}}{2} &  & 1 \\ \\
+\frac{\pi}{3}  &  & \frac{\sqrt 3}{2} &  & \frac{\sqrt 1}{2}  &  & \frac{\sqrt 3}{1}\\ \\
+\frac{\pi}{2}  &  & \frac{\sqrt 4}{2} &  & \frac{\sqrt 0}{2}  &  & \infty
+\]
 
-$$
+\[
 \begin{align*}
 (a+b)^2 = && \hspace{20em} a^2 + b^2 + 2ab \\
 (a-b)^2 = && a^2 + b^2 - 2ab \\
@@ -38,7 +36,7 @@ a^3 - b^3 = &&  (a-b)(a^2+ b^2 + ab) \\
 (a+i\sqrt{b})(a-i\sqrt{b}) = &&  a^2 + b \\
 (a+b)(a-b) = && a^2 + b^2
 \end{align*}
-$$
+\]
 
 $$
 \begin{align*}  
