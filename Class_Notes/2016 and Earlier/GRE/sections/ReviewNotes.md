@@ -62,9 +62,9 @@
 
 - Inverting matrices quickly:
 
-$$
+\[
 \left(\begin{array}{cc} a& b \\ c& d \end{array}\right)^{-1} = {1 \over a d - b c} \left(\begin{array}{rr} d&-b \\ -c&a \end{array}\right)~,~~\text{ where } ad-bc \ne 0
-$$
+\]
 
 The pattern?
 
@@ -72,16 +72,20 @@ The pattern?
 2. Swap the diagonals
 3. Hadamard product with checkerboard $\left(\begin{array}{rr} +&-\ -&+ \end{array}\right)$
 
-$\left(\begin{array}{ccc} a&b&c\\ d&e&f\\ g&h&i \end{array}\right)^{-1} = {1 \over {\rm{det}}} \left(\begin{array}{rrr} e i - f h& -(b i - c h)& b f - c e\\ -(d i - f g)&a i - c g&-(a f -c d)\\ d h - e g & -(a h - b g)& a e - b d \end{array}\right).$
+\[
+\left(\begin{array}{ccc} a&b&c\\ d&e&f\\ g&h&i \end{array}\right)^{-1} = {1 \over {\rm{det}}} \left(\begin{array}{rrr} e i - f h& -(b i - c h)& b f - c e\\ -(d i - f g)&a i - c g&-(a f -c d)\\ d h - e g & -(a h - b g)& a e - b d \end{array}\right)
+.\]
 
 The pattern:
 
 1. Divide by determinant
 2. Each entry is determinant of submatrix of $A$ with corresponding col/row deleted
 3. Hadamard product with checkerboard
-$$
+
+\[
 \left(\begin{array}{rrr} +&- & +\\ -&+ & -\\ +& -&+ \end{array}\right)
-$$
+\]
+
 4. Transpose at the end!!
 
 # Calculus
