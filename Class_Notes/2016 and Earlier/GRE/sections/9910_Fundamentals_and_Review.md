@@ -1,5 +1,15 @@
 ## Algebra
 
+- Looking at real roots:
+
+  - Let $p$ be number of sign changes in $f(x)$;
+  - Let $q$ be number of sign changes in $f(-x)$;
+  - Let $n$ be the degree of $f$.
+  - Then $p$ gives the maximum number of positive real roots, $q$ gives the maximum number of negative real roots, and $n-p-q$ gives the _minimum_ number of complex roots.
+  - Rational Roots Theorem: If $p(x) = ax^n +\cdots + c$ and $r = \frac{p}{q}$ where $p(r) = 0$, then $p \mid c$ and $q \mid a$.
+
+
+
 - Properties of logs:
 	- $\ln(\prod) = \sum \ln$ but $\prod \ln \neq \ln \sum$
 	- $\log_b x = \frac{\ln x}{\ln b}$

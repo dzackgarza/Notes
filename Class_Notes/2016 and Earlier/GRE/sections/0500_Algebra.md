@@ -8,6 +8,27 @@
 - Galois Theory
 - More terms: [http://mathroughguides.wikidot.com/glossary:abstract-algebra](http://mathroughguides.wikidot.com/glossary:abstract-algebra)
 
+- Order $p$: One, $Z_p$
+- Order $p^2$: Two abelian groups, $Z_{p^2}, Z_p^2$
+- Order $p^3$:
+
+  - 3 abelian $Z_{p^3}, Z_p \times Z_{p^2}. Z_p^3$,
+  - 2 others $Z_p \rtimes Z_{p^2}$.
+
+    - The other is the quaternion group for p = 2 and a group of exponent p for p > 2.
+
+- Order $pq$:
+
+  - $p \mid q-1$: Two groups, $Z_{pq}$ and $Z_q \rtimes Z_p$
+  - Else cyclic, $Z_{pq}$
+
+- Every element in a permutation group is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
+
+- The product ideal $IJ$ is _not_ just elements of the form $ij$, it is all sums of elements of this form! The product alone isn't enough.
+
+- The intersection of any number of ideals is also an ideal
+
+
 ## Big List of Notation
 $$
 \begin{align*}

@@ -1,34 +1,3 @@
-# Elementary Algebra
-
-- Looking at real roots:
-
-  - Let $p$ be number of sign changes in $f(x)$;
-  - Let $q$ be number of sign changes in $f(-x)$;
-  - Let $n$ be the degree of $f$.
-  - Then $p$ gives the maximum number of positive real roots, $q$ gives the maximum number of negative real roots, and $n-p-q$ gives the _minimum_ number of complex roots.
-  - Rational Roots Theorem: If $p(x) = ax^n +\cdots + c$ and $r = \frac{p}{q}$ where $p(r) = 0$, then $p \mid c$ and $q \mid a$.
-
-# Abstract Algebra
-
-- Order $p$: One, $Z_p$
-- Order $p^2$: Two abelian groups, $Z_{p^2}, Z_p^2$
-- Order $p^3$:
-
-  - 3 abelian $Z_{p^3}, Z_p \times Z_{p^2}. Z_p^3$,
-  - 2 others $Z_p \rtimes Z_{p^2}$.
-
-    - The other is the quaternion group for p = 2 and a group of exponent p for p > 2.
-
-- Order $pq$:
-
-  - $p \mid q-1$: Two groups, $Z_{pq}$ and $Z_q \rtimes Z_p$
-  - Else cyclic, $Z_{pq}$
-
-- Every element in a permutation group is a product of disjoint cycles, and the order is the lcm of the order of the cycles.
-
-- The product ideal $IJ$ is _not_ just elements of the form $ij$, it is all sums of elements of this form! The product alone isn't enough.
-
-- The intersection of any number of ideals is also an ideal
 
 # Complex Numbers
 
