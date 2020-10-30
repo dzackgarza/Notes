@@ -1,7 +1,6 @@
-
-
-
 ##  Big Theorems / Tools:
+
+
 
 :::{.proposition title="Fundamental Theorem of Calculus I"}
 \[
