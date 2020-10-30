@@ -1,85 +1,178 @@
-[WARNING] Could not convert TeX
- math 'r = \frac{p}{q}', rendering as TeX
+[WARNING] This docu
+ment format requires a nonempty <title> element.
+  Defaulting to 'ReviewNotes' as the title.
+  To specify a title, use 'tit
+le' in metadata or --metadata title="...".
 
-[WARNING] 
-Could not convert TeX math '
-  \left(\begin{array}{cc} a& b \\ c& d \end{array}\right)^{-1} = {1 \over a d - b 
-c} \left(\begin{array}{rr} d&-b \\ -c&a \end{array}\right)~,~~\text{ where } ad-bc \ne 0
-  ', 
-rendering as TeX:
-  
-                     ^
-  unexpected "a"
-  expecting "%", "\\label", "\\nonumber" or
- whitespace
-
-[WARNING] Could not conve
-rt TeX math '\left(\begin{array}{rr} +&-\ -&+ \end{array}\right)', rendering as TeX
-
-[WARNING] 
-Could not convert TeX math '\left(\begin{array}{ccc} a&b&c\\ d&e&f\\ g&h&i \end{array}\right)^{-1} = {1 \over {\rm{det}}
-} \left(\begin{array}{rrr} e i - f h& -(b i - c h)& b f - c e\\ -(d i - f g)&a i - c g&-(a f -c d)\\ d h
- - e g & -(a h - b g)& a e - b d \end{array}\right).', rendering as TeX:
-  t)^{-1} = {1 \over {\rm{det}}}
- \left(\be
-                     ^
-  unexpected "{"
-  expecting "%", "\\label", "\\nonumber" or whitespa
-ce
-
-[WARNING] Could not convert TeX m
-ath '
-  \left(\begin{array}{rrr} +&- & +\\ -&+ & -\\ +& -&+ \end{array}\right)
-  ', rendering as TeX
-
-[WAR
-NING] Could not convert TeX math 't = \frac{d}{\mid n \mid^2}', rendering as TeX
-
-[WARN
-ING] Could not convert TeX math '\frac{\partial}{\partial x} \int_0^x f(y) dy = f(x)', rendering as TeX
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ReviewNotes</title>
+  <style>
+    html {
+      line-height: 1.7;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 40em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin-top: 1.7em;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.7em;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1.7em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1.7em 0 1.7em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      font-style: italic;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      background-color: #f0f0f0;
+      font-size: 85%;
+      margin: 0;
+      padding: .2em .4em;
+    }
+    pre {
+      line-height: 1.5em;
+      padding: 1em;
+      background-color: #f0f0f0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin-top: 1.7em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    th, td {
+      border-bottom: 1px solid lightgray;
+      padding: 1em 3em 1em 0;
+    }
+    header {
+      margin-bottom: 6em;
+      text-align: center;
+    }
+    nav a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
 <h1 data-number="1" id="elementary-algebra"><span class="header-section-number">1</span> Elementary Algebra</h1>
 <ul>
 <li><p>Looking at real roots:</p>
 <ul>
-<li>Let <span class="math inline"><em>p</em></span> be number of sign changes in <span class="math inline"><em>f</em>(<em>x</em>)</span>;</li>
-<li>Let <span class="math inline"><em>q</em></span> be number of sign changes in <span class="math inline"><em>f</em>(&#x2005;&#x2212;&#x2005;<em>x</em>)</span>;</li>
-<li>Let <span class="math inline"><em>n</em></span> be the degree of <span class="math inline"><em>f</em></span>.</li>
-<li>Then <span class="math inline"><em>p</em></span> gives the maximum number of positive real roots, <span class="math inline"><em>q</em></span> gives the maximum number of negative real roots, and <span class="math inline"><em>n</em>&#x2005;&#x2212;&#x2005;<em>p</em>&#x2005;&#x2212;&#x2005;<em>q</em></span> gives the <em>minimum</em> number of complex roots.</li>
-<li>Rational Roots Theorem: If <span class="math inline"><em>p</em>(<em>x</em>)&#x2004;=&#x2004;<em>a</em><em>x</em><sup><em>n</em></sup>&#x2005;+&#x2005;&#x22EF;&#x2005;+&#x2005;<em>c</em></span> and <span class="math inline">$r = \frac{p}{q}$</span> where <span class="math inline"><em>p</em>(<em>r</em>)&#x2004;=&#x2004;0</span>, then <span class="math inline"><em>p</em>&#x2005;&#x2223;&#x2005;<em>c</em></span> and <span class="math inline"><em>q</em>&#x2005;&#x2223;&#x2005;<em>a</em></span>.</li>
+<li>Let <span class="math inline">\(p\)</span> be number of sign changes in <span class="math inline">\(f(x)\)</span>;</li>
+<li>Let <span class="math inline">\(q\)</span> be number of sign changes in <span class="math inline">\(f(-x)\)</span>;</li>
+<li>Let <span class="math inline">\(n\)</span> be the degree of <span class="math inline">\(f\)</span>.</li>
+<li>Then <span class="math inline">\(p\)</span> gives the maximum number of positive real roots, <span class="math inline">\(q\)</span> gives the maximum number of negative real roots, and <span class="math inline">\(n-p-q\)</span> gives the <em>minimum</em> number of complex roots.</li>
+<li>Rational Roots Theorem: If <span class="math inline">\(p(x) = ax^n +\cdots + c\)</span> and <span class="math inline">\(r = \frac{p}{q}\)</span> where <span class="math inline">\(p(r) = 0\)</span>, then <span class="math inline">\(p \mid c\)</span> and <span class="math inline">\(q \mid a\)</span>.</li>
 </ul></li>
 </ul>
 <h1 data-number="2" id="abstract-algebra"><span class="header-section-number">2</span> Abstract Algebra</h1>
 <ul>
-<li><p>Order <span class="math inline"><em>p</em></span>: One, <span class="math inline"><em>Z</em><sub><em>p</em></sub></span></p></li>
-<li><p>Order <span class="math inline"><em>p</em><sup>2</sup></span>: Two abelian groups, <span class="math inline"><em>Z</em><sub><em>p</em><sup>2</sup></sub>,&#x2006;<em>Z</em><sub><em>p</em></sub><sup>2</sup></span></p></li>
-<li><p>Order <span class="math inline"><em>p</em><sup>3</sup></span>:</p>
+<li><p>Order <span class="math inline">\(p\)</span>: One, <span class="math inline">\(Z_p\)</span></p></li>
+<li><p>Order <span class="math inline">\(p^2\)</span>: Two abelian groups, <span class="math inline">\(Z_{p^2}, Z_p^2\)</span></p></li>
+<li><p>Order <span class="math inline">\(p^3\)</span>:</p>
 <ul>
-<li><p>3 abelian <span class="math inline"><em>Z</em><sub><em>p</em><sup>3</sup></sub>,&#x2006;<em>Z</em><sub><em>p</em></sub>&#x2005;&#xD7;&#x2005;<em>Z</em><sub><em>p</em><sup>2</sup></sub>.<em>Z</em><sub><em>p</em></sub><sup>3</sup></span>,</p></li>
-<li><p>2 others <span class="math inline"><em>Z</em><sub><em>p</em></sub>&#x2005;&#x22CA;&#x2005;<em>Z</em><sub><em>p</em><sup>2</sup></sub></span>.</p>
+<li><p>3 abelian <span class="math inline">\(Z_{p^3}, Z_p \times Z_{p^2}. Z_p^3\)</span>,</p></li>
+<li><p>2 others <span class="math inline">\(Z_p \rtimes Z_{p^2}\)</span>.</p>
 <ul>
 <li>The other is the quaternion group for p = 2 and a group of exponent p for p &gt; 2.</li>
 </ul></li>
 </ul></li>
-<li><p>Order <span class="math inline"><em>p</em><em>q</em></span>:</p>
+<li><p>Order <span class="math inline">\(pq\)</span>:</p>
 <ul>
-<li><span class="math inline"><em>p</em>&#x2005;&#x2223;&#x2005;<em>q</em>&#x2005;&#x2212;&#x2005;1</span>: Two groups, <span class="math inline"><em>Z</em><sub><em>p</em><em>q</em></sub></span> and <span class="math inline"><em>Z</em><sub><em>q</em></sub>&#x2005;&#x22CA;&#x2005;<em>Z</em><sub><em>p</em></sub></span></li>
-<li>Else cyclic, <span class="math inline"><em>Z</em><sub><em>p</em><em>q</em></sub></span></li>
+<li><span class="math inline">\(p \mid q-1\)</span>: Two groups, <span class="math inline">\(Z_{pq}\)</span> and <span class="math inline">\(Z_q \rtimes Z_p\)</span></li>
+<li>Else cyclic, <span class="math inline">\(Z_{pq}\)</span></li>
 </ul></li>
 <li><p>Every element in a permutation group is a product of disjoint cycles, and the order is the lcm of the order of the cycles.</p></li>
-<li><p>The product ideal <span class="math inline"><em>I</em><em>J</em></span> is <em>not</em> just elements of the form <span class="math inline"><em>i</em><em>j</em></span>, it is all sums of elements of this form! The product alone isn&#x2019;t enough.</p></li>
+<li><p>The product ideal <span class="math inline">\(IJ\)</span> is <em>not</em> just elements of the form <span class="math inline">\(ij\)</span>, it is all sums of elements of this form! The product alone isn&#x2019;t enough.</p></li>
 <li><p>The intersection of any number of ideals is also an ideal</p></li>
 </ul>
 <h1 data-number="3" id="complex-numbers"><span class="header-section-number">3</span> Complex Numbers</h1>
 <ul>
-<li><span class="math inline">lim<sub><em>z</em>&#x2004;&#x2192;&#x2004;<em>z</em><sub>0</sub></sub><em>f</em>(<em>z</em>)&#x2004;=&#x2004;<em>x</em><sub>0</sub>&#x2005;+&#x2005;<em>i</em><em>y</em><sub>0</sub></span> iff the component functions limit to <span class="math inline"><em>x</em><sub>0</sub></span> and <span class="math inline"><em>y</em><sub>0</sub></span> respectively. Moreover, both ways are equal!</li>
+<li><span class="math inline">\(\lim_{z\rightarrow z_0} f(z) = x_0 + iy_0\)</span> iff the component functions limit to <span class="math inline">\(x_0\)</span> and <span class="math inline">\(y_0\)</span> respectively. Moreover, both ways are equal!</li>
 </ul>
 <h1 data-number="4" id="analysis"><span class="header-section-number">4</span> Analysis</h1>
 <ul>
-<li><span class="math inline"><em>f</em></span> injective implies <span class="math inline"><em>f</em></span> has a nonzero derivative (in neighborhoods)</li>
-<li>In <span class="math inline">&#x211D;</span>, singletons are closed. This means any finite subset is closed, as a finite union of singleton sets! Good for counterexamples to continuity.</li>
+<li><span class="math inline">\(f\)</span> injective implies <span class="math inline">\(f\)</span> has a nonzero derivative (in neighborhoods)</li>
+<li>In <span class="math inline">\(\mathbb{R}\)</span>, singletons are closed. This means any finite subset is closed, as a finite union of singleton sets! Good for counterexamples to continuity.</li>
 <li>Definition of topology: arbitrary unions and finite intersections of open sets are open. Equivalently, arbitrary intersections and finite unions of closed sets are closed.</li>
-<li>The best source of examples and counterexamples is the open/closed unit interval in <span class="math inline">&#x211D;</span>. Always test against these first!</li>
+<li>The best source of examples and counterexamples is the open/closed unit interval in <span class="math inline">\(\mathbb{R}\)</span>. Always test against these first!</li>
 <li>Every Cauchy sequence converges in a complete metric space</li>
 </ul>
 <h1 data-number="5" id="combinatorics-and-probability"><span class="header-section-number">5</span> Combinatorics and Probability</h1>
@@ -88,55 +181,56 @@ ING] Could not convert TeX math '\frac{\partial}{\partial x} \int_0^x f(y) dy = 
 </ul>
 <h1 data-number="6" id="linear-algebra"><span class="header-section-number">6</span> Linear Algebra</h1>
 <ul>
-<li><p>An <span class="math inline"><em>m</em>&#x2005;&#xD7;&#x2005;<em>n</em></span> matrix is a map from <span class="math inline"><em>n</em></span>-dimensional space to <span class="math inline"><em>m</em></span>-dimensional space. Number of <em>rows</em> tell you the dimension of the codomain, the number of <em>columns</em> tell you the dimension of the <em>domain</em>.</p></li>
-<li><p>The column space of <span class="math inline"><em>A</em></span> (i.e.&#xA0;linear combinations of the columns) are a basis for the <em>image</em> of <span class="math inline"><em>A</em></span>.</p></li>
+<li><p>An <span class="math inline">\(m\times n\)</span> matrix is a map from <span class="math inline">\(n\)</span>-dimensional space to <span class="math inline">\(m\)</span>-dimensional space. Number of <em>rows</em> tell you the dimension of the codomain, the number of <em>columns</em> tell you the dimension of the <em>domain</em>.</p></li>
+<li><p>The column space of <span class="math inline">\(A\)</span> (i.e.&#xA0;linear combinations of the columns) are a basis for the <em>image</em> of <span class="math inline">\(A\)</span>.</p></li>
 <li><p>The row space is a basis for the <em>coimage</em>, which is nullspace perp.</p></li>
 <li><p>Not enough pivots implies columns don&#x2019;t span the entire target domain</p></li>
 <li><p>The determinant of an RREF matrix is the product of the diagonals</p></li>
-<li><p>An <span class="math inline"><em>n</em>&#x2005;&#xD7;&#x2005;<em>n</em></span> matrix <span class="math inline"><em>P</em></span> is diagonalizable iff its eigenspace is all of <span class="math inline">&#x211D;<sup><em>n</em></sup></span> (i.e.&#xA0;there are <span class="math inline"><em>n</em></span> linearly independent eigenvectors, so they span the space.) Equivalently, if there is a basis of eigenvectors for the range of <span class="math inline"><em>P</em></span></p></li>
+<li><p>An <span class="math inline">\(n\times n\)</span> matrix <span class="math inline">\(P\)</span> is diagonalizable iff its eigenspace is all of <span class="math inline">\(\mathbb{R}^n\)</span> (i.e.&#xA0;there are <span class="math inline">\(n\)</span> linearly independent eigenvectors, so they span the space.) Equivalently, if there is a basis of eigenvectors for the range of <span class="math inline">\(P\)</span></p></li>
 <li><p>Projections decompose the range into the into the direct sum of its nullspace and nullspace perp.</p></li>
 <li><p>The space of matrices is not an integral domain!</p></li>
-<li><p>The transition matrix from a given basis <span class="math inline">&#x212C;&#x2004;=&#x2004;<em>b</em><sub><em>i</em></sub></span> to the standard basis is given by just creating a matrix with each <span class="math inline"><em>b</em><sub><em>i</em></sub></span> being a column.</p>
+<li><p>The transition matrix from a given basis <span class="math inline">\(\mathcal{B} = {b_i}\)</span> to the standard basis is given by just creating a matrix with each <span class="math inline">\(b_i\)</span> being a column.</p>
 <ul>
-<li>The transition matrix from the standard basis to <span class="math inline">&#x212C;</span> is just the inverse of the above!</li>
+<li>The transition matrix from the standard basis to <span class="math inline">\(\mathcal{B}\)</span> is just the inverse of the above!</li>
 </ul></li>
 <li><p>Inverting matrices quickly:</p></li>
 </ul>
-<p><span class="math display">$$
+<p><span class="math display">\[
 \left(\begin{array}{cc} a&amp; b \\ c&amp; d \end{array}\right)^{-1} = {1 \over a d - b c} \left(\begin{array}{rr} d&amp;-b \\ -c&amp;a \end{array}\right)~,~~\text{ where } ad-bc \ne 0
-$$</span></p>
+\]</span></p>
 <p>The pattern?</p>
 <ol type="1">
 <li>Always divide by determinant</li>
 <li>Swap the diagonals</li>
-<li>Hadamard product with checkerboard <span class="math inline">$\left(\begin{array}{rr} +&amp;-\ -&amp;+ \end{array}\right)$</span></li>
+<li>Hadamard product with checkerboard <span class="math inline">\(\left(\begin{array}{rr} +&amp;-\ -&amp;+ \end{array}\right)\)</span></li>
 </ol>
-<p><span class="math inline">$\left(\begin{array}{ccc} a&amp;b&amp;c\\ d&amp;e&amp;f\\ g&amp;h&amp;i \end{array}\right)^{-1} = {1 \over {\rm{det}}} \left(\begin{array}{rrr} e i - f h&amp; -(b i - c h)&amp; b f - c e\\ -(d i - f g)&amp;a i - c g&amp;-(a f -c d)\\ d h - e g &amp; -(a h - b g)&amp; a e - b d \end{array}\right).$</spa
-n></p>
+<p><span class="math inline">\(\left(\begin{array}{ccc} a&amp;b&amp;c\\ d&amp;e&amp;f\\ g&amp;h&amp;i \end{array}\right)^{-1} = {1 \over {\rm{det}}} \left(\begin{array}{rrr} e i - f h&amp; -(b i - c h)&amp; b f - c e\\ -(d i - f g)&amp;a i - c g&amp;-(a f -c d)\\ d h - e g &amp; -(a h - b g)&amp; a e - b d \end{array}\right).\)</span></p>
 <p>The pattern:</p>
 <ol type="1">
 <li>Divide by determinant</li>
-<li>Each entry is determinant of submatrix of <span class="math inline"><em>A</em></span> with corresponding col/row deleted</li>
-<li>Hadamard product with checkerboard <span class="math display">$$
+<li>Each entry is determinant of submatrix of <span class="math inline">\(A\)</span> with corresponding col/row deleted</li>
+<li>Hadamard product with checkerboard <span class="math display">\[
 \left(\begin{array}{rrr} +&amp;- &amp; +\\ -&amp;+ &amp; -\\ +&amp; -&amp;+ \end{array}\right)
-$$</span></li>
+\]</span></li>
 <li>Transpose at the end!!</li>
 </ol>
 <h1 data-number="7" id="calculus"><span class="header-section-number">7</span> Calculus</h1>
 <ul>
-<li>Inflection points of <span class="math inline"><em>h</em></span> occur where the <em>tangent</em> of <span class="math inline"><em>h</em>&#x2032;</span> changes sign. (Note that this is where <span class="math inline"><em>h</em>&#x2032;</span> itself changes sign.)</li>
+<li>Inflection points of <span class="math inline">\(h\)</span> occur where the <em>tangent</em> of <span class="math inline">\(h&#39;\)</span> changes sign. (Note that this is where <span class="math inline">\(h&#39;\)</span> itself changes sign.)</li>
 <li>Inverse function theorem: The slope of the inverse is reciprocal of the original slope</li>
-<li>If two equations are equal at exactly one real point, they are tangent to each other there - therefore their derivatives are equal. Find the <span class="math inline"><em>x</em></span> that satisfies this; it can be used in the original equation.</li>
-<li>Fundamental theorem of Calculus: If <span class="math inline">&#x222B;<em>f</em>(<em>x</em>)<em>d</em><em>x</em>&#x2004;=&#x2004;<em>F</em>(<em>b</em>)&#x2005;&#x2212;&#x2005;<em>F</em>(<em>a</em>)</span>, then <span class="math inline"><em>F</em>&#x2032;(<em>x</em>)&#x2004;=&#x2004;<em>f</em>(<em>x</em>)</span>.</li>
+<li>If two equations are equal at exactly one real point, they are tangent to each other there - therefore their derivatives are equal. Find the <span class="math inline">\(x\)</span> that satisfies this; it can be used in the original equation.</li>
+<li>Fundamental theorem of Calculus: If <span class="math inline">\(\int f(x) dx = F(b) - F(a)\)</span>, then <span class="math inline">\(F&#39;(x) = f(x)\)</span>.</li>
 <li>Min/maxing - either derivatives of Lagranage multipliers!</li>
-<li>Distance from origin to plane: equation of a plane <span class="math inline"><em>P</em></span> is given by <span class="math inline"><em>a</em><em>x</em>&#x2005;+&#x2005;<em>b</em><em>y</em>&#x2005;+&#x2005;<em>c</em><em>z</em>&#x2004;=&#x2004;<em>d</em></span>, and you can always just read off the normal vector <span class="math inline"><strong>n</strong>&#x2004;=&#x2004;(<em>a</em>,&#x2006;<em>b</em>,&#x2006;<em>c</em>)</span>. So we have <span class="math inline"><strong>n</strong><strong>x</strong>&#x2004;=&#x2004;<em>d</em></span>. Since <span class="math inline"><em>t</em><strong>n</strong></span> is normal to <span class="math inline"><em>P</em></span> for all <span class="math inline"><em>t</em></span>, solve <span class="math inline"><strong>n</strong><em>t</em><strong>n</strong>&#x2004;=&#x2004;<em>d</em></span>, which is <span class="math inline">$t = \frac{d}{\mid n \mid^2}$</span></li>
-<li>A plane can be constructed from a point <span class="math inline"><em>p</em></span> and a normal <span class="math inline"><em>n</em></span> by the equation <span class="math inline"><em>n</em><em>p</em>&#x2004;=&#x2004;0</span>.</li>
-<li>In a sine wave <span class="math inline"><em>f</em>(<em>x</em>)&#x2004;=&#x2004;sin&#x2006;(<em>&#x3C9;</em><em>x</em>)</span>, the period is given by <span class="math inline">2<em>&#x3C0;</em>/<em>&#x3C9;</em></span>. If <span class="math inline"><em>&#x3C9;</em>&#x2004;&gt;&#x2004;1</span>, then the wave makes exactly <span class="math inline"><em>&#x3C9;</em></span> full oscillations in the interval <span class="math inline">[0,&#x2006;2<em>&#x3C0;</em>]</span>.</li>
+<li>Distance from origin to plane: equation of a plane <span class="math inline">\(P\)</span> is given by <span class="math inline">\(ax+by+cz=d\)</span>, and you can always just read off the normal vector <span class="math inline">\(\mathbf{n} = (a,b,c)\)</span>. So we have <span class="math inline">\(\mathbf{n}\mathbf{x} = d\)</span>. Since <span class="math inline">\(t\mathbf{n}\)</span> is normal to <span class="math inline">\(P\)</span> for all <span class="math inline">\(t\)</span>, solve <span class="math inline">\(\mathbf{n}t\mathbf{n} = d\)</span>, which is <span class="math inline">\(t = \frac{d}{\mid n \mid^2}\)</span></li>
+<li>A plane can be constructed from a point <span class="math inline">\(p\)</span> and a normal <span class="math inline">\(n\)</span> by the equation <span class="math inline">\(np = 0\)</span>.</li>
+<li>In a sine wave <span class="math inline">\(f(x) = \sin(\omega x)\)</span>, the period is given by <span class="math inline">\(2\pi/\omega\)</span>. If <span class="math inline">\(\omega &gt; 1\)</span>, then the wave makes exactly <span class="math inline">\(\omega\)</span> full oscillations in the interval <span class="math inline">\([0, 2\pi]\)</span>.</li>
 <li>The directional derivative is the gradient dotted against a <em>unit vector</em> in the direction of interest</li>
 <li>Related rates problems can often be solved via implicit differentiation of some constraint function</li>
 <li>The second derivative of a parametric equation is not exactly what you&#x2019;d intuitively think!</li>
-<li>For the love of god, remember the FTC! <span class="math inline">$\frac{\partial}{\partial x} \int_0^x f(y) dy = f(x)$</span>.</li>
-<li>Technique for asymptotic inequalities: WTS <span class="math inline"><em>f</em>&#x2004;&lt;&#x2004;<em>g</em></span>, so show <span class="math inline"><em>f</em>(<em>x</em><sub>0</sub>)&#x2004;&lt;&#x2004;<em>g</em>(<em>x</em><sub>0</sub>)</span> at a point and then show <span class="math inline">&#x2200;<em>x</em>&#x2004;&gt;&#x2004;<em>x</em><sub>0</sub>,&#x2006;<em>f</em>&#x2032;(<em>x</em>)&#x2004;&lt;&#x2004;<em>g</em>&#x2032;(<em>x</em>)</span>. Good for big-O style problems too.</li>
+<li>For the love of god, remember the FTC! <span class="math inline">\(\frac{\partial}{\partial x} \int_0^x f(y) dy = f(x)\)</span>.</li>
+<li>Technique for asymptotic inequalities: WTS <span class="math inline">\(f &lt; g\)</span>, so show <span class="math inline">\(f(x_0) &lt; g(x_0)\)</span> at a point and then show <span class="math inline">\(\forall x &gt; x_0, f&#39;(x) &lt; g&#39;(x)\)</span>. Good for big-O style problems too.</li>
 </ul>
+</body>
+</html>
 
 
