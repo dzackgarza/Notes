@@ -86,8 +86,7 @@ Note that this includes the following indeterminate forms:
 .\]
 
 
-For $0\cdot \infty$, can rewrite as ${0 \over {1\over \infty}} = {0\over 0}.$
-Similarly, it's equal to $
+For $0\cdot \infty$, can rewrite as ${0 \over {1\over \infty}} = {0\over 0},$ or alternatively ${\infty \ov
 
 For $1^\infty, \infty^0,$ and $0^0$, set 
 \[
