@@ -82,8 +82,8 @@ The pattern?
 1. Always divide by determinant
 2. Swap the diagonals
 3. Hadamard product with checkerboard 
-\[
 
+\[
 \begin{bmatrix}
 + & - \\
 - & +
@@ -91,14 +91,15 @@ The pattern?
 \]
 
 \[
+A^{-1} \da
 \begin{bmatrix}
-a&b&c \\ 
-d&e&f \\ 
-g&h&i 
+a & b & c \\
+d & e & f \\
+g & h & i
 \end{bmatrix}
 ^{-1} 
 = 
-{1 \over {\det}} 
+{1 \over {\det A}} 
 \begin{bmatrix}
 e i - f h & -(b i - c h) & b f - c e \\ 
 -(d i - f g) &a i - c g &-(a f -c d) \\ 
@@ -127,9 +128,18 @@ The pattern:
 - Inflection points of $h$ occur where the _tangent_ of $h'$ changes sign. (Note that this is where $h'$ itself changes sign.)
 - Inverse function theorem: The slope of the inverse is reciprocal of the original slope
 - If two equations are equal at exactly one real point, they are tangent to each other there - therefore their derivatives are equal. Find the $x$ that satisfies this; it can be used in the original equation.
-- Fundamental theorem of Calculus: If $\int f(x) dx = F(b) - F(a)$, then $F'(x) = f(x)$.
+- Fundamental theorem of Calculus: If 
+\[  
+\int f(x) dx = F(b) - F(a) \implies F'(x) = f(x)
+.\]
 - Min/maxing - either derivatives of Lagranage multipliers!
-- Distance from origin to plane: equation of a plane $P$ is given by $ax+by+cz=d$, and you can always just read off the normal vector $\mathbf{n} = (a,b,c)$. So we have $\mathbf{n}\mathbf{x} = d$. Since $t\mathbf{n}$ is normal to $P$ for all $t$, solve $\mathbf{n}t\mathbf{n} = d$, which is $t = \frac{d}{\mid n \mid^2}$
+
+- Distance from origin to plane: equation of a plane 
+\[  
+P: ax+by+cz=d
+.\]
+
+  - You can always just read off the normal vector $\vector{n} = (a,b,c)$. So we have $\mathbf{n}\mathbf{x} = d$. Since $t\mathbf{n}$ is normal to $P$ for all $t$, solve $\mathbf{n}t\mathbf{n} = d$, which is $t = \frac{d}{\mid n \mid^2}$
 - A plane can be constructed from a point $p$ and a normal $n$ by the equation $np = 0$.
 - In a sine wave $f(x) = \sin(\omega x)$, the period is given by $2\pi/\omega$. If $\omega > 1$, then the wave makes exactly $\omega$ full oscillations in the interval $[0, 2\pi]$.
 - The directional derivative is the gradient dotted against a _unit vector_ in the direction of interest
