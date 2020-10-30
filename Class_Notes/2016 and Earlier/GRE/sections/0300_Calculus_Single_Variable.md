@@ -71,7 +71,7 @@ Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ wher
 \begin{cases}
   0 & $\deg p < \deg q$ \\
   \infty & $\deg p > \deg q$ \\
-  \frac{p_n}{q_n} & $\deg p = \deg q$
+  \frac{p_n}{q_n} & \deg p = \deg q
 \end{cases}
 \]
 - Be careful: limits may not exist!!
@@ -85,6 +85,7 @@ Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ wher
 	- If the limit exists, it is a solution to $x = f(x)$
 
 ### Derivatives
+
 - Chain rule: $\dd{}{x}(f\circ g)(x) = f'(g(x))g'(x)$
 - Product rule: $\dd{x}f(x)g(x) =f'g + g'f$
 	- Note for all rules: always prime the first thing!
