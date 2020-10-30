@@ -204,3 +204,32 @@ a^3 \pm b^3 = && (a \pm b)(a^2 \mp 2ab + b^2) ~~\text{(SOAP: Same/Opposite/Alway
 	$$
 - If you see $x^2+y^2$, try adding $2xy$ to reduce to $(x+y)^2$
 - Finding the minimal polynomial of a number $a+b$: #todo
+
+\[
+(a+b)^2 =                    &  & \hspace{20em} a^2 + b^2 + 2ab \\
+(a-b)^2 =                    &  & a^2 + b^2 - 2ab \\
+a^2+b^2 =                    &  & (a+b)^2 + 2ab \\
+a^2- b^2 =                   &  & (a+b)(a-b) \\
+(a+b)^3 =                    &  & a^3 + b^3 + 3(a^2b + ab^2) \\
+(a-b)^3 =                    &  & a^3 -b^3 + 3(-a^2b +ab^2) \\
+a^3 + b^3 =                  &  & (a+b)(a^2+b^2-ab) \\
+a^3 - b^3 =                  &  & (a-b)(a^2+ b^2 + ab) \\
+(\sqrt a + \sqrt b)^2 =      &  & a + b + 2\sqrt{ab} \\
+(\sqrt a - \sqrt b)^2 =      &  & a + b - 2\sqrt{ab} \\
+(a+\sqrt{b})(a-\sqrt{b}) =   &  & a^2 - b \\
+(a+i\sqrt{b})(a-i\sqrt{b}) = &  & a^2 + b \\
+(a+b)(a-b) =                 &  & a^2 + b^2
+\]
+
+## Trigonometry
+
+\[
+\text{Angle} &  & \sin              &  & \cos               &  & \tan \\ \hline \\
+0              &  & \frac{\sqrt 0}{2} &  & \frac{\sqrt 4}{2}  &  & 0\\ \\
+\frac{\pi}{6}  &  & \frac{\sqrt 1}{2} &  & \frac{\sqrt 3}{2}  &  & \frac{1}{\sqrt 3}\\ \\
+\frac{\pi}{4}  &  & \frac{\sqrt 2}{2} &  & \frac{\sqrt{2}}{2} &  & 1 \\ \\
+\frac{\pi}{3}  &  & \frac{\sqrt 3}{2} &  & \frac{\sqrt 1}{2}  &  & \frac{\sqrt 3}{1}\\ \\
+\frac{\pi}{2}  &  & \frac{\sqrt 4}{2} &  & \frac{\sqrt 0}{2}  &  & \infty
+\]
+
+

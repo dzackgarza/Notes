@@ -293,3 +293,34 @@ $$
 \tanh^{-1}x &= \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
 \end{align*}
 $$
+
+## Integral Tables
+
+\[
+\frac{\partial f}{\partial{x}}\Leftarrow &  & f                       &  & \Rightarrow\int f dx   \\
+\hline \\
+\frac{1}{2\sqrt{x}}                      &  & \sqrt{x}                &  & \frac{2}{3}x^{\frac{3}{2}} \\
+nx^{n-1}                                 &  & x^n, n \neq -1          &  & \frac{1}{n+1}x^{n+1} \\
+\frac{1}{x}                              &  & {\ln(x)}                &  & x\ln(x) - x \\
+a^x\ln(a)                                &  & a^x                     &  & \frac{a^x}{\ln a} \\
+\cos(x)                                  &  & \sin(x)                 &  & -\cos(x) \\
+-\sin(x)                                 &  & \cos(x)                 &  & \sin(x) \\
+2\sec^2(x)\tan(x)                        &  & \sec^2(x)               &  & \tan(x) \\
+2\csc^2(x)\cot(x)                        &  & \csc^2(x)               &  & -\cot(x) \\
+\sec^2(x)                                &  & \tan(x)                 &  & \ln\abs{\sec(x)} \\
+\sec(x)\tan(x)                           &  & \sec(x)                 &  & \ln\abs{\sec(x) + \tan(x)} \\
+-\csc(x)\cot(x)                          &  & \csc(x)                 &  & \ln\abs{\csc(x)-\cot(x)} \\
+\frac{1}{1+x^2}                          &  & {\tan^{-1}(x)}          &  & x\tan^{-1}x - \frac{1}{2}\ln(1+x^2) \\
+\frac{1}{\sqrt{1-x^2}}                   &  & {\sin^{-1}(x)}          &  & x\sin^{-1}x+ \sqrt{1-x^2} \\
+-\frac{1}{\sqrt{1-x^2}}                  &  & {\cos^{-1}(x)}          &  & x\cos^{-1}x -\sqrt{1-x^2} \\
+\frac{1}{\sqrt{x^2+a}}                   &  & \ln\abs{x+\sqrt{x^2+a}} &  & \cdot\\
+-\csc^2(x)                               &  & \cot(x)                 &  & ? \\
+?                                        &  & \cos^2(x)               &  & ? \\
+?                                        &  & \sin^2(x)               &  & ? \\
+?                                        &  & xe^{ax}                 &  & \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\
+?                                        &  & e^{ax}\sin(bx)          &  & \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\
+?                                        &  & e^{ax}\cos(bx)          &  & \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
+?                                        &  & ?                       &  & ?
+\]
+
+

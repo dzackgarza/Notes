@@ -127,3 +127,12 @@ f(t)g(t) \quad&\iff &F(s) \ast G(s)\quad &
 \end{align*}$$
 
 - For $f$ periodic with period $T$, $L(f) = \frac{1}{1+e^{-sT}}\int_0^T e^{-st}f(t)~dt$
+
+\[
+p(y)y' = q(x)                  &  & \hspace{10em} \text{separable} \\ \\
+y'+p(x)y = q(x)                &  & \text{integrating factor} \\ \\
+y' = f(x,y), f(tx,ty) = f(x,y) &  & y = xV(x)\text{ COV reduces to separable} \\ \\
+y' +p(x)y = q(x)y^n            &  & \text{Bernoulli, divide by $y^n$ and COV $u = y^{1-n}$} \\ \\
+M(x,y)dx + N(x,y)dy = 0        &  & M_y = N_x: \phi(x,y) = c (\phi_x =M, \phi_y = N) \\ \\
+P(D)y = f(x,y)                 &  & x^ke^{rx} \text{ for each root }
+\]
