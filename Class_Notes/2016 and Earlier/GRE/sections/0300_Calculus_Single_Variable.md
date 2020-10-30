@@ -92,8 +92,7 @@ For $1^\infty, \infty^0,$ and $0^0$, set
 \[
 L \da \lim f^g \implies \ln L = \lim g \ln(f)
 \]
-to recover $
-
+to recover $\infty\cdot 0, 0 \cdot \infty,$ or $0\cdot 0$.
 :::
 
 
