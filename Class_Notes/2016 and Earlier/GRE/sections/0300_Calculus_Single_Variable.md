@@ -142,7 +142,7 @@ How to find $\lim_{x\to a} f(x)$in order of difficulty:
 \lim_{x\to 0} f(x) = \lim_{x\to\infty} f\qty{1 \over x}
 \]
 
-	- Also useful:
+	- Also useful: if $p(x) = p_nx^n + \cdots$ and $q(x) = q_nx^m + \cdots$,
 \[
 \lim_{x\to\infty} \frac{p(x)}{q(x)} = 
 \begin{cases}
@@ -151,13 +151,22 @@ How to find $\lim_{x\to a} f(x)$in order of difficulty:
   \frac{p_n}{q_n} & \deg p = \deg q
 \end{cases}
 \]
-- Be careful: limits may not exist!!
-	- Example $:\lim_{x\to 0} \frac{1}{x} \neq 0$
-- Asymptotes:
-	- Vertical asymptotes: at values \(x=p\) where $\lim_{x\to p} = \pm\infty$
-	- Horizontal asymptotes: given by points \(y=L\) where $L \lim_{x\to\pm\infty} f(x) < \infty$
-	- Oblique asymptotes: for rational functions, divide - terms without denominators yield equation of asymptote (i.e. look at the asymptotic order or "limiting behavior").
-		- Concretely: $f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)$
+
+:::{.warning}
+Be careful: limits may not exist!!
+Example $:\lim_{x\to 0} \frac{1}{x} \neq 0$.
+:::
+
+### Asymptotes
+
+- Vertical asymptotes: at values \(x=p\) where $\lim_{x\to p} = \pm\infty$
+- Horizontal asymptotes: given by points \(y=L\) where $L \lim_{x\to\pm\infty} f(x) < \infty$
+- Oblique asymptotes: for rational functions, divide - terms without denominators yield equation of asymptote (i.e. look at the asymptotic order or "limiting behavior").
+  - Concretely: $f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)$
+
+
+### Recurrences 
+
 - Limit of a recurrence: $x_n = f(x_{n-1}, x_{n-2}, \cdots)$
 	- If the limit exists, it is a solution to \(x = f(x)\)
 
