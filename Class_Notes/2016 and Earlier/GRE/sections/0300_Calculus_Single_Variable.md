@@ -119,6 +119,8 @@ $T_k(a, x) = \sum _ { n = 0 } ^ { k } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x 
 
 ### Tools for finding limits
 
+\todo[inline]{Examples}
+
 How to find $\lim_{x\to a} f(x)$in order of difficulty:
 
 - Plug in: if $f$ is continuous, \(\lim_{x\to a} f(x) =  f(a)\).
@@ -162,7 +164,11 @@ Example $:\lim_{x\to 0} \frac{1}{x} \neq 0$.
 - Vertical asymptotes: at values \(x=p\) where $\lim_{x\to p} = \pm\infty$
 - Horizontal asymptotes: given by points \(y=L\) where $L \lim_{x\to\pm\infty} f(x) < \infty$
 - Oblique asymptotes: for rational functions, divide - terms without denominators yield equation of asymptote (i.e. look at the asymptotic order or "limiting behavior").
-  - Concretely: $f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)$
+  - Concretely: 
+
+\[
+f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
+\]
 
 
 ### Recurrences 
