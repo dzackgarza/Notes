@@ -1,3 +1,8 @@
+# Complex Analysis
+
+- $\lim_{z\rightarrow z_0} f(z) = x_0 + iy_0$ iff the component functions limit to $x_0$ and $y_0$ respectively. Moreover, both ways are equal!
+
+
 Notation: $z = a + ib, f(z) = u(x, y) + iv(x, y)$
 
 ## Useful Equations and Definitions
