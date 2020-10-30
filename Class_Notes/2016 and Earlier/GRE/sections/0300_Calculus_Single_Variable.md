@@ -250,18 +250,27 @@ $$
 A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta
 $$
 
-- Solids of Revolution
-	- Disks: $A = \int \pi r(t)^2 ~dt$
-	- Cylinders: $A = \int 2\pi r(t)h(t) ~dt$
-- Arc lengths
+### Solids of Revolution
+
+- Disks: $A = \int \pi r(t)^2 ~dt$
+- Cylinders: $A = \int 2\pi r(t)h(t) ~dt$
+
+### Arc Lengths
+
 \[
-ds = \sqrt{dx^2 + dy^2}\qquad L = \int ~ds \\
-= \int_{x_0}^{x_1}\sqrt{1 + \dd{y}{x}}~dx \\
-= \int_{y_0}^{y_1}\sqrt{\dd{x}{y} + 1}~dy
-	\]
-	- $SA = \int 2 \pi r(x) ~ds$
-- Center of Mass
-	- Given a density $\rho(\mathbf x)$ of an object $R$, the $x_i$ coordinate is given by
+L 
+&= \int ~ds  && ds = \sqrt{dx^2 + dy^2} \\
+&= \int_{x_0}^{x_1}\sqrt{1 + \dd{y}{x}}~dx \\
+&= \int_{y_0}^{y_1}\sqrt{\dd{x}{y} + 1}~dy
+\]
+
+\[
+SA = \int 2 \pi r(x) ~ds
+\]
+
+### Center of Mass
+
+Given a density $\rho(\mathbf x)$ of an object $R$, the $x_i$ coordinate is given by
 \[
 x_i = \frac{\int_R x_i\rho(x) ~dx}{\int_R \rho(x)~dx}
 \]
