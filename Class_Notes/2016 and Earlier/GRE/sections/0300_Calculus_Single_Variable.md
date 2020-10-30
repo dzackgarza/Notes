@@ -1,53 +1,50 @@
 
-
-$$
-\begin{align*}
+\[
 	\frac{\partial}{\partial x} \int_{1}^{x} f(x, t) dt = \int_{1}^{x} \frac{\partial}{\partial x} f(x, t) dt + f(x, x)
-\end{align*}$$
+\]
 
 
 ##  Big Theorems / Tools:
 - The Fundamental Theorem of Calculus:
-	$$
 	\frac{\partial}{\partial x} \int_a^x f(t) dt = f(x) \\ \\
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} g(t) dt = g(b(x))b'(x) - g(a(x))a'(x)
-	$$
 - The generalized Fundamental Theorem of Calculus
-	$$
-	\begin{align*}
+	\[
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt &=
 	f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\ \\
 	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)
-	\end{align*}
-	$$
+	\]
 	- Recover FTC by taking $a(x) = c, b(x) = x, f(x,t) = f(t)$.
 		- Note that if $f(x,t) = f(t)$ alone, then $\dd{x} f(t) = 0$ and the second integral vanishes
 - Extreme Value Theorem
 - Involving the Derivative:
 	- Mean Value Theorem: 
-$$
+\[  
 f \in C^0(I) \implies \exists p\in I: f(b) - f(a) = f'(p)(b-a)
-$$
-  - Useful variant for integrals and average value: $$f \in C^0(I) \implies \exists p\in I: \int_a^b f(x)~dx = f(p)(b-a)$$
-	- Rolle's Theorem
-- L'Hopital's Rule: If
-	- $f(x),g(x)$ differentiable on $I - \pt$
-	- $\lim_{x\to pt} f(x) = \lim_{x\to \pt} g(x) \in \theset{0, \pm \infty}$
-	- $\forall x \in I, g'(x) \neq 0$
-	- $\lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)}$ exists
-	$$
-	\implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } 
-	= \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }
-	$$
-- Taylor Expansions:
-	$$ 
-	\begin{align*}
-	T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
-	&= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ 
-	& \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
-	\end{align*}
-	$$
-	Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
+.\]
+  - Useful variant for integrals and average value: 
+
+  \[
+  f \in C^0(I) \implies \exists p\in I: \int_a^b f(x)~dx = f(p)(b-a)
+  \]
+  - Rolle's Theorem
+  - L'Hopital's Rule: If
+  - $f(x),g(x)$ differentiable on $I - \pt$
+  - $\lim_{x\to pt} f(x) = \lim_{x\to \pt} g(x) \in \theset{0, \pm \infty}$
+  - $\forall x \in I, g'(x) \neq 0$
+  - $\lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)}$ exists
+  \[
+  \implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } 
+  = \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }
+  \]
+  - Taylor Expansions:
+  \[
+  T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }  \\
+  &= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ 
+  & \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
+  \]
+
+Bounded error: $\abs{f(x) - T_k(a,x)} < \abs{\frac{1}{(k+1)!}f^{(k+1)}(a)}$ where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
 
 ## Differential
 
@@ -61,7 +58,12 @@ $$
 	- Expand in Taylor series at $a$
 	- Monotonic + bounded
 - One-sided limits: $\lim_{x\to a^-} f(x) = \lim_{\varepsilon \to 0} f(a-\varepsilon)$
-- Limits at zero or infinity: $$\lim_{x\to\infty} f(x) = \lim_{\frac{1}{x}\to 0} f(\frac{1}{x})\text{ and } \lim_{x\to 0} f(x) = \lim_{x\to\infty} f(1/x)$$
+- Limits at zero or infinity: 
+$
+  \[
+\lim_{x\to\infty} f(x) = \lim_{\frac{1}{x}\to 0} f(\frac{1}{x})\text{ and } \lim_{x\to 0} f(x) = \lim_{x\to\infty} f(1/x)
+  \]
+
 	- Also useful:
 	$$
 	\lim_{x\to\infty} \frac{p(x)}{q(x)} = \cases{
@@ -147,13 +149,13 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 
 	- A more general form for repeated applications: let $v^{-1} = \int v$, $v^{-2} = \int\int v$, etc.
 	$$
-	\begin{align*}
+	\[
 	\int_a^b uv &= uv^{-1}\bigg\rvert_a^b  - \int_a^b u^{1} v^{-1}\\
 	&= uv^{-1} - u^1v^{-2}\bigg\rvert_a^b + \int_a^b u^2v^{-2} \\
 	&= uv^{-1} - u^1v^{-2} + u^2v^{-3}\bigg\rvert_a^b - \int_a^b u^3v^{-3} \\
 	&\quad\vdots \\
 	\implies \int_a^b uv &= \sum_{k=1}^n (-1)^k u^{k-1}v^{-k} \bigg\rvert_a^b + (-1)^n\int_a^b u^nv^{-n} 
-	\end{align*}
+	\]
 	$$
 	- Generally useful when one term's $n$th derivative is a constant.
 	- Shoelace method:
@@ -161,11 +163,11 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
 
 - Differentiating under the integral
 	$$
-	\begin{align*}
+	\[
 	\frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt 
 	&= f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\
 	&= f(x, b(x))~b'(x) - f(x, a(x))~a'(x)
-	\end{align*}
+	\]
 	$$
 
 	- Proof: let $F(x)$ be an antiderivative and compute $F'(x)$ using the chain rule.
@@ -190,25 +192,23 @@ Fill out until one column is zero (alternate signs). Get the result column by mu
 
 - Trigonometric Substitution
 	$$
-	\begin{align*}
+	\[
 	\sqrt{a^2-x^2} && \Rightarrow && x = a\sin(\theta) &&dx = a\cos(\theta)~d\theta \\
 	\sqrt{a^2+x^2} && \Rightarrow && x = a\tan(\theta) &&dx = a\sec^2(\theta)~d\theta \\
 	\sqrt{x^2 - a^2} && \Rightarrow && x = a \sec(\theta) &&dx = a\sec(\theta)\tan(\theta)~d\theta
-	\end{align*}
+	\]
 	$$
 - Partial Fractions
 - Completing the Square #todo
 - Trig Formulas
 	- Double angle formulas:
-	$$
-	\begin{align*}
+	\[
 	\sin^2(x) && = && \frac{1}{2}(1-2\cos x) \\
 	&& = && \\
 	&& = && \\
 	&& = && \\
 	&& = && \\
-	\end{align*}
-	$$
+	\]
 
 - Products of trig functions
 	- Setup: $\int \sin^a(x) \cos^b(x) ~dx$
@@ -223,9 +223,9 @@ Fill out until one column is zero (alternate signs). Get the result column by mu
 
 
 Other small but useful facts:
-$$
+\[  
 \int_0^{2\pi} \sin \theta~d\theta = \int_0^{2\pi} \cos \theta~d\theta = 0
-$$
+.\]
 
 
 ### Optimization
