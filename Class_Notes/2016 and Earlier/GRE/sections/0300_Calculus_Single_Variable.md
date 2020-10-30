@@ -89,7 +89,7 @@ Note that this includes the following indeterminate forms:
 
 For $1^\infty, \infty^0,$ and $0^0$, set 
 \[
-L = \lim f^g \implies \ln L = \lim g \ln f
+L \da \lim f^g \implies \ln L = \lim g \ln(f)
 \]
 :::
 
