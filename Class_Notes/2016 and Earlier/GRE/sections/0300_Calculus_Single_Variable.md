@@ -86,7 +86,7 @@ Note that this includes the following indeterminate forms:
 .\]
 
 
-For 
+For $0\cdot \infty$, can rewrite as ${0 \over {1\over \infty}} =
 
 For $1^\infty, \infty^0,$ and $0^0$, set 
 \[
