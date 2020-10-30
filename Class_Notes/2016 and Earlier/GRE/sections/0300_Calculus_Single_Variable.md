@@ -61,13 +61,19 @@ f \in C^0(I) &\implies \exists p\in I: f(b) - f(a) = f'(p)(b-a) \\
 \todo[inline]{todo}
 
 :::{.proposition title="L'Hopital's Rule"}
-- L'Hopital's Rule: If
-- \(f(x),g(x)\) differentiable on $I - \pt$
-- $\lim_{x\to pt} f(x) = \lim_{x\to \pt} g(x) \in \theset{0, \pm \infty}$
-- $\forall x \in I, g'(x) \neq 0$
-- $\lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)}$ exists
+If
+
+- \(f(x)\) and \(g(x)\) are differentiable on $I - \pt$, and
+
 \[
-\implies \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } 
+  \lim_{x\to \pt} f(x) = \lim_{x\to \pt} g(x) \in \theset{0, \pm \infty}, &&
+  \forall x \in I, g'(x) \neq 0, && 
+  \lim_{x\to\pt} \frac{ f'(x)}{\ g'(x)} \text{ exists}, \\
+\]
+
+Then it is necessarily the case that
+\[
+\lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } 
 = \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }
 \]
 
