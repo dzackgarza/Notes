@@ -83,6 +83,7 @@ The pattern?
 2. Swap the diagonals
 3. Hadamard product with checkerboard 
 \[
+
 \begin{bmatrix}
 + & - \\
 - & +
@@ -112,11 +113,11 @@ The pattern:
 3. Hadamard product with checkerboard
 
 \[
-\left(\begin{array}{rrr} 
+\begin{bmatrix}
 + & - & + \\ 
-- & + & - \\ 
+- & + & - \\  \
 + & - & + 
-\end{array}\right)
+\end{bmatrix}
 \]
 
 4. Transpose at the end!!
