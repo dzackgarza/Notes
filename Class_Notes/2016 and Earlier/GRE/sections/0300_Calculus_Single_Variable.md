@@ -86,6 +86,7 @@ Note that this includes the following indeterminate forms:
 .\]
 
 
+For 
 
 For $1^\infty, \infty^0,$ and $0^0$, set 
 \[
