@@ -110,6 +110,10 @@ $T_k(a, x) = \sum _ { n = 0 } ^ { k } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x 
 
 :::
 
+:::{.remark}
+Approximating change: $\Delta y \approx f'(x) \Delta x$
+:::
+
 
 
 ## Differential
@@ -205,10 +209,15 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 \]
 :::
 
-- Implicit differentiation: \((f(x))' = f'(x)~dx, (f(y))' = f'(y)~dy\)
-	- Often able to solve for $\dd[y]{x}$ this way.
+### Implicit Differentiation
+
+\[
+(f(x))' = f'(x)~dx, (f(y))' = f'(y)~dy
+\]
+- Often able to solve for $\dd{y}{x}$ this way.
+
 - Obtaining derivatives of inverse functions: if \(y = f^{-1}(x)\) then write \(f(y) = x\) and implicitly differentiate.
-- Approximating change: $\Delta y \approx f'(x) \Delta x$
+
 
 ### Related Rates
 General series of steps: want to know some unknown rate \(y_t\)
@@ -224,16 +233,22 @@ General series of steps: want to know some unknown rate \(y_t\)
 
 ## Integral
 
-- Average values: 
+:::{.proposition title="Integral formula for average value"}
 \[
-f_{\text{avg}}(x) = \frac{1}{b-a}\int_a^b f(t) dt
+\mu_f = \frac{1}{b-a}\int_a^b f(t) dt
 \]
-	- Proof: apply MVT to \(F(x)\).
-- Area Between Curves
-	- Area in polar coordinates: 
-  $$
-  A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta
-  $$
+:::
+
+:::{.proof title="?"}
+Apply MVT to \(F(x)\).
+:::
+
+### Area Between Curves
+
+- Area in polar coordinates: 
+$$
+A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta
+$$
 
 - Solids of Revolution
 	- Disks: $A = \int \pi r(t)^2 ~dt$
