@@ -79,7 +79,14 @@ The pattern?
 \]
 
 \[
-\left(\begin{array}{ccc} a&b&c\\ d&e&f\\ g&h&i \end{array}\right)^{-1} = {1 \over {\rm{det}}} \left(\begin{array}{rrr} e i - f h& -(b i - c h)& b f - c e\\ -(d i - f g)&a i - c g&-(a f -c d)\\ d h - e g & -(a h - b g)& a e - b d \end{array}\right)
+\left(\begin{array}{ccc} 
+a&b&c \\ 
+d&e&f \\ 
+g&h&i 
+\end{array}\right)^{-1} 
+= {1 \over {\rm{det}}} 
+\left(\begin{array}{rrr} 
+e i - f h & -(b i - c h) & b f - c e \\ -(d i - f g)&a i - c g&-(a f -c d)\\ d h - e g & -(a h - b g)& a e - b d \end{array}\right)
 .\]
 
 The pattern:
