@@ -83,10 +83,10 @@ The pattern?
 2. Swap the diagonals
 3. Hadamard product with checkerboard 
 \[
-\left(\begin{array}{rr} 
-+ & - \\ 
-- & + 
-\end{array}\right)
+\begin{bmatrix}
++ & - \\
+- & +
+\end{bmatrix}
 \]
 
 \[
