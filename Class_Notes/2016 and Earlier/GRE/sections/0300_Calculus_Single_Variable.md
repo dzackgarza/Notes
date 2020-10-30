@@ -74,9 +74,13 @@ If
 Then it is necessarily the case that
 \[
 \lim _ { x \rightarrow \pt } \frac { f ( x ) } { g ( x ) } 
-= \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }
+= \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }.
 \]
 
+Note that this includes the following indeterminate forms:
+\[  
+\frac{0}{0}, \quad \frac{\infty}{\infty}, \quad 0 \cdot \infty, \quad 0^{0}, \quad \infty^{0}, \quad 1^{\infty}, \quad \infty-\infty
+.\]
 :::
 
 - Taylor Expansions:
