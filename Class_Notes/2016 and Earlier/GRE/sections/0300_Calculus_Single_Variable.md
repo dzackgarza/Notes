@@ -77,11 +77,19 @@ Then it is necessarily the case that
 = \lim _ { x \rightarrow \pt } \frac { f ^ { \prime } ( x ) } { g ^ { \prime } ( x ) }.
 \]
 
+:::
+
+:::{.remark}
 Note that this includes the following indeterminate forms:
 \[  
 \frac{0}{0}, \quad \frac{\infty}{\infty}, \quad 0 \cdot \infty, \quad 0^{0}, \quad \infty^{0}, \quad 1^{\infty}, \quad \infty-\infty
 .\]
+
+
+
+For $\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$, let $L = \lim f^g \implies \ln L = \lim g \ln f$
 :::
+
 
 :::{.proposition title="Taylor Expansion"}
 \[
@@ -89,11 +97,12 @@ T(a, x) &= \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } (
 &= f ( a ) + f'(a)( x - a ) + \frac { 1 } { 2 }f ^ { \prime \prime } ( a ) ( x - a ) ^ { 2 } \\ 
 & \quad \quad + \frac { 1} { 6 } f ^ { \prime \prime \prime } ( a ) ( x - a ) ^ { 3 } + \frac{1}{24}f^{(4)}(a)(x-a)^4 + ~\cdots
 \]
-Bounded error: 
+There is a bound on the error: 
 \[
 \abs{f(x) - T_k(a,x)} \leq \abs{\frac{f^{(k+1)}(a)}{(k+1)!}}
 \]
-where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ term.
+where 
+$T_k(a, x) = \sum _ { n = 0 } ^ { k } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }$ is the $k$th truncation.
 
 :::
 
@@ -102,19 +111,31 @@ where $T_k(a, x)$ is the Taylor series truncated up to and including the $x^k$ t
 ## Differential
 
 ### Limits
-- Tools for finding $\lim_{x\to a} f(x)$, in order of difficulty:
-	- Plug in: equal to \(f(a)\) if continuous
-	- L'Hopital's Rule (only for indeterminate forms $\frac 0 0, \frac \infty \infty$)
-		- For $\lim f(x)^{g(x)} = 1^\infty, \infty^0, 0^0$, let $L = \lim f^g \implies \ln L = \lim g \ln f$
-	- Algebraic rules
-	- Squeeze theorem
-	- Expand in Taylor series at \(a\)
-	- Monotonic + bounded
+
+
+### Tools for finding limits
+
+How to find $\lim_{x\to a} f(x)$in order of difficulty:
+
+- Plug in: if $f$ is continuous, \(\lim_{x\to a} f(x) =  f(a)\).
+
+- Check for indeterminate forms and apply L'Hopital's Rule.
+
+
+- Algebraic rules
+
+- Squeeze theorem
+
+- Expand in Taylor series at \(a\)
+
+- Monotonic + bounded
+
 - One-sided limits: $\lim_{x\to a^-} f(x) = \lim_{\varepsilon \to 0} f(a-\varepsilon)$
+
 - Limits at zero or infinity: 
-  \[
-  \lim_{x\to\infty} f(x) = \lim_{\frac{1}{x}\to 0} f(\frac{1}{x})\text{ and } \lim_{x\to 0} f(x) = \lim_{x\to\infty} f(1/x)
-  \]
+\[
+\lim_{x\to\infty} f(x) = \lim_{\frac{1}{x}\to 0} f(\frac{1}{x})\text{ and } \lim_{x\to 0} f(x) = \lim_{x\to\infty} f(1/x)
+\]
 
 	- Also useful:
 \[
