@@ -65,7 +65,7 @@ are almost certainly my own. } } \\
 \textbf{D. Zack Garza} \\
 \textit{University of Georgia} \\
 \textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-10-28 }
+{\tiny \textit{Last updated:} 2020-11-01 }
 \end{flushleft}
 
 
@@ -5794,7 +5794,254 @@ will lead into the Lusztig conjectures.
 \subsection{Review of Last Time}\label{review-of-last-time}}
 
 Suppose we have two weights in the same facet, i.e.~they're in the same
-stabilizer under the action of the affine Weyl group
+stabilizer under the action of the affine Weyl group:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-10-28-13-56-17.png}
+\caption{Weights in the same facet}
+\end{figure}
+
+We had a theorem: if \(\lambda, \mu\) are in the same facet, then
+\(\mathcal{B}_\lambda \cong \mathcal{B}_\mu\) is an equivalence of
+categories, where the map is via the translation functors.
+
+\hypertarget{description-of-t_lambdamu-qtyhiwcdot-lambda}{%
+\subsection{\texorpdfstring{Description of
+\(T_\lambda^\mu \qty{H^i(w\cdot \lambda) }\)}{Description of T\_\textbackslash lambda\^{}\textbackslash mu \textbackslash qty\{H\^{}i(w\textbackslash cdot \textbackslash lambda) \}}}\label{description-of-t_lambdamu-qtyhiwcdot-lambda}}
+
+We can write
+\begin{align*}  
+T_\lambda^\mu \qty{H^i(w\cdot \lambda)} 
+&= \pr_\mu \qty{L(\nu_1) \tensor \pr_\lambda\qty{H^i(w\cdot \lambda)} } \\
+&= \pr_\mu \qty{L(\nu_1) \tensor {H^i(w\cdot \lambda)} } \\
+&= \pr_\mu \qty{L(\nu_1) \tensor {R^i \ind_B^G w\cdot \lambda} } \\
+&= \pr_\mu\qty{R^i \ind_B^G \qty{L(\nu_1) \tensor w\cdot \lambda } }
+.\end{align*}
+
+Take a composition series by \(B\dash\)modules of
+\(L(\nu_1) \tensor w\cdot \lambda\), say
+\begin{align*}  
+0 = M_0 \subseteq M_1 \cdots \subseteq M_r = L(\nu_1) \tensor w\cdot \lambda
+.\end{align*} where \(M_j / M_{j-1} \cong \lambda+j + w\cdot \lambda\)
+and \(\lambda_j < \lambda_{j'} \implies j < j'\), i.e.~we can order them
+in a decreasing way.
+
+Consider the SES
+
+\begin{center}\includesvg[width=0.7\linewidth]{c44c268d1ec0a1335a35cc5b3c17f94115334b0f}\end{center}
+
+where applying \(\pr_\mu(\wait)\) induces the LES
+
+\begin{center}\includesvg[width=0.7\linewidth]{97196c183d921c00a1a9e37a23ace5da8d804feb}\end{center}
+
+We know that
+\begin{align*}  
+\pr_\mu H^i\qty{\lambda_j + w\cdot \lambda} = 
+\begin{cases}
+H^i(\lambda_j + w\cdot \lambda ) & \lambda+j + w\cdot \lambda \in W_p\cdot \mu \\
+0 & \text{else}
+\end{cases}
+,\end{align*} i.e.~this projection is the identity for weights linked to
+\(\mu\) and zero otherwise. We also have
+\begin{align*}  
+\pr_\mu H^i(M_r) = T_\lambda^\mu H^i(w\cdot \lambda)
+.\end{align*}
+
+\begin{theorem}[?]
+
+Let \(\lambda, \mu \in \bar{C}_\ZZ\) and \(F\) be a facet with
+\(\lambda \in F\). If \(\mu \in \bar{F}\), then we have
+\begin{align*}  
+T_\lambda^\mu\qty{H^i(w\cdot \lambda)} = H^i(w\cdot \mu) \qquad \forall w\in W_p
+.\end{align*}
+
+\end{theorem}
+
+\begin{example}[?]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-10-28-14-12-31.png}
+\caption{Image}
+\end{figure}
+
+Here consider \(H_0(\lambda) \mapsvia{T_\lambda^\mu} H_0(\mu) = 0\),
+since \(\mu\) is outside of the dominant region (in orange.) We also
+have \(H^0(w\cdot \lambda) \to H^0(w\cdot \mu) \neq 0\), since this
+falls \emph{into} the dominant region.
+
+\end{example}
+
+\begin{proof}[?]
+
+Let \(\lambda \in F\) and \(\mu\in\bar{F}\). Then
+\(\stab_{W_p}(\lambda) \subseteq \stab_{W_p}(\mu)\). By a previous
+technical lemma, we had a formula for computing \(\ch T_\lambda^\mu V\),
+which involved considering
+\begin{align*}  
+w_1 \in {\stab_{W_p}(\lambda) \over \stab_{W_p}(\lambda) \intersect \stab_{W_p}(\mu)}
+.\end{align*} In this case, we get \(w_1 = \id\), since the top and
+bottom are equal.
+
+By that lemma, there exists a unique \(\ell\) such that
+\(w\cdot \lambda + \lambda_\ell \in W_p\cdot \mu\), where
+\(\lambda_\ell\) is a weight of \(L(\nu_1)\). From the LES, we have
+
+\begin{center}\includesvg[width=0.7\linewidth]{8abc8a105328ad7558d47f968b822ef7c8d85228}\end{center}
+
+where the last term will only be nonzero in restricted cases. We can
+thus conclude that
+\begin{align*}  
+\pr_\mu(H^i(M_j))  =
+\begin{cases}
+0 & j< \ell \\
+H^i(w\cdot \mu) & j\geq \ell.
+\end{cases}
+\end{align*} Setting \(j=r\), we have
+\begin{align*}  
+T_\lambda^\mu \qty{H^i(w\cdot\lambda)} = \pr_\mu H^j(M_r) = H^i(w\cdot \mu)
+.\end{align*}
+
+\end{proof}
+
+Suppose \(\lambda \in \bar{C}_\ZZ\) and \(\mu \in C_\ZZ\). What happens
+when you translate \(\lambda\) (blue) off of a wall?
+\(T_\lambda^\mu\qty{H^0(w\cdot \lambda)}\) has a filtration with factors
+\(H^0(w_1\cdot \mu)\) and \(H^0(w_2\cdot \mu)\) (shown in green).
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-28-14-25-12.png}
+\caption{Filtration coming from translating off of a wall}
+\end{figure}
+
+If \(w\lambda\) is a vertex with \(\mu \in C_\ZZ\), then
+\(T_\lambda^\mu(H^0(w\cdot \lambda))\) has six factors:
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-28-14-27-05.png}
+\caption{Weight where the translation has six factors}
+\end{figure}
+
+\begin{proposition}[?]
+
+Suppose \(\lambda \in \bar{C}_\ZZ\) and \(\mu \in C_\ZZ\), and let
+\(w\in W_p\) where \(w\cdot \lambda \in X(T)_+\). Then
+\(T_\lambda^\mu (H^0(w\cdot \lambda))\) has a filtration such that all
+of the composition factors are of the form \(H^0(ww_1 \cdot \mu)\) where
+\(w_1\in \stab_{W_p}(\lambda)\) and each of the factors occurs at most
+once.
+
+\end{proposition}
+
+Recall that \(\hat F\) denotes the \emph{upper closure}.
+:::\{.proposition title=``?''\} Let \(\lambda, \mu \in \bar{C}_\ZZ\) be
+in the bottom alcove, where \(\mu \in \bar{F}_1\) but
+\(\lambda\in F_1\). Let \(F\) be the facet containing \(w\cdot\lambda\),
+then
+\begin{align*}  
+T_\lambda^\mu(L(w\cdot \lambda)) = 
+\begin{cases}
+L(w\cdot \mu)  & w\cdot \mu \in \hat{F} \\
+0 & \text{else}.
+\end{cases}
+\end{align*} :::
+
+\begin{example}[?]
+
+In this situation, we have \(T_\lambda^\mu(L(\lambda)) = 0\):
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-28-14-35-11.png}
+\caption{Image}
+\end{figure}
+
+If instead \(\mu \in \hat{C}_\ZZ\), we have
+\(T_\lambda^\mu( L(\lambda)) = L(\mu)\):
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-28-14-36-02.png}
+\caption{Image}
+\end{figure}
+
+\end{example}
+
+\textbf{Big Question}: What happens to \(L(w\cdot \lambda)\) when
+translating away from a wall?
+
+\begin{definition}[Walls]
+
+A facet \(F\) is a \textbf{wall} \(\iff \abs{ \Phi_0^+(F) } = 1\). In
+this case, there exists a unique \(\alpha\) such that
+\(\inner{\lambda + \rho}{\alpha\dual} = n_\alpha p\).
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-10-28-14-39-23.png}
+\caption{Example of a wall}
+\end{figure}
+
+\end{definition}
+
+\begin{remark}
+
+Note that \(s_F = s_{\beta, n_p}\) where
+\(n_p = \inner{\lambda + \rho}{\beta\dual}\) acts on the wall as the
+identity and reflects across it:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-10-28-14-41-36.png}
+\caption{Image}
+\end{figure}
+
+Here \(\stab_{W_p}(\lambda) = \ts{1, s_F}\).
+
+\end{remark}
+
+\begin{proposition}[?]
+
+Consider the following situation:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-10-28-14-43-39.png}
+\caption{Image}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \([T_\mu^\lambda (L(w\cdot \mu)) : L(w\cdot \lambda)] = 2\), appearing
+  once in the socle and once in the head.
+\item
+  \(L(w\cdot \lambda) = \soc_G T_\mu^\lambda(L(w\cdot \mu)) = T_\mu^\lambda(L(w\cdot \mu)) / \rad T_\mu^\lambda (L(w\cdot \mu))\).
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-10-28-14-46-57.png}
+\caption{Heart of the module}
+\end{figure}
+
+\end{proposition}
+
+\textbf{Big Problems}:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  When is the heart semisimple?
+\item
+  Determine the composition factors in the heart?
+\end{enumerate}
+
+Given these, you could compute dimensions of irreducible
+representations.
 
 \newpage
 

@@ -4227,4 +4227,177 @@ This will lead into the Lusztig conjectures.
 
 ## Review of Last Time
 
-Suppose we have two weights in the same facet, i.e. they're in the same stabilizer under the action of the affine Weyl group
+Suppose we have two weights in the same facet, i.e. they're in the same stabilizer under the action of the affine Weyl group:
+
+![Weights in the same facet](figures/image_2020-10-28-13-56-17.png)
+
+We had a theorem: if $\lambda, \mu$ are in the same facet, then $\mathcal{B}_\lambda \cong \mathcal{B}_\mu$ is an equivalence of categories, where the map is via the translation functors.
+
+## Description of $T_\lambda^\mu \qty{H^i(w\cdot \lambda) }$
+
+We can write
+\[  
+T_\lambda^\mu \qty{H^i(w\cdot \lambda)} 
+&= \pr_\mu \qty{L(\nu_1) \tensor \pr_\lambda\qty{H^i(w\cdot \lambda)} } \\
+&= \pr_\mu \qty{L(\nu_1) \tensor {H^i(w\cdot \lambda)} } \\
+&= \pr_\mu \qty{L(\nu_1) \tensor {R^i \ind_B^G w\cdot \lambda} } \\
+&= \pr_\mu\qty{R^i \ind_B^G \qty{L(\nu_1) \tensor w\cdot \lambda } }
+.\]
+
+Take a composition series by $B\dash$modules of $L(\nu_1) \tensor w\cdot \lambda$, say
+\[  
+0 = M_0 \subseteq M_1 \cdots \subseteq M_r = L(\nu_1) \tensor w\cdot \lambda
+.\]
+where $M_j / M_{j-1} \cong \lambda+j + w\cdot \lambda$ and $\lambda_j < \lambda_{j'} \implies j < j'$, i.e. we can order them in a decreasing way.
+
+Consider the SES
+
+\begin{tikzcd}
+0 \ar[r] & M_{j-1} \ar[r] & M_j \ar[r] & M_{j} / M_{j-1} \ar[r] & 0
+\end{tikzcd}
+
+where applying $\pr_\mu(\wait)$ induces the LES
+\begin{tikzcd}
+\cdots \ar[r] & \pr_\mu M_{j-1} \ar[r] & \pr_\mu M_j \ar[r] & \pr_\mu \qty{ M_{j} / M_{j-1} } \ar[r] & \cdots
+\end{tikzcd}
+
+We know that
+\[  
+\pr_\mu H^i\qty{\lambda_j + w\cdot \lambda} = 
+\begin{cases}
+H^i(\lambda_j + w\cdot \lambda ) & \lambda+j + w\cdot \lambda \in W_p\cdot \mu \\
+0 & \text{else}
+\end{cases}
+,\]
+i.e. this projection is the identity for weights linked to $\mu$ and zero otherwise.
+We also have
+\[  
+\pr_\mu H^i(M_r) = T_\lambda^\mu H^i(w\cdot \lambda)
+.\]
+
+
+:::{.theorem title="?"}
+Let $\lambda, \mu \in \bar{C}_\ZZ$ and $F$ be a facet with $\lambda \in F$.
+If $\mu \in \bar{F}$, then we have
+\[  
+T_\lambda^\mu\qty{H^i(w\cdot \lambda)} = H^i(w\cdot \mu) \qquad \forall w\in W_p
+.\]
+:::
+
+:::{.example title="?"}
+![Image](figures/image_2020-10-28-14-12-31.png)
+
+Here consider $H_0(\lambda) \mapsvia{T_\lambda^\mu} H_0(\mu) = 0$, since $\mu$ is outside of the dominant region (in orange.)
+We also have $H^0(w\cdot \lambda) \to H^0(w\cdot \mu) \neq 0$, since this falls *into* the dominant region.
+:::
+
+:::{.proof title="?"}
+Let $\lambda \in F$ and $\mu\in\bar{F}$.
+Then $\stab_{W_p}(\lambda) \subseteq \stab_{W_p}(\mu)$.
+By a previous technical lemma, we had a formula for computing $\ch T_\lambda^\mu V$, which involved considering 
+\[  
+w_1 \in {\stab_{W_p}(\lambda) \over \stab_{W_p}(\lambda) \intersect \stab_{W_p}(\mu)}
+.\]
+In this case, we get $w_1 = \id$, since the top and bottom are equal.
+
+By that lemma, there exists a unique $\ell$ such that $w\cdot \lambda + \lambda_\ell \in W_p\cdot \mu$, where $\lambda_\ell$ is a weight of $L(\nu_1)$.
+From the LES, we have
+
+\begin{tikzcd}
+\cdots \ar[r] & \pr_\mu M_{j-1} \ar[r] & \pr_\mu M_j \ar[r] & \pr_\mu \qty{ M_{j} / M_{j-1} } = \lambda_j + w\cdot \lambda \ar[r] & \cdots
+\end{tikzcd}
+where the last term will only be nonzero in restricted cases.
+We can thus conclude that
+\[  
+\pr_\mu(H^i(M_j))  =
+\begin{cases}
+0 & j< \ell \\
+H^i(w\cdot \mu) & j\geq \ell.
+\end{cases}
+\]
+Setting $j=r$, we have 
+\[  
+T_\lambda^\mu \qty{H^i(w\cdot\lambda)} = \pr_\mu H^j(M_r) = H^i(w\cdot \mu)
+.\]
+:::
+
+Suppose $\lambda \in \bar{C}_\ZZ$ and $\mu \in C_\ZZ$.
+What happens when you translate $\lambda$ (blue) off of a wall?
+$T_\lambda^\mu\qty{H^0(w\cdot \lambda)}$ has a filtration with factors $H^0(w_1\cdot \mu)$ and $H^0(w_2\cdot \mu)$ (shown in green).
+
+![Filtration coming from translating off of a wall](figures/image_2020-10-28-14-25-12.png){width=350px}
+
+If $w\lambda$ is a vertex with $\mu \in C_\ZZ$, then $T_\lambda^\mu(H^0(w\cdot \lambda))$ has six factors:
+
+![Weight where the translation has six factors](figures/image_2020-10-28-14-27-05.png){width=350px}
+
+:::{.proposition title="?"}
+Suppose $\lambda \in \bar{C}_\ZZ$ and $\mu \in C_\ZZ$, and let $w\in W_p$ where $w\cdot \lambda \in X(T)_+$.
+Then $T_\lambda^\mu (H^0(w\cdot \lambda))$ has a filtration such that all of the composition factors are of the form $H^0(ww_1 \cdot \mu)$ where $w_1\in \stab_{W_p}(\lambda)$ and each of the factors occurs at most once.
+:::
+
+Recall that $\hat F$ denotes the *upper closure*.
+:::{.proposition title="?"}
+Let $\lambda, \mu \in \bar{C}_\ZZ$ be in the bottom alcove, where $\mu \in \bar{F}_1$ but $\lambda\in F_1$.
+Let $F$ be the facet containing $w\cdot\lambda$, then
+\[  
+T_\lambda^\mu(L(w\cdot \lambda)) = 
+\begin{cases}
+L(w\cdot \mu)  & w\cdot \mu \in \hat{F} \\
+0 & \text{else}.
+\end{cases}
+\]
+:::
+
+:::{.example title="?"}
+In this situation, we have $T_\lambda^\mu(L(\lambda)) = 0$:
+
+![Image](figures/image_2020-10-28-14-35-11.png){width=350px}
+
+If instead $\mu \in \hat{C}_\ZZ$, we have $T_\lambda^\mu( L(\lambda)) = L(\mu)$:
+
+![Image](figures/image_2020-10-28-14-36-02.png){width=350px}
+
+:::
+
+**Big Question**:
+What happens to $L(w\cdot \lambda)$ when translating away from a wall?
+
+:::{.definition title="Walls"}
+A facet $F$ is a **wall** $\iff \abs{ \Phi_0^+(F) } = 1$.
+In this case, there exists a unique $\alpha$ such that $\inner{\lambda + \rho}{\alpha\dual} = n_\alpha p$.
+
+![Example of a wall](figures/image_2020-10-28-14-39-23.png)
+
+:::
+
+:::{.remark}
+Note that $s_F = s_{\beta, n_p}$ where $n_p = \inner{\lambda + \rho}{\beta\dual}$ acts on the wall as the identity and reflects across it:
+
+![Image](figures/image_2020-10-28-14-41-36.png)
+
+Here $\stab_{W_p}(\lambda) = \ts{1, s_F}$.
+:::
+
+:::{.proposition title="?"}
+Consider the following situation:
+
+![Image](figures/image_2020-10-28-14-43-39.png)
+
+1. $[T_\mu^\lambda (L(w\cdot \mu)) : L(w\cdot \lambda)] = 2$, appearing once in the socle and once in the head.
+
+2. $L(w\cdot \lambda) = \soc_G T_\mu^\lambda(L(w\cdot \mu)) = T_\mu^\lambda(L(w\cdot \mu)) / \rad T_\mu^\lambda (L(w\cdot \mu))$.
+
+![Heart of the module](figures/image_2020-10-28-14-46-57.png)
+
+:::
+
+**Big Problems**:
+
+1. When is the heart semisimple?
+
+2. Determine the composition factors in the heart?
+
+
+Given these, you could compute dimensions of irreducible representations.
+
