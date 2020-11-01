@@ -65,7 +65,7 @@ inaccuracies are almost certainly my own. } } \\
 \textbf{D. Zack Garza} \\
 \textit{University of Georgia} \\
 \textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-10-28 }
+{\tiny \textit{Last updated:} 2020-11-01 }
 \end{flushleft}
 
 
@@ -3957,6 +3957,140 @@ i.e.~\(\pi_Y(U)\) is closed whenever \(U\) is closed.
 \(\pi_Y(Z) = D(y) \subset Y \subset \AA^1\) is not closed.
 
 \end{example}
+
+\hypertarget{thursday-october-29}{%
+\section{Thursday, October 29}\label{thursday-october-29}}
+
+\hypertarget{projective-space}{%
+\subsection{Projective Space}\label{projective-space}}
+
+\begin{definition}[Projective Space]
+
+Let \(n\in \NN\), and define \textbf{projective \(n\dash\)space} over
+\(k\) by\\
+\begin{align*}  
+\PP^n/k = \ts{\text{lines through the origin in } k^{n+1}}
+.\end{align*}
+
+\end{definition}
+
+\begin{remark}
+
+For notation, given \(L\in \PP^n/k\), it is spanned by any nonzero
+points \(\tv{x_0, \cdots, x_n} \in L\), and \(L\) is uniquely determined
+by this point up to scaling by elements in \(k\units\). In this case, we
+write
+\(L = \tv{x_0: \cdots : x_n} = \tv{\lambda x_0: \cdots : \lambda x_n}\).
+We can then define \(\PP^n/k = k^{n+1}\smz / \sim\) where we mod out by
+scalar multiplication. We call \([x_1 : \cdots : x_n]\) the
+\emph{homogeneous coordinates} on \(\PP^n/k\).
+
+\end{remark}
+
+\begin{remark}
+
+Consider the map
+\begin{align*}  
+\AA^n \to \PP^n \\
+\tv{x_1, \cdots, x_n} &\mapsto \tv{1: x_1 : \cdots : x_n}
+.\end{align*} This is injective. Conversely, consider
+\begin{align*}  
+"D(x_0)" \subset \PP^n \da \ts{\tv{x_0 : \cdots : x_n} \st x_0\neq 0}
+.\end{align*} This is a well-defined subset of \(\PP^n\), since it only
+depends on the equivalence class of a point. In this case, there is a
+unique \(\lambda(x_0, \cdots, x_n)\), namely \(\lambda = 1/x_0\), such
+that each point in this set is of the form
+\(\tv{1: {x_1\over x_0} : \cdots : {x_n \over x_0}}\), yielding a copy
+of \(\AA^n\subset \PP^n\) given by points
+\(\tv{{x_1\over x_0}, \cdots, {x_n\over x_0}}\). What is its complement?
+
+It's given by \(\ts{\tv{0: x_1: \cdots : x_n}} \subset \PP^n\), which is
+equal (as a set) to a copy of \(\PP^{n-1}\) defined by the set of lines
+in \(k^n\) defined by \(x_0 = 0\).
+
+\end{remark}
+
+\begin{example}[?]
+
+Note that \(\PP^1\) contains a copy of \(\AA^1\) where \(x_0 \neq 0\)
+and a second copy where \(x_1 \neq 0\), admitting maps
+\begin{align*}  
+f_1: \AA^1 &\to \PP^1 \\
+\tv{x_0: x_1} &\mapsto \tv{{x_0 \over x_1}}
+.\end{align*}
+
+and
+
+\begin{align*}  
+f_2: \AA^1 &\to \PP^1 \\
+\tv{x_0: x_1} &\mapsto \tv{{x_1 \over x_0}}
+,\end{align*} since every line in \(\PP^1\) has either \(x_0\neq 0\) or
+\(x_1 \neq 0\). These two copies cover \(\PP^1\), and the ``transition
+map'' is inversion.
+
+\end{example}
+
+\begin{remark}
+
+More generally, there are \(n+1\) inclusions \(\AA^n \injects \PP^n\)
+given by dividing by the \(j\)th coordinate, and their union is the
+entire space. The gluing construction gives \(\PP^n\) the structure of a
+prevariety: we can consider \(D(x_j) \subset \PP^n\) where each has the
+structure of a ringed space \((\AA^n, \OO_{\AA^n})\). We have
+\(D(x_i) \intersect D(x_j) \subset D(x_i)\) is given coordinate
+\(x_k/x_i\) where \(k\neq i\), and similarly this is a subset of
+\(D(x_j)\) with coordinates \(x_k/x_j\) for \(k\neq j\). Their
+intersection is \(D({x_i \over x_j})\), which is a copy of
+\(\AA^{n-1}\).
+
+\end{remark}
+
+\begin{example}[?]
+
+Consider \(\PP^1\), then \(D(x_0) \cong \AA^1\) with which contains a
+copy of \(\AA^1\) with coordinate ring \(k\tv{{x_1\over x_0}}\) and a
+subset \(D\qty{x_1\over x_0}\) with coordinate ring \(k[y, 1/y]\), and
+similarly, \(D(x_1) \cong \AA^1\) has coordinate ring
+\(k\tv{{x_0\over x_1}}\) and contains \(\contains D\qty{x_0\over x_1}\)
+with coordinate ring \(k[z, 1\over z]\). Consider their overlap
+\(D(x_0) \intersect D(x_1)\)? When do \(y, z\) denote the same point in
+\(\PP^1\)? When \(y = 1/z\).
+
+We can conclude that the \(n+1\) copies \(D(x_i) \subset \PP^n\) are
+affine varieties isomorphic as ringed spaces on the overlaps, so the
+gluing construction makes \(\PP^n\) a prevariety.
+
+\end{example}
+
+\begin{definition}[Homogeneous Polynomial]
+
+A polynomial \(f\) is homogeneous of degree \(f\) is every monomial in
+\(f\) has total degree \(d\).
+
+\end{definition}
+
+\begin{example}[?]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-10-29-10-29-48.png}
+\caption{Image}
+\end{figure}
+
+\end{example}
+
+If \(f\) is homogeneous, \(V(f) \subset \PP^n\) is a well-defined
+subset, since
+\(f(x_0, \cdots, x_n) = 0 \iff \lambda^d f(x_0, \cdots, x_n) = 0 \iff f(\lambda x_0, \cdots, \lambda x_n) = 0\).
+
+\begin{definition}[?]
+
+A graded ring \(R\) is a ring \(R\) with abelian subgroups
+\(R_d \subset R\) with \(R = \bigoplus_{d\geq 0} R_d\) and for all
+\(f\in R_d\) and \(g\in R_{d'}\), we have \(fg \in R_{d+d'}\) and
+\(R_d + R_{d} \subset R_d\).
+
+\end{definition}
 
 \hypertarget{misc-unsorted}{%
 \section{Misc Unsorted}\label{misc-unsorted}}

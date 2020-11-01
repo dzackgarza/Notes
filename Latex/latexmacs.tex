@@ -68,6 +68,7 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\txand}[0]{{\text{ and }}}
 \newcommand{\codim}[0]{\operatorname{codim}}
+\newcommand{\dom}[0]{\operatorname{dom}}
 \newcommand{\txor}[0]{{\text{ or }}}
 \newcommand{\txt}[1]{{\text{ {#1} }}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
@@ -111,7 +112,7 @@
 \newcommand{\disc}[0]{{\text{disc}}}
 \newcommand{\op}[0]{^\text{op}}
 \newcommand{\id}[0]{\text{id}}
-\newcommand{\im}[1]{\operatorname{im}({#1})}
+\newcommand{\im}[0]{\operatorname{im}}
 \newcommand{\pt}[0]{{\{\text{pt}\}}}
 \newcommand{\sep}[0]{^\text{sep}}
 % \newcommand{\st}[0]{~{\text{s.t.}}~}
@@ -156,7 +157,6 @@
 \newcommand{\gs}[1]{\left\langle{#1}\right\rangle}
 \newcommand{\homotopic}[0]{\simeq}
 \newcommand{\injectivelim}[0]{\varinjlim}
-\newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\inner}[2]{{\left\langle {#1},~{#2} \right\rangle}}
 \newcommand{\union}[0]{\cup}
 \newcommand{\Union}[0]{\bigcup}
@@ -190,8 +190,13 @@
 \newcommand{\mm}[0]{{\mathfrak{m}}}
 \newcommand{\pr}[0]{{\operatorname{pr}}}
 \newcommand{\mapsvia}[1]{\xrightarrow{#1}}
-\newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\mapstovia}[1]{\xmapsto{#1}}
+\newcommand{\injects}[0]{\hookrightarrow}
+\newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
+\newcommand{\surjects}[0]{\twoheadrightarrow}
+\newcommand{\surjectsvia}[2][]{%
+  \xrightarrow[#1]{#2}\mathrel{\mkern-14mu}\rightarrow
+}
 \newcommand{\adjoint}[0]{\leftrightarrows}
 \newcommand{\kx}[1]{k[x_1, \cdots, x_{#1}]}
 \newcommand{\MM}[0]{{\mathcal{M}}}
@@ -278,7 +283,6 @@
 \newcommand{\suchthat}[0]{{~\mathrel{\Big|}~}}
 \newcommand{\st}[0]{{~\mathrel{\Big|}~}}
 \newcommand{\supp}[0]{{\operatorname{supp}}}
-\newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\tensor}[0]{\otimes}
 \newcommand{\connectsum}[0]{\mathop{\Large \#}}
@@ -318,3 +322,23 @@
 
 \renewcommand{\labelitemiii}{$\diamondsuit$}
 \renewcommand{\labelitemiv}{$\diamondsuit$}
+
+\newcommand\vecc[2]{\textcolor{#1}{\textbf{#2}}}
+
+\def\colspace{\operatorname{colspace}}
+\def\rowspace{\operatorname{rowspace}}
+\def\codom{\operatorname{codom}}
+\def\range{\operatorname{range}}
+\def\nullspace{\operatorname{nullspace}}
+\def\projection{\operatorname{Proj}}
+
+\newcommand*{\vertbar}{\rule[-1ex]{0.5pt}{2.5ex}}
+\newcommand*{\horzbar}{\rule[.5ex]{2.5ex}{0.5pt}}
+
+\newcommand\aug{\fboxsep=-\fboxrule\!\!\!\fbox{\strut}\!\!\!}
+\newcommand\rref{\operatorname{RREF}}
+\newcommand{\interior}[0]{^\circ}
+\newcommand{\increasesto}[0]{\nearrow}
+\newcommand{\decreasesto}[0]{\searrow}
+\newcommand{\contains}[0]{\supseteq}
+
