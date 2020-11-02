@@ -1,3 +1,7 @@
+# Algebra
+
+\todo[inline]{This section is very sketchy!}
+
 ## To Sort
 
 - Burnside's Lemma

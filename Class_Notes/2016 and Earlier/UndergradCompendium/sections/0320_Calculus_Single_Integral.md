@@ -1,6 +1,6 @@
-## Integral
+# Integral Calculus
 
-### Average Values
+## Average Values
 
 :::{.proposition title="Integral formula for average value"}
 \[
@@ -12,21 +12,21 @@
 Apply MVT to \(F(x)\).
 :::
 
-### Area Between Curves
+## Area Between Curves
 
 Area in polar coordinates: 
 $$
 A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta
 $$
 
-### Solids of Revolution
+## Solids of Revolution
 
 \[  
 \text{Disks} && A = \int \pi r(t)^2 ~dt \\
 \text{Cylinders} && A = \int 2\pi r(t)h(t) ~dt
 .\]
 
-### Arc Lengths
+## Arc Lengths
 
 \[
 L 
@@ -39,7 +39,7 @@ L
 SA = \int 2 \pi r(x) ~ds
 \]
 
-### Center of Mass
+## Center of Mass
 
 Given a density $\rho(\mathbf x)$ of an object $R$, the $x_i$ coordinate is given by
 \[
@@ -49,7 +49,7 @@ x_i =
 {\displaystyle\int_R \rho(x)~dx}
 \]
 
-### Big List of Integration Techniques
+## Big List of Integration Techniques
 
 Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\frac{\partial}{\partial x}F(x) = f(x)$
 
@@ -60,7 +60,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
   x = g(u) \implies \int_a^b f(x)~dx = \int_{g^{-1}(a)}^{g^{-1}(b)} (f\circ g)(x) ~g'(x)~dx
   \]
 
-####  Integration by Parts:
+###  Integration by Parts:
 
 The standard form:
 \[
@@ -77,7 +77,7 @@ The standard form:
 \]
 - Generally useful when one term's \(n\)th derivative is a constant.
 
-#### Shoelace Method
+### Shoelace Method
 
 - Note: you can choose \(u\) or \(v\) equal to 1! Useful if you know the derivative of the integrand.
 
@@ -91,7 +91,7 @@ $\vdots$    | $\vdots$     | $\vdots$ | $\vdots$
 Fill out until one column is zero (alternate signs). Get the result column by multiplying diagonally, then sum down the column.
 
 
-#### Differentiating under the integral
+### Differentiating under the integral
 \[
 \frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt 
 &= f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\
@@ -133,9 +133,9 @@ For constants, this should allow differentiating under the integral when \(f, f_
 \sqrt{x^2 - a^2} && \Rightarrow && x = a \sec(\theta) &&dx = a\sec(\theta)\tan(\theta)~d\theta
 \]
 
-#### Partial Fractions
+### Partial Fractions
 
-#### Trigonometric Substitution
+### Trigonometric Substitution
 
 \todo[inline]{Completing the square}
 
@@ -169,7 +169,7 @@ Other small but useful facts:
 .\]
 
 
-### Optimization
+## Optimization
 
 - Critical points: boundary points and wherever \(f'(x) = 0\)
 - Second derivative test:

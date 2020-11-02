@@ -1,5 +1,6 @@
-## Definitions
+# Probability 
 
+## Definitions
 \[
 L^2(X) &= \theset{f: X \to \RR: \int_\RR f(x) ~dx < \infty} 
 &&\text{square integrable functions}\\
@@ -322,6 +323,44 @@ $2.5$ | $0.97$
 $>3$  | $0.99$
 
 
+## Table of Distributions
+
+Table: let $q = 1-p$.
+
+
+\[
+\text{Distribution} & f(x)                                                                            &  & \mu              & \sigma^2            & M(t) \\
+\hline \\
+B(n, p)             & {n\choose x}p^x q^{n-x}                                                         &  & np               & npq                 & (pe^t + q)^n
+\\
+P(\lambda)          & \frac{\lambda^x}{x!}e^{-\lambda}                                                &  & \lambda          & \lambda             & e^{\lambda(e^t-1)}
+\\
+G(p)                & q^{x-1}p                                                                        &  & \frac{1}{p}      & \frac{q}{p^2}       & \frac{pe^t}{1-qe^t}
+\\
+B^-(r, p)           & {n-1 \choose r-1}p^rq^{n-r}                                                     &  & \frac{r}{p}      & \frac{rq}{p^2}      & \left(\frac{pe^t}{1-qe^t}\right)^r
+\\
+U(a, b)             & \indic{a\leq x\leq b}\frac 1 {b-a}                                          &  & \frac{1}{2}(a+b) & \frac{1}{12}(b-a)^2 & \frac{e^{tb} - e^{ta}}{t(b-a)}
+\\
+Exp(\lambda)        & \indic{0 \leq x}\lambda e^{-\lambda x}                                      &  & \frac 1 \lambda  & \frac 1 {\lambda^2} & \frac \lambda {\lambda - t}
+\\
+\Gamma(s, \lambda)  & \indic{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} &  & \frac s \lambda  & \frac s {\lambda^2} & \left( \frac{\lambda}{\lambda - t} \right)^s \\
+N(\mu, \sigma^2)    & \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}                    &  & \mu              & \sigma^2            & e^{\mu t + \frac{1}{2}\sigma^2 t^2}
+\]
+
+
+- Why you need the Stieltjes Integral: let $X \sim B(n, \frac 1 2), Y \sim U(0, 1),$ and
+\[
+Z = 
+\begin{cases}
+X, & $X = 1$ \\
+Y, & else
+\end{cases}
+\]
+then $\abs{Z} = \abs{\RR}$ so $Z$ is not discrete, but $P(X = 1) = \frac 1 2 \neq 0$ so $Z$ is not continuous. Definition:
+\[  
+\int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)
+.\]
+
 ## Common Problems
 
 - Birthday Paradox
@@ -363,40 +402,3 @@ M(t) = E[e^{Xt}]
 - $f_X = \mathcal{F}^{-1}(M_X(it))$, denoting the inverse Fourier transform,
 :::
 
-## Table of Distribution Info
-
-Table: let $q = 1-p$.
-
-
-\[
-\text{Distribution} & f(x)                                                                            &  & \mu              & \sigma^2            & M(t) \\
-\hline \\
-B(n, p)             & {n\choose x}p^x q^{n-x}                                                         &  & np               & npq                 & (pe^t + q)^n
-\\
-P(\lambda)          & \frac{\lambda^x}{x!}e^{-\lambda}                                                &  & \lambda          & \lambda             & e^{\lambda(e^t-1)}
-\\
-G(p)                & q^{x-1}p                                                                        &  & \frac{1}{p}      & \frac{q}{p^2}       & \frac{pe^t}{1-qe^t}
-\\
-B^-(r, p)           & {n-1 \choose r-1}p^rq^{n-r}                                                     &  & \frac{r}{p}      & \frac{rq}{p^2}      & \left(\frac{pe^t}{1-qe^t}\right)^r
-\\
-U(a, b)             & \indic{a\leq x\leq b}\frac 1 {b-a}                                          &  & \frac{1}{2}(a+b) & \frac{1}{12}(b-a)^2 & \frac{e^{tb} - e^{ta}}{t(b-a)}
-\\
-Exp(\lambda)        & \indic{0 \leq x}\lambda e^{-\lambda x}                                      &  & \frac 1 \lambda  & \frac 1 {\lambda^2} & \frac \lambda {\lambda - t}
-\\
-\Gamma(s, \lambda)  & \indic{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} &  & \frac s \lambda  & \frac s {\lambda^2} & \left( \frac{\lambda}{\lambda - t} \right)^s \\
-N(\mu, \sigma^2)    & \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}                    &  & \mu              & \sigma^2            & e^{\mu t + \frac{1}{2}\sigma^2 t^2}
-\]
-
-
-- Why you need the Stieltjes Integral: let $X \sim B(n, \frac 1 2), Y \sim U(0, 1),$ and
-\[
-Z = 
-\begin{cases}
-X, & $X = 1$ \\
-Y, & else
-\end{cases}
-\]
-then $\abs{Z} = \abs{\RR}$ so $Z$ is not discrete, but $P(X = 1) = \frac 1 2 \neq 0$ so $Z$ is not continuous. Definition:
-\[  
-\int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)
-.\]

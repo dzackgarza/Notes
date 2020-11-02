@@ -1,3 +1,5 @@
+# Ordinary Differential Equations
+
 ## Techniques Overview
 \[
 p(y)y' = q(x) && \hspace{10em} \text{separable} \\ \\
@@ -10,7 +12,7 @@ P(D)y = f(x,y) && x^ke^{rx} \text{ for each root }
 
 *Where $e^{zx}$ yields $e^{ax}\cos bx, e^{ax}\sin bx$*
 
-## Ordinary Differential Equations
+## Types of Equations
 
 - Separable equations:
 $$p(y)\frac{dy}{dx} - q(x) = 0 \implies \int p(y) dy = \int q(x) dx + C$$

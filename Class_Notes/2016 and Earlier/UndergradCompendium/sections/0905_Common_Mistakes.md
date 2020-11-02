@@ -1,4 +1,4 @@
-# My Common Mistakes
+# Common Mistakes
 
 \[
 -x^{-2} &\neq \int x^{-1} = \int \frac{1}{x} = \ln x \\ 

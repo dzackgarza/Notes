@@ -640,10 +640,9 @@ width: 30%;
 
 <nav class="pushy pushy-left" id="TOC">
 <ul>
-<li><a href="#differential-calculus">Differential Calculus</a></li>
-<li><a href="#big-theorems-tools">Big Theorems / Tools:</a></li>
-<li><a href="#differential">Differential</a>
+<li><a href="#differential-calculus">Differential Calculus</a>
 <ul>
+<li><a href="#big-theorems-tools">Big Theorems / Tools:</a></li>
 <li><a href="#limits">Limits</a></li>
 <li><a href="#tools-for-finding-limits">Tools for finding limits</a></li>
 <li><a href="#asymptotes">Asymptotes</a></li>
@@ -652,38 +651,22 @@ width: 30%;
 <li><a href="#implicit-differentiation">Implicit Differentiation</a></li>
 <li><a href="#related-rates">Related Rates</a></li>
 </ul></li>
-<li><a href="#integral">Integral</a>
+<li><a href="#integral-calculus">Integral Calculus</a>
 <ul>
 <li><a href="#average-values">Average Values</a></li>
 <li><a href="#area-between-curves">Area Between Curves</a></li>
 <li><a href="#solids-of-revolution">Solids of Revolution</a></li>
 <li><a href="#arc-lengths">Arc Lengths</a></li>
 <li><a href="#center-of-mass">Center of Mass</a></li>
-<li><a href="#big-list-of-integration-techniques">Big List of Integration Techniques</a></li>
+<li><a href="#big-list-of-integration-techniques">Big List of Integration Techniques</a>
+<ul>
+<li><a href="#integration-by-parts">Integration by Parts:</a></li>
+<li><a href="#shoelace-method">Shoelace Method</a></li>
+<li><a href="#differentiating-under-the-integral">Differentiating under the integral</a></li>
+<li><a href="#partial-fractions">Partial Fractions</a></li>
+<li><a href="#trigonometric-substitution">Trigonometric Substitution</a></li>
+</ul></li>
 <li><a href="#optimization">Optimization</a></li>
-</ul></li>
-<li><a href="#sequences">Sequences</a>
-<ul>
-<li><a href="#known-examples">Known Examples</a></li>
-<li><a href="#convergence">Convergence</a>
-<ul>
-<li><a href="#checklist">Checklist</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#sums-series">Sums (“Series”)</a>
-<ul>
-<li><a href="#known-examples-1">Known Examples</a>
-<ul>
-<li><a href="#conditionally-convergent">Conditionally Convergent</a></li>
-<li><a href="#convergent">Convergent</a></li>
-<li><a href="#divergent">Divergent</a></li>
-</ul></li>
-<li><a href="#convergence-1">Convergence</a>
-<ul>
-<li><a href="#the-big-tests">The Big Tests</a></li>
-<li><a href="#checklist-1">Checklist</a></li>
-</ul></li>
-<li><a href="#radius-of-convergence">Radius of Convergence</a></li>
 </ul></li>
 <li><a href="#vector-calculus">Vector Calculus</a>
 <ul>
@@ -731,6 +714,9 @@ width: 30%;
 <li><a href="#lagrange-multipliers">Lagrange Multipliers</a></li>
 </ul></li>
 <li><a href="#change-of-variables">Change of Variables</a></li>
+</ul></li>
+<li><a href="#vector-calculus-1">Vector Calculus</a>
+<ul>
 <li><a href="#notation-1">Notation</a></li>
 <li><a href="#big-theorems">Big Theorems</a>
 <ul>
@@ -770,13 +756,22 @@ width: 30%;
 <li><a href="#eigenvalues-and-eigenvectors">Eigenvalues and Eigenvectors</a></li>
 <li><a href="#useful-counterexamples">Useful Counterexamples</a></li>
 </ul></li>
-<li><a href="#advanced-topics">Advanced Topics</a>
+</ul></li>
+<li><a href="#linear-algebra-advanced-topics">Linear Algebra: Advanced Topics</a>
 <ul>
 <li><a href="#changing-basis">Changing Basis</a></li>
 <li><a href="#orthogonal-matrices">Orthogonal Matrices</a></li>
-<li><a href="#projections-1">Projections</a></li>
+<li><a href="#projections-1">Projections</a>
+<ul>
+<li><a href="#projection-onto-a-vector">Projection Onto a Vector</a></li>
+<li><a href="#projection-onto-a-subspace">Projection Onto a Subspace</a></li>
+<li><a href="#least-squares">Least Squares</a></li>
+</ul></li>
 <li><a href="#normal-forms">Normal Forms</a></li>
-<li><a href="#decompositions">Decompositions</a></li>
+<li><a href="#decompositions">Decompositions</a>
+<ul>
+<li><a href="#the-qr-decomposition">The QR Decomposition</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#appendix-lists-of-things-to-know">Appendix: Lists of things to know</a>
 <ul>
@@ -786,8 +781,10 @@ width: 30%;
 <li><a href="#things-to-compute">Things to compute</a></li>
 <li><a href="#things-to-prove">Things to prove</a></li>
 </ul></li>
+<li><a href="#ordinary-differential-equations">Ordinary Differential Equations</a>
+<ul>
 <li><a href="#techniques-overview">Techniques Overview</a></li>
-<li><a href="#ordinary-differential-equations">Ordinary Differential Equations</a></li>
+<li><a href="#types-of-equations">Types of Equations</a></li>
 <li><a href="#linear-homogeneous">Linear Homogeneous</a></li>
 <li><a href="#linear-inhomogeneous">Linear Inhomogeneous</a>
 <ul>
@@ -798,6 +795,9 @@ width: 30%;
 <li><a href="#systems-of-differential-equations">Systems of Differential Equations</a></li>
 <li><a href="#laplace-transforms">Laplace Transforms</a></li>
 <li><a href="#systems-of-differential-equations-1">Systems of Differential Equations</a></li>
+</ul></li>
+<li><a href="#algebra">Algebra</a>
+<ul>
 <li><a href="#to-sort">To Sort</a></li>
 <li><a href="#big-list-of-notation">Big List of Notation</a></li>
 <li><a href="#group-theory">Group Theory</a></li>
@@ -827,14 +827,42 @@ width: 30%;
 <li><a href="#the-totient-function">The Totient Function</a></li>
 <li><a href="#quadratic-residues">Quadratic Residues</a></li>
 <li><a href="#primality-tests">Primality Tests</a></li>
+<li><a href="#sequences-in-metric-spaces">Sequences in Metric Spaces</a></li>
+</ul></li>
+<li><a href="#sequences">Sequences</a>
+<ul>
+<li><a href="#known-examples">Known Examples</a></li>
+<li><a href="#convergence">Convergence</a>
+<ul>
+<li><a href="#checklist">Checklist</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#sums-series">Sums (“Series”)</a>
+<ul>
+<li><a href="#known-examples-1">Known Examples</a>
+<ul>
+<li><a href="#conditionally-convergent">Conditionally Convergent</a></li>
+<li><a href="#convergent">Convergent</a></li>
+<li><a href="#divergent">Divergent</a></li>
+</ul></li>
+<li><a href="#convergence-1">Convergence</a>
+<ul>
+<li><a href="#the-big-tests">The Big Tests</a></li>
+<li><a href="#checklist-1">Checklist</a></li>
+</ul></li>
+<li><a href="#radius-of-convergence">Radius of Convergence</a></li>
 </ul></li>
 <li><a href="#real-analysis">Real Analysis</a>
 <ul>
 <li><a href="#notation-3">Notation</a></li>
 <li><a href="#big-ideas">Big Ideas</a></li>
 <li><a href="#important-examples">Important Examples</a></li>
+<li><a href="#limits-1">Limits</a></li>
 <li><a href="#commuting-limits">Commuting Limits</a></li>
-<li><a href="#continuity">Continuity</a></li>
+<li><a href="#continuity">Continuity</a>
+<ul>
+<li><a href="#lipschitz-continuity">Lipschitz Continuity</a></li>
+</ul></li>
 <li><a href="#differentiability">Differentiability</a>
 <ul>
 <li><a href="#properties-strongest-to-weakest">Properties, strongest to weakest</a></li>
@@ -848,18 +876,15 @@ width: 30%;
 <li><a href="#pointwise-convergence">Pointwise convergence</a></li>
 <li><a href="#uniform-convergence">Uniform Convergence</a></li>
 </ul></li>
-<li><a href="#sequences-and-metric-spaces">Sequences and Metric Spaces</a></li>
 <li><a href="#topology">Topology</a></li>
-<li><a href="#limits-1">Limits</a></li>
-<li><a href="#continuity-1">Continuity</a>
-<ul>
-<li><a href="#lipschitz-continuity">Lipschitz Continuity</a></li>
+<li><a href="#counterexamples">Counterexamples</a></li>
 </ul></li>
-<li><a href="#integrability-1">Integrability</a></li>
-</ul></li>
-<li><a href="#topology-1">Topology</a>
+<li><a href="#point-set-topology">Point-Set Topology</a>
 <ul>
 <li><a href="#definitions-1">Definitions</a></li>
+</ul></li>
+<li><a href="#probability">Probability</a>
+<ul>
 <li><a href="#definitions-2">Definitions</a></li>
 <li><a href="#theory-and-background">Theory and Background</a></li>
 <li><a href="#distributions">Distributions</a>
@@ -873,15 +898,18 @@ width: 30%;
 <li><a href="#hypergeometric">Hypergeometric</a></li>
 <li><a href="#normal">Normal</a></li>
 </ul></li>
+<li><a href="#table-of-distributions">Table of Distributions</a></li>
 <li><a href="#common-problems">Common Problems</a></li>
 <li><a href="#notes-shortcuts-misc">Notes, Shortcuts, Misc</a></li>
-<li><a href="#table-of-distribution-info">Table of Distribution Info</a></li>
-<li><a href="#notation-4">Notation</a></li>
 </ul></li>
+<li><a href="#combinatorics">Combinatorics</a>
+<ul>
+<li><a href="#notation-4">Notation</a></li>
 <li><a href="#the-important-numbers">The Important Numbers</a>
 <ul>
 <li><a href="#common-problems-1">Common Problems</a></li>
 <li><a href="#the-twelvefold-way">The Twelvefold Way</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#complex-analysis">Complex Analysis</a>
 <ul>
@@ -892,9 +920,9 @@ width: 30%;
 </ul></li>
 <li><a href="#complex-integrals">Complex Integrals</a></li>
 </ul></li>
-<li><a href="#my-common-mistakes">My Common Mistakes</a>
+<li><a href="#common-mistakes">Common Mistakes</a></li>
+<li><a href="#appendix-1">Appendix 1</a>
 <ul>
-<li><a href="#definitions-3">Definitions</a></li>
 <li><a href="#neat-tricks">Neat Tricks</a></li>
 <li><a href="#big-derivative-integral-table">Big Derivative / Integral Table</a></li>
 <li><a href="#useful-series-and-sequences">Useful Series and Sequences</a></li>
@@ -910,16 +938,16 @@ width: 30%;
 <li><a href="#hyperbolic-functions">Hyperbolic Functions</a></li>
 <li><a href="#integral-tables">Integral Tables</a></li>
 </ul></li>
-<li><a href="#definitions-4">Definitions</a>
+<li><a href="#definitions-3">Definitions</a>
 <ul>
 <li><a href="#set-theory">Set Theory</a></li>
 <li><a href="#calculus">Calculus</a></li>
 <li><a href="#analysis">Analysis</a></li>
 <li><a href="#linear-algebra-1">Linear Algebra</a></li>
 <li><a href="#differential-equations">Differential Equations</a></li>
-<li><a href="#algebra">Algebra</a></li>
-<li><a href="#complex-analysis-1">Complex Analysis</a></li>
 <li><a href="#algebra-1">Algebra</a></li>
+<li><a href="#complex-analysis-1">Complex Analysis</a></li>
+<li><a href="#algebra-2">Algebra</a></li>
 <li><a href="#geometry">Geometry</a></li>
 </ul></li>
 </ul>
@@ -928,7 +956,7 @@ width: 30%;
 
 
 
-<h2 id="differential-calculus">Differential Calculus</h2>
+<h1 id="differential-calculus">Differential Calculus</h1>
 <h2 id="big-theorems-tools">Big Theorems / Tools:</h2>
 <div class="proposition" title="Fundamental Theorem of Calculus I">
 <p><span class="math display">\[\begin{align*} \frac{\partial}{\partial x} \int_a^x f(t) dt = f(x) \\ \\ \end{align*}\]</span></p>
@@ -972,9 +1000,8 @@ width: 30%;
 <div class="remark">
 <p>Approximating change: <span class="math inline">\(\Delta y \approx f&#39;(x) \Delta x\)</span></p>
 </div>
-<h2 id="differential">Differential</h2>
-<h3 id="limits">Limits</h3>
-<h3 id="tools-for-finding-limits">Tools for finding limits</h3>
+<h2 id="limits">Limits</h2>
+<h2 id="tools-for-finding-limits">Tools for finding limits</h2>
 <p>How to find <span class="math inline">\(\lim_{x\to a} f(x)\)</span>in order of difficulty:</p>
 <ul>
 <li><p>Plug in: if <span class="math inline">\(f\)</span> is continuous, <span class="math inline">\(\lim_{x\to a} f(x) = f(a)\)</span>.</p></li>
@@ -992,7 +1019,7 @@ width: 30%;
 <div class="warning">
 <p>Be careful: limits may not exist!! Example <span class="math inline">\(:\lim_{x\to 0} \frac{1}{x} \neq 0\)</span>.</p>
 </div>
-<h3 id="asymptotes">Asymptotes</h3>
+<h2 id="asymptotes">Asymptotes</h2>
 <ul>
 <li>Vertical asymptotes: at values <span class="math inline">\(x=p\)</span> where <span class="math inline">\(\lim_{x\to p} = \pm\infty\)</span></li>
 <li>Horizontal asymptotes: given by points <span class="math inline">\(y=L\)</span> where <span class="math inline">\(L \lim_{x\to\pm\infty} f(x) &lt; \infty\)</span></li>
@@ -1002,14 +1029,14 @@ width: 30%;
 </ul></li>
 </ul>
 <p><span class="math display">\[\begin{align*} f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x) \end{align*}\]</span></p>
-<h3 id="recurrences">Recurrences</h3>
+<h2 id="recurrences">Recurrences</h2>
 <ul>
 <li>Limit of a recurrence: <span class="math inline">\(x_n = f(x_{n-1}, x_{n-2}, \cdots)\)</span>
 <ul>
 <li>If the limit exists, it is a solution to <span class="math inline">\(x = f(x)\)</span></li>
 </ul></li>
 </ul>
-<h3 id="derivatives">Derivatives</h3>
+<h2 id="derivatives">Derivatives</h2>
 <div class="proposition" title="Chain Rule">
 <p><span class="math display">\[\begin{align*} {\frac{\partial }{\partial x}\,}(f\circ g) = (f&#39; \circ g) \cdot g&#39; \end{align*}\]</span></p>
 </div>
@@ -1025,12 +1052,12 @@ width: 30%;
 <div class="proposition" title="Inverse Rule">
 <p><span class="math display">\[\begin{align*} {\frac{\partial f^{-1}}{\partial x}\,}(f(x_0)) = \left( {\frac{\partial f}{\partial x}\,} \right)^{-1}(x_0) = 1/f&#39;(x_0) \end{align*}\]</span></p>
 </div>
-<h3 id="implicit-differentiation">Implicit Differentiation</h3>
+<h2 id="implicit-differentiation">Implicit Differentiation</h2>
 <p><span class="math display">\[\begin{align*} (f(x))&#39; = f&#39;(x)~dx, (f(y))&#39; = f&#39;(y)~dy \end{align*}\]</span> - Often able to solve for <span class="math inline">\({\frac{\partial y}{\partial x}\,}\)</span> this way.</p>
 <ul>
 <li>Obtaining derivatives of inverse functions: if <span class="math inline">\(y = f^{-1}(x)\)</span> then write <span class="math inline">\(f(y) = x\)</span> and implicitly differentiate.</li>
 </ul>
-<h3 id="related-rates">Related Rates</h3>
+<h2 id="related-rates">Related Rates</h2>
 <p>General series of steps: want to know some unknown rate <span class="math inline">\(y_t\)</span></p>
 <ul>
 <li>Lay out known relation that involves <span class="math inline">\(y\)</span></li>
@@ -1047,24 +1074,24 @@ width: 30%;
 </ul></li>
 </ul>
 </div>
-<h2 id="integral">Integral</h2>
-<h3 id="average-values">Average Values</h3>
+<h1 id="integral-calculus">Integral Calculus</h1>
+<h2 id="average-values">Average Values</h2>
 <div class="proposition" title="Integral formula for average value">
 <p><span class="math display">\[\begin{align*} \mu_f = \frac{1}{b-a}\int_a^b f(t) dt \end{align*}\]</span></p>
 </div>
 <div class="proof" title="?">
 <p>Apply MVT to <span class="math inline">\(F(x)\)</span>.</p>
 </div>
-<h3 id="area-between-curves">Area Between Curves</h3>
+<h2 id="area-between-curves">Area Between Curves</h2>
 <p>Area in polar coordinates: <span class="math display">\[\begin{align*} A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta \end{align*}\]</span></p>
-<h3 id="solids-of-revolution">Solids of Revolution</h3>
+<h2 id="solids-of-revolution">Solids of Revolution</h2>
 <p><span class="math display">\[\begin{align*}   \text{Disks} &amp;&amp; A = \int \pi r(t)^2 ~dt \\ \text{Cylinders} &amp;&amp; A = \int 2\pi r(t)h(t) ~dt .\end{align*}\]</span></p>
-<h3 id="arc-lengths">Arc Lengths</h3>
+<h2 id="arc-lengths">Arc Lengths</h2>
 <p><span class="math display">\[\begin{align*} L  &amp;= \int ~ds  &amp;&amp; ds = \sqrt{dx^2 + dy^2} \\ &amp;= \int_{x_0}^{x_1}\sqrt{1 + {\frac{\partial y}{\partial x}\,}}~dx \\ &amp;= \int_{y_0}^{y_1}\sqrt{{\frac{\partial x}{\partial y}\,} + 1}~dy \end{align*}\]</span></p>
 <p><span class="math display">\[\begin{align*} SA = \int 2 \pi r(x) ~ds \end{align*}\]</span></p>
-<h3 id="center-of-mass">Center of Mass</h3>
+<h2 id="center-of-mass">Center of Mass</h2>
 <p>Given a density <span class="math inline">\(\rho(\mathbf x)\)</span> of an object <span class="math inline">\(R\)</span>, the <span class="math inline">\(x_i\)</span> coordinate is given by <span class="math display">\[\begin{align*} x_i =  \frac {\displaystyle\int_R x_i\rho(x) ~dx} {\displaystyle\int_R \rho(x)~dx} \end{align*}\]</span></p>
-<h3 id="big-list-of-integration-techniques">Big List of Integration Techniques</h3>
+<h2 id="big-list-of-integration-techniques">Big List of Integration Techniques</h2>
 <p>Given <span class="math inline">\(f(x)\)</span>, we want to find an antiderivative <span class="math inline">\(F(x) = \int f\)</span> satisfying <span class="math inline">\(\frac{\partial}{\partial x}F(x) = f(x)\)</span></p>
 <ul>
 <li>Guess and check: look for a function that differentiates to <span class="math inline">\(f\)</span>.</li>
@@ -1073,13 +1100,13 @@ width: 30%;
 <li>More generally, any change of variables <span class="math display">\[\begin{align*}     x = g(u) \implies \int_a^b f(x)~dx = \int_{g^{-1}(a)}^{g^{-1}(b)} (f\circ g)(x) ~g&#39;(x)~dx     \end{align*}\]</span></li>
 </ul></li>
 </ul>
-<h4 id="integration-by-parts">Integration by Parts:</h4>
+<h3 id="integration-by-parts">Integration by Parts:</h3>
 <p>The standard form: <span class="math display">\[\begin{align*} \int u dv = uv - \int v du \end{align*}\]</span></p>
 <ul>
 <li>A more general form for repeated applications: let <span class="math inline">\(v^{-1} = \int v\)</span>, <span class="math inline">\(v^{-2} = \int\int v\)</span>, etc. <span class="math display">\[\begin{align*}     \int_a^b uv &amp;= uv^{-1}\bigg\rvert_a^b  - \int_a^b u^{1} v^{-1}\\     &amp;= uv^{-1} - u^1v^{-2}\bigg\rvert_a^b + \int_a^b u^2v^{-2} \\     &amp;= uv^{-1} - u^1v^{-2} + u^2v^{-3}\bigg\rvert_a^b - \int_a^b u^3v^{-3} \\     &amp;\quad\vdots \\     \implies \int_a^b uv &amp;= \sum_{k=1}^n (-1)^k u^{k-1}v^{-k} \bigg\rvert_a^b + (-1)^n\int_a^b u^nv^{-n}      \end{align*}\]</span></li>
 <li>Generally useful when one term’s <span class="math inline">\(n\)</span>th derivative is a constant.</li>
 </ul>
-<h4 id="shoelace-method">Shoelace Method</h4>
+<h3 id="shoelace-method">Shoelace Method</h3>
 <ul>
 <li>Note: you can choose <span class="math inline">\(u\)</span> or <span class="math inline">\(v\)</span> equal to 1! Useful if you know the derivative of the integrand.</li>
 </ul>
@@ -1125,7 +1152,7 @@ width: 30%;
 </tbody>
 </table>
 <p>Fill out until one column is zero (alternate signs). Get the result column by multiplying diagonally, then sum down the column.</p>
-<h4 id="differentiating-under-the-integral">Differentiating under the integral</h4>
+<h3 id="differentiating-under-the-integral">Differentiating under the integral</h3>
 <p><span class="math display">\[\begin{align*} \frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt  &amp;= f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\ &amp;= f(x, b(x))~b&#39;(x) - f(x, a(x))~a&#39;(x) \end{align*}\]</span></p>
 <div class="proof" title="?">
 <p>Let <span class="math inline">\(F(x)\)</span> be an antiderivative and compute <span class="math inline">\(F&#39;(x)\)</span> using the chain rule.</p>
@@ -1144,8 +1171,8 @@ width: 30%;
 <ul>
 <li>Trigonometric Substitution <span class="math display">\[\begin{align*}     \sqrt{a^2-x^2} &amp;&amp; \Rightarrow &amp;&amp; x = a\sin(\theta) &amp;&amp;dx = a\cos(\theta)~d\theta \\     \sqrt{a^2+x^2} &amp;&amp; \Rightarrow &amp;&amp; x = a\tan(\theta) &amp;&amp;dx = a\sec^2(\theta)~d\theta \\     \sqrt{x^2 - a^2} &amp;&amp; \Rightarrow &amp;&amp; x = a \sec(\theta) &amp;&amp;dx = a\sec(\theta)\tan(\theta)~d\theta     \end{align*}\]</span></li>
 </ul>
-<h4 id="partial-fractions">Partial Fractions</h4>
-<h4 id="trigonometric-substitution">Trigonometric Substitution</h4>
+<h3 id="partial-fractions">Partial Fractions</h3>
+<h3 id="trigonometric-substitution">Trigonometric Substitution</h3>
 <ul>
 <li><p>Trig Formulas <span class="math display">\[\begin{align*}     \sin^2(x) &amp;&amp; = &amp;&amp; \frac{1}{2}(1-2\cos x) \\     &amp;&amp; = &amp;&amp; \\     &amp;&amp; = &amp;&amp; \\     &amp;&amp; = &amp;&amp; \\     &amp;&amp; = &amp;&amp; \\     \end{align*}\]</span> </p></li>
 <li><p>Products of trig functions</p>
@@ -1164,7 +1191,7 @@ width: 30%;
 </ul></li>
 </ul>
 <p>Other small but useful facts: <span class="math display">\[\begin{align*}   \int_0^{2\pi} \sin \theta~d\theta = \int_0^{2\pi} \cos \theta~d\theta = 0 .\end{align*}\]</span></p>
-<h3 id="optimization">Optimization</h3>
+<h2 id="optimization">Optimization</h2>
 <ul>
 <li><p>Critical points: boundary points and wherever <span class="math inline">\(f&#39;(x) = 0\)</span></p></li>
 <li><p>Second derivative test:</p>
@@ -1196,175 +1223,6 @@ width: 30%;
 <li><p>Min/maxing - either derivatives of Lagranage multipliers!</p></li>
 <li><p>Distance from origin to plane: equation of a plane <span class="math display">\[\begin{align*}       P: ax+by+cz=d     .\end{align*}\]</span></p></li>
 </ul>
-<h1 id="sequences">Sequences</h1>
-<p>Notation: <span class="math inline">\(\left\{{a_n}\right\}_{n\in{\mathbb{N}}}\)</span> is a <strong>sequence</strong>, <span class="math inline">\(\displaystyle\sum_{i\in{\mathbb{N}}} a_i\)</span> is a <strong>series</strong>.</p>
-<h2 id="known-examples">Known Examples</h2>
-<ul>
-<li>Known sequences: let <span class="math inline">\(c\)</span> be a constant. <span class="math display">\[\begin{align*}     c, c^2, c^3, \ldots      &amp;= \left\{{c^n}\right\}_{n=1}^\infty \to 0      &amp;&amp; \forall {\left\lvert {c} \right\rvert} &lt; 1 \\ \\      \frac{1}{c},\frac{1}{c^2},\frac{1}{c^3},\ldots      &amp;= \left\{{\frac{1}{c^n}}\right\}_{n=1}^\infty \to 0      &amp;&amp;\forall  {\left\lvert {c} \right\rvert} &gt; 1 \\ \\     1,\frac{1}{2^c},\frac{1}{3^c},\ldots      &amp;= \left\{{\frac{1}{n^c}}\right\}_{n=1}^\infty \to 0      &amp;&amp; \forall c &gt; 0     \end{align*}\]</span></li>
-</ul>
-<h2 id="convergence">Convergence</h2>
-<div class="definition" title="Convergence of a Sequence">
-<p>A sequence <span class="math inline">\(\left\{{x_j}\right\}\)</span> <strong>converges</strong> to <span class="math inline">\(L\)</span> iff <span class="math display">\[\begin{align*}   \forall \varepsilon &gt; 0,\, \exists N &gt; 0 \text{ such that } \quad n\geq N \implies {\left\lvert {x_n - L} \right\rvert} &lt; \varepsilon .\end{align*}\]</span></p>
-</div>
-<div class="theorem" title="Squeeze Theorem">
-<p><span class="math display">\[\begin{align*} b_n \leq a_n \leq c_n \text{ and } b_n,c_n \to L \implies a_n \to L \end{align*}\]</span></p>
-</div>
-<div class="theorem" title="Monotone Convergence Theorem for Sequences">
-<p>If <span class="math inline">\(\left\{{a_j}\right\}\)</span> monotone and bounded, then <span class="math inline">\(a_j \to L = \lim\sup a_i &lt; \infty\)</span>.</p>
-</div>
-<div class="theorem" title="Cauchy Criteria">
-<p><span class="math inline">\({\left\lvert {a_m - a_n} \right\rvert} \to 0 \in {\mathbb{R}}\implies \left\{{a_i}\right\}\)</span> converges.</p>
-</div>
-<h3 id="checklist">Checklist</h3>
-<ul>
-<li><p>Is the sequence bounded?</p>
-<ul>
-<li><span class="math inline">\(\left\{{a_i}\right\}\)</span> not bounded <span class="math inline">\(\implies\)</span> not convergent</li>
-<li>If bounded, is it monotone?
-<ul>
-<li><span class="math inline">\(\left\{{a_i}\right\}\)</span> bounded and monotone <span class="math inline">\(\implies\)</span> convergent</li>
-</ul></li>
-</ul></li>
-<li><p>Use algebraic properties of limits</p></li>
-<li><p>Epsilon-delta definition</p></li>
-<li><p>Algebraic properties and manipulation:</p>
-<ul>
-<li><p>Limits commute with <span class="math inline">\(\pm, \times, \operatorname{Div}\)</span> and <span class="math inline">\(\lim C = C\)</span> for constants.</p>
-<ul>
-<li><p>E.g. Divide all terms by <span class="math inline">\(n\)</span> before taking limit</p></li>
-<li><p>Clear denominators</p></li>
-</ul></li>
-</ul></li>
-</ul>
-<h1 id="sums-series">Sums (“Series”)</h1>
-<div class="definition" title="Series">
-<p>A <strong>series</strong> is an function of the form <span class="math display">\[\begin{align*}   f(x) = \sum_{j=1}^\infty c_j x^j .\end{align*}\]</span></p>
-</div>
-<h2 id="known-examples-1">Known Examples</h2>
-<h3 id="conditionally-convergent">Conditionally Convergent</h3>
-<p><span class="math display">\[\begin{align*} \sum_{k=1}^\infty k^p &amp;&lt; \infty  &amp;&amp;\iff p \leq 1 \\ \sum_{k=1}^\infty \frac{1}{k^p} &amp;&lt; \infty  &amp;&amp;\iff p &gt; 1 \\ \sum_{k=1}^\infty \frac{1}{k} &amp;= \infty  &amp;&amp; \end{align*}\]</span></p>
-<h3 id="convergent">Convergent</h3>
-<p><span class="math display">\[\begin{align*} \sum_{n=1}^\infty \frac{1}{n^2}           &amp; &lt; \infty \\ \sum_{n=1}^\infty \frac{1}{n^3}           &amp; &lt; \infty \\ \sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} &amp; &lt; \infty \\ \sum_{n=1}^\infty \frac{1}{n!}            &amp; = e \\ \sum_{n=1}^\infty \frac{1}{c^n}           &amp; = \frac{c}{c-1} \\ \sum_{n=1}^\infty (-1)^n \frac{1}{c^n}    &amp; = \frac{c}{c+1} \\ \sum_{n=1}^\infty (-1)^n \frac{1}{n}      &amp; = \ln 2 \end{align*}\]</span></p>
-<h3 id="divergent">Divergent</h3>
-<p><span class="math display">\[\begin{align*} \sum_{n=1}^\infty \frac{1}{n} = \infty \\ \sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty  \end{align*}\]</span></p>
-<h2 id="convergence-1">Convergence</h2>
-<blockquote>
-<p>Useful reference: <a href="http://math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf" class="uri">http://math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf</a></p>
-</blockquote>
-<div class="definition" title="Absolutely Convergent">
-
-</div>
-<div class="remark">
-<p><span class="math inline">\(a_n\to 0\)</span> does not imply <span class="math inline">\(\sum a_n &lt; \infty\)</span>. Counterexample: the harmonic series.</p>
-</div>
-<div class="proposition" title="?">
-<p>Absolute convergence <span class="math inline">\(\implies\)</span> convergence</p>
-</div>
-<div class="proposition" title="The Cauchy Criterion">
-<p><span class="math display">\[\begin{align*} \limsup a_i \to 0 \implies \sum a_i \text{ converges } \end{align*}\]</span></p>
-</div>
-<h3 id="the-big-tests">The Big Tests</h3>
-<div class="theorem" title="Comparison Test">
-<ul>
-<li><span class="math inline">\(a_n &lt; b_n \and \sum b_n &lt; \infty \implies \sum a_n &lt; \infty\)</span></li>
-<li><span class="math inline">\(b_n &lt; a_n \and \sum b_n = \infty \implies \sum a_n = \infty\)</span></li>
-</ul>
-</div>
-<div class="theorem" title="Ratio Test">
-<p><span class="math display">\[\begin{align*} R =\lim_{n\to\infty} {\left\lvert {\frac{a_{n+1}}{a_n}} \right\rvert} \end{align*}\]</span></p>
-<ul>
-<li><span class="math inline">\(R &lt; 1\)</span>: absolutely convergent</li>
-<li><span class="math inline">\(R &gt; 1\)</span>: divergent</li>
-<li><span class="math inline">\(R = 1\)</span>: inconclusive</li>
-</ul>
-</div>
-<div class="theorem" title="Root Test">
-<p><span class="math display">\[\begin{align*} R = \limsup_{n \to \infty} \sqrt[n]{{\left\lvert {a_n} \right\rvert}} \end{align*}\]</span> - <span class="math inline">\(R &lt; 1\)</span>: convergent - <span class="math inline">\(R &gt; 1\)</span>: divergent - <span class="math inline">\(R = 1\)</span>: inconclusive</p>
-</div>
-<div class="theorem" title="Integral Test">
-<p><span class="math display">\[\begin{align*} f(n) = a_n \implies \sum a_n &lt; \infty \iff \int_1^\infty f(x) dx &lt; \infty \end{align*}\]</span></p>
-</div>
-<div class="theorem" title="Limit Test">
-<p><span class="math display">\[\begin{align*} \lim_{n\to\infty}\frac{a_n}{b_n} = L &lt; \infty \implies \sum a_n &lt; \infty \iff \sum b_n &lt; \infty \end{align*}\]</span></p>
-</div>
-<div class="theorem" title="Alternating Series Test">
-<p><span class="math display">\[\begin{align*} a_n \downarrow 0 \implies \sum (-1)^n a_n &lt; \infty \end{align*}\]</span></p>
-</div>
-<div class="theorem" title="Weierstrass $M\dash$Test">
-<p><span class="math display">\[\begin{align*} \sum_{n=1}^\infty {\left\lVert {f_n} \right\rVert}_\infty &lt; \infty  \implies \exists f\text{ such that } {\left\lVert { \sum_{n=1}^\infty f_n - f} \right\rVert}_\infty \to 0 \end{align*}\]</span> In other words, the series converges uniformly.</p>
-<blockquote>
-<p>Slogan: Convergence of the sup norms implies uniform convergence&quot;</p>
-</blockquote>
-</div>
-<div class="remark">
-<p>The <span class="math inline">\(M\)</span> in the name comes from defining <span class="math inline">\(\sup\left\{{f_k(x)}\right\} \mathrel{\vcenter{:}}= M_n\)</span> and requiring <span class="math inline">\(\sum {\left\lvert {M_n} \right\rvert} &lt; \infty\)</span>.</p>
-</div>
-<h3 id="checklist-1">Checklist</h3>
-<ul>
-<li>Do the terms tend to zero?
-<ul>
-<li><span class="math inline">\(a_i \not\to 0 \implies \sum a_i = \infty\)</span>.
-<ul>
-<li>Can check with L’Hopital’s rule</li>
-</ul></li>
-</ul></li>
-<li>There are exactly 6 tests at our disposal:
-<ul>
-<li>Comparison, root, ratio, integral, limit, alternating</li>
-</ul></li>
-<li>Is the series alternating?
-<ul>
-<li>If so, does <span class="math inline">\(a_n \downarrow 0\)</span>?
-<ul>
-<li>If so, <strong>convergent</strong></li>
-</ul></li>
-</ul></li>
-<li>Is this series bounded above by a known convergent series?
-<ul>
-<li><span class="math inline">\(p\)</span> series with <span class="math inline">\(p&gt;1\)</span>, i.e. : <span class="math inline">\(\sum a_n \leq \sum \frac{1}{n^p} &lt; \infty\)</span></li>
-<li>Geometric series with <span class="math inline">\({\left\lvert {x} \right\rvert} &lt; 1\)</span>, i.e. <span class="math inline">\(\sum a_n \leq \sum x^n\)</span></li>
-</ul></li>
-<li>Is this series bounded below by a known divergent series?
-<ul>
-<li><span class="math inline">\(p\)</span> series with <span class="math inline">\(p\leq 1\)</span>, i.e. <span class="math inline">\(\infty = \sum \frac{1}{n^p} \leq \sum a_i\)</span></li>
-</ul></li>
-<li>Are the ratios strictly less than or greater than 1?
-<ul>
-<li><span class="math inline">\(&lt;1 \implies\)</span> <strong>convergent</strong></li>
-<li><span class="math inline">\(&gt;1 \implies\)</span> <strong>convergent</strong></li>
-</ul></li>
-<li>Does the integral analogue converge?
-<ul>
-<li>Integral converges <span class="math inline">\(\iff\)</span> sum converges</li>
-</ul></li>
-<li>Try the root test
-<ul>
-<li><span class="math inline">\(&lt;1 \implies\)</span> <strong>convergent</strong></li>
-<li><span class="math inline">\(&gt;1 \implies\)</span> <strong>convergent</strong></li>
-</ul></li>
-<li>Try the limit test
-<ul>
-<li>Attempt to divide each term to obtain a known convergent/divergent series</li>
-</ul></li>
-</ul>
-<p>Some Pattern Recognition:</p>
-<ul>
-<li><span class="math inline">\((\text{stuff})!\)</span>: Ratio test (only test that will work with factorials!!)</li>
-<li><span class="math inline">\((\text{stuff})^n\)</span>: Root test or ratio test</li>
-<li>Replace <span class="math inline">\(a_n\)</span> with an <span class="math inline">\(f(x)\)</span> that’s easy to integrate - integral test</li>
-<li><span class="math inline">\(p(x)\)</span> or <span class="math inline">\(\sqrt{p(x)}\)</span>: comparison or limit test</li>
-</ul>
-<h2 id="radius-of-convergence">Radius of Convergence</h2>
-<div class="proposition" title="Finding the radius of convergence">
-<p>Use the fact that <span class="math display">\[\begin{align*} \lim_{k\to\infty} {\left\lvert {\frac{a_{k+1}x^{k+1}}{a_kx^k}} \right\rvert}  = {\left\lvert {x} \right\rvert}\lim_{k\to\infty} {\left\lvert {\frac{a_{k+1}}{a_k}} \right\rvert} &lt; 1  \implies \sum a_k x^k &lt; \infty ,\end{align*}\]</span> so take <span class="math inline">\(L \mathrel{\vcenter{:}}=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)</span> and then obtain the radius as <span class="math display">\[\begin{align*} R = \frac{1}{L} = \lim_{k\to\infty} {a_k \over a_{k+1}} \end{align*}\]</span></p>
-</div>
-<div class="remark">
-<ul>
-<li>Note <span class="math inline">\(L=0 \implies\)</span> absolutely convergent everywhere</li>
-<li><span class="math inline">\(L = \infty \implies\)</span> convergent only at <span class="math inline">\(x=0\)</span>.</li>
-<li>Also need to check endpoints <span class="math inline">\(R, -R\)</span> manually.</li>
-</ul>
-</div>
 <h1 id="vector-calculus">Vector Calculus</h1>
 <p>Notation: <span class="math display">\[\begin{align*}   \mathbf{v}, \mathbf{a}, \cdots  &amp;&amp; \text{vectors in }{\mathbb{R}}^n \\ \mathbf{R}, \mathbf{A}, \cdots  &amp;&amp; \text{matrices} \\ \mathbf{r}(t)  &amp;&amp; \text{A parameterized curve }\mathbf{r}: {\mathbb{R}}\to {\mathbb{R}}^n \\ \\ \widehat{\mathbf{v}}  &amp;&amp; {\mathbf{v} \over {\left\lVert {\mathbf{v}} \right\rVert}} .\end{align*}\]</span></p>
 <h2 id="plane-geometry">Plane Geometry</h2>
@@ -1598,6 +1456,7 @@ width: 30%;
 </ol>
 <h2 id="change-of-variables">Change of Variables</h2>
 <p>For any <span class="math inline">\(f: {\mathbb{R}}^n \to {\mathbb{R}}^n\)</span> and region <span class="math inline">\(R\)</span>, <span class="math display">\[\begin{align*} \int _ { g ( R ) } f ( \mathbf { x } ) ~d V = \int _ { R } (f  \circ g) ( \mathbf { x } )  \cdot {\left\lvert {D_g  ( \mathbf { x })} \right\rvert} ~d V \end{align*}\]</span></p>
+<h1 id="vector-calculus-1">Vector Calculus</h1>
 <h2 id="notation-1">Notation</h2>
 <p><span class="math inline">\(R\)</span> is a region, <span class="math inline">\(S\)</span> is a surface, <span class="math inline">\(V\)</span> is a solid.</p>
 <p><span class="math display">\[\begin{align*}   \oint _ { \partial S } \mathbf { F } \cdot d \mathbf { r } =     \oint _ { \partial S } [\mathbf{F}_1, \mathbf{F}_2, \mathbf{F}_3] \cdot [dx, dy, dz]  = \oint_{{\partial}S} \mathbf{F}_1dx + \mathbf{F}_2dy + \mathbf{F}_3dz \end{align*}\]</span></p>
@@ -1993,15 +1852,15 @@ width: 30%;
 </div>
 <h3 id="useful-counterexamples">Useful Counterexamples</h3>
 <p><span class="math display">\[\begin{align*} A \mathrel{\vcenter{:}}=\left[ \begin{array} { c c } { 1 } &amp; { 1 } \\ { 0 } &amp; { 1 } \end{array} \right]  &amp;\implies A^n =  \left[ \begin{array} { c c } { 1 } &amp; { n } \\ { 0 } &amp; { 1 } \end{array} \right],  &amp;&amp; \operatorname{Spec}(A) = [1,1] \\ A \mathrel{\vcenter{:}}=\left[ \begin{array} { c c } { 1 } &amp; { 1 } \\ { 0 } &amp; { - 1 } \end{array} \right]  &amp;\implies A^2 = I_2, &amp;&amp; \operatorname{Spec}(A) = [1, -1] \end{align*}\]</span></p>
-<h2 id="advanced-topics">Advanced Topics</h2>
-<h3 id="changing-basis">Changing Basis</h3>
+<h1 id="linear-algebra-advanced-topics">Linear Algebra: Advanced Topics</h1>
+<h2 id="changing-basis">Changing Basis</h2>
 <div class="proposition" title="Changing to the standard basis">
 <p>The transition matrix from a given basis <span class="math inline">\(\mathcal{B} = \left\{{\mathbf{b}_i}\right\}_{i=1}^n\)</span> to the standard basis is given by <span class="math display">\[\begin{align*}   A\mathrel{\vcenter{:}}= \begin{bmatrix} \rule[-1ex]{0.5pt}{2.5ex}&amp; \rule[-1ex]{0.5pt}{2.5ex}&amp;        &amp; \rule[-1ex]{0.5pt}{2.5ex}\\ \mathbf{b}_1 &amp; \mathbf{b}_2 &amp; \cdots &amp; \mathbf{b}_n \\ \rule[-1ex]{0.5pt}{2.5ex}&amp; \rule[-1ex]{0.5pt}{2.5ex}&amp;        &amp; \rule[-1ex]{0.5pt}{2.5ex}\\ \end{bmatrix} ,\end{align*}\]</span> and the transition matrix from the standard basis to <span class="math inline">\(\mathcal{B}\)</span> is <span class="math inline">\(A^{-1}\)</span>.</p>
 </div>
-<h3 id="orthogonal-matrices">Orthogonal Matrices</h3>
+<h2 id="orthogonal-matrices">Orthogonal Matrices</h2>
 <p>Given a notion of orthogonality for vectors, we can extend this to matrices. A square matrix is said to be orthogonal iff <span class="math inline">\(QQ^T = Q^TQ = I\)</span>. For rectangular matrices, we have the following characterizations: <span class="math display">\[\begin{align*} QQ^T = I \implies &amp;\text{The rows of } Q \text { are orthogonal,} \\ Q^TQ = I \implies &amp;\text{The columns of } Q \text{ are orthogonal.} \end{align*}\]</span></p>
 <p>To remember which condition is which, just recall that matrix multiplication <span class="math inline">\(AB\)</span> takes the inner product between the <strong>rows</strong> of <span class="math inline">\(A\)</span> and the <strong>columns</strong> of <span class="math inline">\(B\)</span>. So if, for example, we want to inspect whether or not the columns of <span class="math inline">\(Q\)</span> are orthogonal, we should let <span class="math inline">\(B=Q\)</span> in the above formulation – then we just note that the rows of <span class="math inline">\(Q^T\)</span> are indeed the columns of <span class="math inline">\(Q\)</span>, so <span class="math inline">\(Q^TQ\)</span> computes the inner products between all pairs of the columns of <span class="math inline">\(Q\)</span> and stores them in a matrix.</p>
-<h3 id="projections-1">Projections</h3>
+<h2 id="projections-1">Projections</h2>
 <div class="remark">
 <p>A projection <span class="math inline">\(P\)</span> induces a decomposition <span class="math display">\[\begin{align*}   \operatorname{dom}(P) = \ker(P) \oplus \ker(P)^\perp .\end{align*}\]</span></p>
 </div>
@@ -2011,11 +1870,11 @@ width: 30%;
 <p>Mnemonic: <span class="math display">\[\begin{align*}   P \approx {A^t A \over AA^t} .\end{align*}\]</span></p>
 </div>
 <p>With an inner product in hand and a notion of orthogonality, we can define a notion of <strong>orthogonal projection</strong> of one vector onto another, and more generally of a vector onto a subspace spanned by multiple vectors.</p>
-<h4 id="projection-onto-a-vector">Projection Onto a Vector</h4>
+<h3 id="projection-onto-a-vector">Projection Onto a Vector</h3>
 <p>Say we have two vectors <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\mathbf{y}\)</span>, and we want to define “the component of <span class="math inline">\(\mathbf{x}\)</span> that lies along <span class="math inline">\(\mathbf{y}\)</span>”, which we’ll call <span class="math inline">\(\mathbf{p}\)</span>. We can work out what the formula should be using a simple model:</p>
 <p>We notice that whatever <span class="math inline">\(p\)</span> is, it will in the direction of <span class="math inline">\(\mathbf{y}\)</span>, and thus <span class="math inline">\(\mathbf{p} = \lambda \widehat{\mathbf{y}}\)</span> for some scalar <span class="math inline">\(\lambda\)</span>, where in fact <span class="math inline">\(\lambda = {\left\lVert {\mathbf{p}} \right\rVert}\)</span> since <span class="math inline">\({\left\lVert {\widehat{\mathbf{y}}} \right\rVert} = 1\)</span>. We will find that <span class="math inline">\(\lambda = {\left\langle {\mathbf{x}},~{\widehat{\mathbf{y}}} \right\rangle}\)</span>, and so <span class="math display">\[\begin{align*}   \mathbf{p} = {\left\langle {\mathbf{x}},~{\widehat{\mathbf{y}}} \right\rangle}\widehat{\mathbf{y}} = \frac{{\left\langle {\mathbf{x}},~{\mathbf{y}} \right\rangle}}{{\left\langle {\mathbf{y}},~{\mathbf{y}} \right\rangle}} \mathbf{y} .\end{align*}\]</span></p>
 <p>Notice that we can then form a “residual” vector <span class="math inline">\(\mathbf{r} = \mathbf{x} - \mathbf{p}\)</span>, which should satisfy <span class="math inline">\(\mathbf{r} ^\perp\mathbf{p}\)</span>. If we were to let <span class="math inline">\(\lambda\)</span> vary as a function of a parameter <span class="math inline">\(t\)</span> (making <span class="math inline">\(\mathbf{r}\)</span> a function of <span class="math inline">\(t\)</span> as well) we would find that this particular choice minimizes <span class="math inline">\({\left\lVert {\mathbf{r} (t)} \right\rVert}\)</span>.</p>
-<h4 id="projection-onto-a-subspace">Projection Onto a Subspace</h4>
+<h3 id="projection-onto-a-subspace">Projection Onto a Subspace</h3>
 <p>In general, supposing one has a subspace <span class="math inline">\(S = \mathrm{span}\left\{{\mathbf{y}_1, \mathbf{y}_2, \cdots, \mathbf{y}_n}\right\}\)</span> and (importantly!) the <span class="math inline">\(\mathbf{y}_i\)</span> are orthogonal, then the projection of <span class="math inline">\(\mathbf{p}\)</span> of <span class="math inline">\(x\)</span> onto <span class="math inline">\(S\)</span> is given by the sum of the projections onto each basis vector, yielding</p>
 <p><span class="math display">\[\begin{align*} \mathbf{p} = \sum_{i=1}^n \frac{{\left\langle {\mathbf{x}},~{\mathbf{y}_i} \right\rangle}}{{\left\langle {\mathbf{y}_i},~{\mathbf{y}_i} \right\rangle}} \mathbf{y}_i = \sum_{i=1}^n {\left\langle {\mathbf{x}},~{\mathbf{y}_i} \right\rangle} \widehat{\mathbf{y}_i} .\end{align*}\]</span></p>
 <blockquote>
@@ -2026,7 +1885,7 @@ width: 30%;
 <p>Equation of a plane: given a point <span class="math inline">\(\mathbf{p}_0\)</span> on a plane and a normal vector <span class="math inline">\(\mathbf{n}\)</span>, any vector <span class="math inline">\(\mathbf{x}\)</span> on the plane satisfies <span class="math display">\[\begin{align*} {\left\langle {\mathbf{x} - \mathbf{p}_0},~{\mathbf{n}} \right\rangle} = 0 \end{align*}\]</span></p>
 <p>To find the distance between a point <span class="math inline">\(\mathbf{a}\)</span> and a plane, we need only project <span class="math inline">\(\mathbf{a}\)</span> onto the subspace spanned by the normal <span class="math inline">\(\mathbf{n}\)</span>: <span class="math display">\[\begin{align*}   d = {\left\langle {\mathbf{a}},~{\mathbf{n}} \right\rangle} .\end{align*}\]</span></p>
 <p>One important property of projections is that for any vector <span class="math inline">\(\mathbf{v}\)</span> and for any subspace <span class="math inline">\(S\)</span>, we have <span class="math inline">\(\mathbf{v} - P_S(\mathbf{v}) \in S^\perp\)</span>. Moreover, if <span class="math inline">\(\mathbf{v} \in S^\perp\)</span>, then <span class="math inline">\(P_s(\mathbf{v})\)</span> must be zero. This follows by noting that in equation <span class="math inline">\(\ref{projection_equation}\)</span>, every inner product appearing in the sum vanishes, by definition of <span class="math inline">\(\mathbf{v} \in S^\perp\)</span>, and so the projection is zero.</p>
-<h4 id="least-squares">Least Squares</h4>
+<h3 id="least-squares">Least Squares</h3>
 <div class="proposition" title="Normal Equations">
 <p><span class="math inline">\(\mathbf{x}\)</span> is a least squares solution to <span class="math inline">\(A\mathbf{x} = \mathbf{b}\)</span> iff <span class="math display">\[\begin{align*} A^t A \mathbf{x} = A^t \mathbf{b} \end{align*}\]</span></p>
 </div>
@@ -2039,23 +1898,23 @@ width: 30%;
 <p>as well as the adjoint formula <span class="math display">\[\begin{align*}   {\left\langle {A\mathbf{x}},~{\mathbf{x}} \right\rangle} = {\left\langle {\mathbf{x}},~{A^T \mathbf{x}} \right\rangle}. .\end{align*}\]</span></p>
 <p>From these, by letting <span class="math inline">\(A=I\)</span> we can derive <span class="math display">\[\begin{align*}   {\frac{\partial }{\partial \mathbf{x}}\,} {\left\lVert {\mathbf{x}} \right\rVert}^2 = {\frac{\partial }{\partial \mathbf{x}}\,} {\left\langle {\mathbf{x}},~{\mathbf{x}} \right\rangle} = 2\mathbf{x}\\ .\end{align*}\]</span></p>
 <p>The derivation proceeds by solving the equation <span class="math display">\[\begin{align*}   {\frac{\partial }{\partial \mathbf{x}}\,} {\left\lVert {\mathbf{b} - A\mathbf{x}} \right\rVert}^2 = \mathbf{0}. .\end{align*}\]</span></p>
-<h3 id="normal-forms">Normal Forms</h3>
+<h2 id="normal-forms">Normal Forms</h2>
 <div class="remark">
 <p>Every square matrix is similar to a matrix in Jordan canonical form.</p>
 </div>
-<h3 id="decompositions">Decompositions</h3>
-<h4 id="the-qr-decomposition">The QR Decomposition</h4>
+<h2 id="decompositions">Decompositions</h2>
+<h3 id="the-qr-decomposition">The QR Decomposition</h3>
 <p>Gram-Schmidt is often computed to find an orthonormal basis for, say, the range of some matrix <span class="math inline">\(A\)</span>. With a small modification to this algorithm, we can write <span class="math inline">\(A = QR\)</span> where <span class="math inline">\(R\)</span> is upper triangular and <span class="math inline">\(Q\)</span> has orthogonal columns.</p>
 <p>Why is this useful? One reason is that this also allows for a particularly simple expression of least-squares solutions. If <span class="math inline">\(A=QR\)</span>, then <span class="math inline">\(R\)</span> will be invertible, and a bit of algebraic manipulation will show that <span class="math display">\[\begin{align*}   \tilde{\mathbf{x}} = R^{-1}Q^T\mathbf{b}. .\end{align*}\]</span></p>
 <p>How does it work? You simply perform Gram-Schmidt to obtain <span class="math inline">\(\left\{{\mathbf{u}_i}\right\}\)</span>, then <span class="math display">\[\begin{align*}Q = [\mathbf{u}_1, \mathbf{u}_2, \cdots ].\end{align*}\]</span></p>
 <p>The matrix <span class="math inline">\(R\)</span> can then be written as</p>
 <p><span class="math display">\[\begin{align*} r_{ij} = \begin{cases} {\left\langle {\mathbf{u}_i},~{\mathbf{x}_j} \right\rangle}, &amp; i\leq j, \\ 0, &amp; \text{else}. \end{cases} \end{align*}\]</span></p>
 <p>Explicitly, this yields the matrix <span class="math display">\[\begin{align*} R =  \begin{bmatrix} {\left\langle {\mathbf{u}_1},~{\mathbf{x}_1} \right\rangle} &amp; {\left\langle {\mathbf{u}_1},~{\mathbf{x}_2} \right\rangle} &amp; {\left\langle {\mathbf{u}_1},~{\mathbf{x}_3} \right\rangle} &amp; \cdots &amp; \\ 0 &amp; {\left\langle {\mathbf{u}_2},~{\mathbf{x}_2} \right\rangle} &amp; {\left\langle {\mathbf{u}_2},~{\mathbf{x}_3} \right\rangle} &amp; \cdots &amp; \\ 0 &amp; 0 &amp; {\left\langle {\mathbf{u}_3},~{\mathbf{x}_3} \right\rangle} &amp; \cdots &amp; \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots \\ \end{bmatrix} \end{align*}\]</span></p>
-<h2 id="appendix-lists-of-things-to-know">Appendix: Lists of things to know</h2>
+<h1 id="appendix-lists-of-things-to-know">Appendix: Lists of things to know</h1>
 <blockquote>
 <p>Textbook: Leon, <em>Linear Algebra with Applications</em></p>
 </blockquote>
-<h3 id="topics">Topics</h3>
+<h2 id="topics">Topics</h2>
 <ul>
 <li>1.6: Partition Matrices</li>
 <li>3.5: Change of Basis</li>
@@ -2086,7 +1945,7 @@ width: 30%;
 <li><em>Final Exam</em></li>
 </ul></li>
 </ul>
-<h3 id="definitions">Definitions</h3>
+<h2 id="definitions">Definitions</h2>
 <ul>
 <li>System of equations</li>
 <li>Homogeneous system</li>
@@ -2143,7 +2002,7 @@ width: 30%;
 <li>Positive-definite</li>
 <li>Quadratic form</li>
 </ul>
-<h3 id="lower-division-review">Lower-division review</h3>
+<h2 id="lower-division-review">Lower-division review</h2>
 <ul>
 <li>Systems of linear equations
 <ul>
@@ -2182,7 +2041,7 @@ width: 30%;
 <li>Convert a basis to an orthonormal basis</li>
 </ul></li>
 </ul>
-<h3 id="things-to-compute">Things to compute</h3>
+<h2 id="things-to-compute">Things to compute</h2>
 <ul>
 <li>Construct a matrix representing a linear map
 <ul>
@@ -2216,7 +2075,7 @@ width: 30%;
 <li>Compute the matrix for a projection onto a subspace</li>
 <li>Find the QR factorization of a matrix</li>
 </ul>
-<h3 id="things-to-prove">Things to prove</h3>
+<h2 id="things-to-prove">Things to prove</h2>
 <ul>
 <li>Prove facts about block matrices</li>
 <li>Prove facts about injective linear maps</li>
@@ -2229,10 +2088,11 @@ width: 30%;
 <li>Prove facts about diagonalizable matrices</li>
 <li>Prove facts about the orthogonal decomposition theorem</li>
 </ul>
+<h1 id="ordinary-differential-equations">Ordinary Differential Equations</h1>
 <h2 id="techniques-overview">Techniques Overview</h2>
 <p><span class="math display">\[\begin{align*} p(y)y&#39; = q(x) &amp;&amp; \hspace{10em} \text{separable} \\ \\ y&#39;+p(x)y = q(x) &amp;&amp; \text{integrating factor} \\ \\ y&#39; = f(x,y), f(tx,ty) = f(x,y) &amp;&amp; y = xV(x)\text{ COV reduces to separable} \\ \\ y&#39; +p(x)y = q(x)y^n &amp;&amp; \text{Bernoulli, divide by $y^n$ and COV $u = y^{1-n}$} \\ \\ M(x,y)dx + N(x,y)dy = 0 &amp;&amp; M_y = N_x: \phi(x,y) = c (\phi_x =M, \phi_y = N) \\ \\ P(D)y = f(x,y) &amp;&amp; x^ke^{rx} \text{ for each root } \end{align*}\]</span></p>
 <p><em>Where <span class="math inline">\(e^{zx}\)</span> yields <span class="math inline">\(e^{ax}\cos bx, e^{ax}\sin bx\)</span></em></p>
-<h2 id="ordinary-differential-equations">Ordinary Differential Equations</h2>
+<h2 id="types-of-equations">Types of Equations</h2>
 <ul>
 <li>Separable equations: <span class="math display">\[\begin{align*}p(y)\frac{dy}{dx} - q(x) = 0 \implies \int p(y) dy = \int q(x) dx + C\end{align*}\]</span> <span class="math display">\[\begin{align*}     \frac{dy}{dx} = f(x)g(y) \implies \int \frac{1}{g(y)}dy = \int f(x) dx + C     \end{align*}\]</span>
 <ul>
@@ -2296,6 +2156,7 @@ width: 30%;
 <div class="warning">
 <p><span class="math inline">\(W \equiv 0\)</span> on <span class="math inline">\(I\)</span> does <em>not</em> imply that <span class="math inline">\(\left\{{f_i}\right\}\)</span> is linearly dependent! Counterexample: <span class="math inline">\(\left\{{x, x+x^2, 2x-x^2}\right\}\)</span> where <span class="math inline">\(W \equiv 0\)</span> but <span class="math inline">\(x+x^2 = 3(x) + (2x-x^2)\)</span> is a linear combination of the other two functions.</p>
 </div>
+<h1 id="algebra">Algebra</h1>
 <h2 id="to-sort">To Sort</h2>
 <ul>
 <li><p>Burnside’s Lemma</p></li>
@@ -2647,6 +2508,188 @@ width: 30%;
 <div class="proposition" title="Miller-Rabin Primality Test">
 <p><span class="math inline">\(n\)</span> is prime iff <span class="math display">\[\begin{align*} x^2 = 1 \mod n \implies x = \pm 1 \end{align*}\]</span></p>
 </div>
+<h2 id="sequences-in-metric-spaces">Sequences in Metric Spaces</h2>
+<div class="theorem" title="Bolzano-Weierstrass">
+<p>Every bounded sequence has a convergent subsequence.</p>
+</div>
+<div class="theorem" title="Heine-Borel">
+<p>In <span class="math inline">\({\mathbb{R}}^n, X\)</span> is compact <span class="math inline">\(\iff X\)</span> is closed and bounded.</p>
+</div>
+<div class="remark">
+<p>Necessity of <span class="math inline">\({\mathbb{R}}^n\)</span>: <span class="math inline">\(X = ({\mathbb{Z}}, d(x,y) = 1)\)</span> is closed, complete, bounded, but not compact since <span class="math inline">\(\left\{{1,2,\cdots}\right\}\)</span> has no convergent subsequence</p>
+</div>
+<div class="proposition" title="Converse of Heine-Borel">
+<p>Converse holds iff bounded is replaced with totally bounded</p>
+</div>
+<h1 id="sequences">Sequences</h1>
+<p>Notation: <span class="math inline">\(\left\{{a_n}\right\}_{n\in{\mathbb{N}}}\)</span> is a <strong>sequence</strong>, <span class="math inline">\(\displaystyle\sum_{i\in{\mathbb{N}}} a_i\)</span> is a <strong>series</strong>.</p>
+<h2 id="known-examples">Known Examples</h2>
+<ul>
+<li>Known sequences: let <span class="math inline">\(c\)</span> be a constant. <span class="math display">\[\begin{align*}     c, c^2, c^3, \ldots      &amp;= \left\{{c^n}\right\}_{n=1}^\infty \to 0      &amp;&amp; \forall {\left\lvert {c} \right\rvert} &lt; 1 \\ \\      \frac{1}{c},\frac{1}{c^2},\frac{1}{c^3},\ldots      &amp;= \left\{{\frac{1}{c^n}}\right\}_{n=1}^\infty \to 0      &amp;&amp;\forall  {\left\lvert {c} \right\rvert} &gt; 1 \\ \\     1,\frac{1}{2^c},\frac{1}{3^c},\ldots      &amp;= \left\{{\frac{1}{n^c}}\right\}_{n=1}^\infty \to 0      &amp;&amp; \forall c &gt; 0     \end{align*}\]</span></li>
+</ul>
+<h2 id="convergence">Convergence</h2>
+<div class="definition" title="Convergence of a Sequence">
+<p>A sequence <span class="math inline">\(\left\{{x_j}\right\}\)</span> <strong>converges</strong> to <span class="math inline">\(L\)</span> iff <span class="math display">\[\begin{align*}   \forall \varepsilon &gt; 0,\, \exists N &gt; 0 \text{ such that } \quad n\geq N \implies {\left\lvert {x_n - L} \right\rvert} &lt; \varepsilon .\end{align*}\]</span></p>
+</div>
+<div class="theorem" title="Squeeze Theorem">
+<p><span class="math display">\[\begin{align*} b_n \leq a_n \leq c_n \text{ and } b_n,c_n \to L \implies a_n \to L \end{align*}\]</span></p>
+</div>
+<div class="theorem" title="Monotone Convergence Theorem for Sequences">
+<p>If <span class="math inline">\(\left\{{a_j}\right\}\)</span> monotone and bounded, then <span class="math inline">\(a_j \to L = \lim\sup a_i &lt; \infty\)</span>.</p>
+</div>
+<div class="theorem" title="Cauchy Criteria">
+<p><span class="math inline">\({\left\lvert {a_m - a_n} \right\rvert} \to 0 \in {\mathbb{R}}\implies \left\{{a_i}\right\}\)</span> converges.</p>
+</div>
+<h3 id="checklist">Checklist</h3>
+<ul>
+<li><p>Is the sequence bounded?</p>
+<ul>
+<li><span class="math inline">\(\left\{{a_i}\right\}\)</span> not bounded <span class="math inline">\(\implies\)</span> not convergent</li>
+<li>If bounded, is it monotone?
+<ul>
+<li><span class="math inline">\(\left\{{a_i}\right\}\)</span> bounded and monotone <span class="math inline">\(\implies\)</span> convergent</li>
+</ul></li>
+</ul></li>
+<li><p>Use algebraic properties of limits</p></li>
+<li><p>Epsilon-delta definition</p></li>
+<li><p>Algebraic properties and manipulation:</p>
+<ul>
+<li><p>Limits commute with <span class="math inline">\(\pm, \times, \operatorname{Div}\)</span> and <span class="math inline">\(\lim C = C\)</span> for constants.</p>
+<ul>
+<li><p>E.g. Divide all terms by <span class="math inline">\(n\)</span> before taking limit</p></li>
+<li><p>Clear denominators</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id="sums-series">Sums (“Series”)</h1>
+<div class="definition" title="Series">
+<p>A <strong>series</strong> is an function of the form <span class="math display">\[\begin{align*}   f(x) = \sum_{j=1}^\infty c_j x^j .\end{align*}\]</span></p>
+</div>
+<h2 id="known-examples-1">Known Examples</h2>
+<h3 id="conditionally-convergent">Conditionally Convergent</h3>
+<p><span class="math display">\[\begin{align*} \sum_{k=1}^\infty k^p &amp;&lt; \infty  &amp;&amp;\iff p \leq 1 \\ \sum_{k=1}^\infty \frac{1}{k^p} &amp;&lt; \infty  &amp;&amp;\iff p &gt; 1 \\ \sum_{k=1}^\infty \frac{1}{k} &amp;= \infty  &amp;&amp; \end{align*}\]</span></p>
+<h3 id="convergent">Convergent</h3>
+<p><span class="math display">\[\begin{align*} \sum_{n=1}^\infty \frac{1}{n^2}           &amp; &lt; \infty \\ \sum_{n=1}^\infty \frac{1}{n^3}           &amp; &lt; \infty \\ \sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} &amp; &lt; \infty \\ \sum_{n=1}^\infty \frac{1}{n!}            &amp; = e \\ \sum_{n=1}^\infty \frac{1}{c^n}           &amp; = \frac{c}{c-1} \\ \sum_{n=1}^\infty (-1)^n \frac{1}{c^n}    &amp; = \frac{c}{c+1} \\ \sum_{n=1}^\infty (-1)^n \frac{1}{n}      &amp; = \ln 2 \end{align*}\]</span></p>
+<h3 id="divergent">Divergent</h3>
+<p><span class="math display">\[\begin{align*} \sum_{n=1}^\infty \frac{1}{n} = \infty \\ \sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty  \end{align*}\]</span></p>
+<h2 id="convergence-1">Convergence</h2>
+<blockquote>
+<p>Useful reference: <a href="http://math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf" class="uri">http://math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf</a></p>
+</blockquote>
+<div class="definition" title="Absolutely Convergent">
+
+</div>
+<div class="remark">
+<p><span class="math inline">\(a_n\to 0\)</span> does not imply <span class="math inline">\(\sum a_n &lt; \infty\)</span>. Counterexample: the harmonic series.</p>
+</div>
+<div class="proposition" title="?">
+<p>Absolute convergence <span class="math inline">\(\implies\)</span> convergence</p>
+</div>
+<div class="proposition" title="The Cauchy Criterion">
+<p><span class="math display">\[\begin{align*} \limsup a_i \to 0 \implies \sum a_i \text{ converges } \end{align*}\]</span></p>
+</div>
+<h3 id="the-big-tests">The Big Tests</h3>
+<div class="theorem" title="Comparison Test">
+<ul>
+<li><span class="math inline">\(a_n &lt; b_n \and \sum b_n &lt; \infty \implies \sum a_n &lt; \infty\)</span></li>
+<li><span class="math inline">\(b_n &lt; a_n \and \sum b_n = \infty \implies \sum a_n = \infty\)</span></li>
+</ul>
+</div>
+<div class="theorem" title="Ratio Test">
+<p><span class="math display">\[\begin{align*} R =\lim_{n\to\infty} {\left\lvert {\frac{a_{n+1}}{a_n}} \right\rvert} \end{align*}\]</span></p>
+<ul>
+<li><span class="math inline">\(R &lt; 1\)</span>: absolutely convergent</li>
+<li><span class="math inline">\(R &gt; 1\)</span>: divergent</li>
+<li><span class="math inline">\(R = 1\)</span>: inconclusive</li>
+</ul>
+</div>
+<div class="theorem" title="Root Test">
+<p><span class="math display">\[\begin{align*} R = \limsup_{n \to \infty} \sqrt[n]{{\left\lvert {a_n} \right\rvert}} \end{align*}\]</span> - <span class="math inline">\(R &lt; 1\)</span>: convergent - <span class="math inline">\(R &gt; 1\)</span>: divergent - <span class="math inline">\(R = 1\)</span>: inconclusive</p>
+</div>
+<div class="theorem" title="Integral Test">
+<p><span class="math display">\[\begin{align*} f(n) = a_n \implies \sum a_n &lt; \infty \iff \int_1^\infty f(x) dx &lt; \infty \end{align*}\]</span></p>
+</div>
+<div class="theorem" title="Limit Test">
+<p><span class="math display">\[\begin{align*} \lim_{n\to\infty}\frac{a_n}{b_n} = L &lt; \infty \implies \sum a_n &lt; \infty \iff \sum b_n &lt; \infty \end{align*}\]</span></p>
+</div>
+<div class="theorem" title="Alternating Series Test">
+<p><span class="math display">\[\begin{align*} a_n \downarrow 0 \implies \sum (-1)^n a_n &lt; \infty \end{align*}\]</span></p>
+</div>
+<div class="theorem" title="Weierstrass $M\dash$Test">
+<p><span class="math display">\[\begin{align*} \sum_{n=1}^\infty {\left\lVert {f_n} \right\rVert}_\infty &lt; \infty  \implies \exists f\text{ such that } {\left\lVert { \sum_{n=1}^\infty f_n - f} \right\rVert}_\infty \to 0 \end{align*}\]</span> In other words, the series converges uniformly.</p>
+<blockquote>
+<p>Slogan: Convergence of the sup norms implies uniform convergence&quot;</p>
+</blockquote>
+</div>
+<div class="remark">
+<p>The <span class="math inline">\(M\)</span> in the name comes from defining <span class="math inline">\(\sup\left\{{f_k(x)}\right\} \mathrel{\vcenter{:}}= M_n\)</span> and requiring <span class="math inline">\(\sum {\left\lvert {M_n} \right\rvert} &lt; \infty\)</span>.</p>
+</div>
+<h3 id="checklist-1">Checklist</h3>
+<ul>
+<li>Do the terms tend to zero?
+<ul>
+<li><span class="math inline">\(a_i \not\to 0 \implies \sum a_i = \infty\)</span>.
+<ul>
+<li>Can check with L’Hopital’s rule</li>
+</ul></li>
+</ul></li>
+<li>There are exactly 6 tests at our disposal:
+<ul>
+<li>Comparison, root, ratio, integral, limit, alternating</li>
+</ul></li>
+<li>Is the series alternating?
+<ul>
+<li>If so, does <span class="math inline">\(a_n \downarrow 0\)</span>?
+<ul>
+<li>If so, <strong>convergent</strong></li>
+</ul></li>
+</ul></li>
+<li>Is this series bounded above by a known convergent series?
+<ul>
+<li><span class="math inline">\(p\)</span> series with <span class="math inline">\(p&gt;1\)</span>, i.e. : <span class="math inline">\(\sum a_n \leq \sum \frac{1}{n^p} &lt; \infty\)</span></li>
+<li>Geometric series with <span class="math inline">\({\left\lvert {x} \right\rvert} &lt; 1\)</span>, i.e. <span class="math inline">\(\sum a_n \leq \sum x^n\)</span></li>
+</ul></li>
+<li>Is this series bounded below by a known divergent series?
+<ul>
+<li><span class="math inline">\(p\)</span> series with <span class="math inline">\(p\leq 1\)</span>, i.e. <span class="math inline">\(\infty = \sum \frac{1}{n^p} \leq \sum a_i\)</span></li>
+</ul></li>
+<li>Are the ratios strictly less than or greater than 1?
+<ul>
+<li><span class="math inline">\(&lt;1 \implies\)</span> <strong>convergent</strong></li>
+<li><span class="math inline">\(&gt;1 \implies\)</span> <strong>convergent</strong></li>
+</ul></li>
+<li>Does the integral analogue converge?
+<ul>
+<li>Integral converges <span class="math inline">\(\iff\)</span> sum converges</li>
+</ul></li>
+<li>Try the root test
+<ul>
+<li><span class="math inline">\(&lt;1 \implies\)</span> <strong>convergent</strong></li>
+<li><span class="math inline">\(&gt;1 \implies\)</span> <strong>convergent</strong></li>
+</ul></li>
+<li>Try the limit test
+<ul>
+<li>Attempt to divide each term to obtain a known convergent/divergent series</li>
+</ul></li>
+</ul>
+<p>Some Pattern Recognition:</p>
+<ul>
+<li><span class="math inline">\((\text{stuff})!\)</span>: Ratio test (only test that will work with factorials!!)</li>
+<li><span class="math inline">\((\text{stuff})^n\)</span>: Root test or ratio test</li>
+<li>Replace <span class="math inline">\(a_n\)</span> with an <span class="math inline">\(f(x)\)</span> that’s easy to integrate - integral test</li>
+<li><span class="math inline">\(p(x)\)</span> or <span class="math inline">\(\sqrt{p(x)}\)</span>: comparison or limit test</li>
+</ul>
+<h2 id="radius-of-convergence">Radius of Convergence</h2>
+<div class="proposition" title="Finding the radius of convergence">
+<p>Use the fact that <span class="math display">\[\begin{align*} \lim_{k\to\infty} {\left\lvert {\frac{a_{k+1}x^{k+1}}{a_kx^k}} \right\rvert}  = {\left\lvert {x} \right\rvert}\lim_{k\to\infty} {\left\lvert {\frac{a_{k+1}}{a_k}} \right\rvert} &lt; 1  \implies \sum a_k x^k &lt; \infty ,\end{align*}\]</span> so take <span class="math inline">\(L \mathrel{\vcenter{:}}=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)</span> and then obtain the radius as <span class="math display">\[\begin{align*} R = \frac{1}{L} = \lim_{k\to\infty} {a_k \over a_{k+1}} \end{align*}\]</span></p>
+</div>
+<div class="remark">
+<ul>
+<li>Note <span class="math inline">\(L=0 \implies\)</span> absolutely convergent everywhere</li>
+<li><span class="math inline">\(L = \infty \implies\)</span> convergent only at <span class="math inline">\(x=0\)</span>.</li>
+<li>Also need to check endpoints <span class="math inline">\(R, -R\)</span> manually.</li>
+</ul>
+</div>
 <h1 id="real-analysis">Real Analysis</h1>
 <h2 id="notation-3">Notation</h2>
 <div class="definition" title="Continuously Differentiable">
@@ -2689,6 +2732,8 @@ width: 30%;
 <p>? </p>
 </div>
 <h2 id="important-examples">Important Examples</h2>
+<h2 id="limits-1">Limits</h2>
+
 <h2 id="commuting-limits">Commuting Limits</h2>
 <ul>
 <li>Suppose <span class="math inline">\(f_n \to f\)</span> (pointwise, not necessarily uniformly)</li>
@@ -2779,6 +2824,7 @@ width: 30%;
 <div class="theorem" title="Extreme Value Theorem">
 <p>A continuous function on a compact space attains its extrema.</p>
 </div>
+<h3 id="lipschitz-continuity">Lipschitz Continuity</h3>
 <h2 id="differentiability">Differentiability</h2>
 <p><span class="math display">\[\begin{align*} f&#39;(p) \mathrel{\vcenter{:}}=\frac{\partial f}{\partial x}(p) = \lim_{x\to p} \frac{f(x) - f(p)}{x-p} \end{align*}\]</span></p>
 <ul>
@@ -2943,28 +2989,6 @@ width: 30%;
 <li>Unless <span class="math inline">\(f\)</span> converges at one or more points.</li>
 </ul></li>
 </ul>
-<h2 id="sequences-and-metric-spaces">Sequences and Metric Spaces</h2>
-<div class="theorem" title="Bolzano-Weierstrass">
-<p>Every bounded sequence has a convergent subsequence.</p>
-</div>
-<div class="theorem" title="Heine-Borel">
-<p>In <span class="math inline">\({\mathbb{R}}^n, X\)</span> is compact <span class="math inline">\(\iff X\)</span> is closed and bounded.</p>
-</div>
-<div class="remark">
-<p>Necessity of <span class="math inline">\({\mathbb{R}}^n\)</span>: <span class="math inline">\(X = ({\mathbb{Z}}, d(x,y) = 1)\)</span> is closed, complete, bounded, but not compact since <span class="math inline">\(\left\{{1,2,\cdots}\right\}\)</span> has no convergent subsequence</p>
-</div>
-<div class="proposition" title="Converse of Heine-Borel">
-<p>Converse holds iff bounded is replaced with totally bounded</p>
-</div>
-<div class="definition" title="Sequential Compactness">
-<p>A topological space <span class="math inline">\(X\)</span> is <strong>sequentially compact</strong> iff every sequence <span class="math inline">\(\left\{{x_n}\right\}\)</span> has a subsequence converging to a point in <span class="math inline">\(X\)</span>.</p>
-</div>
-<div class="proposition" title="Compactness and sequential compactness">
-<p>If <span class="math inline">\(X\)</span> is a metric space, <span class="math inline">\(X\)</span> is compact iff <span class="math inline">\(X\)</span> is sequentially compact.</p>
-</div>
-<div class="remark">
-<p>Note that in general, neither form of compactness implies the other.</p>
-</div>
 <div class="proposition" title="All subsequences of a convergent sequence share a limit">
 <p><span class="math inline">\(\left\{{x_i}\right\} \to p \implies\)</span> every subsequence also converges to <span class="math inline">\(p\)</span>.</p>
 </div>
@@ -3022,11 +3046,30 @@ width: 30%;
 <div class="proposition" title="?">
 <p>If <span class="math inline">\(X\)</span> is compact, then <span class="math inline">\(Y \subset X \implies Y\)</span> is compact <span class="math inline">\(\iff\)</span> <span class="math inline">\(Y\)</span> closed.</p>
 </div>
-<h2 id="limits-1">Limits</h2>
-<h2 id="continuity-1">Continuity</h2>
-<h3 id="lipschitz-continuity">Lipschitz Continuity</h3>
-<h2 id="integrability-1">Integrability</h2>
-<h1 id="topology-1">Topology</h1>
+<div class="definition" title="Sequential Compactness">
+<p>A topological space <span class="math inline">\(X\)</span> is <strong>sequentially compact</strong> iff every sequence <span class="math inline">\(\left\{{x_n}\right\}\)</span> has a subsequence converging to a point in <span class="math inline">\(X\)</span>.</p>
+</div>
+<div class="proposition" title="Compactness and sequential compactness">
+<p>If <span class="math inline">\(X\)</span> is a metric space, <span class="math inline">\(X\)</span> is compact iff <span class="math inline">\(X\)</span> is sequentially compact.</p>
+</div>
+<div class="remark">
+<p>Note that in general, neither form of compactness implies the other.</p>
+</div>
+<h2 id="counterexamples">Counterexamples</h2>
+<div class="proposition" title="?">
+<p>There are functions differentiable only at a single point. Example: <span class="math display">\[\begin{align*}   f(x) =  \begin{cases} x^2 &amp; x\in QQ\\ -x^2 &amp; x\in {\mathbb{R}}\setminus{\mathbb{Q}} \end{cases} .\end{align*}\]</span></p>
+<p>This is discontinuous everywhere except for <span class="math inline">\(x=0\)</span>, and you can compute <span class="math display">\[\begin{align*}   \lim_{h\to 0} {f(x+h) - f(x) \over h}\Big|_{x=0} =  \lim_{h\to 0} \begin{cases} h &amp; x\in {\mathbb{Q}}\\ -h &amp; x\in {\mathbb{R}}\setminus{\mathbb{Q}} \end{cases} =0 .\end{align*}\]</span></p>
+</div>
+<div class="proposition" title="?">
+<p>The product of two non-differentiable functions can be differentiable: take <span class="math inline">\(f(x) = g(x) = {\left\lvert {x} \right\rvert}\)</span> which are not differentiable at <span class="math inline">\(x=0\)</span>, then <span class="math inline">\(fg(x) = {\left\lvert {x} \right\rvert}^2\)</span> is differentiable at <span class="math inline">\(x=0\)</span>.</p>
+</div>
+<div class="proposition" title="?">
+<p>A continuous function that is zero on a dense set <span class="math inline">\(A\subset X\)</span> is identically zero.</p>
+<div class="proof" title="?">
+<p>Since <span class="math inline">\(A\)</span> is dense, for any <span class="math inline">\(x\in X\setminus A\)</span> take a sequence <span class="math inline">\(\left\{{x_n}\right\}\)</span> in <span class="math inline">\(A\)</span> converging to <span class="math inline">\(x\)</span>. Then <span class="math inline">\(0 = f(x_n) \to f(x)\)</span> implies <span class="math inline">\(f(x) = 0\)</span>.</p>
+</div>
+</div>
+<h1 id="point-set-topology">Point-Set Topology</h1>
 <h2 id="definitions-1">Definitions</h2>
 <ul>
 <li><p>Epsilon-neighborhood</p>
@@ -3111,6 +3154,7 @@ width: 30%;
 <ul>
 <li><span class="math inline">\(f\)</span> continuous, <span class="math inline">\(X\)</span> compact and Hausdorff <span class="math inline">\(\implies f\)</span> is a homeomorphism.</li>
 </ul>
+<h1 id="probability">Probability</h1>
 <h2 id="definitions-2">Definitions</h2>
 <p><span class="math display">\[\begin{align*} L^2(X) &amp;= \left\{{f: X \to {\mathbb{R}}: \int_{\mathbb{R}}f(x) ~dx &lt; \infty}\right\}  &amp;&amp;\text{square integrable functions}\\ {\left\langle {g},~{f} \right\rangle}_{2} &amp;= \int_{\mathbb{R}}g(x)f(x) ~dx  &amp;&amp;\text{the } L^2 \text{ inner product}\\ {\left\lVert {f} \right\rVert}_2^2 &amp;= {\left\langle {f},~{f} \right\rangle} = \int_{\mathbb{R}}f(x)^2 ~dx &amp;&amp;\text{norm}\\ E[{\,\cdot\,}] &amp;= {\left\langle {{\,\cdot\,}},~{f} \right\rangle}  &amp;&amp;\text{expectation}\\ (\tau_{p}f)(x) &amp;= f(p- x)  &amp;&amp;\text{translation}\\ (f \ast g)(p) &amp;= \int_{\mathbb{R}}f(t)g(p-t)~dt = \int_{\mathbb{R}}f(t)(T_{p}g)(t) ~dt = {\left\langle {T_pg},~{f} \right\rangle}  &amp;&amp;\text{convolution}\\ \end{align*}\]</span></p>
 <div class="definition" title="Random Variable">
@@ -3281,6 +3325,12 @@ width: 30%;
 </tr>
 </tbody>
 </table>
+<h2 id="table-of-distributions">Table of Distributions</h2>
+<p>Table: let <span class="math inline">\(q = 1-p\)</span>.</p>
+<p><span class="math display">\[\begin{align*} \text{Distribution} &amp; f(x)                                                                            &amp;  &amp; \mu              &amp; \sigma^2            &amp; M(t) \\ \hline \\ B(n, p)             &amp; {n\choose x}p^x q^{n-x}                                                         &amp;  &amp; np               &amp; npq                 &amp; (pe^t + q)^n \\ P(\lambda)          &amp; \frac{\lambda^x}{x!}e^{-\lambda}                                                &amp;  &amp; \lambda          &amp; \lambda             &amp; e^{\lambda(e^t-1)} \\ G(p)                &amp; q^{x-1}p                                                                        &amp;  &amp; \frac{1}{p}      &amp; \frac{q}{p^2}       &amp; \frac{pe^t}{1-qe^t} \\ B^-(r, p)           &amp; {n-1 \choose r-1}p^rq^{n-r}                                                     &amp;  &amp; \frac{r}{p}      &amp; \frac{rq}{p^2}      &amp; \left(\frac{pe^t}{1-qe^t}\right)^r \\ U(a, b)             &amp; \indic{a\leq x\leq b}\frac 1 {b-a}                                          &amp;  &amp; \frac{1}{2}(a+b) &amp; \frac{1}{12}(b-a)^2 &amp; \frac{e^{tb} - e^{ta}}{t(b-a)} \\ Exp(\lambda)        &amp; \indic{0 \leq x}\lambda e^{-\lambda x}                                      &amp;  &amp; \frac 1 \lambda  &amp; \frac 1 {\lambda^2} &amp; \frac \lambda {\lambda - t} \\ \Gamma(s, \lambda)  &amp; \indic{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} &amp;  &amp; \frac s \lambda  &amp; \frac s {\lambda^2} &amp; \left( \frac{\lambda}{\lambda - t} \right)^s \\ N(\mu, \sigma^2)    &amp; \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}                    &amp;  &amp; \mu              &amp; \sigma^2            &amp; e^{\mu t + \frac{1}{2}\sigma^2 t^2} \end{align*}\]</span></p>
+<ul>
+<li>Why you need the Stieltjes Integral: let <span class="math inline">\(X \sim B(n, \frac 1 2), Y \sim U(0, 1),\)</span> and <span class="math display">\[\begin{align*}     Z =      \begin{cases}     X, &amp; $X = 1$ \\     Y, &amp; else     \end{cases}     \end{align*}\]</span> then <span class="math inline">\({\left\lvert {Z} \right\rvert} = {\left\lvert {{\mathbb{R}}} \right\rvert}\)</span> so <span class="math inline">\(Z\)</span> is not discrete, but <span class="math inline">\(P(X = 1) = \frac 1 2 \neq 0\)</span> so <span class="math inline">\(Z\)</span> is not continuous. Definition: <span class="math display">\[\begin{align*}       \int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)     .\end{align*}\]</span></li>
+</ul>
 <h2 id="common-problems">Common Problems</h2>
 <ul>
 <li>Birthday Paradox</li>
@@ -3312,18 +3362,13 @@ width: 30%;
 <li><span class="math inline">\(f_X = \mathcal{F}^{-1}(M_X(it))\)</span>, denoting the inverse Fourier transform,</li>
 </ul>
 </div>
-<h2 id="table-of-distribution-info">Table of Distribution Info</h2>
-<p>Table: let <span class="math inline">\(q = 1-p\)</span>.</p>
-<p><span class="math display">\[\begin{align*} \text{Distribution} &amp; f(x)                                                                            &amp;  &amp; \mu              &amp; \sigma^2            &amp; M(t) \\ \hline \\ B(n, p)             &amp; {n\choose x}p^x q^{n-x}                                                         &amp;  &amp; np               &amp; npq                 &amp; (pe^t + q)^n \\ P(\lambda)          &amp; \frac{\lambda^x}{x!}e^{-\lambda}                                                &amp;  &amp; \lambda          &amp; \lambda             &amp; e^{\lambda(e^t-1)} \\ G(p)                &amp; q^{x-1}p                                                                        &amp;  &amp; \frac{1}{p}      &amp; \frac{q}{p^2}       &amp; \frac{pe^t}{1-qe^t} \\ B^-(r, p)           &amp; {n-1 \choose r-1}p^rq^{n-r}                                                     &amp;  &amp; \frac{r}{p}      &amp; \frac{rq}{p^2}      &amp; \left(\frac{pe^t}{1-qe^t}\right)^r \\ U(a, b)             &amp; \indic{a\leq x\leq b}\frac 1 {b-a}                                          &amp;  &amp; \frac{1}{2}(a+b) &amp; \frac{1}{12}(b-a)^2 &amp; \frac{e^{tb} - e^{ta}}{t(b-a)} \\ Exp(\lambda)        &amp; \indic{0 \leq x}\lambda e^{-\lambda x}                                      &amp;  &amp; \frac 1 \lambda  &amp; \frac 1 {\lambda^2} &amp; \frac \lambda {\lambda - t} \\ \Gamma(s, \lambda)  &amp; \indic{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} &amp;  &amp; \frac s \lambda  &amp; \frac s {\lambda^2} &amp; \left( \frac{\lambda}{\lambda - t} \right)^s \\ N(\mu, \sigma^2)    &amp; \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}                    &amp;  &amp; \mu              &amp; \sigma^2            &amp; e^{\mu t + \frac{1}{2}\sigma^2 t^2} \end{align*}\]</span></p>
-<ul>
-<li>Why you need the Stieltjes Integral: let <span class="math inline">\(X \sim B(n, \frac 1 2), Y \sim U(0, 1),\)</span> and <span class="math display">\[\begin{align*}     Z =      \begin{cases}     X, &amp; $X = 1$ \\     Y, &amp; else     \end{cases}     \end{align*}\]</span> then <span class="math inline">\({\left\lvert {Z} \right\rvert} = {\left\lvert {{\mathbb{R}}} \right\rvert}\)</span> so <span class="math inline">\(Z\)</span> is not discrete, but <span class="math inline">\(P(X = 1) = \frac 1 2 \neq 0\)</span> so <span class="math inline">\(Z\)</span> is not continuous. Definition: <span class="math display">\[\begin{align*}       \int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)     .\end{align*}\]</span></li>
-</ul>
+<h1 id="combinatorics">Combinatorics</h1>
 <h2 id="notation-4">Notation</h2>
 <p><span class="math display">\[\begin{align*} S_n                                &amp; = \left\{{1,2,\ldots n}\right\}                                   &amp;  &amp; \text{the symmetric group} \\ {n\choose k}                       &amp; = \frac{n!}{k!(n-k)!}                                     &amp;  &amp; \text{binomial coefficient}\\ n^{\underline k}                   &amp; = n(n-1) \cdots (n-k+1) = k!{n\choose k}                  &amp;  &amp; \text{falling factorial}\\ n^{\overline k}                    &amp; = n(n+1) \cdots (n+k-1) = k!{n + n - 1 \choose n}         &amp;  &amp; \text{rising factorial}\\ {n \choose {m_1, m_2, \cdots m_k}} &amp; = \frac{n!}{\prod_{i=1}^k m_i!}                           &amp;  &amp; \text{multinomial coefficient} \end{align*}\]</span></p>
 <p>Note that the rising and falling factorials always have exactly <span class="math inline">\(k\)</span> terms.</p>
 <p>Multinomial: A set of <span class="math inline">\(n\)</span> items divided into <span class="math inline">\(k\)</span> distinct, disjoint subsets of sizes <span class="math inline">\(m_1 \cdots m_k\)</span>. Multinomial theorem: <span class="math display">\[\begin{align*} (x_1 + x_2 + \cdots x_k )^n  = \sum_{\substack{m_1, m_2, \cdots, m_k \\ ~~~\sum m_i = n}}  {n \choose m_1,m_2,\cdots, m_k} x_1^{m_1}x_2^{m_2}\cdots x_k^{m_k} \end{align*}\]</span> which contains <span class="math inline">\(n + r - 1 \choose r - 1\)</span> terms.</p>
 <p>Inclusion-Exclusion: <span class="math display">\[\begin{align*} {\left\lvert {\cup_{i=1}^n A_i} \right\rvert}  = \sum_i {\left\lvert {A} \right\rvert}_i - \sum_{i_1 &lt; i_2}^{n\choose 2^2} {\left\lvert {A_{i_1} \cap A_{i_2}} \right\rvert} +  \sum_{i_1 &lt; i_2 &lt; i_3}^{n \choose 2^3} {\left\lvert {A_{i_1} \cap A_{i_2} \cap A_{i_3}} \right\rvert} +  \cdots +(-1)^{n+1} {\left\lvert {\cap_{i=1}^n A_i} \right\rvert} \\  = \sum_{k=1}^n ~\sum_{i_1 &lt; \cdots &lt; i_k}  (-1)^{k+1} {\left\lvert {\cap_{j=1}^k A_{i_j}} \right\rvert} \end{align*}\]</span></p>
-<h1 id="the-important-numbers">The Important Numbers</h1>
+<h2 id="the-important-numbers">The Important Numbers</h2>
 <ul>
 <li>Binomial Coefficients
 <ul>
@@ -3363,7 +3408,7 @@ width: 30%;
 <li>Visualize with Young diagrams</li>
 </ul></li>
 </ul>
-<h2 id="common-problems-1">Common Problems</h2>
+<h3 id="common-problems-1">Common Problems</h3>
 <ul>
 <li>Stars and Bars
 <ul>
@@ -3372,7 +3417,7 @@ width: 30%;
 </ul></li>
 </ul>
 <p>Coupon Collectors Problem</p>
-<h2 id="the-twelvefold-way">The Twelvefold Way</h2>
+<h3 id="the-twelvefold-way">The Twelvefold Way</h3>
 <p>Consider a function <span class="math inline">\(f: N \to K\)</span> where <span class="math inline">\({\left\lvert {N} \right\rvert}=n, {\left\lvert {K} \right\rvert} = k\)</span>.</p>
 <p>A number of valid interpretations: - <span class="math inline">\(f\)</span> labels elements of <span class="math inline">\(N\)</span> by elements of <span class="math inline">\(K\)</span> - For each element of <span class="math inline">\(N\)</span>, <span class="math inline">\(f\)</span> chooses an element of <span class="math inline">\(K\)</span> - <span class="math inline">\(f\)</span> partitions <span class="math inline">\(N\)</span> into classes that are mapped to the same element of <span class="math inline">\(K\)</span> - Throw each of <span class="math inline">\(N\)</span> balls into some of <span class="math inline">\(K\)</span> boxes</p>
 <p>Dictionary: - No restrictions: - Assign <span class="math inline">\(n\)</span> labels, repetition allowed - Form a multiset of <span class="math inline">\(K\)</span> of size <span class="math inline">\(n\)</span> - Injectivity - Assign <span class="math inline">\(n\)</span> labels without repetition - Select <span class="math inline">\(n\)</span> distinct elements from <span class="math inline">\(K\)</span> - Number of <span class="math inline">\(n{\hbox{-}}\)</span>combinations of <span class="math inline">\(k\)</span> elements - No more than one ball per box - Surjectivity: - Use every label at least once - Every element of <span class="math inline">\(K\)</span> is selected at least once - “Indistinguishable” - Quotient by the action of <span class="math inline">\(S_n\)</span> or <span class="math inline">\(S_k\)</span> - <span class="math inline">\(n{\hbox{-}}\)</span>permutations = injective functions - <span class="math inline">\(n{\hbox{-}}\)</span>combinations = injective functions / <span class="math inline">\(S_n\)</span> - <span class="math inline">\(n{\hbox{-}}\)</span>multisets = all functions / <span class="math inline">\(S^n\)</span> - Partitions of <span class="math inline">\(N\)</span> into <span class="math inline">\(k\)</span> subsets = surjective functions / <span class="math inline">\(S_k\)</span> - Compositions of <span class="math inline">\(n\)</span> into <span class="math inline">\(k\)</span> parts = surjective functions / <span class="math inline">\(S_n\)</span></p>
@@ -3460,13 +3505,12 @@ width: 30%;
 <blockquote>
 <p>Not true in real case, take the everywhere differentiable but not <span class="math inline">\(C^1\)</span> function <span class="math display">\[\begin{align*} f(x) =  \begin{cases} -\frac{1}{2}x^2 &amp; x &lt; 0 \\  \frac{1}{2}x^2 &amp; x \geq 0 \end{cases} \end{align*}\]</span></p>
 </blockquote>
-<h1 id="my-common-mistakes">My Common Mistakes</h1>
+<h1 id="common-mistakes">Common Mistakes</h1>
 <p><span class="math display">\[\begin{align*} -x^{-2} &amp;\neq \int x^{-1} = \int \frac{1}{x} = \ln x \\  \frac{1}{x} &amp;\neq \int \ln x = x\ln x - x \\ \int x^{-k} = \frac{1}{-k+1}x^{-k+1} &amp;\neq \frac{1}{-(k+1)}x^{-(k+1)} \\ \text{ e.g. } \int x^{-2} = -x^{-1} &amp;\neq -\frac{1}{3}x^{-3} \lim_{n\to\infty} \frac{n}{n+1} = 1 \neq 0\\ \frac{\partial}{\partial x}a^x = \frac{\partial}{\partial x}e^{x\ln a} = e^{x\ln a} \ln a = a^x \ln a. \end{align*}\]</span></p>
 <p>Exponentials: when in doubt, write <span class="math inline">\(a^b = e^{b\ln a}\)</span></p>
 <p><span class="math display">\[\begin{align*} \frac{\partial}{\partial x} x^{f(x)} = ? \end{align*}\]</span></p>
 <p><span class="math display">\[\begin{align*} \sum x^k = \frac{1}{1-x} \neq \frac{1}{1+x} = \sum (-1)^k x^k \end{align*}\]</span></p>
-<h2 id="definitions-3">Definitions</h2>
-<p><span class="math display">\[\begin{align*} e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n \end{align*}\]</span></p>
+<h1 id="appendix-1">Appendix 1</h1>
 <h2 id="neat-tricks">Neat Tricks</h2>
 <ul>
 <li>Commuting differentials and integrals:</li>
@@ -3756,44 +3800,53 @@ width: 30%;
 </tbody>
 </table>
 <h2 id="hyperbolic-functions">Hyperbolic Functions</h2>
-<p><span class="math display">\[\begin{align*} \cosh(x)    &amp;= \frac{1}{2}(e^x + e^{-x}) \\ \sinh(x)    &amp;= \frac{1}{2}(e^x - e^{-x}) \\ \cos(iz)    &amp;= \cosh z \\ \cosh(iz)   &amp;= \cos z \\ \sin(iz)    &amp;= \sinh z \\ \sinh(iz)   &amp;= \sin z \\ \sinh^{-1}x &amp;= ? \quad = \ln(x + \sqrt{x^2+1}) \\ \cosh^{-1}x &amp;= ? \quad = \ln(x + \sqrt{x^2-1}) \\ \tanh^{-1}x &amp;= \frac{1}{2}\ln(\frac{1+x}{1-x}) \\ \end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*} \cosh(x)    &amp; = \frac{1}{2}(e^x + e^{-x}) \\ \sinh(x)    &amp; = \frac{1}{2}(e^x - e^{-x}) \\ \cos(iz)    &amp; = \cosh z \\ \cosh(iz)   &amp; = \cos z \\ \sin(iz)    &amp; = \sinh z \\ \sinh(iz)   &amp; = \sin z \\ \sinh^{-1}x &amp; = ? \quad = \ln(x + \sqrt{x^2+1}) \\ \cosh^{-1}x &amp; = ? \quad = \ln(x + \sqrt{x^2-1}) \\ \tanh^{-1}x &amp; = \frac{1}{2}\ln(\frac{1+x}{1-x}) \\ \end{align*}\]</span></p>
 <h2 id="integral-tables">Integral Tables</h2>
 <p><span class="math display">\[\begin{align*} \frac{\partial f}{\partial{x}}\Leftarrow &amp;  &amp; f                       &amp;  &amp; \Rightarrow\int f dx   \\ \hline \\ \frac{1}{2\sqrt{x}}                      &amp;  &amp; \sqrt{x}                &amp;  &amp; \frac{2}{3}x^{\frac{3}{2}} \\ nx^{n-1}                                 &amp;  &amp; x^n, n \neq -1          &amp;  &amp; \frac{1}{n+1}x^{n+1} \\ \frac{1}{x}                              &amp;  &amp; {\ln(x)}                &amp;  &amp; x\ln(x) - x \\ a^x\ln(a)                                &amp;  &amp; a^x                     &amp;  &amp; \frac{a^x}{\ln a} \\ \cos(x)                                  &amp;  &amp; \sin(x)                 &amp;  &amp; -\cos(x) \\ -\sin(x)                                 &amp;  &amp; \cos(x)                 &amp;  &amp; \sin(x) \\ 2\sec^2(x)\tan(x)                        &amp;  &amp; \sec^2(x)               &amp;  &amp; \tan(x) \\ 2\csc^2(x)\cot(x)                        &amp;  &amp; \csc^2(x)               &amp;  &amp; -\cot(x) \\ \sec^2(x)                                &amp;  &amp; \tan(x)                 &amp;  &amp; \ln{\left\lvert {\sec(x)} \right\rvert} \\ \sec(x)\tan(x)                           &amp;  &amp; \sec(x)                 &amp;  &amp; \ln{\left\lvert {\sec(x) + \tan(x)} \right\rvert} \\ -\csc(x)\cot(x)                          &amp;  &amp; \csc(x)                 &amp;  &amp; \ln{\left\lvert {\csc(x)-\cot(x)} \right\rvert} \\ \frac{1}{1+x^2}                          &amp;  &amp; {\tan^{-1}(x)}          &amp;  &amp; x\tan^{-1}x - \frac{1}{2}\ln(1+x^2) \\ \frac{1}{\sqrt{1-x^2}}                   &amp;  &amp; {\sin^{-1}(x)}          &amp;  &amp; x\sin^{-1}x+ \sqrt{1-x^2} \\ -\frac{1}{\sqrt{1-x^2}}                  &amp;  &amp; {\cos^{-1}(x)}          &amp;  &amp; x\cos^{-1}x -\sqrt{1-x^2} \\ \frac{1}{\sqrt{x^2+a}}                   &amp;  &amp; \ln{\left\lvert {x+\sqrt{x^2+a}} \right\rvert} &amp;  &amp; \cdot\\ -\csc^2(x)                               &amp;  &amp; \cot(x)                 &amp;  &amp; ? \\ ?                                        &amp;  &amp; \cos^2(x)               &amp;  &amp; ? \\ ?                                        &amp;  &amp; \sin^2(x)               &amp;  &amp; ? \\ ?                                        &amp;  &amp; xe^{ax}                 &amp;  &amp; \frac { 1 } { a ^ { 2 } } ( a x - 1 ) e ^ { a x } \\ ?                                        &amp;  &amp; e^{ax}\sin(bx)          &amp;  &amp; \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x - b \cos b x ) \\ ?                                        &amp;  &amp; e^{ax}\cos(bx)          &amp;  &amp; \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\ ?                                        &amp;  &amp; ?                       &amp;  &amp; ? \end{align*}\]</span></p>
-<h1 id="definitions-4">Definitions</h1>
+<h1 id="definitions-3">Definitions</h1>
+<p><span class="math display">\[\begin{align*}   e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n .\end{align*}\]</span></p>
 <h2 id="set-theory">Set Theory</h2>
 <ul>
-<li><p>Injectivity <span class="math display">\[\begin{align*}       f:X \to Y \text{ injective } \iff \forall x_1,x_2 \in X,\quad  f(x_1) = f(x_2) \implies x_1 = x_2 \\ \iff \forall x_1,x_2 \in X,\quad x_1 \neq x_2 \implies f(x_1) \neq f(x_2)       \end{align*}\]</span></p></li>
-<li><p>Surjectivity <span class="math display">\[\begin{align*}       f:X \to Y \text{ surjective } \iff \forall y\in Y,~ \exists x\in X : f(x) = y       \end{align*}\]</span></p></li>
-<li><p>Preimage <span class="math display">\[\begin{align*}       f:X \to Y, U \subseteq Y \implies f^{-1}(U) = \left\{{x \in X : f(x) \in U}\right\}       \end{align*}\]</span></p></li>
+<li><p>Injectivity <span class="math display">\[\begin{align*}       f:X \to Y \text{ injective } \iff \forall x_1,x_2 \in X,\quad  f(x_1) = f(x_2) \implies x_1 = x_2 \\ \iff \forall x_1,x_2 \in X,\quad x_1 \neq x_2 \implies f(x_1) \neq f(x_2)     .\end{align*}\]</span></p></li>
+<li><p>Surjectivity <span class="math display">\[\begin{align*}       f:X \to Y \text{ surjective } \iff \forall y\in Y,~ \exists x\in X : f(x) = y     .\end{align*}\]</span></p></li>
+<li><p>Preimage <span class="math display">\[\begin{align*}       f:X \to Y, U \subseteq Y \implies f^{-1}(U) = \left\{{x \in X : f(x) \in U}\right\}     .\end{align*}\]</span></p></li>
 </ul>
 <h2 id="calculus">Calculus</h2>
 <ul>
-<li><p>Limit <span class="math display">\[\begin{align*}       \lim_{x \to p} f(x) = L \iff \forall\varepsilon,~\exists\delta:\\       d(x, p) &lt; \delta\implies d(f(x), L) &lt; \varepsilon       \end{align*}\]</span></p></li>
+<li><p>Limit <span class="math display">\[\begin{align*}     \lim_{x \to p} f(x) = L \iff \forall\varepsilon,~\exists\delta:\\     d(x, p) &lt; \delta\implies d(f(x), L) &lt; \varepsilon     \end{align*}\]</span></p></li>
 <li><p>Continuity</p>
 <ul>
-<li><p>Epsilon-delta definition: <span class="math display">\[\begin{align*}       f:X \to Y \text{ continuous at } p \iff       \forall \varepsilon,~ \exists\delta:\\       d_X(x, p) &lt; \delta \implies d_Y(f(x), f(p)) &lt; \varepsilon       \end{align*}\]</span></p></li>
-<li><p>Limit/Sequential definition: <span class="math display">\[\begin{align*}       f:X \to Y \text{ continuous at } p \iff       \forall \left\{{x_i}\right\}_{i\in {\mathbb{N}}}\subseteq X: \left\{{x_i}\right\}\to p,\\       \lim_{i\to\infty}f(x_i) = f(\lim_{i\to\infty}x_i) = f(p)       \end{align*}\]</span></p></li>
-<li><p>Topological Definition: <span class="math display">\[\begin{align*}       f:X \to Y \text{ continuous } \iff U \text{ open in } \operatorname{im}(f) \subseteq Y \implies f^{-1}(U) \text{ open in } X         \end{align*}\]</span></p></li>
+<li><p>Epsilon-delta definition: <span class="math display">\[\begin{align*}     f:X \to Y \text{ continuous at } p \iff     \forall \varepsilon,~ \exists\delta:\\     d_X(x, p) &lt; \delta \implies d_Y(f(x), f(p)) &lt; \varepsilon     \end{align*}\]</span></p></li>
+<li><p>Limit/Sequential definition: <span class="math display">\[\begin{align*}     f:X \to Y \text{ continuous at } p \iff     \forall \left\{{x_i}\right\}_{i\in {\mathbb{N}}}\subseteq X: \left\{{x_i}\right\}\to p,\\     \lim_{i\to\infty}f(x_i) = f(\lim_{i\to\infty}x_i) = f(p)     \end{align*}\]</span></p></li>
+<li><p>Topological Definition: <span class="math display">\[\begin{align*}       f:X \to Y \text{ continuous } \iff U \text{ open in } \operatorname{im}(f) \subseteq Y \implies f^{-1}(U) \text{ open in } X       .\end{align*}\]</span></p></li>
 </ul></li>
 <li><p>Differentiability and the Derivative</p>
 <ul>
-<li><p>For single variable functions: <span class="math display">\[\begin{align*}       f:{\mathbb{R}}\to {\mathbb{R}}~\text{differentiable at } p \iff       \forall \left\{{x_i}\right\}_{i\in {\mathbb{N}}}\to p,\\       f&#39;(p) \mathrel{\vcenter{:}}=\lim_{i\to\infty} \frac{f(x_i) - f(p)}{x_i - p}&lt; \infty       \end{align*}\]</span></p></li>
-<li><p>For multivariable functions: <span class="math display">\[\begin{align*}       \mathbf{f}:{\mathbb{R}}^n \to {\mathbb{R}}^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:{\mathbb{R}}^n \to {\mathbb{R}}^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_ {{\mathbb{R}}^n}} { \| \mathbf { h } \|_ {{\mathbb{R}}^m} } = 0       \end{align*}\]</span></p></li>
+<li><p>For single variable functions: <span class="math display">\[\begin{align*}     f:{\mathbb{R}}\to {\mathbb{R}}~\text{differentiable at } p \iff     \forall \left\{{x_i}\right\}_{i\in {\mathbb{N}}}\to p,\\     f&#39;(p) \mathrel{\vcenter{:}}=\lim_{i\to\infty} \frac{f(x_i) - f(p)}{x_i - p}&lt; \infty     \end{align*}\]</span></p></li>
+<li><p>For multivariable functions: <span class="math display">\[\begin{align*}     \mathbf{f}:{\mathbb{R}}^n \to {\mathbb{R}}^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:{\mathbb{R}}^n \to {\mathbb{R}}^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_ {{\mathbb{R}}^n}} { \| \mathbf { h } \|_ {{\mathbb{R}}^m} } = 0     \end{align*}\]</span></p></li>
 </ul></li>
-<li><p>Gradient <span class="math display">\[\begin{align*}     \nabla f = [f_x, f_y, f_z]     \end{align*}\]</span></p></li>
+<li><p>Gradient <span class="math display">\[\begin{align*}       \nabla f = [f_x, f_y, f_z]     .\end{align*}\]</span></p></li>
 <li><p>Divergence</p></li>
 <li><p>Curl</p></li>
 <li><p>Taylor Series (at a point <span class="math inline">\(a\)</span>)</p>
 <ul>
-<li>Single Variable <span class="math inline">\({\mathbb{R}}\to {\mathbb{R}}\)</span> <span class="math display">\[\begin{align*}       T_a(x) = f ( a ) + \frac { f ^ { \prime } ( a ) } { 1 ! } ( x - a ) + \frac { f ^ { \prime \prime } ( a ) } { 2 ! } ( x - a ) ^ { 2 } + \frac { f ^ { \prime \prime \prime } ( a ) } { 3 ! } ( x - a ) ^ { 3 } + \cdots \\ \implies T_a(x) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }       \end{align*}\]</span></li>
-<li>Multivariable <span class="math inline">\({\mathbb{R}}^n \to {\mathbb{R}}\)</span>: <span class="math display">\[\begin{align*}       T_a(\mathbf x) = f(\mathbf a) + (\mathbf x - \mathbf a)^T\nabla f(\mathbf a)       \end{align*}\]</span></li>
-<li>Multivariable <span class="math inline">\({\mathbb{R}}^n \to {\mathbb{R}}^m\)</span>: <span class="math display">\[\begin{align*}       T_{(a,b)} ( x , y ) = f ( a , b ) + ( x - a ) f _ { x } ( a , b ) + ( y - b ) f _ { y } ( a , b ) + \\ \frac { 1 } { 2 ! } \left( ( x - a ) ^ { 2 } f _ { x x } ( a , b ) + 2 ( x - a ) ( y - b ) f _ { y y  } ( a , b ) + ( y - b ) ^ { 2 } f _ { y x } ( a , b ) \right) + \cdots       \end{align*}\]</span> <span class="math display">\[\begin{align*}       T_a ( \mathbf { x } ) = f ( \mathbf { a } ) + ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{J} ( \mathbf { a } ) + \frac { 1 } { 2 ! } ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{H} ( \mathbf { a } ) ( \mathbf { x } - \mathbf { a } ) + \cdots \\       \implies T_a ( \mathbf { x } ) = \sum _ { | \alpha | \geq 0 } \frac { ( \mathbf { x } - \mathbf { a } ) ^ { \alpha } } { \alpha ! } \left( \partial ^ { \alpha } f \right) ( \mathbf { a } )       \end{align*}\]</span></li>
-</ul></li>
+<li>Single Variable <span class="math inline">\({\mathbb{R}}\to {\mathbb{R}}\)</span></li>
+</ul>
+<p><span class="math display">\[\begin{align*}     T_a(x) = f ( a ) + \frac { f ^ { \prime } ( a ) } { 1 ! } ( x - a ) + \frac { f ^ { \prime \prime } ( a ) } { 2 ! } ( x - a ) ^ { 2 } + \frac { f ^ { \prime \prime \prime } ( a ) } { 3 ! } ( x - a ) ^ { 3 } + \cdots \\ \implies T_a(x) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n } .\end{align*}\]</span></p>
+<ul>
+<li>Multivariable <span class="math inline">\({\mathbb{R}}^n \to {\mathbb{R}}\)</span>:</li>
+</ul>
+<p><span class="math display">\[\begin{align*}     T_a(\mathbf x) = f(\mathbf a) + (\mathbf x - \mathbf a)^T\nabla f(\mathbf a) .\end{align*}\]</span></p>
+<ul>
+<li>Multivariable <span class="math inline">\({\mathbb{R}}^n \to {\mathbb{R}}^m\)</span>:</li>
+</ul>
+<p><span class="math display">\[\begin{align*}     T_{(a,b)} ( x , y ) = f ( a , b ) + ( x - a ) f _ { x } ( a , b ) + ( y - b ) f _ { y } ( a , b ) + \\ \frac { 1 } { 2 ! } \left( ( x - a ) ^ { 2 } f _ { x x } ( a , b ) + 2 ( x - a ) ( y - b ) f _ { y y  } ( a , b ) + ( y - b ) ^ { 2 } f _ { y x } ( a , b ) \right) + \cdots .\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}   T_a ( \mathbf { x } ) = f ( \mathbf { a } ) + ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{J} ( \mathbf { a } ) + \frac { 1 } { 2 ! } ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{H} ( \mathbf { a } ) ( \mathbf { x } - \mathbf { a } ) + \cdots \\   \implies T_a ( \mathbf { x } ) = \sum _ { | \alpha | \geq 0 } \frac { ( \mathbf { x } - \mathbf { a } ) ^ { \alpha } } { \alpha ! } \left( \partial ^ { \alpha } f \right) ( \mathbf { a } )   \end{align*}\]</span></p></li>
 </ul>
 <h2 id="analysis">Analysis</h2>
 <ul>
 <li><p>Archimedean Property: <span class="math inline">\(x \in {\mathbb{R}}\implies \exists n\in {\mathbb{N}}:~ x &lt; n {\text{ and }}x &gt; 0 \implies \exists n:~ \frac{1}{n} &lt; x\)</span></p></li>
-<li><p>Upper Bound (for S <span class="math inline">\(\subseteq {\mathbb{R}}\)</span>) <span class="math display">\[\begin{align*}       \alpha\text{ is an upper bound for } S \iff s \in S \implies s &lt; \alpha       \end{align*}\]</span></p></li>
+<li><p>Upper Bound (for S <span class="math inline">\(\subseteq {\mathbb{R}}\)</span>) <span class="math display">\[\begin{align*}       \alpha\text{ is an upper bound for } S \iff s \in S \implies s &lt; \alpha     .\end{align*}\]</span></p></li>
 <li><p>Triangle Inequality</p>
 <ul>
 <li><span class="math inline">\({ | a + b | \leq | a | + | b | }\)</span></li>
@@ -3803,8 +3856,8 @@ width: 30%;
 <ul>
 <li><span class="math inline">\({{\left\lvert {| a | - | b |} \right\rvert} \leq | a - b | }\)</span></li>
 </ul></li>
-<li><p>Least Upper Bound / Supremum (for S <span class="math inline">\(\subseteq {\mathbb{R}}\)</span>) <span class="math display">\[\begin{align*}       \alpha\text{ is a LUB for } S \iff s \in S \implies s &lt; \alpha {\text{ and }}\forall t : (s \in S \implies s &lt; t),~ \alpha &lt; t       \end{align*}\]</span></p></li>
-<li><p>Greatest Lower Bound / Infimum (for S <span class="math inline">\(\subseteq {\mathbb{R}}\)</span>) <span class="math display">\[\begin{align*}       \alpha\text{ is a GLB for } S \iff s \in S \implies \alpha &lt; s {\text{ and }}\forall t : (s \in S \implies t &lt; s),~ t &lt; \alpha       \end{align*}\]</span></p></li>
+<li><p>Least Upper Bound / Supremum (for S <span class="math inline">\(\subseteq {\mathbb{R}}\)</span>) <span class="math display">\[\begin{align*}       \alpha\text{ is a LUB for } S \iff s \in S \implies s &lt; \alpha {\text{ and }}\forall t : (s \in S \implies s &lt; t),~ \alpha &lt; t     .\end{align*}\]</span></p></li>
+<li><p>Greatest Lower Bound / Infimum (for S <span class="math inline">\(\subseteq {\mathbb{R}}\)</span>) <span class="math display">\[\begin{align*}       \alpha\text{ is a GLB for } S \iff s \in S \implies \alpha &lt; s {\text{ and }}\forall t : (s \in S \implies t &lt; s),~ t &lt; \alpha     .\end{align*}\]</span></p></li>
 <li><p>Open Set</p></li>
 <li><p>Closed Set</p></li>
 <li><p>Limit Point</p></li>
@@ -3812,15 +3865,15 @@ width: 30%;
 <li><p>Closure of a Set</p></li>
 <li><p>Boundary</p></li>
 <li><p>Metric</p></li>
-<li><p>Cauchy Sequence: <span class="math display">\[\begin{align*}\left\{{a_i}\right\} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in{\mathbb{N}}: \quad m,n &gt; N \implies d(x_m, x_n) &lt; \varepsilon \end{align*}\]</span></p></li>
+<li><p>Cauchy Sequence: <span class="math display">\[\begin{align*}       \left\{{a_i}\right\} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in{\mathbb{N}}: \quad m,n &gt; N \implies d(x_m, x_n) &lt; \varepsilon     .\end{align*}\]</span></p></li>
 <li><p>Connected: <span class="math inline">\(S\)</span> is connected <span class="math inline">\(\iff\)</span> <span class="math inline">\(\not\exists U,V\subset S\)</span> nonempty, open, disjoint such that <span class="math inline">\(S = U \cup V\)</span></p></li>
-<li><p>Compact: Every open cover has a finite subcover: <span class="math display">\[\begin{align*}     X \subseteq \cup_{j\in J} V_j \implies \exists I \subseteq J: {\left\lvert {I} \right\rvert} &lt; \infty {\text{ and }}X\subseteq \cup_{i\in I} V_i     \end{align*}\]</span></p></li>
-<li><p>Sequential Compactness Every sequence has a convergent subsequence: <span class="math display">\[\begin{align*}     \left\{{x_i}\right\}_{i\in I}\subseteq X \implies \exists J\subseteq I,~ \exists p\in X: \quad \left\{{x_j}\right\}_{j\in J} \to p     \end{align*}\]</span></p></li>
-<li><p>Bounded (sequences, subsets, metric spaces) <span class="math display">\[\begin{align*}     U \subseteq X \text{ is bounded } \iff \exists x\in X, \exists M \in {\mathbb{R}}:\quad u\in U \implies d(x, u) &lt; M     \end{align*}\]</span></p></li>
-<li><p>Totally Bounded asdsa#todo</p></li>
+<li><p>Compact: Every open cover has a finite subcover: <span class="math display">\[\begin{align*}       X \subseteq \cup_{j\in J} V_j \implies \exists I \subseteq J: {\left\lvert {I} \right\rvert} &lt; \infty {\text{ and }}X\subseteq \cup_{i\in I} V_i     .\end{align*}\]</span></p></li>
+<li><p>Sequential Compactness Every sequence has a convergent subsequence: <span class="math display">\[\begin{align*}       \left\{{x_i}\right\}_{i\in I}\subseteq X \implies \exists J\subseteq I,~ \exists p\in X: \quad \left\{{x_j}\right\}_{j\in J} \to p     .\end{align*}\]</span></p></li>
+<li><p>Bounded (sequences, subsets, metric spaces) <span class="math display">\[\begin{align*}       U \subseteq X \text{ is bounded } \iff \exists x\in X, \exists M \in {\mathbb{R}}:\quad u\in U \implies d(x, u) &lt; M     .\end{align*}\]</span></p></li>
+<li><p>Totally Bounded </p></li>
 <li><p>Pointwise Convergence <span class="math display">\[\begin{align*}     \text{For}~\{f_n: X \to Y\}_{n\in{\mathbb{N}}},\\ f_n \to f \iff     \forall \varepsilon &gt; 0,~\forall x\in X,~ \exists N(x, \varepsilon)\in{\mathbb{N}}:     \quad n &gt; N \implies d_Y\left(f_n(x),f(x)\right) &lt; \varepsilon     \end{align*}\]</span></p></li>
 <li><p>Uniform Convergence <span class="math display">\[\begin{align*}     \text{For}~\{f_n: X \to Y\}_{n\in{\mathbb{N}}}, \\     f_n \rightrightarrows f \iff \forall \varepsilon &gt; 0,~ \exists N(\varepsilon)\in{\mathbb{N}}:     \quad \forall x\in X,~ n &gt; N \implies d_Y(f_n(x), f(x)) &lt; \varepsilon     \end{align*}\]</span></p></li>
-<li><p>Generalized Mean Value Theorem <span class="math display">\[\begin{align*}     (f ( b ) - f ( a ) ) g&#39; ( c ) = (g ( b ) - g ( a )) f&#39; ( c )     \end{align*}\]</span></p></li>
+<li><p>Generalized Mean Value Theorem <span class="math display">\[\begin{align*}       (f ( b ) - f ( a ) ) g&#39; ( c ) = (g ( b ) - g ( a )) f&#39; ( c )     .\end{align*}\]</span></p></li>
 </ul>
 <h2 id="linear-algebra-1">Linear Algebra</h2>
 <p>Convention: always over a field <span class="math inline">\(k\)</span>, and <span class="math inline">\(T: k^n \to k^m\)</span> is a generic linear map (or <span class="math inline">\(m\times n\)</span> matrix).</p>
@@ -3832,16 +3885,13 @@ width: 30%;
 <li><p>Rank</p>
 <p>The number of nonzero rows in RREF</p></li>
 <li><p>Elementary Matrix</p></li>
-<li></li>
 <li><p>Row Equivalent</p></li>
-<li></li>
 <li><p>Pivot</p></li>
-<li></li>
 <li><p>Cofactor</p></li>
 </ul>
-<p><span class="math display">\[\begin{align*} \mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j} \end{align*}\]</span> where <span class="math inline">\(M_{i, j}\)</span> is the minor obtained by deleting the <span class="math inline">\(i{\hbox{-}}\)</span>th row and <span class="math inline">\(j{\hbox{-}}\)</span>th column of <span class="math inline">\(A\)</span>.</p>
+<p><span class="math display">\[\begin{align*}   \mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j} \end{align*}\]</span> where <span class="math inline">\(M_{i, j}\)</span> is the minor obtained by deleting the <span class="math inline">\(i{\hbox{-}}\)</span>th row and <span class="math inline">\(j{\hbox{-}}\)</span>th column of <span class="math inline">\(A\)</span>.</p>
 <ul>
-<li><p>Adjugate <span class="math display">\[\begin{align*}     \mathrm{adjugate}(A) = \mathrm{cofactor}(A)^T = (-1)^{i+j} M_{j, i}     \end{align*}\]</span></p></li>
+<li><p>Adjugate <span class="math display">\[\begin{align*}       \mathrm{adjugate}(A) = \mathrm{cofactor}(A)^T = (-1)^{i+j} M_{j, i}     .\end{align*}\]</span></p></li>
 <li><p>Vector Space Axioms</p>
 <ul>
 <li>Let <span class="math inline">\(k\)</span> be a field and <span class="math inline">\(\mathbf{u},\mathbf{v},\mathbf{w} \in V\)</span> and <span class="math inline">\(r,s,t\in k\)</span>. A vector space <span class="math inline">\(V\)</span> over <span class="math inline">\(k\)</span> satisfies:
@@ -3860,16 +3910,16 @@ width: 30%;
 </ul></li>
 <li><p>Subspace</p>
 <ul>
-<li><p>A nonempty subset <span class="math inline">\(W \subseteq V\)</span> that is a vector space and satisfies <span class="math display">\[\begin{align*}     \left\{{ \sum_i c_i \mathbf{x}_i \mathrel{\Big|}c_i \in {\mathbb{F}},~ x_i \in W}\right\} \subseteq W     \end{align*}\]</span></p></li>
+<li><p>A nonempty subset <span class="math inline">\(W \subseteq V\)</span> that is a vector space and satisfies <span class="math display">\[\begin{align*}       \left\{{ \sum_i c_i \mathbf{x}_i \mathrel{\Big|}c_i \in {\mathbb{F}},~ x_i \in W}\right\} \subseteq W     .\end{align*}\]</span></p></li>
 <li><p>Quick counter-check: find <span class="math inline">\(\mathbf{x}, \mathbf{y}\)</span> such that <span class="math inline">\(a\mathbf{x} + b\mathbf{y} \not\in W\)</span></p></li>
 </ul></li>
-<li><p>Span Given a set of <span class="math inline">\(n\)</span> vectors <span class="math inline">\(S = \left\{{\mathbf{x}_i}\right\}_{i=1}^n\)</span>, defined as <span class="math display">\[\begin{align*}     \mathrm{Span}(S) = \left\{{\sum_{i=1}^nc_i \mathbf{x}_i \mathrel{\Big|}c_i \in k}\right\}     \end{align*}\]</span></p></li>
+<li><p>Span Given a set of <span class="math inline">\(n\)</span> vectors <span class="math inline">\(S = \left\{{\mathbf{x}_i}\right\}_{i=1}^n\)</span>, defined as <span class="math display">\[\begin{align*}       \mathrm{Span}(S) = \left\{{\sum_{i=1}^nc_i \mathbf{x}_i \mathrel{\Big|}c_i \in k}\right\}     .\end{align*}\]</span></p></li>
 <li><p>Row Space</p>
 <ul>
-<li>The range of the linear map <span class="math inline">\(T\)</span>.</li>
-<li>Given <span class="math inline">\(T = \begin{bmatrix} \mathbf{x}_1 \rightarrow \\ \mathbf{x}_2 \rightarrow \\ \vdots \\ \mathbf{x}_m \rightarrow \end{bmatrix}\)</span>, defined as <span class="math display">\[\begin{align*}     \mathrm{Span}(\left\{{\mathbf{x}_i}\right\}_{i=1}^m) \subseteq k^m     \end{align*}\]</span></li>
-<li><span class="math inline">\(\mathrm{rowspace}(T)^\perp= \mathrm{null}(T)\)</span></li>
-<li><span class="math inline">\({\left\lvert {\mathrm{rowspace}(T)} \right\rvert} = \mathrm{Rank}(T)\)</span></li>
+<li><p>The range of the linear map <span class="math inline">\(T\)</span>.</p></li>
+<li><p>Given <span class="math inline">\(T = \begin{bmatrix} \mathbf{x}_1 \rightarrow \\ \mathbf{x}_2 \rightarrow \\ \vdots \\ \mathbf{x}_m \rightarrow \end{bmatrix}\)</span>, defined as <span class="math display">\[\begin{align*}       \mathrm{Span}(\left\{{\mathbf{x}_i}\right\}_{i=1}^m) \subseteq k^m     .\end{align*}\]</span></p></li>
+<li><p><span class="math inline">\(\mathrm{rowspace}(T)^\perp= \mathrm{null}(T)\)</span></p></li>
+<li><p><span class="math inline">\({\left\lvert {\mathrm{rowspace}(T)} \right\rvert} = \mathrm{Rank}(T)\)</span></p></li>
 </ul></li>
 <li><p>Column Space</p></li>
 <li><p>Null Space</p>
@@ -3897,7 +3947,7 @@ width: 30%;
 <li><p>Linear independence</p>
 <ul>
 <li>A set of vectors <span class="math inline">\(\left\{{\mathbf{x}_i}\right\}_{i=1}^n\)</span> is linearly independent <span class="math inline">\(\iff \sum_{i=1}^n c_i \mathbf{x}_i = 0 \implies c_i = 0\)</span> for all <span class="math inline">\(i\)</span>.</li>
-<li>Can be detected by considering the matrix <span class="math display">\[\begin{align*}       T = [\mathbf{x}_1, \mathbf{x}_2, \cdots, \mathbf{x}_n]^T       \end{align*}\]</span> (linearly independent iff <span class="math inline">\(T\)</span> is singular)</li>
+<li>Can be detected by considering the matrix <span class="math display">\[\begin{align*}         T = [\mathbf{x}_1, \mathbf{x}_2, \cdots, \mathbf{x}_n]^T     .\end{align*}\]</span> (linearly independent iff <span class="math inline">\(T\)</span> is singular)</li>
 </ul></li>
 <li><p>Rank</p>
 <ul>
@@ -3931,14 +3981,14 @@ width: 30%;
 <li><p>Projection</p>
 <ul>
 <li>The projection of a vector <span class="math inline">\(\mathbf{v}\)</span> onto <span class="math inline">\(\mathbf{u}\)</span> is given by <span class="math inline">\(P_{\mathbf{u}}(\mathbf{v}) = \left&lt; \mathbf{u}, \mathbf{v} \right&gt; \widehat{u}\)</span></li>
-<li>The projection of a vector <span class="math inline">\(\mathbf{v}\)</span> onto a space <span class="math inline">\(U = \mathrm{Span}(\left\{{\mathbf{u}_i}\right\})\)</span> is given by <span class="math display">\[\begin{align*}       P_U(\mathbf{v}) = \sum_i P_{\mathbf{u}_i}(\mathbf{v}) = \sum_i \left&lt; \mathbf{u}_i, \mathbf{v}\right&gt; \widehat{u}_i       \end{align*}\]</span></li>
+<li>The projection of a vector <span class="math inline">\(\mathbf{v}\)</span> onto a space <span class="math inline">\(U = \mathrm{Span}(\left\{{\mathbf{u}_i}\right\})\)</span> is given by <span class="math display">\[\begin{align*}         P_U(\mathbf{v}) = \sum_i P_{\mathbf{u}_i}(\mathbf{v}) = \sum_i \left&lt; \mathbf{u}_i, \mathbf{v}\right&gt; \widehat{u}_i     .\end{align*}\]</span></li>
 </ul></li>
 <li><p>Orthogonal Complement</p>
 <ul>
 <li>Given a subspace <span class="math inline">\(U \subseteq V\)</span>, defined as <span class="math inline">\(U^\perp= \left\{{\mathbf{v} \in V \mathrel{\Big|}\forall \mathbf{u} \in U, \left&lt;\mathbf{u}, \mathbf{v}\right&gt; = 0}\right\}\)</span></li>
 </ul></li>
-<li><p>Determinant <span class="math display">\[\begin{align*}       \det(A) = \sum_{\tau \in S^n}\prod_{i=1}^n \sigma(\tau) a_{i, \tau(i)}       \end{align*}\]</span></p></li>
-<li><p>Trace <span class="math display">\[\begin{align*}\mathrm{Tr}(A) = \sum_{i=1}^n A_{ii}\end{align*}\]</span></p></li>
+<li><p>Determinant <span class="math display">\[\begin{align*}       \det(A) = \sum_{\tau \in S^n}\prod_{i=1}^n \sigma(\tau) a_{i, \tau(i)}     .\end{align*}\]</span></p></li>
+<li><p>Trace <span class="math display">\[\begin{align*}       \mathrm{Tr}(A) = \sum_{i=1}^n A_{ii}     .\end{align*}\]</span></p></li>
 <li><p>Characteristic Polynomial</p>
 <ul>
 <li><span class="math inline">\(p_A(x) = \det(xI - A)\)</span></li>
@@ -3962,7 +4012,7 @@ width: 30%;
 <li>For vectors: <span class="math inline">\(\mathbf{x} ^\perp\mathbf{y} \iff {\left\langle {\mathbf{x}},~{\mathbf{y}} \right\rangle} = 0\)</span></li>
 <li>For matrices: <span class="math inline">\(A\)</span> is orthogonal <span class="math inline">\(\iff A^{-1} = A^T\)</span></li>
 </ul></li>
-<li><p>Orthogonal Projection of <span class="math inline">\(\mathbf{x}\)</span> onto <span class="math inline">\(\mathbf{y}\)</span>: <span class="math display">\[\begin{align*}P(\mathbf{x}, \mathbf{y}) = {\left\langle {\mathbf{x}},~{\mathbf{y}} \right\rangle} \widehat{y} = {\left\langle {\mathbf{x}},~{\mathbf{y}} \right\rangle} \frac{\mathbf{y}}{{\left\lVert {\mathbf{y}} \right\rVert}^2}\end{align*}\]</span></p>
+<li><p>Orthogonal Projection of <span class="math inline">\(\mathbf{x}\)</span> onto <span class="math inline">\(\mathbf{y}\)</span>: <span class="math display">\[\begin{align*}       P(\mathbf{x}, \mathbf{y}) = {\left\langle {\mathbf{x}},~{\mathbf{y}} \right\rangle} \widehat{y} = {\left\langle {\mathbf{x}},~{\mathbf{y}} \right\rangle} \frac{\mathbf{y}}{{\left\lVert {\mathbf{y}} \right\rVert}^2}     .\end{align*}\]</span></p>
 <ul>
 <li>Note <span class="math inline">\({\left\lVert {P(\mathbf{x}, \mathbf{y})} \right\rVert} = {\left\lVert {\mathbf{x}} \right\rVert}\cos\theta_{x,y}\)</span></li>
 </ul></li>
@@ -3970,12 +4020,12 @@ width: 30%;
 </ul>
 <h2 id="differential-equations">Differential Equations</h2>
 <ul>
-<li><p>Homogeneous <span class="math display">\[\begin{align*}       f(x, y) \text{ homogeneous of degree } n \iff \exists n\in{\mathbb{N}}: f(tx, ty) = t^nf(x, y).       \end{align*}\]</span></p></li>
-<li><p>Separable <span class="math display">\[\begin{align*}       p(y)\frac{dy}{dx} - q(x) = 0       \end{align*}\]</span></p></li>
+<li><p>Homogeneous <span class="math display">\[\begin{align*}       f(x, y) \text{ homogeneous of degree } n \iff \exists n\in{\mathbb{N}}: f(tx, ty) = t^nf(x, y).     .\end{align*}\]</span></p></li>
+<li><p>Separable <span class="math display">\[\begin{align*}       p(y)\frac{dy}{dx} - q(x) = 0     .\end{align*}\]</span></p></li>
 <li><p>Wronskian: <span class="math display">\[\begin{align*}     W \left[ f _ { 1 } , f _ { 2 } , \ldots , f _ { k } \right] ( x ) = \left| \begin{array} { c c c c } { f _ { 1 } ( x ) } &amp; { f _ { 2 } ( x ) } &amp; { \dots } &amp; { f _ { k } ( x ) } \\ { f _ { 1 } ^ { \prime } ( x ) } &amp; { f _ { 2 } ^ { \prime } ( x ) } &amp; { \dots } &amp; { f _ { k } ^ { \prime } ( x ) } \\ { \vdots } &amp; { \vdots } &amp; { } &amp; { \vdots } \\ { f _ { 1 } ^ { ( k - 1 ) } ( x ) } &amp; { f _ { 2 } ^ { ( k - 1 ) } ( x ) } &amp; { \dots } &amp; { f _ { k } ^ { ( k - 1 ) } ( x ) } \end{array} \right|     \end{align*}\]</span></p></li>
-<li><p>Laplace Transform: <span class="math display">\[\begin{align*}     L_f(s) = \int_0^\infty e^{-st} f(t) ~dt     \end{align*}\]</span></p></li>
+<li><p>Laplace Transform: <span class="math display">\[\begin{align*}       L_f(s) = \int_0^\infty e^{-st} f(t) ~dt     .\end{align*}\]</span></p></li>
 </ul>
-<h2 id="algebra">Algebra</h2>
+<h2 id="algebra-1">Algebra</h2>
 <ul>
 <li>Ring</li>
 <li>Group</li>
@@ -3996,9 +4046,9 @@ width: 30%;
 <li>Holomorphic</li>
 <li>The Complex Derivative</li>
 <li>Meromorphic</li>
-<li>The Gamma Function: Satisfies <span class="math inline">\(\Gamma(p+1) + p\Gamma(p)\)</span> and <span class="math inline">\(\Gamma(1) = 1\)</span>, defined as <span class="math display">\[\begin{align*}     \Gamma ( p ) = \int _ { 0 } ^ { \infty } t ^ { p - 1 } e ^ { - t } d t , \quad p &gt; 0     \end{align*}\]</span></li>
+<li>The Gamma Function: Satisfies <span class="math inline">\(\Gamma(p+1) + p\Gamma(p)\)</span> and <span class="math inline">\(\Gamma(1) = 1\)</span>, defined as <span class="math display">\[\begin{align*}       \Gamma ( p ) = \int _ { 0 } ^ { \infty } t ^ { p - 1 } e ^ { - t } d t , \quad p &gt; 0     .\end{align*}\]</span></li>
 </ul>
-<h2 id="algebra-1">Algebra</h2>
+<h2 id="algebra-2">Algebra</h2>
 <ul>
 <li><p>Looking at real roots:</p>
 <ul>

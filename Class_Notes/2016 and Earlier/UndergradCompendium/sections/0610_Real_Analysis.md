@@ -77,6 +77,10 @@ f,g\text{ differentiable on } [a,b] \implies \exists c\in[a,b] :
 ## Important Examples
 
 
+## Limits
+
+\todo[inline]{todo}
+
 ## Commuting Limits
 
 
@@ -295,6 +299,8 @@ There are no functions that are continuous on $\QQ$ but discontinuous on $\RR-\Q
 A continuous function on a compact space attains its extrema.
 :::
 
+
+### Lipschitz Continuity
 
 ## Differentiability
 
@@ -567,35 +573,7 @@ f_n \rightrightarrows f \iff \sup_{x\in X} \abs{f_n(x) - f(x)} \to 0
 - $f_n' \rightrightarrows f' \notimplies f_n \rightrightarrows f$
 	- Unless $f$ converges at one or more points.
 
-## Sequences and Metric Spaces
 
-:::{.theorem title="Bolzano-Weierstrass"}
-Every bounded sequence has a convergent subsequence.
-:::
-
-:::{.theorem title="Heine-Borel"}
-In $\RR^n, X$ is compact $\iff X$ is closed and bounded.
-:::
-
-:::{.remark}
-Necessity of $\RR^n$: $X = (\ZZ, d(x,y) = 1)$ is closed, complete, bounded, but not compact since $\theset{1,2,\cdots}$ has no convergent subsequence
-:::
-
-:::{.proposition title="Converse of Heine-Borel"}
-Converse holds iff bounded is replaced with totally bounded
-:::
-
-:::{.definition title="Sequential Compactness"}
-A topological space $X$ is **sequentially compact** iff every sequence $\ts{x_n}$ has a subsequence converging to a point in $X$.
-:::
-
-:::{.proposition title="Compactness and sequential compactness"}
-If $X$ is a metric space, $X$ is compact iff $X$ is sequentially compact.
-:::
-
-:::{.remark}
-Note that in general, neither form of compactness implies the other.
-:::
 
 :::{.proposition title="All subsequences of a convergent sequence share a limit"}
 $\theset{x_i} \to p \implies$ every subsequence also converges to $p$.
@@ -699,10 +677,15 @@ Counterexample: $\QQ\subset \QQ$ is closed but $\QQ\subset\RR$ is not.
 If $X$ is compact, then $Y \subset X \implies Y$ is compact $\iff$ $Y$ closed.
 :::
 
-## Limits
+:::{.definition title="Sequential Compactness"}
+A topological space $X$ is **sequentially compact** iff every sequence $\ts{x_n}$ has a subsequence converging to a point in $X$.
+:::
 
-## Continuity
+:::{.proposition title="Compactness and sequential compactness"}
+If $X$ is a metric space, $X$ is compact iff $X$ is sequentially compact.
+:::
 
-### Lipschitz Continuity
+:::{.remark}
+Note that in general, neither form of compactness implies the other.
+:::
 
-## Integrability

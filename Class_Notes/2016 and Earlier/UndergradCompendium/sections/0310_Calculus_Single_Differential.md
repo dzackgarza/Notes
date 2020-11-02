@@ -1,4 +1,4 @@
-## Differential Calculus
+# Differential Calculus
 
 ##  Big Theorems / Tools:
 
@@ -116,13 +116,10 @@ Approximating change: $\Delta y \approx f'(x) \Delta x$
 :::
 
 
-
-## Differential
-
-### Limits
+## Limits
 
 
-### Tools for finding limits
+## Tools for finding limits
 
 \todo[inline]{Examples}
 
@@ -164,7 +161,7 @@ Be careful: limits may not exist!!
 Example $:\lim_{x\to 0} \frac{1}{x} \neq 0$.
 :::
 
-### Asymptotes
+## Asymptotes
 
 - Vertical asymptotes: at values \(x=p\) where $\lim_{x\to p} = \pm\infty$
 - Horizontal asymptotes: given by points \(y=L\) where $L \lim_{x\to\pm\infty} f(x) < \infty$
@@ -176,12 +173,12 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 \]
 
 
-### Recurrences 
+## Recurrences
 
 - Limit of a recurrence: $x_n = f(x_{n-1}, x_{n-2}, \cdots)$
 	- If the limit exists, it is a solution to \(x = f(x)\)
 
-### Derivatives
+## Derivatives
 
 :::{.proposition title="Chain Rule"}
 \[
@@ -210,7 +207,7 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 \]
 :::
 
-### Implicit Differentiation
+## Implicit Differentiation
 
 \[
 (f(x))' = f'(x)~dx, (f(y))' = f'(y)~dy
@@ -220,7 +217,7 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 - Obtaining derivatives of inverse functions: if \(y = f^{-1}(x)\) then write \(f(y) = x\) and implicitly differentiate.
 
 
-### Related Rates
+## Related Rates
 General series of steps: want to know some unknown rate \(y_t\)
 
 - Lay out known relation that involves \(y\)

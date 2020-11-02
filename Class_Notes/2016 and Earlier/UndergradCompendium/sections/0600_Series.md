@@ -1,3 +1,21 @@
+## Sequences in Metric Spaces
+
+:::{.theorem title="Bolzano-Weierstrass"}
+Every bounded sequence has a convergent subsequence.
+:::
+
+:::{.theorem title="Heine-Borel"}
+In $\RR^n, X$ is compact $\iff X$ is closed and bounded.
+:::
+
+:::{.remark}
+Necessity of $\RR^n$: $X = (\ZZ, d(x,y) = 1)$ is closed, complete, bounded, but not compact since $\theset{1,2,\cdots}$ has no convergent subsequence
+:::
+
+:::{.proposition title="Converse of Heine-Borel"}
+Converse holds iff bounded is replaced with totally bounded
+:::
+
 # Sequences
 
 Notation: $\theset{a_n}_{n\in\NN}$ is a **sequence**, $\displaystyle\sum_{i\in\NN} a_i$ is a **series**.

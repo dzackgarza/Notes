@@ -71,7 +71,7 @@ errors and mistakes, please let me know if you find any! } } \\
 \tableofcontents
 
 \hypertarget{differential-calculus}{%
-\subsection{Differential Calculus}\label{differential-calculus}}
+\section{Differential Calculus}\label{differential-calculus}}
 
 \hypertarget{big-theorems-tools}{%
 \subsection{Big Theorems / Tools:}\label{big-theorems-tools}}
@@ -210,15 +210,11 @@ Approximating change: \(\Delta y \approx f'(x) \Delta x\)
 
 \end{remark}
 
-\hypertarget{differential}{%
-\subsection{Differential}\label{differential}}
-
 \hypertarget{limits}{%
-\subsubsection{Limits}\label{limits}}
+\subsection{Limits}\label{limits}}
 
 \hypertarget{tools-for-finding-limits}{%
-\subsubsection{Tools for finding
-limits}\label{tools-for-finding-limits}}
+\subsection{Tools for finding limits}\label{tools-for-finding-limits}}
 
 \todo[inline]{Examples}
 
@@ -271,7 +267,7 @@ Be careful: limits may not exist!! Example
 \end{warning}
 
 \hypertarget{asymptotes}{%
-\subsubsection{Asymptotes}\label{asymptotes}}
+\subsection{Asymptotes}\label{asymptotes}}
 
 \begin{itemize}
 \tightlist
@@ -298,7 +294,7 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 \end{align*}
 
 \hypertarget{recurrences}{%
-\subsubsection{Recurrences}\label{recurrences}}
+\subsection{Recurrences}\label{recurrences}}
 
 \begin{itemize}
 \tightlist
@@ -313,7 +309,7 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 \end{itemize}
 
 \hypertarget{derivatives}{%
-\subsubsection{Derivatives}\label{derivatives}}
+\subsection{Derivatives}\label{derivatives}}
 
 \begin{proposition}[Chain Rule]
 
@@ -352,8 +348,7 @@ Mnemonic: Low d-high minus high d-low
 \end{proposition}
 
 \hypertarget{implicit-differentiation}{%
-\subsubsection{Implicit
-Differentiation}\label{implicit-differentiation}}
+\subsection{Implicit Differentiation}\label{implicit-differentiation}}
 
 \begin{align*}
 (f(x))' = f'(x)~dx, (f(y))' = f'(y)~dy
@@ -367,7 +362,7 @@ Differentiation}\label{implicit-differentiation}}
 \end{itemize}
 
 \hypertarget{related-rates}{%
-\subsubsection{Related Rates}\label{related-rates}}
+\subsection{Related Rates}\label{related-rates}}
 
 General series of steps: want to know some unknown rate \(y_t\)
 
@@ -407,11 +402,11 @@ Example: ladder sliding down wall
 
 \end{example}
 
-\hypertarget{integral}{%
-\subsection{Integral}\label{integral}}
+\hypertarget{integral-calculus}{%
+\section{Integral Calculus}\label{integral-calculus}}
 
 \hypertarget{average-values}{%
-\subsubsection{Average Values}\label{average-values}}
+\subsection{Average Values}\label{average-values}}
 
 \begin{proposition}[Integral formula for average value]
 
@@ -428,7 +423,7 @@ Apply MVT to \(F(x)\).
 \end{proof}
 
 \hypertarget{area-between-curves}{%
-\subsubsection{Area Between Curves}\label{area-between-curves}}
+\subsection{Area Between Curves}\label{area-between-curves}}
 
 Area in polar coordinates:
 \begin{align*}
@@ -436,7 +431,7 @@ A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta
 \end{align*}
 
 \hypertarget{solids-of-revolution}{%
-\subsubsection{Solids of Revolution}\label{solids-of-revolution}}
+\subsection{Solids of Revolution}\label{solids-of-revolution}}
 
 \begin{align*}  
 \text{Disks} && A = \int \pi r(t)^2 ~dt \\
@@ -444,7 +439,7 @@ A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta
 .\end{align*}
 
 \hypertarget{arc-lengths}{%
-\subsubsection{Arc Lengths}\label{arc-lengths}}
+\subsection{Arc Lengths}\label{arc-lengths}}
 
 \begin{align*}
 L 
@@ -458,7 +453,7 @@ SA = \int 2 \pi r(x) ~ds
 \end{align*}
 
 \hypertarget{center-of-mass}{%
-\subsubsection{Center of Mass}\label{center-of-mass}}
+\subsection{Center of Mass}\label{center-of-mass}}
 
 Given a density \(\rho(\mathbf x)\) of an object \(R\), the \(x_i\)
 coordinate is given by
@@ -470,7 +465,7 @@ x_i =
 \end{align*}
 
 \hypertarget{big-list-of-integration-techniques}{%
-\subsubsection{Big List of Integration
+\subsection{Big List of Integration
 Techniques}\label{big-list-of-integration-techniques}}
 
 Given \(f(x)\), we want to find an antiderivative \(F(x) = \int f\)
@@ -494,7 +489,7 @@ satisfying \(\frac{\partial}{\partial x}F(x) = f(x)\)
 \end{itemize}
 
 \hypertarget{integration-by-parts}{%
-\paragraph{Integration by Parts:}\label{integration-by-parts}}
+\subsubsection{Integration by Parts:}\label{integration-by-parts}}
 
 The standard form:
 \begin{align*}
@@ -518,7 +513,7 @@ The standard form:
 \end{itemize}
 
 \hypertarget{shoelace-method}{%
-\paragraph{Shoelace Method}\label{shoelace-method}}
+\subsubsection{Shoelace Method}\label{shoelace-method}}
 
 \begin{itemize}
 \tightlist
@@ -543,7 +538,7 @@ Fill out until one column is zero (alternate signs). Get the result
 column by multiplying diagonally, then sum down the column.
 
 \hypertarget{differentiating-under-the-integral}{%
-\paragraph{Differentiating under the
+\subsubsection{Differentiating under the
 integral}\label{differentiating-under-the-integral}}
 
 \begin{align*}
@@ -602,10 +597,10 @@ For constants, this should allow differentiating under the integral when \(f, f_
 \end{itemize}
 
 \hypertarget{partial-fractions}{%
-\paragraph{Partial Fractions}\label{partial-fractions}}
+\subsubsection{Partial Fractions}\label{partial-fractions}}
 
 \hypertarget{trigonometric-substitution}{%
-\paragraph{Trigonometric
+\subsubsection{Trigonometric
 Substitution}\label{trigonometric-substitution}}
 
 \todo[inline]{Completing the square}
@@ -658,7 +653,7 @@ Other small but useful facts:
 .\end{align*}
 
 \hypertarget{optimization}{%
-\subsubsection{Optimization}\label{optimization}}
+\subsection{Optimization}\label{optimization}}
 
 \begin{itemize}
 \item
@@ -753,430 +748,6 @@ Other small but useful facts:
   P: ax+by+cz=d
   .\end{align*}
 \end{itemize}
-
-\hypertarget{sequences}{%
-\section{Sequences}\label{sequences}}
-
-Notation: \(\theset{a_n}_{n\in\NN}\) is a \textbf{sequence},
-\(\displaystyle\sum_{i\in\NN} a_i\) is a \textbf{series}.
-
-\hypertarget{known-examples}{%
-\subsection{Known Examples}\label{known-examples}}
-
-\begin{itemize}
-\tightlist
-\item
-  Known sequences: let \(c\) be a constant.
-  \begin{align*}
-  c, c^2, c^3, \ldots 
-  &= \theset{c^n}_{n=1}^\infty \to 0 
-  && \forall \abs{c} < 1 \\ \\ 
-  \frac{1}{c},\frac{1}{c^2},\frac{1}{c^3},\ldots 
-  &= \theset{\frac{1}{c^n}}_{n=1}^\infty \to 0 
-  &&\forall  \abs{c} > 1 \\ \\
-  1,\frac{1}{2^c},\frac{1}{3^c},\ldots 
-  &= \theset{\frac{1}{n^c}}_{n=1}^\infty \to 0 
-  && \forall c > 0
-  \end{align*}
-\end{itemize}
-
-\hypertarget{convergence}{%
-\subsection{Convergence}\label{convergence}}
-
-\begin{definition}[Convergence of a Sequence]
-
-A sequence \(\ts{x_j}\) \textbf{converges} to \(L\) iff
-\begin{align*}  
-\forall \varepsilon > 0,\, \exists N > 0 \text{ such that } \quad n\geq N \implies \abs{x_n - L} < \eps
-.\end{align*}
-
-\end{definition}
-
-\begin{theorem}[Squeeze Theorem]
-
-\begin{align*}
-b_n \leq a_n \leq c_n \text{ and } b_n,c_n \to L \implies a_n \to L
-\end{align*}
-
-\end{theorem}
-
-\begin{theorem}[Monotone Convergence Theorem for Sequences]
-
-If \(\theset{a_j}\) monotone and bounded, then
-\(a_j \to L = \lim\sup a_i < \infty\).
-
-\end{theorem}
-
-\begin{theorem}[Cauchy Criteria]
-
-\(\abs{a_m - a_n} \to 0 \in \RR \implies \theset{a_i}\) converges.
-
-\end{theorem}
-
-\hypertarget{checklist}{%
-\subsubsection{Checklist}\label{checklist}}
-
-\begin{itemize}
-\item
-  Is the sequence bounded?
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \(\theset{a_i}\) not bounded \(\implies\) not convergent
-  \item
-    If bounded, is it monotone?
-
-    \begin{itemize}
-    \tightlist
-    \item
-      \(\theset{a_i}\) bounded and monotone \(\implies\) convergent
-    \end{itemize}
-  \end{itemize}
-\item
-  Use algebraic properties of limits
-\item
-  Epsilon-delta definition
-\item
-  Algebraic properties and manipulation:
-
-  \begin{itemize}
-  \item
-    Limits commute with \(\pm, \times, \div\) and \(\lim C = C\) for
-    constants.
-
-    \begin{itemize}
-    \item
-      E.g. Divide all terms by \(n\) before taking limit
-    \item
-      Clear denominators
-    \end{itemize}
-  \end{itemize}
-\end{itemize}
-
-\hypertarget{sums-series}{%
-\section{Sums (``Series'')}\label{sums-series}}
-
-\begin{definition}[Series]
-
-A \textbf{series} is an function of the form
-\begin{align*}  
-f(x) = \sum_{j=1}^\infty c_j x^j
-.\end{align*}
-
-\end{definition}
-
-\hypertarget{known-examples-1}{%
-\subsection{Known Examples}\label{known-examples-1}}
-
-\hypertarget{conditionally-convergent}{%
-\subsubsection{Conditionally
-Convergent}\label{conditionally-convergent}}
-
-\begin{align*}
-\sum_{k=1}^\infty k^p &< \infty 
-&&\iff p \leq 1 \\
-\sum_{k=1}^\infty \frac{1}{k^p} &< \infty 
-&&\iff p > 1 \\
-\sum_{k=1}^\infty \frac{1}{k} &= \infty 
-&&
-\end{align*}
-
-\hypertarget{convergent}{%
-\subsubsection{Convergent}\label{convergent}}
-
-\begin{align*}
-\sum_{n=1}^\infty \frac{1}{n^2}           & < \infty \\
-\sum_{n=1}^\infty \frac{1}{n^3}           & < \infty \\
-\sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} & < \infty \\
-\sum_{n=1}^\infty \frac{1}{n!}            & = e \\
-\sum_{n=1}^\infty \frac{1}{c^n}           & = \frac{c}{c-1} \\
-\sum_{n=1}^\infty (-1)^n \frac{1}{c^n}    & = \frac{c}{c+1} \\
-\sum_{n=1}^\infty (-1)^n \frac{1}{n}      & = \ln 2
-\end{align*}
-
-\hypertarget{divergent}{%
-\subsubsection{Divergent}\label{divergent}}
-
-\begin{align*}
-\sum_{n=1}^\infty \frac{1}{n} = \infty \\
-\sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty 
-\end{align*}
-
-\hypertarget{convergence-1}{%
-\subsection{Convergence}\label{convergence-1}}
-
-\begin{quote}
-Useful reference:
-\url{http://math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf}
-\end{quote}
-
-\begin{definition}[Absolutely Convergent]
-
-\todo[inline]{todo}
-
-\end{definition}
-
-\begin{remark}
-
-\(a_n\to 0\) does not imply \(\sum a_n < \infty\). Counterexample: the
-harmonic series.
-
-\end{remark}
-
-\begin{proposition}[?]
-
-Absolute convergence \(\implies\) convergence
-
-\end{proposition}
-
-\begin{proposition}[The Cauchy Criterion]
-
-\begin{align*}
-\limsup a_i \to 0 \implies \sum a_i \text{ converges }
-\end{align*}
-
-\end{proposition}
-
-\hypertarget{the-big-tests}{%
-\subsubsection{The Big Tests}\label{the-big-tests}}
-
-\begin{theorem}[Comparison Test]
-
-\envlist
-
-\begin{itemize}
-\tightlist
-\item
-  \(a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty\)
-\item
-  \(b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty\)
-\end{itemize}
-
-\end{theorem}
-
-\begin{theorem}[Ratio Test]
-
-\begin{align*}
-R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
-\end{align*}
-
-\begin{itemize}
-\tightlist
-\item
-  \(R < 1\): absolutely convergent
-\item
-  \(R > 1\): divergent
-\item
-  \(R = 1\): inconclusive
-\end{itemize}
-
-\end{theorem}
-
-\begin{theorem}[Root Test]
-
-\begin{align*}
-R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
-\end{align*} - \(R < 1\): convergent - \(R > 1\): divergent - \(R = 1\):
-inconclusive
-
-\end{theorem}
-
-\begin{theorem}[Integral Test]
-
-\begin{align*}
-f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
-\end{align*}
-
-\end{theorem}
-
-\begin{theorem}[Limit Test]
-
-\begin{align*}
-\lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty
-\end{align*}
-
-\end{theorem}
-
-\begin{theorem}[Alternating Series Test]
-
-\begin{align*}
-a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty
-\end{align*}
-
-\end{theorem}
-
-\begin{theorem}[Weierstrass $M\dash$Test]
-
-\begin{align*}
-\sum_{n=1}^\infty \norm{f_n}_\infty < \infty 
-\implies \exists f\text{ such that } \norm{ \sum_{n=1}^\infty f_n - f}_\infty \to 0
-\end{align*} In other words, the series converges uniformly.
-
-\begin{quote}
-Slogan: Convergence of the sup norms implies uniform convergence"
-\end{quote}
-
-\end{theorem}
-
-\begin{remark}
-
-The \(M\) in the name comes from defining
-\(\sup\theset{f_k(x)} \da M_n\) and requiring
-\(\sum \abs{M_n} < \infty\).
-
-\end{remark}
-
-\hypertarget{checklist-1}{%
-\subsubsection{Checklist}\label{checklist-1}}
-
-\begin{itemize}
-\tightlist
-\item
-  Do the terms tend to zero?
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \(a_i \not\to 0 \implies \sum a_i = \infty\).
-
-    \begin{itemize}
-    \tightlist
-    \item
-      Can check with L'Hopital's rule
-    \end{itemize}
-  \end{itemize}
-\item
-  There are exactly 6 tests at our disposal:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Comparison, root, ratio, integral, limit, alternating
-  \end{itemize}
-\item
-  Is the series alternating?
-
-  \begin{itemize}
-  \tightlist
-  \item
-    If so, does \(a_n \downarrow 0\)?
-
-    \begin{itemize}
-    \tightlist
-    \item
-      If so, \textbf{convergent}
-    \end{itemize}
-  \end{itemize}
-\item
-  Is this series bounded above by a known convergent series?
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \(p\) series with \(p>1\), i.e.~:
-    \(\sum a_n \leq \sum \frac{1}{n^p} < \infty\)
-  \item
-    Geometric series with \(\abs{x} < 1\),
-    i.e.~\(\sum a_n \leq \sum x^n\)
-  \end{itemize}
-\item
-  Is this series bounded below by a known divergent series?
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \(p\) series with \(p\leq 1\),
-    i.e.~\(\infty = \sum \frac{1}{n^p} \leq \sum a_i\)
-  \end{itemize}
-\item
-  Are the ratios strictly less than or greater than 1?
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \(<1 \implies\) \textbf{convergent}
-  \item
-    \(>1 \implies\) \textbf{convergent}
-  \end{itemize}
-\item
-  Does the integral analogue converge?
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Integral converges \(\iff\) sum converges
-  \end{itemize}
-\item
-  Try the root test
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \(<1 \implies\) \textbf{convergent}
-  \item
-    \(>1 \implies\) \textbf{convergent}
-  \end{itemize}
-\item
-  Try the limit test
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Attempt to divide each term to obtain a known convergent/divergent
-    series
-  \end{itemize}
-\end{itemize}
-
-Some Pattern Recognition:
-
-\begin{itemize}
-\tightlist
-\item
-  \((\text{stuff})!\): Ratio test (only test that will work with
-  factorials!!)
-\item
-  \((\text{stuff})^n\): Root test or ratio test
-\item
-  Replace \(a_n\) with an \(f(x)\) that's easy to integrate - integral
-  test
-\item
-  \(p(x)\) or \(\sqrt{p(x)}\): comparison or limit test
-\end{itemize}
-
-\hypertarget{radius-of-convergence}{%
-\subsection{Radius of Convergence}\label{radius-of-convergence}}
-
-\begin{proposition}[Finding the radius of convergence]
-
-Use the fact that
-\begin{align*}
-\lim_{k\to\infty} \abs{\frac{a_{k+1}x^{k+1}}{a_kx^k}} 
-= \abs{x}\lim_{k\to\infty} \abs{\frac{a_{k+1}}{a_k}} < 1 
-\implies \sum a_k x^k < \infty
-,\end{align*} so take \(L \da \lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)
-and then obtain the radius as
-\begin{align*}
-R = \frac{1}{L} = \lim_{k\to\infty} {a_k \over a_{k+1}}
-\end{align*}
-
-\end{proposition}
-
-\begin{remark}
-
-\envlist
-
-\begin{itemize}
-\tightlist
-\item
-  Note \(L=0 \implies\) absolutely convergent everywhere
-\item
-  \(L = \infty \implies\) convergent only at \(x=0\).
-\item
-  Also need to check endpoints \(R, -R\) manually.
-\end{itemize}
-
-\end{remark}
 
 \hypertarget{vector-calculus}{%
 \section{Vector Calculus}\label{vector-calculus}}
@@ -1955,6 +1526,9 @@ For any \(f: \RR^n \to \RR^n\) and region \(R\),
 \begin{align*}
 \int _ { g ( R ) } f ( \mathbf { x } ) ~d V = \int _ { R } (f  \circ g) ( \mathbf { x } )  \cdot \abs{D_g  ( \mathbf { x })} ~d V
 \end{align*}
+
+\hypertarget{vector-calculus-1}{%
+\section{Vector Calculus}\label{vector-calculus-1}}
 
 \hypertarget{notation-1}{%
 \subsection{Notation}\label{notation-1}}
@@ -3422,11 +2996,12 @@ A \da \left[ \begin{array} { c c } { 1 } & { 1 } \\ { 0 } & { - 1 } \end{array} 
 && \spec(A) = [1, -1]
 \end{align*}
 
-\hypertarget{advanced-topics}{%
-\subsection{Advanced Topics}\label{advanced-topics}}
+\hypertarget{linear-algebra-advanced-topics}{%
+\section{Linear Algebra: Advanced
+Topics}\label{linear-algebra-advanced-topics}}
 
 \hypertarget{changing-basis}{%
-\subsubsection{Changing Basis}\label{changing-basis}}
+\subsection{Changing Basis}\label{changing-basis}}
 
 \begin{proposition}[Changing to the standard basis]
 
@@ -3446,7 +3021,7 @@ A\da
 \end{proposition}
 
 \hypertarget{orthogonal-matrices}{%
-\subsubsection{Orthogonal Matrices}\label{orthogonal-matrices}}
+\subsection{Orthogonal Matrices}\label{orthogonal-matrices}}
 
 Given a notion of orthogonality for vectors, we can extend this to
 matrices. A square matrix is said to be orthogonal iff
@@ -3467,7 +3042,7 @@ inner products between all pairs of the columns of \(Q\) and stores them
 in a matrix.
 
 \hypertarget{projections-1}{%
-\subsubsection{Projections}\label{projections-1}}
+\subsection{Projections}\label{projections-1}}
 
 \begin{remark}
 
@@ -3503,7 +3078,8 @@ another, and more generally of a vector onto a subspace spanned by
 multiple vectors.
 
 \hypertarget{projection-onto-a-vector}{%
-\paragraph{Projection Onto a Vector}\label{projection-onto-a-vector}}
+\subsubsection{Projection Onto a
+Vector}\label{projection-onto-a-vector}}
 
 Say we have two vectors \(\vector x\) and \(\vector y\), and we want to
 define ``the component of \(\vector x\) that lies along \(\vector y\)'',
@@ -3527,7 +3103,7 @@ as well) we would find that this particular choice minimizes
 \(\norm{\vector r (t)}\).
 
 \hypertarget{projection-onto-a-subspace}{%
-\paragraph{Projection Onto a
+\subsubsection{Projection Onto a
 Subspace}\label{projection-onto-a-subspace}}
 
 In general, supposing one has a subspace
@@ -3581,7 +3157,7 @@ inner product appearing in the sum vanishes, by definition of
 \(\vector v \in S\perp\), and so the projection is zero.
 
 \hypertarget{least-squares}{%
-\paragraph{Least Squares}\label{least-squares}}
+\subsubsection{Least Squares}\label{least-squares}}
 
 \begin{proposition}[Normal Equations]
 
@@ -3649,7 +3225,7 @@ The derivation proceeds by solving the equation
 .\end{align*}
 
 \hypertarget{normal-forms}{%
-\subsubsection{Normal Forms}\label{normal-forms}}
+\subsection{Normal Forms}\label{normal-forms}}
 
 \begin{remark}
 
@@ -3658,10 +3234,10 @@ Every square matrix is similar to a matrix in Jordan canonical form.
 \end{remark}
 
 \hypertarget{decompositions}{%
-\subsubsection{Decompositions}\label{decompositions}}
+\subsection{Decompositions}\label{decompositions}}
 
 \hypertarget{the-qr-decomposition}{%
-\paragraph{The QR Decomposition}\label{the-qr-decomposition}}
+\subsubsection{The QR Decomposition}\label{the-qr-decomposition}}
 
 Gram-Schmidt is often computed to find an orthonormal basis for, say,
 the range of some matrix \(A\). With a small modification to this
@@ -3703,7 +3279,7 @@ R =
 \todo[inline]{Explain shortcut for diagonal.}
 
 \hypertarget{appendix-lists-of-things-to-know}{%
-\subsection{Appendix: Lists of things to
+\section{Appendix: Lists of things to
 know}\label{appendix-lists-of-things-to-know}}
 
 \begin{quote}
@@ -3711,7 +3287,7 @@ Textbook: Leon, \emph{Linear Algebra with Applications}
 \end{quote}
 
 \hypertarget{topics}{%
-\subsubsection{Topics}\label{topics}}
+\subsection{Topics}\label{topics}}
 
 \begin{itemize}
 \tightlist
@@ -3772,7 +3348,7 @@ Textbook: Leon, \emph{Linear Algebra with Applications}
 \end{itemize}
 
 \hypertarget{definitions}{%
-\subsubsection{Definitions}\label{definitions}}
+\subsection{Definitions}\label{definitions}}
 
 \begin{itemize}
 \tightlist
@@ -3887,7 +3463,7 @@ Textbook: Leon, \emph{Linear Algebra with Applications}
 \end{itemize}
 
 \hypertarget{lower-division-review}{%
-\subsubsection{Lower-division review}\label{lower-division-review}}
+\subsection{Lower-division review}\label{lower-division-review}}
 
 \begin{itemize}
 \tightlist
@@ -3966,7 +3542,7 @@ Textbook: Leon, \emph{Linear Algebra with Applications}
 \end{itemize}
 
 \hypertarget{things-to-compute}{%
-\subsubsection{Things to compute}\label{things-to-compute}}
+\subsection{Things to compute}\label{things-to-compute}}
 
 \begin{itemize}
 \tightlist
@@ -4036,7 +3612,7 @@ Textbook: Leon, \emph{Linear Algebra with Applications}
 \end{itemize}
 
 \hypertarget{things-to-prove}{%
-\subsubsection{Things to prove}\label{things-to-prove}}
+\subsection{Things to prove}\label{things-to-prove}}
 
 \begin{itemize}
 \tightlist
@@ -4062,6 +3638,10 @@ Textbook: Leon, \emph{Linear Algebra with Applications}
   Prove facts about the orthogonal decomposition theorem
 \end{itemize}
 
+\hypertarget{ordinary-differential-equations}{%
+\section{Ordinary Differential
+Equations}\label{ordinary-differential-equations}}
+
 \hypertarget{techniques-overview}{%
 \subsection{Techniques Overview}\label{techniques-overview}}
 
@@ -4076,9 +3656,8 @@ P(D)y = f(x,y) && x^ke^{rx} \text{ for each root }
 
 \emph{Where \(e^{zx}\) yields \(e^{ax}\cos bx, e^{ax}\sin bx\)}
 
-\hypertarget{ordinary-differential-equations}{%
-\subsection{Ordinary Differential
-Equations}\label{ordinary-differential-equations}}
+\hypertarget{types-of-equations}{%
+\subsection{Types of Equations}\label{types-of-equations}}
 
 \begin{itemize}
 \tightlist
@@ -4323,6 +3902,11 @@ of the other two functions.
 \end{warning}
 
 \todo[inline]{Sufficient condition: each $f_i$ is the solution to a linear homogeneous ODE $L(y) = 0$.}
+
+\hypertarget{algebra}{%
+\section{Algebra}\label{algebra}}
+
+\todo[inline]{This section is very sketchy!}
 
 \hypertarget{to-sort}{%
 \subsection{To Sort}\label{to-sort}}
@@ -5228,6 +4812,460 @@ x^2 = 1 \mod n \implies x = \pm 1
 
 \end{proposition}
 
+\hypertarget{sequences-in-metric-spaces}{%
+\subsection{Sequences in Metric
+Spaces}\label{sequences-in-metric-spaces}}
+
+\begin{theorem}[Bolzano-Weierstrass]
+
+Every bounded sequence has a convergent subsequence.
+
+\end{theorem}
+
+\begin{theorem}[Heine-Borel]
+
+In \(\RR^n, X\) is compact \(\iff X\) is closed and bounded.
+
+\end{theorem}
+
+\begin{remark}
+
+Necessity of \(\RR^n\): \(X = (\ZZ, d(x,y) = 1)\) is closed, complete,
+bounded, but not compact since \(\theset{1,2,\cdots}\) has no convergent
+subsequence
+
+\end{remark}
+
+\begin{proposition}[Converse of Heine-Borel]
+
+Converse holds iff bounded is replaced with totally bounded
+
+\end{proposition}
+
+\hypertarget{sequences}{%
+\section{Sequences}\label{sequences}}
+
+Notation: \(\theset{a_n}_{n\in\NN}\) is a \textbf{sequence},
+\(\displaystyle\sum_{i\in\NN} a_i\) is a \textbf{series}.
+
+\hypertarget{known-examples}{%
+\subsection{Known Examples}\label{known-examples}}
+
+\begin{itemize}
+\tightlist
+\item
+  Known sequences: let \(c\) be a constant.
+  \begin{align*}
+  c, c^2, c^3, \ldots 
+  &= \theset{c^n}_{n=1}^\infty \to 0 
+  && \forall \abs{c} < 1 \\ \\ 
+  \frac{1}{c},\frac{1}{c^2},\frac{1}{c^3},\ldots 
+  &= \theset{\frac{1}{c^n}}_{n=1}^\infty \to 0 
+  &&\forall  \abs{c} > 1 \\ \\
+  1,\frac{1}{2^c},\frac{1}{3^c},\ldots 
+  &= \theset{\frac{1}{n^c}}_{n=1}^\infty \to 0 
+  && \forall c > 0
+  \end{align*}
+\end{itemize}
+
+\hypertarget{convergence}{%
+\subsection{Convergence}\label{convergence}}
+
+\begin{definition}[Convergence of a Sequence]
+
+A sequence \(\ts{x_j}\) \textbf{converges} to \(L\) iff
+\begin{align*}  
+\forall \varepsilon > 0,\, \exists N > 0 \text{ such that } \quad n\geq N \implies \abs{x_n - L} < \eps
+.\end{align*}
+
+\end{definition}
+
+\begin{theorem}[Squeeze Theorem]
+
+\begin{align*}
+b_n \leq a_n \leq c_n \text{ and } b_n,c_n \to L \implies a_n \to L
+\end{align*}
+
+\end{theorem}
+
+\begin{theorem}[Monotone Convergence Theorem for Sequences]
+
+If \(\theset{a_j}\) monotone and bounded, then
+\(a_j \to L = \lim\sup a_i < \infty\).
+
+\end{theorem}
+
+\begin{theorem}[Cauchy Criteria]
+
+\(\abs{a_m - a_n} \to 0 \in \RR \implies \theset{a_i}\) converges.
+
+\end{theorem}
+
+\hypertarget{checklist}{%
+\subsubsection{Checklist}\label{checklist}}
+
+\begin{itemize}
+\item
+  Is the sequence bounded?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(\theset{a_i}\) not bounded \(\implies\) not convergent
+  \item
+    If bounded, is it monotone?
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \(\theset{a_i}\) bounded and monotone \(\implies\) convergent
+    \end{itemize}
+  \end{itemize}
+\item
+  Use algebraic properties of limits
+\item
+  Epsilon-delta definition
+\item
+  Algebraic properties and manipulation:
+
+  \begin{itemize}
+  \item
+    Limits commute with \(\pm, \times, \div\) and \(\lim C = C\) for
+    constants.
+
+    \begin{itemize}
+    \item
+      E.g. Divide all terms by \(n\) before taking limit
+    \item
+      Clear denominators
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{sums-series}{%
+\section{Sums (``Series'')}\label{sums-series}}
+
+\begin{definition}[Series]
+
+A \textbf{series} is an function of the form
+\begin{align*}  
+f(x) = \sum_{j=1}^\infty c_j x^j
+.\end{align*}
+
+\end{definition}
+
+\hypertarget{known-examples-1}{%
+\subsection{Known Examples}\label{known-examples-1}}
+
+\hypertarget{conditionally-convergent}{%
+\subsubsection{Conditionally
+Convergent}\label{conditionally-convergent}}
+
+\begin{align*}
+\sum_{k=1}^\infty k^p &< \infty 
+&&\iff p \leq 1 \\
+\sum_{k=1}^\infty \frac{1}{k^p} &< \infty 
+&&\iff p > 1 \\
+\sum_{k=1}^\infty \frac{1}{k} &= \infty 
+&&
+\end{align*}
+
+\hypertarget{convergent}{%
+\subsubsection{Convergent}\label{convergent}}
+
+\begin{align*}
+\sum_{n=1}^\infty \frac{1}{n^2}           & < \infty \\
+\sum_{n=1}^\infty \frac{1}{n^3}           & < \infty \\
+\sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} & < \infty \\
+\sum_{n=1}^\infty \frac{1}{n!}            & = e \\
+\sum_{n=1}^\infty \frac{1}{c^n}           & = \frac{c}{c-1} \\
+\sum_{n=1}^\infty (-1)^n \frac{1}{c^n}    & = \frac{c}{c+1} \\
+\sum_{n=1}^\infty (-1)^n \frac{1}{n}      & = \ln 2
+\end{align*}
+
+\hypertarget{divergent}{%
+\subsubsection{Divergent}\label{divergent}}
+
+\begin{align*}
+\sum_{n=1}^\infty \frac{1}{n} = \infty \\
+\sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty 
+\end{align*}
+
+\hypertarget{convergence-1}{%
+\subsection{Convergence}\label{convergence-1}}
+
+\begin{quote}
+Useful reference:
+\url{http://math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf}
+\end{quote}
+
+\begin{definition}[Absolutely Convergent]
+
+\todo[inline]{todo}
+
+\end{definition}
+
+\begin{remark}
+
+\(a_n\to 0\) does not imply \(\sum a_n < \infty\). Counterexample: the
+harmonic series.
+
+\end{remark}
+
+\begin{proposition}[?]
+
+Absolute convergence \(\implies\) convergence
+
+\end{proposition}
+
+\begin{proposition}[The Cauchy Criterion]
+
+\begin{align*}
+\limsup a_i \to 0 \implies \sum a_i \text{ converges }
+\end{align*}
+
+\end{proposition}
+
+\hypertarget{the-big-tests}{%
+\subsubsection{The Big Tests}\label{the-big-tests}}
+
+\begin{theorem}[Comparison Test]
+
+\envlist
+
+\begin{itemize}
+\tightlist
+\item
+  \(a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty\)
+\item
+  \(b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty\)
+\end{itemize}
+
+\end{theorem}
+
+\begin{theorem}[Ratio Test]
+
+\begin{align*}
+R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
+\end{align*}
+
+\begin{itemize}
+\tightlist
+\item
+  \(R < 1\): absolutely convergent
+\item
+  \(R > 1\): divergent
+\item
+  \(R = 1\): inconclusive
+\end{itemize}
+
+\end{theorem}
+
+\begin{theorem}[Root Test]
+
+\begin{align*}
+R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
+\end{align*} - \(R < 1\): convergent - \(R > 1\): divergent - \(R = 1\):
+inconclusive
+
+\end{theorem}
+
+\begin{theorem}[Integral Test]
+
+\begin{align*}
+f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
+\end{align*}
+
+\end{theorem}
+
+\begin{theorem}[Limit Test]
+
+\begin{align*}
+\lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty
+\end{align*}
+
+\end{theorem}
+
+\begin{theorem}[Alternating Series Test]
+
+\begin{align*}
+a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty
+\end{align*}
+
+\end{theorem}
+
+\begin{theorem}[Weierstrass $M\dash$Test]
+
+\begin{align*}
+\sum_{n=1}^\infty \norm{f_n}_\infty < \infty 
+\implies \exists f\text{ such that } \norm{ \sum_{n=1}^\infty f_n - f}_\infty \to 0
+\end{align*} In other words, the series converges uniformly.
+
+\begin{quote}
+Slogan: Convergence of the sup norms implies uniform convergence"
+\end{quote}
+
+\end{theorem}
+
+\begin{remark}
+
+The \(M\) in the name comes from defining
+\(\sup\theset{f_k(x)} \da M_n\) and requiring
+\(\sum \abs{M_n} < \infty\).
+
+\end{remark}
+
+\hypertarget{checklist-1}{%
+\subsubsection{Checklist}\label{checklist-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Do the terms tend to zero?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(a_i \not\to 0 \implies \sum a_i = \infty\).
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Can check with L'Hopital's rule
+    \end{itemize}
+  \end{itemize}
+\item
+  There are exactly 6 tests at our disposal:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Comparison, root, ratio, integral, limit, alternating
+  \end{itemize}
+\item
+  Is the series alternating?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If so, does \(a_n \downarrow 0\)?
+
+    \begin{itemize}
+    \tightlist
+    \item
+      If so, \textbf{convergent}
+    \end{itemize}
+  \end{itemize}
+\item
+  Is this series bounded above by a known convergent series?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(p\) series with \(p>1\), i.e.~:
+    \(\sum a_n \leq \sum \frac{1}{n^p} < \infty\)
+  \item
+    Geometric series with \(\abs{x} < 1\),
+    i.e.~\(\sum a_n \leq \sum x^n\)
+  \end{itemize}
+\item
+  Is this series bounded below by a known divergent series?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(p\) series with \(p\leq 1\),
+    i.e.~\(\infty = \sum \frac{1}{n^p} \leq \sum a_i\)
+  \end{itemize}
+\item
+  Are the ratios strictly less than or greater than 1?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(<1 \implies\) \textbf{convergent}
+  \item
+    \(>1 \implies\) \textbf{convergent}
+  \end{itemize}
+\item
+  Does the integral analogue converge?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Integral converges \(\iff\) sum converges
+  \end{itemize}
+\item
+  Try the root test
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(<1 \implies\) \textbf{convergent}
+  \item
+    \(>1 \implies\) \textbf{convergent}
+  \end{itemize}
+\item
+  Try the limit test
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Attempt to divide each term to obtain a known convergent/divergent
+    series
+  \end{itemize}
+\end{itemize}
+
+Some Pattern Recognition:
+
+\begin{itemize}
+\tightlist
+\item
+  \((\text{stuff})!\): Ratio test (only test that will work with
+  factorials!!)
+\item
+  \((\text{stuff})^n\): Root test or ratio test
+\item
+  Replace \(a_n\) with an \(f(x)\) that's easy to integrate - integral
+  test
+\item
+  \(p(x)\) or \(\sqrt{p(x)}\): comparison or limit test
+\end{itemize}
+
+\hypertarget{radius-of-convergence}{%
+\subsection{Radius of Convergence}\label{radius-of-convergence}}
+
+\begin{proposition}[Finding the radius of convergence]
+
+Use the fact that
+\begin{align*}
+\lim_{k\to\infty} \abs{\frac{a_{k+1}x^{k+1}}{a_kx^k}} 
+= \abs{x}\lim_{k\to\infty} \abs{\frac{a_{k+1}}{a_k}} < 1 
+\implies \sum a_k x^k < \infty
+,\end{align*} so take \(L \da \lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)
+and then obtain the radius as
+\begin{align*}
+R = \frac{1}{L} = \lim_{k\to\infty} {a_k \over a_{k+1}}
+\end{align*}
+
+\end{proposition}
+
+\begin{remark}
+
+\envlist
+
+\begin{itemize}
+\tightlist
+\item
+  Note \(L=0 \implies\) absolutely convergent everywhere
+\item
+  \(L = \infty \implies\) convergent only at \(x=0\).
+\item
+  Also need to check endpoints \(R, -R\) manually.
+\end{itemize}
+
+\end{remark}
+
 \hypertarget{real-analysis}{%
 \section{Real Analysis}\label{real-analysis}}
 
@@ -5336,6 +5374,11 @@ f,g\text{ differentiable on } [a,b] \implies \exists c\in[a,b] :
 
 \hypertarget{important-examples}{%
 \subsection{Important Examples}\label{important-examples}}
+
+\hypertarget{limits-1}{%
+\subsection{Limits}\label{limits-1}}
+
+\todo[inline]{todo}
 
 \hypertarget{commuting-limits}{%
 \subsection{Commuting Limits}\label{commuting-limits}}
@@ -5613,6 +5656,9 @@ on \(\RR-\QQ\)
 A continuous function on a compact space attains its extrema.
 
 \end{theorem}
+
+\hypertarget{lipschitz-continuity}{%
+\subsubsection{Lipschitz Continuity}\label{lipschitz-continuity}}
 
 \hypertarget{differentiability}{%
 \subsection{Differentiability}\label{differentiability}}
@@ -6074,56 +6120,6 @@ Summary:
   \end{itemize}
 \end{itemize}
 
-\hypertarget{sequences-and-metric-spaces}{%
-\subsection{Sequences and Metric
-Spaces}\label{sequences-and-metric-spaces}}
-
-\begin{theorem}[Bolzano-Weierstrass]
-
-Every bounded sequence has a convergent subsequence.
-
-\end{theorem}
-
-\begin{theorem}[Heine-Borel]
-
-In \(\RR^n, X\) is compact \(\iff X\) is closed and bounded.
-
-\end{theorem}
-
-\begin{remark}
-
-Necessity of \(\RR^n\): \(X = (\ZZ, d(x,y) = 1)\) is closed, complete,
-bounded, but not compact since \(\theset{1,2,\cdots}\) has no convergent
-subsequence
-
-\end{remark}
-
-\begin{proposition}[Converse of Heine-Borel]
-
-Converse holds iff bounded is replaced with totally bounded
-
-\end{proposition}
-
-\begin{definition}[Sequential Compactness]
-
-A topological space \(X\) is \textbf{sequentially compact} iff every
-sequence \(\ts{x_n}\) has a subsequence converging to a point in \(X\).
-
-\end{definition}
-
-\begin{proposition}[Compactness and sequential compactness]
-
-If \(X\) is a metric space, \(X\) is compact iff \(X\) is sequentially
-compact.
-
-\end{proposition}
-
-\begin{remark}
-
-Note that in general, neither form of compactness implies the other.
-
-\end{remark}
-
 \begin{proposition}[All subsequences of a convergent sequence share a limit]
 
 \(\theset{x_i} \to p \implies\) every subsequence also converges to
@@ -6265,20 +6261,78 @@ If \(X\) is compact, then \(Y \subset X \implies Y\) is compact \(\iff\)
 
 \end{proposition}
 
-\hypertarget{limits-1}{%
-\subsection{Limits}\label{limits-1}}
+\begin{definition}[Sequential Compactness]
 
-\hypertarget{continuity-1}{%
-\subsection{Continuity}\label{continuity-1}}
+A topological space \(X\) is \textbf{sequentially compact} iff every
+sequence \(\ts{x_n}\) has a subsequence converging to a point in \(X\).
 
-\hypertarget{lipschitz-continuity}{%
-\subsubsection{Lipschitz Continuity}\label{lipschitz-continuity}}
+\end{definition}
 
-\hypertarget{integrability-1}{%
-\subsection{Integrability}\label{integrability-1}}
+\begin{proposition}[Compactness and sequential compactness]
 
-\hypertarget{topology-1}{%
-\section{Topology}\label{topology-1}}
+If \(X\) is a metric space, \(X\) is compact iff \(X\) is sequentially
+compact.
+
+\end{proposition}
+
+\begin{remark}
+
+Note that in general, neither form of compactness implies the other.
+
+\end{remark}
+
+\hypertarget{counterexamples}{%
+\subsection{Counterexamples}\label{counterexamples}}
+
+\begin{proposition}[?]
+
+There are functions differentiable only at a single point. Example:
+\begin{align*}  
+f(x) = 
+\begin{cases}
+x^2 & x\in QQ\\
+-x^2 & x\in \RR\sm\QQ
+\end{cases}
+.\end{align*}
+
+This is discontinuous everywhere except for \(x=0\), and you can compute
+\begin{align*}  
+\lim_{h\to 0} {f(x+h) - f(x) \over h}\evalfrom_{x=0} = 
+\lim_{h\to 0}
+\begin{cases}
+h & x\in \QQ \\
+-h & x\in \RR\sm\QQ 
+\end{cases}
+=0
+.\end{align*}
+
+\end{proposition}
+
+\begin{proposition}[?]
+
+The product of two non-differentiable functions can be differentiable:
+take \(f(x) = g(x) = \abs{x}\) which are not differentiable at \(x=0\),
+then \(fg(x) = \abs{x}^2\) is differentiable at \(x=0\).
+
+\end{proposition}
+
+\begin{proposition}[?]
+
+A continuous function that is zero on a dense set \(A\subset X\) is
+identically zero.
+
+\begin{proof}[?]
+
+Since \(A\) is dense, for any \(x\in X\sm A\) take a sequence
+\(\ts{x_n}\) in \(A\) converging to \(x\). Then \(0 = f(x_n) \to f(x)\)
+implies \(f(x) = 0\).
+
+\end{proof}
+
+\end{proposition}
+
+\hypertarget{point-set-topology}{%
+\section{Point-Set Topology}\label{point-set-topology}}
 
 \hypertarget{definitions-1}{%
 \subsection{Definitions}\label{definitions-1}}
@@ -6455,6 +6509,9 @@ Checking if a map is homeomorphism:
   \(f\) continuous, \(X\) compact and Hausdorff \(\implies f\) is a
   homeomorphism.
 \end{itemize}
+
+\hypertarget{probability}{%
+\section{Probability}\label{probability}}
 
 \hypertarget{definitions-2}{%
 \subsection{Definitions}\label{definitions-2}}
@@ -6914,6 +6971,49 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 \bottomrule
 \end{longtable}
 
+\hypertarget{table-of-distributions}{%
+\subsection{Table of Distributions}\label{table-of-distributions}}
+
+Table: let \(q = 1-p\).
+
+\begin{align*}
+\text{Distribution} & f(x)                                                                            &  & \mu              & \sigma^2            & M(t) \\
+\hline \\
+B(n, p)             & {n\choose x}p^x q^{n-x}                                                         &  & np               & npq                 & (pe^t + q)^n
+\\
+P(\lambda)          & \frac{\lambda^x}{x!}e^{-\lambda}                                                &  & \lambda          & \lambda             & e^{\lambda(e^t-1)}
+\\
+G(p)                & q^{x-1}p                                                                        &  & \frac{1}{p}      & \frac{q}{p^2}       & \frac{pe^t}{1-qe^t}
+\\
+B^-(r, p)           & {n-1 \choose r-1}p^rq^{n-r}                                                     &  & \frac{r}{p}      & \frac{rq}{p^2}      & \left(\frac{pe^t}{1-qe^t}\right)^r
+\\
+U(a, b)             & \indic{a\leq x\leq b}\frac 1 {b-a}                                          &  & \frac{1}{2}(a+b) & \frac{1}{12}(b-a)^2 & \frac{e^{tb} - e^{ta}}{t(b-a)}
+\\
+Exp(\lambda)        & \indic{0 \leq x}\lambda e^{-\lambda x}                                      &  & \frac 1 \lambda  & \frac 1 {\lambda^2} & \frac \lambda {\lambda - t}
+\\
+\Gamma(s, \lambda)  & \indic{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} &  & \frac s \lambda  & \frac s {\lambda^2} & \left( \frac{\lambda}{\lambda - t} \right)^s \\
+N(\mu, \sigma^2)    & \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}                    &  & \mu              & \sigma^2            & e^{\mu t + \frac{1}{2}\sigma^2 t^2}
+\end{align*}
+
+\begin{itemize}
+\tightlist
+\item
+  Why you need the Stieltjes Integral: let
+  \(X \sim B(n, \frac 1 2), Y \sim U(0, 1),\) and
+  \begin{align*}
+  Z = 
+  \begin{cases}
+  X, & $X = 1$ \\
+  Y, & else
+  \end{cases}
+  \end{align*} then \(\abs{Z} = \abs{\RR}\) so \(Z\) is not discrete,
+  but \(P(X = 1) = \frac 1 2 \neq 0\) so \(Z\) is not continuous.
+  Definition:
+  \begin{align*}  
+  \int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)
+  .\end{align*}
+\end{itemize}
+
 \hypertarget{common-problems}{%
 \subsection{Common Problems}\label{common-problems}}
 
@@ -6993,49 +7093,8 @@ M(t) = E[e^{Xt}]
 
 \end{definition}
 
-\hypertarget{table-of-distribution-info}{%
-\subsection{Table of Distribution
-Info}\label{table-of-distribution-info}}
-
-Table: let \(q = 1-p\).
-
-\begin{align*}
-\text{Distribution} & f(x)                                                                            &  & \mu              & \sigma^2            & M(t) \\
-\hline \\
-B(n, p)             & {n\choose x}p^x q^{n-x}                                                         &  & np               & npq                 & (pe^t + q)^n
-\\
-P(\lambda)          & \frac{\lambda^x}{x!}e^{-\lambda}                                                &  & \lambda          & \lambda             & e^{\lambda(e^t-1)}
-\\
-G(p)                & q^{x-1}p                                                                        &  & \frac{1}{p}      & \frac{q}{p^2}       & \frac{pe^t}{1-qe^t}
-\\
-B^-(r, p)           & {n-1 \choose r-1}p^rq^{n-r}                                                     &  & \frac{r}{p}      & \frac{rq}{p^2}      & \left(\frac{pe^t}{1-qe^t}\right)^r
-\\
-U(a, b)             & \indic{a\leq x\leq b}\frac 1 {b-a}                                          &  & \frac{1}{2}(a+b) & \frac{1}{12}(b-a)^2 & \frac{e^{tb} - e^{ta}}{t(b-a)}
-\\
-Exp(\lambda)        & \indic{0 \leq x}\lambda e^{-\lambda x}                                      &  & \frac 1 \lambda  & \frac 1 {\lambda^2} & \frac \lambda {\lambda - t}
-\\
-\Gamma(s, \lambda)  & \indic{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} &  & \frac s \lambda  & \frac s {\lambda^2} & \left( \frac{\lambda}{\lambda - t} \right)^s \\
-N(\mu, \sigma^2)    & \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}                    &  & \mu              & \sigma^2            & e^{\mu t + \frac{1}{2}\sigma^2 t^2}
-\end{align*}
-
-\begin{itemize}
-\tightlist
-\item
-  Why you need the Stieltjes Integral: let
-  \(X \sim B(n, \frac 1 2), Y \sim U(0, 1),\) and
-  \begin{align*}
-  Z = 
-  \begin{cases}
-  X, & $X = 1$ \\
-  Y, & else
-  \end{cases}
-  \end{align*} then \(\abs{Z} = \abs{\RR}\) so \(Z\) is not discrete,
-  but \(P(X = 1) = \frac 1 2 \neq 0\) so \(Z\) is not continuous.
-  Definition:
-  \begin{align*}  
-  \int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)
-  .\end{align*}
-\end{itemize}
+\hypertarget{combinatorics}{%
+\section{Combinatorics}\label{combinatorics}}
 
 \hypertarget{notation-4}{%
 \subsection{Notation}\label{notation-4}}
@@ -7070,7 +7129,7 @@ Inclusion-Exclusion:
 \end{align*}
 
 \hypertarget{the-important-numbers}{%
-\section{The Important Numbers}\label{the-important-numbers}}
+\subsection{The Important Numbers}\label{the-important-numbers}}
 
 \begin{itemize}
 \tightlist
@@ -7178,7 +7237,7 @@ Inclusion-Exclusion:
 \end{itemize}
 
 \hypertarget{common-problems-1}{%
-\subsection{Common Problems}\label{common-problems-1}}
+\subsubsection{Common Problems}\label{common-problems-1}}
 
 \begin{itemize}
 \tightlist
@@ -7197,7 +7256,7 @@ Inclusion-Exclusion:
 Coupon Collectors Problem
 
 \hypertarget{the-twelvefold-way}{%
-\subsection{The Twelvefold Way}\label{the-twelvefold-way}}
+\subsubsection{The Twelvefold Way}\label{the-twelvefold-way}}
 
 Consider a function \(f: N \to K\) where \(\abs{N}=n, \abs{K} = k\).
 
@@ -7411,8 +7470,8 @@ f(x) =
 \end{align*}
 \end{quote}
 
-\hypertarget{my-common-mistakes}{%
-\section{My Common Mistakes}\label{my-common-mistakes}}
+\hypertarget{common-mistakes}{%
+\section{Common Mistakes}\label{common-mistakes}}
 
 \begin{align*}
 -x^{-2} &\neq \int x^{-1} = \int \frac{1}{x} = \ln x \\ 
@@ -7433,12 +7492,8 @@ Exponentials: when in doubt, write \(a^b = e^{b\ln a}\)
 \sum x^k = \frac{1}{1-x} \neq \frac{1}{1+x} = \sum (-1)^k x^k
 \end{align*}
 
-\hypertarget{definitions-3}{%
-\subsection{Definitions}\label{definitions-3}}
-
-\begin{align*}
-e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n
-\end{align*}
+\hypertarget{appendix-1}{%
+\section{Appendix 1}\label{appendix-1}}
 
 \hypertarget{neat-tricks}{%
 \subsection{Neat Tricks}\label{neat-tricks}}
@@ -7971,15 +8026,15 @@ RPP, \(k=2\)\strut
 \subsection{Hyperbolic Functions}\label{hyperbolic-functions}}
 
 \begin{align*}
-\cosh(x)    &= \frac{1}{2}(e^x + e^{-x}) \\
-\sinh(x)    &= \frac{1}{2}(e^x - e^{-x}) \\
-\cos(iz)    &= \cosh z \\
-\cosh(iz)   &= \cos z \\
-\sin(iz)    &= \sinh z \\
-\sinh(iz)   &= \sin z \\
-\sinh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2+1}) \\
-\cosh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2-1}) \\
-\tanh^{-1}x &= \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
+\cosh(x)    & = \frac{1}{2}(e^x + e^{-x}) \\
+\sinh(x)    & = \frac{1}{2}(e^x - e^{-x}) \\
+\cos(iz)    & = \cosh z \\
+\cosh(iz)   & = \cos z \\
+\sin(iz)    & = \sinh z \\
+\sinh(iz)   & = \sin z \\
+\sinh^{-1}x & = ? \quad = \ln(x + \sqrt{x^2+1}) \\
+\cosh^{-1}x & = ? \quad = \ln(x + \sqrt{x^2-1}) \\
+\tanh^{-1}x & = \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
 \end{align*}
 
 \hypertarget{integral-tables}{%
@@ -8012,8 +8067,12 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
 ?                                        &  & ?                       &  & ?
 \end{align*}
 
-\hypertarget{definitions-4}{%
-\section{Definitions}\label{definitions-4}}
+\hypertarget{definitions-3}{%
+\section{Definitions}\label{definitions-3}}
+
+\begin{align*}  
+e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n
+.\end{align*}
 
 \hypertarget{set-theory}{%
 \subsection{Set Theory}\label{set-theory}}
@@ -8021,19 +8080,19 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
 \begin{itemize}
 \item
   Injectivity
-  \begin{align*}
-    f:X \to Y \text{ injective } \iff \forall x_1,x_2 \in X,\quad  f(x_1) = f(x_2) \implies x_1 = x_2 \\ \iff \forall x_1,x_2 \in X,\quad x_1 \neq x_2 \implies f(x_1) \neq f(x_2)
-    \end{align*}
+  \begin{align*}  
+  f:X \to Y \text{ injective } \iff \forall x_1,x_2 \in X,\quad  f(x_1) = f(x_2) \implies x_1 = x_2 \\ \iff \forall x_1,x_2 \in X,\quad x_1 \neq x_2 \implies f(x_1) \neq f(x_2)
+  .\end{align*}
 \item
   Surjectivity
-  \begin{align*}
-    f:X \to Y \text{ surjective } \iff \forall y\in Y,~ \exists x\in X : f(x) = y
-    \end{align*}
+  \begin{align*}  
+  f:X \to Y \text{ surjective } \iff \forall y\in Y,~ \exists x\in X : f(x) = y
+  .\end{align*}
 \item
   Preimage
-  \begin{align*}
-    f:X \to Y, U \subseteq Y \implies f^{-1}(U) = \theset{x \in X : f(x) \in U}
-    \end{align*}
+  \begin{align*}  
+  f:X \to Y, U \subseteq Y \implies f^{-1}(U) = \theset{x \in X : f(x) \in U}
+  .\end{align*}
 \end{itemize}
 
 \hypertarget{calculus}{%
@@ -8043,9 +8102,9 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
 \item
   Limit
   \begin{align*}
-    \lim_{x \to p} f(x) = L \iff \forall\varepsilon,~\exists\delta:\\
-    d(x, p) < \delta\implies d(f(x), L) < \varepsilon
-    \end{align*}
+  \lim_{x \to p} f(x) = L \iff \forall\varepsilon,~\exists\delta:\\
+  d(x, p) < \delta\implies d(f(x), L) < \varepsilon
+  \end{align*}
 \item
   Continuity
 
@@ -8053,22 +8112,22 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
   \item
     Epsilon-delta definition:
     \begin{align*}
-      f:X \to Y \text{ continuous at } p \iff
-      \forall \varepsilon,~ \exists\delta:\\
-      d_X(x, p) < \delta \implies d_Y(f(x), f(p)) < \varepsilon
-      \end{align*}
+    f:X \to Y \text{ continuous at } p \iff
+    \forall \varepsilon,~ \exists\delta:\\
+    d_X(x, p) < \delta \implies d_Y(f(x), f(p)) < \varepsilon
+    \end{align*}
   \item
     Limit/Sequential definition:
     \begin{align*}
-      f:X \to Y \text{ continuous at } p \iff
-      \forall \theset{x_i}_{i\in \NN}\subseteq X: \theset{x_i}\to p,\\
-      \lim_{i\to\infty}f(x_i) = f(\lim_{i\to\infty}x_i) = f(p)
-      \end{align*}
+    f:X \to Y \text{ continuous at } p \iff
+    \forall \theset{x_i}_{i\in \NN}\subseteq X: \theset{x_i}\to p,\\
+    \lim_{i\to\infty}f(x_i) = f(\lim_{i\to\infty}x_i) = f(p)
+    \end{align*}
   \item
     Topological Definition:
-    \begin{align*}
-      f:X \to Y \text{ continuous } \iff U \text{ open in } \im(f) \subseteq Y \implies f^{-1}(U) \text{ open in } X  
-      \end{align*}
+    \begin{align*}  
+    f:X \to Y \text{ continuous } \iff U \text{ open in } \im(f) \subseteq Y \implies f^{-1}(U) \text{ open in } X  
+    .\end{align*}
   \end{itemize}
 \item
   Differentiability and the Derivative
@@ -8077,21 +8136,21 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
   \item
     For single variable functions:
     \begin{align*}
-      f:\RR \to \RR ~\text{differentiable at } p \iff
-      \forall \theset{x_i}_{i\in \NN}\to p,\\
-      f'(p) \definedas \lim_{i\to\infty} \frac{f(x_i) - f(p)}{x_i - p}< \infty
-      \end{align*}
+    f:\RR \to \RR ~\text{differentiable at } p \iff
+    \forall \theset{x_i}_{i\in \NN}\to p,\\
+    f'(p) \definedas \lim_{i\to\infty} \frac{f(x_i) - f(p)}{x_i - p}< \infty
+    \end{align*}
   \item
     For multivariable functions:
     \begin{align*}
-      \mathbf{f}:\RR^n \to \RR^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:\RR^n \to \RR^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_ {\RR^n}} { \| \mathbf { h } \|_ {\RR^m} } = 0
-      \end{align*}
+    \mathbf{f}:\RR^n \to \RR^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:\RR^n \to \RR^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_ {\RR^n}} { \| \mathbf { h } \|_ {\RR^m} } = 0
+    \end{align*}
   \end{itemize}
 \item
   Gradient
-  \begin{align*}
+  \begin{align*}  
   \nabla f = [f_x, f_y, f_z]
-  \end{align*}
+  .\end{align*}
 \item
   Divergence
 \item
@@ -8103,24 +8162,36 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
   \tightlist
   \item
     Single Variable \(\RR \to \RR\)
-    \begin{align*}
-      T_a(x) = f ( a ) + \frac { f ^ { \prime } ( a ) } { 1 ! } ( x - a ) + \frac { f ^ { \prime \prime } ( a ) } { 2 ! } ( x - a ) ^ { 2 } + \frac { f ^ { \prime \prime \prime } ( a ) } { 3 ! } ( x - a ) ^ { 3 } + \cdots \\ \implies T_a(x) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }
-      \end{align*}
+  \end{itemize}
+
+  \begin{align*}  
+    T_a(x) = f ( a ) + \frac { f ^ { \prime } ( a ) } { 1 ! } ( x - a ) + \frac { f ^ { \prime \prime } ( a ) } { 2 ! } ( x - a ) ^ { 2 } + \frac { f ^ { \prime \prime \prime } ( a ) } { 3 ! } ( x - a ) ^ { 3 } + \cdots \\ \implies T_a(x) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }
+  .\end{align*}
+
+  \begin{itemize}
+  \tightlist
   \item
     Multivariable \(\RR^n \to \RR\):
-    \begin{align*}
-      T_a(\mathbf x) = f(\mathbf a) + (\mathbf x - \mathbf a)^T\nabla f(\mathbf a)
-      \end{align*}
+  \end{itemize}
+
+  \begin{align*}  
+    T_a(\mathbf x) = f(\mathbf a) + (\mathbf x - \mathbf a)^T\nabla f(\mathbf a)
+  .\end{align*}
+
+  \begin{itemize}
+  \tightlist
   \item
     Multivariable \(\RR^n \to \RR^m\):
-    \begin{align*}
-      T_{(a,b)} ( x , y ) = f ( a , b ) + ( x - a ) f _ { x } ( a , b ) + ( y - b ) f _ { y } ( a , b ) + \\ \frac { 1 } { 2 ! } \left( ( x - a ) ^ { 2 } f _ { x x } ( a , b ) + 2 ( x - a ) ( y - b ) f _ { y y  } ( a , b ) + ( y - b ) ^ { 2 } f _ { y x } ( a , b ) \right) + \cdots
-      \end{align*}
-    \begin{align*}
-      T_a ( \mathbf { x } ) = f ( \mathbf { a } ) + ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{J} ( \mathbf { a } ) + \frac { 1 } { 2 ! } ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{H} ( \mathbf { a } ) ( \mathbf { x } - \mathbf { a } ) + \cdots \\
-      \implies T_a ( \mathbf { x } ) = \sum _ { | \alpha | \geq 0 } \frac { ( \mathbf { x } - \mathbf { a } ) ^ { \alpha } } { \alpha ! } \left( \partial ^ { \alpha } f \right) ( \mathbf { a } )
-      \end{align*}
   \end{itemize}
+
+  \begin{align*}  
+    T_{(a,b)} ( x , y ) = f ( a , b ) + ( x - a ) f _ { x } ( a , b ) + ( y - b ) f _ { y } ( a , b ) + \\ \frac { 1 } { 2 ! } \left( ( x - a ) ^ { 2 } f _ { x x } ( a , b ) + 2 ( x - a ) ( y - b ) f _ { y y  } ( a , b ) + ( y - b ) ^ { 2 } f _ { y x } ( a , b ) \right) + \cdots
+  .\end{align*}
+
+  \begin{align*}
+    T_a ( \mathbf { x } ) = f ( \mathbf { a } ) + ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{J} ( \mathbf { a } ) + \frac { 1 } { 2 ! } ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{H} ( \mathbf { a } ) ( \mathbf { x } - \mathbf { a } ) + \cdots \\
+    \implies T_a ( \mathbf { x } ) = \sum _ { | \alpha | \geq 0 } \frac { ( \mathbf { x } - \mathbf { a } ) ^ { \alpha } } { \alpha ! } \left( \partial ^ { \alpha } f \right) ( \mathbf { a } )
+    \end{align*}
 \end{itemize}
 
 \hypertarget{analysis}{%
@@ -8132,9 +8203,9 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
   \(x \in \RR \implies \exists n\in \NN:~ x < n \annd x > 0 \implies \exists n:~ \frac{1}{n} < x\)
 \item
   Upper Bound (for S \(\subseteq \RR\))
-  \begin{align*}
-    \alpha\text{ is an upper bound for } S \iff s \in S \implies s < \alpha
-    \end{align*}
+  \begin{align*}  
+  \alpha\text{ is an upper bound for } S \iff s \in S \implies s < \alpha
+  .\end{align*}
 \item
   Triangle Inequality
 
@@ -8155,14 +8226,14 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
   \end{itemize}
 \item
   Least Upper Bound / Supremum (for S \(\subseteq \RR\))
-  \begin{align*}
-    \alpha\text{ is a LUB for } S \iff s \in S \implies s < \alpha \annd \forall t : (s \in S \implies s < t),~ \alpha < t
-    \end{align*}
+  \begin{align*}  
+  \alpha\text{ is a LUB for } S \iff s \in S \implies s < \alpha \annd \forall t : (s \in S \implies s < t),~ \alpha < t
+  .\end{align*}
 \item
   Greatest Lower Bound / Infimum (for S \(\subseteq \RR\))
-  \begin{align*}
-    \alpha\text{ is a GLB for } S \iff s \in S \implies \alpha < s \annd \forall t : (s \in S \implies t < s),~ t < \alpha
-    \end{align*}
+  \begin{align*}  
+  \alpha\text{ is a GLB for } S \iff s \in S \implies \alpha < s \annd \forall t : (s \in S \implies t < s),~ t < \alpha
+  .\end{align*}
 \item
   Open Set
 \item
@@ -8179,27 +8250,29 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
   Metric
 \item
   Cauchy Sequence:
-  \begin{align*}\theset{a_i} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in\NN: \quad m,n > N \implies d(x_m, x_n) < \varepsilon \end{align*}
+  \begin{align*}  
+  \theset{a_i} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in\NN: \quad m,n > N \implies d(x_m, x_n) < \varepsilon
+  .\end{align*}
 \item
   Connected: \(S\) is connected \(\iff\) \(\not\exists U,V\subset S\)
   nonempty, open, disjoint such that \(S = U \cup V\)
 \item
   Compact: Every open cover has a finite subcover:
-  \begin{align*}
+  \begin{align*}  
   X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty \annd X\subseteq \union_{i\in I} V_i
-  \end{align*}
+  .\end{align*}
 \item
   Sequential Compactness Every sequence has a convergent subsequence:
-  \begin{align*}
+  \begin{align*}  
   \theset{x_i}_{i\in I}\subseteq X \implies \exists J\subseteq I,~ \exists p\in X: \quad \theset{x_j}_{j\in J} \to p
-  \end{align*}
+  .\end{align*}
 \item
   Bounded (sequences, subsets, metric spaces)
-  \begin{align*}
+  \begin{align*}  
   U \subseteq X \text{ is bounded } \iff \exists x\in X, \exists M \in \RR :\quad u\in U \implies d(x, u) < M
-  \end{align*}
+  .\end{align*}
 \item
-  Totally Bounded asdsa\#todo
+  Totally Bounded \todo[inline]{todo}
 \item
   Pointwise Convergence
   \begin{align*}
@@ -8216,9 +8289,9 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
   \end{align*}
 \item
   Generalized Mean Value Theorem
-  \begin{align*}
+  \begin{align*}  
   (f ( b ) - f ( a ) ) g' ( c ) = (g ( b ) - g ( a )) f' ( c )
-  \end{align*}
+  .\end{align*}
 \end{itemize}
 
 \hypertarget{linear-algebra-1}{%
@@ -8245,17 +8318,14 @@ generic linear map (or \(m\times n\) matrix).
 \item
   Elementary Matrix
 \item
-\item
   Row Equivalent
 \item
-\item
   Pivot
-\item
 \item
   Cofactor
 \end{itemize}
 
-\begin{align*}
+\begin{align*}  
 \mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}
 \end{align*} where \(M_{i, j}\) is the minor obtained by deleting the
 \(i\dash\)th row and \(j\dash\)th column of \(A\).
@@ -8263,9 +8333,9 @@ generic linear map (or \(m\times n\) matrix).
 \begin{itemize}
 \item
   Adjugate
-  \begin{align*}
+  \begin{align*}  
   \mathrm{adjugate}(A) = \mathrm{cofactor}(A)^T = (-1)^{i+j} M_{j, i}
-  \end{align*}
+  .\end{align*}
 \item
   Vector Space Axioms
 
@@ -8314,9 +8384,9 @@ generic linear map (or \(m\times n\) matrix).
   \item
     A nonempty subset \(W \subseteq V\) that is a vector space and
     satisfies
-    \begin{align*}
+    \begin{align*}  
     \theset{ \sum_i c_i \vector x_i \mid c_i \in \FF,~ x_i \in W} \subseteq W
-    \end{align*}
+    .\end{align*}
   \item
     Quick counter-check: find \(\vector x, \vector y\) such that
     \(a\vector x + b\vector y \not\in W\)
@@ -8324,23 +8394,22 @@ generic linear map (or \(m\times n\) matrix).
 \item
   Span Given a set of \(n\) vectors
   \(S = \theset{\vector x_i}_{i=1}^n\), defined as
-  \begin{align*}
+  \begin{align*}  
   \mathrm{Span}(S) = \theset{\sum_{i=1}^nc_i \vector x_i \mid c_i \in k}
-  \end{align*}
+  .\end{align*}
 \item
   Row Space
 
   \begin{itemize}
-  \tightlist
   \item
     The range of the linear map \(T\).
   \item
     Given
     \(T = \begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}\),
     defined as
-    \begin{align*}
+    \begin{align*}  
     \mathrm{Span}(\theset{\vector x_i}_{i=1}^m) \subseteq k^m
-    \end{align*}
+    .\end{align*}
   \item
     \(\mathrm{rowspace}(T)\perp = \mathrm{null}(T)\)
   \item
@@ -8408,9 +8477,9 @@ generic linear map (or \(m\times n\) matrix).
     \(i\).
   \item
     Can be detected by considering the matrix
-    \begin{align*}
+    \begin{align*}  
       T = [\vector x_1, \vector x_2, \cdots, \vector x_n]^T
-      \end{align*} (linearly independent iff \(T\) is singular)
+    .\end{align*} (linearly independent iff \(T\) is singular)
   \end{itemize}
 \item
   Rank
@@ -8490,9 +8559,9 @@ generic linear map (or \(m\times n\) matrix).
   \item
     The projection of a vector \(\vector v\) onto a space
     \(U = \mathrm{Span}(\theset{\vector u_i})\) is given by
-    \begin{align*}
+    \begin{align*}  
       P_U(\vector v) = \sum_i P_{\vector u_i}(\vector v) = \sum_i \left< \vector u_i, \vector v\right> \hat u_i
-      \end{align*}
+    .\end{align*}
   \end{itemize}
 \item
   Orthogonal Complement
@@ -8505,12 +8574,14 @@ generic linear map (or \(m\times n\) matrix).
   \end{itemize}
 \item
   Determinant
-  \begin{align*}
-    \det(A) = \sum_{\tau \in S^n}\prod_{i=1}^n \sigma(\tau) a_{i, \tau(i)}
-    \end{align*}
+  \begin{align*}  
+  \det(A) = \sum_{\tau \in S^n}\prod_{i=1}^n \sigma(\tau) a_{i, \tau(i)}
+  .\end{align*}
 \item
   Trace
-  \begin{align*}\mathrm{Tr}(A) = \sum_{i=1}^n A_{ii}\end{align*}
+  \begin{align*}  
+  \mathrm{Tr}(A) = \sum_{i=1}^n A_{ii}
+  .\end{align*}
 \item
   Characteristic Polynomial
 
@@ -8562,7 +8633,9 @@ generic linear map (or \(m\times n\) matrix).
   \end{itemize}
 \item
   Orthogonal Projection of \(\vector x\) onto \(\vector y\):
-  \begin{align*}P(\vector x, \vector y) = \inner{\vector x}{\vector y} \hat y = \inner{\vector x}{\vector y} \frac{\vector y}{\norm{\vector y}^2}\end{align*}
+  \begin{align*}  
+  P(\vector x, \vector y) = \inner{\vector x}{\vector y} \hat y = \inner{\vector x}{\vector y} \frac{\vector y}{\norm{\vector y}^2}
+  .\end{align*}
 
   \begin{itemize}
   \tightlist
@@ -8582,14 +8655,14 @@ generic linear map (or \(m\times n\) matrix).
 \begin{itemize}
 \item
   Homogeneous
-  \begin{align*}
-    f(x, y) \text{ homogeneous of degree } n \iff \exists n\in\NN : f(tx, ty) = t^nf(x, y).
-    \end{align*}
+  \begin{align*}  
+  f(x, y) \text{ homogeneous of degree } n \iff \exists n\in\NN : f(tx, ty) = t^nf(x, y).
+  .\end{align*}
 \item
   Separable
-  \begin{align*}
-    p(y)\frac{dy}{dx} - q(x) = 0
-    \end{align*}
+  \begin{align*}  
+  p(y)\frac{dy}{dx} - q(x) = 0
+  .\end{align*}
 \item
   Wronskian:
   \begin{align*}
@@ -8597,13 +8670,13 @@ generic linear map (or \(m\times n\) matrix).
   \end{align*}
 \item
   Laplace Transform:
-  \begin{align*}
+  \begin{align*}  
   L_f(s) = \int_0^\infty e^{-st} f(t) ~dt
-  \end{align*}
+  .\end{align*}
 \end{itemize}
 
-\hypertarget{algebra}{%
-\subsection{Algebra}\label{algebra}}
+\hypertarget{algebra-1}{%
+\subsection{Algebra}\label{algebra-1}}
 
 \begin{itemize}
 \tightlist
@@ -8649,13 +8722,13 @@ generic linear map (or \(m\times n\) matrix).
 \item
   The Gamma Function: Satisfies \(\Gamma(p+1) + p\Gamma(p)\) and
   \(\Gamma(1) = 1\), defined as
-  \begin{align*}
+  \begin{align*}  
   \Gamma ( p ) = \int _ { 0 } ^ { \infty } t ^ { p - 1 } e ^ { - t } d t , \quad p > 0
-  \end{align*}
+  .\end{align*}
 \end{itemize}
 
-\hypertarget{algebra-1}{%
-\subsection{Algebra}\label{algebra-1}}
+\hypertarget{algebra-2}{%
+\subsection{Algebra}\label{algebra-2}}
 
 \begin{itemize}
 \item

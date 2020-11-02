@@ -1,8 +1,4 @@
-## Definitions
-
-$$
-e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n
-$$
+# Appendix 1
 
 ## Neat Tricks
 
@@ -131,6 +127,7 @@ $$
 \]
 
 ## Logic Identities
+
 - $P \implies Q \iff Q \orr \lnot P$
 - $P \implies Q \iff \lnot Q \implies \lnot P$
 - $P \orr(Q \annd S) \iff (P \orr Q) \annd (P \orr S)$
@@ -281,16 +278,17 @@ $p$ | $p \mid n \iff$                                     | Mnemonic
 
 
 ## Hyperbolic Functions
+
 \[
-\cosh(x)    &= \frac{1}{2}(e^x + e^{-x}) \\
-\sinh(x)    &= \frac{1}{2}(e^x - e^{-x}) \\
-\cos(iz)    &= \cosh z \\
-\cosh(iz)   &= \cos z \\
-\sin(iz)    &= \sinh z \\
-\sinh(iz)   &= \sin z \\
-\sinh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2+1}) \\
-\cosh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2-1}) \\
-\tanh^{-1}x &= \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
+\cosh(x)    & = \frac{1}{2}(e^x + e^{-x}) \\
+\sinh(x)    & = \frac{1}{2}(e^x - e^{-x}) \\
+\cos(iz)    & = \cosh z \\
+\cosh(iz)   & = \cos z \\
+\sin(iz)    & = \sinh z \\
+\sinh(iz)   & = \sin z \\
+\sinh^{-1}x & = ? \quad = \ln(x + \sqrt{x^2+1}) \\
+\cosh^{-1}x & = ? \quad = \ln(x + \sqrt{x^2-1}) \\
+\tanh^{-1}x & = \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
 \]
 
 ## Integral Tables
@@ -321,5 +319,3 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
 ?                                        &  & e^{ax}\cos(bx)          &  & \frac { 1 } { a ^ { 2 } + b ^ { 2 } } e ^ { a x } ( a \sin b x + b \cos b x ) \\
 ?                                        &  & ?                       &  & ?
 \]
-
-

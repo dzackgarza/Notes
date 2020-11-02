@@ -1,5 +1,5 @@
 
-## Differential Calculus
+# Differential Calculus
 
 ##  Big Theorems / Tools:
 
@@ -117,13 +117,10 @@ Approximating change: $\Delta y \approx f'(x) \Delta x$
 :::
 
 
-
-## Differential
-
-### Limits
+## Limits
 
 
-### Tools for finding limits
+## Tools for finding limits
 
 \todo[inline]{Examples}
 
@@ -165,7 +162,7 @@ Be careful: limits may not exist!!
 Example $:\lim_{x\to 0} \frac{1}{x} \neq 0$.
 :::
 
-### Asymptotes
+## Asymptotes
 
 - Vertical asymptotes: at values \(x=p\) where $\lim_{x\to p} = \pm\infty$
 - Horizontal asymptotes: given by points \(y=L\) where $L \lim_{x\to\pm\infty} f(x) < \infty$
@@ -177,12 +174,12 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 \]
 
 
-### Recurrences 
+## Recurrences
 
 - Limit of a recurrence: $x_n = f(x_{n-1}, x_{n-2}, \cdots)$
 	- If the limit exists, it is a solution to \(x = f(x)\)
 
-### Derivatives
+## Derivatives
 
 :::{.proposition title="Chain Rule"}
 \[
@@ -211,7 +208,7 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 \]
 :::
 
-### Implicit Differentiation
+## Implicit Differentiation
 
 \[
 (f(x))' = f'(x)~dx, (f(y))' = f'(y)~dy
@@ -221,7 +218,7 @@ f(x) = \frac{p(x)}{q(x)} = r(x) + \frac{s(x)}{t(x)} \sim r(x)
 - Obtaining derivatives of inverse functions: if \(y = f^{-1}(x)\) then write \(f(y) = x\) and implicitly differentiate.
 
 
-### Related Rates
+## Related Rates
 General series of steps: want to know some unknown rate \(y_t\)
 
 - Lay out known relation that involves \(y\)
@@ -243,9 +240,9 @@ x(t)^2 + y(t)^2 = l^2 \implies 2xx_t +2yy_t = 2ll_t = 0
 :::
 
 
-## Integral
+# Integral Calculus
 
-### Average Values
+## Average Values
 
 :::{.proposition title="Integral formula for average value"}
 \[
@@ -257,21 +254,21 @@ x(t)^2 + y(t)^2 = l^2 \implies 2xx_t +2yy_t = 2ll_t = 0
 Apply MVT to \(F(x)\).
 :::
 
-### Area Between Curves
+## Area Between Curves
 
 Area in polar coordinates: 
 $$
 A = \int_{r_1}^{r_2} \frac{1}{2}r^2(\theta) ~d\theta
 $$
 
-### Solids of Revolution
+## Solids of Revolution
 
 \[  
 \text{Disks} && A = \int \pi r(t)^2 ~dt \\
 \text{Cylinders} && A = \int 2\pi r(t)h(t) ~dt
 .\]
 
-### Arc Lengths
+## Arc Lengths
 
 \[
 L 
@@ -284,7 +281,7 @@ L
 SA = \int 2 \pi r(x) ~ds
 \]
 
-### Center of Mass
+## Center of Mass
 
 Given a density $\rho(\mathbf x)$ of an object $R$, the $x_i$ coordinate is given by
 \[
@@ -294,7 +291,7 @@ x_i =
 {\displaystyle\int_R \rho(x)~dx}
 \]
 
-### Big List of Integration Techniques
+## Big List of Integration Techniques
 
 Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\frac{\partial}{\partial x}F(x) = f(x)$
 
@@ -305,7 +302,7 @@ Given $f(x)$, we want to find an antiderivative $F(x) = \int f$ satisfying $\fra
   x = g(u) \implies \int_a^b f(x)~dx = \int_{g^{-1}(a)}^{g^{-1}(b)} (f\circ g)(x) ~g'(x)~dx
   \]
 
-####  Integration by Parts:
+###  Integration by Parts:
 
 The standard form:
 \[
@@ -322,7 +319,7 @@ The standard form:
 \]
 - Generally useful when one term's \(n\)th derivative is a constant.
 
-#### Shoelace Method
+### Shoelace Method
 
 - Note: you can choose \(u\) or \(v\) equal to 1! Useful if you know the derivative of the integrand.
 
@@ -336,7 +333,7 @@ $\vdots$    | $\vdots$     | $\vdots$ | $\vdots$
 Fill out until one column is zero (alternate signs). Get the result column by multiplying diagonally, then sum down the column.
 
 
-#### Differentiating under the integral
+### Differentiating under the integral
 \[
 \frac{\partial}{\partial x} \int_{a(x)}^{b(x)} f(x, t) dt - \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) dt 
 &= f(x, \cdot)\frac{\partial}{\partial x}(\cdot) \bigg\rvert_{a(x)}^{b(x)} \\
@@ -378,9 +375,9 @@ For constants, this should allow differentiating under the integral when \(f, f_
 \sqrt{x^2 - a^2} && \Rightarrow && x = a \sec(\theta) &&dx = a\sec(\theta)\tan(\theta)~d\theta
 \]
 
-#### Partial Fractions
+### Partial Fractions
 
-#### Trigonometric Substitution
+### Trigonometric Substitution
 
 \todo[inline]{Completing the square}
 
@@ -414,7 +411,7 @@ Other small but useful facts:
 .\]
 
 
-### Optimization
+## Optimization
 
 - Critical points: boundary points and wherever \(f'(x) = 0\)
 - Second derivative test:
@@ -479,256 +476,6 @@ P: ax+by+cz=d
 \[  
 P: ax+by+cz=d
 .\]
-
-# Sequences
-
-Notation: $\theset{a_n}_{n\in\NN}$ is a **sequence**, $\displaystyle\sum_{i\in\NN} a_i$ is a **series**.
-
-
-## Known Examples
-
-- Known sequences: let \(c\) be a constant.
-\[
-c, c^2, c^3, \ldots 
-&= \theset{c^n}_{n=1}^\infty \to 0 
-&& \forall \abs{c} < 1 \\ \\ 
-\frac{1}{c},\frac{1}{c^2},\frac{1}{c^3},\ldots 
-&= \theset{\frac{1}{c^n}}_{n=1}^\infty \to 0 
-&&\forall  \abs{c} > 1 \\ \\
-1,\frac{1}{2^c},\frac{1}{3^c},\ldots 
-&= \theset{\frac{1}{n^c}}_{n=1}^\infty \to 0 
-&& \forall c > 0
-\]
-
-
-## Convergence
-
-:::{.definition title="Convergence of a Sequence"}
-A sequence $\ts{x_j}$ **converges** to $L$ iff 
-\[  
-\forall \varepsilon > 0,\, \exists N > 0 \text{ such that } \quad n\geq N \implies \abs{x_n - L} < \eps
-.\]
-:::
-
-
-:::{.theorem title="Squeeze Theorem"}
-\[
-b_n \leq a_n \leq c_n \text{ and } b_n,c_n \to L \implies a_n \to L
-\]
-:::
-
-:::{.theorem title="Monotone Convergence Theorem for Sequences"}
-If $\theset{a_j}$ monotone and bounded, then $a_j \to L = \lim\sup a_i < \infty$.
-:::
-
-:::{.theorem title="Cauchy Criteria"}
-$\abs{a_m - a_n} \to 0 \in \RR \implies \theset{a_i}$ converges.
-:::
-
-### Checklist
-
-
-- Is the sequence bounded?
-	- $\theset{a_i}$ not bounded $\implies$ not convergent
-	- If bounded, is it monotone?
-		- $\theset{a_i}$ bounded and monotone $\implies$ convergent
-- Use algebraic properties of limits
-
-- Epsilon-delta definition
-
-- Algebraic properties and manipulation: 
-
-  - Limits commute with $\pm, \times, \div$ and $\lim C = C$ for constants.
-
-	- E.g. Divide all terms by \(n\) before taking limit
-
-	- Clear denominators
-
-
-
-# Sums ("Series")
-
-:::{.definition title="Series"}
-A **series** is an function of the form
-\[  
-f(x) = \sum_{j=1}^\infty c_j x^j
-.\]
-:::
-
-## Known Examples
-
-### Conditionally Convergent
-\[
-\sum_{k=1}^\infty k^p &< \infty 
-&&\iff p \leq 1 \\
-\sum_{k=1}^\infty \frac{1}{k^p} &< \infty 
-&&\iff p > 1 \\
-\sum_{k=1}^\infty \frac{1}{k} &= \infty 
-&&
-\]
-
-### Convergent
-\[
-\sum_{n=1}^\infty \frac{1}{n^2}           & < \infty \\
-\sum_{n=1}^\infty \frac{1}{n^3}           & < \infty \\
-\sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} & < \infty \\
-\sum_{n=1}^\infty \frac{1}{n!}            & = e \\
-\sum_{n=1}^\infty \frac{1}{c^n}           & = \frac{c}{c-1} \\
-\sum_{n=1}^\infty (-1)^n \frac{1}{c^n}    & = \frac{c}{c+1} \\
-\sum_{n=1}^\infty (-1)^n \frac{1}{n}      & = \ln 2
-\]
-
-### Divergent
-
-\[
-\sum_{n=1}^\infty \frac{1}{n} = \infty \\
-\sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty 
-\]
-
-## Convergence
-
-> Useful reference: <http://math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf>
-
-:::{.definition title="Absolutely Convergent"}
-\todo[inline]{todo}
-:::
-
-:::{.remark}
-$a_n\to 0$ does not imply $\sum a_n < \infty$. 
-Counterexample: the harmonic series.
-:::
-
-:::{.proposition title="?"}
-Absolute convergence $\implies$ convergence
-:::
-
-
-:::{.proposition title="The Cauchy Criterion"}
-\[
-\limsup a_i \to 0 \implies \sum a_i \text{ converges }
-\]
-:::
-
-### The Big Tests
-
-:::{.theorem title="Comparison Test"}
-\envlist
-- $a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty$
-- $b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty$
-:::
-
-:::{.theorem title="Ratio Test"}
-\[
-R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
-\]
-
-- \(R < 1\): absolutely convergent
-- \(R > 1\): divergent
-- \(R = 1\): inconclusive
-
-:::
-
-:::{.theorem title="Root Test"}
-\[
-R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
-\]
-- \(R < 1\): convergent
-- \(R > 1\): divergent
-- \(R = 1\): inconclusive
-:::
-
-:::{.theorem title="Integral Test"}
-\[
-f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
-\]
-:::
-
-:::{.theorem title="Limit Test"}
-\[
-\lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty
-\]
-:::
-
-:::{.theorem title="Alternating Series Test"}
-\[
-a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty
-\]
-:::
-
-:::{.theorem title="Weierstrass $M\dash$Test"}
-\[
-\sum_{n=1}^\infty \norm{f_n}_\infty < \infty 
-\implies \exists f\text{ such that } \norm{ \sum_{n=1}^\infty f_n - f}_\infty \to 0
-\]
-In other words, the series converges uniformly.
-
-> Slogan: Convergence of the sup norms implies uniform convergence"
-
-:::
-
-:::{.remark}
-The \(M\) in the name comes from defining $\sup\theset{f_k(x)} \da M_n$ and requiring $\sum \abs{M_n} < \infty$.
-:::
-
-
-  
-
-
-### Checklist 
-
-- Do the terms tend to zero?
-	- $a_i \not\to 0 \implies \sum a_i = \infty$.
-		- Can check with L'Hopital's rule
-- There are exactly 6 tests at our disposal:
-	- Comparison, root, ratio, integral, limit, alternating
-- Is the series alternating?
-	- If so, does $a_n \downarrow 0$?
-		- If so, **convergent**
-- Is this series bounded above by a known convergent series?
-	- \(p\) series with \(p>1\), i.e. : $\sum a_n \leq \sum \frac{1}{n^p} < \infty$
-	- Geometric series with $\abs{x} < 1$, i.e. $\sum a_n \leq \sum x^n$
-- Is this series bounded below by a known divergent series?
-	- \(p\) series with $p\leq 1$, i.e. $\infty = \sum \frac{1}{n^p} \leq \sum a_i$
-- Are the ratios strictly less than or greater than 1?
-	- $<1 \implies$ **convergent**
-	- $>1 \implies$ **convergent**
-- Does the integral analogue converge?
-	- Integral converges $\iff$ sum converges
-- Try the root test
-	- $<1 \implies$ **convergent**
-	- $>1 \implies$ **convergent**
-- Try the limit test
-	- Attempt to divide each term to obtain a known convergent/divergent series
-
-Some Pattern Recognition:
-
-- $(\text{stuff})!$: Ratio test (only test that will work with factorials!!)
-- $(\text{stuff})^n$: Root test or ratio test
-- Replace \(a_n\) with an \(f(x)\) that's easy to integrate - integral test
-- \(p(x)\) or $\sqrt{p(x)}$: comparison or limit test
-
-## Radius of Convergence
-
-:::{.proposition title="Finding the radius of convergence"}
-Use the fact that 
-\[
-\lim_{k\to\infty} \abs{\frac{a_{k+1}x^{k+1}}{a_kx^k}} 
-= \abs{x}\lim_{k\to\infty} \abs{\frac{a_{k+1}}{a_k}} < 1 
-\implies \sum a_k x^k < \infty
-,\]
-so take $L \da \lim_{k\to\infty} \frac{a_{k+1}}{a_k}$ and then obtain the radius as 
-\[
-R = \frac{1}{L} = \lim_{k\to\infty} {a_k \over a_{k+1}}
-\]
-:::
-
-:::{.remark}
-\envlist
-- Note $L=0 \implies$ absolutely convergent everywhere
-- $L = \infty \implies$ convergent only at $x=0$.
-- Also need to check endpoints \(R, -R\) manually.
-:::
-
 
 # Vector Calculus
 
@@ -1272,6 +1019,8 @@ For any $f: \RR^n \to \RR^n$ and region $R$,
 \[
 \int _ { g ( R ) } f ( \mathbf { x } ) ~d V = \int _ { R } (f  \circ g) ( \mathbf { x } )  \cdot \abs{D_g  ( \mathbf { x })} ~d V
 \]
+
+# Vector Calculus
 
 ## Notation
 
@@ -2415,9 +2164,9 @@ $$
 
 
 
-## Advanced Topics
+# Linear Algebra: Advanced Topics
 
-### Changing Basis
+## Changing Basis
 
 :::{.proposition title="Changing to the standard basis"}
 The transition matrix from a given basis $\mathcal{B} = \ts{\vector b_i}_{i=1}^n$ to the standard basis is given by 
@@ -2434,7 +2183,7 @@ and the transition matrix from the standard basis to $\mathcal{B}$ is $A\inv$.
 
 
 
-### Orthogonal Matrices
+## Orthogonal Matrices
 
 Given a notion of orthogonality for vectors, we can extend this to matrices. A square matrix is said to be orthogonal iff $QQ^T = Q^TQ = I$. For rectangular matrices, we have the following characterizations:
 \[
@@ -2446,7 +2195,7 @@ To remember which condition is which, just recall that matrix multiplication $AB
 
 
 
-### Projections
+## Projections
 
 :::{.remark}
 A projection $P$ induces a decomposition
@@ -2473,7 +2222,7 @@ P \approx {A^t A \over AA^t}
 
 With an inner product in hand and a notion of orthogonality, we can define a notion of **orthogonal projection** of one vector onto another, and more generally of a vector onto a subspace spanned by multiple vectors.
 
-#### Projection Onto a Vector
+### Projection Onto a Vector
  Say we have two vectors $\vector x$ and $\vector y$, and we want to define "the component of $\vector x$ that lies along $\vector y$", which we'll call $\vector p$. We can work out what the formula should be using a simple model:
 
 
@@ -2485,7 +2234,7 @@ We will find that $\lambda = \inner{\vector x}{\hat{\vector y}}$, and so
 
 Notice that we can then form a "residual" vector $\vector r = \vector x - \vector p$, which should satisfy $\vector r \perp \vector p$. If we were to let $\lambda$ vary as a function of a parameter $t$ (making $\vector r$ a function of $t$ as well) we would find that this particular choice minimizes $\norm{\vector r (t)}$.
 
-#### Projection Onto a Subspace
+### Projection Onto a Subspace
 
 In general, supposing one has a subspace $S = \mathrm{span}\theset{\vector y_1, \vector y_2, \cdots, \vector y_n}$ and (importantly!) the $\vector y_i$ are orthogonal, then the projection of $\vector p$ of $x$ onto $S$ is given by the sum of the projections onto each basis vector, yielding
 
@@ -2521,7 +2270,7 @@ Moreover, if $\vector v \in S\perp$, then $P_s(\vector v)$ must be zero.
 This follows by noting that in equation $\ref{projection_equation}$, every inner product appearing in the sum vanishes, by definition of $\vector v \in S\perp$, and so the projection is zero.
 
 
-#### Least Squares 
+### Least Squares
 
 :::{.proposition title="Normal Equations"}
 $\vector x$ is a least squares solution to 
@@ -2573,7 +2322,7 @@ The derivation proceeds by solving the equation
 \dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0.
 .\]
 
-### Normal Forms
+## Normal Forms
 
 :::{.remark}
 Every square matrix is similar to a matrix in Jordan canonical form.
@@ -2583,9 +2332,9 @@ Every square matrix is similar to a matrix in Jordan canonical form.
 [^projmatrix]: For a derivation of this formula, see the section on least-squares approximations.
 
 
-### Decompositions
+## Decompositions
 
-#### The QR Decomposition
+### The QR Decomposition
 
 Gram-Schmidt is often computed to find an orthonormal basis for, say, the range of some matrix $A$. With a small modification to this algorithm, we can write $A = QR$ where $R$ is upper triangular and $Q$ has orthogonal columns.
 
@@ -2618,11 +2367,11 @@ R =
 
 \todo[inline]{Explain shortcut for diagonal.}
 
-## Appendix: Lists of things to know
+# Appendix: Lists of things to know
 
 > Textbook: Leon, *Linear Algebra with Applications*
 
-### Topics
+## Topics
 
 - 1.6: Partition Matrices
 - 3.5: Change of Basis
@@ -2646,7 +2395,7 @@ R =
 - 7.7: The Moore-Penrose Pseudo-Inverse
   - *Final Exam*
 
-### Definitions 
+## Definitions
 
 - System of equations
 - Homogeneous system
@@ -2703,7 +2452,7 @@ R =
 - Positive-definite
 - Quadratic form
 
-### Lower-division review
+## Lower-division review
 
 - Systems of linear equations
   - Consistent vs. Inconsistent
@@ -2732,7 +2481,7 @@ R =
   - Construct matrix projection onto subspace
   - Convert a basis to an orthonormal basis
 
-### Things to compute 
+## Things to compute
 
 - Construct a matrix representing a linear map
   - With respect to the standard basis in both domain and range
@@ -2762,7 +2511,7 @@ R =
 - Compute the matrix for a projection onto a subspace
 - Find the QR factorization of a matrix
 
-### Things to prove 
+## Things to prove
 
 - Prove facts about block matrices
 - Prove facts about injective linear maps
@@ -2774,6 +2523,8 @@ R =
 - Understand when a matrix can be diagonalized
 - Prove facts about diagonalizable matrices
 - Prove facts about the orthogonal decomposition theorem
+
+# Ordinary Differential Equations
 
 ## Techniques Overview
 \[
@@ -2787,7 +2538,7 @@ P(D)y = f(x,y) && x^ke^{rx} \text{ for each root }
 
 *Where $e^{zx}$ yields $e^{ax}\cos bx, e^{ax}\sin bx$*
 
-## Ordinary Differential Equations
+## Types of Equations
 
 - Separable equations:
 $$p(y)\frac{dy}{dx} - q(x) = 0 \implies \int p(y) dy = \int q(x) dx + C$$
@@ -2960,6 +2711,10 @@ Counterexample: $\theset{x, x+x^2, 2x-x^2}$ where $W \equiv 0$ but $x+x^2 = 3(x)
 
 \todo[inline]{Sufficient condition: each $f_i$ is the solution to a linear homogeneous ODE $L(y) = 0$.}
 
+
+# Algebra
+
+\todo[inline]{This section is very sketchy!}
 
 ## To Sort
 
@@ -3500,6 +3255,274 @@ x^2 = 1 \mod n \implies x = \pm 1
 \]
 :::
 
+## Sequences in Metric Spaces
+
+:::{.theorem title="Bolzano-Weierstrass"}
+Every bounded sequence has a convergent subsequence.
+:::
+
+:::{.theorem title="Heine-Borel"}
+In $\RR^n, X$ is compact $\iff X$ is closed and bounded.
+:::
+
+:::{.remark}
+Necessity of $\RR^n$: $X = (\ZZ, d(x,y) = 1)$ is closed, complete, bounded, but not compact since $\theset{1,2,\cdots}$ has no convergent subsequence
+:::
+
+:::{.proposition title="Converse of Heine-Borel"}
+Converse holds iff bounded is replaced with totally bounded
+:::
+
+# Sequences
+
+Notation: $\theset{a_n}_{n\in\NN}$ is a **sequence**, $\displaystyle\sum_{i\in\NN} a_i$ is a **series**.
+
+
+## Known Examples
+
+- Known sequences: let \(c\) be a constant.
+\[
+c, c^2, c^3, \ldots 
+&= \theset{c^n}_{n=1}^\infty \to 0 
+&& \forall \abs{c} < 1 \\ \\ 
+\frac{1}{c},\frac{1}{c^2},\frac{1}{c^3},\ldots 
+&= \theset{\frac{1}{c^n}}_{n=1}^\infty \to 0 
+&&\forall  \abs{c} > 1 \\ \\
+1,\frac{1}{2^c},\frac{1}{3^c},\ldots 
+&= \theset{\frac{1}{n^c}}_{n=1}^\infty \to 0 
+&& \forall c > 0
+\]
+
+
+## Convergence
+
+:::{.definition title="Convergence of a Sequence"}
+A sequence $\ts{x_j}$ **converges** to $L$ iff 
+\[  
+\forall \varepsilon > 0,\, \exists N > 0 \text{ such that } \quad n\geq N \implies \abs{x_n - L} < \eps
+.\]
+:::
+
+
+:::{.theorem title="Squeeze Theorem"}
+\[
+b_n \leq a_n \leq c_n \text{ and } b_n,c_n \to L \implies a_n \to L
+\]
+:::
+
+:::{.theorem title="Monotone Convergence Theorem for Sequences"}
+If $\theset{a_j}$ monotone and bounded, then $a_j \to L = \lim\sup a_i < \infty$.
+:::
+
+:::{.theorem title="Cauchy Criteria"}
+$\abs{a_m - a_n} \to 0 \in \RR \implies \theset{a_i}$ converges.
+:::
+
+### Checklist
+
+
+- Is the sequence bounded?
+	- $\theset{a_i}$ not bounded $\implies$ not convergent
+	- If bounded, is it monotone?
+		- $\theset{a_i}$ bounded and monotone $\implies$ convergent
+- Use algebraic properties of limits
+
+- Epsilon-delta definition
+
+- Algebraic properties and manipulation: 
+
+  - Limits commute with $\pm, \times, \div$ and $\lim C = C$ for constants.
+
+	- E.g. Divide all terms by \(n\) before taking limit
+
+	- Clear denominators
+
+
+
+# Sums ("Series")
+
+:::{.definition title="Series"}
+A **series** is an function of the form
+\[  
+f(x) = \sum_{j=1}^\infty c_j x^j
+.\]
+:::
+
+## Known Examples
+
+### Conditionally Convergent
+\[
+\sum_{k=1}^\infty k^p &< \infty 
+&&\iff p \leq 1 \\
+\sum_{k=1}^\infty \frac{1}{k^p} &< \infty 
+&&\iff p > 1 \\
+\sum_{k=1}^\infty \frac{1}{k} &= \infty 
+&&
+\]
+
+### Convergent
+\[
+\sum_{n=1}^\infty \frac{1}{n^2}           & < \infty \\
+\sum_{n=1}^\infty \frac{1}{n^3}           & < \infty \\
+\sum_{n=1}^\infty \frac{1}{n^\frac{3}{2}} & < \infty \\
+\sum_{n=1}^\infty \frac{1}{n!}            & = e \\
+\sum_{n=1}^\infty \frac{1}{c^n}           & = \frac{c}{c-1} \\
+\sum_{n=1}^\infty (-1)^n \frac{1}{c^n}    & = \frac{c}{c+1} \\
+\sum_{n=1}^\infty (-1)^n \frac{1}{n}      & = \ln 2
+\]
+
+### Divergent
+
+\[
+\sum_{n=1}^\infty \frac{1}{n} = \infty \\
+\sum_{n=1}^\infty \frac{1}{\sqrt n} = \infty 
+\]
+
+## Convergence
+
+> Useful reference: <http://math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf>
+
+:::{.definition title="Absolutely Convergent"}
+\todo[inline]{todo}
+:::
+
+:::{.remark}
+$a_n\to 0$ does not imply $\sum a_n < \infty$. 
+Counterexample: the harmonic series.
+:::
+
+:::{.proposition title="?"}
+Absolute convergence $\implies$ convergence
+:::
+
+
+:::{.proposition title="The Cauchy Criterion"}
+\[
+\limsup a_i \to 0 \implies \sum a_i \text{ converges }
+\]
+:::
+
+### The Big Tests
+
+:::{.theorem title="Comparison Test"}
+\envlist
+- $a_n < b_n \and \sum b_n < \infty \implies \sum a_n < \infty$
+- $b_n < a_n \and \sum b_n = \infty \implies \sum a_n = \infty$
+:::
+
+:::{.theorem title="Ratio Test"}
+\[
+R =\lim_{n\to\infty} \abs{\frac{a_{n+1}}{a_n}}
+\]
+
+- \(R < 1\): absolutely convergent
+- \(R > 1\): divergent
+- \(R = 1\): inconclusive
+
+:::
+
+:::{.theorem title="Root Test"}
+\[
+R = \limsup_{n \to \infty} \sqrt[n]{\abs{a_n}}
+\]
+- \(R < 1\): convergent
+- \(R > 1\): divergent
+- \(R = 1\): inconclusive
+:::
+
+:::{.theorem title="Integral Test"}
+\[
+f(n) = a_n \implies \sum a_n < \infty \iff \int_1^\infty f(x) dx < \infty
+\]
+:::
+
+:::{.theorem title="Limit Test"}
+\[
+\lim_{n\to\infty}\frac{a_n}{b_n} = L < \infty \implies \sum a_n < \infty \iff \sum b_n < \infty
+\]
+:::
+
+:::{.theorem title="Alternating Series Test"}
+\[
+a_n \downarrow 0 \implies \sum (-1)^n a_n < \infty
+\]
+:::
+
+:::{.theorem title="Weierstrass $M\dash$Test"}
+\[
+\sum_{n=1}^\infty \norm{f_n}_\infty < \infty 
+\implies \exists f\text{ such that } \norm{ \sum_{n=1}^\infty f_n - f}_\infty \to 0
+\]
+In other words, the series converges uniformly.
+
+> Slogan: Convergence of the sup norms implies uniform convergence"
+
+:::
+
+:::{.remark}
+The \(M\) in the name comes from defining $\sup\theset{f_k(x)} \da M_n$ and requiring $\sum \abs{M_n} < \infty$.
+:::
+
+
+  
+
+
+### Checklist 
+
+- Do the terms tend to zero?
+	- $a_i \not\to 0 \implies \sum a_i = \infty$.
+		- Can check with L'Hopital's rule
+- There are exactly 6 tests at our disposal:
+	- Comparison, root, ratio, integral, limit, alternating
+- Is the series alternating?
+	- If so, does $a_n \downarrow 0$?
+		- If so, **convergent**
+- Is this series bounded above by a known convergent series?
+	- \(p\) series with \(p>1\), i.e. : $\sum a_n \leq \sum \frac{1}{n^p} < \infty$
+	- Geometric series with $\abs{x} < 1$, i.e. $\sum a_n \leq \sum x^n$
+- Is this series bounded below by a known divergent series?
+	- \(p\) series with $p\leq 1$, i.e. $\infty = \sum \frac{1}{n^p} \leq \sum a_i$
+- Are the ratios strictly less than or greater than 1?
+	- $<1 \implies$ **convergent**
+	- $>1 \implies$ **convergent**
+- Does the integral analogue converge?
+	- Integral converges $\iff$ sum converges
+- Try the root test
+	- $<1 \implies$ **convergent**
+	- $>1 \implies$ **convergent**
+- Try the limit test
+	- Attempt to divide each term to obtain a known convergent/divergent series
+
+Some Pattern Recognition:
+
+- $(\text{stuff})!$: Ratio test (only test that will work with factorials!!)
+- $(\text{stuff})^n$: Root test or ratio test
+- Replace \(a_n\) with an \(f(x)\) that's easy to integrate - integral test
+- \(p(x)\) or $\sqrt{p(x)}$: comparison or limit test
+
+## Radius of Convergence
+
+:::{.proposition title="Finding the radius of convergence"}
+Use the fact that 
+\[
+\lim_{k\to\infty} \abs{\frac{a_{k+1}x^{k+1}}{a_kx^k}} 
+= \abs{x}\lim_{k\to\infty} \abs{\frac{a_{k+1}}{a_k}} < 1 
+\implies \sum a_k x^k < \infty
+,\]
+so take $L \da \lim_{k\to\infty} \frac{a_{k+1}}{a_k}$ and then obtain the radius as 
+\[
+R = \frac{1}{L} = \lim_{k\to\infty} {a_k \over a_{k+1}}
+\]
+:::
+
+:::{.remark}
+\envlist
+- Note $L=0 \implies$ absolutely convergent everywhere
+- $L = \infty \implies$ convergent only at $x=0$.
+- Also need to check endpoints \(R, -R\) manually.
+:::
+
+
 # Real Analysis
 
 ## Notation
@@ -3578,6 +3601,10 @@ f,g\text{ differentiable on } [a,b] \implies \exists c\in[a,b] :
 
 ## Important Examples
 
+
+## Limits
+
+\todo[inline]{todo}
 
 ## Commuting Limits
 
@@ -3797,6 +3824,8 @@ There are no functions that are continuous on $\QQ$ but discontinuous on $\RR-\Q
 A continuous function on a compact space attains its extrema.
 :::
 
+
+### Lipschitz Continuity
 
 ## Differentiability
 
@@ -4069,35 +4098,7 @@ f_n \rightrightarrows f \iff \sup_{x\in X} \abs{f_n(x) - f(x)} \to 0
 - $f_n' \rightrightarrows f' \notimplies f_n \rightrightarrows f$
 	- Unless $f$ converges at one or more points.
 
-## Sequences and Metric Spaces
 
-:::{.theorem title="Bolzano-Weierstrass"}
-Every bounded sequence has a convergent subsequence.
-:::
-
-:::{.theorem title="Heine-Borel"}
-In $\RR^n, X$ is compact $\iff X$ is closed and bounded.
-:::
-
-:::{.remark}
-Necessity of $\RR^n$: $X = (\ZZ, d(x,y) = 1)$ is closed, complete, bounded, but not compact since $\theset{1,2,\cdots}$ has no convergent subsequence
-:::
-
-:::{.proposition title="Converse of Heine-Borel"}
-Converse holds iff bounded is replaced with totally bounded
-:::
-
-:::{.definition title="Sequential Compactness"}
-A topological space $X$ is **sequentially compact** iff every sequence $\ts{x_n}$ has a subsequence converging to a point in $X$.
-:::
-
-:::{.proposition title="Compactness and sequential compactness"}
-If $X$ is a metric space, $X$ is compact iff $X$ is sequentially compact.
-:::
-
-:::{.remark}
-Note that in general, neither form of compactness implies the other.
-:::
 
 :::{.proposition title="All subsequences of a convergent sequence share a limit"}
 $\theset{x_i} \to p \implies$ every subsequence also converges to $p$.
@@ -4201,15 +4202,58 @@ Counterexample: $\QQ\subset \QQ$ is closed but $\QQ\subset\RR$ is not.
 If $X$ is compact, then $Y \subset X \implies Y$ is compact $\iff$ $Y$ closed.
 :::
 
-## Limits
+:::{.definition title="Sequential Compactness"}
+A topological space $X$ is **sequentially compact** iff every sequence $\ts{x_n}$ has a subsequence converging to a point in $X$.
+:::
 
-## Continuity
+:::{.proposition title="Compactness and sequential compactness"}
+If $X$ is a metric space, $X$ is compact iff $X$ is sequentially compact.
+:::
 
-### Lipschitz Continuity
+:::{.remark}
+Note that in general, neither form of compactness implies the other.
+:::
 
-## Integrability
 
-# Topology
+## Counterexamples
+
+:::{.proposition title="?"}
+There are functions differentiable only at a single point.
+Example:
+\[  
+f(x) = 
+\begin{cases}
+x^2 & x\in QQ\\
+-x^2 & x\in \RR\sm\QQ
+\end{cases}
+.\]
+
+This is discontinuous everywhere except for $x=0$, and you can compute
+\[  
+\lim_{h\to 0} {f(x+h) - f(x) \over h}\evalfrom_{x=0} = 
+\lim_{h\to 0}
+\begin{cases}
+h & x\in \QQ \\
+-h & x\in \RR\sm\QQ 
+\end{cases}
+=0
+.\]
+:::
+
+:::{.proposition title="?"}
+The product of two non-differentiable functions can be differentiable: take $f(x) = g(x) = \abs{x}$ which are not differentiable at $x=0$, then $fg(x) = \abs{x}^2$ is differentiable at $x=0$.
+:::
+
+:::{.proposition title="?"}
+A continuous function that is zero on a dense set $A\subset X$ is identically zero.
+
+:::{.proof title="?"}
+Since $A$ is dense, for any $x\in X\sm A$ take a sequence $\ts{x_n}$ in $A$ converging to $x$.
+Then $0 = f(x_n) \to f(x)$ implies $f(x) = 0$.
+:::
+:::
+
+# Point-Set Topology
 
 ## Definitions
 
@@ -4291,8 +4335,9 @@ Checking if a map is homeomorphism:
 
 - $f$ continuous, $X$ compact and Hausdorff $\implies f$ is a homeomorphism.
 
-## Definitions
+# Probability 
 
+## Definitions
 \[
 L^2(X) &= \theset{f: X \to \RR: \int_\RR f(x) ~dx < \infty} 
 &&\text{square integrable functions}\\
@@ -4615,6 +4660,44 @@ $2.5$ | $0.97$
 $>3$  | $0.99$
 
 
+## Table of Distributions
+
+Table: let $q = 1-p$.
+
+
+\[
+\text{Distribution} & f(x)                                                                            &  & \mu              & \sigma^2            & M(t) \\
+\hline \\
+B(n, p)             & {n\choose x}p^x q^{n-x}                                                         &  & np               & npq                 & (pe^t + q)^n
+\\
+P(\lambda)          & \frac{\lambda^x}{x!}e^{-\lambda}                                                &  & \lambda          & \lambda             & e^{\lambda(e^t-1)}
+\\
+G(p)                & q^{x-1}p                                                                        &  & \frac{1}{p}      & \frac{q}{p^2}       & \frac{pe^t}{1-qe^t}
+\\
+B^-(r, p)           & {n-1 \choose r-1}p^rq^{n-r}                                                     &  & \frac{r}{p}      & \frac{rq}{p^2}      & \left(\frac{pe^t}{1-qe^t}\right)^r
+\\
+U(a, b)             & \indic{a\leq x\leq b}\frac 1 {b-a}                                          &  & \frac{1}{2}(a+b) & \frac{1}{12}(b-a)^2 & \frac{e^{tb} - e^{ta}}{t(b-a)}
+\\
+Exp(\lambda)        & \indic{0 \leq x}\lambda e^{-\lambda x}                                      &  & \frac 1 \lambda  & \frac 1 {\lambda^2} & \frac \lambda {\lambda - t}
+\\
+\Gamma(s, \lambda)  & \indic{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} &  & \frac s \lambda  & \frac s {\lambda^2} & \left( \frac{\lambda}{\lambda - t} \right)^s \\
+N(\mu, \sigma^2)    & \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}                    &  & \mu              & \sigma^2            & e^{\mu t + \frac{1}{2}\sigma^2 t^2}
+\]
+
+
+- Why you need the Stieltjes Integral: let $X \sim B(n, \frac 1 2), Y \sim U(0, 1),$ and
+\[
+Z = 
+\begin{cases}
+X, & $X = 1$ \\
+Y, & else
+\end{cases}
+\]
+then $\abs{Z} = \abs{\RR}$ so $Z$ is not discrete, but $P(X = 1) = \frac 1 2 \neq 0$ so $Z$ is not continuous. Definition:
+\[  
+\int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)
+.\]
+
 ## Common Problems
 
 - Birthday Paradox
@@ -4656,46 +4739,10 @@ M(t) = E[e^{Xt}]
 - $f_X = \mathcal{F}^{-1}(M_X(it))$, denoting the inverse Fourier transform,
 :::
 
-## Table of Distribution Info
 
-Table: let $q = 1-p$.
-
-
-\[
-\text{Distribution} & f(x)                                                                            &  & \mu              & \sigma^2            & M(t) \\
-\hline \\
-B(n, p)             & {n\choose x}p^x q^{n-x}                                                         &  & np               & npq                 & (pe^t + q)^n
-\\
-P(\lambda)          & \frac{\lambda^x}{x!}e^{-\lambda}                                                &  & \lambda          & \lambda             & e^{\lambda(e^t-1)}
-\\
-G(p)                & q^{x-1}p                                                                        &  & \frac{1}{p}      & \frac{q}{p^2}       & \frac{pe^t}{1-qe^t}
-\\
-B^-(r, p)           & {n-1 \choose r-1}p^rq^{n-r}                                                     &  & \frac{r}{p}      & \frac{rq}{p^2}      & \left(\frac{pe^t}{1-qe^t}\right)^r
-\\
-U(a, b)             & \indic{a\leq x\leq b}\frac 1 {b-a}                                          &  & \frac{1}{2}(a+b) & \frac{1}{12}(b-a)^2 & \frac{e^{tb} - e^{ta}}{t(b-a)}
-\\
-Exp(\lambda)        & \indic{0 \leq x}\lambda e^{-\lambda x}                                      &  & \frac 1 \lambda  & \frac 1 {\lambda^2} & \frac \lambda {\lambda - t}
-\\
-\Gamma(s, \lambda)  & \indic{0 \leq x} \frac{\lambda e^{-\lambda x} (\lambda x)^{s-1}}{\Gamma(s)} &  & \frac s \lambda  & \frac s {\lambda^2} & \left( \frac{\lambda}{\lambda - t} \right)^s \\
-N(\mu, \sigma^2)    & \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}                    &  & \mu              & \sigma^2            & e^{\mu t + \frac{1}{2}\sigma^2 t^2}
-\]
-
-
-- Why you need the Stieltjes Integral: let $X \sim B(n, \frac 1 2), Y \sim U(0, 1),$ and
-\[
-Z = 
-\begin{cases}
-X, & $X = 1$ \\
-Y, & else
-\end{cases}
-\]
-then $\abs{Z} = \abs{\RR}$ so $Z$ is not discrete, but $P(X = 1) = \frac 1 2 \neq 0$ so $Z$ is not continuous. Definition:
-\[  
-\int _ { a } ^ { b } g ( x ) ~d F ( x ) = \lim \sum _ { i = 1 } ^ { n } g \left( x _ { i } \right) \left( F \left( x _ { i } \right) - F \left( x _ { i - 1 } \right) \right)
-.\]
+# Combinatorics
 
 ## Notation
-
 \[
 S_n                                & = \theset{1,2,\ldots n}                                   &  & \text{the symmetric group} \\
 {n\choose k}                       & = \frac{n!}{k!(n-k)!}                                     &  & \text{binomial coefficient}\\
@@ -4725,7 +4772,7 @@ Inclusion-Exclusion:
 = \sum_{k=1}^n ~\sum_{i_1 < \cdots < i_k}  (-1)^{k+1} \abs{\intersect_{j=1}^k A_{i_j}}
 \]
 
-# The Important Numbers
+## The Important Numbers
 
 - Binomial Coefficients
 	- The Binomial Theorem: 
@@ -4764,7 +4811,7 @@ Inclusion-Exclusion:
 		- Example: 2 compositions of $5$ involving $1$ and $4$, given by $4+1$ and $1+4$, whereas there is only one such partition of $5$ given by $4+1$.
 	- Visualize with Young diagrams
 
-## Common Problems
+### Common Problems
 
 - Stars and Bars
 	- No two bars adjacent: $n-1\choose k-1$
@@ -4773,7 +4820,7 @@ Inclusion-Exclusion:
 Coupon Collectors Problem
 
 
-## The Twelvefold Way
+### The Twelvefold Way
 
 Consider a function $f: N \to K$ where $\abs{N}=n, \abs{K} = k$.
 
@@ -4907,7 +4954,7 @@ f(x) =
 \end{cases}
 \]
 
-# My Common Mistakes
+# Common Mistakes
 
 \[
 -x^{-2} &\neq \int x^{-1} = \int \frac{1}{x} = \ln x \\ 
@@ -4938,11 +4985,7 @@ Exponentials: when in doubt, write $a^b = e^{b\ln a}$
 
 
 
-## Definitions
-
-$$
-e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n
-$$
+# Appendix 1
 
 ## Neat Tricks
 
@@ -5071,6 +5114,7 @@ $$
 \]
 
 ## Logic Identities
+
 - $P \implies Q \iff Q \orr \lnot P$
 - $P \implies Q \iff \lnot Q \implies \lnot P$
 - $P \orr(Q \annd S) \iff (P \orr Q) \annd (P \orr S)$
@@ -5221,16 +5265,17 @@ $p$ | $p \mid n \iff$                                     | Mnemonic
 
 
 ## Hyperbolic Functions
+
 \[
-\cosh(x)    &= \frac{1}{2}(e^x + e^{-x}) \\
-\sinh(x)    &= \frac{1}{2}(e^x - e^{-x}) \\
-\cos(iz)    &= \cosh z \\
-\cosh(iz)   &= \cos z \\
-\sin(iz)    &= \sinh z \\
-\sinh(iz)   &= \sin z \\
-\sinh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2+1}) \\
-\cosh^{-1}x &= ? \quad = \ln(x + \sqrt{x^2-1}) \\
-\tanh^{-1}x &= \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
+\cosh(x)    & = \frac{1}{2}(e^x + e^{-x}) \\
+\sinh(x)    & = \frac{1}{2}(e^x - e^{-x}) \\
+\cos(iz)    & = \cosh z \\
+\cosh(iz)   & = \cos z \\
+\sin(iz)    & = \sinh z \\
+\sinh(iz)   & = \sin z \\
+\sinh^{-1}x & = ? \quad = \ln(x + \sqrt{x^2+1}) \\
+\cosh^{-1}x & = ? \quad = \ln(x + \sqrt{x^2-1}) \\
+\tanh^{-1}x & = \frac{1}{2}\ln(\frac{1+x}{1-x}) \\
 \]
 
 ## Integral Tables
@@ -5262,105 +5307,113 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
 ?                                        &  & ?                       &  & ?
 \]
 
-
-
 # Definitions
+
+\[  
+e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n
+.\]
 
 ## Set Theory
 
 - Injectivity
-	$$
-	f:X \to Y \text{ injective } \iff \forall x_1,x_2 \in X,\quad  f(x_1) = f(x_2) \implies x_1 = x_2 \\ \iff \forall x_1,x_2 \in X,\quad x_1 \neq x_2 \implies f(x_1) \neq f(x_2)
-	$$
+\[  
+f:X \to Y \text{ injective } \iff \forall x_1,x_2 \in X,\quad  f(x_1) = f(x_2) \implies x_1 = x_2 \\ \iff \forall x_1,x_2 \in X,\quad x_1 \neq x_2 \implies f(x_1) \neq f(x_2)
+.\]
 
 - Surjectivity
-	$$
-	f:X \to Y \text{ surjective } \iff \forall y\in Y,~ \exists x\in X : f(x) = y
-	$$
+\[  
+f:X \to Y \text{ surjective } \iff \forall y\in Y,~ \exists x\in X : f(x) = y
+.\]
 
 - Preimage
-	$$
-	f:X \to Y, U \subseteq Y \implies f^{-1}(U) = \theset{x \in X : f(x) \in U}
-	$$
+\[  
+f:X \to Y, U \subseteq Y \implies f^{-1}(U) = \theset{x \in X : f(x) \in U}
+.\]
 
 ## Calculus
 
 - Limit
-	$$
-	\lim_{x \to p} f(x) = L \iff \forall\varepsilon,~\exists\delta:\\
-	d(x, p) < \delta\implies d(f(x), L) < \varepsilon
-	$$
+\[
+\lim_{x \to p} f(x) = L \iff \forall\varepsilon,~\exists\delta:\\
+d(x, p) < \delta\implies d(f(x), L) < \varepsilon
+\]
 
 - Continuity
 
 	- Epsilon-delta definition:
-	$$
-	f:X \to Y \text{ continuous at } p \iff
-	\forall \varepsilon,~ \exists\delta:\\
-	d_X(x, p) < \delta \implies d_Y(f(x), f(p)) < \varepsilon
-	$$
+\[
+f:X \to Y \text{ continuous at } p \iff
+\forall \varepsilon,~ \exists\delta:\\
+d_X(x, p) < \delta \implies d_Y(f(x), f(p)) < \varepsilon
+\]
 
 	- Limit/Sequential definition:
-	$$
-	f:X \to Y \text{ continuous at } p \iff
-	\forall \theset{x_i}_{i\in \NN}\subseteq X: \theset{x_i}\to p,\\
-	\lim_{i\to\infty}f(x_i) = f(\lim_{i\to\infty}x_i) = f(p)
-	$$
+\[
+f:X \to Y \text{ continuous at } p \iff
+\forall \theset{x_i}_{i\in \NN}\subseteq X: \theset{x_i}\to p,\\
+\lim_{i\to\infty}f(x_i) = f(\lim_{i\to\infty}x_i) = f(p)
+\]
 
 	- Topological Definition:
-	$$
-	f:X \to Y \text{ continuous } \iff U \text{ open in } \im(f) \subseteq Y \implies f^{-1}(U) \text{ open in } X  
-	$$
+\[  
+f:X \to Y \text{ continuous } \iff U \text{ open in } \im(f) \subseteq Y \implies f^{-1}(U) \text{ open in } X  
+.\]
 
 - Differentiability and the Derivative
 
 	- For single variable functions:
-	$$
-	f:\RR \to \RR ~\text{differentiable at } p \iff
-	\forall \theset{x_i}_{i\in \NN}\to p,\\
-	f'(p) \definedas \lim_{i\to\infty} \frac{f(x_i) - f(p)}{x_i - p}< \infty
-	$$
+\[
+f:\RR \to \RR ~\text{differentiable at } p \iff
+\forall \theset{x_i}_{i\in \NN}\to p,\\
+f'(p) \definedas \lim_{i\to\infty} \frac{f(x_i) - f(p)}{x_i - p}< \infty
+\]
 
 	- For multivariable functions:
-	$$
-	\mathbf{f}:\RR^n \to \RR^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:\RR^n \to \RR^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_ {\RR^n}} { \| \mathbf { h } \|_ {\RR^m} } = 0
-	$$
+\[
+\mathbf{f}:\RR^n \to \RR^m ~\text{differentiable at } \mathbf{p} \iff \exists \text{ a linear map } \mathbf{J}:\RR^n \to \RR^m \text{ such that: } \\ \lim _ { \mathbf{h} \rightarrow 0 } \frac { \left\| \mathbf { f } \left( \mathbf{p} + \mathbf { h } \right) - \mathbf { f } \left( \mathbf { p } \right) - \mathbf { J } ( \mathbf { h } ) \right\|_ {\RR^n}} { \| \mathbf { h } \|_ {\RR^m} } = 0
+\]
 
 - Gradient
-$$
+\[  
 \nabla f = [f_x, f_y, f_z]
-$$
+.\]
 
 - Divergence
 
 - Curl
 
 - Taylor Series (at a point $a$)
+
 	- Single Variable $\RR \to \RR$
-	$$
+
+  \[  
 	T_a(x) = f ( a ) + \frac { f ^ { \prime } ( a ) } { 1 ! } ( x - a ) + \frac { f ^ { \prime \prime } ( a ) } { 2 ! } ( x - a ) ^ { 2 } + \frac { f ^ { \prime \prime \prime } ( a ) } { 3 ! } ( x - a ) ^ { 3 } + \cdots \\ \implies T_a(x) = \sum _ { n = 0 } ^ { \infty } \frac { f ^ { ( n ) } ( a ) } { n ! } ( x - a ) ^ { n }
-	$$
+  .\]
 	- Multivariable $\RR^n \to \RR$:
-	$$
+
+  \[  
 	T_a(\mathbf x) = f(\mathbf a) + (\mathbf x - \mathbf a)^T\nabla f(\mathbf a)
-	$$
+  .\]
+
 	- Multivariable $\RR^n \to \RR^m$:
-	$$
+
+  \[  
 	T_{(a,b)} ( x , y ) = f ( a , b ) + ( x - a ) f _ { x } ( a , b ) + ( y - b ) f _ { y } ( a , b ) + \\ \frac { 1 } { 2 ! } \left( ( x - a ) ^ { 2 } f _ { x x } ( a , b ) + 2 ( x - a ) ( y - b ) f _ { y y  } ( a , b ) + ( y - b ) ^ { 2 } f _ { y x } ( a , b ) \right) + \cdots
-	$$
-	$$
+  .\]
+	
+  \[
 	T_a ( \mathbf { x } ) = f ( \mathbf { a } ) + ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{J} ( \mathbf { a } ) + \frac { 1 } { 2 ! } ( \mathbf { x } - \mathbf { a } ) ^ { \mathrm { T } } \mathbf{H} ( \mathbf { a } ) ( \mathbf { x } - \mathbf { a } ) + \cdots \\
 	\implies T_a ( \mathbf { x } ) = \sum _ { | \alpha | \geq 0 } \frac { ( \mathbf { x } - \mathbf { a } ) ^ { \alpha } } { \alpha ! } \left( \partial ^ { \alpha } f \right) ( \mathbf { a } )
-	$$
+	\]
 
 ## Analysis
 
 - Archimedean Property: $x \in \RR \implies \exists n\in \NN:~ x < n \annd x > 0 \implies \exists n:~ \frac{1}{n} < x$
 
 - Upper Bound (for S $\subseteq \RR$)
-	$$
-	\alpha\text{ is an upper bound for } S \iff s \in S \implies s < \alpha
-	$$
+\[  
+\alpha\text{ is an upper bound for } S \iff s \in S \implies s < \alpha
+.\]
 
 - Triangle Inequality
 	- ${ | a + b | \leq | a | + | b | }$
@@ -5370,14 +5423,14 @@ $$
 	- ${\abs{| a | - | b |} \leq | a - b | }$
 
 - Least Upper Bound / Supremum (for S $\subseteq \RR$)
-	$$
-	\alpha\text{ is a LUB for } S \iff s \in S \implies s < \alpha \annd \forall t : (s \in S \implies s < t),~ \alpha < t
-	$$
+\[  
+\alpha\text{ is a LUB for } S \iff s \in S \implies s < \alpha \annd \forall t : (s \in S \implies s < t),~ \alpha < t
+.\]
 
 - Greatest Lower Bound / Infimum (for S $\subseteq \RR$)
-	$$
-	\alpha\text{ is a GLB for } S \iff s \in S \implies \alpha < s \annd \forall t : (s \in S \implies t < s),~ t < \alpha
-	$$
+\[  
+\alpha\text{ is a GLB for } S \iff s \in S \implies \alpha < s \annd \forall t : (s \in S \implies t < s),~ t < \alpha
+.\]
 
 - Open Set
 - Closed Set
@@ -5387,51 +5440,54 @@ $$
 - Boundary
 - Metric
 - Cauchy Sequence:
-$$\theset{a_i} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in\NN: \quad m,n > N \implies d(x_m, x_n) < \varepsilon $$
+\[  
+\theset{a_i} \text{ is a cauchy sequence } \iff \forall \varepsilon~\exists N\in\NN: \quad m,n > N \implies d(x_m, x_n) < \varepsilon
+.\]
 
 - Connected:
-$S$ is connected $\iff$ $\not\exists U,V\subset S$ nonempty, open, disjoint such that $S = U \cup V$
+  $S$ is connected $\iff$ $\not\exists U,V\subset S$ nonempty, open, disjoint such that $S = U \cup V$
 
 - Compact:
-Every open cover has a finite subcover:
-$$
+  Every open cover has a finite subcover:
+\[  
 X \subseteq \union_{j\in J} V_j \implies \exists I \subseteq J: \abs{I} < \infty \annd X\subseteq \union_{i\in I} V_i
-$$
+.\]
 
 - Sequential Compactness
-Every sequence has a convergent subsequence:
-$$
+  Every sequence has a convergent subsequence:
+\[  
 \theset{x_i}_{i\in I}\subseteq X \implies \exists J\subseteq I,~ \exists p\in X: \quad \theset{x_j}_{j\in J} \to p
-$$
+.\]
 
 - Bounded (sequences, subsets, metric spaces)
-$$
+\[  
 U \subseteq X \text{ is bounded } \iff \exists x\in X, \exists M \in \RR :\quad u\in U \implies d(x, u) < M
-$$
+.\]
 
 - Totally Bounded
-asdsa#todo
+  \todo[inline]{todo}
 
 - Pointwise Convergence
-$$
+\[
 \text{For}~\{f_n: X \to Y\}_{n\in\NN},\\ f_n \to f \iff
 \forall \varepsilon > 0,~\forall x\in X,~ \exists N(x, \varepsilon)\in\NN :
 \quad n > N \implies d_Y\left(f_n(x),f(x)\right) < \varepsilon
-$$
+\]
 
 - Uniform Convergence
-$$
+\[
 \text{For}~\{f_n: X \to Y\}_{n\in\NN}, \\
 f_n \rightrightarrows f \iff \forall \varepsilon > 0,~ \exists N(\varepsilon)\in\NN :
 \quad \forall x\in X,~ n > N \implies d_Y(f_n(x), f(x)) < \varepsilon
-$$
+\]
 
 - Generalized Mean Value Theorem
-$$
+\[  
 (f ( b ) - f ( a ) ) g' ( c ) = (g ( b ) - g ( a )) f' ( c )
-$$
+.\]
 
 ## Linear Algebra
+
 Convention: always over a field $k$, and $T: k^n \to k^m$ is a generic linear map (or $m\times n$ matrix).
 
 - Consistent
@@ -5447,22 +5503,22 @@ Convention: always over a field $k$, and $T: k^n \to k^m$ is a generic linear ma
 	The number of nonzero rows in RREF
 
 - Elementary Matrix
-- 
+
 - Row Equivalent
-- 
+
 - Pivot
-- 
+
 - Cofactor
 
-$$
+\[  
 \mathrm{cofactor}(A)_{i,j} = (-1)^{i+j} M_{i, j}
-$$
+\]
 where $M_{i, j}$ is the minor obtained by deleting the $i\dash$th row and $j\dash$th column of $A$.
 
 - Adjugate
-$$
+\[  
 \mathrm{adjugate}(A) = \mathrm{cofactor}(A)^T = (-1)^{i+j} M_{j, i}
-$$
+.\]
 
 - Vector Space Axioms
 	- Let $k$ be a field and $\vector{u},\vector{v},\vector{w} \in V$ and $r,s,t\in k$. A vector space $V$ over $k$ satisfies:
@@ -5480,25 +5536,26 @@ $$
 - Subspace
 
 	- A nonempty subset $W \subseteq V$ that is a vector space and satisfies
-$$
+\[  
 \theset{ \sum_i c_i \vector x_i \mid c_i \in \FF,~ x_i \in W} \subseteq W
-$$
+.\]
 
     - Quick counter-check: find $\vector x, \vector y$ such that $a\vector x + b\vector y \not\in W$
 
 - Span
   Given a set of $n$ vectors $S = \theset{\vector x_i}_{i=1}^n$, defined as
-  $$
+  \[  
   \mathrm{Span}(S) = \theset{\sum_{i=1}^nc_i \vector x_i \mid c_i \in k}
-  $$
+  .\]
 
 - Row Space
 	- The range of the linear map $T$.
-	- Given $T =
-\begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}$, defined as
-$$
+	- Given 
+  $T = \begin{bmatrix} \vector x_1 \rightarrow \\ \vector x_2 \rightarrow \\ \vdots \\ \vector x_m \rightarrow \end{bmatrix}$, defined as
+\[  
 \mathrm{Span}(\theset{\vector x_i}_{i=1}^m) \subseteq k^m
-$$
+.\]
+
 	- $\mathrm{rowspace}(T)\perp = \mathrm{null}(T)$
 	- $\abs{\mathrm{rowspace}(T)} = \mathrm{Rank}(T)$
 
@@ -5524,9 +5581,9 @@ $$
 - Linear independence
 	- A set of vectors $\theset{\vector x_i}_{i=1}^n$ is linearly independent $\iff \sum_{i=1}^n c_i \vector x_i = 0 \implies c_i = 0$ for all $i$.
 	- Can be detected by considering the matrix
-	$$
+  \[  
 	T = [\vector x_1, \vector x_2, \cdots, \vector x_n]^T
-	$$
+  .\]
 	(linearly independent iff $T$ is singular)
 
 - Rank
@@ -5546,8 +5603,8 @@ $$
 
 - Diagonalizable
 	- A matrix $X$ is diagonalizable if it can be written $X = EDE^{-1}$ where $D$ is diagonal.
-	- If $X$ is $n\times n$ and has $n$ linearly independent eigenvectors $\vector\lambda_i$, then $D_{ii} = \vector\lambda_i$, and $E  =
-\begin{bmatrix} \vector\lambda_1 & \vector\lambda_2 & \cdots  & \vector \lambda_n \\ \downarrow & \downarrow &\cdots & \downarrow \end{bmatrix}$
+	- If $X$ is $n\times n$ and has $n$ linearly independent eigenvectors $\vector\lambda_i$, then $D_{ii} = \vector\lambda_i$, and 
+  $E  = \begin{bmatrix} \vector\lambda_1 & \vector\lambda_2 & \cdots  & \vector \lambda_n \\ \downarrow & \downarrow &\cdots & \downarrow \end{bmatrix}$
 
 - Positive Definite
 	- A matrix $A$ is positive definite iff $\forall \vector x \in k^n,$ we have the scalar inequality $\vector x^T A \vector x > 0$
@@ -5555,20 +5612,22 @@ $$
 - Projection
 	- The projection of a vector $\vector v$ onto $\vector u$ is given by $P_{\vector u}(\vector v) = \left< \vector u, \vector v \right> \hat u$
 	- The projection of a vector $\vector v$ onto a space $U = \mathrm{Span}(\theset{\vector u_i})$ is given by
-	$$
+  \[  
 	P_U(\vector v) = \sum_i P_{\vector u_i}(\vector v) = \sum_i \left< \vector u_i, \vector v\right> \hat u_i
-	$$
+  .\]
 
 - Orthogonal Complement
 	- Given a subspace $U \subseteq V$, defined as $U\perp = \theset{\vector v \in V \mid \forall \vector u \in U, \left<\vector u, \vector v\right> = 0}$
 
 - Determinant
-	$$
-	\det(A) = \sum_{\tau \in S^n}\prod_{i=1}^n \sigma(\tau) a_{i, \tau(i)}
-	$$
+\[  
+\det(A) = \sum_{\tau \in S^n}\prod_{i=1}^n \sigma(\tau) a_{i, \tau(i)}
+.\]
 
 - Trace
-	$$\mathrm{Tr}(A) = \sum_{i=1}^n A_{ii}$$
+\[  
+\mathrm{Tr}(A) = \sum_{i=1}^n A_{ii}
+.\]
 
 - Characteristic Polynomial
 	- $p_A(x) = \det(xI - A)$
@@ -5593,33 +5652,38 @@ $$
 	- For vectors: $\vector x \perp \vector y \iff \inner{\vector x}{\vector y} = 0$
 	- For matrices: $A$ is orthogonal $\iff A^{-1} = A^T$
 
-- Orthogonal Projection of $\vector x$ onto $\vector y$: $$P(\vector x, \vector y) = \inner{\vector x}{\vector y} \hat y = \inner{\vector x}{\vector y} \frac{\vector y}{\norm{\vector y}^2}$$
+- Orthogonal Projection of $\vector x$ onto $\vector y$: 
+  \[  
+  P(\vector x, \vector y) = \inner{\vector x}{\vector y} \hat y = \inner{\vector x}{\vector y} \frac{\vector y}{\norm{\vector y}^2}
+  .\]
 	- Note $\norm{P(\vector x, \vector y)} = \norm{\vector x}\cos\theta_{x,y}$
 
 - Defective: An $n\times n$ matrix $A$ is defective $\iff$ the number of linearly independent eigenvectors of $A$ is less than $n$.
 
 ## Differential Equations
+
 - Homogeneous
-	$$
-	f(x, y) \text{ homogeneous of degree } n \iff \exists n\in\NN : f(tx, ty) = t^nf(x, y).
-	$$
+\[  
+f(x, y) \text{ homogeneous of degree } n \iff \exists n\in\NN : f(tx, ty) = t^nf(x, y).
+.\]
 
 - Separable
-	$$
-	p(y)\frac{dy}{dx} - q(x) = 0
-	$$
+\[  
+p(y)\frac{dy}{dx} - q(x) = 0
+.\]
 
 - Wronskian:
-$$
+\[
 W \left[ f _ { 1 } , f _ { 2 } , \ldots , f _ { k } \right] ( x ) = \left| \begin{array} { c c c c } { f _ { 1 } ( x ) } & { f _ { 2 } ( x ) } & { \dots } & { f _ { k } ( x ) } \\ { f _ { 1 } ^ { \prime } ( x ) } & { f _ { 2 } ^ { \prime } ( x ) } & { \dots } & { f _ { k } ^ { \prime } ( x ) } \\ { \vdots } & { \vdots } & { } & { \vdots } \\ { f _ { 1 } ^ { ( k - 1 ) } ( x ) } & { f _ { 2 } ^ { ( k - 1 ) } ( x ) } & { \dots } & { f _ { k } ^ { ( k - 1 ) } ( x ) } \end{array} \right|
-$$
+\]
 
 - Laplace Transform:
-$$
+\[  
 L_f(s) = \int_0^\infty e^{-st} f(t) ~dt
-$$
+.\]
 
 ## Algebra
+
 - Ring
 - Group
 - Subgroup
@@ -5630,6 +5694,7 @@ $$
 - Tensor Product: #todo insert construction
 
 ## Complex Analysis
+
 - Analytic
 - Harmonic
 - Cauchy-Euler Equations
@@ -5637,9 +5702,9 @@ $$
 - The Complex Derivative
 - Meromorphic
 - The Gamma Function: Satisfies $\Gamma(p+1) + p\Gamma(p)$ and $\Gamma(1) = 1$, defined as
-$$
+\[  
 \Gamma ( p ) = \int _ { 0 } ^ { \infty } t ^ { p - 1 } e ^ { - t } d t , \quad p > 0
-$$
+.\]
 
 ## Algebra
 

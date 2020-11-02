@@ -1,5 +1,6 @@
-## Notation
+# Combinatorics
 
+## Notation
 \[
 S_n                                & = \theset{1,2,\ldots n}                                   &  & \text{the symmetric group} \\
 {n\choose k}                       & = \frac{n!}{k!(n-k)!}                                     &  & \text{binomial coefficient}\\
@@ -29,7 +30,7 @@ Inclusion-Exclusion:
 = \sum_{k=1}^n ~\sum_{i_1 < \cdots < i_k}  (-1)^{k+1} \abs{\intersect_{j=1}^k A_{i_j}}
 \]
 
-# The Important Numbers
+## The Important Numbers
 
 - Binomial Coefficients
 	- The Binomial Theorem: 
@@ -68,7 +69,7 @@ Inclusion-Exclusion:
 		- Example: 2 compositions of $5$ involving $1$ and $4$, given by $4+1$ and $1+4$, whereas there is only one such partition of $5$ given by $4+1$.
 	- Visualize with Young diagrams
 
-## Common Problems
+### Common Problems
 
 - Stars and Bars
 	- No two bars adjacent: $n-1\choose k-1$
@@ -77,7 +78,7 @@ Inclusion-Exclusion:
 Coupon Collectors Problem
 
 
-## The Twelvefold Way
+### The Twelvefold Way
 
 Consider a function $f: N \to K$ where $\abs{N}=n, \abs{K} = k$.
 

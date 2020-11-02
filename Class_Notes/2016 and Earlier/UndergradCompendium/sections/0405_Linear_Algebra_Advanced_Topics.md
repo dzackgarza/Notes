@@ -1,6 +1,6 @@
-## Advanced Topics
+# Linear Algebra: Advanced Topics
 
-### Changing Basis
+## Changing Basis
 
 :::{.proposition title="Changing to the standard basis"}
 The transition matrix from a given basis $\mathcal{B} = \ts{\vector b_i}_{i=1}^n$ to the standard basis is given by 
@@ -17,7 +17,7 @@ and the transition matrix from the standard basis to $\mathcal{B}$ is $A\inv$.
 
 
 
-### Orthogonal Matrices
+## Orthogonal Matrices
 
 Given a notion of orthogonality for vectors, we can extend this to matrices. A square matrix is said to be orthogonal iff $QQ^T = Q^TQ = I$. For rectangular matrices, we have the following characterizations:
 \[
@@ -29,7 +29,7 @@ To remember which condition is which, just recall that matrix multiplication $AB
 
 
 
-### Projections
+## Projections
 
 :::{.remark}
 A projection $P$ induces a decomposition
@@ -56,7 +56,7 @@ P \approx {A^t A \over AA^t}
 
 With an inner product in hand and a notion of orthogonality, we can define a notion of **orthogonal projection** of one vector onto another, and more generally of a vector onto a subspace spanned by multiple vectors.
 
-#### Projection Onto a Vector
+### Projection Onto a Vector
  Say we have two vectors $\vector x$ and $\vector y$, and we want to define "the component of $\vector x$ that lies along $\vector y$", which we'll call $\vector p$. We can work out what the formula should be using a simple model:
 
 
@@ -68,7 +68,7 @@ We will find that $\lambda = \inner{\vector x}{\hat{\vector y}}$, and so
 
 Notice that we can then form a "residual" vector $\vector r = \vector x - \vector p$, which should satisfy $\vector r \perp \vector p$. If we were to let $\lambda$ vary as a function of a parameter $t$ (making $\vector r$ a function of $t$ as well) we would find that this particular choice minimizes $\norm{\vector r (t)}$.
 
-#### Projection Onto a Subspace
+### Projection Onto a Subspace
 
 In general, supposing one has a subspace $S = \mathrm{span}\theset{\vector y_1, \vector y_2, \cdots, \vector y_n}$ and (importantly!) the $\vector y_i$ are orthogonal, then the projection of $\vector p$ of $x$ onto $S$ is given by the sum of the projections onto each basis vector, yielding
 
@@ -104,7 +104,7 @@ Moreover, if $\vector v \in S\perp$, then $P_s(\vector v)$ must be zero.
 This follows by noting that in equation $\ref{projection_equation}$, every inner product appearing in the sum vanishes, by definition of $\vector v \in S\perp$, and so the projection is zero.
 
 
-#### Least Squares 
+### Least Squares
 
 :::{.proposition title="Normal Equations"}
 $\vector x$ is a least squares solution to 
@@ -156,7 +156,7 @@ The derivation proceeds by solving the equation
 \dd{}{\vector x} \norm{\vector b - A\vector x}^2 = \vector 0.
 .\]
 
-### Normal Forms
+## Normal Forms
 
 :::{.remark}
 Every square matrix is similar to a matrix in Jordan canonical form.
@@ -166,9 +166,9 @@ Every square matrix is similar to a matrix in Jordan canonical form.
 [^projmatrix]: For a derivation of this formula, see the section on least-squares approximations.
 
 
-### Decompositions
+## Decompositions
 
-#### The QR Decomposition
+### The QR Decomposition
 
 Gram-Schmidt is often computed to find an orthonormal basis for, say, the range of some matrix $A$. With a small modification to this algorithm, we can write $A = QR$ where $R$ is upper triangular and $Q$ has orthogonal columns.
 
@@ -201,11 +201,11 @@ R =
 
 \todo[inline]{Explain shortcut for diagonal.}
 
-## Appendix: Lists of things to know
+# Appendix: Lists of things to know
 
 > Textbook: Leon, *Linear Algebra with Applications*
 
-### Topics
+## Topics
 
 - 1.6: Partition Matrices
 - 3.5: Change of Basis
@@ -229,7 +229,7 @@ R =
 - 7.7: The Moore-Penrose Pseudo-Inverse
   - *Final Exam*
 
-### Definitions 
+## Definitions
 
 - System of equations
 - Homogeneous system
@@ -286,7 +286,7 @@ R =
 - Positive-definite
 - Quadratic form
 
-### Lower-division review
+## Lower-division review
 
 - Systems of linear equations
   - Consistent vs. Inconsistent
@@ -315,7 +315,7 @@ R =
   - Construct matrix projection onto subspace
   - Convert a basis to an orthonormal basis
 
-### Things to compute 
+## Things to compute
 
 - Construct a matrix representing a linear map
   - With respect to the standard basis in both domain and range
@@ -345,7 +345,7 @@ R =
 - Compute the matrix for a projection onto a subspace
 - Find the QR factorization of a matrix
 
-### Things to prove 
+## Things to prove
 
 - Prove facts about block matrices
 - Prove facts about injective linear maps
