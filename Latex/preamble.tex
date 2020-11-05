@@ -248,6 +248,9 @@ arc(90:0:1); % inside palm
 
 %\usepackage{adjustbox}
 
+% Custom glyphs
+\usepackage{adforn}
+
 % Custom section headings: redefining the KOMA-Script command \sectionlinesformat:
 \newdimen\thesectionwdmax
 \newdimen\sectiontitlewd
@@ -272,7 +275,10 @@ arc(90:0:1); % inside palm
         {\parbox{\sectiontitlewd}{\raggedright#4}}%
         \end{tabular}%
       }%
-    }
+    }%
+    {\ifstr{#1}{subsection}{%
+      \centering\mbox{\@hangfrom{\underline{{#3}{#4}\adforn{24}}}}%
+    }%
     {\@hangfrom{\hskip #2#3}{#4}}%
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
