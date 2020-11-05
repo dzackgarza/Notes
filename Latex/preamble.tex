@@ -165,17 +165,38 @@
   {$\end{lrbox}\makebox[0pt]{\usebox{\wideeqbox}}\end{displaymath}}
 
 % Fancy chapter headers and footers
-\usepackage{fancyhdr}
+%\usepackage{fancyhdr}
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LE,RO]{\title}
-\fancyhead[RE,LO]{\rightmark}
-\fancyfoot[CE,CO]{\leftmark}
-\fancyfoot[LE,RO]{\thepage}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[LE,RO]{\title}
+%\fancyhead[RE,LO]{\rightmark}
+%\fancyfoot[CE,CO]{\leftmark}
+%\fancyfoot[LE,RO]{\thepage}
 
-\renewcommand{\headrulewidth}{2pt}
-\renewcommand{\footrulewidth}{1pt}
+%\renewcommand{\headrulewidth}{2pt}
+%\renewcommand{\footrulewidth}{1pt}
+
+\usepackage[autooneside=false,automark]{scrlayer-scrpage}
+\clearscrheadfoot{}
+\clearpairofpagestyles
+\renewcommand*{\sectionmarkformat}{}
+\KOMAoption{headwidth}{159mm:-9em} % 
+\KOMAoption{footwidth}{\fullwidth:0em} % 
+\KOMAoption{headsepline}{1.1pt} % 
+\KOMAoption{footsepline}{0.5pt} % 
+\ihead[\clearscrheadfoot]{\mbox{
+    \sffamily\bfseries\smash{%
+    \setlength\fboxsep{0pt}\raisebox{-2pt}{
+        \colorbox{gray!80}{\makebox[33.7mm]{\hfill%
+        \ifnum\value{section}>0
+            \textcolor{white}{\fontsize{18}{19}\selectfont
+            \thesection }~
+        \fi%
+    \rule[-2.85pt]{2mm}{20mm}}}}}
+}}
+\chead{\hspace{33.7mm}\leftmark}
+\cfoot*{\scriptsize \rightmark \hfill \pagemark}
 
 % List of Theorems Attempt
 \usepackage{etoolbox}
