@@ -276,11 +276,13 @@ arc(90:0:1); % inside palm
         {\parbox{\sectiontitlewd}{\raggedright#4}}%
         \end{tabular}%
       }%
-    }%
+    }
     % Custom Subsection Headings
-    {\ifstr{#1}{subsection}{%
-      \centering\mbox{\@hangfrom{\underline{{#3}{#4}\adforn{24}}}}%
-    }%
+    {\ifstr{#1}{subsection}
+      {%
+        \centering\mbox{\@hangfrom{\underline{{#3}{#4}\adforn{24}}}}%
+      }%
+    }
     {\@hangfrom{\hskip #2#3}{#4}}%
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
