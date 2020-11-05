@@ -588,7 +588,6 @@ OUTPUT Algebraic_Groups.bcf
 INPUT Algebraic_Groups.bbl
 INPUT Algebraic_Groups.bbl
 INPUT Algebraic_Groups.bbl
-INPUT 'inkscape' -V
 INPUT figures/cover.png
 INPUT ./figures/cover.png
 INPUT ./figures/cover.png
