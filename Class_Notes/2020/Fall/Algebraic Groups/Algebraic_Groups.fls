@@ -469,6 +469,8 @@ INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.t
 INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
+INPUT Algebraic_Groups.pre
+INPUT Algebraic_Groups.pre
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
@@ -583,7 +585,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT Algebraic_Groups.bcf
-INPUT 'inkscape' -V
+INPUT Algebraic_Groups.bbl
+INPUT Algebraic_Groups.bbl
+INPUT Algebraic_Groups.bbl
 INPUT figures/cover.png
 INPUT ./figures/cover.png
 INPUT ./figures/cover.png
@@ -665,6 +669,8 @@ INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT Algebraic_Groups.toc
+INPUT Algebraic_Groups.toc
 OUTPUT Algebraic_Groups.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -829,3 +835,18 @@ INPUT ./figures/image_2020-10-09-14-14-39.png
 INPUT figures/image_2020-10-09-14-30-47.png
 INPUT ./figures/image_2020-10-09-14-30-47.png
 INPUT ./figures/image_2020-10-09-14-30-47.png
+INPUT figures/image_2020-10-09-14-45-08.png
+INPUT ./figures/image_2020-10-09-14-45-08.png
+INPUT ./figures/image_2020-10-09-14-45-08.png
+INPUT figures/image_2020-10-09-14-45-20.png
+INPUT ./figures/image_2020-10-09-14-45-20.png
+INPUT ./figures/image_2020-10-09-14-45-20.png
+INPUT figures/image_2020-10-09-14-48-41.png
+INPUT ./figures/image_2020-10-09-14-48-41.png
+INPUT ./figures/image_2020-10-09-14-48-41.png
+INPUT figures/image_2020-10-12-13-58-45.png
+INPUT ./figures/image_2020-10-12-13-58-45.png
+INPUT ./figures/image_2020-10-12-13-58-45.png
+INPUT figures/image_2020-10-12-14-21-20.png
+INPUT ./figures/image_2020-10-12-14-21-20.png
+INPUT ./figures/image_2020-10-12-14-21-20.png
