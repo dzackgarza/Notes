@@ -5,6 +5,16 @@
 
 %\documentclass[]{article}
 \documentclass[11pt, a4paper, bibliography=totocnumbered, parskip=full]{scrartcl}
+% Remove indentation for new paragraphs
+\usepackage{parskip}
+% But leave space before amsthm environments
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=2em
+  \thm@postskip=2em
+}
+\makeatother
+% Encoding
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[usename, dvipsnames]{xcolor}
@@ -55,15 +65,6 @@
 \usepackage{longtable}
 \usepackage{tabularx}
 
-% Remove indentation for new paragraphs
-\usepackage{parskip}
-% But leave space before amsthm environments
-\makeatletter
-\def\thm@space@setup{%
-  \thm@preskip=2em
-  \thm@postskip=2em
-}
-\makeatother
 
 
 \usepackage{stmaryrd}
