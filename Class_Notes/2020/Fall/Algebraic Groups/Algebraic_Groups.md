@@ -505,7 +505,7 @@ Thus the representations are indexed by lattice points in a particular region:
 Suppose $G$ is a simple (simply connected) algebraic group.
 How do you parameterize *irreducible* representations?
 
-For $\rho: G\\to \GL(V)$, $V$ is a *simple module* (an *irreducible representation*) iff the only proper $G\dash$submodules of $V$ are trivial.
+For $\rho: G\to \GL(V)$, $V$ is a *simple module* (an *irreducible representation*) iff the only proper $G\dash$submodules of $V$ are trivial.
 
 **Answer 1**:
 They are also parameterized by $X(T)_+$.
@@ -520,7 +520,7 @@ What are the dimensions of the irreducible representations for $G$?
 **Answer 2**:
 Over $k=\CC$ using Weyl's dimension formula.
 
-For $k = \bar{\FF_p}$: conjectured to be known for $p\geq h$ (the *Coxeter number*), but by Williamson (2013) there are counterexamples.
+For $k = \bar{\FF}_p$: conjectured to be known for $p\geq h$ (the *Coxeter number*), but by Williamson (2013) there are counterexamples.
 Current work being done!
 
 
