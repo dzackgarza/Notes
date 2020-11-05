@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1604602824 "Algebraic_Groups.tex" "Algebraic_Groups.pdf" "Algebraic_Groups" 1604602824
+["pdflatex"] 1604603074 "Algebraic_Groups.tex" "Algebraic_Groups.pdf" "Algebraic_Groups" 1604603074
   "/home/zack/Notes/Latex/environments.tex" 1603833355 6912 f55cd4e12cdbd385f5321a403c25bb08 ""
   "/home/zack/Notes/Latex/latexmacs.tex" 1604516642 14017 58c95aaa93de972a39de62e2c78b79d5 ""
-  "/home/zack/Notes/Latex/preamble.tex" 1604602814 8245 72f9633379c324beecda6322ab325946 ""
+  "/home/zack/Notes/Latex/preamble.tex" 1604603067 8272 18785c50676787aa78d719758607781d ""
   "/usr/local/share/texmf/tex/latex/koma-script/scrartcl.cls" 1604599779 232890 6dce6e5bd50b0eb46858f4e0a15f6bbf ""
   "/usr/local/share/texmf/tex/latex/koma-script/scrbase.sty" 1604599779 95060 8380c93cbe27347269875ef45d11e14b ""
   "/usr/local/share/texmf/tex/latex/koma-script/scrkbase.sty" 1604599779 21853 9e6272db95e3fde57b1effa42b4ce855 ""
@@ -15,6 +15,7 @@
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1591545468 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1591545468 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1591545468 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "/usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm" 1591545468 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1591545468 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1591545468 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/share/texmf-dist/tex/generic/bitset/bitset.sty" 1591545468 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -224,6 +225,7 @@
   "/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1591545468 5914 5eaa255b13fb7a5e47ededc8ec098dba ""
   "/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1591545468 5766 13a9e8766c47f30327caf893ece86ac8 ""
   "/usr/share/texmf-dist/tex/latex/lm/lmodern.sty" 1591545468 1606 c17281c7cff2bbd7ff0173e1433487ec ""
+  "/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd" 1591545468 1865 afbfccbe7fda9c2dc5078ad7c486bbed ""
   "/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty" 1591545468 55731 4347f70fb23a75dbacb3c5fd21dd2675 ""
   "/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1591545468 5437 39f2bba90502a381bd48d78339c1a5f0 ""
   "/usr/share/texmf-dist/tex/latex/mdframed/md-frame-1.mdf" 1591524854 24632 760c4c81e779e6958bac43417deb524f ""
@@ -292,9 +294,9 @@
   "/usr/share/texmf-dist/tex/latex/zref/zref-base.sty" 1591524854 20632 508d53001f8de763d8dd867401d0c8b1 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604600776 2514045 8e1cfbd25c91f3f2f96af63d45f0a3cb ""
-  "Algebraic_Groups.aux" 1604602810 1253 f5b40a683630387ebf3ec95d91c47400 "pdflatex"
-  "Algebraic_Groups.pre" 1604602787 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Algebraic_Groups.tex" 1604602823 185250 9ea9d7cf61cb6d460eb123d26c2f5e01 ""
+  "Algebraic_Groups.aux" 1604602810 1253 f5b40a683630387ebf3ec95d91c47400 ""
+  "Algebraic_Groups.pre" 1604602827 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Algebraic_Groups.tex" 1604603074 185250 9ea9d7cf61cb6d460eb123d26c2f5e01 ""
   (generated)
   "Algebraic_Groups.log"
   "Algebraic_Groups.pre"
