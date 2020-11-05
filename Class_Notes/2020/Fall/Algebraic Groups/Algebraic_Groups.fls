@@ -491,6 +491,9 @@ INPUT /usr/share/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 INPUT /usr/share/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 INPUT /usr/share/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/share/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT /usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /home/zack/Notes/Latex/latexmacs.tex
