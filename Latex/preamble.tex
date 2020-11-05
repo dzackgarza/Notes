@@ -276,6 +276,20 @@ arc(90:0:1); % inside palm
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Custom Subsection Headings
+
+\titleformat{\subsection}[block]{\Large\bfseries\sffamily}%
+{}%
+{0pt}%
+{%
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{p{60pt}X}
+\centering\cellcolor{blue!25} \thesection & #1\\
+\arrayrulecolor{blue!25}\specialrule{.25em}{-0.1em}{0em}
+\end{tabularx}
+%
+}
+
 % Optional arguments in macro definitions
 \usepackage{xargs}
 %\usepackage{stix2}
