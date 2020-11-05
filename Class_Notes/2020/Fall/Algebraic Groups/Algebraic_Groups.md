@@ -4787,10 +4787,24 @@ Let $\lambda \in X(T)$, then
 
 :::
 
-
 ## Summary: Classification of Simple $G_r T\dash$Modules
 
 - $\soc_{B_r^+} \hat{Z}_r '(\lambda) = \lambda$
 - $\hat{Z}_r ' (\lambda) ^{U^+} = \lambda$, where the RHS denotes the $U^+$ invariants.
 - Let $\hat{L}_r(\lambda) \da \soc_{G_r T} \hat{Z}_r' (\lambda)$.
 - Each simple $G_r T\dash$module is isomorphic to $\hat{L}_r (\lambda)$ for some $\lambda\in X(T)$.
+- $\hat{L}_r(\lambda) \downarrow_{G_r} \cong L_r (\lambda)$ for all $\lambda \in X_1(T)$.
+- Translation invariance: $\hat{L}_r(\lambda + p^r\sigma) = \hat{L}_r (\lambda) \tensor p^r\sigma$
+- $\hat{L}_r (\lambda + p^r \sigma) \downarrow_{G_r} = L_r(\lambda)$ for all $\lambda \in X_r(T)$.
+
+![Example in $\Phi = B_2$](figures/image_2020-11-04-14-44-01.png)
+
+> This essentially allows you to replace working mod $p$ in characteristic $p$ with working with integers instead, allowing the usual weight theory to be used.
+
+:::{.proposition title="?"}
+Let $\lambda \in X(T)$, then there exists an isomorphism of $G\dash$modules
+\[  
+H^i(\lambda) = R^i \ind_{G_r B}^G \hat{Z}_r ' (\lambda)
+,\]
+where $\hat{Z}_r'(\lambda) = \ind_B^{G_r B}(\lambda)$.
+:::

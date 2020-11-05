@@ -65,7 +65,7 @@ are almost certainly my own. } } \\
 \textbf{D. Zack Garza} \\
 \textit{University of Georgia} \\
 \textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-11-04 }
+{\tiny \textit{Last updated:} 2020-11-05 }
 \end{flushleft}
 
 
@@ -6524,7 +6524,38 @@ Let \(\lambda \in X(T)\), then
 \item
   Each simple \(G_r T\dash\)module is isomorphic to
   \(\hat{L}_r (\lambda)\) for some \(\lambda\in X(T)\).
+\item
+  \(\hat{L}_r(\lambda) \downarrow_{G_r} \cong L_r (\lambda)\) for all
+  \(\lambda \in X_1(T)\).
+\item
+  Translation invariance:
+  \(\hat{L}_r(\lambda + p^r\sigma) = \hat{L}_r (\lambda) \tensor p^r\sigma\)
+\item
+  \(\hat{L}_r (\lambda + p^r \sigma) \downarrow_{G_r} = L_r(\lambda)\)
+  for all \(\lambda \in X_r(T)\).
 \end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-11-04-14-44-01.png}
+\caption{Example in \(\Phi = B_2\)}
+\end{figure}
+
+\begin{quote}
+This essentially allows you to replace working mod \(p\) in
+characteristic \(p\) with working with integers instead, allowing the
+usual weight theory to be used.
+\end{quote}
+
+\begin{proposition}[?]
+
+Let \(\lambda \in X(T)\), then there exists an isomorphism of
+\(G\dash\)modules
+\begin{align*}  
+H^i(\lambda) = R^i \ind_{G_r B}^G \hat{Z}_r ' (\lambda)
+,\end{align*} where \(\hat{Z}_r'(\lambda) = \ind_B^{G_r B}(\lambda)\).
+
+\end{proposition}
 
 \newpage
 
