@@ -2890,6 +2890,11 @@ If $f$ is homogeneous, $V(f) \subset \PP^n$ is a well-defined subset, since $f(x
 A graded ring $R$ is a ring $R$ with abelian subgroups $R_d \subset R$ with $R = \bigoplus_{d\geq 0} R_d$ and for all $f\in R_d$ and $g\in R_{d'}$, we have $fg \in R_{d+d'}$ and $R_d + R_{d} \subset R_d$.
 :::
 
+# Thursday, November 05
+
+Today: projective spaces.
+We defined $\PP^n_{/k} \da k^{n+1}\smz /\sim$ where $x\sim \lambda x$ for all $x\in k\units$, which we identified with lines through the origin
+
 # Misc Unsorted
 
 ![Image](figures/image_2020-09-16-04-09-22.png)
