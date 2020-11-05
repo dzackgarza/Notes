@@ -672,6 +672,7 @@ INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT Algebraic_Groups.toc
 INPUT Algebraic_Groups.toc
 OUTPUT Algebraic_Groups.toc
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
@@ -1029,8 +1030,8 @@ INPUT Algebraic_Groups.aux
 INPUT Algebraic_Groups.run.xml
 OUTPUT Algebraic_Groups.run.xml
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
-INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
@@ -1040,10 +1041,12 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbx6.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb
