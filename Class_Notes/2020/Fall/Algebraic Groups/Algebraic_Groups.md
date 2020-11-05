@@ -100,6 +100,7 @@ For any $G$, there exists a closed embedding $G\injects \GL(V) = \GL(n , k)$ and
 :::
 
 Define $R_u(G)$ to be the subgroup of unipotent elements in $R(G)$. 
+
 :::{.definition title="Semisimple and Reductive"}
 \hfill
 Suppose $G$ is connected, so $G = G^0$, and nontrivial, so $G\neq \theset{e}$. Then 

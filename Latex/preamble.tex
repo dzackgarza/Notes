@@ -4,16 +4,16 @@
 
 
 %\documentclass[]{article}
-\documentclass[11pt, a4paper, bibliography=totocnumbered, parskip=full]{scrbook}
+\documentclass[11pt, a4paper, bibliography=totocnumbered, parskip=full]{scrartcl}
 % Remove indentation for new paragraphs
 %\usepackage{parskip}
 % But leave space before amsthm environments
-%\makeatletter
-%\def\thm@space@setup{%
-  %\thm@preskip=2em
-  %\thm@postskip=2em
-%}
-%\makeatother
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=0em
+  \thm@postskip=0emem
+}
+\makeatother
 % Encoding
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}

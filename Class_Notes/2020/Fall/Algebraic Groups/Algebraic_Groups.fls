@@ -7,8 +7,8 @@ INPUT /home/zack/Notes/Latex/preamble.tex
 INPUT /home/zack/Notes/Latex/preamble.tex
 INPUT /usr/share/texmf-dist/tex/latex/base/fixltx2e.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/fixltx2e.sty
-INPUT /usr/local/share/texmf/tex/latex/koma-script/scrbook.cls
-INPUT /usr/local/share/texmf/tex/latex/koma-script/scrbook.cls
+INPUT /usr/local/share/texmf/tex/latex/koma-script/scrartcl.cls
+INPUT /usr/local/share/texmf/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/share/texmf/tex/latex/koma-script/scrkbase.sty
 INPUT /usr/local/share/texmf/tex/latex/koma-script/scrkbase.sty
 INPUT /usr/local/share/texmf/tex/latex/koma-script/scrbase.sty
@@ -662,13 +662,13 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT Algebraic_Groups.toc
 INPUT Algebraic_Groups.toc
 OUTPUT Algebraic_Groups.toc
