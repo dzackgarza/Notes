@@ -259,6 +259,8 @@ arc(90:0:1); % inside palm
 \renewcommand\sectionformat{\protect\scalebox{2}{\thesection}}
 \addtokomafont{section}{\huge}
 
+\usepackage{adforn}
+
 \makeatletter
 \renewcommand\sectionlinesformat[4]{%
   \ifstr{#1}{section}
@@ -272,6 +274,12 @@ arc(90:0:1); % inside palm
         \end{tabular}%
       }%
     }
+    {%
+    \ifstr{#1}{subsection}
+      {%
+        \centering\mbox{\@hangfrom{\underline{{#3}{#4}\adforn{24}}}}%
+      }%
+    }%
     {\@hangfrom{\hskip #2#3}{#4}}%
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
