@@ -117,9 +117,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {remark}{\numberline {6.1.3}Remark}{30}{remark.6.1.3}%
 \defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {6.1.4}Remark}{30}{remark.6.1.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {6.1.1}Theorem\thmtformatoptarg {?}}{30}{theorem.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{30}{thmt@dummyctr.dummy.61}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{30}{thmt@dummyctr.dummy.62}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {6.1.2}Theorem\thmtformatoptarg {?}}{31}{theorem.6.1.2}%
 \defcounter {refsection}{0}\relax 
@@ -145,19 +147,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {9.2.1}Proposition\thmtformatoptarg {?}}{37}{proposition.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Sketch for (1)}}{37}{thmt@dummyctr.dummy.74}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Sketch for (1)}}{37}{thmt@dummyctr.dummy.75}%
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {9.3.1}Proposition\thmtformatoptarg {?}}{39}{proposition.9.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {10.0.1}Proposition\thmtformatoptarg {?}}{39}{proposition.10.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1}}{39}{thmt@dummyctr.dummy.77}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1}}{39}{thmt@dummyctr.dummy.78}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {10.1.1}Theorem\thmtformatoptarg {Main Theorem}}{41}{theorem.10.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {11.1.1}Proposition\thmtformatoptarg {?}}{44}{proposition.11.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{44}{thmt@dummyctr.dummy.80}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{44}{thmt@dummyctr.dummy.81}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {11.2.1}Theorem\thmtformatoptarg {Steinberg}}{45}{theorem.11.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -197,41 +199,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {13.0.1}Proposition\thmtformatoptarg {?}}{59}{proposition.13.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of part b}}{59}{thmt@dummyctr.dummy.100}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of part b}}{59}{thmt@dummyctr.dummy.101}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {13.0.1}Theorem\thmtformatoptarg {?}}{59}{theorem.13.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{60}{thmt@dummyctr.dummy.102}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{60}{thmt@dummyctr.dummy.103}%
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {13.0.2}Proposition\thmtformatoptarg {?}}{60}{proposition.13.0.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {remark}{\numberline {13.0.1}Remark}{61}{remark.13.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{61}{thmt@dummyctr.dummy.105}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{61}{thmt@dummyctr.dummy.106}%
 \defcounter {refsection}{0}\relax 
 \contentsline {lemma}{\numberline {13.1}Lemma\thmtformatoptarg {Important!}}{62}{lemma.13.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {remark}{\numberline {13.0.2}Remark}{62}{remark.13.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{62}{thmt@dummyctr.dummy.108}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{62}{thmt@dummyctr.dummy.109}%
 \defcounter {refsection}{0}\relax 
 \contentsline {lemma}{\numberline {14.1}Lemma\thmtformatoptarg {?}}{63}{lemma.14.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {14.0.1}Theorem\thmtformatoptarg {Cohomological Condition for Good Filtrations}}{63}{theorem.14.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Part a}}{64}{thmt@dummyctr.dummy.111}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Part a}}{64}{thmt@dummyctr.dummy.112}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Part b}}{64}{thmt@dummyctr.dummy.112}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Part b}}{64}{thmt@dummyctr.dummy.113}%
 \defcounter {refsection}{0}\relax 
 \contentsline {corollary}{\numberline {14.0.1}Corollary\thmtformatoptarg {?}}{65}{corollary.14.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{65}{thmt@dummyctr.dummy.114}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{65}{thmt@dummyctr.dummy.115}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {14.0.2}Theorem\thmtformatoptarg {?}}{66}{theorem.14.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{66}{thmt@dummyctr.dummy.116}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{66}{thmt@dummyctr.dummy.117}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{66}{thmt@dummyctr.dummy.117}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{66}{thmt@dummyctr.dummy.118}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {14.0.3}Theorem\thmtformatoptarg {Cohomological Criterion for Weyl Filtrations}}{67}{theorem.14.0.3}%
 \defcounter {refsection}{0}\relax 
@@ -281,13 +283,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {17.1.2}Proposition\thmtformatoptarg {?}}{83}{proposition.17.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{83}{thmt@dummyctr.dummy.142}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{83}{thmt@dummyctr.dummy.143}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{83}{thmt@dummyctr.dummy.143}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{83}{thmt@dummyctr.dummy.144}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of c}}{84}{thmt@dummyctr.dummy.144}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of c}}{84}{thmt@dummyctr.dummy.145}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of d}}{84}{thmt@dummyctr.dummy.145}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of d}}{84}{thmt@dummyctr.dummy.146}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {17.1.1}Theorem\thmtformatoptarg {Bott-Borel-Weil Generalization, due to Andersen}}{85}{theorem.17.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -295,9 +297,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {18.1.1}Theorem\thmtformatoptarg {due to Aandersen}}{87}{theorem.18.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{88}{thmt@dummyctr.dummy.149}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{88}{thmt@dummyctr.dummy.150}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{88}{thmt@dummyctr.dummy.150}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{88}{thmt@dummyctr.dummy.151}%
 \defcounter {refsection}{0}\relax 
 \contentsline {example}{\numberline {18.2.1}Example}{89}{example.18.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -309,17 +311,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {corollary}{\numberline {18.2.1}Corollary\thmtformatoptarg {?}}{90}{corollary.18.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{90}{thmt@dummyctr.dummy.156}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{90}{thmt@dummyctr.dummy.157}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b and c}}{91}{thmt@dummyctr.dummy.157}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b and c}}{91}{thmt@dummyctr.dummy.158}%
 \defcounter {refsection}{0}\relax 
 \contentsline {remark}{\numberline {19.0.1}Remark}{93}{remark.19.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {19.0.1}Proposition\thmtformatoptarg {?}}{93}{proposition.19.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1}}{93}{thmt@dummyctr.dummy.160}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1}}{93}{thmt@dummyctr.dummy.161}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 2}}{94}{thmt@dummyctr.dummy.161}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 2}}{94}{thmt@dummyctr.dummy.162}%
 \defcounter {refsection}{0}\relax 
 \contentsline {remark}{\numberline {19.0.2}Remark}{94}{remark.19.0.2}%
 \defcounter {refsection}{0}\relax 
@@ -329,13 +331,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lemma}{\numberline {19.1}Lemma\thmtformatoptarg {?}}{95}{lemma.19.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 2}}{96}{thmt@dummyctr.dummy.166}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 2}}{96}{thmt@dummyctr.dummy.167}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {19.1.1}Theorem\thmtformatoptarg {Weyl's Character Formula}}{96}{theorem.19.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {20.1.1}Theorem\thmtformatoptarg {Weyl's Character Formula}}{97}{theorem.20.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{98}{thmt@dummyctr.dummy.169}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{98}{thmt@dummyctr.dummy.170}%
 \defcounter {refsection}{0}\relax 
 \contentsline {example}{\numberline {20.1.1}Example}{99}{example.20.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -391,17 +393,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lemma}{\numberline {23.1}Lemma\thmtformatoptarg {?}}{115}{lemma.23.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{115}{thmt@dummyctr.dummy.197}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{115}{thmt@dummyctr.dummy.198}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {23.2.1}Theorem\thmtformatoptarg {?}}{115}{theorem.23.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{116}{thmt@dummyctr.dummy.199}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{116}{thmt@dummyctr.dummy.200}%
 \defcounter {refsection}{0}\relax 
 \contentsline {remark}{\numberline {23.2.1}Remark}{116}{remark.23.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {23.3.1}Proposition\thmtformatoptarg {?}}{116}{proposition.23.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{117}{thmt@dummyctr.dummy.202}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{117}{thmt@dummyctr.dummy.203}%
 \defcounter {refsection}{0}\relax 
 \contentsline {remark}{\numberline {23.3.1}Remark}{117}{remark.23.3.1}%
 \defcounter {refsection}{0}\relax 
@@ -409,19 +411,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {24.2.1}Theorem\thmtformatoptarg {?}}{118}{theorem.24.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{119}{thmt@dummyctr.dummy.206}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{119}{thmt@dummyctr.dummy.207}%
 \defcounter {refsection}{0}\relax 
 \contentsline {definition}{\numberline {24.3.1}Definition\thmtformatoptarg {Natural transformations, isomorphisms, and equivalence of categories}}{120}{definition.24.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {24.3.1}Theorem\thmtformatoptarg {?}}{120}{theorem.24.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{120}{thmt@dummyctr.dummy.209}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{120}{thmt@dummyctr.dummy.210}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {25.2.1}Theorem\thmtformatoptarg {?}}{123}{theorem.25.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {example}{\numberline {25.2.1}Example\thmtformatoptarg {?}}{124}{example.25.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{124}{thmt@dummyctr.dummy.212}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{124}{thmt@dummyctr.dummy.213}%
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {25.2.1}Proposition\thmtformatoptarg {?}}{126}{proposition.25.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -457,13 +459,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {27.1.1}Proposition\thmtformatoptarg {?}}{139}{proposition.27.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1 and 2}}{139}{thmt@dummyctr.dummy.230}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1 and 2}}{139}{thmt@dummyctr.dummy.231}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 3}}{139}{thmt@dummyctr.dummy.231}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 3}}{139}{thmt@dummyctr.dummy.232}%
 \defcounter {refsection}{0}\relax 
 \contentsline {theorem}{\numberline {27.1.1}Theorem\thmtformatoptarg {?}}{139}{theorem.27.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{140}{thmt@dummyctr.dummy.233}%
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{140}{thmt@dummyctr.dummy.234}%
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{\numberline {27.1.2}Proposition\thmtformatoptarg {?}}{140}{proposition.27.1.2}%
 \defcounter {refsection}{0}\relax 
