@@ -1,8 +1,8 @@
-# 08/03/2020: Introduction to Smooth Manifolds (2012) (Lee)
+# 10/31/2020: Introduction to Smooth Manifolds (2012) (Lee)
 
 <a href='file:////home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf' target='_blank'>/home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf</a>
 
-Last Annotation: 08/03/2020
+Last Annotation: 10/31/2020
 
 ## Notes
 
@@ -1154,5 +1154,7 @@ Last Annotation: 08/03/2020
 - Exercise A\.51\. Show that every compact metric space is complete\. (<a href="file:////home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf#page=625" target="_blank">Lee 625</a>)
 - A subset of X is said to be precompact in X if its closure in X is compact\. (<a href="file:////home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf#page=626" target="_blank">Lee 626</a>)
 - A topological space X is said to be locally compact if every point has a neighborhood contained in a compact subset of X (<a href="file:////home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf#page=626" target="_blank">Lee 626</a>)
-- topologies are induced by metrics; such a topological space is said to be metrizable (<a href="file:////home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf#page=626" target="_blank">Lee 626</a>)<hr>
+- topologies are induced by metrics; such a topological space is said to be metrizable (<a href="file:////home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf#page=626" target="_blank">Lee 626</a>)
+- Proposition C\.6 \(Equality of Mixed Partial Derivatives\)\. If U is an open subset of Rn and F W U ! Rm is a function of class C 2 , then the mixed second-order tives of F do not depend on the order of differentiation: partial derivatives of F do not depend on the order of differentiation: @ 2 F i @2 F i j k D k j: @x @x @x @x (<a href="file:////home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf#page=661" target="_blank">Lee 661</a>)
+- Now suppose f W U ! R is a smooth real-valued function on an open subset U  Rn , and a 2 U \. For each vector v 2 Rn , we define the directional derivative of f in the direction v at a to be the number ˇ d ˇˇ Dv f \.a/ D dt ˇ t \(This definition makes sense for any vector ˇ d ˇˇ dt ˇ cto ˇ ˇˇ ˇ tD0 or v; f \.a C tv/: \(C\.6\) D0 v; we do not require v to be a unit vector (<a href="file:////home/zack/Dropbox/Library/Lee/Introduction to Smooth Manifolds (2012) (736)/Introduction to Smooth Manifolds (2012) - Lee.pdf#page=662" target="_blank">Lee 662</a>)<hr>
 

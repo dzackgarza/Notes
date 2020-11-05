@@ -1,8 +1,8 @@
-# 10/28/2020: Algebra: Chapter 0 (Paolo Aluffi)
+# 11/05/2020: Algebra: Chapter 0 (Paolo Aluffi)
 
 <a href='file:////home/zack/Dropbox/Library/Paolo Aluffi/Algebra_ Chapter 0 (611)/Algebra_ Chapter 0 - Paolo Aluffi.pdf' target='_blank'>/home/zack/Dropbox/Library/Paolo Aluffi/Algebra_ Chapter 0 (611)/Algebra_ Chapter 0 - Paolo Aluffi.pdf</a>
 
-Last Annotation: 10/28/2020
+Last Annotation: 11/05/2020
 
 ## Notes
 
