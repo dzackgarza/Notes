@@ -3,7 +3,7 @@ local system = require 'pandoc.system'
 local tikz_doc_template = [[
 \documentclass{standalone}
 \usepackage{tikz}
-\usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix, positioning, snakes, shapes}
+\usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix, positioning, decorations, shapes}
 \usepackage{mathtools}
 \usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd, thmtools, xpatch}
 \input{/home/zack/Notes/Latex/latexmacs.tex}
