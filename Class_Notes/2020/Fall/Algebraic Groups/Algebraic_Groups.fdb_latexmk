@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber Algebraic_Groups"] 0 "Algebraic_Groups.bcf" "Algebraic_Groups.bbl" "Algebraic_Groups" 1604602466
-  "Algebraic_Groups.bcf" 1604602459 100089 cb8809fbe7ada03a8608433262bd3712 "pdflatex"
+["biber Algebraic_Groups"] 0 "Algebraic_Groups.bcf" "Algebraic_Groups.bbl" "Algebraic_Groups" 0
+  "Algebraic_Groups.bcf" 0 -1 0 "pdflatex"
   "Algebraic_Groups.bib" 1603314275 274 1cb84f8a2bcc19f60b9d0daa885bd98e ""
   (generated)
-  "Algebraic_Groups.blg"
   "Algebraic_Groups.bbl"
-["pdflatex"] 1604602466 "Algebraic_Groups.tex" "Algebraic_Groups.pdf" "Algebraic_Groups" 1604602466
+  "Algebraic_Groups.blg"
+["pdflatex"] 1604602549 "Algebraic_Groups.tex" "Algebraic_Groups.pdf" "Algebraic_Groups" 1604602548
   "/dev/null" 1604586501 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/home/zack/Notes/Latex/environments.tex" 1603833355 6912 f55cd4e12cdbd385f5321a403c25bb08 ""
   "/home/zack/Notes/Latex/latexmacs.tex" 1604516642 14017 58c95aaa93de972a39de62e2c78b79d5 ""
-  "/home/zack/Notes/Latex/preamble.tex" 1604602375 8159 b2b954fb7894c63b5aad0f4d0b3bbc45 ""
+  "/home/zack/Notes/Latex/preamble.tex" 1604602539 8158 d363526bcc9d0565c94b88be8d7bc8d9 ""
   "/home/zack/Notes/Latex/tikzmacros.tex" 1603676229 205 700896876da41dcc2b08888da45846a2 ""
   "/usr/local/share/texmf/tex/latex/koma-script/scrartcl.cls" 1604599779 232890 6dce6e5bd50b0eb46858f4e0a15f6bbf ""
   "/usr/local/share/texmf/tex/latex/koma-script/scrbase.sty" 1604599779 95060 8380c93cbe27347269875ef45d11e14b ""
@@ -376,14 +376,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604600808 4727905 1b81189106e2406a827797a37162c1c0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604600776 2514045 8e1cfbd25c91f3f2f96af63d45f0a3cb ""
-  "Algebraic_Groups.aux" 1604602459 1253 f5b40a683630387ebf3ec95d91c47400 "pdflatex"
+  "Algebraic_Groups.aux" 1604602495 1253 f5b40a683630387ebf3ec95d91c47400 "pdflatex"
   "Algebraic_Groups.bbl" 1604601596 2510 af64c55c4cb03a636d3e174a9e03539e "biber Algebraic_Groups"
-  "Algebraic_Groups.pre" 1604602387 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Algebraic_Groups.tex" 1604602466 185250 9ea9d7cf61cb6d460eb123d26c2f5e01 ""
+  "Algebraic_Groups.pre" 1604602505 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Algebraic_Groups.tex" 1604602548 185250 9ea9d7cf61cb6d460eb123d26c2f5e01 ""
   "figures/cover.png" 1603304157 177527 0468436000ff058b1399c0b5aa686f95 ""
   (generated)
-  "Algebraic_Groups.pre"
   "Algebraic_Groups.bcf"
   "Algebraic_Groups.aux"
+  "Algebraic_Groups.pre"
   "Algebraic_Groups.log"
   "Algebraic_Groups.pdf"
