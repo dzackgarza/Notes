@@ -17,16 +17,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\theoremstyle{definition}
-\newtheoremstyle{definition}% name
-  {0em}           % Space above, empty = `usual value'
-  {0em}           % Space below
-  {\normalfont}   % Body font
-  {}    % Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries}     % Thm head font
-  {:}             % Punctuation after thm head
-  {}      % Space after thm head: \newline = linebreak
-  {asdsa \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
-\theoremstyle{definition}
+\newtheoremstyle{defmod}% name
+  {1em}%         Space above, empty = `usual value'
+  {0em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {:}%        Punctuation after thm head
+  {0.5em}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
+\theoremstyle{defmod}
 \newtheorem{exercise}{Exercise}[section]
 \newtheorem{example}{Example}[section]
 \newtheorem{remark}{Remark}[section]
@@ -245,7 +245,7 @@
 
 %\RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
 
-
+% Number things like "Proposition 5.1.2"
 \numberwithin{proposition}{subsection} % important bit
 \numberwithin{corollary}{subsection} % important bit
 \numberwithin{theorem}{subsection} % important bit
