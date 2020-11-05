@@ -14,7 +14,7 @@
   \thm@postskip=0emem
 }
 \makeatother
-\setkomafont{subsubsection}{\normalfont\itshape}
+\setkomafont{subsection}{\normalfont\itshape}
 % Encoding
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -165,7 +165,6 @@
   {$\end{lrbox}\makebox[0pt]{\usebox{\wideeqbox}}\end{displaymath}}
 
 % Fancy chapter headers and footers
-%\KOMAoptions{twoside=true}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -248,9 +247,6 @@ arc(90:0:1); % inside palm
 
 %\usepackage{adjustbox}
 
-% Custom glyphs
-\usepackage{adforn}
-
 % Custom section headings: redefining the KOMA-Script command \sectionlinesformat:
 \newdimen\thesectionwdmax
 \newdimen\sectiontitlewd
@@ -265,7 +261,6 @@ arc(90:0:1); % inside palm
 
 \makeatletter
 \renewcommand\sectionlinesformat[4]{%
-  % Custom Chapter/Section Headings
   \ifstr{#1}{section}
     {\ifstr{#3}{}
       {\@hangfrom{\hskip #2#3}{#4}}
@@ -277,16 +272,9 @@ arc(90:0:1); % inside palm
         \end{tabular}%
       }%
     }
-    % Custom Subsection Headings
-    {\ifstr{#1}{subsection}
-      {%
-        \centering\mbox{\@hangfrom{\underline{{#3}{#4}\adforn{24}}}}%
-      }%
-    }
     {\@hangfrom{\hskip #2#3}{#4}}%
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 % Optional arguments in macro definitions
 \usepackage{xargs}
