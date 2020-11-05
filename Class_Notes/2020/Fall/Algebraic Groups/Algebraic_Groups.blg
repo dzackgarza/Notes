@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [1] Config.pm:307> INFO - Logfile is 'Algebraic_Groups.blg'
-[96] biber:322> INFO - === Thu Nov  5, 2020, 13:16:02
-[106] Biber.pm:415> INFO - Reading 'Algebraic_Groups.bcf'
-[163] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
-[174] Biber.pm:4256> INFO - Processing section 0
-[175] Utils.pm:75> INFO - Globbing data source 'Algebraic\_Groups.bib'
-[175] Utils.pm:91> INFO - Globbed data source 'Algebraic\_Groups.bib' to Algebraic_Groups.bib
-[188] Biber.pm:4455> INFO - Looking for bibtex format file 'Algebraic_Groups.bib' for section 0
-[188] bibtex.pm:1653> INFO - LaTeX decoding ...
-[191] bibtex.pm:1471> INFO - Found BibTeX data source 'Algebraic_Groups.bib'
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[237] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[237] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[240] bbl.pm:652> INFO - Writing 'Algebraic_Groups.bbl' with encoding 'UTF-8'
-[242] bbl.pm:755> INFO - Output to Algebraic_Groups.bbl
+[139] biber:322> INFO - === Thu Nov  5, 2020, 13:18:09
+[163] Biber.pm:415> INFO - Reading 'Algebraic_Groups.bcf'
+[308] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
+[358] Biber.pm:4256> INFO - Processing section 0
+[359] Utils.pm:75> INFO - Globbing data source 'Algebraic\_Groups.bib'
+[360] Utils.pm:91> INFO - Globbed data source 'Algebraic\_Groups.bib' to Algebraic_Groups.bib
+[393] Biber.pm:4455> INFO - Looking for bibtex format file 'Algebraic_Groups.bib' for section 0
+[395] bibtex.pm:1653> INFO - LaTeX decoding ...
+[404] bibtex.pm:1471> INFO - Found BibTeX data source 'Algebraic_Groups.bib'
+[511] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[511] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[512] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[513] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[520] bbl.pm:652> INFO - Writing 'Algebraic_Groups.bbl' with encoding 'UTF-8'
+[525] bbl.pm:755> INFO - Output to Algebraic_Groups.bbl
