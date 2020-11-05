@@ -1,3 +1,22 @@
+% Theorem Styles
+\usepackage[framemethod=tikz]{mdframed}
+% Boxes around theorem environments.
+\usepackage[many]{tcolorbox}
+
+% Warning environment
+%\newcommand*{\TakeFourierOrnament}[1]{{%
+%\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
+%\newcommand*{\danger}{\TakeFourierOrnament{66}}
+\usepackage{stackengine}
+\usepackage{scalerel}
+\newcommand\danger[1][3ex]{%
+  \renewcommand\stacktype{L}%
+  \scaleto{\stackon[1.3pt]{\color{red}$\triangle$}{\tiny\bfseries !}}{#1}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %\theoremstyle{definition}
 \newtheoremstyle{definition}% name
   {0em}           % Space above, empty = `usual value'
@@ -15,10 +34,6 @@
 \newtheorem{remark}{Remark}[section]
 \newtheorem{fact}{Fact}[section]
 
-% Theorem Styles
-\usepackage[framemethod=tikz]{mdframed}
-% Boxes around theorem environments.
-\usepackage[many]{tcolorbox}
 
 
 % Theorem Style
@@ -172,16 +187,6 @@
 \newtheorem*{claim}{Claim}
 
 
-% Warning environment
-%\newcommand*{\TakeFourierOrnament}[1]{{%
-%\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
-%\newcommand*{\danger}{\TakeFourierOrnament{66}}
-\usepackage{stackengine}
-\usepackage{scalerel}
-\newcommand\danger[1][3ex]{%
-  \renewcommand\stacktype{L}%
-  \scaleto{\stackon[1.3pt]{\color{red}$\triangle$}{\tiny\bfseries !}}{#1}%
-}
 
 \newtheoremstyle{warning}% name
   {0em}%         Space above, empty = `usual value'
