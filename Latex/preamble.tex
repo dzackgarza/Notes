@@ -194,10 +194,12 @@
             \textcolor{white}{\fontsize{18}{19}\selectfont
             \thesection }~
         \fi%
-    \rule[-2.85pt]{2mm}{20mm}}}}}
+    \rule[-2.85pt]{2mm}{13mm}}}}}
 }}
 \chead{\hspace{33.7mm}\leftmark}
 \cfoot*{\scriptsize \rightmark \hfill \pagemark}
+
+
 
 % List of Theorems Attempt
 \usepackage{etoolbox}
@@ -298,6 +300,8 @@ arc(90:0:1); % inside palm
     }
     {\@hangfrom{\hskip #2#3}{#4}}%
 }
+% Center subsections
+\addtokomafont{subsection}{\centering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Optional arguments in macro definitions
