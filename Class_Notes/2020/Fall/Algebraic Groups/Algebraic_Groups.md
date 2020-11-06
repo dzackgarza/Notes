@@ -1784,13 +1784,12 @@ Setup:
 
 We have 
 
-\begin{center}
 \begin{tikzcd}
 G & \text{a reductive algebraic group over } k = \bar k \\
 B\ar[u, "\subseteq"] & \text{the Borel subgroup} \\
 T\ar[u, "\subseteq"] & \text{its maximal torus}
 \end{tikzcd}
-\end{center}
+
 along with the weights $X(T)$.
 
 We can consider derived functors of induction, yielding $R^n \ind_B^G \lambda = \mathcal{H}^n(G/B, \mathcal{L}(\lambda)) \da H^n(\lambda)$ where $\mathcal{L}(\lambda)$ is a line bundle and $G/B$ is the flag variety.
@@ -1878,13 +1877,11 @@ And thus a decomposition:
 
 
 The picture to keep in mind is the following: 4 types of modules, all indexed by dominant weights:
-\begin{center}
 \begin{tikzcd}
 & H^0(\lambda) & \\
 L(\lambda) \ar[ur, hookrightarrow] & & T(\lambda)\arrow[ul, twoheadrightarrow]\\
 & V(\lambda) \arrow[ul, twoheadrightarrow] \ar[ur, hookrightarrow]
 \end{tikzcd}
-\end{center}
 
 ## Cohomological Criteria for Good Filtrations
 
