@@ -302,8 +302,25 @@ arc(90:0:1); % inside palm
 }
 % Center subsections
 %\addtokomafont{subsection}{\rmfamily\centering\fontsize{13.4pt}{16.75pt}\selectfont}
-\titleformat{name=\section}
-  {\normalfont\Large\sffamily\bfseries\filcenter}{}{0em}{\uline{\MakeUppercase{#1}}}
+%\titleformat{name=\section}
+  %{\normalfont\Large\sffamily\bfseries\filcenter}{}{0em}{\uline{\MakeUppercase{#1}}}
+\definecolor{ssec}{HTML}{20639B}
+\setkomafont{subsection}{\mysection}
+\newcommand{\mysection}[1]{%
+    \Large%
+    \setlength{\fboxsep}{0cm}%already boxed
+    \colorbox{ssec!30}{%
+        \begin{minipage}{\linewidth}%
+            \vspace*{2pt}%Space before
+            \adforn{24}\hfill 
+            \centering\mbox{
+                #1
+            } 
+            \hfill\adforn{24}
+            \vspace*{2pt}%Space after
+        \end{minipage}%
+    }
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Optional arguments in macro definitions
