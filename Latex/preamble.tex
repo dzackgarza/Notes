@@ -301,8 +301,9 @@ arc(90:0:1); % inside palm
     {\@hangfrom{\hskip #2#3}{#4}}%
 }
 % Center subsections
-\addtokomafont{subsection}{\rmfamily\centering\fontsize{13.4pt}{16.75pt}\selectfont}
-
+%\addtokomafont{subsection}{\rmfamily\centering\fontsize{13.4pt}{16.75pt}\selectfont}
+\titleformat{name=\section}
+  {\normalfont\Large\sffamily\bfseries\filcenter}{}{0em}{\uline{\MakeUppercase{#1}}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Optional arguments in macro definitions
