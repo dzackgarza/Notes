@@ -893,7 +893,7 @@ INPUT ./figures/image_2020-10-19-14-21-35.png
 INPUT figures/image_2020-10-19-14-36-02.png
 INPUT ./figures/image_2020-10-19-14-36-02.png
 INPUT ./figures/image_2020-10-19-14-36-02.png
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT figures/image_2020-10-21-14-19-53.png
 INPUT ./figures/image_2020-10-21-14-19-53.png
 INPUT ./figures/image_2020-10-21-14-19-53.png
@@ -1048,15 +1048,14 @@ OUTPUT Algebraic_Groups.loe
 INPUT Algebraic_Groups.aux
 INPUT Algebraic_Groups.run.xml
 OUTPUT Algebraic_Groups.run.xml
-INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbx6.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
