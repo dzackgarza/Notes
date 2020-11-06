@@ -88,104 +88,104 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {12.2}Good Filtrations and Weyl Filtrations}{48}{subsection.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.3}Cohomological Criteria for Good Filtrations}{50}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.3}Cohomological Criteria for Good Filtrations}{51}{subsection.12.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13}Wednesday, September 30}{54}{section.13}%
+\contentsline {section}{\numberline {13}Wednesday, September 30}{55}{section.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14}Friday, October 02}{59}{section.14}%
+\contentsline {section}{\numberline {14}Friday, October 02}{60}{section.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15}Monday, October 05}{63}{section.15}%
+\contentsline {section}{\numberline {15}Monday, October 05}{64}{section.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.1}Polynomial Representation Theory}{65}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.1}Polynomial Representation Theory}{66}{subsection.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16}Wednesday, October 07}{66}{section.16}%
+\contentsline {section}{\numberline {16}Wednesday, October 07}{67}{section.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.1}Schur Algebras}{66}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.1}Schur Algebras}{67}{subsection.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.2}Simplicity of \(H^0(\lambda )\)}{71}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.2}Simplicity of \(H^0(\lambda )\)}{72}{subsection.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.3}Bott-Borel-Weil Theorem}{72}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.3}Bott-Borel-Weil Theorem}{73}{subsection.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {16.3.1}Dot Action on Weights}{72}{subsubsection.16.3.1}%
+\contentsline {subsubsection}{\numberline {16.3.1}Dot Action on Weights}{73}{subsubsection.16.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17}Friday, October 09}{75}{section.17}%
+\contentsline {section}{\numberline {17}Friday, October 09}{76}{section.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1}Bott-Borel-Weil Theory}{76}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.1}Bott-Borel-Weil Theory}{77}{subsection.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18}Monday, October 12}{82}{section.18}%
+\contentsline {section}{\numberline {18}Monday, October 12}{83}{section.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.1}Proof of Bott-Borel-Weil}{82}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.1}Proof of Bott-Borel-Weil}{83}{subsection.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.2}Serre Duality and Grothendieck Vanishing}{85}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.2}Serre Duality and Grothendieck Vanishing}{86}{subsection.18.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.3}Weyl's Character Formula}{87}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.3}Weyl's Character Formula}{88}{subsection.18.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {18.3.1}Formal Characters}{87}{subsubsection.18.3.1}%
+\contentsline {subsubsection}{\numberline {18.3.1}Formal Characters}{88}{subsubsection.18.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {19}Wednesday, October 14}{87}{section.19}%
+\contentsline {section}{\numberline {19}Wednesday, October 14}{88}{section.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {19.1}Weyl's Character Formula}{90}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.1}Weyl's Character Formula}{91}{subsection.19.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20}Friday, October 16}{92}{section.20}%
+\contentsline {section}{\numberline {20}Friday, October 16}{93}{section.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.1}Example: Weyl's Character Formula}{92}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.1}Example: Weyl's Character Formula}{93}{subsection.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.2}Strong Linkage Principle}{94}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.2}Strong Linkage Principle}{95}{subsection.20.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {20.2.1}Linkage in Category \({\mathcal {O}}\)}{95}{subsubsection.20.2.1}%
+\contentsline {subsubsection}{\numberline {20.2.1}Linkage in Category \({\mathcal {O}}\)}{96}{subsubsection.20.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21}Monday, October 19}{98}{section.21}%
+\contentsline {section}{\numberline {21}Monday, October 19}{99}{section.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {21.1}Representations in Positive Characteristic}{99}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.1}Representations in Positive Characteristic}{100}{subsection.21.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {21.2}Affine Weyl Group}{101}{subsection.21.2}%
+\contentsline {subsection}{\numberline {21.2}Affine Weyl Group}{102}{subsection.21.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {21.2.1}Ordering of Weights}{103}{subsubsection.21.2.1}%
+\contentsline {subsubsection}{\numberline {21.2.1}Ordering of Weights}{104}{subsubsection.21.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {22}Wednesday, October 21}{104}{section.22}%
+\contentsline {section}{\numberline {22}Wednesday, October 21}{105}{section.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {22.1}Strong Linkage}{104}{subsection.22.1}%
+\contentsline {subsection}{\numberline {22.1}Strong Linkage}{105}{subsection.22.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {22.2}Translation Functors}{105}{subsection.22.2}%
+\contentsline {subsection}{\numberline {22.2}Translation Functors}{106}{subsection.22.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {22.2.1}Blocks}{107}{subsubsection.22.2.1}%
+\contentsline {subsubsection}{\numberline {22.2.1}Blocks}{108}{subsubsection.22.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {23}Friday, October 23}{109}{section.23}%
+\contentsline {section}{\numberline {23}Friday, October 23}{110}{section.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {23.1}Facets}{109}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.1}Facets}{110}{subsection.23.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {23.2}Translation Functors}{111}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.2}Translation Functors}{112}{subsection.23.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {23.3}Technical Preliminaries}{112}{subsection.23.3}%
+\contentsline {subsection}{\numberline {23.3}Technical Preliminaries}{113}{subsection.23.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {24}Monday, October 26}{114}{section.24}%
+\contentsline {section}{\numberline {24}Monday, October 26}{115}{section.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {24.1}Review}{114}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.1}Review}{115}{subsection.24.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {24.2}Characters of Translated Modules}{114}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.2}Characters of Translated Modules}{115}{subsection.24.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {24.3}Equivalence of Categories}{115}{subsection.24.3}%
+\contentsline {subsection}{\numberline {24.3}Equivalence of Categories}{116}{subsection.24.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {25}Wednesday, October 28}{118}{section.25}%
+\contentsline {section}{\numberline {25}Wednesday, October 28}{119}{section.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {25.1}Review of Last Time}{118}{subsection.25.1}%
+\contentsline {subsection}{\numberline {25.1}Review of Last Time}{119}{subsection.25.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {25.2}Description of \(T_\lambda ^\mu {H^i(w\cdot \lambda ) }\)}{119}{subsection.25.2}%
+\contentsline {subsection}{\numberline {25.2}Description of \(T_\lambda ^\mu {H^i(w\cdot \lambda ) }\)}{120}{subsection.25.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {26}Monday, November 02}{126}{section.26}%
+\contentsline {section}{\numberline {26}Monday, November 02}{127}{section.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {26.1}Alcove Geometry}{126}{subsection.26.1}%
+\contentsline {subsection}{\numberline {26.1}Alcove Geometry}{127}{subsection.26.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {26.1.1}Length Function for Alcoves}{126}{subsubsection.26.1.1}%
+\contentsline {subsubsection}{\numberline {26.1.1}Length Function for Alcoves}{127}{subsubsection.26.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {27}Wednesday, November 04}{133}{section.27}%
+\contentsline {section}{\numberline {27}Wednesday, November 04}{134}{section.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {27.1}Representations for \(G_r T\) and \(G_r B\)}{134}{subsection.27.1}%
+\contentsline {subsection}{\numberline {27.1}Representations for \(G_r T\) and \(G_r B\)}{135}{subsection.27.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {27.2}Summary: Classification of Simple \(G_r T{\hbox {-}}\)Modules}{136}{subsection.27.2}%
+\contentsline {subsection}{\numberline {27.2}Summary: Classification of Simple \(G_r T{\hbox {-}}\)Modules}{137}{subsection.27.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {28}Indices}{138}{section.28}%
+\contentsline {section}{\numberline {28}Indices}{139}{section.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {29}Bibliography}{142}{section.29}%
+\contentsline {section}{\numberline {29}Bibliography}{143}{section.29}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
