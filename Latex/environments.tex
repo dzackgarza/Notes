@@ -18,19 +18,31 @@
 
 %\theoremstyle{definition}
 \newtheoremstyle{defmod}% name
-  {1em}%         Space above, empty = `usual value'
+  {0em}%         Space above, empty = `usual value'
   {0em}%         Space below
   {\normalfont}% Body font
   {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries}% Thm head font
+  {\itshape}% Thm head font
   {:}%        Punctuation after thm head
-  {0.5em}% Space after thm head: \newline = linebreak
+  {0.35em}% Space after thm head: \newline = linebreak
   {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{defmod}
 \newtheorem{exercise}{Exercise}[section]
 \newtheorem{example}{Example}[section]
 \newtheorem{remark}{Remark}[section]
 \newtheorem{fact}{Fact}[section]
+
+\newtheoremstyle{warning}% name
+  {0em}%         Space above, empty = `usual value'
+  {0em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {:}%        Punctuation after thm head
+  {0.35em}% Space after thm head: \newline = linebreak
+  {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
+\theoremstyle{warning}
+\newtheorem{warning}{Warning}[section]
 
 
 % Theorem Style
@@ -185,17 +197,6 @@
 
 
 
-\newtheoremstyle{warning}% name
-  {0em}%         Space above, empty = `usual value'
-  {1em}%         Space below
-  {\normalfont}% Body font
-  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries}% Thm head font
-  {:}%        Punctuation after thm head
-  {0.5em}% Space after thm head: \newline = linebreak
-  {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
-\theoremstyle{warning}
-\newtheorem{warning}{Warning}[section]
 
 \newtheoremstyle{solution}% name
   {0em}%         Space above, empty = `usual value'
