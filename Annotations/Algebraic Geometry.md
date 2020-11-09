@@ -1,8 +1,8 @@
-# 12/29/2019: Algebraic Geometry (Robin Hartshorne)
+# 11/06/2020: Algebraic Geometry (Robin Hartshorne)
 
 <a href='file:////home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf' target='_blank'>/home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf</a>
 
-Last Annotation: 12/29/2019
+Last Annotation: 11/06/2020
 
 ## Highlights
 
@@ -32,5 +32,7 @@ Last Annotation: 12/29/2019
 - This shows that every maximal ideal of 4 is of the form N= \(Ny — dye\.\.\. \ «,\)\. for some «ay, \.\.\.\.u, ek\. (<a href="file:////home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf#page=21" target="_blank">Robin Hartshorne 21</a>)
 - the curve x? + 2 + 1 = 0in Ag has no points\. (<a href="file:////home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf#page=21" target="_blank">Robin Hartshorne 21</a>)
 - Definition\. If Y © A” is an affine algebraic set, we define the uffine coordinate ring ACY\) of Y\.to be A I\(Y\)\. (<a href="file:////home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf#page=21" target="_blank">Robin Hartshorne 21</a>)
-- Definition\. In a ring 4\. the /icight of a prime ideal p 1s the supremum of all integers 1 such that there exists a chain p, cp, =\.\.\. cp, =p of distinct prime ideals\. We define the dimension \(or Krull dimension\) of 4 to be the supremum of the heights of all prime ideals\. (<a href="file:////home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf#page=23" target="_blank">Robin Hartshorne 23</a>)<hr>
+- Definition\. In a ring 4\. the /icight of a prime ideal p 1s the supremum of all integers 1 such that there exists a chain p, cp, =\.\.\. cp, =p of distinct prime ideals\. We define the dimension \(or Krull dimension\) of 4 to be the supremum of the heights of all prime ideals\. (<a href="file:////home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf#page=23" target="_blank">Robin Hartshorne 23</a>)
+- Now if X is a scheme of finite type over C, we define the associated complex analytic space X, as follows\. Cover X with open affine subsets Y; = Spec A;\. Each A; is an algebra of finite type over C, so we can write it as A; = Clxy,\.\.\.\.x,\)/\(f1,\.\.\.\.f,\)\. Here fi, \.\.\. f arepolynomialsin x, \.\.\. x,\. We can regard them as holomorphic functions on C”, so that their set of common zeros is a complex analytic subspace \(Y;\), & C"\. The scheme X 1s obtained by glueing the open sets Y;, so we can use the same glueing data to glue the analytic spaces \(Y;\), into an analytic space X,\. This is the associated complex analytic space of X\. (<a href="file:////home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf#page=456" target="_blank">Robin Hartshorne 456</a>)
+- If X 1s a compact complex manifold, then one can show that a scheme X such that X, = X, if it exists, 1s unique\. So if such an X exists, we will simply say X is algebraic\. (<a href="file:////home/zack/Dropbox/Library/Robin Hartshorne/Algebraic Geometry (607)/Algebraic Geometry - Robin Hartshorne.pdf#page=458" target="_blank">Robin Hartshorne 458</a>)<hr>
 
