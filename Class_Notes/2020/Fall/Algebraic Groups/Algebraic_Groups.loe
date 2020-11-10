@@ -1,0 +1,522 @@
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {1.1.1}Definition\thmtformatoptarg {Affine Variety}}{4}{definition.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {1.1.2}Definition\thmtformatoptarg {Affine Algebraic Group}}{4}{definition.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {1.1.1}Example}{4}{example.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {1.1.2}Example}{4}{example.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {1.1.3}Example}{4}{example.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {1.1.4}Example}{4}{example.1.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {1.1.3}Definition\thmtformatoptarg {Irreducible}}{4}{definition.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {1.1.1}Proposition\thmtformatoptarg {?}}{5}{proposition.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {1.1.2}Proposition\thmtformatoptarg {?}}{5}{proposition.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {1.1.3}Proposition\thmtformatoptarg {?}}{5}{proposition.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {1.2.1}Proposition\thmtformatoptarg {Existence and Uniqueness of Radical}}{5}{proposition.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {1.2.1}Definition\thmtformatoptarg {Unipotent}}{6}{definition.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {1.2.2}Proposition\thmtformatoptarg {JC Decomposition}}{6}{proposition.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {1.2.2}Definition\thmtformatoptarg {Semisimple and Reductive}}{6}{definition.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {1.2.1}Example}{6}{example.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {1.2.2}Example}{6}{example.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercise}{\numberline {1.2.1}Exercise}{6}{exercise.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {1.2.3}Definition\thmtformatoptarg {Torus}}{6}{definition.1.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {1.2.3}Example}{6}{example.1.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {1.2.1}Remark}{6}{remark.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {2.2.1}Definition\thmtformatoptarg {The Lie Algebra of an Algebraic Group}}{8}{definition.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {2.2.1}Example}{9}{example.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {2.2.2}Example}{9}{example.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {2.3.1}Example}{10}{example.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {2.3.2}Example}{11}{example.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {2.4.1}Example}{11}{example.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {3.1.1}Example}{12}{example.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {3.2.1}Example}{13}{example.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {3.2.1}Remark}{13}{remark.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {3.2.2}Example}{13}{example.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {3.2.2}Remark}{14}{remark.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {3.2.3}Remark}{14}{remark.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {3.2.3}Example}{14}{example.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {3.2.4}Remark}{14}{remark.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {3.2.1}Definition\thmtformatoptarg {Fundamental Dominant Weights}}{14}{definition.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {3.3.1}Theorem\thmtformatoptarg {?}}{15}{theorem.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {4.1.1}Remark}{16}{remark.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {4.1.1}Theorem\thmtformatoptarg {?}}{16}{theorem.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercise}{\numberline {4.1.1}Exercise}{17}{exercise.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {4.1.1}Definition\thmtformatoptarg {Induction}}{17}{definition.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {4.2.1}Example}{18}{example.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {5.1.1}Definition\thmtformatoptarg {?}}{20}{definition.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {5.1.1}Example}{20}{example.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {5.1.2}Example}{20}{example.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {5.1.3}Example}{21}{example.5.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {5.1.1}Remark}{22}{remark.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {5.1.2}Remark}{22}{remark.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {5.1.1}Proposition\thmtformatoptarg {?}}{22}{proposition.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {5.1.4}Example}{23}{example.5.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {(Sketch)}}{23}{thmt@dummyctr.dummy.50}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {5.1.2}Proposition\thmtformatoptarg {?}}{23}{proposition.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{24}{thmt@dummyctr.dummy.52}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {6.0.1}Example}{24}{example.6.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {6.0.1}Theorem\thmtformatoptarg {?}}{25}{theorem.6.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {6.0.1}Remark}{25}{remark.6.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {6.0.2}Example}{25}{example.6.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {6.1.1}Remark}{25}{remark.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {6.1.2}Remark}{25}{remark.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {6.1.3}Remark}{25}{remark.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {6.1.4}Remark}{25}{remark.6.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {6.1.1}Theorem\thmtformatoptarg {?}}{26}{theorem.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{26}{thmt@dummyctr.dummy.62}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {6.1.2}Theorem\thmtformatoptarg {?}}{26}{theorem.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {8.1.1}Definition\thmtformatoptarg {Representable Functors}}{27}{definition.8.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {8.1.1}Example}{27}{example.8.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {8.1.2}Definition\thmtformatoptarg {Affine Group Scheme}}{27}{definition.8.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {8.1.3}Definition\thmtformatoptarg {Finite Group Schemes}}{28}{definition.8.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {8.2.1}Example}{29}{example.8.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {8.2.2}Example}{29}{example.8.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {8.2.3}Example}{29}{example.8.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {8.2.4}Example}{29}{example.8.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {8.3.1}Definition\thmtformatoptarg {Frobenius Kernels}}{30}{definition.8.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {8.3.1}Remark}{30}{remark.8.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {9.2.1}Proposition\thmtformatoptarg {?}}{33}{proposition.9.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Sketch for (1)}}{33}{thmt@dummyctr.dummy.75}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {9.3.1}Proposition\thmtformatoptarg {?}}{34}{proposition.9.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {10.0.1}Proposition\thmtformatoptarg {?}}{35}{proposition.10.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1}}{35}{thmt@dummyctr.dummy.78}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {10.1.1}Theorem\thmtformatoptarg {Main Theorem}}{37}{theorem.10.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {11.1.1}Proposition\thmtformatoptarg {?}}{39}{proposition.11.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{39}{thmt@dummyctr.dummy.81}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {11.2.1}Theorem\thmtformatoptarg {Steinberg}}{40}{theorem.11.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollary}{\numberline {11.2.1}Corollary\thmtformatoptarg {?}}{40}{corollary.11.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {11.3.1}Example}{41}{example.11.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {11.3.1}Theorem\thmtformatoptarg {?}}{41}{theorem.11.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {11.3.2}Theorem\thmtformatoptarg {?}}{41}{theorem.11.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {12.1.1}Theorem\thmtformatoptarg {Kempf}}{46}{theorem.12.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {12.1.1}Remark}{46}{remark.12.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {12.2.1}Definition\thmtformatoptarg {Good Filtrations}}{47}{definition.12.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {12.2.2}Definition\thmtformatoptarg {Weyl Filtration}}{47}{definition.12.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {12.2.3}Definition\thmtformatoptarg {Tilting Modules}}{47}{definition.12.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {12.2.1}Theorem\thmtformatoptarg {Ringel, 1990s}}{47}{theorem.12.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {12.2.1}Example}{47}{example.12.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {lemma}{\numberline {12.1}Lemma\thmtformatoptarg {?}}{50}{lemma.12.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {12.3.1}Proposition\thmtformatoptarg {?}}{51}{proposition.12.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {12.3.1}Example}{51}{example.12.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollary}{\numberline {12.3.1}Corollary\thmtformatoptarg {?}}{52}{corollary.12.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {12.3.2}Example}{52}{example.12.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {12.3.2}Proposition\thmtformatoptarg {?}}{54}{proposition.12.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {13.0.1}Proposition\thmtformatoptarg {?}}{54}{proposition.13.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of part b}}{54}{thmt@dummyctr.dummy.101}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {13.0.1}Theorem\thmtformatoptarg {?}}{55}{theorem.13.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{55}{thmt@dummyctr.dummy.103}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {13.0.2}Proposition\thmtformatoptarg {?}}{56}{proposition.13.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {13.0.1}Remark}{56}{remark.13.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{57}{thmt@dummyctr.dummy.106}%
+\defcounter {refsection}{0}\relax 
+\contentsline {lemma}{\numberline {13.1}Lemma\thmtformatoptarg {Important!}}{58}{lemma.13.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {13.0.2}Remark}{58}{remark.13.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{58}{thmt@dummyctr.dummy.109}%
+\defcounter {refsection}{0}\relax 
+\contentsline {lemma}{\numberline {14.1}Lemma\thmtformatoptarg {?}}{59}{lemma.14.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {14.0.1}Theorem\thmtformatoptarg {Cohomological Condition for Good Filtrations}}{59}{theorem.14.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Part a}}{59}{thmt@dummyctr.dummy.112}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {Part b}}{60}{thmt@dummyctr.dummy.113}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollary}{\numberline {14.0.1}Corollary\thmtformatoptarg {?}}{61}{corollary.14.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{61}{thmt@dummyctr.dummy.115}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {14.0.2}Theorem\thmtformatoptarg {?}}{62}{theorem.14.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{62}{thmt@dummyctr.dummy.117}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{62}{thmt@dummyctr.dummy.118}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {14.0.3}Theorem\thmtformatoptarg {Cohomological Criterion for Weyl Filtrations}}{62}{theorem.14.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {15.0.1}Example}{63}{example.15.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {15.0.1}Remark}{63}{remark.15.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {15.0.1}Theorem\thmtformatoptarg {?}}{64}{theorem.15.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {15.0.2}Example}{64}{example.15.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {15.0.2}Theorem\thmtformatoptarg {?}}{64}{theorem.15.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {15.0.3}Theorem\thmtformatoptarg {?}}{64}{theorem.15.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {15.0.2}Remark}{65}{remark.15.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {15.1.1}Example}{65}{example.15.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {15.1.1}Remark}{65}{remark.15.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {15.1.1}Theorem\thmtformatoptarg {?}}{65}{theorem.15.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {15.1.2}Remark}{65}{remark.15.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {15.1.2}Theorem\thmtformatoptarg {?}}{65}{theorem.15.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {15.1.2}Example}{66}{example.15.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {16.1.1}Example}{66}{example.16.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {16.2.1}Example}{71}{example.16.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {16.2.2}Example}{72}{example.16.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {16.2.1}Remark}{72}{remark.16.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {16.2.1}Proposition\thmtformatoptarg {Gross}}{72}{proposition.16.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {16.3.1}Example}{72}{example.16.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {16.3.1}Theorem\thmtformatoptarg {Bott-Borel-Weil}}{73}{theorem.16.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {17.1.1}Proposition\thmtformatoptarg {?}}{76}{proposition.17.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollary}{\numberline {17.1.1}Corollary\thmtformatoptarg {?}}{77}{corollary.17.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {17.1.2}Proposition\thmtformatoptarg {?}}{79}{proposition.17.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{79}{thmt@dummyctr.dummy.143}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{79}{thmt@dummyctr.dummy.144}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of c}}{80}{thmt@dummyctr.dummy.145}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of d}}{80}{thmt@dummyctr.dummy.146}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {17.1.1}Theorem\thmtformatoptarg {Bott-Borel-Weil Generalization, due to Andersen}}{81}{theorem.17.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {17.1.1}Remark}{82}{remark.17.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {18.1.1}Theorem\thmtformatoptarg {due to Aandersen}}{83}{theorem.18.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{84}{thmt@dummyctr.dummy.150}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b}}{84}{thmt@dummyctr.dummy.151}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {18.2.1}Example}{85}{example.18.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {18.2.1}Theorem\thmtformatoptarg {Grothendieck Vanishing}}{85}{theorem.18.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {18.2.2}Theorem\thmtformatoptarg {Serre Duality}}{86}{theorem.18.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {18.2.2}Example}{86}{example.18.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollary}{\numberline {18.2.1}Corollary\thmtformatoptarg {?}}{86}{corollary.18.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of a}}{86}{thmt@dummyctr.dummy.157}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of b and c}}{87}{thmt@dummyctr.dummy.158}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {19.0.1}Remark}{88}{remark.19.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {19.0.1}Proposition\thmtformatoptarg {?}}{89}{proposition.19.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1}}{89}{thmt@dummyctr.dummy.161}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 2}}{89}{thmt@dummyctr.dummy.162}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {19.0.2}Remark}{90}{remark.19.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {19.1.1}Remark\thmtformatoptarg {Very Important Fact}}{90}{remark.19.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {19.1.1}Proposition\thmtformatoptarg {General Formula}}{90}{proposition.19.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {lemma}{\numberline {19.1}Lemma\thmtformatoptarg {?}}{91}{lemma.19.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 2}}{91}{thmt@dummyctr.dummy.167}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {19.1.1}Theorem\thmtformatoptarg {Weyl's Character Formula}}{91}{theorem.19.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {20.1.1}Theorem\thmtformatoptarg {Weyl's Character Formula}}{93}{theorem.20.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{93}{thmt@dummyctr.dummy.170}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {20.1.1}Example}{94}{example.20.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {20.2.1}Example}{95}{example.20.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {20.2.2}Example}{96}{example.20.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {21.1.1}Example}{99}{example.21.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {21.2.1}Example}{102}{example.21.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {21.2.2}Example}{102}{example.21.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {21.2.1}Theorem\thmtformatoptarg {Linkage}}{103}{theorem.21.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {warning}{\numberline {21.1}Warning}{103}{warning.21.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {21.2.1}Definition\thmtformatoptarg {Strong Linkage}}{103}{definition.21.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {21.2.1}Remark}{103}{remark.21.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {21.2.2}Theorem\thmtformatoptarg {Strong Linkage Principle}}{103}{theorem.21.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {22.1.1}Theorem\thmtformatoptarg {Strong Linkage I}}{104}{theorem.22.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {22.1.2}Theorem\thmtformatoptarg {Strong Linkage II}}{104}{theorem.22.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {22.1.1}Remark}{104}{remark.22.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {22.1.2}Remark}{104}{remark.22.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {22.1.3}Remark}{104}{remark.22.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {lemma}{\numberline {22.1}Lemma\thmtformatoptarg {?}}{107}{lemma.22.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {22.2.1}Theorem\thmtformatoptarg {Donkin}}{108}{theorem.22.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {22.2.1}Proposition\thmtformatoptarg {?}}{108}{proposition.22.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {22.2.1}Example}{108}{example.22.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {22.2.1}Definition\thmtformatoptarg {Translation Functors}}{109}{definition.22.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {23.1.1}Definition\thmtformatoptarg {Facet}}{109}{definition.23.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {23.1.2}Definition\thmtformatoptarg {Closure of a Facet}}{110}{definition.23.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {23.1.3}Definition\thmtformatoptarg {Upper Closure of a Facet}}{110}{definition.23.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {23.1.4}Definition\thmtformatoptarg {Alcove}}{110}{definition.23.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {23.1.1}Remark}{110}{remark.23.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {lemma}{\numberline {23.1}Lemma\thmtformatoptarg {?}}{111}{lemma.23.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{111}{thmt@dummyctr.dummy.198}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {23.2.1}Theorem\thmtformatoptarg {?}}{111}{theorem.23.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{112}{thmt@dummyctr.dummy.200}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {23.2.1}Remark}{112}{remark.23.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {23.3.1}Proposition\thmtformatoptarg {?}}{112}{proposition.23.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{113}{thmt@dummyctr.dummy.203}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {23.3.1}Remark}{113}{remark.23.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {lemma}{\numberline {24.1}Lemma\thmtformatoptarg {Technical}}{114}{lemma.24.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {24.2.1}Theorem\thmtformatoptarg {?}}{114}{theorem.24.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{115}{thmt@dummyctr.dummy.207}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {24.3.1}Definition\thmtformatoptarg {Natural transformations, isomorphisms, and equivalence of categories}}{116}{definition.24.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {24.3.1}Theorem\thmtformatoptarg {?}}{116}{theorem.24.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof}{116}{thmt@dummyctr.dummy.210}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {25.2.1}Theorem\thmtformatoptarg {?}}{119}{theorem.25.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {25.2.1}Example\thmtformatoptarg {?}}{120}{example.25.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{120}{thmt@dummyctr.dummy.213}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {25.2.1}Proposition\thmtformatoptarg {?}}{122}{proposition.25.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {25.2.2}Proposition\thmtformatoptarg {?}}{122}{proposition.25.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {25.2.2}Example\thmtformatoptarg {?}}{122}{example.25.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {25.2.1}Definition\thmtformatoptarg {Walls}}{123}{definition.25.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {25.2.1}Remark}{124}{remark.25.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {25.2.3}Proposition\thmtformatoptarg {?}}{124}{proposition.25.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {26.1.1}Remark\thmtformatoptarg {Question (Vogan, Beilinson-Bernstein)}}{131}{remark.26.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {26.1.1}Definition\thmtformatoptarg {Coxeter Number}}{131}{definition.26.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {26.1.1}Example\thmtformatoptarg {?}}{132}{example.26.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {26.1.2}Example\thmtformatoptarg {?}}{132}{example.26.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {26.1.2}Remark}{132}{remark.26.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {26.1.2}Definition\thmtformatoptarg {Jantzen Region}}{132}{definition.26.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {26.1.1}Proposition\thmtformatoptarg {Lusztig Conjecture}}{132}{proposition.26.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {26.1.3}Remark}{132}{remark.26.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {26.1.4}Remark}{132}{remark.26.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {26.1.5}Remark}{133}{remark.26.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {27.1.1}Proposition\thmtformatoptarg {?}}{134}{proposition.27.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 1 and 2}}{134}{thmt@dummyctr.dummy.231}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {of 3}}{135}{thmt@dummyctr.dummy.232}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {27.1.1}Theorem\thmtformatoptarg {?}}{135}{theorem.27.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{135}{thmt@dummyctr.dummy.234}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {27.1.2}Proposition\thmtformatoptarg {?}}{136}{proposition.27.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {27.2.1}Proposition\thmtformatoptarg {?}}{137}{proposition.27.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {28.1.1}Proposition\thmtformatoptarg {?}}{138}{proposition.28.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{138}{thmt@dummyctr.dummy.238}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {28.1.1}Definition\thmtformatoptarg {$p{\hbox {-}}$filtration, due to Steve Donkin}}{138}{definition.28.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {28.1.1}Remark}{139}{remark.28.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {28.1.2}Proposition\thmtformatoptarg {Parshall-Scott, 2013}}{139}{proposition.28.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {28.1.3}Proposition\thmtformatoptarg {Bendell-Nakano-Pillen-Sobaje, 2019}}{139}{proposition.28.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {28.1.1}Theorem\thmtformatoptarg {?}}{139}{theorem.28.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{139}{thmt@dummyctr.dummy.244}%
+\defcounter {refsection}{0}\relax 
+\contentsline {warning}{\numberline {28.1}Warning}{140}{warning.28.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {28.2.1}Theorem\thmtformatoptarg {?}}{141}{theorem.28.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{141}{thmt@dummyctr.dummy.247}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {29.1.1}Theorem\thmtformatoptarg {?}}{142}{theorem.29.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {29.1.1}Example\thmtformatoptarg {?}}{142}{example.29.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {example}{\numberline {29.3.1}Example\thmtformatoptarg {Steinberg}}{145}{example.29.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definition}{\numberline {29.3.1}Definition\thmtformatoptarg {Steinberg Modules}}{146}{definition.29.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {29.3.1}Remark}{146}{remark.29.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theorem}{\numberline {29.3.1}Theorem\thmtformatoptarg {?}}{147}{theorem.29.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {pf}{\numberline {\let \autodot \@empty }Proof\thmtformatoptarg {?}}{147}{thmt@dummyctr.dummy.254}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {29.3.1}Proposition\thmtformatoptarg {Open Conjecture, Donkin, MSRI 1990: 'DFilt Conjecture'}}{147}{proposition.29.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {29.3.2}Remark}{147}{remark.29.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {29.3.3}Remark\thmtformatoptarg {Important! What we've been working toward stating}}{147}{remark.29.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {29.3.2}Proposition\thmtformatoptarg {Conjecture}}{147}{proposition.29.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{\numberline {29.3.4}Remark}{147}{remark.29.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{\numberline {29.3.3}Proposition\thmtformatoptarg {Statement of DTilt Conjecture, Kildetoft-Nakano-Subaje MSRI 1990}}{148}{proposition.29.3.3}%
+\defcounter {refsection}{0}\relax 
+\thmlopatch@endchapter 
