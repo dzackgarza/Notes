@@ -58,12 +58,13 @@ errors and mistakes, please let me know if you find any! } } \\
 \begin{document}
 
 \date{}
+\author{D. Zack Garza}
 \maketitle
 \begin{flushleft}
 \textbf{D. Zack Garza} \\
 \textit{University of Georgia} \\
 \textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-11-01 }
+{\tiny \textit{Last updated:} 2020-11-10 }
 \end{flushleft}
 
 
@@ -1945,7 +1946,9 @@ A &\aug& \vector b \\
 
 \begin{align*}  
 \abs{\ker(A)} + \abs{\im(A)} = \abs{\dom(A)}
-.\end{align*}
+,\end{align*} where
+\(\nullity(A) = \abs{\im{A}}, \rank(A) = \abs{\im(A)},\) and \(n\) is
+the number of columns in the corresponding matrix.
 
 Generalization: the following sequence is always exact:
 \begin{align*}
@@ -1955,6 +1958,15 @@ Generalization: the following sequence is always exact:
 \(\abs{\dom(A)} = \abs{\ker(A)} + \abs{\im(A)}\).
 
 \end{theorem}
+
+\begin{remark}
+
+We also have
+\begin{align*}  
+\dim(\rowspace(A)) = \dim(\colspace(A)) = \rank(A)
+.\end{align*}
+
+\end{remark}
 
 \hypertarget{big-list-of-equivalent-properties}{%
 \subsection{Big List of Equivalent
@@ -2013,6 +2025,48 @@ solutions
 \hypertarget{vector-spaces}{%
 \subsection{Vector Spaces}\label{vector-spaces}}
 
+\hypertarget{linear-transformations}{%
+\subsubsection{Linear Transformations}\label{linear-transformations}}
+
+\begin{definition}[Linear Transformation]
+
+\todo[inline]{todo}
+
+\end{definition}
+
+\begin{remark}
+
+It is common to want to know the range and kernel of a specific linear
+transformation \(T\). \(T\) can be given in many ways, but a general
+strategy for deducing these properties involves:
+
+\begin{itemize}
+\item
+  Express an arbitrary vector in \(V\) as a linear combination of its
+  basis vectors, and set it equal to an arbitrary vector in \(W\).
+\item
+  Use the linear properties of \(T\) to make a substitution from known
+  transformations
+\item
+  Find a restriction or relation given by the constants of the initial
+  linear combination.
+\end{itemize}
+
+\end{remark}
+
+\begin{remark}
+
+Useful fact: if \(V\leq W\) is a subspace and \(\dim(V) \geq \dim(W)\),
+then \(V=W\).
+
+\end{remark}
+
+\begin{definition}[Kernel]
+
+\todo[inline]{todo}
+
+\end{definition}
+
 \begin{proposition}[Two-step vector subspace test]
 
 If \(V\subseteq W\), then \(V\) is a subspace of \(W\) if the following
@@ -2036,6 +2090,35 @@ Any set of two vectors \(\theset{\vector v, \vector w}\) is linearly
 not a scalar multiple of the other.
 
 \end{proposition}
+
+\hypertarget{bases}{%
+\subsubsection{Bases}\label{bases}}
+
+\begin{definition}[Basis and dimension]
+
+A set \(S\) forms a \textbf{basis} for a vector space \(V\) iff
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(S\) is a set of linearly independent vectors, so
+  \(\sum \alpha_i \vec{s_i} = 0 \implies \alpha_i = 0\) for all \(i\).
+\item
+  \(S\) spans \(V\), so \(\vec{v} \in V\) implies there exist
+  \(\alpha_i\) such that \(\sum \alpha_i \vec{s_i} = \vec{v}\)
+\end{enumerate}
+
+In this case, we define the \textbf{dimension} of \(V\) to be
+\(\abs{S}\).
+
+\end{definition}
+
+\todo[inline]{Show how to compute basis of kernel.}
+
+\todo[inline]{Show how to compute basis of row space (nonzero rows in $\ref(A)$?)}
+
+\todo[inline]{Show how to compute basis of column space: leading ones.}
 
 \hypertarget{the-inner-product}{%
 \subsubsection{The Inner Product}\label{the-inner-product}}
@@ -2210,7 +2293,7 @@ This also allows us to simplify projection matrices. Supposing that
 \(A\) has orthonormal columns and letting \(S\) be the column space of
 \(A\), recall that the projection onto \(S\) is defined by
 \begin{align*}  
-P_S = Q(Q^TQ)^{-1}Q^T.
+P_S = Q(Q^TQ)^{-1}Q^T
 .\end{align*}
 
 Since \(Q\) has orthogonal columns and satisfies \(Q^TQ = I\), this
@@ -2248,6 +2331,57 @@ In words, at each stage, we take one of the original vectors
 only the component of \(\vector x_i\) that is orthogonal to the span of
 the previous \(\vector u_i\) we already have, and we then normalize each
 \(\vector u_i\) we obtain this way.
+
+\textbf{Alternative Explanation}:
+
+Given a basis
+\begin{align*}
+  S = \left\{\mathbf{v_1, v_2, \cdots v_n}\right\},
+\end{align*}
+
+the Gram-Schmidt process produces a corresponding orthogonal basis
+\begin{align*}
+  S' = \left\{\mathbf{u_1, u_2, \cdots u_n}\right\}
+\end{align*} that spans the same vector space as \(S\).
+
+\(S'\) is found using the following pattern:
+\begin{align*}
+\mathbf{u_1} &= \mathbf{v_1} \\
+\mathbf{u_2} &= \mathbf{v_2} - \text{proj}_{\mathbf{u_1}} \mathbf{v_2}\\
+\mathbf{u_3} &= \mathbf{v_3} - \text{proj}_{\mathbf{u_1}} \mathbf{v_3} - \text{proj}_{\mathbf{u_2}} \mathbf{v_3}\\
+\end{align*}
+
+where
+\begin{align*}
+\text{proj}_{\mathbf{u}} \mathbf{v} = (\text{scal}_{\mathbf{u}} \mathbf{v})\frac{\mathbf{u}}{\mathbf{\norm{u}}}
+= \frac{\langle \mathbf{v,u} \rangle}{\norm{\mathbf{u}}}\frac{\mathbf{u}}{\mathbf{\norm{u}}}
+= \frac{\ip{\vector{v}}{\vector{u}}}{\norm{\vector{u}}^2}\vector{u}
+\end{align*} is a vector defined as the
+\textit{orthogonal projection of $\vector{v}$ onto $\vector{u}$.}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-11-10-01-22-34.png}
+\caption{Image}
+\end{figure}
+
+The orthogonal set \(S'\) can then be transformed into an orthonormal
+set \(S''\) by simply dividing the vectors \(s\in S'\) by their
+magnitudes. The usual definition of a vector's magnitude is
+\begin{align*}
+\norm{\vector{a}} = \sqrt{\ip{\vector{a}}{\vector{a}}} \text{ and } \norm{\vector{a}}^2 = \ip{\vector{a}}{\vector{a}}
+\end{align*}
+
+As a final check, all vectors in \(S'\) should be orthogonal to each
+other, such that
+\begin{align*}
+\ip{\vector{v_i}}{\vector{v_j}} = 0 \text{ when } i \neq j
+\end{align*}
+
+and all vectors in \(S''\) should be orthonormal, such that
+\begin{align*}
+\ip{\vector{v_i}}{\vector{v_j}} = \delta_{ij}
+\end{align*}
 
 \hypertarget{the-fundamental-subspaces-theorem}{%
 \subsubsection{The Fundamental Subspaces
@@ -2399,6 +2533,8 @@ There are three possibilities for a system of linear equations:
   Infinitely many solutions (consistent, underdetermined, square or wide
   matrices)
 \end{enumerate}
+
+\includegraphics{figures/solution_sets.png}
 
 These possibilities can be check by considering \(r\da \rank(A)\):
 
@@ -2995,6 +3131,216 @@ A \da \left[ \begin{array} { c c } { 1 } & { 1 } \\ { 0 } & { - 1 } \end{array} 
 &\implies A^2 = I_2,
 && \spec(A) = [1, -1]
 \end{align*}
+
+\hypertarget{example-problems}{%
+\subsection{Example Problems}\label{example-problems}}
+
+\begin{problem}[?]
+
+Determine a basis for
+\begin{align*}
+S = \left\{a_0 + a_1 x + a_2 x^2\mid a_0,a_1,a_2 \in \mathbb{R} \land a_0 - a_1 -2a_2 =0\right\}.
+\end{align*}
+
+\end{problem}
+
+\hrulefill
+
+\begin{solution}
+
+Let \(a_2=t, a_1=s, a_0=s+2t\), then
+\begin{align*}
+S     &= \left\{ (s+2t) + (sx+tx^2)\mid s,t\in\mathbb{R} \right\} \\
+&= \left\{ (s+sx) + (2t+tx^2)\mid s,t\in\mathbb{R} \right\} \\
+&= \left\{ s(1+x) + t(2+x^2)\mid s,t\in\mathbb{R} \right\} \\
+&= \text{span}\left\{(1+x),(2+x^2)\right\}
+\end{align*}
+
+and a basis for \(S\) is
+\begin{align*}
+\left\{(1+x), (2+x^2)\right\}
+\end{align*}
+
+\end{solution}
+
+\begin{problem}[?]
+
+\textbf{T/F}: If \(V\) is an \(n\)-dimensional vector space, then every
+set \(S\) with fewer than \(n\) vectors can be extended to a basis for
+\(V\).
+
+\end{problem}
+
+\begin{solution}
+
+\textbf{False.} Only \textit{linearly independent} sets with fewer than
+\(n\) vectors can be extended to form a basis for \(V\).
+
+\end{solution}
+
+\begin{problem}[?]
+
+\textbf{T/F}: The set of all 3 x 3 \textit{upper triangular} matrices
+forms a three-dimensional subspace of \(M_{3}(\mathbb{R})\).
+
+\end{problem}
+
+\begin{solution}
+
+\textbf{False.} This set forms a 6-dimensional subspace. A basis for
+this space would require six elements.
+
+\end{solution}
+
+\begin{problem}[?]
+
+Given \(A=\)
+\begin{align*}\begin{bmatrix}
+  1     & 3 `   \\
+  -2    & -6
+\end{bmatrix}\end{align*} what is the dimension of the null space of
+\(A\)?
+
+\end{problem}
+
+\begin{solution}
+
+The augmented matrix for the system \(A\mathbf{x} = \mathbf{0}\) is
+\begin{align*}\begin{bmatrix}[cc|c]
+1 & 3 & 0   \\
+0 & 0 & 0
+\end{bmatrix}\end{align*} which has one free variable.
+
+Writing one variable in terms of another results in
+\(x_1 + 3x_2 = 0 \Rightarrow x_1 = 3x_2\).
+
+Let \(x_2 = r\) where \(r \in R\), then
+\(S = \left\{ x \in \mathbb{R}^2 : \mathbf{x} = r(3,1), r \in \mathbb{R}\right\} = \text{span}\left\{(3,1)\right\}\).
+
+So, the set \(B = \left\{(3,1)\right\}\) is a basis for the null space
+of \(A\) and\textbackslash{}
+\underline{the dimension of the null space is 1}.
+
+\end{solution}
+
+\begin{problem}[?]
+
+Let \(S\) be the subspace of \(\mathbb{R}^3\) that consists of all
+solutions to the equation \(x-3y+z = 0\). Determine a basis for \(S\),
+and find dim{[}\(S\){]}.
+
+\end{problem}
+
+\begin{solution}
+
+The first goal is to find a way to express the set of 3-tuples that
+satisfy this equation.
+
+Let \(y=r\) and \(z=s\), then \(x=r-s\). Then vectors \(\mathbf{v}\)
+that satisfy the equation are all of the form
+\begin{align*}
+\mathbf{v} = (3r-s, r, s) = (3r,r,0)+(-s,0,s) = r(3,1,0) + s(-1,0,1).
+\end{align*} (Note - the goal here is to separate the dependent
+variables into different vectors so they can be written as a linear
+combination of something.)
+
+The set \(S\) that satisfies this equation is then
+\begin{align*}
+S &= \left\{ \mathbf{v} \in \mathbb{R}^3 : \mathbf{v} =r(3,1,0) + s(-1,0,1) \land r,s\in\mathbb{R} \right\} \\
+&= \text{span}\left\{ (3,1,0), (-1,0,1)\right\}
+\end{align*}
+
+All that remains is to check that the vectors in this span are linearly
+independent. This can be done by showing that \textbf{if}
+\begin{align*}
+a(3,1,0) + b(-1,0,1) = (0,0,0)
+\end{align*} \textbf{then} \(a=b=0\).
+
+Since the two vectors are linearly independent and span the solution set
+\(S\), they form a basis for \(S\) of dimension 2.
+
+\end{solution}
+
+\begin{problem}[?]
+
+Determine a basis for the subspace of \(M_2(\mathbb{R})\) spanned by
+\begin{align*}\begin{bmatrix}
+-1 & 3 \\
+-1 & 2
+\end{bmatrix}\end{align*}
+
+\begin{align*}\begin{bmatrix}
+0 & 0 \\
+0 & 0
+\end{bmatrix}\end{align*}
+
+\begin{align*}\begin{bmatrix}
+-1 & 4 \\
+1 & 1
+\end{bmatrix}\end{align*}
+
+\begin{align*}\begin{bmatrix}
+5 & 6 \\
+-5 & 1
+\end{bmatrix}\end{align*}.\\
+
+\end{problem}
+
+\begin{solution}
+
+Note that because the set contains the zero matrix, it is linearly
+dependent. So only consider the other three, as they span the same
+subspace as the original set.
+
+First, determine if \(\left\{ A_1, A_2, A_3\right\}\) is linearly
+independent. Start with the equation
+\begin{align*}
+c_1A_1 + c_2A_2 + c_3A_3 = 0_2
+\end{align*}
+
+which gives
+\begin{align*}
+c_1 -   c_2 +   5c_3    &= 0 \\
+3c_1 +  4c_2 -  6c_3    &= 0 \\
+-c_1 +  c_2 -   5c_3    &= 0 \\
+2c_1 +  c_2 +   c_3     &= 0
+\end{align*}
+
+which has the solution \((-2r,3r,r)\). So the set is linearly dependent
+by the relation
+\begin{align*}
+-2A_1 + 3A_2 + A_3 = 0 \text{ or }\\
+A_3 = 2A_1 - 3A_2
+\end{align*}
+
+So \(\left\{A_1, A_2\right\}\) spans the same subspace as the original
+set. It is also linearly independent, and therefore forms a basis for
+the original subspace.
+
+\end{solution}
+
+\begin{problem}[?]
+
+Let \(A, B, C \in M_2 (\mathbb{R})\). Define
+\(\langle A,B\rangle = a_{11}b_{11}+2a_{12}b{12}+3a_{21}b_{21}\). Does
+this define an inner product on \(M_2 (\mathbb{R})\)?
+
+\end{problem}
+
+\begin{problem}[?]
+
+Instead, let \(\langle A,B\rangle = a_{11} + b_{22}\). Does this define
+an inner product on \(M_2(\mathbb{R})\)?
+
+\end{problem}
+
+\begin{problem}[?]
+
+Let \(p=a_0 + a_1 x + a_2 x^2\) and \(q=b_0 + b_1 x + b_2 x^2\). Define
+\(\langle p,q\rangle = \sum_{i=0}^{2}(i+1)a_i b_i\). Does this define an
+inner product on \(P_2\)?
+
+\end{problem}
 
 \hypertarget{linear-algebra-advanced-topics}{%
 \section{Linear Algebra: Advanced
@@ -3816,17 +4162,21 @@ Inhomogeneous Equation: particular solutions given by
 \subsection{Laplace Transforms}\label{laplace-transforms}}
 
 Definitions:
-\begin{align*} H_ { a } ( t ) = \left\{ \begin{array} { l l } { 0 , } & { 0 \leq t < a } \\ { 1 , } & { t \geq a } \end{array} \right.\\
-\delta(t): \int_\RR \delta(t-a)f(t)~dt = f(a),\quad \int_\RR \delta(t-a)~dt = 1\\
-(f \ast g )(t) = \int_0^t f(t-s)g(s)~ds
-\end{align*} Useful property: for \(a\leq b\),
+\begin{align*}
+H_ { a } ( t ) \da \left\{ \begin{array} { l l } { 0 , } & { 0 \leq t < a } \\ { 1 , } & { t \geq a } \end{array} \right.\\
+\delta(t): \int_\RR \delta(t-a)f(t)~dt &= f(a),\quad \int_\RR \delta(t-a)~dt = 1\\
+(f \ast g )(t) &= \int_0^t f(t-s)g(s)~ds \\
+L[f(t)] &= L[f] =\int_0^\infty e^{-st}f(t)dt = F(s)
+.\end{align*} Useful property: for \(a\leq b\),
 \(H_a(t) - H_b(t) = \indic{[a,b]}\).
 \begin{align*}
-t^n, n\in\NN \quad&\iff  &n!\frac{1}{s^{n+1}},\quad &s > 0 \\
+t^n, n\in\NN \quad&\iff  &\frac{n!}{s^{n+1}},\quad &s > 0 \\
 t^{-\frac{1}{2}} \quad&\iff &\sqrt{\pi} s^{-\frac{1}{2}}\quad & s>0\\
 e^{at} \quad&\iff &\frac{1}{s-a},\quad &s > a \\
 \cos(bt) \quad&\iff &\frac{s}{s^2+b^2},\quad &s>0 \\
 \sin(bt) \quad&\iff &\frac{b}{s^2+b^2},\quad &s>0 \\
+\cosh(bt) \quad&\iff &\frac{s}{s^2 - b^2},\quad &? \\
+\sinh(bt) \quad&\iff &\frac{b}{s^2-b^2},\quad &? \\
 \delta(t-a) \quad&\iff &e^{-as} \quad& \\
 H_a(t) \quad&\iff &s^{-1}e^{-as}\quad& \\
 e^{at}f(t) \quad&\iff &F(s-a)\quad & \\
@@ -3852,6 +4202,25 @@ y' +p(x)y = q(x)y^n            &  & \text{Bernoulli, divide by $y^n$ and COV $u 
 M(x,y)dx + N(x,y)dy = 0        &  & M_y = N_x: \phi(x,y) = c (\phi_x =M, \phi_y = N) \\ \\
 P(D)y = f(x,y)                 &  & x^ke^{rx} \text{ for each root }
 \end{align*}
+
+\begin{theorem}[First Shifting Theorem]
+
+\begin{align*}  
+L[e^{at} f(t)] = \int_0^\infty e^{(a-s)}f(t)dt = F(s-a),
+.\end{align*}
+
+\end{theorem}
+
+\begin{remark}
+
+The general technique for solving differential equations with Laplace
+Transforms: - Take the Laplace Transform of all terms on both sides. -
+Solve for \(L[y]\) in terms of \(s\). - Attempt an inverse Laplace
+Transformations - This may involve partial fraction decomposition,
+completing the square, and splitting numerators to match terms with
+known inverse transformations.
+
+\end{remark}
 
 \hypertarget{systems-of-differential-equations-1}{%
 \subsection{Systems of Differential
@@ -3902,6 +4271,62 @@ of the other two functions.
 \end{warning}
 
 \todo[inline]{Sufficient condition: each $f_i$ is the solution to a linear homogeneous ODE $L(y) = 0$.}
+
+\hypertarget{linear-equations-of-order-n}{%
+\subsubsection{\texorpdfstring{Linear Equations of Order
+\(n\)}{Linear Equations of Order n}}\label{linear-equations-of-order-n}}
+
+The standard form of such equations is \begin{align*}
+    y^{(n)} + a_1y^{(n-1)} + a_2y^{(n-2)} + \cdots +a_ny'' + a_{n-1}y' + y = F(x).
+\end{align*}
+
+All solutions will be the sum of the solution to the associated
+homogeneous equation and a single particular solution.
+
+In the homogeneous case, examine the discriminant of the characteristic
+polynomial. Three cases arise:
+
+\begin{enumerate}
+    \item $D>0 \Rightarrow$ 2 Real solutions, $c_1e^{r_1x} + c_2e^{r_2x}$
+    \item $D=0 \Rightarrow$ 1 Real, 1 Complex, $(c_1 +c_2x)e^{r_1x}$
+    \item $D<0 \Rightarrow$ 2 Complex, $e^{ax}(c_1\cos bx + c_2\sin bx)$
+\end{enumerate}
+
+That is, every real root contributes a term of \(ce^{rx}\), while a
+multiplicity of \(m\) multiplies the solution by a polynomial in \(x\)
+of degree \(m-1\).
+
+Every pair of complex roots contributes a term
+\(ce^r(a\cos \omega x + b\sin \omega x)\), where \(r\) is the real part
+of the roots and \(\omega\) is the complex part.
+
+In the nonhomogeneous case, assume a solution in the most general form
+of \(F(x)\), and substitute it into the equation to solve for constant
+terms. For example,
+
+\begin{enumerate}
+    \item $F(x) = P(x^n) \Rightarrow y_p = a+bx+cx^2+\cdots+(n+1)x^n$
+    \item $F(x) = e^x \Rightarrow y_p = Ae^x$
+    \item $F(x) = A\cos (\omega x) \Rightarrow y_p = a\cos(\omega x) + b\sin(\omega x)$
+\end{enumerate}
+
+\subsection{Annihilators}
+
+Use to reduce a nonhomogeneous equation to a homogeneous one as a
+polynomial in the operator \(D\).
+
+\begin{enumerate}
+    \item $(D-a) \Rightarrow e^{ax}$
+    \item $(D-a)^{k+1} \Rightarrow x^k e^{ax}, x^{k-1}e^{ax}, \cdots, e^{ax}$
+    \item $D^{k+1} \Rightarrow x^k, x^{k-1}, \cdots,C$
+    \item $D^2-2aD+a^2+b^2 \Rightarrow e^{ax}\cos(bx), e^{ax}\sin(bx)$
+    \item $(D^2-2aD+a^2+b^2)^{k+1} \Rightarrow x^k e^{ax}\cos(bx), x^{k-1} e^{ax}\cos(bx), x^k e^{ax}\sin(bx), x^{k-1}e^{ax}\sin(bx),\cdots$
+\end{enumerate}
+
+\subsection{Complex Solutions}
+
+\(F(x)\) of the form \(e^{ax}sin(kx)\) can be rewritten as
+\(e^{(a+ki)x}\)
 
 \hypertarget{algebra}{%
 \section{Algebra}\label{algebra}}
@@ -7470,6 +7895,610 @@ f(x) =
 \end{align*}
 \end{quote}
 
+\hypertarget{definitions-3}{%
+\subsection{Definitions}\label{definitions-3}}
+
+In these notes, \(C\) generally denotes some closed contour,
+\(\mathbb{H}\) is the upper half-plane, \(C_R\) is a semicircle of
+radius \(R\) in \(\mathbb{H}\), \(f\) will denote a complex function.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Analytic}
+
+  \(f\) is analytic at \(z_0\) if it can be expanded as a convergent
+  power series in some neighborhood of \(z_0\).
+\item
+  \textbf{Holomorphic}
+
+  A function \(f\) is holomorphic at a point \(z_0\) if \(f'(z_0)\)
+  exists in a neighborhood of \(z_0\).
+
+  (Note - this is more than just being differentiable at a single
+  point!)
+
+  \emph{Big Theorem}: \(f\) is a holomorphic complex function iff \(f\)
+  is analytic.
+\item
+  \textbf{Meromorphic}
+
+  Holomorphic, except for possibly a finite number of singularities.
+\item
+  \textbf{Conformal}
+
+  \(f\) is conformal at \(z_0\) if \(f\) is analytic at \(z_0\) and
+  \(f'(z_0) \neq 0\).
+\item
+  \textbf{Harmonic}
+
+  A function \(u(x,y)\) is harmonic if it satisfies Laplace's equation,
+  \begin{align*}\Delta u = u_{xx} + u_{yy} = 0\end{align*}
+\end{enumerate}
+
+Some other notions to look up:
+
+\begin{itemize}
+\tightlist
+\item
+  Conformal maps
+\item
+  Analytic
+\item
+  Theorem: Analytic \(\implies\) conformal
+\item
+  The Sterographic projection. Is it conformal?
+\item
+  Branch points and branch cuts
+\item
+  Loxodromic transformations
+\item
+  Horocycles
+\item
+  Analytic Continuation
+\item
+  The complex logarithm
+\item
+  Mobius transformations
+\item
+  Curvature
+\item
+  Angular Excess
+\end{itemize}
+
+\hypertarget{preliminary-notions}{%
+\subsection{Preliminary Notions}\label{preliminary-notions}}
+
+\hypertarget{what-is-the-complex-derivative}{%
+\subsubsection{What is the Complex
+Derivative?}\label{what-is-the-complex-derivative}}
+
+In small neighborhoods, the derivative of a function at a point rotates
+it by an angle \(\Delta\theta\) and scales it by a real number
+\(\lambda\) according to
+\begin{align*}\Delta\theta = \arg f'(z_0), ~\lambda = |f'(z_0)|\end{align*}
+
+\hypertarget{nth-roots-of-a-complex-number}{%
+\subsubsection{\texorpdfstring{\(n\)th roots of a complex
+number}{nth roots of a complex number}}\label{nth-roots-of-a-complex-number}}
+
+The \(n\)th roots of \(z_0\) are given by writing
+\(z_0 = re^{i\theta}\), and are
+\begin{align*}
+\zeta = \ts{ \sqrt[n]{r} \oldexp\left[{i\left( \frac{\theta}{n} + \frac{2k\pi}{n}\right)}\right] \st k = 0,1,2, \ldots, n-1 }
+\end{align*}
+
+or equivalently
+
+\begin{align*}\zeta = \left\{ \sqrt[n]{r}\omega_n^k \mid k = 0,1,2,\ldots, n-1\right\}~\text{where}~\omega_n = e^{\frac{2\pi i}{n}}\end{align*}
+
+This can be derived by looking at
+\(\left( re^{i\theta + 2k\pi}\right)^{\frac{1}{n}}\).
+
+It is also useful to immediately recognize that
+\(z^2+a = (z-i\sqrt{a})(z+i\sqrt{a})\).
+
+\hypertarget{the-cauchy-riemann-equations}{%
+\subsubsection{The Cauchy-Riemann
+Equations}\label{the-cauchy-riemann-equations}}
+
+If \(f(x+iy) = u(x,y) + iv(x,y)\) or
+\(f(re^{i\theta}) = u(r,\theta) + iv(r,\theta)\), then \(f\) is complex
+differentiable if \(u,v\) satisfy
+
+\begin{align*}\begin{aligned}
+    u_x &= v_y &\quad u_y &= -v_x \\
+    r u_r &= v_\theta &\quad u_\theta &= -r v_r\end{aligned}\end{align*}
+
+In this case,
+\begin{align*}f'(x+iy) = u_x(x,y) + iv_x(x,y)\end{align*} or in polar
+coordinates,
+\begin{align*}f'(re^{i\theta}) = e^{i\theta}(u_r(r,\theta) + iv_r(r,\theta))\end{align*}
+
+\hypertarget{integration}{%
+\subsection{Integration}\label{integration}}
+
+\hypertarget{the-residue-theorem}{%
+\subsubsection{The Residue Theorem}\label{the-residue-theorem}}
+
+If \(f\) is meromorphic inside of a closed contour \(C\), then
+\begin{align*}\oint_C f(z) dz = 2\pi i \sum_{z_k} \underset{z=z_k}{\text{Res}} f(z)\end{align*}
+
+where \(\underset{z=z_k}{\text{Res}} f(z)\) is the coefficient of
+\(z^{-1}\) in the Laurent expansion of \(f\).
+
+If \(f\) is analytic everywhere in the interior of \(C\), then
+\(\oint_C f(z) dz = 0\).
+
+If \(f\) is meromorphic inside of a contour \(C\) and analytic
+everywhere else, one can equivalently calculate the residue at infinity
+
+\begin{align*}\oint_C f(z) dz = 2\pi i \sum_{z_k} \underset{z=0}{\text{Res}} ~z^{-2}f(z^{-1})\end{align*}
+
+\hypertarget{computing-residues}{%
+\subsubsection{Computing Residues}\label{computing-residues}}
+
+\hypertarget{simple-poles}{%
+\subsubsection{Simple Poles}\label{simple-poles}}
+
+If \(z_0\) is a pole of order \(m\), define \(g(z) := (z-z_0)^m f(z)\).
+
+{If \(g(z)\) is analytic and \(g(z_0) \neq 0\)}, then
+\begin{align*}\underset{z=z_0}{\text{Res}} f(z) = \frac{\phi^{(m-1)}(z_0)}{(m-1)!}\end{align*}
+
+In the case where \(m=1\), this reduces to
+\begin{align*}\underset{z=z_0}{\text{Res}} f(z) = \phi(z_0)\end{align*}
+
+To compute residues this way, attempt to write \(f\) in the form
+
+\begin{align*}f(z) = \frac{\phi(z)}{(z-z_0)^m}\end{align*}
+
+where \(\phi\) only needs to be analytic at \(z_0\).
+
+\hypertarget{rational-functions}{%
+\subsubsection{Rational Functions}\label{rational-functions}}
+
+If \(f(z) = \frac{p(z)}{q(z)}\) where
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(p(z_0) \neq 0\)
+\item
+  \(q(z_0) = 0\)
+\item
+  \(q'(z_0) \neq 0\)
+\end{enumerate}
+
+then the residue can be computed as
+
+\begin{align*}\underset{z=z_0}{\text{Res}} \frac{p(z)}{q(z)} = \frac{p(z_0)}{q'(z_0)}\end{align*}
+
+\hypertarget{computing-integrals-1}{%
+\subsubsection{Computing Integrals}\label{computing-integrals-1}}
+
+When computing real integrals, the following contours can be useful:
+
+One often needs bounds, which can come from the following lemmas
+
+\textbf{The Arc Length Bound} If \(|f(z)| \leq M\) everywhere on \(C\),
+then
+\begin{align*}|\oint_C f(z) dz | \leq M L_C\end{align*} where \(L_C\) is
+the length of \(C\).
+
+\textbf{Jordan's Lemma:} If \(f\) is analytic outside of a semicircle
+\(C_R\) and \(|f(z)| \leq M_R\) on \(C_R\) where \(M_R \rightarrow 0\),
+then
+\begin{align*}\int_{C_R} f(z) e^{iaz} dz \rightarrow 0\end{align*}.
+
+Can also be used for integrals of the form \(\int f(z) \cos az dz\) or
+\(\int f(z) \sin az dz\), just take real/imaginary parts of \(e^{iaz}\)
+respectively.
+
+\hypertarget{conformal-maps}{%
+\subsection{Conformal Maps}\label{conformal-maps}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Linear Fractional Transformations:
+\end{enumerate}
+
+\begin{align*}
+f(z) = \frac{az+b}{cz+d}\qquad f^{-1}(z) = \frac{-dz+b}{cz-a}
+\end{align*}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \([z_1, z_2, z_3] \mapsto [w_1, w_2, w_3]\)
+
+  Every linear fractional transformation is determined by its action on
+  three points. Given 3 pairs points \(z_i \mapsto w_i\), construct one
+  using the implicit equation
+\end{enumerate}
+
+\begin{align*}
+\frac{(w-w_1)(w_2-w_3)}{(w-w_3)(w_2-w_1)} = \frac{(z-z_1)(z_2-z_3)}{(z-z_3)(z_2-z_1)}
+\end{align*}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \(z^k: \text{Wedge} \mapsto \mathbb{H}\)
+
+  Just multiplies the angle by \(k\). If a wedge makes angle \(\theta\),
+  use \(z^\frac{\pi}{\theta}\).
+
+  It is useful to know that \(z\mapsto z^2\) is equivalent to
+  \((x,y) \mapsto (x^2-y^2, 2xy)\).
+\item
+  \(e^z: \mathbb{C} \mapsto \mathbb{C}\)
+
+  \begin{longtable}[]{@{}lcl@{}}
+  \toprule
+  \endhead
+  Horizontal lines & \(\mapsto\) & rays from origin\tabularnewline
+  Vertical lines & \(\mapsto\) & circles at origin\tabularnewline
+  Rectangles & \(\mapsto\) & portions of wedges/sectors\tabularnewline
+  \bottomrule
+  \end{longtable}
+
+  \begin{figure}
+  \centering
+  \includegraphics{figures/ez-line.png}
+  \caption{image}
+  \end{figure}
+
+  \begin{figure}
+  \centering
+  \includegraphics{figures/ez-grid.png}
+  \caption{image}
+  \end{figure}
+
+  \begin{figure}
+  \centering
+  \includegraphics{figures/ez-rect.png}
+  \caption{image}
+  \end{figure}
+\item
+  \(\log: \mathbb{H} \mapsto \mathbb{R} + i[0, \pi]\)
+
+  Just the inverse of what the exponential map does.
+
+  \begin{longtable}[]{@{}lcl@{}}
+  \toprule
+  \endhead
+  Rays & \(\mapsto\) & Horizontal Lines\tabularnewline
+  Wedges & \(\mapsto\) & Horizontal Strips\tabularnewline
+  \bottomrule
+  \end{longtable}
+
+  \begin{figure}
+  \centering
+  \includegraphics{figures/log.png}
+  \caption{\(z \mapsto \log z\)}
+  \end{figure}
+\item
+  \(\sin: [0, \pi/2] + i\mathbb{R} \mapsto \mathbb{H}_{\mathcal{R}(z)>0}\)
+
+  Maps the infinite strip to the first quadrant.
+
+  \begin{figure}
+  \centering
+  \includegraphics{figures/sin.png}
+  \caption{\(z \mapsfrom \sin w\)}
+  \end{figure}
+\item
+  \(z\mapsto\frac{i-z}{i+z}: \mathbb{H} \mapsto D^\circ\).
+
+  \begin{longtable}[]{@{}lcl@{}}
+  \toprule
+  \endhead
+  \(\mathbb{R}_{>0}\) & \(\mapsto\) & Upper half of
+  \(D^\circ\)\tabularnewline
+  \(\mathbb{R}_{<0}\) & \(\mapsto\) & Bottom half of
+  \(D^\circ\)\tabularnewline
+  \bottomrule
+  \end{longtable}
+
+  Has inverse \(w \mapsto i\frac{1-w}{1+w}\)
+\item
+  \(z\mapsto z + z^{-1}: \partial D \mapsto \mathbb{R}\)
+
+  \begin{figure}
+  \centering
+  \includegraphics{figures/fluid-cylinder.png}
+  \caption{\(z \mapsto z+z^{-1}\)}
+  \end{figure}
+
+  Maps the boundary of the circle to the real axis, and the plane to
+  \(\mathbb{H}\).
+\end{enumerate}
+
+\hypertarget{applications}{%
+\subsubsection{Applications}\label{applications}}
+
+It is mostly important to know that composing a harmonic function on one
+domain with an analytic function produces a new harmonic function on the
+new domain.
+
+Similarly, composing the solution to a boundary value problem on a
+domain with a conformal map produces a new solution to a new boundary
+problem in the new domain, where the new boundary is given by the
+conformal image of the old one.
+
+The general technique is use solutions to the boundary value problem on
+a simple domain \(D\), and compose one or several conformal maps to map
+a given problem into \(D\), then pull back the solution.
+
+\hypertarget{heat-flow-steady-temperatures}{%
+\paragraph{Heat Flow: Steady
+Temperatures}\label{heat-flow-steady-temperatures}}
+
+Generally interested in finding a harmonic function \(T(x,y)\) which
+represents the steady-state temperature at any point. Usually given as a
+Dirichlet problem on a domain \(D\) of the form
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{figures/heat-eqn.png}
+\caption{image}
+\end{figure}
+
+\begin{align*}
+\Delta T &= 0 \\
+T(\partial D) &= f(\partial D)
+\end{align*}
+
+where \(f\) is a given function that prescribes values on
+\(\partial D\), the boundary of \(D\).
+
+Embed this in an analytic function with its harmonic conjugate to yield
+solutions of the form \(F(x+iy) = T(x,y) + iS(x,y)\).
+
+The \textbf{isotherms} are given by \(T(x,y) = c\).
+
+The \textbf{lines of flow} are given by \(S(x,y) = c\).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{figures/sin.png}
+\caption{image}
+\end{figure}
+
+Any easy solution on the domain \(\mathbb{R} \times i[0,\pi]\) in the
+\(u,v\) plane, where
+
+\begin{align*}
+T(x, 0) &= 0 \\
+T(x, \pi) &= 1 
+\end{align*} is given by \(T(u,v) = \frac{1}{\pi}v\).
+
+It is harmonic, as the imaginary part of the analytic
+\(F(u+iv) = \frac{1}{\pi}(u+iv)\), since every analytic function has
+harmonic component functions.
+
+Similar methods work with different domains, just pick a smooth
+interpolation between the boundary conditions.
+
+\hypertarget{fluid-flow}{%
+\paragraph{Fluid Flow}\label{fluid-flow}}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{figures/fluid.png}
+\caption{image}
+\end{figure}
+
+Write \(F(z) = \phi(x,y) + i\psi(x,y)\). Then \(F\) is the complex
+potential of the flow, \(\overline{F'}\) is the velocity, and setting
+\(\psi(x,y) = c\) yields the streamlines.
+
+A solution in \(\mathbb{H}\) is \(F(z) = Az\) some some velocity \(A\).
+Apply conformal mapping appropriately.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{figures/fluid-cylinder.png}
+\caption{image}
+\end{figure}
+
+\hypertarget{theorems}{%
+\subsubsection{Theorems}\label{theorems}}
+
+\hypertarget{general-theorems}{%
+\paragraph{General Theorems}\label{general-theorems}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Liouville's Theorem}:
+
+  If \(f\) is entire and bounded on \(\mathbb{C}\), then \(f\) is
+  constant.
+\item
+  If \(f\) is continuous in a region \(D\), \(f\) is bounded in \(D\).
+\item
+  If \(f\) is differentiable at \(z_0\), \(f\) is continuous at \(z_0\).
+
+  Note - the converse need not hold!
+\item
+  If \(f = u + iv\) , where \(u,v\) satisfy the Cauchy-Riemann equations
+  \textbf{and} have continuous partials, then \(f\) is differentiable.
+
+  Note - continuous partials are not enough, consider \(f(z) = |z|^2\).
+\item
+  Rouché's Theorem
+
+  If \(p(z) = f(z) + g(z)\) and \(|g(z)| < |f(z)|\) everywhere on \(C\),
+  then \(f\) and \(p\) have the same number of zeros with \(C\).
+\item
+  \textbf{The Argument Principle}
+
+  If \(f\) is analytic on a closed contour \(C\) and meromorphic within
+  \(C\), then
+  \begin{align*}
+    W \da \frac{1}{2\pi}\Delta_C \arg f(z) = Z - P
+    \end{align*}
+
+  \emph{Proof:} Evaluate the integral \(\oint_C \frac{f'(z)}{f(z)} dz\)
+  first by parameterizing, changing to polar, and using the FTC, and
+  second by using residues directly from the Laurent series.
+\item
+  \textbf{The Main Story}: The following are equivalent
+
+  \begin{itemize}
+  \item
+    \(f\) is continuous
+  \item
+    \(f'\) exists
+  \item
+    \(f\) is analytic
+  \item
+    \(f\) is conformal
+  \item
+    \(f\) satisfies the Cauchy-Riemann equations
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{theorems-about-analytic-functions}{%
+\paragraph{Theorems About Analytic
+Functions}\label{theorems-about-analytic-functions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  If \(f\) is analytic on \(D\), then \(\oint_C f(z) dz = 0\) for any
+  closed contour \(C \subset D\).
+
+  Note: this does not require \(f\) to be \(f'\) to be continuous on
+  \(C\).
+\item
+  \textbf{Maximum Modulus Principle}
+
+  If \(f\) is analytic in a region \(D\) and not constant, then
+  \(|f(z)|\) attains its maximum on \(\partial D\).
+\item
+  If \(f\) is analytic, then \(f^{(n)}\) is analytic for every \(n\). If
+  \(f = u(x,y) + iv(x,y)\), then all partials of \(u,v\) are continuous.
+\item
+  If \(f\) is analytic at \(z_0\) and \(f'(z_0) \neq 0\), then \(f\) is
+  conformal at \(z_0\).
+\item
+  If \(f = u+iv\) is analytic, then \(u,v\) are harmonic conjugates.
+\item
+  If \(f\) is holomorphic, \(f\) is \(C_\infty\) (smooth).
+\item
+  If \(f\) is analytic, \(f\) is holomorphic.
+
+  \emph{Proof:} Since \(f\) has a power series expansion at \(z_0\), its
+  derivative is given by the term-by-term differentiation of this
+  series.
+\end{enumerate}
+
+\hypertarget{some-useful-formulae}{%
+\subsubsection{Some Useful Formulae}\label{some-useful-formulae}}
+
+\begin{align*}
+  f_{x_0}(x) = f(x_0) + f'(x_0)(x-x_0) + \frac{1}{2!}f''(x_0)(x-x_0)^2 + \ldots
+  \end{align*}
+
+\begin{align*}
+\frac{1}{1-z} = \sum_k z^k
+\end{align*}
+
+\begin{align*}
+  e^z = \sum_k \frac{1}{k!} z^k
+  \end{align*}
+
+\begin{align*}
+    \left(\sum_i a_i z^i \right) \left( \sum_j b_j z^j\right) = \sum_n \left( \sum\limits_{i+j=n}a_ib_j \right) z^n
+    \end{align*}
+
+\begin{align*}\begin{aligned}
+%   
+\cos z 
+&= \frac{1}{2}(e^{iz} + e^{-iz})
+&
+&= 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \ldots \\
+%
+\cosh z 
+&= \frac{1}{2}(e^{z} + e^{-z}) 
+&= \cos iz 
+&= 1 + \frac{z^2}{2!} + \frac{z^4}{4!} + \ldots \\
+%
+\sin z 
+&= \frac{1}{2i}(e^{iz} - e^{-iz}) 
+&
+&= z - \frac{z^3}{3!} + \frac{z^4}{4!} - \ldots \\
+%
+\sinh z 
+&= \frac{1}{2}(e^{z} - e^{-z}) 
+&= -i\sin iz 
+&= z + \frac{z^3}{3!} + \frac{z^4}{4!} + \ldots \\\end{aligned}\end{align*}
+Mnemonic: just remember that cosine is an even function, and that the
+even terms of \(e^z\) are kept. Similarly, sine is an odd function, so
+keep the odd terms of \(e^z\).
+
+\textbf{Harmonic Conjugate}
+\begin{align*}v(x,y) = \int_{(0,0)}^{(x,y)} -u_t(s,t)ds + u_s(s,t)dt\end{align*}
+
+\textbf{The Gamma Function}
+\begin{align*}\Gamma(z) = \int_0^\infty x^{z-1} e^{-x} dx\end{align*}
+
+Useful to know: \(\Gamma(\frac{1}{2}) = \sqrt\pi\).
+
+\hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  True or False: If \(f\) is analytic and bounded in \(\mathbb{H}\),
+  then \(f\) is constant on \(\mathbb{H}\).
+
+  False: Take \(f(z) = e^{-z}\), where \(|f(z)| \leq 1\) in
+  \(\mathbb{H}\).
+\item
+  Compute \(\int_{-\infty}^{\infty} \frac{\sin x}{x(x^2+a^2)}dx\)
+
+  Two semicircles needed to avoid singularity at zero. Limit equals the
+  residue at zero, solution is
+  \(\pi (\frac{1}{a^2} - \frac{e^{-a}}{a^2})\).
+\item
+  Compute \(\int_0^{2\pi} \frac{1}{2+\cos\theta}d\theta\)
+
+  Cosine sub, solution is \(\frac{2\pi}{\sqrt{3}}\)
+\item
+  Find the first three terms of the Laurent expansion of
+  \(\frac{e^z+1}{e^z-1}\).
+
+  Equals \(2z^{-1} + 0 + 6^{-1}z + \ldots\)
+\item
+  Compute \(\int_{S_1} \frac{1}{z^2+z-1}dz\)
+
+  Equals \(i\frac{2\pi}{5}\)
+\item
+  True or false: If f is analytic on the unit disk
+  \(E = \{z : |z| < 1\}\), then there exists an \(a \in E\) such that
+  \(|f (a)| \geq |f (0)|\).
+
+  True, by the maximum modulus principal. Suppose otherwise. Then
+  \(f(0)\) is a maximum of \(f\) inside \(S_1\). But by the MMP, \(f\)
+  must attain its maximum on \(\partial S_1\).
+\item
+  Prove that if \(f(z)\) and \(f (\bar{z})\) are both analytic on a
+  domain D, then f is constant on D
+
+  Analytic \(\implies\) Cauchy-Riemann equations are satisfied. Also
+  have the identity \(f' = u_x + iv_x\), and \(f' = 0\) \(\implies\)
+  \(f\) is constant.
+\end{enumerate}
+
 \hypertarget{common-mistakes}{%
 \section{Common Mistakes}\label{common-mistakes}}
 
@@ -8067,8 +9096,8 @@ a^x\ln(a)                                &  & a^x                     &  & \frac
 ?                                        &  & ?                       &  & ?
 \end{align*}
 
-\hypertarget{definitions-3}{%
-\section{Definitions}\label{definitions-3}}
+\hypertarget{definitions-4}{%
+\section{Definitions}\label{definitions-4}}
 
 \begin{align*}  
 e^x = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^n
