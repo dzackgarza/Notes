@@ -128,7 +128,7 @@ t^{-\frac{1}{2}} \quad&\iff &\sqrt{\pi} s^{-\frac{1}{2}}\quad & s>0\\
 e^{at} \quad&\iff &\frac{1}{s-a},\quad &s > a \\
 \cos(bt) \quad&\iff &\frac{s}{s^2+b^2},\quad &s>0 \\
 \sin(bt) \quad&\iff &\frac{b}{s^2+b^2},\quad &s>0 \\
-\cosh(bt) \quad&\iff &\frac{s}{s^2+b^2},\quad &? \\
+\cosh(bt) \quad&\iff &\frac{s}{s^2 - b^2},\quad &? \\
 \sinh(bt) \quad&\iff &\frac{b}{s^2+b^2},\quad &? \\
 \delta(t-a) \quad&\iff &e^{-as} \quad& \\
 H_a(t) \quad&\iff &s^{-1}e^{-as}\quad& \\
