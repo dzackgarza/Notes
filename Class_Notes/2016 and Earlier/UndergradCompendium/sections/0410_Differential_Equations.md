@@ -116,11 +116,11 @@ $$
 
 Definitions:
 \[
-H_ { a } ( t ) = \left\{ \begin{array} { l l } { 0 , } & { 0 \leq t < a } \\ { 1 , } & { t \geq a } \end{array} \right.\\
-\delta(t): \int_\RR \delta(t-a)f(t)~dt = f(a),\quad \int_\RR \delta(t-a)~dt = 1\\
-(f \ast g )(t) = \int_0^t f(t-s)g(s)~ds
-L[f(t)] = L[f] =\int_0^\infty e^{-st}f(t)dt = F(s).
-\]
+H_ { a } ( t ) \da \left\{ \begin{array} { l l } { 0 , } & { 0 \leq t < a } \\ { 1 , } & { t \geq a } \end{array} \right.\\
+\delta(t): \int_\RR \delta(t-a)f(t)~dt &= f(a),\quad \int_\RR \delta(t-a)~dt = 1\\
+(f \ast g )(t) &= \int_0^t f(t-s)g(s)~ds \\
+L[f(t)] &= L[f] =\int_0^\infty e^{-st}f(t)dt = F(s)
+.\]
 Useful property: for $a\leq b$, $H_a(t) - H_b(t) = \indic{[a,b]}$.
 \[
 t^n, n\in\NN \quad&\iff  &n!\frac{1}{s^{n+1}},\quad &s > 0 \\
