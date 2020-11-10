@@ -77,7 +77,7 @@ f(x) =
 \end{cases}
 \]
 
-# Definitions
+## Definitions
 
 In these notes, $C$ generally denotes some closed contour, $\mathbb{H}$
 is the upper half-plane, $C_R$ is a semicircle of radius $R$ in
@@ -129,21 +129,21 @@ Some other notions to look up:
 - Curvature
 - Angular Excess
 
-# Preliminary Notions
+## Preliminary Notions
 
-What is the Complex Derivative?
--------------------------------
+### What is the Complex Derivative?
 
 In small neighborhoods, the derivative of a function at a point rotates
 it by an angle $\Delta\theta$ and scales it by a real number $\lambda$
 according to $$\Delta\theta = \arg f'(z_0), ~\lambda = |f'(z_0)|$$
 
-$n$th roots of a complex number
--------------------------------
+### $n$th roots of a complex number
 
 The $n$th roots of $z_0$ are given by writing $z_0 = re^{i\theta}$, and
 are
-$$\zeta = \left\{ \sqrt[n]{r} \exp\left[{i\left( \frac{\theta}{n} + \frac{2k\pi}{n}\right)}\right] \mid k = 0,1,2,\ldots, n-1 \right\}$$
+\[
+\zeta = \ts{ \sqrt[n]{r} \oldexp\left[{i\left( \frac{\theta}{n} + \frac{2k\pi}{n}\right)}\right] \st k = 0,1,2, \ldots, n-1 }
+\]
 
 or equivalently
 
@@ -155,8 +155,7 @@ $\left( re^{i\theta + 2k\pi}\right)^{\frac{1}{n}}$.
 It is also useful to immediately recognize that
 $z^2+a = (z-i\sqrt{a})(z+i\sqrt{a})$.
 
-The Cauchy-Riemann Equations
-----------------------------
+### The Cauchy-Riemann Equations
 
 If $f(x+iy) = u(x,y) + iv(x,y)$ or
 $f(re^{i\theta}) = u(r,\theta) + iv(r,\theta)$, then $f$ is complex
@@ -170,10 +169,9 @@ In this case, $$f'(x+iy) = u_x(x,y) + iv_x(x,y)$$ or in polar
 coordinates,
 $$f'(re^{i\theta}) = e^{i\theta}(u_r(r,\theta) + iv_r(r,\theta))$$
 
-# Integration
+## Integration
 
-The Residue Theorem
--------------------
+### The Residue Theorem
 
 If $f$ is meromorphic inside of a closed contour $C$, then
 $$\oint_C f(z) dz = 2\pi i \sum_{z_k} \underset{z=z_k}{\text{Res}} f(z)$$
@@ -189,11 +187,9 @@ else, one can equivalently calculate the residue at infinity
 
 $$\oint_C f(z) dz = 2\pi i \sum_{z_k} \underset{z=0}{\text{Res}} ~z^{-2}f(z^{-1})$$
 
-Computing Residues
-------------------
+### Computing Residues
 
-Simple Poles
-------------------
+### Simple Poles
 
 If $z_0$ is a pole of order $m$, define $g(z) := (z-z_0)^m f(z)$.
 
@@ -209,8 +205,7 @@ $$f(z) = \frac{\phi(z)}{(z-z_0)^m}$$
 
 where $\phi$ only needs to be analytic at $z_0$.
 
-Rational Functions
-------------------
+### Rational Functions
 
 If $f(z) = \frac{p(z)}{q(z)}$ where
 
@@ -224,8 +219,7 @@ then the residue can be computed as
 
 $$\underset{z=z_0}{\text{Res}} \frac{p(z)}{q(z)} = \frac{p(z_0)}{q'(z_0)}$$
 
-Computing Integrals
--------------------
+### Computing Integrals
 
 When computing real integrals, the following contours can be useful:
 
@@ -242,18 +236,23 @@ Can also be used for integrals of the form $\int f(z) \cos az dz$ or
 $\int f(z) \sin az dz$, just take real/imaginary parts of $e^{iaz}$
 respectively.
 
-# Conformal Maps
+## Conformal Maps
 
 1.  Linear Fractional Transformations:
 
-    $$f(z) = \frac{az+b}{cz+d}\qquad f^{-1}(z) = \frac{-dz+b}{cz-a}$$
+\[
+f(z) = \frac{az+b}{cz+d}\qquad f^{-1}(z) = \frac{-dz+b}{cz-a}
+\]
 
 2.  $[z_1, z_2, z_3] \mapsto [w_1, w_2, w_3]$
 
     Every linear fractional transformation is determined by its action
     on three points. Given 3 pairs points $z_i \mapsto w_i$, construct
     one using the implicit equation
-    $$\frac{(w-w_1)(w_2-w_3)}{(w-w_3)(w_2-w_1)} = \frac{(z-z_1)(z_2-z_3)}{(z-z_3)(z_2-z_1)}$$
+
+\[
+\frac{(w-w_1)(w_2-w_3)}{(w-w_3)(w_2-w_1)} = \frac{(z-z_1)(z_2-z_3)}{(z-z_3)(z_2-z_1)}
+\]
 
 3.  $z^k: \text{Wedge} \mapsto \mathbb{H}$
 
@@ -310,8 +309,7 @@ respectively.
     Maps the boundary of the circle to the real axis, and the plane to
     $\mathbb{H}$.
 
-Applications
-------------
+### Applications
 
 It is mostly important to know that composing a harmonic function on one
 domain with an analytic function produces a new harmonic function on the
@@ -326,17 +324,18 @@ The general technique is use solutions to the boundary value problem on
 a simple domain $D$, and compose one or several conformal maps to map a
 given problem into $D$, then pull back the solution.
 
-### Heat Flow: Steady Temperatures
+#### Heat Flow: Steady Temperatures
 
 Generally interested in finding a harmonic function $T(x,y)$ which
 represents the steady-state temperature at any point. Usually given as a
 Dirichlet problem on a domain $D$ of the form
 
-R0.35 ![image](figures/heat-eqn.png){width="35%"}
+![image](figures/heat-eqn.png){width="35%"}
 
-$$\begin{aligned}
-    \Delta T &= 0 \\
-    T(\partial D) &= f(\partial D)\end{aligned}$$
+\[
+\Delta T &= 0 \\
+T(\partial D) &= f(\partial D)
+\]
 
 where $f$ is a given function that prescribes values on $\partial D$,
 the boundary of $D$.
@@ -348,14 +347,16 @@ The **isotherms** are given by $T(x,y) = c$.
 
 The **lines of flow** are given by $S(x,y) = c$.
 
-R0.35 ![image](figures/sin.png){width="35%"}
+![image](figures/sin.png){width="35%"}
 
 Any easy solution on the domain $\mathbb{R} \times i[0,\pi]$ in the
 $u,v$ plane, where
 
-$$\begin{aligned}
-    T(x, 0) &= 0 \\
-    T(x, \pi) &= 1\end{aligned}$$ is given by $T(u,v) = \frac{1}{\pi}v$.
+\[
+T(x, 0) &= 0 \\
+T(x, \pi) &= 1 
+\] 
+is given by $T(u,v) = \frac{1}{\pi}v$.
 
 It is harmonic, as the imaginary part of the analytic
 $F(u+iv) = \frac{1}{\pi}(u+iv)$, since every analytic function has
@@ -364,9 +365,9 @@ harmonic component functions.
 Similar methods work with different domains, just pick a smooth
 interpolation between the boundary conditions.
 
-### Fluid Flow
+#### Fluid Flow
 
-R0.35 ![image](figures/fluid.png){width="35%"}
+![image](figures/fluid.png){width="35%"}
 
 Write $F(z) = \phi(x,y) + i\psi(x,y)$. Then $F$ is the complex potential
 of the flow, $\overline{F'}$ is the velocity, and setting
@@ -375,12 +376,11 @@ $\psi(x,y) = c$ yields the streamlines.
 A solution in $\mathbb{H}$ is $F(z) = Az$ some some velocity $A$. Apply
 conformal mapping appropriately.
 
-R0.35 ![image](figures/fluid-cylinder.png){width="35%"}
+![image](figures/fluid-cylinder.png){width="35%"}
 
-Theorems
---------
+### Theorems
 
-### General Theorems
+#### General Theorems
 
 1.  **Liouville's Theorem**:
 
@@ -405,7 +405,10 @@ Theorems
 6.  **The Argument Principle**
 
     If $f$ is analytic on a closed contour $C$ and meromorphic within
-    $C$, then $$W := \frac{1}{2\pi}\Delta_C \arg f(z) = Z - P$$
+    $C$, then 
+  \[
+  W \da \frac{1}{2\pi}\Delta_C \arg f(z) = Z - P
+  \]
 
     *Proof:* Evaluate the integral $\oint_C \frac{f'(z)}{f(z)} dz$ first
     by parameterizing, changing to polar, and using the FTC, and second
@@ -423,7 +426,7 @@ Theorems
 
     -   $f$ satisfies the Cauchy-Riemann equations
 
-### Theorems About Analytic Functions
+#### Theorems About Analytic Functions
 
 1.  If $f$ is analytic on $D$, then $\oint_C f(z) dz = 0$ for any closed
     contour $C \subset D$.
@@ -451,16 +454,24 @@ Theorems
     derivative is given by the term-by-term differentiation of this
     series.
 
-Some Useful Formulae
---------------------
+### Some Useful Formulae
 
-$$f_{x_0}(x) = f(x_0) + f'(x_0)(x-x_0) + \frac{1}{2!}f''(x_0)(x-x_0)^2 + \ldots$$
+\[
+  f_{x_0}(x) = f(x_0) + f'(x_0)(x-x_0) + \frac{1}{2!}f''(x_0)(x-x_0)^2 + \ldots
+  \]
 
-$$\frac{1}{1-z} = \sum_k z^k$$
+\[
+\frac{1}{1-z} = \sum_k z^k
+\]
 
-$$e^z = \sum_k \frac{1}{k!} z^k$$
+\[
+  e^z = \sum_k \frac{1}{k!} z^k
+  \]
 
-$$\left(\sum_i a_i z^i \right) \left( \sum_j b_j z^j\right) = \sum_n \left( \sum\limits_{i+j=n}a_ib_j \right) z^n$$
+  \[
+    \left(\sum_i a_i z^i \right) \left( \sum_j b_j z^j\right) = \sum_n \left( \sum\limits_{i+j=n}a_ib_j \right) z^n
+    \]
+
 $$\begin{aligned}
 %   
 \cos z 
@@ -493,72 +504,4 @@ $$v(x,y) = \int_{(0,0)}^{(x,y)} -u_t(s,t)ds + u_s(s,t)dt$$
 
 Useful to know: $\Gamma(\frac{1}{2}) = \sqrt\pi$.
 
-Question
-========
 
-1.  True or False: If $f$ is analytic and bounded in $\mathbb{H}$, then
-    $f$ is constant on $\mathbb{H}$.
-
-    1=1
-
-    False: Take $f(z) = e^{-z}$, where $|f(z)| \leq 1$ in $\mathbb{H}$.
-
-    1=0
-
-2.  Compute $\int_{-\infty}^{\infty} \frac{\sin x}{x(x^2+a^2)}dx$
-
-    1=1
-
-    Two semicircles needed to avoid singularity at zero. Limit equals
-    the residue at zero, solution is
-    $\pi (\frac{1}{a^2} - \frac{e^{-a}}{a^2})$.
-
-    1=0
-
-3.  Compute $\int_0^{2\pi} \frac{1}{2+\cos\theta}d\theta$
-
-    1=1
-
-    Cosine sub, solution is $\frac{2\pi}{\sqrt{3}}$
-
-    1=0
-
-4.  Find the first three terms of the Laurent expansion of
-    $\frac{e^z+1}{e^z-1}$.
-
-    1=1
-
-    Equals $2z^{-1} + 0 + 6^{-1}z + \ldots$
-
-    1=0
-
-5.  Compute $\int_{S_1} \frac{1}{z^2+z-1}dz$
-
-    1=1
-
-    Equals $i\frac{2\pi}{5}$
-
-    1=0
-
-6.  True or false: If f is analytic on the unit disk
-    $E = \{z : |z| < 1\}$, then there exists an $a \in E$ such that
-    $|f (a)| \geq |f (0)|$.
-
-    1=1
-
-    True, by the maximum modulus principal. Suppose otherwise. Then
-    $f(0)$ is a maximum of $f$ inside $S_1$. But by the MMP, $f$ must
-    attain its maximum on $\partial S_1$.
-
-    1=0
-
-7.  Prove that if $f(z)$ and $f (\bar{z})$ are both analytic on a domain
-    D, then f is constant on D
-
-    1=1
-
-    Analytic $\implies$ Cauchy-Riemann equations are satisfied. Also
-    have the identity $f' = u_x + iv_x$, and $f' = 0$ $\implies$ $f$ is
-    constant.
-
-    1=0
