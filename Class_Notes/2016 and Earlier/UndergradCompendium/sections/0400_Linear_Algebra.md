@@ -327,7 +327,7 @@ where
 \[
 \text{proj}_{\mathbf{u}} \mathbf{v} = (\text{scal}_{\mathbf{u}} \mathbf{v})\frac{\mathbf{u}}{\mathbf{\norm{u}}}
 = \frac{\langle \mathbf{v,u} \rangle}{\norm{\mathbf{u}}}\frac{\mathbf{u}}{\mathbf{\norm{u}}}
-= \frac{\ip{\vector{v}}{\vector{u}}}{\norm{\vb{u}}^2}\vb{u}
+= \frac{\ip{\vector{v}}{\vector{u}}}{\norm{\vector{u}}^2}\vb{u}
 \]
 is a vector defined as the \textit{orthogonal projection of $\vector{v}$ onto $\vector{u}$.}
 
@@ -343,7 +343,7 @@ is a vector defined as the \textit{orthogonal projection of $\vector{v}$ onto $\
 
 The orthogonal set $S'$ can then be transformed into an orthonormal set $S''$ by simply dividing the vectors $s\in S'$ by their magnitudes. The usual definition of a vector's magnitude is
 \[
-\norm{\vector{a}} = \sqrt{\ip{\vector{a}}{\vb{a}}} \text{ and } \norm{\vb{a}}^2 = \ip{\vb{a}}{\vb{a}}
+\norm{\vector{a}} = \sqrt{\ip{\vector{a}}{\vector{a}}} \text{ and } \norm{\vector{a}}^2 = \ip{\vector{a}}{\vector{a}}
 \]
 
 As a final check, all vectors in $S'$ should be orthogonal to each other, such that
