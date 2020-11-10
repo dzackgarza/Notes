@@ -273,7 +273,7 @@ and we find that
 
 This also allows us to simplify projection matrices. Supposing that $A$ has orthonormal columns and letting $S$ be the column space of $A$, recall that the projection onto $S$ is defined by
 \[  
-P_S = Q(Q^TQ)^{-1}Q^T.
+P_S = Q(Q^TQ)^{-1}Q^T
 .\]
 
 Since $Q$ has orthogonal columns and satisfies $Q^TQ = I$, this simplifies to
