@@ -130,9 +130,10 @@ In this case, we define the **dimension** of $V$ to be $\abs{S}$.
 :::
 
 
-:::{.proposition title="Computing a basis for the kernel"}
-The dimension of $\ker(A)$ is the number of free variables in $\rref(A)$.
-To find thus
+\todo[inline]{Show how to compute basis of kernel.}
+
+:::{.remark}
+The dimension of
 :::
 
 ### The Inner Product
