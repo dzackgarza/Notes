@@ -325,21 +325,21 @@ $S'$ is found using the following pattern:
 
 where
 \[
-  \text{proj}_{\mathbf{u}} \mathbf{v} = (\text{scal}_{\mathbf{u}} \mathbf{v})\frac{\mathbf{u}}{\mathbf{\norm{u}}}
-  = \frac{\langle \mathbf{v,u} \rangle}{\norm{\mathbf{u}}}\frac{\mathbf{u}}{\mathbf{\norm{u}}}
-  = \frac{\ip{\vb{v}}{\vb{u}}}{\norm{\vb{u}}^2}\vb{u}
+\text{proj}_{\mathbf{u}} \mathbf{v} = (\text{scal}_{\mathbf{u}} \mathbf{v})\frac{\mathbf{u}}{\mathbf{\norm{u}}}
+= \frac{\langle \mathbf{v,u} \rangle}{\norm{\mathbf{u}}}\frac{\mathbf{u}}{\mathbf{\norm{u}}}
+= \frac{\ip{\vb{v}}{\vb{u}}}{\norm{\vb{u}}^2}\vb{u}
 \]
 is a vector defined as the \textit{orthogonal projection of $\vb{v}$ onto $\vb{u}$.}
 
-  \begin{figure}[htpb]
-  \begin{centering}
-  \begin{center}
-  \includegraphics[width=\linewidth]{figures/projection.png}
-  \label{fig:projection}
-  \caption{Orthogonal projection of $\vb{v_2}$ onto $\vb{u_1}$}
-  \end{center}
-  \par\end{centering}
-  \end{figure}
+\begin{figure}[htpb]
+\begin{centering}
+\begin{center}
+\includegraphics[width=\linewidth]{figures/projection.png}
+\label{fig:projection}
+\caption{Orthogonal projection of $\vb{v_2}$ onto $\vb{u_1}$}
+\end{center}
+\par\end{centering}
+\end{figure}
 
 The orthogonal set $S'$ can then be transformed into an orthonormal set $S''$ by simply dividing the vectors $s\in S'$ by their magnitudes. The usual definition of a vector's magnitude is
 \[
