@@ -125,9 +125,8 @@ Determine a basis for the subspace of $M_2(\mathbb{R})$ spanned by
 -5 & 1
 \end{bmatrix}\].\
 :::
-\hrulefill
 
-\textit{Solution:}
+:::{.solution}
 Note that because the set contains the zero matrix, it is linearly dependent. So only consider the other three, as they span the same subspace as the original set.
 
 First, determine if $\left\{ A_1, A_2, A_3\right\}$ is linearly independent. Start with the equation
@@ -151,21 +150,21 @@ A_3 = 2A_1 - 3A_2
 
 So $\left\{A_1, A_2\right\}$ spans the same subspace as the original set. It is also linearly independent, and therefore forms a basis for the original subspace.
 
-\hrulefill
+:::
 
--
+
+:::{.problem title="?"}
 Let $A, B, C \in M_2 (\mathbb{R})$. Define $\langle A,B\rangle = a_{11}b_{11}+2a_{12}b{12}+3a_{21}b_{21}$. Does this define an inner product on $M_2 (\mathbb{R})$?
+::: 
 
--
+:::{.problem title="?"}
 Instead, let $\langle A,B\rangle = a_{11} + b_{22}$. Does this define an inner product on $M_2(\mathbb{R})$?
+::: 
 
--
+:::{.problem title="?"}
 Let $p=a_0 + a_1 x + a_2 x^2$ and $q=b_0 + b_1 x + b_2 x^2$.
 Define $\langle p,q\rangle = \sum_{i=0}^{2}(i+1)a_i b_i$. Does this define an inner product on $P_2$?
+::: 
 
--
-Let $f,g \in C((-\infty, \infty))$. Define
-\begin{equation*}
-  \langle f,g\rangle = \int_a^b f(x)g(x)dx.
-\end{equation*}
+
 
