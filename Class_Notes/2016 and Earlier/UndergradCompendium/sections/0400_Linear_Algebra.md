@@ -133,7 +133,8 @@ In this case, we define the **dimension** of $V$ to be $\abs{S}$.
 \todo[inline]{Show how to compute basis of kernel.}
 
 :::{.remark}
-The dimension of
+$\dim\ker(A)$ is the number of free variables in $\rref(A)$.
+A basis for the row space is given by 
 :::
 
 ### The Inner Product
