@@ -129,6 +129,10 @@ A set $S$ forms a **basis** for a vector space $V$ iff
 In this case, we define the **dimension** of $V$ to be $\abs{S}$.
 :::
 
+:::{.proposition title="How to check that a set is a basis"}
+
+:::
+
 
 ### The Inner Product
 
