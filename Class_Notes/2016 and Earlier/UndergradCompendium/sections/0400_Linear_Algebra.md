@@ -121,12 +121,12 @@ Any set of two vectors $\theset{\vector v, \vector w}$ is linearly **dependent**
 ### Bases
 
 :::{.definition title="Basis and dimension"}
-A set $S$ forms a basis for a vector space $V$ iff
+A set $S$ forms a **basis** for a vector space $V$ iff
 
 1. $S$ is a set of linearly independent vectors, so $\sum \alpha_i \vec{s_i} = 0 \implies \alpha_i = 0$ for all $i$.
 2. $S$ spans $V$, so $\vec{v} \in V$ implies there exist $\alpha_i$ such that $\sum \alpha_i \vec{s_i} = \vec{v}$
 
-
+In this case, we define the **dimension** of $V$ to be $\abs{S}$.
 :::
 
 
