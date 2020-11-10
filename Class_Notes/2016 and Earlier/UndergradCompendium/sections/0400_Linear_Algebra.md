@@ -124,6 +124,10 @@ It is common to want to know the range and kernel of a specific linear transform
 - Find a restriction or relation given by the constants of the initial linear combination.
 :::
 
+:::{.remark}
+Useful fact: if $
+:::
+
 :::{.definition title="Kernel"}
 \todo[inline]{todo}
 :::
