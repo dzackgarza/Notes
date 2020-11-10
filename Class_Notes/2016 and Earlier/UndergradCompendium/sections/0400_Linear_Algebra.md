@@ -474,6 +474,8 @@ There are three possibilities for a system of linear equations:
 2. One unique solution (consistent, square or tall matrices)
 3. Infinitely many solutions (consistent, underdetermined, square or wide matrices)
 
+
+
 These possibilities can be check by considering $r\da \rank(A)$:
 
 - $r < r_b$: case 1, no solutions.
