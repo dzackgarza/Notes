@@ -150,3 +150,9 @@ y' +p(x)y = q(x)y^n            &  & \text{Bernoulli, divide by $y^n$ and COV $u 
 M(x,y)dx + N(x,y)dy = 0        &  & M_y = N_x: \phi(x,y) = c (\phi_x =M, \phi_y = N) \\ \\
 P(D)y = f(x,y)                 &  & x^ke^{rx} \text{ for each root }
 \]
+
+:::{.theorem title="First Shifting Theorem"}
+\[  
+L[e^{at} f(t)] = \int_0^\infty e^{(a-s)}f(t)dt = F(s-a),
+.\]
+:::
