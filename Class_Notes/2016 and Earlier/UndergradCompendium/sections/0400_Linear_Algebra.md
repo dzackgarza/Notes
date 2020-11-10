@@ -303,6 +303,59 @@ which projects a vector onto the unit sphere in $\RR^n$ by normalizing. Then,
 
 In words, at each stage, we take one of the original vectors $\vector x_i$, then subtract off its projections onto all of the $\vector u_i$ we've created up until that point. This leaves us with only the component of $\vector x_i$ that is orthogonal to the span of the previous $\vector u_i$ we already have, and we then normalize each $\vector u_i$ we obtain this way.
 
+**Alternative Explanation**:
+
+Given a basis
+\begin{align*}
+  S = \left\{\mathbf{v_1, v_2, \cdots v_n}\right\},
+\end{align*}
+
+the Gram-Schmidt process produces a corresponding orthogonal basis
+\begin{align*}
+  S' = \left\{\mathbf{u_1, u_2, \cdots u_n}\right\}
+\end{align*}
+that spans the same vector space as $S$.
+
+$S'$ is found using the following pattern:
+\begin{align*}
+\mathbf{u_1} &= \mathbf{v_1} \\
+\mathbf{u_2} &= \mathbf{v_2} - \text{proj}_{\mathbf{u_1}} \mathbf{v_2}\\
+\mathbf{u_3} &= \mathbf{v_3} - \text{proj}_{\mathbf{u_1}} \mathbf{v_3} - \text{proj}_{\mathbf{u_2}} \mathbf{v_3}\\
+\end{align*}
+
+where
+\begin{align*}
+  \text{proj}_{\mathbf{u}} \mathbf{v} = (\text{scal}_{\mathbf{u}} \mathbf{v})\frac{\mathbf{u}}{\mathbf{\norm{u}}}
+  = \frac{\langle \mathbf{v,u} \rangle}{\norm{\mathbf{u}}}\frac{\mathbf{u}}{\mathbf{\norm{u}}}
+  = \frac{\ip{\vb{v}}{\vb{u}}}{\norm{\vb{u}}^2}\vb{u}
+\end{align*}
+is a vector defined as the \textit{orthogonal projection of $\vb{v}$ onto $\vb{u}$.}
+
+  \begin{figure}[htpb]
+  \begin{centering}
+  \begin{center}
+  \includegraphics[width=\linewidth]{figures/projection.png}
+  \label{fig:projection}
+  \caption{Orthogonal projection of $\vb{v_2}$ onto $\vb{u_1}$}
+  \end{center}
+  \par\end{centering}
+  \end{figure}
+
+The orthogonal set $S'$ can then be transformed into an orthonormal set $S''$ by simply dividing the vectors $s\in S'$ by their magnitudes. The usual definition of a vector's magnitude is
+\begin{align*}
+\norm{\vb{a}} = \sqrt{\ip{\vb{a}}{\vb{a}}} \text{ and } \norm{\vb{a}}^2 = \ip{\vb{a}}{\vb{a}}
+\end{align*}
+
+As a final check, all vectors in $S'$ should be orthogonal to each other, such that
+\begin{align*}
+\ip{\vb{v_i}}{\vb{v_j}} = 0 \text{ when } i \neq j
+\end{align*}
+
+and all vectors in $S''$ should be orthonormal, such that
+\begin{align*}
+\ip{\vb{v_i}}{\vb{v_j}} = \delta_{ij}
+\end{align*}
+
 ### The Fundamental Subspaces Theorem
 
 Given a matrix $A \in \mathrm{Mat}(m, n)$, and noting that
