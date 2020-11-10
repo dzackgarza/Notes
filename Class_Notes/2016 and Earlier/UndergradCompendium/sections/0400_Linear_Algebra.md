@@ -129,10 +129,10 @@ A set $S$ forms a **basis** for a vector space $V$ iff
 In this case, we define the **dimension** of $V$ to be $\abs{S}$.
 :::
 
-:::{.proposition title="How to check that a set is a basis"}
-To check that a set is a basis, for check that it is linearly independent, and then check that its size is the dimension of the space.
-:::
 
+:::{.proposition title="Computing a basis for the nullspace"}
+
+:::
 
 ### The Inner Product
 
