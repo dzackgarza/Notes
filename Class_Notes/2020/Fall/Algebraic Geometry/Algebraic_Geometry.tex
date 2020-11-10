@@ -4342,6 +4342,272 @@ follows because for all points \(\tv{x_0, \cdots, x_n} \in \PP^n\), some
 
 \end{remark}
 
+\hypertarget{tuesday-november-10}{%
+\section{Tuesday, November 10}\label{tuesday-november-10}}
+
+Last time: projective varieties \(V(f_i) \subset \PP^n_{/k}\) with
+\(f_i\) homogeneous. We proved the projective nullstellensatz: for any
+projective variety \(X\), we have \(V_p(I_p(X))\) and for any
+homogeneous ideal \(I\) with \(\sqrt{I} \neq I_0\) the irrelevant ideal,
+\(I_p(V_p(I)) = \sqrt{I}\). Recall that
+\(I_0 = \gens{x_0, \cdots, x_n}\). We had a notion of a projective
+coordinate ring, \(S(X) \da \kx{n} / I_p(X)\), which is a graded ring
+since \(I_p(X)\) is a homogeneous ideal.
+
+Note that \(S(X)\) is not a ring of functions on \(X\): e.g.~for
+\(X= \PP^n\), \(S(X) = \kx{n}\) but \(x_0\) is not a function on
+\(\PP^n\). This is because
+\(f\qty{\tv{x_0: \cdots : x_n}} = f\qty{\tv{\lambda x_0: \cdots : \lambda x_n}}\)
+but \(x_0\neq \lambda x_0\). It still makes sense to ask if \(f\) is
+zero, so \(V_p(f)\) is a well-defined object.
+
+\begin{definition}[Dehomogenization of functions and ideals]
+
+Let \(f\in \kx{n}\) be a homogeneous polynomial, then we define its
+dehomogenization as
+\begin{align*}  
+f^i \da f(1, x_1, \cdots, x_n) \in k[x_1,\cdots, x_n]
+.\end{align*}
+
+For a homogeneous ideal, we define
+\begin{align*}  
+J^i \da \ts{f^i \st f\in J}
+.\end{align*}
+
+\end{definition}
+
+\begin{example}
+
+This is usually not homogeneous. Take
+\begin{align*}  
+f &= x_0^3 + x_0 x_1^2 + x_0 x_1 x_2 + x_0^2 + x_1 \\
+\implies f^i &= 1  +x_1^2 + x_1 x_2 + x_1
+,\end{align*} where has terms of mixed degrees.
+
+\end{example}
+
+\begin{remark}
+
+\envlist
+
+\begin{itemize}
+\tightlist
+\item
+  \((fg)^i = f^i g^i\),
+\item
+  \((f+g)^i = f^i + g^i\)
+\end{itemize}
+
+In other words, evaluating at \(x_0 = 1\) is a ring morphism.
+
+\end{remark}
+
+\begin{definition}[Homogenization of a function]
+
+Let \(f\in \kx{n}\), then the \textbf{homogenization} of \(f\) is
+defined by
+\begin{align*}  
+f^h \da x_0^d f\qty{ {x_1 \over x_0}, \cdots, {x_n \over x_0} }
+\end{align*} where \(d\da \deg(f)\).
+
+\end{definition}
+
+\begin{example}[?]
+
+Let \(f(x_1, x_2) = 1 + x_1^2 + x_1 x_2 + x_2^3\), then
+\begin{align*}  
+f^h(x_0, x_1, x_2) = x_0^3 + x_0 x_1^2 + x_0 x_1 x_2 + x_2^3
+,\end{align*} which is a homogeneous polynomial of degree \(3\). Note
+that \((f^h)^i = f\).
+
+\end{example}
+
+\begin{example}[?]
+
+It need not be the case that \((f^i)^h = f\). Take
+\(f = x_0^3 + x_0 x_1 x_2\), then \(f^i = 1 + x_1 x_2\) and
+\((f^i)^h = x_0^2 + x_1 x_2\). Note that the total degree dropped, since
+everything was divisible by \(x_0\).
+
+\end{example}
+
+\begin{remark}
+
+\begin{align*}  
+(f^i)^h = f \iff x_0 \notdivides f
+.\end{align*}
+
+\end{remark}
+
+\begin{definition}[Homogenization of an ideal]
+
+Given \(J\subset \kx{n}\), define its \textbf{homogenization} as
+\begin{align*}  
+J^h \da \ts{f^h \st f\in J}
+.\end{align*}
+
+\end{definition}
+
+\begin{example}
+
+This is not a ring morphism, since \((f+g)^h \neq f^h + g^h\) in
+general. Taking \(f = x_0^2 + x_1\) and \(g= -x_0^2 + x_2\), we have
+\(f^h + g^h = x_0 x_1 + x_0 x_2\) while \((f+g)^h = x_12 + x_2\).
+
+\end{example}
+
+\begin{remark}
+
+What is the geometric significance? Set
+\(U_0 \da \ts{\tv{x_0: \cdots :x_n} \in \PP^n_{/k} \st x_0 \neq 0 } \cong \AA^n_{/k}\)
+with coordinates \(\tv{{x_1\over x_0} : \cdots : {x_n \over x_0}}\).
+
+\end{remark}
+
+\begin{proposition}[?]
+
+The conclusion is thus that \(U_0\) with the subspace topology is equal
+to \(\AA^n\) with the Zariski topology.
+
+\end{proposition}
+
+\begin{proof}[?]
+
+If we define the Zariski topology on \(\PP^n\) as having closed sets
+\(V_p(I)\), we would want to check that \(\AA^n\cong U_0 \subset \PP^n\)
+is closed in the subspace topology. This amounts to showing that
+\(V_p(I) \intersect U_0\) is closed in \(\AA^n \cong U_0\). We can check
+that
+\begin{align*}  
+V_p(f, f\in I) = \ts{\tv{x_0:\cdots:x_n} \st f(\vector x) = 0 \, \forall f\in I}
+.\end{align*} Intersecting with \(U_0\) yields
+\(\ts{\tv{x_1:\cdots:x_n} \st f(\vector x) = 0,\, x_0\neq 0}\).
+Equivalently, we can rewrite this set as
+\begin{align*}
+\ts{\tv{x_1:\cdots:x_n} \st f\qty{\tv{1, {x_1 \over x_0}, \cdots,{x_n \over x_0} }} = 0,\, f \text{ homogeneous}}
+\end{align*} Since these are coordinates on \(\AA^1\), we have
+\(V_p(I) \intersect U_0 = V_a(I^i)\) which is closed.
+
+Conversely, given a closed set \(V(I)\), we can write this as
+\(V(I) = U_0 \intersect V_p(I^h)\).
+
+\end{proof}
+
+\begin{corollary}[?]
+
+\(\PP^n\) is irreducible of dimension \(n\), where the proof is that its
+covered by irreducible topological spaces of dimension \(n\) with
+nonempty intersection combined with a fact from the exercises.
+
+\end{corollary}
+
+\begin{example}[?]
+
+Consider \(f(x_1, x_2) = x_1^2 - x_2^2 - 1\) and consider
+\(V(f) \subset \AA^2_{/\CC}\):
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-10-10-10-42.png}
+\caption{Image}
+\end{figure}
+
+Note that for real projective space, we can view this as a sphere with
+antipodal points identified. We can thus visualize this in the following
+way:
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-10-10-12-20.png}
+\caption{O}
+\end{figure}
+
+We can normalize the \(x_0\) coordinate to one, hence the plane. We can
+also project \(V(f)\) from the plane onto the sphere, mirroring to
+antipodal points:
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-10-10-14-09.png}
+\caption{Image}
+\end{figure}
+
+This misses some points on the equator, since we aren't including points
+where \(x_0 = 0\). Consider the homogenization
+\(V(f^h) \subset \PP^2_{/\CC}\). It's given by
+\(f^h = x_1^2 - x_2^2 - x_0^2\), then
+\begin{align*}  
+V(f^h) \intersect V(x_0) = \ts{\tv{0:x_1:x_2} \st f^h(0, x_1, x_2) = 0 } = \ts{\tv{0:1:1}, \tv{0:1:-1}}
+,\end{align*} which can be seen in the picture as the points at
+infinity:
+
+\begin{figure}
+\centering
+\includegraphics[width=4.6875in,height=\textheight]{figures/image_2020-11-10-10-19-19.png}
+\caption{A}
+\end{figure}
+
+Note that the equator is
+\(V(x_0) = \PP^2_{/\CC}\sm U_0 \cong \PP^2\sm \AA^2\). So we get a
+circle of points at infinity,
+i.e.~\(V(x_0) = \PP^1 = \ts{\tv{0:v_1:v_2}}\).
+
+\end{example}
+
+\begin{example}[?]
+
+Consider \(V(f)\) where \(f\) is a line in \(\AA^2_{/\CC}\), say
+\(f = ax_1 + bx_2 + c\). This yields \(f^h = ax_1 + bx_2 + cx_0\) and we
+can consider \(V(f^h) \cong \PP^2_{\CC}\). We know \(\PP^1_{\CC}\) is
+topologically a sphere and \(\AA^1_{/\CC}\) is a point:
+
+\begin{figure}
+\centering
+\includegraphics[width=2.60417in,height=\textheight]{figures/image_2020-11-10-10-26-40.png}
+\caption{\(\PP^1_{\CC}\)}
+\end{figure}
+
+The points at infinity correspond to
+\begin{align*}  
+V(f^h) = V(f^h) \intersect V(x_0) = \ts{\tv{0:-b:a}}
+,\end{align*} which is a single point not depending on \(c\).
+
+\end{example}
+
+\begin{remark}
+
+\(\PP^2_{/k}\) for any field \(k\) is a \textbf{projective plane}, which
+satisfies certain axioms:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  There exists a unique line through any two distinct points,
+\item
+  Any two distinct lines intersect at a single point.
+\end{enumerate}
+
+A famous example is the \emph{Fano plane}:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-11-10-10-29-34.png}
+\caption{Fano Plane}
+\end{figure}
+
+Why is this true? \(\PP^2_{/k}\) is the set of lines in \(k^3\), and the
+lines in \(\PP^2_{/k}\) are the vanishing loci of homogeneous
+polynomials and also planes in \(k^3\), since any two lines determine a
+unique plane and any two planes intersect at the origin.
+
+\end{remark}
+
+\begin{proposition}[?]
+
+Let \(J\subset \kx{n}\) be an ideal. Let \(X \da V_a(J) \subset \AA^n\)
+
+\end{proposition}
+
 \hypertarget{misc-unsorted}{%
 \section{Misc Unsorted}\label{misc-unsorted}}
 
