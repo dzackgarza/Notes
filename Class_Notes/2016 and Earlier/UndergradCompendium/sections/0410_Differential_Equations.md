@@ -156,3 +156,14 @@ P(D)y = f(x,y)                 &  & x^ke^{rx} \text{ for each root }
 L[e^{at} f(t)] = \int_0^\infty e^{(a-s)}f(t)dt = F(s-a),
 .\]
 :::
+
+:::{.remark}
+he general technique for solving differential equations with Laplace Transforms:
+\begin{enumerate}
+\item Take the Laplace Transform of all terms on both sides.
+\item Solve for $L[y]$ in terms of $s$.
+\item Attempt an inverse Laplace Transformations
+\begin{enumerate}
+\item This may involve partial fraction decomposition, completing the square, and splitting numerators to match terms with known inverse transformations.
+\end{enumerate}
+:::
