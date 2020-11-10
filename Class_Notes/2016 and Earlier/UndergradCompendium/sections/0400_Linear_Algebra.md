@@ -40,7 +40,8 @@ A &\aug& \vector b \\
 :::{.theorem title="Rank-Nullity"}
 \[  
 \abs{\ker(A)} + \abs{\im(A)} = \abs{\dom(A)}
-.\]
+,\]
+where $\nullity(A) = \abs{\im{A}}, \rank(A) = \abs{\im(A)},$ and $n$ is the number of columns in the corresponding matrix. 
 
 
 Generalization: the following sequence is always exact:
@@ -49,6 +50,13 @@ Generalization: the following sequence is always exact:
 .\]
 Moreover, it always splits, so $\dom A = \ker A \oplus \im A$ and thus $\abs{\dom(A)} = \abs{\ker(A)} + \abs{\im(A)}$.
 
+:::
+
+:::{.remark}
+We also have
+\[  
+\dim(\rowspace(A)) = \dim(\colspace(A)) = \rank(A)
+.\]
 :::
 
 
@@ -98,6 +106,27 @@ Reformulated in terms of linear maps $T$, TFAE:
 - The system $A\vector{x} = 0$ has infinitely many solutions
 
 ## Vector Spaces
+
+### Linear Transformations
+
+
+:::{.definition title="Linear Transformation"}
+\todo[inline]{todo}
+:::
+
+:::{.remark}
+It is common to want to know the range and kernel of a specific linear transformation $T$. $T$ can be given in many ways, but a general strategy for deducing these properties involves:
+	
+- Express an arbitrary vector in $V$ as a linear combination of its basis vectors, and set it equal to an arbitrary vector in $W$.
+
+- Use the linear properties of $T$ to make a substitution from known transformations
+
+- Find a restriction or relation given by the constants of the initial linear combination.
+:::
+
+:::{.definition title="Kernel"}
+\todo[inline]{todo}
+:::
 
 :::{.proposition title="Two-step vector subspace test"}
 If $V\subseteq W$, then $V$ is a subspace of $W$ if the following hold:
@@ -327,19 +356,12 @@ where
 \[
 \text{proj}_{\mathbf{u}} \mathbf{v} = (\text{scal}_{\mathbf{u}} \mathbf{v})\frac{\mathbf{u}}{\mathbf{\norm{u}}}
 = \frac{\langle \mathbf{v,u} \rangle}{\norm{\mathbf{u}}}\frac{\mathbf{u}}{\mathbf{\norm{u}}}
-= \frac{\ip{\vector{v}}{\vector{u}}}{\norm{\vector{u}}^2}\vb{u}
+= \frac{\ip{\vector{v}}{\vector{u}}}{\norm{\vector{u}}^2}\vector{u}
 \]
 is a vector defined as the \textit{orthogonal projection of $\vector{v}$ onto $\vector{u}$.}
 
-\begin{figure}[htpb]
-\begin{centering}
-\begin{center}
-\includegraphics[width=\linewidth]{figures/projection.png}
-\label{fig:projection}
-\caption{Orthogonal projection of $\vector{v_2}$ onto $\vector{u_1}$}
-\end{center}
-\par\end{centering}
-\end{figure}
+
+![Image](figures/image_2020-11-10-01-22-34.png)
 
 The orthogonal set $S'$ can then be transformed into an orthonormal set $S''$ by simply dividing the vectors $s\in S'$ by their magnitudes. The usual definition of a vector's magnitude is
 \[
