@@ -327,33 +327,33 @@ where
 \[
 \text{proj}_{\mathbf{u}} \mathbf{v} = (\text{scal}_{\mathbf{u}} \mathbf{v})\frac{\mathbf{u}}{\mathbf{\norm{u}}}
 = \frac{\langle \mathbf{v,u} \rangle}{\norm{\mathbf{u}}}\frac{\mathbf{u}}{\mathbf{\norm{u}}}
-= \frac{\ip{\vb{v}}{\vb{u}}}{\norm{\vb{u}}^2}\vb{u}
+= \frac{\ip{\vector{v}}{\vector{u}}}{\norm{\vector{u}}^2}\vb{u}
 \]
-is a vector defined as the \textit{orthogonal projection of $\vb{v}$ onto $\vb{u}$.}
+is a vector defined as the \textit{orthogonal projection of $\vector{v}$ onto $\vector{u}$.}
 
 \begin{figure}[htpb]
 \begin{centering}
 \begin{center}
 \includegraphics[width=\linewidth]{figures/projection.png}
 \label{fig:projection}
-\caption{Orthogonal projection of $\vb{v_2}$ onto $\vb{u_1}$}
+\caption{Orthogonal projection of $\vector{v_2}$ onto $\vector{u_1}$}
 \end{center}
 \par\end{centering}
 \end{figure}
 
 The orthogonal set $S'$ can then be transformed into an orthonormal set $S''$ by simply dividing the vectors $s\in S'$ by their magnitudes. The usual definition of a vector's magnitude is
 \[
-\norm{\vb{a}} = \sqrt{\ip{\vb{a}}{\vb{a}}} \text{ and } \norm{\vb{a}}^2 = \ip{\vb{a}}{\vb{a}}
+\norm{\vector{a}} = \sqrt{\ip{\vector{a}}{\vector{a}}} \text{ and } \norm{\vb{a}}^2 = \ip{\vb{a}}{\vb{a}}
 \]
 
 As a final check, all vectors in $S'$ should be orthogonal to each other, such that
 \[
-\ip{\vb{v_i}}{\vb{v_j}} = 0 \text{ when } i \neq j
+\ip{\vector{v_i}}{\vector{v_j}} = 0 \text{ when } i \neq j
 \]
 
 and all vectors in $S''$ should be orthonormal, such that
 \[
-\ip{\vb{v_i}}{\vb{v_j}} = \delta_{ij}
+\ip{\vector{v_i}}{\vector{v_j}} = \delta_{ij}
 \]
 
 ### The Fundamental Subspaces Theorem
