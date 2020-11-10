@@ -125,7 +125,7 @@ It is common to want to know the range and kernel of a specific linear transform
 :::
 
 :::{.remark}
-Useful fact: if $
+Useful fact: if $V\leq W$ is a subspace and $\dim(V) \geq \dim(W)$, then $V=W$.
 :::
 
 :::{.definition title="Kernel"}
