@@ -3074,9 +3074,11 @@ We proved the projective nullstellensatz: for any projective variety $X$, we hav
 Recall that $I_0 = \gens{x_0, \cdots, x_n}$.
 We had a notion of a projective coordinate ring, $S(X) \da \kx{n} / I_p(X)$, which is a graded ring since $I_p(X)$ is a homogeneous ideal.
 
+:::{.remark}
 Note that $S(X)$ is not a ring of functions on $X$: e.g. for $X= \PP^n$, $S(X) = \kx{n}$ but $x_0$ is not a function on $\PP^n$.
 This is because $f\qty{\tv{x_0: \cdots : x_n}} = f\qty{\tv{\lambda x_0: \cdots : \lambda x_n}}$ but $x_0\neq \lambda x_0$.
 It still makes sense to ask if $f$ is zero, so $V_p(f)$ is a well-defined object.
+:::
 
 :::{.definition title="Dehomogenization of functions and ideals"}
 Let $f\in \kx{n}$ be a homogeneous polynomial, then we define its dehomogenization as
@@ -3156,7 +3158,11 @@ Taking $f = x_0^2 + x_1$ and $g= -x_0^2 + x_2$, we have $f^h + g^h = x_0 x_1 + x
 
 :::{.remark}
 What is the geometric significance?
-Set $U_0 \da \ts{\tv{x_0: \cdots :x_n} \in \PP^n_{/k} \st x_0 \neq 0 } \cong \AA^n_{/k}$ with coordinates $\tv{{x_1\over x_0} : \cdots : {x_n \over x_0}}$.
+Set 
+\[
+U_0 \da \ts{\tv{x_0: \cdots :x_n} \in \PP^n_{/k} \st x_0 \neq 0 } \cong \AA^n_{/k}
+\]
+with coordinates $\tv{{x_1\over x_0} : \cdots : {x_n \over x_0}}$.
 :::
 
 :::{.proposition title="?"}
@@ -3247,7 +3253,32 @@ $\PP^2_{/k}$ is the set of lines in $k^3$, and the lines in $\PP^2_{/k}$ are the
 
 :::{.proposition title="?"}
 Let $J\subset \kx{n}$ be an ideal.
-Let $X \da V_a(J) \subset \AA^n$
+Let $X \da V_a(J) \subset \AA^n$ where we identify $\AA^n = U_0 \subset \PP^n$.
+Then the closure $\bar{X} \subset \PP^n$ is given by $\bar{X} = V_p(J^h)$.
+In particular, $V_a(J) = V_p(J^h)$.
+:::
+
+:::{.proof title="?"}
+Note that it's clear that $V_p(J^h)$ is closed and contains $V_a(J)$.
+For the reverse containment, let $Y\containing X$ be closed; we want to show that $Y\contains V_p(J^h)$.
+Since $Y$ is closed, $Y = V_p(J')$ where $J'$ is some homogeneous ideal.
+Any element $f'\in J'$ satisfies $f' = x^d f$ for some maximal $d$ where $x_0^d f$ vanishes on $X$.
+We also have $f=0$ on $X$ since $X\subset U_0$.
+We can compute
+\[  
+f\in I_a(X) = I_a(V_a(J)) = \sqrt J
+,\]
+so $f^m\in J$.
+Then $(f^h)^m \in J^h$ for some $m$, and this $f^h \in \sqrt{J^h}$.
+
+We can conclude that $J'\subset \sqrt J$, which shows that $V_p(J') \contains V_p(J^h)$ as desired.
+:::
+
+:::{.definition title="Projective Closure"}
+The **projective closure** of $X = V_a(J)$ is the smallest closed subset containing $X$ and is given by
+\[  
+\bar{X} = V_p(J^h)
+.\]
 :::
 
 # Misc Unsorted
