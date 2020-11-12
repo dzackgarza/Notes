@@ -1,0 +1,60 @@
+﻿\begin{tikzpicture}
+  \draw[show grid integer coordinates] 
+	(-2,-2) grid (10,10);
+
+% Text
+\node 
+	(x) at (-0.5,0.5) {$O$};
+
+% Lines
+% Straight lines are given by coordinates separated by a double minus,
+\draw 
+	(0,3) -- (1, 4);
+\draw 
+	(-1,2.5) -- (-0.5,2) -- (0,2.5);
+
+% Paths
+\draw (-2,-4) to[out=90,in=180] (3,-3);
+\draw (-2,-4) to[bend right] (3,-3);
+\draw (-2,-4) to[out=20,in=190] (3,-3);
+
+
+% Curves
+\draw[color=blue, thick]
+	(0,10) .. controls (2,12) .. (4,10)
+	(4.5,10) .. controls (6,8) and (6,11) .. (5,12);
+
+% Circles and Ellipses
+\filldraw [gray] 
+	(0,0) circle (4pt);
+
+\filldraw[color=red!60, fill=red!5, very thick]
+	(0,7) circle (1.5);
+
+\fill[blue!50] 
+	(2,5) circle [x radius=1.5, y radius=0.5];
+
+
+% Circular arcs
+\draw[thick, red, ->] 
+	(7,3) arc (0:220:1);
+	% Start, angle, radius
+
+% Rectangle
+\draw[blue, very thick] 
+	(2,9) rectangle (3,7);
+	% Top left to bottom right
+
+% Polyons
+\draw[orange, ultra thick]
+	(4,6) -- (6,6) -- (6,10) -- cycle;
+
+%\draw[scale=0.5, domain=-3:3, smooth, variable=\x, blue] plot ({\x}, {\sin(\x)});
+\draw[color=red]    plot (\x,\x) node[right] {$f(x) =x$};
+\draw[color=blue]   plot (\x,{sin(\x r)})   node[right] {$f(x) = \sin x$};
+\draw[domain=-2:8, color=orange] plot (\x,{exp(\x -6)}) node[right]
+        {$f(x) = \frac{1}{20} \mathrm e^x$};
+\draw[scale=0.5, domain=-4:4, smooth, variable=\y, magenta]  plot ({\y*\y}, {\y}) node[right] {$x = y^2$};
+
+
+\end{tikzpicture}

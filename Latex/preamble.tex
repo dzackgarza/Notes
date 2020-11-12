@@ -127,7 +127,7 @@
 % Tikz and Graphics
 \usepackage{amscd}
 \usepackage{tikz}
-\usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix, positioning, decorations, shapes}
+\usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, matrix, positioning, decorations, decorations.pathreplacing, decorations.markings, shapes, backgrounds, fit, shapes.geometric, intersections}
 \tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
@@ -343,3 +343,19 @@ arc(90:0:1); % inside palm
 }
 
 \usepackage{cancel}
+
+\usepackage{dynkin-diagrams}
+
+\NewDocumentCommand\dyn{mom}
+{\(\IfStrEq{#3}{}{#1_{n}}{#1_{#3}}^{\IfValueT{#2}{#2}}\) 
+& \IfValueTF{#2}{\dynkin{#1}[#2]{#3}}{\dynkin{#1}{#3}} \\}
+
+\NewDocumentEnvironment{tbl}{m}
+{
+\begin{figure}\caption{#1}
+\centering
+\begin{tabular}{rl}
+}{
+\end{tabular}\end{figure}
+}
+

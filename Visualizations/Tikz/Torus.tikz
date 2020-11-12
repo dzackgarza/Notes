@@ -1,0 +1,5 @@
+﻿ \begin{tikzpicture}
+  \draw (-1,0) to[bend left] (1,0);
+  \draw (-1.2,.1) to[bend right] (1.2,.1);
+  \draw[rotate=0] (0,0) ellipse (100pt and 50pt);
+\end{tikzpicture}

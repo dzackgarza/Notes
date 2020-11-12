@@ -1,0 +1,13 @@
+﻿\begin{tikzpicture}[gridded]
+    % Draw to path and give a name to them
+    \draw [red, name path={red line}] (0,0) -- (4,3);
+    \draw [blue, name path={blue curve}] (1,-0.5) to[out=80, in=100] (3,2);
+    % use the intersections on a path to giv them coordinates
+    % and draw a line between them
+    \draw [green, name intersections={of=red line and blue curve, 
+           by={first intersect, second intersect}}]
+       (first intersect) -- (second intersect);
+    % one can use the coordinates furtheron
+    \node [above] at (first intersect) {A};
+    \node [below] at (second intersect) {B};
+\end{tikzpicture}

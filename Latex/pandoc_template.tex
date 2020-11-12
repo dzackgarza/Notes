@@ -111,21 +111,21 @@ $if(author)$
 $endif$
 
 
+\newpage
+
 $if(notoc)$
 $else$
-\newpage
 \tableofcontents
+\newpage
 $endif$
 
 $body$
 
-\newpage
-
 $if(book)$
-\newpage
 \section{Indices}
 $if(todos)$
 \listoftodos[List of Todos]
+\newpage
 $endif$
 
 % Hook into amsthm environments to list them.
