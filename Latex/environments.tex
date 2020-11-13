@@ -80,6 +80,16 @@
   colframe=orange
 }
 \newtheorem{proposition}{Proposition}[section]
+\tcolorboxenvironment{conjecture}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.1,
+  colframe=red
+}
+
+\newtheorem{conjecture}{Conjecture}[section]
 \tcolorboxenvironment{lemma}{
   boxrule=1pt,
   boxsep=0pt,
@@ -255,3 +265,7 @@
 \numberwithin{example}{subsection} % important bit
 \numberwithin{exercise}{subsection} % important bit
 \numberwithin{remark}{subsection} % important bit
+
+% Todo: Question env.
+% Todo: Answer env.
+% Todo: Conjecture
