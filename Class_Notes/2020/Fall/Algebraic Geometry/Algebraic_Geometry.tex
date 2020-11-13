@@ -66,12 +66,14 @@ inaccuracies are almost certainly my own. } } \\
 \textbf{D. Zack Garza} \\
 \textit{University of Georgia} \\
 \textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-11-10 }
+{\tiny \textit{Last updated:} 2020-11-13 }
 \end{flushleft}
 
 
 \newpage
+
 \tableofcontents
+\newpage
 
 \hypertarget{prologue}{%
 \section*{Prologue}\label{prologue}}
@@ -4345,6 +4347,10 @@ follows because for all points \(\tv{x_0, \cdots, x_n} \in \PP^n\), some
 \hypertarget{tuesday-november-10}{%
 \section{Tuesday, November 10}\label{tuesday-november-10}}
 
+\hypertarget{homogenization-and-dehomogenization}{%
+\subsection{Homogenization and
+Dehomogenization}\label{homogenization-and-dehomogenization}}
+
 Last time: projective varieties \(V(f_i) \subset \PP^n_{/k}\) with
 \(f_i\) homogeneous. We proved the projective nullstellensatz: for any
 projective variety \(X\), we have \(V_p(I_p(X))\) and for any
@@ -4646,6 +4652,205 @@ subset containing \(X\) and is given by
 
 \end{definition}
 
+\hypertarget{thursday-november-12}{%
+\section{Thursday, November 12}\label{thursday-november-12}}
+
+Recall that if \(f\in \kx{n}\) is a homogeneous degree \(d\) polynomial,
+then \(f^i \da f(1, x_1, \cdots, x_n) \in k[x_1,\cdots, x_n]\) is the
+dehomogenization of \(f\). Conversely,
+\(f^h \da x_0^d f\qty{ {x_1 \over x_0}, \cdots, {x_n \over x_0} }\) is
+the homogenization. This is related to looking at the open subset
+\(U_0 \da {\ts x\in \PP^n_{/k} \st x_0\neq 0} \subseteq \PP^n_{/k}\),
+where we found that \(U_0 \cong \AA^n_{/k}\).
+
+\begin{proposition}[Projective Closure]
+
+Let \(V(I) \subset U_0\) be an affine variety, then
+\(V(I) \subset \PP^n_{/k}\) is given by
+\begin{align*}
+V(I^h) \da \ts{f^h \st f\in I}
+,\end{align*} the \textbf{projective closure}.
+
+\end{proposition}
+
+\begin{remark}
+
+Projective varieties are better! They're closed in the classical
+topology, and subsets of projective space and thus compact.
+
+\end{remark}
+
+\begin{remark}
+
+It doesn't suffice to just homogenize the individual generators of the
+ideal \(I\). For example, take \(J \da \gens{x_1, x_2 - x_1^2}\). We
+have \(V(J) \subset \AA^2\) given by \(\ts{(0, 0)}\), and by the
+proposition, \(V(J^h) = \ts{[1:0:0]}\) since the single point at the
+origin is closed in \(\PP^2\).
+
+On the other hand,
+\begin{align*}  
+V_p(x_1, x_0 x_2 - x_1^2) = \ts{[1:0:0], [0:0:1]} \subset \PP^2
+.\end{align*}
+
+Note that \(x_2 \in J\), so this needs to be homogenized too.\footnote{It
+  is possible to get around this issue computationally by using Gröbner
+  bases, a special type of generating set for ideals.}
+
+\end{remark}
+
+\begin{remark}
+
+An aside: how do you implement algebraic geometry? For example, when is
+\(\gens{f_i} = \gens{1}\)? This is generally a somewhat difficult
+problem, since checking that their corresponding varieties are equal
+isn't so tractable.
+
+\end{remark}
+
+\hypertarget{chapter}{%
+\subsection{Chapter ?}\label{chapter}}
+
+Goal: understand and define the sheaf of regular functions on projective
+varieties. Given an open subset \(U\subset V_p(J)\), what are the
+regular functions on it?
+
+\begin{definition}[?]
+
+Let \(U\subset X\) be an open subset of a projective variety, and define
+\begin{align*}  
+\OO_X(U) \da \ts{\phi:U\to k \st \phi \text{ is locally of the form }   {g_p \over f_p} \in S(X)_d }
+.\end{align*} i.e.~the functions in the homogeneous coordinate ring of
+the same degree \(d\).
+
+\end{definition}
+
+\begin{remark}
+
+Note that \(g_p/f_p\) is well-defined on \(V(f_p)^c\) since
+\begin{align*}  
+{ g_p(\lambda \vector x) \over  f_p(\lambda \vector x)} 
+= { \lambda^d g_p(\vector x) \over \lambda^d f_p(\vector x) }
+= {g_p(\vector x) \over f_p (\vector x)}
+\end{align*}
+
+\end{remark}
+
+Recall that ``locally of the form \(\cdots\)'' means that for all
+\(p\in U\), there exists an open neighborhood \(U_p\) on which
+\(\ro{\phi}{U_p} = g_p / f_p\).
+
+\begin{definition}[Projective Variety as a Ringed Space]
+
+Note that if \(X\subset \PP^n\) is closed, then \(X\intersect U_i\) is
+closed and thus an affine variety.
+\begin{align*}  
+\tilde \OO_X(U) \da \ts{\phi: U\to k \st \ro{\phi}{U\intersect U_i} \text{ is a regular function} }
+.\end{align*}
+
+\end{definition}
+
+\begin{proposition}[?]
+
+These two definitions are equivalent.
+
+\end{proposition}
+
+\begin{proof}[?]
+
+It suffices to check that
+\(\OO_{X\intersect U_i} = \tilde \OO_{X\intersect U_i}\) as sheaves on
+\(X\intersect U_i\), i.e.~checking on an open cover, since then they'd
+both arise from the gluing construction. We have
+\begin{align*}  
+X\intersect U_i = \ts{[x_0 : \cdots: x_n] \st x_i \neq 0 }
+.\end{align*}
+
+Let \(V\subset X\intersect U_0\) be an open subset, we then want to show
+that \(\OO_X(V)\) are the regular functions on \(V\) when \(V\) as a
+subset of an affine variety. So let \(\phi\in \OO_X(V)\), so that
+locally \(\phi = g_p/f_p \in S(X)_d\) as a ratio of two homogeneous
+polynomials. We want to know if \(\phi\) can be written as the ratio of
+two polynomials in one additional variable, so we just dehomogenize to
+obtain \(\phi = g^i_p / f^i_p\) locally where both are in
+\(A(X\intersect U_0)\). So \(\phi\) is a regular function on the open
+subset \(V\) of the affine variety \(X\intersect U_0\).\\
+
+Conversely, suppose that \(\phi = g_p/f_p \in A(X\intersect X_0)\)
+locally around \(p\). It's not necessarily the case that
+\(\phi = g^h_p / f^h_p\), but it is true that
+\begin{align*}  
+\phi = {x_0^d g_p^h \over f_p^h} = {g_p^h \over x_0^{-d} f_p^h}
+,\end{align*} where \(d = \deg f^h - \deg g^h\). This is locally a ratio
+of two homogeneous polynomials of equal degree, so \(\OO_X\) and
+\(\tilde \OO_X\) define the same sheaf of functions on \(X\).
+
+\end{proof}
+
+\hypertarget{morphisms-of-projective-varieties}{%
+\subsection{Morphisms of Projective
+Varieties}\label{morphisms-of-projective-varieties}}
+
+\begin{lemma}[?]
+
+Let \(X\) be a projective variety and \(f_0, \cdots, f_m \in S(X)_d\).
+Then on the open subset \(X\sm V(f_i)\), there is a morphism
+\begin{align*}  
+f: U &\to \PP^m \\
+p &\mapsto \tv{f_0(p) : \cdots : f_m(p) }
+.\end{align*}
+
+\end{lemma}
+
+\begin{proof}[?]
+
+This map is well-defined, since letting \(p = [x_0: \cdots : x_n]\) we
+have
+\begin{align*}  
+[\lambda x_0 : \cdots : \lambda x_n] 
+&\mapsto 
+[ \lambda^d f_0(p) : \cdots : \lambda^d f_m(p)] 
+= f(p)
+.\end{align*}
+
+We need to check that
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(f\) is continuous, and
+\item
+  The pullback of a regular function on any open set is again regular.
+\end{enumerate}
+
+\begin{claim}
+
+\(f\) is continuous.
+
+\end{claim}
+
+Consider \(f^{-1}(V(h))\) with \(h\in k[y_0, \cdots, y_m]\) homogeneous.
+We can check that
+\begin{align*}  
+f^{-1}(V_p(h)) = V_p(h(f_0, \cdots, f_m))
+,\end{align*} which is closed, so \(f\) is continuous.
+
+\begin{claim}
+
+\(f\) pulls back regular functions.
+
+\end{claim}
+
+Let \(h_1, h_2 \in S(\PP^m)\) be homogeneous polynomials of equal degree
+in \(k[y_0, \cdots, y_m]\). Then on \(V(h_2)^c\), we have
+\begin{align*}  
+f^*\qty{h_1 \over h_2 } = {h_1(f_0, \cdots, f_m) \over h_2(f_0, \cdots, f_m)}
+.\end{align*} This is a ratio of homogeneous polynomials of equal degree
+in the \(x_i\), the pullback is again locally homogeneous ratios of
+functions of equal degree.
+
+\end{proof}
+
 \hypertarget{misc-unsorted}{%
 \section{Misc Unsorted}\label{misc-unsorted}}
 
@@ -4655,11 +4860,9 @@ subset containing \(X\) and is given by
 \caption{Image}
 \end{figure}
 
-\newpage
-
-\newpage
 \section{Indices}
 \listoftodos[List of Todos]
+\newpage
 
 % Hook into amsthm environments to list them.
 \renewcommand{\listtheoremname}{Definitions}

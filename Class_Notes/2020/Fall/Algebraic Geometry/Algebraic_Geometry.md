@@ -3069,6 +3069,8 @@ The equality follows because for all points $\tv{x_0, \cdots, x_n} \in \PP^n$, s
 
 # Tuesday, November 10
 
+## Homogenization and Dehomogenization
+
 Last time: projective varieties $V(f_i) \subset \PP^n_{/k}$ with $f_i$ homogeneous.
 We proved the projective nullstellensatz: for any projective variety $X$, we have $V_p(I_p(X))$ and for any homogeneous ideal $I$ with $\sqrt{I} \neq I_0$ the irrelevant ideal, $I_p(V_p(I)) = \sqrt{I}$.
 Recall that $I_0 = \gens{x_0, \cdots, x_n}$.
@@ -3280,6 +3282,154 @@ The **projective closure** of $X = V_a(J)$ is the smallest closed subset contain
 \bar{X} = V_p(J^h)
 .\]
 :::
+
+# Thursday, November 12
+
+Recall that if $f\in \kx{n}$ is a homogeneous degree $d$ polynomial, then $f^i \da f(1, x_1, \cdots, x_n) \in k[x_1,\cdots, x_n]$ is the dehomogenization of $f$.
+Conversely, $f^h \da x_0^d f\qty{ {x_1 \over x_0}, \cdots, {x_n \over x_0} }$ is the homogenization.
+This is related to looking at the open subset $U_0 \da {\ts x\in \PP^n_{/k} \st x_0\neq 0} \subseteq \PP^n_{/k}$, where we found that $U_0 \cong \AA^n_{/k}$.
+
+:::{.proposition title="Projective Closure"}
+Let $V(I) \subset U_0$ be an affine variety, then $V(I) \subset \PP^n_{/k}$ is given by 
+\[
+V(I^h) \da \ts{f^h \st f\in I}
+,\]
+the **projective closure**.
+:::
+
+:::{.remark}
+Projective varieties are better!
+They're closed in the classical topology, and subsets of projective space and thus compact.
+:::
+
+:::{.remark}
+It doesn't suffice to just homogenize the individual generators of the ideal $I$. 
+For example, take $J \da \gens{x_1, x_2 - x_1^2}$.
+We have $V(J) \subset \AA^2$ given by $\ts{(0, 0)}$, and by the proposition, $V(J^h) = \ts{[1:0:0]}$ since the single point at the origin is closed in $\PP^2$.
+
+On the other hand, 
+\[  
+V_p(x_1, x_0 x_2 - x_1^2) = \ts{[1:0:0], [0:0:1]} \subset \PP^2
+.\]
+
+Note that $x_2 \in J$, so this needs to be homogenized too.[^grobner_basis]
+
+[^grobner_basis]: It is possible to get around this issue computationally by using Gröbner bases, a special type of generating set for ideals.
+
+:::
+
+:::{.remark}
+An aside: how do you implement algebraic geometry? 
+For example, when is $\gens{f_i} = \gens{1}$?
+This is generally a somewhat difficult problem, since checking that their corresponding varieties are equal isn't so tractable.
+:::
+
+## Chapter ?
+
+Goal: understand and define the sheaf of regular functions on projective varieties. 
+Given an open subset $U\subset V_p(J)$, what are the regular functions on it?
+
+:::{.definition title="?"}
+Let $U\subset X$ be an open subset of a projective variety, and define
+\[  
+\OO_X(U) \da \ts{\phi:U\to k \st \phi \text{ is locally of the form }   {g_p \over f_p} \in S(X)_d }
+.\]
+i.e. the functions in the homogeneous coordinate ring of the same degree $d$.
+:::
+
+:::{.remark}
+Note that $g_p/f_p$ is well-defined on $V(f_p)^c$ since
+\[  
+{ g_p(\lambda \vector x) \over  f_p(\lambda \vector x)} 
+= { \lambda^d g_p(\vector x) \over \lambda^d f_p(\vector x) }
+= {g_p(\vector x) \over f_p (\vector x)}
+\]
+:::
+
+Recall that "locally of the form $\cdots$" means that for all $p\in U$, there exists an open neighborhood $U_p$ on which $\ro{\phi}{U_p} = g_p / f_p$.
+
+:::{.definition title="Projective Variety as a Ringed Space"}
+Note that if $X\subset \PP^n$ is closed, then $X\intersect U_i$ is closed and thus an affine variety.
+\[  
+\tilde \OO_X(U) \da \ts{\phi: U\to k \st \ro{\phi}{U\intersect U_i} \text{ is a regular function} }
+.\]
+:::
+
+:::{.proposition title="?"}
+These two definitions are equivalent.
+:::
+
+:::{.proof title="?"}
+It suffices to check that $\OO_{X\intersect U_i} = \tilde \OO_{X\intersect U_i}$ as sheaves on $X\intersect U_i$, i.e. checking on an open cover, since then they'd both arise from the gluing construction.
+We have
+\[  
+X\intersect U_i = \ts{[x_0 : \cdots: x_n] \st x_i \neq 0 }
+.\]
+
+Let $V\subset X\intersect U_0$ be an open subset, we then want to show that $\OO_X(V)$ are the regular functions on $V$ when $V$ as a subset of an affine variety.
+So let $\phi\in \OO_X(V)$, so that locally $\phi = g_p/f_p \in S(X)_d$ as a ratio of two homogeneous polynomials. 
+We want to know if $\phi$ can be written as the ratio of two polynomials in one additional variable, so we just dehomogenize to obtain $\phi = g^i_p / f^i_p$ locally where both are in $A(X\intersect U_0)$.
+So $\phi$ is a regular function on the open subset $V$ of the affine variety $X\intersect U_0$.
+\
+
+Conversely, suppose that $\phi = g_p/f_p \in A(X\intersect X_0)$ locally around $p$.
+It's not necessarily the case that $\phi = g^h_p / f^h_p$, but it is true that
+\[  
+\phi = {x_0^d g_p^h \over f_p^h} = {g_p^h \over x_0^{-d} f_p^h}
+,\]
+where $d = \deg f^h - \deg g^h$.
+This is locally a ratio of two homogeneous polynomials of equal degree, so $\OO_X$ and $\tilde \OO_X$ define the same sheaf of functions on $X$.
+:::
+
+
+## Morphisms of Projective Varieties
+
+
+:::{.lemma title="?"}
+Let $X$ be a projective variety and $f_0, \cdots, f_m \in S(X)_d$.
+Then on the open subset $X\sm V(f_i)$, there is a morphism 
+\[  
+f: U &\to \PP^m \\
+p &\mapsto \tv{f_0(p) : \cdots : f_m(p) }
+.\]
+:::
+
+:::{.proof title="?"}
+This map is well-defined, since letting $p = [x_0: \cdots : x_n]$ we have
+\[  
+[\lambda x_0 : \cdots : \lambda x_n] 
+&\mapsto 
+[ \lambda^d f_0(p) : \cdots : \lambda^d f_m(p)] 
+= f(p)
+.\]
+
+We need to check that 
+
+1. $f$ is continuous, and
+
+2. The pullback of a regular function on any open set is again regular.
+
+:::{.claim }
+$f$ is continuous.
+:::
+Consider $f^{-1}(V(h))$ with $h\in k[y_0, \cdots, y_m]$ homogeneous.
+We can check that
+\[  
+f^{-1}(V_p(h)) = V_p(h(f_0, \cdots, f_m))
+,\]
+which is closed, so $f$ is continuous.
+
+:::{.claim}
+$f$ pulls back regular functions.
+:::
+Let $h_1, h_2 \in S(\PP^m)$ be homogeneous polynomials of equal degree in $k[y_0, \cdots, y_m]$.
+Then on $V(h_2)^c$, we have
+\[  
+f^*\qty{h_1 \over h_2 } = {h_1(f_0, \cdots, f_m) \over h_2(f_0, \cdots, f_m)}
+.\]
+This is a ratio of homogeneous polynomials of equal degree in the $x_i$, the pullback is again locally homogeneous ratios of functions of equal degree.
+:::
+
 
 # Misc Unsorted
 
