@@ -7,5 +7,8 @@ However, we haven't done anything with them yet!
 If you take an algebraic closure of the finite ground field $\FF_q$, there is a unique subextension of degree $r$ for every $r$, so we call that $\FF_q^r$.
 The extension $\FF_q^r/\FF_q$ is cyclic galois, with a geometric Frobenius $x\to x^q$.
 Note that $\FF_q^r$ is the fixed field of $F^r$, the $r$th power of the Frobenius map.
-We set $K_r \da K \FF_q^r$, which is a regular function field over $\FF_q^r$.
+We set $K_r \da K \FF_q^r$, which is a regular function field over $\FF_q^r$. 
+Note that we could view this as a function field just over $\FF_q$, but it would not be regular.
+Then $K_r/K$ is a degree $r$ arithmetic extension of function fields.
+What happens to places when making this scalar extension?
 
