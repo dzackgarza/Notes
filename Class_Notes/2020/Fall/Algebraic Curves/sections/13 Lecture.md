@@ -23,6 +23,11 @@ Then we want to factor $p_v S$?
 
 :::{.lemma title="?"}
 Suppose $d\da \deg(v)$.
-Then $K_r/K$ is galois
+Then $K_r/K$ is galois, so we have $efg=r$.
+In fact, $c=1$, so $f = {r\over \gcd(d, r)}$ and $g = \gcd(d, r)$ and each place $w\in \Sigma(K_r / \FF_q^r)$ has degree ${d\over \gcd(d, r)}$.
+:::
+
+:::{.example title="T"}
+
 :::
 
