@@ -10,5 +10,19 @@ Note that $\FF_q^r$ is the fixed field of $F^r$, the $r$th power of the Frobeniu
 We set $K_r \da K \FF_q^r$, which is a regular function field over $\FF_q^r$. 
 Note that we could view this as a function field just over $\FF_q$, but it would not be regular.
 Then $K_r/K$ is a degree $r$ arithmetic extension of function fields.
+
+Question:
 What happens to places when making this scalar extension?
+I.e., how to places in $K$ decompose in $K_r$?
+
+:::{.remark}
+This is related to an Algebraic Number Theory I problem: for $v\in \Sigma(\kfq)$ above an affine Dedekind domain $R$ such that $v\in \Sigma(K/R)$, let $S$ be the integral closure of $K$ in $K_r$.
+Then we want to factor $p_v S$?
+\todo[inline]{Not quite sure.}
+:::
+
+:::{.lemma title="?"}
+Suppose $d\da \deg(v)$.
+Then $K_r/K$ is galois
+:::
 
