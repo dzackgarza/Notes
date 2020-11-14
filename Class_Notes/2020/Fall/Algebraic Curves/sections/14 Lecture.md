@@ -286,6 +286,7 @@ which establishes the functional equation for $G(t)$.
 L(t) \da (1-t) (1-qt)  Z(t) \in \ZZ[t]
 .\]
 :::
+
 This clears the denominators in $Z(t)$, so this is now a polynomial of degree at most $2g$.
 We can thus rewrite
 \[  
