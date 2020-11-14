@@ -21,13 +21,24 @@ Then we want to factor $p_v S$?
 \todo[inline]{Not quite sure.}
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="Key lemma about how places split."}
 Suppose $d\da \deg(v)$.
 Then $K_r/K$ is galois, so we have $efg=r$.
 In fact, $c=1$, so $f = {r\over \gcd(d, r)}$ and $g = \gcd(d, r)$ and each place $w\in \Sigma(K_r / \FF_q^r)$ has degree ${d\over \gcd(d, r)}$.
 :::
 
-:::{.example title="T"}
+:::{.remark}
+We have the following cases:
+
+- The extension is *inert* iff $\gcd(d, r) = 1$,
+
+- The extension *splits completely* iff $r\divides d$,
+
+- All $w$ dividing $v$ have degree 1 iff $d\divides r$.
 
 :::
 
+The last thing we proved was that the degree zero divisor class group is finite when we're over a finite ground field.
+Why is this true?
+Whenever there is a divisor of degree $n$, then the set of degree $n$ divisors is a coset of the degree zero divisors, all of which have the same cardinality.
+So it's enough to prove that 
