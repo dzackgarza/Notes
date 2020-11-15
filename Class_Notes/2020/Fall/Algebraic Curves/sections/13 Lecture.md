@@ -165,7 +165,15 @@ In the function field case, it is a theorem!
 
 
 :::{.proposition title="Formula for the zeta function exhibiting rationality"}
-Let $\kfq$ have genus $g$ and $\delta = I(K)$ the index, the least positive degree of a divisor.
+Let $\kfq$ have genus $g$ and $\delta = I(K)$ the index, the least positive degree of a divisor.[^delta_note]
+
+a. If $g=0$, then
+\[  
+Z(t) = {1\over q-1} \qty{{q \over 1-q^? t^\delta} - {1 \over 1-t^\delta}}
+.\]
+
+[^delta_note]: It will turn out (by a theorem of Schmidt) that $\delta = 1$ in the case of a finite ground field.
+
 :::
 
 
