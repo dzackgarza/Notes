@@ -51,5 +51,6 @@ Suppose $C\in \Cl(K)$, then
 - The number of effective divisors $D \in [C]$ is given by 
 \[  
 {q^{\ell(C)} -1 \over q-1} 
-.\]
+,\]
+  where $\ell(C)$ is the dimension of the linear system associated to the divisor class $C$, and this is the dimension of a projective space over $\FF_q$.
 :::
