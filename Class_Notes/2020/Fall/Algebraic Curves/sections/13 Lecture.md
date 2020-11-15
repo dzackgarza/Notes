@@ -189,7 +189,7 @@ G(t)
 
 Note that as a consequence, it will definitely be rational in $q$, and will have a simple pole at $t=1$.
 
-There's no 
+There's no major idea for the proof: when the 
 
 
 
