@@ -96,5 +96,11 @@ Moreover, it is enough to know only finitely many of these quantities, where the
 
 ## Hasse-Weil Zeta Functions
 
-There is a general theory that will unify the Riemann zeta function, thought of as the zeta function of $\ZZ$, the Dedekind zeta function 
+There is a general theory that will unify 
+
+- The Riemann zeta function, thought of as the zeta function of $\ZZ$, 
+
+- The Dedekind zeta function, attached to the ring of integers over a number field,
+
+- 
 
