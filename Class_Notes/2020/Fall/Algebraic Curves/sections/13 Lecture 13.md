@@ -65,10 +65,10 @@ A_n = h \qty{ q^{n+1-g} - 1\over q-1}
 
 **Proof of (a)**:
 The set of effective divisors linearly equivalent to $D$ is naturally viewed as the projectivization $\PP \mathcal{L}(D)$ of the one-dimensional subspaces of the linear system of that divisor class.
-It is then a fact that the number of elements in a $d\dash$dimensional vector space over $\FF_q$ has dimension precisely $q^d-1 \over q-1$ elements.
-
+It is then a fact that the number of elements in a $d\dash$dimensional vector space over $\FF_q$ has dimension precisely $\frac{q^d-1}{q-1}$ elements.
 The projectivization comes in because two different functions have the same divisor if one of them is a constant multiple of the other.
 Note that the number of elements is computed as the number of nonzero elements divided by the number of nonzero scalars.
+\
 
 **Proof of (b)**:
 This will come out of the Riemann-Roch theorem.
@@ -172,7 +172,7 @@ a. If $g=0$, then
 Z(t) = {1\over q-1} \qty{{q \over 1-q^\delta t^\delta} - {1 \over 1-t^\delta}}
 .\]
 
-b. If $g=1$, then $Z(t) + F(t) + G(t)$ where
+b. If $g\geq 1$, then $Z(t) + F(t) + G(t)$ where
 \[  
 F(t) 
 &= {1\over q-1} \sum_{0\leq \deg C \leq 2g-2} q^{\ell(C)} t^{\deg(C)} \\
@@ -194,6 +194,9 @@ If it is smaller, than the formula involves the dimension of the linear system.
 
 ## Proof of Rationality
 
+:::{.proof title="of rationality of $Z(t)$"}
+Recall that $\ell(C)$ is the dimension of the associated Riemann-Roch space.
+
 When $g=0$, by Riemann-Roch we have $\Cl^0(K) = 0$ over any ground field $\kk$ (see exercises), and so $h=1$.
 Since every $n\geq 0$ satisfies $n\geq 2g-2$ when $g=0$, if $\delta\divides n$ we have
 \[  
@@ -209,15 +212,56 @@ Now let $g\geq 1$, and write
 \[  
 \infsum{n} A_n t^n = \sum_{\deg(C) \geq 0} \abs{\ts{ A\in C \st A\geq 0}}t^{\deg(C)}
 ,\]
-where we instead count the number of divisors in each divisor class.
-
-Continuing this computation yields
+where we instead count the number of divisors in each divisor class (a consequence of the previous lemma).
+Continuing this computation, we separate out the part where $\deg(C) \leq 2g-2$ and pull out the $-1$ in the numerator:
 \[  
 \cdots 
 &= \sum_{\deg(C) \geq 0} {q^{\ell(C)} - 1 \over q - 1}t^{\deg(C)} \\
 &= \qty{1\over q-1} \qty{ \sum_{0\leq \deg(C) \leq 2g-2} q^{\ell(C)} t^{\deg(C)} 
-+ \sum_{\deg(C) > 2g-2} q^{\deg(C) - g + 1} t^{\deg(C)}
-}
++ \sum_{\deg(C) > 2g-2} q^{\deg(C) - g + 1} t^{\deg(C)} - \sum_{\deg(C) \geq 0} t^{\deg(C)}
+} \\
+&\da F(t) + G(t)
+,\]
+
+so we can write
+
+\[  
+F(t) &= {1\over q-1} \sum_{0\leq \deg(C) \leq 2g-2} q^{\ell(C)} t^{\deg(C)}
+\\
+(q-1)G(t) &= \sum_{n = {2g-2 \over \delta} + 1}^\infty  h q^{n\delta + 1 - g} t^{n\delta}  - \infsum{n} ht^{n\delta}
 .\]
 
+Note that $\delta\divides 2g-2$ since the canonical divisor has degree $2g-2$ and $\delta$ is a gcd.
+Note that for $g=1$, the index divides zero, which tells you nothing about it!
+This now reduces to some geometric series that can be summed, which shows these are rational functions in $t$.
+:::
 
+:::{.exercise title="?"}
+Let $K = \FF_q(t)$, then $g=0, \delta = 1$, and
+\[  
+Z(t) = {1\over (1-qt)(1-t)}
+.\]
+We will see in general that the numerator is of the form $L(t)$ where $L\in \ZZ[t]$ has degree $2g$.
+:::
+
+Note that this all generalized to higher dimensional projective varieties $X_{/\FF_q}$, for which these properties were proved by the work of Deligne.
+In general, $Z(t)$ will be of the form
+\[  
+Z_X(t) = {L_1(t) \cdots L_{2d-1}(t) \over L_0(t) \cdots L_{2d}(t)}
+,\]
+where $d = \dim(X)$ and $\deg L_i$ will be the dimension of the $i$th $\ell\dash$adic cohomology.
+Moreover, if $X_{/\FF_q}$ is a reduction mod $q$ of a variety in characteristic zero, these will be the Betti numbers of $X_{/\CC}$.
+If we take a compact Riemann surface, which has a honest topological genus of $g$, the Betti numbers are $1, 2g, 1$, and this recovers the formula above for $L(t)$ and its degree.
+
+The next result will be the following theorem:
+
+:::{.theorem title="Schmidt, 1910ish"}
+For all $\kfq$,
+\[  
+\delta = I(K) = 1
+.\]
+:::
+This will greatly simplify the previous formulas.
+A useful application is if you have a genus zero curve of index 1, applying Riemann-Roch  to a divisor of degree 1 shows that the function field is rational.
+Thus the only genus zero function field over $\FF_q$ is the rational function field.
+Useful aside: the Riemann hypothesis here gives an estimate of the number of $\FF_{q^r}$ rational points.

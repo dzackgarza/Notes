@@ -631,7 +631,7 @@ width: 30%;
           <address class="author_afil">
   <h2 class="author">D. Zack Garza</h2>
     University of Georgia<br>        <a class="author_email" href="mailto:#">dzackgarza@gmail.com</a>
-        <p class="small">Last updated: 2020-11-13</p>
+        <p class="small">Last updated: 2020-11-14</p>
     
   </address>
       </div>
@@ -641,9 +641,7 @@ width: 30%;
 
 <nav class="pushy pushy-left" id="TOC">
 <ul>
-<li><a href="#monday-august-24">Monday, August 24</a></li>
-<li><a href="#monday-august-21st">Monday August 21st</a></li>
-<li><a href="#friday-august-28">Friday, August 28</a>
+<li><a href="#lecture-1">Lecture 1?</a>
 <ul>
 <li><a href="#field-theory">Field Theory</a>
 <ul>
@@ -653,64 +651,35 @@ width: 30%;
 </ul></li>
 <li><a href="#case-study-the-luroth-problem.">Case Study: The Luroth Problem.</a></li>
 <li><a href="#onto-business">Onto Business</a></li>
+<li><a href="#lecture-1-a-review">Lecture 1, A Review</a></li>
 </ul></li>
-<li><a href="#sunday-august-30">Sunday, August 30</a>
+<li><a href="#lecture-2">Lecture 2?</a></li>
+<li><a href="#lecture-3">Lecture 3</a>
 <ul>
 <li><a href="#base-extension">Base Extension</a></li>
 <li><a href="#example-of-a-non-regular-family-of-function-fields">Example of a Non-Regular Family of Function Fields</a></li>
 </ul></li>
-<li><a href="#sunday-august-30-1">Sunday, August 30</a>
+<li><a href="#lecture-4">Lecture 4</a>
 <ul>
 <li><a href="#polynomials-defining-regular-function-fields">Polynomials Defining Regular Function Fields</a></li>
 </ul></li>
-<li><a href="#lecture-14-monday-november-02">Lecture 14: Monday, November 02</a></li>
+<li><a href="#lecture-13">Lecture 13</a>
+<ul>
+<li><a href="#hasse-weil-zeta-functions">Hasse-Weil Zeta Functions</a></li>
+<li><a href="#proof-of-rationality">Proof of Rationality</a></li>
+</ul></li>
+<li><a href="#lecture-14">Lecture 14</a>
+<ul>
+<li><a href="#the-functional-equation">The Functional Equation</a></li>
+<li><a href="#the-l-polynomial">The <span class="math inline">\(L\)</span> Polynomial</a></li>
+</ul></li>
 </ul>
 </nav>
 
 
 
 
-<h1 id="monday-august-24">Monday, August 24</h1>
-<p>Review of lecture one:</p>
-<div class="theorem" title="Finitely Generated in Towers">
-<p>See video</p>
-</div>
-<ul>
-<li>Transcendence bases</li>
-<li>Lüroth problem</li>
-</ul>
-<h1 id="monday-august-21st">Monday August 21st</h1>
-<p>For <span class="math inline">\(K/k\)</span> a one variable function field, if we want a curve <span class="math inline">\(C/k\)</span>, what are the points? We’ll use <em>valuations</em>, see NT 2.1.</p>
-<p>See also completions, residue fields.</p>
-<p>If <span class="math inline">\(R \subset K\)</span> a field, <span class="math inline">\(R\)</span> is a <em>valuation ring</em> of <span class="math inline">\(K\)</span> if for all <span class="math inline">\(x\in K^{\times}\)</span>, at least one of <span class="math inline">\(x, x^{-1} \in R\)</span>.</p>
-<div class="example">
-<p>The valuation rings of <span class="math inline">\({\mathbb{Q}}\)</span> are <span class="math inline">\({\mathbb{Z}}_{(p)}\mathrel{\vcenter{:}}={\mathbb{Z}}[\left\{{{1\over \ell} ~{\text{s.t.}}~\ell\neq p}\right\}]\)</span> for all primes <span class="math inline">\(p\)</span>.</p>
-</div>
-<p>See also Krull valuation, takes values in some totally ordered commutative group.</p>
-<div class="exercise">
-<p>Show that a valuation ring is a local ring, i.e. it has a unique maximal ideal.</p>
-</div>
-<div class="example">
-<p>Where does the log come from?</p>
-<p>There is a <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation: <span class="math display">\[\begin{align*}   v: {\mathbb{Q}}&amp;\to {\mathbb{Z}}_{(p)} \\ {a\ over b} = p^n {u \over v} &amp;\mapsto n .\end{align*}\]</span></p>
-<p>Then we recover <span class="math display">\[\begin{align*}   {\mathbb{Z}}_{(p)} = \left\{{x\in {\mathbb{Q}}^{\times}~{\text{s.t.}}~v_p(x) \geq 0}\right\} \cup\left\{{0}\right\} \\ {\mathfrak{m}}_{(p)} = \left\{{x\in {\mathbb{Q}}^{\times}~{\text{s.t.}}~v_p(x) &gt; 0}\right\} \cup\left\{{0}\right\} \\ .\end{align*}\]</span></p>
-<p>There is a <span class="math inline">\(p{\hbox{-}}\)</span>adic norm <span class="math display">\[\begin{align*}   {\left\lvert {{\,\cdot\,}} \right\rvert}_p: {\mathbb{Q}}&amp;\to {\mathbb{R}}\\ 0 &amp; \mapsto 0 \\ x &amp;\mapsto p^{-n} = p^{-v_p(x)} .\end{align*}\]</span></p>
-<p>Then we get an ultrametric function, a non-archimedean function <span class="math display">\[\begin{align*}   d_p: {\mathbb{Q}}^2 \to {\mathbb{R}}\\ (x, y) &amp;\mapsto {\left\lvert {x- y} \right\rvert}_p .\end{align*}\]</span></p>
-<p>We then recover <span class="math inline">\(v_p(x) = -\log_p {\left\lvert {x} \right\rvert}_p\)</span>.</p>
-<p>See NT 1 notes.</p>
-</div>
-<p>For <span class="math inline">\(A\subset K\)</span> a subring of a field, we’ll be interested in the place <span class="math inline">\(\tilde \Sigma = \left\{{\text{Valuation rings } R_v \text{ of } K}\right\} ~{\text{s.t.}}~A \subset R_v \subsetneq K\)</span>. Thus the valuation takes non-negative values on all elements of <span class="math inline">\(K\)</span>. Can equip this with a topology (the “Zariski” topology, not the usual one). This is always quasicompact, and called the <em>Zariski-Riemann space</em>. Can determine a sheaf of rings to make this a locally ringed space.</p>
-<p>We can define an equivalence of valuations and define the set of <em>places</em> <span class="math display">\[\begin{align*}   \Sigma(K/k) \mathrel{\vcenter{:}}=\left\{{\text{Nontrivial valuations } v\in K ~{\text{s.t.}}~v(x) \geq 0\, \forall x\in k^{\times}}\right\} ,\end{align*}\]</span> which will be the points on the curve. Here the Zariski topology will be the cofinite topology (which is not Hausdorff). Scheme-theoretically, this is exactly the set of closed points on the curve.</p>
-<div class="definition" title="?">
-<p>Generic point: closure is entire space.</p>
-</div>
-<blockquote>
-<p>Note we will have unique models for curves, but this won’t be the case for surfaces: blowing up a point will yield a birational but inequivalent surface.</p>
-</blockquote>
-<p>From this we can also define <em>divisor group</em> as the free <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>module on <span class="math inline">\(\Sigma(K/k)\)</span>, which comes with a degree map <span class="math display">\[\begin{align*}   \deg: \operatorname{Div}(K) \to {\mathbb{Z}} \end{align*}\]</span> which need not be surjective.</p>
-<p>We can consider principle divisors with the map <span class="math display">\[\begin{align*}   K^{\times}&amp;\to \operatorname{Div}(K) \\ f &amp;\mapsto (f) .\end{align*}\]</span></p>
-<p>We can define the class group as divisors modulo principle divisors <span class="math inline">\(\operatorname{cl}(K) = \operatorname{Div}(K) / \operatorname{im}(K^{\times})\)</span> and the Riemann-Roch space <span class="math inline">\(\mathcal{L}(D)\)</span>. The Riemann-Roch theorem will then be a statement about <span class="math inline">\(\dim \mathcal{L}(D)\)</span>.</p>
-<h1 id="friday-august-28">Friday, August 28</h1>
+<h1 id="lecture-1">Lecture 1?</h1>
 <h2 id="field-theory">Field Theory</h2>
 <p>See Chapter 11 of Field Theory notes.</p>
 <h3 id="notion-1">Notion 1</h3>
@@ -832,9 +801,48 @@ width: 30%;
 </div>
 <p>In practice, we don’t want <span class="math inline">\(\kappa(k)\)</span> to be a proper extension of <span class="math inline">\(k\)</span>.</p>
 <p>If this isn’t the case, we replace considering <span class="math inline">\(K/k\)</span> by <span class="math inline">\(K/\kappa(k)\)</span>. If <span class="math inline">\(K/k\)</span> is finitely generated, then</p>
-<p>Where we use the fact that from above, <span class="math inline">\(\kappa(k)/k\)</span> is finitely generated and algebraic and thus finite, and by a previous theorem, if <span class="math inline">\(K/k\)</span> is transcendental then <span class="math inline">\(K/\kappa(k)\)</span> is as well, and thus finitely generated.</p>
-<p>Thus if you have a function field over <span class="math inline">\(k\)</span>, you can replace <span class="math inline">\(k\)</span> by <span class="math inline">\(\kappa(k)\)</span> and regard <span class="math inline">\(K\)</span> as a function field over <span class="math inline">\(\kappa(k)\)</span> instead.</p>
-<h1 id="sunday-august-30">Sunday, August 30</h1>
+<p>Where we use the fact that from above, <span class="math inline">\(\kappa(k)/k\)</span> is finitely generated and algebraic and thus finite, and by a previous theorem, if <span class="math inline">\(K/k\)</span> is transcendental then <span class="math inline">\(K/\kappa(k)\)</span> is as well, and thus finitely generated. Thus if you have a function field over <span class="math inline">\(k\)</span>, you can replace <span class="math inline">\(k\)</span> by <span class="math inline">\(\kappa(k)\)</span> and regard <span class="math inline">\(K\)</span> as a function field over <span class="math inline">\(\kappa(k)\)</span> instead.</p>
+<h2 id="lecture-1-a-review">Lecture 1, A Review</h2>
+<p>Review of lecture one:</p>
+<div class="theorem" title="Finitely Generated in Towers">
+<p>See video</p>
+</div>
+<ul>
+<li>Transcendence bases</li>
+<li>Lüroth problem</li>
+</ul>
+<h1 id="lecture-2">Lecture 2?</h1>
+<p>For <span class="math inline">\(K/k\)</span> a one variable function field, if we want a curve <span class="math inline">\(C/k\)</span>, what are the points? We’ll use <em>valuations</em>, see NT 2.1.</p>
+<p>See also completions, residue fields.</p>
+<p>If <span class="math inline">\(R \subset K\)</span> a field, <span class="math inline">\(R\)</span> is a <em>valuation ring</em> of <span class="math inline">\(K\)</span> if for all <span class="math inline">\(x\in K^{\times}\)</span>, at least one of <span class="math inline">\(x, x^{-1} \in R\)</span>.</p>
+<div class="example">
+<p>The valuation rings of <span class="math inline">\({\mathbb{Q}}\)</span> are <span class="math inline">\({\mathbb{Z}}_{(p)}\mathrel{\vcenter{:}}={\mathbb{Z}}[\left\{{{1\over \ell} ~{\text{s.t.}}~\ell\neq p}\right\}]\)</span> for all primes <span class="math inline">\(p\)</span>.</p>
+</div>
+<p>See also Krull valuation, takes values in some totally ordered commutative group.</p>
+<div class="exercise">
+<p>Show that a valuation ring is a local ring, i.e. it has a unique maximal ideal.</p>
+</div>
+<div class="example">
+<p>Where does the log come from?</p>
+<p>There is a <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation: <span class="math display">\[\begin{align*}   v: {\mathbb{Q}}&amp;\to {\mathbb{Z}}_{(p)} \\ {a\over b} = p^n {u \over v} &amp;\mapsto n .\end{align*}\]</span></p>
+<p>Then we recover <span class="math display">\[\begin{align*}   {\mathbb{Z}}_{(p)} = \left\{{x\in {\mathbb{Q}}^{\times}~{\text{s.t.}}~v_p(x) \geq 0}\right\} \cup\left\{{0}\right\} \\ {\mathfrak{m}}_{(p)} = \left\{{x\in {\mathbb{Q}}^{\times}~{\text{s.t.}}~v_p(x) &gt; 0}\right\} \cup\left\{{0}\right\} \\ .\end{align*}\]</span></p>
+<p>There is a <span class="math inline">\(p{\hbox{-}}\)</span>adic norm <span class="math display">\[\begin{align*}   {\left\lvert {{\,\cdot\,}} \right\rvert}_p: {\mathbb{Q}}&amp;\to {\mathbb{R}}\\ 0 &amp; \mapsto 0 \\ x &amp;\mapsto p^{-n} = p^{-v_p(x)} .\end{align*}\]</span></p>
+<p>Then we get an ultrametric function, a non-archimedean function <span class="math display">\[\begin{align*}   d_p: {\mathbb{Q}}^2 \to {\mathbb{R}}\\ (x, y) &amp;\mapsto {\left\lvert {x- y} \right\rvert}_p .\end{align*}\]</span></p>
+<p>We then recover <span class="math inline">\(v_p(x) = -\log_p {\left\lvert {x} \right\rvert}_p\)</span>.</p>
+<p>See NT 1 notes.</p>
+</div>
+<p>For <span class="math inline">\(A\subset K\)</span> a subring of a field, we’ll be interested in the place <span class="math inline">\(\tilde \Sigma = \left\{{\text{Valuation rings } R_v \text{ of } K}\right\} ~{\text{s.t.}}~A \subset R_v \subsetneq K\)</span>. Thus the valuation takes non-negative values on all elements of <span class="math inline">\(K\)</span>. Can equip this with a topology (the “Zariski” topology, not the usual one). This is always quasicompact, and called the <em>Zariski-Riemann space</em>. Can determine a sheaf of rings to make this a locally ringed space.</p>
+<p>We can define an equivalence of valuations and define the set of <em>places</em> <span class="math display">\[\begin{align*}   \Sigma(K/k) \mathrel{\vcenter{:}}=\left\{{\text{Nontrivial valuations } v\in K ~{\text{s.t.}}~v(x) \geq 0\, \forall x\in k^{\times}}\right\} ,\end{align*}\]</span> which will be the points on the curve. Here the Zariski topology will be the cofinite topology (which is not Hausdorff). Scheme-theoretically, this is exactly the set of closed points on the curve.</p>
+<div class="definition" title="?">
+<p>Generic point: closure is entire space.</p>
+</div>
+<blockquote>
+<p>Note we will have unique models for curves, but this won’t be the case for surfaces: blowing up a point will yield a birational but inequivalent surface.</p>
+</blockquote>
+<p>From this we can also define <em>divisor group</em> as the free <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>module on <span class="math inline">\(\Sigma(K/k)\)</span>, which comes with a degree map <span class="math display">\[\begin{align*}   \deg: \operatorname{Div}(K) \to {\mathbb{Z}} \end{align*}\]</span> which need not be surjective.</p>
+<p>We can consider principle divisors with the map <span class="math display">\[\begin{align*}   K^{\times}&amp;\to \operatorname{Div}(K) \\ f &amp;\mapsto (f) .\end{align*}\]</span></p>
+<p>We can define the class group as divisors modulo principle divisors <span class="math inline">\(\operatorname{cl}(K) = \operatorname{Div}(K) / \operatorname{im}(K^{\times})\)</span> and the Riemann-Roch space <span class="math inline">\(\mathcal{L}(D)\)</span>. The Riemann-Roch theorem will then be a statement about <span class="math inline">\(\dim \mathcal{L}(D)\)</span>.</p>
+<h1 id="lecture-3">Lecture 3</h1>
 <h2 id="base-extension">Base Extension</h2>
 <p>Given some object <span class="math inline">\(A/k\)</span> and <span class="math inline">\(k\hookrightarrow\ell\)</span> is a field extension, we would like some extended object <span class="math inline">\(A/\ell\)</span>.</p>
 <div class="example">
@@ -981,7 +989,7 @@ width: 30%;
 <p>Our curves will have points (equal to valuations) which will have degrees. If the constant subfield is not just <span class="math inline">\(k\)</span>, this prevents degree 1 points on the curve.</p>
 <p>By Galois theory, for every subgroup <span class="math inline">\(H \subseteq \operatorname{GL}(2, {\mathbb{Z}}/N{\mathbb{Z}}) / \left\{{\pm I}\right\}\)</span>, we’ll get a function field <span class="math inline">\({\mathbb{Q}}(H) \mathrel{\vcenter{:}}= H_N^H\)</span>. In this case, <span class="math inline">\({\mathbb{Q}}(H)/{\mathbb{Q}}\)</span> is regular <span class="math inline">\(\iff\)</span> <span class="math inline">\(\det(H) = ({\mathbb{Z}}/N{\mathbb{Z}})^{\times}\)</span>.</p>
 <p>Later we’ll understand the residues at points as the residue fields of some DVRs, then the residue field will always contain the field of constants.</p>
-<h1 id="sunday-august-30-1">Sunday, August 30</h1>
+<h1 id="lecture-4">Lecture 4</h1>
 <p>Last of preliminaries. Upcoming: one-variable function fields and their valuation rings.</p>
 <h2 id="polynomials-defining-regular-function-fields">Polynomials Defining Regular Function Fields</h2>
 <p>Where’s the curve: <span class="math inline">\(f(x, y) = 0\)</span>.</p>
@@ -1071,19 +1079,110 @@ width: 30%;
 </div>
 <p>Moral: look for examples of nice function fields by taking irreducible polynomials in two variables. This will define a one-variable function field. If the polynomial is geometrical reducible, this produces regular function fields.</p>
 <p>Next: One variable function fields and their valuations.</p>
-<h1 id="lecture-14-monday-november-02">Lecture 14: Monday, November 02</h1>
+<h1 id="lecture-13">Lecture 13</h1>
+<p>Recall that we previously looked at the regular function fields: we took a function field in one variable and considered the class of function fields for which we could take any extension of the constant field that we wanted. As long as the ground field is perfect, being regular is equivalent to the constant subfield being <span class="math inline">\(k\)</span> itself. However, we haven’t done anything with them yet!</p>
+<p>If you take an algebraic closure of the finite ground field <span class="math inline">\({\mathbb{F}}_q\)</span>, there is a unique subextension of degree <span class="math inline">\(r\)</span> for every <span class="math inline">\(r\)</span>, so we call that <span class="math inline">\({\mathbb{F}}_{q^r}\)</span>. The extension <span class="math inline">\({\mathbb{F}}_{q^r}/{\mathbb{F}}_q\)</span> is cyclic galois, with a geometric Frobenius <span class="math inline">\(x\to x^q\)</span>. Note that <span class="math inline">\({\mathbb{F}}_{q^r}\)</span> is the fixed field of <span class="math inline">\(F^r\)</span>, the <span class="math inline">\(r\)</span>th power of the Frobenius map. We set <span class="math inline">\(K_r \mathrel{\vcenter{:}}= K {\mathbb{F}}_{q^r}\)</span>, which is a regular function field over <span class="math inline">\({\mathbb{F}}_{q^r}\)</span>. Note that we could view this as a function field just over <span class="math inline">\({\mathbb{F}}_q\)</span>, but it would not be regular. Then <span class="math inline">\(K_r/K\)</span> is a degree <span class="math inline">\(r\)</span> arithmetic extension of function fields.</p>
+<p>Question: What happens to places when making this scalar extension? I.e., how to places in <span class="math inline">\(K\)</span> decompose in <span class="math inline">\(K_r\)</span>?</p>
+<div class="remark">
+<p>This is related to an Algebraic Number Theory I problem: for <span class="math inline">\(v\in \Sigma(K_{/\mathbb{F}_q})\)</span> above an affine Dedekind domain <span class="math inline">\(R\)</span> such that <span class="math inline">\(v\in \Sigma(K/R)\)</span>, let <span class="math inline">\(S\)</span> be the integral closure of <span class="math inline">\(K\)</span> in <span class="math inline">\(K_r\)</span>. Then we want to factor <span class="math inline">\(p_v S\)</span>? </p>
+</div>
+<div class="lemma" title="Key lemma about how places split.">
+<p>Suppose <span class="math inline">\(d\mathrel{\vcenter{:}}=\deg(v)\)</span>. Then <span class="math inline">\(K_r/K\)</span> is galois, so we have <span class="math inline">\(efg=r\)</span>. In fact, <span class="math inline">\(c=1\)</span>, so <span class="math inline">\(f = {r\over \gcd(d, r)}\)</span> and <span class="math inline">\(g = \gcd(d, r)\)</span> and each place <span class="math inline">\(w\in \Sigma(K_r / {\mathbb{F}}_{q^r})\)</span> has degree <span class="math inline">\({d\over \gcd(d, r)}\)</span>.</p>
+</div>
+<div class="remark">
+<p>We have the following cases:</p>
+<ul>
+<li><p>The extension is <em>inert</em> iff <span class="math inline">\(\gcd(d, r) = 1\)</span>,</p></li>
+<li><p>The extension <em>splits completely</em> iff <span class="math inline">\(r{~\Bigm|~}d\)</span>,</p></li>
+<li><p>All <span class="math inline">\(w\)</span> dividing <span class="math inline">\(v\)</span> have degree 1 iff <span class="math inline">\(d{~\Bigm|~}r\)</span>.</p></li>
+</ul>
+</div>
+<p>The last thing we proved was that the degree zero divisor class group is finite when we’re over a finite ground field. Why is this true? Whenever there is a divisor of degree <span class="math inline">\(n\)</span>, then the set of degree <span class="math inline">\(n\)</span> divisors is a coset of the degree zero divisors, all of which have the same cardinality. We proved finiteness using the Riemann-Roch theorem, using the fact that the set of <em>effective</em> degree <span class="math inline">\(n\)</span> divisors is finite for all <span class="math inline">\(n\)</span>.</p>
+<p>The next main topic will be the zeta function, which keeps track of three equivalent packets of information: <span class="math inline">\(A_n\)</span>, the number of effective divisors of degree <span class="math inline">\(n\)</span>, the number of places of degree <span class="math inline">\(d\)</span> (since an effective divisor is a linear combination of these), and <span class="math inline">\(N_r\)</span> the number of degree 1 points in the degree <span class="math inline">\(r\)</span> extension, i.e. the number of <span class="math inline">\({\mathbb{F}}_{q^r}\)</span> rational points.</p>
+<div class="lemma" title="?">
+<p>Suppose <span class="math inline">\(C\in \operatorname{Cl}(K)\)</span>, then</p>
+<ul>
+<li><p>The number of effective divisors <span class="math inline">\(D \in [C]\)</span> is given by <span class="math display">\[\begin{align*}       {q^{\ell(C)} -1 \over q-1}      ,\end{align*}\]</span> where <span class="math inline">\(\ell(C)\)</span> is the dimension of the linear system associated to the divisor class <span class="math inline">\(C\)</span>, and this is the dimension of a projective space over <span class="math inline">\({\mathbb{F}}_q\)</span>.</p></li>
+<li><p>For all <span class="math inline">\(n&gt;2g-2\)</span> with <span class="math inline">\(\delta {~\Bigm|~}n\)</span>, we have <span class="math display">\[\begin{align*}       A_n = h \qty{ q^{n+1-g} - 1\over q-1}     .\end{align*}\]</span></p></li>
+</ul>
+</div>
+<div class="proof" title="?">
+<p><strong>Proof of (a)</strong>: The set of effective divisors linearly equivalent to <span class="math inline">\(D\)</span> is naturally viewed as the projectivization <span class="math inline">\({\mathbb{P}}\mathcal{L}(D)\)</span> of the one-dimensional subspaces of the linear system of that divisor class. It is then a fact that the number of elements in a <span class="math inline">\(d{\hbox{-}}\)</span>dimensional vector space over <span class="math inline">\({\mathbb{F}}_q\)</span> has dimension precisely <span class="math inline">\(\frac{q^d-1}{q-1}\)</span> elements. The projectivization comes in because two different functions have the same divisor if one of them is a constant multiple of the other. Note that the number of elements is computed as the number of nonzero elements divided by the number of nonzero scalars.<br />
+</p>
+<p><strong>Proof of (b)</strong>: This will come out of the Riemann-Roch theorem. In order to compute the number of divisors in a divisor class, you need to know the dimension of the linear system, which is not easy in general. However, if the divisor class has sufficiently large degree, the Riemann-Roch theorem tells you exactly what it is. As long as <span class="math inline">\(n &gt; 2g-2\)</span>, there is no correction term, and the dimension of the linear system is equal to its degree minus the genus plus one. So by Riemann-Roch, since <span class="math inline">\(\deg(D) &gt; 2g-2\)</span>, <span class="math inline">\(D\)</span> is non-special and <span class="math inline">\(\ell([D]) = n-g+1\)</span>, which yields the desired formula for <span class="math inline">\(A_n\)</span>.</p>
+</div>
+<div class="remark">
+<p>This is the sharpest result possible: the canonical divisor has degree <span class="math inline">\(2g-2\)</span> and is special, so this fails for the canonical class.</p>
+</div>
+<p>Upshot: there are three piece of information:</p>
+<ul>
+<li><p><span class="math inline">\(N_r\)</span>, the number of <span class="math inline">\({\mathbb{F}}_{q^r}\)</span> rational points,</p></li>
+<li><p><span class="math inline">\({\left\lvert {\Sigma_d(K_{/\mathbb{F}_q})} \right\rvert}\)</span> the number of closed points / places of degree <span class="math inline">\(d\)</span>,</p></li>
+<li><p><span class="math inline">\(A_n\)</span> the number of effective divisors of degree <span class="math inline">\(n\)</span>,</p></li>
+</ul>
+<p>and there are simple formulas relating these. Moreover, it is enough to know only finitely many of these quantities, where the number depends on <span class="math inline">\(g\)</span>.</p>
+<h2 id="hasse-weil-zeta-functions">Hasse-Weil Zeta Functions</h2>
+<p>There is a general theory that will unify</p>
+<ul>
+<li><p>The Riemann zeta function, thought of as the zeta function of <span class="math inline">\({\mathbb{Z}}\)</span>,</p></li>
+<li><p>The Dedekind zeta function, attached to the ring of integers over a number field,</p></li>
+<li><p>The Hasse-Weil zeta function of a one variable function field over a finite field,</p></li>
+</ul>
+<p>all of which will be special cases of a <em>Serre zeta function</em> which can be attached to a finite type scheme over <span class="math inline">\({\mathbb{Z}}\)</span>.</p>
+<p>Note that we aren’t specifically discussing schemes in this course, but you don’t need to know much about what a scheme is to define the Hasse-Weil zeta function. Just note that an affine finite-type <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>scheme corresponds to a finitely generated <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>algebra, and a general finite-type <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>scheme will be covered by finitely many affine ones, the zeta function will be determined by these finitely many <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>algebras and some kind of inclusion-exclusion principle (since the scheme is a not necessarily disjoint union of affine schemes).</p>
+<p>Recall that <span class="math inline">\(A_n = A_n(K)\)</span> is the number of effective divisors of degree <span class="math inline">\(n\)</span>, which we’ve proved is finite. We have a formula when <span class="math inline">\(n&gt; 2g-2\)</span>, namely <span class="math display">\[\begin{align*}   Z(t) = \sum_{n=0}^\infty A_n t^n = \sum_{D\in \operatorname{Div}^+(K)} t^{\deg(D)} \in {\mathbb{Z}}[[t]] ,\end{align*}\]</span> where <span class="math inline">\(\operatorname{Div}^+\)</span> are the effective divisors and we’ve collected terms based on their degree. This is analogous to the Dedekind zeta function of a number field <span class="math inline">\(K\)</span>, a formal Dirichlet series which is given by <span class="math display">\[\begin{align*}   \zeta_K(s) = \sum_{I \in \mathcal{I}\qty{{\mathbb{Z}}_K^\bullet}} {\left\lvert { {\mathbb{Z}}_K / I} \right\rvert}^{-s} .\end{align*}\]</span> where the sum is now over all of the nonzero ideals of the ring of integers, where we measure the size using the <em>norm</em>, i.e. the size of the residue field. There’s an analogy between integral ideals (vs fractional ideals) and effective divisors. We could get an Euler product decomposition for the Dedekind zeta function by only considering prime ideals, since in a Dedekind domain all ideals factor uniquely into prime ideals. In fact, any nonzero ideal is a linear combination of prime ideals. Similarly, the effective divisors are linear combinations of effective divisors, so an Euler product expansion is possible here too. If we take a prime ideal, since we’re in a discrete valuation ring, we can consider the local ring at that point. We can take the residue field, which in general won’t be finite, but will be a finite extension. So a reasonable measure of the size of a prime divisor would be the dimension of its residue field as a vector space over <span class="math inline">\(K\)</span>.</p>
+<p>Note that if we wanted to make these look even more similar to each other, we could define <span class="math inline">\(a_n\)</span> (depending on <span class="math inline">\({\mathbb{Z}}_K\)</span>) as <span class="math display">\[\begin{align*} a_n = {\left\lvert {\left\{{I {~\trianglelefteq~}{\mathbb{Z}}_K ~{\text{s.t.}}~{\left\lvert {{\mathbb{Z}}_K/I} \right\rvert} = n}\right\}} \right\rvert} ,\end{align*}\]</span> which allows us to write <span class="math display">\[\begin{align*}   \zeta_K(s) = \sum_{n=1}^\infty {a_n \over n^s} .\end{align*}\]</span></p>
+<p>Where we’re going: How does <span class="math inline">\(Z(t)\)</span> depend on <span class="math inline">\(K\)</span>? It turns out that it only depends on <span class="math inline">\(A_0, A_1, \cdots, A_{2g-2}\)</span>, and thus <span class="math inline">\(Z(t)\)</span> depends on only finitely much information. We will</p>
+<ol type="1">
+<li>Show that <span class="math inline">\(Z(t) \in {\mathbb{Z}}(t)\)</span>, i.e. it is a rational function and can be written <span class="math inline">\(Z(t) = P(t)/ Q(t)\)</span>.</li>
+</ol>
+<blockquote>
+<p>Note: the denominator will always be the same, <span class="math inline">\((1-t)(1-qt)\)</span>, and we’ll always have <span class="math inline">\(\deg P = 2g\)</span>. This is essentially coming from <span class="math inline">\(\ell{\hbox{-}}\)</span>adic cohomology. We’ll also determine the leading coefficient.</p>
+</blockquote>
+<ol start="2" type="1">
+<li><p>Understand <span class="math inline">\(\deg P\)</span> and <span class="math inline">\(\deg Q\)</span> in terms of the genus <span class="math inline">\(g\)</span>.</p></li>
+<li><p>Ask about the roots of <span class="math inline">\(P(t)\)</span>, and establish a Riemann hypothesis for Dedekind zeta functions (and in particular, the Riemann zeta function).</p></li>
+</ol>
+<blockquote>
+<p>In particular, what are their magnitudes? This is what Weil did, this is the big theorem in this area. Note that we’ll need to consider reciprocal roots, which will end up having magnitude <span class="math inline">\(\sqrt{q}\)</span>. We’ll see why this happens, and it turns out to be analogous to fact that the nontrivial zeros of the Riemann zeta function have real part <span class="math inline">\(1/2\)</span>.</p>
+</blockquote>
+<p>These are approximately in order of difficulty. The first two will follow from Riemann-Roch, but the third will be much deeper. This is essentially a positive characteristic analogue of the usual Riemann hypothesis. Note that we’re in a global field, the positive characteristic analog of a number field, and for number fields the Riemann hypothesis is the single outstanding problem. In the function field case, it is a theorem!</p>
+<div class="proposition" title="Formula for the zeta function exhibiting rationality">
+<p>Let <span class="math inline">\(K_{/\mathbb{F}_q}\)</span> have genus <span class="math inline">\(g\)</span> and <span class="math inline">\(\delta = I(K)\)</span> the index, the least positive degree of a divisor.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<ol type="a">
+<li><p>If <span class="math inline">\(g=0\)</span>, then <span class="math display">\[\begin{align*}       Z(t) = {1\over q-1} \qty{{q \over 1-q^\delta t^\delta} - {1 \over 1-t^\delta}}     .\end{align*}\]</span></p></li>
+<li><p>If <span class="math inline">\(g\geq 1\)</span>, then <span class="math inline">\(Z(t) + F(t) + G(t)\)</span> where <span class="math display">\[\begin{align*}       F(t)      &amp;= {1\over q-1} \sum_{0\leq \deg C \leq 2g-2} q^{\ell(C)} t^{\deg(C)} \\     G(t)     &amp;= {h \over g-1} \qty{     { q^{1-g} (qt)^{2g-2+\delta} \over 1 - (qt)^\delta } - {1 \over 1 - t^\delta}     }     ,\end{align*}\]</span> so <span class="math inline">\(F\)</span> involves summing over all divisor classes of degree at most <span class="math inline">\(2g-2\)</span>, and <span class="math inline">\(G\)</span> is a term coming from Riemann-Roch involving the class number <span class="math inline">\(h\)</span>.</p></li>
+</ol>
+</div>
+<p>Note that as a consequence, it will definitely be rational in <span class="math inline">\(q\)</span>, and will have a simple pole at <span class="math inline">\(t=1\)</span>.</p>
+<p>There’s no major idea for the proof: when the degree of the divisor class is sufficiently large, we just have an exact formula. If it is smaller, than the formula involves the dimension of the linear system.</p>
+<h2 id="proof-of-rationality">Proof of Rationality</h2>
+<div class="proof" title="of rationality of $Z(t)$">
+<p>Recall that <span class="math inline">\(\ell(C)\)</span> is the dimension of the associated Riemann-Roch space.</p>
+<p>When <span class="math inline">\(g=0\)</span>, by Riemann-Roch we have <span class="math inline">\(\operatorname{Cl}^0(K) = 0\)</span> over any ground field <span class="math inline">\({\Bbbk}\)</span> (see exercises), and so <span class="math inline">\(h=1\)</span>. Since every <span class="math inline">\(n\geq 0\)</span> satisfies <span class="math inline">\(n\geq 2g-2\)</span> when <span class="math inline">\(g=0\)</span>, if <span class="math inline">\(\delta{~\Bigm|~}n\)</span> we have <span class="math display">\[\begin{align*}   A_n = h \qty{ q^{n+1 - g} - 1 \over q-1} = {q^{n+1} - 1 \over q-1} ,\end{align*}\]</span> and since <span class="math inline">\(A_n=0\)</span> unless <span class="math inline">\(n\)</span> is divisible by <span class="math inline">\(\delta\)</span>, we have <span class="math display">\[\begin{align*}   Z(t) = \sum_{n=0}^\infty A_n t^n = \sum_{n=0}^{\infty} A_{\delta n} t^{\delta n} = \sum_{n=0}^\infty {q^{\delta n + 1} -1 \over q-1} t^{\delta n} .\end{align*}\]</span> This can now be split into two terms, each of which will have a geometric series to sum.</p>
+<p>Now let <span class="math inline">\(g\geq 1\)</span>, and write <span class="math display">\[\begin{align*}   \sum_{{n=0}}^\infty A_n t^n = \sum_{\deg(C) \geq 0} {\left\lvert {\left\{{ A\in C ~{\text{s.t.}}~A\geq 0}\right\}} \right\rvert}t^{\deg(C)} ,\end{align*}\]</span> where we instead count the number of divisors in each divisor class (a consequence of the previous lemma). Continuing this computation, we separate out the part where <span class="math inline">\(\deg(C) \leq 2g-2\)</span> and pull out the <span class="math inline">\(-1\)</span> in the numerator: <span class="math display">\[\begin{align*}   \cdots  &amp;= \sum_{\deg(C) \geq 0} {q^{\ell(C)} - 1 \over q - 1}t^{\deg(C)} \\ &amp;= \qty{1\over q-1} \qty{ \sum_{0\leq \deg(C) \leq 2g-2} q^{\ell(C)} t^{\deg(C)}  + \sum_{\deg(C) &gt; 2g-2} q^{\deg(C) - g + 1} t^{\deg(C)} - \sum_{\deg(C) \geq 0} t^{\deg(C)} } \\ &amp;\mathrel{\vcenter{:}}= F(t) + G(t) ,\end{align*}\]</span></p>
+<p>so we can write</p>
+<p><span class="math display">\[\begin{align*}   F(t) &amp;= {1\over q-1} \sum_{0\leq \deg(C) \leq 2g-2} q^{\ell(C)} t^{\deg(C)} \\ (q-1)G(t) &amp;= \sum_{n = {2g-2 \over \delta} + 1}^\infty  h q^{n\delta + 1 - g} t^{n\delta}  - \sum_{{n=0}}^\infty ht^{n\delta} .\end{align*}\]</span></p>
+<p>Note that <span class="math inline">\(\delta{~\Bigm|~}2g-2\)</span> since the canonical divisor has degree <span class="math inline">\(2g-2\)</span> and <span class="math inline">\(\delta\)</span> is a gcd. Note that for <span class="math inline">\(g=1\)</span>, the index divides zero, which tells you nothing about it! This now reduces to some geometric series that can be summed, which shows these are rational functions in <span class="math inline">\(t\)</span>.</p>
+</div>
+<div class="exercise" title="?">
+<p>Let <span class="math inline">\(K = {\mathbb{F}}_q(t)\)</span>, then <span class="math inline">\(g=0, \delta = 1\)</span>, and <span class="math display">\[\begin{align*}   Z(t) = {1\over (1-qt)(1-t)} .\end{align*}\]</span> We will see in general that the numerator is of the form <span class="math inline">\(L(t)\)</span> where <span class="math inline">\(L\in {\mathbb{Z}}[t]\)</span> has degree <span class="math inline">\(2g\)</span>.</p>
+</div>
+<p>Note that this all generalized to higher dimensional projective varieties <span class="math inline">\(X_{/{\mathbb{F}}_q}\)</span>, for which these properties were proved by the work of Deligne. In general, <span class="math inline">\(Z(t)\)</span> will be of the form <span class="math display">\[\begin{align*}   Z_X(t) = {L_1(t) \cdots L_{2d-1}(t) \over L_0(t) \cdots L_{2d}(t)} ,\end{align*}\]</span> where <span class="math inline">\(d = \dim(X)\)</span> and <span class="math inline">\(\deg L_i\)</span> will be the dimension of the <span class="math inline">\(i\)</span>th <span class="math inline">\(\ell{\hbox{-}}\)</span>adic cohomology. Moreover, if <span class="math inline">\(X_{/{\mathbb{F}}_q}\)</span> is a reduction mod <span class="math inline">\(q\)</span> of a variety in characteristic zero, these will be the Betti numbers of <span class="math inline">\(X_{/{\mathbb{C}}}\)</span>. If we take a compact Riemann surface, which has a honest topological genus of <span class="math inline">\(g\)</span>, the Betti numbers are <span class="math inline">\(1, 2g, 1\)</span>, and this recovers the formula above for <span class="math inline">\(L(t)\)</span> and its degree.</p>
+<p>The next result will be the following theorem:</p>
+<div class="theorem" title="Schmidt, 1910ish">
+<p>For all <span class="math inline">\(K_{/\mathbb{F}_q}\)</span>, <span class="math display">\[\begin{align*}   \delta = I(K) = 1 .\end{align*}\]</span></p>
+</div>
+<p>This will greatly simplify the previous formulas. A useful application is if you have a genus zero curve of index 1, applying Riemann-Roch to a divisor of degree 1 shows that the function field is rational. Thus the only genus zero function field over <span class="math inline">\({\mathbb{F}}_q\)</span> is the rational function field. Useful aside: the Riemann hypothesis here gives an estimate of the number of <span class="math inline">\({\mathbb{F}}_{q^r}\)</span> rational points.</p>
+<h1 id="lecture-14">Lecture 14</h1>
 <p>Recall the that <em>Hasse-Weil zeta function</em> of a one-variable function field <span class="math inline">\(K/{\mathbb{F}}_q\)</span> over a finite ground field is defined in the following way: let <span class="math inline">\(A_n = A_n(K)\)</span> be the number of effective divisors of degree <span class="math inline">\(n\)</span>. We have proved that <span class="math inline">\(A_n\)</span> is finite, and for <span class="math inline">\(n&gt;2g-2\)</span> we have a formula <span class="math display">\[\begin{align*}   Z(t) = \sum_{n=0}^\infty A_n t^n = \sum_{D\in \operatorname{Div}^+(K)} t^{\deg(D)} \in {\mathbb{Z}}[[t]] ,\end{align*}\]</span> which is a formal power series with integer coefficients.</p>
 <div class="remark">
-<p>Recall that we have proved that it is a rational function of <span class="math inline">\(t\)</span>, and in particular when <span class="math inline">\(g=0, \delta = 1\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> we get <span class="math display">\[\begin{align*}   Z(t) = {1 \over (1-qt)(1-t)} .\end{align*}\]</span></p>
+<p>Recall that we have proved that it is a rational function of <span class="math inline">\(t\)</span>, and in particular when <span class="math inline">\(g=0, \delta = 1\)</span><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> we get <span class="math display">\[\begin{align*}   Z(t) = {1 \over (1-qt)(1-t)} .\end{align*}\]</span></p>
 <p>We got another expression which isn’t fantastic: it involves this <span class="math inline">\(\delta\)</span>, which we’ll work toward proving is equal to 1. When <span class="math inline">\(g&gt;1\)</span>, we broke the zeta function into two pieces <span class="math inline">\(Z(t) = F(t) + G(t)\)</span>. For divisors of sufficiently high degree, Riemann-Roch tells you what the dimension of the Riemann-Roch space is, and <span class="math inline">\(G(t)\)</span> explains the part coming from divisors of large degree. We obtained a formula previously for <span class="math inline">\(F(t)\)</span> and <span class="math inline">\(G(t)\)</span>, and once we show <span class="math inline">\(\delta=1\)</span> the formula for <span class="math inline">\(G\)</span> will simplify. For <span class="math inline">\(F(t)\)</span>, we specifically had <span class="math display">\[\begin{align*}   F(t) = {1\over q-1} \sum_{0\leq \deg(c) \leq 2g-2} q^{\ell(c) t^{\deg(c)}} ,\end{align*}\]</span> where the sum is over divisor classes and <span class="math inline">\(\ell\)</span> is the dimension of linear system corresponding to a divisor. But this isn’t a great formula: what are these classes, dhow many are in each degree, and what is the dimension of the Riemann-Roch space?</p>
 </div>
-<!--:::{.remark}-->
-<!--This is analogous to the Dedekind zeta function of a number field $K$, in which case-->
-<!--\[  -->
-<!--\zeta_K(s) = \sum_{T\in \ell(\ZZ_k)}^\bullet \abs{\ZZ_k/I}^{-s}-->
-<!--,\]-->
-<!--which will be covered in a separate lecture on *Serre zeta functions*.-->
-<!--:::-->
+<div class="remark">
+<p>This is analogous to the Dedekind zeta function of a number field <span class="math inline">\(K\)</span>, in which case <span class="math display">\[\begin{align*}   \zeta_K(s) = \sum_{T\in \ell({\mathbb{Z}}_k)}^\bullet {\left\lvert {{\mathbb{Z}}_k/I} \right\rvert}^{-s} ,\end{align*}\]</span> which will be covered in a separate lecture on <em>Serre zeta functions</em>.</p>
+</div>
 <div class="theorem" title="F.K. Schmidt">
 <p>For all <span class="math inline">\(K/{\mathbb{F}}_q\)</span>, we have <span class="math inline">\(\delta = I(K) = 1\)</span> where <span class="math inline">\(I\)</span> is the index.</p>
 </div>
@@ -1091,35 +1190,95 @@ width: 30%;
 <div class="remark">
 <p>Pete studied this in 2004 and found that every <span class="math inline">\(I\in {\mathbb{Z}}^+\)</span> arises as the index of a genus one function field <span class="math inline">\(K/{\mathbb{Q}}\)</span>.</p>
 </div>
-<div class="lemma" title="?">
-<p>The index of a function field over an arbitrary</p>
-</div>
 <p>Notation: for <span class="math inline">\(n\in{\mathbb{Z}}^+\)</span>, let <span class="math inline">\(\mu_n\)</span> denote the <span class="math inline">\(n\)</span>th roots of unity in <span class="math inline">\({\mathbb{C}}\)</span>.</p>
 <div class="lemma" title="?">
-<p>For <span class="math inline">\(m, r\in {\mathbb{Z}}^+\)</span>, set <span class="math inline">\(d = \gcd(, r)\)</span>. Then <span class="math display">\[\begin{align*}   \qty{1-t^{mr/d}}^d = \prod_{\xi\in \mu_r}  1 - (\xi t)^m .\end{align*}\]</span></p>
+<p>For <span class="math inline">\(m, r\in {\mathbb{Z}}^+\)</span>, set <span class="math inline">\(d \mathrel{\vcenter{:}}=\gcd(m, r)\)</span>. Then <span class="math display">\[\begin{align*}   \qty{1-t^{mr/d}}^d = \prod_{\xi\in \mu_r}  1 - (\xi t)^m .\end{align*}\]</span></p>
 </div>
 <div class="proof" title="?">
-<p>In <span class="math inline">\({\mathbb{C}}[x]\)</span>, we have <span class="math display">\[\begin{align*}   (X^{r/1} - 1)^d = \prod_{\xi\in \mu_r}(X - \xi^m) ,\end{align*}\]</span> where both sides are monic polynomials whose roots include the <span class="math inline">\((r/d)\)</span>th roots of unity, each with multiplicity <span class="math inline">\(d\)</span>. On the LHS, the distinct roots are the <span class="math inline">\(r/d\)</span>th roots of unity, then raising to the <span class="math inline">\(d\)</span>th power gives them multiplicity <span class="math inline">\(d\)</span>. On the RHS, this is an exercise in cyclic groups: consider the <span class="math inline">\(n\)</span>th power map on <span class="math inline">\({\mathbb{Z}}/r{\mathbb{Z}}\)</span> and compute its image and kernel. As <span class="math inline">\(\xi\)</span> ranges over <span class="math inline">\(r\)</span>th roots of unity, <span class="math inline">\(\xi^m\)</span> ranges over all <span class="math inline">\(r/d\)</span>th roots of unity, each occuring with multiplicity <span class="math inline">\(d\)</span>.</p>
-<p>Substituting <span class="math inline">\(X= t^{-m}\)</span> yields the original result.</p>
+<p>In <span class="math inline">\({\mathbb{C}}[x]\)</span>, we have <span class="math display">\[\begin{align*}   (X^{r/1} - 1)^d = \prod_{\xi\in \mu_r}(X - \xi^m) ,\end{align*}\]</span> where both sides are monic polynomials whose roots include the <span class="math inline">\((r/d)\)</span>th roots of unity, each with multiplicity <span class="math inline">\(d\)</span>. On the LHS, the distinct roots are the <span class="math inline">\(r/d\)</span>th roots of unity, then raising to the <span class="math inline">\(d\)</span>th power gives them multiplicity <span class="math inline">\(d\)</span>. On the RHS, this is an exercise in cyclic groups: consider the <span class="math inline">\(n\)</span>th power map on <span class="math inline">\({\mathbb{Z}}/r{\mathbb{Z}}\)</span> and compute its image and kernel. As <span class="math inline">\(\xi\)</span> ranges over <span class="math inline">\(r\)</span>th roots of unity, <span class="math inline">\(\xi^m\)</span> ranges over all <span class="math inline">\(r/d\)</span>th roots of unity, each occurring with multiplicity <span class="math inline">\(d\)</span>.</p>
+<p>Substituting <span class="math inline">\(X= t^{-m}\)</span> and multiplying both sides by <span class="math inline">\(t^r\)</span> yields the original result.</p>
 <blockquote>
-<p>Special case: set <span class="math inline">\(m=r\)</span>, then the RHS is <span class="math inline">\(r\)</span> copies of 1.</p>
+<p>Special case: set <span class="math inline">\(m=r\)</span>, so <span class="math inline">\(d=r\)</span>, then the RHS is <span class="math inline">\(r\)</span> copies of 1.</p>
 </blockquote>
 </div>
-<p>Next up, we want to compare the zeta function for a function field over <span class="math inline">\({\mathbb{F}}_q\)</span> to the zeta function obtained when extending scalars to <span class="math inline">\({\mathbb{Q}}^r\)</span>.</p>
-<div class="proposition" title="?">
-<p>Let <span class="math inline">\(K/{\mathbb{F}}_q\)</span> be a function field, <span class="math inline">\(r\in {\mathbb{Z}}^+\)</span>, and take the compositum of <span class="math inline">\(K\)</span> and <span class="math inline">\({\mathbb{F}}_q^r\)</span> viewed as a function field over <span class="math inline">\({\mathbb{F}}_q^r\)</span>. Let <span class="math inline">\(Z(t)\)</span> be the zeta function of <span class="math inline">\(K/{\mathbb{F}}_q\)</span> and <span class="math inline">\(Z_r(t)\)</span> the zeta function of <span class="math inline">\(K_r/{\mathbb{F}}_q^r\)</span>. Then <span class="math display">\[\begin{align*}   Z_r(t^r) = \prod_{q\in \mu_r} Z(qt) .\end{align*}\]</span></p>
+<p>Next up, we want to compare the zeta function <span class="math inline">\(Z(t)\)</span> for a function field over <span class="math inline">\({\mathbb{F}}_q\)</span> to the zeta function obtained when extending scalars to <span class="math inline">\({\mathbb{Q}}^r\)</span>.</p>
+<div class="proposition" title="Factorization identity for the zeta function">
+<p>Let <span class="math inline">\(K/{\mathbb{F}}_q\)</span> be a function field, <span class="math inline">\(r\in {\mathbb{Z}}^+\)</span>, and take the compositum <span class="math inline">\(K_r\)</span> of <span class="math inline">\(K\)</span> and <span class="math inline">\({\mathbb{F}}_q^r\)</span> viewed as a function field over <span class="math inline">\({\mathbb{F}}_q^r\)</span>. Let <span class="math inline">\(Z(t)\)</span> be the zeta function of <span class="math inline">\(K/{\mathbb{F}}_q\)</span> and <span class="math inline">\(Z_r(t)\)</span> the zeta function of <span class="math inline">\(K_r/{\mathbb{F}}_q^r\)</span>. Then <span class="math display">\[\begin{align*}   Z_r(t^r) = \prod_{\xi \in \mu_r} Z(\xi t) .\end{align*}\]</span></p>
 </div>
 <div class="proof" title="?">
 <p>We have an Euler product formula <span class="math display">\[\begin{align*}   Z(t) = \prod_{p\in \Sigma(K/{\mathbb{F}}_q)} (1 - t^{\deg(p)})^{-1}  .\end{align*}\]</span> where the sum is over places of the function field.</p>
+<blockquote>
+<p>Proving this Euler product formula might show up in a separate lecture, but it is not any more difficult than proving it for the Riemann zeta function.</p>
+</blockquote>
 <div class="exercise" title="?">
-<p>Why is this true? Write as a geometric series with ratio <span class="math inline">\(t^{\deg(p)}\)</span>. Here just expand each summand to get <span class="math display">\[\begin{align*}   Z(t) = \prod_p \sum_{j=1}^\infty t^{j\deg(p)} .\end{align*}\]</span> Multiplying this out and collecting terms is in effect multiplying out the prime divisors to get effective divisors.</p>
+<p>Why is this product expansion true? Write as a geometric series with ratio <span class="math inline">\(t^{\deg(p)}\)</span>. Here just expand each summand to get <span class="math display">\[\begin{align*}   Z(t) = \prod_p \sum_{j=1}^\infty t^{j\deg(p)} .\end{align*}\]</span> Multiplying this out and collecting terms is in effect multiplying out the prime divisors to get effective divisors.</p>
 </div>
-<p>We use the result that was stated (but not proved): If <span class="math inline">\(p\in \Sigma_m(K/{\mathbb{F}}_q)\)</span> is a degree <span class="math inline">\(n\)</span> place and <span class="math inline">\(r\in {\mathbb{Z}}^+\)</span>, then there exist precisely <span class="math inline">\(d\mathrel{\vcenter{:}}=\gcd(m, r)\)</span>places <span class="math inline">\(p^r\)</span> of <span class="math inline">\(K_r\)</span> lying over <span class="math inline">\(p\)</span>. Moreover, each place <span class="math inline">\(p^r\)</span> has degree <span class="math inline">\(m/d\)</span>.</p>
+<p>We now use the result about splitting that was stated (but not proved):</p>
+<div class="claim">
+<p>If <span class="math inline">\(p\in \Sigma_m(K/{\mathbb{F}}_q)\)</span> is a degree <span class="math inline">\(n\)</span> place and <span class="math inline">\(r\in {\mathbb{Z}}^+\)</span>, then there exist precisely <span class="math inline">\(d\mathrel{\vcenter{:}}=\gcd(m, r)\)</span>places <span class="math inline">\(p^r\)</span> of <span class="math inline">\(K_r\)</span> lying over <span class="math inline">\(p\)</span>. Moreover, each place <span class="math inline">\(p^r\)</span> has degree <span class="math inline">\(m/d\)</span>.</p>
 </div>
+<p>In order to compare <span class="math inline">\(Z_r(t)\)</span> to <span class="math inline">\(Z(t)\)</span>, we collect the <span class="math inline">\(p&#39;\)</span> into ones that have the same fiber. We then can range over all <span class="math inline">\(p\)</span> first, then over all <span class="math inline">\(p&#39;\)</span> in the fiber above <span class="math inline">\(p\)</span>, yielding <span class="math display">\[\begin{align*}   Z_r(t^r) = \prod_{p\in \Sigma(K_{/{\mathbb{F}}_q})} \prod_{p&#39;/p} {1 \over 1 - t^{r\deg(p&#39;)}} .\end{align*}\]</span></p>
+<p>Using the Euler product identity, we have for <span class="math inline">\(p\in \Sigma_m(K_{/{\mathbb{F}}_q})\)</span> and <span class="math inline">\(d\mathrel{\vcenter{:}}=\gcd(m, r)\)</span> we can express the innermost product as</p>
+<p><span class="math display">\[\begin{align*}   \prod_{p&#39;/p} {1 \over 1 - t^{r\deg(p&#39;)}} = (1 - t^{rm/d})^{-d} = \prod_{\xi\in \mu_r} (1- (\xi t)^m)^{-1} ,\end{align*}\]</span> where we’ve used the fact that we know there are exactly <span class="math inline">\(d\)</span> places and each contributes the same degree in the first expression. By using <span class="math inline">\(-d\)</span> in the previous lemma, we get the last term. Combining all of this yields <span class="math display">\[\begin{align*}   Z_r(t^r)  = \prod_{\xi \in \mu_r} \prod_{p\in \Sigma(K_{/{\mathbb{F}}_q})} (1- (\xi t)^{\deg p})^{-1}  = \prod_{\xi \in \mu_r} Z(\xi t) .\end{align*}\]</span></p>
+</div>
+<div class="remark">
+<p>Similar to taking an abelian extension of number fields and noting that the Dedekind zeta function factors into a finite product: the original zeta function, and in general, Hecke <span class="math inline">\(L\)</span> functions. If you do this for an abelian number field over <span class="math inline">\({\mathbb{Q}}\)</span>, then the Dedekind zeta function of the upstairs number field will be a finite product where one of the terms in the Riemann zeta function and the others are Dirichlet <span class="math inline">\(L\)</span> functions associated to certain Dirichlet characters. So this is some (perhaps simpler) version of that.</p>
+</div>
+<p>We can finally prove Schmidt’s theorem that <span class="math inline">\(\delta = 1\)</span>.</p>
+<div class="proof" title="$\delta = 1$">
+<p>Take a <span class="math inline">\(\delta\)</span>th root of unity <span class="math inline">\(\xi \in \mu_\delta\)</span>. Then for all places <span class="math inline">\(p \in \Sigma(K_{/{\mathbb{F}}_q})\)</span>, <span class="math inline">\(\delta\)</span> divides <span class="math inline">\(\deg p\)</span> by definition since it is a gcd, and so we have <span class="math display">\[\begin{align*}   Z(\xi t)  = \prod_{p\in \Sigma(K_{/{\mathbb{F}}_q})} (q - (\xi t)^{\deg p} )^{-1}  = \prod_{p\in \Sigma_{K_{{\mathbb{F}}_q}}} {1 \over 1 - t^{\deg p}} = Z(t) ,\end{align*}\]</span> using the fact that <span class="math inline">\(\xi^{\deg p} = 1\)</span>.</p>
+<p>We’re now in a situation where we can apply the previous proposition, which gives the following identity for the zeta function over the degree <span class="math inline">\(\delta\)</span> extension: <span class="math display">\[\begin{align*}   Z_{\delta}(t^\delta) = \prod_{\xi \in \mu_\delta} Z(\xi t) = Z(t)^\delta .\end{align*}\]</span></p>
+<p>Our previous formulas show that any zeta function for a 1-variable function field over a finite field has a simple pole at <span class="math inline">\(t=1\)</span>, and since <span class="math inline">\({\operatorname{Ord}}_{t-1}(t^\delta) = 0\)</span>, we get <span class="math display">\[\begin{align*}   -1 = {\operatorname{Ord}}_{t-1} Z_\delta(t^\delta) = {\operatorname{Ord}}_{t-1} Z(t)^\delta) = -\delta ,\end{align*}\]</span> where for the first equality we’re using the fact that the <span class="math inline">\((t-1){\hbox{-}}\)</span>adic valuation of <span class="math inline">\(Z_\delta(t^\delta)\)</span> is one, and for the RHS, the ordinary zeta function has a simple pole at <span class="math inline">\(t=1\)</span> and since we have a valuation, raising something to the <span class="math inline">\(\delta\)</span>th power is just <span class="math inline">\(\delta\)</span> times the original valuation.</p>
+</div>
+<p>There is some modest representation theory (character theory) that shows up when looking at zeta functions of abelian extensions.</p>
+<div class="remark">
+<p>We can also conclude that every genus zero function field <span class="math inline">\(K_{/\mathbb{F}_q}\)</span> is isomorphic to <span class="math inline">\({\mathbb{F}}_q(t)\)</span> and thus rational, since such a function field rational iff it has index one. Why? By Riemann-Roch, index one implies existence of a divisor of degree one, and taking a genus zero curve says that every divisor of nonnegative degree is linearly equivalent to an effective divisor. Thus if you have a divisor of degree one, you have an effective divisor of degree one, which makes the function field a degree one extension of a rational function field.</p>
+</div>
+<div class="exercise" title="?">
+<p>Let <span class="math inline">\(K = {\mathbb{F}}_q(t)\)</span>, then show that <span class="math inline">\(g=0, \delta = 1\)</span>, and <span class="math display">\[\begin{align*}   Z(t) = {1 \over (1-qt)(1-t)} .\end{align*}\]</span></p>
+<blockquote>
+<p>Hint: go back to complicated formulas and substitute <span class="math inline">\(\delta=1\)</span> to simplify things.</p>
+</blockquote>
+</div>
+<p>Thus for rationality of the zeta function, we can get rid of the <span class="math inline">\(\delta\)</span> cluttering up formulas. Going back to the plan, we wanted to show</p>
+<p>1.Rationality: <span class="math inline">\(Z(t) \in {\mathbb{Q}}(t)\)</span> and thus <span class="math inline">\(Z(t) = P(t) / Q(t)\)</span>,</p>
+<ol start="2" type="1">
+<li><p>Understand the degrees of <span class="math inline">\(P\)</span> and <span class="math inline">\(Q\)</span> in terms of the genus, and</p></li>
+<li><p>Ask about the roots of <span class="math inline">\(P(t)\)</span> to understand the analog of the Riemann Hypothesis for Dedekind zeta functions</p></li>
+</ol>
+<p>We’ll want to establish a functional equation, as is the usual yoga for zeta functions, since it helps establish a meromorphic continuation to <span class="math inline">\({\mathbb{C}}\)</span>.</p>
+<p>The algebraic significance of the functional equation is that it aids in understand several equivalent packets of data:</p>
+<ul>
+<li><p>The number of effective divisors of a given degree,</p></li>
+<li><p>The number of places of a given degree,</p></li>
+<li><p>The number of rational points over each finite degree extension of the base field.</p></li>
+</ul>
+<h2 id="the-functional-equation">The Functional Equation</h2>
+<div class="theorem" title="Functional Equation">
+<p>Let <span class="math inline">\(K_{/\mathbb{F}_q}\)</span> be a function field of genus <span class="math inline">\(g\)</span>, then <span class="math display">\[\begin{align*}   Z(t) = q^{g-1} t^{2g-2} Z\qty{1\over qt} .\end{align*}\]</span></p>
+</div>
+<div class="proof" title="?">
+<p>For <span class="math inline">\(g=0\)</span>, we know that <span class="math display">\[\begin{align*}   Z(t) = {1 \over (1-t)(1-qt)} ,\end{align*}\]</span> and plugging in <span class="math inline">\({1\over qt}\)</span> is a straightforward calculation. So assume <span class="math inline">\(g\geq 1\)</span>.</p>
+<p>The idea was that we wrote <span class="math inline">\(Z(t) = F(t) + G(t)\)</span>. The <span class="math inline">\(F(t)\)</span> piece came from summing over divisor classes of degree between <span class="math inline">\(0\)</span> and <span class="math inline">\(2g-2\)</span> and recording the dimension of the associated linear system. The tricky piece <span class="math inline">\(G(t)\)</span> came from summing an infinite geometric series to get a more innocuous closed-form expression of a rational function. So the strategy here is to separately establish the functional equation for each of <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> separately. How to do this: for <span class="math inline">\(g=0\)</span>, there was no <span class="math inline">\(F(t)\)</span> piece. If we have a closed form it’s just a computational check. For <span class="math inline">\(F(t)\)</span>, we’ll use our greatest weapon and dearest ally, the Riemann-Roch theorem. This will provide the extra symmetry we need.</p>
+<p>We essentially already applied Riemann-Roch to <span class="math inline">\(G(t)\)</span> to get the closed-form expression, but we haven’t applied it to the small degree divisors. This doesn’t tell you what the dimension is, but rather gives you a duality result: ti gives the dimension in terms of the dimension of a complementary divisor.</p>
+<p>Take a canonical divisor <span class="math inline">\(\mathcal{K} \in \operatorname{Div}(K)\)</span>, so <span class="math inline">\(\deg \mathcal{K} = 2g-2\)</span>. As <span class="math inline">\(C\)</span> runs through all divisor classes of <span class="math inline">\(\mathcal{K}\)</span> of degree <span class="math inline">\(d\)</span> with <span class="math inline">\(0\leq d \leq 2g-2\)</span>, so does the complementary divisor <span class="math inline">\(\mathcal{K}-C\)</span>.</p>
+<p>We can thus write</p>
+<p><span class="math display">\[\begin{align*}   (q-1) F(t)  &amp;= \sum_{0 \leq \deg C \leq 2g-2 } q^{\ell(C)} t^{\deg(C)} \\ (q-1)G(t) &amp;= h \qty{ {q^g t^{2g-1} \over 1-qt} - {1 \over 1-t} } .\end{align*}\]</span></p>
+<p>We can thus compute <span class="math display">\[\begin{align*}   (q-1) F\qty{1\over qt} &amp;= \sum_{0\leq \deg C \leq 2g-2} q^{\ell(C)} \qty{1\over qt}^{\deg C} = \sum_{0\leq \deg C \leq 2g-2} q^{\ell(\mathcal{K} - C)} \qty{1\over qt}^{2g-2-\deg C} ,\end{align*}\]</span> where in the second step we’ve exchanged <span class="math inline">\(C\)</span> for <span class="math inline">\(\mathcal{K}- C\)</span> and noted that <span class="math inline">\(\deg(\mathcal{K}-C) = 2g-2-\deg(C)\)</span>. We now do the calculation another way, <span class="math display">\[\begin{align*}   (q-1) F(t)  &amp;= \sum_{0\leq \deg C \leq 2g-2} q^{\ell(C)} t^{\deg C} \\ &amp;= q^{g-1} t^{2g-1} \sum_{0\leq \deg C \leq 2g-2} q^{\deg(C) - (2g-2) + \ell(\mathcal{K}-C)} t^{\deg(C) - (2g-2)} &amp;&amp; \text{by Riemann-Roch} \\ &amp;= q^{g-1} t^{2g-2} \sum_{0 \leq \deg C \leq 2g-2} q^{\ell(\mathcal{K} - C)} \qty{1\over qt}^{\deg(\mathcal{K} - C)} \\ &amp;= q^{g-1} t^{2g-2} (q-1) F\qty{1\over qt} .\end{align*}\]</span> where we’ve used Riemann-Roch to find that <span class="math inline">\(\ell(C) = \ell(\mathcal{K}-C) + \deg(C) - g + 1\)</span>. Cancelling the common factor of <span class="math inline">\((q-1)\)</span> establishes the functional equation for <span class="math inline">\(F(T)\)</span>.</p>
+<p>Now using the fact that <span class="math inline">\(\delta = 1\)</span>, we have <span class="math display">\[\begin{align*}   (q-1)G(t) = h \qty{ {q^g t^{2g-1} \over 1-qt} - {1\over 1-t} } ,\end{align*}\]</span> and thus <span class="math display">\[\begin{align*}   (q-1) q^{g-1} t^{2g-2} G\qty{1\over qt} &amp;= hq^{g-1} t^{2g-2} \qty{q^g \qty{1\over qt}^{2g-1} - {1\over 1 - q \qty{1\over qt}} - {1\over 1 - {1\over qt}} } \\ &amp;= h\qty{ {-1\over 1-t} + {q^g t^{2g-1} \over 1-qt}} \\ &amp;= (q-1) G(t) ,\end{align*}\]</span> which establishes the functional equation for <span class="math inline">\(G(t)\)</span>.</p>
+</div>
+<h2 id="the-l-polynomial">The <span class="math inline">\(L\)</span> Polynomial</h2>
+<div class="definition" title="The $L$ Polynomial">
+<p><span class="math display">\[\begin{align*}   L(t) \mathrel{\vcenter{:}}=(1-t) (1-qt)  Z(t) \in {\mathbb{Z}}[t] .\end{align*}\]</span></p>
+</div>
+<p>This clears the denominators in <span class="math inline">\(Z(t)\)</span>, so this is now a polynomial of degree at most <span class="math inline">\(2g\)</span>. We can thus rewrite <span class="math display">\[\begin{align*}   Z(t) = {L(t) \over (1-t)(1-qt)} = {a_{2g} t^{2g} + \cdots + a_1 t + a_0 \over (1-t)(1-qt)} .\end{align*}\]</span> Note that if we know <span class="math inline">\(L(t)\)</span>, then we know <span class="math inline">\(Z(t)\)</span>, and in particular we would like to know what the coefficients <span class="math inline">\(a_j\)</span> are. We’ll be able to determine <span class="math inline">\(a_0 = 1\)</span> in all cases, as well as <span class="math inline">\(a_{2g}\)</span> in all cases pretty easily. So it looks like it only remains to compute <span class="math inline">\(a_1, \cdots, a_{2g-1}\)</span>, but the functional equation will give a “mirror” relation between pairs of coefficients. The upshot is that the functional equation shows that we only need to know <span class="math inline">\(a_1, \cdots, a_g\)</span> to completely determine <span class="math inline">\(Z(t)\)</span>. If <span class="math inline">\(g=1\)</span>, just one coefficient suffices. It turns out that <span class="math inline">\(a_1\)</span> will be <span class="math inline">\(q+1\)</span> minus the number of degree one places.</p>
+<p>Questions: what are the constraints on these quantities? Can we write the zeta function in a nice way? Exactly what do we need to compute to determine it?</p>
+<p>It will turn out that computing the number of rational points over <span class="math inline">\({\mathbb{F}}_{q}, {\mathbb{F}}_{q^2}, \cdots, {\mathbb{F}}_{q^g}\)</span> will be possible. For example, for a hyperelliptic curve, we’ll have an explicit defining equation and can make an explicit point count, and you only need <span class="math inline">\(g\)</span> of them.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>The <em>index</em> of the function field, least positive degree of a divisor.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>It will turn out (by a theorem of Schmidt) that <span class="math inline">\(\delta = 1\)</span> in the case of a finite ground field.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>The <em>index</em> of the function field, least positive degree of a divisor.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--bookdown:body:end-->

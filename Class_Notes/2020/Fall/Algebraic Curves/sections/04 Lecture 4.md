@@ -1,4 +1,4 @@
-# Sunday, August 30
+# Lecture 4
 
 Last of preliminaries.
 Upcoming: one-variable function fields and their valuation rings.

@@ -1,16 +1,4 @@
-# Monday, August 24
-
-Review of lecture one:
-
-:::{.theorem title="Finitely Generated in Towers"}
-See video
-:::
-
-- Transcendence bases
-- Lüroth problem
-
-
-# Monday August 21st
+# Lecture 2? 
 
 For $K/k$ a one variable function field, if we want a curve $C/k$, what are the points?
 We'll use *valuations*, see NT 2.1.
@@ -35,7 +23,7 @@ Where does the log come from?
 There is a $p\dash$adic valuation:
 \[  
 v: \QQ &\to \ZZ_{(p)} \\
-{a\ over b} = p^n {u \over v} &\mapsto n
+{a\over b} = p^n {u \over v} &\mapsto n
 .\]
  
 Then we recover

@@ -1,4 +1,4 @@
-# Sunday, August 30
+# Lecture 3
 
 ## Base Extension
 

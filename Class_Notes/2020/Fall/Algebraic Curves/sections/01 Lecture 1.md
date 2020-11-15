@@ -1,4 +1,4 @@
-# Friday, August 28
+# Lecture 1? 
 
 ## Field Theory
 
@@ -178,11 +178,22 @@ k \arrow[rr, "\text{finite}", hook] &  & \kappa(k) \arrow[rr, "\text{finitely ge
 \end{center}
 
 Where we use the fact that from above, $\kappa(k)/k$ is finitely generated and algebraic and thus finite, and by a previous theorem, if $K/k$ is transcendental then $K/\kappa(k)$ is as well, and thus finitely generated.
-
 Thus if you have a function field over $k$, you can replace $k$ by $\kappa(k)$ and regard $K$ as a function field over $\kappa(k)$ instead.
 
 
 
+
+
+## Lecture 1, A Review
+
+Review of lecture one:
+
+:::{.theorem title="Finitely Generated in Towers"}
+See video
+:::
+
+- Transcendence bases
+- Lüroth problem
 
 
 
