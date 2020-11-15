@@ -189,7 +189,12 @@ G(t)
 
 Note that as a consequence, it will definitely be rational in $q$, and will have a simple pole at $t=1$.
 
-There's no major idea for the proof: when the 
+There's no major idea for the proof: when the degree of the divisor class is sufficiently large, we just have an exact formula.
+If it is smaller, than the formula involves the dimension of the linear system.
+
+## Proof of Rationality
+
+When $g=0$
 
 
 
