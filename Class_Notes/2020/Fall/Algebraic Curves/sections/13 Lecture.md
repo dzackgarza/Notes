@@ -68,8 +68,11 @@ The set of effective divisors linearly equivalent to $D$ is naturally viewed as 
 It is then a fact that the number of elements in a $d\dash$dimensional vector space over $\FF_q$ has dimension precisely $q^d-1 \over q-1$ elements.
 
 The projectivization comes in because two different functions have the same divisor if one of them is a constant multiple of the other.
-Note that the 
+Note that the number of elements is computed as the number of nonzero elements divided by the number of nonzero scalars.
 
 **Proof of (b)**:
-
+This will come out of the Riemann-Roch theorem.
+In order to compute the number of divisors in a divisor class, you need to know the dimension of the linear system, which is not easy in general.
+However, if the divisor class has sufficiently large degree, the Riemann-Roch theorem tells you exactly what it is.
+As long as $n > 2g-2$, there is no correction term, and the dimension of the linear system is equal to its degree minus the genus plus one.
 :::
