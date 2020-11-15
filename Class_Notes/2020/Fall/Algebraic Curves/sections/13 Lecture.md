@@ -205,9 +205,9 @@ Z(t) = \sum_{n=0}^\infty A_n t^n = \sum_{n=0}^{\infty} A_{\delta n} t^{\delta n}
 .\]
 This can now be split into two terms, each of which will have a geometric series to sum.
 
-Now let $g\eq 1$, and write
+Now let $g\geq 1$, and write
 \[  
-\sum_{n=0}
+\infsum{n}
 .\]
 
 
