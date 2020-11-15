@@ -109,6 +109,14 @@ all of which will be special cases of a *Serre zeta function* which can be attac
 Note that we aren't specifically discussing schemes in this course, but you don't need to know much about what a scheme is to define the Hasse-Weil zeta function. 
 Just note that an affine finite-type $\ZZ\dash$scheme corresponds to a finitely generated $\ZZ\dash$algebra, and a general finite-type $\ZZ\dash$scheme will be covered by finitely many affine ones, the zeta function will be determined by these finitely many $\ZZ\dash$algebras and some kind of inclusion-exclusion principle (since the scheme is a not necessarily disjoint union of affine schemes).
 
-Recall that $A_n
+Recall that $A_n = A_n(K)$ is the number of effective divisors of degree $n$, which we've proved is finite.
+We have a formula when $n> 2g-2$, namely
+\[  
+Z(t) = \sum_{n=0}^\infty A_n t^n = \sum_{D\in \Div^+(K)} t^{\deg(D)} \in \ZZ[[t]]
+.\]
 
+This is analogous to the Dedekind zeta function of a number field $K$, which is given by
+\[  
+\zeta_K(s) = \sum_{I \in \ell(\ZZ_K^\bullet)} \qty{\abs{ \ZZ_K / I}}^{-s}
+.\]
 
