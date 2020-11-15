@@ -63,8 +63,13 @@ A_n = h \qty{ q^{n+1-g} - 1\over q-1}
 :::{.proof title="?"}
 \envlist
 
-a. The set of effective divisors linearly equivalent to $D$ is naturally viewed as the projectivization $\PP \mathcal{L}(D)$ of the one-dimensional subspaces of the linear system of that divisor class.
-  It is then a fact that the number of elements in a $d\dash$dimensional vector space over $\FF_q$ has dimension precisely $q^d-1 \over q-1$ elements.
+**Proof of (a)**:
+The set of effective divisors linearly equivalent to $D$ is naturally viewed as the projectivization $\PP \mathcal{L}(D)$ of the one-dimensional subspaces of the linear system of that divisor class.
+It is then a fact that the number of elements in a $d\dash$dimensional vector space over $\FF_q$ has dimension precisely $q^d-1 \over q-1$ elements.
 
-b. 
+The projectivization comes in because two different functions have the same divisor if one of them is a constant multiple of the other.
+Note that the 
+
+**Proof of (b)**:
+
 :::
