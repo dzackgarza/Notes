@@ -126,4 +126,4 @@ In fact, any nonzero ideal is a linear combination of prime ideals.
 Similarly, the effective divisors are linear combinations of effective divisors, so an Euler product expansion is possible here too.
 If we take a prime ideal, since we're in a discrete valuation ring, we can consider the local ring at that point.
 We can take the residue field, which in general won't be finite, but will be a finite extension.
-
+So a reasonable measure of the size of a prime divisor would be the dimension of its residue field.
