@@ -124,3 +124,6 @@ There's an analogy between integral ideals (vs fractional ideals) and effective 
 We could get an Euler product decomposition for the Dedekind zeta function by only considering prime ideals, since in a Dedekind domain all ideals factor uniquely into prime ideals.
 In fact, any nonzero ideal is a linear combination of prime ideals.
 Similarly, the effective divisors are linear combinations of effective divisors, so an Euler product expansion is possible here too.
+If we take a prime ideal, since we're in a discrete valuation ring, we can consider the local ring at that point.
+We can take the residue field, which in general won't be finite, but will be a finite extension.
+
