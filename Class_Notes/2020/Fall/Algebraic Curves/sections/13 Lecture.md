@@ -194,7 +194,7 @@ If it is smaller, than the formula involves the dimension of the linear system.
 
 ## Proof of Rationality
 
-When $g=0$, by Riemann-Roch 
+When $g=0$, by Riemann-Roch, 
 
 
 
