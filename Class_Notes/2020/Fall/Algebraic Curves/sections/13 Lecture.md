@@ -53,4 +53,15 @@ Suppose $C\in \Cl(K)$, then
 {q^{\ell(C)} -1 \over q-1} 
 ,\]
   where $\ell(C)$ is the dimension of the linear system associated to the divisor class $C$, and this is the dimension of a projective space over $\FF_q$.
+
+- For all $n>2g-2$ with $\delta \divides n$, we have
+\[  
+A_n = h \qty{ q^{n+1-g} - 1\over q-1}
+.\]
+:::
+
+:::{.proof title="?"}
+\envlist
+
+a. The set of effective divisors linearly equivalent to $D$ is naturally viewed as the projectivization $\PP \mathcal{L}(D)$ of the linear system.
 :::
