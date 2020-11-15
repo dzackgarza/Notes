@@ -41,4 +41,15 @@ We have the following cases:
 The last thing we proved was that the degree zero divisor class group is finite when we're over a finite ground field.
 Why is this true?
 Whenever there is a divisor of degree $n$, then the set of degree $n$ divisors is a coset of the degree zero divisors, all of which have the same cardinality.
-So it's enough to prove that 
+We proved finiteness using the Riemann-Roch theorem, using the fact that the set of *effective* degree $n$ divisors is finite for all $n$.
+
+The next main topic will be the zeta function, which keeps track of three equivalent packets of information: $A_n$, the number of effective divisors of degree $n$, the number of places of degree $d$ (since an effective divisor is a linear combination of these), and $N_r$ the number of degree 1 points in the degree $r$ extension, i.e. the number of $\FF_q^r$ rational points.
+
+:::{.lemma title="?"}
+Suppose $C\in \Cl(K)$, then 
+
+- The number of effective divisors $D \in [C]$ is given by 
+\[  
+{q^{\ell(C)} -1 \over q-1} 
+.\]
+:::
