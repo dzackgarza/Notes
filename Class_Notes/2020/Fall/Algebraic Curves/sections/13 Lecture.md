@@ -106,5 +106,9 @@ There is a general theory that will unify
 
 all of which will be special cases of a *Serre zeta function* which can be attached to a finite type scheme over $\ZZ$.
 
+Note that we aren't specifically discussing schemes in this course, but you don't need to know much about what a scheme is to define the Hasse-Weil zeta function. 
+Just note that an affine finite-type $\ZZ\dash$scheme corresponds to a finitely generated $\ZZ\dash$algebra, and a general finite-type $\ZZ\dash$scheme will be covered by finitely many affine ones, the zeta function will be determined by these finitely many $\ZZ\dash$algebras and some kind of inclusion-exclusion principle (since the scheme is a not necessarily disjoint union of affine schemes).
+
+Recall that $A_n
 
 
