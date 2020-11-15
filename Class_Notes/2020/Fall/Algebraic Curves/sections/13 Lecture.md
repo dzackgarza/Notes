@@ -144,7 +144,7 @@ We will
 
 1. Show that $Z(t) \in \ZZ(t)$, i.e. it is a rational function and can be written $Z(t) = P(t)/ Q(t)$.
 
-  > Note: the denominator will always be the same, $(1-t)(1-qt)$.
+  > Note: the denominator will always be the same, $(1-t)(1-qt)$, and we'll always have $\deg P = 2g$.
   > This is essentially coming from $\ell\dash$adic cohomology.
 
 2. Understand $\deg P$ and $\deg Q$ in terms of the genus $g$.
