@@ -102,5 +102,7 @@ There is a general theory that will unify
 
 - The Dedekind zeta function, attached to the ring of integers over a number field,
 
-- 
+- The Hasse-Weil zeta function of a one variable function field over a finite field,
+
+all of which will be special cases of a *Serre zeta function*.
 
