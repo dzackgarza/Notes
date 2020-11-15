@@ -4,10 +4,10 @@ Recall that we previously looked at the regular function fields: we took a funct
 As long as the ground field is perfect, being regular is equivalent to the constant subfield being $k$ itself.
 However, we haven't done anything with them yet!
 
-If you take an algebraic closure of the finite ground field $\FF_q$, there is a unique subextension of degree $r$ for every $r$, so we call that $\F_{q^r}$.
-The extension $\F_{q^r}/\FF_q$ is cyclic galois, with a geometric Frobenius $x\to x^q$.
-Note that $\F_{q^r}$ is the fixed field of $F^r$, the $r$th power of the Frobenius map.
-We set $K_r \da K \F_{q^r}$, which is a regular function field over $\F_{q^r}$. 
+If you take an algebraic closure of the finite ground field $\FF_q$, there is a unique subextension of degree $r$ for every $r$, so we call that $\FF_{q^r}$.
+The extension $\FF_{q^r}/\FF_q$ is cyclic galois, with a geometric Frobenius $x\to x^q$.
+Note that $\FF_{q^r}$ is the fixed field of $F^r$, the $r$th power of the Frobenius map.
+We set $K_r \da K \FF_{q^r}$, which is a regular function field over $\FF_{q^r}$. 
 Note that we could view this as a function field just over $\FF_q$, but it would not be regular.
 Then $K_r/K$ is a degree $r$ arithmetic extension of function fields.
 
@@ -24,7 +24,7 @@ Then we want to factor $p_v S$?
 :::{.lemma title="Key lemma about how places split."}
 Suppose $d\da \deg(v)$.
 Then $K_r/K$ is galois, so we have $efg=r$.
-In fact, $c=1$, so $f = {r\over \gcd(d, r)}$ and $g = \gcd(d, r)$ and each place $w\in \Sigma(K_r / \F_{q^r})$ has degree ${d\over \gcd(d, r)}$.
+In fact, $c=1$, so $f = {r\over \gcd(d, r)}$ and $g = \gcd(d, r)$ and each place $w\in \Sigma(K_r / \FF_{q^r})$ has degree ${d\over \gcd(d, r)}$.
 :::
 
 :::{.remark}
@@ -43,7 +43,7 @@ Why is this true?
 Whenever there is a divisor of degree $n$, then the set of degree $n$ divisors is a coset of the degree zero divisors, all of which have the same cardinality.
 We proved finiteness using the Riemann-Roch theorem, using the fact that the set of *effective* degree $n$ divisors is finite for all $n$.
 
-The next main topic will be the zeta function, which keeps track of three equivalent packets of information: $A_n$, the number of effective divisors of degree $n$, the number of places of degree $d$ (since an effective divisor is a linear combination of these), and $N_r$ the number of degree 1 points in the degree $r$ extension, i.e. the number of $\F_{q^r}$ rational points.
+The next main topic will be the zeta function, which keeps track of three equivalent packets of information: $A_n$, the number of effective divisors of degree $n$, the number of places of degree $d$ (since an effective divisor is a linear combination of these), and $N_r$ the number of degree 1 points in the degree $r$ extension, i.e. the number of $\FF_{q^r}$ rational points.
 
 :::{.lemma title="?"}
 Suppose $C\in \Cl(K)$, then 
@@ -85,7 +85,7 @@ This is the sharpest result possible: the canonical divisor has degree $2g-2$ an
 
 Upshot: there are three piece of information:
 
-- $N_r$, the number of $\F_{q^r}$ rational points,
+- $N_r$, the number of $\FF_{q^r}$ rational points,
 
 - $\abs{\Sigma_d(\kfq)}$ the number of closed points / places of degree $d$,
 
@@ -95,5 +95,6 @@ and there are simple formulas relating these.
 Moreover, it is enough to know only finitely many of these quantities, where the number depends on $g$.
 
 ## Hasse-Weil Zeta Functions
+
 
 
