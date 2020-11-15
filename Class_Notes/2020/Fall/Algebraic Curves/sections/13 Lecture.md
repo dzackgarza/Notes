@@ -75,4 +75,18 @@ This will come out of the Riemann-Roch theorem.
 In order to compute the number of divisors in a divisor class, you need to know the dimension of the linear system, which is not easy in general.
 However, if the divisor class has sufficiently large degree, the Riemann-Roch theorem tells you exactly what it is.
 As long as $n > 2g-2$, there is no correction term, and the dimension of the linear system is equal to its degree minus the genus plus one.
+So by Riemann-Roch, since $\deg(D) > 2g-2$, $D$ is non-special and $\ell([D]) = n-g+1$, which yields the desired formula for $A_n$.
+
 :::
+
+:::{.remark}
+This is the sharpest result possible: the canonical divisor has degree $2g-2$ and is special, so this fails for the canonical class.
+:::
+
+Upshot: there are three piece of information:
+
+- $N_r$, the number of $\FF_q^r$ rational points
+
+- $\abs{\Sigma(\kfq)}$ the number of 
+
+- $A_n$
