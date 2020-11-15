@@ -169,12 +169,27 @@ Let $\kfq$ have genus $g$ and $\delta = I(K)$ the index, the least positive degr
 
 a. If $g=0$, then
 \[  
-Z(t) = {1\over q-1} \qty{{q \over 1-q^\delta t^\delta} - {1 \over 1-t^\delt}}
+Z(t) = {1\over q-1} \qty{{q \over 1-q^\delta t^\delta} - {1 \over 1-t^\delta}}
 .\]
+
+b. If $g=1$, then $Z(t) + F(t) + G(t)$ where
+\[  
+F(t) 
+&= {1\over q-1} \sum_{0\leq \deg C \leq 2g-2} q^{\ell(C)} t^{\deg(C)} \\
+G(t)
+&= {h \over g-1} \qty{
+{ q^{1-g} (qt)^{2g-2+\delta} \over 1 - (qt)^\delta } - {1 \over 1 - t^\delta}
+}
+,\]
+  so $F$ involves summing over all divisor classes of degree at most $2g-2$, and $G$ is a term coming from Riemann-Roch involving the class number $h$.
 
 [^delta_note]: It will turn out (by a theorem of Schmidt) that $\delta = 1$ in the case of a finite ground field.
 
 :::
+
+Note that as a consequence, it will definitely be rational in $q$, and will have a simple pole at $t=1$.
+
+There's no 
 
 
 
