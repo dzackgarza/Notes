@@ -127,3 +127,25 @@ Similarly, the effective divisors are linear combinations of effective divisors,
 If we take a prime ideal, since we're in a discrete valuation ring, we can consider the local ring at that point.
 We can take the residue field, which in general won't be finite, but will be a finite extension.
 So a reasonable measure of the size of a prime divisor would be the dimension of its residue field as a vector space over $K$.
+
+Note that if we wanted to make these look even more similar to each other, we could define $a_n$ (depending on $\ZZ_K$) as 
+\[
+a_n = \abs{\ts{I \normal \ZZ_K \st \abs{\ZZ_K/I} = n}}
+,\]
+which allows us to write
+\[  
+\zeta_K(s) = \sum_{n=1}^\infty {a_n \over n^s}
+.\]
+
+Where we're going:
+How does $Z(t)$ depend on $K$?
+It turns out that it only depends on $A_0, A_1, \cdots, A_{2g-2}$, and thus $Z(t)$ depends on only finitely much information.
+We will 
+
+1. Show that $Z(t) \in \ZZ(t)$, i.e. it is a rational function and can be written $Z(t) = P(t)/ Q(t)$.
+
+  > Note: the denominator will always be the same, $(1-t)(1-qt)
+
+2. Understand $\deg P$ and $\deg Q$ in terms of the genus $g$.
+
+
