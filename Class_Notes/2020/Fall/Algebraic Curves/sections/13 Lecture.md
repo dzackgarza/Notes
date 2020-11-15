@@ -169,7 +169,7 @@ Let $\kfq$ have genus $g$ and $\delta = I(K)$ the index, the least positive degr
 
 a. If $g=0$, then
 \[  
-Z(t) = {1\over q-1} \qty{{q \over 1-q^? t^\delta} - {1 \over 1-t^\delt}}
+Z(t) = {1\over q-1} \qty{{q \over 1-q^\delta t^\delta} - {1 \over 1-t^\delt}}
 .\]
 
 [^delta_note]: It will turn out (by a theorem of Schmidt) that $\delta = 1$ in the case of a finite ground field.
