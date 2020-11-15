@@ -207,7 +207,15 @@ This can now be split into two terms, each of which will have a geometric series
 
 Now let $g\geq 1$, and write
 \[  
-\infsum{n}
+\infsum{n} A_n t^n = \sum_{\deg(C) \geq 0} \abs{\ts{ A\in C \st A\geq 0}}t^{\deg(C)}
+,\]
+where we instead count the number of divisors in each divisor class.
+
+Continuing this computation yields
+\[  
+\cdots 
+&= \sum_{\deg(C) \geq 0} {q^{\ell(C)} - 1 \over q - 1}t^{\deg(C)} \\
+&= \qty{1\over q-1} \qty{ \sum_{0\leq \deg(C) \leq 2g-2} }
 .\]
 
 
