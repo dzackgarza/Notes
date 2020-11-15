@@ -146,7 +146,27 @@ We will
 
   > Note: the denominator will always be the same, $(1-t)(1-qt)$, and we'll always have $\deg P = 2g$.
   > This is essentially coming from $\ell\dash$adic cohomology.
+  > We'll also determine the leading coefficient.
 
 2. Understand $\deg P$ and $\deg Q$ in terms of the genus $g$.
+
+3. Ask about the roots of $P(t)$, and establish a Riemann hypothesis for Dedekind zeta functions (and in particular, the Riemann zeta function).
+
+> In particular, what are their magnitudes? 
+> This is what Weil did, this is the big theorem in this area.
+> Note that we'll need to consider reciprocal roots, which will end up having magnitude $\sqrt{q}$.
+> We'll see why this happens, and it turns out to be analogous to fact that the nontrivial zeros of the Riemann zeta function have real part $1/2$.
+
+These are approximately in order of difficulty.
+The first two will follow from Riemann-Roch, but the third will be much deeper.
+This is essentially a positive characteristic analogue of the usual Riemann hypothesis.
+Note that we're in a global field, the positive characteristic analog of a number field, and for number fields the Riemann hypothesis is the single outstanding problem.
+In the function field case, it is a theorem!
+
+
+:::{.proposition title="Formula for the zeta function exhibiting rationality"}
+Let $\kfq$ have genus $g$ and $\delta = I(K)$ the index, the least positive degree of a divisor.
+:::
+
 
 
