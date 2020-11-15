@@ -215,7 +215,9 @@ Continuing this computation yields
 \[  
 \cdots 
 &= \sum_{\deg(C) \geq 0} {q^{\ell(C)} - 1 \over q - 1}t^{\deg(C)} \\
-&= \qty{1\over q-1} \qty{ \sum_{0\leq \deg(C) \leq 2g-2} }
+&= \qty{1\over q-1} \qty{ \sum_{0\leq \deg(C) \leq 2g-2} q^{\ell(C)} t^{\deg(C)} 
++ \sum_{}
+}
 .\]
 
 
