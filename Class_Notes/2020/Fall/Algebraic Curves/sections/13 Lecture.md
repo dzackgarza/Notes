@@ -104,5 +104,7 @@ There is a general theory that will unify
 
 - The Hasse-Weil zeta function of a one variable function field over a finite field,
 
-all of which will be special cases of a *Serre zeta function*.
+all of which will be special cases of a *Serre zeta function* which can be attached to a finite type scheme over $\ZZ$.
+
+
 
