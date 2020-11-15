@@ -114,10 +114,13 @@ We have a formula when $n> 2g-2$, namely
 \[  
 Z(t) = \sum_{n=0}^\infty A_n t^n = \sum_{D\in \Div^+(K)} t^{\deg(D)} \in \ZZ[[t]]
 ,\]
-where $\Div^+$ are the effective divisors.
-
-This is analogous to the Dedekind zeta function of a number field $K$, which is given by
+where $\Div^+$ are the effective divisors and we've collected terms based on their degree.
+This is analogous to the Dedekind zeta function of a number field $K$, a formal Dirichlet series which is given by
 \[  
-\zeta_K(s) = \sum_{I \in \ell(\ZZ_K^\bullet)} \qty{\abs{ \ZZ_K / I}}^{-s}
+\zeta_K(s) = \sum_{I \in \mathcal{I}\qty{\ZZ_K^\bullet}} \abs{ \ZZ_K / I}^{-s}
 .\]
-
+where the sum is now over all of the nonzero ideals of the ring of integers, where we measure the size using the *norm*, i.e. the size of the residue field.
+There's an analogy between integral ideals (vs fractional ideals) and effective divisors.
+We could get an Euler product decomposition for the Dedekind zeta function by only considering prime ideals, since in a Dedekind domain all ideals factor uniquely into prime ideals.
+In fact, any nonzero ideal is a linear combination of prime ideals.
+Similarly, the effective divisors are linear combinations of effective divisors, so an Euler product expansion is possible here too.
