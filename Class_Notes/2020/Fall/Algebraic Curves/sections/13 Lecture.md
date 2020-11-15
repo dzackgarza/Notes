@@ -194,7 +194,20 @@ If it is smaller, than the formula involves the dimension of the linear system.
 
 ## Proof of Rationality
 
-When $g=0$, by Riemann-Roch, 
+When $g=0$, by Riemann-Roch we have $\Cl^0(K) = 0$ over any ground field $\kk$ (see exercises), and so $h=1$.
+Since every $n\geq 0$ satisfies $n\geq 2g-2$ when $g=0$, if $\delta\divides n$ we have
+\[  
+A_n = h \qty{ q^{n+1 - g} - 1 \over q-1} = {q^{n+1} - 1 \over q-1}
+,\]
+and since $A_n=0$ unless $n$ is divisible by $\delta$, we have
+\[  
+Z(t) = \sum_{n=0}^\infty A_n t^n = \sum_{n=0}^{\infty} A_{\delta n} t^{\delta n} = \sum_{n=0}^\infty {q^{\delta n + 1} -1 \over q-1} t^{\delta n}
+.\]
+This can now be split into two terms, each of which will have a geometric series to sum.
 
+Now let $g\eq 1$, and write
+\[  
+\sum_{n=0}
+.\]
 
 
