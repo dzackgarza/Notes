@@ -73,7 +73,7 @@ On the other hand, it is equal to
 \cdots 
 &= i^* \int F^* \alpha \wedge F^* \bar \alpha \wedge [H]^{n-k} \\
 &= {i^k \over q^{n-k}} \int F^*\qty{\alpha \wedge \bar\alpha \wedge [H]^{n-k} } \\
-&= {1^n i^k \over q^{n-k}} \int \alpha \wedge \bar \alpha \wedge H^{n-k} \\
+&= {q^n i^k \over q^{n-k}} \int \alpha \wedge \bar \alpha \wedge H^{n-k} \\
 &= q^k \inner{\alpha}{\alpha}
 .\]
 
@@ -93,7 +93,7 @@ Deligne doesn't quite accomplish this: there's no analog of the Hodge decomposit
 
 This is the proof that will motivate much of the rest of what we'll do in the course.
 
-## Setting Things Up: Étale Morphisms
+## Étale Morphisms
 
 This is a property of morphism of schemes, see Hartshorne.
 
@@ -143,11 +143,13 @@ In other word, the delete locus passes through all double roots:
 
 ![Image](figures/image_2020-11-15-01-47-05.png){width=350px}
 
+
+:::
+
 :::{.exercise title="?"}
 Check that standard étale morphisms are étale, and try to understand the proof that all étale morphisms are locally standard étale.
 :::
 
-:::
 
 Let's do some examples!
 
@@ -216,11 +218,13 @@ For the squaring map, there are two square roots:
 This is an étale surjection but not finite étale, since it is not proper.
 This also gives a counterexample to étale morphisms always looking like covering spaces, since here that may be true locally but doesn't hold globally.
 
+
+:::
+
 :::{.warning}
 This is an important example to keep in mind, because you'll often see arguments that treat étale maps as though they were finite onto their image.
 :::
 
-:::
 
 :::{.example title="?"}
 Take a finite separable field extension, taking $\spec$ of it yields an étale map.
@@ -236,7 +240,7 @@ Take $X = \spec k[x, y] / xy$, which looks like the following:
 Then the normalization $\tilde X\to X$ is not étale, since it is not flat.
 :::
 
-:::{.example title="A finite flap map which is not etale"}
+:::{.example title="A finite flat map which is not etale"}
 Take the map
 \[  
 \AA^1 &\to \AA^1 \\
@@ -256,6 +260,158 @@ where $2t\,dt$ does not generate this module.
 This is supported at $t=0$ if $\ch \neq 2$.
 :::
 
+:::{.example title="?"}
+A finite flat morphism such that \( \Omega_{X/Y}^1 \) is not torsion: a hint is that the previous example almost works, with a slight modification.
+Let $\ch k = p$, and take
+\[  
+\AA^1 &\mapsvia{F} \AA^1 \\
+t^p &\mapsfrom t
+.\]
+Then $\Omega_f^1 = k[t]\, dt / d(t^p) = k[t]\,dt$ since $d(t^p) = 0$ in characteristic $p$.
+This yields line bundles (?), so it is not torsion.
+:::
 
-abΓ+efg
+
+:::{.remark}
+This map has a name: the relative Frobenius.
+In general, looking at Frobenii, the Kahler differentials will be very big.
+You might not be used to this: in characteristic zero, a map of relative dimension zero is generically étale.
+In this case, the Kahler differentials will always be torsion.
+:::
+
+:::{.example title="?"}
+Consider a map 
+\[  
+\AA^m &\mapsvia{f_1, \cdots, f_m} \AA^m
+,\]
+since such a map is given by a system of $m$ polynomials in $m$ variables.
+Then $f$ is étale is a neighborhood of $\vector a$ if $\det \qty{\dd{f_i}{x_j} \evalfrom_{\vector a} }$ is a unit.
+:::
+
+
+### Properties of Étale Morphisms
+
+:::{.proposition title="Some properties of étale morphisms"}
+\envlist
+
+1. Open immersions are étale
+2. Compositions of étale morphisms are étale[^composition_etale_note]
+3. Base change of étale morphisms are étale, i.e. 
+\begin{tikzcd}
+X \cross_Y T\ar[d, "\therefore \text{étale}"']\ar[r] & X\ar[d, "\text{étale}"]  \\
+T\ar[r] &  Y\\
+\end{tikzcd}
+
+4. There is a 2 out of 3 property: If $\phi \circ \psi$ and $\phi$ are étale, then $\psi$ is étale.
+
+[^composition_etale_note]: What do you have to check? Locally finite presentation, flat, and unramified are all preserved. The one that may be tricky is remaining unramified, a hint is to use the cotangent exact sequence for $\Omega^1_{X/Y}$.
+
+:::
+
+:::{.exercise title="?"}
+Show property 4 above.
+:::
+
+:::{.proposition title="?"}
+Étale morphisms on varieties over an algebraically closed field induce isomorphisms on complete local rings at closed points.
+:::
+
+
+:::{.exercise title="?"}
+Prove this! 
+Hint: use the criterion for formal étaleness.
+There's an evident map one way on local rings coming from your étale morphism, and you need to produce the inverse map.
+:::
+
+
+:::{.exercise title="?"}
+$\danger$ If $\psi$ is étale and $\phi\circ\psi$ is étale, it is not necessarily the case that $\phi$ is étale.
+Come up with an example!
+:::
+
+:::{.corollary title="An informal statement"}
+Any property that can be checked at the level of complete local rings is true for the source of an étale morphism if it is true for the target.
+:::
+
+Why?
+If you want to check a property for complete local rings on the source, note that the map induces an isomorphism of complete local rings.
+
+## Generalizing Topologies 
+
+
+### Sites
+
+The notion of a *site* will be a generalization of topological spaces and sheaves.
+The idea is we'll generalize sheaf cohomology to this setting.
+On a nice space like a manifold, singular cohomology is isomorphic to the sheaf cohomology of the constant sheaf $\underline{\ZZ}$.
+Here we'll find some version of a sheaf where étale cohomology with $\ZZ/\ell^n\ZZ$ coefficients will be the sheaf cohomology with the constant sheaf $\underline{\ZZ/\ell^n\ZZ}$.
+
+:::{.question}
+What parts of the definition of a topological space are needed to define the notion of a sheaf?
+:::
+
+:::{.remark}
+Recall that the *sheaf condition* is given in two parts:
+
+1. A section is determined by its value on a cover, and
+
+2. Sections can be glued when they agree on intersections.
+:::
+
+:::{.answer}
+\envlist
+
+1. As in presheaves, a notion of open sets and inclusions.
+  (I.e., a category of open sets.)[^presheaf_defn][^what_sheaves_know]
+
+We'd also like to make sense of the sheaf condition: 
+
+2. Collections of morphisms which are "covers", remembering which collections of opens cover a space, and
+
+3. The existence of certain fiber products (intersections).
+
+[^what_sheaves_know]: The notion of a presheaf on $X$ doesn't know much about the actual topology of $X$. If two spaces have the coarsest topology, so the only opens are $X, \emptyset$, then the categories of open sets are equivalent, and every presheaf on them will be the same.
+
+[^presheaf_defn]: Recall that a presheaf on $X$ is a contravariant functor out of the category of open sets of $X$.
+
+:::
+
+
+:::{.remark}
+The motivation for (3) above is that for $U, V \subseteq X$, we can form $U\cross V = U\intersect V$.
+:::
+
+
+:::{.definition title="Preliminary: Sites/Grothendieck Topologies"}
+A category $\mathcal{C}$ with a collection of *covering families* $\ts{X_\alpha \mapsvia{f_\alpha} X \st \alpha\in A}$[^think_of_covering_families]
+such that several axioms are satisfied.
+
+[^think_of_covering_families]: How to think of this: elements in this collection cover $X$.
+
+:::
+
+We'll discuss the axioms next time, they just capture the notion of what a cover of a topological space should look like.
+
+
+:::{.warning}
+There are at least three different notions of this definition!
+The one above is perhaps the least general but the easiest to work with.
+:::
+
+:::{.example title="?"}
+For $X$ a topological space, $\mathcal{C}$ the category of open sets in $X$, then $\ts{U_\alpha\to U}$ is a covering family if the $U_\alpha$ cover $U$, i.e. $U = \union_\alpha U_\alpha$.
+:::
+
+:::{.example title="More exotic"}
+Let $M$ be a manifold and $\mathcal{C}$ be the category of manifolds over $M$, so all $M' \mapsvia{f} M$ such that $f$ is locally an isomorphism.
+Note that these are smooth local homeomorphisms.
+Let $\ts{M_\alpha \mapsvia{f_\alpha} M}$ if $\union_\alpha \im (f_\alpha) = M$.
+:::
+
+:::{.example title="Another exotic example"}
+Let $X$ be a scheme and consider $X_{\text{et}}$ the category of all étale $Y/X$: so the objects are schemes $Y$ admitting an étale morphism $Y\to X$.
+Then $\ts{X_\alpha\to X}$ is a covering family if $\union \im (f_\alpha) = X$.
+:::
+
+This will be the fundamental object, and we'll define étale cohomology by defining sheaves on this category, taking a constant sheaf $\underline{\ZZ/\ell^n\ZZ}$, and we'll take sheaf cohomology.
 

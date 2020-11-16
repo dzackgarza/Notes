@@ -66,7 +66,7 @@ are almost certainly my own. } } \\
 \textbf{D. Zack Garza} \\
 \textit{University of Georgia} \\
 \textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-11-15 }
+{\tiny \textit{Last updated:} 2020-11-16 }
 \end{flushleft}
 
 
@@ -2499,7 +2499,11 @@ Setup:
 
 We have
 
-\begin{center}\includesvg[width=0.7\linewidth]{b82c1b9dff3f4e1fe93c235c8e01ca2908e3d499}\end{center}
+\begin{center}\begin{tikzcd}
+G & \text{a reductive algebraic group over } k = \bar k \\
+B\ar[u, "\subseteq"] & \text{the Borel subgroup} \\
+T\ar[u, "\subseteq"] & \text{its maximal torus}
+\end{tikzcd}\end{center}
 
 along with the weights \(X(T)\).
 
@@ -2654,7 +2658,11 @@ And thus a decomposition:
 The picture to keep in mind is the following: 4 types of modules, all
 indexed by dominant weights:
 
-\begin{center}\includesvg[width=0.7\linewidth]{674c416f5fdd334b8e1b7e370dc0119809edf3ef}\end{center}
+\begin{center}\begin{tikzcd}
+& H^0(\lambda) & \\
+L(\lambda) \ar[ur, hookrightarrow] & & T(\lambda)\arrow[ul, twoheadrightarrow]\\
+& V(\lambda) \arrow[ul, twoheadrightarrow] \ar[ur, hookrightarrow]
+\end{tikzcd}\end{center}
 
 \hypertarget{cohomological-criteria-for-good-filtrations}{%
 \subsection{Cohomological Criteria for Good
@@ -5707,7 +5715,10 @@ transformation} \(\alpha:S\to T\) is a function that assigns to each
 object \(c\in \mathcal{C}\) a morphism \(\alpha_c:S(c) \to T(c)\) in
 such a way that for every \(f:c\to c'\), we have a commuting square
 
-\begin{center}\includesvg[width=0.7\linewidth]{8971d1ed133304a7541fd26a88c87760dbe7f184}\end{center}
+\begin{center}\begin{tikzcd}
+S(c) \ar[r, "{\alpha_c}"] \ar[d, "S(f)"] & T(c)\ar[d, "T(f)"] \\
+S(c') \ar[r, "{\alpha_c}"] & T(c')
+\end{tikzcd}\end{center}
 
 If \(\alpha_c\) is an equivalence for all \(c\in \mathcal{C}\), then
 \(\alpha\) is said to be a \textbf{natural isomorphism}. Two categories
@@ -5742,7 +5753,10 @@ So consider the identity map on the latter
 \(f_V: V\to T_\mu^\lambda T_\lambda^\mu V\) be the corresponding map in
 the former. We can a natural transformation in the following way
 
-\begin{center}\includesvg[width=0.7\linewidth]{e3d3c0d2bc223a4a631b6bbd6de37b2d8d71802e}\end{center}
+\begin{center}\begin{tikzcd}
+V \ar[r, "{f_V}"]\ar[d, "\id"] & T_\mu^\lambda T_\lambda^\mu V \ar[d, "\id'"] \\
+V' \ar[r, "{f_{V'}}"] & T_\mu^\lambda T_\lambda^\mu V'
+\end{tikzcd}\end{center}
 
 It suffices to show that the \(f_V\) are isomorphism as maps of
 \(G\dash\)modules, so one proceeds by
@@ -5832,11 +5846,15 @@ in a decreasing way.
 
 Consider the SES
 
-\begin{center}\includesvg[width=0.7\linewidth]{c44c268d1ec0a1335a35cc5b3c17f94115334b0f}\end{center}
+\begin{center}\begin{tikzcd}
+0 \ar[r] & M_{j-1} \ar[r] & M_j \ar[r] & M_{j} / M_{j-1} \ar[r] & 0
+\end{tikzcd}\end{center}
 
 where applying \(\pr_\mu(\wait)\) induces the LES
 
-\begin{center}\includesvg[width=0.7\linewidth]{0b4ffaa4c08eceb5347d67f1463c121b782a8e1e}\end{center}
+\begin{center}\begin{tikzcd}
+\cdots \ar[r] & \pr_\mu M_{j-1} \ar[r] & \pr_\mu M_j \ar[r] & \pr_\mu \left( M_{j} / M_{j-1} \right) \ar[r] & \cdots
+\end{tikzcd}\end{center}
 
 We know that
 \begin{align*}  
@@ -5891,7 +5909,9 @@ By that lemma, there exists a unique \(\ell\) such that
 \(w\cdot \lambda + \lambda_\ell \in W_p\cdot \mu\), where
 \(\lambda_\ell\) is a weight of \(L(\nu_1)\). From the LES, we have
 
-\begin{center}\includesvg[width=0.7\linewidth]{808f38be9dbb07e9bd6f1c7baa76a5f6ba338c3b}\end{center}
+\begin{center}\begin{tikzcd}
+\cdots \ar[r] & \pr_\mu M_{j-1} \ar[r] & \pr_\mu M_j \ar[r] & \pr_\mu \left( M_{j} / M_{j-1} \right) = \lambda_j + w\cdot \lambda \ar[r] & \cdots
+\end{tikzcd}\end{center}
 
 where the last term will only be nonzero in restricted cases. We can
 thus conclude that
@@ -6479,7 +6499,14 @@ The simple \(G_r T\dash\)modules are of the form
 \(G_r\dash\)module. Applying the spectral sequence, there is a 5 term
 exact sequence. Letting \(E_t \da \ext_{G_rT}^t (N, M)\).
 
-\begin{center}\includesvg[width=0.7\linewidth]{314fc60bb50144e17b548ccefcb8917aa2ba16ed}\end{center}
+\begin{center}\begin{tikzcd}
+0 \ar[r] &
+E_2^{1, 0} \ar[r] &
+E_1         \ar[r] &
+E_2^{0, 1} \ar[r] &
+E_2^{2, 0} \ar[r] &
+E_2
+\end{tikzcd}\end{center}
 
 Everything is zero here except for the middle term: \(E_1, E_2 = 0\) by
 assumption? \(E_2^{1, 0}, E_2^{2, 0} = 0\) by ?.

@@ -47,52 +47,25 @@
 \everymath{\displaystyle}
 
 
-
 \usepackage[stretch=10]{microtype}
-
 
 \usepackage[pdfencoding=auto]{hyperref}
 \usepackage[noabbrev, capitalise, nameinlink]{cleveref} % use \cref{}, automatically deduces theorem, proposition, etc
 
 \usepackage{bookmark}
 \usepackage{booktabs}
-%\usepackage[top=30mm,bottom=40mm,inner=30mm,outer=10mm]{geometry} 
-%\paperwidth=\dimexpr \paperwidth + 2cm\relax
-%\oddsidemargin=\dimexpr\oddsidemargin + 3cm\relax
-%\evensidemargin=\dimexpr\evensidemargin + 3cm\relax
-%\marginparwidth=\dimexpr \marginparwidth + 3cm\relax
+
+% Todo Notes
 \usepackage[textwidth=25mm, textsize=tiny]{todonotes}
+
 \usepackage{csquotes}
 \usepackage{longtable}
 \usepackage{tabularx}
 
 
-
-\usepackage{stmaryrd}
 \usepackage{centernot}
 % \centernot\whatever
 
-
-% Better indicator function
-\usepackage{bbm}
-\newcommand{\indic}[1]{\mathbbm{1}\left[#1\right]}
-\newcommand{\bbone}[0]{\mathbbm{1}}
-
-% Highlight quote
-\usepackage{xcolor}
-\usepackage{environ}
-\definecolor{camel}{rgb}{0.76, 0.6, 0.42}
-\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
-\definecolor{block-gray}{gray}{0.85}
-\NewEnviron{myblock}
-{\colorbox{block-gray}{%
-\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
-\small\addtolength{\leftskip}{10mm}
-\addtolength{\rightskip}{10mm}
-\BODY}}
-}
-\renewcommand{\quote}{\myblock}
-\renewcommand{\endquote}{\endmyblock}
 
 % Nice math font that journals use
 %\usepackage[lite]{mtpro2}
@@ -107,7 +80,6 @@
 \setlength{\evensidemargin}{0in}
 \setlength{\textheight}{9.in}
 \setlength{\textwidth}{6.5in}
-% \pagestyle{empty} %removes page numbers.
 
 % Inkscape figures from Vim
 \usepackage{import}
@@ -118,30 +90,26 @@
     \def\svgwidth{\columnwidth}
     \import{./figures/}{#1.pdf_tex}
 }
-%\pdfsuppresswarningpagegroup=1
 
 % Pandoc-specific fixes
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-% Tikz and Graphics
-\usepackage{amscd}
+% Tikz 
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, matrix, positioning, decorations, decorations.pathreplacing, decorations.markings, shapes, backgrounds, fit, shapes.geometric, intersections}
 \tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
-\usepackage[inline]{asymptote}
 \usepackage{tikz-layers}
 \usepackage{ifthen}
 \usepackage{xifthen}
 
-%\usepackage{nath}
-%\delimgrowth=1
-\DeclarePairedDelimiter\qty{(}{)}
-\DeclarePairedDelimiter\intvl{[}{]}
+% Non-tikz graphics
+\usepackage{amscd}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage[inline]{asymptote}
 
-\renewcommand{\qty}[1]{{\left(  {#1} \right)}}
+
 % Major Macros
 \usepackage{graphicx}
 
@@ -158,24 +126,7 @@
 \DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
 %\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
 
-% Wide tikz equations
-\newsavebox{\wideeqbox}
-\newenvironment{wideeq}
-  {\begin{displaymath}\begin{lrbox}{\wideeqbox}$\displaystyle}
-  {$\end{lrbox}\makebox[0pt]{\usebox{\wideeqbox}}\end{displaymath}}
 
-% Fancy chapter headers and footers
-%\usepackage{fancyhdr}
-
-%\pagestyle{fancy}
-%\fancyhf{}
-%\fancyhead[LE,RO]{\title}
-%\fancyhead[RE,LO]{\rightmark}
-%\fancyfoot[CE,CO]{\leftmark}
-%\fancyfoot[LE,RO]{\thepage}
-
-%\renewcommand{\headrulewidth}{2pt}
-%\renewcommand{\footrulewidth}{1pt}
 
 \usepackage[autooneside=false,automark]{scrlayer-scrpage}
 %\clearscrheadfoot{}
@@ -235,40 +186,6 @@
 \renewcommand{\thmtformatoptarg}[1]{ -- #1}
 %\renewcommand{\listtheoremname}{List of definitions}
 
-% Big Asterisk
-\newcommand{\Conv}{\mathop{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}}}%
-
-% No more phi please
-\let\origphi\phi
-\let\phi\varphi
-
-\input{/home/zack/Notes/Latex/latexmacs}
-
-%\usepackage{ocgx}
-
-% From Jessie Loucks!
-\newcommand{\rockon}{
-\vspace*{0cm}
-\begin{tikzpicture}[scale=0.075]
-\draw (0,-.25) -- (0,2.25) arc (180:0:.5) -- (1,.75) % index
-arc (180:0:0.5) % middle
-arc (180:0:.5) % ring
--- (3,1.75) arc (180:0:.5) -- (4,-1.25) % pinkie
-arc (360:270:1.75) -- (1.5,-3) arc (270:180:1.75) % palm
---(-.25,-1) arc (180:90:1) -- (1.5,0) arc (450:270:.5) -- (1,-1) arc (90:270:.15) % thumb
-arc(90:0:1); % inside palm
-\draw (1,.75) -- (1,0); % middle 2
-\draw (2,.75) -- (2,-.5) arc (180:360:.5) -- (3,.75); %ring 2
-\draw (.5,-2.7)--(.5,-3.3); % lwrist
-\draw (3.25,-2.7)--(3.25,-3.3); % rwrist
-\draw (0,-4.3) rectangle (3.75,-3.3); %sleeve
-\end{tikzpicture}
-}
-
-\usepackage{apple_emoji}
-\newcommand{\done}[0]{\scalebox{0.75}{✨}}
-\newcommand{\work}[0]{\scalebox{0.75}{🚩}}
-
 %\usepackage{adjustbox}
 
 % Custom section headings: redefining the KOMA-Script command \sectionlinesformat:
@@ -283,7 +200,10 @@ arc(90:0:1); % inside palm
 \renewcommand\sectionformat{\protect\scalebox{2}{\thesection}}
 \addtokomafont{section}{\huge}
 
+% Fancy symbols
 \usepackage{adforn}
+\usepackage{pgfornament}
+
 
 \makeatletter
 \renewcommand\sectionlinesformat[4]{%
@@ -313,8 +233,8 @@ arc(90:0:1); % inside palm
         \begin{minipage}{\linewidth}%
             \vspace*{2pt}%Space before
             \adfflourishleft \hfill 
-            \centering\mbox{
-                #1
+            \adjustbox{width=4in,totalheight=4in}{
+              \parbox{4in}{\centering #1}
             } 
             \hfill \adfflourishright
             \vspace*{2pt}%Space after
@@ -358,4 +278,38 @@ arc(90:0:1); % inside palm
 }{
 \end{tabular}\end{figure}
 }
+
+
+% Extra macros
+% Wide tikz equations
+\newsavebox{\wideeqbox}
+\newenvironment{wideeq}
+  {\begin{displaymath}\begin{lrbox}{\wideeqbox}$\displaystyle}
+  {$\end{lrbox}\makebox[0pt]{\usebox{\wideeqbox}}\end{displaymath}}
+
+% Margin notes
+\usepackage{marginnote}
+\newcommand{\lmargnote}[1]{\reversemarginpar\marginnote{#1}\normalmarginpar}
+\newcommand{\rmargnote}[1]{\marginnote{{\footnotesize #1}}\index{#1}}
+% Grow parentheses appropriately
+% Better indicator function
+\usepackage{bbm}
+\newcommand{\indic}[1]{\mathbbm{1}\left[#1\right]}
+\newcommand{\bbone}[0]{\mathbbm{1}}
+% \mapsfrom
+\usepackage{stmaryrd}
+% Better delimiters
+\DeclarePairedDelimiter\qty{(}{)}
+\DeclarePairedDelimiter\intvl{[}{]}
+% Big Asterisk
+\newcommand{\Conv}{\mathop{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}}}%
+% No more phi please
+\let\origphi\phi
+\let\phi\varphi
+% Include emoji
+\usepackage{apple_emoji}
+\newcommand{\done}[0]{\scalebox{0.75}{✨}}
+\newcommand{\work}[0]{\scalebox{0.75}{🚩}}
+% Everything else
+\input{/home/zack/Notes/Latex/latexmacs}
 

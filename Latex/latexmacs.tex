@@ -34,8 +34,10 @@
 \renewcommand{\SS}[0]{{\mathbb{S}}}
 \newcommand{\TT}[0]{{\mathbb{T}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
-\newcommand{\ZnZ}[0]{\mathbb{Z}/n\mathbb{Z}}
-\newcommand{\ZpZ}[0]{\mathbb{Z}/p\mathbb{Z}}
+\newcommand{\znz}[0]{\mathbb{Z}/n\mathbb{Z}}
+\newcommand{\zpz}[0]{\mathbb{Z}/p\mathbb{Z}}
+\newcommand{\zlz}[0]{\mathbb{Z}/\ell\mathbb{Z}}
+\newcommand{\zlnz}[0]{\mathbb{Z}/\ell^n\mathbb{Z}}
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
 \newcommand{\Arg}[0]{\operatorname{Arg}}
@@ -67,7 +69,8 @@
 \newcommand{\Sp}[0]{{\operatorname{Sp}}}
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\txand}[0]{{\text{ and }}}
-\newcommand{\et}[0]{\text{et}}
+\newcommand{\et}{\mathrm{\text{ét}}}
+\newcommand{\Et}{\mathrm{\text{Ét}}}
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\ssets}[0]{\operatorname{sSets}}
 \newcommand{\dom}[0]{\operatorname{dom}}
@@ -96,6 +99,10 @@
 \newcommand{\Top}[0]{{\text{Top}}}
 \newcommand{\Sch}[0]{{\text{Sch}}}
 \newcommand{\sch}[0]{{\text{Sch}}}
+\newcommand{\fppf}[0]{{\mathrm{fppf}}}
+\newcommand{\Fppf}[0]{{\mathrm{Fppf}}}
+\newcommand{\Sh}[0]{{\operatorname{Sh}}}
+\newcommand{\Op}[0]{{\operatorname{Op}}}
 \newcommand{\prim}[0]{{\text{prim}}}
 \newcommand{\Set}[0]{{\text{Set}}}
 \newcommand{\Sets}[0]{{\text{Set}}}
@@ -154,7 +161,6 @@
 \newcommand{\floor}[1]{{\left\lfloor #1 \right\rfloor}}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \newcommand{\from}[0]{\leftarrow}
-\newcommand{\tofrom}[0]{\rightleftharpoons}
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
 \newcommand{\up}[0]{\uparrow}
 \newcommand{\generators}[1]{\left\langle{#1}\right\rangle}
@@ -355,3 +361,24 @@
 
 \newcommand{\contains}[0]{\supseteq}
 \newcommand{\containing}[0]{\supseteq}
+
+\newcommand{\cat}[1]{\mathcal{#1}}
+\newcommand{\thecat}[1]{\mathbf{#1}}
+\newcommand{\sheaf}[1]{\operatorname{\mathcal{#1}}}
+
+
+\newcommand\rrarrows{\rightrightarrows}
+\newcommand\rrrarrows{
+    \mathrel{\substack{\textstyle\rightarrow\\[-0.6ex]
+        \textstyle\rightarrow \\[-0.6ex]
+        \textstyle\rightarrow}}
+}
+
+\newcommand{\colim}{\operatornamewithlimits{\underset{\longrightarrow}{colim}}}
+
+\newcommand\stacksymbol[3]{%
+  \mathrel{\stackunder[2pt]{\stackon[4pt]{#3}{$\scriptscriptstyle#1$}}{%
+  $\scriptscriptstyle#2$}}}
+
+\newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
+\newcommand\ul[1]{\underline{#1}}

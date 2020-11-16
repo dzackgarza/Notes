@@ -6,6 +6,8 @@ local tikz_doc_template = [[
 \usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix, positioning, decorations, shapes}
 \usepackage{mathtools}
 \usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd, thmtools, xpatch}
+\usepackage{stmaryrd}
+\DeclarePairedDelimiter\qty{(}{)}
 \input{/home/zack/Notes/Latex/latexmacs.tex}
 \begin{document}
 \nopagecolor
@@ -43,25 +45,19 @@ end
 
 function RawBlock(el)
   if starts_with('\\begin{tikzcd}', el.text) then
-    local filetype = 'svg'
-    local sha = pandoc.sha1(el.text)
-    local bname = system.get_working_directory() .. '/' .. sha
-    local fname = bname .. '.' .. filetype
-    if not file_exists(fname) then
-      tikz2image(el.text, filetype, fname)
-    end
-    --img = pandoc.Image({}, fname)
-    --attr = pandoc.Attr("", {"content_centered"})
-    --sil = pandoc.Span(img, attr)
-    if FORMAT:match 'html' then
+    if FORMAT:match 'latex' or FORMAT:match 'pdf' or FORMAT:match 'markdown' then
+      ril = pandoc.RawInline( "tex", "\\begin{center}" .. el.text .. "\\end{center}")
+    elseif FORMAT:match 'html' then
+      local filetype = 'svg'
+      local sha = pandoc.sha1(el.text)
+      local bname = system.get_working_directory() .. '/' .. sha
+      local fname = bname .. '.' .. filetype
+      if not file_exists(fname) then
+        tikz2image(el.text, filetype, fname)
+      end
       ril = pandoc.RawInline('html', '<p style="text-align:center;"> <img style="width:100%" src="' .. fname .. '"></p>')
-    elseif FORMAT:match 'latex' or FORMAT:match 'pdf' or FORMAT:match 'markdown' then
-      ril = pandoc.RawInline( "tex", "\\begin{center}\\includesvg[width=0.7\\linewidth]{" .. sha .. "}\\end{center}" )
-    else
-      return el
     end
     return pandoc.Para(ril)
-
   else
    return el
   end
