@@ -103,9 +103,9 @@ $endif$
 \maketitle
 $if(author)$
 \begin{flushleft}
-\textbf{$for(author)$$author.name$$sep$ \and $endfor$} \\
+\textit{$for(author)$$author.name$$sep$ \and $endfor$} \\
 \textit{$for(author)$$author.affiliation$$sep$ \and $endfor$} \\
-\textit{$for(author)$$author.email$$sep$ \and $endfor$} \\
+  \textit{$for(author)$\href{mailto: $author.email$}{$author.email$}$sep$ \and $endfor$} \\
 {\tiny \textit{Last updated:} $current_date$ }
 \end{flushleft}
 $endif$
