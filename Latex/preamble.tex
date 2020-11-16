@@ -299,7 +299,8 @@
 % \mapsfrom
 \usepackage{stmaryrd}
 % Better delimiters
-\DeclarePairedDelimiter\qty{(}{)}
+%\DeclarePairedDelimiter\qty{(}{)}
+  \newcommand{\qty}[1]{\left( {#1} \right)}
 \DeclarePairedDelimiter\intvl{[}{]}
 % Big Asterisk
 \newcommand{\Conv}{\mathop{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}}}%

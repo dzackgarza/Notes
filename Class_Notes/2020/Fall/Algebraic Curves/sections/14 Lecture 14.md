@@ -249,7 +249,8 @@ We can thus write
 We can thus compute
 \[  
 (q-1) F\qty{1\over qt}
-&= \sum_{0\leq \deg C \leq 2g-2} q^{\ell(C)} \qty{1\over qt}^{\deg C} = \sum_{0\leq \deg C \leq 2g-2} q^{\ell(\mathcal{K} - C)} \qty{1\over qt}^{2g-2-\deg C}
+&= \sum_{0\leq \deg C \leq 2g-2} q^{\ell(C)} \qty{1\over {qt} }^{\deg C} \\
+&= \sum_{0\leq \deg C \leq 2g-2} q^{\ell(\mathcal{K} - C)} \qty{1\over {qt} }^{2g-2-\deg C}
 ,\]
 where in the second step we've exchanged $C$ for $\mathcal{K}- C$ and noted that $\deg(\mathcal{K}-C) = 2g-2-\deg(C)$.
 We now do the calculation another way,
