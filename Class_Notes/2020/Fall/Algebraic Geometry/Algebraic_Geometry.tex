@@ -66,7 +66,7 @@ inaccuracies are almost certainly my own. } } \\
 \textbf{D. Zack Garza} \\
 \textit{University of Georgia} \\
 \textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-11-15 }
+{\tiny \textit{Last updated:} 2020-11-16 }
 \end{flushleft}
 
 
@@ -746,7 +746,9 @@ I(X) = I_Y(X) \da\ts{f\in A(Y) \st f(x) = 0\,\,\forall x\in X} \subseteq A(Y)
 For \(X\subset Y \subset \AA^n\), we have
 \(I(X) \supset I(Y) \supset I(\AA^n)\), so we have maps
 
-\begin{center}\includesvg[width=0.7\linewidth]{2735152d58f437dbff3ae1ed22eebccf3c55c71b}\end{center}
+\begin{center}\begin{tikzcd}
+A(\AA^n) \ar[rr, twoheadrightarrow, "\wait/I(X)", bend left] \ar[r, "\wait/I(Y)", twoheadrightarrow] &A(Y)\ar[r, twoheadrightarrow, "\wait/I(X)"] &A(X) \\
+\end{tikzcd}\end{center}
 
 \end{example}
 
@@ -786,7 +788,10 @@ Then there is an inclusion \(\gens{y-x^2} \subset \gens{x-1, y-1}\)
 (e.g.~by Taylor expanding about the point \((1, 1)\)), and there is a
 map
 
-\begin{center}\includesvg[width=0.7\linewidth]{dbfa48c9f7c3b754eac5bfdcd6d2857857406650}\end{center}
+\begin{center}\begin{tikzcd}
+A(\AA^n)\ar[r]\ar[d, equal] & A(Y) \ar[r]\ar[d, equal] & A(X)\ar[d, equal] \\
+k[x, y]\ar[r] & k[x, y]/\gens{y-x^2}\ar[r] & k[x, y]/\gens{x-1, y-1}
+\end{tikzcd}\end{center}
 
 \end{example}
 
@@ -1573,7 +1578,11 @@ f(x_1, \cdots, x_n) = x_n^d + f_1(x_1, \cdots, x_{n-1}) x_n^{d-1} + \cdots + f_d
 
 We can then descend to \(\kx{n}\) to \(\kx{n}/\gens{f}\):
 
-\begin{center}\includesvg[width=0.7\linewidth]{cb63d23adbd3c993b1f5e3da6b1a70365137a7b2}\end{center}
+\begin{center}\begin{tikzcd}
+P_0 \ar[r] & P_1 \ar[r]\ar[d] & \cdots \ar[r]\ar[d] & P_m\ar[d] \\
+ & P_1/P_1 \ar[r]\ar[d] & \cdots \ar[r]\ar[d] & P_m/P_1\ar[d] \\
+ & P_1/P_1 \intersect \kx{n-1} \ar[r] & \cdots \ar[r] & (P_m / P_1) \intersect \kx{n-1}
+\end{tikzcd}\end{center}
 
 The first set of downward arrows denote taking the quotient, and the
 upward is taking inverse images, and this preserves strict inequalities.
@@ -2512,7 +2521,12 @@ X &\mapsto ?
 
 We have a situation like this:
 
-\begin{center}\includesvg[width=0.7\linewidth]{67688d82b4330cae60761458ca45d6ff13629a54}\end{center}
+\begin{center}\begin{tikzcd}
+& \mathcal{F}(X)\ar[ld]\ar[rd] & \\
+B\ar[rd] & & C\ar[ld] \\
+& A\ar[d] & \\
+& \emptyset &
+\end{tikzcd}\end{center}
 
 Unique gluing says that given \(r\in B, s\in C\) such that
 \(\phi_B(r) = \phi_C(s)\), there should exist a unique
@@ -3289,7 +3303,11 @@ spaces. We have
 A(X\cross Y) \cong A(X) \tensor_k A(Y) \cong k[x_1, \cdots, x_n, y_1, \cdots, y_m] / I(X) \tensor 1 + 1 \tensor I(Y).\end{align*}
 This recovers the product, since if we have
 
-\begin{center}\includesvg[width=0.7\linewidth]{5f923bc4ef422cebeaef91a5c21f21a33cf807dd}\end{center}
+\begin{center}\begin{tikzcd}
+Z \ar[dr, dotted, "\exists H"]\ar[rrd, bend left, "f"]\ar[rdd, bend right, "g"] & & \\
+& X\cross Y\ar[r]\ar[d] &X  \\
+& Y &  \\
+\end{tikzcd}\end{center}
 
 where \(H = (f, g)\).
 
@@ -3473,7 +3491,11 @@ What about \(\OO_X(X_1)\)? This is just \(k[x]\), and similarly
 \(\OO_X(X_1\intersect X_2) = D(x) \subset X\), so this yields
 \(k[x, 1/x]\). We thus have a diagram
 
-\begin{center}\includesvg[width=0.7\linewidth]{5c009219d6191466c14e5c66bc3eb7bbfb4aab01}\end{center}
+\begin{center}\begin{tikzcd}
+                         & \OO_X(X_1) = k[x] \ar[rd, "x\mapsto x"]   & \\
+\OO_X(X) \ar[ru] \ar[rd] &                                           & \OO_X(X_1\intersect X_2) = k[x, 1/x] \\
+                         & \OO_X(X_2) = k[y] \ar[ru, "y\mapsto 1/x"] &
+\end{tikzcd}\end{center}
 
 \end{example}
 
@@ -3797,7 +3819,11 @@ can form a category \(\operatorname{PreVar}_k\) of prevarieties over
   Products: Given \(X, Y\), there is a unique prevariety \(X\cross Y\)
   such that
 
-  \begin{center}\includesvg[width=0.7\linewidth]{e94ac320012572830bb23ff07c687a0459542bd8}\end{center}
+  \begin{center}\begin{tikzcd}
+    Z\ar[drr, bend left , "f_x"] \ar[rdd, bend right, "f_y"] \ar[rd, "\exists ! h", dotted] &                                         & \\
+                                                                                         & X\cross Y\ar[r, "\pi_X"]\ar[d, "\pi_Y"] & X \\
+                                                                                         & Y                                       &
+    \end{tikzcd}\end{center}
 \end{enumerate}
 
 We had an analogue of being Hausdorff: the diagonal \(\Delta_X\) is
