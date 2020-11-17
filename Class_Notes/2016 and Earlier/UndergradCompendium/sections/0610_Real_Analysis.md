@@ -70,6 +70,15 @@ f,g\text{ differentiable on } [a,b] \implies \exists c\in[a,b] :
 \todo[inline]{todo}
 :::
 
+:::{.theorem title="Lagrange Remainder Theorem"}
+If $f$ is smooth on $(-R, R)$ and define
+\[  
+a_n \da {f^{(n)}(0) \over n! } && S_N(x) \da \sum_{j=0}^N a_n x^n && E_N(x) \da  f(x) - S_N(x)
+.\]
+Then given $x\neq 0$, there exists a point $c$ with $\abs{c} < \abs{x}$
+
+:::
+
 
 
 
