@@ -77,12 +77,9 @@ a_n \da {f^{(n)}(0) \over n! } && S_N(x) \da \sum_{j=0}^N a_n x^n && E_N(x) \da 
 .\]
 Then given $x\neq 0$, there exists a point $\xi$ with $\abs{\xi} < \abs{x}$ such that
 \[  
-E_N(x) = {f^{(N+1)} }x^{N+1}
+E_N(x) = {f^{(N+1)}(\xi) \over (N+1)! }x^{N+1}
 .\]
-
 :::
-
-
 
 
 
