@@ -75,9 +75,9 @@ If $f$ is smooth on $(-R, R)$ and define
 \[  
 a_n \da {f^{(n)}(0) \over n! } && S_N(x) \da \sum_{j=0}^N a_n x^n && E_N(x) \da  f(x) - S_N(x)
 .\]
-Then given $x\neq 0$, there exists a point $c$ with $\abs{c} < \abs{x}$ such that
+Then given $x\neq 0$, there exists a point $\xi$ with $\abs{\xi} < \abs{x}$ such that
 \[  
-E_N(x)
+E_N(x) = {f^{(N+1)} }x^{N+1}
 .\]
 
 :::
