@@ -2789,6 +2789,7 @@ Note that affine varieties of positive dimension over $\CC$ are not compact in t
 Similarly, they are Hausdorff classically, but not in the Zariski topology.
 We want to find notions equivalent to Hausdorffness and compactness in the classical setting, which end up also applying to varieties.
 The fix in the latter case was considering "separatedness".
+:q
 The fix for compactness will be the following:
 
 
@@ -3430,6 +3431,306 @@ f^*\qty{h_1 \over h_2 } = {h_1(f_0, \cdots, f_m) \over h_2(f_0, \cdots, f_m)}
 This is a ratio of homogeneous polynomials of equal degree in the $x_i$, the pullback is again locally homogeneous ratios of functions of equal degree.
 :::
 
+
+# Tuesday, November 17
+
+## Projecting From a Point
+
+We have $\PP^n \da \AA^{n+1}\smz / \sim$ where $x\sim \lambda x$, and projective varieties $V(I) \subset \PP^n$ where $I \normal k[x_0, \cdots, x_n]$ is a homogeneous ideal.
+We defined a sheaf of rings $\OO_X$ on $X = V(I)$ by
+\[  
+\OO_X(U) \da \ts{\phi: U\to k \st \phi \text{ is locally a ratio of two homogeneous polynomials of equal degree}}
+.\]
+We showed that this was the same as the sheaf $\tilde \OO_X$ defined by gluing ringed spaced $(X \intersect U_i, \OO_{X\intersect U_i})$ where $U_i = D(x_i)$.
+We also showed that $S(X) \da k[x_0, \cdots, x_n] / I(X)$ is homogeneous, i.e. the quotient by a homogeneous ideal is again homogeneous.
+Moreover, if $\ts{f_i}_{i=0}^m \subseteq S(X)_d$ and $V(\ts{f_i}) = \emptyset$. then the map
+\[  
+(f_0, \cdots, f_m): X &\to \PP^m \\
+x &\mapsto [f_0(x), \cdots, f_m(x)]
+.\]
+
+Recall that a variety is separated iff $\Delta \injects X$ is closed.
+Let $A\in \GL_{n+1}(k)$ and define a map
+\[  
+A: \PP^n &\to \PP^n \\
+\begin{bmatrix}
+x_0  \\
+\vdots \\
+x_n 
+\end{bmatrix}
+&\mapsto
+A
+\begin{bmatrix}
+x_0  \\
+\vdots \\
+x_n 
+\end{bmatrix}
+.\]
+
+This is a morphism because
+\[  
+\begin{bmatrix}
+- & \vec A_0 & - \\
+- & \vdots & - \\
+- & \vec A_n & - \\
+\end{bmatrix}
+\begin{bmatrix}
+x_0  \\
+\vdots \\
+x_n 
+\end{bmatrix}
+=
+\begin{bmatrix}
+A_0 \cdot \vector x  \\
+\vdots \\
+A_n \cdots \vector x 
+\end{bmatrix}
+,\]
+which are linear homogeneous polynomials.
+
+Then $V_p(A_i \cdot \vector x) = \emptyset$, and thus $V_a(A_i \cdot \vector A) = \ts{0}$.
+So we should view $A\in \PGL_{n+1}(k)$.
+Note that this is a group, since $A^{-1}$ again forms a morphism.
+Thus $\PGL_{n+1}(k) \subset \Aut(\PP^n)$, and it turns out that these are in fact equal.
+
+:::{.definition title="Projection from a point"}
+Let $a = [1: 0 : \cdots : 0] \in \PP^n$, then there is a morphism 
+\[  
+\PP^n \sm\ts{a} &\to \PP^{n-1} \\
+[x_0: \cdots : x_n] &\mapsto [x_1: \cdots : x_n]
+.\]
+Note that this morphism does not extend to $\PP^n$.
+
+More generally, given any point $p\in \PP^n$, we can project from it by making a linear change of coordinates to $p = [1: 0 : \cdots : 0]$.
+:::
+
+Let $x\in \PP^n\sm\ts{a}$, then there is a unique line through $a$ and $x$.
+It can be described parametrically as follows: writing $x = [x_0: \cdots : x_n]$, we take the plane they span and projectivize to obtain $s[x_0 : \cdots : x_n] + t [1: 0 : \cdots : 0]$ where we range over $[s: t] \in \PP^1$.
+In fact, this defines a morphism $\PP^1 \to \PP^n$.
+
+Consider now $\PP^{n-1} = V(x_0)$, this copy of $\PP^{n-1}$ intersects any such line at a unique point:
+
+![Image](figures/image_2020-11-17-10-10-32.png)
+
+:::{.example title="?"}
+Consider $X = V(x_0 x_2 - x_1^2) \subset \PP^2$, which defines a conic, and the projection $\PP^2 \sm \ts{[1:0:0]} \to \PP^1$:
+
+![Projection onto $V(x_0)$.](figures/image_2020-11-17-10-13-40.png)
+
+This morphism can be restricted to $\phi: X\sm\ts{[1:0:0]} \to \PP^2$, and the claim is that this morphism extends to all of $X$.
+The secant lines approach a tangent line at $[1:0:0]$, which $V(x_0)$ at a unique point.
+So we define
+\[  
+\bar \phi \da 
+\begin{cases}
+[x_1: x_2] & x \neq [1:0:0] \\
+[x_0: x_1] & \neq [0:0:1]
+\end{cases}
+.\]
+
+This locally writes $\phi$ as a morphism, so we only need to check that they agree on the overlap.
+Note that on $X$, we have $[x_1: x_2] = [x_0 : x_1]$ wherever both are well-defined.
+In fact, $\bar \phi$ is an isomorphism, since an inverse can be explicitly written.
+Thus $X\cong \PP^1$, and in fact all nondegenerate conics are isomorphic to $\PP^1$ as well.
+Here nondegenerate means that if $Q$ is a quadratic polynomials in $x_0, x_1, x_2$, then $Q$ does not factor as a product of linear factors.
+Note that such a $Q$ is a quadratic form, so $Q(x) = B(x, x)$ for some bilinear form, and $Q$ is nondegenerate if $\det B \neq 0$ where $B_{ij} = B(e_i, e_j)$.
+:::
+
+## The Segre Embedding
+
+:::{.definition title="?"}
+Letting $N = (n+1)(m+1) - 1$, the **Segre embedding** is the morphism
+\[  
+f: \PP^n \cross \PP^m &\to \PP^N \\
+([x_0: \cdots : x_n], [y_0: \cdots : y_m]) &\mapsto
+[x_0 y_0 : \cdots : z_{ij} = x_i y_j : x_n y_m]
+.\]
+Note that $\PP^n, \PP^m$ are prevarieties and we thus know how to construct their product prevariety.
+:::
+
+Check that this is well-defined!
+
+:::{.proposition title="Properties of the Segre embedding"}
+\envlist
+
+a. The image $X$ is a projective variety.
+
+b. $f: \PP^n \cross \PP^m \to X$ is a morphism.
+
+:::
+
+:::{.proof title="of (a)"}
+It suffices to write polynomials in the coordinate $z_{ij}$ that cut out $f(\PP^n \cross \PP^m)$.
+Given $z_{ij} = x_i y_j$, we have $z_{ij} z_{kl} = z_{il} z_{kj}$ and $(x_i y_j)(x_k y_l) = (x_i y_l)(x_k y_j)$.
+The former quadric equations in $z_{ij}$ variables vanish on $f(\PP^n \cross \PP^m)$.
+The claim is that $V(z_{ij} z_{kl} - z_{il} z_{kj})$ works.
+
+Note that wlog, we can assume $z_{00} = 1$, in which case $z_{ij} z_{00} = z_{ij} = z_{i0} z_{0j}$ on $X$.
+Setting $x_i = z_{i0}$ and $y_j = z_{0j}$, we've now constructed a point in the preimage, so $f$ surjects onto $X$.
+:::
+
+
+:::{.proof title="of (b)"}
+That $f$ is a morphism to $\PP^n$ is easy, and since $\im f \subset X$, $f: \PP^n \cross \PP^m \to X$ is a morphism.
+On $D(z_{00}) \subset X$, the inverse described above is a morphism.
+Since this works for any $z_{ij}$, $f^{-1}$ is well-defined and a morphism, making $f$ an isomorphism.
+:::
+
+
+:::{.example title="?"}
+
+![Image](figures/image_2020-11-17-10-42-49.png)
+
+:::
+
+# Thursday, November 19
+
+
+Why use projective varieties? 
+For e.g. a manifold, there is a well-defined intersection pairing, and the same way that $[\mu] \in H^1(T, \ZZ) = 1$ in the torus, we have $[L]^2 = 1$ in $\PP^2_{/\CC}$, so every two lines intersect in a unique point.
+Also, Bezout's theorem: any two curves of degrees $d, e$ in projective space intersect in $d\cdot e$ points.
+Also note that we have a notion of compactness that works in the projective setting but not for affine varieties.
+
+Last time: we saw the Segre embedding $(\vector x, \vector y)\mapsto [x_i y_j]$, which was an isomorphism onto its image $X = V(z_{ij}z_{kl} - z_{ik} z_{kj} )$, which exhibits $\PP^n \cross \PP^m$ as a projective variety.
+
+:::{.example title="?"}
+For $\PP^1 \cross \PP^1 \to \PP^3$, its image is $X = V_p(xy - zw)$, which is a quadric (vanishing locus of a degree 4 polynomial).
+
+![Image](figures/image_2020-11-19-09-45-47.png)
+
+The projection map has fibers, which induce a *ruling* (a family of $\PP^1$s), which we can see from the real points:
+
+![Image](figures/image_2020-11-19-09-46-38.png)
+
+:::
+
+:::{.corollary title="?"}
+Every projective variety is a separated prevariety, and thus a variety.
+:::
+
+:::{.proof title="?"}
+It suffices to show that $\Delta_X \subset X\cross X$ is closed.
+We can write
+\[  
+\Delta_{\PP^n} = 
+\ts{
+[x_0: \cdots: x_n], [y_0: \cdots : y_n] \st
+x_i y_j - x_j y_i = 0 \, \forall i, j
+}
+.\]
+This says that $\vector x, \vector y$ differ by scaling.
+We know that $\Delta_{\PP^n} \injects \PP^n \cross \PP^n$, which is isomorphic to the Segre variety $S_V$ in $\PP^{(n+1)^2 -1}$, and we can write $z_{ij} = x_i y_j$ and thus
+\[  
+\Delta_{\PP^n} = S_V \intersect V(z_{ij} - z_{ji})
+.\]
+Note that the Segre variety is closed.
+
+The conclusion is that $\PP^n$ is a variety, and any closed subprevariety of a variety is also a variety by taking $\Delta_{\PP^n} \intersect (X\cross X) = \Delta_X$, which is closed as the intersection of two closed subsets.
+:::
+
+
+:::{.definition title="Closed Maps"}
+Recall that a map $f:X\to Y$ is topological spaces is **closed** if whenever $U \subset X$ is closed, then $f(U)$ is closed in $Y$.
+:::
+
+:::{.definition title="Complete Varieties"}
+A variety $X$ is **complete** if the projection $\pi_Y: X\cross Y \surjects Y$ is a closed map for any $Y$.
+
+> Slogan: analog of compactness.
+
+:::
+
+
+:::{.proposition title="?"}
+The projection $\PP^n \cross \PP^m \to \PP^m$ is closed.
+:::
+
+:::{.proof title="?"}
+Let $Z \subset \PP^n \cross \PP^m$, and write $Z = V(f_i)$ with $f_i \in S(S_V)$.
+Note that if the $f_i$ are homogeneous of degree $d$ in $z_{ij}$, the pulling back only the isomorphism $\PP^n\cross \PP^m \to S_V$ yields $z_{ij} = x_i y_j$ and polynomials $h_i$ which are homogeneous polynomials in $x_i, y_j$ which have degree $d$ in both the $x$ and $y$ variables individually.
+Consider $a\in \PP^m$, we want to determine if $a\in \pi(Z)$ and show that this is a closed condition.
+Note that $a\not\in \pi(Z)$ 
+
+- $\iff$ there does not exists an $x\in \PP^n$ such that $(x, a) \in Z$ 
+
+- $\iff$ $V_p(f_i(x, a))_{i=1}^r = \emptyset$ 
+
+- $\iff$ $\sqrt{\gens{f_i(x, a)}_{i=1}^r } = \gens{1}$ or the irrelevant ideal $I_0$ 
+
+- $\iff$ there exist $k_i \in \NN$ such that $x_i^{k_i} \in \gens{f_i(x, a)}_{i=1}^r$ 
+
+- $\iff$ $\kx{n}_k \subset \gens{f_i(x, a)}_{i=1}^r$ (where this is the degree $k$ part)
+
+- $\iff$ the map
+\[  
+\Phi_a: \kx{n}_{d - \deg f_2} \oplus \cdots \oplus \kx{n}_{d - \deg f_r} &\to \kx{n}_d \\
+(g_1, \cdots, g_r) &\mapsto \sum f_i(x, a) g_i (x, a)
+\]
+  is surjective.
+
+Recap: we have a closed subset of $\PP^n \cross  \PP^m$, want to know its projection is closed. 
+We looked at points not in the closed set, this happens iff the degree $d$ part of the polynomial is not contained in the part where we evaluate by $a$.
+This reduces to a linear algebra condition: taking arbitrary linear combinations yields a surjective map.
+\
+
+Thus $a\in \pi(Z)$ iff $\Phi_a$ is *not* surjective.
+\
+
+Expanding in a basis, we can write $\Phi_a$ as a matrix whose entries are homogeneous polynomials in the coordinates of $a$.
+Moreover, $\Phi_a$ is not surjective iff all $d\times d$ determinants of $\Phi_a$ are nonzero (since this may not be square).
+This is a polynomial condition, so $a\in \pi(Z)$ iff a bunch of homogeneous polynomials vanish, making $\pi(Z)$ is closed.
+:::
+
+:::{.corollary title="?"}
+The projection $\pi: \PP^n\cross Y\to Y$ is closed for any variety $Y$, making $\PP^n$ complete.
+:::
+
+:::{.proof title="?"}
+How to prove anything for varieties: use the fact that they're glued from affine varieties, so prove in that special case.
+So first suppose $Y$ is affine.
+Let $Z \subset \PP^n \cross Y$ be closed, and consider $\bar Y ss \PP^m$ and $\bar Z \subset\PP^n \cross \bar Y \subset\PP^n \cross \PP^m$ as a closed subset.
+Then we know that the projection $\pi: \PP^n \cross \PP^m \to \PP^m$ is closed, so $\pi(\bar Z) \subset\PP^m$ is closed.
+But we can write $\pi(Z) = \pi(\bar Z \intersect \PP^n \cross Y) = \pi(\bar Z) \intersect Y$ which is closed. 
+So $\pi(Z)$ is closed in $Y$, which proves this for affine varieties.
+\
+
+Supposing now that $Y$ is instead glued from affines, it suffices to check that the set is closed in an open cover.
+So $Z \subset X$ is closed if when we let $X = \union U_i$, we can show $Z \intersect U_i$ is closed.
+But this essentially follows from above.
+:::
+
+:::{.corollary title="?"}
+Any projective variety is complete.
+:::
+
+:::{.proof title="?"}
+If $X \subset \PP^n$ is closed and if $\PP^n \cross Y\to Y$ is a closed map for all $Y$, then restricting to $X\cross Y\to Y$ again yields a closed map.
+:::
+
+:::{.corollary title="?"}
+Let $f:X\to Y$ be a morphism of (importantly) *varieties* and suppose $X$ is complete. 
+Then $f(X)$ is closed in $Y$.
+:::
+
+:::{.proof title="?"}
+Consider the graph of $f$, $\Gamma_f = \ts{(x, f(x))} \subset X\cross Y$.
+From a previous proof, we know $\Gamma_f$ is closed when $Y$ is a variety (by pulling back a diagonal).
+So $\Gamma_f$ is closed in $X\cross Y$, and thus $\pi_Y(\Gamma_f) = f(X)$ is closed because $X$ is complete.
+:::
+
+
+:::{.corollary title="?"}
+Let $X$ be complete, then $\OO_X(X) = k$, i.e. every global regular function is constant.
+:::
+
+Note: this is an analog of the maximum modulus principle: if $X$ is a compact complex manifold, then any function that is holomorphic on all of $X$ is constant.
+
+:::{.proof title="?"}
+Suppose $\phi X\to \AA^1$ is a regular function.
+Since $\AA^1 \subset \PP^1$, extend $\phi$ to a morphism $\hat \phi: X\to PP^1$.
+By a previous corollary, $\phi(X)$ is closed, but $\infty \not\in \phi(X)$ implies $\phi(X) \neq \PP^2$, so $\phi(X)$ is finite. 
+Since $X$ is connected, $\phi(X)$ is a point, making $\phi$ a constant map.
+:::
 
 # Misc Unsorted
 
