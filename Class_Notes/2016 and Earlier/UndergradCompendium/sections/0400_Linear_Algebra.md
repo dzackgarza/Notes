@@ -718,7 +718,7 @@ $\det(A)$ can be computed by reducing $A$ to $\rref(A)$
 (which is upper triangular) and keeping track of the following effects:
 
 - $R_i \mapsfrom R_i \pm t R_j$: no effect.
-- $R_i \tofrom R_j$: multiply by $(-1)$. 
+- $R_i \iff R_j$: multiply by $(-1)$. 
 - $R_i \mapsfrom tR_i$: multiply by $t$.
 :::
 
