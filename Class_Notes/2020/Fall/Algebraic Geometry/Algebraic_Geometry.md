@@ -6,11 +6,14 @@
 - Gathmann's Algebraic Geometry notes[@AndreasGathmann515]
   <https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019.pdf>
 
+
 ## Notation
 
 \[  
 V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 .\]
+
+\todo[inline]{Lots of notation to fill in.}
 
 \newpage
 
@@ -18,15 +21,7 @@ V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 
 # Friday, August 21
 
-> Ref: 
->
-> <https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019.pdf>
-
-
-
-General idea: functions a coordinate ring $R[x_1, \cdots, x_n]/I$ will correspond to the geometry of the variety cut out by $I$.[^1]
-
-[^1]: Example footnote.
+General idea: functions in a *coordinate ring* $R[x_1, \cdots, x_n]/I$ will correspond to the geometry of the *variety* cut out by $I$.
 
 :::{.example}
 \hfill
@@ -34,17 +29,18 @@ General idea: functions a coordinate ring $R[x_1, \cdots, x_n]/I$ will correspon
 
 - $y^2 = x^3-x$ gives an elliptic curve:
   
-  ![](figures/image_2020-08-21-01-04-22.png)
+![](figures/image_2020-08-21-01-04-22.png){width=350px}
 
 - $x^n+y^n-1$: does it even contain a $\QQ\dash$point? (Fermat's Last Theorem)
 
 - $x^2 + 1$, which has no $\RR\dash$points.
 
-- $x^2 + y^2 + 1/\RR$ vanishes nowhere, so its ring of functions is not $\RR[x, y] / \gens{x^2 + y^2 + 1}$ (problem: $\RR$ is not algebraically closed)
+- $x^2 + y^2 + 1/\RR$ vanishes nowhere, so its ring of functions is not $\RR[x, y] / \gens{x^2 + y^2 + 1}$.
+  The problem: $\RR$ is not algebraically closed.
 
 - $x^2 - y^2 = 0$ over $\CC$ is not a manifold (no chart at the origin):
   
-  ![](figures/image_2020-08-21-01-23-32.png)
+![](figures/image_2020-08-21-01-23-32.png){width=350px}
 
 - $x+y+1/\FF_3$, which has 3 points over $\FF_3^2$, but $f(x, y) = (x^3 - x)(y^3-y)$ vanishes at every point
 
@@ -55,12 +51,13 @@ General idea: functions a coordinate ring $R[x_1, \cdots, x_n]/I$ will correspon
 :::
 
 :::{.theorem title="Harnack Curve Theorem"}
-If $f \in \RR[x, y]$ is of degree $d$, then 
+If $f \in \RR[x, y]$ is of degree $d$, then[^actual_statement]
 \[  
 \pi_1 V(f) \subseteq \RR^2 \leq 1 + {(d-1)(d-2) \over 2}
 \]
+[^actual_statement]: 
+Actual statement: the number of connected components is bounded above by this quantity.
 
-> Actual statement: the number of connected components is bounded above by this quantity.
 :::
 
 :::{.example}
@@ -89,55 +86,71 @@ Given the Riemann surface
 \[  
 y^2 = (x-1)(x-2)\cdots(x-2n)
 ,\]
-how to visualize the solution set?
+how does one visualize its solution set?
+:::
 
-Fact: on $\CC$ with some slits, you can consistently choose a square root of the RHS.
+:::{.fact}
+On $\CC$ with some slits, you can consistently choose a square root of the RHS.
 
-![](figures/image_2020-08-21-01-31-47.png)
+![](figures/image_2020-08-21-01-31-47.png){width=350px}
 
 Away from $x=1, \cdots, 2n$, there are two solutions for $y$ given $x$.
 
 After gluing along strips, obtain:
 
-![](figures/image_2020-08-21-01-32-48.png)
+![](figures/image_2020-08-21-01-32-48.png){width=350px}
 
 :::
 
 
 
-
 # Tuesday, August 25
 
+## Radicals, Degrees, and Affine Varieties
+
 Let $k = \bar k$ and $R$ a ring containing ideals $I, J$.
+Recall the definition of the *radical*:
 
 :::{.definition title="Radical"}
-Recall that the *radical* of $I$ is defined as
+The *radical* of an ideal $I \normal R$ is defined as
 \[  
 \sqrt{I} = \ts{r\in R \st r^k\in I \text{ for some } k\in \NN}
 .\]
 :::
 
 :::{.example}
-Let $I = (x_1, x_2^2) \subset \CC[x_1, x_2]$, so $I = \ts{ f_1 x_1 + f_2 x_2 \st f_1, f_2 \in \CC[x_1, x_2]}$.
+Let 
+\[
+I &= (x_1, x_2^2) \subset \CC[x_1, x_2] \\
+  &= \ts{ f_1 x_1 + f_2 x_2 \st f_1, f_2 \in \CC[x_1, x_2]}
+\]
+
 Then $\sqrt{I} = (x_1, x_2)$, since $x_2^2 \in I \implies x_2 \in \sqrt{I}$.
 :::
 
 Given $f\in k[x_1, \cdots, x_n]$, take its value at $a = (a_1, \cdots, a_n)$ and denote it $f(a)$.
+
+:::{.definition title="Degree of an element of $\kxn$"}
 Set $\deg(f)$ to be the largest value of $i_1 + \cdots + i_n$ such that the coefficient of $\prod x_j ^{i_j}$ is nonzero.
+:::
 
 :::{.example}
-$\deg(x_1 + x_2^2 + x_1 x_2^3 = 4)$
+$\deg(x_1 + x_2^2 + x_1 x_2^3) = 4$
 :::
 
 :::{.definition title="Affine Variety"}
 \hfill
 
-1. Affine $n\dash$space $\AA^n = \AA_k^n$ is defined as $\theset{(a_1, \cdots, a_n) \suchthat a_i \in k}$.
-
-> Remark: not $k^n$, since we won't necessarily use the vector space structure (e.g. adding points).
+1. Affine $n\dash$space $\AA^n = \AA_k^n$ is defined as $\theset{(a_1, \cdots, a_n) \suchthat a_i \in k}$.[^affine_variety_remark]
 
 2. Let $S\subset k[x_1, \cdots, x_n]$ to be a set of polynomials.
-  Then define $V(S) = \ts{x\in \AA^n \st f(x) = 0} \subset \AA^n$ to be an *affine variety*. 
+  Then define the **affine variety** of $S$ as 
+  \[
+  V(S) \da \ts{x\in \AA^n \st f(x) = 0} \subset \AA^n
+  \] 
+
+[^affine_variety_remark]: 
+Not $k^n$, since we won't necessarily use the vector space structure (e.g. adding points).
 
 :::
 
@@ -150,24 +163,30 @@ $\deg(x_1 + x_2^2 + x_1 x_2^3 = 4)$
 :::
 
 :::{.remark}
-We may as well assume $S$ is an ideal by taking the ideal it generates, $S\subseteq \gens{S} = \ts{\sum g_i f_i \suchthat g_i \in k[x_1, \cdots, x_n],\, f_i\in S}$.
+We may as well assume $S$ is an ideal by taking the ideal it generates, 
+\[
+S\subseteq \gens{S} = \ts{\sum g_i f_i \suchthat g_i \in k[x_1, \cdots, x_n],\, f_i\in S}
+.\]
 Then $V(\gens{S}) \subset V(S)$.
 
 Conversely, if $f_1, f_2$ vanish at $x\in \AA^n$, then $f_1 + f_2, gf_1$ also vanish at $x$ for all $g\in k[x_1, \cdots, x_n]$.
 Thus $V(S) \subset V(\gens{S})$.
 :::
 
-:::{.proposition title="Properties and Definitions of Ideal Operations"}
-\hfill
+## Ideals, and Properties of $V(\wait)$
 
-- $I+J \da \ts{f+g \st f\in I,\, g\in J}$.
-- $IJ \da \ts{\sum_{i=1}^N f_i g_i \st f_i\in I,\, g_i\in J, N\in \NN}$.
-- If $I+J = \gens{1}$ then $I\intersect J = IJ$ (coprime or comaximal)
+:::{.proposition title="Properties and Definitions of Ideal Operations"}
+\[  
+I+J   &\da \ts{f+g \st f\in I,\, g\in J} \\
+IJ    &\da \ts{\sum_{i=1}^N f_i g_i \st f_i\in I,\, g_i\in J, N\in \NN} \\
+I+J   = \gens{1} 
+      &\implies I\intersect J = IJ && \text{(coprime or comaximal)}
+.\]
 :::
 
-Note that if $I = \gens{a}$ and $J = \gens{b}$, then $I + J = \gens{a} + \gens{b} = \gens{a, b}$.
-
-
+:::{.fact}
+If $I = \gens{a}$ and $J = \gens{b}$, then $I + J = \gens{a} + \gens{b} = \gens{a, b}$.
+:::
 
 
 :::{.proposition title="Properties of $V$"}
@@ -193,10 +212,15 @@ I(X) \da\ts{f\in k[x_1, \cdots, x_n] \st f(x) = 0\, \forall x\in X}
 :::
 
 :::{.example}
-Let $X$ be the union of the $x_1$ and $x_2$ axes in $\AA^2$, then $I(X) = (x_1 x_2) = \ts {x_1 x_2 g\st g\in k[x_1, x_2]}$.
+Let $X$ be the union of the $x_1$ and $x_2$ axes in $\AA^2$, then 
+\[
+I(X) = (x_1 x_2) = \ts {x_1 x_2 g\st g\in k[x_1, x_2]}
+.\]
 :::
 
-Note that if $X_1 \subset X_2$ then $I(X_1) \subset I(X_2)$.
+:::{.fact}
+If $X_1 \subset X_2$ then $I(X_1) \subset I(X_2)$.
+:::
 
 
 :::{.proposition title="The Image of $V$ is Radical"}
@@ -211,65 +235,94 @@ Our correspondence is thus
 \correspond{\text{Radical Ideals}} &\xleftarrow{I} \correspond{\text{?}}
 .\]
 
-:::{.proposition title="Hilbert Nullstellensatz (Zero Locus Theorem)"}
-\hfill
 
-a. For any affine variety $X$, $V(I(X)) = X$.
 
-b. For any ideal $J \subset k[x_1, \cdots, x_n]$, $I(V(J)) = \sqrt{J}$.
-:::
+## Statement and Proof of Nullstellensatz
+
+:::{.theorem title="Hilbert Nullstellensatz (Zero Locus Theorem)"}
+\envlist
+
+a. For any affine variety $X$, 
+\[
+V(I(X)) = X
+.\]
+
+b. For any ideal $J \subset k[x_1, \cdots, x_n]$, 
+\[
+I(V(J)) = \sqrt{J}
+.\]
 
 Thus there is a bijection between radical ideals and affine varieties.
+:::
 
-
-## Proof of Nullstellensatz
-
-:::{.remark}
+:::{.fact}
 Recall the Hilbert Basis Theorem: any ideal in a finitely generated polynomial ring over a field is again finitely generated.
 :::
 
 We need to show 4 inclusions, 3 of which are easy.
 
-a: $X \subset V(I(X))$:
+:::{.proof title="of the easy inclusions"}
+\envlist
+
+a. $X \subset V(I(X))$:
 
 - If $x\in X$ then $f(x) = 0$ for all $f\in I(X)$.
 - So $x\in V(I(X))$, since every $f\in I(X)$ vanishes at $x$.
 
-b: $\sqrt{J} \subset I(V(J))$:
+b. $\sqrt{J} \subset I(V(J))$:
 
 - If $f\in \sqrt{J}$ then $f^k \in J$ for some $k$.
 - Then $f^k(x) = 0$ for all $x\in V(J)$.
 - So $f(x) = 0$ for all $x\in V(J)$.
 - Thus $f\in I(V(J))$.
 
-c: $V(I(X)) \subset X$:
+c. $V(I(X)) \subset X$:
 
 - Need to now use that $X$ is an affine variety.
   - Counterexample: $X = \ZZ^2 \subset \CC^2$, then $I(X) = 0$.
-    But $V(I(X)) = \CC^2$, but $\CC^2 \not\subset \ZZ^2$.
+    But $V(I(X)) = \CC^2 \not\subset \ZZ^2$.
 
 - By (b), $I(V(J)) \supset \sqrt{J} \supset J$.
 - Since $V(\wait)$ is order-reversing, taking $V$ of both sides reverses the containment.
 - So $V(I(V(J))) \subset V(J)$, i.e. $V(I(X)) \subset X$.
 
-d: $I(V(J)) \subset \sqrt{J}$ (hard direction)
+:::
+
+Thus the hard direction that remains is
+
+d. $I(V(J)) \subset \sqrt{J}$.
+
+We'll need the following important theorem:
+
+:::{.theorem title="Noether Normalization"}
+Any finitely-generated field extension $k_1 \injects k_2$ is a finite extension of a purely transcendental extension, i.e. there exist $t_1, \cdots, t_\ell$ such that $k_2$ is finite over $k_1(t_1, \cdots, t_\ell)$.
+:::
+
+:::{.warnings}
+Noether normalization is perhaps more important than the Nullstellensatz!
+:::
+
 
 :::{.theorem title="1st Version of Nullstellensatz"}
-Suppose $k$ is algebraically closed and uncountable (still true in countable case by a different proof).
-
+Suppose $k$ is algebraically closed and uncountable [^countable_case]
 Then the maximal ideals in $k[x_1, \cdots, x_n]$ are of the form $(x_1 - a_1, \cdots, x_n - a_n)$.
+
+
+[^countable_case]: 
+Still true in countable case by a different proof.
+
 :::
 
 :::{.proof}
 Let $\mfm$ be a maximal ideal, then by the Hilbert Basis Theorem, $\mfm = \gens{f_1, \cdots, f_r}$ is finitely generated.
-
 Let $L = \QQ[\ts {c_i}]$ where the $c_i$ are all of the coefficients of the $f_i$ if $\ch(K) = 0$, **or** $\FF_p[\ts {c_i}]$ if $\ch(k) = p$.
 Then $L\subset k$.
-
 Define $\mfm_0 = \mfm\intersect L[x_1, \cdots, x_n]$.
 Note that by construction, $f_i \in \mfm_0$ for all $i$, and we can write $\mfm = \mfm_0 \cdot k[x_1, \cdots, x_n]$.
 
-**Claim**: $\mfm_0$ is a maximal ideal.
+:::{.claim}
+$\mfm_0$ is a maximal ideal.
+:::
 
 If it were the case that 
 \[  
@@ -280,27 +333,23 @@ then
 \mfm_0\cdot k[x_1, \cdots, x_n] \subsetneq \mfm_0'\cdot k[x_1, \cdots, x_n]  \subsetneq k[x_1, \cdots, x_n]
 .\]
 
-> So far: constructed a smaller polynomial ring and a maximal ideal in it.
-
+So far, we've constructed a smaller polynomial ring and a maximal ideal in it.
 Thus $L[x_1, \cdots, x_n]/\mfm_0$ is a field that is finitely generated over either $\QQ$ or $\FF_p$.
-
-:::{.theorem title="Noether Normalization"}
-Any finitely-generated field extension $k_1 \injects k_2$ is a finite extension of a purely transcendental extension, i.e. there exist $t_1, \cdots, t_\ell$ such that $k_2$ is finite over $k_1(t_1, 
-\cdots, t_\ell)$.
-:::
-
-> Note: this theorem is perhaps more important than the Nullstellensatz!
-
-Thus $L[x_1, \cdots, x_n]/\mfm_0$ is finite over some $\QQ(t_1, \cdots, t_n)$, and since $k$ is uncountable, there exists an embedding $\QQ(t_1, \cdots, t_n) \injects k$.
-
-> Use the fact that there are only countably many polynomials over a countable field.
+So $L[x_1, \cdots, x_n]/\mfm_0$ is finite over some $\QQ(t_1, \cdots, t_n)$, and since $k$ is uncountable, there exists an embedding $\QQ(t_1, \cdots, t_n) \injects k$.[^countable_polynomials]
+\
 
 This extends to an embedding of $\phi: L[x_1, \cdots, x_n]/\mfm_0 \injects k$ since $k$ is algebraically closed.
 Letting $a_i$ be the image of $x_i$ under $\phi$, then $f(a_1, \cdots, a_n) = 0$ by construction, $f_i \in (x_i - a_i)$ implies that $\mfm = (x_i - a_i)$ by maximality.
+
+[^countable_polynomials]: 
+Here we use the fact that there are only countably many polynomials over a countable field.
+
 :::
 
 
 # Thursday, August 27
+
+## Consequence of the Nullstellensatz
 
 Recall Hilbert's Nullstellensatz:
 
@@ -319,10 +368,14 @@ In proving $I(V(J)) \subseteq \sqrt{J}$, we had an important lemma (Noether Norm
 
 :::{.corollary title="?"}
 If $V(I)$ is empty, then $I = \gens{1}$.
+:::
 
-> Slogan: the only ideals that vanish nowhere are trivial.
-> No common vanishing locus $\implies$ trivial ideal, so there's a linear combination that equals 1.
+:::{.remark}
+This is because no common vanishing locus $\implies$ trivial ideal, so there's a linear combination that equals 1.
+:::
 
+:::{.slogan}
+The only ideals that vanish nowhere are trivial.
 :::
 
 
@@ -336,31 +389,39 @@ By the classification of maximal ideals, $\mfm = \gens{x-a_1, \cdots, x-a_n}$, s
 Returning to the proof that $I(V(J)) \subseteq \sqrt{J}$: let $f\in V(I(J))$, we want to show $f\in \sqrt{J}$.
 Consider the ideal $\tilde J \da J + \gens{ft - 1} \subseteq k[x_1, \cdots, x_n, t]$.
 
-Observation: $f = 0$ on all of $V(J)$ by the definition of $I(V(J))$.
-But $ft-1 \neq 0$ if $f=0$, so $V(\tilde J) = V(G) \intersect V(ft-1) = \emptyset$.
 
-![Effect, a hyperbolic tube around $V(J)$, so both can't vanish](figures/image_2020-08-27-09-56-33.png)
+:::{.observation}
+$f = 0$ on all of $V(J)$ by the definition of $I(V(J))$.
+:::
 
+However, if $f=0$, then $ft-1 \neq 0$, so $V(\tilde J) = V(G) \intersect V(ft-1) = \emptyset$.
 
-Applying the corollary $\tilde J = (1)$, so $1 = \gens{ft-1} g_0(x_1, \cdots, x_n, t) + \sum f_i g_i(x_1, \cdots, x_n, t)$ with $f_i \in J$.
+![Effect, a hyperbolic tube around $V(J)$, so both can't vanish](figures/image_2020-08-27-09-56-33.png){width=350px}
+
+Applying the corollary $\tilde J = (1)$, so 
+\[
+1 = \gens{ft-1} g_0(x_1, \cdots, x_n, t) + \sum f_i g_i(x_1, \cdots, x_n, t)
+\]
+with $f_i \in J$.
 Let $t^N$ be the largest power of $t$ in any $g_i$.
 Thus for some polynomials $G_i$, we have
 \[  
 f^N \da (ft-1) G_0(x_1, \cdots, x_n, ft) + \sum f_i G_i(x_1, \cdots, x_n, ft)
 \]
 noting that $f$ does not depend on $t$.
-
 Now take $k[x_1, \cdots, x_n, t]/\gens{ft-1}$, so $ft=1$ in this ring.
 This kills the first term above, yielding
 \[  
 f^N = \sum f_i G_i(x_1, \cdots, x_n, 1) \in k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\]
 
-Observation: there is an inclusion
+:::{.observation}
+There is an inclusion
 \[  
 k[x_1, \cdots, x_n] \injects
 k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\]
+:::
 
 :::{.exercise}
 Why is this true?
@@ -369,13 +430,15 @@ Why is this true?
 Since this is injective, this identity also holds in $k[x_1, \cdots, x_n]$.
 But $f_i\in J$, so $f\in \sqrt{I}$.  
 
-
 :::{.example}
 Consider $k[x]$.
 If $J\subset k[x]$ is an ideal, it is principal, so $J = \gens{f}$.
 We can factor $f(x) = \prod_{i=1}^k (x-a_i)^{n_i}$ and $V(f) = \ts{a_1, \cdots, a_k}$.
-Then $I(V(f)) = \gens{(x-a_1)(x-a_2)\cdots(x-a_k)} = \sqrt{J} \subsetneq J$.
-Note that this loses information.
+Then 
+\[
+I(V(f)) = \gens{(x-a_1)(x-a_2)\cdots(x-a_k)} = \sqrt{J} \subsetneq J
+,\]
+so this loses information.
 :::
 
 :::{.example}
@@ -414,9 +477,12 @@ Example of property (b):
 
 Take $X_1 = V(y-x^2)$ and $X_2 = V(y)$, a parabola and the $x\dash$axis.
 
-![Image](figures/image_2020-08-27-10-26-45.png)
+![Image](figures/image_2020-08-27-10-26-45.png){width=350px}
 
-Then $X_1 \intersect X_2 = \ts{(0, 0)}$, and $I(X_1) + I(X_2) = \gens{y-x^2, y} = \gens{x^2, y}$, but $I(X_1 \intersect X_2) = \gens{x, y} = \sqrt{\gens{x^2, y}}$.
+Then $X_1 \intersect X_2 = \ts{(0, 0)}$, and $I(X_1) + I(X_2) = \gens{y-x^2, y} = \gens{x^2, y}$, but 
+\[
+I(X_1 \intersect X_2) = \gens{x, y} = \sqrt{\gens{x^2, y}}
+\]
 :::
 
 :::{.proposition title="?"}
@@ -441,9 +507,9 @@ A(X) \da k[x_1, \cdots, x_n]/ I(X)
 Elements $f\in A(X)$ are called *polynomial* or *regular* functions on $X$.
 :::
 
-
-Observation:
+:::{.observation}
 The constructions $V(\wait), I(\wait)$ work just as well for $A(X)$ and $X$.
+:::
 
 Given any $S\subset A(Y)$ for $Y$ an affine variety,
 \[  
@@ -1585,7 +1651,7 @@ Thus $g/f^N = g_b / f_b$ for all $b$, and we can thus conclude
 For $X$ an affine variety, $\OO_X(X) = A(X)$.
 :::
 
-:::{.warning}
+:::{.warnings}
 For $k$ not algebraically closed, the proposition and corollary are both false.
 Take $X = \AA^1/\RR$, then ${1\over x^2+1} \in \RR(x)$, but $\OO_X(X) \neq A(X) = \RR[x]$.
 :::
@@ -1868,7 +1934,7 @@ Recall that a *local ring* is a ring with a unique maximal ideal $\mfm$.
 Given a prime ideal $\mfp \in R$, so $ab\in \mfp \implies a,b\in \mfp$, the complement $R\setminus P$ is closed under multiplication.
 So we can localize to obtain $R_\mfp = \ts{a/s \st s\in R\setminus P, a\in R}/\sim$ where $a'/s' \sim a/s$ iff there exists a $t\in R\sm P$ such that $t(a's - as') = 0$.
 
-:::{.warning}
+:::{.warnings}
 Note that $R_f$ is localizing at the powers of $f$, whereas $R_\mfp$ is localizing at the *complement* of $\mfp$.
 :::
 
@@ -3586,10 +3652,13 @@ Since this works for any $z_{ij}$, $f^{-1}$ is well-defined and a morphism, maki
 # Thursday, November 19
 
 
-Why use projective varieties? 
+## Why use projective varieties? 
+
 For e.g. a manifold, there is a well-defined intersection pairing, and the same way that $[\mu] \in H^1(T, \ZZ) = 1$ in the torus, we have $[L]^2 = 1$ in $\PP^2_{/\CC}$, so every two lines intersect in a unique point.
 Also, Bezout's theorem: any two curves of degrees $d, e$ in projective space intersect in $d\cdot e$ points.
 Also note that we have a notion of compactness that works in the projective setting but not for affine varieties.
+
+## Projective Varieties are Varieties
 
 Last time: we saw the Segre embedding $(\vector x, \vector y)\mapsto [x_i y_j]$, which was an isomorphism onto its image $X = V(z_{ij}z_{kl} - z_{ik} z_{kj} )$, which exhibits $\PP^n \cross \PP^m$ as a projective variety.
 
@@ -3671,8 +3740,6 @@ Note that $a\not\in \pi(Z)$
 Recap: we have a closed subset of $\PP^n \cross  \PP^m$, want to know its projection is closed. 
 We looked at points not in the closed set, this happens iff the degree $d$ part of the polynomial is not contained in the part where we evaluate by $a$.
 This reduces to a linear algebra condition: taking arbitrary linear combinations yields a surjective map.
-\
-
 Thus $a\in \pi(Z)$ iff $\Phi_a$ is *not* surjective.
 \
 

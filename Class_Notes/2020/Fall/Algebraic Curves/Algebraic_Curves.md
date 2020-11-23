@@ -432,7 +432,7 @@ There's an extra technical condition to ensure the base change is a field: the f
 Is this necessarily the case if $\kappa(k) = k$? 
 No, for a technical reason:
 
-:::{.warning}
+:::{.warnings}
 This is pretty technical, yo.
 :::
 

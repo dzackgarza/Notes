@@ -4,22 +4,23 @@
 \usepackage[most]{tcolorbox}
 
 % Color Palette
-\definecolor{thm_color}{HTML}{955670} %Maroon
+\definecolor{thm_color}{HTML}{955670} % Maroon / China Rose
 \definecolor{defn_color}{HTML}{275070}
-\definecolor{proof_color}{HTML}{F3E1C0} %camel
-\definecolor{prop_color}{HTML}{F3E1C0} %camel
+\definecolor{proof_color}{HTML}{F3E1C0} % Camel
+\definecolor{prop_color}{HTML}{CBA135} % Satin Sheen Gold
 \definecolor{soln_color}{HTML}{a0c4ff}
 \definecolor{concept_color}{HTML}{e07a5f}
 % Other colors
 \definecolor{camel}{rgb}{0.76, 0.6, 0.42}
 \definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
 \definecolor{block-gray}{gray}{0.85}
+\definecolor{quote_eggshell}{HTML}{F3EFE0}
 
 % Box for quotes 
 \usepackage{xcolor}
 \usepackage{environ}
 \NewEnviron{myblock}
-{\colorbox{block-gray}{%
+{\colorbox{quote_eggshell}{%
 \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
 \small\addtolength{\leftskip}{10mm}
 \addtolength{\rightskip}{10mm}
@@ -27,7 +28,6 @@
 }
 \renewcommand{\quote}{\myblock}
 \renewcommand{\endquote}{\endmyblock}
-
 
 % Warning environment
 \usepackage{stackengine}
@@ -38,19 +38,6 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Warning
-\newtheoremstyle{warning}% name
-  {0em}%         Space above, empty = `usual value'
-  {0em}%         Space below
-  {\normalfont}% Body font
-  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries}% Thm head font
-  {:}%        Punctuation after thm head
-  {0.35em}% Space after thm head: \newline = linebreak
-  {\danger \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
-\theoremstyle{warning}
-\newtheorem{warning}{Warning}[section]
 
 % Theorem 
 \newtheoremstyle{theorem}% name
@@ -73,8 +60,8 @@
   borderline west={4pt}{0pt}{thm_color},
   attach title to upper={}
 }
-\newtheorem{theorem}{Theorem}[section]
-
+\newtheorem{theorem}{Theorem}
+\numberwithin{theorem}{subsection} % important bit
 
 % Proposition 
 \tcolorboxenvironment{proposition}{
@@ -85,7 +72,8 @@
   opacityback=0.0,
   colframe=prop_color
 }
-\newtheorem{proposition}{Proposition}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\numberwithin{proposition}{subsection} % important bit
 
 % Conjecture
 \tcolorboxenvironment{conjecture}{
@@ -96,7 +84,8 @@
   opacityback=0.1,
   colframe=thm_color
 }
-\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{conjecture}[theorem]{Conjecture}
+\numberwithin{conjecture}{subsection} % important bit
 
 % Lemma
 \tcolorboxenvironment{lemma}{
@@ -107,7 +96,8 @@
   opacityback=0.2,
   colframe=prop_color
 }
-\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\numberwithin{lemma}{subsection} % important bit
 
 % Corollary
 \tcolorboxenvironment{corollary}{
@@ -118,7 +108,8 @@
   opacityback=0.1,
   colframe=prop_color
 }
-\newtheorem{corollary}{Corollary}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\numberwithin{corollary}{subsection} % important bit
 
 % Proof Style
 \newtheoremstyle{proof}% name
@@ -166,7 +157,8 @@
   fonttitle={\large\bfseries},
   attach title to upper={},
 }
-\newtheorem{definition}{Definition}[section]
+\newtheorem{definition}[theorem]{Definition}
+\numberwithin{definition}{subsection} % important bit
 
 % Problem Style
 \newtheoremstyle{problem} % name
@@ -271,34 +263,55 @@
   {0em}%         Space below
   {\normalfont}% Body font
   {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
-  {\itshape}% Thm head font
+  {\bfseries}% Thm head font
   {:}%        Punctuation after thm head
   {0.35em}% Space after thm head: \newline = linebreak
   {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{defmod}
-\newtheorem{exercise}{Exercise}[section]
-\newtheorem{example}{Example}[section]
-\newtheorem{remark}{Remark}[section]
-\newtheorem{fact}{Fact}[section]
-\newtheorem{question}{Question}[section]
-\newtheorem{answer}{Answer}[section]
+
+\newtheorem{exercise}[theorem]{Exercise}
+\numberwithin{exercise}{subsection} % important bit
+
+\newtheorem{example}[theorem]{Example}
+\numberwithin{example}{subsection} % important bit
+
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{remark}{subsection} % important bit
+
+\newtheorem{observation}[theorem]{Observation}
+\numberwithin{observation}{subsection} % important bit
+
+\newtheorem{slogan}[theorem]{Slogan}
+\numberwithin{slogan}{subsection} % important bit
+
+\newtheorem{fact}[theorem]{Fact}
+\numberwithin{fact}{subsection} % important bit
+
+\newtheorem{question}[theorem]{Question}
+\numberwithin{question}{subsection} % important bit
+
+\newtheorem{answer}[theorem]{Answer}
+\numberwithin{answer}{subsection} % important bit
 
 %\usepackage{environ}
 
 %\RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
 
-% Number things like "Proposition 5.1.2"
-\numberwithin{proposition}{subsection} % important bit
-\numberwithin{corollary}{subsection} % important bit
-\numberwithin{theorem}{subsection} % important bit
-\numberwithin{definition}{subsection} % important bit
-\numberwithin{example}{subsection} % important bit
-\numberwithin{exercise}{subsection} % important bit
-\numberwithin{remark}{subsection} % important bit
-\numberwithin{fact}{subsection} % important bit
-\numberwithin{question}{subsection} % important bit
-\numberwithin{answer}{subsection} % important bit
-\numberwithin{conjecture}{subsection} % important bit
-\numberwithin{warning}{subsection} % important bit
 
-% Todo: Conjecture
+
+\newtheoremstyle{warnenv}% name
+  {0em}%         Space above, empty = `usual value'
+  {0em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {:}%        Punctuation after thm head
+  {0.35em}% Space after thm head: \newline = linebreak
+  {
+    \danger 
+    \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}
+  }%
+\theoremstyle{warnenv}
+\newtheorem{warnings}[theorem]{Warning}
+%\numberwithin{warning}{subsection} % important bit
+

@@ -200,7 +200,7 @@ The values are given by
 where we give the set $\zlnz$ the discrete topology and take morphisms to be continuous maps.
 :::
 
-:::{.warning}
+:::{.warnings}
 The constant sheaf $\underline{S}$ doesn't associate $S$ to every open set: it instead associates $S^d$ where $d$ is the number of components. 
 The former would only be a presheaf, and not a sheaf.
 :::
@@ -250,7 +250,7 @@ Here, we don't know how to sheafify a presheaf on a site.
 The usual construction involves forming the *espace étalé* and taking sections does not work for a site, you need a genuinely different argument.
 :::
 
-:::{.warning}
+:::{.warnings}
 Even showing cokernels exist in the category of abelian sheaves on a site is nontrivial. 
 Try as an exercise!
 :::

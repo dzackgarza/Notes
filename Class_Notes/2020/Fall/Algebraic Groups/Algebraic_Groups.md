@@ -3640,7 +3640,7 @@ We can get a stronger version of weak linkage, which we'll just call linkage:
 .\]
 :::
 
-:::{.warning}
+:::{.warnings}
 These are difficult to compute in general, or to even detect when they're zero.
 For $p\gg 0$, these multiplicities are computed via Kazhdan-Lusztig polynomials.
 :::
@@ -4919,7 +4919,7 @@ Now apply the functor $\ind_{G_r B}^{G}(\wait)$ which yields
 
 Question: is this a good $(p, r)$ filtration?
 
-:::{.warning}
+:::{.warnings}
 Note that if we have
 \[  
 0 \to N_1 \to N_2 \to N_2/N_1 \to 0

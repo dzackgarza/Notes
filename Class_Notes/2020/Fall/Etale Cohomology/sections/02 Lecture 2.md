@@ -19,7 +19,7 @@ Why prove this theorem?
 Later on, to prove the Riemann hypothesis for varieties over finite fields, we'll prove that the Frobenius acts in this way on the étale cohomology.
 There is in fact a *reason* this is true, coming from some special properties of the behaviors of the cohomology of varieties which aren't manifested in random topological spaces.
 
-:::{.warning}
+:::{.warnings}
 The proof here will not look at all like Deligne's proof of the Riemann hypothesis for varieties over finite fields.
 We'll see shadows of it, but use a lot of things that are true for complex varieties that are still not known for varieties over finite fields.
 :::
@@ -221,7 +221,7 @@ This also gives a counterexample to étale morphisms always looking like coverin
 
 :::
 
-:::{.warning}
+:::{.warnings}
 This is an important example to keep in mind, because you'll often see arguments that treat étale maps as though they were finite onto their image.
 :::
 
@@ -393,7 +393,7 @@ such that several axioms are satisfied.
 We'll discuss the axioms next time, they just capture the notion of what a cover of a topological space should look like.
 
 
-:::{.warning}
+:::{.warnings}
 There are at least three different notions of this definition!
 The one above is perhaps the least general but the easiest to work with.
 :::
