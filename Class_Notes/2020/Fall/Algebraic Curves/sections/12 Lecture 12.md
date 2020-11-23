@@ -5,7 +5,7 @@ Idea: we've defined some affine dedekind domains (the holomorphy rings) had a fi
 These are analogous to the ring of integers of a number field, or more generally $S\dash$integer rings.
 Recall some basic results from NT1: the finiteness of the class group, and the finite generation of the unit group.
 Here we have a class groups of affine Dedekind domain, and by Rosen's theorem, there are infinitely many as you vary over nonempty subsets of places of the function field, and they're all closely connected to a geometric class group: the degree zero divisor class group.
-Thus by this analogy, when the field is finite, we'd expect that $\Div^0$ is finite as well, which is the main result we'll prove today.
+Thus by this analogy, when the field is finite, we'd expect that $\Cl^0(K)$ is finite as well, which is the main result we'll prove today.
 
 ## Base Extension
 
@@ -29,6 +29,8 @@ In the analogy of function fields as the meromorphic functions on a Riemann surf
 So arithmetic extensions are just extending scalars, and *geometric* extensions  don't change the constant field at all and instead have the property that if you extended scalars to the algebraic closure, you'd have an extension of the same degree.
 Note that the étale fundamental group also has a similar decomposition into an arithmetic part and a geometric part (see Daniel Litt's course).
 
+### Splitting of Places
+
 :::{.question}
 Given a place in $K$, how does it split (or not) in $K_r$?
 :::
@@ -40,7 +42,7 @@ Let $S$ be the integral closure of $K$ in $K_r$; this place corresponds to a max
 So this question is a special case of how a prime ideal factors in an extension of Dedekind domains.
 :::
 
-We'll temporarily blackbox the following lemma:
+We'll temporarily black-box the following lemma:
 
 :::{.lemma title="?"}
 Suppose $v$ is the downstairs place, $r$ is the degree of the extension, and $d\da \deg(v)$.
@@ -96,4 +98,156 @@ The residue field grows, but its degree can only shrink.
 Thus making an extension forces the degrees of the upstairs places to *decrease*.
 :::
 
+We're trying to find out in how many ways a discrete valuation extends to a finite degree field extension.
+From ANTII, we have a result that describes this: if $v$ is a rank 1 valuation on $k$ and $L/K$ is a finite degree extension, then the extensions of $v$ to $L$ correspond with $\mspec(\hat{K}_v \tensor_K L)$, where the hat denotes completing $K$ with respect to the valuation. 
+The $e,f,g$ can all be computed as well.[^pete_note_164]
 
+[^pete_note_164]: See Pete's NTII notes, Theorem 1.64.
+
+This is some finite degree $\hat{K}_v$ algebra, and if $L/K$ is separable then this decomposes as a finite product of finite degree field extensions of $K$ and $\hat{K}_v$, the number of which will be $g$.
+The $e$ and $f$ can be read off because each extension will have a ramified and unramified part.
+
+
+:::{.exercise title="?"}
+\envlist
+
+a. Show that $\FF_{q^d} \tensor_{\FF_q} \FF_{q^r} \cong  \FF_{q^l}^{d'}$ where $l = \lcm(d, r)$ and $d' = \gcd(d, r)$.
+
+b. Generalize this to the case when $k_p / k$ and $\ell / k$ are both cyclic galois extensions.
+
+:::
+
+## Degree 1 Places and Rational Points on a Curve
+
+
+Taking the lemma as a black box, for $r\in \ZZ^+$ let $N_r \da \abs{\Sigma_1(K_r/ \fqr) }$, i.e. the number of degree 1 places of the function field after making a degree $r$ extension.
+Equivalently, $N_r = \abs{C(\fqr)}$ where $C$ is a unique complete nonsingular curve over $\fq$ corresponding to $K$, and this denotes the number of $\fqr$ rational points.
+We'll eventually see these are finite.
+
+:::{.remark}
+Important way of thinking about these: degree one places of a function field over $k$ correspond to $k\dash$rational points of a curve.
+:::
+
+:::{.corollary title="Equivalence of data: places and rational points"}
+\[  
+N_r = \sum_{d\divides r} d\cdot \abs{\Sigma_d(K/ \fq)}
+,\]
+so knowing the number of closed points of each degree is equivalent to knowing the $\fqr\dash$points for all $r$.
+:::
+
+:::{.proof title="?"}
+Let $w\in \Sigma_1(K_r/\fqr)$ be a degree 1 point and set $v \da w\intersect K$ so $w$ lies over $v$.
+What is the degree of $v$?
+Setting $d \da \deg(v)$, the lemma gives 
+\[  
+1 = \deg(w) = {d\over \gcd(d, r)}
+,\]
+which implies that $\gcd(d, r) = d$ and thus $d\divides r$.
+So for each $d$ dividing $r$, every degree of $v\in \Sigma(K/\fq)$ contributes $\gcd(d, r) = d$ degree 1 points on $K_r$, i.e. every downstairs degree $d$ place splits into $d$ degree one places.
+So for every such $d$, every degree $d$ closed point contributes $d$ degree 1 closed points lying above it, and conversely if $d$ does not divide $r$ then the upstairs point would not have degree 1, so this accounts for all of the degree 1 points.
+:::
+
+:::{.remark}
+We saw that the degree 1 places and the rational points are the same information, and there is a third equivalently quantity: $A_n$, defined to be the number of effective divisors of degree $n$.
+:::
+
+## Finiteness of Places and Rational Points
+
+:::{.lemma title="?"}
+\envlist
+
+a. For all $d$, the number of degree $d$ closed points $\Sigma_d(K/\fq)$ is finite (and therefore $N_r$ is finite), and
+
+b. For all $n$, $A_n$ is finite.
+:::
+
+:::{.proof title="of a"}
+Let $L/K$ be a degree $n$ extension of regular function fields over $\fq$.
+We then have a restriction map
+\[  
+r: \Sigma(L/\fq) \surjects \Sigma(K/\fq)
+\]
+which we showed is surjective with finite fibers.
+We can say a little bit more: for all places $w \in \Sigma(L/\fq)$, we have an inequality
+\[  
+\qty{1\over n}\deg(w) \leq \deg(r(w)) \leq \deg(w)
+,\]
+noting that we're now measuring all degrees over a common ground field $\fq$.
+So things are now what you'd expect: the degree of the upstairs point is a multiple of the degree of the downstairs point.
+The upper bound comes from the fact that the residue of the upstairs point is a finite extension of the residue field of the downstairs points.
+The opposite inequality comes from ANTI: the degree of the residual extension is at most the degree of the entire extension.
+
+So $r$ doesn't preserve degrees exactly, but preserves them up to a bounded factor, and thus $\Sigma_{\leq d}(L/\fq)$ is finite for all $d$ $\iff$ $\Sigma_{\leq d}(K/\fq)$ is finite for all $d$.
+Because of this, we can reduce the situation by exchanging the function field $L/\fq$ with any other function field for which $L$ is a finite extension, and in particular we can take the rational function field $K = \FF_q(t)$.
+What are the degree $d$ places of a rational function field?
+There is exactly one place at infinity, and the remaining ones correspond to monic irreducible polynomials.
+Since $\fq$ is finite, there are only finitely many such polynomials of any fixed degree.[^exact_formula]
+
+[^exact_formula]: There is an exact formula for this quantity.
+
+:::
+
+:::{.proof title="of b"}
+Left as an exercise.
+
+Some remarks: how do you build an effective divisor of degree $n$?
+Take closed points (places) and start adding them up with positive coefficients, then the degree of the divisor is the sum of the degrees of the places.
+But if you only have finitely many places, each of which can only be used a bounded number of times (certainly no more than $n$ times!), thus one can only build finitely many effective divisors of each degree.
+:::
+
+## Finiteness of Class Group
+
+
+:::{.proposition title="Finiteness of class group"}
+The degree 0 divisor class group $\Cl^0(K)$ is finite.
+:::
+
+This is a geometric analog of the finiteness of the class group of the ring of integers of a number field.
+By Rosen's theorem, as an immediate corollary, the class group of any affine dedekind domain over a finite ground field is finite.
+This follows from looking at the exact sequence: a finite index subgroup of the class group of any dedekind domain is a quotient of $\Cl^0(K)$, and a finite index subgroup of a finite group is finite.
+
+:::{.proof title="?"}
+Set $\delta \da I(K)$ to be the index, i.e. the least possible degree of a divisor.[^Shmidt_theorem]
+
+[^Shmidt_theorem]: 
+By a theorem of Schmidt, we'll later prove that $\delta = 1$.
+
+In any case, for all $n\in \ZZ$, we have
+\[  
+\Cl^n K = 
+\begin{cases}
+0 & \delta\notdivides n \\
+\abs{\Cl^0 K} & \delta\divides n
+\end{cases}
+.\]
+If you have any degree $n$ divisors, then $\Cl^n K$ will be a coset of $\Cl^0 K$.
+Here we just look at the degree map, which is a group morphism onto its image, of which all nonempty fibers have the same size.
+Thus we may work with $\Cl^n K$ for $n\gg 0$.
+\
+
+In particular, choose $n\geq g$ the genus such that $\delta \divides n$, and let $D \in \Div^n K$.
+A Riemann-Roch computation shows that $\ell(D)$, the dimension of the linear system, is at least $n-g+1$, and so we have $\ell(D) \geq 1$ and $D$ is linearly equivalent to an effective divisor.
+This shows that the map taking effective degree $n$ divisors to $\Cl^n K$ taking a divisor to its divisor class (restricted to effective divisors) is surjective.
+But we just saw that the set of effective degree $n$ divisors is finite -- it was built out of finitely many closed points of bounded degrees -- forcing $\Cl^n K$ to be finite.
+The result follows because $\Cl^n K$ is a coset of $\Cl^0 K$, all of which have the same size, and the index is finite.
+:::
+
+:::{.definition title="Class Number of $K$"}
+The **class number** of $K$ is defined as
+\[  
+h \da \abs{\Cl^0 K}
+.\]
+:::
+
+:::{.remark}
+There is a much fancier proof: there exists a $g\dash$dimensional abelian variety $A / \FF_q$, the *Jacobian variety* of $C/\FF_q$, such that $\Cl^0 K + A(\FF_q)$.
+It is built out of the degree 0 divisor class group in some functorial way.
+In particular, $A$ is a projective variety, and thus embeds into some $\PP^N_{/\FF_q}$, and so $\abs{A(\FF_q)} \leq \abs{\PP^N_{/\FF_q}} < \aleph_0$.
+\
+
+As one varies over all function fields over all finite fields, there will only be finitely many whose class number is bounded by some fixed $h_0$.
+E.g. there are only finitely many function fields of class number 1, and these can be explicitly listed.
+So $h\to \infty$ in some sense, which is not proved by showing that $\abs{A(\fq)} \to \infty$, and we'll instead prove it using methods closer to what we're seeing in this course.
+:::
+
+Up next: setting up the zeta function.
