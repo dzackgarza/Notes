@@ -66,7 +66,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-11-23 }
+{\tiny \textit{Last updated:} 2020-11-24 }
 \end{flushleft}
 
 
@@ -5393,6 +5393,220 @@ so \(\phi(X)\) is finite. Since \(X\) is connected, \(\phi(X)\) is a
 point, making \(\phi\) a constant map.
 
 \end{proof}
+
+\hypertarget{tuesday-november-24}{%
+\section{Tuesday, November 24}\label{tuesday-november-24}}
+
+\hypertarget{the-veronese-embedding}{%
+\subsection{The Veronese Embedding}\label{the-veronese-embedding}}
+
+\begin{definition}[Veronese Embedding]
+
+Let \(n, d > 0\) and let \(f_0, \cdots, f_n\) be the monomials of degree
+\(d\) in \(\kx{n}\). There is a morphism
+\begin{align*}  
+\PP^n \sm V(f_0,\ codts, f_n) &\to \PP^N \\
+\vector x &\mapsto [f_0(\vector x), \cdots, f_N(\vector x)]
+,\end{align*} where \(N+1\) is the number of monomials, and is equal to
+\({n+d \choose d}\).
+
+\end{definition}
+
+\begin{remark}
+
+It is true that \(V(f_0, \cdots, f_N) \neq \emptyset\), since
+\(V(x_0^d, x_1^d, \cdots, x_n^d) = V(x_0, \cdots, x_n)\). This will be
+the Veronese embedding, although we need to prove it is an embedding. On
+an open set \(D(x_0) \subset \PP^2\) one can define an inverse. Suppose
+we hyave a coordinate \(z_j = x_i^{d-1} x_j\) and \(z_i = x_i^d\) on
+\(\PP^N\). Then we can take the point
+\begin{align*}  
+\tv{ {z_1 \over z_i}, \cdots, {z_i \over z_i}, \cdots, {z_n \over z_i} }
+.\end{align*} This defines an inverse on \(D(z_i)\). Since the open sets
+\(D(x_i)\) cover \(\PP^N\), we have an inverse on the entire image.
+
+\end{remark}
+
+\begin{remark}
+
+This embedding converts hypersurfaces of degree \(d\) into hyperplanes.
+The Veronese is an isomorphism onto its image. Consider some arbitrary
+degree \(d\) element of \(S(\PP^n)\). Consider
+\(X \da V(\sum_{j=1}^N a_j f_j) \subset\PP^n\), where \(a_j\in k\),
+which is equal to \(\phi^{-1}(V(\sum_{j=1}^N a_j w_j ))\).
+
+\todo[inline]{Probably not right.}
+
+We have a picture: embedding \(\PP^n\injects \PP^N\) in some curved way
+sends a hypersurface to the intersection of a hyperplane with the
+embedded image:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-11-24-09-48-27.png}
+\caption{Image}
+\end{figure}
+
+\end{remark}
+
+\begin{definition}[Hyperplane Sections]
+
+Let \(X \subset\PP^n\) be a projective variety. A \textbf{hyperplane
+section} is the intersection of \(X\) with some hyperplane
+\(H \da V(f)\) for \(f\) some linear homogeneous polynomial.
+
+\end{definition}
+
+\begin{example}[of the Veronese embedding]
+
+Let \(n=1\), then we get the embedding
+\begin{align*}  
+\PP^1 &\injects \PP^d \\
+[x_0: x_1] &\mapsto [x_0^d: x_0^{d-1}x_1 : \cdots : x_0 x_1^{d-1} : x_1^d]
+.\end{align*} Note that there are \(d+1\) such monomials, and not all
+can simultaneously vanish. The image of this \(\PP^1\) is called the
+\emph{twisted normal curve}.
+
+\end{example}
+
+\begin{example}[?]
+
+Take
+\begin{align*}  
+\PP^1 &\injects \PP^2 \\
+[x_0 : x_1] &\mapsto [x_0^2 : x_0 x_1: x_1^2]
+.\end{align*} What homogeneous polynomials cut out \(\phi(\PP^1)\)?
+I.e., what is \(I(\phi(\PP^1)) \subset S(\PP^2)\)? Note that
+\(w_0 w_2 - w_1^2 \ro{}{\phi(\PP^1)}\), so this is an element. Is it a
+generator? I.e., given any \(p\in V(w_0 w_2 - w_1^2)\) is of the form
+\(p = [x_0^2 : x_0 x_1: x_1^2]\) for some \(x_), x_1 \in k\)? The answer
+is yes, by choosing signs of \(\sqrt{w_0}, \sqrt{w_2}\).
+
+\end{example}
+
+\begin{example}[?]
+
+Take
+\begin{align*}  
+\phi: \PP^1 &\injects \PP^3 \\
+[x_0: x_1] &\mapsto [x_0^3: x_0^2 x_1 : x_0 x_1^2: x_1^3]
+.\end{align*} What are some elements of this ideal?
+
+\begin{itemize}
+\tightlist
+\item
+  \(w_0 w_3 - w_1 w_2\)
+\item
+  \(w_0 w_2 - w_1^2\)
+\item
+  \(w_1 w_3 - w_2^2\)
+\end{itemize}
+
+Note that the first is not a \(k\dash\)linear combination of the other
+two. There is also a pattern:
+\(w_0/w_1 = w_1 / w_2 = w_2/w_3 = \cdots\). However, there will be
+issues when the denominators are zero.
+
+In this case, \(\phi(\PP^1)\) is the \emph{twisted cubic}. What is
+\(V(w_0 w_2 - w_1^2, w_1 w_3 - w_2^2) \sm \phi(\PP^1)\)? Note that being
+in \(\phi(\PP^1)\) means \(w_1, w_2, w_3 \neq 0\), and similarly if
+\(w_0, w_1, w_2 \neq 0\). We can conclude that
+\(V(w_1, w_2) \subset V(w_0 w_2 - w_1^2, w_1 w_3 - w_2^2)\):
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-24-10-16-35.png}
+\caption{Image}
+\end{figure}
+
+This variety has two components: the twisted cubic, and a line. This
+variety has degree 4, since any generic hyperplane intersects it at 4
+points. Why? Pulling back a hyperplane yields a cubic, which generally
+vanishes at three points in affine space.
+
+\end{example}
+
+\begin{remark}
+
+\(\phi(\PP^1)\) is a nice example of a curve in \(\PP^3\) that can not
+be cut out by two homogeneous polynomials.
+
+\end{remark}
+
+\begin{remark}
+
+This is usually used to embed intersections like \(X\intersect V(f)\) to
+\(X\intersect H\), exchanging a hypersurface section for a hyperplane
+section. This is useful for induction:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Prove for \(\PP^n\).
+\item
+  Induction: If it's true for \(X \subset\PP^n\), then it's true for
+  \(X \intersect H\) for some hyperplane \(H \subset\PP^N\).
+\end{enumerate}
+
+This will prove it for any projective variety by taking
+\(X = V(f_1, \cdots, f_n)\) and embedding.
+
+\end{remark}
+
+\hypertarget{chapter-10-smoothness}{%
+\subsection{Chapter 10: Smoothness}\label{chapter-10-smoothness}}
+
+Motivation: we want to distinguish between things like \(V(xy)\) and
+\(V(xy-1)\).
+
+\begin{figure}
+\centering
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-24-10-31-47.png}
+\caption{Image}
+\end{figure}
+
+Over \(\CC\), we can distinguish these: one is a complex manifold, and
+the other is not. This means we want each point to have a neighborhood
+biholomorphic to a disc.
+
+\begin{definition}[Tangent Space]
+
+Let \(a\in X\) be a point on a variety \(X\). Choose an affine open set
+containing \(a\) and a chart such that \(a\) is the origin, then define
+\begin{align*}  
+T_a X \da V(f_1 \st f\in I(X))
+,\end{align*} where \(f_1\) denotes the linear part of \(f\).
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-11-24-10-38-10.png}
+\caption{Image}
+\end{figure}
+
+\end{definition}
+
+\begin{remark}
+
+Since \(0=a\), any \(f\in I(X)\) has no constant term -- otherwise \(f\)
+would not vanish at the origin.
+
+\end{remark}
+
+\begin{example}[?]
+
+Consider \(T_{(1, 1)} V(xy-1)\). First translate \((1, 1)\) to the
+origin, so
+\(T_{(1, 1)} V(xy-1) = T_{(0, 0)} = V((x-1)(y-1) - 1) = T_{(0, 0)} V(xy-x-y) = V(-x-y)\).
+On the other hand, \(T_{(0, 0)} V(xy) = V(0) = \CC^2\).
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2020-11-24-10-41-13.png}
+\caption{Image}
+\end{figure}
+
+\end{example}
 
 \hypertarget{misc-unsorted}{%
 \section{Misc Unsorted}\label{misc-unsorted}}
