@@ -128,7 +128,8 @@ where the last step follows from adding and subtracting $g-1$.
 :::
 
 :::{.proof title="Step 3"}
-By step 2, it is enough to show that for all $A_1 \in \Div K$, there exists a bigger divisor $A_2 \geq A_1$ such that $\iota(A_2) = 0$ and $\mathcal{A}_K(A_2) + K = \mathcal{A}_K$.
+By step 2, it is enough to show that for all $A_1 \in \Div K$, there exists a bigger divisor $A_2 \geq A_1$ such that $\iota(A_2) = 0$ (by just adding closed points) and $\mathcal{A}_K(A_2) + K = \mathcal{A}_K$.
 By Riemann's inequality, we have $\iota(A_2) =0$ if $\deg A_2 \gg 0$, so choose such an $A_2 \geq A_1$.
 Thus we're reduced to showing that if $\iota(B)  = 0$ for all $B\in \Div K$, then $\mathcal{A}_K = \mathcal{A}_K(B) + K$.
+We'll do this by choosing another large effective divisor
 :::
