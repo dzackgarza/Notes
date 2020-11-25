@@ -143,12 +143,17 @@ Also, Riemann's inequality gives $\ell(B_1) \geq \deg(B_1) - g + 1$, so we have 
 Thus any divisor greater than or equal to a non-special divisor is again non-special.
 \
 
-Now take an arbitrary element $\alpha\in \mathcal{A}_K$ of the adele ring, then we may choose $B_1 \geq B$ such that $\alpha\in \mathcal{A}_K(B_1)$.
-I.e., choosing $B_1$ large enough is allowing the poles to be however bad you want them to be, and $\alpha$ is a fixed element, and there are only finitely many elements with valuation $\geq 0$.
+We want to take an arbitrary element of the adele ring and show that it differs from an element of the adelic Riemann-Roch space associated to $B$ by an element of $K$, so we'll cleverly choose a divisor in order to do this.
+So take an arbitrary element $\alpha\in \mathcal{A}_K$ of the adele ring, then we may choose $B_1 \geq B$ such that $\alpha\in \mathcal{A}_K(B_1)$.
+I.e., choosing $B_1$ large enough is allowing the poles to be however bad you want them to be, and $\alpha$ is a fixed element, all but finitely many elements have valuation $\geq 0$.
+
+We understand the relative situation well, based on what we proved.
 By step 2, we have
 \[  
 \dim_k(\mathcal{A}_K(B_1) + K) / (\mathcal{A}_K(B) + K) 
-= \deg B_1 - \ell(B_1)
+&= \deg \qty{B_1 - \ell(B_1)} - \qty{\deg B - \ell(B) } \\
+&= (g-1) - (g-1) \\
+&= 0
 .\]
 
 [^cone_structure]: This "cone structure" on divisors is very useful!
