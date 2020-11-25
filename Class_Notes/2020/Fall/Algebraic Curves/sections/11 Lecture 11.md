@@ -66,7 +66,7 @@ Note that this is the adelic analogue of our first lemma on Riemann-Roch spaces,
 As we did before, by induction we can assume $D_2 = D_1 + p$ for some $p\in \Sigma(K/k)$, i.e. we can go from the smaller divisor to the bigger one by repeatedly adding closed points.
 Then choose an element $t\in k\units$ such that $v_p(t) = v_p(D_2)$, and define a similar map
 \[  
-\phi \mathcal{A}_K(D_2) \to k_p \\
+\phi \mathcal{A}_K(D_2) &\to k_p \\
 \alpha &\mapsto (t\alpha p) \mod \mfm_p
 .\]
 Why? 
