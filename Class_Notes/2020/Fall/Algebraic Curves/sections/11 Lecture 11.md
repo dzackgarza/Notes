@@ -4,9 +4,8 @@
 Let $K_{/k}$ be a one variable function field, finitely generated of transcendence degree one, with $\kappa(K) = k$, so $k$ is algebraically closed in $K$.
 Define the *small adele ring* associated to $K$, as the restricted direction product with respect to $\ts{R_v \st v\in \Sigma(K/k)}$:
 
-$A_k \da \prod^{\text{res}}_{v\in \Sigma(K/k)} K$ 
 \[
-A_k \da \prod^{\text{res}}_{v\in \Sigma(K/k)} K \\
+A_k \da \prod^{\text{res}}_{v\in \Sigma(K/k)} K
 = \ts{(x_v) \in K^{\Sigma(K/k)} \st x_v \in R_v \text{ for a.e. } v }
 ,\]
 where each factor is a copy of $K$.
@@ -102,7 +101,7 @@ This says that adding $K$ into the adelic Riemann-Roch space results in a big $k
 **Step 1**:
 For divisors $A_1 \leq A_2$, we have a short exact sequence of $k\dash$vector spaces
 \[  
-0 \to \mathcal{L}(A_2) / \mathcal{L}(A_1) \mapsvia{\sigma_1} \mathcal{A}_K(A_2) / \mathcal{A}_K(A_1) \mapstiva{\sigma_2} \qty{\mathcal{A}_K(A_2) + K} / \qty{\mathcal{A}_K(A_1) + K } \to 0
+0 \to \mathcal{L}(A_2) / \mathcal{L}(A_1) \mapsvia{\sigma_1} \mathcal{A}_K(A_2) / \mathcal{A}_K(A_1) \mapsvia{\sigma_2} \qty{\mathcal{A}_K(A_2) + K} / \qty{\mathcal{A}_K(A_1) + K } \to 0
 .\]
 The first thing we did was compute the dimension of the middle quotient space, which was $\deg D_2 - \deg D_1$.
 Note that $\sigma_2$ is a quotient map, but $\sigma_1$ just comes from embedding $K\injects \mathcal{A}_K$.
