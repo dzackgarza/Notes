@@ -128,5 +128,5 @@ where the last step follows from adding and subtracting $g-1$.
 :::
 
 :::{.proof title="Step 3"}
-By step 2, it is enough to show that for all $A_1 \in \Div K$, there exists a bigger divisor $A_2 \geq A_
+By step 2, it is enough to show that for all $A_1 \in \Div K$, there exists a bigger divisor $A_2 \geq A_1$ such that $\iota(A_2) = 0$ and $\mathcal{A}_K(A_2) + K = \mathcal{A}_K$.
 :::
