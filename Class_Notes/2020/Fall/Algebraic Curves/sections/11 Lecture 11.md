@@ -148,13 +148,14 @@ So take an arbitrary element $\alpha\in \mathcal{A}_K$ of the adele ring, then w
 I.e., choosing $B_1$ large enough is allowing the poles to be however bad you want them to be, and $\alpha$ is a fixed element, all but finitely many elements have valuation $\geq 0$.
 
 We understand the relative situation well, based on what we proved.
-By step 2, we have
+By step 2, since $B, B_1$ are non-special, the dimension of the quotient is zero:
 \[  
 \dim_k(\mathcal{A}_K(B_1) + K) / (\mathcal{A}_K(B) + K) 
 &= \deg \qty{B_1 - \ell(B_1)} - \qty{\deg B - \ell(B) } \\
 &= (g-1) - (g-1) \\
 &= 0
 .\]
+But then these spaces are equal to each other.
 
 [^cone_structure]: This "cone structure" on divisors is very useful!
 
