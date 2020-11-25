@@ -98,8 +98,7 @@ This says that adding $K$ into the adelic Riemann-Roch space results in a big $k
 :::
 
 
-:::{.proof title="?"}
-**Step 1**:
+:::{.proof title="Step 1"}
 For divisors $A_1 \leq A_2$, we have a short exact sequence of $k\dash$vector spaces
 \[  
 0 \to \mathcal{L}(A_2) / \mathcal{L}(A_1) \mapsvia{\sigma_1} \mathcal{A}_K(A_2) / \mathcal{A}_K(A_1) \mapsvia{\sigma_2} \qty{\mathcal{A}_K(A_2) + K} / \qty{\mathcal{A}_K(A_1) + K } \to 0
@@ -110,6 +109,17 @@ To show exactness, the only nontrivial part is that $\ker(\sigma_2) \subset \im(
 So take an element $\alpha\in \mathcal{A}_K(A_1) \mod \mathcal{A}_K(A_1)$ such that $\sigma_2(\alpha) = 0$, so there exists an $x\in K$ such that $\alpha-x \in \mathcal{A}_K(A_1)$ by definition of being zero in the last quotient.
 Since $\mathcal{A}_K(A_1) \subseteq \mathcal{A}_K(A_2)$, we have that $x\in \mathcal{A}_K(A_2) \intersect K \da \mathcal{L}(A_2)$.
 This follows because $\alpha, \alpha-x$ are both in $\mathcal{A}_K(A_2)$.
-\
+Thus we have
+\[  
+\alpha + \mathcal{A}_K(A_1) = x + \mathcal{A}_K(A_1) = \sigma\qty{x + \alpha(A_1)}
+.\]
+:::
 
+:::{.proof title="Step 2"}
+We can now compute the dimension of this quotient.
+Using step 1 and Lemma 2.12, we get
+\[  
+\dim_k\qty{ \mathcal{A}_K(A_2) + K } / \qty{ \mathcal{A}_K(A_1) + K }
+= \dim_k \mathcal{A}_K(A_2) / \mathcal{A}_K(A_1) - \dim_k \mathcal{L}(A_2) / \mathcal{L}(A_1)
+.\]
 :::
