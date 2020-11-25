@@ -107,5 +107,5 @@ For divisors $A_1 \leq A_2$, we have a short exact sequence of $k\dash$vector sp
 The first thing we did was compute the dimension of the middle quotient space, which was $\deg D_2 - \deg D_1$.
 Note that $\sigma_2$ is a quotient map, but $\sigma_1$ just comes from embedding $K\injects \mathcal{A}_K$.
 To show exactness, the only nontrivial part is that $\ker(\sigma_2) \subset \im(\sigma_1)$.
-
+So take an element $\alpha\in \mathcal{A}_K(A_1) \mod \mathcal{A}_K(A_1)$ such that $\sigma_2(\alpha) = 0$, so there exists an $x\in K$ such that $\alpha-x \in \mathcal{A}_K(A)
 :::
