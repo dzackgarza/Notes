@@ -141,7 +141,14 @@ Let $B_1 \geq B$, then we have
 .\]
 Also, Riemann's inequality gives $\ell(B_1) \geq \deg(B_1) - g + 1$, so we have equality.
 Thus any divisor greater than or equal to a non-special divisor is again non-special.
+\
 
+Now take an arbitrary element $\alpha\in \mathcal{A}_K$ of the adele ring, then we may choose $B_1 \geq B$ such that $\alpha\in \mathcal{A}_K(B_1)$.
+By step 2, we have
+\[  
+\dim_k(\mathcal{A}_K(B_1) + K) / (\mathcal{A}_K(B) + K) 
+= (\deg B_1 - \ell(B_1))
+.\]
 
 [^cone_structure]: This "cone structure" on divisors is very useful!
 
