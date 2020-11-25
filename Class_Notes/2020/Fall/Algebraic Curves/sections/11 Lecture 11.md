@@ -181,5 +181,8 @@ Show this directly.
 :::
 
 :::{.remark}
-Note that analogy to consider $\mathcal{A}(\QQ)$, where you get $\mathcal{A}_K(\QQ) = \hat \ZZ \oplus \QQ$, where $\hat \ZZ$ denotes the profinite completion.
+Note that analogy to consider $\mathcal{A}(\QQ)$, where you get $\mathcal{A}_\QQ = \hat \ZZ + \QQ$, where $\hat \ZZ$ denotes the profinite completion.
+Recall that $\AA_\QQ = \prod_p' \QQ_p \cross \RR$, and inside of this we have $\AA(0) \da \prod_p \ZZ_p \cross \RR$.
+Not too crazy of a fact: given an adele, it has finitely many places where its $p\dash$adic valuation is negative, so it shouldn't be hard to find a rational number as a correction term which doesn't change the valuation.
+The fact that this works for $\QQ$ is related to $\ZZ$ being a PID.
 :::
