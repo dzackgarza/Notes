@@ -155,7 +155,10 @@ By step 2, since $B, B_1$ are non-special, the dimension of the quotient is zero
 &= (g-1) - (g-1) \\
 &= 0
 .\]
-But then these spaces are equal to each other.
+But then these spaces are equal to each other, so $\mathcal{A}_K(B_1) + K = \mathcal{A}_K + K$.
+But we chose $B_1$ arbitrarily large so it contained $\alpha$, and we found that the resulting space is no bigger than the original.
+Note that $B_1$ was chosen so that $\alpha\in \mathcal{A}_K(B_1)$ before adding $K$, so it remains afterward as well.
+So $\alpha \in \mathcal{A}_K(B)$.
 
 [^cone_structure]: This "cone structure" on divisors is very useful!
 
