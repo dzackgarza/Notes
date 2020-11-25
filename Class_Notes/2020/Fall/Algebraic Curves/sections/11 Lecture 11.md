@@ -76,6 +76,7 @@ This yields a nonnegative valuation, making the image lie inside the correspondi
 As before, it should be clear that this is $k\dash$linear, $\ker \phi = \mathcal{A}_K(D_1)$, and is surjective.
 The kernel are exactly those elements such that multiplying by $t$ makes the $p\dash$adic valuation at least 1, since that's what the maximal ideal is.
 This is indeed $\mathcal{A}_K(D_1)$, since $D_1$ and $D_2$ are the same except for the added condition $D_2 = D_1 + p$ at $p$.
+\
 
 So the main difference is that the map is now *surjective*, which was not true for the original Riemann-Roch space.
 Why?
@@ -105,7 +106,6 @@ For divisors $A_1 \leq A_2$, we have a short exact sequence of $k\dash$vector sp
 .\]
 The first thing we did was compute the dimension of the middle quotient space, which was $\deg D_2 - \deg D_1$.
 Note that $\sigma_2$ is a quotient map, but $\sigma_1$ just comes from embedding $K\injects \mathcal{A}_K$.
-To show exactness, the only nontrivial part is that $\ker(\sigma_2) \subset \Im(\sigma_1)$.
+To show exactness, the only nontrivial part is that $\ker(\sigma_2) \subset \im(\sigma_1)$.
 
-Timestamp: 19:59
 :::
