@@ -124,5 +124,9 @@ Using step 1 and Lemma 2.12, we get
 &= \qty{\deg A_1 - \ell(A_2) } - \qty{\deg A_1 - \ell(A_1) } \\
 &= \iota(A_1) - \iota(A_2)
 ,\]
-where the last step follows from adding and subtracting $
+where the last step follows from adding and subtracting $g-1$.
+:::
+
+:::{.proof title="Step 3"}
+
 :::
