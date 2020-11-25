@@ -173,5 +173,13 @@ This can be applied to the zero divisor:
 :::
 
 :::{.exercise title="?"}
+Corollary 2.14 shows that if $K = k(t)$ is the rational function field, then we have $\mathcal{A}_K(0) + K = \mathcal{A}_K$.[^adele_comment]
+Show this directly.
 
+[^adele_comment]: So every adele differs from a rational function by an effective adele.
+
+:::
+
+:::{.remark}
+Note that analogy to consider $\mathcal{A}(\QQ)$, where you get $\mathcal{A}_K(\QQ) = \hat \ZZ \oplus \QQ$, where $\hat \ZZ$ denotes the profinite completion.
 :::
