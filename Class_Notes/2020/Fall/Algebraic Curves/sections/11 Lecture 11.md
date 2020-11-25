@@ -108,5 +108,8 @@ The first thing we did was compute the dimension of the middle quotient space, w
 Note that $\sigma_2$ is a quotient map, but $\sigma_1$ just comes from embedding $K\injects \mathcal{A}_K$.
 To show exactness, the only nontrivial part is that $\ker(\sigma_2) \subset \im(\sigma_1)$.
 So take an element $\alpha\in \mathcal{A}_K(A_1) \mod \mathcal{A}_K(A_1)$ such that $\sigma_2(\alpha) = 0$, so there exists an $x\in K$ such that $\alpha-x \in \mathcal{A}_K(A_1)$ by definition of being zero in the last quotient.
-Since $\mathcal{A}_K(A_1) \subseteq \mathcal{A}_K(A_2)$, we have that $x\in \mathcal{A}_K(A_2) \intersect K = \mathcal{L}(A_2)$.
+Since $\mathcal{A}_K(A_1) \subseteq \mathcal{A}_K(A_2)$, we have that $x\in \mathcal{A}_K(A_2) \intersect K \da \mathcal{L}(A_2)$.
+This follows because $\alpha, \alpha-x$ are both in $\mathcal{A}_K(A_2)$.
+\
+
 :::
