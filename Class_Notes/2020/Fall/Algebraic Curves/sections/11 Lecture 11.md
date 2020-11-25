@@ -135,9 +135,11 @@ We'll do this by choosing another large effective divisor.[^cone_structure]
 
 Let $B_1 \geq B$, then we have
 \[  
-\ell(B_1) \leq \deg(B_1) + \ell(B) - \deg(B) \\
-&=
+\ell(B_1) 
+&\leq \deg(B_1) + \ell(B) - \deg(B) \\
+&= \deg(B_1) - g + 1
 .\]
+Also, Riemann's inequality gives $\ell(B_1) \geq \deg(B_1) - g + 1$.
 
 [^cone_structure]: This "cone structure" on divisors is very useful!
 
