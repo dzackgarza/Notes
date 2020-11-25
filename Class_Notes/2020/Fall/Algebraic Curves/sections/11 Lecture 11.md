@@ -128,5 +128,5 @@ where the last step follows from adding and subtracting $g-1$.
 :::
 
 :::{.proof title="Step 3"}
-
+By step 2, it is enough to show that for all $A_1 \in \Div K$, there exists a bigger divisor $A_2 \geq A_
 :::
