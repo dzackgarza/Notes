@@ -144,10 +144,11 @@ Thus any divisor greater than or equal to a non-special divisor is again non-spe
 \
 
 Now take an arbitrary element $\alpha\in \mathcal{A}_K$ of the adele ring, then we may choose $B_1 \geq B$ such that $\alpha\in \mathcal{A}_K(B_1)$.
+I.e., choosing $B_1$ large enough is allowing the poles to be however bad you want them to be, and $\alpha$ is a fixed element, and there are only finitely many elements with valuation $\geq 0$.
 By step 2, we have
 \[  
 \dim_k(\mathcal{A}_K(B_1) + K) / (\mathcal{A}_K(B) + K) 
-= (\deg B_1 - \ell(B_1))
+= \deg B_1 - \ell(B_1)
 .\]
 
 [^cone_structure]: This "cone structure" on divisors is very useful!
