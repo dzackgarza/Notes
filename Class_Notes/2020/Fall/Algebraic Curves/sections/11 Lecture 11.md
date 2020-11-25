@@ -157,9 +157,21 @@ By step 2, since $B, B_1$ are non-special, the dimension of the quotient is zero
 .\]
 But then these spaces are equal to each other, so $\mathcal{A}_K(B_1) + K = \mathcal{A}_K + K$.
 But we chose $B_1$ arbitrarily large so it contained $\alpha$, and we found that the resulting space is no bigger than the original.
-Note that $B_1$ was chosen so that $\alpha\in \mathcal{A}_K(B_1)$ before adding $K$, so it remains afterward as well.
-So $\alpha \in \mathcal{A}_K(B)$.
+Note that $B_1$ was chosen so that $\alpha\in \mathcal{A}_K(B_1)$ before adding $K$, which remains true when adding $K$.
+But this says $\alpha$ is in the LHS, which equals the RHS.
+Then $\alpha \in \mathcal{A}_K(B)$, where $\alpha$ was arbitrary, so $\alpha\in \mathcal{A}_K(B) + K$.
 
 [^cone_structure]: This "cone structure" on divisors is very useful!
+
+:::
+
+:::{.corollary title="2.14"}
+This can be applied to the zero divisor:
+\[  
+\dim_k \mathcal{A}_K( \mathcal{A}_K(0) + K ) \iota(0) = g
+.\]
+:::
+
+:::{.exercise title="?"}
 
 :::
