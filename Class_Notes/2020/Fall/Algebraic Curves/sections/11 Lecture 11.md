@@ -123,5 +123,6 @@ Using step 1 and Lemma 2.12, we get
 &= \dim_k \mathcal{A}_K(A_2) / \mathcal{A}_K(A_1) - \dim_k \mathcal{L}(A_2) / \mathcal{L}(A_1) \\
 &= \qty{\deg A_1 - \ell(A_2) } - \qty{\deg A_1 - \ell(A_1) } \\
 &= \iota(A_1) - \iota(A_2)
-.\]
+,\]
+where the last step follows from adding and subtracting $
 :::
