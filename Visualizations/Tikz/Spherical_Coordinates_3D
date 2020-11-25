@@ -22,7 +22,7 @@
 %determine a coordinate (P) using (r,\theta,\phi) coordinates.
 %syntax: \tdplotsetcoord{Coordinate name without parentheses}{r}{\theta}{\phi}
 \tdplotsetcoord{P}{\rvec}{\thetavec}{\phivec}
-\fill (P) circle[radius=0.4pt] node[anchor=south west] {P};
+\fill (P) circle[radius=0.4pt] node[anchor=south west] {$\mathbf v$};
 
 %draw figure contents
 %--------------------
