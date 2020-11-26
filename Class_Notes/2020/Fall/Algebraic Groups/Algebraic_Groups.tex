@@ -66,7 +66,7 @@ are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-11-23 }
+{\tiny \textit{Last updated:} 2020-11-25 }
 \end{flushleft}
 
 
@@ -7968,6 +7968,183 @@ dimensional Hopf algebra?
 Compute \(H^\wait(G_r, k)\) for \(r\geq 2\).
 
 \end{problem}
+
+\hypertarget{monday-november-23}{%
+\section{Monday, November 23}\label{monday-november-23}}
+
+Today: last lecture. Note that (some) videos will be available online,
+see Youtube channel.
+
+\hypertarget{cohomology-of-frobenius-kernels-1}{%
+\subsection{Cohomology of Frobenius
+Kernels}\label{cohomology-of-frobenius-kernels-1}}
+
+Let \(r=1\), and consider \(H^0(G_1; k)\). For \(p > h\), we know
+\(H^{2\cdot} = k[\mathcal{N}]\) and zero otherwise. What is known for
+\(p<h\)?
+
+\begin{definition}[The Restricted Nillcone]
+
+For an arbitrary \(p\), we have the following: define
+\begin{align*}  
+\mathcal{N}_1(\lieg) = \ts{x\in \lieg \st x^{[p]} = 0 }
+,\end{align*} where \(\lieg = \Lie(G)\).
+
+\end{definition}
+
+Note that \(p>h\), we have \(\mathcal{N}_1(\lieg) = \mathcal{N}\).
+Taking \(\liegl_n\), this is matrices whose \(p\)th power is zero. Note
+that the Frobenius map is still a derivation in characteristic \(p\).
+
+\begin{theorem}[Jantzen, 1986]
+
+\begin{align*}  
+\mspec(H^\cdot(G_1; k) ) \cong \mathcal{N}_1(\lieg)
+.\end{align*}
+
+\end{theorem}
+
+\begin{theorem}[Carlson-Lin-Nakano-Parshall, UGA VIGRE]
+
+For some \(G\dash\)orbit \(\mathcal{O}\) in \(\mathcal{N}\),
+\begin{align*}  
+\mathcal{N}_1(\lieg) = \bar{\mathcal{O}}
+,\end{align*} i.e.~it is the closure of some \(G\dash\)orbit. In
+particular, \(\mathcal{N}_1(\lieg)\) is irreducible.
+
+\end{theorem}
+
+For \(\lambda\in X(T)\), set
+\begin{align*}  
+\Phi_\lambda \da \ts{ \alpha\in\Phi \st \inner{\lambda+\rho}{\alpha\dual} \in p\ZZ }
+.\end{align*}
+
+When \(p\) is good, there exists \(w\in W\) such that
+\(w(\Phi_\lambda) = \Phi_J\) for some \(J \subset\Delta\).
+
+\todo[inline]{Something about being on or off a wall, and conjugating?}
+
+\begin{example}[?]
+
+We can determine which \(p\) are good for each type:
+
+\begin{itemize}
+\tightlist
+\item
+  \(A_n\): \(p\) is always good.
+\item
+  \(B_n\): \(p\neq 2\)
+\item
+  \(C_n\): \(p\neq 2\)
+\item
+  \(D_n\): \(p\neq 2\)
+\item
+  \(E_6\): \(p\neq 2\)
+\item
+  \(E_7\): \(p\neq 2, 3\)
+\item
+  \(E_8\): \(p\neq 2, 3,5\)
+\item
+  \(F_4\): \(p\neq 2, 3\)
+\item
+  \(G_2\): \(p\neq 2, 3\)
+\end{itemize}
+
+\end{example}
+
+\begin{conjecture}
+
+Let \(p\) be a good and \(w(\Phi_0) = \Phi_J\) for some
+\(J \subseteq \Delta\). By NPV,
+\(\mathcal{N}_1(\lieg) = G \cdot \mu_J\). Assuming that
+\(p\notdivides (X(T): \ZZ \Phi)\), then
+
+\begin{itemize}
+\tightlist
+\item
+  \(H^{2\cdot}(G; k) = k[\mathcal{N}_1(\lieg)]\)
+\item
+  \(H^{2\cdot + 1}(G; k) = 0\).
+\end{itemize}
+
+\end{conjecture}
+
+\begin{remark}
+
+This is a natural generalization of \(p>h\). There is some situational
+evidence for this to be true:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  For \(p=h-1\), we have \(\mathcal{N}_1(\lieg) = \bar{\OO_{\reg}}\) and
+  the conjecture is true.
+\item
+  For quantum groups, \(H^\cdot(U_q(\lieg); \CC )\) and it is again
+  true.
+\end{enumerate}
+
+\todo[inline]{Something about BNPP}
+
+\end{remark}
+
+\begin{remark}
+
+Some key points:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  By the Gravert-Riemenschneider theorem, for \(k= \bar{\FF_p}\),
+  \begin{align*}  
+  R^{i>0} \ind_{P_J}^{C_r} S^\cdot(u_J^*) = 0
+  .\end{align*}
+\item
+  Normality of \(\mathcal{N}_1(\lieg)\).
+\end{enumerate}
+
+A fact about something from earlier: the ring of regular functions on
+springer resolution equal to those on the nilpotent cone.
+
+\end{remark}
+
+\hypertarget{support-varieties}{%
+\subsection{Support Varieties}\label{support-varieties}}
+
+Very common in modern mathematics. Define \(R \da H^\wait(G_1; k)\),
+which is a finitely generated algebra. Note that \(R\) acts on
+\(\ext_{G_1}^\wait(M, M)\), which is finitely generated over \(R\). So
+what is the support of this module? Define
+\(V_{G_1}(M) \da \mspec\qty{R/J_M}\), where
+\(J_M \da \Ann_R \ext_{G_1}^\wait(M, M)\).
+
+\begin{conjecture}[Jantzen, 1986]
+
+Let \(p\) be good and \(\lambda \in X(T)_+\) be a dominant weight.
+Consider \(\Phi_\lambda\) ad \(w\in W\) such that
+\(w(\Phi_\lambda) = \Phi_J\) for some \(J \subseteq \Delta\). Then
+\begin{align*}  
+V_{G_1} (H^0(\lambda)) = G\cdot \mu_J
+.\end{align*}
+
+\end{conjecture}
+
+\begin{remark}
+
+Now proved! Jantzen proved for type \(A_n\), and Nakano-Parshall-Vella
+proved it in general in 2002.
+
+\end{remark}
+
+\begin{remark}
+
+For tilting modules, there is a conjecture for \(V_G(T(\lambda))\)
+(Humphreys conjecture). Type \(A_n\) with \(p>h+1\) was verified by W.
+Harelstry, and \(p=2\) by Cooper. This is still open, but is known for
+quantum groups and unknown for general algebraic groups.
+
+\end{remark}
 
 \section{Indices}
 \listoftodos[List of Todos]
