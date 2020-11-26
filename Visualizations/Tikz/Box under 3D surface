@@ -1,0 +1,45 @@
+﻿\tdplotsetmaincoords{60}{110}
+\foreach \X in {0,...,35}
+{\pgfmathsetmacro{\Objymax}{{1.6*pi+0.5*sin(10*\X)*pi}}
+\begin{tikzpicture}[tdplot_main_coords,>=stealth,declare function={%
+pfft(\x)=2+0.3*sin(deg(\x));},/tikz/3D surface/.cd,
+ymin/.initial=0,ymax/.initial=2.2*pi,xmin/.initial=1,xmax/.initial=4,
+/tikz/3D object/.cd,
+ymin/.initial=0.8*pi,ymax/.initial=\Objymax,xmin/.initial=1.8,xmax/.initial=3.2]
+ \draw[->] (0,0,0) coordinate (O) -- (5,0,0) coordinate(X) node[pos=1.1]{$x$};
+ \draw[->] (O) -- (0,5,0) node[pos=1.1]{$y$};
+ \draw[->] (O) -- (0,0,5) node[pos=1.1]{$z$};
+ \draw[thick] plot[variable=\x,domain=\pgfkeysvalueof{/tikz/3D object/ymin}:\pgfkeysvalueof{/tikz/3D object/ymax},smooth] 
+ (\pgfkeysvalueof{/tikz/3D object/xmax},\x,{pfft(2*\x)}) 
+ coordinate (T1)--
+ plot[variable=\x,domain=\pgfkeysvalueof{/tikz/3D object/ymax}:\pgfkeysvalueof{/tikz/3D object/ymin},smooth] 
+ (\pgfkeysvalueof{/tikz/3D object/xmin},\x,{pfft(2*\x)}) coordinate
+ (T3)-- cycle;
+ \draw (\pgfkeysvalueof{/tikz/3D object/xmax},\pgfkeysvalueof{/tikz/3D object/ymin},0) coordinate (B4)-- 
+ (\pgfkeysvalueof{/tikz/3D object/xmax},\pgfkeysvalueof{/tikz/3D
+ object/ymax},0) coordinate (B1)
+ -- (\pgfkeysvalueof{/tikz/3D object/xmin},\pgfkeysvalueof{/tikz/3D object/ymax},0) coordinate (B2) -- (\pgfkeysvalueof{/tikz/3D object/xmin},\pgfkeysvalueof{/tikz/3D object/ymin},0) coordinate (B3) -- cycle;
+ \path (\pgfkeysvalueof{/tikz/3D object/xmax},\pgfkeysvalueof{/tikz/3D object/ymin},{pfft(2*\pgfkeysvalueof{/tikz/3D object/ymin})}) coordinate (T4)
+  (\pgfkeysvalueof{/tikz/3D object/xmin},\pgfkeysvalueof{/tikz/3D
+  object/ymax},{pfft(2*\pgfkeysvalueof{/tikz/3D object/ymax})}) coordinate (T2);
+ \foreach \X in {1,...,4}
+ {\draw (B\X) -- (T\X);}
+ \path[opacity=0.3,left color=blue,right color=blue,middle color=blue!20,shading
+  angle=72]
+   plot[variable=\x,domain=\pgfkeysvalueof{/tikz/3D surface/ymin}:{(\pgfkeysvalueof{/tikz/3D
+   surface/ymax}+\pgfkeysvalueof{/tikz/3D surface/ymin})/2},smooth]
+   (\pgfkeysvalueof{/tikz/3D surface/xmax},\x,{pfft(2*\x)}) --
+   plot[variable=\x,domain={(\pgfkeysvalueof{/tikz/3D
+   surface/ymax}+\pgfkeysvalueof{/tikz/3D surface/ymin})/2}:\pgfkeysvalueof{/tikz/3D surface/ymin},smooth] (\pgfkeysvalueof{/tikz/3D surface/xmin},\x,{pfft(2*\x)}) -- cycle;
+ \path[opacity=0.3,left color=blue,right color=blue,middle color=blue!20,shading
+  angle=72]
+   plot[variable=\x,domain={(\pgfkeysvalueof{/tikz/3D
+   surface/ymax}+\pgfkeysvalueof{/tikz/3D surface/ymin})/2}:\pgfkeysvalueof{/tikz/3D surface/ymax},smooth] 
+   (\pgfkeysvalueof{/tikz/3D surface/xmax},\x,{pfft(2*\x)}) --
+   plot[variable=\x,domain=\pgfkeysvalueof{/tikz/3D surface/ymax}:{(\pgfkeysvalueof{/tikz/3D
+   surface/ymax}+\pgfkeysvalueof{/tikz/3D surface/ymin})/2},smooth]   (\pgfkeysvalueof{/tikz/3D surface/xmin},\x,{pfft(2*\x)}) -- cycle;
+ \draw plot[variable=\x,domain=\pgfkeysvalueof{/tikz/3D surface/ymin}:\pgfkeysvalueof{/tikz/3D surface/ymax},smooth] 
+ (\pgfkeysvalueof{/tikz/3D surface/xmax},\x,{pfft(2*\x)}) --
+ plot[variable=\x,domain=\pgfkeysvalueof{/tikz/3D surface/ymax}:\pgfkeysvalueof{/tikz/3D surface/ymin},smooth] 
+ (\pgfkeysvalueof{/tikz/3D surface/xmin},\x,{pfft(2*\x)}) -- cycle;
+\end{tikzpicture}}
