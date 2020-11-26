@@ -1,0 +1,9 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'Algebraic_Curves.blg'
+[99] biber:322> INFO - === Wed Nov 25, 2020, 23:56:24
+[120] Biber.pm:415> INFO - Reading 'Algebraic_Curves.bcf'
+[208] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[213] Utils.pm:304> WARN - The file 'Algebraic_Curves.bcf' does not contain any citations!
+[221] bbl.pm:652> INFO - Writing 'Algebraic_Curves.bbl' with encoding 'UTF-8'
+[221] bbl.pm:755> INFO - Output to Algebraic_Curves.bbl
+[221] Biber.pm:128> INFO - WARNINGS: 1

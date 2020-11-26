@@ -66,7 +66,7 @@ are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-11-23 }
+{\tiny \textit{Last updated:} 2020-11-25 }
 \end{flushleft}
 
 
@@ -1194,6 +1194,276 @@ field. If the polynomial is geometrical reducible, this produces regular
 function fields.
 
 Next: One variable function fields and their valuations.
+
+\hypertarget{monday-november-23}{%
+\section{Monday, November 23}\label{monday-november-23}}
+
+\hypertarget{lecture-11-weils-proof-of-riemann-roch}{%
+\section{Lecture 11: Weil's Proof of
+Riemann-Roch}\label{lecture-11-weils-proof-of-riemann-roch}}
+
+Let \(K_{/k}\) be a one variable function field, finitely generated of
+transcendence degree one, with \(\kappa(K) = k\), so \(k\) is
+algebraically closed in \(K\). Define the \emph{small adele ring}
+associated to \(K\), as the restricted direction product with respect to
+\(\ts{R_v \st v\in \Sigma(K/k)}\):
+
+\begin{align*}
+A_k \da \prod^{\text{res}}_{v\in \Sigma(K/k)} K
+= \ts{(x_v) \in K^{\Sigma(K/k)} \st x_v \in R_v \text{ for a.e. } v }
+,\end{align*} where each factor is a copy of \(K\). Note that a
+\emph{restricted} direct product is when you have a family of sets, and
+for each set you also attach a subset. Then if you have a tuple in the
+entire direct product, it's in the restricted direct product iff for all
+but finitely many coordinates lie in a given subset. Here the subset is
+the valuation ring \(R_v\). So these are tuples of elements of \(K\),
+indexed by places, where each element has a \(p\dash\)adic valuation and
+the only restriction is that (except for finitely many cases) we want
+this valuation to be nonnegative.
+
+\begin{remark}
+
+To get the \emph{big} adele ring, you'd replace \(K\) with its
+completion with respect to the \(p\dash\)adic valuation. If \(k\) is
+finite, then this is equal to the positive characteristic adele ring
+from NTII. If you complete, then you get a complete discretely valued
+field whose residue field equals the residue field at the place \(v\).
+So for finite extensions of \(k\), the residue will be finite iff \(k\)
+is finite, and from the structure theory of discretely valued fields,
+this field has a natural topology: the adic topology, coming from the
+inverse limit. This will be locally compact iff the residue field is
+finite. Here, since the ground field is infinite, even passing to the
+completion wouldn't yield anything locally compact. So there's no
+advantage to passing to the completion, although there's no harm either.
+
+\end{remark}
+
+Note that \(A_k\) is a ring, and in fact a \(K\dash\)algebra, but we
+will only need its structure as a \(K\dash\)vector space. This structure
+comes from embedding \(K\injects A_k\) diagonally, so
+\(x \mapsto [x, x, \cdots]\), and pull back \(v\in \Sigma(K/k)\),
+remembering that every element of \(K\) (a rational function) is regular
+except for finitely many \(v\).
+
+If we have a valuation on \(K\), we can consider a place \(p\) and
+projecting onto the \(k\)th factor:
+\begin{align*}  
+A_j \surjectsvia{\pi_p} K \mapsvia{v_p} \ZZ \union \ts{\infty}
+.\end{align*}
+
+So we now attach an adelic versionm of the Riemann-Roch space: for
+\(D\in \Div K\), we set
+\begin{align*}  
+\mathcal{A}_k(D) \da \ts{ \alpha \in \mathcal{A}_K \st v_p(\alpha) \geq -v_p(D) \, \forall p \in \Sigma(K/k)}
+.\end{align*} The only difference here is that the usual space is over
+\(K\), and here we're over \(\mathcal{A}_K\), which is a much larger
+space. This makes things easier, however, in the same sense that
+studying a large collection of local fields is easier than studying the
+corresponding global field. Note that the \(p\dash\)adic valuation
+\(v_p\) is just the coefficient of \(p\) in the divisor, and
+\(\mathcal{A}_K \intersect K\) yields the usual Riemann-Roch space.
+
+\begin{exercise}[?]
+
+\envlist
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that \(\mathcal{A}_K(D)\) is an \(k\dash\)subspace of
+  \(\mathcal{A}_K\).\footnote{Consider scaling by nonzero constants,
+    where the valuation of constants are zero.}
+\item
+  Show that (just as for the Riemann-Roch space)
+  \(D_1 \leq D_2 \implies \mathcal{A}_K(D_1) \subseteq \mathcal{A}_K(D_2)\).
+\end{enumerate}
+
+\end{exercise}
+
+\begin{lemma}[?]
+
+\begin{align*}  
+D_1 \leq D_2 \implies \dim_k \mathcal{A}_K(D_2) / \mathcal{A}_K(D_1) = \deg D_2 - \deg D_1
+.\end{align*}
+
+\end{lemma}
+
+Note that this is the adelic analogue of our first lemma on Riemann-Roch
+spaces, now with an equality instead of being bounded above.
+
+\begin{proof}[?]
+
+As we did before, by induction we can assume \(D_2 = D_1 + p\) for some
+\(p\in \Sigma(K/k)\), i.e.~we can go from the smaller divisor to the
+bigger one by repeatedly adding closed points. Then choose an element
+\(t\in k\units\) such that \(v_p(t) = v_p(D_2)\), and define a similar
+map
+\begin{align*}  
+\phi \mathcal{A}_K(D_2) &\to k_p \\
+\alpha &\mapsto (t\alpha p) \mod \mfm_p
+.\end{align*} Why? Once you multiply by \(t\), note that we're looking
+in the \(p\)th component. The condition before was that the valuation at
+the \(p\)th component was at least \(-v_p(D_2)\), but now we're adding
+\(v_p(D_2)\). This yields a nonnegative valuation, making the image lie
+inside the corresponding local ring, so it makes sense to consider it
+modulo the maximal ideal to get an element of the residue field. As
+before, it should be clear that this is \(k\dash\)linear,
+\(\ker \phi = \mathcal{A}_K(D_1)\), and is surjective. The kernel are
+exactly those elements such that multiplying by \(t\) makes the
+\(p\dash\)adic valuation at least 1, since that's what the maximal ideal
+is. This is indeed \(\mathcal{A}_K(D_1)\), since \(D_1\) and \(D_2\) are
+the same except for the added condition \(D_2 = D_1 + p\) at \(p\).\\
+
+So the main difference is that the map is now \emph{surjective}, which
+was not true for the original Riemann-Roch space. Why? This is a purely
+local situation. Take an element which is zero away from the \(p\)
+component, which is easy to do since zero is in \(R_v\) for any \(v\).
+So can you find an element of \(k\) such that multiplying by \(t\) and
+reducing modulo the maximal ideal yields every element of the residue
+field?
+
+\end{proof}
+
+\begin{theorem}[2.13]
+
+For all \(D\),
+\begin{align*}  
+\dim_k \mathcal{A}_K / \qty{\mathcal{A}_K(D) + K } = \iota(D) \da \ell(D) - \deg(D) + g - 1
+,\end{align*} where \(\iota(D)\) is the index of speciality of the
+divisor, which measures the discrepancy between the degree and the
+dimension.
+
+\end{theorem}
+
+\begin{remark}
+
+This says that adding \(K\) into the adelic Riemann-Roch space results
+in a big \(k\dash\)vector space, having high dimension in the infinite
+dimensional \(k\dash\)vector space \(\mathcal{A}_K\).
+
+\end{remark}
+
+\begin{proof}[Step 1]
+
+For divisors \(A_1 \leq A_2\), we have a short exact sequence of
+\(k\dash\)vector spaces
+\begin{align*}  
+0 \to \mathcal{L}(A_2) / \mathcal{L}(A_1) \mapsvia{\sigma_1} \mathcal{A}_K(A_2) / \mathcal{A}_K(A_1) \mapsvia{\sigma_2} \qty{\mathcal{A}_K(A_2) + K} / \qty{\mathcal{A}_K(A_1) + K } \to 0
+.\end{align*} The first thing we did was compute the dimension of the
+middle quotient space, which was \(\deg D_2 - \deg D_1\). Note that
+\(\sigma_2\) is a quotient map, but \(\sigma_1\) just comes from
+embedding \(K\injects \mathcal{A}_K\). To show exactness, the only
+nontrivial part is that \(\ker(\sigma_2) \subset \im(\sigma_1)\). So
+take an element \(\alpha\in \mathcal{A}_K(A_1) \mod \mathcal{A}_K(A_1)\)
+such that \(\sigma_2(\alpha) = 0\), so there exists an \(x\in K\) such
+that \(\alpha-x \in \mathcal{A}_K(A_1)\) by definition of being zero in
+the last quotient. Since
+\(\mathcal{A}_K(A_1) \subseteq \mathcal{A}_K(A_2)\), we have that
+\(x\in \mathcal{A}_K(A_2) \intersect K \da \mathcal{L}(A_2)\). This
+follows because \(\alpha, \alpha-x\) are both in \(\mathcal{A}_K(A_2)\).
+Thus we have
+\begin{align*}  
+\alpha + \mathcal{A}_K(A_1) = x + \mathcal{A}_K(A_1) = \sigma\qty{x + \alpha(A_1)}
+.\end{align*}
+
+\end{proof}
+
+\begin{proof}[Step 2]
+
+We can now compute the dimension of this quotient. Using step 1 and
+Lemma 2.12, we get
+\begin{align*}  
+\dim_k\qty{ \mathcal{A}_K(A_2) + K } / \qty{ \mathcal{A}_K(A_1) + K }
+&= \dim_k \mathcal{A}_K(A_2) / \mathcal{A}_K(A_1) - \dim_k \mathcal{L}(A_2) / \mathcal{L}(A_1) \\
+&= \qty{\deg A_1 - \ell(A_2) } - \qty{\deg A_1 - \ell(A_1) } \\
+&= \iota(A_1) - \iota(A_2)
+,\end{align*} where the last step follows from adding and subtracting
+\(g-1\).
+
+\end{proof}
+
+\begin{proof}[Step 3]
+
+By step 2, it is enough to show that for all \(A_1 \in \Div K\), there
+exists a bigger divisor \(A_2 \geq A_1\) such that \(\iota(A_2) = 0\)
+(by just adding closed points) and
+\(\mathcal{A}_K(A_2) + K = \mathcal{A}_K\). By Riemann's inequality, we
+have \(\iota(A_2) =0\) if \(\deg A_2 \gg 0\), so choose such an
+\(A_2 \geq A_1\). Thus we're reduced to showing that if \(\iota(B) = 0\)
+for all \(B\in \Div K\), then \(\mathcal{A}_K = \mathcal{A}_K(B) + K\).
+We'll do this by choosing another large effective divisor.\footnote{This
+  ``cone structure'' on divisors is very useful!}
+
+Let \(B_1 \geq B\), then we have
+\begin{align*}  
+\ell(B_1) 
+&\leq \deg(B_1) + \ell(B) - \deg(B) \\
+&= \deg(B_1) - g + 1
+.\end{align*} Also, Riemann's inequality gives
+\(\ell(B_1) \geq \deg(B_1) - g + 1\), so we have equality. Thus any
+divisor greater than or equal to a non-special divisor is again
+non-special.\\
+
+We want to take an arbitrary element of the adele ring and show that it
+differs from an element of the adelic Riemann-Roch space associated to
+\(B\) by an element of \(K\), so we'll cleverly choose a divisor in
+order to do this. So take an arbitrary element
+\(\alpha\in \mathcal{A}_K\) of the adele ring, then we may choose
+\(B_1 \geq B\) such that \(\alpha\in \mathcal{A}_K(B_1)\). I.e.,
+choosing \(B_1\) large enough is allowing the poles to be however bad
+you want them to be, and \(\alpha\) is a fixed element, all but finitely
+many elements have valuation \(\geq 0\).
+
+We understand the relative situation well, based on what we proved. By
+step 2, since \(B, B_1\) are non-special, the dimension of the quotient
+is zero:
+\begin{align*}  
+\dim_k(\mathcal{A}_K(B_1) + K) / (\mathcal{A}_K(B) + K) 
+&= \deg \qty{B_1 - \ell(B_1)} - \qty{\deg B - \ell(B) } \\
+&= (g-1) - (g-1) \\
+&= 0
+.\end{align*} But then these spaces are equal to each other, so
+\(\mathcal{A}_K(B_1) + K = \mathcal{A}_K + K\). But we chose \(B_1\)
+arbitrarily large so it contained \(\alpha\), and we found that the
+resulting space is no bigger than the original. Note that \(B_1\) was
+chosen so that \(\alpha\in \mathcal{A}_K(B_1)\) before adding \(K\),
+which remains true when adding \(K\). But this says \(\alpha\) is in the
+LHS, which equals the RHS. Then \(\alpha \in \mathcal{A}_K(B)\), where
+\(\alpha\) was arbitrary, so \(\alpha\in \mathcal{A}_K(B) + K\).
+
+\end{proof}
+
+\begin{corollary}[2.14]
+
+This can be applied to the zero divisor:
+\begin{align*}  
+\dim_k \mathcal{A}_K( \mathcal{A}_K(0) + K ) \iota(0) = g
+.\end{align*}
+
+\end{corollary}
+
+\begin{exercise}[?]
+
+Corollary 2.14 shows that if \(K = k(t)\) is the rational function
+field, then we have \(\mathcal{A}_K(0) + K = \mathcal{A}_K\).\footnote{So
+  every adele differs from a rational function by an effective adele.}
+Show this directly.
+
+\end{exercise}
+
+\begin{remark}
+
+Note that analogy to consider \(\mathcal{A}(\QQ)\), where you get
+\(\mathcal{A}_\QQ = \hat \ZZ + \QQ\), where \(\hat \ZZ\) denotes the
+profinite completion. Recall that
+\(\AA_\QQ = \prod_p' \QQ_p \cross \RR\), and inside of this we have
+\(\AA(0) \da \prod_p \ZZ_p \cross \RR\). Not too crazy of a fact: given
+an adele, it has finitely many places where its \(p\dash\)adic valuation
+is negative, so it shouldn't be hard to find a rational number as a
+correction term which doesn't change the valuation. The fact that this
+works for \(\QQ\) is related to \(\ZZ\) being a PID.
+
+\end{remark}
 
 \hypertarget{lecture-12-chapter-3-curves-over-a-finite-field}{%
 \section{Lecture 12 (Chapter 3: Curves Over a Finite
