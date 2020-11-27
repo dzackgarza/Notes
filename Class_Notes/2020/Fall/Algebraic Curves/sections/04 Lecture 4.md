@@ -362,4 +362,5 @@ So consider the map
 \[  
 k[t] \injects R_b \to G(R_v) = K\units / R\units
 .\]
+Note that the units of $k[t]$ map trivially.
 :::
