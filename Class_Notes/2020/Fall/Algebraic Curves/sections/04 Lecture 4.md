@@ -54,7 +54,7 @@ Another way to think of $G(R)$ is as the nonzero principal fractional ideals of 
 :::
 
 :::{.remark}
-Inside this group there is a *positive cone* of elements that are nonnegative
+Inside this group there is a *positive cone* of elements that are "nonnegative": since we're in a commutative setting, the zero element is equal to 1, and the positive cone is given by $\ts{y\geq 0} = \ts{y\in R}$
 :::
 
 
