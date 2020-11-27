@@ -106,6 +106,21 @@ If $v(x) \neq v(y)$, then $v(x+y) = \min(v(x), v(y))$.
 So the properties here are formally identical to the NTII notion of valuation, with $(\RR, +, \leq)$ replaced by $(G(R), +, \leq)$.
 
 :::{.exercise title="?"}
-Conversely, if $v: K\units \to G$ is a map into a totally ordere commutative group satisfying VRK1 and VRK2, then
+Conversely, if $v: K\units \to G$ is a map into a totally ordered commutative group satisfying VRK1 and VRK2, then
+\[  
+R_v \da \ts {x\in K\units \st v(x) \geq 0} \union \ts{0}
+\]
+is a valuation ring.[^exc_hint_num1]
+
+[^exc_hint_num1]: Note that in a totally ordered group, either $v(x) \geq 0$ or $-v(x) \geq 0$, so we get the property that either $x, x^{-1} \in R_v$.
+
 :::
 
+Thus we can extract valuation rings in this situation.
+
+:::{.exercise title="?"}
+A valuation ring is **local**, i.e. there is a unique maximal ideal
+\[  
+\\mathfrak{}
+.\]
+:::
