@@ -11,6 +11,6 @@ These may be familiar from NTII, but we will cover them in more generality here.
 Recall that NTII approach to valuations:
 
 :::{.definition title="Valuation"}
-A **valuation** on a field $K$ is a map $v:K\to \RR\union
+A **valuation** on a field $K$ is a map $v:K\to \RR\union \ts\infty$ such that $v(K\units) \subset \RR$, $v(0) = \infty$
 :::
 
