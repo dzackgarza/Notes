@@ -150,8 +150,15 @@ Some general valuation theory:
 
 - Every totally ordered commutative group is a group of divisibility.[^tot_ord_comm_div]
 
-- A totally ordered group has **rank 1** if it is nontrivial and embeds into $\RR$.
+- A totally ordered group has **rank 1** if it is nontrivial and embeds into $\RR$
+  - If the value group is trivial, $R = K$
+
+- A Krull valuation of rank at most 1 is the NTII notion of a valuation.
 
 [^tot_ord_comm_div]: Pete's Commutative Algebra Notes, Ch. 17.10
  
+
+:::{.exercise title="?"}
+For $n\geq 2$, put the lexicographic order on $\ZZ^n$
+:::
 
