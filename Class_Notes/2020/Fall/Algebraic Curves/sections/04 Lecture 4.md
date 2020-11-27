@@ -392,13 +392,13 @@ If $K/k$ is finitely generated of $\trdeg \geq 2$, then $\Sigma(K/k)$ has valuat
 Note that the Zariski-Riemann space only consists of discrete valuations, which is a characteristic property of one variable function fields.
 So these higher rank valuations may look weird, but when studying a function field of higher transcendence degree (e.g. for an algebraic surface), these occur.
 
-:::{.exercise title="?"}
+:::{.exercise title="Constructing valuations of arbitrary rank and value group"}
 Let $k$ be a field and $K = k(t_1, \cdots, t_n)$.
 Set $G = \ZZ^n$ with the lex order, so $G^{\geq 0} = \NN^n$.
 
 - Show that $k[t_1, \cdots, t_n] = k[G^{\geq 0}]$, where the RHS is the associated semigroup ring.
 
-- Define $v: k[G^{\geq 0}] \to G^{\geq 0}$ by mapping each polynomial the minimal index of a monomial in its support.
+- Define $v: k[G^{\geq 0}]\nonzero \to G^{\geq 0}$ by mapping each polynomial the minimal index of a monomial in its support.
   For example,
   \[  
   v(a_1 t_1^3 t_2 + a_2 t_1^2 t_2^{10})  = (2, 10)
@@ -413,3 +413,4 @@ Set $G = \ZZ^n$ with the lex order, so $G^{\geq 0} = \NN^n$.
 Note that doing this for $n=1$ reduces to the $t\dash$adic valuation, which just keeps track of the smallest power of $t$ appearing.
 Here you can extend to fraction fields by defining $v(x/y) = v(x) - v(y)$.
 The semigroup ring can't *be* the valuation ring, since polynomial rings are not local rings, so it's much bigger.
+Note also that $\ZZ$ can be replaced with any group $G$, since it's never used in anything but a psychological fashion.
