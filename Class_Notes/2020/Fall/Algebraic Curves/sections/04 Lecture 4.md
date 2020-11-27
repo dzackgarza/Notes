@@ -278,6 +278,20 @@ Endow $\tilde \Sigma(K/k)$ with the structure of a locally ringed space.
 :::{.remark}
 In dimension 1 (the case we're studying), the corresponding Zariski-Riemann space will be the scheme associated to the complete nonsingular model of the curve.
 So this valuation-theoretic approach will take you from the function field back to a nice model of the scheme itself.
+But note that in larger dimensions, there is no unique complete nonsingular model -- for example, you can blow any one up to get another -- so this pattern can't possibly continue to hold.
+In fact, it's not clear if we even know if there's *one* such model!
 :::
 
 [^Schemes_in_rings_spaces]: Schemes are a full subcategory of the much larger category of locally ringed spaces.
+
+
+:::{.remark}
+Thus in dimension $>1$, you get something that is decidedly not a scheme, but is still relevant to the study of resolution of singularities for your function field.
+Where do these come up?
+Zariski used $\Sigma(K/A)$ to prove resolution of singularities [^resolution_of_singularities]
+in characteristic zero and dimensions 2 and 3 in 1944.
+
+[^resolution_of_singularities]: Resolving means given $K/k$, we want to find a complete affine variety whose function field is $K$.
+
+:::
+
