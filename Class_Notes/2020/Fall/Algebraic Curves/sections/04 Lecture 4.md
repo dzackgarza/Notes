@@ -40,7 +40,13 @@ The ordering is given by $x\leq y \iff y/x \in R$.
 
 :::{.remark}
 Note that the way the partial order is written, it's a relation on $K\units$, but it is not quite a partial ordering there.
-It is reflexive and transitive, but need not be antireflexive: if $x/y, y/x\in R$ then $x,y$ differ by a unit,
+It is reflexive and transitive, but need not be antireflexive: if $x/y, y/x\in R$ then $x,y$ differ by an element of $u\in R\units$ so that $x=uy$.
+In particular, they need not be equal.
+This gives a structure of a *quasiordering*, and if you set $x\sim y \iff x\leq y$ and $y\leq x$, this leads to an equivalence relation, and modding out by it yields a partial order.
+Here this is accomplished by essentially trivializing units.
+\
+
+Another way to think of $G(R)$ is as the nonzero principal fractional ideals of $K$, since any two generators will differ by a unit in $R$.
 :::
 
 
