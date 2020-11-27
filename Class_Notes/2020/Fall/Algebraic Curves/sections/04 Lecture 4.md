@@ -292,10 +292,19 @@ Zariski used $\Sigma(K/A)$ to prove resolution of singularities [^resolution_of_
 in characteristic zero and dimensions 2 and 3 in 1944, although dimension 2 was classical by the Italian school.
 Later, Hironaka (1984) got the Fields medal for proving resolution of singularities for all dimensions in characteristic zero using an ingenious inductive argument that avoided Zariski-Riemann spaces entirely.
 It remarkably doesn't use any new objects/tools, just uses existing ones in a clever way.
+So why talk about Zariski-Riemann spaces at all?
+In the last 10 years or so, work of Ternkin and Conrad has revived and generalized them.
+They study *relative* such spaces.
 
 [^resolution_of_singularities]: Resolving means given $K/k$, we want to find a complete nonsingular affine variety whose function field is $K$.
 
 :::
 
+:::{.problem title="Open"}
+In positive characteristic, resolution of singularities is only known up to dimension $\leq 3$.
+:::
 
 
+:::{.theorem title="Important result from commutative algebrea"}
+
+:::
