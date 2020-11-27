@@ -54,9 +54,19 @@ Another way to think of $G(R)$ is as the nonzero principal fractional ideals of 
 :::
 
 :::{.remark}
-Inside this group there is a *positive cone* of elements that are "nonnegative": since we're in a commutative setting, the zero element is equal to 1, and the positive cone is given by $\ts{y\geq 0} = \ts{y\in R}$
+Inside this group there is a *positive cone* $G(R)^+$ of elements that are "nonnegative": since we're in a commutative setting, the zero element is equal to 1, and the positive cone is given by $\ts{y\geq 0} = \ts{y\in R}$, and is thus given by the group $G(R)^+ = (R, \cdot)$.
+\
+
+This is very general: if you're studying factorization in integral domains, many properties are reflected in $G(R)$.
+E.g. being a UFD (the most important factorization property!) implies that $G(R)$ is a free commutative group.
 :::
 
+:::{.remark}
+
+In general this is only a *partially* ordered group and not totally ordered. 
+For example, take $R = \ZZ$ and $x=2, y=3$, then neither of $2/3, 3/2$ are in $\ZZ$, so $x\not\leq y$ and $y\not\leq x$.
+Otoh 
+:::
 
 
 
