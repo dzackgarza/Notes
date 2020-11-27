@@ -159,6 +159,14 @@ Some general valuation theory:
  
 
 :::{.exercise title="?"}
-For $n\geq 2$, put the lexicographic order on $\ZZ^n$
+For $n\geq 2$, put the lexicographic order on $\ZZ^n$, and show this has rank strictly larger than 1.
+Thus $\ZZ^n\injects \RR$ as a commutative group, but not as a totally ordered commutative group.
 :::
 
+:::{.remark}
+In fact, for any ordered group $G$, one can attach a rank: a cardinal number $r(G)$.
+Here, $r((\ZZ^n, \text{lex})) = n$.
+This is useful when studying $\spec(R)$ for $R$ a DVR.
+:::
+
+A valuation of rank bigger than 1 does not induce a norm on $K$ in the metric sense, although this is not so important.
