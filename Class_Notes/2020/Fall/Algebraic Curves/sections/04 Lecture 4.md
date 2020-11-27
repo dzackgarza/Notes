@@ -362,5 +362,5 @@ So consider the map
 \[  
 k[t] \injects R_b \to G(R_v) = K\units / R\units
 .\]
-Note that the units of $k[t]$ map trivially.
+Note that the units of $k[t]$ map trivially, using the fact that any element in $k[t]$ can be written as $u \prod p_i^{a_i}$ with the $p_i$ monic irreducible polynomials, and thus the image is determined entirely by the image of powers of $t$.
 :::
