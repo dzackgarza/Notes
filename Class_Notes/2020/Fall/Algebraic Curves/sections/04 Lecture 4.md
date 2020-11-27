@@ -255,5 +255,11 @@ Such a spectrum is the underlying topological space of some affine scheme, and i
 
 [^French_note_separated]: Note that in French, separated may be interpreted as Hausdorff, but here we mean points are closed or equivalently any two distinct points admit open neighborhoods that do not meet the other point.
 
-In our case of interest, when $K/k$ is finitely generated of transcendence degree one, we'll see that this is the cofinite topology.
+In our case of interest, when $K/k$ is finitely generated of transcendence degree one, we'll see that this is the cofinite topology on an infinite space: the proper closed subsets are precisely the finite subsets, or equivalently every nonempty open subset has finite complement.
+This is far from Hausdorff: the intersection of two open subsets will still have finite complement, so any two nonempty open subsets must intersect.
+\
+
+It's not generally true that just removing the generic point $v_n$ will make the space separated, but in our case, it will be.
+So if we restrict to nontrivial valuation rings, then the underlying set will be infinite and we'll get the cofinite topology.
+This will be the coarsest separated topology 
 If $k \subset A \subset K$ where $A$ is a Dedekind domain with fraction field $K$, we will see that $\Sigma(K/A) = \maxspec(A)$ and both Zariski topologies are cofinite.
