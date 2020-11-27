@@ -235,8 +235,16 @@ The Zariski topology on $\Sigma(K/A)$ is defined the same way and/or via the sub
 
 :::{.remark}
 We thus get the subrings of $K$ that contain $A$ and are finitely generated as $A\dash$algebras.
+We'll be specifically looking at the case where $A$ is a field and $K$ is a one variable function field.
 :::
 
 :::{.theorem title="Zariski"}
 $\tilde \Sigma(K/A)$ is quasi-compact.
 :::
+
+:::{.proof title="?"}
+See Mazamara (?) in the chapter discussing valuation rings.
+:::
+
+In $\tilde \Sigma(K/A)$, we have a trivial valuation $v_n$ whose value group is trivial and valuation ring is $K$ itself, and $v_n$ is a generic point of $\Sigma(K/A)$: its closure is the entire space.
+Thus is $\abs{\tilde\Sigma(K/A) > 1}$, then it is not a separated ($)
