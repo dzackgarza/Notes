@@ -246,12 +246,14 @@ $\tilde \Sigma(K/A)$ is quasi-compact.
 See Mazamara (?) in the chapter discussing valuation rings.
 :::
 
+Note that by definition, $v_n \not\in \Sigma(K/A)$.
 In $\tilde \Sigma(K/A)$, we have a trivial valuation $v_n$ whose value group is trivial and valuation ring is $K$ itself, and $v_n$ is a generic point of $\Sigma(K/A)$: its closure is the entire space.
 In other words, it is in every nonempty open subset.
 Since we have at least one generic point, and in general there may be many, if $\abs{\tilde\Sigma(K/A) > 1}$ then this is not a separated ($T_1$) space since the point is not closed.[^French_note_separated]
-Another example of such a space would be $\spec(R)$ for $R$ a commutative ring with positive Krull dimension.
-It will be Kolmogorov ($T_0$).
+Another example of such a space would be $\spec(R)$ for $R$ a commutative ring with positive Krull dimension, which will be Kolmogorov ($T_0$) but not separated.
+Such a spectrum is the underlying topological space of some affine scheme, and in general, schemes will have these kinds of properties that are bad (but not *too* bad).
 
 [^French_note_separated]: Note that in French, separated may be interpreted as Hausdorff, but here we mean points are closed or equivalently any two distinct points admit open neighborhoods that do not meet the other point.
 
-Note that by definition, $v_n \not\in \Sigma(K/A)$.
+In our case of interest, when $K/k$ is finitely generated of transcendence degree one, we'll see that this is the cofinite topology.
+If $k \subset A \subset K$ where $A$ is a Dedekind domain with fraction field $K$, we will see that $\Sigma(K/A) = \maxspec(A)$ and both Zariski topologies are cofinite.
