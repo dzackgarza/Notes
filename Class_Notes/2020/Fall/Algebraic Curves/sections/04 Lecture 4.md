@@ -198,3 +198,10 @@ For $A \subset K$, define
 .\]
 The set $\tilde \Sigma(K/A)$ is the **Zariski-Riemann space**.
 :::
+
+:::{.remark}
+Note that in this definition, we're taking all $A\dash$regular valuation rings $R$ in $K$.
+If someone says $R$ is a valuation ring of $K$, they likely mean that $K = \ff(R)$.
+Note that fields are valuation rings, so otherwise, any subfield of $K$ would also be a valuation ring of $K$.
+Here
+:::
