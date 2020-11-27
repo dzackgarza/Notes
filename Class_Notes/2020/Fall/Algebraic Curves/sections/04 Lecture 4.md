@@ -383,12 +383,18 @@ We can now use NTII:[^petes_notes_note] since $K/k(t)$ is finite, it follows tha
 So every place of $K/k$ is a discrete valuation as long as the transcendence degree is one, but this is far from the case for degree $\geq 2$!
 In the following example, we'll have a rational function field, which makes things easier. 
 You need a theory of extending Krull valuations, since we'll define a non-rank 1 valuation on the rational function field.
-But an arbitrary finitely generated field extension of degree $d$ over $k$ is a finite degree extension of the rational function field, and valuation theory will tell you that every valuation downstairs can be extended in full generality 
+But an arbitrary finitely generated field extension of degree $d$ over $k$ is a finite degree extension of the rational function field, and valuation theory will tell you that every valuation downstairs can be extended in full generality to a finite degree field extension, and the rank will not change.
 
+:::{.exercise title="?"}
+If $K/k$ is finitely generated of $\trdeg \geq 2$, then $\Sigma(K/k)$ has valuations of rank $d$.
+:::
+
+Note that the Zariski-Riemann space only consists of discrete valuations, which is a characteristic property of one variable function fields.
+So these higher rank valuations may look weird, but when studying a function field of higher transcendence degree (e.g. for an algebraic surface), these occur.
 
 :::{.exercise title="?"}
 Let $k$ be a field and $K = k(t_1, \cdots, t_n)$.
-Set $G = \ZZ^n$ with the lex order, so $G^{\geq 0 = \NN^n$.
+Set $G = \ZZ^n$ with the lex order, so $G^{\geq 0} = \NN^n$.
 
 - Show that $k[t_1, \cdots, t_n] = k[G^{\geq 0}]$, where the RHS is the associated semigroup ring.
 
@@ -398,7 +404,8 @@ Set $G = \ZZ^n$ with the lex order, so $G^{\geq 0 = \NN^n$.
   v(a_1 t_1^3 t_2 + a_2 t_1^2 t_2^{10})  = (2, 10)
   .\]
 
-
+- Extend $v$ to $v: K\nonzero \surjects G$ satisfying VRK1 and VRK2.
+  Show that $R_v \da v^{-1}(G^{\geq 0})
   
 
 :::
