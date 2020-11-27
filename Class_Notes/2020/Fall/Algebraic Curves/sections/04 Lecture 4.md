@@ -317,3 +317,14 @@ the intersection of all valuation subrings of the field, is the integral closure
 The proof is mostly a Zorn's lemma type of argument.
 Note that each $R_v$ is generally big, contains $A$, and $\ff(R_v) = K$.
 Moreover, each valuation ring is integrally closed, although we haven't proved this yet.
+
+:::{.corollary title="?"}
+For $K/k$  function field, $\intersect_{v\in \Sigma(K/k)} R_v = \kappa(K)$, the constant subfield of $K$.
+:::
+
+
+:::{.proof title="?"}
+Note that $\kappa(K)$ is the integral (algebraic) closure of $k$ in $K$.
+Applying the theorem directly almost works, except 
+
+:::
