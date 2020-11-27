@@ -30,7 +30,11 @@ It also implies that $K = \ff(R)$.
 :::
 
 :::{.definition title="Group of Divisibility"}
-Given any
+Given any integral domain $R$ with fraction field $K$, the **group of divisibility** $G(R)$ is defined as the partially ordered commutative group 
+\[  
+G(R) \da K\units / R\units
+.\]
+We will write the group law here additively.
 :::
 
 
