@@ -132,4 +132,7 @@ These two constructions are morally mutually inverse.
 This doesn't hold on the nose, since there is extraneous data in the new analytic valuation.
 Recall that in NTII we have a notion of equivalence of norms, and two distinct norms that are equivalent can give rise to the same valuation.
 For example, given a valuation, one can scale it by $\alpha \in \RR$, and it's easy to check that this gives the same valuation.
+It is possible for the valuation not to surject onto $\RR$, but this doesn't happen in practice.
+The image is usually infinite cyclic, what we call a *discrete valuation*, and so one is led to the definition of the *value group* of the valuation as its image.
+If you have a notion of equivalence of Krull valuations, you want to allow for isomorphisms of the value group
 :::
