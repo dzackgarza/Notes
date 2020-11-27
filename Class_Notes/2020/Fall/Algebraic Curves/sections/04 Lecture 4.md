@@ -268,5 +268,16 @@ The moral: the topology of $\Sigma(K/k)$ is not doing anything interesting and w
 
 When $K/k$ instead has transcendence degree *bigger* than 1, then $\tilde \Sigma(K/k)$ is much more interesting.
 If we were doing things scheme-theoretically, we could try to define a structure sheaf: attaching a sheaf whose stalks are local commutative rings to make it a locally ringed space.[^Schemes_in_rings_spaces]
+Here, the choice of a ring is straightforward: literally $\tilde \Sigma(A, A[f_1, \cdots, f_n])$.
+There's an exercise that shows that although defining a sheaf on the entire space is somewhat annoying, defining it on a basis suffices.
 
-[^Schemes_in_rings_spaces]: Schemes are a full subcategory
+:::{.exercise title="?"}
+Endow $\tilde \Sigma(K/k)$ with the structure of a locally ringed space.
+:::
+
+:::{.remark}
+In dimension 1 (the case we're studying), the corresponding Zariski-Riemann space will be the scheme associated to the complete nonsingular model of the curve.
+So this valuation-theoretic approach will take you from the function field back to a nice model of the scheme itself.
+:::
+
+[^Schemes_in_rings_spaces]: Schemes are a full subcategory of the much larger category of locally ringed spaces.
