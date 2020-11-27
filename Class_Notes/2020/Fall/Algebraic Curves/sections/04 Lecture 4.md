@@ -207,10 +207,16 @@ Here, $K$ itself plays the role of a generic point. (?)
 The only difference in these two definitions is that in the first, the trivial valuation ring is being excluded.
 :::
 
-:::{.definition title="Key: Points of a Curve"}
+:::{.definition title="Key: Places, Points of a Curve"}
 If $K/k$ is a one variable function field[^def_function_field_reminder]
-, then $\Sigma(K/k)$ will be the **points of the associated algebraic curve**.
+, then $\Sigma(K/k)$ will be the **points of the associated algebraic curve** or **places**.
+These can be thought of as valuation rings, or equivalence classes of Krull valuations, where two valuations are equivalent if they have the same valuation ring.
 
-[^def_function_field_reminder]: Finitely generated of transcendence degree one.
+[^def_function_field_reminder]: Finitely generated field extension of transcendence degree one.
 
+:::
+
+:::{.remark}
+In terms of scheme theory, these will be the closed points of our algebraic curve.
+We will view elements $f\in K$ as meromorphic functions on $\Sigma(K/k)$.
 :::
