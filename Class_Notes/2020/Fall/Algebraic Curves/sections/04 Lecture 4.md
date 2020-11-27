@@ -170,3 +170,9 @@ This is useful when studying $\spec(R)$ for $R$ a DVR.
 :::
 
 A valuation of rank bigger than 1 does not induce a norm on $K$ in the metric sense, although this is not so important.
+A closer notion is expanding the notion of a metric space by allowing the metric to be defined on $X$ as $d: X\cross X \to R$ for some $R$ more general than $\RR$, like a totally ordered group or a nonarchimedean field.
+This would yield a class of topological spaces that are reminiscent of metric spaces.
+
+:::{.definition title="Important: Regular and Centered"}
+Let $v:K\units \to (G, +)$ be a Krull valuation and let $A \subset K$ be a subring.
+:::
