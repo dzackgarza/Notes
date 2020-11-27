@@ -203,5 +203,14 @@ The set $\tilde \Sigma(K/A)$ is the **Zariski-Riemann space**.
 Note that in this definition, we're taking all $A\dash$regular valuation rings $R$ in $K$.
 If someone says $R$ is a valuation ring of $K$, they likely mean that $K = \ff(R)$.
 Note that fields are valuation rings, so otherwise, any subfield of $K$ would also be a valuation ring of $K$.
-Here
+Here, $K$ itself plays the role of a generic point. (?)
+The only difference in these two definitions is that in the first, the trivial valuation ring is being excluded.
+:::
+
+:::{.definition title="Key: Points of a Curve"}
+If $K/k$ is a one variable function field[^def_function_field_reminder]
+, then $\Sigma(K/k)$ will be the **points of the associated algebraic curve**.
+
+[^def_function_field_reminder]: Finitely generated of transcendence degree one.
+
 :::
