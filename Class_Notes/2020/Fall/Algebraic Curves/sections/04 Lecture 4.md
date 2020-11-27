@@ -267,3 +267,6 @@ Note that in a Dedekind domain, trading in a prime spectrum for a max spectrum i
 The moral: the topology of $\Sigma(K/k)$ is not doing anything interesting and we won't need it much.
 
 When $K/k$ instead has transcendence degree *bigger* than 1, then $\tilde \Sigma(K/k)$ is much more interesting.
+If we were doing things scheme-theoretically, we could try to define a structure sheaf: attaching a sheaf whose stalks are local commutative rings to make it a locally ringed space.[^Schemes_in_rings_spaces]
+
+[^Schemes_in_rings_spaces]: Schemes are a full subcategory
