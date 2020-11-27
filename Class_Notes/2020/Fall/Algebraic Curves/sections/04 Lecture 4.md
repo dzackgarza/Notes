@@ -398,14 +398,18 @@ Set $G = \ZZ^n$ with the lex order, so $G^{\geq 0} = \NN^n$.
 
 - Show that $k[t_1, \cdots, t_n] = k[G^{\geq 0}]$, where the RHS is the associated semigroup ring.
 
-- Define $v: k[G^{\geq 0}] \to G^{\geq 0}$ by mapping each polynomial the the minimal index of a monomial in its support.
+- Define $v: k[G^{\geq 0}] \to G^{\geq 0}$ by mapping each polynomial the minimal index of a monomial in its support.
   For example,
   \[  
   v(a_1 t_1^3 t_2 + a_2 t_1^2 t_2^{10})  = (2, 10)
-  .\]
+  ,\]
+  which has support $(3, 1)$ and $(2, 10)$, and we take the min in the lex order.
 
 - Extend $v$ to $v: K\nonzero \surjects G$ satisfying VRK1 and VRK2.
-  Show that $R_v \da v^{-1}(G^{\geq 0})
-  
+  Show that $R_v \da v^{-1}(G^{\geq 0}) \union\ts{0}$ is a valuation ring with value group $G$, and in particular, the rank is $n$.
 
 :::
+
+Note that doing this for $n=1$ reduces to the $t\dash$adic valuation, which just keeps track of the smallest power of $t$ appearing.
+Here you can extend to fraction fields by defining $v(x/y) = v(x) - v(y)$.
+The semigroup ring can't *be* the valuation ring, since polynomial rings are not local rings, so it's much bigger.
