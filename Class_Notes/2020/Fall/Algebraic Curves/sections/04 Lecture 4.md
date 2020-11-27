@@ -103,5 +103,9 @@ The answer is yes, by the following exercise:
 If $v(x) \neq v(y)$, then $v(x+y) = \min(v(x), v(y))$.
 :::
 
-So the properties here are formally identical to the previous notion of valuation, with $(\RR, +, \leq)$ replaced by $(G, +, \leq)$.
+So the properties here are formally identical to the NTII notion of valuation, with $(\RR, +, \leq)$ replaced by $(G(R), +, \leq)$.
+
+:::{.exercise title="?"}
+Conversely, if $v: K\units \to G$ is a map into a totally ordere commutative group satisfying VRK1 and VRK2, then
+:::
 
