@@ -328,5 +328,23 @@ Note that $\kappa(K)$ is the integral (algebraic) closure of $k$ in $K$.
 Applying the theorem directly almost works, except the theorem involves $\tilde \Sigma$.
 Can we remove the tilde?
 Suppose not, this can only happen if $\Sigma(K/k) = \emptyset$ and the intersection is just $K$ itself, the largest thing in the intersection.
-But $K/k$ is transcendental, while $\kappa(K) / k$ is algebraic, a contradiction.
+But can the integral closure of $k$ in $K$ be $K$ itself?
+No, since the transcendence degree of the function field is positive.
+So $K/k$ is transcendental, while $\kappa(K) / k$ is an algebraic extension, a contradiction.
+:::
+
+:::{.remark}
+Note that $\Sigma(K/k)$ is nonempty: there is a nontrivial valuation ring between $k$ and $K$ in great generality, and there are often many.
+:::
+
+
+:::{.claim title="Key"}
+If $\trdeg(K/k) = 1$, then every $v\in \Sigma(K/k)$ is discrete and thus has value group isomorphic to $\ZZ$.
+:::
+
+So despite the fact that we've introduced a more general notion of higher rank valuations, in dimension 1, every single valuation is discrete.
+
+
+:::{.proof title="?"}
+Let $v\in \Sigma(K/k)$ be a place, so its a valuation ring $, then $R_v$ is not a field.
 :::
