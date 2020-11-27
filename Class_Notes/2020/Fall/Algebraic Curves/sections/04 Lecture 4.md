@@ -35,6 +35,12 @@ Given any integral domain $R$ with fraction field $K$, the **group of divisibili
 G(R) \da K\units / R\units
 .\]
 We will write the group law here additively.
+The ordering is given by $x\leq y \iff y/x \in R$.
+:::
+
+:::{.remark}
+Note that the way the partial order is written, it's a relation on $K\units$, but it is not quite a partial ordering there.
+It is reflexive and transitive, but need not be antireflexive: if $x/y, y/x\in R$ then $x,y$ differ by a unit,
 :::
 
 
