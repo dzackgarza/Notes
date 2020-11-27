@@ -414,3 +414,7 @@ Note that doing this for $n=1$ reduces to the $t\dash$adic valuation, which just
 Here you can extend to fraction fields by defining $v(x/y) = v(x) - v(y)$.
 The semigroup ring can't *be* the valuation ring, since polynomial rings are not local rings, so it's much bigger.
 Note also that $\ZZ$ can be replaced with any group $G$, since it's never used in anything but a psychological fashion.
+
+:::{.slogan}
+There is a huge difference between $\trdeg = 1$ and $\trdeg > 1$, and so we'll only be working with the former case in this course.
+:::

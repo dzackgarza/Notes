@@ -631,7 +631,7 @@ width: 30%;
           <address class="author_afil">
   <h2 class="author">D. Zack Garza</h2>
     University of Georgia<br>        <a class="author_email" href="mailto:#">dzackgarza@gmail.com</a>
-        <p class="small">Last updated: 2020-11-26</p>
+        <p class="small">Last updated: 2020-11-27</p>
     
   </address>
       </div>
@@ -641,7 +641,7 @@ width: 30%;
 
 <nav class="pushy pushy-left" id="TOC">
 <ul>
-<li><a href="#lecture-1">Lecture 1?</a>
+<li><a href="#lecture-1">Lecture 1</a>
 <ul>
 <li><a href="#field-theory">Field Theory</a>
 <ul>
@@ -653,18 +653,27 @@ width: 30%;
 <li><a href="#onto-business">Onto Business</a></li>
 <li><a href="#lecture-1-a-review">Lecture 1, A Review</a></li>
 </ul></li>
-<li><a href="#lecture-2">Lecture 2?</a></li>
-<li><a href="#lecture-3">Lecture 3</a>
+<li><a href="#lecture-1-discussion">Lecture 1: Discussion</a></li>
+<li><a href="#lecture-2">Lecture 2</a>
 <ul>
 <li><a href="#base-extension">Base Extension</a></li>
 <li><a href="#example-of-a-non-regular-family-of-function-fields">Example of a Non-Regular Family of Function Fields</a></li>
 </ul></li>
-<li><a href="#lecture-4">Lecture 4</a>
+<li><a href="#lecture-3">Lecture 3</a>
 <ul>
 <li><a href="#polynomials-defining-regular-function-fields">Polynomials Defining Regular Function Fields</a></li>
 </ul></li>
+<li><a href="#lecture-4">Lecture 4</a>
+<ul>
+<li><a href="#one-variable-function-fields-ch.-1">One Variable Function Fields (Ch. 1)</a>
+<ul>
+<li><a href="#valuation-rings-and-krull-valuations">Valuation Rings and Krull Valuations</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#monday-november-23">Monday, November 23</a></li>
-<li><a href="#lecture-11-weils-proof-of-riemann-roch">Lecture 11: Weil’s Proof of Riemann-Roch</a></li>
+<li><a href="#lecture-11a-weils-proof-of-riemann-roch">Lecture 11A: Weil’s Proof of Riemann-Roch</a></li>
+<li><a href="#lecture-11b-weils-proof-of-riemann-roch">Lecture 11B: Weil’s Proof of Riemann-Roch</a></li>
+<li><a href="#lecture-11c-weils-proof-of-riemann-roch">Lecture 11C: Weil’s Proof of Riemann-Roch</a></li>
 <li><a href="#lecture-12-chapter-3-curves-over-a-finite-field">Lecture 12 (Chapter 3: Curves Over a Finite Field)</a>
 <ul>
 <li><a href="#base-extension-1">Base Extension</a>
@@ -691,7 +700,7 @@ width: 30%;
 
 
 
-<h1 id="lecture-1">Lecture 1?</h1>
+<h1 id="lecture-1">Lecture 1</h1>
 <h2 id="field-theory">Field Theory</h2>
 <p>See Chapter 11 of Field Theory notes.</p>
 <h3 id="notion-1">Notion 1</h3>
@@ -823,7 +832,7 @@ width: 30%;
 <li>Transcendence bases</li>
 <li>Lüroth problem</li>
 </ul>
-<h1 id="lecture-2">Lecture 2?</h1>
+<h1 id="lecture-1-discussion">Lecture 1: Discussion</h1>
 <p>For <span class="math inline">\(K/k\)</span> a one variable function field, if we want a curve <span class="math inline">\(C/k\)</span>, what are the points? We’ll use <em>valuations</em>, see NT 2.1.</p>
 <p>See also completions, residue fields.</p>
 <p>If <span class="math inline">\(R \subset K\)</span> a field, <span class="math inline">\(R\)</span> is a <em>valuation ring</em> of <span class="math inline">\(K\)</span> if for all <span class="math inline">\(x\in K^{\times}\)</span>, at least one of <span class="math inline">\(x, x^{-1} \in R\)</span>.</p>
@@ -854,7 +863,7 @@ width: 30%;
 <p>From this we can also define <em>divisor group</em> as the free <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>module on <span class="math inline">\(\Sigma(K/k)\)</span>, which comes with a degree map <span class="math display">\[\begin{align*}   \deg: \operatorname{Div}(K) \to {\mathbb{Z}} \end{align*}\]</span> which need not be surjective.</p>
 <p>We can consider principle divisors with the map <span class="math display">\[\begin{align*}   K^{\times}&amp;\to \operatorname{Div}(K) \\ f &amp;\mapsto (f) .\end{align*}\]</span></p>
 <p>We can define the class group as divisors modulo principle divisors <span class="math inline">\(\operatorname{cl}(K) = \operatorname{Div}(K) / \operatorname{im}(K^{\times})\)</span> and the Riemann-Roch space <span class="math inline">\(\mathcal{L}(D)\)</span>. The Riemann-Roch theorem will then be a statement about <span class="math inline">\(\dim \mathcal{L}(D)\)</span>.</p>
-<h1 id="lecture-3">Lecture 3</h1>
+<h1 id="lecture-2">Lecture 2</h1>
 <h2 id="base-extension">Base Extension</h2>
 <p>Given some object <span class="math inline">\(A/k\)</span> and <span class="math inline">\(k\hookrightarrow\ell\)</span> is a field extension, we would like some extended object <span class="math inline">\(A/\ell\)</span>.</p>
 <div class="example">
@@ -1001,23 +1010,18 @@ width: 30%;
 <p>Our curves will have points (equal to valuations) which will have degrees. If the constant subfield is not just <span class="math inline">\(k\)</span>, this prevents degree 1 points on the curve.</p>
 <p>By Galois theory, for every subgroup <span class="math inline">\(H \subseteq \operatorname{GL}(2, {\mathbb{Z}}/N{\mathbb{Z}}) / \left\{{\pm I}\right\}\)</span>, we’ll get a function field <span class="math inline">\({\mathbb{Q}}(H) \mathrel{\vcenter{:}}= H_N^H\)</span>. In this case, <span class="math inline">\({\mathbb{Q}}(H)/{\mathbb{Q}}\)</span> is regular <span class="math inline">\(\iff\)</span> <span class="math inline">\(\det(H) = ({\mathbb{Z}}/N{\mathbb{Z}})^{\times}\)</span>.</p>
 <p>Later we’ll understand the residues at points as the residue fields of some DVRs, then the residue field will always contain the field of constants.</p>
-<h1 id="lecture-4">Lecture 4</h1>
+<h1 id="lecture-3">Lecture 3</h1>
 <p>Last of preliminaries. Upcoming: one-variable function fields and their valuation rings.</p>
 <h2 id="polynomials-defining-regular-function-fields">Polynomials Defining Regular Function Fields</h2>
 <p>Where’s the curve: <span class="math inline">\(f(x, y) = 0\)</span>.</p>
 <div class="exercise">
-<p>Let <span class="math inline">\(R_1, R_2\)</span> be <span class="math inline">\(k{\hbox{-}}\)</span>algebras that are also domains with fraction fields <span class="math inline">\(K_i\)</span>. Show <span class="math inline">\(R_1 \otimes_k R_2\)</span> is a domain <span class="math inline">\(\iff\)</span> <span class="math inline">\(K_1 \otimes_k K_2\)</span> is a domain.</p>
-<blockquote>
-<p>Denominator-clearing argument.</p>
-</blockquote>
+<p>Let <span class="math inline">\(R_1, R_2\)</span> be <span class="math inline">\(k{\hbox{-}}\)</span>algebras that are also domains with fraction fields <span class="math inline">\(K_i\)</span>. Show <span class="math inline">\(R_1 \otimes_k R_2\)</span> is a domain <span class="math inline">\(\iff\)</span> <span class="math inline">\(K_1 \otimes_k K_2\)</span> is a domain.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </div>
 <div class="definition" title="Geometrically Irreducible">
-<p>A polynomial of positive degree <span class="math inline">\(f\in k[t_1, \cdots, t_n]\)</span> is <em>geometrically irreducible</em> if <span class="math inline">\(f\in \mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu[t_1, \cdots, t_n]\)</span> is irreducible as a polynomial.</p>
+<p>A polynomial of positive degree <span class="math inline">\(f\in k[t_1, \cdots, t_n]\)</span> is <strong>geometrically irreducible</strong> if <span class="math inline">\(f\in \mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu[t_1, \cdots, t_n]\)</span> is irreducible as a polynomial.</p>
 </div>
-<p>If <span class="math inline">\(n=1\)</span> then <span class="math inline">\(f\)</span> is geometrically irreducible <span class="math inline">\(\iff\)</span> it’s linear, i.e. of degree 1.</p>
-<p>Let <span class="math inline">\(f\)</span> be irreducible, then since polynomial rings are UFDs then <span class="math inline">\(\left\langle{f}\right\rangle\)</span> is a prime ideal (irreducibles generate principal ideals) and <span class="math inline">\(k[t_1, \cdots, t_n]/\left\langle{f}\right\rangle\)</span> is a domain. Let <span class="math inline">\(K_f\)</span> be the fraction field.</p>
-<div class="exercise">
-<p>Easy:</p>
+<p>If <span class="math inline">\(n=1\)</span> then <span class="math inline">\(f\)</span> is geometrically irreducible <span class="math inline">\(\iff\)</span> it’s linear, i.e. of degree 1. Let <span class="math inline">\(f\)</span> be irreducible, then since polynomial rings are UFDs then <span class="math inline">\(\left\langle{f}\right\rangle\)</span> is a prime ideal (irreducibles generate principal ideals) and <span class="math inline">\(k[t_1, \cdots, t_n]/\left\langle{f}\right\rangle\)</span> is a domain. Let <span class="math inline">\(K_f\)</span> be the fraction field.</p>
+<div class="exercise" title="an easy one">
 <ol type="a">
 <li><p>Above for <span class="math inline">\(1\leq i \leq n\)</span> let <span class="math inline">\(x_i\)</span> be the image of <span class="math inline">\(t_i\)</span> in <span class="math inline">\(K_f\)</span>. Show that <span class="math inline">\(K_f = k(x_1, \cdots, x_n)\)</span>.</p></li>
 <li><p>Show that if <span class="math inline">\(K/k\)</span> is generated by <span class="math inline">\(x_1, \cdots, x_n\)</span>, then it is the fraction field of <span class="math inline">\(k[t_1, \cdots, t_n] /{\mathfrak{p}}\)</span> for some prime ideal <span class="math inline">\({\mathfrak{p}}\)</span> (equivalently, a height 1 ideal).</p></li>
@@ -1029,25 +1033,17 @@ width: 30%;
 <li><p>The function field <span class="math inline">\(K/k\)</span> is regular.</p></li>
 <li><p>For all <span class="math inline">\(\ell/k\)</span>, <span class="math inline">\(f\in \ell[t_1, \cdots, t_n]\)</span> is irreducible.</p></li>
 </ol>
-<blockquote>
-<p>In this case we say <span class="math inline">\(f\)</span> is <em>absolutely irreducible</em> as a synonym for geometrically irreducible.</p>
-</blockquote>
 </div>
+<p>In this case we say <span class="math inline">\(f\)</span> is <em>absolutely irreducible</em> as a synonym for geometrically irreducible.</p>
 <div class="proof">
-<p>By definition of geometric irreducibility, <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu[t_1, \cdots, t_n]/\left\langle{f}\right\rangle = k[t_1, \cdots, t_n]/\left\langle{f}\right\rangle \otimes_k \mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu\)</span> is a domain. The exercise shows that <span class="math inline">\(K_f \otimes_k k\)</span> is a domain, so <span class="math inline">\(K_f\)</span> is regular.</p>
-<p>It follows that for all <span class="math inline">\(\ell/k\)</span>, <span class="math inline">\(K_f \otimes_k \ell\)</span> is a domain, so <span class="math inline">\(\ell[t_1, \cdots, t_n]/\left\langle{f}\right\rangle\)</span> is a domain.</p>
+<p>By definition of geometric irreducibility, <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu[t_1, \cdots, t_n]/\left\langle{f}\right\rangle = k[t_1, \cdots, t_n]/\left\langle{f}\right\rangle \otimes_k \mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu\)</span> is a domain. The exercise shows that <span class="math inline">\(K_f \otimes_k k\)</span> is a domain, so <span class="math inline">\(K_f\)</span> is regular. It follows that for all <span class="math inline">\(\ell/k\)</span>, <span class="math inline">\(K_f \otimes_k \ell\)</span> is a domain, so <span class="math inline">\(\ell[t_1, \cdots, t_n]/\left\langle{f}\right\rangle\)</span> is a domain.</p>
 </div>
 <p>Moral: geometrically irreducible polynomials are good sources of regular function fields.</p>
 <div class="exercise">
 <p>Let <span class="math inline">\(k\)</span> be a field, <span class="math inline">\(d\in {\mathbb{Z}}^+\)</span> such that <span class="math inline">\(4\nmid d\)</span> and <span class="math inline">\(p(x) \in k[x]\)</span> be positive degree. Factor <span class="math inline">\(p(x) = \prod_{i=1}^r (x-a_i)^{\ell_i}\)</span> in <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu[x]\)</span>.</p>
 <ol type="a">
-<li>Suppose that for some <span class="math inline">\(i\)</span>, <span class="math inline">\(d\nmid\ell_i\)</span>. Show that <span class="math inline">\(f(x, y) \mathrel{\vcenter{:}}= y^d - p(x) \in k[x, y]\)</span> is geometrically irreducible. Conclude that <span class="math inline">\(K_f \mathrel{\vcenter{:}}= ff\qty{k[x, y] / \left\langle{y^d - p(x)}\right\rangle}\)</span> is a regular one-variable function field over <span class="math inline">\(k\)</span>, and thus elliptic curves yield regular function fields.</li>
-</ol>
-<blockquote>
-<p>Referred to as <em>hyperelliptic</em> or <em>superelliptic</em> function fields. Hint: use FT 9.21 or Lang’s Algebra.</p>
-</blockquote>
-<ol start="2" type="a">
-<li>What happens when <span class="math inline">\(4{~\Bigm|~}d\)</span>?</li>
+<li><p>Suppose that for some <span class="math inline">\(i\)</span>, <span class="math inline">\(d\nmid\ell_i\)</span>. Show that <span class="math inline">\(f(x, y) \mathrel{\vcenter{:}}= y^d - p(x) \in k[x, y]\)</span> is geometrically irreducible. Conclude that <span class="math inline">\(K_f \mathrel{\vcenter{:}}= ff\qty{k[x, y] / \left\langle{y^d - p(x)}\right\rangle}\)</span> is a regular one-variable function field over <span class="math inline">\(k\)</span>, and thus elliptic curves yield regular function fields.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+<li><p>What happens when <span class="math inline">\(4{~\Bigm|~}d\)</span>?</p></li>
 </ol>
 </div>
 <div class="exercise" title="Nice, Recommended">
@@ -1056,54 +1052,232 @@ width: 30%;
 <li><p>Let <span class="math inline">\(f(x, y) = x^2 - y^2 -1\)</span> and show <span class="math inline">\(K_f\)</span> is is rational: <span class="math inline">\(K_f = k(z)\)</span>.</p></li>
 <li><p>Let <span class="math inline">\(f(x, y) = x^2 + y^2 - 1\)</span>. Show that <span class="math inline">\(K_f\)</span> is again rational.</p></li>
 <li><p>Let <span class="math inline">\(k = {\mathbb{C}}\)</span> and <span class="math inline">\(f(x, y) = x^2 + y^2 + 1\)</span>, <span class="math inline">\(K_f\)</span> is rational.</p></li>
-<li><p>Let <span class="math inline">\(k= {\mathbb{R}}\)</span>. For <span class="math inline">\(f(x ,y) = x^2 + y^2 + 1\)</span>, is <span class="math inline">\(K_f\)</span> rational?</p></li>
+<li><p>Let <span class="math inline">\(k= {\mathbb{R}}\)</span>. For <span class="math inline">\(f(x ,y) = x^2 + y^2 + 1\)</span>, is <span class="math inline">\(K_f\)</span> rational?<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
 </ol>
-<blockquote>
-<p>Example of a non-rational genus zero function field.</p>
-</blockquote>
 </div>
-<p>Question (converse): Can we always construct regular function fields using geometrically irreducible polynomials?</p>
-<p>Answer: In several variables, no, since not every variety is birational to a hypersurface.</p>
-<p>In one variable, yes:</p>
+<div class="question">
+<p>Can we always construct regular function fields using geometrically irreducible polynomials?</p>
+</div>
+<div class="answer">
+<p>In several variables, no, since not every variety is birational to a hypersurface. In one variable, yes, as the following theorem shows:</p>
+</div>
 <div class="theorem" title="Regular Function Fields in One Variable are Geometrically Irreducible">
-<p>Let <span class="math inline">\(K/k\)</span> be a one variable function fields (finitely generated, transcendence degree one). Then</p>
+<p>Let <span class="math inline">\(K/k\)</span> be a one variable function field (finitely generated, transcendence degree one). Then</p>
 <ol type="a">
 <li><p>If <span class="math inline">\(K/k\)</span> is separable, then <span class="math inline">\(K = k(x, y)\)</span> for some <span class="math inline">\(x, y\in K\)</span>.</p></li>
 <li><p>If <span class="math inline">\(K/k\)</span> is regular (separable + constant subfield is <span class="math inline">\(k\)</span>, so stronger) then <span class="math inline">\(K \cong K_f\)</span> for a geometrically irreducible <span class="math inline">\(f\in k[x ,y]\)</span>.</p></li>
 </ol>
 </div>
-<div class="proof">
 <p>Recall separable implies there exists a separating transcendence basis.</p>
-<p>Proof of (a):</p>
+<div class="proof" title="of a">
 <p>This means there exists a primitive element <span class="math inline">\(x\in K\)</span> such that <span class="math inline">\(K/k(x)\)</span> is finite and separable. By the Primitive Element Corollary (FT 7.2), there exist a <span class="math inline">\(y\in K\)</span> such that <span class="math inline">\(K = k(x, y)\)</span>.</p>
-<p>Proof of (b):</p>
+</div>
+<div class="proof" title="of b">
 <p>Omitted for now, slightly technical.</p>
 </div>
 <p>Importance of last result: a regular function field on one variable corresponds to a nice geometrically irreducible polynomial <span class="math inline">\(f\)</span>.</p>
-<blockquote>
+<div class="remark">
 <p>Note: the plane curve module may not be smooth, and in fact usually is not possible. I.e. <span class="math inline">\(k[x ,y]/\left\langle{f}\right\rangle\)</span> is a one-dimensional noetherian domain, which need not be integrally closed.</p>
-</blockquote>
-<p>Question: Can every one variable function field be 2-generated?</p>
-<p>Answer: Yes, as long as the ground field is perfect. In positive characteristic, the suspicion is no: there exists finite inseparable extensions <span class="math inline">\(\ell/k\)</span> that need arbitrarily many generators.</p>
-<p>However, what if <span class="math inline">\(K/k\)</span> has constant field <span class="math inline">\(k\)</span> but is not separable? Riemann-Roch may have something to say about this.</p>
-<div class="example">
-<p><span class="math inline">\(ax^p + b - y^b\)</span></p>
 </div>
-<p>Moral: look for examples of nice function fields by taking irreducible polynomials in two variables. This will define a one-variable function field. If the polynomial is geometrical reducible, this produces regular function fields.</p>
+<div class="question">
+<p>Can every one variable function field be 2-generated?</p>
+</div>
+<div class="answer">
+<p>Yes, as long as the ground field is perfect. In positive characteristic, the suspicion is no: there exists finite inseparable extensions <span class="math inline">\(\ell/k\)</span> that need arbitrarily many generators. However, what if <span class="math inline">\(K/k\)</span> has constant field <span class="math inline">\(k\)</span> but is not separable? Riemann-Roch may have something to say about this.</p>
+</div>
+<div class="example">
+<p><span class="math display">\[\begin{align*} ax^p + b - y^b \end{align*}\]</span></p>
+</div>
+<div class="remark">
+<p>We can find examples of nice function fields by taking irreducible polynomials in two variables. This will define a one-variable function field. If the polynomial is geometrical reducible, this produces regular function fields.</p>
+</div>
 <p>Next: One variable function fields and their valuations.</p>
+<h1 id="lecture-4">Lecture 4</h1>
+<h2 id="one-variable-function-fields-ch.-1">One Variable Function Fields (Ch. 1)</h2>
+<p>Since we have the field-theoretic preliminaries out of the way, we now start studying one-variable function fields in earnest. The main technique that we use to extract the geometry will be the theory of valuations. These may be familiar from NTII, but we will cover them in more generality here.</p>
+<h3 id="valuation-rings-and-krull-valuations">Valuation Rings and Krull Valuations</h3>
+<p>Recall that NTII approach to valuations:</p>
+<div class="definition" title="Valuation">
+<p>A <strong>valuation</strong> on a field <span class="math inline">\(K\)</span> is a map <span class="math inline">\(v:K\to {\mathbb{R}}\cup\left\{{\infty}\right\}\)</span> such that <span class="math inline">\(v(K^{\times}) \subset {\mathbb{R}}\)</span>, <span class="math inline">\(v(0) = \infty\)</span>, and <span class="math inline">\(v\)</span> is of the form <span class="math inline">\(-\log({\left\lvert {{\,\cdot\,}} \right\rvert})\)</span> where <span class="math inline">\({\left\lvert {{\,\cdot\,}} \right\rvert}: K \to [0, \infty)\)</span> is an <em>ultrametric norm</em>.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Recall that an <em>ultrametric norm</em> satisfies not only the triangle inequality but the ultrametric triangle inequality, i.e. <span class="math inline">\(d(x, z) \leq \max(x, z)\)</span>.</p>
+</div>
+<p>We now take an algebraic approach to this definition, where we’ll end up replacing <span class="math inline">\({\mathbb{R}}\)</span> with something more general.</p>
+<div class="definition" title="Valuation Ring">
+<p>A subring <span class="math inline">\(R\)</span> of a field <span class="math inline">\(K\)</span> is a <strong>valuation ring</strong> if for all <span class="math inline">\(x\in K^{\times}\)</span>, at least one of <span class="math inline">\(x\)</span> or <span class="math inline">\(x^{-1}\)</span> is in <span class="math inline">\(R\)</span>.</p>
+</div>
+<div class="remark">
+<p>This is a “largeness” property. It also implies that <span class="math inline">\(K = \operatorname{ff}(R)\)</span>.</p>
+</div>
+<div class="definition" title="Group of Divisibility">
+<p>Given any integral domain <span class="math inline">\(R\)</span> with fraction field <span class="math inline">\(K\)</span>, the <strong>group of divisibility</strong> <span class="math inline">\(G(R)\)</span> is defined as the <em>partially ordered commutative group</em><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p><span class="math display">\[\begin{align*}   G(R) \mathrel{\vcenter{:}}= K^{\times}/ R^{\times} .\end{align*}\]</span> We will write the group law here additively. The ordering is given by <span class="math inline">\(x\leq y \iff y/x \in R\)</span>.</p>
+</div>
+<div class="remark">
+<p>Note that the way the partial order is written, it’s a relation on <span class="math inline">\(K^{\times}\)</span>, but it is not quite a partial ordering there. It is reflexive and transitive, but need not be antireflexive: if <span class="math inline">\(x/y, y/x\in R\)</span> then <span class="math inline">\(x,y\)</span> differ by an element of <span class="math inline">\(u\in R^{\times}\)</span> so that <span class="math inline">\(x=uy\)</span>. In particular, they need not be equal. This gives a structure of a <em>quasiordering</em>, and if you set <span class="math inline">\(x\sim y \iff x\leq y\)</span> and <span class="math inline">\(y\leq x\)</span>, this leads to an equivalence relation, and modding out by it yields a partial order. Here this is accomplished by essentially trivializing units.<br />
+</p>
+<p>Another way to think of <span class="math inline">\(G(R)\)</span> is as the nonzero principal fractional ideals of <span class="math inline">\(K\)</span>, since any two generators of an ideal will differ by a unit.</p>
+</div>
+<div class="remark">
+<p>Inside this group there is a <em>positive cone</em> <span class="math inline">\(G(R)^+\)</span> of elements that are “nonnegative”: since we’re in a commutative setting, the zero element is equal to 1, and the positive cone is given by <span class="math inline">\(\left\{{y\geq 0}\right\} = \left\{{y\in R}\right\}\)</span>, and is thus given by the group <span class="math inline">\(G(R)^+ = (R, \cdot)\)</span>.<br />
+</p>
+<p>This is very general: if you’re studying factorization in integral domains, many properties are reflected in <span class="math inline">\(G(R)\)</span>. E.g. being a UFD (the most important factorization property!) implies that <span class="math inline">\(G(R)\)</span> is a free commutative group.</p>
+</div>
+<div class="remark">
+<p>In general this is only a <em>partially</em> ordered group and not totally ordered. For example, take <span class="math inline">\(R = {\mathbb{Z}}\)</span> and <span class="math inline">\(x=2, y=3\)</span>, then neither of <span class="math inline">\(2/3, 3/2\)</span> are in <span class="math inline">\({\mathbb{Z}}\)</span>, so <span class="math inline">\(x\not\leq y\)</span> and <span class="math inline">\(y\not\leq x\)</span>. On the other hand, if we do have a total order, then either <span class="math inline">\(x\)</span> or <span class="math inline">\(x^{-1}\)</span> is in the ring, which are exactly valuation subring of a field.</p>
+</div>
+<div class="claim">
+<p><span class="math inline">\(R\)</span> is a valuation ring <span class="math inline">\(\iff\)</span> <span class="math inline">\(G(R)\)</span> is totally ordered.</p>
+</div>
+<div class="remark">
+<p>Note that <span class="math inline">\({\mathbb{R}}\)</span> is a totally ordered group.</p>
+</div>
+<p>This makes <span class="math inline">\(G(R)\)</span> the “target group” of a generalized analytic valuation. Whenever we have a valuation ring, we have a totally ordered commutative group, and the valuation <span class="math inline">\(v: K^{\times}\to G(R)\)</span> is a quotient map which we can extend to <span class="math inline">\(K\)</span> by <span class="math inline">\(v(0) \mathrel{\vcenter{:}}=\infty\)</span>. This has some familiar properties:</p>
+<ul>
+<li>(VRK1) For all <span class="math inline">\(x,y\in K^{\times}\)</span>,<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
+</ul>
+<p><span class="math display">\[\begin{align*}   v(xy) = v(x) + v(y) .\end{align*}\]</span></p>
+<ul>
+<li>(VRK2) For all <span class="math inline">\(x,y \in K^{\times}\)</span> such that <span class="math inline">\(x+y\neq 0\)</span>, <span class="math display">\[\begin{align*}       v(x+y) \geq \min(v(x), v(y))     .\end{align*}\]</span></li>
+</ul>
+<p>For ultrametric norms, all triangles are isosceles: is that true for this type of function? The answer is yes, by the following exercise:</p>
+<div class="exercise" title="?">
+<p>If <span class="math inline">\(v(x) \neq v(y)\)</span>, then <span class="math inline">\(v(x+y) = \min(v(x), v(y))\)</span>.</p>
+</div>
+<p>So the properties here are formally identical to the NTII notion of valuation, with <span class="math inline">\(({\mathbb{R}}, +, \leq)\)</span> replaced by <span class="math inline">\((G(R), +, \leq)\)</span>.</p>
+<div class="exercise" title="?">
+<p>Conversely, if <span class="math inline">\(v: K^{\times}\to G\)</span> is a map into a totally ordered commutative group satisfying VRK1 and VRK2<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, then <span class="math display">\[\begin{align*}   R_v \mathrel{\vcenter{:}}=\left\{{x\in K^{\times}~{\text{s.t.}}~v(x) \geq 0}\right\} \cup\left\{{0}\right\} \end{align*}\]</span> is a valuation ring.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> We can thus extract valuation rings in this situation.</p>
+</div>
+<div class="exercise" title="?">
+<p>A valuation ring is <strong>local</strong>, i.e. there is a unique maximal ideal <span class="math display">\[\begin{align*}   \mathfrak{m}_v \mathrel{\vcenter{:}}=\left\{{x\in K^{\times}~{\text{s.t.}}~v(x) &gt; 0}\right\} \cup\left\{{0}\right\} .\end{align*}\]</span></p>
+</div>
+<div class="remark">
+<p>These two constructions are morally mutually inverse. This doesn’t hold on the nose, since there is extraneous data in the new analytic valuation. Recall that in NTII we have a notion of equivalence of norms, and two distinct norms that are equivalent can give rise to the same valuation. For example, given a valuation, one can scale it by <span class="math inline">\(\alpha \in {\mathbb{R}}\)</span>, and it’s easy to check that this gives the same valuation. It is possible for the valuation not to surject onto <span class="math inline">\({\mathbb{R}}\)</span>, but this doesn’t happen in practice. The image is usually infinite cyclic, what we call a <em>discrete valuation</em>, and so one is led to the definition of the <em>value group</em> of the valuation as its image. If you have a notion of equivalence of Krull valuations, you want to allow for isomorphisms of the value group. The cleanest notion of equivalence is thus the following:</p>
+</div>
+<div class="definition" title="Equivalence of Krull valuations">
+<p>Two Krull valuations on a field <span class="math inline">\(K\)</span> are <strong>equivalent</strong> iff their valuation rings are <em>equal</em>.</p>
+</div>
+<div class="remark">
+<p>Going back to NTII, if you have two nonarchimedean norms on a field, then there are many equivalent conditions for equivalence, and this is one of them.</p>
+</div>
+<p>Some general valuation theory:</p>
+<ul>
+<li><p>Every totally ordered commutative group is a group of divisibility.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p></li>
+<li><p>A totally ordered group has <strong>rank 1</strong> if it is nontrivial and embeds into <span class="math inline">\({\mathbb{R}}\)</span></p>
+<ul>
+<li>If the value group is trivial, <span class="math inline">\(R = K\)</span></li>
+</ul></li>
+<li><p>A Krull valuation of rank at most 1 is the NTII notion of a valuation.</p></li>
+</ul>
+<div class="exercise" title="?">
+<p>For <span class="math inline">\(n\geq 2\)</span>, put the lexicographic order on <span class="math inline">\({\mathbb{Z}}^n\)</span>, and show this has rank strictly larger than 1. Thus <span class="math inline">\({\mathbb{Z}}^n\hookrightarrow{\mathbb{R}}\)</span> as a commutative group, but not as a totally ordered commutative group.</p>
+</div>
+<div class="remark">
+<p>In fact, for any ordered group <span class="math inline">\(G\)</span>, one can attach a rank: a cardinal number <span class="math inline">\(r(G)\)</span>. Here, <span class="math inline">\(r(({\mathbb{Z}}^n, \text{lex})) = n\)</span>. This is useful when studying <span class="math inline">\(\operatorname{Spec}(R)\)</span> for <span class="math inline">\(R\)</span> a DVR.</p>
+</div>
+<p>A valuation of rank bigger than 1 does not induce a norm on <span class="math inline">\(K\)</span> in the metric sense, although this is not so important. A closer notion is expanding the notion of a metric space by allowing the metric to be defined on <span class="math inline">\(X\)</span> as <span class="math inline">\(d: X\times X \to R\)</span> for some <span class="math inline">\(R\)</span> more general than <span class="math inline">\({\mathbb{R}}\)</span>, like a totally ordered group or a nonarchimedean field. This would yield a class of topological spaces that are reminiscent of metric spaces.</p>
+<div class="definition" title="Important: Regular and Centered">
+<p>Let <span class="math inline">\(v:K^{\times}\to (G, +)\)</span> be a Krull valuation and let <span class="math inline">\(A \subset K\)</span> be a subring of <span class="math inline">\(K\)</span>. Then <span class="math inline">\(v\)</span> is <strong><span class="math inline">\(A{\hbox{-}}\)</span>regular</strong> or <strong>centered in <span class="math inline">\(A\)</span></strong> if <span class="math inline">\(A\)</span> is a subset of some valuation ring <span class="math inline">\(R_v\)</span>. In this case, <span class="math inline">\(\mathfrak{p} \mathrel{\vcenter{:}}=\mathfrak{m}_v \cap A \in \operatorname{Spec}(A)\)</span> is denoted the <strong>center of <span class="math inline">\(v\)</span> in <span class="math inline">\(A\)</span></strong>.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+</div>
+<div class="remark">
+<p>The term regularity here arises because we’ll want to think of elements of <span class="math inline">\(A\)</span> as functions and the valuation as a type of point, then the notion of being a regular function at a point will carry over. The center is the subset of <span class="math inline">\(A\)</span> with strictly positive valuation. Also recall that pulling back prime ideals yields prime ideals, and maximal ideals are a special kind of prime ideal, but in general pulling back a maximal ideal may not result in another maximal ideal. So somehow the valuation affects every subring on which it is regular.</p>
+</div>
+<div class="definition" title="Key: Zariski-Riemann Space">
+<p>For <span class="math inline">\(A \subset K\)</span>, define <span class="math display">\[\begin{align*}   \Sigma(K/A) &amp;\mathrel{\vcenter{:}}=\left\{{\text{valuation rings } A \subset R \subsetneq K ~{\text{s.t.}}~K = \operatorname{ff}(R)}\right\} \\ \tilde \Sigma(K/A) &amp;\mathrel{\vcenter{:}}=\left\{{\text{valuation rings } A \subset R \subseteq K ~{\text{s.t.}}~K = \operatorname{ff}(R)}\right\} .\end{align*}\]</span> The set <span class="math inline">\(\tilde \Sigma(K/A)\)</span> is the <strong>Zariski-Riemann space</strong>.</p>
+</div>
+<div class="remark">
+<p>Note that in this definition, we’re taking all <span class="math inline">\(A{\hbox{-}}\)</span>regular valuation rings <span class="math inline">\(R\)</span> in <span class="math inline">\(K\)</span>. If someone says <span class="math inline">\(R\)</span> is a valuation ring of <span class="math inline">\(K\)</span>, they likely mean that <span class="math inline">\(K = \operatorname{ff}(R)\)</span>. Note that fields are valuation rings, so otherwise, any subfield of <span class="math inline">\(K\)</span> would also be a valuation ring of <span class="math inline">\(K\)</span>. Here, <span class="math inline">\(K\)</span> itself plays the role of a generic point. (?) The only difference in these two definitions is that in the first, the trivial valuation ring is being excluded.</p>
+</div>
+<div class="definition" title="Key: Places, Points of a Curve">
+<p>If <span class="math inline">\(K/k\)</span> is a one variable function field<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> , then <span class="math inline">\(\Sigma(K/k)\)</span> will be the <strong>points of the associated algebraic curve</strong> or <strong>places</strong>. These can be thought of as valuation rings, or equivalence classes of Krull valuations, where two valuations are equivalent if they have the same valuation ring.</p>
+</div>
+<div class="remark">
+<p>In terms of scheme theory, these will be the closed points of our algebraic curve. We will view elements <span class="math inline">\(f\in K\)</span> as meromorphic functions on <span class="math inline">\(\Sigma(K/k)\)</span>.</p>
+</div>
+<div class="definition" title="Zariski Topology">
+<p>The <strong>Zariski topology</strong> on <span class="math inline">\(\Sigma(K/A)\)</span> has a sub-base <span class="math display">\[\begin{align*}   \left\{{U(f) ~{\text{s.t.}}~f\in K }\right\} &amp;&amp; U(f) \mathrel{\vcenter{:}}=\left\{{v\in \tilde \Sigma(K/A) ~{\text{s.t.}}~v(f) \geq 0}\right\} = \tilde \Sigma(K/ A[f]) .\end{align*}\]</span> and we thus take the minimal topology such that all of these sets are open. In other words, every open set is a finite intersection and/or arbitrary unions, including empty intersections/unions. The last term is precisely the subring generated by <span class="math inline">\(A\)</span> and <span class="math inline">\(f\)</span>. Thus a base is <span class="math inline">\(U(f_1, \cdots, f_n) = \tilde \Sigma(K / A[f_1, \cdots, f_n])\)</span>. The Zariski topology on <span class="math inline">\(\Sigma(K/A)\)</span> is defined the same way and/or via the subspace topology, since this removes a single point.</p>
+</div>
+<div class="remark">
+<p>We thus get the subrings of <span class="math inline">\(K\)</span> that contain <span class="math inline">\(A\)</span> and are finitely generated as <span class="math inline">\(A{\hbox{-}}\)</span>algebras. We’ll be specifically looking at the case where <span class="math inline">\(A\)</span> is a field and <span class="math inline">\(K\)</span> is a one variable function field.</p>
+</div>
+<div class="theorem" title="Zariski">
+<p><span class="math inline">\(\tilde \Sigma(K/A)\)</span> is quasi-compact.</p>
+</div>
+<div class="proof" title="?">
+<p>See Mazamara (?) in the chapter discussing valuation rings.</p>
+</div>
+<p>Note that by definition, <span class="math inline">\(v_n \not\in \Sigma(K/A)\)</span>. In <span class="math inline">\(\tilde \Sigma(K/A)\)</span>, we have a trivial valuation <span class="math inline">\(v_n\)</span> whose value group is trivial and valuation ring is <span class="math inline">\(K\)</span> itself, and <span class="math inline">\(v_n\)</span> is a generic point of <span class="math inline">\(\Sigma(K/A)\)</span>: its closure is the entire space. In other words, it is in every nonempty open subset. Since we have at least one generic point, and in general there may be many, if <span class="math inline">\({\left\lvert {\tilde\Sigma(K/A) &gt; 1} \right\rvert}\)</span> then this is not a separated (<span class="math inline">\(T_1\)</span>) space since the point is not closed.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> Another example of such a space would be <span class="math inline">\(\operatorname{Spec}(R)\)</span> for <span class="math inline">\(R\)</span> a commutative ring with positive Krull dimension, which will be Kolmogorov (<span class="math inline">\(T_0\)</span>) but not separated. Such a spectrum is the underlying topological space of some affine scheme, and in general, schemes will have these kinds of properties that are bad (but not <em>too</em> bad).</p>
+<p>In our case of interest, when <span class="math inline">\(K/k\)</span> is finitely generated of transcendence degree one, we’ll see that this is the cofinite topology on an infinite space: the proper closed subsets are precisely the finite subsets, or equivalently every nonempty open subset has finite complement. This is far from Hausdorff: the intersection of two open subsets will still have finite complement, so any two nonempty open subsets must intersect.<br />
+</p>
+<p>It’s not generally true that just removing the generic point <span class="math inline">\(v_n\)</span> will make the space separated, but in our case, it will be. So if we restrict to nontrivial valuation rings, then the underlying set will be infinite and we’ll get the cofinite topology. This will be the coarsest separated topology, i.e. if you want singletons to be closed, finite subsets must be closed. If <span class="math inline">\(k \subset A \subset K\)</span> where <span class="math inline">\(A\)</span> is a Dedekind domain with fraction field <span class="math inline">\(K\)</span>, we will see that if we consider not the <span class="math inline">\(k{\hbox{-}}\)</span>regular elements but the <span class="math inline">\(A{\hbox{-}}\)</span>regular ones, we’ll get <span class="math inline">\(\Sigma(K/A) = {\operatorname{maxSpec}}(A)\)</span> and both Zariski topologies are cofinite. Note that in a Dedekind domain, trading in a prime spectrum for a max spectrum is removing a generic point, so this matches up. The moral: the topology of <span class="math inline">\(\Sigma(K/k)\)</span> is not doing anything interesting and we won’t need it much.</p>
+<p>When <span class="math inline">\(K/k\)</span> instead has transcendence degree <em>bigger</em> than 1, then <span class="math inline">\(\tilde \Sigma(K/k)\)</span> is much more interesting. If we were doing things scheme-theoretically, we could try to define a structure sheaf: attaching a sheaf whose stalks are local commutative rings to make it a locally ringed space.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> Here, the choice of a ring is straightforward: literally <span class="math inline">\(\tilde \Sigma(A, A[f_1, \cdots, f_n])\)</span>. There’s an exercise that shows that although defining a sheaf on the entire space is somewhat annoying, defining it on a basis suffices.</p>
+<div class="exercise" title="?">
+<p>Endow <span class="math inline">\(\tilde \Sigma(K/k)\)</span> with the structure of a locally ringed space.</p>
+</div>
+<div class="remark">
+<p>In dimension 1 (the case we’re studying), the corresponding Zariski-Riemann space will be the scheme associated to the complete nonsingular model of the curve. So this valuation-theoretic approach will take you from the function field back to a nice model of the scheme itself. But note that in larger dimensions, there is no unique complete nonsingular model – for example, you can blow any one up to get another – so this pattern can’t possibly continue to hold. In fact, it’s not clear if we even know if there’s <em>one</em> such model!</p>
+</div>
+<div class="remark">
+<p>Thus in dimension <span class="math inline">\(&gt;1\)</span>, you get something that is decidedly not a scheme, but is still relevant to the study of resolution of singularities for your function field. Where do these come up? Zariski used <span class="math inline">\(\Sigma(K/A)\)</span> to prove resolution of singularities<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> in characteristic zero and dimensions 2 and 3 in 1944, although dimension 2 was classical by the Italian school. Later, Hironaka (1984) got the Fields medal for proving resolution of singularities for all dimensions in characteristic zero using an ingenious inductive argument that avoided Zariski-Riemann spaces entirely. It remarkably doesn’t use any new objects/tools, just uses existing ones in a clever way. So why talk about Zariski-Riemann spaces at all? In the last 10 years or so, work of Ternkin and Conrad has revived and generalized them. They study <em>relative</em> such spaces.</p>
+</div>
+<div class="problem" title="Open">
+<p>In positive characteristic, resolution of singularities is only known up to dimension <span class="math inline">\(\leq 3\)</span>.</p>
+</div>
+<p>The following is an extremely important result from commutative algebra:</p>
+<div class="theorem" title="CA 17.17">
+<p>Let <span class="math inline">\(A \subset K\)</span> be a subring of a field, then <span class="math display">\[\begin{align*}   \cap_{v\in \tilde \Sigma(K/A)} R_v ,\end{align*}\]</span> the intersection of all valuation subrings of the field, is the integral closure of <span class="math inline">\(A\)</span> in <span class="math inline">\(K\)</span>.</p>
+</div>
+<p>The proof is mostly a Zorn’s lemma type of argument. Note that each <span class="math inline">\(R_v\)</span> is generally big, contains <span class="math inline">\(A\)</span>, and <span class="math inline">\(\operatorname{ff}(R_v) = K\)</span>. Moreover, each valuation ring is integrally closed, although we haven’t proved this yet.</p>
+<div class="corollary" title="?">
+<p>For <span class="math inline">\(K/k\)</span> function field, <span class="math inline">\(\cap_{v\in \Sigma(K/k)} R_v = \kappa(K)\)</span>, the constant subfield of <span class="math inline">\(K\)</span>.</p>
+</div>
+<div class="proof" title="?">
+<p>Note that <span class="math inline">\(\kappa(K)\)</span> is the integral (algebraic) closure of <span class="math inline">\(k\)</span> in <span class="math inline">\(K\)</span>. Applying the theorem directly almost works, except the theorem involves <span class="math inline">\(\tilde \Sigma\)</span>. Can we remove the tilde? Suppose not, this can only happen if <span class="math inline">\(\Sigma(K/k) = \emptyset\)</span> and the intersection is just <span class="math inline">\(K\)</span> itself, the largest thing in the intersection. But can the integral closure of <span class="math inline">\(k\)</span> in <span class="math inline">\(K\)</span> be <span class="math inline">\(K\)</span> itself? No, since the transcendence degree of the function field is positive. So <span class="math inline">\(K/k\)</span> is transcendental, while <span class="math inline">\(\kappa(K) / k\)</span> is an algebraic extension, a contradiction.</p>
+</div>
+<div class="remark">
+<p>Note that <span class="math inline">\(\Sigma(K/k)\)</span> is nonempty: there is a nontrivial valuation ring between <span class="math inline">\(k\)</span> and <span class="math inline">\(K\)</span> in great generality, and there are often many.</p>
+</div>
+<div class="claim" title="Key">
+<p>If <span class="math inline">\(\operatorname{trdeg}(K/k) = 1\)</span>, then every <span class="math inline">\(v\in \Sigma(K/k)\)</span> is discrete and thus has value group isomorphic to <span class="math inline">\({\mathbb{Z}}\)</span>.</p>
+</div>
+<p>So despite the fact that we’ve introduced a more general notion of higher rank valuations, in dimension 1, every single valuation is discrete.</p>
+<div class="proof" title="?">
+<p>Let <span class="math inline">\(v\in \Sigma(K/k)\)</span> be a place, so its a valuation ring with fraction field <span class="math inline">\(K\)</span> that is not <span class="math inline">\(K\)</span>, then <span class="math inline">\(R_v\)</span> is not a field. So its maximal ideal <span class="math inline">\(\mathfrak{m}_v\)</span> is nonzero, so choose a nonzero element <span class="math inline">\(t\in \mathfrak{m}_v\)</span>. Then <span class="math inline">\(t \in R_v\)</span> and <span class="math inline">\(R_v\)</span> contains <span class="math inline">\(k\)</span>, so <span class="math inline">\(k[t] \subset R_v\)</span>. Note that <span class="math inline">\(k[t]\)</span> is a PID sitting inside a valuation ring. So restrict this maximal ideal down: <span class="math inline">\(\mathfrak{m}_v \cap k[t]\)</span> is a prime ideal of <span class="math inline">\(k[t]\)</span> containing <span class="math inline">\(t\)</span>, and thus the center <span class="math inline">\(\mathfrak{m}_v \cap k[t] = \left\langle{t}\right\rangle\)</span>. This follows because a prime ideal in the polynomial ring <span class="math inline">\(k[t]\)</span> which contains <span class="math inline">\(t\)</span> is necessarily generated by <span class="math inline">\(t\)</span>, since there’s exactly one such ideal.<br />
+</p>
+<p>Now restricting the valuation on <span class="math inline">\(K\)</span> to <span class="math inline">\(k(t) \subset K\)</span>, <span class="math inline">\(K / k(t)\)</span> will be a finite extension (from the first lecture). We know <span class="math inline">\(k(t) \subset K\)</span>, and we can now check that <span class="math inline">\({\left.{v}\right|_{k(t)}}\)</span> is the <span class="math inline">\(t{\hbox{-}}\)</span>adic valuation <span class="math inline">\(v_t\)</span>. Note that <span class="math inline">\(\mathfrak{m}_v\)</span> can not contain any other monic irreducible polynomials, since distinct such polynomials are coprime. Since we’re in a PID, this ideal would contain any linear combination of them and thus contain 1. So consider the map <span class="math display">\[\begin{align*}   k[t] \hookrightarrow R_b \to G(R_v) = K^{\times}/ R^{\times} .\end{align*}\]</span> Note that the units of <span class="math inline">\(k[t]\)</span> map trivially, using the fact that any element in <span class="math inline">\(k[t]\)</span> can be written as <span class="math inline">\(u \prod p_i^{a_i}\)</span> with the <span class="math inline">\(p_i\)</span> monic irreducible polynomials. The unit maps to zero, along with all of the other monic irreducibles, and thus the image is determined entirely by the image of powers of <span class="math inline">\(t\)</span>. This whole term goes to zero unless some <span class="math inline">\(p_i\mapsto t\)</span>, in which case it maps to some power of <span class="math inline">\(t\)</span>.<br />
+</p>
+<p>So suppose <span class="math inline">\(t\mapsto \gamma \neq 0\in G(R)\)</span>, which is nonzero because <span class="math inline">\(t\)</span> was not a unit (since it was in the maximal ideal). Then the image is exactly <span class="math inline">\(\gamma^{\mathbb{N}}\)</span>, the non-negative integer powers of the image of <span class="math inline">\(t\)</span>. But if we know goes on this domain, taking denominators shows where it goes on the fraction field (of a UFD), so the image is the cyclic group generated by <span class="math inline">\(\gamma\)</span>, i.e. the powers of <span class="math inline">\(t\)</span> are literally the only valuations we get. So the image of <span class="math inline">\(k(t)^{\times}\)</span> in <span class="math inline">\(G(R_v)\)</span> is <span class="math inline">\(\gamma^{\mathbb{Z}}\)</span>, yielding a discrete valuation. This proves that the restriction to the rational function field <span class="math inline">\(k(t)\)</span> is discrete, and we want to use this to deduce that the original valuation is discrete.<br />
+</p>
+<p>We can now use NTII:<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> since <span class="math inline">\(K/k(t)\)</span> is finite, it follows that <span class="math inline">\(v\)</span> is discrete iff <span class="math inline">\({\left.{v}\right|_{k(t)}}\)</span> is discrete, and thus <span class="math inline">\(v\)</span> is discrete.</p>
+</div>
+<p>So every place of <span class="math inline">\(K/k\)</span> is a discrete valuation as long as the transcendence degree is one, but this is far from the case for degree <span class="math inline">\(\geq 2\)</span>! In the following example, we’ll have a rational function field, which makes things easier. You need a theory of extending Krull valuations, since we’ll define a non-rank 1 valuation on the rational function field. But an arbitrary finitely generated field extension of degree <span class="math inline">\(d\)</span> over <span class="math inline">\(k\)</span> is a finite degree extension of the rational function field, and valuation theory will tell you that every valuation downstairs can be extended in full generality to a finite degree field extension, and the rank will not change.</p>
+<div class="exercise" title="?">
+<p>If <span class="math inline">\(K/k\)</span> is finitely generated of <span class="math inline">\(\operatorname{trdeg}\geq 2\)</span>, then <span class="math inline">\(\Sigma(K/k)\)</span> has valuations of rank <span class="math inline">\(d\)</span>.</p>
+</div>
+<p>Note that the Zariski-Riemann space only consists of discrete valuations, which is a characteristic property of one variable function fields. So these higher rank valuations may look weird, but when studying a function field of higher transcendence degree (e.g. for an algebraic surface), these occur.</p>
+<div class="exercise" title="Constructing valuations of arbitrary rank and value group">
+<p>Let <span class="math inline">\(k\)</span> be a field and <span class="math inline">\(K = k(t_1, \cdots, t_n)\)</span>. Set <span class="math inline">\(G = {\mathbb{Z}}^n\)</span> with the lex order, so <span class="math inline">\(G^{\geq 0} = {\mathbb{N}}^n\)</span>.</p>
+<ul>
+<li><p>Show that <span class="math inline">\(k[t_1, \cdots, t_n] = k[G^{\geq 0}]\)</span>, where the RHS is the associated semigroup ring.</p></li>
+<li><p>Define <span class="math inline">\(v: k[G^{\geq 0}]^{\bullet}\to G^{\geq 0}\)</span> by mapping each polynomial the minimal index of a monomial in its support. For example, <span class="math display">\[\begin{align*}       v(a_1 t_1^3 t_2 + a_2 t_1^2 t_2^{10})  = (2, 10)     ,\end{align*}\]</span> which has support <span class="math inline">\((3, 1)\)</span> and <span class="math inline">\((2, 10)\)</span>, and we take the min in the lex order.</p></li>
+<li><p>Extend <span class="math inline">\(v\)</span> to <span class="math inline">\(v: K^{\bullet}\twoheadrightarrow G\)</span> satisfying VRK1 and VRK2. Show that <span class="math inline">\(R_v \mathrel{\vcenter{:}}= v^{-1}(G^{\geq 0}) \cup\left\{{0}\right\}\)</span> is a valuation ring with value group <span class="math inline">\(G\)</span>, and in particular, the rank is <span class="math inline">\(n\)</span>.</p></li>
+</ul>
+</div>
+<p>Note that doing this for <span class="math inline">\(n=1\)</span> reduces to the <span class="math inline">\(t{\hbox{-}}\)</span>adic valuation, which just keeps track of the smallest power of <span class="math inline">\(t\)</span> appearing. Here you can extend to fraction fields by defining <span class="math inline">\(v(x/y) = v(x) - v(y)\)</span>. The semigroup ring can’t <em>be</em> the valuation ring, since polynomial rings are not local rings, so it’s much bigger. Note also that <span class="math inline">\({\mathbb{Z}}\)</span> can be replaced with any group <span class="math inline">\(G\)</span>, since it’s never used in anything but a psychological fashion.</p>
+<div class="slogan">
+<p>There is a huge difference between <span class="math inline">\(\operatorname{trdeg}= 1\)</span> and <span class="math inline">\(\operatorname{trdeg}&gt; 1\)</span>, and so we’ll only be working with the former case in this course.</p>
+</div>
 <h1 id="monday-november-23">Monday, November 23</h1>
-<h1 id="lecture-11-weils-proof-of-riemann-roch">Lecture 11: Weil’s Proof of Riemann-Roch</h1>
-<p>Let <span class="math inline">\(K_{/k}\)</span> be a one variable function field, finitely generated of transcendence degree one, with <span class="math inline">\(\kappa(K) = k\)</span>, so <span class="math inline">\(k\)</span> is algebraically closed in <span class="math inline">\(K\)</span>. Define the <em>small adele ring</em> associated to <span class="math inline">\(K\)</span>, as the restricted direction product with respect to <span class="math inline">\(\left\{{R_v ~{\text{s.t.}}~v\in \Sigma(K/k)}\right\}\)</span>:</p>
+<h1 id="lecture-11a-weils-proof-of-riemann-roch">Lecture 11A: Weil’s Proof of Riemann-Roch</h1>
+<p>Let <span class="math inline">\(K_{/k}\)</span> be a one variable function field, finitely generated of transcendence degree one, with <span class="math inline">\(\kappa(K) = k\)</span>, so <span class="math inline">\(k\)</span> is algebraically closed in <span class="math inline">\(K\)</span>. Define the <em>small Adele ring</em> associated to <span class="math inline">\(K\)</span>, as the restricted direction product with respect to <span class="math inline">\(\left\{{R_v ~{\text{s.t.}}~v\in \Sigma(K/k)}\right\}\)</span>:</p>
 <p><span class="math display">\[\begin{align*} A_k \mathrel{\vcenter{:}}=\prod^{\text{res}}_{v\in \Sigma(K/k)} K = \left\{{(x_v) \in K^{\Sigma(K/k)} ~{\text{s.t.}}~x_v \in R_v \text{ for a.e. } v }\right\} ,\end{align*}\]</span> where each factor is a copy of <span class="math inline">\(K\)</span>. Note that a <em>restricted</em> direct product is when you have a family of sets, and for each set you also attach a subset. Then if you have a tuple in the entire direct product, it’s in the restricted direct product iff for all but finitely many coordinates lie in a given subset. Here the subset is the valuation ring <span class="math inline">\(R_v\)</span>. So these are tuples of elements of <span class="math inline">\(K\)</span>, indexed by places, where each element has a <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation and the only restriction is that (except for finitely many cases) we want this valuation to be nonnegative.</p>
 <div class="remark">
-<p>To get the <em>big</em> adele ring, you’d replace <span class="math inline">\(K\)</span> with its completion with respect to the <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation. If <span class="math inline">\(k\)</span> is finite, then this is equal to the positive characteristic adele ring from NTII. If you complete, then you get a complete discretely valued field whose residue field equals the residue field at the place <span class="math inline">\(v\)</span>. So for finite extensions of <span class="math inline">\(k\)</span>, the residue will be finite iff <span class="math inline">\(k\)</span> is finite, and from the structure theory of discretely valued fields, this field has a natural topology: the adic topology, coming from the inverse limit. This will be locally compact iff the residue field is finite. Here, since the ground field is infinite, even passing to the completion wouldn’t yield anything locally compact. So there’s no advantage to passing to the completion, although there’s no harm either.</p>
+<p>To get the <em>big</em> Adele ring, you’d replace <span class="math inline">\(K\)</span> with its completion with respect to the <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation. If <span class="math inline">\(k\)</span> is finite, then this is equal to the positive characteristic Adele ring from NTII. If you complete, then you get a complete discretely valued field whose residue field equals the residue field at the place <span class="math inline">\(v\)</span>. So for finite extensions of <span class="math inline">\(k\)</span>, the residue will be finite iff <span class="math inline">\(k\)</span> is finite, and from the structure theory of discretely valued fields, this field has a natural topology: the adic topology, coming from the inverse limit. This will be locally compact iff the residue field is finite. Here, since the ground field is infinite, even passing to the completion wouldn’t yield anything locally compact. So there’s no advantage to passing to the completion, although there’s no harm either.</p>
 </div>
 <p>Note that <span class="math inline">\(A_k\)</span> is a ring, and in fact a <span class="math inline">\(K{\hbox{-}}\)</span>algebra, but we will only need its structure as a <span class="math inline">\(K{\hbox{-}}\)</span>vector space. This structure comes from embedding <span class="math inline">\(K\hookrightarrow A_k\)</span> diagonally, so <span class="math inline">\(x \mapsto [x, x, \cdots]\)</span>, and pull back <span class="math inline">\(v\in \Sigma(K/k)\)</span>, remembering that every element of <span class="math inline">\(K\)</span> (a rational function) is regular except for finitely many <span class="math inline">\(v\)</span>.</p>
 <p>If we have a valuation on <span class="math inline">\(K\)</span>, we can consider a place <span class="math inline">\(p\)</span> and projecting onto the <span class="math inline">\(k\)</span>th factor: <span class="math display">\[\begin{align*}   A_j %   \xrightarrow[]{\pi_p}\mathrel{\mkern-14mu}\rightarrow  K \xrightarrow{v_p} {\mathbb{Z}}\cup\left\{{\infty}\right\} .\end{align*}\]</span></p>
-<p>So we now attach an adelic versionm of the Riemann-Roch space: for <span class="math inline">\(D\in \operatorname{Div}K\)</span>, we set <span class="math display">\[\begin{align*}   \mathcal{A}_k(D) \mathrel{\vcenter{:}}=\left\{{ \alpha \in \mathcal{A}_K ~{\text{s.t.}}~v_p(\alpha) \geq -v_p(D) \, \forall p \in \Sigma(K/k)}\right\} .\end{align*}\]</span> The only difference here is that the usual space is over <span class="math inline">\(K\)</span>, and here we’re over <span class="math inline">\(\mathcal{A}_K\)</span>, which is a much larger space. This makes things easier, however, in the same sense that studying a large collection of local fields is easier than studying the corresponding global field. Note that the <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation <span class="math inline">\(v_p\)</span> is just the coefficient of <span class="math inline">\(p\)</span> in the divisor, and <span class="math inline">\(\mathcal{A}_K \cap K\)</span> yields the usual Riemann-Roch space.</p>
+<p>So we now attach an adelic version of the Riemann-Roch space: for <span class="math inline">\(D\in \operatorname{Div}K\)</span>, we set <span class="math display">\[\begin{align*}   \mathcal{A}_k(D) \mathrel{\vcenter{:}}=\left\{{ \alpha \in \mathcal{A}_K ~{\text{s.t.}}~v_p(\alpha) \geq -v_p(D) \, \forall p \in \Sigma(K/k)}\right\} .\end{align*}\]</span> The only difference here is that the usual space is over <span class="math inline">\(K\)</span>, and here we’re over <span class="math inline">\(\mathcal{A}_K\)</span>, which is a much larger space. This makes things easier, however, in the same sense that studying a large collection of local fields is easier than studying the corresponding global field. Note that the <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation <span class="math inline">\(v_p\)</span> is just the coefficient of <span class="math inline">\(p\)</span> in the divisor, and <span class="math inline">\(\mathcal{A}_K \cap K\)</span> yields the usual Riemann-Roch space.</p>
 <div class="exercise" title="?">
 <ol type="a">
-<li><p>Show that <span class="math inline">\(\mathcal{A}_K(D)\)</span> is an <span class="math inline">\(k{\hbox{-}}\)</span>subspace of <span class="math inline">\(\mathcal{A}_K\)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p>Show that <span class="math inline">\(\mathcal{A}_K(D)\)</span> is an <span class="math inline">\(k{\hbox{-}}\)</span>subspace of <span class="math inline">\(\mathcal{A}_K\)</span>.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p></li>
 <li><p>Show that (just as for the Riemann-Roch space) <span class="math inline">\(D_1 \leq D_2 \implies \mathcal{A}_K(D_1) \subseteq \mathcal{A}_K(D_2)\)</span>.</p></li>
 </ol>
 </div>
@@ -1129,21 +1303,23 @@ width: 30%;
 <p>We can now compute the dimension of this quotient. Using step 1 and Lemma 2.12, we get <span class="math display">\[\begin{align*}   \dim_k\qty{ \mathcal{A}_K(A_2) + K } / \qty{ \mathcal{A}_K(A_1) + K } &amp;= \dim_k \mathcal{A}_K(A_2) / \mathcal{A}_K(A_1) - \dim_k \mathcal{L}(A_2) / \mathcal{L}(A_1) \\ &amp;= \qty{\deg A_1 - \ell(A_2) } - \qty{\deg A_1 - \ell(A_1) } \\ &amp;= \iota(A_1) - \iota(A_2) ,\end{align*}\]</span> where the last step follows from adding and subtracting <span class="math inline">\(g-1\)</span>.</p>
 </div>
 <div class="proof" title="Step 3">
-<p>By step 2, it is enough to show that for all <span class="math inline">\(A_1 \in \operatorname{Div}K\)</span>, there exists a bigger divisor <span class="math inline">\(A_2 \geq A_1\)</span> such that <span class="math inline">\(\iota(A_2) = 0\)</span> (by just adding closed points) and <span class="math inline">\(\mathcal{A}_K(A_2) + K = \mathcal{A}_K\)</span>. By Riemann’s inequality, we have <span class="math inline">\(\iota(A_2) =0\)</span> if <span class="math inline">\(\deg A_2 \gg 0\)</span>, so choose such an <span class="math inline">\(A_2 \geq A_1\)</span>. Thus we’re reduced to showing that if <span class="math inline">\(\iota(B) = 0\)</span> for all <span class="math inline">\(B\in \operatorname{Div}K\)</span>, then <span class="math inline">\(\mathcal{A}_K = \mathcal{A}_K(B) + K\)</span>. We’ll do this by choosing another large effective divisor.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>By step 2, it is enough to show that for all <span class="math inline">\(A_1 \in \operatorname{Div}K\)</span>, there exists a bigger divisor <span class="math inline">\(A_2 \geq A_1\)</span> such that <span class="math inline">\(\iota(A_2) = 0\)</span> (by just adding closed points) and <span class="math inline">\(\mathcal{A}_K(A_2) + K = \mathcal{A}_K\)</span>. By Riemann’s inequality, we have <span class="math inline">\(\iota(A_2) =0\)</span> if <span class="math inline">\(\deg A_2 \gg 0\)</span>, so choose such an <span class="math inline">\(A_2 \geq A_1\)</span>. Thus we’re reduced to showing that if <span class="math inline">\(\iota(B) = 0\)</span> for all <span class="math inline">\(B\in \operatorname{Div}K\)</span>, then <span class="math inline">\(\mathcal{A}_K = \mathcal{A}_K(B) + K\)</span>. We’ll do this by choosing another large effective divisor.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></p>
 <p>Let <span class="math inline">\(B_1 \geq B\)</span>, then we have <span class="math display">\[\begin{align*}   \ell(B_1)  &amp;\leq \deg(B_1) + \ell(B) - \deg(B) \\ &amp;= \deg(B_1) - g + 1 .\end{align*}\]</span> Also, Riemann’s inequality gives <span class="math inline">\(\ell(B_1) \geq \deg(B_1) - g + 1\)</span>, so we have equality. Thus any divisor greater than or equal to a non-special divisor is again non-special.<br />
 </p>
-<p>We want to take an arbitrary element of the adele ring and show that it differs from an element of the adelic Riemann-Roch space associated to <span class="math inline">\(B\)</span> by an element of <span class="math inline">\(K\)</span>, so we’ll cleverly choose a divisor in order to do this. So take an arbitrary element <span class="math inline">\(\alpha\in \mathcal{A}_K\)</span> of the adele ring, then we may choose <span class="math inline">\(B_1 \geq B\)</span> such that <span class="math inline">\(\alpha\in \mathcal{A}_K(B_1)\)</span>. I.e., choosing <span class="math inline">\(B_1\)</span> large enough is allowing the poles to be however bad you want them to be, and <span class="math inline">\(\alpha\)</span> is a fixed element, all but finitely many elements have valuation <span class="math inline">\(\geq 0\)</span>.</p>
+<p>We want to take an arbitrary element of the Adele ring and show that it differs from an element of the adelic Riemann-Roch space associated to <span class="math inline">\(B\)</span> by an element of <span class="math inline">\(K\)</span>, so we’ll cleverly choose a divisor in order to do this. So take an arbitrary element <span class="math inline">\(\alpha\in \mathcal{A}_K\)</span> of the Adele ring, then we may choose <span class="math inline">\(B_1 \geq B\)</span> such that <span class="math inline">\(\alpha\in \mathcal{A}_K(B_1)\)</span>. I.e., choosing <span class="math inline">\(B_1\)</span> large enough is allowing the poles to be however bad you want them to be, and <span class="math inline">\(\alpha\)</span> is a fixed element, all but finitely many elements have valuation <span class="math inline">\(\geq 0\)</span>.</p>
 <p>We understand the relative situation well, based on what we proved. By step 2, since <span class="math inline">\(B, B_1\)</span> are non-special, the dimension of the quotient is zero: <span class="math display">\[\begin{align*}   \dim_k(\mathcal{A}_K(B_1) + K) / (\mathcal{A}_K(B) + K)  &amp;= \deg \qty{B_1 - \ell(B_1)} - \qty{\deg B - \ell(B) } \\ &amp;= (g-1) - (g-1) \\ &amp;= 0 .\end{align*}\]</span> But then these spaces are equal to each other, so <span class="math inline">\(\mathcal{A}_K(B_1) + K = \mathcal{A}_K + K\)</span>. But we chose <span class="math inline">\(B_1\)</span> arbitrarily large so it contained <span class="math inline">\(\alpha\)</span>, and we found that the resulting space is no bigger than the original. Note that <span class="math inline">\(B_1\)</span> was chosen so that <span class="math inline">\(\alpha\in \mathcal{A}_K(B_1)\)</span> before adding <span class="math inline">\(K\)</span>, which remains true when adding <span class="math inline">\(K\)</span>. But this says <span class="math inline">\(\alpha\)</span> is in the LHS, which equals the RHS. Then <span class="math inline">\(\alpha \in \mathcal{A}_K(B)\)</span>, where <span class="math inline">\(\alpha\)</span> was arbitrary, so <span class="math inline">\(\alpha\in \mathcal{A}_K(B) + K\)</span>.</p>
 </div>
 <div class="corollary" title="2.14">
 <p>This can be applied to the zero divisor: <span class="math display">\[\begin{align*}   \dim_k \mathcal{A}_K( \mathcal{A}_K(0) + K ) \iota(0) = g .\end{align*}\]</span></p>
 </div>
 <div class="exercise" title="?">
-<p>Corollary 2.14 shows that if <span class="math inline">\(K = k(t)\)</span> is the rational function field, then we have <span class="math inline">\(\mathcal{A}_K(0) + K = \mathcal{A}_K\)</span>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Show this directly.</p>
+<p>Corollary 2.14 shows that if <span class="math inline">\(K = k(t)\)</span> is the rational function field, then we have <span class="math inline">\(\mathcal{A}_K(0) + K = \mathcal{A}_K\)</span>.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> Show this directly.</p>
 </div>
 <div class="remark">
-<p>Note that analogy to consider <span class="math inline">\(\mathcal{A}({\mathbb{Q}})\)</span>, where you get <span class="math inline">\(\mathcal{A}_{\mathbb{Q}}= \widehat{\mathbb{Z}}+ {\mathbb{Q}}\)</span>, where <span class="math inline">\(\widehat{\mathbb{Z}}\)</span> denotes the profinite completion. Recall that <span class="math inline">\({\mathbb{A}}_{\mathbb{Q}}= \prod_p&#39; {\mathbb{Q}}_p \times{\mathbb{R}}\)</span>, and inside of this we have <span class="math inline">\({\mathbb{A}}(0) \mathrel{\vcenter{:}}=\prod_p {\mathbb{Z}}_p \times{\mathbb{R}}\)</span>. Not too crazy of a fact: given an adele, it has finitely many places where its <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation is negative, so it shouldn’t be hard to find a rational number as a correction term which doesn’t change the valuation. The fact that this works for <span class="math inline">\({\mathbb{Q}}\)</span> is related to <span class="math inline">\({\mathbb{Z}}\)</span> being a PID.</p>
+<p>Note that analogy to consider <span class="math inline">\(\mathcal{A}({\mathbb{Q}})\)</span>, where you get <span class="math inline">\(\mathcal{A}_{\mathbb{Q}}= \widehat{\mathbb{Z}}+ {\mathbb{Q}}\)</span>, where <span class="math inline">\(\widehat{\mathbb{Z}}\)</span> denotes the profinite completion. Recall that <span class="math inline">\({\mathbb{A}}_{\mathbb{Q}}= \prod_p&#39; {\mathbb{Q}}_p \times{\mathbb{R}}\)</span>, and inside of this we have <span class="math inline">\({\mathbb{A}}(0) \mathrel{\vcenter{:}}=\prod_p {\mathbb{Z}}_p \times{\mathbb{R}}\)</span>. Not too crazy of a fact: given an Adele, it has finitely many places where its <span class="math inline">\(p{\hbox{-}}\)</span>adic valuation is negative, so it shouldn’t be hard to find a rational number as a correction term which doesn’t change the valuation. The fact that this works for <span class="math inline">\({\mathbb{Q}}\)</span> is related to <span class="math inline">\({\mathbb{Z}}\)</span> being a PID.</p>
 </div>
+<h1 id="lecture-11b-weils-proof-of-riemann-roch">Lecture 11B: Weil’s Proof of Riemann-Roch</h1>
+<h1 id="lecture-11c-weils-proof-of-riemann-roch">Lecture 11C: Weil’s Proof of Riemann-Roch</h1>
 <h1 id="lecture-12-chapter-3-curves-over-a-finite-field">Lecture 12 (Chapter 3: Curves Over a Finite Field)</h1>
 <p>We consider <span class="math inline">\(k= {\mathbb{F}}_q\)</span> a finite field, which by definition is a one variable global function field. Idea: we’ve defined some affine dedekind domains (the holomorphy rings) had a finite nonempty set of places of the function field. These are analogous to the ring of integers of a number field, or more generally <span class="math inline">\(S{\hbox{-}}\)</span>integer rings. Recall some basic results from NT1: the finiteness of the class group, and the finite generation of the unit group. Here we have a class groups of affine Dedekind domain, and by Rosen’s theorem, there are infinitely many as you vary over nonempty subsets of places of the function field, and they’re all closely connected to a geometric class group: the degree zero divisor class group. Thus by this analogy, when the field is finite, we’d expect that <span class="math inline">\(\operatorname{Cl}^0(K)\)</span> is finite as well, which is the main result we’ll prove today.</p>
 <h2 id="base-extension-1">Base Extension</h2>
@@ -1163,7 +1339,7 @@ width: 30%;
 <div class="lemma" title="?">
 <p>Suppose <span class="math inline">\(v\)</span> is the downstairs place, <span class="math inline">\(r\)</span> is the degree of the extension, and <span class="math inline">\(d\mathrel{\vcenter{:}}=\deg(v)\)</span>. Then</p>
 <ul>
-<li><p><span class="math inline">\(K_r/K\)</span> is galois and we have <span class="math inline">\(efg = r\)</span>.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
+<li><p><span class="math inline">\(K_r/K\)</span> is galois and we have <span class="math inline">\(efg = r\)</span>.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></p></li>
 <li><p>This extension will be unramified: we in fact have <span class="math inline">\(e=1\)</span>, so <span class="math inline">\(g = \gcd(d, r)\)</span> and <span class="math inline">\(f = r/\gcd(d, r)\)</span>, and</p></li>
 <li><p>Each place <span class="math inline">\(w\in \Sigma(K_r/{\mathbb{F}_{q^r}})\)</span> lying over <span class="math inline">\(v\)</span> has degree <span class="math inline">\(d/\gcd(d, r)\)</span>.</p></li>
 </ul>
@@ -1190,7 +1366,7 @@ width: 30%;
 <p>The residue field, if it changes at all, can only increase in size, since any extension of Dedekind domains induces an extension of residue fields. So the size of the residue field of <span class="math inline">\(w\)</span> is at least as big as the size of the residue field of <span class="math inline">\(v\)</span>. But the degree of <span class="math inline">\(w\)</span> is measured relative to the extended field <span class="math inline">\({\mathbb{F}_{q^r}}\)</span>, since it’s the degree of the residue field as an extension of <span class="math inline">\({\mathbb{F}_{q^r}}\)</span>. So consider <span class="math inline">\(\deg(w) = \deg(v)/g\)</span>, we see that even as the residue field is increasing by a factor of <span class="math inline">\(f\)</span>, the degree of the point is decreasing by a factor of <span class="math inline">\(g\)</span>.</p>
 <p><strong>Upshot</strong>: The residue field grows, but its degree can only shrink. Thus making an extension forces the degrees of the upstairs places to <em>decrease</em>.</p>
 </div>
-<p>We’re trying to find out in how many ways a discrete valuation extends to a finite degree field extension. From ANTII, we have a result that describes this: if <span class="math inline">\(v\)</span> is a rank 1 valuation on <span class="math inline">\(k\)</span> and <span class="math inline">\(L/K\)</span> is a finite degree extension, then the extensions of <span class="math inline">\(v\)</span> to <span class="math inline">\(L\)</span> correspond with <span class="math inline">\(\operatorname{mSpec}(\widehat{K}_v \otimes_K L)\)</span>, where the hat denotes completing <span class="math inline">\(K\)</span> with respect to the valuation. The <span class="math inline">\(e,f,g\)</span> can all be computed as well.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>We’re trying to find out in how many ways a discrete valuation extends to a finite degree field extension. From ANTII, we have a result that describes this: if <span class="math inline">\(v\)</span> is a rank 1 valuation on <span class="math inline">\(k\)</span> and <span class="math inline">\(L/K\)</span> is a finite degree extension, then the extensions of <span class="math inline">\(v\)</span> to <span class="math inline">\(L\)</span> correspond with <span class="math inline">\(\operatorname{mSpec}(\widehat{K}_v \otimes_K L)\)</span>, where the hat denotes completing <span class="math inline">\(K\)</span> with respect to the valuation. The <span class="math inline">\(e,f,g\)</span> can all be computed as well.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a></p>
 <p>This is some finite degree <span class="math inline">\(\widehat{K}_v\)</span> algebra, and if <span class="math inline">\(L/K\)</span> is separable then this decomposes as a finite product of finite degree field extensions of <span class="math inline">\(K\)</span> and <span class="math inline">\(\widehat{K}_v\)</span>, the number of which will be <span class="math inline">\(g\)</span>. The <span class="math inline">\(e\)</span> and <span class="math inline">\(f\)</span> can be read off because each extension will have a ramified and unramified part.</p>
 <div class="exercise" title="?">
 <ol type="a">
@@ -1221,7 +1397,7 @@ width: 30%;
 </div>
 <div class="proof" title="of a">
 <p>Let <span class="math inline">\(L/K\)</span> be a degree <span class="math inline">\(n\)</span> extension of regular function fields over <span class="math inline">\({\mathbb{F}_{q}}\)</span>. We then have a restriction map <span class="math display">\[\begin{align*}   r: \Sigma(L/{\mathbb{F}_{q}}) \twoheadrightarrow\Sigma(K/{\mathbb{F}_{q}}) \end{align*}\]</span> which we showed is surjective with finite fibers. We can say a little bit more: for all places <span class="math inline">\(w \in \Sigma(L/{\mathbb{F}_{q}})\)</span>, we have an inequality <span class="math display">\[\begin{align*}   \qty{1\over n}\deg(w) \leq \deg(r(w)) \leq \deg(w) ,\end{align*}\]</span> noting that we’re now measuring all degrees over a common ground field <span class="math inline">\({\mathbb{F}_{q}}\)</span>. So things are now what you’d expect: the degree of the upstairs point is a multiple of the degree of the downstairs point. The upper bound comes from the fact that the residue of the upstairs point is a finite extension of the residue field of the downstairs points. The opposite inequality comes from ANTI: the degree of the residual extension is at most the degree of the entire extension.</p>
-<p>So <span class="math inline">\(r\)</span> doesn’t preserve degrees exactly, but preserves them up to a bounded factor, and thus <span class="math inline">\(\Sigma_{\leq d}(L/{\mathbb{F}_{q}})\)</span> is finite for all <span class="math inline">\(d\)</span> <span class="math inline">\(\iff\)</span> <span class="math inline">\(\Sigma_{\leq d}(K/{\mathbb{F}_{q}})\)</span> is finite for all <span class="math inline">\(d\)</span>. Because of this, we can reduce the situation by exchanging the function field <span class="math inline">\(L/{\mathbb{F}_{q}}\)</span> with any other function field for which <span class="math inline">\(L\)</span> is a finite extension, and in particular we can take the rational function field <span class="math inline">\(K = {\mathbb{F}}_q(t)\)</span>. What are the degree <span class="math inline">\(d\)</span> places of a rational function field? There is exactly one place at infinity, and the remaining ones correspond to monic irreducible polynomials. Since <span class="math inline">\({\mathbb{F}_{q}}\)</span> is finite, there are only finitely many such polynomials of any fixed degree.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>So <span class="math inline">\(r\)</span> doesn’t preserve degrees exactly, but preserves them up to a bounded factor, and thus <span class="math inline">\(\Sigma_{\leq d}(L/{\mathbb{F}_{q}})\)</span> is finite for all <span class="math inline">\(d\)</span> <span class="math inline">\(\iff\)</span> <span class="math inline">\(\Sigma_{\leq d}(K/{\mathbb{F}_{q}})\)</span> is finite for all <span class="math inline">\(d\)</span>. Because of this, we can reduce the situation by exchanging the function field <span class="math inline">\(L/{\mathbb{F}_{q}}\)</span> with any other function field for which <span class="math inline">\(L\)</span> is a finite extension, and in particular we can take the rational function field <span class="math inline">\(K = {\mathbb{F}}_q(t)\)</span>. What are the degree <span class="math inline">\(d\)</span> places of a rational function field? There is exactly one place at infinity, and the remaining ones correspond to monic irreducible polynomials. Since <span class="math inline">\({\mathbb{F}_{q}}\)</span> is finite, there are only finitely many such polynomials of any fixed degree.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a></p>
 </div>
 <div class="proof" title="of b">
 <p>Left as an exercise.</p>
@@ -1233,7 +1409,7 @@ width: 30%;
 </div>
 <p>This is a geometric analog of the finiteness of the class group of the ring of integers of a number field. By Rosen’s theorem, as an immediate corollary, the class group of any affine dedekind domain over a finite ground field is finite. This follows from looking at the exact sequence: a finite index subgroup of the class group of any dedekind domain is a quotient of <span class="math inline">\(\operatorname{Cl}^0(K)\)</span>, and a finite index subgroup of a finite group is finite.</p>
 <div class="proof" title="?">
-<p>Set <span class="math inline">\(\delta \mathrel{\vcenter{:}}= I(K)\)</span> to be the index, i.e. the least possible degree of a divisor.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+<p>Set <span class="math inline">\(\delta \mathrel{\vcenter{:}}= I(K)\)</span> to be the index, i.e. the least possible degree of a divisor.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a></p>
 <p>In any case, for all <span class="math inline">\(n\in {\mathbb{Z}}\)</span>, we have <span class="math display">\[\begin{align*}   \operatorname{Cl}^n K =  \begin{cases} 0 &amp; \delta\nmid n \\ {\left\lvert {\operatorname{Cl}^0 K} \right\rvert} &amp; \delta{~\Bigm|~}n \end{cases} .\end{align*}\]</span> If you have any degree <span class="math inline">\(n\)</span> divisors, then <span class="math inline">\(\operatorname{Cl}^n K\)</span> will be a coset of <span class="math inline">\(\operatorname{Cl}^0 K\)</span>. Here we just look at the degree map, which is a group morphism onto its image, of which all nonempty fibers have the same size. Thus we may work with <span class="math inline">\(\operatorname{Cl}^n K\)</span> for <span class="math inline">\(n\gg 0\)</span>.<br />
 </p>
 <p>In particular, choose <span class="math inline">\(n\geq g\)</span> the genus such that <span class="math inline">\(\delta {~\Bigm|~}n\)</span>, and let <span class="math inline">\(D \in \operatorname{Div}^n K\)</span>. A Riemann-Roch computation shows that <span class="math inline">\(\ell(D)\)</span>, the dimension of the linear system, is at least <span class="math inline">\(n-g+1\)</span>, and so we have <span class="math inline">\(\ell(D) \geq 1\)</span> and <span class="math inline">\(D\)</span> is linearly equivalent to an effective divisor. This shows that the map taking effective degree <span class="math inline">\(n\)</span> divisors to <span class="math inline">\(\operatorname{Cl}^n K\)</span> taking a divisor to its divisor class (restricted to effective divisors) is surjective. But we just saw that the set of effective degree <span class="math inline">\(n\)</span> divisors is finite – it was built out of finitely many closed points of bounded degrees – forcing <span class="math inline">\(\operatorname{Cl}^n K\)</span> to be finite. The result follows because <span class="math inline">\(\operatorname{Cl}^n K\)</span> is a coset of <span class="math inline">\(\operatorname{Cl}^0 K\)</span>, all of which have the same size, and the index is finite.</p>
@@ -1316,7 +1492,7 @@ width: 30%;
 </blockquote>
 <p>These are approximately in order of difficulty. The first two will follow from Riemann-Roch, but the third will be much deeper. This is essentially a positive characteristic analogue of the usual Riemann hypothesis. Note that we’re in a global field, the positive characteristic analog of a number field, and for number fields the Riemann hypothesis is the single outstanding problem. In the function field case, it is a theorem!</p>
 <div class="proposition" title="Formula for the zeta function exhibiting rationality">
-<p>Let <span class="math inline">\(K_{/\mathbb{F}_q}\)</span> have genus <span class="math inline">\(g\)</span> and <span class="math inline">\(\delta = I(K)\)</span> the index, the least positive degree of a divisor.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<p>Let <span class="math inline">\(K_{/\mathbb{F}_q}\)</span> have genus <span class="math inline">\(g\)</span> and <span class="math inline">\(\delta = I(K)\)</span> the index, the least positive degree of a divisor.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
 <ol type="a">
 <li><p>If <span class="math inline">\(g=0\)</span>, then <span class="math display">\[\begin{align*}       Z(t) = {1\over q-1} \qty{{q \over 1-q^\delta t^\delta} - {1 \over 1-t^\delta}}     .\end{align*}\]</span></p></li>
 <li><p>If <span class="math inline">\(g\geq 1\)</span>, then <span class="math inline">\(Z(t) + F(t) + G(t)\)</span> where <span class="math display">\[\begin{align*}       F(t)      &amp;= {1\over q-1} \sum_{0\leq \deg C \leq 2g-2} q^{\ell(C)} t^{\deg(C)} \\     G(t)     &amp;= {h \over g-1} \qty{     { q^{1-g} (qt)^{2g-2+\delta} \over 1 - (qt)^\delta } - {1 \over 1 - t^\delta}     }     ,\end{align*}\]</span> so <span class="math inline">\(F\)</span> involves summing over all divisor classes of degree at most <span class="math inline">\(2g-2\)</span>, and <span class="math inline">\(G\)</span> is a term coming from Riemann-Roch involving the class number <span class="math inline">\(h\)</span>.</p></li>
@@ -1345,7 +1521,7 @@ width: 30%;
 <h1 id="lecture-14">Lecture 14</h1>
 <p>Recall the that <em>Hasse-Weil zeta function</em> of a one-variable function field <span class="math inline">\(K/{\mathbb{F}}_q\)</span> over a finite ground field is defined in the following way: let <span class="math inline">\(A_n = A_n(K)\)</span> be the number of effective divisors of degree <span class="math inline">\(n\)</span>. We have proved that <span class="math inline">\(A_n\)</span> is finite, and for <span class="math inline">\(n&gt;2g-2\)</span> we have a formula <span class="math display">\[\begin{align*}   Z(t) = \sum_{n=0}^\infty A_n t^n = \sum_{D\in \operatorname{Div}^+(K)} t^{\deg(D)} \in {\mathbb{Z}}[[t]] ,\end{align*}\]</span> which is a formal power series with integer coefficients.</p>
 <div class="remark">
-<p>Recall that we have proved that it is a rational function of <span class="math inline">\(t\)</span>, and in particular when <span class="math inline">\(g=0, \delta = 1\)</span><a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> we get <span class="math display">\[\begin{align*}   Z(t) = {1 \over (1-qt)(1-t)} .\end{align*}\]</span></p>
+<p>Recall that we have proved that it is a rational function of <span class="math inline">\(t\)</span>, and in particular when <span class="math inline">\(g=0, \delta = 1\)</span><a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> we get <span class="math display">\[\begin{align*}   Z(t) = {1 \over (1-qt)(1-t)} .\end{align*}\]</span></p>
 <p>We got another expression which isn’t fantastic: it involves this <span class="math inline">\(\delta\)</span>, which we’ll work toward proving is equal to 1. When <span class="math inline">\(g&gt;1\)</span>, we broke the zeta function into two pieces <span class="math inline">\(Z(t) = F(t) + G(t)\)</span>. For divisors of sufficiently high degree, Riemann-Roch tells you what the dimension of the Riemann-Roch space is, and <span class="math inline">\(G(t)\)</span> explains the part coming from divisors of large degree. We obtained a formula previously for <span class="math inline">\(F(t)\)</span> and <span class="math inline">\(G(t)\)</span>, and once we show <span class="math inline">\(\delta=1\)</span> the formula for <span class="math inline">\(G\)</span> will simplify. For <span class="math inline">\(F(t)\)</span>, we specifically had <span class="math display">\[\begin{align*}   F(t) = {1\over q-1} \sum_{0\leq \deg(c) \leq 2g-2} q^{\ell(c) t^{\deg(c)}} ,\end{align*}\]</span> where the sum is over divisor classes and <span class="math inline">\(\ell\)</span> is the dimension of linear system corresponding to a divisor. But this isn’t a great formula: what are these classes, dhow many are in each degree, and what is the dimension of the Riemann-Roch space?</p>
 </div>
 <div class="remark">
@@ -1445,15 +1621,30 @@ width: 30%;
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>Consider scaling by nonzero constants, where the valuation of constants are zero.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>This “cone structure” on divisors is very useful!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>So every adele differs from a rational function by an effective adele.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p><span class="math inline">\(e\)</span> is the prime ramification index, <span class="math inline">\(f\)</span> is the prime residual degree, and <span class="math inline">\(g\)</span> is the number of distinct primes. This result essentially comes from ANTI, replacing <span class="math inline">\(\sum e_i f_i = r\)</span>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5" role="doc-endnote"><p>See Pete’s NTII notes, Theorem 1.64.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6" role="doc-endnote"><p>There is an exact formula for this quantity.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7" role="doc-endnote"><p>By a theorem of Schmidt, we’ll later prove that <span class="math inline">\(\delta = 1\)</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8" role="doc-endnote"><p>It will turn out (by a theorem of Schmidt) that <span class="math inline">\(\delta = 1\)</span> in the case of a finite ground field.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9" role="doc-endnote"><p>The <em>index</em> of the function field, least positive degree of a divisor.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>Hint: use a denominator clearing argument.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Referred to as <em>hyperelliptic</em> or <em>superelliptic</em> function fields. Hint: use FT 9.21 or Lang’s Algebra.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>This is an example of a non-rational genus zero function field.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>In other words, <span class="math inline">\(e^{-v({\,\cdot\,})}\)</span> is an ultrametric norm.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>This means that the two structures are compatible.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>This follows from the fact that the quotient map is a group morphism. Note that the additive notation makes this more suggestive of what an original valuation satisfied.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p>Any such map satisfying these two properties is a <strong>Krull valuation</strong>, Krull’s generalization of classical valuations.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>Note that in a totally ordered group, either <span class="math inline">\(v(x) \geq 0\)</span> or <span class="math inline">\(-v(x) \geq 0\)</span>, so we get the property that either <span class="math inline">\(x, x^{-1} \in R_v\)</span>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>Pete’s Commutative Algebra Notes, Ch. 17.10<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p>Here <span class="math inline">\(\mathfrak{m}_v\)</span> denotes pulling back the maximal ideal along this morphism of rings.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11" role="doc-endnote"><p>Finitely generated field extension of transcendence degree one.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12" role="doc-endnote"><p>Note that in French, separated may be interpreted as Hausdorff, but here we mean points are closed or equivalently any two distinct points admit open neighborhoods that do not meet the other point.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>Schemes are a full subcategory of the much larger category of locally ringed spaces.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>Resolving means given <span class="math inline">\(K/k\)</span>, we want to find a complete nonsingular affine variety whose function field is <span class="math inline">\(K\)</span>.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15" role="doc-endnote"><p>See NTII, Corollary 1.60: a valuation on a field whose restriction to a finite index subfield is discrete is itself discrete.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16" role="doc-endnote"><p>Consider scaling by nonzero constants, where the valuation of constants are zero.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17" role="doc-endnote"><p>This “cone structure” on divisors is very useful!<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18" role="doc-endnote"><p>So every Adele differs from a rational function by an effective Adele.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19" role="doc-endnote"><p><span class="math inline">\(e\)</span> is the prime ramification index, <span class="math inline">\(f\)</span> is the prime residual degree, and <span class="math inline">\(g\)</span> is the number of distinct primes. This result essentially comes from ANTI, replacing <span class="math inline">\(\sum e_i f_i = r\)</span>.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20" role="doc-endnote"><p>See Pete’s NTII notes, Theorem 1.64.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21" role="doc-endnote"><p>There is an exact formula for this quantity.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22" role="doc-endnote"><p>By a theorem of Schmidt, we’ll later prove that <span class="math inline">\(\delta = 1\)</span>.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23" role="doc-endnote"><p>It will turn out (by a theorem of Schmidt) that <span class="math inline">\(\delta = 1\)</span> in the case of a finite ground field.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24" role="doc-endnote"><p>The <em>index</em> of the function field, least positive degree of a divisor.<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--bookdown:body:end-->
