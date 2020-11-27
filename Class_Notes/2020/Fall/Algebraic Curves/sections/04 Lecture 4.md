@@ -191,5 +191,8 @@ So somehow the valuation affects every subring on which it is regular.
 :::
 
 :::{.definition title="Key: Zariski-Riemann Space"}
-
+For $A \subset K$, define
+\[  
+\Sigma(K/A) \da \ts{\text{valuation rings } A \subset R \subsetneq K \st K = \ff(R)}
+.\]
 :::
