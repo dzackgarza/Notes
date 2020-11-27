@@ -177,6 +177,7 @@ This would yield a class of topological spaces that are reminiscent of metric sp
 Let $v:K\units \to (G, +)$ be a Krull valuation and let $A \subset K$ be a subring of $K$.
 Then $v$ is **$A\dash$regular** or **centered in $A$** if $A$ is a subset of some valuation ring $R_v$.
 In this case, $\mathfrak{p} \da \mathfrak{m}_v \intersect A \in \spec(A)$ is denoted the **center of $v$ in $A$**.
+Here $\
 :::
 
 :::{.remark}
