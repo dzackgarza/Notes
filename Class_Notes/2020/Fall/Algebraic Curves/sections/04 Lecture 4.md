@@ -146,5 +146,3 @@ One variable function fields and their valuations.
 
 
 
-
-
