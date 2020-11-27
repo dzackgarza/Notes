@@ -16,16 +16,15 @@ Show $R_1 \tensor_k R_2$ is a domain $\iff$ $K_1 \tensor_k K_2$ is a domain.[^hi
 :::
 
 :::{.definition title="Geometrically Irreducible"}
-A polynomial of positive degree $f\in k[t_1, \cdots, t_n]$ is *geometrically irreducible* if $f\in \bar k[t_1, \cdots, t_n]$ is irreducible as a polynomial.
+A polynomial of positive degree $f\in k[t_1, \cdots, t_n]$ is **geometrically irreducible** if $f\in \bar k[t_1, \cdots, t_n]$ is irreducible as a polynomial.
 :::
 
 If $n=1$ then $f$ is geometrically irreducible $\iff$ it's linear, i.e. of degree 1.
-
 Let $f$ be irreducible, then since polynomial rings are UFDs then $\gens{f}$ is a prime ideal (irreducibles generate principal ideals) and $k[t_1, \cdots, t_n]/\gens{f}$ is a domain.
 Let $K_f$ be the fraction field.
 
 :::{.exercise title="an easy one"}
-
+\envlist
 a. Above for $1\leq i \leq n$ let $x_i$ be the image of $t_i$ in $K_f$.
   Show that $K_f = k(x_1, \cdots, x_n)$.
 
@@ -46,9 +45,7 @@ In this case we say $f$ is *absolutely irreducible* as a synonym for geometrical
 :::{.proof}
 By definition of geometric irreducibility, $\bar k[t_1, \cdots, t_n]/\gens{f} = k[t_1, \cdots, t_n]/\gens{f} \tensor_k \bar k$ is a domain.
 The exercise shows that $K_f \tensor_k k$ is a domain, so $K_f$ is regular.
-
 It follows that for all $\ell/k$, $K_f \tensor_k \ell$ is a domain, so $\ell[t_1, \cdots, t_n]/\gens{f}$ is a domain.
-
 :::
 
 Moral: geometrically irreducible polynomials are good sources of regular function fields.
@@ -94,13 +91,12 @@ Can we always construct regular function fields using geometrically irreducible 
 
 :::{.answer}
 In several variables, no, since not every variety is birational to a hypersurface.
-
 In one variable, yes, as the following theorem shows:
 :::
 
 
 :::{.theorem title="Regular Function Fields in One Variable are Geometrically Irreducible"}
-Let $K/k$ be a one variable function fields (finitely generated, transcendence degree one). 
+Let $K/k$ be a one variable function field (finitely generated, transcendence degree one). 
 Then
 
 a. If $K/k$ is separable, then $K = k(x, y)$ for some $x, y\in K$.
