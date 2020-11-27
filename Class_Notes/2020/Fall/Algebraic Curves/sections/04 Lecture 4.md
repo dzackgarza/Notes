@@ -380,4 +380,12 @@ We can now use NTII:[^petes_notes_note] since $K/k(t)$ is finite, it follows tha
 
 :::
 
+So every place of $K/k$ is a discrete valuation as long as the transcendence degree is one, but this is far from the case for degree $\geq 2$!
 
+
+:::{.exercise title="?"}
+Let $k$ be a field and $K = k(t_1, \cdots, t_n)$.
+Set $G = \ZZ^n$ with the lex order, so $G^{\geq 0} = \NN^n$.
+
+- 
+:::
