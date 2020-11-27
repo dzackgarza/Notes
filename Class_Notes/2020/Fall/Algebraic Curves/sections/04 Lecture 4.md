@@ -18,6 +18,19 @@ Recall that an *ultrametric norm* satisfies not only the triangle inequality but
 
 :::
 
-We now take an algebraic approach to this definition: a subr
+We now take an algebraic approach to this definition, where we'll end up replacing $\RR$ with something more general.
+
+:::{.definition title="Valuation Ring"}
+A subring $R$ of a field $K$ is a **valuation ring** if for all $x\in K\units$, at least one of $x$ or $x^{-1}$ is in $R$.
+:::
+
+:::{.remark}
+This is a "largeness" property. 
+It also implies that $K = \ff(R)$.
+:::
+
+:::{.definition title="Group of Divisibility"}
+Given any
+:::
 
 
