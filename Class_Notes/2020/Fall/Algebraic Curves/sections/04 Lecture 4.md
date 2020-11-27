@@ -131,4 +131,5 @@ A valuation ring is **local**, i.e. there is a unique maximal ideal
 These two constructions are morally mutually inverse.
 This doesn't hold on the nose, since there is extraneous data in the new analytic valuation.
 Recall that in NTII we have a notion of equivalence of norms, and two distinct norms that are equivalent can give rise to the same valuation.
+For example, given a valuation, one can scale it by $\alpha \in \RR$, and it's easy to check that this gives the same valuation.
 :::
