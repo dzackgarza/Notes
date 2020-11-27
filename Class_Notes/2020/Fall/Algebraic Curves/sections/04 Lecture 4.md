@@ -65,8 +65,19 @@ E.g. being a UFD (the most important factorization property!) implies that $G(R)
 
 In general this is only a *partially* ordered group and not totally ordered. 
 For example, take $R = \ZZ$ and $x=2, y=3$, then neither of $2/3, 3/2$ are in $\ZZ$, so $x\not\leq y$ and $y\not\leq x$.
-Otoh 
+On the other hand, if we do have a total order, then either $x$ or $x^{-1}$ is in the ring, which are exactly valuation subring of a field.
 :::
+
+:::{.claim}
+$R$ is a valuation ring $\iff$ $G(R)$ is totally ordered.
+:::
+
+:::{.remark}
+Note that $\RR$ is a totally ordered group.
+:::
+
+This makes $G(R)$ the "target group" of a generalized analytic valuation.
+Whenever we have a valuation ring, we have a totally ordered commutative group, and the valuation $v: K\units \to G(R)$ is a quotient map which we can extend to $K$ by $v(0) \da \infty$.
 
 
 
