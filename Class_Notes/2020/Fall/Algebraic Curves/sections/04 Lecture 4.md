@@ -186,5 +186,5 @@ Here $\mathfrak{m}_v$ denotes pulling back the maximal ideal along this morphism
 :::{.remark}
 The term regularity here arises because we'll want to think of elements of $A$ as functions and the valuation as a type of point, then the notion of being a regular function at a point will carry over.
 The center is the subset of $A$ with strictly positive valuation.
-Also recall that pulling back prime ideals yields prime ideals, and maximals are prime,
+Also recall that pulling back prime ideals yields prime ideals, and maximal ideals are a special kind of prime ideal, 
 :::
