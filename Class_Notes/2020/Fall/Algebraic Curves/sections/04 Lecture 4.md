@@ -356,8 +356,8 @@ This follows because a prime ideal in the polynomial ring $k[t]$ which contains 
 
 Now restricting the valuation on $K$ to $k(t) \subset K$, $K / k(t)$ will be a finite extension (from the first lecture).
 We know $k(t) \subset K$, and we can now check that $\ro{v}{k(t)}$ is the $t\dash$adic valuation $v_t$.
-Note that $\mathfrak{m}_v$ can not contain any other monic irreducible polynomials, since distinct such polynomials are coprime.
-Since we're in a PID, the ideal would contain 1.
+Note that $\mathfrak{m}_v$ can not contain any other monic irreducible polynomials, since distinct such polynomials are coprime. 
+Since we're in a PID, this ideal would contain any linear combination of them and thus contain 1.
 So consider the map
 \[  
 k[t] \injects R_b \to G(R_v) = K\units / R\units
