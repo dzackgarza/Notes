@@ -92,5 +92,16 @@ v(x+y) \geq \min(v(x), v(y))
 .\]
 
 
+
 [^just_a_group_hopmp]: This follows from the fact that the qutoeitn map is a group morphism.
+Note that the additive notation makes this more suggestive of what an original valuation satisfied.
+
+For ultrametric norms, all triangles are isosceles: is that true for this type of function?
+The answer is yes, by the following exercise: 
+
+:::{.exercise title="?"}
+If $v(x) \neq v(y)$, then $v(x+y) = \min(v(x), v(y))$.
+:::
+
+So the properties here are formally identical to the previous notion of valuation, with $(\RR, +, \leq)$ replaced by $(G, +, \leq)$.
 
