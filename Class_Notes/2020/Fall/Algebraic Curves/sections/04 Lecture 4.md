@@ -304,7 +304,16 @@ They study *relative* such spaces.
 In positive characteristic, resolution of singularities is only known up to dimension $\leq 3$.
 :::
 
+The following is an extremely important result from commutative algebra:
 
-:::{.theorem title="Important result from commutative algebrea"}
-
+:::{.theorem title="CA 17.17"}
+Let $A \subset K$ be a subring of a field, then 
+\[  
+\intersect_{v\in \tilde \Sigma(K/A)} R_v
+,\]
+the intersection of all valuation subrings of the field, is the integral closure of $A$ in $K$.
 :::
+
+The proof is mostly a Zorn's lemma type of argument.
+Note that each $R_v$ is generally big, contains $A$, and $\ff(R_v) = K$.
+Moreover, each valuation ring is integrally closed, although we haven't proved this yet.
