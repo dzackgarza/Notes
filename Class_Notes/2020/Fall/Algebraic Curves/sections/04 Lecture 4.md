@@ -325,6 +325,8 @@ For $K/k$  function field, $\intersect_{v\in \Sigma(K/k)} R_v = \kappa(K)$, the 
 
 :::{.proof title="?"}
 Note that $\kappa(K)$ is the integral (algebraic) closure of $k$ in $K$.
-Applying the theorem directly almost works, except 
-
+Applying the theorem directly almost works, except the theorem involves $\tilde \Sigma$.
+Can we remove the tilde?
+Suppose not, this can only happen if $\Sigma(K/k) = \emptyset$ and the intersection is just $K$ itself, the largest thing in the intersection.
+But $K/k$ is transcendental, while $\kappa(K) / k$ is algebraic, a contradiction.
 :::
