@@ -78,6 +78,19 @@ Note that $\RR$ is a totally ordered group.
 
 This makes $G(R)$ the "target group" of a generalized analytic valuation.
 Whenever we have a valuation ring, we have a totally ordered commutative group, and the valuation $v: K\units \to G(R)$ is a quotient map which we can extend to $K$ by $v(0) \da \infty$.
+This has some familiar properties:
+
+- (VRK1) For all $x,y\in K\units$,[^just_a_group_hopmp]
+
+\[  
+v(xy) = v(x) + v(y)
+.\]
+
+- (VRK2) For all $x,y \in K\units$ such that $x+y\neq 0$,
+\[  
+v(x+y) \geq \min(v(x), v(y))
+.\]
 
 
+[^just_a_group_hopmp]: This follows from the fact that the qutoeitn map is a group morphism.
 
