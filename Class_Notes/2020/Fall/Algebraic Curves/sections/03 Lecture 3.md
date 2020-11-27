@@ -143,8 +143,9 @@ ax^p + b - y^b
 :::
 
 
-
-Moral: look for examples of nice function fields by taking irreducible polynomials in two variables.
+:::{.slogan}
+We can find examples of nice function fields by taking irreducible polynomials in two variables.
+:::
 This will define a one-variable function field.
 If the polynomial is geometrical reducible, this produces regular function fields.
 
