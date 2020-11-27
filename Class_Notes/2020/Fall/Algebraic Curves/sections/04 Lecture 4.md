@@ -196,5 +196,5 @@ For $A \subset K$, define
 \Sigma(K/A) &\da \ts{\text{valuation rings } A \subset R \subsetneq K \st K = \ff(R)} \\
 \tilde \Sigma(K/A) &\da \ts{\text{valuation rings } A \subset R \subseteq K \st K = \ff(R)}
 .\]
-T
+The set $\tilde \Sigma(K/A)$ is the **Zariski-Riemann space**.
 :::
