@@ -346,5 +346,7 @@ So despite the fact that we've introduced a more general notion of higher rank v
 
 
 :::{.proof title="?"}
-Let $v\in \Sigma(K/k)$ be a place, so its a valuation ring $, then $R_v$ is not a field.
+Let $v\in \Sigma(K/k)$ be a place, so its a valuation ring with fraction field $K$ that is not $K$, then $R_v$ is not a field.
+So its maximal ideal $\mathfrak{m}_v$ is nonzero, so choose a nonzero element $t\in @\mathfrak{m}_v$.
+Then $t
 :::
