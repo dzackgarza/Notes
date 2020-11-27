@@ -11,6 +11,9 @@ These may be familiar from NTII, but we will cover them in more generality here.
 Recall that NTII approach to valuations:
 
 :::{.definition title="Valuation"}
-A **valuation** on a field $K$ is a map $v:K\to \RR\union \ts\infty$ such that $v(K\units) \subset \RR$, $v(0) = \infty$, and $v$ is of the form $-\log(\abs{\wait})$ where $\abs{\wait}: K \to [0, \infty
+A **valuation** on a field $K$ is a map $v:K\to \RR\union \ts\infty$ such that $v(K\units) \subset \RR$, $v(0) = \infty$, and $v$ is of the form $-\log(\abs{\wait})$ where $\abs{\wait}: K \to [0, \infty)$ is an *ultrametric norm*.[^efficient_valuation]
+
+[^efficient_valuation]: In other words, $e^{-v(\wait)}$ is an ultrametric norm.
+
 :::
 
