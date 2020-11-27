@@ -30,12 +30,16 @@ It also implies that $K = \ff(R)$.
 :::
 
 :::{.definition title="Group of Divisibility"}
-Given any integral domain $R$ with fraction field $K$, the **group of divisibility** $G(R)$ is defined as the partially ordered commutative group 
+Given any integral domain $R$ with fraction field $K$, the **group of divisibility** $G(R)$ is defined as the *partially ordered commutative group*[^compatibility_note]
+
 \[  
 G(R) \da K\units / R\units
 .\]
 We will write the group law here additively.
 The ordering is given by $x\leq y \iff y/x \in R$.
+
+[^compatibility_note]: This means that the two structures are compatible.
+
 :::
 
 :::{.remark}
@@ -46,7 +50,9 @@ This gives a structure of a *quasiordering*, and if you set $x\sim y \iff x\leq 
 Here this is accomplished by essentially trivializing units.
 \
 
-Another way to think of $G(R)$ is as the nonzero principal fractional ideals of $K$, since any two generators will differ by a unit in $R$.
+Another way to think of $G(R)$ is as the nonzero principal fractional ideals of $K$, since any two generators will differ by a unit.
 :::
+
+
 
 
