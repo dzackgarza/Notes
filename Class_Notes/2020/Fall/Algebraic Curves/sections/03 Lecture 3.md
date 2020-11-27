@@ -137,7 +137,9 @@ Riemann-Roch may have something to say about this.
 
 :::{.example}
 \hyperref[technical_example]{Example from earlier lecture:}
-$ax^p + b - y^b$
+\[
+ax^p + b - y^b
+\]
 :::
 
 
