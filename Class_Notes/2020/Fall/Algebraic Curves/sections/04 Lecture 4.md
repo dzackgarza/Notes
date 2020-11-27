@@ -50,7 +50,11 @@ This gives a structure of a *quasiordering*, and if you set $x\sim y \iff x\leq 
 Here this is accomplished by essentially trivializing units.
 \
 
-Another way to think of $G(R)$ is as the nonzero principal fractional ideals of $K$, since any two generators will differ by a unit.
+Another way to think of $G(R)$ is as the nonzero principal fractional ideals of $K$, since any two generators of an ideal will differ by a unit.
+:::
+
+:::{.remark}
+Inside this group there is a *positive cone* of elements that are nonnegative
 :::
 
 
