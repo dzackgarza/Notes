@@ -261,5 +261,9 @@ This is far from Hausdorff: the intersection of two open subsets will still have
 
 It's not generally true that just removing the generic point $v_n$ will make the space separated, but in our case, it will be.
 So if we restrict to nontrivial valuation rings, then the underlying set will be infinite and we'll get the cofinite topology.
-This will be the coarsest separated topology 
-If $k \subset A \subset K$ where $A$ is a Dedekind domain with fraction field $K$, we will see that $\Sigma(K/A) = \maxspec(A)$ and both Zariski topologies are cofinite.
+This will be the coarsest separated topology, i.e. if you want singletons to be closed, finite subsets must be closed.
+If $k \subset A \subset K$ where $A$ is a Dedekind domain with fraction field $K$, we will see that if we consider not the $k\dash$regular elements but the $A\dash$regular ones, we'll get $\Sigma(K/A) = \maxspec(A)$ and both Zariski topologies are cofinite.
+Note that in a Dedekind domain, trading in a prime spectrum for a max spectrum is removing a generic point, so this matches up.
+The moral: the topology of $\Sigma(K/k)$ is not doing anything interesting and we won't need it much.
+
+When $K/k$ instead has transcendence degree *bigger* than 1, then $\tilde \Sigma(K/k)$ is much more interesting.
