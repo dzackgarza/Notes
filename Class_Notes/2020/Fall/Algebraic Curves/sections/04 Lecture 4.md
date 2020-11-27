@@ -220,3 +220,12 @@ These can be thought of as valuation rings, or equivalence classes of Krull valu
 In terms of scheme theory, these will be the closed points of our algebraic curve.
 We will view elements $f\in K$ as meromorphic functions on $\Sigma(K/k)$.
 :::
+
+:::{.definition title="Zariski Topology"}
+The **Zariski topology** on $\Sigma(K/A)$ has a sub-base
+\[  
+\ts{U(f) \st f\in K } && U(f) \da \ts{v\in \tilde \Sigma(K/A) \st v(f) \geq 0} = \tilde \Sigma(K/ A[f])
+.\]
+and we thus take the minimal topology such that all of these sets are open.
+In other words, every open set is a finite intersection, 
+:::
