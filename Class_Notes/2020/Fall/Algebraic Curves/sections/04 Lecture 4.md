@@ -93,7 +93,7 @@ v(x+y) \geq \min(v(x), v(y))
 
 
 
-[^just_a_group_hopmp]: This follows from the fact that the qutoeitn map is a group morphism.
+[^just_a_group_hopmp]: This follows from the fact that the quotient map is a group morphism.
 Note that the additive notation makes this more suggestive of what an original valuation satisfied.
 
 For ultrametric norms, all triangles are isosceles: is that true for this type of function?
@@ -289,9 +289,13 @@ In fact, it's not clear if we even know if there's *one* such model!
 Thus in dimension $>1$, you get something that is decidedly not a scheme, but is still relevant to the study of resolution of singularities for your function field.
 Where do these come up?
 Zariski used $\Sigma(K/A)$ to prove resolution of singularities [^resolution_of_singularities]
-in characteristic zero and dimensions 2 and 3 in 1944.
+in characteristic zero and dimensions 2 and 3 in 1944, although dimension 2 was classical by the Italian school.
+Later, Hironaka (1984) got the Fields medal for proving resolution of singularities for all dimensions in characteristic zero using an ingenious inductive argument that avoided Zariski-Riemann spaces entirely.
+It remarkably doesn't use any new objects/tools, just uses existing ones in a clever way.
 
-[^resolution_of_singularities]: Resolving means given $K/k$, we want to find a complete affine variety whose function field is $K$.
+[^resolution_of_singularities]: Resolving means given $K/k$, we want to find a complete nonsingular affine variety whose function field is $K$.
 
 :::
+
+
 
