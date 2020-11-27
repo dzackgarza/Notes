@@ -174,5 +174,11 @@ A closer notion is expanding the notion of a metric space by allowing the metric
 This would yield a class of topological spaces that are reminiscent of metric spaces.
 
 :::{.definition title="Important: Regular and Centered"}
-Let $v:K\units \to (G, +)$ be a Krull valuation and let $A \subset K$ be a subring.
+Let $v:K\units \to (G, +)$ be a Krull valuation and let $A \subset K$ be a subring of $K$.
+Then $v$ is **$A\dash$regular** or **centered in $A$** if $A$ is a subset of some valuation ring $R_v$.
+In this case, $\mathfrak{p} \da \mathfrak{m}_v \intersect A \in \spec(A)$ is denoted the **center of $v$ in $A$**.
+:::
+
+:::{.remark}
+The term regularity here arises because we'll want to think of elements of $A$ as functions and the valuation as a type of point, then the notion of being a regular function at a point will carry over.
 :::
