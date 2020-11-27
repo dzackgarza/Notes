@@ -134,5 +134,24 @@ Recall that in NTII we have a notion of equivalence of norms, and two distinct n
 For example, given a valuation, one can scale it by $\alpha \in \RR$, and it's easy to check that this gives the same valuation.
 It is possible for the valuation not to surject onto $\RR$, but this doesn't happen in practice.
 The image is usually infinite cyclic, what we call a *discrete valuation*, and so one is led to the definition of the *value group* of the valuation as its image.
-If you have a notion of equivalence of Krull valuations, you want to allow for isomorphisms of the value group
+If you have a notion of equivalence of Krull valuations, you want to allow for isomorphisms of the value group.
+The cleanest notion of equivalence is thus the following:
 :::
+
+:::{.definition title="Equivalence of Krull valuations"}
+Two Krull valuations on a field $K$ are **equivalent** iff their valuation rings are *equal*.
+:::
+
+:::{.remark}
+Going back to NTII, if you have two nonarchimedean norms on a field, then there are many equivalent conditions for equivalence, and this is one of them.
+:::
+
+Some general valuation theory:
+
+- Every totally ordered commutative group is a group of divisibility.[^tot_ord_comm_div]
+
+- A totally ordered group has **rank 1** if it is nontrivial and embeds into $\RR$.
+
+[^tot_ord_comm_div]: Pete's Commutative Algebra Notes, Ch. 17.10
+ 
+
