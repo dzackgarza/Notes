@@ -106,21 +106,29 @@ If $v(x) \neq v(y)$, then $v(x+y) = \min(v(x), v(y))$.
 So the properties here are formally identical to the NTII notion of valuation, with $(\RR, +, \leq)$ replaced by $(G(R), +, \leq)$.
 
 :::{.exercise title="?"}
-Conversely, if $v: K\units \to G$ is a map into a totally ordered commutative group satisfying VRK1 and VRK2, then
+Conversely, if $v: K\units \to G$ is a map into a totally ordered commutative group satisfying VRK1 and VRK2[^krull_valuation], then
 \[  
 R_v \da \ts {x\in K\units \st v(x) \geq 0} \union \ts{0}
 \]
 is a valuation ring.[^exc_hint_num1]
+We can thus extract valuation rings in this situation.
+
+[^krull_valuation]: Any such map satisfying these two properties is a **Krull valuation**, Krull's generalization of classical valuations.
 
 [^exc_hint_num1]: Note that in a totally ordered group, either $v(x) \geq 0$ or $-v(x) \geq 0$, so we get the property that either $x, x^{-1} \in R_v$.
 
 :::
 
-Thus we can extract valuation rings in this situation.
 
 :::{.exercise title="?"}
 A valuation ring is **local**, i.e. there is a unique maximal ideal
 \[  
-\\mathfrak{}
+\mathfrak{m}_v \da \ts{x\in K\units \st v(x) > 0} \union \ts{0}
 .\]
+:::
+
+:::{.remark}
+These two constructions are morally mutually inverse.
+This doesn't hold on the nose, since there is extraneous data in the new analytic valuation.
+Recall that in NTII we have a notion of equivalence of norms, and two distinct norms that are equivalent can give rise to the same valuation.
 :::
