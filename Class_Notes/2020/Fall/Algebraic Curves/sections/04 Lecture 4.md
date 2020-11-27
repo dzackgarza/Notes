@@ -362,5 +362,10 @@ So consider the map
 \[  
 k[t] \injects R_b \to G(R_v) = K\units / R\units
 .\]
-Note that the units of $k[t]$ map trivially, using the fact that any element in $k[t]$ can be written as $u \prod p_i^{a_i}$ with the $p_i$ monic irreducible polynomials, and thus the image is determined entirely by the image of powers of $t$.
+Note that the units of $k[t]$ map trivially, using the fact that any element in $k[t]$ can be written as $u \prod p_i^{a_i}$ with the $p_i$ monic irreducible polynomials. 
+The unit maps to zero, along with all of the other monic irreducibles, and thus the image is determined entirely by the image of powers of $t$.
+This whole term goes to zero unless some $p_i\mapsto t$, in which case it maps to some power of $t$.
+\
+
+So suppose $t\mapsto \gamma \neq 0$.
 :::
