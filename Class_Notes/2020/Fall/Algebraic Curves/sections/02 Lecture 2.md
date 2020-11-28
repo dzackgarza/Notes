@@ -198,7 +198,9 @@ Recall that the perfect fields are given by:
 Imperfect fields include:
 
 - Function fields in characteristic $p$
-- Complete discretely valued fields $k((t))$ in characteristic $p$
+- Complete discretely valued fields $k((t))$ in characteristic $p$ [^recall_ntii]
+
+[^recall_ntii]: Footnote text
 
 \todo[inline]{Look up uniformizing elements and valuations.}
 
