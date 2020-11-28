@@ -61,17 +61,25 @@ Reminder: for $\ell/k$ and $\alpha\in \ell$ algebraic over $k$, then $k(\alpha) 
 :::
 
 So we'll concentrate on when $K \tensor_k \ell$ is a domain.
+
+## When Extensions Preserve Being a Domain
+
+:::{.question}
 What's the condition on a function field $K/k$ that guarantees this, i.e. when extending scalars from $k$ to $\ell$ still yields a domain?
+:::
+
 If this remains a domain, we'll take the fraction field and call it the *base change*.
 
 :::{.exercise}
 If $K/k$ is finitely generated (i.e. a function field) and $K\tensor_k \ell$ is a domain, then $ff(K\tensor_k \ell)/\ell$ is finitely generated.
 
-> The point: if taking a function field and extending scalars still results in a domain, we'll call the result a function field as well.
 :::
 
+:::{.remark}
+The point here is that if taking a function field and extending scalars still results in a domain, we'll call the result a function field as well.
 Most of all, we want to base change to the algebraic closure.
 We'll have issues if the constant field is not just $k$ itself:
+:::
 
 :::{.lemma}
 If $K\tensor_k \bar k$ is a domain, then the constant field $\kappa(k) = k$.
@@ -81,13 +89,11 @@ If $K\tensor_k \bar k$ is a domain, then the constant field $\kappa(k) = k$.
 :::{.proof}
 Use the fact that $\wait \tensor_k V$ is exact.
 We then get an injection
-\begin{center}
 \begin{tikzcd}
 \kappa(k) \tensor_k \kappa(k) \ar[rr, hookrightarrow]\ar[rd, hookrightarrow] & &
 K \tensor_k \bar k \\
 & \kappa(k) \tensor_k \bar k\ar[ru, hookrightarrow] & 
 \end{tikzcd} 
-\end{center}
 Here we use the injections $\kappa(k) \injects \bar k$ and $\kappa(k) \injects K$.
 
 We now have an injection of $k\dash$algebras, and subrings of domains are domains. 
@@ -95,11 +101,15 @@ So apply the first exercise: the only way this can happen is if $\kappa(k) = k$.
 :::
 
 
-:::{.exercise}
-The simplest possible case: describe $\CC(t) \tensor_\RR \CC$, tensored as $\RR\dash$algebras.
-
-> Won't be a domain by the lemma, some $\CC(t)\dash$algebra of dimension 2.
+:::{.exercise title="the simplest possible case"}
+Describe $\CC(t) \tensor_\RR \CC$, tensored as $\RR\dash$algebras.
 :::
+
+:::{.remark}
+Won't be a domain by the lemma, and will instead be some $\CC(t)\dash$algebra of dimension 2.
+:::
+
+## Good Base Change For Function Fields
 
 In order to have a good base change for our function fields, we want to constant extension to be trivial, i.e. $\kappa(k) = k$. 
 This requires that the ground field be algebraically closed.
@@ -113,9 +123,10 @@ But if that's a domain, the tensor product of every algebraic extension must be 
 
 If so, then $K\tensor_k k^{1\over p}$ is a field, where $k^{1\over p} \da k(\ts{x^{1\over p} \st x\in k })$ is obtained by adjoining all $p$th roots of all elements.
 This is a purely inseparable extension.
-The latter condition (this tensor product being a field) is one of several equivalent conditions for a field to be separable.
+The latter condition (this tensor product being a field) is one of several equivalent conditions for a field to be separable.[^inverting_frob]
 
-> Note that frobenius maps $k^{1\over p} \surjects k$, so this is sort of like inverting this map.
+[^inverting_frob]: 
+Note that frobenius maps $k^{1\over p} \surjects k$, so this is sort of like inverting this map.
 
 Remember that $K/k$ is transcendental, and there is an extended notion of separability for non-algebraic extensions.
 Another equivalent condition is that every finitely generated subextension is separably generated, i.e. it admits a transcendence basis $\ts{x_i}$ such that $k\injects k(\ts{x_i}) \injects F$ where $F/k(\ts{x_i})$ is algebraic and separable.
