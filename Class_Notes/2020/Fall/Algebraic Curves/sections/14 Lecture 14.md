@@ -1,4 +1,4 @@
-# Lecture 14
+# Lecture 14: The Hasse-Weil Zeta Function
 
 Recall the that *Hasse-Weil zeta function* of a one-variable function field $K/\FF_q$ over a finite ground field is defined in the following way: 
 let $A_n = A_n(K)$ be the number of effective divisors of degree $n$.
@@ -70,12 +70,14 @@ On the LHS, the distinct roots are the $r/d$th roots of unity, then raising to t
 On the RHS, this is an exercise in cyclic groups: consider the $n$th power map on $\ZZ/r\ZZ$ and compute its image and kernel.
 As $\xi$ ranges over $r$th roots of unity, $\xi^m$ ranges over all $r/d$th roots of unity, each occurring with multiplicity $d$.
 
-Substituting $X= t^{-m}$ and multiplying both sides by $t^r$ yields the original result.
+Substituting $X= t^{-m}$ and multiplying both sides by $t^r$ yields the original result.[^special_case]
 
-
-> Special case: set $m=r$, so $d=r$, then the RHS is $r$ copies of 1.
+[^special_case]: 
+Special case: set $m=r$, so $d=r$, then the RHS is $r$ copies of 1.
 
 :::
+
+## Comparing Zeta Functions After Extending Scalars
 
 Next up, we want to compare the zeta function $Z(t)$ for a function field over $\FF_q$ to the zeta function obtained when extending scalars to $\QQ^r$.
 
@@ -93,11 +95,12 @@ We have an Euler product formula
 \[  
 Z(t) = \prod_{p\in \Sigma(K/\FF_q)} (1 - t^{\deg(p)})^{-1} 
 .\]
-where the sum is over places of the function field.
+where the sum is over places of the function field.[^proving_euler_prod_rmk]
 
-> Proving this Euler product formula might show up in a separate lecture, but it is not any more difficult than proving it for the Riemann zeta function.
+[^proving_euler_prod_rmk]: 
+Proving this Euler product formula might show up in a separate lecture, but it is not any more difficult than proving it for the Riemann zeta function.
 
-:::{.exercise title="?"}
+:::{.exercise}
 Why is this product expansion true?
 Write as a geometric series with ratio $t^{\deg(p)}$.
 Here just expand each summand to get 
@@ -110,8 +113,11 @@ Multiplying this out and collecting terms is in effect multiplying out the prime
 We now use the result about splitting that was stated (but not proved): 
 
 :::{.claim}
-If $p\in \Sigma_m(K/\FF_q)$ is a degree $n$ place and $r\in \ZZ^+$, then there exist precisely $d\da \gcd(m, r)$places $p^r$ of $K_r$ lying over $p$. 
-Moreover, each place $p^r$ has degree $m/d$.
+If $p\in \Sigma_m(K/\FF_q)$ is a degree $n$ place and $r\in \ZZ^+$, then there exist precisely 
+\[
+d\da \gcd(m, r)
+\]
+places $p^r$ of $K_r$ lying over $p$, where each place $p^r$ has degree $m/d$.
 :::
 
 In order to compare $Z_r(t)$ to $Z(t)$, we collect the $p'$ into ones that have the same fiber.
@@ -142,7 +148,9 @@ If you do this for an abelian number field over $\QQ$, then the Dedekind zeta fu
 So this is some (perhaps simpler) version of that.
 :::
 
-We can finally prove Schmidt's theorem that $\delta = 1$.
+## Proof That $\delta = 1$
+
+We can finally prove Schmidt's theorem that $\delta = 1$:
 
 :::{.proof title="$\delta = 1$"}
 Take a $\delta$th root of unity $\xi \in \mu_\delta$.
