@@ -68,7 +68,9 @@ So we'll concentrate on when $K \tensor_k \ell$ is a domain.
 What's the condition on a function field $K/k$ that guarantees this, i.e. when extending scalars from $k$ to $\ell$ still yields a domain?
 :::
 
-If this remains a domain, we'll take the fraction field and call it the *base change*.
+:::{.definition title="Base Change"}
+If this remains a domain, we'll take the fraction field and call it the **base change**.
+:::
 
 :::{.exercise}
 If $K/k$ is finitely generated (i.e. a function field) and $K\tensor_k \ell$ is a domain, then $ff(K\tensor_k \ell)/\ell$ is finitely generated.
@@ -312,10 +314,8 @@ No, $\rho_N(g(K_N)) = \ts{\pm I}$ and $\det(\pm I) = 1$, so we still have $K_N \
 In this course, we'll identify algebraic curves over $k$ and one-variable function fields $K/k$.
 The function field $K_N$ corresponds to an algebraic curve $X(N)/\QQ$ that is "nicer" over $\QQ(\zeta_N)$.
 In fact, see Rohrlich: $\kappa(K_N) = \QQ(\zeta_N)$.
-
 Our curves will have points (equal to valuations) which will have degrees. 
 If the constant subfield is not just $k$, this prevents degree 1 points on the curve.
-
 By Galois theory, for every subgroup $H \subseteq \GL(2, \ZZ/N\ZZ) / \ts{\pm I}$, we'll get a function field $\QQ(H) \da H_N^H$.
 In this case, $\QQ(H)/\QQ$ is regular $\iff$ $\det(H) = (\ZZ/N\ZZ)\units$.
 

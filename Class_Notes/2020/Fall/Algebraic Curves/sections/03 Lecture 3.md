@@ -1,6 +1,6 @@
 # Lecture 3
 
-Last of preliminaries.
+Today we'll be wrapping up the last of the preliminaries.
 Upcoming: one-variable function fields and their valuation rings.
 
 
