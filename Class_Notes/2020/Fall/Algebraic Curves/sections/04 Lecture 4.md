@@ -28,6 +28,8 @@ This is a "largeness" property.
 It also implies that $K = \ff(R)$.
 :::
 
+## Group of Divisibility
+
 :::{.definition title="Group of Divisibility"}
 Given any integral domain $R$ with fraction field $K$, the **group of divisibility** $G(R)$ is defined as the *partially ordered commutative group*[^compatibility_note]
 
@@ -75,6 +77,8 @@ $R$ is a valuation ring $\iff$ $G(R)$ is totally ordered.
 Note that $\RR$ is a totally ordered group.
 :::
 
+## Generalized Valuations
+
 This makes $G(R)$ the "target group" of a generalized analytic valuation.
 Whenever we have a valuation ring, we have a totally ordered commutative group, and the valuation $v: K\units \to G(R)$ is a quotient map which we can extend to $K$ by $v(0) \da \infty$.
 This has some familiar properties:
@@ -89,8 +93,6 @@ v(xy) = v(x) + v(y)
 \[  
 v(x+y) \geq \min(v(x), v(y))
 .\]
-
-
 
 [^just_a_group_hopmp]: This follows from the fact that the quotient map is a group morphism.
 Note that the additive notation makes this more suggestive of what an original valuation satisfied.
