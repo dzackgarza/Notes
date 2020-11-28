@@ -124,7 +124,7 @@ If $\kappa(K) = k$, must $K\tensor_K \bar k$ be a field?
 If that's true and we're in positive characteristic, recalling the for an algebraic extension this being a field is equivalent to it being a domain. 
 But if that's a domain, the tensor product of every algebraic extension must be a domain, which is why this is an important case.
 
-If so, then $K\tensor_k k^{1\over p}$ is a field, where $k^{1\over p} \da k(\ts{x^{1\over p} \st x\in k })$ is obtained by adjoining all $p$th roots of all elements.
+If so, then $K\tensor_k k^{1\over p}$ is a field, where $k^{1\over p} \da k\qty{\ts{x^{1\over p} \st x\in k }}$ is obtained by adjoining all $p$th roots of all elements.
 This is a purely inseparable extension.
 The latter condition (this tensor product being a field) is one of several equivalent conditions for a field to be separable.[^inverting_frob]
 
@@ -146,13 +146,18 @@ Is this necessarily the case if $\kappa(K) = k$?
 No, for a technical reason:
 :::
 
+:::{.question}
+
+:::
+
+
 :::{.warnings}
 This is pretty technical, yo.
 :::
 
 :::{.example}
 \label{technical_example} 
-Set $k = \FF_p(a, b)$ a rational function field in two variables sa the ground field.
+Set $k = \FF_p(a, b)$ a rational function field in two variables as the ground field.
 Set 
 \[  
 A \da k[x, y]/ \gens{ax^p + b-y^b}
@@ -274,8 +279,10 @@ $\det \rho_N = \chi_N \mod N$, the cyclotomic character, and therefore $\chi_N$ 
 For $N\geq 3$, $\QQ(\zeta_N) \supsetneq \QQ$, so $\tilde K_N / \QQ(t)$ is a non-regular function field.
 :::
 
+:::{.remark}
 Actually $\tilde K_N$ depends on the choice of $E$: difference choices of nonisomorphic curves with the same $j\dash$invariant differ by a quadratic twist and the $\rho_N$ differ by a quadratic character on $g(\QQ(t))$.
 Importantly, this changes the kernel, and thus the field.
+:::
 
 To fix this, we look at the *reduced galois representation*, the following composition:
 \[  
@@ -295,11 +302,14 @@ So if you just take the field fixed by $\pm I$, you get $K_N$.
 In this case, the reduced galois representation depends only on the $j\dash$invariant, and not on the model chosen.
 So the function field $K_N/\QQ(t)$ is the "canonical" choice.
 
-Question:
+:::{.question}
 Does this make $K_N/\QQ(t)$ regular?
+:::
 
-Answer:
+:::{.answer}
 No, $\rho_N(g(K_N)) = \ts{\pm I}$ and $\det(\pm I) = 1$, so we still have $K_N \supset \QQ(\zeta_N)$.
+:::
+
 
 In this course, we'll identify algebraic curves over $k$ and one-variable function fields $K/k$.
 The function field $K_N$ corresponds to an algebraic curve $X(N)/\QQ$ that is "nicer" over $\QQ(\zeta_N)$.
@@ -312,8 +322,6 @@ By Galois theory, for every subgroup $H \subseteq \GL(2, \ZZ/N\ZZ) / \ts{\pm I}$
 In this case, $\QQ(H)/\QQ$ is regular $\iff$ $\det(H) = (\ZZ/N\ZZ)\units$.
 
 Later we'll understand the residues at points as the residue fields of some DVRs, then the residue field will always contain the field of constants.
-
-
 
 
 
