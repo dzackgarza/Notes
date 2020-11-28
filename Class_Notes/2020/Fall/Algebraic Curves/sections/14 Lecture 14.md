@@ -197,14 +197,13 @@ Z(t) = {1 \over (1-qt)(1-t)}
 Thus for rationality of the zeta function, we can get rid of the $\delta$ cluttering up formulas.
 Going back to the plan, we wanted to show
 
-1.Rationality: $Z(t) \in \QQ(t)$ and thus $Z(t) = P(t) / Q(t)$,
+1. Rationality: $Z(t) \in \QQ(t)$ and thus $Z(t) = P(t) / Q(t)$,
 
 2. Understand the degrees of $P$ and $Q$ in terms of the genus, and
 
 3. Ask about the roots of $P(t)$ to understand the analog of the Riemann Hypothesis for Dedekind zeta functions
 
 We'll want to establish a functional equation, as is the usual yoga for zeta functions, since it helps establish a meromorphic continuation to $\CC$.
-
 The algebraic significance of the functional equation is that it aids in understand several equivalent packets of data:
 
 - The number of effective divisors of a given degree,
