@@ -21,7 +21,7 @@ Show $R_1 \tensor_k R_2$ is a domain $\iff$ $K_1 \tensor_k K_2$ is a domain.[^hi
 
 :::
 
-:::{.definition title="Geometrically Irreducible"}
+:::{.definition title="Geometrically Irreducible Polynomial"}
 A polynomial of positive degree $f\in k[t_1, \cdots, t_n]$ is **geometrically irreducible** if $f\in \bar k[t_1, \cdots, t_n]$ is irreducible as a polynomial.
 :::
 
@@ -48,7 +48,10 @@ b. For all $\ell/k$, $f\in \ell[t_1, \cdots, t_n]$ is irreducible.
 
 :::
 
-In this case we say $f$ is *absolutely irreducible* as a synonym for geometrically irreducible.
+:::{.definition title="Absolutely Irreducible Polynomial"}
+In this case we say $f$ is **absolutely irreducible** as a synonym for geometrically irreducible.
+:::
+
 
 :::{.proof}
 By definition of geometric irreducibility, $\bar k[t_1, \cdots, t_n]/\gens{f} = k[t_1, \cdots, t_n]/\gens{f} \tensor_k \bar k$ is a domain.
