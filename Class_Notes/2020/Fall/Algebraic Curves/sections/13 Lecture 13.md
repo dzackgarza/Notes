@@ -87,7 +87,7 @@ So by Riemann-Roch, since $\deg(D) > 2g-2$, $D$ is non-special and $\ell([D]) = 
 :::{.remark}
 This is the sharpest result possible: the canonical divisor has degree $2g-2$ and is special, so this fails for the canonical class.
 
-Upshot: there are three piece of information:
+The upshot: there are three piece of information:
 
 - $N_r$, the number of $\FF_{q^r}$ rational points,
 
@@ -97,13 +97,9 @@ Upshot: there are three piece of information:
 
 and there are simple formulas relating these.
 Moreover, it is enough to know only finitely many of these quantities, where the number depends on $g$.
-
-
 :::
 
-:::{.slogan}
 
-:::
 ## Hasse-Weil Zeta Functions
 
 There is a general theory that will unify 
@@ -147,8 +143,12 @@ which allows us to write
 \zeta_K(s) = \sum_{n=1}^\infty {a_n \over n^s}
 .\]
 
-Where we're going:
-How does $Z(t)$ depend on $K$?
+:::{.question}
+Where we're going: how does $Z(t)$ depend on $K$?
+:::
+
+
+:::{.answer}
 It turns out that it only depends on $A_0, A_1, \cdots, A_{2g-2}$, and thus $Z(t)$ depends on only finitely much information.
 We will 
 
@@ -162,10 +162,12 @@ We will
 
 3. Ask about the roots of $P(t)$, and establish a Riemann hypothesis for Dedekind zeta functions (and in particular, the Riemann zeta function).
 
-> In particular, what are their magnitudes? 
-> This is what Weil did, this is the big theorem in this area.
-> Note that we'll need to consider reciprocal roots, which will end up having magnitude $\sqrt{q}$.
-> We'll see why this happens, and it turns out to be analogous to fact that the nontrivial zeros of the Riemann zeta function have real part $1/2$.
+  > In particular, what are their magnitudes? 
+  > This is what Weil did, this is the big theorem in this area.
+  > Note that we'll need to consider reciprocal roots, which will end up having magnitude $\sqrt{q}$.
+  > We'll see why this happens, and it turns out to be analogous to fact that the nontrivial zeros of the Riemann zeta function have real part $1/2$.
+
+:::
 
 These are approximately in order of difficulty.
 The first two will follow from Riemann-Roch, but the third will be much deeper.
