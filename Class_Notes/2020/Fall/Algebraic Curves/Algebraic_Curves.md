@@ -1516,6 +1516,7 @@ Choosing a transcendental $t\in K$, to $K/k(t)$ is a finite extension, restricti
 \[  
 r: \Sigma(K/k) \to \Sigma(k(t)/ k)
 .\]
+
 :::{.claim}
 This is surjective with finite fibers, so it acts like a branched covering map.
 :::
