@@ -389,6 +389,8 @@ We can now use NTII:[^petes_notes_note] since $K/k(t)$ is finite, it follows tha
 
 :::
 
+## Valuations of Every Rank
+
 So every place of $K/k$ is a discrete valuation as long as the transcendence degree is one, but this is far from the case for degree $\geq 2$!
 In the following example, we'll have a rational function field, which makes things easier. 
 You need a theory of extending Krull valuations, since we'll define a non-rank 1 valuation on the rational function field.
