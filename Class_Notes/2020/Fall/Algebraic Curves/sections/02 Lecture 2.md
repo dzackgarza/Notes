@@ -82,7 +82,7 @@ We'll have issues if the constant field is not just $k$ itself:
 :::
 
 :::{.lemma}
-If $K\tensor_k \bar k$ is a domain, then the constant field $\kappa(k) = k$.
+If $K\tensor_k \bar k$ is a domain, then the constant field $\kappa(K) = k$.
 
 :::
 
@@ -90,14 +90,14 @@ If $K\tensor_k \bar k$ is a domain, then the constant field $\kappa(k) = k$.
 Use the fact that $\wait \tensor_k V$ is exact.
 We then get an injection
 \begin{tikzcd}
-\kappa(k) \tensor_k \kappa(k) \ar[rr, hookrightarrow]\ar[rd, hookrightarrow] & &
+\kappa(K) \tensor_k \kappa(K) \ar[rr, hookrightarrow]\ar[rd, hookrightarrow] & &
 K \tensor_k \bar k \\
-& \kappa(k) \tensor_k \bar k\ar[ru, hookrightarrow] & 
+& \kappa(K) \tensor_k \bar k\ar[ru, hookrightarrow] & 
 \end{tikzcd} 
-Here we use the injections $\kappa(k) \injects \bar k$ and $\kappa(k) \injects K$.
+Here we use the injections $\kappa(K) \injects \bar k$ and $\kappa(K) \injects K$.
 
 We now have an injection of $k\dash$algebras, and subrings of domains are domains. 
-So apply the first exercise: the only way this can happen is if $\kappa(k) = k$.
+So apply the first exercise: the only way this can happen is if $\kappa(K) = k$.
 :::
 
 
@@ -111,13 +111,16 @@ Won't be a domain by the lemma, and will instead be some $\CC(t)\dash$algebra of
 
 ## Good Base Change For Function Fields
 
-In order to have a good base change for our function fields, we want to constant extension to be trivial, i.e. $\kappa(k) = k$. 
+In order to have a good base change for our function fields, we want to constant extension to be trivial, i.e. $\kappa(K) = k$. 
 This requires that the ground field be algebraically closed.
 
 In this case, you might expect that extending scalars to the algebraic closure would yield a field again.
 This is true in characteristic zero, but false in positive characteristic.
 
-A more precise question: if $\kappa(k) = k$, must $K\tensor_K \bar k$ be a field?
+:::{.question title="a more precise one"}
+If $\kappa(K) = k$, must $K\tensor_K \bar k$ be a field?
+:::
+
 If that's true and we're in positive characteristic, recalling the for an algebraic extension this being a field is equivalent to it being a domain. 
 But if that's a domain, the tensor product of every algebraic extension must be a domain, which is why this is an important case.
 
@@ -126,18 +129,22 @@ This is a purely inseparable extension.
 The latter condition (this tensor product being a field) is one of several equivalent conditions for a field to be separable.[^inverting_frob]
 
 [^inverting_frob]: 
-Note that frobenius maps $k^{1\over p} \surjects k$, so this is sort of like inverting this map.
+Note that the frobenius maps $k^{1\over p} \surjects k$, so this is sort of like inverting this map.
 
-Remember that $K/k$ is transcendental, and there is an extended notion of separability for non-algebraic extensions.
+:::{.remark}
+Recall that $K/k$ is transcendental, and there is an extended notion of separability for non-algebraic extensions.
 Another equivalent condition is that every finitely generated subextension is separably generated, i.e. it admits a transcendence basis $\ts{x_i}$ such that $k\injects k(\ts{x_i}) \injects F$ where $F/k(\ts{x_i})$ is algebraic and separable.
 Such a transcendence basis is called a *separating transcendence basis*.
 Since we're only looking at finitely generated extensions, we wont' have to worry much about the difference between separable and separably generated.
+:::
 
+:::{.remark}
 What's the point? 
 There's an extra technical condition to ensure the base change is a field: the function field being separable over the ground field.
 
-Is this necessarily the case if $\kappa(k) = k$? 
+Is this necessarily the case if $\kappa(K) = k$? 
 No, for a technical reason:
+:::
 
 :::{.warnings}
 This is pretty technical, yo.
@@ -152,7 +159,10 @@ A \da k[x, y]/ \gens{ax^p + b-y^b}
 .\]
 Then $A$ is a domain, so set $k = ff(A)$.
 
-Claim: $\kappa(k) = k$, so $k$ is algebraically closed in this extension, but $K/k$ is *not* separable.
+:::{.claim}
+$\kappa(K) = k$, so $k$ is algebraically closed in this extension, but $K/k$ is *not* separable.
+:::
+
 How to show: extending scalars to $k^{1\over p}$ does not yield a domain.
 
 Let $\alpha, \beta \in \bar k$ such that $\alpha^p = a, \beta^b = b$, so
@@ -163,11 +173,13 @@ which implies $K \tensor_k  k^{1\over p}$ is not a domain: $k[x, y]$ is a UFD, s
 However, the $p$th power map is a homomorphism, and this exhibits the image of the defining polynomial as something non-irreducible.
 :::
 
+:::{.remark}
 Note that $f(x, y) = ax^p + b - y^p$ is the curve in this situation.
 The one variable function field is defined by quotienting out a function in two variables and taking the function field.
 Every 1-variable function field can be obtained in this way.
 Therefore this polynomial is irreducible, but becomes reducible over the algebraic closure.
 So we'd like the polynomial to be irreducible over both.
+:::
 
 :::{.remark}
 This is pretty technical, but we won't have to worry if $k = k^{1\over p}$. 
@@ -176,7 +188,7 @@ Equivalently, frobenius is surjective on $k$, i.e. $k$ is a perfect field.
 If $k$ is not perfect, it can happen (famous paper of Tate) making an inseparable base extension can decrease the genus of the curve.
 :::
 
-Reminder: the perfect fields:
+Recall that the perfect fields are given by:
 
 - Anything characteristic zero, every reducible polynomial is separable.
 - Any algebraically closed field 
@@ -192,13 +204,16 @@ Imperfect fields include:
 :::{.theorem title="FT 12.20"}
 For field extensions $K/k$, TFAE
 
-1. $\kappa(k) = k$ and $K/k$ is separable
+1. $\kappa(K) = k$ and $K/k$ is separable
 
 2. $K\tensor_k \bar k$ is a domain, or equivalently a field
 
 3. For all field extensions $\ell/k$, $K\tensor_k \ell$ is a domain.
 
-> Allows making not just an algebraic base change, but a totally arbitrary one.
+:::
+
+:::{.remark}
+Note that this allows making not just an algebraic base change, but a totally arbitrary one.
 :::
 
 A field extension satisfying these conditions is called **regular**.
