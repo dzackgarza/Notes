@@ -138,22 +138,18 @@ Such a transcendence basis is called a *separating transcendence basis*.
 Since we're only looking at finitely generated extensions, we wont' have to worry much about the difference between separable and separably generated.
 :::
 
-:::{.remark}
-What's the point? 
-There's an extra technical condition to ensure the base change is a field: the function field being separable over the ground field.
-
-Is this necessarily the case if $\kappa(K) = k$? 
-No, for a technical reason:
-:::
 
 :::{.question}
-
+What's the point? 
+There's an extra technical condition to ensure the base change is a field: the function field being separable over the ground field.
+Is this necessarily the case if $\kappa(K) = k$? 
 :::
 
-
-:::{.warnings}
-This is pretty technical, yo.
+:::{.answer}
+No, for fairly technical reasons.
+\lmargnote{\danger}
 :::
+
 
 :::{.example}
 \label{technical_example} 
