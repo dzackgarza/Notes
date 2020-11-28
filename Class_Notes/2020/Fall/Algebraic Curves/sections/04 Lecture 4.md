@@ -174,6 +174,8 @@ A valuation of rank bigger than 1 does not induce a norm on $K$ in the metric se
 A closer notion is expanding the notion of a metric space by allowing the metric to be defined on $X$ as $d: X\cross X \to R$ for some $R$ more general than $\RR$, like a totally ordered group or a nonarchimedean field.
 This would yield a class of topological spaces that are reminiscent of metric spaces.
 
+## Regular or Centered Valuations
+
 :::{.definition title="Important: Regular and Centered"}
 Let $v:K\units \to (G, +)$ be a Krull valuation and let $A \subset K$ be a subring of $K$.
 Then $v$ is **$A\dash$regular** or **centered in $A$** if $A$ is a subset of some valuation ring $R_v$.
@@ -222,6 +224,8 @@ In terms of scheme theory, these will be the closed points of our algebraic curv
 We will view elements $f\in K$ as meromorphic functions on $\Sigma(K/k)$.
 :::
 
+## Topological Considerations
+
 :::{.definition title="Zariski Topology"}
 The **Zariski topology** on $\Sigma(K/A)$ has a sub-base
 \[  
@@ -267,6 +271,8 @@ If $k \subset A \subset K$ where $A$ is a Dedekind domain with fraction field $K
 Note that in a Dedekind domain, trading in a prime spectrum for a max spectrum is removing a generic point, so this matches up.
 The moral: the topology of $\Sigma(K/k)$ is not doing anything interesting and we won't need it much.
 
+## Scheme Theory, Resolution of Singularities
+
 When $K/k$ instead has transcendence degree *bigger* than 1, then $\tilde \Sigma(K/k)$ is much more interesting.
 If we were doing things scheme-theoretically, we could try to define a structure sheaf: attaching a sheaf whose stalks are local commutative rings to make it a locally ringed space.[^Schemes_in_rings_spaces]
 Here, the choice of a ring is straightforward: literally $\tilde \Sigma(A, A[f_1, \cdots, f_n])$.
@@ -304,6 +310,8 @@ They study *relative* such spaces.
 :::{.problem title="Open"}
 In positive characteristic, resolution of singularities is only known up to dimension $\leq 3$.
 :::
+
+## Intermediate Rings
 
 The following is an extremely important result from commutative algebra:
 
