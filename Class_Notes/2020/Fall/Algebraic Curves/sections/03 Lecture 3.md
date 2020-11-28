@@ -21,6 +21,8 @@ Show $R_1 \tensor_k R_2$ is a domain $\iff$ $K_1 \tensor_k K_2$ is a domain.[^hi
 
 :::
 
+## Geometric Irreducibility
+
 :::{.definition title="Geometrically Irreducible Polynomial"}
 A polynomial of positive degree $f\in k[t_1, \cdots, t_n]$ is **geometrically irreducible** if $f\in \bar k[t_1, \cdots, t_n]$ is irreducible as a polynomial.
 :::
@@ -52,14 +54,15 @@ b. For all $\ell/k$, $f\in \ell[t_1, \cdots, t_n]$ is irreducible.
 In this case we say $f$ is **absolutely irreducible** as a synonym for geometrically irreducible.
 :::
 
-
 :::{.proof}
 By definition of geometric irreducibility, $\bar k[t_1, \cdots, t_n]/\gens{f} = k[t_1, \cdots, t_n]/\gens{f} \tensor_k \bar k$ is a domain.
 The exercise shows that $K_f \tensor_k k$ is a domain, so $K_f$ is regular.
 It follows that for all $\ell/k$, $K_f \tensor_k \ell$ is a domain, so $\ell[t_1, \cdots, t_n]/\gens{f}$ is a domain.
 :::
 
-Moral: geometrically irreducible polynomials are good sources of regular function fields.
+:::{.slogan}
+Geometrically irreducible polynomials are good sources of regular function fields.
+:::
 
 :::{.exercise}
 Let $k$ be a field, $d\in \ZZ^+$ such that $4\notdivides d$ and $p(x) \in k[x]$ be positive degree.
@@ -124,13 +127,15 @@ By the Primitive Element Corollary (FT 7.2), there exist a $y\in K$ such that $K
 
 :::{.proof title="of b"}
 Omitted for now, slightly technical.
-
 :::
 
+:::{.remark}
 Importance of last result: a regular function field on one variable corresponds to a nice geometrically irreducible polynomial $f$.
+:::
+
 
 :::{.remark}
-Note: the plane curve module may not be smooth, and in fact usually is not possible.
+Note that the plane curve module may not be smooth, and in fact usually is not possible.
 I.e. $k[x ,y]/\gens{f}$ is a one-dimensional noetherian domain, which need not be integrally closed.
 :::
 
