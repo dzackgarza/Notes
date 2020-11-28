@@ -46,7 +46,9 @@ Why is this true?
 Whenever there is a divisor of degree $n$, then the set of degree $n$ divisors is a coset of the degree zero divisors, all of which have the same cardinality.
 We proved finiteness using the Riemann-Roch theorem, using the fact that the set of *effective* degree $n$ divisors is finite for all $n$.
 
-The next main topic will be the zeta function, which keeps track of three equivalent packets of information: $A_n$, the number of effective divisors of degree $n$, the number of places of degree $d$ (since an effective divisor is a linear combination of these), and $N_r$ the number of degree 1 points in the degree $r$ extension, i.e. the number of $\FF_{q^r}$ rational points.
+The next main topic will be the **zeta function**, which keeps track of three equivalent packets of information: $A_n$, the number of effective divisors of degree $n$, the number of places of degree $d$ (since an effective divisor is a linear combination of these), and $N_r$ the number of degree 1 points in the degree $r$ extension, i.e. the number of $\FF_{q^r}$ rational points.
+
+## Counting Effective Divisors
 
 :::{.lemma title="?"}
 Suppose $C\in \Cl(K)$, then 
@@ -84,7 +86,6 @@ So by Riemann-Roch, since $\deg(D) > 2g-2$, $D$ is non-special and $\ell([D]) = 
 
 :::{.remark}
 This is the sharpest result possible: the canonical divisor has degree $2g-2$ and is special, so this fails for the canonical class.
-:::
 
 Upshot: there are three piece of information:
 
@@ -97,6 +98,12 @@ Upshot: there are three piece of information:
 and there are simple formulas relating these.
 Moreover, it is enough to know only finitely many of these quantities, where the number depends on $g$.
 
+
+:::
+
+:::{.slogan}
+
+:::
 ## Hasse-Weil Zeta Functions
 
 There is a general theory that will unify 
