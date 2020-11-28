@@ -1,5 +1,7 @@
 # Lecture 12 (Chapter 3: Curves Over a Finite Field)
 
+##
+
 We consider $k= \FF_q$ a finite field, which by definition is a one variable global function field.
 Idea: we've defined some affine dedekind domains (the holomorphy rings) had a finite nonempty set of places of the function field.
 These are analogous to the ring of integers of a number field, or more generally $S\dash$integer rings.
