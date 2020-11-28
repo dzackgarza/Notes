@@ -201,7 +201,7 @@ Imperfect fields include:
 
 \todo[inline]{Look up uniformizing elements and valuations.}
 
-:::{.theorem title="FT 12.20"}
+:::{.theorem title="FT 12.20: Regular Field Extensions"}
 For field extensions $K/k$, TFAE
 
 1. $\kappa(K) = k$ and $K/k$ is separable
@@ -216,14 +216,15 @@ For field extensions $K/k$, TFAE
 Note that this allows making not just an algebraic base change, but a totally arbitrary one.
 :::
 
+:::{.definition title="?"}
 A field extension satisfying these conditions is called **regular**.
+:::
 
-> Regular corresponds to nonsingularity in this neck of the woods.
 
 :::{.remark}
+Regular corresponds to "nonsingular" in this neck of the woods.
 The implication $2\implies 3$ is the interesting one.
 To prove it, reduces to showing that if $k= \bar k$ and $R_i$ are domains that are finitely generated as $k\dash$algebras, then $R_1 \tensor_k R_2$ is also a domain.
-
 This doesn't always happen, e.g. $\QQ(\sqrt{2}) \tensor_\QQ \QQ(\sqrt{2})$ is not a domain.
 Really need algebraically closed.
 
@@ -237,8 +238,7 @@ Proof uses Hilbert's Nullstellensatz.
 
 
 :::{.exercise}
-\hfill
-
+\envlist
 a. Show that $k(t) / k$ is regular.
 
   > I.e. $k(t)\tensor_k \bar k$ is a domain.
@@ -255,12 +255,14 @@ d. Show $K/k$ is regular $\iff$ every finitely generated subextension is regular
 Choose an elliptic curve $E/\QQ(t)$ with $j\dash$invariant $t$.
 For $N\in \ZZ^{+}$, define $\tilde K_N \da \QQ(t)(E[N])$ the $N\dash$torsion field of $E$.
 
-Then $\tilde K_N/\QQ(t)$ is a finite galois extension with galois group isomorphic to the image of the modular galois representation 
+Then $\tilde K_N/\QQ(t)$ is a finite galois extension with galois group isomorphic to the image of the modular galois representation [^see_proof_flt]
+
 \[  
 \rho_N: g(\QQ(t)) \to \GL(2, \ZZ/N\ZZ) \mod N
 .\]
 
-> See Cornell-Silverman-Stevens covering the proof of FLT, modular curves from the function field perspective.
+[^see_proof_flt]: 
+See Cornell-Silverman-Stevens covering the proof of FLT, modular curves from the function field perspective.
 
 :::{.proposition title="Some Facts"}
 $\rho_N$ is surjective, and 
