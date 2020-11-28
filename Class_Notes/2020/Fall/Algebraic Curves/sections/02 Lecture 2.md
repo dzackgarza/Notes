@@ -10,8 +10,8 @@ An *affine variety* $V/k$ is given by finitely many polynomials in $p_i \in k[t_
 More algebraically, we have the affine coordinate ring over $k$ given by $k[V] = k[t_1,\cdots, t_n]/\gens{p_i}$, the ring of polynomial functions on the zero locus corresponding to this variety.
 We can similarly replace $k$ be $\ell$ in this definition.
 Here we can observe that $\ell[V] \cong k[V] \tensor_k \ell$.
-
 :::
+
 
 In general we have a map
 \[  
@@ -24,7 +24,6 @@ Note that this will be an exact functor on the category $k\dash\text{Vect}$, i.e
 Here everything is free, and free $\implies$ flat, so things work out nicely.
 
 What about for function fields?
-
 Since $k$ is a $k\dash$algebra, we can consider $k\tensor_k \ell$, however this need not be a field.
 
 > Note: tensor products of fields come up very often, but don't seem to be explicitly covered in classes!
