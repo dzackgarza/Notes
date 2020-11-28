@@ -3,9 +3,15 @@
 Today we'll be wrapping up the last of the preliminaries.
 Upcoming: one-variable function fields and their valuation rings.
 
-
 ## Polynomials Defining Regular Function Fields
-Where's the curve: $f(x, y) = 0$.
+
+:::{.question}
+Where's the curve in all of this?
+:::
+
+:::{.answer}
+This will come from an equation like $f(x, y) = 0$.
+:::
 
 :::{.exercise}
 Let $R_1, R_2$ be $k\dash$algebras that are also domains with fraction fields $K_i$.
@@ -19,9 +25,11 @@ Show $R_1 \tensor_k R_2$ is a domain $\iff$ $K_1 \tensor_k K_2$ is a domain.[^hi
 A polynomial of positive degree $f\in k[t_1, \cdots, t_n]$ is **geometrically irreducible** if $f\in \bar k[t_1, \cdots, t_n]$ is irreducible as a polynomial.
 :::
 
-If $n=1$ then $f$ is geometrically irreducible $\iff$ it's linear, i.e. of degree 1.
+:::{.remark}
+If $n=1$ then $f$ is geometrically irreducible $\iff$ $f$ is linear, i.e. of degree 1.
 Let $f$ be irreducible, then since polynomial rings are UFDs then $\gens{f}$ is a prime ideal (irreducibles generate principal ideals) and $k[t_1, \cdots, t_n]/\gens{f}$ is a domain.
 Let $K_f$ be the fraction field.
+:::
 
 :::{.exercise title="an easy one"}
 \envlist
