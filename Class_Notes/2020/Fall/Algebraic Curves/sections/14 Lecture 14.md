@@ -195,6 +195,10 @@ Z(t) = {1 \over (1-qt)(1-t)}
 :::
 
 Thus for rationality of the zeta function, we can get rid of the $\delta$ cluttering up formulas.
+
+
+## The Functional Equation
+
 Going back to the plan, we wanted to show
 
 1. Rationality: $Z(t) \in \QQ(t)$ and thus $Z(t) = P(t) / Q(t)$,
@@ -212,7 +216,6 @@ The algebraic significance of the functional equation is that it aids in underst
 
 - The number of rational points over each finite degree extension of the base field.
 
-## The Functional Equation
 
 :::{.theorem title="Functional Equation"}
 Let $\kfq$ be a function field of genus $g$, then
