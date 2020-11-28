@@ -6,12 +6,10 @@ Given some object $A/k$ and $k\injects \ell$ is a field extension, we would like
 
 :::{.example}
 An *affine variety* $V/k$ is given by finitely many polynomials in $p_i \in k[t_1, \cdots, t_n]$, and base extension comes from the map $k[t_1, \cdots, t_n] \injects \ell[t_1, \cdots, t_n]$.
-
 More algebraically, we have the affine coordinate ring over $k$ given by $k[V] = k[t_1,\cdots, t_n]/\gens{p_i}$, the ring of polynomial functions on the zero locus corresponding to this variety.
 We can similarly replace $k$ be $\ell$ in this definition.
 Here we can observe that $\ell[V] \cong k[V] \tensor_k \ell$.
 :::
-
 
 In general we have a map
 \[  
@@ -19,28 +17,28 @@ In general we have a map
 \ts{k\dash\text{vector spaces}} &\to \ts{\ell\dash\text{vector spaces}} \\
 \ts{k\dash\text{algebras}} &\to\ts{\ell\dash\text{algebras}}
 .\]
-
-Note that this will be an exact functor on the category $k\dash\text{Vect}$, i.e. $\ell$ is a flat module.
+This will be an exact functor on the category $k\dash\text{Vect}$, i.e. $\ell$ is a flat module.
 Here everything is free, and free $\implies$ flat, so things work out nicely.
 
 What about for function fields?
 Since $k$ is a $k\dash$algebra, we can consider $k\tensor_k \ell$, however this need not be a field.
-
-> Note: tensor products of fields come up very often, but don't seem to be explicitly covered in classes!
-  We'll broach this subject here.
+Note that tensor products of fields come up very often, but don't seem to be explicitly covered in classes!
+We will broach this subject here.
 
 :::{.exercise}
 If $\ell/k$ is algebraic and $\ell\tensor_k \ell$ is a domain, the $\ell = k$.
 
-> I.e. this is rarely a domain.
-> Hint: start with the monogenic case, and also reduce to the case where the extension is not just algebraic but finite.
-
 :::
 
+:::{.remark}
+In other words, this is rarely a domain.
+A hint: start with the monogenic case, and also reduce to the case where the extension is not just algebraic but finite.
+:::
+
+:::{.remark}
 Tensor products of field extensions are still interesting: if $\ell/k$ is finite, it is galois $\iff$ $\ell \tensor_k \ell \cong \ell^{[\ell: k]}$.
 So its dimension as an $\ell\dash$algebra is equal to the degree of $\ell/k$, so it splits as a product of copies of $\ell$.
 
-:::{.remark}
 We'd like the tensor product of a field to be a field, or at least a domain where we can take the fraction field and get a field.
 This hints that we should not be tensoring algebraic extensions, but rather transcendental ones.
 :::
@@ -51,15 +49,16 @@ For $\ell/k$ a field extension,
 a. Show $k(t) \tensor_k \ell$ is a domain with fraction field $\ell(t)$.
 
 b. Show it is a field $\iff$ $\ell/k$ is algebraic.
-
 :::
 
 :::{.proposition title="FT 12.7, 12.8"}
 Let $k_1, k_2 / k$ are field extensions, and suppose $k_1 \tensor_k k_2$ is a domain.
-Then this is a field $\iff$ at least one of $k_1/k$ or $k_2/k$ is algebraic.
-:::
+Then this is a field $\iff$ at least one of $k_1/k$ or $k_2/k$ is algebraic.[^reminder_def_field_exts]
 
-> Reminder: for $\ell/k$ and $\alpha\in \ell$ algebraic over $k$, then $k(\alpha) = k[\alpha]$.
+[^reminder_def_field_exts]: 
+Reminder: for $\ell/k$ and $\alpha\in \ell$ algebraic over $k$, then $k(\alpha) = k[\alpha]$.
+
+:::
 
 So we'll concentrate on when $K \tensor_k \ell$ is a domain.
 What's the condition on a function field $K/k$ that guarantees this, i.e. when extending scalars from $k$ to $\ell$ still yields a domain?
