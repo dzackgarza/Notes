@@ -198,11 +198,10 @@ Recall that the perfect fields are given by:
 Imperfect fields include:
 
 - Function fields in characteristic $p$
-- Complete discretely valued fields $k((t))$ in characteristic $p$ [^recall_ntii]
+- Complete discretely valued fields $k((t))$ in characteristic $p$ [^recall_ntii_definitions]
 
-[^recall_ntii]: Footnote text
-
-\todo[inline]{Look up uniformizing elements and valuations.}
+[^recall_ntii_definitions]: 
+This is a good time to review valuations and uniformizing elements from NTII.
 
 :::{.theorem title="FT 12.20: Regular Field Extensions"}
 For field extensions $K/k$, TFAE
@@ -234,7 +233,6 @@ Really need algebraically closed.
 This is a result in affine algebraic geometry.
 An algebra that is a domain and finitely generated over a field is an *affine algebraic variety*, more precisely it is integral.
 The tensor product on the coordinate ring side corresponds to taking the product of varieties.
-
 Thus the fact here is that a product of integral varieties remains integral, as long as you're over an algebraically closed field.
 Proof uses Hilbert's Nullstellensatz.
 :::
@@ -242,22 +240,24 @@ Proof uses Hilbert's Nullstellensatz.
 
 :::{.exercise}
 \envlist
-a. Show that $k(t) / k$ is regular.
-
-  > I.e. $k(t)\tensor_k \bar k$ is a domain.
+a. Show that $k(t) / k$ is regular. [^means_to_be_regular_1]
 
 b. Show every purely transcendental extension is regular.
 
 c. Show that for a field $k$, every extension is regular $\iff$ $k = \bar k$.
 
 d. Show $K/k$ is regular $\iff$ every finitely generated subextension is regular.
+
+
+[^means_to_be_regular_1]: 
+I.e. $k(t)\tensor_k \bar k$ is a domain.
+
 :::
 
 ## Example of a Non-Regular Family of Function Fields
 
 Choose an elliptic curve $E/\QQ(t)$ with $j\dash$invariant $t$.
 For $N\in \ZZ^{+}$, define $\tilde K_N \da \QQ(t)(E[N])$ the $N\dash$torsion field of $E$.
-
 Then $\tilde K_N/\QQ(t)$ is a finite galois extension with galois group isomorphic to the image of the modular galois representation [^see_proof_flt]
 
 \[  
