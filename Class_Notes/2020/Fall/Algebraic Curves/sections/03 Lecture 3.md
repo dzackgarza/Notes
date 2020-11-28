@@ -108,6 +108,7 @@ In several variables, no, since not every variety is birational to a hypersurfac
 In one variable, yes, as the following theorem shows:
 :::
 
+## Our Function Fields are Geometrically Irreducible
 
 :::{.theorem title="Regular Function Fields in One Variable are Geometrically Irreducible"}
 Let $K/k$ be a one variable function field (finitely generated, transcendence degree one). 
@@ -133,7 +134,6 @@ Omitted for now, slightly technical.
 Importance of last result: a regular function field on one variable corresponds to a nice geometrically irreducible polynomial $f$.
 :::
 
-
 :::{.remark}
 Note that the plane curve module may not be smooth, and in fact usually is not possible.
 I.e. $k[x ,y]/\gens{f}$ is a one-dimensional noetherian domain, which need not be integrally closed.
@@ -150,7 +150,6 @@ However, what if $K/k$ has constant field $k$ but is not separable?
 Riemann-Roch may have something to say about this.
 :::
 
-
 :::{.example}
 \hyperref[technical_example]{Example from earlier lecture:}
 \[
@@ -165,8 +164,7 @@ This will define a one-variable function field.
 If the polynomial is geometrical reducible, this produces regular function fields.
 :::
 
-Next:
-One variable function fields and their valuations.
+Next up: one variable function fields and their valuations.
 
 
 
