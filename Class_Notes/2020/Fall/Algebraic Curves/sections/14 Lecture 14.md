@@ -311,9 +311,13 @@ If $g=1$, just one coefficient suffices.
 It turns out that $a_1$ will be $q+1$ minus the number of degree one places.
 
 :::{.question}
-Questions: what are the constraints on these quantities? 
-Can we write the zeta function in a nice way?
-Exactly what do we need to compute to determine it?
+\envlist
+
+- What are the constraints on these quantities? 
+
+- Can we write the zeta function in a nice way?
+
+- Exactly what do we need to compute to determine it?
 
 :::
 
