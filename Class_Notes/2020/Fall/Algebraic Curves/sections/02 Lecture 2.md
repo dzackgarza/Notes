@@ -1,4 +1,4 @@
-# Lecture 2
+# Lecture 2: Field Theory Preliminaries
 
 ## Base Extension
 
@@ -316,7 +316,7 @@ The function field $K_N$ corresponds to an algebraic curve $X(N)/\QQ$ that is "n
 In fact, see Rohrlich: $\kappa(K_N) = \QQ(\zeta_N)$.
 Our curves will have points (equal to valuations) which will have degrees. 
 If the constant subfield is not just $k$, this prevents degree 1 points on the curve.
-By Galois theory, for every subgroup $H \subseteq \GL(2, \ZZ/N\ZZ) / \ts{\pm I}$, we'll get a function field $\QQ(H) \da H_N^H$.
+By Galois theory, for every subgroup $H \subseteq \GL(2, \ZZ/N\ZZ) / \ts{\pm I}$, we'll get a function field $\QQ(H) \da H_N^H$.gg
 In this case, $\QQ(H)/\QQ$ is regular $\iff$ $\det(H) = (\ZZ/N\ZZ)\units$.
 
 Later we'll understand the residues at points as the residue fields of some DVRs, then the residue field will always contain the field of constants.

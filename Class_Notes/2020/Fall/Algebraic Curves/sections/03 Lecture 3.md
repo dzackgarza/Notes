@@ -1,4 +1,4 @@
-# Lecture 3
+# Lecture 3: Last of Preliminaries
 
 Today we'll be wrapping up the last of the preliminaries.
 Upcoming: one-variable function fields and their valuation rings.
@@ -163,9 +163,4 @@ We can find examples of nice function fields by taking irreducible polynomials i
 This will define a one-variable function field.
 If the polynomial is geometrical reducible, this produces regular function fields.
 :::
-
-Next up: one variable function fields and their valuations.
-
-
-
 
