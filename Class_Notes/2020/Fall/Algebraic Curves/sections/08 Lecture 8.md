@@ -22,9 +22,24 @@ So having a rational with a simple pole at only one point *only* happens in you'
 On the other hand, we both wanted and used in our discussion of holomorphy rings the fact that given a nonempty finite subset $S \subset \Sigma(K/k)$, we want to find a rational function $f\in K\units$ has poles at all of the points in $S$, so $\supp (f)_- = S$.
 Better yet, we'd like a bound on the degree of any such $f$, i.e. the orders of all of these poles. 
 If $S$ is a single place, unless the function field is rational, we can't require the function to have a pole of degree 1 at that point.
-But 
+But can it admit a pole of degree at most 10, for example?
 This is what motivates the Riemann-Roch spaces and the Riemann-Roch theorem.
+If you're trying to give a quantitative bound on how high of an order of a pole you have to allow in order to have a rational function, this comes from a key invariant called the *genus* of the function field.
+The theorem that will tell us about the existence of rational functions with poles of prescribed degrees in terms of the genus is precisely the Riemann-Roch theorem, so that's where we are headed.
 
 [^recall_div_pole]: Recall that this is the divisor pole. 
 
+:::
+
+
+:::{.definition title="Riemann-Roch Space of $D$ (Key Definition)"}
+For $D\in \Div K$, the **Riemann-Roch space** of $D$ is defined as 
+\[  
+\mathcal{L}(D) \da \ts { f\in K\units \st (t) \geq - D} \union\ts{0}
+.\]
+
+:::
+
+:::{.remark}
+This will turn out to be a $k\dash$vector space.
 :::
