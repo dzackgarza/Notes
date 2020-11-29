@@ -55,7 +55,7 @@ function RawBlock(el)
       if not file_exists(fname) then
         tikz2image(el.text, filetype, fname)
       end
-      ril = pandoc.RawInline('html', '<p style="text-align:center;"> <img style="width:100%" src="' .. fname .. '"></p>')
+      ril = pandoc.RawInline('html', '<p style="text-align:center;"> <img class="tikz" style="width:100%" src="' .. fname .. '"></p>')
     end
     return pandoc.Para(ril)
   else
