@@ -15,7 +15,7 @@ local tikz_doc_template = [[
 \end{document}
 ]]
 
-local function tikz2image(src, filetype, outfile)
+local function tikz2image(src, outfile)
   system.with_temporary_directory('tikz2image', function (tmpdir)
     system.with_working_directory(tmpdir, function()
       local f = io.open('tikz.tex', 'w')
@@ -48,12 +48,11 @@ function RawBlock(el)
     if FORMAT:match 'latex' or FORMAT:match 'pdf' or FORMAT:match 'markdown' then
       ril = pandoc.RawInline( "tex", "\\begin{center}" .. el.text .. "\\end{center}")
     elseif FORMAT:match 'html' then
-      local filetype = 'svg'
       local sha = pandoc.sha1(el.text)
       local bname = system.get_working_directory() .. '/' .. sha
-      local fname = bname .. '.' .. filetype
+      local fname = bname .. '.' .. 'svg' 
       if not file_exists(fname) then
-        tikz2image(el.text, filetype, fname)
+        tikz2image(el.text, fname)
       end
       ril = pandoc.RawInline('html', '<p style="text-align:center;"> <img class="tikz" src="' .. fname .. '"></p>')
     end
