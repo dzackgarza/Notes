@@ -16,7 +16,14 @@ This $f$ is regular at infinity since the degree of the numerator is larger than
 
 :::{.remark}
 With some thought, it can be found that this is a *characteristic* property of rational function fields: if $f\in K$, a one variable function field, and $\deg(d)_- = 1$[^recall_div_pole]
-then $[K: k(t)] = 1$ and thus $K = k(t)$ is rational.
+then the degree of the function is equal to the degree of the divisor of the zeros and the divisor of the poles, and thus the degree of the extension $[K: k(t)] = 1$ and thus $K = k(t)$ is rational.
+So having a rational with a simple pole at only one point *only* happens in you're in a rational function field.
+
+On the other hand, we both wanted and used in our discussion of holomorphy rings the fact that given a nonempty finite subset $S \subset \Sigma(K/k)$, we want to find a rational function $f\in K\units$ has poles at all of the points in $S$, so $\supp (f)_- = S$.
+Better yet, we'd like a bound on the degree of any such $f$, i.e. the orders of all of these poles. 
+If $S$ is a single place, unless the function field is rational, we can't require the function to have a pole of degree 1 at that point.
+But 
+This is what motivates the Riemann-Roch spaces and the Riemann-Roch theorem.
 
 [^recall_div_pole]: Recall that this is the divisor pole. 
 
