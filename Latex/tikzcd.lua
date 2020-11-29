@@ -1,3 +1,5 @@
+package.path = '/home/zack/Notes/Latex/?.lua;'..package.path
+
 local system = require 'pandoc.system'
 
 local tikz_doc_template = [[
