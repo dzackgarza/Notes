@@ -265,5 +265,9 @@ Give good upper and lower bounds on $\ell(D)$ and especially $\ell(nD)$ as a fun
 
 :::{.remark}
 The stronger version of knowing $\ell(D)$ in all cases is unsolvable.
+If we knew the dimension of every Riemann-Roch space, then we would know too much! 
+E.g. about Weierstrass points on elliptic curves. (?)
+Looking at positive multiples $nD$ of a single divisor is common.
+If $D$ is a single point, then the support of the divisor is the collection of places 
 The last corollary 
 :::
