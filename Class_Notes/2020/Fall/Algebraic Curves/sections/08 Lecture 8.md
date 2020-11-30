@@ -272,6 +272,20 @@ If $D$ is a single point, then the support of the divisor is the collection of p
 This is analogous to not allowing poles at new points, but rather allowing poles at the same points of higher order.
 So it's reasonable to ask about asymptotic behavior of $\ell(nD)$ in $n$.
 Secretly this is a kind of Hilbert function computation: if you have a graded algebra and you look at dimensions of its graded pieces, then there is a theorem that the Hilbert function is a polynomial for $n\gg 1$.
-Here, $\ell(nD)$ will be a linear polynomial for $n\gg 1$ by the Riemann-Roch theorem, so there are some stabilization phenomena.
-The last corollary 
+Here, $\ell(nD)$ will be a linear polynomial for $n\gg 1$ by the Riemann-Roch theorem, so there are some stabilization phenomena, but given a random divisor of low degree it is difficult to determine $\ell(D)$.
+:::
+
+:::{.remark}
+The last corollary gave us a lower bound:
+\[  
+\deg(D) \geq 0 \implies \deg(D) - \ell(D) \geq -1
+.\]
+This can also be thought of as an lower bound on $\ell(D)$ in terms of $\deg(D)$, and next up we'll try to find an upper bound:
+:::
+
+:::{.proposition title=""}
+There exists a $\delta = \delta(K/k) \in \ZZ$ such that for all $A\in \Div K$, we have
+\[  
+\deg A - \ell(A) \leq \delta
+.\]
 :::
