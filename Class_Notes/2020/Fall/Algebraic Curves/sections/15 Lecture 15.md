@@ -247,12 +247,30 @@ Similarly, if you have all of the coefficients for a $Z$ polynomial, you can sol
 :::
 
 :::{.proof title="of a"}
-Logarithmically differentiating both sides of $L(t) = \prod_{j=1}^{2g} (1-\alpha_j t)$ yields
+Essentially just a computation.
+Logarithmically differentiating both sides of $L(t) = \prod_{j=1}^{2g} (1-\alpha_j t)$ and expanding in a geometric series yields
 \[  
 {L'(t)  \over L(t) } 
 &= \sum_{j=1}^{2g} {-\alpha_j \over a -\alpha_j t} \\
-&= \sum_{j=1}^{2g} (-\)
+&= \sum_{j=1}^{2g} (-\alpha_j) \sum_{r=0}^\infty \qty{\alpha_j t}^r \\
+&= \sum_{r=1}^{\infty} \qty{\sum_{j=1}^{2g} (-\alpha_j^r) }t^{r-1} \\
+&= \sum_{r=1}^{\infty} S_r t^{r-1}
 .\]
 :::
 
+:::{.proof title="of b"}
+Clearing denominators and equating coefficients in $L'(t) = L(t) \sum_{r=1}^{\infty} S_r t^{r-1}$ yields the result immediately, since the $ia_i$ are what appear as coefficients in the derivative of a formal power series, whereas the RHS is a Cauchy product.
+:::
+
+:::{.remark}
+The moral: to compute zeta functions, you don't have to enumerate divisors and compute dimensions of Riemann-Roch spaces.
+Note that the Riemann-Roch theorem tells us something interesting about these dimensions, but doesn't compute the dimension outright!
+Instead, it suffices to compute $\fqr\dash$rational points for $r\leq g$.
+
+A few lectures ago we discussed the places on a hyperelliptic function field, including a place at infinity.
+Computing the zeta function of a hyperelliptic curve involves plugging in $x\dash$values and determining
+
+- If it's a nonzero square: no $y\dash$values
+- 
+::: 
 
