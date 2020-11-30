@@ -225,3 +225,6 @@ where we can conclude that the indicated injection exists, and thus
 :::
 
 
+:::{.fact}
+
+:::
