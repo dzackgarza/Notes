@@ -179,13 +179,15 @@ So we can easily reduce to the case $B = A + P$ for $P$ some place of degree not
 So choose an element $t\in K$ such that 
 \[  
 v_p(t) = v_p(B) = v_p(A) + 1
-.\]
-For $f\in \mathcal{L}(B)$, we have [^valuation_note]
+,\]
+since $B$ is built from $A$ by adding a single copy of $P$.
+For $f\in \mathcal{L}(B)$, we have[^valuation_note]
 
 \[  
 v_p(f) \geq -v_p(B) = -v_p(t)
 .\]
 
 
-[^valuation_note]: Note that $v_p$ is the $p\dash$adic valuation, i.e. the coefficient of $P$ in the divisor.
+[^valuation_note]: Note that $v_p$ is the $p\dash$adic valuation, i.e. the coefficient of $P$ in the divisor as a formal linear combination of points.
+
 :::
