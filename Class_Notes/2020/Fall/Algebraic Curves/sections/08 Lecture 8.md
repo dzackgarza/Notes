@@ -187,8 +187,20 @@ v_p(f) \geq -v_p(B) = -v_p(t)
 ,\]
 and so by bringing $t$ to the other side we get $v_p(ft) \geq 0$ 
 and thus $ft\in R_p$ (the corresponding local ring).
-
-
+This allows us to define a $k\dash$linear map
+\[  
+\psi: \mathcal{L}(B) &\to k(P) = R_p/\mathfrak{m}_p \\
+f & \mapsto ft \mod \mathfrak{m}_p
+.\]
+In words, we multiply $f$ by $t$ to make it $p\dash$adically regular, then look at its image in the residue field.
+We can check that
+\[  
+\ker \psi = \ts{f\in \mathcal{L}(B) \st v_p(f) \geq -v_p(t) + 1 = -v_p(A)} = \mathcal{L}(A)
+.\]
+So we have a SES of vector spaces
+\[  
+0 \to \mathcal{L}(A) \injects \mathcal{L}(B) \surjects R_p / \mathfrak{m}_p \to 0
+.\]
 
 [^valuation_note]: Note that $v_p$ is the $p\dash$adic valuation, i.e. the coefficient of $P$ in the divisor as a formal linear combination of points.
 
