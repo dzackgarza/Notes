@@ -153,7 +153,7 @@ This almost pairs up the elements of this finite set of roots, except it may hav
 The complex numbers $\alpha$ such that $\alpha = q/\alpha$ are precisely $\pm \sqrt q$.
 So group the $\alpha_i^{-1}$ into
 
-- $k$ pairs of nonfixed points, where $\alpha_i \neq q/\alpha_i$,
+- $k$ **pairs** of nonfixed points, where $\alpha_i \neq q/\alpha_i$,
 - $m$ points such that $\alpha_i = \sqrt q$,
 - $n$ points such that $\alpha_i = -\sqrt q$.
 
