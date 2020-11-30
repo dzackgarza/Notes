@@ -185,6 +185,13 @@ where we've used that
 \[  
 \prod_{\xi \in \mu_r} {1\over 1 - \xi t} &= 1-t^r \\
 \prod_{\xi \in \mu_r} {1\over 1 - q\xi t} &= 1-q^rt^r \\
+\]
+which leads to all of the denominators canceling.
+We can further compute
+\[  
+L_r(t^r) 
+&= \prod_{\xi \in \mu_r} L(\xi t) \\
+&= \prod_{j=1}^{2g} \prod_{\xi\in \mu_r} (1- \alpha_j qt) \\
 .\]
 
 :::
