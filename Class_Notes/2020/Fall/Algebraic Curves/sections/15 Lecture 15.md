@@ -103,7 +103,18 @@ From this, we can read off
 
 - $L(0) = a_0 = 1$
 - $a_1 = A_1 - (q+1) = \Sigma_1(K/k) - (q+1)$
-- $a_{2g} = a_{2g-0} = q^{g-0}a_0 = a^g$ by taking $j=0$ in [@
+- $a_{2g} = a_{2g-0} = q^{g-0}a_0 = a^g$ by taking $j=0$ in [@eq:sym_formula_proofc], and thus $\deg L = 2g$.
+
+:::
+
+:::{.proof title="of e (the most interesting!)"}
+Consider the **reciprocal polynomial** 
+\[  
+L\perp(t) \da t^{2g} L\qty{1\over t}
+= t^{2g} + a_1 t^{2g-1} + \cdots + q^g
+.\]
+The original polynomial had $\ZZ$ coefficients and constant term 1, so this polynomial is monic and has a nonzero constant term.
+Thus its roots are 
 :::
 
 
