@@ -120,4 +120,23 @@ b. $\dim \mathcal{L}(D) = 1$,
 c. $D$ is principal, i.e. the divisor of a rational function or linearly equivalent to zero.
 :::
 
+:::{.slogan}
+The only way a degree zero divisor can have a nontrivial Riemann-Roch space is if it's linearly equivalent to zero.
+::: 
+
+:::{.lemma title="?"}
+Let $A \leq B$[^def_from_places]
+in $\Div K$, then
+
+a. $\mathcal{L}(A) \leq_{\Vect_k} \mathcal{L}(B)$ is a subspace,
+b. $\dim \mathcal{L}(B) / \mathcal{L}(A) \leq \deg B - \deg A$.
+
+
+[^def_from_places]: These are formal linear combinations of places, so the coefficients in front of each place in $A$ should be less than the corresponding coefficient for $B$, or equivalently $B-A$ is effective.
+
+:::
+
+:::{.remark}
+Since $B \geq A$
+:::
 
