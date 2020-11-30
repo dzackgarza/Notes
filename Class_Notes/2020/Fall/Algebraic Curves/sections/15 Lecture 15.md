@@ -220,6 +220,7 @@ This follows from consider $\prod (1-\alpha_j^r t)$, where extracting the $t^1$ 
 :::{.remark}
 We'd really like to compute the coefficients of the $L$ polynomials, since we can solve a polynomial equation to get the roots.
 But the Galois groups of these polynomials may not be solvable, so the term $\sum \alpha_j^r$ will in general be some symmetric function in the complex roots.
+Note that any symmetric polynomial in the roots
 :::
 
 
