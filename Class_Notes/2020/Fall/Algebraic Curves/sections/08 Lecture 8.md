@@ -171,6 +171,10 @@ Since $-A \geq -B$, we have $(f) \geq -A \geq -B$, so $f\in \mathcal{L}(B)$.
 
 
 For the next part, it's perhaps easiest to consider the case $k = \bar k$ so everything has degree 1.
-If you go from a divisor to adding a single degree 1 place, this lemma says that if you increase your Riemann-Roch space by either allowing 
+If you go from a divisor to adding a single degree 1 place, this lemma says that if you increase your Riemann-Roch space by either allowing a pole at a point you didn't allow before or allowing a pole of order 1 greater, then the dimension increases by at most 1.
+
 :::{.proof title="of lemma, part (b)"}
+From the previous argument, we see that it's enough to do this one place at a time.
+So we can easily reduce to the case $B = A + P$ for $P$ some place of degree not necessarily equal to 1.
+
 :::
