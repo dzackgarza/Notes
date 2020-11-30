@@ -238,4 +238,9 @@ ia_i = S_i a_0 + S_{i-1} a_1 + \cdots + S_1 a_{i-1}
 .\]
 :::
 
+:::{.remark}
+What's the usefulness here?
+If you only have the coefficients of the $L$ polynomials, taking the logarithmic derivative 
+:::
+
 
