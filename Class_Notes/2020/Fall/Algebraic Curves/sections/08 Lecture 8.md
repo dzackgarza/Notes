@@ -41,5 +41,5 @@ For $D\in \Div K$, the **Riemann-Roch space** of $D$ is defined as
 :::
 
 :::{.remark}
-This will turn out to be a $k\dash$vector space.
+This will turn out to be a $k\dash$vector space, and is a sub $k\dash$vector space of $K$.
 :::
