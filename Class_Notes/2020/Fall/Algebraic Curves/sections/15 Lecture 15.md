@@ -270,7 +270,8 @@ Instead, it suffices to compute $\fqr\dash$rational points for $r\leq g$.
 A few lectures ago we discussed the places on a hyperelliptic function field, including a place at infinity.
 Computing the zeta function of a hyperelliptic curve involves plugging in $x\dash$values and determining
 
-- If it's a nonzero square: no $y\dash$values
+- If it's a nonzero square: no $y\dash$values,
+- Zero: exactly one $y\dash$value,
 - 
 ::: 
 
