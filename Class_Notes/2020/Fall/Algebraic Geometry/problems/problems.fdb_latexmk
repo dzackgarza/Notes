@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber problems"] 1606694439 "problems.bcf" "problems.bbl" "problems" 1606694530
-  "problems.bcf" 1606694530 101149 070b8d437a9377c293336e898b92955c "pdflatex"
+["biber problems"] 1606694439 "problems.bcf" "problems.bbl" "problems" 1606694662
+  "problems.bcf" 1606694661 101149 070b8d437a9377c293336e898b92955c "pdflatex"
   (generated)
   "problems.bbl"
   "problems.blg"
-["pdflatex"] 1606694526 "./problems.tex" "problems.pdf" "problems" 1606694530
-  "./problems.tex" 1606694517 33030 b92c23878a692052885e81c5149f4e62 ""
+["pdflatex"] 1606694658 "./problems.tex" "problems.pdf" "problems" 1606694662
+  "./problems.tex" 1606694656 33228 d279b84dc9fadae8600e0ef118bd350c ""
   "/dev/null" 1606428576 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/home/zack/Notes/Latex/environments.tex" 1606112564 8976 6f1aeca94fbc26e127312d0f637c1ac5 ""
   "/home/zack/Notes/Latex/latexmacs.tex" 1606548150 15609 fb97ab63162e38944147296ca64bbc04 ""
@@ -467,17 +467,17 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604600808 4727905 1b81189106e2406a827797a37162c1c0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604600776 2514045 8e1cfbd25c91f3f2f96af63d45f0a3cb ""
-  "problems.aux" 1606694530 16788 948110a8012369a1b8ddab46f0b8bcb5 "pdflatex"
+  "problems.aux" 1606694661 17458 40ee76129951a06e7eaf8047d6148326 "pdflatex"
   "problems.bbl" 1606694440 0 d41d8cd98f00b204e9800998ecf8427e "biber problems"
-  "problems.pre" 1606694528 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "problems.run.xml" 1606694530 2252 3383d89889eaa406d742bed3cccb7c05 "pdflatex"
-  "problems.tex" 1606694517 33030 b92c23878a692052885e81c5149f4e62 ""
-  "problems.toc" 1606694530 625 c715000e58f59ad460f3e6d90364e6fd "pdflatex"
+  "problems.pre" 1606694659 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "problems.run.xml" 1606694661 2252 3383d89889eaa406d742bed3cccb7c05 "pdflatex"
+  "problems.tex" 1606694656 33228 d279b84dc9fadae8600e0ef118bd350c ""
+  "problems.toc" 1606694661 770 8c2945841d94f0cda22ce3f6071e946e "pdflatex"
   (generated)
-  "problems.bcf"
-  "problems.aux"
-  "problems.pre"
   "problems.pdf"
+  "problems.pre"
   "problems.log"
-  "problems.toc"
   "problems.run.xml"
+  "problems.bcf"
+  "problems.toc"
+  "problems.aux"

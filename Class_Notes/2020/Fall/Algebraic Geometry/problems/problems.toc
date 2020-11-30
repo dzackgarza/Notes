@@ -1,0 +1,13 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Problem Set 1}{2}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Problem Set 2}{7}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Problem Set 3}{11}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Problem Set 4 (Tuesday, October 06)}{14}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Problem Set 5 (Monday, October 26)}{15}{section.5}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
