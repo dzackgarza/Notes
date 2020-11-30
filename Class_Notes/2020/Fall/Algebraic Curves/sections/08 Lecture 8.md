@@ -243,5 +243,16 @@ For $D\in \Div K$, define
 :::
 
 :::{.exercise title="?"}
-If $D\in  \Div 
+If $D\in  \Div k(t)$, show that
+\[  
+\ell(D) = 
+\begin{cases}
+\deg(D) + 1 & \deg D \geq 0 \\
+0 & \text{else}.
+\end{cases}
+\]
+:::
+
+:::{.remark}
+Recall that in a rational function field, every degree zero divisor is principal, 
 :::
