@@ -122,6 +122,15 @@ L(t) = t^{2g} L\perp\qty{1\over t} = \prod_{j=1}^{2g} (1 - \alpha_j t)
 and if the roots of $L(t)$ are $r_j$, then the roots of $L\perp(t)$ are the reciprocal roots $1/r_j$ and vice-versa.
 This shows the first assertion that $r_j \in \bar{\ZZ}$ as well.
 
+The most interesting part is what follows.
+Making the substitution $t=qu$ and using (c) we get
+\[  
+L\perp(t)
+&= \prod_{j=1}^{2g} (t- \alpha_j) \\
+&\da t^{2g} L\qty{1\over t} \\
+&= q^{2g} u^{2g} L\qty{1\over qu} && \text{by (c)}\\
+.\]
+
 :::
 
 
