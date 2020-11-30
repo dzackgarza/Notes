@@ -272,6 +272,6 @@ Computing the zeta function of a hyperelliptic curve involves plugging in $x\das
 
 - If it's a nonzero non-square: no $y\dash$values,
 - Zero: exactly one $y\dash$value,
-- 
+- Non
 ::: 
 
