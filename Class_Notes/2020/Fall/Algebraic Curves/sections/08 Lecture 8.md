@@ -235,4 +235,13 @@ This is an *equicharacteristic* such field, i.e. the characteristic of the field
 This isn't a fact of the geometry of curves.
 :::
 
+:::{.definition title="?"}
+For $D\in \Div K$, define
+\[  
+\ell(D) \da \dim_k \mathcal{L}(D)
+.\]
+:::
 
+:::{.exercise title="?"}
+If $D\in  \Div 
+:::
