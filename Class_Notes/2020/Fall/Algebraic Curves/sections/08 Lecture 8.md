@@ -193,10 +193,12 @@ This allows us to define a $k\dash$linear map
 f & \mapsto ft \mod \mathfrak{m}_p
 .\]
 In words, we multiply $f$ by $t$ to make it $p\dash$adically regular, then look at its image in the residue field.
-We can check that
+The kernel is precisely those elements $x$ such that multiplying by $t$ lands in the maximal ideal $\mathfrak{m}_p$, which means that $v(x)$ as 1 more than it could have been.
+So the kernel is all elements such that multiplying by $t$ and taking the valuation gives at least one, thus
 \[  
 \ker \psi = \ts{f\in \mathcal{L}(B) \st v_p(f) \geq -v_p(t) + 1 = -v_p(A)} = \mathcal{L}(A)
-.\]
+,\]
+which follows since $B$ and $A$ only differ at $P$, since $B = A+P$, so the divisors $A, B$ have the same coefficient at every other place.
 So we have a SES of vector spaces
 \[  
 0 \to \mathcal{L}(A) \injects \mathcal{L}(B) \surjects R_p / \mathfrak{m}_p \to 0
