@@ -30,6 +30,7 @@ view: markdown
 ## LaTeX Output
 latex: markdown
 	cat data.md $(FILENAME).md | pandoc \
+		--quiet \
 		-f markdown \
 		-t latex \
 		-o $(FILENAME).tex \
@@ -54,6 +55,7 @@ html: markdown
 	cat ~/Notes/Latex/latexmacs.tex $(FILENAME).md \
 		> combined.temp ;
 	cat combined.temp | pandoc \
+		--quiet \
 		--from=markdown \
 		--to=markdown \
 		-r markdown+latex_macros+tex_math_single_backslash \
@@ -61,6 +63,7 @@ html: markdown
 		--lua-filter /home/zack/dotfiles/bin/warning-div.lua \
 		| sed '/^\\\%/d' > out1.temp ;
 	cat data.md out1.temp | pandoc \
+		--quiet \
 		-r markdown+simple_tables+table_captions+yaml_metadata_block \
 		--to html \
 		--mathjax \

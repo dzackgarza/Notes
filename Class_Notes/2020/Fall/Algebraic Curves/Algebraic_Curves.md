@@ -1775,6 +1775,301 @@ After this, we'll be ready for chapter 2: divisors and Riemann-Roch.
 
 # Lecture 5B: Building Places by Gluing Affine Dedekind Domains (TODO)
 
+# Lecture 6
+
+
+# Lecture 8: Riemann-Roch Spaces 
+
+Setting up for the single most important theorem in the course: the Riemann-Roch theorem.
+We start by motivating this by considering the following property of $K\da k(t)$: for any degree 1[^res_field_reminder]
+place $p \in \Sigma(K/k)$, there exists an $f\in K\units$ such that $(f)_- = p$.
+In other words, $f$ is a rational function with a simple pole at the given place, and no other poles.
+Why?
+We just know precisely what all of the places are for this function field.
+
+
+[^res_field_reminder]: So the residue field of the corresponding DVR is $k$ itself rather than some proper finite degree extension.
+
+If $p= \infty$, we can just take $f(t) = t$, since any polynomial is regular away from $\infty$ and the valuation is $-\deg(f) = -1$
+The other places $p$ correspond to $t-\alpha$ (the uniformizing element) for $\alpha\in k$, since they correspond to other points on $\AA^1_{/k}$, and so we can take $f(t) = 1/(t-\alpha)$.
+This $f$ is regular at infinity since the degree of the numerator is larger than the degree of the denominator, and the denominator doesn't vanish at any other place.
+
+:::{.remark}
+With some thought, it can be found that this is a *characteristic* property of rational function fields: if $f\in K$, a one variable function field, and $\deg(d)_- = 1$[^recall_div_pole]
+then the degree of the function is equal to the degree of the divisor of the zeros and the divisor of the poles, and thus the degree of the extension $[K: k(t)] = 1$ and thus $K = k(t)$ is rational.
+So having a rational with a simple pole at only one point *only* happens in you're in a rational function field.
+
+On the other hand, we both wanted and used in our discussion of holomorphy rings the fact that given a nonempty finite subset $S \subset \Sigma(K/k)$, we want to find a rational function $f\in K\units$ has poles at all of the points in $S$, so $\supp (f)_- = S$.
+Better yet, we'd like a bound on the degree of any such $f$, i.e. the orders of all of these poles. 
+If $S$ is a single place, unless the function field is rational, we can't require the function to have a pole of degree 1 at that point.
+But can it admit a pole of degree at most 10, for example?
+This is what motivates the Riemann-Roch spaces and the Riemann-Roch theorem.
+If you're trying to give a quantitative bound on how high of an order of a pole you have to allow in order to have a rational function, this comes from a key invariant called the *genus* of the function field.
+The theorem that will tell us about the existence of rational functions with poles of prescribed degrees in terms of the genus is precisely the Riemann-Roch theorem, so that's where we are headed.
+
+[^recall_div_pole]: Recall that this is the divisor pole. 
+
+:::
+
+
+:::{.definition title="Riemann-Roch Space of $D$ (Key Definition)"}
+For $D\in \Div K$, the **Riemann-Roch space** of $D$ is defined as 
+\[  
+\mathcal{L}(D) \da \ts { f\in K\units \st (t) \geq - D} \union\ts{0}
+.\]
+
+:::
+
+:::{.remark}
+This will turn out to be a $k\dash$vector space, and is a sub $k\dash$vector space of $K$.
+One of the first things we'll prove is that it's always finite dimensional.
+This is only interesting when $D$ is linearly equivalent to an effective divisor, so we should think of $D$ as having a nonnegative degree, and in fact itself being an effective divisor.
+So this is the space of rational functions that have prescribes poles of a prescribed order.
+:::
+
+:::{.question}
+Does $\mathcal{L}(D)$ contain any rational functions other than zero?
+:::
+
+:::{.answer}
+For any nonzero $f\in \mathcal{L}(D)\nonzero$, the divisor $D + (f)$ is effective, since $(f) \geq -D$, and also linearly equivalent to $D$.
+If $D$ is not linearly equivalent to an effective divisor, this is just the zero vector space.
+:::
+
+:::{.exercise title="?"}
+Let $K = k(t)$ and $n\in \ZZ^{\geq 0}$.
+Show that 
+\[
+L(n\infty) = \ts{f\in k[t] \st \deg f \leq n}
+\]
+and in particular is a $k\dash$vector space of dimension $n+1$.[^infty_as_a_place]
+
+[^infty_as_a_place]: Recall that $\infty$ is the $1/t\dash$adic place.
+
+:::
+
+:::{.remark}
+Note that $\infty$ is a degree 1 place, and multiplying it by $n$ yields an effective divisor.
+The Riemann-Roch space here is comprised of rational functions that regular away from $\infty$, which are polynomials, whose pole at $\infty$ has order at worst $n$.
+But the order of a pole at infinity is its degree as a polynomial, since the $\infty\dash$adic valuation is the negative degree, so this yields polynomials of degree at most $n$.
+:::
+
+:::{.lemma title="?"}
+For $D\in \Div K$,
+\[  
+\mathcal{L}(D) \neq \ts{0} \iff 0 \text{ is equivalent to an effective divisor}
+.\]
+:::
+
+:::{.proof title="?"}
+$\implies$:
+If $f\in \mathcal{L}(D)\nonzero$, then $D + (f)$ is effective and linearly equivalent to zero.
+
+$\impliedby$:
+If $D' \geq 0$ and $D' \sim D$, then $D' = D + (f) \geq 0$.
+So $(f) \geq -D$ and thus $f\in \mathcal{L}(D)$.
+:::
+
+
+:::{.example title="?"}
+$\mathcal{L}(0) = \ts{f \st (f) \geq 0} \union\ts{0}$, which consists of rational functions with no poles (so their divisor is the zero divisor), and thus $\mathcal{L}(0) = \kappa(K)$.
+I.e., these are the constants: they are regular everywhere and have no zeros or poles.
+We would like this space to have $k\dash$dimension 1, so we impose $\kappa(K) = k$.
+:::
+
+:::{.exercise title="?"}
+\envlist
+a. Show that for all $D$, $\mathcal{L}(D) \in \Vect_k$.
+b. 
+\[  
+D\sim D' \implies \mathcal{L}(D) \cong_{\Vect_k} \mathcal{L}(D')
+.\]
+:::
+
+:::{.remark}
+You can frame the above as taking rational functions with poles of certain orders, and analyzing the orders of poles of their sums.
+If you take $D'$ and write it as $D + (f)$ for $f$ a rational function, then $f$ should produce this isomorphism.
+The moral: $\mathcal{L}(D)$ only depends on the linear equivalence class of $D$.
+:::
+
+:::{.exercise title="?"}
+Let $D\in \Div^0 K$ be a degree zero divisor, then TFAE:
+
+a. $\dim \mathcal{L}(D) \geq 1$
+b. $\dim \mathcal{L}(D) = 1$,
+c. $D$ is principal, i.e. the divisor of a rational function or linearly equivalent to zero.
+:::
+
+:::{.slogan}
+The only way a degree zero divisor can have a nontrivial Riemann-Roch space is if it's linearly equivalent to zero.
+::: 
+
+:::{.lemma title="?"}
+Let $A \leq B$[^def_from_places]
+in $\Div K$, then
+
+a. $\mathcal{L}(A) \leq_{\Vect_k} \mathcal{L}(B)$ is a subspace,
+b. $\dim \mathcal{L}(B) / \mathcal{L}(A) \leq \deg B - \deg A = \deg(B - A)$.
+
+
+[^def_from_places]: These are formal linear combinations of places, so the coefficients in front of each place in $A$ should be less than the corresponding coefficient for $B$, or equivalently $B-A$ is effective.
+
+:::
+
+:::{.remark}
+Since $B \geq A$, you can think of this as starting with $A$ and adding an effective divisor to get $B$, namely $A + (B-A) = B$.
+How much does that decrease the dimension of the Riemann-Roch space?
+At most, by the degree of $B-A$ as a divisor.
+:::
+
+:::{.corollary title="?"}
+For $D\in \Div K$,
+
+a. If $\deg D < 0$ then $\mathcal{L}(D) = 0$.
+b. If $\deg (D) \geq 0$ then $\dim_k \mathcal{L}(D) \leq \deg(D) + 1 < \infty$.
+
+:::
+
+:::{.remark}
+This shows that Riemann-Roch spaces are always finite dimensional, and also gives a simple upper bound on that dimension.
+:::
+
+:::{.proof title="of corollary"}
+For (a), a divisor of negative degree is not linearly equivalent to an effective divisor, so we might as well assume it's effective.
+
+
+For (b), the dimension of $\mathcal{L}(D)$ doesn't change if $D$ is replaced by a linearly equivalent divisor, so wlog assume $D$ is effective.
+Now write $D = \sum_{i=1}^r p_i$ as a sum of not necessarily distinct places, and use the lemma: each time you add an effective divisor, the dimension either stays the same or increases by at most the degree of the added divisor.
+So start with the zero divisor, use the fact that $\dim_k \mathcal{L}(0) = 1$, and apply the lemma $r$ times.
+This yields a space of dimension at most $1 + \sum \deg p_i = \deg D$.
+:::
+
+:::{.proof title="of lemma, part (a)"}
+If $A\leq B$ and $f\in \mathcal{L}(A)$, then $(f) \geq - A$.
+Since $-A \geq -B$, we have $(f) \geq -A \geq -B$, so $f\in \mathcal{L}(B)$.
+:::
+
+
+For the next part, it's perhaps easiest to consider the case $k = \bar k$ so everything has degree 1.
+If you go from a divisor to adding a single degree 1 place, this lemma says that if you increase your Riemann-Roch space by either allowing a pole at a point you didn't allow before or allowing a pole of order 1 greater, then the dimension increases by at most 1.
+
+:::{.proof title="of lemma, part (b)"}
+From the previous argument, we see that it's enough to do this one place at a time.
+So we can easily reduce to the case $B = A + P$ for $P$ some place of degree not necessarily equal to 1 (since we're not assuming $k=\bar k$), using that fact that $B \geq A$.
+So choose an element $t\in K$ such that 
+\[  
+v_p(t) = v_p(B) = v_p(A) + 1
+,\]
+since $B$ is built from $A$ by adding a single copy of $P$.
+For $f\in \mathcal{L}(B)$, we have by definition[^valuation_note]
+\[  
+v_p(f) \geq -v_p(B) = -v_p(t)
+,\]
+and so by bringing $t$ to the other side we get $v_p(ft) \geq 0$ 
+and thus $ft\in R_p$ (the corresponding local ring).
+This allows us to define a $k\dash$linear map
+\[  
+\psi: \mathcal{L}(B) &\to k(P) = R_p/\mathfrak{m}_p \\
+f & \mapsto ft \mod \mathfrak{m}_p
+.\]
+In words, we multiply $f$ by $t$ to make it $p\dash$adically regular, then look at its image in the residue field.
+The kernel is precisely those elements $x$ such that multiplying by $t$ lands in the maximal ideal $\mathfrak{m}_p$, which means that $v(x)$ as 1 more than it could have been.
+So the kernel is all elements such that multiplying by $t$ and taking the valuation gives at least one, thus
+\[  
+\ker \psi = \ts{f\in \mathcal{L}(B) \st v_p(f) \geq -v_p(t) + 1 = -v_p(A)} = \mathcal{L}(A)
+,\]
+which follows since $B$ and $A$ only differ at $P$, since $B = A+P$, so the divisors $A, B$ have the same coefficient at every other place.
+We thus have the following diagram:
+
+\begin{tikzcd}
+	{0} & {\mathcal{L}(A)} & {\mathcal{L}(B)} & {\mathcal{L}(B)/\mathcal{L}(A)} & {0} \\
+	\\
+	{} & {} & {} & k(P) = {R_p / \mathfrak{m}_p} & {\cdots}
+	\arrow[from=1-1, to=1-2, hook]
+	\arrow[from=1-2, to=1-3, hook]
+	\arrow[from=1-3, to=1-4, two heads]
+	\arrow[from=1-4, to=1-5, two heads]
+  \arrow[from=1-4, to=3-4, dotted, hook, "\exists \iota"]
+	\arrow[from=1-2, to=3-4, "\psi"]
+  \arrow[from=3-4, to=3-5]
+\end{tikzcd}
+[Link to diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIlxcbWF0aGNhbHtMfShBKSJdLFsyLDAsIlxcbWF0aGNhbHtMfShCKSJdLFszLDAsIlxcbWF0aGNhbHtMfShCKS9cXG1hdGhjYWx7TH0oQSkiXSxbNCwwLCIwIl0sWzAsMiwiMCJdLFsxLDIsIlxcbWF0aGNhbHtMfShBKSJdLFsyLDIsIlxcbWF0aGNhbHtMfShCKSJdLFszLDIsIlJfcCAvIFxcbWF0aGZyYWt7bX1fcCJdLFs0LDIsIlxcY2RvdHMiXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzMsNCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzEsNiwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDcsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMyw4LCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9LCJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbMCw1LCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzYsNywiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNyw4XSxbNSw2LCIiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFs4LDldXQ==)
+
+where we can conclude that the indicated injection exists, and thus 
+\[  
+\dim \mathcal{L}(B) / \mathcal{L}(A) \leq [k(p) : k] = \deg P
+.\]
+
+[^valuation_note]: Note that $v_p$ is the $p\dash$adic valuation, i.e. the coefficient of $P$ in the divisor as a formal linear combination of points.
+
+:::
+
+
+:::{.fact}
+For $p\in \Sigma(K/k)$ with residue field $k_p$ and $[k_p: k] = d$, defining $K_p$ as the completion of $K$ with respect to $\abs{\wait}_p$, there is an isomorphism $K_p \cong k_p((t))$, a formal Laurent series field.
+One issue is that if $d =1$ then $k \subset k_p$, but not for general $d\geq 2$.
+However, taking the completion results in $k \subset K_p$ again.
+This shouldn't be too surprising from the perspective of local fields in NTII.
+There is a structure theory of complete discretely valued fields.
+This is an *equicharacteristic* such field, i.e. the characteristic of the field agrees with that of the residue field, and all equicharacteristic discretely valued fields will be isomorphic to a ring of formal Laurent series.
+This isn't a fact of the geometry of curves.
+:::
+
+:::{.definition title="?"}
+For $D\in \Div K$, define
+\[  
+\ell(D) \da \dim_k \mathcal{L}(D)
+.\]
+:::
+
+:::{.exercise title="?"}
+If $D\in  \Div k(t)$, show that
+\[  
+\ell(D) = 
+\begin{cases}
+\deg(D) + 1 & \deg D \geq 0 \\
+0 & \text{else}.
+\end{cases}
+\]
+:::
+
+:::{.remark}
+Recall that in a rational function field, every degree zero divisor is principal, and if you adjust by a principal divisor, you don't change $\ell(D)$.
+This means that in any rational function field, any two divisors of the same degree are going to be linearly equivalent, and thus $\ell(D)$ will only depend on $\deg D$.
+So rational function fields are much simpler than the fully general case.
+:::
+
+:::{.problem title="The Riemann-Roch Problem"}
+Give good upper and lower bounds on $\ell(D)$ and especially $\ell(nD)$ as a function of $n$.
+:::
+
+:::{.remark}
+The stronger version of knowing $\ell(D)$ in all cases is unsolvable.
+If we knew the dimension of every Riemann-Roch space, then we would know too much! 
+E.g. about Weierstrass points on elliptic curves. (?)
+Looking at positive multiples $nD$ of a single divisor is common.
+If $D$ is a single point, then the support of the divisor is the collection of places that appear with nonzero coefficients, $nD$ has the same support.
+This is analogous to not allowing poles at new points, but rather allowing poles at the same points of higher order.
+So it's reasonable to ask about asymptotic behavior of $\ell(nD)$ in $n$.
+Secretly this is a kind of Hilbert function computation: if you have a graded algebra and you look at dimensions of its graded pieces, then there is a theorem that the Hilbert function is a polynomial for $n\gg 1$.
+Here, $\ell(nD)$ will be a linear polynomial for $n\gg 1$ by the Riemann-Roch theorem, so there are some stabilization phenomena, but given a random divisor of low degree it is difficult to determine $\ell(D)$.
+:::
+
+:::{.remark}
+The last corollary gave us a lower bound:
+\[  
+\deg(D) \geq 0 \implies \deg(D) - \ell(D) \geq -1
+.\]
+This can also be thought of as an lower bound on $\ell(D)$ in terms of $\deg(D)$, and next up we'll try to find an upper bound:
+:::
+
+:::{.proposition title=""}
+There exists a $\delta = \delta(K/k) \in \ZZ$ such that for all $A\in \Div K$, we have
+\[  
+\deg A - \ell(A) \leq \delta
+.\]
+:::
+
 # Lecture 10 (Todo)
 
 # Lecture 11A: Weil's Proof of Riemann-Roch
@@ -2834,3 +3129,290 @@ It turns out that $a_1$ will be $q+1$ minus the number of degree one places.
 
 It will turn out that computing the number of rational points over $\FF_{q}, \FF_{q^2}, \cdots, \FF_{q^g}$ will be possible.
 For example, for a hyperelliptic curve, we'll have an explicit defining equation and can make an explicit point count, and you only need $g$ of them.
+
+# Lecture 15: The $L\dash$Polynomial
+
+Recall that we had $Z(t) + F(t) + G(t)$:
+
+\[  
+(q-1) F(t) 
+&= \sum_{0 \leq \deg C \leq 2g-2 } q^{\ell(C)} t^{\deg(C)} \\
+(q-1)G(t)
+&= h \qty{ {q^g t^{2g-1} \over 1-qt} - {1 \over 1-t} }
+.\]
+
+Note that $F(t)$ is a polynomial of degree at most $2g-2$, and clearing denominators in $G(t)$ yields a polynomial of degree at most $2g$
+
+
+:::{.definition title="The $L\dash$polynomial"}
+The $L\dash$polynomial is defined as
+\[  
+L(t) \da (1-t)(1-qt) Z(t) = (1-t)(1-qt) \sum_{n=0}^\infty A_n t^n \in \ZZ[t]
+.\]
+:::
+
+It turns out that the degree bound of $2g$ is sharp, and the coefficients closer to the middle are most interesting:
+
+:::{.theorem title="?"}
+Let $K/\FF_q$ be a function field of genus $g\geq 1$, then
+
+a. $\deg L = 2g$.
+b. $L(1) = h$
+c. $L(t) = q^g t^{2g} L\qty{1\over qt}$.
+d. Writing $L(t) = \sum_{j=1}^{2g} a_j t^{j}$,
+
+  - $a_0 = 1$ and $a_{2g} = q^g$.
+  - For all $0\leq j \leq g$, we have $a_{2g-j} = q^{g-j}a_j$.
+  - $a_1 = \abs{\Sigma_1(K/\fq)} - (q+1)$, which notably does not depend on $g$.
+
+- Write $L(t) = \prod_{j=1}^{2g} (1 - \alpha_j t) \in \CC[t]$ [^why_this_expansion]
+
+e. The $\alpha_j \in \bar{\ZZ}$ [^algebraic_ints_note]
+(which were *a priori* in $\CC$) and can be ordered such that for all $1\leq j \leq g$, we have $a_j a_{g+j} = q$. [^hint_at_rh]
+
+f. If $L_r(t) = (1-t)(1-q^rt) Z_r(t)$ then $L_r(t) = \prod_{j=1}^{2g}(1-\alpha_j^r t)$, where $K_r$ is the constant extension $K \fqr /\fqr$
+
+[^hint_at_rh]: This is the first hint at the Riemann hypothesis: if for example they all had the same complex modulus, this would force $\abs{a_j} = \sqrt q$.
+Thus proving that they all have the same absolute value is 99% of the content!
+
+[^algebraic_ints_note]: $\bar \ZZ$ denotes the algebraic integers.
+
+[^why_this_expansion]: The polynomial isn't monic, but rather has a constant coefficient, so this expansion is somewhat more natural than (say) $\prod (t-\alpha)$.
+
+:::
+
+Note that the $\alpha_j$ are reciprocal roots.
+
+:::{.proof title="of a"}
+We saw from $Z(t) = F(t) + G(t)$ that $\deg L \leq 2g$.
+Equality will follow from the proof of (d) part 1, since this would imply that $a_{2g} = q^g \neq 0$.
+:::
+
+:::{.proof title="of b"}
+Our formula $Z(t) = F(t) + G(t)$ and Schmidt's theorem (showing $\delta = 1$) gives
+\[  
+L(t) = (1-t) (1-qt) F(t) + {h \over q-1} \qty{ q^g t^{2g-2} (1-t) - (1-qt)}
+,\]
+where we've expanded $G$ but not $F$ because it involves various $\ell(D)$ which are difficult to compute. 
+It is some polynomial though, and we can evaluate $L$ at 1 to get $L(1) = h$.
+Thus the class number is the sum of the coefficients!
+:::
+
+:::{.proof title="of c"}
+This follows easily from the functional equation for $Z(t)$, which we already established using the Riemann-Roch theorem:
+\[  
+Z(t) = q^{g-1} t^{2g-2} Z\qty{1\over qt}
+.\]
+We can compute
+\[  
+q^g t^{2g} L\qty{1\over qt} 
+&= q^g t^{2g} \qty{1 - {1\over qt}} \qty{1 - {1\over t}} Z\qty{1\over qt} \\
+&= q^{g-1} t^{2g-2} (1-t) (1-qt) Z\qty{1\over qt} \\
+&= (1-t) (1-qt) Z(t) \\
+&\da L(t)
+,\]
+where we've distributed one $q$ and two $t$s in the first steps.
+:::
+
+:::{.proof title="of d"}
+Using the functional equation from (c), we can write
+\[  
+L(t) = q^g t^{2g}  L\qty{1\over qt} = \qty{a_{2g} \over q^g} + \qty{a_{2g-1} \over q^{g-1}}t + \cdots +  \qty{a_0 q^g} t^{2g}
+,\]
+where we're correcting by enough in $t$ but not enough in $q$ and seeing what we get.
+Equating coefficients, for $0\leq j \leq g$ we have
+\[  
+a_{2g-j} = q^{g-j} a_j
+.\]{#eq:sym_formula_proofc}
+Using the fact that $A_0$ is the number of effective degree zero divisors, which is only zero, we have $A_0 = 1$ and we can multiply formal power series to obtain 
+\[  
+L(t) = a_0 + a_1 t + \cdots + a_{2g} t^{2g} 
+&= (1-t)(1-qt) \sum_{n=0}^\infty A_n t^n \\
+&= \qty{ 1 - (q+1)t + qt^2 }(1 + A_1 t + A_2 t^2 + \cdots)\\
+&= 1 + \qty{A_1 - (q+1) }t + \cdots
+.\]
+From this, we can read off
+
+- $L(0) = a_0 = 1$
+- $a_1 = A_1 - (q+1) = \Sigma_1(K/k) - (q+1)$
+- $a_{2g} = a_{2g-0} = q^{g-0}a_0 = a^g$ by taking $j=0$ in [@eq:sym_formula_proofc], and thus $\deg L = 2g$.
+
+:::
+
+:::{.proof title="of e (the most interesting!)"}
+Consider the **reciprocal polynomial** 
+\[  
+L\perp(t) \da t^{2g} L\qty{1\over t}
+= t^{2g} + a_1 t^{2g-1} + \cdots + q^g
+.\]
+The original polynomial had $\ZZ$ coefficients and constant term 1, so this polynomial is monic and has a nonzero constant term.
+Thus its roots are patently nonzero algebraic integers in $\bar{\ZZ}\nonzero$.
+If $L\perp(t) = \prod_{j=1}^{2g} (t-\alpha_j)$, then 
+\[  
+L(t) = t^{2g} L\perp\qty{1\over t} = \prod_{j=1}^{2g} (1 - \alpha_j t)
+\]
+and if the roots of $L(t)$ are $r_j$, then the roots of $L\perp(t)$ are the reciprocal roots $1/r_j$ and vice-versa.
+This shows the first assertion that $r_j \in \bar{\ZZ}$ as well.
+
+The most interesting part is what follows.
+Making the substitution $t=qu$ and using (c) we get
+\[  
+L\perp(t)
+&= \prod_{j=1}^{2g} (t- \alpha_j) \\
+&\da t^{2g} L\qty{1\over t} \\
+&= q^{2g} u^{2g} L\qty{1\over qu} && \text{by (c)}
+.\]
+
+Using $u = t/q$, we can write 
+\[  
+q^g L(u) 
+&= q^g \prod_{j=1}^{2g} (1 - \alpha_j u) \\
+&= q^g \prod_{j=1}^{2g} \qty{ 1 - {\alpha_j \over q}t} \\
+&= q^g \prod_{j=1}^{2g} {\alpha_j \over q} \prod_{j=1}^{2g}\qty{ t - {1\over \alpha_j} } \\
+&= \prod_{j=1}^{2g} \qty{t - {q\over \alpha_j}}
+,\]
+where we've pulled out a factor of $-\alpha_j/q$ and
+in the last step we've used that $\prod_{j=1}^{2g} \alpha_j = q^g$. 
+This follows because the $\alpha_j$ are the roots of $L\perp$, which has even degree, so the product of all of the roots is equal to the constant term of $L\perp$, which is the leading term of $L$, which we showed was $q^g$.
+
+This says that if we take these roots $\alpha_j$ as a multiset and replace each $\alpha_j$ with $q/\alpha_j$, we get the same multiset back.
+I.e., this multiset is stable under the involution
+\[  
+\CC\units &\to \CC\units \\
+z &\mapsto {q\over z}
+.\]
+This almost pairs up the elements of this finite set of roots, except it may have fixed points.
+The complex numbers $\alpha$ such that $\alpha = q/\alpha$ are precisely $\pm \sqrt q$.
+So group the $\alpha_i^{-1}$ into
+
+- $k$ **pairs** of nonfixed points, where $\alpha_i \neq q/\alpha_i$,
+- $m$ points such that $\alpha_i = \sqrt q$,
+- $n$ points such that $\alpha_i = -\sqrt q$.
+
+So we'd like to show that $m$ and $n$ are both even, so when we're pairing roots with reciprocals these get paired with themselves.
+We know $2k + m + n = 2g$, so $m+n$ is even.
+We also know that 
+\[  
+q^g 
+&= \prod_{j=1}^{2g} \alpha_j \\
+&= q^k \qty{\sqrt{q}}^m \qty{-\sqrt q}^n  \\
+&= (-1)^n q^{k + {m \over 2} + {n\over 2}} \\
+&= (-1)^n q^g
+.\]
+This forces $n$ to be even, and since $m = 2g-2k-n$, $m$ must be even as well.
+:::
+
+:::{.proof title="of f"}
+We used Dirichlet's character-style decomposition of $Z(t)$ in Schmidt's theorem, and we'll use it again here.
+Write 
+\[  
+L_r(t^r) 
+&= (1-t^r) (1-q^r t^r) Z_r(t^r) \\
+&= (1-t^r) (1-q^r t^r) \prod_{\xi \in \mu_r} Z(\xi t) \\
+&= (1-t^r) (1-q^r t^r) \prod_{\xi \in \mu_r} {L(\xi t) \over (1-\xi t)(1-q\xi t) } \\
+&= \prod_{\xi \in \mu_r} L(\xi t) 
+,\]
+
+where we've used that
+\[  
+\prod_{\xi \in \mu_r} {1\over 1 - \xi t} &= 1-t^r \\
+\prod_{\xi \in \mu_r} {1\over 1 - q\xi t} &= 1-q^rt^r \\
+\]
+which leads to all of the denominators canceling.
+We can then expand $L_r(t^r)$ as a product to compute
+\[  
+L_r(t^r) 
+&= \prod_{\xi \in \mu_r} L(\xi t) \\
+&= \prod_{\xi\in \mu_r} \prod_{j=1}^{2g} (1- \alpha_j qt) \\
+&= \prod_{j=1}^{2g} \prod_{\xi\in \mu_r} (1- \alpha_j qt)  && \text{since these are finite products}\\
+&= \prod_{j=1}^{2g} (1 - \alpha_j^r t^r)
+.\]
+
+From this we can conclude that $L_r(t) = \prod_{j=1}^{2g} (1- \alpha_j^r t)$, since $t^r$ is just an indeterminate and these are all identities of polynomials.
+:::
+
+:::{.corollary title="?"}
+Suppose $K/\fq$ is genus $g\geq 1$ and $L(t) = \prod_{j=1}^{2g}(1- \alpha_j t)$.
+Then for all $r\in \ZZ^{\geq 0}$, we have a nice expression for $N_r$:
+\[  
+N_r \da \abs{\Sigma_1(K_r/\fqr)} = q^r + 1 - \sum_{j=1}^{2g} \alpha_j^r
+.\]
+:::
+
+:::{.proof title="?"}
+Let $L_r(t) = \sum_{j=1}^{2g} a_{j, r} = \prod_{j=1}^{2g} (1 - \alpha_j^r t)$,
+so $a_{1, r} = -\sum_{j=1}^{2g} \alpha_j^r$.
+Then using (d) part 3, we can write
+\[  
+\abs{\Sigma_1(K_r/\fqr)} = q^r + 1 + a_{1, r} = q^r + 1 - \sum_{j=1}^{2g} \alpha_j^r
+.\]
+This follows from consider $\prod (1-\alpha_j^r t)$, where extracting the $t^1$ coefficient involves choosing $-\alpha_j^r$ once and 1 from all of the remaining terms, and then you sum over the disjoint possibilities.
+:::
+
+:::{.remark}
+We'd really like to compute the coefficients of the $L$ polynomials, since we can solve a polynomial equation to get the roots.
+But the Galois groups of these polynomials may not be solvable, so the term $\sum \alpha_j^r$ will in general be some symmetric function in the complex roots.
+Note that any symmetric polynomial in the roots is also a symmetric polynomial in the coefficients.
+:::
+
+:::{.corollary title="?"}
+For $K/\fq$ a function field, define
+\[  
+S_r \da N_r - (q^r + 1) = - \sum_{j=1}^{2g} \alpha_j^r
+.\]
+Note that $N_r = \abs{\Sigma(K_r/\fqr)}$ is the number of $\fqr\dash$rational point.
+Then
+
+a. $L'(t)/L(t) = \sum_{r=1}^\infty S_r t^{r-1}$.
+b. $a_0 = 1$, and for all $1\leq i \leq g$, 
+\[  
+ia_i = S_i a_0 + S_{i-1} a_1 + \cdots + S_1 a_{i-1}
+.\]
+:::
+
+:::{.remark}
+What's the usefulness here?
+If you only have the coefficients of the $L$ polynomials, taking the logarithmic derivative gives access to these quantities $S_r$.
+The second formula is a recursive expression for the $a_i$ in terms of the $S_i$.
+So you can compute the coefficients of the $L$ polynomial by counting $\fqr\dash$rational points on your curve (or places on your function field) for $r=1,2,\cdots, g$.
+Similarly, if you have all of the coefficients for a $Z$ polynomial, you can solve for the $S_i$.
+:::
+
+:::{.proof title="of a"}
+Essentially just a computation.
+Logarithmically differentiating both sides of $L(t) = \prod_{j=1}^{2g} (1-\alpha_j t)$ and expanding in a geometric series yields
+\[  
+{L'(t)  \over L(t) } 
+&= \sum_{j=1}^{2g} {-\alpha_j \over a -\alpha_j t} \\
+&= \sum_{j=1}^{2g} (-\alpha_j) \sum_{r=0}^\infty \qty{\alpha_j t}^r \\
+&= \sum_{r=1}^{\infty} \qty{\sum_{j=1}^{2g} (-\alpha_j^r) }t^{r-1} \\
+&= \sum_{r=1}^{\infty} S_r t^{r-1}
+.\]
+:::
+
+:::{.proof title="of b"}
+Clearing denominators and equating coefficients in $L'(t) = L(t) \sum_{r=1}^{\infty} S_r t^{r-1}$ yields the result immediately, since the $ia_i$ are what appear as coefficients in the derivative of a formal power series, whereas the RHS is a Cauchy product.
+:::
+
+:::{.remark}
+The moral: to compute zeta functions, you don't have to enumerate divisors and compute dimensions of Riemann-Roch spaces.
+Note that the Riemann-Roch theorem tells us something interesting about these dimensions, but doesn't compute the dimension outright!
+Instead, it suffices to compute $\fqr\dash$rational points for $r\leq g$.
+
+A few lectures ago we discussed the places on a hyperelliptic function field, including a place at infinity.
+Computing the zeta function of a hyperelliptic curve involves plugging in $x\dash$values and determining if it is
+
+- A nonzero non-square: no $y\dash$values,
+- Zero: exactly one $y\dash$value,
+- A nonzero square: two $y\dash$values.
+
+This is what happens at the finite places.
+To handle the place at $\infty$, there is a recipe for the degree of the polynomial in terms of the coefficients.
+So for any hyperelliptic function field (and in particular, for any elliptic function field) we have a concrete algorithm for computing their zeta functions.
+Note that this is not necessarily a *good* algorithm: it still involves plugging in many values and checking if things are squares in finite values.
+It seems that most people who compute a lot of zeta functions mostly focus on hyperelliptic function fields.
+
+How are you going to compute zeta functions or even places for more complicated function fields?
+The Riemann-Hurwitz formula says that since any function field is a finite degree extension of a rational function field, the curve is given as a degree 2 branched cover of $\PP^1$, it suffices to compute the fibers of this cover in order to get point counts.
+::: 
+
