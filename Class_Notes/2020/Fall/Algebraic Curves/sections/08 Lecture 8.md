@@ -42,4 +42,6 @@ For $D\in \Div K$, the **Riemann-Roch space** of $D$ is defined as
 
 :::{.remark}
 This will turn out to be a $k\dash$vector space, and is a sub $k\dash$vector space of $K$.
+This is only interesting when $D$ is linearly equivalent to an effective divisor, so we should think of $D$ as having a nonnegative degree, and in fact itself being an effective divisor.
+So this is the space of rational functions that have prescribes poles of a prescribed order.
 :::
