@@ -150,6 +150,7 @@ I.e., this multiset is stable under the involution
 z &\mapsto {q\over z}
 .\]
 This almost pairs up the elements of this finite set of roots, except it may have fixed points.
+The complex numbers $\alpha$ such that $\alpha = q/\alpha$ are precisely $\pm \sqrt q$
 
 :::
 
