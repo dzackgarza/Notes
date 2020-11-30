@@ -87,5 +87,11 @@ So $(f) \geq -D$ and thus $f\in \mathcal{L}(D)$.
 :::
 
 
+:::{.example title="?"}
+$\mathcal{L}(0) = \ts{f \st (f) \geq 0} \union\ts{0}$, which consists of rational functions with no poles (so their divisor is the zero divisor), and thus $\mathcal{L}(0) = \kappa(K)$.
+I.e., these are the constants: they are regular everywhere and have no zeros or poles.
+We would like this space to have $k\dash$dimension 1, so we impose $\kappa(K) = k$.
+:::
+
 
 
