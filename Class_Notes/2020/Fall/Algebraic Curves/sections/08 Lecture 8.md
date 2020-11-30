@@ -268,6 +268,10 @@ The stronger version of knowing $\ell(D)$ in all cases is unsolvable.
 If we knew the dimension of every Riemann-Roch space, then we would know too much! 
 E.g. about Weierstrass points on elliptic curves. (?)
 Looking at positive multiples $nD$ of a single divisor is common.
-If $D$ is a single point, then the support of the divisor is the collection of places 
+If $D$ is a single point, then the support of the divisor is the collection of places that appear with nonzero coefficients, $nD$ has the same support.
+This is analogous to not allowing poles at new points, but rather allowing poles at the same points of higher order.
+So it's reasonable to ask about asymptotic behavior of $\ell(nD)$ in $n$.
+Secretly this is a kind of Hilbert function computation: if you have a graded algebra and you look at dimensions of its graded pieces, then there is a theorem that the Hilbert function is a polynomial for $n\gg 1$.
+Here, $\ell(nD)$ will be a linear polynomial for $n\gg 1$ by the Riemann-Roch theorem, so there are some stabilization phenomena.
 The last corollary 
 :::
