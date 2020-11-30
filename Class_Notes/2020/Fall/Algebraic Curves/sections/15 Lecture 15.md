@@ -154,7 +154,8 @@ The complex numbers $\alpha$ such that $\alpha = q/\alpha$ are precisely $\pm \s
 So group the $\alpha_i^{-1}$ into
 
 - $k$ pairs of nonfixed points, where $\alpha_i \neq q/\alpha_i$,
-- $m$ 
+- $m$ points such that $\alpha_i = \sqrt q$,
+- $n$ points such that $\alpha_i = -\sqrt q$.
 
 :::
 
