@@ -1,6 +1,7 @@
 # Lecture 15: The $L\dash$Polynomial
 
-## 
+## Big List of Important Facts 
+
 Recall that we had $Z(t) + F(t) + G(t)$:
 
 \[  
@@ -52,6 +53,10 @@ Thus proving that they all have the same absolute value is 99% of the content!
 
 Note that the $\alpha_j$ are reciprocal roots.
 
+## Proofs
+
+### The degree of $L$ and $L(1)$
+
 :::{.proof title="of a"}
 We saw from $Z(t) = F(t) + G(t)$ that $\deg L \leq 2g$.
 Equality will follow from the proof of (d) part 1, since this would imply that $a_{2g} = q^g \neq 0$.
@@ -66,6 +71,8 @@ where we've expanded $G$ but not $F$ because it involves various $\ell(D)$ which
 It is some polynomial though, and we can evaluate $L$ at 1 to get $L(1) = h$.
 Thus the class number is the sum of the coefficients!
 :::
+
+### Functional Equation
 
 :::{.proof title="of c"}
 This follows easily from the functional equation for $Z(t)$, which we already established using the Riemann-Roch theorem:
@@ -82,6 +89,8 @@ q^g t^{2g} L\qty{1\over qt}
 ,\]
 where we've distributed one $q$ and two $t$s in the first steps.
 :::
+
+### Coefficients $a_j$ for $j=0, 1, 2g$ and Duality
 
 :::{.proof title="of d"}
 Using the functional equation from (c), we can write
@@ -107,6 +116,8 @@ From this, we can read off
 - $a_{2g} = a_{2g-0} = q^{g-0}a_0 = a^g$ by taking $j=0$ in [@eq:sym_formula_proofc], and thus $\deg L = 2g$.
 
 :::
+
+### Absolute Values of Roots / RH
 
 :::{.proof title="of e (the most interesting!)"}
 Consider the **reciprocal polynomial** 
@@ -200,6 +211,11 @@ L_r(t^r)
 From this we can conclude that $L_r(t) = \prod_{j=1}^{2g} (1- \alpha_j^r t)$, since $t^r$ is just an indeterminate and these are all identities of polynomials.
 :::
 
+## Applications and Corollaries
+
+
+### Counting Rational Points
+
 :::{.corollary title="?"}
 Suppose $K/\fq$ is genus $g\geq 1$ and $L(t) = \prod_{j=1}^{2g}(1- \alpha_j t)$.
 Then for all $r\in \ZZ^{\geq 0}$, we have a nice expression for $N_r$:
@@ -223,6 +239,8 @@ We'd really like to compute the coefficients of the $L$ polynomials, since we ca
 But the Galois groups of these polynomials may not be solvable, so the term $\sum \alpha_j^r$ will in general be some symmetric function in the complex roots.
 Note that any symmetric polynomial in the roots is also a symmetric polynomial in the coefficients.
 :::
+
+### Relating Rational Points to Coefficients
 
 :::{.corollary title="?"}
 For $K/\fq$ a function field, define
