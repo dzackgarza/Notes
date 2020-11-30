@@ -167,7 +167,7 @@ q^g
 &= (-1)^n q^{k + {m \over 2} + {n\over 2}} \\
 &= (-1)^n q^g
 .\]
-This forces $n$ to be even, and since $m+n
+This forces $n$ to be even, and since $m = 2g-
 :::
 
 
