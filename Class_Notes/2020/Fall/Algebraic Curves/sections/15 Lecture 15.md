@@ -233,7 +233,7 @@ Then
 a. $L'(t)/L(t) = \sum_{r=1}^\infty S_r t^{r-1}$.
 b. $a_0 = 1$, and for all $1\leq i \leq g$, 
 \[  
-ia_i = 
+ia_i = S_i a_0 + S_{i-1} a_1 + \cdots + 
 .\]
 :::
 
