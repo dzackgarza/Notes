@@ -146,7 +146,8 @@ This follows because the $\alpha_j$ are the roots of $L\perp$, which has even de
 This says that if we take these roots $\alpha_j$ as a multiset and replace each $\alpha_j$ with $q/\alpha_j$, we get the same multiset back.
 I.e., this multiset is stable under the involution
 \[  
-
+\CC\units &\to \CC\units \\
+z &\mapsto {q\over z}
 .\]
 
 :::
