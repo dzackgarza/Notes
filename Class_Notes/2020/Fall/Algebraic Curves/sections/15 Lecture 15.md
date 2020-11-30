@@ -31,7 +31,7 @@ d. Writing $L(t) = \sum_{j=1}^{2g} a_j t^{j}$,
 
   - $a_0 = 1$ and $a_{2g} = q^g$.
   - For all $0\leq j \leq g$, we have $a_{2g-j} = q^{g-j}a_j$.
-  - $a_1 = \abs{\Sigma(K/\fq)} - (q+1)$, which notably does not depend on $g$.
+  - $a_1 = \abs{\Sigma_1(K/\fq)} - (q+1)$, which notably does not depend on $g$.
 
 - Write $L(t) = \prod_{j=1}^{2g} (1 - \alpha_j t) \in \CC[t]$ [^why_this_expansion]
 
@@ -200,7 +200,26 @@ From this we can conclude that $L_r(t) = \prod_{j=1}^{2g} (1- \alpha_j^r t)$, si
 :::
 
 :::{.corollary title="?"}
-For $K/\fq$ of genus $g\geq 1$, 
+Suppose $K/\fq$ is genus $g\geq 1$ and $L(t) = \prod_{j=1}^{2g}(1- \alpha_j t)$.
+Then for all $r\in \ZZ^{\geq 0}$, we have a nice expression for $N_r$:
+\[  
+N_r \da \abs{\Sigma_1(K_r/\fqr)} = q^r + 1 - \sum_{j=1}^{2g} \alpha_j^r
+.\]
+:::
+
+:::{.proof title="?"}
+Let $L_r(t) = \sum_{j=1}^{2g} a_{j, r} = \prod_{j=1}^{2g} (1 - \alpha_j^r t)$,
+so $a_{1, r} = -\sum_{j=1}^{2g} \alpha_j^r$.
+Then using (d) part 3, we can write
+\[  
+\abs{\Sigma_1(K_r/\fqr)} = q^r + 1 + a_{1, r} = q^r + 1 - \sum_{j=1}^{2g} \alpha_j^r
+.\]
+This follows from consider $\prod (1-\alpha_j^r t)$, where extracting the $t^1$ coefficient involves choosing $-\alpha_j^r$ once and 1 from all of the remaining terms, and then you sum over the disjoint possibilities.
+:::
+
+:::{.remark}
+We'd really like to compute the coefficients of the $L$ polynomials, since we can solve a polynomial equation to get the roots.
+But the Galois groups of these polynomials may not be solvable, so the term $\sum \alpha_j^r$ will in general be some symmetric function in the complex roots.
 :::
 
 
