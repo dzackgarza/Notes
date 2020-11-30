@@ -226,5 +226,5 @@ where we can conclude that the indicated injection exists, and thus
 
 
 :::{.fact}
-
+For $p\in \Sigma(K/k)$ with residue field $k_p$ and $[k_p: k] = d$, defining $K_p \da 
 :::
