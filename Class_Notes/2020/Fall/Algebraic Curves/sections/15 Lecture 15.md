@@ -38,7 +38,7 @@ d. Writing $L(t) = \sum_{j=1}^{2g} a_j t^{j}$,
 e. The $\alpha_j \in \bar{\ZZ}$ [^algebraic_ints_note]
 (which were *a priori* in $\CC$) and can be ordered such that for all $1\leq j \leq g$, we have $a_j a_{g+j} = q$. [^hint_at_rh]
 
-f. If $L_r(t) = (1-t)(1-q^rt) Z_r(t)$ then $L_r(t) = \prod_{j=1}^{2g}(1-\alpha_i^r t)$, where $K_r$ is the constant extension $K \fqr /\fqr$
+f. If $L_r(t) = (1-t)(1-q^rt) Z_r(t)$ then $L_r(t) = \prod_{j=1}^{2g}(1-\alpha_j^r t)$, where $K_r$ is the constant extension $K \fqr /\fqr$
 
 [^hint_at_rh]: This is the first hint at the Riemann hypothesis: if for example they all had the same complex modulus, this would force $\abs{a_j} = \sqrt q$.
 Thus proving that they all have the same absolute value is 99% of the content!
@@ -49,7 +49,7 @@ Thus proving that they all have the same absolute value is 99% of the content!
 
 :::
 
-Note that the $\alpha_i$ are reciprocal roots.
+Note that the $\alpha_j$ are reciprocal roots.
 
 :::{.proof title="of a"}
 We saw from $Z(t) = F(t) + G(t)$ that $\deg L \leq 2g$.
@@ -128,8 +128,22 @@ Making the substitution $t=qu$ and using (c) we get
 L\perp(t)
 &= \prod_{j=1}^{2g} (t- \alpha_j) \\
 &\da t^{2g} L\qty{1\over t} \\
-&= q^{2g} u^{2g} L\qty{1\over qu} && \text{by (c)}\\
+&= q^{2g} u^{2g} L\qty{1\over qu} && \text{by (c)}
 .\]
+
+Using $u = t/q$, we can write 
+\[  
+q^g L(u) 
+&= q^g \prod_{j=1}^{2g} (1 - \alpha_j u) \\
+&= q^g \prod_{j=1}^{2g} \qty{ 1 - {\alpha_j \over q}t} \\
+&= q^g \prod_{j=1}^{2g} {\alpha_j \over q} \prod_{j=1}^{2g}\qty{ t - {1\over \alpha_j} } \\
+&= \prod_{j=1}^{2g} \qty{t - {q\over \alpha_j}}
+,\]
+where we've pulled out a factor of $-\alpha_j/q$ and
+in the last step we've used that $\prod_{j=1}^{2g} \alpha_j = q^g$. 
+This follows because the $\alpha_j$ are the roots of $L\perp$, which has even degree, so the product of all of the roots is equal to the constant term of $L\perp$, which is the leading term of $L$, which we showed was $q^g$.
+
+This says that if we take these roots $\alpha_j$ as a multiset and replace each $\alpha_j$ with $q/\alpha_j$, we get the same multiset back.
 
 :::
 
