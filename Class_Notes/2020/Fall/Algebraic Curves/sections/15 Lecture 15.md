@@ -170,5 +170,9 @@ q^g
 This forces $n$ to be even, and since $m = 2g-2k-n$, $m$ must be even as well.
 :::
 
+:::{.proof title="of f"}
+
+:::
+
 
 
