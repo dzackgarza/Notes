@@ -156,5 +156,11 @@ This shows that Riemann-Roch spaces are always finite dimensional, and also give
 
 :::{.proof title="of corollary"}
 For (a), a divisor of negative degree is not linearly equivalent to an effective divisor, so we might as well assume it's effective.
+
+
+For (b), the dimension of $\mathcal{L}(D)$ doesn't change if $D$ is replaced by a linearly equivalent divisor, so wlog assume $D$ is effective.
+Now write $D = \sum_{i=1}^r p_i$ as a sum of not necessarily distinct places, and use the lemma: each time you add an effective divisor, the dimension either stays the same or increases by at most the degree of the added divisor.
+So start with the zero divisor, use the fact that $\dim_k \mathcal{L}(0) = 1$, and apply the lemma $r$ times.
+This yields a space of dimension at most $1 + \sum \deg p_i = \deg D$.
 :::
 
