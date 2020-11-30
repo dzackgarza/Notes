@@ -157,6 +157,9 @@ So group the $\alpha_i^{-1}$ into
 - $m$ points such that $\alpha_i = \sqrt q$,
 - $n$ points such that $\alpha_i = -\sqrt q$.
 
+So we'd like to show that $m$ and $n$ are both even, so when we're pairing roots with reciprocals these get paired with themselves.
+We know $2k + m + n = 2g$
+
 :::
 
 
