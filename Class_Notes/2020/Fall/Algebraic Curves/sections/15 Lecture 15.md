@@ -57,7 +57,25 @@ Equality will follow from the proof of (d) part 1, since this would imply that $
 :::
 
 :::{.proof title="of b"}
-Our formula $Z(t) = F(t) + G(t)
+Our formula $Z(t) = F(t) + G(t)$ and Schmidt's theorem (showing $\delta = 1$) gives
+\[  
+L(t) = (1-t) (1-qt) F(t) + {h \over q-1} \qty{ q^g t^{2g-2} (1-t) - (1-qt)}
+,\]
+where we've expanded $G$ but not $F$ because it involves various $\ell(D)$ which are difficult to compute. 
+It is some polynomial though, and we can evaluate $L$ at 1 to get $L(1) = h$.
+Thus the class number is the sum of the coefficients!
+:::
+
+:::{.proof title="of c"}
+This follows easily from the functional equation for $Z(t)$, which we already established using the Riemann-Roch theorem:
+\[  
+Z(t) = q^{g-1} t^{2g-2} Z\qty{1\over qt}
+.\]
+We can compute
+\[  
+q^g t^{2g} L\qty{1\over qt} 
+&= q^g t^{2g} \qty{1 - {1\over qt}} 
+.\]
 :::
 
 
