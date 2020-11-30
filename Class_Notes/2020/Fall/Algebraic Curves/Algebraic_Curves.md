@@ -1780,6 +1780,8 @@ After this, we'll be ready for chapter 2: divisors and Riemann-Roch.
 
 # Lecture 8: Riemann-Roch Spaces 
 
+## Setup for the Riemann-Roch Theorem
+
 Setting up for the single most important theorem in the course: the Riemann-Roch theorem.
 We start by motivating this by considering the following property of $K\da k(t)$: for any degree 1[^res_field_reminder]
 place $p \in \Sigma(K/k)$, there exists an $f\in K\units$ such that $(f)_- = p$.
@@ -1811,6 +1813,7 @@ The theorem that will tell us about the existence of rational functions with pol
 
 :::
 
+## The Riemann-Roch Space
 
 :::{.definition title="Riemann-Roch Space of $D$ (Key Definition)"}
 For $D\in \Div K$, the **Riemann-Roch space** of $D$ is defined as 
@@ -1854,6 +1857,8 @@ The Riemann-Roch space here is comprised of rational functions that regular away
 But the order of a pole at infinity is its degree as a polynomial, since the $\infty\dash$adic valuation is the negative degree, so this yields polynomials of degree at most $n$.
 :::
 
+## Working with Divisors
+
 :::{.lemma title="?"}
 For $D\in \Div K$,
 \[  
@@ -1892,6 +1897,7 @@ If you take $D'$ and write it as $D + (f)$ for $f$ a rational function, then $f$
 The moral: $\mathcal{L}(D)$ only depends on the linear equivalence class of $D$.
 :::
 
+
 :::{.exercise title="?"}
 Let $D\in \Div^0 K$ be a degree zero divisor, then TFAE:
 
@@ -1903,6 +1909,9 @@ c. $D$ is principal, i.e. the divisor of a rational function or linearly equival
 :::{.slogan}
 The only way a degree zero divisor can have a nontrivial Riemann-Roch space is if it's linearly equivalent to zero.
 ::: 
+
+
+## Subspaces and Dimension of Riemann-Roch Spaces
 
 :::{.lemma title="?"}
 Let $A \leq B$[^def_from_places]
@@ -2015,7 +2024,9 @@ This is an *equicharacteristic* such field, i.e. the characteristic of the field
 This isn't a fact of the geometry of curves.
 :::
 
-:::{.definition title="?"}
+## Bounds on Dimensions
+
+:::{.definition title="$\ell(D)$: The dimension of a Riemann-Roch space"}
 For $D\in \Div K$, define
 \[  
 \ell(D) \da \dim_k \mathcal{L}(D)
@@ -3132,6 +3143,8 @@ For example, for a hyperelliptic curve, we'll have an explicit defining equation
 
 # Lecture 15: The $L\dash$Polynomial
 
+## Big List of Important Facts 
+
 Recall that we had $Z(t) + F(t) + G(t)$:
 
 \[  
@@ -3183,6 +3196,10 @@ Thus proving that they all have the same absolute value is 99% of the content!
 
 Note that the $\alpha_j$ are reciprocal roots.
 
+## Proofs
+
+### The degree of $L$ and $L(1)$
+
 :::{.proof title="of a"}
 We saw from $Z(t) = F(t) + G(t)$ that $\deg L \leq 2g$.
 Equality will follow from the proof of (d) part 1, since this would imply that $a_{2g} = q^g \neq 0$.
@@ -3197,6 +3214,8 @@ where we've expanded $G$ but not $F$ because it involves various $\ell(D)$ which
 It is some polynomial though, and we can evaluate $L$ at 1 to get $L(1) = h$.
 Thus the class number is the sum of the coefficients!
 :::
+
+### Functional Equation
 
 :::{.proof title="of c"}
 This follows easily from the functional equation for $Z(t)$, which we already established using the Riemann-Roch theorem:
@@ -3213,6 +3232,8 @@ q^g t^{2g} L\qty{1\over qt}
 ,\]
 where we've distributed one $q$ and two $t$s in the first steps.
 :::
+
+### Coefficients $a_j$ for $j=0, 1, 2g$ and Duality
 
 :::{.proof title="of d"}
 Using the functional equation from (c), we can write
@@ -3238,6 +3259,8 @@ From this, we can read off
 - $a_{2g} = a_{2g-0} = q^{g-0}a_0 = a^g$ by taking $j=0$ in [@eq:sym_formula_proofc], and thus $\deg L = 2g$.
 
 :::
+
+### Absolute Values of Roots / RH
 
 :::{.proof title="of e (the most interesting!)"}
 Consider the **reciprocal polynomial** 
@@ -3331,6 +3354,11 @@ L_r(t^r)
 From this we can conclude that $L_r(t) = \prod_{j=1}^{2g} (1- \alpha_j^r t)$, since $t^r$ is just an indeterminate and these are all identities of polynomials.
 :::
 
+## Applications and Corollaries
+
+
+### Counting Rational Points
+
 :::{.corollary title="?"}
 Suppose $K/\fq$ is genus $g\geq 1$ and $L(t) = \prod_{j=1}^{2g}(1- \alpha_j t)$.
 Then for all $r\in \ZZ^{\geq 0}$, we have a nice expression for $N_r$:
@@ -3354,6 +3382,8 @@ We'd really like to compute the coefficients of the $L$ polynomials, since we ca
 But the Galois groups of these polynomials may not be solvable, so the term $\sum \alpha_j^r$ will in general be some symmetric function in the complex roots.
 Note that any symmetric polynomial in the roots is also a symmetric polynomial in the coefficients.
 :::
+
+### Relating Rational Points to Coefficients
 
 :::{.corollary title="?"}
 For $K/\fq$ a function field, define

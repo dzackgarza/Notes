@@ -707,7 +707,14 @@ max-height: 300px;
 </ul></li>
 <li><a href="#lecture-5b-building-places-by-gluing-affine-dedekind-domains-todo">Lecture 5B: Building Places by Gluing Affine Dedekind Domains (TODO)</a></li>
 <li><a href="#lecture-6">Lecture 6</a></li>
-<li><a href="#lecture-8-riemann-roch-spaces">Lecture 8: Riemann-Roch Spaces</a></li>
+<li><a href="#lecture-8-riemann-roch-spaces">Lecture 8: Riemann-Roch Spaces</a>
+<ul>
+<li><a href="#setup-for-the-riemann-roch-theorem">Setup for the Riemann-Roch Theorem</a></li>
+<li><a href="#the-riemann-roch-space">The Riemann-Roch Space</a></li>
+<li><a href="#working-with-divisors">Working with Divisors</a></li>
+<li><a href="#subspaces-and-dimension-of-riemann-roch-spaces">Subspaces and Dimension of Riemann-Roch Spaces</a></li>
+<li><a href="#bounds-on-dimensions">Bounds on Dimensions</a></li>
+</ul></li>
 <li><a href="#lecture-10-todo">Lecture 10 (Todo)</a></li>
 <li><a href="#lecture-11a-weils-proof-of-riemann-roch">Lecture 11A: Weil’s Proof of Riemann-Roch</a></li>
 <li><a href="#lecture-11b-weils-proof-of-riemann-roch-todo">Lecture 11B: Weil’s Proof of Riemann-Roch (TODO)</a></li>
@@ -736,7 +743,22 @@ max-height: 300px;
 <li><a href="#the-functional-equation">The Functional Equation</a></li>
 <li><a href="#the-l-polynomial">The <span class="math inline">\(L\)</span> Polynomial</a></li>
 </ul></li>
-<li><a href="#lecture-15-the-lhbox-polynomial">Lecture 15: The <span class="math inline">\(L{\hbox{-}}\)</span>Polynomial</a></li>
+<li><a href="#lecture-15-the-lhbox-polynomial">Lecture 15: The <span class="math inline">\(L{\hbox{-}}\)</span>Polynomial</a>
+<ul>
+<li><a href="#big-list-of-important-facts">Big List of Important Facts</a></li>
+<li><a href="#proofs">Proofs</a>
+<ul>
+<li><a href="#the-degree-of-l-and-l1">The degree of <span class="math inline">\(L\)</span> and <span class="math inline">\(L(1)\)</span></a></li>
+<li><a href="#functional-equation">Functional Equation</a></li>
+<li><a href="#coefficients-a_j-for-j0-1-2g-and-duality">Coefficients <span class="math inline">\(a_j\)</span> for <span class="math inline">\(j=0, 1, 2g\)</span> and Duality</a></li>
+<li><a href="#absolute-values-of-roots-rh">Absolute Values of Roots / RH</a></li>
+</ul></li>
+<li><a href="#applications-and-corollaries">Applications and Corollaries</a>
+<ul>
+<li><a href="#counting-rational-points">Counting Rational Points</a></li>
+<li><a href="#relating-rational-points-to-coefficients">Relating Rational Points to Coefficients</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
 
@@ -1535,12 +1557,14 @@ max-height: 300px;
 <h1 id="lecture-5b-building-places-by-gluing-affine-dedekind-domains-todo">Lecture 5B: Building Places by Gluing Affine Dedekind Domains (TODO)</h1>
 <h1 id="lecture-6">Lecture 6</h1>
 <h1 id="lecture-8-riemann-roch-spaces">Lecture 8: Riemann-Roch Spaces</h1>
+<h2 id="setup-for-the-riemann-roch-theorem">Setup for the Riemann-Roch Theorem</h2>
 <p>Setting up for the single most important theorem in the course: the Riemann-Roch theorem. We start by motivating this by considering the following property of <span class="math inline">\(K\mathrel{\vcenter{:}}= k(t)\)</span>: for any degree 1<a href="#fn36" class="footnote-ref" id="fnref36" role="doc-noteref"><sup>36</sup></a> place <span class="math inline">\(p \in \Sigma(K/k)\)</span>, there exists an <span class="math inline">\(f\in K^{\times}\)</span> such that <span class="math inline">\((f)_- = p\)</span>. In other words, <span class="math inline">\(f\)</span> is a rational function with a simple pole at the given place, and no other poles. Why? We just know precisely what all of the places are for this function field.</p>
 <p>If <span class="math inline">\(p= \infty\)</span>, we can just take <span class="math inline">\(f(t) = t\)</span>, since any polynomial is regular away from <span class="math inline">\(\infty\)</span> and the valuation is <span class="math inline">\(-\deg(f) = -1\)</span> The other places <span class="math inline">\(p\)</span> correspond to <span class="math inline">\(t-\alpha\)</span> (the uniformizing element) for <span class="math inline">\(\alpha\in k\)</span>, since they correspond to other points on <span class="math inline">\({\mathbb{A}}^1_{/k}\)</span>, and so we can take <span class="math inline">\(f(t) = 1/(t-\alpha)\)</span>. This <span class="math inline">\(f\)</span> is regular at infinity since the degree of the numerator is larger than the degree of the denominator, and the denominator doesn’t vanish at any other place.</p>
 <div class="remark">
 <p>With some thought, it can be found that this is a <em>characteristic</em> property of rational function fields: if <span class="math inline">\(f\in K\)</span>, a one variable function field, and <span class="math inline">\(\deg(d)_- = 1\)</span><a href="#fn37" class="footnote-ref" id="fnref37" role="doc-noteref"><sup>37</sup></a> then the degree of the function is equal to the degree of the divisor of the zeros and the divisor of the poles, and thus the degree of the extension <span class="math inline">\([K: k(t)] = 1\)</span> and thus <span class="math inline">\(K = k(t)\)</span> is rational. So having a rational with a simple pole at only one point <em>only</em> happens in you’re in a rational function field.</p>
 <p>On the other hand, we both wanted and used in our discussion of holomorphy rings the fact that given a nonempty finite subset <span class="math inline">\(S \subset \Sigma(K/k)\)</span>, we want to find a rational function <span class="math inline">\(f\in K^{\times}\)</span> has poles at all of the points in <span class="math inline">\(S\)</span>, so <span class="math inline">\({\operatorname{supp}}(f)_- = S\)</span>. Better yet, we’d like a bound on the degree of any such <span class="math inline">\(f\)</span>, i.e. the orders of all of these poles. If <span class="math inline">\(S\)</span> is a single place, unless the function field is rational, we can’t require the function to have a pole of degree 1 at that point. But can it admit a pole of degree at most 10, for example? This is what motivates the Riemann-Roch spaces and the Riemann-Roch theorem. If you’re trying to give a quantitative bound on how high of an order of a pole you have to allow in order to have a rational function, this comes from a key invariant called the <em>genus</em> of the function field. The theorem that will tell us about the existence of rational functions with poles of prescribed degrees in terms of the genus is precisely the Riemann-Roch theorem, so that’s where we are headed.</p>
 </div>
+<h2 id="the-riemann-roch-space">The Riemann-Roch Space</h2>
 <div class="definition" title="Riemann-Roch Space of $D$ (Key Definition)">
 <p>For <span class="math inline">\(D\in \operatorname{Div}K\)</span>, the <strong>Riemann-Roch space</strong> of <span class="math inline">\(D\)</span> is defined as <span class="math display">\[\begin{align*}   \mathcal{L}(D) \mathrel{\vcenter{:}}=\left\{{ f\in K^{\times}~{\text{s.t.}}~(t) \geq - D}\right\} \cup\left\{{0}\right\} .\end{align*}\]</span></p>
 </div>
@@ -1559,6 +1583,7 @@ max-height: 300px;
 <div class="remark">
 <p>Note that <span class="math inline">\(\infty\)</span> is a degree 1 place, and multiplying it by <span class="math inline">\(n\)</span> yields an effective divisor. The Riemann-Roch space here is comprised of rational functions that regular away from <span class="math inline">\(\infty\)</span>, which are polynomials, whose pole at <span class="math inline">\(\infty\)</span> has order at worst <span class="math inline">\(n\)</span>. But the order of a pole at infinity is its degree as a polynomial, since the <span class="math inline">\(\infty{\hbox{-}}\)</span>adic valuation is the negative degree, so this yields polynomials of degree at most <span class="math inline">\(n\)</span>.</p>
 </div>
+<h2 id="working-with-divisors">Working with Divisors</h2>
 <div class="lemma" title="?">
 <p>For <span class="math inline">\(D\in \operatorname{Div}K\)</span>, <span class="math display">\[\begin{align*}   \mathcal{L}(D) \neq \left\{{0}\right\} \iff 0 \text{ is equivalent to an effective divisor} .\end{align*}\]</span></p>
 </div>
@@ -1589,6 +1614,7 @@ max-height: 300px;
 <div class="slogan">
 <p>The only way a degree zero divisor can have a nontrivial Riemann-Roch space is if it’s linearly equivalent to zero.</p>
 </div>
+<h2 id="subspaces-and-dimension-of-riemann-roch-spaces">Subspaces and Dimension of Riemann-Roch Spaces</h2>
 <div class="lemma" title="?">
 <p>Let <span class="math inline">\(A \leq B\)</span><a href="#fn39" class="footnote-ref" id="fnref39" role="doc-noteref"><sup>39</sup></a> in <span class="math inline">\(\operatorname{Div}K\)</span>, then</p>
 <ol type="a">
@@ -1626,7 +1652,8 @@ max-height: 300px;
 <div class="fact">
 <p>For <span class="math inline">\(p\in \Sigma(K/k)\)</span> with residue field <span class="math inline">\(k_p\)</span> and <span class="math inline">\([k_p: k] = d\)</span>, defining <span class="math inline">\(K_p\)</span> as the completion of <span class="math inline">\(K\)</span> with respect to <span class="math inline">\({\left\lvert {{\,\cdot\,}} \right\rvert}_p\)</span>, there is an isomorphism <span class="math inline">\(K_p \cong k_p((t))\)</span>, a formal Laurent series field. One issue is that if <span class="math inline">\(d =1\)</span> then <span class="math inline">\(k \subset k_p\)</span>, but not for general <span class="math inline">\(d\geq 2\)</span>. However, taking the completion results in <span class="math inline">\(k \subset K_p\)</span> again. This shouldn’t be too surprising from the perspective of local fields in NTII. There is a structure theory of complete discretely valued fields. This is an <em>equicharacteristic</em> such field, i.e. the characteristic of the field agrees with that of the residue field, and all equicharacteristic discretely valued fields will be isomorphic to a ring of formal Laurent series. This isn’t a fact of the geometry of curves.</p>
 </div>
-<div class="definition" title="?">
+<h2 id="bounds-on-dimensions">Bounds on Dimensions</h2>
+<div class="definition" title="$\ell(D)$: The dimension of a Riemann-Roch space">
 <p>For <span class="math inline">\(D\in \operatorname{Div}K\)</span>, define <span class="math display">\[\begin{align*}   \ell(D) \mathrel{\vcenter{:}}=\dim_k \mathcal{L}(D) .\end{align*}\]</span></p>
 </div>
 <div class="exercise" title="?">
@@ -2013,6 +2040,7 @@ max-height: 300px;
 </div>
 <p>It will turn out that computing the number of rational points over <span class="math inline">\({\mathbb{F}}_{q}, {\mathbb{F}}_{q^2}, \cdots, {\mathbb{F}}_{q^g}\)</span> will be possible. For example, for a hyperelliptic curve, we’ll have an explicit defining equation and can make an explicit point count, and you only need <span class="math inline">\(g\)</span> of them.</p>
 <h1 id="lecture-15-the-lhbox-polynomial">Lecture 15: The <span class="math inline">\(L{\hbox{-}}\)</span>Polynomial</h1>
+<h2 id="big-list-of-important-facts">Big List of Important Facts</h2>
 <p>Recall that we had <span class="math inline">\(Z(t) + F(t) + G(t)\)</span>:</p>
 <p><span class="math display">\[\begin{align*}   (q-1) F(t)  &amp;= \sum_{0 \leq \deg C \leq 2g-2 } q^{\ell(C)} t^{\deg(C)} \\ (q-1)G(t) &amp;= h \qty{ {q^g t^{2g-1} \over 1-qt} - {1 \over 1-t} } .\end{align*}\]</span></p>
 <p>Note that <span class="math inline">\(F(t)\)</span> is a polynomial of degree at most <span class="math inline">\(2g-2\)</span>, and clearing denominators in <span class="math inline">\(G(t)\)</span> yields a polynomial of degree at most <span class="math inline">\(2g\)</span></p>
@@ -2040,15 +2068,19 @@ max-height: 300px;
 </ol>
 </div>
 <p>Note that the <span class="math inline">\(\alpha_j\)</span> are reciprocal roots.</p>
+<h2 id="proofs">Proofs</h2>
+<h3 id="the-degree-of-l-and-l1">The degree of <span class="math inline">\(L\)</span> and <span class="math inline">\(L(1)\)</span></h3>
 <div class="proof" title="of a">
 <p>We saw from <span class="math inline">\(Z(t) = F(t) + G(t)\)</span> that <span class="math inline">\(\deg L \leq 2g\)</span>. Equality will follow from the proof of (d) part 1, since this would imply that <span class="math inline">\(a_{2g} = q^g \neq 0\)</span>.</p>
 </div>
 <div class="proof" title="of b">
 <p>Our formula <span class="math inline">\(Z(t) = F(t) + G(t)\)</span> and Schmidt’s theorem (showing <span class="math inline">\(\delta = 1\)</span>) gives <span class="math display">\[\begin{align*}   L(t) = (1-t) (1-qt) F(t) + {h \over q-1} \qty{ q^g t^{2g-2} (1-t) - (1-qt)} ,\end{align*}\]</span> where we’ve expanded <span class="math inline">\(G\)</span> but not <span class="math inline">\(F\)</span> because it involves various <span class="math inline">\(\ell(D)\)</span> which are difficult to compute. It is some polynomial though, and we can evaluate <span class="math inline">\(L\)</span> at 1 to get <span class="math inline">\(L(1) = h\)</span>. Thus the class number is the sum of the coefficients!</p>
 </div>
+<h3 id="functional-equation">Functional Equation</h3>
 <div class="proof" title="of c">
 <p>This follows easily from the functional equation for <span class="math inline">\(Z(t)\)</span>, which we already established using the Riemann-Roch theorem: <span class="math display">\[\begin{align*}   Z(t) = q^{g-1} t^{2g-2} Z\qty{1\over qt} .\end{align*}\]</span> We can compute <span class="math display">\[\begin{align*}   q^g t^{2g} L\qty{1\over qt}  &amp;= q^g t^{2g} \qty{1 - {1\over qt}} \qty{1 - {1\over t}} Z\qty{1\over qt} \\ &amp;= q^{g-1} t^{2g-2} (1-t) (1-qt) Z\qty{1\over qt} \\ &amp;= (1-t) (1-qt) Z(t) \\ &amp;\mathrel{\vcenter{:}}= L(t) ,\end{align*}\]</span> where we’ve distributed one <span class="math inline">\(q\)</span> and two <span class="math inline">\(t\)</span>s in the first steps.</p>
 </div>
+<h3 id="coefficients-a_j-for-j0-1-2g-and-duality">Coefficients <span class="math inline">\(a_j\)</span> for <span class="math inline">\(j=0, 1, 2g\)</span> and Duality</h3>
 <div class="proof" title="of d">
 <p>Using the functional equation from (c), we can write <span class="math display">\[\begin{align*}   L(t) = q^g t^{2g}  L\qty{1\over qt} = \qty{a_{2g} \over q^g} + \qty{a_{2g-1} \over q^{g-1}}t + \cdots +  \qty{a_0 q^g} t^{2g} ,\end{align*}\]</span> where we’re correcting by enough in <span class="math inline">\(t\)</span> but not enough in <span class="math inline">\(q\)</span> and seeing what we get. Equating coefficients, for <span class="math inline">\(0\leq j \leq g\)</span> we have <span class="math display">\[\begin{align*}   a_{2g-j} = q^{g-j} a_j .\end{align*}\]</span>{#eq:sym_formula_proofc} Using the fact that <span class="math inline">\(A_0\)</span> is the number of effective degree zero divisors, which is only zero, we have <span class="math inline">\(A_0 = 1\)</span> and we can multiply formal power series to obtain <span class="math display">\[\begin{align*}   L(t) = a_0 + a_1 t + \cdots + a_{2g} t^{2g}  &amp;= (1-t)(1-qt) \sum_{n=0}^\infty A_n t^n \\ &amp;= \qty{ 1 - (q+1)t + qt^2 }(1 + A_1 t + A_2 t^2 + \cdots)\\ &amp;= 1 + \qty{A_1 - (q+1) }t + \cdots .\end{align*}\]</span> From this, we can read off</p>
 <ul>
@@ -2057,6 +2089,7 @@ max-height: 300px;
 <li><span class="math inline">\(a_{2g} = a_{2g-0} = q^{g-0}a_0 = a^g\)</span> by taking <span class="math inline">\(j=0\)</span> in eq. <strong>¿eq:sym_formula_proofc?</strong>, and thus <span class="math inline">\(\deg L = 2g\)</span>.</li>
 </ul>
 </div>
+<h3 id="absolute-values-of-roots-rh">Absolute Values of Roots / RH</h3>
 <div class="proof" title="of e (the most interesting!)">
 <p>Consider the <strong>reciprocal polynomial</strong> <span class="math display">\[\begin{align*}   L^\perp(t) \mathrel{\vcenter{:}}= t^{2g} L\qty{1\over t} = t^{2g} + a_1 t^{2g-1} + \cdots + q^g .\end{align*}\]</span> The original polynomial had <span class="math inline">\({\mathbb{Z}}\)</span> coefficients and constant term 1, so this polynomial is monic and has a nonzero constant term. Thus its roots are patently nonzero algebraic integers in <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu^{\bullet}\)</span>. If <span class="math inline">\(L^\perp(t) = \prod_{j=1}^{2g} (t-\alpha_j)\)</span>, then <span class="math display">\[\begin{align*}   L(t) = t^{2g} L^\perp\qty{1\over t} = \prod_{j=1}^{2g} (1 - \alpha_j t) \end{align*}\]</span> and if the roots of <span class="math inline">\(L(t)\)</span> are <span class="math inline">\(r_j\)</span>, then the roots of <span class="math inline">\(L^\perp(t)\)</span> are the reciprocal roots <span class="math inline">\(1/r_j\)</span> and vice-versa. This shows the first assertion that <span class="math inline">\(r_j \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)</span> as well.</p>
 <p>The most interesting part is what follows. Making the substitution <span class="math inline">\(t=qu\)</span> and using (c) we get <span class="math display">\[\begin{align*}   L^\perp(t) &amp;= \prod_{j=1}^{2g} (t- \alpha_j) \\ &amp;\mathrel{\vcenter{:}}= t^{2g} L\qty{1\over t} \\ &amp;= q^{2g} u^{2g} L\qty{1\over qu} &amp;&amp; \text{by (c)} .\end{align*}\]</span></p>
@@ -2074,6 +2107,8 @@ max-height: 300px;
 <p>where we’ve used that <span class="math display">\[\begin{align*}   \prod_{\xi \in \mu_r} {1\over 1 - \xi t} &amp;= 1-t^r \\ \prod_{\xi \in \mu_r} {1\over 1 - q\xi t} &amp;= 1-q^rt^r \\ \end{align*}\]</span> which leads to all of the denominators canceling. We can then expand <span class="math inline">\(L_r(t^r)\)</span> as a product to compute <span class="math display">\[\begin{align*}   L_r(t^r)  &amp;= \prod_{\xi \in \mu_r} L(\xi t) \\ &amp;= \prod_{\xi\in \mu_r} \prod_{j=1}^{2g} (1- \alpha_j qt) \\ &amp;= \prod_{j=1}^{2g} \prod_{\xi\in \mu_r} (1- \alpha_j qt)  &amp;&amp; \text{since these are finite products}\\ &amp;= \prod_{j=1}^{2g} (1 - \alpha_j^r t^r) .\end{align*}\]</span></p>
 <p>From this we can conclude that <span class="math inline">\(L_r(t) = \prod_{j=1}^{2g} (1- \alpha_j^r t)\)</span>, since <span class="math inline">\(t^r\)</span> is just an indeterminate and these are all identities of polynomials.</p>
 </div>
+<h2 id="applications-and-corollaries">Applications and Corollaries</h2>
+<h3 id="counting-rational-points">Counting Rational Points</h3>
 <div class="corollary" title="?">
 <p>Suppose <span class="math inline">\(K/{\mathbb{F}_{q}}\)</span> is genus <span class="math inline">\(g\geq 1\)</span> and <span class="math inline">\(L(t) = \prod_{j=1}^{2g}(1- \alpha_j t)\)</span>. Then for all <span class="math inline">\(r\in {\mathbb{Z}}^{\geq 0}\)</span>, we have a nice expression for <span class="math inline">\(N_r\)</span>: <span class="math display">\[\begin{align*}   N_r \mathrel{\vcenter{:}}={\left\lvert {\Sigma_1(K_r/{\mathbb{F}_{q^r}})} \right\rvert} = q^r + 1 - \sum_{j=1}^{2g} \alpha_j^r .\end{align*}\]</span></p>
 </div>
@@ -2083,6 +2118,7 @@ max-height: 300px;
 <div class="remark">
 <p>We’d really like to compute the coefficients of the <span class="math inline">\(L\)</span> polynomials, since we can solve a polynomial equation to get the roots. But the Galois groups of these polynomials may not be solvable, so the term <span class="math inline">\(\sum \alpha_j^r\)</span> will in general be some symmetric function in the complex roots. Note that any symmetric polynomial in the roots is also a symmetric polynomial in the coefficients.</p>
 </div>
+<h3 id="relating-rational-points-to-coefficients">Relating Rational Points to Coefficients</h3>
 <div class="corollary" title="?">
 <p>For <span class="math inline">\(K/{\mathbb{F}_{q}}\)</span> a function field, define <span class="math display">\[\begin{align*}   S_r \mathrel{\vcenter{:}}= N_r - (q^r + 1) = - \sum_{j=1}^{2g} \alpha_j^r .\end{align*}\]</span> Note that <span class="math inline">\(N_r = {\left\lvert {\Sigma(K_r/{\mathbb{F}_{q^r}})} \right\rvert}\)</span> is the number of <span class="math inline">\({\mathbb{F}_{q^r}}{\hbox{-}}\)</span>rational point. Then</p>
 <ol type="a">
