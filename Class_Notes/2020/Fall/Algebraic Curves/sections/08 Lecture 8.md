@@ -42,6 +42,7 @@ For $D\in \Div K$, the **Riemann-Roch space** of $D$ is defined as
 
 :::{.remark}
 This will turn out to be a $k\dash$vector space, and is a sub $k\dash$vector space of $K$.
+One of the first things we'll prove is that it's always finite dimensional.
 This is only interesting when $D$ is linearly equivalent to an effective divisor, so we should think of $D$ as having a nonnegative degree, and in fact itself being an effective divisor.
 So this is the space of rational functions that have prescribes poles of a prescribed order.
 :::
@@ -57,6 +58,25 @@ If $D$ is not linearly equivalent to an effective divisor, this is just the zero
 
 :::{.exercise title="?"}
 Let $K = k(t)$ and $n\in \ZZ^{\geq 0}$.
-Show that $L(n\infty) = \ts{f\in k[t] \st \deg f \leq n}$, and in particular is a $k\dash$vector space of dimension $n+1$.
+Show that $L(n\infty) = \ts{f\in k[t] \st \deg f \leq n}$, and in particular is a $k\dash$vector space of dimension $n+1$.[^infty_as_a_place]
+
+[^infty_as_a_place]: Recall that $\infty$ is the $1/t\dash$adic place.
+
 :::
+
+:::{.remark}
+Note that $\infty$ is a degree 1 place, and multiplying it by $n$ yields an effective divisor.
+The Riemann-Roch space here is comprised of rational functions that regular away from $\infty$, which are polynomials, whose pole at $\infty$ has order at worst $n$.
+But the order of a pole at infinity is its degree as a polynomial, since the $\infty\dash$adic valuation is the negative degree, so this yields polynomials of degree at most $n$.
+:::
+
+:::{.lemma title="?"}
+For $D\in \Div K$,
+\[  
+\mathcal{L}(D) \neq \ts{0} \iff 0 \text{is}
+.\]
+:::
+
+
+
 
