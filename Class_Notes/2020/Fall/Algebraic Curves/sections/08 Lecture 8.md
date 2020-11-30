@@ -175,6 +175,17 @@ If you go from a divisor to adding a single degree 1 place, this lemma says that
 
 :::{.proof title="of lemma, part (b)"}
 From the previous argument, we see that it's enough to do this one place at a time.
-So we can easily reduce to the case $B = A + P$ for $P$ some place of degree not necessarily equal to 1.
+So we can easily reduce to the case $B = A + P$ for $P$ some place of degree not necessarily equal to 1 (since we're not assuming $k=\bar k$), using that fact that $B \geq A$.
+So choose an element $t\in K$ such that 
+\[  
+v_p(t) = v_p(B) = v_p(A) + 1
+.\]
+For $f\in \mathcal{L}(B)$, we have [^valuation_note]
 
+\[  
+v_p(f) \geq -v_p(B) = -v_p(t)
+.\]
+
+
+[^valuation_note]: Note that $v_p$ is the $p\dash$adic valuation, i.e. the coefficient of $P$ in the divisor.
 :::
