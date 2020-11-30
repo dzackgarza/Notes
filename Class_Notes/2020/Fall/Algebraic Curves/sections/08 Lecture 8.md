@@ -102,12 +102,22 @@ We would like this space to have $k\dash$dimension 1, so we impose $\kappa(K) = 
 a. Show that for all $D$, $\mathcal{L}(D) \in \Vect_k$.
 b. 
 \[  
-D\sim D' \implies \mathcal{L}
+D\sim D' \implies \mathcal{L}(D) \cong_{\Vect_k} \mathcal{L}(D')
 .\]
 :::
 
 :::{.remark}
 You can frame the above as taking rational functions with poles of certain orders, and analyzing the orders of poles of their sums.
+If you take $D'$ and write it as $D + (f)$ for $f$ a rational function, then $f$ should produce this isomorphism.
+The moral: $\mathcal{L}(D)$ only depends on the linear equivalence class of $D$.
+:::
+
+:::{.exercise title="?"}
+Let $D\in \Div^0 K$ be a degree zero divisor, then TFAE:
+
+a. $\dim \mathcal{L}(D) \geq 1$
+b. $\dim \mathcal{L}(D) = 1$,
+c. $D$ is principal, i.e. the divisor of a rational function or linearly equivalent to zero.
 :::
 
 
