@@ -231,5 +231,8 @@ One issue is that if $d =1$ then $k \subset k_p$, but not for general $d\geq 2$.
 However, taking the completion results in $k \subset K_p$ again.
 This shouldn't be too surprising from the perspective of local fields in NTII.
 There is a structure theory of complete discretely valued fields.
-This is an *equicharacteristic* such field, i.e. the characteristic of the field agrees with that of the residue field, and all equicharacteristic discretely valued fields will 
+This is an *equicharacteristic* such field, i.e. the characteristic of the field agrees with that of the residue field, and all equicharacteristic discretely valued fields will be isomorphic to a ring of formal Laurent series.
+This isn't a fact of the geometry of curves.
 :::
+
+
