@@ -278,7 +278,8 @@ This is what happens at the finite places.
 To handle the place at $\infty$, there is a recipe for the degree of the polynomial in terms of the coefficients.
 So for any hyperelliptic function field (and in particular, for any elliptic function field) we have a concrete algorithm for computing their zeta functions.
 Note that this is not necessarily a *good* algorithm: it still involves plugging in many values and checking if things are squares in finite values.
+It seems that most people who compute a lot of zeta functions mostly focus on hyperelliptic function fields.
 
-How are you going to compute zeta fun
+How are you going to compute zeta functions 
 ::: 
 
