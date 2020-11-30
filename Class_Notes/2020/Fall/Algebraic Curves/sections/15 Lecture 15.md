@@ -228,6 +228,7 @@ For $K/\fq$ a function field, define
 \[  
 S_r \da N_r - (q^r + 1) = - \sum_{j=1}^{2g} \alpha_j^r
 .\]
+Note that $S_r = \abs{\Sigma(K_r/\fqr)}$ is the number of $\fqr\dash$rational point.
 Then
 
 a. $L'(t)/L(t) = \sum_{r=1}^\infty S_r t^{r-1}$.
