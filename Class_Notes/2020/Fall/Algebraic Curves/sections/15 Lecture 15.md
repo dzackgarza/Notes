@@ -177,8 +177,16 @@ Write
 L_r(t^r) 
 &= (1-t^r) (1-q^r t^r) Z_r(t^r) \\
 &= (1-t^r) (1-q^r t^r) \prod_{\xi \in \mu_r} Z(\xi t) \\
-&= (1-t^r) (1-q^r t^r) \prod_{\xi \in \mu_r} {L(\xi t) \over (1-\xi t)(1-q\xi t) } 
+&= (1-t^r) (1-q^r t^r) \prod_{\xi \in \mu_r} {L(\xi t) \over (1-\xi t)(1-q\xi t) } \\
+&= \prod_{\xi \in \mu_r} L(\xi t) 
+,\]
+
+where we've used that
+\[  
+\prod_{\xi \in \mu_r} {1\over 1 - \xi t} &= 1-t^r \\
+\prod_{\xi \in \mu_r} {1\over 1 - q\xi t} &= 1-q^rt^r \\
 .\]
+
 :::
 
 
