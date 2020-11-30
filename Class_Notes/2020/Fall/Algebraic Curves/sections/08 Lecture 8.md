@@ -229,4 +229,5 @@ where we can conclude that the indicated injection exists, and thus
 For $p\in \Sigma(K/k)$ with residue field $k_p$ and $[k_p: k] = d$, defining $K_p$ as the completion of $K$ with respect to $\abs{\wait}_p$, there is an isomorphism $K_p \cong k_p((t))$, a formal Laurent series field.
 One issue is that if $d =1$ then $k \subset k_p$, but not for general $d\geq 2$.
 However, taking the completion results in $k \subset K_p$ again.
+This shouldn't be too surprising from the perspective of local fields in NTII.
 :::
