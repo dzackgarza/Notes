@@ -171,7 +171,14 @@ This forces $n$ to be even, and since $m = 2g-2k-n$, $m$ must be even as well.
 :::
 
 :::{.proof title="of f"}
-
+We used Dirichlet's character-style decomposition of $Z(t)$ in Schmidt's theorem, and we'll use it again here.
+Write 
+\[  
+L_r(t^r) 
+&= (1-t^r) (1-q^r t^r) Z_r(t^r) \\
+&= (1-t^r) (1-q^r t^r) Z_r(t^r) \\
+&=
+.\]
 :::
 
 
