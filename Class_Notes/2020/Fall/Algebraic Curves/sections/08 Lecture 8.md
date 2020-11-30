@@ -185,8 +185,8 @@ For $f\in \mathcal{L}(B)$, we have by definition[^valuation_note]
 \[  
 v_p(f) \geq -v_p(B) = -v_p(t)
 ,\]
-
-and so $ft\in R_p$.
+and so by bringing $t$ to the other side we get $v_p(ft) \geq 0$ 
+and thus $ft\in R_p$ (the corresponding local ring).
 
 
 
