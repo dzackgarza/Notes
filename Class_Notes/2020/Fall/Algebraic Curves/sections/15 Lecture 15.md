@@ -1,5 +1,6 @@
 # Lecture 15: The $L\dash$Polynomial
 
+## 
 Recall that we had $Z(t) + F(t) + G(t)$:
 
 \[  
