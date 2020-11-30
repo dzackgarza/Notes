@@ -114,7 +114,14 @@ L\perp(t) \da t^{2g} L\qty{1\over t}
 = t^{2g} + a_1 t^{2g-1} + \cdots + q^g
 .\]
 The original polynomial had $\ZZ$ coefficients and constant term 1, so this polynomial is monic and has a nonzero constant term.
-Thus its roots are 
+Thus its roots are patently nonzero algebraic integers in $\bar{\ZZ}\nonzero$.
+If $L\perp(t) = \prod_{j=1}^{2g} (t-\alpha_j)$, then 
+\[  
+L(t) = t^{2g} L\perp\qty{1\over t} = \prod_{j=1}^{2g} (1 - \alpha_j t)
+\]
+and if the roots of $L(t)$ are $r_j$, then the roots of $L\perp(t)$ are the reciprocal roots $1/r_j$ and vice-versa.
+This shows the first assertion that $r_j \in \bar{\ZZ}$ as well.
+
 :::
 
 
