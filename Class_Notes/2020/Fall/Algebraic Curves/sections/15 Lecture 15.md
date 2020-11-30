@@ -168,7 +168,6 @@ q^g
 &= (-1)^n q^g
 .\]
 This forces $n$ to be even,
-
 :::
 
 
