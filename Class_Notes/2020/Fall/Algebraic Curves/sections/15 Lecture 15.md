@@ -247,7 +247,11 @@ Similarly, if you have all of the coefficients for a $Z$ polynomial, you can sol
 :::
 
 :::{.proof title="of a"}
-Logarithmically differentiating 
+Logarithmically differentiating both sides of $L(t) = \prod_{j=1}^{2g} (1-\alpha_j t)$ yields
+\[  
+{L'(t)  \over L(t) } 
+
+.\]
 :::
 
 
