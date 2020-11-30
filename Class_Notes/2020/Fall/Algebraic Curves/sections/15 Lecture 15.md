@@ -250,7 +250,8 @@ Similarly, if you have all of the coefficients for a $Z$ polynomial, you can sol
 Logarithmically differentiating both sides of $L(t) = \prod_{j=1}^{2g} (1-\alpha_j t)$ yields
 \[  
 {L'(t)  \over L(t) } 
-
+&= \sum_{j=1}^{2g} {-\alpha_j \over a -\alpha_j t} \\
+&= \sum_{j=1}^{2g} (-\)
 .\]
 :::
 
