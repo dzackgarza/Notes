@@ -230,4 +230,6 @@ For $p\in \Sigma(K/k)$ with residue field $k_p$ and $[k_p: k] = d$, defining $K_
 One issue is that if $d =1$ then $k \subset k_p$, but not for general $d\geq 2$.
 However, taking the completion results in $k \subset K_p$ again.
 This shouldn't be too surprising from the perspective of local fields in NTII.
+There is a structure theory of complete discretely valued fields.
+This is an *equicharacteristic*
 :::
