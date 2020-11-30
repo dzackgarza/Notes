@@ -45,3 +45,18 @@ This will turn out to be a $k\dash$vector space, and is a sub $k\dash$vector spa
 This is only interesting when $D$ is linearly equivalent to an effective divisor, so we should think of $D$ as having a nonnegative degree, and in fact itself being an effective divisor.
 So this is the space of rational functions that have prescribes poles of a prescribed order.
 :::
+
+:::{.question}
+Does $\mathcal{L}(D)$ contain any rational functions other than zero?
+:::
+
+:::{.answer}
+For any nonzero $f\in \mathcal{L}(D)\nonzero$, the divisor $D + (f)$ is effective, since $(f) \geq -D$, and also linearly equivalent to $D$.
+If $D$ is not linearly equivalent to an effective divisor, this is just the zero vector space.
+:::
+
+:::{.exercise title="?"}
+Let $K = k(t)$ and $n\in \ZZ^{\geq 0}$.
+Show that $L(n\infty) = \ts{f\in k[t] \st \deg f \leq n}$, and in particular is a $k\dash$vector space of dimension $n+1$.
+:::
+
