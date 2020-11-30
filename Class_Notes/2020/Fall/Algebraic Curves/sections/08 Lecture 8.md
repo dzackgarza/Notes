@@ -164,3 +164,13 @@ So start with the zero divisor, use the fact that $\dim_k \mathcal{L}(0) = 1$, a
 This yields a space of dimension at most $1 + \sum \deg p_i = \deg D$.
 :::
 
+:::{.proof title="of lemma, part (a)"}
+If $A\leq B$ and $f\in \mathcal{L}(A)$, then $(f) \geq - A$.
+Since $-A \geq -B$, we have $(f) \geq -A \geq -B$, so $f\in \mathcal{L}(B)$.
+:::
+
+
+For the next part, it's perhaps easiest to consider the case $k = \bar k$ so everything has degree 1.
+If you go from a divisor to adding a single degree 1 place, this lemma says that if you increase your Riemann-Roch space by either allowing 
+:::{.proof title="of lemma, part (b)"}
+:::
