@@ -254,5 +254,16 @@ If $D\in  \Div k(t)$, show that
 :::
 
 :::{.remark}
-Recall that in a rational function field, every degree zero divisor is principal, 
+Recall that in a rational function field, every degree zero divisor is principal, and if you adjust by a principal divisor, you don't change $\ell(D)$.
+This means that in any rational function field, any two divisors of the same degree are going to be linearly equivalent, and thus $\ell(D)$ will only depend on $\deg D$.
+So rational function fields are much simpler than the fully general case.
+:::
+
+:::{.problem title="The Riemann-Roch Problem"}
+Give good upper and lower bounds on $\ell(D)$ and especially $\ell(nD)$ as a function of $n$.
+:::
+
+:::{.remark}
+The stronger version of knowing $\ell(D)$ in all cases is unsolvable.
+The last corollary 
 :::
