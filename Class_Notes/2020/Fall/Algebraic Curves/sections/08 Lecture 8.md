@@ -199,11 +199,29 @@ So the kernel is all elements such that multiplying by $t$ and taking the valuat
 \ker \psi = \ts{f\in \mathcal{L}(B) \st v_p(f) \geq -v_p(t) + 1 = -v_p(A)} = \mathcal{L}(A)
 ,\]
 which follows since $B$ and $A$ only differ at $P$, since $B = A+P$, so the divisors $A, B$ have the same coefficient at every other place.
-So we have a SES of vector spaces
+We thus have the following diagram:
+
+\begin{tikzcd}
+	{0} & {\mathcal{L}(A)} & {\mathcal{L}(B)} & {\mathcal{L}(B)/\mathcal{L}(A)} & {0} \\
+	\\
+	{} & {} & {} & k(P) = {R_p / \mathfrak{m}_p} & {\cdots}
+	\arrow[from=1-1, to=1-2, hook]
+	\arrow[from=1-2, to=1-3, hook]
+	\arrow[from=1-3, to=1-4, two heads]
+	\arrow[from=1-4, to=1-5, two heads]
+  \arrow[from=1-4, to=3-4, dotted, hook, "\exists \iota"]
+	\arrow[from=1-2, to=3-4, "\psi"]
+  \arrow[from=3-4, to=3-5]
+\end{tikzcd}
+[Link to diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIlxcbWF0aGNhbHtMfShBKSJdLFsyLDAsIlxcbWF0aGNhbHtMfShCKSJdLFszLDAsIlxcbWF0aGNhbHtMfShCKS9cXG1hdGhjYWx7TH0oQSkiXSxbNCwwLCIwIl0sWzAsMiwiMCJdLFsxLDIsIlxcbWF0aGNhbHtMfShBKSJdLFsyLDIsIlxcbWF0aGNhbHtMfShCKSJdLFszLDIsIlJfcCAvIFxcbWF0aGZyYWt7bX1fcCJdLFs0LDIsIlxcY2RvdHMiXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzMsNCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzEsNiwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDcsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMyw4LCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9LCJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbMCw1LCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzYsNywiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNyw4XSxbNSw2LCIiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFs4LDldXQ==)
+
+where we can conclude that the indicated injection exists, and thus 
 \[  
-0 \to \mathcal{L}(A) \injects \mathcal{L}(B) \surjects R_p / \mathfrak{m}_p \to 0
+\dim \mathcal{L}(B) / \mathcal{L}(A) \leq [k(p) : k] = \deg P
 .\]
 
 [^valuation_note]: Note that $v_p$ is the $p\dash$adic valuation, i.e. the coefficient of $P$ in the divisor as a formal linear combination of points.
 
 :::
+
+
