@@ -74,7 +74,22 @@ Z(t) = q^{g-1} t^{2g-2} Z\qty{1\over qt}
 We can compute
 \[  
 q^g t^{2g} L\qty{1\over qt} 
-&= q^g t^{2g} \qty{1 - {1\over qt}} 
+&= q^g t^{2g} \qty{1 - {1\over qt}} \qty{1 - {1\over t}} Z\qty{1\over qt} \\
+&= q^{g-1} t^{2g-2} (1-t) (1-qt) Z\qty{1\over qt} \\
+&= (1-t) (1-qt) Z(t) \\
+&\da L(t)
+,\]
+where we've distributed one $q$ and two $t$s in the first steps.
+:::
+
+:::{.proof title="of d"}
+Using $c$, we can write
+\[  
+L(t) = q^g t^{2g}  L\qty{1\over qt} = \qty{a_{2g} \over q^g} + \qty{a_{2g-1} \over q^{g-1}}t + \cdots +  \qty{a_0 q^g} t^{2g}
+.\]
+Thus for $0\leq j \leq g$ we have
+\[  
+
 .\]
 :::
 
