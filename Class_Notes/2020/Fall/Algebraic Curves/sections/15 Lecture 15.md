@@ -149,6 +149,7 @@ I.e., this multiset is stable under the involution
 \CC\units &\to \CC\units \\
 z &\mapsto {q\over z}
 .\]
+This almost pairs up the elements of 
 
 :::
 
