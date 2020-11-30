@@ -1,0 +1,1136 @@
+\input{"/home/zack/Notes/Latex/preamble.tex"}
+
+
+\let\Begin\begin
+\let\End\end
+\newcommand\wrapenv[1]{#1}
+
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+\title{
+\textbf{
+    Problem Set 3
+  }
+  }
+
+
+
+
+
+
+
+\begin{document}
+
+\date{}
+\author{D. Zack Garza}
+\maketitle
+
+\tableofcontents
+\newpage
+
+
+\begin{quote}
+Source:
+\href{https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019-c1.pdf}{Section
+1 of Gathmann}
+\end{quote}
+
+\hypertarget{exercises}{%
+\section{Exercises}\label{exercises}}
+
+\begin{exercise}[Gathmann 1.19]
+
+Prove that every affine variety \(X\subset \AA^n/k\) consisting of only
+finitely many points can be written as the zero locus of \(n\)
+polynomials.
+
+\begin{quote}
+Hint: Use interpolation. It is useful to assume at first that all points
+in \(X\) have different \(x_1\dash\)coordinates.
+\end{quote}
+
+\end{exercise}
+
+\begin{solution}
+
+Let
+\(X = \ts{\vector p_1, \cdots, \vector p_d} =\ts{\vector p_j}_{j=1}^d\),
+where each \(\vector p_j\in \AA^n\) can be written in coordinates
+\begin{align*}\vector p_j \da \thevector{p_j^1, p_j^2, \cdots, p_j^n}.\end{align*}
+
+\begin{remark}
+
+Proof idea: for some fixed \(k\) with \(2\leq k \leq n\), consider the
+pairs \((p_j^1, p_j^k) \in \AA^2\). Letting \(j\) range over
+\(1\leq j \leq d\) yields \(d\) points of the form \((x, y) \in \AA^2\),
+so construct an interpolating polynomial such that \(f(x) = y\) for each
+tuple. Then \(f(x) - y\) vanishes at every such tuple.
+
+\hfill\break
+
+Doing this for each \(k\) (keeping the first coordinate always of the
+form \(p_j^1\) and letting the second coordinate vary) yields \(n-1\)
+polynomials in \(k[x_1, x_k] \subseteq \kx{n}\), then adding in the
+polynomial \(p(x) = \prod_j (x-p_j^1)\) yields a system the vanishes
+precisely on \(\ts{\vector p_j}\).
+
+\end{remark}
+
+\begin{claim}
+
+Without loss of generality, we can assume all of the first components
+\(\ts{p_j^1}_{j=1}^d\) are distinct.
+
+\end{claim}
+
+\todo[inline]{Todo: follows from "rotation of axes"?}
+
+We will use the following fact:
+
+\begin{theorem}[Lagrange]
+
+Given a set of \(d\) points \(\ts{(x_i, y_i)}_{i=1}^d\) with all \(x_i\)
+distinct, there exists a unique polynomial of degree \(d\) in
+\(f \in k[x]\) such that \(\tilde f(x_i) = y_i\) for every \(i\).
+
+This can be explicitly given by
+\begin{align*}  
+\tilde f(x) = \sum_{i=1}^d y_i \qty{\prod_{\substack{0\leq m \leq d \\ m\neq i}} \qty{x - x_m \over x_i - x_m }}
+.\end{align*}
+
+Equivalently, there is a polynomial \(f\) defined by
+\(f(x_i) = \tilde f(x_i) - y_i\) of degree \(d\) whose roots are
+precisely the \(x_i\).
+
+\end{theorem}
+
+\vspace{2em}
+
+Using this theorem, we define a system of \(n\) polynomials in the
+following way:
+
+\begin{itemize}
+\item
+  Define \(f_1 \in k[x_1] \subseteq k[x_1, \cdots, x_n]\) by
+  \begin{align*}f_1(x) = \prod_{i=1}^d \qty{x - p_i^1}.\end{align*} Then
+  the roots of \(f_1\) are precisely the first components of the points
+  \(p\).
+
+  \hfill\break
+\item
+  Define \(f_2 \in k[x_1, x_2] \subseteq k[x_1, \cdots, x_n]\) by
+  considering the ordered pairs
+  \begin{align*}\ts{(x_1, x_2) = (p_j^1, p_j^2)},\end{align*} then
+  taking the unique Lagrange interpolating polynomial \(\tilde f_2\)
+  satisfying \(\tilde f_2(p_j^1) = p_j^2\) for all \(1\leq j \leq d\).
+  Then set \(f_2 \da \tilde f_2(x_1) - x_2 \in k[x_1, x_2]\).
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\item
+  Define \(f_3 \in k[x_1, x_3] \subseteq k[x_1, \cdots, x_n]\) by
+  considering the ordered pairs
+  \begin{align*}\ts{(x_1, x_3) = (p_j^1, p_j^3)},\end{align*} then
+  taking the unique Lagrange interpolating polynomial \(\tilde f_3\)
+  satisfying \(\tilde f_2(p_j^1) = p_j^3\) for all \(1\leq j \leq d\).
+  Then set \(f_3 \da \tilde f_3(x_1) - x_3 \in k[x_1, x_3]\).
+\item
+  \(\cdots\)
+\end{itemize}
+
+\vspace{2em}
+
+Continuing in this way up to \(f_n \in k[x_1, x_n]\) yields a system of
+\(n\) polynomials.
+
+\hfill\break
+
+\begin{proposition}
+
+\(V(f_1, \cdots, f_n) = X\).
+
+\end{proposition}
+
+\begin{proof}
+
+\begin{claim}
+
+\(X\subseteq V(f_i)\):
+
+\end{claim}
+
+This is essentially by construction. Letting \(p_j\in X\) be arbitrary,
+we find that
+\begin{align*}  
+f_1(p_j) 
+= \prod_{i=1}^d \qty{p_j^1 - p_i^1}
+= (p_j^1 - p_j^1) \prod_{\substack{i\leq d \\ i\neq j}} \qty{p_j^1 - p_i^1} = 0
+.\end{align*}
+
+Similarly, for \(2\leq k \leq n\),
+\begin{align*}  
+f_k(p_j) = \tilde f_k(p_j^1) - p_j^k = 0 
+,\end{align*} which follows from the fact that
+\(\tilde f_k(p_j^1) = p_j^k\) for every \(k\) and every \(j\) by the
+construction of \(\tilde f_k\).
+
+\begin{claim}
+
+\(X^c \subseteq V(f_i)^c\):
+
+\end{claim}
+
+This follows from the fact the polynomials \(f\) given by Lagrange
+interpolation are unique, and thus the roots of \(\tilde f\) are unique.
+But if some other point was in \(V(f_i)\), then one of its coordinates
+would be another root of some \(\tilde f\).
+
+\end{proof}
+
+\end{solution}
+
+\begin{exercise}[Gathmann 1.21]
+
+Determine \(\sqrt{I}\) for
+\begin{align*}  
+I\da \gens{x_1^3 - x_2^6,\, x_1 x_2 - x_2^3} \normal \CC[x_1, x_2]
+.\end{align*}
+
+\end{exercise}
+
+\begin{solution}
+
+For notational purposes, let \(\mathcal{I}, \mathcal{V}\) denote the
+maps in Hilbert's Nullstellensatz, we then have
+\begin{align*}(\mathcal{I} \circ \mathcal{V})(I) = \sqrt{I}.\end{align*}
+
+So we consider \(\mathcal{V}(I) \subseteq \AA^2/\CC\), the vanishing
+locus of these two polynomials, which yields the system
+\begin{align*}  
+\begin{cases}
+x^3 - y^6 & = 0 \\
+xy - y^3 & = 0.
+\end{cases}
+\end{align*} In the second equation, we have \((x- y^2)y = 0\), and
+since \(\CC[x, y]\) is an integral domain, one term must be zero.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  If \(y=0\), then \(x^3 = 0 \implies x= 0\), and thus
+  \((0, 0) \in \mathcal{V}(I)\), i.e.~the origin is contained in this
+  vanishing locus.
+\item
+  Otherwise, if \(x-y^2 = 0\), then \(x=y^2\), with no further
+  conditions coming from the first equation.
+\end{enumerate}
+
+Combining these conditions,
+\begin{align*}P\da \ts{(t^2, t) \suchthat t\in \CC} \subset \mathcal{V}(I).\end{align*}
+
+where \(I = \gens{x^3 - y^6, xy-y^3}\).
+
+We have \(P = \mathcal{V}(I)\), and so taking the ideal generated by
+\(P\) yields
+\begin{align*}  
+\qty{\mathcal{I} \circ \mathcal{V}} (I) = \mathcal{I}(P) = \gens{y-x^2} \in \CC[x ,y]
+\end{align*}
+
+and thus \(\sqrt{I} = \gens{y-x^2}\).
+
+\end{solution}
+
+\begin{exercise}[Gathmann 1.22]
+
+Let \(X\subset \AA^3/k\) be the union of the three coordinate axes.
+Compute generators for the ideal \(I(X)\) and show that it can not be
+generated by fewer than 3 elements.
+
+\end{exercise}
+
+\begin{solution}
+
+\textbf{Claim}:
+\begin{align*}I(X) = \gens{x_2 x_3,\, x_1 x_3,\, x_1 x_2}.\end{align*}
+
+We can write \(X = X_1 \union X_2 \union X_3\), where
+
+\begin{itemize}
+\tightlist
+\item
+  The \(x_1\dash\)axis is given by \(X_1 \da V(x_2 x_3)\)
+  \(\implies I(X_1) = \gens{x_2 x_3}\),
+\item
+  The \(x_2\dash\)axis is given by \(X_2 \da V(x_1 x_3)\)
+  \(\implies I(X_2) = \gens{x_1 x_3}\),
+\item
+  The \(x_3\dash\)axis is given by \(X_3 \da V(x_1 x_2)\)
+  \(\implies I(X_3) = \gens{x_1 x_2}\).
+\end{itemize}
+
+Here we've used, for example, that
+\begin{align*}I(V(x_2 x_3)) = \sqrt{\gens{x_2 x_3}} = \gens{x_2 x_3}\end{align*}
+by applying the Nullstellensatz and noting that \(\gens{x_2x_3}\) is
+radical since it is generated by a squarefree monomial.
+
+We then have
+\begin{align*}  
+I(X) &= I(X_1 \union X_2 \union X_3) \\
+&= I(X_1) \intersect I(X_2) \intersect I(X_3) \\
+&= \sqrt{I(X_1) + I(X_2) + I(X_3)} \\
+&= \sqrt{\gens{x_2, x_3} + \gens{x_1 x_3} + \gens{x_1 x_2}} \\
+&= \sqrt{\gens{x_2x_3,\, x_1 x_3,\, x_1 x_2}} \hspace{8em}\text{since } \gens{a} + \gens{b} = \gens{a, b} \\
+&= {\gens{x_2x_3,\, x_1 x_3,\, x_1 x_2}}
+,\end{align*} where in the last equality we've again used the fact that
+an ideal generated by squarefree monomials is radical.
+
+\begin{claim}
+
+\(I(X)\) can not be generated by 2 or fewer elements.
+
+Let \(J\da I(X)\) and \(R\da k[x_1, x_2, x_3]\), and toward a
+contradiction, suppose \(J = \gens{r, s}\). Define
+\(\mfm \da \gens{x, y, z}\) and a quotient map
+\begin{align*}\pi: J \to J/\mfm J\end{align*} and consider the images
+\(\pi(r), \pi(s)\).
+
+\hfill\break
+Note that \(J/\mfm J\) is an \(R/\mfm\dash\)module, and since
+\(R/\mfm \cong k\), \(J/\mfm J\) is in fact a \(k\dash\)vector space.
+Since \(\pi(r), \pi(s)\) generate \(J/\mfm J\) as a \(k\dash\)module,
+\begin{align*}\dim_k J/\mfm J \leq 2.\end{align*}
+
+\hfill\break
+But this is a contradiction, since we can produce 3 \(k\dash\)linearly
+independent elements in \(J/\mfm J\): namely
+\(\pi(x_1 x_2), \pi(x_1 x_3), \pi(x_2 x_3)\). Suppose there exist
+\(\alpha_i\) such that
+\begin{align*}  
+\alpha_1 \pi(x_1 x_2) + \alpha_2 \pi(x_1 x_3) + \alpha_3 \pi(x_2 x_3) = 0 \in J/\mfm J \iff
+\alpha_1 x_1 x_2 + \alpha_2 x_1 x_3 + \alpha_3 x_2 x_3 \in \mfm J
+,\end{align*}
+
+But we can then note that
+\begin{align*}  
+\mfm J = \gens{x_1, x_2. x_3}\gens{x_1 x_2, x_1 x_3, x_2 x_3} = 
+\gens{x_1^2 x_2,\, x_1^2 x_3,\, x_1x_2 x_3, \cdots}
+.\end{align*} can't contain any nonzero elements of degree \(d<3\), so
+no such \(\alpha_i\) can exist and these elements are \(k\dash\)linearly
+independent.
+
+\end{claim}
+
+\end{solution}
+
+\begin{exercise}[Gathmann 1.23: Relative Nullstellensatz]
+
+Let \(Y\subset \AA^n/k\) be an affine variety and define \(A(Y)\) by the
+quotient
+\begin{align*}  
+\pi: k[x_1,\cdots, x_n] \to A(Y) \da k[x_1, \cdots, x_n]/I(Y)
+.\end{align*}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that \(V_Y(J) = V(\pi^{-1}(J))\) for every \(J\normal A(Y)\).
+\item
+  Show that \(\pi^{-1} (I_Y(X)) = I(X)\) for every affine subvariety
+  \(X\subseteq Y\).
+\item
+  Using the fact that \(I(V(J)) \subset \sqrt{J}\) for every
+  \(J\normal k[x_1, \cdots, x_n]\), deduce that
+  \(I_Y(V_Y(J)) \subset \sqrt{J}\) for every \(J\normal A(Y)\).
+\end{enumerate}
+
+Conclude that there is an inclusion-reversing bijection
+\begin{align*}  
+  \correspond{\text{Affine subvarieties}\\ \text{of } Y} \iff \correspond{\text{Radical ideals} \\ \text{in } A(Y)}
+  .\end{align*}
+
+\end{exercise}
+
+\newpage
+
+\begin{exercise}[Extra]
+
+Let \(J \normal k[x_1, \cdots, x_n]\) be an ideal, and find a
+counterexample to \(I(V(J)) =\sqrt{J}\) when \(k\) is not algebraically
+closed.
+
+\end{exercise}
+
+\begin{solution}
+
+Take \(J = \gens{x^2+1} \normal \RR[x]\), noting that \(J\) is
+nontrivial and proper but \(\RR\) is not algebraically closed. Then
+\(V(J) \subseteq \RR\) is empty, and thus \(I(V(J)) = I(\emptyset)\).
+
+\begin{claim}
+
+\(I(V(J)) = \RR[x]\).
+
+Checking definitions, for any set \(X \subset \AA^n/k\) we have
+\begin{align*}  
+I(X) = \ts{f\in \RR[x] \st \forall x\in X,\, f(x)=0} \\
+\end{align*} and so we vacuously have
+\begin{align*}
+I(\emptyset) = \ts{f\in \RR[x] \st \forall x\in \emptyset,\, f(x)=0}
+= \ts{f\in \RR[x]} = \RR[x]
+.\end{align*}
+
+\end{claim}
+
+\begin{claim}
+
+\(\sqrt{J} \neq \RR[x]\).
+
+This follows from the fact that maximal ideals are radical, and
+\(\RR[x]/ J \cong \CC\) being a field implies that \(J\) is maximal. In
+this case \(\sqrt{J} = J \neq \RR[x]\).
+
+\hfill\break
+That maximal ideals are radical follows from the fact that if
+\(J\normal R\) is maximal, we have \(J \subset \sqrt{J} \subset R\)
+which forces \(\sqrt{J} = J\) or \(\sqrt{J}=R\).
+
+\hfill\break
+But if \(\sqrt{J}=R\), then
+\begin{align*}  
+1\in \sqrt{J} \implies 1^n \in J \text{ for some }n \implies 1 \in J \implies J=R
+,\end{align*} contradicting the assumption that \(J\) is maximal and
+thus proper by definition.
+
+\end{claim}
+
+\end{solution}
+
+\hypertarget{exercises-1}{%
+\section{Exercises}\label{exercises-1}}
+
+\begin{exercise}[Gathmann 2.17]
+
+Find the irreducible components of
+\begin{align*}  
+X = V(x - yz, xz - y^2) \subset \AA^3/\CC
+.\end{align*}
+
+\end{exercise}
+
+\begin{solution}
+
+Since \(x=yz\) for all points in \(X\), we have
+\begin{align*}  
+X &= V(x-yz, yz^2 - y^2) \\
+&= V\qty{x-yz, y(z^2 - y) } \\
+&= V(x-yz, y) \union V(x-yz, z^2-y) \\
+&\da X_1 \union X_2
+.\end{align*}
+
+\begin{claim}
+
+These two subvarieties are irreducible.
+
+\end{claim}
+
+It suffices to show that the \(A(X_i)\) are integral domains. We have
+\begin{align*}  
+A(X_1) \da \CC[x,y,z] / \gens{x-yz, y} \cong \CC[y,z]/\gens{y} \cong \CC[z]
+,\end{align*} which is an integral domain since \(\CC\) is a field and
+thus an integral domain, and
+\begin{align*}  
+A(X_2) \da \CC[x,y,z]/\gens{x-yz, z^2 - y} \cong \CC[y,z]/\gens{z^2-y} \cong \CC[y]
+,\end{align*} which is an integral domain for the same reason.
+
+\end{solution}
+
+\begin{exercise}[Gathmann 2.18]
+
+Let \(X\subset \AA^n\) be an arbitrary subset and show that
+\begin{align*}  
+V(I(X)) = \bar{X}
+.\end{align*}
+
+\end{exercise}
+
+\begin{solution}
+
+\hfill
+
+\(\bar X \subseteq V(I(X))\):\\
+We have \(X\subseteq V(I(X))\) and since \(V(J)\) is closed in the
+Zariski topology for any ideal \(J \normal \kx{n}\) by definition,
+\(V(I(X))\) is closed. Thus
+\begin{align*}  
+X\subseteq V(I(X)) \text{ and } V(I(X))\text{ closed } \implies \bar X \subseteq V(I(X))
+,\end{align*} since \(\bar X\) is the intersection of all closed sets
+containing \(X\).\\
+
+\(V(I(X)) \subseteq \bar X\):\\
+Noting that \(V(\wait), I(\wait)\) are individually order-reversing, we
+find that \(V(I(\wait))\) is order-\emph{preserving} and thus
+\begin{align*}  
+X\subseteq \bar X \implies V(I(X)) \subseteq V(I(\bar X)) = \bar X
+,\end{align*} where in the last equality we've used part (i) of the
+Nullstellensatz: if \(X\) is an affine variety, then \(V(I(X)) = X\).
+This applies here because \(\bar X\) is always closed, and the closed
+sets in the Zariski topology are precisely the affine varieties.
+
+\end{solution}
+
+\begin{exercise}[Gathmann 2.21]
+
+Let \(\ts{U_i}_{i\in I} \covers X\) be an open cover of a topological
+space with \(U_i \intersect U_j \neq \emptyset\) for every \(i, j\).
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that if \(U_i\) is connected for every \(i\) then \(X\) is
+  connected.
+\item
+  Show that if \(U_i\) is irreducible for every \(i\) then \(X\) is
+  irreducible.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{solution}[a]
+
+Suppose toward a contradiction that \(X = X_1 \disjoint X_2\) with
+\(X_i\) proper, disjoint, and open. Since \(\ts{U_i} \covers X\), for
+each \(j\in I\) this would force one of \(U_j \subseteq X_1\) or
+\(U_j \subseteq X_2\), since otherwise
+\(U_j \intersect X_1 \intersect X_2\) would be nonempty.\\
+So without loss of generality (relabeling if necessary), assume
+\(U_j \in X_1\) for some fixed \(j\). But then for every \(i\neq j\), we
+have \(U_i \intersect U_j\) nonempty by assumption, and so in fact
+\(U_i \subseteq X_1\) for every \(i\in I\). But then
+\(\union_{i\in I}U_i \subseteq X_1\), and since \(\ts{U_i}\) was a
+cover, this forces \(X\subseteq X_1\) and thus \(X_2 = \emptyset\).
+
+\end{solution}
+
+\begin{solution}[b]
+
+\begin{claim}
+
+\(X\) is irreducible \(\iff\) any two open subsets intersect.
+
+\end{claim}
+
+This follows because otherwise, if \(U, V \subset X\) are open and
+disjoint then \(X\sm U,\, X\sm V\) are proper and closed. But then we
+can write \(X = \qty{X\sm U} \disjoint \qty{X\sm V}\) as a union of
+proper closed subsets, forcing \(X\) to not be irreducible.\\
+
+So it suffices to show that if \(U, V\subset X\) then \(U\intersect V\)
+is nonempty. Since \(\ts{U_i} \covers X\), we can find a pair \(i, j\)
+such that there is at least one point in \(U\intersect U_i\) and one
+point in \(V \intersect U_j\).\\
+
+But by assumption \(U_i\intersect U_j\) is nonempty, so both
+\(U\intersect U_i\) and \(U_j \intersect U_i\) are open nonempty subsets
+of \(U_i\). Since \(U_i\) was assumed irreducible, they must intersect,
+so there exists a point
+\begin{align*}  
+x_0 \in \qty{U\intersect U_i} \intersect \qty{U_j \intersect U_i} = U\intersect \qty{U_i \intersect U_j} \da \tilde U
+.\end{align*}
+
+We can now similarly note that \(\tilde U \intersect V\) and
+\(U_j \intersect V\) are nonempty open subsets of \(V\), and thus
+intersect. So there is a point
+\begin{align*}  
+\tilde x_0 \in \qty{\tilde U \intersect V} \intersect \qty{U_j \intersect V} = \tilde U\intersect V = U\intersect V \intersect \qty{U_i \intersect U_j}
+,\end{align*} and in particular \(\tilde x_0 \in U\intersect V\) as
+desired.
+
+\end{solution}
+
+\begin{exercise}[Gathmann 2.22]
+
+Let \(f:X\to Y\) be a continuous map of topological spaces.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that if \(X\) is connected then \(f(X)\) is connected.
+\item
+  Show that if \(X\) is irreducible then \(f(X)\) is irreducible.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{solution}[a]
+
+Toward a contradiction, if \(f(X) = Y_1 \disjoint Y_2\) with
+\(Y_1, Y_2\) nonempty and open in \(Y\), then
+\begin{align*}f\inv(f(X)) \subseteq X\end{align*} on one hand, and
+\begin{align*}f^{-1}(f(X)) = f^{-1}(Y_1) \disjoint f^{-1}(Y_2)\end{align*}
+on the other. If \(f\) is continuous, the preimages \(f^{-1}(Y_i)\) are
+open (and nonempty), so \(X\) contains a disconnected subset. However,
+every subset of a connected set must be connected, so this contradicts
+the connectedness of \(X\).
+
+\end{solution}
+
+\begin{solution}[b]
+
+Suppose \(f(X) = Y_1 \union Y_2\) with \(Y_i\) proper closed subsets of
+\(Y\). Then
+\(f^{-1}(Y_1) \union f^{-1}(Y^2) = (f^{-1} \circ f)(X) \subseteq X\) are
+closed in \(X\), since \(f\) is continuous. Since \(X\) is irreducible,
+without loss of generality (by relabeling), this forces
+\(X_1 = \emptyset\). But then \(f(X_1) = \emptyset\), forcing
+\(f(X) = Y_2\).
+
+\end{solution}
+
+\begin{definition}[Ideal Quotient]
+
+For two ideals \(J_1, J_2\normal R\), the \emph{ideal quotient} is
+defined by
+\begin{align*}  
+J_1 : J_2 \da \ts{f\in R \st fJ_2 \subset J_1}
+.\end{align*}
+
+\end{definition}
+
+\begin{exercise}[Gathmann 2.23]
+
+Let \(X\) be an affine variety.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that if \(Y_1, Y_2 \subset X\) are subvarieties then
+  \begin{align*}  
+  I(\bar{Y_1\sm Y_2}) = I(Y_1): I(Y_2)
+  .\end{align*}
+\item
+  If \(J_1, J_2 \normal A(X)\) are radical, then
+  \begin{align*}  
+  \bar{V(J_1) \sm V(J_2)} = V(J_1: J_2)
+  .\end{align*}
+\end{enumerate}
+
+\end{exercise}
+
+\begin{solution}
+
+?
+
+\end{solution}
+
+\begin{exercise}[Gathmann 2.24]
+
+Let \(X \subset \AA^n,\, Y\subset \AA^m\) be irreducible affine
+varieties, and show that \(X\cross Y\subset \AA^{n+m}\) is irreducible.
+
+\end{exercise}
+
+\begin{solution}
+
+That \(X\cross Y\) is again an affine variety follows from writing
+\(X=V(I),\, Y=V(J)\), then \(X\cross Y = V(I+J)\) where
+\(I+J\normal k[x_1, \cdots, x_n, y_1, \cdots, y_m]\). So let
+\begin{align*}X\cross Y = U \union V\end{align*} with \(U, V\) proper
+and closed, and let \(\pi_X, \pi_Y\) be the projections onto the
+factors.
+
+\begin{claim}
+
+For each \(x\in X\), \(\pi^{-1}(x) \cong Y\) is contained in only one of
+\(U\) or \(V\).
+
+\end{claim}
+
+Note that if this is true, we can write \(X = G_U \union G_V\) where
+\begin{align*}  
+G_U\da\ts{x\in X \st \pi_X^{-1}(x) \subseteq U}
+\end{align*} are the points for which the entire fiber lies in \(U\),
+and similarly \(G_V\) are those for which the fiber lies in \(V\). If we
+can then show that \(G_U, G_V\) are closed, by irreducibility of \(X\)
+this will force (wlog) \(G_V = \emptyset\) and \(X = G_U\). But then
+\begin{align*}  
+\pi_X^{-1}(X) = X\cross Y \text{ and }\pi_X^{-1}(G_U) = U  \implies X\cross Y = U
+.\end{align*} which shows that \(X\cross Y\) is irreducible.
+
+\begin{proof}[Every fiber is contained in one irreducible component]
+
+For any fixed \(x\), we can write
+\begin{align*}  
+\pi_X^{-1}(x) = \qty{\pi_X\inv(x) \intersect U } \union \qty{\pi_X^{-1}(x) \intersect V}
+.\end{align*}
+
+Since points are closed in the Zariski topology and \(\pi_X\) is
+continuous, each \(\pi_X^{-1}(x)\) is closed. and thus
+\(\pi_X^{-1}(x)\intersect U\) is closed (and similarly for \(V\)).
+Noting that \(\pi_X^{-1}(x) \cong \ts{x}\cross Y \cong Y\), where we've
+assumed \(Y\) to be irreducible, we can conclude wlog that
+\(\pi_X^{-1}(x) \intersect V = \emptyset\).
+
+\end{proof}
+
+\begin{proof}[$G_U, G_V$ are closed]
+
+Wlog consider \(G_U \subseteq X\). Fixing any point \(y_0 \in Y\), we
+have
+\begin{align*}X\cong X_{y_0} \da X\cross \ts{y_0} \subseteq X\cross Y,\end{align*}
+so we can identify \(G_U \subset X\) with \(G_U\subset X_{y_0}\) inside
+a \(Y\dash\)fiber the product. But then
+\begin{align*}G_U = X_{y_0} \intersect U \subseteq X\cross Y,\end{align*}
+where \(U\) is closed in \(X\cross Y\) and thus closed in \(X_{y_0}\),
+and \(X_{y_0}\) is trivially closed in itself. This exhibits \(G_U\) as
+the intersection of two sets that are closed in \(X_{y_0} \cong X\).
+
+\end{proof}
+
+\end{solution}
+
+\begin{exercise}[Gathmann 2.33]
+
+Define
+\begin{align*}  
+X \da \ts{M \in \mat(2\times 3, k) \st \rk M \leq 1} \subseteq \AA^6/k
+.\end{align*}
+
+Show that \(X\) is an irreducible variety, and find its dimension.
+
+\end{exercise}
+
+\begin{solution}
+
+We'll use the following fact from linear algebra:
+
+\begin{definition}[Matrix Minor]
+
+For an \(m\times n\) matrix, a \emph{minor of order} \(\ell\) is the
+determinant of a \(\ell\times \ell\) submatrix obtained by deleting any
+\(m-\ell\) rows and any \(n-\ell\) columns.
+
+\end{definition}
+
+\begin{theorem}[Rank is a Function of Minors]
+
+If \(A\in \Mat(m \times n, k)\) is a matrix, then the rank of \(A\) is
+equal to the order of largest nonzero minor.
+
+\end{theorem}
+
+Thus
+\begin{align*}  
+M_{ij} = 0 \text{ for all $\ell\times \ell$ minors } M_{ij} \iff \rk(M) < \ell
+,\end{align*} following from the fact that if one takes
+\(\ell = \min(m,n)\) and all \(\ell\times \ell\) minors vanish, then the
+largest nonzero minor must be of size \(j\times j\) for
+\(j\leq \ell -1\). But \(\det M_{ij}\) is a polynomial \(f_{ij}\) in its
+entries, which means that \(X\) can be written as
+\begin{align*}  
+X = V\qty{\ts{f_{ij}}}
+,\end{align*} which exhibits \(X\) as a variety. Thus
+\begin{align*}  
+M = 
+\begin{bmatrix}
+x & y & z \\
+a & b & c
+\end{bmatrix}
+\implies
+X = V\qty{\gens{xb-ya, yc-zb, xc-za}} \subset \AA^6 
+.\end{align*}
+
+\begin{claim}
+
+The ideal above is prime, and so the coordinate ring \(A(X)\) is a
+domain and thus \(X\) is irreducible.
+
+\end{claim}
+
+\begin{claim}
+
+\(\dim (X) = 4\).
+
+\end{claim}
+
+Heuristic: there are three degrees of freedom in choosing the first row
+\(x,y,z\). To enforce the rank 1 condition, the second row must be a
+scalar multiple of the first, yielding one degree of freedom for the
+scalar.
+
+\begin{quote}
+Note: I looked at this for a couple of hours, but I don't know how to
+prove either of these statements with the tools we have so far!
+\end{quote}
+
+\end{solution}
+
+\begin{exercise}[Gathmann 2.34]
+
+Let \(X\) be a topological space, and show
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  If \(\ts{U_i}_{i\in I} \covers X\), then
+  \(\dim X = \sup_{i\in I} \dim U_i\).
+\item
+  If \(X\) is an irreducible affine variety and \(U\subset X\) is a
+  nonempty subset, then \(\dim X = \dim U\). Does this hold for any
+  irreducible topological space?
+\end{enumerate}
+
+\end{exercise}
+
+\begin{solution}
+
+\begin{quote}
+Strictly for notational convenience, we'll treat \(\ts{U_i}\) is if it
+were a countable open cover.
+\end{quote}
+
+\textbf{Part a:} We first note that if \(U \subseteq V\), then
+\(\dim U \leq \dim V\). If this were not the case, one could find a
+chain \(\ts{I_j}\) of closed irreducible subsets of \(V\) of length
+\(n>\dim U\). But then \(I'_j \da I_j \intersect U\) would again be a
+closed irreducible set, yielding a chain of length \(n\) in \(U\). Thus
+\(\dim X\geq \dim U_i\), and it remains true that
+\(\dim X \geq \sup \dim U_i\), so it suffices to show that
+\(\dim X \leq \sup \dim U_i\).\\
+
+Set \(s \da \sup_i \dim U_i\) and \(n\da \dim X\), we want to show that
+\(s\geq n\). Let \(\ts{I_j}_{j\leq n}\) be a maximal chain of length
+\(n\) of closed irreducible subsets of \(X\), so we have
+\begin{align*}  
+\emptyset \subsetneq I_0 \subsetneq I_1 \subsetneq \cdots \subsetneq I_n \subseteq X
+.\end{align*}
+
+Since \(I_0\subset X\) and \(\ts{U_i}\) covers \(X\), we can find some
+\(U_{0}\in \ts{U_i}\) such that \(I_0\intersect U_0\) is nonempty, since
+otherwise there would be a point in
+\(I_0 \cap \qty{X\setminus \cup_{i\in J} U_i} = \emptyset\). We can do
+this for every \(I_j\), so define \(A_j \da I_j \intersect U_0\).\\
+
+Each \(A_j\) is now closed in \(U_0\), and must remain irreducible,
+since any decomposition of \(A_j\) would lift to a decomposition of
+\(I_0\). To see that \(A_0 \subsetneq A_1\), i.e.~that the inclusions
+are still proper, we can just note that
+\begin{align*}  
+x\in A_{i+1}\setminus A_i \iff x\in  
+\qty{I_{i+1} \intersect U_0} \setminus 
+\qty{I_{i} \intersect U_0} = \qty{I_1 \setminus I_2}\intersect U_0 = \emptyset
+.\end{align*} But this exhibits a length \(n\) chain in \(U_0\), so
+\(\dim U_0 \geq n\). Taking suprema, we have
+\begin{align*}  
+n \leq \dim U_0 \leq \sup_{i\in J} \dim U_i = s
+.\end{align*}
+
+\textbf{Part b}: The answer is \textbf{no}: we can produce a space \(X\)
+with some \(\dim X\) and a subset \(U\) satisfying \(\dim U < \dim X\).
+
+Define a space and a topology by
+\begin{align*}  
+X \da \ts{a, b} \qquad \tau \da\ts{\emptyset, X, \ts 1}
+,\end{align*} Here \(\ts{b}\) is the only proper and closed subset,
+since its complement is open, so \(X\) must be irreducible. We can find
+an maximal ascending chain of length \(1\),
+\begin{align*}  
+\emptyset \subsetneq \ts{b} \subsetneq X
+,\end{align*} and so \(\dim X = 1\). However, for \(U\da \ts{a}\), there
+is only one possible maximal chain:
+\begin{align*}  
+\emptyset \subsetneq \ts{a} = X
+,\end{align*} so \(\dim U = 0\).
+
+\end{solution}
+
+\begin{exercise}[Gathmann 2.36]
+
+Prove the following:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Every noetherian topological space is compact. In particular, every
+  open subset of an affine variety is compact in the Zariski topology.
+\item
+  A complex affine variety of dimension at least 1 is never compact in
+  the classical topology.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.40]
+
+Let
+\begin{align*}  
+R = k[x_1, x_2, x_3, x_4] / \gens{x_1 x_4 - x_2 x_3} 
+\end{align*} and show the following:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(R\) is an integral domain of dimension 3.
+\item
+  \(x_1, \cdots, x_4\) are irreducible but not prime in \(R\), and thus
+  \(R\) is not a UFD.
+\item
+  \(x_1 x_4\) and \(x_2 x_3\) are two decompositions of the same element
+  in \(R\) which are nonassociate.
+\item
+  \(\gens{x_1, x_2}\) is a prime ideal of codimension 1 in \(R\) that is
+  not principal.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}[Problem 5]
+
+Consider a set \(U\) in the complement of \((0, 0) \in \AA^2\). Prove
+that any regular function on \(U\) extends to a regular function on all
+of \(\AA^2\).
+
+\end{exercise}
+
+\hypertarget{tuesday-october-06}{%
+\section{Tuesday, October 06}\label{tuesday-october-06}}
+
+\begin{problem}[Gathmann 3.20]
+
+Let \(X\subset \AA^n\)be an affine variety and \(a\in X\). Show that
+\begin{align*}  
+\OO_{X, a} = \OO_{\AA^n, a} / I(X) \OO_{A^n,a}
+,\end{align*} where \(I(X) \OO_{\AA^n, a}\) denotes the ideal in
+\(\OO_{\AA^n, a}\) generated by all quotients \(f/1\) for \(f\in I(X)\).
+
+\end{problem}
+
+\begin{problem}[Gathmann 3.21]
+
+Let \(a\in \RR\), and consider sheaves \(\mathcal{F}\) on \(\RR\) with
+the standard topology:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\mathcal{F} \da\) the sheaf of continuous functions
+\item
+  \(\mathcal{F} \da\) the sheaf of locally polynomial functions.
+\end{enumerate}
+
+For which is the stalk \(\mathcal{F}_a\) a local ring?
+
+\begin{quote}
+Recall that a local ring has precisely one maximal ideal.
+\end{quote}
+
+\end{problem}
+
+\begin{problem}[Gathmann 3.22]
+
+Let \(\phi, \psi \in \mathcal{F}(U)\) be two sections of some sheaf
+\(\mathcal{F}\) on an open \(U\subseteq X\) and show that
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  If \(\phi, \psi\) agree on all stalks, so
+  \(\bar{(U, \phi)} = \bar{(U, \psi)} \in \mathcal{F}_a\) for all
+  \(a\in U\), then \(\phi\) and \(\psi\) are equal.
+\item
+  If \(\mathcal{F} \da \OO_X\) is the sheaf of regular functions on some
+  irreducible affine variety \(X\), then if \(\psi = \phi\) on one stalk
+  \(\mathcal{F}_a\), then \(\phi = \psi\) everywhere.
+\item
+  For a general sheaf \(\mathcal{F}\) on \(X\), (b) is false.
+\end{enumerate}
+
+\end{problem}
+
+\begin{definition}[Stalk at a subspace]
+
+Let \(Y\subset X\) be a nonempty and irreducible subspace of \(X\) a
+topological space with a sheaf \(\mathcal{F}\) on \(X\). Then the stalk
+of \(\mathcal{F}\) at \(Y\) is defined by the pairs \((U, \phi)\) such
+that \(U\subset X\) is open, \(U\cap Y\) is nonempty, and
+\(\phi \in \mathcal{F}(U)\), where we identify
+\((U, \phi) \sim (U',\phi')\) iff there is a small enough open set such
+that the restrictions agree.
+
+\end{definition}
+
+\begin{problem}[Gathmann 3.23: Geometry of a Certain Localization]
+
+Let \(Y\subset X\) be a nonempty and irreducible subvariety of an affine
+variety \(X\), and show that the stalk \(\OO_{X, Y}\) of \(\OO_X\) at
+\(Y\) is a \(k\dash\)algebra which is isomorphic to the localization
+\(A(X)_{I(Y)}\).
+
+\end{problem}
+
+\begin{problem}[Gathmann 3.24]
+
+Let \(\mathcal{F}\) be a sheaf on \(X\) a topological space and
+\(a\in X\). Show that the stalk \(\mathcal{F}_a\) is a \emph{local
+object}, i.e.~if \(U\subset X\) is an open neighborhood of \(a\), then
+\(\mathcal{F}_a\) is isomorphic to the stalk of
+\(\ro{ \mathcal{F} }{U}\) at \(a\) on \(U\) viewed as a topological
+space.
+
+\end{problem}
+
+\hypertarget{monday-october-26}{%
+\section{Monday, October 26}\label{monday-october-26}}
+
+\begin{problem}[Gathmann 4.13]
+
+Let \(f:X\to Y\) be a morphism of affine varieties and
+\(f^*: A(Y) \to A(X)\) the induced map on coordinate rings. Determine if
+the following statements are true or false:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(f\) is surjective \(\iff f^*\) is injective.
+\item
+  \(f\) is injective \(\iff f^*\) is surjective.
+\item
+  If \(f:\AA^1\to\AA^1\) is an isomorphism, then \(f\) is \emph{affine
+  linear}, i.e.~\(f(x) = ax+b\) for some \(a, b\in k\).
+\item
+  If \(f:\AA^2\to\AA^2\) is an isomorphism, then \(f\) is \emph{affine
+  linear}, i.e.~\(f(x) = Ax+b\) for some \(a \in \Mat(2\times 2, k)\)
+  and \(b\in k^2\).
+\end{enumerate}
+
+\end{problem}
+
+\begin{solution}
+
+\hfill
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \textbf{True}. This follows because if \(p, q\in A(Y)\), then
+  \begin{align*}  
+    f* p &= f^* q \\
+    &\implies (p\circ f) = (q\circ f) && \text{by definition}\\
+    &\implies p = q 
+    ,\end{align*} where in the last implication we've used the fact that
+  \(f\) is surjective iff \(f\) admits a right-inverse.
+\end{enumerate}
+
+\end{solution}
+
+\begin{problem}[Gathmann 4.19]
+
+Which of the following are isomorphic as ringed spaces over \(\CC\)?
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\item
+  \(\mathbb{A}^{1} \backslash\{1\}\)
+\item
+  \(V\left(x_{1}^{2}+x_{2}^{2}\right) \subset \mathbb{A}^{2}\)
+\item
+  \(V\left(x_{2}-x_{1}^{2}, x_{3}-x_{1}^{3}\right) \backslash\{0\} \subset \mathbb{A}^{3}\)
+\item
+  \(V\left(x_{1} x_{2}\right) \subset \mathbb{A}^{2}\)
+\item
+  \(V\left(x_{2}^{2}-x_{1}^{3}-x_{1}^{2}\right) \subset \mathbb{A}^{2}\)
+\item
+  \(V\left(x_{1}^{2}-x_{2}^{2}-1\right) \subset \mathbb{A}^{2}\)
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}[Gathmann 5.7]
+
+Show that
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Every morphism \(f:\AA^1\smz \to \PP^1\) can be extended to a morphism
+  \(\hat f: \AA^1 \to \PP^1\).
+\item
+  Not every morphism \(f:\AA^2\smz \to \PP^1\) can be extended to a
+  morphism \(\hat f: \AA^2 \to \PP^1\).
+\item
+  Every morphism \(\PP^1\to \AA^1\) is constant.
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}[Gathmann 5.8]
+
+Show that
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Every isomorphism \(f:\PP^1\to \PP^1\) is of the form
+  \begin{align*}  
+  f(x) = {ax+b \over cx+d} && a,b,c,d\in k
+  .\end{align*} where \(x\) is an affine coordinate on
+  \(\AA^1\subset \PP^1\).
+\item
+  Given three distinct points \(a_i \in \PP^1\) and three distinct
+  points \(b_i \in \PP^1\), there is a unique isomorphism
+  \(f:\PP^1 \to \PP^1\) such that \(f(a_i) = b_i\) for all \(i\).
+\end{enumerate}
+
+\end{problem}
+
+\begin{proposition}[?]
+
+There is a bijection
+\begin{align*}
+\begin{array}{c}
+\{\text { morphisms } X \rightarrow Y\} \stackrel{1: 1}{\longleftrightarrow}\left\{K \text { -algebra homomorphisms } \mathscr{O}_{Y}(Y) \rightarrow \mathscr{O}_{X}(X)\right\} \\
+f \longmapsto f^{*}
+\end{array}
+\end{align*}
+
+\end{proposition}
+
+\begin{problem}[Gathmann 5.9]
+
+Does the above bijection hold if
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(X\) is an arbitrary prevariety but \(Y\) is still affine?
+\item
+  \(Y\) is an arbitrary prevariety but \(X\) is still affine?
+\end{enumerate}
+
+\end{problem}
+
+
+
+
+\end{document}
