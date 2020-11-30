@@ -228,7 +228,7 @@ For $K/\fq$ a function field, define
 \[  
 S_r \da N_r - (q^r + 1) = - \sum_{j=1}^{2g} \alpha_j^r
 .\]
-Note that $S_r = \abs{\Sigma(K_r/\fqr)}$ is the number of $\fqr\dash$rational point.
+Note that $N_r = \abs{\Sigma(K_r/\fqr)}$ is the number of $\fqr\dash$rational point.
 Then
 
 a. $L'(t)/L(t) = \sum_{r=1}^\infty S_r t^{r-1}$.
@@ -244,6 +244,10 @@ If you only have the coefficients of the $L$ polynomials, taking the logarithmic
 The second formula is a recursive expression for the $a_i$ in terms of the $S_i$.
 So you can compute the coefficients of the $L$ polynomial by counting $\fqr\dash$rational points on your curve (or places on your function field) for $r=1,2,\cdots, g$.
 Similarly, if you have all of the coefficients for a $Z$ polynomial, you can solve for the $S_i$.
+:::
+
+:::{.proof title="of a"}
+Logarithmically differentiating 
 :::
 
 
