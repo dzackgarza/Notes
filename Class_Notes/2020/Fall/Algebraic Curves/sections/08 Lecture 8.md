@@ -129,7 +129,7 @@ Let $A \leq B$[^def_from_places]
 in $\Div K$, then
 
 a. $\mathcal{L}(A) \leq_{\Vect_k} \mathcal{L}(B)$ is a subspace,
-b. $\dim \mathcal{L}(B) / \mathcal{L}(A) \leq \deg B - \deg A$.
+b. $\dim \mathcal{L}(B) / \mathcal{L}(A) \leq \deg B - \deg A = \deg(B - A)$.
 
 
 [^def_from_places]: These are formal linear combinations of places, so the coefficients in front of each place in $A$ should be less than the corresponding coefficient for $B$, or equivalently $B-A$ is effective.
@@ -137,6 +137,24 @@ b. $\dim \mathcal{L}(B) / \mathcal{L}(A) \leq \deg B - \deg A$.
 :::
 
 :::{.remark}
-Since $B \geq A$
+Since $B \geq A$, you can think of this as starting with $A$ and adding an effective divisor to get $B$, namely $A + (B-A) = B$.
+How much does that decrease the dimension of the Riemann-Roch space?
+At most, by the degree of $B-A$ as a divisor.
+:::
+
+:::{.corollary title="?"}
+For $D\in \Div K$,
+
+a. If $\deg D < 0$ then $\mathcal{L}(D) = 0$.
+b. If $\deg (D) \geq 0$ then $\dim_k \mathcal{L}(D) \leq \deg(D) + 1 < \infty$.
+
+:::
+
+:::{.remark}
+This shows that Riemann-Roch spaces are always finite dimensional, and also gives a simple upper bound on that dimension.
+:::
+
+:::{.proof title="of corollary"}
+For (a), a divisor of negative degree is not linearly equivalent to an effective divisor, so we might as well assume it's effective.
 :::
 
