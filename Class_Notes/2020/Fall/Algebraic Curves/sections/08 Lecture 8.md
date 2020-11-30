@@ -58,7 +58,11 @@ If $D$ is not linearly equivalent to an effective divisor, this is just the zero
 
 :::{.exercise title="?"}
 Let $K = k(t)$ and $n\in \ZZ^{\geq 0}$.
-Show that $L(n\infty) = \ts{f\in k[t] \st \deg f \leq n}$, and in particular is a $k\dash$vector space of dimension $n+1$.[^infty_as_a_place]
+Show that 
+\[
+L(n\infty) = \ts{f\in k[t] \st \deg f \leq n}
+\]
+and in particular is a $k\dash$vector space of dimension $n+1$.[^infty_as_a_place]
 
 [^infty_as_a_place]: Recall that $\infty$ is the $1/t\dash$adic place.
 
@@ -73,7 +77,7 @@ But the order of a pole at infinity is its degree as a polynomial, since the $\i
 :::{.lemma title="?"}
 For $D\in \Div K$,
 \[  
-\mathcal{L}(D) \neq \ts{0} \iff 0 \text{is equivalent to an effective divisor}
+\mathcal{L}(D) \neq \ts{0} \iff 0 \text{ is equivalent to an effective divisor}
 .\]
 :::
 
@@ -93,5 +97,17 @@ I.e., these are the constants: they are regular everywhere and have no zeros or 
 We would like this space to have $k\dash$dimension 1, so we impose $\kappa(K) = k$.
 :::
 
+:::{.exercise title="?"}
+\envlist
+a. Show that for all $D$, $\mathcal{L}(D) \in \Vect_k$.
+b. 
+\[  
+D\sim D' \implies \mathcal{L}
+.\]
+:::
+
+:::{.remark}
+You can frame the above as taking rational functions with poles of certain orders, and analyzing the orders of poles of their sums.
+:::
 
 
