@@ -83,13 +83,21 @@ where we've distributed one $q$ and two $t$s in the first steps.
 :::
 
 :::{.proof title="of d"}
-Using $c$, we can write
+Using the functional equation from (c), we can write
 \[  
 L(t) = q^g t^{2g}  L\qty{1\over qt} = \qty{a_{2g} \over q^g} + \qty{a_{2g-1} \over q^{g-1}}t + \cdots +  \qty{a_0 q^g} t^{2g}
-.\]
-Thus for $0\leq j \leq g$ we have
+,\]
+where we're correcting by enough in $t$ but not enough in $q$ and seeing what we get.
+Equating coefficients, for $0\leq j \leq g$ we have
 \[  
-
+a_{2g-j} = q^{g-j} a_j
+.\]
+We now write out
+\[  
+L(t) = a_0 + a_1 t + \cdots + a_{2g} t^{2g} 
+&= (1-t)(1-qt) \sum_{n=0}^\infty A_n t^n \\
+&= \qty{ 1 - (q+1)t + qt^2 }(1 + A_1 t + A_2 t^2 + \cdots)\\
+&=
 .\]
 :::
 
