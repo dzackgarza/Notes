@@ -73,8 +73,17 @@ But the order of a pole at infinity is its degree as a polynomial, since the $\i
 :::{.lemma title="?"}
 For $D\in \Div K$,
 \[  
-\mathcal{L}(D) \neq \ts{0} \iff 0 \text{is}
+\mathcal{L}(D) \neq \ts{0} \iff 0 \text{is equivalent to an effective divisor}
 .\]
+:::
+
+:::{.proof title="?"}
+$\implies$:
+If $f\in \mathcal{L}(D)\nonzero$, then $D + (f)$ is effective and linearly equivalent to zero.
+
+$\impliedby$:
+If $D' \geq 0$ and $D' \sim D$, then $D' = D + (f) \geq 0$.
+So $(f) \geq -D$ and thus $f\in \mathcal{L}(D)$.
 :::
 
 
