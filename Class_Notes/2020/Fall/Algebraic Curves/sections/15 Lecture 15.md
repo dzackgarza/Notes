@@ -187,13 +187,20 @@ where we've used that
 \prod_{\xi \in \mu_r} {1\over 1 - q\xi t} &= 1-q^rt^r \\
 \]
 which leads to all of the denominators canceling.
-We can further compute
+We can then expand $L_r(t^r)$ as a product to compute
 \[  
 L_r(t^r) 
 &= \prod_{\xi \in \mu_r} L(\xi t) \\
-&= \prod_{j=1}^{2g} \prod_{\xi\in \mu_r} (1- \alpha_j qt) \\
+&= \prod_{\xi\in \mu_r} \prod_{j=1}^{2g} (1- \alpha_j qt) \\
+&= \prod_{j=1}^{2g} \prod_{\xi\in \mu_r} (1- \alpha_j qt)  && \text{since these are finite products}\\
+&= \prod_{j=1}^{2g} (1 - \alpha_j^r t^r)
 .\]
 
+From this we can conclude that $L_r(t) = \prod_{j=1}^{2g} (1- \alpha_j^r t)$, since $t^r$ is just an indeterminate and these are all identities of polynomials.
+:::
+
+:::{.corollary title="?"}
+For $K/\fq$ of genus $g\geq 1$, 
 :::
 
 
