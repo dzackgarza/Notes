@@ -228,6 +228,9 @@ For $K/\fq$ a function field, define
 \[  
 S_r \da N_r - (q^r + 1) = - \sum_{j=1}^{2g} \alpha_j^r
 .\]
+Then
+
+a. $L'(t)/L(t) = \sum_{}
 :::
 
 
