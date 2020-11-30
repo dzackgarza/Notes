@@ -176,8 +176,8 @@ Write
 \[  
 L_r(t^r) 
 &= (1-t^r) (1-q^r t^r) Z_r(t^r) \\
-&= (1-t^r) (1-q^r t^r) Z_r(t^r) \\
-&=
+&= (1-t^r) (1-q^r t^r) \prod_{\xi \in \mu_r} Z(\xi t) \\
+&= (1-t^r) (1-q^r t^r) \prod_{\xi \in \mu_r} {} 
 .\]
 :::
 
