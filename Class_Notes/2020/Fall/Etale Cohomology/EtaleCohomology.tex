@@ -35,7 +35,7 @@
 }
 \titlehead{
     \begin{center}
-  \includegraphics[width=\linewidth,height=0.5\textheight,keepaspectratio]{figures/cover.png}
+  \includegraphics[width=\linewidth,height=0.45\textheight,keepaspectratio]{figures/cover.png}
   \end{center}
        \begin{minipage}{.35\linewidth}
     \begin{flushleft}
@@ -63,10 +63,10 @@ are almost certainly my own. } } \\
 \author{D. Zack Garza}
 \maketitle
 \begin{flushleft}
-\textbf{D. Zack Garza} \\
+\textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
-\textit{dzackgarza@gmail.com} \\
-{\tiny \textit{Last updated:} 2020-11-16 }
+  \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
+{\tiny \textit{Last updated:} 2020-11-30 }
 \end{flushleft}
 
 
@@ -661,14 +661,14 @@ is true, coming from some special properties of the behaviors of the
 cohomology of varieties which aren't manifested in random topological
 spaces.
 
-\begin{warning}
+\begin{warnings}
 
 The proof here will not look at all like Deligne's proof of the Riemann
 hypothesis for varieties over finite fields. We'll see shadows of it,
 but use a lot of things that are true for complex varieties that are
 still not known for varieties over finite fields.
 
-\end{warning}
+\end{warnings}
 
 \begin{fact}
 
@@ -967,13 +967,13 @@ doesn't hold globally.
 
 \end{example}
 
-\begin{warning}
+\begin{warnings}
 
 This is an important example to keep in mind, because you'll often see
 arguments that treat étale maps as though they were finite onto their
 image.
 
-\end{warning}
+\end{warnings}
 
 \begin{example}[?]
 
@@ -1216,12 +1216,12 @@ several axioms are satisfied.
 We'll discuss the axioms next time, they just capture the notion of what
 a cover of a topological space should look like.
 
-\begin{warning}
+\begin{warnings}
 
 There are at least three different notions of this definition! The one
 above is perhaps the least general but the easiest to work with.
 
-\end{warning}
+\end{warnings}
 
 \begin{example}[?]
 
@@ -1566,13 +1566,13 @@ take morphisms to be continuous maps.
 
 \end{example}
 
-\begin{warning}
+\begin{warnings}
 
 The constant sheaf \(\underline{S}\) doesn't associate \(S\) to every
 open set: it instead associates \(S^d\) where \(d\) is the number of
 components. The former would only be a presheaf, and not a sheaf.
 
-\end{warning}
+\end{warnings}
 
 \begin{example}[?]
 
@@ -1649,12 +1649,12 @@ argument.
 
 \end{remark}
 
-\begin{warning}
+\begin{warnings}
 
 Even showing cokernels exist in the category of abelian sheaves on a
 site is nontrivial. Try as an exercise!
 
-\end{warning}
+\end{warnings}
 
 \begin{remark}
 
@@ -1715,7 +1715,7 @@ an \(n\)th root. An invertible function is a map \(U\to \GG_m\), and we
 can form the square
 
 \begin{center}\begin{tikzcd}
- U \fp{\GG_m} \GG_m\ar[r]\ar[d] & \GG_m & z^m  \ar[d, "z^m \mapsfrom z"] \\
+ U \fp{\GG_m} \GG_m\ar[r]\ar[d] & \GG_m & z^m  \ar[d] \\
  U\ar[r] &  \GG_m & z\ar[u, |->]
 \end{tikzcd}\end{center}
 
