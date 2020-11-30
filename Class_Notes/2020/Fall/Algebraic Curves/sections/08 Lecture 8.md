@@ -226,5 +226,5 @@ where we can conclude that the indicated injection exists, and thus
 
 
 :::{.fact}
-For $p\in \Sigma(K/k)$ with residue field $k_p$ and $[k_p: k] = d$, defining $K_p \da 
+For $p\in \Sigma(K/k)$ with residue field $k_p$ and $[k_p: k] = d$, defining $K_p$ as the completion of $K$ with respect to $\abs{\wait}_p$, there is an isomorphism $K_p \cong k_p((t))$, the formal 
 :::
