@@ -241,6 +241,7 @@ ia_i = S_i a_0 + S_{i-1} a_1 + \cdots + S_1 a_{i-1}
 :::{.remark}
 What's the usefulness here?
 If you only have the coefficients of the $L$ polynomials, taking the logarithmic derivative gives access to these quantities $S_r$.
+The second formula is a recursive expression for the $a_i$ in terms of the $S_i$.
 :::
 
 
