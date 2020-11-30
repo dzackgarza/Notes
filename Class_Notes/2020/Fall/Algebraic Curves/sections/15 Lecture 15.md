@@ -223,6 +223,8 @@ But the Galois groups of these polynomials may not be solvable, so the term $\su
 Note that any symmetric polynomial in the roots is also a symmetric polynomial in the coefficients.
 :::
 
+:::{.corollary title="?"}
 
+:::
 
 
