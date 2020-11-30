@@ -144,6 +144,10 @@ in the last step we've used that $\prod_{j=1}^{2g} \alpha_j = q^g$.
 This follows because the $\alpha_j$ are the roots of $L\perp$, which has even degree, so the product of all of the roots is equal to the constant term of $L\perp$, which is the leading term of $L$, which we showed was $q^g$.
 
 This says that if we take these roots $\alpha_j$ as a multiset and replace each $\alpha_j$ with $q/\alpha_j$, we get the same multiset back.
+I.e., this multiset is stable under the involution
+\[  
+
+.\]
 
 :::
 
