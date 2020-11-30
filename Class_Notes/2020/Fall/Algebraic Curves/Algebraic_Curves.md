@@ -2063,7 +2063,7 @@ The last corollary gave us a lower bound:
 This can also be thought of as an lower bound on $\ell(D)$ in terms of $\deg(D)$, and next up we'll try to find an upper bound:
 :::
 
-:::{.proposition title=""}
+:::{.proposition title="?"}
 There exists a $\delta = \delta(K/k) \in \ZZ$ such that for all $A\in \Div K$, we have
 \[  
 \deg A - \ell(A) \leq \delta
