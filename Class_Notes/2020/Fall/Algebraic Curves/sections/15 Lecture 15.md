@@ -243,6 +243,7 @@ What's the usefulness here?
 If you only have the coefficients of the $L$ polynomials, taking the logarithmic derivative gives access to these quantities $S_r$.
 The second formula is a recursive expression for the $a_i$ in terms of the $S_i$.
 So you can compute the coefficients of the $L$ polynomial by counting $\fqr\dash$rational points on your curve (or places on your function field) for $r=1,2,\cdots, g$.
+Similarly, if you have all of the coefficients for a $Z$ polynomial, you can solve for the $S_i$.
 :::
 
 
