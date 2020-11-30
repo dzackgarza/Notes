@@ -1,0 +1,133 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Prologue}{4}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.1}References}{4}{subsection.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2}Notation}{4}{subsection.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Friday, August 21}{5}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Tuesday, August 25}{8}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Radicals, Degrees, and Affine Varieties}{8}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Ideals, and Properties of \(V({\tmspace +\thinmuskip {.1667em}\cdot \tmspace +\thinmuskip {.1667em}})\)}{9}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Statement and Proof of Nullstellensatz}{10}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Thursday, August 27}{12}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Consequence of the Nullstellensatz}{12}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Tuesday, September 01}{16}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Thursday, September 03}{20}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Tuesday, September 08}{24}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Dimension}{25}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Thursday, September 10}{27}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Proof of Dimension Proposition}{27}{subsection.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.1}Proof That \(P_1\) is Principle}{28}{subsubsection.7.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Using Dimension Theory}{29}{subsection.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Tuesday, September 15}{31}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}Review}{31}{subsection.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Thursday, September 17}{34}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}Regular Functions}{34}{subsection.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Tuesday, September 22}{37}{section.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1}Review: Regular Functions}{37}{subsection.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2}Sheaves}{39}{subsection.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Thursday, September 24}{40}{section.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Tuesday, September 29}{40}{section.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}Thursday, October 01}{44}{section.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.1}Stalks and Localizations}{44}{subsection.13.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.2}What's the Point!}{46}{subsection.13.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14}Tuesday, October 06}{47}{section.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.1}Gathmann Chapter 4}{47}{subsection.14.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15}Thursday, October 08}{49}{section.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16}Tuesday, October 13}{52}{section.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {17}Thursday, October 15}{53}{section.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {17.1}End of Chapter 4}{53}{subsection.17.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {17.2}Chapter 5}{55}{subsection.17.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {18}Tuesday, October 20}{57}{section.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {18.1}Gluing Two Opens}{57}{subsection.18.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {18.2}More General Gluing}{59}{subsection.18.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {19}Thursday, October 22}{63}{section.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {20}Tuesday, October 27}{65}{section.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {20.1}Properties of Varieties}{68}{subsection.20.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {20.2}Chapter 6: Projective Varieties}{68}{subsection.20.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21}Thursday, October 29}{69}{section.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {21.1}Projective Space}{69}{subsection.21.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {22}Thursday, November 05}{71}{section.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.1}Projective Nullstellensatz}{72}{subsection.22.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23}Tuesday, November 10}{74}{section.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {23.1}Homogenization and Dehomogenization}{74}{subsection.23.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {24}Thursday, November 12}{81}{section.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {24.1}Chapter ?}{81}{subsection.24.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {24.2}Morphisms of Projective Varieties}{83}{subsection.24.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {25}Tuesday, November 17}{83}{section.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {25.1}Projecting From a Point}{84}{subsection.25.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {25.2}The Segre Embedding}{86}{subsection.25.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {26}Thursday, November 19}{88}{section.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {26.1}Why use projective varieties?}{88}{subsection.26.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {26.2}Projective Varieties are Varieties}{89}{subsection.26.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {27}Tuesday, November 24}{93}{section.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {27.1}The Veronese Embedding}{93}{subsection.27.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {27.2}Chapter 10: Smoothness}{95}{subsection.27.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {28}Misc Unsorted}{98}{section.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {29}Indices}{98}{section.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {30}Bibliography}{102}{section.30}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
