@@ -281,6 +281,6 @@ Note that this is not necessarily a *good* algorithm: it still involves plugging
 It seems that most people who compute a lot of zeta functions mostly focus on hyperelliptic function fields.
 
 How are you going to compute zeta functions or even places for more complicated function fields?
-The Riemann-Hurwitz formula says that since any function field is a finite degree extension of a rational function field, the curve is given as a degree 2 branched cover of $\PP^1$, it suffices to compute the fibers of this cover.
+The Riemann-Hurwitz formula says that since any function field is a finite degree extension of a rational function field, the curve is given as a degree 2 branched cover of $\PP^1$, it suffices to compute the fibers of this cover in order to get point counts.
 ::: 
 
