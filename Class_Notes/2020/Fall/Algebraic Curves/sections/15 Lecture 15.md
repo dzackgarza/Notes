@@ -161,7 +161,8 @@ So we'd like to show that $m$ and $n$ are both even, so when we're pairing roots
 We know $2k + m + n = 2g$, so $m+n$ is even.
 We also know that 
 \[  
-q^g = \prod_{j=1}^{2g} \alpha_j = q^k \qty{\sqrt{q}}^m \qty{-\sqrt q}^n 
+q^g 
+&= \prod_{j=1}^{2g} \alpha_j = q^k \qty{\sqrt{q}}^m \qty{-\sqrt q}^n 
 = (-1)^n q^{k + {m \over 2} + {n\over 2}} = (-1)^n q^g
 .\]
 This forces $n$ to be even,
