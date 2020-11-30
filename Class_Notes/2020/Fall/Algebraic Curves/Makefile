@@ -46,7 +46,7 @@ latex: markdown
 
 ## PDF Output
 pdf: markdown latex
-	latexmk --shell-escape -pdf $(FILENAME).tex -quiet;
+	latexmk --shell-escape -pdf $(FILENAME).tex;
 	echo "Make done";
 
 
