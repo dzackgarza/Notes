@@ -224,7 +224,10 @@ Note that any symmetric polynomial in the roots is also a symmetric polynomial i
 :::
 
 :::{.corollary title="?"}
-
+For $K/\fq$ a function field, define
+\[  
+S_r \da N_r - (q^r + 1) = \
+.\]
 :::
 
 
