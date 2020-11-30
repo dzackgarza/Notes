@@ -231,7 +231,10 @@ S_r \da N_r - (q^r + 1) = - \sum_{j=1}^{2g} \alpha_j^r
 Then
 
 a. $L'(t)/L(t) = \sum_{r=1}^\infty S_r t^{r-1}$.
-b. $a_
+b. $a_0 = 1$, and for all $1\leq i \leq g$, 
+\[  
+ia_i = 
+.\]
 :::
 
 
