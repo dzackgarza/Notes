@@ -275,6 +275,6 @@ Computing the zeta function of a hyperelliptic curve involves plugging in $x\das
 - A nonzero square: two $y\dash$values.
 
 This is what happens at the finite places.
-To handle the place at infi
+To handle the place at $\infty$,
 ::: 
 
