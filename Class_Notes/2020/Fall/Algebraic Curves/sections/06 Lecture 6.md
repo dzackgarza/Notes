@@ -106,4 +106,7 @@ If $S \subseteq S'$, then $R^S \subseteq R^{S'}$, due to the fact that we're tak
 This can be thought of as relaxing some regularity conditions.
 :::
 
+:::{.remark}
+How to think about holomorphy rings: if you take $S = \emptyset$, you intersect over all $R_v$
+:::
 
