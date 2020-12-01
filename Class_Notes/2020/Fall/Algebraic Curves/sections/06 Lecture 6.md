@@ -22,3 +22,23 @@ It is an affine Dedekind domain if $f$ is *nonsingular* over $k$, i.e. for all $
 This is a sufficient condition, although it's not far from being necessary as well.
 :::
 
+:::{.remark}
+Let $A/k$ be an affine Dedekind domain such that $\ff(A) = K$.
+Then $\mspec(A) = \Sigma(K/A) \injects \Sigma(K/k)$.
+This follows because $\Sigma(K/A)$ are the valuations that are not just regular on $k$, but also on $A$, (i.e. $A\dash$regular valuations) so the valuation ring contains the entirety of $A$.
+It's thus natural to ask what its complement is, i.e. those valuations which are not regular on $A$ and give its elements negative valuation.
+So define
+\[  
+\Sigma(A, \infty) \da \Sigma(K/k) \sm \Sigma(K/A)
+.\]
+
+:::
+
+:::{.example title="?"}
+$\Sigma(k[t], \infty) = \ts{v_ \infty}$.
+:::
+
+:::{.proposition title="Key"}
+For any affine Dedekind domain $A$, $\Sigma(A, \infty)$ is finite and nonempty.
+:::
+
