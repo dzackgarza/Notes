@@ -60,7 +60,7 @@ denote the restriction map; then by the regularity property we established in [@
 \Sigma(K/A) = r^{-1}\qty{\Sigma(k(t)/k[t])}
 .\]
 Why?
-A valuation upstairs in the NT1 square is regular upstairs iff it's regular rw
+A valuation upstairs in the NT1 square is regular upstairs iff it's regular with respect to
 
 [^noether_note]: This says that if you have an affine domain $R$ of a certain Krull dimension, then it is finitely generated as a module over a subring which is a polynomial ring in $\trdeg(R)$ variables.
 This is like a stronger integral version of taking a finitely generated field extension and writing it as a finite degree field extension of a purely transcendental extension.
