@@ -125,6 +125,6 @@ This is also equal to $\Intersect_{v\in \mspec(A)} R_v$.
 This is a fact for any Dedekind domain, which is the intersection over all of its DVRs.
 You obtain the integral closure for a Dedekind domain by intersecting all of the valuation rings, but here it is already integrally closed.
 Its tautological that $A \subset R^S$ here, so $R^S$ is an *overring* of a Dedekind domain:  for $R$ a domain, an **overring** is any ring $T$ such that $R \subseteq T \subseteq \ff(R)$.
-When $R$ is a PID, the overrings 
+When $R$ is a PID, the overrings are indexed by subsets of prime elements in $R$,
 :::
 
