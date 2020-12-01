@@ -30,15 +30,39 @@ It's thus natural to ask what its complement is, i.e. those valuations which are
 So define
 \[  
 \Sigma(A, \infty) \da \Sigma(K/k) \sm \Sigma(K/A)
-.\]
+,\]
+the set of places at infinity with respect to $A$.
 
 :::
 
 :::{.example title="?"}
-$\Sigma(k[t], \infty) = \ts{v_ \infty}$.
+$\Sigma(k[t], \infty) = \ts{v_ \infty}$, which is the infinite place, so the terminology at least matches up!
 :::
 
 :::{.proposition title="Key"}
 For any affine Dedekind domain $A$, $\Sigma(A, \infty)$ is finite and nonempty.
+:::
+
+:::{.remark}
+This is striking!
+This says that one affine Dedekind domain is giving almost all of this infinite set of places, but never all of it.
+By Noether Normalization [^noether_note]
+
+there exists a $t\in A$ that that $A$ is a finitely generated (and thus integral) $k[t]\dash$module, and $A$ is the integral closure of $k[t]$ in $K$.
+Why must this be the integral closure?
+Any ring finitely generated over a subring will be an integral extension, and $A$ is a Dedekind domain and thus integrally closed.
+So let
+\[  
+r: \Sigma(K/k) \to \Sigma(k(t)/k)
+\]
+denote the restriction map; then by the regularity property we established, we have
+\[  
+\Sigma(K/A) = r^{-1}\qty{\Sigma(k(t)/k[t])}
+.\]
+
+
+[^noether_note]: This says that if you have an affine domain $R$ of a certain Krull dimension, then it is finitely generated as a module over a subring which is a polynomial ring in $\trdeg(R)$ variables.
+This is like a stronger integral version of taking a finitely generated field extension and writing it as a finite degree field extension of a purely transcendental extension.
+
 :::
 
