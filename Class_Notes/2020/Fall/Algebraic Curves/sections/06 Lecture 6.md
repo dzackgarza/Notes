@@ -142,6 +142,9 @@ Conversely, given any finite nonempty set of places, then the holomorphy of ring
 
 Next up is the main theorem of this lecture.
 
-:::{.theorem title="?"}
-Let $K/k$ be a one variable function field
+:::{.theorem title="Holomorphy rings on subsets are synonymous with affine Dedekind domains with fraction field $K$"}
+Let $K/k$ be a one variable function field and $S \subset \Sigma(K/k)$ finite and nonempty.
+Then $R^S$ is an affine Dedekind domain with $\ff(R^S) = K$ and $\mspec(R^S) = \Sigma(K/k)\sm S$.
 :::
+
+26:21
