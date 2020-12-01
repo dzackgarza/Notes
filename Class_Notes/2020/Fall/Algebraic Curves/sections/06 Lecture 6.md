@@ -127,5 +127,7 @@ You obtain the integral closure for a Dedekind domain by intersecting all of the
 Its tautological that $A \subset R^S$ here, so $R^S$ is an *overring* of a Dedekind domain:  for $R$ a domain, an **overring** is any ring $T$ such that $R \subseteq T \subseteq \ff(R)$.
 When $R$ is a PID, the overrings are in bijective correspondence with subsets of prime ideals (prime elements mod associates), so you get all overrings by inverting such subsets.
 For Dedekind domains it's more complicated.
+Can we classify all overrings of $R$ when it is a Dedekind domain?
+The answer will eventually be yes.
 :::
 
