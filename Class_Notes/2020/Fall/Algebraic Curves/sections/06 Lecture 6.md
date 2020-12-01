@@ -83,7 +83,7 @@ This is like a stronger integral version of taking a finitely generated field ex
 :::{.remark}
 Thus is $K/k$ is a one variable function field and $A$ is an affine Dedekind domain with fraction field $K$, then $\Sigma(K/k) = \mspec(A) \disjoint S$ where $S$ is finite and nonempty.
 Earlier we saw by affine grounding that for each $v\in \Sigma(K/k)$ there exists an affine Dedekind domain $A$ with $v\in \Sigma(K/A)$, and thus $\Sigma(K/k)$ admits a *finite* covering by $\mspec$ of affine Dedekind domains.
-The picture of what's happening is that we have $\Sigma(K/k)$ which is quasicompact with respect to the Zariski topology, which contains many $\mspecs$, at least one of which contains $v$.
+The picture of what's happening is that we have $\Sigma(K/k)$ which is quasicompact with respect to the Zariski topology, which contains many $\mspec$, at least one of which contains $v$.
 Note that these $\mspec(A_j)$ for affine Dedekind domains $A_j$ is literally an open cover in this topology.
 But the open sets are so large that they all have finite complement.
 However, this means that instead of just an arbitrary open covering, one can choose a finite open covering: one $\mspec(A_j)$ will cover all but finitely many, and we can always find at least one $\mspec(A_{j'})$ covering all of the remaining points.
@@ -93,5 +93,16 @@ However, this means that instead of just an arbitrary open covering, one can cho
 It will in fact turn out that we only need **two** domains to cover everything.
 :::
 
+:::{.definition title="Holomorphy Rings"}
+For a set $S \subseteq \Sigma(K/k)$, define the **Holomorphy** ring as
+\[  
+R^s \da \Intersect_{v\in \Sigma(K/k)\sm S} R_v
+.\]
+::: 
+
+:::{.remark}
+This is the intersection of a bunch of valuation rings, so this contains elements that are simultaneously regular for this subset of valuations.
+If $S
+:::
 
 
