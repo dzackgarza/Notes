@@ -108,6 +108,7 @@ This can be thought of as relaxing some regularity conditions.
 
 :::{.remark}
 How to think about holomorphy rings: if you take $S = \emptyset$, you intersect over all $R_v$ and obtain $R^\emptyset = \kappa(k)$.
-You get a field that is algebraic over $k$, so it's very small compared to the other
+You get a field that is algebraic over $k$, so it's very small compared to the other types of field extensions that arise.
+We'll see that this is "unrepresentably" small.
 :::
 
