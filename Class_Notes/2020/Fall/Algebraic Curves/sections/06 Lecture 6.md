@@ -46,6 +46,9 @@ For any affine Dedekind domain $A$, $\Sigma(A, \infty)$ is finite and nonempty.
 :::{.remark}
 This is striking!
 This says that one affine Dedekind domain is giving almost all of this infinite set of places, but never all of it.
+:::
+
+:::{.proof title="?"}
 By Noether Normalization [^noether_note]
 
 there exists a $t\in A$ that that $A$ is a finitely generated (and thus integral) $k[t]\dash$module, and $A$ is the integral closure of $k[t]$ in $K$.
@@ -69,12 +72,15 @@ This means that the places where are *not* $A\dash$regular upstairs are precisel
 \Sigma(A, \infty) = r^{-1}\qty{\Sigma(k[t], \infty)} = r^{-1}(v_ \infty)
 ,\]
 since we now there is exactly one such non-regular valuation.
-But we showed that $r$ was surjective with finite nonempty fibers
-
+But we showed that $r$ was surjective with finite nonempty fibers, so we're done since our set is one of the fibers.
 
 
 [^noether_note]: This says that if you have an affine domain $R$ of a certain Krull dimension, then it is finitely generated as a module over a subring which is a polynomial ring in $\trdeg(R)$ variables.
 This is like a stronger integral version of taking a finitely generated field extension and writing it as a finite degree field extension of a purely transcendental extension.
 
+:::
+
+:::{.remark}
+Thus is $K/k$ is a one variable function field and $A$ is an affine Dedekind domain with fraction field $K$, then $\Sigma(K/k) = \mspec(A) \disjoint S$ where $S$ is finite and nonempty.
 :::
 
