@@ -61,7 +61,10 @@ denote the restriction map; then by the regularity property we established in [@
 .\]
 Why?
 A valuation upstairs in the NT1 square is regular with respect to the integral extension upstairs iff it's regular with respect to the ring it is the integral extension *of*.
-So integrality is preserved both ways by integra
+So regularity is preserved both ways by integral extensions.
+This means you can check regularity either upstairs or downstairs, allowing us to identify the above preimage.
+
+
 
 [^noether_note]: This says that if you have an affine domain $R$ of a certain Krull dimension, then it is finitely generated as a module over a subring which is a polynomial ring in $\trdeg(R)$ variables.
 This is like a stronger integral version of taking a finitely generated field extension and writing it as a finite degree field extension of a purely transcendental extension.
