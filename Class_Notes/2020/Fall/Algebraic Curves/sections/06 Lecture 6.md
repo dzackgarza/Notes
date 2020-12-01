@@ -129,5 +129,7 @@ When $R$ is a PID, the overrings are in bijective correspondence with subsets of
 For Dedekind domains it's more complicated.
 Can we classify all overrings of $R$ when it is a Dedekind domain?
 The answer will eventually be yes.
+Under what condition is every overring a localization?
+
 :::
 
