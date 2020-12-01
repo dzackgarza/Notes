@@ -55,7 +55,7 @@ So let
 \[  
 r: \Sigma(K/k) \to \Sigma(k(t)/k)
 \]
-denote the restriction map; then by the regularity property we established, we have
+denote the restriction map; then by the regularity property we established in [@lemma:regularity], we have
 \[  
 \Sigma(K/A) = r^{-1}\qty{\Sigma(k(t)/k[t])}
 .\]
