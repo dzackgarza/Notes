@@ -113,6 +113,17 @@ We'll see that this is "unrepresentably" small.
 :::
 
 :::{.exercise title="Every affine Dedekind domain is a unique holomorphy ring"}
-If $A$ is an affine Dedekind domain with fraction field $k$, 
+If $A$ is an affine Dedekind domain with fraction field $k$, then
+\[  
+A = R^S && S = \Sigma(K/k) \sm \mspec(A)
+.\]
+This is also equal to $\Intersect_{v\in \mspec(A)} R_v$.
+
+:::
+
+:::{.remark}
+This is a fact for any Dedekind domain, which is the intersection over all of its DVRs.
+You obtain the integral closure for a Dedekind domain by intersecting all of the valuation rings, but here it is already integrally closed.
+Its tautological that $A \subset R^S$ here, so $R^S$ is an *overring* of a Dedekind domain, 
 :::
 
