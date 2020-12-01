@@ -112,3 +112,7 @@ You get a field that is algebraic over $k$, so it's very small compared to the o
 We'll see that this is "unrepresentably" small.
 :::
 
+:::{.exercise title="Every affine Dedekind domain is a unique holomorphy ring"}
+If $A$ is an affine Dedekind domain with fraction field $k$, 
+:::
+
