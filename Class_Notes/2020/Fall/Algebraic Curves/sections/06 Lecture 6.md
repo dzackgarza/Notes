@@ -102,7 +102,7 @@ R^s \da \Intersect_{v\in \Sigma(K/k)\sm S} R_v
 
 :::{.remark}
 This is the intersection of a bunch of valuation rings, so this contains elements that are simultaneously regular for this subset of valuations.
-If $S \subseteq S'$, then $R^S \subseteq R^{S'}$, due to the fact that we're taking complements and $\Sigma(K/k) \sm S \subseteq \Sigma(K/k)\sm S'$.
+If $S \subseteq S'$, then $R^S \subseteq R^{S'}$, due to the fact that we're taking complements and $\Sigma(K/k) \sm S \supset \Sigma(K/k)\sm S'$, so we're removing bigger sets and thus intersecting over fewer things.
 :::
 
 
