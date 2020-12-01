@@ -136,8 +136,12 @@ It turns out that $\cl(\hat R)$ is a quotient of $\cl(R)$.
 We will show that all such overrings are of the form $R^W$ for some $W$, i.e. they're obtained by intersecting some subset of the localizations of $R$ at its maximal ideals.
 
 Note that the holomorphy ring in the exercise is obtained from a finite set of places.
-Conversely, given any finite nonempty set of places, 
+Conversely, given any finite nonempty set of places, then the holomorphy of ring of all of the elements of $K$ that are regular with respect to all but this finite number of valuations will always be an affine Dedekind domain with fraction field $K$.
+
 :::
 
 Next up is the main theorem of this lecture.
 
+:::{.theorem title="?"}
+Let $K/k$ be a one variable function field
+:::
