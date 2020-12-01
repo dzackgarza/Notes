@@ -133,5 +133,6 @@ Under what condition is every overring a localization?
 When the class group is torsion.
 What are the relationships between the class groups of the ring $R$ and its overrings $\hat R$?
 It turns out that $\cl(\hat R)$ is a quotient of $\cl(R)$.
+We will show that all such overrings are of the form $R^
 :::
 
