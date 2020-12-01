@@ -64,6 +64,13 @@ A valuation upstairs in the NT1 square is regular with respect to the integral e
 So regularity is preserved both ways by integral extensions.
 This means you can check regularity either upstairs or downstairs, allowing us to identify the above preimage.
 
+This means that the places where are *not* $A\dash$regular upstairs are precisely those which are not $k[t]\dash$regular downstairs, and so we have
+\[  
+\Sigma(A, \infty) = r^{-1}\qty{\Sigma(k[t], \infty)} = r^{-1}(v_ \infty)
+,\]
+since we now there is exactly one such non-regular valuation.
+But we showed that $r$ was surjective with finite nonempty fibers
+
 
 
 [^noether_note]: This says that if you have an affine domain $R$ of a certain Krull dimension, then it is finitely generated as a module over a subring which is a polynomial ring in $\trdeg(R)$ variables.
