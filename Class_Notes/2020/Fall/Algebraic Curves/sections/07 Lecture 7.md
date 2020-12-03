@@ -361,3 +361,77 @@ It's hard to say how much $P(S)$ is cutting down the size.
 The moral is that there is a map, but the kernel and cokernel both depend on $S$.
 If you understand $\Cl^0 K$, however, you have a good handle on all $\Cl R^S$.
 :::
+
+:::{.exercise title="?"}
+\envlist
+
+a. Show that $D^0(S) \cong \ZZ^{\abs S - 1}$.
+
+b. Suppose $S$ consists of a single place whose degree is the quantity $d_S$ appearing in the previous theorem, the least positive degree of a divisor supported on $S$.
+  Show that there is an exact sequence
+  \[  
+  0 \to \Cl^0 K \mapsvia{\alpha} \Cl R^S \mapsvia{\beta} C(d_S/I(K)) \to 0
+  .\]
+
+c. Deduce that $\alpha$ is an isomorphism iff $I(K) = d$.
+
+d. Deduce that if $p\in \Sigma(k(t)/k)$ has degree $d$, then $\Cl R^{\ts p} \cong \ZZ/d\ZZ$.
+
+e. Deduce that if $S = \ts p$ and $\deg p = 1$, then $\alpha: \Cl^0 K \to \Cl R^S$ is an isomorphism.
+:::
+
+:::{.remark}
+Note that if you're given a finite set of places and ask for all of the rational functions that have zeros and poles only at those places, it is difficult to determine how close that is to filling out the entire degree zero divisor class group?
+If you have two degree 1 points $p_i$, so $\abs S = 2$, do you have a rational function whose divisor is $p_1 - p_2$?
+Probably not, because then the divisor of such a function would have degree 1.
+You can continue this line of thought, but already using elliptic function fields you can see that all of these algebraic possibilities can occur.
+:::
+
+:::{.remark}
+Note that in the case where $S$ is a single point of degree $d$, then $d_S$ is equal to the degree of the point $d$.
+On the other extreme, consider what happens when $I(K) = 1$.
+Then $C(d_S)$ is cyclic of order $d$, so in (c) if we have a rational function field, we know it has degree 1 places (like $0, \infty$), and the class group is zero.
+So if you take one place on $\PP^1$ of degree $d$ and look at the correspond affine Dedekind domain of functions that are regular away from that one place 
+$R^{\ts p}$, then the class group is nontrivial and it's thus not a PID.
+Note that $\Cl^0 \PP^1$ is trivial, and puncturing it has an effect on the divisor class.
+:::
+
+:::{.exercise title="?"}
+\envlist
+
+a. Suppose $\Cl^0 K$ is finite, and show that every $\Cl R^S$ is finite.
+[^later_we_will_show_finite]
+
+b. Suppose $\Cl^0 K$ is finitely generated, and show that for all finite nonempty $S \subset \Sigma(K/k)$, there exists a finite $S' \supset S$ such that $\Cl R^{S'}$ is trivial.
+
+[^later_we_will_show_finite]: Later we will show that $\Cl^0 K$ is finite when $k$ is finite.
+
+:::
+
+:::{.remark}
+This is the positive characteristic version of one of the basic finiteness theorems from NTI: the ring of integers of any number field has finite class group.
+But the $S\dash$class group is always finite, since it's a quotient of the class group, and that's what's happening here.
+It's enough to show that the $\Cl^0 K$ and $C(d_S/ I(K))$ appearing in the SES in the previous theorem are finite, since the first term can only cut down the size.
+The groups $\Cl R^S$ when $k$ is finite are analogues of the $S\dash$class groups of number fields.
+In the function field case, you can't get away from the $S\dash$class group, since if $S= \emptyset$ then $R^S$ is not an interesting Dedekind domain: it's just $\kappa(K)$.
+So you have to put something at $\infty$ to even get a 1-dimensional domain, whereas in the number field case, you always have a finite nonempty set of nonarchimedean places.
+
+This allows us to deduce from the finiteness of this one geometric group the finiteness of $S\dash$class groups in the characteristic $p$ case.
+If done correctly, this can be used to prove the finiteness of class groups of all number fields, e.g. if you do things in an adelic way in NTII.
+:::
+
+:::{.theorem title="Trotter, 1988"}
+The ring $R[\cos \theta, \sin \theta]$ of real trigonometric polynomials is not a UFD, while $\CC[\cos \theta, \sin \theta]$ is a PID.
+:::
+
+:::{.remark}
+Trotter shows that using $\sin(\theta)\sin(\theta) = (1+\cos(\theta))(1-\cos(\theta))$ exhibits non-unique factorization, since the terms appearing are non-associate irreducible elements in an integral domain.
+See Pete's list of exercises.
+Note that given an affine Dedekind domain how one figures out what the infinite places are concretely, but this will come up when discussing hyperelliptic curves.
+:::
+
+:::{.remark}
+One exercise applies Rosen's theorem to show that $\Cl \RR [\cos(\theta), \sin(\theta)] = \ZZ/2\ZZ$ while $\Cl \CC[\cos(\theta), \sin(\theta)] = 1$.
+What's happening is that over $\RR$, there is perhaps one degree 2 place at $\infty$, but after extending scalars to $\CC$ it breaks up into two degree 1 places.
+:::
+

@@ -1258,7 +1258,7 @@ Note also that $\ZZ$ can be replaced with any group $G$, since it's never used i
 There is a huge difference between $\trdeg = 1$ and $\trdeg > 1$, and so we'll only be working with the former case in this course.
 :::
 
-# Lecture 5A: Places
+# Lecture 5: Places
 
 :::{.definition title="Affine Domain"}
 An **affine domain** $R$ over a field $k$ is a domain that is finitely generated as a $k\dash$algebra.
@@ -1470,7 +1470,7 @@ Note that this is much better than an arbitrary Dedekind domain!
 
 ## Regularity Lemma
 
-:::{.proposition title="Regularity Lemma"}
+:::{.proposition title="Regularity Lemma"}{#lemma:regularity}
 Suppose that instead of $K = \ff(A)$, we instead have $A \subset K$ an arbitrary subring, and $L/K$ a finite extension.
 Taking the integral closure $B$ yields another NTI square:
 
@@ -1720,7 +1720,7 @@ These singular points are what stops $A$ from being integrally closed, which is 
 
 :::
 
-Whereas $\Sigma(K/k)$ is always infinite, $\Sigma_1(K/k)$ by be finite or even empty.
+Whereas $\Sigma(K/k)$ is always infinite, $\Sigma_1(K/k)$ may be finite or even empty.
 When $k = \QQ$, it may in fact be empty "most of the time"
 When $k = \QQ$, it may in fact be empty "most of the time".
 
@@ -1773,12 +1773,883 @@ Show that $\Sigma_1(k(t)/k) = \PP^1(k)$, and deduce that
 Next up we'll talk about how the set of places is built from affine Dedekind domains.
 After this, we'll be ready for chapter 2: divisors and Riemann-Roch.
 
-# Lecture 5B: Building Places by Gluing Affine Dedekind Domains (TODO)
+# Lecture 6: Affine Domains and Places $\Sigma(K/k)$
 
-# Lecture 6
+The aim of this lecture is to explain the difference (including some technicalities) between $\Sigma(K/k)$ and affine Dedekind domains $R$ such that $K = \ff(R)$.
 
 
-# Lecture 8: Riemann-Roch Spaces 
+Recall that
+
+- An **affine domain** over a field $k$ is a domain that is finitely generated as a $k\dash$algebra,[^rich_but_easy]
+
+
+- An **affine Dedekind domain** is an affine domain that is also a Dedekind domain, so it is integrally closed and of Krull dimension 1,
+
+- An **affine $k\dash$order** is a one-dimensional affine domain. [^order_is_noetherian]
+
+[^order_is_noetherian]: These will be Noetherian by the Hilbert basis theorem, but may not be integrally closed.
+
+[^rich_but_easy]: These are very rich but easier to understand: take a polynomial ring in finitely many variables and mod out by a prime ideal.
+
+:::{.example title="?"}
+If $f \in k[x, y]$ is irreducible, then $k[x, y]/\gens{f}$ is an affine $k\dash$order. 
+It is an affine Dedekind domain if $f$ is *nonsingular* over $k$, i.e. for all $a, b\in \bar k$ such that $f(a, b) = 0$, the usual partial derivatives in the sense of Calculus $\dd{f}{x}$ and $\dd{f}{y}$ do not simultaneously vanish at $(a, b)$.
+This is a sufficient condition, although it's not far from being necessary as well.
+:::
+
+:::{.remark}
+Let $A/k$ be an affine Dedekind domain such that $\ff(A) = K$.
+Then $\mspec(A) = \Sigma(K/A) \injects \Sigma(K/k)$.
+This follows because $\Sigma(K/A)$ are the valuations that are not just regular on $k$, but also on $A$, (i.e. $A\dash$regular valuations) so the valuation ring contains the entirety of $A$.
+It's thus natural to ask what its complement is, i.e. those valuations which are not regular on $A$ and give its elements negative valuation.
+So define
+\[  
+\Sigma(A, \infty) \da \Sigma(K/k) \sm \Sigma(K/A)
+,\]
+the set of places at infinity with respect to $A$.
+
+:::
+
+:::{.example title="?"}
+$\Sigma(k[t], \infty) = \ts{v_ \infty}$, which is the infinite place, so the terminology at least matches up!
+:::
+
+:::{.proposition title="Key"}
+For any affine Dedekind domain $A$, $\Sigma(A, \infty)$ is finite and nonempty.
+:::
+
+:::{.remark}
+This is striking!
+This says that one affine Dedekind domain is giving almost all of this infinite set of places, but never all of it.
+:::
+
+:::{.proof title="?"}
+By Noether Normalization [^noether_note]
+
+there exists a $t\in A$ that that $A$ is a finitely generated (and thus integral) $k[t]\dash$module, and $A$ is the integral closure of $k[t]$ in $K$.
+Why must this be the integral closure?
+Any ring finitely generated over a subring will be an integral extension, and $A$ is a Dedekind domain and thus integrally closed.
+So let
+\[  
+r: \Sigma(K/k) \to \Sigma(k(t)/k)
+\]
+denote the restriction map; then by the regularity property we established in [@lemma:regularity], we have
+\[  
+\Sigma(K/A) = r^{-1}\qty{\Sigma(k(t)/k[t])}
+.\]
+Why?
+A valuation upstairs in the NTI square is regular with respect to the integral extension upstairs iff it's regular with respect to the ring it is the integral extension *of*.
+So regularity is preserved both ways by integral extensions.
+This means you can check regularity either upstairs or downstairs, allowing us to identify the above preimage.
+
+This means that the places where are *not* $A\dash$regular upstairs are precisely those which are not $k[t]\dash$regular downstairs, and so we have
+\[  
+\Sigma(A, \infty) = r^{-1}\qty{\Sigma(k[t], \infty)} = r^{-1}(v_ \infty)
+,\]
+since we now there is exactly one such non-regular valuation.
+But we showed that $r$ was surjective with finite nonempty fibers, so we're done since our set is one of the fibers.
+
+
+[^noether_note]: This says that if you have an affine domain $R$ of a certain Krull dimension, then it is finitely generated as a module over a subring which is a polynomial ring in $\trdeg(R)$ variables.
+This is like a stronger integral version of taking a finitely generated field extension and writing it as a finite degree field extension of a purely transcendental extension.
+
+:::
+
+:::{.remark}
+Thus is $K/k$ is a one variable function field and $A$ is an affine Dedekind domain with fraction field $K$, then $\Sigma(K/k) = \mspec(A) \disjoint S$ where $S$ is finite and nonempty.
+Earlier we saw by affine grounding that for each $v\in \Sigma(K/k)$ there exists an affine Dedekind domain $A$ with $v\in \Sigma(K/A)$, and thus $\Sigma(K/k)$ admits a *finite* covering by $\mspec$ of affine Dedekind domains.
+The picture of what's happening is that we have $\Sigma(K/k)$ which is quasicompact with respect to the Zariski topology, which contains many $\mspec$, at least one of which contains $v$.
+Note that these $\mspec(A_j)$ for affine Dedekind domains $A_j$ is literally an open cover in this topology.
+But the open sets are so large that they all have finite complement.
+However, this means that instead of just an arbitrary open covering, one can choose a finite open covering: one $\mspec(A_j)$ will cover all but finitely many, and we can always find at least one $\mspec(A_{j'})$ covering all of the remaining points.
+
+![Image](figures/image_2020-12-01-01-43-43.png)
+
+It will in fact turn out that we only need **two** domains to cover everything.
+:::
+
+:::{.definition title="Holomorphy Rings"}
+For a set $S \subseteq \Sigma(K/k)$, define the **holomorphy** ring as
+\[  
+R^s \da \Intersect_{v\in \Sigma(K/k)\sm S} R_v
+.\]
+::: 
+
+:::{.remark}
+This is the intersection of a bunch of valuation rings, so this contains elements that are simultaneously regular for this subset of valuations.
+If $S \subseteq S'$, then $R^S \subseteq R^{S'}$, due to the fact that we're taking complements and $\Sigma(K/k) \sm S \supset \Sigma(K/k)\sm S'$, so we're removing bigger sets and thus intersecting over fewer things.
+This can be thought of as relaxing some regularity conditions.
+:::
+
+:::{.remark}
+How to think about holomorphy rings: if you take $S = \emptyset$, you intersect over all $R_v$ and obtain $R^\emptyset = \kappa(k)$.
+You get a field that is algebraic over $k$, so it's very small compared to the other types of field extensions that arise.
+We'll see that this is "unrepresentably" small.
+:::
+
+:::{.exercise title="Every affine Dedekind domain is a unique holomorphy ring"}
+If $A$ is an affine Dedekind domain with fraction field $k$, then
+\[  
+A = R^S 
+= \Intersect_{v\in \mspec(A)} R_v
+&& S = \Sigma(K/k) \sm \mspec(A)
+.\]
+
+:::
+
+:::{.remark}
+This is a fact for any Dedekind domain, which is the intersection over all of its DVRs.
+You obtain the integral closure for a Dedekind domain by intersecting all of the valuation rings, but here it is already integrally closed.
+Its tautological that $A \subset R^S$ here, so $R^S$ is an *overring* of a Dedekind domain:  for $R$ a domain, an **overring** is any ring $T$ such that $R \subseteq T \subseteq \ff(R)$.
+When $R$ is a PID, the overrings are in bijective correspondence with subsets of prime ideals (prime elements mod associates), so you get all overrings by inverting such subsets.
+For Dedekind domains it's more complicated.
+Can we classify all overrings of $R$ when it is a Dedekind domain?
+The answer will eventually be yes.
+Under what condition is every overring a localization?
+When the class group is torsion.
+What are the relationships between the class groups of the ring $R$ and its overrings $\hat R$?
+It turns out that $\cl(\hat R)$ is a quotient of $\cl(R)$.
+We will show that all such overrings are of the form $R^W$ for some $W$, i.e. they're obtained by intersecting some subset of the localizations of $R$ at its maximal ideals.
+
+Note that the holomorphy ring in the exercise is obtained from a finite set of places.
+Conversely, given any finite nonempty set of places, then the holomorphy of ring of all of the elements of $K$ that are regular with respect to all but this finite number of valuations will always be an affine Dedekind domain with fraction field $K$.
+
+:::
+
+## Holomorphy Rings are Affine Dedekind Domains with Fraction Field $K$
+
+Next up is the main theorem of this lecture.
+
+:::{.theorem title="Holomorphy rings on subsets are synonymous with affine Dedekind domains with fraction field $K$"}{#thm:main_lec_6}
+Let $K/k$ be a one variable function field and $S \subset \Sigma(K/k)$ finite and nonempty.
+Then $R^S$ is an affine Dedekind domain with $\ff(R^S) = K$ and $\mspec(R^S) = \Sigma(K/k)\sm S$.
+::: 
+
+
+:::{.exercise title="?"}
+If $S \subset \Sigma(K/k)$ is infinite, then $R^S$ is Dedekind with fraction field $K$ but is *not* finitely generated as a $k\dash$algebra.
+:::
+
+:::{.remark}
+So what happens when you allow elements to fail regularity at an infinite set of places instead of just a finite set?
+From the theory of Dedekind domains, this will again be a Dedekind domain, but will be more exotic than an affine Dedekind domain.
+What if it were finitely generated as a $k\dash$algebra?
+Then it would be an affine Dedekind domain, and we have a good understanding of $\mspec$ of these types of rings, and it would have to be a holomorphy ring with respect to some finite set.
+Note that holomorphy rings for different subsets are distinct.
+:::
+
+:::{.remark}
+We have an interesting class of rings: Dedekind domain which are holomorphy rings with respect to an infinite set of places.
+What are they good for?
+They're used in Pete's paper "Elliptic Dedekind domains revisited" to give a new proof of a theorem of Clayborne (60s, at least the third proof) that every commutative group is the ideal class group of some $R^S$.
+\todo[inline]{Get citation.}
+The Dedekind domain used was a holomorphy ring $R^S$ with respect to some infinite set $S$.
+He starts out with an elliptic function field $K$ (so of genus 1 with a degree 1 place), and taking the standard affine coordinate ring of the curve is $R^S$ for $S$ the single degree 1 place.
+This is particularly nice, since its class group is canonically isomorphic to $C(k)$, the $k\dash$rational points of the elliptic curve.
+When you pass from a Dedekind domain to an overring you get some quotient of the class group.
+Note that there are three degrees of freedom here: you get to pick $k$ to be any field, then $K/k$ some function field, and then $S$.
+For this paper, $k$ was already some weird transfinitely iterated field.
+The upshot here is that not only is every commutative group isomorphic to $\cl(T)$ for $T$ *some* Dedekind domain, $T$ is in particular a holomorphy ring of the form $R^S$.
+This is pretty useful, but not nearly as much as $R^S$ for $S$ a finite set of places.
+:::
+
+:::{.definition title="Poles and Zeros"}
+Let $f\in K\units$, then a place $v\in \Sigma(K/k)$ is a **pole** of $f$ iff $f\not\in R_v$, and $v$ is a **zero** of $f$ iff $f\in \mathfrak{m}_v$.
+:::
+
+:::{.lemma title="The divisor of a rational function is well-defined."}{#lem:poles_and_zeros}
+Let $f\in K\units$ be nonzero, then
+\[  
+\abs{\ts{v\in \Sigma(K/k) \st f\not\in R_vS}} &< \infty  && \text{(finite poles)}\\
+\abs{\ts{v\in \Sigma(K/k) \st f\in \mathfrak{m}_v S}} &< \infty && \text{(finite zeros)}
+.\]
+
+So $f$ is not regular at only a finite set of places, as as the set of points such that "$f(p) = 0$", i.e. $f$ is in the maximal ideal which makes it zero in the residue field.
+:::
+
+:::{.remark}
+Thinking of $f$ as a rational function, this says that the sets of points which are poles or zeros are both finite.
+:::
+
+:::{.proof title="of first statement"}
+If $f \in \kappa(K)$, then both sets are empty, so assume otherwise that $f$ is transcendental.
+This is because if $f$ is a nonzero constant function, i.e. it is algebraic over $k$, and both $f, f^{-1}$ lie in all of the valuation rings and none of the maximal ideals.
+Then the integral closure $A$ of $k[f]$ in $K$ is an affine Dedekind domain containing $f$.[^ca_thm_18.14]
+But we're done: for all $v\in \Sigma(K/A)$, we have $f\in R_v$ and thus
+\[  
+\Sigma(A, \infty) = \Sigma(K/k) \sm \Sigma(K/A)
+,\]
+which is finite by affine grounding.
+This is because $\Sigma(K/A)$ already has finite complement, so all but finitely many valuations are $A\dash$regular, and $f\in A$.
+Conversely, if $f$ is nonconstant it can not be regular at all places since it would then lie $\kappa(K)$.
+
+[^ca_thm_18.14]: Pete's Commutative Algebra, Theorem 18.4 (a normalization theorem).
+
+:::
+
+:::{.proof title="of second statement"}
+Note that $f\in \mathfrak{m}_v \iff v_p(f) > 0 \iff v_p(1/f) < 0 \iff 1/f\not\in R_v$, so we can just apply the first statement to $1/f$.
+:::
+
+:::{.exercise title="Function fields are always covered by $\mspec$ of two affine Dedekind domains (too easy!)"}
+Show that there exist $A_1, A_2$ affine Dedekind domain such that 
+\[  
+\Sigma(K/k) = \Sigma(K/A_1) \union \Sigma(K/A_2)
+.\]
+:::
+
+:::{.remark}
+This will follow from a theorem we haven't proved yet.
+If we think of $\Sigma(K/k)$ as a compact Riemann surface, the theorem is saying that pulling out a single point (or any finite number) then what's left is $\mspec(A)$ for $A$ an affine Dedekind domain.
+So just pull out two different points.
+:::
+
+:::{.remark}
+The lemma is allowing us to define the divisor of a rational function.
+We'll define $\Div K$ as the free $\ZZ\dash$module with bases $\Sigma(K/k)$.
+Any divisor will be of the form
+\[  
+D = \sum_{p\in \Sigma(K/k)} n_p [p]
+,\]
+where all but finitely many of the $n_p$ are zero.
+If we have a rational function $f\in K\units$, we'll define
+\[  
+\Div f = \sum_{p\in \Sigma(K/k)} v_p(f) [p]
+.\]
+How do we know this is well-defined?
+We need $v_p(f) = 0$ for all but finitely many places $p$.
+But $v_p(f) > 0 \implies f \not \in \mathfrak{m}_p$, and one part of the lemma said $f$ can only lie in finitely many $\mathfrak{m}_p$.
+On the other hand, $v_p(f)$ can't be negative, since this would imply $f\not\in R_v$.
+
+This is extremely important: the map that sends a rational function to its divisor is multiplicative and additive, so this yields a subgroup of $\Div K$ called the **principal divisors**.
+The quotient is the **class group** of $K$, and now we are cooking with gas (as Pete's undergraduate instructor used to say).
+:::
+
+:::{.theorem title="Strong Approximation"}
+Let $X \subsetneq \Sigma(K/k)$ be proper and let $p_1, \cdots, p_r\in X$.
+Let $\ts{x_j}_{j=1}^r \subset K$ and $\ts{n_j}_{j=1}^r \subset \ZZ$.
+Then there exists a single $x\in K$ such that
+\[  
+\forall 1\leq j \leq r,\, v_{p_j} (x-x_j) &= n_j \\
+\forall p\in X\sm\ts{p_j}_{j=1}^r,\, v_p(x) &\geq 0
+.\]
+:::
+
+:::{.remark}
+Note that $X$ is allowed to be infinite, so the statement only gets stronger if we allow a maximal proper subset where its complement is just a point.
+If we only had the first statement, this would be *weak approximation*.
+The conclusion is weaker, but it applies much more generally.
+One first learns this in NTII, and it applies to any finite set of inequivalent norms on a field.
+The second statement is a requirement that $x$ is regular.
+If $X$ were *not* all but one place, we should replace it by that since it'd still satisfy the hypotheses.
+Enlarging $X$ only makes the conclusion of the second statement stronger, since this is enforcing more integrality conditions.
+:::
+
+:::{.proof title="?"}
+Without loss of generality, assume that the complement $\Sigma(K/k) \sm X = \ts{p_0} \da S$ is a single place.
+We know that $R^S$ is an affine Dedekind domain (by a theorem stated but not proved yet), so apply the *Dedekind Approximation Theorem*[^ntii_prop117].
+
+[^ntii_prop117]: Pete's NTII, Proposition 1.17
+
+:::
+
+:::{.remark}
+Note that Stichtenoth uses Weil's proof of Riemann-Roch to prove this.
+Too bad he doesn't have several hundred pages of lecture notes to draw on!
+The difference between weak and strong approximation: weak applies to a finite set of places, and strong applies to all but one place.
+Later in NTII there's an adelic statement of strong approximation, which works in the more general setting of a linear algebraic group over a global field.
+You can take the adelic points of that group, remove one place, and ask if strong approximation holds.
+It turns out to depend on what kind of algebraic group you have.
+::: 
+
+## Proof of Main Theorem
+
+We return now to the proof of [@thm:main_lec_6].
+
+We're trying to show that $R^S$ for $S$ a finite and nonempty set of places is an affine Dedekind domain.
+So we need to show that it's Dedekind, and that it's finitely generated over a field.
+
+If $\emptyset \subsetneq S_1 \subsetneq S_2$ are finite subsets of $\Sigma(K/k)$, then $R^{S_1} \subseteq R^{S_2} \subset K$.
+By the structure theory of Dedekind domains,
+[^ca_232]
+every overring of a Dedekind domain is again a Dedekind domain.
+This allows us to restrict to the case where $\abs S = 1$.
+
+[^ca_232]: Pete's CA, Section 23.2.
+
+
+### Case 1
+
+We start with the case where $K$ is a one variable function field, since it should certainly be true there.
+So assume $K = k(t)$.
+If $S = \ts{v_\infty}$ is just the infinite place, then $R^S = k[t]$ from a previous discussion.
+This is definitely a Dedekind domain, since it's an affine PID.
+
+### Case 2
+
+The next case is one place of degree 1, so $S= \ts{v_{t-a}}$ corresponds to a monic irreducible polynomial, where we use the fact that the degree of the residue field is the degree of the polynomial.
+Then $R^S = k\left[{1\over t-a}\right]$.
+This is holomorphic at $\infty$, since the degree in the denominator is bigger than that of the numerator.
+So it lies in $R_{v_\infty}$ as well as $R_{v_q}$ for every monic irreducible polynomial $q$ except for $t-a$.
+This is a PID since it's isomorphic to a polynomial ring, and has fraction field $K$. (?)
+We certainly have a containment $\supseteq$, but the RHS is already an affine Dedekind domain whose $\mspec$ is everything but this single place.
+By the theory of overrings, the only other possibility is that the RHS is bigger, but going from a Dedekind domain to a larger Dedekind domain removes elements from $\mspec$.
+
+### Case 3
+
+Now consider the case $S = \ts{v_p}$ with $\deg p \da d > 1$.
+This corresponds to a monic irreducible polynomial of degree bigger than 1.
+Note that $k[t] \cong k[\alpha]$ for any transcendental $\alpha$, so we can take $k[1/p] \subset R^S$.
+This is an affine PID, and the containment follows from the fact that $1/p$ is holomorphic at $\infty$ (for the same reason as above). 
+The only way it could *not* be regular with respect to some polynomial $q$ would be that after cancelling the numerator and denominator, $q$ appears in the denominator, and that happens precisely at $p$. 
+Now taking fraction fields, we have $\ff{k[t]} = k(t)$ and $[k(t) : k(1/p)] = d$, the degree of the denominator, which follows from this exercise:
+
+:::{.exercise title="Basic but important"}
+If $p(t)/q(t) \in k(t)$ is a nonconstant rational function, then what is the degree $d \da [k(t) : k(p/q)]$?
+Show that $d = \max\ts{\deg p, \deg q}$.
+:::
+
+So $k[1/p] \subset R^S$ must be proper, since $\ff(R^S) = K$ but $\ff(k[1/p])$ is a proper extension.
+We can't have equality, so instead let $A$ be the integral closure of $k[1/p]$ in $k(t)$.
+Then $A$ is a Dedekind domain with $\ff(A) = k(t)$ and $\mspec(A) = \Sigma(k(t)/k) \sm\ts{v_p}$ from the following NTI square:
+
+\begin{tikzcd}
+	{A} && {k(t)} \\
+	\\
+	{k[1/p]} && {k(1/p)} \\
+	\\
+	{k}
+	\arrow[from=5-1, to=3-1, no head]
+	\arrow[from=3-1, to=1-1, hook]
+	\arrow[from=3-3, to=1-3, hook]
+	\arrow["{\subseteq}" description, from=1-1, to=1-3, hook]
+	\arrow["{\subseteq}" description, from=3-1, to=3-3, hook]
+\end{tikzcd}
+[Link to diagram](https://q.uiver.app/?q=WzAsNSxbMCwyLCJrWzEvcF0iXSxbMiwyLCJrKDEvcCkiXSxbMCwwLCJBIl0sWzIsMCwiayh0KSJdLFswLDQsImsiXSxbNCwwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMiwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwzLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDMsIlxcc3Vic2V0ZXEiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDEsIlxcc3Vic2V0ZXEiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ==)
+
+By affine grounding, we know $k[1/p]$ is an affine Dedekind domain, and by the second normalization theorem we know that $A$ is finitely generated as a module over $k[1/p]$, which is in turn finitely generated as an algebra over $k$, making $A$ a finitely generated $k\dash$algebra.
+The key ingredient in identifying $\mspec(A)$ is that $1/p\in A$.
+By a previous exercise, we can conclude that $A$ is a holomorphy ring, and since we know the exact excluded set is $S$, we can conclude $A = R^S$.
+This makes $A$ an affine Dedekind domain.
+\
+
+For the final case, suppose $S$ is finite and nonempty.
+Choose $v\in S$ and define $S_1 \da \ts{v}$.
+Then $R^{S_1} \subseteq R^S \subset K$, so $R^S$ is a Dedekind domain since it's an overring of a Dedekind domain.
+A surprising fact is that $A \da R^S$ is not a PID when the degree is greater than 1, and instead $\cl(A) \cong \ZZ/d\ZZ$ and is thus torsion.
+It'll be enough to show that $R^S$ is finitely generated as an algebra (but not a module?) over $R^{S_1}$, which will make it a finitely generated $k\dash$algebra, and we'd really like it to be a localization.
+We examined this before: is every overring of a Dedekind domain a localization?
+A theorem of Clayborne shows that this is true when the class group is torsion.
+
+Let $v_2 \in S\sm S_1$, so that every such $v_2$ yields an ideal $\mathfrak{p}_{v_2} \in \mspec R^{S_1}$.
+Since $\cl(R^S) = \ZZ/d\ZZ$, we don't know that $\mathfrak{p}_{v_2}$ is principal, but we do know that $\mathfrak{p}_{v_2}^\alpha$ is for some power $\alpha$
+Note that localization is forgiving in the sense that inverting an element $x$ is equivalent to inverting any power $x^k$ (e.g. using that $1/x = x^{k}/x^{k+1})$.
+So we can write $\mathfrak{p}_{v_2}^\alpha = \gens{f}$, and it follows that $R^{\ts{v, v_2}} = R_v[1/f]$ is an affine domain which is obtained by localizing $f$.
+Note that we can think of this overring as puncturing or removing one place (a certain maximal ideal) at a time, i.e. intersecting over all of the maximal ideals except one in order to go from $R^{S_1} = R^{\ts{v_1}}$ to $R^{\ts{v_1, v_2}}$.
+You can continue this inductively using the fact that $R_v[1/f]$ is a different Dedekind domain -- since it's an overring, the corresponding class group is a quotient and thus still torsion.
+You could also continue this inductively by just puncturing one point at a time.
+You can also do it all at once: for each element in $S$ not equal to $v_1$, obtain an $f_j$, and invert the product $\prod_j f_j$.[^alt_ca_236]
+
+
+**Key fact**:
+We're in a lucky situation where we don't have a PID, but we have a torsion class group.
+Anytime you pass to an overring by puncturing finitely many maximal ideals, it will always be a localization and thus monogenic as an algebra over the smaller Dedekind domain.
+
+[^alt_ca_236]: Alternatively, see Pete's Commutative Algebra, Corollary 23.6.
+
+## Case 3: Fixed Proof
+
+The remainder of the proof will go toward reducing to the first step of a function field and exactly one place.
+We'll apply the Riemann-Roch theorem, however this does not rely on results on holomorphy rings, so there's no logical circularity.
+As usual, we lose no generality by replacing $k$ with $\kappa(K)$ and just assuming that $\kappa(k) = k$.
+\
+
+Let $S \subset \Sigma(K/k)$ be finite and nonempty.
+Then by Riemann-Roch there exists an $f\in K\units$ having poles precisely at the elements of $S$, i.e. $f$ is regular away from $S$.
+
+> Recall that poles were defined as elements not in $R_v$.
+This is motivated by considering meromorphic functions $f$ on $\CC$, then the order of vanishing of $f$ at $p$ is a discrete valuation, and if that valuation is negative then $p$ is a pole.
+
+Note that we're specifying the poles but not their orders, and allowing poles of arbitrary orders would still allow us such a rational function by a result like the Riemann inequalities, which is easier to prove than the Riemann-Roch theorem.
+You can also obtain such a function from the Strong Approximation theorem.
+\
+
+Since $f$ has poles, it's nonconstant, so we have a nontrivial map $r: \Sigma(K/k)  \to \Sigma(k(f)/k)$ to a rational function field and thus $r^{-1}(\infty) = S$ since the poles all like above the place at $\infty$.
+The analogy here is a holomorphic function $f$ from a compact Riemann surface to $\PP^1_{/\CC}$, in which case $f^{-1}(\infty)$ is the set of poles.
+Since $k[f]$ is a polynomial ring, we can take the integral closure of $k[f]$ in $K$, say $B$, in which case $B$ is an affine Dedekind domain and $\mspec(B) = \Sigma(K/k)\sm S$.
+
+The picture is as follows: think of $k(f)$ as the Riemann sphere with the point $\infty$ and $\Sigma(K/k)$ as a Riemann surface above it, then $S$ is the preimage of $\infty$.
+
+![Image](figures/image_2020-12-01-22-09-07.png)
+
+If you have an upstairs valuation $v \in \Sigma(K/k)$ in an integral extension, then it is regular upstairs iff its restriction downstairs is regular.
+Completing the NTI square yields
+
+
+\begin{tikzcd}
+	{B} && {K} \\
+	\\
+	{k[f]} && {k(f)}
+	\arrow["{\subseteq}" description, from=3-1, to=1-1, hook]
+	\arrow["{\subseteq}" description, from=3-3, to=1-3, hook]
+	\arrow["{\subseteq}" description, from=1-1, to=1-3, hook]
+	\arrow["{\subseteq}" description, from=3-1, to=3-3, hook]
+\end{tikzcd}
+[Link to diagram](https://q.uiver.app/?q=WzAsNCxbMCwyLCJrW2ZdIl0sWzAsMCwiQiJdLFsyLDAsIksiXSxbMiwyLCJrKGYpIl0sWzAsMSwiXFxzdWJzZXRlcSIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzMsMiwiXFxzdWJzZXRlcSIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzEsMiwiXFxzdWJzZXRlcSIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMywiXFxzdWJzZXRlcSIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d)
+
+Here $B$ is the integral closure.
+So if we take a valuation in $K$, it is $B\dash$regular iff its restriction to $k(f)$ is $A\dash$regular.
+But $R_v$ contains $k[f]$ iff it contains $f$, since it's already a $k\dash$valuation, so the non-regular valuations are those that restrict to $\infty$.
+
+
+Now if you have an extension of Dedekind domains, then the maximal ideals upstairs are everything which restricts to a finite place downstairs.
+So those that don't restrict to a finite place restrict to $\infty$, which is precisely the preimage of $\infty$.
+With the identification of $\mspec(B) = \Sigma(K/k) \sm S$,we have $B \subset R^S$ since every valuation in the complement of $S$ is regular at $B$ by this argument.
+Since $B \subset R^S \subset K$, we can use the classification of overrings of Dedekind domains, and the $\mspec$ corresponds to precisely the maximal ideals that are being intersected.
+The only way this could be a *proper* extension would be if the $\mspec$ shrank, but then $R^S$ would be the holomorphy ring attached to a larger set than $S$.
+So we obtain an equality.
+
+$\qed$
+
+# Lecture 7: Riemann-Roch
+
+## Divisors
+
+:::{.definition title="Divisor group"}
+The **divisor group** $\Div K$ is the free $\ZZ\dash$module with basis $\Sigma(K/k)$, so
+\[  
+\Div K \da \bigoplus_{p\in \Sigma(K/k)} \ZZ
+.\]
+Thus every $D\in \Div K$ is of the form $D = \sum_{p\in \Sigma(K/k)} n_p p$ where $n_p\in \ZZ$ and are almost all zero, recalling that a point $p\in \Sigma(K/k)$ is an equivalence class of valuations.
+:::
+
+:::{.definition title="Effective Divisor"}
+A divisor $D = \sum n_p p$ is **effective** iff $n_p \geq 0$ for all $p$ and write $D\geq 0$.
+:::
+
+:::{.definition title="Support of a divisor"}
+The **support** of a divisor $D$ is the set of places $p\in \Sigma(K/k)$ such that $n_p(D) \neq 0$.
+Note that this is always a finite set, and the zero divisor is the unique divisor supported on $\emptyset$.
+:::
+
+:::{.definition title="Partial order on divisor"}
+We write $D_1 \leq D_2$ iff $D_2 - D_1 \geq 0$ is effective.
+Note that this holds iff for all places $p\in \Sigma(K/k)$, if $D_1 = \sum_p m_p p$ and $D_2 = \sum_p n_p p$, then $m_p\leq n_p$ for all $p$.
+:::
+
+This is a partially ordered commutative group, which came up when we were talking about groups of divisibility.
+It's a reasonable group when studying domains with nice factorization properties: if $R$ is a UFD with a set of principal prime ideals[^primes_ufd]
+denoted $\Sigma(R)$, then the group of divisibility $G(R)$ is isomorphic to $\bigoplus_{(p) \in \Sigma(R)} \ZZ$ as a partially ordered commutative group.
+
+[^primes_ufd]: Note that primes in a UFD are principal.
+
+There is an analogy: comparing UFDs to Dedekind domains, we trade unique factorization of elements for factorization of ideals, and the group of all fractional ideals in a Dedekind domain is a free commutative group on its set of prime ideals.
+So $\Div K$ is analogous to the group of divisibility of a UFD and to the group of fractional ideals of a Dedekind domain, the latter of which is the closer analogy.
+So $\Div K$ is a geometric or projective analog of the group of fractional ideals, and is more than an analogy as we'll see later.
+
+:::{.definition title="Degree of a Divisor"}
+There is a group morphism
+\[  
+\deg: \Div K &\to \ZZ \\
+D = \sum_p n_p p &\mapsto \sum_p n_p \deg p
+.\]
+Its kernel is denoted $\Div^0 K$, the **degree zero divisors**.
+Note that if $k = \bar k$, then $\deg p = 1$ for all $p$.
+:::
+
+:::{.remark}
+Note that this is similar to the augmentation in a group ring.
+This construction can be done with any free $\ZZ\dash$module, and makes sense because only finitely many terms are nonzero.
+Recall that to define the degree of a place $v\in \Sigma(K/k)$, we consider $R_v \da \ts{x\in K \st v(x) \geq 0}$ and $\mathfrak{m}_v \da \ts{x\in K \st v(x) >0}$, and $k(v) \da R_v / \mathfrak{m}_v$ is the residue field.
+Note that $k(v)$ is a field extension of $k$ by composing $k\injects R_v \surjects k(v)$, and we proved used affine grounding and Zariski's lemma that this was a finite degree extension.
+We can then define $\deg v \da [k(v) : k]$.
+Note that it's more natural to think of valuations $v$ as points $p$.
+:::
+
+:::{.definition title="Index of a divisor"}
+The **index** of $K$ is defined as
+\[  
+I(K) \da \abs{\coker \deg}
+.\]
+[^ec_appearance]
+
+[^ec_appearance]: This quantity made an appearance near the end of Pete's advanced course on elliptic curves.
+
+:::
+
+:::{.remark}
+Note that $I(K)$ is nonzero, since we can think of $p\in \Div K$ as the divisor with $n_q = \indic{q=p}$, so the image contains a subset consisting of all degrees of all places, so the image is of the form $d\ZZ$ for some $d$.
+Some other characterizations:
+
+- $\deg\qty{\Div K} = I(K)\ZZ$, so $I(K)$ is the generator of the degree ideal.
+- $I(K)$ is the least positive degree of a divisor on $K$.
+- $I(K) = \gcd\qty{\ts{\deg p \st p\in \Sigma(K/k)}}$, i.e. the $\gcd$ of the closed points.
+
+
+The last characterization follows because we have generators of $\Div K$ given by "skyscraper" divisors $p$ where $n_q = 1 \iff p=q$, so the image is the subgroup of $\ZZ$ generated by the degrees of the points, i.e. the $\gcd$ of the degrees.
+
+:::
+
+:::{.exercise title="?"}
+Let $K/k$ be a one variable function field.
+
+a. Show that if $\Sigma_1(K/k) \neq \emptyset$ then $I(K) = 1$.
+
+b. Later we will show that if $\abs{k} < \infty$ then $I(K) = 1$ but $\Sigma_1(K/k)$ may be empty. 
+  Try to show this.
+
+c. Show that if $k=\bar k$ then $I(K) = 1$.
+
+:::
+
+:::{.remark}
+(a) follows from the Riemann hypothesis for curves over a finite field, although this is not how you should prove it.
+It was proved by F.K. Schmidt much earlier in the 20th century, and this is the basic way of understanding the zeta function of a curve.
+(b) says that over a finite ground field, you may not have any degree 1 places.
+You can try constructing a hyperelliptic curve over a finite field $\fq$ with no rational points, which is always possible if the genus is large compared to the size of $\fq$.
+:::
+
+:::{.lemma title="?"}
+For a nonzero rational function $f\in K\units$ we have $v_p(f) = 0$ for almost every place $p\in \Sigma(K/k)$.
+:::
+
+:::{.proof title="?"}
+See previous lecture, in particular [@lem:poles_and_zeros].
+:::
+
+This says that the set of places for which the valuation is nonzero is finite, so except for finitely many places the valuation is zero.
+This allows us to define the divisor of a rational function:
+\[  
+(\wait): K\units &\to \Div K \\
+f &\mapsto (f) \da \sum_p v_p(f) p
+,\]
+which is a group morphism.
+
+:::{.exercise title="?"}
+Show that $(f) = 0 \iff f \in \kappa(K)$, which we're assuming is equal to $k$.
+This happens when it has neither zeros nor poles, so it's an intersection of all of the $R_v$, which is the integral closure of $k$ in $K$.
+In general, this would mean that $f$ is algebraic over $k$.
+So $\ker (\wait) = k\units$.
+:::
+
+:::{.definition title="Poles and Zeros of Elements of $K$"}
+For any $D\in \Div K$ one may uniquely write it as $D = D_+ - D_-$, which are both effective divisors and so $D_+, D_- \geq 0$, and the uniqueness follows from requiring $\supp(D_+) \intersect \supp(D_-) = \emptyset$.
+Note that this is just collecting positive and negative $n_p$ into each term, and leaving out all divisors for which $n_p = 0$.
+
+
+For $f\in K\units$, we define
+\[  
+(f)_+ &\da \text{the divisor of zeros of } f \\
+(f)_- &\da \text{the divisor of poles of } f 
+,\]
+where we can note that $(f) = (f)_+ - (f)-$.
+:::
+
+The next proposition shows that these geometric divisors can be interpreted in terms of $\fq$ points.
+
+:::{.proposition title="?"}
+Let $f\in K\sm k$ be transcendental.
+
+a. Let $B_0$ be the integral closure of $k[f]$ in $K$, which is an affine Dedekind domain of $K$, i.e. its fraction field is $K$.[^as_usual_dd]
+
+  Then
+  \[  
+  fB_0 = \prod_{j=1}^r p_j^{a_j} \implies (f)_+ = \sum_{j=1}^r a_j p_j
+  .\]
+
+b. Let $B_ \infty$ be the integral closure of $k[1/f]$ in $K$, which is an affine Dedekind domain of $K$.
+  Then
+  \[  
+  \qty{1\over f} B_ \infty = \prod_{j=1}^s q_j^{b_j} \implies (f)_+ = \sum_{j=1}^s b_j q_j
+  .\]
+
+
+[^as_usual_dd]: As usual for an extension of Dedekind domains, we push forward an ideal (maybe principal) into its integral closure and see how it factors.
+
+:::
+
+:::{.exercise title="?"}
+Prove this proposition.
+:::
+
+:::{.remark}
+This says that pushing forward an ideal and looking at the factorization is precisely what's needed to determine the divisor of zeros.
+There aren't many new ideas for this proof, the point is that the set of places upstairs is being controlled by $\mspec$ of Dedekind domains.
+:::
+
+:::{.slogan}
+In any affine coordinate chart, the divisor of a function is a principal fractional ideal.
+:::
+
+## The Degree of the Divisor of a Rational Function is Zero
+
+:::{.corollary title="Excruciatingly Important: the degree of the divisor of any rational function is zero."}
+Let $f\in K\sm k$ be transcendental, then
+
+a. $\deg(f)_+ = [K : k(f) ] = \deg (f)_-$
+
+b. $\deg (f) = 0$.
+
+:::
+
+:::{.remark}
+Here think of $f$ as a holomorphic map from a curve to $\PP^1_{/\CC}$, and the degree of this extension is the degree of the corresponding branched cover.
+For $\CC$, this is literally the cardinality of any finite fibers.
+Note that (a) follows by symmetry sense $k(f) \cong k(1/f)$.
+:::
+
+:::{.proof title="?"}
+This comes down to NTI.
+We know $\deg(f)_+ = \sum{j=1}^r a_j \deg p_j$.
+In $K/k(f)$, the places $p_1, \cdots, p_r$ all lie over the degree 1 place $v_f$ of $k(f)$.
+The places where upstairs you have a zero are the places where to coordinate downstairs is equal to zero, which corresponds to the irreducible polynomial in $f$ given by $f$ itself.
+Since the residue field at $v_f$ downstairs is $k$ itself, since it is $k[f]/\gens{f}$.
+So the downstairs places has degree 1, and so the degree of the upstairs places, whatever the residue field is, its degree over $k$ is equal to its degree over the downstairs residue field.
+Thus the geometric $\deg p_j$ coincides with the residual degree $f_i$, and $a_i$ is the ramification index in the extension of Dedekind domains $B_0 / k[f]$.
+\
+
+So we have a degree equality,
+\[  
+\sum_{j=1}^r a_j \deg p_j = \sum e_j f_j = [K: k(f)]
+,\]
+where the second equality follows from having an extension of Dedekind domains with this nice finite generation hypothesis.
+We similarly get $[k: k(f)] = \deg(f)_-$.
+\
+
+Note that part (b) follows immediately, since $(f) = (f)_+ - (f)_-$ implies that \
+\[
+\deg(f) = \deg(f)_+ - \deg(f)_- = [k: k(f)] - [k: k(f)] = 0
+.\]
+
+:::
+
+:::{.remark}
+We have two different things that sound like the degree of a rational function.
+We define the degree of a rational function $f\in K\sm k$ as $[K: k(f)]$, otherwise it is the degree (number of sheets) of the corresponding branched covering of $\PP^1$.
+But note that we also attached a divisor to $f$, which may be confusing, be hard to confuse in practice because we found that $\deg(f) = 0$ always.
+:::
+
+:::{.definition title="Principal Divisors"}
+The divisor of a rational function is called **principal**, we define $\Prin K$ to be the group of principal divisors.
+:::
+
+:::{.exercise title="$\Prin K$ is a group"}
+For $f, g\in K\units$, show that
+
+a. $(1/f) = -(f)$,
+
+b. $(fg) = (f) + (g)$,
+
+c. $\Prin K \leq \Div^0 K$ is a subgroup (since we know they're degree zero).
+
+:::
+
+
+:::{.definition title="Linear Equivalence"}
+For $D_i \in \Div K$, we set $D_1 \sim D_2 \iff D_1 - D_2 \in \Prin K$, in which case we say these divisors are **linearly equivalent**.
+:::
+
+:::{.remark}
+Near the end of the course we'll see why this is good terminology: it's related to morphisms of projective space attached to linear systems.
+:::
+
+:::{.definition title="Divisor Class Group"}
+We define the **divisor class group** as 
+\[  
+\cl K \da \Div K/\sim = \Div K / \Prin K
+.\]
+:::
+
+But note that there's something between $\Prin K$ and $\Div K$, namely $\Div^0 K$:
+
+:::{.definition title="Degree 0 Divisor Class Group (Important! Fundamental!)"}
+We define the **degree 0 divisor class group** as 
+\[  
+\Cl^0 K  \da \Div^0 K / \sim = \Div^0 K / \Prin K
+.\]
+:::
+
+:::{.remark}
+This is extremely important!
+Attached to a curve is a Jacobian abelian variety, a nice group variety whose dimension is equal to the genus of the curve, and the $k\dash$rational point of the Jacobian will become a commutative group that is isomorphic to $\Div^0 K$.
+:::
+
+
+:::{.exercise title="?"}
+Show that we have the following exact sequences:
+
+a. 
+\[  
+1 \to k\units \to K\units \mapsvia{(\wait)} \Prin K \to 0
+.\]
+
+
+b.
+\[  
+0 \to \Cl^0 K \to \Cl K \mapsvia{\deg} I(K) \ZZ \to 0
+.\]
+
+Deduce that $\Cl K \cong \Cl^0 K \oplus \ZZ$.
+
+:::
+
+:::{.remark}
+For (a), we saw that rational functions that have zero divisors are constants, assuming that $\kappa(K) = k$.
+For (b), because principal divisors have degree zero, the degree map factors through the quotient.
+The deduction comes from that fact that we have a free and hence project $\ZZ\dash$module, yielding a splitting.
+:::
+
+:::{.exercise title="Very important, Pete insists that someone solves it!"}
+\envlist
+a. Show that $\Div ^0 k(t) = \Prin k(t)$.
+
+b. Deduce that $\deg: \Cl k(t) \mapsvia{\sim} \ZZ$ and $\cl^0 k(t) = 0$.
+
+:::
+
+:::{.remark}
+Note that $I(K) = 1$ in this case since both the $t\dash$adic or $\infty\dash$adic valuation have degree one.
+Moral: the class groups are not interesting on rational function fields.
+You have to take a degree zero divisor on a rational function field and build a rational function whose divisor is any given degree.
+This is extremely useful!
+:::
+
+:::{.remark}
+More general if $K/k$ has genus zero (e.g. a rational function field), then working over $\CC$ we would have $\Cl^0 K$ equal to the points of some compact complex Lie group of $\CC\dash$dimension $g$, so a large complex torus, unless $g=0$.
+So if $k= \bar k$, $\Cl^0 K$ will be uncountably infinite when $g>0$.
+If not, it might trivial, or it might be anything in between.
+:::
+
+The following result appears in a 1973 paper of Rosen, where he attributes it to F. K. Schmidt.
+It gives a close relationship between $\Cl^0 K$ and the class groups $\Cl R^S$ of the affine Dedekind domains of $K$.
+This shows that instead of $\Cl^0 K$ just being an analogue of the class group of a Dedekind domain, there's almost the same.
+If you fix $K$, $\Cl^0 K$ is just one group attached to it, but there are infinitely many $R^S$ since there are infinitely many places.
+So these groups can not be equal, since we could change the size of $S$ to obtain overrings of Dedekind domains, where the resulting class groups are quotients.
+So you could kill finitely many elements in the class group of the Dedekind domain by just passing to an overring by adding finitely more places.
+
+:::{.theorem title="Rosen"}
+Let $S \subset \Sigma(K/k)$ be nonempty and finite, and recall that the holomorphy ring was defined as
+\[  
+R^S = \intersect_{v\in \Sigma(K/k)} R_v
+.\]
+
+Define the following:
+
+- $D^0(S)$: the degree 0 divisors with support in $S$.
+- $P(S) \da \Prin K \intersect D^0(S)$, the principal divisors supported in $S$.
+  - Divisors of rational functions all of whose zeros and poles lie in $S$.
+- $d_S$: The least positive degree of a divisor supported on $S$.
+  - Note that this is different to the index in that we restrict to $S$, and is thus a multiple of $I(K)$.
+
+Then there is an exact sequence
+\[  
+0 \to D^0(S) / P(S) \mapsvia{\iota} \Cl^0 K \mapsvia{\alpha} \Cl R^S \mapsvia{\beta} C(d/ I(K)) \to 0
+.\]
+
+:::
+
+:::{.proof title="?"}
+See NTII, Theorem 3.27.
+:::
+
+:::{.remark}
+Note that the kernel $D(S)/P(S)$ could be infinite but is always finitely generated.
+The map $\alpha$ is induced by
+\[  
+\alpha': \Div K &\to \Frac R^S \\
+\sum n_p p  &\mapsto \prod_{p\in \mspec R^S} p^{n_p}
+,\]
+where we note that $\mspec R^S \subset \Sigma(K/k)$, and in fact $\Sigma(K/k) = \mspec R^S \disjoint S$.
+We can do this because if $p$ is already in $\maxspec R^S$, we raise it to an appropriate power, and otherwise, for the finitely many $p\in S$ we just get rid of them.
+But this kills of some elements, namely those things supported in $S$, hence the kernel in the exact sequence.
+\
+
+Note that the last group appearing is finite cyclic of order $d/I(K)$.
+If you just looked at $D^0(S)$ before modding out by principal divisors, if you didn't impose degree zero, the subgroup would be isomorphic to $\ZZ^{\abs{S}}$.
+But there's a linear condition that the degree is equal to zero, which cuts down the dimension by 1, yielding $\ZZ^{\abs S - 1}$.
+It's hard to say how much $P(S)$ is cutting down the size.
+:::
+
+:::{.remark}
+The moral is that there is a map, but the kernel and cokernel both depend on $S$.
+If you understand $\Cl^0 K$, however, you have a good handle on all $\Cl R^S$.
+:::
+
+:::{.exercise title="?"}
+\envlist
+
+a. Show that $D^0(S) \cong \ZZ^{\abs S - 1}$.
+
+b. Suppose $S$ consists of a single place whose degree is the quantity $d_S$ appearing in the previous theorem, the least positive degree of a divisor supported on $S$.
+  Show that there is an exact sequence
+  \[  
+  0 \to \Cl^0 K \mapsvia{\alpha} \Cl R^S \mapsvia{\beta} C(d_S/I(K)) \to 0
+  .\]
+
+c. Deduce that $\alpha$ is an isomorphism iff $I(K) = d$.
+
+d. Deduce that if $p\in \Sigma(k(t)/k)$ has degree $d$, then $\Cl R^{\ts p} \cong \ZZ/d\ZZ$.
+
+e. Deduce that if $S = \ts p$ and $\deg p = 1$, then $\alpha: \Cl^0 K \to \Cl R^S$ is an isomorphism.
+:::
+
+:::{.remark}
+Note that if you're given a finite set of places and ask for all of the rational functions that have zeros and poles only at those places, it is difficult to determine how close that is to filling out the entire degree zero divisor class group?
+If you have two degree 1 points $p_i$, so $\abs S = 2$, do you have a rational function whose divisor is $p_1 - p_2$?
+Probably not, because then the divisor of such a function would have degree 1.
+You can continue this line of thought, but already using elliptic function fields you can see that all of these algebraic possibilities can occur.
+:::
+
+:::{.remark}
+Note that in the case where $S$ is a single point of degree $d$, then $d_S$ is equal to the degree of the point $d$.
+On the other extreme, consider what happens when $I(K) = 1$.
+Then $C(d_S)$ is cyclic of order $d$, so in (c) if we have a rational function field, we know it has degree 1 places (like $0, \infty$), and the class group is zero.
+So if you take one place on $\PP^1$ of degree $d$ and look at the correspond affine Dedekind domain of functions that are regular away from that one place 
+$R^{\ts p}$, then the class group is nontrivial and it's thus not a PID.
+Note that $\Cl^0 \PP^1$ is trivial, and puncturing it has an effect on the divisor class.
+:::
+
+:::{.exercise title="?"}
+\envlist
+
+a. Suppose $\Cl^0 K$ is finite, and show that every $\Cl R^S$ is finite.
+[^later_we_will_show_finite]
+
+b. Suppose $\Cl^0 K$ is finitely generated, and show that for all finite nonempty $S \subset \Sigma(K/k)$, there exists a finite $S' \supset S$ such that $\Cl R^{S'}$ is trivial.
+
+[^later_we_will_show_finite]: Later we will show that $\Cl^0 K$ is finite when $k$ is finite.
+
+:::
+
+:::{.remark}
+This is the positive characteristic version of one of the basic finiteness theorems from NTI: the ring of integers of any number field has finite class group.
+But the $S\dash$class group is always finite, since it's a quotient of the class group, and that's what's happening here.
+It's enough to show that the $\Cl^0 K$ and $C(d_S/ I(K))$ appearing in the SES in the previous theorem are finite, since the first term can only cut down the size.
+The groups $\Cl R^S$ when $k$ is finite are analogues of the $S\dash$class groups of number fields.
+In the function field case, you can't get away from the $S\dash$class group, since if $S= \emptyset$ then $R^S$ is not an interesting Dedekind domain: it's just $\kappa(K)$.
+So you have to put something at $\infty$ to even get a 1-dimensional domain, whereas in the number field case, you always have a finite nonempty set of nonarchimedean places.
+
+This allows us to deduce from the finiteness of this one geometric group the finiteness of $S\dash$class groups in the characteristic $p$ case.
+If done correctly, this can be used to prove the finiteness of class groups of all number fields, e.g. if you do things in an adelic way in NTII.
+:::
+
+:::{.theorem title="Trotter, 1988"}
+The ring $R[\cos \theta, \sin \theta]$ of real trigonometric polynomials is not a UFD, while $\CC[\cos \theta, \sin \theta]$ is a PID.
+:::
+
+:::{.remark}
+Trotter shows that using $\sin(\theta)\sin(\theta) = (1+\cos(\theta))(1-\cos(\theta))$ exhibits non-unique factorization, since the terms appearing are non-associate irreducible elements in an integral domain.
+See Pete's list of exercises.
+Note that given an affine Dedekind domain how one figures out what the infinite places are concretely, but this will come up when discussing hyperelliptic curves.
+:::
+
+:::{.remark}
+One exercise applies Rosen's theorem to show that $\Cl \RR [\cos(\theta), \sin(\theta)] = \ZZ/2\ZZ$ while $\Cl \CC[\cos(\theta), \sin(\theta)] = 1$.
+What's happening is that over $\RR$, there is perhaps one degree 2 place at $\infty$, but after extending scalars to $\CC$ it breaks up into two degree 1 places.
+:::
+
+
+# Lecture 8: Riemann-Roch Spaces  (Part 1)
 
 ## Setup for the Riemann-Roch Theorem
 
@@ -1913,7 +2784,7 @@ The only way a degree zero divisor can have a nontrivial Riemann-Roch space is i
 
 ## Subspaces and Dimension of Riemann-Roch Spaces
 
-:::{.lemma title="?"}
+:::{.lemma title="?"}{#lemma:divisor_order_to_subspaces}
 Let $A \leq B$[^def_from_places]
 in $\Div K$, then
 
@@ -2080,6 +2951,215 @@ There exists a $\delta = \delta(K/k) \in \ZZ$ such that for all $A\in \Div K$, w
 \deg A - \ell(A) \leq \delta
 .\]
 :::
+
+# Lecture 8: Riemann-Roch Spaces  (Part 2)
+
+Recall the proposition we ended with last time:
+
+:::{.proposition title="?"}{#prop:deg_bounded_above}
+There exists a $\delta = \delta(K/k) \in \ZZ$ such that for all $A\in \Div K$, we have
+\[  
+\deg A - \ell(A) \leq \delta
+.\]
+:::
+
+:::{.exercise title="?"}
+This proposition is enough to show the existence of rational functions whose polar divisor has as its support any finite subset $S \subset \Sigma(K/k)$.
+:::
+
+Most of the lecture will be the proof of this statement.
+
+## Proof of Upper Bound
+
+Rewriting [@lemma:divisor_order_to_subspaces] yields
+\[  
+A_2, A_2 \in \Div K,\, A_1 \leq A_2 \implies \deg A_1 - \ell(A_1) \leq \deg A_2 - \ell(A_2)
+.\]
+
+### Step 1
+
+Choose an $x\in K\sm k$ and set $B\da (x)_-$.
+
+:::{.claim}
+There exists a $C\geq 0$ such that for all $n\geq 0$,
+\[  
+\ell(nB + C) \geq (n+1) \deg B
+.\]
+:::
+
+So we give ourselves a certain effective divisor: the divisor of poles of an arbitrary nonconstant element.
+We can then get a preliminary asymptotic lower bound, not on the same Riemann-Roch space, but on a new one after augmenting the space by some fixed effective divisor $C$.
+
+:::{.proof title="?"}
+Since $K/k(x)$ has finite degree, let $u_1,\cdots, u_d$ be a basis for $K$ consisting of finitely many rational functions.
+Note that $d = [K: k(x)]$, and is also equal to $\deg B$ since $B$ was a divisor of poles.
+Noting that the divisor groups are free commutative groups, so taking any finite number of elements in $\bigoplus \ZZ$, we can find an element that is less than or equal to all of them.
+Thus we can choose a $C\geq 0$ such that 
+\[  
+(u_i) \geq -C && \forall 1\leq i \leq d
+.\]
+
+Since the $u_i$ are $k(x)\dash$linearly independent in $K$, the functions $\ts{x^i u_j \st\, 0\leq i \leq n,\,\, 1\leq j \leq d}$ are $k\dash$linearly independent, since any $k\dash$linear relation would immediately yield a $k(x)\dash$linear relation among the $u_i$.
+
+:::{.exercise title="?"}
+If $f_i\in \mathcal{L}(D_i)$, so the poles of $f$ are no worse than $D_i$, then the poles of $f_1 f_2$ are bounded by $D_1 + D_2$ and thus $f_1 f_2 \in \mathcal{L}(D_1 + D_2)$.
+:::
+
+
+Now we can note that there are $(n+1)d = \deg B$ many elements here,
+and moreover, these all lie in $\mathcal{L}(nB + C)$ since each $(u_j) \geq -C$ and $(x) \geq - B$ and $i\leq n$.
+From this we can conclude
+\[  
+\ell(nB+c) \geq (n+1) d = (n+1) \deg B
+.\]
+
+:::
+
+### Step 2
+
+We'll now show that throwing in the fixed divisor $C$ can't increase the Riemann-Roch space that much, and in fact
+\[  
+\ell(nB + C) \leq \ell(nB) + \deg C
+,\]
+and so we get a bound
+\[  
+\ell(nB) 
+&\geq \ell(nB + C) - \deg C \\
+&\geq (n+1) \deg B - \deg C \\
+&= \deg(nB) + \qty{ [K:k(x)] - \deg C} \\
+&\da \deg(nB) \pm \gamma
+,\]
+
+which shows that
+\[  
+\forall n\geq 0,\, \, \deg(nB) - \ell(nB) \leq \gamma
+.\]{#eq:step_2_bound}
+
+A problem here is that $\gamma$ depends upon everything that we've done so far, and this inequality only holds for multiples of a fixed divisor (an infinite ray emanating from $B$).
+
+### Step 3
+
+:::{.claim}
+For all $A\in \Div K$, there exist $A_1, D \in \Div K$ and $n\geq 0$ such that $A \leq A_1$,  $A_1 \sim D$, and $D\leq nB$.
+I.e. although it can't literally be true that $A \leq nB$, it will be up to linear equivalence.
+:::
+
+To see this, set $A_1 \da \max(A, 0)$.
+Using the bound from [@eq:step_2_bound], for $n\gg 0$ we have
+\[  
+\ell(nB - A_1) 
+&\geq \ell(nB) - \deg A_1 \\
+&\geq \deg(n B) - \gamma - \deg A_1 \\
+&> 0
+,\]
+and so there exists a $z\in \mathcal{L}(nB - A_1)\nonzero$, a nontrivial element in the linear system.
+
+:::{.remark}
+The first inequality is an application of our lemma because $A_1$ is effective, which was the point of this maneuver.
+I.e., in order to get from $nB - A_1$ to $nB$, we added $A_1$, which can only increase the dimension of the space by at most $\deg A_1$.
+Finally, in the last inequality, we use the fact that $B$ has positive degree since it's a divisor of poles of a nonconstant rational function, and the remaining terms don't depend on $n$, so we can make $\deg(nB)$ arbitrarily large.
+:::
+
+So now set $D \da A_1 - (z)$, then $A_1 \sim D$ and since it's in the linear system,
+\[
+(z) \geq - (nB - A_1) = A_1 - nB
+\]
+so $-(z) \leq nB - A_1$ and by adding $A_1$ to both sides, we obtain
+\[  
+0 = A_1 - (z) \leq nB
+.\]
+
+What have we shown?
+For any divisor $D$, we can make it less than $nB$ for some $n$, up to linear equivalence.
+
+### Step 4
+
+Finally, for $A\in \Div K$, choose $A_1, D$ as in the previous step, so $A\leq A_1 \sim D \leq nB$.
+Then
+\[  
+\deg A - \ell(A) 
+&\leq \deg(A_1) - \ell(A) && \text{using } A\leq A_1\\
+&= \deg(D) - \ell(D) && \text{changing within linear equivalence class}\\\
+&\leq \deg(nB) - \ell(nB) \\
+&\leq \gamma
+.\]
+
+$\qed$
+
+## Genus
+
+:::{.definition title="Genus (Important!)"}
+The **genus** of $K/k$ is defined as
+\[  
+g \da \max_{A\in \Div K}(\deg(A) - \ell(A) + 1)
+.\]
+This exists by the [@prop:deg_bounded_above], since this set is bounded above.
+:::
+
+:::{.exercise title="?"}
+Show that $g\geq 0$ always and 
+\[  
+g(k(t)/k) = 0
+.\]
+:::
+
+
+:::{.remark}
+Note that if the $+1$ is mostly a correction factor to match up with the topological genus of $\PP^1_{/\CC}$.
+That the genus is non-negative should come from the lower bound we had from before.
+It turns out that over $k=\CC$, this genus will agree on the nose with the topological genus of the corresponding compact Riemann surface.
+:::
+
+:::{.theorem title="Riemann's Inequality"}
+If $K/k$ is a function field of genus $g$,
+
+a. For all $A\in \Div K$, 
+\[  
+\ell(A) \geq \deg(A) + 1 - g
+.\]
+
+b. There exists a $c = c(K) \in \ZZ$ such that for all $A \in \Div K$,
+\[  
+\deg(A) \geq c \implies \ell(A) = \deg(A) - g + 1
+.\]
+:::
+
+:::{.remark}
+This says that the dimension of the linear system is very close to the degree of the corresponding divisor, and is only off by a constant factor $g$.
+Part (a) is literally just a rearrangement of the definition of the genus.
+Part (b) says that if you assume $A$ has sufficiently large degree, this upper bound becomes an equality.
+:::
+
+:::{.proof title="of b"}
+By the definition of $g$, since it is a maximum there exists an $A_0$ such that 
+\[  
+g = \deg(A_0) - \ell(A_0) + 1
+.\]
+Set $c\da \deg(A_0) + g$.
+Then if $\deg(A) \geq c$, we have
+\[  
+\ell(A - A_0) 
+&\geq \deg(A-A_0) - g + 1 \\
+&\geq c - \deg(A_0) - g + 1 \\
+&= 1
+,\]
+so there exists a $z\in \mathcal{L}(A- A_0)\nonzero$ since the dimension is at least 1.
+
+Now set $A' \da A + (z)$, and note that $A' \geq A_0$.
+Thus
+\[  
+\deg(A) - \ell(A) 
+&= \deg(A') - \ell(A') \\
+&\geq \deg(A_0) - \ell(A_0) && \text{by the lemma}\\
+&=g-1
+.\]
+
+By maximality of the genus, we have $\deg(A) - \ell(A) \leq g-1$, which forces equality
+:::
+
+Next up: how to we make this inequality into an equality?
+It turns out that there is some different divisor $D'$ and we can subtract off $\ell(D')$, and that will be the Riemann-Roch theorem.
+
 
 # Lecture 10 (Todo)
 
