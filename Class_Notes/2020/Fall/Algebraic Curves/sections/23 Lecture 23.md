@@ -41,6 +41,22 @@ M_p \da
 \end{cases}
 .\]
 
+Then
+
+a. If $M_p = -1$, then $p$ is unramified in $L$.
+
+b. If $M_p \geq 1$, then $p$ is totally ramified in $L$.
+  Letting $\tilde p$ be the unique place lying over $p$, then
+  \[  
+  d(\tilde p / p) = (p-1)(M_p + 1) && \text{(wild ramification)}
+  .\]
+
+c. Suppose there exists a $p$ such that $M_p \geq 1$.
+  Then $[L: K] = p$, $L/k$ is regular, and we have a genus formula
+  \[  
+  g_L = p g_K + \qty{p-1 \over 2} \qty{ -2 + \sum_{p\in \Sigma(K/k)}(M_p+1)\deg p }
+  .\]
+
 :::
 
 
