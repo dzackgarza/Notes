@@ -43,5 +43,14 @@ Recall some facts/definitions:
 \]
   where $D_1 \leq D_2 \implies \Omega_K(D_2) \leq \Omega_K(D_1)$.
 
-- $\Omega_K \da \directlim{D} \Omega_K(D)$.
+- $\Omega_K \da \directlim_{D} \Omega_K(D)$.
+
+- For any $\omega \in \Omega_K\nonzero$, $(\omega) \da \max\ts{D \st \omega=0 \text{ on } \mathcal{A}_K(D) + K}$.
+
+- $\mathcal{A}_{L/K} = \ts{\alpha\in \mathcal{A}_L \st \alpha q_1 = \alpha q_2 \text{ if } Q_1, Q_2 / p} \leq_{\Vect_\ell} A_L$
+
+- The **adelic trace map**
+\[  
+\Tr_{L/K} : \mathcal{A}_{L/K} & \to \mathcal{A}_K 
+.\]
 
