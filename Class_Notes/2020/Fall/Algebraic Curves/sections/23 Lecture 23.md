@@ -28,7 +28,19 @@ Let $k$ a *perfect* field of characteristic $p>0$, $K/k$ a function field, $u\in
 - There exists a most one $m\in \ZZ$ that is negative and prime to $p$ such that for some $z\in K$ we have $v_p(u - (z^p - z)) = m$.
 If such an $m$ exists, it is given by $m = \max\ts{v_p(u - (z^p - z)) \st z\in K }$.
 
-- It follows that precisely *one* of the 
+- It follows that precisely *one* of the two alternatives in the first statement holds.
+:::
+
+:::{.theorem title="?"}
+Let $k$ a *perfect* field of characteristic $p>0$, $K/k$ a function field, $u\in K$, $L\da K(p^{-1}(u))$, $p\in \Sigma(K/k)$, and set
+\[  
+M_p \da 
+\begin{cases}
+\abs{m} & \text{if there exists a $z\in K$ such that } v_p(u - (z^p - z)) = m \\
+-1 & \text{if there exists a $z\in K$ such that } v_p(u - (z^p - z)) \geq 0 \\
+\end{cases}
+.\]
+
 :::
 
 
