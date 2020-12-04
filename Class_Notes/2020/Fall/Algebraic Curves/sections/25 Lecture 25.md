@@ -37,5 +37,11 @@ Recall some facts/definitions:
 ,\]
   the adelic analog of the Riemann-Roch space.
 
-- $\Omega(D) \da \ts{\omega: \mathcal{A}_K \to A \st \ker \omega \supseteq K + \mathcal{A}_K(D)}$ 
+- A space of linear forms
+\[
+\Omega(D) \da \ts{\omega: \mathcal{A}_K \to A \st \ker \omega \supseteq K + \mathcal{A}_K(D)}
+\]
+  where $D_1 \leq D_2 \implies \Omega_K(D_2) \leq \Omega_K(D_1)$.
+
+- $\Omega_K \da \directlim{D} \Omega_K(D)$.
 
