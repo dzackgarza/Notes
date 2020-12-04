@@ -17,4 +17,10 @@ For $k$ a field, $\ch(k) = p > 0$, and $a, b\in k$, TFAE:
 In particular, if $K(p^{-1}(u))/k$ is an Artin-Schreier extension, then for all $x\in k$, $k(p^{-1}(u - (x^p - x))) = k(p^{-1}(u))$.
 :::
 
+:::{.lemma title="?"}
+Let $k$ a *perfect* field of characteristic $p>0$, $K/k$ a function field, $u\in K$, and $p\in \Sigma(K/k)$.
+
+a There exists a $z\in K$ such that $v_p(u - (z^p - z))$%
+:::
+
 
