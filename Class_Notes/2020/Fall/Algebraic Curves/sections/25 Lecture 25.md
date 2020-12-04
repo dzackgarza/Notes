@@ -56,5 +56,5 @@ Recall some facts/definitions:
 .\]
 
 :::{.theorem title="?"}
-Let $\omega\in \Omega_K
+Let $\omega\in \Omega_K$, then there exists a unique $\omega^* \in \mathcal{A}_L$ such that
 :::
