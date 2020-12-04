@@ -20,7 +20,15 @@ In particular, if $K(p^{-1}(u))/k$ is an Artin-Schreier extension, then for all 
 :::{.lemma title="?"}
 Let $k$ a *perfect* field of characteristic $p>0$, $K/k$ a function field, $u\in K$, and $p\in \Sigma(K/k)$.
 
-a There exists a $z\in K$ such that $v_p(u - (z^p - z))$%
+- There exists a $z\in K$ such that $z_v \da v_p(u - (z^p - z))$ satisfies either
+
+  - $z_v \geq 0$, or
+  - $z_v\leq 0$ and $z_p$ is prime to $p$.
+
+- There exists a most one $m\in \ZZ$ that is negative and prime to $p$ such that for some $z\in K$ we have $v_p(u - (z^p - z)) = m$.
+If such an $m$ exists, it is given by $m = \max\ts{v_p(u - (z^p - z)) \st z\in K }$.
+
+- It follows that precisely *one* of the 
 :::
 
 
