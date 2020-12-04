@@ -18,6 +18,24 @@ Then $\ell/k$ and $L/\ell$ are separable and $L\ell$ is regular.
 [Link to diagram](https://q.uiver.app/?q=WzAsNCxbMSwyLCJrIl0sWzIsMSwiXFxlbGwiXSxbMSwwLCJMIl0sWzAsMSwiSyJdLFszLDIsIlxcc2NyaXB0c2l6ZVxcdGV4dHtzZXBhcmFibGV9IiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMCwiXFxzY3JpcHRzaXplXFx0ZXh0e3JlZ3VsYXJ9IiwyLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
 :::
 
-Recall some definitions:
+Recall some facts/definitions:
 
-- The adeles $\mathcal{A}_K \da \prod_{v\in \Sigma(K/k)}' K$, which is a *restricted direct product*, i.e. each element $\alpha\in \mathcal{A}_K$ 
+- The **adele ring of $K$** is defined as 
+  \[
+  \mathcal{A}_K \da \prod_{v\in \Sigma(K/k)}' K
+  \]
+  which is a *restricted direct product*, i.e. each element $\alpha\in \mathcal{A}_K$ has the property that for almost every $p$, the $p\dash$adic valuation of the $p$th coordinate $v_p(\alpha_p) \geq 0$.
+  There is a diagonal embedding
+  \[  
+  K &\injects \mathcal{A}_K \\
+  f &\mapsto (f, f, \cdots)
+  .\]
+
+- For any divisor $D\in \Div K$, define
+\[  
+\mathcal{A}_K(D) \da \ts{\alpha\in \mathcal{A}_K \st v_p(\alpha_p) \geq - v_p(D)\,\, \forall p}
+,\]
+  the adelic analog of the Riemann-Roch space.
+
+- $\Omega(D) \da \ts{\omega: \mathcal{A}_K \to A \st \ker \omega \supseteq K + \mathcal{A}_K(D)}$ 
+
