@@ -51,7 +51,18 @@ Then $u=1, M = q+1$, and $g = \qty{1\over 2}(q)(q-1) = {q \choose 2}$.
 \todo[inline]{What are the Weil bounds?}
 
 :::{.corollary title="Ihara"}
+If $K/\FF_q$ is a maximal function field of genus $g$, then 
+\[  
+g\leq \qty{1\over 2}\qty{q - \sqrt q}
+.\]
+:::
 
+:::{.fact}
+If $K/\FF_{q^2}$ is maximal, then $N_1 = q^2 + 1 + 2gq = q^2 + q - \sum_{j=1}^{2g} \alpha_j$.
+Applying the RH, $\abs{\alpha_j} = q$, and it follows that $\alpha_j = -q$ for all $j$ and thus
+\[  
+L(t) = \qty{1+qt}^{2g}
+.\]
 :::
 
 
