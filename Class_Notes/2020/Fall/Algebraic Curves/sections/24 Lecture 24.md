@@ -5,7 +5,7 @@
 
 :::{.theorem title="Stichtenoth Prop 6.4.1"}
 Let $k$ be a perfect field of characteristic $p>0$, $q \da p^s$ some power of $p$, $K \da k(x)$.
-Let $\mu \in k\units$ and suppose $T^q + \mu T$ splits in $k$.[^q_artin]
+Let $u \in k\units$ and suppose $T^q + \mu T$ splits in $k$.[^q_artin]
 Let $f\in k[x]$ with $\deg(f) = M$ where $p\not\divides M$.
 Then
 
@@ -17,7 +17,10 @@ is geometrically irreducible, and so $L\da \ff(k[x,y]/\gens{p})$ is a regular fu
 
 b. We have $[L: K] = q$.
 
-c. $A\da \ts{\gamma\in k \st \gamma^q + }
+c. $A\da \ts{\gamma\in k \st \gamma^q + u\gamma = 0}$ is an order $q$ subgroup of $\GG_a/k \da (k, +)$.
+  Moreover, for all $\sigma\in \Aut(L/K)$, there exists a unique $\gamma(\sigma)\in A$ such that $\sigma(y) = y + \gamma(\sigma)$ and $\sigma \mapsto \gamma(\sigma)$ yields an isomorphism $\Aut(L/K) \mapsvia{\sim} A$.
+
+d. No finite places of $K$ rimi
 
 [^q_artin]: When $u=-1$, this recovers $q\dash$Artin-Schreier extensions.
 
