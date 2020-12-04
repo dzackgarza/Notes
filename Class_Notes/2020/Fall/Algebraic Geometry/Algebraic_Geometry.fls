@@ -501,6 +501,8 @@ INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.t
 INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
+INPUT Algebraic_Geometry.pre
+INPUT Algebraic_Geometry.pre
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
@@ -637,7 +639,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT Algebraic_Geometry.bcf
-INPUT 'inkscape' -V
+INPUT Algebraic_Geometry.bbl
+INPUT Algebraic_Geometry.bbl
+INPUT Algebraic_Geometry.bbl
 INPUT figures/cover.png
 INPUT ./figures/cover.png
 INPUT ./figures/cover.png
@@ -725,9 +729,11 @@ INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-OUTPUT Algebraic_Geometry.toc
+INPUT Algebraic_Geometry.toc
+INPUT Algebraic_Geometry.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbo10.tfm
+OUTPUT Algebraic_Geometry.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/arkandis/adforn/OrnementsADF.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
@@ -748,7 +754,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary7.tfm
 INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
@@ -760,6 +765,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT figures/image_2020-08-21-01-04-22.png
 INPUT ./figures/image_2020-08-21-01-04-22.png
 INPUT ./figures/image_2020-08-21-01-04-22.png
@@ -1130,10 +1136,21 @@ INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT figures/image_2020-09-16-04-09-22.png
 INPUT ./figures/image_2020-09-16-04-09-22.png
 INPUT ./figures/image_2020-09-16-04-09-22.png
+INPUT Algebraic_Geometry.tdo
+INPUT Algebraic_Geometry.tdo
 OUTPUT Algebraic_Geometry.tdo
+INPUT Algebraic_Geometry.loe
+INPUT Algebraic_Geometry.loe
+INPUT Algebraic_Geometry.loe
+INPUT Algebraic_Geometry.loe
+INPUT Algebraic_Geometry.loe
+INPUT Algebraic_Geometry.loe
+INPUT Algebraic_Geometry.lof
+INPUT Algebraic_Geometry.lof
 OUTPUT Algebraic_Geometry.lof
 OUTPUT Algebraic_Geometry.loe
 INPUT Algebraic_Geometry.aux
+INPUT Algebraic_Geometry.run.xml
 OUTPUT Algebraic_Geometry.run.xml
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
