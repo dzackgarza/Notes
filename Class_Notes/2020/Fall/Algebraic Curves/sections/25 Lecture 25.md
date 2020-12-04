@@ -55,3 +55,6 @@ Recall some facts/definitions:
 \alpha &\mapsto \Tr_{L/K}(\alpha) / p = \Tr_{L/K}(\alpha_Q) && \text{for any }Q/p
 .\]
 
+:::{.theorem title="?"}
+Let $\omega\in \Omega_K
+:::
