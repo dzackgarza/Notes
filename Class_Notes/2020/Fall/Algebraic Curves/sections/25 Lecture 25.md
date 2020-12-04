@@ -60,5 +60,5 @@ Let $\omega\in \Omega_K$, then there exists a unique $\omega^* \in \mathcal{A}_L
 
 - For all $\alpha\in \mathcal{A}_{L/K}$, we have $\Tr_{\ell/k} \omega^*(\alpha) = \omega(\Tr_{L/K}(\alpha))$.
 
-$\omega^*$ is formall denoted $\mathrm{Cotr}_{L/K}(\omega)$ and called the **cotrace** of $\omega$.
+$\omega^*$ is formally denoted $\mathrm{Cotr}_{L/K}(\omega)$ and called the **cotrace** of $\omega$.
 :::
