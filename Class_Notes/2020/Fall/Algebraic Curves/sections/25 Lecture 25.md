@@ -51,6 +51,7 @@ Recall some facts/definitions:
 
 - The **adelic trace map**
 \[  
-\Tr_{L/K} : \mathcal{A}_{L/K} & \to \mathcal{A}_K 
+\Tr_{L/K} : \mathcal{A}_{L/K} & \to \mathcal{A}_K  \\
+\alpha &\mapsto \Tr_{L/K}(\alpha) / p
 .\]
 
