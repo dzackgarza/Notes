@@ -1,5 +1,12 @@
 # Lecture 23
 
+\todo[inline]{What is an isogeny?}
+\todo[inline]{What is an Artin-Schreier extension?}
+\todo[inline]{What is Kummer theory?}
+\todo[inline]{What are Weil differentials?}
+\todo[inline]{What are Kahler differentials?}
+\todo[inline]{What is the Riemann Hurwitz formula?}
+
 :::{.corollary title="?"}
 Let $k$ be a perfect field of characteristic $p>0$, $d\in \ZZ^{\geq 0}$ with $\gcd(d, p) = 1$, and let $f\in k[x]$ and $L\da K(p^{-1} (f))$.
 Then $[L:K] = p$ and $L/k$ is a regular function field of genus $g = {1\over 2}(p-1)(d-1)$ that is unramified away from $\infty$.
