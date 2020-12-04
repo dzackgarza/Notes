@@ -31,7 +31,7 @@ If such an $m$ exists, it is given by $m = \max\ts{v_p(u - (z^p - z)) \st z\in K
 - It follows that precisely *one* of the two alternatives in the first statement holds.
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="Genus Formula for Artin-Schreier Extensions"}
 Let $k$ a *perfect* field of characteristic $p>0$, $K/k$ a function field, $u\in K$, $L\da K(p^{-1}(u))$, $p\in \Sigma(K/k)$, and set
 \[  
 M_p \da 
@@ -58,5 +58,7 @@ c. Suppose there exists a $p$ such that $M_p \geq 1$.
   .\]
 
 :::
+
+
 
 
