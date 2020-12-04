@@ -73,5 +73,16 @@ If $K/\FF_q \subset L/\FF_q$ is a finite extension of function fields, then $L_K
 If $L/\FF_{q^2}$ is maximal, so is $K/\FF_{q^2}$.
 :::
 
+:::{.theorem title="Stichtenoth?"}
+\[  
+\Aut(A_1 / \FF_{q^2}) \cong \operatorname{PGU}_3(\FF_{q^2})
+,\]
+the *projective unitary group*, which is of order $q^3(q^2-1)(q^3+1)$.
+:::
+
+:::{.remark}
+The size of this group is asymptotically $\sim q^8$, while $g(A_q) \sim {q^2\over 2}$, so this is a lot of automorphisms compared to the sizes of automorphism groups of Riemann surfaces.
+:::
+
 
 
