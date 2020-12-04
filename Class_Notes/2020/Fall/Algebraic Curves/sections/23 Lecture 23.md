@@ -14,6 +14,7 @@ For $k$ a field, $\ch(k) = p > 0$, and $a, b\in k$, TFAE:
 
 2. $a$ and $b$ generate the same cyclic subgroup of $k/p(k)$.
 
+In particular, if $K(p^{-1}(u))/k$ is an Artin-Schreier extension, then for all $x\in k$, $k(p^{-1}(u - (x^p - x))) = k(p^{-1}(u))$.
 :::
 
 
