@@ -11,5 +11,7 @@ Then $[L:K] = p$ and $L/k$ is a regular function field of genus $g = {1\over 2}(
 For $k$ a field, $\ch(k) = p > 0$, and $a, b\in k$, TFAE:
 
 1. $k(p^{-1}(a)) = k(p^{-1}(b))$
+
 2. $a$ and $b$ generate the same cyclic subgroup of $k/p(k)$.
+
 :::
