@@ -15,3 +15,5 @@ For $k$ a field, $\ch(k) = p > 0$, and $a, b\in k$, TFAE:
 2. $a$ and $b$ generate the same cyclic subgroup of $k/p(k)$.
 
 :::
+
+
