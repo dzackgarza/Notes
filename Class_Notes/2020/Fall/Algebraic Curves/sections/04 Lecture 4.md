@@ -1,4 +1,4 @@
-# Lecture 4 (Chapter 1: One Variable Function Fields and Their Valuations)
+# Lecture 4: Chapter 1, One Variable Function Fields and Their Valuations
 
 Since we have the field-theoretic preliminaries out of the way, we now start studying one-variable function fields in earnest.
 The main technique that we use to extract the geometry will be the theory of valuations.

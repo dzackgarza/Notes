@@ -1,6 +1,11 @@
 
 # Lecture 1: Field Theory Preliminaries
 
+The main theorems in this course, in order of importance:
+
+- The Riemann-Roch Theorem
+- The Riemann-Hurwitz Formula
+
 ## Finite Generation of Fields
 
 See Chapter 11 of Field Theory notes.
@@ -827,7 +832,7 @@ If the polynomial is geometrical reducible, this produces regular function field
 :::
 
 
-# Lecture 4 (Chapter 1: One Variable Function Fields and Their Valuations)
+# Lecture 4: Chapter 1, One Variable Function Fields and Their Valuations
 
 Since we have the field-theoretic preliminaries out of the way, we now start studying one-variable function fields in earnest.
 The main technique that we use to extract the geometry will be the theory of valuations.
@@ -3161,7 +3166,13 @@ Next up: how to we make this inequality into an equality?
 It turns out that there is some different divisor $D'$ and we can subtract off $\ell(D')$, and that will be the Riemann-Roch theorem.
 
 
-# Lecture 10 (Todo)
+# Lecture 9 (Todo)
+
+# Lecture 10A (Todo)
+
+# Lecture 10B (Todo)
+
+# Lecture 10C (Todo)
 
 # Lecture 11A: Weil's Proof of Riemann-Roch
 
@@ -3356,9 +3367,9 @@ The fact that this works for $\QQ$ is related to $\ZZ$ being a PID.
 
 # Lecture 11C: Weil's Proof of Riemann-Roch (TODO)
 
-# Lecture 12 (Chapter 3: Curves Over a Finite Field)
+# Lecture 12: Chapter 3, Curves Over a Finite Field
 
-##
+## Finiteness of Class Groups
 
 We consider $k= \FF_q$ a finite field, which by definition is a one variable global function field.
 Idea: we've defined some affine dedekind domains (the holomorphy rings) had a finite nonempty set of places of the function field.
@@ -3612,7 +3623,7 @@ So $h\to \infty$ in some sense, which is not proved by showing that $\abs{A(\fq)
 
 Up next: setting up the zeta function.
 
-# Lecture 13
+# Lecture 13: Splitting Places
 
 Recall that we previously looked at the regular function fields: we took a function field in one variable and considered the class of function fields for which we could take any extension of the constant field that we wanted.
 As long as the ground field is perfect, being regular is equivalent to the constant subfield being $k$ itself.
@@ -4526,3 +4537,268 @@ How are you going to compute zeta functions or even places for more complicated 
 The Riemann-Hurwitz formula says that since any function field is a finite degree extension of a rational function field, the curve is given as a degree 2 branched cover of $\PP^1$, it suffices to compute the fibers of this cover in order to get point counts.
 ::: 
 
+
+# Lecture 16 (Todo) 
+
+# Lecture 17 (Todo) 
+
+# Lecture 18 (Todo) 
+
+# Lecture 19 (Todo) 
+
+# Lecture 20 (Todo) 
+
+# Lecture 21 (Todo) 
+
+# Lecture 22 (Todo) 
+
+# Lecture 23 (Sketch)
+
+\todo[inline]{What is an isogeny?}
+\todo[inline]{What is an Artin-Schreier extension?}
+\todo[inline]{What is Kummer theory?}
+\todo[inline]{What are Weil differentials?}
+\todo[inline]{What are Kahler differentials?}
+\todo[inline]{What is the Riemann Hurwitz formula?}
+
+:::{.corollary title="?"}
+Let $k$ be a perfect field of characteristic $p>0$, $d\in \ZZ^{\geq 0}$ with $\gcd(d, p) = 1$, and let $f\in k[x]$ and $L\da K(p^{-1} (f))$.
+Then $[L:K] = p$ and $L/k$ is a regular function field of genus $g = {1\over 2}(p-1)(d-1)$ that is unramified away from $\infty$.
+:::
+
+## Artin-Schreier Extensions of Function Fields
+
+:::{.fact}
+For $k$ a field, $\ch(k) = p > 0$, and $a, b\in k$, TFAE:
+
+1. $k(p^{-1}(a)) = k(p^{-1}(b))$
+
+2. $a$ and $b$ generate the same cyclic subgroup of $k/p(k)$.
+
+In particular, if $K(p^{-1}(u))/k$ is an Artin-Schreier extension, then for all $x\in k$, $k(p^{-1}(u - (x^p - x))) = k(p^{-1}(u))$.
+:::
+
+:::{.lemma title="?"}
+Let $k$ a *perfect* field of characteristic $p>0$, $K/k$ a function field, $u\in K$, and $p\in \Sigma(K/k)$.
+
+- There exists a $z\in K$ such that $z_v \da v_p(u - (z^p - z))$ satisfies either
+
+  - $z_v \geq 0$, or
+  - $z_v\leq 0$ and $z_p$ is prime to $p$.
+
+- There exists a most one $m\in \ZZ$ that is negative and prime to $p$ such that for some $z\in K$ we have $v_p(u - (z^p - z)) = m$.
+If such an $m$ exists, it is given by $m = \max\ts{v_p(u - (z^p - z)) \st z\in K }$.
+
+- It follows that precisely *one* of the two alternatives in the first statement holds.
+:::
+
+:::{.theorem title="Genus Formula for Artin-Schreier Extensions"}
+Let $k$ a *perfect* field of characteristic $p>0$, $K/k$ a function field, $u\in K$, $L\da K(p^{-1}(u))$, $p\in \Sigma(K/k)$, and set
+\[  
+M_p \da 
+\begin{cases}
+\abs{m} & \text{if there exists a $z\in K$ such that } v_p(u - (z^p - z)) = m \\
+-1 & \text{if there exists a $z\in K$ such that } v_p(u - (z^p - z)) \geq 0 \\
+\end{cases}
+.\]
+
+Then
+
+a. If $M_p = -1$, then $p$ is unramified in $L$.
+
+b. If $M_p \geq 1$, then $p$ is totally ramified in $L$.
+  Letting $\tilde p$ be the unique place lying over $p$, then
+  \[  
+  d(\tilde p / p) = (p-1)(M_p + 1) && \text{(wild ramification)}
+  .\]
+
+c. Suppose there exists a $p$ such that $M_p \geq 1$.
+  Then $[L: K] = p$, $L/k$ is regular, and we have a genus formula
+  \[  
+  g_L = p g_K + \qty{p-1 \over 2} \qty{ -2 + \sum_{p\in \Sigma(K/k)}(M_p+1)\deg p }
+  .\]
+
+:::
+
+
+
+
+
+# Lecture 24: Hermitian Function Fields (Sketch)
+
+\todo[inline]{What is an elementary $p\dash$group?}
+\todo[inline]{What is geometrically irreducible?}
+
+:::{.theorem title="Stichtenoth Prop 6.4.1"}
+Let $k$ be a perfect field of characteristic $p>0$, $q \da p^s$ some power of $p$, $K \da k(x)$.
+Let $u \in k\units$ and suppose $T^q + \mu T$ splits in $k$.[^q_artin]
+Let $f\in k[x]$ with $\deg(f) = M$ where $p\not\divides M$.
+Then
+
+a. The polynomial 
+\[  
+P(x, y) \da y^q + uy -f(x) \in k[x]
+\]
+is geometrically irreducible, and so $L\da \ff(k[x,y]/\gens{p})$ is a regular function field over $k$.
+
+b. We have $[L: K] = q$.
+
+c. $A\da \ts{\gamma\in k \st \gamma^q + u\gamma = 0}$ is an order $q$ subgroup of $\GG_a/k \da (k, +)$.
+  Moreover, for all $\sigma\in \Aut(L/K)$, there exists a unique $\gamma(\sigma)\in A$ such that $\sigma(y) = y + \gamma(\sigma)$ and $\sigma \mapsto \gamma(\sigma)$ yields an isomorphism $\Aut(L/K) \mapsvia{\sim} A$.
+
+d. No finite place of $K$ ramifies in $L$, while $p_\infty$ is totally ramified.
+If $\tilde p_ \infty / p_ \infty$, then $d(\tilde p_ \infty / p_ \infty) = (q-1)(M+1)$.
+
+e. We have
+\[  
+g_L = \qty{1\over 2}(q-1)(m-1)
+.\]
+
+[^q_artin]: When $u=-1$, this recovers $q\dash$Artin-Schreier extensions.
+
+:::
+
+Next up: one of the most important function fields of all time!
+
+:::{.definition title="Hermitian Function Field"}
+Set $A_q \da \FF_{q^2}(x, y)$ and consider the polynomial
+\[  
+y^q + y = x^{q+1}
+.\]
+Then $u=1, M = q+1$, and $g = \qty{1\over 2}(q)(q-1) = {q \choose 2}$.
+:::
+
+:::{.theorem title="?"}
+\[  
+\abs{\Sigma_1(A_q / \FF_{q^2})} = q^3 + 1
+.\]
+:::
+
+\todo[inline]{What are the Weil bounds?}
+
+:::{.corollary title="Ihara"}
+If $K/\FF_q$ is a maximal function field of genus $g$, then 
+\[  
+g\leq \qty{1\over 2}\qty{q - \sqrt q}
+.\]
+:::
+
+:::{.fact}
+If $K/\FF_{q^2}$ is maximal, then $N_1 = q^2 + 1 + 2gq = q^2 + q - \sum_{j=1}^{2g} \alpha_j$.
+Applying the RH, $\abs{\alpha_j} = q$, and it follows that $\alpha_j = -q$ for all $j$ and thus
+\[  
+L(t) = \qty{1+qt}^{2g}
+.\]
+:::
+
+:::{.theorem title="Kleiman, Serre"}
+If $K/\FF_q \subset L/\FF_q$ is a finite extension of function fields, then $L_K(t)$ divides $L_L(t)$.
+:::
+
+:::{.corollary title="?"}
+If $L/\FF_{q^2}$ is maximal, so is $K/\FF_{q^2}$.
+:::
+
+:::{.theorem title="Stichtenoth?"}
+\[  
+\Aut(A_1 / \FF_{q^2}) \cong \operatorname{PGU}_3(\FF_{q^2})
+,\]
+the *projective unitary group*, which is of order $q^3(q^2-1)(q^3+1)$.
+:::
+
+:::{.remark}
+The size of this group $G_q$ is asymptotically $G_q \sim q^8$, while $g(A_q) \sim {q^2\over 2}$, so this is a lot of automorphisms compared to the sizes of automorphism groups of Riemann surfaces.
+More precisely, $G_q > 16 g(q)^4$.
+:::
+
+:::{.theorem title="Stichtenoth"}
+For any other function field $K/k$ for any field $k$, $\abs{\Aut(K/k)} < 16g^4$.
+:::
+
+:::{.remark}
+This only happens in positive characteristic, when $\ch(k), g, q$ match up in a very specific way.
+So Hermitian function fields are the algebraic curves with the most symmetries.
+:::
+
+:::{.theorem title="Hurwtiz"}
+In characteristic zero, if $g\geq 2$ then $\abs{\Aut(K/k)} \leq 84(g-1)$.
+:::
+
+
+
+
+# Lecture 25: Differential Pullback Theorem (Sketch)
+
+This will recover the Riemann-Hurwitz formula by taking degrees.
+
+:::{.lemma title="?"}
+Let $K/k \subset L/\ell$ be a finite degree extension of function fields, and suppose $K/k$ is regular and $L/K$ is separable.
+Then $\ell/k$ and $L/\ell$ are separable and $L\ell$ is regular.
+
+\begin{tikzcd}
+	& {L} \\
+	{K} && {\ell} \\
+	& {k}
+	\arrow["{\scriptsize\text{separable}}", from=2-1, to=1-2, no head]
+	\arrow[from=1-2, to=2-3, no head]
+	\arrow[from=2-3, to=3-2, no head]
+	\arrow["{\scriptsize\text{regular}}"', from=2-1, to=3-2, no head]
+\end{tikzcd}
+[Link to diagram](https://q.uiver.app/?q=WzAsNCxbMSwyLCJrIl0sWzIsMSwiXFxlbGwiXSxbMSwwLCJMIl0sWzAsMSwiSyJdLFszLDIsIlxcc2NyaXB0c2l6ZVxcdGV4dHtzZXBhcmFibGV9IiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMCwiXFxzY3JpcHRzaXplXFx0ZXh0e3JlZ3VsYXJ9IiwyLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+:::
+
+Recall some facts/definitions:
+
+- The **adele ring of $K$** is defined as 
+  \[
+  \mathcal{A}_K \da \prod_{v\in \Sigma(K/k)}' K
+  \]
+  which is a *restricted direct product*, i.e. each element $\alpha\in \mathcal{A}_K$ has the property that for almost every $p$, the $p\dash$adic valuation of the $p$th coordinate $v_p(\alpha_p) \geq 0$.
+  There is a diagonal embedding
+  \[  
+  K &\injects \mathcal{A}_K \\
+  f &\mapsto (f, f, \cdots)
+  .\]
+
+- For any divisor $D\in \Div K$, define
+\[  
+\mathcal{A}_K(D) \da \ts{\alpha\in \mathcal{A}_K \st v_p(\alpha_p) \geq - v_p(D)\,\, \forall p}
+,\]
+  the adelic analog of the Riemann-Roch space.
+
+- A space of linear forms
+\[
+\Omega(D) \da \ts{\omega: \mathcal{A}_K \to A \st \ker \omega \supseteq K + \mathcal{A}_K(D)}
+\]
+  where $D_1 \leq D_2 \implies \Omega_K(D_2) \leq \Omega_K(D_1)$.
+
+- $\Omega_K \da \directlim_{D} \Omega_K(D)$.
+
+- For any $\omega \in \Omega_K\nonzero$, $(\omega) \da \max\ts{D \st \omega=0 \text{ on } \mathcal{A}_K(D) + K}$.
+
+- $\mathcal{A}_{L/K} = \ts{\alpha\in \mathcal{A}_L \st \alpha q_1 = \alpha q_2 \text{ if } Q_1, Q_2 / p} \leq_{\Vect_\ell} A_L$
+
+- The **adelic trace map**
+\[  
+\Tr_{L/K} : \mathcal{A}_{L/K} & \to \mathcal{A}_K  \\
+\alpha &\mapsto \Tr_{L/K}(\alpha) / p = \Tr_{L/K}(\alpha_Q) && \text{for any }Q/p
+.\]
+
+:::{.theorem title="?"}
+Let $\omega\in \Omega_K$, then there exists a unique $\omega^* \in \mathcal{A}_L$ such that
+
+- For all $\alpha\in \mathcal{A}_{L/K}$, we have $\Tr_{\ell/k} \omega^*(\alpha) = \omega(\Tr_{L/K}(\alpha))$.
+
+$\omega^*$ is formally denoted $\mathrm{Cotr}_{L/K}(\omega)$ and called the **cotrace** of $\omega$.
+:::
+
+:::{.theorem title="?"}
+If $K/k \subset L/\ell$ is a finite extension of function fields with $K/k$ regular, then for all $\omega\in \mathcal{A}_K\nonzero$, we have $\omega^* \in \mathcal{A}_L\nonzero$.
+Moreover,
+\[  
+(\omega^*) = \iota_{L/K}((\omega)) + D(L/K)
+.\]
+Taking degrees yields the Riemann-Hurwitz formula.
+:::
+
+# Lecture 26 (Todo) 

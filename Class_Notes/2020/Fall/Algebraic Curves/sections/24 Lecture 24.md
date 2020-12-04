@@ -1,4 +1,4 @@
-# Lecture 24: Hermitian Function Fields
+# Lecture 24: Hermitian Function Fields (Sketch)
 
 \todo[inline]{What is an elementary $p\dash$group?}
 \todo[inline]{What is geometrically irreducible?}

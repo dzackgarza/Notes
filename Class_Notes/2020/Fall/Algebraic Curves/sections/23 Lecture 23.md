@@ -1,4 +1,4 @@
-# Lecture 23
+# Lecture 23 (Sketch)
 
 \todo[inline]{What is an isogeny?}
 \todo[inline]{What is an Artin-Schreier extension?}

@@ -1,4 +1,4 @@
-# Lecture 25: Differential Pullback Theorem
+# Lecture 25: Differential Pullback Theorem (Sketch)
 
 This will recover the Riemann-Hurwitz formula by taking degrees.
 
