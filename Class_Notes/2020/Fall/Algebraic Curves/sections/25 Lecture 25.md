@@ -57,4 +57,6 @@ Recall some facts/definitions:
 
 :::{.theorem title="?"}
 Let $\omega\in \Omega_K$, then there exists a unique $\omega^* \in \mathcal{A}_L$ such that
+
+- For all $\alpha\in \mathcal{A}_{L/K}$, we have $\Tr_{\ell/k} \omega^*(\alpha) = \omega(\Tr_{L/K}(\alpha))$.
 :::
