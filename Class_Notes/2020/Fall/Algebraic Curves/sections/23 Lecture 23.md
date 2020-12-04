@@ -5,3 +5,11 @@ Let $k$ be a perfect field of characteristic $p>0$, $d\in \ZZ^{\geq 0}$ with $\g
 Then $[L:K] = p$ and $L/k$ is a regular function field of genus $g = {1\over 2}(p-1)(d-1)$ that is unramified away from $\infty$.
 :::
 
+## Artin-Schreier Extensions of Function Fields
+
+:::{.fact}
+For $k$ a field, $\ch(k) = p > 0$, and $a, b\in k$, TFAE:
+
+1. $k(p^{-1}(a)) = k(p^{-1}(b))$
+2. A 
+:::
