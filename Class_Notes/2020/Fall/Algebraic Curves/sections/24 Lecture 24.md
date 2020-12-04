@@ -81,7 +81,21 @@ the *projective unitary group*, which is of order $q^3(q^2-1)(q^3+1)$.
 :::
 
 :::{.remark}
-The size of this group is asymptotically $\sim q^8$, while $g(A_q) \sim {q^2\over 2}$, so this is a lot of automorphisms compared to the sizes of automorphism groups of Riemann surfaces.
+The size of this group $G_q$ is asymptotically $G_q \sim q^8$, while $g(A_q) \sim {q^2\over 2}$, so this is a lot of automorphisms compared to the sizes of automorphism groups of Riemann surfaces.
+More precisely, $G_q > 16 g(q)^4$.
+:::
+
+:::{.theorem title="Stichtenoth"}
+For any other function field $K/k$ for any field $k$, $\abs{\Aut(K/k)} < 16g^4$.
+:::
+
+:::{.remark}
+This only happens in positive characteristic, when $\ch(k), g, q$ match up in a very specific way.
+So Hermitian function fields are the algebraic curves with the most symmetries.
+:::
+
+:::{.theorem title="Hurwtiz"}
+In characteristic zero, if $g\geq 2$ then $\abs{\Aut(K/k)} \leq 84(g-1)$.
 :::
 
 
