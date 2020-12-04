@@ -62,3 +62,11 @@ Let $\omega\in \Omega_K$, then there exists a unique $\omega^* \in \mathcal{A}_L
 
 $\omega^*$ is formally denoted $\mathrm{Cotr}_{L/K}(\omega)$ and called the **cotrace** of $\omega$.
 :::
+
+:::{.theorem title="?"}
+If $K/k \subset L/\ell$ is a finite extension of function fields with $K/k$ regular, then for all $\omega\in \mathcal{A}_K\nonzero$, we have $\omega^* \in \mathcal{A}_L\nonzero$.
+Moreover,
+\[  
+(\omega^*) = \
+.\]
+:::
