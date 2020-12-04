@@ -32,4 +32,16 @@ g_L = \qty{1\over 2}(q-1)(m-1)
 
 :::
 
+Next up: one of the most important function fields of all time!
+
+:::{.definition title="Hermitian Function Field"}
+Set $A_q \da \FF_{q^2}(x, y)$ and consider the polynomial
+\[  
+y^q + y = x^{q+1}
+.\]
+Then $u=1, M = q+1$, and $g = \qty{1\over 2}(q)(q-1) = {q \choose 2}$.
+:::
+
+
+
 
