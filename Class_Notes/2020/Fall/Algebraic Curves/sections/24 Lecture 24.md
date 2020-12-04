@@ -65,5 +65,13 @@ L(t) = \qty{1+qt}^{2g}
 .\]
 :::
 
+:::{.theorem title="Kleiman, Serre"}
+If $K/\FF_q \subset L/\FF_q$ is a finite extension of function fields, then $L_K(t)$ divides $L_L(t)$.
+:::
+
+:::{.corollary title="?"}
+If $L/\FF_{q^2}$ is maximal, so is $K/\FF_{q^2}$.
+:::
+
 
 
