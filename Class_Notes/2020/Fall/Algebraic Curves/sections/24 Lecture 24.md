@@ -42,6 +42,17 @@ y^q + y = x^{q+1}
 Then $u=1, M = q+1$, and $g = \qty{1\over 2}(q)(q-1) = {q \choose 2}$.
 :::
 
+:::{.theorem title="?"}
+\[  
+\abs{\Sigma_1(A_q / \FF_{q^2})} = q^3 + 1
+.\]
+:::
+
+\todo[inline]{What are the Weil bounds?}
+
+:::{.corollary title="Ihara"}
+
+:::
 
 
 
