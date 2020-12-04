@@ -1,9 +1,0 @@
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'EtaleCohomology.blg'
-[103] biber:322> INFO - === Fri Dec  4, 2020, 04:12:20
-[121] Biber.pm:415> INFO - Reading 'EtaleCohomology.bcf'
-[214] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
-[220] Utils.pm:304> WARN - The file 'EtaleCohomology.bcf' does not contain any citations!
-[233] bbl.pm:652> INFO - Writing 'EtaleCohomology.bbl' with encoding 'UTF-8'
-[233] bbl.pm:755> INFO - Output to EtaleCohomology.bbl
-[233] Biber.pm:128> INFO - WARNINGS: 1
