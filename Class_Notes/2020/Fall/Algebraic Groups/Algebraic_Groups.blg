@@ -1,0 +1,9 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'Algebraic_Groups.blg'
+[61] biber:330> INFO - === Tue Dec  8, 2020, 09:27:15
+[73] Biber.pm:415> INFO - Reading 'Algebraic_Groups.bcf'
+[136] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
+[148] Biber.pm:4334> INFO - Processing section 0
+[157] Biber.pm:4523> INFO - Looking for bibtex format file 'Algebraic\_Groups.bib' for section 0
+[208] Utils.pm:411> ERROR - Cannot find 'Algebraic\_Groups.bib'!
+[208] Biber.pm:132> INFO - ERRORS: 1
