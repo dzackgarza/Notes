@@ -392,10 +392,12 @@ By the order-reversing property of $V(\wait)$, $V(\mfm) \subseteq V(I)$.
 By the classification of maximal ideals, $\mfm = \gens{x-a_1, \cdots, x-a_n}$, so $V(\mfm) = \theset{a_1, \cdots, a_n}$ is nonempty.
 :::
 
-## Proof of Re
+## Proof of Remaining Part of Nullstellensatz
 We now return to the remaining hard part of the proof of the Nullstellensatz:
 
-:::{.proof title="$I(V(J)) \subseteq \sqrt{J}$ (hard part)"}
+\[
+I(V(J)) \subseteq \sqrt{J}
+\]
 
 Let $f\in V(I(J))$, we want to show $f\in \sqrt{J}$.
 Consider the ideal 
@@ -447,7 +449,7 @@ Since this is injective, this identity also holds in $k[x_1, \cdots, x_n]$.
 But $f_i\in J$, so $f\in \sqrt{I}$.  
 
 
-:::
+$\qed$
 
 :::{.exercise title="?"}
 Why is this true?
