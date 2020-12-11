@@ -19,7 +19,9 @@ V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 
 
 
-# Friday, August 21
+# Friday, August 21: Intro and Motivation
+
+## Coordinate Rings
 
 General idea: functions in a *coordinate ring* $R[x_1, \cdots, x_n]/I$ will correspond to the geometry of the *variety* cut out by $I$.
 
@@ -50,6 +52,9 @@ General idea: functions in a *coordinate ring* $R[x_1, \cdots, x_n]/I$ will corr
 
 :::
 
+## Harnack Curve Theorem
+
+
 :::{.theorem title="Harnack Curve Theorem"}
 If $f \in \RR[x, y]$ is of degree $d$, then[^actual_statement]
 \[  
@@ -78,8 +83,9 @@ Then $X$ is cut out by three equations:
 Show that the vanishing locus of the first two equations above is $X\union L$ for $L$ a line.
 :::
 
-
 Compare to linear algebra: codimension $d$ iff cut out by exactly $d$ equations.
+
+## Connection to Riemann Surfaces
 
 :::{.example}
 Given the Riemann surface 
@@ -386,15 +392,25 @@ By the order-reversing property of $V(\wait)$, $V(\mfm) \subseteq V(I)$.
 By the classification of maximal ideals, $\mfm = \gens{x-a_1, \cdots, x-a_n}$, so $V(\mfm) = \theset{a_1, \cdots, a_n}$ is nonempty.
 :::
 
-Returning to the proof that $I(V(J)) \subseteq \sqrt{J}$: let $f\in V(I(J))$, we want to show $f\in \sqrt{J}$.
-Consider the ideal $\tilde J \da J + \gens{ft - 1} \subseteq k[x_1, \cdots, x_n, t]$.
+We now return to the remaining hard part of the proof of the Nullstellensatz:
+
+:::{.proof title="$I(V(J)) \subseteq \sqrt{J}$ (hard part)"}
+
+Let $f\in V(I(J))$, we want to show $f\in \sqrt{J}$.
+Consider the ideal 
+\[
+\tilde J \da J + \gens{ft - 1} \subseteq k[x_1, \cdots, x_n, t]
+\]
 
 
 :::{.observation}
 $f = 0$ on all of $V(J)$ by the definition of $I(V(J))$.
 :::
 
-However, if $f=0$, then $ft-1 \neq 0$, so $V(\tilde J) = V(G) \intersect V(ft-1) = \emptyset$.
+However, if $f=0$, then $ft-1 \neq 0$, so 
+\[
+V(\tilde J) = V(G) \intersect V(ft-1) = \emptyset
+\]
 
 ![Effect, a hyperbolic tube around $V(J)$, so both can't vanish](figures/image_2020-08-27-09-56-33.png){width=350px}
 
@@ -415,7 +431,7 @@ This kills the first term above, yielding
 f^N = \sum f_i G_i(x_1, \cdots, x_n, 1) \in k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\]
 
-:::{.observation}
+:::{.observation} {#obs:inclusion}
 There is an inclusion
 \[  
 k[x_1, \cdots, x_n] \injects
@@ -423,12 +439,16 @@ k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\]
 :::
 
-:::{.exercise}
-Why is this true?
-:::
 
 Since this is injective, this identity also holds in $k[x_1, \cdots, x_n]$.
-But $f_i\in J$, so $f\in \sqrt{I}$.  
+But $f_i\in J$, so $f\in \sqrt{I}$.
+
+:::
+
+
+:::{.exercise}
+Why is [@obs:inclusion] true?
+:::
 
 :::{.example}
 Consider $k[x]$.
@@ -477,7 +497,7 @@ Example of property (b):
 
 Take $X_1 = V(y-x^2)$ and $X_2 = V(y)$, a parabola and the $x\dash$axis.
 
-![Image](figures/image_2020-08-27-10-26-45.png){width=350px}
+![Intersecting $V(y-x^2)$ and $V(y)$](figures/image_2020-08-27-10-26-45.png){width=350px}
 
 Then $X_1 \intersect X_2 = \ts{(0, 0)}$, and $I(X_1) + I(X_2) = \gens{y-x^2, y} = \gens{x^2, y}$, but 
 \[
