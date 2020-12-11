@@ -392,6 +392,7 @@ By the order-reversing property of $V(\wait)$, $V(\mfm) \subseteq V(I)$.
 By the classification of maximal ideals, $\mfm = \gens{x-a_1, \cdots, x-a_n}$, so $V(\mfm) = \theset{a_1, \cdots, a_n}$ is nonempty.
 :::
 
+## Proof of Re
 We now return to the remaining hard part of the proof of the Nullstellensatz:
 
 :::{.proof title="$I(V(J)) \subseteq \sqrt{J}$ (hard part)"}
