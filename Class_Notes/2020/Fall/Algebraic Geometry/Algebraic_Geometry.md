@@ -435,7 +435,7 @@ f^N = \sum f_i G_i(x_1, \cdots, x_n, 1) \in k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\]
 
 
-:::{.proposition title="?"}{#prop:inclusion}
+:::{.proposition title="?"}{#prop:inclusion_of_stuff}
 
 There is an inclusion
 \[  
