@@ -431,7 +431,9 @@ This kills the first term above, yielding
 f^N = \sum f_i G_i(x_1, \cdots, x_n, 1) \in k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\]
 
-:::{.observation}{#obs:inclusion}
+obs
+
+:::{.observation}{#prop:inclusion}
 There is an inclusion
 \[  
 k[x_1, \cdots, x_n] \injects
@@ -441,14 +443,15 @@ k[x_1, \cdots, x_n, t]/\gens{ft-1}
 
 
 Since this is injective, this identity also holds in $k[x_1, \cdots, x_n]$.
-But $f_i\in J$, so $f\in \sqrt{I}$.
+But $f_i\in J$, so $f\in \sqrt{I}$.  
+
 
 :::
 
-
-:::{.exercise}
-Why is [@obs:inclusion] true?
+:::{.exercise title="?"}
+Why is this true?
 :::
+
 
 :::{.example}
 Consider $k[x]$.
