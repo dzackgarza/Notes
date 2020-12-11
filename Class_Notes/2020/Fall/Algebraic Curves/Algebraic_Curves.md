@@ -2961,7 +2961,7 @@ There exists a $\delta = \delta(K/k) \in \ZZ$ such that for all $A\in \Div K$, w
 
 Recall the proposition we ended with last time:
 
-:::{.proposition title="?"}{#prop:deg_bounded_above}
+:::{.proposition title="?"}\label{prop:deg_bounded_above}
 There exists a $\delta = \delta(K/k) \in \ZZ$ such that for all $A\in \Div K$, we have
 \[  
 \deg A - \ell(A) \leq \delta
@@ -2980,6 +2980,9 @@ Rewriting [@lemma:divisor_order_to_subspaces] yields
 \[  
 A_2, A_2 \in \Div K,\, A_1 \leq A_2 \implies \deg A_1 - \ell(A_1) \leq \deg A_2 - \ell(A_2)
 .\]
+
+
+\cref{prop:deg_bounded_}
 
 ### Step 1
 
