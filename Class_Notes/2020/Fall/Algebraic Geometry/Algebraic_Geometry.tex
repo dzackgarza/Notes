@@ -66,7 +66,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-12-09 }
+{\tiny \textit{Last updated:} 2020-12-11 }
 \end{flushleft}
 
 
@@ -100,8 +100,12 @@ V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 
 \newpage
 
-\hypertarget{friday-august-21}{%
-\section{Friday, August 21}\label{friday-august-21}}
+\hypertarget{friday-august-21-intro-and-motivation}{%
+\section{Friday, August 21: Intro and
+Motivation}\label{friday-august-21-intro-and-motivation}}
+
+\hypertarget{coordinate-rings}{%
+\subsection{Coordinate Rings}\label{coordinate-rings}}
 
 General idea: functions in a \emph{coordinate ring}
 \(R[x_1, \cdots, x_n]/I\) will correspond to the geometry of the
@@ -154,6 +158,9 @@ General idea: functions in a \emph{coordinate ring}
 
 \end{example}
 
+\hypertarget{harnack-curve-theorem}{%
+\subsection{Harnack Curve Theorem}\label{harnack-curve-theorem}}
+
 \begin{theorem}[Harnack Curve Theorem]
 
 If \(f \in \RR[x, y]\) is of degree \(d\),
@@ -195,6 +202,10 @@ Show that the vanishing locus of the first two equations above is
 
 Compare to linear algebra: codimension \(d\) iff cut out by exactly
 \(d\) equations.
+
+\hypertarget{connection-to-riemann-surfaces}{%
+\subsection{Connection to Riemann
+Surfaces}\label{connection-to-riemann-surfaces}}
 
 \begin{example}
 
@@ -650,9 +661,22 @@ the classification of maximal ideals,
 
 \end{proof}
 
-Returning to the proof that \(I(V(J)) \subseteq \sqrt{J}\): let
-\(f\in V(I(J))\), we want to show \(f\in \sqrt{J}\). Consider the ideal
-\(\tilde J \da J + \gens{ft - 1} \subseteq k[x_1, \cdots, x_n, t]\).
+\hypertarget{proof-of-remaining-part-of-nullstellensatz}{%
+\subsection{Proof of Remaining Part of
+Nullstellensatz}\label{proof-of-remaining-part-of-nullstellensatz}}
+
+We now return to the remaining hard part of the proof of the
+Nullstellensatz:
+
+\begin{align*}
+I(V(J)) \subseteq \sqrt{J}
+\end{align*}
+
+Let \(f\in V(I(J))\), we want to show \(f\in \sqrt{J}\). Consider the
+ideal
+\begin{align*}
+\tilde J \da J + \gens{ft - 1} \subseteq k[x_1, \cdots, x_n, t]
+\end{align*}
 
 \begin{observation}
 
@@ -661,7 +685,9 @@ Returning to the proof that \(I(V(J)) \subseteq \sqrt{J}\): let
 \end{observation}
 
 However, if \(f=0\), then \(ft-1 \neq 0\), so
-\(V(\tilde J) = V(G) \intersect V(ft-1) = \emptyset\).
+\begin{align*}
+V(\tilde J) = V(G) \intersect V(ft-1) = \emptyset
+\end{align*}
 
 \begin{figure}
 \centering
@@ -684,24 +710,24 @@ kills the first term above, yielding
 f^N = \sum f_i G_i(x_1, \cdots, x_n, 1) \in k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\end{align*}
 
-\begin{observation}
+:::\{.proposition title=``?''\}\{\#prop:inclusion\_of\_stuff\}
 
 There is an inclusion
 \begin{align*}  
 k[x_1, \cdots, x_n] \injects
 k[x_1, \cdots, x_n, t]/\gens{ft-1}
-.\end{align*}
-
-\end{observation}
-
-\begin{exercise}
-
-Why is this true?
-
-\end{exercise}
+.\end{align*} :::
 
 Since this is injective, this identity also holds in
 \(k[x_1, \cdots, x_n]\). But \(f_i\in J\), so \(f\in \sqrt{I}\).
+
+\(\qed\)
+
+\begin{exercise}[?]
+
+Why is this true? \autocite{prop:inclusion_of_stuff}.
+
+\end{exercise}
 
 \begin{example}
 
@@ -765,7 +791,7 @@ Take \(X_1 = V(y-x^2)\) and \(X_2 = V(y)\), a parabola and the
 \begin{figure}
 \centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-08-27-10-26-45.png}
-\caption{Image}
+\caption{Intersecting \(V(y-x^2)\) and \(V(y)\)}
 \end{figure}
 
 Then \(X_1 \intersect X_2 = \ts{(0, 0)}\), and
