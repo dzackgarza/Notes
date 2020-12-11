@@ -431,9 +431,9 @@ This kills the first term above, yielding
 f^N = \sum f_i G_i(x_1, \cdots, x_n, 1) \in k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\]
 
-obs
 
-:::{.observation}{#prop:inclusion}
+:::{.proposition title="?"}{#prop:inclusion}
+
 There is an inclusion
 \[  
 k[x_1, \cdots, x_n] \injects
