@@ -101,7 +101,8 @@ where we're correcting by enough in $t$ but not enough in $q$ and seeing what we
 Equating coefficients, for $0\leq j \leq g$ we have
 \[  
 a_{2g-j} = q^{g-j} a_j
-.\]{#eq:sym_formula_proofc}
+.\] {#eq:sym_formula_proofc}
+
 Using the fact that $A_0$ is the number of effective degree zero divisors, which is only zero, we have $A_0 = 1$ and we can multiply formal power series to obtain 
 \[  
 L(t) = a_0 + a_1 t + \cdots + a_{2g} t^{2g} 

@@ -145,7 +145,7 @@ Conversely, given any finite nonempty set of places, then the holomorphy of ring
 
 Next up is the main theorem of this lecture.
 
-:::{.theorem title="Holomorphy rings on subsets are synonymous with affine Dedekind domains with fraction field $K$"}{#thm:main_lec_6}
+:::{.theorem title="Holomorphy rings on subsets are synonymous with affine Dedekind domains with fraction field $K$" #thm:main_lec_6}
 Let $K/k$ be a one variable function field and $S \subset \Sigma(K/k)$ finite and nonempty.
 Then $R^S$ is an affine Dedekind domain with $\ff(R^S) = K$ and $\mspec(R^S) = \Sigma(K/k)\sm S$.
 ::: 
@@ -182,7 +182,7 @@ This is pretty useful, but not nearly as much as $R^S$ for $S$ a finite set of p
 Let $f\in K\units$, then a place $v\in \Sigma(K/k)$ is a **pole** of $f$ iff $f\not\in R_v$, and $v$ is a **zero** of $f$ iff $f\in \mathfrak{m}_v$.
 :::
 
-:::{.lemma title="The divisor of a rational function is well-defined."}{#lem:poles_and_zeros}
+:::{.lemma title="The divisor of a rational function is well-defined." #lem:poles_and_zeros}
 Let $f\in K\units$ be nonzero, then
 \[  
 \abs{\ts{v\in \Sigma(K/k) \st f\not\in R_vS}} &< \infty  && \text{(finite poles)}\\

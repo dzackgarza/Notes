@@ -2940,12 +2940,15 @@ with Fraction Field
 
 Next up is the main theorem of this lecture.
 
-:::\{.theorem title=``Holomorphy rings on subsets are synonymous with
-affine Dedekind domains with fraction field
-\(K\)''\}\{\#thm:main\_lec\_6\} Let \(K/k\) be a one variable function
-field and \(S \subset \Sigma(K/k)\) finite and nonempty. Then \(R^S\) is
-an affine Dedekind domain with \(\ff(R^S) = K\) and
-\(\mspec(R^S) = \Sigma(K/k)\sm S\). :::
+\hypertarget{thm:main_lec_6}{}
+\begin{theorem}[Holomorphy rings on subsets are synonymous with affine Dedekind domains with fraction field $K$]
+
+Let \(K/k\) be a one variable function field and
+\(S \subset \Sigma(K/k)\) finite and nonempty. Then \(R^S\) is an affine
+Dedekind domain with \(\ff(R^S) = K\) and
+\(\mspec(R^S) = \Sigma(K/k)\sm S\).
+
+\end{theorem}
 
 \begin{exercise}[?]
 
@@ -3003,9 +3006,10 @@ Let \(f\in K\units\), then a place \(v\in \Sigma(K/k)\) is a
 
 \end{definition}
 
-:::\{.lemma title=``The divisor of a rational function is
-well-defined.''\}\{\#lem:poles\_and\_zeros\} Let \(f\in K\units\) be
-nonzero, then
+\hypertarget{lem:poles_and_zeros}{}
+\begin{lemma}[The divisor of a rational function is well-defined.]
+
+Let \(f\in K\units\) be nonzero, then
 \begin{align*}  
 \abs{\ts{v\in \Sigma(K/k) \st f\not\in R_vS}} &< \infty  && \text{(finite poles)}\\
 \abs{\ts{v\in \Sigma(K/k) \st f\in \mathfrak{m}_v S}} &< \infty && \text{(finite zeros)}
@@ -3013,7 +3017,9 @@ nonzero, then
 
 So \(f\) is not regular at only a finite set of places, as as the set of
 points such that ``\(f(p) = 0\)'', i.e.~\(f\) is in the maximal ideal
-which makes it zero in the residue field. :::
+which makes it zero in the residue field.
+
+\end{lemma}
 
 \begin{remark}
 
@@ -4280,11 +4286,13 @@ space is if it's linearly equivalent to zero.
 \subsection{Subspaces and Dimension of Riemann-Roch
 Spaces}\label{subspaces-and-dimension-of-riemann-roch-spaces}}
 
-:::\{.lemma title=``?''\}\{\#lemma:divisor\_order\_to\_subspaces\} Let
-\(A \leq B\)\footnote{These are formal linear combinations of places, so
-  the coefficients in front of each place in \(A\) should be less than
-  the corresponding coefficient for \(B\), or equivalently \(B-A\) is
-  effective.} in \(\Div K\), then
+\hypertarget{lemma:divisor_order_to_subspaces}{}
+\begin{lemma}[?]
+
+Let \(A \leq B\)\footnote{These are formal linear combinations of
+  places, so the coefficients in front of each place in \(A\) should be
+  less than the corresponding coefficient for \(B\), or equivalently
+  \(B-A\) is effective.} in \(\Div K\), then
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -4295,7 +4303,7 @@ Spaces}\label{subspaces-and-dimension-of-riemann-roch-spaces}}
   \(\dim \mathcal{L}(B) / \mathcal{L}(A) \leq \deg B - \deg A = \deg(B - A)\).
 \end{enumerate}
 
-:::
+\end{lemma}
 
 \begin{remark}
 
@@ -4628,7 +4636,7 @@ the Riemann-Roch space that much, and in fact
 which shows that
 \begin{align*}  
 \forall n\geq 0,\, \, \deg(nB) - \ell(nB) \leq \gamma
-.\end{align*}\{\#eq:step\_2\_bound\}
+.\end{align*} \{\#eq:step\_2\_bound\}
 
 A problem here is that \(\gamma\) depends upon everything that we've
 done so far, and this inequality only holds for multiples of a fixed
@@ -6477,9 +6485,11 @@ in \(q\) and seeing what we get. Equating coefficients, for
 \(0\leq j \leq g\) we have
 \begin{align*}  
 a_{2g-j} = q^{g-j} a_j
-.\end{align*}\{\#eq:sym\_formula\_proofc\} Using the fact that \(A_0\)
-is the number of effective degree zero divisors, which is only zero, we
-have \(A_0 = 1\) and we can multiply formal power series to obtain
+.\end{align*} \{\#eq:sym\_formula\_proofc\}
+
+Using the fact that \(A_0\) is the number of effective degree zero
+divisors, which is only zero, we have \(A_0 = 1\) and we can multiply
+formal power series to obtain
 \begin{align*}  
 L(t) = a_0 + a_1 t + \cdots + a_{2g} t^{2g} 
 &= (1-t)(1-qt) \sum_{n=0}^\infty A_n t^n \\
