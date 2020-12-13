@@ -1475,7 +1475,7 @@ Note that this is much better than an arbitrary Dedekind domain!
 
 ## Regularity Lemma
 
-:::{.proposition title="Regularity Lemma"}{#lemma:regularity}
+:::{.proposition title="Regularity Lemma" #lemma:regularity}
 Suppose that instead of $K = \ff(A)$, we instead have $A \subset K$ an arbitrary subring, and $L/K$ a finite extension.
 Taking the integral closure $B$ yields another NTI square:
 
