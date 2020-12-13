@@ -1,0 +1,9 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'Algebraic_Curves.blg'
+[86] biber:330> INFO - === Sun Dec 13, 2020, 14:11:53
+[100] Biber.pm:415> INFO - Reading 'Algebraic_Curves.bcf'
+[169] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
+[181] Biber.pm:4334> INFO - Processing section 0
+[191] Biber.pm:4523> INFO - Looking for bibtex format file 'Algebraic\_Curves.bib' for section 0
+[265] Utils.pm:411> ERROR - Cannot find 'Algebraic\_Curves.bib'!
+[265] Biber.pm:132> INFO - ERRORS: 1
