@@ -66,7 +66,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-12-13 }
+{\tiny \textit{Last updated:} 2020-12-14 }
 \end{flushleft}
 
 
@@ -98,6 +98,44 @@ V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 \todo[inline]{Lots of notation to fill in.}
 
 \newpage
+
+\hypertarget{useful-algebra-facts}{%
+\subsection{Useful Algebra Facts}\label{useful-algebra-facts}}
+
+\begin{proposition}
+
+A polynomial ring \(\kx{n}\) on finitely many generators is Noetherian.
+In particular, every ideal \(I\normal \kx{n}\) has a finite set of
+generators and can be written as \(I = \gens{f_1, \cdots, f_m}\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+By Hilbert's basis theorem, every polynomial ring over a Noetherian ring
+is again Noetherian. A field \(k\) is both Artinian and Noetherian,
+since it has only two ideals and thus any chain of ideals necessarily
+terminates.
+
+\end{proof}
+
+\begin{proposition}[Properties and Definitions of Ideal Operations]
+
+\begin{align*}  
+I+J   &\da \ts{f+g \st f\in I,\, g\in J} \\
+IJ    &\da \ts{\sum_{i=1}^N f_i g_i \st f_i\in I,\, g_i\in J, N\in \NN} \\
+I+J   = \gens{1} 
+      &\implies I\intersect J = IJ && \text{(coprime or comaximal)}
+.\end{align*}
+
+\end{proposition}
+
+\begin{fact}
+
+If \(I = \gens{a}\) and \(J = \gens{b}\), then
+\(I + J = \gens{a} + \gens{b} = \gens{a, b}\).
+
+\end{fact}
 
 \hypertarget{friday-august-21-intro-and-motivation}{%
 \section{Friday, August 21: Intro and
@@ -268,7 +306,7 @@ Given \(f\in k[x_1, \cdots, x_n]\), take its value at
 
 \begin{definition}[Degree of an element of $\kxn$]
 
-Set \(\deg(f)\) to be the largest value of \(i_1 + \cdots + i_n\) such
+Define \(\deg(f)\) as the largest value of \(i_1 + \cdots + i_n\) such
 that the coefficient of \(\prod x_j ^{i_j}\) is nonzero.
 
 \end{definition}
@@ -291,30 +329,34 @@ that the coefficient of \(\prod x_j ^{i_j}\) is nonzero.
     \(k^n\), since we won't necessarily use the vector space structure
     (e.g.~adding points).}
 \item
-  Let \(S\subset k[x_1, \cdots, x_n]\) to be a set of polynomials. Then
-  define the \textbf{affine variety} of \(S\) as
-  \begin{align*}
-    V(S) \da \ts{x\in \AA^n \st f(x) = 0} \subset \AA^n
-    \end{align*}
+  Let \(S\subset k[x_1, \cdots, x_n]\) be a \textbf{set} of
+  polynomials.\footnote{We don't necessarily require \(S\) to be an
+    ideal in this definition. We will shortly show that taking the ideal
+    it generates yields the same variety.}
 \end{enumerate}
+
+Then define the \textbf{affine variety} of \(S\) as
+\begin{align*}
+  V(S) \da \ts{x\in \AA^n \st f(x) = 0} \subset \AA^n
+  \end{align*}
 
 \end{definition}
 
-\begin{example}
+\begin{example}[Examples of affine varieties]
 
 \envlist
 
 \begin{itemize}
 \tightlist
 \item
-  \(\AA^n = V(0)\).
+  Let \(f(x) = 0\), then \(\AA^n = V\qty{\ts{f}}\) is an affine variety.
 \item
-  For any point \((a_1, \cdots, a_n)\in \AA^n\), then
-  \(V(x_1 - a_1, \cdots, x_n - a_n) = \theset{a_1, \cdots, a_n}\)
-  uniquely determines the point.
+  Any point \((a_1, \cdots, a_n)\in \AA^n\) is an affine variety,
+  uniquely determined by
+  \(V(x_1 - a_1, \cdots, x_n - a_n) = \theset{a_1, \cdots, a_n}\).
 \item
   For any finite set \(r_1, \cdots, r_k \in \AA^1\), there exists a
-  polynomial \(f(x)\) whose roots are \(r_i\).
+  polynomial \(f\in k[x_1]\) whose roots are \(r_i\).
 \end{itemize}
 
 \end{example}
@@ -325,11 +367,21 @@ We may as well assume \(S\) is an ideal by taking the ideal it
 generates,
 \begin{align*}
 S\subseteq \gens{S} = \ts{\sum g_i f_i \suchthat g_i \in k[x_1, \cdots, x_n],\, f_i\in S}
-.\end{align*} Then \(V(\gens{S}) \subset V(S)\).
+.\end{align*}
 
-Conversely, if \(f_1, f_2\) vanish at \(x\in \AA^n\), then
-\(f_1 + f_2, gf_1\) also vanish at \(x\) for all
-\(g\in k[x_1, \cdots, x_n]\). Thus \(V(S) \subset V(\gens{S})\).
+\begin{claim}
+
+\begin{align*}  
+V(S) = V\qty{\gens{S}}
+.\end{align*}
+
+\end{claim}
+
+It's clear that \(V(\gens{S}) \subset V(S)\).
+
+Conversely, if \(f_1, f_2\) vanish at \(x\in \AA^n\), then \(f_1 + f_2\)
+and \(gf_1\) also vanish at \(x\) for all \(g\in k[x_1, \cdots, x_n]\).
+Thus \(V(S) \subset V(\gens{S})\).
 
 \end{remark}
 
@@ -337,23 +389,8 @@ Conversely, if \(f_1, f_2\) vanish at \(x\in \AA^n\), then
 \subsection{\texorpdfstring{Ideals, and Properties of
 \(V(\wait)\)}{Ideals, and Properties of V(\textbackslash wait)}}\label{ideals-and-properties-of-vwait}}
 
-\begin{proposition}[Properties and Definitions of Ideal Operations]
-
-\begin{align*}  
-I+J   &\da \ts{f+g \st f\in I,\, g\in J} \\
-IJ    &\da \ts{\sum_{i=1}^N f_i g_i \st f_i\in I,\, g_i\in J, N\in \NN} \\
-I+J   = \gens{1} 
-      &\implies I\intersect J = IJ && \text{(coprime or comaximal)}
-.\end{align*}
-
-\end{proposition}
-
-\begin{fact}
-
-If \(I = \gens{a}\) and \(J = \gens{b}\), then
-\(I + J = \gens{a} + \gens{b} = \gens{a, b}\).
-
-\end{fact}
+See \autocite{useful-algebra-facts} for a review of properties of
+ideals.
 
 \begin{proposition}[Properties of $V$]
 

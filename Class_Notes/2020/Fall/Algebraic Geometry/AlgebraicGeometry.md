@@ -16,6 +16,31 @@ V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 \newpage
 
 
+## Useful Algebra Facts
+
+:::{.proposition}
+A polynomial ring $\kx{n}$ on finitely many generators is Noetherian.
+In particular, every ideal $I\normal \kx{n}$ has a finite set of generators and can be written as $I = \gens{f_1, \cdots, f_m}$.
+:::
+
+:::{.proof title="?"}
+By Hilbert's basis theorem, every polynomial ring over a Noetherian ring is again Noetherian.
+A field $k$ is both Artinian and Noetherian, since it has only two ideals and thus any chain of ideals necessarily terminates.
+:::
+
+:::{.proposition title="Properties and Definitions of Ideal Operations"}
+\[  
+I+J   &\da \ts{f+g \st f\in I,\, g\in J} \\
+IJ    &\da \ts{\sum_{i=1}^N f_i g_i \st f_i\in I,\, g_i\in J, N\in \NN} \\
+I+J   = \gens{1} 
+      &\implies I\intersect J = IJ && \text{(coprime or comaximal)}
+.\]
+:::
+
+:::{.fact}
+If $I = \gens{a}$ and $J = \gens{b}$, then $I + J = \gens{a} + \gens{b} = \gens{a, b}$.
+:::
+
 
 # Friday, August 21: Intro and Motivation
 
@@ -135,7 +160,7 @@ Then $\sqrt{I} = (x_1, x_2)$, since $x_2^2 \in I \implies x_2 \in \sqrt{I}$.
 Given $f\in k[x_1, \cdots, x_n]$, take its value at $a = (a_1, \cdots, a_n)$ and denote it $f(a)$.
 
 :::{.definition title="Degree of an element of $\kxn$"}
-Set $\deg(f)$ to be the largest value of $i_1 + \cdots + i_n$ such that the coefficient of $\prod x_j ^{i_j}$ is nonzero.
+Define $\deg(f)$ as the largest value of $i_1 + \cdots + i_n$ such that the coefficient of $\prod x_j ^{i_j}$ is nonzero.
 :::
 
 :::{.example}
@@ -147,7 +172,8 @@ $\deg(x_1 + x_2^2 + x_1 x_2^3) = 4$
 
 1. Affine $n\dash$space $\AA^n = \AA_k^n$ is defined as $\theset{(a_1, \cdots, a_n) \suchthat a_i \in k}$.[^affine_variety_remark]
 
-2. Let $S\subset k[x_1, \cdots, x_n]$ to be a set of polynomials.
+2. Let $S\subset k[x_1, \cdots, x_n]$ be a **set** of polynomials.[^not_nec_ideal]
+
   Then define the **affine variety** of $S$ as 
   \[
   V(S) \da \ts{x\in \AA^n \st f(x) = 0} \subset \AA^n
@@ -156,14 +182,19 @@ $\deg(x_1 + x_2^2 + x_1 x_2^3) = 4$
 [^affine_variety_remark]: 
 Not $k^n$, since we won't necessarily use the vector space structure (e.g. adding points).
 
+
+[^not_nec_ideal]: 
+We don't necessarily require $S$ to be an ideal in this definition.
+We will shortly show that taking the ideal it generates yields the same variety.
+
 :::
 
-:::{.example}
+:::{.example title="Examples of affine varieties"}
 \envlist
 
-- $\AA^n = V(0)$.
-- For any point $(a_1, \cdots, a_n)\in \AA^n$, then $V(x_1 - a_1, \cdots, x_n - a_n) = \theset{a_1, \cdots, a_n}$ uniquely determines the point.
-- For any finite set $r_1, \cdots, r_k \in \AA^1$, there exists a polynomial $f(x)$ whose roots are $r_i$.
+- Let $f(x) = 0$, then $\AA^n = V\qty{\ts{f}}$ is an affine variety.
+- Any point $(a_1, \cdots, a_n)\in \AA^n$ is an affine variety, uniquely determined by $V(x_1 - a_1, \cdots, x_n - a_n) = \theset{a_1, \cdots, a_n}$.
+- For any finite set $r_1, \cdots, r_k \in \AA^1$, there exists a polynomial $f\in k[x_1]$ whose roots are $r_i$.
 :::
 
 :::{.remark}
@@ -171,27 +202,22 @@ We may as well assume $S$ is an ideal by taking the ideal it generates,
 \[
 S\subseteq \gens{S} = \ts{\sum g_i f_i \suchthat g_i \in k[x_1, \cdots, x_n],\, f_i\in S}
 .\]
-Then $V(\gens{S}) \subset V(S)$.
 
-Conversely, if $f_1, f_2$ vanish at $x\in \AA^n$, then $f_1 + f_2, gf_1$ also vanish at $x$ for all $g\in k[x_1, \cdots, x_n]$.
+:::{.claim}
+\[  
+V(S) = V\qty{\gens{S}}
+.\]
+:::
+
+It's clear that $V(\gens{S}) \subset V(S)$.
+
+Conversely, if $f_1, f_2$ vanish at $x\in \AA^n$, then $f_1 + f_2$ and $gf_1$ also vanish at $x$ for all $g\in k[x_1, \cdots, x_n]$.
 Thus $V(S) \subset V(\gens{S})$.
 :::
 
 ## Ideals, and Properties of $V(\wait)$
 
-:::{.proposition title="Properties and Definitions of Ideal Operations"}
-\[  
-I+J   &\da \ts{f+g \st f\in I,\, g\in J} \\
-IJ    &\da \ts{\sum_{i=1}^N f_i g_i \st f_i\in I,\, g_i\in J, N\in \NN} \\
-I+J   = \gens{1} 
-      &\implies I\intersect J = IJ && \text{(coprime or comaximal)}
-.\]
-:::
-
-:::{.fact}
-If $I = \gens{a}$ and $J = \gens{b}$, then $I + J = \gens{a} + \gens{b} = \gens{a, b}$.
-:::
-
+See [@useful-algebra-facts] for a review of properties of ideals.
 
 :::{.proposition title="Properties of $V$"}
 \envlist
