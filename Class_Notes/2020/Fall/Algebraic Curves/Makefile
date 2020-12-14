@@ -13,6 +13,8 @@ BIB = $(FILENAME).bib
 ## CSL stylesheet (located in the csl folder of the PREFIX directory).
 CSL = apsa
 
+THEME = tufte-html-vis
+
 all: pdf html	
 
 ## Markdown Output
@@ -68,7 +70,7 @@ html: markdown
 		-r markdown+simple_tables+table_captions+yaml_metadata_block \
 		--to html \
 		--mathjax \
-		--template=$(PREFIX)/templates/tufte-html-vis.html  \
+		--template=$(PREFIX)/templates/$(THEME).html  \
 		--css=$(PREFIX)/marked/kultiad-serif.css \
 		--filter pandoc-crossref \
 		--filter pandoc-citeproc \
