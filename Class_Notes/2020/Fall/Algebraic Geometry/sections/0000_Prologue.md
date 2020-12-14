@@ -17,6 +17,14 @@ V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 
 ## Useful Algebra Facts
 
+:::{.fact}
+\envlist
+
+- $\mathfrak{p}\normal R$ is prime $\iff R/\mathfrak{p}$ is a domain.
+- $\mathfrak{p}\normal R$ is maximal $\iff R/\mathfrak{p}$ is a field.
+- Maximal ideals are prime.
+:::
+
 :::{.proposition}
 A polynomial ring $\kx{n}$ on finitely many generators is Noetherian.
 In particular, every ideal $I\normal \kx{n}$ has a finite set of generators and can be written as $I = \gens{f_1, \cdots, f_m}$.
