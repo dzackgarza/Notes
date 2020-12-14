@@ -24,7 +24,7 @@ V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 General idea: functions in a *coordinate ring* $R[x_1, \cdots, x_n]/I$ will correspond to the geometry of the *variety* cut out by $I$.
 
 :::{.example}
-\hfill
+\envlist
 - $x^2 + y^2 - 1$ defines a circle, say, over $\RR$
 
 - $y^2 = x^3-x$ gives an elliptic curve:
@@ -143,7 +143,7 @@ $\deg(x_1 + x_2^2 + x_1 x_2^3) = 4$
 :::
 
 :::{.definition title="Affine Variety"}
-\hfill
+\envlist
 
 1. Affine $n\dash$space $\AA^n = \AA_k^n$ is defined as $\theset{(a_1, \cdots, a_n) \suchthat a_i \in k}$.[^affine_variety_remark]
 
@@ -159,7 +159,7 @@ Not $k^n$, since we won't necessarily use the vector space structure (e.g. addin
 :::
 
 :::{.example}
-\hfill
+\envlist
 
 - $\AA^n = V(0)$.
 - For any point $(a_1, \cdots, a_n)\in \AA^n$, then $V(x_1 - a_1, \cdots, x_n - a_n) = \theset{a_1, \cdots, a_n}$ uniquely determines the point.
@@ -194,7 +194,7 @@ If $I = \gens{a}$ and $J = \gens{b}$, then $I + J = \gens{a} + \gens{b} = \gens{
 
 
 :::{.proposition title="Properties of $V$"}
-\hfill
+\envlist
 
 1. If $S_1 \subseteq S_2$ then $V(S_1) \supseteq V(S_2)$.
 2. $V(S_1) \union V(S_2) = V(S_1 S_2) = V(S_1 \intersect S_2)$.
@@ -476,7 +476,8 @@ Thus there is a correspondence
 
 
 :::{.theorem title="Properties of $I$"}
-\hfill
+\envlist
+
 a. $I(X_1 \union X_2) = I(X_1) \intersect I(X_2)$.
 
 b. $I(X_1) \intersect I(X_2) = \sqrt{I(X_1) + I(X_2)}$.
@@ -2087,7 +2088,7 @@ A **ringed space** is a topological space $X$ together with a sheaf $\OO_X$ of r
 :::
 
 :::{.example}
-\hfill
+\envlist
 
 1. $X$ an affine variety and $\OO_X$ its ring of regular functions.
 
@@ -2180,7 +2181,7 @@ But this is the same as $f\circ \iota \in C^\infty(\RR^2\intersect U)$, which is
 
 
 :::{.proposition title="Properties of Morphisms of Ringed Spaces"}
-\hfill
+\envlist
 
 1. They can be composed: if $\phi \in \OO_Z(U)$, then $g^* \phi \in \OO_Y(g^{-1}(U))$ and so $f^* g^* \phi \in \OO_X(f^{-1} g^{-1} (U))$.
 
@@ -2824,7 +2825,7 @@ But then $V(I(S)) = \Delta_{\AA^1}$.
 :::
 
 :::{.lemma title="?"}
-\hfill
+\envlist
 
 a. Any affine variety is a variety.
 
