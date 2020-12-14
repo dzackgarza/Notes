@@ -217,7 +217,7 @@ Thus $V(S) \subset V(\gens{S})$.
 
 ## Ideals, and Properties of $V(\wait)$
 
-See [@useful-algebra-facts] for a review of properties of ideals.
+See \cref{useful-algebra-facts} for a review of properties of ideals.
 
 :::{.proposition title="Properties of $V$"}
 \envlist
@@ -244,26 +244,37 @@ I(X) \da\ts{f\in k[x_1, \cdots, x_n] \st f(x) = 0\, \forall x\in X}
 :::{.example}
 Let $X$ be the union of the $x_1$ and $x_2$ axes in $\AA^2$, then 
 \[
-I(X) = (x_1 x_2) = \ts {x_1 x_2 g\st g\in k[x_1, x_2]}
+I(X) = \gens{x_1 x_2} = \ts {g x_1 x_2 \st g\in k[x_1, x_2]}
 .\]
 :::
 
-:::{.fact}
-If $X_1 \subset X_2$ then $I(X_1) \subset I(X_2)$.
+:::{.proposition title="$I$ is inclusion-reversing"}
+If $X_1 \subset X_2$ then $I(X_1) \supset I(X_2)$.
+:::
+
+:::{.proof title="?"}
+If $f\in I(X_2)$, then $f(x) = 0$ for all $x\in X_2$. 
+Since $X_1 \subset X_2$, we have $f(x) = 0$ for all $x\in X_1$, so $f\in I(X_2)$.
 :::
 
 
 :::{.proposition title="The Image of $V$ is Radical"}
 $I(X)$ is a radical ideal, i.e. $I(X) = \sqrt{I(X)}$.
-
-This is because $f(x)^k = 0 \forall x\in X$ implies $f(x) = 0$ for all $x\in X$, so $f^k \in I(X)$ and thus $f\in I(X)$.
 :::
 
-Our correspondence is thus
+:::{.proof title="?"}
+If $f(x)^k = 0$ for all $x\in X$, then $f(x) = 0$ for all $x\in X$.
+Then $f^k \in I(X)$ and thus $f\in I(X)$.
+:::
+
+These maps thus yield correspondences 
 \[  
 \correspond{\text{Ideals in } k[x_1, \cdots, x_n]} &\mapsvia{V} \correspond{\text{Affine Varieties}} \\
-\correspond{\text{Radical Ideals}} &\xleftarrow{I} \correspond{\text{?}}
+\correspond{\text{Radical Ideals}} &\fromvia{I} \correspond{\text{Affine Varieties}}
 .\]
+
+We'll find that if we restrict to radical ideals, this will yield a bijective correspondence.
+
 
 
 

@@ -389,8 +389,7 @@ Thus \(V(S) \subset V(\gens{S})\).
 \subsection{\texorpdfstring{Ideals, and Properties of
 \(V(\wait)\)}{Ideals, and Properties of V(\textbackslash wait)}}\label{ideals-and-properties-of-vwait}}
 
-See \autocite{useful-algebra-facts} for a review of properties of
-ideals.
+See \cref{useful-algebra-facts} for a review of properties of ideals.
 
 \begin{proposition}[Properties of $V$]
 
@@ -429,31 +428,46 @@ I(X) \da\ts{f\in k[x_1, \cdots, x_n] \st f(x) = 0\, \forall x\in X}
 Let \(X\) be the union of the \(x_1\) and \(x_2\) axes in \(\AA^2\),
 then
 \begin{align*}
-I(X) = (x_1 x_2) = \ts {x_1 x_2 g\st g\in k[x_1, x_2]}
+I(X) = \gens{x_1 x_2} = \ts {g x_1 x_2 \st g\in k[x_1, x_2]}
 .\end{align*}
 
 \end{example}
 
-\begin{fact}
+\begin{proposition}[$I$ is inclusion-reversing]
 
-If \(X_1 \subset X_2\) then \(I(X_1) \subset I(X_2)\).
+If \(X_1 \subset X_2\) then \(I(X_1) \supset I(X_2)\).
 
-\end{fact}
+\end{proposition}
+
+\begin{proof}[?]
+
+If \(f\in I(X_2)\), then \(f(x) = 0\) for all \(x\in X_2\). Since
+\(X_1 \subset X_2\), we have \(f(x) = 0\) for all \(x\in X_1\), so
+\(f\in I(X_2)\).
+
+\end{proof}
 
 \begin{proposition}[The Image of $V$ is Radical]
 
 \(I(X)\) is a radical ideal, i.e.~\(I(X) = \sqrt{I(X)}\).
 
-This is because \(f(x)^k = 0 \forall x\in X\) implies \(f(x) = 0\) for
-all \(x\in X\), so \(f^k \in I(X)\) and thus \(f\in I(X)\).
-
 \end{proposition}
 
-Our correspondence is thus
+\begin{proof}[?]
+
+If \(f(x)^k = 0\) for all \(x\in X\), then \(f(x) = 0\) for all
+\(x\in X\). Then \(f^k \in I(X)\) and thus \(f\in I(X)\).
+
+\end{proof}
+
+These maps thus yield correspondences
 \begin{align*}  
 \correspond{\text{Ideals in } k[x_1, \cdots, x_n]} &\mapsvia{V} \correspond{\text{Affine Varieties}} \\
-\correspond{\text{Radical Ideals}} &\xleftarrow{I} \correspond{\text{?}}
+\correspond{\text{Radical Ideals}} &\fromvia{I} \correspond{\text{Affine Varieties}}
 .\end{align*}
+
+We'll find that if we restrict to radical ideals, this will yield a
+bijective correspondence.
 
 \hypertarget{statement-and-proof-of-nullstellensatz}{%
 \subsection{Statement and Proof of
