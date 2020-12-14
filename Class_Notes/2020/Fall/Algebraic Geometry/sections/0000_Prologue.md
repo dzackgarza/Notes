@@ -2,9 +2,7 @@
 
 ## References 
 
-- Gathmann's Algebraic Geometry notes[@AndreasGathmann515]
-  <https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019.pdf>
-
+- Gathmann's Algebraic Geometry notes[@AndreasGathmann515].
 
 ## Notation
 

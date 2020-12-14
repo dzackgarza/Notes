@@ -101,7 +101,8 @@ where we're correcting by enough in $t$ but not enough in $q$ and seeing what we
 Equating coefficients, for $0\leq j \leq g$ we have
 \[  
 a_{2g-j} = q^{g-j} a_j
-.\] {#eq:sym_formula_proofc}
+\label{eq:sym_formula_proofc}
+.\] 
 
 Using the fact that $A_0$ is the number of effective degree zero divisors, which is only zero, we have $A_0 = 1$ and we can multiply formal power series to obtain 
 \[  
@@ -114,7 +115,7 @@ From this, we can read off
 
 - $L(0) = a_0 = 1$
 - $a_1 = A_1 - (q+1) = \Sigma_1(K/k) - (q+1)$
-- $a_{2g} = a_{2g-0} = q^{g-0}a_0 = a^g$ by taking $j=0$ in [@eq:sym_formula_proofc], and thus $\deg L = 2g$.
+- $a_{2g} = a_{2g-0} = q^{g-0}a_0 = a^g$ by taking $j=0$ in \cref{eq:sym_formula_proofc}, and thus $\deg L = 2g$.
 
 :::
 

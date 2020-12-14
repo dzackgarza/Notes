@@ -1,5 +1,5 @@
 SHELL:=/bin/zsh
-FILENAME="Algebraic_Geometry"
+FILENAME="AlgebraicGeometry"
 
 ## Markdown extension (e.g. md, markdown, mdown).
 MEXT = md
@@ -42,12 +42,17 @@ latex: markdown
 		--lua-filter /home/zack/Notes/Latex/tikzcd.lua \
 		-V current_date="$$(date +%Y-%m-%d%n)" \
 		-F pandoc-crossref;
+	echo "Tex file created: $(FILENAME).tex"
 
 
 ## PDF Output
 pdf: markdown latex
-	latexmk --shell-escape -pdf $(FILENAME).tex -quiet;
-	echo "Make done";
+	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -silent -logfilewarninglist -gg -latexoption="-interaction=batchmode";
+	echo "PDF file created: $(FILENAME).pdf"
+
+test: markdown latex
+	latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull;
+	echo "Tests complete."
 
 
 ## HTML Output
@@ -79,13 +84,15 @@ html: markdown
 		--self-contained \
 		-o $(FILENAME).html ;
 	rm out1.temp combined.temp *.svg -f || true;
+	echo "HTMLfile created: $(FILENAME).html"
 
 .SILENT:
 
 clean:
-	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
+	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof .bib.bbl .bib.blg _bibertool.bib) -f || true;
 	rm *.svg -f || true;
 	rm *.temp -f || true;
+	rm latex.out -rf || true;
 
 
 reset:

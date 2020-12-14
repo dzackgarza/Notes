@@ -1,5 +1,5 @@
 SHELL:=/bin/zsh
-FILENAME="Algebraic_Curves"
+FILENAME="AlgebraicCurves"
 
 ## Markdown extension (e.g. md, markdown, mdown).
 MEXT = md
@@ -46,8 +46,8 @@ latex: markdown
 
 ## PDF Output
 pdf: markdown latex
-	latexmk --shell-escape -pdf $(FILENAME).tex;
-	echo "Make done";
+	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -silent -logfilewarninglist -gg -latexoption="-interaction=batchmode";
+	echo "PDF file created: $(FILENAME).pdf"
 
 
 ## HTML Output
@@ -83,10 +83,10 @@ html: markdown
 .SILENT:
 
 clean:
-	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
+	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof .bib.bbl .bib.blg _bibertool.bib) -f || true;
 	rm *.svg -f || true;
 	rm *.temp -f || true;
-
+	rm latex.out -rf || true;
 
 reset:
 	rm $(FILENAME).md -f || true;

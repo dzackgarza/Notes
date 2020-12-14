@@ -23,7 +23,7 @@ local function tikz2image(src, outfile)
       local f = io.open('tikz.tex', 'w')
       f:write(tikz_doc_template:format(src))
       f:close()
-      os.execute('pdflatex tikz.tex')
+      os.execute('pdflatex tikz.tex > /dev/null 2>&1')
       os.execute('pdf2svg tikz.pdf "' .. outfile .. '"')
     end)
   end)
@@ -48,7 +48,7 @@ end
 function RawBlock(el)
   if starts_with('\\begin{tikzcd}', el.text) then
     if FORMAT:match 'latex' or FORMAT:match 'pdf' or FORMAT:match 'markdown' then
-      ril = pandoc.RawInline( "tex", "\\begin{center}" .. el.text .. "\\end{center}")
+      ril = pandoc.RawInline( "tex", "\\begin{center}\n" .. el.text .. "\n\\end{center}")
     elseif FORMAT:match 'html' then
       local sha = pandoc.sha1(el.text)
       local bname = system.get_working_directory() .. '/' .. sha

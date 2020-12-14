@@ -101,7 +101,8 @@ For a nonzero rational function $f\in K\units$ we have $v_p(f) = 0$ for almost e
 :::
 
 :::{.proof title="?"}
-See previous lecture, in particular [@lem:poles_and_zeros].
+See previous lecture, in particular 
+\cref{lem:poles_and_zeros}.
 :::
 
 This says that the set of places for which the valuation is nonzero is finite, so except for finitely many places the valuation is zero.

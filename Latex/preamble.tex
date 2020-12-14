@@ -1,8 +1,5 @@
 %\RequirePackage[l2tabu, orthodox]{nag}
 
-\RequirePackage{fixltx2e}
-
-
 %\documentclass[]{article}
 \documentclass[11pt, a4paper, bibliography=totocnumbered, parskip=full]{scrartcl}
 % Remove indentation for new paragraphs
@@ -37,21 +34,17 @@
 \usepackage{newunicodechar}
 \newunicodechar{ε}{\varepsilon}
 \newunicodechar{δ}{\delta}
-\newunicodechar{µ}{\mu}
-\newunicodechar{→}{\to}
 \newunicodechar{≤}{\leq}
 \newunicodechar{∈}{\in}
 \newunicodechar{⊆}{\subseteq}
 \newunicodechar{Λ}{\Lambda}
 \newunicodechar{∞}{\infty}
-\newunicodechar{×}{\times}
 \everymath{\displaystyle}
 
 
 \usepackage[stretch=10]{microtype}
 
 \usepackage[pdfencoding=auto]{hyperref}
-\usepackage[noabbrev, capitalise, nameinlink]{cleveref} % use \cref{}, automatically deduces theorem, proposition, etc
 
 \usepackage{bookmark}
 \usepackage{booktabs}
@@ -108,7 +101,7 @@
 % Non-tikz graphics
 \usepackage{amscd}
 \usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
+\pgfplotsset{compat=1.17}
 \usepackage[inline]{asymptote}
 
 
@@ -315,4 +308,14 @@
 \newcommand{\work}[0]{\scalebox{0.75}{🚩}}
 % Everything else
 \input{/home/zack/Notes/Latex/latexmacs}
+
+\usepackage[noabbrev, capitalise, nameinlink]{cleveref} % use \cref{}, automatically deduces theorem, proposition, etc
+\crefname{figure}{fig.}{figs.}
+\Crefname{figure}{Fig.}{Figs.}
+\crefname{table}{tbl.}{tbls.}
+\Crefname{table}{Tbl.}{Tbls.}
+\crefname{equation}{eq.}{eqns.}
+\Crefname{equation}{Eq.}{Eqns.}
+\crefname{section}{sec.}{secs.}
+\Crefname{section}{Sec.}{Secs.}
 
