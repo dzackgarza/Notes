@@ -13,6 +13,7 @@ BIB = $(FILENAME).bib
 ## CSL stylesheet (located in the csl folder of the PREFIX directory).
 CSL = apsa
 
+## Pandoc Theme
 THEME = tufte-html-vis
 
 all: pdf html	
