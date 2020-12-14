@@ -33,8 +33,8 @@ In particular, every ideal $I\normal \kx{n}$ has a finite set of generators and 
 :::
 
 :::{.proof title="?"}
-By Hilbert's basis theorem, every polynomial ring over a Noetherian ring is again Noetherian.
 A field $k$ is both Artinian and Noetherian, since it has only two ideals and thus any chain of ideals necessarily terminates.
+By Hilbert's basis theorem (\cref{thm:hilbert_basis}), $\kx{n}$ is thus Noetherian. 
 :::
 
 :::{.proposition title="Properties and Definitions of Ideal Operations"}
@@ -48,7 +48,11 @@ I+J   = \gens{1}
 :::
 
 
-:::{.theorem title="Noether Normalization" ref="thm:"}
+:::{.theorem title="Noether Normalization" ref="thm:noether_normalization"}
 Any finitely-generated field extension $k_1 \injects k_2$ is a finite extension of a purely transcendental extension, i.e. there exist $t_1, \cdots, t_\ell$ such that $k_2$ is finite over $k_1(t_1, \cdots, t_\ell)$.
 :::
 
+
+:::{.theorem title="Hilbert's Basis Theorem" ref="thm:hilbert_basis"}
+If $R$ is a Noetherian ring, then $R[x]$ is again Noetherian.
+:::
