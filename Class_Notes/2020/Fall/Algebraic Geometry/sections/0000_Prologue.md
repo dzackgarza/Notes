@@ -43,12 +43,12 @@ I+J   &\da \ts{f+g \st f\in I,\, g\in J} \\
 IJ    &\da \ts{\sum_{i=1}^N f_i g_i \st f_i\in I,\, g_i\in J, N\in \NN} \\
 I+J   = \gens{1} 
       &\implies I\intersect J = IJ && \text{(coprime or comaximal)}
+\gens{a} + \gens{b} = \gens{a, b}
 .\]
 :::
 
-:::{.fact}
-If $I = \gens{a}$ and $J = \gens{b}$, then $I + J = \gens{a} + \gens{b} = \gens{a, b}$.
-:::
 
-:::{.fact}
+:::{.theorem title="Noether Normalization" ref="thm:"}
+Any finitely-generated field extension $k_1 \injects k_2$ is a finite extension of a purely transcendental extension, i.e. there exist $t_1, \cdots, t_\ell$ such that $k_2$ is finite over $k_1(t_1, \cdots, t_\ell)$.
+:::
 
