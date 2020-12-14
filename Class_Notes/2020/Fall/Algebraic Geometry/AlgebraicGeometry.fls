@@ -1551,6 +1551,10 @@ INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
+INPUT ./AlgebraicGeometry.pre
+INPUT AlgebraicGeometry.pre
+INPUT ./AlgebraicGeometry.pre
+INPUT AlgebraicGeometry.pre
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
@@ -2042,7 +2046,12 @@ INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT AlgebraicGeometry.bcf
-INPUT 'inkscape' -V 
+INPUT AlgebraicGeometry.bbl
+INPUT ./AlgebraicGeometry.bbl
+INPUT AlgebraicGeometry.bbl
+INPUT ./AlgebraicGeometry.bbl
+INPUT ./AlgebraicGeometry.bbl
+INPUT AlgebraicGeometry.bbl
 INPUT ./figures/cover.png
 INPUT ./figures/cover.png
 INPUT figures/cover.png
@@ -2157,9 +2166,12 @@ INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-OUTPUT AlgebraicGeometry.toc
+INPUT ./AlgebraicGeometry.toc
+INPUT AlgebraicGeometry.toc
+INPUT AlgebraicGeometry.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbo10.tfm
+OUTPUT AlgebraicGeometry.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/arkandis/adforn/OrnementsADF.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
@@ -2182,7 +2194,6 @@ INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
@@ -2191,6 +2202,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT ./figures/image_2020-08-21-01-04-22.png
 INPUT ./figures/image_2020-08-21-01-04-22.png
 INPUT figures/image_2020-08-21-01-04-22.png
@@ -2280,4 +2292,18 @@ INPUT ./figures/image_2020-08-27-10-26-45.png
 INPUT figures/image_2020-08-27-10-26-45.png
 INPUT ./figures/image_2020-08-27-10-26-45.png
 INPUT ./figures/image_2020-08-27-10-26-45.png
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
