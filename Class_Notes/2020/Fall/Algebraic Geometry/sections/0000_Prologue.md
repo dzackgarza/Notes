@@ -40,3 +40,10 @@ I+J   = \gens{1}
 If $I = \gens{a}$ and $J = \gens{b}$, then $I + J = \gens{a} + \gens{b} = \gens{a, b}$.
 :::
 
+:::{.fact}
+Prime ideals are radical.
+
+:::
+
+
+
