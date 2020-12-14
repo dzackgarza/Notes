@@ -79,6 +79,7 @@ html: markdown
 		--csl=$(PREFIX)/csl/$(CSL).csl \
 		--bibliography=$(BIB) \
 		--toc \
+		--standalone \
 		-V current_date="$$(date +%Y-%m-%d%n)" \
 		-o $(FILENAME).html ;
 	echo "HTML file created: $(FILENAME).html"
