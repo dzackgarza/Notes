@@ -52,6 +52,7 @@ pdf: markdown latex
 
 ## HTML Output
 html: markdown
+	echo "Creating HTML file"
 	cat ~/Notes/Latex/latexmacs.tex $(FILENAME).md \
 		> combined.temp ;
 	cat combined.temp | pandoc \
@@ -76,8 +77,8 @@ html: markdown
 		--bibliography=$(BIB) \
 		--toc \
 		-V current_date="$$(date +%Y-%m-%d%n)" \
-		--self-contained \
 		-o $(FILENAME).html ;
+	echo "HTML file created: $(FILENAME).html"
 	rm out1.temp combined.temp *.svg -f || true;
 
 .SILENT:
