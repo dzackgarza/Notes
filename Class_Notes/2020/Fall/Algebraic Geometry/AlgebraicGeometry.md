@@ -34,8 +34,8 @@ In particular, every ideal $I\normal \kx{n}$ has a finite set of generators and 
 :::
 
 :::{.proof title="?"}
-By Hilbert's basis theorem, every polynomial ring over a Noetherian ring is again Noetherian.
 A field $k$ is both Artinian and Noetherian, since it has only two ideals and thus any chain of ideals necessarily terminates.
+By Hilbert's basis theorem (\cref{thm:hilbert_basis}), $\kx{n}$ is thus Noetherian. 
 :::
 
 :::{.proposition title="Properties and Definitions of Ideal Operations"}
@@ -53,6 +53,10 @@ I+J   = \gens{1}
 Any finitely-generated field extension $k_1 \injects k_2$ is a finite extension of a purely transcendental extension, i.e. there exist $t_1, \cdots, t_\ell$ such that $k_2$ is finite over $k_1(t_1, \cdots, t_\ell)$.
 :::
 
+
+:::{.theorem title="Hilbert's Basis Theorem" ref="thm:hilbert_basis"}
+If $R$ is a Noetherian ring, then $R[x]$ is again Noetherian.
+:::
 
 # Friday, August 21: Intro and Motivation
 
@@ -678,14 +682,13 @@ There are few closed sets, so this is a "weak" topology.
 :::
 
 
-:::{.example}
+:::{.example title="Closedness differs in the analytic topology"}
 Compare the classical topology on $\AA^1/\CC$ to the Zariski topology.
 
 Consider the set 
 $A\da \ts{x\in \AA^1/\CC \st \norm{x} \leq 1}$, 
 which is closed in the classical topology.
-
-But $A$ is not closed in the Zariski topology, since the closed subsets are finite sets or the whole space.
+However, $A$ is *not* closed in the Zariski topology, since the closed subsets are finite sets or the whole space.
 
 > Here the topology is in fact the cofinite topology.
 
@@ -694,9 +697,9 @@ But $A$ is not closed in the Zariski topology, since the closed subsets are fini
 :::{.example}
 Let $f: \AA^1/k\to \AA^1/k$ be any injective map.
 Then $f$ is necessarily continuous wrt the Zariski topology.
+Thus the notion of continuity is too weak in this situation.
 :::
 
-Thus the notion of continuity is too weak in this situation.
 
 :::{.example}
 Consider $X\cross Y$ a product of affine varieties.
@@ -715,10 +718,10 @@ The Zariski topology can detect these decompositions.
 :::{.definition title="Irreducibility and Connectedness"}
 Let $X$ be a topological space.
 
-a. $X$ is *reducible* iff there exist nonempty proper closed subsets $X_1 ,X_2 \subset X$ such that $X = X_1 \union X_2$.
+a. $X$ is **reducible** iff there exist nonempty proper closed subsets $X_1 ,X_2 \subset X$ such that $X = X_1 \union X_2$.
   Otherwise, $X$ is said to be *irreducible*.
 
-b. $X$ is *disconnected* if there exist $X_1, X_2 \subset X$ such that $X = X_1 \disjoint X_2$.
+b. $X$ is **disconnected** if there exist $X_1, X_2 \subset X$ such that $X = X_1 \disjoint X_2$.
   Otherwise, $X$ is said to be *connected*.
 :::
 
@@ -740,7 +743,7 @@ Then $A(X) \cong A(X_1) \cross A(X_2)$.
 :::{.proof}
 We have $X_1 \union X_2 = X$, so $I(X_1) \intersect I(X_2) = I(X) = (0)$ in the coordinate ring $A(X)$ (recalling that it is a quotient by $I(X)$.)
 
-Since $X_1 \intersect X_1  \emptyset$, we have 
+Since $X_1 \intersect X_1 = \emptyset$, we have 
 \[  
 I(X_1 \intersect X_2) = \sqrt{I(X_1) + I(X_2) } = I(\emptyset) = \gens{1}
 .\]
@@ -778,7 +781,7 @@ Let $X = \ts{p_1, \cdots, p_d}$ be a finite set in $\AA^n$.
 The Zariski topology on $X$ is the discrete topology, and $X = \disjoint \ts{p_i}$.
 So 
 \[  
-A(X) = A(\disjoint \ts{p_i}) = \prod_{i=1}^d A({\ts{p_i}}) = \prod_{i=1}^d k[x_1, \cdots, x_n] / \gens{x_j - a_j(p_i)}_{j=1}^d
+A(X) = A\qty{\disjoint \ts{p_i}} = \prod_{i=1}^d A({\ts{p_i}}) = \prod_{i=1}^d k[x_1, \cdots, x_n] / \gens{x_j - a_j(p_i)}_{j=1}^d
 .\]
 :::
 
@@ -788,17 +791,22 @@ This not being a domain (since $x_1 x_2 = 0$) corresponds to $X = V(x_1) \union 
 :::
 
 :::{.example}
-$\AA^2/k$ is irreducible since $k[x_1, \cdots x_n]$ is a domain.
+$\AA^n/k$ is irreducible since $k[x_1, \cdots x_n]$ is a domain.
 :::
 
 
 :::{.example}
 Let $X_1$ be the $xy$ plane and $X_2$ be the line parallel to the $y\dash$axis through $\thevector{0,0,1}$, and let $X= X_1 \disjoint X_2$.
-Then $X_1 = V(z)$ and $X_2 = V(x, z-1)$, and $I(X) = \gens{z} \cdots \gens{x, z-1}=  \gens{xz, z^2 - z}$.
+Then $X_1 = V(z)$ and $X_2 = V(x, z-1)$, and 
+\[
+I(X) = \gens{z} \cdot \gens{x, z-1}=  \gens{xz, z^2 - z}
+\]
+The coordinate ring is then given by 
+\[
+A(X) = \CC[x, y, z] / \gens{xz, z^2 - z} = \CC[x, y, z] / \gens{z} \oplus \CC[x, y,z] / \gens{x, z-1}
+\]
 
-Then the coordinate ring is given by $A(X) = \CC[x, y, z] / \gens{xz, z^2 - z} = \CC[x, y, z] / \gens{z} \oplus \CC[x, y,z] / \gens{x, z-1}$.
-
-![Image](figures/image_2020-09-01-10-43-00.png)
+![Image](figures/image_2020-09-01-10-43-00.png){width=350px}
 
 :::
 
@@ -835,23 +843,21 @@ Then
 A(X) / I_X(Y) = A(Y)
 .\]
 
-By NSS, there is a bijection between subvarieties of $X$ and radical ideals of $A(X)$ where $Y\mapsto I_X(Y)$.
+By the Nullstellensatz, there is a bijection between subvarieties of $X$ and radical ideals of $A(X)$ where $Y\mapsto I_X(Y)$.
 A quotient is a domain iff quotienting by a prime ideal, so $A(Y)$ is a domain iff $I_X(Y)$ is prime.
 :::
 
 Recall that $\mfp \normal R$ is prime when $fg\in \mfp \iff f\in \mfp$ or $g\in \mfp$.
 Thus $\bar f \bar g = 0$ in $R/\mfp$ implies $\bar f = 0$ or $\bar g = 0$ in $R/\mfp$, i.e. $R/\mfp$ is a domain.
-
-Finally note that prime ideals are radical (easy proof).
+Finally, note that prime ideals are radical (easy proof).
 
 :::{.example}
 Consider $\AA^2/\CC$ and some subvarieties $C_i$:
 
-![Subvarieties](figures/image_2020-09-03-09-47-09.png)
+![Subvarieties](figures/image_2020-09-03-09-47-09.png){width=350px}
 
 Then irreducible subvarieties correspond to prime ideals in $\CC[x, y]$.
 Here $C_1, C_3$ correspond to $V(f), V(g)$ for $f,g$ irreducible polynomials, whereas $C_2$ corresponds to a maximal ideal, i.e. $V(x_1 - a_1, x_2 - a_2)$.
-
 Note that $I(C_1 \union C_2 \union C_3)$ is not a prime ideal, since the variety is reducible as the union of 3 closed subsets.
 :::
 
@@ -877,7 +883,7 @@ A *Noetherian* topological space $X$ is a space with no infinite strictly decrea
 :::
 
 :::{.proposition title="?"}
-An affine variety $X$ with the zariski topology is a noetherian space.
+An affine variety $X$ with the zariski topology is a Noetherian space.
 :::
 
 :::{.proof}
@@ -889,23 +895,27 @@ Recall that a ring $R$ is Noetherian iff every ascending chain of ideals termina
 Thus it suffices to show that $A(X)$ is Noetherian.
 
 We have $A(X) = \kx{n} / I(X)$, and if this had an infinite chain $I_1 \subsetneq I_2 \subsetneq \cdots$ lifts to a chain in $\kx{n}$, which is Noetherian.
-A useful fact: $R$ noetherian implies that $R[x]$ is noetherian, and fields are always noetherian.
+A useful fact: $R$ Noetherian implies that $R[x]$ is Noetherian, and fields are always Noetherian.
 :::
 
 
 :::{.remark}
-Any subspace $A\subset X$ of a noetherian space is noetherian.
+Any subspace $A\subset X$ of a Noetherian space is Noetherian.
 To see why, suppose we have a chain of closed sets in the subspace topology,
 \[  
 A\intersect X_0 \supsetneq A\intersect X_1 \supsetneq \cdots
 .\]
 
 Then $X_0 \supsetneq X_1 \supsetneq \cdots$ is a strictly decreasing chain of closed sets in $X$.
-Why strictly decreasing: $\intersect^n X_i = \intersect^{n+1} X_i \implies A\intersect^n X_i = A\intersect^{n+1} X_i$, a contradiction.
+Why strictly decreasing: 
+\[
+\intersect^n X_i = \intersect^{n+1} X_i \implies A\intersect^n X_i = A\intersect^{n+1} X_i
+,\]
+yielding a contradiction.
 :::
 
-:::{.proposition title="Important"}
-Every noetherian space $X$ is a finite union of irreducible closed subsets, i.e. $X = \Union_{i=1}^k X_i$.
+:::{.proposition title="Important: Noetherian spaces are finite unions of closed irreducibles"}
+Every Noetherian space $X$ is a finite union of irreducible closed subsets, i.e. $X = \Union_{i=1}^k X_i$.
 If we further assume $X_i \not\subset X_j$ for all $i, j$, then the $X_i$ are unique up to permutation.
 
 :::
@@ -917,20 +927,23 @@ In the previous example $C_1 \union C_2 \union C_3$ has three components.
 
 
 :::{.proof}
-If $X$ is irreducible, then $X=X$ and this holds.
 
+:::{.claim}
+Such a finite decomposition exists.
+:::
+If $X$ is irreducible, then $X=X$ and this holds.
 Otherwise, write $X = X_1 \union X_2$ with $X_i$ proper closed subsets.
 If $X_1$ and $X_1'$ are irreducible, we're done, so otherwise suppose wlog $X_1'$ is not irreducible.
-
 Then we can express $X = X_1 \union \qty{X_2 \union X_2'}$ with $X_2, X_2' \subset X_1'$ closed and proper.
-
 Thus we can obtain a tree whose leaves are proper closed subsets:
 
-![Image](figures/image_2020-09-03-10-15-53.png)
+![Image](figures/image_2020-09-03-10-15-53.png){width=350px}
 
 This tree terminates because $X$ is Noetherian: if it did not, this would generate an infinite decreasing chain of subspaces.
 
-We now want to show that the decomposition is unique if no two components are contained in the other. 
+:::{.claim}
+This decomposition is unique if no two components are contained in the other. 
+:::
 
 Suppose 
 \[  
@@ -939,15 +952,13 @@ X= \Union_{i=1}^k X_i = \Union_{j=1}^\ell X_j'
 
 Note that $X_i \subset X$ implies that $X_i = \Union_{j=1}^\ell X_i \intersect X_j'$.
 But $X_i$ is irreducible and this would express $X_i$ as a union of proper closed subsets, so some $X_i \intersect X_j'$ is *not* a proper closed subset.
-
 Thus $X_i = X_i \intersect X_j'$ for some $j$, which forces $X_i \subset X_j'$.
 Applying the same argument to $X_j'$ to obtain $X_j' \subset X_k$ for some $k$.
-
 Then $X_i \subset X_j' \subset X_k$, but $X_ i \not\subset X_j$ when $j\neq i$.
-Thus $X_i = X_j' = X_k$, forcing the $X_i$ to be unique up to permutation.
+So $X_i = X_j' = X_k$, forcing the $X_i$ to be unique up to permutation.
 :::
 
-Recall from ring theory: for $I\subset R$ and $R$ noetherian, $I$ has a *primary decomposition* $I = \Intersect_{i=1}^k Q_i$ with $\sqrt{Q_i}$ prime.
+Recall from ring theory: for $I\subset R$ and $R$ Noetherian, $I$ has a *primary decomposition* $I = \Intersect_{i=1}^k Q_i$ with $\sqrt{Q_i}$ prime.
 Assuming the $Q_i$ are minimal in the sense that $\sqrt{Q_i} \not\subset \sqrt{Q_j}$ for any $i, j$, this decomposition is unique.
 
 Applying this to $I(X) \normal \kx{n} = R$ yields 
@@ -959,7 +970,6 @@ X  = V(I(X)) = \Union_{i=1}^k V(Q_i)
 
 Letting $P_i = \sqrt{Q_i}$, noting that the $P_i$ are prime and thus radical, we have $V(Q_i) = V(P_i)$.
 Writing $X = \Union V(P_i)$, we have $I(V(P_i)) = P_i$ and thus $A(V(P_i)) = R/P_i$ is a domain, meaning $V(P_i)$ are irreducible affine varieties.
-
 Conversely, if we express $X = \Union X_i$, we have $I = I\qty{\Union X_i} = \Intersect I(X_i) = \Intersect P_i$ which are irreducible since they are prime.
 
 
@@ -973,8 +983,7 @@ There is a correspondence
 where here *minimal* is the condition that no pair of ideals satisfies a subset containment.
 :::
 
-:::{.remark}
-Let $X$ be an irreducible topological space.
+In what follows, let $X$ be an irreducible topological space.
 
 :::{.proposition title="1"}
 The intersection of nonempty two open sets is *never* empty.
@@ -982,10 +991,12 @@ The intersection of nonempty two open sets is *never* empty.
 
 :::{.proof}
 Let $U, U'$ be open and $X\setminus U, X\sm U'$ closed.
-Then $U\intersect U' = \emptyset \iff (X\sm U) \union (X\sm U') = X$, but this is not possible since $X$ is irreducible.
-:::
+Then $U\intersect U' = \emptyset \iff (X\sm U) \union (X\sm U') = X$, but this is not possible since $X$ is irreducible.[^irr_iff_nonempty_intersect]
 
-> Irreducible iff any two nonempty open sets intersect.
+[^irr_iff_nonempty_intersect]: 
+Irreducible iff any two nonempty open sets intersect.
+
+:::
 
 
 :::{.proposition title="?"}
@@ -996,12 +1007,6 @@ Any nonempty open set is dense, i.e. if $U\subset X$ is open then its closure $\
 Write $X = \cl_X(U) \union (X\sm U)$.
 Since $X\sm U \neq X$ and $X$ is irreducible, we have $\cl_X(U) = X$.
 :::
-
-
-:::
-
-
-
 
 
 
@@ -1022,9 +1027,16 @@ Since $\kx{n}$ is a noetherian ring, this chain terminates, so affine varieties 
 :::{.definition title="Dimensions"}
 Let $X$ be a topological space.
 
-1. The *dimension* $\dim X \in \NN\union\ts{\infty}$ is either $\infty$ or the length $n$ of the longest chain of **irreducible** closed subsets $\emptyset \neq Y_0 \subsetneq \cdots \subsetneq Y_n \subset X$ where $Y_n$ need not be equal to $X$.
+1. The **dimension** $\dim X \in \NN\union\ts{\infty}$ is either $\infty$ or the length $n$ of the longest chain of *irreducible* closed subsets $\emptyset \neq Y_0 \subsetneq \cdots \subsetneq Y_n \subset X$ where $Y_n$ need not be equal to $X$.[^explaining_chain]
 
-2. The *codimension* of $Y$ in $X$, $\codim_X(Y)$, for an irreducible subset $Y\subseteq X$ is the length of the longest chain $Y\subset Y_0 \subsetneq Y_1 \cdots \subset X$.
+
+
+2. The **codimension** of $Y$ in $X$, $\codim_X(Y)$, for an irreducible subset $Y\subseteq X$ is the length of the longest chain $Y\subset Y_0 \subsetneq Y_1 \cdots \subset X$.
+
+
+[^explaining_chain]: 
+Note that we count the number of nontrivial strict subset containments in this chain.
+
 :::
 
 
@@ -1036,14 +1048,20 @@ What are the irreducible closed subsets?
 Every point is a closed subset, so sets with more than one point are reducible.
 So the only irreducible closed subsets are $\ts{a}, \AA^1/k$, since an affine variety is irreducible iff its coordinate ring is a domain and $A(\AA^1/k) = k[x]$.
 We can check
-\[  
-\emptyset \subseteq Y_0 = \ts{a} \subseteq Y_1 = \AA^1/k
-,\]
 
-which is of length $1$, so $\dim(\AA^1/k) = 1$.
+\begin{tikzcd}
+	{\emptyset} & {\ts{a}} & {\AA^1_k} \\
+	{Y_0} & {Y_1} & {Y_2}
+	\arrow[from=1-1, to=2-1, equal]
+	\arrow[from=1-2, to=2-2, equal]
+	\arrow[from=1-3, to=2-3, equal]
+	\arrow[from=1-1, to=1-2, hook]
+	\arrow[from=1-2, to=1-3, hook]
+	\arrow[from=2-1, to=2-2, hook]
+	\arrow[from=2-2, to=2-3, hook]
+\end{tikzcd}
 
-> Note that we count the number of nontrivial strict subset containments in this chain.
-
+which is of length $1$, since there is one nontrivial containment $Y_1 \subsetneq Y_2$, and so $\dim(\AA^1/k) = 1$.
 :::
 
 
@@ -1079,11 +1097,9 @@ Check descending chains of closed sets:
 ,\]
 
 which has length at most $N$, so it terminates and $X$ is noetherian.
-
 But note that all of these closed subsets $X_N \da \ts{0, \cdots, N}$ are irreducible.
 Why?
 If $X_n = X_i \union X_j$ then one of $i, j$ is equal to $N$, i.e $X_i, X_j = X_N$.
-
 So for every $N$, there exists a chain of irreducible closed subsets of length $N$, implying that
 $\dim(\NN) = \infty$.
 :::
@@ -1264,7 +1280,7 @@ $\qed$
 
 Key fact used: the dimension doesn't change under integral extensions, i.e. if $R\injects R'$ is integral then $\dim R = \dim R'$.
 
-:::{.claim}
+:::{.proposition}
 Any affine variety has finite dimension.
 :::
 
@@ -1781,7 +1797,7 @@ A *presheaf* (of rings) $\mathcal{F}$ on a topological space is
 
 2. For any inclusion $U\subset V$ a restriction map $\res_{VU}: \mathcal{F}(V) \to \mathcal{F}(U)$ satisfying
 
-  a. $F(\emptyset) = 0$.
+  a. $\mathcal{F}(\emptyset) = 0$.
   b. $\res_{UU} = \id_{\mathcal{F}(U)}$.
   c. $\res_{VW}  \circ \res_{UV} = \res_{UW}$.
 :::
@@ -1808,12 +1824,17 @@ Recall that we defined the *regular functions* $\OO_X(U)$ on an open set $U\subs
 We proved that on a distinguished open set $D(f) = V(f)^c$, we have $\OO_X(D(f)) = A(X)_f$.
 An important example was that $\OO_X(X) = A(X)$.
 
-Question: 
+:::{.question}
 If $X$ is a variety over $\CC$, does $A(X) = \Hol(X)$? 
-The answer is no, since taking $\AA^1/\CC \cong \CC = X$ we obtain $A(X) = \CC[x]$ but for example $e^z \in \Hol(X)$.
+:::
 
+:::{.answer}
+The answer is no, since taking $\AA^1/\CC \cong \CC = X$ we obtain $A(X) = \CC[x]$ but for example $e^z \in \Hol(X)$.
 On the other hand, if you require that $f\in \Hol(X)$ is meromorphic at $\infty$, i.e. $f({1\over z})$ is meromorphic at zero, then you do get $\CC[z]$.
 This is an example of GAGA!
+
+:::
+
 
 > Review: what is a category?
 
@@ -1977,7 +1998,7 @@ An element $f\in \mathcal{F}(U)$ is called a *section* over $U$, and elements of
 
 Recall that a sheaf of rings on a topological space $X$ is a ring $\mathcal{F}(U)$ for all open sets $U\subset X$ satisfying four properties:
 
-1. The empty set is mapped to zeor.
+1. The empty set is mapped to zero.
 
 2. The morphism $\mathcal{F}(U)\to \mathcal{F}(U)$ is the identity.
 
@@ -2249,7 +2270,7 @@ Need to check that $f$ is continuous, can compute
 \[  
 f^{-1}(V) = \Union_{i\in I} U_i \intersect f^{-1}(V) = \Union_{i\in I} \ro{f}{U_i}^{-1} (V)
 .\]
-but the later is open as a union of open sets, where each constituent set is open by assumption.
+but the latter is open as a union of open sets, where each constituent set is open by assumption.
 
 > Will finish proof next time.
 
