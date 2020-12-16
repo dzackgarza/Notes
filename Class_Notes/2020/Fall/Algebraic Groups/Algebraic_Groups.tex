@@ -66,7 +66,7 @@ are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-12-13 }
+{\tiny \textit{Last updated:} 2020-12-15 }
 \end{flushleft}
 
 
@@ -2499,11 +2499,13 @@ Setup:
 
 We have
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 G & \text{a reductive algebraic group over } k = \bar k \\
 B\ar[u, "\subseteq"] & \text{the Borel subgroup} \\
 T\ar[u, "\subseteq"] & \text{its maximal torus}
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 along with the weights \(X(T)\).
 
@@ -2658,11 +2660,13 @@ And thus a decomposition:
 The picture to keep in mind is the following: 4 types of modules, all
 indexed by dominant weights:
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 & H^0(\lambda) & \\
 L(\lambda) \ar[ur, hookrightarrow] & & T(\lambda)\arrow[ul, twoheadrightarrow]\\
 & V(\lambda) \arrow[ul, twoheadrightarrow] \ar[ur, hookrightarrow]
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 \hypertarget{cohomological-criteria-for-good-filtrations}{%
 \subsection{Cohomological Criteria for Good
@@ -5715,10 +5719,12 @@ transformation} \(\alpha:S\to T\) is a function that assigns to each
 object \(c\in \mathcal{C}\) a morphism \(\alpha_c:S(c) \to T(c)\) in
 such a way that for every \(f:c\to c'\), we have a commuting square
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 S(c) \ar[r, "{\alpha_c}"] \ar[d, "S(f)"] & T(c)\ar[d, "T(f)"] \\
 S(c') \ar[r, "{\alpha_c}"] & T(c')
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 If \(\alpha_c\) is an equivalence for all \(c\in \mathcal{C}\), then
 \(\alpha\) is said to be a \textbf{natural isomorphism}. Two categories
@@ -5753,10 +5759,12 @@ So consider the identity map on the latter
 \(f_V: V\to T_\mu^\lambda T_\lambda^\mu V\) be the corresponding map in
 the former. We can a natural transformation in the following way
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 V \ar[r, "{f_V}"]\ar[d, "\id"] & T_\mu^\lambda T_\lambda^\mu V \ar[d, "\id'"] \\
 V' \ar[r, "{f_{V'}}"] & T_\mu^\lambda T_\lambda^\mu V'
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 It suffices to show that the \(f_V\) are isomorphism as maps of
 \(G\dash\)modules, so one proceeds by
@@ -5846,15 +5854,19 @@ in a decreasing way.
 
 Consider the SES
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 0 \ar[r] & M_{j-1} \ar[r] & M_j \ar[r] & M_{j} / M_{j-1} \ar[r] & 0
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 where applying \(\pr_\mu(\wait)\) induces the LES
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 \cdots \ar[r] & \pr_\mu M_{j-1} \ar[r] & \pr_\mu M_j \ar[r] & \pr_\mu \left( M_{j} / M_{j-1} \right) \ar[r] & \cdots
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 We know that
 \begin{align*}  
@@ -5909,9 +5921,11 @@ By that lemma, there exists a unique \(\ell\) such that
 \(w\cdot \lambda + \lambda_\ell \in W_p\cdot \mu\), where
 \(\lambda_\ell\) is a weight of \(L(\nu_1)\). From the LES, we have
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 \cdots \ar[r] & \pr_\mu M_{j-1} \ar[r] & \pr_\mu M_j \ar[r] & \pr_\mu \left( M_{j} / M_{j-1} \right) = \lambda_j + w\cdot \lambda \ar[r] & \cdots
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 where the last term will only be nonzero in restricted cases. We can
 thus conclude that
@@ -6499,14 +6513,16 @@ The simple \(G_r T\dash\)modules are of the form
 \(G_r\dash\)module. Applying the spectral sequence, there is a 5 term
 exact sequence. Letting \(E_t \da \ext_{G_rT}^t (N, M)\).
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 0 \ar[r] &
 E_2^{1, 0} \ar[r] &
 E_1         \ar[r] &
 E_2^{0, 1} \ar[r] &
 E_2^{2, 0} \ar[r] &
 E_2
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 Everything is zero here except for the middle term: \(E_1, E_2 = 0\) by
 assumption? \(E_2^{1, 0}, E_2^{2, 0} = 0\) by ?.
@@ -7447,10 +7463,12 @@ Let \(Q_\lambda\) be the injective hull of \(L_\lambda\) as a
 \(G\dash\)module. This yields an injection \(L(\lambda)\injects M\).
 Since we also have a map into the injective hull, we can extend:
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 & Q_\lambda \\
 L(\lambda) \ar[r, hook]\ar[ur, hook] & M\ar[u, dotted, "\exists \phi"] \supseteq \hat{Q}_r(\lambda)
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 Moreover, \(\phi:\hat{Q}_r(\lambda)\to Q_\lambda\) is an injective map
 since \(L(\lambda) \subseteq \soc_{G_r}(\lambda)\). Thus the image
@@ -7806,10 +7824,12 @@ compute this ring?
 
 We have
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 0 \ar[r] & k \ar[r] & M_1 \ar[r] & \cdots \ar[r] & M_t \ar[r] & k \ar[r] \ar[dllll, "\cong"] & 0 \in \Ext_A^t(k, k) \\
 0 \ar[r] & k \ar[r] & N_1 \ar[r] & \cdots \ar[r] & N_s \ar[r] & k \ar[r] & 0 \in \Ext_A^s(k, k) \\
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 We then concatenate these in \(\Ext_A^{s+t}(k, k)\).
 
@@ -7889,10 +7909,12 @@ H^{2\cdot}(G, k) = \qty{ \ind_B^G S^0(u^*)  }^{(1)} \da k[G \fp{B} u]
 
 This yields the \textbf{Springer resolution}
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 G \fp{B} u \ar[r, "\pi"] & G\cdot u = \mathcal{N} \\
 \pi^{-1}(O_{\text{reg}}) \ar[u, "\subset"] & O_{\text{reg}}\ar[l, "\cong"] \ar[u, "\subset"]
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 We can thus write
 \begin{align*}  
