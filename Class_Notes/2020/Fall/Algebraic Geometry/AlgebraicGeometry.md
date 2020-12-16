@@ -7,8 +7,10 @@
 
 ## Notation
 
-\[  
-V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
+\[
+V(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
+I(S)                   && \text{The ideal associated to a subset } S \subseteq \AA^n_{k} \\
+A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety}
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
@@ -87,6 +89,56 @@ Any finitely-generated field extension $k_1 \injects k_2$ is a finite extension 
 :::{.theorem title="Hilbert's Basis Theorem" ref="thm:hilbert_basis"}
 If $R$ is a Noetherian ring, then $R[x]$ is again Noetherian.
 :::
+
+## The Algebra-Geometry Dictionary
+
+Let $k=\bar k$, we're setting up correspondences
+\[  
+\text{Ring Theory} 
+\quad&\quad 
+\text{Geometry/Topology of Affine Varieties}
+\\
+\text{Polynomial functions} 
+\quad&\quad 
+\text{Affine space} 
+\\
+k[x_1, \cdots, x_n]
+\quad&\quad 
+\AA^n/k \da \ts{\thevector{a_1, \cdots, a_n} \in k^n } 
+\\
+\text{Maximal ideals } \gens{x_1 - a_1, \cdots, x_n - a_n} 
+\quad&\quad 
+\text{Points } \thevector{a_1, \cdots, a_n} \in \AA^n/k
+\\
+\text{Radical ideals } I\normal k[x_1, \cdots, x_n]
+\quad&\quad 
+\text{Affine varieties } X\subset  \AA^n/k, \text{ vanishing locii of polynomials} 
+\\
+I &\mapsto V(I) \da \ts{a\st f(a) = 0 \forall f\in I} \\
+I(X) \da \ts{f \st \restrictionof{f}{X} = 0} &\mapsfrom X 
+\\
+\text{Radical ideals containing $I(X)$, i.e. ideals in $A(X)$} 
+\quad&\quad 
+\text{closed subsets of $X$, i.e. affine subvarieties}
+\\
+A(X) \text{ is a domain}
+\quad&\quad 
+\text{$X$ irreducible}
+\\
+\text{$A(X)$ is not a direct sum}
+\quad&\quad 
+\text{$X$ connected} 
+\\
+\text{Prime ideals in }A(X)
+\quad&\quad 
+\text{Irreducible closed subsets of }X
+\\
+\text{Krull dimension $n$ (longest chain of prime ideals)}
+\quad&\quad 
+\dim X = n,\, \text{(longest chain of irreducible closed subsets)}
+.\]
+
+
 
 # Friday, August 21: Intro and Motivation
 
@@ -1380,51 +1432,7 @@ For part (b), the statement is equivalent to $P\subset A(X)$ with $I(Y) \subset 
 
 ## Review
 
-Let $k=\bar k$, we're setting up correspondences
-\[  
-\text{Ring Theory} 
-\quad&\quad 
-\text{Geometry/Topology of Affine Varieties}
-\\
-\text{Polynomial functions} 
-\quad&\quad 
-\text{Affine space} 
-\\
-k[x_1, \cdots, x_n]
-\quad&\quad 
-\AA^n/k \da \ts{\thevector{a_1, \cdots, a_n} \in k^n } 
-\\
-\text{Maximal ideals } \gens{x_1 - a_1, \cdots, x_n - a_n} 
-\quad&\quad 
-\text{Points } \thevector{a_1, \cdots, a_n} \in \AA^n/k
-\\
-\text{Radical ideals } I\normal k[x_1, \cdots, x_n]
-\quad&\quad 
-\text{Affine varieties } X\subset  \AA^n/k, \text{ vanishing locii of polynomials} 
-\\
-I &\mapsto V(I) \da \ts{a\st f(a) = 0 \forall f\in I} \\
-I(X) \da \ts{f \st \restrictionof{f}{X} = 0} &\mapsfrom X 
-\\
-\text{Radical ideals containing $I(X)$, i.e. ideals in $A(X)$} 
-\quad&\quad 
-\text{closed subsets of $X$, i.e. affine subvarieties}
-\\
-A(X) \text{ is a domain}
-\quad&\quad 
-\text{$X$ irreducible}
-\\
-\text{$A(X)$ is not a direct sum}
-\quad&\quad 
-\text{$X$ connected} 
-\\
-\text{Prime ideals in }A(X)
-\quad&\quad 
-\text{Irreducible closed subsets of }X
-\\
-\text{Krull dimension $n$ (longest chain of prime ideals)}
-\quad&\quad 
-\dim X = n,\, \text{(longest chain of irreducible closed subsets)}
-.\]
+Recall the dictionary in \cref{the-algebra-geometry-dictionary}, and the fact that $A(X) \da \kx{n}$ contains no nilpotent elements.
 
 > Recall that we defined the coordinate ring $A(X) \da \kx{n} / I(X)$, which contained no nilpotents.
 
@@ -1573,7 +1581,6 @@ These all share a common feature: it suffices to check if a function is a member
 :::{.definition title="?"}
 Let $X$ be an affine variety and $U\subseteq X$ open.
 A **regular function** on $U$ is a function $\phi: U\to k$ such that $\phi$ is "locally a fraction", i.e. a ratio of polynomial functions.
-
 More formally, for all $p\in U$ there exists a $U_p$ with $p\in U_p \subseteq U$ such that $\phi(x) = g(x)/ f(x)$ for all $x\in U_p$ with $f, g\in A(X)$.
 :::
 
@@ -1652,7 +1659,7 @@ For $\CC$ and holomorphic functions, the answer is yes, by the uniqueness of ana
 :::{.definition title="(Important) Distinguished Opens"}
 A **distinguished open set** in an affine variety is one of the form 
 \[  
-D(f) \da X\sm V(f) = \ts{x\in X \st f(x) = 0}
+D(f) \da X\sm V(f) = \ts{x\in X \st f(x) \neq 0}
 .\]
 :::
 
