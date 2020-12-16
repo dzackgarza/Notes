@@ -12,6 +12,36 @@ V(I) && \text{The variety associated to an ideal } I \normal \kx{n}
 
 \todo[inline]{Lots of notation to fill in.}
 
+## Summary of Important Concepts
+
+- What is an affine variety?
+- What is the coordinate ring of an affine variety?
+- What are the constructions $V(\wait)$ and $I(\wait)$?
+- What is the Nullstellensatz?
+- What are the definitions and some examples of:
+  - The Zariski topology?
+  - Irreducibility?
+  - Connectedness?
+  - Dimension?
+- What is the definition of a presheaf?
+  - What are some examples and counterexamples?
+- What is the definition of sheaf?
+  - What are some examples?
+  - What are some presheaves that are not sheaves?
+- What is the definition of $\OO_X$, the sheaf of regular functions?
+  - How does one compute $\OO_X$ for $X = D(f)$ a distinguished open?
+- What is a morphism between two affine varieties?
+- What is the definition of separatedness?
+  - What are some examples of spaces that are and are not separated?
+- What is a projective space?
+- What is a projective variety?
+- What is the projective coordinate ring?
+- How does one take the closure of an affine variety $X$ in projective space?
+- What is completeness?
+  - What are some examples and counterexamples of complete spaces?
+
+
+
 \newpage
 
 
