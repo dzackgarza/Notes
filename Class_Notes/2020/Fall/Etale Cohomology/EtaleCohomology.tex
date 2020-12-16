@@ -66,7 +66,7 @@ are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-12-13 }
+{\tiny \textit{Last updated:} 2020-12-15 }
 \end{flushleft}
 
 
@@ -799,10 +799,12 @@ Suppose we have a nilpotent ideal \(I\), so \(I^n = 0\) for some \(n\),
 then \(f:X\to Y\) is \textbf{formally étale} if there is a unique lift
 in the following diagram:
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 \spec(A/I)\ar[r]\ar[d] & X\ar[d, "f"] \\
 \spec(A) \ar[r] \ar[ur, dotted, "\exists !"] & Y
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 \end{definition}
 
@@ -1080,10 +1082,12 @@ Morphisms}\label{properties-of-uxe9tale-morphisms}}
 \item
   Base change of étale morphisms are étale, i.e.~
 
-  \begin{center}\begin{tikzcd}
+  \begin{center}
+  \begin{tikzcd}
   X \cross_Y T\ar[d, "\therefore \text{étale}"']\ar[r] & X\ar[d, "\text{étale}"]  \\
   T\ar[r] &  Y\\
-  \end{tikzcd}\end{center}
+  \end{tikzcd}
+  \end{center}
 \item
   There is a 2 out of 3 property: If \(\phi \circ \psi\) and \(\phi\)
   are étale, then \(\psi\) is étale.
@@ -1328,10 +1332,12 @@ Let \(X\) be a scheme, and define the small étale site \(X_{\et}\): the
 category whose objects are étale morphisms \(Y\mapsvia{f} X\) where
 morphisms are maps over \(X\):
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 Y_1 \ar[rd, "{f_1}"]\ar[rr, "g"] & & Y_2\ar[ld, "{f_2}"] \\
  & X & 
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 Note that \(g\) is étale by the 2 out of 3 property.
 
@@ -1475,9 +1481,11 @@ topology.
 
 A sheaf \(F\) is presheaf such that
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 F(U) \ar[r] & \prod_\alpha F(U_\alpha) \ar[r, shift left=0.75ex, "F(\pi_1)"] \ar[r, shift right=0.75ex, "F(\pi_2)"'] & \prod_{\alpha, \alpha'} F(U_\alpha \cross_U U_{\alpha'}) 
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 is an \emph{equalizer} diagram for all covering families
 \(\ts{U_\alpha \to U}\).
@@ -1493,11 +1501,13 @@ into the product. We then look at the intersections of all
 
 The two arrows occurring come from the projections:
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
 & U_\alpha \cross_U U_{\alpha'} \ar[dl, "\pi_1"] \ar[rd, "\pi_2"] & \\
 U_\alpha\ar[dr, hook] & & U_{\alpha'}\ar[dl, hook] \\
 & U &
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 where we use the fact that since \(F\) is a contravariant functor, it
 induces maps going the other way.
@@ -1714,10 +1724,12 @@ to pass to an étale cover so that section has an \(n\)th root. So given
 an \(n\)th root. An invertible function is a map \(U\to \GG_m\), and we
 can form the square
 
-\begin{center}\begin{tikzcd}
+\begin{center}
+\begin{tikzcd}
  U \fp{\GG_m} \GG_m\ar[r]\ar[d] & \GG_m & z^m  \ar[d] \\
  U\ar[r] &  \GG_m & z\ar[u, |->]
-\end{tikzcd}\end{center}
+\end{tikzcd}
+\end{center}
 
 The RHS map is étale since \(n\) is invertible, and the fiber product is
 étale since étale morphisms are preserved by base change.
