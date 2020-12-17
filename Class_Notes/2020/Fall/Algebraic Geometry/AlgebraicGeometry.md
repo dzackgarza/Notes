@@ -2244,15 +2244,15 @@ Morphisms of open subsets is again defined by morphisms of ringed spaces.
 
 
 :::{.example}
-Let $X = \AA^1/k$ and $U = D(f) \da D(x)$, then $D(f) = \AA^1\smz$.
+Let $X = \AA^1/k$ and $U \da D(x)$, then $D(f) = \AA^1\smz$.
 Then $\iota: U\injects X$ is continuous.
 Given an arbitrary distinguished open set $D(f) \subset \AA^1$, we know from previous results that
 \[  
-\OO_X(D(f)) \da \OO_{\AA^1}(D(f)) = A(D(f))_{\gens{f}} \da \ts{g/f^n \st g\in k[x]}
+\OO_X(D(f)) \da \OO_{\AA^1}(D(f)) = A(\AA^1)_{\gens{f}} = k[x]_{\gens{f}} \da \ts{g/f^n \st g\in k[x]}
 .\]
 We want to show that $\iota: (U, \OO_U) \injects (X, \OO_X)$ is a morphism of ringed spaces where $\OO_U(V) \da \OO_X(V)$.
 Does $\iota^*$ pull back regular functions to regular functions?
-Yes, since $\iota^{-1} (D(f)) = D(f) \intersect D(x) = D(xf)$ and thus 
+Yes, since $\iota^{-1} (D(f)) = D(f) \union D(x) = D(xf)$ and thus 
 \[
 g/f^n \in \OO_U(\iota^{-1}(D(f))) = \OO_U(D(xf))
 \]
@@ -2272,8 +2272,13 @@ x & x \neq \pm 1 \\
 This is continuous because the zariski topology on $\AA^1$ is the cofinite topology (since the closed sets are finite), so any injective map is continuous since inverse images of cofinite sets are again cofinite.
 
 Question:
+
+:::{.question}
 Does $h$ define a morphism of ringed spaces?
 I.e., is the pullback of a regular function on an open still regular?
+:::
+
+:::{.answer}
 Take $U = \AA^1$ and the regular function $x\in \OO_{\AA^1}(\AA^1)$.
 Then $h^*x = x\circ h$, so
 \[  
@@ -2285,6 +2290,8 @@ p & p\neq \pm 1 \\
 \not \in K[x]
 \]
 since this is clearly not a polynomial: if two polynomials agree on an infinite set of points, they are equal.
+:::
+
 :::
 
 :::{.example}
