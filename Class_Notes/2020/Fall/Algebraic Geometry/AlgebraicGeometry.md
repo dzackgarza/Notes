@@ -2244,15 +2244,19 @@ Morphisms of open subsets is again defined by morphisms of ringed spaces.
 
 
 :::{.example}
-Let $X = \AA^1/K$ and $U = D(f) \da D(x)$, then $D(f) = \AA^1\smz$.
+Let $X = \AA^1/k$ and $U = D(f) \da D(x)$, then $D(f) = \AA^1\smz$.
 Then $\iota: U\injects X$ is continuous.
 Given an arbitrary distinguished open set $D(f) \subset \AA^1$, we know from previous results that
 \[  
-\OO_{\AA^1}(D(f)) \da \ts{g/f^n \st g\in K[x]}
+\OO_X(D(f)) \da \OO_{\AA^1}(D(f)) = A(D(f))_{\gens{f}} \da \ts{g/f^n \st g\in k[x]}
 .\]
 We want to show that $\iota: (U, \OO_U) \injects (X, \OO_X)$ is a morphism of ringed spaces where $\OO_U(V) \da \OO_X(V)$.
 Does $\iota^*$ pull back regular functions to regular functions?
-Yes, since $\iota^{-1} (D(f)) = D(f) \intersect D(x) = D(xf)$ and $g/f^n \in \OO_U(\iota^{-1}(D(f))) = \OO_U(D(xf))$ where we've used that $f^n \neq 0 \implies xf\neq 0$.
+Yes, since $\iota^{-1} (D(f)) = D(f) \intersect D(x) = D(xf)$ and thus 
+\[
+g/f^n \in \OO_U(\iota^{-1}(D(f))) = \OO_U(D(xf))
+\]
+where we've used that $f^n \neq 0 \implies xf\neq 0$.
 :::
 
 :::{.example}
