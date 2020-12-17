@@ -1433,11 +1433,7 @@ For part (b), the statement is equivalent to $P\subset A(X)$ with $I(Y) \subset 
 ## Review
 
 Recall the dictionary in \cref{the-algebra-geometry-dictionary}, and the fact that $A(X) \da \kx{n}$ contains no nilpotent elements.
-
-> Recall that we defined the coordinate ring $A(X) \da \kx{n} / I(X)$, which contained no nilpotents.
-
-
-We had some results about dimension
+We also had some results about dimension
 
 1. $\dim X<\infty$ and $\dim \AA^n = n$.
 2. $\dim Y + \codim_X Y = \dim X$ when $Y\subset X$ is irreducible.
@@ -1702,14 +1698,12 @@ We can assume wlog that $h_a = f_a$.
 Why?
 We have $\phi = {g_a \over f_a}$ on $D(f_a)$.
 Since $f_a$ doesn't vanish on $U_a$, we have $V(f_a h_a) = V(h_a)$ since $V(f_a) \subset D(h_a)^c = V(h_a)$.
-
 Consider $U_a = D(f_a)$ and $U_b = D(f_b)$, on which $\phi = {g_a\over f_a}$ and $\phi = {g_b \over f_b}$ respectively.
 On $U_a\intersect U_b = D(f_a f_b)$, these are equal, i.e. $f_b g_a = f_a g_b$ in the coordinate ring $A(X)$.
 \
 
 Then $D(f) = \bigcup_a D(f_a)$, so take the component $V(f) = \intersect V(f_a)$ by the Nullstellensatz
 $f\in I(V(f_a)) = I(V(g_a, a\in D_f)) = \sqrt{f_a \st a\in D_f}$.
-
 Then there exists an expression $f^n = \sum k_a f_a$ as a finite sum, so set $g - \sum g_a k_a$.
 
 :::{.claim}
@@ -1758,14 +1752,14 @@ For $X$ an affine variety, $f\in A(X)$, we have
 :::
 
 :::{.proof}
-The first reduction we made was that $\phi \in \OO_X(D(f))$ is expressible as $g_a\over f_a$ on distinguished opens $D(f_a)$ covering $D(f)$.
+The first reduction we made was that $\phi \in \OO_X(D(f))$ is expressible as $g_a /  f_a$ on distinguished opens $D(f_a)$ covering $D(f)$.
 We also noted that 
 \[
 {g_a \over f_a} = {g_b \over f_b} \text{ on } D(f_a) \intersect D(f_b) \implies f_b g_a = f_a g_b \text{ in } A(X)
 .\]
 \
 
-The second step was writing $D(f) = \union D(f_a)$, and so $V(f) = \intersect_a V(f_a)$ implies that $f\in I(V(\ts{f_a \st a\in U}))$.
+The second step was writing $D(f) = \union D(f_a)$, and so $V(f) = \intersect_a V(f_a)$ implies that $f\in I\qty{ V\qty{ \ts{f_a \st a\in U} }}$.
 By the Nullstellensatz, $f\in \sqrt{\gens{f_a \st a\in U}}$, so $f^N = \sum k_a f_a$ for some $N$.
 So construct $g = \sum k_a g_a$, then compute
 \[  
@@ -2191,6 +2185,7 @@ f^*: C^\infty(U) \to C^\infty(f^{-1}(U))
 
 Note: the sheaf of locally constant functions valued in a set $S$ is written $\underline{\mathbf S}$.
 
+
 ## Gathmann Chapter 4
 
 :::{.definition title="Ringed Spaces"}
@@ -2207,7 +2202,7 @@ A **ringed space** is a topological space $X$ together with a sheaf $\OO_X$ of r
 3. $X = \ts{p, q}$ with the discrete topology and $\OO_X$ given by $p\mapsto R, q\mapsto S$.
 
 4. Let $U\subset X$ an open subset of $X$ an affine variety.
-  Then declare $\OO_U$ to be $\ro{OO_X}{U}$.
+  Then declare $\OO_U$ to be $\ro{\OO_X}{U}$.
 :::
 
 Recall that the restriction of a sheaf $\mathcal{F}$ to an open subset $U\subset X$ is defined by $\ro{\mathcal{F}}{U}(V) = \mathcal{F}(V)$.
@@ -2235,24 +2230,29 @@ A *morphism of ringed spaces*
  is a continuous map $X\to Y$ such that for all opens $U \subset Y$ and any $\phi \in \OO_Y(U)$, the pullback satisfies $f^* \phi \in \OO_X(f\inv(U))$, i.e. the pullback of a regular function is regular.
 :::
 
-Note: need convention that $\OO_X$ is a sheaf of $K\dash$valued functions in order to make sense of pullbacks. 
-In general, for schemes, need some analog of $f^*: \OO_X(V) \to \OO_X(U)$.
-
-:::{.example}
-If $(X, \OO_X)$ is a ringed space associated to an affine variety, ?
+:::{.remark}
+We'll need to use th convention that $\OO_X$ is a sheaf of $K\dash$valued functions in order to make sense of pullbacks. 
+In general, for schemes with $U \subset Y$ and $f^{-1} (U) \subset X$, we'll need some analog of $f^*: \OO_Y(U) \to \OO_X(f^{-1} (U) )$ to make sense of "composing" or "restricting" sections.
+We still need continuity, however, so that $f^{-1}(U)$ is open when $U$ is open and thus $\OO_X(f^{-1}(U))$ makes sense.
 :::
 
 
 :::{.example}
-Let $X = \AA^1/K$ and $U = D(f)$ for $f(x) =x$, then $D(f) = \AA^1\smz$.
-Then $U\injects X$ is continuous.
-Given an open set $D(f) \subset \AA^1$, we have
+If $(X, \OO_X)$ is a ringed space associated to an affine variety, then we assume $\OO_X(U)$ are literally functions on $U$.
+Morphisms of open subsets is again defined by morphisms of ringed spaces.
+:::
+
+
+:::{.example}
+Let $X = \AA^1/K$ and $U = D(f) \da D(x)$, then $D(f) = \AA^1\smz$.
+Then $\iota: U\injects X$ is continuous.
+Given an arbitrary distinguished open set $D(f) \subset \AA^1$, we know from previous results that
 \[  
 \OO_{\AA^1}(D(f)) \da \ts{g/f^n \st g\in K[x]}
 .\]
-We want to show that $\iota: (U, \OO_U) \injects (X, \OO_X)$ is a morphism of ringed spaces where $\OO_U(V) = \OO_X(V)$.
+We want to show that $\iota: (U, \OO_U) \injects (X, \OO_X)$ is a morphism of ringed spaces where $\OO_U(V) \da \OO_X(V)$.
 Does $\iota^*$ pull back regular functions to regular functions?
-Yes, since $\iota^{-1} (D(f)) = D(xf)$ and $g/f^n \in \OO_U(\iota^{-1}(D(f)))$.
+Yes, since $\iota^{-1} (D(f)) = D(f) \intersect D(x) = D(xf)$ and $g/f^n \in \OO_U(\iota^{-1}(D(f))) = \OO_U(D(xf))$ where we've used that $f^n \neq 0 \implies xf\neq 0$.
 :::
 
 :::{.example}
@@ -2418,7 +2418,7 @@ We thus have maps $U\mapsvia{\tv{t, t^{-1} }} V(xy-1)$ and $V(xy-1) \mapsvia{x} 
 Thus maps of affine varieties (or their open subsets) are given by functions whose coordinates are regular.
 
 
-:::{.corollary title="?"}
+:::{.corollary title="Morphisms of varieties corresponds to $k\dash$algebra morphisms of coordinate rings"}
 Let $X, Y$ be affine varieties, then there is a correspondence
 \[  
 \correspond{\text{Morphisms } X\to Y }
