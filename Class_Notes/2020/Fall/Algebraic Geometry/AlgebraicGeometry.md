@@ -2271,7 +2271,6 @@ x & x \neq \pm 1 \\
 .\]
 This is continuous because the zariski topology on $\AA^1$ is the cofinite topology (since the closed sets are finite), so any injective map is continuous since inverse images of cofinite sets are again cofinite.
 
-Question:
 
 :::{.question}
 Does $h$ define a morphism of ringed spaces?
@@ -2287,7 +2286,7 @@ Then $h^*x = x\circ h$, so
 p & p\neq \pm 1 \\
 -p & p= \pm 1 
 \end{cases}
-\not \in K[x]
+\not \in k[x]
 \]
 since this is clearly not a polynomial: if two polynomials agree on an infinite set of points, they are equal.
 :::
@@ -2629,7 +2628,7 @@ We showed on a HW problem that the regular functions on $\AA^2\smz$ are $k[x, y]
 So there is a map inducing a pullback
 \[  
 \iota: \AA^2\smz &\to \AA^2 \\
-\iota^* k[x, y] \mapsvia{\sim} k[x, y]
+\iota^* k[x, y] &\mapsvia{\sim} k[x, y]
 .\]
 Note that $\iota^*$ is an isomorphism on the space of regular functions, but $\iota$ itself is not an isomorphism of topological spaces.
 Why? $i^{-1}$ is not defined at zero.
@@ -2710,7 +2709,7 @@ we defined
 - The sheaf of rings as $\OO_X = \ts{\phi:U\to k \st\ro{\phi}{U\intersect X_i} \text{ is regular for } i=1,2 }$.
 
 :::{.example}
-$\PP^1/k = X_1 \union X_2$ where $X_1 \cong \AA^1, X_2 \cong \AA^2$.
+$\PP^1/k = X_1 \union X_2$ where $X_1 \cong \AA^1, X_2 \cong \AA^1$.
 Take $U_{12} = D(x)$ and $U_{21} = D(y)$ with
 \[  
 f: U_{12} &\to U_{21} \\
@@ -2818,7 +2817,7 @@ Then the inclusion $(X, \OO_X) \injects (X, \tilde \OO_X)$ given by the identity
 
 
 
-# Thursday, October 22
+# Thursday, October 22: Definition of a Variety
 
 :::{.example}
 Consider $\AA^1$, whose polynomial functions are $k[x]$.
@@ -2831,13 +2830,13 @@ We saw that one can construct prevarieties by gluing finite collections of preva
 
 Similar to varieties, the product $P$ of prevarieties $X, Y$ will satisfy a universal property:
 
-[Tikz Link](https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA)
 \begin{center}
 \begin{tikzcd}
 P \arrow[rrd, "\pi_X", bend left] \arrow[rdd, "\pi_Y"', bend right] &                                                     &   \\
                                                                     & Z \arrow[d] \arrow[r] \arrow[lu, "\exists !", dashed] & X \\
                                                                     & Y                                                   &  
 \end{tikzcd}
+[Link to Diagram](https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA)
 \end{center}
 
 :::{.proposition title="?"}
@@ -2896,7 +2895,7 @@ A **variety** is a separated prevariety.
 
 
 
-# Tuesday, October 27
+# Tuesday, October 27: General Varieties and Completeness
 
 Recall that an affine variety is given by $X = V(I) \subset \AA^n/k$, and we have sheaves of rings of regular functions $\OO_X$ on $X$.
 A prevariety is a ringed space that is covered by finitely many affine spaces.
@@ -3001,7 +3000,6 @@ Note that affine varieties of positive dimension over $\CC$ are not compact in t
 Similarly, they are Hausdorff classically, but not in the Zariski topology.
 We want to find notions equivalent to Hausdorffness and compactness in the classical setting, which end up also applying to varieties.
 The fix in the latter case was considering "separatedness".
-:q
 The fix for compactness will be the following:
 
 
@@ -3010,7 +3008,7 @@ A variety $X$ is **complete** iff for any variety $Y$ the projection map $\pi_Y:
 :::
 
 :::{.example}
-$\AA^1$ is not complete.
+$X \da \AA^1$ is not complete.
 Let $Y=\AA^1$ and $Z = V(xy-1)\subset X\cross Y$.
 Then $\pi_Y(Z) = D(y) \subset Y \subset \AA^1$ is not closed.
 :::
@@ -3018,7 +3016,7 @@ Then $\pi_Y(Z) = D(y) \subset Y \subset \AA^1$ is not closed.
 
 
 
-# Thursday, October 29
+# Thursday, October 29: Projective Space Homogeneous Polynomials
 
 ## Projective Space
 
@@ -3074,33 +3072,50 @@ These two copies cover $\PP^1$, and the "transition map" is inversion.
 :::{.remark}
 More generally, there are $n+1$ inclusions $\AA^n \injects \PP^n$ given by dividing by the $j$th coordinate, and their union is the entire space.
 The gluing construction gives $\PP^n$ the structure of a prevariety: we can consider $D(x_j) \subset \PP^n$ where each has the structure of a ringed space $(\AA^n, \OO_{\AA^n})$.
-We have $D(x_i) \intersect D(x_j) \subset  D(x_i)$ is given coordinate $x_k/x_i$ where $k\neq i$, and similarly this is a subset of $D(x_j)$ with coordinates $x_k/x_j$ for $k\neq j$.
-Their intersection is $D({x_i \over x_j})$, which is a copy of $\AA^{n-1}$.
+We have $D(x_i) \intersect D(x_j) \subset  D(x_i)$, which has coordinate $\ts{ x_k/x_i,\, k\neq i }$, and similarly $D(x_i) \intersect D(x_j) \subseteq D(x_j)$ with coordinates $\ts{ x_k/x_j, \, k\neq j}$.
+Their intersection is $D\qty{x_i \over x_j}$, which is a copy of $\AA^{n-1}$.
 :::
 
 :::{.example title="?"}
 Consider $\PP^1$, then 
 $D(x_0) \cong \AA^1$ with which contains a copy of $\AA^1$ with coordinate ring $k\tv{{x_1\over x_0}}$ and a subset $D\qty{x_1\over x_0}$ with coordinate ring $k[y, 1/y]$, and similarly,
-$D(x_1) \cong \AA^1$ has coordinate ring $k\tv{{x_0\over x_1}}$ and contains $\contains D\qty{x_0\over x_1}$ with coordinate ring $k[z, 1\over z]$.
-Consider their overlap $D(x_0) \intersect D(x_1)$? 
+$D(x_1) \cong \AA^1$ has coordinate ring $k\tv{{x_0\over x_1}}$ and contains $D\qty{x_0\over x_1}$ with coordinate ring $k\tv{z, {1\over z}}$.
+Consider their overlap $D(x_0) \intersect D(x_1)$. (?)
 When do $y, z$ denote the same point in $\PP^1$?
 When $y = 1/z$.
 
 We can conclude that the $n+1$ copies $D(x_i) \subset \PP^n$ are affine varieties isomorphic as ringed spaces on the overlaps, so the gluing construction makes $\PP^n$ a prevariety.
 :::
 
-:::{.definition title="Homogeneous Polynomial"}
+:::{.definition title="Homogeneous Degrees of Polynomials"}
 A polynomial $f$ is homogeneous of degree $f$ is every monomial in $f$ has total degree $d$.
 :::
 
 :::{.example title="?"}
-![Image](figures/image_2020-10-29-10-29-48.png)
+The polynomial
+\[  
+f(x_0, x_1, x_2) = x_0^3 + x_1 x_2^2 + x_0 x_1 x_2
+.\]
+has homogeneous degree 3.
 :::
 
-If $f$ is homogeneous, $V(f) \subset \PP^n$ is a well-defined subset, since $f(x_0, \cdots, x_n) = 0 \iff \lambda^d f(x_0, \cdots, x_n) = 0 \iff f(\lambda x_0, \cdots, \lambda x_n) = 0$.
+:::{.remark}
+If $f$ is homogeneous of degree $d$, then for all $\lambda \in k\units$, 
+\[  
+f(\lambda x_0, \cdots, \lambda x_n) = \lambda^d f(x_0, \cdots, x_n)
+.\]
 
-:::{.definition title="?"}
-A graded ring $R$ is a ring $R$ with abelian subgroups $R_d \subset R$ with $R = \bigoplus_{d\geq 0} R_d$ and for all $f\in R_d$ and $g\in R_{d'}$, we have $fg \in R_{d+d'}$ and $R_d + R_{d} \subset R_d$.
+If $f$ is homogeneous, $V(f) \subset \PP^n$ is a well-defined subset, since 
+\[
+f(x_0, \cdots, x_n) = 0 \iff \lambda^d f(x_0, \cdots, x_n) = 0 \iff f(\lambda x_0, \cdots, \lambda x_n) = 0
+\]
+:::
+
+:::{.definition title="Graded Rings"}
+A **graded ring** $R$ is a ring $R$ with abelian subgroups $R_d \subset R$ with 
+
+- $R = \bigoplus_{d\geq 0} R_d$, and
+- For all $f\in R_d$ and $g\in R_{d'}$, we have $fg \in R_{d+d'}$ and $R_d + R_{d} \subset R_d$.
 :::
 
 # Thursday, November 05

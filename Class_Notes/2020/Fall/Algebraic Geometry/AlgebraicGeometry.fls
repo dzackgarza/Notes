@@ -2052,6 +2052,7 @@ INPUT AlgebraicGeometry.bbl
 INPUT ./AlgebraicGeometry.bbl
 INPUT ./AlgebraicGeometry.bbl
 INPUT AlgebraicGeometry.bbl
+INPUT 'inkscape' -V 
 INPUT ./figures/cover.png
 INPUT ./figures/cover.png
 INPUT figures/cover.png
@@ -2166,12 +2167,9 @@ INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./AlgebraicGeometry.toc
-INPUT AlgebraicGeometry.toc
-INPUT AlgebraicGeometry.toc
+OUTPUT AlgebraicGeometry.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbo10.tfm
-OUTPUT AlgebraicGeometry.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/arkandis/adforn/OrnementsADF.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
@@ -2495,11 +2493,7 @@ INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
-INPUT ./figures/image_2020-10-29-10-29-48.png
-INPUT ./figures/image_2020-10-29-10-29-48.png
-INPUT figures/image_2020-10-29-10-29-48.png
-INPUT ./figures/image_2020-10-29-10-29-48.png
-INPUT ./figures/image_2020-10-29-10-29-48.png
+INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT ./figures/image_2020-11-05-10-10-38.png
@@ -2687,20 +2681,13 @@ INPUT ./figures/image_2020-09-16-04-09-22.png
 INPUT ./figures/image_2020-09-16-04-09-22.png
 INPUT ./AlgebraicGeometry.tdo
 INPUT AlgebraicGeometry.tdo
-INPUT AlgebraicGeometry.tdo
 OUTPUT AlgebraicGeometry.tdo
 INPUT ./AlgebraicGeometry.loe
 INPUT AlgebraicGeometry.loe
+INPUT ./AlgebraicGeometry.loe
 INPUT AlgebraicGeometry.loe
 INPUT ./AlgebraicGeometry.loe
 INPUT AlgebraicGeometry.loe
-INPUT AlgebraicGeometry.loe
-INPUT ./AlgebraicGeometry.loe
-INPUT AlgebraicGeometry.loe
-INPUT AlgebraicGeometry.loe
-INPUT ./AlgebraicGeometry.lof
-INPUT AlgebraicGeometry.lof
-INPUT AlgebraicGeometry.lof
 OUTPUT AlgebraicGeometry.lof
 INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd

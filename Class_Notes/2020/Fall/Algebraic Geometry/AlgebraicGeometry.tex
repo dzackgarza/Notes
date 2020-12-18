@@ -3265,8 +3265,6 @@ x & x \neq \pm 1 \\
 so any injective map is continuous since inverse images of cofinite sets
 are again cofinite.
 
-Question:
-
 \begin{question}
 
 Does \(h\) define a morphism of ringed spaces? I.e., is the pullback of
@@ -3284,7 +3282,7 @@ Then \(h^*x = x\circ h\), so
 p & p\neq \pm 1 \\
 -p & p= \pm 1 
 \end{cases}
-\not \in K[x]
+\not \in k[x]
 \end{align*} since this is clearly not a polynomial: if two polynomials
 agree on an infinite set of points, they are equal.
 
@@ -3725,7 +3723,7 @@ are \(k[x, y]\), which are also the regular functions on \(\AA^2\). So
 there is a map inducing a pullback
 \begin{align*}  
 \iota: \AA^2\smz &\to \AA^2 \\
-\iota^* k[x, y] \mapsvia{\sim} k[x, y]
+\iota^* k[x, y] &\mapsvia{\sim} k[x, y]
 .\end{align*} Note that \(\iota^*\) is an isomorphism on the space of
 regular functions, but \(\iota\) itself is not an isomorphism of
 topological spaces. Why? \(i^{-1}\) is not defined at zero.
@@ -3850,7 +3848,7 @@ defined
 
 \begin{example}
 
-\(\PP^1/k = X_1 \union X_2\) where \(X_1 \cong \AA^1, X_2 \cong \AA^2\).
+\(\PP^1/k = X_1 \union X_2\) where \(X_1 \cong \AA^1, X_2 \cong \AA^1\).
 Take \(U_{12} = D(x)\) and \(U_{21} = D(y)\) with
 \begin{align*}  
 f: U_{12} &\to U_{21} \\
@@ -4008,8 +4006,9 @@ reverse direction is not.
 
 \end{remark}
 
-\hypertarget{thursday-october-22}{%
-\section{Thursday, October 22}\label{thursday-october-22}}
+\hypertarget{thursday-october-22-definition-of-a-variety}{%
+\section{Thursday, October 22: Definition of a
+Variety}\label{thursday-october-22-definition-of-a-variety}}
 
 \begin{example}
 
@@ -4030,15 +4029,13 @@ sets, and all prevarieties arise this way.
 Similar to varieties, the product \(P\) of prevarieties \(X, Y\) will
 satisfy a universal property:
 
-\href{https://tikzcd.yichuanshen.de/\#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA}{Tikz
-Link}
-
 \begin{center}
 \begin{tikzcd}
 P \arrow[rrd, "\pi_X", bend left] \arrow[rdd, "\pi_Y"', bend right] &                                                     &   \\
                                                                     & Z \arrow[d] \arrow[r] \arrow[lu, "\exists !", dashed] & X \\
                                                                     & Y                                                   &  
 \end{tikzcd}
+[Link to Diagram](https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA)
 \end{center}
 
 \begin{proposition}[?]
@@ -4122,8 +4119,9 @@ A \textbf{variety} is a separated prevariety.
 
 \end{definition}
 
-\hypertarget{tuesday-october-27}{%
-\section{Tuesday, October 27}\label{tuesday-october-27}}
+\hypertarget{tuesday-october-27-general-varieties-and-completeness}{%
+\section{Tuesday, October 27: General Varieties and
+Completeness}\label{tuesday-october-27-general-varieties-and-completeness}}
 
 Recall that an affine variety is given by \(X = V(I) \subset \AA^n/k\),
 and we have sheaves of rings of regular functions \(\OO_X\) on \(X\). A
@@ -4294,7 +4292,7 @@ topology. Similarly, they are Hausdorff classically, but not in the
 Zariski topology. We want to find notions equivalent to Hausdorffness
 and compactness in the classical setting, which end up also applying to
 varieties. The fix in the latter case was considering ``separatedness''.
-:q The fix for compactness will be the following:
+The fix for compactness will be the following:
 
 \begin{definition}[Complete]
 
@@ -4306,14 +4304,15 @@ i.e.~\(\pi_Y(U)\) is closed whenever \(U\) is closed.
 
 \begin{example}
 
-\(\AA^1\) is not complete. Let \(Y=\AA^1\) and
+\(X \da \AA^1\) is not complete. Let \(Y=\AA^1\) and
 \(Z = V(xy-1)\subset X\cross Y\). Then
 \(\pi_Y(Z) = D(y) \subset Y \subset \AA^1\) is not closed.
 
 \end{example}
 
-\hypertarget{thursday-october-29}{%
-\section{Thursday, October 29}\label{thursday-october-29}}
+\hypertarget{thursday-october-29-projective-space-homogeneous-polynomials}{%
+\section{Thursday, October 29: Projective Space Homogeneous
+Polynomials}\label{thursday-october-29-projective-space-homogeneous-polynomials}}
 
 \hypertarget{projective-space}{%
 \subsection{Projective Space}\label{projective-space}}
@@ -4391,11 +4390,11 @@ given by dividing by the \(j\)th coordinate, and their union is the
 entire space. The gluing construction gives \(\PP^n\) the structure of a
 prevariety: we can consider \(D(x_j) \subset \PP^n\) where each has the
 structure of a ringed space \((\AA^n, \OO_{\AA^n})\). We have
-\(D(x_i) \intersect D(x_j) \subset D(x_i)\) is given coordinate
-\(x_k/x_i\) where \(k\neq i\), and similarly this is a subset of
-\(D(x_j)\) with coordinates \(x_k/x_j\) for \(k\neq j\). Their
-intersection is \(D({x_i \over x_j})\), which is a copy of
-\(\AA^{n-1}\).
+\(D(x_i) \intersect D(x_j) \subset D(x_i)\), which has coordinate
+\(\ts{ x_k/x_i,\, k\neq i }\), and similarly
+\(D(x_i) \intersect D(x_j) \subseteq D(x_j)\) with coordinates
+\(\ts{ x_k/x_j, \, k\neq j}\). Their intersection is
+\(D\qty{x_i \over x_j}\), which is a copy of \(\AA^{n-1}\).
 
 \end{remark}
 
@@ -4405,10 +4404,10 @@ Consider \(\PP^1\), then \(D(x_0) \cong \AA^1\) with which contains a
 copy of \(\AA^1\) with coordinate ring \(k\tv{{x_1\over x_0}}\) and a
 subset \(D\qty{x_1\over x_0}\) with coordinate ring \(k[y, 1/y]\), and
 similarly, \(D(x_1) \cong \AA^1\) has coordinate ring
-\(k\tv{{x_0\over x_1}}\) and contains \(\contains D\qty{x_0\over x_1}\)
-with coordinate ring \(k[z, 1\over z]\). Consider their overlap
-\(D(x_0) \intersect D(x_1)\)? When do \(y, z\) denote the same point in
-\(\PP^1\)? When \(y = 1/z\).
+\(k\tv{{x_0\over x_1}}\) and contains \(D\qty{x_0\over x_1}\) with
+coordinate ring \(k\tv{z, {1\over z}}\). Consider their overlap
+\(D(x_0) \intersect D(x_1)\). (?) When do \(y, z\) denote the same point
+in \(\PP^1\)? When \(y = 1/z\).
 
 We can conclude that the \(n+1\) copies \(D(x_i) \subset \PP^n\) are
 affine varieties isomorphic as ringed spaces on the overlaps, so the
@@ -4416,7 +4415,7 @@ gluing construction makes \(\PP^n\) a prevariety.
 
 \end{example}
 
-\begin{definition}[Homogeneous Polynomial]
+\begin{definition}[Homogeneous Degrees of Polynomials]
 
 A polynomial \(f\) is homogeneous of degree \(f\) is every monomial in
 \(f\) has total degree \(d\).
@@ -4425,24 +4424,42 @@ A polynomial \(f\) is homogeneous of degree \(f\) is every monomial in
 
 \begin{example}[?]
 
-\begin{figure}
-\centering
-\includegraphics{figures/image_2020-10-29-10-29-48.png}
-\caption{Image}
-\end{figure}
+The polynomial
+\begin{align*}  
+f(x_0, x_1, x_2) = x_0^3 + x_1 x_2^2 + x_0 x_1 x_2
+.\end{align*} has homogeneous degree 3.
 
 \end{example}
 
+\begin{remark}
+
+If \(f\) is homogeneous of degree \(d\), then for all
+\(\lambda \in k\units\),
+\begin{align*}  
+f(\lambda x_0, \cdots, \lambda x_n) = \lambda^d f(x_0, \cdots, x_n)
+.\end{align*}
+
 If \(f\) is homogeneous, \(V(f) \subset \PP^n\) is a well-defined
 subset, since
-\(f(x_0, \cdots, x_n) = 0 \iff \lambda^d f(x_0, \cdots, x_n) = 0 \iff f(\lambda x_0, \cdots, \lambda x_n) = 0\).
+\begin{align*}
+f(x_0, \cdots, x_n) = 0 \iff \lambda^d f(x_0, \cdots, x_n) = 0 \iff f(\lambda x_0, \cdots, \lambda x_n) = 0
+\end{align*}
 
-\begin{definition}[?]
+\end{remark}
 
-A graded ring \(R\) is a ring \(R\) with abelian subgroups
-\(R_d \subset R\) with \(R = \bigoplus_{d\geq 0} R_d\) and for all
-\(f\in R_d\) and \(g\in R_{d'}\), we have \(fg \in R_{d+d'}\) and
-\(R_d + R_{d} \subset R_d\).
+\begin{definition}[Graded Rings]
+
+A \textbf{graded ring} \(R\) is a ring \(R\) with abelian subgroups
+\(R_d \subset R\) with
+
+\begin{itemize}
+\tightlist
+\item
+  \(R = \bigoplus_{d\geq 0} R_d\), and
+\item
+  For all \(f\in R_d\) and \(g\in R_{d'}\), we have \(fg \in R_{d+d'}\)
+  and \(R_d + R_{d} \subset R_d\).
+\end{itemize}
 
 \end{definition}
 
