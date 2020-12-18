@@ -1444,7 +1444,7 @@ Take $V(x^2+y^2) \subset \AA^2/\RR$
 :::
 
 
-:::{.definition title="?"}
+:::{.definition title="Curves, Surfaces, and Hpyersurfaces"}
 An affine variety $Y$ of
 
 - $\dim Y = 1$ is a **curve**,
@@ -1523,7 +1523,7 @@ Apply this to $R=A(X)$, we find that there is a bijection
 
 Taking $A(X) = \CC[x,y,z]/\gens{x^2+y^2-z^2}$, whose real points form a cone:
 
-![Image](figures/image_2020-09-15-10-26-24.png)
+![Image](figures/image_2020-09-15-10-26-24.png){width=350px}
 
 Note that $x^2 + y^2 = (x-iy)(x+iy) = z^2$ in this quotient, so this is not a UFD.
 
@@ -1546,15 +1546,17 @@ Note that $\kx{n}$ is a UFD since $k$ is a UFD.
 Applying the corollary, every hypersurface in $\AA^n$ is cut out by a single irreducible polynomial.
 :::
 
-:::{.definition title="?"}
+:::{.definition title="Pure Dimension of Affine Varieties"}
 An affine variety $X$ is of **pure dimension $d$** iff every irreducible component $X_i$ is of dimension $d$.
 :::
 
-> Note that $X$ is a Noetherian space, so has a unique decomposition $X = \union X_i$.
-
+:::{.remark}
+Note that $X$ is a Noetherian space, so has a unique decomposition $X = \union X_i$.
 Given $X\subset \AA^n/k$ of pure dimension $n-1$, $X = \union X_i$ with $X_i$ hypersurfaces with $I(X_j) = \gens{f_j}$, $I(X) = \gens{f}$ where $f = \prod f_i$.
+:::
 
-:::{.definition title="?"}
+
+:::{.definition title="Degree of a Hypersurface"}
 Given such an $X$, define the **degree of a hypersurface** as the degree of $f$ where $I(X) = \gens{f}$.
 :::
 
@@ -1574,7 +1576,7 @@ Some examples:
 
 These all share a common feature: it suffices to check if a function is a member on an arbitrary open set about a point, i.e. they are *local*.
 
-:::{.definition title="?"}
+:::{.definition title="Regular Functions"}
 Let $X$ be an affine variety and $U\subseteq X$ open.
 A **regular function** on $U$ is a function $\phi: U\to k$ such that $\phi$ is "locally a fraction", i.e. a ratio of polynomial functions.
 More formally, for all $p\in U$ there exists a $U_p$ with $p\in U_p \subseteq U$ such that $\phi(x) = g(x)/ f(x)$ for all $x\in U_p$ with $f, g\in A(X)$.
@@ -3773,7 +3775,7 @@ Note that such a $Q$ is a quadratic form, so $Q(x) = B(x, x)$ for some bilinear 
 
 ## The Segre Embedding
 
-:::{.definition title="?"}
+:::{.definition title="Segre Embedding"}
 Letting $N = (n+1)(m+1) - 1$, the **Segre embedding** is the morphism
 \[  
 f: \PP^n \cross \PP^m &\to \PP^N \\
