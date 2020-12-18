@@ -2867,8 +2867,8 @@ Let
 $\tilde U \da U_{i_1} \intersect U_{i_2} \cross V_{j_1} \intersect V_{j_2}$, we then need that
 
 \[  
-(\tilde U, \ro{ \OO_{U_{i_1} \cross V_{j_1}} }{\tilde U} ) \cong
-(\tilde U, \ro{ \OO_{U_{i_2} \cross V_{j_2}} }{\tilde U} )
+\qty{ \tilde U, \ro{ \OO_{U_{i_1} \cross V_{j_1}} }{\tilde U} } \cong
+\qty{ \tilde U, \ro{ \OO_{U_{i_2} \cross V_{j_2}} }{\tilde U} }
 .\]
 This follows from the universal property of products, since the open set $(U\cross V, \ro{ \OO_{X\cross Y} }{U\cross V} )$ is a categorical product of ringed spaces, and the identity provides a unique isomorphism.
 By the gluing construction, this produces a ringed space $(X\cross Y, \OO_{X\cross Y})$, we just need to check that this satisfies the universal property.
