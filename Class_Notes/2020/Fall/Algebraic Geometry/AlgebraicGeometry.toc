@@ -102,7 +102,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {18.2}More General Gluing}{61}{subsection.18.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {19}Thursday, October 22: Definition of a Variety}{64}{section.19}%
+\contentsline {section}{\numberline {19}Thursday, October 22: Separatedness}{64}{section.19}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {20}Tuesday, October 27: General Varieties and Completeness}{66}{section.20}%
 \defcounter {refsection}{0}\relax 

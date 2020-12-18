@@ -4006,18 +4006,21 @@ reverse direction is not.
 
 \end{remark}
 
-\hypertarget{thursday-october-22-definition-of-a-variety}{%
-\section{Thursday, October 22: Definition of a
-Variety}\label{thursday-october-22-definition-of-a-variety}}
+\hypertarget{thursday-october-22-separatedness}{%
+\section{Thursday, October 22:
+Separatedness}\label{thursday-october-22-separatedness}}
 
 \begin{example}
 
 Consider \(\AA^1\), whose polynomial functions are \(k[x]\). Consider
 now \(D(x) \subset \AA^1\), which is equal to the affine variety
-\(V(xy-1)\). Then the polynomial functions on \(D(x)\) are
+\(V(xy-1)\). Then the regular functions on \(D(x)\) are
 \(k[x, y] / \gens{xy-1} \cong k[x, x^{-1} ]\).
 
 \end{example}
+
+\hypertarget{products-of-prevarieties}{%
+\subsection{Products of Prevarieties}\label{products-of-prevarieties}}
 
 Recall that a \emph{prevariety} is a ringed space \((X, \OO_X)\) such
 that \(X\) has a finite open cover by affine varieties
@@ -4035,8 +4038,10 @@ P \arrow[rrd, "\pi_X", bend left] \arrow[rdd, "\pi_Y"', bend right] &           
                                                                     & Z \arrow[d] \arrow[r] \arrow[lu, "\exists !", dashed] & X \\
                                                                     & Y                                                   &  
 \end{tikzcd}
-[Link to Diagram](https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA)
 \end{center}
+
+\href{https://tikzcd.yichuanshen.de/\#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA}{Link
+to Diagram}
 
 \begin{proposition}[?]
 
@@ -4051,23 +4056,23 @@ Standard!
 
 \end{proof}
 
+\hypertarget{issues-with-the-product-of-prevarieties}{%
+\subsubsection{Issues with the product of
+prevarieties}\label{issues-with-the-product-of-prevarieties}}
+
 \begin{example}
 
 Consider \(\AA^1 \times \AA^1\), then the product is (and should be)
 \(\AA^2\), but \(\AA^2\) does not have the product topology. The open
 set \(D(x-y)\) is not covered by products of open sets.
 
-\begin{quote}
-This happens because the Zariski topology is too weak.
-\end{quote}
-
 \end{example}
 
-Strategy to fix: use gluing. Let \(X, Y\) be prevarieties and
-\(\ts{U_i}, \ts{V_i}\) be open affine covers of \(X\) and \(Y\)
-respectively. We can construct the product
-\(U_i \cross V_j \subset \AA^{n+m}\), which is an affine variety and
-satisfies the universal property for products. We then glue two such
+This happens because the Zariski topology is too weak. Strategy to fix:
+use gluing. Let \(X, Y\) be prevarieties and \(\ts{U_i}, \ts{V_i}\) be
+open affine covers of \(X\) and \(Y\) respectively. We can construct the
+product \(U_i \cross V_j \subset \AA^{n+m}\), which is an affine variety
+and satisfies the universal property for products. We then glue two such
 products \(U_{i_1} \cross V_{j_1}\) and \(U_{i_2} \cross V_{j_2}\) along
 their common open subset in
 \(\qty{U_{i_1}\cap U_{i_2} }\intersect\qty{V_{j_1} \cap V_{j_2}} \subseteq X\cross Y\).

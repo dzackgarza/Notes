@@ -2817,13 +2817,15 @@ Then the inclusion $(X, \OO_X) \injects (X, \tilde \OO_X)$ given by the identity
 
 
 
-# Thursday, October 22: Definition of a Variety
+# Thursday, October 22: Separatedness
 
 :::{.example}
 Consider $\AA^1$, whose polynomial functions are $k[x]$.
 Consider now $D(x) \subset \AA^1$, which is equal to the affine variety $V(xy-1)$.
-Then the polynomial functions on $D(x)$ are $k[x, y] / \gens{xy-1} \cong k[x, x^{-1} ]$.
+Then the regular functions on $D(x)$ are $k[x, y] / \gens{xy-1} \cong k[x, x^{-1} ]$.
 :::
+
+## Products of Prevarieties
 
 Recall that a *prevariety* is a ringed space $(X, \OO_X)$ such that $X$ has a finite open cover by affine varieties $(U_i, \ro{\OO_X}{U_i})$, and a *morphism* of prevarieties is a morphism of ringed spaces.
 We saw that one can construct prevarieties by gluing finite collections of prevarieties or affine varieties along open sets, and all prevarieties arise this way.
@@ -2836,8 +2838,9 @@ P \arrow[rrd, "\pi_X", bend left] \arrow[rdd, "\pi_Y"', bend right] &           
                                                                     & Z \arrow[d] \arrow[r] \arrow[lu, "\exists !", dashed] & X \\
                                                                     & Y                                                   &  
 \end{tikzcd}
-[Link to Diagram](https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA)
 \end{center}
+
+[Link to Diagram](https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAAUQBfU9TXfIRQBGUsKq1GLNgC1uvEBmx4CRAExiJ9Zq0QgAGvL7LBRUWq1TdIAJrcJMKAHN4RUADMAThAC2SUSA4EEgAzDwe3n6IAUFIauEgXr7+1LGIZCAMWGDWUHRwABaOINTa0noAOhUwAB5YcDgICUlRGWkaIABGMGBQoRll1lVoWAD6hs2RSG3BiCHU3b1IALQhA1Zsw2N21Ax03Qzs-CpCIJ5YTgU49lxAA)
 
 :::{.proposition title="?"}
 The product is unique up to unique isomorphism, i.e. there is a unique isomorphism between any two products.
@@ -2847,14 +2850,14 @@ The product is unique up to unique isomorphism, i.e. there is a unique isomorphi
 Standard!
 :::
 
+### Issues with the product of prevarieties
+
 :::{.example}
 Consider $\AA^1 \times \AA^1$, then the product is (and should be) $\AA^2$, but $\AA^2$ does not have the product topology.
 The open set $D(x-y)$ is not covered by products of open sets.
-
-> This happens because the Zariski topology is too weak.
-
 :::
 
+This happens because the Zariski topology is too weak.
 Strategy to fix: use gluing.
 Let $X, Y$ be prevarieties and $\ts{U_i}, \ts{V_i}$ be open affine covers of $X$ and $Y$ respectively.
 We can construct the product $U_i \cross V_j \subset \AA^{n+m}$, which is an affine variety and satisfies the universal property for products.
@@ -2876,7 +2879,6 @@ So consider $h^{-1} (U_i \cross V_j) \subset Z$, which is an open subset of $Z$ 
 Take an open cover and let $W$ be an element in it. 
 We can then restrict $f$ and $g$ to get $\ro{f}{W}:W\to U_i$ and $\ro{g}{W}:W\to V_j$ and their product is a morphism of ringed spaces.
 So $Z$ is covered by open sets for which $h$ is a morphism of ringed spaces, making $h$ itself a morphism.
-
 
 What was the point of constructing the product?
 We want some notion analogous to being Hausdorff to distinguish spaces like $\PP^1/k$ from the line with the doubled origin.
