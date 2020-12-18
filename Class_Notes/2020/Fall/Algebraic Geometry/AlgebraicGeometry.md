@@ -2886,7 +2886,12 @@ The issue is that these spaces with the Zariski topology are never Hausdorff.
 So we make the following definition:
 
 :::{.definition title="Separated"}
-A prevariety is **separated** iff $X \injectsvia{\Delta_X} X\cross X$ is a closed embedding, where $\Delta(x) = (x, x)$ is the diagonal morphism. i.e. $\id_X \cross \id_X$.
+A prevariety is **separated** iff the diagonal morphism
+\[  
+\Delta_X: X &\to X\cross X \\
+x &\mapsto (\id_X \cross \id_X)(x) \da (x, x)
+\]
+is a closed embedding.
 :::
 
 :::{.definition title="Variety"}
