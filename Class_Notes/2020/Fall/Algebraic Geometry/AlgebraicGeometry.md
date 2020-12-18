@@ -3011,8 +3011,13 @@ The fix for compactness will be the following:
 
 
 :::{.definition title="Complete"}
-A variety $X$ is **complete** iff for any variety $Y$ the projection map $\pi_Y:X\cross Y\to Y$ is a closed map, i.e. $\pi_Y(U)$ is closed whenever $U$ is closed.
+A variety $X$ is **complete** iff for any variety $Y$ the projection map $\pi_Y:X\cross Y\to Y$ is a closed[^defn_of_closed_map] map.
 :::
+
+
+[^defn_of_closed_map]: 
+Recall that this means that
+$\pi_Y(U)$ is closed whenever $U$ is closed.
 
 :::{.example}
 $X \da \AA^1$ is not complete.
