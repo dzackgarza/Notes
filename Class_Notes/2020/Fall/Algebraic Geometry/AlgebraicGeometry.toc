@@ -118,7 +118,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {21.1}Projective Space}{72}{subsection.21.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {22}Thursday, November 05}{74}{section.22}%
+\contentsline {section}{\numberline {22}Thursday, November 05: Projective Spaces}{74}{section.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {22.1}Projective Nullstellensatz}{75}{subsection.22.1}%
 \defcounter {refsection}{0}\relax 
@@ -126,37 +126,47 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {23.1}Homogenization and Dehomogenization}{77}{subsection.23.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {24}Thursday, November 12}{84}{section.24}%
+\contentsline {section}{\numberline {24}Thursday, November 12}{83}{section.24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {24.1}Chapter ?}{84}{subsection.24.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {24.2}Morphisms of Projective Varieties}{86}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.2}Morphisms of Projective Varieties}{85}{subsection.24.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {25}Tuesday, November 17}{86}{section.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {25.1}Projecting From a Point}{87}{subsection.25.1}%
+\contentsline {subsection}{\numberline {25.1}Projecting From a Point}{86}{subsection.25.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {25.2}The Segre Embedding}{89}{subsection.25.2}%
+\contentsline {subsection}{\numberline {25.2}The Segre Embedding}{88}{subsection.25.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {26}Thursday, November 19}{91}{section.26}%
+\contentsline {section}{\numberline {26}Thursday, November 19}{90}{section.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {26.1}Why use projective varieties?}{91}{subsection.26.1}%
+\contentsline {subsection}{\numberline {26.1}Why use projective varieties?}{90}{subsection.26.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {26.2}Projective Varieties are Varieties}{91}{subsection.26.2}%
+\contentsline {subsection}{\numberline {26.2}Projective Varieties are Varieties}{90}{subsection.26.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {27}Tuesday, November 24}{94}{section.27}%
+\contentsline {section}{\numberline {27}Tuesday, November 24}{93}{section.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {27.1}The Veronese Embedding}{95}{subsection.27.1}%
+\contentsline {subsection}{\numberline {27.1}The Veronese Embedding}{94}{subsection.27.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {27.2}Chapter 10: Smoothness}{97}{subsection.27.2}%
+\contentsline {subsection}{\numberline {27.2}Chapter 10: Smoothness}{96}{subsection.27.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {28}Tuesday, December 01}{100}{section.28}%
+\contentsline {section}{\numberline {28}Tuesday, December 01}{99}{section.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {29}Thursday, December 03}{103}{section.29}%
+\contentsline {section}{\numberline {29}Thursday, December 03}{102}{section.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {30}Misc Unsorted}{108}{section.30}%
+\contentsline {section}{\numberline {30}Misc Unsorted}{107}{section.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {31}Indices}{108}{section.31}%
+\contentsline {section}{\numberline {31}Indices}{107}{section.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {31.1}ToDos}{107}{subsection.31.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {31.1}Definitions}{108}{subsection.31.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {31.1}Theorems}{109}{subsection.31.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {31.1}Exercises}{110}{subsection.31.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {31.1}Figures}{110}{subsection.31.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {32}Bibliography}{112}{section.32}%
 \defcounter {refsection}{0}\relax 
