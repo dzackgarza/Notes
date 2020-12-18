@@ -1,7 +1,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {fact}{\ifthmt@listswap Fact\nobreakspace 0.4.1\else \numberline {0.4.1}Fact\fi }{7}{fact.0.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 0.4.2\else \numberline {0.4.2}Proposition\fi }{7}{proposition.0.4.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 0.4.2\else \numberline {0.4.2}Proposition\fi \thmtformatoptarg {Finitely generated polynomial rings are Noetherian}}{7}{proposition.0.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{7}{thmt@dummyctr.dummy.3}%
 \defcounter {refsection}{0}\relax 
@@ -77,7 +77,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {observation}{\ifthmt@listswap Observation\nobreakspace 3.2.1\else \numberline {3.2.1}Observation\fi }{17}{observation.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 3.2.2\else \numberline {3.2.2}Proposition\fi \thmtformatoptarg {?}}{18}{proposition.3.2.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 3.2.2\else \numberline {3.2.2}Proposition\fi \thmtformatoptarg {Hyperbolic inclusion of polynomial rings}}{18}{proposition.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 3.2.3\else \numberline {3.2.3}Exercise\fi \thmtformatoptarg {?}}{18}{exercise.3.2.3}%
 \defcounter {refsection}{0}\relax 
