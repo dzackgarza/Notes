@@ -68,7 +68,8 @@ Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
 ### Presheaves / Sheaves
 
 - $C^\infty(\wait, \RR)$, a sheaf of smooth functions
-- $C^0$, a sheaf of continuous functions
+- $C^0(\wait, \RR)$, a sheaf of continuous functions
+- $\OO_X$, the sheaf of regular 
 
 
 ## Useful Algebra Facts
