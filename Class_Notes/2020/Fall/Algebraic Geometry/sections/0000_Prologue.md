@@ -15,31 +15,28 @@ $k(\vector x) = k(x_1, \cdots, x_n)$      Rational function field in $n$ indeter
 $\mathcal{U} \covers X$                   An open cover $\mathcal{U} = \ts{U_j \st j\in J}$
 $\Delta_X$                                The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$
 $\AA^n_{/k}$                              Affine $n\dash$space
-$\cdots$                                  \[\AA^n_{/k} \da \ts{\tv{k_1, \cdots, k_n} \st k_j \in k}\]
+---                                       $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$
+$\PP^n_{/k}$                              Projective $n\dash$space
+---                                       $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$
+---                                        $= \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$
+$V(J), V_a(J)$                            Variety associated to an ideal $J \normal \kx{n}$
+---                                       $\da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$
+$I(S), I_a(S)$                            Ideal associated to a subset $S \subseteq \AA^n_{k}$
+---                                       $\da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$
+$A(X)$                                    Coordinate ring of a variety, $\kx{n}/I(X)$
+$V_p(J)$                                  Projective variety of an ideal
+---                                       $\da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}$
+$I_p(S)$                                  Projective ideal (?)
+---                                       $\da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}$
+$S(X)$                                    Projective coordinate ring, $\kx{n}/ I_p(X)$
+$f^h$                                     Homogenization, $x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}$
+f^i && \text{Dehomogenization} \\
+$J^h$                                     Homogenization of an ideal, $f(1, x_1, \cdots, x_n)$
+$\bar X$                                  Projective closure of a subset
+&& \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X} \\
 
 
 \[
-\PP^n_{/k} && \text{Projective $n\dash$space} \\ 
-&& \PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x \\
-&& \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}} \\ 
-V(J), V_a(J)                   && \text{Variety associated to an ideal } J \normal \kx{n} \\
-&& \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
-I(S), I_a(S)                   && \text{Ideal associated to a subset } S \subseteq \AA^n_{k} \\
-&& \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X} \\
-A(X) && \text{Coordinate ring of a variety} \\
-V_p(J) && \text{Projective variety of an ideal} \\
-&& \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J} \\
-I_p(S) && \text{Projective ideal?} \\ 
-&& \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S} \\
-S(X) && \text{Projective coordinate ring} \\
-&& \da \kx{n}/I_p(X) \\
-f^h && \text{Homogenization} \\
- && \da x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}\\
-f^i && \text{Dehomogenization} \\
-J^h \text{ for } J \normal \kx{n} && \text{Homogenization of an ideal} \\
-&& \da f(1, x_1, \cdots, x_n) \\
-\bar X && \text{Projective closure of a subset} \\
-&& \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X} \\
 && \da \kx{n} / I(X)  \\
 \OO_X && \text{Structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
 D(f) && \text{Distinguished open set } \\
