@@ -166,6 +166,6 @@ $I(V) : I(W)$                                 $\bar{V\sm W}$
 $\kx{n}/I(X)$                                 $A(X)$ (Functions on $X$)
 $A(X)$ a domain                               $X$ is irreducible
 $A(X)$ indecomposable                         $X$ is connected
-Krull dimension $n$                           Topological dimension $n$ ()
+Krull dimension $n$ (chaints of primes)                           Topological dimension $n$ (chains of irreducibles)
 
 
