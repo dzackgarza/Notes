@@ -20,7 +20,8 @@ A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety} \\
 D(f) && \text{A distinguished open set } \\
 && D(f) \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
 \Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
-\mathcal{U} \covers X && \text{An open cover}
+\mathcal{U} \covers X && \text{An open cover} \\
+
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
@@ -35,6 +36,7 @@ $I \intersect J, IJ$                          $V(I) \union V(J)$
 $I(V) \intersect I(W), \sqrt{I(V)I(W)}$       $V \union W$
 $I(V) : I(W)$                                 $\bar{V\sm W}$
 Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
+
 
 ## Summary of Important Concepts
 
