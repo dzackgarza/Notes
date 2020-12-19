@@ -115,13 +115,13 @@ Radical ideals $J = \sqrt{J} \normal \kx{n}$                    $V(J)$ the zero 
 Prime ideals $\mathfrak{p}\in \spec(\kx{n})$                    Irreducible subsets
 $I(S)$ the ideal of a set                                        $S \subseteq \AA^n$ a subset
 $I + J$                                                          $V(I) \intersect V(J)$
-$\sqrt{I(V) + I(W)}$                          $V\intersect W$
-$I \intersect J, IJ$                          $V(I) \union V(J)$
-$I(V) \intersect I(W), \sqrt{I(V)I(W)}$       $V \union W$
-$I(V) : I(W)$                                 $\bar{V\sm W}$
-$\kx{n}/I(X)$                                 $A(X)$ (Functions on $X$)
-$A(X)$ a domain                               $X$ is irreducible
-$A(X)$ indecomposable                         $X$ is connected
-Krull dimension $n$ (chaints of primes)                           Topological dimension $n$ (chains of irreducibles)
+$\sqrt{I(V) + I(W)}$                                             $V\intersect W$
+$I \intersect J, IJ$                                             $V(I) \union V(J)$
+$I(V) \intersect I(W), \sqrt{I(V)I(W)}$                          $V \union W$
+$I(V) : I(W)$                                                    $\bar{V\sm W}$
+$\kx{n}/I(X)$                                                    $A(X)$ (Functions on $X$)
+$A(X)$ a domain                                                 $X$ is irreducible
+$A(X)$ indecomposable                                           $X$ is connected
+Krull dimension $n$ (chaints of primes)                         Topological dimension $n$ (chains of irreducibles)
 
 
