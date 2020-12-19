@@ -33,7 +33,7 @@ $f^h$                                     Homogenization, $x_0^{\deg f} f\qty{{x
 f^i && \text{Dehomogenization} \\
 $J^h$                                     Homogenization of an ideal, $f(1, x_1, \cdots, x_n)$
 $\bar X$                                  Projective closure of a subset
-&& \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X} \\
+---                                       $\da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X}$
 
 
 \[
