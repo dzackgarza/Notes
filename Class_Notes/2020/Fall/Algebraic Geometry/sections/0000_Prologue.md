@@ -8,7 +8,7 @@
 
 \[
 \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
-k(x_1, \cdots, x_n) && \text{The rational function field } \ts{} 
+k(x_1, \cdots, x_n) && \text{The rational function field } \ts{f(x) = p(x)/q(x), \, p,q, \in \kx{n}} \\ 
 V(J), V_a(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
 I(S), I_a(S)                   && \text{The ideal associated to a subset } S \subseteq \AA^n_{k} \\
 A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety} \\
