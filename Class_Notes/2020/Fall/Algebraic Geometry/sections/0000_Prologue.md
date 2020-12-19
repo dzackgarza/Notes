@@ -19,7 +19,8 @@ A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety} \\
 \OO_X && \text{The structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
 D(f) && \text{A distinguished open set } \\
 && D(f) \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
-\Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X
+\Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
+\mathcal{U} \covers X && \text{An open cover}
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
