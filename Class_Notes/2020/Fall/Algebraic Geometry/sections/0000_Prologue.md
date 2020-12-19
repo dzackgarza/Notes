@@ -35,7 +35,10 @@ S(X) && \text{Projective coordinate ring} \\
 f^h && \text{Homogenization} \\
  && \da x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}\\
 f^i && \text{Dehomogenization} \\
+&& \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X} \\
+J^h \text{for } J \normal \kx{n} && \text{Homogenization of an ideal}
 && \da f(1, x_1, \cdots, x_n) \\
+\bar X && \text{Projective closure of a subset} \\
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
