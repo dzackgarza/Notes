@@ -10,6 +10,7 @@
 \[
 k[\vector x] \da \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
 k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \\
+\AA^n_{/k} && \text{Affine $n\dash$space} \\
 && k(\vector x) \da \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}} \\ 
 V(J), V_a(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
 && V(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
@@ -21,7 +22,8 @@ D(f) && \text{A distinguished open set } \\
 && D(f) \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
 \Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
 \mathcal{U} \covers X && \text{An open cover} \\
-
+V_p(J) && \text{The projective variety of an ideal} \\
+&& V_p(J) \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
