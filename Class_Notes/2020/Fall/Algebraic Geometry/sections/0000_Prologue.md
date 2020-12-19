@@ -27,15 +27,15 @@ D(f) && \text{Distinguished open set } \\
 \Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
 \mathcal{U} \covers X && \text{An open cover} \\
 V_p(J) && \text{Projective variety of an ideal} \\
-&& V_p(J) \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J} \\
+&& \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J} \\
 I_p(S) && \text{Projective ideal?} \\ 
-&& I_p(S) \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S} \\
+&& \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S} \\
 S(X) && \text{Projective coordinate ring} \\
-&& S(X) \da \kx{n}/I_p(X) \\
+&& \da \kx{n}/I_p(X) \\
 f^h && \text{Homogenization} \\
  && \da x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}\\
 f^i && \text{Dehomogenization} \\
-&& \da 
+&& \da f(1, x_1, \cdots, x_n) \\
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
