@@ -9,8 +9,8 @@
 - If a property $P$ is said to hold **locally**, this means that for every point $p$ there is a neighborhood $U_p \ni p$ such that $P$ holds on $U_p$.
 
 Notation          Definition
--------------     --------------------
-$k[\vector x] \da 
+-------------                             --------------------
+$k[\vector x] = k[x_1, \cdots, x_n]\(  \)
 
 \[
 k[\vector x] \da \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
