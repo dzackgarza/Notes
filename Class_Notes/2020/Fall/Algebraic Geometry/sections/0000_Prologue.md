@@ -7,9 +7,10 @@
 ## Notation
 
 \[
-V(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
-I(S)                   && \text{The ideal associated to a subset } S \subseteq \AA^n_{k} \\
-A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety}
+V(J), V_a(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
+I(S), I_a(S)                   && \text{The ideal associated to a subset } S \subseteq \AA^n_{k} \\
+A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety} \\
+\OO_X && \text{The structure sheaf } \ts{f:U\to k \st }
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
