@@ -14,6 +14,10 @@ A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety}
 
 \todo[inline]{Lots of notation to fill in.}
 
+Algebra  Geometry
+-------  --------
+Rad
+
 ## Summary of Important Concepts
 
 - What is an affine variety?
