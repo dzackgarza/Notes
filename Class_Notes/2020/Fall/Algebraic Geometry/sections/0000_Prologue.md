@@ -30,8 +30,7 @@ $I_p(S)$                                  Projective ideal (?)
 ---                                       $\da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}$
 $S(X)$                                    Projective coordinate ring, $\kx{n}/ I_p(X)$
 $f^h$                                     Homogenization, $x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}$
-$f^i$                                     Dehomogenization 
-$f(1, x_1, \cdots, x_n)$
+$f^i$                                     Dehomogenization, $f(1, x_1, \cdots, x_n)$
 $J^h$                                     Homogenization of an ideal, 
 $\bar X$                                  Projective closure of a subset
 ---                                       $\da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X}$
