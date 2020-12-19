@@ -74,8 +74,12 @@ Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
 - $\Hol(\wait, \CC)$, a sheaf of holomorphic functions
 - $K_p$ the skyscraper sheaf:
 \[  
-K_+
-.\]
+K_p(U) \da 
+\begin{cases}
+k & p\in U \\
+0 & \text{else}.
+\end{cases}
+\]
 
 
 ## Useful Algebra Facts
