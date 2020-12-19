@@ -14,9 +14,9 @@ A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety}
 
 \todo[inline]{Lots of notation to fill in.}
 
-Algebra  Geometry
--------  --------
-Rad
+Algebra                                       Geometry
+-------                                       --------
+Radical ideals $I = \sqrt{I} \normal \kx{n}$  
 
 ## Summary of Important Concepts
 
