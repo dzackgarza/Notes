@@ -10,8 +10,9 @@
 k[\vector x] \da \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
 k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \ts{f(\vector x) = p(\vector x)/q(\vector x), \, p,q, \in \kx{n}} \\ 
 V(J), V_a(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
-&& V(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}
+&& V(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
 I(S), I_a(S)                   && \text{The ideal associated to a subset } S \subseteq \AA^n_{k} \\
+&& \\ (X)
 A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety} \\
 \OO_X && \text{The structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}}
 .\]
