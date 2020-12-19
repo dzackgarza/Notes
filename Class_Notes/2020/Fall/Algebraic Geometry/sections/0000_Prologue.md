@@ -15,20 +15,24 @@ k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \\
 \PP^n_{/k} && \text{Projective $n\dash$space} \\ 
 && \PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x \\
 && k(\vector x) \da \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}} \\ 
-V(J), V_a(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
+V(J), V_a(J)                   && \text{Variety associated to an ideal } J \normal \kx{n} \\
 && V(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
-I(S), I_a(S)                   && \text{The ideal associated to a subset } S \subseteq \AA^n_{k} \\
+I(S), I_a(S)                   && \text{Ideal associated to a subset } S \subseteq \AA^n_{k} \\
 && I(S) \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X} \\
-A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety} \\
-\OO_X && \text{The structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
-D(f) && \text{A distinguished open set } \\
+A(X) && \text{Coordinate ring of a variety} \\
+&& A(X) \da \kx{n} / I(X)  \\
+\OO_X && \text{Structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
+D(f) && \text{Distinguished open set } \\
 && D(f) \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
 \Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
 \mathcal{U} \covers X && \text{An open cover} \\
-V_p(J) && \text{The projective variety of an ideal} \\
+V_p(J) && \text{Projective variety of an ideal} \\
 && V_p(J) \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J} \\
-I_p(S) && \text{The projective ideal?} \\ 
-&& I_p(S) \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}
+I_p(S) && \text{Projective ideal?} \\ 
+&& I_p(S) \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S} \\
+S(X) && \text{Projective coordinate ring} \\
+&& S(X) \da \kx{n}/I_p(X) \\
+f^h && \text{Homogenization}
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
