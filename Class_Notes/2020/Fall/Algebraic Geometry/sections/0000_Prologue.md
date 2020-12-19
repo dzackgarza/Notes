@@ -30,6 +30,7 @@ $I \intersect J, IJ$                          $V(I) \union V(J)$
 $I(V) \intersect I(W), \sqrt{I(V)I(W)}$       $V \union W$
 $I(V) : I(W)$                                 $\bar{V\sm W}$
 
+
 ## Summary of Important Concepts
 
 - What is an affine variety?
