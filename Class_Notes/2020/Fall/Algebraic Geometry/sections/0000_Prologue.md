@@ -11,7 +11,7 @@
 +-----------------------------------------+------------+
 | Notation                                | Definition |
 +=========================================+============+
-| $k[\vector x] = k[x_1, \cdots, x_n]$      Polynomial ring in $n$ indeterminates.
+| $k[\vector x] = k[x_1, \cdots, x_n]$    |Polynomial ring in $n$ indeterminates.
 | $k(\vector x) = k(x_1, \cdots, x_n)$      Rational function field in $n$ indeterminates
 | $\mathcal{U} \covers X$                   An open cover $\mathcal{U} = \ts{U_j \st j\in J}$
 | $\Delta_X$                                The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$
