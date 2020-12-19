@@ -1,6 +1,8 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Prologue}{5}{section*.3}%
+\contentsline {section}{\nonumberline Table of Contents}{2}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Prologue}{5}{section*.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {0.1}References}{5}{subsection.0.1}%
 \defcounter {refsection}{0}\relax 
@@ -160,10 +162,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {30}Thursday, December 03}{105}{section.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix: Commutative Algebra}{110}{section*.6}%
+\contentsline {section}{Appendix: Commutative Algebra}{110}{section*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {31}ToDos}{110}{section.31}%
+\contentsline {section}{\nonumberline ToDos}{110}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {32}Bibliography}{119}{section.32}%
+\contentsline {section}{\nonumberline Definitions}{112}{section*.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Theorems}{114}{section*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Exercises}{116}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Figures}{117}{section*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {31}Bibliography}{119}{section.31}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

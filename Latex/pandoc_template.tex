@@ -115,7 +115,8 @@ $endif$
 
 $if(notoc)$
 $else$
-\section*{Table of Contents}
+% Note: addsec only in KomaScript
+\addsec{Table of Contents}
 \tableofcontents
 \newpage
 $endif$
@@ -124,28 +125,28 @@ $body$
 
 $if(book)$
 $if(todos)$
-\section{ToDos}
+\addsec{ToDos}
 \listoftodos[List of Todos]
 \cleardoublepage
 $endif$
 
 % Hook into amsthm environments to list them.
-\section*{Definitions}
+\addsec{Definitions}
 \renewcommand{\listtheoremname}{Definitions}
 \listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
 \cleardoublepage
 
-\section*{Theorems}
+\addsec{Theorems}
 \renewcommand{\listtheoremname}{Theorems}
 \listoftheorems[ignoreall,show={theorem,proposition}, numwidth=3.5em]
 \cleardoublepage
 
-\section*{Exercises}
+\addsec{Exercises}
 \renewcommand{\listtheoremname}{Exercises}
 \listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
 \cleardoublepage
 
-\section*{Figures}
+\addsec{Figures}
 \listoffigures
 \cleardoublepage
 
