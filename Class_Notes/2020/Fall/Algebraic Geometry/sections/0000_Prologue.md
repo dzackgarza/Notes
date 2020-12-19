@@ -71,7 +71,8 @@ Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
 - $C^0(\wait, \RR)$, a sheaf of continuous functions
 - $\OO_X(\wait)$, the sheaf of regular functions on $X$
 - $\underline{\RR}(\wait)$, the constant sheaf associated to $\RR$ (locally constant real-valued functions)
-- $\Hol(\wait)$ 
+- $\Hol(\wait, \CC)$, a sheaf of holomorphic functions
+- $K_p$ 
 
 
 ## Useful Algebra Facts
