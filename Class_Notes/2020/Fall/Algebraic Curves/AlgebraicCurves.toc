@@ -1,0 +1,229 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}References}{6}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}References}{6}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Lecture 1: Field Theory Preliminaries}{6}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Finite Generation of Fields}{6}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Notion 1}{6}{subsubsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}Notion 2}{6}{subsubsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.3}Notion 3}{7}{subsubsection.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Case Study: The Lüroth Problem.}{8}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Integrals Closures and Constant Fields}{9}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Lecture 1: Discussion and Review}{10}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Valuations}{10}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Places}{11}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Divisors}{11}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Lecture 2: Field Theory Preliminaries}{12}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Base Extension}{12}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}When Extensions Preserve Being a Domain}{13}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Good Base Change For Function Fields}{14}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Example of a Non-Regular Family of Function Fields}{16}{subsection.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Lecture 3: Last of Preliminaries}{18}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Polynomials Defining Regular Function Fields}{18}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Geometric Irreducibility}{18}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Our Function Fields are Geometrically Irreducible}{19}{subsection.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Lecture 4: Chapter 1, One Variable Function Fields and Their Valuations}{20}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Valuation Rings and Krull Valuations}{21}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Group of Divisibility}{21}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Generalized Valuations}{22}{subsection.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Regular or Centered Valuations}{24}{subsection.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5}Topological Considerations}{25}{subsection.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6}Scheme Theory, Resolution of Singularities}{26}{subsection.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.7}Intermediate Rings}{26}{subsection.6.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8}Valuations of Every Rank}{28}{subsection.6.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Lecture 5: Places}{29}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Investigating the Set of Places}{29}{subsection.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Describing the Missing Place}{31}{subsection.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}Finite Generation in Towers}{32}{subsection.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4}Regularity Lemma}{33}{subsection.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5}An Inequality on Degrees}{35}{subsection.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.6}Affine Grounding and Residue Fields}{37}{subsection.7.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Lecture 6: Affine Domains and Places \(\Sigma (K/k)\)}{40}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}Holomorphy Rings are Affine Dedekind Domains with Fraction Field \(K\)}{43}{subsection.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Proof of Main Theorem}{46}{subsection.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.2.1}Case 1}{47}{subsubsection.8.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.2.2}Case 2}{47}{subsubsection.8.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.2.3}Case 3}{47}{subsubsection.8.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3}Case 3: Fixed Proof}{49}{subsection.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Lecture 7: Riemann-Roch}{51}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}Divisors}{51}{subsection.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2}The Degree of the Divisor of a Rational Function is Zero}{54}{subsection.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Lecture 8: Riemann-Roch Spaces (Part 1)}{59}{section.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1}Setup for the Riemann-Roch Theorem}{59}{subsection.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2}The Riemann-Roch Space}{60}{subsection.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3}Working with Divisors}{61}{subsection.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4}Subspaces and Dimension of Riemann-Roch Spaces}{62}{subsection.10.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.5}Bounds on Dimensions}{64}{subsection.10.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Lecture 8: Riemann-Roch Spaces (Part 2)}{65}{section.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1}Proof of Upper Bound}{65}{subsection.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {11.1.1}Step 1}{65}{subsubsection.11.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {11.1.2}Step 2}{66}{subsubsection.11.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {11.1.3}Step 3}{67}{subsubsection.11.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {11.1.4}Step 4}{67}{subsubsection.11.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2}Genus}{67}{subsection.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Lecture 9 (Todo)}{69}{section.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}Lecture 10A (Todo)}{69}{section.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14}Lecture 10B (Todo)}{69}{section.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15}Lecture 10C (Todo)}{69}{section.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16}Lecture 11A: Weil's Proof of Riemann-Roch}{69}{section.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {17}Lecture 11B: Weil's Proof of Riemann-Roch (TODO)}{73}{section.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {18}Lecture 11C: Weil's Proof of Riemann-Roch (TODO)}{73}{section.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {19}Lecture 12: Chapter 3, Curves Over a Finite Field}{73}{section.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {19.1}Finiteness of Class Groups}{73}{subsection.19.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {19.2}Base Extension}{73}{subsection.19.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {19.2.1}Splitting of Places}{74}{subsubsection.19.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {19.3}Degree 1 Places and Rational Points on a Curve}{76}{subsection.19.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {19.4}Finiteness of Places and Rational Points}{77}{subsection.19.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {19.5}Finiteness of Class Group}{78}{subsection.19.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {20}Lecture 13: Splitting Places}{79}{section.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {20.1}How Places Split}{79}{subsection.20.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {20.2}Counting Effective Divisors}{80}{subsection.20.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {20.3}Hasse-Weil Zeta Functions}{81}{subsection.20.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {20.4}Proof of Rationality}{83}{subsection.20.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21}Lecture 14: The Hasse-Weil Zeta Function}{85}{section.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {21.1}Comparing Zeta Functions After Extending Scalars}{87}{subsection.21.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {21.2}Proof That \(\delta = 1\)}{88}{subsection.21.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {21.3}The Functional Equation}{89}{subsection.21.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {21.4}The \(L\) Polynomial}{91}{subsection.21.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {22}Lecture 15: The \(L{\hbox {-}}\)Polynomial}{92}{section.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.1}Big List of Important Facts}{92}{subsection.22.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.2}Proofs}{93}{subsection.22.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {22.2.1}The degree of \(L\) and \(L(1)\)}{93}{subsubsection.22.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {22.2.2}Functional Equation}{94}{subsubsection.22.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {22.2.3}Coefficients \(a_j\) for \(j=0, 1, 2g\) and Duality}{94}{subsubsection.22.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {22.2.4}Absolute Values of Roots / RH}{95}{subsubsection.22.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {22.3}Applications and Corollaries}{98}{subsection.22.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {22.3.1}Counting Rational Points}{98}{subsubsection.22.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {22.3.2}Relating Rational Points to Coefficients}{98}{subsubsection.22.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23}Lecture 16 (Todo)}{101}{section.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {24}Lecture 17 (Todo)}{101}{section.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {25}Lecture 18 (Todo)}{101}{section.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {26}Lecture 19 (Todo)}{101}{section.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {27}Lecture 20 (Todo)}{101}{section.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {28}Lecture 21 (Todo)}{101}{section.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {29}Lecture 22 (Todo)}{101}{section.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {30}Lecture 23 (Sketch)}{101}{section.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {30.1}Artin-Schreier Extensions of Function Fields}{102}{subsection.30.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {31}Lecture 24: Hermitian Function Fields (Sketch)}{103}{section.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {32}Lecture 25: Differential Pullback Theorem (Sketch)}{105}{section.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {33}Indices}{106}{section.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {33.1}ToDos}{106}{subsection.33.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {33.1}Definitions}{108}{subsection.33.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {33.1}Theorems}{109}{subsection.33.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {33.1}Exercises}{110}{subsection.33.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {33.1}Figures}{111}{subsection.33.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {34}Bibliography}{111}{section.34}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
