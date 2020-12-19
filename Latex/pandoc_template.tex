@@ -115,6 +115,7 @@ $endif$
 
 $if(notoc)$
 $else$
+\section*{Table of Contents}
 \tableofcontents
 \newpage
 $endif$
@@ -129,22 +130,22 @@ $if(todos)$
 $endif$
 
 % Hook into amsthm environments to list them.
-\section{Definitions}
+\section*{Definitions}
 \renewcommand{\listtheoremname}{Definitions}
 \listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
 \cleardoublepage
 
-\section{Theorems}
+\section*{Theorems}
 \renewcommand{\listtheoremname}{Theorems}
 \listoftheorems[ignoreall,show={theorem,proposition}, numwidth=3.5em]
 \cleardoublepage
 
-\section{Exercises}
+\section*{Exercises}
 \renewcommand{\listtheoremname}{Exercises}
 \listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
 \cleardoublepage
 
-\section{Figures}
+\section*{Figures}
 \listoffigures
 \cleardoublepage
 

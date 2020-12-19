@@ -1,177 +1,169 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Prologue}{5}{section*.2}%
+\contentsline {section}{Prologue}{3}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.1}References}{5}{subsection.0.1}%
+\contentsline {subsection}{\numberline {0.1}References}{3}{subsection.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.2}Notation}{6}{subsection.0.2}%
+\contentsline {subsection}{\numberline {0.2}Notation}{4}{subsection.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.3}Summary of Important Concepts}{7}{subsection.0.3}%
+\contentsline {subsection}{\numberline {0.3}Summary of Important Concepts}{5}{subsection.0.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.4}Useful Examples}{8}{subsection.0.4}%
+\contentsline {subsection}{\numberline {0.4}Useful Examples}{6}{subsection.0.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {0.4.1}Varieties}{8}{subsubsection.0.4.1}%
+\contentsline {subsubsection}{\numberline {0.4.1}Varieties}{6}{subsubsection.0.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {0.4.2}Presheaves / Sheaves}{8}{subsubsection.0.4.2}%
+\contentsline {subsubsection}{\numberline {0.4.2}Presheaves / Sheaves}{6}{subsubsection.0.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.5}Useful Algebra Facts}{8}{subsection.0.5}%
+\contentsline {subsection}{\numberline {0.5}The Algebra-Geometry Dictionary}{6}{subsection.0.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.6}The Algebra-Geometry Dictionary}{9}{subsection.0.6}%
+\contentsline {section}{\numberline {1}Friday, August 21: Intro and Motivation}{7}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Friday, August 21: Intro and Motivation}{10}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Coordinate Rings}{7}{subsection.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Coordinate Rings}{10}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Harnack Curve Theorem}{9}{subsection.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Harnack Curve Theorem}{11}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Connection to Riemann Surfaces}{10}{subsection.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Connection to Riemann Surfaces}{12}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Tuesday, August 25}{11}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Tuesday, August 25}{13}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Radicals, Degrees, and Affine Varieties}{11}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Radicals, Degrees, and Affine Varieties}{13}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Ideals, and Properties of \(V({\,\cdot \,})\)}{12}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Ideals, and Properties of \(V({\,\cdot \,})\)}{14}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Statement and Proof of Nullstellensatz}{13}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Statement and Proof of Nullstellensatz}{15}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Thursday, August 27}{15}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Thursday, August 27}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Consequence of the Nullstellensatz}{15}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Consequence of the Nullstellensatz}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Proof of Remaining Part of Nullstellensatz}{16}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Proof of Remaining Part of Nullstellensatz}{18}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Tuesday, September 01}{20}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Tuesday, September 01}{22}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Zariski Topology}{20}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}The Zariski Topology}{22}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Irreducibility and Connectedness}{21}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Irreducibility and Connectedness}{23}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Irreducibility on the Algebra Side}{22}{subsubsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Irreducibility on the Algebra Side}{24}{subsubsection.4.2.1}%
+\contentsline {section}{\numberline {5}Thursday, September 03}{23}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Thursday, September 03}{25}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Irreducibility and Prime Ideals}{23}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Irreducibility and Prime Ideals}{25}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Tuesday, September 08}{27}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Tuesday, September 08}{29}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Dimension}{28}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Dimension}{30}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Thursday, September 10}{30}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Thursday, September 10}{32}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Proof of Dimension Proposition}{30}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Proof of Dimension Proposition}{32}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Proof That \(P_1\) is Principle}{31}{subsubsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}Proof That \(P_1\) is Principle}{33}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Using Dimension Theory}{32}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Using Dimension Theory}{34}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Tuesday, September 15}{33}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Tuesday, September 15}{35}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Review}{33}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Review}{35}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Thursday, September 17}{36}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Thursday, September 17}{38}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Regular Functions}{36}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Regular Functions}{38}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Tuesday, September 22}{39}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Tuesday, September 22}{41}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Review: Regular Functions}{39}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Review: Regular Functions}{41}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Sheaves}{41}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Sheaves}{43}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Thursday, September 24}{42}{section.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Thursday, September 24}{44}{section.11}%
+\contentsline {section}{\numberline {12}Tuesday, September 29}{42}{section.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Tuesday, September 29}{44}{section.12}%
+\contentsline {section}{\numberline {13}Thursday, October 01}{46}{section.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13}Thursday, October 01}{48}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Stalks and Localizations}{46}{subsection.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.1}Stalks and Localizations}{48}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}What's the Point!}{48}{subsection.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.2}What's the Point!}{50}{subsection.13.2}%
+\contentsline {section}{\numberline {14}Tuesday, October 06}{49}{section.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14}Tuesday, October 06}{51}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Gathmann Chapter 4}{49}{subsection.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.1}Gathmann Chapter 4}{51}{subsection.14.1}%
+\contentsline {section}{\numberline {15}Thursday, October 08}{51}{section.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15}Thursday, October 08}{53}{section.15}%
+\contentsline {section}{\numberline {16}Tuesday, October 13}{54}{section.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16}Tuesday, October 13}{56}{section.16}%
+\contentsline {section}{\numberline {17}Thursday, October 15}{55}{section.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17}Thursday, October 15}{57}{section.17}%
+\contentsline {subsection}{\numberline {17.1}End of Chapter 4}{55}{subsection.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1}End of Chapter 4}{57}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Chapter 5}{57}{subsection.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.2}Chapter 5}{59}{subsection.17.2}%
+\contentsline {section}{\numberline {18}Tuesday, October 20}{60}{section.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18}Tuesday, October 20}{62}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Gluing Two Opens}{60}{subsection.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.1}Gluing Two Opens}{62}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}More General Gluing}{62}{subsection.18.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.2}More General Gluing}{64}{subsection.18.2}%
+\contentsline {section}{\numberline {19}Thursday, October 22: Separatedness}{65}{section.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {19}Thursday, October 22: Separatedness}{67}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Products of Prevarieties}{65}{subsection.19.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {19.1}Products of Prevarieties}{67}{subsection.19.1}%
+\contentsline {subsubsection}{\numberline {19.1.1}Issues with the product of prevarieties}{66}{subsubsection.19.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {19.1.1}Issues with the product of prevarieties}{68}{subsubsection.19.1.1}%
+\contentsline {section}{\numberline {20}Tuesday, October 27: General Varieties and Completeness}{67}{section.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20}Tuesday, October 27: General Varieties and Completeness}{69}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Properties of Varieties}{70}{subsection.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.1}Properties of Varieties}{72}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Chapter 6: Projective Varieties}{70}{subsection.20.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {20.2}Chapter 6: Projective Varieties}{72}{subsection.20.2}%
+\contentsline {section}{\numberline {21}Thursday, October 29: Projective Space Homogeneous Polynomials}{71}{section.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {21}Thursday, October 29: Projective Space Homogeneous Polynomials}{73}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Projective Space}{71}{subsection.21.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {21.1}Projective Space}{73}{subsection.21.1}%
+\contentsline {section}{\numberline {22}Tuesday, November 02}{73}{section.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {22}Tuesday, November 02}{75}{section.22}%
+\contentsline {section}{\numberline {23}Thursday, November 05: Projective Spaces}{74}{section.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {23}Thursday, November 05: Projective Spaces}{76}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Projective Nullstellensatz}{75}{subsection.23.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {23.1}Projective Nullstellensatz}{77}{subsection.23.1}%
+\contentsline {section}{\numberline {24}Tuesday, November 10}{77}{section.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {24}Tuesday, November 10}{79}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Homogenization and Dehomogenization}{77}{subsection.24.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {24.1}Homogenization and Dehomogenization}{79}{subsection.24.1}%
+\contentsline {section}{\numberline {25}Thursday, November 12}{83}{section.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {25}Thursday, November 12}{85}{section.25}%
+\contentsline {subsection}{\numberline {25.1}Chapter ?}{84}{subsection.25.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {25.1}Chapter ?}{86}{subsection.25.1}%
+\contentsline {subsection}{\numberline {25.2}Morphisms of Projective Varieties}{85}{subsection.25.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {25.2}Morphisms of Projective Varieties}{87}{subsection.25.2}%
+\contentsline {section}{\numberline {26}Tuesday, November 17}{86}{section.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {26}Tuesday, November 17}{88}{section.26}%
+\contentsline {subsection}{\numberline {26.1}Projecting From a Point}{86}{subsection.26.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {26.1}Projecting From a Point}{88}{subsection.26.1}%
+\contentsline {subsection}{\numberline {26.2}The Segre Embedding}{89}{subsection.26.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {26.2}The Segre Embedding}{91}{subsection.26.2}%
+\contentsline {section}{\numberline {27}Thursday, November 19}{90}{section.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {27}Thursday, November 19}{92}{section.27}%
+\contentsline {subsection}{\numberline {27.1}Why use projective varieties?}{90}{subsection.27.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {27.1}Why use projective varieties?}{92}{subsection.27.1}%
+\contentsline {subsection}{\numberline {27.2}Projective Varieties are Varieties}{91}{subsection.27.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {27.2}Projective Varieties are Varieties}{93}{subsection.27.2}%
+\contentsline {section}{\numberline {28}Tuesday, November 24}{94}{section.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {28}Tuesday, November 24}{96}{section.28}%
+\contentsline {subsection}{\numberline {28.1}The Veronese Embedding}{94}{subsection.28.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {28.1}The Veronese Embedding}{96}{subsection.28.1}%
+\contentsline {subsection}{\numberline {28.2}Chapter 10: Smoothness}{97}{subsection.28.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {28.2}Chapter 10: Smoothness}{99}{subsection.28.2}%
+\contentsline {section}{\numberline {29}Tuesday, December 01}{100}{section.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {29}Tuesday, December 01}{102}{section.29}%
+\contentsline {section}{\numberline {30}Thursday, December 03}{103}{section.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {30}Thursday, December 03}{105}{section.30}%
+\contentsline {section}{Appendix: Commutative Algebra}{108}{section*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {31}ToDos}{110}{section.31}%
+\contentsline {section}{\numberline {31}ToDos}{108}{section.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {32}Definitions}{111}{section.32}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {33}Theorems}{113}{section.33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {34}Exercises}{115}{section.34}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {35}Figures}{116}{section.35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {36}Bibliography}{118}{section.36}%
+\contentsline {section}{\numberline {32}Bibliography}{113}{section.32}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
