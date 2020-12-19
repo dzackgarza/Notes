@@ -109,7 +109,7 @@ Let $k=\bar k$, we're setting up correspondences
 
 Algebra                                       Geometry
 -------                                       --------
-$\kx{n}$                                      $\AA^n_{/k}$
+$\kx{n}$                                                        $\AA^n_{/k}$
 Maximal ideals $\mathfrak{m}={x_1 - p_1, \cdots, x_n - p_n}$     Points $\tv{a_1, \cdots, a_n}$
 Radical ideals $J = \sqrt{J} \normal \kx{n}$  $V(J)$ the zero locus
 Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
