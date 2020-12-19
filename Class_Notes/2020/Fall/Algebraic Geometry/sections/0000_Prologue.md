@@ -20,16 +20,9 @@ Radical ideals $J = \sqrt{J} \normal \kx{n}$  $V(J)$ the zero locus
 $I(S)$ the ideal of a set                     $S \subseteq \AA^n$ a subset
 $I + J$                                       $V(I) \intersect V(J)$
 $\sqrt{I(V) + I(W)}$                          $V\intersect W$
-$I \intersect J, IJ$                                          $V(I) \union V(J)$
-$I(V) \intersect I(W), \sqrt{I(V)I(W)}$                             $V \union W$
-?                                             $
-?                                             ?
-?                                             ?
-?                                             ?
-?                                             ?
-?                                             ?
-?                                             ?
-?                                             ?
+$I \intersect J, IJ$                          $V(I) \union V(J)$
+$I(V) \intersect I(W), \sqrt{I(V)I(W)}$       $V \union W$
+$I(V) : I(W)$                                 $\bar{V\sm W}$
 
 ## Summary of Important Concepts
 
