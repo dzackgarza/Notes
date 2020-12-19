@@ -14,8 +14,7 @@ $k[\vector x] = k[x_1, \cdots, x_n]$      Polynomial ring in $n$ indeterminates.
 $k(\vector x) = k(x_1, \cdots, x_n)$      Rational function field in $n$ indeterminates
 $\mathcal{U} \covers X$                   An open cover $\mathcal{U} = \ts{U_j \st j\in J}$
 $\Delta_X$                                The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$
-$\AA^n_{/k}$                              Affine $n\dash$space
----                                       $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$
+$\AA^n_{/k}$                              Affine $n\dash$space <br/> $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$
 $\PP^n_{/k}$                              Projective $n\dash$space
 ---                                       $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$
 ---                                        $= \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$
