@@ -122,34 +122,31 @@ $endif$
 $body$
 
 $if(book)$
-\section{Indices}
 $if(todos)$
-\subsection{ToDos}
-
+\section{ToDos}
 \listoftodos[List of Todos]
-
-\newpage
+\cleardoublepage
 $endif$
 
 % Hook into amsthm environments to list them.
-\subsection{Definitions}
-
+\section{Definitions}
 \renewcommand{\listtheoremname}{Definitions}
 \listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
+\cleardoublepage
 
-\subsection{Theorems}
-
+\section{Theorems}
 \renewcommand{\listtheoremname}{Theorems}
 \listoftheorems[ignoreall,show={theorem,proposition}, numwidth=3.5em]
+\cleardoublepage
 
-\subsection{Exercises}
-
+\section{Exercises}
 \renewcommand{\listtheoremname}{Exercises}
 \listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
+\cleardoublepage
 
-\subsection{Figures}
-
+\section{Figures}
 \listoffigures
+\cleardoublepage
 
 $endif$
 
