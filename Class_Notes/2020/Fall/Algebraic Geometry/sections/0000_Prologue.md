@@ -69,7 +69,9 @@ Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
 
 - $C^\infty(\wait, \RR)$, a sheaf of smooth functions
 - $C^0(\wait, \RR)$, a sheaf of continuous functions
-- $\OO_X$, the sheaf of regular 
+- $\OO_X$, the sheaf of regular functions on $X$
+- $\underline{\RR}$, the constant sheaf associated to $\RR$ (locally constant real-valued functions)
+-
 
 
 ## Useful Algebra Facts
