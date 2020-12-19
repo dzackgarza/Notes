@@ -16,7 +16,7 @@ I(S), I_a(S)                   && \text{The ideal associated to a subset } S \su
 && I(S) \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X} \\
 A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety} \\
 \OO_X && \text{The structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
-
+D(f) && \text{A distinguished open set }
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
