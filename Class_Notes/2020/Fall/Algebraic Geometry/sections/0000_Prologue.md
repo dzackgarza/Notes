@@ -34,10 +34,10 @@ $f^i$                                     Dehomogenization, $f(1, x_1, \cdots, x
 $J^h$                                     Homogenization of an ideal, $\ts{f^j \st f\in J}$
 $\bar X$                                  Projective closure of a subset
 ---                                       $\da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X}$
+---                                       $\kx{n} / I(X)$
 
 
 \[
-&& \da \kx{n} / I(X)  \\
 \OO_X && \text{Structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
 D(f) && \text{Distinguished open set } \\
 && \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
