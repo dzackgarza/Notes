@@ -10,6 +10,8 @@
 \[
 k[\vector x] \da \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
 k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \\
+\mathcal{U} \covers X && \text{An open cover} \\
+\Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
 \AA^n_{/k} && \text{Affine $n\dash$space} \\
 && \AA^n_{/k} \da \ts{\tv{k_1, \cdots, k_n} \st k_j \in k} \\
 \PP^n_{/k} && \text{Projective $n\dash$space} \\ 
@@ -20,12 +22,6 @@ V(J), V_a(J)                   && \text{Variety associated to an ideal } J \norm
 I(S), I_a(S)                   && \text{Ideal associated to a subset } S \subseteq \AA^n_{k} \\
 && \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X} \\
 A(X) && \text{Coordinate ring of a variety} \\
-&& \da \kx{n} / I(X)  \\
-\OO_X && \text{Structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
-D(f) && \text{Distinguished open set } \\
-&& \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
-\Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
-\mathcal{U} \covers X && \text{An open cover} \\
 V_p(J) && \text{Projective variety of an ideal} \\
 && \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J} \\
 I_p(S) && \text{Projective ideal?} \\ 
@@ -38,7 +34,11 @@ f^i && \text{Dehomogenization} \\
 J^h \text{ for } J \normal \kx{n} && \text{Homogenization of an ideal} \\
 && \da f(1, x_1, \cdots, x_n) \\
 \bar X && \text{Projective closure of a subset} \\
-&& \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X} 
+&& \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X} \\
+&& \da \kx{n} / I(X)  \\
+\OO_X && \text{Structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
+D(f) && \text{Distinguished open set } \\
+&& \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
