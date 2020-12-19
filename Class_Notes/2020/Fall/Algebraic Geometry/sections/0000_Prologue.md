@@ -19,7 +19,7 @@ Algebra                                       Geometry
 Radical ideals $J = \sqrt{J} \normal \kx{n}$  $V(J)$ the zero locus
 $I(S)$ the ideal of a set                     $S \subseteq \AA^n$ a subset
 $I + J$                                       $V(I) \intersect V(J)$
-$\sqrt{I(V) + I(W)}$                                             ?
+$\sqrt{I(V) + I(W)}$                          ?
 ?                                             ?
 ?                                             ?
 ?                                             ?
