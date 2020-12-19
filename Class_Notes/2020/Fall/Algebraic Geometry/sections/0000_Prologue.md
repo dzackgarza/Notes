@@ -12,7 +12,7 @@ k(x_1, \cdots, x_n) && \text{The rational function field } \ts{f(\vector x) = p(
 V(J), V_a(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
 I(S), I_a(S)                   && \text{The ideal associated to a subset } S \subseteq \AA^n_{k} \\
 A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety} \\
-\OO_X && \text{The structure sheaf } \ts{f:U\to k \st }
+\OO_X && \text{The structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}}
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
