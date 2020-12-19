@@ -11,6 +11,9 @@
 k[\vector x] \da \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
 k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \\
 \AA^n_{/k} && \text{Affine $n\dash$space} \\
+&& \AA^n_{/k} \da \ts{\tv{k_1, \cdots, k_n} \st k_j \in k} \\
+\PP^n_{/k} && \text{Projective $n\dash$space} \\ 
+&& \PP^n_{/k} \da 
 && k(\vector x) \da \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}} \\ 
 V(J), V_a(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
 && V(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
