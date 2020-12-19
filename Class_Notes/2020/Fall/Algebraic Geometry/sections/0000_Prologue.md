@@ -154,7 +154,7 @@ A(X) \text{ is a domain}
 Algebra                                       Geometry
 -------                                       --------
 $\kx{n}$                                      $\AA^n_{/k}$
-Maximal ideals $\mathfrak{m} = \gens{x_1 - p_1, \cdots, x_n - p_n}$     Points
+Maximal ideals $\mathfrak{m} = \gens{x_1 - p_1, \cdots, x_n - p_n}$     Points $\tv{a_1, \cdots, a_n}$
 Radical ideals $J = \sqrt{J} \normal \kx{n}$  $V(J)$ the zero locus
 $I(S)$ the ideal of a set                     $S \subseteq \AA^n$ a subset
 $I + J$                                       $V(I) \intersect V(J)$
