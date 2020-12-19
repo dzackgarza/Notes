@@ -21,8 +21,8 @@ $I(S)$ the ideal of a set                     $S \subseteq \AA^n$ a subset
 $I + J$                                       $V(I) \intersect V(J)$
 $\sqrt{I(V) + I(W)}$                          $V\intersect W$
 $IJ$                                          $V(I) \union V(J)$
-?                                             ?
-?                                             ?
+$\sqrt{I(V)I(W)}$                             $V \union W$
+?                                             $
 ?                                             ?
 ?                                             ?
 ?                                             ?
