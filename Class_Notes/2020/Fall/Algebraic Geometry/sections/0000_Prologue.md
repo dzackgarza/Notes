@@ -20,9 +20,9 @@
 | ---                                     | $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$ |
 | ---                                     | $= \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$ |
 | $V(J), V_a(J)$                          | Variety associated to an ideal $J \normal \kx{n}$ |
-| ---                                     | $\da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$
-| $I(S), I_a(S)$                          | Ideal associated to a subset $S \subseteq \AA^n_{k}$
-| ---                                     | $\da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$
+| ---                                     | $\da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$ |
+| $I(S), I_a(S)$                          | Ideal associated to a subset $S \subseteq \AA^n_{k}$| 
+| ---                                     | $\da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$ |
 | $A(X)$                                  | Coordinate ring of a variety, $\kx{n}/I(X)$
 | $V_p(J)$                                | Projective variety of an ideal
 | ---                                     | $\da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}$
