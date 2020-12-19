@@ -41,8 +41,6 @@ D(f) && \text{Distinguished open set } \\
 && \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
 .\]
 
-\todo[inline]{Lots of notation to fill in.}
-
 Algebra                                       Geometry
 -------                                       --------
 Radical ideals $J = \sqrt{J} \normal \kx{n}$  $V(J)$ the zero locus

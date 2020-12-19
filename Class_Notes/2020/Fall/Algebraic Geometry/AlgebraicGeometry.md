@@ -7,13 +7,54 @@
 
 ## Notation
 
+- If a property $P$ is said to hold **locally**, this means that for every point $p$ there is a neighborhood $U_p \ni p$ such that $P$ holds on $U_p$.
 \[
-V(J)                   && \text{The variety associated to an ideal } J \normal \kx{n} \\
-I(S)                   && \text{The ideal associated to a subset } S \subseteq \AA^n_{k} \\
-A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety}
+k[\vector x] \da \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
+k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \\
+\mathcal{U} \covers X && \text{An open cover} \\
+\Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
+\AA^n_{/k} && \text{Affine $n\dash$space} \\
+&& \AA^n_{/k} \da \ts{\tv{k_1, \cdots, k_n} \st k_j \in k} \\
+\PP^n_{/k} && \text{Projective $n\dash$space} \\ 
+&& \PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x \\
+&& \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}} \\ 
+V(J), V_a(J)                   && \text{Variety associated to an ideal } J \normal \kx{n} \\
+&& \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
+I(S), I_a(S)                   && \text{Ideal associated to a subset } S \subseteq \AA^n_{k} \\
+&& \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X} \\
+A(X) && \text{Coordinate ring of a variety} \\
+V_p(J) && \text{Projective variety of an ideal} \\
+&& \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J} \\
+I_p(S) && \text{Projective ideal?} \\ 
+&& \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S} \\
+S(X) && \text{Projective coordinate ring} \\
+&& \da \kx{n}/I_p(X) \\
+f^h && \text{Homogenization} \\
+ && \da x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}\\
+f^i && \text{Dehomogenization} \\
+J^h \text{ for } J \normal \kx{n} && \text{Homogenization of an ideal} \\
+&& \da f(1, x_1, \cdots, x_n) \\
+\bar X && \text{Projective closure of a subset} \\
+&& \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X} \\
+&& \da \kx{n} / I(X)  \\
+\OO_X && \text{Structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
+D(f) && \text{Distinguished open set } \\
+&& \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
+
+Algebra                                       Geometry
+-------                                       --------
+Radical ideals $J = \sqrt{J} \normal \kx{n}$  $V(J)$ the zero locus
+$I(S)$ the ideal of a set                     $S \subseteq \AA^n$ a subset
+$I + J$                                       $V(I) \intersect V(J)$
+$\sqrt{I(V) + I(W)}$                          $V\intersect W$
+$I \intersect J, IJ$                          $V(I) \union V(J)$
+$I(V) \intersect I(W), \sqrt{I(V)I(W)}$       $V \union W$
+$I(V) : I(W)$                                 $\bar{V\sm W}$
+Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
+
 
 ## Summary of Important Concepts
 
@@ -46,6 +87,30 @@ A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety}
 
 
 \newpage
+
+## Useful Examples
+
+### Varieties
+
+- $V(xy-1) \subseteq \AA^2$ a hyperbola
+- $V(x)$ a coordinate axis
+- $V(x-p)$ a point.
+
+### Presheaves / Sheaves
+
+- $C^\infty(\wait, \RR)$, a sheaf of smooth functions
+- $C^0(\wait, \RR)$, a sheaf of continuous functions
+- $\OO_X(\wait)$, the sheaf of regular functions on $X$
+- $\underline{\RR}(\wait)$, the constant sheaf associated to $\RR$ (locally constant real-valued functions)
+- $\Hol(\wait, \CC)$, a sheaf of holomorphic functions
+- $K_p$ the skyscraper sheaf:
+\[  
+K_p(U) \da 
+\begin{cases}
+k & p\in U \\
+0 & \text{else}.
+\end{cases}
+\]
 
 
 ## Useful Algebra Facts
@@ -4485,7 +4550,3 @@ Note that it doesn't matter that $V(1+z^3)$ was intersected here, as long as it'
 :::
 
 
-
-# Misc Unsorted
-
-![Image](figures/image_2020-09-16-04-09-22.png)
