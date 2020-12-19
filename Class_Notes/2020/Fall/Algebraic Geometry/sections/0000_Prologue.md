@@ -11,7 +11,7 @@
 +-----------------------------------------+------------+
 | Notation                                | Definition |
 +=========================================+============+
-| $k[\vector x] = k[x_1, \cdots, x_n]$    | Polynomial ring in $n$ indeterminates.
+| $k[\vector x] = k[x_1, \cdots, x_n]$    | Polynomial ring in $n$ indeterminates |
 | $k(\vector x) = k(x_1, \cdots, x_n)$    | Rational function field in $n$ indeterminates
 | $\mathcal{U} \covers X$                 | An open cover $\mathcal{U} = \ts{U_j \st j\in J}$
 | $\Delta_X$                              | The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$
@@ -35,7 +35,7 @@
 | $\bar X$                                | Projective closure of a subset
 | ---                                     | $\da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X}$
 | $\OO_X$                                 | Structure sheaf $\ts{f:U\to k \st f \in k(\vector x) \text{ locally}}$
-| $D(f)$                                  | Distinguished open set, $D(f) = V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0}$
+| $D(f)$                                  | Distinguished open set, $D(f) = V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0}$ |
 
 
 ## Summary of Important Concepts
