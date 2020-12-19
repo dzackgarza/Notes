@@ -14,16 +14,16 @@ k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \\
 && \AA^n_{/k} \da \ts{\tv{k_1, \cdots, k_n} \st k_j \in k} \\
 \PP^n_{/k} && \text{Projective $n\dash$space} \\ 
 && \PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x \\
-&& k(\vector x) \da \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}} \\ 
+&& \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}} \\ 
 V(J), V_a(J)                   && \text{Variety associated to an ideal } J \normal \kx{n} \\
-&& V(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
+&& \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
 I(S), I_a(S)                   && \text{Ideal associated to a subset } S \subseteq \AA^n_{k} \\
-&& I(S) \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X} \\
+&& \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X} \\
 A(X) && \text{Coordinate ring of a variety} \\
-&& A(X) \da \kx{n} / I(X)  \\
+&& \da \kx{n} / I(X)  \\
 \OO_X && \text{Structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
 D(f) && \text{Distinguished open set } \\
-&& D(f) \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
+&& \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
 \Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
 \mathcal{U} \covers X && \text{An open cover} \\
 V_p(J) && \text{Projective variety of an ideal} \\
@@ -32,7 +32,10 @@ I_p(S) && \text{Projective ideal?} \\
 && I_p(S) \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S} \\
 S(X) && \text{Projective coordinate ring} \\
 && S(X) \da \kx{n}/I_p(X) \\
-f^h && \text{Homogenization}
+f^h && \text{Homogenization} \\
+ && \da x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}\\
+f^i && \text{Dehomogenization} \\
+&& \da 
 .\]
 
 \todo[inline]{Lots of notation to fill in.}
