@@ -3131,6 +3131,55 @@ A **graded ring** $R$ is a ring $R$ with abelian subgroups $R_d \subset R$ with
 - For all $f\in R_d$ and $g\in R_{d'}$, we have $fg \in R_{d+d'}$ and $R_d + R_{d} \subset R_d$.
 :::
 
+# Tuesday, November 02
+
+
+:::{.definition title="Cones"}
+An affine variety $X \subseteq \AA^{n+1}$ is a **cone** iff
+
+- $\vector 0 \in X$
+- $kX \subseteq X$
+
+:::
+
+:::{.remark}
+This says that $X$ is the origin and a union of lines through the origin.
+For the following definitions, we define a map
+\[  
+\pi: \AA^{n+1}\smz &\to \PP^n \\
+\tv{x_0, \cdots, x_n} &\mapsto \tv{x_0 : \cdots :x_n}
+.\]
+:::
+
+:::{.definition title="Projectivization of a Cone"}
+For a cone $X \subseteq \AA^{n+1}$, the **projectivization** of $X$ is defined as
+\[  
+\PP(X) \da \pi(X\smz) = \ts{ \tv{x_0: \cdots : x_n } \in \PP^n \st \tv{x_0, \cdots, x_n} \in X } \subseteq \PP^n
+.\]
+:::
+
+:::{.definition title="Cone Over a Projective Variety"}
+For a projective variety $X \subseteq \PP^n$, the **cone over $X$** is the cone defined by
+\[  
+C(X) \da \ts{0} \union \pi^{-1}(X) = \ts{0} \union \ts{ \tv{x_0, \cdots, x_n} \st \tv{x_0: \cdots : x_n} \in X } \subseteq \AA^{n+1}
+.\]
+:::
+
+:::{.remark}
+We have
+\[  
+\PP V_a(S) = V_p(S) &\text{and}& C(V_p(S)) = V_a(S)
+.\]
+:::
+
+:::{.proposition title="Projective Nullstellensatz Construction"}
+Define
+\[  
+V_p(J) &\da \ts{\vector x \in \PP^n \st f(\vector x) = 0 \text{ for all homogeneous } f\in J} \subseteq \PP^n \\
+I_p(X) &\da \gens{ f \in k[x_0, \cdots, x_n] \text{ homogeneous } \st f(\vector x) = \vector 0\,\, \forall x\in X} \normal k[x_0, \cdots, x_n]
+.\]
+:::
+
 # Thursday, November 05: Projective Spaces
 
 We defined $\PP^n_{/k} \da k^{n+1}\smz /\sim$ where $x\sim \lambda x$ for all $x\in k\units$, which we identified with lines through the origin in $k^{n+1}$.
@@ -3392,7 +3441,11 @@ J^h \da \ts{f^h \st f\in J}
 
 :::{.example}
 This is not a ring morphism, since $(f+g)^h \neq f^h + g^h$ in general.
-Taking $f = x_0^2 + x_1$ and $g= -x_0^2 + x_2$, we have $f^h + g^h = x_0 x_1 + x_0 x_2$ while $(f+g)^h = x_12 + x_2$.
+Taking $f = x_0^2 + x_1$ and $g= -x_0^2 + x_2$, we have 
+\[  
+f^h + g^h &= x_0 x_1 + x_0 x_2 \\ 
+(f+g)^h &= x_1 + x_2
+.\]
 :::
 
 
@@ -3415,7 +3468,7 @@ If we define the Zariski topology on $\PP^n$ as having closed sets $V_p(I)$, we 
 This amounts to showing that $V_p(I) \intersect U_0$ is closed in $\AA^n \cong U_0$.
 We can check that
 \[  
-V_p(f, f\in I) = \ts{\tv{x_0:\cdots:x_n} \st f(\vector x) = 0 \, \forall f\in I}
+V_p\qty{f \st f\in I} = \ts{\bar x \da \tv{x_0:\cdots:x_n} \st f(\vector x) = 0 \,\, \forall f\in I}
 .\]
 Intersecting with $U_0$ yields 
 $\ts{\tv{x_1:\cdots:x_n} \st f(\vector x) = 0,\, x_0\neq 0}$.
@@ -3455,7 +3508,7 @@ V(f^h) \intersect V(x_0) = \ts{\tv{0:x_1:x_2} \st f^h(0, x_1, x_2) = 0 } = \ts{\
 ,\]
 which can be seen in the picture as the points at infinity:
 
-![A](figures/image_2020-11-10-10-19-19.png){width=450px}
+![A](figures/image_2020-11-10-10-19-19.png){width=550px}
 
 Note that the equator is $V(x_0) = \PP^2_{/\CC}\sm U_0 \cong \PP^2\sm \AA^2$.
 So we get a circle of points at infinity, i.e. $V(x_0) = \PP^1 = \ts{\tv{0:v_1:v_2}}$.
@@ -3523,9 +3576,17 @@ The **projective closure** of $X = V_a(J)$ is the smallest closed subset contain
 
 # Thursday, November 12
 
-Recall that if $f\in \kx{n}$ is a homogeneous degree $d$ polynomial, then $f^i \da f(1, x_1, \cdots, x_n) \in k[x_1,\cdots, x_n]$ is the dehomogenization of $f$.
-Conversely, $f^h \da x_0^d f\qty{ {x_1 \over x_0}, \cdots, {x_n \over x_0} }$ is the homogenization.
-This is related to looking at the open subset $U_0 \da {\ts x\in \PP^n_{/k} \st x_0\neq 0} \subseteq \PP^n_{/k}$, where we found that $U_0 \cong \AA^n_{/k}$.
+Recall that if $f\in \kx{n}$ is a homogeneous degree $d$ polynomial, then 
+\[
+f^i \da f(1, x_1, \cdots, x_n) \in k[x_1,\cdots, x_n]
+\]
+is the dehomogenization of $f$.
+Conversely, 
+\[
+f^h \da x_0^d f\qty{ {x_1 \over x_0}, \cdots, {x_n \over x_0} }
+\]
+is the homogenization.
+This is related to looking at the open subset $U_0 \da \ts{ x\in \PP^n_{/k} \st x_0\neq 0} \subseteq \PP^n_{/k}$, where we found that $U_0 \cong \AA^n_{/k}$.
 
 :::{.proposition title="Projective Closure"}
 Let $V(I) \subset U_0$ be an affine variety, then $V(I) \subset \PP^n_{/k}$ is given by 
