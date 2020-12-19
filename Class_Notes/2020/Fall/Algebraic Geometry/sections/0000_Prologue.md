@@ -16,7 +16,20 @@ A(X) \da \kx{n} / I(X) && \text{The coordinate ring of a variety}
 
 Algebra                                       Geometry
 -------                                       --------
-Radical ideals $I = \sqrt{I} \normal \kx{n}$  
+Radical ideals $J = \sqrt{J} \normal \kx{n}$  $V(J)$ the zero locus
+$I(S)$ the ideal of a set                     $S \subseteq \AA^n$ a subset
+$I + J$                                       $V(I) \intersect V(J)$
+$\sqrt{I(V) + I(W)}$                                             ?
+?                                             ?
+?                                             ?
+?                                             ?
+?                                             ?
+?                                             ?
+?                                             ?
+?                                             ?
+?                                             ?
+?                                             ?
+?                                             ?
 
 ## Summary of Important Concepts
 
