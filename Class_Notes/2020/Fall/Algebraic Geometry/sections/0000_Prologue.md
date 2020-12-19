@@ -6,6 +6,7 @@
 
 ## Notation
 
+- If a property $P$ is said to hold **locally**, this means that for every point $p$ there is a neighborhood $U_p \ni p$ such that $P$ holds on $U_p$.
 \[
 k[\vector x] \da \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
 k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \ts{f(\vector x) = p(\vector x)/q(\vector x), \, p,q, \in \kx{n}} \\ 
