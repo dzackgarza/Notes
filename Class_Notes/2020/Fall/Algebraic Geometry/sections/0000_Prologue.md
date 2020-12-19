@@ -15,6 +15,7 @@ $k(\vector x) = k(x_1, \cdots, x_n)$      Rational function field in $n$ indeter
 $\mathcal{U} \covers X$                   An open cover $\mathcal{U} = \ts{U_j \st j\in J}$
 $\Delta_X$                                The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$
 $\AA^n_{/k}$                              Affine $n\dash$space
+
                                           \[\AA^n_{/k} \da \ts{\tv{k_1, \cdots, k_n} \st k_j \in k}\]
 
 
