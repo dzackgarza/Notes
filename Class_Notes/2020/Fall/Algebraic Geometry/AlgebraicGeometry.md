@@ -106,62 +106,25 @@ k & p\in U \\
 ## The Algebra-Geometry Dictionary
 
 Let $k=\bar k$, we're setting up correspondences
-\[  
-\text{Ring Theory} 
-\quad&\quad 
-\text{Geometry/Topology of Affine Varieties}
-\\
-\text{Polynomial functions} 
-\quad&\quad 
-\text{Affine space} 
-\\
-k[x_1, \cdots, x_n]
-\quad&\quad 
-\AA^n/k \da \ts{\thevector{a_1, \cdots, a_n} \in k^n } 
-\\
-\text{Maximal ideals } \gens{x_1 - a_1, \cdots, x_n - a_n} 
-\quad&\quad 
-\text{Points } \thevector{a_1, \cdots, a_n} \in \AA^n/k
-\\
-\text{Radical ideals } I\normal k[x_1, \cdots, x_n]
-\quad&\quad 
-\text{Affine varieties } X\subset  \AA^n/k, \text{ vanishing locii of polynomials} 
-\\
-I &\mapsto V(I) \da \ts{a\st f(a) = 0 \forall f\in I} \\
-I(X) \da \ts{f \st \restrictionof{f}{X} = 0} &\mapsfrom X 
-\\
-\text{Radical ideals containing $I(X)$, i.e. ideals in $A(X)$} 
-\quad&\quad 
-\text{closed subsets of $X$, i.e. affine subvarieties}
-\\
-A(X) \text{ is a domain}
-\quad&\quad 
-\text{$X$ irreducible}
-\\
-\text{$A(X)$ is not a direct sum}
-\quad&\quad 
-\text{$X$ connected} 
-\\
-\text{Prime ideals in }A(X)
-\quad&\quad 
-\text{Irreducible closed subsets of }X
-\\
-\text{Krull dimension $n$ (longest chain of prime ideals)}
-\quad&\quad 
-\dim X = n,\, \text{(longest chain of irreducible closed subsets)}
-.\]
 
 
 Algebra                                       Geometry
 -------                                       --------
+$\kx{n}$                                      $\AA^n_{/k}$
+Maximal ideals $\mathfrak{m} = \gens{x_1 - p_1, \cdots, x_n - p_n}$     Points $\tv{a_1, \cdots, a_n}$
 Radical ideals $J = \sqrt{J} \normal \kx{n}$  $V(J)$ the zero locus
+Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
 $I(S)$ the ideal of a set                     $S \subseteq \AA^n$ a subset
 $I + J$                                       $V(I) \intersect V(J)$
 $\sqrt{I(V) + I(W)}$                          $V\intersect W$
 $I \intersect J, IJ$                          $V(I) \union V(J)$
 $I(V) \intersect I(W), \sqrt{I(V)I(W)}$       $V \union W$
 $I(V) : I(W)$                                 $\bar{V\sm W}$
-Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
+$\kx{n}/I(X)$                                 $A(X)$ (Functions on $X$)
+$A(X)$ a domain                               $X$ is irreducible
+$A(X)$ indecomposable                         $X$ is connected
+Krull dimension $n$ (chaints of primes)                           Topological dimension $n$ (chains of irreducibles)
+
 
 
 # Friday, August 21: Intro and Motivation
