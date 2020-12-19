@@ -29,7 +29,7 @@ $\sqrt{I(V) + I(W)}$                          $V\intersect W$
 $I \intersect J, IJ$                          $V(I) \union V(J)$
 $I(V) \intersect I(W), \sqrt{I(V)I(W)}$       $V \union W$
 $I(V) : I(W)$                                 $\bar{V\sm W}$
-
+Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
 
 ## Summary of Important Concepts
 
@@ -62,6 +62,13 @@ $I(V) : I(W)$                                 $\bar{V\sm W}$
 
 
 \newpage
+
+## Useful Examples
+
+### Presheaves / Sheaves
+
+- $C^\infty$, a sheaf of smooth functions
+- $C^0$, a sheaf of continuous functions
 
 
 ## Useful Algebra Facts
