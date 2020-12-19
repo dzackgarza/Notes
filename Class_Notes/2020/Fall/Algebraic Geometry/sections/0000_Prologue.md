@@ -70,6 +70,12 @@ Prime ideals $\mathfrak{p}\in \spec(\kx{n})$  Irreducible subsets
 
 ## Useful Examples
 
+### Varieties
+
+- $V(xy-1) \subseteq \AA^2$ a hyperbola
+- $V(x)$ a coordinate axis
+- $V(x-p)$ a point.
+
 ### Presheaves / Sheaves
 
 - $C^\infty(\wait, \RR)$, a sheaf of smooth functions
