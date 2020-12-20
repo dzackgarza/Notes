@@ -24,12 +24,12 @@
 | $\AA^n_{/k}$                            | Affine $n\dash$space                                                  \ |
 |                                         | $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$ \ |
 |                                         | \vspace{1em}                                                            |
-+-----------------------------------------+-----------------------------------------------------------------------+
-| $\PP^n_{/k}$                            | Projective $n\dash$space \                                              |
-|                                         | $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$ \                        |
-|                                         | $\PP^n_{/k} = \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$  |
-|                                         | \vspace{1em}                                                                            |
 +-----------------------------------------+-------------------------------------------------------------------------+
+| $\PP^n_{/k}$                            | Projective $n\dash$space                                                          \ |
+|                                         | $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$                                    \ |
+|                                         | $\PP^n_{/k} = \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$ \ |
+|                                         | \vspace{1em}                                                                        |
++-----------------------------------------+-------------------------------------------------------------------------------------+
 | $V(J), V_a(J)$                          | Variety associated to an ideal $J \normal \kx{n}$                           |
 |                                         | $V_a(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$ |
 |                                         | \vspace{1em}                                                                |
