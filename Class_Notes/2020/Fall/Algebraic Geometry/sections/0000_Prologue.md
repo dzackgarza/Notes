@@ -16,41 +16,35 @@
 | $k(\vector x) = k(x_1, \cdots, x_n)$    | Rational function field in $n$ indeterminates                       |
 +-----------------------------------------+---------------------------------------------------------------------+
 | $\mathcal{U} \covers X$                 | An open cover                                                     \ |
-|                                         | $\mathcal{U} = \ts{U_j \st j\in J}, X = \Union_{j\in J}U_j$         |
+|                                         | $\mathcal{U} = \ts{U_j \st j\in J}, X = \Union_{j\in J}U_j$       \ |
 +-----------------------------------------+---------------------------------------------------------------------+
 | $\Delta_X$                              | The diagonal                                                      \ | 
-|                                         | $\Delta_X \da \ts{(x, x) \st x\in X} \subseteq X\cross X$           |
+|                                         | $\Delta_X \da \ts{(x, x) \st x\in X} \subseteq X\cross X$         \ |
 +-----------------------------------------+---------------------------------------------------------------------+
 | $\AA^n_{/k}$                            | Affine $n\dash$space                                                  \ |
 |                                         | $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$ \ |
-|                                         | \vspace{1em}                                                            |
 +-----------------------------------------+-------------------------------------------------------------------------+
 | $\PP^n_{/k}$                            | Projective $n\dash$space                                                          \ |
 |                                         | $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$                                    \ |
 |                                         | $\PP^n_{/k} = \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$ \ |
-|                                         | \vspace{1em}                                                                        |
 +-----------------------------------------+-------------------------------------------------------------------------------------+
 | $V(J), V_a(J)$                          | Variety associated to an ideal $J \normal \kx{n}$                           \ |
 |                                         | $V_a(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$ \ |
-|                                         | \vspace{1em}                                                                  |
 +-----------------------------------------+-------------------------------------------------------------------------------+
 | $I(S), I_a(S)$                          | Ideal associated to a subset $S \subseteq \AA^n_{k}$                        \ | 
 |                                         | $I_a(S) \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$ \ |
-|                                         | \vspace{1em}                                                                  |
 +-----------------------------------------+-------------------------------------------------------------------------------+
 | $A(X)$                                  | Coordinate ring of a variety  \ | 
-|                                         | $A(X) \da \kx{n}/I(X)$          |
+|                                         | $A(X) \da \kx{n}/I(X)$        \ |
 +-----------------------------------------+---------------------------------+
 | $V_p(J)$                                | Projective variety of an ideal                                                    \ |
-|                                         | $V_p(J) \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}$   |
-|                                         | \vspace{1em}                                                                        |
+|                                         | $V_p(J) \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}$ \ |
 +-----------------------------------------+-------------------------------------------------------------------------------------+
 | $I_p(S)$                                | Projective ideal (?)                                                                      \ |
-|                                         | $I_p(S) \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}$   |
-|                                         | \vspace{1em}                                                                                |
+|                                         | $I_p(S) \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}$ \ |
 +-----------------------------------------+---------------------------------------------------------------------------------------------+
-| $S(X)$                                  | Projective coordinate ring \  |
-|                                         | $S(X) \da \kx{n}/ I_p(X)$     |
+| $S(X)$                                  | Projective coordinate ring  \ |
+|                                         | $S(X) \da \kx{n}/ I_p(X)$   \ |
 +-----------------------------------------+-------------------------------------------------------------------------------------+
 | $f^h$                                   | Homogenization                                                        \ |
 |                                         | $f^h \da x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}$  |
