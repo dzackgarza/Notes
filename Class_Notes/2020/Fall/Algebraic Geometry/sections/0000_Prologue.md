@@ -21,8 +21,9 @@
 +-----------------------------------------+---------------------------------------------------------------------+
 | $\AA^n_{/k}$                            | Affine $n\dash$space \newline $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$ |
 +-----------------------------------------+---------------------------------------------------------------------+
-| $\PP^n_{/k}$                            | Projective $n\dash$$\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$                      |
-$= \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$ |
+| $\PP^n_{/k}$                            | Projective $n\dash$space \ 
+                                          | $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$ \
+                                          | $= \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$ |
 +-----------------------------------------+---------------------------------------|
 | $V(J), V_a(J)$                          | Variety associated to an ideal $J \normal \kx{n}$ |
 +-----------------------------------------+---------------------------------------|
