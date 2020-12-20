@@ -45,6 +45,10 @@
 | $D(f)$                                  | Distinguished open set, $D(f) = V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0}$ |
 
 
+| Notation | Definition |
+|----------|------------|
+
+
 ## Summary of Important Concepts
 
 - What is an affine variety?
