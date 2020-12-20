@@ -15,7 +15,8 @@
 +-----------------------------------------+---------------------------------------------------------------------+
 | $k(\vector x) = k(x_1, \cdots, x_n)$    | Rational function field in $n$ indeterminates                       |
 +-----------------------------------------+---------------------------------------------------------------------+
-| $\mathcal{U} \covers X$                 | An open cover $\mathcal{U} = \ts{U_j \st j\in J}$                   |
+| $\mathcal{U} \covers X$                 | An open cover                                                     \ |
+|                                         | $\mathcal{U} = \ts{U_j \st j\in J}$                   |
 +-----------------------------------------+---------------------------------------------------------------------+
 | $\Delta_X$                              | The diagonal                                                      \ | 
 |                                         | $\Delta_X \da \ts{(x, x) \st x\in X} \subseteq X\cross X$           |
