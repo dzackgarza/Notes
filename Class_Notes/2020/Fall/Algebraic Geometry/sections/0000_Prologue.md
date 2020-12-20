@@ -29,14 +29,14 @@
 |                                         | $\PP^n_{/k} = \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$  |
 |                                         | \vspace{1em}                                                                            |
 +-----------------------------------------+-------------------------------------------------------------------------+
-| $V(J), V_a(J)$                          | Variety associated to an ideal $J \normal \kx{n}$                     |
-|                                         | $V_a(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$  |
-|                                         | \vspace{1em}                                                                            |
-+-----------------------------------------+-----------------------------------------------------------------------+
-| $I(S), I_a(S)$                          | Ideal associated to a subset $S \subseteq \AA^n_{k}$                  | 
-|                                         | $I_a(S) \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$  |
-|                                         | \vspace{1em}                                                                            |
-+-----------------------------------------+-----------------------------------------------------------------------+
+| $V(J), V_a(J)$                          | Variety associated to an ideal $J \normal \kx{n}$                           |
+|                                         | $V_a(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$ |
+|                                         | \vspace{1em}                                                                |
++-----------------------------------------+-----------------------------------------------------------------------------+
+| $I(S), I_a(S)$                          | Ideal associated to a subset $S \subseteq \AA^n_{k}$                        | 
+|                                         | $I_a(S) \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$ |
+|                                         | \vspace{1em}                                                                |
++-----------------------------------------+-----------------------------------------------------------------------------+
 | $A(X)$                                  | Coordinate ring of a variety  | 
 |                                         | $A(X) \da \kx{n}/I(X)$        |
 +-----------------------------------------+-----------------------------------------------------------------------+
