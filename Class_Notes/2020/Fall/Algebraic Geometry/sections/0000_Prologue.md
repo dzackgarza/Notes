@@ -20,8 +20,8 @@
 | $\Delta_X$                              | The diagonal | 
 |                                         | $\Delta_X \da \ts{(x, x) \st x\in X} \subseteq X\cross X$           |
 +-----------------------------------------+---------------------------------------------------------------------+
-| $\AA^n_{/k}$                            | Affine $n\dash$space  \                                              |
-|                                         | $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$ |
+| $\AA^n_{/k}$                            | Affine $n\dash$space                                                   |
+|                                         | $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$ \ |
 |                                         | \vspace{1em}                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------+
 | $\PP^n_{/k}$                            | Projective $n\dash$space \                                              |
