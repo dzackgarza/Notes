@@ -36,7 +36,7 @@
 +-----------------------------------------+-----------------------------------------------------------------------+
 | $V_p(J)$                                | Projective variety of an ideal                                        |
 |                                         | $V_p(J) \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}$ |
-|                                         | \vspace{5em}                                                                            |
+|                                         | \vspace{1em}                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------+
 | $I_p(S)$                                | Projective ideal (?)                                                                |
 |                                         | $I_p(S) \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}$  |
