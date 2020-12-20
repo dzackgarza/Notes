@@ -158,6 +158,7 @@
 \newcommand{\del}[0]{{\partial}}
 \newcommand{\directlim}[0]{\varinjlim}
 \newcommand{\disjoint}[0]{{\coprod}}
+\newcommand{\Disjoint}[0]{\displaystyle\coprod}
 \newcommand{\divides}[0]{{~\Bigm|~}}
 \newcommand{\dual}[0]{^\vee}
 \newcommand{\sm}[0]{\setminus}
@@ -209,6 +210,7 @@
 \newcommand{\mapstovia}[1]{\xmapsto{#1}}
 \newcommand{\from}[0]{\leftarrow}
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
+\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
@@ -386,8 +388,9 @@
 
 \newcommand{\colim}{\operatornamewithlimits{\underset{\longrightarrow}{colim}}}
 
+% {top}{bottom}{symbol}
 \newcommand\stacksymbol[3]{%
-  \mathrel{\stackunder[2pt]{\stackon[4pt]{#3}{$\scriptscriptstyle#1$}}{%
+  \mathrel{\stackunder[2pt]{\stackon[4pt]{$#3$}{$\scriptscriptstyle#1$}}{%
   $\scriptscriptstyle#2$}}}
 
 \newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}

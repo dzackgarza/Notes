@@ -305,11 +305,11 @@
   {\normalfont}% Body font
   {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
   {\bfseries}% Thm head font
-  {:}%        Punctuation after thm head
-  {0.35em}% Space after thm head: \newline = linebreak
+  {}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
   {
     \danger 
-    \thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}
+    \thmname{#1}\thmnumber{ #2} \thmnote{\itshape{(#3)}:}
   }%
 \theoremstyle{warnenv}
 \newtheorem{warnings}[theorem]{Warning}

@@ -66,7 +66,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-12-19 }
+{\tiny \textit{Last updated:} 2020-12-20 }
 \end{flushleft}
 
 
@@ -99,40 +99,216 @@ inaccuracies are almost certainly my own. } } \\
   If a property \(P\) is said to hold \textbf{locally}, this means that
   for every point \(p\) there is a neighborhood \(U_p \ni p\) such that
   \(P\) holds on \(U_p\).
-  \begin{align*}
-  k[\vector x] \da \kx{n} && \text{The polynomial ring in $n$ indeterminates } \\
-  k(\vector x) \da k(x_1, \cdots, x_n) && \text{The rational function field } \\
-  \mathcal{U} \covers X && \text{An open cover} \\
-  \Delta_X && \text{The diagonal } \ts{(x, x) \st x\in X} \subseteq X\cross X \\
-  \AA^n_{/k} && \text{Affine $n\dash$space} \\
-  && \AA^n_{/k} \da \ts{\tv{k_1, \cdots, k_n} \st k_j \in k} \\
-  \PP^n_{/k} && \text{Projective $n\dash$space} \\ 
-  && \PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x \\
-  && \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}} \\ 
-  V(J), V_a(J)                   && \text{Variety associated to an ideal } J \normal \kx{n} \\
-  && \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\\
-  I(S), I_a(S)                   && \text{Ideal associated to a subset } S \subseteq \AA^n_{k} \\
-  && \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X} \\
-  A(X) && \text{Coordinate ring of a variety} \\
-  V_p(J) && \text{Projective variety of an ideal} \\
-  && \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J} \\
-  I_p(S) && \text{Projective ideal?} \\ 
-  && \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S} \\
-  S(X) && \text{Projective coordinate ring} \\
-  && \da \kx{n}/I_p(X) \\
-  f^h && \text{Homogenization} \\
-   && \da x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}\\
-  f^i && \text{Dehomogenization} \\
-  J^h \text{ for } J \normal \kx{n} && \text{Homogenization of an ideal} \\
-  && \da f(1, x_1, \cdots, x_n) \\
-  \bar X && \text{Projective closure of a subset} \\
-  && \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X} \\
-  && \da \kx{n} / I(X)  \\
-  \OO_X && \text{Structure sheaf } \ts{f:U\to k \st f \in k(\vector x) \text{ locally}} \\
-  D(f) && \text{Distinguished open set } \\
-  && \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0} \\
-  .\end{align*}
 \end{itemize}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+Notation\strut
+\end{minipage} &
+\begin{minipage}[b]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Definition\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(k[\vector x] = k[x_1, \cdots, x_n]\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Polynomial ring in \(n\) indeterminates\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(k(\vector x) = k(x_1, \cdots, x_n)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Rational function field in \(n\) indeterminates\\
+\(k(\vector x) = \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\mathcal{U} \covers X\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+An open cover\\
+\(\mathcal{U} = \ts{U_j \st j\in J}, X = \Union_{j\in J}U_j\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\Delta_X\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+The diagonal\\
+\(\Delta_X \da \ts{(x, x) \st x\in X} \subseteq X\cross X\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\AA^n_{/k}\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Affine \(n\dash\)space\\
+\(\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\PP^n_{/k}\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Projective \(n\dash\)space\\
+\(\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(V(J), V_a(J)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Variety associated to an ideal \(J \normal \kx{n}\)\\
+\(V_a(J) \da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(I(S), I_a(S)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Ideal associated to a subset \(S \subseteq \AA^n_{k}\)\\
+\(I_a(S) \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(A(X)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Coordinate ring of a variety\\
+\(A(X) \da \kx{n}/I(X)\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(V_p(J)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Projective variety of an ideal\\
+\(V_p(J) \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(I_p(S)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Projective ideal (?)\\
+\(I_p(S) \da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(S(X)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Projective coordinate ring\\
+\(S(X) \da \kx{n}/ I_p(X)\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(f^h\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Homogenization\\
+\(f^h \da x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(f^i\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Dehomogenization\\
+\(f^i \da f(1, x_1, \cdots, x_n)\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(J^h\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Homogenization of an ideal\\
+\(J^h \da \ts{f^j \st f\in J}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\bar X\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Projective closure of a subset\\
+\(\bar X \da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(D(f)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Distinguished open set\\
+\(D(f) \da V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\mathcal{F}\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Presheaf or a sheaf\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(f\in \mathcal{F}(U)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Section of a presheaf or sheaf\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\underline{\mathbf{S}}\) where \(S\) is a set\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Locally constant functions valued in \(S\)\\
+~\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\mathcal{F}_p\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Stalk of a sheaf\\
+\(\mathcal{F}_p \da \ts{(U, \phi) \st p\in U \text{ open },\, \phi \in \mathcal{F}(U)}/\sim\)\\
+where
+\((U, \phi) \sim (U', \phi') \iff \exists p\in W \subset U\intersect U' \text{ s.t. } \ro{\phi}{W} = \ro{\phi'}{W}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(f\in \mathcal{F}_p\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Germs at \(p\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\OO_X\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Structure sheaf\\
+\(\OO_X \da \ts{f:U\to k \st U \subseteq X \text{ is open}, f \in k(\vector x) \text{ locally}}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\OO_X(U)\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Regular functions on \(U\)\\
+\(\OO_X(U) \da \ts{f:U\to k \st f \in k(\vector x) \text{ locally}}\)\\
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.25}}\raggedright
+\(\OO_{X, p}\)\strut
+\end{minipage} &
+\begin{minipage}[t]{(\columnwidth - 1\tabcolsep) * \real{0.75}}\raggedright
+Germs of Regular functions?\\
+\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
 \hypertarget{summary-of-important-concepts}{%
 \subsection{Summary of Important
@@ -229,11 +405,18 @@ Concepts}\label{summary-of-important-concepts}}
 \begin{itemize}
 \tightlist
 \item
-  \(V(xy-1) \subseteq \AA^2\) a hyperbola
+  \(V(x-p)\) a point.
 \item
   \(V(x)\) a coordinate axis
 \item
-  \(V(x-p)\) a point.
+  \(V(xy) \subseteq \AA^2\) the coordinate axes
+\item
+  \(V(xy-1) \subseteq \AA^2\) a hyperbola
+\item
+  \(V(x_1^2 - x_2^2 - 1) \subseteq \AA^2_{/\CC}\)
+\item
+  \(\AA^2\smz\) is \textbf{not} an affine variety or a distinguished
+  open
 \end{itemize}
 
 \hypertarget{presheaves-sheaves}{%
@@ -245,8 +428,6 @@ Concepts}\label{summary-of-important-concepts}}
   \(C^\infty(\wait, \RR)\), a sheaf of smooth functions
 \item
   \(C^0(\wait, \RR)\), a sheaf of continuous functions
-\item
-  \(\OO_X(\wait)\), the sheaf of regular functions on \(X\)
 \item
   \(\underline{\RR}(\wait)\), the constant sheaf associated to \(\RR\)
   (locally constant real-valued functions)
@@ -261,13 +442,15 @@ Concepts}\label{summary-of-important-concepts}}
   0 & \text{else}.
   \end{cases}
   \end{align*}
+\item
+  \(\OO_X(\wait)\), the sheaf of regular functions on \(X\)
 \end{itemize}
 
 \hypertarget{the-algebra-geometry-dictionary}{%
 \subsection{The Algebra-Geometry
 Dictionary}\label{the-algebra-geometry-dictionary}}
 
-Let \(k=\bar k\), we're setting up correspondences
+Let \(k=\bar k\), we're setting up correspondences:
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule
@@ -275,12 +458,14 @@ Algebra & Geometry\tabularnewline
 \midrule
 \endhead
 \(\kx{n}\) & \(\AA^n_{/k}\)\tabularnewline
-Maximal ideals \$\mathfrak{m}=\{x\_1 - p\_1, \cdot & s, x\_n - p\_n\}\$
-Points \(\tv{a_1, \cdots, a_n}\)\tabularnewline
+Maximal ideals \(\mathfrak{m}={x_1 - a_1, \cdots, x_n - a_n}\) & Points
+\(\vector a \da \tv{a_1, \cdots, a_n} \in \AA^n\)\tabularnewline
 Radical ideals \(J = \sqrt{J} \normal \kx{n}\) & \(V(J)\) the zero
 locus\tabularnewline
-Prime ideals \(\mathfrak{p}\in \spec(\kx{n})\) & Irreducible
+Prime ideals \(\mathfrak{p}\in \spec(\kx{n})\) & Irreducible closed
 subsets\tabularnewline
+Minimal prime ideals of \(A(X)\) & Irreducible components of
+\(X\)\tabularnewline
 \(I(S)\) the ideal of a set & \(S \subseteq \AA^n\) a
 subset\tabularnewline
 \(I + J\) & \(V(I) \intersect V(J)\)\tabularnewline
@@ -292,14 +477,18 @@ subset\tabularnewline
 \(\kx{n}/I(X)\) & \(A(X)\) (Functions on \(X\))\tabularnewline
 \(A(X)\) a domain & \(X\) is irreducible\tabularnewline
 \(A(X)\) indecomposable & \(X\) is connected\tabularnewline
+\(k\dash\)algebra morphism \(A(X)\to A(Y)\) & Morphisms of varieties
+\(X\to Y\)\tabularnewline
 Krull dimension \(n\) (chaints of primes) & Topological dimension \(n\)
 (chains of irreducibles)\tabularnewline
+Integral domains \(S(X)\) & Irreducible projective varieties
+\(X\)\tabularnewline
 \bottomrule
 \end{longtable}
 
-\hypertarget{friday-august-21-intro-and-motivation}{%
-\section{Friday, August 21: Intro and
-Motivation}\label{friday-august-21-intro-and-motivation}}
+\hypertarget{intro-and-motivation-friday-august-21}{%
+\section{Intro and Motivation (Friday, August
+21)}\label{intro-and-motivation-friday-august-21}}
 
 \hypertarget{coordinate-rings}{%
 \subsection{Coordinate Rings}\label{coordinate-rings}}
@@ -319,7 +508,11 @@ General idea: functions in a \emph{coordinate ring}
   \(y^2 = x^3-x\) gives an elliptic curve:
 \end{itemize}
 
+\begin{figure}
+\centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-08-21-01-04-22.png}
+\caption{An elliptic curve.}
+\end{figure}
 
 \begin{itemize}
 \item
@@ -336,7 +529,11 @@ General idea: functions in a \emph{coordinate ring}
   origin):
 \end{itemize}
 
+\begin{figure}
+\centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-08-21-01-23-32.png}
+\caption{A non-manifold curve.}
+\end{figure}
 
 \begin{itemize}
 \item
@@ -345,11 +542,11 @@ General idea: functions in a \emph{coordinate ring}
 
   \begin{itemize}
   \item
-    Not possible when algebraically closed (is there nonzero polynomial
-    that vanishes on every point in \(\CC\)?)
+    Not possible when algebraically closed. For example, is there a
+    nonzero polynomial that vanishes on every point in \(\CC\)?
   \item
     \(V(f) = \FF_3^2\), so the coordinate ring is zero instead of
-    \(\FF_3[x, y]/\gens{f}\) (addressed by scheme theory)
+    \(\FF_3[x, y]/\gens{f}\) This is addressed by scheme theory.
   \end{itemize}
 \end{itemize}
 
@@ -360,12 +557,12 @@ General idea: functions in a \emph{coordinate ring}
 
 \begin{theorem}[Harnack Curve Theorem]
 
-If \(f \in \RR[x, y]\) is of degree \(d\),
-then{[}\^{}actual\_statement{]}
+If \(f \in \RR[x, y]\) is of degree \(d\), then\footnote{Actual
+  statement: the number of connected components is bounded above by this
+  quantity.}
 \begin{align*}  
 \pi_1 V(f) \subseteq \RR^2 \leq 1 + {(d-1)(d-2) \over 2}
-\end{align*} {[}\^{}actual\_statement{]}: Actual statement: the number
-of connected components is bounded above by this quantity.
+\end{align*}
 
 \end{theorem}
 
@@ -393,7 +590,7 @@ Then \(X\) is cut out by three equations:
 \begin{exercise}
 
 Show that the vanishing locus of the first two equations above is
-\(X\union L\) for \(L\) a line.
+\(X\union L\) where \(L\) is a line.
 
 \end{exercise}
 
@@ -418,26 +615,37 @@ y^2 = (x-1)(x-2)\cdots(x-2n)
 On \(\CC\) with some slits, you can consistently choose a square root of
 the RHS.
 
+\begin{figure}
+\centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-08-21-01-31-47.png}
+\caption{Choosing a square root of a polynomial.}
+\end{figure}
 
 Away from \(x=1, \cdots, 2n\), there are two solutions for \(y\) given
 \(x\).
 
 After gluing along strips, obtain:
 
+\begin{figure}
+\centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-08-21-01-32-48.png}
+\caption{Glusing along strips to obtain a Riemann surface.}
+\end{figure}
 
 \end{fact}
 
-\hypertarget{tuesday-august-25}{%
-\section{Tuesday, August 25}\label{tuesday-august-25}}
+\hypertarget{the-nullstellensatz-tuesday-august-25}{%
+\section{The Nullstellensatz (Tuesday, August
+25)}\label{the-nullstellensatz-tuesday-august-25}}
 
 \hypertarget{radicals-degrees-and-affine-varieties}{%
 \subsection{Radicals, Degrees, and Affine
 Varieties}\label{radicals-degrees-and-affine-varieties}}
 
-Let \(k = \bar k\) and \(R\) a ring containing ideals \(I, J\). Recall
-the definition of the \emph{radical}:
+Given \(f\in k[x_1, \cdots, x_n]\), we'll denote by \(f(a)\) the value
+of \(f\) at the point \((a_1, \cdots, a_n)\). Let \(k = \bar k\) and
+\(R\) a ring containing ideals \(I, J\). Recall the definition of the
+\emph{radical} of an ideal:
 
 \begin{definition}[Radical]
 
@@ -461,9 +669,6 @@ Then \(\sqrt{I} = (x_1, x_2)\), since
 
 \end{example}
 
-Given \(f\in k[x_1, \cdots, x_n]\), take its value at
-\(a = (a_1, \cdots, a_n)\) and denote it \(f(a)\).
-
 \begin{definition}[Degree of an element of $\kxn$]
 
 Define \(\deg(f)\) as the largest value of \(i_1 + \cdots + i_n\) such
@@ -484,21 +689,22 @@ that the coefficient of \(\prod x_j ^{i_j}\) is nonzero.
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Affine \(n\dash\)space \(\AA^n = \AA_k^n\) is defined as
-  \(\theset{(a_1, \cdots, a_n) \suchthat a_i \in k}\).\footnote{Not
-    \(k^n\), since we won't necessarily use the vector space structure
-    (e.g.~adding points).}
+  Affine \(n\dash\)space\footnote{Not \(k^n\), since we won't
+    necessarily use the vector space structure (e.g.~adding points).}
+  \(\AA^n = \AA_k^n\) is defined as
+  \begin{align*}
+  \AA^n \da \theset{(a_1, \cdots, a_n) \suchthat a_i \in k}
+  \end{align*}
 \item
   Let \(S\subset k[x_1, \cdots, x_n]\) be a \textbf{set} of
   polynomials.\footnote{We don't necessarily require \(S\) to be an
     ideal in this definition. We will shortly show that taking the ideal
-    it generates yields the same variety.}
+    it generates yields the same variety.} Then define the
+  \textbf{affine variety} of \(S\) as
+  \begin{align*}
+    V(S) \da \ts{x\in \AA^n \st f(x) = 0} \subset \AA^n
+    \end{align*}
 \end{enumerate}
-
-Then define the \textbf{affine variety} of \(S\) as
-\begin{align*}
-  V(S) \da \ts{x\in \AA^n \st f(x) = 0} \subset \AA^n
-  \end{align*}
 
 \end{definition}
 
@@ -513,7 +719,9 @@ Then define the \textbf{affine variety} of \(S\) as
 \item
   Any point \((a_1, \cdots, a_n)\in \AA^n\) is an affine variety,
   uniquely determined by
-  \(V(x_1 - a_1, \cdots, x_n - a_n) = \theset{a_1, \cdots, a_n}\).
+  \begin{align*}
+  V(x_1 - a_1, \cdots, x_n - a_n) = \theset{a_1, \cdots, a_n}
+  \end{align*}
 \item
   For any finite set \(r_1, \cdots, r_k \in \AA^1\), there exists a
   polynomial \(f\in k[x_1]\) whose roots are \(r_i\).
@@ -537,40 +745,32 @@ V(S) = V\qty{\gens{S}}
 
 \end{claim}
 
-It's clear that \(V(\gens{S}) \subset V(S)\).
-
-Conversely, if \(f_1, f_2\) vanish at \(x\in \AA^n\), then \(f_1 + f_2\)
-and \(gf_1\) also vanish at \(x\) for all \(g\in k[x_1, \cdots, x_n]\).
-Thus \(V(S) \subset V(\gens{S})\).
+It's clear that \(V(\gens{S}) \subset V(S)\). Conversely, if
+\(f_1, f_2\) vanish at \(x\in \AA^n\), then \(f_1 + f_2\) and \(gf_1\)
+also vanish at \(x\) for all \(g\in k[x_1, \cdots, x_n]\). Thus
+\(V(S) \subset V(\gens{S})\).
 
 \end{remark}
 
 \hypertarget{ideals-and-properties-of-vwait}{%
-\subsection{\texorpdfstring{Ideals, and Properties of
-\(V(\wait)\)}{Ideals, and Properties of V(\textbackslash wait)}}\label{ideals-and-properties-of-vwait}}
+\subsection{\texorpdfstring{Ideals and Properties of
+\(V(\wait)\)}{Ideals and Properties of V(\textbackslash wait)}}\label{ideals-and-properties-of-vwait}}
 
 See \cref{useful-algebra-facts} for a review of properties of ideals.
 
 \begin{proposition}[Properties of $V$]
 
-\envlist
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  If \(S_1 \subseteq S_2\) then \(V(S_1) \supseteq V(S_2)\).
-\item
-  \(V(S_1) \union V(S_2) = V(S_1 S_2) = V(S_1 \intersect S_2)\).
-\item
-  \(\bigcap V(S_i) = V\qty{\bigcup S_i}\).
-\end{enumerate}
+\begin{align*}  
+S_1 \subseteq S_2 &\implies V(S_1) \supseteq V(S_2) \tag{1}\\
+V(S_1) \union V(S_2) &= V(S_1 S_2) = V(S_1 \intersect S_2) \tag{2} \\
+\Intersect V(S_i) &= V\qty{\Union  S_i} \tag{3}
+.\end{align*}
 
 \end{proposition}
 
 We thus have a map
 \begin{align*}  
-V: \ts{\text{Ideals in } k[x_1, \cdots, x_n]} \to \ts{\text{Affine varieties in } \AA^n}
+V: \ts{\text{Ideals in } k[x_1, \cdots, x_n]} \to \ts{\text{Affine varieties in } \AA^n_{/k}}
 .\end{align*}
 
 \begin{definition}[The Ideal of a Set]
@@ -595,7 +795,9 @@ I(X) = \gens{x_1 x_2} = \ts {g x_1 x_2 \st g\in k[x_1, x_2]}
 
 \begin{proposition}[$I$ is inclusion-reversing]
 
-If \(X_1 \subset X_2\) then \(I(X_1) \supset I(X_2)\).
+\begin{align*}  
+X_1 \subset X_2 \implies I(X_1) \supset I(X_2)
+.\end{align*}
 
 \end{proposition}
 
@@ -607,16 +809,46 @@ If \(f\in I(X_2)\), then \(f(x) = 0\) for all \(x\in X_2\). Since
 
 \end{proof}
 
-\begin{proposition}[The Image of $V$ is Radical]
+\begin{proposition}[The Image of $I$ is Radical]
 
-\(I(X)\) is a radical ideal, i.e.~\(I(X) = \sqrt{I(X)}\).
+\begin{align*}  
+I(X) = \sqrt{I(X)}
+,\end{align*} i.e.~\(I(X)\) is a radical ideal.
 
 \end{proposition}
 
 \begin{proof}[?]
 
-If \(f(x)^k = 0\) for all \(x\in X\), then \(f(x) = 0\) for all
-\(x\in X\). Then \(f^k \in I(X)\) and thus \(f\in I(X)\).
+It's clear that
+\begin{align*}
+I(X) \subset \sqrt{I(X)} \da \ts{f\in \kx{n} \st f^k \in I(X)}
+\end{align*} since we can simply take \(k=1\) in this definition.
+
+\begin{claim}
+
+For a fixed \(f\in \kx{n}\) and any \(k\in \NN\),
+\begin{align*}  
+f(x)^k = 0\,\, \forall x\in X \implies f(x) = 0\,\, \forall x\in X
+.\end{align*}
+
+\end{claim}
+
+Granting this claim, if \(f\in \sqrt{I(X)}\) then \(f^k \in I(X)\) and
+thus \(f\in I(X)\), completing the proof.
+
+\begin{proof}[?]
+
+Without loss of generality, we can take \(n = 1\) and consider
+\(\kx{n}\) Toward a contradiction, fix a \(k\) suppose \(f(x) \neq 0\)
+but \(f(x)^k = 0\). Then writing \(f(x) = \sum_{j=1}^d \alpha_j x^j\)
+where \(d \da \deg(f)\), we have \(\alpha_d \neq 0\) and
+\begin{align*}  
+f(x)^k = \alpha_d^k x^{dk} + \cdots
+.\end{align*} Equating coefficients, we have \(\alpha_d^k = 0\) in the
+base field. But fields have no nonzero nilpotents, so we arrive at a
+contradiction.
+
+\end{proof}
 
 \end{proof}
 
@@ -629,9 +861,9 @@ These maps thus yield correspondences
 We'll find that if we restrict to radical ideals, this will yield a
 bijective correspondence.
 
-\hypertarget{statement-and-proof-of-nullstellensatz}{%
-\subsection{Statement and Proof of
-Nullstellensatz}\label{statement-and-proof-of-nullstellensatz}}
+\hypertarget{the-nullstellensatz-statement-and-proof}{%
+\subsection{The Nullstellensatz: Statement and
+Proof}\label{the-nullstellensatz-statement-and-proof}}
 
 \begin{theorem}[Hilbert Nullstellensatz (Zero Locus Theorem)]
 
@@ -655,81 +887,33 @@ Thus there is a bijection between radical ideals and affine varieties.
 
 \end{theorem}
 
-\begin{fact}
+Recall the Hilbert Basis Theorem (\cref{thm:hilbert_basis}): any ideal
+in a finitely generated polynomial ring over a field is again finitely
+generated. We need to show 4 inclusions, 3 of which are easy.
 
-Recall the Hilbert Basis Theorem: any ideal in a finitely generated
-polynomial ring over a field is again finitely generated.
+\begin{proof}[$X \subset V(I(X))$ (a)]
 
-\end{fact}
+If \(x\in X\) then \(f(x) = 0\) for all \(f\in I(X)\). So
+\(x\in V(I(X))\), since every \(f\in I(X)\) vanishes at \(x\).
 
-We need to show 4 inclusions, 3 of which are easy.
+\end{proof}
 
-\begin{proof}[of the easy inclusions]
+\begin{proof}[$\sqrt{J} \subset I(V(J))$ (b)]
 
-\envlist
+If \(f\in \sqrt{J}\) then \(f^k \in J\) for some \(k\). Then
+\(f^k(x) = 0\) for all \(x\in V(J)\). So \(f(x) = 0\) for all
+\(x\in V(J)\). Thus \(f\in I(V(J))\).
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\tightlist
-\item
-  \(X \subset V(I(X))\):
-\end{enumerate}
+\end{proof}
 
-\begin{itemize}
-\tightlist
-\item
-  If \(x\in X\) then \(f(x) = 0\) for all \(f\in I(X)\).
-\item
-  So \(x\in V(I(X))\), since every \(f\in I(X)\) vanishes at \(x\).
-\end{itemize}
+\begin{proof}[$V(I(X)) \subset X$ (c)]
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  \(\sqrt{J} \subset I(V(J))\):
-\end{enumerate}
-
-\begin{itemize}
-\tightlist
-\item
-  If \(f\in \sqrt{J}\) then \(f^k \in J\) for some \(k\).
-\item
-  Then \(f^k(x) = 0\) for all \(x\in V(J)\).
-\item
-  So \(f(x) = 0\) for all \(x\in V(J)\).
-\item
-  Thus \(f\in I(V(J))\).
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  \(V(I(X)) \subset X\):
-\end{enumerate}
-
-\begin{itemize}
-\tightlist
-\item
-  Need to now use that \(X\) is an affine variety.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Counterexample: \(X = \ZZ^2 \subset \CC^2\), then \(I(X) = 0\). But
-    \(V(I(X)) = \CC^2 \not\subset \ZZ^2\).
-  \end{itemize}
-\item
-  By (b), \(I(V(J)) \supset \sqrt{J} \supset J\).
-\item
-  Since \(V(\wait)\) is order-reversing, taking \(V\) of both sides
-  reverses the containment.
-\item
-  So \(V(I(V(J))) \subset V(J)\), i.e.~\(V(I(X)) \subset X\).
-\end{itemize}
+Need to now use that \(X\) is an affine variety. Counterexample:
+\(X = \ZZ^2 \subset \CC^2\), then \(I(X) = 0\). But
+\(V(I(X)) = \CC^2 \not\subset \ZZ^2\). By (b),
+\(I(V(J)) \supset \sqrt{J} \supset J\). Since \(V(\wait)\) is
+order-reversing, taking \(V\) of both sides reverses the containment. So
+\(V(I(V(J))) \subset V(J)\), i.e.~\(V(I(X)) \subset X\).
 
 \end{proof}
 
@@ -739,35 +923,35 @@ Thus the hard direction that remains is (d),
 I(V(J)) \subset \sqrt{J}
 \end{align*}
 
-We'll need Noether Normalization, which is stated in
-\cref{thm:noether_normalization}.
+\begin{warnings}[Hard theorem from commutative algebra.]
 
-\begin{warnings}
-
-Noether normalization is perhaps more important than the
-Nullstellensatz!
+We'll need Noether Normalization (\cref{thm:noether_normalization}),
+which is perhaps more important than the Nullstellensatz!
 
 \end{warnings}
 
-\begin{theorem}[1st Version of Nullstellensatz]
+\begin{theorem}[1st Version of Nullstellensatz]\label{thm:nullstellensatz_one}
 
-Suppose \(k\) is algebraically closed and uncountable \footnote{Still
-  true in countable case by a different proof.} Then the maximal ideals
-in \(k[x_1, \cdots, x_n]\) are of the form
-\((x_1 - a_1, \cdots, x_n - a_n)\).
+Suppose \(k\) is algebraically closed and uncountable\footnote{Still
+  true in countable case by a different proof.}. Then the maximal ideals
+in \(k[x_1, \cdots, x_n]\) are given by
+\begin{align*}  
+\mspec\qty{\kx{n}} = \ts{ \gens{x_1 - a_1, \cdots, x_n - a_n} \st a_j\in k}
+.\end{align*}
 
 \end{theorem}
 
 \begin{proof}
 
-Let \(\mfm\) be a maximal ideal, then by the Hilbert Basis Theorem,
-\(\mfm = \gens{f_1, \cdots, f_r}\) is finitely generated. Let
-\(L = \QQ[\ts {c_i}]\) where the \(c_i\) are all of the coefficients of
-the \(f_i\) if \(\ch(K) = 0\), \textbf{or} \(\FF_p[\ts {c_i}]\) if
-\(\ch(k) = p\). Then \(L\subset k\). Define
-\(\mfm_0 = \mfm\intersect L[x_1, \cdots, x_n]\). Note that by
-construction, \(f_i \in \mfm_0\) for all \(i\), and we can write
-\(\mfm = \mfm_0 \cdot k[x_1, \cdots, x_n]\).
+Let \(\mfm\) be a maximal ideal, then by the Hilbert Basis Theorem
+(\cref{thm:hilbert_basis}), \(\mfm = \gens{f_1, \cdots, f_r}\) is
+finitely generated. Let \(L = \QQ[\ts {c_i}]\) where the \(c_i\) are all
+of the coefficients of the \(f_i\) if \(\ch(K) = 0\), \textbf{or}
+\(\FF_p[\ts {c_i}]\) if \(\ch(k) = p\). Then \(L\subset k\). Define
+\begin{align*}
+\mfm_0 = \mfm\intersect L[x_1, \cdots, x_n]
+\end{align*} Note that by construction, \(f_i \in \mfm_0\) for all
+\(i\), and we can write \(\mfm = \mfm_0 \cdot k[x_1, \cdots, x_n]\).
 
 \begin{claim}
 
@@ -801,8 +985,9 @@ maximality.
 
 \end{proof}
 
-\hypertarget{thursday-august-27}{%
-\section{Thursday, August 27}\label{thursday-august-27}}
+\hypertarget{more-nullstellensatz-thursday-august-27}{%
+\section{More Nullstellensatz (Thursday, August
+27)}\label{more-nullstellensatz-thursday-august-27}}
 
 \hypertarget{consequence-of-the-nullstellensatz}{%
 \subsection{Consequence of the
@@ -821,26 +1006,21 @@ Recall Hilbert's Nullstellensatz:
 
 So there's an order-reversing bijection
 \begin{align*}  
-\correspond{\text{Radical ideals } k[x_1, \cdots, x_n]} \to{V(\wait)}{I(\wait)}
+\correspond{\text{Radical ideals } k[x_1, \cdots, x_n]} 
+\mapscorrespond{V(\wait)}{I(\wait)}
 \correspond{\text{Affine varieties in } \AA^n}
 .\end{align*}
 
-In proving \(I(V(J)) \subseteq \sqrt{J}\), we had an important lemma
-(Noether Normalization): the maximal ideals of \(k[x_1, \cdots, x_n]\)
-are of the form \(\gens{x-a_1, \cdots, x-a_n}\).
+In proving \(I(V(J)) \subseteq \sqrt{J}\), we needed Noether
+Normalization and an important theorem (\cref{thm:nullstellensatz_one}):
+the maximal ideals of \(k[x_1, \cdots, x_n]\) are of the form
+\(\gens{x-a_1, \cdots, x-a_n}\).
 
 \begin{corollary}[?]
 
 If \(V(I)\) is empty, then \(I = \gens{1}\).
 
 \end{corollary}
-
-\begin{remark}
-
-This is because no common vanishing locus \(\implies\) trivial ideal, so
-there's a linear combination that equals 1.
-
-\end{remark}
 
 \begin{slogan}
 
@@ -850,11 +1030,12 @@ The only ideals that vanish nowhere are trivial.
 
 \begin{proof}
 
-By contrapositive, suppose \(I\neq \gens{1}\). By Zorn's Lemma, these
-exists a maximal ideals \(\mfm\) such that \(I \subset \mfm\). By the
-order-reversing property of \(V(\wait)\), \(V(\mfm) \subseteq V(I)\). By
-the classification of maximal ideals,
-\(\mfm = \gens{x-a_1, \cdots, x-a_n}\), so
+This is because no common vanishing locus \(\implies\) trivial ideal, so
+there's a linear combination that equals 1. By contrapositive, suppose
+\(I\neq \gens{1}\). By Zorn's Lemma, these exists a maximal ideals
+\(\mfm\) such that \(I \subset \mfm\). By the order-reversing property
+of \(V(\wait)\), \(V(\mfm) \subseteq V(I)\). By the classification of
+maximal ideals, \(\mfm = \gens{x-a_1, \cdots, x-a_n}\), so
 \(V(\mfm) = \theset{a_1, \cdots, a_n}\) is nonempty.
 
 \end{proof}
@@ -869,6 +1050,8 @@ Nullstellensatz:
 \begin{align*}
 I(V(J)) \subseteq \sqrt{J}
 \end{align*}
+
+\begin{proof}[?]
 
 Let \(f\in V(I(J))\), we want to show \(f\in \sqrt{J}\). Consider the
 ideal
@@ -908,7 +1091,7 @@ kills the first term above, yielding
 f^N = \sum f_i G_i(x_1, \cdots, x_n, 1) \in k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\end{align*}
 
-\begin{proposition}[Hyperbolic inclusion of polynomial rings]\label{prop:inclusion_of_stuff}
+\begin{claim}
 
 There is an inclusion
 \begin{align*}  
@@ -916,16 +1099,16 @@ k[x_1, \cdots, x_n] \injects
 k[x_1, \cdots, x_n, t]/\gens{ft-1}
 .\end{align*}
 
-\end{proposition}
+\end{claim}
 
 Since this is injective, this identity also holds in
-\(k[x_1, \cdots, x_n]\). But \(f_i\in J\), so \(f\in \sqrt{I}\).
+\(k[x_1, \cdots, x_n]\). But \(f_i\in J\), so \(f\in \sqrt{J}\).
 
-\(\qed\)
+\end{proof}
 
 \begin{exercise}[?]
 
-Why is this true? See \cref{prop:inclusion_of_stuff}.
+Why is the claim above true?
 
 \end{exercise}
 
@@ -955,21 +1138,17 @@ with \(J\) maximal. Thus there is a correspondence
 
 \envlist
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi}.}
-\item
-  \(I(X_1 \union X_2) = I(X_1) \intersect I(X_2)\).
-\item
-  \(I(X_1) \intersect I(X_2) = \sqrt{I(X_1) + I(X_2)}\).
-\end{enumerate}
+\begin{align*}  
+I(X_1 \union X_2)       &= I(X_1) \intersect I(X_2) \tag{a} \\
+I(X_1) \intersect I(X_2) &= \sqrt{I(X_1) + I(X_2)} \tag{b}
+.\end{align*}
 
 \end{theorem}
 
 \begin{proof}
 
-We proved (a) on the variety side.
-
-For (b), by the Nullstellensatz, \(X_i = V(I(X_i))\), so
+We proved (a) on the variety side. For (b), by the Nullstellensatz we
+have \(X_i = V(I(X_i))\), so
 \begin{align*}  
 I(X_1\intersect X_2) 
 &=
@@ -1012,7 +1191,9 @@ If \(f, g\in k[x_1, \cdots, x_n]\), and suppose \(f(x) = g(x)\) for all
 \begin{proof}
 
 Since \(f-g\) vanishes everywhere,
-\(f-g \in I(\AA^n) = I(V(0)) = \sqrt{0} = 0\).
+\begin{align*}
+f-g \in I(\AA^n) = I(V(0)) = \sqrt{0} = 0
+\end{align*}
 
 \end{proof}
 
@@ -1022,22 +1203,20 @@ is some affine variety. Then by definition, \(f-g \in I(X)\), so a
 
 \begin{definition}[Coordinate Ring]
 
-For an affine variety \(X\), the \emph{coordinate ring of \(X\)} is
+For an affine variety \(X\), the \textbf{coordinate ring of \(X\)} is
 \begin{align*}  
 A(X) \da k[x_1, \cdots, x_n]/ I(X)
 .\end{align*}
 
-Elements \(f\in A(X)\) are called \emph{polynomial} or \emph{regular}
+Elements \(f\in A(X)\) are called \emph{polynomial} or \textbf{regular}
 functions on \(X\).
 
 \end{definition}
 
 \begin{observation}
 
-The constructions \(V(\wait), I(\wait)\) work just as well for \(A(X)\)
-and \(X\).
-
-\end{observation}
+The constructions \(V(\wait), I(\wait)\) work just as well with \(A(X)\)
+instead of \(\kx{n}\) and \(X\) instead of \(\AA^n\).
 
 Given any \(S\subset A(Y)\) for \(Y\) an affine variety,
 \begin{align*}  
@@ -1049,6 +1228,8 @@ Given \(X\subset Y\) a subset,
 I(X) = I_Y(X) \da\ts{f\in A(Y) \st f(x) = 0\,\,\forall x\in X} \subseteq A(Y)
 .\end{align*}
 
+\end{observation}
+
 \begin{example}
 
 For \(X\subset Y \subset \AA^n\), we have
@@ -1056,13 +1237,15 @@ For \(X\subset Y \subset \AA^n\), we have
 
 \begin{center}
 \begin{tikzcd}
-A(\AA^n) \ar[rr, twoheadrightarrow, "\wait/I(X)", bend left] \ar[r, "\wait/I(Y)", twoheadrightarrow] &A(Y)\ar[r, twoheadrightarrow, "\wait/I(X)"] &A(X) \\
+A(\AA^n) \ar[rrrr, twoheadrightarrow, "\wait/I(X)", bend left] \ar[rr, "\wait/I(Y)"', twoheadrightarrow] 
+&& A(Y)\ar[rr, twoheadrightarrow, "\wait/I(X)"'] 
+&& A(X) \\
 \end{tikzcd}
 \end{center}
 
 \end{example}
 
-\begin{theorem}[?]
+\begin{theorem}[Relative Nullstellensatz]
 
 Let \(X\subset Y\) be an affine subvariety, then
 
@@ -1094,37 +1277,42 @@ Gathmann.
 Let \(Y = V(y-x^2) \subset \AA^2/\CC\) and
 \(X = \ts{(1, 1)} = V(x-1, y-1)\subset \AA^2/\CC\).
 
-Then there is an inclusion \(\gens{y-x^2} \subset \gens{x-1, y-1}\)
-(e.g.~by Taylor expanding about the point \((1, 1)\)), and there is a
+Then there is an inclusion \(\gens{y-x^2} \subset \gens{x-1, y-1}\),
+e.g.~by Taylor expanding about the point \((1, 1)\). and thus there is a
 map
 
 \begin{center}
 \begin{tikzcd}
-A(\AA^n)\ar[r]\ar[d, equal] & A(Y) \ar[r]\ar[d, equal] & A(X)\ar[d, equal] \\
-k[x, y]\ar[r] & k[x, y]/\gens{y-x^2}\ar[r] & k[x, y]/\gens{x-1, y-1}
+A(\AA^n)\ar[r]\ar[d, equal] & A(Y) \ar[r]\ar[d, equal]   & A(X)\ar[d, equal] \\
+k[x, y]\ar[r]               & k[x, y]/\gens{y-x^2}\ar[r, dotted, "\exists"] & k[x, y]/\gens{x-1, y-1}
 \end{tikzcd}
 \end{center}
 
 \end{example}
 
-\hypertarget{tuesday-september-01}{%
-\section{Tuesday, September 01}\label{tuesday-september-01}}
+\hypertarget{zariski-topology-tuesday-september-01}{%
+\section{Zariski Topology (Tuesday, September
+01)}\label{zariski-topology-tuesday-september-01}}
 
 \hypertarget{the-zariski-topology}{%
 \subsection{The Zariski Topology}\label{the-zariski-topology}}
 
-Last time: \(V(I) = \ts{x\in \AA^n \st f(x) = 0 \, \forall x\in I}\) and
-\(I(X) = \ts{f\in k[x_1, \cdots, x_n] \st f(x) = 0\, \forall x\in X}\).
-We proved the Hilbert Nullstellensatz \(I(V(J)) = \sqrt{J}\), defined
-the coordinate ring of an affine variety \(X\) as
-\(A(X) \da k[x_1, \cdots, x_n] / I(X)\), the ring of ``regular''
-(polynomial) functions on \(X\).
+Last time:
+\begin{align*}  
+V(I) &= \ts{x\in \AA^n \st f(x) = 0 \, \forall x\in I} \\
+I(X) &= \ts{f\in k[x_1, \cdots, x_n] \st f(x) = 0\, \forall x\in X}
+.\end{align*}
 
+We proved the Nullstellensatz \(I(V(J)) = \sqrt{J}\), defined the
+coordinate ring of an affine variety \(X\) as
+\begin{align*}
+A(X) \da k[x_1, \cdots, x_n] / I(X)
+\end{align*} the ring of \emph{regular} (polynomial) functions on \(X\).
 Recall that a \emph{topology} on \(X\) can be defined as a collection of
-``closed'' subsets of \(X\) that are closed under arbitrary
-intersections and finite unions. A subset \(Y\subset X\) inherits a
-subspace topology with closed sets of the form \(Z\intersect Y\) for
-\(Z\subset X\) closed.
+closed subsets of \(X\) that are closed under arbitrary intersections
+and finite unions. A subset \(Y\subset X\) inherits a subspace topology
+with closed sets of the form \(Z\intersect Y\) for \(Z\subset X\) closed
+in \(X\).
 
 \begin{definition}[Zariski Topology]
 
@@ -1133,23 +1321,41 @@ Let \(X\) be an affine variety. The closed sets are affine subvarieties
 
 \end{definition}
 
-We have \(\emptyset, X\) closed, since
+\begin{proposition}[The Zariski topology is a topology]
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
+This satisfies the axioms for a topological space.
+
+\end{proposition}
+
+\begin{proof}[?]
+
+\envlist
+
+\begin{itemize}
 \item
-  \(V_X(1) = \emptyset\),
+  We have \(\emptyset, X\) closed, since
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    \(V_X(1) = \emptyset\),
+  \item
+    \(V_X(0) = X\)
+  \end{enumerate}
 \item
-  \(V_X(0) = X\)
-\end{enumerate}
+  Closure under finite unions:
 
-Closure under finite unions: Let \(V_X(I), V_X(J)\) be closed in \(X\)
-with \(I, J \subset A(X)\) ideals. Then
-\(V_X(IJ) = V_X(I) \union V_X(J)\).
+  Let \(V_X(I), V_X(J)\) be closed in \(X\) with \(I, J \subset A(X)\)
+  ideals. Then \(V_X(IJ) = V_X(I) \union V_X(J)\).
+\item
+  Closure under intersections:
 
-Closure under intersections: We have
-\(\bigcap_{i\in \sigma} V_X(J) = V_X\qty{ \sum_{i\in \sigma} J_i}\).
+  We have
+  \(\bigcap_{i\in \sigma} V_X(J) = V_X\qty{ \sum_{i\in \sigma} J_i}\).
+\end{itemize}
+
+\end{proof}
 
 \begin{remark}
 
@@ -1159,39 +1365,36 @@ There are few closed sets, so this is a ``weak'' topology.
 
 \begin{example}[Closedness differs in the analytic topology]
 
-Compare the classical topology on \(\AA^1/\CC\) to the Zariski topology.
-
-Consider the set \(A\da \ts{x\in \AA^1/\CC \st \norm{x} \leq 1}\), which
-is closed in the classical topology. However, \(A\) is \emph{not} closed
-in the Zariski topology, since the closed subsets are finite sets or the
-whole space.
-
-\begin{quote}
-Here the topology is in fact the cofinite topology.
-\end{quote}
+Compare the classical topology on \(\AA^1_{/\CC}\) to the Zariski
+topology. Consider the set
+\begin{align*}
+A\da \ts{x\in \AA^1_{/\CC} \st \norm{x} \leq 1}
+\end{align*} which is closed in the classical topology. However, \(A\)
+is \emph{not} closed in the Zariski topology, since the closed subsets
+are finite sets or the whole space. In fact, the topology here is the
+cofinite topology.
 
 \end{example}
 
 \begin{example}
 
-Let \(f: \AA^1/k\to \AA^1/k\) be any injective map. Then \(f\) is
+Let \(f: \AA^1_{/k} \to \AA^1_{/k}\) be any injective map. Then \(f\) is
 necessarily continuous wrt the Zariski topology. Thus the notion of
 continuity is too weak in this situation.
 
 \end{example}
 
-\begin{example}
+\begin{warnings}[The topology on the product is not the product topology]
 
 Consider \(X\cross Y\) a product of affine varieties. Then there is a
 product topology where open sets are of the form
 \(\bigcup_{i=1}^n U_i \cross V_i\) with \(U_i, V_i\) open in \(X, Y\)
-respectively.
+respectively. This is the wrong topology! On
+\(\AA^1 \cross \AA^1 = \AA^2\), the diagonal \(\Delta \da V(x-y)\) is
+closed in the Zariski topology on \(\AA^2\) but not in the product
+topology.
 
-This is the wrong topology! On \(\AA^1 \cross \AA^1 = \AA^2\), the
-diagonal \(\Delta \da V(x-y)\) is closed in the Zariski topology on
-\(\AA^2\) but not in the product topology.
-
-\end{example}
+\end{warnings}
 
 \hypertarget{irreducibility-and-connectedness}{%
 \subsection{Irreducibility and
@@ -1199,10 +1402,10 @@ Connectedness}\label{irreducibility-and-connectedness}}
 
 \begin{example}
 
-Consider \(\AA^2/\CC\), so the closed sets are curves and points.
-Observation: \(V(x_1 x_2 ) \subset \AA^2/\CC\) decomposed into the union
-of the coordinate axes \(X_1 \da V(x_1)\) and \(X_2 \da V(x_2)\). The
-Zariski topology can detect these decompositions.
+Consider \(\AA^2_{/\CC}\), so the closed sets are curves and points.
+Observation: \(V(x_1 x_2 ) \subset \AA^2_{/\CC}\) decomposed into the
+union of the coordinate axes \(X_1 \da V(x_1)\) and \(X_2 \da V(x_2)\).
+The Zariski topology can detect these decompositions.
 
 \end{example}
 
@@ -1230,12 +1433,14 @@ Let \(X\) be a topological space.
 
 \end{example}
 
-\begin{remark}
+\begin{example}
 
-\(\AA^1/\CC\) is \emph{not} irreducible, since we can write
-\(\AA^1/\CC = \ts{\norm{x} \leq 1} \union \ts{\norm{x} \geq 1}\).
+\(\AA^1_{/\CC}\) is \emph{not} irreducible, since we can write
+\begin{align*}
+\AA^1_{/\CC} = \ts{\norm{x} \leq 1} \union \ts{\norm{x} \geq 1}
+\end{align*}
 
-\end{remark}
+\end{example}
 
 \begin{proposition}[?]
 
@@ -1246,11 +1451,11 @@ Let \(X\) be a disconnected affine variety with
 
 \begin{proof}
 
-We have \(X_1 \union X_2 = X\), so
-\(I(X_1) \intersect I(X_2) = I(X) = (0)\) in the coordinate ring
-\(A(X)\) (recalling that it is a quotient by \(I(X)\).)
-
-Since \(X_1 \intersect X_1 = \emptyset\), we have
+We have
+\begin{align*}
+X_1 \union X_2 = X \implies I(X_1) \intersect I(X_2) = I(X) = (0) \in A(X)
+,\end{align*} recalling that the coordinate ring \(A(X)\) is a quotient
+by \(I(X)\). Since \(X_1 \intersect X_1 = \emptyset\), we have
 \begin{align*}  
 I(X_1 \intersect X_2) = \sqrt{I(X_1) + I(X_2) } = I(\emptyset) = \gens{1}
 .\end{align*}
@@ -1261,7 +1466,7 @@ Theorem, the following map is an isomorphism:
 A(X) \to A(X)/I(X_1) \cross A(X) / I(X_2)
 .\end{align*}
 
-But the codomain is precisely \(A(X_1) \cross A(X_2)\).
+However, the codomain is precisely \(A(X_1) \cross A(X_2)\).
 
 \end{proof}
 
@@ -1279,33 +1484,36 @@ domain.
 \begin{proof}
 
 \(\implies\): By contrapositive, suppose \(f_1, f_2 \in A(X)\) are
-nonzero with \(f_1 f_2 = 0\). Let \(X_i = V(f_i)\), then
-\(X= V(0) = V(f_1 f_2) = X_1 \union X_2\) which are closed and proper
-since \(f_i \neq 0\).
+nonzero with \(f_1 f_2 = 0\). Let \(X_i \da V(f_i)\), then
+\begin{align*}
+X= V(0) = V(f_1 f_2) = X_1 \union X_2
+\end{align*} which are closed and proper since \(f_i \neq 0\).
 
 \hfill\break
 
 \(\impliedby\): Suppose \(X\) is reducible with \(X = X_1 \union X_2\)
-with \(X_i\) proper and closed. Define \(J_i \da I(X_i)\), and note
-\(J_i \neq 0\) because \(V(J_i) = V(I(X_i)) = X_i\) by part (a) of the
-Nullstellensatz.
-
-So there exists a nonzero \(f_i \in J_i = I(X_i)\), so \(f_i\) vanishes
-on \(X_i\). But then
-\(V(f_1) \union V(f_2) \supset X_1 \union X_2 = X\), so
-\(X= V(f_1 f_2)\) and \(f_1 f_2 \in I(X) = \gens{0}\) and
-\(f_1 f_2 = 0\). So \(A(X)\) is not a domain.
+with \(X_i\) proper and closed. Define \(J_i \da I(X_i)\), then by part
+(a) of the Nullstellensatz.
+\begin{align*}  
+V(J_i) = V(I(X_i)) = X_i \implies J_i \neq 0
+.\end{align*} So there exists a nonzero \(f_i \in J_i = I(X_i)\), so
+\(f_i\) vanishes on \(X_i\). But then
+\begin{align*}
+V(f_1) \union V(f_2) \supset X_1 \union X_2 = X
+,\end{align*} so \(X= V(f_1 f_2)\) and \(f_1 f_2 \in I(X) = \gens{0}\)
+and \(f_1 f_2 = 0\), and \(A(X)\) is thus not a domain.
 
 \end{proof}
 
 \begin{example}
 
-Let \(X = \ts{p_1, \cdots, p_d}\) be a finite set in \(\AA^n\). The
-Zariski topology on \(X\) is the discrete topology, and
-\(X = \disjoint \ts{p_i}\). So
+Let \(X = \ts{\vector p^1, \cdots, \vector p^d}\) be a finite set in
+\(\AA^n\). The Zariski topology on \(X\) is the discrete topology, and
+\(X = \disjoint_{i=1}^d \ts{\vector p^i}\). So
 \begin{align*}  
-A(X) = A\qty{\disjoint \ts{p_i}} = \prod_{i=1}^d A({\ts{p_i}}) = \prod_{i=1}^d k[x_1, \cdots, x_n] / \gens{x_j - a_j(p_i)}_{j=1}^d
-.\end{align*}
+A(X) = A\qty{\Disjoint_{i=1}^d \ts{\vector p^i}} = \prod_{i=1}^d A\qty{\ts{\vector p^i}} = \prod_{i=1}^d \frac{ k[x_1, \cdots, x_n]} {\gens{x_1 - p^i_1, \cdots, x_n - p^i_n} }
+\end{align*} where \(p_j^i\) is the \(j\)th component of
+\(\vector p^i\).
 
 \end{example}
 
@@ -1319,33 +1527,29 @@ This not being a domain (since \(x_1 x_2 = 0\)) corresponds to
 
 \begin{example}
 
-\(\AA^n/k\) is irreducible since \(k[x_1, \cdots x_n]\) is a domain.
-
-\end{example}
-
-\begin{example}
-
-Let \(X_1\) be the \(xy\) plane and \(X_2\) be the line parallel to the
-\(y\dash\)axis through \(\thevector{0,0,1}\), and let
-\(X= X_1 \disjoint X_2\). Then \(X_1 = V(z)\) and \(X_2 = V(x, z-1)\),
-and
-\begin{align*}
-I(X) = \gens{z} \cdot \gens{x, z-1}=  \gens{xz, z^2 - z}
-\end{align*} The coordinate ring is then given by
-\begin{align*}
-A(X) = \CC[x, y, z] / \gens{xz, z^2 - z} = \CC[x, y, z] / \gens{z} \oplus \CC[x, y,z] / \gens{x, z-1}
-\end{align*}
+Let \(X_1\) be the \(xy\dash\)plane and \(X_2\) be the line parallel to
+the \(y\dash\)axis through \(\thevector{0,0,1}\), and let
+\(X= X_1 \disjoint X_2\):
 
 \begin{figure}
 \centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-09-01-10-43-00.png}
-\caption{Image}
+\caption{Union of a plane and a parallel line.}
 \end{figure}
+
+Then \(X_1 = V(z)\) and \(X_2 = V(x, z-1)\), and
+\begin{align*}
+I(X) = \gens{z} \cdot \gens{x, z-1}=  \gens{xz, z^2 - z}
+\end{align*} The coordinate ring is then given by
+\begin{align*}
+A(X) = { \CC[x, y, z] \over \gens{xz, z^2 - z} } = { \CC[x, y, z] \over  \gens{z} } \oplus { \CC[x, y,z] \over \gens{x, z-1} }
+\end{align*}
 
 \end{example}
 
-\hypertarget{thursday-september-03}{%
-\section{Thursday, September 03}\label{thursday-september-03}}
+\hypertarget{irreducibility-thursday-september-03}{%
+\section{Irreducibility (Thursday, September
+03)}\label{irreducibility-thursday-september-03}}
 
 \hypertarget{irreducibility-and-prime-ideals}{%
 \subsection{Irreducibility and Prime
@@ -1448,7 +1652,7 @@ strictly decreasing sequence of closed subsets.
 
 \begin{proposition}[?]
 
-An affine variety \(X\) with the zariski topology is a Noetherian space.
+An affine variety \(X\) with the Zariski topology is a Noetherian space.
 
 \end{proposition}
 
@@ -1615,22 +1819,22 @@ Write \(X = \cl_X(U) \union (X\sm U)\). Since \(X\sm U \neq X\) and
 
 \end{proof}
 
-\hypertarget{tuesday-september-08}{%
-\section{Tuesday, September 08}\label{tuesday-september-08}}
+\hypertarget{dimension-tuesday-september-08}{%
+\section{Dimension (Tuesday, September
+08)}\label{dimension-tuesday-september-08}}
 
 Review: we discussed irreducible components. Recall that the
 \emph{Zariski topology} on an affine variety \(X\) has affine
-subvarieties as closed sets, and a \emph{noetherian space} has no
-infinitely decreasing chains of closed subspaces.
-
-We showed that any noetherian space has a decomposition into irreducible
-components \(X = \union X_i\) with \(X_i\) closed, irreducible, and
-unique such that no two are subsets of each other. Applying this to
-affine varieties, a descending chain of subspaces
-\(X_0 \supsetneq X_1 \cdots\) in \(X\) corresponds to an increasing
-chain of ideals \(I(X_0) \subsetneq I(X_1) \cdots\) in \(A(X)\). Since
-\(\kx{n}\) is a noetherian ring, this chain terminates, so affine
-varieties are noetherian.
+subvarieties as closed sets, and a \emph{Noetherian space} has no
+infinitely decreasing chains of closed subspaces. We showed that any
+Noetherian space has a decomposition into irreducible components
+\(X = \union X_i\) with \(X_i\) closed, irreducible, and unique such
+that no two are subsets of each other. Applying this to affine
+varieties, a descending chain of subspaces \(X_0 \supsetneq X_1 \cdots\)
+in \(X\) corresponds to an increasing chain of ideals
+\(I(X_0) \subsetneq I(X_1) \cdots\) in \(A(X)\). Since \(\kx{n}\) is a
+Noetherian ring, this chain terminates, so affine varieties are
+Noetherian.
 
 \hypertarget{dimension}{%
 \subsection{Dimension}\label{dimension}}
@@ -1707,9 +1911,9 @@ The only closed sets containing \(V(x_1)\) are \(V(x_1)\union S\) for
 
 \begin{remark}
 
-You may be tempted to think that if \(X\) is noetherian then the
+You may be tempted to think that if \(X\) is Noetherian then the
 dimension is finite. However, finite dimension requires a bounded length
-on descending/ascending chains, whereas noetherian only requires
+on descending/ascending chains, whereas Noetherian only requires
 ``termination'', which may not happen in a bounded number of steps. So
 this is \textbf{false}!
 
@@ -1719,7 +1923,7 @@ this is \textbf{false}!
 
 Take \(X = \NN\) and define a topology by setting closed subsets be the
 sets \(\ts{0, \cdots, n}\) as \(n\) ranges over \(\NN\), along with
-\(\NN\) itself. Is \(X\) noetherian? Check descending chains of closed
+\(\NN\) itself. Is \(X\) Noetherian? Check descending chains of closed
 sets:
 
 \begin{align*}  
@@ -1727,7 +1931,7 @@ sets:
 ,\end{align*}
 
 which has length at most \(N\), so it terminates and \(X\) is
-noetherian. But note that all of these closed subsets
+Noetherian. But note that all of these closed subsets
 \(X_N \da \ts{0, \cdots, N}\) are irreducible. Why? If
 \(X_n = X_i \union X_j\) then one of \(i, j\) is equal to \(N\), i.e
 \(X_i, X_j = X_N\). So for every \(N\), there exists a chain of
@@ -1754,7 +1958,7 @@ We thus make the following definition:
 
 \begin{definition}[Krull Dimension]
 
-The \emph{krull dimension} of a ring \(R\) is the length \(n\) of the
+The \emph{Krull dimension} of a ring \(R\) is the length \(n\) of the
 longest chain of prime ideals
 \begin{align*}  
 P_0 \supsetneq P_1 \supsetneq \cdots \supsetneq P_n
@@ -1787,7 +1991,7 @@ where the closed sets are given by
 V(I) = \ts{\text{Prime ideals } \mfp \normal R \st I\subseteq \mfp }
 .\end{align*}
 
-If \(R\) is a noetherian ring, then \(\spec(R)\) is a noetherian space.
+If \(R\) is a Noetherian ring, then \(\spec(R)\) is a Noetherian space.
 
 \end{remark}
 
@@ -1815,8 +2019,9 @@ So this is a chain of maximal length, implying \(\dim \AA^n/k = n\).
 
 \end{example}
 
-\hypertarget{thursday-september-10}{%
-\section{Thursday, September 10}\label{thursday-september-10}}
+\hypertarget{dimension-thursday-september-10}{%
+\section{Dimension (Thursday, September
+10)}\label{dimension-thursday-september-10}}
 
 Recall that the dimension of a ring \(R\) is the length of the longest
 chain of prime ideals. Similarly, for an affine variety \(X\), we
@@ -1909,9 +2114,9 @@ We can then descend to \(\kx{n}\) to \(\kx{n}/\gens{f}\):
 
 \begin{center}
 \begin{tikzcd}
-P_0 \ar[r] & P_1 \ar[r]\ar[d] & \cdots \ar[r]\ar[d] & P_m\ar[d] \\
- & P_1/P_1 \ar[r]\ar[d] & \cdots \ar[r]\ar[d] & P_m/P_1\ar[d] \\
- & P_1/P_1 \intersect \kx{n-1} \ar[r] & \cdots \ar[r] & (P_m / P_1) \intersect \kx{n-1}
+P_0 \ar[r] & P_1 \ar[r]\ar[d]                   & \cdots \ar[r]\ar[d] & P_m\ar[d] \\
+           & P_1/P_1 \ar[r]\ar[d]               & \cdots \ar[r]\ar[d] & P_m/P_1\ar[d] \\
+           & P_1/P_1 \intersect \kx{n-1} \ar[r] & \cdots \ar[r]       & (P_m / P_1) \intersect \kx{n-1}
 \end{tikzcd}
 \end{center}
 
@@ -1974,7 +2179,7 @@ as well as ``lifting sandwiches'':
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-09-10-10-18-40.png}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-09-10-10-18-40.png}
 \caption{Image}
 \end{figure}
 
@@ -2070,11 +2275,9 @@ statement that all maximal chains are the same length.
 
 \end{proof}
 
-\hypertarget{tuesday-september-15}{%
-\section{Tuesday, September 15}\label{tuesday-september-15}}
-
-\hypertarget{review}{%
-\subsection{Review}\label{review}}
+\hypertarget{codimension-and-hypersurfaces-tuesday-september-15}{%
+\section{Codimension and Hypersurfaces (Tuesday, September
+15)}\label{codimension-and-hypersurfaces-tuesday-september-15}}
 
 Recall the dictionary in \cref{the-algebra-geometry-dictionary}, and the
 fact that \(A(X) \da \kx{n}\) contains no nilpotent elements. We also
@@ -2093,11 +2296,11 @@ had some results about dimension
 
 \begin{example}
 
-Take \(V(x^2+y^2) \subset \AA^2/\RR\)
+Take \(V(x^2+y^2) \subset \AA^2_{/\RR}\).
 
 \end{example}
 
-\begin{definition}[Curves, Surfaces, and Hpyersurfaces]
+\begin{definition}[Curves, Surfaces, and Hypersurfaces]
 
 An affine variety \(Y\) of
 
@@ -2117,6 +2320,9 @@ Question: Is every hypersurface the vanishing locus of a \emph{single}
 polynomials \(f\in A(X)\)?
 
 Answer: This is true iff \(A(X)\) is a UFD.
+
+\hypertarget{codimension}{%
+\subsection{Codimension}\label{codimension}}
 
 \begin{definition}[Codimension in a Ring]
 
@@ -2186,6 +2392,10 @@ Every hypersurface \(Y\subset X\) is cut out by a single polynomial, so
 \(Y=V(f)\), iff \(A(X)\) is a UFD.
 
 \end{corollary}
+
+\hypertarget{hypersurfaces-and-prime-ideals}{%
+\subsection{Hypersurfaces and Prime
+Ideals}\label{hypersurfaces-and-prime-ideals}}
 
 \begin{example}
 
@@ -2259,17 +2469,19 @@ degree of \(f\) where \(I(X) = \gens{f}\).
 
 \end{definition}
 
-\hypertarget{thursday-september-17}{%
-\section{Thursday, September 17}\label{thursday-september-17}}
-
-\hypertarget{regular-functions}{%
-\subsection{Regular Functions}\label{regular-functions}}
+\hypertarget{regular-functions-thursday-september-17}{%
+\section{Regular Functions (Thursday, September
+17)}\label{regular-functions-thursday-september-17}}
 
 \begin{quote}
 See chapter 3 in the notes.
 \end{quote}
 
-Some examples:
+We'll next want to attach certain rings of functions to a space.
+
+\begin{example}[Some examples of regular functions]
+
+\envlist
 
 \begin{itemize}
 \tightlist
@@ -2284,7 +2496,13 @@ Some examples:
 
 These all share a common feature: it suffices to check if a function is
 a member on an arbitrary open set about a point, i.e.~they are
-\emph{local}.
+\textbf{local}.
+
+\end{example}
+
+\hypertarget{defining-regular-functions}{%
+\subsection{Defining Regular
+Functions}\label{defining-regular-functions}}
 
 \begin{definition}[Regular Functions]
 
@@ -2351,9 +2569,7 @@ topology on \(U\).
 
 For all \(a\in U\) there exists \(U_a\subset U\) such that
 \(\phi = g_a/f_a\) on \(U_a\) with \(f_a, g_a \in A(X)\) with
-\(f_a \neq 0\) on \(U_a\).
-
-Then
+\(f_a \neq 0\) on \(U_a\). Then
 \begin{align*}  
 \ts{x\in U_a \st \phi(x) \neq 0} = U_a \sm V(g_a)\intersect U_a
 \end{align*} is an open subset of \(U_a\), so taking the union over
@@ -2377,17 +2593,28 @@ implies that \(\bar U = X\) and so \(V(\phi_1 - \phi_2) =V\).
 
 \end{proof}
 
-Compare and contrast: Let \(U\subset V \subset \RR^n\) be open. If
+\begin{question}
+
+Let \(U\subset V \subset \RR^n\) be open. If
 \(\phi_1, \phi_2 \in C^\infty(V)\) such that \(\phi_1, \phi_2\) are
 equal when restricted \(U\subset V\). Does this imply
 \(\phi_1 = \phi_2\)?
+
+\end{question}
+
+\begin{answer}
 
 For \(\RR^n\), no, there exist smooth bump functions. You can make a
 bump function on \(V\setminus U\) and extend by zero to \(U\). For
 \(\CC\) and holomorphic functions, the answer is yes, by the uniqueness
 of analytic continuation.
 
-\begin{definition}[(Important) Distinguished Opens]
+\end{answer}
+
+\hypertarget{distinguished-open-sets}{%
+\subsection{Distinguished Open Sets}\label{distinguished-open-sets}}
+
+\begin{definition}[(Important) Distinguished Open Sets]
 
 A \textbf{distinguished open set} in an affine variety is one of the
 form
@@ -2399,7 +2626,7 @@ D(f) \da X\sm V(f) = \ts{x\in X \st f(x) \neq 0}
 
 \begin{proposition}
 
-The distinguished open sets form a base of the zariski topology.
+The distinguished open sets form a base of the Zariski topology.
 
 \end{proposition}
 
@@ -2461,12 +2688,12 @@ set \(g - \sum g_a k_a\).
 
 \begin{claim}
 
-\(\phi = g/f^n\) on \(D(f)\).\\
+\(\phi = g/f^n\) on \(D(f)\).
+
+\end{claim}
 
 This follows because on \(D(f_b)\), we have \(\phi = {g_b \over f_b}\),
 and so \(gf_b = \sum k_a g_a f_b\).
-
-\end{claim}
 
 \begin{quote}
 Finish next class
@@ -2474,14 +2701,16 @@ Finish next class
 
 \end{proposition}
 
-\hypertarget{tuesday-september-22}{%
-\section{Tuesday, September 22}\label{tuesday-september-22}}
+\hypertarget{distinguished-opens-tuesday-september-22}{%
+\section{Distinguished Opens (Tuesday, September
+22)}\label{distinguished-opens-tuesday-september-22}}
 
-\hypertarget{review-regular-functions}{%
-\subsection{Review: Regular Functions}\label{review-regular-functions}}
+\hypertarget{computing-the-regular-functions}{%
+\subsection{Computing the Regular
+Functions}\label{computing-the-regular-functions}}
 
 Given an affine variety \(X\) and \(U\subseteq X\) open, a \emph{regular
-function} \(\phi: U\to k\) is one locally (wrt the zariski topology) a
+function} \(\phi: U\to k\) is one locally (wrt the Zariski topology) a
 fraction. We write the set of regular functions as \(\OO_X\).
 
 \begin{example}
@@ -2499,6 +2728,9 @@ x &\mapsto
 
 \end{example}
 
+\hypertarget{distinguished-opens}{%
+\subsection{Distinguished Opens}\label{distinguished-opens}}
+
 \begin{definition}[Distinguished Open Sets]
 
 A \emph{distinguished open set} \(D(f) \subseteq X\) for some
@@ -2506,7 +2738,7 @@ A \emph{distinguished open set} \(D(f) \subseteq X\) for some
 
 \end{definition}
 
-These are useful because the \(D(f)\) form a base for the zariski
+These are useful because the \(D(f)\) form a base for the Zariski
 topology.
 
 \begin{proposition}[?]
@@ -2548,13 +2780,17 @@ For \(X\) an affine variety, \(\OO_X(X) = A(X)\).
 
 \end{corollary}
 
-\begin{warnings}
+\begin{warnings}[Things go wrong when $k\neq \bar k$]
 
 For \(k\) not algebraically closed, the proposition and corollary are
 both false. Take \(X = \AA^1/\RR\), then \({1\over x^2+1} \in \RR(x)\),
 but \(\OO_X(X) \neq A(X) = \RR[x]\).
 
 \end{warnings}
+
+\hypertarget{structure-sheaf-of-distinguished-opens}{%
+\subsection{Structure Sheaf of Distinguished
+Opens}\label{structure-sheaf-of-distinguished-opens}}
 
 \begin{definition}[Localization]
 
@@ -2614,8 +2850,8 @@ which forces \(g/f^n = 0\in A(X)_f\).
 
 \end{proof}
 
-\hypertarget{sheaves}{%
-\subsection{Sheaves}\label{sheaves}}
+\hypertarget{presheaves-and-sheaves}{%
+\subsection{Presheaves and Sheaves}\label{presheaves-and-sheaves}}
 
 Idea: spaces on functions on topological spaces.
 
@@ -2670,8 +2906,13 @@ that \(\restrictionof{\phi}{U_i} = \phi_i\).
 
 \end{definition}
 
-\hypertarget{thursday-september-24}{%
-\section{Thursday, September 24}\label{thursday-september-24}}
+\hypertarget{categories-and-presheaves-thursday-september-24}{%
+\section{Categories and Presheaves (Thursday, September
+24)}\label{categories-and-presheaves-thursday-september-24}}
+
+\hypertarget{regular-functions-vs-holomorphic-functions}{%
+\subsection{Regular Functions vs Holomorphic
+Functions}\label{regular-functions-vs-holomorphic-functions}}
 
 Recall that we defined the \emph{regular functions} \(\OO_X(U)\) on an
 open set \(U\subset X\) an affine variety as the set of functions
@@ -2708,8 +2949,13 @@ Review: what is a category?
 Review: what is a presheaf?
 \end{quote}
 
-\hypertarget{tuesday-september-29}{%
-\section{Tuesday, September 29}\label{tuesday-september-29}}
+\hypertarget{sheafifying-tuesday-september-29}{%
+\section{Sheafifying (Tuesday, September
+29)}\label{sheafifying-tuesday-september-29}}
+
+\hypertarget{presheaves-that-are-not-sheaves}{%
+\subsection{Presheaves That Are Not
+Sheaves}\label{presheaves-that-are-not-sheaves}}
 
 Recall the definition of a presheaf: a sheaf of rings on a space is a
 contravariant functor from its category of open sets to ring, such that
@@ -2725,7 +2971,9 @@ contravariant functor from its category of open sets to ring, such that
   Restrictions compose.
 \end{enumerate}
 
-Examples:
+\begin{example}[?]
+
+\envlist
 
 \begin{itemize}
 \tightlist
@@ -2735,16 +2983,23 @@ Examples:
   Holomorphic functions on \(\CC\)
 \end{itemize}
 
+\end{example}
+
 Recall the definition of sheaf: a presheaf satisfying \emph{unique}
 gluing: given \(f_i \in \mathcal{F}(U_i)\), such that
 \(\restrictionof{f_i}{U_i \intersect U_j} = \restrictionof{f_j}{U_i\intersect U_j}\)
 implies that there exists a unique \(f\in \mathcal{F}(\union U_i)\) such
 that \(\restrictionof{f}{U_i} = f_i\).
 
-Question: Are the constant functions on \(\RR\) a presheaf and/or a
-sheaf?
+\begin{question}
 
-Answer: This is a presheaf but not a sheaf. Set
+Are the constant functions on \(\RR\) a presheaf and/or a sheaf?
+
+\end{question}
+
+\begin{answer}
+
+This is a presheaf but not a sheaf. Set
 \(\mathcal{F}(U) = \ts{f: U\to \RR \st f(x) = c} \cong \RR\) with
 \(\mathcal{F}(\emptyset) = 0\). Can check that restrictions of constant
 functions are constant, the composition of restrictions is the overall
@@ -2756,6 +3011,11 @@ a unique constant function \(\mathcal{F}(\union U_i)\) restricting to
 them? No: take \(f_1 = 1\) on \((0, 1)\) and \(f_2 = 2\) on \((2, 3)\).
 Can check that they both restrict to the zero function on the
 intersection, since these sets are disjoint.
+
+\end{answer}
+
+\hypertarget{locally-constant-sheaves}{%
+\subsection{Locally Constant Sheaves}\label{locally-constant-sheaves}}
 
 How can we make this into a sheaf? One way: weaken the topology. Another
 way: define another presheaf \(\mathcal{G}\) on \(\RR\) given by
@@ -2798,21 +3058,21 @@ Let \(X = \ts{a, b, c}\) and
 \(\tau = \ts{\emptyset, \ts{a}, \ts{a, b}, \ts{a, c}}\). Can check that
 it's closed under finite intersections and arbitrary unions, so this
 forms a topology. Now make the assignments
-\begin{align*}  
-\ts{a}& \mapsto A \\
-\ts{b}& \mapsto B \\
-\ts{a, b}& \mapsto C \\
-X &\mapsto ?
+\begin{align*}
+\ts{a}    & \mapsto A \\
+\ts{b}    & \mapsto B \\
+\ts{a, b} & \mapsto C \\
+X         & \mapsto ?
 .\end{align*}
 
-We have a situation like this:
+We have a situation like the following:
 
 \begin{center}
 \begin{tikzcd}
-& \mathcal{F}(X)\ar[ld]\ar[rd] & \\
-B\ar[rd] & & C\ar[ld] \\
-& A\ar[d] & \\
-& \emptyset &
+               & \mathcal{F}(X)\ar[ld]\ar[rd] & \\
+B\ar[rd]       &                              & C\ar[ld] \\
+               & A\ar[d]                      & \\
+               & \emptyset                    &
 \end{tikzcd}
 \end{center}
 
@@ -2825,6 +3085,10 @@ B \cross_A C \da \ts{(r, s) \in B\cross C \st \phi_B(r) = \phi_C(s) \in A}
 .\end{align*}
 
 \end{example}
+
+\hypertarget{the-structure-sheaf-is-a-sheaf}{%
+\subsection{The Structure Sheaf is a
+Sheaf}\label{the-structure-sheaf-is-a-sheaf}}
 
 \begin{example}
 
@@ -2879,6 +3143,10 @@ function is not a local property.
 
 \end{remark}
 
+\hypertarget{restriction-stalks-sections}{%
+\subsection{Restriction, Stalks,
+Sections}\label{restriction-stalks-sections}}
+
 \begin{definition}[Restriction of a (Pre)sheaf]
 
 Given a sheaf \(\mathcal{F}\) on \(X\) and an open set \(U\subset X\),
@@ -2920,7 +3188,7 @@ In this case
 
 \end{example}
 
-\begin{definition}[Sections]
+\begin{definition}[Sections and Germs]
 
 An element \(f\in \mathcal{F}(U)\) is called a \emph{section} over
 \(U\), and elements of the stalk \(f\in \mathcal{F}_p\) are called
@@ -2928,11 +3196,12 @@ An element \(f\in \mathcal{F}(U)\) is called a \emph{section} over
 
 \end{definition}
 
-\hypertarget{thursday-october-01}{%
-\section{Thursday, October 01}\label{thursday-october-01}}
+\hypertarget{stalks-and-localizations-thursday-october-01}{%
+\section{Stalks and Localizations (Thursday, October
+01)}\label{stalks-and-localizations-thursday-october-01}}
 
-\hypertarget{stalks-and-localizations}{%
-\subsection{Stalks and Localizations}\label{stalks-and-localizations}}
+\hypertarget{review}{%
+\subsection{Review}\label{review}}
 
 Recall that a sheaf of rings on a topological space \(X\) is a ring
 \(\mathcal{F}(U)\) for all open sets \(U\subset X\) satisfying four
@@ -2940,12 +3209,31 @@ properties:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
-  The empty set is mapped to zero.
+  Initial to terminal: the empty set is mapped to zero.\footnote{The
+    initial object in the category of Sets is the empty set, and the
+    terminal object in the category of Rings is the zero ring. This
+    ``swap'' comes from the fact that presheaves should be
+    contravariant.}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \item
-  The morphism \(\mathcal{F}(U)\to \mathcal{F}(U)\) is the identity.
+  Identities: the morphism \(\mathcal{F}(U)\to \mathcal{F}(U)\) is the
+  identity.
 \item
-  Given \(W\subset V\subset U\) we have
+  Composition: given \(W\subset V\subset U\) we have a commutative
+  diagram
+
+  \begin{center}
+  \begin{tikzcd}
+  \mathcal{F}(U) \ar[rr, "\Res_{UV}"] \ar[rd, "\Res_{UW}"'] &                & \mathcal{F}(V) \ar[ld, "\Res_{VW}"] \\
+                      & \mathcal{F}(W) &
+  \end{tikzcd}
+  \end{center}
 \item
   Gluing: given sections \(s_i \in\mathcal{F}(U_i)\) which agree on
   overlaps (restrict to the same function on \(U_i\intersect U_j\)),
@@ -2954,14 +3242,17 @@ properties:
 
 \begin{example}
 
-If \(X\) is an affine variety with the zariski topology,
+If \(X\) is an affine variety with the Zariski topology,
 \(\mathcal{O}_X\) is a sheaf of regular functions, where we recall
 \(\mathcal{O}_X(U)\) are the functions \(\phi: U\to k\) that are locally
 a fraction.
 
 \end{example}
 
-Recall that the \emph{stalk} of a sheaf \(\mathcal{F}\) at a point
+\hypertarget{computing-stalks}{%
+\subsection{Computing Stalks}\label{computing-stalks}}
+
+Recall that the \textbf{stalk} of a sheaf \(\mathcal{F}\) at a point
 \(p\in X\), is defined as
 \begin{align*}  
 \mathcal{F}_p \da \ts{(U, \phi) \st p\in U \text{ open },\, \phi \in \mathcal{F}(U)}/\sim
@@ -2969,15 +3260,16 @@ Recall that the \emph{stalk} of a sheaf \(\mathcal{F}\) at a point
 \(p\in W \subset U\intersect U'\) such \(\phi, \phi'\) restricted to
 \(W\) are equal.
 
-Recall that a \emph{local ring} is a ring with a unique maximal ideal
+Recall that a \textbf{local ring} is a ring with a unique maximal ideal
 \(\mfm\). Given a prime ideal \(\mfp \in R\), so
 \(ab\in \mfp \implies a,b\in \mfp\), the complement \(R\setminus P\) is
 closed under multiplication. So we can localize to obtain
-\(R_\mfp = \ts{a/s \st s\in R\setminus P, a\in R}/\sim\) where
-\(a'/s' \sim a/s\) iff there exists a \(t\in R\sm P\) such that
-\(t(a's - as') = 0\).
+\begin{align*}
+R_\mfp &\da \ts{a/s \st s\in R\setminus P, a\in R}/\sim \\
+\text{ where } a'/s' \sim a/s &\iff \exists t\in R\sm P \text{ such that } t(a's - as') = 0
+\end{align*}
 
-\begin{warnings}
+\begin{warnings}[Notation for localizations]
 
 Note that \(R_f\) is localizing at the powers of \(f\), whereas
 \(R_\mfp\) is localizing at the \emph{complement} of \(\mfp\).
@@ -2985,15 +3277,19 @@ Note that \(R_f\) is localizing at the powers of \(f\), whereas
 \end{warnings}
 
 Since maximal ideals are prime, we can localize any ring \(R\) at a
-maximal ideal \(R_\mfm\), and this will be a local ring. Why? The ideals
-in \(R_\mfm\) biject with ideals in \(R\) contained in \(\mfm\). Thus
-all ideals in \(R_\mfm\) are contained in the maximal ideal generated by
-\(\mfm\), i.e.~\(\mfm R_\mfm\).
+maximal ideal \(\mathfrak{m} \in \mspec(R)\) to obtain \(R_\mfm\), and
+this will be a local ring. Why? The ideals in \(R_\mfm\) biject with
+ideals in \(R\) contained in \(\mfm\). Thus all ideals in \(R_\mfm\) are
+contained in the maximal ideal generated by \(\mfm\),
+i.e.~\(\mfm R_\mfm\).
 
-\begin{lemma}[?]
+\begin{lemma}[Stalks are isomorphic to localizations]
 
-Let \(X\) be an affine variety. The stalk of the sheaf of regular
-functions \(\OO_{X, p} \da (\OO_X)_p\) is isomorphic to the localization
+Let \(X\) be an affine variety, then
+\begin{align*}  
+\OO_{X, p}\da \qty{\OO_X}_p \cong A(X)_{\mathfrak{m}_p}
+.\end{align*} In words: the stalk of the sheaf of regular functions
+\(\OO_{X, p} \da (\OO_X)_p\) is isomorphic to the localization
 \(A(X)_{\mfm_p}\) where \(\mfm_p \da I(\ts{p})\).
 
 \end{lemma}
@@ -3054,28 +3350,33 @@ we can assume \(\phi = 0\) on \(U\), since we could shrink \(U\)
 (staying in the same equivalence class) to make this true otherwise.
 Then \(\phi = g/f\) on \(D_h\), using that \(\OO_X(D_f) = A(X)_f\), so
 \(g/f = 0\) here. So there exists a \(k\) such that
-\(f^k(g\cdot 1 - 0\cdot f) = 0\) in \(A(X)\), so
-\(f^k g=0 \in A(X)_{\mfm_p}\).
+\begin{align*}  
+f^k(g\cdot 1 - 0\cdot f) = 0 \in A(X) \implies f^k g=0 \in A(X)_{\mfm_p}
+.\end{align*}
 
-\end{proof}
-
-Conclusion:
+We can thus conclude that
 \begin{align*}  
 \OO_{X, p} \cong A(X)_{\mfm_p}
 .\end{align*}
 
+\end{proof}
+
 \begin{example}
 
 Let \(X = \ts{p, q}\) with the discrete topology with the sheaf
-\(\mathcal{F}\) given by \(p\mapsto R, q\mapsto S, X\mapsto R\cross S\).
-
-Then \(\mathcal{F}_p = R\), since if \(U\) is open and \(p\in\ U\) then
-either \(U= \ts{p}\) or \(U = X\). We can check that for \((r, s)\) a
-section of \(\mathcal{F}\), we have an equivalence of germs
-\((X, (r, s)) \sim (\ts{p}, r)\) since
-\(\ts p \subset X\intersect \ts p\). Here \(X\) plays the role of \(U\),
-\(\ts p\) of \(U'\), and the last \(\ts p\) the role of
-\(W \subset U\intersect U'\).
+\(\mathcal{F}\) given by
+\begin{align*}  
+p &\mapsto R \\
+q &\mapsto S \\
+X &\mapsto R\cross S
+.\end{align*} Then \(\mathcal{F}_p = R\), since if \(U\) is open and
+\(p\in\ U\) then either \(U= \ts{p}\) or \(U = X\). We can check that
+for \((r, s)\) a section of \(\mathcal{F}\), we have an equivalence of
+germs
+\begin{align*}
+(X, (r, s)) \sim (\ts{p}, r) \text{ since } \ts p \subset X\intersect \ts p
+\end{align*} Here \(X\) plays the role of \(U\), \(\ts p\) of \(U'\),
+and the last \(\ts p\) the role of \(W \subset U\intersect U'\).
 
 \begin{align*}  
 \OO_{X, p} &\to A(X) \\
@@ -3092,41 +3393,52 @@ functions on \(M\). Then the stalk \(C_p^\infty\) at \(p\) is defined as
 the set of smooth functions in a neighborhood of \(p\) modulo functions
 being equivalent if they agree on a small enough ball \(B_\eps(p)\).
 This contains a maximal ideal \(\mfm_p\), the smooth functions vanishing
-at \(p\).
-
-Then \(\mfm_p^2\) is again an ideal, equal to the set
-\(\ts{f \st \del_i \del_j f\mid_p = 0,\, \forall i,j}\). Thus
-\(\mfm_p/\mfm_p^2 \cong \ts{\del_v}\dual\), the dual of the set of
-directional derivatives.
+at \(p\). Then \(\mfm_p^2\) is again an ideal, and as sets,
+\begin{align*}  
+\mfm^2 = \ts{f \st \del_i \del_j f\mid_p = 0,\, \forall i,j}
+.\end{align*} Thus \(\mfm_p/\mfm_p^2 \cong \ts{\del_v}\dual\), the
+\emph{dual} of the set of directional derivatives.
 
 \end{example}
 
-\hypertarget{whats-the-point}{%
-\subsection{What's the Point!}\label{whats-the-point}}
+\hypertarget{morphisms-of-affine-varieties}{%
+\subsection{Morphisms of Affine
+Varieties}\label{morphisms-of-affine-varieties}}
 
 Problem: what should a map of affine varieties be? A bad definition
 would be just taking the continuous maps: for example, any bijection
-\(\AA_\CC^1\) is a homeomorphism in the zariski topology. Why? This
+\(\AA^1_{_\CC}\) is a homeomorphism in the Zariski topology. Why? This
 coincides with the cofinite topology, and the preimage of a cofinite set
 is cofinite.
 
+\begin{question}
+
 How do we fix this?
+
+\end{question}
+
+\begin{answer}
+
+\envlist
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \(f:X\to Y\) is continuous, i.e.~\(f^{-1} (U)\) is open whenever \(U\)
-  is open.
+  \(f:X\to Y\) should be continuous, i.e.~\(f^{-1} (U)\) is open
+  whenever \(U\) is open.
 \item
   Given \(U\subset Y\) open and \(\phi \in \OO_Y(U)\), the function
-  \(\phi \circ f: f^{-1}(U) \to k\) is regular.
+  \(\phi \circ f: f^{-1}(U) \to k\) should be regular.
 \end{enumerate}
 
-We'll take this to be the definition of a morphism \(X\to Y\).
+We'll take these conditions to be the definition of a morphism
+\(X\to Y\).
+
+\end{answer}
 
 \begin{example}
 
-For smooth manifolds, we also require that there is a pullback that
+For smooth manifolds, we similarly require that there is a pullback that
 preserves smooth functions:
 \begin{align*}  
 f^*: C^\infty(U) \to C^\infty(f^{-1}(U))
@@ -3134,14 +3446,9 @@ f^*: C^\infty(U) \to C^\infty(f^{-1}(U))
 
 \end{example}
 
-\hypertarget{tuesday-october-06}{%
-\section{Tuesday, October 06}\label{tuesday-october-06}}
-
-Note: the sheaf of locally constant functions valued in a set \(S\) is
-written \(\underline{\mathbf S}\).
-
-\hypertarget{gathmann-chapter-4}{%
-\subsection{Gathmann Chapter 4}\label{gathmann-chapter-4}}
+\hypertarget{ringed-spaces-ch.-4-tuesday-october-06}{%
+\section{Ringed Spaces (Ch. 4, Tuesday, October
+06)}\label{ringed-spaces-ch.-4-tuesday-october-06}}
 
 \begin{definition}[Ringed Spaces]
 
@@ -3175,35 +3482,49 @@ Recall that the restriction of a sheaf \(\mathcal{F}\) to an open subset
 \(U\subset X\) is defined by
 \(\ro{\mathcal{F}}{U}(V) = \mathcal{F}(V)\).
 
-\begin{example}
+\begin{example}[Skyscraper Sheaf]
 
 Let \(X\) be a topological space and \(p\in X\) a point. The
-\emph{skyscraper sheaf at \(p\)} is defined by
+\textbf{skyscraper sheaf at \(p\)} is defined by
 \begin{align*}  
-K_p(U) \da 
+k_p(U) \da 
 \begin{cases}
-K & p\in U \\
+k & p\in U \\
 0 & p\not\in U
 \end{cases}
 .\end{align*}
 
 \end{example}
 
-Convention: we'll always assume that \(\OO_X\) is a sheaf of functions,
-so \(\OO_X(U)\) is a subring of all \(K\dash\)valued functions on \(U\).
-Moreover, \(\res_{UV}\) is restriction of \(K\dash\)valued functions.
+\begin{remark}
 
-\begin{definition}[Morphisms]
+As a convention, we'll always assume that \(\OO_X\) is a sheaf of
+functions, so \(\OO_X(U)\) is a subring of all \(k\dash\)valued
+functions on \(U\). Moreover, \(\res_{UV}\) is restriction of
+\(k\dash\)valued functions.
 
-A \emph{morphism of ringed spaces}
+\end{remark}
+
+\hypertarget{morphisms-of-ringed-spaces}{%
+\subsection{Morphisms of Ringed
+Spaces}\label{morphisms-of-ringed-spaces}}
+
+\begin{definition}[Morphisms of Ringed Spaces]
+
+A \textbf{morphism of ringed spaces}
 \begin{align*}  
 (X, \OO_X) \mapsvia{f}  (Y, \OO_Y)
 \end{align*} is a continuous map \(X\to Y\) such that for all opens
 \(U \subset Y\) and any \(\phi \in \OO_Y(U)\), the pullback satisfies
-\(f^* \phi \in \OO_X(f\inv(U))\), i.e.~the pullback of a regular
-function is regular.
+\(f^* \phi \in \OO_X(f\inv(U))\).
 
 \end{definition}
+
+\begin{slogan}
+
+Pullbacks of regular functions are regular.
+
+\end{slogan}
 
 \begin{remark}
 
@@ -3236,7 +3557,9 @@ open set \(D(f) \subset \AA^1\), we know from previous results that
 \(\iota: (U, \OO_U) \injects (X, \OO_X)\) is a morphism of ringed spaces
 where \(\OO_U(V) \da \OO_X(V)\). Does \(\iota^*\) pull back regular
 functions to regular functions? Yes, since
-\(\iota^{-1} (D(f)) = D(f) \union D(x) = D(xf)\) and thus
+\begin{align*}
+\iota^{-1} (D(f)) = D(f) \union D(x) = D(xf)
+\end{align*} and thus
 \begin{align*}
 g/f^n \in \OO_U(\iota^{-1}(D(f))) = \OO_U(D(xf))
 \end{align*} where we've used that \(f^n \neq 0 \implies xf\neq 0\).
@@ -3253,7 +3576,7 @@ x & \mapsto
 x & x \neq \pm 1 \\
 -x & x= \pm 1
 \end{cases}
-.\end{align*} This is continuous because the zariski topology on
+.\end{align*} This is continuous because the Zariski topology on
 \(\AA^1\) is the cofinite topology (since the closed sets are finite),
 so any injective map is continuous since inverse images of cofinite sets
 are again cofinite.
@@ -3285,16 +3608,21 @@ agree on an infinite set of points, they are equal.
 
 \begin{example}
 
-Consider \(\iota: (\RR^2, C^\infty) \injects (\RR^3, C^\infty)\) is the
-inclusion of a coordinate hyperplane. To say that this is a morphism of
-ringed spaces, we need that for all \(U\subset \RR^3\) open and
-\(f:U\to \RR\) a smooth function, we want
+Consider
+\begin{align*}
+\iota: (\RR^2, C^\infty) \injects (\RR^3, C^\infty)
+\end{align*} is the inclusion of a coordinate hyperplane. To say that
+this is a morphism of ringed spaces, we need that for all
+\(U\subset \RR^3\) open and \(f:U\to \RR\) a smooth function, we want
 \(i^* f\in C^\infty (\iota^{-1}(U))\). But this is the same as
 \(f\circ \iota \in C^\infty(\RR^2\intersect U)\), which is true.
 
 \end{example}
 
-\begin{proposition}[Properties of Morphisms of Ringed Spaces]
+\hypertarget{gluing-morphisms}{%
+\subsection{Gluing Morphisms}\label{gluing-morphisms}}
+
+\begin{proposition}[Ringed spaces form a category]
 
 \envlist
 
@@ -3318,11 +3646,15 @@ Let \(f:X\to Y\) be a continuous map between ringed spaces. Assume there
 exists an open cover \(\ts{U_i}_{i\in I}\covers X\) such that
 \(\ro{f}{U_i}\) is a morphism, then \(f\) is a morphism.
 
-Slogan: it suffices to check a morphism on an open cover.
-
 \end{lemma}
 
-\begin{proof}
+\begin{remark}
+
+Slogan: it suffices to check a morphism on an open cover.
+
+\end{remark}
+
+\begin{proof}[of part (a)]
 
 Part a: Need to check that \(f\) is continuous, can compute
 \begin{align*}  
@@ -3330,25 +3662,12 @@ f^{-1}(V) = \Union_{i\in I} U_i \intersect f^{-1}(V) = \Union_{i\in I} \ro{f}{U_
 .\end{align*} but the latter is open as a union of open sets, where each
 constituent set is open by assumption.
 
-\begin{quote}
-Will finish proof next time.
-\end{quote}
-
 \end{proof}
 
 \hypertarget{thursday-october-08}{%
 \section{Thursday, October 08}\label{thursday-october-08}}
 
-\begin{proposition}[Gluing]
-
-Let \(f:X\to Y\) be a map of ringed spaces such that there exists an
-open cover \(U_i\covers X\) such that \(\ro{f}{U_i}\) is a morphism of
-ringed spaces. Then \(f\) itself is a morphism is a morphism of ringed
-spaces.
-
-\end{proposition}
-
-Recall that we proved part (a).
+We continue the proof that morphisms glue.
 
 \begin{proof}[part b]
 
@@ -3372,7 +3691,7 @@ Since pullback commutes with restriction, \(f^* \phi\) is the unique
 
 \end{proof}
 
-\begin{proposition}[?]
+\begin{proposition}[Morphisms between affine varieties have regular functions as components]
 
 Let \(U\subset X\) be open in an affine variety and let
 \(Y\subset \AA^n\) be another affine variety. Then the morphisms
@@ -3382,19 +3701,26 @@ Let \(U\subset X\) be open in an affine variety and let
 
 \end{proposition}
 
-\begin{proof}
+\begin{proof}[$\implies$]
 
-\(\implies\): Assume that \(f: U\to Y\) is a morphism. Then the
-coordinate functions \(Y\mapsvia{y_i} \AA_1\) are regular functions,
-since they generate \(\OO_Y(Y) = k[y_1, \cdots, y_n]/I(Y)\). Then
-\(f^* y_i\) is a regular function, so define \(f_i \da f^* y_i\). But
-then \(f = \tv{f_1, \cdots, f_n}\).
+Assume that \(f: U\to Y\) is a morphism. Then the coordinate functions
+\(Y\mapsvia{y_i} \AA_1\) are regular functions, since they generate
+\(\OO_Y(Y) = k[y_1, \cdots, y_n]/I(Y)\). Then \(f^* y_i\) is a regular
+function, so define \(f_i \da f^* y_i\). But then
+\(f = \tv{f_1, \cdots, f_n}\).
 
-\(\impliedby\): Conversely suppose
-\(f \da \tv{f_1, \cdots, f_n}: U\to Y \subset \AA^n\) is a map such that
-\(f_i \in \OO_U(U)\). We want to show that \(f\) is a morphism,
-i.e.~that the pullback of every regular function is regular. We thus
-need to show
+\end{proof}
+
+\begin{proof}[$\impliedby$]
+
+Conversely suppose \(f \da \tv{f_1, \cdots, f_n}: U\to Y \subset \AA^n\)
+is a map such that \(f_i \in \OO_U(U)\). We want to show that \(f\) is a
+morphism, i.e.~that the pullback of every regular function is regular.
+We thus need to show the following:
+
+\begin{claim}
+
+\envlist
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3405,20 +3731,26 @@ need to show
   \(f^*\) pulls back regular functions.
 \end{enumerate}
 
-For 1, suppose \(Z\) is closed, then it suffices to show \(f^{-1} (Z)\)
-is closed. Then \(Z = V(g_1, \cdots, g_n)\) for some \(g_i \in A(Y)\).
-So we can write
+\end{claim}
+
+\begin{proof}[of (1)]
+
+Suppose \(Z\) is closed, then it suffices to show \(f^{-1} (Z)\) is
+closed. Then \(Z = V(g_1, \cdots, g_n)\) for some \(g_i \in A(Y)\). So
+we can write
 \begin{align*}  
 f^{-1} (Z) = \ts{
 x\in U \st g_i(f_1(x), \cdots, f_n(x)  ) = 0\, \forall i
 }
 .\end{align*} The claim is that the functions \(g_i\) are regular,
 i.e.~in \(\OO_U(U)\), because the \(g_i\) are polynomials in regular
-functions, which form a ring.
+functions, which form a ring. This is the common vanishing locus of
+\(m\) regular functions on \(U\). By lemma 3.4, the vanishing locus of a
+regular function is closed, so \(f^{-1} (Z)\) is closed.
 
-This is the common vanishing locus of \(m\) regular functions on \(U\).
-By lemma 3.4, the vanishing locus of a regular function is closed, so
-\(f^{-1} (Z)\) is closed.\\
+\end{proof}
+
+\begin{proof}[of (2)]
 
 For 2, let \(\phi \in \OO_Y(W)\) be a regular function on \(W\subset Y\)
 open. Then
@@ -3429,40 +3761,47 @@ x &\mapsto \phi(f_1(x), \cdots, f_n(x))
 \(f_i\) are regular functions, they are locally fractions, so for all
 \(x\in f^{-1} (W)\) there is a neighborhood of \(U_x\ni x\) such that
 (by intersecting finitely many neighborhoods) all of the \(f_i\) are
-fractions \(a_i/b_i\).
+fractions \(a_i/b_i\). Then at a point \(p = \tv{f_i(x)}\) in the image,
+there exists an open neighborhood \(W_p\) in \(W\) such that
+\(\phi = U/V\). But then \(\phi{\tv{a_i /b_i}} = (U/V)(\tv{a_i/b_i})\),
+which is evaluation of a fraction of functions on fractions.
 
-Then at a point \(p = \tv{f_i(x)}\) in the image, there exists an open
-neighborhood \(W_p\) in \(W\) such that \(\phi = U/V\). But then
-\(\phi{\tv{a_i /b_i}} = (U/V)(\tv{a_i/b_i})\), which is evaluation of a
-fraction of functions on fractions.
+\end{proof}
 
 \end{proof}
 
 \begin{example}
 
-Let \(Y = V(xy-1)\) and \(U\subset \AA^1\) be \(D(x)\), so
-\(U = \AA^1\smz\). Note that \(A(Y) = k[x,y]/\gens{xy-1}\) and
-\(A(\AA^1) = k[t]\), and \(f_1=t, f_2=t^{-1} \in \OO_U(U)\). Then
+Let \(Y \da V(xy-1) \subset\AA^2\) and
+\(U\da D(x) = \AA^1\smz \subset \AA^1\). Note that
 \begin{align*}  
-\tv{f_1, f_2}: U &\to Y\subset  \AA^2 \\
+A(Y)    &= {k[x, y] \over \gens{xy-1}} \\
+A(\AA^1) &= k[t]
+,\end{align*} and if \(f_1 \da t, f_2\da t^{-1}\), then
+\(f_1, f_2 \in \OO_U(U)\). So we can define a map
+\begin{align*}  
+\tv{f_1, f_2}: U &\to Y  \\
 p &\mapsto \tv{p, {1\over p} }
-.\end{align*} Thus the image lies in \(Y\).
-
-Conversely, there is a map
+\end{align*} whose image lies in \(Y\). Conversely, there is a map
 \begin{align*}  
 V(xy - 1) &\to U = D(0) \subset  \AA^1 \\
 \tv{x, y} &\mapsto x
 .\end{align*} This a morphism from \(V(xy - 1)\) to \(\AA^1\), since the
 coordinates are regular functions. Since the image is contained in
 \(U\), the definitions imply that this is in fact a morphism of ringed
-spaces. We thus have maps \(U\mapsvia{\tv{t, t^{-1} }} V(xy-1)\) and
-\(V(xy-1) \mapsvia{x} U\) which are mutually inverse, so these are
-isomorphic as ringed spaces.
+spaces. We thus have mutually inverse maps
+\begin{align*}  
+U       &\mapscorrespond{t\mapsto \tv{t, t^{-1} }}{x\mapsfrom \tv{x, y}} V(xy-1) \\ 
+,\end{align*} so \(U\cong V(xy-1)\) as ringed spaces.
 
 \end{example}
 
-Thus maps of affine varieties (or their open subsets) are given by
-functions whose coordinates are regular.
+\begin{slogan}
+
+Maps of affine varieties (or their open subsets) are given by functions
+whose coordinates are regular.
+
+\end{slogan}
 
 \begin{corollary}[Morphisms of varieties corresponds to $k\dash$algebra morphisms of coordinate rings]
 
@@ -3475,10 +3814,9 @@ X\to Y &\mapsto A(Y) \to A(X) \\
 f &\mapsto f^* \OO_Y(Y) = \OO_X(X)
 .\end{align*}
 
-\begin{quote}
-Thus there is an equivalence of categories between reduced
-\(k\dash\)algebras and ???.
-\end{quote}
+Thus there is an equivalence of categories between reduced\footnote{An
+  algebra is \textbf{reduced} iff it has no nonzero nilpotent elements.}
+\(k\dash\)algebras and affine varieties.
 
 \end{corollary}
 
@@ -3489,9 +3827,8 @@ We have a map in the forward direction. Conversely, given a
 morphism \(f\) such that \(f^* = g\). Let \(Y\subset \AA^n\) with
 coordinate functions \(y_1, \cdots, y_n\). Then
 \(f_i = g(y_i) \in A(X) = \OO_X(X)\). Set \(f = \tv{f_1, \cdots, f_n}\).
-Then by the proposition, \(f\) is a morphism to \(\AA^n\).
-
-Let \(h\in A(\AA^n)\), then
+Then by the proposition, \(f\) is a morphism to \(\AA^n\). Letting
+\(h\in A(\AA^n)\), we have
 
 \begin{align*}
 (f^*h)(x) 
@@ -3508,43 +3845,9 @@ are regular, this is a morphism, and we have \(f^* = g\) as desired.
 
 \end{proof}
 
-\begin{example}
-
-Isomorphisms are not necessarily bijective morphisms. Let
-\(X = V(y^2 - x^3) \subset \AA^2\).
-
-Then there is a morphism
-\begin{align*}  
-\phi: \AA^1 &\to X \\
-t &\mapsto \tv{t^2, t^3}
-,\end{align*} since the coordinates \(t^2, t^3\) are regular functions.
-Then \(\phi\) is a bijection, since we can define a piecewise inverse
-\begin{align*}  
-\phi^{-1}: X &\to \AA^1 \\
-\tv{x, y} &\mapsto 
-\begin{cases}
-y/x & x\neq 0 \\
-0 & \text{else}
-\end{cases}
-.\end{align*} However, \(\phi ^{-1}\) is not a morphism. For instance,
-pulling back the function \(t\) yields
-\(\qty{\phi ^{-1} }^* t \not \in A(X)\), since it is equal to the map
-\(\tv{x, y} \mapsto y/x\) for \(x\neq 0\) and \(0\) if \(x=y=0\), which
-is not a regular function.
-
-Since \(\phi\) is a morphism, we can consider the corresponding map of
-\(k\dash\)algebras
-\begin{align*}  
-\phi^*: A(X) &\to A(\AA^1) \\
-k[x, y]/\gens{y^2 - x^3} &\mapsto k[t] \\
-x & \mapsto t^2 \\
-y &\mapsto t^3
-.\end{align*}
-
-\end{example}
-
-\hypertarget{tuesday-october-13}{%
-\section{Tuesday, October 13}\label{tuesday-october-13}}
+\hypertarget{isomorphisms-of-affine-varieties-tuesday-october-13}{%
+\section{Isomorphisms of Affine Varieties (Tuesday, October
+13)}\label{isomorphisms-of-affine-varieties-tuesday-october-13}}
 
 Last time: proved that if \(X, Y\) are affine varieties then there is a
 bijection
@@ -3559,35 +3862,51 @@ f & \mapsto f^*: \OO_Y(Y) \to \OO_X(X)
 \begin{remark}
 
 A morphism \(f:X\to Y\) is by definition a morphism of ringed spaces
-where \(\OO_X, \OO_Y\) are the sheaves of regular functions.
-
-\end{remark}
-
-\begin{remark}
-
-This shows \(X\cong Y\) as ringed spaces iff \(A(X) \cong A(Y)\) as
+where \(\OO_X, \OO_Y\) are the sheaves of regular functions. This shows
+\(X\cong Y\) as ringed spaces iff \(A(X) \cong A(Y)\) as
 \(k\dash\)algebras.
 
 \end{remark}
 
-\begin{example}
+\begin{warnings}[Isomorphisms are not necessarily bijective morphisms]
 
-Take
+Let \(X = V(y^2 - x^3) \subset \AA^2\) and define a map
 \begin{align*}  
-f: \AA^1 &\to V(y^2 - x^3) \subset \AA^2\\
-t &\mapsto (t^2, t^3)
-.\end{align*} This is a morphism by proposition 4.7.
-
-We then get a map on algebras
+f: \AA^1 &\to X \\
+t &\mapsto \tv{t^2, t^3}
+,\end{align*} This is a morphism by proposition 4.7 in
+\autocite{AndreasGathmann515}, since the coordinates \(t^2, t^3\) are
+regular functions. Then \(f\) is a bijection, since we can define a
+piecewise inverse
 \begin{align*}  
-f^*: A(V(y^2 - x^3)) = k[x, y] / \gens{y^2 - x^3} &\to k[t] \\
+f^{-1}: X &\to \AA^1 \\
+\tv{x, y} &\mapsto 
+\begin{cases}
+y/x & x\neq 0 \\
+0 & \text{else}.
+\end{cases}
+\end{align*} However, \(f^{-1}\) is not a morphism, since it is not in
+\(A(X)\) and thus not a regular function on \(X\). For instance, pulling
+back the function \(g(t) = t\) yields
+\begin{align*}  
+\qty{ (f\inv)^* g} \qty{ \tv{x, y} } = 
+\begin{cases}
+y/x & x\neq 0\\
+0 & x=y=0
+\end{cases}
+\quad 
+\not \in A(X)
+.\end{align*} Since \(f\) is a morphism, however, we can still consider
+the corresponding map of \(k\dash\)algebras:
+\begin{align*}  
+f^*: A(X) = \frac{k[x, y]}{\gens{y^2 - x^3}} &\to A(\AA^1) = k[t] \\
 x & \mapsto t^2 \\
 y & \mapsto t^3
 ,\end{align*} but even though \(f\) is a bijective morphism, it's not an
-isomorphism of ringed spaces. This can be seen from the fact that the
-image doesn't contain \(t\).
+isomorphism of rings: this can be seen from the fact that
+\(t\not \in \im f^*\).
 
-\end{example}
+\end{warnings}
 
 \begin{quote}
 Review of introductory category theory.
@@ -3595,10 +3914,11 @@ Review of introductory category theory.
 
 We'll define a category \(\mathrm{AffVar}_k\) whose objects are affine
 varieties over \(k\) and morphisms in \(\hom(X, Y)\) will be morphisms
-of ringed spaces. There is a contravariant functor \(A\) into reduced
-finitely generated \(k\dash\)algebras which sends \(X\) to \(A(X)\) and
-sends morphisms \(f:X\to Y\) to their pullbacks \(f^*:A(Y) \to A(X)\),
-where ``reduced'' denotes the fact that there are no nilpotents.
+of ringed spaces. There is a contravariant functor \(A\) into
+reduced\footnote{An algebra is \textbf{reduced} iff it has no nonzero
+  nilpotent elements.} finitely generated \(k\dash\)algebras which sends
+\(X\) to \(A(X)\) and sends morphisms \(f:X\to Y\) to their pullbacks
+\(f^*:A(Y) \to A(X)\).
 
 \begin{quote}
 Review of the universal property of the product.
@@ -3610,18 +3930,16 @@ If we have \(X,Y\) affine varieties, we take \(X\cross Y\) to be the
 categorical product instead of the underlying product of topological
 spaces. We have
 \begin{align*}
-A(X\cross Y) \cong A(X) \tensor_k A(Y) \cong k[x_1, \cdots, x_n, y_1, \cdots, y_m] / I(X) \tensor 1 + 1 \tensor I(Y).\end{align*}
-This recovers the product, since if we have
+A(X\cross Y) \cong A(X) \tensor_k A(Y) \cong \frac{ k[x_1, \cdots, x_n, y_1, \cdots, y_m]} { I(X) \tensor 1 + 1 \tensor I(Y) }
+.\end{align*} This recovers the product, since we have
 
 \begin{center}
 \begin{tikzcd}
-Z \ar[dr, dotted, "\exists H"]\ar[rrd, bend left, "f"]\ar[rdd, bend right, "g"] & & \\
-& X\cross Y\ar[r]\ar[d] &X  \\
-& Y &  \\
+Z \ar[dr, dotted, "{\exists! H = (f, g)}"]\ar[rrd, bend left, "f"]\ar[rdd, bend right, "g"] &                       & \\
+                                                                                            & X\cross Y\ar[r]\ar[d] & X  \\
+                                                                                            & Y                     & \\
 \end{tikzcd}
 \end{center}
-
-where \(H = (f, g)\).
 
 \end{remark}
 
@@ -3640,19 +3958,20 @@ necessarily simultaneously commute.
 
 \end{remark}
 
-\hypertarget{thursday-october-15}{%
-\section{Thursday, October 15}\label{thursday-october-15}}
+\hypertarget{prevarieties-thursday-october-15}{%
+\section{Prevarieties (Thursday, October
+15)}\label{prevarieties-thursday-october-15}}
 
-\hypertarget{end-of-chapter-4}{%
-\subsection{End of Chapter 4}\label{end-of-chapter-4}}
+\begin{quote}
+This corresponds to the end of Chapter 4.
+\end{quote}
 
-Recall the proposition: morphisms between affine varieties are in
-bijection with \(k\dash\)algebra morphisms between their coordinate
-rings. As a result, we'll redefine an affine variety to be a ringed
-space isomorphic to an affine variety.
-
-This allows you to say that affine varieties embedded in different ways
-are the same.
+Recall that we had a proposition: morphisms between affine varieties are
+in bijection with \(k\dash\)algebra morphisms between their coordinate
+rings. As a result, we'll redefine an \emph{affine variety} to be a
+ringed space isomorphic to an affine variety (using the previous
+definition of affine variety). This provides a way of saying when affine
+varieties embedded in different ways are the ``same''.
 
 \begin{example}
 
@@ -3673,11 +3992,11 @@ algebra isomorphism.
 
 \end{remark}
 
-\begin{proposition}[?]
+\begin{proposition}[Distinguished opens are ringed spaces]
 
 Let \(D(f) \subset X\) be a distinguished open, then \(D(f)\) is a
-ringed space since \((X, \OO_X)\) is and we can restrict the structure
-sheaf.
+ringed space. This follows because \((X, \OO_X)\) is a ringed space, and
+we can restrict the structure sheaf to any open subset of \(X\).
 
 \end{proposition}
 
@@ -3689,50 +4008,54 @@ Y \da \ts{(x, t) \in X\cross \AA^1 \st tf(x) = 1} \subset X\cross \AA^1
 .\end{align*} This is an affine variety, since
 \(Y = V(I + \gens{ft-1})\). This is isomorphic to \(D(f)\) by the map
 \begin{align*}  
-Y &\to D(f)
-(x, t) &\mapsto x
-.\end{align*} with inverse \(x \mapsto (x, {1\over f(x)})\).
+Y &\to D(f) \\
+\tv{x, t} &\mapsto x
+.\end{align*} with inverse
+\begin{align*}
+D(f)  &\to Y \\
+x     &\mapsto \tv{x, {1\over f(x)} }
+\end{align*}
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-10-15-09-50-03.png}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-15-09-50-03.png}
 \caption{Image}
 \end{figure}
 
-Note that \(\pi: X\cross \AA^1 \to X\) is regular, using prop 3.8: if
-the coordinates of a map are regular functions, then the entire map is a
-morphism of ringed spaces. We can then note that \(1\over f(x)\) is
-regular on \(D(f)\), since \(f\neq 0\) there.
+Note that \(\pi: X\cross \AA^1 \to X\) is regular, using prop 3.8 in
+\autocite{AndreasGathmann515}, if the coordinates of a map are regular
+functions, then the entire map is a morphism of ringed spaces. We can
+then note that \(1\over f(x)\) is regular on \(D(f)\), since \(f\neq 0\)
+on this set.
 
 \end{proof}
 
 \begin{example}
 
 \(\AA^2 \smz\) is not an affine variety. Note that this is also not a
-distinguished open.
-
-We showed on a HW problem that the regular functions on \(\AA^2\smz\)
-are \(k[x, y]\), which are also the regular functions on \(\AA^2\). So
-there is a map inducing a pullback
+distinguished open. We showed on a HW problem that the regular functions
+on \(\AA^2\smz\) are \(k[x, y]\), which are also the regular functions
+on \(\AA^2\). So there is a map inducing a pullback
 \begin{align*}  
-\iota: \AA^2\smz &\to \AA^2 \\
-\iota^* k[x, y] &\mapsvia{\sim} k[x, y]
+\iota: \AA^2\smz &\to \AA^2 \\ \\
+\iota^*: k[x, y]  &\mapsvia{\sim} k[x, y]
 .\end{align*} Note that \(\iota^*\) is an isomorphism on the space of
 regular functions, but \(\iota\) itself is not an isomorphism of
 topological spaces. Why? \(i^{-1}\) is not defined at zero.
 
 \end{example}
 
-\hypertarget{chapter-5}{%
-\subsection{Chapter 5}\label{chapter-5}}
+\hypertarget{prevarieties-chapter-5}{%
+\subsection{Prevarieties (Chapter 5)}\label{prevarieties-chapter-5}}
 
 \begin{definition}[Prevariety]
 
-A \emph{prevariety} is a ringed spaced \(X\) with a finite open cover by
-affine varieties. This is a topological space \(X\) with an open cover
-\(\ts{U_i}_{i=1}^n \covers X\) such that \((U_i, \ro{\OO_X}{U_i} )\) is
-isomorphic to an affine variety. We'll call \(\OO_X\) the sheaf of
-\emph{regular functions} and \(U_i\subset X\) \emph{affine open sets}.
+A \textbf{prevariety} is a ringed spaced \(X\) with a finite open cover
+by affine varieties. This is a topological space \(X\) with an open
+cover \(\ts{U_i}_{i=1}^n \covers X\) such that
+\((U_i, \ro{\OO_X}{U_i} )\) is isomorphic to an affine variety. We'll
+call \(\OO_X\) the sheaf of \emph{regular functions} and
+\(U_i\subset X\) \emph{affine open sets}.
 
 \end{definition}
 
@@ -3741,13 +4064,13 @@ One way to construct prevarieties from affine varieties is by
 
 \begin{definition}[Glued Spaces]
 
-let \(X_1, X_2\) be prevarieties which are themselves actual varieties.
-Let \(U_{12} \subset X_1, U_{21} \subset X_2\) be opens and
+Let \(X_1, X_2\) be prevarieties which are themselves actual varieties,
+and let \(U_{12} \subset X_1, U_{21} \subset X_2\) be opens with
 \(f: U_{12} \to U_{21}\) an isomorphism of ringed spaces.
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-10-15-10-08-59.png}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-15-10-08-59.png}
 \caption{Image}
 \end{figure}
 
@@ -3755,14 +4078,16 @@ As a set, take \(X = X_1 \disjoint X_2/\sim\) where \(a\sim f(a)\) for
 all \(a\in U_{12}\). As a topological space, \(U \subset X\) is open iff
 \(U_i \da U\intersect X_i\) are open in \(X_i\). As a ringed space, we
 take
-\(\OO_X(U) \da \ts{\phi: U\to k \st \ro{\phi}{U_i} \in \OO_{X_i}}\).
+\begin{align*}
+\OO_X(U) \da \ts{\phi: U\to k \st \ro{\phi}{U_i} \in \OO_{X_i}}
+\end{align*}
 
 \end{definition}
 
 \begin{example}
 
-The prototypical example is \(\PP^1/k\) constructed from two copies of
-\(\AA^1/k\). Set \(X_1 = \AA^1, X_2 = \AA^2\), with
+The prototypical example is \(\PP^1_{/k}\) constructed from two copies
+of \(\AA^1_{/k}\). Set \(X_1 = \AA^1, X_2 = \AA^2\), with
 \(U_{12} \da D(x) \subset X_1\) and \(U_{21} \da D(y) \subset X_2\).
 Then let
 \begin{align*}  
@@ -3773,30 +4098,31 @@ morphism \(U_{12} \mapsvia{\sim} \AA^1\).
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-10-15-10-20-32.png}
-\caption{Image}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-15-10-20-32.png}
+\caption{Gluing two affine lines to obtain projective space.}
 \end{figure}
 
 Over \(\CC\), topologically this yields a sphere
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-10-15-10-23-24.png}
-\caption{Image}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-15-10-23-24.png}
+\caption{Complex projective space is a sphere.}
 \end{figure}
 
 Given a ringed space \(X = X_1\union X_2\) with a structure sheaf
 \(\OO_X\), what is \(\OO_X(X)\)? By definition, it's
-
 \begin{align*}  
 \OO_X(X) \da \ts{\phi: X\to k \st \ro{\phi}{X_1}, \ro{\phi}{X_2} \text{ are regular} }
 .\end{align*}
 
 Then if \(\ro{\phi}{X_1} = f(x)\) and \(\ro{\phi}{X_2} = g(y)\), we have
-\(y=1/x\) on the overlap and so \(\ro{f(x)}{D(x)} = \ro{g(1/x)}{D(x)}\).
-Since \(f, g\) are rational functions agreeing on an infinite set,
-\(f(x) = g(1/x)\) both being polynomial forces \(f = g = c\) for some
-constant \(c \in k\). Thus \(\OO_X(X) = k\).
+\(y=1/x\) on the overlap and so
+\begin{align*}
+\ro{f(x)}{D(x)} = \ro{g(1/x)}{D(x)}
+\end{align*} Since \(f, g\) are rational functions agreeing on an
+infinite set, \(f(x) = g(1/x)\) both being polynomial forces
+\(f = g = c\) for some constant \(c \in k\). Thus \(\OO_X(X) = k\).
 
 What about \(\OO_X(X_1)\)? This is just \(k[x]\), and similarly
 \(\OO_X(X_2) = k[y]\). We can also consider
@@ -3813,20 +4139,21 @@ What about \(\OO_X(X_1)\)? This is just \(k[x]\), and similarly
 
 \end{example}
 
-\hypertarget{tuesday-october-20}{%
-\section{Tuesday, October 20}\label{tuesday-october-20}}
+\hypertarget{prevarieties-tuesday-october-20}{%
+\section{Prevarieties (Tuesday, October
+20)}\label{prevarieties-tuesday-october-20}}
 
-\hypertarget{gluing-two-opens}{%
-\subsection{Gluing Two Opens}\label{gluing-two-opens}}
+\hypertarget{gluing-two-opens-in-a-prevariety}{%
+\subsection{Gluing Two Opens in a
+Prevariety}\label{gluing-two-opens-in-a-prevariety}}
 
 Recall that a \emph{prevariety} is a ringed space that is locally
 isomorphic to an affine variety, where we recall that \((X, \OO_X)\) is
 \emph{locally isomorphic} to an affine variety iff there exists an open
-cover \(U_i \covers X\) such that \((U_i, \OO_{U_i})\).
-
-We found one way of producing these: the gluing construction. Given two
-ringed spaces \((X_1, \OO_{X_1})\) and \((X_2, \OO_{X_2})\) and open
-sets \(U_{12} \in X_1\) and \(U_{21} \in X_2\) and an isomorphism
+cover \(U_i \covers X\) such that \((U_i, \OO_{U_i})\). We found one way
+of producing these: the gluing construction. Given two ringed spaces
+\((X_1, \OO_{X_1})\) and \((X_2, \OO_{X_2})\) and open sets
+\(U_{12} \in X_1\) and \(U_{21} \in X_2\) and an isomorphism
 \((U_{12}, \OO_{U_{12}}) \mapsvia{f} (U_{21}, \OO_{U_{21}})\), we
 defined
 
@@ -3841,11 +4168,12 @@ defined
 
 \begin{example}
 
-\(\PP^1/k = X_1 \union X_2\) where \(X_1 \cong \AA^1, X_2 \cong \AA^1\).
-Take \(U_{12} = D(x)\) and \(U_{21} = D(y)\) with
+\(\PP^1_{/k} = X_1 \union X_2\) where
+\(X_1 \cong X_2 \cong \AA^1_{/k}\). Take \(U_{12} \da D(x)\) and
+\(U_{21} \da D(y)\) with
 \begin{align*}  
 f: U_{12} &\to U_{21} \\
-x &\mapsto {1\over x} = y
+x &\mapsto y \da {1\over x}
 .\end{align*}
 
 \begin{figure}
@@ -3862,7 +4190,7 @@ recovers \(S^2\) in the classical topology.}
 Let \(X_i = \AA^1\) and \(U_{12} = D(x), U_{21} = D(y)\) with
 \begin{align*}  
 f: U_{12} &\to U_{21} \\
-x &\mapsto x=y
+x &\mapsto y\da x
 .\end{align*}
 
 \begin{figure}
@@ -3871,7 +4199,7 @@ x &\mapsto x=y
 \caption{Line with the doubled origin.}
 \end{figure}
 
-Then
+Define \(X\da X_1 \disjoint_f X_2\), then
 \(\OO_X = \ts{\phi: X\to k \st \ro{\phi}{X_i} \text{ is regular}} \cong k[x]\).
 
 \end{example}
@@ -3909,30 +4237,35 @@ Then the gluing construction is given by
   \(\OO_x(U) \da \ts{\phi:U\to k \st \ro{\phi}{U\intersect X_i} \in \OO_{X_i} }\).
 \end{enumerate}
 
-Every prevariety arises from the gluing construction applied to \(X_i\)
-affine varieties, since a prevariety \((X, \OO_X)\) by definition has an
-open affine cover \(X_i \covers X\) and \(X\) is the result of gluing
-the \(X_i\)s by the identity.
+Every prevariety arises from the gluing construction applied to affine
+varieties \(X_i\), since a prevariety \((X, \OO_X)\) by definition has
+an open affine cover \(\ts{X_i} \covers X\) and \(X\) is the result of
+gluing the \(X_i\) by the identity.
 
 \begin{example}
 
-Let \(X_1 = X_2 = X_3 = \AA^2/k\). Glue by the following instructions:
+Let \(X_1 = X_2 = X_3 \da \AA^2/k\). Glue by the following instructions:
 
-\begin{figure}
-\centering
-\includegraphics{figures/image_2020-10-20-10-11-07.png}
-\caption{The map not shown is whatever formula is necessary to make the
-diagram commute.}
-\end{figure}
+\begin{center}
+\begin{tikzcd}
+\tv{x_1, x_2} \in X_1 
+\ar[rdd, "{\tv{y_1, y_2} = \tv{ {1\over x_1}, {x_2\over x_1} }}"']
+\ar[rr, "{\tv{z_1, z_2} = \tv{ {1\over x_2}, {x_1\over x_2} } }"]
+& & 
+\tv{z_1, z_2} \in X_3 \ar[ldd, "f"] \\ \\
+& 
+\tv{y_1, y_2} \in X_2 \\ 
+& 
+\end{tikzcd}
+\end{center}
 
-Here
+where \(f\) is a map with whatever formula is required to make the
+diagram commute. Here
 
 \begin{itemize}
 \tightlist
 \item
-  \((y_1, y_2) = (1/x_1, x_2/x_1)\)
-\item
-  \((z_1, z_2) = (1/x_2, x_1/x_2)\)
+  \(D(x_1 x_2) \subseteq X_1\)
 \item
   \(U_{12} = D(x_1)\)
 \item
@@ -3941,7 +4274,7 @@ Here
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-10-20-10-13-56.png}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-20-10-13-56.png}
 \caption{Yields \(\PP^2\)}
 \end{figure}
 
@@ -3954,11 +4287,10 @@ Here \(X_1 = [1: y/x: z/x]\), \(X_2 = [x/y: 1: z/y]\).
 From Gathmann 5.10, open and closed subprevarieties. Let \(X\) be a
 prevariety and suppose \(U\subset X\) is open. Then \((U, \OO_U)\) is a
 prevariety where \(\OO_U = \ro{\OO_X}{U}\). How can we write \(U\) as
-(locally) an affine variety?
-
-Since the \(U_i\) are covered by distinguished opens \(D_{ij}\) in
-\(X_i\) where \(X = \union X_i\) with \(X_i\) affine varieties, we can
-write \(U = \Union_i U_i = \Union_{i, j} D_{ij}\).
+(locally) an affine variety? Since the \(U_i\) are covered by
+distinguished opens \(D_{ij}\) in \(X_i\) where \(X = \union X_i\) with
+\(X_i\) affine varieties, we can write
+\(U = \Union_i U_i = \Union_{i, j} D_{ij}\).
 
 \end{example}
 
@@ -3967,20 +4299,24 @@ write \(U = \Union_i U_i = \Union_{i, j} D_{ij}\).
 Let \(Y\subset X\) be a closed subset of a prevariety \(X\). We need to
 define \(\OO_Y(U)\) for all \(U\subset Y\) open, so we set
 \begin{align*}  
-\OO_Y(U) = \ts{\phi: U\to k \st \forall p\in U, \, \exists V_p \text{ with } p\in V_p \subset_{\text{open}} X \text{ and } \psi\in \OO_X(V_p) \text{ s.t. } \ro{\psi}{U\intersect V} \phi  }
+\OO_Y(U) = \ts{\phi: U\to k \st \forall p\in U, \, \exists V_p \text{ with } p\in V_p \stacksymbol{}{\text{open}}{\subseteq} X \text{ and } \psi\in \OO_X(V_p) \text{ s.t. } \ro{\psi}{U\intersect V} = \phi  }
 .\end{align*}
 
 What's the picture?
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-10-20-10-29-25.png}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-10-20-10-29-25.png}
 \caption{Sheaf for a closed subset.}
 \end{figure}
 
-It's an exercise to show that this is a prevariety.
-
 \end{example}
+
+\begin{exercise}[?]
+
+Show that this is a prevariety.
+
+\end{exercise}
 
 \begin{remark}
 
@@ -3999,16 +4335,19 @@ reverse direction is not.
 
 \end{remark}
 
-\hypertarget{thursday-october-22-separatedness}{%
-\section{Thursday, October 22:
-Separatedness}\label{thursday-october-22-separatedness}}
+\hypertarget{separatedness-thursday-october-22}{%
+\section{Separatedness (Thursday, October
+22)}\label{separatedness-thursday-october-22}}
 
 \begin{example}
 
 Consider \(\AA^1\), whose polynomial functions are \(k[x]\). Consider
-now \(D(x) \subset \AA^1\), which is equal to the affine variety
-\(V(xy-1)\). Then the regular functions on \(D(x)\) are
-\(k[x, y] / \gens{xy-1} \cong k[x, x^{-1} ]\).
+now \(D(x) \subset \AA^1\), which is isomorphic to the affine variety
+\(V(xy-1)\). Then the regular functions on \(D(x)\) are given by
+\begin{align*}  
+A(D(x)) = 
+\frac{ k[x, y] }{ \gens{xy-1} } \cong k[x, x^{-1} ]
+.\end{align*}
 
 \end{example}
 
@@ -4020,10 +4359,9 @@ that \(X\) has a finite open cover by affine varieties
 \((U_i, \ro{\OO_X}{U_i})\), and a \emph{morphism} of prevarieties is a
 morphism of ringed spaces. We saw that one can construct prevarieties by
 gluing finite collections of prevarieties or affine varieties along open
-sets, and all prevarieties arise this way.
-
-Similar to varieties, the product \(P\) of prevarieties \(X, Y\) will
-satisfy a universal property:
+sets, and all prevarieties arise this way. Similar to varieties, the
+product \(P\) of prevarieties \(X, Y\) will satisfy a universal
+property:
 
 \begin{center}
 \begin{tikzcd}
@@ -4045,19 +4383,20 @@ isomorphism between any two products.
 
 \begin{proof}
 
-Standard!
+Standard exercise in category theory.
 
 \end{proof}
 
-\hypertarget{issues-with-the-product-of-prevarieties}{%
-\subsubsection{Issues with the product of
-prevarieties}\label{issues-with-the-product-of-prevarieties}}
+\hypertarget{constructing-the-product-of-prevarieties}{%
+\subsubsection{Constructing the product of
+prevarieties}\label{constructing-the-product-of-prevarieties}}
 
 \begin{example}
 
 Consider \(\AA^1 \times \AA^1\), then the product is (and should be)
-\(\AA^2\), but \(\AA^2\) does not have the product topology. The open
-set \(D(x-y)\) is not covered by products of open sets.
+\(\AA^2\), but \(\AA^2\) does not have the product topology. For
+example, one problem is that the Zariski open set \(D(x-y)\) is not
+covered by products of open sets in \(\AA^1\).
 
 \end{example}
 
@@ -4118,40 +4457,49 @@ A \textbf{variety} is a separated prevariety.
 
 \end{definition}
 
-\hypertarget{tuesday-october-27-general-varieties-and-completeness}{%
-\section{Tuesday, October 27: General Varieties and
-Completeness}\label{tuesday-october-27-general-varieties-and-completeness}}
+\hypertarget{general-varieties-and-completeness-tuesday-october-27}{%
+\section{General Varieties and Completeness (Tuesday, October
+27)}\label{general-varieties-and-completeness-tuesday-october-27}}
 
-Recall that an affine variety is given by \(X = V(I) \subset \AA^n/k\),
-and we have sheaves of rings of regular functions \(\OO_X\) on \(X\). A
-prevariety is a ringed space that is covered by finitely many affine
-spaces. A morphism of prevarieties \(f:X\to Y\) is a continuous map such
-that the pullbacks of regular functions are regular, i.e.~for all
-\(\phi \in \OO_X(U)\) we have \(f^* \phi \in \OO_X(f^{-1} (U) )\). We
-can form a category \(\operatorname{PreVar}_k\) of prevarieties over
-\(k\), where we have several important constructions
+Recall the following:
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+\begin{itemize}
 \item
-  Gluing
+  An \emph{affine variety} is given by \(X = V(I) \subset \AA^n/k\), and
+  we have sheaves of rings of regular functions \(\OO_X\) on \(X\).
 \item
-  Products: Given \(X, Y\), there is a unique prevariety \(X\cross Y\)
-  such that
+  A \emph{prevariety} is a ringed space that is covered by finitely many
+  affine spaces.
+\item
+  A \emph{morphism} of prevarieties \(f:X\to Y\) is a continuous map
+  such that the pullbacks of regular functions are regular, i.e.~for all
+  \(\phi \in \OO_X(U)\) we have \(f^* \phi \in \OO_X(f^{-1} (U) )\).
+\item
+  We can form a category \(\operatorname{PreVar}_k\) of prevarieties
+  over \(k\), where we have several important constructions
 
-  \begin{center}
-  \begin{tikzcd}
-    Z\ar[drr, bend left , "f_x"] \ar[rdd, bend right, "f_y"] \ar[rd, "\exists ! h", dotted] &                                         & \\
-                                                                                         & X\cross Y\ar[r, "\pi_X"]\ar[d, "\pi_Y"] & X \\
-                                                                                         & Y                                       &
-    \end{tikzcd}
-  \end{center}
-\end{enumerate}
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \item
+    Gluing
+  \item
+    Products: Given \(X, Y\), there is a unique prevariety \(X\cross Y\)
+    such that
 
-We had an analogue of being Hausdorff: the diagonal \(\Delta_X\) is
-closed.
+    \begin{center}
+    \begin{tikzcd}
+      Z\ar[drr, bend left , "f_x"] \ar[rdd, bend right, "f_y"] \ar[rd, "\exists ! h", dotted] &                                         & \\
+                                                                                           & X\cross Y\ar[r, "\pi_X"]\ar[d, "\pi_Y"] & X \\
+                                                                                           & Y                                       &
+      \end{tikzcd}
+    \end{center}
+  \end{enumerate}
+\item
+  We had an analogue of being Hausdorff: the diagonal \(\Delta_X\) is
+  closed.
+\end{itemize}
 
-\begin{example}
+\begin{example}[The line with double origins is not separated]
 
 Glue \(D(x) \subset \AA^1\) to \(D(y) \subset \AA^1\) by the isomorphism
 \begin{align*}  
@@ -4179,18 +4527,16 @@ have the following situation in blue:
 \begin{figure}
 \centering
 \includegraphics[width=2.60417in,height=\textheight]{figures/image_2020-10-27-09-52-26.png}
-\caption{Image}
+\caption{The diagonal has four copies of the origin.}
 \end{figure}
 
 We claim that \(\Delta_X\) is not closed, and for example
 \((0, 0') \in \bar{\Delta}_X\). Consider
 \(U\cross U' \subset X\cross X\) where \(U, U'\) are the two copies of
 \(\AA^1\) in \(X\). This is an affine open set, since it's isomorphic to
-\(\AA^1\cross \AA^1\).
-
-If \(\Delta_X\) were closed, then
+\(\AA^1\cross \AA^1\). If \(\Delta_X\) were closed, then
 \(S \da \Delta_X \intersect (U\cross U') = \ts{(x, x) \st x\neq 0}\)
-would be closed in \(U\cross U'\).
+would be closed in \(U\cross U'\):
 
 \begin{figure}
 \centering
@@ -4204,7 +4550,7 @@ This is because any polynomial vanishing on \(S\) must vanish at
 
 \end{example}
 
-\begin{lemma}[?]
+\begin{lemma}[Affine varieties and affine subvarieties are varieties]
 
 \envlist
 
@@ -4288,30 +4634,32 @@ Varieties}\label{chapter-6-projective-varieties}}
 Note that affine varieties of positive dimension over \(\CC\) are not
 compact in the classical topology, but \emph{are} compact in the Zariski
 topology. Similarly, they are Hausdorff classically, but not in the
-Zariski topology. We want to find notions equivalent to Hausdorffness
-and compactness in the classical setting, which end up also applying to
-varieties. The fix in the latter case was considering ``separatedness''.
-The fix for compactness will be the following:
+Zariski topology. We want to find notions equivalent to being Hausdorff
+and compact that coincide with these notions in the classical topologies
+but generalize to varieties. The fix for being Hausdorff case was
+``separatedness'', and the fix for compactness will be the following:
 
 \begin{definition}[Complete]
 
 A variety \(X\) is \textbf{complete} iff for any variety \(Y\) the
-projection map \(\pi_Y:X\cross Y\to Y\) is a closed\footnote{Recall that
-  this means that \(\pi_Y(U)\) is closed whenever \(U\) is closed.} map.
+projection map
+\begin{align*}
+\pi_Y:X\cross Y\to Y
+\end{align*} is a closed\footnote{Recall that this means that
+  \(\pi_Y(U)\) is closed whenever \(U\) is closed.} map.
 
 \end{definition}
 
-\begin{example}
+\begin{example}[$\AA^1$ is not complete]
 
-\(X \da \AA^1\) is not complete. Let \(Y=\AA^1\) and
-\(Z = V(xy-1)\subset X\cross Y\). Then
+Let \(X = Y=\AA^1\) and set \(Z \da V(xy-1)\subset X\cross Y\). Then
 \(\pi_Y(Z) = D(y) \subset Y \subset \AA^1\) is not closed.
 
 \end{example}
 
-\hypertarget{thursday-october-29-projective-space-homogeneous-polynomials}{%
-\section{Thursday, October 29: Projective Space Homogeneous
-Polynomials}\label{thursday-october-29-projective-space-homogeneous-polynomials}}
+\hypertarget{projective-space-homogeneous-polynomials-thursday-october-29}{%
+\section{Projective Space Homogeneous Polynomials (Thursday, October
+29)}\label{projective-space-homogeneous-polynomials-thursday-october-29}}
 
 \hypertarget{projective-space}{%
 \subsection{Projective Space}\label{projective-space}}
@@ -4321,7 +4669,7 @@ Polynomials}\label{thursday-october-29-projective-space-homogeneous-polynomials}
 Let \(n\in \NN\), and define \textbf{projective \(n\dash\)space} over
 \(k\) by\\
 \begin{align*}  
-\PP^n/k = \ts{\text{lines through the origin in } k^{n+1}}
+\PP^n_{/k} = \ts{\text{lines through the origin in } k^{n+1}}
 .\end{align*}
 
 \end{definition}
@@ -4333,9 +4681,11 @@ points \(\tv{x_0, \cdots, x_n} \in L\), and \(L\) is uniquely determined
 by this point up to scaling by elements in \(k\units\). In this case, we
 write
 \(L = \tv{x_0: \cdots : x_n} = \tv{\lambda x_0: \cdots : \lambda x_n}\).
-We can then define \(\PP^n/k = k^{n+1}\smz / \sim\) where we mod out by
-scalar multiplication. We call \([x_1 : \cdots : x_n]\) the
-\emph{homogeneous coordinates} on \(\PP^n/k\).
+We can then alternatively define
+\(\PP^n{_/k} \da \qty{ k^{n+1}\smz} / \sim\) where we mod out by scalar
+multiplication \(x\sim \lambda x\) for \(\lambda\in k\units\). We call
+\([x_1 : \cdots : x_n]\) the \emph{homogeneous coordinates} on
+\(\PP^n/k\).
 
 \end{remark}
 
@@ -4355,7 +4705,6 @@ that each point in this set is of the form
 \(\tv{1: {x_1\over x_0} : \cdots : {x_n \over x_0}}\), yielding a copy
 of \(\AA^n\subset \PP^n\) given by points
 \(\tv{{x_1\over x_0}, \cdots, {x_n\over x_0}}\). What is its complement?
-
 It's given by \(\ts{\tv{0: x_1: \cdots : x_n}} \subset \PP^n\), which is
 equal (as a set) to a copy of \(\PP^{n-1}\) defined by the set of lines
 in \(k^n\) defined by \(x_0 = 0\).
@@ -4365,49 +4714,44 @@ in \(k^n\) defined by \(x_0 = 0\).
 \begin{example}[?]
 
 Note that \(\PP^1\) contains a copy of \(\AA^1\) where \(x_0 \neq 0\)
-and a second copy where \(x_1 \neq 0\), admitting maps
+and a second copy where \(x_1 \neq 0\), yielding maps
 \begin{align*}  
-f_1: \AA^1 &\to \PP^1 \\
-\tv{x_0: x_1} &\mapsto \tv{{x_0 \over x_1}}
-.\end{align*}
-
-and
-
-\begin{align*}  
-f_2: \AA^1 &\to \PP^1 \\
+f_1: \PP^1 &\to \AA^1 \\
+\tv{x_0: x_1} &\mapsto \tv{{x_0 \over x_1}} \\ \\
+f_2: \PP^1 &\to \AA^1 \\
 \tv{x_0: x_1} &\mapsto \tv{{x_1 \over x_0}}
-,\end{align*} since every line in \(\PP^1\) has either \(x_0\neq 0\) or
-\(x_1 \neq 0\). These two copies cover \(\PP^1\), and the ``transition
-map'' is inversion.
+,\end{align*} since every point in \(\PP^1\) corresponds to some line in
+\(\AA^2\), and thus has either \(x_0\neq 0\) or \(x_1 \neq 0\). These
+two copies cover \(\PP^1\), and the ``transition map'' is inversion.
 
 \end{example}
 
 \begin{remark}
 
-More generally, there are \(n+1\) inclusions \(\AA^n \injects \PP^n\)
-given by dividing by the \(j\)th coordinate, and their union is the
-entire space. The gluing construction gives \(\PP^n\) the structure of a
-prevariety: we can consider \(D(x_j) \subset \PP^n\) where each has the
-structure of a ringed space \((\AA^n, \OO_{\AA^n})\). We have
-\(D(x_i) \intersect D(x_j) \subset D(x_i)\), which has coordinate
-\(\ts{ x_k/x_i,\, k\neq i }\), and similarly
+More generally, there are \(n+1\) projection \(\PP^n \surjects \AA^n\)
+given by dividing by the \(j\)th coordinate, and the union of their
+images is the entire space. The gluing construction gives \(\PP^n\) the
+structure of a prevariety: we can consider \(D(x_j) \subset \PP^n\)
+where each has the structure of a ringed space \((\AA^n, \OO_{\AA^n})\).
+We have \(D(x_i) \intersect D(x_j) \subset D(x_i)\), which has
+coordinate \(\ts{ x_k/x_i,\, k\neq i }\), and similarly
 \(D(x_i) \intersect D(x_j) \subseteq D(x_j)\) with coordinates
 \(\ts{ x_k/x_j, \, k\neq j}\). Their intersection is
-\(D\qty{x_i \over x_j}\), which is a copy of \(\AA^{n-1}\).
+\(D(x_i / x_j) \cong \AA^{n-1}\).
 
 \end{remark}
 
 \begin{example}[?]
 
 Consider \(\PP^1\), then \(D(x_0) \cong \AA^1\) with which contains a
-copy of \(\AA^1\) with coordinate ring \(k\tv{{x_1\over x_0}}\) and a
-subset \(D\qty{x_1\over x_0}\) with coordinate ring \(k[y, 1/y]\), and
-similarly, \(D(x_1) \cong \AA^1\) has coordinate ring
-\(k\tv{{x_0\over x_1}}\) and contains \(D\qty{x_0\over x_1}\) with
-coordinate ring \(k\tv{z, {1\over z}}\). Consider their overlap
-\(D(x_0) \intersect D(x_1)\). (?) When do \(y, z\) denote the same point
-in \(\PP^1\)? When \(y = 1/z\).
+copy of \(\AA^1\) with coordinate ring \(k[x_1 / x_0]\) and a subset
+\(D(x_1 / x_0)\) with coordinate ring \(k[y, y\inv]\), and similarly,
+\(D(x_1) \cong \AA^1\) has coordinate ring \(k[x_0\over x_1]\) and
+contains \(D(x_0/ x_1)\) with coordinate ring \(k[z, z\inv]\). Consider
+their overlap \(D(x_0) \intersect D(x_1)\).
+\todo[inline]{Might be mistakes here.}
 
+When do \(y, z\) denote the same point in \(\PP^1\)? When \(y = z\inv\).
 We can conclude that the \(n+1\) copies \(D(x_i) \subset \PP^n\) are
 affine varieties isomorphic as ringed spaces on the overlaps, so the
 gluing construction makes \(\PP^n\) a prevariety.
@@ -4462,8 +4806,16 @@ A \textbf{graded ring} \(R\) is a ring \(R\) with abelian subgroups
 
 \end{definition}
 
-\hypertarget{tuesday-november-02}{%
-\section{Tuesday, November 02}\label{tuesday-november-02}}
+\hypertarget{cones-and-projectivization-tuesday-november-02-todo}{%
+\section{Cones and Projectivization (Tuesday, November 02,
+Todo)}\label{cones-and-projectivization-tuesday-november-02-todo}}
+
+\begin{proposition}[Quotients of graded rings by homogeneous ideals are again graded]
+
+If \(R\) is a graded ring and \(I\normal R\) is a homogeneous ideal,
+then \(R/I\) is a graded ring.
+
+\end{proposition}
 
 \begin{definition}[Cones]
 
@@ -4524,24 +4876,24 @@ We have
 Define
 \begin{align*}  
 V_p(J) &\da \ts{\vector x \in \PP^n \st f(\vector x) = 0 \text{ for all homogeneous } f\in J} \subseteq \PP^n \\
-I_p(X) &\da \gens{ f \in k[x_0, \cdots, x_n] \text{ homogeneous } \st f(\vector x) = \vector 0\,\, \forall x\in X} \normal k[x_0, \cdots, x_n]
+I_p(X) &\da \gens{ f \in k[x_0, \cdots, x_n] \text{ homogeneous } \st f(\vector x) = 0\,\, \forall x\in X} \normal k[x_0, \cdots, x_n]
 .\end{align*}
 
 \end{proposition}
 
-\hypertarget{thursday-november-05-projective-spaces}{%
-\section{Thursday, November 05: Projective
-Spaces}\label{thursday-november-05-projective-spaces}}
+\hypertarget{projective-spaces-thursday-november-05}{%
+\section{Projective Spaces (Thursday, November
+05)}\label{projective-spaces-thursday-november-05}}
 
-We defined \(\PP^n_{/k} \da k^{n+1}\smz /\sim\) where
+We defined \(\PP^n_{/k} \da \qty{ k^{n+1}\smz} /\sim\) where
 \(x\sim \lambda x\) for all \(x\in k\units\), which we identified with
 lines through the origin in \(k^{n+1}\). We have homogeneous coordinates
 \(p = [x_0: \cdots : x_n]\). We say an ideal is \emph{homogeneous} iff
 for all \(f\in I\), the homogeneous part \(f_d\in I\) for all \(d\). In
 this case \(V_p(I) \subset \PP^{n}_{/k}\) defined as the vanishing locus
-of all homogeneous elements of \(I\) is well-defined. Think of this as
-the ``projective version'' of a vanishing locus. Similarly we defined
-\(I_p(S)\) defined as the ideal generated by all homogeneous
+of all homogeneous elements of \(I\) is well-defined, and we think of
+this as the ``projective version'' of a vanishing locus. Similarly we
+defined \(I_p(S)\) defined as the ideal generated by all homogeneous
 \(f\in \kx{n}\) such that \(f(x) = 0\) for all \(x\in S\).
 
 \begin{remark}
@@ -4553,7 +4905,8 @@ of points in \(\AA^{n+1}\smz \union \ts{0}\) which map to \(V_p(I)\).
 
 We have an alternative definition of a cone in \(\AA^{n+1}\),
 characterized as a closed subset \(C\) which is closed under scaling, so
-\(kC\subseteq C\).
+\(kC\subseteq C\). The following proposition(s) show that these notions
+are related.
 
 \begin{proposition}
 
@@ -4617,7 +4970,8 @@ Nullstellensatz}\label{projective-nullstellensatz}}
 \begin{definition}[Irrelevant Ideal]
 
 The homogeneous ideal \(I_0 \da (x_0, \cdots, x_n) \subset \kx{n}\) is
-denoted the \textbf{irrelevant ideal}.
+denoted the \textbf{irrelevant ideal}. This corresponds to the origin in
+\(\AA^{n+1}\), which does not correspond to any point in \(\PP^n\).
 
 \end{definition}
 
@@ -4628,10 +4982,16 @@ denoted the \textbf{irrelevant ideal}.
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \item
-  For all \(X\subseteq \PP^n\), \(V_p(I_p(X)) = X\).
+  For all \(X\subseteq \PP^n\),
+  \begin{align*}
+  V_p(I_p(X)) = X
+  \end{align*}
 \item
   For all homogeneous ideal \(J\subset \kx{n}\) such that (importantly)
-  \(\sqrt{J} \neq I_0\), \(I_p(V_p(J)) = \sqrt J\).
+  \(\sqrt{J} \neq I_0\),
+  \begin{align*}
+  I_p(V_p(J)) = \sqrt J
+  \end{align*}
 \end{enumerate}
 
 \end{proposition}
@@ -4642,8 +5002,11 @@ denoted the \textbf{irrelevant ideal}.
 polynomials vanishing on \(X\), then this certainly contains \(X\).
 
 \(\subset\): This follows from part (b), since \(X = V_p(J)\) implies
-that \((V_p I_p V_p)(J) = V_p(\sqrt J) = V_p(J) = X\), since taking
-roots of homogeneous polynomials doesn't change the vanishing locus.
+that
+\begin{align*}
+(V_p I_p V_p)(J) = V_p(\sqrt J) = V_p(J) = X
+\end{align*} since taking roots of homogeneous polynomials doesn't
+change the vanishing locus.
 
 \end{proof}
 
@@ -4655,11 +5018,9 @@ vanishes on \(V_p(J)\). \todo[inline]{Check}
 It remains to show \(\sqrt{J} \subset I_p(V_p(J))\) , but we can write
 \(I_p(V_p(J))\) as \(\gens{f \in \kx{n}}\) the set of homogeneous
 polynomials vanishing on \(V_p(S)\), which is equal to those vanishing
-on \(V_a(J) \smz\).
-
-But since \(I_p(\cdots)\) is closed, this is equal to the \(f\) that
-vanish on \(\bar{V_a(J)\smz}\), which is only equal to \(V_a(J)\) iff
-\(V_a(J) \neq \ts{0}\).
+on \(V_a(J) \smz\). But since \(I_p(\cdots)\) is closed, this is equal
+to the \(f\) that vanish on \(\bar{V_a(J)\smz}\), which is only equal to
+\(V_a(J)\) iff \(V_a(J) \neq \ts{0}\).
 
 \begin{figure}
 \centering
@@ -4673,10 +5034,11 @@ V_a(J) = \ts{0} \iff \sqrt{J} = I_0
 .\end{align*}
 
 Thus
-\(I_p(V_p(J)) = \gens{f \st \text{homogeneous vanishing on }V_a(J)}\).
-Using the fact that \(V_a(J)\) is a cone, its ideal is homogeneous and
-thus generated by homogeneous polynomials by part (b) of the previous
-proposition. Thus
+\begin{align*}
+I_p(V_p(J)) = \gens{f \st \text{homogeneous vanishing on }V_a(J)}
+\end{align*} Using the fact that \(V_a(J)\) is a cone, its ideal is
+homogeneous and thus generated by homogeneous polynomials by part (b) of
+the previous proposition. Thus
 \begin{align*}  
 I_p(V_p(J)) = I_a(V_a(J)) = \sqrt J
 ,\end{align*} where the last equality follows from the affine
@@ -4700,15 +5062,20 @@ V_p(J) &\mapsfrom J
 \begin{remark}
 
 A better definition of a cone over \(X\subset \PP^n_{/k}\) is
-\(\bar{\pi^{-1}(X)} \subset \AA^{n+1}_{/k}\) where
 \begin{align*}  
+C(X) &\da \bar{\pi^{-1}(X)} \subset \AA^{n+1}_{/k} \\
+\text{where} \\
 \pi: \AA^{n+1}\smz &\to \PP^n \\
 \tv{x_0, \cdots, x_n} &\mapsto \tv{x_0: \cdots: x_n}
 .\end{align*}
 
 \end{remark}
 
-\begin{definition}[Projective Coordinate Ring]
+\hypertarget{projective-coordinate-ring}{%
+\subsection{Projective Coordinate
+Ring}\label{projective-coordinate-ring}}
+
+\begin{definition}[Homogeneous / Projective Coordinate Ring]
 
 Given \(X\subset \PP^n\) a projective variety, the \textbf{projective
 coordinate ring} of \(X\) is given by
@@ -4745,19 +5112,21 @@ Thus there is an order-reversing bijection
 \begin{align*}  
 \correspond{\text{Projective subvarieties } \\ Y\subset X}
 \iff
-\correspond{\text{Homogeneous nonirrelevant radical ideals} \\ I \subset S(X)}
+\correspond{\text{Homogeneous radical ideals} \\ I \neq I_0 \normal S(X)}
 \end{align*} and \(S(X) = \kx{n}/J \subset \bar{I_0}\).
 
 \end{remark}
 
 \begin{remark}
 
-Every nontrivial homogeneous ideal \(J\) contained in \(I_0\). Why?
-Suppose \(f\in J\sm I_0\) and \(f_0\neq 0\). Then \(f_0\in J\) but
-\(f_0\in k\subset \kx{n}\), implying that \(1\in J\) and thus
-\(J = \gens{1}\).
+Every nontrivial homogeneous ideal \(J\) contains the irrelevant ideal
+\(I_0\). Why? Suppose \(f\in J\sm I_0\) and \(f_0\neq 0\). Then
+\(f_0\in J\) but \(f_0\in k\subset \kx{n}\), implying that \(1\in J\)
+and thus \(J = \gens{1}\).
 
 \end{remark}
+
+\todo[inline]{Check?}
 
 \begin{remark}
 
@@ -4775,12 +5144,9 @@ follows because for all points \(\tv{x_0, \cdots, x_n} \in \PP^n\), some
 
 \end{remark}
 
-\hypertarget{tuesday-november-10}{%
-\section{Tuesday, November 10}\label{tuesday-november-10}}
-
-\hypertarget{homogenization-and-dehomogenization}{%
-\subsection{Homogenization and
-Dehomogenization}\label{homogenization-and-dehomogenization}}
+\hypertarget{homogenization-and-dehomogenization-tuesday-november-10}{%
+\section{Homogenization and Dehomogenization (Tuesday, November
+10)}\label{homogenization-and-dehomogenization-tuesday-november-10}}
 
 Last time: projective varieties \(V(f_i) \subset \PP^n_{/k}\) with
 \(f_i\) homogeneous. We proved the projective nullstellensatz: for any
@@ -4797,15 +5163,18 @@ Note that \(S(X)\) is not a ring of functions on \(X\): e.g.~for
 \(X= \PP^n\), \(S(X) = \kx{n}\) but \(x_0\) is not a function on
 \(\PP^n\). This is because
 \(f\qty{\tv{x_0: \cdots : x_n}} = f\qty{\tv{\lambda x_0: \cdots : \lambda x_n}}\)
-but \(x_0\neq \lambda x_0\). It still makes sense to ask if \(f\) is
-zero, so \(V_p(f)\) is a well-defined object.
+but \(x_0\neq \lambda x_0\). It still makes sense to ask when \(f\) is
+zero though, so \(V_p(f)\) is a well-defined object.
 
 \end{remark}
+
+\hypertarget{dehomogenization}{%
+\subsection{Dehomogenization}\label{dehomogenization}}
 
 \begin{definition}[Dehomogenization of functions and ideals]
 
 Let \(f\in \kx{n}\) be a homogeneous polynomial, then we define its
-dehomogenization as
+\textbf{dehomogenization} as
 \begin{align*}  
 f^i \da f(1, x_1, \cdots, x_n) \in k[x_1,\cdots, x_n]
 .\end{align*}
@@ -4819,29 +5188,27 @@ J^i \da \ts{f^i \st f\in J}
 
 \begin{example}
 
-This is usually not homogeneous. Take
+The dehomogenization is usually not homogeneous. Take
 \begin{align*}  
-f &= x_0^3 + x_0 x_1^2 + x_0 x_1 x_2 + x_0^2 + x_1 \\
+f &\da x_0^3 + x_0 x_1^2 + x_0 x_1 x_2 + x_0^2 + x_1 \\
 \implies f^i &= 1  +x_1^2 + x_1 x_2 + x_1
-,\end{align*} where has terms of mixed degrees.
+,\end{align*} which has terms of mixed degrees.
 
 \end{example}
 
 \begin{remark}
 
-\envlist
-
-\begin{itemize}
-\tightlist
-\item
-  \((fg)^i = f^i g^i\),
-\item
-  \((f+g)^i = f^i + g^i\)
-\end{itemize}
+\begin{align*}  
+(fg)^i &= f^i g^i \\
+(f+g)^i &= f^i + g^i
+.\end{align*}
 
 In other words, evaluating at \(x_0 = 1\) is a ring morphism.
 
 \end{remark}
+
+\hypertarget{homogenization}{%
+\subsection{Homogenization}\label{homogenization}}
 
 \begin{definition}[Homogenization of a function]
 
@@ -4855,9 +5222,10 @@ f^h \da x_0^d f\qty{ {x_1 \over x_0}, \cdots, {x_n \over x_0} }
 
 \begin{example}[?]
 
-Let \(f(x_1, x_2) = 1 + x_1^2 + x_1 x_2 + x_2^3\), then
+Set
 \begin{align*}  
-f^h(x_0, x_1, x_2) = x_0^3 + x_0 x_1^2 + x_0 x_1 x_2 + x_2^3
+f(x_1, x_2) &\da  1 + x_1^2 + x_1 x_2 + x_2^3 \\
+\implies f^h(x_0, x_1, x_2) &= x_0^3 + x_0 x_1^2 + x_0 x_1 x_2 + x_2^3
 ,\end{align*} which is a homogeneous polynomial of degree \(3\). Note
 that \((f^h)^i = f\).
 
@@ -4900,20 +5268,16 @@ f^h + g^h &= x_0 x_1 + x_0 x_2 \\
 
 \end{example}
 
-\begin{remark}
+What is the geometric significance?
 
-What is the geometric significance? Set
+\begin{proposition}[Geometric significance of homogenization]
+
+Set
 \begin{align*}
 U_0 \da \ts{\tv{x_0: \cdots :x_n} \in \PP^n_{/k} \st x_0 \neq 0 } \cong \AA^n_{/k}
 \end{align*} with coordinates
-\(\tv{{x_1\over x_0} : \cdots : {x_n \over x_0}}\).
-
-\end{remark}
-
-\begin{proposition}[?]
-
-The conclusion is thus that \(U_0\) with the subspace topology is equal
-to \(\AA^n\) with the Zariski topology.
+\(\tv{{x_1\over x_0} : \cdots : {x_n \over x_0}}\). Then \(U_0\) with
+the subspace topology is equal to \(\AA^n\) with the Zariski topology.
 
 \end{proposition}
 
@@ -4925,27 +5289,33 @@ is closed in the subspace topology. This amounts to showing that
 \(V_p(I) \intersect U_0\) is closed in \(\AA^n \cong U_0\). We can check
 that
 \begin{align*}  
-V_p\qty{f \st f\in I} = \ts{\bar x \da \tv{x_0:\cdots:x_n} \st f(\vector x) = 0 \,\, \forall f\in I}
+V_p\qty{f \st f\in I} = \ts{\vector x \da \tv{x_0:\cdots:x_n} \st f(\vector x) = 0 \,\, \forall f\in I}
 .\end{align*} Intersecting with \(U_0\) yields
-\(\ts{\tv{x_1:\cdots:x_n} \st f(\vector x) = 0,\, x_0\neq 0}\).
-Equivalently, we can rewrite this set as
+\begin{align*}  
+V_p\qty{f\st f\in I} \Intersect U_0 = \ts{\tv{x_1:\cdots:x_n} \st f(\vector x) = 0,\, x_0\neq 0}
+.\end{align*} Equivalently, we can rewrite this set \(S\) as
 \begin{align*}
-\ts{\tv{x_1:\cdots:x_n} \st f\qty{\tv{1, {x_1 \over x_0}, \cdots,{x_n \over x_0} }} = 0,\, f \text{ homogeneous}}
+S = \ts{\tv{x_1:\cdots:x_n} \st f\qty{\tv{1, {x_1 \over x_0}, \cdots,{x_n \over x_0} }} = 0,\, f \text{ homogeneous}}
 \end{align*} Since these are coordinates on \(\AA^1\), we have
-\(V_p(I) \intersect U_0 = V_a(I^i)\) which is closed.
-
-Conversely, given a closed set \(V(I)\), we can write this as
+\(V_p(I) \intersect U_0 = V_a(I^i)\) which is closed. Conversely, given
+a closed set \(V(I)\), we can write this as
 \(V(I) = U_0 \intersect V_p(I^h)\).
 
 \end{proof}
 
-\begin{corollary}[?]
+\begin{corollary}[Projective space is irreducible]
 
-\(\PP^n\) is irreducible of dimension \(n\), where the proof is that its
-covered by irreducible topological spaces of dimension \(n\) with
-nonempty intersection combined with a fact from the exercises.
+\(\PP^n_{/k}\) is irreducible of dimension \(n\).
 
 \end{corollary}
+
+\begin{proof}[?]
+
+This follows from the fact that \(\PP^n\) is covered by irreducible
+topological spaces of dimension \(n\) with nonempty intersection, along
+with a fact from the exercises.
+
+\end{proof}
 
 \begin{example}[?]
 
@@ -4955,7 +5325,7 @@ Consider \(f(x_1, x_2) = x_1^2 - x_2^2 - 1\) and consider
 \begin{figure}
 \centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-10-10-10-42.png}
-\caption{Image}
+\caption{The variety \(V(x_1^2 - x_2^2 - 1)\)}
 \end{figure}
 
 Note that for real projective space, we can view this as a sphere with
@@ -4965,7 +5335,7 @@ way:
 \begin{figure}
 \centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-10-10-12-20.png}
-\caption{O}
+\caption{Projective 2-space as sphere with anitpodal points identified}
 \end{figure}
 
 We can normalize the \(x_0\) coordinate to one, hence the plane. We can
@@ -4975,13 +5345,15 @@ antipodal points:
 \begin{figure}
 \centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-10-10-14-09.png}
-\caption{Image}
+\caption{Projecting a variety onto a sphere}
 \end{figure}
 
 This misses some points on the equator, since we aren't including points
 where \(x_0 = 0\). Consider the homogenization
-\(V(f^h) \subset \PP^2_{/\CC}\). It's given by
-\(f^h = x_1^2 - x_2^2 - x_0^2\), then
+\(V(f^h) \subset \PP^2_{/\CC}\):
+\begin{align*}  
+V(f^h) = V(x_1^2 - x_2^2 - x_0^2)
+.\end{align*} Then
 \begin{align*}  
 V(f^h) \intersect V(x_0) = \ts{\tv{0:x_1:x_2} \st f^h(0, x_1, x_2) = 0 } = \ts{\tv{0:1:1}, \tv{0:1:-1}}
 ,\end{align*} which can be seen in the picture as the points at
@@ -4990,7 +5362,7 @@ infinity:
 \begin{figure}
 \centering
 \includegraphics[width=5.72917in,height=\textheight]{figures/image_2020-11-10-10-19-19.png}
-\caption{A}
+\caption{Homogenization and points at infinity}
 \end{figure}
 
 Note that the equator is
@@ -5003,9 +5375,10 @@ i.e.~\(V(x_0) = \PP^1 = \ts{\tv{0:v_1:v_2}}\).
 \begin{example}[?]
 
 Consider \(V(f)\) where \(f\) is a line in \(\AA^2_{/\CC}\), say
-\(f = ax_1 + bx_2 + c\). This yields \(f^h = ax_1 + bx_2 + cx_0\) and we
-can consider \(V(f^h) \cong \PP^2_{\CC}\). We know \(\PP^1_{\CC}\) is
-topologically a sphere and \(\AA^1_{/\CC}\) is a point:
+\(f(x_1, x_2) = ax_1 + bx_2 + c\). This yields
+\(f^h = ax_1 + bx_2 + cx_0\) and we can consider
+\(V(f^h) \cong \PP^2_{\CC}\). We know \(\PP^1_{\CC}\) is topologically a
+sphere and \(\AA^1_{/\CC}\) is a point:
 
 \begin{figure}
 \centering
@@ -5053,26 +5426,29 @@ unique plane and any two planes intersect at the origin.
 Let \(J\subset \kx{n}\) be an ideal. Let \(X \da V_a(J) \subset \AA^n\)
 where we identify \(\AA^n = U_0 \subset \PP^n\). Then the closure
 \(\bar{X} \subset \PP^n\) is given by \(\bar{X} = V_p(J^h)\). In
-particular, \(V_a(J) = V_p(J^h)\).
+particular,
+\begin{align*}
+V_a(J) = V_p(J^h)
+\end{align*}
 
 \end{proposition}
 
 \begin{proof}[?]
 
-Note that it's clear that \(V_p(J^h)\) is closed and contains
-\(V_a(J)\). For the reverse containment, let \(Y\containing X\) be
-closed; we want to show that \(Y\contains V_p(J^h)\). Since \(Y\) is
-closed, \(Y = V_p(J')\) where \(J'\) is some homogeneous ideal. Any
-element \(f'\in J'\) satisfies \(f' = x^d f\) for some maximal \(d\)
-where \(x_0^d f\) vanishes on \(X\). We also have \(f=0\) on \(X\) since
-\(X\subset U_0\). We can compute
+\(\supseteq\): It's clear that \(V_p(J^h)\) is closed and contains
+\(V_a(J)\).
+
+\(\subseteq\) Let \(Y\containing X\) be closed; we want to show that
+\(Y\contains V_p(J^h)\). Since \(Y\) is closed, \(Y = V_p(J')\) where
+\(J'\) is some homogeneous ideal. Any element \(f'\in J'\) satisfies
+\(f' = x^d f\) for some maximal \(d\) where \(x_0^d f\) vanishes on
+\(X\). We also have \(f=0\) on \(X\) since \(X\subset U_0\). We can
+compute
 \begin{align*}  
 f\in I_a(X) = I_a(V_a(J)) = \sqrt J
 ,\end{align*} so \(f^m\in J\). Then \((f^h)^m \in J^h\) for some \(m\),
-and this \(f^h \in \sqrt{J^h}\).
-
-We can conclude that \(J'\subset \sqrt J\), which shows that
-\(V_p(J') \contains V_p(J^h)\) as desired.
+and this \(f^h \in \sqrt{J^h}\). So \(J'\subset \sqrt J\), which shows
+that \(V_p(J') \contains V_p(J^h)\) as desired.
 
 \end{proof}
 
@@ -5086,8 +5462,9 @@ subset containing \(X\) and is given by
 
 \end{definition}
 
-\hypertarget{thursday-november-12}{%
-\section{Thursday, November 12}\label{thursday-november-12}}
+\hypertarget{projective-closures-thursday-november-12}{%
+\section{Projective Closures (Thursday, November
+12)}\label{projective-closures-thursday-november-12}}
 
 Recall that if \(f\in \kx{n}\) is a homogeneous degree \(d\) polynomial,
 then
@@ -5118,13 +5495,12 @@ topology, and subsets of projective space and thus compact.
 
 \end{remark}
 
-\begin{remark}
+\begin{warnings}[It doesn't suffice to just homogenize the individual generators of an ideal $I$]
 
-It doesn't suffice to just homogenize the individual generators of the
-ideal \(I\). For example, take \(J \da \gens{x_1, x_2 - x_1^2}\). We
-have \(V(J) \subset \AA^2\) given by \(\ts{(0, 0)}\), and by the
-proposition, \(V(J^h) = \ts{[1:0:0]}\) since the single point at the
-origin is closed in \(\PP^2\).
+Take \(J \da \gens{x_1, x_2 - x_1^2}\). We have \(V(J) \subset \AA^2\)
+given by \(\ts{(0, 0)}\), and by the proposition,
+\(V(J^h) = \ts{[1:0:0]}\) since the single point at the origin is closed
+in \(\PP^2\).
 
 On the other hand,
 \begin{align*}  
@@ -5135,7 +5511,7 @@ Note that \(x_2 \in J\), so this needs to be homogenized too.\footnote{It
   is possible to get around this issue computationally by using Gröbner
   bases, a special type of generating set for ideals.}
 
-\end{remark}
+\end{warnings}
 
 \begin{remark}
 
@@ -5289,8 +5665,9 @@ functions of equal degree.
 
 \end{proof}
 
-\hypertarget{tuesday-november-17}{%
-\section{Tuesday, November 17}\label{tuesday-november-17}}
+\hypertarget{projections-and-embeddings-tuesday-november-17}{%
+\section{Projections and Embeddings (Tuesday, November
+17)}\label{projections-and-embeddings-tuesday-november-17}}
 
 \hypertarget{projecting-from-a-point}{%
 \subsection{Projecting From a Point}\label{projecting-from-a-point}}
@@ -5363,10 +5740,9 @@ Let \(a = [1: 0 : \cdots : 0] \in \PP^n\), then there is a morphism
 \begin{align*}  
 \PP^n \sm\ts{a} &\to \PP^{n-1} \\
 [x_0: \cdots : x_n] &\mapsto [x_1: \cdots : x_n]
-.\end{align*} Note that this morphism does not extend to \(\PP^n\).
-
-More generally, given any point \(p\in \PP^n\), we can project from it
-by making a linear change of coordinates to \(p = [1: 0 : \cdots : 0]\).
+.\end{align*} Note that this morphism does not extend to \(\PP^n\). More
+generally, given any point \(p\in \PP^n\), we can project from it by
+making a linear change of coordinates to \(p = [1: 0 : \cdots : 0]\).
 
 \end{definition}
 
@@ -5382,8 +5758,8 @@ intersects any such line at a unique point:
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-11-17-10-10-32.png}
-\caption{Image}
+\includegraphics[width=5.72917in,height=\textheight]{figures/image_2020-11-17-10-10-32.png}
+\caption{Copy of \(\PP^{n-1}\) intersecting a line.}
 \end{figure}
 
 \begin{example}[?]
@@ -5394,7 +5770,7 @@ conic, and the projection \(\PP^2 \sm \ts{[1:0:0]} \to \PP^1\):
 \begin{figure}
 \centering
 \includegraphics{figures/image_2020-11-17-10-13-40.png}
-\caption{Projection onto \(V(x_0)\).}
+\caption{Projection from \(V(x_0 x_2 - x_1^2)\) onto \(V(x_0)\).}
 \end{figure}
 
 This morphism can be restricted to \(\phi: X\sm\ts{[1:0:0]} \to \PP^2\),
@@ -5402,10 +5778,10 @@ and the claim is that this morphism extends to all of \(X\). The secant
 lines approach a tangent line at \([1:0:0]\), which \(V(x_0)\) at a
 unique point. So we define
 \begin{align*}  
-\bar \phi \da 
+\bar \phi(x) \da 
 \begin{cases}
 [x_1: x_2] & x \neq [1:0:0] \\
-[x_0: x_1] & \neq [0:0:1]
+[x_0: x_1] & x \neq [0:0:1]
 \end{cases}
 .\end{align*}
 
@@ -5413,12 +5789,13 @@ This locally writes \(\phi\) as a morphism, so we only need to check
 that they agree on the overlap. Note that on \(X\), we have
 \([x_1: x_2] = [x_0 : x_1]\) wherever both are well-defined. In fact,
 \(\bar \phi\) is an isomorphism, since an inverse can be explicitly
-written. Thus \(X\cong \PP^1\), and in fact all nondegenerate conics are
-isomorphic to \(\PP^1\) as well. Here nondegenerate means that if \(Q\)
-is a quadratic polynomials in \(x_0, x_1, x_2\), then \(Q\) does not
-factor as a product of linear factors. Note that such a \(Q\) is a
-quadratic form, so \(Q(x) = B(x, x)\) for some bilinear form, and \(Q\)
-is nondegenerate if \(\det B \neq 0\) where \(B_{ij} = B(e_i, e_j)\).
+written. Thus \(X\cong \PP^1\), and in fact all nondegenerate\footnote{Here
+  nondegenerate means that if \(Q\) is a quadratic polynomials in
+  \(x_0, x_1, x_2\), then \(Q\) does not factor as a product of linear
+  factors.} conics are isomorphic to \(\PP^1\) as well. Note that such a
+\(Q\) is a quadratic form, so \(Q(x) = B(x, x)\) for some bilinear form,
+and \(Q\) is nondegenerate iff \(\det B \neq 0\) where
+\(B_{ij} = B(e_i, e_j)\).
 
 \end{example}
 
@@ -5432,13 +5809,14 @@ morphism
 \begin{align*}  
 f: \PP^n \cross \PP^m &\to \PP^N \\
 ([x_0: \cdots : x_n], [y_0: \cdots : y_m]) &\mapsto
-[x_0 y_0 : \cdots : z_{ij} = x_i y_j : x_n y_m]
-.\end{align*} Note that \(\PP^n, \PP^m\) are prevarieties and we thus
-know how to construct their product prevariety.
+[x_0 y_0 : \cdots : z_{ij} \da x_i y_j : x_n y_m]
+.\end{align*}
 
 \end{definition}
 
-Check that this is well-defined!
+Note that \(\PP^n, \PP^m\) are prevarieties and we thus know how to
+construct their product as a prevariety. Check that this is
+well-defined!
 
 \begin{proposition}[Properties of the Segre embedding]
 
@@ -5461,9 +5839,14 @@ out \(f(\PP^n \cross \PP^m)\). Given \(z_{ij} = x_i y_j\), we have
 \(z_{ij} z_{kl} = z_{il} z_{kj}\) and
 \((x_i y_j)(x_k y_l) = (x_i y_l)(x_k y_j)\). The former quadric
 equations in \(z_{ij}\) variables vanish on \(f(\PP^n \cross \PP^m)\).
-The claim is that \(V(z_{ij} z_{kl} - z_{il} z_{kj})\) works.
 
-Note that wlog, we can assume \(z_{00} = 1\), in which case
+\begin{claim}
+
+\(V(z_{ij} z_{kl} - z_{il} z_{kj})\) works.
+
+\end{claim}
+
+Without loss of generality, we can assume \(z_{00} = 1\), in which case
 \(z_{ij} z_{00} = z_{ij} = z_{i0} z_{0j}\) on \(X\). Setting
 \(x_i = z_{i0}\) and \(y_j = z_{0j}\), we've now constructed a point in
 the preimage, so \(f\) surjects onto \(X\).
@@ -5480,18 +5863,23 @@ morphism, making \(f\) an isomorphism.
 
 \end{proof}
 
-\begin{example}[?]
+\begin{example}[of the Segre embedding being isomorphic to a variety]
 
-\begin{figure}
-\centering
-\includegraphics{figures/image_2020-11-17-10-42-49.png}
-\caption{Image}
-\end{figure}
+Take
+
+\begin{align*}  
+f: \PP^1 \cross \PP^1 &\to \PP^3 \\
+\qty{ \tv{x_0: x_1}, \tv{y_0: y_1}} &\mapsto \tv{z_{00} : z_{01} : z_{10} : z_{11} } \da \tv{x_0 y_0: x_0 y_1 : x_1 y_0 : x_1 y_1}
+.\end{align*} Restricting to \(\im(f)\) yields an isomorphism to
+\(X \subseteq \PP^3\) given by the quadric\footnote{A \textbf{quadric}
+  is the vanishing locus of a degree 4 polynomial.}
+\(X = V(z_{00} z_{11} - z_{10} z_{01} )\).
 
 \end{example}
 
-\hypertarget{thursday-november-19}{%
-\section{Thursday, November 19}\label{thursday-november-19}}
+\hypertarget{projective-varieties-thursday-november-19}{%
+\section{Projective Varieties (Thursday, November
+19)}\label{projective-varieties-thursday-november-19}}
 
 \hypertarget{why-use-projective-varieties}{%
 \subsection{Why use projective
@@ -5521,17 +5909,17 @@ which is a quadric (vanishing locus of a degree 4 polynomial).
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-11-19-09-45-47.png}
-\caption{Image}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-19-09-45-47.png}
+\caption{\(\PP^1 \cross \PP^1\) is ruled.}
 \end{figure}
 
-The projection map has fibers, which induce a \emph{ruling} (a family of
-\(\PP^1\)s), which we can see from the real points:
+The projection map has fibers, which induce a \textbf{ruling}\footnote{A
+  family of copies of \(\PP^1\).} which we can see from the real points:
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-11-19-09-46-38.png}
-\caption{Image}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-19-09-46-38.png}
+\caption{Its image, a quadric surface, is also ruled.}
 \end{figure}
 
 \end{example}
@@ -5558,10 +5946,9 @@ isomorphic to the Segre variety \(S_V\) in \(\PP^{(n+1)^2 -1}\), and we
 can write \(z_{ij} = x_i y_j\) and thus
 \begin{align*}  
 \Delta_{\PP^n} = S_V \intersect V(z_{ij} - z_{ji})
-.\end{align*} Note that the Segre variety is closed.
-
-The conclusion is that \(\PP^n\) is a variety, and any closed
-subprevariety of a variety is also a variety by taking
+.\end{align*} Note that the Segre variety is closed. The conclusion is
+that \(\PP^n\) is a variety, and any closed subprevariety of a variety
+is also a variety by taking
 \(\Delta_{\PP^n} \intersect (X\cross X) = \Delta_X\), which is closed as
 the intersection of two closed subsets.
 
@@ -5579,13 +5966,15 @@ if whenever \(U \subset X\) is closed, then \(f(U)\) is closed in \(Y\).
 A variety \(X\) is \textbf{complete} if the projection
 \(\pi_Y: X\cross Y \surjects Y\) is a closed map for any \(Y\).
 
-\begin{quote}
-Slogan: analog of compactness.
-\end{quote}
-
 \end{definition}
 
-\begin{proposition}[?]
+\begin{slogan}
+
+Completeness is the analog of compactness for varieties.
+
+\end{slogan}
+
+\begin{proposition}[Projection maps from products of projective spaces are closed.]
 
 The projection \(\PP^n \cross \PP^m \to \PP^m\) is closed.
 
@@ -5643,10 +6032,10 @@ polynomials vanish, making \(\pi(Z)\) is closed.
 
 \end{proof}
 
-\begin{corollary}[?]
+\begin{corollary}[$\PP^n$ is complete.]
 
 The projection \(\pi: \PP^n\cross Y\to Y\) is closed for any variety
-\(Y\), making \(\PP^n\) complete.
+\(Y\) and thus \(\PP^n\) is complete.
 
 \end{corollary}
 
@@ -5656,13 +6045,15 @@ How to prove anything for varieties: use the fact that they're glued
 from affine varieties, so prove in that special case. So first suppose
 \(Y\) is affine. Let \(Z \subset \PP^n \cross Y\) be closed, and
 consider \(\bar Y ss \PP^m\) and
-\(\bar Z \subset\PP^n \cross \bar Y \subset\PP^n \cross \PP^m\) as a
-closed subset. Then we know that the projection
+\begin{align*}
+\bar Z \subset\PP^n \cross \bar Y \subset\PP^n \cross \PP^m
+\end{align*} as a closed subset. Then we know that the projection
 \(\pi: \PP^n \cross \PP^m \to \PP^m\) is closed, so
 \(\pi(\bar Z) \subset\PP^m\) is closed. But we can write
-\(\pi(Z) = \pi(\bar Z \intersect \PP^n \cross Y) = \pi(\bar Z) \intersect Y\)
-which is closed. So \(\pi(Z)\) is closed in \(Y\), which proves this for
-affine varieties.\\
+\begin{align*}
+\pi(Z) = \pi(\bar Z \intersect \PP^n \cross Y) = \pi(\bar Z) \intersect Y
+\end{align*} which is closed. So \(\pi(Z)\) is closed in \(Y\), which
+proves this for affine varieties.\\
 
 Supposing now that \(Y\) is instead glued from affines, it suffices to
 check that the set is closed in an open cover. So \(Z \subset X\) is
@@ -5671,7 +6062,7 @@ closed if when we let \(X = \union U_i\), we can show
 
 \end{proof}
 
-\begin{corollary}[?]
+\begin{corollary}[Projective varieties are complete.]
 
 Any projective variety is complete.
 
@@ -5685,7 +6076,7 @@ yields a closed map.
 
 \end{proof}
 
-\begin{corollary}[?]
+\begin{corollary}[Images of varieties under morphisms are closed.]
 
 Let \(f:X\to Y\) be a morphism of (importantly) \emph{varieties} and
 suppose \(X\) is complete. Then \(f(X)\) is closed in \(Y\).
@@ -5695,23 +6086,25 @@ suppose \(X\) is complete. Then \(f(X)\) is closed in \(Y\).
 \begin{proof}[?]
 
 Consider the graph of \(f\),
-\(\Gamma_f = \ts{(x, f(x))} \subset X\cross Y\). From a previous proof,
-we know \(\Gamma_f\) is closed when \(Y\) is a variety (by pulling back
-a diagonal). So \(\Gamma_f\) is closed in \(X\cross Y\), and thus
-\(\pi_Y(\Gamma_f) = f(X)\) is closed because \(X\) is complete.
+\begin{align*}
+\Gamma_f = \ts{(x, f(x))} \subset X\cross Y
+\end{align*} From a previous proof, we know \(\Gamma_f\) is closed when
+\(Y\) is a variety (by pulling back a diagonal). So \(\Gamma_f\) is
+closed in \(X\cross Y\), and thus \(\pi_Y(\Gamma_f) = f(X)\) is closed
+because \(X\) is complete.
 
 \end{proof}
 
-\begin{corollary}[?]
+The next result is an analog of the maximum modulus principle: if \(X\)
+is a compact complex manifold, then any function that is holomorphic on
+all of \(X\) is constant.
+
+\begin{corollary}[Maximum modulus principle for varieties]
 
 Let \(X\) be complete, then \(\OO_X(X) = k\), i.e.~every global regular
 function is constant.
 
 \end{corollary}
-
-Note: this is an analog of the maximum modulus principle: if \(X\) is a
-compact complex manifold, then any function that is holomorphic on all
-of \(X\) is constant.
 
 \begin{proof}[?]
 
@@ -5724,8 +6117,9 @@ point, making \(\phi\) a constant map.
 
 \end{proof}
 
-\hypertarget{tuesday-november-24}{%
-\section{Tuesday, November 24}\label{tuesday-november-24}}
+\hypertarget{embeddings-and-smoothness-tuesday-november-24}{%
+\section{Embeddings and Smoothness (Tuesday, November
+24)}\label{embeddings-and-smoothness-tuesday-november-24}}
 
 \hypertarget{the-veronese-embedding}{%
 \subsection{The Veronese Embedding}\label{the-veronese-embedding}}
@@ -5735,7 +6129,7 @@ point, making \(\phi\) a constant map.
 Let \(n, d > 0\) and let \(f_0, \cdots, f_n\) be the monomials of degree
 \(d\) in \(\kx{n}\). There is a morphism
 \begin{align*}  
-\PP^n \sm V(f_0,\ codts, f_n) &\to \PP^N \\
+\PP^n \sm V(f_0,\cdots , f_n) &\to \PP^N \\
 \vector x &\mapsto [f_0(\vector x), \cdots, f_N(\vector x)]
 ,\end{align*} where \(N+1\) is the number of monomials, and is equal to
 \({n+d \choose d}\).
@@ -5748,7 +6142,7 @@ It is true that \(V(f_0, \cdots, f_N) \neq \emptyset\), since
 \(V(x_0^d, x_1^d, \cdots, x_n^d) = V(x_0, \cdots, x_n)\). This will be
 the Veronese embedding, although we need to prove it is an embedding. On
 an open set \(D(x_0) \subset \PP^2\) one can define an inverse. Suppose
-we hyave a coordinate \(z_j = x_i^{d-1} x_j\) and \(z_i = x_i^d\) on
+we have a coordinate \(z_j = x_i^{d-1} x_j\) and \(z_i = x_i^d\) on
 \(\PP^N\). Then we can take the point
 \begin{align*}  
 \tv{ {z_1 \over z_i}, \cdots, {z_i \over z_i}, \cdots, {z_n \over z_i} }
@@ -5756,6 +6150,10 @@ we hyave a coordinate \(z_j = x_i^{d-1} x_j\) and \(z_i = x_i^d\) on
 \(D(x_i)\) cover \(\PP^N\), we have an inverse on the entire image.
 
 \end{remark}
+
+\hypertarget{exchanging-hypersurface-sections-for-hyperplane-sections}{%
+\subsubsection{Exchanging Hypersurface Sections for Hyperplane
+Sections}\label{exchanging-hypersurface-sections-for-hyperplane-sections}}
 
 \begin{remark}
 
@@ -5773,8 +6171,8 @@ embedded image:
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-11-24-09-48-27.png}
-\caption{Image}
+\includegraphics[width=5.72917in,height=\textheight]{figures/image_2020-11-24-09-48-27.png}
+\caption{Embedding a hypersurface into a hyperplane.}
 \end{figure}
 
 \end{remark}
@@ -5884,21 +6282,22 @@ This will prove it for any projective variety by taking
 
 \end{remark}
 
-\hypertarget{chapter-10-smoothness}{%
-\subsection{Chapter 10: Smoothness}\label{chapter-10-smoothness}}
+\hypertarget{the-tangent-space-chapter-10}{%
+\subsection{The Tangent Space (Chapter
+10)}\label{the-tangent-space-chapter-10}}
 
 Motivation: we want to distinguish between things like \(V(xy)\) and
-\(V(xy-1)\).
+\(V(xy-1)\). Over \(\CC\), we can distinguish these: one is a complex
+manifold, and the other is not.
 
 \begin{figure}
 \centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-24-10-31-47.png}
-\caption{Image}
+\caption{\(V(xy-1)\) is a manifold in \(\CC^2\)}
 \end{figure}
 
-Over \(\CC\), we can distinguish these: one is a complex manifold, and
-the other is not. This means we want each point to have a neighborhood
-biholomorphic to a disc.
+This means we want each point to have a neighborhood biholomorphic to a
+disc.
 
 \begin{definition}[Tangent Space]
 
@@ -5910,8 +6309,8 @@ T_a X \da V(f_1 \st f\in I(X))
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-11-24-10-38-10.png}
-\caption{Image}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-11-24-10-38-10.png}
+\caption{Tangent space at a point.}
 \end{figure}
 
 \end{definition}
@@ -5927,21 +6326,21 @@ would not vanish at the origin.
 
 Consider \(T_{(1, 1)} V(xy-1)\). First translate \((1, 1)\) to the
 origin, so
-\(T_{(1, 1)} V(xy-1) = T_{(0, 0)} = V((x-1)(y-1) - 1) = T_{(0, 0)} V(xy-x-y) = V(-x-y)\).
-On the other hand, \(T_{(0, 0)} V(xy) = V(0) = \CC^2\).
+\begin{align*}
+T_{(1, 1)} V(xy-1) = T_{(0, 0)} = V((x-1)(y-1) - 1) = T_{(0, 0)} V(xy-x-y) = V(-x-y)
+\end{align*} On the other hand, \(T_{(0, 0)} V(xy) = V(0) = \CC^2\).
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-11-24-10-41-13.png}
+\includegraphics[width=5.72917in,height=\textheight]{figures/image_2020-11-24-10-41-13.png}
 \caption{Image}
 \end{figure}
 
 \end{example}
 
-\hypertarget{tuesday-december-01}{%
-\section{Tuesday, December 01}\label{tuesday-december-01}}
-
-Last time: we started discussing smoothness.
+\hypertarget{the-tangent-space-and-smoothness-tuesday-december-01}{%
+\section{The Tangent Space and Smoothness (Tuesday, December
+01)}\label{the-tangent-space-and-smoothness-tuesday-december-01}}
 
 \begin{definition}[Tangent Space]
 
@@ -5953,7 +6352,7 @@ V\qty{\ts{f_1 \st f\in I(U_i),\, U_i \ni p = 0 \text{ affine } }}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-12-01-09-40-28.png}
+\includegraphics[width=5.72917in,height=\textheight]{figures/image_2020-12-01-09-40-28.png}
 \caption{Image}
 \end{figure}
 
@@ -5967,15 +6366,21 @@ definition, since it depends on the affine chart \(U_i\).
 
 \end{remark}
 
+\hypertarget{computing-tangent-spaces}{%
+\subsection{Computing Tangent Spaces}\label{computing-tangent-spaces}}
+
 \begin{example}[?]
 
-Consider \(T_0 V(xy) = V(f_1 \st f\in \gens{xy}) = V(0) = \AA^2\), since
-every polynomial in this ideal has degree at least 2. Letting
-\(X = V(xy)\), note that we could embed \(X\injects \AA^3\) as
-\(X\cong V(xy, z)\). In this case we have
-\(T_0 X = V(f_1 \st f\in \gens{xy, z}) = V(z) \cong \AA^2\). So we get a
-vector space of a different dimension from this different affine
-embedding, but \(\dim T_0 X\) is the same.
+Consider
+\begin{align*}
+T_0 V(xy) = V(f_1 \st f\in \gens{xy}) = V(0) = \AA^2
+,\end{align*} since every polynomial in this ideal has degree at least
+2. Letting \(X = V(xy)\), note that we could embed \(X\injects \AA^3\)
+as \(X\cong V(xy, z)\). In this case we have
+\begin{align*}
+T_0 X = V(f_1 \st f\in \gens{xy, z}) = V(z) \cong \AA^2
+\end{align*} So we get a vector space of a different dimension from this
+different affine embedding, but \(\dim T_0 X\) is the same.
 
 \end{example}
 
@@ -5988,39 +6393,44 @@ We could dehomogenize the ideal
 \(\ro{\gens{xy-z^2}}{y=1} = \gens{x-z^2}\). Thus
 \(X \intersect D(y) = V(x-z^2) \subset \AA^2\) and the point
 \([0:1:0] \in X\) gives \((0, 0)\) in this affine chart. Then
-\(T_p X = V(f_1 \st f\in \gens{x-z^2}) = V(x)\). Then \(f = (x-z^2)g\)
-implies that \(f_1 = (xg)_1 = g_0 x\), the constant term of \(g\)
-multiplied by \(x\), since \(z^2\) kills any degree 1 part of \(g\). So
-\(T_p X\) is a line.
+\begin{align*}
+T_p X = V(f_1 \st f\in \gens{x-z^2}) = V(x)
+\end{align*} Then \(f = (x-z^2)g\) implies that
+\(f_1 = (xg)_1 = g_0 x\), the constant term of \(g\) multiplied by
+\(x\), since \(z^2\) kills any degree 1 part of \(g\). So \(T_p X\) is a
+line.
 
 \end{example}
 
 \begin{example}[?]
 
-Take \(X\) to be the union of the coordinate axes in \(\AA^3\).
+Take \(X\) to be the union of the coordinate axes in \(\AA^3\):
 
 \begin{figure}
 \centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-12-01-09-54-30.png}
-\caption{Image}
+\caption{The coordinate axes in \(\AA^3\).}
 \end{figure}
 
 Then \(I(X) = \gens{xy, yz, xz}\) and
-\(T_0 X = V(f_1 \st f\in I(X)) = V(0) = \AA^3\), since the minimal
-degree of any such polynomial is 2. Note that \(\dim X = 1\) but
-\(\dim T_0 X = 3\)
+\begin{align*}
+T_0 X = V(f_1 \st f\in I(X)) = V(0) = \AA^3
+\end{align*} since the minimal degree of any such polynomial is 2. Note
+that \(\dim X = 1\) but \(\dim T_0 X = 3\)
 
 \end{example}
 
 \begin{example}[?]
 
-Take \(Y = V(xy(x-y)) \subset \AA^2\). Then \(T_0 X = V(0) = \AA^2\):
+Take \(Y = V(xy(x-y)) \subset \AA^2\):
 
 \begin{figure}
 \centering
 \includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-12-01-09-59-06.png}
-\caption{Image}
+\caption{\(V(xy(x-y))\) in \(\AA^2\).}
 \end{figure}
+
+Then \(T_0 X = V(0) = \AA^2\).
 
 \end{example}
 
@@ -6031,11 +6441,11 @@ intersecting at a single point.
 
 \begin{figure}
 \centering
-\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-12-01-10-01-58.png}
-\caption{Image}
+\includegraphics[width=5.72917in,height=\textheight]{figures/image_2020-12-01-10-01-58.png}
+\caption{Comparing \(X\) and \(Y\).}
 \end{figure}
 
-Note that \(\dim T_0 X = 3\) but \(\dim T_0 Y = 3\), and interestingly
+Note that \(\dim T_0 X = 3\) but \(\dim T_0 Y = 2\), and interestingly
 \(X\not\cong Y\) as affine varieties. There is a bijective morphism that
 is not invertible.
 
@@ -6048,18 +6458,22 @@ embedding.
 
 \end{remark}
 
-\begin{example}[?]
+\begin{example}[How to compute $T_{(1,0,0)} V(xy, yz, xz)$]
 
-How to compute \(T_{(1,0,0)} V(xy, yz, xz)\): first move \((1,0,0)\) to
-the origin, yielding \(T_{(0,0,0)} V((x+1)y, yz, (x+1) z)\). This is a
-different choice of affine embedding into \(\AA^3\) which sends
-\((1,0,0) \mapsto (0,0,0)\). Taking the vanishing locus of linear parts,
-it suffices to take the linear parts of the generators, which yields the
-\(x\dash\)axis \(V(y, z)\), making the dimension of the tangent space 1.
+First move \((1,0,0)\) to the origin, yielding
+\(T_{(0,0,0)} V((x+1)y, yz, (x+1) z)\). This is a different choice of
+affine embedding into \(\AA^3\) which sends \((1,0,0) \mapsto (0,0,0)\).
+Taking the vanishing locus of linear parts, it suffices to take the
+linear parts of the generators, which yields the \(x\dash\)axis
+\(V(y, z)\), making the dimension of the tangent space 1.
 
 \end{example}
 
-\begin{lemma}[?]
+\hypertarget{identifying-the-cotangent-space-as-mathfrakmmathfrakm2}{%
+\subsection{\texorpdfstring{Identifying the Cotangent Space as
+\(\mathfrak{m}/\mathfrak{m}^2\)}{Identifying the Cotangent Space as \textbackslash mathfrak\{m\}/\textbackslash mathfrak\{m\}\^{}2}}\label{identifying-the-cotangent-space-as-mathfrakmmathfrakm2}}
+
+\begin{lemma}[The tangent space is given by $I/I^2$]
 
 Let \(X \subset\AA^n\) be an affine variety and let \(0 = p\in X\). Then
 \begin{align*}
@@ -6158,8 +6572,9 @@ will be left invariant under the localization.
 
 \end{remark}
 
-\hypertarget{thursday-december-03}{%
-\section{Thursday, December 03}\label{thursday-december-03}}
+\hypertarget{smoothness-thursday-december-03}{%
+\section{Smoothness (Thursday, December
+03)}\label{smoothness-thursday-december-03}}
 
 We showed last time that if \(X\) is an affine variety, then
 \(T_p X = V\qty{f_1 \st f\in I(X)}\) for \(p = \vector 0 \in \AA^n\),
@@ -6196,6 +6611,9 @@ multiplying by elements of \(S\) is invertible in
 \(S^{-1} \qty{\mathfrak{m}_p / \mathfrak{m}_p^2} \cong \mathfrak{m}_p / \mathfrak{m}_p^2\),
 where the LHS is isomorphic to
 \(S^{-1} \mathfrak{m}_p / \qty{S\inv \mathfrak{m}_p^2}\).
+
+\hypertarget{defining-smoothness}{%
+\subsection{Defining Smoothness}\label{defining-smoothness}}
 
 \begin{definition}[Smooth/Regular Varieties]
 
@@ -6235,7 +6653,7 @@ the following in \(\AA^3\):
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-12-03-10-05-17.png}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-12-03-10-05-17.png}
 \caption{Union of Plane and Axis}
 \end{figure}
 
@@ -6247,8 +6665,8 @@ Consider \(X\da V(y^2 - x^3) \subset \AA^2\):
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-12-03-10-07-39.png}
-\caption{Image}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-12-03-10-07-39.png}
+\caption{\(V(y^2 - x^2)\)}
 \end{figure}
 
 Note that \(\dim T_0 X = 2\) is easy to see since it's equal to
@@ -6274,7 +6692,7 @@ A variety \(X\) is thus smooth iff
 
 \end{remark}
 
-\begin{theorem}[A hard theorem from commutative algebra (Auslander-Buchsbanm, 1940s)]
+\begin{theorem}[A hard theorem from commutative algebra (Auslander–Buchsbaum, 1940s)]
 
 A regular local ring is a UFD.
 
@@ -6303,6 +6721,9 @@ How can we check if a variety \(X\) is smooth then? Just checking
 dimensions from the definitions is difficult in general.
 
 \end{remark}
+
+\hypertarget{checking-smoothness}{%
+\subsection{Checking Smoothness}\label{checking-smoothness}}
 
 \begin{proposition}[Jacobi Criterion]
 
@@ -6394,7 +6815,7 @@ Thus the singular locus is
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2020-12-03-10-42-21.png}
+\includegraphics[width=3.64583in,height=\textheight]{figures/image_2020-12-03-10-42-21.png}
 \caption{Image}
 \end{figure}
 
@@ -6408,6 +6829,9 @@ will still get something singular.
 \section*{Appendix: Commutative
 Algebra}\label{appendix-commutative-algebra}}
 \addcontentsline{toc}{section}{Appendix: Commutative Algebra}
+
+\hypertarget{useful-algebra-facts}{%
+\subsection{Useful Algebra Facts}\label{useful-algebra-facts}}
 
 \begin{fact}
 
