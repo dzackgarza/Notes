@@ -12,38 +12,40 @@
 | Notation                                | Definition                                                          |
 +=========================================+=====================================================================+
 | $k[\vector x] = k[x_1, \cdots, x_n]$    | Polynomial ring in $n$ indeterminates                               |
-|-----------------------------------------+---------------------------------------------------------------------|
-| $k(\vector x) = k(x_1, \cdots, x_n)$    | Rational function field in $n$ indeterminates                       |
-+-----------------------------------------+---------------------------------------------------------------------|
-| $\mathcal{U} \covers X$                 | An open cover $\mathcal{U} = \ts{U_j \st j\in J}$                   |
-+-----------------------------------------+---------------------------------------------------------------------|
-| $\Delta_X$                              | The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$           |
-+-----------------------------------------+---------------------------------------------------------------------|
-| $\AA^n_{/k}$                            | Affine $n\dash$space \newline $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$ |
-+-----------------------------------------+---------------------------------------|
-| $\PP^n_{/k}$                            | Projective $n\dash$space |
-| ---                                     | $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$ |
-| ---                                     | $= \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$ |
-+-----------------------------------------+---------------------------------------|
-| $V(J), V_a(J)$                          | Variety associated to an ideal $J \normal \kx{n}$ |
-+-----------------------------------------+---------------------------------------|
-| ---                                     | $\da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$ |
-| $I(S), I_a(S)$                          | Ideal associated to a subset $S \subseteq \AA^n_{k}$| 
-| ---                                     | $\da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$ |
-| $A(X)$                                  | Coordinate ring of a variety, $\kx{n}/I(X)$ |
-| $V_p(J)$                                | Projective variety of an ideal |
-| ---                                     | $\da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}$ |
-| $I_p(S)$                                | Projective ideal (?) |
-| ---                                     | $\da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}$ |
-| $S(X)$                                  | Projective coordinate ring, $\kx{n}/ I_p(X)$ |
-| $f^h$                                   | Homogenization, $x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}$ |
-| $f^i$                                   | Dehomogenization, $f(1, x_1, \cdots, x_n)$ |
-| $J^h$                                   | Homogenization of an ideal, $\ts{f^j \st f\in J}$ |
-| $\bar X$                                | Projective closure of a subset  |
-| ---                                     | $\da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X}$ |
-| $\OO_X$                                 | Structure sheaf $\ts{f:U\to k \st f \in k(\vector x) \text{ locally}}$ |
-| $D(f)$                                  | Distinguished open set, $D(f) = V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0}$ |
 +-----------------------------------------+---------------------------------------------------------------------+
+| $k(\vector x) = k(x_1, \cdots, x_n)$    | Rational function field in $n$ indeterminates                       |
++-----------------------------------------+---------------------------------------------------------------------+
+| $\mathcal{U} \covers X$                 | An open cover $\mathcal{U} = \ts{U_j \st j\in J}$                   |
++-----------------------------------------+---------------------------------------------------------------------+
+| $\Delta_X$                              | The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$           |
++-----------------------------------------+---------------------------------------------------------------------+
+
+
+<!--| $\AA^n_{/k}$                            | Affine $n\dash$space \newline $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$ |-->
+<!--+-----------------------------------------+---------------------------------------|-->
+<!--| $\PP^n_{/k}$                            | Projective $n\dash$space |-->
+<!--| ---                                     | $\PP^n_{/k} \da \qty{k^n\smz}/x\sim \lambda x$ |-->
+<!--| ---                                     | $= \ts{f(\vector x) = p(\vector x)/q(\vector x), \st p,q, \in \kx{n}}$ |-->
+<!--+-----------------------------------------+---------------------------------------|-->
+<!--| $V(J), V_a(J)$                          | Variety associated to an ideal $J \normal \kx{n}$ |-->
+<!--+-----------------------------------------+---------------------------------------|-->
+<!--| ---                                     | $\da \ts{\vector x\in \AA^n \st f(\vector x) = 0,\, \forall f\in J}$ |-->
+<!--| $I(S), I_a(S)$                          | Ideal associated to a subset $S \subseteq \AA^n_{k}$| -->
+<!--| ---                                     | $\da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$ |-->
+<!--| $A(X)$                                  | Coordinate ring of a variety, $\kx{n}/I(X)$ |-->
+<!--| $V_p(J)$                                | Projective variety of an ideal |-->
+<!--| ---                                     | $\da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}$ |-->
+<!--| $I_p(S)$                                | Projective ideal (?) |-->
+<!--| ---                                     | $\da \ts{f\in \kx{n} \st f \text{ is homogeneous and } f(x) = 0\, \forall x\in S}$ |-->
+<!--| $S(X)$                                  | Projective coordinate ring, $\kx{n}/ I_p(X)$ |-->
+<!--| $f^h$                                   | Homogenization, $x_0^{\deg f} f\qty{{x_1 \over x_0}, \cdots, {x_n \over x_0}}$ |-->
+<!--| $f^i$                                   | Dehomogenization, $f(1, x_1, \cdots, x_n)$ |-->
+<!--| $J^h$                                   | Homogenization of an ideal, $\ts{f^j \st f\in J}$ |-->
+<!--| $\bar X$                                | Projective closure of a subset  |-->
+<!--| ---                                     | $\da V_p(J^h) \da \ts{\vector x \in \PP^n \st f^h(\vector x) = 0\, \forall f\in X}$ |-->
+<!--| $\OO_X$                                 | Structure sheaf $\ts{f:U\to k \st f \in k(\vector x) \text{ locally}}$ |-->
+<!--| $D(f)$                                  | Distinguished open set, $D(f) = V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0}$ |-->
+<!--+-----------------------------------------+---------------------------------------------------------------------+-->
 
 +---------------+--------------------+
 | Fruit         | Advantages         |
