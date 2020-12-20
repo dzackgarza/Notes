@@ -37,7 +37,8 @@
 |                                         | $I_a(S) \da \ts{f\in \kx{n} \st f(\vector x) = 0\, \forall \vector x\in X}$  |
 |                                         | \vspace{1em}                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------+
-| $A(X)$                                  | Coordinate ring of a variety$\kx{n}/I(X)$                           |
+| $A(X)$                                  | Coordinate ring of a variety | 
+|                                         | $A(X) \da \kx{n}/I(X)$                           |
 +-----------------------------------------+-----------------------------------------------------------------------+
 | $V_p(J)$                                | Projective variety of an ideal                                        |
 |                                         | $V_p(J) \da \ts{\vector x \in \PP^n_{/k} \st f(\vector x) = 0,\, \forall f\in J}$ |
