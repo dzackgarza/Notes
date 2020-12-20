@@ -48,11 +48,11 @@
 +---------------+---------------+--------------------+
 | Fruit         | Price         | Advantages         |
 +===============+===============+====================+
-| Bananas       | $1.34         | - built-in wrapper |
-|               |               | - bright color     |
+| Bananas       | $1.34         | built-in wrapper |
+|               |               | bright color     |
 +---------------+---------------+--------------------+
-| Oranges       | $2.10         | - cures scurvy     |
-|               |               | - tasty            |
+| Oranges       | $2.10         | cures scurvy     |
+|               |               | tasty            |
 +---------------+---------------+--------------------+
 
 
