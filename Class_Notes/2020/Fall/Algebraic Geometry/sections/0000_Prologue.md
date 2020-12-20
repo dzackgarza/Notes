@@ -8,17 +8,17 @@
 
 - If a property $P$ is said to hold **locally**, this means that for every point $p$ there is a neighborhood $U_p \ni p$ such that $P$ holds on $U_p$.
 
-+-----------------------------------------+------------+
-| Notation                                | Definition |
-+=========================================+============+
-| $k[\vector x] = k[x_1, \cdots, x_n]$    | Polynomial ring in $n$ indeterminates |
-+-----------------------------------------+---------------------------------------|
-| $k(\vector x) = k(x_1, \cdots, x_n)$    | Rational function field in $n$ indeterminates |
-+-----------------------------------------+---------------------------------------|
-| $\mathcal{U} \covers X$                 | An open cover $\mathcal{U} = \ts{U_j \st j\in J}$ |
-+-----------------------------------------+---------------------------------------|
-| $\Delta_X$                              | The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$ |
-+-----------------------------------------+---------------------------------------|
++-----------------------------------------+---------------------------------------------------------------------+
+| Notation                                | Definition                                                          |
++=========================================+=====================================================================+
+| $k[\vector x] = k[x_1, \cdots, x_n]$    | Polynomial ring in $n$ indeterminates                               |
+|-----------------------------------------+---------------------------------------------------------------------|
+| $k(\vector x) = k(x_1, \cdots, x_n)$    | Rational function field in $n$ indeterminates                       |
++-----------------------------------------+---------------------------------------------------------------------|
+| $\mathcal{U} \covers X$                 | An open cover $\mathcal{U} = \ts{U_j \st j\in J}$                   |
++-----------------------------------------+---------------------------------------------------------------------|
+| $\Delta_X$                              | The diagonal $\ts{(x, x) \st x\in X} \subseteq X\cross X$           |
++-----------------------------------------+---------------------------------------------------------------------|
 | $\AA^n_{/k}$                            | Affine $n\dash$space \newline $\AA^n_{/k} \da \ts{\vector a = \tv{a_1, \cdots, a_n} \st a_j \in k}$ |
 +-----------------------------------------+---------------------------------------|
 | $\PP^n_{/k}$                            | Projective $n\dash$space |
@@ -45,8 +45,6 @@
 | $D(f)$                                  | Distinguished open set, $D(f) = V(f)^c = \ts{x\in \AA^n \st f(x) \neq 0}$ |
 
 
-| Notation | Definition |
-|----------|------------|
 
 
 ## Summary of Important Concepts
