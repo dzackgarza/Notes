@@ -3664,8 +3664,9 @@ constituent set is open by assumption.
 
 \end{proof}
 
-\hypertarget{thursday-october-08}{%
-\section{Thursday, October 08}\label{thursday-october-08}}
+\hypertarget{morphisms-glue-thursday-october-08}{%
+\section{Morphisms Glue (Thursday, October
+08)}\label{morphisms-glue-thursday-october-08}}
 
 We continue the proof that morphisms glue.
 
@@ -3690,6 +3691,10 @@ Since pullback commutes with restriction, \(f^* \phi\) is the unique
 \(f^* \phi \in \OO_X(f^{-1}(V))\).
 
 \end{proof}
+
+\hypertarget{morphisms-have-regular-components}{%
+\subsection{Morphisms Have Regular
+Components}\label{morphisms-have-regular-components}}
 
 \begin{proposition}[Morphisms between affine varieties have regular functions as components]
 
@@ -3803,6 +3808,10 @@ whose coordinates are regular.
 
 \end{slogan}
 
+\hypertarget{morphisms-of-varieties-on-the-algebra-side}{%
+\subsection{Morphisms of Varieties on the Algebra
+Side}\label{morphisms-of-varieties-on-the-algebra-side}}
+
 \begin{corollary}[Morphisms of varieties corresponds to $k\dash$algebra morphisms of coordinate rings]
 
 Let \(X, Y\) be affine varieties, then there is a correspondence
@@ -3868,6 +3877,10 @@ where \(\OO_X, \OO_Y\) are the sheaves of regular functions. This shows
 
 \end{remark}
 
+\hypertarget{counterexample-isomorphisms-are-not-just-bijective-morphisms}{%
+\subsection{Counterexample: Isomorphisms Are Not Just Bijective
+Morphisms}\label{counterexample-isomorphisms-are-not-just-bijective-morphisms}}
+
 \begin{warnings}[Isomorphisms are not necessarily bijective morphisms]
 
 Let \(X = V(y^2 - x^3) \subset \AA^2\) and define a map
@@ -3907,6 +3920,9 @@ isomorphism of rings: this can be seen from the fact that
 \(t\not \in \im f^*\).
 
 \end{warnings}
+
+\hypertarget{categorical-products}{%
+\subsection{Categorical Products}\label{categorical-products}}
 
 \begin{quote}
 Review of introductory category theory.
@@ -4658,7 +4674,7 @@ Let \(X = Y=\AA^1\) and set \(Z \da V(xy-1)\subset X\cross Y\). Then
 \end{example}
 
 \hypertarget{projective-space-homogeneous-polynomials-thursday-october-29}{%
-\section{Projective Space Homogeneous Polynomials (Thursday, October
+\section{Projective Space \& Homogeneous Polynomials (Thursday, October
 29)}\label{projective-space-homogeneous-polynomials-thursday-october-29}}
 
 \hypertarget{projective-space}{%
@@ -4758,6 +4774,9 @@ gluing construction makes \(\PP^n\) a prevariety.
 
 \end{example}
 
+\hypertarget{homogeneous-polynomials}{%
+\subsection{Homogeneous Polynomials}\label{homogeneous-polynomials}}
+
 \begin{definition}[Homogeneous Degrees of Polynomials]
 
 A polynomial \(f\) is \textbf{homogeneous of degree \(d\)} if every
@@ -4806,9 +4825,12 @@ A \textbf{graded ring} \(R\) is a ring \(R\) with abelian subgroups
 
 \end{definition}
 
-\hypertarget{cones-and-projectivization-tuesday-november-02-todo}{%
-\section{Cones and Projectivization (Tuesday, November 02,
-Todo)}\label{cones-and-projectivization-tuesday-november-02-todo}}
+\hypertarget{projective-nullstellensatz-tuesday-november-02}{%
+\section{Projective Nullstellensatz (Tuesday, November
+02)}\label{projective-nullstellensatz-tuesday-november-02}}
+
+\hypertarget{quotients-of-graded-rings}{%
+\subsection{Quotients of Graded Rings}\label{quotients-of-graded-rings}}
 
 \begin{proposition}[Quotients of graded rings by homogeneous ideals are again graded]
 
@@ -4816,6 +4838,10 @@ If \(R\) is a graded ring and \(I\normal R\) is a homogeneous ideal,
 then \(R/I\) is a graded ring.
 
 \end{proposition}
+
+\hypertarget{cones-and-projectivization}{%
+\subsection{Cones and
+Projectivization}\label{cones-and-projectivization}}
 
 \begin{definition}[Cones]
 
@@ -4871,6 +4897,10 @@ We have
 
 \end{remark}
 
+\hypertarget{projective-nullstellensatz}{%
+\subsection{Projective
+Nullstellensatz}\label{projective-nullstellensatz}}
+
 \begin{proposition}[Projective Nullstellensatz Construction]
 
 Define
@@ -4880,6 +4910,8 @@ I_p(X) &\da \gens{ f \in k[x_0, \cdots, x_n] \text{ homogeneous } \st f(\vector 
 .\end{align*}
 
 \end{proposition}
+
+\todo[inline]{Missing some info, fill in.}
 
 \hypertarget{projective-spaces-thursday-november-05}{%
 \section{Projective Spaces (Thursday, November
@@ -4963,9 +4995,9 @@ associated to some homogeneous ideal.
 
 \end{proof}
 
-\hypertarget{projective-nullstellensatz}{%
+\hypertarget{projective-nullstellensatz-1}{%
 \subsection{Projective
-Nullstellensatz}\label{projective-nullstellensatz}}
+Nullstellensatz}\label{projective-nullstellensatz-1}}
 
 \begin{definition}[Irrelevant Ideal]
 
@@ -6899,23 +6931,454 @@ If \(R\) is a Noetherian ring, then \(R[x]\) is again Noetherian.
 
 \end{theorem}
 
+\hypertarget{appendix-course-exercises}{%
+\section{Appendix: Course Exercises}\label{appendix-course-exercises}}
+
+\hypertarget{problem-set-1}{%
+\subsection{Problem Set 1}\label{problem-set-1}}
+
+\begin{exercise}[Gathmann 1.19]
+
+Prove that every affine variety \(X\subset \AA^n/k\) consisting of only
+finitely many points can be written as the zero locus of \(n\)
+polynomials.
+
+\begin{quote}
+Hint: Use interpolation. It is useful to assume at first that all points
+in \(X\) have different \(x_1\dash\)coordinates.
+\end{quote}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 1.21]
+
+Determine \(\sqrt{I}\) for
+\begin{align*}  
+I\da \gens{x_1^3 - x_2^6,\, x_1 x_2 - x_2^3} \normal \CC[x_1, x_2]
+.\end{align*}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 1.22]
+
+Let \(X\subset \AA^3/k\) be the union of the three coordinate axes.
+Compute generators for the ideal \(I(X)\) and show that it can not be
+generated by fewer than 3 elements.
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 1.23: Relative Nullstellensatz]
+
+Let \(Y\subset \AA^n/k\) be an affine variety and define \(A(Y)\) by the
+quotient
+\begin{align*}  
+\pi: k[x_1,\cdots, x_n] \to A(Y) \da k[x_1, \cdots, x_n]/I(Y)
+.\end{align*}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that \(V_Y(J) = V(\pi^{-1}(J))\) for every \(J\normal A(Y)\).
+\item
+  Show that \(\pi^{-1} (I_Y(X)) = I(X)\) for every affine subvariety
+  \(X\subseteq Y\).
+\item
+  Using the fact that \(I(V(J)) \subset \sqrt{J}\) for every
+  \(J\normal k[x_1, \cdots, x_n]\), deduce that
+  \(I_Y(V_Y(J)) \subset \sqrt{J}\) for every \(J\normal A(Y)\).
+\end{enumerate}
+
+Conclude that there is an inclusion-reversing bijection
+\begin{align*}  
+  \correspond{\text{Affine subvarieties}\\ \text{of } Y} \iff \correspond{\text{Radical ideals} \\ \text{in } A(Y)}
+  .\end{align*}
+
+\end{exercise}
+
+\begin{exercise}[Extra]
+
+Let \(J \normal k[x_1, \cdots, x_n]\) be an ideal, and find a
+counterexample to \(I(V(J)) =\sqrt{J}\) when \(k\) is not algebraically
+closed.
+
+\end{exercise}
+
+\hypertarget{problem-set-2}{%
+\subsection{Problem Set 2}\label{problem-set-2}}
+
+\begin{exercise}[Gathmann 2.17]
+
+Find the irreducible components of
+\begin{align*}  
+X = V(x - yz, xz - y^2) \subset \AA^3/\CC
+.\end{align*}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.18]
+
+Let \(X\subset \AA^n\) be an arbitrary subset and show that
+\begin{align*}  
+V(I(X)) = \bar{X}
+.\end{align*}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.21]
+
+Let \(\ts{U_i}_{i\in I} \covers X\) be an open cover of a topological
+space with \(U_i \intersect U_j \neq \emptyset\) for every \(i, j\).
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that if \(U_i\) is connected for every \(i\) then \(X\) is
+  connected.
+\item
+  Show that if \(U_i\) is irreducible for every \(i\) then \(X\) is
+  irreducible.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.22]
+
+Let \(f:X\to Y\) be a continuous map of topological spaces.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that if \(X\) is connected then \(f(X)\) is connected.
+\item
+  Show that if \(X\) is irreducible then \(f(X)\) is irreducible.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.23]
+
+Let \(X\) be an affine variety.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Show that if \(Y_1, Y_2 \subset X\) are subvarieties then
+  \begin{align*}  
+  I(\bar{Y_1\sm Y_2}) = I(Y_1): I(Y_2)
+  .\end{align*}
+\item
+  If \(J_1, J_2 \normal A(X)\) are radical, then
+  \begin{align*}  
+  \bar{V(J_1) \sm V(J_2)} = V(J_1: J_2)
+  .\end{align*}
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.24]
+
+Let \(X \subset \AA^n,\, Y\subset \AA^m\) be irreducible affine
+varieties, and show that \(X\cross Y\subset \AA^{n+m}\) is irreducible.
+
+\end{exercise}
+
+\hypertarget{problem-set-3}{%
+\subsection{Problem Set 3}\label{problem-set-3}}
+
+\begin{exercise}[Gathmann 2.33]
+
+Define
+\begin{align*}  
+X \da \ts{M \in \mat(2\times 3, k) \st \rk M \leq 1} \subseteq \AA^6/k
+.\end{align*}
+
+Show that \(X\) is an irreducible variety, and find its dimension.
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.34]
+
+Let \(X\) be a topological space, and show
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  If \(\ts{U_i}_{i\in I} \covers X\), then
+  \(\dim X = \sup_{i\in I} \dim U_i\).
+\item
+  If \(X\) is an irreducible affine variety and \(U\subset X\) is a
+  nonempty subset, then \(\dim X = \dim U\). Does this hold for any
+  irreducible topological space?
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.36]
+
+Prove the following:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Every noetherian topological space is compact. In particular, every
+  open subset of an affine variety is compact in the Zariski topology.
+\item
+  A complex affine variety of dimension at least 1 is never compact in
+  the classical topology.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}[Gathmann 2.40]
+
+Let
+\begin{align*}  
+R = k[x_1, x_2, x_3, x_4] / \gens{x_1 x_4 - x_2 x_3} 
+\end{align*} and show the following:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(R\) is an integral domain of dimension 3.
+\item
+  \(x_1, \cdots, x_4\) are irreducible but not prime in \(R\), and thus
+  \(R\) is not a UFD.
+\item
+  \(x_1 x_4\) and \(x_2 x_3\) are two decompositions of the same element
+  in \(R\) which are nonassociate.
+\item
+  \(\gens{x_1, x_2}\) is a prime ideal of codimension 1 in \(R\) that is
+  not principal.
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}[Problem 5]
+
+Consider a set \(U\) in the complement of \((0, 0) \in \AA^2\). Prove
+that any regular function on \(U\) extends to a regular function on all
+of \(\AA^2\).
+
+\end{exercise}
+
+\hypertarget{problem-set-4}{%
+\subsection{Problem Set 4}\label{problem-set-4}}
+
+\begin{problem}[Gathmann 3.20]
+
+Let \(X\subset \AA^n\)be an affine variety and \(a\in X\). Show that
+\begin{align*}  
+\OO_{X, a} = \OO_{\AA^n, a} / I(X) \OO_{A^n,a}
+,\end{align*} where \(I(X) \OO_{\AA^n, a}\) denotes the ideal in
+\(\OO_{\AA^n, a}\) generated by all quotients \(f/1\) for \(f\in I(X)\).
+
+\end{problem}
+
+\begin{problem}[Gathmann 3.21]
+
+Let \(a\in \RR\), and consider sheaves \(\mathcal{F}\) on \(\RR\) with
+the standard topology:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\mathcal{F} \da\) the sheaf of continuous functions
+\item
+  \(\mathcal{F} \da\) the sheaf of locally polynomial functions.
+\end{enumerate}
+
+For which is the stalk \(\mathcal{F}_a\) a local ring?
+
+\begin{quote}
+Recall that a local ring has precisely one maximal ideal.
+\end{quote}
+
+\end{problem}
+
+\begin{problem}[Gathmann 3.22]
+
+Let \(\phi, \psi \in \mathcal{F}(U)\) be two sections of some sheaf
+\(\mathcal{F}\) on an open \(U\subseteq X\) and show that
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  If \(\phi, \psi\) agree on all stalks, so
+  \(\bar{(U, \phi)} = \bar{(U, \psi)} \in \mathcal{F}_a\) for all
+  \(a\in U\), then \(\phi\) and \(\psi\) are equal.
+\item
+  If \(\mathcal{F} \da \OO_X\) is the sheaf of regular functions on some
+  irreducible affine variety \(X\), then if \(\psi = \phi\) on one stalk
+  \(\mathcal{F}_a\), then \(\phi = \psi\) everywhere.
+\item
+  For a general sheaf \(\mathcal{F}\) on \(X\), (b) is false.
+\end{enumerate}
+
+\end{problem}
+
+\begin{definition}[Stalk at a subspace]
+
+Let \(Y\subset X\) be a nonempty and irreducible subspace of \(X\) a
+topological space with a sheaf \(\mathcal{F}\) on \(X\). Then the stalk
+of \(\mathcal{F}\) at \(Y\) is defined by the pairs \((U, \phi)\) such
+that \(U\subset X\) is open, \(U\cap Y\) is nonempty, and
+\(\phi \in \mathcal{F}(U)\), where we identify
+\((U, \phi) \sim (U',\phi')\) iff there is a small enough open set such
+that the restrictions agree.
+
+\end{definition}
+
+\begin{problem}[Gathmann 3.23: Geometry of a Certain Localization]
+
+Let \(Y\subset X\) be a nonempty and irreducible subvariety of an affine
+variety \(X\), and show that the stalk \(\OO_{X, Y}\) of \(\OO_X\) at
+\(Y\) is a \(k\dash\)algebra which is isomorphic to the localization
+\(A(X)_{I(Y)}\).
+
+\end{problem}
+
+\begin{problem}[Gathmann 3.24]
+
+Let \(\mathcal{F}\) be a sheaf on \(X\) a topological space and
+\(a\in X\). Show that the stalk \(\mathcal{F}_a\) is a \emph{local
+object}, i.e.~if \(U\subset X\) is an open neighborhood of \(a\), then
+\(\mathcal{F}_a\) is isomorphic to the stalk of
+\(\ro{ \mathcal{F} }{U}\) at \(a\) on \(U\) viewed as a topological
+space.
+
+\end{problem}
+
+\hypertarget{problem-set-5}{%
+\subsection{Problem Set 5}\label{problem-set-5}}
+
+\begin{problem}[Gathmann 4.13]
+
+Let \(f:X\to Y\) be a morphism of affine varieties and
+\(f^*: A(Y) \to A(X)\) the induced map on coordinate rings. Determine if
+the following statements are true or false:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(f\) is surjective \(\iff f^*\) is injective.
+\item
+  \(f\) is injective \(\iff f^*\) is surjective.
+\item
+  If \(f:\AA^1\to\AA^1\) is an isomorphism, then \(f\) is \emph{affine
+  linear}, i.e.~\(f(x) = ax+b\) for some \(a, b\in k\).
+\item
+  If \(f:\AA^2\to\AA^2\) is an isomorphism, then \(f\) is \emph{affine
+  linear}, i.e.~\(f(x) = Ax+b\) for some \(a \in \Mat(2\times 2, k)\)
+  and \(b\in k^2\).
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}[Gathmann 4.19]
+
+Which of the following are isomorphic as ringed spaces over \(\CC\)?
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\item
+  \(\mathbb{A}^{1} \backslash\{1\}\)
+\item
+  \(V\left(x_{1}^{2}+x_{2}^{2}\right) \subset \mathbb{A}^{2}\)
+\item
+  \(V\left(x_{2}-x_{1}^{2}, x_{3}-x_{1}^{3}\right) \backslash\{0\} \subset \mathbb{A}^{3}\)
+\item
+  \(V\left(x_{1} x_{2}\right) \subset \mathbb{A}^{2}\)
+\item
+  \(V\left(x_{2}^{2}-x_{1}^{3}-x_{1}^{2}\right) \subset \mathbb{A}^{2}\)
+\item
+  \(V\left(x_{1}^{2}-x_{2}^{2}-1\right) \subset \mathbb{A}^{2}\)
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}[Gathmann 5.7]
+
+Show that
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Every morphism \(f:\AA^1\smz \to \PP^1\) can be extended to a morphism
+  \(\hat f: \AA^1 \to \PP^1\).
+\item
+  Not every morphism \(f:\AA^2\smz \to \PP^1\) can be extended to a
+  morphism \(\hat f: \AA^2 \to \PP^1\).
+\item
+  Every morphism \(\PP^1\to \AA^1\) is constant.
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}[Gathmann 5.8]
+
+Show that
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Every isomorphism \(f:\PP^1\to \PP^1\) is of the form
+  \begin{align*}  
+  f(x) = {ax+b \over cx+d} && a,b,c,d\in k
+  .\end{align*} where \(x\) is an affine coordinate on
+  \(\AA^1\subset \PP^1\).
+\item
+  Given three distinct points \(a_i \in \PP^1\) and three distinct
+  points \(b_i \in \PP^1\), there is a unique isomorphism
+  \(f:\PP^1 \to \PP^1\) such that \(f(a_i) = b_i\) for all \(i\).
+\end{enumerate}
+
+\end{problem}
+
+\begin{proposition}[?]
+
+There is a bijection
+\begin{align*}
+\begin{array}{c}
+\{\text { morphisms } X \rightarrow Y\} \stackrel{1: 1}{\longleftrightarrow}\left\{K \text { -algebra homomorphisms } \mathscr{O}_{Y}(Y) \rightarrow \mathscr{O}_{X}(X)\right\} \\
+f \longmapsto f^{*}
+\end{array}
+\end{align*}
+
+\end{proposition}
+
+\begin{problem}[Gathmann 5.9]
+
+Does the above bijection hold if
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(X\) is an arbitrary prevariety but \(Y\) is still affine?
+\item
+  \(Y\) is an arbitrary prevariety but \(X\) is still affine?
+\end{enumerate}
+
+\end{problem}
+
 \addsec{ToDos}
 \listoftodos[List of Todos]
 \cleardoublepage
 
 % Hook into amsthm environments to list them.
 \addsec{Definitions}
-\renewcommand{\listtheoremname}{Definitions}
+\renewcommand{\listtheoremname}{}
 \listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
 \cleardoublepage
 
 \addsec{Theorems}
-\renewcommand{\listtheoremname}{Theorems}
+\renewcommand{\listtheoremname}{}
 \listoftheorems[ignoreall,show={theorem,proposition}, numwidth=3.5em]
 \cleardoublepage
 
 \addsec{Exercises}
-\renewcommand{\listtheoremname}{Exercises}
+\renewcommand{\listtheoremname}{}
 \listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
 \cleardoublepage
 

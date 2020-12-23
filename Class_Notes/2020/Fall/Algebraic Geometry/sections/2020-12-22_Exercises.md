@@ -1,4 +1,4 @@
-# Course Exercises 
+# Appendix: Course Exercises 
 
 ## Problem Set 1 
 
