@@ -32,9 +32,17 @@ Thus $\iota(A) = 0$ as soon as $\deg(D) > \deg(\mathfrak{k})$.
 
 1. $\ell(\mathfrak{k}) = g$ and $\deg \mathfrak{k} = 2g-2$.
 2. $g\geq 0$
-3. If $g\geq 1$, $\alpha\in \ZZ$ such that 
+3. If $g\geq 1$, then the least $\alpha\in \ZZ$ such that whenever $\deg(D) > \alpha$ we have $\iota(D) = 0$ is given by $\alpha \da 2g-2$.
 :::
 
 :::{.remark}
-Try taking $D=0$ and $\mathfrak{k} = D$ respectively.
+Try taking $D=0$ and $\mathfrak{k} = D$ respectively, and compute $\iota(\mathfrak{k}) = 1$.
+:::
+
+:::{.exercise title="?"}
+\envlist
+
+a. Show that the Riemann-Roch theorem uniquely characterizes $g$, i.e. there is at most one quantity $g$ for which it holds.
+
+b. 
 :::
