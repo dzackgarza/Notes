@@ -26,3 +26,9 @@ As a result, $\deg(D) > \deg(\mathfrak{k})$, so $\mathfrak{k} - D$ has negative 
 We know that $\ell(D) > 0$ iff there is a $D' \sim D$ linearly equivalent to $D$, and there's no effective divisor equivalent to a divisor of negative degree.
 Thus $\iota(A) = 0$ as soon as $\deg(D) > \deg(\mathfrak{k})$.
 :::
+
+:::{.exercise title="?"}
+\envlist
+
+1. $\ell(\mathfrak{k} = g$ and $\de)
+:::
