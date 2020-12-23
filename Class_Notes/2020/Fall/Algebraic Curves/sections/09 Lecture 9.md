@@ -44,5 +44,14 @@ Try taking $D=0$ and $\mathfrak{k} = D$ respectively, and compute $\iota(\mathfr
 
 a. Show that the Riemann-Roch theorem uniquely characterizes $g$, i.e. there is at most one quantity $g$ for which it holds.
 
-b. 
+b. Show that if Riemann-Roch holds for $\mathfrak{k}$, then it holds for any $\mathfrak{k}' \sim \mathfrak{k}$.
+
+c. Show that if Riemann-Roch holds for $\mathfrak{k}_1, \mathfrak{k}_2$ then $\mathfrak{k}_1 \sim \mathfrak{k}_2$.
+
+:::
+
+
+:::{.definition title="Canonical Class"}
+Thus the Riemann-Roch theorem singles out a distinguished *class* of divisors $[\mathfrak{k}]$ of degree $2g-2$, which is called the **canonical class**.
+Any divisor $D\in [\mathfrak{k}]$ is called a **canonical divisor**.
 :::
