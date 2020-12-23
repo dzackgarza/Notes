@@ -277,12 +277,10 @@ b. Given three distinct points $a_i \in \PP^1$ and three distinct points $b_i \i
 :::{.proposition title="?"}
 There is a bijection
 \[
-\begin{array}{c}
-\{\text { morphisms } X \rightarrow Y\} 
-&\stackrel{1: 1}{\leftrightarrow}\left
-\ts{  K\dash{algebra morphisms } \mathscr{O}_{Y}(Y) \rightarrow \mathscr{O}_{X}(X) } \\
+\ts{ \text { morphisms } X \rightarrow Y } 
+&\stackrel{1: 1}{\leftrightarrow}
+\ts{  K\dash\text{algebra morphisms } \mathscr{O}_{Y}(Y) \rightarrow \mathscr{O}_{X}(X) } \\
 f &\mapsto f^{*}
-\end{array}
 \]
 :::
 
