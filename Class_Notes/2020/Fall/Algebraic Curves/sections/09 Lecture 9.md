@@ -114,5 +114,26 @@ This follows because for a map $f: k \to k(t)$, the places over the point at inf
 
 Since $(x), (y)$ has the same divisor of poles in $K$, all of their poles like over $\infty\in k(t)$.
 Moreover, since $y$ is regular away from $\infty \in k(x)$, this forces $c= 0$ and $y=ax+b$.
+But this exhibits a $k\dash$linear dependence between $x, y$.
+:::
+
+Now consider $1,x,y,x^2, xy, y^2 \in \mathcal{L}(-2 \mathfrak{k})$.
+Since $\ell(-2 \mathfrak{k}) = 5$, these is necessarily a linear dependence in this set, so there is a tupoe $(a,b,c,d,e,f) \subset k^6$ such that 
+\[  
+f(x, y) \da ax^2 + bxy + xy^2 + dx + ey + f = 0
+.\]
+
+Not all of $a,b,c$ can be zero, since this yields the linear dependence $dx + ey + 1 = 0$.
+Moreover $f$ must  be irreducible: if not, it would have a linear factor, which would again yield a linear dependence between $x$ and $y$.
+
+:::{.theorem title="Genus Zero Function Fields "}
+For $K/k$ a genus zero function field, there exists $a,b,c,d,e,f\in k$ with $a,b,c$ not all zero such that
+\[  
+f(x, y) \da ax^2 + bxy + xy^2 + dx + ey + f = 0 \qtext{and} K = K_f
+.\]
+:::
+
+:::{.exercise title="?"}
+Suppose $\ch(k) \neq 2$, and show that every genus zero function field is regular and there exist $a,b,c\in k\units$ such that $K = K_f$ where $f(x, y) = ax^2 + by^2 + c$.
 :::
 
