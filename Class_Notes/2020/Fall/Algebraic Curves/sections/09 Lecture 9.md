@@ -113,5 +113,6 @@ This follows because for a map $f: k \to k(t)$, the places over the point at inf
 ![Image](figures/image_2020-12-23-00-32-06.png)
 
 Since $(x), (y)$ has the same divisor of poles in $K$, all of their poles like over $\infty\in k(t)$.
+Moreover, since $y$ is regular away from $\infty \in k(x)$, this forces $c= 0$ and $y=ax+b$.
 :::
 
