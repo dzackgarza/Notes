@@ -14,6 +14,8 @@ Tautologically, this yields
 \ell(A) - \iota(A) = \deg A - g + 1
 .\]
 
+## Riemann-Roch Theorem and Applications
+
 :::{.theorem title="Riemann-Roch Theorem"}
 If $K/k$ is a function field of genus $g$, there exists a divisor $\mathfrak{k} \in \Div K$ such that for all $D\in \Div K$, $\iota(D) = \ell(\mathfrak{k} - D)$, and thus
 \[  
@@ -68,3 +70,40 @@ c. Show that the index $I(K)$ can only be 1 or 2.
 
 d. Show that $K \cong k(t)$ iff $\Sigma _1 (K/k) \neq \emptyset$ iff $I(K) = 1$.
 :::
+
+:::{.exercise title="?"}
+If $K/k$ is genus 1, show that a divisor $D \in \Div K$ is canonical iff $D$ is principal.
+:::
+
+## Applications of Riemann-Roch
+
+### Genus Zero Function Fields
+
+Let $K/k$ be a genus zero function field with $\mathfrak{k}$ a canonical divisor, so $\deg \mathfrak{k} = -2$.
+Then $\deg(-\mathfrak{k}) = 2$ and by Riemann-Roch every effective divisor is not principal and
+\[  
+\ell(-\mathfrak{k}) = \deg(-\mathfrak{k}) -g + 1 = 3
+.\]
+One can choose $-\mathfrak{k}$ to be effective, so $1 \in \mathcal{L}(-\mathfrak{k})$.
+So $\mathcal{L}(\mathfrak{k})$ has a basis of the form $\ts{1,x,y}$ for some elements $x, y$.
+
+:::{.claim}
+\[  
+K = k(x, y)
+.\]
+:::
+
+:::{.proof title="?"}
+**Case 1**: 
+If either $x$ or $y$ has degree 1, this is also the degree of the function field $K / k(x)$, and then $\mathfrak{k} = k(x)$ or $k(y)$ and the function field is rational.
+
+**Case 2**:
+Since $(x) \geq -\qty{ -\mathfrak{k}}$, we have $(x)_- \leq - \mathfrak{k} + (x)_+$, so $\deg(x) \leq \deg(-\mathfrak{k}) = 2$.
+So $\deg(x) = 2$.
+Similarly, $deg(y) = 2$ and so $[K: k(x)] = 2$.
+Thus it's enough to show that $y\not\in k(x)$.
+Toward a contradiction, if $y\in k(x)$, since $[K: k(y)] = 2$, we get $k(x) = k(y)$.
+In this case $y$ is a degree 1 rational function in $x$, and so is of the form $y = {ax+ b \over cx + d}$ with $a,b,c,d \in k$.
+This forces $(x)_- = (y)_- = -\mathfrak{k}$
+:::
+
