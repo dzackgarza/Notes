@@ -1,1 +1,28 @@
-# Lecture 9 (Todo)
+# Lecture 9
+
+Last time: we proved the Riemann Inequality (\cref{thm:riemann_inequality}), the content of which is that there is a non-negative quantity called the *genus* for which the stated inequality holds.
+The next step will be to try to improve this inequality to an equality, for which we introduce the following definition:
+
+:::{.definition title="Index of Speciality"}
+\[  
+\iota(A) \da \ell(A) - \deg A = g - 1 \geq 0
+.\]
+:::
+
+Tautologically, this yields
+\[  
+\ell(A) - \iota(A) = \deg A - g + 1
+.\]
+
+:::{.theorem title="Riemann-Roch Theorem"}
+If $K/k$ is a function field of genus $g$, there exists a divisor $\mathfrak{k} \in \Div K$ such that for all $D\in \Div K$, $\iota(D) = \ell(\mathfrak{k} - D)$, and thus
+\[  
+\ell(D) - \ell(\mathfrak{k} - D) = \deg D - g + 1
+.\]
+:::
+
+:::{.remark}
+As a result, $\deg(D) > \deg(\mathfrak{k})$, so $\mathfrak{k} - D$ has negative degree.
+We know that $\ell(D) > 0$ iff there is a $D' \sim D$ linearly equivalent to $D$, and there's no effective divisor equivalent to a divisor of negative degree.
+Thus $\iota(A) = 0$ as soon as $\deg(D) > \deg(\mathfrak{k})$.
+:::
