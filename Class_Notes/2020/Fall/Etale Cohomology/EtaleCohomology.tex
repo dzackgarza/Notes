@@ -66,12 +66,14 @@ are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2020-12-18 }
+{\tiny \textit{Last updated:} 2020-12-22 }
 \end{flushleft}
 
 
 \newpage
 
+% Note: addsec only in KomaScript
+\addsec{Table of Contents}
 \tableofcontents
 \newpage
 
@@ -1797,32 +1799,29 @@ Check that this is a continuous map of sites.
 
 Next time: a bunch of examples.
 
-\section{Indices}
-\subsection{ToDos}
-
+\addsec{ToDos}
 \listoftodos[List of Todos]
-
-\newpage
+\cleardoublepage
 
 % Hook into amsthm environments to list them.
-\subsection{Definitions}
-
+\addsec{Definitions}
 \renewcommand{\listtheoremname}{Definitions}
 \listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
+\cleardoublepage
 
-\subsection{Theorems}
-
+\addsec{Theorems}
 \renewcommand{\listtheoremname}{Theorems}
 \listoftheorems[ignoreall,show={theorem,proposition}, numwidth=3.5em]
+\cleardoublepage
 
-\subsection{Exercises}
-
+\addsec{Exercises}
 \renewcommand{\listtheoremname}{Exercises}
 \listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
+\cleardoublepage
 
-\subsection{Figures}
-
+\addsec{Figures}
 \listoffigures
+\cleardoublepage
 
 
 \printbibliography[title=Bibliography]
