@@ -108,6 +108,10 @@ This forces $(x)_- = (y)_- = -\mathfrak{k}$, since the only possibilities for th
 and we've ruled out the degree zero possibility.
 
 So $y$ only has poles where $x$ has poles.
-This follows because $
+This follows because for a map $f: k \to k(t)$, the places over the point at infinity are places over infinity:
+
+![Image](figures/image_2020-12-23-00-32-06.png)
+
+
 :::
 
