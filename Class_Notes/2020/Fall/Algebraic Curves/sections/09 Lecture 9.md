@@ -106,5 +106,8 @@ Toward a contradiction, if $y\in k(x)$, since $[K: k(y)] = 2$, we get $k(x) = k(
 In this case $y$ is a degree 1 rational function in $x$, and so is of the form $y = {ax+ b \over cx + d}$ with $a,b,c,d \in k$.
 This forces $(x)_- = (y)_- = -\mathfrak{k}$, since the only possibilities for these divisors are having degrees zero or one,
 and we've ruled out the degree zero possibility.
+
+So $y$ only has poles where $x$ has poles.
+This follows because $
 :::
 
