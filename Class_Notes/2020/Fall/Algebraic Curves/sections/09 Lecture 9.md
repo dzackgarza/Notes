@@ -55,3 +55,16 @@ c. Show that if Riemann-Roch holds for $\mathfrak{k}_1, \mathfrak{k}_2$ then $\m
 Thus the Riemann-Roch theorem singles out a distinguished *class* of divisors $[\mathfrak{k}]$ of degree $2g-2$, which is called the **canonical class**.
 Any divisor $D\in [\mathfrak{k}]$ is called a **canonical divisor**.
 :::
+
+
+:::{.exercise title="?"}
+Let $K/k$ be a genus zero function field.
+
+a. Show that $\Cl^0(K) = 0$, so degree zero divisors are principal.
+
+b. Show that $D\in \Div K$ is canonical iff $\deg D = -2$.
+
+c. Show that the index $I(K)$ can only be 1 or 2.
+
+d. Show that $K \cong k(t)$ iff $\Sigma _1 (K/k) \neq \emptyset$ iff $I(K) = 1$.
+:::
