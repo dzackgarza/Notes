@@ -30,5 +30,7 @@ Thus $\iota(A) = 0$ as soon as $\deg(D) > \deg(\mathfrak{k})$.
 :::{.exercise title="?"}
 \envlist
 
-1. $\ell(\mathfrak{k} = g$ and $\de)
+1. $\ell(\mathfrak{k}) = g$ and $\deg \mathfrak{k} = 2g-2$.
+2. $g\geq 0$
+3. If $g\geq 1$, the least $\alpha\in \ZZ$ such that 
 :::
