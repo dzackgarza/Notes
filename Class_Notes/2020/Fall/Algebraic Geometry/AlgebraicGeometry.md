@@ -5098,18 +5098,18 @@ b. Given three distinct points $a_i \in \PP^1$ and three distinct points $b_i \i
 :::
 
 
-:::{.exercise title="Gathmann 5.9"}
-
 :::{.proposition title="?"}
 There is a bijection
 \[
 \begin{array}{c}
-\{\text { morphisms } X \rightarrow Y\} \stackrel{1: 1}{\longleftrightarrow}\left\{K \text { -algebra homomorphisms } \mathscr{O}_{Y}(Y) \rightarrow \mathscr{O}_{X}(X)\right\} \\
-f \longmapsto f^{*}
+\{\text { morphisms } X \rightarrow Y\} 
+&\stackrel{1: 1}{\longleftrightarrow}\left\{K \text { -algebra homomorphisms } \mathscr{O}_{Y}(Y) \rightarrow \mathscr{O}_{X}(X)\right\} \\
+f &\longmapsto f^{*}
 \end{array}
 \]
 :::
 
+:::{.exercise title="Gathmann 5.9"}
 Does the above bijection hold if
 
 a. $X$ is an arbitrary prevariety but $Y$ is still affine?
