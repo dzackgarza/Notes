@@ -126,7 +126,7 @@ f(x, y) \da ax^2 + bxy + xy^2 + dx + ey + f = 0
 Not all of $a,b,c$ can be zero, since this yields the linear dependence $dx + ey + 1 = 0$.
 Moreover $f$ must  be irreducible: if not, it would have a linear factor, which would again yield a linear dependence between $x$ and $y$.
 
-:::{.theorem title="Genus Zero Function Fields "}
+:::{.theorem title="Genus Zero Function Fields are Quadratic Extensions"}
 For $K/k$ a genus zero function field, there exists $a,b,c,d,e,f\in k$ with $a,b,c$ not all zero such that
 \[  
 f(x, y) \da ax^2 + bxy + xy^2 + dx + ey + f = 0 \qtext{and} K = K_f
