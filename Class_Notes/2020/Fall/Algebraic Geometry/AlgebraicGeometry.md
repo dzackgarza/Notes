@@ -5103,8 +5103,9 @@ There is a bijection
 \[
 \begin{array}{c}
 \{\text { morphisms } X \rightarrow Y\} 
-&\stackrel{1: 1}{\longleftrightarrow}\left\{K \text { -algebra homomorphisms } \mathscr{O}_{Y}(Y) \rightarrow \mathscr{O}_{X}(X)\right\} \\
-f &\longmapsto f^{*}
+&\stackrel{1: 1}{\leftrightarrow}\left
+\ts{  K\dash{algebra morphisms } \mathscr{O}_{Y}(Y) \rightarrow \mathscr{O}_{X}(X) } \\
+f &\mapsto f^{*}
 \end{array}
 \]
 :::
