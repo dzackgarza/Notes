@@ -126,7 +126,8 @@ U
 3. On 
 
 \begin{tikzcd}
-U \cross_X U \cross_X U \ar
+U \cross_X U \cross_X U 
+\ar[d, bend left] \ar[d, "\pi_{ij}"] \ar[d, bend right] \\
 \end{tikzcd}
 
 [^fp_actual_open_cov]: 
