@@ -286,8 +286,9 @@ This requires checking for each point on $\spec R$ that the map on stalks is exa
 
 
 **Step 2**:
-Suppose $R\to S$ splits.
-The geometric picture is that we
+Suppose $R\to S$ splits via a map $S\mapsvia{r} S$.
+The geometric picture is that we're supposing we have a section to $U\to X$, and descending amounts to pulling back along the splitting.
+We first want to check that $N\to N\tensor_R S$ is injective, which is true using the map $\id_N \tensor r$ 
 
 :::
 
