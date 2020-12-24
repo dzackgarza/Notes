@@ -221,7 +221,7 @@ We can produce two maps to fill in the following diagram:
 \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
 \ar[r, bend left, "\pi_1^*"]
 \ar[r, bend right, "\pi_2^*"] &
-\hom_{U\cross_X U} \qty{    }
+\hom_{U\cross_X U} \qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_2)^* \mathcal{F}_2   }
 
 
 \end{tikzcd}
