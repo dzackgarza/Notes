@@ -231,8 +231,14 @@ where these hom sets are equal since $f\circ \pi_1 = f\circ \pi_2$.
 Given $g\in \Hom_U(f^* \mathcal{F}_1, f^* \mathcal{F}_2)$, this is a morphism of descent data if maps to the same element under $\pi_1^*$ and $\pi_2^*$ using the above identification of hom sets.
 :::
 
-Being fully faithful is the same as the above diagram being a equalizer.
-I.e., the first map $f^*$ is injective, yielding faithfulness, and fullness means 
-
+:::{.exercise title="?"}
+This follows from definitions, check that it holds.
 :::
+
+Being fully faithful is the same as the above diagram being a equalizer.
+I.e., the first map $f^*$ is injective, yielding faithfulness, and fullness means that any map in the middle that has the same image under the two arrows $\pi_1^*, \pi_2^*$ comes from an element in $\hom_X(\mathcal{F}_1, \mathcal{F}_2)$.
+
+Assuming that this is fully faithful, why do quasicoherent sheaves give sheaves on $X_{\et}$ or $X_{\fppf}$?
+:::
+
 
