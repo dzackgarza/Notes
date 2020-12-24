@@ -30,8 +30,13 @@ Check that these are continuous maps of sites.
 :::
 
 :::{.remark}
-On terminology: what we've been calling a site or a Grothendieck topology is sometimes called a *Grothendieck pretopology*. 
-The major difference is that you don't have to assume the existence of fiber products.
+\envlist
+On terminology: 
+
+- What we've been calling a site or a Grothendieck topology is sometimes called a *Grothendieck pretopology*. 
+  The major difference is that you don't have to assume the existence of fiber products.
+
+- You may also see the notion of a **topos**, which is the category of sheaves on a site.
 
 :::
 
