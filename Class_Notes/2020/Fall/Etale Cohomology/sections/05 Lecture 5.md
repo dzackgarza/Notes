@@ -69,5 +69,9 @@ to be an equalizer diagram -- but this is exactly the previous diagram where $\m
 :::
 
 :::{.example title="?"}
-We have the sheaf $\OO_{X}^{\et}: (U\to X) \mapsto \Gamma(U, \OO_U)
+We have an étale sheaf $\OO_{X}^{\et}: (U\to X) \mapsto \Gamma(U, \OO_U)$.
 :::
+
+### Proof of Essential Surjectivity
+
+We have $U\mapsvia f X$ an fppf cover and descent data $(\mathcal{F}, \phi)$ on $U/X$ where $\mathcal{F}$ is a quasicoherent sheaf on $U$ and $\phi$ is an isomorphism on 
