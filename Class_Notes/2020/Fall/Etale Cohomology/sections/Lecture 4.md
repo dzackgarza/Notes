@@ -114,7 +114,6 @@ Suppose $U\mapsvia{f}X$ is a morphisms, then **descent data** for a quasicoheren
 1. A sheaf $\mathcal{F}\in \qcoh(U)$.
 2. Gluing data: If we take the fiber product of $U$ with itself, mapping to $U$ under 2 different projections[^fp_actual_open_cov],  
 
-
 \begin{tikzcd}
 U \cross_X U \ar[d, bend left, "\pi_1"] \ar[d, bend right, "\pi_2"] \\
 U
@@ -124,6 +123,11 @@ U
   \phi: \pi_1^* \mathcal{F} \mapsvia{\sim} \pi_2^* \mathcal{F}
   .\]
 
+3. On 
+
+\begin{tikzcd}
+U \cross_X U \cross_X U \ar
+\end{tikzcd}
 
 [^fp_actual_open_cov]: 
 If $U$ was an open cover, this would correspond to intersections of elements in the cover.
