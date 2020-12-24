@@ -136,4 +136,27 @@ So $K\tensor S \tensor S \to M\tensor S$ is an isomorphism, which implies $K\ten
 > The exercises here are among the most important in the course! 
   Totally necessary to do them.
 
+## Representable Functors
 
+
+:::{.theorem title="?"}
+Suppose $p:U\to X$ is an fppf cover.
+Then the functor $p^*: \Sch/X \to$ descent data for schemes on $U/X$ is fully faithful (but not an equivalence of categories).
+:::
+
+:::{.proof title="?"}
+
+:::{.exercise title="Step 1"}
+Reduce to the case where *everything* is affine, including $U, X$, and the scheme over $X$.
+However, it's enough to reduce to the case of affine schemes over $X$, and $U, X$ are not necessarily affine.
+:::
+
+**Step 2**:
+If $Y,Z$ are schemes over $X$, we want to show
+\begin{tikzcd}
+ \ar[r] &
+ \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
+ &
+\end{tikzcd}
+
+:::
