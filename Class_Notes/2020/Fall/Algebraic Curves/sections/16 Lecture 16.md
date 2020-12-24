@@ -178,6 +178,11 @@ If $\sigma(\alpha_i) = \alpha_j$, then we have
 and thus $\sigma$ preserves the multisets of the $\gamma_i$ and $\delta_i$.
 
 Now set $\gamma\da \prod \gamma_i$ and $\delta \da \prod \delta_i$, making these both positive real integers that are fixed by every embedding $\sigma$, and thus $\gamma, \delta\in \ZZ^+$.
+We can now apply the AM-GM inequality:
+\[  
+{1\over g} \sum_{i=1}^g \gamma_i 
+&\geq \qty{ \prod_{i=1}^g @}
+.\]
  
 
 :::
