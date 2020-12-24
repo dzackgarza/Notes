@@ -220,6 +220,9 @@ We can produce two maps to fill in the following diagram:
 \ar[r, {f^*}] &
 \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
 \ar[r, bend left, "\pi_1^*"]
+\ar[r, bend right, "\pi_2^*"] &
+\hom_{U\cross_X U} \qty{    }
+
 
 \end{tikzcd}
 
