@@ -191,7 +191,6 @@ Hint: you will need to use $\phi$!
 :::
 
 
-### Proof of Theorem
 
 Explicitly, the theorem says
 
@@ -207,8 +206,8 @@ So we need to prove
 
 > Reference: Neron modules by BLR.
 
+### Proof of Theorem
 
-:::{.proof title="of full faithfulness"}
 Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(X)$, then we have a functor and thus a map 
 \[
 \hom_X(\mathcal{F}_1, \mathcal{F}_2) \mapsvia{f^*} \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
@@ -245,6 +244,11 @@ Being a sheaf was characterized by an equalizer diagram gotten by replacing the 
 Taking $\mathcal{F}_1 = \OO$ and $\mathcal{F}_2 = \mathcal{F}$, this shows that $\mathcal{F}^{\et}$ (resp. $\mathcal{F}^{\fppf}$) is a sheaf.
 In this case, the first hom is global sections of $\mathcal{F}$ on $X$, the middle are global sections of $\mathcal{F}$ on $U$, and the two maps are to the double intersections.
 :::
+
+To prove this is an equalizer diagram, we'll need a lemma:
+
+:::{.lemma title="?"}
+
 :::
 
 
