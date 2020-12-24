@@ -54,7 +54,9 @@ On terminology:
 :::{.theorem title="Ways of constructing sheaves"}
 \envlist
 
-1. If $Y$ is an $X\dash$scheme (i.e. a scheme equipped with a map to $X$)
+1. If $Y$ is an $X\dash$scheme (i.e. a scheme equipped with a map to $X$) then the functor $Z \to \hom_X(Z, Y)$ is a sheaf on $X_{\Fppf}, X_{\Et}, X_{\et}$, etc.
+
+2. Suppose $\mathcal{F}$ is a quasicoherent sheaf on $X$, so $\mathcal{F}\in \qcoh(X)$, 
 :::
 
 
