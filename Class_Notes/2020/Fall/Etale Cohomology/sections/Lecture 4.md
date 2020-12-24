@@ -248,7 +248,37 @@ In this case, the first hom is global sections of $\mathcal{F}$ on $X$, the midd
 To prove this is an equalizer diagram, we'll need a lemma:
 
 :::{.lemma title="?"}
-
+Suppose $R\to S$ is a faithfully flat ring morphism (flat and morphisms on spec are surjective) and suppose $N\in \rmod$.
+Then there is an equalizer diagram 
+\begin{tikzcd}
+N \ar[r] & N\tensor_R S \ar[r, bend left, "\id_N \tensor \id_S \tensor 1"] \ar[r, bend right, "\id_N \tensor 1 \tensor \id_S"] & N\tensor_R S \tensor_R S \\
+n \ar[r] & n\tensor 1 
+\end{tikzcd}
 :::
 
+This is the case where $\mathcal{F}_1 = \OO$ and $\mathcal{F}_2 = \tilde N$ the quasicoherent sheaf associated to $N$, $U = \spec S \to X = \spec R$.
+
+:::{.proof title="of lemma"}
+
+**Step 1**:
+(Amazing trick) WLOG $R\to S$ splits, so there's a map $S\to R$ such that $R\to S\to R$ is the identity.
+We can tensor with $S$, i.e. push out this map along itself to obtain
+\begin{tikzcd}
+R \ar[d]\ar[r] & S \ar[d, "1\tensor \id_S"] \\
+S \ar[r] & S\tensor_R S  \ar[u, bend right, "\ecists m"
+\end{tikzcd}
+where $m$ is a section given by multiplication.
+
+:::{.claim}
+The claim is that we can replace $R$ with $S$ and $S$ with $S\tensor_R S$.
+:::
+
+:::{.proof title="of claim"}
+We want to check that the following sequence is exact:
+\[  
+0 \to N \to N\tensor_R S \mapsvia{f-g} N\tensor_R S\tensor_R S
+.\]
+:::
+
+:::
 
