@@ -123,7 +123,7 @@ U
   \phi: \pi_1^* \mathcal{F} \mapsvia{\sim} \pi_2^* \mathcal{F}
   .\]
 
-3. On 
+3. Cocycle condition: in the following 
 
 \begin{tikzcd}
 U \cross_X U \cross_X U 
