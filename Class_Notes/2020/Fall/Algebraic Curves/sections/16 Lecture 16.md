@@ -271,5 +271,9 @@ Then $\qty{2g \over \deg(P)} P$ has degree $2g$, and this yields a map
 Q &\mapsto {2g \over \deg P} P
 .\]
 This is not necessarily surjective, but how far is it from being injective?
-The fibers have size at most $2g$.
+The fibers have size at most $2g$ since we have a degree $2g$ extension of Dedekind domains.
+Thus
+\[  
+\abs{\Sigma_1 (K_{2g} / \FF_{q^{2g}}) }
+.\]
 :::
