@@ -67,3 +67,7 @@ We want to show that if $U\to V$ is an étale cover, we want
 \end{tikzcd}
 to be an equalizer diagram -- but this is exactly the previous diagram where $\mathcal{F}\da \OO$ and $\mathcal{F}_2 \da \mathcal{F}$.
 :::
+
+:::{.example title="?"}
+We have the sheaf $\OO_{X}^{\et}: (U\to X) \mapsto \Gamma(U, \OO_U)
+:::
