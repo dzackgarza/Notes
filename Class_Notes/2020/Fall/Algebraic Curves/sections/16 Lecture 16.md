@@ -278,7 +278,10 @@ Thus
 ,\]
 and substituting the known value of $A_{2g}$ and rearranging yields
 \[  
-h \geq {1\over 2g} \qty{q-1 \over q^{g+1} - 1} N_{2g}
+h 
+&\geq {1\over 2g} \qty{q-1 \over q^{g+1} - 1} N_{2g} \\
+&\geq  \qty{1\over 2g} \qty{q-1 \over q^{g+1} - 1} \qty{ q^{2g} + 1 - 2g q^g}
+&& \text{by the Weil bounds}
 .\]
 
 :::
