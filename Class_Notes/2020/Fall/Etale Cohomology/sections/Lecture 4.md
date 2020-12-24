@@ -284,5 +284,10 @@ One direction is easy, since $S$ is flat, and the other direction follows from t
 This requires checking for each point on $\spec R$ that the map on stalks is exact, but that's true because we have a surjective map and this can be checked upstairs.
 :::
 
+
+**Step 2**:
+Suppose $R\to S$ splits.
+The geometric picture is that we
+
 :::
 
