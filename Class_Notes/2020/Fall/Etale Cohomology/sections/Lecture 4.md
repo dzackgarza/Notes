@@ -216,7 +216,10 @@ Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(X)$, then we have a functor and th
 We're not trying to show this map is a bijection, since we need more than that: the morphism should commute with the descent data.
 We can produce two maps to fill in the following diagram:
 \begin{tikzcd}
-\hom_X(\mathcal{F}_1, \mathcal{F}_2) \ar[{f^*} \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
+\hom_X(\mathcal{F}_1, \mathcal{F}_2) 
+\ar[r, {f^*}] &
+\hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
+\ar[r, bend left, "\pi_1^*"]
 
 \end{tikzcd}
 
