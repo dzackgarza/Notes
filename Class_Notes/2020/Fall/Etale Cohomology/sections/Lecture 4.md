@@ -280,7 +280,8 @@ Checking the equalizer diagram is the same as showing that the following sequenc
 ,\]
 where $f, g$ are the maps given in the equalizer.
 It suffices to do this after tensoring with $S$, since a sequence of $R$ modules is exact iff it is exact after tensoring with $S$.
-One direction is easy, since $S$ is flat, and the other direction follows from the fact that you can check on stalks, and after tensoring the stalks are the same.
+One direction is easy, since $S$ is flat, and the other direction follows from the fact that you can check on each stalk, and after tensoring the stalks are the same.
+This requires checking for each point on $\spec R$ that the map on stalks is exact, but that's true because we have a surjective map and this can be checked upstairs.
 :::
 
 :::
