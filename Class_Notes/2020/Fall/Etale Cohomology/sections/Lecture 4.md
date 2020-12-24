@@ -48,7 +48,13 @@ On terminology:
 
 1.  We've said what it means to be a sheaf on a site, how do we check that a given functor is a sheaf on $X_{\et}$ or $X_{\fppf}$?
 
-2. 
+2. How do we construct such sheaves?
+:::
+
+:::{.theorem title="Ways of constructing sheaves"}
+\envlist
+
+1. If $Y$ is an $X\dash$scheme (i.e. a scheme equipped with a map to $X$)
 :::
 
 
