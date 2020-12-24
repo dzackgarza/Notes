@@ -49,6 +49,12 @@ pdf: markdown latex
 	latexmk --shell-escape -pdf $(FILENAME).tex -quiet;
 	echo "Make done";
 
+test: markdown latex
+	#latexmk --shell-escape -pdf $(FILENAME).tex -quiet -silent -logfilewarninglist -gg -latexoption="-interaction=batchmode";
+	latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull;
+	echo "Tests complete."
+
+
 
 ## HTML Output
 html: markdown
