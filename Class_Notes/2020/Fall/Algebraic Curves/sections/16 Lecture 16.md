@@ -274,6 +274,11 @@ This is not necessarily surjective, but how far is it from being injective?
 The fibers have size at most $2g$ since we have a degree $2g$ extension of Dedekind domains.
 Thus
 \[  
-\abs{\Sigma_1 (K_{2g} / \FF_{q^{2g}}) }
+\abs{\Sigma_1 (K_{2g} / \FF_{q^{2g}}) } \leq A_{2g}
+,\]
+and substituting the known value of $A_{2g}$ and rearranging yields
+\[  
+h \geq {1\over 2g} \qty{q-1 \over q^{g+1} - 1} N_{2g}
 .\]
+
 :::
