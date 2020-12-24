@@ -155,10 +155,10 @@ Make this slogan precise for rational functions, i.e. ratios of two polynomials.
 \zeta_X(q^{-n} t\inv) = \pm q^{nE \over 2} t^E \zeta_X(t)
 .\]
 
-3. (RH) All roots and poles of $\zeta_X(t)$ have absolute value $q^{i\over 2}$ with $i\in \ZZ$, and these are equal to the $i$th Betti numbers if $X$ lifts to characteristic zero.
+3. (RH) All roots and poles of $\zeta_X(t)$ have absolute value $q^{i\over 2}$ with $i\in \ZZ$, and these are equal to the $i$th Betti numbers if $X$ lifts to characteristic zero.[^generalize_betti_numbers]
 
-  > Note: we'll generalize Betti numbers so this makes sense in general.
-
+[^generalize_betti_numbers]: 
+Note that we'll generalize Betti numbers so this makes sense in general.
 
 :::
 
