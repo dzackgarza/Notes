@@ -56,8 +56,27 @@ On terminology:
 
 1. If $Y$ is an $X\dash$scheme (i.e. a scheme equipped with a map to $X$) then the functor $Z \to \hom_X(Z, Y)$ is a sheaf on $X_{\Fppf}, X_{\Et}, X_{\et}$, etc.
 
-2. Suppose $\mathcal{F}$ is a quasicoherent sheaf on $X$, so $\mathcal{F}\in \qcoh(X)$, 
+2. Suppose $\mathcal{F}$ is a quasicoherent sheaf on $X$, so $\mathcal{F}\in \qcoh(X)$, the functor of taking global sections:
+
+\begin{tikzcd}
+Z \ar[dd, "f"]  &  \\
+ \ar[r]         &  \Gamma(Z, f^* \mathcal{F}) \\
+X & 
+\end{tikzcd}
+  is a sheaf on $X_{\Fppf}, X_{\Et}, X_{\et}$, etc.
+
 :::
 
 
+:::{.definition title="$\mathcal{F}^{\et}$"}
+The sheaf associated to the above functor on $X_{\et}$ will be denoted $\mathcal{F}^\text{étale}$.
+:::
+
+:::{.proof title="of 2"}
+Suppose we have an fppf cover of $X$
+\begin{tikzcd}
+U = \disjoint U_i \ar[d] \\
+X
+\end{tikzcd}
+:::
 
