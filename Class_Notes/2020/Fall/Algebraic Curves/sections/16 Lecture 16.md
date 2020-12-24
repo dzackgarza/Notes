@@ -267,6 +267,7 @@ by an application of the Riemann-Roch theorem, since $2g > 2g-2$.
 Let $Q\in \Sigma_1(K_{2g} / \FF_{q^{2g}})$ be a degree one place and restrict to $K$ to obtain $P \da Q\intersect K$ which has degree $\ell$ dividing $2g$.
 Then $\qty{2g \over \deg(P)} P$ has degree $2g$, and this yields a map
 \[  
-\Sigma_1(K_{2g} / \FF_{q^{2g}}) \to \
+\Sigma_1(K_{2g} / \FF_{q^{2g}}) &\to \text{Effective degree $2g$ divisors} \\
+Q &\mapsto {2g \over \deg P} P
 .\]
 :::
