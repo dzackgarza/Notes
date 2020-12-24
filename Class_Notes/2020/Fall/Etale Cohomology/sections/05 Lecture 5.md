@@ -14,8 +14,33 @@ For Zariski covers, this reduces to having a cover by opens, a sheaf on each obj
 The goal was to prove (1) this functor is fully faithful, so the map on hom sets is a bijection.
 Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(X)$, we wanted a certain diagram to be an equalizer.
 Faithfulness is the injectivity of the first map $f^*$, and fullness is showing that elements go to the same place in the next two maps.
+
 We proved a lemma: if $R\to S$ is a faithfully flat ring map and $M\in \rmod$ then 
 \begin{tikzcd}
 N\ar[r] & N\tensor S\ar[r] & N\tensor S \tensor S \\
-n \ar[r] & n\tensor 1
+n \ar[r] & n\tensor 1 & \\
+ & n\tensor s \ar[r] & n\tensor s \tensor 1
+\end{tikzcd}
+
+is an equalizer diagram.
+We used one of Daniel's favorite tricks in fppf descent: producing a section by base-changing to $S$.
+
+### Proof of Full Faithfulness
+
+**Step 1**: 
+Reduce to the case where $U\to X$ is affine.
+
+:::{.exercise title="?"}
+Do step 1!
+
+*(Hint: See chapter 6 of Neron models.
+This will use that the map has finite presentation, and in fact even less, that the map is quasicompact.)*
+:::
+
+**Step 2**:
+We now have $R\to S$ faithfully flat, where we're thinking of $U = \spec S, X = \spec R$.
+Since $N, M \in \rmod$, we can replace symbols to obtain the following equalizer diagram:
+
+\begin{tikzcd}
+
 \end{tikzcd}
