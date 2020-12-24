@@ -30,7 +30,7 @@ We used one of Daniel's favorite tricks in fppf descent: producing a section by 
 **Step 1**: 
 Reduce to the case where $U\to X$ is affine.
 
-:::{.exercise title="?"}
+:::{.exercise title="Important"}
 Do step 1!
 
 *(Hint: See chapter 6 of Neron models.
@@ -82,7 +82,7 @@ We'll use a similar trick to construct $\mathcal{G}$.
 **Step 1**:
 We'll reduced to the case of an affine morphism.
 
-:::{.exercise title="?"}
+:::{.exercise title="Important"}
 Work this out.
 :::
 
@@ -121,11 +121,19 @@ where $K$ is by definition the above kernel.
 We want to check that the map $K\to M$ appearing here induces an isomorphism $K\tensor S \to M$.
 
 
-:::{.exercise title="?"}
+:::{.exercise title="Important"}
 This is true if $R\to S$ has a section, show this.
 Given $U\mapsvia f X$ with a section $s$ and $\mathcal{F}\in \qcoh(U)$ with descent data, we want $\mathcal{G}$ such that $f^* \mathcal{G} = \mathcal{F}$.
 You can take $\mathcal{G}\da s^* \mathcal{F}$; check that this works.
 :::
 
-Now 
+In general, we want to show $K\tensor S \to M$ is an isomorphism, and we want to reduce to the case where we have a section.
+After applying $\wait \tensor S$, $R\to S$ acquires a section.
+Why? 
+We get a map $S\to S\tensor_R S$, and there's a reverse map $S\tensor_R S\to S$ given by multiplication.
+So $K\tensor S \tensor S \to M\tensor S$ is an isomorphism, which implies $K\tensor S\to M$ is an isomorphism due to the fact that $S$ is faithfully flat over $R$ which allows us to check exactness before or after tensoring with $S$.
+
+> The exercises here are among the most important in the course! 
+  Totally necessary to do them.
+
 
