@@ -2004,7 +2004,7 @@ a quasicoherent sheaf on \(U/X\) is the following:
 
 \begin{center}
 \begin{tikzcd}
-U \cross_X U \ar[d, bend left, "\pi_1"] \ar[d, bend right, "\pi_2"] \\
+U \cross_X U \ar[d, bend left, "\pi_1"] \ar[d, bend right, "\pi_2"'] \\
 U
 \end{tikzcd}
 \end{center}
@@ -2020,16 +2020,17 @@ there are isomorphisms
 \tightlist
 \item
   Cocycle condition: in the following fiber product
+
+  \begin{center}
+  \begin{tikzcd}
+  U \cross_X U \cross_X U 
+  \ar[d, shift  left=1.75ex] \ar[d] \ar[d,shift  right=1.75ex,  "\pi_{ij}"'] \\
+  U\cross_X U
+  \end{tikzcd}
+  \end{center}
+
+  we have \(\pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi_{13}\phi\).
 \end{enumerate}
-
-\begin{center}
-\begin{tikzcd}
-U \cross_X U \cross_X U 
-\ar[d, bend left] \ar[d, "\pi_{ij}"] \ar[d, bend right] \\
-\end{tikzcd}
-\end{center}
-
-we have \(\pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi_{13}\phi\).
 
 \end{definition}
 
@@ -2048,9 +2049,11 @@ quasicoherent sheaves on \(U\) such that the following diagram commutes:
 
 \begin{center}
 \begin{tikzcd}
-\pi_1^* \mathcal{F} \ar[r, {\pi_1^*h}] \ar[d, "\phi"] 
+\pi_1^* \mathcal{F} 
+\ar[r, "\pi_1^*h"] 
+\ar[d, "\phi"'] 
 & \pi_1^* \mathcal{G} \ar[d, "\psi"] \\
-\pi_2^* \mathcal{F} \ar[r, {\pi_2^*h}] 
+\pi_2^* \mathcal{F} \ar[r, "\pi_2^*h"'] 
 & \pi_2^* \mathcal{G} 
 \end{tikzcd}
 \end{center}
@@ -2092,7 +2095,7 @@ identity yields the desired isomorphism.
 \begin{example}[?]
 
 Let \(U = \disjoint U_i\) be a Zariski cover of \(X\), then vector
-bundle can be obtained from \(\OO_{U_i}^{\oplus n}\iun \qcoh(U_i)\). To
+bundle can be obtained from \(\OO_{U_i}^{\oplus n}\in \qcoh(U_i)\). To
 glue this to a vector bundle on \(X\), we need isomorphism
 \(\phi_{ij} \OO_{U_i\intersect U_j}^{\oplus n} \mapsvia{\sim } \OO_{U_i\intersect U_j}^{\oplus n}\)
 such that
@@ -2104,7 +2107,7 @@ For \(n=1\), this is gluing data for a line bundle.
 \begin{example}[?]
 
 Suppose \(L/k\) is a Galois extension with Galois group \(G\), then
-\(\spec L \tp \spec k\) is an étale cover. Descent data on this map is a
+\(\spec L \to \spec k\) is an étale cover. Descent data on this map is a
 quasicoherent sheaf on \(\spec L\), i.e.~an \(L\dash\)vector space
 \(V\), with an isomorphism \(\pi_1^* V \mapsvia{\phi \sim}\pi_2^* V\)
 satisfying the cocycle condition. We can compute
@@ -2159,12 +2162,15 @@ We can produce two maps to fill in the following diagram:
 
 \begin{center}
 \begin{tikzcd}
- & &  \hom_{U\cross_X U} \qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_1)^* \mathcal{F}_2   }\ar[dd, equal] \\
+ & & \hom_{U\cross_X U} 
+\qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_1)^* \mathcal{F}_2 }
+\ar[dd, equal]\\
 \hom_X(\mathcal{F}_1, \mathcal{F}_2)  
-\ar[r, {f^*}] &
+\ar[r, "{f^*}"]  &
 \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
 \ar[ru, "\pi_1^*"]
-\ar[rd, "\pi_2^*"] & \\
+\ar[rd, "\pi_2^*"] 
+& \\
  & & \hom_{U\cross_X U} \qty{ (f\circ \pi_2)^* \mathcal{F}_1, (f\circ \pi_2)^* \mathcal{F}_2   } \\
 \end{tikzcd}
 \end{center}
@@ -2236,7 +2242,7 @@ with \(S\), i.e.~push out this map along itself to obtain
 \begin{center}
 \begin{tikzcd}
 R \ar[d]\ar[r] & S \ar[d, "1\tensor \id_S"] \\
-S \ar[r] & S\tensor_R S  \ar[u, bend right, "\ecists m"
+S \ar[r] & S\tensor_R S  \ar[u, bend right, "\exists m"]
 \end{tikzcd}
 \end{center}
 
@@ -2287,7 +2293,7 @@ This yields
 = n\tensor s - nr(s) \tensor 1
 .\end{align*}
 
-Thus \(n\tensors\tensor 1 - n\tensor 1\tensor s = 0\), putting this in
+Thus \(n\tensor s\tensor 1 - n\tensor 1\tensor s = 0\), putting this in
 the kernel of the differential, making the last term above equal to
 zero, and thus \(n\tensor s = n r(s) \tensor 1\), which is in the image
 of the differential. So anything in the kernel is in the image, where

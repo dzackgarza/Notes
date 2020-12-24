@@ -144,11 +144,14 @@ Check that this agrees with the previous notions when $U\to X$ is a Zariski cove
 Given descent data $(\mathcal{F}, \phi)$ and $(\mathcal{G}, \psi)$, a **morphism** is a morphism $h: \mathcal{F} \to \mathcal{G}$ of quasicoherent sheaves on $U$ such that the following diagram commutes:
 
 \begin{tikzcd}
-\pi_1^* \mathcal{F} \ar[r, {\pi_1^*h}] \ar[d, "\phi"] 
+\pi_1^* \mathcal{F} 
+\ar[r, "\pi_1^*h"] 
+\ar[d, "\phi"'] 
 & \pi_1^* \mathcal{G} \ar[d, "\psi"] \\
-\pi_2^* \mathcal{F} \ar[r, {\pi_2^*h}] 
+\pi_2^* \mathcal{F} \ar[r, "\pi_2^*h"'] 
 & \pi_2^* \mathcal{G} 
 \end{tikzcd}
+
 :::
 
 ## Descent Data is Equivalent to Quasicoherent Sheaves
@@ -167,20 +170,22 @@ We now want an isomorphism
 \]
 on $U\cross_X U$.
 We have a situation like the following:
+
 \begin{tikzcd}
 U\cross_X U \ar[r, bend left, "\pi_1"] \ar[r, bend right, "\pi_2"] & U \ar[r, "f"] & X
 \end{tikzcd}
+
 Since $f\circ \pi_1 = f\circ \pi_2$ in this case, pulling back the identity yields the desired isomorphism.
 :::
 
 :::{.example title="?"}
-Let $U = \disjoint U_i$ be a Zariski cover of $X$, then vector bundle can be obtained from $\OO_{U_i}^{\oplus n}\iun \qcoh(U_i)$.
+Let $U = \disjoint U_i$ be a Zariski cover of $X$, then vector bundle can be obtained from $\OO_{U_i}^{\oplus n}\in \qcoh(U_i)$.
 To glue this to a vector bundle on $X$, we need isomorphism $\phi_{ij} \OO_{U_i\intersect U_j}^{\oplus n} \mapsvia{\sim } \OO_{U_i\intersect U_j}^{\oplus n}$ such that $\ro{\phi_{jk}}{U_i \intersect U_j \intersect U_k} \circ \ro{\phi_{ij}}{U_i \intersect U_i \intersect U_k} = \ro{\phi_{ik}}{U_i\intersect U_j \intersect U_k}$.
 For $n=1$, this is gluing data for a line bundle.
 :::
 
 :::{.example title="?"}
-Suppose $L/k$ is a Galois extension with Galois group $G$, then $\spec L \tp \spec k$ is an étale cover.
+Suppose $L/k$ is a Galois extension with Galois group $G$, then $\spec L \to \spec k$ is an étale cover.
 Descent data on this map is a quasicoherent sheaf on $\spec L$, i.e. an $L\dash$vector space $V$, with an isomorphism $\pi_1^* V \mapsvia{\phi \sim}\pi_2^* V$ satisfying the cocycle condition.
 We can compute $\spec L \times_{\spec k} \spec L = \spec L\tensor_k L = \disjoint_{L\mapsvia{\sim} L} \spec L$, which is a torsor for the Galois group, and in fact is equal to $\disjoint_{\Gal(L/k)} \spec L$.
 :::
@@ -215,12 +220,15 @@ Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(X)$, then we have a functor and th
 We're not trying to show this map is a bijection, since we need more than that: the morphism should commute with the descent data.
 We can produce two maps to fill in the following diagram:
 \begin{tikzcd}
- & &  \hom_{U\cross_X U} \qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_1)^* \mathcal{F}_2   }\ar[dd, equal] \\
+ & & \hom_{U\cross_X U} 
+\qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_1)^* \mathcal{F}_2 }
+\ar[dd, equal]\\
 \hom_X(\mathcal{F}_1, \mathcal{F}_2)  
-\ar[r, {f^*}] &
+\ar[r, "{f^*}"]  &
 \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
 \ar[ru, "\pi_1^*"]
-\ar[rd, "\pi_2^*"] & \\
+\ar[rd, "\pi_2^*"] 
+& \\
  & & \hom_{U\cross_X U} \qty{ (f\circ \pi_2)^* \mathcal{F}_1, (f\circ \pi_2)^* \mathcal{F}_2   } \\
 \end{tikzcd}
 
@@ -265,7 +273,7 @@ This is the case where $\mathcal{F}_1 = \OO$ and $\mathcal{F}_2 = \tilde N$ the 
 We can tensor with $S$, i.e. push out this map along itself to obtain
 \begin{tikzcd}
 R \ar[d]\ar[r] & S \ar[d, "1\tensor \id_S"] \\
-S \ar[r] & S\tensor_R S  \ar[u, bend right, "\ecists m"
+S \ar[r] & S\tensor_R S  \ar[u, bend right, "\exists m"]
 \end{tikzcd}
 where $m$ is a section given by multiplication.
 
@@ -306,12 +314,12 @@ This yields
 = n\tensor s - nr(s) \tensor 1
 .\]
 
-Thus $n\tensors\tensor 1 - n\tensor 1\tensor s = 0$, putting this in the kernel of the differential, making the last term above equal to zero, and thus $n\tensor s = n r(s) \tensor 1$, which is in the image of the differential.
+Thus $n\tensor s\tensor 1 - n\tensor 1\tensor s = 0$, putting this in the kernel of the differential, making the last term above equal to zero, and thus $n\tensor s = n r(s) \tensor 1$, which is in the image of the differential.
 So anything in the kernel is in the image, where we've proved it for pure tensors, and it's an exercise to do it in general.
 :::
 
 :::{.remark}
-Given $R\to S$ faithfully flat, you can define the **Amitser complex**:
+Given $R\to S$ faithfully flat, you can define the **Amitsur complex**:
 \[  
 N \to N\tensor S \to N\tensor S^{\tensor 2} \to \cdots \to N\tensor S^{\tensor r}
 ,\]
