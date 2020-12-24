@@ -279,8 +279,8 @@ Checking the equalizer diagram is the same as showing that the following sequenc
 0 \to N \to N\tensor_R S \mapsvia{f-g} N\tensor_R S\tensor_R S
 ,\]
 where $f, g$ are the maps given in the equalizer.
-It suffices to do this after tensoring with $S$, since a sequence of $R$ modules is exact iff it is exact after tensoring with $S$ since $S$ is flat.
-One direction is 
+It suffices to do this after tensoring with $S$, since a sequence of $R$ modules is exact iff it is exact after tensoring with $S$.
+One direction is easy, since $S$ is flat, and the other direction follows from the fact that you can check on stalks, and after tensoring the stalks are the same.
 :::
 
 :::
