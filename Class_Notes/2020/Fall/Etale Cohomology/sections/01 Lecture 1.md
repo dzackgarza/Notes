@@ -121,7 +121,6 @@ Proof the same, just need to know what quaternion algebras show up.
 :::
 
 
-
 This forces using some funky type of coefficients.
 
 
@@ -132,15 +131,23 @@ Suppose $X/\FF_q$ is a variety, then
 \zeta_X(t) = \exp{\sum_{n>0} { {\abs{X(\FF_{q^n})} \over n} t^n } }
 .\]
 
-Some comments:
+
+:::{.remark}
+\envlist
 
 - $\dd{}{t} \log \zeta_X(t)$ is an ordinary generating function for the number of rational points.
+
 - Slogan: locations of zeros and poles of a meromorphic function control the growth rate of the coefficients of the Taylor series of the logarithmic derivative.
+
+:::
 
 :::{.exercise}
 Make this slogan precise for rational functions, i.e. ratios of two polynomials.
 :::
 
+:::{.proposition title=""}
+
+:::
 The conjectures:
 
 1. $\zeta_x(t)$ is a rational function.
