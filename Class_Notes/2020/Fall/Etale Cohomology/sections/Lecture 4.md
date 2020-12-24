@@ -115,7 +115,7 @@ Suppose $U\mapsvia{f}X$ is a morphisms, then **descent data** for a quasicoheren
 2. Gluing data: If we take the fiber product of $U$ with itself, mapping to $U$ under 2 different projections[^fp_actual_open_cov],  
 
 \begin{tikzcd}
-U \cross_X U \ar[d, bend left, "\pi_1"] \ar[d, bend right, "\pi_2"] \\
+U \cross_X U \ar[d, bend left, "\pi_1"] \ar[d, bend right, "\pi_2"'] \\
 U
 \end{tikzcd}
   there are isomorphisms
