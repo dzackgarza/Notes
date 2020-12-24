@@ -216,16 +216,16 @@ Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(X)$, then we have a functor and th
 We're not trying to show this map is a bijection, since we need more than that: the morphism should commute with the descent data.
 We can produce two maps to fill in the following diagram:
 \begin{tikzcd}
- & &  \hom_{U\cross_X U} \qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_1)^* \mathcal{F}_2   } \\
+ & &  \hom_{U\cross_X U} \qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_1)^* \mathcal{F}_2   }\ar[dd, equal] \\
 \hom_X(\mathcal{F}_1, \mathcal{F}_2)  
 \ar[r, {f^*}] &
 \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
 \ar[ru, "\pi_1^*"]
-\ar[rd, "\pi_2^*"] 
-
-\hom_{U\cross_X U} \qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_1)^* \mathcal{F}_2   } \\
-
+\ar[rd, "\pi_2^*"] & \\
+ & & \hom_{U\cross_X U} \qty{ (f\circ \pi_2)^* \mathcal{F}_1, (f\circ \pi_2)^* \mathcal{F}_2   } \\
 \end{tikzcd}
+
+where these hom sets are equal since $f\circ \pi_1 = f\circ \pi_2$.
 
 :::
 
