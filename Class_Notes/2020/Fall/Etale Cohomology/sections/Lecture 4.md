@@ -79,7 +79,7 @@ U = \disjoint U_i \ar[d] \\
 X
 \end{tikzcd}
 When does it come from a quasicoherent sheaf on $X$?
-I.e., when is there a 
+I.e., when is there a quasicoherent sheaf $\mathcal{F}'$ on $X$ and an
 More precisely, what extra structure do you need to "descend" to $\qcoh(X)$?
 :::
 
