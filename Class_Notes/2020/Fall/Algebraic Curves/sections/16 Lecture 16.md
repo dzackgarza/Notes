@@ -159,6 +159,26 @@ Note that we can do much better, e.g. $A(2) \leq \sqrt{2} - 1$, but it is not kn
 
 :::{.proof title="of Serre's bound"}
 We may assume $g \geq 1$, and write $L(t) = \prod_{i=1}^{2g} (1-\alpha_i t)$, where the $\alpha_i$ may be ordered such that $\alpha_i \alpha_{g+-} = g$ for all $i$.
-By the Riemann hypothesis, we have $\abs {\alpha_i} = \sqrt q$, and so 
+By the Riemann hypothesis, we have $\abs {\alpha_i} = \sqrt q$, and so for each $i$ we have $\bar{\alpha_i} = q/\alpha_i = \alpha_{g+i}$.
+We now pair in the following way: set
+\[  
+\gamma_i &\da \qty{ \alpha_i + \bar{\alpha_i} } + \floor{2\sqrt q} + 1 \\
+\delta  &\da -\qty{ \alpha_i + \bar{\alpha_i} } + \floor{2\sqrt q} + 1 \\
+.\]
+These are real algebraic integers and by the Riemann hypothesis they are positive.
+Since $L\perp(t) \da \prod t-\alpha_i \in \ZZ[t]$, take any complex embedding 
+\[  
+\sigma: \QQ\qty{\ts{\alpha_i}} \injects \CC
+,\]
+which preserves the $\alpha_i$. 
+If $\sigma(\alpha_i) = \alpha_j$, then we have
+\[  
+\sigma(\bar{\alpha_i}) = \sigma\qty{q/\alpha_i} = q/\sigma(\alpha_i) = \bar{\sigma(\alpha_i)} = \alpha_j
+,\]
+and thus $\sigma$ preserves the multisets of the $\gamma_i$ and $\delta_i$.
+
+Now set $\gamma\da \prod \gamma_i$ and $\delta \da \prod \delta_i$, making these both positive real integers that are fixed by every embedding $\sigma$, and thus $\gamma, \delta\in \ZZ^+$.
+ 
+
 :::
 
