@@ -181,8 +181,10 @@ Now set $\gamma\da \prod \gamma_i$ and $\delta \da \prod \delta_i$, making these
 We can now apply the AM-GM inequality:
 \[  
 {1\over g} \sum_{i=1}^g \gamma_i 
-&\geq \qty{ \prod_{i=1}^g @}
-.\]
+&\geq \qty{ \prod_{i=1}^g \gamma_i}^{1\over g} 
+= \gamma^{1/g} \geq 1
+,\]
+
  
 
 :::
