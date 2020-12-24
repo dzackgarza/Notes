@@ -157,4 +157,8 @@ A(q) \leq \floor{2\sqrt q} && \text{by Serre bounds }\\
 Note that we can do much better, e.g. $A(2) \leq \sqrt{2} - 1$, but it is not known if this is sharp.
 :::
 
+:::{.proof title="of Serre's bound"}
+We may assume $g \geq 1$, and write $L(t) = \prod_{i=1}^{2g} (1-\alpha_i t)$, where the $\alpha_i$ may be ordered such that $\alpha_i \alpha_{g+-} = g$ for all $i$.
+By the Riemann hypothesis, we have $\abs {\alpha_i} = \sqrt q$, and so 
+:::
 
