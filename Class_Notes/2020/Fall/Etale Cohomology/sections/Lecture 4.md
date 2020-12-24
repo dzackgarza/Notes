@@ -141,5 +141,8 @@ Check that this agrees with the previous notions when $U\to X$ is a Zariski cove
 :::
 
 :::{.definition title="Morphisms of descent data"}
-Given descent data $(\mathcal{F}, \phi)$ and $(\mathcal{G}, \psi)$, a **morphism** is a morphism of quasicoherent sheaves on $U$ 
+Given descent data $(\mathcal{F}, \phi)$ and $(\mathcal{G}, \psi)$, a **morphism** is a morphism $h: \mathcal{F} \to \mathcal{G}$ of quasicoherent sheaves on $U$ such that 
+\[  
+\pi_1^* \mathcal{F} \mapsvia{\pi_1^*h} \pi_1^* \mathcal{G}
+.\]
 :::
