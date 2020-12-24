@@ -240,6 +240,11 @@ I.e., the first map $f^*$ is injective, yielding faithfulness, and fullness mean
 
 Assuming that this is fully faithful, why do quasicoherent sheaves give sheaves on $X_{\et}$ or $X_{\fppf}$?
 Being a sheaf was characterized by an equalizer diagram gotten by replacing the first hom with taking global sections of $\mathcal{F}$ on $X, U, U\cross_X U$.
+
+:::{.remark}
+Taking $\mathcal{F}_1 = \OO$ and $\mathcal{F}_2 = \mathcal{F}$, this shows that $\mathcal{F}^{\et}$ (resp. $\mathcal{F}^{\fppf}$) is a sheaf.
+In this case, the first hom is global sections of $\mathcal{F}$ on $X$, the middle are global sections of $\mathcal{F}$ on $U$, and the two maps are to the double intersections.
+:::
 :::
 
 
