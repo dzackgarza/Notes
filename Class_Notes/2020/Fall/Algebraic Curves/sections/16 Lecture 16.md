@@ -237,9 +237,6 @@ h \geq \qty{q-1 \over 2} \qty{q^{2g} + 1 - 2gq^g \over g\qty{q^{g+1} - 1}}
 .\]
 :::
 
-:::{.proof title="?"}
-Omitted (DZG).
-:::
 
 
 :::{.exercise title="?"}
@@ -264,3 +261,12 @@ For $H=1$, this has been solved, but there hasn't been much work on the $H=2,3$ 
 
 
 
+:::{.proof title="?"}
+The number $A_{2g}$ of effective degree $2g$ divisors on $K$ is $h\qty{q^{g+1} - 1 \over q-1}$
+by an application of the Riemann-Roch theorem, since $2g > 2g-2$.
+Let $Q\in \Sigma_1(K_{2g} / \FF_{q^{2g}})$ be a degree one place and restrict to $K$ to obtain $P \da Q\intersect K$ which has degree $\ell$ dividing $2g$.
+Then $\qty{2g \over \deg(P)} P$ has degree $2g$, and this yields a map
+\[  
+\Sigma_1(K_{2g} / \FF_{q^{2g}}) \to \
+.\]
+:::
