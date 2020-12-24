@@ -140,3 +140,6 @@ If $U$ was an open cover, this would correspond to intersections of elements in 
 Check that this agrees with the previous notions when $U\to X$ is a Zariski cover.
 :::
 
+:::{.definition title="Morphisms of descent data"}
+Given descent data $(\mathcal{F}, )
+:::
