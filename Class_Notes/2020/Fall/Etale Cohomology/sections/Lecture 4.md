@@ -286,12 +286,38 @@ This requires checking for each point on $\spec R$ that the map on stalks is exa
 
 
 **Step 2**:
-Suppose $R\to S$ splits via a map $S\mapsvia{r} S$.
+Suppose $R\mapsvia{f} S$ splits via a map $S\mapsvia{r} S$.
 The geometric picture is that we're supposing we have a section to $U\to X$, and descending amounts to pulling back along the splitting.
 We first want to check that $N\to N\tensor_R S$ is injective, which is true since we can use the map $\id_N \tensor r$ to produce a splitting.
 Why is this true?
-Supposing $n\in N$ maps to zero, then noting that $N\to N\tensor_R S \to N$ is the identity and thus maps $
-We now want to 
+Supposing $n\in N$ maps to zero, then noting that $N\to N\tensor_R S \to N$ is the identity and thus maps $f(n)\mapsvia{\id} 0$, forcing $n=0$.
 
+We now want to show exactness in the middle.
+Define 
+\[
+\tilde r: S\tensor_R S &\to S \\
+s_1 \tensor s_2 &\mapsto s_1 \cdot f(r(s_2))
+\]
+Suppose we have something in the image of the differential.
+This yields
+\[  
+\id_N \tensor \tilde r \qty{n\tensor s\tensor 1 - n\tensor 1 \tensor s}
+= n\tensor s - n\tensor f(r(s))
+= n\tensor s - nr(s) \tensor 1
+.\]
+
+Thus $n\tensors\tensor 1 - n\tensor 1\tensor s = 0$, putting this in the kernel of the differential, making the last term above equal to zero, and thus $n\tensor s = n r(s) \tensor 1$, which is in the image of the differential.
+So anything in the kernel is in the image, where we've proved it for pure tensors, and it's an exercise to do it in general.
 :::
+
+:::{.remark}
+Given $R\to S$ faithfully flat, you can define the **Amitser complex**:
+\[  
+N \to N\tensor S \to N\tensor S^{\tensor 2} \to \cdots \to N\tensor S^{\tensor r}
+,\]
+where the maps are given by alternating sums of identities with a 1 in the $i$th spot.
+There is a theorem that this is always exact, essentially by the same proof as above: reduce to the case where you have a section by tensoring with $S$, then use the section to build a nullhomotopy.
+:::
+
+Next time: we'll complete the proof of fppf descent.
 
