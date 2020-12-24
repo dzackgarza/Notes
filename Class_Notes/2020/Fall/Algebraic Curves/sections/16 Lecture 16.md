@@ -130,6 +130,23 @@ By definition, a genus 1 function field with a degree 1 place, which can be used
 
 :::
 
+:::{.corollary title="Serre Bounds"}
+Let $K/\FF_q$ be a function field of genus $f$, then
+\[  
+\abs{
+\Sigma_1(K/\FF_q) - (q + 1)
+}
+\leq g \floor{2 \sqrt q}
+.\]
+::: 
 
+:::{.definition title="?"}
+We write
+\[  
+M_q(g) &\da \text{The maximal } \abs{\Sigma(K/\FF_q)} \text{ as $K$ ranges over genus $g$ function fields} \\
+m_q(g) &\da \text{The minimal } \abs{\Sigma(K/\FF_q)} \text{ as $K$ ranges over genus $g$ function fields} \\
+A(q) &\da \limsup_{g\to \infty} {M_q(g) \over g}
+.\]
+:::
 
 
