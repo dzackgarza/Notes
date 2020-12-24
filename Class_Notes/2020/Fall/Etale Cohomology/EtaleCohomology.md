@@ -1456,7 +1456,7 @@ So anything in the kernel is in the image, where we've proved it for pure tensor
 :::
 
 :::{.remark}
-Given $R\to S$ faithfully flat, you can define the **Amitser complex**:
+Given $R\to S$ faithfully flat, you can define the **Amitsur complex**:
 \[  
 N \to N\tensor S \to N\tensor S^{\tensor 2} \to \cdots \to N\tensor S^{\tensor r}
 ,\]
