@@ -59,10 +59,11 @@ For $\mathcal{F}\in \qcoh(X)$, we defined $\mathcal{F}^{\et} \in \presh(X_{\et})
 :::
 
 :::{.proof title="?"}
-We want to show that if $U\to V$ is an étale cover, we
+We want to show that if $U\to V$ is an étale cover, we want 
 \begin{tikzcd}
 \mathcal{F}(V) \ar[r] &
 \mathcal{F}(U) \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
 \mathcal{F}(U\cross_V U) 
 \end{tikzcd}
+to be an equalizer diagram -- but this is exactly the previous diagram where $\mathcal{F}\da \OO$ and $\mathcal{F}_2 \da \mathcal{F}$.
 :::
