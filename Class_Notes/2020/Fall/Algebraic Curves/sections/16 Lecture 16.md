@@ -190,8 +190,14 @@ g \leq \sum \gamma_i
 = \sum_{\alpha_i + \bar{\alpha_i}} + g\floor{2\sqrt q} + g 
 = \sum \alpha_i  + g\floor{2\sqrt q} + g 
 ,\]
-and we can conclude that #$
- 
-
+and we can conclude that $-\sum \alpha_i \leq g\floor{2\sqrt g}$.
+Repeating the argument with the $\delta_i$ yields $\sum \alpha_i \leq g \floor{2\sqrt q}$, meaning that $\abs{\sum \alpha_i } \leq g \floor{2\sqrt q}$.
+Thus
+\[  
+\abs{ \abs{\Sigma_1(K/\FF_q)} - (q+1)  } = \abs{\sum \alpha_i} \leq g \floor{2\sqrt q}
+.\]
 :::
 
+:::{.remark}
+An application to class numbers: since $g = L(1)
+:::
