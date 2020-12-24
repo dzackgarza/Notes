@@ -49,4 +49,20 @@ Since $N, M \in \rmod$, after replacing symbols, we want the following diagram t
 
 where all tensors are over $R$.
 The first map takes a map $f:M\to N$ and composes with the map $N\to N\tensor S$ from the lemma to get a map $M\to N\tensor S$, which automatically extends to a map $M\tensor S \to N\tensor S$.
-For left-exactness, injectivity of the first map follows from injectivity of $N\to N\tensor S$ and left-exactness of $\hom(M, \wait)$.
+Exactness in the middle also comes from the lemma.
+Alternatively, injectivity of the first map follows from injectivity of $N\to N\tensor S$ and left-exactness of $\hom(M, \wait)$, as does exactness everywhere else.
+
+A short diversion:
+
+:::{.corollary title="of proof"}
+For $\mathcal{F}\in \qcoh(X)$, we defined $\mathcal{F}^{\et} \in \presh(X_{\et})$ where $\mathcal{F}^{\et}(U\mapsvia \pi X) \da \pi^* \mathcal{F}(U)$ is a sheaf on $X_{\et}$ and $X_{\fppf}$.
+:::
+
+:::{.proof title="?"}
+We want to show that if $U\to V$ is an étale cover, we
+\begin{tikzcd}
+\mathcal{F}(V) \ar[r] &
+\mathcal{F}(U) \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
+\mathcal{F}(U\cross_V U) 
+\end{tikzcd}
+:::
