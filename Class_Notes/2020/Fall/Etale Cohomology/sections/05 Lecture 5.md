@@ -104,4 +104,28 @@ Moreover, this map is an isomorphism.
 Given this isomorphism, one obtains compatible descent data on $M$.
 :::
 
+From the lemma, we have an equalizer
+\begin{tikzcd}
+R \ar[r] &
+S \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
+S\tensor_R S &
+\end{tikzcd}
+to which we can apply $\wait \tensor_S M$ to obtain
+
+\begin{tikzcd}
+K \ar[r] &
+M\tensor S \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
+M\tensor_R S \te &
+\end{tikzcd}
+where $K$ is by definition the above kernel.
+We want to check that the map $K\to M$ appearing here induces an isomorphism $K\tensor S \to M$.
+
+
+:::{.exercise title="?"}
+This is true if $R\to S$ has a section, show this.
+Given $U\mapsvia f X$ with a section $s$ and $\mathcal{F}\in \qcoh(U)$ with descent data, we want $\mathcal{G}$ such that $f^* \mathcal{G} = \mathcal{F}$.
+You can take $\mathcal{G}\da s^* \mathcal{F}$; check that this works.
+:::
+
+Now 
 
