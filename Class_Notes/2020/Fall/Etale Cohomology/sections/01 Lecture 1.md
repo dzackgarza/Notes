@@ -162,15 +162,20 @@ Note that we'll generalize Betti numbers so this makes sense in general.
 
 :::
 
-All theorems! Proofs:
+:::{.remark}
+These are all theorems!
+The proofs:
 
 1. Dwork, using $p\dash$adic methods. 
   Proof here will follow from the fact that $H^i_{\text{étale} }$ are finite-dimensional.
-  Related to Lefschetz Trace Formula (how Grothendieck thought about it).
+  Related to the **Lefschetz Trace Formula**, and is how Grothendieck thought about it.
 
 2. Grothendieck, follows from some version of Poincaré duality.
 
 3. (and 4) Deligne.
+
+:::
+
 
 
 ### Euler Product
@@ -222,9 +227,8 @@ Claim: there is a set map
 \[  
 \sym^n X &\to \pic^n X \\
 D &\mapsto \OO(D)
-.\]
-
-> Here the divisor is an $n\dash$tuple of points.
+,\]
+where here the divisor is an $n\dash$tuple of points.
 
 What are the fibers over a line bundle $\OO(D)$?
 A linear system, i.e. the projectivization of global sections $\PP \Gamma(X, \OO(D))$.
