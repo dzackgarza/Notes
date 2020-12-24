@@ -270,4 +270,6 @@ Then $\qty{2g \over \deg(P)} P$ has degree $2g$, and this yields a map
 \Sigma_1(K_{2g} / \FF_{q^{2g}}) &\to \text{Effective degree $2g$ divisors} \\
 Q &\mapsto {2g \over \deg P} P
 .\]
+This is not necessarily surjective, but how far is it from being injective?
+The fibers have size at most $2g$.
 :::
