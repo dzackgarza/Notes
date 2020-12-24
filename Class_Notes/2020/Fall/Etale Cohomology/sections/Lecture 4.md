@@ -88,7 +88,15 @@ What extra structure do you need to "descend" to $\qcoh(X)$, i.e. to pick such a
 :::
 
 :::{.question}
-Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(U)$ and a morphism $f: \mathcal{F}_1 \to \mathcal{F}_2$, when is $f
+Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(U)$ and a morphism $f: \ro{\mathcal{F}_1}{U} \to \ro{\mathcal{F}_2}{U}$, when does $f$ come from $X$?
+:::
+
+:::{.remark}
+If $X = \spec k$ and $U$ is a finite separable extension, then this question is exactly what Galois descent is about!
+:::
+
+:::{.example title="?"}
+
 :::
 
 
