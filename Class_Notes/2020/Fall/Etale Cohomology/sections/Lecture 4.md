@@ -228,8 +228,11 @@ We can produce two maps to fill in the following diagram:
 where these hom sets are equal since $f\circ \pi_1 = f\circ \pi_2$.
 
 :::{.claim}
-Given $g\in \Hom_U(f^* \mathcal{F}_1, f^* \mathcal{F}_2)$, 
+Given $g\in \Hom_U(f^* \mathcal{F}_1, f^* \mathcal{F}_2)$, this is a morphism of descent data if maps to the same element under $\pi_1^*$ and $\pi_2^*$ using the above identification of hom sets.
 :::
+
+Being fully faithful is the same as the above diagram being a equalizer.
+I.e., the first map $f^*$ is injective, yielding faithfulness, and fullness means 
 
 :::
 
