@@ -274,12 +274,13 @@ The claim is that we can replace $R$ with $S$ and $S$ with $S\tensor_R S$.
 :::
 
 :::{.proof title="of claim"}
-We want to check that the following sequence is exact:
+Checking the equalizer diagram is the same as showing that the following sequence is exact:
 \[  
 0 \to N \to N\tensor_R S \mapsvia{f-g} N\tensor_R S\tensor_R S
 ,\]
 where $f, g$ are the maps given in the equalizer.
 It suffices to do this after tensoring with $S$, since a sequence of $R$ modules is exact iff it is exact after tensoring with $S$ since $S$ is flat.
+One direction is 
 :::
 
 :::
