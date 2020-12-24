@@ -277,7 +277,8 @@ The claim is that we can replace $R$ with $S$ and $S$ with $S\tensor_R S$.
 We want to check that the following sequence is exact:
 \[  
 0 \to N \to N\tensor_R S \mapsvia{f-g} N\tensor_R S\tensor_R S
-.\]
+,\]
+where $f, g$ are the maps given in the equalizer.
 :::
 
 :::
