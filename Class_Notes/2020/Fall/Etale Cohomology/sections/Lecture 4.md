@@ -175,5 +175,42 @@ Since $f\circ \pi_1 = f\circ \pi_2$ in this case, pulling back the identity yiel
 
 :::{.example title="?"}
 Let $U = \disjoint U_i$ be a Zariski cover of $X$, then vector bundle can be obtained from $\OO_{U_i}^{\oplus n}\iun \qcoh(U_i)$.
-To glue this to a vector bundle on $X$, we need isomorphism $\phi_{ij} \OO_{U_i\intersect U_j}^{\oplus n} \mapsvia{\sim } \OO_{U_i\intersect U_j}^{\oplus n}$ such that 
+To glue this to a vector bundle on $X$, we need isomorphism $\phi_{ij} \OO_{U_i\intersect U_j}^{\oplus n} \mapsvia{\sim } \OO_{U_i\intersect U_j}^{\oplus n}$ such that $\ro{\phi_{jk}}{U_i \intersect U_j \intersect U_k} \circ \ro{\phi_{ij}}{U_i \intersect U_i \intersect U_k} = \ro{\phi_{ik}}{U_i\intersect U_j \intersect U_k}$.
+For $n=1$, this is gluing data for a line bundle.
 :::
+
+:::{.example title="?"}
+Suppose $L/k$ is a Galois extension with Galois group $G$, then $\spec L \tp \spec k$ is an étale cover.
+Descent data on this map is a quasicoherent sheaf on $\spec L$, i.e. an $L\dash$vector space $V$, with an isomorphism $\pi_1^* V \mapsvia{\phi \sim}\pi_2^* V$ satisfying the cocycle condition.
+We can compute $\spec L \times_{\spec k} \spec L = \spec L\tensor_k L = \disjoint_{L\mapsvia{\sim} L} \spec L$, which is a torsor for the Galois group, and in fact is equal to $\disjoint_{\Gal(L/k)} \spec L$.
+:::
+
+:::{.exercise title="?"}
+Convince yourself that descent data here is the same as Galois descent, i.e. a semilinear action.
+Hint: you will need to use $\phi$!
+:::
+
+
+### Proof of Theorem
+
+Explicitly, the theorem says
+
+- Given a morphisms of descent data, we get a unique morphism of sheaves (fully faithful)
+
+- If you have descent data, it comes from a sheaf (essentially surjective)
+
+So we need to prove
+
+1.  $f^*$ is fully faithful, inducing an isomorphism on hom sets, and
+
+2. $f^*$ is essentially surjective.
+
+> Reference: Neron modules by BLR.
+
+
+:::{.proof title="of full faithfulness"}
+Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(X)$, then we have a functor and thus a map $\hom_X(\mathcal{F}_1, \mathcal{F}_2) \mapsvia{f^*} \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)$.
+We're not trying to show this map is a bijection, 
+
+:::
+
