@@ -188,8 +188,9 @@ and thus
 \[  
 g \leq \sum \gamma_i 
 = \sum_{\alpha_i + \bar{\alpha_i}} + g\floor{2\sqrt q} + g 
-=
-.\]
+= \sum \alpha_i  + g\floor{2\sqrt q} + g 
+,\]
+and we can conclude that #$
  
 
 :::
