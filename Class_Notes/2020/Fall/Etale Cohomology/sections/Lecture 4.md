@@ -123,12 +123,13 @@ U
   \phi: \pi_1^* \mathcal{F} \mapsvia{\sim} \pi_2^* \mathcal{F}
   .\]
 
-3. Cocycle condition: in the following 
+3. Cocycle condition: in the following fiber product
 
 \begin{tikzcd}
 U \cross_X U \cross_X U 
 \ar[d, bend left] \ar[d, "\pi_{ij}"] \ar[d, bend right] \\
 \end{tikzcd}
+  we have $\pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi$.
 
 [^fp_actual_open_cov]: 
 If $U$ was an open cover, this would correspond to intersections of elements in the cover.
