@@ -84,20 +84,20 @@ Proving this isomorphism will be an exercise, here's an outline of why it's true
 Given any of these, you can cover by subsets for which these are isomorphisms onto their images.
 :::
 
-
-:::{.example title="The fppf topology"}
-This stands for **faithfully flat and finite presentation**.
+:::{.definition title="fppf"}
+The letter **fppf** stand for **faithfully flat and finite presentation**.
 [^letters_fppf]
-There are small and big sites here: we define $X_{\fppf}$ whose objects are fppf morphism $Y\to X$, with morphisms as triangular diagrams of morphisms over $X$, and covers are the usual covers.
-Note that replacing fppf morphisms with flat morphisms would yield an equivalent definition here.
 
 [^letters_fppf]: The letters don't precisely match up here because this comes from a French acronym.
+:::
 
+:::{.example title="The fppf topology"}
+There are small and big sites here: we define $X_{\fppf}$ whose objects are fppf morphism $Y\to X$, with morphisms as triangular diagrams of morphisms over $X$, and covers are the usual covers.
+Note that replacing fppf morphisms with flat morphisms would yield an equivalent definition here.
 :::
 
 :::{.example title="?"}
 If $X$ is a scheme, then the small Zariski topology is $X_{\mathrm{zar}}$ whose objects are $\Op(X^{\mathrm{top}})$, the Grothendieck topology of the corresponding topological space, and we take the usual notion of covers.
-
 There is a big Zariski topology $X_{\mathrm{Zar}}$ whose category is all $X\dash$schemes $\ts{U_\alpha\mapsvia{f_\alpha} U}$ with $f_\alpha$ open embeddings and $\Union_\alpha \im(f_\alpha) = U$.
 :::
 
@@ -117,7 +117,7 @@ Some other examples:
 ## Toward Sheaves of Sites
 
 :::{.definition title="Presheaf"}
-For $\mathcal{D}$ a category, a $\mathcal{D}\dash$valued presheaf is a contravariant function $F:\mathcal{C}\to \mathcal{D}$.
+For $\mathcal{D}$ a category, a $\mathcal{D}\dash$valued **presheaf** is a contravariant function $F:\mathcal{C}\to \mathcal{D}$.
 :::
 
 :::{.remark}
@@ -137,7 +137,7 @@ This can be captured by a specific diagram, which is what we will use here.
 Recall that a site is a category equipped with the Grothendieck topology.
 
 :::{.definition title="Sheaf"}
-A sheaf $F$ is presheaf such that 
+A **sheaf** $F$ is presheaf such that 
 
 \begin{tikzcd}
 F(U) \ar[r] & \prod_\alpha F(U_\alpha) \ar[r, shift left=0.75ex, "F(\pi_1)"] \ar[r, shift right=0.75ex, "F(\pi_2)"'] & \prod_{\alpha, \alpha'} F(U_\alpha \cross_U U_{\alpha'}) 
@@ -166,7 +166,7 @@ The gluing condition is more precisely that if we're given $(s_\alpha) \in \prod
 :::
 
 :::{.definition title="Morphisms of sheaves and presheaves"}
-A morphism $F_1\to F_2$ of either presheaves or sheaves is a natural transformation of functors.
+A **morphism** $F_1\to F_2$ of either presheaves or sheaves is a natural transformation of functors.
 :::
 
 ### Examples of Sheaves of Sites
@@ -227,7 +227,7 @@ This functor can be written down as a line bundle on $U$ with a surjective map f
 
 Some things we still need to get to:
 
-- A proof that $\ul{zlnz}$ is actually a sheaf,
+- A proof that $\ul{\zlnz}$ is actually a sheaf,
 - A proof that the category of sheaves on the big étale site $X_\Et$[^note_on_restriction_big_small] with values in $\thecat{Ab}$ is abelian and has enough injectives.
 
 [^note_on_restriction_big_small]: Note that a sheaf on the big étale site necessarily restricts to a sheaf on the small étale site, since covers in the small site are also covers in the big site.
@@ -236,7 +236,7 @@ Some things we still need to get to:
 
 :::{.definition title="Imprecise: étale cohomology"}
 Let $\mathcal{F}$ be a sheaf and define a functor $\Gamma_X: \mathcal{F}\to \mathcal{F}(X)$ sending it to its values on $X$.
-Then
+Then the **étale cohomology** of $X$ is defined by
 \[  
 H^i(X_\et, \ul{\zlnz}) \da R^i \Gamma_X(\ul \zlnz)
 ,\]
@@ -331,7 +331,7 @@ This map of sheaves $\GG_m \mapsvia{z^m \mapsfrom z} \GG_m$, noting that if $n$ 
 ## Preview: Morphisms of Sites
 
 :::{.definition title="Morphisms of Sites"}
-Suppose $T_1, T_2$ are sites (categories with covering families), then a continuous map $f:T_1 \to T_2$ is a functor $T_2 \to T_1$[^note_opposite_way]
+Suppose $T_1, T_2$ are sites (categories with covering families), then a **continuous map of sites** $f:T_1 \to T_2$ is a functor $T_2 \to T_1$[^note_opposite_way]
 that preserves fiber products and sends covering families to covering families.
 
 [^note_opposite_way]: Note that this functor goes in the opposite direction of the original map.  

@@ -195,11 +195,10 @@ Note that this is finite onto its image.
 :::
 
 :::{.proposition title="?"}
-Any open immersion is étale.[^checked_etale]
-
-[^checked_etale]: Note that we actually already checked this! 
-
+Any open immersion is étale.
 :::
+
+Note that we actually already checked this! 
 
 :::{.example title="An étale morphism that is not finite onto its image"}
 Use the fact that $\GG_m$ is $\AA^1\sm\ts{\vector 0}$, so take $\GG_m \sm\ts{1}$ and the map
@@ -271,7 +270,7 @@ This yields line bundles (?), so it is not torsion.
 
 
 :::{.remark}
-This map has a name: the relative Frobenius.
+This map has a name: **the relative Frobenius**.
 In general, looking at Frobenii, the Kahler differentials will be very big.
 You might not be used to this: in characteristic zero, a map of relative dimension zero is generically étale.
 In this case, the Kahler differentials will always be torsion.
@@ -381,7 +380,10 @@ The motivation for (3) above is that for $U, V \subseteq X$, we can form $U\cros
 
 
 :::{.definition title="Preliminary: Sites/Grothendieck Topologies"}
-A category $\mathcal{C}$ with a collection of *covering families* $\ts{X_\alpha \mapsvia{f_\alpha} X \st \alpha\in A}$[^think_of_covering_families]
+A category $\mathcal{C}$ with a collection of *covering families*[^think_of_covering_families]
+\[
+\ts{X_\alpha \mapsvia{f_\alpha} X \st \alpha\in A}
+\]
 such that several axioms are satisfied.
 
 [^think_of_covering_families]: How to think of this: elements in this collection cover $X$.
@@ -403,7 +405,10 @@ For $X$ a topological space, $\mathcal{C}$ the category of open sets in $X$, the
 :::{.example title="More exotic"}
 Let $M$ be a manifold and $\mathcal{C}$ be the category of manifolds over $M$, so all $M' \mapsvia{f} M$ such that $f$ is locally an isomorphism.
 Note that these are smooth local homeomorphisms.
-Let $\ts{M_\alpha \mapsvia{f_\alpha} M}$ if $\union_\alpha \im (f_\alpha) = M$.
+Let 
+\[
+\ts{M_\alpha \mapsvia{f_\alpha} M} \text{ if } \Union_\alpha \im (f_\alpha) = M
+\]
 :::
 
 :::{.example title="Another exotic example"}
