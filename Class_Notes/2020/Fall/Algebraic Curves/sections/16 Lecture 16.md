@@ -227,3 +227,32 @@ b. The class number grows exponentially in the genus not just for each fixed $q$
   In particular, if $g\geq 1$, this forces $h> 1$.
 
 :::
+
+What exactly is happening at small $q$, such as $q\in \ts{2,3,4}$?
+
+:::{.theorem title="?"}
+For $K/\FF_q$ of genus $g\geq 1$, 
+\[  
+h \geq \qty{q-1 \over 2} \qty{q^{2g} + 1 - 2gq^g \over g\qty{q^{g+1} - 1}}
+.\]
+:::
+
+:::{.exercise title="?"}
+\envlist
+
+a. Show that 
+\[  
+h\geq  \qty{q-1 \over 2}\qty{{ q^{g-1} \over g} - {2\over q}}
+,\]
+  which still grows exponentially in $g$.
+
+b. Show that for any $1<C<2$, setting $\underline{h}(g)$ to be the minimum class number of a genus $g$ function field over *any* finite field, we have $\underline{h}(g) \gg C^g$ and is thus also growing exponentially in $g$.
+
+c. Deduce that for all $H\in \ZZ$, the collection $\mathfrak{C}(H) \da \ts{(q, g) \st \exists K/\FF_q \text{ of genus } g\geq 1 \text{ and } h\leq H}$ is a finite set.
+:::
+
+:::{.question title="Class Number Problem"}
+Find $\mathfrak{C}(H)$ for each $H$.
+For $H=1$, this has been solved, but there hasn't been much work on the $H=2,3$ cases.
+:::
+
