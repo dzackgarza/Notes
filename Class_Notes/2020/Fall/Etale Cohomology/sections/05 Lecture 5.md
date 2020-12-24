@@ -48,4 +48,4 @@ Since $N, M \in \rmod$, after replacing symbols, we want the following diagram t
 \end{tikzcd}
 
 where all tensors are over $R$.
-The first map takes a map $f:M\to N$ and composes with the map $N\to \
+The first map takes a map $f:M\to N$ and composes with the map $N\to N\tensor S$ from the lemma to get a map $M\to N\tensor S$, which automatically extends to a map $M\tensor S \to N\tensor S$.
