@@ -74,4 +74,21 @@ We have an étale sheaf $\OO_{X}^{\et}: (U\to X) \mapsto \Gamma(U, \OO_U)$.
 
 ### Proof of Essential Surjectivity
 
-We have $U\mapsvia f X$ an fppf cover and descent data $(\mathcal{F}, \phi)$ on $U/X$ where $\mathcal{F}$ is a quasicoherent sheaf on $U$ and $\phi$ is an isomorphism on 
+We have $U\mapsvia f X$ an fppf cover and descent data $(\mathcal{F}, \phi)$ on $U/X$ where $\mathcal{F}$ is a quasicoherent sheaf on $U$ and $\phi$ is an isomorphism between its two pullbacks to $U\cross_X  U$ satisfying the cocycle condition on $U\cross_X U \cross_X U$.
+We want some $\mathcal{G} \in \qcoh(X)$ such that the pullback admits an isomorphism $f^* \mathcal{G} \mapsvia{\sim}\mathcal{F}$ for which the canonical descent data on the pullback agrees.
+
+We'll use a similar trick to construct $\mathcal{G}$.
+
+**Step 1**:
+We'll reduced to the case of an affine morphism.
+
+:::{.exercise title="?"}
+Work this out.
+:::
+
+Let $R\mapsvia f S$ and $M\in \mods{S}$.
+We'll want an isomorphism $\phi: M\tensor_R S\to S\tensor_R M$ of $S\tensor_R S$ modules satisfying the cocycle condition.
+We make the following construction:
+
+\begin{tikzcd}
+\end{tikzcd}
