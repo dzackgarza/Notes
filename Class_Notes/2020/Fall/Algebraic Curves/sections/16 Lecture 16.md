@@ -237,6 +237,11 @@ h \geq \qty{q-1 \over 2} \qty{q^{2g} + 1 - 2gq^g \over g\qty{q^{g+1} - 1}}
 .\]
 :::
 
+:::{.proof title="?"}
+Omitted (DZG).
+:::
+
+
 :::{.exercise title="?"}
 \envlist
 
@@ -255,4 +260,7 @@ c. Deduce that for all $H\in \ZZ$, the collection $\mathfrak{C}(H) \da \ts{(q, g
 Find $\mathfrak{C}(H)$ for each $H$.
 For $H=1$, this has been solved, but there hasn't been much work on the $H=2,3$ cases.
 :::
+
+
+
 
