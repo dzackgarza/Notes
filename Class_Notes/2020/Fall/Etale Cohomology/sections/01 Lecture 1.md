@@ -38,9 +38,7 @@ Outline/Goals:
 ## What is Etale Cohomology?
 
 Suppose $X/\CC$ is a quasiprojective variety: a finite type separated integral $\CC\dash$scheme.
-
 If you take the complex points, it naturally has the structure of a complex analytic space $X(\CC)^{\text{an}}$: you can give it the Euclidean topology, which is much finer than the Zariski topology.
-
 For a nice topological space, we can associate the singular cohomology $H^i(X(\CC)^{\text{an}}, \ZZ)$, which satisfies several nice properties:
 
 - Finitely generated $\ZZ\dash$modules
@@ -48,21 +46,24 @@ For a nice topological space, we can associate the singular cohomology $H^i(X(\C
 - Cycle classes (i.e. associate to a subvariety a class in cohomology)
 
 Goal of etale cohomology: do something similar for much more general "nice" schemes.
-Note that some of these properties are special to complex varieties
-
-E.g. finitely generated: not true for a random topological space
+Note that some of these properties are special to complex varieties.
+(E.g. finitely generated: not true for a random topological space.)
 
 We'll associate $X$ a "nice scheme" $\rightsquigarrow H^i(X_{\text{et}}, \ZZ/\ell^n\ZZ)$.
 Take the inverse limit over all $n$ to obtain the $\ell\dash$adic cohomology $H^i(X_{\text{et}}, \ZZ_\ell)$.
 You can tensor with $\QQ$ to get something with $\QQ_\ell$ coefficients.
 And as in singular cohomology, you can a "twisted coefficient system".
 
-What are nice schemes:
+
+:::{.example title="?"}
+What are some nice schemes?
 
 - $X = \spec \OO_k$, the ring of integers over a number field.
 - $X$ a variety over an algebraically closed field
   - Typical, most analogous to taking a variety over $\CC$.
 - $X$ a variety over a non-algebraically closed field
+
+:::
   
 Some comparisons between the last two cases:
 
@@ -70,20 +71,29 @@ Some comparisons between the last two cases:
 - Over a finite field, $H^i$ will vanish for $i>2d+1$ but generally not vanish for $i=2d+1$. 
 
 In good situations, these are finitely generated $\ZZ/\ell^n\ZZ\dash$modules, have Mayer-Vietoris and excision sequences, spectral sequences, etc.
+Related invariants: for a scheme with a geometric point [^what_is_a_geom_point]
 
-Related invariants: for a scheme with a geometric point $(X, \bar x) \rightsquigarrow \pi_1^{\text{étale}}(X, \bar x)$, which is a profinite topological group, which is a profinite topological group.
 
-> Note: a geometric point is a map from $\spec X$ to an algebraically closed field.
+$(X, \bar x) \rightsquigarrow \pi_1^{\text{étale}}(X, \bar x)$, which is a profinite topological group, which is a profinite topological group.
 
+[^what_is_a_geom_point]: 
+A **geometric point** is a map from $\spec X$ to an algebraically closed field.
+
+
+:::{.remark}
 More invariants beyond the scope of this course:
 
 - Higher homotopy groups
 - Homotopy type (equivalence class of spaces)
 
 So we want homotopy-theoretic invariants for varieties.
+:::
 
 :::{.remark}
 This cohomology theory is necessarily weird!
+The following theorem explains why.
+The slogan: there is no cohomology theory with $\QQ$ coefficients. 
+:::
 
 :::{.theorem title="Serre"}
 There does not exists a cohomology theory for schemes over $\bar{\FF}_q$ with the following properties:
@@ -91,29 +101,25 @@ There does not exists a cohomology theory for schemes over $\bar{\FF}_q$ with th
 1. Functorial
 2. Satisfies the Kunneth formula
 3. For $E$ an elliptic curve, $H^1(E) = \QQ^2$.
-
-> Slogan: No cohomology theory with $\QQ$ coefficients. 
-
 :::
+
 :::{.proof}
 Take $E$ to be a supersingular elliptic curve.
-Then $\endo(E) \tensor \QQ$ is a quaternion algebra.
-
-Fact: There are no algebra morphisms $R\to \mat_{2\times 2}(\QQ)$
+Then $\endo(E) \tensor \QQ$ is a quaternion algebra, and use the fact that there are no algebra morphisms $R\to \mat_{2\times 2}(\QQ)$.
+:::
 
 :::{.exercise}
 Functoriality and Kunneth implies that $\endo(E)\actson E$ yields an action on $H^1(E)$, which is precisely an algebra morphism $\endo(E) \to \mat_{2\by 2}(\QQ)$, a contradiction.
 
-> The content: the sum of two endomorphisms act via their sum on $H^1$.
+The content here: the sum of two endomorphisms act via their sum on $H^1$.
 :::
+
 
 :::{.exercise}
 Prove the same thing for $\QQ_p$ coefficients, where $p$ divides the characteristic of the ground field.
+Proof the same, just need to know what quaternion algebras show up.
+:::
 
-> Proof the same, just need to know what quaternion algebras show up.
-:::
-:::
-:::
 
 
 This forces using some funky type of coefficients.
@@ -146,7 +152,7 @@ The conjectures:
 
 3. (RH) All roots and poles of $\zeta_X(t)$ have absolute value $q^{i\over 2}$ with $i\in \ZZ$, and these are equal to the $i$th Betti numbers if $X$ lifts to characteristic zero.
 
-  > Note: we'll generalize betti numbers so this makes sense in general.
+  > Note: we'll generalize Betti numbers so this makes sense in general.
 
 All theorems! Proofs:
 
