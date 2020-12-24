@@ -184,7 +184,12 @@ We can now apply the AM-GM inequality:
 &\geq \qty{ \prod_{i=1}^g \gamma_i}^{1\over g} 
 = \gamma^{1/g} \geq 1
 ,\]
-
+and thus
+\[  
+g \leq \sum \gamma_i 
+= \sum_{\alpha_i + \bar{\alpha_i}} + g\floor{2\sqrt q} + g 
+=
+.\]
  
 
 :::
