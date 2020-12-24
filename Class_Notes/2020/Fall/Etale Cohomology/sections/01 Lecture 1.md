@@ -223,12 +223,15 @@ For $X$ a smooth proper curve over $\FF_q$, $\zeta_X(t)$ is rational.
 :::
 
 :::{.proof}
-Claim: there is a set map 
+
+:::{.claim}
+There is a set map 
 \[  
 \sym^n X &\to \pic^n X \\
 D &\mapsto \OO(D)
 ,\]
 where here the divisor is an $n\dash$tuple of points.
+:::
 
 What are the fibers over a line bundle $\OO(D)$?
 A linear system, i.e. the projectivization of global sections $\PP \Gamma(X, \OO(D))$.
@@ -251,14 +254,9 @@ You should check to make sure you know why this is true!
 
 Thus the fibers are isomorphic to $\PP^{n-g}$ for $n>2g-2$.
 Now make a reduction[^exc_justify_reduction_1]
-
-[^exc_justify_reduction_1]: 
-Exercise: justify why the reduction is valid.
-
-Wlog assume $X(\FF_q) \neq \emptyset$.
+and without loss of generality, assume $X(\FF_q) \neq \emptyset$.
 In this case, $\pic^n(X) \cong \pic^{n+1}(X)$ for all $n$, since you can take $\OO(P)$ for $P$ a point, a degree 1 line bundle, and tensor with it.
 It's an isomorphism because you can tensor with the dual bundle to go back.
-
 Thus for all $n>2g-2$,
 \[  
 \abs{\sym^n(X)(\FF_q)} 
@@ -267,6 +265,10 @@ Thus for all $n>2g-2$,
 .\]
 
 Thus $\zeta_X(t)$ is a polynomial plus $\sum_{n>2g-2} \abs{\pic^n(X)(\FF_q)}\qty{1+q+q^2+\cdots+q^{n-g}}t^n$.
+
+
+[^exc_justify_reduction_1]: 
+Exercise: justify why the reduction is valid.
 
 :::{.exercise}
 Show that this is a rational function using the formula for a geometric series.
@@ -291,17 +293,18 @@ We'll show the RH later.
 Suppose $X/\FF_q$ is any variety, then $\zeta_X(t)$ is rational function.
 :::
 
-> Roughly known to Weil, hinted at in original paper
+This was roughly known to Weil, hinted at in original paper
 
 :::{.proof title="Grothendieck"}
 Idea: take Frobenius (intentionally vague, arithmetic vs geometric vs ...) $F:X\to X$, then $X(\FF_q)$ are the fixed points of $F$ acting on $X_{\bar \FF_q}$, and the $\FF_{q^n}$ points are the fixed points of $F^n$.
+Uses the Lefschetz fixed point formula, which will say for $\ell\neq \ch(\FF_q)$,[^compact_supported_cohomology]
 
-Uses the Lefschetz fixed point formula, which will say for $\ell\neq \ch(\FF_q)$,
 \[  
 \abs{X(\FF_{q^n})} = \sum_{i=0}^{2\dim(X)} (-1)^i \tr(F^n) H^i_c(X_{\FF_q}, \QQ_\ell)
 .\]
 
-> Here $H^i_c$ is compactly supported cohomology, we'll define this later in the course.
+[^compact_supported_cohomology]: 
+Here $H^i_c$ is compactly supported cohomology, we'll define this later in the course.
 
 :::{.lemma}
 \[  
@@ -312,15 +315,12 @@ This lemma implies the result, because if you plug the trace formula into the ze
 
 :::{.proof title="Of Lemma"}
 It suffices to treat the case $\dim(V) = 1$, because otherwise you can just write this as a sum of powers of eigenvalues.
-
 Then you have a scalar matrix, so you obtain
 \[  
 \exp{ \sum {\alpha^n \over n} t^n} = \exp{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t}
 ,\]
 which is rational.
-
 :::
-
 :::
 
 This proves rationality, contingent on 
@@ -330,8 +330,7 @@ This proves rationality, contingent on
 
 :::{.exercise}
 Try to figure out how Poincaré duality should give the functional equation.
-
-> Hint: try the lemma on a vector space where $F$ scales a bilinear form.
+Hint: try the lemma on a vector space where $F$ scales a bilinear form.
 :::
 
 :::{.theorem title="Serre, Kahler Analog"}
