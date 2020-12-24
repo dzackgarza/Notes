@@ -140,13 +140,21 @@ Let $K/\FF_q$ be a function field of genus $f$, then
 .\]
 ::: 
 
-:::{.definition title="?"}
+
+:::{.remark}
 We write
 \[  
 M_q(g) &\da \text{The maximal } \abs{\Sigma(K/\FF_q)} \text{ as $K$ ranges over genus $g$ function fields} \\
 m_q(g) &\da \text{The minimal } \abs{\Sigma(K/\FF_q)} \text{ as $K$ ranges over genus $g$ function fields} \\
 A(q) &\da \limsup_{g\to \infty} {M_q(g) \over g}
 .\]
+This is essentially the best constant that can be put in front of $g$ in the bounds.
+With these definitions, we have
+\[  
+A(q) \leq 2\sqrt q && \text{by Weil bounds }\\
+A(q) \leq \floor{2\sqrt q} && \text{by Serre bounds }\\
+.\]
+Note that we can do much better, e.g. $A(2) \leq \sqrt{2} - 1$, but it is not known if this is sharp.
 :::
 
 
