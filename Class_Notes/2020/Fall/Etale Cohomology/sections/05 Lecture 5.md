@@ -39,8 +39,13 @@ This will use that the map has finite presentation, and in fact even less, that 
 
 **Step 2**:
 We now have $R\to S$ faithfully flat, where we're thinking of $U = \spec S, X = \spec R$.
-Since $N, M \in \rmod$, we can replace symbols to obtain the following equalizer diagram:
+Since $N, M \in \rmod$, after replacing symbols, we want the following diagram to be an equalizer:
 
 \begin{tikzcd}
-
+\hom_R(M, N) \ar[r] &
+\hom_S(M\tensor S, N\tensor S) \ar[r, shift left=0.75em]\ar[r, shift right=0.75em] &
+\hom_{S\tensor S}(M\tensor S^{\tensor 2}, N\tensor S^{\tensor 2})
 \end{tikzcd}
+
+where all tensors are over $R$.
+The first map takes a map $f:M\to N$ and composes with the map $N\to \
