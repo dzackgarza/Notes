@@ -99,3 +99,12 @@ As a consequence, if $\omega\in \Sigma_1(K_r/ \FF_{q^r})$, let $v\da \omega\inte
 We saw that $\deg(v) = d$ which divides $r$, so we can form the divisor $r/d[p] \in \Div^r K$ for any place $p$ below $v$.
 So any degree 1 place yields a degree $r$ divisor, which shows that $\Div^r K \neq \emptyset$ for all $r$ large enough and thus $\delta=1$ (which is Schmidt's theorem).
 :::
+
+:::{.exercise title="?"}
+\envlist
+
+a. Show that there is a constant $C$ depending only on $g$ such that if $r\geq C$ then for all $n\geq 2$, $N_{nr} > N_r$.
+
+
+b. U
+:::
