@@ -145,10 +145,8 @@ Suppose $X/\FF_q$ is a variety, then
 Make this slogan precise for rational functions, i.e. ratios of two polynomials.
 :::
 
-:::{.proposition title=""}
-
-:::
-The conjectures:
+:::{.theorem title="The Weil Conjectures"}
+\envlist
 
 1. $\zeta_x(t)$ is a rational function.
 
@@ -160,6 +158,9 @@ The conjectures:
 3. (RH) All roots and poles of $\zeta_X(t)$ have absolute value $q^{i\over 2}$ with $i\in \ZZ$, and these are equal to the $i$th Betti numbers if $X$ lifts to characteristic zero.
 
   > Note: we'll generalize Betti numbers so this makes sense in general.
+
+
+:::
 
 All theorems! Proofs:
 
