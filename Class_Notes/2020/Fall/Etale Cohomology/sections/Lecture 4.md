@@ -78,5 +78,8 @@ Suppose we have an fppf cover of $X$
 U = \disjoint U_i \ar[d] \\
 X
 \end{tikzcd}
+When does it come from a quasicoherent sheaf on $X$?
+I.e., when is there a 
+More precisely, what extra structure do you need to "descend" to $\qcoh(X)$?
 :::
 
