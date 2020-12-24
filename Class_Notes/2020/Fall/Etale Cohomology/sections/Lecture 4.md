@@ -239,6 +239,7 @@ Being fully faithful is the same as the above diagram being a equalizer.
 I.e., the first map $f^*$ is injective, yielding faithfulness, and fullness means that any map in the middle that has the same image under the two arrows $\pi_1^*, \pi_2^*$ comes from an element in $\hom_X(\mathcal{F}_1, \mathcal{F}_2)$.
 
 Assuming that this is fully faithful, why do quasicoherent sheaves give sheaves on $X_{\et}$ or $X_{\fppf}$?
+Being a sheaf was characterized by an equalizer diagram gotten by replacing the first hom with taking global sections of $\mathcal{F}$ on $X, U, U\cross_X U$.
 :::
 
 
