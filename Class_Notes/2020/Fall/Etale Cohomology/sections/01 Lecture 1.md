@@ -207,7 +207,6 @@ We can keep going by expanding and multiplying out the product:
 Why? 
 If you have a degree $x$ point, it contributes a stable subset of size $x$: namely the $\FF_{q^n}$ points of $\FF_{q^n}$. 
 Taking Galois orbits like that correspond to multiplying this product.
-
 But these are the points of some algebraic variety:
 \[  
 \cdots 
@@ -312,6 +311,8 @@ Here $H^i_c$ is compactly supported cohomology, we'll define this later in the c
 :::
 This lemma implies the result, because if you plug the trace formula into the zeta function, you'll get an alternating product $f \cdots {1\over g} \cdot h \cdot {1\over j} \cdots$ of functions of the form in the lemma, which is still rational.
 
+:::
+
 :::{.proof title="Of Lemma"}
 It suffices to treat the case $\dim(V) = 1$, because otherwise you can just write this as a sum of powers of eigenvalues.
 Then you have a scalar matrix, so you obtain
@@ -320,7 +321,7 @@ Then you have a scalar matrix, so you obtain
 ,\]
 which is rational.
 :::
-:::
+
 
 This proves rationality, contingent on 
 
@@ -335,7 +336,6 @@ Try to figure out how Poincaré duality should give the functional equation.
 
 :::{.theorem title="Serre, Kahler Analog"}
 Suppose $X/\CC$ is a smooth projective variety and $[H] \in H^2(X(\CC), \CC)$ is a hyperplane class (corresponds to intersection of generic hyperplane or the first Chern class of an ample line bundle).
-
 Suppose $F:X\to X$ is an endomorphism such that $f^*[H] = q[H]$ for some $q\in \ZZ_{\geq 1}$.
 
 Define 

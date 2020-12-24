@@ -103,7 +103,7 @@ Then $f$ is **étale** is it is locally of finite presentation, flat, and unrami
 :::
 
 :::{.definition title="Unramified"}
-$f$ is **unramified** if $\Omega_{X/Y}1 = 0$ (the relative Kahler differentials).
+$f$ is **unramified** if $\Omega_{X/Y}^1 = 0$ (the relative Kahler differentials).
 Equivalently, all residue field extensions are separable, i.e. given a point in $Y$ with a point in $X$ above it, the residue fields of these points gives a field extension, and we require it to be separable.
 :::
 
@@ -139,7 +139,7 @@ There are some equivalent definitions of a morphism being étale:
 For this last definition, thinking of $\spec(R[x])$ as $R\times \AA^n$, what happens when modding out by a polynomial $g$?
 This yields a curve cutting out the roots of $g$.
 Inverting $h$ deletes the locus where $h$ vanishes, and $g'$ being a unit means that the $g$ has no double roots in the fibers.
-In other word, the delete locus passes through all double roots:
+In other word, the deleted locus passes through all double roots:
 
 ![Image](figures/image_2020-11-15-01-47-05.png){width=350px}
 
@@ -149,9 +149,6 @@ In other word, the delete locus passes through all double roots:
 :::{.exercise title="?"}
 Check that standard étale morphisms are étale, and try to understand the proof that all étale morphisms are locally standard étale.
 :::
-
-
-Let's do some examples!
 
 :::{.example title="Example of an étale morphism"}
 \envlist
@@ -165,15 +162,16 @@ Let's do some examples!
 ,\]
   where $n$ is prime to $\ch(k)$.[^prime_zer]
 
-  - Note that this is in fact finite étale.
 
 [^prime_zer]: Here we use the convention that everything is prime to zero.
+Also note that this map is in fact finite étale.
   
 :::
 
 :::{.exercise title="?"}
 Show that the last map above is étale.
-Hint: use the fact that $\dd{}{t} (t^n) = nt^{n-1}$, which is a unit.
+
+*(Hint: use the fact that $\dd{}{t} (t^n) = nt^{n-1}$, which is a unit.)*
 :::
 
 :::{.example title="?"}
