@@ -108,6 +108,17 @@ a. Show that there is a constant $C$ depending only on $g$ such that if $r\geq C
 
 b. Use the following fact to show that there exists a constant $D$ depending on $g$ such that for all $d\geq D$, $\Sigma_d(K/\FF_q) \neq \emptyset$:
 \[  
-N_r = \sum_{d\divides r} d \abs{ }
+N_r = \sum_{d\divides r} d \abs{ \Sigma_d(K/\FF_q) }
 .\]
+:::
+
+:::{.remark}
+Note that this is stronger than Schmidt's theorem: it implies that not only do you have a divisor of degree $d$, but also a place of degree $d$.
+:::
+
+
+:::{.exercise title="?"}
+\envlist
+
+a. Use the Weil bounds to show that when $g=0$, $\abs{\Sigma_1(K/\FF_q)} = q+1$.
 :::
