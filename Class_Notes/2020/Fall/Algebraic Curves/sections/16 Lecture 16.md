@@ -1,5 +1,8 @@
 # Lecture 16
 
+
+## Weil Bounds
+
 Last time: we finished a discussion of the Hasse-Weil zeta function over a finite ground field $\fq$.
 
 :::{.exercise title="?"}
@@ -37,6 +40,7 @@ In order to prove this, Weil had to develop foundations for algebraic geometry i
 His original proof used intersection theory on algebraic surfaces.
 :::
 
+
 :::{.corollary title="Weil Bounds"}
 If $K/\FF_q$ is a function field of genus $g$, then
 \[  
@@ -66,4 +70,32 @@ Thus
 \sum_{i=1}^{2g} \abs{\alpha_i}
 =2g\sqrt q
 .\]
+:::
+
+:::{.corollary title="?"}
+For $r\gg 0$, $N_r \da \abs{\Sigma_1(K_r/ \FF_{q^r})} \geq 1$.
+:::
+
+:::{.proof title="?"}
+The Weil bounds yield
+\[  
+N_r \geq q^r + 1 - 2g q^{r/2}
+\geq 
+q^{r/2} \qty{q^{r/2} - 2g} \converges{r\to \infty} \infty
+.\]
+This can be alternatively phrased as 
+\[  
+N_r = q^r + O_g(q^{r/2})
+.\]
+Note that we've used the fact that making any separable extension of a function field will preserve the genus, and so $g$ is fixed.
+:::
+
+:::{.remark}
+So for $r$ large enough, there is an $\FF_{q^r}\dash$rational point, and $N_r \to \infty$ exponentially fast in $r$.
+:::
+
+:::{.remark}
+As a consequence, if $\omega\in \Sigma_1(K_r/ \FF_{q^r})$, let $v\da \omega\intersect K$.
+We saw that $\deg(v) = d$ which divides $r$, so we can form the divisor $r/d[p] \in \Div^r K$ for any place $p$ below $v$.
+So any degree 1 place yields a degree $r$ divisor, which shows that $\Div^r K \neq \emptyset$ for all $r$ large enough and thus $\delta=1$ (which is Schmidt's theorem).
 :::
