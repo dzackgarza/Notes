@@ -210,7 +210,8 @@ So we need to prove
 
 :::{.proof title="of full faithfulness"}
 Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(X)$, then we have a functor and thus a map $\hom_X(\mathcal{F}_1, \mathcal{F}_2) \mapsvia{f^*} \hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)$.
-We're not trying to show this map is a bijection, 
+We're not trying to show this map is a bijection, since we need more than that: the morphism should commute with the descent data.
+
 
 :::
 
