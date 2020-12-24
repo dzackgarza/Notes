@@ -106,5 +106,8 @@ So any degree 1 place yields a degree $r$ divisor, which shows that $\Div^r K \n
 a. Show that there is a constant $C$ depending only on $g$ such that if $r\geq C$ then for all $n\geq 2$, $N_{nr} > N_r$.
 
 
-b. U
+b. Use the following fact to show that there exists a constant $D$ depending on $g$ such that for all $d\geq D$, $\Sigma_d(K/\FF_q) \neq \emptyset$:
+\[  
+N_r = \sum_{d\divides r} d \abs{ }
+.\]
 :::
