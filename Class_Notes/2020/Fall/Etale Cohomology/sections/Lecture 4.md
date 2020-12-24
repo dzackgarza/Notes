@@ -124,10 +124,10 @@ U
   .\]
 
 3. Cocycle condition: in the following fiber product
-
 \begin{tikzcd}
 U \cross_X U \cross_X U 
-\ar[d, bend left] \ar[d, "\pi_{ij}"] \ar[d, bend right] \\
+\ar[d, shift  left=1.75ex] \ar[d] \ar[d,shift  right=1.75ex,  "\pi_{ij}"'] \\
+U\cross_X U
 \end{tikzcd}
   we have $\pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi_{13}\phi$.
 
