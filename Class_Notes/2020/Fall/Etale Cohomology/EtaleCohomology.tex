@@ -424,9 +424,8 @@ We can keep going by expanding and multiplying out the product:
 
 Why? If you have a degree \(x\) point, it contributes a stable subset of
 size \(x\): namely the \(\FF_{q^n}\) points of \(\FF_{q^n}\). Taking
-Galois orbits like that correspond to multiplying this product.
-
-But these are the points of some algebraic variety:
+Galois orbits like that correspond to multiplying this product. But
+these are the points of some algebraic variety:
 \begin{align*}  
 \cdots 
 = \sum_{n\geq 0} \abs{\sym^n(X)(\FF_q)} t^n
@@ -473,15 +472,14 @@ If \(\deg(D) = 2g-2\), then \(H^1(X, \OO(D)) = 0\).
 This is because it's dual to \(H^0(X, \OO(K-D))\dual\), but this has
 negative degree and a line bundle of negative degree can never have
 sections.\footnote{You should check to make sure you know why this is
-  true!}
-
-Thus the fibers are isomorphic to \(\PP^{n-g}\) for \(n>2g-2\). Now make
-a reduction\footnote{Exercise: justify why the reduction is valid.} and
-without loss of generality, assume \(X(\FF_q) \neq \emptyset\). In this
-case, \(\pic^n(X) \cong \pic^{n+1}(X)\) for all \(n\), since you can
-take \(\OO(P)\) for \(P\) a point, a degree 1 line bundle, and tensor
-with it. It's an isomorphism because you can tensor with the dual bundle
-to go back. Thus for all \(n>2g-2\),
+  true!} Thus the fibers are isomorphic to \(\PP^{n-g}\) for \(n>2g-2\).
+Now make a reduction\footnote{Exercise: justify why the reduction is
+  valid.} and without loss of generality, assume
+\(X(\FF_q) \neq \emptyset\). In this case,
+\(\pic^n(X) \cong \pic^{n+1}(X)\) for all \(n\), since you can take
+\(\OO(P)\) for \(P\) a point, a degree 1 line bundle, and tensor with
+it. It's an isomorphism because you can tensor with the dual bundle to
+go back. Thus for all \(n>2g-2\),
 \begin{align*}  
 \abs{\sym^n(X)(\FF_q)} 
 = \abs{\PP^{n-g}(\FF_q)} \cdot \abs{\pic^n(X)(\FF_q)}
@@ -552,6 +550,8 @@ into the zeta function, you'll get an alternating product
 \(f \cdots {1\over g} \cdot h \cdot {1\over j} \cdots\) of functions of
 the form in the lemma, which is still rational.
 
+\end{proof}
+
 \begin{proof}[Of Lemma]
 
 It suffices to treat the case \(\dim(V) = 1\), because otherwise you can
@@ -560,8 +560,6 @@ scalar matrix, so you obtain
 \begin{align*}  
 \exp{ \sum {\alpha^n \over n} t^n} = \exp{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t}
 ,\end{align*} which is rational.
-
-\end{proof}
 
 \end{proof}
 
@@ -591,10 +589,8 @@ bilinear form.)}
 Suppose \(X/\CC\) is a smooth projective variety and
 \([H] \in H^2(X(\CC), \CC)\) is a hyperplane class (corresponds to
 intersection of generic hyperplane or the first Chern class of an ample
-line bundle).
-
-Suppose \(F:X\to X\) is an endomorphism such that \(f^*[H] = q[H]\) for
-some \(q\in \ZZ_{\geq 1}\).
+line bundle). Suppose \(F:X\to X\) is an endomorphism such that
+\(f^*[H] = q[H]\) for some \(q\in \ZZ_{\geq 1}\).
 
 Define
 \begin{align*}  
@@ -777,7 +773,7 @@ unramified.
 
 \begin{definition}[Unramified]
 
-\(f\) is \textbf{unramified} if \(\Omega_{X/Y}1 = 0\) (the relative
+\(f\) is \textbf{unramified} if \(\Omega_{X/Y}^1 = 0\) (the relative
 Kahler differentials). Equivalently, all residue field extensions are
 separable, i.e.~given a point in \(Y\) with a point in \(X\) above it,
 the residue fields of these points gives a field extension, and we
@@ -838,7 +834,7 @@ For this last definition, thinking of \(\spec(R[x])\) as
 This yields a curve cutting out the roots of \(g\). Inverting \(h\)
 deletes the locus where \(h\) vanishes, and \(g'\) being a unit means
 that the \(g\) has no double roots in the fibers. In other word, the
-delete locus passes through all double roots:
+deleted locus passes through all double roots:
 
 \begin{figure}
 \centering
@@ -855,8 +851,6 @@ proof that all étale morphisms are locally standard étale.
 
 \end{exercise}
 
-Let's do some examples!
-
 \begin{example}[Example of an étale morphism]
 
 \envlist
@@ -871,21 +865,18 @@ Let's do some examples!
   \GG_m &\to \GG_m \\
    t^m &\mapsfrom t
   ,\end{align*} where \(n\) is prime to \(\ch(k)\).\footnote{Here we use
-    the convention that everything is prime to zero.}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Note that this is in fact finite étale.
-  \end{itemize}
+    the convention that everything is prime to zero. Also note that this
+    map is in fact finite étale.}
 \end{itemize}
 
 \end{example}
 
 \begin{exercise}[?]
 
-Show that the last map above is étale. Hint: use the fact that
-\(\dd{}{t} (t^n) = nt^{n-1}\), which is a unit.
+Show that the last map above is étale.
+
+\emph{(Hint: use the fact that \(\dd{}{t} (t^n) = nt^{n-1}\), which is a
+unit.)}
 
 \end{exercise}
 
@@ -932,10 +923,11 @@ Note that this is finite onto its image.
 
 \begin{proposition}[?]
 
-Any open immersion is étale.\footnote{Note that we actually already
-  checked this!}
+Any open immersion is étale.
 
 \end{proposition}
+
+Note that we actually already checked this!
 
 \begin{example}[An étale morphism that is not finite onto its image]
 
@@ -1033,11 +1025,11 @@ it is not torsion.
 
 \begin{remark}
 
-This map has a name: the relative Frobenius. In general, looking at
-Frobenii, the Kahler differentials will be very big. You might not be
-used to this: in characteristic zero, a map of relative dimension zero
-is generically étale. In this case, the Kahler differentials will always
-be torsion.
+This map has a name: \textbf{the relative Frobenius}. In general,
+looking at Frobenii, the Kahler differentials will be very big. You
+might not be used to this: in characteristic zero, a map of relative
+dimension zero is generically étale. In this case, the Kahler
+differentials will always be torsion.
 
 \end{remark}
 
@@ -1202,10 +1194,12 @@ form \(U\cross V = U\intersect V\).
 
 \begin{definition}[Preliminary: Sites/Grothendieck Topologies]
 
-A category \(\mathcal{C}\) with a collection of \emph{covering families}
-\(\ts{X_\alpha \mapsvia{f_\alpha} X \st \alpha\in A}\)\footnote{How to
-  think of this: elements in this collection cover \(X\).} such that
-several axioms are satisfied.
+A category \(\mathcal{C}\) with a collection of \emph{covering
+families}\footnote{How to think of this: elements in this collection
+  cover \(X\).}
+\begin{align*}
+\ts{X_\alpha \mapsvia{f_\alpha} X \st \alpha\in A}
+\end{align*} such that several axioms are satisfied.
 
 \end{definition}
 
@@ -1232,8 +1226,9 @@ in \(X\), then \(\ts{U_\alpha\to U}\) is a covering family if the
 Let \(M\) be a manifold and \(\mathcal{C}\) be the category of manifolds
 over \(M\), so all \(M' \mapsvia{f} M\) such that \(f\) is locally an
 isomorphism. Note that these are smooth local homeomorphisms. Let
-\(\ts{M_\alpha \mapsvia{f_\alpha} M}\) if
-\(\union_\alpha \im (f_\alpha) = M\).
+\begin{align*}
+\ts{M_\alpha \mapsvia{f_\alpha} M} \text{ if } \Union_\alpha \im (f_\alpha) = M
+\end{align*}
 
 \end{example}
 
@@ -1393,15 +1388,18 @@ by subsets for which these are isomorphisms onto their images.
 
 \end{remark}
 
+:::\{.definition title=``fppf''\} The letter \textbf{fppf} stand for
+\textbf{faithfully flat and finite presentation}. \footnote{The letters
+  don't precisely match up here because this comes from a French
+  acronym. :::}
+
 \begin{example}[The fppf topology]
 
-This stands for \textbf{faithfully flat and finite presentation}.
-\footnote{The letters don't precisely match up here because this comes
-  from a French acronym.} There are small and big sites here: we define
-\(X_{\fppf}\) whose objects are fppf morphism \(Y\to X\), with morphisms
-as triangular diagrams of morphisms over \(X\), and covers are the usual
-covers. Note that replacing fppf morphisms with flat morphisms would
-yield an equivalent definition here.
+There are small and big sites here: we define \(X_{\fppf}\) whose
+objects are fppf morphism \(Y\to X\), with morphisms as triangular
+diagrams of morphisms over \(X\), and covers are the usual covers. Note
+that replacing fppf morphisms with flat morphisms would yield an
+equivalent definition here.
 
 \end{example}
 
@@ -1410,11 +1408,10 @@ yield an equivalent definition here.
 If \(X\) is a scheme, then the small Zariski topology is
 \(X_{\mathrm{zar}}\) whose objects are \(\Op(X^{\mathrm{top}})\), the
 Grothendieck topology of the corresponding topological space, and we
-take the usual notion of covers.
-
-There is a big Zariski topology \(X_{\mathrm{Zar}}\) whose category is
-all \(X\dash\)schemes \(\ts{U_\alpha\mapsvia{f_\alpha} U}\) with
-\(f_\alpha\) open embeddings and \(\Union_\alpha \im(f_\alpha) = U\).
+take the usual notion of covers. There is a big Zariski topology
+\(X_{\mathrm{Zar}}\) whose category is all \(X\dash\)schemes
+\(\ts{U_\alpha\mapsvia{f_\alpha} U}\) with \(f_\alpha\) open embeddings
+and \(\Union_\alpha \im(f_\alpha) = U\).
 
 \end{example}
 
@@ -1442,8 +1439,9 @@ Some other examples:
 
 \begin{definition}[Presheaf]
 
-For \(\mathcal{D}\) a category, a \(\mathcal{D}\dash\)valued presheaf is
-a contravariant function \(F:\mathcal{C}\to \mathcal{D}\).
+For \(\mathcal{D}\) a category, a \(\mathcal{D}\dash\)valued
+\textbf{presheaf} is a contravariant function
+\(F:\mathcal{C}\to \mathcal{D}\).
 
 \end{definition}
 
@@ -1471,7 +1469,7 @@ topology.
 
 \begin{definition}[Sheaf]
 
-A sheaf \(F\) is presheaf such that
+A \textbf{sheaf} \(F\) is presheaf such that
 
 \begin{center}
 \begin{tikzcd}
@@ -1518,8 +1516,8 @@ from \(F(U)\).
 
 \begin{definition}[Morphisms of sheaves and presheaves]
 
-A morphism \(F_1\to F_2\) of either presheaves or sheaves is a natural
-transformation of functors.
+A \textbf{morphism} \(F_1\to F_2\) of either presheaves or sheaves is a
+natural transformation of functors.
 
 \end{definition}
 
@@ -1613,7 +1611,7 @@ Some things we still need to get to:
 \begin{itemize}
 \tightlist
 \item
-  A proof that \(\ul{zlnz}\) is actually a sheaf,
+  A proof that \(\ul{\zlnz}\) is actually a sheaf,
 \item
   A proof that the category of sheaves on the big étale site
   \(X_\Et\)\footnote{Note that a sheaf on the big étale site necessarily
@@ -1630,7 +1628,7 @@ Definition}\label{uxe9tale-cohomology-a-preliminary-definition}}
 
 Let \(\mathcal{F}\) be a sheaf and define a functor
 \(\Gamma_X: \mathcal{F}\to \mathcal{F}(X)\) sending it to its values on
-\(X\). Then
+\(X\). Then the \textbf{étale cohomology} of \(X\) is defined by
 \begin{align*}  
 H^i(X_\et, \ul{\zlnz}) \da R^i \Gamma_X(\ul \zlnz)
 ,\end{align*} the right-derived functors of \(\Gamma_X\).
@@ -1764,7 +1762,7 @@ Sites}\label{preview-morphisms-of-sites}}
 \begin{definition}[Morphisms of Sites]
 
 Suppose \(T_1, T_2\) are sites (categories with covering families), then
-a continuous map \(f:T_1 \to T_2\) is a functor
+a \textbf{continuous map of sites} \(f:T_1 \to T_2\) is a functor
 \(T_2 \to T_1\)\footnote{Note that this functor goes in the opposite
   direction of the original map.} that preserves fiber products and
 sends covering families to covering families.
