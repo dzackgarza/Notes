@@ -151,6 +151,8 @@ Given descent data $(\mathcal{F}, \phi)$ and $(\mathcal{G}, \psi)$, a **morphism
 \end{tikzcd}
 :::
 
+## Descent Data is Equivalent to Quasicoherent Sheaves
+
 :::{.theorem title="Descent for quasicoherent sheaves"}
 Suppose $f: U\to X$ is fppf.
 Then $f^*$ induced an equivalence of categories between $\qcoh(X)$ and descent data on $U/X$.
@@ -162,5 +164,16 @@ Explicitly, given $\mathcal{F}\in \qcoh(X)$, we can pullback to obtain $f^* \mat
 We now want an isomorphism
 \[  
 \qty{f\circ \pi_1}^* \mathcal{F} \mapsvia{\sim} \qty{f\circ \pi_2}^* \mathcal{F}
-.\]
+\]
+on $U\cross_X U$.
+We have a situation like the following:
+\begin{tikzcd}
+U\cross_X U \ar[r, bend left, "\pi_1"] \ar[r, bend right, "\pi_2"] & U \ar[r, "f"] & X
+\end{tikzcd}
+Since $f\circ \pi_1 = f\circ \pi_2$ in this case, pulling back the identity yields the desired isomorphism.
+:::
+
+:::{.example title="?"}
+Let $U = \disjoint U_i$ be a Zariski cover of $X$, then vector bundle can be obtained from $\OO_{U_i}^{\oplus n}\iun \qcoh(U_i)$.
+To glue this to a vector bundle on $X$, we need isomorphism $\phi_{ij} \OO_{U_i\intersect U_j}^{\oplus n} \mapsvia{\sim } \OO_{U_i\intersect U_j}^{\oplus n}$ such that 
 :::
