@@ -239,15 +239,18 @@ To compute the dimension of the space of line bundles on a curve, use Riemann-Ro
 .\]
 where the last $-1$ comes from the fact that this is a projective space.
 
-Claim: if $\deg(D) = 2g-2$, then $H^1(X, \OO(D)) = 0$.
+:::{.claim}
+If $\deg(D) = 2g-2$, then $H^1(X, \OO(D)) = 0$.
+:::
 
-This is because it's dual to $H^0(X, \OO(K-D))\dual$, but this has negative degree and a line bundle of negative degree can never have sections.
+This is because it's dual to $H^0(X, \OO(K-D))\dual$, but this has negative degree and a line bundle of negative degree can never have sections.[^check_this_1]
 
-> Note: should check to make sure you know why this is true!
+[^check_this_1]: 
+You should check to make sure you know why this is true!
+
 
 Thus the fibers are isomorphic to $\PP^{n-g}$ for $n>2g-2$.
 Now make a reduction (exercise: justify why):
-
 
 Wlog assume $X(\FF_q) \neq \emptyset$.
 In this case, $\pic^n(X) \cong \pic^{n+1}(X)$ for all $n$, since you can take $\OO(P)$ for $P$ a point, a degree 1 line bundle, and tensor with it.
