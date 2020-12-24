@@ -199,5 +199,31 @@ Thus
 :::
 
 :::{.remark}
-An application to class numbers: since $g = L(1)
+An application to class numbers: since $g = L(1)$, by the Riemann hypothesis we have 
+\[  
+\sqrt{q} - 1 \leq \abs{\alpha_i - 1} \leq \sqrt{q} + 1
+\]
+and thus
+\[  
+\qty{\sqrt q - 1}^{2g} \leq h \leq \qty{\sqrt q + 1}^{2g}
+.\]
+
+There is a slight improvement:
+\[  
+\qty{\sqrt q - 1}^{2g} \leq \qty{q+1 - \floor{2\sqrt q} }^g \leq h \leq \floor{\qty{\sqrt q + 1}^2}^g = \qty{q+1 + \floor{2\sqrt q}}^g
+.\]
+::: 
+
+
+:::{.corollary title="?"}
+\envlist
+
+a. For all $q\geq 5$, we have 
+\[  
+h\ geq \qty{\sqrt 5 - 1}^{2g} \geq 1.236^{2g}
+.\]
+
+b. The class number grows exponentially in the genus not just for each fixed $q$ but uniformly over all $q\geq 5$.
+  In particular, if $g\geq 1$, this forces $h> 1$.
+
 :::
