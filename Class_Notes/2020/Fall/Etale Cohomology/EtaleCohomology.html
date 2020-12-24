@@ -183,18 +183,16 @@
 </ul></li>
 </ul>
 <h2 id="what-is-etale-cohomology">What is Etale Cohomology?</h2>
-<p>Suppose <span class="math inline">\(X/{\mathbb{C}}\)</span> is a quasiprojective variety: a finite type separated integral <span class="math inline">\({\mathbb{C}}{\hbox{-}}\)</span>scheme.</p>
-<p>If you take the complex points, it naturally has the structure of a complex analytic space <span class="math inline">\(X({\mathbb{C}})^{\text{an}}\)</span>: you can give it the Euclidean topology, which is much finer than the Zariski topology.</p>
-<p>For a nice topological space, we can associate the singular cohomology <span class="math inline">\(H^i(X({\mathbb{C}})^{\text{an}}, {\mathbb{Z}})\)</span>, which satisfies several nice properties:</p>
+<p>Suppose <span class="math inline">\(X/{\mathbb{C}}\)</span> is a quasiprojective variety: a finite type separated integral <span class="math inline">\({\mathbb{C}}{\hbox{-}}\)</span>scheme. If you take the complex points, it naturally has the structure of a complex analytic space <span class="math inline">\(X({\mathbb{C}})^{\text{an}}\)</span>: you can give it the Euclidean topology, which is much finer than the Zariski topology. For a nice topological space, we can associate the singular cohomology <span class="math inline">\(H^i(X({\mathbb{C}})^{\text{an}}, {\mathbb{Z}})\)</span>, which satisfies several nice properties:</p>
 <ul>
 <li>Finitely generated <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>modules</li>
 <li>Extra Hodge structure when tensored up to <span class="math inline">\({\mathbb{C}}\)</span> (same as <span class="math inline">\({\mathbb{C}}\)</span> coefficients)</li>
 <li>Cycle classes (i.e. associate to a subvariety a class in cohomology)</li>
 </ul>
-<p>Goal of etale cohomology: do something similar for much more general “nice” schemes. Note that some of these properties are special to complex varieties</p>
-<p>E.g. finitely generated: not true for a random topological space</p>
+<p>Goal of etale cohomology: do something similar for much more general “nice” schemes. Note that some of these properties are special to complex varieties. (E.g. finitely generated: not true for a random topological space.)</p>
 <p>We’ll associate <span class="math inline">\(X\)</span> a “nice scheme” <span class="math inline">\(\rightsquigarrow H^i(X_{\text{et}}, {\mathbb{Z}}/\ell^n{\mathbb{Z}})\)</span>. Take the inverse limit over all <span class="math inline">\(n\)</span> to obtain the <span class="math inline">\(\ell{\hbox{-}}\)</span>adic cohomology <span class="math inline">\(H^i(X_{\text{et}}, {\mathbb{Z}}_\ell)\)</span>. You can tensor with <span class="math inline">\({\mathbb{Q}}\)</span> to get something with <span class="math inline">\({\mathbb{Q}}_\ell\)</span> coefficients. And as in singular cohomology, you can a “twisted coefficient system”.</p>
-<p>What are nice schemes:</p>
+<div class="example" title="?">
+<p>What are some nice schemes?</p>
 <ul>
 <li><span class="math inline">\(X = \operatorname{Spec}{\mathcal{O}}_k\)</span>, the ring of integers over a number field.</li>
 <li><span class="math inline">\(X\)</span> a variety over an algebraically closed field
@@ -203,24 +201,25 @@
 </ul></li>
 <li><span class="math inline">\(X\)</span> a variety over a non-algebraically closed field</li>
 </ul>
+</div>
 <p>Some comparisons between the last two cases:</p>
 <ul>
 <li>For <span class="math inline">\({\mathbb{C}}{\hbox{-}}\)</span> variety, <span class="math inline">\(H^i_{\text{sing}}\)</span> will vanish above <span class="math inline">\(i=2d\)</span>.</li>
 <li>Over a finite field, <span class="math inline">\(H^i\)</span> will vanish for <span class="math inline">\(i&gt;2d+1\)</span> but generally not vanish for <span class="math inline">\(i=2d+1\)</span>.</li>
 </ul>
-<p>In good situations, these are finitely generated <span class="math inline">\({\mathbb{Z}}/\ell^n{\mathbb{Z}}{\hbox{-}}\)</span>modules, have Mayer-Vietoris and excision sequences, spectral sequences, etc.</p>
-<p>Related invariants: for a scheme with a geometric point <span class="math inline">\((X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu) \rightsquigarrow \pi_1^{\text{étale}}(X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu)\)</span>, which is a profinite topological group, which is a profinite topological group.</p>
-<blockquote>
-<p>Note: a geometric point is a map from <span class="math inline">\(\operatorname{Spec}X\)</span> to an algebraically closed field.</p>
-</blockquote>
+<p>In good situations, these are finitely generated <span class="math inline">\({\mathbb{Z}}/\ell^n{\mathbb{Z}}{\hbox{-}}\)</span>modules, have Mayer-Vietoris and excision sequences, spectral sequences, etc. Related invariants: for a scheme with a geometric point<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><span class="math inline">\((X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu) \rightsquigarrow \pi_1^{\text{étale}}(X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu)\)</span>, which is a profinite topological group, which is a profinite topological group.</p>
+<div class="remark">
 <p>More invariants beyond the scope of this course:</p>
 <ul>
 <li>Higher homotopy groups</li>
 <li>Homotopy type (equivalence class of spaces)</li>
 </ul>
 <p>So we want homotopy-theoretic invariants for varieties.</p>
+</div>
 <div class="remark">
-<p>This cohomology theory is necessarily weird!</p>
+<p>This cohomology theory is necessarily weird! The following theorem explains why. The slogan: there is no cohomology theory with <span class="math inline">\({\mathbb{Q}}\)</span> coefficients.</p>
+</div>
 <div class="theorem" title="Serre">
 <p>There does not exists a cohomology theory for schemes over <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{F}}\mkern-1.5mu}\mkern 1.5mu_q\)</span> with the following properties:</p>
 <ol type="1">
@@ -228,53 +227,44 @@
 <li>Satisfies the Kunneth formula</li>
 <li>For <span class="math inline">\(E\)</span> an elliptic curve, <span class="math inline">\(H^1(E) = {\mathbb{Q}}^2\)</span>.</li>
 </ol>
-<blockquote>
-<p>Slogan: No cohomology theory with <span class="math inline">\({\mathbb{Q}}\)</span> coefficients.</p>
-</blockquote>
 </div>
 <div class="proof">
-<p>Take <span class="math inline">\(E\)</span> to be a supersingular elliptic curve. Then <span class="math inline">\(\operatorname{End}(E) \otimes{\mathbb{Q}}\)</span> is a quaternion algebra.</p>
-<p>Fact: There are no algebra morphisms <span class="math inline">\(R\to \operatorname{Mat}_{2\times 2}({\mathbb{Q}})\)</span></p>
+<p>Take <span class="math inline">\(E\)</span> to be a supersingular elliptic curve. Then <span class="math inline">\(\operatorname{End}(E) \otimes{\mathbb{Q}}\)</span> is a quaternion algebra, and use the fact that there are no algebra morphisms <span class="math inline">\(R\to \operatorname{Mat}_{2\times 2}({\mathbb{Q}})\)</span>.</p>
+</div>
 <div class="exercise">
 <p>Functoriality and Kunneth implies that <span class="math inline">\(\operatorname{End}(E)\curvearrowright E\)</span> yields an action on <span class="math inline">\(H^1(E)\)</span>, which is precisely an algebra morphism <span class="math inline">\(\operatorname{End}(E) \to \operatorname{Mat}_{2\times 2}({\mathbb{Q}})\)</span>, a contradiction.</p>
-<blockquote>
-<p>The content: the sum of two endomorphisms act via their sum on <span class="math inline">\(H^1\)</span>.</p>
-</blockquote>
+<p>The content here: the sum of two endomorphisms act via their sum on <span class="math inline">\(H^1\)</span>.</p>
 </div>
 <div class="exercise">
-<p>Prove the same thing for <span class="math inline">\({\mathbb{Q}}_p\)</span> coefficients, where <span class="math inline">\(p\)</span> divides the characteristic of the ground field.</p>
-<blockquote>
-<p>Proof the same, just need to know what quaternion algebras show up.</p>
-</blockquote>
-</div>
-</div>
+<p>Prove the same thing for <span class="math inline">\({\mathbb{Q}}_p\)</span> coefficients, where <span class="math inline">\(p\)</span> divides the characteristic of the ground field. Proof the same, just need to know what quaternion algebras show up.</p>
 </div>
 <p>This forces using some funky type of coefficients.</p>
 <h2 id="what-are-the-weil-conjectures">What are the Weil Conjectures?</h2>
 <p>Suppose <span class="math inline">\(X/{\mathbb{F}}_q\)</span> is a variety, then <span class="math display">\[\begin{align*}   \zeta_X(t) = \exp\qty{\sum_{n&gt;0} { {{\left\lvert {X({\mathbb{F}}_{q^n})} \right\rvert} \over n} t^n } } .\end{align*}\]</span></p>
-<p>Some comments:</p>
+<div class="remark">
 <ul>
-<li><span class="math inline">\({\frac{\partial }{\partial t}\,} \log \zeta_X(t)\)</span> is an ordinary generating function for the number of rational points.</li>
-<li>Slogan: locations of zeros and poles of a meromorphic function control the growth rate of the coefficients of the Taylor series of the logarithmic derivative.</li>
+<li><p><span class="math inline">\({\frac{\partial }{\partial t}\,} \log \zeta_X(t)\)</span> is an ordinary generating function for the number of rational points.</p></li>
+<li><p>Slogan: locations of zeros and poles of a meromorphic function control the growth rate of the coefficients of the Taylor series of the logarithmic derivative.</p></li>
 </ul>
+</div>
 <div class="exercise">
 <p>Make this slogan precise for rational functions, i.e. ratios of two polynomials.</p>
 </div>
-<p>The conjectures:</p>
+<div class="theorem" title="The Weil Conjectures">
 <ol type="1">
 <li><p><span class="math inline">\(\zeta_x(t)\)</span> is a rational function.</p></li>
 <li><p>(Functional equation) For <span class="math inline">\(X\)</span> smooth and proper <span class="math display">\[\begin{align*}       \zeta_X(q^{-n} t^{-1}) = \pm q^{nE \over 2} t^E \zeta_X(t)     .\end{align*}\]</span></p></li>
-<li><p>(RH) All roots and poles of <span class="math inline">\(\zeta_X(t)\)</span> have absolute value <span class="math inline">\(q^{i\over 2}\)</span> with <span class="math inline">\(i\in {\mathbb{Z}}\)</span>, and these are equal to the <span class="math inline">\(i\)</span>th Betti numbers if <span class="math inline">\(X\)</span> lifts to characteristic zero.</p></li>
+<li><p>(RH) All roots and poles of <span class="math inline">\(\zeta_X(t)\)</span> have absolute value <span class="math inline">\(q^{i\over 2}\)</span> with <span class="math inline">\(i\in {\mathbb{Z}}\)</span>, and these are equal to the <span class="math inline">\(i\)</span>th Betti numbers if <span class="math inline">\(X\)</span> lifts to characteristic zero.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
 </ol>
-<blockquote>
-<p>Note: we’ll generalize betti numbers so this makes sense in general.</p>
-</blockquote>
-<p>All theorems! Proofs:</p>
+</div>
+<div class="remark">
+<p>These are all theorems! The proofs:</p>
 <ol type="1">
-<li><p>Dwork, using <span class="math inline">\(p{\hbox{-}}\)</span>adic methods. Proof here will follow from the fact that <span class="math inline">\(H^i_{\text{étale} }\)</span> are finite-dimensional. Related to Lefschetz Trace Formula (how Grothendieck thought about it).</p></li>
+<li><p>Dwork, using <span class="math inline">\(p{\hbox{-}}\)</span>adic methods. Proof here will follow from the fact that <span class="math inline">\(H^i_{\text{étale} }\)</span> are finite-dimensional. Related to the <strong>Lefschetz Trace Formula</strong>, and is how Grothendieck thought about it.</p></li>
 <li><p>Grothendieck, follows from some version of Poincaré duality.</p></li>
 <li><p>(and 4) Deligne.</p></li>
 </ol>
+</div>
 <h3 id="euler-product">Euler Product</h3>
 <p>Let <span class="math inline">\({\left\lvert {X} \right\rvert}\)</span> denote the closed points of <span class="math inline">\(X\)</span>, then there is an Euler product: <span class="math display">\[\begin{align*}   \zeta_X(q^{-n} t^{-1}) = \pm q^{nE \over 2} t^E \zeta_X(t) &amp;= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp\qty{t^{\deg (x)} + {t^{2\deg (x)} \over 2} + \cdots} \\ &amp;= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp\qty{-\log(1-t^{\deg(x)})} \\ &amp;= \prod_{x\in {\left\lvert {X} \right\rvert}} {1 \over 1 - t^{\deg(x)}} .\end{align*}\]</span></p>
 <div class="exercise">
@@ -288,19 +278,15 @@
 <p>For <span class="math inline">\(X\)</span> a smooth proper curve over <span class="math inline">\({\mathbb{F}}_q\)</span>, <span class="math inline">\(\zeta_X(t)\)</span> is rational.</p>
 </div>
 <div class="proof">
-<p>Claim: there is a set map <span class="math display">\[\begin{align*}   \operatorname{Sym}^n X &amp;\to {\operatorname{Pic}}^n X \\ D &amp;\mapsto {\mathcal{O}}(D) .\end{align*}\]</span></p>
-<blockquote>
-<p>Here the divisor is an <span class="math inline">\(n{\hbox{-}}\)</span>tuple of points.</p>
-</blockquote>
+<div class="claim">
+<p>There is a set map <span class="math display">\[\begin{align*}   \operatorname{Sym}^n X &amp;\to {\operatorname{Pic}}^n X \\ D &amp;\mapsto {\mathcal{O}}(D) ,\end{align*}\]</span> where here the divisor is an <span class="math inline">\(n{\hbox{-}}\)</span>tuple of points.</p>
+</div>
 <p>What are the fibers over a line bundle <span class="math inline">\({\mathcal{O}}(D)\)</span>? A linear system, i.e. the projectivization of global sections <span class="math inline">\({\mathbb{P}}\Gamma(X, {\mathcal{O}}(D))\)</span>. What is the expected dimension? To compute the dimension of the space of line bundles on a curve, use Riemann-Roch: <span class="math display">\[\begin{align*}   \dim {\mathbb{P}}\Gamma(X, {\mathcal{O}}(D)) = \deg(D) + 1 - g + \dim H^1(X, {\mathcal{O}}(D)) - 1 .\end{align*}\]</span> where the last <span class="math inline">\(-1\)</span> comes from the fact that this is a projective space.</p>
-<p>Claim: if <span class="math inline">\(\deg(D) = 2g-2\)</span>, then <span class="math inline">\(H^1(X, {\mathcal{O}}(D)) = 0\)</span>.</p>
-<p>This is because it’s dual to <span class="math inline">\(H^0(X, {\mathcal{O}}(K-D))^\vee\)</span>, but this has negative degree and a line bundle of negative degree can never have sections.</p>
-<blockquote>
-<p>Note: should check to make sure you know why this is true!</p>
-</blockquote>
-<p>Thus the fibers are isomorphic to <span class="math inline">\({\mathbb{P}}^{n-g}\)</span> for <span class="math inline">\(n&gt;2g-2\)</span>. Now make a reduction (exercise: justify why):</p>
-<p>Wlog assume <span class="math inline">\(X({\mathbb{F}}_q) \neq \emptyset\)</span>. In this case, <span class="math inline">\({\operatorname{Pic}}^n(X) \cong {\operatorname{Pic}}^{n+1}(X)\)</span> for all <span class="math inline">\(n\)</span>, since you can take <span class="math inline">\({\mathcal{O}}(P)\)</span> for <span class="math inline">\(P\)</span> a point, a degree 1 line bundle, and tensor with it. It’s an isomorphism because you can tensor with the dual bundle to go back.</p>
-<p>Thus for all <span class="math inline">\(n&gt;2g-2\)</span>, <span class="math display">\[\begin{align*}   {\left\lvert {\operatorname{Sym}^n(X)({\mathbb{F}}_q)} \right\rvert}  = {\left\lvert {{\mathbb{P}}^{n-g}({\mathbb{F}}_q)} \right\rvert} \cdot {\left\lvert {{\operatorname{Pic}}^n(X)({\mathbb{F}}_q)} \right\rvert} = {\left\lvert {{\mathbb{P}}^{n-g}({\mathbb{F}}_q)} \right\rvert} \cdot {\left\lvert {{\operatorname{Pic}}^0(X)({\mathbb{F}}_q)} \right\rvert} .\end{align*}\]</span></p>
+<div class="claim">
+<p>If <span class="math inline">\(\deg(D) = 2g-2\)</span>, then <span class="math inline">\(H^1(X, {\mathcal{O}}(D)) = 0\)</span>.</p>
+</div>
+<p>This is because it’s dual to <span class="math inline">\(H^0(X, {\mathcal{O}}(K-D))^\vee\)</span>, but this has negative degree and a line bundle of negative degree can never have sections.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>Thus the fibers are isomorphic to <span class="math inline">\({\mathbb{P}}^{n-g}\)</span> for <span class="math inline">\(n&gt;2g-2\)</span>. Now make a reduction<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and without loss of generality, assume <span class="math inline">\(X({\mathbb{F}}_q) \neq \emptyset\)</span>. In this case, <span class="math inline">\({\operatorname{Pic}}^n(X) \cong {\operatorname{Pic}}^{n+1}(X)\)</span> for all <span class="math inline">\(n\)</span>, since you can take <span class="math inline">\({\mathcal{O}}(P)\)</span> for <span class="math inline">\(P\)</span> a point, a degree 1 line bundle, and tensor with it. It’s an isomorphism because you can tensor with the dual bundle to go back. Thus for all <span class="math inline">\(n&gt;2g-2\)</span>, <span class="math display">\[\begin{align*}   {\left\lvert {\operatorname{Sym}^n(X)({\mathbb{F}}_q)} \right\rvert}  = {\left\lvert {{\mathbb{P}}^{n-g}({\mathbb{F}}_q)} \right\rvert} \cdot {\left\lvert {{\operatorname{Pic}}^n(X)({\mathbb{F}}_q)} \right\rvert} = {\left\lvert {{\mathbb{P}}^{n-g}({\mathbb{F}}_q)} \right\rvert} \cdot {\left\lvert {{\operatorname{Pic}}^0(X)({\mathbb{F}}_q)} \right\rvert} .\end{align*}\]</span></p>
 <p>Thus <span class="math inline">\(\zeta_X(t)\)</span> is a polynomial plus <span class="math inline">\(\sum_{n&gt;2g-2} {\left\lvert {{\operatorname{Pic}}^n(X)({\mathbb{F}}_q)} \right\rvert}\qty{1+q+q^2+\cdots+q^{n-g}}t^n\)</span>.</p>
 <div class="exercise">
 <p>Show that this is a rational function using the formula for a geometric series.</p>
@@ -316,22 +302,16 @@
 <div class="theorem" title="Dwork">
 <p>Suppose <span class="math inline">\(X/{\mathbb{F}}_q\)</span> is any variety, then <span class="math inline">\(\zeta_X(t)\)</span> is rational function.</p>
 </div>
-<blockquote>
-<p>Roughly known to Weil, hinted at in original paper</p>
-</blockquote>
+<p>This was roughly known to Weil, hinted at in original paper</p>
 <div class="proof" title="Grothendieck">
-<p>Idea: take Frobenius (intentionally vague, arithmetic vs geometric vs …) <span class="math inline">\(F:X\to X\)</span>, then <span class="math inline">\(X({\mathbb{F}}_q)\)</span> are the fixed points of <span class="math inline">\(F\)</span> acting on <span class="math inline">\(X_{\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{F}}\mkern-1.5mu}\mkern 1.5mu_q}\)</span>, and the <span class="math inline">\({\mathbb{F}}_{q^n}\)</span> points are the fixed points of <span class="math inline">\(F^n\)</span>.</p>
-<p>Uses the Lefschetz fixed point formula, which will say for <span class="math inline">\(\ell\neq \operatorname{ch}({\mathbb{F}}_q)\)</span>, <span class="math display">\[\begin{align*}   {\left\lvert {X({\mathbb{F}}_{q^n})} \right\rvert} = \sum_{i=0}^{2\dim(X)} (-1)^i \operatorname{Tr}(F^n) H^i_c(X_{{\mathbb{F}}_q}, {\mathbb{Q}}_\ell) .\end{align*}\]</span></p>
-<blockquote>
-<p>Here <span class="math inline">\(H^i_c\)</span> is compactly supported cohomology, we’ll define this later in the course.</p>
-</blockquote>
+<p>Idea: take Frobenius (intentionally vague, arithmetic vs geometric vs …) <span class="math inline">\(F:X\to X\)</span>, then <span class="math inline">\(X({\mathbb{F}}_q)\)</span> are the fixed points of <span class="math inline">\(F\)</span> acting on <span class="math inline">\(X_{\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{F}}\mkern-1.5mu}\mkern 1.5mu_q}\)</span>, and the <span class="math inline">\({\mathbb{F}}_{q^n}\)</span> points are the fixed points of <span class="math inline">\(F^n\)</span>. Uses the Lefschetz fixed point formula, which will say for <span class="math inline">\(\ell\neq \operatorname{ch}({\mathbb{F}}_q)\)</span>,<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p><span class="math display">\[\begin{align*}   {\left\lvert {X({\mathbb{F}}_{q^n})} \right\rvert} = \sum_{i=0}^{2\dim(X)} (-1)^i \operatorname{Tr}(F^n) H^i_c(X_{{\mathbb{F}}_q}, {\mathbb{Q}}_\ell) .\end{align*}\]</span></p>
 <div class="lemma">
 <p><span class="math display">\[\begin{align*}   \exp\qty{\sum {\operatorname{Tr}(F^n) \over n}t^n  }\quad\text{is rational} .\end{align*}\]</span></p>
 </div>
 <p>This lemma implies the result, because if you plug the trace formula into the zeta function, you’ll get an alternating product <span class="math inline">\(f \cdots {1\over g} \cdot h \cdot {1\over j} \cdots\)</span> of functions of the form in the lemma, which is still rational.</p>
 <div class="proof" title="Of Lemma">
-<p>It suffices to treat the case <span class="math inline">\(\dim(V) = 1\)</span>, because otherwise you can just write this as a sum of powers of eigenvalues.</p>
-<p>Then you have a scalar matrix, so you obtain <span class="math display">\[\begin{align*}   \exp\qty{ \sum {\alpha^n \over n} t^n} = \exp\qty{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t} ,\end{align*}\]</span> which is rational.</p>
+<p>It suffices to treat the case <span class="math inline">\(\dim(V) = 1\)</span>, because otherwise you can just write this as a sum of powers of eigenvalues. Then you have a scalar matrix, so you obtain <span class="math display">\[\begin{align*}   \exp\qty{ \sum {\alpha^n \over n} t^n} = \exp\qty{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t} ,\end{align*}\]</span> which is rational.</p>
 </div>
 </div>
 <p>This proves rationality, contingent on</p>
@@ -341,9 +321,7 @@
 </ol>
 <div class="exercise">
 <p>Try to figure out how Poincaré duality should give the functional equation.</p>
-<blockquote>
-<p>Hint: try the lemma on a vector space where <span class="math inline">\(F\)</span> scales a bilinear form.</p>
-</blockquote>
+<p><em>(Hint: try the lemma on a vector space where <span class="math inline">\(F\)</span> scales a bilinear form.)</em></p>
 </div>
 <div class="theorem" title="Serre, Kahler Analog">
 <p>Suppose <span class="math inline">\(X/{\mathbb{C}}\)</span> is a smooth projective variety and <span class="math inline">\([H] \in H^2(X({\mathbb{C}}), {\mathbb{C}})\)</span> is a hyperplane class (corresponds to intersection of generic hyperplane or the first Chern class of an ample line bundle).</p>
@@ -360,7 +338,7 @@
 <h2 id="review">Review</h2>
 <p>From last time: we want to prove the following theorem of Serre, a complex analog of the Weil conjectures. After this, we’ll talk about étale morphisms, the étale topology, and possibly the definition of étale cohomology.</p>
 <div class="theorem" title="Serre">
-<p>Let <span class="math inline">\(X_{/{\mathbb{C}}}\)</span> be a smooth projective variety and <span class="math inline">\([H]\in H^2(X; {\mathbb{Z}})\)</span> be a hyperplane class<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and an endomorphism <span class="math inline">\(F:X\to X\)</span> a map satisfying <span class="math inline">\(F^*[H] = q[H]\)</span> for some <span class="math inline">\(q\in {\mathbb{Z}}_{\geq 1}\)</span>. Then the eigenvalues of <span class="math inline">\(F^*\)</span> on <span class="math inline">\(H^i(X;{\mathbb{C}})\)</span> all have absolute value <span class="math inline">\(q^{i\over 2}\)</span>.</p>
+<p>Let <span class="math inline">\(X_{/{\mathbb{C}}}\)</span> be a smooth projective variety and <span class="math inline">\([H]\in H^2(X; {\mathbb{Z}})\)</span> be a hyperplane class<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> and an endomorphism <span class="math inline">\(F:X\to X\)</span> a map satisfying <span class="math inline">\(F^*[H] = q[H]\)</span> for some <span class="math inline">\(q\in {\mathbb{Z}}_{\geq 1}\)</span>. Then the eigenvalues of <span class="math inline">\(F^*\)</span> on <span class="math inline">\(H^i(X;{\mathbb{C}})\)</span> all have absolute value <span class="math inline">\(q^{i\over 2}\)</span>.</p>
 </div>
 <p>Note that the same <span class="math inline">\(q\)</span> is appearing in both parts of the theorem. Why prove this theorem? Later on, to prove the Riemann hypothesis for varieties over finite fields, we’ll prove that the Frobenius acts in this way on the étale cohomology. There is in fact a <em>reason</em> this is true, coming from some special properties of the behaviors of the cohomology of varieties which aren’t manifested in random topological spaces.</p>
 <div class="warnings">
@@ -428,7 +406,7 @@
 <div class="example" title="Example of an étale morphism">
 <ul>
 <li><p>Multiplication by <span class="math inline">\([n]\)</span> on an elliptic curve if <span class="math inline">\(n \in {\mathbb{Z}}\)</span> is invertiable in the base field.</p></li>
-<li><p>Take <span class="math inline">\({\mathbb{G}}_m = \operatorname{Spec}k[t, t^{-1}]\)</span>, and the map <span class="math display">\[\begin{align*}       {\mathbb{G}}_m &amp;\to {\mathbb{G}}_m \\      t^m &amp;\mapsfrom t     ,\end{align*}\]</span> where <span class="math inline">\(n\)</span> is prime to <span class="math inline">\(\operatorname{ch}(k)\)</span>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<li><p>Take <span class="math inline">\({\mathbb{G}}_m = \operatorname{Spec}k[t, t^{-1}]\)</span>, and the map <span class="math display">\[\begin{align*}       {\mathbb{G}}_m &amp;\to {\mathbb{G}}_m \\      t^m &amp;\mapsfrom t     ,\end{align*}\]</span> where <span class="math inline">\(n\)</span> is prime to <span class="math inline">\(\operatorname{ch}(k)\)</span>.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
 <ul>
 <li>Note that this is in fact finite étale.</li>
 </ul></li>
@@ -456,7 +434,7 @@
 <p>Note that this is finite onto its image.</p>
 </div>
 <div class="proposition" title="?">
-<p>Any open immersion is étale.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>Any open immersion is étale.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
 </div>
 <div class="example" title="An étale morphism that is not finite onto its image">
 <p>Use the fact that <span class="math inline">\({\mathbb{G}}_m\)</span> is <span class="math inline">\({\mathbb{A}}^1\setminus\left\{{\mathbf{0}}\right\}\)</span>, so take <span class="math inline">\({\mathbb{G}}_m \setminus\left\{{1}\right\}\)</span> and the map <span class="math display">\[\begin{align*}   {\mathbb{G}}_m\setminus\left\{{1}\right\} &amp;\to {\mathbb{G}}_m \\ t^2 &amp;\mapsfrom t .\end{align*}\]</span></p>
@@ -501,7 +479,7 @@
 <div class="proposition" title="Some properties of étale morphisms">
 <ol type="1">
 <li>Open immersions are étale</li>
-<li>Compositions of étale morphisms are étale<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
+<li>Compositions of étale morphisms are étale<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
 <li>Base change of étale morphisms are étale, i.e.  <code>{=tex}     \begin{tikzcd}     X \times_Y T\ar[d, &quot;\therefore \text{étale}&quot;&#39;]\ar[r] &amp; X\ar[d, &quot;\text{étale}&quot;]  \\     T\ar[r] &amp;  Y\\     \end{tikzcd}</code></li>
 <li>There is a 2 out of 3 property: If <span class="math inline">\(\phi \circ \psi\)</span> and <span class="math inline">\(\phi\)</span> are étale, then <span class="math inline">\(\psi\)</span> is étale.</li>
 </ol>
@@ -537,7 +515,7 @@
 </div>
 <div class="answer">
 <ol type="1">
-<li>As in presheaves, a notion of open sets and inclusions. (I.e., a category of open sets.)<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
+<li>As in presheaves, a notion of open sets and inclusions. (I.e., a category of open sets.)<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a><a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
 </ol>
 <p>We’d also like to make sense of the sheaf condition:</p>
 <ol start="2" type="1">
@@ -549,7 +527,7 @@
 <p>The motivation for (3) above is that for <span class="math inline">\(U, V \subseteq X\)</span>, we can form <span class="math inline">\(U\times V = U\cap V\)</span>.</p>
 </div>
 <div class="definition" title="Preliminary: Sites/Grothendieck Topologies">
-<p>A category <span class="math inline">\(\mathcal{C}\)</span> with a collection of <em>covering families</em> <span class="math inline">\(\left\{{X_\alpha \xrightarrow{f_\alpha} X ~{\text{s.t.}}~\alpha\in A}\right\}\)</span><a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> such that several axioms are satisfied.</p>
+<p>A category <span class="math inline">\(\mathcal{C}\)</span> with a collection of <em>covering families</em> <span class="math inline">\(\left\{{X_\alpha \xrightarrow{f_\alpha} X ~{\text{s.t.}}~\alpha\in A}\right\}\)</span><a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> such that several axioms are satisfied.</p>
 </div>
 <p>We’ll discuss the axioms next time, they just capture the notion of what a cover of a topological space should look like.</p>
 <div class="warnings">
@@ -576,8 +554,8 @@
 <p>A <strong>Grothendieck topology</strong> on <span class="math inline">\(\mathcal{C}\)</span> or a <strong>site</strong> on <span class="math inline">\(\mathcal{C}\)</span> is the data of for each <span class="math inline">\(X\in \mathrm{Ob}(\mathcal{C})\)</span> a collection of sets of morphism <span class="math inline">\(\left\{{X_\alpha \to X}\right\}\)</span> (<em>covering families</em>) satisfying</p>
 <ul>
 <li><p>Intersections exist: If <span class="math inline">\(X_\alpha\to X\)</span> appears in a covering family and <span class="math inline">\(Y\to X\)</span> is arbitrary, the fiber product <span class="math inline">\(X_\alpha\times_X Y\)</span> exists.</p></li>
-<li><p>Intersecting with a cover again yields a cover: If <span class="math inline">\(\left\{{X_\alpha\to X}\right\}\)</span> is a covering family and <span class="math inline">\(Y\to X\)</span> is arbitrary, then the covering family can be pulled back: <span class="math inline">\(\left\{{Y\times_X X_\alpha\to Y}\right\}\)</span> is again a covering family.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p></li>
-<li><p>Compositions of coverings are again coverings: If <span class="math inline">\(\left\{{X_\alpha\to X}\right\}_{\alpha}\)</span> and <span class="math inline">\(\left\{{X_{\alpha\beta} \to X_\alpha}\right\}_{\alpha,\beta}\)</span> are covering families, then you can compose, i.e. taking the set of all possible ways of composing <span class="math inline">\(\left\{{X_{\alpha\beta} \to X_\alpha \to X}\right\}\)</span> is again a covering family.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p></li>
+<li><p>Intersecting with a cover again yields a cover: If <span class="math inline">\(\left\{{X_\alpha\to X}\right\}\)</span> is a covering family and <span class="math inline">\(Y\to X\)</span> is arbitrary, then the covering family can be pulled back: <span class="math inline">\(\left\{{Y\times_X X_\alpha\to Y}\right\}\)</span> is again a covering family.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p></li>
+<li><p>Compositions of coverings are again coverings: If <span class="math inline">\(\left\{{X_\alpha\to X}\right\}_{\alpha}\)</span> and <span class="math inline">\(\left\{{X_{\alpha\beta} \to X_\alpha}\right\}_{\alpha,\beta}\)</span> are covering families, then you can compose, i.e. taking the set of all possible ways of composing <span class="math inline">\(\left\{{X_{\alpha\beta} \to X_\alpha \to X}\right\}\)</span> is again a covering family.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p></li>
 <li><p>Isomorphisms are covers: If <span class="math inline">\(X\xrightarrow{\sim_f} Y\)</span> is an isomorphism, then the singleton family <span class="math inline">\(\left\{{X\xrightarrow{f} Y}\right\}\)</span> is a covering family.</p></li>
 </ul>
 </div>
@@ -606,7 +584,7 @@
 <p>Proving this isomorphism will be an exercise, here’s an outline of why it’s true: suppose you have a cover of <span class="math inline">\(X\)</span> in this category, i.e. a family of local analytic isomorphisms. Given any of these, you can cover by subsets for which these are isomorphisms onto their images.</p>
 </div>
 <div class="example" title="The fppf topology">
-<p>This stands for <strong>faithfully flat and finite presentation</strong>.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> There are small and big sites here: we define <span class="math inline">\(X_{{\mathrm{fppf}}}\)</span> whose objects are fppf morphism <span class="math inline">\(Y\to X\)</span>, with morphisms as triangular diagrams of morphisms over <span class="math inline">\(X\)</span>, and covers are the usual covers. Note that replacing fppf morphisms with flat morphisms would yield an equivalent definition here.</p>
+<p>This stands for <strong>faithfully flat and finite presentation</strong>.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> There are small and big sites here: we define <span class="math inline">\(X_{{\mathrm{fppf}}}\)</span> whose objects are fppf morphism <span class="math inline">\(Y\to X\)</span>, with morphisms as triangular diagrams of morphisms over <span class="math inline">\(X\)</span>, and covers are the usual covers. Note that replacing fppf morphisms with flat morphisms would yield an equivalent definition here.</p>
 </div>
 <div class="example" title="?">
 <p>If <span class="math inline">\(X\)</span> is a scheme, then the small Zariski topology is <span class="math inline">\(X_{\mathrm{zar}}\)</span> whose objects are <span class="math inline">\({\operatorname{Op}}(X^{\mathrm{top}})\)</span>, the Grothendieck topology of the corresponding topological space, and we take the usual notion of covers.</p>
@@ -676,7 +654,7 @@
 <p>Some things we still need to get to:</p>
 <ul>
 <li>A proof that <span class="math inline">\(\underline{zlnz}\)</span> is actually a sheaf,</li>
-<li>A proof that the category of sheaves on the big étale site <span class="math inline">\(X_\mathrm{\text{Ét}}\)</span><a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> with values in <span class="math inline">\(\mathbf{Ab}\)</span> is abelian and has enough injectives.</li>
+<li>A proof that the category of sheaves on the big étale site <span class="math inline">\(X_\mathrm{\text{Ét}}\)</span><a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> with values in <span class="math inline">\(\mathbf{Ab}\)</span> is abelian and has enough injectives.</li>
 </ul>
 <h2 id="étale-cohomology-a-preliminary-definition">Étale Cohomology: A Preliminary Definition</h2>
 <div class="definition" title="Imprecise: étale cohomology">
@@ -717,7 +695,7 @@
 </div>
 <h2 id="preview-morphisms-of-sites">Preview: Morphisms of Sites</h2>
 <div class="definition" title="Morphisms of Sites">
-<p>Suppose <span class="math inline">\(T_1, T_2\)</span> are sites (categories with covering families), then a continuous map <span class="math inline">\(f:T_1 \to T_2\)</span> is a functor <span class="math inline">\(T_2 \to T_1\)</span><a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> that preserves fiber products and sends covering families to covering families.</p>
+<p>Suppose <span class="math inline">\(T_1, T_2\)</span> are sites (categories with covering families), then a continuous map <span class="math inline">\(f:T_1 \to T_2\)</span> is a functor <span class="math inline">\(T_2 \to T_1\)</span><a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> that preserves fiber products and sends covering families to covering families.</p>
 </div>
 <div class="example" title="?">
 <p>A continuous map <span class="math inline">\(f\in {\operatorname{Hom}}_{\text{Top}}(X, Y)\)</span> induces a map <span class="math display">\[\begin{align*}   {\operatorname{Op}}(Y) &amp;\to {\operatorname{Op}}(X) \\ U &amp;\mapsto f^{-1}(U) .\end{align*}\]</span></p>
@@ -794,7 +772,7 @@
 <p>Suppose <span class="math inline">\(U\xrightarrow{f}X\)</span> is a morphisms, then <strong>descent data</strong> for a quasicoherent sheaf on <span class="math inline">\(U/X\)</span> is the following:</p>
 <ol type="1">
 <li>A sheaf <span class="math inline">\(\mathcal{F}\in {\mathrm{QCoh}}(U)\)</span>.</li>
-<li>Gluing data: If we take the fiber product of <span class="math inline">\(U\)</span> with itself, mapping to <span class="math inline">\(U\)</span> under 2 different projections<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>,</li>
+<li>Gluing data: If we take the fiber product of <span class="math inline">\(U\)</span> with itself, mapping to <span class="math inline">\(U\)</span> under 2 different projections<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>,</li>
 </ol>
 <p><p style="text-align:center;"> <img class="tikz" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQuMTA2cHQiIGhlaWdodD0iNDcuNjI3cHQiIHZpZXdCb3g9IjAgMCA0NC4xMDYgNDcuNjI3IiB2ZXJzaW9uPSIxLjEiPgo8ZGVmcz4KPGc+CjxzeW1ib2wgb3ZlcmZsb3c9InZpc2libGUiIGlkPSJnbHlwaDAtMCI+CjxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTsiIGQ9IiIvPgo8L3N5bWJvbD4KPHN5bWJvbCBvdmVyZmxvdz0idmlzaWJsZSIgaWQ9ImdseXBoMC0xIj4KPHBhdGggc3R5bGU9InN0cm9rZTpub25lOyIgZD0iTSA2LjMyODEyNSAtNS43NjU2MjUgQyA2LjQzNzUgLTYuMTcxODc1IDYuNjA5Mzc1IC02LjQ2ODc1IDcuNDA2MjUgLTYuNSBDIDcuNDUzMTI1IC02LjUgNy41NzgxMjUgLTYuNTE1NjI1IDcuNTc4MTI1IC02LjcwMzEyNSBDIDcuNTc4MTI1IC02LjcwMzEyNSA3LjU3ODEyNSAtNi44MTI1IDcuNDUzMTI1IC02LjgxMjUgQyA3LjEyNSAtNi44MTI1IDYuNzY1NjI1IC02Ljc4MTI1IDYuNDM3NSAtNi43ODEyNSBDIDYuMDkzNzUgLTYuNzgxMjUgNS43MTg3NSAtNi44MTI1IDUuMzkwNjI1IC02LjgxMjUgQyA1LjMyODEyNSAtNi44MTI1IDUuMjE4NzUgLTYuODEyNSA1LjIxODc1IC02LjYwOTM3NSBDIDUuMjE4NzUgLTYuNSA1LjMxMjUgLTYuNSA1LjM5MDYyNSAtNi41IEMgNS45Njg3NSAtNi40ODQzNzUgNi4wNzgxMjUgLTYuMjgxMjUgNi4wNzgxMjUgLTYuMDYyNSBDIDYuMDc4MTI1IC02LjAzMTI1IDYuMDQ2ODc1IC01Ljg3NSA2LjA0Njg3NSAtNS44NTkzNzUgTCA1LjE0MDYyNSAtMi4yOTY4NzUgQyA0LjgxMjUgLTAuOTUzMTI1IDMuNjU2MjUgLTAuMDkzNzUgMi42NTYyNSAtMC4wOTM3NSBDIDEuOTg0Mzc1IC0wLjA5Mzc1IDEuNDUzMTI1IC0wLjUzMTI1IDEuNDUzMTI1IC0xLjM5MDYyNSBDIDEuNDUzMTI1IC0xLjQwNjI1IDEuNDUzMTI1IC0xLjcxODc1IDEuNTYyNSAtMi4xNTYyNSBMIDIuNTE1NjI1IC02LjA0Njg3NSBDIDIuNjA5Mzc1IC02LjQwNjI1IDIuNjI1IC02LjUgMy4zNTkzNzUgLTYuNSBDIDMuNjI1IC02LjUgMy43MDMxMjUgLTYuNSAzLjcwMzEyNSAtNi43MDMxMjUgQyAzLjcwMzEyNSAtNi44MTI1IDMuNTkzNzUgLTYuODEyNSAzLjU2MjUgLTYuODEyNSBDIDMuMjgxMjUgLTYuODEyNSAyLjU2MjUgLTYuNzgxMjUgMi4yODEyNSAtNi43ODEyNSBDIDIgLTYuNzgxMjUgMS4yODEyNSAtNi44MTI1IDEgLTYuODEyNSBDIDAuOTIxODc1IC02LjgxMjUgMC44MTI1IC02LjgxMjUgMC44MTI1IC02LjYwOTM3NSBDIDAuODEyNSAtNi41IDAuODkwNjI1IC02LjUgMS4wOTM3NSAtNi41IEMgMS4xMDkzNzUgLTYuNSAxLjI5Njg3NSAtNi41IDEuNDY4NzUgLTYuNDg0Mzc1IEMgMS42NDA2MjUgLTYuNDUzMTI1IDEuNzM0Mzc1IC02LjQ1MzEyNSAxLjczNDM3NSAtNi4zMTI1IEMgMS43MzQzNzUgLTYuMjY1NjI1IDEuNjI1IC01Ljg0Mzc1IDEuNTYyNSAtNS42MDkzNzUgTCAxLjM0Mzc1IC00LjczNDM3NSBDIDEuMjUgLTQuMzQzNzUgMC43ODEyNSAtMi40Njg3NSAwLjczNDM3NSAtMi4yNjU2MjUgQyAwLjY3MTg3NSAtMiAwLjY3MTg3NSAtMS44NDM3NSAwLjY3MTg3NSAtMS42ODc1IEMgMC42NzE4NzUgLTAuNDg0Mzc1IDEuNTc4MTI1IDAuMjE4NzUgMi42MjUgMC4yMTg3NSBDIDMuODc1IDAuMjE4NzUgNS4xMDkzNzUgLTAuOTA2MjUgNS40Mzc1IC0yLjIxODc1IFogTSA2LjMyODEyNSAtNS43NjU2MjUgIi8+Cjwvc3ltYm9sPgo8c3ltYm9sIG92ZXJmbG93PSJ2aXNpYmxlIiBpZD0iZ2x5cGgxLTAiPgo8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7IiBkPSIiLz4KPC9zeW1ib2w+CjxzeW1ib2wgb3ZlcmZsb3c9InZpc2libGUiIGlkPSJnbHlwaDEtMSI+CjxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTsiIGQ9Ik0gMy44NzUgLTIuNzY1NjI1IEwgMS44OTA2MjUgLTQuNzUgQyAxLjc2NTYyNSAtNC44NzUgMS43NSAtNC44OTA2MjUgMS42NzE4NzUgLTQuODkwNjI1IEMgMS41NjI1IC00Ljg5MDYyNSAxLjQ2ODc1IC00LjgxMjUgMS40Njg3NSAtNC42ODc1IEMgMS40Njg3NSAtNC42MjUgMS40ODQzNzUgLTQuNjA5Mzc1IDEuNTkzNzUgLTQuNSBMIDMuNTkzNzUgLTIuNSBMIDEuNTkzNzUgLTAuNDg0Mzc1IEMgMS40ODQzNzUgLTAuMzc1IDEuNDY4NzUgLTAuMzU5Mzc1IDEuNDY4NzUgLTAuMjk2ODc1IEMgMS40Njg3NSAtMC4xNzE4NzUgMS41NjI1IC0wLjA5Mzc1IDEuNjcxODc1IC0wLjA5Mzc1IEMgMS43NSAtMC4wOTM3NSAxLjc2NTYyNSAtMC4xMDkzNzUgMS44OTA2MjUgLTAuMjM0Mzc1IEwgMy44NzUgLTIuMjE4NzUgTCA1LjkzNzUgLTAuMTU2MjUgQyA1Ljk1MzEyNSAtMC4xNDA2MjUgNi4wMTU2MjUgLTAuMDkzNzUgNi4wNzgxMjUgLTAuMDkzNzUgQyA2LjIwMzEyNSAtMC4wOTM3NSA2LjI4MTI1IC0wLjE3MTg3NSA2LjI4MTI1IC0wLjI5Njg3NSBDIDYuMjgxMjUgLTAuMzEyNSA2LjI4MTI1IC0wLjM0Mzc1IDYuMjUgLTAuNDA2MjUgQyA2LjIzNDM3NSAtMC40MjE4NzUgNC42NTYyNSAtMS45ODQzNzUgNC4xNTYyNSAtMi41IEwgNS45ODQzNzUgLTQuMzEyNSBDIDYuMDMxMjUgLTQuMzc1IDYuMTg3NSAtNC41IDYuMjM0Mzc1IC00LjU2MjUgQyA2LjIzNDM3NSAtNC41NzgxMjUgNi4yODEyNSAtNC42MjUgNi4yODEyNSAtNC42ODc1IEMgNi4yODEyNSAtNC44MTI1IDYuMjAzMTI1IC00Ljg5MDYyNSA2LjA3ODEyNSAtNC44OTA2MjUgQyA2IC00Ljg5MDYyNSA1Ljk2ODc1IC00Ljg1OTM3NSA1Ljg1OTM3NSAtNC43NSBaIE0gMy44NzUgLTIuNzY1NjI1ICIvPgo8L3N5bWJvbD4KPHN5bWJvbCBvdmVyZmxvdz0idmlzaWJsZSIgaWQ9ImdseXBoMi0wIj4KPHBhdGggc3R5bGU9InN0cm9rZTpub25lOyIgZD0iIi8+Cjwvc3ltYm9sPgo8c3ltYm9sIG92ZXJmbG93PSJ2aXNpYmxlIiBpZD0iZ2x5cGgyLTEiPgo8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7IiBkPSJNIDMuODc1IC0yLjY1NjI1IEwgNC41MzEyNSAtMy4zMjgxMjUgQyA1LjQyMTg3NSAtNC4yMDMxMjUgNS43MDMxMjUgLTQuNDY4NzUgNi4zMjgxMjUgLTQuNTE1NjI1IEMgNi40MjE4NzUgLTQuNTE1NjI1IDYuNSAtNC41MTU2MjUgNi41IC00LjY1NjI1IEMgNi41IC00LjczNDM3NSA2LjQyMTg3NSAtNC43NjU2MjUgNi40MDYyNSAtNC43NjU2MjUgQyA2LjIwMzEyNSAtNC43NjU2MjUgNS45NTMxMjUgLTQuNzM0Mzc1IDUuNzUgLTQuNzM0Mzc1IEMgNS41NjI1IC00LjczNDM3NSA1LjEyNSAtNC43NjU2MjUgNC45Mzc1IC00Ljc2NTYyNSBDIDQuODkwNjI1IC00Ljc2NTYyNSA0Ljc5Njg3NSAtNC43MzQzNzUgNC43OTY4NzUgLTQuNjA5Mzc1IEMgNC43OTY4NzUgLTQuNTkzNzUgNC43OTY4NzUgLTQuNTE1NjI1IDQuOTA2MjUgLTQuNTE1NjI1IEMgNC45Njg3NSAtNC41IDUuMTQwNjI1IC00LjQ4NDM3NSA1LjE0MDYyNSAtNC4zMjgxMjUgQyA1LjE0MDYyNSAtNC4yMzQzNzUgNS4wMzEyNSAtNC4xMjUgNC45Njg3NSAtNC4wNDY4NzUgQyA0LjkwNjI1IC00IDQuMDMxMjUgLTMuMTQwNjI1IDMuNzY1NjI1IC0yLjg3NSBMIDMuMDYyNSAtNC4yMzQzNzUgQyAzLjA0Njg3NSAtNC4yNjU2MjUgMy4wMzEyNSAtNC4zMTI1IDMuMDMxMjUgLTQuMzI4MTI1IEMgMy4wMzEyNSAtNC4zOTA2MjUgMy4xNTYyNSAtNC41IDMuNDA2MjUgLTQuNTE1NjI1IEMgMy40NTMxMjUgLTQuNTE1NjI1IDMuNTQ2ODc1IC00LjUxNTYyNSAzLjU0Njg3NSAtNC42NTYyNSBDIDMuNTQ2ODc1IC00LjY3MTg3NSAzLjU0Njg3NSAtNC43NjU2MjUgMy40MjE4NzUgLTQuNzY1NjI1IEMgMy4yODEyNSAtNC43NjU2MjUgMy4xMDkzNzUgLTQuNzM0Mzc1IDIuOTY4NzUgLTQuNzM0Mzc1IEMgMi44MTI1IC00LjczNDM3NSAyLjY1NjI1IC00LjczNDM3NSAyLjUxNTYyNSAtNC43MzQzNzUgQyAyLjM5MDYyNSAtNC43MzQzNzUgMi4yMTg3NSAtNC43MzQzNzUgMi4wOTM3NSAtNC43MzQzNzUgQyAxLjk4NDM3NSAtNC43NSAxLjgyODEyNSAtNC43NjU2MjUgMS43MTg3NSAtNC43NjU2MjUgQyAxLjY4NzUgLTQuNzY1NjI1IDEuNTc4MTI1IC00Ljc2NTYyNSAxLjU3ODEyNSAtNC42MDkzNzUgQyAxLjU3ODEyNSAtNC41MTU2MjUgMS42NzE4NzUgLTQuNTE1NjI1IDEuNzgxMjUgLTQuNTE1NjI1IEMgMi4xODc1IC00LjUxNTYyNSAyLjIxODc1IC00LjQzNzUgMi4yODEyNSAtNC4yOTY4NzUgTCAzLjI2NTYyNSAtMi4zNzUgTCAyLjg3NSAtMS45ODQzNzUgQyAyLjczNDM3NSAtMS44NTkzNzUgMi40MDYyNSAtMS41NDY4NzUgMi4yODEyNSAtMS40MjE4NzUgQyAxLjQzNzUgLTAuNTc4MTI1IDEuMTU2MjUgLTAuMjgxMjUgMC41MTU2MjUgLTAuMjUgQyAwLjQyMTg3NSAtMC4yNSAwLjM0Mzc1IC0wLjI1IDAuMzQzNzUgLTAuMDkzNzUgQyAwLjM0Mzc1IC0wLjA2MjUgMC4zNzUgMCAwLjQ1MzEyNSAwIEMgMC42NDA2MjUgMCAwLjg5MDYyNSAtMC4wMzEyNSAxLjA5Mzc1IC0wLjAzMTI1IEMgMS4yMTg3NSAtMC4wMzEyNSAxLjM5MDYyNSAtMC4wMzEyNSAxLjUgLTAuMDE1NjI1IEMgMS42MjUgLTAuMDE1NjI1IDEuNzgxMjUgMCAxLjkwNjI1IDAgQyAxLjkzNzUgMCAyLjA0Njg3NSAwIDIuMDQ2ODc1IC0wLjE0MDYyNSBDIDIuMDQ2ODc1IC0wLjI1IDEuOTY4NzUgLTAuMjUgMS45MjE4NzUgLTAuMjUgQyAxLjg1OTM3NSAtMC4yNjU2MjUgMS43MDMxMjUgLTAuMjgxMjUgMS43MDMxMjUgLTAuNDIxODc1IEMgMS43MDMxMjUgLTAuNTMxMjUgMS43OTY4NzUgLTAuNjI1IDEuOTUzMTI1IC0wLjc4MTI1IEwgMy4zNTkzNzUgLTIuMTcxODc1IEwgNC4yMDMxMjUgLTAuNTE1NjI1IEMgNC4yNSAtMC40NTMxMjUgNC4yNSAtMC40Mzc1IDQuMjUgLTAuNDIxODc1IEMgNC4yNSAtMC4zOTA2MjUgNC4xMjUgLTAuMjY1NjI1IDMuODc1IC0wLjI1IEMgMy44MTI1IC0wLjI1IDMuNzM0Mzc1IC0wLjI1IDMuNzM0Mzc1IC0wLjA5Mzc1IEMgMy43MzQzNzUgLTAuMDkzNzUgMy43MzQzNzUgMCAzLjg0Mzc1IDAgQyA0IDAgNC4xNzE4NzUgLTAuMDE1NjI1IDQuMzEyNSAtMC4wMTU2MjUgQyA0LjQ1MzEyNSAtMC4wMTU2MjUgNC42MjUgLTAuMDMxMjUgNC43NjU2MjUgLTAuMDMxMjUgQyA0Ljg5MDYyNSAtMC4wMzEyNSA1LjA0Njg3NSAtMC4wMzEyNSA1LjE3MTg3NSAtMC4wMTU2MjUgQyA1LjI5Njg3NSAtMC4wMTU2MjUgNS40Mzc1IDAgNS41NDY4NzUgMCBDIDUuNTkzNzUgMCA1LjcwMzEyNSAwIDUuNzAzMTI1IC0wLjE1NjI1IEMgNS43MDMxMjUgLTAuMjUgNS42MDkzNzUgLTAuMjUgNS41IC0wLjI1IEMgNS4wOTM3NSAtMC4yNSA1LjA2MjUgLTAuMzI4MTI1IDUgLTAuNDUzMTI1IFogTSAzLjg3NSAtMi42NTYyNSAiLz4KPC9zeW1ib2w+CjxzeW1ib2wgb3ZlcmZsb3c9InZpc2libGUiIGlkPSJnbHlwaDItMiI+CjxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTsiIGQ9Ik0gMi4xNzE4NzUgLTIuNTMxMjUgTCAzIC0yLjUzMTI1IEMgMi44OTA2MjUgLTIuMTA5Mzc1IDIuNzM0Mzc1IC0xLjQ4NDM3NSAyLjczNDM3NSAtMC45MjE4NzUgQyAyLjczNDM3NSAtMC42NDA2MjUgMi43ODEyNSAtMC40NTMxMjUgMi44MTI1IC0wLjMxMjUgQyAyLjkyMTg3NSAwLjA0Njg3NSAzLjAxNTYyNSAwLjA2MjUgMy4xMjUgMC4wNjI1IEMgMy4yOTY4NzUgMC4wNjI1IDMuNDUzMTI1IC0wLjA3ODEyNSAzLjQ1MzEyNSAtMC4yNSBDIDMuNDUzMTI1IC0wLjI5Njg3NSAzLjQzNzUgLTAuMzI4MTI1IDMuNDA2MjUgLTAuMzkwNjI1IEMgMy4yNjU2MjUgLTAuNjU2MjUgMy4xNDA2MjUgLTEuMDQ2ODc1IDMuMTQwNjI1IC0xLjYyNSBDIDMuMTQwNjI1IC0xLjc1IDMuMTQwNjI1IC0yLjAzMTI1IDMuMjM0Mzc1IC0yLjUzMTI1IEwgNC4xMDkzNzUgLTIuNTMxMjUgQyA0LjIzNDM3NSAtMi41MzEyNSA0LjI5Njg3NSAtMi41MzEyNSA0LjM3NSAtMi41NzgxMjUgQyA0LjQ2ODc1IC0yLjY1NjI1IDQuNDg0Mzc1IC0yLjc2NTYyNSA0LjQ4NDM3NSAtMi43OTY4NzUgQyA0LjQ4NDM3NSAtMyA0LjMxMjUgLTMgNC4xODc1IC0zIEwgMS41NjI1IC0zIEMgMS4yODEyNSAtMyAxLjA3ODEyNSAtMi45Mzc1IDAuNzY1NjI1IC0yLjY0MDYyNSBDIDAuNTc4MTI1IC0yLjQ4NDM3NSAwLjMxMjUgLTIuMTA5Mzc1IDAuMzEyNSAtMi4wNDY4NzUgQyAwLjMxMjUgLTEuOTY4NzUgMC40MDYyNSAtMS45Njg3NSAwLjQzNzUgLTEuOTY4NzUgQyAwLjUxNTYyNSAtMS45Njg3NSAwLjUxNTYyNSAtMS45ODQzNzUgMC41NjI1IC0yLjA0Njg3NSBDIDAuOTA2MjUgLTIuNTMxMjUgMS4zNDM3NSAtMi41MzEyNSAxLjUgLTIuNTMxMjUgTCAxLjkyMTg3NSAtMi41MzEyNSBDIDEuNzAzMTI1IC0xLjc2NTYyNSAxLjMyODEyNSAtMC45Mzc1IDEuMTI1IC0wLjUxNTYyNSBDIDEuMDc4MTI1IC0wLjQzNzUgMS4wMTU2MjUgLTAuMjgxMjUgMC45ODQzNzUgLTAuMjY1NjI1IEMgMC45ODQzNzUgLTAuMjM0Mzc1IDAuOTY4NzUgLTAuMjAzMTI1IDAuOTY4NzUgLTAuMTU2MjUgQyAwLjk2ODc1IC0wLjA0Njg3NSAxLjA0Njg3NSAwLjA2MjUgMS4yMTg3NSAwLjA2MjUgQyAxLjQ4NDM3NSAwLjA2MjUgMS41NjI1IC0wLjI1IDEuNzM0Mzc1IC0wLjg3NSBaIE0gMi4xNzE4NzUgLTIuNTMxMjUgIi8+Cjwvc3ltYm9sPgo8c3ltYm9sIG92ZXJmbG93PSJ2aXNpYmxlIiBpZD0iZ2x5cGgzLTAiPgo8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7IiBkPSIiLz4KPC9zeW1ib2w+CjxzeW1ib2wgb3ZlcmZsb3c9InZpc2libGUiIGlkPSJnbHlwaDMtMSI+CjxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTsiIGQ9Ik0gMS45ODQzNzUgLTMuMTcxODc1IEMgMS45ODQzNzUgLTMuMzEyNSAxLjk2ODc1IC0zLjMxMjUgMS43OTY4NzUgLTMuMzEyNSBDIDEuNDUzMTI1IC0zIDAuODkwNjI1IC0zIDAuNzk2ODc1IC0zIEwgMC43MTg3NSAtMyBMIDAuNzE4NzUgLTIuNzgxMjUgTCAwLjc5Njg3NSAtMi43ODEyNSBDIDAuOTA2MjUgLTIuNzgxMjUgMS4yMzQzNzUgLTIuNzk2ODc1IDEuNTMxMjUgLTIuOTIxODc1IEwgMS41MzEyNSAtMC40MjE4NzUgQyAxLjUzMTI1IC0wLjI4MTI1IDEuNTMxMjUgLTAuMjE4NzUgMSAtMC4yMTg3NSBMIDAuNzUgLTAuMjE4NzUgTCAwLjc1IDAgQyAxLjAxNTYyNSAtMC4wMTU2MjUgMS40Njg3NSAtMC4wMTU2MjUgMS43NSAtMC4wMTU2MjUgQyAyLjA0Njg3NSAtMC4wMTU2MjUgMi40ODQzNzUgLTAuMDE1NjI1IDIuNzY1NjI1IDAgTCAyLjc2NTYyNSAtMC4yMTg3NSBMIDIuNTE1NjI1IC0wLjIxODc1IEMgMS45ODQzNzUgLTAuMjE4NzUgMS45ODQzNzUgLTAuMjgxMjUgMS45ODQzNzUgLTAuNDIxODc1IFogTSAxLjk4NDM3NSAtMy4xNzE4NzUgIi8+Cjwvc3ltYm9sPgo8c3ltYm9sIG92ZXJmbG93PSJ2aXNpYmxlIiBpZD0iZ2x5cGgzLTIiPgo8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7IiBkPSJNIDIuOTM3NSAtMC45Njg3NSBMIDIuNzE4NzUgLTAuOTY4NzUgQyAyLjcxODc1IC0wLjg3NSAyLjY1NjI1IC0wLjU2MjUgMi41NzgxMjUgLTAuNTE1NjI1IEMgMi41NDY4NzUgLTAuNDg0Mzc1IDIuMTI1IC0wLjQ4NDM3NSAyLjA0Njg3NSAtMC40ODQzNzUgTCAxLjA3ODEyNSAtMC40ODQzNzUgQyAxLjQwNjI1IC0wLjcxODc1IDEuNzY1NjI1IC0xIDIuMDYyNSAtMS4yMDMxMjUgQyAyLjUxNTYyNSAtMS41MTU2MjUgMi45Mzc1IC0xLjc5Njg3NSAyLjkzNzUgLTIuMzI4MTI1IEMgMi45Mzc1IC0yLjk2ODc1IDIuMzI4MTI1IC0zLjMxMjUgMS42MjUgLTMuMzEyNSBDIDAuOTUzMTI1IC0zLjMxMjUgMC40NTMxMjUgLTIuOTM3NSAwLjQ1MzEyNSAtMi40Mzc1IEMgMC40NTMxMjUgLTIuMTg3NSAwLjY3MTg3NSAtMi4xNDA2MjUgMC43NSAtMi4xNDA2MjUgQyAwLjg3NSAtMi4xNDA2MjUgMS4wMzEyNSAtMi4yMzQzNzUgMS4wMzEyNSAtMi40Mzc1IEMgMS4wMzEyNSAtMi42MDkzNzUgMC45MDYyNSAtMi43MTg3NSAwLjc1IC0yLjcxODc1IEMgMC44OTA2MjUgLTIuOTUzMTI1IDEuMTg3NSAtMy4wOTM3NSAxLjUxNTYyNSAtMy4wOTM3NSBDIDIgLTMuMDkzNzUgMi40MDYyNSAtMi44MTI1IDIuNDA2MjUgLTIuMzI4MTI1IEMgMi40MDYyNSAtMS45MDYyNSAyLjEwOTM3NSAtMS41NzgxMjUgMS43MzQzNzUgLTEuMjY1NjI1IEwgMC41MTU2MjUgLTAuMjM0Mzc1IEMgMC40Njg3NSAtMC4xODc1IDAuNDUzMTI1IC0wLjE4NzUgMC40NTMxMjUgLTAuMTU2MjUgTCAwLjQ1MzEyNSAwIEwgMi43NjU2MjUgMCBaIE0gMi45Mzc1IC0wLjk2ODc1ICIvPgo8L3N5bWJvbD4KPC9nPgo8L2RlZnM+CjxnIGlkPSJzdXJmYWNlMSI+CjxnIHN0eWxlPSJmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICA8dXNlIHhsaW5rOmhyZWY9IiNnbHlwaDAtMSIgeD0iNC4yODkiIHk9IjEwLjQ1NCIvPgo8L2c+CjxnIHN0eWxlPSJmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICA8dXNlIHhsaW5rOmhyZWY9IiNnbHlwaDEtMSIgeD0iMTQuMzkyIiB5PSIxMC40NTQiLz4KPC9nPgo8ZyBzdHlsZT0iZmlsbDpyZ2IoMCUsMCUsMCUpO2ZpbGwtb3BhY2l0eToxOyI+CiAgPHVzZSB4bGluazpocmVmPSIjZ2x5cGgyLTEiIHg9IjIyLjE0MSIgeT0iMTEuOTQ4Ii8+CjwvZz4KPGcgc3R5bGU9ImZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTsiPgogIDx1c2UgeGxpbms6aHJlZj0iI2dseXBoMC0xIiB4PSIzMS45MjgiIHk9IjEwLjQ1NCIvPgo8L2c+CjxnIHN0eWxlPSJmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICA8dXNlIHhsaW5rOmhyZWY9IiNnbHlwaDAtMSIgeD0iMTguMTA5IiB5PSI0My45ODEiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDowLjM5ODQ4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZTpyZ2IoMCUsMCUsMCUpO3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiBkPSJNIDQuNTIxMjE5IDguMDIxMDMxIEMgOC4wMTczMTIgMi4xMTQ3ODEgOC4wNzk4MTIgLTMuNTMzNjU2IDQuOTA3OTM3IC05LjE2NjQ2OSAiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDIyLjA1MywyMy44MTQpIi8+CjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMzk4NDg7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZTpyZ2IoMCUsMCUsMCUpO3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiBkPSJNIC0yLjA3MDQ5OCAyLjM5MTEwMyBDIC0xLjY5NDA2OSAwLjk1Nzc4NyAtMC44NTA5NzMgMC4yODAyNTkgMC4wMDA1MjE4MDcgMC4wMDE5NDc3IEMgLTAuODQ5NzQ4IC0wLjI3OTQwNSAtMS42OTI4ODIgLTAuOTU1NzE0IC0yLjA3MTg5NCAtMi4zOTI4NjQgIiB0cmFuc2Zvcm09Im1hdHJpeCgtMC40OTA0OCwwLjg3MTM4LDAuODcxMzgsMC40OTA0OCwyNi44NjE4NCwzMy4xNTQ4NCkiLz4KPGcgc3R5bGU9ImZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTsiPgogIDx1c2UgeGxpbms6aHJlZj0iI2dseXBoMi0yIiB4PSIzMS41ODYiIHk9IjI1LjUzNiIvPgo8L2c+CjxnIHN0eWxlPSJmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICA8dXNlIHhsaW5rOmhyZWY9IiNnbHlwaDMtMSIgeD0iMzYuMjQ1IiB5PSIyNi41MzIiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDowLjM5ODQ4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZTpyZ2IoMCUsMCUsMCUpO3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiBkPSJNIC00LjUxNzg0NCA4LjAyMTAzMSBDIC04LjAxNzg0NCAyLjExNDc4MSAtOC4wNzY0MzggLTMuNTMzNjU2IC00LjkwODQ2OSAtOS4xNjY0NjkgIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwtMSwyMi4wNTMsMjMuODE0KSIvPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDowLjM5ODQ4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgZD0iTSAtMi4wNzIxNTQgMi4zOTI0MDEgQyAtMS42OTMxNDMgMC45NTUyNTEgLTAuODUwMDA5IDAuMjc4OTQyIDAuMDAyMTc3MzkgMC4wMDA5OTM1OCBDIC0wLjg0OTMxNyAtMC4yNzczMTggLTEuNjkyNDE0IC0wLjk1NDg0NiAtMi4wNzA3NTkgLTIuMzkxNTY2ICIgdHJhbnNmb3JtPSJtYXRyaXgoMC40OTA0OCwwLjg3MTM4LDAuODcxMzgsLTAuNDkwNDgsMTcuMjQ0MTYsMzMuMTU0ODQpIi8+CjxnIHN0eWxlPSJmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICA8dXNlIHhsaW5rOmhyZWY9IiNnbHlwaDItMiIgeD0iMy45NzMiIHk9IjI1LjUzNiIvPgo8L2c+CjxnIHN0eWxlPSJmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICA8dXNlIHhsaW5rOmhyZWY9IiNnbHlwaDMtMiIgeD0iOC42MzIiIHk9IjI2LjUzMiIvPgo8L2c+CjwvZz4KPC9zdmc+Cg=="></p></p>
 <p>there are isomorphisms <span class="math display">\[\begin{align*}     \phi: \pi_1^* \mathcal{F} \xrightarrow{\sim} \pi_2^* \mathcal{F}   .\end{align*}\]</span></p>
@@ -882,19 +860,24 @@
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>Intersection with a hyperplane in projective space.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>Here we use the convention that everything is prime to zero.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>Note that we actually already checked this!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p>What do you have to check? Locally finite presentation, flat, and unramified are all preserved. The one that may be tricky is remaining unramified, a hint is to use the cotangent exact sequence for <span class="math inline">\(\Omega^1_{X/Y}\)</span>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5" role="doc-endnote"><p>Recall that a presheaf on <span class="math inline">\(X\)</span> is a contravariant functor out of the category of open sets of <span class="math inline">\(X\)</span>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6" role="doc-endnote"><p>The notion of a presheaf on <span class="math inline">\(X\)</span> doesn’t know much about the actual topology of <span class="math inline">\(X\)</span>. If two spaces have the coarsest topology, so the only opens are <span class="math inline">\(X, \emptyset\)</span>, then the categories of open sets are equivalent, and every presheaf on them will be the same.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7" role="doc-endnote"><p>How to think of this: elements in this collection cover <span class="math inline">\(X\)</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8" role="doc-endnote"><p>When <span class="math inline">\(\mathcal{C}\)</span> was the category of open sets of a space <span class="math inline">\(X\)</span>, the existence of this morphism <span class="math inline">\(Y\to X\)</span> says <span class="math inline">\(Y \subseteq X\)</span> is an open subset, and thus intersecting <span class="math inline">\(Y\)</span> with any open cover of <span class="math inline">\(X\)</span> yields an open cover of <span class="math inline">\(Y\)</span>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9" role="doc-endnote"><p>For spaces, this says if you have a cover of an open set by subsets and a cover of each of those subsets, the entire set has been covered.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10" role="doc-endnote"><p>The letters don’t precisely match up here because this comes from a French acronym.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11" role="doc-endnote"><p>Note that a sheaf on the big étale site necessarily restricts to a sheaf on the small étale site, since covers in the small site are also covers in the big site.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12" role="doc-endnote"><p>Note that this functor goes in the opposite direction of the original map.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13" role="doc-endnote"><p>If <span class="math inline">\(U\)</span> was an open cover, this would correspond to intersections of elements in the cover.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>A <strong>geometric point</strong> is a map from <span class="math inline">\(\operatorname{Spec}X\)</span> to an algebraically closed field.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Note that we’ll generalize Betti numbers so this makes sense in general.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>You should check to make sure you know why this is true!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Exercise: justify why the reduction is valid.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>Here <span class="math inline">\(H^i_c\)</span> is compactly supported cohomology, we’ll define this later in the course.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>Intersection with a hyperplane in projective space.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p>Here we use the convention that everything is prime to zero.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>Note that we actually already checked this!<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>What do you have to check? Locally finite presentation, flat, and unramified are all preserved. The one that may be tricky is remaining unramified, a hint is to use the cotangent exact sequence for <span class="math inline">\(\Omega^1_{X/Y}\)</span>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p>Recall that a presheaf on <span class="math inline">\(X\)</span> is a contravariant functor out of the category of open sets of <span class="math inline">\(X\)</span>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11" role="doc-endnote"><p>The notion of a presheaf on <span class="math inline">\(X\)</span> doesn’t know much about the actual topology of <span class="math inline">\(X\)</span>. If two spaces have the coarsest topology, so the only opens are <span class="math inline">\(X, \emptyset\)</span>, then the categories of open sets are equivalent, and every presheaf on them will be the same.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12" role="doc-endnote"><p>How to think of this: elements in this collection cover <span class="math inline">\(X\)</span>.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>When <span class="math inline">\(\mathcal{C}\)</span> was the category of open sets of a space <span class="math inline">\(X\)</span>, the existence of this morphism <span class="math inline">\(Y\to X\)</span> says <span class="math inline">\(Y \subseteq X\)</span> is an open subset, and thus intersecting <span class="math inline">\(Y\)</span> with any open cover of <span class="math inline">\(X\)</span> yields an open cover of <span class="math inline">\(Y\)</span>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>For spaces, this says if you have a cover of an open set by subsets and a cover of each of those subsets, the entire set has been covered.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15" role="doc-endnote"><p>The letters don’t precisely match up here because this comes from a French acronym.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16" role="doc-endnote"><p>Note that a sheaf on the big étale site necessarily restricts to a sheaf on the small étale site, since covers in the small site are also covers in the big site.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17" role="doc-endnote"><p>Note that this functor goes in the opposite direction of the original map.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18" role="doc-endnote"><p>If <span class="math inline">\(U\)</span> was an open cover, this would correspond to intersections of elements in the cover.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--bookdown:body:end-->

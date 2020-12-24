@@ -247,11 +247,6 @@ If $\deg(D) = 2g-2$, then $H^1(X, \OO(D)) = 0$.
 :::
 
 This is because it's dual to $H^0(X, \OO(K-D))\dual$, but this has negative degree and a line bundle of negative degree can never have sections.[^check_this_1]
-
-[^check_this_1]: 
-You should check to make sure you know why this is true!
-
-
 Thus the fibers are isomorphic to $\PP^{n-g}$ for $n>2g-2$.
 Now make a reduction[^exc_justify_reduction_1]
 and without loss of generality, assume $X(\FF_q) \neq \emptyset$.
@@ -269,6 +264,10 @@ Thus $\zeta_X(t)$ is a polynomial plus $\sum_{n>2g-2} \abs{\pic^n(X)(\FF_q)}\qty
 
 [^exc_justify_reduction_1]: 
 Exercise: justify why the reduction is valid.
+
+
+[^check_this_1]: 
+You should check to make sure you know why this is true!
 
 :::{.exercise}
 Show that this is a rational function using the formula for a geometric series.
@@ -330,7 +329,8 @@ This proves rationality, contingent on
 
 :::{.exercise}
 Try to figure out how Poincaré duality should give the functional equation.
-Hint: try the lemma on a vector space where $F$ scales a bilinear form.
+
+*(Hint: try the lemma on a vector space where $F$ scales a bilinear form.)*
 :::
 
 :::{.theorem title="Serre, Kahler Analog"}

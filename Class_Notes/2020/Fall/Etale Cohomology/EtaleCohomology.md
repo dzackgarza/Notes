@@ -54,9 +54,7 @@ Outline/Goals:
 ## What is Etale Cohomology?
 
 Suppose $X/\CC$ is a quasiprojective variety: a finite type separated integral $\CC\dash$scheme.
-
 If you take the complex points, it naturally has the structure of a complex analytic space $X(\CC)^{\text{an}}$: you can give it the Euclidean topology, which is much finer than the Zariski topology.
-
 For a nice topological space, we can associate the singular cohomology $H^i(X(\CC)^{\text{an}}, \ZZ)$, which satisfies several nice properties:
 
 - Finitely generated $\ZZ\dash$modules
@@ -64,21 +62,24 @@ For a nice topological space, we can associate the singular cohomology $H^i(X(\C
 - Cycle classes (i.e. associate to a subvariety a class in cohomology)
 
 Goal of etale cohomology: do something similar for much more general "nice" schemes.
-Note that some of these properties are special to complex varieties
-
-E.g. finitely generated: not true for a random topological space
+Note that some of these properties are special to complex varieties.
+(E.g. finitely generated: not true for a random topological space.)
 
 We'll associate $X$ a "nice scheme" $\rightsquigarrow H^i(X_{\text{et}}, \ZZ/\ell^n\ZZ)$.
 Take the inverse limit over all $n$ to obtain the $\ell\dash$adic cohomology $H^i(X_{\text{et}}, \ZZ_\ell)$.
 You can tensor with $\QQ$ to get something with $\QQ_\ell$ coefficients.
 And as in singular cohomology, you can a "twisted coefficient system".
 
-What are nice schemes:
+
+:::{.example title="?"}
+What are some nice schemes?
 
 - $X = \spec \OO_k$, the ring of integers over a number field.
 - $X$ a variety over an algebraically closed field
   - Typical, most analogous to taking a variety over $\CC$.
 - $X$ a variety over a non-algebraically closed field
+
+:::
   
 Some comparisons between the last two cases:
 
@@ -86,20 +87,29 @@ Some comparisons between the last two cases:
 - Over a finite field, $H^i$ will vanish for $i>2d+1$ but generally not vanish for $i=2d+1$. 
 
 In good situations, these are finitely generated $\ZZ/\ell^n\ZZ\dash$modules, have Mayer-Vietoris and excision sequences, spectral sequences, etc.
+Related invariants: for a scheme with a geometric point [^what_is_a_geom_point]
 
-Related invariants: for a scheme with a geometric point $(X, \bar x) \rightsquigarrow \pi_1^{\text{étale}}(X, \bar x)$, which is a profinite topological group, which is a profinite topological group.
 
-> Note: a geometric point is a map from $\spec X$ to an algebraically closed field.
+$(X, \bar x) \rightsquigarrow \pi_1^{\text{étale}}(X, \bar x)$, which is a profinite topological group, which is a profinite topological group.
 
+[^what_is_a_geom_point]: 
+A **geometric point** is a map from $\spec X$ to an algebraically closed field.
+
+
+:::{.remark}
 More invariants beyond the scope of this course:
 
 - Higher homotopy groups
 - Homotopy type (equivalence class of spaces)
 
 So we want homotopy-theoretic invariants for varieties.
+:::
 
 :::{.remark}
 This cohomology theory is necessarily weird!
+The following theorem explains why.
+The slogan: there is no cohomology theory with $\QQ$ coefficients. 
+:::
 
 :::{.theorem title="Serre"}
 There does not exists a cohomology theory for schemes over $\bar{\FF}_q$ with the following properties:
@@ -107,28 +117,23 @@ There does not exists a cohomology theory for schemes over $\bar{\FF}_q$ with th
 1. Functorial
 2. Satisfies the Kunneth formula
 3. For $E$ an elliptic curve, $H^1(E) = \QQ^2$.
-
-> Slogan: No cohomology theory with $\QQ$ coefficients. 
-
 :::
+
 :::{.proof}
 Take $E$ to be a supersingular elliptic curve.
-Then $\endo(E) \tensor \QQ$ is a quaternion algebra.
-
-Fact: There are no algebra morphisms $R\to \mat_{2\times 2}(\QQ)$
+Then $\endo(E) \tensor \QQ$ is a quaternion algebra, and use the fact that there are no algebra morphisms $R\to \mat_{2\times 2}(\QQ)$.
+:::
 
 :::{.exercise}
 Functoriality and Kunneth implies that $\endo(E)\actson E$ yields an action on $H^1(E)$, which is precisely an algebra morphism $\endo(E) \to \mat_{2\by 2}(\QQ)$, a contradiction.
 
-> The content: the sum of two endomorphisms act via their sum on $H^1$.
+The content here: the sum of two endomorphisms act via their sum on $H^1$.
 :::
+
 
 :::{.exercise}
 Prove the same thing for $\QQ_p$ coefficients, where $p$ divides the characteristic of the ground field.
-
-> Proof the same, just need to know what quaternion algebras show up.
-:::
-:::
+Proof the same, just need to know what quaternion algebras show up.
 :::
 
 
@@ -142,16 +147,22 @@ Suppose $X/\FF_q$ is a variety, then
 \zeta_X(t) = \exp{\sum_{n>0} { {\abs{X(\FF_{q^n})} \over n} t^n } }
 .\]
 
-Some comments:
+
+:::{.remark}
+\envlist
 
 - $\dd{}{t} \log \zeta_X(t)$ is an ordinary generating function for the number of rational points.
+
 - Slogan: locations of zeros and poles of a meromorphic function control the growth rate of the coefficients of the Taylor series of the logarithmic derivative.
+
+:::
 
 :::{.exercise}
 Make this slogan precise for rational functions, i.e. ratios of two polynomials.
 :::
 
-The conjectures:
+:::{.theorem title="The Weil Conjectures"}
+\envlist
 
 1. $\zeta_x(t)$ is a rational function.
 
@@ -160,19 +171,27 @@ The conjectures:
 \zeta_X(q^{-n} t\inv) = \pm q^{nE \over 2} t^E \zeta_X(t)
 .\]
 
-3. (RH) All roots and poles of $\zeta_X(t)$ have absolute value $q^{i\over 2}$ with $i\in \ZZ$, and these are equal to the $i$th Betti numbers if $X$ lifts to characteristic zero.
+3. (RH) All roots and poles of $\zeta_X(t)$ have absolute value $q^{i\over 2}$ with $i\in \ZZ$, and these are equal to the $i$th Betti numbers if $X$ lifts to characteristic zero.[^generalize_betti_numbers]
 
-  > Note: we'll generalize betti numbers so this makes sense in general.
+[^generalize_betti_numbers]: 
+Note that we'll generalize Betti numbers so this makes sense in general.
 
-All theorems! Proofs:
+:::
+
+:::{.remark}
+These are all theorems!
+The proofs:
 
 1. Dwork, using $p\dash$adic methods. 
   Proof here will follow from the fact that $H^i_{\text{étale} }$ are finite-dimensional.
-  Related to Lefschetz Trace Formula (how Grothendieck thought about it).
+  Related to the **Lefschetz Trace Formula**, and is how Grothendieck thought about it.
 
 2. Grothendieck, follows from some version of Poincaré duality.
 
 3. (and 4) Deligne.
+
+:::
+
 
 
 ### Euler Product
@@ -220,13 +239,15 @@ For $X$ a smooth proper curve over $\FF_q$, $\zeta_X(t)$ is rational.
 :::
 
 :::{.proof}
-Claim: there is a set map 
+
+:::{.claim}
+There is a set map 
 \[  
 \sym^n X &\to \pic^n X \\
 D &\mapsto \OO(D)
-.\]
-
-> Here the divisor is an $n\dash$tuple of points.
+,\]
+where here the divisor is an $n\dash$tuple of points.
+:::
 
 What are the fibers over a line bundle $\OO(D)$?
 A linear system, i.e. the projectivization of global sections $\PP \Gamma(X, \OO(D))$.
@@ -237,20 +258,21 @@ To compute the dimension of the space of line bundles on a curve, use Riemann-Ro
 .\]
 where the last $-1$ comes from the fact that this is a projective space.
 
-Claim: if $\deg(D) = 2g-2$, then $H^1(X, \OO(D)) = 0$.
+:::{.claim}
+If $\deg(D) = 2g-2$, then $H^1(X, \OO(D)) = 0$.
+:::
 
-This is because it's dual to $H^0(X, \OO(K-D))\dual$, but this has negative degree and a line bundle of negative degree can never have sections.
+This is because it's dual to $H^0(X, \OO(K-D))\dual$, but this has negative degree and a line bundle of negative degree can never have sections.[^check_this_1]
 
-> Note: should check to make sure you know why this is true!
+[^check_this_1]: 
+You should check to make sure you know why this is true!
+
 
 Thus the fibers are isomorphic to $\PP^{n-g}$ for $n>2g-2$.
-Now make a reduction (exercise: justify why):
-
-
-Wlog assume $X(\FF_q) \neq \emptyset$.
+Now make a reduction[^exc_justify_reduction_1]
+and without loss of generality, assume $X(\FF_q) \neq \emptyset$.
 In this case, $\pic^n(X) \cong \pic^{n+1}(X)$ for all $n$, since you can take $\OO(P)$ for $P$ a point, a degree 1 line bundle, and tensor with it.
 It's an isomorphism because you can tensor with the dual bundle to go back.
-
 Thus for all $n>2g-2$,
 \[  
 \abs{\sym^n(X)(\FF_q)} 
@@ -259,6 +281,10 @@ Thus for all $n>2g-2$,
 .\]
 
 Thus $\zeta_X(t)$ is a polynomial plus $\sum_{n>2g-2} \abs{\pic^n(X)(\FF_q)}\qty{1+q+q^2+\cdots+q^{n-g}}t^n$.
+
+
+[^exc_justify_reduction_1]: 
+Exercise: justify why the reduction is valid.
 
 :::{.exercise}
 Show that this is a rational function using the formula for a geometric series.
@@ -283,17 +309,18 @@ We'll show the RH later.
 Suppose $X/\FF_q$ is any variety, then $\zeta_X(t)$ is rational function.
 :::
 
-> Roughly known to Weil, hinted at in original paper
+This was roughly known to Weil, hinted at in original paper
 
 :::{.proof title="Grothendieck"}
 Idea: take Frobenius (intentionally vague, arithmetic vs geometric vs ...) $F:X\to X$, then $X(\FF_q)$ are the fixed points of $F$ acting on $X_{\bar \FF_q}$, and the $\FF_{q^n}$ points are the fixed points of $F^n$.
+Uses the Lefschetz fixed point formula, which will say for $\ell\neq \ch(\FF_q)$,[^compact_supported_cohomology]
 
-Uses the Lefschetz fixed point formula, which will say for $\ell\neq \ch(\FF_q)$,
 \[  
 \abs{X(\FF_{q^n})} = \sum_{i=0}^{2\dim(X)} (-1)^i \tr(F^n) H^i_c(X_{\FF_q}, \QQ_\ell)
 .\]
 
-> Here $H^i_c$ is compactly supported cohomology, we'll define this later in the course.
+[^compact_supported_cohomology]: 
+Here $H^i_c$ is compactly supported cohomology, we'll define this later in the course.
 
 :::{.lemma}
 \[  
@@ -304,15 +331,12 @@ This lemma implies the result, because if you plug the trace formula into the ze
 
 :::{.proof title="Of Lemma"}
 It suffices to treat the case $\dim(V) = 1$, because otherwise you can just write this as a sum of powers of eigenvalues.
-
 Then you have a scalar matrix, so you obtain
 \[  
 \exp{ \sum {\alpha^n \over n} t^n} = \exp{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t}
 ,\]
 which is rational.
-
 :::
-
 :::
 
 This proves rationality, contingent on 
@@ -323,7 +347,7 @@ This proves rationality, contingent on
 :::{.exercise}
 Try to figure out how Poincaré duality should give the functional equation.
 
-> Hint: try the lemma on a vector space where $F$ scales a bilinear form.
+*(Hint: try the lemma on a vector space where $F$ scales a bilinear form.)*
 :::
 
 :::{.theorem title="Serre, Kahler Analog"}
