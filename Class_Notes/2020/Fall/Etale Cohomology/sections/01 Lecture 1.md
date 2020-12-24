@@ -250,7 +250,10 @@ You should check to make sure you know why this is true!
 
 
 Thus the fibers are isomorphic to $\PP^{n-g}$ for $n>2g-2$.
-Now make a reduction (exercise: justify why):
+Now make a reduction[^exc_justify_reduction_1]
+
+[^exc_justify_reduction_1]: 
+Exercise: justify why the reduction is valid.
 
 Wlog assume $X(\FF_q) \neq \emptyset$.
 In this case, $\pic^n(X) \cong \pic^{n+1}(X)$ for all $n$, since you can take $\OO(P)$ for $P$ a point, a degree 1 line bundle, and tensor with it.
