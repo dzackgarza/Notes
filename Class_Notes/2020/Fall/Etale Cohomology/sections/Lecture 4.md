@@ -129,11 +129,14 @@ U
 U \cross_X U \cross_X U 
 \ar[d, bend left] \ar[d, "\pi_{ij}"] \ar[d, bend right] \\
 \end{tikzcd}
-  we have $\pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi$.
+  we have $\pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi_{13}\phi$.
 
 [^fp_actual_open_cov]: 
 If $U$ was an open cover, this would correspond to intersections of elements in the cover.
 
 :::
 
+:::{.exercise title="?"}
+Check that this agrees with the previous notions when $U\to X$ is a Zariski cover.
+:::
 
