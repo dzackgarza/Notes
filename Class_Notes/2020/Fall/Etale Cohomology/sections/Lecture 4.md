@@ -95,7 +95,38 @@ Given $\mathcal{F}_1, \mathcal{F}_2 \in \qcoh(U)$ and a morphism $f: \ro{\mathca
 If $X = \spec k$ and $U$ is a finite separable extension, then this question is exactly what Galois descent is about!
 :::
 
-:::{.example title="?"}
+:::{.example title="(a motivating one)"}
+$U = \disjoint U_i \to X$ is a Zariski cover.
+If we have a sheaf on $U$, what extra data do we need to get a sheaf on $X$?
+We need isomorphisms $\ro{\mathcal{F}_i }{U_i\intersect U_j} \mapsvia{\sim} \ro{\mathcal{F}_j}{U_i\intersect U_j}$ (gluing data) where each $\mathfrak{F}_i$ is the sheaf given on $U_i$.
+We also need a cocycle condition on triple intersections.
+Given this data, gluing yields a sheaf on $X$.
+This may be familiar from vector bundles.
+Thus to give a sheaf, it suffices to specify gluing data.
+
+Morphisms $\mathcal{F}\to \mathcal{G}$ is the same as morphisms $\ro{\mathcal{F}}{U_i} \to \ro{\mathcal{G}}{U_i}$ which commute with the gluing data.
+We'd like to generalize this notion of commuting with gluing data to more general types of covers.
+:::
+
+:::{.definition title="Descent data for quasicoherent sheaves"}
+Suppose $U\mapsvia{f}X$ is a morphisms, then **descent data** for a quasicoherent sheaf on $U/X$ is the following:
+
+1. A sheaf $\mathcal{F}\in \qcoh(U)$.
+2. Gluing data: If we take the fiber product of $U$ with itself, mapping to $U$ under 2 different projections[^fp_actual_open_cov],  
+
+
+\begin{tikzcd}
+U \cross_X U \ar[d, bend left, "\pi_1"] \ar[d, bend right, "\pi_2"] \\
+U
+\end{tikzcd}
+  there are isomorphisms
+  \[  
+  \phi: \pi_1^* \mathcal{F} \mapsvia{\sim} \pi_2^* \mathcal{F}
+  .\]
+
+
+[^fp_actual_open_cov]: 
+If $U$ was an open cover, this would correspond to intersections of elements in the cover.
 
 :::
 
