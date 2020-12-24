@@ -259,7 +259,7 @@ For $H=1$, this has been solved, but there hasn't been much work on the $H=2,3$ 
 :::
 
 
-
+The following proof: very neat! Pete likes it.
 
 :::{.proof title="?"}
 The number $A_{2g}$ of effective degree $2g$ divisors on $K$ is $h\qty{q^{g+1} - 1 \over q-1}$
@@ -281,7 +281,7 @@ and substituting the known value of $A_{2g}$ and rearranging yields
 h 
 &\geq {1\over 2g} \qty{q-1 \over q^{g+1} - 1} N_{2g} \\
 &\geq  \qty{1\over 2g} \qty{q-1 \over q^{g+1} - 1} \qty{ q^{2g} + 1 - 2g q^g}
-&& \text{by the Weil bounds}
+&& \text{by the Weil bounds} \\
+&= \qty{q-1 \over 2} \qty {q^{2g} + 1 - 2gq^g \over  g\qty{q^{g+1} - q}}
 .\]
-
 :::
