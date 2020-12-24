@@ -47,3 +47,23 @@ If $K/\FF_q$ is a function field of genus $g$, then
 :::{.remark}
 This says that the number of $\FF_q$ points is approximately $q+1$< where the error is controlled by the genus.
 :::
+
+:::{.proof title="?"}
+We know
+\[  
+\abs{\Sigma_1(K/\FF_q)} = q + 1 - \sum \alpha_i
+.\]
+Thus 
+\[  
+\abs{ 
+\Sigma_1(K/\FF_q) - (q+1)
+}
+=
+\abs{
+\sum \alpha_i
+}
+\leq
+\sum_{i=1}^{2g} \abs{\alpha_i}
+=2g\sqrt q
+.\]
+:::
