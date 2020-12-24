@@ -91,4 +91,17 @@ We'll want an isomorphism $\phi: M\tensor_R S\to S\tensor_R M$ of $S\tensor_R S$
 We make the following construction:
 
 \begin{tikzcd}
+m \ar[r] & 1\tensor m \\
+M \ar[r, shift left=0.75] \ar[r, shift right=0.75] & S\tensor M \\
+m \ar[r] & \phi(m\tensor 1)
 \end{tikzcd}
+Suppose that $M$ is of the form $N\tensor S$ for $N\in \rmod$, how would the descent of $M$ fit into this diagram and relate to these two maps?
+Just set $K$ to be the equalizer of this diagram, i.e. the subset of $M$ that go to the same thing under both maps.
+
+:::{.claim}
+There is obvious map $K\tensor_R S\to M$ since $K \subseteq M$ and $M\in \mods{S}$, so you can include $K\injects M$ and multiply by elements of $S$.
+Moreover, this map is an isomorphism.
+Given this isomorphism, one obtains compatible descent data on $M$.
+:::
+
+
