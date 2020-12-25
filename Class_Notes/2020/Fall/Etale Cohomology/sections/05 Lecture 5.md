@@ -177,3 +177,11 @@ If we have an element in the middle that is a morphism of algebras mapping to th
 That this is also a map of quasicoherent algebras follows from the fact that descent is functorial.
 A map of algebras is commuting with a bunch of maps of quasicoherent sheaves, which we know is true on the RHS and is thus true on the LHS since pullback yields an equivalence of categories.
 :::
+
+:::{.corollary title="?"}
+If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $X_{\fppf}, X_{\et}, X_{\Et}$, etc.
+:::
+
+:::{.remark}
+
+:::
