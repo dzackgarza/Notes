@@ -100,4 +100,16 @@ Taking $\spec k$ to be the algebraic closure of the function field of $X$ is $X$
 
 :::{.example title="?"}
 Let $\mathcal{F} = \underline{\zlz}$ and $\bar x\injects X$ any geometric point.
+Then the pullback is given by $\iota_{\bar x}^* \underline{\zlz} = \zlz$.
+If $U$ had more than one connected component, then the first definition would involve a limit over $\mathcal{F}(U)$ which are all copies of $\zlz$.
+But given this, you can always find a connected covering.
+So the $(U, \bar u)$ which are *connected* are actually cofinal.[^cofinal_notes]
+
+[^cofinal_notes]: 
+Note that having any cofinal diagrams in a limit means that the limit will only see those.
+
+:::
+
+:::{.example title="?"}
+Let $\mathcal{F} = \OO_{X}^{\et}$, then the pullback is $\iota_{\bar x}^* \OO_X^{\et}$, which is the strict Hensilization (where we)
 :::
