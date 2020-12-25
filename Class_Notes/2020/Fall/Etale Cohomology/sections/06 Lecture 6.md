@@ -59,8 +59,11 @@ Show this!
 
 What is the pushforward?
 \[  
-\qty{\iota_{\bar X}}_* \mathcal{F}(U\to X) = \mathcal{F}(U\cross_X x)
-.\]
+\qty{\iota_{\bar X}}_* \mathcal{F}(U\to X) = \mathcal{F}(U\cross_X \bar x)
+= F\qty{\disjoint \spec k}
+,\]
+
+where the number of copies appearing is the number of 
 :::
 
 
