@@ -186,6 +186,7 @@ If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $X_{\fppf}, X_{\et}, X_{\E
 $p^*$ is not essentially surjective in general for schemes.
 Descent data for schemes relative to an étale cover $U/X$ is called an **algebraic space**.
 Note that some definitions may also required separatedness.
-When pullback does yield an equivalence of categories, this is referred to as **effective descent**
-It *is* essentially 
+When pullback does yield an equivalence of categories, this is referred to as **effective descent**.
+
+It *is* essentially surjective for affine schemes and polarized schemes: if you have descent data for a scheme on $U/X$ with an ample line bundle (which also has descent data)
 :::
