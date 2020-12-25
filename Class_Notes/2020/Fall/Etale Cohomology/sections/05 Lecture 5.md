@@ -152,11 +152,28 @@ However, it's enough to reduce to the case of affine schemes over $X$, and $U, X
 :::
 
 **Step 2**:
-If $Y,Z$ are schemes over $X$, we want to show
+If $Y,Z$ are schemes over $X$, we want to show the following is an equalizer diagram:
 \begin{tikzcd}
- \ar[r] &
- \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
- &
+\hom_X(Y, Z) \ar[r] &
+\hom_U(p^* Y, p^* Z) \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
+\hom_{U\cross_X U}(\pi^* p^* Y, \pi^* p^* Z) &
 \end{tikzcd}
+Here we've suppressed the indices on the $\pi_i$ since their images are canonically identified.
+Injectivity is obvious, using that $U$ is surjective, two different morphisms of schemes pulled back along a faithfully flat morphisms are distinct, although we'll prove this.
+The real content is that any morphism on $U$ that maps to the same thing on $U\cross_X U$ comes from $X$, so we can descend morphisms and the morphisms form a sheaf (which is what we're trying to prove).
 
+We'll deduce this from what we proved about quasicoherent sheaves.
+By the first reduction, we can assume $Y = \underline{\spec}_X \OO_Y$ is a relative spec, as is $Z = \underline{\spec}_X \OO_Z$ where the $\OO$ here are quasicoherent sheaves of algebras.
+These are obtained by taking the pushforward of the structure sheaf along $Y\to X, Z\to X$.
+Rewriting the diagram, the homs are now in the category of quasicoherent algebras and we have
+\begin{tikzcd}
+ \hom(\OO_Z, \OO_Y)\ar[r] &
+ \hom(\p^* \OO_Z, p^* \OO_Y) \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
+ \cdots &
+\end{tikzcd}
+where we want this to be an equalizer.
+This is true because the first map is injective even when ignoring the algebra structure, just looking at a map of quasicoherent sheaves, we know this is injective.
+If we have an element in the middle that is a morphism of algebras mapping to the same thing, it comes from a quasicoherent sheaf in the first slot.
+That this is also a map of quasicoherent algebras follows from the fact that descent is functorial.
+A map of algebras is commuting with a bunch of maps of quasicoherent sheaves, which we know is true on the RHS and is thus true on the LHS since pullback yields an equivalence of categories.
 :::
