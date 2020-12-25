@@ -184,4 +184,6 @@ If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $X_{\fppf}, X_{\et}, X_{\E
 
 :::{.remark}
 $p^*$ is not essentially surjective in general for schemes.
+Descent data for schemes relative to an étale cover $U/X$ is called an **algebraic space**.
+Note that some definitions may also required separatedness.
 :::
