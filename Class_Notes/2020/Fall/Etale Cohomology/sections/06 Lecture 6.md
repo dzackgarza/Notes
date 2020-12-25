@@ -49,5 +49,6 @@ Let $f:X\to Y$ be a map of schemes, this induces a map $f: X_\et \to Y_\et$ wher
 :::{.example title="?"}
 Suppose $k=\bar k$ is a field and we have $\iota_{\bar X}:\spec k\to X$.
 We have $\Sh\qty{\qty{\spec k}_{\et}} = \Set$, since an étale cover of $\spec k$ is a disjoint union of copies of itself.
-If you show what the value of a sheaf on $\spec k$, you know it on any disjoint union of them since there are a lot of sections and any union 
+If you show what the value of a sheaf on $\spec k$, you know it on any disjoint union of them since there are a lot of sections.
+Moreover, any disjoint union of copies of $\spec k$ can be covered by copies $\spec k$ itself by definition.
 :::
