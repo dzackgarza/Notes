@@ -55,7 +55,7 @@ Alternatively, injectivity of the first map follows from injectivity of $N\to N\
 A short diversion:
 
 :::{.corollary title="of proof"}
-For $\mathcal{F}\in \qcoh(X)$, we defined $\mathcal{F}^{\et} \in \presh(X_{\et})$ where $\mathcal{F}^{\et}(U\mapsvia \pi X) \da \pi^* \mathcal{F}(U)$ is a sheaf on $X_{\et}$ and $X_{\fppf}
+For $\mathcal{F}\in \qcoh(X)$, we defined $\mathcal{F}^{\et} \in \presh(X_{\et})$ where $\mathcal{F}^{\et}(U\mapsvia \pi X) \da \pi^* \mathcal{F}(U)$ is a sheaf on $X_{\et}$ and $X_{\fppf}$
 :::
 
 :::{.proof title="?"}
@@ -176,7 +176,7 @@ A map of algebras is commuting with a bunch of maps of quasicoherent sheaves, wh
 :::
 
 :::{.corollary title="?"}
-If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $, X_{\et}, X_{\Et}$, etc.
+If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $X_{\fppf}, X_{\et}, X_{\Et}$, etc.
 :::
 
 :::{.remark}
