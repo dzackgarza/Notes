@@ -74,4 +74,6 @@ $\qty{\iota_{\bar x}}_* \mathcal{F}$ is called the **skyscraper sheaf**.
 
 ### Pullbacks 
 
-
+In the usual setting, to define a pullback of sheaves you take an inverse limit to compute the value on an open set $U$, which only yields a presheaf and thus requires sheafifying.
+We don't know how to sheafify yet, so we can't yet define pullbacks in general.
+We can define pullbacks to a geometric point though, since 
