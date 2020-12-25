@@ -83,6 +83,21 @@ Let $\iota_{\bar x}: \spec k \to X$ with $k = \bar k$ and set $\mathcal{F}_{\bar
 The LHS is a set and the RHS is a sheaf on $\qty{\spec k}_{\et}$.
 We then define
 \[  
-\mathcal{F}_{\bar x} \def \directlim_{}
-.\]
+\mathcal{F}_{\bar x} \def \directlim_{(U, u)} \mathcal{F}(U)
+,\]
+where the limit is taken over diagrams of the form
+\begin{tikzcd}
+\bar u \ar[r]\ar[d] & U\ar[d] \\
+x \ar[r, "\iota_{\bar x}", hooked] & X
+\end{tikzcd}
+where $\bar u$ is a geometric point and $Y\to X$ is étale.
+:::
+
+:::{.remark}
+We don't have to work at a closed point.
+Taking $\spec k$ to be the algebraic closure of the function field of $X$ is $X$ is irreducible.
+:::
+
+:::{.example title="?"}
+Let $\mathcal{F} = \underline{\zlz}$ and $\bar x\injects X$ any geometric point.
 :::
