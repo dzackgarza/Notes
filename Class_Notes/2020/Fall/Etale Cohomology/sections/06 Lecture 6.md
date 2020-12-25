@@ -1,4 +1,4 @@
-# Lecture 6 
+# Lecture 6: Filling in Gaps, Étale Cohomology
 
 :::{.remark title="A technical point"}
 Last time a theorem was stated that pullback induced an equivalence of categories $\Qcoh(X_{\zar}) \mapsvia{\sim} \QCoh(X_{\et}) \mapsvia{\sim} \QCoh(X)(X_{\fppf})$; note that these are the little sites.
@@ -10,5 +10,11 @@ This isn't as affected by what sheaf you have on $X$ itself.
 :::
 
 :::{.remark}
+Étale descent data for schemes is not quite the same as an algebraic space: it yields an algebraic space, but the data is not literally the same.
+:::
 
+## Gaps
+
+:::{.claim}
+The category of abelian sheaves on the $X_{\et}$ is a 
 :::
