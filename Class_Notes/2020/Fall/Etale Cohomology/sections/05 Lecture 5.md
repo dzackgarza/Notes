@@ -55,7 +55,7 @@ Alternatively, injectivity of the first map follows from injectivity of $N\to N\
 A short diversion:
 
 :::{.corollary title="of proof"}
-For $\mathcal{F}\in \qcoh(X)$, we defined $\mathcal{F}^{\et} \in \presh(X_{\et})$ where $\mathcal{F}^{\et}(U\mapsvia \pi X) \da \pi^* \mathcal{F}(U)$ is a sheaf on $X_{\et}$ and $X_{\fppf}$.
+For $\mathcal{F}\in \qcoh(X)$, we defined $\mathcal{F}^{\et} \in \presh(X_{\et})$ where $\mathcal{F}^{\et}(U\mapsvia \pi X) \da \pi^* \mathcal{F}(U)$ is a sheaf on $X_{\et}$ and $X_{\fppf}
 :::
 
 :::{.proof title="?"}
@@ -91,9 +91,7 @@ We'll want an isomorphism $\phi: M\tensor_R S\to S\tensor_R M$ of $S\tensor_R S$
 We make the following construction:
 
 \begin{tikzcd}
-m \ar[r] & 1\tensor m \\
-M \ar[r, shift left=0.75] \ar[r, shift right=0.75] & S\tensor M \\
-m \ar[r] & \phi(m\tensor 1)
+M \ar[r, shift left=2.5, "m\mapsto 1\tensor m"] \ar[r, shift right=2.5, "m\mapsto \phi(m\tensor 1)", swap] & S\tensor M \\
 \end{tikzcd}
 Suppose that $M$ is of the form $N\tensor S$ for $N\in \rmod$, how would the descent of $M$ fit into this diagram and relate to these two maps?
 Just set $K$ to be the equalizer of this diagram, i.e. the subset of $M$ that go to the same thing under both maps.
@@ -107,19 +105,18 @@ Given this isomorphism, one obtains compatible descent data on $M$.
 From the lemma, we have an equalizer
 \begin{tikzcd}
 R \ar[r] &
-S \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
-S\tensor_R S &
+S \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+S\tensor_R S
 \end{tikzcd}
 to which we can apply $\wait \tensor_S M$ to obtain
 
 \begin{tikzcd}
 K \ar[r] &
-M\tensor S \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
-M\tensor_R S \te &
+M\tensor S \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+M\tensor_R S &
 \end{tikzcd}
 where $K$ is by definition the above kernel.
 We want to check that the map $K\to M$ appearing here induces an isomorphism $K\tensor S \to M$.
-
 
 :::{.exercise title="Important"}
 This is true if $R\to S$ has a section, show this.
@@ -155,8 +152,8 @@ However, it's enough to reduce to the case of affine schemes over $X$, and $U, X
 If $Y,Z$ are schemes over $X$, we want to show the following is an equalizer diagram:
 \begin{tikzcd}
 \hom_X(Y, Z) \ar[r] &
-\hom_U(p^* Y, p^* Z) \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
-\hom_{U\cross_X U}(\pi^* p^* Y, \pi^* p^* Z) &
+\hom_U(p^* Y, p^* Z) \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+\hom_{U\cross_X U}(\pi^* p^* Y, \pi^* p^* Z)
 \end{tikzcd}
 Here we've suppressed the indices on the $\pi_i$ since their images are canonically identified.
 Injectivity is obvious, using that $U$ is surjective, two different morphisms of schemes pulled back along a faithfully flat morphisms are distinct, although we'll prove this.
@@ -168,8 +165,8 @@ These are obtained by taking the pushforward of the structure sheaf along $Y\to 
 Rewriting the diagram, the homs are now in the category of quasicoherent algebras and we have
 \begin{tikzcd}
  \hom(\OO_Z, \OO_Y)\ar[r] &
- \hom(\p^* \OO_Z, p^* \OO_Y) \ar[r, shift right=0.75ex] \ar[r, shift left-0.75ex] &
- \cdots &
+ \hom(p^* \OO_Z, p^* \OO_Y) \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+ \cdots
 \end{tikzcd}
 where we want this to be an equalizer.
 This is true because the first map is injective even when ignoring the algebra structure, just looking at a map of quasicoherent sheaves, we know this is injective.
@@ -179,7 +176,7 @@ A map of algebras is commuting with a bunch of maps of quasicoherent sheaves, wh
 :::
 
 :::{.corollary title="?"}
-If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $X_{\fppf}, X_{\et}, X_{\Et}$, etc.
+If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $, X_{\et}, X_{\Et}$, etc.
 :::
 
 :::{.remark}
