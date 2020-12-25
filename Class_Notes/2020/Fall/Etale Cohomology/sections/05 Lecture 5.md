@@ -27,11 +27,10 @@ We used one of Daniel's favorite tricks in fppf descent: producing a section by 
 
 ### Proof of Full Faithfulness
 
+
+:::{.exercise title="Step 1, Important"}
 **Step 1**: 
 Reduce to the case where $U\to X$ is affine.
-
-:::{.exercise title="Important"}
-Do step 1!
 
 *(Hint: See chapter 6 of Neron models.
 This will use that the map has finite presentation, and in fact even less, that the map is quasicompact.)*
@@ -79,12 +78,13 @@ We want some $\mathcal{G} \in \qcoh(X)$ such that the pullback admits an isomorp
 
 We'll use a similar trick to construct $\mathcal{G}$.
 
-**Step 1**:
-We'll reduced to the case of an affine morphism.
 
 :::{.exercise title="Important"}
-Work this out.
+**Step 1**:
+We'll reduce to the case of an affine morphism.
 :::
+
+**Step 2**:
 
 Let $R\mapsvia f S$ and $M\in \mods{S}$.
 We'll want an isomorphism $\phi: M\tensor_R S\to S\tensor_R M$ of $S\tensor_R S$ modules satisfying the cocycle condition.
@@ -141,7 +141,8 @@ Suppose $p:U\to X$ is an fppf cover.
 Then the functor $p^*: \Sch/X \to$ descent data for schemes on $U/X$ is fully faithful (but not an equivalence of categories).
 :::
 
-:::{.proof title="?"}
+
+### Proof of Theorem
 
 :::{.exercise title="Step 1"}
 Reduce to the case where *everything* is affine, including $U, X$, and the scheme over $X$.
@@ -173,7 +174,8 @@ This is true because the first map is injective even when ignoring the algebra s
 If we have an element in the middle that is a morphism of algebras mapping to the same thing, it comes from a quasicoherent sheaf in the first slot.
 That this is also a map of quasicoherent algebras follows from the fact that descent is functorial.
 A map of algebras is commuting with a bunch of maps of quasicoherent sheaves, which we know is true on the RHS and is thus true on the LHS since pullback yields an equivalence of categories.
-:::
+
+### Consequences
 
 :::{.corollary title="?"}
 If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $X_{\fppf}, X_{\et}, X_{\Et}$, etc.
