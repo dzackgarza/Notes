@@ -188,5 +188,6 @@ Descent data for schemes relative to an étale cover $U/X$ is called an **algebr
 Note that some definitions may also required separatedness.
 When pullback does yield an equivalence of categories, this is referred to as **effective descent**.
 
-It *is* essentially surjective for affine schemes and polarized schemes: if you have descent data for a scheme on $U/X$ with an ample line bundle (which also has descent data)
+It *is* essentially surjective for affine schemes and polarized schemes: if you have descent data for a scheme on $U/X$ with an ample line bundle (which also has descent data) then you can descend the scheme.
+Thus projective varieties can be descended, provided you also descend them with an ample line bundle.
 :::
