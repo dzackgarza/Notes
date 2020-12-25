@@ -183,5 +183,5 @@ If $Z \in \Sch/X$, the $\hom(\wait, Z)$ is a sheaf on $X_{\fppf}, X_{\et}, X_{\E
 :::
 
 :::{.remark}
-
+$p^*$ is not essentially surjective in general for schemes.
 :::
