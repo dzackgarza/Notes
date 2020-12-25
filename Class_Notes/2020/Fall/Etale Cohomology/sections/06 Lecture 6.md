@@ -38,9 +38,10 @@ Before the proof, we'll need a few operations in order to imitate the usual proo
 This is done by constructing the *espace étalé* out of the stalks and define the sheafification to be sections.
 The operations we'll need are:
 
-1. Pushforwards.
-  For $f: \tau_1 \to \tau_2$ a continuous map of sites, this was a reversed functor preserving fibers products and covering families.
-  For $\mathcal{G}\in \Sh(\tau_1)$ we constructed $f_* \mathcal{G}$, and the exercise was to show that this is a sheaf.
+### Pushforwards 
+
+For $f: \tau_1 \to \tau_2$ a continuous map of sites, this was a reversed functor preserving fibers products and covering families.
+For $\mathcal{G}\in \Sh(\tau_1)$ we constructed $f_* \mathcal{G}$, and the exercise was to show that this is a sheaf.
 
 :::{.example title="?"}
 Let $f:X\to Y$ be a map of schemes, this induces a map $f: X_\et \to Y_\et$ where each $U/Y$ comes from $U\cross_Y X$ over $X$.
@@ -59,7 +60,7 @@ Show this!
 
 What is the pushforward?
 \[  
-\qty{\iota_{\bar X}}_* \mathcal{F}(U\to X) = \mathcal{F}(U\cross_X \bar x)
+\qty{\iota_{\bar x}}_* \mathcal{F}(U\to X) = \mathcal{F}(U\cross_X \bar x)
 = F\qty{\disjoint \spec k}
 = \prod \mathcal{F}\spec k
 ,\]
@@ -68,7 +69,9 @@ where the number of copies appearing is the number of preimages of $\bar x$ in $
 :::
 
 :::{.definition title="Skyscraper Sheaf"}
-$
+$\qty{\iota_{\bar x}}_* \mathcal{F}$ is called the **skyscraper sheaf**.
 :::
+
+### Pullbacks 
 
 
