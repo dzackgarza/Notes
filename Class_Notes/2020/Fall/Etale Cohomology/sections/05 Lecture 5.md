@@ -211,4 +211,19 @@ Work out Galois descent from this point of view.
 ## Étale Cohomology
 
 What missing ingredients do we need to define cohomology for these abelian sheaves?
-Goal: 
+
+1. We want to show that the category of abelian sheaves on $X_{\et}$ is abelian.
+2. We need enough injectives.
+
+:::{.remark}
+Both of these facts are true for the category of abelian sheaves on *any* site, i.e. any category with a Grothendieck topology.
+:::
+
+The proof of (2) will be relatively easy, but the crucial ingredient for (1) will be the following:
+
+:::{.theorem title="?"}
+Let $\tau$ be a site.
+Then the forgetful functor $\Sh(\tau) \to \Presh(\tau)$ has a left adjoint which we'll call **sheafification**.
+:::
+
+We'll just prove this for $\tau = X_{\et}$.
