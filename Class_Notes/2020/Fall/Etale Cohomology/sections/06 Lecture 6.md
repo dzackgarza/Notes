@@ -58,8 +58,9 @@ Show this!
 :::
 
 What is the pushforward?
-MM
-\qty{\iota_{\bar X}}_* \mathcal{F}
+\[  
+\qty{\iota_{\bar X}}_* \mathcal{F}(U\to X) = \mathcal{F}(U\cross_X x)
+.\]
 :::
 
 
