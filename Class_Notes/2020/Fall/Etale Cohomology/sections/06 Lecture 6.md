@@ -74,6 +74,15 @@ $\qty{\iota_{\bar x}}_* \mathcal{F}$ is called the **skyscraper sheaf**.
 
 ### Pullbacks 
 
-In the usual setting, to define a pullback of sheaves you take an inverse limit to compute the value on an open set $U$, which only yields a presheaf and thus requires sheafifying.
+In the usual setting, to define a pullback of sheaves you take an direct limit to compute the value on an open set $U$, which only yields a presheaf and thus requires sheafifying.
 We don't know how to sheafify yet, so we can't yet define pullbacks in general.
-We can define pullbacks to a geometric point though, since 
+We can define pullbacks to a geometric point though:
+
+:::{.definition title="Pullbacks"}
+Let $\iota_{\bar x}: \spec k \to X$ with $k = \bar k$ and set $\mathcal{F}_{\bar x} = \iota_{\bar x}^* \mathcal{F}$ for $\mathcal{F}\in \Sh(X_{\et})$.
+The LHS is a set and the RHS is a sheaf on $\qty{\spec k}_{\et}$.
+We then define
+\[  
+\mathcal{F}_{\bar x} \def \directlim_{}
+.\]
+:::
