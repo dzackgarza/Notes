@@ -227,3 +227,24 @@ Then the forgetful functor $\Sh(\tau) \to \Presh(\tau)$ has a left adjoint which
 :::
 
 We'll just prove this for $\tau = X_{\et}$.
+The general theorem is much longer!
+
+### Preliminaries
+
+Some operations we can do with sheaves:
+
+#### Pushforward and pullback
+
+Suppose $f:\tau_1 \to \tau_2$ to be a continuous morphism of sites, i.e. a functor $f^{-1} : \tau_2 \to \tau_1$ which preserves fiber products (preserving intersections and covering families).
+
+:::{.definition title="Pushforwards"}
+Given $\mathcal{G}\in \Sh(\tau_1)$, define $f_* \mathcal{G}\in \Sh(\tau_2)$ by
+\[  
+\qty{f_* \mathcal{G}}(U) \da \mathcal{G}( f^{-1}(U))
+.\]
+:::
+Note that this is the usual formula for pushforwards.
+
+:::{.exercise title="Important, must do"}
+Show that $f_* \mathcal{G}$ is a sheaf.
+:::
