@@ -61,10 +61,14 @@ What is the pushforward?
 \[  
 \qty{\iota_{\bar X}}_* \mathcal{F}(U\to X) = \mathcal{F}(U\cross_X \bar x)
 = F\qty{\disjoint \spec k}
+= \prod \mathcal{F}\spec k
 ,\]
 
-where the number of copies appearing is the number of 
+where the number of copies appearing is the number of preimages of $\bar x$ in $U$, and the last equality follows from the sheaf condition.
 :::
 
+:::{.definition title="Skyscraper Sheaf"}
+$
+:::
 
 
