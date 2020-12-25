@@ -198,5 +198,17 @@ Replacing $\spec$ with $\proj$ is one way to show this.
 
 - $\GG_m: U \to \OO_U(U)\units$
 - $\mu_\ell: U\to \ts{f\in \OO_U(U) \st f^\ell = 1}$.
-- $\underline{\zlz}
+- $\underline{\zlz}: U\to \hom_{\Top}(U, \zlz)$ sending $U$ to continuous maps from $U$ to the constant scheme $\zlz$, i.e. the $\ell\dash$points.
+- $\Hilb^{p(t)}(\PP^n)$ Hilbert schemes of projective space.
+  We know this is a scheme, so the functor it represents is a sheaf.
+- $\PP^n$, which represents a line bundle with a surjective map from the trivial bundle of rank $n+1$
 :::
+
+:::{.exercise title="?"}
+Work out Galois descent from this point of view.
+:::
+
+## Étale Cohomology
+
+What missing ingredients do we need to define cohomology for these abelian sheaves?
+Goal: 
