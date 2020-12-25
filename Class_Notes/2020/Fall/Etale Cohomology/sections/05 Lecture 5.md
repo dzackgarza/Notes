@@ -190,4 +190,13 @@ When pullback does yield an equivalence of categories, this is referred to as **
 
 It *is* essentially surjective for affine schemes and polarized schemes: if you have descent data for a scheme on $U/X$ with an ample line bundle (which also has descent data) then you can descend the scheme.
 Thus projective varieties can be descended, provided you also descend them with an ample line bundle.
+Replacing $\spec$ with $\proj$ is one way to show this.
+:::
+
+:::{.example title="of sheaves"}
+\envlist
+
+- $\GG_m: U \to \OO_U(U)\units$
+- $\mu_\ell: U\to \ts{f\in \OO_U(U) \st f^\ell = 1}$.
+- $\underline{\zlz}
 :::
