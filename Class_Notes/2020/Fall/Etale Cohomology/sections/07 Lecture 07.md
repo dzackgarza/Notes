@@ -56,9 +56,31 @@ f^{-1} :\Presh(Y_{\et}) &\to \Presh(X_\et) \\
 where the limit is over diagrams of the form
 \begin{tikzcd}
 V \ar[r] \ar[d, "\et"] & U \ar[d, "\et"] \\
-Y \ar[r] & X 
+X \ar[r] & Y
 \end{tikzcd}
 
 :::{.fact}
+$f^{-1}$ is left adjoint to pushforward as functors on presheaves.
+:::
 
+:::{.exercise title="?"}
+Check this.
+:::
+
+:::{.definition title="Inverse Image Sheaf"}
+\[  
+f^* \mathcal{F} \da \qty{f^{-1} \mathcal{F}}^a
+.\]
+:::
+
+:::{.theorem title="?"}
+$f^*$ is left adjoint to $f_*$.
+:::
+
+:::{.proof title="?"}
+Sheafification is a left adjoint.
+:::
+
+:::{.example title="?"}
+For $\bar x\injectsvia{\iota} X$ we have $\iota^* \mathcal{F}= \mathcal{F}_{\bar x}$.
 :::
