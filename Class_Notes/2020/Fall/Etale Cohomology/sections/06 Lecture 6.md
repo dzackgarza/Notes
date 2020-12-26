@@ -229,3 +229,7 @@ The sheaf $\mathcal{F}^a$ is the subsheaf of $\mathrm{Esp}(\mathcal{F})$ generat
 \mathcal{F}^a(U) \subseteq \mathrm{Esp}(\mathcal{F})(U), \mathcal{F}^a(U) = \ts{s\in \mathrm{Esp}(\mathcal{F})(U)  \st \text{ locally } s\in \im \mathcal{F}}
 .\]
 :::
+
+:::{.remark}
+
+:::
