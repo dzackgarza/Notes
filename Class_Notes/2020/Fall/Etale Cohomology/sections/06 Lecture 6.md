@@ -277,6 +277,15 @@ $\Sh(X_\et)$ is an abelian category.
 \envlist
 
 - Limits exist since they can be defined pointwise.
-- Cokernels exists since they are colimits: $\cok(\mathcal{F} \to \mathcal{G})$ is given by $\mathrm{coeq}(\mathcal{F} \mathcal{G})$
+- Cokernels exists since they are colimits: $\cok(\mathcal{F} \to \mathcal{G})$ is given by the coequalizer of
+\begin{tikzcd}
+ \mathcal{F} \ar[r, shift right=0.75ex, "f"] \ar[r, shift left=0.75ex, "0"] &
+  \mathcal{G}
+\end{tikzcd}
+  which is a colimit.
+
+- $\im = \coim$, which can be checked on stalks.
 
 :::
+
+Next time: we'll finish proving that injectives exist, and start computing.
