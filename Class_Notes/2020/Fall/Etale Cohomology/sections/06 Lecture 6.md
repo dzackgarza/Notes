@@ -193,7 +193,7 @@ What is the difference between 1 and 2?
 1 means that $\mathcal{F}\to \mathcal{G}$ is a monomorphism and the kernel of the map $f: \mathcal{G}\to \mathcal{H}$, i.e. the following diagram is an equalizer:
 \begin{tikzcd}
  \mathcal{F} \ar[r] &
- \mathcal{G} \ar[r, shift right=0.75ex, "f"] \ar[r, shift left=0.75ex, "0"] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "f"'] \ar[r, shift left=0.75ex, "0"] &
   \mathcal{H}
 \end{tikzcd}
 :::
@@ -234,7 +234,7 @@ The sheaf $\mathcal{F}^a$ is the subsheaf of $\mathrm{Esp}(\mathcal{F})$ generat
 Here $\mathrm{Esp}(\mathcal{F})$ is like the product of all of the stalks, and $\mathcal{F}^a$ is the *espace étalé* inside of it.
 :::
 
-:::{.claim}
+:::{.proposition title="?"}
 $\mathcal{F}^a$ is a sheaf.
 :::
 
@@ -245,7 +245,7 @@ This is true for $\mathrm{Esp}(\mathcal{F})$ and thus for $\mathcal{F}^a$.
 Gluing follows from the fact that it is locally defined.
 :::
 
-:::{.claim}
+:::{.proposition title="?"}
 $\mathcal{F}^a$ is left adjoint to the forgetful functor.
 :::
 
