@@ -8,4 +8,11 @@ $\Hc{X_\et, \mathcal{F}} \not\cong H(X_\et, \mathcal{F})$ in general, but by a t
 This is true if $X$ is quasiprojective.
 :::
 
+:::{.remark}
+There is a version for which this does always work where Čech covers are replaced with **hpyercovers**.
+:::
+
+## Čech to Derived Spectral Sequence
+
+
 
