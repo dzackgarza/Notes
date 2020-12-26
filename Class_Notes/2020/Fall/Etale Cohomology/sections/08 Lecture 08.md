@@ -249,6 +249,11 @@ k & i= 0 \\
 
 :::{.example title="?"}
 Let $X/\FF_p$ be a quasiprojective variety.
+What is the following cohomology?
+\[  
+H^i(X_\et, \ul{\FF_p})  = ?
+.\]
+
 In general, the strategy will be to use long exact sequences stemming from spaces where the cohomology is known.
 We only know how to compute with quasicoherent sheaves, so we need to put $\ul{\FF_p}$ in a SES.
 We can use the Frobenius: let $\GG_a = \hom(\wait, \AA^1)$, so $\GG_a(U) = \OO_U(U)$.
@@ -290,26 +295,52 @@ This follows because $x^p-x$ is an étale cover, since the derivative is inverti
 We then get a LES
 \begin{tikzcd}
 0 
-  \ar[r] 
+  \ar[r] \ar[d, equal]
 & H^0(X_\et, \FF_p)
-  \ar[r] 
+  \ar[r] \ar[d, equal]
 & H^0(X_\et, \GG_a)
+  \ar[r, "x^p-x"]\ar[d, equal]
+& H^0(X_\et, \GG_a)
+	\ar[d, equal]\ar[r, "\delta"]
+& H^1(X_\et, \FF_p)
   \ar[r]\ar[d, equal]
-& H^0(X_\et, \GG_a)
-	\ar[d, equal]
+& \cdots
 \\
 0 
   \ar[r] 
 & H^0(X_\et, \FF_p)
   \ar[r] 
 & H^0(X_\et, \OO_X)
-  \ar[r]
+  \ar[r, "x^p-x"]
 & H^0(X_\et, \OO_X)
+  \ar[r, "\delta"]
+& H^1(X_\et, \FF_p)
+  \ar[r]
+& \cdots
 \end{tikzcd}
-Then 
-\[  
-H^i(X_\et, \ul{\FF_p}) 
-.\]
+
+For $X = \AA^1 = \spec \FF_p[t]$, we get
+
+\begin{tikzcd}
+0 
+  \ar[r] 
+& H^0(\AA^1_\et, \FF_p)
+  \ar[r] \ar[d, equal]
+& \FF_p[t] 
+  \ar[r, "t^p-t"]
+& \FF_[t\ 
+	\ar[d, equal]\ar[r, "\delta"]
+& H^1(\AA^1_\et, \FF_p)
+  \ar[r]
+& 0
+\\
+0
+& \FF_p
+& \FF_p[t]
+& 0
+& 0
+& 0
+\end{tikzcd}
 :::
 
 
