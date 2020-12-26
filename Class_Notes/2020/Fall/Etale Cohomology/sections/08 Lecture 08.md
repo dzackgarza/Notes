@@ -230,5 +230,88 @@ Check this.
 
 :::
 
+:::{.remark}
+
+This holds in more generality, but we won't need schemes that don't satisfy this property in this course.
+:::
+
+
+:::{.example title="?"}
+Let $X = \PP^n$ and $\mathcal{F} = \OO_X$, then
+\[  
+H^i(\PP^n_\et, \OO_X^{\et}) = 
+\begin{cases}
+k & i= 0 \\
+0 & i>0
+\end{cases}
+.\]
+:::
+
+:::{.example title="?"}
+Let $X/\FF_p$ be a quasiprojective variety.
+In general, the strategy will be to use long exact sequences stemming from spaces where the cohomology is known.
+We only know how to compute with quasicoherent sheaves, so we need to put $\ul{\FF_p}$ in a SES.
+We can use the Frobenius: let $\GG_a = \hom(\wait, \AA^1)$, so $\GG_a(U) = \OO_U(U)$.
+Then $\FF_p$ are the fixed points of Frobenius, so we get a SES of schemes by carving out these points
+\[  
+0 \to
+\ul{\FF_p} \to
+\GG_a \mapsvia{x^p - x}
+\GG_a \to 
+0
+.\]
+This can be thought of as the sheaf $\OO \to \OO, f \mapsto f^p -f$, but you can also think of it in terms of representing objects $\AA^1$.
+
+:::{.claim}
+This sequence is exact.
+:::
+
+:::{.proof title="?"}
+This is the *Artin-Schreier* exact sequence.
+This is true at the level of representing objects, or it can be checked by hand by showing that $f^p - f = 0 \implies f$ is constant.
+
+For surjectivity, given $f\in \OO_U(U) = \GG_a(U)$, we need to solve $x^p - x = f$ étale-locally on $U$.
+This naturally has a solution after base-changing:
+\begin{tikzcd}
+\GG_a \cross_{\GG_a} U 
+  \ar[r]\ar[d, "\exists g"] &
+\GG_a
+  \ar[d]
+\\
+U 
+  \ar[r, "f"] &
+\GG_a
+\\
+\end{tikzcd}
+The claim is that $g$ is an étale cover.
+This follows because $x^p-x$ is an étale cover, since the derivative is invertible, and thus $g$ is a base change of an étale cover.
+:::
+
+We then get a LES
+\begin{tikzcd}
+0 
+  \ar[r] &
+H^0(X_\et, \FF_p)
+  \ar[r] &
+H^0(X_\et, \GG_a)
+  \ar[r]\ar[d, equal] &
+H^0(X_\et, \GG_a)
+  \ar[r]\ar[d, equal] &
+\\
+0 
+  \ar[r] &
+H^0(X_\et, \FF_p)
+  \ar[r] &
+H^0(X_\et, \OO_X)
+  \ar[r] &
+H^0(X_\et, \OO_X)
+  \ar[r] &
+\end{tikzcd}
+
+Then 
+\[  
+H^i(X_\et, \ul{\FF_p}) 
+.\]
+:::
 
 
