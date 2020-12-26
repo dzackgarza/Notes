@@ -298,3 +298,11 @@ There are potential set-theoretic issues if $X$ is not quasicompact; one fix is 
 :::{.proposition title="?"}
 $\Hc^0(U/X) = \Hc^0(X_\et, \mathcal{F}) = H^0(X_\et, \mathcal{F})$.
 :::
+
+:::{.proof title="?"}
+This is the sheaf condition, i.e. which implies the following sequence is exact:
+\[  
+\mathcal{F}(X) \to \mathcal{F}(U) \to \mathcal{F}(U\cross_X U)
+.\]
+That gives that the first term is equal to the last, and the middle term is the direct limit of the kernel of this sequence and direct limits are exact.
+:::
