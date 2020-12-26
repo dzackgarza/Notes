@@ -1,0 +1,157 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Table of Contents}{2}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Lecture 1}{5}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}References}{5}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Intro}{5}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}What is Etale Cohomology?}{6}{subsection.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}What are the Weil Conjectures?}{7}{subsection.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.1}Euler Product}{8}{subsubsection.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Lecture 2}{11}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Review}{11}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Sketch proof of Serre's analog of the Riemann hypothesis}{12}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Étale Morphisms}{13}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Properties of Étale Morphisms}{18}{subsubsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Generalizing Topologies}{19}{subsection.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}Sites}{19}{subsubsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Lecture 3}{20}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Defining Sites}{20}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Examples of Sites}{21}{subsubsection.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Toward Sheaves of Sites}{23}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Examples of Sheaves of Sites}{24}{subsubsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Étale Cohomology: A Preliminary Definition}{25}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Preview: Morphisms of Sites}{27}{subsection.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Lecture 4: Descent}{27}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Reminder}{27}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Setting up Descent}{28}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Descent Data is Equivalent to Quasicoherent Sheaves}{30}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1}Proof of Theorem}{31}{subsubsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Lecture 5}{34}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Continuation of Proof}{34}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}Proof of Full Faithfulness}{34}{subsubsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2}Proof of Essential Surjectivity}{35}{subsubsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Representable Functors}{37}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1}Proof of Theorem}{37}{subsubsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2}Consequences}{38}{subsubsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Étale Cohomology}{38}{subsection.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.1}Preliminaries}{39}{subsubsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Pushforward and pullback}{39}{paragraph*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Lecture 6: Filling in Gaps, Étale Cohomology}{39}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Gaps}{39}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.1}Pushforwards}{40}{subsubsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2}Pullbacks}{40}{subsubsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Proof: Sheafification Exists for the Étale Site}{43}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Lecture 07}{44}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}What Else We Get From Sheafification}{45}{subsection.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.1}Inverse Images}{45}{subsubsection.7.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Étale Cohomology}{46}{subsection.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}How to Compute: Čech Cohomology}{48}{subsection.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.1}Defining Čech Cohomology}{49}{subsubsection.7.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Lecture 08: Computing Étale Cohomology}{51}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}Čech to Derived Spectral Sequence}{51}{subsection.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Mayer-Vietoris}{52}{subsection.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Lecture 09 (todo)}{58}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Lecture 10 (todo)}{58}{section.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Lecture 11 (todo)}{58}{section.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Lecture 12 (todo)}{58}{section.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}Lecture 13 (todo)}{58}{section.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14}Lecture 14 (todo)}{58}{section.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15}Lecture 15 (todo)}{58}{section.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16}Lecture 16 (todo)}{58}{section.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {17}Lecture 17 (todo)}{58}{section.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {18}Lecture 18 (todo)}{58}{section.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {19}Lecture 19 (todo)}{58}{section.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {20}Lecture 20 (todo)}{58}{section.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21}Lecture 21 (todo)}{58}{section.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {22}Lecture 22 (todo)}{58}{section.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23}Lecture 23 (todo)}{58}{section.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {24}Lecture 24 (todo)}{58}{section.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {25}Lecture 25 (todo)}{58}{section.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {26}Lecture 26 (todo)}{58}{section.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {27}Lecture 27 (todo)}{58}{section.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {28}Lecture 28 (todo)}{58}{section.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {29}Lecture 29 (todo)}{58}{section.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline ToDos}{58}{section*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Definitions}{59}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Theorems}{60}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Exercises}{61}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Figures}{62}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Bibliography}{63}{section*.22}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

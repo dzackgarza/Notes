@@ -198,7 +198,11 @@
 % Fancy symbols
 \usepackage{adforn}
 \usepackage{pgfornament}
+
+% MnSymbol. Undefines lhook for some reason.
+\let\originallhook\lhook
 \usepackage{MnSymbol}% More dots
+\let\lhook\originallhook
 % \udots: SW to NE
 \usepackage{spectralsequences}
 

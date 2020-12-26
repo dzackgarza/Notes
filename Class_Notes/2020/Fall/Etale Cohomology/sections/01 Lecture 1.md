@@ -1,6 +1,11 @@
 # Lecture 1
 
-> References: <https://www.daniellitt.com/tale-cohomology>
+
+## References
+
+
+- <https://www.daniellitt.com/tale-cohomology>
+- [@milneLEC], [@milne_2017], [@freitag_kiehl_2013], [@katz]
 
 ## Intro
 

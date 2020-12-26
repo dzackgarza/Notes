@@ -84,7 +84,7 @@ html: markdown
 		-V current_date="$$(date +%Y-%m-%d%n)" \
 		--self-contained \
 		-o $(FILENAME).html ;
-	rm out1.temp combined.temp *.svg -f || true;
+	#rm out1.temp combined.temp *.svg -f || true;
 
 .SILENT:
 
@@ -92,6 +92,7 @@ clean:
 	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
 	rm *.svg -f || true;
 	rm *.temp -f || true;
+	rm out1.temp combined.temp.
 
 
 reset:
