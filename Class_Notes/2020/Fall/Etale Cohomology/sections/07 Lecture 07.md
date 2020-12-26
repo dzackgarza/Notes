@@ -190,3 +190,10 @@ Check that this is an inverse, it follows from Galois descent.
 $\Gamma(\spec k, \mathcal{F}) = \qty{\iota F}^G$, taking the $G\dash$invariants.
 So $H^0 \mapsvia{\iota}$ to taking invariants, and thus the higher derived functors agree, where the RHS is group cohomology.
 :::
+
+:::{.remark}
+Right now we're only talking about things that look like $\zlz^n$, but the goal when proving the Weil conjectures will be using $\ZZ_\ell$.
+We'll be trying to count some number by taking traces, but if we take these in a ring where some prime is zero, this only gives a congruence class.
+So when we define $\ell\dash$adic cohomology, we'll take some inverse limit.
+If we take the constant sheaf $\ul{\ZZ_\ell}$, this doesn't use the topology and will give the wrong answer.
+:::
