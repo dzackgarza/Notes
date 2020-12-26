@@ -175,7 +175,7 @@ Every cover can be refined to a *finite* cover by affines, using quasicompactnes
 :::
 
 :::{.claim title="2"}
-
+Supposing $X$ is affine and $U\to X$ is an fppf affine cover.
 :::
 
 :::
