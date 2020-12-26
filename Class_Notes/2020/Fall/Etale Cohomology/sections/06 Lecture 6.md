@@ -253,3 +253,8 @@ $\mathcal{F}^a$ is left adjoint to the forgetful functor.
 Prove this!
 The proof used for topological spaces works here.
 :::
+
+:::{.remark}
+We've used a trick in the proof that uses some geometry to avoid needing to apply sheafification twice to obtain a sheaf.
+For general sites, there is an analog of the plus construction.
+:::
