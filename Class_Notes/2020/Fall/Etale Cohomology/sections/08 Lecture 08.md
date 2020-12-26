@@ -21,4 +21,5 @@ We can apply the Čech complex functor to obtain a double complex
 ,\]
 where the horizontal differentials come from the resolution and the vertical come from the Čech complex.
 To any double complex, one can associate two spectral sequences.
+First consider taking horizontal cohomology.
 
