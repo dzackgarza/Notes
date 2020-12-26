@@ -241,4 +241,6 @@ $\mathcal{F}^a$ is a sheaf.
 :::{.proof title="?"}
 This is a subfunctor of a sheaf, and thus a presheaf.
 It's *separable*, meaning the map in the equalizer diagram is injective, and a section is determined by what it is locally.
+This is true for $\mathrm{Esp}(\mathcal{F})$ and thus for $\mathcal{F}^a$.
+Gluing follows from the fact that 
 :::
