@@ -178,5 +178,13 @@ The morphisms are still étale if you take disjoint unions, since you only need 
 :::
 
 
+:::{.lemma title="?"}
+Suppose $0 \to \mathcal{F}\to \mathcal{G}\to \mathcal{K}$ is a sequence of abelian sheaves on $X_{\et}$, then TFAE
+
+1. This sequence is exact,
+
+
+:::
+
 
 
