@@ -234,4 +234,14 @@ What is true is that schemes are $K(\pi, 1)$, so étale cohomology can be comput
 
 ### Defining Čech Cohomology
 
-Suppose $U \da \union U_i \to X$ is an étale cover, and suppose $\mathcal{F}\in \Sh(X_\et)$, then there is a complex of projections:
+Suppose $U \da \Union U_i \to X$ is an étale cover, and suppose $\mathcal{F}\in \Sh(X_\et)$, then there is a complex of projections:
+
+\begin{tikzcd}
+X &
+U \arrow[l] &
+B \arrow[l, shift left]
+  \arrow[l, shift right] &
+C \arrow[l]
+  \arrow[l, shift left=2]
+  \arrow[l, shift right=2]
+\end{tikzcd}
