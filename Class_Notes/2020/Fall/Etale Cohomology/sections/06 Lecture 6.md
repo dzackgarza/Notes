@@ -179,10 +179,17 @@ The morphisms are still étale if you take disjoint unions, since you only need 
 
 
 :::{.lemma title="?"}
-Suppose $0 \to \mathcal{F}\to \mathcal{G}\to \mathcal{K}$ is a sequence of abelian sheaves on $X_{\et}$, then TFAE
+Suppose $0 \to \mathcal{F}\to \mathcal{G}\to \mathcal{H}$ is a sequence of abelian sheaves on $X_{\et}$, then TFAE
 
 1. This sequence is exact,
 
+2. $0 \to \mathcal{F}(U) \to \mathcal{G}(U) \to \mathcal{H}(U)$ is exact for all $U$,
+
+3. $0 \to \mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x} \to \mathcal{H}_{\bar x}$ is exact for all geometric points $\bar x$.
+:::
+
+:::{.remark}
+What is the difference between 1 and 2?
 
 :::
 
