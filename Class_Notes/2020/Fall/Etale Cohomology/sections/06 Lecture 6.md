@@ -248,3 +248,8 @@ Gluing follows from the fact that it is locally defined.
 :::{.claim}
 $\mathcal{F}^a$ is left adjoint to the forgetful functor.
 :::
+
+:::{.exercise title="Important!"}
+Prove this!
+The proof used for topological spaces works here.
+:::
