@@ -220,7 +220,13 @@ Affine covers are cofinal in the diagram of covers.
 We're taking a direct limit and every time we have something nonzero, we kill it by refining the cover.
 :::
 
+We'll now prove this when $X$ is separated and quasicompact.
+Take an affine cover $\mathcal{U}\to X$, e.g. the Zariski open cover, and use the Čech-to-derived spectral sequence.
+Separatedness is used since we'll see things like 5-fold intersections, and we need to know that the cohomology of this is zero, which will be true by the previous result.
 
+:::{.exercise title="?"}
+Check this.
+:::
 
 :::
 
