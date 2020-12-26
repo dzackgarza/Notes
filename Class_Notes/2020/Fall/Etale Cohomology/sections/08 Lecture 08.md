@@ -183,10 +183,35 @@ Let $U=\spec B, X = \spec A$, and $M\in \mods{A}$.
 
 Then we get the complex
 \[  
+M\to
 M\tensor_A B \to 
 M\tensor_A B^{\tensor_A 2} \to 
 M\tensor_A B^{\tensor_A 4} \to 
 \cdots
+,\]
+which is the *Amitsur complex*.
+We showed that $M$ was the kernel of the first map, and we argued that since $B$ was an fppf $A\dash$algebra, we can check this after tensoring with $B$, in which case we had a section which yielded a nullhomotopy.
+This complex is exact as in the argument used in the proof of descent.
+:::
+
+By this claim, we know that
+\[  
+\Hc^{i}(U/X, \mathcal{F}) = 
+\begin{cases}
+\mathcal{F}(X) & i = 0
+0 & i>0
+\end{cases}
+\]
+for $\mathcal{F}$ quasicoherent and $U, X$ affine.
+
+:::{.claim title="3"}
+When $\mathcal{F}$ is quasicoherent and $X$ affine,
+\[  
+\Hc^i(X_\et, \mathcal{F}) = 
+\begin{cases}
+\mathcal{F}(X) & i = 0 \\
+0 & i>0
+\end{cases}
 .\]
 :::
 
