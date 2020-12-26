@@ -148,5 +148,8 @@ The first term is the usual Zariski cohomology of a quasicoherent sheaf, the sec
 :::
 
 :::{.remark}
-The derived functor cohomology $H^i(\Sh(X_{\zar}), \mathcal{F}) = \Ext^i_{\Sh(X_\zar)}(\ul{\ZZ}, \mathcal{F})
+The derived functor cohomology $H^i(\Sh(X_{\zar}), \mathcal{F}) = \Ext^i_{\Sh(X_\zar)}(\ul{\ZZ}, \mathcal{F})$ since it only depends on the category of sheaves.
+This is because we're taking the derived functors of $\Gamma$, which is the same as $\Hom(\ul{\ZZ}, \wait)$.
+This is also equal to $H^i(\Qcoh(X), \mathcal{F}) \da \Ext^i_{\Qcoh(X)}(\OO_X, \mathcal{F})$ for the same reason, since it's true for any sheaf of $\OO_X$ modules.
+This isomorphism is not just formal, since $\Qcoh$ is much smaller than $\Sh$.
 :::
