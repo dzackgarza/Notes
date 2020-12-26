@@ -172,6 +172,10 @@ Moreover, $\ro{s}{V}$ is in the image of $\mathcal{F}$.
 The only problem is that $V$ is not a cover of $U$, so we extend it by choosing $\bar{x'}$ not in the image of $V$, and continue in this way until it forms a cover.
 :::
 
+:::{.remark}
+
+:::
+
 
 
 
