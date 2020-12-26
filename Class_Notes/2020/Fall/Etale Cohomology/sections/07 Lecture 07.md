@@ -22,8 +22,18 @@ The injectives in this category are **divisible** abelian groups.
 :::{.claim}
 The following object works:
 \[  
-\prod_{\bar x} 
+\mathcal{I} \da \prod_{\bar x} (\iota_{\bar x})_* I(\bar x)
 .\]
 :::
+
+We need to check
+
+1. There is a map $\mathcal{F}\to \mathcal{I}$:
+  The RHS is a product, so we map into the components.
+  $\mathcal{F}_{\bar x}$ maps into its own associated skyscraper sheaf where the map is sending sections to their germs.
+  Then the skyscraper sheaf for $\mathcal{F}_{\bar x}$ maps into the skyscraper sheaf for $I(\bar x)$ by pushforward.
+
+2. This is a monomorphism: check on stalks.
+
 :::
 
