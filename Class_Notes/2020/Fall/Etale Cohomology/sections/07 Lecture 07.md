@@ -237,11 +237,24 @@ What is true is that schemes are $K(\pi, 1)$, so étale cohomology can be comput
 Suppose $U \da \Union U_i \to X$ is an étale cover, and suppose $\mathcal{F}\in \Sh(X_\et)$, then there is a complex of projections:
 
 \begin{tikzcd}
-X &
-U \arrow[l] &
-B \arrow[l, shift left]
-  \arrow[l, shift right] &
-C \arrow[l]
+X 
+  &
+U 
+  \arrow[l] 
+  &
+U\cross_X U 
+  \arrow[l, shift left]
+  \arrow[l, shift right] 
+  &
+U\cross_X U \cross_X U 
+  \arrow[l]
   \arrow[l, shift left=2]
   \arrow[l, shift right=2]
+  &
+\cdots
+  \arrow[l, shift left=0.75]
+  \arrow[l, shift right=0.75]
+  \arrow[l, shift left=2.25]
+  \arrow[l, shift right=2.25]
+  &
 \end{tikzcd}
