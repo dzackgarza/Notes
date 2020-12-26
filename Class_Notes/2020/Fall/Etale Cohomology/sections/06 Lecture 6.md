@@ -262,3 +262,7 @@ For general sites, there is an analog of the plus construction.
 :::{.corollary title="?"}
 Colimits exists in $\Sh(X_\et)$.
 :::
+
+:::{.proof title="?"}
+Colimits exist for presheaves, since colimits always exists for sheaves valued in a category where colimits exist.
+:::
