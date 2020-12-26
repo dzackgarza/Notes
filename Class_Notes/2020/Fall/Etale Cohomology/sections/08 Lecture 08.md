@@ -21,5 +21,10 @@ We can apply the Čech complex functor to obtain a double complex
 ,\]
 where the horizontal differentials come from the resolution and the vertical come from the Čech complex.
 To any double complex, one can associate two spectral sequences.
-First consider taking horizontal cohomology.
+First consider taking horizontal cohomology:
+
+\[  
+\Cc(U/X, \mathcal{I}^0) \ar[r] & \mathcal{I}^1(U\cross_X U)
+\Cc(U/X, \mathcal{I}^1) \ar[r] & \mathcal{I}^0(U\cross_X U)
+.\]
 
