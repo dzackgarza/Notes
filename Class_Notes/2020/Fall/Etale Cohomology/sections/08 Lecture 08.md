@@ -138,4 +138,15 @@ Check this.
 :::
 
 
+:::{.theorem title="?"}
+Suppose $X$ is a scheme and $\mathcal{F}\in \Qcoh(X)$ (for example, $\mathcal{F} \da \OO_X$).
+Then there is a canonical isomorphism
+\[  
+H^i(X, \mathcal{F}) \mapsvia{\sim} H^i(X_\et, \mathcal{F}^{\et}) \mapsvia{\sim} H^i(X_{\fppf}, \mathcal{F}^{\fppf})
+,\]
+The first term is the usual Zariski cohomology of a quasicoherent sheaf, the second is the étale cohomology where $\mathcal{F}^{\et}$ is the associated sheaf on the étale site given by pulling back to an étale morphism, and the third is the same on fppf site, since the categories $\QCoh$ are canonically isomorphic.
+:::
 
+:::{.remark}
+The derived functor cohomology $H^i(\Sh(X_{\zar}), \mathcal{F}) = \Ext^i_{\Sh(X_\zar)}(\ul{\ZZ}, \mathcal{F})
+:::
