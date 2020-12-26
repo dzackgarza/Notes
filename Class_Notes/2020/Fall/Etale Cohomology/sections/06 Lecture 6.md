@@ -258,3 +258,7 @@ The proof used for topological spaces works here.
 We've used a trick in the proof that uses some geometry to avoid needing to apply sheafification twice to obtain a sheaf.
 For general sites, there is an analog of the plus construction.
 :::
+
+:::{.corollary title="?"}
+Colimits exists in $\Sh(X_\et)$.
+:::
