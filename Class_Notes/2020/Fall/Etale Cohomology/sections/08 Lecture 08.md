@@ -198,8 +198,8 @@ By this claim, we know that
 \[  
 \Hc^{i}(U/X, \mathcal{F}) = 
 \begin{cases}
-\mathcal{F}(X) & i = 0
-0 & i>0
+\mathcal{F}(X) & i = 0 \\
+0              & i>0.
 \end{cases}
 \]
 for $\mathcal{F}$ quasicoherent and $U, X$ affine.
@@ -210,10 +210,17 @@ When $\mathcal{F}$ is quasicoherent and $X$ affine,
 \Hc^i(X_\et, \mathcal{F}) = 
 \begin{cases}
 \mathcal{F}(X) & i = 0 \\
-0 & i>0
+0              & i>0
 \end{cases}
 .\]
 :::
+
+:::{.proof title="?"}
+Affine covers are cofinal in the diagram of covers.
+We're taking a direct limit and every time we have something nonzero, we kill it by refining the cover.
+:::
+
+
 
 :::
 
