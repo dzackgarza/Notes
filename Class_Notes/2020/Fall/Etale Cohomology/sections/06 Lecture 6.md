@@ -198,5 +198,15 @@ What is the difference between 1 and 2?
 \end{tikzcd}
 :::
 
+:::{.exercise title="?"}
+Prove this!
+The proof used for topological spaces will work here, using the fact that direct limits preserve exactness.
+:::
+
+## Proof that Sh
+
+We can now prove that sheafification exists for $\presh(X_{\et})$.
+Recall that we have a forgetful functor from sheaves to presheaves, and we want to show it has a left adjoint.
+
 
 
