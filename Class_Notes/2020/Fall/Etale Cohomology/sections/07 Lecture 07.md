@@ -35,5 +35,17 @@ We need to check
 
 2. This is a monomorphism: check on stalks.
 
+3. $\mathcal{I}$ is injective: check the lifting property directly.
+
 :::
 
+## What Else We Get From Sheafification
+
+:::{.remark}
+We now know that $\Sh(X_\et)$ is abelian with enough injectives.
+This is true for $\Sh(\tau)$ for any site $\tau$, but this is substantially harder to show.
+:::
+
+### Inverse Images
+
+For $f:X\to Y$, we have
