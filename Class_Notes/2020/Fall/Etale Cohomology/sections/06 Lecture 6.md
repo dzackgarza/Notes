@@ -174,6 +174,7 @@ The only problem is that $V$ is not a cover of $U$, so we extend it by choosing 
 
 :::{.remark}
 This terminates if the scheme is quasicompact, otherwise you may need transfinite induction and thus the axiom of choice.
+The morphisms are still étale if you take disjoint unions, since you only need to check local properties: locally finite presentation, unramified, and flatness.
 :::
 
 
