@@ -265,8 +265,19 @@ Here we interpret each term as the $n\dash$fold intersections in the cover.
 We can apply $\mathcal{F}$ to this diagram to obtain a **cosimplicial diagram** of abelian groups.
 Given such a diagram, you can take the alternating sum as differentials to obtain a chain complex
 \[  
-C^\wait(U/X, \mathcal{F}) \da \qty{ 0 \to \mathcal{F}(U) \to \mathcal{F}(U\cross_X U) \to \cdots}
+\check{C}^\wait(U/X, \mathcal{F}) \da \qty{ 0 \to \mathcal{F}(U) \to \mathcal{F}(U\cross_X U) \to \cdots}
 .\]
 This is the **Čech Complex**.
 :::
 
+:::{.remark}
+On usual topological spaces, there are two notions of the Čech complex: this one, and the **alternating Čech complex** where you throw away self-intersections.
+This doesn't work in this setting, since these can be interesting objects here.
+E.g. there is not necessarily a section $U_i \to U_i \cross_X U_i$.
+:::
+
+:::{.definition title="Total Čech Complex of the Étale Site"}
+\[  
+C
+.\]
+:::
