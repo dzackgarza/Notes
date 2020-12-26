@@ -14,5 +14,5 @@ There is a version for which this does always work where Čech covers are replac
 
 ## Čech to Derived Spectral Sequence
 
-
+Since we have enough injectives, take an injective resolution $\mathcal{F}\to \mathcal{I}^0 \to \cdots$ which is exact and each $\mathcal{I}^j$ is injective.
 
