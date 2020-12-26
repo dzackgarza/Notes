@@ -1,6 +1,6 @@
 # Lecture 08: Computing Étale Cohomology
 
-Recall the definition of $\check{C}(U/X, \mathcal{F})$ and $\check{C}(X_\et, \mathcal{F})$ (\cref{}).
+Recall the definition of $\check{C}(U/X, \mathcal{F})$ and $\check{C}(X_\et, \mathcal{F})$ (\cref{def:cech_cohomology}).
 
 
 :::{.warnings}
@@ -23,8 +23,9 @@ where the horizontal differentials come from the resolution and the vertical com
 To any double complex, one can associate two spectral sequences.
 First consider taking horizontal cohomology:
 
-\[  
-\Cc(U/X, \mathcal{I}^0) \ar[r] & \mathcal{I}^1(U\cross_X U)
-\Cc(U/X, \mathcal{I}^1) \ar[r] & \mathcal{I}^0(U\cross_X U)
-.\]
+\begin{tikzcd}
+\vdots & \vdots &  \iddots \\
+\Cc(U/X, \mathcal{I}^1) \ar[r] & \mathcal{I}^1(U\cross_X U) \ar[r] & \cdots \\
+\Cc(U/X, \mathcal{I}^0) \ar[u]\ar[r] & \mathcal{I}^0(U\cross_X U)\ar[u] \ar[r] & \cdots
+\end{tikzcd}
 

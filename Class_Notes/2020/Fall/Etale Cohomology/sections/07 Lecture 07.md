@@ -288,7 +288,7 @@ Note that taking direct limits is exact, so we can do this in either order.
 There are potential set-theoretic issues if $X$ is not quasicompact; one fix is to only work in the finitely-presented setting, which is the choice we'll make here.
 :::
 
-:::{.definition title="Čech Cohomology"}
+:::{.definition title="Čech Cohomology" ref="def:cech_cohomology"}
 \[  
 \check{H}^i(U/X, \mathcal{F}) &\da H^i(\check{C}^\wait (U/X, \mathcal{F})) \\
 \check{H}^ik(X_\et, \mathcal{F}) &\da H^i(\check{C}^\wait (X_\et, \mathcal{F})
