@@ -148,7 +148,7 @@ Assume $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is not surjective, and th
 We can construct 2 maps to the skyscraper sheaf:
 \begin{tikzcd}
  \mathcal{F} \ar[r] &
- \mathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
+ \dmathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
   \qty{\iota_{\bar x}}_* \Lambda
 \end{tikzcd}
 where $f$ is the "natural map" given by taking a section to $\mathcal{G}$ and considering its stalk.
