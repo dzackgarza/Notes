@@ -349,5 +349,26 @@ Check this!
 
 :::
 
-We need one more thing to show that Čech cohomology is isomorphic to the derived functor cohomology.
+We need one more thing to show that Čech cohomology is isomorphic to the derived functor cohomology: 
+
+:::{.theorem title="?"}
+If for all SESs of sheaves 
+\[  
+0 \to A \to B \to C\to 0 && \in \Sh(X_\et)
+\]
+we have an exact sequence
+\[  
+0 \to \check{C}(X_\et, A) \to \check{C}(X_\et, B) \to \check{C}(X_\et,C) \to 0 && \in \Sh(X_\et)
+\]
+then we get a LES in cohomology, then
+\[  
+\Hc^{i}(X_\et, \mathcal{F}) \mapsvia{\sim} H^i(X_\et, \mathcal{F}) && \text{for all }i
+.\]
+
+:::
+
+:::{.proof title="?"}
+This comes from the theory of universal $\delta\dash$functors.
+A derived functor is determined uniquely by $H^0$, what they do on injectives, and the fact that the LES from a SES is functorial.
+:::
 
