@@ -278,7 +278,18 @@ E.g. there is not necessarily a section $U_i \to U_i \cross_X U_i$.
 
 :::{.definition title="Total Čech Complex of the Étale Site"}
 \[  
-\check{C}(X_\et, \mathcal{F}) \da \stacksymbol{}{U\to X}\directlim 
+\check{C}^\wait (X_\et, \mathcal{F}) \da \stacksymbol{}{U\to X}\directlim 
 ,\]
 where the limit is taken over all covering families.
+:::
+
+:::{.definition title="Čech Cohomology"}
+\[  
+\check{H}^i(U/X, \mathcal{F}) &\da H^i(\check{C}^\wait (U/X, \mathcal{F})) \\
+\check{H}^ik(X_\et, \mathcal{F}) &\da H^i(\check{C}^\wait (X_\et, \mathcal{F})
+.\]
+:::
+
+:::{.proposition title=""}
+$\Hc^0(U/X) = \Hc^0(X_\et, \mathcal{F})$.
 :::
