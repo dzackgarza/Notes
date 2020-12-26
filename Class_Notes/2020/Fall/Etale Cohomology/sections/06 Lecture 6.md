@@ -101,7 +101,7 @@ Taking $\spec k$ to be the algebraic closure of the function field of $X$ is $X$
 
 :::{.example title="?"}
 Let $\mathcal{F} = \underline{\zlz}$ and $\bar x\injects X$ any geometric point.
-Then the pullback is given by $\iota_{\bar x}^* \underline{\zlz} = \zlz$.
+Then the pullback is given by $\iota_{\bar x}^* \qty{\underline{\zlz}} = \zlz$.
 If $U$ had more than one connected component, then the first definition would involve a limit over $\mathcal{F}(U)$ which are all copies of $\zlz$.
 But given this, you can always find a connected covering.
 So the $(U, \bar u)$ which are *connected* are actually cofinal.[^cofinal_notes]
@@ -148,14 +148,14 @@ Assume $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is not surjective, and th
 We can construct 2 maps to the skyscraper sheaf:
 \begin{tikzcd}
  \mathcal{F} \ar[r] &
- \dmathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
   \qty{\iota_{\bar x}}_* \Lambda
 \end{tikzcd}
 where $f$ is the "natural map" given by taking a section to $\mathcal{G}$ and considering its stalk.
 Since $\Lambda$ was the cokernel, both compositions from $\mathcal{F}$ are zero:
 \begin{tikzcd}
- \mathcal{F} \ar[r]\ar[rr, bend left, "0"'] \ar[rr, bend right, "0"'] &
- \mathcal{G} \ar[r, shift right=0.75ex, "0"] \ar[r, shift left=0.75ex, "f"] &
+ \mathcal{F} \ar[r]\ar[rr, bend left, "0"] \ar[rr, bend right, "0"'] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
   \qty{\iota_{\bar x}}_* \Lambda
 \end{tikzcd}
 which forces $\Lambda = 0$, a contradiction.
