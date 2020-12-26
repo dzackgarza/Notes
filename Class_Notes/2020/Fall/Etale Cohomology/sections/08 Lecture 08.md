@@ -104,6 +104,7 @@ Prove this.
 :::
 
 Given thus, $E_2$ vanishes outside the first 2 columns.
+The differentials have bidegree $(1, -2)$
 
 \begin{tikzcd}
 
