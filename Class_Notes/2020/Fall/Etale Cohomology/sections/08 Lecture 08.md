@@ -150,11 +150,11 @@ The first term is the usual Zariski cohomology of a quasicoherent sheaf, the sec
 :::{.remark}
 The derived functor cohomology 
 \[
-H^i(\Sh(X_{\zar}), \mathcal{F}) = \Ext^i_{\Sh(X_\zar)}(\ul{\ZZ}, \mathcal{F})
+H^i(\Sh(X_{\zar}), \mathcal{F}) \da \Ext^i_{\Sh(X_\zar)}(\ul{\ZZ}, \mathcal{F})
 \]
 since it only depends on the category of sheaves.
 This is because we're taking the derived functors of $\Gamma$, which is the same as $\Hom(\ul{\ZZ}, \wait)$.
-This is also equal to 
+This is equal to 
 \[
 H^i(\Qcoh(X), \mathcal{F}) \da \Ext^i_{\Qcoh(X)}(\OO_X, \mathcal{F})
 \]
@@ -164,6 +164,16 @@ The reason is that injective quasicoherent sheaves are flasque (?), so it also c
 In general, it's much harder to be an injective object in the $\Sh$ than it is in $\Qcoh$, since it has to satisfy a lifting property with respect to more maps.
 
 The main takeaway: we already showed $\Qcoh(X_\et) \cong \Qcoh(X_\zar)$, but now we have this isomorphism in a much larger category.
+:::
+
+
+:::{.proof title="?"}
+We'll prove this in a special case: if $X$ is quasicompact and separated, Čech cohomology computes derived functor cohomology.
+
+:::{.claim}
+Every cover can be refined to a *finite* cover by affines, using quasicompactness.
+:::
+
 :::
 
 
