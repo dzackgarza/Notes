@@ -190,7 +190,12 @@ Suppose $0 \to \mathcal{F}\to \mathcal{G}\to \mathcal{H}$ is a sequence of abeli
 
 :::{.remark}
 What is the difference between 1 and 2?
-
+1 means that $\mathcal{F}\to \mathcal{G}$ is a monomorphism and the kernel of the map $f: \mathcal{G}\to \mathcal{H}$, i.e. the following diagram is an equalizer:
+\begin{tikzcd}
+ \mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "f"] \ar[r, shift left=0.75ex, "0"] &
+  \mathcal{H}
+\end{tikzcd}
 :::
 
 
