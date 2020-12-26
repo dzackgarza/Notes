@@ -237,3 +237,8 @@ Here $\mathrm{Esp}(\mathcal{F})$ is like the product of all of the stalks, and $
 :::{.claim}
 $\mathcal{F}^a$ is a sheaf.
 :::
+
+:::{.proof title="?"}
+This is a subfunctor of a sheaf, and thus a presheaf.
+It's *separable*, meaning the map in the equalizer diagram is injective, and a section is determined by what it is locally.
+:::
