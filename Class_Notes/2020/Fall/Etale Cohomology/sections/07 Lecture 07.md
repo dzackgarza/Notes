@@ -315,7 +315,24 @@ $\Hc^{i> 0} (U/X, \mathcal{I}) \cong \Hc^{i> 0}(X_\et, \mathcal{I})$ if $\mathca
 It's enough to show that $\check{C}^\wait(U/X, \mathcal{I})$ is exact away from 0.
 This is the statement of the first equality, and the second equality is the direct limit of it.
 
-1. Let $\ZZ_U \da \ZZ[\hom_X(\wait, U)]$ be the free abelian group on this functor.
+:::{.claim title="1"}
+There is an alternative characterization of the Čech complex.
+Let $\ZZ_U \da \ZZ[\hom_X(\wait, U)]$ be the free abelian group on this functor, i.e. to evaluate this on a scheme $V$ one takes $\hom_X(V, U)$ and the free abelian group on that.
+Then 
+\[  
+\check{C}^\wait(U/X, \mathcal{I}) = \qty{ \hom(\ZZ_U, \mathcal{I}) \to \hom(\ZZ_{U\cross_X U}, \mathcal{I}) \to \hom(\ZZ_{U\cross_X U \cross_X U}, \mathcal{I}) \to \cdots}
+.\]
+This follows from Yoneda's lemma.
+:::
+
+:::{.claim title="2"}
+It's enough to show that 
+\[  
+\ZZ \to \ZZ_{U} \to \ZZ_{U\cross_X U} \to \cdots
+\]
+is exact.
+This is because $\hom(\wait, \mathcal{I})$ is exact
+:::
 :::
 
 
