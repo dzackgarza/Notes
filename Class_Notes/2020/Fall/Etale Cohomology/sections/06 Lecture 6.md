@@ -130,7 +130,7 @@ I.e. a given section of $\mathcal{G}$ may not be in the image of $\mathcal{F}$, 
 
 :::
 
-:::{.proof title="2 $\implies$ 3"}
+:::{.proof title="2 $\implies$ 1"}
 Suppose we have
 \begin{tikzcd}
 \mathcal{F} \ar[r] &
@@ -138,7 +138,38 @@ Suppose we have
 \mathcal{H}
 \end{tikzcd}
 where the 2 compositions agree, then we want to show that $a=b$.
-Let $s$ be a section of $\mathcal{G}$ on $U$
+Let $s$ be a section of $\mathcal{G}$ on $U$, we want to know that $a(s) = b(s)$.
+By (2), we can replace $s$ with $s'$ coming from $\mathcal{F}$, so $a(s') = b(s')$ since the compositions agree.
+:::
+
+:::{.proof title="1 $\implies$ 3"}
+We want to show that given an epimorphisms, the map on every stalk is surjective.
+Assume $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is not surjective, and thus has a nontrivial cokernel $\Lambda$.
+We can construct 2 maps to the skyscraper sheaf:
+\begin{tikzcd}
+ \mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"] \ar[r, shift left=0.75ex, "f"] &
+  \qty{\iota_{\bar x}}_* \Lambda
+\end{tikzcd}
+where $f$ is the "natural map" given by taking a section to $\mathcal{G}$ and considering its stalk.
+Since $\Lambda$ was the cokernel, both compositions from $\mathcal{F}$ are zero:
+\begin{tikzcd}
+ \mathcal{F} \ar[r]\ar[rr, bend left, "0"] \ar[rr, bend right, "0"] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"] \ar[r, shift left=0.75ex, "f"] &
+  \qty{\iota_{\bar x}}_* \Lambda
+\end{tikzcd}
+which forces $\Lambda = 0$, a contradiction.
+:::
+
+:::{.proof title="3 $\implies$ 2"}
+Given $s\in \mathcal{G}(U)$, we want to produce a $U' \to U$ such that $\ro{s}{U'}$ comes from $\mathcal{F}$.
+Picking any $\bar x\in U$, since $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is surjective, there is some étale neighborhood of $\bar x$, say $(V, \bar v)$ where $V\to X$ and $\bar v \mapsto \bar x$:
+\begin{tikzcd}
+\bar v \ar[r]\ar[d] & V\ar[d] \\
+x \ar[r, "\iota_{\bar x}", hooked] & X
+\end{tikzcd}
+Moreover, $\ro{s}{V}$ is in the image of $\mathcal{F}$.
+The only problem is that $V$ is not a cover of $U$, so we extend it by choosing $\bar{x'}$ not in the image of $V$, and continue in this way until it forms a cover.
 :::
 
 
