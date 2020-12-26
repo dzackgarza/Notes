@@ -113,3 +113,5 @@ Note that having any cofinal diagrams in a limit means that the limit will only 
 :::{.example title="?"}
 Let $\mathcal{F} = \OO_{X}^{\et}$, then the pullback is $\iota_{\bar x}^* \OO_X^{\et} = \OO_{X\bar x}^{\mathrm{sh}}$, which is the strict Henselization (where we're picking up the version that has an algebraically closed residue field).
 :::
+
+
