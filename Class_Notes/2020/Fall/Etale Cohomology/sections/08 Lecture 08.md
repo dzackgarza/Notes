@@ -67,5 +67,16 @@ See Tohoku or Hartshorne, and prove this using the Čech to derived functor spec
 
 ## Mayer-Vietoris
 
+:::{.proposition title="?"}
+Let $U = U_0 \union U_1$ with each $U_i$ a Zariski open subset.
+Then there exists a functorial LES
+\[  
+H^s(U, \mathcal{F}) \mapsvia{\res} 
+H^s(U_0, \mathcal{F}) \oplus H^s(U_1, \mathcal{F}) \mapsvia{\res} 
+H^s(U_0 \intersect U_1, \mathcal{F}) \mapsvia{\delta}
+H^{s+1}(U, \mathcal{F})
+.\]
+:::
+
 
 
