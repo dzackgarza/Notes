@@ -125,8 +125,22 @@ Check that pullback is exact.
 
 2. $H^{>0}(\mathcal{I}) = 0$ for $\mathcal{I}$ injective.
 
-3. Given a SES
+3. Given a SES of sheaves in $\Sh(X_\et)$
 \[  
 0 \to A\to B \to C \to 0
-.\]
+\]
+  there is a LES
+  \[  
+  \cdots \to H^{i+1}(X_\et, C) \mapsvia{\delta} H^i(X_\et, A) \to \cdots
+  .\]
+:::
+
+:::{.example title="?"}
+Suppose $k$ is a field, not necessarily algebraically closed, and consider $\Sh(\qty{\spec k}_\et)$.
+Let $G \da \Gal(k^s/k)$ for a choice of separable closure $k^s/k$.
+
+:::{.claim}
+There is a functor from $\Sh(\qty{\spec k}_\et)$ to discrete $G\dash$modules inducing an equivalence of categories.
+:::
+
 :::
