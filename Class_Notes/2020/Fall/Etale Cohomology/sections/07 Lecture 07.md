@@ -306,3 +306,16 @@ This is the sheaf condition, i.e. which implies the following sequence is exact:
 .\]
 That gives that the first term is equal to the last, and the middle term is the direct limit of the kernel of this sequence and direct limits are exact.
 :::
+
+:::{.proposition title="?"}
+$\Hc^{i> 0} (U/X, \mathcal{I}) \cong \Hc^{i> 0}(X_\et, \mathcal{I})$ if $\mathcal{I}$ is injective.
+:::
+
+:::{.proof title="?"}
+It's enough to show that $\check{C}^\wait(U/X, \mathcal{I})$ is exact away from 0.
+This is the statement of the first equality, and the second equality is the direct limit of it.
+
+1. Let $\ZZ_U \da \ZZ[\hom_X(\wait, U)]$ be the free abelian group on this functor.
+:::
+
+
