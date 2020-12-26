@@ -71,11 +71,43 @@ See Tohoku or Hartshorne, and prove this using the Čech to derived functor spec
 Let $U = U_0 \union U_1$ with each $U_i$ a Zariski open subset.
 Then there exists a functorial LES
 \[  
+\cdots \to
 H^s(U, \mathcal{F}) \mapsvia{\res} 
 H^s(U_0, \mathcal{F}) \oplus H^s(U_1, \mathcal{F}) \mapsvia{\res} 
 H^s(U_0 \intersect U_1, \mathcal{F}) \mapsvia{\delta}
-H^{s+1}(U, \mathcal{F})
+H^{s+1}(U, \mathcal{F}) \to 
+\cdots
 .\]
+:::
+
+:::{.proof title="?"}
+Apply the Čech to derived spectral sequence to the cover $\mathcal{U} \da U_0 \disjoint U_1 \to U$.
+This says take
+\[  
+\mathcal{F}(\mathcal{U}) \to 
+\mathcal{F}((\mathcal{U})^{\cross_U 2} ) \to
+\mathcal{F}((\mathcal{U})^{\cross_U 3} ) \to
+\cdots
+.\]
+None of these objects are empty, which doesn't happen with the usual Čech complex of an open cover, where the alternating complex is taken which doesn't see all of these.
+
+:::{.claim}
+This complex is quasi-isomorphic to the 2-term complex
+\[  
+\mathcal{F}(U_0 \disjoint U_1) = \mathcal{F}(U_0) \cross \mathcal{F}(U_1) \to
+\mathcal{F}(U_0 \intersect U_1)
+.\]
+:::
+
+:::{.exercise title="?"}
+Prove this.
+:::
+
+Given thus, $E_2$ vanishes outside the first 2 columns.
+
+\begin{tikzcd}
+
+\end{tikzcd}
 :::
 
 
