@@ -60,4 +60,7 @@ The spectral sequence thus converges in the following way:
 \Hc^i(U, \mathcal{H}^j(\mathcal{F})) \abuts H^{i+j}(X_\et, \mathcal{F})
 .\]
 
-
+:::{.exercise title="?"}
+Show that if $\Cc(X_\et, \wait)$ is exact on $\Sh^{\ab}(X_\et)$, then $\Hc^\wait \cong H^\wait$.
+See Tohoku or Hartshorne.
+:::
