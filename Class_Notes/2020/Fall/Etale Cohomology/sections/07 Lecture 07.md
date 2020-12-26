@@ -48,4 +48,17 @@ This is true for $\Sh(\tau)$ for any site $\tau$, but this is substantially hard
 
 ### Inverse Images
 
-For $f:X\to Y$, we have
+For $f:X\to Y$, we have a map on presheaves
+\[  
+f^{-1} :\Presh(Y_{\et}) &\to \Presh(X_\et) \\
+\mathcal{F}(V\mapsvia{\et} X) &\mapsto \directlim \mathcal{F}(U\to X)
+,\]
+where the limit is over diagrams of the form
+\begin{tikzcd}
+V \ar[r] \ar[d, "\et"] & U \ar[d, "\et"] \\
+Y \ar[r] & X 
+\end{tikzcd}
+
+:::{.fact}
+
+:::
