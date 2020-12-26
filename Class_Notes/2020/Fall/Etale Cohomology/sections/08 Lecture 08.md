@@ -323,24 +323,31 @@ For $X = \AA^1 = \spec \FF_p[t]$, we get
 
 \begin{tikzcd}
 0 
-  \ar[r] 
+  \ar[r] \ar[d, equal]
 & H^0(\AA^1_\et, \FF_p)
   \ar[r] \ar[d, equal]
 & \FF_p[t] 
-  \ar[r, "t^p-t"]
-& \FF_[t\ 
+  \ar[r, "t^p-t"]\ar[d, equal]
+& \FF_p[t] 
 	\ar[d, equal]\ar[r, "\delta"]
 & H^1(\AA^1_\et, \FF_p)
-  \ar[r]
+  \ar[r]\ar[d, equal]
 & 0
 \\
 0
+  \ar[r]
 & \FF_p
+  \ar[r]
 & \FF_p[t]
-& 0
-& 0
+  \ar[r]
+& \FF_p[t]
+  \ar[r]
+& \cok(t^p - t) 
+  \ar[r]
 & 0
 \end{tikzcd}
+In general, this cokernel is very large.
+This is why étale cohomology with $\FF_p$ coefficients is not particularly well-behaved, although taking a projective variety would yield finite dimensional objects here.
 :::
 
 
