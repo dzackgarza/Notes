@@ -154,9 +154,28 @@ E.g. the Tate module (the inverse limit of torsion) of an elliptic curve is not 
 
 To prove this claim, the map is given by
 \[  
-\Sh(\qty{\spec k}_\et) &\to \text{Discrete $G\dash$modules} \\
+\iota: \Sh(\qty{\spec k}_\et) &\to \text{Discrete $G\dash$modules} \\
 \mathcal{F} &\mapsto \stacksymbol{}{k \subset L \subset k^s}\inverselim \mathcal{F}(\spec L)
 .\]
-The idea here: you want to evaluate $\mathcal{F}$ on $k^s$, which doesn't make sense because $k^s$ is not locally finitely-presented
+The idea here: you want to evaluate $\mathcal{F}$ on $k^s$, which doesn't make sense because $k^s$ is not locally finitely-presented, so we take a limit instead.
+The claim is that the image is a discrete $G\dash$module and this is an equivalence.
+This follows because each term is, and taking limits preserves this property.
+:::
 
+:::{.corollary title="?"}
+$H^i(\qty{\spec K}_\et, \mathcal{F} ) = H^i(G,\iota \mathcal{F})$,
+which is the Galois cohomology.
+:::
+
+Why?
+Derived functors only depend on the ambient category, so it suffices to check $H^0$.
+
+:::{.proof title="of claim"}
+We get a $G\dash$module since $G$ acts on the entire diagram and thus its limit.
+
+:::{.exercise title="?"}
+Check that this is a discrete $G\dash$module.
+:::
+
+There is an inverse functor
 :::
