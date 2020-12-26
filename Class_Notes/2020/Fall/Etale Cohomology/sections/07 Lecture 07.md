@@ -121,5 +121,12 @@ Check that pullback is exact.
 :::{.proposition title="Properties of étale cohomology"}
 \envlist
 
-1. $H^0(X_\et)$
+1. $H^0(X_\et, \mathcal{F}) = \mathcal{F}(X)$, aka the global sections $\Gamma(X, \mathcal{F})$.
+
+2. $H^{>0}(\mathcal{I}) = 0$ for $\mathcal{I}$ injective.
+
+3. Given a SES
+\[  
+0 \to A\to B \to C \to 0
+.\]
 :::
