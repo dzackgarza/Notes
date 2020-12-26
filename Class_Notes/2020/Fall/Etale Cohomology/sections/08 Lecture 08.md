@@ -170,8 +170,12 @@ The main takeaway: we already showed $\Qcoh(X_\et) \cong \Qcoh(X_\zar)$, but now
 :::{.proof title="?"}
 We'll prove this in a special case: if $X$ is quasicompact and separated, Čech cohomology computes derived functor cohomology.
 
-:::{.claim}
+:::{.claim title="1"}
 Every cover can be refined to a *finite* cover by affines, using quasicompactness.
+:::
+
+:::{.claim title="2"}
+
 :::
 
 :::
