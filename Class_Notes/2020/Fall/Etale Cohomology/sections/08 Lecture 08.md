@@ -20,5 +20,5 @@ We can apply the Čech complex functor to obtain a double complex
 \Cc^\wait(U/X, \mathcal{I}^0) \to \Cc^\wait(U/X, \mathcal{I}^1) \to \cdots
 ,\]
 where the horizontal differentials come from the resolution and the vertical come from the Čech complex.
-To any double complex, one can associate two 
+To any double complex, one can associate two spectral sequences.
 
