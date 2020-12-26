@@ -290,24 +290,22 @@ This follows because $x^p-x$ is an étale cover, since the derivative is inverti
 We then get a LES
 \begin{tikzcd}
 0 
-  \ar[r] &
-H^0(X_\et, \FF_p)
-  \ar[r] &
-H^0(X_\et, \GG_a)
-  \ar[r]\ar[d, equal] &
-H^0(X_\et, \GG_a)
-  \ar[r]\ar[d, equal] &
+  \ar[r] 
+& H^0(X_\et, \FF_p)
+  \ar[r] 
+& H^0(X_\et, \GG_a)
+  \ar[r]\ar[d, equal]
+& H^0(X_\et, \GG_a)
+	\ar[d, equal]
 \\
 0 
-  \ar[r] &
-H^0(X_\et, \FF_p)
-  \ar[r] &
-H^0(X_\et, \OO_X)
-  \ar[r] &
-H^0(X_\et, \OO_X)
-  \ar[r] &
+  \ar[r] 
+& H^0(X_\et, \FF_p)
+  \ar[r] 
+& H^0(X_\et, \OO_X)
+  \ar[r]
+& H^0(X_\et, \OO_X)
 \end{tikzcd}
-
 Then 
 \[  
 H^i(X_\et, \ul{\FF_p}) 
