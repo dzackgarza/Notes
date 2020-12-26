@@ -134,7 +134,7 @@ I.e. a given section of $\mathcal{G}$ may not be in the image of $\mathcal{F}$, 
 Suppose we have
 \begin{tikzcd}
 \mathcal{F} \ar[r] &
- \mathcal{G} \ar[r, shift right=0.75ex, "a"] \ar[r, shift left=0.75ex, "b"] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "a"'] \ar[r, shift left=0.75ex, "b"] &
 \mathcal{H}
 \end{tikzcd}
 where the 2 compositions agree, then we want to show that $a=b$.
@@ -148,13 +148,13 @@ Assume $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is not surjective, and th
 We can construct 2 maps to the skyscraper sheaf:
 \begin{tikzcd}
  \mathcal{F} \ar[r] &
- \mathcal{G} \ar[r, shift right=0.75ex, "0"] \ar[r, shift left=0.75ex, "f"] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
   \qty{\iota_{\bar x}}_* \Lambda
 \end{tikzcd}
 where $f$ is the "natural map" given by taking a section to $\mathcal{G}$ and considering its stalk.
 Since $\Lambda$ was the cokernel, both compositions from $\mathcal{F}$ are zero:
 \begin{tikzcd}
- \mathcal{F} \ar[r]\ar[rr, bend left, "0"] \ar[rr, bend right, "0"'] &
+ \mathcal{F} \ar[r]\ar[rr, bend left, "0"'] \ar[rr, bend right, "0"'] &
  \mathcal{G} \ar[r, shift right=0.75ex, "0"] \ar[r, shift left=0.75ex, "f"] &
   \qty{\iota_{\bar x}}_* \Lambda
 \end{tikzcd}
