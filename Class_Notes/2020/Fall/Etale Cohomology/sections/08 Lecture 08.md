@@ -24,7 +24,7 @@ To any double complex, one can associate two spectral sequences.
 First consider taking horizontal cohomology:
 
 \begin{tikzcd}
-\vdots & \vdots &  \iddots \\
+\vdots & \vdots &  \reflectbox{\ddots} \\
 \Cc(U/X, \mathcal{I}^1) \ar[r] & \mathcal{I}^1(U\cross_X U) \ar[r] & \cdots \\
 \Cc(U/X, \mathcal{I}^0) \ar[u]\ar[r] & \mathcal{I}^0(U\cross_X U)\ar[u] \ar[r] & \cdots
 \end{tikzcd}
