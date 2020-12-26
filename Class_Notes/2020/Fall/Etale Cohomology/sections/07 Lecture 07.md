@@ -212,7 +212,7 @@ Under the above correspondence, this goes to $\hom(\wait, E)$ since an $L\dash$p
   Note that this already happens for bad topological spaces, where Čech doesn't always compute sheaf cohomology, and this can be true for schemes as well.
   Ex: $\AA_2$ with a doubled origin.
 
-2. Čech cohomology is not actually "computable".
+2. Čech cohomology is not actually "computable", since acyclic covers do not generally exist.
 :::
 
 When *does* Čech cohomology compute sheaf cohomology?
@@ -221,4 +221,17 @@ If you define a cover of your space, for each object of the cover and each doubl
 :::{.example title="?"}
 Take an algebraic curve, say as an open subset of a Riemann surface.
 There are no étale maps to it which have this property: taking any Zariski open subset (thinking over $k=\CC$) yields lots of interesting cohomology.
+So you can never find an acyclic cover.
 :::
+
+:::{.remark}
+This is one of the major differences between étale cohomology and singular cohomology of manifolds, and it makes things much more difficult.
+When defining an acyclic cover for manifolds, you usually look for a cover by contractible objects, which works because manifolds are locally contractible.
+Schemes are generally not locally acyclic.
+What is true is that schemes are $K(\pi, 1)$, so étale cohomology can be computed in terms of group cohomology.
+:::
+
+
+### Defining Čech Cohomology
+
+Suppose $U \da \union U_i \to X$ is an étale cover, and suppose $\mathcal{F}\in \Sh(X_\et)$, then there is a complex of projections:
