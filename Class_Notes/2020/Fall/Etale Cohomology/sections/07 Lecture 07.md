@@ -322,8 +322,8 @@ Then
 \[  
 \check{C}^\wait(U/X, \mathcal{I}) = \qty{ \hom(\ZZ_U, \mathcal{I}) \to \hom(\ZZ_{U\cross_X U}, \mathcal{I}) \to \hom(\ZZ_{U\cross_X U \cross_X U}, \mathcal{I}) \to \cdots}
 .\]
-This follows from Yoneda's lemma.
 :::
+This follows from Yoneda's lemma.
 
 :::{.claim title="2"}
 It's enough to show that 
@@ -331,8 +331,23 @@ It's enough to show that
 \ZZ \to \ZZ_{U} \to \ZZ_{U\cross_X U} \to \cdots
 \]
 is exact.
-This is because $\hom(\wait, \mathcal{I})$ is exact
 :::
+This is because $\hom(\wait, \mathcal{I})$ is exact, which is precisely how we obtain the complex from this in the previous claim.
+
+:::{.claim title="3"}
+Let $S$ be a set, then
+\[  
+\ZZ \to \ZZ[S] \to \ZZ[S\cross S] \to \cdots
+\]
+is always exact.
+:::
+This follows for the same reason that the Amitsur complex is exact: base change to $\ZZ^S$, which is a flat $\ZZ\dash$module, and thus we get a nullhomotopy.
+
+:::{.exercise title="?"}
+Check this!
 :::
 
+:::
+
+We need one more thing to show that Čech cohomology is isomorphic to the derived functor cohomology.
 
