@@ -197,3 +197,28 @@ We'll be trying to count some number by taking traces, but if we take these in a
 So when we define $\ell\dash$adic cohomology, we'll take some inverse limit.
 If we take the constant sheaf $\ul{\ZZ_\ell}$, this doesn't use the topology and will give the wrong answer.
 :::
+
+:::{.example title="?"}
+For $E$ an elliptic curve, $E(k^s)$ is a discrete $G\dash$module.
+Under the above correspondence, this goes to $\hom(\wait, E)$ since an $L\dash$point of the curve is the same as a Galois-invariant $k^s\dash$point.
+:::
+
+## How to Compute: Čech Cohomology
+
+:::{.warnings}
+\envlist
+
+1. Čech cohomology does not always compute étale cohomology!
+  Note that this already happens for bad topological spaces, where Čech doesn't always compute sheaf cohomology, and this can be true for schemes as well.
+  Ex: $\AA_2$ with a doubled origin.
+
+2. Čech cohomology is not actually "computable".
+:::
+
+When *does* Čech cohomology compute sheaf cohomology?
+If you define a cover of your space, for each object of the cover and each double intersect, the derived functors vanish.
+
+:::{.example title="?"}
+Take an algebraic curve, say as an open subset of a Riemann surface.
+There are no étale maps to it which have this property: taking any Zariski open subset (thinking over $k=\CC$) yields lots of interesting cohomology.
+:::
