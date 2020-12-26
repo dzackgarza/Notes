@@ -91,6 +91,7 @@ where the limit is taken over diagrams of the form
 x \ar[r, "\iota_{\bar x}", hooked] & X
 \end{tikzcd}
 where $\bar u$ is a geometric point and $Y\to X$ is étale.
+$\mathcal{F}_{\bar x}$ is referred to as the **stalk of $\mathcal{F}$ at $\bar x$**.
 :::
 
 :::{.remark}
@@ -114,7 +115,16 @@ Note that having any cofinal diagrams in a limit means that the limit will only 
 Let $\mathcal{F} = \OO_{X}^{\et}$, then the pullback is $\iota_{\bar x}^* \OO_X^{\et} = \OO_{X\bar x}^{\mathrm{sh}}$, which is the strict Henselization (where we're picking up the version that has an algebraically closed residue field).
 :::
 
+Some useful things about stalks: we can check things like isomorphisms locally on them.
 
+:::{.lemma title="?"}
+Suppose $\mathcal{F}, \mathcal{G}$ are sheaves of abelian groups on $\X_{\et}$.
+Then TFAE
+
+1. $\mathcal{F}\to \mathcal{G}$ is an epimorphism,
+2. $\mathcal{F}\to \mathcal{G}$ is locally surjective, i.e. given $s\in \mathcal{G}(U)$ there exists $U'\to U$ such that $\ro{s}{U'}$ is the image of some $s' \in \mathcal{F}
+
+:::
 
 
 
