@@ -278,6 +278,7 @@ E.g. there is not necessarily a section $U_i \to U_i \cross_X U_i$.
 
 :::{.definition title="Total Čech Complex of the Étale Site"}
 \[  
-\check{C}(X_\et, \mathcal{F}) \da \stacksymbol{}{}\directlim 
-.\]
+\check{C}(X_\et, \mathcal{F}) \da \stacksymbol{}{U\to X}\directlim 
+,\]
+where the limit is taken over all covering families.
 :::
