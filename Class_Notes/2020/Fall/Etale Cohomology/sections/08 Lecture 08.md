@@ -24,8 +24,28 @@ To any double complex, one can associate two spectral sequences.
 First consider taking horizontal cohomology:
 
 \begin{tikzcd}
-\vdots & \vdots &  \udots \\
-\Cc(U/X, \mathcal{I}^1) \ar[r] & \mathcal{I}^1(U\cross_X U) \ar[r] & \cdots \\
-\Cc(U/X, \mathcal{I}^0) \ar[u]\ar[r] & \mathcal{I}^0(U\cross_X U)\ar[u] \ar[r] & \cdots
+\vdots 
+  & \vdots 
+  & \udots 
+  \\
+\Cc(U/X, \mathcal{I}^1) 
+  = \mathcal{I}^0(U\cross_X U) 
+    \ar[r]\ar[u]
+  & \mathcal{I}^1(U\cross_X U)
+    \ar[r]\ar[u]
+  & \cdots 
+  \\
+\Cc(U/X, \mathcal{I}^0) 
+  = \mathcal{I}^0(U)
+    \ar[r]\ar[u]
+  & \mathcal{I}^1(U)
+    \ar[r]\ar[u]
+  & \cdots
 \end{tikzcd}
+
+We then have
+\[  
+E_2^{i, j} \abuts \Hc^i(U, \mathcal{H}^j(\mathcal{F}))
+\]
+where $\mathcal{H}^j$.
 
