@@ -21,7 +21,7 @@ The category of abelian sheaves on the $X_{\et}$ is an abelian category with eno
 
 With this in hand, we can use the formalism of derived functors to define étale cohomology:
 
-:::{.definition title="Étale Cohomology"}
+:::{.definition title="Étale Cohomology" ref="def:etale_cohomology"}
 \[  
 H^i(X_\et, \zlz) \da R^i \Gamma(X_\et, \underline{ \zlz} )
 .\]

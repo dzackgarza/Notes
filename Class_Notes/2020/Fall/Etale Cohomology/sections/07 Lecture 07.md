@@ -82,5 +82,28 @@ Sheafification is a left adjoint.
 :::
 
 :::{.example title="?"}
-For $\bar x\injectsvia{\iota} X$ we have $\iota^* \mathcal{F}= \mathcal{F}_{\bar x}$.
+\envlist
+
+- For $\bar x\injectsvia{\iota} X$ a geometric point, we have $\iota^* \mathcal{F}= \mathcal{F}_{\bar x}$.
+
+- For $Y\mapsvia{f} X$, we have $f^* \underline{\zlz} = \underline{\zlz}$.
+
+- More generally, for $Y\mapsvia{f} X$ and any representable functor $\mathcal{F} \da \underline{\hom}_X(\wait, Z)$, we have $f^* \mathcal{F} = \underline{\hom}_Y(\wait, Y\cross_X Z)$.
 :::
+
+## Étale Cohomology
+
+See \cref{def:etale_cohomology} for the definition of étale cohomology.
+How do we compute $H^i(X_{\et}, \mathcal{F})$?
+Choose an injective resolution 
+\[  
+\mathcal{F}\to \mathcal{I}^0 \to \mathcal{I}^1 \to \cdots
+.\]
+with the $\mathcal{I}^j$ injectives.
+From the general theory of derived functors, we obtain
+\[  
+H^i(X_\et, \mathcal{F}) = H^i\qty{\Gamma(X, \mathcal{I}^\wait)}
+,\]
+where the RHS is a complex of abelian groups.
+Injective resolutions are difficult to find in general.
+
