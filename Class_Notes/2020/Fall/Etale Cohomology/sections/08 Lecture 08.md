@@ -175,7 +175,19 @@ Every cover can be refined to a *finite* cover by affines, using quasicompactnes
 :::
 
 :::{.claim title="2"}
-Supposing $X$ is affine and $U\to X$ is an fppf affine cover.
+Supposing $X$ is affine and $U\to X$ is an fppf affine cover, then $\Cc{U/X, \mathcal{F}}$ is exact if $\mathcal{F} = \hat M$ is the quasicoherent sheaf associated to some module $M$.
+:::
+
+:::{.proof title="of claim 2"}
+Let $U=\spec B, X = \spec A$, and $M\in \mods{A}$.
+
+Then we get the complex
+\[  
+M\tensor_A B \to 
+M\tensor_A B^{\tensor_A 2} \to 
+M\tensor_A B^{\tensor_A 4} \to 
+\cdots
+.\]
 :::
 
 :::
