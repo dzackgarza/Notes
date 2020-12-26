@@ -140,7 +140,16 @@ Suppose $k$ is a field, not necessarily algebraically closed, and consider $\Sh(
 Let $G \da \Gal(k^s/k)$ for a choice of separable closure $k^s/k$.
 
 :::{.claim}
-There is a functor from $\Sh(\qty{\spec k}_\et)$ to discrete $G\dash$modules inducing an equivalence of categories.
+There is a functor from $\Sh(\qty{\spec k}_\et)$ to discrete $G\dash$modules[^explain_disc_g_mod]
+inducing an equivalence of categories.
+
+[^explain_disc_g_mod]: 
+$G$ is a topological group in the inverse limit topology, so a discrete $G\dash$module is a module with the discrete topology where the $G\dash$action is continuous. 
+In particular, the action on any element factors through a finite quotient of $G$.
+
 :::
+
+Note that when thinking of Galois representations, $\ZZ_{\ell}$ is not an example of this, but a representation over a finite field works.
+E.g. the Tate module of an elliptic curve is not a discrete $G\dash$module
 
 :::
