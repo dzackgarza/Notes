@@ -115,3 +115,7 @@ Let $\mathcal{F} = \OO_{X}^{\et}$, then the pullback is $\iota_{\bar x}^* \OO_X^
 :::
 
 
+
+
+
+
