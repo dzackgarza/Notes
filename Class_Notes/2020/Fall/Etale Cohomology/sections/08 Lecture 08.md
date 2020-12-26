@@ -55,3 +55,9 @@ Now we take cohomology in the other order: taking the vertical cohomology collap
 E_2^{i, j} = H^i(\Gamma(X, \mathcal{I}))  E_{\infty}
 ,\]
 which is the derived functor cohomology.
+The spectral sequence thus converges in the following way:
+\[  
+\Hc^i(U, \mathcal{H}^j(\mathcal{F})) \abuts H^{i+j}(X_\et, \mathcal{F})
+.\]
+
+
