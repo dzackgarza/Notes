@@ -62,5 +62,7 @@ The spectral sequence thus converges in the following way:
 
 :::{.exercise title="?"}
 Show that if $\Cc(X_\et, \wait)$ is exact on $\Sh^{\ab}(X_\et)$, then $\Hc^\wait \cong H^\wait$.
-See Tohoku or Hartshorne.
+See Tohoku or Hartshorne, and prove this using the Čech to derived functor spectral sequence.
 :::
+
+
