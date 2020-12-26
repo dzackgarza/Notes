@@ -17,6 +17,6 @@ There is a version for which this does always work where Čech covers are replac
 Since we have enough injectives, take an injective resolution $\mathcal{F}\to \mathcal{I}^0 \to \cdots$ which is exact and each $\mathcal{I}^j$ is injective.
 We can apply the Čech complex functor to obtain a double complex 
 \[
-\
+\Cc^\wait(U/X, \mathcal{I}^0) \to \Cc^\wait(U/X, \mathcal{I}^1) \to \cdots
 .\]
 
