@@ -285,7 +285,7 @@ where the limit is taken over all covering families.
 
 :::{.remark}
 Note that taking direct limits is exact, so we can do this in either order.
-There are potential set-theoretic issues if $X$ is not quasicompact.
+There are potential set-theoretic issues if $X$ is not quasicompact; one fix is to only work in the finitely-presented setting, which is the choice we'll make here.
 :::
 
 :::{.definition title="Čech Cohomology"}
@@ -296,5 +296,5 @@ There are potential set-theoretic issues if $X$ is not quasicompact.
 :::
 
 :::{.proposition title="?"}
-$\Hc^0(U/X) = \Hc^0(X_\et, \mathcal{F})$.
+$\Hc^0(U/X) = \Hc^0(X_\et, \mathcal{F}) = H^0(X_\et, \mathcal{F})$.
 :::
