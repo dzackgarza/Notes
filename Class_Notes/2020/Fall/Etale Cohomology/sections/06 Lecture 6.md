@@ -223,6 +223,6 @@ This is a sheaf since pushforwards and products of sheaves are again sheaves.
 There is a natural map of presheaves $\mathcal{F}\to \mathrm{Esp}(\mathcal{F})$ given by sending sections to germs.
 :::
 
-:::{.definition title="$\mathcal{F}"}
-
+:::{.definition title="$\mathcal{F}^a"}
+The sheaf $\mathcal{F}^a$ is the subsheaf of $
 :::
