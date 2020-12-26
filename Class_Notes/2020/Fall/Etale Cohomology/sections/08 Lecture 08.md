@@ -105,7 +105,6 @@ Prove this.
 
 Given thus, $E_2$ vanishes outside of 2 columns.
 
-
 \begin{sseqdata}[ name = "2col", xscale=0.6, homological Serre grading]
 \class(0, 0)
 \class(0, 1)
@@ -118,7 +117,8 @@ Given thus, $E_2$ vanishes outside of 2 columns.
 \d2(2, 0)
 \d2(2, 1)
 \d2(2, 2)
-\classoptions[red](2,1,1)
+\classoptions[red](1,0,1)
+\classoptions[red](0,1,1)
 \end{sseqdata}
 \begin{center}
 \printpage[ name = "2col", page = 2]
