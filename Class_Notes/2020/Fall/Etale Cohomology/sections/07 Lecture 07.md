@@ -370,5 +370,16 @@ then we get a LES in cohomology, then
 :::{.proof title="?"}
 This comes from the theory of universal $\delta\dash$functors.
 A derived functor is determined uniquely by $H^0$, what they do on injectives, and the fact that the LES from a SES is functorial.
+The problem is that the second sequence above is always left-exact but not in general right-exact.
+We'll see a proof next time using spectral sequences.
+:::
+
+:::{.theorem title="Milne, III"}
+This is true if $X$ is quasicompact and any finite subset of $X$ is contained in an affine.
+:::
+
+:::{.remark}
+How can you check this condition? 
+This holds if $X$ is quasiprojective.
 :::
 
