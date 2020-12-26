@@ -177,5 +177,16 @@ We get a $G\dash$module since $G$ acts on the entire diagram and thus its limit.
 Check that this is a discrete $G\dash$module.
 :::
 
-There is an inverse functor
+There is an inverse functor: given $V\to \spec k$ an étale map, by the classification of étale $k\dash$algebras we have $V = \disjoint_{k in K'} \spec k'$ where $K'$ is the set of all finite separable $k'/k$.
+Given a discrete $G\dash$module $M$, send it to the Galois fixed points $V \to \prod M^{G_s'}$ where $G_s' \da \Gal(k^s/k')$.
+
+:::{.exercise title="Check"}
+Check that this is an inverse, it follows from Galois descent.
+:::
+
+:::
+
+:::{.proof title="of corollary"}
+$\Gamma(\spec k, \mathcal{F}) = \qty{\iota F}^G$, taking the $G\dash$invariants.
+So $H^0 \mapsvia{\iota}$ to taking invariants, and thus the higher derived functors agree, where the RHS is group cohomology.
 :::
