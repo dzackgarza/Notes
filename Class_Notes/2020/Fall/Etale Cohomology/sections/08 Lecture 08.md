@@ -103,8 +103,7 @@ This complex is quasi-isomorphic to the 2-term complex
 Prove this.
 :::
 
-Given thus, $E_2$ vanishes outside the first 2 columns.
-The differentials have bidegree $(1, -2)$
+Given thus, $E_2$ vanishes outside of 2 columns.
 
 
 \begin{sseqdata}[ name = "2col", xscale=0.6, cohomological Serre grading]
