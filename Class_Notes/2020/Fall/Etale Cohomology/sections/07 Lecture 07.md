@@ -150,6 +150,13 @@ In particular, the action on any element factors through a finite quotient of $G
 :::
 
 Note that when thinking of Galois representations, $\ZZ_{\ell}$ is not an example of this, but a representation over a finite field works.
-E.g. the Tate module of an elliptic curve is not a discrete $G\dash$module
+E.g. the Tate module (the inverse limit of torsion) of an elliptic curve is not a discrete $G\dash$module since the Galois action is not continuous in the discrete topology (although it is in the $\ell\dash$adic topology).
+
+To prove this claim, the map is given by
+\[  
+\Sh(\qty{\spec k}_\et) &\to \text{Discrete $G\dash$modules} \\
+\mathcal{F} &\mapsto \stacksymbol{}{k \subset L \subset k^s}\inverselim \mathcal{F}(\spec L)
+.\]
+The idea here: you want to evaluate $\mathcal{F}$ on $k^s$, which doesn't make sense because $k^s$ is not locally finitely-presented
 
 :::
