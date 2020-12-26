@@ -224,5 +224,5 @@ There is a natural map of presheaves $\mathcal{F}\to \mathrm{Esp}(\mathcal{F})$ 
 :::
 
 :::{.definition title="$\mathcal{F}^a"}
-The sheaf $\mathcal{F}^a$ is the subsheaf of $
+The sheaf $\mathcal{F}^a$ is the subsheaf of $\mathrm{Esp}(\mathcal{F})$ 
 :::
