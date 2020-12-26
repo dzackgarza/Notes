@@ -208,4 +208,16 @@ The proof used for topological spaces will work here, using the fact that direct
 We can now prove that sheafification exists for $\presh(X_{\et})$.
 Recall that we have a forgetful functor from sheaves to presheaves, and we want to show it has a left adjoint.
 
-We'll first construct an analog of the *espace étalé*
+We'll first construct an analog of the *espace étalé*:
+
+:::{.definition title="Espace étalé for the étale site"}
+For each $x\in X$, choose a geometric point $\bar x$ over $x$, and given $\mathcal{F}\in \presh(X_{\et})$ define 
+\[  
+\mathrm{Esp}(\mathcal{F}) \da \prod_{\bar x} \qty{\iota_{\bar x}}_* \mathcal{F}_{\bar x}
+,\]
+the product of skyscraper sheaves.
+:::
+
+:::{.remark}
+There is a natural map $
+:::
