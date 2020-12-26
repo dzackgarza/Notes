@@ -265,5 +265,18 @@ Colimits exists in $\Sh(X_\et)$.
 
 :::{.proof title="?"}
 Colimits exist for presheaves, since colimits always exists for sheaves valued in a category where colimits exist since they're computed pointwise.
-Left adjoints send colimits to colimits, 
+Left adjoints send colimits to colimits, so in general we'll construct colimits of sheaves by taking colimits of presheaves and then sheafifying.
+This is true because colimits are defined by mapping *out*, and the definition of left adjoints is that one knows how to map out of it.
+:::
+
+:::{.corollary title="Sheaves on the Étale Site Form an Abelian Category"}
+$\Sh(X_\et)$ is an abelian category.
+:::
+
+:::{.proof title="?"}
+\envlist
+
+- Limits exist since they can be defined pointwise.
+- Cokernels exists since they are colimits: $\cok(\mathcal{F} \to \mathcal{G})$ is given by $\mathrm{coeq}(\mathcal{F} \mathcal{G})$
+
 :::
