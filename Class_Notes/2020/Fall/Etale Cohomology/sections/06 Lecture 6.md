@@ -173,7 +173,7 @@ The only problem is that $V$ is not a cover of $U$, so we extend it by choosing 
 :::
 
 :::{.remark}
-
+This terminates if the scheme is quasicompact, otherwise you may need some 
 :::
 
 
