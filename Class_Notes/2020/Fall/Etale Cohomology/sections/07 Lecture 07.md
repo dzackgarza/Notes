@@ -234,6 +234,8 @@ What is true is that schemes are $K(\pi, 1)$, so étale cohomology can be comput
 
 ### Defining Čech Cohomology
 
+
+:::{.definition title="Čech Complex"}
 Suppose $U \da \Union U_i \to X$ is an étale cover, and suppose $\mathcal{F}\in \Sh(X_\et)$, then there is a complex of projections:
 
 \begin{tikzcd}
@@ -258,3 +260,13 @@ U\cross_X U \cross_X U
   \arrow[l, shift right=2.25]
   &
 \end{tikzcd}
+
+Here we interpret each term as the $n\dash$fold intersections in the cover.
+We can apply $\mathcal{F}$ to this diagram to obtain a **cosimplicial diagram** of abelian groups.
+Given such a diagram, you can take the alternating sum as differentials to obtain a chain complex
+\[  
+C^\wait(U/X, \mathcal{F}) \da \qty{ 0 \to \mathcal{F}(U) \to \mathcal{F}(U\cross_X U) \to \cdots}
+.\]
+This is the **Čech Complex**.
+:::
+
