@@ -105,7 +105,7 @@ Prove this.
 
 Given this, $E_2$ vanishes outside of 2 columns, and considering computing $H^1$ we have the following situation:
 
-\begin{sseqdata}[ name = "2col", xscale=0.6, homological Serre grading, y range = {0}{2}]
+\begin{sseqdata}[ name = "2col", xscale=0.6, homological Serre grading, y range = {0}{2}, differentials = blue]
 \class(0, 0)
 \class(0, 1)
 \class(0, 2)
@@ -117,7 +117,7 @@ Given this, $E_2$ vanishes outside of 2 columns, and considering computing $H^1$
 \class(2, 3)
 \structline(0,0)(0, 3)
 \structline(2,0)(2, 3)
-\d2["blue"](2, 0)
+\d2(2, 0)
 \d2(2, 1)
 \d2(2, 2)
 \classoptions[red](1,0,1)
@@ -126,6 +126,8 @@ Given this, $E_2$ vanishes outside of 2 columns, and considering computing $H^1$
 \begin{center}
 \printpage[ name = "2col", page = 2]
 \end{center}
+
+This is a general phenomenon: a spectral sequence collapsing onto two columns is the same data as a long exact sequence.
 
 :::
 
