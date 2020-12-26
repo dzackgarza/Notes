@@ -122,8 +122,23 @@ Suppose $\mathcal{F}, \mathcal{G}$ are sheaves of abelian groups on $\X_{\et}$.
 Then TFAE
 
 1. $\mathcal{F}\to \mathcal{G}$ is an epimorphism,
-2. $\mathcal{F}\to \mathcal{G}$ is locally surjective, i.e. given $s\in \mathcal{G}(U)$ there exists $U'\to U$ such that $\ro{s}{U'}$ is the image of some $s' \in \mathcal{F}
+2. $\mathcal{F}\to \mathcal{G}$ is locally surjective, i.e. given a section $s\in \mathcal{G}(U)$ there exists $U'\to U$ such that $\ro{s}{U'}$ is the image of some $s' \in \mathcal{F}(U)$.[^more_details_1]
+3. $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is surjective for all geometric points $\bar x\to X$.
 
+[^more_details_1]: 
+I.e. a given section of $\mathcal{G}$ may not be in the image of $\mathcal{F}$, but will be after refining the cover.
+
+:::
+
+:::{.proof title="2 $\implies$ 3"}
+Suppose we have
+\begin{tikzcd}
+\mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "a"] \ar[r, shift left=0.75ex, "b"] &
+\mathcal{H}
+\end{tikzcd}
+where the 2 compositions agree, then we want to show that $a=b$.
+Let $s$ be a section of $\mathcal{G}$ on $U$
 :::
 
 
