@@ -106,4 +106,20 @@ H^i(X_\et, \mathcal{F}) = H^i\qty{\Gamma(X, \mathcal{I}^\wait)}
 ,\]
 where the RHS is a complex of abelian groups.
 Injective resolutions are difficult to find in general.
+Suppose $\pi:X_\et \to Y_\et$ comes from a map of schemes, then we can compute derived functors of other functors such as the pushforward,
+\[  
+\qty{R^i \pi_*} \mathcal{F} = H^i\qty{ \pi_* \mathcal{I}^\wait }
+,\]
+where the RHS are sheaves on $Y_\et$.
+Implicit here is the claim that $\pi_*$ is left-exact.
+You can also find $\qty{L^{>0} \pi^*} \mathcal{G} = 0$.
 
+:::{.exercise title="?"}
+Check that pullback is exact.
+:::
+
+:::{.proposition title="Properties of étale cohomology"}
+\envlist
+
+1. $H^0(X_\et)$
+:::
