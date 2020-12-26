@@ -203,10 +203,9 @@ Prove this!
 The proof used for topological spaces will work here, using the fact that direct limits preserve exactness.
 :::
 
-## Proof that Sh
+## Proof: Sheafification Exists for the Étale Site
 
 We can now prove that sheafification exists for $\presh(X_{\et})$.
 Recall that we have a forgetful functor from sheaves to presheaves, and we want to show it has a left adjoint.
 
-
-
+We'll first construct an analog of the *espace étalé*
