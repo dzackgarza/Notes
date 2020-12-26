@@ -231,5 +231,5 @@ The sheaf $\mathcal{F}^a$ is the subsheaf of $\mathrm{Esp}(\mathcal{F})$ generat
 :::
 
 :::{.remark}
-Here $\
+Here $\mathrm{Esp}(\mathcal{F})$ is like the product of all of the stalks, and $\mathcal{F}^a$ is the *espace étalé* inside of it.
 :::
