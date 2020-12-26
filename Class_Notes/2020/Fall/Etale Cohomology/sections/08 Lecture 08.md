@@ -101,6 +101,8 @@ This complex is quasi-isomorphic to the 2-term complex
 
 :::{.exercise title="?"}
 Prove this.
+This uses the fact that we have a Zariski cover instead of a general étale cover, since it's not true in general: a counterexample is $\GG_m \to \GG_m$ where $x\mapsto x^2$. 
+The double intersection won't make sense, since it won't be connected and there's not a distinguished component.
 :::
 
 Given this, $E_2$ vanishes outside of 2 columns, and considering computing $H^1$ we have the following situation:
@@ -128,6 +130,10 @@ Given this, $E_2$ vanishes outside of 2 columns, and considering computing $H^1$
 \end{center}
 
 This is a general phenomenon: a spectral sequence collapsing onto two columns is the same data as a long exact sequence.
+
+:::{.exercise title="?"}
+Check this.
+:::
 
 :::
 
