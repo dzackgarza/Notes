@@ -219,5 +219,6 @@ the product of skyscraper sheaves.
 :::
 
 :::{.remark}
+This is a sheaf since pushforwards and products of sheaves are again sheaves.
 There is a natural map $
 :::
