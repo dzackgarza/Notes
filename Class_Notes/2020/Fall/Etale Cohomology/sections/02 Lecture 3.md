@@ -89,6 +89,7 @@ The letter **fppf** stand for **faithfully flat and finite presentation**.
 [^letters_fppf]
 
 [^letters_fppf]: The letters don't precisely match up here because this comes from a French acronym.
+
 :::
 
 :::{.example title="The fppf topology"}
