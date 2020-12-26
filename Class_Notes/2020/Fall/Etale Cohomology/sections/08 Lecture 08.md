@@ -106,9 +106,26 @@ Prove this.
 Given thus, $E_2$ vanishes outside the first 2 columns.
 The differentials have bidegree $(1, -2)$
 
-\begin{tikzcd}
 
-\end{tikzcd}
+\begin{sseqdata}[ name = "2col", xscale=0.6, cohomological Serre grading]
+\class(0, 0)
+\class(0, 1)
+\class(0, 2)
+\class(0, 3)
+\class(1, 0)
+\class(1, 1)
+\class(1, 2)
+\class(1, 3)
+\class(2, 0)
+\class(2, 1)
+\class(2, 2)
+\class(2, 3)
+\d2(0, 2)
+\end{sseqdata}
+\begin{center}
+\printpage[ name = "2col", page = 2]
+\end{center}
+
 :::
 
 
