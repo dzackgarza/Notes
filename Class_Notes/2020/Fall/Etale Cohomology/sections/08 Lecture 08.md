@@ -333,6 +333,7 @@ For $X = \AA^1 = \spec \FF_p[t]$, we get
 & H^1(\AA^1_\et, \FF_p)
   \ar[r]\ar[d, equal]
 & 0
+  \ar[d, equal]
 \\
 0
   \ar[r]
@@ -347,7 +348,7 @@ For $X = \AA^1 = \spec \FF_p[t]$, we get
 & 0
 \end{tikzcd}
 In general, this cokernel is very large.
-This is why étale cohomology with $\FF_p$ coefficients is not particularly well-behaved, although taking a projective variety would yield finite dimensional objects here.
+This is why étale cohomology with $\FF_p$ coefficients is not particularly well-behaved, although taking a projective variety would yield finite dimensional objects here, but not of the expected dimensions.
 :::
 
 

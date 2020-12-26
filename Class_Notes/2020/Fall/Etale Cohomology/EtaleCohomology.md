@@ -1766,7 +1766,7 @@ The category of abelian sheaves on the $X_{\et}$ is an abelian category with eno
 
 With this in hand, we can use the formalism of derived functors to define étale cohomology:
 
-:::{.definition title="Étale Cohomology"}
+:::{.definition title="Étale Cohomology" ref="def:etale_cohomology"}
 \[  
 H^i(X_\et, \zlz) \da R^i \Gamma(X_\et, \underline{ \zlz} )
 .\]
@@ -1833,9 +1833,10 @@ We then define
 where the limit is taken over diagrams of the form
 \begin{tikzcd}
 \bar u \ar[r]\ar[d] & U\ar[d] \\
-x \ar[r, "\iota_{\bar x}", hooked] & X
+x \ar[r, "\iota_{\bar x}", hook] & X
 \end{tikzcd}
 where $\bar u$ is a geometric point and $Y\to X$ is étale.
+$\mathcal{F}_{\bar x}$ is referred to as the **stalk of $\mathcal{F}$ at $\bar x$**.
 :::
 
 :::{.remark}
@@ -1845,7 +1846,7 @@ Taking $\spec k$ to be the algebraic closure of the function field of $X$ is $X$
 
 :::{.example title="?"}
 Let $\mathcal{F} = \underline{\zlz}$ and $\bar x\injects X$ any geometric point.
-Then the pullback is given by $\iota_{\bar x}^* \underline{\zlz} = \zlz$.
+Then the pullback is given by $\iota_{\bar x}^* \qty{\underline{\zlz}} = \zlz$.
 If $U$ had more than one connected component, then the first definition would involve a limit over $\mathcal{F}(U)$ which are all copies of $\zlz$.
 But given this, you can always find a connected covering.
 So the $(U, \bar u)$ which are *connected* are actually cofinal.[^cofinal_notes]
@@ -1856,5 +1857,965 @@ Note that having any cofinal diagrams in a limit means that the limit will only 
 :::
 
 :::{.example title="?"}
-Let $\mathcal{F} = \OO_{X}^{\et}$, then the pullback is $\iota_{\bar x}^* \OO_X^{\et} = \OO_{X\bar x}^{\mathrm{sh}}$, which is the strict Hensilization (where we're picking up the version that has an algebraically closed residue field).
+Let $\mathcal{F} = \OO_{X}^{\et}$, then the pullback is $\iota_{\bar x}^* \OO_X^{\et} = \OO_{X\bar x}^{\mathrm{sh}}$, which is the strict Henselization (where we're picking up the version that has an algebraically closed residue field).
 :::
+
+Some useful things about stalks: we can check things like isomorphisms locally on them.
+
+:::{.lemma title="?"}
+Suppose $\mathcal{F}, \mathcal{G}$ are sheaves of abelian groups on $X_{\et}$.
+Then TFAE
+
+1. $\mathcal{F}\to \mathcal{G}$ is an epimorphism,
+2. $\mathcal{F}\to \mathcal{G}$ is locally surjective, i.e. given a section $s\in \mathcal{G}(U)$ there exists $U'\to U$ such that $\ro{s}{U'}$ is the image of some $s' \in \mathcal{F}(U)$.[^more_details_1]
+3. $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is surjective for all geometric points $\bar x\to X$.
+
+[^more_details_1]: 
+I.e. a given section of $\mathcal{G}$ may not be in the image of $\mathcal{F}$, but will be after refining the cover.
+
+:::
+
+:::{.proof title="2 $\implies$ 1"}
+Suppose we have
+\begin{tikzcd}
+\mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "a"'] \ar[r, shift left=0.75ex, "b"] &
+\mathcal{H}
+\end{tikzcd}
+where the 2 compositions agree, then we want to show that $a=b$.
+Let $s$ be a section of $\mathcal{G}$ on $U$, we want to know that $a(s) = b(s)$.
+By (2), we can replace $s$ with $s'$ coming from $\mathcal{F}$, so $a(s') = b(s')$ since the compositions agree.
+:::
+
+:::{.proof title="1 $\implies$ 3"}
+We want to show that given an epimorphisms, the map on every stalk is surjective.
+Assume $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is not surjective, and thus has a nontrivial cokernel $\Lambda$.
+We can construct 2 maps to the skyscraper sheaf:
+\begin{tikzcd}
+ \mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
+  \qty{\iota_{\bar x}}_* \Lambda
+\end{tikzcd}
+where $f$ is the "natural map" given by taking a section to $\mathcal{G}$ and considering its stalk.
+Since $\Lambda$ was the cokernel, both compositions from $\mathcal{F}$ are zero:
+\begin{tikzcd}
+ \mathcal{F} \ar[r]\ar[rr, bend left, "0"] \ar[rr, bend right, "0"'] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
+  \qty{\iota_{\bar x}}_* \Lambda
+\end{tikzcd}
+which forces $\Lambda = 0$, a contradiction.
+:::
+
+:::{.proof title="3 $\implies$ 2"}
+Given $s\in \mathcal{G}(U)$, we want to produce a $U' \to U$ such that $\ro{s}{U'}$ comes from $\mathcal{F}$.
+Picking any $\bar x\in U$, since $\mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x}$ is surjective, there is some étale neighborhood of $\bar x$, say $(V, \bar v)$ where $V\to X$ and $\bar v \mapsto \bar x$:
+\begin{tikzcd}
+\bar v \ar[r]\ar[d] & V\ar[d] \\
+x \ar[r, "\iota_{\bar x}", hook] & X
+\end{tikzcd}
+Moreover, $\ro{s}{V}$ is in the image of $\mathcal{F}$.
+The only problem is that $V$ is not a cover of $U$, so we extend it by choosing $\bar{x'}$ not in the image of $V$, and continue in this way until it forms a cover.
+:::
+
+:::{.remark}
+This terminates if the scheme is quasicompact, otherwise you may need transfinite induction and thus the axiom of choice.
+The morphisms are still étale if you take disjoint unions, since you only need to check local properties: locally finite presentation, unramified, and flatness.
+:::
+
+
+:::{.lemma title="?"}
+Suppose $0 \to \mathcal{F}\to \mathcal{G}\to \mathcal{H}$ is a sequence of abelian sheaves on $X_{\et}$, then TFAE
+
+1. This sequence is exact,
+
+2. $0 \to \mathcal{F}(U) \to \mathcal{G}(U) \to \mathcal{H}(U)$ is exact for all $U$,
+
+3. $0 \to \mathcal{F}_{\bar x} \to \mathcal{G}_{\bar x} \to \mathcal{H}_{\bar x}$ is exact for all geometric points $\bar x$.
+:::
+
+:::{.remark}
+What is the difference between 1 and 2?
+1 means that $\mathcal{F}\to \mathcal{G}$ is a monomorphism and the kernel of the map $f: \mathcal{G}\to \mathcal{H}$, i.e. the following diagram is an equalizer:
+\begin{tikzcd}
+ \mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "f"'] \ar[r, shift left=0.75ex, "0"] &
+  \mathcal{H}
+\end{tikzcd}
+:::
+
+:::{.exercise title="?"}
+Prove this!
+The proof used for topological spaces will work here, using the fact that direct limits preserve exactness.
+:::
+
+## Proof: Sheafification Exists for the Étale Site
+
+We can now prove that sheafification exists for $\presh(X_{\et})$.
+Recall that we have a forgetful functor from sheaves to presheaves, and we want to show it has a left adjoint.
+
+We'll first construct an analog of the *espace étalé*:
+
+:::{.definition title="Espace étalé for the étale site"}
+For each $x\in X$, choose a geometric point $\bar x$ over $x$, and given $\mathcal{F}\in \presh(X_{\et})$ define 
+\[  
+\mathrm{Esp}(\mathcal{F}) \da \prod_{\bar x} \qty{\iota_{\bar x}}_* \mathcal{F}_{\bar x}
+,\]
+the product of skyscraper sheaves.
+:::
+
+:::{.remark}
+This is a sheaf since pushforwards and products of sheaves are again sheaves.
+There is a natural map of presheaves $\mathcal{F}\to \mathrm{Esp}(\mathcal{F})$ given by sending sections to germs.
+:::
+
+:::{.definition title="Sheafification $\mathcal{F}^a$"}
+The sheaf $\mathcal{F}^a$ is the subsheaf of $\mathrm{Esp}(\mathcal{F})$ generated by $\mathcal{F}$, i.e.
+\[  
+\mathcal{F}^a(U) \subseteq \mathrm{Esp}(\mathcal{F})(U), \mathcal{F}^a(U) = \ts{s\in \mathrm{Esp}(\mathcal{F})(U)  \st \text{ locally } s\in \im \mathcal{F}}
+.\]
+:::
+
+:::{.remark}
+Here $\mathrm{Esp}(\mathcal{F})$ is like the product of all of the stalks, and $\mathcal{F}^a$ is the *espace étalé* inside of it.
+:::
+
+:::{.proposition title="?"}
+$\mathcal{F}^a$ is a sheaf.
+:::
+
+:::{.proof title="?"}
+This is a subfunctor of a sheaf, and thus a presheaf.
+It's *separable*, meaning the map in the equalizer diagram is injective, and a section is determined by what it is locally.
+This is true for $\mathrm{Esp}(\mathcal{F})$ and thus for $\mathcal{F}^a$.
+Gluing follows from the fact that it is locally defined.
+:::
+
+:::{.proposition title="?"}
+$\mathcal{F}^a$ is left adjoint to the forgetful functor.
+:::
+
+:::{.exercise title="Important!"}
+Prove this!
+The proof used for topological spaces works here.
+:::
+
+:::{.remark}
+We've used a trick in the proof that uses some geometry to avoid needing to apply sheafification twice to obtain a sheaf.
+For general sites, there is an analog of the plus construction.
+:::
+
+:::{.corollary title="?"}
+Colimits exists in $\Sh(X_\et)$.
+:::
+
+:::{.proof title="?"}
+Colimits exist for presheaves, since colimits always exists for sheaves valued in a category where colimits exist since they're computed pointwise.
+Left adjoints send colimits to colimits, so in general we'll construct colimits of sheaves by taking colimits of presheaves and then sheafifying.
+This is true because colimits are defined by mapping *out*, and the definition of left adjoints is that one knows how to map out of it.
+:::
+
+:::{.corollary title="Sheaves on the Étale Site Form an Abelian Category"}
+$\Sh(X_\et)$ is an abelian category.
+:::
+
+:::{.proof title="?"}
+\envlist
+
+- Limits exist since they can be defined pointwise.
+- Cokernels exists since they are colimits: $\cok(\mathcal{F} \to \mathcal{G})$ is given by the coequalizer of
+\begin{tikzcd}
+ \mathcal{F} \ar[r, shift right=0.75ex, "f"] \ar[r, shift left=0.75ex, "0"] &
+  \mathcal{G}
+\end{tikzcd}
+  which is a colimit.
+
+- $\im = \coim$, which can be checked on stalks.
+
+:::
+
+Next time: we'll finish proving that injectives exist, and start computing.
+
+# Lecture 07
+
+Last time: stalks, sheafification, and $\Sh(X_{\et})$ is abelian.
+Next up, we're aiming to define sheaf cohomology for $\Sh(X_\et)$.
+
+:::{.remark title="Esoteric!"}
+Related to a question asked by a viewer: there is not in fact a morphism from $X_{\fppf} \to X_{\et}$, since locally finitely-presented need not be finitely presented (part of the condition for fppf).
+There is instead a morphism $X_{\fppf}\to X_{\et, \text{fp}}$ to a corresponding finitely presented site. 
+There is also a map $X_{\et} \to X_{\et, \text{fp}}$ inducing an equivalence on the category of sheaves via pushforward.
+:::
+
+:::{.theorem title="Enough injectives"}
+$\Sh(X_\et)$ has enough injectives.
+:::
+
+:::{.proof title="?"}
+Given $\mathcal{F}\in \Sh(X_\et)$ we want an injective sheaf $\mathcal{I}$ and an injection $\mathcal{F}\injects \mathcal{I}$.
+For each $x\in X$, choose a geometric point $\bar x$ over $x$, and let $I(\bar x)$ be an injective $\ZZ\dash$module with a map $\mathcal{F}_{\bar x} \to I(\bar x)$.
+These exist because the category of $\ZZ\dash$modules has enough injectives.
+The injectives in this category are **divisible** abelian groups.
+
+:::{.claim}
+The following object works:
+\[  
+\mathcal{I} \da \prod_{\bar x} (\iota_{\bar x})_* I(\bar x)
+.\]
+:::
+
+We need to check
+
+1. There is a map $\mathcal{F}\to \mathcal{I}$:
+  The RHS is a product, so we map into the components.
+  $\mathcal{F}_{\bar x}$ maps into its own associated skyscraper sheaf where the map is sending sections to their germs.
+  Then the skyscraper sheaf for $\mathcal{F}_{\bar x}$ maps into the skyscraper sheaf for $I(\bar x)$ by pushforward.
+
+2. This is a monomorphism: check on stalks.
+
+3. $\mathcal{I}$ is injective: check the lifting property directly.
+
+:::
+
+## What Else We Get From Sheafification
+
+:::{.remark}
+We now know that $\Sh(X_\et)$ is abelian with enough injectives.
+This is true for $\Sh(\tau)$ for any site $\tau$, but this is substantially harder to show.
+:::
+
+### Inverse Images
+
+For $f:X\to Y$, we have a map on presheaves
+\[  
+f^{-1} :\Presh(Y_{\et}) &\to \Presh(X_\et) \\
+\mathcal{F}(V\mapsvia{\et} X) &\mapsto \directlim \mathcal{F}(U\to X)
+,\]
+where the limit is over diagrams of the form
+\begin{tikzcd}
+V \ar[r] \ar[d, "\et"] & U \ar[d, "\et"] \\
+X \ar[r] & Y
+\end{tikzcd}
+
+:::{.fact}
+$f^{-1}$ is left adjoint to pushforward as functors on presheaves.
+:::
+
+:::{.exercise title="?"}
+Check this.
+:::
+
+:::{.definition title="Inverse Image Sheaf"}
+\[  
+f^* \mathcal{F} \da \qty{f^{-1} \mathcal{F}}^a
+.\]
+:::
+
+:::{.theorem title="?"}
+$f^*$ is left adjoint to $f_*$.
+:::
+
+:::{.proof title="?"}
+Sheafification is a left adjoint.
+:::
+
+:::{.example title="?"}
+\envlist
+
+- For $\bar x\injectsvia{\iota} X$ a geometric point, we have $\iota^* \mathcal{F}= \mathcal{F}_{\bar x}$.
+
+- For $Y\mapsvia{f} X$, we have $f^* \underline{\zlz} = \underline{\zlz}$.
+
+- More generally, for $Y\mapsvia{f} X$ and any representable functor $\mathcal{F} \da \underline{\hom}_X(\wait, Z)$, we have $f^* \mathcal{F} = \underline{\hom}_Y(\wait, Y\cross_X Z)$.
+:::
+
+## Étale Cohomology
+
+See \cref{def:etale_cohomology} for the definition of étale cohomology.
+How do we compute $H^i(X_{\et}, \mathcal{F})$?
+Choose an injective resolution 
+\[  
+\mathcal{F}\to \mathcal{I}^0 \to \mathcal{I}^1 \to \cdots
+.\]
+with the $\mathcal{I}^j$ injectives.
+From the general theory of derived functors, we obtain
+\[  
+H^i(X_\et, \mathcal{F}) = H^i\qty{\Gamma(X, \mathcal{I}^\wait)}
+,\]
+where the RHS is a complex of abelian groups.
+Injective resolutions are difficult to find in general.
+Suppose $\pi:X_\et \to Y_\et$ comes from a map of schemes, then we can compute derived functors of other functors such as the pushforward,
+\[  
+\qty{R^i \pi_*} \mathcal{F} = H^i\qty{ \pi_* \mathcal{I}^\wait }
+,\]
+where the RHS are sheaves on $Y_\et$.
+Implicit here is the claim that $\pi_*$ is left-exact.
+You can also find $\qty{L^{>0} \pi^*} \mathcal{G} = 0$.
+
+:::{.exercise title="?"}
+Check that pullback is exact.
+:::
+
+:::{.proposition title="Properties of étale cohomology"}
+\envlist
+
+1. $H^0(X_\et, \mathcal{F}) = \mathcal{F}(X)$, aka the global sections $\Gamma(X, \mathcal{F})$.
+
+2. $H^{>0}(\mathcal{I}) = 0$ for $\mathcal{I}$ injective.
+
+3. Given a SES of sheaves in $\Sh(X_\et)$
+\[  
+0 \to A\to B \to C \to 0
+\]
+  there is a LES
+  \[  
+  \cdots \to H^{i+1}(X_\et, C) \mapsvia{\delta} H^i(X_\et, A) \to \cdots
+  .\]
+:::
+
+:::{.example title="?"}
+Suppose $k$ is a field, not necessarily algebraically closed, and consider $\Sh(\qty{\spec k}_\et)$.
+Let $G \da \Gal(k^s/k)$ for a choice of separable closure $k^s/k$.
+
+:::{.claim}
+There is a functor from $\Sh(\qty{\spec k}_\et)$ to discrete $G\dash$modules[^explain_disc_g_mod]
+inducing an equivalence of categories.
+
+[^explain_disc_g_mod]: 
+$G$ is a topological group in the inverse limit topology, so a discrete $G\dash$module is a module with the discrete topology where the $G\dash$action is continuous. 
+In particular, the action on any element factors through a finite quotient of $G$.
+
+:::
+
+Note that when thinking of Galois representations, $\ZZ_{\ell}$ is not an example of this, but a representation over a finite field works.
+E.g. the Tate module (the inverse limit of torsion) of an elliptic curve is not a discrete $G\dash$module since the Galois action is not continuous in the discrete topology (although it is in the $\ell\dash$adic topology).
+
+To prove this claim, the map is given by
+\[  
+\iota: \Sh(\qty{\spec k}_\et) &\to \text{Discrete $G\dash$modules} \\
+\mathcal{F} &\mapsto \stacksymbol{}{k \subset L \subset k^s}\inverselim \mathcal{F}(\spec L)
+.\]
+The idea here: you want to evaluate $\mathcal{F}$ on $k^s$, which doesn't make sense because $k^s$ is not locally finitely-presented, so we take a limit instead.
+The claim is that the image is a discrete $G\dash$module and this is an equivalence.
+This follows because each term is, and taking limits preserves this property.
+:::
+
+:::{.corollary title="?"}
+$H^i(\qty{\spec K}_\et, \mathcal{F} ) = H^i(G,\iota \mathcal{F})$,
+which is the Galois cohomology.
+:::
+
+Why?
+Derived functors only depend on the ambient category, so it suffices to check $H^0$.
+
+:::{.proof title="of claim"}
+We get a $G\dash$module since $G$ acts on the entire diagram and thus its limit.
+
+:::{.exercise title="?"}
+Check that this is a discrete $G\dash$module.
+:::
+
+There is an inverse functor: given $V\to \spec k$ an étale map, by the classification of étale $k\dash$algebras we have $V = \disjoint_{k in K'} \spec k'$ where $K'$ is the set of all finite separable $k'/k$.
+Given a discrete $G\dash$module $M$, send it to the Galois fixed points $V \to \prod M^{G_s'}$ where $G_s' \da \Gal(k^s/k')$.
+
+:::{.exercise title="Check"}
+Check that this is an inverse, it follows from Galois descent.
+:::
+
+:::
+
+:::{.proof title="of corollary"}
+$\Gamma(\spec k, \mathcal{F}) = \qty{\iota F}^G$, taking the $G\dash$invariants.
+So $H^0 \mapsvia{\iota}$ to taking invariants, and thus the higher derived functors agree, where the RHS is group cohomology.
+:::
+
+:::{.remark}
+Right now we're only talking about things that look like $\zlz^n$, but the goal when proving the Weil conjectures will be using $\ZZ_\ell$.
+We'll be trying to count some number by taking traces, but if we take these in a ring where some prime is zero, this only gives a congruence class.
+So when we define $\ell\dash$adic cohomology, we'll take some inverse limit.
+If we take the constant sheaf $\ul{\ZZ_\ell}$, this doesn't use the topology and will give the wrong answer.
+:::
+
+:::{.example title="?"}
+For $E$ an elliptic curve, $E(k^s)$ is a discrete $G\dash$module.
+Under the above correspondence, this goes to $\hom(\wait, E)$ since an $L\dash$point of the curve is the same as a Galois-invariant $k^s\dash$point.
+:::
+
+## How to Compute: Čech Cohomology
+
+:::{.warnings}
+\envlist
+
+1. Čech cohomology does not always compute étale cohomology!
+  Note that this already happens for bad topological spaces, where Čech doesn't always compute sheaf cohomology, and this can be true for schemes as well.
+  Ex: $\AA_2$ with a doubled origin.
+
+2. Čech cohomology is not actually "computable", since acyclic covers do not generally exist.
+:::
+
+When *does* Čech cohomology compute sheaf cohomology?
+If you define a cover of your space, for each object of the cover and each double intersect, the derived functors vanish.
+
+:::{.example title="?"}
+Take an algebraic curve, say as an open subset of a Riemann surface.
+There are no étale maps to it which have this property: taking any Zariski open subset (thinking over $k=\CC$) yields lots of interesting cohomology.
+So you can never find an acyclic cover.
+:::
+
+:::{.remark}
+This is one of the major differences between étale cohomology and singular cohomology of manifolds, and it makes things much more difficult.
+When defining an acyclic cover for manifolds, you usually look for a cover by contractible objects, which works because manifolds are locally contractible.
+Schemes are generally not locally acyclic.
+What is true is that schemes are $K(\pi, 1)$, so étale cohomology can be computed in terms of group cohomology.
+:::
+
+
+### Defining Čech Cohomology
+
+
+:::{.definition title="Čech Complex"}
+Suppose $U \da \Union U_i \to X$ is an étale cover, and suppose $\mathcal{F}\in \Sh(X_\et)$, then there is a complex of projections:
+
+\begin{tikzcd}
+X 
+  &
+U 
+  \arrow[l] 
+  &
+U\cross_X U 
+  \arrow[l, shift left]
+  \arrow[l, shift right] 
+  &
+U\cross_X U \cross_X U 
+  \arrow[l]
+  \arrow[l, shift left=2]
+  \arrow[l, shift right=2]
+  &
+\cdots
+  \arrow[l, shift left=0.75]
+  \arrow[l, shift right=0.75]
+  \arrow[l, shift left=2.25]
+  \arrow[l, shift right=2.25]
+  &
+\end{tikzcd}
+
+Here we interpret each term as the $n\dash$fold intersections in the cover.
+We can apply $\mathcal{F}$ to this diagram to obtain a **cosimplicial diagram** of abelian groups.
+Given such a diagram, you can take the alternating sum as differentials to obtain a chain complex
+\[  
+\check{C}^\wait(U/X, \mathcal{F}) \da \qty{ 0 \to \mathcal{F}(U) \to \mathcal{F}(U\cross_X U) \to \cdots}
+.\]
+This is the **Čech Complex**.
+:::
+
+:::{.remark}
+On usual topological spaces, there are two notions of the Čech complex: this one, and the **alternating Čech complex** where you throw away self-intersections.
+This doesn't work in this setting, since these can be interesting objects here.
+E.g. there is not necessarily a section $U_i \to U_i \cross_X U_i$.
+:::
+
+:::{.definition title="Total Čech Complex of the Étale Site"}
+\[  
+\check{C}^\wait (X_\et, \mathcal{F}) \da \stacksymbol{}{U\to X}\directlim  \check{C}^\wait(U/X, \mathcal{F})
+,\]
+where the limit is taken over all covering families.
+:::
+
+:::{.remark}
+Note that taking direct limits is exact, so we can do this in either order.
+There are potential set-theoretic issues if $X$ is not quasicompact; one fix is to only work in the finitely-presented setting, which is the choice we'll make here.
+:::
+
+:::{.definition title="Čech Cohomology" ref="def:cech_cohomology"}
+\[  
+\check{H}^i(U/X, \mathcal{F}) &\da H^i(\check{C}^\wait (U/X, \mathcal{F})) \\
+\check{H}^ik(X_\et, \mathcal{F}) &\da H^i(\check{C}^\wait (X_\et, \mathcal{F})
+.\]
+:::
+
+:::{.proposition title="?"}
+$\Hc^0(U/X) = \Hc^0(X_\et, \mathcal{F}) = H^0(X_\et, \mathcal{F})$.
+:::
+
+:::{.proof title="?"}
+This is the sheaf condition, i.e. which implies the following sequence is exact:
+\[  
+\mathcal{F}(X) \to \mathcal{F}(U) \to \mathcal{F}(U\cross_X U)
+.\]
+That gives that the first term is equal to the last, and the middle term is the direct limit of the kernel of this sequence and direct limits are exact.
+:::
+
+:::{.proposition title="?"}
+$\Hc^{i> 0} (U/X, \mathcal{I}) \cong \Hc^{i> 0}(X_\et, \mathcal{I})$ if $\mathcal{I}$ is injective.
+:::
+
+:::{.proof title="?"}
+It's enough to show that $\check{C}^\wait(U/X, \mathcal{I})$ is exact away from 0.
+This is the statement of the first equality, and the second equality is the direct limit of it.
+
+:::{.claim title="1"}
+There is an alternative characterization of the Čech complex.
+Let $\ZZ_U \da \ZZ[\hom_X(\wait, U)]$ be the free abelian group on this functor, i.e. to evaluate this on a scheme $V$ one takes $\hom_X(V, U)$ and the free abelian group on that.
+Then 
+\[  
+\check{C}^\wait(U/X, \mathcal{I}) = \qty{ \hom(\ZZ_U, \mathcal{I}) \to \hom(\ZZ_{U\cross_X U}, \mathcal{I}) \to \hom(\ZZ_{U\cross_X U \cross_X U}, \mathcal{I}) \to \cdots}
+.\]
+:::
+This follows from Yoneda's lemma.
+
+:::{.claim title="2"}
+It's enough to show that 
+\[  
+\ZZ \to \ZZ_{U} \to \ZZ_{U\cross_X U} \to \cdots
+\]
+is exact.
+:::
+This is because $\hom(\wait, \mathcal{I})$ is exact, which is precisely how we obtain the complex from this in the previous claim.
+
+:::{.claim title="3"}
+Let $S$ be a set, then
+\[  
+\ZZ \to \ZZ[S] \to \ZZ[S\cross S] \to \cdots
+\]
+is always exact.
+:::
+This follows for the same reason that the Amitsur complex is exact: base change to $\ZZ^S$, which is a flat $\ZZ\dash$module, and thus we get a nullhomotopy.
+
+:::{.exercise title="?"}
+Check this!
+:::
+
+:::
+
+We need one more thing to show that Čech cohomology is isomorphic to the derived functor cohomology: 
+
+:::{.theorem title="?"}
+If for all SESs of sheaves 
+\[  
+0 \to A \to B \to C\to 0 && \in \Sh(X_\et)
+\]
+we have an exact sequence
+\[  
+0 \to \check{C}(X_\et, A) \to \check{C}(X_\et, B) \to \check{C}(X_\et,C) \to 0 && \in \Sh(X_\et)
+\]
+then we get a LES in cohomology, then
+\[  
+\Hc^{i}(X_\et, \mathcal{F}) \mapsvia{\sim} H^i(X_\et, \mathcal{F}) && \text{for all }i
+.\]
+
+:::
+
+:::{.proof title="?"}
+This comes from the theory of universal $\delta\dash$functors.
+A derived functor is determined uniquely by $H^0$, what they do on injectives, and the fact that the LES from a SES is functorial.
+The problem is that the second sequence above is always left-exact but not in general right-exact.
+We'll see a proof next time using spectral sequences.
+:::
+
+:::{.theorem title="Milne, III"}
+This is true if $X$ is quasicompact and any finite subset of $X$ is contained in an affine.
+:::
+
+:::{.remark}
+How can you check this condition? 
+This holds if $X$ is quasiprojective.
+:::
+
+
+# Lecture 08: Computing Étale Cohomology
+
+Recall the definition of $\check{C}(U/X, \mathcal{F})$ and $\check{C}(X_\et, \mathcal{F})$ (\cref{def:cech_cohomology}).
+
+
+:::{.warnings}
+$\Hc{X_\et, \mathcal{F}} \not\cong H(X_\et, \mathcal{F})$ in general, but by a theorem of Milne this is true if $X$ is quasicompact any finite subset is contained in an affine open.
+This is true if $X$ is quasiprojective.
+:::
+
+:::{.remark}
+There is a version for which this does always work where Čech covers are replaced with **hpyercovers**.
+:::
+
+## Čech to Derived Spectral Sequence
+
+Since we have enough injectives, take an injective resolution $\mathcal{F}\to \mathcal{I}^0 \to \cdots$ which is exact and each $\mathcal{I}^j$ is injective.
+We can apply the Čech complex functor to obtain a double complex 
+\[
+\Cc^\wait(U/X, \mathcal{I}^0) \to \Cc^\wait(U/X, \mathcal{I}^1) \to \cdots
+,\]
+where the horizontal differentials come from the resolution and the vertical come from the Čech complex.
+To any double complex, one can associate two spectral sequences.
+First consider taking horizontal cohomology:
+
+\begin{tikzcd}
+\vdots 
+  & \vdots 
+  & \udots 
+  \\
+\Cc(U/X, \mathcal{I}^1) 
+  = \mathcal{I}^0(U\cross_X U) 
+    \ar[r]\ar[u]
+  & \mathcal{I}^1(U\cross_X U)
+    \ar[r]\ar[u]
+  & \cdots 
+  \\
+\Cc(U/X, \mathcal{I}^0) 
+  = \mathcal{I}^0(U)
+    \ar[r]\ar[u]
+  & \mathcal{I}^1(U)
+    \ar[r]\ar[u]
+  & \cdots
+\end{tikzcd}
+
+Taking the vertical cohomology yields
+\[  
+E_2^{i, j} = \Hc^i(U, \mathcal{H}^j(\mathcal{F}))
+,\]
+where $\mathcal{H}^j$ is the presheaf $V\mapsto H_\et^j(V, \mathcal{F})$.
+
+Now we take cohomology in the other order: taking the vertical cohomology collapses to the bottom row, which are global sections, and so
+
+\[  
+E_2^{i, j} = H^i(\Gamma(X, \mathcal{I}))  E_{\infty}
+,\]
+which is the derived functor cohomology.
+The spectral sequence thus converges in the following way:
+\[  
+\Hc^i(U, \mathcal{H}^j(\mathcal{F})) \abuts H^{i+j}(X_\et, \mathcal{F})
+.\]
+
+:::{.exercise title="Good for getting used to spectral sequences"}
+Show that if $\Cc(X_\et, \wait)$ is exact on $\Sh^{\ab}(X_\et)$, then $\Hc^\wait \cong H^\wait$.
+See Tohoku or Hartshorne, and prove this using the Čech to derived functor spectral sequence.
+:::
+
+## Mayer-Vietoris
+
+:::{.proposition title="?"}
+Let $U = U_0 \union U_1$ with each $U_i$ a Zariski open subset.
+Then there exists a functorial LES
+\[  
+\cdots \to
+H^s(U, \mathcal{F}) \mapsvia{\res} 
+H^s(U_0, \mathcal{F}) \oplus H^s(U_1, \mathcal{F}) \mapsvia{\res} 
+H^s(U_0 \intersect U_1, \mathcal{F}) \mapsvia{\delta}
+H^{s+1}(U, \mathcal{F}) \to 
+\cdots
+.\]
+:::
+
+:::{.proof title="?"}
+Apply the Čech to derived spectral sequence to the cover $\mathcal{U} \da U_0 \disjoint U_1 \to U$.
+This says take
+\[  
+\mathcal{F}(\mathcal{U}) \to 
+\mathcal{F}((\mathcal{U})^{\cross_U 2} ) \to
+\mathcal{F}((\mathcal{U})^{\cross_U 3} ) \to
+\cdots
+.\]
+None of these objects are empty, which doesn't happen with the usual Čech complex of an open cover, where the alternating complex is taken which doesn't see all of these.
+
+:::{.claim}
+This complex is quasi-isomorphic to the 2-term complex
+\[  
+\mathcal{F}(U_0 \disjoint U_1) = \mathcal{F}(U_0) \cross \mathcal{F}(U_1) \to
+\mathcal{F}(U_0 \intersect U_1)
+.\]
+:::
+
+:::{.exercise title="?"}
+Prove this.
+This uses the fact that we have a Zariski cover instead of a general étale cover, since it's not true in general: a counterexample is $\GG_m \to \GG_m$ where $x\mapsto x^2$. 
+The double intersection won't make sense, since it won't be connected and there's not a distinguished component.
+:::
+
+Given this, $E_2$ vanishes outside of 2 columns, and considering computing $H^1$ we have the following situation:
+
+\begin{sseqdata}[ name = "2col", xscale=0.6, homological Serre grading, y range = {0}{2}, differentials = blue]
+\class(0, 0)
+\class(0, 1)
+\class(0, 2)
+\class(0, 3)
+\class(1, 0)
+\class(2, 0)
+\class(2, 1)
+\class(2, 2)
+\class(2, 3)
+\structline(0,0)(0, 3)
+\structline(2,0)(2, 3)
+\d2(2, 0)
+\d2(2, 1)
+\d2(2, 2)
+\classoptions[red](1,0,1)
+\classoptions[red](0,1,1)
+\end{sseqdata}
+\begin{center}
+\printpage[ name = "2col", page = 2]
+\end{center}
+
+This is a general phenomenon: a spectral sequence collapsing onto two columns is the same data as a long exact sequence.
+
+:::{.exercise title="?"}
+Check this.
+:::
+
+:::
+
+
+:::{.theorem title="?"}
+Suppose $X$ is a scheme and $\mathcal{F}\in \Qcoh(X)$ (for example, $\mathcal{F} \da \OO_X$).
+Then there is a canonical isomorphism
+\[  
+H^i(X, \mathcal{F}) \mapsvia{\sim} H^i(X_\et, \mathcal{F}^{\et}) \mapsvia{\sim} H^i(X_{\fppf}, \mathcal{F}^{\fppf})
+,\]
+The first term is the usual Zariski cohomology of a quasicoherent sheaf, the second is the étale cohomology where $\mathcal{F}^{\et}$ is the associated sheaf on the étale site given by pulling back to an étale morphism, and the third is the same on fppf site, since the categories $\QCoh$ are canonically isomorphic.
+:::
+
+:::{.remark}
+The derived functor cohomology 
+\[
+H^i(\Sh(X_{\zar}), \mathcal{F}) \da \Ext^i_{\Sh(X_\zar)}(\ul{\ZZ}, \mathcal{F})
+\]
+since it only depends on the category of sheaves.
+This is because we're taking the derived functors of $\Gamma$, which is the same as $\Hom(\ul{\ZZ}, \wait)$.
+This is equal to 
+\[
+H^i(\Qcoh(X), \mathcal{F}) \da \Ext^i_{\Qcoh(X)}(\OO_X, \mathcal{F})
+\]
+for the same reason, since it's true for any sheaf of $\OO_X$ modules.
+This isomorphism is not just formal, since $\Qcoh$ is much smaller than $\Sh$.
+The reason is that injective quasicoherent sheaves are flasque (?), so it also computes derived functor cohomology.
+In general, it's much harder to be an injective object in the $\Sh$ than it is in $\Qcoh$, since it has to satisfy a lifting property with respect to more maps.
+
+The main takeaway: we already showed $\Qcoh(X_\et) \cong \Qcoh(X_\zar)$, but now we have this isomorphism in a much larger category.
+:::
+
+
+:::{.proof title="?"}
+We'll prove this in a special case: if $X$ is quasicompact and separated, Čech cohomology computes derived functor cohomology.
+
+:::{.claim title="1"}
+Every cover can be refined to a *finite* cover by affines, using quasicompactness.
+:::
+
+:::{.claim title="2"}
+Supposing $X$ is affine and $U\to X$ is an fppf affine cover, then $\Cc{U/X, \mathcal{F}}$ is exact if $\mathcal{F} = \hat M$ is the quasicoherent sheaf associated to some module $M$.
+:::
+
+:::{.proof title="of claim 2"}
+Let $U=\spec B, X = \spec A$, and $M\in \mods{A}$.
+
+Then we get the complex
+\[  
+M\to
+M\tensor_A B \to 
+M\tensor_A B^{\tensor_A 2} \to 
+M\tensor_A B^{\tensor_A 4} \to 
+\cdots
+,\]
+which is the *Amitsur complex*.
+We showed that $M$ was the kernel of the first map, and we argued that since $B$ was an fppf $A\dash$algebra, we can check this after tensoring with $B$, in which case we had a section which yielded a nullhomotopy.
+This complex is exact as in the argument used in the proof of descent.
+:::
+
+By this claim, we know that
+\[  
+\Hc^{i}(U/X, \mathcal{F}) = 
+\begin{cases}
+\mathcal{F}(X) & i = 0 \\
+0              & i>0.
+\end{cases}
+\]
+for $\mathcal{F}$ quasicoherent and $U, X$ affine.
+
+:::{.claim title="3"}
+When $\mathcal{F}$ is quasicoherent and $X$ affine,
+\[  
+\Hc^i(X_\et, \mathcal{F}) = 
+\begin{cases}
+\mathcal{F}(X) & i = 0 \\
+0              & i>0
+\end{cases}
+.\]
+:::
+
+:::{.proof title="?"}
+Affine covers are cofinal in the diagram of covers.
+We're taking a direct limit and every time we have something nonzero, we kill it by refining the cover.
+:::
+
+We'll now prove this when $X$ is separated and quasicompact.
+Take an affine cover $\mathcal{U}\to X$, e.g. the Zariski open cover, and use the Čech-to-derived spectral sequence.
+Separatedness is used since we'll see things like 5-fold intersections, and we need to know that the cohomology of this is zero, which will be true by the previous result.
+
+:::{.exercise title="?"}
+Check this.
+:::
+
+:::
+
+:::{.remark}
+
+This holds in more generality, but we won't need schemes that don't satisfy this property in this course.
+:::
+
+
+:::{.example title="?"}
+Let $X = \PP^n$ and $\mathcal{F} = \OO_X$, then
+\[  
+H^i(\PP^n_\et, \OO_X^{\et}) = 
+\begin{cases}
+k & i= 0 \\
+0 & i>0
+\end{cases}
+.\]
+:::
+
+:::{.example title="?"}
+Let $X/\FF_p$ be a quasiprojective variety.
+What is the following cohomology?
+\[  
+H^i(X_\et, \ul{\FF_p})  = ?
+.\]
+
+In general, the strategy will be to use long exact sequences stemming from spaces where the cohomology is known.
+We only know how to compute with quasicoherent sheaves, so we need to put $\ul{\FF_p}$ in a SES.
+We can use the Frobenius: let $\GG_a = \hom(\wait, \AA^1)$, so $\GG_a(U) = \OO_U(U)$.
+Then $\FF_p$ are the fixed points of Frobenius, so we get a SES of schemes by carving out these points
+\[  
+0 \to
+\ul{\FF_p} \to
+\GG_a \mapsvia{x^p - x}
+\GG_a \to 
+0
+.\]
+This can be thought of as the sheaf $\OO \to \OO, f \mapsto f^p -f$, but you can also think of it in terms of representing objects $\AA^1$.
+
+:::{.claim}
+This sequence is exact.
+:::
+
+:::{.proof title="?"}
+This is the *Artin-Schreier* exact sequence.
+This is true at the level of representing objects, or it can be checked by hand by showing that $f^p - f = 0 \implies f$ is constant.
+
+For surjectivity, given $f\in \OO_U(U) = \GG_a(U)$, we need to solve $x^p - x = f$ étale-locally on $U$.
+This naturally has a solution after base-changing:
+\begin{tikzcd}
+\GG_a \cross_{\GG_a} U 
+  \ar[r]\ar[d, "\exists g"] &
+\GG_a
+  \ar[d]
+\\
+U 
+  \ar[r, "f"] &
+\GG_a
+\\
+\end{tikzcd}
+The claim is that $g$ is an étale cover.
+This follows because $x^p-x$ is an étale cover, since the derivative is invertible, and thus $g$ is a base change of an étale cover.
+:::
+
+We then get a LES
+\begin{tikzcd}
+0 
+  \ar[r] \ar[d, equal]
+& H^0(X_\et, \FF_p)
+  \ar[r] \ar[d, equal]
+& H^0(X_\et, \GG_a)
+  \ar[r, "x^p-x"]\ar[d, equal]
+& H^0(X_\et, \GG_a)
+	\ar[d, equal]\ar[r, "\delta"]
+& H^1(X_\et, \FF_p)
+  \ar[r]\ar[d, equal]
+& \cdots
+\\
+0 
+  \ar[r] 
+& H^0(X_\et, \FF_p)
+  \ar[r] 
+& H^0(X_\et, \OO_X)
+  \ar[r, "x^p-x"]
+& H^0(X_\et, \OO_X)
+  \ar[r, "\delta"]
+& H^1(X_\et, \FF_p)
+  \ar[r]
+& \cdots
+\end{tikzcd}
+
+For $X = \AA^1 = \spec \FF_p[t]$, we get
+
+\begin{tikzcd}
+0 
+  \ar[r] \ar[d, equal]
+& H^0(\AA^1_\et, \FF_p)
+  \ar[r] \ar[d, equal]
+& \FF_p[t] 
+  \ar[r, "t^p-t"]\ar[d, equal]
+& \FF_p[t] 
+	\ar[d, equal]\ar[r, "\delta"]
+& H^1(\AA^1_\et, \FF_p)
+  \ar[r]\ar[d, equal]
+& 0
+  \ar[d, equal]
+\\
+0
+  \ar[r]
+& \FF_p
+  \ar[r]
+& \FF_p[t]
+  \ar[r]
+& \FF_p[t]
+  \ar[r]
+& \cok(t^p - t) 
+  \ar[r]
+& 0
+\end{tikzcd}
+In general, this cokernel is very large.
+This is why étale cohomology with $\FF_p$ coefficients is not particularly well-behaved, although taking a projective variety would yield finite dimensional objects here, but not of the expected dimensions.
+:::
+
+
+
+# Lecture 09 (todo)
+
+# Lecture 10 (todo)
+
+# Lecture 11 (todo)
+
+# Lecture 12 (todo)
+
+# Lecture 13 (todo)
+
+# Lecture 14 (todo)
+
+# Lecture 15 (todo)
+
+# Lecture 16 (todo)
+
+# Lecture 17 (todo)
+
+# Lecture 18 (todo)
+
+# Lecture 19 (todo)
+
+# Lecture 20 (todo)
+
+# Lecture 21 (todo)
+
+# Lecture 22 (todo)
+
+# Lecture 23 (todo)
+
+# Lecture 24 (todo)
+
+# Lecture 25 (todo)
+
+# Lecture 26 (todo)
+
+# Lecture 27 (todo)
+
+# Lecture 28 (todo)
+
+# Lecture 29 (todo)
+
+# Lecture 30 (todo)
