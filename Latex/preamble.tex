@@ -64,14 +64,6 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-% Tikz 
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, matrix, positioning, decorations, decorations.pathreplacing, decorations.markings, shapes, backgrounds, fit, shapes.geometric, intersections}
-\tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
-\usepackage{tikz-layers}
-\usepackage{ifthen}
-\usepackage{xifthen}
-\usepackage{tikz-3dplot}
 
 % Non-tikz graphics
 \usepackage{amscd}
@@ -79,14 +71,13 @@
 \pgfplotsset{compat=1.17}
 \usepackage[inline]{asymptote}
 
-
-% Major Macros
+% Figures
 \usepackage{graphicx}
-
 % Make figures stay where you put them!
 \usepackage{float}
 \floatplacement{figure}{H}
 
+% ? I forget
 \DeclareFontFamily{U}{mathx}{\hyphenchar\font45}
 \DeclareFontShape{U}{mathx}{m}{n}{
       <5> <6> <7> <8> <9> <10>
@@ -96,8 +87,7 @@
 \DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
 %\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
 
-
-
+% KOMAScript article customization
 \usepackage[autooneside=false,automark]{scrlayer-scrpage}
 %\clearscrheadfoot{}
 \clearpairofpagestyles
