@@ -265,8 +265,10 @@ To prove this is an equalizer diagram, we'll need a lemma:
 :::{.lemma title="?"}
 Suppose $R\to S$ is a faithfully flat ring morphism (flat and morphisms on spec are surjective) and suppose $N\in \rmod$.
 Then there is an equalizer diagram 
+
+
 \begin{tikzcd}
-N \ar[r] & N\tensor_R S \ar[r, bend left, "\id_N \tensor \id_S \tensor 1"] \ar[r, bend right, "\id_N \tensor 1 \tensor \id_S"] & N\tensor_R S \tensor_R S \\
+N \ar[r] & N\tensor_R S \ar[r, bend left, "\id_N \tensor \id_S \tensor 1"] \ar[r, bend right, "\id_N \tensor 1 \tensor \id_S"'] & N\tensor_R S \tensor_R S \\
 n \ar[r] & n\tensor 1 
 \end{tikzcd}
 :::
@@ -279,8 +281,8 @@ This is the case where $\mathcal{F}_1 = \OO$ and $\mathcal{F}_2 = \tilde N$ the 
 (Amazing trick) WLOG $R\to S$ splits, so there's a map $S\to R$ such that $R\to S\to R$ is the identity.
 We can tensor with $S$, i.e. push out this map along itself to obtain
 \begin{tikzcd}
-R \ar[d]\ar[r] & S \ar[d, "1\tensor \id_S"] \\
-S \ar[r] & S\tensor_R S  \ar[u, bend right, "\exists m"]
+R \ar[d]\ar[r] & S \ar[d, "1\tensor \id_S"'] \\
+S \ar[r] & S\tensor_R S  \ar[u, bend right, "\exists m"']
 \end{tikzcd}
 where $m$ is a section given by multiplication.
 
