@@ -12,8 +12,6 @@
 \def\endo{\operatorname{End}}
 \def\ind{\operatorname{Ind}}
 \renewcommand{\AA}[0]{{\mathbb{A}}}
-\DeclareMathOperator{\Exists}{\exists}
-\DeclareMathOperator{\Forall}{\forall}
 \newcommand{\Af}[0]{{\mathbb{A}}}
 \newcommand{\CC}[0]{{\mathbb{C}}}
 \newcommand{\CP}[0]{{\mathbb{CP}}}
@@ -181,7 +179,6 @@
 \newcommand{\eps}[0]{\varepsilon}
 \newcommand{\equalsbecause}[1] {\stackrel{\mathclap{\scriptscriptstyle{#1}}}{=}}
 \newcommand{\floor}[1]{{\left\lfloor #1 \right\rfloor}}
-\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \newcommand{\up}[0]{\uparrow}
 \newcommand{\generators}[1]{\left\langle{#1}\right\rangle}
 \newcommand{\gs}[1]{\left\langle{#1}\right\rangle}
@@ -358,14 +355,9 @@
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
-
-\DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
-
 \renewcommand{\labelitemiii}{$\diamondsuit$}
 \renewcommand{\labelitemiv}{$\diamondsuit$}
-
 \newcommand\vecc[2]{\textcolor{#1}{\textbf{#2}}}
-
 \def\colspace{\operatorname{colspace}}
 \def\rowspace{\operatorname{rowspace}}
 \def\codom{\operatorname{codom}}
@@ -373,10 +365,8 @@
 \def\nullspace{\operatorname{nullspace}}
 \def\nullity{\operatorname{nullspace}}
 \def\projection{\operatorname{Proj}}
-
 \newcommand*{\vertbar}{\rule[-1ex]{0.5pt}{2.5ex}}
 \newcommand*{\horzbar}{\rule[.5ex]{2.5ex}{0.5pt}}
-
 \newcommand\aug{\fboxsep=-\fboxrule\!\!\!\fbox{\strut}\!\!\!}
 \newcommand\rref{\operatorname{RREF}}
 \newcommand{\interior}[0]{^\circ}
@@ -384,6 +374,11 @@
 \newcommand{\decreasesto}[0]{\searrow}
 \newcommand\jan{\operatorname{Jan}}
 %\DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
+\DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
+\DeclareMathOperator{\Exists}{\exists}
+\DeclareMathOperator{\Forall}{\forall}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclareMathOperator*{\hocolim}{hocolim}
 
 \newcommand{\contains}[0]{\supseteq}
 \newcommand{\containing}[0]{\supseteq}
