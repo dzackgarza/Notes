@@ -92,8 +92,8 @@ clean:
 	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
 	rm *.svg -f || true;
 	rm *.temp -f || true;
-	rm out1.temp combined.temp;
-	rm sections/*.pdf;
+	rm out1.temp combined.temp || true;
+	rm sections/*.pdf || true;
 
 
 reset:

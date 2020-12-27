@@ -2,24 +2,34 @@ package.path = '/home/zack/Notes/Latex/?.lua;'..package.path
 
 local system = require 'pandoc.system'
 
+--local tikz_doc_template = [[
+--\documentclass{standalone}
+--\usepackage{tikz}
+--\usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix, positioning, decorations, shapes}
+--\usepackage{mathtools}
+--\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd, thmtools, xpatch}
+--\usepackage{stmaryrd}
+--\DeclarePairedDelimiter\qty{(}{)}
+--\input{/home/zack/Notes/Latex/latexmacs.tex}
+--\begin{document}
+--\nopagecolor
+--%s
+--\end{document}
+--]]
+
 local tikz_doc_template = [[
 \documentclass{standalone}
-\usepackage{tikz}
-\usetikzlibrary{arrows, arrows.meta, cd, fadings, patterns, calc, decorations.markings, matrix, positioning, decorations, shapes}
-\usepackage{mathtools}
-\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd, thmtools, xpatch}
-\usepackage{stmaryrd}
-\DeclarePairedDelimiter\qty{(}{)}
-\input{/home/zack/Notes/Latex/latexmacs.tex}
+\input{/home/zack/Notes/Latex/preamble_common}
 \begin{document}
 \nopagecolor
 %s
 \end{document}
 ]]
 
+
 local function tikz2image(src, outfile)
   system.with_temporary_directory('tikz2image', function (tmpdir)
-    print("Temp directory: " .. tmpdir)
+    --print("Temp directory: " .. tmpdir)
     system.with_working_directory(tmpdir, function()
       local f = io.open('tikz.tex', 'w')
       f:write(tikz_doc_template:format(src))
@@ -55,7 +65,7 @@ function RawBlock(el)
       local bname = system.get_working_directory() .. '/' .. sha
       local fname = bname .. '.' .. 'svg' 
       if not file_exists(fname) then
-        print("Making image:" .. el.text)
+        --print("Making image:" .. el.text)
         tikz2image(el.text, fname)
       end
       ril = pandoc.RawInline('html', '<p style="text-align:center;"> <img class="tikz" src="' .. fname .. '"></p>')
