@@ -1,822 +1,824 @@
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 1.1.1\else \numberline {1.1.1}Example\fi }{7}{example.1.1.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 1.1.1\else \numberline {1.1.1}Example\fi }{10}{example.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 1.2.1\else \numberline {1.2.1}Theorem\fi \thmtformatoptarg {Harnack Curve Theorem}}{9}{theorem.1.2.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 1.2.1\else \numberline {1.2.1}Theorem\fi \thmtformatoptarg {Harnack Curve Theorem}}{12}{theorem.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 1.2.2\else \numberline {1.2.2}Example\fi }{9}{example.1.2.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 1.2.2\else \numberline {1.2.2}Example\fi }{12}{example.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 1.2.3\else \numberline {1.2.3}Exercise\fi }{9}{exercise.1.2.3}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 1.2.3\else \numberline {1.2.3}Exercise\fi }{12}{exercise.1.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 1.3.1\else \numberline {1.3.1}Example\fi }{9}{example.1.3.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 1.3.1\else \numberline {1.3.1}Example\fi }{12}{example.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {fact}{\ifthmt@listswap Fact\nobreakspace 1.3.2\else \numberline {1.3.2}Fact\fi }{9}{fact.1.3.2}%
+\contentsline {fact}{\ifthmt@listswap Fact\nobreakspace 1.3.2\else \numberline {1.3.2}Fact\fi }{12}{fact.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 2.1.1\else \numberline {2.1.1}Definition\fi \thmtformatoptarg {Radical}}{11}{definition.2.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 2.1.1\else \numberline {2.1.1}Definition\fi \thmtformatoptarg {Radical}}{14}{definition.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 2.1.2\else \numberline {2.1.2}Example\fi }{11}{example.2.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 2.1.2\else \numberline {2.1.2}Example\fi }{14}{example.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 2.1.3\else \numberline {2.1.3}Definition\fi \thmtformatoptarg {Degree of an element of $k[x_1, \cdots , x_{n}]$}}{11}{definition.2.1.3}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 2.1.3\else \numberline {2.1.3}Definition\fi \thmtformatoptarg {Degree of an element of $k[x_1, \cdots , x_{n}]$}}{14}{definition.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 2.1.4\else \numberline {2.1.4}Example\fi }{11}{example.2.1.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 2.1.4\else \numberline {2.1.4}Example\fi }{14}{example.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 2.1.5\else \numberline {2.1.5}Definition\fi \thmtformatoptarg {Affine Variety}}{11}{definition.2.1.5}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 2.1.5\else \numberline {2.1.5}Definition\fi \thmtformatoptarg {Affine Variety}}{14}{definition.2.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 2.1.6\else \numberline {2.1.6}Example\fi \thmtformatoptarg {Examples of affine varieties}}{11}{example.2.1.6}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 2.1.6\else \numberline {2.1.6}Example\fi \thmtformatoptarg {Examples of affine varieties}}{14}{example.2.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 2.1.7\else \numberline {2.1.7}Remark\fi }{12}{remark.2.1.7}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 2.1.7\else \numberline {2.1.7}Remark\fi }{15}{remark.2.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{12}{thmt@dummyctr.dummy.14}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{15}{thmt@dummyctr.dummy.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 2.2.1\else \numberline {2.2.1}Proposition\fi \thmtformatoptarg {Properties of $V$}}{12}{proposition.2.2.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 2.2.1\else \numberline {2.2.1}Proposition\fi \thmtformatoptarg {Properties of $V$}}{15}{proposition.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 2.2.2\else \numberline {2.2.2}Definition\fi \thmtformatoptarg {The Ideal of a Set}}{12}{definition.2.2.2}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 2.2.2\else \numberline {2.2.2}Definition\fi \thmtformatoptarg {The Ideal of a Set}}{15}{definition.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 2.2.3\else \numberline {2.2.3}Example\fi }{12}{example.2.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 2.2.3\else \numberline {2.2.3}Example\fi }{15}{example.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 2.2.4\else \numberline {2.2.4}Proposition\fi \thmtformatoptarg {$I$ is inclusion-reversing}}{13}{proposition.2.2.4}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 2.2.4\else \numberline {2.2.4}Proposition\fi \thmtformatoptarg {$I$ is inclusion-reversing}}{16}{proposition.2.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{13}{thmt@dummyctr.dummy.19}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{16}{thmt@dummyctr.dummy.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 2.2.5\else \numberline {2.2.5}Proposition\fi \thmtformatoptarg {The Image of $I$ is Radical}}{13}{proposition.2.2.5}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 2.2.5\else \numberline {2.2.5}Proposition\fi \thmtformatoptarg {The Image of $I$ is Radical}}{16}{proposition.2.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{13}{thmt@dummyctr.dummy.21}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{16}{thmt@dummyctr.dummy.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{13}{thmt@dummyctr.dummy.22}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{16}{thmt@dummyctr.dummy.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{13}{thmt@dummyctr.dummy.23}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{16}{thmt@dummyctr.dummy.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 2.3.1\else \numberline {2.3.1}Theorem\fi \thmtformatoptarg {Hilbert Nullstellensatz (Zero Locus Theorem)}}{14}{theorem.2.3.1}%
+\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 2.3.1\else \numberline {2.3.1}Theorem\fi \thmtformatoptarg {Hilbert Nullstellensatz (Zero Locus Theorem)}}{17}{theorem.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$X \subset V(I(X))$ (a)}}{14}{thmt@dummyctr.dummy.25}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$X \subset V(I(X))$ (a)}}{17}{thmt@dummyctr.dummy.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$\sqrt {J} \subset I(V(J))$ (b)}}{14}{thmt@dummyctr.dummy.26}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$\sqrt {J} \subset I(V(J))$ (b)}}{17}{thmt@dummyctr.dummy.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$V(I(X)) \subset X$ (c)}}{14}{thmt@dummyctr.dummy.27}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$V(I(X)) \subset X$ (c)}}{17}{thmt@dummyctr.dummy.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 2.3.2\else \numberline {2.3.2}Warning\fi \thmtformatoptarg {Hard theorem from commutative algebra.}}{14}{warnings.2.3.2}%
+\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 2.3.2\else \numberline {2.3.2}Warning\fi \thmtformatoptarg {Hard theorem from commutative algebra.}}{17}{warnings.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 2.3.3\else \numberline {2.3.3}Theorem\fi \thmtformatoptarg {1st Version of Nullstellensatz}}{15}{theorem.2.3.3}%
+\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 2.3.3\else \numberline {2.3.3}Theorem\fi \thmtformatoptarg {1st Version of Nullstellensatz}}{18}{theorem.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{15}{thmt@dummyctr.dummy.30}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{18}{thmt@dummyctr.dummy.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{15}{thmt@dummyctr.dummy.31}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{18}{thmt@dummyctr.dummy.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 3.1.1\else \numberline {3.1.1}Corollary\fi \thmtformatoptarg {?}}{16}{corollary.3.1.1}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 3.1.1\else \numberline {3.1.1}Corollary\fi \thmtformatoptarg {?}}{19}{corollary.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {slogan}{\ifthmt@listswap Slogan\nobreakspace 3.1.2\else \numberline {3.1.2}Slogan\fi }{16}{slogan.3.1.2}%
+\contentsline {slogan}{\ifthmt@listswap Slogan\nobreakspace 3.1.2\else \numberline {3.1.2}Slogan\fi }{19}{slogan.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{16}{thmt@dummyctr.dummy.34}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{19}{thmt@dummyctr.dummy.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{16}{thmt@dummyctr.dummy.35}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{19}{thmt@dummyctr.dummy.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {observation}{\ifthmt@listswap Observation\nobreakspace 3.2.1\else \numberline {3.2.1}Observation\fi }{16}{observation.3.2.1}%
+\contentsline {observation}{\ifthmt@listswap Observation\nobreakspace 3.2.1\else \numberline {3.2.1}Observation\fi }{19}{observation.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{17}{thmt@dummyctr.dummy.37}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{20}{thmt@dummyctr.dummy.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 3.2.2\else \numberline {3.2.2}Exercise\fi \thmtformatoptarg {?}}{17}{exercise.3.2.2}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 3.2.2\else \numberline {3.2.2}Exercise\fi \thmtformatoptarg {?}}{20}{exercise.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.3\else \numberline {3.2.3}Example\fi }{17}{example.3.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.3\else \numberline {3.2.3}Example\fi }{20}{example.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.4\else \numberline {3.2.4}Example\fi }{17}{example.3.2.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.4\else \numberline {3.2.4}Example\fi }{20}{example.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 3.2.5\else \numberline {3.2.5}Theorem\fi \thmtformatoptarg {Properties of $I$}}{18}{theorem.3.2.5}%
+\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 3.2.5\else \numberline {3.2.5}Theorem\fi \thmtformatoptarg {Properties of $I$}}{21}{theorem.3.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{18}{thmt@dummyctr.dummy.42}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{21}{thmt@dummyctr.dummy.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.6\else \numberline {3.2.6}Example\fi }{18}{example.3.2.6}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.6\else \numberline {3.2.6}Example\fi }{21}{example.3.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 3.2.7\else \numberline {3.2.7}Proposition\fi \thmtformatoptarg {?}}{18}{proposition.3.2.7}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 3.2.7\else \numberline {3.2.7}Proposition\fi \thmtformatoptarg {?}}{21}{proposition.3.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{18}{thmt@dummyctr.dummy.45}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{21}{thmt@dummyctr.dummy.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 3.2.8\else \numberline {3.2.8}Definition\fi \thmtformatoptarg {Coordinate Ring}}{19}{definition.3.2.8}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 3.2.8\else \numberline {3.2.8}Definition\fi \thmtformatoptarg {Coordinate Ring}}{22}{definition.3.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {observation}{\ifthmt@listswap Observation\nobreakspace 3.2.9\else \numberline {3.2.9}Observation\fi }{19}{observation.3.2.9}%
+\contentsline {observation}{\ifthmt@listswap Observation\nobreakspace 3.2.9\else \numberline {3.2.9}Observation\fi }{22}{observation.3.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.10\else \numberline {3.2.10}Example\fi }{19}{example.3.2.10}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.10\else \numberline {3.2.10}Example\fi }{22}{example.3.2.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 3.2.11\else \numberline {3.2.11}Theorem\fi \thmtformatoptarg {Relative Nullstellensatz}}{19}{theorem.3.2.11}%
+\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 3.2.11\else \numberline {3.2.11}Theorem\fi \thmtformatoptarg {Relative Nullstellensatz}}{22}{theorem.3.2.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{19}{thmt@dummyctr.dummy.50}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{22}{thmt@dummyctr.dummy.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.12\else \numberline {3.2.12}Example\fi }{20}{example.3.2.12}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 3.2.12\else \numberline {3.2.12}Example\fi }{23}{example.3.2.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 4.1.1\else \numberline {4.1.1}Definition\fi \thmtformatoptarg {Zariski Topology}}{20}{definition.4.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 4.1.1\else \numberline {4.1.1}Definition\fi \thmtformatoptarg {Zariski Topology}}{23}{definition.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 4.1.2\else \numberline {4.1.2}Proposition\fi \thmtformatoptarg {The Zariski topology is a topology}}{20}{proposition.4.1.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 4.1.2\else \numberline {4.1.2}Proposition\fi \thmtformatoptarg {The Zariski topology is a topology}}{23}{proposition.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{20}{thmt@dummyctr.dummy.54}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{23}{thmt@dummyctr.dummy.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 4.1.3\else \numberline {4.1.3}Remark\fi }{21}{remark.4.1.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 4.1.3\else \numberline {4.1.3}Remark\fi }{24}{remark.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.1.4\else \numberline {4.1.4}Example\fi \thmtformatoptarg {Closedness differs in the analytic topology}}{21}{example.4.1.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.1.4\else \numberline {4.1.4}Example\fi \thmtformatoptarg {Closedness differs in the analytic topology}}{24}{example.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.1.5\else \numberline {4.1.5}Example\fi }{21}{example.4.1.5}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.1.5\else \numberline {4.1.5}Example\fi }{24}{example.4.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 4.1.6\else \numberline {4.1.6}Warning\fi \thmtformatoptarg {The topology on the product is not the product topology}}{21}{warnings.4.1.6}%
+\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 4.1.6\else \numberline {4.1.6}Warning\fi \thmtformatoptarg {The topology on the product is not the product topology}}{24}{warnings.4.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.1\else \numberline {4.2.1}Example\fi }{21}{example.4.2.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.1\else \numberline {4.2.1}Example\fi }{24}{example.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 4.2.2\else \numberline {4.2.2}Definition\fi \thmtformatoptarg {Irreducibility and Connectedness}}{21}{definition.4.2.2}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 4.2.2\else \numberline {4.2.2}Definition\fi \thmtformatoptarg {Irreducibility and Connectedness}}{24}{definition.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.3\else \numberline {4.2.3}Example\fi }{22}{example.4.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.3\else \numberline {4.2.3}Example\fi }{25}{example.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.4\else \numberline {4.2.4}Example\fi }{22}{example.4.2.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.4\else \numberline {4.2.4}Example\fi }{25}{example.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 4.2.5\else \numberline {4.2.5}Proposition\fi \thmtformatoptarg {?}}{22}{proposition.4.2.5}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 4.2.5\else \numberline {4.2.5}Proposition\fi \thmtformatoptarg {?}}{25}{proposition.4.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{22}{thmt@dummyctr.dummy.64}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{25}{thmt@dummyctr.dummy.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 4.2.6\else \numberline {4.2.6}Proposition\fi \thmtformatoptarg {?}}{22}{proposition.4.2.6}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 4.2.6\else \numberline {4.2.6}Proposition\fi \thmtformatoptarg {?}}{25}{proposition.4.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{22}{thmt@dummyctr.dummy.66}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{25}{thmt@dummyctr.dummy.66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.7\else \numberline {4.2.7}Example\fi }{23}{example.4.2.7}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.7\else \numberline {4.2.7}Example\fi }{26}{example.4.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.8\else \numberline {4.2.8}Example\fi }{23}{example.4.2.8}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.8\else \numberline {4.2.8}Example\fi }{26}{example.4.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.9\else \numberline {4.2.9}Example\fi }{23}{example.4.2.9}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 4.2.9\else \numberline {4.2.9}Example\fi }{26}{example.4.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.1\else \numberline {5.1.1}Proposition\fi \thmtformatoptarg {?}}{24}{proposition.5.1.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.1\else \numberline {5.1.1}Proposition\fi \thmtformatoptarg {?}}{27}{proposition.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.2\else \numberline {5.1.2}Proposition\fi \thmtformatoptarg {?}}{24}{proposition.5.1.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.2\else \numberline {5.1.2}Proposition\fi \thmtformatoptarg {?}}{27}{proposition.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{24}{thmt@dummyctr.dummy.72}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{27}{thmt@dummyctr.dummy.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.3\else \numberline {5.1.3}Example\fi }{24}{example.5.1.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.3\else \numberline {5.1.3}Example\fi }{27}{example.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.4\else \numberline {5.1.4}Example\fi }{25}{example.5.1.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.4\else \numberline {5.1.4}Example\fi }{28}{example.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.5\else \numberline {5.1.5}Example\fi }{25}{example.5.1.5}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.5\else \numberline {5.1.5}Example\fi }{28}{example.5.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.6\else \numberline {5.1.6}Example\fi }{25}{example.5.1.6}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.6\else \numberline {5.1.6}Example\fi }{28}{example.5.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.7\else \numberline {5.1.7}Example\fi }{25}{example.5.1.7}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 5.1.7\else \numberline {5.1.7}Example\fi }{28}{example.5.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 5.1.8\else \numberline {5.1.8}Definition\fi \thmtformatoptarg {Noetherian Space}}{25}{definition.5.1.8}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 5.1.8\else \numberline {5.1.8}Definition\fi \thmtformatoptarg {Noetherian Space}}{28}{definition.5.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.9\else \numberline {5.1.9}Proposition\fi \thmtformatoptarg {?}}{25}{proposition.5.1.9}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.9\else \numberline {5.1.9}Proposition\fi \thmtformatoptarg {?}}{28}{proposition.5.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{25}{thmt@dummyctr.dummy.80}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{28}{thmt@dummyctr.dummy.80}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 5.1.10\else \numberline {5.1.10}Remark\fi }{25}{remark.5.1.10}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 5.1.10\else \numberline {5.1.10}Remark\fi }{28}{remark.5.1.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.11\else \numberline {5.1.11}Proposition\fi \thmtformatoptarg {Important: Noetherian spaces are finite unions of closed irreducibles}}{25}{proposition.5.1.11}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.11\else \numberline {5.1.11}Proposition\fi \thmtformatoptarg {Important: Noetherian spaces are finite unions of closed irreducibles}}{28}{proposition.5.1.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 5.1.12\else \numberline {5.1.12}Remark\fi }{26}{remark.5.1.12}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 5.1.12\else \numberline {5.1.12}Remark\fi }{29}{remark.5.1.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{26}{thmt@dummyctr.dummy.84}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{29}{thmt@dummyctr.dummy.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{26}{thmt@dummyctr.dummy.85}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{29}{thmt@dummyctr.dummy.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{26}{thmt@dummyctr.dummy.86}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{29}{thmt@dummyctr.dummy.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 5.1.13\else \numberline {5.1.13}Remark\fi }{27}{remark.5.1.13}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 5.1.13\else \numberline {5.1.13}Remark\fi }{30}{remark.5.1.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.14\else \numberline {5.1.14}Proposition\fi \thmtformatoptarg {1}}{27}{proposition.5.1.14}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.14\else \numberline {5.1.14}Proposition\fi \thmtformatoptarg {1}}{30}{proposition.5.1.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{27}{thmt@dummyctr.dummy.89}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{30}{thmt@dummyctr.dummy.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.15\else \numberline {5.1.15}Proposition\fi \thmtformatoptarg {?}}{28}{proposition.5.1.15}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 5.1.15\else \numberline {5.1.15}Proposition\fi \thmtformatoptarg {?}}{31}{proposition.5.1.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{28}{thmt@dummyctr.dummy.91}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{31}{thmt@dummyctr.dummy.91}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 6.1.1\else \numberline {6.1.1}Definition\fi \thmtformatoptarg {Dimensions}}{28}{definition.6.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 6.1.1\else \numberline {6.1.1}Definition\fi \thmtformatoptarg {Dimensions}}{31}{definition.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 6.1.2\else \numberline {6.1.2}Example\fi }{28}{example.6.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 6.1.2\else \numberline {6.1.2}Example\fi }{31}{example.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 6.1.3\else \numberline {6.1.3}Example\fi }{29}{example.6.1.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 6.1.3\else \numberline {6.1.3}Example\fi }{32}{example.6.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 6.1.4\else \numberline {6.1.4}Remark\fi }{29}{remark.6.1.4}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 6.1.4\else \numberline {6.1.4}Remark\fi }{32}{remark.6.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 6.1.5\else \numberline {6.1.5}Example\fi }{29}{example.6.1.5}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 6.1.5\else \numberline {6.1.5}Example\fi }{32}{example.6.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 6.1.6\else \numberline {6.1.6}Remark\fi }{29}{remark.6.1.6}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 6.1.6\else \numberline {6.1.6}Remark\fi }{32}{remark.6.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 6.1.7\else \numberline {6.1.7}Definition\fi \thmtformatoptarg {Krull Dimension}}{29}{definition.6.1.7}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 6.1.7\else \numberline {6.1.7}Definition\fi \thmtformatoptarg {Krull Dimension}}{32}{definition.6.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 6.1.8\else \numberline {6.1.8}Remark\fi }{30}{remark.6.1.8}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 6.1.8\else \numberline {6.1.8}Remark\fi }{33}{remark.6.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 6.1.9\else \numberline {6.1.9}Remark\fi }{30}{remark.6.1.9}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 6.1.9\else \numberline {6.1.9}Remark\fi }{33}{remark.6.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 6.1.10\else \numberline {6.1.10}Example\fi }{30}{example.6.1.10}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 6.1.10\else \numberline {6.1.10}Example\fi }{33}{example.6.1.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 7.0.1\else \numberline {7.0.1}Proposition\fi \thmtformatoptarg {Dimensions}}{30}{proposition.7.0.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 7.0.1\else \numberline {7.0.1}Proposition\fi \thmtformatoptarg {Dimensions}}{33}{proposition.7.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{31}{thmt@dummyctr.dummy.103}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{34}{thmt@dummyctr.dummy.103}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{31}{thmt@dummyctr.dummy.104}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{34}{thmt@dummyctr.dummy.104}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{31}{thmt@dummyctr.dummy.105}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{34}{thmt@dummyctr.dummy.105}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 7.1.1\else \numberline {7.1.1}Example\fi }{31}{example.7.1.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 7.1.1\else \numberline {7.1.1}Example\fi }{34}{example.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 7.1.2\else \numberline {7.1.2}Definition\fi \thmtformatoptarg {Integral Extension}}{32}{definition.7.1.2}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 7.1.2\else \numberline {7.1.2}Definition\fi \thmtformatoptarg {Integral Extension}}{35}{definition.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 7.1.3\else \numberline {7.1.3}Lemma\fi }{32}{lemma.7.1.3}%
+\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 7.1.3\else \numberline {7.1.3}Lemma\fi }{35}{lemma.7.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{32}{thmt@dummyctr.dummy.109}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{35}{thmt@dummyctr.dummy.109}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 7.2.1\else \numberline {7.2.1}Proposition\fi }{33}{proposition.7.2.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 7.2.1\else \numberline {7.2.1}Proposition\fi }{36}{proposition.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{33}{thmt@dummyctr.dummy.111}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{36}{thmt@dummyctr.dummy.111}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 7.2.2\else \numberline {7.2.2}Proposition\fi \thmtformatoptarg {?}}{33}{proposition.7.2.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 7.2.2\else \numberline {7.2.2}Proposition\fi \thmtformatoptarg {?}}{36}{proposition.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{33}{thmt@dummyctr.dummy.113}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{36}{thmt@dummyctr.dummy.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 7.2.3\else \numberline {7.2.3}Remark\fi }{33}{remark.7.2.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 7.2.3\else \numberline {7.2.3}Remark\fi }{36}{remark.7.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 7.2.4\else \numberline {7.2.4}Remark\fi }{33}{remark.7.2.4}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 7.2.4\else \numberline {7.2.4}Remark\fi }{36}{remark.7.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 8.0.1\else \numberline {8.0.1}Example\fi }{34}{example.8.0.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 8.0.1\else \numberline {8.0.1}Example\fi }{37}{example.8.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 8.0.2\else \numberline {8.0.2}Definition\fi \thmtformatoptarg {Curves, Surfaces, and Hypersurfaces}}{34}{definition.8.0.2}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 8.0.2\else \numberline {8.0.2}Definition\fi \thmtformatoptarg {Curves, Surfaces, and Hypersurfaces}}{37}{definition.8.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 8.1.1\else \numberline {8.1.1}Definition\fi \thmtformatoptarg {Codimension in a Ring}}{34}{definition.8.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 8.1.1\else \numberline {8.1.1}Definition\fi \thmtformatoptarg {Codimension in a Ring}}{37}{definition.8.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 8.1.2\else \numberline {8.1.2}Proposition\fi \thmtformatoptarg {?}}{35}{proposition.8.1.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 8.1.2\else \numberline {8.1.2}Proposition\fi \thmtformatoptarg {?}}{38}{proposition.8.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{35}{thmt@dummyctr.dummy.120}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{38}{thmt@dummyctr.dummy.120}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 8.1.3\else \numberline {8.1.3}Corollary\fi \thmtformatoptarg {?}}{35}{corollary.8.1.3}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 8.1.3\else \numberline {8.1.3}Corollary\fi \thmtformatoptarg {?}}{38}{corollary.8.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 8.2.1\else \numberline {8.2.1}Example\fi }{35}{example.8.2.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 8.2.1\else \numberline {8.2.1}Example\fi }{38}{example.8.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 8.2.2\else \numberline {8.2.2}Example\fi }{36}{example.8.2.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 8.2.2\else \numberline {8.2.2}Example\fi }{39}{example.8.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 8.2.3\else \numberline {8.2.3}Definition\fi \thmtformatoptarg {Pure Dimension of Affine Varieties}}{36}{definition.8.2.3}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 8.2.3\else \numberline {8.2.3}Definition\fi \thmtformatoptarg {Pure Dimension of Affine Varieties}}{39}{definition.8.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 8.2.4\else \numberline {8.2.4}Remark\fi }{36}{remark.8.2.4}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 8.2.4\else \numberline {8.2.4}Remark\fi }{39}{remark.8.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 8.2.5\else \numberline {8.2.5}Definition\fi \thmtformatoptarg {Degree of a Hypersurface}}{36}{definition.8.2.5}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 8.2.5\else \numberline {8.2.5}Definition\fi \thmtformatoptarg {Degree of a Hypersurface}}{39}{definition.8.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 9.0.1\else \numberline {9.0.1}Example\fi \thmtformatoptarg {Some examples of regular functions}}{37}{example.9.0.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 9.0.1\else \numberline {9.0.1}Example\fi \thmtformatoptarg {Some examples of regular functions}}{40}{example.9.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 9.1.1\else \numberline {9.1.1}Definition\fi \thmtformatoptarg {Regular Functions}}{37}{definition.9.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 9.1.1\else \numberline {9.1.1}Definition\fi \thmtformatoptarg {Regular Functions}}{40}{definition.9.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 9.1.2\else \numberline {9.1.2}Example\fi }{37}{example.9.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 9.1.2\else \numberline {9.1.2}Example\fi }{40}{example.9.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 9.1.3\else \numberline {9.1.3}Example\fi }{37}{example.9.1.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 9.1.3\else \numberline {9.1.3}Example\fi }{40}{example.9.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 9.1.4\else \numberline {9.1.4}Example\fi }{37}{example.9.1.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 9.1.4\else \numberline {9.1.4}Example\fi }{40}{example.9.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.1.5\else \numberline {9.1.5}Proposition\fi \thmtformatoptarg {?}}{38}{proposition.9.1.5}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.1.5\else \numberline {9.1.5}Proposition\fi \thmtformatoptarg {?}}{41}{proposition.9.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{38}{thmt@dummyctr.dummy.133}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{41}{thmt@dummyctr.dummy.133}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.1.6\else \numberline {9.1.6}Proposition\fi }{38}{proposition.9.1.6}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.1.6\else \numberline {9.1.6}Proposition\fi }{41}{proposition.9.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{38}{thmt@dummyctr.dummy.135}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{41}{thmt@dummyctr.dummy.135}%
 \defcounter {refsection}{0}\relax 
-\contentsline {question}{\ifthmt@listswap Question\nobreakspace 9.1.7\else \numberline {9.1.7}Question\fi }{38}{question.9.1.7}%
+\contentsline {question}{\ifthmt@listswap Question\nobreakspace 9.1.7\else \numberline {9.1.7}Question\fi }{41}{question.9.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 9.1.8\else \numberline {9.1.8}Answer\fi }{38}{answer.9.1.8}%
+\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 9.1.8\else \numberline {9.1.8}Answer\fi }{41}{answer.9.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 9.2.1\else \numberline {9.2.1}Definition\fi \thmtformatoptarg {(Important) Distinguished Open Sets}}{38}{definition.9.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 9.2.1\else \numberline {9.2.1}Definition\fi \thmtformatoptarg {(Important) Distinguished Open Sets}}{41}{definition.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.2.2\else \numberline {9.2.2}Proposition\fi }{39}{proposition.9.2.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.2.2\else \numberline {9.2.2}Proposition\fi }{42}{proposition.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{39}{thmt@dummyctr.dummy.140}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{42}{thmt@dummyctr.dummy.140}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.2.3\else \numberline {9.2.3}Proposition\fi \thmtformatoptarg {?}}{39}{proposition.9.2.3}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.2.3\else \numberline {9.2.3}Proposition\fi \thmtformatoptarg {?}}{42}{proposition.9.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.2.4\else \numberline {9.2.4}Proposition\fi \thmtformatoptarg {?}}{39}{proposition.9.2.4}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 9.2.4\else \numberline {9.2.4}Proposition\fi \thmtformatoptarg {?}}{42}{proposition.9.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{39}{thmt@dummyctr.dummy.143}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{42}{thmt@dummyctr.dummy.143}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 10.1.1\else \numberline {10.1.1}Example\fi }{40}{example.10.1.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 10.1.1\else \numberline {10.1.1}Example\fi }{43}{example.10.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 10.2.1\else \numberline {10.2.1}Definition\fi \thmtformatoptarg {Distinguished Open Sets}}{40}{definition.10.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 10.2.1\else \numberline {10.2.1}Definition\fi \thmtformatoptarg {Distinguished Open Sets}}{43}{definition.10.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 10.2.2\else \numberline {10.2.2}Proposition\fi \thmtformatoptarg {?}}{40}{proposition.10.2.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 10.2.2\else \numberline {10.2.2}Proposition\fi \thmtformatoptarg {?}}{43}{proposition.10.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{40}{thmt@dummyctr.dummy.147}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{43}{thmt@dummyctr.dummy.147}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 10.2.3\else \numberline {10.2.3}Corollary\fi \thmtformatoptarg {?}}{41}{corollary.10.2.3}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 10.2.3\else \numberline {10.2.3}Corollary\fi \thmtformatoptarg {?}}{44}{corollary.10.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 10.2.4\else \numberline {10.2.4}Warning\fi \thmtformatoptarg {Things go wrong when $k\neq \mkern 1.5mu\overline {\mkern -1.5muk\mkern -1.5mu}\mkern 1.5mu$}}{41}{warnings.10.2.4}%
+\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 10.2.4\else \numberline {10.2.4}Warning\fi \thmtformatoptarg {Things go wrong when $k\neq \mkern 1.5mu\overline {\mkern -1.5muk\mkern -1.5mu}\mkern 1.5mu$}}{44}{warnings.10.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 10.3.1\else \numberline {10.3.1}Definition\fi \thmtformatoptarg {Localization}}{41}{definition.10.3.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 10.3.1\else \numberline {10.3.1}Definition\fi \thmtformatoptarg {Localization}}{44}{definition.10.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 10.3.2\else \numberline {10.3.2}Example\fi }{41}{example.10.3.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 10.3.2\else \numberline {10.3.2}Example\fi }{44}{example.10.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 10.3.3\else \numberline {10.3.3}Corollary\fi \thmtformatoptarg {?}}{41}{corollary.10.3.3}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 10.3.3\else \numberline {10.3.3}Corollary\fi \thmtformatoptarg {?}}{44}{corollary.10.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{42}{thmt@dummyctr.dummy.153}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{45}{thmt@dummyctr.dummy.153}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 10.4.1\else \numberline {10.4.1}Definition\fi \thmtformatoptarg {Presheaf}}{42}{definition.10.4.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 10.4.1\else \numberline {10.4.1}Definition\fi \thmtformatoptarg {Presheaf}}{45}{definition.10.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 10.4.2\else \numberline {10.4.2}Example\fi }{42}{example.10.4.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 10.4.2\else \numberline {10.4.2}Example\fi }{45}{example.10.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 10.4.3\else \numberline {10.4.3}Definition\fi \thmtformatoptarg {Sheaf}}{43}{definition.10.4.3}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 10.4.3\else \numberline {10.4.3}Definition\fi \thmtformatoptarg {Sheaf}}{46}{definition.10.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {question}{\ifthmt@listswap Question\nobreakspace 11.1.1\else \numberline {11.1.1}Question\fi }{43}{question.11.1.1}%
+\contentsline {question}{\ifthmt@listswap Question\nobreakspace 11.1.1\else \numberline {11.1.1}Question\fi }{46}{question.11.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 11.1.2\else \numberline {11.1.2}Answer\fi }{43}{answer.11.1.2}%
+\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 11.1.2\else \numberline {11.1.2}Answer\fi }{46}{answer.11.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.1.1\else \numberline {12.1.1}Example\fi \thmtformatoptarg {?}}{44}{example.12.1.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.1.1\else \numberline {12.1.1}Example\fi \thmtformatoptarg {?}}{47}{example.12.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {question}{\ifthmt@listswap Question\nobreakspace 12.1.2\else \numberline {12.1.2}Question\fi }{44}{question.12.1.2}%
+\contentsline {question}{\ifthmt@listswap Question\nobreakspace 12.1.2\else \numberline {12.1.2}Question\fi }{47}{question.12.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 12.1.3\else \numberline {12.1.3}Answer\fi }{44}{answer.12.1.3}%
+\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 12.1.3\else \numberline {12.1.3}Answer\fi }{47}{answer.12.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.2.1\else \numberline {12.2.1}Example\fi }{44}{example.12.2.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.2.1\else \numberline {12.2.1}Example\fi }{47}{example.12.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.2.2\else \numberline {12.2.2}Example\fi }{44}{example.12.2.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.2.2\else \numberline {12.2.2}Example\fi }{47}{example.12.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.2.3\else \numberline {12.2.3}Example\fi }{44}{example.12.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.2.3\else \numberline {12.2.3}Example\fi }{47}{example.12.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.3.1\else \numberline {12.3.1}Example\fi }{45}{example.12.3.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.3.1\else \numberline {12.3.1}Example\fi }{48}{example.12.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 12.3.2\else \numberline {12.3.2}Remark\fi }{46}{remark.12.3.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 12.3.2\else \numberline {12.3.2}Remark\fi }{49}{remark.12.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 12.4.1\else \numberline {12.4.1}Definition\fi \thmtformatoptarg {Restriction of a (Pre)sheaf}}{46}{definition.12.4.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 12.4.1\else \numberline {12.4.1}Definition\fi \thmtformatoptarg {Restriction of a (Pre)sheaf}}{49}{definition.12.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 12.4.2\else \numberline {12.4.2}Definition\fi \thmtformatoptarg {Stalks}}{46}{definition.12.4.2}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 12.4.2\else \numberline {12.4.2}Definition\fi \thmtformatoptarg {Stalks}}{49}{definition.12.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.4.3\else \numberline {12.4.3}Example\fi }{46}{example.12.4.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 12.4.3\else \numberline {12.4.3}Example\fi }{49}{example.12.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 12.4.4\else \numberline {12.4.4}Definition\fi \thmtformatoptarg {Sections and Germs}}{47}{definition.12.4.4}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 12.4.4\else \numberline {12.4.4}Definition\fi \thmtformatoptarg {Sections and Germs}}{50}{definition.12.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 13.1.1\else \numberline {13.1.1}Example\fi }{48}{example.13.1.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 13.1.1\else \numberline {13.1.1}Example\fi }{51}{example.13.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 13.2.1\else \numberline {13.2.1}Warning\fi \thmtformatoptarg {Notation for localizations}}{48}{warnings.13.2.1}%
+\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 13.2.1\else \numberline {13.2.1}Warning\fi \thmtformatoptarg {Notation for localizations}}{51}{warnings.13.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 13.2.2\else \numberline {13.2.2}Lemma\fi \thmtformatoptarg {Stalks are isomorphic to localizations}}{48}{lemma.13.2.2}%
+\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 13.2.2\else \numberline {13.2.2}Lemma\fi \thmtformatoptarg {Stalks are isomorphic to localizations}}{51}{lemma.13.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{48}{thmt@dummyctr.dummy.174}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{51}{thmt@dummyctr.dummy.174}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 13.2.3\else \numberline {13.2.3}Example\fi }{50}{example.13.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 13.2.3\else \numberline {13.2.3}Example\fi }{53}{example.13.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 13.2.4\else \numberline {13.2.4}Example\fi }{50}{example.13.2.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 13.2.4\else \numberline {13.2.4}Example\fi }{53}{example.13.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {question}{\ifthmt@listswap Question\nobreakspace 13.3.1\else \numberline {13.3.1}Question\fi }{50}{question.13.3.1}%
+\contentsline {question}{\ifthmt@listswap Question\nobreakspace 13.3.1\else \numberline {13.3.1}Question\fi }{53}{question.13.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 13.3.2\else \numberline {13.3.2}Answer\fi }{50}{answer.13.3.2}%
+\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 13.3.2\else \numberline {13.3.2}Answer\fi }{53}{answer.13.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 13.3.3\else \numberline {13.3.3}Example\fi }{50}{example.13.3.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 13.3.3\else \numberline {13.3.3}Example\fi }{53}{example.13.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 14.0.1\else \numberline {14.0.1}Definition\fi \thmtformatoptarg {Ringed Spaces}}{51}{definition.14.0.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 14.0.1\else \numberline {14.0.1}Definition\fi \thmtformatoptarg {Ringed Spaces}}{54}{definition.14.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.0.2\else \numberline {14.0.2}Example\fi }{51}{example.14.0.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.0.2\else \numberline {14.0.2}Example\fi }{54}{example.14.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.0.3\else \numberline {14.0.3}Example\fi \thmtformatoptarg {Skyscraper Sheaf}}{51}{example.14.0.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.0.3\else \numberline {14.0.3}Example\fi \thmtformatoptarg {Skyscraper Sheaf}}{54}{example.14.0.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 14.0.4\else \numberline {14.0.4}Remark\fi }{51}{remark.14.0.4}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 14.0.4\else \numberline {14.0.4}Remark\fi }{54}{remark.14.0.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 14.1.1\else \numberline {14.1.1}Definition\fi \thmtformatoptarg {Morphisms of Ringed Spaces}}{51}{definition.14.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 14.1.1\else \numberline {14.1.1}Definition\fi \thmtformatoptarg {Morphisms of Ringed Spaces}}{54}{definition.14.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {slogan}{\ifthmt@listswap Slogan\nobreakspace 14.1.2\else \numberline {14.1.2}Slogan\fi }{51}{slogan.14.1.2}%
+\contentsline {slogan}{\ifthmt@listswap Slogan\nobreakspace 14.1.2\else \numberline {14.1.2}Slogan\fi }{54}{slogan.14.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 14.1.3\else \numberline {14.1.3}Remark\fi }{51}{remark.14.1.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 14.1.3\else \numberline {14.1.3}Remark\fi }{54}{remark.14.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.1.4\else \numberline {14.1.4}Example\fi }{52}{example.14.1.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.1.4\else \numberline {14.1.4}Example\fi }{55}{example.14.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.1.5\else \numberline {14.1.5}Example\fi }{52}{example.14.1.5}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.1.5\else \numberline {14.1.5}Example\fi }{55}{example.14.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.1.6\else \numberline {14.1.6}Example\fi }{52}{example.14.1.6}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.1.6\else \numberline {14.1.6}Example\fi }{55}{example.14.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {question}{\ifthmt@listswap Question\nobreakspace 14.1.7\else \numberline {14.1.7}Question\fi }{52}{question.14.1.7}%
+\contentsline {question}{\ifthmt@listswap Question\nobreakspace 14.1.7\else \numberline {14.1.7}Question\fi }{55}{question.14.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 14.1.8\else \numberline {14.1.8}Answer\fi }{52}{answer.14.1.8}%
+\contentsline {answer}{\ifthmt@listswap Answer\nobreakspace 14.1.8\else \numberline {14.1.8}Answer\fi }{55}{answer.14.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.1.9\else \numberline {14.1.9}Example\fi }{52}{example.14.1.9}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 14.1.9\else \numberline {14.1.9}Example\fi }{55}{example.14.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 14.2.1\else \numberline {14.2.1}Proposition\fi \thmtformatoptarg {Ringed spaces form a category}}{53}{proposition.14.2.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 14.2.1\else \numberline {14.2.1}Proposition\fi \thmtformatoptarg {Ringed spaces form a category}}{56}{proposition.14.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 14.2.2\else \numberline {14.2.2}Lemma\fi \thmtformatoptarg {Gluing for Morphisms}}{53}{lemma.14.2.2}%
+\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 14.2.2\else \numberline {14.2.2}Lemma\fi \thmtformatoptarg {Gluing for Morphisms}}{56}{lemma.14.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 14.2.3\else \numberline {14.2.3}Remark\fi }{53}{remark.14.2.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 14.2.3\else \numberline {14.2.3}Remark\fi }{56}{remark.14.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of part (a)}}{53}{thmt@dummyctr.dummy.196}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of part (a)}}{56}{thmt@dummyctr.dummy.196}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {part b}}{53}{thmt@dummyctr.dummy.197}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {part b}}{56}{thmt@dummyctr.dummy.197}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 15.1.1\else \numberline {15.1.1}Proposition\fi \thmtformatoptarg {Morphisms between affine varieties have regular functions as components}}{54}{proposition.15.1.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 15.1.1\else \numberline {15.1.1}Proposition\fi \thmtformatoptarg {Morphisms between affine varieties have regular functions as components}}{57}{proposition.15.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$\DOTSB \tmspace +\thickmuskip {.2777em}\Longrightarrow \tmspace +\thickmuskip {.2777em}$}}{54}{thmt@dummyctr.dummy.199}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$\DOTSB \tmspace +\thickmuskip {.2777em}\Longrightarrow \tmspace +\thickmuskip {.2777em}$}}{57}{thmt@dummyctr.dummy.199}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$\DOTSB \tmspace +\thickmuskip {.2777em}\Longleftarrow \tmspace +\thickmuskip {.2777em}$}}{54}{thmt@dummyctr.dummy.200}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {$\DOTSB \tmspace +\thickmuskip {.2777em}\Longleftarrow \tmspace +\thickmuskip {.2777em}$}}{57}{thmt@dummyctr.dummy.200}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{54}{thmt@dummyctr.dummy.201}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{57}{thmt@dummyctr.dummy.201}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of (1)}}{54}{thmt@dummyctr.dummy.202}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of (1)}}{57}{thmt@dummyctr.dummy.202}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of (2)}}{55}{thmt@dummyctr.dummy.203}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of (2)}}{58}{thmt@dummyctr.dummy.203}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 15.1.2\else \numberline {15.1.2}Example\fi }{55}{example.15.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 15.1.2\else \numberline {15.1.2}Example\fi }{58}{example.15.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {slogan}{\ifthmt@listswap Slogan\nobreakspace 15.1.3\else \numberline {15.1.3}Slogan\fi }{55}{slogan.15.1.3}%
+\contentsline {slogan}{\ifthmt@listswap Slogan\nobreakspace 15.1.3\else \numberline {15.1.3}Slogan\fi }{58}{slogan.15.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 15.2.1\else \numberline {15.2.1}Corollary\fi \thmtformatoptarg {Morphisms of varieties corresponds to $k{\hbox {-}}$algebra morphisms of coordinate rings}}{56}{corollary.15.2.1}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 15.2.1\else \numberline {15.2.1}Corollary\fi \thmtformatoptarg {Morphisms of varieties corresponds to $k{\hbox {-}}$algebra morphisms of coordinate rings}}{59}{corollary.15.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{56}{thmt@dummyctr.dummy.207}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{59}{thmt@dummyctr.dummy.207}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 16.0.1\else \numberline {16.0.1}Remark\fi }{56}{remark.16.0.1}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 16.0.1\else \numberline {16.0.1}Remark\fi }{59}{remark.16.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 16.1.1\else \numberline {16.1.1}Warning\fi \thmtformatoptarg {Isomorphisms are not necessarily bijective morphisms}}{57}{warnings.16.1.1}%
+\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 16.1.1\else \numberline {16.1.1}Warning\fi \thmtformatoptarg {Isomorphisms are not necessarily bijective morphisms}}{60}{warnings.16.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 16.2.1\else \numberline {16.2.1}Remark\fi }{58}{remark.16.2.1}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 16.2.1\else \numberline {16.2.1}Remark\fi }{61}{remark.16.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 16.2.2\else \numberline {16.2.2}Remark\fi }{58}{remark.16.2.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 16.2.2\else \numberline {16.2.2}Remark\fi }{61}{remark.16.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 16.2.3\else \numberline {16.2.3}Remark\fi }{58}{remark.16.2.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 16.2.3\else \numberline {16.2.3}Remark\fi }{61}{remark.16.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 17.0.1\else \numberline {17.0.1}Example\fi }{58}{example.17.0.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 17.0.1\else \numberline {17.0.1}Example\fi }{61}{example.17.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 17.0.2\else \numberline {17.0.2}Remark\fi }{58}{remark.17.0.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 17.0.2\else \numberline {17.0.2}Remark\fi }{61}{remark.17.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 17.0.3\else \numberline {17.0.3}Proposition\fi \thmtformatoptarg {Distinguished opens are ringed spaces}}{58}{proposition.17.0.3}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 17.0.3\else \numberline {17.0.3}Proposition\fi \thmtformatoptarg {Distinguished opens are ringed spaces}}{61}{proposition.17.0.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{59}{thmt@dummyctr.dummy.216}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{62}{thmt@dummyctr.dummy.216}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 17.0.4\else \numberline {17.0.4}Example\fi }{59}{example.17.0.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 17.0.4\else \numberline {17.0.4}Example\fi }{62}{example.17.0.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 17.1.1\else \numberline {17.1.1}Definition\fi \thmtformatoptarg {Prevariety}}{60}{definition.17.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 17.1.1\else \numberline {17.1.1}Definition\fi \thmtformatoptarg {Prevariety}}{63}{definition.17.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 17.1.2\else \numberline {17.1.2}Definition\fi \thmtformatoptarg {Glued Spaces}}{60}{definition.17.1.2}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 17.1.2\else \numberline {17.1.2}Definition\fi \thmtformatoptarg {Glued Spaces}}{63}{definition.17.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 17.1.3\else \numberline {17.1.3}Example\fi }{60}{example.17.1.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 17.1.3\else \numberline {17.1.3}Example\fi }{63}{example.17.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.1.1\else \numberline {18.1.1}Example\fi }{62}{example.18.1.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.1.1\else \numberline {18.1.1}Example\fi }{65}{example.18.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.1.2\else \numberline {18.1.2}Example\fi }{62}{example.18.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.1.2\else \numberline {18.1.2}Example\fi }{65}{example.18.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.2.1\else \numberline {18.2.1}Example\fi }{64}{example.18.2.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.2.1\else \numberline {18.2.1}Example\fi }{67}{example.18.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.2.2\else \numberline {18.2.2}Example\fi }{65}{example.18.2.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.2.2\else \numberline {18.2.2}Example\fi }{68}{example.18.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.2.3\else \numberline {18.2.3}Example\fi }{65}{example.18.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 18.2.3\else \numberline {18.2.3}Example\fi }{68}{example.18.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 18.2.4\else \numberline {18.2.4}Exercise\fi \thmtformatoptarg {?}}{65}{exercise.18.2.4}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 18.2.4\else \numberline {18.2.4}Exercise\fi \thmtformatoptarg {?}}{68}{exercise.18.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 18.2.5\else \numberline {18.2.5}Remark\fi }{66}{remark.18.2.5}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 18.2.5\else \numberline {18.2.5}Remark\fi }{69}{remark.18.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 18.2.6\else \numberline {18.2.6}Remark\fi }{66}{remark.18.2.6}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 18.2.6\else \numberline {18.2.6}Remark\fi }{69}{remark.18.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 19.0.1\else \numberline {19.0.1}Example\fi }{66}{example.19.0.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 19.0.1\else \numberline {19.0.1}Example\fi }{69}{example.19.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 19.1.1\else \numberline {19.1.1}Proposition\fi \thmtformatoptarg {?}}{66}{proposition.19.1.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 19.1.1\else \numberline {19.1.1}Proposition\fi \thmtformatoptarg {?}}{69}{proposition.19.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{66}{thmt@dummyctr.dummy.231}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof}{69}{thmt@dummyctr.dummy.231}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 19.1.2\else \numberline {19.1.2}Example\fi }{67}{example.19.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 19.1.2\else \numberline {19.1.2}Example\fi }{70}{example.19.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 19.1.3\else \numberline {19.1.3}Definition\fi \thmtformatoptarg {Separated}}{67}{definition.19.1.3}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 19.1.3\else \numberline {19.1.3}Definition\fi \thmtformatoptarg {Separated}}{70}{definition.19.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 19.1.4\else \numberline {19.1.4}Definition\fi \thmtformatoptarg {Variety}}{67}{definition.19.1.4}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 19.1.4\else \numberline {19.1.4}Definition\fi \thmtformatoptarg {Variety}}{70}{definition.19.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 20.0.1\else \numberline {20.0.1}Example\fi \thmtformatoptarg {The line with double origins is not separated}}{68}{example.20.0.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 20.0.1\else \numberline {20.0.1}Example\fi \thmtformatoptarg {The line with double origins is not separated}}{71}{example.20.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 20.0.2\else \numberline {20.0.2}Lemma\fi \thmtformatoptarg {Affine varieties and affine subvarieties are varieties}}{70}{lemma.20.0.2}%
+\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 20.0.2\else \numberline {20.0.2}Lemma\fi \thmtformatoptarg {Affine varieties and affine subvarieties are varieties}}{73}{lemma.20.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of a}}{70}{thmt@dummyctr.dummy.237}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of a}}{73}{thmt@dummyctr.dummy.237}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of b}}{70}{thmt@dummyctr.dummy.238}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of b}}{73}{thmt@dummyctr.dummy.238}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 20.1.1\else \numberline {20.1.1}Proposition\fi \thmtformatoptarg {Properties of Varieties}}{70}{proposition.20.1.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 20.1.1\else \numberline {20.1.1}Proposition\fi \thmtformatoptarg {Properties of Varieties}}{73}{proposition.20.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of a}}{70}{thmt@dummyctr.dummy.240}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of a}}{73}{thmt@dummyctr.dummy.240}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of b}}{70}{thmt@dummyctr.dummy.241}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of b}}{73}{thmt@dummyctr.dummy.241}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 20.2.1\else \numberline {20.2.1}Definition\fi \thmtformatoptarg {Complete}}{71}{definition.20.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 20.2.1\else \numberline {20.2.1}Definition\fi \thmtformatoptarg {Complete}}{74}{definition.20.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 20.2.2\else \numberline {20.2.2}Example\fi \thmtformatoptarg {${\mathbb {A}}^1$ is not complete}}{71}{example.20.2.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 20.2.2\else \numberline {20.2.2}Example\fi \thmtformatoptarg {${\mathbb {A}}^1$ is not complete}}{74}{example.20.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 21.1.1\else \numberline {21.1.1}Definition\fi \thmtformatoptarg {Projective Space}}{71}{definition.21.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 21.1.1\else \numberline {21.1.1}Definition\fi \thmtformatoptarg {Projective Space}}{74}{definition.21.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 21.1.2\else \numberline {21.1.2}Remark\fi }{71}{remark.21.1.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 21.1.2\else \numberline {21.1.2}Remark\fi }{74}{remark.21.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 21.1.3\else \numberline {21.1.3}Remark\fi }{71}{remark.21.1.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 21.1.3\else \numberline {21.1.3}Remark\fi }{74}{remark.21.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 21.1.4\else \numberline {21.1.4}Example\fi \thmtformatoptarg {?}}{72}{example.21.1.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 21.1.4\else \numberline {21.1.4}Example\fi \thmtformatoptarg {?}}{75}{example.21.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 21.1.5\else \numberline {21.1.5}Remark\fi }{72}{remark.21.1.5}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 21.1.5\else \numberline {21.1.5}Remark\fi }{75}{remark.21.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 21.1.6\else \numberline {21.1.6}Example\fi \thmtformatoptarg {?}}{72}{example.21.1.6}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 21.1.6\else \numberline {21.1.6}Example\fi \thmtformatoptarg {?}}{75}{example.21.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 21.2.1\else \numberline {21.2.1}Definition\fi \thmtformatoptarg {Homogeneous Degrees of Polynomials}}{73}{definition.21.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 21.2.1\else \numberline {21.2.1}Definition\fi \thmtformatoptarg {Homogeneous Degrees of Polynomials}}{76}{definition.21.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 21.2.2\else \numberline {21.2.2}Example\fi \thmtformatoptarg {?}}{73}{example.21.2.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 21.2.2\else \numberline {21.2.2}Example\fi \thmtformatoptarg {?}}{76}{example.21.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 21.2.3\else \numberline {21.2.3}Remark\fi }{73}{remark.21.2.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 21.2.3\else \numberline {21.2.3}Remark\fi }{76}{remark.21.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 21.2.4\else \numberline {21.2.4}Definition\fi \thmtformatoptarg {Graded Rings}}{73}{definition.21.2.4}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 21.2.4\else \numberline {21.2.4}Definition\fi \thmtformatoptarg {Graded Rings}}{76}{definition.21.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 22.1.1\else \numberline {22.1.1}Proposition\fi \thmtformatoptarg {Quotients of graded rings by homogeneous ideals are again graded}}{73}{proposition.22.1.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 22.1.1\else \numberline {22.1.1}Proposition\fi \thmtformatoptarg {Quotients of graded rings by homogeneous ideals are again graded}}{76}{proposition.22.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 22.2.1\else \numberline {22.2.1}Definition\fi \thmtformatoptarg {Cones}}{74}{definition.22.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 22.2.1\else \numberline {22.2.1}Definition\fi \thmtformatoptarg {Cones}}{77}{definition.22.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 22.2.2\else \numberline {22.2.2}Remark\fi }{74}{remark.22.2.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 22.2.2\else \numberline {22.2.2}Remark\fi }{77}{remark.22.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 22.2.3\else \numberline {22.2.3}Definition\fi \thmtformatoptarg {Projectivization of a Cone}}{74}{definition.22.2.3}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 22.2.3\else \numberline {22.2.3}Definition\fi \thmtformatoptarg {Projectivization of a Cone}}{77}{definition.22.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 22.2.4\else \numberline {22.2.4}Definition\fi \thmtformatoptarg {Cone Over a Projective Variety}}{74}{definition.22.2.4}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 22.2.4\else \numberline {22.2.4}Definition\fi \thmtformatoptarg {Cone Over a Projective Variety}}{77}{definition.22.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 22.2.5\else \numberline {22.2.5}Remark\fi }{74}{remark.22.2.5}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 22.2.5\else \numberline {22.2.5}Remark\fi }{77}{remark.22.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 22.3.1\else \numberline {22.3.1}Proposition\fi \thmtformatoptarg {Projective Nullstellensatz Construction}}{74}{proposition.22.3.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 22.3.1\else \numberline {22.3.1}Proposition\fi \thmtformatoptarg {Projective Nullstellensatz Construction}}{77}{proposition.22.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.0.1\else \numberline {23.0.1}Remark\fi }{75}{remark.23.0.1}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.0.1\else \numberline {23.0.1}Remark\fi }{78}{remark.23.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 23.0.2\else \numberline {23.0.2}Proposition\fi }{75}{proposition.23.0.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 23.0.2\else \numberline {23.0.2}Proposition\fi }{78}{proposition.23.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{75}{thmt@dummyctr.dummy.263}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{78}{thmt@dummyctr.dummy.263}%
 \defcounter {refsection}{0}\relax 
-\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 23.0.3\else \numberline {23.0.3}Lemma\fi \thmtformatoptarg {?}}{75}{lemma.23.0.3}%
+\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 23.0.3\else \numberline {23.0.3}Lemma\fi \thmtformatoptarg {?}}{78}{lemma.23.0.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{76}{thmt@dummyctr.dummy.265}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{79}{thmt@dummyctr.dummy.265}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 23.1.1\else \numberline {23.1.1}Definition\fi \thmtformatoptarg {Irrelevant Ideal}}{76}{definition.23.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 23.1.1\else \numberline {23.1.1}Definition\fi \thmtformatoptarg {Irrelevant Ideal}}{79}{definition.23.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 23.1.2\else \numberline {23.1.2}Proposition\fi \thmtformatoptarg {Projective Nullstellensatz}}{76}{proposition.23.1.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 23.1.2\else \numberline {23.1.2}Proposition\fi \thmtformatoptarg {Projective Nullstellensatz}}{79}{proposition.23.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of a}}{76}{thmt@dummyctr.dummy.268}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of a}}{79}{thmt@dummyctr.dummy.268}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of b}}{76}{thmt@dummyctr.dummy.269}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of b}}{79}{thmt@dummyctr.dummy.269}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 23.1.3\else \numberline {23.1.3}Corollary\fi \thmtformatoptarg {?}}{77}{corollary.23.1.3}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 23.1.3\else \numberline {23.1.3}Corollary\fi \thmtformatoptarg {?}}{80}{corollary.23.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.1.4\else \numberline {23.1.4}Remark\fi }{77}{remark.23.1.4}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.1.4\else \numberline {23.1.4}Remark\fi }{80}{remark.23.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 23.2.1\else \numberline {23.2.1}Definition\fi \thmtformatoptarg {Homogeneous / Projective Coordinate Ring}}{78}{definition.23.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 23.2.1\else \numberline {23.2.1}Definition\fi \thmtformatoptarg {Homogeneous / Projective Coordinate Ring}}{81}{definition.23.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.2\else \numberline {23.2.2}Remark\fi }{78}{remark.23.2.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.2\else \numberline {23.2.2}Remark\fi }{81}{remark.23.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.3\else \numberline {23.2.3}Remark\fi }{78}{remark.23.2.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.3\else \numberline {23.2.3}Remark\fi }{81}{remark.23.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.4\else \numberline {23.2.4}Remark\fi }{78}{remark.23.2.4}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.4\else \numberline {23.2.4}Remark\fi }{81}{remark.23.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.5\else \numberline {23.2.5}Remark\fi }{78}{remark.23.2.5}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.5\else \numberline {23.2.5}Remark\fi }{81}{remark.23.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.6\else \numberline {23.2.6}Remark\fi }{78}{remark.23.2.6}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 23.2.6\else \numberline {23.2.6}Remark\fi }{81}{remark.23.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 24.0.1\else \numberline {24.0.1}Remark\fi }{79}{remark.24.0.1}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 24.0.1\else \numberline {24.0.1}Remark\fi }{82}{remark.24.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 24.1.1\else \numberline {24.1.1}Definition\fi \thmtformatoptarg {Dehomogenization of functions and ideals}}{79}{definition.24.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 24.1.1\else \numberline {24.1.1}Definition\fi \thmtformatoptarg {Dehomogenization of functions and ideals}}{82}{definition.24.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.1.2\else \numberline {24.1.2}Example\fi }{79}{example.24.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.1.2\else \numberline {24.1.2}Example\fi }{82}{example.24.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 24.1.3\else \numberline {24.1.3}Remark\fi }{79}{remark.24.1.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 24.1.3\else \numberline {24.1.3}Remark\fi }{82}{remark.24.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 24.2.1\else \numberline {24.2.1}Definition\fi \thmtformatoptarg {Homogenization of a function}}{79}{definition.24.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 24.2.1\else \numberline {24.2.1}Definition\fi \thmtformatoptarg {Homogenization of a function}}{82}{definition.24.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.2\else \numberline {24.2.2}Example\fi \thmtformatoptarg {?}}{80}{example.24.2.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.2\else \numberline {24.2.2}Example\fi \thmtformatoptarg {?}}{83}{example.24.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.3\else \numberline {24.2.3}Example\fi \thmtformatoptarg {?}}{80}{example.24.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.3\else \numberline {24.2.3}Example\fi \thmtformatoptarg {?}}{83}{example.24.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 24.2.4\else \numberline {24.2.4}Remark\fi }{80}{remark.24.2.4}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 24.2.4\else \numberline {24.2.4}Remark\fi }{83}{remark.24.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 24.2.5\else \numberline {24.2.5}Definition\fi \thmtformatoptarg {Homogenization of an ideal}}{80}{definition.24.2.5}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 24.2.5\else \numberline {24.2.5}Definition\fi \thmtformatoptarg {Homogenization of an ideal}}{83}{definition.24.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.6\else \numberline {24.2.6}Example\fi }{80}{example.24.2.6}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.6\else \numberline {24.2.6}Example\fi }{83}{example.24.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 24.2.7\else \numberline {24.2.7}Proposition\fi \thmtformatoptarg {Geometric significance of homogenization}}{80}{proposition.24.2.7}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 24.2.7\else \numberline {24.2.7}Proposition\fi \thmtformatoptarg {Geometric significance of homogenization}}{83}{proposition.24.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{80}{thmt@dummyctr.dummy.289}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{83}{thmt@dummyctr.dummy.289}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 24.2.8\else \numberline {24.2.8}Corollary\fi \thmtformatoptarg {Projective space is irreducible}}{81}{corollary.24.2.8}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 24.2.8\else \numberline {24.2.8}Corollary\fi \thmtformatoptarg {Projective space is irreducible}}{84}{corollary.24.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{81}{thmt@dummyctr.dummy.291}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{84}{thmt@dummyctr.dummy.291}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.9\else \numberline {24.2.9}Example\fi \thmtformatoptarg {?}}{81}{example.24.2.9}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.9\else \numberline {24.2.9}Example\fi \thmtformatoptarg {?}}{84}{example.24.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.10\else \numberline {24.2.10}Example\fi \thmtformatoptarg {?}}{83}{example.24.2.10}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 24.2.10\else \numberline {24.2.10}Example\fi \thmtformatoptarg {?}}{86}{example.24.2.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 24.2.11\else \numberline {24.2.11}Remark\fi }{84}{remark.24.2.11}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 24.2.11\else \numberline {24.2.11}Remark\fi }{87}{remark.24.2.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 24.2.12\else \numberline {24.2.12}Proposition\fi \thmtformatoptarg {?}}{85}{proposition.24.2.12}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 24.2.12\else \numberline {24.2.12}Proposition\fi \thmtformatoptarg {?}}{88}{proposition.24.2.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{85}{thmt@dummyctr.dummy.296}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{88}{thmt@dummyctr.dummy.296}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 24.2.13\else \numberline {24.2.13}Definition\fi \thmtformatoptarg {Projective Closure}}{85}{definition.24.2.13}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 24.2.13\else \numberline {24.2.13}Definition\fi \thmtformatoptarg {Projective Closure}}{88}{definition.24.2.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 25.0.1\else \numberline {25.0.1}Proposition\fi \thmtformatoptarg {Projective Closure}}{85}{proposition.25.0.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 25.0.1\else \numberline {25.0.1}Proposition\fi \thmtformatoptarg {Projective Closure}}{88}{proposition.25.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 25.0.2\else \numberline {25.0.2}Remark\fi }{86}{remark.25.0.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 25.0.2\else \numberline {25.0.2}Remark\fi }{89}{remark.25.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 25.0.3\else \numberline {25.0.3}Warning\fi \thmtformatoptarg {It doesn't suffice to just homogenize the individual generators of an ideal $I$}}{86}{warnings.25.0.3}%
+\contentsline {warnings}{\ifthmt@listswap Warning\nobreakspace 25.0.3\else \numberline {25.0.3}Warning\fi \thmtformatoptarg {It doesn't suffice to just homogenize the individual generators of an ideal $I$}}{89}{warnings.25.0.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 25.0.4\else \numberline {25.0.4}Remark\fi }{86}{remark.25.0.4}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 25.0.4\else \numberline {25.0.4}Remark\fi }{89}{remark.25.0.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 25.1.1\else \numberline {25.1.1}Definition\fi \thmtformatoptarg {Regular Functions on Projective Varieties}}{86}{definition.25.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 25.1.1\else \numberline {25.1.1}Definition\fi \thmtformatoptarg {Regular Functions on Projective Varieties}}{89}{definition.25.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 25.1.2\else \numberline {25.1.2}Remark\fi }{86}{remark.25.1.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 25.1.2\else \numberline {25.1.2}Remark\fi }{89}{remark.25.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 25.1.3\else \numberline {25.1.3}Definition\fi \thmtformatoptarg {Projective Variety as a Ringed Space}}{86}{definition.25.1.3}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 25.1.3\else \numberline {25.1.3}Definition\fi \thmtformatoptarg {Projective Variety as a Ringed Space}}{89}{definition.25.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 25.1.4\else \numberline {25.1.4}Proposition\fi \thmtformatoptarg {?}}{87}{proposition.25.1.4}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 25.1.4\else \numberline {25.1.4}Proposition\fi \thmtformatoptarg {?}}{90}{proposition.25.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{87}{thmt@dummyctr.dummy.306}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{90}{thmt@dummyctr.dummy.306}%
 \defcounter {refsection}{0}\relax 
-\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 25.2.1\else \numberline {25.2.1}Lemma\fi \thmtformatoptarg {?}}{87}{lemma.25.2.1}%
+\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 25.2.1\else \numberline {25.2.1}Lemma\fi \thmtformatoptarg {?}}{90}{lemma.25.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{87}{thmt@dummyctr.dummy.308}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{90}{thmt@dummyctr.dummy.308}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{88}{thmt@dummyctr.dummy.309}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{91}{thmt@dummyctr.dummy.309}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{88}{thmt@dummyctr.dummy.310}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{91}{thmt@dummyctr.dummy.310}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 26.1.1\else \numberline {26.1.1}Definition\fi \thmtformatoptarg {Projection from a point}}{89}{definition.26.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 26.1.1\else \numberline {26.1.1}Definition\fi \thmtformatoptarg {Projection from a point}}{92}{definition.26.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 26.1.2\else \numberline {26.1.2}Example\fi \thmtformatoptarg {?}}{90}{example.26.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 26.1.2\else \numberline {26.1.2}Example\fi \thmtformatoptarg {?}}{93}{example.26.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 26.2.1\else \numberline {26.2.1}Definition\fi \thmtformatoptarg {Segre Embedding}}{91}{definition.26.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 26.2.1\else \numberline {26.2.1}Definition\fi \thmtformatoptarg {Segre Embedding}}{94}{definition.26.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 26.2.2\else \numberline {26.2.2}Proposition\fi \thmtformatoptarg {Properties of the Segre embedding}}{91}{proposition.26.2.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 26.2.2\else \numberline {26.2.2}Proposition\fi \thmtformatoptarg {Properties of the Segre embedding}}{94}{proposition.26.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of (a)}}{91}{thmt@dummyctr.dummy.315}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of (a)}}{94}{thmt@dummyctr.dummy.315}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{91}{thmt@dummyctr.dummy.316}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{94}{thmt@dummyctr.dummy.316}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of (b)}}{91}{thmt@dummyctr.dummy.317}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {of (b)}}{94}{thmt@dummyctr.dummy.317}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 26.2.3\else \numberline {26.2.3}Example\fi \thmtformatoptarg {of the Segre embedding being isomorphic to a variety}}{92}{example.26.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 26.2.3\else \numberline {26.2.3}Example\fi \thmtformatoptarg {of the Segre embedding being isomorphic to a variety}}{95}{example.26.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 27.2.1\else \numberline {27.2.1}Example\fi \thmtformatoptarg {?}}{92}{example.27.2.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 27.2.1\else \numberline {27.2.1}Example\fi \thmtformatoptarg {?}}{95}{example.27.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.2\else \numberline {27.2.2}Corollary\fi \thmtformatoptarg {?}}{93}{corollary.27.2.2}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.2\else \numberline {27.2.2}Corollary\fi \thmtformatoptarg {?}}{96}{corollary.27.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{94}{thmt@dummyctr.dummy.321}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{97}{thmt@dummyctr.dummy.321}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 27.2.3\else \numberline {27.2.3}Definition\fi \thmtformatoptarg {Closed Maps}}{94}{definition.27.2.3}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 27.2.3\else \numberline {27.2.3}Definition\fi \thmtformatoptarg {Closed Maps}}{97}{definition.27.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 27.2.4\else \numberline {27.2.4}Definition\fi \thmtformatoptarg {Complete Varieties}}{94}{definition.27.2.4}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 27.2.4\else \numberline {27.2.4}Definition\fi \thmtformatoptarg {Complete Varieties}}{97}{definition.27.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {slogan}{\ifthmt@listswap Slogan\nobreakspace 27.2.5\else \numberline {27.2.5}Slogan\fi }{94}{slogan.27.2.5}%
+\contentsline {slogan}{\ifthmt@listswap Slogan\nobreakspace 27.2.5\else \numberline {27.2.5}Slogan\fi }{97}{slogan.27.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 27.2.6\else \numberline {27.2.6}Proposition\fi \thmtformatoptarg {Projection maps from products of projective spaces are closed.}}{94}{proposition.27.2.6}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 27.2.6\else \numberline {27.2.6}Proposition\fi \thmtformatoptarg {Projection maps from products of projective spaces are closed.}}{97}{proposition.27.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{94}{thmt@dummyctr.dummy.326}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{97}{thmt@dummyctr.dummy.326}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.7\else \numberline {27.2.7}Corollary\fi \thmtformatoptarg {${\mathbb {P}}^n$ is complete.}}{95}{corollary.27.2.7}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.7\else \numberline {27.2.7}Corollary\fi \thmtformatoptarg {${\mathbb {P}}^n$ is complete.}}{98}{corollary.27.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{95}{thmt@dummyctr.dummy.328}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{98}{thmt@dummyctr.dummy.328}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.8\else \numberline {27.2.8}Corollary\fi \thmtformatoptarg {Projective varieties are complete.}}{95}{corollary.27.2.8}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.8\else \numberline {27.2.8}Corollary\fi \thmtformatoptarg {Projective varieties are complete.}}{98}{corollary.27.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{95}{thmt@dummyctr.dummy.330}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{98}{thmt@dummyctr.dummy.330}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.9\else \numberline {27.2.9}Corollary\fi \thmtformatoptarg {Images of varieties under morphisms are closed.}}{95}{corollary.27.2.9}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.9\else \numberline {27.2.9}Corollary\fi \thmtformatoptarg {Images of varieties under morphisms are closed.}}{98}{corollary.27.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{96}{thmt@dummyctr.dummy.332}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{99}{thmt@dummyctr.dummy.332}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.10\else \numberline {27.2.10}Corollary\fi \thmtformatoptarg {Maximum modulus principle for varieties}}{96}{corollary.27.2.10}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 27.2.10\else \numberline {27.2.10}Corollary\fi \thmtformatoptarg {Maximum modulus principle for varieties}}{99}{corollary.27.2.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{96}{thmt@dummyctr.dummy.334}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{99}{thmt@dummyctr.dummy.334}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 28.1.1\else \numberline {28.1.1}Definition\fi \thmtformatoptarg {Veronese Embedding}}{96}{definition.28.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 28.1.1\else \numberline {28.1.1}Definition\fi \thmtformatoptarg {Veronese Embedding}}{99}{definition.28.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.1.2\else \numberline {28.1.2}Remark\fi }{96}{remark.28.1.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.1.2\else \numberline {28.1.2}Remark\fi }{99}{remark.28.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.1.3\else \numberline {28.1.3}Remark\fi }{97}{remark.28.1.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.1.3\else \numberline {28.1.3}Remark\fi }{100}{remark.28.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 28.1.4\else \numberline {28.1.4}Definition\fi \thmtformatoptarg {Hyperplane Sections}}{97}{definition.28.1.4}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 28.1.4\else \numberline {28.1.4}Definition\fi \thmtformatoptarg {Hyperplane Sections}}{100}{definition.28.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 28.1.5\else \numberline {28.1.5}Example\fi \thmtformatoptarg {of the Veronese embedding}}{97}{example.28.1.5}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 28.1.5\else \numberline {28.1.5}Example\fi \thmtformatoptarg {of the Veronese embedding}}{100}{example.28.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 28.1.6\else \numberline {28.1.6}Example\fi \thmtformatoptarg {?}}{98}{example.28.1.6}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 28.1.6\else \numberline {28.1.6}Example\fi \thmtformatoptarg {?}}{101}{example.28.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 28.1.7\else \numberline {28.1.7}Example\fi \thmtformatoptarg {?}}{98}{example.28.1.7}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 28.1.7\else \numberline {28.1.7}Example\fi \thmtformatoptarg {?}}{101}{example.28.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.1.8\else \numberline {28.1.8}Remark\fi }{99}{remark.28.1.8}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.1.8\else \numberline {28.1.8}Remark\fi }{102}{remark.28.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.1.9\else \numberline {28.1.9}Remark\fi }{99}{remark.28.1.9}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.1.9\else \numberline {28.1.9}Remark\fi }{102}{remark.28.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 28.2.1\else \numberline {28.2.1}Definition\fi \thmtformatoptarg {Tangent Space}}{99}{definition.28.2.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 28.2.1\else \numberline {28.2.1}Definition\fi \thmtformatoptarg {Tangent Space}}{102}{definition.28.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.2.2\else \numberline {28.2.2}Remark\fi }{100}{remark.28.2.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 28.2.2\else \numberline {28.2.2}Remark\fi }{103}{remark.28.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 28.2.3\else \numberline {28.2.3}Example\fi \thmtformatoptarg {?}}{100}{example.28.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 28.2.3\else \numberline {28.2.3}Example\fi \thmtformatoptarg {?}}{103}{example.28.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 29.0.1\else \numberline {29.0.1}Definition\fi \thmtformatoptarg {Tangent Space}}{101}{definition.29.0.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 29.0.1\else \numberline {29.0.1}Definition\fi \thmtformatoptarg {Tangent Space}}{104}{definition.29.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.0.2\else \numberline {29.0.2}Remark\fi }{101}{remark.29.0.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.0.2\else \numberline {29.0.2}Remark\fi }{104}{remark.29.0.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.1\else \numberline {29.1.1}Example\fi \thmtformatoptarg {?}}{101}{example.29.1.1}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.1\else \numberline {29.1.1}Example\fi \thmtformatoptarg {?}}{104}{example.29.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.2\else \numberline {29.1.2}Example\fi \thmtformatoptarg {?}}{101}{example.29.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.2\else \numberline {29.1.2}Example\fi \thmtformatoptarg {?}}{104}{example.29.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.3\else \numberline {29.1.3}Example\fi \thmtformatoptarg {?}}{102}{example.29.1.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.3\else \numberline {29.1.3}Example\fi \thmtformatoptarg {?}}{105}{example.29.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.4\else \numberline {29.1.4}Example\fi \thmtformatoptarg {?}}{102}{example.29.1.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.4\else \numberline {29.1.4}Example\fi \thmtformatoptarg {?}}{105}{example.29.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.1.5\else \numberline {29.1.5}Remark\fi }{103}{remark.29.1.5}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.1.5\else \numberline {29.1.5}Remark\fi }{106}{remark.29.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.1.6\else \numberline {29.1.6}Remark\fi }{103}{remark.29.1.6}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.1.6\else \numberline {29.1.6}Remark\fi }{106}{remark.29.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.7\else \numberline {29.1.7}Example\fi \thmtformatoptarg {How to compute $T_{(1,0,0)} V(xy, yz, xz)$}}{103}{example.29.1.7}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 29.1.7\else \numberline {29.1.7}Example\fi \thmtformatoptarg {How to compute $T_{(1,0,0)} V(xy, yz, xz)$}}{106}{example.29.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 29.2.1\else \numberline {29.2.1}Lemma\fi \thmtformatoptarg {The tangent space is given by $I/I^2$}}{103}{lemma.29.2.1}%
+\contentsline {lemma}{\ifthmt@listswap Lemma\nobreakspace 29.2.1\else \numberline {29.2.1}Lemma\fi \thmtformatoptarg {The tangent space is given by $I/I^2$}}{106}{lemma.29.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.2.2\else \numberline {29.2.2}Remark\fi }{103}{remark.29.2.2}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.2.2\else \numberline {29.2.2}Remark\fi }{106}{remark.29.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{104}{thmt@dummyctr.dummy.358}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{107}{thmt@dummyctr.dummy.358}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{104}{thmt@dummyctr.dummy.359}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{107}{thmt@dummyctr.dummy.359}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{104}{thmt@dummyctr.dummy.360}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{107}{thmt@dummyctr.dummy.360}%
 \defcounter {refsection}{0}\relax 
-\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{104}{thmt@dummyctr.dummy.361}%
+\contentsline {claim}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Claim}{107}{thmt@dummyctr.dummy.361}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.2.3\else \numberline {29.2.3}Remark\fi }{104}{remark.29.2.3}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 29.2.3\else \numberline {29.2.3}Remark\fi }{107}{remark.29.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 30.1.1\else \numberline {30.1.1}Definition\fi \thmtformatoptarg {Smooth/Regular Varieties}}{105}{definition.30.1.1}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 30.1.1\else \numberline {30.1.1}Definition\fi \thmtformatoptarg {Smooth/Regular Varieties}}{108}{definition.30.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.1.2\else \numberline {30.1.2}Example\fi \thmtformatoptarg {?}}{105}{example.30.1.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.1.2\else \numberline {30.1.2}Example\fi \thmtformatoptarg {?}}{108}{example.30.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.1.3\else \numberline {30.1.3}Example\fi \thmtformatoptarg {?}}{105}{example.30.1.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.1.3\else \numberline {30.1.3}Example\fi \thmtformatoptarg {?}}{108}{example.30.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 30.1.4\else \numberline {30.1.4}Definition\fi \thmtformatoptarg {Singular Varieties}}{105}{definition.30.1.4}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 30.1.4\else \numberline {30.1.4}Definition\fi \thmtformatoptarg {Singular Varieties}}{108}{definition.30.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {fact}{\ifthmt@listswap Fact\nobreakspace 30.1.5\else \numberline {30.1.5}Fact\fi }{105}{fact.30.1.5}%
+\contentsline {fact}{\ifthmt@listswap Fact\nobreakspace 30.1.5\else \numberline {30.1.5}Fact\fi }{108}{fact.30.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.1.6\else \numberline {30.1.6}Example\fi \thmtformatoptarg {?}}{106}{example.30.1.6}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.1.6\else \numberline {30.1.6}Example\fi \thmtformatoptarg {?}}{109}{example.30.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 30.1.7\else \numberline {30.1.7}Definition\fi \thmtformatoptarg {Regular Ring}}{106}{definition.30.1.7}%
+\contentsline {definition}{\ifthmt@listswap Definition\nobreakspace 30.1.7\else \numberline {30.1.7}Definition\fi \thmtformatoptarg {Regular Ring}}{109}{definition.30.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 30.1.8\else \numberline {30.1.8}Remark\fi }{106}{remark.30.1.8}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 30.1.8\else \numberline {30.1.8}Remark\fi }{109}{remark.30.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 30.1.9\else \numberline {30.1.9}Theorem\fi \thmtformatoptarg {A hard theorem from commutative algebra (Auslander–Buchsbaum, 1940s)}}{106}{theorem.30.1.9}%
+\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 30.1.9\else \numberline {30.1.9}Theorem\fi \thmtformatoptarg {A hard theorem from commutative algebra (Auslander–Buchsbaum, 1940s)}}{109}{theorem.30.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 30.1.10\else \numberline {30.1.10}Corollary\fi \thmtformatoptarg {?}}{107}{corollary.30.1.10}%
+\contentsline {corollary}{\ifthmt@listswap Corollary\nobreakspace 30.1.10\else \numberline {30.1.10}Corollary\fi \thmtformatoptarg {?}}{110}{corollary.30.1.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{107}{thmt@dummyctr.dummy.373}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{110}{thmt@dummyctr.dummy.373}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 30.1.11\else \numberline {30.1.11}Remark\fi }{107}{remark.30.1.11}%
+\contentsline {remark}{\ifthmt@listswap Remark\nobreakspace 30.1.11\else \numberline {30.1.11}Remark\fi }{110}{remark.30.1.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 30.2.1\else \numberline {30.2.1}Proposition\fi \thmtformatoptarg {Jacobi Criterion}}{107}{proposition.30.2.1}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 30.2.1\else \numberline {30.2.1}Proposition\fi \thmtformatoptarg {Jacobi Criterion}}{110}{proposition.30.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.2.2\else \numberline {30.2.2}Example\fi \thmtformatoptarg {?}}{107}{example.30.2.2}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.2.2\else \numberline {30.2.2}Example\fi \thmtformatoptarg {?}}{110}{example.30.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.2.3\else \numberline {30.2.3}Example\fi \thmtformatoptarg {?}}{107}{example.30.2.3}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.2.3\else \numberline {30.2.3}Example\fi \thmtformatoptarg {?}}{110}{example.30.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.2.4\else \numberline {30.2.4}Example\fi \thmtformatoptarg {?}}{108}{example.30.2.4}%
+\contentsline {example}{\ifthmt@listswap Example\nobreakspace 30.2.4\else \numberline {30.2.4}Example\fi \thmtformatoptarg {?}}{111}{example.30.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {fact}{\ifthmt@listswap Fact\nobreakspace 30.1.1\else \numberline {30.1.1}Fact\fi }{109}{fact.30.1.1}%
+\contentsline {fact}{\ifthmt@listswap Fact\nobreakspace 30.1.1\else \numberline {30.1.1}Fact\fi }{112}{fact.30.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 30.1.2\else \numberline {30.1.2}Proposition\fi \thmtformatoptarg {Finitely generated polynomial rings are Noetherian}}{109}{proposition.30.1.2}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 30.1.2\else \numberline {30.1.2}Proposition\fi \thmtformatoptarg {Finitely generated polynomial rings are Noetherian}}{112}{proposition.30.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{109}{thmt@dummyctr.dummy.381}%
+\contentsline {pf}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi Proof\thmtformatoptarg {?}}{112}{thmt@dummyctr.dummy.381}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 30.1.3\else \numberline {30.1.3}Proposition\fi \thmtformatoptarg {Properties and Definitions of Ideal Operations}}{109}{proposition.30.1.3}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 30.1.3\else \numberline {30.1.3}Proposition\fi \thmtformatoptarg {Properties and Definitions of Ideal Operations}}{112}{proposition.30.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 30.1.4\else \numberline {30.1.4}Theorem\fi \thmtformatoptarg {Noether Normalization}}{110}{theorem.30.1.4}%
+\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 30.1.4\else \numberline {30.1.4}Theorem\fi \thmtformatoptarg {Noether Normalization}}{113}{theorem.30.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 30.1.5\else \numberline {30.1.5}Theorem\fi \thmtformatoptarg {Hilbert's Basis Theorem}}{110}{theorem.30.1.5}%
+\contentsline {theorem}{\ifthmt@listswap Theorem\nobreakspace 30.1.5\else \numberline {30.1.5}Theorem\fi \thmtformatoptarg {Hilbert's Basis Theorem}}{113}{theorem.30.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.1\else \numberline {31.1.1}Exercise\fi \thmtformatoptarg {Gathmann 1.19}}{110}{exercise.31.1.1}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.1\else \numberline {31.1.1}Exercise\fi \thmtformatoptarg {Gathmann 1.19}}{113}{exercise.31.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.2\else \numberline {31.1.2}Exercise\fi \thmtformatoptarg {Gathmann 1.21}}{110}{exercise.31.1.2}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.2\else \numberline {31.1.2}Exercise\fi \thmtformatoptarg {Gathmann 1.21}}{113}{exercise.31.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.3\else \numberline {31.1.3}Exercise\fi \thmtformatoptarg {Gathmann 1.22}}{110}{exercise.31.1.3}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.3\else \numberline {31.1.3}Exercise\fi \thmtformatoptarg {Gathmann 1.22}}{113}{exercise.31.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.4\else \numberline {31.1.4}Exercise\fi \thmtformatoptarg {Gathmann 1.23: Relative Nullstellensatz}}{110}{exercise.31.1.4}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.4\else \numberline {31.1.4}Exercise\fi \thmtformatoptarg {Gathmann 1.23: Relative Nullstellensatz}}{113}{exercise.31.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.5\else \numberline {31.1.5}Exercise\fi \thmtformatoptarg {Extra}}{111}{exercise.31.1.5}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.1.5\else \numberline {31.1.5}Exercise\fi \thmtformatoptarg {Extra}}{114}{exercise.31.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.1\else \numberline {31.2.1}Exercise\fi \thmtformatoptarg {Gathmann 2.17}}{111}{exercise.31.2.1}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.1\else \numberline {31.2.1}Exercise\fi \thmtformatoptarg {Gathmann 2.17}}{114}{exercise.31.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.2\else \numberline {31.2.2}Exercise\fi \thmtformatoptarg {Gathmann 2.18}}{111}{exercise.31.2.2}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.2\else \numberline {31.2.2}Exercise\fi \thmtformatoptarg {Gathmann 2.18}}{114}{exercise.31.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.3\else \numberline {31.2.3}Exercise\fi \thmtformatoptarg {Gathmann 2.21}}{111}{exercise.31.2.3}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.3\else \numberline {31.2.3}Exercise\fi \thmtformatoptarg {Gathmann 2.21}}{114}{exercise.31.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.4\else \numberline {31.2.4}Exercise\fi \thmtformatoptarg {Gathmann 2.22}}{111}{exercise.31.2.4}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.4\else \numberline {31.2.4}Exercise\fi \thmtformatoptarg {Gathmann 2.22}}{114}{exercise.31.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.5\else \numberline {31.2.5}Exercise\fi \thmtformatoptarg {Gathmann 2.23}}{111}{exercise.31.2.5}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.5\else \numberline {31.2.5}Exercise\fi \thmtformatoptarg {Gathmann 2.23}}{114}{exercise.31.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.6\else \numberline {31.2.6}Exercise\fi \thmtformatoptarg {Gathmann 2.24}}{112}{exercise.31.2.6}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.2.6\else \numberline {31.2.6}Exercise\fi \thmtformatoptarg {Gathmann 2.24}}{115}{exercise.31.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.1\else \numberline {31.3.1}Exercise\fi \thmtformatoptarg {Gathmann 2.33}}{112}{exercise.31.3.1}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.1\else \numberline {31.3.1}Exercise\fi \thmtformatoptarg {Gathmann 2.33}}{115}{exercise.31.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.2\else \numberline {31.3.2}Exercise\fi \thmtformatoptarg {Gathmann 2.34}}{112}{exercise.31.3.2}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.2\else \numberline {31.3.2}Exercise\fi \thmtformatoptarg {Gathmann 2.34}}{115}{exercise.31.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.3\else \numberline {31.3.3}Exercise\fi \thmtformatoptarg {Gathmann 2.36}}{112}{exercise.31.3.3}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.3\else \numberline {31.3.3}Exercise\fi \thmtformatoptarg {Gathmann 2.36}}{115}{exercise.31.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.4\else \numberline {31.3.4}Exercise\fi \thmtformatoptarg {Gathmann 2.40}}{112}{exercise.31.3.4}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.4\else \numberline {31.3.4}Exercise\fi \thmtformatoptarg {Gathmann 2.40}}{115}{exercise.31.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.5\else \numberline {31.3.5}Exercise\fi \thmtformatoptarg {Problem 5}}{112}{exercise.31.3.5}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.3.5\else \numberline {31.3.5}Exercise\fi \thmtformatoptarg {Problem 5}}{115}{exercise.31.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.1\else \numberline {31.4.1}Exercise\fi \thmtformatoptarg {Gathmann 3.20}}{113}{exercise.31.4.1}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.1\else \numberline {31.4.1}Exercise\fi \thmtformatoptarg {Gathmann 3.20}}{116}{exercise.31.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.2\else \numberline {31.4.2}Exercise\fi \thmtformatoptarg {Gathmann 3.21}}{113}{exercise.31.4.2}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.2\else \numberline {31.4.2}Exercise\fi \thmtformatoptarg {Gathmann 3.21}}{116}{exercise.31.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.3\else \numberline {31.4.3}Exercise\fi \thmtformatoptarg {Gathmann 3.22}}{113}{exercise.31.4.3}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.3\else \numberline {31.4.3}Exercise\fi \thmtformatoptarg {Gathmann 3.22}}{116}{exercise.31.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.4\else \numberline {31.4.4}Exercise\fi \thmtformatoptarg {Gathmann 3.23: Geometry of a Certain Localization}}{113}{exercise.31.4.4}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.4\else \numberline {31.4.4}Exercise\fi \thmtformatoptarg {Gathmann 3.23: Geometry of a Certain Localization}}{116}{exercise.31.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.5\else \numberline {31.4.5}Exercise\fi \thmtformatoptarg {Gathmann 3.24}}{113}{exercise.31.4.5}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.4.5\else \numberline {31.4.5}Exercise\fi \thmtformatoptarg {Gathmann 3.24}}{116}{exercise.31.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.1\else \numberline {31.5.1}Exercise\fi \thmtformatoptarg {Gathmann 4.13}}{113}{exercise.31.5.1}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.1\else \numberline {31.5.1}Exercise\fi \thmtformatoptarg {Gathmann 4.13}}{116}{exercise.31.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.2\else \numberline {31.5.2}Exercise\fi \thmtformatoptarg {Gathmann 4.19}}{114}{exercise.31.5.2}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.2\else \numberline {31.5.2}Exercise\fi \thmtformatoptarg {Gathmann 4.19}}{117}{exercise.31.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.3\else \numberline {31.5.3}Exercise\fi \thmtformatoptarg {Gathmann 5.7}}{114}{exercise.31.5.3}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.3\else \numberline {31.5.3}Exercise\fi \thmtformatoptarg {Gathmann 5.7}}{117}{exercise.31.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.4\else \numberline {31.5.4}Exercise\fi \thmtformatoptarg {Gathmann 5.8}}{114}{exercise.31.5.4}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.4\else \numberline {31.5.4}Exercise\fi \thmtformatoptarg {Gathmann 5.8}}{117}{exercise.31.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 31.5.5\else \numberline {31.5.5}Proposition\fi \thmtformatoptarg {?}}{114}{proposition.31.5.5}%
+\contentsline {proposition}{\ifthmt@listswap Proposition\nobreakspace 31.5.5\else \numberline {31.5.5}Proposition\fi \thmtformatoptarg {?}}{117}{proposition.31.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.6\else \numberline {31.5.6}Exercise\fi \thmtformatoptarg {Gathmann 5.9}}{115}{exercise.31.5.6}%
+\contentsline {exercise}{\ifthmt@listswap Exercise\nobreakspace 31.5.6\else \numberline {31.5.6}Exercise\fi \thmtformatoptarg {Gathmann 5.9}}{118}{exercise.31.5.6}%
+\defcounter {refsection}{0}\relax 
+\thmlopatch@endchapter 
