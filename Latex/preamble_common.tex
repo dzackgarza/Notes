@@ -16,7 +16,6 @@
 \newunicodechar{Λ}{\Lambda}
 \newunicodechar{∞}{\infty}
 
-
 \usepackage{lmodern}
 
 % Tikz 
@@ -33,8 +32,38 @@
 \usepackage{pgfornament}
 
 % MnSymbol. Undefines lhook for some reason.
+% \udots: SW to NE
 \let\originallhook\lhook
 \usepackage{MnSymbol}% More dots
 \let\lhook\originallhook
-% \udots: SW to NE
 
+% Optional arguments in macro definitions
+\usepackage{xargs}
+
+% ? I forget
+\usepackage{cancel}
+
+% Better indicator function
+\usepackage{bbm}
+\newcommand{\indic}[1]{\mathbbm{1}\left[#1\right]}
+\newcommand{\bbone}[0]{\mathbbm{1}}
+
+% ? I forget
+\usepackage{stmaryrd}
+% Better delimiters
+%\DeclarePairedDelimiter\qty{(}{)}
+  \newcommand{\qty}[1]{\left( {#1} \right)}
+\DeclarePairedDelimiter\intvl{[}{]}
+% Big Asterisk
+\newcommand{\Conv}{\mathop{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}}}%
+% No more phi please
+\let\origphi\phi
+\let\phi\varphi
+% Include emoji
+\usepackage{apple_emoji}
+\newcommand{\done}[0]{\scalebox{0.75}{✨}}
+\newcommand{\work}[0]{\scalebox{0.75}{🚩}}
+
+% Everything else
+\input{/home/zack/Notes/Latex/tikzmacros.tex}
+\input{/home/zack/Notes/Latex/latexmacs}
