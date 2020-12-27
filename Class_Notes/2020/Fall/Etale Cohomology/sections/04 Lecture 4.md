@@ -173,7 +173,7 @@ We have a situation like the following:
 
 \begin{tikzcd}
 U\cross_X U 
- \ar[r, shift right=0.75ex, "\pi_2"] \ar[r, shift left=0.75ex, "\pi_1"] &
+ \ar[r, shift right=0.75ex, "\pi_2"'] \ar[r, shift left=0.75ex, "\pi_1"] 
 & U
   \ar[r, "f"] 
 & X
@@ -334,5 +334,5 @@ where the maps are given by alternating sums of identities with a 1 in the $i$th
 There is a theorem that this is always exact, essentially by the same proof as above: reduce to the case where you have a section by tensoring with $S$, then use the section to build a nullhomotopy.
 :::
 
-Next time: we'll complete the proof of fppf descent.
+> Next time: we'll complete the proof of fppf descent.
 
