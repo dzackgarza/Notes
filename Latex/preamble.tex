@@ -19,15 +19,33 @@
 \usepackage[usename, dvipsnames]{xcolor}
 \usepackage{datetime}
 \usepackage{biblatex}
+%\bibliography{/home/zack/Notes/library.bib}
+
+\usepackage{bookmark}
+\usepackage{booktabs}
+
+% Todo Notes
+\usepackage[textwidth=25mm, textsize=tiny]{todonotes}
+
+\usepackage{csquotes}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage[stretch=10]{microtype}
+\usepackage[pdfencoding=auto]{hyperref}
+
+
 \usepackage{spectralsequences}
+
 % Fancy symbols
 \usepackage{adforn}
 \usepackage{pgfornament}
+
 % Make figures stay where you put them!
 \usepackage{float}
 \floatplacement{figure}{H}
 
 \usepackage[autooneside=false,automark]{scrlayer-scrpage}
+
 %\clearscrheadfoot{}
 \clearpairofpagestyles
 \renewcommand*{\sectionmarkformat}{}
@@ -99,11 +117,110 @@
 \renewcommand\sectionformat{\protect\scalebox{2}{\thesection}}
 \addtokomafont{section}{\huge}
 
+\makeatletter
+\renewcommand\sectionlinesformat[4]{%
+  \ifstr{#1}{section}
+    {\ifstr{#3}{}
+      {\@hangfrom{\hskip #2#3}{#4}}
+      {%
+        \begin{tabular}{@{}r@{\hspace{.25cm}\vrule width 1pt\hspace{.5cm}}l@{}}
+        \parbox{\thesectionwdmax}{\centering#3}%
+        &%
+        {\parbox{\sectiontitlewd}{\raggedright#4}}%
+        \end{tabular}%
+      }%
+    }
+    {\@hangfrom{\hskip #2#3}{#4}}%
+}
+% Center subsections
+%\addtokomafont{subsection}{\rmfamily\centering\fontsize{13.4pt}{16.75pt}\selectfont}
+%\titleformat{name=\section}
+  %{\normalfont\Large\sffamily\bfseries\filcenter}{}{0em}{\uline{\MakeUppercase{#1}}}
+\definecolor{ssec}{HTML}{20639B}
+\setkomafont{subsection}{\mysection}
+\newcommand{\mysection}[1]{%
+    \Large%
+    \setlength{\fboxsep}{0cm}%already boxed
+    \colorbox{ssec!30}{%
+        \begin{minipage}{\linewidth}%
+            \vspace*{2pt}%Space before
+            \adfflourishleft \hfill 
+            \adjustbox{width=4in,totalheight=4in}{
+              \parbox{4in}{\centering #1}
+            } 
+            \hfill \adfflourishright
+            \vspace*{2pt}%Space after
+        \end{minipage}%
+    }
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%\bibliography{/home/zack/Notes/library.bib}
+
+% Non-tikz graphics
+\usepackage{amscd}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage[inline]{asymptote}
+% Inkscape figures from Vim
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+%Pagination stuff.
+\setlength{\topmargin}{-.3 in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textheight}{9.in}
+\setlength{\textwidth}{6.5in}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+% Pandoc-specific fixes
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\def\envlist{
+\leavevmode \vspace{-1.00\baselineskip} 
+}
+
+\usepackage{dynkin-diagrams}
+
+\NewDocumentCommand\dyn{mom}
+{\(\IfStrEq{#3}{}{#1_{n}}{#1_{#3}}^{\IfValueT{#2}{#2}}\) 
+& \IfValueTF{#2}{\dynkin{#1}[#2]{#3}}{\dynkin{#1}{#3}} \\}
+
+\NewDocumentEnvironment{tbl}{m}
+{
+\begin{figure}\caption{#1}
+\centering
+\begin{tabular}{rl}
+}{
+\end{tabular}\end{figure}
+}
+
+
+% Extra macros
+% Wide tikz equations
+\newsavebox{\wideeqbox}
+\newenvironment{wideeq}
+  {\begin{displaymath}\begin{lrbox}{\wideeqbox}$\displaystyle}
+  {$\end{lrbox}\makebox[0pt]{\usebox{\wideeqbox}}\end{displaymath}}
+
+% Margin notes
+\usepackage{marginnote}
+\newcommand{\lmargnote}[1]{\reversemarginpar\marginnote{#1}\normalmarginpar}
+\newcommand{\rmargnote}[1]{\marginnote{{\footnotesize #1}}\index{#1}}
+
 
 \input{/home/zack/Notes/Latex/preamble_common}
+\input{/home/zack/Notes/Latex/environments}
+
+
+\everymath{\displaystyle}
 
 \usepackage[noabbrev, capitalise, nameinlink]{cleveref} % use \cref{}, automatically deduces theorem, proposition, etc
 \crefname{figure}{fig.}{figs.}

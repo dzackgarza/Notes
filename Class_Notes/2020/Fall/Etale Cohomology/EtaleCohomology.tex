@@ -1396,10 +1396,13 @@ by subsets for which these are isomorphisms onto their images.
 
 \end{remark}
 
-:::\{.definition title=``fppf''\} The letter \textbf{fppf} stand for
-\textbf{faithfully flat and finite presentation}. \footnote{The letters
-  don't precisely match up here because this comes from a French
-  acronym. :::}
+\begin{definition}[fppf]
+
+The letter \textbf{fppf} stand for \textbf{faithfully flat and finite
+presentation}. \footnote{The letters don't precisely match up here
+  because this comes from a French acronym.}
+
+\end{definition}
 
 \begin{example}[The fppf topology]
 
@@ -1907,9 +1910,9 @@ On terminology:
 
 \begin{center}
 \begin{tikzcd}
-Z \ar[dd, "f"]  &  \\
- \ar[r]         &  \Gamma(Z, f^* \mathcal{F}) \\
-X & 
+Z \ar[dd, "f"] &        & \\
+               & \ar[r] & \Gamma(Z, f^* \mathcal{F}) \\
+X              &
 \end{tikzcd}
 \end{center}
 
@@ -2079,7 +2082,11 @@ descent data from a given sheaf. Explicitly, given
 
 \begin{center}
 \begin{tikzcd}
-U\cross_X U \ar[r, bend left, "\pi_1"] \ar[r, bend right, "\pi_2"] & U \ar[r, "f"] & X
+U\cross_X U 
+ \ar[r, shift right=0.75ex, "\pi_2"] \ar[r, shift left=0.75ex, "\pi_1"] &
+& U
+  \ar[r, "f"] 
+& X
 \end{tikzcd}
 \end{center}
 
@@ -2107,16 +2114,19 @@ Suppose \(L/k\) is a Galois extension with Galois group \(G\), then
 quasicoherent sheaf on \(\spec L\), i.e.~an \(L\dash\)vector space
 \(V\), with an isomorphism \(\pi_1^* V \mapsvia{\phi \sim}\pi_2^* V\)
 satisfying the cocycle condition. We can compute
-\(\spec L \times_{\spec k} \spec L = \spec L\tensor_k L = \disjoint_{L\mapsvia{\sim} L} \spec L\),
-which is a torsor for the Galois group, and in fact is equal to
-\(\disjoint_{\Gal(L/k)} \spec L\).
+\begin{align*}
+\spec L \times_{\spec k} \spec L = \spec L\tensor_k L = \disjoint_{L\mapsvia{\sim} L} \spec L
+,\end{align*} which is a torsor for the Galois group, and in fact is
+equal to \(\disjoint_{\Gal(L/k)} \spec L\).
 
 \end{example}
 
 \begin{exercise}[?]
 
 Convince yourself that descent data here is the same as Galois descent,
-i.e.~a semilinear action. Hint: you will need to use \(\phi\)!
+i.e.~a semilinear action.
+
+\emph{(Hint: you will need to use \(\phi\).)}
 
 \end{exercise}
 
