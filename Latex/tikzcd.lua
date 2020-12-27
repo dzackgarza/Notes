@@ -19,6 +19,7 @@ local tikz_doc_template = [[
 
 local function tikz2image(src, outfile)
   system.with_temporary_directory('tikz2image', function (tmpdir)
+    print("Temp directory: " .. tmpdir)
     system.with_working_directory(tmpdir, function()
       local f = io.open('tikz.tex', 'w')
       f:write(tikz_doc_template:format(src))
@@ -54,6 +55,7 @@ function RawBlock(el)
       local bname = system.get_working_directory() .. '/' .. sha
       local fname = bname .. '.' .. 'svg' 
       if not file_exists(fname) then
+        print("Making image:" .. el.text)
         tikz2image(el.text, fname)
       end
       ril = pandoc.RawInline('html', '<p style="text-align:center;"> <img class="tikz" src="' .. fname .. '"></p>')
