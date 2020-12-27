@@ -177,6 +177,7 @@ U\cross_X U
 & U
   \ar[r, "f"] 
 & X
+\end{tikzcd}
 
 Since $f\circ \pi_1 = f\circ \pi_2$ in this case, pulling back the identity yields the desired isomorphism.
 :::
@@ -199,10 +200,9 @@ which is a torsor for the Galois group, and in fact is equal to $\disjoint_{\Gal
 
 :::{.exercise title="?"}
 Convince yourself that descent data here is the same as Galois descent, i.e. a semilinear action.
-Hint: you will need to use $\phi$!
+
+*(Hint: you will need to use $\phi$.)*
 :::
-
-
 
 Explicitly, the theorem says
 
