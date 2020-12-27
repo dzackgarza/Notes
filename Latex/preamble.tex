@@ -18,8 +18,33 @@
 \usepackage[T1]{fontenc}
 \usepackage[usename, dvipsnames]{xcolor}
 \usepackage{datetime}
-\usepackage{biblatex}
-%\bibliography{/home/zack/Notes/library.bib}
+
+\usepackage{stackrel}
+\usepackage{array}
+\usepackage{mathtools}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd, thmtools, xpatch}
+\usepackage{calligra, mathrsfs}
+\usepackage{colonequals}
+\let\proof\relax
+\let\endproof\relax
+
+
+\usepackage{color}
+%\usepackage{unicode-math}
+\usepackage{newunicodechar}
+\newunicodechar{ε}{\varepsilon}
+\newunicodechar{δ}{\delta}
+\newunicodechar{≤}{\leq}
+\newunicodechar{∈}{\in}
+\newunicodechar{⊆}{\subseteq}
+\newunicodechar{Λ}{\Lambda}
+\newunicodechar{∞}{\infty}
+\everymath{\displaystyle}
+
+
+\usepackage[stretch=10]{microtype}
+
+\usepackage[pdfencoding=auto]{hyperref}
 
 \usepackage{bookmark}
 \usepackage{booktabs}
@@ -30,22 +55,75 @@
 \usepackage{csquotes}
 \usepackage{longtable}
 \usepackage{tabularx}
-\usepackage[stretch=10]{microtype}
-\usepackage[pdfencoding=auto]{hyperref}
 
 
-\usepackage{spectralsequences}
+\usepackage{centernot}
+% \centernot\whatever
 
-% Fancy symbols
-\usepackage{adforn}
-\usepackage{pgfornament}
+
+% Nice math font that journals use
+%\usepackage[lite]{mtpro2}
+%\usepackage{mathrsfs}
+\usepackage{lmodern}
+
+\input{/home/zack/Notes/Latex/environments}
+
+%Pagination stuff.
+\setlength{\topmargin}{-.3 in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textheight}{9.in}
+\setlength{\textwidth}{6.5in}
+
+% Inkscape figures from Vim
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+% Pandoc-specific fixes
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Tikz 
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, matrix, positioning, decorations, decorations.pathreplacing, decorations.markings, shapes, backgrounds, fit, shapes.geometric, intersections}
+\tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
+\usepackage{tikz-layers}
+\usepackage{ifthen}
+\usepackage{xifthen}
+\usepackage{tikz-3dplot}
+
+% Non-tikz graphics
+\usepackage{amscd}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage[inline]{asymptote}
+
+
+% Major Macros
+\usepackage{graphicx}
 
 % Make figures stay where you put them!
 \usepackage{float}
 \floatplacement{figure}{H}
 
-\usepackage[autooneside=false,automark]{scrlayer-scrpage}
+\DeclareFontFamily{U}{mathx}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathx}{m}{n}{
+      <5> <6> <7> <8> <9> <10>
+      <10.95> <12> <14.4> <17.28> <20.74> <24.88>
+      mathx10
+      }{}
+\DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
+%\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
 
+
+
+\usepackage[autooneside=false,automark]{scrlayer-scrpage}
 %\clearscrheadfoot{}
 \clearpairofpagestyles
 \renewcommand*{\sectionmarkformat}{}
@@ -117,6 +195,19 @@
 \renewcommand\sectionformat{\protect\scalebox{2}{\thesection}}
 \addtokomafont{section}{\huge}
 
+% Fancy symbols
+\usepackage{adforn}
+\usepackage{pgfornament}
+
+% MnSymbol. Undefines lhook for some reason.
+\let\originallhook\lhook
+\usepackage{MnSymbol}% More dots
+\let\lhook\originallhook
+% \udots: SW to NE
+\usepackage{spectralsequences}
+
+
+
 \makeatletter
 \renewcommand\sectionlinesformat[4]{%
   \ifstr{#1}{section}
@@ -155,37 +246,26 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Optional arguments in macro definitions
+\usepackage{xargs}
+%\usepackage{stix2}
+%\usepackage{libertineotf}
+
+%\usepackage[msc-links]{amsrefs}
+%\usepackage[style=authoryear]{biblatex}
+\usepackage{biblatex}
+%\bibliography{/home/zack/Notes/library.bib}
 
 
-% Non-tikz graphics
-\usepackage{amscd}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.17}
-\usepackage[inline]{asymptote}
-% Inkscape figures from Vim
-\usepackage{import}
-\usepackage{pdfpages}
-\usepackage{transparent}
 
-%Pagination stuff.
-\setlength{\topmargin}{-.3 in}
-\setlength{\oddsidemargin}{0in}
-\setlength{\evensidemargin}{0in}
-\setlength{\textheight}{9.in}
-\setlength{\textwidth}{6.5in}
-
-\newcommand{\incfig}[1]{%
-    \def\svgwidth{\columnwidth}
-    \import{./figures/}{#1.pdf_tex}
-}
-
-% Pandoc-specific fixes
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{svg}
+\input{/home/zack/Notes/Latex/tikzmacros.tex}
 
 \def\envlist{
 \leavevmode \vspace{-1.00\baselineskip} 
 }
+
+\usepackage{cancel}
 
 \usepackage{dynkin-diagrams}
 
@@ -214,13 +294,28 @@
 \usepackage{marginnote}
 \newcommand{\lmargnote}[1]{\reversemarginpar\marginnote{#1}\normalmarginpar}
 \newcommand{\rmargnote}[1]{\marginnote{{\footnotesize #1}}\index{#1}}
-
-
-\input{/home/zack/Notes/Latex/preamble_common}
-\input{/home/zack/Notes/Latex/environments}
-
-
-\everymath{\displaystyle}
+% Grow parentheses appropriately
+% Better indicator function
+\usepackage{bbm}
+\newcommand{\indic}[1]{\mathbbm{1}\left[#1\right]}
+\newcommand{\bbone}[0]{\mathbbm{1}}
+% \mapsfrom
+\usepackage{stmaryrd}
+% Better delimiters
+%\DeclarePairedDelimiter\qty{(}{)}
+  \newcommand{\qty}[1]{\left( {#1} \right)}
+\DeclarePairedDelimiter\intvl{[}{]}
+% Big Asterisk
+\newcommand{\Conv}{\mathop{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}}}%
+% No more phi please
+\let\origphi\phi
+\let\phi\varphi
+% Include emoji
+\usepackage{apple_emoji}
+\newcommand{\done}[0]{\scalebox{0.75}{✨}}
+\newcommand{\work}[0]{\scalebox{0.75}{🚩}}
+% Everything else
+\input{/home/zack/Notes/Latex/latexmacs}
 
 \usepackage[noabbrev, capitalise, nameinlink]{cleveref} % use \cref{}, automatically deduces theorem, proposition, etc
 \crefname{figure}{fig.}{figs.}
