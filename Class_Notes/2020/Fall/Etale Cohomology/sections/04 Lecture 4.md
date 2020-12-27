@@ -59,9 +59,9 @@ On terminology:
 2. Suppose $\mathcal{F}$ is a quasicoherent sheaf on $X$, so $\mathcal{F}\in \qcoh(X)$, the functor of taking global sections:
 
 \begin{tikzcd}
-Z \ar[dd, "f"]  &  \\
- \ar[r]         &  \Gamma(Z, f^* \mathcal{F}) \\
-X & 
+Z \ar[dd, "f"] &        & \\
+               & \ar[r] & \Gamma(Z, f^* \mathcal{F}) \\
+X              &
 \end{tikzcd}
   is a sheaf on $X_{\Fppf}, X_{\Et}, X_{\et}$, etc.
 
@@ -171,6 +171,12 @@ We now want an isomorphism
 on $U\cross_X U$.
 We have a situation like the following:
 
+\begin{tikzcd}
+U\cross_X U 
+  \ar[r] &
+ \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+
+\end{tikzcd}
 \begin{tikzcd}
 U\cross_X U \ar[r, bend left, "\pi_1"] \ar[r, bend right, "\pi_2"] & U \ar[r, "f"] & X
 \end{tikzcd}
