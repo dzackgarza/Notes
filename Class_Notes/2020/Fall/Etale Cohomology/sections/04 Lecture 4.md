@@ -173,13 +173,10 @@ We have a situation like the following:
 
 \begin{tikzcd}
 U\cross_X U 
-  \ar[r] &
- \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
-
-\end{tikzcd}
-\begin{tikzcd}
-U\cross_X U \ar[r, bend left, "\pi_1"] \ar[r, bend right, "\pi_2"] & U \ar[r, "f"] & X
-\end{tikzcd}
+ \ar[r, shift right=0.75ex, "\pi_2"] \ar[r, shift left=0.75ex, "\pi_1"] &
+& U
+  \ar[r, "f"] 
+& X
 
 Since $f\circ \pi_1 = f\circ \pi_2$ in this case, pulling back the identity yields the desired isomorphism.
 :::
@@ -193,7 +190,11 @@ For $n=1$, this is gluing data for a line bundle.
 :::{.example title="?"}
 Suppose $L/k$ is a Galois extension with Galois group $G$, then $\spec L \to \spec k$ is an étale cover.
 Descent data on this map is a quasicoherent sheaf on $\spec L$, i.e. an $L\dash$vector space $V$, with an isomorphism $\pi_1^* V \mapsvia{\phi \sim}\pi_2^* V$ satisfying the cocycle condition.
-We can compute $\spec L \times_{\spec k} \spec L = \spec L\tensor_k L = \disjoint_{L\mapsvia{\sim} L} \spec L$, which is a torsor for the Galois group, and in fact is equal to $\disjoint_{\Gal(L/k)} \spec L$.
+We can compute 
+\[
+\spec L \times_{\spec k} \spec L = \spec L\tensor_k L = \disjoint_{L\mapsvia{\sim} L} \spec L
+,\]
+which is a torsor for the Galois group, and in fact is equal to $\disjoint_{\Gal(L/k)} \spec L$.
 :::
 
 :::{.exercise title="?"}
