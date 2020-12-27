@@ -1,0 +1,298 @@
+\usepackage{stackrel}
+\usepackage{array}
+\usepackage{mathtools}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsxtra, amscd, thmtools, xpatch}
+\usepackage{calligra, mathrsfs}
+\usepackage{colonequals}
+\let\proof\relax
+\let\endproof\relax
+
+
+\usepackage{color}
+%\usepackage{unicode-math}
+\usepackage{newunicodechar}
+\newunicodechar{ε}{\varepsilon}
+\newunicodechar{δ}{\delta}
+\newunicodechar{≤}{\leq}
+\newunicodechar{∈}{\in}
+\newunicodechar{⊆}{\subseteq}
+\newunicodechar{Λ}{\Lambda}
+\newunicodechar{∞}{\infty}
+\everymath{\displaystyle}
+
+
+\usepackage[stretch=10]{microtype}
+
+\usepackage[pdfencoding=auto]{hyperref}
+
+\usepackage{bookmark}
+\usepackage{booktabs}
+
+% Todo Notes
+\usepackage[textwidth=25mm, textsize=tiny]{todonotes}
+
+\usepackage{csquotes}
+\usepackage{longtable}
+\usepackage{tabularx}
+
+
+\usepackage{centernot}
+% \centernot\whatever
+
+
+% Nice math font that journals use
+%\usepackage[lite]{mtpro2}
+%\usepackage{mathrsfs}
+\usepackage{lmodern}
+
+\input{/home/zack/Notes/Latex/environments}
+
+%Pagination stuff.
+\setlength{\topmargin}{-.3 in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textheight}{9.in}
+\setlength{\textwidth}{6.5in}
+
+% Inkscape figures from Vim
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+% Pandoc-specific fixes
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Tikz 
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, cd, fadings, patterns, calc, matrix, positioning, decorations, decorations.pathreplacing, decorations.markings, shapes, backgrounds, fit, shapes.geometric, intersections}
+\tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
+\usepackage{tikz-layers}
+\usepackage{ifthen}
+\usepackage{xifthen}
+\usepackage{tikz-3dplot}
+
+% Non-tikz graphics
+\usepackage{amscd}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage[inline]{asymptote}
+
+
+% Major Macros
+\usepackage{graphicx}
+
+% Make figures stay where you put them!
+\usepackage{float}
+\floatplacement{figure}{H}
+
+\DeclareFontFamily{U}{mathx}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathx}{m}{n}{
+      <5> <6> <7> <8> <9> <10>
+      <10.95> <12> <14.4> <17.28> <20.74> <24.88>
+      mathx10
+      }{}
+\DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
+%\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
+
+
+
+\usepackage[autooneside=false,automark]{scrlayer-scrpage}
+%\clearscrheadfoot{}
+\clearpairofpagestyles
+\renewcommand*{\sectionmarkformat}{}
+\KOMAoption{headwidth}{198mm:-9em} % 
+\KOMAoption{headheight}{50mm} % 
+\KOMAoption{footwidth}{159mm:0em} % 
+\KOMAoption{headsepline}{1.1pt} % 
+\KOMAoption{footsepline}{0.5pt} % 
+\ihead[\clearscrheadfoot]{\mbox{
+    \sffamily\bfseries\smash{%
+    \setlength\fboxsep{0pt}\raisebox{-2pt}{
+        \colorbox{gray!80}{\makebox[33.7mm]{\hfill%
+        \ifnum\value{section}>0
+            \textcolor{white}{\fontsize{18}{19}\selectfont
+            \thesection }~
+        \fi%
+    \rule[-2.85pt]{2mm}{13mm}}}}}
+}}
+\chead{\hspace{33.7mm}\leftmark}
+\cfoot*{\scriptsize \rightmark \hfill \pagemark}
+
+
+
+% List of Theorems Attempt
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\thmtlo@chaptervspacehack
+  {\addtocontents{loe}{\protect\addvspace{10\p@}}}
+  {\addtocontents{loe}{\protect\thmlopatch@endchapter\protect\thmlopatch@chapter{\thechapter}}}
+  {}{}
+\AtEndDocument{\addtocontents{loe}{\protect\thmlopatch@endchapter}}
+\long\def\thmlopatch@chapter#1#2\thmlopatch@endchapter{%
+  \setbox\z@=\vbox{#2}%
+  \ifdim\ht\z@>\z@
+    \hbox{\bfseries\chaptername\ #1}\nobreak
+    #2
+    \addvspace{10\p@}
+  \fi
+}
+\def\thmlopatch@endchapter{}
+
+\def\ll@tdefn{%
+   \protect\thmtopatch@numbernametext
+     \ifx\@empty\thmt@shortoptarg\else[\thmt@shortoptarg]\fi
+     {\csname the\thmt@envname\endcsname}%
+     {\thmt@thmname}%
+}
+
+\newcommand\thmtopatch@numbernametext[3][]{%
+  #2 #3%
+  \if\relax\detokenize{#1}\relax\else\space -- #1\fi
+}
+
+\makeatother
+\renewcommand{\thmtformatoptarg}[1]{ -- #1}
+%\renewcommand{\listtheoremname}{List of definitions}
+
+%\usepackage{adjustbox}
+
+% Custom section headings: redefining the KOMA-Script command \sectionlinesformat:
+\newdimen\thesectionwdmax
+\newdimen\sectiontitlewd
+\AtBeginDocument{%
+  \setbox0=\hbox{{\usekomafont{disposition}\usekomafont{section}\scalebox{2}{99}}}%
+  \thesectionwdmax\wd0%
+  \sectiontitlewd\dimexpr\textwidth-\thesectionwdmax-.75cm-1pt\relax
+}
+
+\renewcommand\sectionformat{\protect\scalebox{2}{\thesection}}
+\addtokomafont{section}{\huge}
+
+% Fancy symbols
+\usepackage{adforn}
+\usepackage{pgfornament}
+
+% MnSymbol. Undefines lhook for some reason.
+\let\originallhook\lhook
+\usepackage{MnSymbol}% More dots
+\let\lhook\originallhook
+% \udots: SW to NE
+\usepackage{spectralsequences}
+
+
+
+\makeatletter
+\renewcommand\sectionlinesformat[4]{%
+  \ifstr{#1}{section}
+    {\ifstr{#3}{}
+      {\@hangfrom{\hskip #2#3}{#4}}
+      {%
+        \begin{tabular}{@{}r@{\hspace{.25cm}\vrule width 1pt\hspace{.5cm}}l@{}}
+        \parbox{\thesectionwdmax}{\centering#3}%
+        &%
+        {\parbox{\sectiontitlewd}{\raggedright#4}}%
+        \end{tabular}%
+      }%
+    }
+    {\@hangfrom{\hskip #2#3}{#4}}%
+}
+% Center subsections
+%\addtokomafont{subsection}{\rmfamily\centering\fontsize{13.4pt}{16.75pt}\selectfont}
+%\titleformat{name=\section}
+  %{\normalfont\Large\sffamily\bfseries\filcenter}{}{0em}{\uline{\MakeUppercase{#1}}}
+\definecolor{ssec}{HTML}{20639B}
+\setkomafont{subsection}{\mysection}
+\newcommand{\mysection}[1]{%
+    \Large%
+    \setlength{\fboxsep}{0cm}%already boxed
+    \colorbox{ssec!30}{%
+        \begin{minipage}{\linewidth}%
+            \vspace*{2pt}%Space before
+            \adfflourishleft \hfill 
+            \adjustbox{width=4in,totalheight=4in}{
+              \parbox{4in}{\centering #1}
+            } 
+            \hfill \adfflourishright
+            \vspace*{2pt}%Space after
+        \end{minipage}%
+    }
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Optional arguments in macro definitions
+\usepackage{xargs}
+%\usepackage{stix2}
+%\usepackage{libertineotf}
+
+%\usepackage[msc-links]{amsrefs}
+%\usepackage[style=authoryear]{biblatex}
+\usepackage{biblatex}
+%\bibliography{/home/zack/Notes/library.bib}
+
+
+
+\usepackage{svg}
+\input{/home/zack/Notes/Latex/tikzmacros.tex}
+
+\def\envlist{
+\leavevmode \vspace{-1.00\baselineskip} 
+}
+
+\usepackage{cancel}
+
+\usepackage{dynkin-diagrams}
+
+\NewDocumentCommand\dyn{mom}
+{\(\IfStrEq{#3}{}{#1_{n}}{#1_{#3}}^{\IfValueT{#2}{#2}}\) 
+& \IfValueTF{#2}{\dynkin{#1}[#2]{#3}}{\dynkin{#1}{#3}} \\}
+
+\NewDocumentEnvironment{tbl}{m}
+{
+\begin{figure}\caption{#1}
+\centering
+\begin{tabular}{rl}
+}{
+\end{tabular}\end{figure}
+}
+
+
+% Extra macros
+% Wide tikz equations
+\newsavebox{\wideeqbox}
+\newenvironment{wideeq}
+  {\begin{displaymath}\begin{lrbox}{\wideeqbox}$\displaystyle}
+  {$\end{lrbox}\makebox[0pt]{\usebox{\wideeqbox}}\end{displaymath}}
+
+% Margin notes
+\usepackage{marginnote}
+\newcommand{\lmargnote}[1]{\reversemarginpar\marginnote{#1}\normalmarginpar}
+\newcommand{\rmargnote}[1]{\marginnote{{\footnotesize #1}}\index{#1}}
+% Grow parentheses appropriately
+% Better indicator function
+\usepackage{bbm}
+\newcommand{\indic}[1]{\mathbbm{1}\left[#1\right]}
+\newcommand{\bbone}[0]{\mathbbm{1}}
+% \mapsfrom
+\usepackage{stmaryrd}
+% Better delimiters
+%\DeclarePairedDelimiter\qty{(}{)}
+  \newcommand{\qty}[1]{\left( {#1} \right)}
+\DeclarePairedDelimiter\intvl{[}{]}
+% Big Asterisk
+\newcommand{\Conv}{\mathop{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}}}%
+% No more phi please
+\let\origphi\phi
+\let\phi\varphi
+% Include emoji
+\usepackage{apple_emoji}
+\newcommand{\done}[0]{\scalebox{0.75}{✨}}
+\newcommand{\work}[0]{\scalebox{0.75}{🚩}}
+% Everything else
+\input{/home/zack/Notes/Latex/latexmacs}
+
