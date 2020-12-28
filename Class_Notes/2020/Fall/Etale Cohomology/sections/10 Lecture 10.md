@@ -463,14 +463,24 @@ R^i f_* \mathcal{F} \mathcal{H}^i(f_* \mathcal{I}^\wait)
 .\]
 $f_* \mathcal{I}$ is a complex of injectives, and we want $\mathcal{H}^{i+j}(g_* f_* \mathcal{I}^\wait) = R^{i+j}(g\circ f)_* \mathcal{F}$, and the content here is that we don't have to take an additional injective resolution of $f_* \mathcal{I}$.
 Now take the spectral sequence of the filtered complex $f_* \mathcal{I}^\wait$ where the filtration is by the truncations $\tau_{\leq p}f_* \mathcal{I}^\wait$ where you replace the $p$th term with the kernel of the differential and zero beyond this point.
-An example of a differential is given by
+An example of a differential is given by the following: there are SESs
 \[  
+0 \to
 \tau_{\leq p} f_* \mathcal{I}^\wait
 \to
 \tau_{\leq p+1} f_* \mathcal{I}^\wait
 \to
-\mathcal{H}^{p+1}(f_* \mathcal{I}^\wait) 
+\mathcal{H}^{p+1}(f_* \mathcal{I}^\wait)  = R^{p+1} f_* \mathcal{F}
 \to 
 0
-.\]
+,\]
+and applying $RG_*$ yields a map
+\[  
+R^{p+1} f_* \mathcal{F}
+\mapsvia{\delta}
+R^{q+1} g_* \tau_{\leq p}f_* \mathcal{I}^\wait
+,\]
+and after some splicing this $\delta$ will be the differential on $E_2$.
 :::
+
+Next time: the Brauer group.
