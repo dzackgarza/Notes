@@ -280,3 +280,6 @@ In general, for $\Pic(X) \neq 0$, the Picard group plays a crucial role.
 
 ## Computing the Cohomology of Curves
 
+> This is one of Daniel's favorite topics in the entire course! \coloremoji{☺️ }
+
+
