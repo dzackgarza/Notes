@@ -306,7 +306,7 @@ H^i(X_\et, \ul \zlnz)
 \begin{cases}
 \zlnz & i = 0 \\
 \Pic(X)[\ell^n] = \qty{\zlnz}^{2g} & i=1 \\
-\zlz & i=2 \\
+\zlnz & i=2 \\
 0 & i>2
 \end{cases}
 .\]
@@ -387,3 +387,7 @@ Check this using the snake lemma after applying multiplication by $\ell$ to the 
 :::
 
 
+:::{.remark}
+$X$ is a scheme over $\bar k$, and if it started over some subfield $L$ then $\Gal(L_{/k}) \actson X$ and thus the corresponding functors.
+These isomorphisms will not be Galois equivariant, and the $\zlnz$ showing up in degree 2 cohomology will be 
+:::
