@@ -28,7 +28,7 @@ From this we got a long exact sequence:
 \begin{tikzcd}
 & \cdots
     \ar[r]
-& H^{i}(X, \OO_X) 
+& H^{i-1}(X, \OO_X) 
     \ar[dll, "\delta"]
 \\
   H^i(X_\et, \ul{\FF_p})
@@ -38,8 +38,22 @@ From this we got a long exact sequence:
 & H^i(X, \OO_X)
 \end{tikzcd}
 
+We don't know how to compute $H^i(X_\et, \FF_p)$ generally, but the affine case is easy.
+For $X$ affine, $H^{>0}(X, \OO_X) = 0$, which in facts holds for any quasicoherent sheave replacing $\OO_X$, and $H^0(X, \FF_p) = \qty{\FF_p}^{\abs {\pi_0 X} }$ where the exponent is the number of connected components of $X$.
+So we get an exact sequence
 
-
+\begin{tikzcd}
+& \cdots
+    \ar[r]
+& H^{0}(X, \FF_p) 
+    \ar[dll, "\delta"]
+\\
+  \OO_X(X) 
+    \ar[r]
+& 
+    \ar[r, "f"]
+& H^i(X, \OO_X)
+\end{tikzcd}
 
 
 
