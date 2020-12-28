@@ -100,6 +100,15 @@ This data is closely related to e.g. crystalline cohomology.
 
 :::{.example title="?"}
 We'll try to compute $H(\qty{\spec k}_\et, \mathcal{F})$, the cohomology of the étale site of a field, using Čech cohomology.
+We had an equivalence of categories
+\[  
+\Sh^\Ab(\spec k)_\et \mapstofrom \ts{\text{Discrete $G\dash$modules}}
+,\]
+where $G = \Gal(\bar k / k)$ is the absolute Galois group of $k$.
+What were the functors?
+Given a sheaf, you want to evaluate it on $k^s$ (the separable closure), but this doesn't make sense since it's not an object on the étale site due to not being finitely presented.
+So you choose a separable closure, look at all intermediate extensions, and take the direct limit of evaluating the sheaf on those extensions.
+Going the other way, you can say what the value of a discrete $G\dash$module is on a finite extension $L/k$ by taking its Galois fixed points: the fixed points of $\Gal(\bar L/L)$.
 :::
 
 
