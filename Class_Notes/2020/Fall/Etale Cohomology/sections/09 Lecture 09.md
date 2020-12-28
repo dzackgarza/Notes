@@ -14,7 +14,19 @@ Last time we had a scheme $X_{/\FF_p}$ and the *Artin-Schreier* exact sequence o
 \[  
 0\to \ul{\FF_p} \to \OO_X^\et \mapsvia{t\mapsto t^p - t} \OO_X^\et \to 0
 .\]
-  
+This works over arbitrary fields of characteristic $p$, with a modified definition replacing $t^p$.
+
+:::{.exercise title="?"}
+Check that this is an additive homomorphism of abelian sheaves.
+This follows from the fact that Frobenius itself is.
+:::
+
+Recall that we had a theorem last time showing that the étale cohomology of quasicoherent sheaves is equivalent to the usual Zariski cohomology.
+From this we got a long exact sequence:
+
+\begin{tikzcd}
+  H^{i}
+\end{tikzcd}
 
 
 
