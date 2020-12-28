@@ -261,8 +261,17 @@ Check that base-changing along a cover yields a cover, following from the axioms
 Observe that $\ro{T}{U_\et}$ is representable, since it's isomorphic to $\ro{G}{U_\et}$ as a scheme and $G$ was a finite étale group scheme.
 How to we go from representability on $U$ to $X$?
 We can use that descent is effective.
-Note that it is *not* effective for schemes, 
+Note that descent is *not* generally effective for schemes, but it is for affine (over $X$) schemes.
+We use that étale $\implies$ open and finite $\implies$ proper $\implies$ closed, yielding surjectivity.
+We proved effectiveness for quasicoherent sheaves, and an affine $X\dash$scheme is spec of a quasicoherent sheaf of algebras, so we descend that quasicoherent sheaf of algebras.
 :::
 
+:::
+
+:::{.remark}
+Given a torsor for a finite group scheme, it's represented by a $G\dash$cover which is not just a sheaf but rather an honest covering space.
+:::
+
+:::{.proposition title="Interpretation of $H^1$"}
 
 :::
