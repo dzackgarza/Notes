@@ -149,7 +149,13 @@ This is true when $X = K(\pi, 1)$: it's connected and all of its homotopy groups
 E.g. $S^1 = K(\ZZ, 1)$, or a compact orientable surface $\Sigma_g$ of genus $g\geq 1$ has a contractible universal cover, and thus $\Sigma_g = K(\pi_1 \Sigma_g, 1)$.
 In these cases, singular cohomology is the group cohomology of $\pi_1$.
 For $G$ a finite group, $BG$ will be an example, although e.g. this will not be true for $\GL_n$.
+Another example will be affine curves.
 :::
+
+Goal for the next few classes:
+compute the étale cohomology of smooth (not necessarily projective) curves over $k=\bar k$, i.e. $H^i(C_\et, \zlnz)$ where $\ell \neq \ch(k)$.
+We've seen what this is when $\ell = k$, and the answer will resemble the singular cohomology of a Riemann surface in terms of dimensions.
+This will be hard for $i>2$, but we'll try to get to $i=0, 1$.
 
 
 
