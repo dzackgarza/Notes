@@ -259,6 +259,9 @@ Check that base-changing along a cover yields a cover, following from the axioms
 
 :::{.proof title="of 1"}
 Observe that $\ro{T}{U_\et}$ is representable, since it's isomorphic to $\ro{G}{U_\et}$ as a scheme and $G$ was a finite étale group scheme.
+How to we go from representability on $U$ to $X$?
+We can use that descent is effective.
+Note that it is *not* effective for schemes, 
 :::
 
 
