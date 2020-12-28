@@ -148,3 +148,18 @@ This is called "90" since Hilbert numbered his theorems in at least one of his b
 
 :::
 
+Let's generalize this observation.
+
+:::{.example title="?"}
+Let $X$ be any scheme and $n=1$, then
+$H^1(X_\et, \GG_m) = \Pic(X)$.
+:::
+
+:::{.example title="?"}
+Let's compute $H^1(X_\et, \mu_\ell)$ where $\ell$ is an invertible function on $X$.
+We have a SES of étale sheaves, the **Kummer sequence**,
+\[  
+1 \to \mu_\ell \to \GG_m \mapsvia{z\mapsto z^p} \GG_m \to 1
+.\]
+:::
+
