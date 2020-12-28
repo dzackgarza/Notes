@@ -7,7 +7,7 @@ What we've been calling a *torsor* (a sheaf with a group action plus conditions)
 Recall that statement of \cref{thm:hilb90}.
 
 :::{.proof title="of Hilbert 90"}
-Let $\tau = \X_{\zar}, X_\et, X_{\fppf}$, then the data of a $\GL_n\dash$torsor split by a $\tau\dash$cover $U\to X$ is the same as descent data for a vector bundle relative to $U_{/X}$.
+Let $\tau = X_{\zar}, X_\et, X_{\fppf}$, then the data of a $\GL_n\dash$torsor split by a $\tau\dash$cover $U\to X$ is the same as descent data for a vector bundle relative to $U_{/X}$.
 This descent data comes from the following: 
 \begin{tikzcd}
 U\cross_X U
@@ -19,5 +19,6 @@ U
 \\
 X 
 \end{tikzcd}
-
+That $U$ trivializes our torsor means that $\pi^* T = \pi^* G$ as a $G\dash$torsor, where $G$ acts on itself by left-multiplication.
+We have two different ways of pulling back, and identifications with $G$ in both, yielding
 :::
