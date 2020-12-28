@@ -51,7 +51,7 @@ H^{i-1}(X, \OO_X)
   H^0(X, \FF_p) = \qty{\FF_p}^{\abs {\pi_0 X} } 
     \ar[r]
 & \OO_X(X) 
-    \ar[r, "f"]
+    \ar[r, "f"']
 & \OO_X(X) 
     \ar[ull]
 \\
