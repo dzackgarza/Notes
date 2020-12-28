@@ -335,9 +335,14 @@ For any site $\tau$ and any sheaf $\mathcal{F}$, we have correspondences
 \[
 \Hc^1(\tau, \mathcal{F})
 &\mapstofrom
-\correspond{\text{Locally trivial} \mathcal{F}\dash\text{torsors}} \\
+\correspond{\text{Locally trivial } \mathcal{F}\dash\text{torsors}} \\
 &\ms H^1(\tau, \mathcal{F}) && \text{if $\mathcal{F}$ is abelian}
 ,\]
 where the last line is derived functor cohomology.
+:::
+
+:::{.proof title="?"}
+Omitted, see Milne.
+Note that we know this for quasiprojective things, and the first isomorphism is more or less what we've just shown.
 :::
 
