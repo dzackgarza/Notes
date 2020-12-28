@@ -149,7 +149,12 @@ This is true when $X = K(\pi, 1)$: it's connected and all of its homotopy groups
 E.g. $S^1 = K(\ZZ, 1)$, or a compact orientable surface $\Sigma_g$ of genus $g\geq 1$ has a contractible universal cover, and thus $\Sigma_g = K(\pi_1 \Sigma_g, 1)$.
 In these cases, singular cohomology is the group cohomology of $\pi_1$.
 For $G$ a finite group, $BG$ will be an example, although e.g. this will not be true for $\GL_n$.
-Another example will be affine curves.
+Another example will be affine curves.[^def_curves]
+
+[^def_curves]: 
+Here a curve will be a smooth separated scheme of finite type of dimension 1 over an algebraically closed field.
+We won't assume properness, and we'll generalize to singular curves.
+
 :::
 
 Goal for the next few classes:
@@ -161,10 +166,21 @@ We can compute $i=0$, since we're just asking for global sections to a sheaf:
 H^i (C_\et, \ul\zlnz) = \zlnz
 ,\] 
 since the definition of this sheaf was maps into $\zlnz$, which is disconnected and so any map in is constant.
-For $i=1$, we'll use an interpretation in terms of torsors.
+For $i=1$, we'll use an interpretation in terms of torsors, which are supposed to generalize principle homogeneous spaces.
+Typical example: given a space $X$, a Galois covering space will be a torsor for the Galois group: $G$ acts on $X$ and simply transitively on every fiber.
 
-:::{.definition title="?"}
+:::{.definition title="$G\dash$Torsors"}
+Idea: for $G\in\Sh^{\Grp}(X_\et)$ a sheaf of (not necessarily abelian) groups, a **$G\dash$torsor** is a sheaf $\mathcal{F}\in \Sh^\Set(X_\et)$ with a $G\dash$action such that $G$ acts on fibers simply and transitively.
 
+Actual definition: a **torsor** is a sheaf $T\in \Sh^\Set(X)$ with an action $G\cross T \mapsvia{a} T$ (so $G(U)$ acts on $T(U)$ for every $U\in X_\et$) such that the following map is an isomorphism:
+\[  
+G\cross T \mapsvia{(a, \pi_2)} T\cross T
+,\]
+given by crossing the action with the projection.
+:::
+
+:::{.remark}
+This says that $T\cross T \ms G\cross T$, and pulling back to $T$ yields a "trivial torsor", where e.g. $G$ itself is a $G\dash$torsor.
 :::
 
 
