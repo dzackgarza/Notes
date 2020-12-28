@@ -77,10 +77,28 @@ Given a $G\dash$torsor $T$ that is fppf locally trivial, is it étale locally tr
 In general no, but yes if $G$ is smooth.
 :::
 
+:::{.proof title="Sketch"}
+You can take an fppf local trivialization, trivialize by $p$ itself, then slice to get an étale trivialization.
+Given a torsor $T\to X$, we can base change it to itself:
+\begin{tikzcd}
+T\cross_X T 
+  \ar[d]
+  \ar[r]
+& T 
+  \ar[d]
+\\
+T 
+  \ar[r]
+  \ar[u, bend right, "\exists"]
+& X 
+\end{tikzcd}
+The torsor $T\cross_X T\to T$ is trivial since there exists the indicated section given by the diagonal map.
+:::
+
 :::{.example title="non-smooth group schemes"}
 \envlist
 
-- $\alpha_p$, the kernel of Frobenius on $\AA^2$ or $\GG_a$,
+- $\alpha_p$, the kernel of Frobenius on $\AA^1$ or $\GG_a$,
 - $\mu_p$ in characteristic $p$, representing $p$th roots of unity, the kernel of Frobenius on $\GG_m$,
 - The kernel of Frobenius on any positive dimensional affine group scheme.
 - $\mu_p \cross \GL_n$, etc.
