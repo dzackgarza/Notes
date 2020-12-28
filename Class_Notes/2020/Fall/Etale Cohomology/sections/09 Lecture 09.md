@@ -186,4 +186,9 @@ This says that $T\cross T \ms G\cross T$, and pulling back to $T$ yields a "triv
 This is similar to base-changing to cover to check something, as in the proof of fppf descent, and here we base-change to trivialize a torsor.
 :::
 
+:::{.example title="?"}
+Suppose $G$ is a finite group and $\ul G \in \Sh(X_\et)$ is the constant sheaf regarding $G$ as a scheme.
+Then e.g. a $G\dash$torsor is a finite étale cover with Galois group $G$.
+If $X$ is a smooth curve, this is a Galois extension of the function field which is everywhere unramified.
+:::
 
