@@ -7,7 +7,12 @@ What we've been calling a *torsor* (a sheaf with a group action plus conditions)
 Recall that statement of \cref{thm:hilb90}.
 
 :::{.proof title="of Hilbert 90"}
+
+:::{.observation}
 Let $\tau = X_{\zar}, X_\et, X_{\fppf}$, then the data of a $\GL_n\dash$torsor split by a $\tau\dash$cover $U\to X$ is the same as descent data for a vector bundle relative to $U_{/X}$.
+:::
+
+
 This descent data comes from the following: 
 \begin{tikzcd}
 U\cross_X U
@@ -38,5 +43,12 @@ Both of the bottom objects are isomorphic to $\ro{G}{U\cross U}$.
 
 :::{.claim}
 The top horizontal map is descent data for $T$, and the bottom horizontal map is an automorphism of a $G\dash$torsor and thus is a section to $G$.
+I.e. a section to $\GL_n$ is an invertible matrix on double intersections (satisfying the cocycle condition) and a cover, which is precisely descent data for a vector bundle.
 :::
+
+Using fppf descent, proved previously, we know that descent data for vector bundles is effective.
+So if we have a locally trivial $\GL_n\dash$torsor on the fppf site, it's also trivial on the other two sites, yieldings the desired maps back and forth.
+Thus $H^1(X_\et, \GL_n)$ is in bijection with $n\dash$dimensional vector bundles on $X$.
+
+
 :::
