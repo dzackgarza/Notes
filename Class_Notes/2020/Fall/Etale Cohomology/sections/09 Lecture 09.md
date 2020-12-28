@@ -360,6 +360,17 @@ Take the direct limit of both sides.
 Note that Čech $H^1$ always computes derived $H^1$.
 
 :::{.theorem title="Grothendieck's Generalization of Hilbert 90"}
+The following is a bijection:
+\[  
+\Hc^1(X_\zar, \ul \GL_n)
+\ms
+\Hc^1(X_\et, \ul \GL_n)
+\to
+\Hc^1(X_\fppf, \ul \GL_n)
+\]
+:::
 
+:::{.remark}
+The content of this theorem: if you're étale locally trivial, then you're also Zariski locally trivial.
 :::
 
