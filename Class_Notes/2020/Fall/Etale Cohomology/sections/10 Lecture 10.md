@@ -4,7 +4,7 @@
 What we've been calling a *torsor* (a sheaf with a group action plus conditions) is called by some sources a **pseudotorsor** (e.g. the Stacks Project), and what we've been calling a *locally trivial torsor* is referred to as a *torsor* instead.
 :::
 
-Recall that statement of \cref{thm:hilb90}.
+Recall that statement of \cref{thm:hilb90}; we'll now continue with the proof:
 
 :::{.proof title="of Hilbert 90"}
 
@@ -12,6 +12,7 @@ Recall that statement of \cref{thm:hilb90}.
 Let $\tau = X_{\zar}, X_\et, X_{\fppf}$, then the data of a $\GL_n\dash$torsor split by a $\tau\dash$cover $U\to X$ is the same as descent data for a vector bundle relative to $U_{/X}$.
 :::
 
+\vspace{2em}
 
 This descent data comes from the following: 
 \begin{tikzcd}
@@ -24,6 +25,7 @@ U
 \\
 X 
 \end{tikzcd}
+
 That $U$ trivializes our torsor means that $\pi^* T = \pi^* G$ as a $G\dash$torsor, where $G$ acts on itself by left-multiplication.
 We have two different ways of pulling back, and identifications with $G$ in both, yielding
 \begin{tikzcd}
@@ -49,6 +51,33 @@ I.e. a section to $\GL_n$ is an invertible matrix on double intersections (satis
 Using fppf descent, proved previously, we know that descent data for vector bundles is effective.
 So if we have a locally trivial $\GL_n\dash$torsor on the fppf site, it's also trivial on the other two sites, yieldings the desired maps back and forth.
 Thus $H^1(X_\et, \GL_n)$ is in bijection with $n\dash$dimensional vector bundles on $X$.
-
-
 :::
+
+:::{.exercise title="?"}
+See if Hilbert 90 is true for groups other than $\GL_n$.
+:::
+
+## Representability and Local Triviality
+
+:::{.question}
+Suppose $G$ is an affine flat $X\dash$group scheme.
+Are all $G\dash$torsors representable by a $X\dash$scheme?
+:::
+
+:::{.answer}
+Yes, by the same proof as last time, try working out the details.
+Idea: you can trivialize a $G\dash$torsor flat locally and use fppf descent.
+:::
+
+:::{.question}
+Given a $G\dash$torsor $T$ that is fppf locally trivial, is it étale locally trivial?
+:::
+
+:::{.answer}
+In general no, but yes if $G$ is smooth.
+:::
+
+:::{.example title="a non-smooth group scheme"}
+The kernel of Frobenius on $\AA^1$ or $\GG_a$, aka $\alpha_p$.
+:::
+
