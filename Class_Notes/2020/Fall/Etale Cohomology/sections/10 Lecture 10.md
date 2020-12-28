@@ -327,23 +327,29 @@ The Kummer sequence
 yields a LES where we identify $\mu_{\ell^n} \cong \zlnz$:
 
 \begin{tikzcd}
- A
-  \ar[r]
-&
- A
-  \ar[r]
-&
- A
+& & 
+0 
   \ar[dll]
-\
- A
+\\
+ H^1(X_\et, \ul \zlnz)
   \ar[r]
 &
- A
+ \Pic(X)
+  \ar[r, "{[\ell]}"]
+&
+ \Pic(X)
+  \ar[dll]
+\\
+ H^2(X_\et, \ul \zlnz)
   \ar[r]
 &
- A
+ 0
+  \ar[r]
+&
+ 0
 \end{tikzcd}
+So we're just computing the kernel and cokernel of $[\ell]$.
+We'll need one more fact: $\Jac(X)(\bar k)$ is a divisible group.
 
 [^ref_hartshorne_1]: 
 See Hartshorne Ch. 4, or anything that discusses cohomology of curves.
