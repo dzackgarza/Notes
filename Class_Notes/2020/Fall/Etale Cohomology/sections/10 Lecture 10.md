@@ -457,4 +457,9 @@ H^i(Y, R^j f_* \mathcal{F} ) \abuts H^{i+j}(X, \mathcal{F})
 
 :::{.proof title="sketch"}
 There is a general statement (see Tohoku): given two functors between abelian functors where the first preserves injectives, you get such a spectral sequence.
+How to explicitly compute this: we can take an injective resolution $\mathcal{F}\to \mathcal{I}^\wait$ and compute
+\[  
+R^i f_* \mathcal{F} \mathcal{H}^i(f_* \mathcal{I}^\wait)
+.\]
+$f_* \mathcal{I}$ is a complex of injectives, and we want $\mathcal{H}^{i+j}(g_* f_* \mathcal{I}^\wait)$.
 :::
