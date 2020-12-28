@@ -426,7 +426,11 @@ If $f$ is a finite morphism (e.g. a closed immersion) then $R^{>0} f_* = 0$.
 Prove this.
 The claim is that $f_*$ is right-exact, which in this case shows it is exact.
 Check on stalks.
-Compute the stalk of $f_* \mathcal{F}$ at $\bar y\in Y$ is given by $\bigoplus_{\bar x\in f^{-1}(\bar y)}\mathcal{F}_{\bar x}$ for $f$ a finite morphism (not necessarily unramified).
+Compute that the stalk of $f_* \mathcal{F}$ at $\bar y\in Y$ is given by 
+\[
+f_* \mathcal{F}_{\bar y} = \bigoplus_{\bar x\in f^{-1}(\bar y)}\mathcal{F}_{\bar x}
+\]
+for $f$ a finite morphism (not necessarily unramified).
 :::
 
 :::{.proposition title="technical"}
@@ -444,5 +448,13 @@ Suppose $X \mapsvia{f} Y$ and $Y \mapsvia{g} Z$ are morphisms of schemes, then t
 \[  
 R^i g_* R^j f_* \mathcal{F} \abuts R^{i+j}(g\circ f)_* \mathcal{F}
 .\]
+As a special case, for $Z = \spec k$ with $k=\bar k$, then $g_*, f_*$ are taking global sections so we get
+\[  
+H^i(Y, R^j f_* \mathcal{F} ) \abuts H^{i+j}(X, \mathcal{F})
+.\]
 :::
 
+
+:::{.proof title="sketch"}
+There is a general statement (see Tohoku) for the spectral sequence of a composition of two functors between abelian functors where the first preserves injectives, you get such a spectral sequence.
+:::
