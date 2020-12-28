@@ -288,7 +288,7 @@ A sheaf of groups is a group object in the category $\Sh^\Set$.
 :::
 
 :::{.proof title="?"}
-$\ro{T}{U_\et} \ms \ro{G}{U_\et}$ as a torsor, so considering the two projections
+$\ro{T}{U_\et} \mapsvia{\phi} \ro{G}{U_\et}$ is an isomorphism of torsors, so considering the two projections
 \begin{tikzcd}
 U\cross_X U
  \ar[d, shift right=0.75ex, "\pi_1"'] 
@@ -300,4 +300,16 @@ U
 X 
 \end{tikzcd}
 we get an isomorphism $\pi_1*T \ms \pi_2^* T$ coming from the fact that we're pulling back along $U\to X$.
+Using the isomorphism above, we can view this as
+\begin{tikzcd}
+  \pi_1^*T 
+    \ar[r, "\sim"]
+    \ar[d, "\pi_1^* \phi"]
+& \pi_2^*T
+    \ar[d, "\pi_2^* \phi"]
+\\
+  \pi_1^* G 
+    \ar[r, "\sim"]
+& \pi_2^* G 
+\end{tikzcd}
 :::
