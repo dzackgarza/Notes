@@ -11,4 +11,9 @@ Recall that by a theorem of Milne, there will be a canonical isomorphisms when
 - $X$ is quasicompact,
 
 - Any finite subset of $X$ is contained in an affine.
+
+Note that this is true if $X$ is quasiprojective.
+How do you check this? 
+Slice by a hyperplane that misses all of your points -- unless you're over a finite field, in which case you may not have enough hyperplanes!
+This will still be true for quasiprojective varieties over a finite field, however.
 :::
