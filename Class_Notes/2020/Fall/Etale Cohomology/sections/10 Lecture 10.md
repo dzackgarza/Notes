@@ -77,7 +77,12 @@ Given a $G\dash$torsor $T$ that is fppf locally trivial, is it étale locally tr
 In general no, but yes if $G$ is smooth.
 :::
 
-:::{.example title="a non-smooth group scheme"}
-The kernel of Frobenius on $\AA^1$ or $\GG_a$, aka $\alpha_p$.
+:::{.example title="non-smooth group schemes"}
+\envlist
+
+- $\alpha_p$, the kernel of Frobenius on $\AA^2$ or $\GG_a$,
+- $\mu_p$ in characteristic $p$, representing $p$th roots of unity, the kernel of Frobenius on $\GG_m$,
+- The kernel of Frobenius on any positive dimensional affine group scheme.
+- $\mu_p \cross \GL_n$, etc.
 :::
 
