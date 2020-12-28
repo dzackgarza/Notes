@@ -21,4 +21,22 @@ X
 \end{tikzcd}
 That $U$ trivializes our torsor means that $\pi^* T = \pi^* G$ as a $G\dash$torsor, where $G$ acts on itself by left-multiplication.
 We have two different ways of pulling back, and identifications with $G$ in both, yielding
+\begin{tikzcd}
+\pi_1^* \pi^* T 
+  \ar[d]
+  \ar[r, "\sim"]
+& 
+\pi_2^* \pi^* T 
+  \ar[d]
+\\
+\pi_1^* \pi^* G
+  \ar[r, "\sim"]
+&  
+\pi_2^* \pi^* G
+\end{tikzcd}
+Both of the bottom objects are isomorphic to $\ro{G}{U\cross U}$.
+
+:::{.claim}
+The top horizontal map is descent data for $T$, and the bottom horizontal map is an automorphism of a $G\dash$torsor and thus is a section to $G$.
+:::
 :::
