@@ -229,7 +229,8 @@ where surjectivity of $\delta$ follows from the fact that $k=\bar k$ and thus ev
 :::
 
 :::{.example title="?"}
-Let $X_{/k}$ with $k=\bar k$ with $\ell$ invertible in $k$, then
+Let $X_{/k}$ with $k=\bar k$ with $\ell$ invertible in $k$, then (claim) $\ul \zlz \cong \mu_\ell$ given by sending a generator to some choice of a primitive $\ell$th root of unity.
+To be explicit, we have a representation $\ul \zlz \= \hom(\wait, \spec k[t] / \t(t-1) \cdots (t-\ell+1))$ and $\mu_\ell = \spec k[t] / t^\ell-1$.
 \[  
 H^1(X_\et, \ul\zlz) = 
 .\]
