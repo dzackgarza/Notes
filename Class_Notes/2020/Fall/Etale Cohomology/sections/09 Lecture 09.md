@@ -330,12 +330,14 @@ Check that if $T_1 \cong T_2$ as torsors, the corresponding cocycles differ by a
 
 :::
 
-:::{.proposition title=""}
+:::{.proposition title="Identification of $H^1$"}
 For any site $\tau$ and any sheaf $\mathcal{F}$, we have correspondences
 \[
 \Hc^1(\tau, \mathcal{F})
-\mapstofrom
-\correspond{\text{Locally trivial} \mathcal{F}\dash\text{torsors}}
-.\]
+&\mapstofrom
+\correspond{\text{Locally trivial} \mathcal{F}\dash\text{torsors}} \\
+&\ms H^1(\tau, \mathcal{F}) && \text{if $\mathcal{F}$ is abelian}
+,\]
+where the last line is derived functor cohomology.
 :::
 
