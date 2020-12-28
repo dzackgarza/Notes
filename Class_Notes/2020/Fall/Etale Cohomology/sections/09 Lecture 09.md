@@ -279,6 +279,25 @@ There is a bijection
 &\mapstofrom
 \Hc^1(U_{/X}, G)
 ,\]
-which makes sense for $G\in \Sh^\Grp(X_\et)$ and any covering family.
+which makes sense for $G\in \Sh^\Grp(X_\et)$[^Group_Object] and any covering family.
 I.e. looking at the formula for the differential in Čech cohomology, if you only go up to degree 1 you don't need to make any choices.
+
+[^Group_Object]: 
+A sheaf of groups is a group object in the category $\Sh^\Set$.
+
+:::
+
+:::{.proof title="?"}
+$\ro{T}{U_\et} \ms \ro{G}{U_\et}$ as a torsor, so considering the two projections
+\begin{tikzcd}
+U\cross_X U
+ \ar[d, shift right=0.75ex, "\pi_1"'] 
+ \ar[d, shift left=0.75ex, "\pi_2"]
+\\
+U
+  \ar[d]
+\\
+X 
+\end{tikzcd}
+we get an isomorphism $\pi_1*T \ms \pi_2^* T$ coming from the fact that we're pulling back along $U\to X$.
 :::
