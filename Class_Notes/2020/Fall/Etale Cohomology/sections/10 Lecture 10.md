@@ -394,4 +394,22 @@ These isomorphisms will not be Galois equivariant, and the $\zlnz$ showing up in
 
 ### Proof of Theorem
 
-Goal: we want to show that $H^{>1}(X_\et, \GG_m) = 0$.
+Goal: we want to show that $H^{>1}(X_\et, \GG_m) = 0$ for $X$ a smooth curve over $k=\bar k$.
+Three ingredients:
+
+1. The Leray spectral sequence,
+
+2. The divisor exact sequence,
+
+3. Brauer groups.
+
+
+## Pushforwards and the Leray Spectral Sequence
+
+Suppose $X\mapsvia{f} Y$ is a morphism of schemes, then we get a functor $f_* \Sh(X_\et) \to \Sh(Y_\et)$: given $\mathcal{F}\in Sh(X_\et)$, we have $f_* \mathcal{F}(U\to Y) \da \mathcal{F}(U\cross_Y X)$.
+This is left-exact and thus has right-derived functors $R^\wait f_*:\Sh^\Ab(X_\et) \to \Sh^\Ab(Y_\et)$.
+
+How to think about this:
+
+
+
