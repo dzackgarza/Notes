@@ -461,5 +461,16 @@ How to explicitly compute this: we can take an injective resolution $\mathcal{F}
 \[  
 R^i f_* \mathcal{F} \mathcal{H}^i(f_* \mathcal{I}^\wait)
 .\]
-$f_* \mathcal{I}$ is a complex of injectives, and we want $\mathcal{H}^{i+j}(g_* f_* \mathcal{I}^\wait)$.
+$f_* \mathcal{I}$ is a complex of injectives, and we want $\mathcal{H}^{i+j}(g_* f_* \mathcal{I}^\wait) = R^{i+j}(g\circ f)_* \mathcal{F}$, and the content here is that we don't have to take an additional injective resolution of $f_* \mathcal{I}$.
+Now take the spectral sequence of the filtered complex $f_* \mathcal{I}^\wait$ where the filtration is by the truncations $\tau_{\leq p}f_* \mathcal{I}^\wait$ where you replace the $p$th term with the kernel of the differential and zero beyond this point.
+An example of a differential is given by
+\[  
+\tau_{\leq p} f_* \mathcal{I}^\wait
+\to
+\tau_{\leq p+1} f_* \mathcal{I}^\wait
+\to
+\mathcal{H}^{p+1}(f_* \mathcal{I}^\wait) 
+\to 
+0
+.\]
 :::
