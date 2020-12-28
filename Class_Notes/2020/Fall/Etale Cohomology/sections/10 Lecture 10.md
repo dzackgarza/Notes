@@ -298,4 +298,31 @@ noting that $\OO_X(X)\units$ are the global sections of $\GG_m$, i.e. invertible
 
 The first two cases we've done, $i>1$ is the hard case.
 
+:::{.corollary title="?"}
+For $X$ a smooth proper connected curve, $k=\bar k$, and $\ell \neq \ch(k)$ is prime, 
+\[  
+H^i(X_\et, \ul \zlnz)
+=
+\begin{cases}
+\zlnz & i = 0 \\
+\Pic(X)[\ell^n] = \qty{\zlnz}^{2g} & i=1 \\
+\zlz & i=2 \\
+0 & i>2
+\end{cases}
+.\]
+:::
+
+:::{.proof title="of corollary"}
+We'll use some theory of abelian varieties: $\Pic^0(X) = \Jac(X)$, and we have a SES
+\[  
+0 \to \Jac(X) \to \Pic(X) \mapsvia{\deg} \ZZ \to 0
+,\]
+where we identify the Néron-Severi group as $\ZZ$.[^ref_hartshorne_1]
+
+[^ref_hartshorne_1]: 
+See Hartshorne Ch. 4, or anything that discusses cohomology of curves.
+
+:::
+
+
 
