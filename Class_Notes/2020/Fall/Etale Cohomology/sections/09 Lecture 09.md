@@ -197,7 +197,11 @@ $\GG_m \da (U\mapsto \OO_U(U\units))$ sending $U$ to the invertible functions of
 Then $\GG_m = \hom(\wait, \spec k[t, t^{-1}])$ is representable.
 E.g. a line bundle with the zero section deleted is a $\GG_m\dash$torsor:
 \[  
-\mathcal{L} \
-.\]
+\mathcal{L} \leadsto \spec_X \bigoplus_{n\in \ZZ} \mathcal{L}^{\tensor n}
+,\]
+where we take the relative spec.
+Looking at fibers over a point in $X$, you get $k[t, t^{-1}]$, so these look like $\GG_m$.
+How does $\GG_m$ act on this?
+$t\actson \mathcal{L}^{\tensor n}$ by $t^n$.
 :::
 
