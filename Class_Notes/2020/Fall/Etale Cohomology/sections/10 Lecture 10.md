@@ -161,5 +161,6 @@ We have a SES of étale sheaves, the **Kummer sequence**,
 \[  
 1 \to \mu_\ell \to \GG_m \mapsvia{z\mapsto z^p} \GG_m \to 1
 .\]
+This is exact in the étale topology since adjoining an $\ell$th power of any function gives an étale cover.
 :::
 
