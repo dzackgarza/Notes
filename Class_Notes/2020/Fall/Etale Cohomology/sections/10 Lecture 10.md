@@ -115,9 +115,7 @@ U
   \ar[urr, bend right, "\exists \et"']
 & &
 \end{tikzcd}
-Here "slicing" means finding such a $U$.
-
-
+Here "slicing" means finding such a $U$, and this can be done using the structure theorem for smooth morphisms.
 :::
 
 :::{.example title="non-smooth group schemes"}
@@ -127,5 +125,26 @@ Here "slicing" means finding such a $U$.
 - $\mu_p$ in characteristic $p$, representing $p$th roots of unity, the kernel of Frobenius on $\GG_m$,
 - The kernel of Frobenius on any positive dimensional affine group scheme.
 - $\mu_p \cross \GL_n$, etc.
+:::
+
+### What Hilbert 90 Means
+
+:::{.example title="?"}
+Let $X = \spec k, n=1$, so we're looking at $H^\wait(\spec k, \GG_m)$.
+\[  
+H^1 \qty{ \qty{ \spec k}_\zar, \GG_m} 
+&= 0 \\
+&= 
+H^1 \qty{ \qty{ \spec k}_\et, \GG_m}  \\
+&=
+H^1(\Gal(k^s / k), \bar k \units)
+.\]
+The first comes from the fact that we're looking at line bundles of spec of a field, i.e. a point, which are all trivial.
+The last line comes from our previous discussion of the isomorphism between étale cohomology of fields and Galois cohomology.
+Etymology: the fact that this cohomology is zero is usually what's called **Hilbert 90**.[^why_90]
+
+[^why_90]: 
+This is called "90" since Hilbert numbered his theorems in at least one of his books.
+
 :::
 
