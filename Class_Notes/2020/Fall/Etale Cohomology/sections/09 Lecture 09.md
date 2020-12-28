@@ -237,3 +237,21 @@ If $T$ is split by some cover, we say $T$ is **locally trivial**.
 Suppose $T$ is representable, so $T\to X$.
 Then for the étale or fppf sites, then $T$ is split by itself, using the fact that base changing $T$ to itself yields the trivial torsor.
 :::
+
+:::{.example title="?"}
+Suppose $G$ is a finite étale group scheme over $X$, and $T$ is a locally trivial $G\dash$torsor split by some $U$.
+
+:::{.claim}
+\envlist
+1. $T$ is representable
+
+2. $T$ is split by $T$
+:::
+
+:::{.proof title="$1\implies 2$"}
+
+:::
+
+
+
+:::
