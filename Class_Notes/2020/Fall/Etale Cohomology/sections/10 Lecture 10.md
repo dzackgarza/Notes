@@ -199,7 +199,7 @@ We can also compute $H^1(X_\et, \mu_\ell)$, since our diagram reduces to
 \begin{tikzcd}
 &
 &
-0 \ar[dll]
+0 \ar[dll, hook]
 \\
 \mu_\ell(k)
   \ar[r]
@@ -208,12 +208,12 @@ k\units
   \ar[r, "z\mapsto z^\ell"]
 &
 k\units
-  \ar[dll, "\delta"]
+  \ar[dll, "\delta"', twoheadrightarrow]
 \\
 {\color{red} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
-\Pic(X)
+\Pic(X)[\ell]
   \ar[r, "{[\ell]}"]
 &
 \Pic(X)
@@ -225,6 +225,12 @@ H^2(X_\et, \mu_\ell)
 \cdots
 &
 \end{tikzcd}
-where surjectivity of $\delta$ follows from the fact that $k=\bar k$ and thus every element has an $\ell$th root.
+where surjectivity of $\delta$ follows from the fact that $k=\bar k$ and thus every element has an $\ell$th root, making $H^1$ the kernel of $[\ell]$.
 :::
 
+:::{.example title="?"}
+Let $X_{/k}$ with $k=\bar k$ with $\ell$ invertible in $k$, then
+\[  
+H^1(X_\et, \ul\zlz) = 
+.\]
+:::
