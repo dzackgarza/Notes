@@ -230,8 +230,19 @@ where surjectivity of $\delta$ follows from the fact that $k=\bar k$ and thus ev
 
 :::{.example title="?"}
 Let $X_{/k}$ with $k=\bar k$ with $\ell$ invertible in $k$, then (claim) $\ul \zlz \cong \mu_\ell$ given by sending a generator to some choice of a primitive $\ell$th root of unity.
-To be explicit, we have a representation $\ul \zlz \= \hom(\wait, \spec k[t] / \t(t-1) \cdots (t-\ell+1))$ and $\mu_\ell = \spec k[t] / t^\ell-1$.
+To be explicit, we have a representation 
+$\ul \zlz = \hom \qty{ \wait, \spec k[t] / t(t-1) \cdots (t-\ell+1) }$
+and $\mu_\ell = \spec k[t] / t^\ell-1$.
+These are both disjoint unions of points, and hence schemes of dimension zero since $\ell$ is invertible in the base and the Chinese Remainder Theorem, so one can write down the isomorphism explicitly between the schemes and hence the functors they represent.
+
+:::{.corollary title="?"}
+If $\mu_\ell \subseteq k$, then 
 \[  
-H^1(X_\et, \ul\zlz) = 
+H^i(X_\et, \ul\zlz) = 
+H^i(X_\et, \mu_\ell)
 .\]
+:::
+Since the isomorphism depends on the choice of a primitive root, this will not be Galois equivariant, which will come up when we talk about Galois actions on étale cohomology.
+This already happens for $H^0$, since $G\acts\zlz$ trivially but not on $\mu_\ell$.
+
 :::
