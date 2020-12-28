@@ -26,11 +26,15 @@ Recall that we had a theorem last time showing that the étale cohomology of qua
 From this we got a long exact sequence:
 
 \begin{tikzcd}
- & & 
+& \cdots
+    \ar[r]
+& H^{i}(X, \OO_X) 
+    \ar[dll, "\delta"]
 \\
-  H^{i}(X, \OO_X)
-& H^i(X_\et, \ul{\FF_p})
+  H^i(X_\et, \ul{\FF_p})
+    \ar[r]
 & H^i(X, \OO_X)
+    \ar[r, "f"]
 & H^i(X, \OO_X)
 \end{tikzcd}
 
