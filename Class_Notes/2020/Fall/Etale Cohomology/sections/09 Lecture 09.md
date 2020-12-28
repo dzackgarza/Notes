@@ -304,12 +304,15 @@ Using the isomorphism above, we can view this as
 \begin{tikzcd}
   \pi_1^*T 
     \ar[r, "\sim"]
-    \ar[d, "\pi_1^* \phi"]
+    \ar[d, "\pi_1^* \phi"']
 & \pi_2^*T
     \ar[d, "\pi_2^* \phi"]
 \\
   \pi_1^* G 
-    \ar[r, "\sim"]
+    \ar[r, "g, \sim"]
 & \pi_2^* G 
 \end{tikzcd}
+I.e., we can view the descent data pulled back from $X$ as trivial torsors.
+Moreover, $g\in \Gamma(U\cross_X U, G)$.
 :::
+
