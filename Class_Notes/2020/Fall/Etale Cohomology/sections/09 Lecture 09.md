@@ -102,7 +102,7 @@ This data is closely related to e.g. crystalline cohomology.
 We'll try to compute $H(\qty{\spec k}_\et, \mathcal{F})$, the cohomology of the étale site of a field, using Čech cohomology.
 We had an equivalence of categories
 \[  
-\Sh^\Ab(\spec k)_\et \mapbackforth^{\iota} \ts{\text{Discrete $G\dash$modules}}
+\Sh^\Ab(\spec k)_\et \mapbackforth^{\iota}_{\pi} \ts{\text{Discrete $G\dash$modules}}
 ,\]
 where $G = \Gal(\bar k / k)$ is the absolute Galois group of $k$.
 What were the functors?
