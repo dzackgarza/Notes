@@ -227,3 +227,13 @@ This uses that $\GL_n$ is smooth.
 :::
 
 :::
+
+:::{.definition title="?"}
+A $G\dash$torsor $T$ is **split** by a cover $U\to X$ iff $\ro{T}_{U_\et} \cong \ro{G}_{U_\et}$ as a torsor.
+If $T$ is split by some cover, we say $T$ is **locally trivial**.
+:::
+
+:::{.remark}
+Suppose $T$ is representable, so $T\to X$.
+Then for the étale or fppf sites, then $T$ is split by itself, using the fact that base changing $T$ to itself yields the trivial torsor.
+:::
