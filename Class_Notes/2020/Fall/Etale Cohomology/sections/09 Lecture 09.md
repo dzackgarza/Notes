@@ -346,3 +346,20 @@ Omitted, see Milne.
 Note that we know this for quasiprojective things, and the first isomorphism is more or less what we've just shown.
 :::
 
+:::{.corollary}
+So torsors split by a cover $U$ are the same as Čech cohomology, so torsors split by some cover (i.e. locally trivial) are the same as Čech cohomology of $X_\et$:
+\[  
+\correspond{\text{Locally trivial $G\dash$torsors}}
+&\mapstofrom
+\Hc^1(X_\et, G)
+.\]
+:::
+
+Why?
+Take the direct limit of both sides.
+Note that Čech $H^1$ always computes derived $H^1$.
+
+:::{.theorem title="Grothendieck's Generalization of Hilbert 90"}
+
+:::
+
