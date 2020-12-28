@@ -456,5 +456,5 @@ H^i(Y, R^j f_* \mathcal{F} ) \abuts H^{i+j}(X, \mathcal{F})
 
 
 :::{.proof title="sketch"}
-There is a general statement (see Tohoku) for the spectral sequence of a composition of two functors between abelian functors where the first preserves injectives, you get such a spectral sequence.
+There is a general statement (see Tohoku): given two functors between abelian functors where the first preserves injectives, you get such a spectral sequence.
 :::
