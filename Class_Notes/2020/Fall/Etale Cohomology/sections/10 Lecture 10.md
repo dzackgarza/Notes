@@ -418,13 +418,24 @@ This is not quite true, and the obstruction is called **the base change property
 What's true in general is that $R^i f_* \mathcal{F}$ is the sheafification of the presheaf $V\to H^i(f^{-1}(V), \mathcal{F})$, which is not quite the cohomology of the fibers since sheafification is somewhat brutal.
 
 
-:::{.proposition title=""}
+:::{.proposition title="Derived pushforwards for finite morphisms"}
 If $f$ is a finite morphism (e.g. a closed immersion) then $R^{>0} f_* = 0$.
 :::
 
-:::{.exercise title="Proof"}
+:::{.exercise title="Proof, must-do!"}
 Prove this.
 The claim is that $f_*$ is right-exact, which in this case shows it is exact.
 Check on stalks.
-Compute the stalks of this pushforward along a finite morphism
+Compute the stalk of $f_* \mathcal{F}$ at $\bar y\in Y$ is given by $\bigoplus_{\bar x\in f^{-1}(\bar y)}\mathcal{F}_{\bar x}$ for $f$ a finite morphism (not necessarily unramified).
 :::
+
+:::{.proposition title="technical"}
+$f_*$ preserves injectives.
+:::
+
+:::{.exercise title="proof"}
+Prove this using the following:
+this is true for any functor with an exact left adjoint, which here is $f^*$ and is exact since filtered colimits and sheafification are both exact, or alternatively you can check on stalks, since the stalks of $f^{-1}$ are the stalks of the original functor.
+:::
+
+
