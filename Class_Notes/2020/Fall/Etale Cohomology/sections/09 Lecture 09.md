@@ -65,7 +65,12 @@ H^{1}(X, \OO_X)
 \end{tikzcd}
 
 :::{.remark}
-$H^1(X, \OO_X)$ is not finitely generated in general, e.g. take $X \da \AA^1$, then $\cok(t\mapsto t^p - t)$ as a map $k[t] \to k[t]$ is generally finite dimensional.
+$H^1(X, \OO_X)$ is not finitely generated in general, e.g. take $X \da \AA^1$, then $\cok(t\mapsto t^p - t)$ as a map $k[t] \to k[t]$ is generally finite dimensional as a $k\dash$vector space.
+So in characteristic $p$, cohomology with $\FF_p$ coefficients is ill-behaved: a nice cohomology theory would assign to every scheme a complex of finite dimensional vector spaces.
+:::
+
+:::{.remark}
+If $X$ is proper, $H^i(X_\et, \FF_p)$ is finite dimensional.
 :::
 
 
