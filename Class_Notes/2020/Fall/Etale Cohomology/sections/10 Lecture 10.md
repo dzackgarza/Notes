@@ -412,4 +412,19 @@ This is left-exact and thus has right-derived functors $R^\wait f_*:\Sh^\Ab(X_\e
 How to think about this:
 
 
+![Cohomology of the fibers: but not quite!](figures/image_2020-12-28-18-24-08.png){width=350px}
 
+This is not quite true, and the obstruction is called **the base change property**, which we'll see later in the course.
+What's true in general is that $R^i f_* \mathcal{F}$ is the sheafification of the presheaf $V\to H^i(f^{-1}(V), \mathcal{F})$, which is not quite the cohomology of the fibers since sheafification is somewhat brutal.
+
+
+:::{.proposition title=""}
+If $f$ is a finite morphism (e.g. a closed immersion) then $R^{>0} f_* = 0$.
+:::
+
+:::{.exercise title="Proof"}
+Prove this.
+The claim is that $f_*$ is right-exact, which in this case shows it is exact.
+Check on stalks.
+Compute the stalks of this pushforward along a finite morphism
+:::
