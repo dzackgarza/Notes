@@ -197,11 +197,19 @@ $\GG_m \da (U\mapsto \OO_U(U\units))$ sending $U$ to the invertible functions of
 Then $\GG_m = \hom(\wait, \spec k[t, t^{-1}])$ is representable.
 E.g. a line bundle with the zero section deleted is a $\GG_m\dash$torsor:
 \[  
-\mathcal{L} \leadsto \spec_X \bigoplus_{n\in \ZZ} \mathcal{L}^{\tensor n}
+\mathcal{L} \leadsto \spec_X \bigoplus_{n\in \ZZ} \mathcal{L}^{\tensor_{\OO_X} n}
 ,\]
 where we take the relative spec.
 Looking at fibers over a point in $X$, you get $k[t, t^{-1}]$, so these look like $\GG_m$.
 How does $\GG_m$ act on this?
 $t\actson \mathcal{L}^{\tensor n}$ by $t^n$.
+So the functor this represents is a $\GG_m\dash$torsor.
+We'll see later that there's a natural bijection between $\GG_m\dash$torsors and line bundles, which becomes an equivalence of categories if you only allow isomorphisms of line bundles.
 :::
 
+:::{.example title="?"}
+For $G \da \ul \GL_n$, the claim is that $G\dash$torsors are in natural bijection with vector bundles of rank $n$.
+Note that they are locally trivial, which is not obvious.
+To get this, take $\mathcal{E}\leadsto \mathrm{Fr}(\mathcal{E})$, the frame bundle over $\mathcal{E}$.
+This can be realized as the sheaf $\mathcal{E}\leadsto \mathrm{Isom}_{X_\et}(\OO^{\oplus n}, \mathcal{E})$, i.e. its value on a cover $U$ is the set of isomorphisms over $U$ of the trivial vector bundle $\mathcal{E}$.
+:::
