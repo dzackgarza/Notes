@@ -195,5 +195,9 @@ If $X$ is a smooth curve, this is a Galois extension of the function field which
 :::{.example title="?"}
 $\GG_m \da (U\mapsto \OO_U(U\units))$ sending $U$ to the invertible functions of $U$.
 Then $\GG_m = \hom(\wait, \spec k[t, t^{-1}])$ is representable.
+E.g. a line bundle with the zero section deleted is a $\GG_m\dash$torsor:
+\[  
+\mathcal{L} \
+.\]
 :::
 
