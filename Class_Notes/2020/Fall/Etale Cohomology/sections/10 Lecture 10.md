@@ -243,6 +243,23 @@ H^i(X_\et, \mu_\ell)
 .\]
 :::
 Since the isomorphism depends on the choice of a primitive root, this will not be Galois equivariant, which will come up when we talk about Galois actions on étale cohomology.
-This already happens for $H^0$, since $G\acts\zlz$ trivially but not on $\mu_\ell$.
+This already happens for $H^0$, since $G\actson\zlz$ trivially but not on $\mu_\ell$.
 
 :::
+
+### Geometric Interpretations
+
+Let $X$ be an affine scheme, we now know $H^1(X_\et, \FF_p) = \cok(\OO_X \mapsvia{x^p - x} \OO_x)$, the Artin-Schreier map, and these are $\FF_p\dash$torsors.
+We also know $H^1(X_\et, \zlz)$ in terms of the LES if $k = \bar k$ and $\ch(k) = p$, and this is a $\zlz\dash$torsor.
+Being torsors here geometrically means they're covering spaces with those groups as Galois groups.
+
+:::{.question}
+How does one write down these torsors/covering spaces?
+:::
+
+:::{.example title="?"}
+Given $[Y] \in H^1(X_\et, \FF_p) = \cok(\OO_X\to \OO_X)$, where we write $[Y]$ to denote thinking of the torsor as some geometric object, how to we write down the covering space?
+Use Artin-Schreier, we can write $Y = \ts{y^p - y =  = a}$ for some $a\in \OO_X$.
+:::
+
+
