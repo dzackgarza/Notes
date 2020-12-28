@@ -275,7 +275,7 @@ Given a torsor for a finite group scheme, it's represented by a $G\dash$cover wh
 :::{.proposition title="Interpretation of $H^1$"}
 There is a bijection
 \[  
-\correspond{G\dash\text{torsors split by} \\ U\to X}
+\correspond{G\dash\text{torsors split by} \\ U\to X} / \sim
 &\mapstofrom
 \Hc^1(U_{/X}, G)
 ,\]
@@ -313,11 +313,19 @@ Using the isomorphism above, we can view this as
 & \pi_2^* G 
 \end{tikzcd}
 I.e., we can view the descent data pulled back from $X$ as trivial torsors.
-Moreover, $g\in \Gamma(U\cross_X U, G)$.
+Moreover, $g\in \Gamma(U\cross_X U, G) \da \Cc^1(U_{/X}, G)$.
 
 :::{.exercise title="?"}
 Check that an automorphism of a trivial $G\dash$torsor is equivalent to an element of $G$.
 Think about the case of a $G\dash$torsor for a point.
+:::
+
+:::{.claim}
+The cocycle condition implies that $g$ is in the kernel of the Čech differential.
+:::
+
+:::{.exercise title="?"}
+Check that if $T_1 \cong T_2$ as torsors, the corresponding cocycles differ by a coboundary. 
 :::
 
 :::
