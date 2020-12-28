@@ -192,3 +192,7 @@ Then e.g. a $G\dash$torsor is a finite étale cover with Galois group $G$.
 If $X$ is a smooth curve, this is a Galois extension of the function field which is everywhere unramified.
 :::
 
+:::{.example title="?"}
+$\GG_m \da (U\mapsto \)
+:::
+
