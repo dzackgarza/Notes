@@ -275,8 +275,8 @@ Given a torsor for a finite group scheme, it's represented by a $G\dash$cover wh
 :::{.proposition title="Interpretation of $H^1$"}
 There is a bijection
 \[  
-\correspond{?} 
-\maptofrom
-\correspond{?}
+\correspond{G\dash\text{torsors split by} \\ U\to X}
+&\mapstofrom
+\Hc^1(U_{/X}, G)
 .\]
 :::
