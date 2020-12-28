@@ -434,8 +434,15 @@ $f_*$ preserves injectives.
 :::
 
 :::{.exercise title="proof"}
-Prove this using the following:
+Prove this!
+You can do this by showing the following fact from category theory:
 this is true for any functor with an exact left adjoint, which here is $f^*$ and is exact since filtered colimits and sheafification are both exact, or alternatively you can check on stalks, since the stalks of $f^{-1}$ are the stalks of the original functor.
 :::
 
+:::{.corollary title="The Leray Spectral Sequence"}
+Suppose $X \mapsvia{f} Y$ and $Y \mapsvia{g} Z$ are morphisms of schemes, then there is a spectral sequence
+\[  
+R^i g_* R^j f_* \mathcal{F} \abuts R^{i+j}(g\circ f)_* \mathcal{F}
+.\]
+:::
 
