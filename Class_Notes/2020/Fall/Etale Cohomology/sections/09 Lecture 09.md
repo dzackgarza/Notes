@@ -309,10 +309,16 @@ Using the isomorphism above, we can view this as
     \ar[d, "\pi_2^* \phi"]
 \\
   \pi_1^* G 
-    \ar[r, "g, \sim"]
+    \ar[r, "{g, \sim}"]
 & \pi_2^* G 
 \end{tikzcd}
 I.e., we can view the descent data pulled back from $X$ as trivial torsors.
 Moreover, $g\in \Gamma(U\cross_X U, G)$.
+
+:::{.exercise title="?"}
+Check that an automorphism of a trivial $G\dash$torsor is equivalent to an element of $G$.
+Think about the case of a $G\dash$torsor for a point.
+:::
+
 :::
 
