@@ -88,11 +88,36 @@ T\cross_X T
   \ar[d]
 \\
 T 
-  \ar[r]
-  \ar[u, bend right, "\exists"]
+  \ar[r, "f"]
+  \ar[u, bend right, "\exists"']
 & X 
 \end{tikzcd}
 The torsor $T\cross_X T\to T$ is trivial since there exists the indicated section given by the diagonal map.
+Another way to see this is that $T\cross T\cong T\cross G$ by the $G\dash$action map, which is equivalent to triviality here.
+Here $f$ is smooth map since $G$ itself was smooth and the fibers of $T$ are isomorphic to the fibers of $G$.
+We can thus find some $U$ such that
+\begin{tikzcd}
+&
+T\cross_X T 
+  \ar[d]
+  \ar[r]
+& T 
+  \ar[d]
+\\
+&
+T 
+  \ar[r, "f"]
+  \ar[u, bend right, "\exists"']
+& X 
+\\
+U 
+  \ar[ur, hook, "\text{closed}"]
+  \ar[urr, bend right, "\exists \et"']
+& &
+\end{tikzcd}
+Here "slicing" means finding such a $U$.
+
+
 :::
 
 :::{.example title="non-smooth group schemes"}
