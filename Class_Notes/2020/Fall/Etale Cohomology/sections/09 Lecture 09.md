@@ -249,9 +249,17 @@ Suppose $G$ is a finite étale group scheme over $X$, and $T$ is a locally trivi
 :::
 
 :::{.proof title="$1\implies 2$"}
-
+$T\times T$ is trivial, so we need to verify that $T \covers X$.
+Base changing to $T\times_X U \to U$ is a cover since it's finite étale, since it's isomorphic to $G\times U$ by the definition of local triviality.
 :::
 
+:::{.exercise title="?"}
+Check that base-changing along a cover yields a cover, following from the axioms of a site.
+:::
+
+:::{.proof title="of 1"}
+Observe that $\ro{T}{U_\et}$ is representable, since it's isomorphic to $\ro{G}{U_\et}$ as a scheme and $G$ was a finite étale group scheme.
+:::
 
 
 :::
