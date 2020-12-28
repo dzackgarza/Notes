@@ -1,3 +1,8 @@
+% {top}{bottom}{symbol}
+\newcommand\stacksymbol[3]{%
+  \mathrel{\stackunder[2pt]{\stackon[4pt]{$#3$}{$\scriptscriptstyle#1$}}{%
+  $\scriptscriptstyle#2$}}}
+
 \newcommand{\ext}{\operatorname{Ext}}
 \newcommand{\Ext}{\operatorname{Ext}}
 \def\Endo{\operatorname{End}}
@@ -225,6 +230,7 @@
 \newcommand{\mapstovia}[1]{\xmapsto{#1}}
 \newcommand{\from}[0]{\leftarrow}
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
+\DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
@@ -401,10 +407,6 @@
 
 \newcommand{\colim}{\operatornamewithlimits{\underset{\longrightarrow}{colim}}}
 
-% {top}{bottom}{symbol}
-\newcommand\stacksymbol[3]{%
-  \mathrel{\stackunder[2pt]{\stackon[4pt]{$#3$}{$\scriptscriptstyle#1$}}{%
-  $\scriptscriptstyle#2$}}}
 
 \newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
