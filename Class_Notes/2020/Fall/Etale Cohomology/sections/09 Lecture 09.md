@@ -121,6 +121,22 @@ Take the Čech complex
 \[  
 \Cc(U/\spec k, \mathcal{F}) \da \qty{\mathcal{F}(U) \to \mathcal{F}(U\cross U) \to \cdots}
 .\]
+Assume $L_{/k}$ is Galois with Galois group $G(L_{/k})$.
+We can rewrite this complex by identifying $U\cross U = G(L_{/k}) \cross \spec L$, yielding
+\[  
+\Cc(U/\spec k, \mathcal{F}) \da \qty{\mathcal{F}(U) \to \mathcal{F}(G(L_{/k}) \cross U) \to \mathcal{F}\qty{G(L_{/k})^2 \cross U}
+\to \cdots
+\cdots}
+.\]
+
+
+:::{.exercise title="?"}
+Show that this complex is the standard complex computing Galois cohomology $H^i( G(L_{/k}), \mathcal{F}(U) )$.
+The terms are the same, so just identify the differentials.
+One can also take this as the definition of Galois cohomology.
+:::
+
+
 :::
 
 
