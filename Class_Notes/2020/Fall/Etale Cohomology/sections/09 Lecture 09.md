@@ -170,13 +170,15 @@ For $i=1$, we'll use an interpretation in terms of torsors, which are supposed t
 Typical example: given a space $X$, a Galois covering space will be a torsor for the Galois group: $G$ acts on $X$ and simply transitively on every fiber.
 
 :::{.definition title="$G\dash$Torsors"}
-Idea: for $G\in\Sh^{\Grp}(X_\et)$ a sheaf of (not necessarily abelian) groups, a **$G\dash$torsor** is a sheaf $\mathcal{F}\in \Sh^\Set(X_\et)$ with a $G\dash$action such that $G$ acts on fibers simply and transitively.
+\envlist
 
-Actual definition: a **torsor** is a sheaf $T\in \Sh^\Set(X)$ with an action $G\cross T \mapsvia{a} T$ (so $G(U)$ acts on $T(U)$ for every $U\in X_\et$) such that the following map is an isomorphism:
+- Idea: for $G\in\Sh^{\Grp}(X_\et)$ a sheaf of (not necessarily abelian) groups, a **$G\dash$torsor** is a sheaf $\mathcal{F}\in \Sh^\Set(X_\et)$ with a $G\dash$action such that $G$ acts on fibers simply and transitively.
+
+- Actual definition: a **torsor** is a sheaf $T\in \Sh^\Set(X)$ with an action $G\cross T \mapsvia{a} T$ (so $G(U)$ acts on $T(U)$ for every $U\in X_\et$) such that the following map is an isomorphism:
 \[  
 G\cross T \mapsvia{(a, \pi_2)} T\cross T
 ,\]
-given by crossing the action with the projection.
+  given by crossing the action with the projection.
 :::
 
 :::{.remark}
