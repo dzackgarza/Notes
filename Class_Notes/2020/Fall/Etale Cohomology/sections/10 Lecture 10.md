@@ -162,5 +162,29 @@ We have a SES of étale sheaves, the **Kummer sequence**,
 1 \to \mu_\ell \to \GG_m \mapsvia{z\mapsto z^p} \GG_m \to 1
 .\]
 This is exact in the étale topology since adjoining an $\ell$th power of any function gives an étale cover.
+We get a LES in cohomology
+\begin{tikzcd}
+&
+&
+0 \ar[ddl]
+\\
+H^0(X_\et, \mu_\ell)
+  \ar[r]
+&
+H^0(X_\et, \GG_m)
+  \ar[r, "z\mapsto z^\ell"]
+&
+H^0(X_\et, \GG_m)
+  \ar[dll]
+\\
+A
+  \ar[r]
+&
+B
+  \ar[r]
+&
+C
+\end{tikzcd}
+We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$.
 :::
 
