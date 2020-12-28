@@ -280,6 +280,22 @@ In general, for $\Pic(X) \neq 0$, the Picard group plays a crucial role.
 
 ## Computing the Cohomology of Curves
 
-> This is one of Daniel's favorite topics in the entire course! \coloremoji{☺️ }
+> This is one of Daniel's favorite topics in the entire course!
+
+:::{.theorem title="?"}
+Let $X_{/k}$ be a smooth curve over $k=\bar k$, then
+\[  
+H^i(X_\et, \GG_m) 
+=
+\begin{cases}
+\OO_X(X)\units & i = 0\\
+\Pic(X) & i=1 \\
+0 & \text{else},
+\end{cases}
+\]
+noting that $\OO_X(X)\units$ are the global sections of $\GG_m$, i.e. invertible functions on $X$.
+:::
+
+The first two cases we've done, $i>1$ is the hard case.
 
 
