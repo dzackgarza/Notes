@@ -278,5 +278,7 @@ There is a bijection
 \correspond{G\dash\text{torsors split by} \\ U\to X}
 &\mapstofrom
 \Hc^1(U_{/X}, G)
-.\]
+,\]
+which makes sense for $G\in \Sh^\Grp(X_\et)$ and any covering family.
+I.e. looking at the formula for the differential in Čech cohomology, if you only go up to degree 1 you don't need to make any choices.
 :::
