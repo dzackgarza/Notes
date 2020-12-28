@@ -166,7 +166,7 @@ We get a LES in cohomology
 \begin{tikzcd}
 &
 &
-0 \ar[ddl]
+0 \ar[dll]
 \\
 H^0(X_\et, \mu_\ell)
   \ar[r]
@@ -177,14 +177,21 @@ H^0(X_\et, \GG_m)
 H^0(X_\et, \GG_m)
   \ar[dll]
 \\
-A
+{\color{red} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
-B
+\Pic(X)
+  \ar[r, "{[\ell]}"]
+&
+\Pic(X)
+  \ar[dll]
+\\
+H^2(X_\et, \mu_\ell)
   \ar[r]
 &
-C
+\cdots
+&
 \end{tikzcd}
-We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$.
+We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$, and the red term is what we'd like to compute.
 :::
 
