@@ -47,7 +47,7 @@ For $X$ affine, $H^{>0}(X, \OO_X) = 0$, which in facts holds for any quasicohere
 So we get an exact sequence
 
 \begin{tikzcd}
-H^{i-1}(X, \OO_X) 
+H^{1}(X, \OO_X) 
     \ar[r]
 & 0
 & 
@@ -64,6 +64,9 @@ H^{i-1}(X, \OO_X)
     \ar[ull]
 \end{tikzcd}
 
+:::{.remark}
+$H^1(X, \OO_X)$ is not finitely generated in general, e.g. take $X \da \AA^1$, then $\cok(t\mapsto t^p - t)$ as a map $k[t] \to k[t]$ is generally finite dimensional.
+:::
 
 
 
