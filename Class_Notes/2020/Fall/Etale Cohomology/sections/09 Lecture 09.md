@@ -109,6 +109,13 @@ What were the functors?
 Given a sheaf, you want to evaluate it on $k^s$ (the separable closure), but this doesn't make sense since it's not an object on the étale site due to not being finitely presented.
 So you choose a separable closure, look at all intermediate extensions, and take the direct limit of evaluating the sheaf on those extensions.
 Going the other way, you can say what the value of a discrete $G\dash$module is on a finite extension $L/k$ by taking its Galois fixed points: the fixed points of $\Gal(\bar L/L)$.
+
+:::{.corollary title="?"}
+\[  
+H^i\qty{\qty{ \spec k}_\et, \mathcal{F}} \ms H^i(G, \iota \mathcal{F})
+.\]
+:::
+Recall that this is because derived functor cohomology only depends on the equivalence class of the ambient category.
 :::
 
 
