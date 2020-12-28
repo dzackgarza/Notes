@@ -70,7 +70,14 @@ So in characteristic $p$, cohomology with $\FF_p$ coefficients is ill-behaved: a
 :::
 
 :::{.remark}
+An aside: $\GG_a$ is the representing object for $\OO_X^\et$.
+:::
+
+:::{.remark}
 If $X$ is proper, $H^i(X_\et, \FF_p)$ is finite dimensional.
+Why?
+It follows from the exact sequence: by proper pushforward for coherent cohomology, the terms we're interested in are sandwiched between finite dimensional objects.
+However, these groups still won't have the expected dimension.
 :::
 
 
