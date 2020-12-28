@@ -374,3 +374,16 @@ The following is a bijection:
 The content of this theorem: if you're étale locally trivial, then you're also Zariski locally trivial.
 :::
 
+:::{.proof title="?"}
+You need the fact that the locally split torsors are the same, although it's true that any torsor will be locally split.
+
+:::{.claim}
+A locally split $\ul GL_n\dash$torsor is the same as fppf descent data for a vector bundle.
+:::
+
+Using fppf descent for vector bundles yields the theorem.
+
+> To be continued!
+
+:::
+
