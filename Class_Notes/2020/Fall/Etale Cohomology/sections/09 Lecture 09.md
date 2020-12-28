@@ -77,8 +77,31 @@ An aside: $\GG_a$ is the representing object for $\OO_X^\et$.
 If $X$ is proper, $H^i(X_\et, \FF_p)$ is finite dimensional.
 Why?
 It follows from the exact sequence: by proper pushforward for coherent cohomology, the terms we're interested in are sandwiched between finite dimensional objects.
-However, these groups still won't have the expected dimension.
 :::
+
+:::{.example title="?"}
+However, these groups still won't have the expected dimension.
+For $X \da E_{/k}$ where $k=\bar k, \ch(k) = p$, we have
+\[  
+H^1(E, \FF_p) = 
+\begin{cases}
+\FF_p & \text{if $E$ is ordinary} \\
+0 & \text{if $E$ is supersingular}.
+\end{cases}
+\]
+This follows from the LES, since supersingularity is in terms of how Frobenius acts on the groups appearing.
+This is not what you'd expect: $E$ is a torus, so you'd expect $\dim H^1 = 2$.
+:::
+
+:::{.remark}
+So this cohomology don't form a "good" cohomology theory in the sense that they won't prove the Weil conjectures or behave like the usual cohomology in characteristic zero, but can still be interesting and useful.
+This data is closely related to e.g. crystalline cohomology.
+:::
+
+:::{.example title="?"}
+We'll try to compute $H(\qty{\spec k}_\et, \mathcal{F})$, the cohomology of the étale site of a field, using Čech cohomology.
+:::
+
 
 
 
