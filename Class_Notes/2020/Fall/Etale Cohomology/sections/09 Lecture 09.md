@@ -181,6 +181,7 @@ given by crossing the action with the projection.
 
 :::{.remark}
 This says that $T\cross T \ms G\cross T$, and pulling back to $T$ yields a "trivial torsor", where e.g. $G$ itself is a $G\dash$torsor: a sheaf of sets with an action by a sheaf of groups, such taking $G\cross_G G$ the action becomes $G\actson G$.
+This is similar to base-changing to cover to check something, as in the proof of fppf descent, and here we base-change to trivialize a torsor.
 :::
 
 
