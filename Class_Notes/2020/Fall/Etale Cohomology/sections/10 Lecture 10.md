@@ -299,7 +299,7 @@ noting that $\OO_X(X)\units$ are the global sections of $\GG_m$, i.e. invertible
 The first two cases we've done, $i>1$ is the hard case.
 
 :::{.corollary title="?"}
-For $X$ a smooth proper connected curve, $k=\bar k$, and $\ell \neq \ch(k)$ is prime, 
+For $X$ a smooth proper connected curve of genus $g$, $k=\bar k$, and $\ell \neq \ch(k)$ is prime, 
 \[  
 H^i(X_\et, \ul \zlnz)
 =
@@ -350,6 +350,17 @@ yields a LES where we identify $\mu_{\ell^n} \cong \zlnz$:
 \end{tikzcd}
 So we're just computing the kernel and cokernel of $[\ell]$.
 We'll need one more fact: $\Jac(X)(\bar k)$ is a divisible group.
+We can identify
+\[  
+H^1(X_\et, \ul \zlnz)
+=
+\Pic(X)[\ell^n]
+= 
+\Jac(X)
+=
+\qty{\zlnz}^{2g}
+.\]
+where the 2nd equality uses the fact that $\Pic(X)$ is an extension of $\ZZ$ by an abelian variety and $\ZZ$ has no torsion, and the last equality is general theory of abelian varieties.
 
 [^ref_hartshorne_1]: 
 See Hartshorne Ch. 4, or anything that discusses cohomology of curves.
