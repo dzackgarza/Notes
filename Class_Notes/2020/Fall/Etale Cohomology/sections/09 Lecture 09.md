@@ -14,6 +14,7 @@ Last time we had a scheme $X_{/\FF_p}$ and the *Artin-Schreier* exact sequence o
 \[  
 0\to \ul{\FF_p} \to \OO_X^\et \mapsvia{t\mapsto t^p - t} \OO_X^\et \to 0
 .\]
+The map appearing here is referred to as the *Artin-Schreier* map $f$
 This works over arbitrary fields of characteristic $p$, with a modified definition replacing $t^p$.
 
 :::{.exercise title="?"}
@@ -25,7 +26,12 @@ Recall that we had a theorem last time showing that the étale cohomology of qua
 From this we got a long exact sequence:
 
 \begin{tikzcd}
-  H^{i}
+ & & 
+\\
+  H^{i}(X, \OO_X)
+& H^i(X_\et, \ul{\FF_p})
+& H^i(X, \OO_X)
+& H^i(X, \OO_X)
 \end{tikzcd}
 
 
