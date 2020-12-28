@@ -43,15 +43,17 @@ For $X$ affine, $H^{>0}(X, \OO_X) = 0$, which in facts holds for any quasicohere
 So we get an exact sequence
 
 \begin{tikzcd}
-& \cdots
+H^{i-1}(X, \OO_X) 
     \ar[r]
-& H^{i-1}(X, \OO_X) 
+& 0
+& 
 \\
   H^0(X, \FF_p) = \qty{\FF_p}^{\abs {\pi_0 X} } 
     \ar[r]
 & \OO_X(X) 
     \ar[r, "f"]
 & \OO_X(X) 
+    \ar[ull]
 \\
 &
 & 0
