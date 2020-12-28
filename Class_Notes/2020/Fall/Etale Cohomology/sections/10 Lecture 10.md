@@ -389,5 +389,9 @@ Check this using the snake lemma after applying multiplication by $\ell$ to the 
 
 :::{.remark}
 $X$ is a scheme over $\bar k$, and if it started over some subfield $L$ then $\Gal(L_{/k}) \actson X$ and thus the corresponding functors.
-These isomorphisms will not be Galois equivariant, and the $\zlnz$ showing up in degree 2 cohomology will be 
+These isomorphisms will not be Galois equivariant, and the $\zlnz$ showing up in degree 2 cohomology will admit a Galois action via the cyclotomic character.
 :::
+
+### Proof of Theorem
+
+Goal: we want to show that $H^{>1}(X_\et, \GG_m) = 0$.
