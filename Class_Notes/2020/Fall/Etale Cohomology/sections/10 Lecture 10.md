@@ -318,6 +318,32 @@ We'll use some theory of abelian varieties: $\Pic^0(X) = \Jac(X)$, and we have a
 0 \to \Jac(X) \to \Pic(X) \mapsvia{\deg} \ZZ \to 0
 ,\]
 where we identify the Néron-Severi group as $\ZZ$.[^ref_hartshorne_1]
+We'll use that $\Jac(X)$ is a $g\dash$dimensional abelian variety, and so $\Jac(X)[\ell^n] \cong_{\Grp} \qty{\zlnz}^{2g}$.
+
+The Kummer sequence
+\[  
+1 \to \mu_{\ell^n}\to \GG_m \to \GG_m \to 1
+\]
+yields a LES where we identify $\mu_{\ell^n} \cong \zlnz$:
+
+\begin{tikzcd}
+ A
+  \ar[r]
+&
+ A
+  \ar[r]
+&
+ A
+  \ar[dll]
+\
+ A
+  \ar[r]
+&
+ A
+  \ar[r]
+&
+ A
+\end{tikzcd}
 
 [^ref_hartshorne_1]: 
 See Hartshorne Ch. 4, or anything that discusses cohomology of curves.
