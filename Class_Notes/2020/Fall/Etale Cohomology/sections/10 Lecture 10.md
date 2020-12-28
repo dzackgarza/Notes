@@ -193,5 +193,38 @@ H^2(X_\et, \mu_\ell)
 &
 \end{tikzcd}
 We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$, and the red term is what we'd like to compute.
+
+Suppose now $H^0(X, \OO_X) = k = \bar k$, then $H^0(X_\et,\mu_\ell) = \mu_\ell(k)$ since it is the kernel of the $\ell$th power map.
+We can also compute $H^1(X_\et, \mu_\ell)$, since our diagram reduces to
+\begin{tikzcd}
+&
+&
+0 \ar[dll]
+\\
+\mu_\ell(k)
+  \ar[r]
+&
+k\units
+  \ar[r, "z\mapsto z^\ell"]
+&
+k\units
+  \ar[dll, "\delta"]
+\\
+{\color{red} H^1(X_\et, \mu_\ell)}
+  \ar[r]
+&
+\Pic(X)
+  \ar[r, "{[\ell]}"]
+&
+\Pic(X)
+  \ar[dll]
+\\
+H^2(X_\et, \mu_\ell)
+  \ar[r]
+&
+\cdots
+&
+\end{tikzcd}
+where surjectivity of $\delta$ follows from the fact that $k=\bar k$ and thus every element has an $\ell$th root.
 :::
 
