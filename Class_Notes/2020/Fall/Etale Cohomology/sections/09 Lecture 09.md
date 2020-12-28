@@ -116,6 +116,11 @@ H^i\qty{\qty{ \spec k}_\et, \mathcal{F}} \ms H^i(G, \iota \mathcal{F})
 .\]
 :::
 Recall that this is because derived functor cohomology only depends on the equivalence class of the ambient category.
+Comparing this to Čech cohomology, suppose we have a cover $U \da \spec K$ where $L_{/k}$ is a separable field extension. 
+Take the Čech complex
+\[  
+\Cc(U/\spec k, \mathcal{F}) \da \qty{\mathcal{F}(U) \to \mathcal{F}(U\cross U) \to \cdots}
+.\]
 :::
 
 
