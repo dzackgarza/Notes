@@ -52,6 +52,10 @@ So we get an exact sequence
 & \OO_X(X) 
     \ar[r, "f"]
 & \OO_X(X) 
+\\
+&
+& 0
+    \ar[ull]
 \end{tikzcd}
 
 
