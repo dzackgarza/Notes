@@ -156,7 +156,15 @@ Goal for the next few classes:
 compute the étale cohomology of smooth (not necessarily projective) curves over $k=\bar k$, i.e. $H^i(C_\et, \zlnz)$ where $\ell \neq \ch(k)$.
 We've seen what this is when $\ell = k$, and the answer will resemble the singular cohomology of a Riemann surface in terms of dimensions.
 This will be hard for $i>2$, but we'll try to get to $i=0, 1$.
+We can compute $i=0$, since we're just asking for global sections to a sheaf:
+\[  
+H^i (C_\et, \ul\zlnz) = \zlnz
+,\] 
+since the definition of this sheaf was maps into $\zlnz$, which is disconnected and so any map in is constant.
+For $i=1$, we'll use an interpretation in terms of torsors.
 
+:::{.definition title="?"}
 
+:::
 
 
