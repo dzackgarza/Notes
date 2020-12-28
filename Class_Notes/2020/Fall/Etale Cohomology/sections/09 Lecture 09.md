@@ -213,7 +213,12 @@ Note that they are locally trivial, which is not obvious.
 To get this, take $\mathcal{E}\leadsto \mathrm{Fr}(\mathcal{E})$, the frame bundle over $\mathcal{E}$.
 This can be realized as the sheaf $\mathcal{E}\leadsto \mathrm{Isom}_{X_\et}(\OO^{\oplus n}, \mathcal{E})$, i.e. its value on a cover $U$ is the set of isomorphisms over $U$ of the trivial vector bundle $\mathcal{E}$.
 So this gives a functor from vector bundles and isomorphisms to $\GL_n\dash$torsors, noting that an isomorphism between $\OO^{\oplus n}$ and $\mathcal{E}$ is like a basis of every fiber and thus a basis for $\mathcal{E}$.
-The reverse functor takes a torsor $T$ to $\qty{T\cross \OO_X^{\oplus n}} / \ul \GL_n$, the quotient in the category of étale sheaves.
+The reverse functor is
+\[  
+T \leadsto \qty{T\cross \OO_X^{\oplus n}} / \ul \GL_n
+,\]
+using the diagonal action where we identify $\ul \GL_n \da \ul\Aut(\OO_X^{\oplus n})$ and
+the quotient is in $\Sh^\et$.
 This quotient kills $T$, so each fiber is isomorphic to the fiber of $\OO_X^{\oplus n}$, where this is like $\GL_n$ acting simply transitively on $T$, but this twist $\OO_X^{\oplus n}$ in a way corresponding to how $\mathcal{E}$ is twisted.
 
 :::{.exercise title="?"}
