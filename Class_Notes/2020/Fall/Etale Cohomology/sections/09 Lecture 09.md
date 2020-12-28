@@ -14,6 +14,8 @@ Last time we had a scheme $X_{/\FF_p}$ and the *Artin-Schreier* exact sequence o
 \[  
 0\to \ul{\FF_p} \to \OO_X^\et \mapsvia{t\mapsto t^p - t} \OO_X^\et \to 0
 .\]
+  
+
 
 
 
