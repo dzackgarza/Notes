@@ -349,6 +349,8 @@ yields a LES where we identify $\mu_{\ell^n} \cong \zlnz$:
  0
 \end{tikzcd}
 So we're just computing the kernel and cokernel of $[\ell]$.
+
+**Computing $H^1$**:
 We'll need one more fact: $\Jac(X)(\bar k)$ is a divisible group.
 We can identify
 \[  
@@ -362,10 +364,26 @@ H^1(X_\et, \ul \zlnz)
 .\]
 where the 2nd equality uses the fact that $\Pic(X)$ is an extension of $\ZZ$ by an abelian variety and $\ZZ$ has no torsion, and the last equality is general theory of abelian varieties.
 
+**Computing $H^2$**:
+Since $\Jac(X)$ is divisible, we can identify
+\[  
+\coker(\Pic(X) \mapsvia{[\ell^n]} \Pic(X) )
+\cong 
+\coker(\ZZ \mapsvia{[\ell^n]} \ZZ )
+= \zlnz
+.\]
+
+The vanishing of higher cohomology follows from the vanishing for $\GG_m$.
+So assuming the theorem and the theory of abelian varieties proves this corollary.
+
 [^ref_hartshorne_1]: 
 See Hartshorne Ch. 4, or anything that discusses cohomology of curves.
 
 :::
 
+
+:::{.exercise title="?"}
+Check this using the snake lemma after applying multiplication by $\ell$ to the SES.
+:::
 
 
