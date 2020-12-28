@@ -258,8 +258,20 @@ How does one write down these torsors/covering spaces?
 :::
 
 :::{.example title="?"}
-Given $[Y] \in H^1(X_\et, \FF_p) = \cok(\OO_X\to \OO_X)$, where we write $[Y]$ to denote thinking of the torsor as some geometric object, how to we write down the covering space?
-Use Artin-Schreier, we can write $Y = \ts{y^p - y =  = a}$ for some $a\in \OO_X$.
+Given 
+\[
+[Y] \in H^1(X_\et, \FF_p) = \cok(\OO_X\to \OO_X)
+\]
+where we write $[Y]$ to denote thinking of the torsor as some geometric object, how to we write down the covering space?
+Using Artin-Schreier, we can write $Y = \ts{y^p - y  = a}$ for some $a\in \OO_X$, an **Artin-Schreier covering**.
+
+If $\ell \neq \ch(k)$ and $[Z] \in H^1(X_\et, \mu_\ell)$ and assume $\Pic(X) = 0$.
+Then we can write 
+\[
+H^1 = \cok(\OX \mapsvia{x\mapsto x^\ell} \OX\units)
+\]
+In this case, $Z = \ts{z^\ell = f}$ where $f\in \OX\units$ is an element representing the class in cohomology, and $\mu_\ell \actson Z$ by multiplication by $z$.
+
 :::
 
 
