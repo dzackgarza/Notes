@@ -56,14 +56,23 @@ Let's compute this pushforward in another way: we have
 \Presh(X_\et) 
   \ar[r, "\pi_*"]
 & \Presh(Y_\et)
-  \ar[d, "\text{sheafification}", dotted]
+  \ar[d, "a = \text{sheafification}", dotted]
 \\
 \Sh(X_\et) 
   \ar[r, "\pi_*"]
-  \ar[u, "\text{forget}"']
+  \ar[u, "f = \text{forget}"']
 & \Sh(Y_\et) 
 \end{tikzcd}
 Here the induced map on presheaves is exact although the forgetful functor may not be.
 This is because a sequence of presheaves is exact iff it's exact on every open, but $\pi_*$ just pulls back opens.
-This diagram commutes since 
+This diagram commutes since what you get in the top-right corner is already a sheaf, and sheafification is the identity on sheaves.
+We can thus factor $\pi_*$ to obtain
+\[  
+R^i \pi_* \mathcal{F} = \mathcal{H}^i*\pi_* \mathcal{I}^\wait
+= \mathcal{H}^i(a\circ \pi \circ f (\mathcal{I}^\wait))
+= a\circ \pi_*\qty{\mathcal{H}^i(f(\mathcal{I}^\wait)) }
+.\]
+where we've used the fact that $\pi_*, s$ are exact.
+Why isn't the inner term zero, since $\mathcal{I}^\wait$ is an exact complex of sheaves?
+Epimorphisms are different in the categories of sheaves and presheaves, so it may not be exact when viewed as a complex of presheaves.
 :::
