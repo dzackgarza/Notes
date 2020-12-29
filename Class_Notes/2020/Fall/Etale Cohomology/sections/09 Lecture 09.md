@@ -10,6 +10,8 @@ Last time:
   - Use this to compute:
 - Étale cohomology of $\ul{\FF_p}$ in characteristic $p$.
 
+## The LES of the Artin-Schreier Exact Sequence
+
 Last time we had a scheme $X_{/\FF_p}$ and the *Artin-Schreier* exact sequence of sheaves of $X_\et$:
 \[  
 0\to \ul{\FF_p} \to \OO_X^\et \mapsvia{t\mapsto t^p - t} \OO_X^\et \to 0
@@ -98,6 +100,8 @@ So this cohomology don't form a "good" cohomology theory in the sense that they 
 This data is closely related to e.g. crystalline cohomology.
 :::
 
+## The Étale Cohomology of a Field
+
 :::{.example title="?"}
 We'll try to compute $H(\qty{\spec k}_\et, \mathcal{F})$, the cohomology of the étale site of a field, using Čech cohomology.
 We had an equivalence of categories
@@ -141,7 +145,7 @@ As a corollary, this complex is quasi-isomorphic to the usual complex computing 
 :::
 
 :::{.question}
-When can étale cohomology can be computed as some kind of group cohomology.
+When can étale cohomology can be computed as some kind of group cohomology?
 :::
 
 :::{.answer}
@@ -156,6 +160,8 @@ Here a curve will be a smooth separated scheme of finite type of dimension 1 ove
 We won't assume properness, and we'll generalize to singular curves.
 
 :::
+
+## Torsors
 
 Goal for the next few classes:
 compute the étale cohomology of smooth (not necessarily projective) curves over $k=\bar k$, i.e. $H^i(C_\et, \zlnz)$ where $\ell \neq \ch(k)$.
@@ -243,6 +249,7 @@ Suppose $G$ is a finite étale group scheme over $X$, and $T$ is a locally trivi
 
 :::{.claim}
 \envlist
+
 1. $T$ is representable
 
 2. $T$ is split by $T$
@@ -251,11 +258,13 @@ Suppose $G$ is a finite étale group scheme over $X$, and $T$ is a locally trivi
 :::{.proof title="$1\implies 2$"}
 $T\times T$ is trivial, so we need to verify that $T \covers X$.
 Base changing to $T\times_X U \to U$ is a cover since it's finite étale, since it's isomorphic to $G\times U$ by the definition of local triviality.
-:::
 
 :::{.exercise title="?"}
 Check that base-changing along a cover yields a cover, following from the axioms of a site.
 :::
+
+:::
+
 
 :::{.proof title="of 1"}
 Observe that $\ro{T}{U_\et}$ is representable, since it's isomorphic to $\ro{G}{U_\et}$ as a scheme and $G$ was a finite étale group scheme.
