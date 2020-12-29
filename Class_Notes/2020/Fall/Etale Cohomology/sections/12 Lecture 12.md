@@ -15,4 +15,25 @@ H^i(C, \GG_m)
 Currently $i>1$ is a mystery, so today we'll look at $i=2$.
 Recall that we've reduced this to the Galois cohomology
 
-Bra
+\begin{tikzcd}
+ 
+  &
+ 
+  \arrow[l] 
+  &
+
+  \arrow[l, shift left]
+  \arrow[l, shift right] 
+  &
+
+  \arrow[l]
+  \arrow[l, shift left=2]
+  \arrow[l, shift right=2]
+  &
+\cdots
+  \arrow[l, shift left=0.75]
+  \arrow[l, shift right=0.75]
+  \arrow[l, shift left=2.25]
+  \arrow[l, shift right=2.25]
+  &
+\end{tikzcd}
