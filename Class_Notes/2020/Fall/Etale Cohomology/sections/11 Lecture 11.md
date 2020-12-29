@@ -331,7 +331,7 @@ Suppose $T$ is an étale-locally trivial $\PGL_n\dash$torsor, then the LES essen
 This doesn't make sense *a priori* since this is not a sequence of abelian sheaves.
 Let's true to associate to $T$ some $[T]\in H^2(X_\et, \GG_m)$.
 We can first write down $[T] \in \Hc^1(X_\et, \PGL_n)$: we get a $\PGL_n$ cocycle out a torsor by choosing a trivializing map $U\to X$ so that 
-$\ro T U  = \ro \PGL_n U$.
+$\ro T U  = \ro {\PGL_n} U$.
 This yields a cocycle in $\PGL_n(U\cross_X U)$.
 
 > To be continued.
