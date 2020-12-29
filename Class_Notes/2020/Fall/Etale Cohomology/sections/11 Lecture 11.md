@@ -153,6 +153,8 @@ This reduces to showing $\GG_m(U) \to \GG_m(U_\eta)$ is injective, where $U_\eta
 This uses that $X$ is reduced.
 
 **2**:
+Exactness in the middle.
+Given $f\in \eta_* \GG_m(U)$ with $\Div(f) = 0$, we want to show $f$ comes from $\GG_m(U)$.
 
 **3**:
 
