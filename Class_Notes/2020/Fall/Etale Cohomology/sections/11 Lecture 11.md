@@ -245,3 +245,20 @@ H^i(z_{\et}, \ZZ)
 \end{cases}
 .\]
 :::
+
+:::{.corollary title="?"}
+If $X_{/k}$ is a smooth curve over $k=k^{s}$ then we have an isomorphism
+\[  
+H^{>1}(X_\et, \GG_m) \ms H^{>i}(X_\et, \eta_* \GG_m)
+.\]
+:::
+
+New goal: compute the RHS, which is not quite Galois cohomology but is pushed forward from a field.
+Using the Leray spectral sequence, we get
+\[  
+H^i(X_\et, R^j \eta_* \GG_m)
+\abuts
+H^{i+j}(\eta, \GG_m)
+,\]
+where the RHS is Galois cohomology.
+We're interested in the 
