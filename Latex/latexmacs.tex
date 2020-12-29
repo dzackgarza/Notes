@@ -1,3 +1,6 @@
+\newcommand{\textoperatorname}[1]{%
+  \operatorname{\textnormal{#1}}%
+}
 % {top}{bottom}{symbol}
 \newcommand\stacksymbol[3]{%
   \mathrel{\stackunder[2pt]{\stackon[4pt]{$#3$}{$\scriptscriptstyle#1$}}{%
@@ -83,8 +86,8 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
-\newcommand{\et}{\mathrm{\operatorname{ét}}}
-\newcommand{\Et}{\mathrm{\operatorname{Ét}}}
+\textoperatorname{\et}{ét}
+\textoperatorname{\Et}{Ét}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
