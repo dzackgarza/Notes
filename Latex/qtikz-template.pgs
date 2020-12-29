@@ -1,6 +1,6 @@
 \documentclass[11pt, a4paper, bibliography=totoc, parskip=full]{scrartcl}
 
-\input{preamble_common.tex}
+\input{/home/zack/Notes/Latex/preamble_common}
 \usepackage[active, pdftex, tightpage, ifthen, calc]{preview}
 \usepackage{freetikz}
 \usepackage{xifthen}
