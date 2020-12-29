@@ -130,7 +130,7 @@ Then $\Endo(E) \tensor \QQ$ is a quaternion algebra, and use the fact that there
 :::
 
 :::{.exercise}
-Functoriality and Kunneth implies that $\endo(E)\actson E$ yields an action on $H^1(E)$, which is precisely an algebra morphism $\endo(E) \to \mat_{2\by 2}(\QQ)$, a contradiction.
+Functoriality and Kunneth implies that $\Endo(E)\actson E$ yields an action on $H^1(E)$, which is precisely an algebra morphism $\Endo(E) \to \mat_{2\by 2}(\QQ)$, a contradiction.
 
 The content here: the sum of two endomorphisms act via their sum on $H^1$.
 :::
