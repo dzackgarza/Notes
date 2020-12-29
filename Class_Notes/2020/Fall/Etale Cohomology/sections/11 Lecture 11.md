@@ -324,8 +324,14 @@ It's not obviously exact on the right, since it's not quite true that a map into
 The key input is that $\GL_n\to \PGL_n$ is smooth, and thus has sections étale-locally.
 This map is a $\GG_m\dash$torsor, which we know are Zariski-locally trivially, so this sequence is exact in the Zariski topology and thus also in the étale topology.
 
-Suppose $T$ is an étale-locally trivial $\PGL_n\dash$torsor, then the LES which essentially has the following map:
+Suppose $T$ is an étale-locally trivial $\PGL_n\dash$torsor, then the LES essentially has the following map:
 \[  
 \cdots \to H^2(X_\et, \PGL_n) \mapsvia{\delta} H^2(X_\et, \GG_m) \to \cdots
 .\]
+This doesn't make sense *a priori* since this is not a sequence of abelian sheaves.
+Let's true to associate to $T$ some $[T]\in H^2(X_\et, \GG_m)$.
+We can first write down $[T] \in \Hc^1(X_\et, \PGL_n)$: we get a $\PGL_n$ cocycle out a torsor by choosing a trivializing map $U\to X$ so that $\ro T U = \ro \PGL_n U$.
+This yields a cocycle in $\PGL_n(\U\cross_X U)$.
+
+> To be continued.
 
