@@ -126,7 +126,7 @@ There does not exists a cohomology theory for schemes over $\bar{\FF}_q$ with th
 
 :::{.proof}
 Take $E$ to be a supersingular elliptic curve.
-Then $\endo(E) \tensor \QQ$ is a quaternion algebra, and use the fact that there are no algebra morphisms $R\to \mat_{2\times 2}(\QQ)$.
+Then $\Endo(E) \tensor \QQ$ is a quaternion algebra, and use the fact that there are no algebra morphisms $R\to \mat_{2\times 2}(\QQ)$.
 :::
 
 :::{.exercise}
