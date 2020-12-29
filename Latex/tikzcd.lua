@@ -48,11 +48,24 @@ local function tikz2image(src, outfile)
       f:write(tikz_doc_template:format(src))
       f:close()
       cmd1 =  'pdflatex tikz.tex'
-      cmd2 = 'pdf2svg tikz.pdf "' .. outfile .. '"'
       local file1 = io.popen(cmd1)
       local output1 = file1:read('*all')
-      local rc = {file1:close()}
-      print(dump(rc))
+      local rc1 = {file1:close()}
+      if rc1[0] = nil then
+        print("Error.")
+        print(dump(rc1))
+        return false
+      end
+      cmd2 = 'pdf2svg tikz.pdf "' .. outfile .. '"'
+      local file2 = io.popen(cmd2)
+      local output2 = file2:read('*all')
+      local rc2 = {file2:close()}
+      if rc2[0] = nil then
+        print("Error.")
+        print(dump(rc2))
+        return false
+      end
+      return true
     end)
   end)
 end
