@@ -161,7 +161,7 @@ We're using that if we have a finite type ring over a field $A$, then by a fact 
 A = \Intersect_{\mathfrak{p}\in \spec^1(A)} A_{\mathfrak{p}}
 \]
 which is the intersection of localizations over all height 1 primes.
-Being in this intersection is equivalent to having non-negative divisors,
+Being in this intersection is equivalent to having non-negative divisors, where here we've used that regularity implies normality.
 
 **3**:
 Surjectivity at the end.
@@ -181,7 +181,7 @@ There's a LES:
 H^{i-1}(X_\et, \bigoplus_{\codim(z) = 1} \iota_{z_*} \ul \ZZ)
   \ar[dll]
 \\
-{\color{aquamarine} H^i(X_\et, \GG_m) }
+{\color{NavyBlue} H^i(X_\et, \GG_m) }
   \ar[r]
 &
 H^i(X_\et, \eta_* \GG_m)
@@ -191,8 +191,13 @@ H^i(X_\et, \bigoplus_{\codim(z) = 1} \iota_{z_*} \ul \ZZ)
   \ar[dll]
 \\
 \cdots
+  \ar[r]
 & 
 &
 \end{tikzcd}
-The red term
+The blue term is what we'd like to compute, and the other terms are the cohomology of pushforwards and thus appear in the Leray spectral sequence.
+:::
+
+:::{.proposition title="?"}
+Let $X_{/k}$ be a curve where $k=k^{s}$.
 :::
