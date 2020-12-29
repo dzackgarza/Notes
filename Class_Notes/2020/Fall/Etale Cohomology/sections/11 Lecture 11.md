@@ -320,6 +320,7 @@ Idea: there is a SES
 1 \to \GG_m \to \GL_n \to \PGL_n \to 1
 && \in \Sh^{\Grp}(X_\et)
 .\]
-It's not obviously exact on the right, why is there a surjection?
-The key input is that $\GL_n\to \PGL_n$ is smooth, and thus has sections étale locally.
+It's not obviously exact on the right, since it's not quite true that a map into $\PGL_n$ is an invertible matrix modulo scaling: this is true locally, but it's the *sheafification* of this, so why is there a surjection?
+The key input is that $\GL_n\to \PGL_n$ is smooth, and thus has sections étale-locally.
+This map is a $\GG_m\dash$torsor, which we know are Zariski-locally trivially, so this sequence is exact in the Zariski topology and thus also in the étale topology.
 
