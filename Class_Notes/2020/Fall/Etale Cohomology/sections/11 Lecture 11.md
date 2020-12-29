@@ -207,5 +207,30 @@ H^{i>0}(X_\et, \bigoplus_{\codim z = 1} \iota_{z_*} \ZZ) = 0
 
 :::{.proof title="?"}
 It's enough to show that $H^{>0}(X_\et, \iota_{z_*} \ul \ZZ) = 0$ using that cohomology commutes with direct sums.
-Using the Leray spectral sequence, we get $H^i(X_\et, R^j_{\iota_{z_*}} \ul \ZZ)\abuts H^{i+j}(z_\et, \ul \ZZ)$.
+Using the Leray spectral sequence, we get 
+\[
+H^i(X_\et, R^j_{\iota_{z_*}} \ul \ZZ)\abuts H^{i+j}(z_\et, \ul \ZZ)
+\]
+What are the coefficients on the LHS?
+We proved that pushforwards on closed immersions are exact, by checking on stalks, so we have
+
+\[  
+R^j _{\iota_{z_*}} \ul \ZZ
+=
+\begin{cases}
+\iota_{z_*} \ul \ZZ & j = 0 \\
+0 & j > 0
+\end{cases}
+.\]
+
+We can also compute
+\[  
+H^s(z_\et, \ul \ZZ)
+=
+\begin{cases}
+\ZZ & s = 0 \\
+0 & s>0
+\end{cases}
+.\]
+since we have a separably
 :::
