@@ -47,11 +47,11 @@ local function tikz2image(src, outfile)
       local f = io.open('tikz.tex', 'w')
       f:write(tikz_doc_template:format(src))
       f:close()
-      cmd1 =  'pdflatex tikz.tex > /dev/null 2>&1'
+      cmd1 =  'pdflatex tikz.tex'
       cmd2 = 'pdf2svg tikz.pdf "' .. outfile .. '"'
       local file1 = io.popen(cmd1)
       local output1 = file1:read('*all')
-      local rc = {file:close()}
+      local rc = {file1:close()}
       print(dump(rc))
     end)
   end)
