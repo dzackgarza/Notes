@@ -261,4 +261,15 @@ H^i(X_\et, R^j \eta_* \GG_m)
 H^{i+j}(\eta, \GG_m)
 ,\]
 where the RHS is Galois cohomology.
-We're interested in the 
+We're interested in the $j=0$ region of the spectral sequence.
+Let's try to understand the stalks at geometric points:
+\[  
+\qty(R^j \eta_* \GG_m)_{\bar x}
+=
+H^j(K_{\bar x}, \GG_m)
+,\]
+where the field appearing is the *strict Henselization* from the earlier discussion.
+
+:::{.theorem title="?"}
+Let $K$ be the function field of a curve or an algebraically closed field, or $K = K_{\bar x}$ is the strict Henselian field of a geometric point of a curve over a separably (algebraically) closed field.
+:::
