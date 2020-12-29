@@ -156,7 +156,18 @@ This uses that $X$ is reduced.
 Exactness in the middle.
 Given $f\in \eta_* \GG_m(U)$ with $\Div(f) = 0$, we want to show $f$ comes from $\GG_m(U)$.
 We need to show $f, f^{-1}$ are regular, and it's enough to show that $f$ is regular.
+We're using that if we have a finite type ring over a field $A$, then by a fact from commutative algebra,
+\[
+A = \Intersect_{\mathfrak{p}\in \spec^1(A)} A_{\mathfrak{p}}
+\]
+which is the intersection of localizations over all height 1 primes.
+Being in this intersection is equivalent to having non-negative divisors,
 
 **3**:
-
+Surjectivity at the end.
+We need to show that every divisor is étale locally principle, and thus Zariski locally.
+A global section to the last sheaf is a Weil divisor, and we want to show each is principle.
+This is equivalent to being Cartier, which is true here by regularity.
 :::
+
+
