@@ -42,7 +42,3 @@ asdsadas
 \\
 \end{tikzcd}
 
-
-Cell
-
-Touch
