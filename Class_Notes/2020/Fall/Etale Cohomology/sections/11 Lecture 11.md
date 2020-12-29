@@ -191,7 +191,6 @@ H^i(X_\et, \bigoplus_{\codim(z) = 1} \iota_{z_*} \ul \ZZ)
   \ar[dll]
 \\
 \cdots
-  \ar[r]
 & 
 &
 \end{tikzcd}
@@ -200,4 +199,13 @@ The blue term is what we'd like to compute, and the other terms are the cohomolo
 
 :::{.proposition title="?"}
 Let $X_{/k}$ be a curve where $k=k^{s}$.
+Then
+\[  
+H^{i>0}(X_\et, \bigoplus_{\codim z = 1} \iota_{z_*} \ZZ) = 0
+.\]
+:::
+
+:::{.proof title="?"}
+It's enough to show that $H^{>0}(X_\et, \iota_{z_*} \ul \ZZ) = 0$ using that cohomology commutes with direct sums.
+Using the Leray spectral sequence, we get $H^i(X_\et, R^j_{\iota_{z_*}} \ul \ZZ)\abuts H^{i+j}(z_\et, \ul \ZZ)$.
 :::
