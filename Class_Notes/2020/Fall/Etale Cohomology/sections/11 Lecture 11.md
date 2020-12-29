@@ -303,6 +303,16 @@ Let $X$ be a scheme, then the **cohomological Brauer group** is defined as
 \[  
 \Br (X) \da H^2(X_\et, \GG_m)_{\tors}
 .\]
-
 :::
+In good situations, this group has a good geometric interpretation, so let's true to understand it this way in terms of $\PGL_n\dash$torsors.
+
+:::{.claim}
+There is a natural map
+\[  
+\Union_n \ts\text{étale locally split $\PGL_n\dash$torsors}
+\to
+H^2(X_\et, \GG_m)
+.\]
+:::
+
 
