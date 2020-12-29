@@ -179,7 +179,7 @@ H^0(X_\et, \GG_m)
 H^0(X_\et, \GG_m)
   \ar[dll]
 \\
-{\color{AquaMarine} H^1(X_\et, \mu_\ell)}
+{\color{NavyBlue} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
 \Pic(X)
@@ -195,6 +195,7 @@ H^2(X_\et, \mu_\ell)
 &
 \end{tikzcd}
 We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$, and the blue term is what we'd like to compute.
+We'll make some additional assumptions now.
 
 Suppose now $H^0(X, \OO_X) = k = \bar k$, then $H^0(X_\et,\mu_\ell) = \mu_\ell(k)$ since it is the kernel of the $\ell$th power map.
 We can also compute $H^1(X_\et, \mu_\ell)$, since our diagram reduces to
@@ -212,7 +213,7 @@ k\units
 k\units
   \ar[dll, "\delta"', twoheadrightarrow]
 \\
-{\color{red} H^1(X_\et, \mu_\ell)}
+{\color{NavyBlue} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
 \Pic(X)[\ell]
@@ -251,7 +252,11 @@ This already happens for $H^0$, since $G\actson\zlz$ trivially but not on $\mu_\
 
 ### Geometric Interpretations
 
-Let $X$ be an affine scheme, we now know $H^1(X_\et, \FF_p) = \cok(\OO_X \mapsvia{x^p - x} \OO_x)$, the Artin-Schreier map, and these are $\FF_p\dash$torsors.
+Let $X$ be an affine scheme, we now know 
+\[
+H^1(X_\et, \FF_p) = \cok(\OO_X \mapsvia{x^p - x} \OO_x)
+,\]
+the Artin-Schreier map, and these are $\FF_p\dash$torsors.
 We also know $H^1(X_\et, \zlz)$ in terms of the LES if $k = \bar k$ and $\ch(k) = p$, and this is a $\zlz\dash$torsor.
 Being torsors here geometrically means they're covering spaces with those groups as Galois groups.
 
@@ -394,7 +399,7 @@ $X$ is a scheme over $\bar k$, and if it started over some subfield $L$ then $\G
 These isomorphisms will not be Galois equivariant, and the $\zlnz$ showing up in degree 2 cohomology will admit a Galois action via the cyclotomic character.
 :::
 
-### Proof of Theorem
+### Outline of Proof
 
 Goal: we want to show that $H^{>1}(X_\et, \GG_m) = 0$ for $X$ a smooth curve over $k=\bar k$.
 Three ingredients:
@@ -408,7 +413,7 @@ Three ingredients:
 
 ## Pushforwards and the Leray Spectral Sequence
 
-Suppose $X\mapsvia{f} Y$ is a morphism of schemes, then we get a functor $f_* \Sh(X_\et) \to \Sh(Y_\et)$: given $\mathcal{F}\in Sh(X_\et)$, we have $f_* \mathcal{F}(U\to Y) \da \mathcal{F}(U\cross_Y X)$.
+Suppose $X\mapsvia{f} Y$ is a morphism of schemes, then we get a functor $f_*:\Sh(X_\et) \to \Sh(Y_\et)$: given $\mathcal{F}\in Sh(X_\et)$, we have $f_* \mathcal{F}(U\to Y) \da \mathcal{F}(U\cross_Y X)$.
 This is left-exact and thus has right-derived functors $R^\wait f_*:\Sh^\Ab(X_\et) \to \Sh^\Ab(Y_\et)$.
 
 How to think about this:

@@ -43,6 +43,8 @@ Note that this is false for smooth proper morphisms between manifolds!
 Instead, for varieties, they behave more like products instead of "twisted" things.
 :::
 
+### Explicit Characterizations
+
 We'll now be explicit about what these pushforwards are, so we'll give another description of them:
 
 :::{.proposition title="?"}
