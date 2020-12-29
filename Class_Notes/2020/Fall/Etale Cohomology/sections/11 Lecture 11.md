@@ -75,4 +75,10 @@ R^i \pi_* \mathcal{F} = \mathcal{H}^i*\pi_* \mathcal{I}^\wait
 where we've used the fact that $\pi_*, s$ are exact.
 Why isn't the inner term zero, since $\mathcal{I}^\wait$ is an exact complex of sheaves?
 Epimorphisms are different in the categories of sheaves and presheaves, so it may not be exact when viewed as a complex of presheaves.
+These terms are explicitly the functors $U\to H^i(U, \mathcal{F})$, since $\ro{\mathcal{I}^\wait}{U}$ is an injective resolution of $\mathcal{F}$.
+We can now evaluate this on an open of $Y$, so we get
+\[  
+a \qty{ (U \mapsvia{\et} Y) \to H^i(\pi^{-1}(U), \mathcal{F}) }
+,\] 
+which is sheafifying the functor we want.
 :::
