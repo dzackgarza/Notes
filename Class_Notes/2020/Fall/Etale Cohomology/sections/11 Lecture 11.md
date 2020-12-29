@@ -171,3 +171,28 @@ This is equivalent to being Cartier, which is true here by regularity.
 :::
 
 
+:::{.corollary title="?"}
+There's a LES:
+\begin{tikzcd}
+&
+ \cdots
+  \ar[r]
+&
+H^{i-1}(X_\et, \bigoplus_{\codim(z) = 1} \iota_{z_*} \ul \ZZ)
+  \ar[dll]
+\\
+{\color{aquamarine} H^i(X_\et, \GG_m) }
+  \ar[r]
+&
+H^i(X_\et, \eta_* \GG_m)
+  \ar[r]
+&
+H^i(X_\et, \bigoplus_{\codim(z) = 1} \iota_{z_*} \ul \ZZ)
+  \ar[dll]
+\\
+\cdots
+& 
+&
+\end{tikzcd}
+The red term
+:::
