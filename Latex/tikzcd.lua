@@ -38,7 +38,8 @@ local function tikz2image(src, outfile)
       cmd2 = 'pdf2svg tikz.pdf "' .. outfile .. '"'
       local file1 = io.popen(cmd1)
       local output1 = file1:read('*all')
-
+      local rc = {file:close()}
+      print(rs[3])
     end)
   end)
 end
