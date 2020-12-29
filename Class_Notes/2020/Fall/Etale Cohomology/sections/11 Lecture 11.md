@@ -264,7 +264,7 @@ where the RHS is Galois cohomology.
 We're interested in the $j=0$ region of the spectral sequence.
 Let's try to understand the stalks at geometric points:
 \[  
-\qty(R^j \eta_* \GG_m)_{\bar x}
+\qty{R^j \eta_* \GG_m}_{\bar x}
 =
 H^j(K_{\bar x}, \GG_m)
 ,\]
