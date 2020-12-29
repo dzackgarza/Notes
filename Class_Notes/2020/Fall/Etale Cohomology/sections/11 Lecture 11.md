@@ -309,10 +309,17 @@ In good situations, this group has a good geometric interpretation, so let's tru
 :::{.claim}
 There is a natural map
 \[  
-\Union_n \ts\text{étale locally split $\PGL_n\dash$torsors}
+\Union_n \ts{ \text{étale-locally split $\PGL_n\dash$torsors} }
 \to
 H^2(X_\et, \GG_m)
 .\]
 :::
 
+Idea: there is a SES
+\[  
+1 \to \GG_m \to \GL_n \to \PGL_n \to 1
+&& \in \Sh^{\Grp}(X_\et)
+.\]
+It's not obviously exact on the right, why is there a surjection?
+The key input is that $\GL_n\to \PGL_n$ is smooth, and thus has sections étale locally.
 
