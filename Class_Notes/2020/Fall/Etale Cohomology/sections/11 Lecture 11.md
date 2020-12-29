@@ -22,9 +22,11 @@ H^i(k, V)
 =
 \begin{cases}
 V^G & i = 0 \hspace{4em}\text{the invariants}\\
-V_G & i = 1\hspace{4em}\text{the coinvariants}.
+V_G & i = 1\hspace{4em}\text{the coinvariants} \\
+0 & i>1
 \end{cases}
 \]
 This follows from computing the cohomology of $\hat \ZZ$.
-Supposing we knew that the cohomological dimension of such a variety $X$ was %$
+Supposing we knew that the cohomological dimension of a smooth projective variety was $2n$ over $\bar k$ (e.g. taking $\mathcal{F} \da \zlz$ above), then the cohomological dimension of $X$ would be $2n+1$.
+This follows from $E_2$ vanishing for $i>1$ in this case.
 :::
