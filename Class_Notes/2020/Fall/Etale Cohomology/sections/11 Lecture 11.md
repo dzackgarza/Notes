@@ -130,7 +130,7 @@ Then there is a SES in $\Sh(X_\et)$:
 \[  
 0 \to
 \GG_m
-\mapvia{\res}
+\mapsvia{\Res}
 \eta_* \GG_m 
 \mapsvia{\Div}
 \bigoplus_{z\in X, \codim 1} \iota_{z_*} \ul \ZZ
@@ -139,8 +139,21 @@ Then there is a SES in $\Sh(X_\et)$:
 where the middle term can be thought of as pushing forward $\GG_m$ from the étale site of $\eta$ or pulling back $\GG_m$ to it, which is just $\GG_m$ again, and pushing forward again, and the last term is the **sheaf of divisors**.
 :::
 
-:::{.proof title="?"}
+:::{.remark}
 The first map is either the unit or the counit of the adjunction $\eta_* \mapstofrom \eta^*$, which is the restriction.
 The second map comes from noting that on an étale morphism $U\to X$, this is a bunch of rational functions and you can take its divisor.
 This gives a number for each codimension 1 point: the order of vanishing.
+All but finitely many numbers will be zero, so you get a section to the last sheaf.
+:::
+
+:::{.proof title="of exactness"}
+**1**: 
+$\GG_m \to \eta_* \GG_m$ is injective.
+This reduces to showing $\GG_m(U) \to \GG_m(U_\eta)$ is injective, where $U_\eta$ is the fiber over $\eta$, since this is $\OO_U\units \to \bigoplus_{\eta_i} \OO_{\eta_i}$ which is a sum over generic points of $U$.
+This uses that $X$ is reduced.
+
+**2**:
+
+**3**:
+
 :::
