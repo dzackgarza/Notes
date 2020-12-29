@@ -2051,7 +2051,7 @@ $\Sh(X_\et)$ is an abelian category.
 
 Next time: we'll finish proving that injectives exist, and start computing.
 
-# Lecture 07
+# Lecture 07: Relating Étale and Čech Cohomology
 
 Last time: stalks, sheafification, and $\Sh(X_{\et})$ is abelian.
 Next up, we're aiming to define sheaf cohomology for $\Sh(X_\et)$.
@@ -2443,7 +2443,11 @@ Recall the definition of $\check{C}(U/X, \mathcal{F})$ and $\check{C}(X_\et, \ma
 
 
 :::{.warnings}
-$\Hc{X_\et, \mathcal{F}} \not\cong H(X_\et, \mathcal{F})$ in general, but by a theorem of Milne this is true if $X$ is quasicompact and any finite subset is contained in an affine open.
+In general,
+\[
+\Hc{X_\et, \mathcal{F}} \not\cong H(X_\et, \mathcal{F})
+,\]
+but by a theorem of Milne this is true if $X$ is quasicompact and any finite subset is contained in an affine open.
 This is true if $X$ is quasiprojective.
 :::
 
@@ -2487,7 +2491,6 @@ Taking the vertical cohomology yields
 E_2^{i, j} = \Hc^i(U, \mathcal{H}^j(\mathcal{F}))
 ,\]
 where $\mathcal{H}^j$ is the presheaf $V\mapsto H_\et^j(V, \mathcal{F})$.
-
 Now we take cohomology in the other order: taking the vertical cohomology collapses to the bottom row, which are global sections, and so
 
 \[  
@@ -2576,7 +2579,7 @@ Check this.
 
 :::
 
-
+## Étale Cohomology Equals Zariski Cohomology for Quasicoherent Sheaves
 
 
 :::{.theorem title="Étale Cohomology for Quasicoherent Sheaves Equals Zariski Cohomology" ref="thm:et_qcs_zar"}
@@ -2604,9 +2607,10 @@ This isomorphism is not just formal, since $\Qcoh$ is much smaller than $\Sh$.
 The reason is that injective quasicoherent sheaves are flasque (?), so it also computes derived functor cohomology.
 In general, it's much harder to be an injective object in the $\Sh$ than it is in $\Qcoh$, since it has to satisfy a lifting property with respect to more maps.
 
-The main takeaway: we already showed $\Qcoh(X_\et) \cong \Qcoh(X_\zar)$, but now we have this isomorphism in a much larger category.
+**Upshot**: we already showed $\Qcoh(X_\et) \cong \Qcoh(X_\zar)$, but now we have this isomorphism in a much larger category.
 :::
 
+### Proof
 
 :::{.proof title="?"}
 We'll prove this in a special case: if $X$ is quasicompact and separated, Čech cohomology computes derived functor cohomology.
@@ -2688,11 +2692,13 @@ k & i= 0 \\
 .\]
 :::
 
+## The Artin-Schreier Exact Sequence
+
 :::{.example title="?"}
 Let $X/\FF_p$ be a quasiprojective variety.
 What is the following cohomology?
 \[  
-H^i(X_\et, \ul{\FF_p})  = ?
+H^i(X_\et, \ul{\FF_p})  = \, ?
 .\]
 
 In general, the strategy will be to use long exact sequences stemming from spaces where the cohomology is known.

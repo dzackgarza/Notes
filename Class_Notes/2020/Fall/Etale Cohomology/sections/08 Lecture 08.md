@@ -140,7 +140,7 @@ Check this.
 
 :::
 
-
+## Étale Cohomology Equals Zariski Cohomology for Quasicoherent Sheaves
 
 
 :::{.theorem title="Étale Cohomology for Quasicoherent Sheaves Equals Zariski Cohomology" ref="thm:et_qcs_zar"}
@@ -168,9 +168,10 @@ This isomorphism is not just formal, since $\Qcoh$ is much smaller than $\Sh$.
 The reason is that injective quasicoherent sheaves are flasque (?), so it also computes derived functor cohomology.
 In general, it's much harder to be an injective object in the $\Sh$ than it is in $\Qcoh$, since it has to satisfy a lifting property with respect to more maps.
 
-The main takeaway: we already showed $\Qcoh(X_\et) \cong \Qcoh(X_\zar)$, but now we have this isomorphism in a much larger category.
+**Upshot**: we already showed $\Qcoh(X_\et) \cong \Qcoh(X_\zar)$, but now we have this isomorphism in a much larger category.
 :::
 
+### Proof
 
 :::{.proof title="?"}
 We'll prove this in a special case: if $X$ is quasicompact and separated, Čech cohomology computes derived functor cohomology.
@@ -252,11 +253,13 @@ k & i= 0 \\
 .\]
 :::
 
+## The Artin-Schreier Exact Sequence
+
 :::{.example title="?"}
 Let $X/\FF_p$ be a quasiprojective variety.
 What is the following cohomology?
 \[  
-H^i(X_\et, \ul{\FF_p})  = ?
+H^i(X_\et, \ul{\FF_p})  = \, ?
 .\]
 
 In general, the strategy will be to use long exact sequences stemming from spaces where the cohomology is known.

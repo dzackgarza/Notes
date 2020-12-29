@@ -3200,8 +3200,9 @@ map out of it.
 Next time: we'll finish proving that injectives exist, and start
 computing.
 
-\hypertarget{lecture-07}{%
-\section{Lecture 07}\label{lecture-07}}
+\hypertarget{lecture-07-relating-uxe9tale-and-ux10dech-cohomology}{%
+\section{Lecture 07: Relating Étale and Čech
+Cohomology}\label{lecture-07-relating-uxe9tale-and-ux10dech-cohomology}}
 
 Last time: stalks, sheafification, and \(\Sh(X_{\et})\) is abelian. Next
 up, we're aiming to define sheaf cohomology for \(\Sh(X_\et)\).
@@ -3751,10 +3752,12 @@ Recall the definition of \(\check{C}(U/X, \mathcal{F})\) and
 
 \begin{warnings}
 
-\(\Hc{X_\et, \mathcal{F}} \not\cong H(X_\et, \mathcal{F})\) in general,
-but by a theorem of Milne this is true if \(X\) is quasicompact and any
-finite subset is contained in an affine open. This is true if \(X\) is
-quasiprojective.
+In general,
+\begin{align*}
+\Hc{X_\et, \mathcal{F}} \not\cong H(X_\et, \mathcal{F})
+,\end{align*} but by a theorem of Milne this is true if \(X\) is
+quasicompact and any finite subset is contained in an affine open. This
+is true if \(X\) is quasiprojective.
 
 \end{warnings}
 
@@ -3806,11 +3809,9 @@ Taking the vertical cohomology yields
 \begin{align*}  
 E_2^{i, j} = \Hc^i(U, \mathcal{H}^j(\mathcal{F}))
 ,\end{align*} where \(\mathcal{H}^j\) is the presheaf
-\(V\mapsto H_\et^j(V, \mathcal{F})\).
-
-Now we take cohomology in the other order: taking the vertical
-cohomology collapses to the bottom row, which are global sections, and
-so
+\(V\mapsto H_\et^j(V, \mathcal{F})\). Now we take cohomology in the
+other order: taking the vertical cohomology collapses to the bottom row,
+which are global sections, and so
 
 \begin{align*}  
 E_2^{i, j} = H^i(\Gamma(X, \mathcal{I}))  E_{\infty}
@@ -3915,6 +3916,10 @@ Check this.
 
 \end{proof}
 
+\hypertarget{uxe9tale-cohomology-equals-zariski-cohomology-for-quasicoherent-sheaves}{%
+\subsection{Étale Cohomology Equals Zariski Cohomology for Quasicoherent
+Sheaves}\label{uxe9tale-cohomology-equals-zariski-cohomology-for-quasicoherent-sheaves}}
+
 \begin{theorem}[Étale Cohomology for Quasicoherent Sheaves Equals Zariski Cohomology]\label{thm:et_qcs_zar}
 
 Suppose \(X\) is a scheme and \(\mathcal{F}\in \Qcoh(X)\) (for example,
@@ -3947,11 +3952,13 @@ In general, it's much harder to be an injective object in the \(\Sh\)
 than it is in \(\Qcoh\), since it has to satisfy a lifting property with
 respect to more maps.
 
-The main takeaway: we already showed
-\(\Qcoh(X_\et) \cong \Qcoh(X_\zar)\), but now we have this isomorphism
-in a much larger category.
+\textbf{Upshot}: we already showed \(\Qcoh(X_\et) \cong \Qcoh(X_\zar)\),
+but now we have this isomorphism in a much larger category.
 
 \end{remark}
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
 
 \begin{proof}[?]
 
@@ -4056,12 +4063,16 @@ k & i= 0 \\
 
 \end{example}
 
+\hypertarget{the-artin-schreier-exact-sequence}{%
+\subsection{The Artin-Schreier Exact
+Sequence}\label{the-artin-schreier-exact-sequence}}
+
 \begin{example}[?]
 
 Let \(X/\FF_p\) be a quasiprojective variety. What is the following
 cohomology?
 \begin{align*}  
-H^i(X_\et, \ul{\FF_p})  = ?
+H^i(X_\et, \ul{\FF_p})  = \, ?
 .\end{align*}
 
 In general, the strategy will be to use long exact sequences stemming
