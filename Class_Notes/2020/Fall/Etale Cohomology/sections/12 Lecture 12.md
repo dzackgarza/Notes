@@ -26,4 +26,6 @@ Recall that we've reduced this to the Galois cohomology
 
 \end{tikzcd}
 
-tikz
+\begin{tikzcd}
+
+\end{tikzcd}
