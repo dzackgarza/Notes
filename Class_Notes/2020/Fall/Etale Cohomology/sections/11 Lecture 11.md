@@ -130,9 +130,9 @@ Then there is a SES in $\Sh(X_\et)$:
 \[  
 0 \to
 \GG_m
-\mapvis{\res}
+\mapvia{\res}
 \eta_* \GG_m 
-\to
+\mapsvia{\Div}
 \bigoplus_{z\in X, \codim 1} \iota_{z_*} \ul \ZZ
 \to 0
 ,\]
@@ -141,4 +141,6 @@ where the middle term can be thought of as pushing forward $\GG_m$ from the éta
 
 :::{.proof title="?"}
 The first map is either the unit or the counit of the adjunction $\eta_* \mapstofrom \eta^*$, which is the restriction.
+The second map comes from noting that on an étale morphism $U\to X$, this is a bunch of rational functions and you can take its divisor.
+This gives a number for each codimension 1 point: the order of vanishing.
 :::
