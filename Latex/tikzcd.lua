@@ -1,7 +1,19 @@
 package.path = '/home/zack/Notes/Latex/?.lua;'..package.path
 
 local system = require 'pandoc.system'
-local pp = require '/home/zack/.luarocks/share/lua/5.4/pl/pretty'
+
+function dump(o)
+   if type(o) == 'table' then
+      local s = '{ '
+      for k,v in pairs(o) do
+         if type(k) ~= 'number' then k = '"'..k..'"' end
+         s = s .. '['..k..'] = ' .. dump(v) .. ','
+      end
+      return s .. '} '
+   else
+      return tostring(o)
+   end
+end
 
 --local tikz_doc_template = [[
 --\documentclass{standalone}
@@ -40,7 +52,7 @@ local function tikz2image(src, outfile)
       local file1 = io.popen(cmd1)
       local output1 = file1:read('*all')
       local rc = {file:close()}
-      print(pp.dump(rc))
+      print(dump(rc))
     end)
   end)
 end
