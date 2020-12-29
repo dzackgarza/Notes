@@ -1200,7 +1200,9 @@ form \(U\cross V = U\intersect V\).
 
 \end{remark}
 
-\begin{definition}[Preliminary: Sites/Grothendieck Topologies]
+We will make the following preliminary definition:
+
+\begin{definition}[Sites/Grothendieck Topologies]\label{def:site}
 
 A category \(\mathcal{C}\) with a collection of \emph{covering
 families}\footnote{How to think of this: elements in this collection
@@ -1475,8 +1477,8 @@ are determined by an open cover, and given sections agreeing on overlaps
 allows gluing. This can be captured by a specific diagram, which is what
 we will use here.
 
-Recall that a site is a category equipped with the Grothendieck
-topology.
+Recall the definition of a \textbf{site} (\cref{def:site}): in short, a
+category equipped with the Grothendieck topology.
 
 \begin{definition}[Sheaf]
 
@@ -3913,7 +3915,7 @@ Check this.
 
 \end{proof}
 
-\begin{theorem}[?]
+\begin{theorem}[Étale Cohomology for Quasicoherent Sheaves Equals Zariski Cohomology]\label{thm:et_qcs_zar}
 
 Suppose \(X\) is a scheme and \(\mathcal{F}\in \Qcoh(X)\) (for example,
 \(\mathcal{F} \da \OO_X\)). Then there is a canonical isomorphism
@@ -4235,9 +4237,9 @@ From here onward, \(H^i\) will denote \(H^i_\et\).
 
 \end{remark}
 
-Recall that we had a theorem last time showing that the étale cohomology
-of quasicoherent sheaves is equivalent to the usual Zariski cohomology.
-From this we got a long exact sequence:
+Recall that we had a theorem last time (\cref{thm:et_qcs_zar}) showing
+that the étale cohomology of quasicoherent sheaves is equivalent to the
+usual Zariski cohomology. From this we got a long exact sequence:
 
 \begin{center}
 \begin{tikzcd}
@@ -4709,7 +4711,7 @@ cohomology of \(X_\et\):
 Why? Take the direct limit of both sides. Note that Čech \(H^1\) always
 computes derived \(H^1\).
 
-\begin{theorem}[Grothendieck's Generalization of Hilbert 90]
+\begin{theorem}[Grothendieck's Generalization of Hilbert 90]\label{thm:hilb90}
 
 The following is a bijection:
 \begin{align*}  

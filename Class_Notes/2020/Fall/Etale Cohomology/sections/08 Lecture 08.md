@@ -138,7 +138,9 @@ Check this.
 :::
 
 
-:::{.theorem title="?"}
+
+
+:::{.theorem title="Étale Cohomology for Quasicoherent Sheaves Equals Zariski Cohomology" ref="thm:et_qcs_zar"}
 Suppose $X$ is a scheme and $\mathcal{F}\in \Qcoh(X)$ (for example, $\mathcal{F} \da \OO_X$).
 Then there is a canonical isomorphism
 \[  

@@ -26,7 +26,7 @@ This follows from the fact that Frobenius itself is.
 From here onward, $H^i$ will denote $H^i_\et$.
 :::
 
-Recall that we had a theorem last time showing that the étale cohomology of quasicoherent sheaves is equivalent to the usual Zariski cohomology.
+Recall that we had a theorem last time (\cref{thm:et_qcs_zar}) showing that the étale cohomology of quasicoherent sheaves is equivalent to the usual Zariski cohomology.
 From this we got a long exact sequence:
 
 \begin{tikzcd}

@@ -771,8 +771,9 @@ We'd also like to make sense of the sheaf condition:
 The motivation for (3) above is that for $U, V \subseteq X$, we can form $U\cross V = U\intersect V$.
 :::
 
+We will make the following preliminary definition:
 
-:::{.definition title="Preliminary: Sites/Grothendieck Topologies"}
+:::{.definition title="Sites/Grothendieck Topologies" ref="def:site"}
 A category $\mathcal{C}$ with a collection of *covering families*[^think_of_covering_families]
 \[
 \ts{X_\alpha \mapsvia{f_\alpha} X \st \alpha\in A}
@@ -949,7 +950,7 @@ For $X$ a topological space, it's a sheaf satisfying some conditions:
 its sections are determined by an open cover, and given sections agreeing on overlaps allows gluing.
 This can be captured by a specific diagram, which is what we will use here.
 
-Recall that a site is a category equipped with the Grothendieck topology.
+Recall the definition of a **site** (\cref{def:site}): in short, a category equipped with the Grothendieck topology.
 
 :::{.definition title="Sheaf"}
 A **sheaf** $F$ is presheaf such that 
@@ -2576,7 +2577,9 @@ Check this.
 :::
 
 
-:::{.theorem title="?"}
+
+
+:::{.theorem title="Étale Cohomology for Quasicoherent Sheaves Equals Zariski Cohomology" ref="thm:et_qcs_zar"}
 Suppose $X$ is a scheme and $\mathcal{F}\in \Qcoh(X)$ (for example, $\mathcal{F} \da \OO_X$).
 Then there is a canonical isomorphism
 \[  
@@ -2819,7 +2822,7 @@ This follows from the fact that Frobenius itself is.
 From here onward, $H^i$ will denote $H^i_\et$.
 :::
 
-Recall that we had a theorem last time showing that the étale cohomology of quasicoherent sheaves is equivalent to the usual Zariski cohomology.
+Recall that we had a theorem last time (\cref{thm:et_qcs_zar}) showing that the étale cohomology of quasicoherent sheaves is equivalent to the usual Zariski cohomology.
 From this we got a long exact sequence:
 
 \begin{tikzcd}
@@ -3152,7 +3155,7 @@ Why?
 Take the direct limit of both sides.
 Note that Čech $H^1$ always computes derived $H^1$.
 
-:::{.theorem title="Grothendieck's Generalization of Hilbert 90"}
+:::{.theorem title="Grothendieck's Generalization of Hilbert 90" ref="thm:hilb90"}
 The following is a bijection:
 \[  
 \Hc^1(X_\zar, \ul \GL_n)

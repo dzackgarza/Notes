@@ -135,7 +135,7 @@ For $X$ a topological space, it's a sheaf satisfying some conditions:
 its sections are determined by an open cover, and given sections agreeing on overlaps allows gluing.
 This can be captured by a specific diagram, which is what we will use here.
 
-Recall that a site is a category equipped with the Grothendieck topology.
+Recall the definition of a **site** (\cref{def:site}): in short, a category equipped with the Grothendieck topology.
 
 :::{.definition title="Sheaf"}
 A **sheaf** $F$ is presheaf such that 

@@ -378,8 +378,9 @@ We'd also like to make sense of the sheaf condition:
 The motivation for (3) above is that for $U, V \subseteq X$, we can form $U\cross V = U\intersect V$.
 :::
 
+We will make the following preliminary definition:
 
-:::{.definition title="Preliminary: Sites/Grothendieck Topologies"}
+:::{.definition title="Sites/Grothendieck Topologies" ref="def:site"}
 A category $\mathcal{C}$ with a collection of *covering families*[^think_of_covering_families]
 \[
 \ts{X_\alpha \mapsvia{f_\alpha} X \st \alpha\in A}
