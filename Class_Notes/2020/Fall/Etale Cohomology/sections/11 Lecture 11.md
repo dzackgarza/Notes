@@ -89,6 +89,7 @@ Suppose $\mathcal{F}\in \Sh(\eta_\et)$.
 How to we understand $R^i \iota_* \mathcal{F}$?
 We can compute its stalks: suppose $\bar x \to X$ is a geometric point, then
 \[  
-\qty{R^i \iota_* \mathcal{F}}_{\bar x}
-.\]
+\qty{R^i \iota_* \mathcal{F}}_{\bar x} = \directlim_{(U, \bar u)}
+.\]f
+where we take limits over $U\mapsvia{\et} X$ and $\bar u\to U$ is a geometric point above $\bar x$.
 :::
