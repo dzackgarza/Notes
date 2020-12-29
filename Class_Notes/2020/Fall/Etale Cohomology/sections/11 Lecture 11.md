@@ -280,7 +280,7 @@ H^{>0}(K, \GG_m) = 0
 :::
 
 This will suffice since 
-$R^{>0} \eta_*GG_m = 0$, yielding a spectral sequence where $E_2 = E_ \infty$:
+$R^{>0} \eta_*\GG_m = 0$, yielding a spectral sequence where $E_2 = E_ \infty$:
 \[  
 H^i(X_\et, \eta_* \GG_m)
 =
@@ -301,7 +301,7 @@ Another one of Daniel's favorite topics in the course!
 :::{.definition title="Cohomological Brauer Group"}
 Let $X$ be a scheme, then the **cohomological Brauer group** is defined as
 \[  
-\Br^\coh(X) \da H^s(X_\et, \GG_m)_{\tors}
+\Br (X) \da H^2(X_\et, \GG_m)_{\tors}
 .\]
 
 :::
