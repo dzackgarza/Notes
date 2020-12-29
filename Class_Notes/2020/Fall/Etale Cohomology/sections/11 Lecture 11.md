@@ -8,5 +8,7 @@ To deduce existence we used that pushforwards preserve injectives, and we looked
 Let $X \mapsvia{\pi}  Z \da \spec k$, where $k\neq \bar k$ necessarily. 
 The spectral sequence for the functors $\pi_*, \Gamma$ yields the Leray spectral sequence $H^i(k, R^j \pi_* \mathcal{F}) \abuts H^{i}(X_\et, \mathcal{F})$.
 The LHS is the étale cohomology of $\spec k$, i.e. Galois cohomology.
-
+The Galois module corresponding to $R^j \pi_* \mathcal{F}$ is $H^j(X_{k^{\sep}}, \mathcal{F})$
+by taking the $\bar k$ points of this functor
+So the Leray spectral sequence yields
 :::
