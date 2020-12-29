@@ -43,6 +43,24 @@ Note that this is false for smooth proper morphisms between manifolds!
 Instead, for varieties, they behave more like products instead of "twisted" things.
 :::
 
-:::{.proposition title=""}
+We'll now be explicit about what these pushforwards are, so we'll give another description of them:
 
+:::{.proposition title="?"}
+Let $X  \mapsvia{\pi} Y$, then $R^i \pi_* \mathcal{F}$ is the sheaf associated to the presheaf $U\to H^i(\pi^{-1}(U)_\et, \mathcal{F})$.
+:::
+
+:::{.proof title="?"}
+Choose an injective resolution $\mathcal{F}\to \mathcal{I}\wait$, then $\mathcal{H}^i(\pi_* \mathcal{I}^\wait) \da R^i \pi_* \mathcal{F}$.
+Let's compute this pushforward in another way: we have 
+\begin{tikzcd}
+\Presh(X_\et) 
+  \ar[r]
+& ? 
+  \ar[d]
+\\
+\Sh(X_\et) 
+  \ar[r, "\pi_*"]
+  \ar[u, "\text{forget}"]
+& \Sh(Y_\et) 
+\end{tikzcd}
 :::
