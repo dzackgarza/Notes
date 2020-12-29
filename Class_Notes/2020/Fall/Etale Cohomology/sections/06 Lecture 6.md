@@ -264,7 +264,7 @@ Colimits exists in $\Sh(X_\et)$.
 :::
 
 :::{.proof title="?"}
-Colimits exist for presheaves, since colimits always exists for sheaves valued in a category where colimits exist since they're computed pointwise.
+Colimits exist for presheaves, since colimits always exists for functor categories valued in a category where colimits exist since they're computed pointwise.
 Left adjoints send colimits to colimits, so in general we'll construct colimits of sheaves by taking colimits of presheaves and then sheafifying.
 This is true because colimits are defined by mapping *out*, and the definition of left adjoints is that one knows how to map out of it.
 :::
