@@ -36,16 +36,8 @@ local function tikz2image(src, outfile)
       f:close()
       cmd1 =  'pdflatex tikz.tex > /dev/null 2>&1'
       cmd2 = 'pdf2svg tikz.pdf "' .. outfile .. '"'
-      if pcall(cmd1) then
-        print("Ok")
-      else
-        print("Error: cmd1")
-      end
-      if pcall(cmd2) then
-        print("Ok")
-      else
-        print("Error: cmd2")
-      end
+      local file1 = io.popen(cmd1)
+      local output1 = file1:read('*all')
 
     end)
   end)
