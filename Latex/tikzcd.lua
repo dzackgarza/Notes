@@ -34,8 +34,19 @@ local function tikz2image(src, outfile)
       local f = io.open('tikz.tex', 'w')
       f:write(tikz_doc_template:format(src))
       f:close()
-      os.execute('pdflatex tikz.tex > /dev/null 2>&1')
-      os.execute('pdf2svg tikz.pdf "' .. outfile .. '"')
+      cmd1 =  'pdflatex tikz.tex > /dev/null 2>&1'
+      cmd2 = 'pdf2svg tikz.pdf "' .. outfile .. '"'
+      if pcall(cmd1) then
+        print("Ok")
+      else
+        print("Error: cmd1")
+      end
+      if pcall(cmd2) then
+        print("Ok")
+      else
+        print("Error: cmd2")
+      end
+
     end)
   end)
 end
