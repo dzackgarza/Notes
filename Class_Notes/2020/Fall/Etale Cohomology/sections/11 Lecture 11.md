@@ -87,4 +87,8 @@ which is sheafifying the functor we want.
 Suppose $X$ is an integral scheme and $\eta\injectsvia{\iota} X$ is its generic point.
 Suppose $\mathcal{F}\in \Sh(\eta_\et)$.
 How to we understand $R^i \iota_& \mathcal{F}$?
+We can compute its stalks: suppose $\bar x \to X$ is a geometric point, then
+\[  
+\qty{R^i \iota_* \mathcal{F}}_{\bar x}
+.\]
 :::
