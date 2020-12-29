@@ -18,6 +18,3 @@ Recall that we've reduced this to the Galois cohomology
 Cel
 
 
-
-
-
