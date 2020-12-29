@@ -126,4 +126,19 @@ We'll reduce this to questions in Galois cohomology.
 
 :::{.proposition title="?"}
 Let $X_{/k}$ (with $k$ not necessarily algebraically closed) be a regular (integral) variety and $\eta\injects X$ is the generic point.
+Then there is a SES in $\Sh(X_\et)$:
+\[  
+0 \to
+\GG_m
+\mapvis{\res}
+\eta_* \GG_m 
+\to
+\bigoplus_{z\in X, \codim 1} \iota_{z_*} \ul \ZZ
+\to 0
+,\]
+where the middle term can be thought of as pushing forward $\GG_m$ from the étale site of $\eta$ or pulling back $\GG_m$ to it, which is just $\GG_m$ again, and pushing forward again, and the last term is the **sheaf of divisors**.
+:::
+
+:::{.proof title="?"}
+The first map is either the unit or the counit of the adjunction $\eta_* \mapstofrom \eta^*$, which is the restriction.
 :::
