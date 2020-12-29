@@ -359,7 +359,7 @@ Why?
 Take the direct limit of both sides.
 Note that Čech $H^1$ always computes derived $H^1$.
 
-:::{.theorem title="Grothendieck's Generalization of Hilbert 90"}
+:::{.theorem title="Grothendieck's Generalization of Hilbert 90" ref="thm:hilb90"}
 The following is a bijection:
 \[  
 \Hc^1(X_\zar, \ul \GL_n)
