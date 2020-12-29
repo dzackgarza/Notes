@@ -4,7 +4,11 @@ Recall the definition of $\check{C}(U/X, \mathcal{F})$ and $\check{C}(X_\et, \ma
 
 
 :::{.warnings}
-$\Hc{X_\et, \mathcal{F}} \not\cong H(X_\et, \mathcal{F})$ in general, but by a theorem of Milne this is true if $X$ is quasicompact and any finite subset is contained in an affine open.
+In general,
+\[
+\Hc{X_\et, \mathcal{F}} \not\cong H(X_\et, \mathcal{F})
+,\]
+but by a theorem of Milne this is true if $X$ is quasicompact and any finite subset is contained in an affine open.
 This is true if $X$ is quasiprojective.
 :::
 
@@ -48,7 +52,6 @@ Taking the vertical cohomology yields
 E_2^{i, j} = \Hc^i(U, \mathcal{H}^j(\mathcal{F}))
 ,\]
 where $\mathcal{H}^j$ is the presheaf $V\mapsto H_\et^j(V, \mathcal{F})$.
-
 Now we take cohomology in the other order: taking the vertical cohomology collapses to the bottom row, which are global sections, and so
 
 \[  

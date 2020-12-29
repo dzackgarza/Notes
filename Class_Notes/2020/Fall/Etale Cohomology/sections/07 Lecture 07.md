@@ -1,4 +1,4 @@
-# Lecture 07
+# Lecture 07: Relating Étale and Čech Cohomology
 
 Last time: stalks, sheafification, and $\Sh(X_{\et})$ is abelian.
 Next up, we're aiming to define sheaf cohomology for $\Sh(X_\et)$.
