@@ -4216,6 +4216,10 @@ Last time:
   Étale cohomology of \(\ul{\FF_p}\) in characteristic \(p\).
 \end{itemize}
 
+\hypertarget{the-les-of-the-artin-schreier-exact-sequence}{%
+\subsection{The LES of the Artin-Schreier Exact
+Sequence}\label{the-les-of-the-artin-schreier-exact-sequence}}
+
 Last time we had a scheme \(X_{/\FF_p}\) and the \emph{Artin-Schreier}
 exact sequence of sheaves of \(X_\et\):
 \begin{align*}  
@@ -4333,6 +4337,10 @@ useful. This data is closely related to e.g.~crystalline cohomology.
 
 \end{remark}
 
+\hypertarget{the-uxe9tale-cohomology-of-a-field}{%
+\subsection{The Étale Cohomology of a
+Field}\label{the-uxe9tale-cohomology-of-a-field}}
+
 \begin{example}[?]
 
 We'll try to compute \(H(\qty{\spec k}_\et, \mathcal{F})\), the
@@ -4391,7 +4399,7 @@ computing Galois cohomology, since that complex is the direct limit
 \begin{question}
 
 When can étale cohomology can be computed as some kind of group
-cohomology.
+cohomology?
 
 \end{question}
 
@@ -4410,6 +4418,9 @@ true for \(\GL_n\). Another example will be affine curves.\footnote{Here
   we'll generalize to singular curves.}
 
 \end{answer}
+
+\hypertarget{torsors}{%
+\subsection{Torsors}\label{torsors}}
 
 Goal for the next few classes: compute the étale cohomology of smooth
 (not necessarily projective) curves over \(k=\bar k\),
@@ -4544,12 +4555,11 @@ locally trivial \(G\dash\)torsor split by some \(U\).
 \begin{claim}
 
 \envlist
-1. \(T\) is representable
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
+\item
+  \(T\) is representable
 \item
   \(T\) is split by \(T\)
 \end{enumerate}
@@ -4563,14 +4573,14 @@ Base changing to \(T\times_X U \to U\) is a cover since it's finite
 étale, since it's isomorphic to \(G\times U\) by the definition of local
 triviality.
 
-\end{proof}
-
 \begin{exercise}[?]
 
 Check that base-changing along a cover yields a cover, following from
 the axioms of a site.
 
 \end{exercise}
+
+\end{proof}
 
 \begin{proof}[of 1]
 
@@ -4596,6 +4606,10 @@ Given a torsor for a finite group scheme, it's represented by a
 space.
 
 \end{remark}
+
+\hypertarget{interpretation-of-h1-as-torsors}{%
+\subsection{\texorpdfstring{Interpretation of \(H^1\) as
+Torsors}{Interpretation of H\^{}1 as Torsors}}\label{interpretation-of-h1-as-torsors}}
 
 \begin{proposition}[Interpretation of $H^1$]
 
@@ -4762,6 +4776,10 @@ plus conditions) is called by some sources a \textbf{pseudotorsor}
 trivial torsor} is referred to as a \emph{torsor} instead.
 
 \end{remark}
+
+\hypertarget{proof-of-grothendieck-hilbert-90}{%
+\subsection{Proof of Grothendieck-Hilbert
+90}\label{proof-of-grothendieck-hilbert-90}}
 
 Recall that statement of \cref{thm:hilb90}; we'll now continue with the
 proof:
@@ -5006,7 +5024,7 @@ H^0(X_\et, \GG_m)
 H^0(X_\et, \GG_m)
   \ar[dll]
 \\
-{\color{red} H^1(X_\et, \mu_\ell)}
+{\color{NavyBlue} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
 \Pic(X)
@@ -5024,7 +5042,8 @@ H^2(X_\et, \mu_\ell)
 \end{center}
 
 We know that \(H^0(X_\et, \GG_m)\) are invertible functions on \(X\),
-and the red term is what we'd like to compute.
+and the blue term is what we'd like to compute. We'll make some
+additional assumptions now.
 
 Suppose now \(H^0(X, \OO_X) = k = \bar k\), then
 \(H^0(X_\et,\mu_\ell) = \mu_\ell(k)\) since it is the kernel of the
@@ -5046,7 +5065,7 @@ k\units
 k\units
   \ar[dll, "\delta"', twoheadrightarrow]
 \\
-{\color{red} H^1(X_\et, \mu_\ell)}
+{\color{NavyBlue} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
 \Pic(X)[\ell]
@@ -5104,12 +5123,13 @@ since \(G\actson\zlz\) trivially but not on \(\mu_\ell\).
 Interpretations}\label{geometric-interpretations}}
 
 Let \(X\) be an affine scheme, we now know
-\(H^1(X_\et, \FF_p) = \cok(\OO_X \mapsvia{x^p - x} \OO_x)\), the
-Artin-Schreier map, and these are \(\FF_p\dash\)torsors. We also know
-\(H^1(X_\et, \zlz)\) in terms of the LES if \(k = \bar k\) and
-\(\ch(k) = p\), and this is a \(\zlz\dash\)torsor. Being torsors here
-geometrically means they're covering spaces with those groups as Galois
-groups.
+\begin{align*}
+H^1(X_\et, \FF_p) = \cok(\OO_X \mapsvia{x^p - x} \OO_x)
+,\end{align*} the Artin-Schreier map, and these are
+\(\FF_p\dash\)torsors. We also know \(H^1(X_\et, \zlz)\) in terms of the
+LES if \(k = \bar k\) and \(\ch(k) = p\), and this is a
+\(\zlz\dash\)torsor. Being torsors here geometrically means they're
+covering spaces with those groups as Galois groups.
 
 \begin{question}
 
@@ -5280,8 +5300,8 @@ via the cyclotomic character.
 
 \end{remark}
 
-\hypertarget{proof-of-theorem-2}{%
-\subsubsection{Proof of Theorem}\label{proof-of-theorem-2}}
+\hypertarget{outline-of-proof}{%
+\subsubsection{Outline of Proof}\label{outline-of-proof}}
 
 Goal: we want to show that \(H^{>1}(X_\et, \GG_m) = 0\) for \(X\) a
 smooth curve over \(k=\bar k\). Three ingredients:
@@ -5301,7 +5321,7 @@ smooth curve over \(k=\bar k\). Three ingredients:
 Sequence}\label{pushforwards-and-the-leray-spectral-sequence}}
 
 Suppose \(X\mapsvia{f} Y\) is a morphism of schemes, then we get a
-functor \(f_* \Sh(X_\et) \to \Sh(Y_\et)\): given
+functor \(f_*:\Sh(X_\et) \to \Sh(Y_\et)\): given
 \(\mathcal{F}\in Sh(X_\et)\), we have
 \(f_* \mathcal{F}(U\to Y) \da \mathcal{F}(U\cross_Y X)\). This is
 left-exact and thus has right-derived functors
@@ -5469,6 +5489,10 @@ more like products instead of ``twisted'' things.
 
 \end{remark}
 
+\hypertarget{explicit-characterizations}{%
+\subsubsection{Explicit
+Characterizations}\label{explicit-characterizations}}
+
 We'll now be explicit about what these pushforwards are, so we'll give
 another description of them:
 
@@ -5521,6 +5545,10 @@ open of \(Y\), so we get
 a \qty{ (U \mapsvia{\et} Y) \to H^i(\pi^{-1}(U), \mathcal{F}) }
 ,\end{align*} which is sheafifying the functor we want.
 
+\hypertarget{explicit-characterizations-1}{%
+\subsubsection{Explicit
+Characterizations}\label{explicit-characterizations-1}}
+
 \end{proof}
 
 \begin{example}[?]
@@ -5558,6 +5586,10 @@ rings.
 \end{exercise}
 
 \end{example}
+
+\hypertarget{uxe9tale-cohomology-of-curves-reducing-to-galois-cohomology}{%
+\subsection{Étale Cohomology of Curves: Reducing to Galois
+Cohomology}\label{uxe9tale-cohomology-of-curves-reducing-to-galois-cohomology}}
 
 Goal: we want to understand \(H^{>1}(X, \GG_m)\) where \(X_{/k}\) is a
 curve over \(k = k^{s}\) which is separably closed. We'll reduce this to

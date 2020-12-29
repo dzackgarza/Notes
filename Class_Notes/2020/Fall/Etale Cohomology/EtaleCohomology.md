@@ -2806,6 +2806,8 @@ Last time:
   - Use this to compute:
 - Étale cohomology of $\ul{\FF_p}$ in characteristic $p$.
 
+## The LES of the Artin-Schreier Exact Sequence
+
 Last time we had a scheme $X_{/\FF_p}$ and the *Artin-Schreier* exact sequence of sheaves of $X_\et$:
 \[  
 0\to \ul{\FF_p} \to \OO_X^\et \mapsvia{t\mapsto t^p - t} \OO_X^\et \to 0
@@ -2894,6 +2896,8 @@ So this cohomology don't form a "good" cohomology theory in the sense that they 
 This data is closely related to e.g. crystalline cohomology.
 :::
 
+## The Étale Cohomology of a Field
+
 :::{.example title="?"}
 We'll try to compute $H(\qty{\spec k}_\et, \mathcal{F})$, the cohomology of the étale site of a field, using Čech cohomology.
 We had an equivalence of categories
@@ -2937,7 +2941,7 @@ As a corollary, this complex is quasi-isomorphic to the usual complex computing 
 :::
 
 :::{.question}
-When can étale cohomology can be computed as some kind of group cohomology.
+When can étale cohomology can be computed as some kind of group cohomology?
 :::
 
 :::{.answer}
@@ -2952,6 +2956,8 @@ Here a curve will be a smooth separated scheme of finite type of dimension 1 ove
 We won't assume properness, and we'll generalize to singular curves.
 
 :::
+
+## Torsors
 
 Goal for the next few classes:
 compute the étale cohomology of smooth (not necessarily projective) curves over $k=\bar k$, i.e. $H^i(C_\et, \zlnz)$ where $\ell \neq \ch(k)$.
@@ -3039,6 +3045,7 @@ Suppose $G$ is a finite étale group scheme over $X$, and $T$ is a locally trivi
 
 :::{.claim}
 \envlist
+
 1. $T$ is representable
 
 2. $T$ is split by $T$
@@ -3047,11 +3054,13 @@ Suppose $G$ is a finite étale group scheme over $X$, and $T$ is a locally trivi
 :::{.proof title="$1\implies 2$"}
 $T\times T$ is trivial, so we need to verify that $T \covers X$.
 Base changing to $T\times_X U \to U$ is a cover since it's finite étale, since it's isomorphic to $G\times U$ by the definition of local triviality.
-:::
 
 :::{.exercise title="?"}
 Check that base-changing along a cover yields a cover, following from the axioms of a site.
 :::
+
+:::
+
 
 :::{.proof title="of 1"}
 Observe that $\ro{T}{U_\et}$ is representable, since it's isomorphic to $\ro{G}{U_\et}$ as a scheme and $G$ was a finite étale group scheme.
@@ -3067,6 +3076,8 @@ We proved effectiveness for quasicoherent sheaves, and an affine $X\dash$scheme 
 :::{.remark}
 Given a torsor for a finite group scheme, it's represented by a $G\dash$cover which is not just a sheaf but rather an honest covering space.
 :::
+
+## Interpretation of $H^1$ as Torsors
 
 :::{.proposition title="Interpretation of $H^1$"}
 There is a bijection
@@ -3189,6 +3200,8 @@ Using fppf descent for vector bundles yields the theorem.
 :::{.remark}
 What we've been calling a *torsor* (a sheaf with a group action plus conditions) is called by some sources a **pseudotorsor** (e.g. the Stacks Project), and what we've been calling a *locally trivial torsor* is referred to as a *torsor* instead.
 :::
+
+## Proof of Grothendieck-Hilbert 90
 
 Recall that statement of \cref{thm:hilb90}; we'll now continue with the proof:
 
@@ -3363,7 +3376,7 @@ H^0(X_\et, \GG_m)
 H^0(X_\et, \GG_m)
   \ar[dll]
 \\
-{\color{red} H^1(X_\et, \mu_\ell)}
+{\color{NavyBlue} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
 \Pic(X)
@@ -3378,7 +3391,8 @@ H^2(X_\et, \mu_\ell)
 \cdots
 &
 \end{tikzcd}
-We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$, and the red term is what we'd like to compute.
+We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$, and the blue term is what we'd like to compute.
+We'll make some additional assumptions now.
 
 Suppose now $H^0(X, \OO_X) = k = \bar k$, then $H^0(X_\et,\mu_\ell) = \mu_\ell(k)$ since it is the kernel of the $\ell$th power map.
 We can also compute $H^1(X_\et, \mu_\ell)$, since our diagram reduces to
@@ -3396,7 +3410,7 @@ k\units
 k\units
   \ar[dll, "\delta"', twoheadrightarrow]
 \\
-{\color{red} H^1(X_\et, \mu_\ell)}
+{\color{NavyBlue} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
 \Pic(X)[\ell]
@@ -3435,7 +3449,11 @@ This already happens for $H^0$, since $G\actson\zlz$ trivially but not on $\mu_\
 
 ### Geometric Interpretations
 
-Let $X$ be an affine scheme, we now know $H^1(X_\et, \FF_p) = \cok(\OO_X \mapsvia{x^p - x} \OO_x)$, the Artin-Schreier map, and these are $\FF_p\dash$torsors.
+Let $X$ be an affine scheme, we now know 
+\[
+H^1(X_\et, \FF_p) = \cok(\OO_X \mapsvia{x^p - x} \OO_x)
+,\]
+the Artin-Schreier map, and these are $\FF_p\dash$torsors.
 We also know $H^1(X_\et, \zlz)$ in terms of the LES if $k = \bar k$ and $\ch(k) = p$, and this is a $\zlz\dash$torsor.
 Being torsors here geometrically means they're covering spaces with those groups as Galois groups.
 
@@ -3578,7 +3596,7 @@ $X$ is a scheme over $\bar k$, and if it started over some subfield $L$ then $\G
 These isomorphisms will not be Galois equivariant, and the $\zlnz$ showing up in degree 2 cohomology will admit a Galois action via the cyclotomic character.
 :::
 
-### Proof of Theorem
+### Outline of Proof
 
 Goal: we want to show that $H^{>1}(X_\et, \GG_m) = 0$ for $X$ a smooth curve over $k=\bar k$.
 Three ingredients:
@@ -3592,7 +3610,7 @@ Three ingredients:
 
 ## Pushforwards and the Leray Spectral Sequence
 
-Suppose $X\mapsvia{f} Y$ is a morphism of schemes, then we get a functor $f_* \Sh(X_\et) \to \Sh(Y_\et)$: given $\mathcal{F}\in Sh(X_\et)$, we have $f_* \mathcal{F}(U\to Y) \da \mathcal{F}(U\cross_Y X)$.
+Suppose $X\mapsvia{f} Y$ is a morphism of schemes, then we get a functor $f_*:\Sh(X_\et) \to \Sh(Y_\et)$: given $\mathcal{F}\in Sh(X_\et)$, we have $f_* \mathcal{F}(U\to Y) \da \mathcal{F}(U\cross_Y X)$.
 This is left-exact and thus has right-derived functors $R^\wait f_*:\Sh^\Ab(X_\et) \to \Sh^\Ab(Y_\et)$.
 
 How to think about this:
@@ -3716,6 +3734,8 @@ Note that this is false for smooth proper morphisms between manifolds!
 Instead, for varieties, they behave more like products instead of "twisted" things.
 :::
 
+### Explicit Characterizations
+
 We'll now be explicit about what these pushforwards are, so we'll give another description of them:
 
 :::{.proposition title="?"}
@@ -3754,6 +3774,8 @@ We can now evaluate this on an open of $Y$, so we get
 a \qty{ (U \mapsvia{\et} Y) \to H^i(\pi^{-1}(U), \mathcal{F}) }
 ,\] 
 which is sheafifying the functor we want.
+
+### Explicit Characterizations
 :::
 
 :::{.example title="?"}
@@ -3793,6 +3815,9 @@ The **strictly Henselian field** of $X$ at $\bar x$.
 :::
 
 :::
+
+
+## Étale Cohomology of Curves: Reducing to Galois Cohomology
 
 Goal: we want to understand $H^{>1}(X, \GG_m)$ where $X_{/k}$ is a curve over $k = k^{s}$ which is separably closed.
 We'll reduce this to questions in Galois cohomology.

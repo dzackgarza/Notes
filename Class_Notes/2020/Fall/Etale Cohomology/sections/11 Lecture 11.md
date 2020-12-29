@@ -83,6 +83,8 @@ We can now evaluate this on an open of $Y$, so we get
 a \qty{ (U \mapsvia{\et} Y) \to H^i(\pi^{-1}(U), \mathcal{F}) }
 ,\] 
 which is sheafifying the functor we want.
+
+### Explicit Characterizations
 :::
 
 :::{.example title="?"}
@@ -122,6 +124,9 @@ The **strictly Henselian field** of $X$ at $\bar x$.
 :::
 
 :::
+
+
+## Étale Cohomology of Curves: Reducing to Galois Cohomology
 
 Goal: we want to understand $H^{>1}(X, \GG_m)$ where $X_{/k}$ is a curve over $k = k^{s}$ which is separably closed.
 We'll reduce this to questions in Galois cohomology.
