@@ -3156,13 +3156,13 @@ Colimits exists in \(\Sh(X_\et)\).
 
 \begin{proof}[?]
 
-Colimits exist for presheaves, since colimits always exists for sheaves
-valued in a category where colimits exist since they're computed
-pointwise. Left adjoints send colimits to colimits, so in general we'll
-construct colimits of sheaves by taking colimits of presheaves and then
-sheafifying. This is true because colimits are defined by mapping
-\emph{out}, and the definition of left adjoints is that one knows how to
-map out of it.
+Colimits exist for presheaves, since colimits always exists for functor
+categories valued in a category where colimits exist since they're
+computed pointwise. Left adjoints send colimits to colimits, so in
+general we'll construct colimits of sheaves by taking colimits of
+presheaves and then sheafifying. This is true because colimits are
+defined by mapping \emph{out}, and the definition of left adjoints is
+that one knows how to map out of it.
 
 \end{proof}
 
@@ -5863,8 +5863,23 @@ torsor by choosing a trivializing map \(U\to X\) so that
 To be continued.
 \end{quote}
 
-\hypertarget{lecture-12-todo}{%
-\section{Lecture 12 (todo)}\label{lecture-12-todo}}
+\hypertarget{lecture-12}{%
+\section{Lecture 12}\label{lecture-12}}
+
+\hypertarget{brauer-groups-1}{%
+\subsection{Brauer Groups}\label{brauer-groups-1}}
+
+Goal: for \(C\) a curve over \(k=\bar k\), we've computed
+\begin{align*} 
+H^i(C, \GG_m) 
+= 
+\begin{cases}
+\OO_C\units(C) & i=0\\
+\Pic(C) & i=1 \\
+0 & i > 1
+\end{cases}
+.\end{align*} Currently \(i>1\) is a mystery, so today we'll look at
+\(i=2\). Recall that we've reduced this to the Galois cohomology
 
 \hypertarget{lecture-13-todo}{%
 \section{Lecture 13 (todo)}\label{lecture-13-todo}}

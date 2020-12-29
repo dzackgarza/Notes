@@ -2025,7 +2025,7 @@ Colimits exists in $\Sh(X_\et)$.
 :::
 
 :::{.proof title="?"}
-Colimits exist for presheaves, since colimits always exists for sheaves valued in a category where colimits exist since they're computed pointwise.
+Colimits exist for presheaves, since colimits always exists for functor categories valued in a category where colimits exist since they're computed pointwise.
 Left adjoints send colimits to colimits, so in general we'll construct colimits of sheaves by taking colimits of presheaves and then sheafifying.
 This is true because colimits are defined by mapping *out*, and the definition of left adjoints is that one knows how to map out of it.
 :::
@@ -4041,7 +4041,23 @@ This yields a cocycle in $\PGL_n(U\cross_X U)$.
 > To be continued.
 
 
-# Lecture 12 (todo)
+# Lecture 12
+
+## Brauer Groups
+
+Goal: for $C$ a curve over $k=\bar k$, we've computed
+\[ 
+H^i(C, \GG_m) 
+= 
+\begin{cases}
+\OO_C\units(C) & i=0\\
+\Pic(C) & i=1 \\
+0 & i > 1
+\end{cases}
+.\]
+Currently $i>1$ is a mystery, so today we'll look at $i=2$.
+Recall that we've reduced this to the Galois cohomology
+
 
 # Lecture 13 (todo)
 
