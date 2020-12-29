@@ -290,3 +290,19 @@ H^i(\eta,\GG_m)
 .\]
 
 **Upshot**: this reduces the computation of the étale cohomology of a curve to Galois cohomology.
+Proving this theorem is hard, and will lead us to Brauer groups.[^another_daniel_face]
+
+[^another_daniel_face]: 
+Another one of Daniel's favorite topics in the course!
+
+## Brauer Groups
+
+
+:::{.definition title="Cohomological Brauer Group"}
+Let $X$ be a scheme, then the **cohomological Brauer group** is defined as
+\[  
+\Br^\coh(X) \da H^s(X_\et, \GG_m)_{\tors}
+.\]
+
+:::
+
