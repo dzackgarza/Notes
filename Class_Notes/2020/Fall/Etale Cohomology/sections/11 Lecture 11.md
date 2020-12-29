@@ -155,6 +155,7 @@ This uses that $X$ is reduced.
 **2**:
 Exactness in the middle.
 Given $f\in \eta_* \GG_m(U)$ with $\Div(f) = 0$, we want to show $f$ comes from $\GG_m(U)$.
+We need to show $f, f^{-1}$ are regular, and it's enough to show that $f$ is regular.
 
 **3**:
 
