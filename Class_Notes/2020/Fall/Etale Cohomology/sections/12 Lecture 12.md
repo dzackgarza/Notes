@@ -16,8 +16,4 @@ Currently $i>1$ is a mystery, so today we'll look at $i=2$.
 Recall that we've reduced this to the Galois cohomology
 
 
-\begin{tikzcd}
- \ar[r] &
- \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
 
-\end{tikzcd}  
