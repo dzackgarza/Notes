@@ -65,9 +65,12 @@ local function tikz2image(src, outfile)
       if not rc1[1] then
         print("Error on 1")
         print(dump(rc1))
-        local lines = lines_from("tikz.tex")
+        lines = {}
+        for line in io.lines('tikz.tex') do 
+          lines[#lines + 1] = line
+        end
         for k,v in pairs(lines) do
-          print('line[' .. k .. ']', v)
+          print(v)
         end
         return false
       end
