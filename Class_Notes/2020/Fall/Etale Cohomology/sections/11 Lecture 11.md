@@ -269,7 +269,24 @@ Let's try to understand the stalks at geometric points:
 H^j(K_{\bar x}, \GG_m)
 ,\]
 where the field appearing is the *strict Henselization* from the earlier discussion.
+We'll be able to compute this if we have the following theorem:
 
 :::{.theorem title="?"}
 Let $K$ be the function field of a curve or an algebraically closed field, or $K = K_{\bar x}$ is the strict Henselian field of a geometric point of a curve over a separably (algebraically) closed field.
+Then 
+\[  
+H^{>0}(K, \GG_m) = 0
+.\]
 :::
+
+This will suffice since 
+$R^{>0} \eta_*GG_m = 0$, yielding a spectral sequence where $E_2 = E_ \infty$:
+\[  
+H^i(X_\et, \eta_* \GG_m)
+=
+H^i(\eta,\GG_m)
+=
+0 && \text{if }i>0
+.\]
+
+**Upshot**: this reduces the computation of the étale cohomology of a curve to Galois cohomology.
