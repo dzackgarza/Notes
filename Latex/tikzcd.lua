@@ -62,8 +62,8 @@ local function tikz2image(src, outfile)
       local file1 = io.popen(cmd1)
       local output1 = file1:read('*all')
       local rc1 = {file1:close()}
-      if rc1[0] == nil then
-        print("Error.")
+      if not rc1[1] then
+        print("Error on 1")
         print(dump(rc1))
         local lines = lines_from("tikz.tex")
         for k,v in pairs(lines) do
@@ -75,8 +75,8 @@ local function tikz2image(src, outfile)
       local file2 = io.popen(cmd2)
       local output2 = file2:read('*all')
       local rc2 = {file2:close()}
-      if rc2[0] == nil then
-        print("Error.")
+      if not rc2[1] then
+        print("Error on 2")
         print(dump(rc2))
         return false
       end
