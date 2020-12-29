@@ -232,5 +232,16 @@ H^s(z_\et, \ul \ZZ)
 0 & s>0
 \end{cases}
 .\]
-since we have a separably
+since the zero term is global sections and $k$ is separably (algebraically) closed, and the Galois cohomology vanishes in $i>0$.
+So we get a degenerate spectral sequence with one column, yielding
+\[  
+H^i (X_\et, \iota_{z_*} \ul \ZZ) 
+=
+H^i(z_{\et}, \ZZ)
+=
+\begin{cases}
+\ZZ & i = 0 \\
+0 & i> 0
+\end{cases}
+.\]
 :::
