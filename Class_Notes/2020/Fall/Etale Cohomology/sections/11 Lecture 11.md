@@ -82,3 +82,9 @@ a \qty{ (U \mapsvia{\et} Y) \to H^i(\pi^{-1}(U), \mathcal{F}) }
 ,\] 
 which is sheafifying the functor we want.
 :::
+
+:::{.example title="?"}
+Suppose $X$ is an integral scheme and $\eta\injectsvia{\iota} X$ is its generic point.
+Suppose $\mathcal{F}\in \Sh(\eta_\et)$.
+How to we understand $R^i \iota_& \mathcal{F}$?
+:::
