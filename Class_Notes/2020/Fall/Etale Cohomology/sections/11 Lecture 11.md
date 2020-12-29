@@ -54,13 +54,16 @@ Choose an injective resolution $\mathcal{F}\to \mathcal{I}\wait$, then $\mathcal
 Let's compute this pushforward in another way: we have 
 \begin{tikzcd}
 \Presh(X_\et) 
-  \ar[r]
-& ? 
-  \ar[d]
+  \ar[r, "\pi_*"]
+& \Presh(Y_\et)
+  \ar[d, "\text{sheafification}", dotted]
 \\
 \Sh(X_\et) 
   \ar[r, "\pi_*"]
-  \ar[u, "\text{forget}"]
+  \ar[u, "\text{forget}"']
 & \Sh(Y_\et) 
 \end{tikzcd}
+Here the induced map on presheaves is exact although the forgetful functor may not be.
+This is because a sequence of presheaves is exact iff it's exact on every open, but $\pi_*$ just pulls back opens.
+This diagram commutes since 
 :::
