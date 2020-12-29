@@ -4,6 +4,8 @@
 What we've been calling a *torsor* (a sheaf with a group action plus conditions) is called by some sources a **pseudotorsor** (e.g. the Stacks Project), and what we've been calling a *locally trivial torsor* is referred to as a *torsor* instead.
 :::
 
+## Proof of Grothendieck-Hilbert 90
+
 Recall that statement of \cref{thm:hilb90}; we'll now continue with the proof:
 
 :::{.proof title="of Hilbert 90"}
@@ -177,7 +179,7 @@ H^0(X_\et, \GG_m)
 H^0(X_\et, \GG_m)
   \ar[dll]
 \\
-{\color{red} H^1(X_\et, \mu_\ell)}
+{\color{AquaMarine} H^1(X_\et, \mu_\ell)}
   \ar[r]
 &
 \Pic(X)
@@ -192,7 +194,7 @@ H^2(X_\et, \mu_\ell)
 \cdots
 &
 \end{tikzcd}
-We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$, and the red term is what we'd like to compute.
+We know that $H^0(X_\et, \GG_m)$ are invertible functions on $X$, and the blue term is what we'd like to compute.
 
 Suppose now $H^0(X, \OO_X) = k = \bar k$, then $H^0(X_\et,\mu_\ell) = \mu_\ell(k)$ since it is the kernel of the $\ell$th power map.
 We can also compute $H^1(X_\et, \mu_\ell)$, since our diagram reduces to

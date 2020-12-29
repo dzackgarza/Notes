@@ -281,6 +281,8 @@ We proved effectiveness for quasicoherent sheaves, and an affine $X\dash$scheme 
 Given a torsor for a finite group scheme, it's represented by a $G\dash$cover which is not just a sheaf but rather an honest covering space.
 :::
 
+## Interpretation of $H^1$ as Torsors
+
 :::{.proposition title="Interpretation of $H^1$"}
 There is a bijection
 \[  
