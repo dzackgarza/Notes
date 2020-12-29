@@ -17,21 +17,4 @@ Recall that we've reduced this to the Galois cohomology
 
 
 
-\begin{tikzcd}
-A
-  \ar[r]
-&
-A
-  \ar[r]
-&
-A
-  \ar[dll]
-\\
-A
-  \ar[r]
-&
-A
-  \ar[r]
-&
-A
-\end{tikzcd}
+
