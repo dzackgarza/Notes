@@ -92,6 +92,12 @@ torsors, which has a description in terms of
 $\Hc^1$ 
 : the boundary map doesn't usually make sense for a nonabelian group, but it does in very low degrees such as $i=1$.
 So we need to implement the snake lemma.
+Start with 
+$[T]\in H^i(X_\et, \PGL_n)$
+where 
+
+
+
 
 
 
