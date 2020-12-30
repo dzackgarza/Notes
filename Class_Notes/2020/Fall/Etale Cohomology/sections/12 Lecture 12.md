@@ -110,6 +110,11 @@ We can write
 A priori it's just a section to $\GL_{n}$ but we know that this goes to 1 in $\PGL_{n}$, meaning it must comes from $\GG_{m}$.
 The LHS is a 2-cocycle representing an element of $H^{2}\qty{X_{\et}, \GG_{m}}$  
 
+:::{.exercise title="?"}
+Check that $d$ of this element is zero.
+:::
+
+
 
 
 
