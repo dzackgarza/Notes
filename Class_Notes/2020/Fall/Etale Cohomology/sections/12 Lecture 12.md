@@ -156,4 +156,3 @@ An example of this has come up before: namely that $\GL_{n}\dash$torsors corresp
 
 
 
-
