@@ -107,7 +107,8 @@ We can write
 \pi_{23}^{*}\pi_{12}^{*}s \qty{\pi_{13}s}\inv
 \in \Gamma\qty{U\cross_{X}U\cross_{X}U, \GG_{m}}
 .\]
-A priori it's just a section to $\GL_{n}$ but we know that this goes to 1 in $\PGL_{n}asdasdasdas$   
+A priori it's just a section to $\GL_{n}$ but we know that this goes to 1 in $\PGL_{n}$, meaning it must comes from $\GG_{m}$.
+The LHS is a 2-cocycle representing an element of $H^{2}\qty{X_{\et}, \GG_{m}}$  
 
 
 
