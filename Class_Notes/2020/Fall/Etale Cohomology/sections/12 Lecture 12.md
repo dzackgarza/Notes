@@ -104,8 +104,10 @@ Note that $H^{2}\qty{\GG_{m}}$ is represented by a section to $\GG_{m}$ of $U\cr
 We started with something satisfying the cocycle condition but lifted in an arbitrary way, so it may not still satisfy the cocycle condition.
 We can write 
 \[	
-\pi_{12}s \cdot \qty{\pi_{23}s}\inv \in \Gamma\qty{U\cross_{X}U\cross_{X}U, \GG_{m}}
+\pi_{23}^{*}\pi_{12}^{*}s \qty{\pi_{13}s}\inv
+\in \Gamma\qty{U\cross_{X}U\cross_{X}U, \GG_{m}}
 .\]
+A priori it's just a section to $\GL_{n}$ but we know that this goes to 1 in $\PGL_{n}asdasdasdas$   
 
 
 
