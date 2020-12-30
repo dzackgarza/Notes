@@ -140,6 +140,8 @@ There is a natural bijection
 \correspond{\text{ forms of  } T}
 .\]
 An example of this has come up before: namely that $\GL_{n}\dash$torsors corresponded to vector bundles.
+asdsdsadsad
+asdsadsadsadas
 
 
 
