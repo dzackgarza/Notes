@@ -95,6 +95,9 @@ So we need to implement the snake lemma.
 Start with 
 $[T]\in H^i(X_\et, \PGL_n)$
 where $T$ is a $\PGL_n\dash$ torsor split by $U\mapsvia{}X$.
-On $U\cross_X U$, descent data is given by a section $\Gamma(U\cross_X U, \PGL_n)$.
+On $U\cross_X U$, descent data is given by a section $\Gamma(U\cross_X U, \PGL_n)$ as a sheaf.
+This is because descent data is an isomorphism on this double intersection and an automorphism of $\PGL_n$ is the same as a section to $\PGL_n$.
+This descent data satisfies the cocycle condition.
+How do we apply the boundary map to an element in the Čech complex?
 
 
