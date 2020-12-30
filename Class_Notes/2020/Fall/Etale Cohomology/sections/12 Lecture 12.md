@@ -87,7 +87,11 @@ We'll now try to make
 $\delta$ 
 explicit in terms of Čech cohomology, which is the only way we have to make sense of the LHS set in \cref{eq:12_union_1}.
 We defined it to be the set of étale locally trivial 
-$\PGL_n\dash\torsors$ 
+$\PGL_n\dash$ 
+torsors, which has a description in terms of 
+$\Hc^1$ 
+: the boundary map doesn't usually make sense for a nonabelian group, but it does in very low degrees such as $i=1$.
+So we need to implement the snake lemma.
 
 
 
