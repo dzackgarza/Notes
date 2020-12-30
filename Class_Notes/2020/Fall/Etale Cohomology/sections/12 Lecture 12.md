@@ -94,11 +94,6 @@ $\Hc^1$
 So we need to implement the snake lemma.
 Start with 
 $[T]\in H^i(X_\et, \PGL_n)$
-where 
-
-
-
-
-
+where $T$ is a $\PGL_n\dash$ torsor split by $U\mapsvia{}X$.
 
 
