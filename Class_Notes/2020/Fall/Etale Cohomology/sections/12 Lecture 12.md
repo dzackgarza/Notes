@@ -99,5 +99,4 @@ On $U\cross_X U$, descent data is given by a section $\Gamma(U\cross_X U, \PGL_n
 This is because descent data is an isomorphism on this double intersection and an automorphism of $\PGL_n$ is the same as a section to $\PGL_n$.
 This descent data satisfies the cocycle condition.
 How do we apply the boundary map to an element in the Čech complex?
-
-
+After refining $U$ we can lift this descent data to $\Gamma() $
