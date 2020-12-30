@@ -116,6 +116,12 @@ Check that $d$ of this element is zero.
 :::
 
 
+:::{.slogan}
+$\delta\qty{[T]}$ is the obstruction to lifting $T$ to a $\GL_{n}\dash$torsor.
+:::
+
+
+
 
 
 
