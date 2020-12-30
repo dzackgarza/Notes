@@ -117,11 +117,21 @@ Check that $d$ of this element is zero.
 
 
 :::{.slogan}
-$\delta\qty{[T]}$ is the obstruction to lifting $T$ to a $\GL_{n}\dash$torsor.
+$\delta\qty{[T]}$ is the obstruction to lifting a $\PGL_{n}\dash$torsor $T$ to a $\GL_{n}\dash$torsor.
+If this class vanishes, a lift exists.
 :::
 
+
+:::{.remark}
 This is what you might expect: the image of something coming from a boundary map is the obstruction to coming from the previous map.
-This class is called the **Brauer class of $T$ <BS>**.
+This class is called the **Brauer class of $T$**.
+:::
+
+We've just mapped from a set to a group, so we don't know that the image is a group yet, and we don't yet know that the image is in $\Br^{\coh}$ since we don't know if the image is torsion.
+
+### Geometric Interpretations of $\PGL_{n}\dash$Torsors Brauer Classes
+
+
 
 
 
