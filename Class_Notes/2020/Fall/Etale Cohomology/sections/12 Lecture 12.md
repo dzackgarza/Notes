@@ -50,6 +50,7 @@ was the boundary map of
 \Union_n H^1(X_\et, \PGL_n)
 \mapsvia{\delta}
 H^2(X_\et, \GG_m)
+\label{eq:12_union_1}
 \]
 arising from the SES of sheaves of groups on 
 $X_\et$,
@@ -84,6 +85,7 @@ for a SES $A \mapsvia{}B \mapsvia{}C$, you need that $A$ is abelian (or in the c
 
 We'll now try to make
 $\delta$ 
+explicit in terms of Čech cohomology, which is the only way we have to make sense of the LHS set in \cref{eq:12_union_1}
 
 
 
