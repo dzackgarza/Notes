@@ -100,6 +100,7 @@ This is because descent data is an isomorphism on this double intersection and a
 This descent data satisfies the cocycle condition.
 How do we apply the boundary map to an element in the Čech complex?
 After refining $U$ we can lift this descent data to a section $\Gamma\qty{U\cross_{X}U,GL_{n}}$.
+Note that $H^{2}\qty{\GG_{m}}$ is represented by a section of $
 
 
 
