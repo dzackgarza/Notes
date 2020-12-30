@@ -131,6 +131,14 @@ We've just mapped from a set to a group, so we don't know that the image is a gr
 
 ### Geometric Interpretations of $\PGL_{n}\dash$Torsors Brauer Classes
 
+Suppose $T\in\Sh^{\set}\qty{X_{\et}}$ and $G = \ul{\Aut}\qty{T}$ as a sheaf, whose sections are given on an open $U$ by pulling back $T$ to $U$ and compute its automorphisms, where for example $T$ is a scheme.
+There is a natural bijection
+
+\[
+\correspond{\text{ Locally split } \\ G\dash\text{torsors}}
+&\mapstofrom
+\correspond{\text{ forms of  } T}
+.\]
 
 
 
