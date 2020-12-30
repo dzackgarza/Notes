@@ -38,10 +38,25 @@ Recall that we defined the *cohomological Brauer group of $X$*
 We also started defining the Brauer group by considering 
 \[	
 \Union_n \ts{\text{étale locally trivial } \PGL_n\dash\text{torsors}}
-\mapsvia{f}
+\mapsvia{\delta}
 H^2(X_\et, \GG_m)
 ,\]
 and defining $\Br(X) \da \im f$ as a set, which is a reasonably concrete geometric object.
+This map came from a LES in cohomology, coming from a SES of sheaves, not all of which were abelian.
+The definition of 
+$\delta$ 
+was the boundary map of 
+\[	
+\Union_n H^1(X_\et, \PGL_n)
+\mapsvia{\delta}
+H^2(X_\et, \GG_m)
+\]
+arising from the SES 
+\[	
+1 \to \GG_m \mapsvia{} \PGL_n \to 1
+.\]
+
+
 
 
 
