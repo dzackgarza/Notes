@@ -29,5 +29,19 @@ is much harder: they classify more general objects called **gerbes**.
 A miracle is that 
 $H^2(\GG_m)$ 
 has real meaning, and is very closely related to real physical objects (certain torsors).
-Recall that we defined the *cohomological Brauer group of $X$* \cref{def:cohom_brauer_group}.
+Recall that we defined the *cohomological Brauer group of $X$*
+(\cref{def:cohom_brauer_group}) as 
+\[	
+\Br^{\coh }\da \Br'(X) \da H^i(X_\et, \GG_m)_{\tors }
+.\]
+
+We also started defining the Brauer group by considering 
+\[	
+\Union_n \ts{\text{étale locally trivial} \PGL_n\dash\text{torsors}}
+\mapsvia{f}
+H^2(X_\et, \GG_m)
+,\]
+and defining $\Br(X) \da \im f$.
+
+
 
