@@ -95,5 +95,6 @@ So we need to implement the snake lemma.
 Start with 
 $[T]\in H^i(X_\et, \PGL_n)$
 where $T$ is a $\PGL_n\dash$ torsor split by $U\mapsvia{}X$.
+On $U\cross_X U$, descent data is given by a section $\Gamma(U\cross_X U, \PGL_n)$.
 
 
