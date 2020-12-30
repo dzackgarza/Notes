@@ -363,6 +363,5 @@ Next time, to review
 - Étale morphisms
 - Definition of a site
 
-
-
+asdsadsa
 
