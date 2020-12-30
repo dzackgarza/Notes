@@ -1,0 +1,645 @@
+\input{"preamble.tex"}
+
+\addbibresource{/home/zack/Notes/library.bib}
+
+\let\Begin\begin
+\let\End\end
+\newcommand\wrapenv[1]{#1}
+
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+\title{
+\rule{\linewidth}{1pt} \\
+\textbf{
+    Étale Cohomology
+  }
+    \\ {\normalsize University of Georgia, Fall 2020} \\
+  \rule{\linewidth}{2pt}
+}
+\titlehead{
+       \begin{minipage}{.35\linewidth}
+    \begin{flushleft}
+      \vspace{2em}
+      {\fontsize{6pt}{2pt} \textit{Notes: These are notes live-tex'd
+from a graduate course on Étale Cohomology taught by Daniel Litt at the
+University of Georgia in Fall 2020. As such, any errors or inaccuracies
+are almost certainly my own. } } \\
+    \end{flushleft}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.65\linewidth}
+    \end{minipage}
+  }
+
+
+
+
+
+
+
+\begin{document}
+
+\date{}
+\author{D. Zack Garza}
+\maketitle
+\begin{flushleft}
+\textit{D. Zack Garza} \\
+\textit{University of Georgia} \\
+  \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
+{\tiny \textit{Last updated:} 782711(date +%Y-%m-%d%n) }
+\end{flushleft}
+
+
+\newpage
+
+% Note: addsec only in KomaScript
+\addsec{Table of Contents}
+\tableofcontents
+\newpage
+
+\hypertarget{lecture-1}{%
+\section{Lecture 1}\label{lecture-1}}
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+\begin{itemize}
+\tightlist
+\item
+  \url{https://www.daniellitt.com/tale-cohomology}
+\item
+  \autocite{milneLEC}, \autocite{milne_2017},
+  \autocite{freitag_kiehl_2013}, \autocite{katz}
+\end{itemize}
+
+\hypertarget{intro}{%
+\subsection{Intro}\label{intro}}
+
+Prerequisites:
+
+\begin{itemize}
+\tightlist
+\item
+  Homological Algebra
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Abelian Categories
+  \item
+    Derived Functors
+  \item
+    Spectral Sequences (just exposure!)
+  \end{itemize}
+\item
+  Sheaf theory and sheaf cohomology
+\item
+  Schemes (Hartshorne II and III)
+\end{itemize}
+
+Outline/Goals:
+
+\begin{itemize}
+\tightlist
+\item
+  Basics of etale cohomology
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Etale morphism
+  \item
+    Grothendieck topologies
+  \item
+    The etale topology
+  \item
+    Etale cohomology and the basis theorems
+  \item
+    Etale cohomology of curves
+  \item
+    Comparison theorems to singular cohomology
+  \item
+    Focused on the case where coefficients are a constructible sheaf.
+  \end{itemize}
+\item
+  Prove the Weil Conjectures (more than one proof)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Proving the Riemann Hypothesis for varieties over finite fields
+  \end{itemize}
+
+  \begin{quote}
+  One of the greatest pieces of 20th century mathematics!
+  \end{quote}
+\item
+  Topics
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Weil 2 (Strengthening of RH, used in practice)
+  \item
+    Formality of algebraic varieties (topological features unique to
+    varieties)
+  \item
+    Other things (monodromy, refer to Katz' AWS notes)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{what-is-etale-cohomology}{%
+\subsection{What is Etale Cohomology?}\label{what-is-etale-cohomology}}
+
+Suppose \(X/\CC\) is a quasiprojective variety: a finite type separated
+integral \(\CC\dash\)scheme. If you take the complex points, it
+naturally has the structure of a complex analytic space
+\(X(\CC)^{\text{an}}\): you can give it the Euclidean topology, which is
+much finer than the Zariski topology. For a nice topological space, we
+can associate the singular cohomology \(H^i(X(\CC)^{\text{an}}, \ZZ)\),
+which satisfies several nice properties:
+
+\begin{itemize}
+\tightlist
+\item
+  Finitely generated \(\ZZ\dash\)modules
+\item
+  Extra Hodge structure when tensored up to \(\CC\) (same as \(\CC\)
+  coefficients)
+\item
+  Cycle classes (i.e.~associate to a subvariety a class in cohomology)
+\end{itemize}
+
+Goal of etale cohomology: do something similar for much more general
+``nice'' schemes. Note that some of these properties are special to
+complex varieties. (E.g. finitely generated: not true for a random
+topological space.)
+
+We'll associate \(X\) a ``nice scheme''
+\(\rightsquigarrow H^i(X_{\text{et}}, \ZZ/\ell^n\ZZ)\). Take the inverse
+limit over all \(n\) to obtain the \(\ell\dash\)adic cohomology
+\(H^i(X_{\text{et}}, \ZZ_\ell)\). You can tensor with \(\QQ\) to get
+something with \(\QQ_\ell\) coefficients. And as in singular cohomology,
+you can a ``twisted coefficient system''.
+
+\begin{example}[?]
+
+What are some nice schemes?
+
+\begin{itemize}
+\tightlist
+\item
+  \(X = \spec \OO_k\), the ring of integers over a number field.
+\item
+  \(X\) a variety over an algebraically closed field
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Typical, most analogous to taking a variety over \(\CC\).
+  \end{itemize}
+\item
+  \(X\) a variety over a non-algebraically closed field
+\end{itemize}
+
+\end{example}
+
+Some comparisons between the last two cases:
+
+\begin{itemize}
+\tightlist
+\item
+  For \(\CC\dash\) variety, \(H^i_{\text{sing}}\) will vanish above
+  \(i=2d\).
+\item
+  Over a finite field, \(H^i\) will vanish for \(i>2d+1\) but generally
+  not vanish for \(i=2d+1\).
+\end{itemize}
+
+In good situations, these are finitely generated
+\(\ZZ/\ell^n\ZZ\dash\)modules, have Mayer-Vietoris and excision
+sequences, spectral sequences, etc. Related invariants: for a scheme
+with a geometric point \footnote{A \textbf{geometric point} is a map
+  from \(\spec X\) to an algebraically closed field.}
+
+\((X, \bar x) \rightsquigarrow \pi_1^{\text{étale}}(X, \bar x)\), which
+is a profinite topological group, which is a profinite topological
+group.
+
+\begin{remark}
+
+More invariants beyond the scope of this course:
+
+\begin{itemize}
+\tightlist
+\item
+  Higher homotopy groups
+\item
+  Homotopy type (equivalence class of spaces)
+\end{itemize}
+
+So we want homotopy-theoretic invariants for varieties.
+
+\end{remark}
+
+\begin{remark}
+
+This cohomology theory is necessarily weird! The following theorem
+explains why. The slogan: there is no cohomology theory with \(\QQ\)
+coefficients.
+
+\end{remark}
+
+\begin{theorem}[Serre]
+
+There does not exists a cohomology theory for schemes over
+\(\bar{\FF}_q\) with the following properties:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Functorial
+\item
+  Satisfies the Kunneth formula
+\item
+  For \(E\) an elliptic curve, \(H^1(E) = \QQ^2\).
+\end{enumerate}
+
+\end{theorem}
+
+\begin{proof}
+
+Take \(E\) to be a supersingular elliptic curve. Then
+\(\Endo(E) \tensor \QQ\) is a quaternion algebra, and use the fact that
+there are no algebra morphisms \(R\to \mat_{2\times 2}(\QQ)\).
+
+\end{proof}
+
+\begin{exercise}
+
+Functoriality and Kunneth implies that \(\Endo(E)\actson E\) yields an
+action on \(H^1(E)\), which is precisely an algebra morphism
+\(\Endo(E) \to \mat_{2\by 2}(\QQ)\), a contradiction.
+
+The content here: the sum of two endomorphisms act via their sum on
+\(H^1\).
+
+\end{exercise}
+
+\begin{exercise}
+
+Prove the same thing for \(\QQ_p\) coefficients, where \(p\) divides the
+characteristic of the ground field. Proof the same, just need to know
+what quaternion algebras show up.
+
+\end{exercise}
+
+This forces using some funky type of coefficients.
+
+\hypertarget{what-are-the-weil-conjectures}{%
+\subsection{What are the Weil
+Conjectures?}\label{what-are-the-weil-conjectures}}
+
+Suppose \(X/\FF_q\) is a variety, then
+\begin{align*}  
+\zeta_X(t) = \exp{\sum_{n>0} { {\abs{X(\FF_{q^n})} \over n} t^n } }
+.\end{align*}
+
+\begin{remark}
+
+\envlist
+
+\begin{itemize}
+\item
+  \(\dd{}{t} \log \zeta_X(t)\) is an ordinary generating function for
+  the number of rational points.
+\item
+  Slogan: locations of zeros and poles of a meromorphic function control
+  the growth rate of the coefficients of the Taylor series of the
+  logarithmic derivative.
+\end{itemize}
+
+\end{remark}
+
+\begin{exercise}
+
+Make this slogan precise for rational functions, i.e.~ratios of two
+polynomials.
+
+\end{exercise}
+
+\begin{theorem}[The Weil Conjectures]
+
+\envlist
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(\zeta_x(t)\) is a rational function.
+\item
+  (Functional equation) For \(X\) smooth and proper
+  \begin{align*}  
+  \zeta_X(q^{-n} t\inv) = \pm q^{nE \over 2} t^E \zeta_X(t)
+  .\end{align*}
+\item
+  (RH) All roots and poles of \(\zeta_X(t)\) have absolute value
+  \(q^{i\over 2}\) with \(i\in \ZZ\), and these are equal to the \(i\)th
+  Betti numbers if \(X\) lifts to characteristic zero.\footnote{Note
+    that we'll generalize Betti numbers so this makes sense in general.}
+\end{enumerate}
+
+\end{theorem}
+
+\begin{remark}
+
+These are all theorems! The proofs:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Dwork, using \(p\dash\)adic methods. Proof here will follow from the
+  fact that \(H^i_{\text{étale} }\) are finite-dimensional. Related to
+  the \textbf{Lefschetz Trace Formula}, and is how Grothendieck thought
+  about it.
+\item
+  Grothendieck, follows from some version of Poincaré duality.
+\item
+  (and 4) Deligne.
+\end{enumerate}
+
+\end{remark}
+
+\hypertarget{euler-product}{%
+\subsubsection{Euler Product}\label{euler-product}}
+
+Let \(\abs X\) denote the closed points of \(X\), then there is an Euler
+product:
+\begin{align*}  
+\zeta_X(q^{-n} t\inv) = \pm q^{nE \over 2} t^E \zeta_X(t)
+&= \prod_{x\in \abs{X}} \exp{t^{\deg (x)} + {t^{2\deg (x)} \over 2} + \cdots} \\
+&= \prod_{x\in \abs X} \exp{-\log(1-t^{\deg(x)})} \\
+&= \prod_{x\in \abs X} {1 \over 1 - t^{\deg(x)}}
+.\end{align*}
+
+\begin{exercise}
+
+Check the first equality. If you have a point of \(\deg(x) = n\), how
+many \(\FF_{q^n}\) points does this contribute? I.e., how many maps are
+there \(\spec(\FF_{q^n}) \to \spec(\FF_{q^n})\) over \(\FF_q\)?
+
+There are exactly \(n\): it's \(\gal(\FF_{q^n} / \FF_q)\). But then
+division by \(n\) drops this contribution to one.
+
+\end{exercise}
+
+We can keep going by expanding and multiplying out the product:
+\begin{align*}  
+\prod_{x\in \abs X} {1 \over 1 - t^{\deg(x)}}
+&= \prod_{x\in \abs X} (1 + t^{\deg(x)} + t^{2 \deg(x)}) \\
+&= \sum_{n\geq 0} \qty{\text{\# of Galois-stable subset of $X(\bar \FF_{q^n})$ of size $n$}}t^n
+.\end{align*}
+
+Why? If you have a degree \(x\) point, it contributes a stable subset of
+size \(x\): namely the \(\FF_{q^n}\) points of \(\FF_{q^n}\). Taking
+Galois orbits like that correspond to multiplying this product. But
+these are the points of some algebraic variety:
+\begin{align*}  
+\cdots 
+= \sum_{n\geq 0} \abs{\sym^n(X)(\FF_q)} t^n
+,\end{align*} where \(\sym^n(X) \da X^n/\Sigma_n\), the action of the
+symmetric group. Why is that? A \(\bar \FF_q\) point of \(\sym^n(X)\) is
+an unordered \(n\dash\)tuple of \(\bar \FF_q\) points without an
+ordering, and asking them to be Galois stable is the same as saying that
+they are an \(\FF_q\) point.
+
+\begin{theorem}[First Weil Conjecture for Curves]
+
+For \(X\) a smooth proper curve over \(\FF_q\), \(\zeta_X(t)\) is
+rational.
+
+\end{theorem}
+
+\begin{proof}
+
+\begin{claim}
+
+There is a set map
+\begin{align*}  
+\sym^n X &\to \pic^n X \\
+D &\mapsto \OO(D)
+,\end{align*} where here the divisor is an \(n\dash\)tuple of points.
+
+\end{claim}
+
+What are the fibers over a line bundle \(\OO(D)\)? A linear system,
+i.e.~the projectivization of global sections \(\PP \Gamma(X, \OO(D))\).
+What is the expected dimension? To compute the dimension of the space of
+line bundles on a curve, use Riemann-Roch:
+\begin{align*}  
+\dim \PP\Gamma(X, \OO(D)) = \deg(D) + 1 - g + \dim H^1(X, \OO(D)) - 1
+.\end{align*} where the last \(-1\) comes from the fact that this is a
+projective space.
+
+\begin{claim}
+
+If \(\deg(D) = 2g-2\), then \(H^1(X, \OO(D)) = 0\).
+
+\end{claim}
+
+This is because it's dual to \(H^0(X, \OO(K-D))\dual\), but this has
+negative degree and a line bundle of negative degree can never have
+sections.\footnote{You should check to make sure you know why this is
+  true!} Thus the fibers are isomorphic to \(\PP^{n-g}\) for \(n>2g-2\).
+Now make a reduction\footnote{Exercise: justify why the reduction is
+  valid.} and without loss of generality, assume
+\(X(\FF_q) \neq \emptyset\). In this case,
+\(\pic^n(X) \cong \pic^{n+1}(X)\) for all \(n\), since you can take
+\(\OO(P)\) for \(P\) a point, a degree 1 line bundle, and tensor with
+it. It's an isomorphism because you can tensor with the dual bundle to
+go back. Thus for all \(n>2g-2\),
+\begin{align*}  
+\abs{\sym^n(X)(\FF_q)} 
+= \abs{\PP^{n-g}(\FF_q)} \cdot \abs{\pic^n(X)(\FF_q)}
+= \abs{\PP^{n-g}(\FF_q)} \cdot \abs{\pic^0(X)(\FF_q)}
+.\end{align*}
+
+Thus \(\zeta_X(t)\) is a polynomial plus
+\(\sum_{n>2g-2} \abs{\pic^n(X)(\FF_q)}\qty{1+q+q^2+\cdots+q^{n-g}}t^n\).
+
+\begin{exercise}
+
+Show that this is a rational function using the formula for a geometric
+series.
+
+\end{exercise}
+
+\end{proof}
+
+\begin{theorem}[Functional Equation]
+
+The functional equation in the case of curves:
+\begin{align*}  
+\zeta_X(q^{-1} t^{-1} ) = \pm q^{2-2g \over 2} t^{2-2g} \zeta_X(t)
+.\end{align*}
+
+\end{theorem}
+
+\begin{exercise}[Important]
+
+Where it comes from in terms of \(\sym^n\): Serre duality.
+
+\end{exercise}
+
+We'll show the RH later.
+
+\begin{theorem}[Dwork]
+
+Suppose \(X/\FF_q\) is any variety, then \(\zeta_X(t)\) is rational
+function.
+
+\end{theorem}
+
+This was roughly known to Weil, hinted at in original paper
+
+\begin{proof}[Grothendieck]
+
+Idea: take Frobenius (intentionally vague, arithmetic vs geometric vs
+\ldots) \(F:X\to X\), then \(X(\FF_q)\) are the fixed points of \(F\)
+acting on \(X_{\bar \FF_q}\), and the \(\FF_{q^n}\) points are the fixed
+points of \(F^n\). Uses the Lefschetz fixed point formula, which will
+say for \(\ell\neq \ch(\FF_q)\),\footnote{Here \(H^i_c\) is compactly
+  supported cohomology, we'll define this later in the course.}
+
+\begin{align*}  
+\abs{X(\FF_{q^n})} = \sum_{i=0}^{2\dim(X)} (-1)^i \tr(F^n) H^i_c(X_{\FF_q}, \QQ_\ell)
+.\end{align*}
+
+\begin{lemma}
+
+\begin{align*}  
+\exp{\sum {\tr(F^n) \over n}t^n  }\quad\text{is rational}
+.\end{align*}
+
+\end{lemma}
+
+This lemma implies the result, because if you plug the trace formula
+into the zeta function, you'll get an alternating product
+\(f \cdots {1\over g} \cdot h \cdot {1\over j} \cdots\) of functions of
+the form in the lemma, which is still rational.
+
+\end{proof}
+
+\begin{proof}[Of Lemma]
+
+It suffices to treat the case \(\dim(V) = 1\), because otherwise you can
+just write this as a sum of powers of eigenvalues. Then you have a
+scalar matrix, so you obtain
+\begin{align*}  
+\exp{ \sum {\alpha^n \over n} t^n} = \exp{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t}
+,\end{align*} which is rational.
+
+\end{proof}
+
+This proves rationality, contingent on
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The Lefschetz fixed point formula
+\item
+  The finite dimensionality of etale cohomology
+\end{enumerate}
+
+\begin{exercise}
+
+Try to figure out how Poincaré duality should give the functional
+equation.
+
+\emph{(Hint: try the lemma on a vector space where \(F\) scales a
+bilinear form.)}
+
+\end{exercise}
+
+\begin{theorem}[Serre, Kahler Analog]
+
+Suppose \(X/\CC\) is a smooth projective variety and
+\([H] \in H^2(X(\CC), \CC)\) is a hyperplane class (corresponds to
+intersection of generic hyperplane or the first Chern class of an ample
+line bundle). Suppose \(F:X\to X\) is an endomorphism such that
+\(f^*[H] = q[H]\) for some \(q\in \ZZ_{\geq 1}\).
+
+Define
+\begin{align*}  
+L(F^n) \definedas 
+\sum_{i=0}^{2\dim(X)} (-1)^i \tr\qty{ F^n \st H^i(X_{\FF_q}, \QQ_\ell)}
+.\end{align*} and
+\begin{align*}  
+\zeta_{X, F}(t) \da
+\exp{\sum_{n=1}^\infty {L(F^n) \over n}t^n }
+.\end{align*}
+
+Then \(\zeta_{X, F}(t)\) satisfies the RH: the zeros and poles are of
+absolute value \(q^{i\over 2}\). Equivalently, the eigenvalues
+\(\lambda\) of \(F^n\) actings on \(H^i(X, \CC)\) all satisfy
+\(\abs{\lambda} = q^{i\over 2}\).
+
+\end{theorem}
+
+Next time, to review
+
+\begin{itemize}
+\tightlist
+\item
+  Étale morphisms
+\item
+  Definition of a site
+\end{itemize}
+
+\addsec{ToDos}
+\listoftodos[List of Todos]
+\cleardoublepage
+
+% Hook into amsthm environments to list them.
+\addsec{Definitions}
+\renewcommand{\listtheoremname}{}
+\listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
+\cleardoublepage
+
+\addsec{Theorems}
+\renewcommand{\listtheoremname}{}
+\listoftheorems[ignoreall,show={theorem,proposition}, numwidth=3.5em]
+\cleardoublepage
+
+\addsec{Exercises}
+\renewcommand{\listtheoremname}{}
+\listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
+\cleardoublepage
+
+\addsec{Figures}
+\listoffigures
+\cleardoublepage
+
+
+\printbibliography[title=Bibliography]
+
+
+\end{document}
