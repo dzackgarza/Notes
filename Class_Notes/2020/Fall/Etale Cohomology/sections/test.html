@@ -24,6 +24,10 @@
 
 <script type="text/javascript">
   window.onload = function(e) {
+    MathJax.Hub.Register.StartupHook("End", 
+      function () { 
+        ... your startup code here ... 
+      });
     window.scrollTo(0,document.body.scrollHeight);
   }
 </script>
