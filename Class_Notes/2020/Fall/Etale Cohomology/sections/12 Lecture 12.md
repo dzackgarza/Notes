@@ -69,8 +69,7 @@ mean?
 [^reference_verdier]
 
 [^reference_verdier]: 
-Best reference: Giraud, "Cohomologie nonabeliene"
-
+Best reference: Giraud, "Cohomologie non Abelienne".
 
 
 
