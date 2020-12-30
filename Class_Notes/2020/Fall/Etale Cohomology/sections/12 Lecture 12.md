@@ -37,11 +37,11 @@ Recall that we defined the *cohomological Brauer group of $X$*
 
 We also started defining the Brauer group by considering 
 \[	
-\Union_n \ts{\text{étale locally trivial} \PGL_n\dash\text{torsors}}
+\Union_n \ts{\text{étale locally trivial } \PGL_n\dash\text{torsors}}
 \mapsvia{f}
 H^2(X_\et, \GG_m)
 ,\]
-and defining $\Br(X) \da \im f$.
+and defining $\Br(X) \da \im f$ as a set, which is a reasonably concrete geometric object.
 
 
 
