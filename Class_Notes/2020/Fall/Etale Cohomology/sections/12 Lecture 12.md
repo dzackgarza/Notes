@@ -120,6 +120,9 @@ Check that $d$ of this element is zero.
 $\delta\qty{[T]}$ is the obstruction to lifting $T$ to a $\GL_{n}\dash$torsor.
 :::
 
+This is what you might expect: the image of something coming from a boundary map is the obstruction to coming from the previous map.
+This class is called the **Brauer class of $T$ <BS>**.
+
 
 
 
