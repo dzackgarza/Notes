@@ -26,4 +26,8 @@ We'll discuss $i=2$, and a general principle in group cohomology is that if one 
 In general, $H^1$ has a geometric interpretation: torsors.
 $H^2$ 
 is much harder: they classify more general objects called **gerbes**.
+A miracle is that 
+$H^2(\GG_m)$ 
+has real meaning, and is very closely related to real physical objects (certain torsors).
+Recall that we defined the *cohomological Brauer group of $X$* \cref{def:cohom_brauer_group}.
 
