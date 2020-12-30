@@ -51,7 +51,8 @@ was the boundary map of
 \mapsvia{\delta}
 H^2(X_\et, \GG_m)
 \]
-arising from the SES 
+arising from the SES of sheaves of groups on 
+$X_\et$,
 \[	
 1 
 \to \GG_m 
@@ -70,7 +71,6 @@ mean?
 
 [^reference_verdier]: 
 Best reference: Giraud, "Cohomologie non Abelienne".
-
 
 
 
