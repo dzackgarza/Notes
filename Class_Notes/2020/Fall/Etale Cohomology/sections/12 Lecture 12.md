@@ -85,7 +85,10 @@ for a SES $A \mapsvia{}B \mapsvia{}C$, you need that $A$ is abelian (or in the c
 
 We'll now try to make
 $\delta$ 
-explicit in terms of Čech cohomology, which is the only way we have to make sense of the LHS set in \cref{eq:12_union_1}
+explicit in terms of Čech cohomology, which is the only way we have to make sense of the LHS set in \cref{eq:12_union_1}.
+We defined it to be the set of étale locally trivial 
+$\PGL_n\dash\torsors$ 
+
 
 
 
