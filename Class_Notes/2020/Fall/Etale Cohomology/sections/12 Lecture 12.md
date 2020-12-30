@@ -16,4 +16,3 @@ Currently $i>1$ is a mystery, so today we'll look at $i=2$.
 Recall that we've reduced this to the Galois cohomology
 
 
-x ^{}
