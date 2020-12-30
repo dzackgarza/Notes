@@ -73,4 +73,17 @@ mean?
 Best reference: Giraud, "Cohomologie non Abelienne".
 
 
+:::{.remark}
+Making the LES here is a little subtle.
+You get a long exact sequence of *sets* here which terminates at the 
+$H^2$ 
+we're interested in, although one usually doesn't get a map of the form
+$H^1(C) \to H^2(B)$ 
+for a SES $A \mapsvia{}B \mapsvia{}C$, you need that $A$ is abelian (or in the center).
+:::
+
+We'll now try to make
+$\delta$ 
+
+
 
