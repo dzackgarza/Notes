@@ -53,8 +53,26 @@ H^2(X_\et, \GG_m)
 \]
 arising from the SES 
 \[	
-1 \to \GG_m \mapsvia{} \PGL_n \to 1
+1 
+\to \GG_m 
+\mapsvia{} 
+\GL_m
+\mapsvia{}
+\PGL_n \to 1
 .\]
+We argued last time that this was exact in the Zariski topology since the RHS map was a 
+$\GGm\dash$ 
+torsor and thus Zariski locally trivial.
+What does 
+$\delta$ 
+mean?
+[^reference_verdier]
+
+[^reference_verdier]: 
+Best reference: Giraud, "Cohomologie nonabeliene"
+
+
+
 
 
 
