@@ -148,6 +148,14 @@ This is locally split since $F$ is locally trivial, i.e. locally isomorphic to $
 The reverse map is sending $\tau \to \qty{\tau\cross T}/G$, taking the sheaf quotient, which gets rid of $\tau$ and making the fibers isomorphic to $T$ instead.
 
 
+:::{.example title="?"}
+$\GL_{n}\dash$torsors correspond to vector bundles.
+Note that this isn't an equivalence of categories:
+there are maps of vector bundles which don't come from maps of torsors, e.g. any map that is not an isomorphism.
+:::
+
+
+
 
 
 
