@@ -340,7 +340,7 @@ Then the Čech differential $\check{\delta}$ satisfies $\check{\delta}(\beta)=\a
 
 :::{.corollary title="?"}
 Suppose $\mathcal{E}$ is an $\alpha\dash$twisted vector bundle of rank $n$.
-Then
+Then 
 :::
 
 
