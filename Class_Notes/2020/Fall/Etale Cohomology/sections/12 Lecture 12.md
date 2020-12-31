@@ -386,10 +386,15 @@ So we have a diagram
 
 
 \begin{tikzcd}
-\ts{\text{Twisted sheaves}}
-  \ar[r]
 &
 \ts{\text{Severi-Brauers}}
+\\
+ \ts{\text{Twisted sheaves}}
+  \ar[ru, "\PP(\wait)"]
+  \ar[rd, "\Endo(\wait)"']
+&
+\\
+&
 \ts{\text{Azumaya algebras}}
 \end{tikzcd}
 
