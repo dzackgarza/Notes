@@ -131,7 +131,8 @@ We've just mapped from a set to a group, so we don't know that the image is a gr
 
 ### Geometric Interpretations of $\PGL_{n}\dash$Torsors Brauer Classes
 
-Suppose $T\in\Sh^{\set}\qty{X_{\et}}$ and $G = \ul{\Aut}\qty{T}$ as a sheaf, whose sections are given on an open $U$ by pulling back $T$ to $U$ and compute its automorphisms, where for example $T$ is a scheme.
+There is a general principle:
+suppose $T\in\Sh^{\set}\qty{X_{\et}}$ and $G = \ul{\Aut}\qty{T}$ as a sheaf, whose sections are given on an open $U$ by pulling back $T$ to $U$ and compute its automorphisms, where for example $T$ is a scheme.
 There is a natural bijection
 
 \[
@@ -140,6 +141,11 @@ There is a natural bijection
 \correspond{\text{ forms of  } T}
 .\]
 An example of this has come up before: namely that $\GL_{n}\dash$torsors corresponded to vector bundles.
+This is recovered by taking $T$ to be the trivial vector bundle and $G=\GL_{n}$
+Here a **form** is defined to be a sheaf on $X_{\et}$ locally isomorphic to $T$.
+The map here is given by sending a form $F$ to $\ul{\mathrm{Isom}}\qty{F, T}$.
+This is locally split since $F$ is locally trivial, i.e. locally isomorphic to $T$, and so base-changing to some cover where $F$ will make this torsor split.
+
 
 
 
