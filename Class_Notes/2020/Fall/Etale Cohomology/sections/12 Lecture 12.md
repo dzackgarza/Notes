@@ -159,8 +159,29 @@ Here the left/right arrows mean that there is a bijection between *sets*, up to 
 :::{.example title="?"}
 Let $G=\PGL_{n}$, then what are objects with automorphism group $\Aut\qty{G} = \PGL_{n}$?
 An example that works here is $\Aut_{x}\qty{\PP_{x}} = \PGL_{n}$.
-You may have seen this stated over an algebraically closed based field, but (nontrivially) this holds over a general base.
 :::
+
+
+:::{.exercise title="?"}
+You may have seen this stated over an algebraically closed based field, but (nontrivially) this holds over a general base.
+Prove this.
+
+*(Hint: you may need to use the theorem on formal functions or formal GAGA.)*
+
+:::
+
+
+:::{.corollary title="?"}
+There is a natural bijection
+\[
+\correspond{\PGL_{n}\dash\text{torsors}}
+&\mapstofrom
+\correspond{\text{ Forms of } \PP^{n-1}}
+\]
+These are referred to as **Severi-Brauer $X\dash$Schemes**
+:::
+
+
 
 
 
