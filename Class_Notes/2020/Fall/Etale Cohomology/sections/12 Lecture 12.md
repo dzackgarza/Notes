@@ -190,7 +190,13 @@ these are referred to as **Severi-Brauer Varieties**.
 
 
 :::{.example title="?"}
-The algebra $\Mat_{n\cross n}$
+The algebra $A\da \Mat_{n\cross n}$ has $\Aut(A) = \PGL_{n}$, which is usually referred to as the *Noether-Skolem* theorem.
+Thus there is a bijection
+\[
+\correspond{\PGL_n\dash\text{ torsors }}
+&\mapstofrom
+\correspond{\text{ forms of  } \Mat_{n\cross n} = \Endo_{\OO_{x}} (\OO_{x}^{n})}
+\]
 :::
 
 
