@@ -205,7 +205,7 @@ There is a fact (which we may see) that such algebras over a field are always di
 
 :::{.remark}
 Key takeaway: the Brauer group (which we'll soon prove is a group) has concrete representative.
-These are the forms of $\PP^{n-1}$, which you can think of as étale loca
+These are the forms of $\PP^{n-1}$, which you can think of as étale loc
 :::
 
 :::{.remark}
