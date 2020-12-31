@@ -389,7 +389,7 @@ So we have a diagram
 &
 \ts{\text{Severi-Brauers}}
 \\
- \ts{\text{Twisted sheaves}}
+\mathcal{E} \in \ts{\text{Twisted sheaves}}
   \ar[ru, "\PP(\wait)"]
   \ar[rd, "\Endo(\wait)"']
 &
