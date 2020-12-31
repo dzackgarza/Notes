@@ -203,7 +203,7 @@ There is a fact (which we may see) that such algebras over a field are always di
 
 
 :::{.remark}
-How can we combine these to f
+How can we combine these to send forms of $\PP^{n-1}$ directly to an Azumaya algebra?
 :::
 
 
