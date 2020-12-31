@@ -282,11 +282,12 @@ Note that we've proved this already since $\Br = \im \delta$, but part of our co
 :::{.proof title="Sketch/Discussion"}
 \envlist
 
-1. If $\alpha\in \Br(X)$, then there is $\PGL_{n}\dash$torsor whose boundary is $\alpha$, and our construction of $\delta$ yielded an $\alpha\dash$twisted vector bundle.
+For (1), if $\alpha\in \Br(X)$, then there is $\PGL_{n}\dash$torsor whose boundary is $\alpha$, and our construction of $\delta$ yielded an $\alpha\dash$twisted vector bundle.
   Given such a bundle, one can obtain a Brauer class by constructing a twisted form a $\PP^{n}$: take the projectivization.
   Then the quasi descent data becomes actual descent data since the failure was precisely in scalars, which you're now modding out by.
 
-2. Just work out what happens to $\alpha, \alpha'$ when tensoring or homming.
+For (3), just work out what happens to $\alpha, \alpha'$ when tensoring or homming.
+Similarly, all of the rest except for **(2)** follow from definitions.
 :::
 
 
