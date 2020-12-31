@@ -366,6 +366,12 @@ Then by the previous proposition, $[\alpha^{n}] - [\alpha]^{n}$ is trivial.
 
 1. $X\da \ts{ x^{2}+y^{2}+z^{2} = 0}$ over $\RR$ is a smooth conic with no rational points.
   We now via stereographic projection that a smooth projective conic with a rational point would be isomorphic to $\PP^{1}$, so this becomes isomorphic to $\PP^{1}$ after base-changing to $\CC$ where it does have a rational point.
+  So $X_{/\CC} \cong \PP^{1}$, which implies that $X$ is a twisted form of $\PP^{1}_{\RR}$.
+  In fact, $\delta\qty{[X]}$ generates $\Br(\RR) = \ZZ/2\ZZ$.
+
+2. Hamilton's Quaternions are a division algebra and hence an Azumaya algebra representing the same element.
+
+
 :::
 
 
