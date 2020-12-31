@@ -360,20 +360,23 @@ Then by the previous proposition, $[\alpha^{n}] - [\alpha]^{n}$ is trivial.
 :::
 
 
+### Examples of Brauer Classes
 
-:::{.example title="of Brauer classes"}
-\envlist
+:::{.example title="?"}
+. $X\da \ts{ x^{2}+y^{2}+z^{2} = 0}$ over $\RR$ is a smooth conic with no rational points.
+We now via stereographic projection that a smooth projective conic with a rational point would be isomorphic to $\PP^{1}$, so this becomes isomorphic to $\PP^{1}$ after base-changing to $\CC$ where it does have a rational point.
+So $X_{/\CC} \cong \PP^{1}$, which implies that $X$ is a twisted form of $\PP^{1}_{\RR}$.
+In fact, $\delta\qty{[X]}$ generates $\Br(\RR) = \ZZ/2\ZZ$.
+:::
 
-1. $X\da \ts{ x^{2}+y^{2}+z^{2} = 0}$ over $\RR$ is a smooth conic with no rational points.
-  We now via stereographic projection that a smooth projective conic with a rational point would be isomorphic to $\PP^{1}$, so this becomes isomorphic to $\PP^{1}$ after base-changing to $\CC$ where it does have a rational point.
-  So $X_{/\CC} \cong \PP^{1}$, which implies that $X$ is a twisted form of $\PP^{1}_{\RR}$.
-  In fact, $\delta\qty{[X]}$ generates $\Br(\RR) = \ZZ/2\ZZ$.
 
+:::{.example title="?"}
 2. Hamilton's Quaternions are a division algebra and hence an Azumaya algebra representing the same element.
-
 
 :::
 
+
+:::{.remark}
 Given an $\alpha\dash$twisted sheaf $\mathcal{E}$, taking the projectivization yields a Severi-Brauer.
 Since $\mathcal{E}$ was a vector bundle with descent data twisted by a scalar and projectivizing kills scalars, this yields honest descent data.
 But descent data is not effective for schemes.
@@ -399,6 +402,10 @@ so we have a diagram
 \ts{\text{Azumaya algebras}}
   \ar[uu, dotted]
 \end{tikzcd}
+
+:::
+
+
 
 
 
