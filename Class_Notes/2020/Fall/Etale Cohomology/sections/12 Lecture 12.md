@@ -362,7 +362,10 @@ Then by the previous proposition, $[\alpha^{n}] - [\alpha]^{n}$ is trivial.
 
 
 :::{.example title="of Brauer classes"}
+\envlist
 
+1. $X\da \ts{ x^{2}+y^{2}+z^{2} = 0}$ over $\RR$ is a smooth conic with no rational points.
+  We now via stereographic projection that a smooth projective conic with a rational point would be isomorphic to $\PP^{1}$, so this becomes isomorphic to $\PP^{1}$ after base-changing to $\CC$ where it does have a rational point.
 :::
 
 
