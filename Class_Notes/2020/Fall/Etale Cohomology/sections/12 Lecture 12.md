@@ -421,12 +421,17 @@ There is a map
 
 \[	
 0 \mapsvia{} \Br(\QQ) \mapsvia{} \bigoplus_{r\in P_{\QQ}} \Br(\QQ_{r})
-\mapsvia{ } 
+\mapsvia{\epsilon} \QQ/\ZZ \mapsvia{} 0 
 ,\]
 where $P$ is the set of places of $\QQ$ including $\infty$ (i.e. $\RR$) and the summands are the completions of $\QQ$ at each place.
 
-
 :::
+
+
+:::{.exercise title="Fun!"}
+Use the Severi-Brauer interpretation to show that if $\alpha\in \Br(\QQ)$ then $\ro{\alpha}{\QQ_{\nu}} = 0$ for all $\nu$.
+:::
+
 
 
 
