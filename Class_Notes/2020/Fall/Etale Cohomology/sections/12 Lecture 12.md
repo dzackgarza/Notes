@@ -315,11 +315,11 @@ To get an $\alpha\inv\dash$twisted vector bundle, one can just take the dual $\m
 Suppose that $\alpha$ is a 2-cocycle for $\GG_{m}$, then $[\alpha]$ is trivial iff there exists an $\alpha\dash$twisted line bundle.
 :::
 
-
 :::{.lemma title="?"}
 If $[\alpha] = [\alpha']$, then $\Qcoh(X,\alpha) \simeq \Qcoh(X, \alpha')$.
-Note that this is not a canonical equivalence.
 :::
+
+Note that this is not a canonical equivalence.
 
 :::{.exercise title="?"}
 Prove this lemma.
@@ -328,7 +328,6 @@ Prove this lemma.
 :::{.proof title="of proposition, $\implies$"}
 If $\alpha$ is trivial, then $[\alpha] = [1]$ in which case $\Qcoh(X,\alpha) \simeq \Qcoh(X)$ are equivalent categories and $\OO_{X}$ is an honest line bundle.
 :::
-
 
 :::{.proof title="$\impliedby$"}
 Suppose you have an $\alpha\dash$twisted line bundle.
