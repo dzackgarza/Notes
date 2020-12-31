@@ -152,9 +152,13 @@ The reverse map is sending $\tau \to \qty{\tau\cross T}/G$, taking the sheaf quo
 $\GL_{n}\dash$torsors correspond to vector bundles.
 Note that this isn't an equivalence of categories:
 there are maps of vector bundles which don't come from maps of torsors, e.g. any map that is not an isomorphism.
+Here the left/right arrows mean that there is a bijection between *sets*, up to isomorphism on each side.
 :::
 
 
+:::{.example title="?"}
+Let $G=\PGL_{n}$, then what are objects with automorphism group $\Aut\qty{G} = \PGL_{n}$?
+:::
 
 
 
