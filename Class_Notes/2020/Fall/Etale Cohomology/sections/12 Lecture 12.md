@@ -251,13 +251,15 @@ Then
 
 3. There is a functor 
 \[	
-\tensor: \Coh(X, \alpha) \cross \Qcoh(X, \alpha') \mapsvia{} \Coh(X, \alpha \alpha')
+\tensor: \QCoh(X, \alpha) \cross \Qcoh(X, \alpha') \mapsvia{} \QCoh(X, \alpha \alpha')
 ,\]
   where is $\alpha,\alpha'$ are defined on different covers than one passes to a common refinement, and a functor[^how_to_hom]
 \[	
-\hom: \Coh(X, \alpha) \cross \Qcoh(X, \alpha') \mapsvia{} 
-\Coh(X, \alpha' - \alpha)
+\hom: \QCoh(X, \alpha) \cross \Qcoh(X, \alpha') \mapsvia{} 
+\QCoh(X, \alpha' - \alpha)
 .\]
+
+4. There are functors $\Sym^{n}, \Wedge^{n}$
 
 [^how_to_hom]: 
 This and the tensor functor come from homming (resp. tensoring) the sheaves together and using the pseudo descent data.
