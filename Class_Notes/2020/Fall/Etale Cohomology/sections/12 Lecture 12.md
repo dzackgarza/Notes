@@ -249,6 +249,20 @@ Then
 
 2. $\Qcoh(X,\alpha)$ is an abelian category (easy) and has enough injectives (hard) is $X$ is "nice".
 
+3. There is a functor 
+\[	
+\tensor: \Coh(X, \alpha) \cross \Qcoh(X, \alpha') \mapsvia{} \Coh(X, \alpha \alpha')
+,\]
+  where is $\alpha,\alpha'$ are defined on different covers than one passes to a common refinement.
+
+4. There is a functor 
+\[	
+\hom: \Coh(X, \alpha) \cross \Qcoh(X, \alpha') \mapsvia{} 
+\Coh(X, \alpha' - \alpha)
+.\]
+
+
+
 [^proved_already]: 
 Note that we've proved this already since $\Br = \im \delta$, but part of our construction of $\delta$ involved constructing an $\alpha\dash$twisted sheaf out of a $\PGL_{n}\dash$torsor.
 
