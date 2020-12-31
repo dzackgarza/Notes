@@ -210,6 +210,7 @@ Key takeaway: the Brauer group (which we'll soon prove is a group) has concrete 
 These are the forms of $\PP^{n-1}$, which you can think of as étale locally trivial $\PP^{n-1}$ bundles, or forms of a matrix algebra, i.e. coherent sheaves of algebras which étale locally endomorphisms of the trivial bundle.
 :::
 
+## Twisted Sheaves
 
 People usually think about Brauer groups as one of these two objects.
 We'll discuss a third way.
@@ -223,9 +224,14 @@ Then an **$\alpha\dash$twisted sheaf** is a quasicoherent sheaf on $U$, an isomo
 \pi_{23}^{*} \phi \circ \pi_{12}^{*}\phi = \alpha \pi_{13}^{*}\phi
 .\]
 
-
-
 :::
+
+:::{.remark}
+Note that if $\alpha$ were the constant function 1, this would be the descent data for a quasicoherent sheaf, so we're twisting what it means to be a sheaf.
+:::
+
+
+
 
 
 
