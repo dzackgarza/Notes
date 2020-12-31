@@ -176,7 +176,7 @@ There is a natural bijection
 \[
 \correspond{\PGL_{n}\dash\text{torsors}}
 &\mapstofrom
-\correspond{\text{ Forms of } \PP^{n-1}}
+\correspond{\text{Forms of } \PP^{n-1}}
 \]
 These are referred to as **Severi-Brauer $X\dash$Schemes**
 [^sev-brauer-var]
@@ -193,10 +193,17 @@ these are referred to as **Severi-Brauer Varieties**.
 The algebra $A\da \Mat_{n\cross n}$ has $\Aut(A) = \PGL_{n}$, which is usually referred to as the *Noether-Skolem* theorem.
 Thus there is a bijection
 \[
-\correspond{\PGL_n\dash\text{ torsors }}
+\correspond{\PGL_n\dash\text{torsors}}
 &\mapstofrom
-\correspond{\text{ forms of  } \Mat_{n\cross n} = \Endo_{\OO_{x}} (\OO_{x}^{n})}
+\correspond{\text{Forms of } \Mat_{n\cross n} = \Endo_{\OO_{x}} (\OO_{x}^{n})}
 \]
+The RHS are referred to as **Azumaya algebras**, and over a field these are central simple algebras.
+There is a fact (which we may see) that such algebras over a field are always division algebras.
+:::
+
+
+:::{.remark}
+How can we combine these to f
 :::
 
 
