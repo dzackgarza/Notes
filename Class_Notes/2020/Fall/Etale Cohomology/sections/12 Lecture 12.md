@@ -245,7 +245,7 @@ $\QCoh(X, 1)$ is canonically isomorphic to $\Qcoh(X)$, which is the very famous 
 Let $\alpha, \alpha'$ be two cocycles for $\GG_{m}$.
 Then
 
-1. $[\alpha]\in\Br(X)$ (so its in the image the boundary map from $\PGL_{n}$) iff there exist a twisted sheaf.[^proved_already]
+1. $[\alpha]\in\Br(X)$ (so its in the image the boundary map from $\PGL_{n}$) iff there exist a twisted vector bundle.[^proved_already]
 
 2. $\Qcoh(X,\alpha)$ is an abelian category (easy) and has enough injectives (hard) is $X$ is "nice".
 
@@ -259,7 +259,14 @@ Then
 \QCoh(X, \alpha' - \alpha)
 .\]
 
-4. There are functors $\Sym^{n}, \Wedge^{n}$
+4. There are functors 
+
+\[	
+\Sym^{n}, \Wedge^{n} \mapsvia{} \Qcoh(X, \alpha) \mapsvia{} \Qcoh(X, n \alpha)
+.\]
+
+5. $\Qcoh(X, q) \ms \Qcoh(X)$.
+
 
 [^how_to_hom]: 
 This and the tensor functor come from homming (resp. tensoring) the sheaves together and using the pseudo descent data.
@@ -271,6 +278,10 @@ Note that we've proved this already since $\Br = \im \delta$, but part of our co
 :::
 
 
+
+:::{.proof title="Sketch/Discussion"}
+
+:::
 
 
 
