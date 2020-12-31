@@ -305,8 +305,14 @@ $\Br(X)$ is a group.
 Let $\mathcal{E}, \mathcal{E}'$ be $\alpha,\alpha'\dash$twisted vector bundles respectively, we want to show that there exists an $\alpha\alpha'\dash$twisted vector bundle.
 We can take $\mathcal{E}\tensor \mathcal{E}'$, and then just note that having a twisted vector bundle is the same as having a Brauer class.
 For inverses, suppose $\alpha$ is a Brauer class and $\mathcal{E}$ is a twisted vector bundle.
-To get an $\alpha\inv\dash$twisted vector bundle,
+To get an $\alpha\inv\dash$twisted vector bundle, one can just take the dual $\mathcal{E}\dual$.
 :::
+
+
+:::{.proposition title="?"}
+Suppose that $\alpha$ is a 2-cocycle for $\GG_{m}$, then $[\alpha]$ is trivial iff there exists an $\alpha\dash$twisted line bundle.
+:::
+
 
 
 
