@@ -331,7 +331,10 @@ If $\alpha$ is trivial, then $[\alpha] = [1]$ in which case $\Qcoh(X,\alpha) \si
 
 
 :::{.proof title="$\impliedby$"}
-
+Suppose you have an $\alpha\dash$twisted line bundle.
+Then writing down a line bundle is done by taking a cover, taking the trivial bundle on each open, and then the double intersections have gluing data in the form of $s\in \Gamma(\GG_{m})$.
+To prove $\alpha$ is a trivial Brauer class, note that the descent data (gluing data) is the same as a section $\beta\in \Gamma(U \cross_{X} U, \GG_{m})$.
+Then the Čech differential $\check{\delta}$ satisfies $\check{\delta}(\beta)=\alpha$, and thus by definition $\alpha = 0 \in H^{2}(\GG_{m})$.
 :::
 
 
