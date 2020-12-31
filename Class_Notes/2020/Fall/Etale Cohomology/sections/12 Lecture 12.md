@@ -486,7 +486,3 @@ This will be the key ingredient in computing the étale cohomology of curves.
 
 
 
-
-
-
-
