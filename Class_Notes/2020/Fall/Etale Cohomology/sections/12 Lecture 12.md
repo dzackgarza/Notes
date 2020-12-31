@@ -213,6 +213,7 @@ These are the forms of $\PP^{n-1}$, which you can think of as étale locally tri
 
 People usually think about Brauer groups as one of these two objects.
 We'll discuss a third way.
+When we defined the boundary map, we took descent data from $\PGL_n$, i.e. elements of this group on double intersections, and we lifted those to $\GL_{n}$.
 
 
 
