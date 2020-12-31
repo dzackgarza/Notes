@@ -449,7 +449,11 @@ We can do this for curves (conics), but surfaces are difficult and we don't know
 :::{.question}
 (The Period-Index question) Given $\alpha\in\Br(X)$, what is the minimum rank or the $\gcd$ of the ranks of an $\alpha\dash$twisted vector bundle?
 We can do this for 2-torsion over a field, but this is generally a hard question.
+In general, if you have an $\alpha\dash$twisted bundle of rank $n$ then it's $n\dash$torsion, but the converse is known by examples not to be true.
+Asking for explicit (and small) representatives of these objects is generally a hard question.
 :::
+
+Next time: use this theory to understand $H^i(k, \GG_m)$ for $k$ a field.
 
 
 
