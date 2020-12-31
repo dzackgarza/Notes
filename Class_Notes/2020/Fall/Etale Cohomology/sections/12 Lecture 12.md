@@ -402,7 +402,6 @@ so we have a diagram
 \ts{\text{Azumaya algebras}}
   \ar[uu, dotted]
 \end{tikzcd}
-
 :::
 
 
