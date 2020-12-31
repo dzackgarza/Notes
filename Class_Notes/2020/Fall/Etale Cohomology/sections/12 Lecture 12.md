@@ -410,6 +410,13 @@ An example from class field theory: $\Br(\QQ_{p}) = \QQ/\ZZ$.
 :::
 
 
+:::{.remark}
+Over a field, any 2-torsion Brauer class is represented by a quaternion algebra: using the usual formula where e.g. $i^{2} = -1$, you change $-1$ to some other numbers.
+In particular, the coset $[{1\over 2}] \in \QQ/\ZZ$ is represented by an algebra resembling the usual quaternions.
+:::
+
+
+
 
 
 
