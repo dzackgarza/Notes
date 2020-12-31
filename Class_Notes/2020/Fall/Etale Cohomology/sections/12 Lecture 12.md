@@ -236,6 +236,12 @@ So in defining $\delta$, our intermediate step was a twisted sheaf.
 So we'll define the category $\Qcoh(X, \alpha)$ whose objects are $\alpha\dash$twisted sheaves and whose morphisms are morphisms of sheaves on $U$ commuting with $\varphi$.
 
 
+:::{.example title="?"}
+$\QCoh(X, 1)$ is canonically isomorphic to $\Qcoh(X)$, which is the very famous theorem of *étale descent*.
+:::
+
+
+
 
 
 
