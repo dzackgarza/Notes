@@ -405,6 +405,11 @@ so we have a diagram
 :::
 
 
+:::{.example title="3"}
+An example from class field theory: $\Br(\QQ_{p}) = \QQ/\ZZ$.
+:::
+
+
 
 
 
