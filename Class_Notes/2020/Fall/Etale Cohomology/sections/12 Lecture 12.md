@@ -292,12 +292,15 @@ Similarly, all of the rest except for **(2)** follow from definitions.
 
 
 
-:::{.exercise title="dasdasdas"}
+:::{.exercise title="?"}
+Try to prove (3) and (4).
+:::
 
+:::{.corollary title="?"}
+$\Br(X)$ is a group.
 :::
 
 
-tikzles
 
 
 
