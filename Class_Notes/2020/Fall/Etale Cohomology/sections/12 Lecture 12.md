@@ -179,7 +179,20 @@ There is a natural bijection
 \correspond{\text{ Forms of } \PP^{n-1}}
 \]
 These are referred to as **Severi-Brauer $X\dash$Schemes**
+[^sev-brauer-var]
+.
+
+[^sev-brauer-var]: 
+If $x = \spec k$ is a point, then 
+these are referred to as **Severi-Brauer Varieties**.
+
 :::
+
+
+:::{.example title="?"}
+The algebra $\Mat_{n\cross n}$
+:::
+
 
 
 
