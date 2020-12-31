@@ -241,6 +241,14 @@ $\QCoh(X, 1)$ is canonically isomorphic to $\Qcoh(X)$, which is the very famous 
 :::
 
 
+:::{.proposition title="?"}
+Let $\alpha, \alpha'$ be two cocycles for $\GG_{m}$.
+Then
+
+1. $[\alpha]\in\Br(X)$ (so its in the image the boundary map from $\PGL_{n}$) iff there exist a twisted sheaf.
+:::
+
+
 
 
 
