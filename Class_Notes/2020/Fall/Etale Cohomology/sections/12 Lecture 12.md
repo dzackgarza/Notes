@@ -323,11 +323,16 @@ Note that this is not a canonical equivalence.
 Prove this lemma.
 :::
 
-:::{.proof title="of proposition, \implies"}
-If $\alpha$ is trivial, then $[\alpha] = [1]$ in which case $\Qcoh(X,\alpha) \simeq \OO_{X}$.
+:::{.proof title="of proposition, $\implies$"}
+If $\alpha$ is trivial, then $[\alpha] = [1]$ in which case $\Qcoh(X,\alpha) \simeq \Qcoh(X)$ are equivalent categories and $\OO_{X}$ is an honest line bundle.
+
 :::
 
 
+
+:::{.proof title="$\impliedby$"}
+
+:::
 
 
 
