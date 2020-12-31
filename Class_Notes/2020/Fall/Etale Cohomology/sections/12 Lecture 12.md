@@ -201,18 +201,18 @@ The RHS are referred to as **Azumaya algebras**, and over a field these are cent
 There is a fact (which we may see) that such algebras over a field are always division algebras.
 :::
 
-
+:::{.question}
+How can we combine these to send forms of $\PP^{n-1}$ directly to an Azumaya algebra?
+:::
 
 :::{.remark}
 Key takeaway: the Brauer group (which we'll soon prove is a group) has concrete representative.
 These are the forms of $\PP^{n-1}$, which you can think of as étale locally trivial $\PP^{n-1}$ bundles, or forms of a matrix algebra, i.e. coherent sheaves of algebras which étale locally endomorphisms of the trivial bundle.
 :::
 
-:::{.remark}
-How can we combine these to send forms of $\PP^{n-1}$ directly to an Azumaya algebra?
-:::
 
-
+People usually think about Brauer groups as one of these two objects.
+We'll discuss a third way.
 
 
 
