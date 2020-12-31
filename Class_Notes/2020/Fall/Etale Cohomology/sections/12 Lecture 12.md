@@ -421,6 +421,7 @@ There is a map
 
 \[	
 0 \mapsvia{} \Br(\QQ) \mapsvia{} \bigoplus_{r\in P_{\QQ}} \Br(\QQ_{r})
+\mapsvia{ } 
 ,\]
 where $P$ is the set of places of $\QQ$ including $\infty$ (i.e. $\RR$) and the summands are the completions of $\QQ$ at each place.
 
