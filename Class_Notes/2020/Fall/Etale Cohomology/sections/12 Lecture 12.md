@@ -386,13 +386,12 @@ So we have a diagram
 
 
 \begin{tikzcd}
+A
+  \ar[r]
 &
-&
-\\
-\ts{\text{Twisted sheaves}}
-&
-&
+B
 \end{tikzcd}
+
 
 
 
