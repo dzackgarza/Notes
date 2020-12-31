@@ -145,6 +145,7 @@ This is recovered by taking $T$ to be the trivial vector bundle and $G=\GL_{n}$
 Here a **form** is defined to be a sheaf on $X_{\et}$ locally isomorphic to $T$.
 The map here is given by sending a form $F$ to $\ul{\mathrm{Isom}}\qty{F, T}$.
 This is locally split since $F$ is locally trivial, i.e. locally isomorphic to $T$, and so base-changing to some cover where $F$ will make this torsor split.
+The reverse map is sending $\tau \to \qty{\tau\cross T}/G$, taking the sheaf quotient, which gets rid of $\tau$ and making the fibers isomorphic to $T$ instead.
 
 
 
