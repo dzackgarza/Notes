@@ -217,7 +217,7 @@ When we defined the boundary map, we took descent data from $\PGL_n$, i.e. eleme
 
 
 :::{.definition title="Twisted Sheaves"}
-Let $U \to X$ be an étale cover and suppose $a$
+Let $U \to X$ be an étale cover and suppose 
 :::
 
 
