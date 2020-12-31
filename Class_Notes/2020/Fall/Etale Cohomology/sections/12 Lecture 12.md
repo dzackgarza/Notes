@@ -324,7 +324,7 @@ Prove this lemma.
 :::
 
 :::{.proof title="of proposition, \implies"}
-
+If $\alpha$ is trivial, then $[\alpha] = [1]$ in which case $\Qcoh(X,\alpha) \simeq$
 :::
 
 
