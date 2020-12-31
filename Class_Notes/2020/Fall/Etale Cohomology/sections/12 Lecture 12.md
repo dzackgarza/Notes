@@ -454,6 +454,19 @@ Asking for explicit (and small) representatives of these objects is generally a 
 :::
 
 Next time: use this theory to understand $H^i(k, \GG_m)$ for $k$ a field.
+We'll try to prove the following:
+  
+:::{.theorem title="?"}
+\envlist
+
+1. If $K(C)$ is the function field of a curve over $k = \bar k$, then $H^2(K(C), \GG_m) = 0$ and thus $\Br(K) = 0$.
+
+2. If $K_{\bar k}$ is strictly Henselian, then $H^2(K_{\bar x}, \GG_m) = 0$.
+:::
+
+This will be the key ingredient in computing the étale cohomology of curves.
+
+
 
 
 
