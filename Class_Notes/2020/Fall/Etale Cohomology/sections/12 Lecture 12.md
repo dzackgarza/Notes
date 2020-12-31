@@ -253,14 +253,14 @@ Then
 \[	
 \tensor: \Coh(X, \alpha) \cross \Qcoh(X, \alpha') \mapsvia{} \Coh(X, \alpha \alpha')
 ,\]
-  where is $\alpha,\alpha'$ are defined on different covers than one passes to a common refinement.
-
-4. There is a functor 
+  where is $\alpha,\alpha'$ are defined on different covers than one passes to a common refinement, and a functor[^how_to_hom]
 \[	
 \hom: \Coh(X, \alpha) \cross \Qcoh(X, \alpha') \mapsvia{} 
 \Coh(X, \alpha' - \alpha)
 .\]
 
+[^how_to_hom]: 
+This and the tensor functor come from homming (resp. tensoring) the sheaves together and using the pseudo descent data.
 
 
 [^proved_already]: 
