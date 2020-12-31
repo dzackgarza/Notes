@@ -280,7 +280,8 @@ Note that we've proved this already since $\Br = \im \delta$, but part of our co
 
 
 :::{.proof title="Sketch/Discussion"}
-
+1. If $\alpha\in \Br(X)$, then there is $\PGL_{n}\dash$torsor whose boundary is $\alpha$, and our construction of $\delta$ yielded an $\alpha\dash$twisted vector bundle.
+  Given such a bundle, one can obtain a Brauer class by constructing a twisted form a $\PP^{n}$
 :::
 
 
