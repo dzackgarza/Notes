@@ -233,7 +233,7 @@ These failed to satisfy the cocycle condition, and the Brauer class measured thi
 So in defining $\delta$, our intermediate step was a twisted sheaf.
 :::
 
-
+So we'll define the category $\Qcoh(X, \alpha)$ whose objects are $\alpha\dash$twisted sheaves and whose morphisms are morphisms of sheaves on $U$ commuting with $\varphi$.
 
 
 
