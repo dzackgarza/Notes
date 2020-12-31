@@ -437,6 +437,7 @@ This follows because being an Azumaya algebra is a local property, so one can ju
 
 Let $\mathcal{P}_1 \da \PP(\mathcal{E})$ and $\mathcal{P}_2 \da \PP(\mathcal{E}')$ are Severi-Brauers representing $\alpha_1, \alpha_2$ respectively.
 Then $\PP(\mathcal{E} \tensor \mathcal{E}')$ represents $\alpha_1 \alpha_2$.
+This is because Severi-Brauers come with a natural embedding into projective space given by the canonical line bundle, and this yields a geometric way to write down this space.
 
 
 
