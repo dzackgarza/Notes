@@ -314,6 +314,21 @@ Suppose that $\alpha$ is a 2-cocycle for $\GG_{m}$, then $[\alpha]$ is trivial i
 :::
 
 
+:::{.lemma title="?"}
+If $[\alpha] = [\alpha']$, then $\Qcoh(X,\alpha) \simeq \Qcoh(X, \alpha')$.
+Note that this is not a canonical equivalence.
+:::
+
+:::{.exercise title="?"}
+Prove this lemma.
+:::
+
+:::{.proof title="of proposition, \implies"}
+
+:::
+
+
+
 
 
 
