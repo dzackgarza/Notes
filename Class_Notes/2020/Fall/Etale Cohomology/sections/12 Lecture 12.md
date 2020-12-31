@@ -432,6 +432,7 @@ where $P$ is the set of places of $\QQ$ including $\infty$ (i.e. $\RR$) and the 
 Use the Severi-Brauer interpretation to show that if $\alpha\in \Br(\QQ)$ then $\ro{\alpha}{\QQ_{\nu}} = 0$ for all $\nu$.
 :::
 
+How to interpret multiplication: let $mc$
 
 
 
