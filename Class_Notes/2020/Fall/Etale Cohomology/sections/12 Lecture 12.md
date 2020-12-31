@@ -230,6 +230,7 @@ Then an **$\alpha\dash$twisted sheaf** is a quasicoherent sheaf on $U$, an isomo
 Note that if $\alpha$ were the constant function 1, this would be the descent data for a quasicoherent sheaf, so we're twisting what it means to be a sheaf.
 This is exactly what we did when defining a $\PGL_{n}\dash$torsor, where we lifted to get isomorphisms between the $\GL_{n}$ sheaves on the double overlaps.
 These failed to satisfy the cocycle condition, and the Brauer class measured this failure.
+So in defining $\delta$, our intermediate step was a twisted sheaf.
 :::
 
 
