@@ -217,7 +217,7 @@ When we defined the boundary map, we took descent data from $\PGL_n$, i.e. eleme
 
 
 :::{.definition title="Twisted Sheaves"}
-Let $U \to X$ be an étale cover and suppose 
+Let $U \to X$ be an étale cover and suppose $\alpha \in \Gamma(U \cross_{X} U \cross_{X} U, \GG_{m})$ represents.
 :::
 
 
