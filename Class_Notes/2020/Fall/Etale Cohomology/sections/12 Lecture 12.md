@@ -304,6 +304,7 @@ $\Br(X)$ is a group.
 :::{.proof title="?"}
 Let $\mathcal{E}, \mathcal{E}'$ be $\alpha,\alpha'\dash$twisted vector bundles respectively, we want to show that there exists an $\alpha\alpha'\dash$twisted vector bundle.
 We can take $\mathcal{E}\tensor \mathcal{E}'$, and then just note that having a twisted vector bundle is the same as having a Brauer class.
+For inverses, suppose $\alpha$
 :::
 
 
