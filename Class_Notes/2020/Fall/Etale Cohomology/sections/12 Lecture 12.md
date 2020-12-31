@@ -245,7 +245,13 @@ $\QCoh(X, 1)$ is canonically isomorphic to $\Qcoh(X)$, which is the very famous 
 Let $\alpha, \alpha'$ be two cocycles for $\GG_{m}$.
 Then
 
-1. $[\alpha]\in\Br(X)$ (so its in the image the boundary map from $\PGL_{n}$) iff there exist a twisted sheaf.
+1. $[\alpha]\in\Br(X)$ (so its in the image the boundary map from $\PGL_{n}$) iff there exist a twisted sheaf.[^proved_already]
+
+2. $\Qcoh(X,\alpha)$ is an abelian category (easy) and has enough injectives (hard) is $X$ is "nice".
+
+[^proved_already]: 
+Note that we've proved this already since $\Br = \im \delta$, but part of our construction of $\delta$ involved constructing an $\alpha\dash$twisted sheaf out of a $\PGL_{n}\dash$torsor.
+
 :::
 
 
