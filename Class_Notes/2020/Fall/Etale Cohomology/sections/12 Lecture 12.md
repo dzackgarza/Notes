@@ -432,7 +432,10 @@ where $P$ is the set of places of $\QQ$ including $\infty$ (i.e. $\RR$) and the 
 Use the Severi-Brauer interpretation to show that if $\alpha\in \Br(\QQ)$ then $\ro{\alpha}{\QQ_{\nu}} = 0$ for all $\nu$.
 :::
 
-How to interpret multiplication: let $mc$
+How to interpret multiplication: let $\mathcal{A}_{1}, \mathcal{A}_{2}$ be Azumaya algebras representing $\alpha_{1}, \alpha_{2}$, then $\mathcal{A}_{1} \tensor \mathcal{A}_{2}$ is an Azumaya algebra representing $\alpha_{1} \cdot \alpha_{2}$.
+This follows because being an Azumaya algebra is a local property, so one can just pass to a cover where this reduces to a fact that matrix algebras are closed under tensor products.
+
+Let $$
 
 
 
