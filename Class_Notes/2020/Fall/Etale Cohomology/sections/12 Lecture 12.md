@@ -216,6 +216,12 @@ We'll discuss a third way.
 When we defined the boundary map, we took descent data from $\PGL_n$, i.e. elements of this group on double intersections, and we lifted those to $\GL_{n}$.
 
 
+:::{.definition title="Twisted Sheaves"}
+Let $U \to X$ be an étale cover and suppose $a$
+:::
+
+
+
 
 
 
