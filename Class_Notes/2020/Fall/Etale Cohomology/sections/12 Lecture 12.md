@@ -240,6 +240,7 @@ So we'll define the category $\Qcoh(X, \alpha)$ whose objects are $\alpha\dash$t
 $\QCoh(X, 1)$ is canonically isomorphic to $\Qcoh(X)$, which is the very famous theorem of *étale descent*.
 :::
 
+### Categorical Properties
 
 :::{.proposition title="?"}
 Let $\alpha, \alpha'$ be two cocycles for $\GG_{m}$.
@@ -278,7 +279,6 @@ Note that we've proved this already since $\Br = \im \delta$, but part of our co
 :::
 
 
-
 :::{.proof title="Sketch/Discussion"}
 \envlist
 
@@ -291,15 +291,15 @@ Similarly, all of the rest except for **(2)** follow from definitions.
 :::
 
 
-
 :::{.exercise title="?"}
 Try to prove (3) and (4).
 :::
 
+### The Brauer Group is a Group
+
 :::{.corollary title="?"}
 $\Br(X)$ is a group.
 :::
-
 
 :::{.proof title="?"}
 Let $\mathcal{E}, \mathcal{E}'$ be $\alpha,\alpha'\dash$twisted vector bundles respectively, we want to show that there exists an $\alpha\alpha'\dash$twisted vector bundle.
@@ -307,6 +307,8 @@ We can take $\mathcal{E}\tensor \mathcal{E}'$, and then just note that having a 
 For inverses, suppose $\alpha$ is a Brauer class and $\mathcal{E}$ is a twisted vector bundle.
 To get an $\alpha\inv\dash$twisted vector bundle, one can just take the dual $\mathcal{E}\dual$.
 :::
+
+## Results On Twisted Bundles
 
 
 :::{.proposition title="?"}
@@ -325,9 +327,7 @@ Prove this lemma.
 
 :::{.proof title="of proposition, $\implies$"}
 If $\alpha$ is trivial, then $[\alpha] = [1]$ in which case $\Qcoh(X,\alpha) \simeq \Qcoh(X)$ are equivalent categories and $\OO_{X}$ is an honest line bundle.
-
 :::
-
 
 
 :::{.proof title="$\impliedby$"}
