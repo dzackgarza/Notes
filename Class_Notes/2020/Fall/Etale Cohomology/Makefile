@@ -94,6 +94,7 @@ clean:
 	rm *.temp -f || true;
 	rm out1.temp combined.temp || true;
 	rm sections/*.pdf || true;
+	rm sections/*.svg || true;
 
 
 reset:
