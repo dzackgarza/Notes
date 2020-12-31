@@ -435,7 +435,9 @@ Use the Severi-Brauer interpretation to show that if $\alpha\in \Br(\QQ)$ then $
 How to interpret multiplication: let $\mathcal{A}_{1}, \mathcal{A}_{2}$ be Azumaya algebras representing $\alpha_{1}, \alpha_{2}$, then $\mathcal{A}_{1} \tensor \mathcal{A}_{2}$ is an Azumaya algebra representing $\alpha_{1} \cdot \alpha_{2}$.
 This follows because being an Azumaya algebra is a local property, so one can just pass to a cover where this reduces to a fact that matrix algebras are closed under tensor products.
 
-Let $\mathcal{P}_1 \da \PP(\mathcal{E})$ and $\mathcal{P}_2 \da \PP(\mathcal{E})$.
+Let $\mathcal{P}_1 \da \PP(\mathcal{E})$ and $\mathcal{P}_2 \da \PP(\mathcal{E}')$ are Severi-Brauers representing $\alpha_1, \alpha_2$ respectively.
+Then $\PP(\mathcal{E} \tensor \mathcal{E}')$ represents $\alpha_1 \alpha_2$.
+
 
 
 
