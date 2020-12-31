@@ -440,6 +440,20 @@ Then $\PP(\mathcal{E} \tensor \mathcal{E}')$ represents $\alpha_1 \alpha_2$.
 This is because Severi-Brauers come with a natural embedding into projective space given by the canonical line bundle, and this yields a geometric way to write down this space.
 
 
+:::{.question}
+It's not easy to write down equations for Severi-Brauers.
+We can do this for curves (conics), but surfaces are difficult and we don't know how to do much for threefolds.
+:::
+
+
+:::{.question}
+(The Period-Index question) Given $\alpha\in\Br(X)$, what is the minimum rank or the $\gcd$ of the ranks of an $\alpha\dash$twisted vector bundle?
+We can do this for 2-torsion over a field, but this is generally a hard question.
+:::
+
+
+
+
 
 
 
