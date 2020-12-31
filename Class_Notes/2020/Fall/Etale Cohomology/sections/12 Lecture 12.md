@@ -217,7 +217,8 @@ When we defined the boundary map, we took descent data from $\PGL_n$, i.e. eleme
 
 
 :::{.definition title="Twisted Sheaves"}
-Let $U \to X$ be an étale cover and suppose $\alpha \in \Gamma(U \cross_{X} U \cross_{X} U, \GG_{m})$ represents.
+Let $U \to X$ be an étale cover and suppose $\alpha \in \Gamma(U \cross_{X} U \cross_{X} U, \GG_{m})$ represents $[\alpha] \in H^{s}i(X_{\et}, \GG_{m})$.
+Then an **$\alpha\dash$twisted sheaf** is a quasicoherent sheaf on $U$, an isomorphism $\phi:\pi_{1}^{*} \mathcal{F} \ms \pi_{2}^{*} \mathcal{F}$
 :::
 
 
