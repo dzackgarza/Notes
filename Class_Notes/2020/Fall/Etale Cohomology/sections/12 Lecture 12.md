@@ -386,10 +386,11 @@ So we have a diagram
 
 
 \begin{tikzcd}
-A
+\ts{\text{Twisted sheaves}}
   \ar[r]
 &
-B
+\ts{\text{Severi-Brauers}}
+\ts{\text{Azumaya algebras}}
 \end{tikzcd}
 
 
