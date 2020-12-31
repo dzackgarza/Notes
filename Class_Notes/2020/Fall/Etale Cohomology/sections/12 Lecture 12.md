@@ -382,7 +382,8 @@ Descent data for a polarized variety -- a variety plus an ample line bundle -- t
 
 Taking $\Endo(\mathcal{E})$ yields an Azumaya algebra since taking $\Endo$ here kills the twisting cocycle and yields an honest sheaf of algebras.
 It's locally isomorphic to a matrix algebra since passing to any cover where $\mathcal{E}$ is trivialized yields a matrix algebra.
-So we have a diagram
+Moreover, there is a way to go from Azumaya algebras to Severi-Brauers, by taking moduli of certain ideals,
+so we have a diagram
 
 
 \begin{tikzcd}
@@ -396,7 +397,9 @@ So we have a diagram
 \\
 &
 \ts{\text{Azumaya algebras}}
+  \ar[uu, dotted]
 \end{tikzcd}
+
 
 
 
