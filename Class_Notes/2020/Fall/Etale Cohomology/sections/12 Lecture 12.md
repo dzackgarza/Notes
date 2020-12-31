@@ -374,6 +374,15 @@ Then by the previous proposition, $[\alpha^{n}] - [\alpha]^{n}$ is trivial.
 
 :::
 
+Given an $\alpha\dash$twisted sheaf $\mathcal{E}$, taking the projectivization yields a Severi-Brauer.
+Since $\mathcal{E}$ was a vector bundle with descent data twisted by a scalar and projectivizing kills scalars, this yields honest descent data.
+But descent data is not effective for schemes.
+So to say that this is actually a variety instead of a sheaf representing this descent, an extra argument is needed: projective space is anti-canonically polarized.
+Descent data for a polarized variety -- a variety plus an ample line bundle -- then descent is effective, and projective space has a canonical polarization given by the dual of the canonical sheaf.
+
+Taking $\Endo(\mathcal{E})$ yields an Azumaya algebra since taking $\Endo$ here kills the twisting cocycle and yields an honest sheaf of algebras.
+It's locally isomorphic to a matrix algebra since passing to any cover where $\mathcal{E}$ is trivialized yields a matrix algebra.
+
 
 
 
