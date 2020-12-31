@@ -339,8 +339,17 @@ Then the Čech differential $\check{\delta}$ satisfies $\check{\delta}(\beta)=\a
 
 :::{.corollary title="?"}
 Suppose $\mathcal{E}$ is an $\alpha\dash$twisted vector bundle of rank $n$.
-Then $asdsadasddadas$ is some embedded text. Too
+Then $[\alpha]\in H^{2}(X_{\et}, \GG_m)$ is $n\dash$torsion.
+
 :::
+
+
+:::{.proof title="?"}
+We've just proved this for $n=1$, so for the general case, note that we can consider $\Wedge^{n}\mathcal{E}$ is a $\alpha^{n}\dash$twisted line bundle.
+Then by the previous proposition, $[\alpha^{n}] - [\alpha]^{n}$ is trivial.
+:::
+
+
 
 
 
