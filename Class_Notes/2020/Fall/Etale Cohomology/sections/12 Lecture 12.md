@@ -350,6 +350,23 @@ Then by the previous proposition, $[\alpha^{n}] - [\alpha]^{n}$ is trivial.
 :::
 
 
+:::{.corollary title="?"}
+
+\[	
+\Br(X) \subseteq \Br'(X) = H^{2}(X_{\et}, \GG_{m})_{\tors}
+.\]
+
+
+:::
+
+
+
+:::{.example title="of Brauer classes"}
+
+:::
+
+
+
 
 
 
