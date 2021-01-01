@@ -20,13 +20,6 @@ markdown:
 	touch $(FILENAME).md;
 	awk 'FNR==1{print ""}1' ./sections/*.md  > $(FILENAME).md;
 
-watch: markdown
-	latex_preview -f $(FILENAME).md -z
-
-view: markdown
-	latex_preview -f $(FILENAME).md -v -z
-
-
 ## LaTeX Output
 latex: markdown
 	cat data.md $(FILENAME).md | pandoc \
