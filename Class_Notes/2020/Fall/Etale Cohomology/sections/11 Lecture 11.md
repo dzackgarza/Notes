@@ -346,5 +346,27 @@ This yields a cocycle in $\PGL_n(U\cross_X U)$.
 
 
 
+There's a LES:
+\begin{tikzcd}
+&
+ \cdots
+  \ar[r]
+&
+H^{i-1}(X_\et, \bigoplus_{\codim(z) = 1} \iota_{z_*} \ul \ZZ)
+  \ar[dll]
+\\
+{\color{NavyBlue} H^i(X_\et, \GG_m) }
+  \ar[r]
+&
+H^i(X_\et, \eta_* \GG_m)
+  \ar[r]
+&
+H^i(X_\et, \bigoplus_{\codim(z) = 1} \iota_{z_*} \ul \ZZ)
+  \ar[dll]
+\\
+\cdots
+& 
+&
+\end{tikzcd}
 
 
