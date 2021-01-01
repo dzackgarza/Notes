@@ -343,3 +343,5 @@ This yields a cocycle in $\PGL_n(U\cross_X U)$.
 
 > To be continued.
 
+
+
