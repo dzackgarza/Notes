@@ -492,4 +492,3 @@ and after some splicing this $\delta$ will be the differential on $E_2$.
 
 Next time: the Brauer group.
 
-
