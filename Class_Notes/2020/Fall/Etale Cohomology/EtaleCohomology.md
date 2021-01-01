@@ -3685,6 +3685,9 @@ and after some splicing this $\delta$ will be the differential on $E_2$.
 
 Next time: the Brauer group.
 
+
+
+
 # Lecture 11
 
 ## Pushforwards (Continued)
@@ -3758,8 +3761,8 @@ This diagram commutes since what you get in the top-right corner is already a sh
 We can thus factor $\pi_*$ to obtain
 \[  
 R^i \pi_* \mathcal{F} = \mathcal{H}^i*\pi_* \mathcal{I}^\wait
-= \mathcal{H}^i(a\circ \pi \circ f (\mathcal{I}^\wait))
-= a\circ \pi_*\qty{\mathcal{H}^i(f(\mathcal{I}^\wait)) }
+&= \mathcal{H}^i(a\circ \pi \circ f (\mathcal{I}^\wait)) \\
+&= a\circ \pi_*\qty{\mathcal{H}^i(f(\mathcal{I}^\wait)) }
 .\]
 where we've used the fact that $\pi_*, s$ are exact.
 Why isn't the inner term zero, since $\mathcal{I}^\wait$ is an exact complex of sheaves?
@@ -4029,6 +4032,8 @@ $\ro T U  = \ro {\PGL_n} U$.
 This yields a cocycle in $\PGL_n(U\cross_X U)$.
 
 > To be continued.
+
+
 
 
 # Lecture 12
