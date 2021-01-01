@@ -369,4 +369,3 @@ H^i(X_\et, \bigoplus_{\codim(z) = 1} \iota_{z_*} \ul \ZZ)
 &
 \end{tikzcd}
 
-
