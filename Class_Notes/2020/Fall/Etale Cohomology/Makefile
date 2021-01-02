@@ -52,7 +52,7 @@ test: markdown latex
 
 ## HTML Output
 html: markdown
-	pandoc_tohtml.sh -f "$filepath" > $(FILENAME).html
+	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html
 	
 .SILENT:
 
