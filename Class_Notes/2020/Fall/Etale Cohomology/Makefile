@@ -52,34 +52,8 @@ test: markdown latex
 
 ## HTML Output
 html: markdown
-	cat ~/Notes/Latex/latexmacs.tex $(FILENAME).md \
-		> combined.temp ;
-	cat combined.temp | pandoc \
-		--quiet \
-		--from=markdown \
-		--to=markdown \
-		-r markdown+latex_macros+tex_math_single_backslash \
-		--lua-filter=/home/zack/Dropbox/rmcodeblocks.lua \
-		--lua-filter /home/zack/dotfiles/bin/warning-div.lua \
-		| sed '/^\\\%/d' > out1.temp ;
-	cat data.md out1.temp | pandoc \
-		--quiet \
-		-r markdown+simple_tables+table_captions+yaml_metadata_block \
-		--to html \
-		--mathjax \
-		--template=$(PREFIX)/templates/tufte-html-vis.html  \
-		--css=$(PREFIX)/marked/kultiad-serif.css \
-		--filter pandoc-crossref \
-		--filter pandoc-citeproc \
-		--lua-filter /home/zack/Notes/Latex/tikzcd.lua \
-		--csl=$(PREFIX)/csl/$(CSL).csl \
-		--bibliography=$(BIB) \
-		--toc \
-		-V current_date="$$(date +%Y-%m-%d%n)" \
-		--self-contained \
-		-o $(FILENAME).html ;
-	#rm out1.temp combined.temp *.svg -f || true;
-
+	pandoc_tohtml.sh -f "$filepath" > $(FILENAME).html
+	
 .SILENT:
 
 clean:
