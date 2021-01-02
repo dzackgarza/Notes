@@ -305,7 +305,7 @@ Another one of Daniel's favorite topics in the course!
 ## Brauer Groups
 
 
-:::{.definition title="Cohomological Brauer Group"}
+:::{.definition title="Cohomological Brauer Group" ref="def:cohom_brauer_group"}
 Let $X$ be a scheme, then the **cohomological Brauer group** is defined as
 \[  
 \Br (X) \da H^2(X_\et, \GG_m)_{\tors}
