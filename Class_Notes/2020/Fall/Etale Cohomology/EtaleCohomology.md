@@ -1,16 +1,3 @@
-```{=tex}
-\let\oldexp\exp
-```
-
-These are notes live-tex'd from a graduate course in Étale Cohomology taught by Daniel Litt at the University of Georgia in Fall 2020. As such, any errors or inaccuracies are almost certainly my own.
-
-```{=tex}
-\medskip
-\begin{flushright}
-  D. Zack Garza, \today \\
-  \currenttime
-\end{flushright}
-```
 # Lecture 1
 
 ## References
@@ -117,7 +104,7 @@ This forces using some funky type of coefficients.
 
 Suppose \( X/{\mathbb{F}}_q \) is a variety, then
 \[  
-\zeta_X(t) = \exp\qty{\sum_{n>0} { {{\left\lvert {X({\mathbb{F}}_{q^n})} \right\rvert} \over n} t^n } }
+\zeta_X(t) = \exp{\sum_{n>0} { {{\left\lvert {X({\mathbb{F}}_{q^n})} \right\rvert} \over n} t^n } }
 .\]
 
 ::: {.remark}
@@ -162,8 +149,8 @@ These are all theorems! The proofs:
 Let \( {\left\lvert {X} \right\rvert} \) denote the closed points of \( X \), then there is an Euler product:
 \[  
 \zeta_X(q^{-n} t^{-1}) = \pm q^{nE \over 2} t^E \zeta_X(t)
-&= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp\qty{t^{\deg (x)} + {t^{2\deg (x)} \over 2} + \cdots} \\
-&= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp\qty{-\log(1-t^{\deg(x)})} \\
+&= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp{t^{\deg (x)} + {t^{2\deg (x)} \over 2} + \cdots} \\
+&= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp{-\log(1-t^{\deg(x)})} \\
 &= \prod_{x\in {\left\lvert {X} \right\rvert}} {1 \over 1 - t^{\deg(x)}}
 .\]
 
@@ -253,7 +240,7 @@ Idea: take Frobenius (intentionally vague, arithmetic vs geometric vs ...) \( F:
 
 ::: {.lemma}
 \[  
-\exp\qty{\sum {\operatorname{Tr}(F^n) \over n}t^n  }\quad\text{is rational}
+\exp{\sum {\operatorname{Tr}(F^n) \over n}t^n  }\quad\text{is rational}
 .\]
 :::
 
@@ -263,7 +250,7 @@ This lemma implies the result, because if you plug the trace formula into the ze
 ::: {.proof title="Of Lemma"}
 It suffices to treat the case \( \dim(V) = 1 \), because otherwise you can just write this as a sum of powers of eigenvalues. Then you have a scalar matrix, so you obtain
 \[  
-\exp\qty{ \sum {\alpha^n \over n} t^n} = \exp\qty{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t}
+\exp{ \sum {\alpha^n \over n} t^n} = \exp{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t}
 ,\]
 which is rational.
 :::
@@ -290,7 +277,7 @@ L(F^n) \coloneqq
 and
 \[  
 \zeta_{X, F}(t) \coloneqq
-\exp\qty{\sum_{n=1}^\infty {L(F^n) \over n}t^n }
+\exp{\sum_{n=1}^\infty {L(F^n) \over n}t^n }
 .\]
 
 Then \( \zeta_{X, F}(t) \) satisfies the RH: the zeros and poles are of absolute value \( q^{i\over 2} \). Equivalently, the eigenvalues \( \lambda \) of \( F^n \) acting on \( H^i(X, {\mathbb{C}}) \) all satisfy \( {\left\lvert {\lambda} \right\rvert} = q^{i\over 2} \).
@@ -3890,7 +3877,7 @@ This forces using some funky type of coefficients.
 
 Suppose \( X/{\mathbb{F}}_q \) is a variety, then
 \[  
-\zeta_X(t) = \exp\qty{\qty}{\sum_{n>0} { {{\left\lvert {X({\mathbb{F}}_{q^n})} \right\rvert} \over n} t^n } }
+\zeta_X(t) = \exp\qty{\sum_{n>0} { {{\left\lvert {X({\mathbb{F}}_{q^n})} \right\rvert} \over n} t^n } }
 .\]
 
 ::: {.remark}
@@ -3935,8 +3922,8 @@ These are all theorems! The proofs:
 Let \( {\left\lvert {X} \right\rvert} \) denote the closed points of \( X \), then there is an Euler product:
 \[  
 \zeta_X(q^{-n} t^{-1}) = \pm q^{nE \over 2} t^E \zeta_X(t)
-&= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp\qty{\qty}{t^{\deg (x)} + {t^{2\deg (x)} \over 2} + \cdots} \\
-&= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp\qty{\qty}{-\log(1-t^{\deg(x)})} \\
+&= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp\qty{t^{\deg (x)} + {t^{2\deg (x)} \over 2} + \cdots} \\
+&= \prod_{x\in {\left\lvert {X} \right\rvert}} \exp\qty{-\log(1-t^{\deg(x)})} \\
 &= \prod_{x\in {\left\lvert {X} \right\rvert}} {1 \over 1 - t^{\deg(x)}}
 .\]
 
@@ -4026,7 +4013,7 @@ Idea: take Frobenius (intentionally vague, arithmetic vs geometric vs ...) \( F:
 
 ::: {.lemma}
 \[  
-\exp\qty{\qty}{\sum {\operatorname{Tr}(F^n) \over n}t^n  }\quad\text{is rational}
+\exp\qty{\sum {\operatorname{Tr}(F^n) \over n}t^n  }\quad\text{is rational}
 .\]
 :::
 
@@ -4036,7 +4023,7 @@ This lemma implies the result, because if you plug the trace formula into the ze
 ::: {.proof title="Of Lemma"}
 It suffices to treat the case \( \dim(V) = 1 \), because otherwise you can just write this as a sum of powers of eigenvalues. Then you have a scalar matrix, so you obtain
 \[  
-\exp\qty{\qty}{ \sum {\alpha^n \over n} t^n} = \exp\qty{\qty}{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t}
+\exp\qty{ \sum {\alpha^n \over n} t^n} = \exp\qty{ -\log(1 - \alpha t)} = {1 \over 1-\alpha t}
 ,\]
 which is rational.
 :::
@@ -4063,7 +4050,7 @@ L(F^n) \mathrel{\vcenter{:}}=
 and
 \[  
 \zeta_{X, F}(t) \mathrel{\vcenter{:}}=
-\exp\qty{ \sum_{n=1}^\infty {L(F^n) \over n}t^n  }
+\exp{ \sum_{n=1}^\infty {L(F^n) \over n}t^n  }
 .\]
 
 Then \( \zeta_{X, F}(t) \) satisfies the RH: the zeros and poles are of absolute value \( q^{i\over 2} \). Equivalently, the eigenvalues \( \lambda \) of \( F^n \) actings on \( H^i(X, {\mathbb{C}}) \) all satisfy \( {\left\lvert {\lambda} \right\rvert} = q^{i\over 2} \).
