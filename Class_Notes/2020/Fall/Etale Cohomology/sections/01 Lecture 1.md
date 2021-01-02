@@ -76,10 +76,8 @@ Some comparisons between the last two cases:
 - Over a finite field, $H^i$ will vanish for $i>2d+1$ but generally not vanish for $i=2d+1$. 
 
 In good situations, these are finitely generated $\ZZ/\ell^n\ZZ\dash$modules, have Mayer-Vietoris and excision sequences, spectral sequences, etc.
-Related invariants: for a scheme with a geometric point [^what_is_a_geom_point]
-
-
-$(X, \bar x) \rightsquigarrow \pi_1^{\text{étale}}(X, \bar x)$, which is a profinite topological group, which is a profinite topological group.
+Related invariants: for a scheme with a geometric point[^what_is_a_geom_point] :
+$(X, \bar x) \rightsquigarrow \pi_1^{\text{étale}}(X, \bar x)$, which is a profinite topological group.
 
 [^what_is_a_geom_point]: 
 A **geometric point** is a map from $\spec X$ to an algebraically closed field.
