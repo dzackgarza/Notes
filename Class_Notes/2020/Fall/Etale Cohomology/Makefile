@@ -17,7 +17,9 @@ all: pdf html	clean
 
 ## Markdown Output
 markdown:
-	awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME).md;
+	cat "$PANDOC_DIR/custom/latexmacs.tex" > $(FILENAME).md
+	awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
+	awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME)_stripped.md;
 
 ## LaTeX Output
 latex: markdown
