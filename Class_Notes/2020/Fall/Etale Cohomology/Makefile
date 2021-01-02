@@ -50,6 +50,7 @@ clean:
 
 reset:
 	rm $(FILENAME).md -f || true;
+	rm $(FILENAME)_stripped.md -f || true;
 	rm $(FILENAME).tex -f || true;
 	rm $(FILENAME).html -f || true;
 	rm $(FILENAME).pdf -f || true;
