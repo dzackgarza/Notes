@@ -3452,11 +3452,10 @@ We also started defining the Brauer group by considering
 H^2(X_\text{ét}, {\mathbb{G}}_m)
 ,\]
 and defining \( \operatorname{Br}(X) \coloneqq\operatorname{im}f \) as a set, which is a reasonably concrete geometric object. This map came from a LES in cohomology, coming from a SES of sheaves, not all of which were abelian. The definition of \( \delta \) was the boundary map of
-\[  
+\[\label{eq:12_union_1}
 \bigcup_n H^1(X_\text{ét}, \operatorname{PGL}_n)
 \xrightarrow{\delta}
 H^2(X_\text{ét}, {\mathbb{G}}_m)
-\label{eq:12_union_1}
 \]
 arising from the SES of sheaves of groups on \( X_\text{ét} \),
 \[  

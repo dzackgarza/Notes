@@ -46,11 +46,10 @@ This map came from a LES in cohomology, coming from a SES of sheaves, not all of
 The definition of 
 $\delta$ 
 was the boundary map of 
-\[	
+\[\label{eq:12_union_1}
 \Union_n H^1(X_\et, \PGL_n)
 \mapsvia{\delta}
 H^2(X_\et, \GG_m)
-\label{eq:12_union_1}
 \]
 arising from the SES of sheaves of groups on 
 $X_\et$,
