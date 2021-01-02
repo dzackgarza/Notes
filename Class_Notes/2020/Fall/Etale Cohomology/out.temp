@@ -1,14 +1,7 @@
 # Section 1
 
-::: {.question .proofenv}
-```{=latex}
-\begin{question}
-```
+::: {.question}
 When does it come from a quasicoherent sheaf on $X$?
-
-```{=latex}
-\end{question}
-```
 :::
 
 $\mathcal{F}^{\et}$
