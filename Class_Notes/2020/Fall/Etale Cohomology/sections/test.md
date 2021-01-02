@@ -277,7 +277,7 @@ L(F^n) \mathrel{\vcenter{:}}=
 and
 \[  
 \zeta_{X, F}(t) \mathrel{\vcenter{:}}=
-\exp\qty{\sum_{n=1}^\infty {L(F^n) \over n}t^n }
+\exp{ \sum_{n=1}^\infty {L(F^n) \over n}t^n  }
 .\]
 
 Then \( \zeta_{X, F}(t) \) satisfies the RH: the zeros and poles are of absolute value \( q^{i\over 2} \). Equivalently, the eigenvalues \( \lambda \) of \( F^n \) actings on \( H^i(X, {\mathbb{C}}) \) all satisfy \( {\left\lvert {\lambda} \right\rvert} = q^{i\over 2} \).
