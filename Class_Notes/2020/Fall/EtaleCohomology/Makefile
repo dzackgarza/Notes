@@ -21,7 +21,7 @@ latex: markdown
 pdf: markdown latex
 	#pandoc_totex_orpdf.sh -f $(FILENAME).md > $(FILENAME).pdf
 	mkdir -p tex_tempfiles;
-	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles;
+	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf .;
 	echo "PDF done";
 
 test: markdown latex
