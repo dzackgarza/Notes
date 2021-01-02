@@ -1,21 +1,49 @@
 SHELL:=/bin/zsh
+FILENAME="ModuliSpaces"
 
-define renew_md = 
-{echo "---\n title: Moduli Spaces\n book: true\n---\n\n" && fd --full-path ./sections | sort -nr | sed 'N;s/\(.*\)\n\(.*\)/\2\n\1/' | grep "md" | sort -n | awk -F ":" '{print "!include " $$1 "\n";}' } > FullNotes.md 2>&1
-endef
+all: pdf html
 
-renew: ; @$(renew_md); echo "Done"
+## Markdown Output
+markdown:
+	cp -r $$PANDOC_DIR .;
+	cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
+	awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
+	awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME)_stripped.md;
+	echo "Markdown done."
 
-compile:
-	make renew
-	latex_preview -f ./FullNotes.md -j
+## LaTeX Output
+latex: markdown
+	pandoc_totex_orpdf.sh -f $(FILENAME).md -x > $(FILENAME).tex;
+	echo "Latex done";
 
-watch:
-	make renew
-	latex_preview -f ./FullNotes.md
+## PDF Output
+pdf: markdown latex
+	mkdir -p tex_tempfiles;
+	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf .;
+	echo "PDF done";
 
-view: 
-	make renew
-	latex_preview -f ./FullNotes.md -v
+## HTML Output
+html: markdown
+	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html
+
+test: markdown latex
+	latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull;
+	echo "Tests complete."
+
+.SILENT:
+
+clean:
+	rm tex_tempfiles -rf || true;
+	rm -rf latex.out || true;
+
+reset:
+	rm ./.pandoc -rf || true;
+	rm $(FILENAME).md -f || true;
+	rm $(FILENAME)_stripped.md -f || true;
+	rm $(FILENAME).tex -f || true;
+	rm $(FILENAME).html -f || true;
+	rm $(FILENAME).pdf -f || true;
+
+.PHONY: clean
 
 .ONESHELL:

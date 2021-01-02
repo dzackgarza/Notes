@@ -1,6 +1,6 @@
 ---
 title: "Moduli Spaces"
-subtitle: "University of Georgia, Fall 2020"
+subtitle: "University of Georgia, Spring 2020"
 author:
 - name: D. Zack Garza
   affiliation: University of Georgia 
