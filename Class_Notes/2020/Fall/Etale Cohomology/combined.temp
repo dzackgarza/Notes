@@ -413,6 +413,8 @@
 \newcommand\Cc[0]{{\check{C}}}
 # Section 1
 
+$\mathcal{F}^{\et}$
+
 :::{.definition title="$\mathcal{F}^{\et}$"}
 The sheaf associated to the above functor on $X_{\et}$ will be denoted $\mathcal{F}^\text{étale}$.
 :::

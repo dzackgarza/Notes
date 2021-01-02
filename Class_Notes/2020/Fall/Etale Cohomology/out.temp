@@ -420,12 +420,14 @@
 ```
 # Section 1
 
-::: {.definition title="$\\mathcal{F}^{\\et}$"}
+$\mathcal{F}^{\text{ét}}$
+
+::: {.definition .proofenv title="$\\mathcal{F}^{\\et}$"}
 The sheaf associated to the above functor on $X_{\text{ét}}$ will be
 denoted $\mathcal{F}^\text{étale}$.
 :::
 
-::: {.proof title="of 2"}
+::: {.proof .proofenv title="of 2"}
 Suppose we have an fppf cover of $X$
 ```{=tex}
 \begin{tikzcd}
@@ -435,7 +437,7 @@ X
 ```
 :::
 
-::: {.question}
+::: {.question .proofenv}
 Suppose $\mathfrak{F}\in {\mathrm{QCoh}}(X)$. When does it come from a
 quasicoherent sheaf on $X$? I.e., when is there a quasicoherent sheaf
 $\mathcal{F}'$ on $X$ and an isomorphism between its pullback to $U$ and
