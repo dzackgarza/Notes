@@ -54,7 +54,7 @@ Goal of etale cohomology: do something similar for much more general "nice" sche
 Note that some of these properties are special to complex varieties.
 (E.g. finitely generated: not true for a random topological space.)
 
-We'll associate $X$ a "nice scheme" $\rightsquigarrow H^i(X_{\text{et}}, \ZZ/\ell^n\ZZ)$.
+We'll associate to $X$ a "nice scheme" $\rightsquigarrow H^i(X_{\text{et}}, \ZZ/\ell^n\ZZ)$.
 Take the inverse limit over all $n$ to obtain the $\ell\dash$adic cohomology $H^i(X_{\text{et}}, \ZZ_\ell)$.
 You can tensor with $\QQ$ to get something with $\QQ_\ell$ coefficients.
 And as in singular cohomology, you can a "twisted coefficient system".

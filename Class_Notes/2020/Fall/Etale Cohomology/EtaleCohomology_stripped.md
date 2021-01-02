@@ -45,7 +45,7 @@ Suppose \( X/{\mathbb{C}} \) is a quasiprojective variety: a finite type separat
 
 Goal of etale cohomology: do something similar for much more general "nice" schemes. Note that some of these properties are special to complex varieties. (E.g. finitely generated: not true for a random topological space.)
 
-We'll associate \( X \) a "nice scheme" \( \rightsquigarrow H^i(X_{\text{et}}, {\mathbb{Z}}/\ell^n{\mathbb{Z}}) \). Take the inverse limit over all \( n \) to obtain the \( \ell{\hbox{-}} \)adic cohomology \( H^i(X_{\text{et}}, {\mathbb{Z}}_\ell) \). You can tensor with \( {\mathbb{Q}} \) to get something with \( {\mathbb{Q}}_\ell \) coefficients. And as in singular cohomology, you can a "twisted coefficient system".
+We'll associate to \( X \) a "nice scheme" \( \rightsquigarrow H^i(X_{\text{et}}, {\mathbb{Z}}/\ell^n{\mathbb{Z}}) \). Take the inverse limit over all \( n \) to obtain the \( \ell{\hbox{-}} \)adic cohomology \( H^i(X_{\text{et}}, {\mathbb{Z}}_\ell) \). You can tensor with \( {\mathbb{Q}} \) to get something with \( {\mathbb{Q}}_\ell \) coefficients. And as in singular cohomology, you can a "twisted coefficient system".
 
 ::: {.example title="?"}
 What are some nice schemes?
