@@ -44,8 +44,9 @@ clean:
 	#rm out1.temp combined.temp || true;
 	#rm sections/*.pdf || true;
 	#rm sections/*.svg || true;
-	rm custom_templates/* -rf;
-	rm tex_tempfiles/* -rf;
+	rm custom_templates/* -rf || true;
+	rm tex_tempfiles/* -rf || true;
+	rm -rf latex.out || true;
 
 
 reset:
