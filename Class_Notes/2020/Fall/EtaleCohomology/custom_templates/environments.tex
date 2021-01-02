@@ -51,13 +51,15 @@
   {\newline}% Space after thm head: \newline = linebreak
   {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{theorem}
+
 \tcolorboxenvironment{theorem}{
+  colback=thm_color,
+  opacityfill=0.25,
   boxrule=0pt,
   boxsep=0pt,
   breakable,
   enhanced jigsaw,
   fonttitle={\large\bfseries},
-  opacityback=0.8,
   borderline west={4pt}{0pt}{thm_color},
   attach title to upper={}
 }
@@ -106,8 +108,9 @@
   boxsep=0pt,
   breakable,
   enhanced jigsaw,
-  opacityback=0.1,
-  colframe=prop_color
+  opacityback=0.25,
+  colframe=prop_color,
+  borderline west={4pt}{0pt}{prop_color},
 }
 \newtheorem{corollary}[theorem]{Corollary}
 \numberwithin{corollary}{subsection} % important bit
@@ -321,13 +324,8 @@
 \newtheorem{remark}[theorem]{Remark}
 \numberwithin{remark}{subsection} % important bit
 
-
-
 %\usepackage{environ}
-
 %\RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
-
-
 
 \newtheoremstyle{warnenv}% name
   {0em}%         Space above, empty = `usual value'

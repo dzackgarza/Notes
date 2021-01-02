@@ -4194,6 +4194,8 @@ H^i(U_\eta, \ro{\mathcal{F}}{U_\eta})
 .\]
 where we take limits over $U\mapsvia{\et} X$ and $\bar u\to U$ is a geometric point above $\bar x$.
 
+:::
+
 :::{.exercise title="Important, must-do"}
 Let $\OO_{X, \bar x}$[^strictly_henselian_ring] be the stalk of $\OO_X$ at $\bar x$
 and $K_{\bar x}$[^strictly_henselian_field]
@@ -4206,8 +4208,6 @@ H^i(K_{\bar x}, \ro{\mathcal{F}} {K_{\bar x}} )
 ,\]
 where the RHS is either the Galois cohomology of $k$ or the étale cohomology of $\spec k$.
 
-Idea: these are the étale local rings, and this says you can compute the stalk of a cohomology sheaf in terms of these strictly Henselian local rings.
-
 [^strictly_henselian_ring]: 
 The **strictly Henselian ring** of $X$ at $\bar x$.
 
@@ -4216,7 +4216,8 @@ The **strictly Henselian field** of $X$ at $\bar x$.
 
 :::
 
-:::
+Idea: these are the étale local rings, and this says you can compute the stalk of a cohomology sheaf in terms of these strictly Henselian local rings.
+
 
 
 ## Étale Cohomology of Curves: Reducing to Galois Cohomology

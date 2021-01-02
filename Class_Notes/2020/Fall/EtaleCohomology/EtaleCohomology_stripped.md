@@ -3227,6 +3227,7 @@ Suppose \( X \) is an integral scheme and \( \eta\xhookrightarrow{\iota} X \) is
 H^i(U_\eta, { \left.{{\mathcal{F}}} \right|_{{U_\eta}} })
 .\]
 where we take limits over \( U\xrightarrow{\text{ét}} X \) and \( \mkern 1.5mu\overline{\mkern-1.5muu\mkern-1.5mu}\mkern 1.5mu\to U \) is a geometric point above \( \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu \).
+:::
 
 ::: {.exercise title="Important, must-do"}
 Let \( {\mathcal{O}}_{X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu} \)[^25] be the stalk of \( {\mathcal{O}}_X \) at \( \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu \) and \( K_{\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu} \)[^26] be its fraction field. Then
@@ -3236,10 +3237,9 @@ Let \( {\mathcal{O}}_{X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 
 H^i(K_{\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu}, { \left.{{\mathcal{F}}} \right|_{{K_{\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu}}} } )
 ,\]
 where the RHS is either the Galois cohomology of \( k \) or the étale cohomology of \( \operatorname{Spec}k \).
+:::
 
 Idea: these are the étale local rings, and this says you can compute the stalk of a cohomology sheaf in terms of these strictly Henselian local rings.
-:::
-:::
 
 ## Étale Cohomology of Curves: Reducing to Galois Cohomology
 
