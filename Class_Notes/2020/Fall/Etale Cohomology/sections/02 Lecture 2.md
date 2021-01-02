@@ -294,6 +294,7 @@ Then $f$ is étale is a neighborhood of $\vector a$ if $\det \qty{\dd{f_i}{x_j} 
 1. Open immersions are étale
 2. Compositions of étale morphisms are étale[^composition_etale_note]
 3. Base change of étale morphisms are étale, i.e. 
+
 \begin{tikzcd}
 X \cross_Y T\ar[d, "\therefore \text{étale}"']\ar[r] & X\ar[d, "\text{étale}"]  \\
 T\ar[r] &  Y\\
