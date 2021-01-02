@@ -5,7 +5,7 @@ all: pdf html
 
 ## Markdown Output
 markdown:
-	cp -r $$PANDOC_DIR/* .;
+	cp -r $$PANDOC_DIR .;
 	cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
 	awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
 	awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME)_stripped.md;
