@@ -2,7 +2,7 @@
 
 $\mathcal{F}^{\et}$
 
-:::{.definition title="$\mathcal{F}^{\et}$"}
+:::{.definition title="Some text $\mathcal{F}^{\et}$ and some more"}
 The sheaf associated to the above functor on $X_{\et}$ will be denoted $\mathcal{F}^\text{étale}$.
 :::
 
