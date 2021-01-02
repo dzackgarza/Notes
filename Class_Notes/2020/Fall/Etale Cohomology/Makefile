@@ -5,9 +5,8 @@ all: pdf html	clean
 
 ## Markdown Output
 markdown:
-	mkdir -p custom_templates;
-	cp -rf $$CUSTOM_TEX_DIR/* ./custom_templates;
-	cat "$$PANDOC_DIR/custom/latexmacs.tex" > $(FILENAME).md
+	cp -r $$PANDOC_DIR/* ./.pandoc;
+	cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md
 	awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
 	awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME)_stripped.md;
 	echo "Markdown done."
@@ -49,7 +48,7 @@ clean:
 
 
 reset:
-	rm custom_templates -rf || true;
+	rm ./.pandoc -rf || true;
 	rm $(FILENAME).md -f || true;
 	rm $(FILENAME)_stripped.md -f || true;
 	rm $(FILENAME).tex -f || true;
