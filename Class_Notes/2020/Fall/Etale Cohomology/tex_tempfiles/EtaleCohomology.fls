@@ -1774,10 +1774,10 @@ INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/share/texmf-dist/tex/latex/asymptote/asymptote.sty
-INPUT ./EtaleCohomology.pre
-INPUT EtaleCohomology.pre
-INPUT ./EtaleCohomology.pre
-INPUT EtaleCohomology.pre
+INPUT tex_tempfiles/EtaleCohomology.pre
+INPUT tex_tempfiles/EtaleCohomology.pre
+INPUT tex_tempfiles/EtaleCohomology.pre
+INPUT tex_tempfiles/EtaleCohomology.pre
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
@@ -2096,7 +2096,12 @@ INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT tex_tempfiles/EtaleCohomology.bcf
-INPUT 'inkscape' -V 
+INPUT tex_tempfiles/EtaleCohomology.bbl
+INPUT tex_tempfiles/EtaleCohomology.bbl
+INPUT tex_tempfiles/EtaleCohomology.bbl
+INPUT tex_tempfiles/EtaleCohomology.bbl
+INPUT tex_tempfiles/EtaleCohomology.bbl
+INPUT tex_tempfiles/EtaleCohomology.bbl
 INPUT /usr/share/texmf-dist/tex/latex/tex-gyre/t1qzc.fd
 INPUT /usr/share/texmf-dist/tex/latex/tex-gyre/t1qzc.fd
 INPUT /usr/share/texmf-dist/tex/latex/tex-gyre/t1qzc.fd
@@ -2175,9 +2180,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
@@ -2227,11 +2229,12 @@ INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./EtaleCohomology.toc
-INPUT EtaleCohomology.toc
-OUTPUT tex_tempfiles/EtaleCohomology.toc
+INPUT tex_tempfiles/EtaleCohomology.toc
+INPUT tex_tempfiles/EtaleCohomology.toc
+INPUT tex_tempfiles/EtaleCohomology.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbo10.tfm
+OUTPUT tex_tempfiles/EtaleCohomology.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
@@ -2284,6 +2287,7 @@ INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmssbo10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolS10.tfm
@@ -2322,6 +2326,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx9.tfm
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolS12.tfm
@@ -2330,6 +2335,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolS7.tfm
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
@@ -2606,6 +2612,7 @@ INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT /usr/share/texmf-dist/tex/generic/pgfornament/vectorian/vectorian94.pgf
 INPUT tex_tempfiles/EtaleCohomology.aux
+INPUT tex_tempfiles/EtaleCohomology.run.xml
 OUTPUT tex_tempfiles/EtaleCohomology.run.xml
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
