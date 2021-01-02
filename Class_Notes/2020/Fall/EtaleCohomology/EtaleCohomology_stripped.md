@@ -3389,7 +3389,7 @@ H^i(\eta,{\mathbb{G}}_m)
 
 ## Brauer Groups
 
-::: {.definition title="Cohomological Brauer Group"}
+::: {.definition title="Cohomological Brauer Group" ref="def:cohom_brauer_group"}
 Let \( X \) be a scheme, then the **cohomological Brauer group** is defined as
 \[  
 \operatorname{Br}(X) \coloneqq H^2(X_\text{ét}, {\mathbb{G}}_m)_{{\operatorname{tors}}}
