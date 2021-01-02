@@ -1,0 +1,317 @@
+% Theorem Styles
+\usepackage[framemethod=tikz]{mdframed}
+% Boxes around theorem environments.
+\usepackage[most]{tcolorbox}
+
+% Color Palette
+\definecolor{thm_color}{HTML}{955670} % Maroon / China Rose
+\definecolor{defn_color}{HTML}{275070}
+\definecolor{proof_color}{HTML}{F3E1C0} % Camel
+\definecolor{prop_color}{HTML}{CBA135} % Satin Sheen Gold
+\definecolor{soln_color}{HTML}{a0c4ff}
+\definecolor{concept_color}{HTML}{e07a5f}
+% Other colors
+\definecolor{camel}{rgb}{0.76, 0.6, 0.42}
+\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
+\definecolor{block-gray}{gray}{0.85}
+\definecolor{quote_eggshell}{HTML}{F3EFE0}
+
+% Box for quotes 
+\usepackage{xcolor}
+\usepackage{environ}
+\NewEnviron{myblock}
+{\colorbox{quote_eggshell}{%
+\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+\small\addtolength{\leftskip}{10mm}
+\addtolength{\rightskip}{10mm}
+\BODY}}
+}
+\renewcommand{\quote}{\myblock}
+\renewcommand{\endquote}{\endmyblock}
+
+% Warning environment
+\usepackage{stackengine}
+\usepackage{scalerel}
+\newcommand\danger[1][3ex]{%
+  \renewcommand\stacktype{L}%
+  \scaleto{\stackon[1.0pt]{\color{Maroon}$\triangle$}{\tiny\bfseries !}}{#1}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Theorem 
+\newtheoremstyle{theorem}% name
+  {0em}%         Space above, empty = `usual value'
+  {1em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
+\theoremstyle{theorem}
+\tcolorboxenvironment{theorem}{
+  boxrule=0pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  fonttitle={\large\bfseries},
+  opacityback=0.8,
+  borderline west={4pt}{0pt}{thm_color},
+  attach title to upper={}
+}
+\newtheorem{theorem}{Theorem}
+\numberwithin{theorem}{subsection} % important bit
+
+% Proposition 
+\tcolorboxenvironment{proposition}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.0,
+  colframe=prop_color
+}
+\newtheorem{proposition}[theorem]{Proposition}
+\numberwithin{proposition}{subsection} % important bit
+
+% Conjecture
+\tcolorboxenvironment{conjecture}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.1,
+  colframe=thm_color
+}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\numberwithin{conjecture}{subsection} % important bit
+
+% Lemma
+\tcolorboxenvironment{lemma}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.2,
+  colframe=prop_color
+}
+\newtheorem{lemma}[theorem]{Lemma}
+\numberwithin{lemma}{subsection} % important bit
+
+% Corollary
+\tcolorboxenvironment{corollary}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.1,
+  colframe=prop_color
+}
+\newtheorem{corollary}[theorem]{Corollary}
+\numberwithin{corollary}{subsection} % important bit
+
+% Proof Style
+\newtheoremstyle{proof}% name
+  {0em}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1} \thmnote{\itshape{(#3)}}}%         Thm head spec
+\theoremstyle{proof}
+\tcolorboxenvironment{proof}{
+  colback=proof_color,
+  opacityfill=0.25,
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw
+}
+\newtheorem*{pf}{Proof}
+\newenvironment{proof}
+{\pushQED{$\qed$}\pf}
+{\par\popQED\endpf}
+
+% Definition Style
+\newtheoremstyle{definition}% name
+  {0em}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {}%         Thm head spec
+\theoremstyle{definition}
+\tcolorboxenvironment{definition}{
+  colback=defn_color,
+  boxrule=0pt,
+  boxsep=0pt,
+  opacityfill=0.15,
+  breakable,
+  enhanced jigsaw,
+  borderline west={4pt}{0pt}{defn_color},
+  fonttitle={\large\bfseries},
+  attach title to upper={},
+}
+\newtheorem{definition}[theorem]{Definition}
+\numberwithin{definition}{subsection} % important bit
+
+% Problem Style
+\newtheoremstyle{problem} % name
+  {0em}                   % Space above, empty = `usual value'
+  {2em}                   % Space below
+  {\normalfont}           % Body font
+  {\parindent}            % Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}              % Thm head font
+  {}                      % Punctuation after thm head
+  {\newline}              % Space after thm head: \newline = linebreak
+  {\thmname{#1}. \thmnote{\itshape{(#3)}}}%
+\theoremstyle{problem}
+\tcolorboxenvironment{problem}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.0,
+  colframe=defn_color
+}
+\newtheorem*{problem}{Problem}
+
+% Claim Style
+\newtheoremstyle{claim} % name
+  {0.6em}                   % Space above, empty = `usual value'
+  {0.2em}                   % Space below
+  {\normalfont}           % Body font
+  {}            % Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}              % Thm head font
+  {}                      % Punctuation after thm head
+  {0.25em}              % Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnote{{ #3}}: }%         Thm head spec
+  %{\thmname{#1}:}%
+\theoremstyle{claim}
+% Claim
+%\tcolorboxenvironment{claim}{
+  %boxrule=1pt,
+  %boxsep=0pt,
+  %breakable,
+  %enhanced jigsaw,
+  %opacityback=0.2,
+  %colframe=cyan
+%}
+\newtheorem*{claim}{Claim}
+
+
+
+
+\newtheoremstyle{solution}% name
+  {0em}%         Space above, empty = `usual value'
+  {0.5em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {:}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnote{\itshape{(#3)}}}%
+\tcolorboxenvironment{solution}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.0,
+  colframe=soln_color
+}
+\theoremstyle{solution}
+\newtheorem*{solution}{Solution}
+
+\newtheoremstyle{concept}% name
+  {1em}%         Space above, empty = `usual value'
+  {0em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnote{\itshape{(#3)}}:}%
+\tcolorboxenvironment{concept}{
+  boxrule=1pt,
+  boxsep=0pt,
+  breakable,
+  enhanced jigsaw,
+  opacityback=0.0,
+  borderline west={4pt}{0pt}{concept_color},
+  colframe=concept_color
+}
+\theoremstyle{concept}
+\newtheorem*{concept}{Concepts Used}
+
+
+\makeatletter  
+\def\@endtheorem{
+  \vspace{-1.5em}
+  \rmargnote{\pgfornament[width=1.5em, color=Maroon]{94}}
+  %\leavevmode\unskip\hfill\rlap{\hspace{0cm}}
+  \endtrivlist\@endpefalse 
+} 
+\makeatother
+
+\newtheoremstyle{defmod}% name
+  {0em}%         Space above, empty = `usual value'
+  {0.5em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {:}%        Punctuation after thm head
+  {0.35em}% Space after thm head: \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
+\theoremstyle{defmod}
+
+\newtheorem{exercise}[theorem]{Exercise}
+\numberwithin{exercise}{subsection} % important bit
+
+\newtheorem{example}[theorem]{Example}
+\numberwithin{example}{subsection} % important bit
+
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{remark}{subsection} % important bit
+
+\newtheorem{observation}[theorem]{Observation}
+\numberwithin{observation}{subsection} % important bit
+
+\newtheorem{slogan}[theorem]{Slogan}
+\numberwithin{slogan}{subsection} % important bit
+
+\newtheorem{fact}[theorem]{Fact}
+\numberwithin{fact}{subsection} % important bit
+
+\newtheorem{question}[theorem]{Question}
+\numberwithin{question}{subsection} % important bit
+
+\newtheorem{answer}[theorem]{Answer}
+\numberwithin{answer}{subsection} % important bit
+
+%\usepackage{environ}
+
+%\RenewEnviron{solution}{}% or \RenewEnviron{solution*}{\par}
+
+
+
+\newtheoremstyle{warnenv}% name
+  {0em}%         Space above, empty = `usual value'
+  {0em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {
+    \danger 
+    \thmname{#1}\thmnumber{ #2} \thmnote{\itshape{(#3)}:}
+  }%
+\theoremstyle{warnenv}
+\newtheorem{warnings}[theorem]{Warning}
+%\numberwithin{warning}{subsection} % important bit
+
