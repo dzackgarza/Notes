@@ -10,6 +10,7 @@
 \definecolor{prop_color}{HTML}{CBA135} % Satin Sheen Gold
 \definecolor{soln_color}{HTML}{a0c4ff}
 \definecolor{concept_color}{HTML}{e07a5f}
+\definecolor{exc_color}{rgb}{0.54, 0.81, 0.94}
 % Other colors
 \definecolor{camel}{rgb}{0.76, 0.6, 0.42}
 \definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
@@ -249,6 +250,50 @@
 \newtheorem*{concept}{Concepts Used}
 
 
+% Definition Style
+\newtheoremstyle{exercise}% name
+  {0em}%         Space above, empty = `usual value'
+  {2em}%         Space below
+  {\normalfont}% Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {}%        Punctuation after thm head
+  {\newline}% Space after thm head: \newline = linebreak
+  {}%         Thm head spec
+\theoremstyle{exercise}
+\tcolorboxenvironment{exercise}{
+  colback=exc_color,
+  boxrule=0pt,
+  boxsep=0pt,
+  opacityfill=0.25,
+  breakable,
+  enhanced jigsaw,
+  borderline west={4pt}{0pt}{defn_color},
+  fonttitle={\large\bfseries},
+  attach title to upper={},
+}
+\newtheorem{exercise}[theorem]{Exercise}
+\numberwithin{exercise}{subsection} % important bit
+
+%\newtheorem{exercise}[theorem]{Exercise}
+%\numberwithin{exercise}{subsection} % important bit
+
+\newtheorem{slogan}[theorem]{Slogan}
+\numberwithin{slogan}{subsection} % important bit
+
+\newtheorem{question}[theorem]{Question}
+\numberwithin{question}{subsection} % important bit
+
+\newtheorem{answer}[theorem]{Answer}
+\numberwithin{answer}{subsection} % important bit
+
+\newtheorem{observation}[theorem]{Observation}
+\numberwithin{observation}{subsection} % important bit
+
+\newtheorem{fact}[theorem]{Fact}
+\numberwithin{fact}{subsection} % important bit
+
+% Environments with a quill at the end.
 \makeatletter  
 \def\@endtheorem{
   \vspace{-1.5em}
@@ -269,8 +314,6 @@
   {\thmname{#1}\thmnumber{ #2}\thmnote{\itshape{(#3)}}}%
 \theoremstyle{defmod}
 
-\newtheorem{exercise}[theorem]{Exercise}
-\numberwithin{exercise}{subsection} % important bit
 
 \newtheorem{example}[theorem]{Example}
 \numberwithin{example}{subsection} % important bit
@@ -278,20 +321,7 @@
 \newtheorem{remark}[theorem]{Remark}
 \numberwithin{remark}{subsection} % important bit
 
-\newtheorem{observation}[theorem]{Observation}
-\numberwithin{observation}{subsection} % important bit
 
-\newtheorem{slogan}[theorem]{Slogan}
-\numberwithin{slogan}{subsection} % important bit
-
-\newtheorem{fact}[theorem]{Fact}
-\numberwithin{fact}{subsection} % important bit
-
-\newtheorem{question}[theorem]{Question}
-\numberwithin{question}{subsection} % important bit
-
-\newtheorem{answer}[theorem]{Answer}
-\numberwithin{answer}{subsection} % important bit
 
 %\usepackage{environ}
 
