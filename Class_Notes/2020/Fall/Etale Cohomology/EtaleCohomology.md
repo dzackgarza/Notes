@@ -1078,6 +1078,7 @@ Then $f$ is étale is a neighborhood of $\vector a$ if $\det \qty{\dd{f_i}{x_j} 
 1. Open immersions are étale
 2. Compositions of étale morphisms are étale[^composition_etale_note]
 3. Base change of étale morphisms are étale, i.e. 
+
 \begin{tikzcd}
 X \cross_Y T\ar[d, "\therefore \text{étale}"']\ar[r] & X\ar[d, "\text{étale}"]  \\
 T\ar[r] &  Y\\
@@ -1629,7 +1630,7 @@ X              &
 :::
 
 
-:::{.definition title="$\mathcal{F}^{\et}$"}
+:::{.definition title="$\mathcal{F}^\text{étale}$"}
 The sheaf associated to the above functor on $X_{\et}$ will be denoted $\mathcal{F}^\text{étale}$.
 :::
 
@@ -1685,6 +1686,7 @@ U
   .\]
 
 3. Cocycle condition: in the following fiber product
+
 \begin{tikzcd}
 U \cross_X U \cross_X U 
 \ar[d, shift  left=1.75ex] \ar[d] \ar[d,shift  right=1.75ex,  "\pi_{ij}"'] \\

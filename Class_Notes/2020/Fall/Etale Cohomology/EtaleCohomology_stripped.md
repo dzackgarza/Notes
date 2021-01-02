@@ -535,12 +535,13 @@ since such a map is given by a system of \( m \) polynomials in \( m \) variable
 1.  Open immersions are étale
 2.  Compositions of étale morphisms are étale[^8]
 3.  Base change of étale morphisms are étale, i.e. 
-    ```{=tex}
-    \begin{tikzcd}
-    X \times_Y T\ar[d, "\therefore \text{étale}"']\ar[r] & X\ar[d, "\text{étale}"]  \\
-    T\ar[r] &  Y\\
-    \end{tikzcd}
-    ```
+
+```{=tex}
+\begin{tikzcd}
+X \times_Y T\ar[d, "\therefore \text{étale}"']\ar[r] & X\ar[d, "\text{étale}"]  \\
+T\ar[r] &  Y\\
+\end{tikzcd}
+```
 4.  There is a 2 out of 3 property: If \( \phi \circ \psi \) and \( \phi \) are étale, then \( \psi \) is étale.
 :::
 
@@ -987,7 +988,7 @@ X              &
 is a sheaf on \( X_{\mathrm{\operatorname{Fppf}}}, X_{\text{Ét}}, X_{\text{ét}} \), etc.
 :::
 
-::: {.definition title="$\\mathcal{F}^{\\et}$"}
+::: {.definition title="$\\mathcal{F}^\\text{étale}$"}
 The sheaf associated to the above functor on \( X_{\text{ét}} \) will be denoted \( \mathcal{F}^\text{étale} \).
 :::
 
@@ -1037,14 +1038,15 @@ there are isomorphisms
   .\]
 
 3.  Cocycle condition: in the following fiber product
-    ```{=tex}
-    \begin{tikzcd}
-    U \times_X U \times_X U 
-    \ar[d, shift  left=1.75ex] \ar[d] \ar[d,shift  right=1.75ex,  "\pi_{ij}"'] \\
-    U\times_X U
-    \end{tikzcd}
-    ```
-    we have \( \pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi_{13}\phi \).
+
+```{=tex}
+\begin{tikzcd}
+U \times_X U \times_X U 
+\ar[d, shift  left=1.75ex] \ar[d] \ar[d,shift  right=1.75ex,  "\pi_{ij}"'] \\
+U\times_X U
+\end{tikzcd}
+```
+we have \( \pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi_{13}\phi \).
 :::
 
 ::: {.exercise title="?"}

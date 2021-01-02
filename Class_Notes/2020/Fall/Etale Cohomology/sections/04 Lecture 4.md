@@ -68,7 +68,7 @@ X              &
 :::
 
 
-:::{.definition title="$\mathcal{F}^{\et}$"}
+:::{.definition title="$\mathcal{F}^\text{étale}$"}
 The sheaf associated to the above functor on $X_{\et}$ will be denoted $\mathcal{F}^\text{étale}$.
 :::
 
@@ -124,6 +124,7 @@ U
   .\]
 
 3. Cocycle condition: in the following fiber product
+
 \begin{tikzcd}
 U \cross_X U \cross_X U 
 \ar[d, shift  left=1.75ex] \ar[d] \ar[d,shift  right=1.75ex,  "\pi_{ij}"'] \\
