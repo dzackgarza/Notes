@@ -297,3 +297,6 @@ Next time, to review
 [^4]: Exercise: justify why the reduction is valid.
 
 [^5]: Here \( H^i_c \) is compactly supported cohomology, we'll define this later in the course.
+
+
+
