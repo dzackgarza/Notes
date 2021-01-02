@@ -1,0 +1,20 @@
+# Section 1
+
+:::{.definition title="$\mathcal{F}^{\et}$"}
+The sheaf associated to the above functor on $X_{\et}$ will be denoted $\mathcal{F}^\text{étale}$.
+:::
+
+:::{.proof title="of 2"}
+Suppose we have an fppf cover of $X$
+\begin{tikzcd}
+U = \disjoint U_i \ar[d] \\
+X
+\end{tikzcd}
+:::
+
+:::{.question}
+Suppose $\mathfrak{F}\in \qcoh(X)$.
+When does it come from a quasicoherent sheaf on $X$?
+I.e., when is there a quasicoherent sheaf $\mathcal{F}'$ on $X$ and an isomorphism between its pullback to $U$ and $\mathcal{F}$?
+What extra structure do you need to "descend" to $\qcoh(X)$, i.e. to pick such an isomorphism?
+:::
