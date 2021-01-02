@@ -353,7 +353,7 @@ and
 .\]
 
 Then $\zeta_{X, F}(t)$ satisfies the RH: the zeros and poles are of absolute value $q^{i\over 2}$.
-Equivalently, the eigenvalues $\lambda$ of $F^n$ actings on $H^i(X, \CC)$ all satisfy $\abs{\lambda} = q^{i\over 2}$.
+Equivalently, the eigenvalues $\lambda$ of $F^n$ acting on $H^i(X, \CC)$ all satisfy $\abs{\lambda} = q^{i\over 2}$.
 :::
 
 Next time, to review
