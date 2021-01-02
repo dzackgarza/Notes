@@ -221,7 +221,7 @@
 <li><a href="#lecture-27-todo"><span class="toc-section-number">27</span> Lecture 27 (todo)</a></li>
 <li><a href="#lecture-28-todo"><span class="toc-section-number">28</span> Lecture 28 (todo)</a></li>
 <li><a href="#lecture-29-todo"><span class="toc-section-number">29</span> Lecture 29 (todo)</a></li>
-<li><a href="#lecture-30-todo"><span class="toc-section-number">30</span> Lecture 30 (todo)</a></li>
+<li><a href="#lecture-30-todo">Lecture 30 (todo)</a></li>
 </ul>
 </nav>
 
@@ -232,7 +232,7 @@
 <h2 data-number="1.1" id="references"><span class="header-section-number">1.1</span> References</h2>
 <ul>
 <li><a href="https://www.daniellitt.com/tale-cohomology" class="uri">https://www.daniellitt.com/tale-cohomology</a></li>
-<li><span class="citation" data-cites="milneLEC">(<strong>milneLEC?</strong>)</span>, <span class="citation" data-cites="milne_2017">(<strong>milne_2017?</strong>)</span>, <span class="citation" data-cites="freitag_kiehl_2013">(<strong>freitag_kiehl_2013?</strong>)</span>, <span class="citation" data-cites="katz">(<strong>katz?</strong>)</span></li>
+<li><span class="citation" data-cites="milneLEC">(Milne, 2013)</span>, <span class="citation" data-cites="milne_2017">(Milne, 2017)</span>, <span class="citation" data-cites="freitag_kiehl_2013">(Freitag &amp; Kiehl, 2013)</span>, <span class="citation" data-cites="katz">(Katz, n.d.)</span></li>
 </ul>
 <h2 data-number="1.2" id="intro"><span class="header-section-number">1.2</span> Intro</h2>
 <p>Prerequisites:</p>
@@ -280,7 +280,7 @@
 <li>Cycle classes (i.e. associate to a subvariety a class in cohomology)</li>
 </ul>
 <p>Goal of etale cohomology: do something similar for much more general “nice” schemes. Note that some of these properties are special to complex varieties. (E.g. finitely generated: not true for a random topological space.)</p>
-<p>We’ll associate to <span class="math inline">\(X\)</span> a “nice scheme” <span class="math inline">\(\rightsquigarrow H^i(X_{\text{et}}, {\mathbb{Z}}/\ell^n{\mathbb{Z}})\)</span>. Take the inverse limit over all <span class="math inline">\(n\)</span> to obtain the <span class="math inline">\(\ell{\hbox{-}}\)</span>adic cohomology <span class="math inline">\(H^i(X_{\text{et}}, {\mathbb{Z}}_\ell)\)</span>. You can tensor with <span class="math inline">\({\mathbb{Q}}\)</span> to get something with <span class="math inline">\({\mathbb{Q}}_\ell\)</span> coefficients. And as in singular cohomology, you can a “twisted coefficient system.”</p>
+<p>We’ll associate to <span class="math inline">\(X\)</span> a “nice scheme” <span class="math inline">\(\rightsquigarrow H^i(X_{\text{et}}, {\mathbb{Z}}/\ell^n{\mathbb{Z}})\)</span>. Take the inverse limit over all <span class="math inline">\(n\)</span> to obtain the <span class="math inline">\(\ell{\hbox{-}}\)</span>adic cohomology <span class="math inline">\(H^i(X_{\text{et}}, {\mathbb{Z}}_\ell)\)</span>. You can tensor with <span class="math inline">\({\mathbb{Q}}\)</span> to get something with <span class="math inline">\({\mathbb{Q}}_\ell\)</span> coefficients. And as in singular cohomology, you can a “twisted coefficient system”.</p>
 <div class="example proofenv" title="?">
 <p>What are some nice schemes?</p>
 <ul>
@@ -753,7 +753,7 @@ t^p &amp;\mapsfrom t
 </ol>
 <p>We’d also like to make sense of the sheaf condition:</p>
 <ol start="2" type="1">
-<li><p>Collections of morphisms which are “covers,” remembering which collections of opens cover a space, and</p></li>
+<li><p>Collections of morphisms which are “covers”, remembering which collections of opens cover a space, and</p></li>
 <li><p>The existence of certain fiber products (intersections).</p></li>
 </ol>
 </div>
@@ -1638,7 +1638,7 @@ H^i(X_\text{ét}, \mathcal{F}) = H^i\qty{\Gamma(X, \mathcal{I}^{\,\cdot\,})}
 <div class="warnings proofenv">
 <ol type="1">
 <li><p>Čech cohomology does not always compute étale cohomology! Note that this already happens for bad topological spaces, where Čech doesn’t always compute sheaf cohomology, and this can be true for schemes as well. Ex: <span class="math inline">\({\mathbb{A}}_2\)</span> with a doubled origin.</p></li>
-<li><p>Čech cohomology is not actually “computable,” since acyclic covers do not generally exist.</p></li>
+<li><p>Čech cohomology is not actually “computable”, since acyclic covers do not generally exist.</p></li>
 </ol>
 </div>
 <p>When <em>does</em> Čech cohomology compute sheaf cohomology? If you define a cover of your space, for each object of the cover and each double intersect, the derived functors vanish.</p>
@@ -2081,7 +2081,7 @@ G\times T \xrightarrow{(a, \pi_2)} T\times T
 </ul>
 </div>
 <div class="remark proofenv">
-<p>This says that <span class="math inline">\(T\times T \xrightarrow{\sim}G\times T\)</span>, and pulling back to <span class="math inline">\(T\)</span> yields a “trivial torsor,” where e.g. <span class="math inline">\(G\)</span> itself is a <span class="math inline">\(G{\hbox{-}}\)</span>torsor: a sheaf of sets with an action by a sheaf of groups, such taking <span class="math inline">\(G\times_G G\)</span> the action becomes <span class="math inline">\(G\curvearrowright G\)</span>. This is similar to base-changing to cover to check something, as in the proof of fppf descent, and here we base-change to trivialize a torsor.</p>
+<p>This says that <span class="math inline">\(T\times T \xrightarrow{\sim}G\times T\)</span>, and pulling back to <span class="math inline">\(T\)</span> yields a “trivial torsor”, where e.g. <span class="math inline">\(G\)</span> itself is a <span class="math inline">\(G{\hbox{-}}\)</span>torsor: a sheaf of sets with an action by a sheaf of groups, such taking <span class="math inline">\(G\times_G G\)</span> the action becomes <span class="math inline">\(G\curvearrowright G\)</span>. This is similar to base-changing to cover to check something, as in the proof of fppf descent, and here we base-change to trivialize a torsor.</p>
 </div>
 <div class="example proofenv" title="?">
 <p>Suppose <span class="math inline">\(G\)</span> is a finite group and <span class="math inline">\(\underline{G} \in {\operatorname{Sh}}(X_\text{ét})\)</span> is the constant sheaf regarding <span class="math inline">\(G\)</span> as a scheme. Then e.g. a <span class="math inline">\(G{\hbox{-}}\)</span>torsor is a finite étale cover with Galois group <span class="math inline">\(G\)</span>. If <span class="math inline">\(X\)</span> is a smooth curve, this is a Galois extension of the function field which is everywhere unramified.</p>
@@ -2856,7 +2856,7 @@ H^2(X_\text{ét}, {\mathbb{G}}_m)
 <p>Let <span class="math inline">\(\alpha, \alpha&#39;\)</span> be two cocycles for <span class="math inline">\({\mathbb{G}}_{m}\)</span>. Then</p>
 <ol type="1">
 <li><p><span class="math inline">\([\alpha]\in\operatorname{Br}(X)\)</span> (so its in the image the boundary map from <span class="math inline">\(\operatorname{PGL}_{n}\)</span>) iff there exist a twisted vector bundle.<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a></p></li>
-<li><p><span class="math inline">\({\mathrm{QCoh}}(X,\alpha)\)</span> is an abelian category (easy) and has enough injectives (hard) is <span class="math inline">\(X\)</span> is “nice.”</p></li>
+<li><p><span class="math inline">\({\mathrm{QCoh}}(X,\alpha)\)</span> is an abelian category (easy) and has enough injectives (hard) is <span class="math inline">\(X\)</span> is “nice”.</p></li>
 <li><p>There is a functor 
 <span class="math display">
 \begin{align*}  
@@ -2992,7 +2992,21 @@ H^2(X_\text{ét}, {\mathbb{G}}_m)
 <h1 data-number="27" id="lecture-27-todo"><span class="header-section-number">27</span> Lecture 27 (todo)</h1>
 <h1 data-number="28" id="lecture-28-todo"><span class="header-section-number">28</span> Lecture 28 (todo)</h1>
 <h1 data-number="29" id="lecture-29-todo"><span class="header-section-number">29</span> Lecture 29 (todo)</h1>
-<h1 data-number="30" id="lecture-30-todo"><span class="header-section-number">30</span> Lecture 30 (todo)</h1>
+<h1 class="unnumbered" id="lecture-30-todo">Lecture 30 (todo)</h1>
+<div id="refs" class="references hanging-indent" role="doc-bibliography">
+<div id="ref-freitag_kiehl_2013">
+<p>Freitag, E., &amp; Kiehl, R. (2013). <em>Etale cohomology and the weil conjecture</em>. Springer.</p>
+</div>
+<div id="ref-katz">
+<p>Katz, N. M. (n.d.). L-functions and monodromy: Four lectures on weil ii. https://web.math.princeton.edu/ nmk/arizona34.pdf.</p>
+</div>
+<div id="ref-milneLEC">
+<p>Milne, J. S. (2013). Lectures on etale cohomology (v2.21).</p>
+</div>
+<div id="ref-milne_2017">
+<p>Milne, J. S. (2017). <em>Etale cohomology</em>. Princeton University Press.</p>
+</div>
+</div>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
@@ -3024,7 +3038,7 @@ H^2(X_\text{ét}, {\mathbb{G}}_m)
 <li id="fn26" role="doc-endnote"><p>The <strong>strictly Henselian field</strong> of <span class="math inline">\(X\)</span> at <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu\)</span>.<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn27" role="doc-endnote"><p>Another one of Daniel’s favorite topics in the course!<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn28" role="doc-endnote"><p>The stalk of the structure sheaf, <span class="math inline">\({\mathcal{O}}_{C,x}\)</span>.<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn29" role="doc-endnote"><p>Best reference: Giraud, “Cohomologie non Abelienne.”<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29" role="doc-endnote"><p>Best reference: Giraud, “Cohomologie non Abelienne”.<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn30" role="doc-endnote"><p>If <span class="math inline">\(x = \operatorname{Spec}k\)</span> is a point, then these are referred to as <strong>Severi-Brauer Varieties</strong>.<a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn31" role="doc-endnote"><p>Note that we’ve proved this already since <span class="math inline">\(\operatorname{Br}= \operatorname{im}\delta\)</span>, but part of our construction of <span class="math inline">\(\delta\)</span> involved constructing an <span class="math inline">\(\alpha{\hbox{-}}\)</span>twisted sheaf out of a <span class="math inline">\(\operatorname{PGL}_{n}{\hbox{-}}\)</span>torsor.<a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn32" role="doc-endnote"><p>This and the tensor functor come from homming (resp. tensoring) the sheaves together and using the pseudo descent data.<a href="#fnref32" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
