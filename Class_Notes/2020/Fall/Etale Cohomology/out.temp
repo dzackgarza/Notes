@@ -12,8 +12,3 @@ When does it come from a quasicoherent sheaf on $X$?
 :::
 
 $\mathcal{F}^{\et}$
-
-::: {.definition}
-The sheaf associated to the above functor on $X_{\et}$ will be denoted
-$\mathcal{F}^\text{étale}$.
-:::
