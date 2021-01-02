@@ -1,7 +1,3 @@
-\%
-
-\%
-
 # Lecture 1
 
 ## References
@@ -65,9 +61,7 @@ Some comparisons between the last two cases:
 -   For \( {\mathbb{C}}{\hbox{-}} \) variety, \( H^i_{\text{sing}} \) will vanish above \( i=2d \).
 -   Over a finite field, \( H^i \) will vanish for \( i>2d+1 \) but generally not vanish for \( i=2d+1 \).
 
-In good situations, these are finitely generated \( {\mathbb{Z}}/\ell^n{\mathbb{Z}}{\hbox{-}} \)modules, have Mayer-Vietoris and excision sequences, spectral sequences, etc. Related invariants: for a scheme with a geometric point [^1]
-
-\( (X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu) \rightsquigarrow \pi_1^{\text{étale}}(X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu) \), which is a profinite topological group, which is a profinite topological group.
+In good situations, these are finitely generated \( {\mathbb{Z}}/\ell^n{\mathbb{Z}}{\hbox{-}} \)modules, have Mayer-Vietoris and excision sequences, spectral sequences, etc. Related invariants: for a scheme with a geometric[^1] point: \( (X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu) \rightsquigarrow \pi_1^{\text{étale}}(X, \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu) \), which is a profinite topological group.
 
 ::: {.remark}
 More invariants beyond the scope of this course:
