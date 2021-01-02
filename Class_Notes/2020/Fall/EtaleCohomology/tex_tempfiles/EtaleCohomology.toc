@@ -1,0 +1,207 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Table of Contents}{2}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Lecture 1}{3}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}References}{3}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Intro}{3}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}What is Etale Cohomology?}{4}{subsection.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}What are the Weil Conjectures?}{5}{subsection.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.1}Euler Product}{6}{subsubsection.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Lecture 2}{9}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Review}{9}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Sketch proof of Serre's analog of the Riemann hypothesis}{10}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Étale Morphisms}{11}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Properties of Étale Morphisms}{15}{subsubsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Generalizing Topologies}{16}{subsection.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}Sites}{16}{subsubsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Lecture 3}{18}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Defining Sites}{18}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Examples of Sites}{19}{subsubsection.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Toward Sheaves of Sites}{20}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Examples of Sheaves of Sites}{21}{subsubsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Étale Cohomology: A Preliminary Definition}{22}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Preview: Morphisms of Sites}{24}{subsection.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Lecture 4: Descent}{24}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Reminder}{25}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Setting up Descent}{25}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Descent Data is Equivalent to Quasicoherent Sheaves}{27}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1}Proof of Theorem}{28}{subsubsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Lecture 5}{30}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Continuation of Proof}{30}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}Proof of Full Faithfulness}{30}{subsubsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2}Proof of Essential Surjectivity}{31}{subsubsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Representable Functors}{32}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1}Proof of Theorem}{32}{subsubsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2}Consequences}{33}{subsubsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Étale Cohomology}{34}{subsection.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.1}Preliminaries}{34}{subsubsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Pushforward and pullback}{34}{paragraph*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Lecture 6: Filling in Gaps, Étale Cohomology}{34}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Gaps}{35}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.1}Pushforwards}{35}{subsubsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2}Pullbacks}{36}{subsubsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Proof: Sheafification Exists for the Étale Site}{38}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Lecture 07: Relating Étale and Čech Cohomology}{39}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}What Else We Get From Sheafification}{40}{subsection.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.1}Inverse Images}{40}{subsubsection.7.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Étale Cohomology}{41}{subsection.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}How to Compute: Čech Cohomology}{43}{subsection.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.1}Defining Čech Cohomology}{43}{subsubsection.7.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Lecture 08: Computing Étale Cohomology}{46}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}Čech to Derived Spectral Sequence}{46}{subsection.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Mayer-Vietoris}{47}{subsection.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3}Étale Cohomology Equals Zariski Cohomology for Quasicoherent Sheaves}{48}{subsection.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.3.1}Proof}{48}{subsubsection.8.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4}The Artin-Schreier Exact Sequence}{50}{subsection.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Lecture 09}{50}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}The LES of the Artin-Schreier Exact Sequence}{51}{subsection.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2}The Étale Cohomology of a Field}{52}{subsection.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3}Torsors}{53}{subsection.9.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.4}Interpretation of \(H^1\) as Torsors}{55}{subsection.9.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Lecture 10}{56}{section.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1}Proof of Grothendieck-Hilbert 90}{57}{subsection.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2}Representability and Local Triviality}{57}{subsection.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.2.1}What Hilbert 90 Means}{58}{subsubsection.10.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.2.2}Geometric Interpretations}{59}{subsubsection.10.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3}Computing the Cohomology of Curves}{60}{subsection.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.3.1}Outline of Proof}{61}{subsubsection.10.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4}Pushforwards and the Leray Spectral Sequence}{61}{subsection.10.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Lecture 11}{63}{section.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1}Pushforwards (Continued)}{63}{subsection.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {11.1.1}Explicit Characterizations}{64}{subsubsection.11.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {11.1.2}Explicit Characterizations}{65}{subsubsection.11.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2}Étale Cohomology of Curves: Reducing to Galois Cohomology}{65}{subsection.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3}Brauer Groups}{68}{subsection.11.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Lecture 12}{68}{section.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.1}Brauer Groups}{69}{subsection.12.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.1.1}Geometric Interpretations of \(\operatorname {PGL}_{n}{\hbox {-}}\)Torsors Brauer Classes}{70}{subsubsection.12.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.2}Twisted Sheaves}{71}{subsection.12.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.2.1}Categorical Properties}{72}{subsubsection.12.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.2.2}The Brauer Group is a Group}{73}{subsubsection.12.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.3}Results On Twisted Bundles}{74}{subsection.12.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {12.3.1}Examples of Brauer Classes}{75}{subsubsection.12.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}Lecture 13 (todo)}{78}{section.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14}Lecture 14 (todo)}{78}{section.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {15}Lecture 15 (todo)}{78}{section.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {16}Lecture 16 (todo)}{78}{section.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {17}Lecture 17 (todo)}{78}{section.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {18}Lecture 18 (todo)}{78}{section.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {19}Lecture 19 (todo)}{78}{section.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {20}Lecture 20 (todo)}{78}{section.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {21}Lecture 21 (todo)}{78}{section.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {22}Lecture 22 (todo)}{78}{section.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {23}Lecture 23 (todo)}{78}{section.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {24}Lecture 24 (todo)}{78}{section.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {25}Lecture 25 (todo)}{78}{section.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {26}Lecture 26 (todo)}{78}{section.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {27}Lecture 27 (todo)}{78}{section.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {28}Lecture 28 (todo)}{78}{section.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {29}Lecture 29 (todo)}{78}{section.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline ToDos}{78}{section*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Definitions}{79}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Theorems}{80}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Exercises}{81}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Figures}{82}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
