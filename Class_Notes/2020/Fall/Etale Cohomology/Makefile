@@ -1,51 +1,40 @@
 SHELL:=/bin/zsh
 FILENAME="EtaleCohomology"
 
-all: pdf html	clean
+all: pdf html
 
 ## Markdown Output
 markdown:
-	cp -r $$PANDOC_DIR/* ./.pandoc;
-	cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md
+	cp -r $$PANDOC_DIR/* .;
+	cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
 	awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
 	awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME)_stripped.md;
 	echo "Markdown done."
 
 ## LaTeX Output
 latex: markdown
-	pandoc_totex_orpdf.sh -f $(FILENAME).md -x > $(FILENAME).tex
+	pandoc_totex_orpdf.sh -f $(FILENAME).md -x > $(FILENAME).tex;
 	echo "Latex done";
 
 ## PDF Output
 pdf: markdown latex
-	#pandoc_totex_orpdf.sh -f $(FILENAME).md > $(FILENAME).pdf
 	mkdir -p tex_tempfiles;
 	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf .;
 	echo "PDF done";
 
-test: markdown latex
-	#latexmk --shell-escape -pdf $(FILENAME).tex -quiet -silent -logfilewarninglist -gg -latexoption="-interaction=batchmode";
-	latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull;
-	echo "Tests complete."
-
-
-
 ## HTML Output
 html: markdown
 	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html
-	
+
+test: markdown latex
+	latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull;
+	echo "Tests complete."
+
 .SILENT:
 
 clean:
-	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
-	#rm *.svg -f || true;
-	#rm *.temp -f || true;
-	#rm out1.temp combined.temp || true;
-	#rm sections/*.pdf || true;
-	#rm sections/*.svg || true;
 	rm tex_tempfiles -rf || true;
 	rm -rf latex.out || true;
-
 
 reset:
 	rm ./.pandoc -rf || true;
