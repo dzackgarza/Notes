@@ -20,7 +20,8 @@ latex: markdown
 ## PDF Output
 pdf: markdown latex
 	#pandoc_totex_orpdf.sh -f $(FILENAME).md > $(FILENAME).pdf
-	latexmk --shell-escape -pdf $(FILENAME).tex -quiet;
+	mkdir -p tex_tempfiles;
+	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -output-directory tex_tempfiles;
 	echo "PDF done";
 
 test: markdown latex
@@ -44,6 +45,7 @@ clean:
 	#rm sections/*.pdf || true;
 	#rm sections/*.svg || true;
 	rm custom_templates/* -rf;
+	rm tex_tempfiles/* -rf;
 
 
 reset:
