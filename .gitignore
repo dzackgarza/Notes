@@ -1,3 +1,13 @@
 *.out
 *.aux
 *.log
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.loe
+*.pre
+*.run.xml
+*.tdo
+*.toc
