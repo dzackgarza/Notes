@@ -23,25 +23,13 @@ markdown:
 
 ## LaTeX Output
 latex: markdown
-	cat $(FILENAME).md | pandoc \
-		--quiet \
-		-f markdown \
-		-t latex \
-		-o $(FILENAME).tex \
-		--template /home/zack/Notes/Latex/pandoc_template.tex \
-		--lua-filter /home/zack/dotfiles/bin/warning-div.lua \
-		-r markdown+fenced_divs+tex_math_single_backslash \
-		--biblatex \
-		--bibliography=$(BIB) \
-		--lua-filter /home/zack/Notes/Latex/tikzcd.lua \
-		-V current_date="$$(date +%Y-%m-%d%n)" \
-		-F pandoc-crossref;
-
+	pandoc_totex_orpdf.sh -f $(FILENAME).md -x > $(FILENAME).tex
+	echo "Latex done";
 
 ## PDF Output
 pdf: markdown latex
 	latexmk --shell-escape -pdf $(FILENAME).tex -quiet;
-	echo "Make done";
+	echo "PDF done";
 
 test: markdown latex
 	#latexmk --shell-escape -pdf $(FILENAME).tex -quiet -silent -logfilewarninglist -gg -latexoption="-interaction=batchmode";

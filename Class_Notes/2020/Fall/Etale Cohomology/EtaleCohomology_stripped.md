@@ -1853,7 +1853,7 @@ We get a \( G{\hbox{-}} \)module since \( G \) acts on the entire diagram and th
 Check that this is a discrete \( G{\hbox{-}} \)module.
 :::
 
-There is an inverse functor: given \( V\to \operatorname{Spec}k \) an étale map, by the classification of étale \( k{\hbox{-}} \)algebras we have \( V = {\coprod}_{k in K'} \operatorname{Spec}k' \) where \( K' \) is the set of all finite separable \( k'/k \). Given a discrete \( G{\hbox{-}} \)module \( M \), send it to the Galois fixed points \( V \to \prod M^{G_s'} \) where \( G_s' \coloneqq\operatorname{Gal}(k^s/k') \).
+There is an inverse functor: given \( V\to \operatorname{Spec}k \) an étale map, by the classification of étale \( k{\hbox{-}} \)algebras we have \( V = {\coprod}_{k \in K'} \operatorname{Spec}k' \) where \( K' \) is the set of all finite separable \( k'/k \). Given a discrete \( G{\hbox{-}} \)module \( M \), send it to the Galois fixed points \( V \to \prod M^{G_s'} \) where \( G_s' \coloneqq\operatorname{Gal}(k^s/k') \).
 
 ::: {.exercise title="Check"}
 Check that this is an inverse, it follows from Galois descent.
