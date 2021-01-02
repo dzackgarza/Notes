@@ -1,9 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1609585336 "EtaleCohomology.tex" "tex_tempfiles/EtaleCohomology.pdf" "EtaleCohomology" 1609585397
-  "/usr/share/texmf-dist/web2c/texmf.cnf" 1607249373 33301 a3134070eacafb10b1f371612ce2650d ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1608684052 2635862 9d77392a180c1468cfee788e3112ee95 ""
-  "EtaleCohomology.tex" 1609585395 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "tex_tempfiles/EtaleCohomology.aux" 1609585138 161304 66f2fb1f7c23dc510a9c408dc6eb1ca4 ""
+["pdflatex"] 0 "EtaleCohomology.tex" "tex_tempfiles/EtaleCohomology.pdf" "EtaleCohomology" 0
+  "EtaleCohomology.tex" 0 -1 0 ""
+  "tex_tempfiles/EtaleCohomology.aux" 1609585599 8 a94a2480d3289e625eea47cd1b285758 ""
   (generated)
   "tex_tempfiles/EtaleCohomology.pdf"
   "tex_tempfiles/EtaleCohomology.log"
