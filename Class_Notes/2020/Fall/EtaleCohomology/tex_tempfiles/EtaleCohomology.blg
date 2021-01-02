@@ -1,15 +1,15 @@
 [0] Config.pm:312> INFO - This is Biber 2.15
 [0] Config.pm:315> INFO - Logfile is 'tex_tempfiles/EtaleCohomology.blg'
-[172] biber:330> INFO - === Sat Jan  2, 2021, 06:15:34
-[202] Biber.pm:415> INFO - Reading 'tex_tempfiles/EtaleCohomology.bcf'
-[336] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
-[365] Biber.pm:4334> INFO - Processing section 0
-[379] Biber.pm:4523> INFO - Looking for bibtex format file '/tmp/ci-I7Fs3Tc7ZV/EtaleCohomology.bib' for section 0
-[380] bibtex.pm:1682> INFO - LaTeX decoding ...
-[385] bibtex.pm:1494> INFO - Found BibTeX data source '/tmp/ci-I7Fs3Tc7ZV/EtaleCohomology.bib'
-[485] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[485] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[485] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[485] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[492] bbl.pm:651> INFO - Writing 'tex_tempfiles/EtaleCohomology.bbl' with encoding 'UTF-8'
-[494] bbl.pm:754> INFO - Output to tex_tempfiles/EtaleCohomology.bbl
+[59] biber:330> INFO - === Sat Jan  2, 2021, 06:37:15
+[70] Biber.pm:415> INFO - Reading 'tex_tempfiles/EtaleCohomology.bcf'
+[130] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
+[141] Biber.pm:4334> INFO - Processing section 0
+[150] Biber.pm:4523> INFO - Looking for bibtex format file '/tmp/ci-qgiWgNgv4m/EtaleCohomology.bib' for section 0
+[151] bibtex.pm:1682> INFO - LaTeX decoding ...
+[154] bibtex.pm:1494> INFO - Found BibTeX data source '/tmp/ci-qgiWgNgv4m/EtaleCohomology.bib'
+[195] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[195] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[195] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[195] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[199] bbl.pm:651> INFO - Writing 'tex_tempfiles/EtaleCohomology.bbl' with encoding 'UTF-8'
+[200] bbl.pm:754> INFO - Output to tex_tempfiles/EtaleCohomology.bbl
