@@ -17,12 +17,11 @@ all: pdf html	clean
 
 ## Markdown Output
 markdown:
-	touch $(FILENAME).md;
-	awk 'FNR==1{print ""}1' ./sections/*.md  > $(FILENAME).md;
+	awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME).md;
 
 ## LaTeX Output
 latex: markdown
-	cat data.md $(FILENAME).md | pandoc \
+	cat $(FILENAME).md | pandoc \
 		--quiet \
 		-f markdown \
 		-t latex \
