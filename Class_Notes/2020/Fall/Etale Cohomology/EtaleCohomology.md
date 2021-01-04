@@ -27,6 +27,7 @@
 \newcommand{\nullspace}{\operatorname{nullspace}}
 \newcommand{\nullity}{\operatorname{nullspace}}
 \newcommand{\projection}{\operatorname{Proj}}
+\newcommand{\Der}{\operatorname{Der}}
 \renewcommand{\AA}[0]{{\mathbb{A}}}
 \newcommand{\Af}[0]{{\mathbb{A}}}
 \newcommand{\CC}[0]{{\mathbb{C}}}
@@ -137,6 +138,7 @@
 \newcommand{\presh}[0]{{\operatorname{Presh}}}
 \newcommand{\Presh}[0]{{\operatorname{Presh}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
+\newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
 \newcommand{\Ob}[0]{{\operatorname{Ob}}}
 \newcommand{\prim}[0]{{\operatorname{prim}}}
@@ -156,7 +158,6 @@
 \newcommand{\bung}[0]{\operatorname{Bun}_G}
 \newcommand{\const}[0]{{\operatorname{const.}}}
 \newcommand{\disc}[0]{{\operatorname{disc}}}
-\newcommand{\op}[0]{^\operatorname{op}}
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\im}[0]{\operatorname{im}}
 \newcommand{\pt}[0]{{\{\operatorname{pt}\}}}
@@ -316,6 +317,7 @@
 \newcommand{\ro}[2]{{ \left.{{#1}} \right|_{{#2}} }}
 \newcommand{\rk}[0]{{\operatorname{rank}}}
 \newcommand{\evalfrom}[0]{\Big|}
+\renewcommand{\mod}{\pmod}
 \newcommand{\rmod}[0]{{R\dash\operatorname{mod}}}
 \newcommand{\mods}[1]{{{#1}\dash\operatorname{mod}}}
 \newcommand{\modr}[0]{{\operatorname{mod}}}

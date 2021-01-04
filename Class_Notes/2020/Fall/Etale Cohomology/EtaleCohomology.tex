@@ -1,6 +1,6 @@
 \input{"preamble.tex"}
 
-\addbibresource{/tmp/ci-WKYmQ7LwnZ/EtaleCohomology.bib}
+\addbibresource{/tmp/ci-pv0zfL7b9z/EtaleCohomology.bib}
 
 \let\Begin\begin
 \let\End\end
@@ -66,7 +66,7 @@ are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-01-02 }
+{\tiny \textit{Last updated:} 2021-01-04 }
 \end{flushleft}
 
 
@@ -821,6 +821,13 @@ Suppose we have a nilpotent ideal \(I\), so \(I^n = 0\) for some \(n\),
 then \(f:X\to Y\) is \textbf{formally étale} if there is a unique lift
 in the following diagram:
 
+\begin{center}
+\begin{tikzcd}
+\operatorname{Spec}(A/I)\ar[r]\ar[d] & X\ar[d, "f"] \\
+\operatorname{Spec}(A) \ar[r] \ar[ur, dotted, "\exists !"] & Y
+\end{tikzcd}
+\end{center}
+
 \end{definition}
 
 \begin{remark}
@@ -1103,6 +1110,13 @@ Morphisms}\label{properties-of-uxe9tale-morphisms}}
   Base change of étale morphisms are étale, i.e.~
 \end{enumerate}
 
+\begin{center}
+\begin{tikzcd}
+X \times_Y T\ar[d, "\therefore \text{étale}"']\ar[r] & X\ar[d, "\text{étale}"]  \\
+T\ar[r] &  Y\\
+\end{tikzcd}
+\end{center}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
@@ -1361,6 +1375,13 @@ Let \(X\) be a scheme, and define the small étale site
 \(X_{\text{ét}}\): the category whose objects are étale morphisms
 \(Y\xrightarrow{f} X\) where morphisms are maps over \(X\):
 
+\begin{center}
+\begin{tikzcd}
+Y_1 \ar[rd, "{f_1}"]\ar[rr, "g"] & & Y_2\ar[ld, "{f_2}"] \\
+ & X & 
+\end{tikzcd}
+\end{center}
+
 Note that \(g\) is étale by the 2 out of 3 property.
 
 Then \(\left\{{X_\alpha\to X}\right\}\) is a covering family if the set
@@ -1514,6 +1535,12 @@ category equipped with the Grothendieck topology.
 
 A \textbf{sheaf} \(F\) is presheaf such that
 
+\begin{center}
+\begin{tikzcd}
+F(U) \ar[r] & \prod_\alpha F(U_\alpha) \ar[r, shift left=0.75ex, "F(\pi_1)"] \ar[r, shift right=0.75ex, "F(\pi_2)"'] & \prod_{\alpha, \alpha'} F(U_\alpha \times_U U_{\alpha'}) 
+\end{tikzcd}
+\end{center}
+
 is an \emph{equalizer} diagram for all covering families
 \(\left\{{U_\alpha \to U}\right\}\).
 
@@ -1527,6 +1554,14 @@ into the product. We then look at the intersections of all
 \(U_{\alpha}, U_{\alpha'}\).
 
 The two arrows occurring come from the projections:
+
+\begin{center}
+\begin{tikzcd}
+& U_\alpha \times_U U_{\alpha'} \ar[dl, "\pi_1"] \ar[rd, "\pi_2"] & \\
+U_\alpha\ar[dr, hook] & & U_{\alpha'}\ar[dl, hook] \\
+& U &
+\end{tikzcd}
+\end{center}
 
 where we use the fact that since \(F\) is a contravariant functor, it
 induces maps going the other way.
@@ -1752,6 +1787,13 @@ root. So given \(f\in {\mathbb{G}}_m(U)\), we want an étale cover of
 \(U\) so that \(f\) obtains an \(n\)th root. An invertible function is a
 map \(U\to {\mathbb{G}}_m\), and we can form the square
 
+\begin{center}
+\begin{tikzcd}
+ U \underset{\scriptscriptstyle {{\mathbb{G}}_m} }{\times} {\mathbb{G}}_m\ar[r]\ar[d] & {\mathbb{G}}_m & z^m  \ar[d] \\
+ U\ar[r] &  {\mathbb{G}}_m & z\ar[u, |->]
+\end{tikzcd}
+\end{center}
+
 The RHS map is étale since \(n\) is invertible, and the fiber product is
 étale since étale morphisms are preserved by base change.
 
@@ -1936,6 +1978,14 @@ On terminology:
   sections:
 \end{enumerate}
 
+\begin{center}
+\begin{tikzcd}
+Z \ar[dd, "f"] &        & \\
+               & \ar[r] & \Gamma(Z, f^* \mathcal{F}) \\
+X              &
+\end{tikzcd}
+\end{center}
+
 is a sheaf on
 \(X_{\mathrm{\operatorname{Fppf}}}, X_{\text{Ét}}, X_{\text{ét}}\), etc.
 
@@ -1951,6 +2001,13 @@ denoted \(\mathcal{F}^\text{étale}\).
 \begin{proof}[of 2]
 
 Suppose we have an fppf cover of \(X\)
+
+\begin{center}
+\begin{tikzcd}
+U = {\coprod}U_i \ar[d] \\
+X
+\end{tikzcd}
+\end{center}
 
 \end{proof}
 
@@ -2016,6 +2073,13 @@ for a quasicoherent sheaf on \(U/X\) is the following:
     the cover.},
 \end{enumerate}
 
+\begin{center}
+\begin{tikzcd}
+U \times_X U \ar[d, bend left, "\pi_1"] \ar[d, bend right, "\pi_2"'] \\
+U
+\end{tikzcd}
+\end{center}
+
 there are isomorphisms
 \begin{align*}  
   \phi: \pi_1^* \mathcal{F} \xrightarrow{\sim} \pi_2^* \mathcal{F}
@@ -2028,6 +2092,14 @@ there are isomorphisms
 \item
   Cocycle condition: in the following fiber product
 \end{enumerate}
+
+\begin{center}
+\begin{tikzcd}
+U \times_X U \times_X U 
+\ar[d, shift  left=1.75ex] \ar[d] \ar[d,shift  right=1.75ex,  "\pi_{ij}"'] \\
+U\times_X U
+\end{tikzcd}
+\end{center}
 
 we have \(\pi_{23}^* \phi \circ \pi_{12}^* \phi = \pi_{13}\phi\).
 
@@ -2045,6 +2117,17 @@ Zariski cover.
 Given descent data \((\mathcal{F}, \phi)\) and \((\mathcal{G}, \psi)\),
 a \textbf{morphism} is a morphism \(h: \mathcal{F} \to \mathcal{G}\) of
 quasicoherent sheaves on \(U\) such that the following diagram commutes:
+
+\begin{center}
+\begin{tikzcd}
+\pi_1^* \mathcal{F} 
+\ar[r, "\pi_1^*h"] 
+\ar[d, "\phi"'] 
+& \pi_1^* \mathcal{G} \ar[d, "\psi"] \\
+\pi_2^* \mathcal{F} \ar[r, "\pi_2^*h"'] 
+& \pi_2^* \mathcal{G} 
+\end{tikzcd}
+\end{center}
 
 \end{definition}
 
@@ -2069,6 +2152,16 @@ descent data from a given sheaf. Explicitly, given
 \qty{f\circ \pi_1}^* \mathcal{F} \xrightarrow{\sim} \qty{f\circ \pi_2}^* \mathcal{F}
 \end{align*}
 on \(U\times_X U\). We have a situation like the following:
+
+\begin{center}
+\begin{tikzcd}
+U\times_X U 
+ \ar[r, shift right=0.75ex, "\pi_2"'] \ar[r, shift left=0.75ex, "\pi_1"] 
+& U
+  \ar[r, "f"] 
+& X
+\end{tikzcd}
+\end{center}
 
 Since \(f\circ \pi_1 = f\circ \pi_2\) in this case, pulling back the
 identity yields the desired isomorphism.
@@ -2150,6 +2243,21 @@ We're not trying to show this map is a bijection, since we need more
 than that: the morphism should commute with the descent data. We can
 produce two maps to fill in the following diagram:
 
+\begin{center}
+\begin{tikzcd}
+ & & \hom_{U\times_X U} 
+\qty{ (f\circ \pi_1)^* \mathcal{F}_1, (f\circ \pi_1)^* \mathcal{F}_2 }
+\ar[dd, equal]\\
+\hom_X(\mathcal{F}_1, \mathcal{F}_2)  
+\ar[r, "{f^*}"]  &
+\hom_U(f^*\mathcal{F}_1, f^*\mathcal{F}_2)
+\ar[ru, "\pi_1^*"]
+\ar[rd, "\pi_2^*"] 
+& \\
+ & & \hom_{U\times_X U} \qty{ (f\circ \pi_2)^* \mathcal{F}_1, (f\circ \pi_2)^* \mathcal{F}_2   } \\
+\end{tikzcd}
+\end{center}
+
 where these hom sets are equal since \(f\circ \pi_1 = f\circ \pi_2\).
 
 \begin{claim}
@@ -2200,6 +2308,13 @@ morphisms on spec are surjective) and suppose
 \(N\in {R{\hbox{-}}\operatorname{mod}}\). Then there is an equalizer
 diagram
 
+\begin{center}
+\begin{tikzcd}
+N \ar[r] & N\otimes_R S \ar[r, bend left, "\operatorname{id}_N \otimes\operatorname{id}_S \otimes 1"] \ar[r, bend right, "\operatorname{id}_N \otimes 1 \otimes\operatorname{id}_S"'] & N\otimes_R S \otimes_R S \\
+n \ar[r] & n\otimes 1 
+\end{tikzcd}
+\end{center}
+
 \end{lemma}
 
 This is the case where \(\mathcal{F}_1 = {\mathcal{O}}\) and
@@ -2211,6 +2326,13 @@ This is the case where \(\mathcal{F}_1 = {\mathcal{O}}\) and
 \textbf{Step 1}: (Amazing trick) WLOG \(R\to S\) splits, so there's a
 map \(S\to R\) such that \(R\to S\to R\) is the identity. We can tensor
 with \(S\), i.e.~push out this map along itself to obtain
+
+\begin{center}
+\begin{tikzcd}
+R \ar[d]\ar[r] & S \ar[d, "1\otimes\operatorname{id}_S"'] \\
+S \ar[r] & S\otimes_R S  \ar[u, bend right, "\exists m"']
+\end{tikzcd}
+\end{center}
 
 where \(m\) is a section given by multiplication.
 
@@ -2325,6 +2447,14 @@ same place in the next two maps.
 We proved a lemma: if \(R\to S\) is a faithfully flat ring map and
 \(M\in {R{\hbox{-}}\operatorname{mod}}\) then
 
+\begin{center}
+\begin{tikzcd}
+N\ar[r] & N\otimes S\ar[r] & N\otimes S \otimes S \\
+n \ar[r] & n\otimes 1 & \\
+ & n\otimes s \ar[r] & n\otimes s \otimes 1
+\end{tikzcd}
+\end{center}
+
 is an equalizer diagram. We used one of Daniel's favorite tricks in fppf
 descent: producing a section by base-changing to \(S\).
 
@@ -2346,6 +2476,14 @@ quasicompact.)}
 thinking of \(U = \operatorname{Spec}S, X = \operatorname{Spec}R\).
 Since \(N, M \in {R{\hbox{-}}\operatorname{mod}}\), after replacing
 symbols, we want the following diagram to be an equalizer:
+
+\begin{center}
+\begin{tikzcd}
+\hom_R(M, N) \ar[r] &
+\hom_S(M\otimes S, N\otimes S) \ar[r, shift left=0.75em]\ar[r, shift right=0.75em] &
+\hom_{S\otimes S}(M\otimes S^{\otimes 2}, N\otimes S^{\otimes 2})
+\end{tikzcd}
+\end{center}
 
 where all tensors are over \(R\). The first map takes a map \(f:M\to N\)
 and composes with the map \(N\to N\otimes S\) from the lemma to get a
@@ -2370,6 +2508,14 @@ is a sheaf on \(X_{\text{ét}}\) and \(X_{\mathrm{\operatorname{fppf}}}\)
 \begin{proof}[?]
 
 We want to show that if \(U\to V\) is an étale cover, we want
+
+\begin{center}
+\begin{tikzcd}
+\mathcal{F}(V) \ar[r] &
+\mathcal{F}(U) \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+\mathcal{F}(U\times_V U) 
+\end{tikzcd}
+\end{center}
 
 to be an equalizer diagram -- but this is exactly the previous diagram
 where \(\mathcal{F}\coloneqq{\mathcal{O}}\) and
@@ -2412,6 +2558,12 @@ Let \(R\xrightarrow{f} S\) and
 \(\phi: M\otimes_R S\to S\otimes_R M\) of \(S\otimes_R S\) modules
 satisfying the cocycle condition. We make the following construction:
 
+\begin{center}
+\begin{tikzcd}
+M \ar[r, shift left=2.5, "m\mapsto 1\otimes m"] \ar[r, shift right=2.5, "m\mapsto \phi(m\otimes 1)", swap] & S\otimes M \\
+\end{tikzcd}
+\end{center}
+
 Suppose that \(M\) is of the form \(N\otimes S\) for
 \(N\in {R{\hbox{-}}\operatorname{mod}}\), how would the descent of \(M\)
 fit into this diagram and relate to these two maps? Just set \(K\) to be
@@ -2430,7 +2582,23 @@ descent data on \(M\).
 
 From the lemma, we have an equalizer
 
+\begin{center}
+\begin{tikzcd}
+R \ar[r] &
+S \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+S\otimes_R S
+\end{tikzcd}
+\end{center}
+
 to which we can apply \({\,\cdot\,}\otimes_S M\) to obtain
+
+\begin{center}
+\begin{tikzcd}
+K \ar[r] &
+M\otimes S \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+M\otimes_R S &
+\end{tikzcd}
+\end{center}
 
 where \(K\) is by definition the above kernel. We want to check that the
 map \(K\to M\) appearing here induces an isomorphism
@@ -2487,6 +2655,14 @@ affine.
 \textbf{Step 2}: If \(Y,Z\) are schemes over \(X\), we want to show the
 following is an equalizer diagram:
 
+\begin{center}
+\begin{tikzcd}
+\hom_X(Y, Z) \ar[r] &
+\hom_U(p^* Y, p^* Z) \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+\hom_{U\times_X U}(\pi^* p^* Y, \pi^* p^* Z)
+\end{tikzcd}
+\end{center}
+
 Here we've suppressed the indices on the \(\pi_i\) since their images
 are canonically identified. Injectivity is obvious, using that \(U\) is
 surjective, two different morphisms of schemes pulled back along a
@@ -2503,6 +2679,14 @@ where the \({\mathcal{O}}\) here are quasicoherent sheaves of algebras.
 These are obtained by taking the pushforward of the structure sheaf
 along \(Y\to X, Z\to X\). Rewriting the diagram, the homs are now in the
 category of quasicoherent algebras and we have
+
+\begin{center}
+\begin{tikzcd}
+ \hom({\mathcal{O}}_Z, {\mathcal{O}}_Y)\ar[r] &
+ \hom(p^* {\mathcal{O}}_Z, p^* {\mathcal{O}}_Y) \ar[r, shift right=0.75ex] \ar[r, shift left=0.75ex] &
+ \cdots
+\end{tikzcd}
+\end{center}
 
 where we want this to be an equalizer. This is true because the first
 map is injective even when ignoring the algebra structure, just looking
@@ -2791,6 +2975,13 @@ set and the RHS is a sheaf on
 ,\end{align*}
 where the limit is taken over diagrams of the form
 
+\begin{center}
+\begin{tikzcd}
+\mkern 1.5mu\overline{\mkern-1.5muu\mkern-1.5mu}\mkern 1.5mu \ar[r]\ar[d] & U\ar[d] \\
+x \ar[r, "\iota_{\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu}", hook] & X
+\end{tikzcd}
+\end{center}
+
 where \(\mkern 1.5mu\overline{\mkern-1.5muu\mkern-1.5mu}\mkern 1.5mu\)
 is a geometric point and \(Y\to X\) is étale.
 \(\mathcal{F}_{\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu}\)
@@ -2866,6 +3057,14 @@ Suppose \(\mathcal{F}, \mathcal{G}\) are sheaves of abelian groups on
 
 Suppose we have
 
+\begin{center}
+\begin{tikzcd}
+\mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "a"'] \ar[r, shift left=0.75ex, "b"] &
+\mathcal{H}
+\end{tikzcd}
+\end{center}
+
 where the 2 compositions agree, then we want to show that \(a=b\). Let
 \(s\) be a section of \(\mathcal{G}\) on \(U\), we want to know that
 \(a(s) = b(s)\). By (2), we can replace \(s\) with \(s'\) coming from
@@ -2881,9 +3080,25 @@ surjective. Assume
 is not surjective, and thus has a nontrivial cokernel \(\Lambda\). We
 can construct 2 maps to the skyscraper sheaf:
 
+\begin{center}
+\begin{tikzcd}
+ \mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
+  \qty{\iota_{\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu}}_* \Lambda
+\end{tikzcd}
+\end{center}
+
 where \(f\) is the ``natural map'' given by taking a section to
 \(\mathcal{G}\) and considering its stalk. Since \(\Lambda\) was the
 cokernel, both compositions from \(\mathcal{F}\) are zero:
+
+\begin{center}
+\begin{tikzcd}
+ \mathcal{F} \ar[r]\ar[rr, bend left, "0"] \ar[rr, bend right, "0"'] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "0"'] \ar[r, shift left=0.75ex, "f"] &
+  \qty{\iota_{\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu}}_* \Lambda
+\end{tikzcd}
+\end{center}
 
 which forces \(\Lambda = 0\), a contradiction.
 
@@ -2902,6 +3117,13 @@ is surjective, there is some étale neighborhood of
 \((V, \mkern 1.5mu\overline{\mkern-1.5muv\mkern-1.5mu}\mkern 1.5mu)\)
 where \(V\to X\) and
 \(\mkern 1.5mu\overline{\mkern-1.5muv\mkern-1.5mu}\mkern 1.5mu \mapsto \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu\):
+
+\begin{center}
+\begin{tikzcd}
+\mkern 1.5mu\overline{\mkern-1.5muv\mkern-1.5mu}\mkern 1.5mu \ar[r]\ar[d] & V\ar[d] \\
+x \ar[r, "\iota_{\mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu}", hook] & X
+\end{tikzcd}
+\end{center}
 
 Moreover, \({ \left.{{s}} \right|_{{V}} }\) is in the image of
 \(\mathcal{F}\). The only problem is that \(V\) is not a cover of \(U\),
@@ -2946,6 +3168,14 @@ What is the difference between 1 and 2? 1 means that
 \(\mathcal{F}\to \mathcal{G}\) is a monomorphism and the kernel of the
 map \(f: \mathcal{G}\to \mathcal{H}\), i.e.~the following diagram is an
 equalizer:
+
+\begin{center}
+\begin{tikzcd}
+ \mathcal{F} \ar[r] &
+ \mathcal{G} \ar[r, shift right=0.75ex, "f"'] \ar[r, shift left=0.75ex, "0"] &
+  \mathcal{H}
+\end{tikzcd}
+\end{center}
 
 \end{remark}
 
@@ -3078,6 +3308,13 @@ that one knows how to map out of it.
   \(\operatorname{coker}(\mathcal{F} \to \mathcal{G})\) is given by the
   coequalizer of
 
+  \begin{center}
+  \begin{tikzcd}
+   \mathcal{F} \ar[r, shift right=0.75ex, "f"'] \ar[r, shift left=0.75ex, "0"] &
+  \mathcal{G}
+  \end{tikzcd}
+  \end{center}
+
   which is a colimit.
 \item
   \(\operatorname{im}= \operatorname{coim}\), which can be checked on
@@ -3183,6 +3420,13 @@ f^{-1} :{\operatorname{Presh}}(Y_{\text{ét}}) &\to {\operatorname{Presh}}(X_\te
 \mathcal{F}(V\xrightarrow{\text{ét}} X) &\mapsto \varinjlim\mathcal{F}(U\to X)
 ,\end{align*}
 where the limit is over diagrams of the form
+
+\begin{center}
+\begin{tikzcd}
+V \ar[r] \ar[d, "\text{ét}"] & U \ar[d, "\text{ét}"] \\
+X \ar[r] & Y
+\end{tikzcd}
+\end{center}
 
 \begin{fact}
 
@@ -3460,6 +3704,31 @@ Suppose \(U \coloneqq\bigcup U_i \to X\) is an étale cover, and suppose
 \(\mathcal{F}\in {\operatorname{Sh}}(X_\text{ét})\), then there is a
 complex of projections:
 
+\begin{center}
+\begin{tikzcd}
+X 
+  &
+U 
+  \arrow[l] 
+  &
+U\times_X U 
+  \arrow[l, shift left]
+  \arrow[l, shift right] 
+  &
+U\times_X U \times_X U 
+  \arrow[l]
+  \arrow[l, shift left=2]
+  \arrow[l, shift right=2]
+  &
+\cdots
+  \arrow[l, shift left=0.75]
+  \arrow[l, shift right=0.75]
+  \arrow[l, shift left=2.25]
+  \arrow[l, shift right=2.25]
+  &
+\end{tikzcd}
+\end{center}
+
 Here we interpret each term as the \(n{\hbox{-}}\)fold intersections in
 the cover. We can apply \(\mathcal{F}\) to this diagram to obtain a
 \textbf{cosimplicial diagram} of abelian groups. Given such a diagram,
@@ -3680,6 +3949,28 @@ where the horizontal differentials come from the resolution and the
 vertical come from the Čech complex. To any double complex, one can
 associate two spectral sequences. First consider taking horizontal
 cohomology:
+
+\begin{center}
+\begin{tikzcd}
+\vdots 
+  & \vdots 
+  & \udots 
+  \\
+{\check{C}}(U/X, \mathcal{I}^1) 
+  = \mathcal{I}^0(U\times_X U) 
+    \ar[r]\ar[u]
+  & \mathcal{I}^1(U\times_X U)
+    \ar[r]\ar[u]
+  & \cdots 
+  \\
+{\check{C}}(U/X, \mathcal{I}^0) 
+  = \mathcal{I}^0(U)
+    \ar[r]\ar[u]
+  & \mathcal{I}^1(U)
+    \ar[r]\ar[u]
+  & \cdots
+\end{tikzcd}
+\end{center}
 
 Taking the vertical cohomology yields
 \begin{align*}  
@@ -4002,6 +4293,20 @@ For surjectivity, given \(f\in {\mathcal{O}}_U(U) = {\mathbb{G}}_a(U)\),
 we need to solve \(x^p - x = f\) étale-locally on \(U\). This naturally
 has a solution after base-changing:
 
+\begin{center}
+\begin{tikzcd}
+{\mathbb{G}}_a \times_{{\mathbb{G}}_a} U 
+  \ar[r]\ar[d, "\exists g"] &
+{\mathbb{G}}_a
+  \ar[d]
+\\
+U 
+  \ar[r, "f"] &
+{\mathbb{G}}_a
+\\
+\end{tikzcd}
+\end{center}
+
 The claim is that \(g\) is an étale cover. This follows because
 \(x^p-x\) is an étale cover, since the derivative is invertible, and
 thus \(g\) is a base change of an étale cover.
@@ -4010,8 +4315,65 @@ thus \(g\) is a base change of an étale cover.
 
 We then get a LES
 
+\begin{center}
+\begin{tikzcd}
+0 
+  \ar[r] \ar[d, equal]
+& H^0(X_\text{ét}, {\mathbb{F}}_p)
+  \ar[r] \ar[d, equal]
+& H^0(X_\text{ét}, {\mathbb{G}}_a)
+  \ar[r, "x^p-x"]\ar[d, equal]
+& H^0(X_\text{ét}, {\mathbb{G}}_a)
+    \ar[d, equal]\ar[r, "\delta"]
+& H^1(X_\text{ét}, {\mathbb{F}}_p)
+  \ar[r]\ar[d, equal]
+& \cdots
+\\
+0 
+  \ar[r] 
+& H^0(X_\text{ét}, {\mathbb{F}}_p)
+  \ar[r] 
+& H^0(X_\text{ét}, {\mathcal{O}}_X)
+  \ar[r, "x^p-x"]
+& H^0(X_\text{ét}, {\mathcal{O}}_X)
+  \ar[r, "\delta"]
+& H^1(X_\text{ét}, {\mathbb{F}}_p)
+  \ar[r]
+& \cdots
+\end{tikzcd}
+\end{center}
+
 For \(X = {\mathbb{A}}^1 = \operatorname{Spec}{\mathbb{F}}_p[t]\), we
 get
+
+\begin{center}
+\begin{tikzcd}
+0 
+  \ar[r] \ar[d, equal]
+& H^0({\mathbb{A}}^1_\text{ét}, {\mathbb{F}}_p)
+  \ar[r] \ar[d, equal]
+& {\mathbb{F}}_p[t] 
+  \ar[r, "t^p-t"]\ar[d, equal]
+& {\mathbb{F}}_p[t] 
+    \ar[d, equal]\ar[r, "\delta"]
+& H^1({\mathbb{A}}^1_\text{ét}, {\mathbb{F}}_p)
+  \ar[r]\ar[d, equal]
+& 0
+  \ar[d, equal]
+\\
+0
+  \ar[r]
+& {\mathbb{F}}_p
+  \ar[r]
+& {\mathbb{F}}_p[t]
+  \ar[r]
+& {\mathbb{F}}_p[t]
+  \ar[r]
+& \operatorname{coker}(t^p - t) 
+  \ar[r]
+& 0
+\end{tikzcd}
+\end{center}
 
 In general, this cokernel is very large. This is why étale cohomology
 with \({\mathbb{F}}_p\) coefficients is not particularly well-behaved,
@@ -4083,6 +4445,21 @@ Recall that we had a theorem last time (\cref{thm:et_qcs_zar}) showing
 that the étale cohomology of quasicoherent sheaves is equivalent to the
 usual Zariski cohomology. From this we got a long exact sequence:
 
+\begin{center}
+\begin{tikzcd}
+  H^i(X_\text{ét}, \underline{{\mathbb{F}}_p})
+    \ar[r]
+& H^i(X, {\mathcal{O}}_X)
+    \ar[r, "f"]
+& H^i(X, {\mathcal{O}}_X)
+\\
+& \cdots
+    \ar[r]
+& H^{i-1}(X, {\mathcal{O}}_X) 
+    \ar[ull, "\delta"]
+\end{tikzcd}
+\end{center}
+
 We don't know how to compute \(H^i(X_\text{ét}, {\mathbb{F}}_p)\)
 generally, but the affine case is easy. For \(X\) affine,
 \(H^{>0}(X, {\mathcal{O}}_X) = 0\), which in facts holds for any
@@ -4090,6 +4467,26 @@ quasicoherent sheave replacing \({\mathcal{O}}_X\), and
 \(H^0(X, {\mathbb{F}}_p) = \qty{{\mathbb{F}}_p}^{{\left\lvert {\pi_0 X} \right\rvert} }\)
 where the exponent is the number of connected components of \(X\). So we
 get an exact sequence
+
+\begin{center}
+\begin{tikzcd}
+H^{1}(X, {\mathcal{O}}_X) 
+    \ar[r]
+& 0
+& 
+\\
+  H^0(X, {\mathbb{F}}_p) = \qty{{\mathbb{F}}_p}^{{\left\lvert {\pi_0 X} \right\rvert} } 
+    \ar[r]
+& {\mathcal{O}}_X(X) 
+    \ar[r, "f"']
+& {\mathcal{O}}_X(X) 
+    \ar[ull]
+\\
+&
+& 0
+    \ar[ull]
+\end{tikzcd}
+\end{center}
 
 \begin{remark}
 
@@ -4471,9 +4868,36 @@ choices.
 \({ \left.{{T}} \right|_{{U_\text{ét}}} } \xrightarrow{\phi} { \left.{{G}} \right|_{{U_\text{ét}}} }\)
 is an isomorphism of torsors, so considering the two projections
 
+\begin{center}
+\begin{tikzcd}
+U\times_X U
+ \ar[d, shift right=0.75ex, "\pi_1"'] 
+ \ar[d, shift left=0.75ex, "\pi_2"]
+\\
+U
+  \ar[d]
+\\
+X 
+\end{tikzcd}
+\end{center}
+
 we get an isomorphism \(\pi_1*T \xrightarrow{\sim}\pi_2^* T\) coming
 from the fact that we're pulling back along \(U\to X\). Using the
 isomorphism above, we can view this as
+
+\begin{center}
+\begin{tikzcd}
+  \pi_1^*T 
+    \ar[r, "\sim"]
+    \ar[d, "\pi_1^* \phi"']
+& \pi_2^*T
+    \ar[d, "\pi_2^* \phi"]
+\\
+  \pi_1^* G 
+    \ar[r, "{g, \sim}"]
+& \pi_2^* G 
+\end{tikzcd}
+\end{center}
 
 I.e., we can view the descent data pulled back from \(X\) as trivial
 torsors. Moreover,
@@ -4615,10 +5039,39 @@ vector bundle relative to \(U_{/X}\).
 
 This descent data comes from the following:
 
+\begin{center}
+\begin{tikzcd}
+U\times_X U
+ \ar[d, shift right=0.75ex, "\pi_1"'] 
+ \ar[d, shift left=0.75ex, "\pi_2"]
+\\
+U
+  \ar[d]
+\\
+X 
+\end{tikzcd}
+\end{center}
+
 That \(U\) trivializes our torsor means that \(\pi^* T = \pi^* G\) as a
 \(G{\hbox{-}}\)torsor, where \(G\) acts on itself by
 left-multiplication. We have two different ways of pulling back, and
 identifications with \(G\) in both, yielding
+
+\begin{center}
+\begin{tikzcd}
+\pi_1^* \pi^* T 
+  \ar[d]
+  \ar[r, "\sim"]
+& 
+\pi_2^* \pi^* T 
+  \ar[d]
+\\
+\pi_1^* \pi^* G
+  \ar[r, "\sim"]
+&  
+\pi_2^* \pi^* G
+\end{tikzcd}
+\end{center}
 
 Both of the bottom objects are isomorphic to
 \({ \left.{{G}} \right|_{{U\times U}} }\).
@@ -4687,12 +5140,49 @@ You can take an fppf local trivialization, trivialize by \(p\) itself,
 then slice to get an étale trivialization. Given a torsor \(T\to X\), we
 can base change it to itself:
 
+\begin{center}
+\begin{tikzcd}
+T\times_X T 
+  \ar[d]
+  \ar[r]
+& T 
+  \ar[d]
+\\
+T 
+  \ar[r, "f"]
+  \ar[u, bend right, "\exists"']
+& X 
+\end{tikzcd}
+\end{center}
+
 The torsor \(T\times_X T\to T\) is trivial since there exists the
 indicated section given by the diagonal map. Another way to see this is
 that \(T\times T\cong T\times G\) by the \(G{\hbox{-}}\)action map,
 which is equivalent to triviality here. Here \(f\) is smooth map since
 \(G\) itself was smooth and the fibers of \(T\) are isomorphic to the
 fibers of \(G\). We can thus find some \(U\) such that
+
+\begin{center}
+\begin{tikzcd}
+&
+T\times_X T 
+  \ar[d]
+  \ar[r]
+& T 
+  \ar[d]
+\\
+&
+T 
+  \ar[r, "f"]
+  \ar[u, bend right, "\exists"']
+& X 
+\\
+U 
+  \ar[ur, hook, "\text{closed}"]
+  \ar[urr, bend right, "\exists \text{ét}"']
+& &
+\end{tikzcd}
+\end{center}
 
 Here ``slicing'' means finding such a \(U\), and this can be done using
 the structure theorem for smooth morphisms.
@@ -4765,6 +5255,38 @@ invertible function on \(X\). We have a SES of étale sheaves, the
 This is exact in the étale topology since adjoining an \(\ell\)th power
 of any function gives an étale cover. We get a LES in cohomology
 
+\begin{center}
+\begin{tikzcd}
+&
+&
+0 \ar[dll]
+\\
+H^0(X_\text{ét}, \mu_\ell)
+  \ar[r]
+&
+H^0(X_\text{ét}, {\mathbb{G}}_m)
+  \ar[r, "z\mapsto z^\ell"]
+&
+H^0(X_\text{ét}, {\mathbb{G}}_m)
+  \ar[dll]
+\\
+{\color{NavyBlue} H^1(X_\text{ét}, \mu_\ell)}
+  \ar[r]
+&
+{\operatorname{Pic}}(X)
+  \ar[r, "{[\ell]}"]
+&
+{\operatorname{Pic}}(X)
+  \ar[dll]
+\\
+H^2(X_\text{ét}, \mu_\ell)
+  \ar[r]
+&
+\cdots
+&
+\end{tikzcd}
+\end{center}
+
 We know that \(H^0(X_\text{ét}, {\mathbb{G}}_m)\) are invertible
 functions on \(X\), and the blue term is what we'd like to compute.
 We'll make some additional assumptions now.
@@ -4774,6 +5296,38 @@ Suppose now
 then \(H^0(X_\text{ét},\mu_\ell) = \mu_\ell(k)\) since it is the kernel
 of the \(\ell\)th power map. We can also compute
 \(H^1(X_\text{ét}, \mu_\ell)\), since our diagram reduces to
+
+\begin{center}
+\begin{tikzcd}
+&
+&
+0 \ar[dll, hook]
+\\
+\mu_\ell(k)
+  \ar[r]
+&
+k^{\times}
+  \ar[r, "z\mapsto z^\ell"]
+&
+k^{\times}
+  \ar[dll, "\delta"', twoheadrightarrow]
+\\
+{\color{NavyBlue} H^1(X_\text{ét}, \mu_\ell)}
+  \ar[r]
+&
+{\operatorname{Pic}}(X)[\ell]
+  \ar[r, "{[\ell]}"]
+&
+{\operatorname{Pic}}(X)
+  \ar[dll]
+\\
+H^2(X_\text{ét}, \mu_\ell)
+  \ar[r]
+&
+\cdots
+&
+\end{tikzcd}
+\end{center}
 
 where surjectivity of \(\delta\) follows from the fact that
 \(k=\mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu\) and
@@ -4937,6 +5491,31 @@ The Kummer sequence
 \end{align*}
 yields a LES where we identify
 \(\mu_{\ell^n} \cong \mathbb{Z}/\ell^n\mathbb{Z}\):
+
+\begin{center}
+\begin{tikzcd}
+& & 
+0 
+  \ar[dll]
+\\
+ H^1(X_\text{ét}, \underline{\mathbb{Z}/\ell^n\mathbb{Z}})
+  \ar[r]
+&
+ {\operatorname{Pic}}(X)
+  \ar[r, "{[\ell]}"]
+&
+ {\operatorname{Pic}}(X)
+  \ar[dll]
+\\
+ H^2(X_\text{ét}, \underline{\mathbb{Z}/\ell^n\mathbb{Z}})
+  \ar[r]
+&
+ 0
+  \ar[r]
+&
+ 0
+\end{tikzcd}
+\end{center}
 
 So we're just computing the kernel and cokernel of \([\ell]\).
 
@@ -5221,6 +5800,20 @@ Choose an injective resolution
 \(\mathcal{H}^i(\pi_* \mathcal{I}^{\,\cdot\,}) \coloneqq R^i \pi_* \mathcal{F}\).
 Let's compute this pushforward in another way: we have
 
+\begin{center}
+\begin{tikzcd}
+{\operatorname{Presh}}(X_\text{ét}) 
+  \ar[r, "\pi_*"]
+& {\operatorname{Presh}}(Y_\text{ét})
+  \ar[d, "a = \text{sheafification}", dotted]
+\\
+{\operatorname{Sh}}(X_\text{ét}) 
+  \ar[r, "\pi_*"]
+  \ar[u, "f = \text{forget}"']
+& {\operatorname{Sh}}(Y_\text{ét}) 
+\end{tikzcd}
+\end{center}
+
 Here the induced map on presheaves is exact although the forgetful
 functor may not be. This is because a sequence of presheaves is exact
 iff it's exact on every open, but \(\pi_*\) just pulls back opens. This
@@ -5376,6 +5969,30 @@ regularity.
 \begin{corollary}[?]
 
 There's a LES:
+
+\begin{center}
+\begin{tikzcd}
+&
+ \cdots
+  \ar[r]
+&
+H^{i-1}(X_\text{ét}, \bigoplus_{\operatorname{codim}(z) = 1} \iota_{z_*} \underline{{\mathbb{Z}}})
+  \ar[dll]
+\\
+{\color{NavyBlue} H^i(X_\text{ét}, {\mathbb{G}}_m) }
+  \ar[r]
+&
+H^i(X_\text{ét}, \eta_* {\mathbb{G}}_m)
+  \ar[r]
+&
+H^i(X_\text{ét}, \bigoplus_{\operatorname{codim}(z) = 1} \iota_{z_*} \underline{{\mathbb{Z}}})
+  \ar[dll]
+\\
+\cdots
+& 
+&
+\end{tikzcd}
+\end{center}
 
 The blue term is what we'd like to compute, and the other terms are the
 cohomology of pushforwards and thus appear in the Leray spectral
@@ -6079,6 +6696,22 @@ algebra since passing to any cover where \(\mathcal{E}\) is trivialized
 yields a matrix algebra. Moreover, there is a way to go from Azumaya
 algebras to Severi-Brauers, by taking moduli of certain ideals, so we
 have a diagram
+
+\begin{center}
+\begin{tikzcd}
+&
+\left\{{\text{Severi-Brauers}}\right\}
+\\
+\mathcal{E} \in \left\{{\text{Twisted sheaves}}\right\}
+  \ar[ru, "{\mathbb{P}}({\,\cdot\,})"]
+  \ar[rd, "\operatorname{End}({\,\cdot\,})"']
+&
+\\
+&
+\left\{{\text{Azumaya algebras}}\right\}
+  \ar[uu, dotted]
+\end{tikzcd}
+\end{center}
 
 \end{remark}
 
