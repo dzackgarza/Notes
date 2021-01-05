@@ -157,9 +157,9 @@ xmax=18,
 \centering
 \begin{tabular}{l|lll}
 \hline \\
-$F$   & \checkmark & x & x \\
-$F'$  & \checkmark & x &  x \\
-$F''$ & \checkmark & \checkmark & \checkmark
+$F$   & $\checkmark$ & x & x \\
+$F'$  & $\checkmark$ & x &  x \\
+$F''$ & $\checkmark$ & $\checkmark$ & $\checkmark$
 \end{tabular}
 \end{table}
 ```
@@ -1272,7 +1272,7 @@ I_{Z'} = \left\{
 f + \varepsilon g \,
 \middle\vert
 \,
-\begin{array}{l}
+\begin{array}{ll}
 f,g &\in I_Z, \\
 \phi(f) &= g\pmod I_Z, \\
 \phi(f) &\in {\mathcal{O}}_Z, \\
@@ -1637,19 +1637,19 @@ if \( Z = {\coprod}Z_i \). If \( I \) is supported at 0, then we can identify th
 ::: {.example title="?"}
 \( I = (x^2, xy, y^2) \):
 
-![Image](figures/2020-02-06-12:48.png)
+![Image](figures/2020-02-06-12:48.png){width="350px"}
 :::
 
 ::: {.example title="?"}
 \( I = (x^6, x^2y^2, xy^4, y^5) \):
 
-![Image](figures/2020-02-06-12:49.png)
+![Image](figures/2020-02-06-12:49.png){width="350px"}
 :::
 
 ::: {.example title="?"}
 \( I = (x^2, y) \). Let \( e=x^2, f = y \).
 
-![Image](figures/2020-02-06-12:54.png)
+![Image](figures/2020-02-06-12:54.png){width="350px"}
 
 By comparing rows to columns, we obtain a relation \( ye = x^2 f \). Write \( {\mathcal{O}}= \left\{{1, x}\right\} \), then note that this relation is trivial in \( {\mathcal{O}} \) since \( y=x^2=0 \). Thus \( \hom(I, {\mathcal{O}}) = \hom(k^2, k^2) \) is 4-dimensional.
 :::
@@ -1661,13 +1661,13 @@ Note that \( C_{_{/k}} \) for curves is an important case to know. Take \( Z \su
 ::: {.example title="?"}
 Consider the nodal cubic in \( {\mathbb{P}}^2 \):
 
-![](figures/2020-02-06-13:01.png)
+![Nodal cubic](figures/2020-02-06-13:01.png){width="350px"}
 
 > The nodal cubic \( zy^2 = x^2(x+z) \).
 
 Consider the open subscheme \( V \subset \operatorname{Hilb}_{C_{/k}}^2 \) of points \( z \subset U \) for \( U \subset C \) open. We can normalize:
 
-![](figures/2020-02-06-13:03.png)
+![Normalized cubic](figures/2020-02-06-13:03.png){width="350px"}
 
 This yields a map fro \( {\mathbb{P}}^1 \setminus\text{2 points} \). This gives us a stratification, i.e. a locally closed embedding
 \[
@@ -1676,11 +1676,11 @@ This yields a map fro \( {\mathbb{P}}^1 \setminus\text{2 points} \). This gives 
 
 The first locus is given by the complement of two lines:
 
-![](figures/2020-02-06-13:08.png)
+![Locus 1](figures/2020-02-06-13:08.png){width="350px"}
 
 The third locus is given by arrows at \( p \) pointing in any direction, which gives a copy of \( {\mathbb{P}}^1 \). The second is \( {\mathbb{P}}^1 \) minus two points. Above each point is a nodal cubic with two marked points, and moving the base point towards a line correspond to moving one of the points toward the node:
 
-![](figures/2020-02-06-13:11.png)
+![Moving base toward the point](figures/2020-02-06-13:11.png){width="350px"}
 
 More precisely, we're considering the cover \( {\mathbb{P}}^1 \setminus\text{2 points} \to C \) and thinking about ways in which two points and approach the missing points. These give specific tangent directions at the node on the cubic, depending on how this approach happens -- either both points approach missing point \#1, both approach missing point \#2, or each approach a separate missing point.
 :::
@@ -2008,7 +2008,7 @@ We can compute the dimension of quartics, which is \( {4+3 \choose 3} - 1 = 35 -
 Use the fact that these curves are \( K3 \) surfaces? Get the fact about the generator of the Picard group from Hodge theory. So we can deform curves a bit, but not construct an algebraic family that escapes a particular cubic.
 :::
 
-# Tuesday February 25th
+# Obstruction and Deformation (Tuesday February 25th)
 
 Let \( k \) be a field, \( X_{_{/k}} \) projective, then the \( k{\hbox{-}} \)points \( \operatorname{Hilb}_{X_{_{/k}}}^P(k) \) corresponds to closed subschemes \( Z\subset X \) with hilbert polynomial \( P_z = P \). Given a \( P \), we want to understand the local structure of \( \operatorname{Hilb}_{X_{_{/k}}}^p \), i.e. diagrams of the form
 
@@ -2162,9 +2162,11 @@ It is difficult to understand even \( F_{X, x}(A) \) directly, but it's easier t
 :::
 
 ::: {.definition title="Small Extensions"}
-A *small extension* is a SES of Artinian \( k{\hbox{-}} \)algebras of the form \[ 0 `\to `{=tex}J `\to `{=tex}A' `\to `{=tex}A `\to 0`{=tex}
-
-.\] such that \( J \) is annihilated by the maximal ideal fo \( A' \).
+A *small extension* is a SES of Artinian \( k{\hbox{-}} \)algebras of the form
+\[
+0 \to J \to A' \to A \to 0
+.\]
+such that \( J \) is annihilated by the maximal ideal fo \( A' \).
 :::
 
 ::: {.lemma title="?"}
@@ -2217,11 +2219,15 @@ where
 \pi^{-1}(x) &\mapsto x
 .\]
 
-This is given by taking a line bundle on the thickening and restricting to a closed point. Thus the functor is given by sending \( A \) to the set of line bundles on \( X_A \) which restrict to \( X_x \). That is, \( F(A) \subset {\operatorname{Pic}}_{X_{_{/k}}}(\operatorname{Spec}A) \) which restrict to \( x \). So just pick the subspace \( {\operatorname{Pic}}(X_A) \) (base changing to \( A \)) which restrict. There is a natural identification of \( {\operatorname{Pic}}(X_A) = H^1(X_A, {\mathcal{O}}_{X_A}^*) \). If \[ 0`\to `{=tex}J `\to `{=tex}A' `\to `{=tex}A `\to 0`{=tex}
-
-.\] is a thickening of Artinian \( k{\hbox{-}} \)algebras, there is a restriction map of invertible functions \[ `{\mathcal{O}}`{=tex}*{X_A}\^\* `\to `{=tex}`{\mathcal{O}}`{=tex}*{X_A'}\^\* `\to 0`{=tex}
-
-.\] which is surjective since the map on structure sheaves is surjective and its a nilpotent extension. The kernel is then just \( {\mathcal{O}}_{X_{A'}} \otimes J \). If this is a small extension, we get a SES
+This is given by taking a line bundle on the thickening and restricting to a closed point. Thus the functor is given by sending \( A \) to the set of line bundles on \( X_A \) which restrict to \( X_x \). That is, \( F(A) \subset {\operatorname{Pic}}_{X_{_{/k}}}(\operatorname{Spec}A) \) which restrict to \( x \). So just pick the subspace \( {\operatorname{Pic}}(X_A) \) (base changing to \( A \)) which restrict. There is a natural identification of \( {\operatorname{Pic}}(X_A) = H^1(X_A, {\mathcal{O}}_{X_A}^*) \). If
+\[
+0\to J \to A' \to A \to 0
+.\]
+is a thickening of Artinian \( k{\hbox{-}} \)algebras, there is a restriction map of invertible functions
+\[
+{\mathcal{O}}_{X_A}^* \to {\mathcal{O}}_{X_A'}^* \to 0
+.\]
+which is surjective since the map on structure sheaves is surjective and its a nilpotent extension. The kernel is then just \( {\mathcal{O}}_{X_{A'}} \otimes J \). If this is a small extension, we get a SES
 \[
 0 \to {\mathcal{O}}_X \otimes J \to {\mathcal{O}}_{X_{A'}}^* \to {\mathcal{O}}_{x_A}^* \to 0
 .\]
@@ -2994,7 +3000,7 @@ Why are H4 and H4' connected?
 ::: {.answer}
 Let \( A' \to A \) be small, then
 \[
-A' \times_A A' &= A' \times_k k[\varepsilon]
+A' \times_A A' &= A' \times_k k[\varepsilon] \\
 (x, y) &\mapsto ??
 .\]
 
@@ -3142,170 +3148,86 @@ exists. This concludes showing miniversality.
 
 To finish, we want to show that H4 implies that the map on sections \( h_R \xrightarrow{\xi} F \) is bijective.
 
-```{=html}
-<!--\begin{tikzcd}-->
+```{=tex}
+\begin{tikzcd}
+&
+&
+& h_R 
+  \ar[d, "\xi"]
+\\
+& h_A 
+  \ar[rr, bend right, "\eta"] 
+  \ar[rru, bend left, "u"] 
+& h_{A'} 
+  \ar[r, "\eta'"] 
+  \ar[ru, "\exists ! u'"] 
+& F
+\end{tikzcd}
 ```
-```{=html}
-<!--& h_R -->
-```
-`<!--\ar[d, "\xi"]-->`{=html} `<!--& h_A -->`{=html} `<!--\ar[rr, bend left, "\eta"] -->`{=html} `<!--\\-->`{=html} `<!--? -->`{=html} `<!--\ar[rru, "u"] -->`{=html} `<!--& h_{A'} -->`{=html} `<!--\ar[r, "\eta'"] -->`{=html} `<!--\ar[ru, "\exists ! u'"] -->`{=html} `<!--& F-->`{=html} `<!--\end{tikzcd}-->`{=html}
-
 where the map \( \xi \) is "formal etale", which will necessarily imply that it's a bijection over all artinian rings. So we just need to show formal étaleness. We have a diagram
 
-```{=html}
-<!--\begin{tikzcd}-->
+```{=tex}
+\begin{tikzcd}
+t_R {\circlearrowleft}u'\in h_R(A') \ar[r] \ar[d] & u\in h_R(A) \ar[d] \\
+t_F {\circlearrowleft}\eta' \in h_R(A') \ar[r] & \eta \in h_R(A)
+\end{tikzcd}
 ```
-```{=html}
-<!--t_R \selfmap u'\in h_R(A') \ar[r] \ar[d] & u\in h_R(A) \ar[d] \\-->
-```
-```{=html}
-<!--t_F \selfmap \eta' \in h_R(A') \ar[r] & \eta \in h_R(A)-->
-```
-```{=html}
-<!--\end{tikzcd}-->
-```
-```{=html}
-<!--where $u'$ exists by smoothness.-->
-```
-```{=html}
-<!--Assume that are two $u', u''$, then $u' = u'' + \theta$ and $\im(u') = \im(u'') + \theta \implies \theta = 0$ and thus $u' = u''$.-->
-```
-```{=html}
-<!--$\qed$-->
-```
-```{=html}
-<!--We originally had two goals:-->
-```
-```{=html}
-<!--1. Given a representable moduli functor (such as the Hilbert functor), we wanted to understand the local structure by analyzing the deformation functor at a given point.-->
-```
-```{=html}
-<!--2. We want to use representability of the deformation functors to get global representability of the original functor.-->
-```
-```{=html}
-<!--What can we now deduce about the local structure of functors using their deformation theory?-->
-```
-```{=html}
-<!--Observation:-->
-```
-```{=html}
-<!--Any two hulls $h_R \to F$ are isomorphic but not canonically.-->
-```
-```{=html}
-<!--We can lift maps at every finite level and induct up, which is an isomorphism on tangent spaces and thus an isomorphism.-->
-```
-```{=html}
-<!--The sketch: use smoothness to get the map, and the tangent space condition will imply the full isomorphism.-->
-```
-```{=html}
-<!--Observation:-->
-```
-```{=html}
-<!--Suppose that $F$ has an obstruction theory (not necessarily strong).-->
-```
-```{=html}
-<!--This implies there exists a hull $h_R \mapsvia \xi F$.-->
-```
-```{=html}
-<!--The obstruction theory of $F$ *gives* an obstruction theory of $h_R$:-->
-```
-```{=html}
-<!--given $A' \to A$ a small thickening, we need a functorial assignment-->
-```
-```{=html}
-<!--\[-->
-```
-```{=html}
-<!--t_R = \mathrm{def} \selfmap h_R(A') \to h_R(A) \mapsvia{\mathrm{obs}} \mathrm{obs} \\-->
-```
-```{=html}
-<!--\mathrm{def} \selfmap F(A') \to F(A) \mapsvia{\mathrm{obs}} \mathrm{obs}-->
-```
-```{=html}
-<!--\]-->
-```
-```{=html}
-<!--where there are vertical maps with equality on the edges.-->
-```
-```{=html}
-<!--![](figures/image_2020-04-07-13-35-00.png)\-->
-```
-```{=html}
-<!--By formal smoothness, $\eta'$ lifts to some $\xi'$, but using the transitivity of the action of the tangent space can fix this.-->
-```
-```{=html}
-<!--We already had an obstruction theory of $R$, since we can always find a quotient-->
-```
-```{=html}
-<!--\[-->
-```
-```{=html}
-<!--I \to S = k[[t_R\dual]] \surjects R-->
-```
-```{=html}
-<!--\]-->
-```
-```{=html}
-<!--and $h_K$ has an obstruction theory-->
-```
-```{=html}
-<!--- $\mathrm{def} = t_R = \qty{\mfm_R/\mfm_R^2}\dual$-->
-```
-```{=html}
-<!--- $\mathrm{obs} = \qty{I/\mfm_S I}\dual$-->
-```
-```{=html}
-<!--Fact (proof can be found in FGA):-->
-```
-```{=html}
-<!--Any other obstruction theory $(\mathrm{def}', \mathrm{obs}')$ of $h_R$ admits an injection $\qty{I/\mfm_S I}\dual \injects \mathrm{obs}'$.-->
-```
-```{=html}
-<!--Combining these three facts, we conclude the following:-->
-```
-```{=html}
-<!--If $F$ has an obstruction theory $\mathrm{def}(F), \mathrm{obs}(F)$, then $F$ has a miniversal family $h_R \mapsvia \xi F$ with $R = S/ I$ a quotient of the formal power series ring over some ideal, where $S = k[[t_F\dual]]$.-->
-```
-```{=html}
-<!--It follows that $\dim(I/\mfm_S I) \leq \dim \mathrm{obs}(F)$, and thus the minimal number of generators of $I$ (equal to the LHS by Nakayama) is bounded by the RHS.-->
-```
-```{=html}
-<!--Thus-->
-```
-```{=html}
-<!--\[-->
-```
-```{=html}
-<!--\dim_k \mathrm{def}(F) \geq \dim R \geq \dim \mathrm{def}(F) - \dim \mathrm{obs}(F)-->
-```
-```{=html}
-<!--.\]-->
-```
-```{=html}
-<!--In particular, if $\dim(R) = \dim \mathrm{def}(F) - \dim \mathrm{obs}(F)$, then $R$ is a complete intersection.-->
-```
-```{=html}
-<!--If $\dim(R) = \dim \mathrm{def}(R)$, the ideal doesn't have any generators, and $R \cong S$.-->
-```
-```{=html}
-<!--In particular, if $\mathrm{obs}(F) = 0$, then $R \cong S$ is isomorphic to this power series ring.-->
-```
-```{=html}
-<!--Finally, if $F$ is the deformation functor for a global representable functor, then $R = \hat{\OO}_{\mfm, p}$ is the completion of this local ring and the same things hold for this completion.-->
-```
-```{=html}
-<!--Thus regularity can be checked on the completion.-->
-```
-```{=html}
-<!--So if you have a representable functor with an obstruction theory (e.g. the Hilbert Scheme) with zero obstruction, then we have smoothness at that point.-->
-```
-```{=html}
-<!--If we know something about the dimension at a point relative to the obstruction, we can deduce information about being a local intersection.-->
-```
-```{=html}
-<!--So the deformation tells you the dimension of a minimal smooth embedding, and the obstruction is the maximal number of equations needed to cut it out locally.-->
-```
-\<!--\> Content: Hartshorne's Deformation Theory, section in FGA is in less generality but has many good examples. See "Fundamental Algebraic Geometry". See also representability of the Picard scheme.--\>
+where \( u' \) exists by smoothness.
+
+Assume that are two \( u', u'' \), then \( u' = u'' + \theta \) and \( \operatorname{im}(u') = \operatorname{im}(u'') + \theta \implies \theta = 0 \) and thus \( u' = u'' \).
+
+## Revisiting Goals
+
+We originally had two goals:
+
+1.  Given a representable moduli functor (such as the Hilbert functor), we wanted to understand the local structure by analyzing the deformation functor at a given point.
+
+2.  We want to use representability of the deformation functors to get global representability of the original functor.
+
+::: {.question}
+What can we now deduce about the local structure of functors using their deformation theory?
+:::
+
+::: {.fact title="1"}
+Any two hulls \( h_R \to F \) are isomorphic but not canonically. We can lift maps at every finite level and induct up, which is an isomorphism on tangent spaces and thus an isomorphism. The sketch: use smoothness to get the map, and the tangent space condition will imply the full isomorphism.
+:::
+
+::: {.fact title="3"}
+Suppose that \( F \) has an obstruction theory (not necessarily strong). This implies there exists a hull \( h_R \xrightarrow{\xi }F \). The obstruction theory of \( F \) *gives* an obstruction theory of \( h_R \): given \( A' \to A \) a small thickening, we need a functorial assignment
+\[
+t_R = \mathrm{def} {\circlearrowleft}h_R(A') \to h_R(A) \xrightarrow{\mathrm{obs}} \mathrm{obs} \\
+\mathrm{def} {\circlearrowleft}F(A') \to F(A) \xrightarrow{\mathrm{obs}} \mathrm{obs}
+\]
+where there are vertical maps with equality on the edges.
+
+![Vertical maps](figures/image_2020-04-07-13-35-00.png)
+
+By formal smoothness, \( \eta' \) lifts to some \( \xi' \), but using the transitivity of the action of the tangent space can fix this. We already had an obstruction theory of \( R \), since we can always find a quotient
+\[
+I \to S = k[[t_R^\vee]] \twoheadrightarrow R
+\]
+and \( h_K \) has an obstruction theory
+
+-   \( \mathrm{def} = t_R = \qty{{\mathfrak{m}}_R/{\mathfrak{m}}_R^2}^\vee \)
+-   \( \mathrm{obs} = \qty{I/{\mathfrak{m}}_S I}^\vee \)
+:::
+
+::: {.fact title="proof can be found in FGA"}
+Any other obstruction theory \( (\mathrm{def}', \mathrm{obs}') \) of \( h_R \) admits an injection \( \qty{I/{\mathfrak{m}}_S I}^\vee\hookrightarrow\mathrm{obs}' \).
+:::
+
+Combining these three facts, we conclude the following: If \( F \) has an obstruction theory \( \mathrm{def}(F), \mathrm{obs}(F) \), then \( F \) has a miniversal family \( h_R \xrightarrow{\xi }F \) with \( R = S/ I \) a quotient of the formal power series ring over some ideal, where \( S = k[[t_F^\vee]] \). It follows that \( \dim(I/{\mathfrak{m}}_S I) \leq \dim \mathrm{obs}(F) \), and thus the minimal number of generators of \( I \) (equal to the LHS by Nakayama) is bounded by the RHS. Thus
+\[
+\dim_k \mathrm{def}(F) \geq \dim R \geq \dim \mathrm{def}(F) - \dim \mathrm{obs}(F)
+.\]
+
+In particular, if \( \dim(R) = \dim \mathrm{def}(F) - \dim \mathrm{obs}(F) \), then \( R \) is a complete intersection. If \( \dim(R) = \dim \mathrm{def}(R) \), the ideal doesn't have any generators, and \( R \cong S \). In particular, if \( \mathrm{obs}(F) = 0 \), then \( R \cong S \) is isomorphic to this power series ring.
+
+Finally, if \( F \) is the deformation functor for a global representable functor, then \( R = \widehat{{\mathcal{O}}}_{{\mathfrak{m}}, p} \) is the completion of this local ring and the same things hold for this completion. Thus regularity can be checked on the completion. So if you have a representable functor with an obstruction theory (e.g. the Hilbert Scheme) with zero obstruction, then we have smoothness at that point. If we know something about the dimension at a point relative to the obstruction, we can deduce information about being a local intersection. So the deformation tells you the dimension of a minimal smooth embedding, and the obstruction is the maximal number of equations needed to cut it out locally.
+
+::: {.remark}
+The content here: see Hartshorne's *Deformation Theory*. The section in FGA is in less generality but has many good examples. See "Fundamental Algebraic Geometry". See also representability of the Picard scheme.
+:::
 
 # Thursday April 9th
 
@@ -3316,9 +3238,7 @@ Let \( F: \operatorname{Art}_{/k} \to {\operatorname{Set}} \) be a deformation f
 In particular, if \( \mathrm{obs}(F) = 0 \), then \( R \cong k[[\mathrm{def}(F)^\vee]] = k[[ t_{F}^\vee]] \).
 
 ::: {.example title="?"}
-Let \( M = \operatorname{Hilb}_{{\mathbb{P}}^n_{/k}}^{dt + (1-g)} \) where \( k=\mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu \), and suppose \( [Z] \in M \) is a smooth point.
-
-Then
+Let \( M = \operatorname{Hilb}_{{\mathbb{P}}^n_{/k}}^{dt + (1-g)} \) where \( k=\mkern 1.5mu\overline{\mkern-1.5muk\mkern-1.5mu}\mkern 1.5mu \), and suppose \( [Z] \in M \) is a smooth point. Then
 \[
 \mathrm{def} = \hom_{ {{ {\mathcal{O}}_{x} }{\hbox{-}}\operatorname{mod}} }(I_{Z}, {\mathcal{O}}_{Z}) = \hom_{Z}(I_{Z}/I_{Z}^2, {\mathcal{O}}_{Z}) = H^0(N_{Z/X})
 .\]
@@ -3400,11 +3320,11 @@ We thus have a diagram:
 
 In particular, \( T_\ell = {\mathcal{O}}(2) \), and the LES for \( 0 \to {\mathcal{O}}\to K \to T_\ell \) shows \( H^1(K) = 0 \). Looking at the horizontal SES \( 0 \to K \to {\mathcal{O}}_\ell(1)^6 \twoheadrightarrow N_{\ell/{\mathbb{P}}} \) yields the surjection claim. We have
 
-![](figures/a.png)
+![Diagram](figures/a.png)
 
 and taking the LES in cohomology yields
 
-![](figures/image_2020-04-09-12-55-01.png)\
+![Diagram](figures/image_2020-04-09-12-55-01.png)\
 
 Therefore \( H \) is smooth at \( \ell \) and
 \[
@@ -3429,7 +3349,7 @@ X_{0} \hookrightarrow X' \in F(A') \to F(A)
 .\]
 which restricts to \( X_{0} \hookrightarrow X \). Then in \( F(A) \), we have \( X_{0} \hookrightarrow X' \otimes_{A'} A \), and we obtain a commutative diagram where \( X' \otimes A \hookrightarrow X' \) is a closed immersion:
 
-![](figures/abcdefg.png)
+![???](figures/abcdefg.png){width="350px"}
 
 The restriction \( X' \to X \) means that there exists a diagram
 
@@ -3448,27 +3368,21 @@ X
 ```
 Note that this is not necessarily unique. We have
 
-![](figures/image_2020-04-09-13-06-40.png)\
+![Diagram?](figures/image_2020-04-09-13-06-40.png){width="350px"}
 
 This means that we can find embeddings such that
 
-```{=html}
-<!--\begin{tikzcd}-->
+```{=tex}
+\begin{tikzcd}
+X'' & \ar[l, "\exists", hook] X \ar[r, "\exists", hook] & X' \\
+& X_{0} \ar[ul, hook] \ar[u, hook] \ar[ur, hook]
+\end{tikzcd}
 ```
-```{=html}
-<!--X'' & \ar[l, "\exists", hook] X \ar[r, "\exists", hook] & X' \\-->
-```
-```{=html}
-<!--& X_{0} \ar[ul, hook] \ar[u, hook] \ar[ur, hook]-->
-```
-```{=html}
-<!--\end{tikzcd}-->
-```
-![](figures/image_2020-04-09-13-08-19.png)\
+![Diagram](figures/image_2020-04-09-13-08-19.png){width="350px"}
 
 And thus if we have
 
-![](figures/image_2020-04-09-13-08-42.png)\
+![Diagram](figures/image_2020-04-09-13-08-42.png){width="350px"}
 
 then \( X_{0} \hookrightarrow Z \) is **a** required lift (again not unique).
 
@@ -3478,19 +3392,19 @@ When is such a lift unique?
 
 Suppose \( X_{0} \hookrightarrow W \) is another lift, then it restricts to both \( X, X' \) and we can fill in the following diagrams:
 
-![](figures/image_2020-04-09-13-10-44.png)\
+![Diagram](figures/image_2020-04-09-13-10-44.png){width="350px"}
 
 Using the universal property of \( Z \), which is the coproduct of this diagram:
 
-![](figures/image_2020-04-09-13-11-13.png)\
+![Diagram](figures/image_2020-04-09-13-11-13.png){width="350px"}
 
 However, there may be no such way to fill in the following diagram:
 
-![](figures/image_2020-04-09-13-11-58.png)\
+![Diagram](figures/image_2020-04-09-13-11-58.png){width="350px"}
 
 But if there exists a map making this diagram commute:
 
-![](figures/image_2020-04-09-13-12-25.png)\
+![Diagram](figures/image_2020-04-09-13-12-25.png){width="350px"}
 
 Then there is a map \( Z\to W \) which is flat after tensoring with \( k \), which is thus an isomorphism.[^7]
 
@@ -3499,7 +3413,7 @@ Thus the lift is unique if
 
 -   \( X = X_{0} \), then the following diagrams commute by taking the identity and the embedding you have. Note that in particular, this implies H2.
 
-    ![](figures/image_2020-04-09-13-15-09.png)
+    ![Diagram](figures/image_2020-04-09-13-15-09.png){width="350px"}
 
 -   Generally, these diagrams can be completed (and thus the gluing maps are bijective) if the map
     \[
@@ -3510,11 +3424,11 @@ Thus the lift is unique if
 
 So in this situation, there is only *one* way to fill in this diagram up to isomorphism:
 
-![](figures/image_2020-04-09-13-18-59.png)
+![Diagram](figures/image_2020-04-09-13-18-59.png){width="350px"}
 
 If we had two ways of filling it in, we obtain bridging maps:
 
-![](figures/image_2020-04-09-13-20-07.png)
+![Diagram](figures/image_2020-04-09-13-20-07.png){width="350px"}
 
 ::: {.lemma title="?"}
 If \( H^0(X_{0}, T_{X_{0}}) = 0 \) (where the tangent bundle always makes sense as the dual of the sheaf of Kahler differentials) which we can identify as derivations \( D_{{\mathcal{O}}_{k}}({\mathcal{O}}_{X_{0}}, {\mathcal{O}}_{X_{0}}) \), then the gluing map is bijective.
@@ -3540,7 +3454,9 @@ If \( X_{/K} \) is either
 -   Projective, or
 -   Affine with isolated singularities,
 
-this is enough to imply H3. Thus by Schlessinger, under these conditions \( F \) has a miniversal family. Moreover, if \( H^0(T_{X_{0}}) = 0 \) then \( F \) is pro-representable.
+this is enough to imply H3. Thus by Schlessinger, under these conditions \( F \) has a miniversal family.
+
+Moreover, if \( H^0(T_{X_{0}}) = 0 \) then \( F \) is pro-representable.
 
 ::: {.example title="?"}
 If \( X_{0} \) is a smooth projective genus \( g\geq 2 \) curve, then
@@ -3571,17 +3487,48 @@ Consider \( X(f) \subset {\mathbb{A}}^n \), and for simplicity, \( (f=0) \subset
 What are the deformations over \( A \coloneqq k[\varepsilon] \)?
 :::
 
-This means we have a ring \( B' \) flat over \( k \) and tensors to an isomorphism, so tensoring \( k\to A\to k \) yields
+This means we have a ring \( B' \) flat over \( k \) and tensors to an isomorphism, so tensoring \( k\to A\to k \) yields the following:
 
-```{=html}
-<!--\begin{tikzcd}-->
+```{=tex}
+\begin{tikzcd}
+0 
+    \ar[r] 
+& B 
+    \ar[r] 
+& B'
+     \ar[r] 
+& B 
+    \ar[r] 
+& 0 
+\\
+0
+    \ar[r]
+& S 
+    \ar[u] 
+    \ar[r] 
+& S[\varepsilon] 
+    \ar[u, "\exists", twoheadrightarrow] 
+    \ar[r] 
+& S 
+    \ar[r] 
+    \ar[u] 
+& 0
+\\
+0 
+    \ar[r]
+& S \cong I 
+    \ar[u] 
+    \ar[r] 
+& I'= \left\langle{f'}\right\rangle
+    \ar[u]
+    \ar[r] 
+& I = \left\langle{f}\right\rangle 
+    \ar[u, "\cong"] 
+    \ar[r]
+& S
+\end{tikzcd}
 ```
-```{=html}
-<!--0 \ar[r] & B \ar[r] & B' \ar[r] & B \ar[r] 0 \\-->
-```
-`<!--& S \ar[u] \ar[r] & S[\eps] \ar[u, "\exists", surjective?] \ar[r] & S \ar[r] \ar[u] \\-->`{=html} `<!--& S \cong I \ar[u] \ar[r] & I'=(f') \ar[u]\ar[r] & I = (f) \ar[u] \cong S-->`{=html} `<!--\end{tikzcd}-->`{=html}
-
-Thus any such \( B' \) is the quotient of \( S[\varepsilon] \) by an ideal. We have \( f' = f + \varepsilon g \).
+Thus any such \( B' \) is the quotient of \( S[\varepsilon] \) by an ideal, and we have \( f' = f + \varepsilon g \).
 
 ::: {.question}
 When do two \( f' \)s give the same \( B' \)?
@@ -3592,18 +3539,14 @@ We have \( \varepsilon f' = \varepsilon f \), so \( \varepsilon f \in (f') \) an
 x &\mapsto x + \varepsilon a \\
 y &\mapsto y + cb
 \]
-for \( a, b\in S \).
-
-Under this map,
+for \( a, b\in S \). Under this map,
 \[
 f_0' 
 = f + \varepsilon g \mapsto & f(x + \varepsilon a, y + \varepsilon b) + \varepsilon g(x ,y) \\ \\
 &\Downarrow \quad\text{implies} \\ \\
 f(x, y) &= \varepsilon a {\frac{\partial }{\partial x}\,} f + \varepsilon b {\frac{\partial }{\partial y}\,} f + \varepsilon g(x ,y)
 ,\]
-so in fact only the class of \( g\in S/(f, {\partial}_{x} f, {\partial}_{y} f) \). This is the ideal of the singular locus, and will be Artinian (and thus finite-dimensional) if the singularities are isolated, which implies H3.
-
-We can in fact exhibit the miniversal family explicitly by taking \( g_{i} \in S \), yielding a basis of the above quotient. The hull will be given by setting \( R = {\mathbb{C}}[[t_{1}, \cdots, t_{m} ]] \) and taking the locus \( V(f + \sum t_{i} g_{i}) \subset {\mathbb{A}}_{R}^2 \).
+so in fact only the class of \( g\in S/(f, {\partial}_{x} f, {\partial}_{y} f) \). This is the ideal of the singular locus, and will be Artinian (and thus finite-dimensional) if the singularities are isolated, which implies H3. We can in fact exhibit the miniversal family explicitly by taking \( g_{i} \in S \), yielding a basis of the above quotient. The hull will be given by setting \( R = {\mathbb{C}}[[t_{1}, \cdots, t_{m} ]] \) and taking the locus \( V(f + \sum t_{i} g_{i}) \subset {\mathbb{A}}_{R}^2 \).
 
 ::: {.example title="simple"}
 For \( f = xy \), then the ideal is \( I = (xy, y, x) = (x, y) \) and \( C/I \) is 1-dimensional, so the miniversal family is given by \( V(xy + t) \subset {\mathbb{C}}[[t_{1}]][x, y] \). The greater generality is needed because there are deformation functors with a hull but no universal families.
@@ -3764,7 +3707,7 @@ Take \( S = k[x, y] \) and \( B = S/(f) \), then deformations of \( \operatornam
 ```
 > [Link to diagram.](https://q.uiver.app/?q=WzAsMTcsWzAsMCwiMCJdLFsxLDAsIkIiXSxbMiwwLCJCJyJdLFszLDAsIkIiXSxbNCwwLCIwIl0sWzAsMSwiMCJdLFsxLDEsIlMiXSxbMiwxLCJTW1xcZXBzXSJdLFs0LDEsIjAiXSxbNCwyLCIwIl0sWzAsMiwiMCJdLFszLDEsIlMiXSxbMSwyLCJJIl0sWzMsMiwiSSJdLFsyLDIsIkknIl0sWzIsMywiXFxnZW5ze2YnfSJdLFszLDMsIlxcZ2Vuc3tmfSJdLFsxMCwxMl0sWzEyLDE0XSxbMTQsMTNdLFsxMyw5XSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw0XSxbNSw2XSxbNiw3XSxbNywxMV0sWzExLDhdLFsxMiw2XSxbNiwxLCJcXHBpIl0sWzE0LDddLFs3LDIsIlxccGknIl0sWzEzLDExXSxbMTEsMywiXFxwaSJdLFsxNSwxNCwiXFxzdWJzZXRlcSIsMSx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTYsMTMsIlxcc3Vic2V0ZXEiLDEseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
 
-![](figures/image_2020-04-14-12-55-58.png)
+![Diagram](figures/image_2020-04-14-12-55-58.png){width="350px"}
 
 We want to understand \( F(k[\varepsilon]) \). We know \( f' = f + \varepsilon g \) for some \( g\in S \).
 
@@ -3809,7 +3752,7 @@ Note that none of these are pro-representable.
 
 Given \( X \) and \( A \), we obtain a miniversal family over the formal spectrum \( \mathrm{Spf}(R) = (R, \xi) \) and a unique map:
 
-![](figures/image_2020-04-14-13-10-21.png)
+![Diagram](figures/image_2020-04-14-13-10-21.png){width="350px"}
 
 We can take two deformations over \( A = k[\xi]/ S^n \):
 
@@ -3828,26 +3771,36 @@ since
 .\]
 But we have two different classifying maps, which do commute up to an automorphism of \( A \), but are not equal. Since they pullback to different elements (?), \( F \) can not be pro-representable.
 
-![](figures/image_2020-04-14-13-20-05.png)
+![Diagram](figures/image_2020-04-14-13-20-05.png){width="350px"}
 
 So reparameterization in \( A \) yield different objects in \( F(A) \). In other words, \( {\mathcal{X}}\to \mathrm{Spf}(R) \) has automorphisms inducing reparameterizations of \( R \). This indicates why we need maps restricting to the identity.
 
 ## The Cotangent Complex
 
-For \( X \xrightarrow{f} Y \), we have \( L_{X/Y} \in D {\mathrm{QCoh}}(X) \), the derived category of quasicoherent sheaves on \( X \). This answers the extension question: For any square-zero thickening \( Y \hookrightarrow Y' \) (a closed immersion) with ideal \( I \) yields an \( {\mathcal{O}}_{Y}{\hbox{-}} \)module.
+For \( X \xrightarrow{f} Y \), we have \( L_{X/Y} \in D {\mathrm{QCoh}}(X) \), the derived category of quasicoherent sheaves on \( X \). This answers the extension question:
+
+::: {.answer}
+For any square-zero thickening \( Y \hookrightarrow Y' \) (a closed immersion) with ideal \( I \) yields an \( {\mathcal{O}}_{Y}{\hbox{-}} \)module.
 
 1.  An extension exists iff \( 0 = \mathrm{obs} \in \operatorname{Ext}^2(L_{X/Y}, f^* I) \)
 2.  If so, the set of ways to do so is a torsor over this ext group.
 3.  The automorphisms of the completion are given by \( \hom(L_{X/Y}, f^* I) \).
+:::
 
-Special cases: \( X \to Y \) smooth yields \( L_{X/Y} = \Omega_{X/Y}[0] \) concentrated in degree zero. Example: \( Y = \operatorname{Spec}k \) and \( Y' = \operatorname{Spec}k[\varepsilon] \) yields
+::: {.remark}
+Some special cases: \( X \to Y \) smooth yields \( L_{X/Y} = \Omega_{X/Y}[0] \) concentrated in degree zero.
+:::
+
+::: {.example title="?"}
+\( Y = \operatorname{Spec}k \) and \( Y' = \operatorname{Spec}k[\varepsilon] \) yields
 \[
 \mathrm{obs} \in \operatorname{Ext}_{x}^2(\Omega_{X/Y}, {\mathcal{O}}_{x})= H^2(T_{X_{/k}})
 .\]
 
 For \( X\hookrightarrow Y \) is a regular embedding (closed immersion and locally a regular sequence) \( L_{X/Y} = \qty{I/I^2}[1] \), the conormal bundle.
 
-![](figures/image_2020-04-14-13-32-13.png)\
+![Diagram](figures/image_2020-04-14-13-32-13.png){width="350px"}
+:::
 
 ::: {.example title="?"}
 For \( Y \) smooth, \( X \hookrightarrow Y \) a regular embedding, \( L_{X_{/k}} = \Omega_{X_{/k}} \) with \( \mathrm{obs}/\mathrm{def} = \operatorname{Ext}^{2/1}(\Omega_{x}, {\mathcal{O}}) \) and the infinitesimal automorphisms are the homs.
@@ -3917,7 +3870,7 @@ We have the following obstruction theories:
     .\]
     we consider the graph \( \Gamma(f_{0}) \subset X_{0} \times Y_{0} \).
 
-![](figures/image_2020-04-14-13-43-40.png)
+![Diagram](figures/image_2020-04-14-13-43-40.png){width="350px"}
 
 Since all of these structures are special cases of the cotangent complex, they place nicely together in the following sense: Given \( X \hookrightarrow_{i} Y \) we have
 \[
@@ -3931,7 +3884,7 @@ Yielding a LES
 &\to H^2(T_{X}) 
 .\]
 
-![](figures/image_2020-04-14-13-47-05.png)
+![Diagram](figures/image_2020-04-14-13-47-05.png){width="350px"}
 :::
 
 ::: {.exercise title="?"}
@@ -3942,7 +3895,9 @@ Consider \( X \subset {\mathbb{P}}^3 \) a smooth quartic, and show that \( \math
 
 # Characterization of Smoothness (Thursday April 16th)
 
-Recap from last time: the cotangent complex answers an extension problem. Given \( X \xrightarrow{f} Y \) and \( Y \hookrightarrow Y' \) a square zero thickening. When can the pullback diagram be filled in?
+> Recap from last time: the cotangent complex answers an extension problem.
+
+Given \( X \xrightarrow{f} Y \) and \( Y \hookrightarrow Y' \) a square zero thickening. When can the pullback diagram be filled in?
 
 ```{=tex}
 \begin{tikzcd}
@@ -4313,9 +4268,9 @@ defines a twisted form \( X \) of \( G \). How do you descend the torsor structu
 
 ### Motivation
 
-Let \( G_{/k} \) be a smooth connected commutative algebraic group where \( \char k \) does not divide \( n \), so the map \( [n]: G \to G \) is an isogeny. Then
+Let \( G_{/k} \) be a smooth connected commutative algebraic group where \( \operatorname{ch}k \) does not divide \( n \), so the map \( [n]: G \to G \) is an isogeny. Then
 \[
-0 \to G[n](k^{s} ) \to G(k^{s} ) \xrightarrow{[n]} G(k^{s} ) \to 0
+0 \to G[n] (k^{s} ) \to G(k^{s} ) \xrightarrow{[n]} G(k^{s} ) \to 0
 \]
 is a SES of \( g = \operatorname{Aut}(k^{s}_{/k}){\hbox{-}} \)modules.
 
@@ -4352,6 +4307,8 @@ where \( {\mathbb{Z}} \) is equipped with a trivial \( g{\hbox{-}} \)action. We 
 \[
 H^i(g, A) = \operatorname{Ext}^i_{{\mathbb{Z}}[g]}({\mathbb{Z}}, A)
 .\]
+
+> The end!
 
 [^1]: \( F\leq G \) is a subfunctor iff \( F(s) \hookrightarrow G(s) \).
 

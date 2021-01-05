@@ -590,9 +590,9 @@ xmax=18,
 \centering
 \begin{tabular}{l|lll}
 \hline \\
-$F$   & \checkmark & x & x \\
-$F'$  & \checkmark & x &  x \\
-$F''$ & \checkmark & \checkmark & \checkmark
+$F$   & $\checkmark$ & x & x \\
+$F'$  & $\checkmark$ & x &  x \\
+$F''$ & $\checkmark$ & $\checkmark$ & $\checkmark$
 \end{tabular}
 \end{table}
 
@@ -1843,7 +1843,7 @@ I_{Z'} = \left\{
 f + \eps g \,
 \middle\vert
 \,
-\begin{array}{l}
+\begin{array}{ll}
 f,g &\in I_Z, \\
 \phi(f) &= g\mod I_Z, \\
 \phi(f) &\in \OO_Z, \\
@@ -2266,8 +2266,6 @@ Then
 with a bunch of symmetric polynomials adjoined.
 :::
 
-
-
 :::{.example title="?"}
 Take $\AA^2$ and consider $\hilb_{\PP^2}^3$.
 If $I$ is a monomial ideal in $\AA^2$, there is a nice picture.
@@ -2283,14 +2281,14 @@ If $I$ is supported at 0, then we can identify the ideal with the generators it 
 :::{.example title="?"}
 $I = (x^2, xy, y^2)$:
 
-![Image](figures/2020-02-06-12:48.png)
+![Image](figures/2020-02-06-12:48.png){width=350px}
 :::
 
 
 :::{.example title="?"}
 $I = (x^6, x^2y^2, xy^4, y^5)$:
 
-![Image](figures/2020-02-06-12:49.png)
+![Image](figures/2020-02-06-12:49.png){width=350px}
 :::
 
 
@@ -2299,7 +2297,7 @@ $I = (x^6, x^2y^2, xy^4, y^5)$:
 $I = (x^2, y)$.
 Let $e=x^2, f = y$.
 
-![Image](figures/2020-02-06-12:54.png)
+![Image](figures/2020-02-06-12:54.png){width=350px}
 
 By comparing rows to columns, we obtain a relation $ye = x^2 f$.
 Write $\OO = \theset{1, x}$, then note that this relation is trivial in $\OO$ since $y=x^2=0$.
@@ -2318,14 +2316,14 @@ This is bijective on points, and a tangent space computation shows it's an isomo
 :::{.example title="?"}
 Consider the nodal cubic in $\PP^2$:
 
-![](figures/2020-02-06-13:01.png)
+![Nodal cubic](figures/2020-02-06-13:01.png){width=350px}
 
 > The nodal cubic $zy^2 = x^2(x+z)$.
 
 Consider the open subscheme $V \subset \hilb_{C_{/k}}^2$ of points $z \subset U$ for $U \subset C$ open.
 We can normalize:
 
-![](figures/2020-02-06-13:03.png)
+![Normalized cubic](figures/2020-02-06-13:03.png){width=350px}
 
 This yields a map fro $\PP^1 \setminus\text{2 points}$.
 This gives us a stratification, i.e. a locally closed embedding
@@ -2335,13 +2333,13 @@ This gives us a stratification, i.e. a locally closed embedding
 
 The first locus is given by the complement of two lines:
 
-![](figures/2020-02-06-13:08.png)
+![Locus 1](figures/2020-02-06-13:08.png){width=350px}
 
 The third locus is given by arrows at $p$ pointing in any direction, which gives a copy of $\PP^1$.
 The second is $\PP^1$ minus two points.
 Above each point is a nodal cubic with two marked points, and moving the base point towards a line correspond to moving one of the points toward the node:
 
-![](figures/2020-02-06-13:11.png)
+![Moving base toward the point](figures/2020-02-06-13:11.png){width=350px}
 
 More precisely, we're considering the cover $\PP^1 \setminus\text{2 points} \to C$ and thinking about ways in which two points and approach the missing points.
 These give specific tangent directions at the node on the cubic, depending on how this approach happens -- either both points approach missing point #1, both approach missing point #2, or each approach a separate missing point.
@@ -2756,7 +2754,7 @@ So we can deform curves a bit, but not construct an algebraic family that escape
 
 
 
-# Tuesday February 25th
+# Obstruction and Deformation (Tuesday February 25th)
 
 Let $k$ be a field, $X_{_{/k}}$ projective, then the $k\dash$points $\hilb_{X_{_{/k}}}^P(k)$ corresponds to closed subschemes $Z\subset X$ with hilbert polynomial $P_z = P$.
 Given a $P$, we want to understand the local structure of $\hilb_{X_{_{/k}}}^p$, i.e. diagrams of the form
@@ -2947,10 +2945,9 @@ It is difficult to understand even $F_{X, x}(A)$ directly, but it's easier to un
 
   
 :::{.definition title="Small Extensions"}
-: A *small extension* is a SES of Artinian $k\dash$algebras of the form
+A *small extension* is a SES of Artinian $k\dash$algebras of the form
 \[
 0 \to J \to A' \to A \to 0
-
 .\]
 such that $J$ is annihilated by the maximal ideal fo $A'$.
 :::
@@ -2995,7 +2992,6 @@ In most cases, extending deformations over small extensions is easy.
 
 ## First Example of Deformation and Obstruction Spaces
 
-
 Suppose $k=\bar k$ and let $X_{_{/k}}$ be connected.
 We have a picard functor
 \[
@@ -3021,12 +3017,10 @@ There is a natural identification of $\pic(X_A) = H^1(X_A, \OO_{X_A}^*)$.
 If
 \[
 0\to J \to A' \to A \to 0
-
 .\]
 is a thickening of Artinian $k\dash$algebras, there is a restriction map of invertible functions
 \[
 \OO_{X_A}^* \to \OO_{X_A'}^* \to 0
-
 .\]
 which is surjective since the map on structure sheaves is surjective and its a nilpotent extension.
 The kernel is then just $\OO_{X_{A'}} \tensor J$.
@@ -3219,7 +3213,6 @@ For (3), just play with $A = k[\eps]$, which yields $0 \to k \mapsvia{\eps} k[\e
 
 i.e., there is a canonical trivial extension $L_0[\eps]$.
 
-
 :::{.example title="?"}
 Let $X \supset Z_0 \in \hilb_{X_{_{/k}}}(k)$, we computed
 \[
@@ -3252,7 +3245,6 @@ A \arrow[dd]            & 0 \arrow[r] & I_Z \arrow[d] \arrow[rr]      &  & \OO_{
 
 The space of extension should be a torsor under $\hom_{\OO_X}(I_{Z_0}, \OO_{Z_0})$, which we want to think of as $\hom_{\OO_X}(I_{Z_0}, \OO_{Z_0})$.
 Picking a $\phi$ in this hom space, we want to take an extension $I_{Z'} \mapsvia{\phi} I_{Z''}$.
-
 :::
 
 > We'll cover how to make this extension next time.
@@ -3907,7 +3899,7 @@ Why are H4 and H4' connected?
 :::{.answer}
 Let $A' \to A$ be small, then
 \[
-A' \cross_A A' &= A' \cross_k k[\eps]
+A' \cross_A A' &= A' \cross_k k[\eps] \\
 (x, y) &\mapsto ??
 .\]
 
@@ -4065,96 +4057,111 @@ This concludes showing miniversality.
 
 To finish, we want to show that H4 implies that the map on sections $h_R \mapsvia{\xi} F$ is bijective.
 
-<!--\begin{tikzcd}-->
-<!--& h_R -->
-  <!--\ar[d, "\xi"]-->
-<!--& h_A -->
-  <!--\ar[rr, bend left, "\eta"] -->
-<!--\\-->
-<!--? -->
-  <!--\ar[rru, "u"] -->
-<!--& h_{A'} -->
-  <!--\ar[r, "\eta'"] -->
-  <!--\ar[ru, "\exists ! u'"] -->
-<!--& F-->
-<!--\end{tikzcd}-->
-
+\begin{tikzcd}
+&
+&
+& h_R 
+  \ar[d, "\xi"]
+\\
+& h_A 
+  \ar[rr, bend right, "\eta"] 
+  \ar[rru, bend left, "u"] 
+& h_{A'} 
+  \ar[r, "\eta'"] 
+  \ar[ru, "\exists ! u'"] 
+& F
+\end{tikzcd}
 
 where the map $\xi$ is "formal etale", which will necessarily imply that it's a bijection over all artinian rings.
 So we just need to show formal étaleness.
 We have a diagram
 
-<!--\begin{tikzcd}-->
-<!--t_R \selfmap u'\in h_R(A') \ar[r] \ar[d] & u\in h_R(A) \ar[d] \\-->
-<!--t_F \selfmap \eta' \in h_R(A') \ar[r] & \eta \in h_R(A)-->
-<!--\end{tikzcd}-->
+\begin{tikzcd}
+t_R \selfmap u'\in h_R(A') \ar[r] \ar[d] & u\in h_R(A) \ar[d] \\
+t_F \selfmap \eta' \in h_R(A') \ar[r] & \eta \in h_R(A)
+\end{tikzcd}
 
-<!--where $u'$ exists by smoothness.-->
+where $u'$ exists by smoothness.
 
-<!--Assume that are two $u', u''$, then $u' = u'' + \theta$ and $\im(u') = \im(u'') + \theta \implies \theta = 0$ and thus $u' = u''$.-->
+Assume that are two $u', u''$, then $u' = u'' + \theta$ and $\im(u') = \im(u'') + \theta \implies \theta = 0$ and thus $u' = u''$.
 
-<!--$\qed$-->
+## Revisiting Goals
+
+We originally had two goals:
+
+1. Given a representable moduli functor (such as the Hilbert functor), we wanted to understand the local structure by analyzing the deformation functor at a given point.
+
+2. We want to use representability of the deformation functors to get global representability of the original functor.
 
 
-<!--We originally had two goals:-->
+:::{.question}
+What can we now deduce about the local structure of functors using their deformation theory?
+:::
 
-<!--1. Given a representable moduli functor (such as the Hilbert functor), we wanted to understand the local structure by analyzing the deformation functor at a given point.-->
-<!--2. We want to use representability of the deformation functors to get global representability of the original functor.-->
 
-<!--What can we now deduce about the local structure of functors using their deformation theory?-->
+:::{.fact title="1"}
+Any two hulls $h_R \to F$ are isomorphic but not canonically.
+We can lift maps at every finite level and induct up, which is an isomorphism on tangent spaces and thus an isomorphism.
+The sketch: use smoothness to get the map, and the tangent space condition will imply the full isomorphism.
+:::
 
-<!--Observation:-->
-<!--Any two hulls $h_R \to F$ are isomorphic but not canonically.-->
-<!--We can lift maps at every finite level and induct up, which is an isomorphism on tangent spaces and thus an isomorphism.-->
-<!--The sketch: use smoothness to get the map, and the tangent space condition will imply the full isomorphism.-->
 
-<!--Observation:-->
-<!--Suppose that $F$ has an obstruction theory (not necessarily strong).-->
-<!--This implies there exists a hull $h_R \mapsvia \xi F$.-->
-<!--The obstruction theory of $F$ *gives* an obstruction theory of $h_R$:-->
-<!--given $A' \to A$ a small thickening, we need a functorial assignment-->
-<!--\[-->
-<!--t_R = \mathrm{def} \selfmap h_R(A') \to h_R(A) \mapsvia{\mathrm{obs}} \mathrm{obs} \\-->
-<!--\mathrm{def} \selfmap F(A') \to F(A) \mapsvia{\mathrm{obs}} \mathrm{obs}-->
-<!--\]-->
-<!--where there are vertical maps with equality on the edges.-->
 
-<!--![](figures/image_2020-04-07-13-35-00.png)\-->
+:::{.fact title="3"}
+Suppose that $F$ has an obstruction theory (not necessarily strong).
+This implies there exists a hull $h_R \mapsvia \xi F$.
+The obstruction theory of $F$ *gives* an obstruction theory of $h_R$:
+given $A' \to A$ a small thickening, we need a functorial assignment
+\[
+t_R = \mathrm{def} \selfmap h_R(A') \to h_R(A) \mapsvia{\mathrm{obs}} \mathrm{obs} \\
+\mathrm{def} \selfmap F(A') \to F(A) \mapsvia{\mathrm{obs}} \mathrm{obs}
+\]
+where there are vertical maps with equality on the edges.
 
-<!--By formal smoothness, $\eta'$ lifts to some $\xi'$, but using the transitivity of the action of the tangent space can fix this.-->
+![Vertical maps](figures/image_2020-04-07-13-35-00.png)
 
-<!--We already had an obstruction theory of $R$, since we can always find a quotient-->
-<!--\[-->
-<!--I \to S = k[[t_R\dual]] \surjects R-->
-<!--\]-->
-<!--and $h_K$ has an obstruction theory-->
+By formal smoothness, $\eta'$ lifts to some $\xi'$, but using the transitivity of the action of the tangent space can fix this.
+We already had an obstruction theory of $R$, since we can always find a quotient
+\[
+I \to S = k[[t_R\dual]] \surjects R
+\]
+and $h_K$ has an obstruction theory
 
-<!--- $\mathrm{def} = t_R = \qty{\mfm_R/\mfm_R^2}\dual$-->
-<!--- $\mathrm{obs} = \qty{I/\mfm_S I}\dual$-->
+- $\mathrm{def} = t_R = \qty{\mfm_R/\mfm_R^2}\dual$
+- $\mathrm{obs} = \qty{I/\mfm_S I}\dual$
+:::
 
-<!--Fact (proof can be found in FGA):-->
-<!--Any other obstruction theory $(\mathrm{def}', \mathrm{obs}')$ of $h_R$ admits an injection $\qty{I/\mfm_S I}\dual \injects \mathrm{obs}'$.-->
 
-<!--Combining these three facts, we conclude the following:-->
-<!--If $F$ has an obstruction theory $\mathrm{def}(F), \mathrm{obs}(F)$, then $F$ has a miniversal family $h_R \mapsvia \xi F$ with $R = S/ I$ a quotient of the formal power series ring over some ideal, where $S = k[[t_F\dual]]$.-->
-<!--It follows that $\dim(I/\mfm_S I) \leq \dim \mathrm{obs}(F)$, and thus the minimal number of generators of $I$ (equal to the LHS by Nakayama) is bounded by the RHS.-->
-<!--Thus-->
-<!--\[-->
-<!--\dim_k \mathrm{def}(F) \geq \dim R \geq \dim \mathrm{def}(F) - \dim \mathrm{obs}(F)-->
-<!--.\]-->
+:::{.fact title="proof can be found in FGA"}
+Any other obstruction theory $(\mathrm{def}', \mathrm{obs}')$ of $h_R$ admits an injection $\qty{I/\mfm_S I}\dual \injects \mathrm{obs}'$.
+:::
 
-<!--In particular, if $\dim(R) = \dim \mathrm{def}(F) - \dim \mathrm{obs}(F)$, then $R$ is a complete intersection.-->
-<!--If $\dim(R) = \dim \mathrm{def}(R)$, the ideal doesn't have any generators, and $R \cong S$.-->
-<!--In particular, if $\mathrm{obs}(F) = 0$, then $R \cong S$ is isomorphic to this power series ring.-->
+Combining these three facts, we conclude the following:
+If $F$ has an obstruction theory $\mathrm{def}(F), \mathrm{obs}(F)$, then $F$ has a miniversal family $h_R \mapsvia \xi F$ with $R = S/ I$ a quotient of the formal power series ring over some ideal, where $S = k[[t_F\dual]]$.
+It follows that $\dim(I/\mfm_S I) \leq \dim \mathrm{obs}(F)$, and thus the minimal number of generators of $I$ (equal to the LHS by Nakayama) is bounded by the RHS.
+Thus
+\[
+\dim_k \mathrm{def}(F) \geq \dim R \geq \dim \mathrm{def}(F) - \dim \mathrm{obs}(F)
+.\]
 
-<!--Finally, if $F$ is the deformation functor for a global representable functor, then $R = \hat{\OO}_{\mfm, p}$ is the completion of this local ring and the same things hold for this completion.-->
-<!--Thus regularity can be checked on the completion.-->
+In particular, if $\dim(R) = \dim \mathrm{def}(F) - \dim \mathrm{obs}(F)$, then $R$ is a complete intersection.
+If $\dim(R) = \dim \mathrm{def}(R)$, the ideal doesn't have any generators, and $R \cong S$.
+In particular, if $\mathrm{obs}(F) = 0$, then $R \cong S$ is isomorphic to this power series ring.
 
-<!--So if you have a representable functor with an obstruction theory (e.g. the Hilbert Scheme) with zero obstruction, then we have smoothness at that point.-->
-<!--If we know something about the dimension at a point relative to the obstruction, we can deduce information about being a local intersection.-->
-<!--So the deformation tells you the dimension of a minimal smooth embedding, and the obstruction is the maximal number of equations needed to cut it out locally.-->
+Finally, if $F$ is the deformation functor for a global representable functor, then $R = \hat{\OO}_{\mfm, p}$ is the completion of this local ring and the same things hold for this completion.
+Thus regularity can be checked on the completion.
+So if you have a representable functor with an obstruction theory (e.g. the Hilbert Scheme) with zero obstruction, then we have smoothness at that point.
+If we know something about the dimension at a point relative to the obstruction, we can deduce information about being a local intersection.
+So the deformation tells you the dimension of a minimal smooth embedding, and the obstruction is the maximal number of equations needed to cut it out locally.
 
-<!--> Content: Hartshorne's Deformation Theory, section in FGA is in less generality but has many good examples. See "Fundamental Algebraic Geometry". See also representability of the Picard scheme.-->
+
+:::{.remark}
+The content here: see Hartshorne's *Deformation Theory*.
+The section in FGA is in less generality but has many good examples. 
+See "Fundamental Algebraic Geometry". 
+See also representability of the Picard scheme.
+:::
+
 
 # Thursday April 9th
 
@@ -4168,19 +4175,15 @@ In particular, if $\mathrm{obs}(F) = 0$, then $R \cong k[[\mathrm{def}(F)\dual]]
 
 :::{.example title="?"}
 Let $M = \hilb_{\PP^n_{/k}}^{dt + (1-g)}$ where $k=\bar k$, and suppose $[Z] \in M$ is a smooth point.
-
 Then
 \[
 \mathrm{def} = \hom_{ \mods{ \OO_{x} } }(I_{Z}, \OO_{Z}) = \hom_{Z}(I_{Z}/I_{Z}^2, \OO_{Z}) = H^0(N_{Z/X})
 .\]
 the normal bundle $N_{Z/X} = (I/I^2)\dual$ of the regular embedding, and $\mathrm{obs} = H^1(N_{Z/X})$.
 
-
 :::{.claim}
 If $H^1(\OO_{Z}(1)) = 0$ (e.g. if $d > 2g-2)$ then $M$ is smooth.
 :::
-
-
 
 :::{.proof title="of claim"}
 The tangent bundle of $\PP^n$ sits in the Euler sequence
@@ -4224,7 +4227,6 @@ We can compute the dimension using Riemann-Roch:
 This is one of the key outputs of obstruction theory: being able to compute these dimensions.
 :::
 
-
 :::{.example title="?"}
 Let $X \subset \PP^5$ be a smooth cubic hypersurface and let $H = \hilb_{X_{/k}}^{\text{lines} = t+1} \subset \hilb_{\PP^5/k}^{t+1} = \Gr(1, \PP^5)$, the usual Grassmannian.
 
@@ -4232,7 +4234,6 @@ Let $X \subset \PP^5$ be a smooth cubic hypersurface and let $H = \hilb_{X_{/k}}
 :::{.claim}
 Let $[\ell] \in H$, then the claim is that $H$ is smooth at $[\ell]$ of dimension 4.
 :::
-
 
 :::{.proof title="of claim"}
 We have
@@ -4266,11 +4267,11 @@ In particular, $T_\ell = \OO(2)$, and the LES for $0 \to \OO \to K \to T_\ell$ s
 Looking at the horizontal SES $0 \to K \to \OO_\ell(1)^6 \surjects N_{\ell/\PP}$ yields the surjection claim.
 We have
 
-![](figures/a.png)
+![Diagram](figures/a.png)
 
 and taking the LES in cohomology yields
 
-![](figures/image_2020-04-09-12-55-01.png)\
+![Diagram](figures/image_2020-04-09-12-55-01.png)\
 
 Therefore $H$ is smooth at $\ell$ and
 \[
@@ -4301,7 +4302,7 @@ X_{0} \injects X' \in F(A') \to F(A)
 which restricts to $X_{0} \injects X$.
 Then in $F(A)$, we have $X_{0} \injects X' \tensor_{A'} A$, and we obtain a commutative diagram where $X' \tensor A \injects X'$ is a closed immersion:
 
-![](figures/abcdefg.png)
+![???](figures/abcdefg.png){width=350px}
 
 The restriction $X' \to X$ means that there exists a diagram
 
@@ -4321,21 +4322,20 @@ X
 Note that this is not necessarily unique.
 We have
 
-![](figures/image_2020-04-09-13-06-40.png)\
+![Diagram?](figures/image_2020-04-09-13-06-40.png){width=350px}
 
 This means that we can find embeddings such that
 
-<!--\begin{tikzcd}-->
-<!--X'' & \ar[l, "\exists", hook] X \ar[r, "\exists", hook] & X' \\-->
-<!--& X_{0} \ar[ul, hook] \ar[u, hook] \ar[ur, hook]-->
-<!--\end{tikzcd}-->
+\begin{tikzcd}
+X'' & \ar[l, "\exists", hook] X \ar[r, "\exists", hook] & X' \\
+& X_{0} \ar[ul, hook] \ar[u, hook] \ar[ur, hook]
+\end{tikzcd}
 
-
-![](figures/image_2020-04-09-13-08-19.png)\
+![Diagram](figures/image_2020-04-09-13-08-19.png){width=350px}
 
 And thus if we have
 
-![](figures/image_2020-04-09-13-08-42.png)\
+![Diagram](figures/image_2020-04-09-13-08-42.png){width=350px}
 
 then $X_{0} \injects Z$ is **a** required lift (again not unique).
 
@@ -4345,19 +4345,19 @@ When is such a lift unique?
 
 Suppose $X_{0} \injects W$ is another lift, then it restricts to both $X, X'$ and we can fill in the following diagrams:
 
-![](figures/image_2020-04-09-13-10-44.png)\
+![Diagram](figures/image_2020-04-09-13-10-44.png){width=350px}
 
 Using the universal property of $Z$, which is the coproduct of this diagram:
 
-![](figures/image_2020-04-09-13-11-13.png)\
+![Diagram](figures/image_2020-04-09-13-11-13.png){width=350px}
 
 However, there may be no such way to fill in the following diagram:
 
-![](figures/image_2020-04-09-13-11-58.png)\
+![Diagram](figures/image_2020-04-09-13-11-58.png){width=350px}
 
 But if there exists a map making this diagram commute:
 
-![](figures/image_2020-04-09-13-12-25.png)\
+![Diagram](figures/image_2020-04-09-13-12-25.png){width=350px}
 
 Then there is a map $Z\to W$ which is flat after tensoring with $k$, which is thus an isomorphism.[^nakayama_rmk]
 
@@ -4368,7 +4368,7 @@ Thus the lift is unique if
 - $X = X_{0}$, then the following diagrams commute by taking the identity and the embedding you have.
   Note that in particular, this implies H2.
 
-  ![](figures/image_2020-04-09-13-15-09.png)
+  ![Diagram](figures/image_2020-04-09-13-15-09.png){width=350px}
 
 - Generally, these diagrams can be completed (and thus the gluing maps are bijective) if the map
 \[
@@ -4379,11 +4379,11 @@ of automorphisms of $X'$ commuting with $X_{0} \injects X$ is surjective.
 
 So in this situation, there is only *one* way to fill in this diagram up to isomorphism:
 
-![](figures/image_2020-04-09-13-18-59.png)
+![Diagram](figures/image_2020-04-09-13-18-59.png){width=350px}
 
 If we had two ways of filling it in, we obtain bridging maps:
 
-![](figures/image_2020-04-09-13-20-07.png)
+![Diagram](figures/image_2020-04-09-13-20-07.png){width=350px}
 
 
 :::{.lemma title="?"}
@@ -4419,8 +4419,8 @@ If $X_{/K}$ is either
 
 this is enough to imply H3.
 Thus by Schlessinger, under these conditions $F$ has a miniversal family.
-Moreover, if $H^0(T_{X_{0}}) = 0$ then $F$ is pro-representable.
 
+Moreover, if $H^0(T_{X_{0}}) = 0$ then $F$ is pro-representable.
 
 :::{.example title="?"}
 If $X_{0}$ is a smooth projective genus $g\geq 2$ curve, then
@@ -4433,16 +4433,12 @@ We can conclude
 \[
 \dim H^1(T_{X_{0}}) = -\chi(T_{X_{0}}) =  -\deg T_{X_{0}} + g-1 =  3(g-1)
 .\]
-
 :::
-
-
 
 :::{.remark}
 Note that the global deformation functor is not representable by a scheme, and instead requires a stack.
 However, the same fact shows smoothness in that setting.
 :::
-
 
 ## Hypersurface Singularities
 
@@ -4456,18 +4452,47 @@ Consider $X(f) \subset \AA^n$, and for simplicity, $(f=0) \subset \AA^2$, and le
 What are the deformations over $A \da k[\eps]$?
 :::
 
-This means we have a ring $B'$ flat over $k$ and tensors to an isomorphism, so tensoring $k\to A\to k$ yields
+This means we have a ring $B'$ flat over $k$ and tensors to an isomorphism, so tensoring $k\to A\to k$ yields the following:
 
+\begin{tikzcd}
+0 
+	\ar[r] 
+& B 
+	\ar[r] 
+& B'
+	 \ar[r] 
+& B 
+	\ar[r] 
+& 0 
+\\
+0
+	\ar[r]
+& S 
+	\ar[u] 
+	\ar[r] 
+& S[\eps] 
+	\ar[u, "\exists", twoheadrightarrow] 
+	\ar[r] 
+& S 
+	\ar[r] 
+	\ar[u] 
+& 0
+\\
+0 
+	\ar[r]
+& S \cong I 
+	\ar[u] 
+	\ar[r] 
+& I'= \gens{f'}
+	\ar[u]
+	\ar[r] 
+& I = \gens{f} 
+	\ar[u, "\cong"] 
+	\ar[r]
+& S
+\end{tikzcd}
 
-<!--\begin{tikzcd}-->
-<!--0 \ar[r] & B \ar[r] & B' \ar[r] & B \ar[r] 0 \\-->
-  <!--& S \ar[u] \ar[r] & S[\eps] \ar[u, "\exists", surjective?] \ar[r] & S \ar[r] \ar[u] \\-->
- <!--& S \cong I \ar[u] \ar[r] & I'=(f') \ar[u]\ar[r] & I = (f) \ar[u] \cong S-->
-<!--\end{tikzcd}-->
-
-
-Thus any such $B'$ is the quotient of $S[\eps]$ by an ideal.
-We have $f' = f + \eps g$.
+Thus any such $B'$ is the quotient of $S[\eps]$ by an ideal, and we have $f' = f + \eps g$.
 
 :::{.question}
 When do two $f'$s give the same $B'$?
@@ -4481,7 +4506,6 @@ x &\mapsto x + \eps a \\
 y &\mapsto y + cb
 \]
 for $a, b\in S$.
-
 Under this map,
 \[
 f_0' 
@@ -4491,10 +4515,8 @@ f(x, y) &= \eps a \dd{}{x} f + \eps b \dd{}{y} f + \eps g(x ,y)
 ,\]
 so in fact only the class of $g\in S/(f, \del_{x} f, \del_{y} f)$.
 This is the ideal of the singular locus, and will be Artinian (and thus finite-dimensional) if the singularities are isolated, which implies H3.
-
 We can in fact exhibit the miniversal family explicitly by taking $g_{i} \in S$, yielding a basis of the above quotient.
 The hull will be given by setting $R = \CC[[t_{1}, \cdots, t_{m} ]]$ and taking the locus $V(f + \sum t_{i} g_{i}) \subset \AA_{R}^2$.
-
 
 :::{.example title="simple"}
 For $f = xy$, then the ideal is $I = (xy, y, x) = (x, y)$ and $C/I$ is 1-dimensional, so the miniversal family is given by $V(xy + t) \subset \CC[[t_{1}]][x, y]$.
@@ -4675,7 +4697,7 @@ to obtain
 
 > [Link to diagram.](https://q.uiver.app/?q=WzAsMTcsWzAsMCwiMCJdLFsxLDAsIkIiXSxbMiwwLCJCJyJdLFszLDAsIkIiXSxbNCwwLCIwIl0sWzAsMSwiMCJdLFsxLDEsIlMiXSxbMiwxLCJTW1xcZXBzXSJdLFs0LDEsIjAiXSxbNCwyLCIwIl0sWzAsMiwiMCJdLFszLDEsIlMiXSxbMSwyLCJJIl0sWzMsMiwiSSJdLFsyLDIsIkknIl0sWzIsMywiXFxnZW5ze2YnfSJdLFszLDMsIlxcZ2Vuc3tmfSJdLFsxMCwxMl0sWzEyLDE0XSxbMTQsMTNdLFsxMyw5XSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw0XSxbNSw2XSxbNiw3XSxbNywxMV0sWzExLDhdLFsxMiw2XSxbNiwxLCJcXHBpIl0sWzE0LDddLFs3LDIsIlxccGknIl0sWzEzLDExXSxbMTEsMywiXFxwaSJdLFsxNSwxNCwiXFxzdWJzZXRlcSIsMSx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTYsMTMsIlxcc3Vic2V0ZXEiLDEseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
 
-![](figures/image_2020-04-14-12-55-58.png)
+![Diagram](figures/image_2020-04-14-12-55-58.png){width=350px}
 
 We want to understand $F(k[\eps])$.
 We know $f' = f + \eps g$ for some $g\in S$.
@@ -4733,7 +4755,7 @@ Note that none of these are pro-representable.
 
 Given $X$ and $A$, we obtain a miniversal family over the formal spectrum $\mathrm{Spf}(R) = (R, \xi)$ and a unique map:
 
-![](figures/image_2020-04-14-13-10-21.png)
+![Diagram](figures/image_2020-04-14-13-10-21.png){width=350px}
 
 We can take two deformations over $A = k[\xi]/ S^n$:
 
@@ -4753,7 +4775,7 @@ since
 But we have two different classifying maps, which do commute up to an automorphism of $A$, but are not equal.
 Since they pullback to different elements (?), $F$ can not be pro-representable.
 
-![](figures/image_2020-04-14-13-20-05.png)
+![Diagram](figures/image_2020-04-14-13-20-05.png){width=350px}
 
 So reparameterization in $A$ yield different objects in $F(A)$.
 In other words, $\mcx \to \mathrm{Spf}(R)$ has automorphisms inducing reparameterizations of $R$.
@@ -4763,16 +4785,24 @@ This indicates why we need maps restricting to the identity.
 
 For $X \mapsvia{f} Y$, we have $L_{X/Y} \in D \qcoh(X)$, the derived category of quasicoherent sheaves on $X$.
 This answers the extension question:
+
+
+:::{.answer}
 For any square-zero thickening $Y \injects Y'$ (a closed immersion) with ideal $I$ yields an $\OO_{Y}\dash$module.
 
 
 1. An extension exists iff $0 = \mathrm{obs} \in \ext^2(L_{X/Y}, f^* I)$
 2. If so, the set of ways to do so is a torsor over this ext group.
 3. The automorphisms of the completion are given by $\hom(L_{X/Y}, f^* I)$.
+:::
 
-Special cases:
+
+:::{.remark}
+Some special cases:
 $X \to Y$ smooth yields $L_{X/Y} = \Omega_{X/Y}[0]$ concentrated in degree zero.
-Example:
+:::
+
+:::{.example title="?"}
 $Y = \spec k$ and $Y' = \spec k[\eps]$ yields
 \[
 \mathrm{obs} \in \Ext_{x}^2(\Omega_{X/Y}, \OO_{x})= H^2(T_{X_{/k}})
@@ -4780,7 +4810,9 @@ $Y = \spec k$ and $Y' = \spec k[\eps]$ yields
 
 For $X\injects Y$ is a regular embedding (closed immersion and locally a regular sequence) $L_{X/Y} = \qty{I/I^2}[1]$, the conormal bundle.
 
-![](figures/image_2020-04-14-13-32-13.png)\
+![Diagram](figures/image_2020-04-14-13-32-13.png){width=350px}
+
+:::
 
 
 :::{.example title="?"}
@@ -4852,7 +4884,7 @@ X_{0} \cross k[\eps] \mapsvia{f} Y_{0} \cross k[\eps]
 .\]
 we consider the graph $\Gamma(f_{0}) \subset X_{0} \cross Y_{0}$.
 
-![](figures/image_2020-04-14-13-43-40.png)
+![Diagram](figures/image_2020-04-14-13-43-40.png){width=350px}
 
 Since all of these structures are special cases of the cotangent complex, they place nicely together in the following sense:
 Given $X \injects_{i} Y$ we have
@@ -4867,10 +4899,9 @@ Yielding a LES
 &\to H^2(T_{X}) 
 .\]
 
-![](figures/image_2020-04-14-13-47-05.png)
+![Diagram](figures/image_2020-04-14-13-47-05.png){width=350px}
 
 :::
-
 
 :::{.exercise title="?"}
 Consider $X \subset \PP^3$ a smooth quartic, and show that $\mathrm{def}(X) \cong k^{20}$ but $\mathrm{def}_{\text{embedded}} \cong k^{19}$.
@@ -4883,7 +4914,8 @@ This is a quartic K3 surface for which deformations don't lift (non-algebraic, d
 
 # Characterization of Smoothness (Thursday April 16th)
 
-Recap from last time: the cotangent complex answers an extension problem.
+> Recap from last time: the cotangent complex answers an extension problem.
+
 Given $X \mapsvia{f} Y$ and $Y \injects Y'$ a square zero thickening.
 When can the pullback diagram be filled in?
 
@@ -5330,13 +5362,12 @@ This requires expressing the descent data more functorially -- see the book on N
 
 ### Motivation
 
-Let $G_{/k}$ be a smooth connected commutative algebraic group where $\char k$ does not divide $n$, so the map $[n]: G \to G$ is an isogeny.
+Let $G_{/k}$ be a smooth connected commutative algebraic group where $\ch k$ does not divide $n$, so the map $[n]: G \to G$ is an isogeny.
 Then
 \[
-0 \to G[n](k^{s} ) \to G(k^{s} ) \mapsvia{[n]} G(k^{s} ) \to 0
+0 \to G[n] (k^{s} ) \to G(k^{s} ) \mapsvia{[n]} G(k^{s} ) \to 0
 \]
 is a SES of $g = \aut(k^{s}_{/k})\dash$modules.
-
 
 :::{.claim}
 Taking the associated cohomology sequence yields the Kummer sequence:
@@ -5378,5 +5409,5 @@ We can thus think of
 H^i(g, A) = \ext^i_{\ZZ[g]}(\ZZ, A)
 .\]
 
-
+> The end!
 

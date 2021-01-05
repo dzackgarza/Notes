@@ -1,8 +1,0 @@
-﻿\documentclass{standalone}
-\input{/home/zack/.pandoc/custom/preamble_common}
-\begin{document}
-\nopagecolor
-\begin{tikzpicture}
-\node (node_one) at (0,0) {\includegraphics{figures/plane_and_point.svg}};
-\end{tikzpicture}
-\end{document}
