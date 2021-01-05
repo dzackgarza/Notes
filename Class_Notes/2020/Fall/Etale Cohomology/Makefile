@@ -1,10 +1,11 @@
 SHELL:=/bin/zsh
 FILENAME="EtaleCohomology"
 
-all: pdf html
+all: pdf html clean_bib
 
 ## Markdown Output
 markdown:
+	ruby -ryaml -e "p YAML.load(STDIN.read)" < data.yaml || { echo "Error parsing data.yaml" && exit 1; };
 	cp -r $$PANDOC_DIR .;
 	cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
 	awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
@@ -24,11 +25,17 @@ pdf: markdown latex
 
 ## HTML Output
 html: markdown
-	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html
+	echo "Making HTML..."
+	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html 
 
 test: markdown latex
 	latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull;
 	echo "Tests complete."
+
+clean_bib: 
+	biber --tool --output_align --output_indent=2 --output_fieldcase=lower $(FILENAME).bib;
+	mv $(FILENAME)_bibertool.bib $(FILENAME).bib || true;
+	rm $(FILENAME).bib.blg || true;
 
 .SILENT:
 
@@ -43,6 +50,7 @@ reset:
 	rm $(FILENAME).tex -f || true;
 	rm $(FILENAME).html -f || true;
 	rm $(FILENAME).pdf -f || true;
+	rm build.log sections/build.log || true;
 
 .PHONY: clean
 
