@@ -38,7 +38,7 @@ clean:
 	rm -rf latex.out || true;
 	biber --tool --output_align --output_indent=2 --output_fieldcase=lower $(FILENAME).bib;
 	mv $(FILENAME)_bibertool.bib $(FILENAME).bib || true;
-	rm $(FILENAME).bib.blg $(FILENAME)_bibertoool.bib || true;
+	rm $(FILENAME).bib.blg || true;
 
 
 
