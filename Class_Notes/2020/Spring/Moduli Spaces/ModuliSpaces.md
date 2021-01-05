@@ -1428,7 +1428,7 @@ Keywords to look up here: Serre vanishing, Riemann-Roch, ideal sheaf.
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1, scale=0.6, every node/.style={scale=0.6}]
 
-\node (myfirstpic) at (325,200) {\includegraphics{/home/zack/drawing-1}};
+\node (myfirstpic) at (325,200) {\includegraphics{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2020/Spring/Moduli Spaces/sections/figures/2021-01-03_17-27}};
 \node[scale=2.0] at (400, 180) {$C$};
 \node[scale=2.0] at (200, 0) {$\PP^3$};
 
