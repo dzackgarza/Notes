@@ -1,7 +1,7 @@
 SHELL:=/bin/zsh
 FILENAME="ModuliSpaces"
 
-all: pdf html
+all: pdf html clean_bib
 
 ## Markdown Output
 markdown:
@@ -31,16 +31,16 @@ test: markdown latex
 	latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull;
 	echo "Tests complete."
 
+clean_bib: 
+	biber --tool --output_align --output_indent=2 --output_fieldcase=lower $(FILENAME).bib;
+	mv $(FILENAME)_bibertool.bib $(FILENAME).bib || true;
+	rm $(FILENAME).bib.blg || true;
+
 .SILENT:
 
 clean:
 	rm tex_tempfiles -rf || true;
 	rm -rf latex.out || true;
-	biber --tool --output_align --output_indent=2 --output_fieldcase=lower $(FILENAME).bib;
-	mv $(FILENAME)_bibertool.bib $(FILENAME).bib || true;
-	rm $(FILENAME).bib.blg || true;
-
-
 
 reset:
 	rm ./.pandoc -rf || true;
