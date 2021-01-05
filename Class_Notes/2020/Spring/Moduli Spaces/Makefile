@@ -24,7 +24,8 @@ pdf: markdown latex
 
 ## HTML Output
 html: markdown
-	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html
+	echo "Making HTML..."
+	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html 
 
 test: markdown latex
 	latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull;
