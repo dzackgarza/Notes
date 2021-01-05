@@ -11,6 +11,5 @@ Any errors or inaccuracies are almost certainly my own."
 cover-image: "figures/cover.png" 
 todos: true
 book: true
-link-citations: true
 ---
 
