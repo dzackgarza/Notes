@@ -5,6 +5,7 @@ all: pdf html clean_bib
 
 ## Markdown Output
 markdown:
+	ruby -ryaml -e "p YAML.load(STDIN.read)" < data.yaml;
 	cp -r $$PANDOC_DIR .;
 	cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
 	awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
