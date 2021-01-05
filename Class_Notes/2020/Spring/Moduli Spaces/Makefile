@@ -36,6 +36,11 @@ test: markdown latex
 clean:
 	rm tex_tempfiles -rf || true;
 	rm -rf latex.out || true;
+	biber --tool --output_align --output_indent=2 --output_fieldcase=lower $(FILENAME).bib;
+	mv $(FILENAME)_bibertool.bib $(FILENAME).bib;
+	rm $(FILENAME).bib.blg $(FILENAME)_bibertoool.bib;
+
+
 
 reset:
 	rm ./.pandoc -rf || true;
