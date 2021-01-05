@@ -1,0 +1,24 @@
+Error on 1
+
+{ ["2"] = exit,["3"] = 1,} 
+\documentclass{standalone}
+\input{/home/zack/.pandoc/custom/preamble_common}
+\begin{document}
+\nopagecolor
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1, scale=0.6, every node/.style={scale=0.6}]
+
+\node (myfirstpic) at (325,200) {\includegraphics{/home/zack/drawing-1}};
+\node[scale=2.0] at (400, 180) {$C$};
+\node[scale=2.0] at (200, 0) {${\mathbb{P}}^3$};
+
+
+\draw[very thick, blue] (-50,400) -- (-50,100);
+\draw[thick] (-50-20,400) -- (-50+20,400);
+\draw[thick] (-50-20,100) -- (-50+20,100);
+\node[scale=2.0] at (-25, 100-20) {${\mathbb{P}}^1$};
+
+\draw [thick, right hook-latex ] (-50+20, 200) -- (150, 200);
+\node[scale=2.0] at (50, 180) {$\iota$};
+
+\end{tikzpicture}
+\end{document}
