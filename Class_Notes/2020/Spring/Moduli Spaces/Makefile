@@ -50,6 +50,7 @@ reset:
 	rm $(FILENAME).tex -f || true;
 	rm $(FILENAME).html -f || true;
 	rm $(FILENAME).pdf -f || true;
+	rm build.log sections/build.log || true;
 
 .PHONY: clean
 
