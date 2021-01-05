@@ -416,7 +416,9 @@
 
 # References
 
-- [@bakker_8330], [@hartshorne_2010]
+- Course notes [@bakker_8330]
+
+- General reference [@hartshorne_2010]
 
 - Hilbert schemes/functors of points: [@stromme], [@hartshorne_def].
   
