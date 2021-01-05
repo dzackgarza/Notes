@@ -2162,7 +2162,7 @@ It is difficult to understand even \( F_{X, x}(A) \) directly, but it's easier t
 :::
 
 ::: {.definition title="Small Extensions"}
-: A *small extension* is a SES of Artinian \( k{\hbox{-}} \)algebras of the form \[ 0 `\to `{=tex}J `\to `{=tex}A' `\to `{=tex}A `\to 0`{=tex}
+A *small extension* is a SES of Artinian \( k{\hbox{-}} \)algebras of the form \[ 0 `\to `{=tex}J `\to `{=tex}A' `\to `{=tex}A `\to 0`{=tex}
 
 .\] such that \( J \) is annihilated by the maximal ideal fo \( A' \).
 :::
