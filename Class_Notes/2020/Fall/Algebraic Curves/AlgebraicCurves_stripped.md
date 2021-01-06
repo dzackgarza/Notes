@@ -394,8 +394,8 @@ What's the point? There's an extra technical condition to ensure the base change
 No, for fairly technical reasons. `\lmargnote{\danger}`{=tex}
 :::
 
-::: {.example}
-`\label{technical_example}`{=tex} Set \( k = {\mathbb{F}}_p(a, b) \) a rational function field in two variables as the ground field. Set
+::: {.example ref="technical_example"}
+Set \( k = {\mathbb{F}}_p(a, b) \) a rational function field in two variables as the ground field. Set
 \[  
 A \coloneqq k[x, y]/ \left\langle{ax^p + b-y^b}\right\rangle
 .\]
@@ -3630,7 +3630,7 @@ Note that this is stronger than Schmidt's theorem: it implies that not only do y
 ```
 a.  Use the Weil bounds to show that when \( g=0 \), \( {\left\lvert {\Sigma_1(K/{\mathbb{F}}_q)} \right\rvert} = q+1 \). Deduce that every genus zero function field is rational.
 
-b.  Use the Weil bounds to show that if \( g=1 \), then \( {\left\lvert {\Sigma_1(K/{\mathbb{F}}_q)} \right\rvert} \geq \1ty{\sqrt q - 1}^2 > 0 \), and thus every genus 1 function field over \( {\mathbb{F}}_q \) is elliptic.[^66]
+b.  Use the Weil bounds to show that if \( g=1 \), then \( {\left\lvert {\Sigma_1(K/{\mathbb{F}}_q)} \right\rvert} \geq \qty{\sqrt q - 1}^2 > 0 \), and thus every genus 1 function field over \( {\mathbb{F}}_q \) is elliptic.[^66]
 :::
 
 ::: {.corollary title="Serre Bounds"}

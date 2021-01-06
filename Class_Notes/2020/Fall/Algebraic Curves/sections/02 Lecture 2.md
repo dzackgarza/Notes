@@ -153,8 +153,7 @@ No, for fairly technical reasons.
 :::
 
 
-:::{.example}
-\label{technical_example} 
+:::{.example ref="technical_example"}
 Set $k = \FF_p(a, b)$ a rational function field in two variables as the ground field.
 Set 
 \[  
