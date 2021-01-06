@@ -35,7 +35,7 @@ latex: markdown
 pdf: markdown test latex
 	echo "Making PDF...";
 	@mkdir -p tex_tempfiles;
-	@latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf .;
+	@latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf . 2>&1 >/dev/null;
 	echo "PDF done.";
 
 ## HTML Output
