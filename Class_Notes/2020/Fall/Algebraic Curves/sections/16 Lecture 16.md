@@ -166,7 +166,7 @@ We now pair in the following way: set
 \delta  &\da -\qty{ \alpha_i + \bar{\alpha_i} } + \floor{2\sqrt q} + 1 \\
 .\]
 These are real algebraic integers and by the Riemann hypothesis they are positive.
-Since $L\perp(t) \da \prod t-\alpha_i \in \ZZ[t]$, take any complex embedding 
+Since $L^{\perp}(t) \da \prod t-\alpha_i \in \ZZ[t]$, take any complex embedding 
 \[  
 \sigma: \QQ\qty{\ts{\alpha_i}} \injects \CC
 ,\]

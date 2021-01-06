@@ -3071,19 +3071,19 @@ L(t) = a_0 + a_1 t + \cdots + a_{2g} t^{2g}
 <p>Consider the <strong>reciprocal polynomial</strong> 
 <span class="math display">
 \begin{align*}  
-L\perp(t) \mathrel{\vcenter{:}}= t^{2g} L\qty{1\over t}
+L^{\perp}(t) \mathrel{\vcenter{:}}= t^{2g} L\qty{1\over t}
 = t^{2g} + a_1 t^{2g-1} + \cdots + q^g
 .\end{align*}
-<span> The original polynomial had <span class="math inline">\({\mathbb{Z}}\)</span> coefficients and constant term 1, so this polynomial is monic and has a nonzero constant term. Thus its roots are patently nonzero algebraic integers in <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu^{\bullet}\)</span>. If <span class="math inline">\(L\perp(t) = \prod_{j=1}^{2g} (t-\alpha_j)\)</span>, then 
+<span> The original polynomial had <span class="math inline">\({\mathbb{Z}}\)</span> coefficients and constant term 1, so this polynomial is monic and has a nonzero constant term. Thus its roots are patently nonzero algebraic integers in <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu^{\bullet}\)</span>. If <span class="math inline">\(L^{\perp}(t) = \prod_{j=1}^{2g} (t-\alpha_j)\)</span>, then 
 <span class="math display">
 \begin{align*}  
-L(t) = t^{2g} L\perp\qty{1\over t} = \prod_{j=1}^{2g} (1 - \alpha_j t)
+L(t) = t^{2g} L^{\perp}\qty{1\over t} = \prod_{j=1}^{2g} (1 - \alpha_j t)
 \end{align*}
-<span> and if the roots of <span class="math inline">\(L(t)\)</span> are <span class="math inline">\(r_j\)</span>, then the roots of <span class="math inline">\(L\perp(t)\)</span> are the reciprocal roots <span class="math inline">\(1/r_j\)</span> and vice-versa. This shows the first assertion that <span class="math inline">\(r_j \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)</span> as well.</p>
+<span> and if the roots of <span class="math inline">\(L(t)\)</span> are <span class="math inline">\(r_j\)</span>, then the roots of <span class="math inline">\(L^{\perp}(t)\)</span> are the reciprocal roots <span class="math inline">\(1/r_j\)</span> and vice-versa. This shows the first assertion that <span class="math inline">\(r_j \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)</span> as well.</p>
 <p>The most interesting part is what follows. Making the substitution <span class="math inline">\(t=qu\)</span> and using (c) we get 
 <span class="math display">
 \begin{align*}  
-L\perp(t)
+L^{\perp}(t)
 &amp;= \prod_{j=1}^{2g} (t- \alpha_j) \\
 &amp;\mathrel{\vcenter{:}}= t^{2g} L\qty{1\over t} \\
 &amp;= q^{2g} u^{2g} L\qty{1\over qu} &amp;&amp; \text{by (c)}
@@ -3098,7 +3098,7 @@ q^g L(u)
 &amp;= q^g \prod_{j=1}^{2g} {\alpha_j \over q} \prod_{j=1}^{2g}\qty{ t - {1\over \alpha_j} } \\
 &amp;= \prod_{j=1}^{2g} \qty{t - {q\over \alpha_j}}
 ,\end{align*}
-<span> where we’ve pulled out a factor of <span class="math inline">\(-\alpha_j/q\)</span> and in the last step we’ve used that <span class="math inline">\(\prod_{j=1}^{2g} \alpha_j = q^g\)</span>. This follows because the <span class="math inline">\(\alpha_j\)</span> are the roots of <span class="math inline">\(L\perp\)</span>, which has even degree, so the product of all of the roots is equal to the constant term of <span class="math inline">\(L\perp\)</span>, which is the leading term of <span class="math inline">\(L\)</span>, which we showed was <span class="math inline">\(q^g\)</span>.</p>
+<span> where we’ve pulled out a factor of <span class="math inline">\(-\alpha_j/q\)</span> and in the last step we’ve used that <span class="math inline">\(\prod_{j=1}^{2g} \alpha_j = q^g\)</span>. This follows because the <span class="math inline">\(\alpha_j\)</span> are the roots of <span class="math inline">\(L^{\perp}\)</span>, which has even degree, so the product of all of the roots is equal to the constant term of <span class="math inline">\(L^{\perp}\)</span>, which is the leading term of <span class="math inline">\(L\)</span>, which we showed was <span class="math inline">\(q^g\)</span>.</p>
 <p>This says that if we take these roots <span class="math inline">\(\alpha_j\)</span> as a multiset and replace each <span class="math inline">\(\alpha_j\)</span> with <span class="math inline">\(q/\alpha_j\)</span>, we get the same multiset back. I.e., this multiset is stable under the involution 
 <span class="math display">
 \begin{align*}  
@@ -3365,7 +3365,7 @@ A(q) \leq {\left\lfloor 2\sqrt q \right\rfloor} &amp;&amp; \text{by Serre bounds
 \gamma_i &amp;\mathrel{\vcenter{:}}=\qty{ \alpha_i + \mkern 1.5mu\overline{\mkern-1.5mu\alpha_i\mkern-1.5mu}\mkern 1.5mu } + {\left\lfloor 2\sqrt q \right\rfloor} + 1 \\
 \delta  &amp;\mathrel{\vcenter{:}}=-\qty{ \alpha_i + \mkern 1.5mu\overline{\mkern-1.5mu\alpha_i\mkern-1.5mu}\mkern 1.5mu } + {\left\lfloor 2\sqrt q \right\rfloor} + 1 \\
 .\end{align*}
-<span> These are real algebraic integers and by the Riemann hypothesis they are positive. Since <span class="math inline">\(L\perp(t) \mathrel{\vcenter{:}}=\prod t-\alpha_i \in {\mathbb{Z}}[t]\)</span>, take any complex embedding 
+<span> These are real algebraic integers and by the Riemann hypothesis they are positive. Since <span class="math inline">\(L^{\perp}(t) \mathrel{\vcenter{:}}=\prod t-\alpha_i \in {\mathbb{Z}}[t]\)</span>, take any complex embedding 
 <span class="math display">
 \begin{align*}  
 \sigma: {\mathbb{Q}}\qty{\left\{{\alpha_i}\right\}} \hookrightarrow{\mathbb{C}}

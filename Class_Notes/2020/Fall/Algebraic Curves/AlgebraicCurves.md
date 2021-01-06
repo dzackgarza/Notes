@@ -4924,22 +4924,22 @@ From this, we can read off
 :::{.proof title="of e (the most interesting!)"}
 Consider the **reciprocal polynomial** 
 \[  
-L\perp(t) \da t^{2g} L\qty{1\over t}
+L^{\perp}(t) \da t^{2g} L\qty{1\over t}
 = t^{2g} + a_1 t^{2g-1} + \cdots + q^g
 .\]
 The original polynomial had $\ZZ$ coefficients and constant term 1, so this polynomial is monic and has a nonzero constant term.
 Thus its roots are patently nonzero algebraic integers in $\bar{\ZZ}\nonzero$.
-If $L\perp(t) = \prod_{j=1}^{2g} (t-\alpha_j)$, then 
+If $L^{\perp}(t) = \prod_{j=1}^{2g} (t-\alpha_j)$, then 
 \[  
-L(t) = t^{2g} L\perp\qty{1\over t} = \prod_{j=1}^{2g} (1 - \alpha_j t)
+L(t) = t^{2g} L^{\perp}\qty{1\over t} = \prod_{j=1}^{2g} (1 - \alpha_j t)
 \]
-and if the roots of $L(t)$ are $r_j$, then the roots of $L\perp(t)$ are the reciprocal roots $1/r_j$ and vice-versa.
+and if the roots of $L(t)$ are $r_j$, then the roots of $L^{\perp}(t)$ are the reciprocal roots $1/r_j$ and vice-versa.
 This shows the first assertion that $r_j \in \bar{\ZZ}$ as well.
 
 The most interesting part is what follows.
 Making the substitution $t=qu$ and using (c) we get
 \[  
-L\perp(t)
+L^{\perp}(t)
 &= \prod_{j=1}^{2g} (t- \alpha_j) \\
 &\da t^{2g} L\qty{1\over t} \\
 &= q^{2g} u^{2g} L\qty{1\over qu} && \text{by (c)}
@@ -4955,7 +4955,7 @@ q^g L(u)
 ,\]
 where we've pulled out a factor of $-\alpha_j/q$ and
 in the last step we've used that $\prod_{j=1}^{2g} \alpha_j = q^g$. 
-This follows because the $\alpha_j$ are the roots of $L\perp$, which has even degree, so the product of all of the roots is equal to the constant term of $L\perp$, which is the leading term of $L$, which we showed was $q^g$.
+This follows because the $\alpha_j$ are the roots of $L^{\perp}$, which has even degree, so the product of all of the roots is equal to the constant term of $L^{\perp}$, which is the leading term of $L$, which we showed was $q^g$.
 
 This says that if we take these roots $\alpha_j$ as a multiset and replace each $\alpha_j$ with $q/\alpha_j$, we get the same multiset back.
 I.e., this multiset is stable under the involution
@@ -5274,7 +5274,7 @@ We now pair in the following way: set
 \delta  &\da -\qty{ \alpha_i + \bar{\alpha_i} } + \floor{2\sqrt q} + 1 \\
 .\]
 These are real algebraic integers and by the Riemann hypothesis they are positive.
-Since $L\perp(t) \da \prod t-\alpha_i \in \ZZ[t]$, take any complex embedding 
+Since $L^{\perp}(t) \da \prod t-\alpha_i \in \ZZ[t]$, take any complex embedding 
 \[  
 \sigma: \QQ\qty{\ts{\alpha_i}} \injects \CC
 ,\]
