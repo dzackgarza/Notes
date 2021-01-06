@@ -1,12 +1,16 @@
 SHELL:=/bin/zsh
 FILENAME="AlgebraicGeometry"
 
+okay:
+	clr_greenb "---------------------------------------------------"
+	clr_greenb "All files compiled."
+	clr_greenb "---------------------------------------------------"
 
 all: pdf html clean_bib
 	type clr_green 2>&1 >/dev/null || source "$$DOTFILES_ROOT/.bash_colors";
-	echo "---------------------------------------------------"
+	clr_greenb "---------------------------------------------------"
 	clr_greenb "All files compiled."
-	echo "---------------------------------------------------"
+	clr_greenb "---------------------------------------------------"
 
 ## Markdown Output
 markdown:
