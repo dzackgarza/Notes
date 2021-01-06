@@ -708,7 +708,7 @@ Then $\sqrt{I} = (x_1, x_2)$, since $x_2^2 \in I \implies x_2 \in \sqrt{I}$.
 :::
 
 
-:::{.definition title="Degree of an element of $\kxn$"}
+:::{.definition title="Degree of an element of $k[x_1, x_2, \cdots, x_n]$"}
 Define $\deg(f)$ as the largest value of $i_1 + \cdots + i_n$ such that the coefficient of $\prod x_j ^{i_j}$ is nonzero.
 :::
 
