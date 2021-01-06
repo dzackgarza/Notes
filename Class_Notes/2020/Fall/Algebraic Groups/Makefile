@@ -1,97 +1,82 @@
 SHELL:=/bin/zsh
-FILENAME="Algebraic_Groups"
+FILENAME="AlgebraicGroups"
 
-## Markdown extension (e.g. md, markdown, mdown).
-MEXT = md
+## WARNING: "reset" wipes out this directory!
+TEMP_DIR="/tmp/"
 
-## Location of Pandoc support files.
-PREFIX = /home/zack/.pandoc/pandoc-templates
-
-## Location of your working bibliography file
-BIB = $(FILENAME).bib 
-
-## CSL stylesheet (located in the csl folder of the PREFIX directory).
-CSL = apsa
-
-all: pdf html	clean
+all: pdf html clean_bib
+	type clr_green 2>&1 >/dev/null || { source "$$DOTFILES_ROOT/.bash_colors";}
+	clr_greenb "____________________________________________________"
+	clr_greenb "___________  All files compiled.  __________________"
+	clr_greenb "____________________________________________________"
 
 ## Markdown Output
 markdown:
-	touch $(FILENAME).md;
-	awk 'FNR==1{print ""}1' ./sections/*.md  > $(FILENAME).md;
-
-watch: markdown
-	latex_preview -f $(FILENAME).md -z
-
-view: markdown
-	latex_preview -f $(FILENAME).md -v -z
-
+	echo "Combining markdown...";
+	if ruby -ryaml -e "p YAML.load(STDIN.read)" < data.yaml 2>&1 >/dev/null; then 
+		echo "Valid data.yaml";
+		@cp -r $$PANDOC_DIR .;
+		@cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
+		@awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
+		@awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME)_stripped.md;
+		echo "Markdown done."
+	else
+		echo "Error parsing data.yaml";
+		exit 1;
+	fi
+	
 ## LaTeX Output
 latex: markdown
-	cat data.md $(FILENAME).md | pandoc \
-		--quiet \
-		-f markdown \
-		-t latex \
-		-o $(FILENAME).tex \
-		--template /home/zack/Notes/Latex/pandoc_template.tex \
-		--lua-filter /home/zack/dotfiles/bin/warning-div.lua \
-		-r markdown+fenced_divs+tex_math_single_backslash \
-		--biblatex \
-		--bibliography=$(BIB) \
-		--lua-filter /home/zack/Notes/Latex/tikzcd.lua \
-		-V current_date="$$(date +%Y-%m-%d%n)" \
-		-F pandoc-crossref;
-
+	echo "Making LaTeX...";
+	pandoc_totex_orpdf.sh -f $(FILENAME).md -x > $(FILENAME).tex;
+	echo "Latex done.";
 
 ## PDF Output
-pdf: markdown latex
-	latexmk --shell-escape -pdf $(FILENAME).tex -quiet;
-	echo "Make done";
-
+pdf: markdown test latex
+	echo "Making PDF...";
+	@mkdir -p tex_tempfiles;
+	@latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf . 2>&1 >/dev/null;
+	echo "PDF done.";
 
 ## HTML Output
 html: markdown
-	cat ~/Notes/Latex/latexmacs.tex $(FILENAME).md \
-		> combined.temp ;
-	cat combined.temp | pandoc \
-		--quiet \
-		--from=markdown \
-		--to=markdown \
-		-r markdown+latex_macros+tex_math_single_backslash \
-		--lua-filter=/home/zack/Dropbox/rmcodeblocks.lua \
-		--lua-filter /home/zack/dotfiles/bin/warning-div.lua \
-		| sed '/^\\\%/d' > out1.temp ;
-	cat data.md out1.temp | pandoc \
-		--quiet \
-		-r markdown+simple_tables+table_captions+yaml_metadata_block \
-		--to html \
-		--mathjax \
-		--template=$(PREFIX)/templates/tufte-html-vis.html  \
-		--css=$(PREFIX)/marked/kultiad-serif.css \
-		--filter pandoc-crossref \
-		--filter pandoc-citeproc \
-		--lua-filter /home/zack/Notes/Latex/tikzcd.lua \
-		--csl=$(PREFIX)/csl/$(CSL).csl \
-		--bibliography=$(BIB) \
-		--toc \
-		-V current_date="$$(date +%Y-%m-%d%n)" \
-		--self-contained \
-		-o $(FILENAME).html ;
-	rm out1.temp combined.temp *.svg -f || true;
+	echo "Making HTML...";
+	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html 
+
+test: markdown latex
+	echo "Running tests...";
+	type clr_green 2>&1 >/dev/null || { source "$$DOTFILES_ROOT/.bash_colors";}
+	if latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull -W no-spectralsequences; then
+		clr_greenb "____________________________________________________"
+		clr_greenb "______________    Okay!  ___________________________"
+		clr_greenb "____________________________________________________"
+	else
+		clr_redb "____________________________________________________"
+		clr_redb "_________________  Errors.  ________________________"
+		clr_redb "____________________________________________________"
+		exit 1;
+	fi
+
+clean_bib: 
+	biber --tool --output_align --output_indent=2 --output_fieldcase=lower $(FILENAME).bib;
+	@mv $(FILENAME)_bibertool.bib $(FILENAME).bib || true;
+	@rm $(FILENAME).bib.blg || true;
 
 .SILENT:
 
 clean:
-	rm $(addprefix $(FILENAME),.aux .bbl .loe .pre .run.xml .tdo .aux .log .out.ps .bcf .blg .fdb_latexmk .fls .toc .lof) -f || true;
-	rm *.svg -f || true;
-	rm *.temp -f || true;
+	@rm tex_tempfiles -rf || true;
+	@rm -rf latex.out || true;
 
-
-reset:
-	rm $(FILENAME).md -f || true;
-	rm $(FILENAME).tex -f || true;
-	rm $(FILENAME).html -f || true;
-	rm $(FILENAME).pdf -f || true;
+reset: clean
+	@rm -f /tmp/* 2>/dev/null || true;
+	@rm ./.pandoc -rf || true;
+	@rm $(FILENAME).md -f || true;
+	@rm $(FILENAME)_stripped.md -f || true;
+	@rm $(FILENAME).tex -f || true;
+	@rm $(FILENAME).html -f || true;
+	@rm $(FILENAME).pdf -f || true;
+	@rm -f build.log sections/build.log || true;
 
 .PHONY: clean
 
