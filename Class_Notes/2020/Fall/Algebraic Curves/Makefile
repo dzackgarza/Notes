@@ -5,7 +5,7 @@ FILENAME="AlgebraicCurves"
 TEMP_DIR="/tmp/"
 
 all: pdf html clean_bib
-	type clr_green 2>&1 >/dev/null || { echo "Sourcing"; source "$$DOTFILES_ROOT/.bash_colors";}
+	type clr_green 2>&1 >/dev/null || { source "$$DOTFILES_ROOT/.bash_colors";}
 	clr_greenb "____________________________________________________"
 	clr_greenb "___________  All files compiled.  __________________"
 	clr_greenb "____________________________________________________"
