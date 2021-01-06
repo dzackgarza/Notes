@@ -4,7 +4,7 @@ FILENAME="AlgebraicGeometry"
 okay:
 	type clr_green 2>&1 >/dev/null || { echo "Sourcing"; source "$$DOTFILES_ROOT/.bash_colors";}
 	clr_greenb "____________________________________________________"
-	clr_greenb "All files compiled."
+	clr_greenb "_____________All files compiled. ___________________"
 	clr_greenb "____________________________________________________"
 
 all: pdf html clean_bib
