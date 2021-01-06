@@ -1,5 +1,7 @@
 SHELL:=/bin/zsh
 FILENAME="AlgebraicCurves"
+
+## WARNING: "reset" wipes out this directory!
 TEMP_DIR="/tmp/"
 
 all: pdf html clean_bib
@@ -57,8 +59,8 @@ clean:
 	@rm tex_tempfiles -rf || true;
 	@rm -rf latex.out || true;
 
-reset:
-	@yes | rm /tmp/* || true;
+reset: clean
+	@rm /tmp/* || true;
 	@rm ./.pandoc -rf || true;
 	@rm $(FILENAME).md -f || true;
 	@rm $(FILENAME)_stripped.md -f || true;
