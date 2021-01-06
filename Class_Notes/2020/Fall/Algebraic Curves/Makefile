@@ -60,14 +60,14 @@ clean:
 	@rm -rf latex.out || true;
 
 reset: clean
-	@rm /tmp/* || true;
+	@rm -f /tmp/* 2>/dev/null || true;
 	@rm ./.pandoc -rf || true;
 	@rm $(FILENAME).md -f || true;
 	@rm $(FILENAME)_stripped.md -f || true;
 	@rm $(FILENAME).tex -f || true;
 	@rm $(FILENAME).html -f || true;
 	@rm $(FILENAME).pdf -f || true;
-	@rm build.log sections/build.log || true;
+	@rm -f build.log sections/build.log || true;
 
 .PHONY: clean
 
