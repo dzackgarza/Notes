@@ -22,7 +22,7 @@ latex: markdown
 	echo "Latex done";
 
 ## PDF Output
-pdf: markdown latex
+pdf: markdown test latex
 	mkdir -p tex_tempfiles;
 	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf .;
 	echo "PDF done";
