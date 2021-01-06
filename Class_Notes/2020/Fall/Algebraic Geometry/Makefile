@@ -2,6 +2,7 @@ SHELL:=/bin/zsh
 FILENAME="AlgebraicGeometry"
 
 okay:
+	type clr_green 2>&1 >/dev/null || source "$$DOTFILES_ROOT/.bash_colors";
 	clr_greenb "---------------------------------------------------"
 	clr_greenb "All files compiled."
 	clr_greenb "---------------------------------------------------"
