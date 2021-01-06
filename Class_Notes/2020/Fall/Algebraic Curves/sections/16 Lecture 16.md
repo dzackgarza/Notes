@@ -123,7 +123,7 @@ Note that this is stronger than Schmidt's theorem: it implies that not only do y
 a. Use the Weil bounds to show that when $g=0$, $\abs{\Sigma_1(K/\FF_q)} = q+1$.
 Deduce that every genus zero function field is rational.
 
-b. Use the Weil bounds to show that if $g=1$, then $\abs{\Sigma_1(K/\FF_q)} \geq \1ty{\sqrt q - 1}^2 > 0$, and thus every genus 1 function field over $\FF_q$ is elliptic.[^def_ell_ff]
+b. Use the Weil bounds to show that if $g=1$, then $\abs{\Sigma_1(K/\FF_q)} \geq \qty{\sqrt q - 1}^2 > 0$, and thus every genus 1 function field over $\FF_q$ is elliptic.[^def_ell_ff]
 
 [^def_ell_ff]: 
 By definition, a genus 1 function field with a degree 1 place, which can be used as the origin for the group structure.

@@ -1,5 +1,3 @@
-\\newcommand{`\kk`{=tex}}\[0\]{{`\mathbb{k}`{=tex}}
-
 # References
 
 ## References
@@ -2929,7 +2927,7 @@ Note that as a consequence, it will definitely be rational in \( q \), and will 
 ::: {.proof title="of rationality of $Z(t)$"}
 Recall that \( \ell(C) \) is the dimension of the associated Riemann-Roch space.
 
-When \( g=0 \), by Riemann-Roch we have \( \operatorname{Cl}^0(K) = 0 \) over any ground field \( \kk \) (see exercises), and so \( h=1 \). Since every \( n\geq 0 \) satisfies \( n\geq 2g-2 \) when \( g=0 \), if \( \delta\divides n \) we have
+When \( g=0 \), by Riemann-Roch we have \( \operatorname{Cl}^0(K) = 0 \) over any ground field \( {\mathbb{k}} \) (see exercises), and so \( h=1 \). Since every \( n\geq 0 \) satisfies \( n\geq 2g-2 \) when \( g=0 \), if \( \delta\divides n \) we have
 \[  
 A_n = h \qty{ q^{n+1 - g} - 1 \over q-1} = {q^{n+1} - 1 \over q-1}
 ,\]
