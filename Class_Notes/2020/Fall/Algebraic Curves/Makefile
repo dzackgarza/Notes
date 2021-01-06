@@ -12,15 +12,18 @@ all: pdf html clean_bib
 
 ## Markdown Output
 markdown:
-	if ruby -ryaml -e "p YAML.load(STDIN.read)" < data.yaml > 2>&1 >/dev/null; then 
-		{ echo "Error parsing data.yaml" && exit 1; };
-	ff
-	@cp -r $$PANDOC_DIR .;
-	@cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
-	@awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
-	@awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME)_stripped.md;
-	echo "Markdown done."
-
+	if ruby -ryaml -e "p YAML.load(STDIN.read)" < data.yaml 2>&1 >/dev/null; then 
+		echo "Valid data.yaml";
+		@cp -r $$PANDOC_DIR .;
+		@cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
+		@awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
+		@awk 'FNR==1{print ""}1' ./sections/*.md  | pandoc_stripmacros.sh > $(FILENAME)_stripped.md;
+		echo "Markdown done."
+	else
+		echo "Error parsing data.yaml";
+		exit 1;
+	fi
+	
 ## LaTeX Output
 latex: markdown
 	pandoc_totex_orpdf.sh -f $(FILENAME).md -x > $(FILENAME).tex;
