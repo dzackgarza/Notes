@@ -12,7 +12,7 @@ all: pdf html clean_bib
 
 ## Markdown Output
 markdown:
-	echo "Combining markdown..."
+	echo "Combining markdown...";
 	if ruby -ryaml -e "p YAML.load(STDIN.read)" < data.yaml 2>&1 >/dev/null; then 
 		echo "Valid data.yaml";
 		@cp -r $$PANDOC_DIR .;
@@ -27,23 +27,24 @@ markdown:
 	
 ## LaTeX Output
 latex: markdown
-	echo "Making LaTeX..."
+	echo "Making LaTeX...";
 	pandoc_totex_orpdf.sh -f $(FILENAME).md -x > $(FILENAME).tex;
 	echo "Latex done.";
 
 ## PDF Output
 pdf: markdown test latex
-	echo "Making PDF..."
+	echo "Making PDF...";
 	@mkdir -p tex_tempfiles;
-	latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf .;
+	@latexmk --shell-escape -pdf $(FILENAME).tex -quiet -outdir=tex_tempfiles && cp tex_tempfiles/$(FILENAME).pdf .;
 	echo "PDF done.";
 
 ## HTML Output
 html: markdown
-	echo "Making HTML..."
+	echo "Making HTML...";
 	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html 
 
 test: markdown latex
+	echo "Running tests...";
 	type clr_green 2>&1 >/dev/null || { echo "Sourcing"; source "$$DOTFILES_ROOT/.bash_colors";}
 	if latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull -W no-spectralsequences; then
 		clr_greenb "____________________________________________________"
