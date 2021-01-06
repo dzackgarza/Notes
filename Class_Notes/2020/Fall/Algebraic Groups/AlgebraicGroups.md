@@ -2909,7 +2909,7 @@ There is an equivalence
 \[  
 \mathrm{Poly}(G) \cong \bigoplus_{j\geq 0} \Mod(S(n, d))
 ,\]
-where this Schur algebra $S(n, d)$ is given by $\endo_{\Sigma_d}(V^{\tensor d})$ where $\Sigma_d$ is the symmetric group of $d$ letters.
+where this Schur algebra $S(n, d)$ is given by $\Endo_{\Sigma_d}(V^{\tensor d})$ where $\Sigma_d$ is the symmetric group of $d$ letters.
 
 The theorem is that $\Mod(S(n, d))$ is a QHA, and thus a highest weight category.
 :::
@@ -2981,7 +2981,7 @@ Next time: look at structure of injective modules, then the theory of Bott-Borel
 
 ## Schur Algebras
 
-Let $G = \GL(n, k)$, then polynomial representations of $G$ are equivalent to $S(n, d)$ modules for all $d\geq 0$, where we can note that $S(n, d) = \endo_{\Sigma_d}(V^{\tensor d})$.
+Let $G = \GL(n, k)$, then polynomial representations of $G$ are equivalent to $S(n, d)$ modules for all $d\geq 0$, where we can note that $S(n, d) = \Endo_{\Sigma_d}(V^{\tensor d})$.
 We'll have a correspondence
 \[  
 \correspond{L(\lambda) \text{ simple modules for } S(n,d)}

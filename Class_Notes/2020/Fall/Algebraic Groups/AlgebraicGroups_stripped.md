@@ -2233,7 +2233,7 @@ There is an equivalence
 \[  
 \mathrm{Poly}(G) \cong \bigoplus_{j\geq 0} {\operatorname{Mod}}(S(n, d))
 ,\]
-where this Schur algebra \( S(n, d) \) is given by \( \endo_{\Sigma_d}(V^{\otimes d}) \) where \( \Sigma_d \) is the symmetric group of \( d \) letters.
+where this Schur algebra \( S(n, d) \) is given by \( \operatorname{End}_{\Sigma_d}(V^{\otimes d}) \) where \( \Sigma_d \) is the symmetric group of \( d \) letters.
 
 The theorem is that \( {\operatorname{Mod}}(S(n, d)) \) is a QHA, and thus a highest weight category.
 :::
@@ -2293,7 +2293,7 @@ Next time: look at structure of injective modules, then the theory of Bott-Borel
 
 ## Schur Algebras
 
-Let \( G = \operatorname{GL}(n, k) \), then polynomial representations of \( G \) are equivalent to \( S(n, d) \) modules for all \( d\geq 0 \), where we can note that \( S(n, d) = \endo_{\Sigma_d}(V^{\otimes d}) \). We'll have a correspondence
+Let \( G = \operatorname{GL}(n, k) \), then polynomial representations of \( G \) are equivalent to \( S(n, d) \) modules for all \( d\geq 0 \), where we can note that \( S(n, d) = \operatorname{End}_{\Sigma_d}(V^{\otimes d}) \). We'll have a correspondence
 \[  
 \left\{{\substack{L(\lambda) \text{ simple modules for } S(n,d)}}\right\}
 \iff
