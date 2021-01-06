@@ -12,7 +12,9 @@ all: pdf html clean_bib
 
 ## Markdown Output
 markdown:
-	@ruby -ryaml -e "p YAML.load(STDIN.read)" < data.yaml || { echo "Error parsing data.yaml" && exit 1; };
+	if ruby -ryaml -e "p YAML.load(STDIN.read)" < data.yaml > 2>&1 >/dev/null; then 
+		{ echo "Error parsing data.yaml" && exit 1; };
+	ff
 	@cp -r $$PANDOC_DIR .;
 	@cat "./.pandoc/custom/latexmacs.tex" > $(FILENAME).md;
 	@awk 'FNR==1{print ""}1' ./sections/*.md  >> $(FILENAME).md;
