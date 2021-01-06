@@ -35,9 +35,13 @@ html: markdown
 test: markdown latex
 	type clr_green 2>&1 >/dev/null || { echo "Sourcing"; source "$$DOTFILES_ROOT/.bash_colors";}
 	if latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull -W no-spectralsequences; then
-		clr_greenb "Tests passed."
+		clr_greenb "____________________________________________________"
+		clr_greenb "______________    Okay!  ___________________________"
+		clr_greenb "____________________________________________________"
 	else
-		clr_redb "Errors."
+		clr_redb "____________________________________________________"
+		clr_redb "_________________  Errors.  ________________________"
+		clr_redb "____________________________________________________"
 	fi
 
 clean_bib: 
