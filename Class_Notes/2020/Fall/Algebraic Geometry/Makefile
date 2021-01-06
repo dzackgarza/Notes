@@ -1,17 +1,11 @@
 SHELL:=/bin/zsh
 FILENAME="AlgebraicGeometry"
 
-okay:
+all: pdf html clean_bib
 	type clr_green 2>&1 >/dev/null || { echo "Sourcing"; source "$$DOTFILES_ROOT/.bash_colors";}
 	clr_greenb "____________________________________________________"
 	clr_greenb "___________  All files compiled.  __________________"
 	clr_greenb "____________________________________________________"
-
-all: pdf html clean_bib
-	type clr_green 2>&1 >/dev/null || source "$$DOTFILES_ROOT/.bash_colors";
-	clr_greenb "---------------------------------------------------"
-	clr_greenb "All files compiled."
-	clr_greenb "---------------------------------------------------"
 
 ## Markdown Output
 markdown:
@@ -39,7 +33,7 @@ html: markdown
 	pandoc_tohtml.sh -f $(FILENAME).md > $(FILENAME).html 
 
 test: markdown latex
-	type clr_green 2>&1 >/dev/null || source "$$DOTFILES_ROOT/.bash_colors";
+	type clr_green 2>&1 >/dev/null || { echo "Sourcing"; source "$$DOTFILES_ROOT/.bash_colors";}
 	if latexrun $(FILENAME).tex --bibtex-cmd biber -W no-scrbase -W no-overfull -W no-spectralsequences; then
 		clr_greenb "Tests passed."
 	else
