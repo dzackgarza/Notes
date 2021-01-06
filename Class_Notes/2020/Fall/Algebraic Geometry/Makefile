@@ -3,7 +3,7 @@ FILENAME="AlgebraicGeometry"
 
 okay:
 	type clr_green 2>&1 >/dev/null || { echo "Sourcing"; source "$$DOTFILES_ROOT/.bash_colors";}
-	clr_greenb "--"
+	clr_greenb "____________________________________________________"
 	clr_greenb "All files compiled."
 	clr_greenb "---------------------------------------------------"
 
