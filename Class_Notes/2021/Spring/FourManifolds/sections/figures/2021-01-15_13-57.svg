@@ -12,8 +12,8 @@
    viewBox="0 0 210 148"
    version="1.1"
    id="svg8"
-   sodipodi:docname="inkscape_template.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   sodipodi:docname="2021-01-15_13-57.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,9 +23,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="489.35776"
-     inkscape:cy="501.819"
+     inkscape:zoom="6.4092824"
+     inkscape:cx="560.27829"
+     inkscape:cy="425.59837"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -37,10 +37,10 @@
      guidetolerance="10000"
      inkscape:snap-perpendicular="true"
      inkscape:snap-tangential="true"
-     inkscape:window-width="943"
-     inkscape:window-height="1027"
-     inkscape:window-x="2045"
-     inkscape:window-y="1121"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="0">
     <sodipodi:guide
        position="0,148"
@@ -74,7 +74,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="" />
       </cc:Work>
@@ -83,5 +83,43 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1" />
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.500541px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 116.90625,109.301 c 21.16666,37.8772 21.16666,37.8772 21.16666,37.8772 42.33334,-18.9386 42.33334,-18.9386 42.33334,-18.9386 10.58334,-35.509879 10.58334,-35.509879 10.58334,-35.509879 0,0 0,-2.367324 0,0 0,2.367325 0,0 0,0 -34.39584,-9.469299 -34.39584,-9.469299 -34.39584,-9.469299"
+       id="path835" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.500541px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 156.59375,83.260418 C 116.90625,109.301 116.90625,109.301 116.90625,109.301"
+       id="path837" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.500541px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 156.59375,83.260418 c 0,0 0,0 0,28.407902 34.39584,-18.938599 34.39584,-18.938599 34.39584,-18.938599"
+       id="path839" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.500541px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 180.40625,128.23959 c 0,0 0,0 -23.8125,-16.57127 -18.52084,35.50988 -18.52084,35.50988 -18.52084,35.50988 0,0 0,0 0,0 v 0 c 0,0 0,0 0,0 v 0 0"
+       id="path841" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.500541px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 156.59375,111.66832 C 116.90625,109.301 116.90625,109.301 116.90625,109.301"
+       id="path843" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="163.59344"
+       y="115.84298"
+       id="text851"><tspan
+         sodipodi:role="line"
+         id="tspan849"
+         x="163.59344"
+         y="115.84298"
+         style="stroke-width:0.264583">V</tspan></text>
+    <circle
+       style="fill:none;fill-opacity:0.614069;fill-rule:evenodd;stroke:#c000ac;stroke-width:0.499999;stroke-dashoffset:0.0999999"
+       id="path853"
+       cx="157.2552"
+       cy="111.70312"
+       r="3.3072915" />
+  </g>
 </svg>
