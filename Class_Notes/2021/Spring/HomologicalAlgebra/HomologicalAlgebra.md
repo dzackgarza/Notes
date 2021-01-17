@@ -105,6 +105,7 @@
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Top}[0]{{\operatorname{Top}}}
 \newcommand{\Ab}[0]{{\operatorname{Ab}}}
+\newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
 \newcommand{\hoTop}[0]{{\operatorname{hoTop}}}
 \newcommand{\Sch}[0]{{\operatorname{Sch}}}
