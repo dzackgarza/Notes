@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="226.08128mm"
+   width="219.38589mm"
    height="140.17958mm"
-   viewBox="0 0 226.08128 140.17958"
+   viewBox="0 0 219.38589 140.17958"
    version="1.1"
    id="svg8"
    sodipodi:docname="2021-01-16_21-54.svg"
@@ -23,9 +23,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="912.18739"
-     inkscape:cy="161.68549"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="484.68612"
+     inkscape:cy="234.38065"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -43,7 +43,7 @@
      inkscape:window-y="1121"
      inkscape:window-maximized="0">
     <sodipodi:guide
-       position="10.872886,146.82201"
+       position="10.872887,146.82201"
        orientation="0,793.70079"
        id="guide10" />
     <sodipodi:guide
@@ -55,7 +55,7 @@
        orientation="0,-793.70079"
        id="guide14" />
     <sodipodi:guide
-       position="10.872886,-1.1779859"
+       position="10.872887,-1.1779859"
        orientation="-559.37008,0"
        id="guide16" />
     <inkscape:grid
@@ -64,7 +64,7 @@
        dotted="true"
        units="px"
        originx="115.87288"
-       originy="67.357573" />
+       originy="67.357576" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -84,7 +84,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(10.872886,-6.6424334)">
+     transform="translate(10.872887,-6.6424334)">
     <circle
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.878425;stroke-dashoffset:0.0999999;stroke-opacity:1"
        id="path837"
@@ -120,26 +120,26 @@
        sodipodi:open="true" />
     <text
        xml:space="preserve"
-       style="font-size:13.4842px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.337106"
-       x="85.388336"
-       y="54.08411"
+       style="font-size:7.16728px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.179182"
+       x="94.131126"
+       y="38.942814"
        id="text879"><tspan
          sodipodi:role="line"
          id="tspan877"
-         x="85.388336"
-         y="54.08411"
-         style="stroke-width:0.337106">$S^1$</tspan></text>
+         x="94.131126"
+         y="38.942814"
+         style="stroke-width:0.179182">$S^1$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
-       x="-11.751383"
-       y="23.379238"
+       style="font-size:6.56056px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.164014"
+       x="-11.417464"
+       y="20.322899"
        id="text883-7"><tspan
          sodipodi:role="line"
          id="tspan881-5"
-         x="-11.751383"
-         y="23.379238"
-         style="stroke-width:0.264583">$U_2 \injects \RR$</tspan></text>
+         x="-11.417464"
+         y="20.322899"
+         style="stroke-width:0.164014">$U_2 \injects \RR$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
@@ -153,25 +153,25 @@
          style="stroke-width:0.264583" /></text>
     <text
        xml:space="preserve"
-       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
-       x="119.70032"
-       y="140.55432"
+       style="font-size:7.13881px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.178471"
+       x="144.08943"
+       y="124.1362"
        id="text883-7-3"><tspan
          sodipodi:role="line"
          id="tspan881-5-5"
-         x="119.70032"
-         y="140.55432"
-         style="stroke-width:0.264583">$U_1 \injects \RR$</tspan></text>
+         x="144.08943"
+         y="124.1362"
+         style="stroke-width:0.178471">$U_1 \injects \RR$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.6342px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.540857"
-       x="149.66391"
-       y="11.825054"
+       style="font-size:4.10944px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.102736"
+       x="139.68565"
+       y="19.12294"
        id="text927"><tspan
          sodipodi:role="line"
-         x="149.66391"
-         y="11.825054"
-         style="stroke-width:0.540857"
+         x="139.68565"
+         y="19.12294"
+         style="stroke-width:0.102736"
          id="tspan25">\fontsize{19pt}{1em} $\RR^2$</tspan></text>
   </g>
 </svg>
