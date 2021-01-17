@@ -129,19 +129,19 @@ What is the difference between all of the above structures? Are there obstructio
 ```{=tex}
 \envlist
 ```
-1.  Munkres: Every \( C^1 \) structure gives a unique \( C^k \) and \( C^ \infty \) structure.[^1]
+1.  (Munkres) Every \( C^1 \) structure gives a unique \( C^k \) and \( C^ \infty \) structure.[^1]
 
-2.  Grouert : Every \( C^ \infty \) structure gives a unique real-analytic structure.
+2.  (Grauert) Every \( C^ \infty \) structure gives a unique real-analytic structure.
 
 3.  Every PL manifold admits a smooth structure in \( \dim X \leq 7 \), and it's unique in \( \dim X\leq 6 \), and above these dimensions there exists PL manifolds with no smooth structure.
 
-4.  Kirby-Sibenmann: Let \( X \) be a topological manifold of \( \dim X\geq 5 \), then there exists a cohomology class \( k_s(X) \in H^4(X; {\mathbb{Z}}/2{\mathbb{Z}}) \) which is 0 if and only if \( X \) admits a PL structure. Moreover, if \( ks(X) = 0 \), then (up to concordance) the set of PL structures is given by \( H^3(X; {\mathbb{Z}}/2{\mathbb{Z}}) \).
+4.  (Kirby--Siebenmann) Let \( X \) be a topological manifold of \( \dim X\geq 5 \), then there exists a cohomology class \( \operatorname{ks}(X) \in H^4(X; {\mathbb{Z}}/2{\mathbb{Z}}) \) which is 0 if and only if \( X \) admits a PL structure. Moreover, if \( \operatorname{ks}(X) = 0 \), then (up to concordance) the set of PL structures is given by \( H^3(X; {\mathbb{Z}}/2{\mathbb{Z}}) \).
 
-5.  Moise: Every topological manifold in \( \dim X\leq 3 \) admits a unique smooth structure.
+5.  (Moise) Every topological manifold in \( \dim X\leq 3 \) admits a unique smooth structure.
 
-6.  Smale (et al): in \( \dim X\geq 5 \), the number of smooth structures on a topological manifold \( X \) is finite. In particular, \( {\mathbb{R}}^n \) for \( n \neq 4 \) has a unique smooth structure. So dimension 4 is interesting!
+6.  (Smale et al.): In \( \dim X\geq 5 \), the number of smooth structures on a topological manifold \( X \) is finite. In particular, \( {\mathbb{R}}^n \) for \( n \neq 4 \) has a unique smooth structure. So dimension 4 is interesting!
 
-7.  Toubes: \( {\mathbb{R}}^4 \) admits uncountably many non-diffeomorphic smooth structures.
+7.  (Taubes) \( {\mathbb{R}}^4 \) admits uncountably many non-diffeomorphic smooth structures.
 
 8.  A compact oriented smooth surface \( \Sigma \), the space of complex-analytic structures is a complex orbifold [^2] of dimension \( 3g-2 \) where \( g \) is the genus of \( \Sigma \), up to biholomorphism (i.e. *moduli*).
 :::
@@ -152,16 +152,21 @@ Kervaire-Milnor: \( S^7 \) admits 28 smooth structures, which form a group.
 
 # Friday, January 15
 
-Let \( V = \left\{{a^2 + b^2 + c^2 + d^3 + e^{6k-1} = 0}\right\} \subseteq {\mathbb{C}}^5 \) and \( S_\varepsilon\coloneqq\left\{{ {\left\lvert {a} \right\rvert}^2 + {\left\lvert {b} \right\rvert}^2 + {\left\lvert {c} \right\rvert}^2 + {\left\lvert {d} \right\rvert}^2 + {\left\lvert {e} \right\rvert}^2}\right\} \). Then \( V_k \cap S_\varepsilon\cong S^7 \) is a homeomorphism, and taking \( k=1,2,\cdots 28 \) yields the 28 smooth structures on \( S^7 \). Notice that \( V_k \) is the cone over \( V_k \cap S_\varepsilon \).
+::: {.remark}
+Let
+\[
+V &\coloneqq\left\{{a^2 + b^2 + c^2 + d^3 + e^{6k-1} = 0}\right\} \subseteq {\mathbb{C}}^5 \\
+S_\varepsilon&\coloneqq\left\{{ {\left\lvert {a} \right\rvert}^2 + {\left\lvert {b} \right\rvert}^2 + {\left\lvert {c} \right\rvert}^2 + {\left\lvert {d} \right\rvert}^2 + {\left\lvert {e} \right\rvert}^2}\right\}
+.\]
+Then \( V_k \cap S_\varepsilon\cong S^7 \) is a homeomorphism, and taking \( k=1,2,\cdots, 28 \) yields the 28 smooth structures on \( S^7 \). Note that \( V_k \) is the cone over \( V_k \cap S_\varepsilon \).
+
 ```{=tex}
 \begin{tikzpicture}
-
-\node (node_one) at (0,0) {
-  \includegraphics{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/2021-01-15_13-54}
-  };
-  \end{tikzpicture}
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_13-54.pdf_tex} };
+\end{tikzpicture}
 ```
 > ? Admits a smooth structure, and \( \mkern 1.5mu\overline{\mkern-1.5muV\mkern-1.5mu}\mkern 1.5mu_k \subseteq {\mathbb{CP}}^5 \) admits no smooth structure.
+:::
 
 ::: {.question}
 Is every triangulable manifold PL, i.e. homeomorphic to a simplicial complex?
@@ -173,21 +178,20 @@ No! Given a simplicial complex, there is a notion of the **combinatorial link** 
 ```{=tex}
 \begin{tikzpicture}
 \node (node_one) at (0,0) {
-  \includegraphics{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/2021-01-15_13-57}
-  };
-  \end{tikzpicture}
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_13-57.pdf_tex} };
+\end{tikzpicture}
 ```
 It turns out that there exist simplicial manifolds such that the link is not homeomorphic to a sphere, whereas every PL manifold admits a "PL triangulation" where the links are spheres.
 :::
 
 ::: {.remark}
-What's special in dimension 4? Recall the **Kirby-Siebenmann** invariant \( ks(x) \in H^4(X; {\mathbb{Z}}_2) \) for \( X \) a topological manifold where \( ks(X) = 0 \iff X \) admits a PL structure, with the caveat that \( \dim X \geq 5 \). We can use this to cook up an invariant of 4-manifolds.
+What's special in dimension 4? Recall the **Kirby-Siebenmann** invariant \( \operatorname{ks}(x) \in H^4(X; {\mathbb{Z}}_2) \) for \( X \) a topological manifold where \( \operatorname{ks}(X) = 0 \iff X \) admits a PL structure, with the caveat that \( \dim X \geq 5 \). We can use this to cook up an invariant of 4-manifolds.
 :::
 
-::: {.definition title="Kirby-Sibemann Invariant of a 4-manifold"}
-Let \( X \) be a topological manifold, then
+::: {.definition title="Kirby-Siebenmann Invariant of a 4-manifold"}
+Let \( X \) be a topological 4-manifold, then
 \[
-ks(X) \coloneqq ks(X \times{\mathbb{R}})
+\operatorname{ks}(X) \coloneqq\operatorname{ks}(X \times{\mathbb{R}})
 .\]
 :::
 
@@ -196,36 +200,41 @@ Recall that in \( \dim X\geq 7 \), every PL manifold admits a smooth structure, 
 \[
 H^4(X; {\mathbb{Z}}_2) = H^4(X \times{\mathbb{R}}; {\mathbb{Z}}_2) = {\mathbb{Z}}_2,
 .\]
-since every oriented 4-manifold admits a fundamental class. Thus \[ ks(X) =
-
-```{=tex}
+since every oriented 4-manifold admits a fundamental class. Thus
+\[
+\operatorname{ks}(X) = 
 \begin{cases}
 0 & X \times{\mathbb{R}}\text{ admits a PL and smooth structure} 
 \\
-1 & .X \times{\mathbb{R}}\text{ admits no PL or smooth structures }
+1 & X \times{\mathbb{R}}\text{ admits no PL or smooth structures }.
 \end{cases}
-```
-.\]
+\]
 :::
 
 ::: {.remark}
-\( ks(X) \neq 0 \) implies that \( X \) has no smooth structure, since \( X \times{\mathbb{R}} \) doesn't. Note that it was not known if this invariant was nonzero for a while!
+\( \operatorname{ks}(X) \neq 0 \) implies that \( X \) has no smooth structure, since \( X \times{\mathbb{R}} \) doesn't. Note that it was not known if this invariant was nonzero for a while!
 :::
 
 ::: {.remark}
 Note that \( H^2(X; {\mathbb{Z}}) \) admits a symmetric bilinear form \( Q_X \) defined by
 \[
-{\left\langle { \alpha},~{ \beta} \right\rangle} \mapsto \int_X \alpha\wedge \beta = \alpha \cupproduct \beta([X]) \in {\mathbb{Z}}
+{\left\langle { \alpha},~{ \beta} \right\rangle} \mapsto \int_X \alpha\wedge \beta = \alpha \smile\beta([X]) \in {\mathbb{Z}}
 .\]
 where \( [X] \) is the fundamental class.
 :::
 
+# Main Theorems for the Course
+
+Proving the following theorems is the main goal of this course.
+
 ::: {.theorem title="Freedman"}
-If \( X, Y \) are compact oriented topological 4-manifolds, then \( X\cong Y \) are homeomorphic if and only if \( ks(X) = ks(Y) \) and \( Q_X \cong Q_Y \) are isometric, i.e. there exists an isometry
+If \( X, Y \) are compact oriented topological 4-manifolds, then \( X\cong Y \) are homeomorphic if and only if \( \operatorname{ks}(X) = \operatorname{ks}(Y) \) and \( Q_X \cong Q_Y \) are isometric, i.e. there exists an isometry
 \[
-H^2(X; {\mathbb{Z}}) \to H^2(Y; {\mathbb{Z}})
+\varphi: H^2(X; {\mathbb{Z}}) \to H^2(Y; {\mathbb{Z}})
 .\]
-that preserves the two bilinear forms in the sense that \( {\left\langle {\varphi \alpha},~{ \varphi \beta} \right\rangle} = {\left\langle { \alpha},~{ \beta} \right\rangle} \). Conversely, every **unimodular** bilinear form appears as \( H^2(X; {\mathbb{Z}}) \) for some \( X \), i.e. the pairing induces a map
+that preserves the two bilinear forms in the sense that \( {\left\langle {\varphi \alpha},~{ \varphi \beta} \right\rangle} = {\left\langle { \alpha},~{ \beta} \right\rangle} \).
+
+Conversely, every **unimodular** bilinear form appears as \( H^2(X; {\mathbb{Z}}) \) for some \( X \), i.e. the pairing induces a map
 \[
 H^2(X; {\mathbb{Z}}) &\to H^2(X; {\mathbb{Z}})^\vee\\
 \alpha \mapsto {\left\langle { \alpha },~{ {\,\cdot\,}} \right\rangle}
@@ -238,7 +247,7 @@ Note that preservation of a bilinear form is a stand-in for "being an element of
 :::
 
 ::: {.remark}
-\( H^2(X; {\mathbb{Z}}) \xrightarrow{PD} H_2(X; {\mathbb{Z}}) \), where we can think of elements in the latter as closed surfaces \( [\Sigma] \), and
+There is a map \( H^2(X; {\mathbb{Z}}) \xrightarrow{PD} H_2(X; {\mathbb{Z}}) \) from Poincaré , where we can think of elements in the latter as closed surfaces \( [\Sigma] \), and
 \[
 {\left\langle { \Sigma_1 },~{ \Sigma_2 } \right\rangle} = \text{signed number of intersections points of } \Sigma_1 \pitchfork\Sigma_2
 .\]
@@ -248,24 +257,28 @@ Note that Freedman's theorem is only about homeomorphism, and is not true smooth
 ::: {.definition title="Signature"}
 The **signature** of a topological 4- manifold is the signature of \( Q_X \), where we note that \( Q_X \) is a symmetric nondegenerate bilinear form on \( H^2(X; {\mathbb{R}}) \) and for some \( a, b \)
 \[
-H^2(X; {\mathbb{R}}), Q_x \xrightarrow{\text{isometric}} {\mathbb{R}}^{a, b}
+(H^2(X; {\mathbb{R}}), Q_x) \xrightarrow{\text{isometric}} {\mathbb{R}}^{a, b}
 .\]
-where \( a \) is the number of \( +1 \)s appearing in the matrix and \( b \) is the number of \( -1 \)s. This is \( {\mathbb{R}}^{ab} \) where \( e_i^2 = 1, i=1\cdots a \) and \( e_i^2 = -1, i=a+1, \cdots b \), and is thus equipped with a specific bilinear form corresponding to the Gram matrix of this basis. \[
-
-```{=tex}
+where \( a \) is the number of \( +1 \)s appearing in the matrix and \( b \) is the number of \( -1 \)s. This is \( {\mathbb{R}}^{ab} \) where \( e_i^2 = 1, i=1\cdots a \) and \( e_i^2 = -1, i=a+1, \cdots b \), and is thus equipped with a specific bilinear form corresponding to the Gram matrix of this basis.
+\[
 \begin{bmatrix}
-1 & 0 & 0
+1 & 0 & 0 & 0 & 0
 \\
-0 & \vdots & 0
+0 & 1 & 0 & 0 & 0
 \\
-0 & 0 & -1
+0 & 0 & \ddots & 0 & 0
+\\
+0 & 0 & 0 & -1 & 0
+\\
+0 & 0 & 0 & 0 & -1
 \end{bmatrix}
-```
-.\] Then the signature is \( a-b \), the dimension of the positive-definite space minus the dimension of the negative-definite space.
+= I_{a\times a} \oplus -I_{b \times b}
+.\]
+Then the signature is \( a-b \), the dimension of the positive-definite space minus the dimension of the negative-definite space.
 :::
 
-::: {.theorem title="Rohklin's Theorem"}
-Suppose \( {\left\langle { \alpha},~{\alpha} \right\rangle} \in 2{\mathbb{Z}} \) and \( \alpha\in H^2(X; {\mathbb{Z}}) \) and \( X \) a simply connected **smooth** 4-manifold. Then 16 divides \( \sig(X) \).
+::: {.theorem title="Rokhlin's Theorem"}
+Suppose \( {\left\langle { \alpha},~{\alpha} \right\rangle} \in 2{\mathbb{Z}} \) and \( \alpha\in H^2(X; {\mathbb{Z}}) \) and \( X \) a simply connected **smooth** 4-manifold. Then 16 divides \( \operatorname{sig}(X) \).
 :::
 
 ::: {.remark}
@@ -273,18 +286,18 @@ Note that Freedman's theorem implies that there exists topological 4-manifolds w
 :::
 
 ::: {.theorem title="Donaldson"}
-Let \( X \) be a smooth simply-connected 4-manifold. If \( a=0 \) or \( b=0 \), then \( Q_X \) is diagonalizable and there exists an orthonomal basis of \( H^2(X; {\mathbb{Z}}) \).
+Let \( X \) be a smooth simply-connected 4-manifold. If \( a=0 \) or \( b=0 \), then \( Q_X \) is diagonalizable and there exists an orthonormal basis of \( H^2(X; {\mathbb{Z}}) \).
 :::
 
 ::: {.remark}
 This comes from Gram-Schmidt, and restricts what types of intersection forms can occur.
 :::
 
-Proving these theorems is the main goal of this course.
+## Warm Up: \( {\mathbb{R}}^2 \) Has a Unique Smooth Structure {#warm-up-mathbbr2-has-a-unique-smooth-structure}
 
-## Warm Up
-
+::: {.remark}
 Last time we showed \( {\mathbb{R}}^1 \) had a unique smooth structure, so now we'll do this for \( {\mathbb{R}}^2 \). The strategy of solving a differential equation, we'll now sketch the proof.
+:::
 
 ::: {.definition title="Riemannian Metrics"}
 A **Riemannian metric** \( g\in \operatorname{Sym}^2 T^*X \) for \( X \) a smooth manifold is a metric on every \( T_p X \) given by
@@ -298,28 +311,44 @@ g(v, v) \geq 0, g(v,v) = 0 \iff v=0
 An **almost complex structure** is a \( J\in \mathop{\mathrm{End}}(TX) \) such that \( J^2 = -\operatorname{id} \).
 :::
 
-Let \( e\in T_p X \) and \( e\neq 0 \), then if \( X \) is a surface then \( \left\{{e, Je}\right\} \) is a bsis of \( T_p X \).
+::: {.remark}
+Let \( e\in T_p X \) and \( e\neq 0 \), then if \( X \) is a surface then \( \left\{{e, Je}\right\} \) is a basis of \( T_p X \).
+
+```{=tex}
+\begin{tikzpicture}
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_14-33.pdf_tex} };
+\end{tikzpicture}
+```
+This is a basis because if \( Je \) and \( e \) are parallel, then ??? In particular, \( J_p \) is determined by a point in \( {\mathbb{R}}^2\setminus\left\{{\text{the }x{\hbox{-}}\text{axis}}\right\} \)
+:::
+
+### Sketch of Proof
+
+Let \( \tilde {\mathbb{R}}^2 \) be an exotic \( {\mathbb{R}}^2 \).
+
+#### Step 1
+
+Choose a metric on \( \tilde {\mathbb{R}}^2 \) \( g \coloneqq\sum f_I g_i \) with \( g_i \) metrics on coordinate charts \( U_i \) and \( f_i \) a partition of unity.
+
+#### Step 2
+
+Find an almost complex structure on \( \tilde {\mathbb{R}}^2 \). Choosing an orientation of \( \tilde {\mathbb{R}}^2 \), \( g \) defines a unique almost complex structure \( J_p e \coloneqq f\in T_p \tilde {\mathbb{R}}^2 \) such that
+
+-   \( g(e, e) = g(f, f) \)
+-   \( g(e, f) = 0 \).
+-   \( \left\{{e, f}\right\} \) is an oriented basis of \( T_p \tilde {\mathbb{R}}^2 \)
+
+This is because after choosing \( e \), there are two orthogonal vectors, but only one choice yields an *oriented* basis.
 
 ```{=tex}
 \begin{tikzpicture}
 \node (node_one) at (0,0) {
-  \includegraphics{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/2021-01-15_14-33}
+  \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_14-39.pdf_tex}
   };
-  \end{tikzpicture}
+\end{tikzpicture}
 ```
-This is a basis because if \( Je \) and \( e \) are parallel, then ??? In particular, \( J_p \) is determined by a point in \( {\mathbb{R}}^2\setminus{x{\hbox{-}}\text{axis}} \) Let \( \tilde {\mathbb{R}}^2 \) be an exotic \( {\mathbb{R}}^2 \).
+#### Step 3
 
--   Step 1: Choose a metric on \( \tilde {\mathbb{R}}^2 \) \( g \coloneqq\sum f_I g_i \) with \( g_i \) metrics on coordinate charts \( U_i \) and \( f_i \) a partition of unity.
-
--   Step 2: Find an almost complex structure on \( \tilde {\mathbb{R}}^2 \). Choosing an orientation of \( \tilde {\mathbb{R}}^2 \), \( g \) defines a unique almost complex structure \( J_p e \coloneqq f\in T_p \tilde {\mathbb{R}}^2 \) such that \( g(e, e) = g(f, f) \) and \( (e, f) \) is an oriented basis of \( T_p \tilde {\mathbb{R}}^2 \) and \( g(e, f) = 0 \). This is because after choosing \( e \), there are two orthogonal vectors, but only one choice yields an *oriented* basis.
-
-```{=tex}
-\begin{tikzpicture}
-\node (node_one) at (0,0) {
-  \includegraphics{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/2021-01-15_14-39}
-  };
-  \end{tikzpicture}
-```
 We then apply a theorem:
 
 ::: {.theorem title="?"}
@@ -328,7 +357,7 @@ Any almost complex structure on a surface comes from a complex structure, in the
 
 So \( d \varphi(J \cdot e) = i \cdot d \varphi_i (e) \), and \( (\tilde {\mathbb{R}}^2, J) \) is a complex manifold. Since it's simply connected, the Riemann Mapping Theorem shows that it's biholomorphic to \( {\mathbb{D}} \) or \( {\mathbb{C}} \), both of which are diffeomorphic to \( {\mathbb{R}}^2 \).
 
-> See Newlander Nuremburg theorem.
+> See the Newlander-Nirenberg theorem, a result in complex geometry.
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
 
