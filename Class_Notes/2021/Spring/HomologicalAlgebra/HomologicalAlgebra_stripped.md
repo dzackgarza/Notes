@@ -23,9 +23,9 @@ Reference:
 ## Overview
 
 ::: {.definition title="Exact complexes"}
-A complex is given by
+A **complex** is given by
 \[
-\cdots \xrightarrow{d_{i-1}} M_{i-1} \xrightarrow{d_i} M_i M_{i+1} \xrightarrow{d_{i+1}} \cdots
+\cdots \xrightarrow{d_{i-1}} M_{i-1} \xrightarrow{d_i} M_i \xrightarrow{d_{i+1}}M_{i+1} \to  \cdots
 .\]
 where \( M_i \in {R{\hbox{-}}\operatorname{mod}} \) and \( d_i \circ d_{i-1} = 0 \), which happens if and only if \( \operatorname{im}d_{i-1} \subseteq \ker d_i \). If \( \operatorname{im}d_{i-1} = \ker d_i \), this complex is **exact**.
 :::
@@ -38,15 +38,27 @@ We can apply a functor such as \( \otimes_R N \) to get a new complex
 :::
 
 ::: {.example title="?"}
-Applying \( {\operatorname{Hom}}(N, {\,\cdot\,}) \) similarly yields \( {\operatorname{Hom}}_R(N, M_{i}) \xrightarrow{d_{i-1}^*} {\operatorname{Hom}}_R(N, M_{i+1}) \), where \( d_i^* = d_i \circ ({\,\cdot\,}) \) is given by composition.
+Applying \( {\operatorname{Hom}}(N, {\,\cdot\,}) \) similarly yields
+\[
+{\operatorname{Hom}}_R(N, M_{i}) \xrightarrow{d_{i-1}^*} {\operatorname{Hom}}_R(N, M_{i+1})
+,\]
+where \( d_i^* = d_i \circ ({\,\cdot\,}) \) is given by composition.
 :::
 
 ::: {.example title="?"}
-Applying \( {\operatorname{Hom}}({\,\cdot\,}, N) \) yields \( {\operatorname{Hom}}_R(M_i, N) \xrightarrow{d_{i}^*} {\operatorname{Hom}}_R(M_{i+1}, N) \) where \( d_i^* = ({\,\cdot\,}) \circ d_i \).
+Applying \( {\operatorname{Hom}}({\,\cdot\,}, N) \) yields
+\[
+{\operatorname{Hom}}_R(M_i, N) \xrightarrow{d_{i}^*} {\operatorname{Hom}}_R(M_{i+1}, N)
+\]
+where \( d_i^* = ({\,\cdot\,}) \circ d_i \).
 :::
 
 ::: {.remark}
-Note that we can also take complexes with arrows in the other direction. For \( F \) a functor, we can rewrite these examples as \( d_i^* \circ d_{i-1}^* = F(d_i) \circ F(d_{i-1}) = F(d_i \circ d_{i-1}) = F(0) = 0 \), provided \( F \) is nice enough and sends zero to zero. This follows from the fact that functors preserve composition. Even if the original complex is exact, the new one may not be, so we can define the following:
+Note that we can also take complexes with arrows in the other direction. For \( F \) a functor, we can rewrite these examples as
+\[
+d_i^* \circ d_{i-1}^* = F(d_i) \circ F(d_{i-1}) = F(d_i \circ d_{i-1}) = F(0) = 0
+,\]
+provided \( F \) is nice enough and sends zero to zero. This follows from the fact that functors preserve composition. Even if the original complex is exact, the new one may not be, so we can define the following:
 :::
 
 ::: {.definition title="Cohomology"}
@@ -68,7 +80,7 @@ See the appendix for diagrams defining zero objects and the zero map, which we'l
 :::
 
 ::: {.remark}
-In the examples, we had \( \ker d_i \subseteq M_i \), but this need not be true since the objects in the category may not be sets. Such an example is the category of complexes of \( R{\hbox{-}} \)modules: \( \mathcal{Cx}({R{\hbox{-}}\operatorname{mod}}) \). In this setting, kernels will be subcomplexes but not subsets.
+In the examples, we had \( \ker d_i \subseteq M_i \), but this need not be true since the objects in the category may not be sets. Such an example is the category of complexes of \( R{\hbox{-}} \)modules: \( \operatorname{Cx}({R{\hbox{-}}\operatorname{mod}}) \). In this setting, kernels will be subcomplexes but not subsets.
 :::
 
 ::: {.definition title="Functors"}
@@ -122,9 +134,9 @@ A map \( u: C_{\,\cdot\,}\to D_{\,\cdot\,} \) of chain complexes is a sequence o
 
 ```{=tex}
 \begin{tikzcd}
-    {\bullet} & {C_{n+1}} & {C_n} & {C_{n-1}} & {\bullet} \\
+    {\cdots} & {C_{n+1}} & {C_n} & {C_{n-1}} & {\cdots} \\
     \\
-    {\bullet} & {D_{n+1}} & {D_n} & {D_{n-1}} & {\bullet}
+    {\cdots} & {D_{n+1}} & {D_n} & {D_{n-1}} & {\cdots}
     \arrow[from=1-1, to=1-2]
     \arrow[from=1-2, to=1-3]
     \arrow[from=1-3, to=1-4]
@@ -133,9 +145,9 @@ A map \( u: C_{\,\cdot\,}\to D_{\,\cdot\,} \) of chain complexes is a sequence o
     \arrow[from=3-3, to=3-4]
     \arrow[from=3-4, to=3-5]
     \arrow[from=1-4, to=1-5]
-    \arrow["{u_{n+1}}" description, from=1-2, to=3-2]
-    \arrow["{u_n}" description, from=1-3, to=3-3]
-    \arrow["{u_{n-1}}" description, from=1-4, to=3-4]
+    \arrow["{u_{n+1}}", from=1-2, to=3-2]
+    \arrow["{u_n}", from=1-3, to=3-3]
+    \arrow["{u_{n-1}}", from=1-4, to=3-4]
 \end{tikzcd}
 ```
 :::
@@ -148,9 +160,12 @@ We can thus define a category \( \mathrm{Ch}({R{\hbox{-}}\operatorname{mod}}) \)
 :::
 
 ::: {.exercise title="Weibel 1.1.2"}
-A chain complex map \( u: C_{\,\cdot\,}\to D_{\,\cdot\,} \) restricts to \[ u_n: Z_n(C\_`{\,\cdot\,}`{=tex}) `\to `{=tex}Z_n(D\_`{\,\cdot\,}`{=tex}) \\ u_n: B_n(D\_`{\,\cdot\,}`{=tex}) `\to `{=tex}B_n(D\_`{\,\cdot\,}`{=tex})
-
-\] and thus induces a well-defined map \( u_{n, *}: H_n(C_{\,\cdot\,}) \to H_n(D_{\,\cdot\,}) \).
+A chain complex map \( u: C_{\,\cdot\,}\to D_{\,\cdot\,} \) restricts to
+\[
+u_n: Z_n(C_{\,\cdot\,}) \to Z_n(D_{\,\cdot\,}) \\
+u_n: B_n(D_{\,\cdot\,}) \to B_n(D_{\,\cdot\,})
+\]
+and thus induces a well-defined map \( u_{n, *}: H_n(C_{\,\cdot\,}) \to H_n(D_{\,\cdot\,}) \).
 :::
 
 ::: {.remark}
@@ -169,15 +184,15 @@ Recall that a chain complex is \( C_{\,\cdot\,} \) where \( d^2 = 0 \), and a ma
 > [Link to diagram](https://q.uiver.app/?q=WzAsMTEsWzEsMCwiQ197bi0xfSJdLFsyLDAsIkNfe259Il0sWzMsMCwiQ197bisxfSJdLFsyLDIsIkRfbiJdLFszLDIsIkRfe24rMX0iXSxbMSwyLCJEX3tuLTF9Il0sWzQsMCwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFswLDIsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbMiwxXSxbMCw1LCJ1Il0sWzEsMywidV9uIl0sWzIsNCwidSJdLFswLDFdLFsxLDIsImRfbiJdLFs1LDNdLFszLDQsImRfbiIsMl0sWzIsNl0sWzQsN10sWzgsNV0sWzksMF1d)
 > ```{=tex}
 > \begin{tikzcd}
-> \bullet & {C_{n-1}} & {C_{n}} & {C_{n+1}} & \bullet \\
+> \cdots & {C_{n-1}} & {C_{n}} & {C_{n+1}} & \cdots \\
 > && {} \\
-> \bullet & {D_{n-1}} & {D_n} & {D_{n+1}} & \bullet
-> \arrow["u", from=1-2, to=3-2]
+> \cdots & {D_{n-1}} & {D_n} & {D_{n+1}} & \cdots
+> \arrow["{u_{n-1}}", from=1-2, to=3-2]
 > \arrow["{u_n}", from=1-3, to=3-3]
-> \arrow["u", from=1-4, to=3-4]
-> \arrow[from=1-2, to=1-3]
+> \arrow["{u_{n+1}}", from=1-4, to=3-4]
+> \arrow["{d_{n-1}}", from=1-2, to=1-3]
 > \arrow["{d_n}", from=1-3, to=1-4]
-> \arrow[from=3-2, to=3-3]
+> \arrow["{d_{n-1}}", from=3-2, to=3-3]
 > \arrow["{d_n}"', from=3-3, to=3-4]
 > \arrow[from=1-4, to=1-5]
 > \arrow[from=3-4, to=3-5]
@@ -186,7 +201,7 @@ Recall that a chain complex is \( C_{\,\cdot\,} \) where \( d^2 = 0 \), and a ma
 > \end{tikzcd}
 > ```
 
-Recall that \( u_n: Z_n(C) \to Z_n(D) \) and \( u_n: B_n(C) \to B_n(D) \) preserves these submodules, so there are induced maps \( u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D) \) where \( H_n(C) \coloneqq Z_n(C) / B_n(C) \). Moreover, taking \( H_n({\,\cdot\,}) \) is a functor from \( \operatorname{Ch}({R{\hbox{-}}\operatorname{mod}}) \to {R{\hbox{-}}\operatorname{mod}} \) for any fixed \( n \) and on objects \( C\mapsto H_n(C) \) and chain maps \( u_{n} \to H_n(u) \coloneqq u_{*, n} \). Note the lower indices denote maps going down in degree.
+Recall that \( u_n: Z_n(C) \to Z_n(D) \) and \( u_n: B_n(C) \to B_n(D) \) preserves these submodules, so there are induced maps \( u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D) \) where \( H_n(C) \coloneqq Z_n(C) / B_nn-1(C) \). Moreover, taking \( H_n({\,\cdot\,}) \) is a functor from \( \operatorname{Ch}({R{\hbox{-}}\operatorname{mod}}) \to {R{\hbox{-}}\operatorname{mod}} \) for any fixed \( n \) and on objects \( C\mapsto H_n(C) \) and chain maps \( u_{n} \to H_n(u) \coloneqq u_{*, n} \). Note the lower indices denote maps going down in degree.
 :::
 
 ## Cohomology
@@ -240,12 +255,14 @@ Write \( \operatorname{Ch} \) for \( \operatorname{Ch}({R{\hbox{-}}\operatorname
 :::
 
 ::: {.definition title="Products and Coproducts"}
-```{=tex}
-\envlist
-```
--   If \( \left\{{A_ \alpha}\right\} \) is a family of complexes, we can form two new complexes:
-    -   The product \( \qty{ \prod_ \alpha A_ \alpha}_n \coloneqq\prod_ \alpha A _{\alpha, n} \) with the differential \( \qty{ \prod d_ \alpha}_n: \prod A _{\alpha, n} \xrightarrow{d _{\alpha, n}} \prod A _{\alpha, n-1} \).
-    -   The coproduct \( \qty{ \coprod _{\alpha} A _{\alpha}}_n \coloneqq\bigoplus _{\alpha} A _{\alpha, n} \), i.e. there are only finitely many nonzero entries, with exactly the same definition as above for the differential.
+If \( \left\{{A_ \alpha}\right\} \) is a family of complexes, we can form two new complexes:
+
+-   The **product** \( \qty{ \prod_ \alpha A_ \alpha}_n \coloneqq\prod_ \alpha A _{\alpha, n} \) with the differential
+    \[
+    \qty{ \prod d_ \alpha}_n: \prod A _{\alpha, n} \xrightarrow{d _{\alpha, n}} \prod A _{\alpha, n-1}
+    .\]
+
+-   The **coproduct** \( \qty{ \coprod _{\alpha} A _{\alpha}}_n \coloneqq\bigoplus _{\alpha} A _{\alpha, n} \), i.e. there are only finitely many nonzero entries, with exactly the same definition as above for the differential.
 :::
 
 ::: {.remark}
