@@ -1,5 +1,5 @@
 SHELL:=/bin/zsh
-FILENAME="FourManifolds"
+FILENAME="NumberTheory"
 
 ## WARNING: "reset" wipes out this directory!
 TEMP_DIR="/tmp/"
