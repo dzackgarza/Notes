@@ -23,9 +23,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="665.73689"
-     inkscape:cy="182.54159"
+     inkscape:zoom="1.4"
+     inkscape:cx="737.75541"
+     inkscape:cy="155.07345"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -39,8 +39,8 @@
      inkscape:snap-tangential="true"
      inkscape:window-width="943"
      inkscape:window-height="1027"
-     inkscape:window-x="2045"
-     inkscape:window-y="1121"
+     inkscape:window-x="2332"
+     inkscape:window-y="1177"
      inkscape:window-maximized="0">
     <sodipodi:guide
        position="10.872886,146.82201"
@@ -164,14 +164,14 @@
          style="stroke-width:0.264583">$U_1 \injects \RR$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
-       x="156.22438"
-       y="16.15836"
+       style="font-size:21.6342px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.540857"
+       x="119.87706"
+       y="26.375387"
        id="text927"><tspan
          sodipodi:role="line"
          id="tspan925"
-         x="156.22438"
-         y="16.15836"
-         style="stroke-width:0.264583">$\RR^2$</tspan></text>
+         x="119.87706"
+         y="26.375387"
+         style="stroke-width:0.540857">$\RR^2$</tspan></text>
   </g>
 </svg>
