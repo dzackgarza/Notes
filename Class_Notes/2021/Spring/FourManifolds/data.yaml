@@ -5,7 +5,9 @@ author:
 - name: D. Zack Garza
   affiliation: University of Georgia 
   email: dzackgarza@gmail.com 
-date: 2021
-author-note: "Preview"
-hide_proofs: true
+date: Spring 2021
+cover-image: "figures/cover.png" 
+author-note: "These are notes live-tex'd from a graduate course in 4-Manifolds taught by Philip Engel at the University of Georgia in Spring 2020. As such, any errors or inaccuracies are almost certainly my own."
+todos: true
+book: true
 ---

@@ -26,11 +26,30 @@
 \setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
 
 \title{
+\rule{\linewidth}{1pt} \\
 \textbf{
     4-Manifolds
   }
     \\ {\normalsize Lectures by Philip Engel. University of Georgia,
 Spring 2020} \\
+  \rule{\linewidth}{2pt}
+}
+\titlehead{
+    \begin{center}
+  \includegraphics[width=\linewidth,height=0.45\textheight,keepaspectratio]{figures/cover.png}
+  \end{center}
+       \begin{minipage}{.35\linewidth}
+    \begin{flushleft}
+      \vspace{2em}
+      {\fontsize{6pt}{2pt} \textit{Notes: These are notes live-tex'd
+from a graduate course in 4-Manifolds taught by Philip Engel at the
+University of Georgia in Spring 2020. As such, any errors or
+inaccuracies are almost certainly my own. } } \\
+    \end{flushleft}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.65\linewidth}
+    \end{minipage}
   }
 
 
@@ -700,6 +719,30 @@ connected, the Riemann Mapping Theorem shows that it's biholomorphic to
 \begin{quote}
 See the Newlander-Nirenberg theorem, a result in complex geometry.
 \end{quote}
+
+\addsec{ToDos}
+\listoftodos[List of Todos]
+\cleardoublepage
+
+% Hook into amsthm environments to list them.
+\addsec{Definitions}
+\renewcommand{\listtheoremname}{}
+\listoftheorems[ignoreall,show={definition}, numwidth=3.5em]
+\cleardoublepage
+
+\addsec{Theorems}
+\renewcommand{\listtheoremname}{}
+\listoftheorems[ignoreall,show={theorem,proposition}, numwidth=3.5em]
+\cleardoublepage
+
+\addsec{Exercises}
+\renewcommand{\listtheoremname}{}
+\listoftheorems[ignoreall,show={exercise}, numwidth=3.5em]
+\cleardoublepage
+
+\addsec{Figures}
+\listoffigures
+\cleardoublepage
 
 
 \printbibliography[title=Bibliography]
