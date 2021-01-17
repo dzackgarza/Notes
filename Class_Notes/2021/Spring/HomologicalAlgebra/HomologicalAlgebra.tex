@@ -328,6 +328,11 @@ squares commute:
 \end{tikzcd}
 \end{center}
 
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMTAsWzEsMCwiQ197bisxfSJdLFsyLDAsIkNfbiJdLFszLDAsIkNfe24tMX0iXSxbMSwyLCJEX3tuKzF9Il0sWzIsMiwiRF9uIl0sWzMsMiwiRF97bi0xfSJdLFswLDAsIlxcYnVsbGV0Il0sWzAsMiwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFs0LDAsIlxcYnVsbGV0Il0sWzYsMF0sWzAsMV0sWzEsMl0sWzcsM10sWzMsNF0sWzQsNV0sWzUsOF0sWzIsOV0sWzAsMywidV97bisxfSIsMV0sWzEsNCwidV9uIiwxXSxbMiw1LCJ1X3tuLTF9IiwxXV0=}{Link
+to Diagram}
+\end{quote}
+
 \end{definition}
 
 \begin{remark}
@@ -380,39 +385,37 @@ See assignment posted on ELC, due Wed Jan 27
 Recall that a chain complex is \(C_{\,\cdot\,}\) where \(d^2 = 0\), and
 a map of chain complex is a ladder of commuting squares
 
-\begin{quote}
-\href{https://q.uiver.app/?q=WzAsMTEsWzEsMCwiQ197bi0xfSJdLFsyLDAsIkNfe259Il0sWzMsMCwiQ197bisxfSJdLFsyLDIsIkRfbiJdLFszLDIsIkRfe24rMX0iXSxbMSwyLCJEX3tuLTF9Il0sWzQsMCwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFswLDIsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbMiwxXSxbMCw1LCJ1Il0sWzEsMywidV9uIl0sWzIsNCwidSJdLFswLDFdLFsxLDIsImRfbiJdLFs1LDNdLFszLDQsImRfbiIsMl0sWzIsNl0sWzQsN10sWzgsNV0sWzksMF1d}{Link
-to diagram}
-
 \begin{center}
 \begin{tikzcd}
-\cdots & {C_{n-1}} & {C_{n}} & {C_{n+1}} & \cdots \\
-&& {} \\
-\cdots & {D_{n-1}} & {D_n} & {D_{n+1}} & \cdots
-\arrow["{u_{n-1}}", from=1-2, to=3-2]
-\arrow["{u_n}", from=1-3, to=3-3]
-\arrow["{u_{n+1}}", from=1-4, to=3-4]
-\arrow["{d_{n-1}}", from=1-2, to=1-3]
-\arrow["{d_n}", from=1-3, to=1-4]
-\arrow["{d_{n-1}}", from=3-2, to=3-3]
-\arrow["{d_n}"', from=3-3, to=3-4]
-\arrow[from=1-4, to=1-5]
-\arrow[from=3-4, to=3-5]
-\arrow[from=3-1, to=3-2]
-\arrow[from=1-1, to=1-2]
+    \cdots & {C_{n-1}} & {C_{n}} & {C_{n+1}} & \cdots \\
+    && {} \\
+    \cdots & {D_{n-1}} & {D_n} & {D_{n+1}} & \cdots
+    \arrow["{u_{n-1}}", from=1-2, to=3-2]
+    \arrow["{u_n}", from=1-3, to=3-3]
+    \arrow["{u_{n+1}}", from=1-4, to=3-4]
+    \arrow["{d_{n-1}}", from=1-2, to=1-3]
+    \arrow["{d_n}", from=1-3, to=1-4]
+    \arrow["{d_{n-1}}", from=3-2, to=3-3]
+    \arrow["{d_n}"', from=3-3, to=3-4]
+    \arrow[from=1-4, to=1-5]
+    \arrow[from=3-4, to=3-5]
+    \arrow[from=3-1, to=3-2]
+    \arrow[from=1-1, to=1-2]
 \end{tikzcd}
 \end{center}
-\end{quote}
 
-Recall that \(u_n: Z_n(C) \to Z_n(D)\) and \(u_n: B_n(C) \to B_n(D)\)
-preserves these submodules, so there are induced maps
-\(u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D)\) where
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMTEsWzEsMCwiQ197bi0xfSJdLFsyLDAsIkNfe259Il0sWzMsMCwiQ197bisxfSJdLFsyLDIsIkRfbiJdLFszLDIsIkRfe24rMX0iXSxbMSwyLCJEX3tuLTF9Il0sWzQsMCwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFswLDIsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbMiwxXSxbMCw1LCJ1Il0sWzEsMywidV9uIl0sWzIsNCwidSJdLFswLDFdLFsxLDIsImRfbiJdLFs1LDNdLFszLDQsImRfbiIsMl0sWzIsNl0sWzQsN10sWzgsNV0sWzksMF1d}{Link
+to diagram} Recall that \(u_n: Z_n(C) \to Z_n(D)\) and
+\(u_n: B_n(C) \to B_n(D)\) preserves these submodules, so there are
+induced maps \(u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D)\) where
 \(H_n(C) \coloneqq Z_n(C) / B_nn-1(C)\). Moreover, taking
 \(H_n({\,\cdot\,})\) is a functor from
 \(\operatorname{Ch}({R{\hbox{-}}\operatorname{mod}}) \to {R{\hbox{-}}\operatorname{mod}}\)
 for any fixed \(n\) and on objects \(C\mapsto H_n(C)\) and chain maps
 \(u_{n} \to H_n(u) \coloneqq u_{*, n}\). Note the lower indices denote
 maps going down in degree.
+\end{quote}
 
 \end{remark}
 
@@ -587,11 +590,6 @@ Suppose \(f:B\to C\) is a chain map, then there exist induced maps on
 the levelwise kernels and cokernels, so we can form the \textbf{kernel}
 and \textbf{cokernel} complex:
 
-\begin{quote}
-\href{https://q.uiver.app/?q=WzAsMTgsWzIsNCwiQ19uIl0sWzQsNCwiQ197bi0xfSJdLFsyLDIsIkJfbiJdLFs0LDIsIkJfe24tMX0iXSxbMiwwLCJcXGtlciBmX24iXSxbNCwwLCJcXGtlciBmX3tuLTF9Il0sWzIsNiwiXFxjb2sgZl9uIl0sWzQsNiwiXFxjb2sgZl97bi0xfSJdLFszLDVdLFs0LDVdLFs2LDAsIlxcY2RvdHMiXSxbNiwyLCJcXGNkb3RzIl0sWzYsNCwiXFxjZG90cyJdLFs2LDYsIlxcY2RvdHMiXSxbMCw2LCJcXGNkb3RzIl0sWzAsNCwiXFxjZG90cyJdLFswLDIsIlxcY2RvdHMiXSxbMCwwLCJcXGNkb3RzIl0sWzAsMSwiZF9uIl0sWzIsMywiZF9uIl0sWzQsNSwiXFxleGlzdHMgZF9uIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsNywiXFxleGlzdHMgZF9uIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsMiwiaV97bn0iLDFdLFsyLDAsImZfbiIsMV0sWzAsNiwiXFxwaV9uIiwxXSxbMywxLCJmX3tuLTF9IiwxXSxbMSw3LCJcXHBpX3tuLTF9IiwxXSxbNSwzLCJpX3tuLTF9IiwxXSxbMTcsNF0sWzE2LDJdLFsxNSwwXSxbMTQsNl0sWzcsMTNdLFsxLDEyXSxbMywxMV0sWzUsMTBdXQ==}{Link
-to Diagram}
-\end{quote}
-
 \begin{center}
 \begin{tikzcd}
     \cdots && {\ker f_n} && {\ker f_{n-1}} && \cdots \\
@@ -621,6 +619,11 @@ to Diagram}
     \arrow[from=1-5, to=1-7]
 \end{tikzcd}
 \end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMTgsWzIsNCwiQ19uIl0sWzQsNCwiQ197bi0xfSJdLFsyLDIsIkJfbiJdLFs0LDIsIkJfe24tMX0iXSxbMiwwLCJcXGtlciBmX24iXSxbNCwwLCJcXGtlciBmX3tuLTF9Il0sWzIsNiwiXFxjb2sgZl9uIl0sWzQsNiwiXFxjb2sgZl97bi0xfSJdLFszLDVdLFs0LDVdLFs2LDAsIlxcY2RvdHMiXSxbNiwyLCJcXGNkb3RzIl0sWzYsNCwiXFxjZG90cyJdLFs2LDYsIlxcY2RvdHMiXSxbMCw2LCJcXGNkb3RzIl0sWzAsNCwiXFxjZG90cyJdLFswLDIsIlxcY2RvdHMiXSxbMCwwLCJcXGNkb3RzIl0sWzAsMSwiZF9uIl0sWzIsMywiZF9uIl0sWzQsNSwiXFxleGlzdHMgZF9uIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsNywiXFxleGlzdHMgZF9uIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsMiwiaV97bn0iLDFdLFsyLDAsImZfbiIsMV0sWzAsNiwiXFxwaV9uIiwxXSxbMywxLCJmX3tuLTF9IiwxXSxbMSw3LCJcXHBpX3tuLTF9IiwxXSxbNSwzLCJpX3tuLTF9IiwxXSxbMTcsNF0sWzE2LDJdLFsxNSwwXSxbMTQsNl0sWzcsMTNdLFsxLDEyXSxbMywxMV0sWzUsMTBdXQ==}{Link
+to Diagram}
+\end{quote}
 
 Here \(\ker f \leq B\) is a subcomplex, and \(\operatorname{coker}f\) is
 a quotient complex of \(C\). The chain map \(i: \ker f\to B\) is a
