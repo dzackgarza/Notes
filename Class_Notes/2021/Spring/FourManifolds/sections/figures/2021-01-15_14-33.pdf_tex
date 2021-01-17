@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{511.88925412bp}%
+    \setlength{\unitlength}{501.32752162bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,12 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.8790964)%
+  \begin{picture}(1,0.67851346)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-01-15_14-33.pdf}}%
-    \put(0.29303213,0.62269326){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Je\end{tabular}}}}%
-    \put(0.59339013,0.38094179){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}e\end{tabular}}}}%
-    \put(0.76920932,0.7106029){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T_p X$\end{tabular}}}}%
+    \put(0.26686048,0.43701246){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$J \vector{e}$\end{tabular}}}}%
+    \put(0.60589139,0.3643476){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vector{e}$\end{tabular}}}}%
+    \put(0.52910662,0.56689418){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T_p X$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-01-15_14-33.pdf}}%
   \end{picture}%
 \endgroup%
