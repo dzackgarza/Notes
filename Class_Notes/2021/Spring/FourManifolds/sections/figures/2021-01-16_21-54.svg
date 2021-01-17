@@ -24,7 +24,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="737.75541"
+     inkscape:cx="780.6016"
      inkscape:cy="155.07345"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -39,8 +39,8 @@
      inkscape:snap-tangential="true"
      inkscape:window-width="943"
      inkscape:window-height="1027"
-     inkscape:window-x="2332"
-     inkscape:window-y="1177"
+     inkscape:window-x="1568"
+     inkscape:window-y="1121"
      inkscape:window-maximized="0">
     <sodipodi:guide
        position="10.872886,146.82201"
@@ -169,9 +169,9 @@
        y="26.375387"
        id="text927"><tspan
          sodipodi:role="line"
-         id="tspan925"
          x="119.87706"
          y="26.375387"
-         style="stroke-width:0.540857">$\RR^2$</tspan></text>
+         style="stroke-width:0.540857"
+         id="tspan25">\fontsize{19pt}{1em} $\RR^2$</tspan></text>
   </g>
 </svg>
