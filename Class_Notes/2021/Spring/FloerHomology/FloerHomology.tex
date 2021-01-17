@@ -93,8 +93,9 @@ inaccuracies are almost certainly my own. } } \\
 \hypertarget{course-description}{%
 \subsection{Course Description}\label{course-description}}
 
-\begin{quote}
-I am teaching a topics course about Heegaard Floer homology next
+Description from Akram:
+
+``I am teaching a topics course about Heegaard Floer homology next
 semester. Heegaard Floer homology was defined by Peter Ozsváth and
 Zoltan Szabó around 2000. It is a package of powerful invariants of
 smooth 3- and 4-manifolds, knots/links and contact structures. Over the
@@ -112,8 +113,10 @@ applications of the theory to low-dimensional topology and knot theory.
 In particular, several numerical invariants have been defined using this
 homological invariants. At the end of the semester, I would expect each
 one of you to learn the construction of one of these invariants (of
-course with my help) and present it to the class.
-\end{quote}
+course with my help) and present it to the class.''
+
+\hypertarget{intro-and-motivation}{%
+\subsection{Intro and Motivation}\label{intro-and-motivation}}
 
 We'll assume everything is smooth and oriented. Osvath-Szabo (2000): to
 closed 3-manifolds we assign a graded abelian group \(\widehat{HF}(M)\),
@@ -133,26 +136,27 @@ which can be computed combinatorially. There are several other variants:
 
 This can be used to compute the Thurston seminorm: for
 \(\alpha\in H_2(M)\) with \(\alpha\in [S]\) for \(S\) a closed surface
-where \(S = \bigcup_{i=1}^n S_i\) with the \(S_i\) closed. Then {[}
-{\left\lVert { \alpha } \right\rVert} \coloneqq\min\emph{S
-\sum}\{i=1\}\^{}n \max``\{=tex\} =
-
+where \(S = \bigcup_{i=1}^n S_i\) with the \(S_i\) closed. Then
+\begin{align*}
+{\left\lVert { \alpha } \right\rVert} \coloneqq\min_S \sum_{i=1}^n \max\left\{{0, - \chi(S_i) }\right\} 
+=
 \begin{cases}
 0 & \text{if } S_i \text{ is a sphere or torus} \\ 
 \\
 - \chi(S_i) = 2g(S_i) - 2  & \text{ else} .
 \end{cases}
-
-.{]}
+.\end{align*}
 
 \begin{theorem}[Osvath-Szabo]
 
 \(HF\) \textbf{detects} the Thurston seminorm, and there is a splitting
-\(HF^0(M) = \bigoplus _{S\in \Spin^c(M)} HF^0(M, S)\) where
-\(S \in \Spin^c(M)\) is a spin structure: an oriented 2-dimensional
-vector bundle. Moreover, \({\left\lVert {a} \right\rVert}\) can be
-computed from this data as
-\({\left\lVert {a} \right\rVert} = \max \abs{ {\left\langle {c_1(s)},~{\alpha } \right\rangle}\)
+\begin{align*}
+HF^0(M) = \bigoplus _{S\in {\operatorname{Spin}}^c(M)} HF^0(M, S) 
+\end{align*}
+where \(S \in {\operatorname{Spin}}^c(M)\) is a spin structure: an
+oriented 2-dimensional vector bundle. Moreover,
+\({\left\lVert {a} \right\rVert}\) can be computed from this data as
+\({\left\lVert {a} \right\rVert} = \max {\left\lvert { {\left\langle {c_1(s)},~{\alpha } \right\rangle} } \right\rvert}\)
 over \(\widehat{HF}(M, S) \neq 0\).
 
 \end{theorem}

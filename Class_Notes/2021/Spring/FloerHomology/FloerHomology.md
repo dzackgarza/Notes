@@ -105,6 +105,7 @@
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Top}[0]{{\operatorname{Top}}}
 \newcommand{\Ab}[0]{{\operatorname{Ab}}}
+\newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
 \newcommand{\hoTop}[0]{{\operatorname{hoTop}}}
 \newcommand{\Sch}[0]{{\operatorname{Sch}}}
@@ -436,7 +437,11 @@
 
 ## Course Description
 
-> I am teaching a topics course about Heegaard Floer homology next semester. Heegaard Floer homology was defined by Peter Ozsváth and Zoltan Szabó around 2000. It is a package of powerful invariants of smooth 3- and 4-manifolds, knots/links and contact structures. Over the last two decades, it has become a central tool in low-dimensional topology. It has been used extensively to study and resolve important questions concerning unknotting number, slice genus, knot concordance and Dehn surgery. It has been employed in critical ways to study taut foliations, contact structures and smooth 4-manifolds. There are also many rich connections between Heegaard Floer homology and other manifold and knot invariants coming from gauge theory as well as representation theory. We will learn the basic construction of Heegaard Floer homology, starting with the definition of the 3-manifold and knot invariants. In the second half of this course, we will turn to computations and applications of the theory to low-dimensional topology and knot theory. In particular, several numerical invariants have been defined using this homological invariants. At the end of the semester, I would expect each one of you to learn the construction of one of these invariants (of course with my help) and present it to the class.
+Description from Akram:
+
+"I am teaching a topics course about Heegaard Floer homology next semester. Heegaard Floer homology was defined by Peter Ozsváth and Zoltan Szabó around 2000. It is a package of powerful invariants of smooth 3- and 4-manifolds, knots/links and contact structures. Over the last two decades, it has become a central tool in low-dimensional topology. It has been used extensively to study and resolve important questions concerning unknotting number, slice genus, knot concordance and Dehn surgery. It has been employed in critical ways to study taut foliations, contact structures and smooth 4-manifolds. There are also many rich connections between Heegaard Floer homology and other manifold and knot invariants coming from gauge theory as well as representation theory. We will learn the basic construction of Heegaard Floer homology, starting with the definition of the 3-manifold and knot invariants. In the second half of this course, we will turn to computations and applications of the theory to low-dimensional topology and knot theory. In particular, several numerical invariants have been defined using this homological invariants. At the end of the semester, I would expect each one of you to learn the construction of one of these invariants (of course with my help) and present it to the class."
+
+## Intro and Motivation
 
 
 We'll assume everything is smooth and oriented.
@@ -454,7 +459,6 @@ Then
 \[
 \norm{ \alpha } \da \min_S \sum_{i=1}^n \max\ts{0, - \chi(S_i) } 
 =
-
 \begin{cases}
 0 & \text{if } S_i \text{ is a sphere or torus} \\ 
 \\
@@ -464,9 +468,12 @@ Then
 
 
 :::{.theorem title="Osvath-Szabo"}
-$HF$ **detects** the Thurston seminorm, and there is a splitting \( HF^0(M) = \bigoplus _{S\in \Spin^c(M)} HF^0(M, S) \) where $S \in \Spin^c(M)$ is a spin structure: an oriented 2-dimensional vector bundle.
-Moreover, $\norm{a}$ can be computed from this data as \( \norm{a} = \max \abs{ \inner{c_1(s)}{\alpha } \) over \( \hat{HF}(M, S) \neq 0 \).
- 
+$HF$ **detects** the Thurston seminorm, and there is a splitting 
+\[
+HF^0(M) = \bigoplus _{S\in \Spin^c(M)} HF^0(M, S) 
+\] 
+where $S \in \Spin^c(M)$ is a spin structure: an oriented 2-dimensional vector bundle.
+Moreover, $\norm{a}$ can be computed from this data as \( \norm{a} = \max \abs{ \inner{c_1(s)}{\alpha } } \) over \( \hat{HF}(M, S) \neq 0 \).
 :::
 
 
