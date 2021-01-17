@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{521.99029908bp}%
+    \setlength{\unitlength}{516.15645495bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,13 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.76123913)%
+  \begin{picture}(1,0.76984301)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-01-16_21-54.pdf}}%
-    \put(0.44467951,0.55241031){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S^1$\end{tabular}}}}%
-    \put(-0.00295731,0.65391951){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$U_2 \injects \RR$\end{tabular}}}}%
-    \put(0.81062493,0.15369375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$U_1 \injects \RR$\end{tabular}}}}%
-    \put(0.89619099,0.66780514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\RR^2$\end{tabular}}}}%
+    \put(0.50018136,0.55865391){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S^1$\end{tabular}}}}%
+    \put(-0.00299073,0.68844286){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$U_2 \injects \RR$\end{tabular}}}}%
+    \put(0.74900885,0.04406021){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$U_1 \injects \RR$\end{tabular}}}}%
+    \put(0.9009218,0.65544632){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\RR^2$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

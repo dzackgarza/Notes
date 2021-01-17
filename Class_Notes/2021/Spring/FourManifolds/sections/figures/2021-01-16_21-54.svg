@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="219.38589mm"
+   width="182.08853mm"
    height="140.17958mm"
-   viewBox="0 0 219.38589 140.17958"
+   viewBox="0 0 182.08853 140.17958"
    version="1.1"
    id="svg8"
    sodipodi:docname="2021-01-16_21-54.svg"
@@ -23,9 +23,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="200.06171"
-     inkscape:cy="170.57259"
+     inkscape:zoom="1.4"
+     inkscape:cx="595.23411"
+     inkscape:cy="326.48843"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -43,19 +43,19 @@
      inkscape:window-y="964"
      inkscape:window-maximized="0">
     <sodipodi:guide
-       position="10.872887,146.82201"
+       position="7.6260614,144.2615"
        orientation="0,793.70079"
        id="guide10" />
     <sodipodi:guide
-       position="220.87288,146.82201"
+       position="217.62606,144.2615"
        orientation="559.37008,0"
        id="guide12" />
     <sodipodi:guide
-       position="220.87288,-1.1779859"
+       position="217.62606,-3.7384947"
        orientation="0,-793.70079"
        id="guide14" />
     <sodipodi:guide
-       position="10.872887,-1.1779859"
+       position="7.6260614,-3.7384947"
        orientation="-559.37008,0"
        id="guide16" />
     <inkscape:grid
@@ -63,8 +63,8 @@
        id="grid20"
        dotted="true"
        units="px"
-       originx="115.87288"
-       originy="67.357576" />
+       originx="112.62605"
+       originy="69.918088" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -84,7 +84,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(10.872887,-6.6424334)">
+     transform="translate(7.6260613,-4.0819247)">
     <circle
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.878425;stroke-dashoffset:0.0999999;stroke-opacity:1"
        id="path837"
@@ -132,13 +132,13 @@
     <text
        xml:space="preserve"
        style="font-size:6.56056px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.164014"
-       x="1.0204377"
-       y="23.844465"
+       x="-8.170639"
+       y="18.903959"
        id="text883-7"><tspan
          sodipodi:role="line"
          id="tspan881-5"
-         x="1.0204377"
-         y="23.844465"
+         x="-8.170639"
+         y="18.903959"
          style="stroke-width:0.164014">$U_2 \injects \RR$</tspan></text>
     <text
        xml:space="preserve"
@@ -154,23 +154,23 @@
     <text
        xml:space="preserve"
        style="font-size:3.86427px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.0966071"
-       x="150.83882"
-       y="115.95933"
+       x="128.75986"
+       y="136.23865"
        id="text883-7-3"><tspan
          sodipodi:role="line"
          id="tspan881-5-5"
-         x="150.83882"
-         y="115.95933"
+         x="128.75986"
+         y="136.23865"
          style="stroke-width:0.0966071">$U_1 \injects \RR$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.10944px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.102736"
-       x="166.59552"
-       y="21.287474"
+       x="156.42146"
+       y="24.912251"
        id="text927"><tspan
          sodipodi:role="line"
-         x="166.59552"
-         y="21.287474"
+         x="156.42146"
+         y="24.912251"
          style="stroke-width:0.102736"
          id="tspan25">$\RR^2$</tspan></text>
   </g>
