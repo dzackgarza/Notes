@@ -41,7 +41,11 @@ Recall that a **topological manifold** (or \( C^0 \) manifold) \( X \) is a Haus
 ::: {.example title="The circle"}
 \( S^1 \) is covered by two charts homeomorphic to intervals:
 
-![image_2021-01-13-14-02-19](figures/image_2021-01-13-14-02-19.png)
+```{=tex}
+\begin{tikzpicture}
+\node (node_one) at (0,0) { \fontsize{45pt}{1em} \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-16_21-54.pdf_tex} };
+\end{tikzpicture}
+```
 :::
 
 ::: {.remark}
@@ -95,16 +99,22 @@ defines a diffeomorphism between the two smooth structures.
 ::: {.proof title="sketch"}
 Let \( \tilde {\mathbb{R}} \) be some exotic \( {\mathbb{R}} \), i.e. a smooth manifold homeomorphic to \( {\mathbb{R}} \). Cover this by coordinate charts to the standard \( {\mathbb{R}} \):
 
-![image_2021-01-13-14-22-18](figures/image_2021-01-13-14-22-18.png)
-
+```{=tex}
+\begin{tikzpicture}
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-16_22-31.pdf_tex} };
+\end{tikzpicture}
+```
 ::: {.fact}
 There exists a cover which is *locally finite* and supports a *partition of unity*: a collection of smooth functions \( f_i: U_i \to {\mathbb{R}} \) with \( f_i \geq 0 \) and \( {\operatorname{supp}}f \subseteq U_i \) such that \( \sum f_i = 1 \) (*i.e., bump functions*). It is also a purely topological fact that \( \tilde {\mathbb{R}} \) is orientable.
 :::
 
 So we have bump functions:
 
-![image_2021-01-13-14-25-30](figures/image_2021-01-13-14-25-30.png)
-
+```{=tex}
+\begin{tikzpicture}
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-16_22-37.pdf_tex} };
+\end{tikzpicture}
+```
 Take a smooth vector field \( V_i \) on \( U_i \) everywhere aligning with the orientation. Then \( \sum f_i V_i \) is a smooth nowhere vector field on \( X \) that is nowhere zero in the direction of the orientation. Taking the associated flow
 \[
 {\mathbb{R}}&\to \tilde {\mathbb{R}}\\
