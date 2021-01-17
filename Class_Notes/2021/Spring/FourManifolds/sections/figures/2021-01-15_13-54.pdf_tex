@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{578.49411963bp}%
+    \setlength{\unitlength}{567.35820436bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,15 +50,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.35055309)%
+  \begin{picture}(1,0.30916499)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-01-15_13-54.pdf}}%
-    \put(0.53564105,0.17409493){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
-    \put(0.53564105,0.11705022){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
-    \put(0.92497275,0.24540073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S^7\end{tabular}}}}%
+    \put(0.502128,0.17354797){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f$\\\end{tabular}}}}%
+    \put(0.502128,0.10216752){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-01-15_13-54.pdf}}%
-    \put(-0.00163064,0.01604514){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(-0.00163064,0.32578186){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eps$\end{tabular}}}}%
+    \put(-0.00095193,0.00793173){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(-0.00097221,0.26513055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eps$\end{tabular}}}}%
+    \put(0.93391846,0.22934753){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S^7$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
