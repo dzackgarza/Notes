@@ -23,9 +23,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="780.6016"
-     inkscape:cy="155.07345"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="912.18739"
+     inkscape:cy="161.68549"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -165,12 +165,12 @@
     <text
        xml:space="preserve"
        style="font-size:21.6342px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.540857"
-       x="119.87706"
-       y="26.375387"
+       x="149.66391"
+       y="11.825054"
        id="text927"><tspan
          sodipodi:role="line"
-         x="119.87706"
-         y="26.375387"
+         x="149.66391"
+         y="11.825054"
          style="stroke-width:0.540857"
          id="tspan25">\fontsize{19pt}{1em} $\RR^2$</tspan></text>
   </g>
