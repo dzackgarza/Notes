@@ -867,6 +867,271 @@ smoothly embedded surfaces in 4-manifolds, which has been done recently.
 
 \end{remark}
 
+\hypertarget{lecture-2-tuesday-january-19}{%
+\section{Lecture 2 (Tuesday, January
+19)}\label{lecture-2-tuesday-january-19}}
+
+\begin{definition}[Genus $g$ handlebody]
+
+?
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-35-48.png}
+\caption{image\_2021-01-19-00-35-48}
+\end{figure}
+
+\end{definition}
+
+\begin{definition}[Heegard Decomposition]
+
+?
+
+\end{definition}
+
+\begin{definition}[Heegard Diagram]
+
+?
+
+\end{definition}
+
+\begin{definition}[Symplectic Manifold]
+
+?
+
+\end{definition}
+
+\begin{definition}[Lagrangian]
+
+?
+
+\end{definition}
+
+\begin{align*}
+{{\partial}}x = \sum_y \sum_{\mu(\varphi) = 1} \# \widehat{\mathcal{M}} (\varphi)y &&  \widehat{\mathcal{M}}(\varphi) = \mathcal{M}(\varphi) / {\mathbb{R}}
+.\end{align*}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-40-08.png}
+\caption{i}
+\end{figure}
+
+\begin{definition}[Dehn Surgery]
+
+?
+
+\end{definition}
+
+\begin{definition}[$p/q$ Surgery]
+
+?
+
+\end{definition}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-41-55.png}
+\caption{image\_2021-01-19-00-41-55}
+\end{figure}
+
+\hypertarget{morse-theory}{%
+\subsection{Morse Theory}\label{morse-theory}}
+
+\begin{definition}[Critical Point]
+
+?
+
+\end{definition}
+
+\begin{definition}[Hessian / Second Derivative]
+
+?
+
+\end{definition}
+
+\begin{definition}[Nondegenerate Critical Points]
+
+?
+
+\end{definition}
+
+\begin{definition}[Index of a critical point]
+
+?
+
+\end{definition}
+
+\begin{definition}[Morse Function]
+
+?
+
+\end{definition}
+
+\begin{theorem}[Morse Lemma]
+
+?
+
+\end{theorem}
+
+\begin{align*}
+\begin{bmatrix}
+-2&&&&&&\\
+&\ddots&&&&&\\
+&&-2&&&&\\
+&&&2&&&\\
+&&&&\ddots&&\\
+&&&&&2&\\
+&&&&&&2
+\end{bmatrix}
+.\end{align*}
+
+\begin{example}[Sphere]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-49-32.png}
+\caption{image\_2021-01-19-00-49-32}
+\end{figure}
+
+\end{example}
+
+\begin{example}[Torus]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-49-53.png}
+\caption{image\_2021-01-19-00-49-53}
+\end{figure}
+
+\end{example}
+
+\begin{lemma}[?]
+
+If \(f ^{-1} ([a, b])\) has no critical point, then
+\(f ^{-1} (a) \cong f ^{-1} (b)\) and \(M_a \cong M_b\).
+
+\end{lemma}
+
+\begin{proof}[?]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-51-14.png}
+\caption{image\_2021-01-19-00-51-14}
+\end{figure}
+
+\end{proof}
+
+\begin{theorem}[?]
+
+Suppose \(f ^{-1} ([a, b])\) contains exactly one critical point \(p\)
+with \(\mathop{\mathrm{Ind}}(p) = \lambda\) and \(f(p) = c\). Then
+\begin{align*}
+M_b = M_a \cup\qty{ D^ \lambda \times D^{n - \lambda} }
+\end{align*}
+where \(n \coloneqq\dim M\).
+
+\end{theorem}
+
+\begin{example}[?]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-53-07.png}
+\caption{image\_2021-01-19-00-53-07}
+\end{figure}
+
+\end{example}
+
+\begin{definition}[Unstable Submanifold]
+
+\begin{align*}
+W_f^u(p) \coloneqq\left\{{p}\right\} \cup\left\{{
+\dot{\gamma(t)} = -\nabla f(\gamma(t)),\, \lim_{t\to -\infty} \gamma(t) = p,\, t\in {\mathbb{R}}
+}\right\}
+.\end{align*}
+
+\end{definition}
+
+\begin{lemma}[?]
+
+If \(\mathop{\mathrm{Ind}}(p) = \lambda\) then
+\(W_f^u(p) \cong {\mathbb{R}}^ \lambda\).
+
+\end{lemma}
+
+\begin{example}[?]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-55-24.png}
+\caption{image\_2021-01-19-00-55-24}
+\end{figure}
+
+\end{example}
+
+\begin{example}[?]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-55-41.png}
+\caption{image\_2021-01-19-00-55-41}
+\end{figure}
+
+\end{example}
+
+\begin{definition}[Stable Manifold]
+
+\begin{align*}
+W_f^s(p) \coloneqq\left\{{p}\right\} \cup\left\{{
+\dot{\gamma(t)} = -\nabla f(\gamma(t)),\, \lim_{t\to +\infty} \gamma(t) = p,\, t\in {\mathbb{R}}
+}\right\}
+.\end{align*}
+
+\end{definition}
+
+\begin{lemma}[?]
+
+If \(\mathop{\mathrm{Ind}}(p) = \lambda\) then
+\(W_f^s(p) \cong {\mathbb{R}}^{n- \lambda}\).
+
+\end{lemma}
+
+\begin{definition}[$C^\infty$ ]
+
+\(C^ \infty (M; {\mathbb{R}})\) is defined as smooth function
+\(M\to |RR\), topologized as:
+
+\begin{itemize}
+\tightlist
+\item
+  ?
+\item
+  ?
+\end{itemize}
+
+And a basis for open neighborhoods around \(p\) is given by
+\begin{align*}
+N_g(f) = \left\{{
+g:M\to {\mathbb{R}}{~\mathrel{\Big|}~}
+{\left\lvert {
+{\frac{\partial ^k g}{\partial {\partial}x _{i_1} \cdots {\partial}x _{i_k} }\,}(p)
+- 
+{\frac{\partial ^k f}{\partial {\partial}x _{i_1} \cdots {\partial}x _{i_k} }\,}(p)
+} \right\rvert} < \infty\, \forall \alpha,\, \forall p\in h_ \alpha(C_ \alpha)
+}\right\}
+.\end{align*}
+
+\end{definition}
+
+\begin{theorem}[?]
+
+The set of Morse functions on \(M\) is open and dense in
+\(C^ \infty (M; {\mathbb{R}})\).
+
+\end{theorem}
+
 \addsec{ToDos}
 \listoftodos[List of Todos]
 \cleardoublepage

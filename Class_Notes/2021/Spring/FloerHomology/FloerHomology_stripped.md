@@ -400,6 +400,167 @@ F_{W, F t}^{\,\cdot\,}: HF^{\,\cdot\,}(M_1, K_1, { \left.{{t}} \right|_{{M_1}} }
 This smoothly embedded surface in the middle can be used to study other smoothly embedded surfaces in 4-manifolds, which has been done recently.
 :::
 
+# Lecture 2 (Tuesday, January 19)
+
+::: {.definition title="Genus $g$ handlebody"}
+?
+
+![image_2021-01-19-00-35-48](figures/image_2021-01-19-00-35-48.png)
+:::
+
+::: {.definition title="Heegard Decomposition"}
+?
+:::
+
+::: {.definition title="Heegard Diagram"}
+?
+:::
+
+::: {.definition title="Symplectic Manifold"}
+?
+:::
+
+::: {.definition title="Lagrangian"}
+?
+:::
+
+\[
+{{\partial}}x = \sum_y \sum_{\mu(\varphi) = 1} \# \widehat{\mathcal{M}} (\varphi)y &&  \widehat{\mathcal{M}}(\varphi) = \mathcal{M}(\varphi) / {\mathbb{R}}
+.\]
+
+![i](figures/image_2021-01-19-00-40-08.png)
+
+::: {.definition title="Dehn Surgery"}
+?
+:::
+
+::: {.definition title="$p/q$ Surgery"}
+?
+:::
+
+![image_2021-01-19-00-41-55](figures/image_2021-01-19-00-41-55.png)
+
+## Morse Theory
+
+::: {.definition title="Critical Point"}
+?
+:::
+
+::: {.definition title="Hessian / Second Derivative"}
+?
+:::
+
+::: {.definition title="Nondegenerate Critical Points"}
+?
+:::
+
+::: {.definition title="Index of a critical point"}
+?
+:::
+
+::: {.definition title="Morse Function"}
+?
+:::
+
+::: {.theorem title="Morse Lemma"}
+?
+:::
+
+\[
+\begin{bmatrix}
+-2&&&&&&\\
+&\ddots&&&&&\\
+&&-2&&&&\\
+&&&2&&&\\
+&&&&\ddots&&\\
+&&&&&2&\\
+&&&&&&2
+\end{bmatrix}
+.\]
+
+::: {.example title="Sphere"}
+![image_2021-01-19-00-49-32](figures/image_2021-01-19-00-49-32.png)
+:::
+
+::: {.example title="Torus"}
+![image_2021-01-19-00-49-53](figures/image_2021-01-19-00-49-53.png)
+:::
+
+::: {.lemma title="?"}
+If \( f ^{-1} ([a, b]) \) has no critical point, then \( f ^{-1} (a) \cong f ^{-1} (b) \) and \( M_a \cong M_b \).
+:::
+
+::: {.proof title="?"}
+![image_2021-01-19-00-51-14](figures/image_2021-01-19-00-51-14.png)
+:::
+
+::: {.theorem title="?"}
+Suppose \( f ^{-1} ([a, b]) \) contains exactly one critical point \( p \) with \( \mathop{\mathrm{Ind}}(p) = \lambda \) and \( f(p) = c \). Then
+\[
+M_b = M_a \cup\qty{ D^ \lambda \times D^{n - \lambda} }
+\]
+where \( n \coloneqq\dim M \).
+:::
+
+::: {.example title="?"}
+![image_2021-01-19-00-53-07](figures/image_2021-01-19-00-53-07.png)
+:::
+
+::: {.definition title="Unstable Submanifold"}
+\[
+W_f^u(p) \coloneqq\left\{{p}\right\} \cup\left\{{
+\dot{\gamma(t)} = -\nabla f(\gamma(t)),\, \lim_{t\to -\infty} \gamma(t) = p,\, t\in {\mathbb{R}}
+}\right\}
+.\]
+:::
+
+::: {.lemma title="?"}
+If \( \mathop{\mathrm{Ind}}(p) = \lambda \) then \( W_f^u(p) \cong {\mathbb{R}}^ \lambda \).
+:::
+
+::: {.example title="?"}
+![image_2021-01-19-00-55-24](figures/image_2021-01-19-00-55-24.png)
+:::
+
+::: {.example title="?"}
+![image_2021-01-19-00-55-41](figures/image_2021-01-19-00-55-41.png)
+:::
+
+::: {.definition title="Stable Manifold"}
+\[
+W_f^s(p) \coloneqq\left\{{p}\right\} \cup\left\{{
+\dot{\gamma(t)} = -\nabla f(\gamma(t)),\, \lim_{t\to +\infty} \gamma(t) = p,\, t\in {\mathbb{R}}
+}\right\}
+.\]
+:::
+
+::: {.lemma title="?"}
+If \( \mathop{\mathrm{Ind}}(p) = \lambda \) then \( W_f^s(p) \cong {\mathbb{R}}^{n- \lambda} \).
+:::
+
+::: {.definition title="$C^\\infty$ "}
+\( C^ \infty (M; {\mathbb{R}}) \) is defined as smooth function \( M\to |RR \), topologized as:
+
+-   ?
+-   ?
+
+And a basis for open neighborhoods around \( p \) is given by
+\[
+N_g(f) = \left\{{
+g:M\to {\mathbb{R}}{~\mathrel{\Big|}~}
+{\left\lvert {
+{\frac{\partial ^k g}{\partial {\partial}x _{i_1} \cdots {\partial}x _{i_k} }\,}(p)
+- 
+{\frac{\partial ^k f}{\partial {\partial}x _{i_1} \cdots {\partial}x _{i_k} }\,}(p)
+} \right\rvert} < \infty\, \forall \alpha,\, \forall p\in h_ \alpha(C_ \alpha)
+}\right\}
+.\]
+:::
+
+::: {.theorem title="?"}
+The set of Morse functions on \( M \) is open and dense in \( C^ \infty (M; {\mathbb{R}}) \).
+:::
+
 [^1]: See Sarkour-Wang
 
 [^2]: This is the strongest variant.
