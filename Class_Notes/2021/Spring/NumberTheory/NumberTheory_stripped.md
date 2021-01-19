@@ -264,9 +264,9 @@ where \( A \in \operatorname{Mat}(n\times m, {\mathbb{Z}}) \). We can rearrange 
 =
 \mathbf{0}
 .\]
-Not all of the \( \beta_i \) can be zero since \( M\neq 0 \), and thus \( \alpha \operatorname{id}- A \) is singular and thus has determinant zero, so \( \det(x \operatorname{id}- A)\Big|_{x=a} = 0 \). We have \[ x`\operatorname{id} `{=tex}- A =
-
-```{=tex}
+Not all of the \( \beta_i \) can be zero since \( M\neq 0 \), and thus \( \alpha \operatorname{id}- A \) is singular and thus has determinant zero, so \( \det(x \operatorname{id}- A)\Big|_{x=a} = 0 \). We have
+\[
+x\operatorname{id}- A = 
 \begin{bmatrix}
 x - a_{1,} &  & &
 \\
@@ -276,8 +276,8 @@ x - a_{1,} &  & &
 \\
 & &  & x - a_{m, m}
 \end{bmatrix}
-```
-,\] where the off-diagonal components are constants in \( {\mathbb{Z}} \) coming from \( A \). Taking the determinant yields a monic polynomial: the term of leading degree comes from multiplying the diagonal components, and expanding over the remaining minors only yields terms of smaller degree. So \( \det (x\operatorname{id}- A) \in {\mathbb{Z}}[x] \) is monic.
+,\]
+where the off-diagonal components are constants in \( {\mathbb{Z}} \) coming from \( A \). Taking the determinant yields a monic polynomial: the term of leading degree comes from multiplying the diagonal components, and expanding over the remaining minors only yields terms of smaller degree. So \( \det (x\operatorname{id}- A) \in {\mathbb{Z}}[x] \) is monic.
 :::
 
 ::: {.proof title="of theorem"}

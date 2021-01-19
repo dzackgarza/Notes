@@ -763,7 +763,6 @@ Not  all of the $\beta_i$ can be zero since $M\neq 0$, and thus \( \alpha \id - 
 We have 
 \[
 x\id - A = 
-
 \begin{bmatrix}
 x - a_{1,} &  & &
 \\
