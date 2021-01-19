@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-01-17 }
+{\tiny \textit{Last updated:} 2021-01-19 }
 \end{flushleft}
 
 
@@ -305,6 +305,543 @@ When does a ring admit unique factorization? Do you even \emph{need} it?
 This will lead to a discussion of things like the \textbf{class number},
 which measure the failure of unique factorization. In general, the above
 type of proof will work when the class number is 3!
+
+\hypertarget{lecture-2-tuesday-january-19}{%
+\section{Lecture 2 (Tuesday, January
+19)}\label{lecture-2-tuesday-january-19}}
+
+Today: Ch.2 of the book, ``Cast of Characters''. Note that all rings
+will be commutative and unital in this course.
+
+Last time: looked at factorization in
+\({\mathbb{Z}}[\sqrt 2], {\mathbb{Z}}[\sqrt{26}]\). Where do rings like
+this come from?
+
+\begin{definition}[Number Field]
+
+A \textbf{number field} is a subfield \(K \subseteq {\mathbb{C}}\) such
+that \([K: {\mathbb{Q}}] < \infty\).
+
+\end{definition}
+
+\begin{remark}
+
+Some authors don't require \(K \subseteq {\mathbb{C}}\), but any finite
+extension of \({\mathbb{Q}}\) will embed into \({\mathbb{C}}\) so
+there's no harm in this extra requirement.
+
+\end{remark}
+
+\begin{example}[?]
+
+\({\mathbb{Q}}[\sqrt[3]{2}, {\mathbb{Q}}[\sqrt 2, \sqrt[5]{7}]\) or
+\({\mathbb{Q}}(\theta)\) where \(\theta\) is a root of \(x^5 - x - 1\)
+(which you can check is irreducible. Now that the round vs.~square
+brackets here won't make a difference, since we're adjoining algebraic
+numbers.
+
+\end{example}
+
+\begin{proposition}[?]
+
+Let \(K_{/{\mathbb{Q}}}\) be a finite extension, say of degree
+\(n\coloneqq[K: {\mathbb{Q}}]\). Then there are \(n\) distinct
+embeddings \footnote{An injective ring morphism.} of \(K\) into
+\({\mathbb{C}}\)
+
+\end{proposition}
+
+\begin{proof}[?]
+
+We have \(K_{/{\mathbb{Q}}}\), which is necessarily separable since
+\(\operatorname{ch}({\mathbb{Q}}) = 0\). By the primitive element
+theorem, we can write \(K = {\mathbb{Q}}(\theta)\) where \(\theta\) is a
+root of some degree \(n\) irreducible polynomial
+\(f(x) \in {\mathbb{Q}}[x]\). Since \({\mathbb{C}}\) is algebraically
+closed, \(f\) splits completely over \({\mathbb{C}}\) as
+\(f = \prod_{i=1}^n (x- \theta_i\) which each \(\theta_i \in CC\)
+distinct since \(f\) was irreducible and we're in characteristic zero.
+Then for each \(i\) there is an embedding \(K = {\mathbb{Q}}[\theta]\)
+given by
+\begin{align*}
+\iota_i: {\mathbb{Q}}[\theta] &\hookrightarrow{\mathbb{C}}\\
+g(\theta) &\mapsto g(\theta_i)
+.\end{align*}
+There are some easy things to check:
+
+\begin{itemize}
+\tightlist
+\item
+  This is well-defined: elements in \(K\) are polynomials in \(\theta\)
+  but they all differ by a multiple of the minimal polynomial of
+  \(\theta\),
+\item
+  This is an inject homomorphism and thus an embedding, and
+\item
+  For distinct \(i\) you get distinct embeddings: just look at the image
+  \(\iota_i(\theta)\), these are distinct numbers in \({\mathbb{C}}\).
+\end{itemize}
+
+\end{proof}
+
+\begin{definition}[Real and Nonreal embeddings]
+
+Let \(K_{/{\mathbb{Q}}}\) be a finite extension of degree
+\(n = [K : {\mathbb{Q}}]\). We'll say an embedding
+\(\sigma:K \to {\mathbb{C}}\) is \textbf{real} if
+\(\sigma(K) \subseteq {\mathbb{R}}\) , otherwise we'll say the embedding
+is \textbf{nonreal}.
+
+\end{definition}
+
+\begin{remark}
+
+If \(\sigma\) is a nonreal, then
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu\) is
+a nonreal embedding, so this embeddings come in pairs. As a consequence,
+the total number of embeddings is given by \(n = r_1 + 2r_2\), where
+\(r_1\) is the number of real embeddings and \(r_2\) is the number of
+nonreal embeddings.
+
+\end{remark}
+
+\begin{example}[?]
+
+Let \(K = {\mathbb{Q}}(\sqrt[3]{2})\). Here \(n=3\) since this is the
+root of a degree 3 irreducible polynomial. Using the proof we can find
+the embeddings: factor
+\begin{align*}
+x^3 - 2 = (x - \sqrt[3]{2})(x - \omega \sqrt[3]{2}) (x - \omega^2 \sqrt[3]{2})
+.\end{align*}
+where \(\omega = e^{2\pi i / 3}\) is a complex cube root of unity. We
+can form an embedding by sending
+\(\sqrt[3]{2} \to \omega^j \sqrt[3]{2}\) for \(j=0,1,2\). The case
+\(j=0\) sends \(K\) to a subset of \({\mathbb{R}}\) and yields a real
+embedding, but the other two will be nonreal. So \(r_1 = 1, r_2 = 1\),
+and we have \(3 = 1 + 2(1)\) and this is consistent.
+
+\end{example}
+
+\begin{remark}
+
+We've only been talking about fields, since unique factorization is
+trivial since there are no primes. There are thus ``too many'' units,
+compared to the rings we were considering before, so we'll restrict to
+subrings. The question is: where is the arithmetic? Given a number field
+\(K\), we want a ring \({\mathbb{Z}}_K\) that fits this analogy:
+
+\begin{center}
+\begin{tikzcd}
+{\mathbb{Q}}\ar[dd] & \leadsto & K\ar[dd] \\
+\\
+{\mathbb{Z}}& \leadsto & {\mathbb{Z}}_K = ?
+\end{tikzcd}
+\end{center}
+
+\end{remark}
+
+\begin{definition}[Algebraic Numbers]
+
+Given \(\alpha\in {\mathbb{C}}\) we say \(\alpha\) is an
+\textbf{algebraic number} if and only if \(\alpha\) is algebraic over
+\({\mathbb{Q}}\), i.e.~the root of some polynomial in
+\({\mathbb{Q}}[x]\).
+
+\end{definition}
+
+\begin{remark}
+
+We know that if we define
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu\coloneqq\left\{{\alpha\in {\mathbb{C}}{~\mathrel{\Big|}~}\alpha \text{ is algebraic over } {\mathbb{Q}}}\right\}\),
+we can alternatively describe this as
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu= \left\{{ \alpha\in {\mathbb{C}}{~\mathrel{\Big|}~}[{\mathbb{Q}}(\alpha) : {\mathbb{Q}}] < \infty }\right\}\).
+This is convenient because it's easy to see that algebraic numbers are
+closed under sums and products, just using the ways degrees behave in
+towers.
+
+\end{remark}
+
+\begin{corollary}[?]
+
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu\hookrightarrow{\mathbb{C}}\)
+is a subfield and every number field is a subfield of
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu\).
+
+\end{corollary}
+
+These are still fields, so lets define some interesting subrings.
+
+\begin{definition}[$\bar \ZZ$ ]
+
+Define
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\coloneqq\left\{{ \alpha\in {\mathbb{C}}{~\mathrel{\Big|}~}\alpha\text{ is the root of a monic polynomial }f\in {\mathbb{Z}}[x]}\right\}\).
+
+\end{definition}
+
+\begin{theorem}[$\bar \ZZ$ is a ring]
+
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+is a ring, and in fact a domain since it's a subring of
+\({\mathbb{C}}\).
+
+\end{theorem}
+
+We'll use an intermediate criterion to prove this:
+
+\begin{proposition}[Integrality Criterion]
+
+Let \(\alpha\in {\mathbb{C}}\) and suppose there is a finitely generated
+\({\mathbb{Z}}{\hbox{-}}\)submodule of \({\mathbb{C}}\) with
+\(\alpha M \subseteq M \neq 0\). Then
+\(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\),
+i.e.~\(\alpha\) is the root of a monic polynomial with integer
+coefficients.
+
+\end{proposition}
+
+\begin{proof}[of integrality criterion]
+
+Chasing definitions, take \(M\) and choose a finite list of generators
+\(\beta_1, \beta_2, \cdots, \beta_m\) for \(M\). Then
+\(\alpha M \subseteq M \implies \alpha \beta_i \in M\) for all \(M\),
+and each \(\alpha \beta_i\) is a \({\mathbb{Z}}{\hbox{-}}\)linear
+combination of the \(\beta_i\) . I.e. we have
+\begin{align*}
+\alpha 
+\begin{bmatrix}
+\beta_1 
+\\
+\vdots  
+\\
+\beta_n  
+\end{bmatrix}
+= 
+\begin{bmatrix}
+a_{11} & a_{12} & \cdots
+\\
+a_{21} &  a_{22} & 
+\\
+ \vdots &  &\ddots  
+\end{bmatrix}
+\begin{bmatrix}
+\beta_1 
+\\
+\vdots  
+\\
+\beta_n  
+\end{bmatrix}
+\coloneqq A \vec{\beta}
+,\end{align*}
+where \(A \in \operatorname{Mat}(n\times m, {\mathbb{Z}})\). We can
+rearrange this to say that
+\begin{align*}
+\qty{ \alpha \operatorname{id}- A} 
+\begin{bmatrix}
+\beta_1 
+\\
+\vdots  
+\\
+\beta_n  
+\end{bmatrix}
+=
+\mathbf{0}
+.\end{align*}
+Not all of the \(\beta_i\) can be zero since \(M\neq 0\), and thus
+\(\alpha \operatorname{id}- A\) is singular and thus has determinant
+zero, so \(\det(x \operatorname{id}- A)\Big|_{x=a} = 0\). We have {[}
+x\operatorname{id}- A =
+
+\begin{bmatrix}
+x - a_{1,} &  & &
+\\
+&  x - a_{2, 2} & & 
+\\
+&  & \ddots &
+\\
+& &  & x - a_{m, m}
+\end{bmatrix}
+
+,{]} where the off-diagonal components are constants in \({\mathbb{Z}}\)
+coming from \(A\). Taking the determinant yields a monic polynomial: the
+term of leading degree comes from multiplying the diagonal components,
+and expanding over the remaining minors only yields terms of smaller
+degree. So \(\det (x\operatorname{id}- A) \in {\mathbb{Z}}[x]\) is
+monic.
+
+\end{proof}
+
+\begin{proof}[of theorem]
+
+We want to show that
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+is a ring, and it's enough to show that
+
+\begin{itemize}
+\tightlist
+\item
+  \(1\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\),
+  which is true since \(x-1\) is monic.
+\item
+  It's closed under \(+, \cdot\).
+\end{itemize}
+
+Note that the first property generalizes to
+\({\mathbb{Z}}\subseteq \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\),
+since \(x-n\) is monic for any \(n\in {\mathbb{Z}}\). For the second,
+let
+\(\alpha, \beta \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+Define \(M \coloneqq{\mathbb{Z}}[\alpha, \beta]\), then it's clear that
+\((\alpha + \beta)M \subseteq M\) and \((\alpha \beta)M \subseteq M\)
+since \({\mathbb{Z}}[\alpha, \beta]\) are polynomials in
+\(\alpha, \beta\) and multiplying by these expression still yields such
+polynomials. It only remains to check the following:
+
+\begin{claim}
+
+\(M\) is finitely-generated.
+
+\end{claim}
+
+\begin{proof}[?]
+
+Let \(\alpha\) be a root of \(f \in {\mathbb{Z}}[x]\) and \(\beta\) a
+root of \(g\), both monic with \(\deg f = n, \deg g = m\). We want to
+produce a finite generating set for
+\(M\coloneqq{\mathbb{Z}}[\alpha, \beta]\), and the claim is that the
+following works:
+\(\left\{{ \alpha^i \beta^j}\right\} _{\substack{0\leq i < n \\ 0 \leq j < m} }\),
+i.e.~every element of \(M\) is some \({\mathbb{Z}}{\hbox{-}}\)linear
+combination of these.
+
+Note that this is clearly true if we were to include \(n, m\) in the
+indices by collecting terms of any polynomial in \(\alpha, \beta\), so
+the restrictions are nontrivial. It's enough to show that for any
+\(0 \leq I, J \in {\mathbb{Z}}\), the term \(\alpha^I \beta^J\) is a
+\({\mathbb{Z}}{\hbox{-}}\)linear combination of the restricted elements
+above. Divide by \(f\) and \(g\) to obtain \(x^I = f(x) q(x) + r(x)\)
+and \(x^J = g(x) \tilde q(x) \tilde r(x)\) where \(r(x) = 0\) or
+\(\deg r < n\) and similarly for \(\tilde r\), where (importantly) all
+of these polynomials are in \({\mathbb{Z}}[x]\).
+
+We're not over a field: \({\mathbb{Z}}[x]\) doesn't necessarily have a
+division algorithm, so why is this okay? The division algorithm only
+requires inverting the leading coefficient, so in general \(R[x]\)
+admits the usual division algorithm whenever the leading coefficient is
+in \(R^{\times}\).
+
+Now plug \(\alpha\) into the first equation to obtain
+\(\alpha^I = r(\alpha)\) where \(\deg r < n\), which rewrite
+\(\alpha^I\) as a sum of lower-degree terms. Similarly writing
+\(\beta^J = r(\beta)\), we can express
+\begin{align*}
+\alpha^I \beta^J = r(\alpha) r(\beta)
+,\end{align*}
+which is what we wanted.
+
+\end{proof}
+
+\end{proof}
+
+\begin{remark}
+
+We've just filled in another part of the previous picture:
+
+\begin{center}
+\begin{tikzcd}
+{\mathbb{Q}}\ar[dd] & K\ar[dd] & \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu\ar[dd]\\
+\\
+{\mathbb{Z}}& {\mathbb{Z}}_K & \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu
+\end{tikzcd}
+\end{center}
+
+\end{remark}
+
+\begin{definition}[Ring of Integers]
+
+Define
+\({\mathbb{Z}}_K = \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\cap K\),
+the \textbf{ring of integers} of \(K\). Note that this makes sense since
+the intersection of rings is again a ring.
+
+\end{definition}
+
+\begin{remark}
+
+Why not just work in
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)?
+It doesn't have the factorization properties we want, e.g.~there are no
+irreducible elements. Consider \(\sqrt 2\), we can factor is into two
+non-units (noting that \(\sqrt 2\) is not a unit) as
+\(\sqrt{\sqrt 2} \cdot \sqrt{\sqrt 2}\), and it's easy to check that if
+\(a\) is not a unit then \(\sqrt a\) is not a unit. So this would yield
+arbitrarily long factorizations, and is thus not Noetherian.
+
+\end{remark}
+
+The following is a reality check, and certainly a property we would
+want:
+
+\begin{proposition}[The ring of integers of $\QQ$ is $\ZZ$ ]
+
+\({\mathbb{Z}}_{\mathbb{Q}}= {\mathbb{Z}}\).
+
+\end{proposition}
+
+\begin{proof}[of proposition]
+
+\(\subseteq\): easy, since
+\({\mathbb{Z}}\subseteq \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+and \({\mathbb{Z}}\subseteq {\mathbb{Q}}\), and is thus in their
+intersection \({\mathbb{Z}}_{\mathbb{Q}}\) .
+
+\(\supseteq\) : Let
+\(\alpha\in {\mathbb{Z}}_{\mathbb{Q}}= {\mathbb{Q}}\cap\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+, so \(\alpha\) is a root of
+\(x^n - a_{n-1}x^{n-1} + \cdots + a_1x + a_0 \in {\mathbb{Z}}[x]\). We
+know \(\alpha= a/b\) with \(a,b \in {\mathbb{Z}}\), and we can use the
+rational root test which tells us that \(a\divides a_0, b\divides 1\),
+so \(b = \pm 1, \alpha = a/\pm 1 = \pm a \in {\mathbb{Z}}\) and thus
+\(\alpha \in {\mathbb{Z}}\).
+
+\end{proof}
+
+We'll want to study \({\mathbb{Z}}_K\) for various number fields \(K\),
+but we'll need more groundwork.
+
+\begin{proposition}[Easy criterion to check if an integer is algebraic]
+
+Let
+\(\alpha \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu\),
+then
+\begin{align*} \alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\iff \min_ \alpha \in {\mathbb{Z}}[x], \end{align*}
+where \(\min_ \alpha(x)\) is the unique monic irreducible polynomial in
+\({\mathbb{Q}}[x]\) which vanishes at \(\alpha\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+\(\impliedby\): Trivial, if the minimal polynomial already has integer
+coefficients, just note that it's already monic and thus
+\(\alpha \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+by definition.
+
+\(\implies\): Why should the minimal polynomial have \emph{integer}
+coefficients? Choose a monic \(f(x) \in {\mathbb{Z}}[x]\) with
+\(f(\alpha) = 0\), using the fact that
+\(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+, and factor \(f(x) = \prod_{i=1}^n (x- \alpha_i) \in {\mathbb{C}}[x]\).
+Note that each
+\(\alpha_i \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+since they are all roots of \(f\) (a monic polynomial in
+\({\mathbb{Z}}[x]\)). Use the fact that \(\min_ \alpha(x)\) divides
+every polynomial which vanishes on \(\alpha\) over \({\mathbb{Q}}\), and
+thus divides \(f\) (noting that this still divides over
+\({\mathbb{C}}\)). Moreover, every root of \(\min_ \alpha(x)\) is a root
+of \(f\), and so every such root is some \(\alpha_i\).
+
+Now factor \(\min_ \alpha(x)\) over \({\mathbb{C}}\) to obtain
+\(\min_ \alpha(x) = \prod_{i=1}^m (x - \beta_i)\) with all of the
+\(\beta_i \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+What coefficients appear after multiplying things out? Just sums and
+products of the \(\beta_i\), so all of the coefficients are in
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+. Thus
+\(\min_ \alpha(x) \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu[x]\).
+But the coefficients are also in \({\mathbb{Q}}\) by definition, so the
+coefficients are in
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\cap{\mathbb{Q}}= {\mathbb{Z}}\)
+and thus \(\min_ \alpha(x) \in {\mathbb{Z}}[x]\).
+
+\end{proof}
+
+\begin{example}[Showing an integer is not algebraic using minimal polynomials]
+
+\(\sqrt{5}/ 3 \not\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+since \(\min_ \alpha(x) = x^2 - 5/9 \not\in {\mathbb{Z}}[x]\), so this
+is not an algebraic integer.
+
+\end{example}
+
+\begin{proposition}[$\ff(\ZZ_K) = K$ ]
+
+\envlist
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+  has
+  \(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu\)
+  as its fraction field, and
+\item
+  For any number field \(K\), \({\mathbb{Z}}_K\) has \(K\) as its
+  fraction field.
+\end{enumerate}
+
+Moreover, both of these statements follow from:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  If
+  \(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu\)
+  then
+  \(d \alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+  for some \(d\in {\mathbb{Z}}^{\geq 0}\)
+\end{enumerate}
+
+\end{proposition}
+
+\begin{remark}
+
+Thus the subring is ``big'' in the sense that if you allow taking
+quotients, you recover the entire field. That \(c\implies a,b\): suppose
+you want to write
+\(\alpha \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Q}}\mkern-1.5mu}\mkern 1.5mu\)
+as \(\alpha=p/q\) with
+\(p,q \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+Use \(c\) to produce
+\(d\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\),
+then just take \(d\alpha /d\). The same argument works for \(b\).
+
+\end{remark}
+
+\begin{exercise}[?]
+
+Prove the proposition!
+
+\end{exercise}
+
+\begin{proposition}[?]
+
+Suppose
+\(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{C}}\mkern-1.5mu}\mkern 1.5mu\)
+and \(\alpha\) is a root of a monic polynomial in
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu [x]\).
+Then
+\(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+
+\end{proposition}
+
+\begin{remark}
+
+This says that if a number \(\alpha\) is the root of a monic polynomial
+whose coefficients are \emph{algebraic} integers, then \(\alpha\) itself
+is an algebraic integer coefficients. This corresponds to the fact that
+integral over integral implies integral in commutative algebra.
+
+\end{remark}
+
+\begin{exercise}[Prove the proposition.]
+
+Prove this! Can use the integrality criterion (slightly challenging),
+can also use Galois theory.
+
+\end{exercise}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]

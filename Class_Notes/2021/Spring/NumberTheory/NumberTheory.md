@@ -38,8 +38,9 @@
 \newcommand{\zlnz}[0]{\mathbb{Z}/\ell^n\mathbb{Z}}
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
-\newcommand{\ks}[0]{\operatorname{ks}}
+\newcommand{\Cx}[0]{\operatorname{Cx}}
 \newcommand{\Ch}[0]{\operatorname{Ch}}
+\newcommand{\ks}[0]{\operatorname{ks}}
 \newcommand{\Arg}[0]{\operatorname{Arg}}
 \newcommand{\PGL}[0]{\operatorname{PGL}}
 \newcommand{\GL}[0]{\operatorname{GL}}
@@ -84,6 +85,7 @@
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
 \newcommand{\gr}[0]{{\operatorname{gr}}}
+\newcommand{\grMod}[0]{{\operatorname{grMod}}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -104,6 +106,7 @@
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Top}[0]{{\operatorname{Top}}}
 \newcommand{\Ab}[0]{{\operatorname{Ab}}}
+\newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
 \newcommand{\hoTop}[0]{{\operatorname{hoTop}}}
 \newcommand{\Sch}[0]{{\operatorname{Sch}}}
@@ -301,6 +304,7 @@
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
 \newcommand{\rmod}[0]{{R\dash\operatorname{mod}}}
+\newcommand{\mmod}[0]{{\dash\operatorname{mod}}}
 \newcommand{\mods}[1]{{{#1}\dash\operatorname{mod}}}
 \newcommand{\modr}[0]{{\operatorname{mod}}}
 \newcommand{\kmod}[0]{{k\dash\operatorname{mod}}}
@@ -593,3 +597,342 @@ Do you even *need* it?
 
 This will lead to a discussion of things like the **class number**, which measure the failure of unique factorization.
 In general, the above type of proof will work when the class number is 3!
+
+# Lecture 2 (Tuesday, January 19)
+
+Today: Ch.2 of the book, "Cast of Characters".
+Note that all rings will be commutative and unital in this course.
+
+Last time: looked at factorization in $\ZZ[\sqrt 2], \ZZ[\sqrt{26}]$. 
+Where do rings like this come from?
+
+:::{.definition title="Number Field"}
+A **number field** is a subfield $K \subseteq \CC$ such that $[K: \QQ] < \infty$.
+:::
+
+:::{.remark}
+Some authors don't require $K \subseteq \CC$, but any finite extension of $\QQ$ will embed into $\CC$ so there's no harm in this extra requirement.
+:::
+
+:::{.example title="?"}
+$\QQ[\sqrt[3]{2}, \QQ[\sqrt 2, \sqrt[5]{7}]$ or $\QQ(\theta)$ where $\theta$ is a root of $x^5 - x - 1$ (which you can check is irreducible.
+Now that the round vs. square brackets here won't make a difference, since we're adjoining algebraic numbers.
+:::
+
+:::{.proposition title="?"}
+Let $K_{/\QQ}$ be a finite extension, say of degree $n\da [K: \QQ]$.
+Then there are $n$ distinct embeddings
+[^embedding_means]
+of $K$ into $\CC$
+
+[^embedding_means]: 
+An injective ring morphism.
+
+:::
+
+:::{.proof title="?"}
+We have $K_{/\QQ}$, which is necessarily separable since $\ch(\QQ) = 0$.
+By the primitive element theorem, we can write $K = \QQ(\theta)$ where \( \theta \) is a root of some degree $n$ irreducible polynomial $f(x) \in \QQ[x]$.
+Since $\CC$ is algebraically closed, $f$ splits completely over $\CC$ as \( f = \prod_{i=1}^n (x- \theta_i \) which each \( \theta_i \in CC \) distinct since $f$ was irreducible and we're in characteristic zero.
+Then for each $i$ there is an embedding $K = \QQ[\theta]$ given by
+\[
+\iota_i: \QQ[\theta] &\injects \CC \\
+g(\theta) &\mapsto g(\theta_i)
+.\]
+There are some easy things to check:
+
+- This is well-defined: elements in $K$ are polynomials in \( \theta \) but they all differ by a multiple of the minimal polynomial of \( \theta \),
+- This is an inject homomorphism and thus an embedding, and
+- For distinct $i$ you get distinct embeddings: just look at the image $\iota_i(\theta)$, these are distinct numbers in $\CC$.
+
+:::
+
+:::{.definition title="Real and Nonreal embeddings"}
+Let $K_{/\QQ}$ be a finite extension of degree $n = [K : \QQ]$.
+We'll say an embedding \( \sigma:K \to \CC \) is **real** if \( \sigma(K) \subseteq \RR \) , otherwise we'll say the embedding is **nonreal**.
+:::
+
+:::{.remark}
+If \( \sigma \) is a nonreal, then \( \bar \sigma \) is a nonreal embedding, so this embeddings come in pairs.
+As a consequence, the total number of embeddings is given by $n = r_1 + 2r_2$, where $r_1$ is the number of real embeddings and $r_2$ is the number of nonreal embeddings.
+:::
+
+:::{.example title="?"}
+Let $K = \QQ(\sqrt[3]{2})$.
+Here $n=3$ since this is the root of a degree 3 irreducible polynomial.
+Using the proof we can find the embeddings: factor 
+\[
+x^3 - 2 = (x - \sqrt[3]{2})(x - \omega \sqrt[3]{2}) (x - \omega^2 \sqrt[3]{2})
+.\]
+where \( \omega = e^{2\pi i / 3} \) is a complex cube root of unity.
+We can form an embedding by sending $\sqrt[3]{2} \to \omega^j \sqrt[3]{2}$ for $j=0,1,2$.
+The case $j=0$ sends $K$ to a subset of $\RR$ and yields a real embedding, but the other two will be nonreal. 
+So $r_1 = 1, r_2 = 1$, and we have $3 = 1 + 2(1)$ and this is consistent.
+:::
+
+:::{.remark}
+We've only been talking about fields, since unique factorization is trivial since there are no primes.
+There are thus "too many" units, compared to the rings we were considering before, so we'll restrict to subrings.
+The question is: where is the arithmetic?
+Given a number field $K$, we want a ring $\ZZ_K$ that fits this analogy:
+
+
+\begin{tikzcd}
+\QQ \ar[dd] & \leadsto & K\ar[dd] \\
+\\
+\ZZ & \leadsto & \ZZ_K = ?
+\end{tikzcd}
+
+:::
+
+:::{.definition title="Algebraic Numbers"}
+Given \( \alpha\in \CC \) we say \( \alpha \) is an **algebraic number** if and only if \( \alpha \) is algebraic over $\QQ$, i.e. the root of some polynomial in $\QQ[x]$.
+:::
+
+:::{.remark}
+We know that if we define $\bar \QQ \da \ts{\alpha\in \CC \st \alpha \text{ is algebraic over } \QQ}$, we can alternatively describe this as $\bar \QQ = \ts { \alpha\in \CC \st [\QQ(\alpha) : \QQ] < \infty }$.
+This is convenient because it's easy to see that algebraic numbers are closed under sums and products, just using the ways degrees behave in towers.
+:::
+
+:::{.corollary title="?"}
+$\bar \QQ \injects \CC$ is a subfield and every number field is a subfield of $\bar \QQ$.
+:::
+
+These are still fields, so lets define some interesting subrings.
+
+:::{.definition title="$\bar \ZZ$ "}
+Define $\bar \ZZ \da \ts{ \alpha\in \CC \st \alpha\text{ is the root of a monic polynomial }f\in \ZZ[x]}$.
+:::
+
+:::{.theorem title="$\bar \ZZ$ is a ring"}
+$\bar \ZZ$ is a ring, and in fact a domain since it's a subring of $\CC$.
+:::
+
+We'll use an intermediate criterion to prove this:
+
+:::{.proposition title="Integrality Criterion"}
+Let \( \alpha\in \CC \) and suppose there is a finitely generated $\ZZ\dash$submodule of $\CC$ with \( \alpha M \subseteq M \neq 0\).
+Then \( \alpha\in \bar \ZZ \), i.e. \( \alpha \) is the root of a monic polynomial with integer coefficients.
+:::
+
+:::{.proof title="of integrality criterion"}
+Chasing definitions, take $M$ and choose a finite list of generators \( \beta_1, \beta_2, \cdots, \beta_m \) for $M$.
+Then \( \alpha M \subseteq M \implies \alpha \beta_i \in M \) for all \( M \), and each \( \alpha \beta_i \) is a $\ZZ\dash$linear combination of the \( \beta_i \) .
+I.e. we have
+\[
+\alpha 
+\begin{bmatrix}
+\beta_1 
+\\
+\vdots  
+\\
+\beta_n  
+\end{bmatrix}
+= 
+\begin{bmatrix}
+a_{11} & a_{12} & \cdots
+\\
+a_{21} &  a_{22} & 
+\\
+ \vdots &  &\ddots  
+\end{bmatrix}
+\begin{bmatrix}
+\beta_1 
+\\
+\vdots  
+\\
+\beta_n  
+\end{bmatrix}
+\da A \vec{\beta}
+,\]
+where $A \in \Mat(n\times m, \ZZ)$.
+We can rearrange this to say that 
+\[
+\qty{ \alpha \id - A} 
+\begin{bmatrix}
+\beta_1 
+\\
+\vdots  
+\\
+\beta_n  
+\end{bmatrix}
+=
+\vector{0}
+.\]
+Not  all of the $\beta_i$ can be zero since $M\neq 0$, and thus \( \alpha \id - A \) is singular and thus has determinant zero, so $\det(x \id - A)\evalfrom_{x=a} = 0$.
+We have 
+\[
+x\id - A = 
+
+\begin{bmatrix}
+x - a_{1,} &  & &
+\\
+&  x - a_{2, 2} & & 
+\\
+&  & \ddots &
+\\
+& &  & x - a_{m, m}
+\end{bmatrix}
+,\]
+where the off-diagonal components are constants in $\ZZ$ coming from $A$.
+Taking the determinant yields a monic polynomial: the term of leading degree comes from multiplying the diagonal components, and expanding over the remaining minors only yields terms of smaller degree.
+So $\det (x\id - A) \in \ZZ[x]$ is monic.
+
+:::
+
+:::{.proof title="of theorem"}
+We want to show that \( \bar \ZZ \) is a ring, and it's enough to show that 
+
+- \( 1\in \bar \ZZ \), which is true since $x-1$ is monic.
+- It's closed under $+, \cdot$.
+
+Note that the first property generalizes to $\ZZ \subseteq \bar \ZZ$, since $x-n$ is monic for any $n\in \ZZ$.
+For the second, let \( \alpha, \beta \in \bar \ZZ \).
+Define $M \da \ZZ[\alpha, \beta]$, then it's clear that \( (\alpha + \beta)M \subseteq M \) and \( (\alpha \beta)M \subseteq M \) since $\ZZ[\alpha, \beta]$ are polynomials in \( \alpha, \beta \) and multiplying by these expression still yields such polynomials.
+It only remains to check the following:
+
+:::{.claim}
+$M$ is finitely-generated.
+:::
+
+
+:::{.proof title="?"}
+Let \( \alpha \) be a root of $f \in \ZZ[x]$ and \( \beta \) a root of $g$, both monic with $\deg f = n, \deg g = m$.
+We want to produce a finite generating set for \( M\da \ZZ[\alpha, \beta] \), and the claim is that the following works: \( \ts{ \alpha^i \beta^j} _{\substack{0\leq i < n \\ 0 \leq j < m} } \), i.e. every element of $M$ is some $\ZZ\dash$linear combination of these.
+
+Note that this is clearly true if we were to include $n, m$ in the indices by collecting terms of any polynomial in \( \alpha, \beta \), so the restrictions are nontrivial.
+It's enough to show that for any $0 \leq I, J \in \ZZ$, the term \( \alpha^I \beta^J \) is a $\ZZ\dash$linear combination of the restricted elements above.
+Divide by $f$ and $g$ to obtain $x^I = f(x) q(x) + r(x)$ and $x^J = g(x) \tilde q(x) \tilde r(x)$ where $r(x) = 0$ or $\deg r < n$ and similarly for $\tilde r$, where (importantly) all of these polynomials are in $\ZZ[x]$.
+
+We're not over a field: $\ZZ[x]$ doesn't necessarily have a division algorithm, so why is this okay?
+The division algorithm only requires inverting the leading coefficient, so in general $R[x]$ admits the usual division algorithm whenever the leading coefficient is in $R\units$.
+
+Now plug \( \alpha \) into the first equation to obtain \( \alpha^I = r(\alpha) \) where $\deg r < n$, which rewrite \( \alpha^I \) as a sum of lower-degree terms.
+Similarly writing \( \beta^J = r(\beta) \), we can express 
+\[
+\alpha^I \beta^J = r(\alpha) r(\beta)
+,\]
+which is what we wanted.
+
+:::
+
+
+:::
+
+:::{.remark}
+We've just filled in another part of the previous picture:
+
+\begin{tikzcd}
+\QQ \ar[dd] & K\ar[dd] & \bar \QQ \ar[dd]\\
+\\
+\ZZ & \ZZ_K & \bar \ZZ
+\end{tikzcd}
+
+:::
+
+:::{.definition title="Ring of Integers"}
+Define $\ZZ_K = \bar \ZZ \intersect K$, the **ring of integers** of $K$.
+Note that this makes sense since the intersection of rings is again a ring.
+:::
+
+:::{.remark}
+Why not just work in $\bar \ZZ$?
+It doesn't have the factorization properties we want, e.g. there are no irreducible elements.
+Consider $\sqrt 2$, we can factor is into two non-units (noting that $\sqrt 2$ is not a unit) as $\sqrt{\sqrt 2} \cdot \sqrt{\sqrt 2}$, and it's easy to check that if $a$ is not a unit then $\sqrt a$ is not a unit.
+So this would yield arbitrarily long factorizations, and is thus not Noetherian.
+:::
+
+The following is a reality check, and certainly a property we would want:
+
+:::{.proposition title="The ring of integers of $\QQ$ is $\ZZ$ "}
+$\ZZ_\QQ = \ZZ$.
+:::
+
+:::{.proof title="of proposition"}
+\( \subseteq \): easy, since \( \ZZ \subseteq \bar \ZZ \) and \( \ZZ \subseteq \QQ \), and is thus in their intersection \( \ZZ_\QQ \) .
+
+\( \supseteq \) : Let \( \alpha\in \ZZ_\QQ = \QQ \intersect\bar \ZZ \) , so \( \alpha \) is a root of \( x^n - a_{n-1}x^{n-1} + \cdots + a_1x + a_0 \in \ZZ[x] \).
+We know \( \alpha= a/b \) with \( a,b \in \ZZ \), and we can use the rational root test which tells us that \( a\divides a_0, b\divides 1 \), so \( b = \pm 1, \alpha = a/\pm 1 = \pm a \in \ZZ \) and thus \( \alpha \in \ZZ \).
+
+:::
+
+We'll want to study $\ZZ_K$ for various number fields $K$, but we'll need more groundwork.
+
+:::{.proposition title="Easy criterion to check if an integer is algebraic"}
+Let \( \alpha \in \bar \QQ \), then \[ \alpha\in \bar \ZZ \iff \min_ \alpha \in \ZZ[x], \] where \( \min_ \alpha(x) \) is the unique monic irreducible polynomial in $\QQ[x]$ which vanishes at \( \alpha \).
+:::
+
+:::{.proof title="?"}
+$\impliedby$: Trivial, if the minimal polynomial already has integer coefficients, just note that it's already monic and thus \( \alpha \in \bar \ZZ \) by definition.
+
+$\implies$: Why should the minimal polynomial have *integer* coefficients?
+Choose a monic $f(x) \in \ZZ[x]$ with \( f(\alpha) = 0 \), using the fact that \( \alpha\in \bar \ZZ \) , and factor \( f(x) = \prod_{i=1}^n (x- \alpha_i) \in \CC[x] \).
+Note that each \( \alpha_i \in \bar \ZZ \) since they are all roots of $f$ (a monic polynomial in \( \ZZ[x] \)).
+Use the fact that \( \min_ \alpha(x) \) divides every polynomial which vanishes on \( \alpha \) over $\QQ$, and thus divides $f$ (noting that this still divides over $\CC$).
+Moreover, every root of \( \min_ \alpha(x) \) is a root of $f$, and so every such root is some \( \alpha_i \).
+
+Now factor \( \min_ \alpha(x) \)  over \( \CC \) to obtain \( \min_ \alpha(x) = \prod_{i=1}^m (x - \beta_i) \) with all of the \( \beta_i \in \bar \ZZ \).
+What coefficients appear after multiplying things out?
+Just sums and products of the \( \beta_i \), so all of the coefficients are in \( \bar \ZZ \) . 
+Thus \( \min_ \alpha(x) \in \bar \ZZ [x] \).
+But the coefficients are also in $\QQ$ by definition, so the coefficients are in $\bar \ZZ \intersect\QQ = \ZZ$ and thus \( \min_ \alpha(x) \in \ZZ[x] \).
+:::
+
+:::{.example title="Showing an integer is not algebraic using minimal polynomials"}
+$\sqrt{5}/ 3 \not\in \bar \ZZ$ since $\min_ \alpha(x) = x^2 - 5/9 \not\in \ZZ[x]$, so this is not an algebraic integer.
+:::
+
+:::{.proposition title="$\ff(\ZZ_K) = K$ "}
+\envlist
+
+a. $\bar \ZZ$ has $\bar \QQ$ as its fraction field, and
+b. For any number field $K$, $\ZZ_K$ has $K$ as its fraction field.
+
+Moreover, both of these statements follow from:
+
+c. If \( \alpha\in \bar \QQ \) then \( d \alpha\in \bar \ZZ \) for some \( d\in \ZZ^{\geq 0} \) 
+:::
+
+:::{.remark}
+Thus the subring is "big" in the sense that if you allow taking quotients, you recover the entire field.
+That $c\implies a,b$: suppose you want to write $\alpha \in \bar \QQ$ as $\alpha=p/q$ with $p,q \in \bar \ZZ$.
+Use $c$ to produce $d\alpha\in \bar \ZZ$, then just take $d\alpha /d$.
+The same argument works for $b$.
+:::
+
+:::{.exercise title="?"}
+Prove the proposition!
+:::
+
+:::{.proposition title="?"}
+Suppose \( \alpha\in \bar \CC \) and \( \alpha \) is a root of a monic polynomial in \( \bar{\ZZ} [x] \).
+Then \( \alpha\in \bar \ZZ \).
+:::
+
+:::{.remark}
+This says that if a number \( \alpha \) is the root of a monic polynomial whose coefficients are *algebraic* integers, then \( \alpha \) itself is an algebraic integer coefficients.
+This corresponds to the fact that integral over integral implies integral in commutative algebra.
+
+:::
+
+:::{.exercise title="Prove the proposition."}
+Prove this!
+Can use the integrality criterion (slightly challenging), can also use Galois theory.
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
