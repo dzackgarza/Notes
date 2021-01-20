@@ -85,6 +85,7 @@
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
 \newcommand{\gr}[0]{{\operatorname{gr}}}
+\newcommand{\grMod}[0]{{\operatorname{grMod}}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -303,6 +304,7 @@
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
 \newcommand{\rmod}[0]{{R\dash\operatorname{mod}}}
+\newcommand{\mmod}[0]{{\dash\operatorname{mod}}}
 \newcommand{\mods}[1]{{{#1}\dash\operatorname{mod}}}
 \newcommand{\modr}[0]{{\operatorname{mod}}}
 \newcommand{\kmod}[0]{{k\dash\operatorname{mod}}}
@@ -437,10 +439,24 @@
 
 Reference:
 
-- The course text is Charles A. Weibel, An introduction to homological algebra, Cambridge Studies in Advanced Mathematics 38, Cambridge University Press, 1994.
- - See corrections: Many corrections to Weibel's book: <http://www.math.rutgers.edu/~weibel/Hbook-corrections.html>
+- The course text is Weibel [@weibel_2011].
 
-- 1.1-1.5, 2.2-2.7, 3.4 3.6, 6.1, 5.1-5.2, 5.4-5.8, 6.8, 6.7, 6.3, 7.1-7.5, 7.7-7.8, along with most of Appendix A when needed.
+ - See the many corrections/errata: <http://www.math.rutgers.edu/~weibel/Hbook-corrections.html>
+
+  - Sections we'll cover:
+    - 1.1-1.5, 
+    - 2.2-2.7, 
+    - 3.4, 
+    - 3.6, 
+    - 6.1, 
+    - 5.1-5.2, 
+    - 5.4-5.8, 
+    - 6.8, 
+    - 6.7, 
+    - 6.3, 
+    - 7.1-7.5, 
+    - 7.7-7.8, 
+    - Appendix A (when needed)
 
 - Course Website: <https://uga.view.usg.edu/d2l/le/content/2218619/viewContent/33763436/View>
 

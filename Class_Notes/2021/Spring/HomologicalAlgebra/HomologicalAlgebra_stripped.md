@@ -12,11 +12,25 @@
 
 Reference:
 
--   The course text is Charles A. Weibel, An introduction to homological algebra, Cambridge Studies in Advanced Mathematics 38, Cambridge University Press, 1994.
+-   The course text is Weibel [@weibel_2011].
 
--   See corrections: Many corrections to Weibel's book: <http://www.math.rutgers.edu/~weibel/Hbook-corrections.html>
+-   See the many corrections/errata: <http://www.math.rutgers.edu/~weibel/Hbook-corrections.html>
 
--   1.1-1.5, 2.2-2.7, 3.4 3.6, 6.1, 5.1-5.2, 5.4-5.8, 6.8, 6.7, 6.3, 7.1-7.5, 7.7-7.8, along with most of Appendix A when needed.
+-   Sections we'll cover:
+
+    -   1.1-1.5,
+    -   2.2-2.7,
+    -   3.4,
+    -   3.6,
+    -   6.1,
+    -   5.1-5.2,
+    -   5.4-5.8,
+    -   6.8,
+    -   6.7,
+    -   6.3,
+    -   7.1-7.5,
+    -   7.7-7.8,
+    -   Appendix A (when needed)
 
 -   Course Website: <https://uga.view.usg.edu/d2l/le/content/2218619/viewContent/33763436/View>
 
